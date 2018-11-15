@@ -17,12 +17,12 @@ ms.assetid: 17863747-1901-4c53-a2b3-ed996085e120
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4739b15925512bda60748f1aa644d169b770d8f5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 40832984886aeb96e0a58279ef1c91c352b7c1c9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49182464"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49853814"
 ---
 # <a name="sccgetuseroption-function"></a>SccGetUserOption 函式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

@@ -16,12 +16,12 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b77a262edcbf55f7c1f14c36d35a8618f5b788dc
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: edc922b2d96776d38de1b55ab2226be0d2c10f85
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49243007"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49815724"
 ---
 # <a name="lines-view---net-memory-sampling-data"></a>程式行檢視 - .NET 記憶體取樣資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,21 +32,21 @@ ms.locfileid: "49243007"
   
  陳述式是由下列項目識別：  
   
--   包含此函式陳述式的原始程式檔。  
+- 包含此函式陳述式的原始程式檔。  
   
--   包含此陳述式的函式。  
+- 包含此陳述式的函式。  
   
--   此陳述式在原始程式檔中開始的行位置。  
+- 此陳述式在原始程式檔中開始的行位置。  
   
--   此陳述式在原始程式檔中開始的字元。  
+- 此陳述式在原始程式檔中開始的字元。  
   
--   此陳述式在原始程式檔中結束的行位置。  
+- 此陳述式在原始程式檔中結束的行位置。  
   
--   此陳述式在原始程式檔中結束的字元。  
+- 此陳述式在原始程式檔中結束的字元。  
   
- [程式行名稱] 資料行提供識別項資料的可排序串連。  
+  [程式行名稱] 資料行提供識別項資料的可排序串連。  
   
- 根據定義，陳述式不會呼叫其他函式。 因此只會列出互斥值。  
+  根據定義，陳述式不會呼叫其他函式。 因此只會列出互斥值。  
   
 |資料行|描述|  
 |------------|-----------------|  

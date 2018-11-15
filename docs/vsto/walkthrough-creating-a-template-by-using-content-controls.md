@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0f49e2e9e23f19a4346080b0e59435128e33849d
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: e597f13d2627a8b3e40aa65926d1c990be839c38
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35671402"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49833183"
 ---
 # <a name="walkthrough-create-a-template-by-using-content-controls"></a>逐步解說： 使用內容控制項建立範本
   本逐步解說示範如何建立文件層級自訂，這個自訂會使用內容控制項在 Microsoft Office Word 範本中建立可重複使用的結構化內容。  
@@ -35,17 +35,17 @@ ms.locfileid: "35671402"
   
  這個逐步解說將說明下列工作：  
   
--   在設計階段建立包含 Word 範本中內容控制項的資料表。  
+- 在設計階段建立包含 Word 範本中內容控制項的資料表。  
   
--   以程式設計方式填入下拉式方塊內容控制項和下拉式清單內容控制項。  
+- 以程式設計方式填入下拉式方塊內容控制項和下拉式清單內容控制項。  
   
--   防止使用者編輯指定的資料表。  
+- 防止使用者編輯指定的資料表。  
   
--   將資料表加入範本的建置組塊集合。  
+- 將資料表加入範本的建置組塊集合。  
   
--   建立會顯示範本中可用建置組塊的內容控制項。  
+- 建立會顯示範本中可用建置組塊的內容控制項。  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>必要條件  
  您需要下列元件才能完成此逐步解說：  
@@ -68,31 +68,31 @@ ms.locfileid: "35671402"
   
 ### <a name="to-create-the-employee-table"></a>建立員工資料表  
   
-1.  在 Word 範本中裝載[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]設計工具中的，在功能區中，按一下**插入** 索引標籤。  
+1. 在 Word 範本中裝載[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]設計工具中的，在功能區中，按一下**插入** 索引標籤。  
   
-2.  在 **資料表**群組中，按一下**資料表**，然後插入具有兩個資料行和四個資料列的資料表。  
+2. 在 **資料表**群組中，按一下**資料表**，然後插入具有兩個資料行和四個資料列的資料表。  
   
-3.  在第一個資料行中輸入文字，讓它類似下面資料行：  
+3. 在第一個資料行中輸入文字，讓它類似下面資料行：  
   
-    ||  
-    |-|  
-    |**員工名稱**|  
-    |**雇用日期**|  
-    |**標題**|  
-    |**圖片**|  
+   ||  
+   |-|  
+   |**員工名稱**|  
+   |**雇用日期**|  
+   |**標題**|  
+   |**圖片**|  
   
-4.  按一下第二個資料行中第一個資料格中 (旁**員工姓名**)。  
+4. 按一下第二個資料行中第一個資料格中 (旁**員工姓名**)。  
   
-5.  按一下 [功能區] 上的 [開發人員]  索引標籤。  
+5. 按一下 [功能區] 上的 [開發人員]  索引標籤。  
   
-    > [!NOTE]  
-    >  如果 [開發人員]  索引標籤沒有顯示，您必須先使其顯示。 如需詳細資訊，請參閱 <<c0> [ 如何： 在功能區顯示開發人員索引標籤](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)。  
+   > [!NOTE]  
+   >  如果 [開發人員]  索引標籤沒有顯示，您必須先使其顯示。 如需詳細資訊，請參閱 <<c0> [ 如何： 在功能區顯示開發人員索引標籤](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)。  
   
-6.  在 [**控制項**群組中，按一下**文字**] 按鈕![PlainTextContentControl](../vsto/media/plaintextcontrol.gif "PlainTextContentControl")新增<xref:Microsoft.Office.Tools.Word.PlainTextContentControl>第一個資料格中。  
+6. 在 [**控制項**群組中，按一下**文字**] 按鈕![PlainTextContentControl](../vsto/media/plaintextcontrol.gif "PlainTextContentControl")新增<xref:Microsoft.Office.Tools.Word.PlainTextContentControl>第一個資料格中。  
   
-7.  按一下第二個資料行中的第二個資料格 (旁**雇用日期**)。  
+7. 按一下第二個資料行中的第二個資料格 (旁**雇用日期**)。  
   
-8.  在 [**控制項**群組中，按一下**日期選擇器**] 按鈕![DatePickerContentControl](../vsto/media/datepicker.gif "DatePickerContentControl")新增<xref:Microsoft.Office.Tools.Word.DatePickerContentControl>到第二個儲存格。  
+8. 在 [**控制項**群組中，按一下**日期選擇器**] 按鈕![DatePickerContentControl](../vsto/media/datepicker.gif "DatePickerContentControl")新增<xref:Microsoft.Office.Tools.Word.DatePickerContentControl>到第二個儲存格。  
   
 9. 按一下第二個資料行中的第三個資料格 (旁**Title**)。  
   
@@ -107,27 +107,27 @@ ms.locfileid: "35671402"
   
 ### <a name="to-create-the-customer-feedback-table"></a>建立客戶回函資料表  
   
-1.  在 Word 範本中，按一下某一行之後您稍早新增的員工資料表，然後按**Enter**新增新的段落。  
+1. 在 Word 範本中，按一下某一行之後您稍早新增的員工資料表，然後按**Enter**新增新的段落。  
   
-2.  在功能區中，按一下**插入** 索引標籤。  
+2. 在功能區中，按一下**插入** 索引標籤。  
   
-3.  在 **資料表**群組中，按一下**資料表**，然後插入具有兩個資料行和三個資料列的資料表。  
+3. 在 **資料表**群組中，按一下**資料表**，然後插入具有兩個資料行和三個資料列的資料表。  
   
-4.  在第一個資料行中輸入文字，讓它類似下面資料行：  
+4. 在第一個資料行中輸入文字，讓它類似下面資料行：  
   
-    ||  
-    |-|  
-    |**客戶名稱**|  
-    |**滿意度評等**|  
-    |**註解**|  
+   ||  
+   |-|  
+   |**客戶名稱**|  
+   |**滿意度評等**|  
+   |**註解**|  
   
-5.  按一下第二個資料行的第一個資料格中 (旁**Customer Name**)。  
+5. 按一下第二個資料行的第一個資料格中 (旁**Customer Name**)。  
   
-6.  按一下 [功能區] 上的 [開發人員]  索引標籤。  
+6. 按一下 [功能區] 上的 [開發人員]  索引標籤。  
   
-7.  在 [**控制項**群組中，按一下**文字**] 按鈕![PlainTextContentControl](../vsto/media/plaintextcontrol.gif "PlainTextContentControl")新增<xref:Microsoft.Office.Tools.Word.PlainTextContentControl>第一個資料格中。  
+7. 在 [**控制項**群組中，按一下**文字**] 按鈕![PlainTextContentControl](../vsto/media/plaintextcontrol.gif "PlainTextContentControl")新增<xref:Microsoft.Office.Tools.Word.PlainTextContentControl>第一個資料格中。  
   
-8.  按一下第二個資料行的第二個資料格 (旁**滿意度評等**)。  
+8. 按一下第二個資料行的第二個資料格 (旁**滿意度評等**)。  
   
 9. 在 [**控制項**群組中，按一下**下拉式清單**] 按鈕![DropDownListContentControl](../vsto/media/dropdownlist.gif "DropDownListContentControl")新增<xref:Microsoft.Office.Tools.Word.DropDownListContentControl>到第二個儲存格。  
   
@@ -147,7 +147,7 @@ ms.locfileid: "35671402"
      [!code-vb[Trin_ContentControlTemplateWalkthrough#1](../vsto/codesnippet/VisualBasic/ContentControlTemplateWalkthrough/ThisDocument.vb#1)]
      [!code-csharp[Trin_ContentControlTemplateWalkthrough#1](../vsto/codesnippet/CSharp/ContentControlTemplateWalkthrough/ThisDocument.cs#1)]  
   
-3.  將下面程式碼加入 `ThisDocument` 類別的 `ThisDocument_Startup` 方法。 此程式碼會將項目加入資料表中的 <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl> 和 <xref:Microsoft.Office.Tools.Word.DropDownListContentControl>，然後設定預留位置文字，在使用者編輯這些控制項之前先行顯示在控制項中。  
+3.  將下面程式碼加新增至 `ThisDocument` 類別的 `ThisDocument_Startup` 方法。 此程式碼會將項目加入資料表中的 <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl> 和 <xref:Microsoft.Office.Tools.Word.DropDownListContentControl>，然後設定預留位置文字，在使用者編輯這些控制項之前先行顯示在控制項中。  
   
      [!code-vb[Trin_ContentControlTemplateWalkthrough#2](../vsto/codesnippet/VisualBasic/ContentControlTemplateWalkthrough/ThisDocument.vb#2)]
      [!code-csharp[Trin_ContentControlTemplateWalkthrough#2](../vsto/codesnippet/CSharp/ContentControlTemplateWalkthrough/ThisDocument.cs#2)]  

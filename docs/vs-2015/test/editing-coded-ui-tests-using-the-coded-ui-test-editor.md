@@ -17,12 +17,12 @@ ms.assetid: 76435c4b-593e-43a3-a9fe-709a7f9f5e0f
 caps.latest.revision: 42
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: aa426175155f45feb480b8185b5902049101f577
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1bf24c24a60a37fd8fc5859d216c34eaa2e9b4f8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49242719"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49951253"
 ---
 # <a name="editing-coded-ui-tests-using-the-coded-ui-test-editor"></a>使用自動程式化 UI 測試編輯器，編輯自動程式化 UI 測試
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -80,7 +80,7 @@ ms.locfileid: "49242719"
   
  若要修改 UI 動作的屬性，請在 [ **UI 動作** ] 窗格中，展開包含您想要編輯其屬性之 UI 動作的測試方法，選取 UI 動作，然後使用 [屬性] 視窗修改屬性。  
   
- 例如，如果伺服器無法使用，而且您有一個與 Web 瀏覽器建立關聯的 UI 動作，其說明 **移至網頁 http://Contoso1/default.aspx'**，則您可以將 URL 變更為 `‘ http://Contoso2/default.aspx’`。  
+ 例如，如果伺服器無法使用，而且您有一個與 Web 瀏覽器建立關聯的 UI 動作，其說明 **移至網頁 <http://Contoso1/default.aspx’>'**，則您可以將 URL 變更為 `‘http://Contoso2/default.aspx’`。  
   
  ![控制項屬性](../test/media/codeduitestcontrolprop.png "CodedUITestControlProp")  
 編輯控制項屬性  
@@ -125,19 +125,19 @@ ms.locfileid: "49242719"
  *我還應該知道什麼？*  
  **重要問題**  
   
--   ![注意圖示](../test/media/caution.gif "注意") **警告：** 分割方法時，如果您仍然想要併入那些 UI 動作，則必須將任何呼叫現有方法的程式碼修改為同時也呼叫您即將建立的新方法。 當您分割方法時，Microsoft Visual Studio 對話方塊隨即顯示。 它會警告您，必須將任何呼叫現有方法的程式碼修改為同時也呼叫您即將建立的新方法。 選擇 [ **是**]。  
+- ![注意圖示](../test/media/caution.gif "注意") **警告：** 分割方法時，如果您仍然想要併入那些 UI 動作，則必須將任何呼叫現有方法的程式碼修改為同時也呼叫您即將建立的新方法。 當您分割方法時，Microsoft Visual Studio 對話方塊隨即顯示。 它會警告您，必須將任何呼叫現有方法的程式碼修改為同時也呼叫您即將建立的新方法。 選擇 [ **是**]。  
   
- **祕訣**  
+  **祕訣**  
   
--   ![祕訣](../test/media/tip.png "祕訣") 若要復原分割，請從 [編輯] 功能表中選擇 [復原]，或是按 Ctrl+Z。  
+- ![祕訣](../test/media/tip.png "祕訣") 若要復原分割，請從 [編輯] 功能表中選擇 [復原]，或是按 Ctrl+Z。  
   
--   ![祕訣](../test/media/tip.png "祕訣") 您可以重新命名新方法。 在 [UI 動作] 窗格中選取它，然後選擇自動程式碼 UI 測試編輯器工具列中的 [ **重新命名** ] 按鈕。  
+- ![祕訣](../test/media/tip.png "祕訣") 您可以重新命名新方法。 在 [UI 動作] 窗格中選取它，然後選擇自動程式碼 UI 測試編輯器工具列中的 [ **重新命名** ] 按鈕。  
   
-     -或-  
+   -或-  
   
-     開啟新測試方法的捷徑功能表，並選擇 [ **重新命名**]。  
+   開啟新測試方法的捷徑功能表，並選擇 [ **重新命名**]。  
   
-     Microsoft Visual Studio 對話方塊隨即顯示。 它會警告您，必須修改任何參考方法的程式碼。 選擇 [ **是**]。  
+   Microsoft Visual Studio 對話方塊隨即顯示。 它會警告您，必須修改任何參考方法的程式碼。 選擇 [ **是**]。  
   
 ##  <a name="CodedUITestEditor_MoveMethods"></a> 將測試方法移至 UIMap 檔案，以更方便自訂  
  如果您判斷自動程式碼 UI 測試的其中一個測試方法需要自訂程式碼，則必須將它移至 UIMap.cs 或 UIMap.vb 檔案。 否則，每當重新編譯自動程式碼 UI 測試，就會覆寫您的程式碼。 如果未移動方法，每次重新編譯測試，就會覆寫自訂程式碼。  
@@ -149,11 +149,11 @@ ms.locfileid: "49242719"
  *我還應該知道什麼？*  
  **重要問題**  
   
--   ![注意圖示](../test/media/caution.gif "注意") **警告：** 一旦移動方法，便無法再使用自動程式碼 UI 測試編輯器來編輯方法。 您必須使用 [程式碼編輯器] 加入及維護自訂程式碼。 當您移動方法時，Microsoft Visual Studio 對話方塊隨即顯示。 它會警告此方法將從 UIMap.uitest 檔案移至 UIMap.cs 或 UIMap.vb 檔案，而且您將無法再使用 [自動程式碼 UI 測試編輯器] 編輯此方法。 選擇 [ **是**]。  
+- ![注意圖示](../test/media/caution.gif "注意") **警告：** 一旦移動方法，便無法再使用自動程式碼 UI 測試編輯器來編輯方法。 您必須使用 [程式碼編輯器] 加入及維護自訂程式碼。 當您移動方法時，Microsoft Visual Studio 對話方塊隨即顯示。 它會警告此方法將從 UIMap.uitest 檔案移至 UIMap.cs 或 UIMap.vb 檔案，而且您將無法再使用 [自動程式碼 UI 測試編輯器] 編輯此方法。 選擇 [ **是**]。  
   
- **祕訣**  
+  **祕訣**  
   
--   ![祕訣](../test/media/tip.png "祕訣") 若要復原移動，請從 [編輯] 功能表中選擇 [復原]，或是按 Ctrl+Z。 不過，您必須從 UIMap.cs 或 UIMap.vb 檔案手動移除此程式碼。  
+- ![祕訣](../test/media/tip.png "祕訣") 若要復原移動，請從 [編輯] 功能表中選擇 [復原]，或是按 Ctrl+Z。 不過，您必須從 UIMap.cs 或 UIMap.vb 檔案手動移除此程式碼。  
   
 ##  <a name="CodedUITestEditor_LocateUIControl"></a> 尋找受測試應用程式中的 UI 控制項  
  有時候，很難視覺化控制項在受測試應用程式之 UI 中的位置。 自動程式碼 UI 測試編輯器的其中一項功能，就是您可以選取 UI 控制項對應中列出的控制項，並檢視其在受測試應用程式中的位置。 使用受測試應用程式上的 [ **尋找 UI 控制項** ] 功能，也可用來確認您已對控制項所做的搜尋屬性修改。  
@@ -167,11 +167,11 @@ ms.locfileid: "49242719"
  *我還應該知道什麼？*  
  **重要問題**  
   
--   ![注意圖示](../test/media/caution.gif "注意") **警告：** 找出 UI 控制項之前，請確認與測試相關聯的應用程式正在執行。  
+- ![注意圖示](../test/media/caution.gif "注意") **警告：** 找出 UI 控制項之前，請確認與測試相關聯的應用程式正在執行。  
   
- **祕訣**  
+  **祕訣**  
   
--   ![祕訣](../test/media/tip.png "祕訣") 或者，您可以使用 [全部尋找] 選項，確認可以正確地找出容器下的所有控制項。 下一節將說明此選項。  
+- ![祕訣](../test/media/tip.png "祕訣") 或者，您可以使用 [全部尋找] 選項，確認可以正確地找出容器下的所有控制項。 下一節將說明此選項。  
   
 ##  <a name="CodedUITestEditor_LocateDecendants"></a> 尋找控制項和其子系  
  您可以確認容器下所有的控制項可以正確地位於受測試應用程式的 UI 中。 在確認您可能對容器所做的搜尋屬性變更時，這樣做很有幫助。 此外，如果受測試應用程式的 UI 中已有重大變更，您可以確認現有的控制項搜尋屬性仍然正確。  
@@ -201,11 +201,11 @@ ms.locfileid: "49242719"
  *我還應該知道什麼？*  
  **備註**  
   
--   ![必要條件](../test/media/prereq.png "必要條件") 如果您需要確保可在 UI 動作之前使用特定控制項，您應該考慮使用適當的 UITestControl.WaitForControlXXX() 方法，將自訂程式碼新增至測試方法。 [!INCLUDE[crdefault](../includes/crdefault-md.md)][讓自動程式碼 UI 測試在播放期間等候特定事件](../test/making-coded-ui-tests-wait-for-specific-events-during-playback.md)。  
+- ![必要條件](../test/media/prereq.png "必要條件") 如果您需要確保可在 UI 動作之前使用特定控制項，您應該考慮使用適當的 UITestControl.WaitForControlXXX() 方法，將自訂程式碼新增至測試方法。 [!INCLUDE[crdefault](../includes/crdefault-md.md)][讓自動程式碼 UI 測試在播放期間等候特定事件](../test/making-coded-ui-tests-wait-for-specific-events-during-playback.md)。  
   
- **祕訣**  
+  **祕訣**  
   
--   ![祕訣](../test/media/tip.png "祕訣") 如果未顯示 [屬性] 視窗，請按住 Alt 再按 Enter，或是按 F4。  
+- ![祕訣](../test/media/tip.png "祕訣") 如果未顯示 [屬性] 視窗，請按住 Alt 再按 Enter，或是按 F4。  
   
 ## <a name="external-resources"></a>外部資源  
   

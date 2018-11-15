@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bc632f78a130064e44d9a0ea0bb172e81db98538
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 8a16a15b6d91fd2446e24c7213c6ce78d2a4a690
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39151512"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49874380"
 ---
 # <a name="walkthrough-download-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer"></a>逐步解說： 下載組件隨選與 ClickOnce 部署 API 使用設計工具
 第一次執行 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式時，預設會下載應用程式中包含的所有組件。 不過，可能是小部分使用者所使用之應用程式的組件。 在此情況下，只有在建立組件的其中一種類型時，才會想要下載組件。 下列逐步解說示範如何將應用程式中的特定組件標示為「選擇性」，以及在 Common Language Runtime 需要時，使用 <xref:System.Deployment.Application> 中的類別來如何下載它們。  
@@ -39,35 +39,35 @@ ms.locfileid: "39151512"
   
 #### <a name="to-create-a-project-that-uses-an-on-demand-assembly-with-visual-studio"></a>使用 Visual Studio 建立使用隨選組件的專案  
   
-1.  在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]中建立新的 Windows Forms 專案。 在 [檔案]  功能表上，指向 [加入] ，然後按一下 [新增專案] 。 選擇對話方塊中的 [類別庫]  專案，並將它命名為 `ClickOnceLibrary`。  
+1. 在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]中建立新的 Windows Forms 專案。 在 [檔案]  功能表上，指向 [加入] ，然後按一下 [新增專案] 。 選擇對話方塊中的 [類別庫]  專案，並將它命名為 `ClickOnceLibrary`。  
   
-    > [!NOTE]
-    >  在 Visual Basic 中，建議您修改專案屬性，以將此專案的根命名空間變更為 `Microsoft.Samples.ClickOnceOnDemand` 或您選擇的命名空間。 為求簡單起見，本逐步解說中的兩個專案都位於相同的命名空間中。  
+   > [!NOTE]
+   >  在 Visual Basic 中，建議您修改專案屬性，以將此專案的根命名空間變更為 `Microsoft.Samples.ClickOnceOnDemand` 或您選擇的命名空間。 為求簡單起見，本逐步解說中的兩個專案都位於相同的命名空間中。  
   
-2.  定義具有單一屬性 `DynamicClass` 的 `Message`類別。  
+2. 定義具有單一屬性 `DynamicClass` 的 `Message`類別。  
   
-     [!code-vb[ClickOnceLibrary#1](../deployment/codesnippet/VisualBasic/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer_1.vb)]
-     [!code-csharp[ClickOnceLibrary#1](../deployment/codesnippet/CSharp/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer_1.cs)]  
+    [!code-vb[ClickOnceLibrary#1](../deployment/codesnippet/VisualBasic/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer_1.vb)]
+    [!code-csharp[ClickOnceLibrary#1](../deployment/codesnippet/CSharp/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer_1.cs)]  
   
-3.  在方案總管 中，選取 Windows Forms 專案。 將參考新增至 <xref:System.Deployment.Application> 組件，並將專案參考新增至 `ClickOnceLibrary` 專案。  
+3. 在方案總管 中，選取 Windows Forms 專案。 將參考新增至 <xref:System.Deployment.Application> 組件，並將專案參考新增至 `ClickOnceLibrary` 專案。  
   
-    > [!NOTE]
-    >  在 Visual Basic 中，建議您修改專案屬性，以將此專案的根命名空間變更為 `Microsoft.Samples.ClickOnceOnDemand` 或您選擇的命名空間。 為求簡單起見，本逐步解說中的兩個專案都位於相同的命名空間中。  
+   > [!NOTE]
+   >  在 Visual Basic 中，建議您修改專案屬性，以將此專案的根命名空間變更為 `Microsoft.Samples.ClickOnceOnDemand` 或您選擇的命名空間。 為求簡單起見，本逐步解說中的兩個專案都位於相同的命名空間中。  
   
-4.  以滑鼠右鍵按一下表單，並從功能表中按一下 [檢視程式碼]  ，然後在表單中新增下列參考。  
+4. 以滑鼠右鍵按一下表單，並從功能表中按一下 [檢視程式碼]  ，然後在表單中新增下列參考。  
   
-     [!code-csharp[ClickOnceOnDemand#1](../deployment/codesnippet/CSharp/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer_2.cs)]
-     [!code-vb[ClickOnceOnDemand#1](../deployment/codesnippet/VisualBasic/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer_2.vb)]  
+    [!code-csharp[ClickOnceOnDemand#1](../deployment/codesnippet/CSharp/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer_2.cs)]
+    [!code-vb[ClickOnceOnDemand#1](../deployment/codesnippet/VisualBasic/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer_2.vb)]  
   
-5.  新增下列程式碼，以視需要下載此組件。 此程式碼示範如何使用泛型 <xref:System.Collections.DictionaryBase.Dictionary%2A> 類別將一組組件對應至群組名稱。 因為我們只會下載本逐步解說中的單一組件，所以我們的群組中只會有一個組件。 在實際的應用程式中，您可能會想要同時下載與應用程式中單一功能相關的所有組件。 對應資料表可讓您輕鬆地進行這項作業，方法是將屬於某個功能的所有 DLL 都與下載群組名稱產生關聯。  
+5. 新增下列程式碼，以視需要下載此組件。 此程式碼示範如何使用泛型 <xref:System.Collections.DictionaryBase.Dictionary%2A> 類別將一組組件對應至群組名稱。 因為我們只會下載本逐步解說中的單一組件，所以我們的群組中只會有一個組件。 在實際的應用程式中，您可能會想要同時下載與應用程式中單一功能相關的所有組件。 對應資料表可讓您輕鬆地進行這項作業，方法是將屬於某個功能的所有 DLL 都與下載群組名稱產生關聯。  
   
-     [!code-csharp[ClickOnceOnDemand#2](../deployment/codesnippet/CSharp/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer_3.cs)]
-     [!code-vb[ClickOnceOnDemand#2](../deployment/codesnippet/VisualBasic/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer_3.vb)]  
+    [!code-csharp[ClickOnceOnDemand#2](../deployment/codesnippet/CSharp/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer_3.cs)]
+    [!code-vb[ClickOnceOnDemand#2](../deployment/codesnippet/VisualBasic/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer_3.vb)]  
   
-6.  在 [ **檢視** ] 功能表上，按一下 [ **工具箱**]。 將 <xref:System.Windows.Forms.Button> 從 [工具箱]  拖曳至表單。 按兩下按鈕，並將下列程式碼新增至 <xref:System.Windows.Forms.Control.Click> 事件處理常式。  
+6. 在 [ **檢視** ] 功能表上，按一下 [ **工具箱**]。 將 <xref:System.Windows.Forms.Button> 從 [工具箱]  拖曳至表單。 按兩下按鈕，並將下列程式碼新增至 <xref:System.Windows.Forms.Control.Click> 事件處理常式。  
   
-     [!code-csharp[ClickOnceOnDemand#3](../deployment/codesnippet/CSharp/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer_4.cs)]
-     [!code-vb[ClickOnceOnDemand#3](../deployment/codesnippet/VisualBasic/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer_4.vb)]  
+    [!code-csharp[ClickOnceOnDemand#3](../deployment/codesnippet/CSharp/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer_4.cs)]
+    [!code-vb[ClickOnceOnDemand#3](../deployment/codesnippet/VisualBasic/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer_4.vb)]  
   
 ## <a name="mark-assemblies-as-optional"></a>組件必須標記為選擇性  
   
@@ -85,19 +85,19 @@ ms.locfileid: "39151512"
   
 #### <a name="to-mark-assemblies-as-optional-in-your-clickonce-application-by-using-manifest-generation-and-editing-tool--graphical-client-mageuiexe"></a>使用資訊清單產生和編輯工具 (圖形化用戶端 (MageUI.exe)) 將組件標示為 ClickOnce 應用程式中的選用項目  
   
-1.  建立您[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]資訊清單中所述[逐步解說： 手動部署 ClickOnce 應用程式](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)。  
+1. 建立您[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]資訊清單中所述[逐步解說： 手動部署 ClickOnce 應用程式](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)。  
   
-2.  關閉 MageUI.exe 之前，請選取包含您部署之應用程式資訊清單的索引標籤，然後在該索引標籤內選取 [檔案]  索引標籤。  
+2. 關閉 MageUI.exe 之前，請選取包含您部署之應用程式資訊清單的索引標籤，然後在該索引標籤內選取 [檔案]  索引標籤。  
   
-3.  在應用程式檔案清單中尋找 ClickOnceLibrary.dll，並將其 [檔案類型]  資料行設定成 [無] 。 在 [群組]  資料行中，輸入 `ClickOnceLibrary.dll`。  
+3. 在應用程式檔案清單中尋找 ClickOnceLibrary.dll，並將其 [檔案類型]  資料行設定成 [無] 。 在 [群組]  資料行中，輸入 `ClickOnceLibrary.dll`。  
   
 ## <a name="test-the-new-assembly"></a>測試新的組件  
   
 #### <a name="to-test-your-on-demand-assembly"></a>測試隨選組件  
   
-1.  啟動使用 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]所部署的應用程式。  
+1. 啟動使用 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]所部署的應用程式。  
   
-2.  您的主要表單出現時，請按 <xref:System.Windows.Forms.Button>。 您應該會在訊息方塊視窗中看到 "Hello, World!" 字串。  
+2. 您的主要表單出現時，請按 <xref:System.Windows.Forms.Button>。 您應該會在訊息方塊視窗中看到 "Hello, World!" 字串。  
   
 ## <a name="see-also"></a>另請參閱  
  <xref:System.Deployment.Application.ApplicationDeployment>

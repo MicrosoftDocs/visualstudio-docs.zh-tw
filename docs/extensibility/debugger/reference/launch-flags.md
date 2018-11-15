@@ -1,5 +1,5 @@
 ---
-title: LAUNCH_FLAGS |Microsoft 文件
+title: LAUNCH_FLAGS |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 44d7396388d0bac1539a597fa5b72e0bedaba8c7
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 74ec5b3cc02efa75e84d52910c02ea693a7ab8a6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31125045"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49903479"
 ---
 # <a name="launchflags"></a>LAUNCH_FLAGS
 指定偵錯啟動旗標。  
@@ -51,18 +51,18 @@ public enum enum_LAUNCH_FLAGS {
  啟動偵錯的處理程序。  
   
  LAUNCH_NODEBUG  
- 啟動處理程序，但不偵錯它。  
+ 啟動程序，但不偵錯它。  
   
  LAUNCH_ENABLE_ENC  
  已被取代，請勿使用。  
   
  LAUNCH_MERGE_ENV  
- 啟動處理序，並合併啟動的主控件的環境。  
+ 啟動處理程序，並將合併啟動的主控件的環境。  
   
 ## <a name="remarks"></a>備註  
  這些值會傳遞做為引數[LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md)方法。  
   
- 這些旗標可能會合併使用位元`OR`。  
+ 這些旗標可能會結合的位元`OR`。  
   
 ## <a name="requirements"></a>需求  
  標頭： msdbg.h  

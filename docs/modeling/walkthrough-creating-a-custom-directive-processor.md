@@ -15,12 +15,12 @@ ms.technology: vs-ide-modeling
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 0623616848c6e996a49baffa19f412a22f28e846
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: c430dad62686e49d9ce07fdff9a3665b0ea519a4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36234420"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49930319"
 ---
 # <a name="walkthrough-create-a-custom-directive-processor"></a>逐步解說：建立自訂指示詞處理器
 
@@ -603,7 +603,7 @@ End Property
 
 4. 針對僅限 Visual Basic，開啟**專案**功能表，然後按一下**CustomDP 屬性**。 在 **應用程式**索引標籤中，於**根命名空間**，刪除預設值， `CustomDP`。
 
-5. 在 **檔案**功能表上，按一下**全部儲存**。
+5. 按一下 [ **檔案** ] 功能表上的 [ **全部儲存**]。
 
 6. 在 [ **建置** ] 功能表上，按一下 [ **建置方案**]。
 
@@ -656,19 +656,22 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
 
      您的登錄機碼應該含有下列值：
 
-    |名稱|類型|資料|
-    |----------|----------|----------|
-    |(預設值)|REG_SZ|(值未設定)|
-    |類別|REG_SZ|CustomDP.CustomDirectiveProcessor|
-    |程式碼基底|REG_SZ|**\<您的方案路徑 >** CustomDP\bin\Debug\CustomDP.dll|
+
+   | 名稱 | 類型 | 資料 |
+   |-|-|-|
+   | (預設值) | REG_SZ | (值未設定) |
+   | 類別 | REG_SZ | CustomDP.CustomDirectiveProcessor |
+   | 程式碼基底 | REG_SZ | <strong>\<您的方案路徑 ></strong>CustomDP\bin\Debug\CustomDP.dll |
 
      如果組件已置於 GAC 中，則值看起來應該如下表所示：
 
-    |名稱|類型|資料|
-    |----------|----------|----------|
-    |(預設值)|REG_SZ|(值未設定)|
-    |類別|REG_SZ|CustomDP.CustomDirectiveProcessor|
-    |Assembly|REG_SZ|CustomDP.dll|
+
+   | 名稱 | 類型 | 資料 |
+   |-|-|-|
+   | (預設值) | REG_SZ | (值未設定) |
+   | 類別 | REG_SZ | CustomDP.CustomDirectiveProcessor |
+   | Assembly | REG_SZ | CustomDP.dll |
+
 
 6. 重新啟動 Visual Studio。
 

@@ -1,5 +1,5 @@
 ---
-title: IDebugMemoryBytes2::ReadAt |Microsoft 文件
+title: IDebugMemoryBytes2::ReadAt |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,15 +16,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 612a065286723e3c2b68a9ce5bd31c850d030959
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3e3989ef8c79e4304e3bda3e99418da1973e6e0a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31114082"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49912939"
 ---
 # <a name="idebugmemorybytes2readat"></a>IDebugMemoryBytes2::ReadAt
-讀取在指定位置開始的位元組序列。  
+讀取指定的位置開始的位元組序列。  
   
 ## <a name="syntax"></a>語法  
   
@@ -50,31 +50,31 @@ int ReadAt(
   
 #### <a name="parameters"></a>參數  
  `pStartContext`  
- [in][IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)物件，指定要從何處開始寫入讀取位元組。  
+ [in][IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)物件，指定要從何處開始讀取的位元組。  
   
  `dwCount`  
  [in]要讀取的位元組數目。 也會指定的長度`rgbMemory`陣列。  
   
  `rgbMemory`  
- [in、 out]實際讀取填入之位元組的陣列。  
+ [in、 out]實際讀取的位元組填入的陣列。  
   
  `pdwRead`  
  [out]傳回實際讀取的連續位元組數目。  
   
  `pdwUnreadable`  
- [in、 out]傳回讀取的位元組數目。 可能是 null 值，如果用戶端是興趣無法讀取的位元組數目。  
+ [in、 out]傳回無法讀取的位元組數目。 可能是 null 值，如果用戶端不願就無法讀取的位元組數目。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，會傳回 S_OK;反之則傳回錯誤碼。  
+ 如果成功，會傳回 S_OK;否則，傳回錯誤碼。  
   
 ## <a name="remarks"></a>備註  
- 如果要求 100 個位元組和第 50 可讀取、 下一步 20，則無法讀取，而且其餘 30 是可讀取，這個方法會傳回：  
+ 如果要求 100 個位元組和前 50 個可讀取、 後 20，則無法讀取，而且其餘 30 是可讀取，則這個方法會傳回：  
   
  *`pdwRead` = 50  
   
  *`pdwUnreadable` = 20  
   
- 在此情況下，因為`*pdwRead + *pdwUnreadable < dwCount`，呼叫端必須進行額外的呼叫來讀取剩餘的原始要求的 100 30 個位元組和[IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)物件傳入`pStartContext`必須進階參數由 70。  
+ 在此情況下，因為`*pdwRead + *pdwUnreadable < dwCount`，呼叫端必須進行額外的呼叫來讀取原始要求的 100 個剩餘的 30 個位元組而[IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)傳入物件`pStartContext`必須進階參數由 70。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md)   

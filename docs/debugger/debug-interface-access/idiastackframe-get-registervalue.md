@@ -1,5 +1,5 @@
 ---
-title: 'Idiastackframe:: Get_registervalue |Microsoft 文件'
+title: 'Idiastackframe:: Get_registervalue |Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c1c08258c98b46536f17f7819ce01c296d2d1900
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 7799316a933e5f021df78699e41e6e9483746575
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31459541"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49845949"
 ---
 # <a name="idiastackframegetregistervalue"></a>IDiaStackFrame::get_registerValue
-儲存在堆疊框架中，擷取指定的暫存器的值。  
+擷取的值指定的暫存器儲存在堆疊框架中。  
   
 ## <a name="syntax"></a>語法  
   
@@ -41,7 +41,7 @@ HRESULT get_registerValue(
  [out]在登錄中儲存的值。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK`，否則會傳回錯誤碼。  
+ 如果成功，則傳回`S_OK`，否則會傳回錯誤碼。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)   

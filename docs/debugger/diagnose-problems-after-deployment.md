@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cd3313957ae1cccbd3f56b1fafacfed58570531f
-ms.sourcegitcommit: a749c287ec7d54148505978e8ca55ccd406b71ee
+ms.openlocfilehash: b10635c1aefedf7af83a1c884717b80b442e8998
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46542503"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219909"
 ---
 # <a name="diagnose-problems-after-deployment-using-intellitrace"></a>部署後，使用 IntelliTrace 診斷問題
 
@@ -44,7 +44,7 @@ ms.locfileid: "46542503"
 
 Visual Studio 2017 不會包含*BuildInfo.config*檔案，其中已被取代，，然後移除。 若要在部署後，偵錯 ASP.NET web 應用程式，請使用其中一種下列方法：
 
-* 部署至 Azure，使用[Application Insights](https://docs.microsoft.com/en-us/azure/application-insights/)。
+* 部署至 Azure，使用[Application Insights](https://docs.microsoft.com/azure/application-insights/)。
 
 * 如果您要使用 IntelliTrace，在 Visual Studio 中開啟專案，並比對的組建從載入的符號檔。 您可以載入符號檔，從**模組** 視窗或藉由設定中的符號**工具** > **選項** > **偵錯**  > **符號**。
 
@@ -66,7 +66,7 @@ Visual Studio 2017 不會包含*BuildInfo.config*檔案，其中已被取代，�
 
      ![設定組建管線 TFS 2013 中的符號路徑](../debugger/media/ffr_tfs2013builddefsymbolspath.png "FFR_TFS2013BuildDefSymbolsPath")
 
-     如需有關符號的詳細資訊，請參閱[發行符號資料](/azure/devops/pipelines/tasks/build/index-sources-publish-symbols?view=vsts)。
+     如需更多關於符號的資訊，請參閱 [發佈符號資料](/azure/devops/pipelines/tasks/build/index-sources-publish-symbols?view=vsts)。
 
 4.  加入這個 MSBuild 引數可以將 TFS 和符號位置加入建置資訊清單檔案中：
 
@@ -156,12 +156,12 @@ Visual Studio 2017 不會包含*BuildInfo.config*檔案，其中已被取代，�
  **/p: buildsymbolstorepath =**\<*符號的路徑*>
 
 ##  <a name="DeployRelease"></a> 步驟 2： 發行您的應用程式
- 如果您使用[Web.Deploy 套件](https://msdn.microsoft.com/library/dd394698.aspx)建置流程，來部署您的應用程式中建立、 建置資訊清單會自動重新命名，從 「*ProjectName*。BuildInfo.config"為"BuildInfo.config"並將其放在相同的資料夾中您 web 伺服器上的應用程式的 Web.config 檔案。
+ 如果使用在建置流程中建立的 [Web.Deploy 套件](https://msdn.microsoft.com/library/dd394698.aspx) 來部署 App，建置資訊清單的名稱會從 "*ProjectName*.BuildInfo.config" 自動重新命名為 "BuildInfo.config"，並且會放在 Web 伺服器上 App 的 Web.config 檔案所在之相同的資料夾中。
 
  如果使用其他方法來部署 App，請確定將建置資訊清單的名稱從 "*ProjectName*.BuildInfo.config" 重新命名為 "BuildInfo.config"，並將其放在 Web 伺服器上 App 的 Web.config 檔案所在之相同的資料夾中。
 
 ## <a name="step-3-monitor-your-app"></a>步驟 3：監視 App
- 在 Web 伺服器上設定應用程式效能監視功能，以便監視 App 是否發生問題、記錄診斷事件，以及將這些事件儲存至 IntelliTrace 記錄檔。 請參閱[監視發行是否發生部署問題](../debugger/using-the-intellitrace-stand-alone-collector.md)。
+ 在 Web 伺服器上設定應用程式效能監視功能，以便監視 App 是否發生問題、記錄診斷事件，以及將這些事件儲存至 IntelliTrace 記錄檔。 請參閱 [監視發行是否發生部署問題](../debugger/using-the-intellitrace-stand-alone-collector.md)。
 
 ##  <a name="InvestigateEvents"></a> 步驟 4： 找出問題
  您需要在開發電腦或其他電腦上安裝 Visual Studio Enterprise，才能檢閱記錄的事件並使用 IntelliTrace 偵錯程式碼。 您也可以使用 CodeLens、偵錯工具對應和 Code Map 等工具協助診斷問題。
@@ -238,7 +238,7 @@ Visual Studio 2017 不會包含*BuildInfo.config*檔案，其中已被取代，�
 
 ###  <a name="WhatElse"></a> 還有什麼可以如何處理？
 
--   [取得此程式碼的詳細資訊](../ide/find-code-changes-and-other-history-with-codelens.md)。 若要尋找此程式碼的參考，其變更歷程記錄、 相關的 bug、 工作項目、 程式碼檢閱或單元測試-而不需要離開編輯器 all-會使用 CodeLens 指標在編輯器中。
+-   [取得有關這個程式碼的詳細資訊](../ide/find-code-changes-and-other-history-with-codelens.md)。 若要尋找此程式碼的參考，其變更歷程記錄、 相關的 bug、 工作項目、 程式碼檢閱或單元測試-而不需要離開編輯器 all-會使用 CodeLens 指標在編輯器中。
 
      ![CodeLens&#45;檢視參考此程式碼](../debugger/media/ffr_itsummarypageperformancecodelensreferences.png "FFR_ITSummaryPagePerformanceCodeLensReferences")
 
@@ -264,100 +264,100 @@ Visual Studio 2017 不會包含*BuildInfo.config*檔案，其中已被取代，�
 
 3.  確定該檔案是否包含必要資訊：
 
--   **ProjectName**
+- **ProjectName**
 
-     Visual Studio 中的專案名稱。 例如: 
+   Visual Studio 中的專案名稱。 例如: 
+
+  ```xml
+  <ProjectName>FabrikamFiber.Extranet.Web</ProjectName>
+  ```
+
+- **SourceControl**
+
+- 您的原始檔控制系統和下列必要屬性的相關資訊：
+
+  - **TFS**
+
+    - **ProjectCollectionUri**：您的 Team Foundation Server 和專案集合的 URI
+
+    - **ProjectItemSpec**：您的 App 的專案檔 (.csproj 或 .vbproj) 的路徑
+
+    - **ProjectVersionSpec**：您的專案版本
+
+      例如: 
 
     ```xml
-    <ProjectName>FabrikamFiber.Extranet.Web</ProjectName>
+    <SourceControl type="TFS">
+       <TfsSourceControl>
+          <ProjectCollectionUri>http://fabrikamfiber:8080/tfs/FabrikamFiber</ProjectCollectionUri>
+          <ProjectItemSpec>$/WorkInProgress/FabrikamFiber/FabrikamFiber.CallCenter/FabrikamFiber.Web/FabrikamFiber.Web.csproj</ProjectItemSpec>
+          <ProjectVersionSpec>LFabrikamFiber_BuildAndPublish_20130813@$/WorkInProgress</ProjectVersionSpec>
+       </TfsSourceControl>
+    </SourceControl>
     ```
 
--   **SourceControl**
+  - **Git**
 
--   您的原始檔控制系統和下列必要屬性的相關資訊：
+    - **GitSourceControl**： **GitSourceControl** 結構描述的位置
 
-    -   **TFS**
+    - **RepositoryUrl**：您的 Team Foundation Server、專案集合和 Git 儲存機制的 URI
 
-        -   **ProjectCollectionUri**：您的 Team Foundation Server 和專案集合的 URI
+    - **ProjectPath**：您的 App 的專案檔 (.csproj 或 .vbproj) 的路徑
 
-        -   **ProjectItemSpec**：您的 App 的專案檔 (.csproj 或 .vbproj) 的路徑
+    - **CommitId**：您的認可 ID
 
-        -   **ProjectVersionSpec**：您的專案版本
+      例如: 
 
-         例如: 
+    ```xml
+    <SourceControl type="Git">
+       <GitSourceControl xmlns="http://schemas.microsoft.com/visualstudio/deploymentevent_git/2013/09">
+          <RepositoryUrl>http://gittf:8080/tfs/defaultcollection/_git/FabrikamFiber</RepositoryUrl>
+          <ProjectPath>/FabrikamFiber.CallCenter/FabrikamFiber.Web/FabrikamFiber.Web.csproj</ProjectPath>
+          <CommitId>50662c96502dddaae5cd5ced962d9f14ec5bc64d</CommitId>
+       </GitSourceControl>
+    </SourceControl>
+    ```
 
-        ```xml
-        <SourceControl type="TFS">
-           <TfsSourceControl>
-              <ProjectCollectionUri>http://fabrikamfiber:8080/tfs/FabrikamFiber</ProjectCollectionUri>
-              <ProjectItemSpec>$/WorkInProgress/FabrikamFiber/FabrikamFiber.CallCenter/FabrikamFiber.Web/FabrikamFiber.Web.csproj</ProjectItemSpec>
-              <ProjectVersionSpec>LFabrikamFiber_BuildAndPublish_20130813@$/WorkInProgress</ProjectVersionSpec>
-           </TfsSourceControl>
-        </SourceControl>
-        ```
+- **建置**
 
-    -   **Git**
+   您的建置系統 ( `"TeamBuild"` 或 `"MSBuild"`) 和下列必要屬性的相關資訊：
 
-        -   **GitSourceControl**： **GitSourceControl** 結構描述的位置
+  - **BuildLabel** (適用於 TeamBuild)：組建名稱和編號。 此標籤也可做為部署事件的名稱。 如需組建編號的詳細資訊，請參閱 [使用組建編號提供有意義的名稱給已完成的組建](/azure/devops/pipelines/build/options?view=vsts)。
 
-        -   **RepositoryUrl**：您的 Team Foundation Server、專案集合和 Git 儲存機制的 URI
+  - **SymbolPath** (建議使用)：以分號分隔之符號 (PDB 檔案) 位置的 URI 清單。 這些 URI 可以是 URL 或 UNC。 這樣可讓 Visual Studio 更容易找到相符的符號以協助您進行偵錯。
 
-        -   **ProjectPath**：您的 App 的專案檔 (.csproj 或 .vbproj) 的路徑
+  - **BuildReportUrl** (適用於 TeamBuild)：TFS 中的組建報告位置
 
-        -   **CommitId**：您的認可 ID
+  - **BuildId** (適用於 TeamBuild)：TFS 中的組建詳細資料 URI。 此 URI 也可做為部署事件的 ID。 如果不是使用 TeamBuild，此 ID 必須是唯一的。
 
-         例如: 
+  - **BuiltSolution**：Visual Studio 用於尋找及開啟相符方案之方案檔案的路徑。 這是 **SolutionPath** MsBuild 屬性的內容。
 
-        ```xml
-        <SourceControl type="Git">
-           <GitSourceControl xmlns="http://schemas.microsoft.com/visualstudio/deploymentevent_git/2013/09">
-              <RepositoryUrl>http://gittf:8080/tfs/defaultcollection/_git/FabrikamFiber</RepositoryUrl>
-              <ProjectPath>/FabrikamFiber.CallCenter/FabrikamFiber.Web/FabrikamFiber.Web.csproj</ProjectPath>
-              <CommitId>50662c96502dddaae5cd5ced962d9f14ec5bc64d</CommitId>
-           </GitSourceControl>
-        </SourceControl>
-        ```
+    例如: 
 
--   **建置**
+  - **TFS**
 
-     您的建置系統 ( `"TeamBuild"` 或 `"MSBuild"`) 和下列必要屬性的相關資訊：
+    ```xml
+    <Build type="TeamBuild">
+       <MsBuild>
+          <BuildLabel kind="label">FabrikamFiber_BuildAndPublish_20130813.1</BuildLabel>
+          <SymbolPath>\\fabrikamfiber\FabrikamFiber.CallCenter\Symbols</SymbolPath>
+          <BuildReportUrl kind="informative, url" url="http://fabrikamfiber:8080/tfs/FabrikamFiber/_releasePipeline/FindRelease?buildUri=fabrikamfiber%3a%2f%2f%2fBuild%2fBuild%2f448">Build Report Url</BuildReportUrl>
+          <BuildId kind="id">1c4444d2-518d-4673-a590-dce2773c7744,fabrikamfiber:///Build/Build/448</BuildId>
+          <BuiltSolution>$/WorkInProgress/FabrikamFiber/FabrikamFiber.CallCenter/FabrikamFiber.CallCenter.sln</BuiltSolution>
+       </MsBuild>
+    </Build>
+    ```
 
-    -   **BuildLabel** (適用於 TeamBuild)：組建名稱和編號。 此標籤也可做為部署事件的名稱。 如需組建編號的詳細資訊，請參閱[使用組建編號提供有意義的名稱給已完成的組建](/azure/devops/pipelines/build/options?view=vsts)。
+  - **Git**
 
-    -   **SymbolPath** (建議使用)：以分號分隔之符號 (PDB 檔案) 位置的 URI 清單。 這些 URI 可以是 URL 或 UNC。 這樣可讓 Visual Studio 更容易找到相符的符號以協助您進行偵錯。
-
-    -   **BuildReportUrl** (適用於 TeamBuild)：TFS 中的組建報告位置
-
-    -   **BuildId** (適用於 TeamBuild)：TFS 中的組建詳細資料 URI。 此 URI 也可做為部署事件的 ID。 如果不是使用 TeamBuild，此 ID 必須是唯一的。
-
-    -   **BuiltSolution**：Visual Studio 用於尋找及開啟相符方案之方案檔案的路徑。 這是 **SolutionPath** MsBuild 屬性的內容。
-
-     例如: 
-
-    -   **TFS**
-
-        ```xml
-        <Build type="TeamBuild">
-           <MsBuild>
-              <BuildLabel kind="label">FabrikamFiber_BuildAndPublish_20130813.1</BuildLabel>
-              <SymbolPath>\\fabrikamfiber\FabrikamFiber.CallCenter\Symbols</SymbolPath>
-              <BuildReportUrl kind="informative, url" url="http://fabrikamfiber:8080/tfs/FabrikamFiber/_releasePipeline/FindRelease?buildUri=fabrikamfiber%3a%2f%2f%2fBuild%2fBuild%2f448">Build Report Url</BuildReportUrl>
-              <BuildId kind="id">1c4444d2-518d-4673-a590-dce2773c7744,fabrikamfiber:///Build/Build/448</BuildId>
-              <BuiltSolution>$/WorkInProgress/FabrikamFiber/FabrikamFiber.CallCenter/FabrikamFiber.CallCenter.sln</BuiltSolution>
-           </MsBuild>
-        </Build>
-        ```
-
-    -   **Git**
-
-        ```xml
-        <Build type="MSBuild">
-           <MSBuild>
-              <SymbolPath>\\gittf\FabrikamFiber.CallCenter\Symbols</SymbolPath>
-              <BuiltSolution>/FabrikamFiber.CallCenter/FabrikamFiber.CallCenter.sln</BuiltSolution>
-           </MSBuild>
-        </Build>
-        ```
+    ```xml
+    <Build type="MSBuild">
+       <MSBuild>
+          <SymbolPath>\\gittf\FabrikamFiber.CallCenter\Symbols</SymbolPath>
+          <BuiltSolution>/FabrikamFiber.CallCenter/FabrikamFiber.CallCenter.sln</BuiltSolution>
+       </MSBuild>
+    </Build>
+    ```
 
 ####  <a name="IneligibleWorkspace"></a> 問： 為什麼 Visual Studio 會顯示我選取的工作區不適合？
  **答：** 所選取的工作區在原始檔控制資料夾和本機資料夾之間沒有任何對應。 若要建立此工作區的對應，請選擇 [管理] 。 否則，請選擇已對應的工作區或建立新的工作區。
@@ -382,7 +382,7 @@ Visual Studio 2017 不會包含*BuildInfo.config*檔案，其中已被取代，�
      ![從原始檔控制開啟&#45;移轉](../debugger/media/ffr_openprojectfromsourcecontrol_migrated.png "FFR_OpenProjectFromSourceControl_Migrated")
 
 ####  <a name="WhatWorkspace"></a> 問： 什麼是工作區？
- **答：** 您[工作區會儲存一份來源](/azure/devops/repos/tfvc/create-work-workspaces?view=vsts)，您可以開發及個別測試之前您簽入您的工作。 如果您還沒有明確對應至找到之方案或專案的工作區，則 Visual Studio 會提示您選擇可用的工作區或建立新的工作區，並以您的電腦名稱做為預設工作區名稱。
+ **答：** 您的 [工作區用於儲存來源的複本](/azure/devops/repos/tfvc/create-work-workspaces?view=vsts) ，您可以在簽入網路之前個別開發及測試該複本。 如果您還沒有明確對應至找到之方案或專案的工作區，則 Visual Studio 會提示您選擇可用的工作區或建立新的工作區，並以您的電腦名稱做為預設工作區名稱。
 
 ####  <a name="UntrustedSymbols"></a> 問： 為什麼取得此訊息不受信任的符號相關？
  ![使用不受信任的符號路徑進行偵錯嗎？](../debugger/media/ffr_ituntrustedsymbolpaths.png "FFR_ITUntrustedSymbolPaths")

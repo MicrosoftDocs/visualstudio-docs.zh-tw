@@ -12,12 +12,12 @@ caps.latest.revision: 15
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 6ed72cc65535849516de35c861942913ca750fba
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7faef9f085f21db4d4f819746acf52c119189f6d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49216849"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49940992"
 ---
 # <a name="update-a-uml-model-from-a-background-thread"></a>從背景執行緒更新 UML 模型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,35 +35,35 @@ ms.locfileid: "49216849"
   
 #### <a name="to-run-the-example"></a>執行範例  
   
-1.  建立 C# 專案中的命令處理常式，如中所述[在模型圖上定義功能表命令](../modeling/define-a-menu-command-on-a-modeling-diagram.md)。  
+1. 建立 C# 專案中的命令處理常式，如中所述[在模型圖上定義功能表命令](../modeling/define-a-menu-command-on-a-modeling-diagram.md)。  
   
-2.  請確定專案包含這些組件的參考：  
+2. 請確定專案包含這些組件的參考：  
   
-    -   Microsoft.VisualStudio.ArchitectureTools.Extensibility  
+   -   Microsoft.VisualStudio.ArchitectureTools.Extensibility  
   
-    -   Microsoft.VisualStudio.Modeling.Sdk.[version]  
+   -   Microsoft.VisualStudio.Modeling.Sdk.[version]  
   
-    -   Microsoft.VisualStudio.Modeling.Sdk.Diagrams.[version]  
+   -   Microsoft.VisualStudio.Modeling.Sdk.Diagrams.[version]  
   
-    -   Microsoft.VisualStudio.Uml.Interfaces  
+   -   Microsoft.VisualStudio.Uml.Interfaces  
   
-    -   System.ComponentModel.Composition  
+   -   System.ComponentModel.Composition  
   
-    -   System.Windows.Forms  
+   -   System.Windows.Forms  
   
-3.  將 Windows 表單名為加入至專案**ProgressForm**。 它應該會顯示一則訊息，而這則訊息指出正在更新。 這不需要有任何其他控制。  
+3. 將 Windows 表單名為加入至專案**ProgressForm**。 它應該會顯示一則訊息，而這則訊息指出正在更新。 這不需要有任何其他控制。  
   
-4.  加入含有步驟 7 後所顯示程式碼的 C# 檔案。  
+4. 加入含有步驟 7 後所顯示程式碼的 C# 檔案。  
   
-5.  建置並執行專案。  
+5. 建置並執行專案。  
   
-     [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的新執行個體隨即在實驗模式中啟動。  
+    [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的新執行個體隨即在實驗模式中啟動。  
   
-6.  在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的實驗執行個體中，建立或開啟 UML 類別圖。  
+6. 在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的實驗執行個體中，建立或開啟 UML 類別圖。  
   
-7.  以滑鼠右鍵按一下 UML 類別圖的任何位置，然後按一下**新增數個 UML 類別**。  
+7. 以滑鼠右鍵按一下 UML 類別圖的任何位置，然後按一下**新增數個 UML 類別**。  
   
- 數個新的類別方塊會出現在圖表中，並以半秒的間隔逐一出現。  
+   數個新的類別方塊會出現在圖表中，並以半秒的間隔逐一出現。  
   
 ```csharp  
 using System;  

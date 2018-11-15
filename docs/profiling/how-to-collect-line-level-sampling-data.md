@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a10c8db7a9706c406cb192f9418c1fd8d04e888a
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 0920c9a506adaf562a8acc77b2b030e461f11ed1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34765696"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49934884"
 ---
 # <a name="how-to-collect-line-level-sampling-data"></a>如何：收集程式行層級取樣資料
 程式行層級取樣是程式碼剖析工具的一項功能，可以在需要大量處理器資源的函式 (例如包含大量專有樣本的函式) 中判斷處理器花最多時間處理的程式碼。  
@@ -32,21 +32,21 @@ ms.locfileid: "34765696"
 ### <a name="available-data"></a>可用的資料  
  可用的程式行層級取樣資料包含下列資訊︰  
   
--   函式名稱。  
+- 函式名稱。  
   
--   函式位址。  
+- 函式位址。  
   
--   行開頭 - 取樣程式碼的行號。  
+- 行開頭 - 取樣程式碼的行號。  
   
--   行結尾 - 結束原始程式碼行號。 這通常與「行開頭」資料相同，除非單一程式陳述式跨越多個原始程式碼行。  
+- 行結尾 - 結束原始程式碼行號。 這通常與「行開頭」資料相同，除非單一程式陳述式跨越多個原始程式碼行。  
   
--   字元開頭 - 彙總樣本開頭的資料行。 這通常是 0，除非一行包含多個程式陳述式。  
+- 字元開頭 - 彙總樣本開頭的資料行。 這通常是 0，除非一行包含多個程式陳述式。  
   
--   字元結尾 - 彙總樣本結尾的資料行。  
+- 字元結尾 - 彙總樣本結尾的資料行。  
   
--   IP - 取得彙總樣本的位址 (僅限 IP 檢視)。  
+- IP - 取得彙總樣本的位址 (僅限 IP 檢視)。  
   
- 在 [模組] 檢視中，如果函式包含程式行層級統計資料，統計資料會巢狀於每個函式之下。 此外，巢狀於每一行之下的 IP 層級統計資料也會顯示。  
+  在 [模組] 檢視中，如果函式包含程式行層級統計資料，統計資料會巢狀於每個函式之下。 此外，巢狀於每一行之下的 IP 層級統計資料也會顯示。  
   
 ### <a name="turn-off-line-level-sampling-for-managed-code"></a>關閉受控程式碼的程式行層級取樣  
  程式行層級取樣預設為開啟。 您可以執行下列其中一個命令，以關閉受控程式碼的程式行層級資料收集：  

@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 80e76fd7677eab8c56827dcdbaeaf42ee72c5c28
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 9b2710b6efcc765f98977c2730c5f729e3a8b260
+ms.sourcegitcommit: e7b3fc8c788fb49d6ba4215abf27139f2a08e1a1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39081780"
+ms.lasthandoff: 10/02/2018
+ms.locfileid: "48120379"
 ---
 # <a name="msbuild-reference"></a>MSBuild 參考
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 是適用於 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 的建置系統。 下列連結會引導至包含 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 參考資訊的主題。  
@@ -46,14 +46,14 @@ ms.locfileid: "39081780"
  [一般 MSBuild 專案屬性](../msbuild/common-msbuild-project-properties.md)  
  說明通用於所有專案類型的專案屬性，也會說明通常是供特定專案類型使用的屬性。  
   
- [一般 MSBuild 專案項目](../msbuild/common-msbuild-project-items.md)  
+ [通用的 MSBuild 專案項目](../msbuild/common-msbuild-project-items.md)  
  說明通用於所有專案類型的專案項目，也會說明通常是供特定專案類型使用的項目。  
   
  [命令列參考](../msbuild/msbuild-command-line-reference.md)  
  說明可以與 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].exe 搭配使用的引數和參數。  
   
  [.Targets 檔案](../msbuild/msbuild-dot-targets-files.md)  
- 描述 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 內含的 .Targets 檔案。  
+ 描述 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 內含的 .Targets** 檔案。  
   
  [已知的項目中繼資料](../msbuild/msbuild-well-known-item-metadata.md)  
  列出與每個項目一起建立的中繼資料。  
@@ -71,25 +71,24 @@ ms.locfileid: "39081780"
  列出可能必須「逸出」才能正確解譯的字元。 逸出序列是一系列的字元，表示隨之而來的是替代的解譯。  
   
 ## <a name="see-also"></a>另請參閱  
- [MSBuild 概觀](../msbuild/msbuild.md)介紹 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]，並提供說明如何使用它來建置專案的主題連結。  
+ [MSBuild 概觀](../msbuild/msbuild.md)     
+ 介紹 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]，並提供說明如何使用它來建置專案的主題連結。  
   
- <xref:Microsoft.Build.Conversion>  
+ [Microsoft.Build.Conversion](https://docs.microsoft.com/dotnet/api/microsoft.build.conversion)  
  包含 Conversion 命名空間參考。  
   
- <xref:Microsoft.Build.Evaluation>  
+ [Microsoft.Build.Evaluation](https://docs.microsoft.com/dotnet/api/microsoft.build.evaluation)  
  包含 Evaluation 命名空間參考。  
   
- <xref:Microsoft.Build.Execution>  
+ [Microsoft.Build.Execution](https://docs.microsoft.com/dotnet/api/microsoft.build.execution)  
  包含 Execution 命名空間參考。  
   
- <xref:Microsoft.Build.Framework>  
+ [Microsoft.Build.Framework](https://docs.microsoft.com/dotnet/api/microsoft.build.framework)  
  包含 Framework 命名空間參考。  
   
- <xref:Microsoft.Build.Logging>  
- 包含 Logging 命名空間參考。  
+ [Microsoft.Build.Logging](https://docs.microsoft.com/dotnet/api/microsoft.build.logging) 包含 Logging 命名空間參考。  
   
- <xref:Microsoft.Build.Tasks>  
+ [Microsoft.Build.Tasks](https://docs.microsoft.com/dotnet/api/microsoft.build.tasks)  
  包含 Tasks 命名空間參考。  
   
- <xref:Microsoft.Build.Utilities>  
- 包含 Utilities 命名空間參考。
+ [Microsoft.Build.Utilities](https://docs.microsoft.com/dotnet/api/microsoft.build.utilities) 包含 Utilities 命名空間參考。

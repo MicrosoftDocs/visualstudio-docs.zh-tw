@@ -18,12 +18,12 @@ ms.assetid: f6895cd4-3e95-4f0e-aa9e-8c7750f46ed4
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f28f0efc755f40a0d2f4cfdc710eda8f2f4799ff
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 43f7638039672fad530cb2cd2447dbe8174011cb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49259311"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49894075"
 ---
 # <a name="projectsubtype-element-visual-studio-templates"></a>ProjectSubType 項目 (Visual Studio 範本)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,15 +65,15 @@ ms.locfileid: "49259311"
   
  `ProjectSubType`項目會提供子類別目錄[ProjectType](../extensibility/projecttype-element-visual-studio-templates.md)項目。 這個值可以包含：  
   
--   `SmartDevice-NETCFv1`： 指定的範本目標[!INCLUDE[Compact](../includes/compact-md.md)]1.0 版。  
+- `SmartDevice-NETCFv1`： 指定的範本目標[!INCLUDE[Compact](../includes/compact-md.md)]1.0 版。  
   
--   `SmartDevice-NETCFv2`： 指定 tempalate 目標[!INCLUDE[Compact](../includes/compact-md.md)]2.0 版。  
+- `SmartDevice-NETCFv2`： 指定 tempalate 目標[!INCLUDE[Compact](../includes/compact-md.md)]2.0 版。  
   
- 如果範本中包含`ProjectType`值的項目`Web`，則`ProjectSubType`項目會指定範本的程式設計語言。 這個項目可以有下列值：  
+  如果範本中包含`ProjectType`值的項目`Web`，則`ProjectSubType`項目會指定範本的程式設計語言。 這個項目可以有下列值：  
   
--   `CSharp`： 指定此範本會建立[!INCLUDE[csprcs](../includes/csprcs-md.md)]Web 專案或項目。  
+- `CSharp`： 指定此範本會建立[!INCLUDE[csprcs](../includes/csprcs-md.md)]Web 專案或項目。  
   
--   `VisualBasic`： 指定此範本會建立[!INCLUDE[vbprvb](../includes/vbprvb-md.md)]Web 專案或項目。  
+- `VisualBasic`： 指定此範本會建立[!INCLUDE[vbprvb](../includes/vbprvb-md.md)]Web 專案或項目。  
   
 ## <a name="example"></a>範例  
  下列範例顯示的專案範本的中繼資料[!INCLUDE[csprcs](../includes/csprcs-md.md)]裝置應用程式目標[!INCLUDE[Compact](../includes/compact-md.md)]2.0 版。  

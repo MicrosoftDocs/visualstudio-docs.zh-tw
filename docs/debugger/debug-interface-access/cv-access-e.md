@@ -1,5 +1,5 @@
 ---
-title: CV_access_e |Microsoft 文件
+title: CV_access_e |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 35b10f8a98284fdec9e94043a4b827fab226d3aa
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: b6de95d74b8d7edc3bde08437c3d018270758112
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31457923"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49878982"
 ---
 # <a name="cvaccesse"></a>CV_access_e
 指定的成員函式和變數的可見性 （存取層級） 的範圍。  
@@ -45,7 +45,7 @@ typedef enum CV_access_e {
  成員具有公用存取權。  
   
 ## <a name="remarks"></a>備註  
- `friend`存取規範就不會包含此處因為它通常供具有私用和受保護的項目類別的存取權的非成員函式。 使用[idiasymbol:: Get_symtag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)方法來尋找符號`SymTagFriend`存取。  
+ `friend`存取規範就不會包含這裡因為通常由具有類別的私用和受保護項目的存取權的非成員函式。 使用[idiasymbol:: Get_symtag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)方法來尋找具有符號`SymTagFriend`存取。  
   
 ## <a name="requirements"></a>需求  
  標頭： cvconst.h  

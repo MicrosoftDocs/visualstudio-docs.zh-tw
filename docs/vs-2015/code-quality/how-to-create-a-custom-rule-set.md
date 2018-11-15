@@ -18,12 +18,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: e4b6c401b602575b34fb80ab98b31bb4ebcd1620
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a5d8a5cb7e29cfd900ce81fa5f4b6253f0c49014
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49255498"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812461"
 ---
 # <a name="how-to-create-a-custom-rule-set"></a>如何：建立自訂規則集
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,19 +44,19 @@ ms.locfileid: "49255498"
   
 #### <a name="to-create-a-custom-rule-from-a-single-existing-rule-set"></a>若要從單一的現有規則集建立自訂規則  
   
-1.  在 [方案總管] 中，以滑鼠右鍵按一下專案，然後按**屬性**。  
+1. 在 [方案總管] 中，以滑鼠右鍵按一下專案，然後按**屬性**。  
   
-2.  在 **屬性**索引標籤上，按一下**程式碼分析**。  
+2. 在 **屬性**索引標籤上，按一下**程式碼分析**。  
   
-3.  在 **規則集**下拉式清單，請執行下列其中一項：  
+3. 在 **規則集**下拉式清單，請執行下列其中一項：  
   
-    -   選取您想要自訂的規則集。  
+   - 選取您想要自訂的規則集。  
   
      \-或-  
   
-    -   選取 [ **\<瀏覽] >** ，指定現有的規則集不在清單中。  
+   - 選取 [ **\<瀏覽] >** ，指定現有的規則集不在清單中。  
   
-4.  按一下 **開啟**至規則集編輯器中顯示的規則。  
+4. 按一下 **開啟**至規則集編輯器中顯示的規則。  
   
 #### <a name="to-create-a-custom-rule-set-from-multiple-existing-rule-sets"></a>要建立自訂規則集，從多個現有的規則集  
   

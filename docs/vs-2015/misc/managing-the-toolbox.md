@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 3b052047-f6db-46dd-b3bf-da1c348ee410
 caps.latest.revision: 33
 manager: douge
-ms.openlocfilehash: 1a42c50addeb878041087d9017321ed71daac115
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 227001e827057ffab4c851a985f7e36afaf0f351
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49254406"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49873418"
 ---
 # <a name="managing-the-toolbox"></a>Managing the Toolbox
 [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] 可讓 VSPackage (例如編輯器或設計工具) 管理 [工具箱] 的成員資格和外觀。  
@@ -50,29 +50,29 @@ ms.locfileid: "49254406"
   
  使用這些介面時，請記住幾個重點：  
   
--   只有 Managed Package Framework 型 VSPackage 才能使用 <xref:System.Drawing.Design.IToolboxService>。  
+- 只有 Managed Package Framework 型 VSPackage 才能使用 <xref:System.Drawing.Design.IToolboxService>。  
   
--   無法將控制項直接加入至**工具箱**使用<xref:System.Drawing.Design.IToolboxService>。  
+- 無法將控制項直接加入至**工具箱**使用<xref:System.Drawing.Design.IToolboxService>。  
   
--   VSPackage 必須使用 <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox2> 來加入控制項，或是將控制項裝載在衍生自 <xref:System.Windows.Forms.AxHost> 的包裝函式控制項中。  
+- VSPackage 必須使用 <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox2> 來加入控制項，或是將控制項裝載在衍生自 <xref:System.Windows.Forms.AxHost> 的包裝函式控制項中。  
   
-     Visual Studio 提供 `Aximp.exe` 工具，來自動化在衍生自 <xref:System.Windows.Forms.AxHost> 之控制項中的 ActiveX 控制項包裝。 如需詳細資訊，請參閱 < [Aximp.exe （Windows Form ActiveX 控制項匯入工具）](http://msdn.microsoft.com/library/482c0d83-7144-4497-b626-87d2351b78d0)。  
+   Visual Studio 提供 `Aximp.exe` 工具，來自動化在衍生自 <xref:System.Windows.Forms.AxHost> 之控制項中的 ActiveX 控制項包裝。 如需詳細資訊，請參閱 < [Aximp.exe （Windows Form ActiveX 控制項匯入工具）](http://msdn.microsoft.com/library/482c0d83-7144-4497-b626-87d2351b78d0)。  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox>、<xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox2> 和 <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox3> 是可透過 Interop 組件使用的 COM 型介面。  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox>、<xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox2> 和 <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox3> 是可透過 Interop 組件使用的 COM 型介面。  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox2> 衍生自 <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox>，並實作它的所有方法。  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox2> 衍生自 <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox>，並實作它的所有方法。  
   
-     只能在 <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox2> 的執行個體中取得物件。  
+   只能在 <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox2> 的執行個體中取得物件。  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox3> 未衍生自 <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox2>也未實作它的方法。  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox3> 未衍生自 <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox2>也未實作它的方法。  
   
-     需要這兩個介面中功能的物件必須從環境中取得這兩個介面的執行個體。  
+   需要這兩個介面中功能的物件必須從環境中取得這兩個介面的執行個體。  
   
--   使用 <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox2> 和 <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox3> 時，索引標籤正式 (非當地語系化) 名稱的相關資訊是透過 <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox3.GetIDOfTab%2A> 和 <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox3.SetIDOfTab%2A> 方法所處理。  
+- 使用 <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox2> 和 <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox3> 時，索引標籤正式 (非當地語系化) 名稱的相關資訊是透過 <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox3.GetIDOfTab%2A> 和 <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox3.SetIDOfTab%2A> 方法所處理。  
   
--   使用 <xref:System.Drawing.Design.IToolboxService> 時，是由實作者負責管理當地語系化資訊 (例如類別名稱)。  
+- 使用 <xref:System.Drawing.Design.IToolboxService> 時，是由實作者負責管理當地語系化資訊 (例如類別名稱)。  
   
- 使用設定機制，讓使用者可以透過 IDE [工具]  功能表上的 [匯入/匯出設定]  命令來儲存使用者所存取的 [工具箱]  設定。 如需如何使用設定的詳細資訊，請參閱 [Extending User Settings and Options](../extensibility/extending-user-settings-and-options.md)。  
+  使用設定機制，讓使用者可以透過 IDE [工具]  功能表上的 [匯入/匯出設定]  命令來儲存使用者所存取的 [工具箱]  設定。 如需如何使用設定的詳細資訊，請參閱 [Extending User Settings and Options](../extensibility/extending-user-settings-and-options.md)。  
   
 ## <a name="see-also"></a>另請參閱  
  [擴充工具箱](../misc/extending-the-toolbox.md)

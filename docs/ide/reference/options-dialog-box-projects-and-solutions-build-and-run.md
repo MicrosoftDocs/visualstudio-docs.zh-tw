@@ -6,7 +6,6 @@ ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Projects.Build_and_Run
-- VS.ToolsOptionsPag.Projects.Build_and_Run
 helpviewer_keywords:
 - builds [Visual Studio], setting up
 - run actions
@@ -17,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f6a569162105ffb577bdad854d973fff91b3c81b
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: 1b2d047201214e3a7cd4c14c61baa041840decd8
+ms.sourcegitcommit: 1abb9cf4c3ccb90e3481ea8079272c98aad12875
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34845034"
+ms.lasthandoff: 10/26/2018
+ms.locfileid: "50143316"
 ---
 # <a name="options-dialog-box-projects-and-solutions-build-and-run"></a>選項對話方塊、專案和方案、建置和執行
 

@@ -1,5 +1,5 @@
 ---
-title: GETNAME_TYPE |Microsoft 文件
+title: GETNAME_TYPE |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 17cd40938d177f3ea74af13bd84fcf1b873dd650
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 40ee5cb4bf552b04683c4c2119a8c43a595b2105
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31102326"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49900302"
 ---
 # <a name="getnametype"></a>GETNAME_TYPE
 指定要擷取檔案的名稱類型。  
@@ -69,13 +69,13 @@ public enum enum_GETNAME_TYPE {
  指定的文件或內容的 URL 名稱。  
   
  GN_TITLE  
- 如果有的話，請指定文件的標題。  
+ 如果有的話，請指定的文件的標題。  
   
  GN_STARTPAGEURL  
  取得處理程序的起始頁面 URL。  
   
 ## <a name="remarks"></a>備註  
- 這些值會當做參數傳遞給[GetName](../../../extensibility/debugger/reference/idebugdocument2-getname.md)， [GetName](../../../extensibility/debugger/reference/idebugdocumentcontext2-getname.md)，和[GetName](../../../extensibility/debugger/reference/idebugprocess2-getname.md)方法，以指定要傳回名稱的類型。  
+ 這些值會做為參數傳遞[GetName](../../../extensibility/debugger/reference/idebugdocument2-getname.md)， [GetName](../../../extensibility/debugger/reference/idebugdocumentcontext2-getname.md)，並[GetName](../../../extensibility/debugger/reference/idebugprocess2-getname.md)方法，來指定要傳回名稱的類型。  
   
 ## <a name="requirements"></a>需求  
  標頭： msdbg.h  

@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ec3fff82fcdc8db8328d1129a860495d081be2e
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 7c4dc7cb560e6ae652474d16e003eafb352643ea
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44282804"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49951063"
 ---
 # <a name="debugging-preparation-windows-forms-applications"></a>偵錯準備：Windows Forms 應用程式
 Windows Form 專案範本會建立 Windows Forms 應用程式。 在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中可以直接偵錯這種類型的應用程式。 如需詳細資訊，請參閱 <<c0> [ 建立 Windows 應用程式專案](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/42wc9kk5(v=vs.100))。  
@@ -43,27 +43,27 @@ Windows Form 專案範本會建立 Windows Forms 應用程式。 在 [!INCLUDE[v
 |-----------------------|-----------------|  
 |**啟動動作**|-設定為**入門專案**大部分的情況。 設定為**啟動外部程式**如果您想要啟動可執行檔的另一個您啟動偵錯時 （通常適用於偵錯 Dll）。|  
   
- 您可以從 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 內部偵錯 Windows Form 應用程式，或附加至正在執行的應用程式進行偵錯。 如需附加的詳細資訊，請參閱 <<c0> [ 附加至執行的處理序](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)。  
+ 您可以從 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 內部偵錯 Windows Forms 應用程式，或附加至正在執行的應用程式進行偵錯。 如需附加的詳細資訊，請參閱 <<c0> [ 附加至執行的處理序](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)。  
   
 ### <a name="to-debug-a-c-f-or-visual-basic-windows-forms-application"></a>若要偵錯 C#、F# 或 Visual Basic Windows Forms 應用程式  
   
-1.  在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中開啟專案。  
+1. 在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中開啟專案。  
   
-2.  建立需要的中斷點。  
+2. 建立需要的中斷點。  
   
-     因為 Windows Forms 應用程式是事件驅動的，您的中斷點會進入事件處理常式程式碼中，或事件處理常式程式碼所呼叫的方法中。 通常放置中斷點的事件包括：  
+    因為 Windows Forms 應用程式是事件驅動的，您的中斷點會進入事件處理常式程式碼中，或事件處理常式程式碼所呼叫的方法中。 通常放置中斷點的事件包括：  
   
-    1.  與控制項相關的事件，例如點選、輸入等等。  
+   1. 與控制項相關的事件，例如點選、輸入等等。  
   
-    2.  與啟動和關閉應用程式有關的事件，例如載入、啟動等等。  
+   2. 與啟動和關閉應用程式有關的事件，例如載入、啟動等等。  
   
-    3.  焦點和驗證事件。  
+   3. 焦點和驗證事件。  
   
-     如需詳細資訊，請參閱[在 Windows Forms 中建立事件處理常式](/dotnet/framework/winforms/creating-event-handlers-in-windows-forms)。  
+      如需詳細資訊，請參閱[在 Windows Forms 中建立事件處理常式](/dotnet/framework/winforms/creating-event-handlers-in-windows-forms)。  
   
-3.  在 **偵錯**功能表上，按一下**開始**。  
+3. 在 **偵錯**功能表上，按一下**開始**。  
   
-4.  使用所述的技巧進行偵錯[偵錯工具基本概念](../debugger/getting-started-with-the-debugger.md)。  
+4. 使用所述的技巧進行偵錯[偵錯工具基本概念](../debugger/getting-started-with-the-debugger.md)。  
   
 ## <a name="see-also"></a>另請參閱  
  [偵錯 Managed 程式碼](../debugger/debugging-managed-code.md)   

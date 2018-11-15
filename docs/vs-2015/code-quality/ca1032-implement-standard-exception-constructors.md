@@ -20,15 +20,16 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 871381e1013face4531e90b06d680d194955e3c0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: efef441e84c4f1d51c633e3fdcb2da8d1ba3e963
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49193592"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49868608"
 ---
 # <a name="ca1032-implement-standard-exception-constructors"></a>CA1032：必須實作標準例外狀況建構函式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|ImplementStandardExceptionConstructors|
@@ -42,15 +43,15 @@ ms.locfileid: "49193592"
 ## <a name="rule-description"></a>規則描述
  例外狀況類型必須實作下列建構函式：
 
--   公用 NewException()
+- 公用 NewException()
 
--   公用 NewException(string)
+- 公用 NewException(string)
 
--   公用 NewException (string，例外狀況)
+- 公用 NewException (string，例外狀況)
 
--   受保護或私用 NewException （SerializationInfo，StreamingContext）
+- 受保護或私用 NewException （SerializationInfo，StreamingContext）
 
- 無法提供整組的建構函式會導致難以正確地處理例外狀況。 例如，建構函式簽章`NewException(string, Exception)`用來建立其他例外狀況所造成的例外狀況。 沒有這個建構函式無法建立及擲回自訂例外狀況，其中包含內部 （巢狀的） 例外狀況的執行個體，這是哪些受管理的程式碼應該在這種情況下。 第三個例外狀況建構函式是公用的慣例。 第四個建構函式是在未密封的類別中，受保護和密封類別中私用。 如需詳細資訊，請參閱[CA2229： 請實作序列化建構函式](../code-quality/ca2229-implement-serialization-constructors.md)
+  無法提供整組的建構函式會導致難以正確地處理例外狀況。 例如，建構函式簽章`NewException(string, Exception)`用來建立其他例外狀況所造成的例外狀況。 沒有這個建構函式無法建立及擲回自訂例外狀況，其中包含內部 （巢狀的） 例外狀況的執行個體，這是哪些受管理的程式碼應該在這種情況下。 第三個例外狀況建構函式是公用的慣例。 第四個建構函式是在未密封的類別中，受保護和密封類別中私用。 如需詳細資訊，請參閱[CA2229： 請實作序列化建構函式](../code-quality/ca2229-implement-serialization-constructors.md)
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
  若要修正此規則的違規情形，加入遺漏的建構函式例外狀況，並確定它們有正確的存取範圍。

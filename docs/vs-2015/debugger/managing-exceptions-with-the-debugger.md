@@ -38,12 +38,12 @@ caps.latest.revision: 40
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 05fda0b130d765d5028e9c257102100708908dca
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 37b815543332ff61a275fed8fdfba06c91a433b4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49285918"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49813670"
 ---
 # <a name="managing-exceptions-with-the-debugger"></a>使用偵錯工具管理例外狀況
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -78,86 +78,86 @@ ms.locfileid: "49285918"
   
  如果您核取指定的例外狀況，則偵錯工具的執行會在任何擲回例外狀況的地方中斷，無論它是已處理或未處理的。 此時該例外狀況稱為第一個可能發生的例外狀況。 例如，以下是幾個情節：  
   
-1.  在下列 C# 主控台應用程式中，Main 方法會在 **try/catch** 區塊內部擲回 `try/catch` ：  
+1. 在下列 C# 主控台應用程式中，Main 方法會在 **try/catch** 區塊內部擲回 `try/catch` ：  
   
-    ```csharp  
-    static void Main(string[] args)  
-    {  
-        try  
-        {  
-            throw new AccessViolationException();  
-            Console.WriteLine("here");  
-        }  
-        catch (Exception e)  
-        {  
-            Console.WriteLine("caught exception");  
-        }  
-        Console.WriteLine("goodbye");  
-    }  
-    ```  
+   ```csharp  
+   static void Main(string[] args)  
+   {  
+       try  
+       {  
+           throw new AccessViolationException();  
+           Console.WriteLine("here");  
+       }  
+       catch (Exception e)  
+       {  
+           Console.WriteLine("caught exception");  
+       }  
+       Console.WriteLine("goodbye");  
+   }  
+   ```  
   
-     當您在偵錯工具中執行此程式碼時，如果您在 [例外狀況設定] **try/catch** 中核取了 [AccessViolationException] ，則執行會在 `throw` 行中斷。 然後，您可以繼續執行。 主控台應該會顯示這兩行：  
+    當您在偵錯工具中執行此程式碼時，如果您在 [例外狀況設定] **try/catch** 中核取了 [AccessViolationException] ，則執行會在 `throw` 行中斷。 然後，您可以繼續執行。 主控台應該會顯示這兩行：  
   
-    ```  
-    caught exception  
-    goodbye  
-    ```  
+   ```  
+   caught exception  
+   goodbye  
+   ```  
   
-     但它不會顯示 `here` 行。  
+    但它不會顯示 `here` 行。  
   
-2.  C# 主控台應用程式參考類別庫的類別有兩種方法，其中的一種方法會擲回例外狀況並加以處理，而第二個方法會擲回相同的例外狀況，但不會加以處理：  
+2. C# 主控台應用程式參考類別庫的類別有兩種方法，其中的一種方法會擲回例外狀況並加以處理，而第二個方法會擲回相同的例外狀況，但不會加以處理：  
   
-    ```vb  
-    public class Class1  
-    {  
-        public void ThrowHandledException()  
-        {  
-            try  
-            {  
-                throw new AccessViolationException();  
-            }  
-            catch (AccessViolationException ave)  
-            {  
-                Console.WriteLine("caught exception" + ave.Message);  
-            }  
-        }  
+   ```vb  
+   public class Class1  
+   {  
+       public void ThrowHandledException()  
+       {  
+           try  
+           {  
+               throw new AccessViolationException();  
+           }  
+           catch (AccessViolationException ave)  
+           {  
+               Console.WriteLine("caught exception" + ave.Message);  
+           }  
+       }  
   
-        public void ThrowUnhandledException()  
-        {  
-            throw new AccessViolationException();  
-        }  
-    }  
-    ```  
+       public void ThrowUnhandledException()  
+       {  
+           throw new AccessViolationException();  
+       }  
+   }  
+   ```  
   
-     以下是主控台應用程式的 Main () 方法：  
+    以下是主控台應用程式的 Main () 方法：  
   
-    ```csharp  
-    static void Main(string[] args)  
-    {  
-        Class1 class1 = new Class1();  
-        class1.ThrowHandledException();  
-        class1.ThrowUnhandledException();  
-    }  
-    ```  
+   ```csharp  
+   static void Main(string[] args)  
+   {  
+       Class1 class1 = new Class1();  
+       class1.ThrowHandledException();  
+       class1.ThrowUnhandledException();  
+   }  
+   ```  
   
-     如果您有**AccessViolationException**簽入**例外狀況設定**，當您執行此程式碼在偵錯工具執行會在中斷`throw`兩者中**Throwunhandledexception （)** 並**Throwunhandledexception**。  
+    如果您有**AccessViolationException**簽入**例外狀況設定**，當您執行此程式碼在偵錯工具執行會在中斷`throw`兩者中**Throwunhandledexception （)** 並**Throwunhandledexception**。  
   
- 如果您想要將例外狀況設定還原為預設值，您可以按一下工具列上的 [還原]  按鈕：  
+   如果您想要將例外狀況設定還原為預設值，您可以按一下工具列上的 [還原]  按鈕：  
   
- ![還原在例外狀況設定的預設值](../debugger/media/restoredefaultexceptions.png "RestoreDefaultExceptions")  
+   ![還原在例外狀況設定的預設值](../debugger/media/restoredefaultexceptions.png "RestoreDefaultExceptions")  
   
 ###  <a name="BKMK_UserUnhandled"></a> 設定要在使用者未處理的例外狀況繼續偵錯工具  
  如果您正在偵錯具有 [Just My Code](../debugger/just-my-code.md)的 .NET 或 JavaScript 程式碼，則可以告知偵錯工具不中斷使用者程式碼中未處理，但在其他地方處理的例外狀況。  
   
-1.  在 [例外狀況設定]  視窗中，開啟內容功能表，方法是在視窗中按一下滑鼠右鍵，然後選取 [顯示行] 。 (如果您關閉了 [Just My Code] ，您就不會看到這個命令。)  
+1. 在 [例外狀況設定]  視窗中，開啟內容功能表，方法是在視窗中按一下滑鼠右鍵，然後選取 [顯示行] 。 (如果您關閉了 [Just My Code] ，您就不會看到這個命令。)  
   
-2.  您應該會看到名為 [其他動作] 的第二個資料行。 這個資料行會在特定的例外狀況顯示 [當使用者程式碼中未處理時繼續]  ，這表示如果在使用者程式碼中未處理例外狀況，但會在外部程式碼中處理，則偵錯工具不會中斷。  
+2. 您應該會看到名為 [其他動作] 的第二個資料行。 這個資料行會在特定的例外狀況顯示 [當使用者程式碼中未處理時繼續]  ，這表示如果在使用者程式碼中未處理例外狀況，但會在外部程式碼中處理，則偵錯工具不會中斷。  
   
-3.  您可以針對特定的例外狀況 (選取此例外狀況，以滑鼠右鍵按一下，並選取/取消選取 [當使用者程式碼中未處理時繼續] )，或整個例外狀況分類 (例如，所有 Common Language Runtime 例外狀況)，來變更此設定。  
+3. 您可以針對特定的例外狀況 (選取此例外狀況，以滑鼠右鍵按一下，並選取/取消選取 [當使用者程式碼中未處理時繼續] )，或整個例外狀況分類 (例如，所有 Common Language Runtime 例外狀況)，來變更此設定。  
   
- 例如，ASP.NET Web 應用程式將例外狀況轉換成 HTTP 500 狀態碼 ([Exception Handling in ASP.NET API (在 ASP.NET 應用程式開發介面中的例外狀況處理)](http://www.asp.net/web-api/overview/error-handling/exception-handling)) 加以處理，這可能無法幫助您判斷例外狀況的來源。 在下列範例中，使用者程式碼會呼叫擲回 `String.Format()` 的 <xref:System.FormatException>。 執行中斷，如下所示：  
+   例如，ASP.NET Web 應用程式將例外狀況轉換成 HTTP 500 狀態碼 ([Exception Handling in ASP.NET API (在 ASP.NET 應用程式開發介面中的例外狀況處理)](http://www.asp.net/web-api/overview/error-handling/exception-handling)) 加以處理，這可能無法幫助您判斷例外狀況的來源。 在下列範例中，使用者程式碼會呼叫擲回 `String.Format()` 的 <xref:System.FormatException>。 執行中斷，如下所示：  
   
- ![使用者將會中斷&#45;例外狀況時中斷](../debugger/media/exceptionunhandledbyuser.png "ExceptionUnhandledByUser")  
+   ![使用者將會中斷&#45;例外狀況時中斷](../debugger/media/exceptionunhandledbyuser.png "ExceptionUnhandledByUser")  
   
 ### <a name="adding-and-deleting-exceptions"></a>新增及刪除例外狀況  
  您可以新增及刪除例外狀況。 您可以從任何類別目錄刪除任何類型的例外狀況，方法是選取此例外狀況，並按下 [例外狀況設定]  工具列上的 [刪除]  按鈕 (減號)，或以滑鼠右鍵按一下此例外狀況，然後從內容功能表選取 [刪除]  。 刪除例外狀況和未核取例外狀況有相同的效果，也就是偵錯工具並不會在其擲回時中斷。  

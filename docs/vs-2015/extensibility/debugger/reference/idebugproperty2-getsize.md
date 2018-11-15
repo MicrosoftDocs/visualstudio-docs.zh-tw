@@ -17,12 +17,12 @@ ms.assetid: 0deb8ec5-d6fb-4622-bb14-0c46b9459cc6
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ce78a5dc8e6a2e8d53306aca537a76ee260d8823
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d66a14ed1503bee00c024172f69ebcd6be3abd46
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49172480"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49822328"
 ---
 # <a name="idebugproperty2getsize"></a>IDebugProperty2::GetSize
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

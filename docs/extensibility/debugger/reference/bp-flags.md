@@ -1,5 +1,5 @@
 ---
-title: BP_FLAGS |Microsoft 文件
+title: BP_FLAGS |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 481dd21287ba3ca68c2abc61412785fc0151788d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0fba22042f5b12cfb9140e93e9e7efbeb0342328
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31109947"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49904163"
 ---
 # <a name="bpflags"></a>BP_FLAGS
-提供可用來設定中斷點時指定的其他資訊的選擇性旗標。  
+提供可用來設定中斷點時，請指定其他資訊的選擇性旗標。  
   
 ## <a name="syntax"></a>語法  
   
@@ -49,15 +49,15 @@ public enum enum_BP_FLAGS {
  不指定任何中斷點旗標。  
   
  BP_FLAG_MAP_DOCPOSITION  
- 指定偵錯引擎 (DE) 應該對應使用文件位置中斷點。 這是僅適用於指令碼為導向的來源檔案，例如 Active Server Pages (ASP) 中設定中斷點。  
+ 指定偵錯引擎 (DE) 應該對應使用的文件位置的中斷點。 這是僅適用於指令碼導向的原始程式檔等動態伺服器網頁 (ASP) 中設定中斷點。  
   
  BP_FLAG_DONT_STOP  
- 指定應該處理由偵錯引擎的中斷點，但是，偵錯引擎最後應該不會阻止那里 (也就是[IDebugBreakpointEvent2](../../../extensibility/debugger/reference/idebugbreakpointevent2.md)不應傳送事件的物件)。 這個旗標被設計主要是用於追蹤點。  
+ 指定偵錯引擎中，應該處理中斷點，但，偵錯引擎最終應該不只如此 (亦即[IDebugBreakpointEvent2](../../../extensibility/debugger/reference/idebugbreakpointevent2.md)應該不會傳送事件的物件)。 這個旗標被設計用於主要是使用追蹤點。  
   
 ## <a name="remarks"></a>備註  
- 用於`dwFlags`隸屬[BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)和[BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md)結構。  
+ 用於`dwFlags`隸屬[BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)並[BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md)結構。  
   
- 這些值可能會合併使用位元`OR`。  
+ 這些值可能會合併的位元`OR`。  
   
 ## <a name="requirements"></a>需求  
  標頭： msdbg.h  

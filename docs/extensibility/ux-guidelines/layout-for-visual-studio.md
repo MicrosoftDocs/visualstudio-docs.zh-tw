@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 05faacee77496f8d25ca926e4a1d441819cd9d9d
-ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
+ms.openlocfilehash: 638cfc29ed2aa05a8576a2244b81f0625453076d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48863929"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49816674"
 ---
 # <a name="layout-for-visual-studio"></a>適用於 Visual Studio 的版面配置
 就大部分的 Visual Studio 對話方塊[公用程式對話方塊版面配置](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_UtilityDialogLayout)，這是 unthemed 對話方塊該遵循標準[Windows Desktop 對話方塊版面配置原則](/windows/desktop/uxguide/win-dialog-box)。 如 Visual Studio 會移到重新整理其 UI 中，一些更重要的對話方塊會有新的設計可建立它們，產品定義的體驗。 這些[佈景主題對話方塊版面配置](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_ThemedDialogLayout)具有佈景主題的外觀。  
@@ -56,19 +56,19 @@ ms.locfileid: "48863929"
   
 #### <a name="command-buttons"></a>命令按鈕  
   
--   命令按鈕處理對話方塊外框，不是在內容上。 它們應該放在底部右側，而且應該足夠上述設定按鈕完全不同的變數空間。  
+- 命令按鈕處理對話方塊外框，不是在內容上。 它們應該放在底部右側，而且應該足夠上述設定按鈕完全不同的變數空間。  
   
--   操作 對話方塊中的水平按鈕時，替代命令按鈕設定就會是垂直的堆疊，右上方。 請參閱[內部的命令按鈕](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_InteriorCommandButtons)如下。  
+- 操作 對話方塊中的水平按鈕時，替代命令按鈕設定就會是垂直的堆疊，右上方。 請參閱[內部的命令按鈕](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_InteriorCommandButtons)如下。  
   
--   左邊的 [命令] 按鈕 （低/左中對話方塊的） 空間被視為 「 矩形 」 作業的對話方塊控制項的一部分。 應該會打擾到該空間的唯一項目是與整體的工作或對話方塊的說明連結。  
+- 左邊的 [命令] 按鈕 （低/左中對話方塊的） 空間被視為 「 矩形 」 作業的對話方塊控制項的一部分。 應該會打擾到該空間的唯一項目是與整體的工作或對話方塊的說明連結。  
   
--   命令按鈕應該是 75 x 23 像素為單位。  
+- 命令按鈕應該是 75 x 23 像素為單位。  
   
--   命令按鈕應該是分開的 6 個像素。  
+- 命令按鈕應該是分開的 6 個像素。  
   
- ![基本按鈕對齊](../../extensibility/ux-guidelines/media/0801-c_buttonalign.png "0801 c_ButtonAlign")  
+  ![基本按鈕對齊](../../extensibility/ux-guidelines/media/0801-c_buttonalign.png "0801 c_ButtonAlign")  
   
- **圖 08.01 c： 基本按鈕對齊方式**  
+  **圖 08.01 c： 基本按鈕對齊方式**  
   
 #### <a name="labels"></a>標籤  
   
@@ -106,19 +106,19 @@ ms.locfileid: "48863929"
 ####  <a name="BKMK_InteriorCommandButtons"></a> 內部命令按鈕  
  在更複雜的對話方塊中，內部的控制項可能有它自己相關的按鈕，這可能會影響對話方塊的 [認可] 按鈕的所在位置。  
   
--   使用內部的垂直對齊方式 （資料行） 按鈕 **[確定]**/**取消**為水平導向在右下角。  
+- 使用內部的垂直對齊方式 （資料行） 按鈕 **[確定]**/**取消**為水平導向在右下角。  
   
--   使用內部的水平對齊方式 （資料列） 按鈕 **[確定]**/**取消**為垂直導向右上角。 這種情況下是較不常見。  
+- 使用內部的水平對齊方式 （資料列） 按鈕 **[確定]**/**取消**為垂直導向右上角。 這種情況下是較不常見。  
   
--   內部的按鈕大小應為目標的標準按鈕大小為 75 x 23 像素，比對的大小 **[確定]**/**取消**盡可能的按鈕。 當按鈕的標籤會超出標準按鈕大小的按鈕時，該集合中的其他按鈕應該配合該寬度的大小。  
+- 內部的按鈕大小應為目標的標準按鈕大小為 75 x 23 像素，比對的大小 **[確定]**/**取消**盡可能的按鈕。 當按鈕的標籤會超出標準按鈕大小的按鈕時，該集合中的其他按鈕應該配合該寬度的大小。  
   
- ![水平的 [確定] 和 [取消] 按鈕](../../extensibility/ux-guidelines/media/0801-f_horizokcan.png "0801 f_HorizOKCan")  
+  ![水平的 [確定] 和 [取消] 按鈕](../../extensibility/ux-guidelines/media/0801-f_horizokcan.png "0801 f_HorizOKCan")  
   
- **圖 08.01-f： 垂直內部水平的 [確定] / [取消] 按鈕**  
+  **圖 08.01-f： 垂直內部水平的 [確定] / [取消] 按鈕**  
   
- ![垂直的 [確定] 和 [取消] 按鈕](../../extensibility/ux-guidelines/media/0801-g_vertokcan.png "0801 g_VertOKCan")  
+  ![垂直的 [確定] 和 [取消] 按鈕](../../extensibility/ux-guidelines/media/0801-g_vertokcan.png "0801 g_VertOKCan")  
   
- **圖 08.01-g： 水平內部的按鈕與垂直確定/取消**  
+  **圖 08.01-g： 水平內部的按鈕與垂直確定/取消**  
   
 #### <a name="browse-button"></a>[瀏覽...]按鈕  
  **[瀏覽...]** 遵循文字方塊中的按鈕時，應該拼出 [瀏覽...] 上，完整，包括省略符號。 如果有緊密的空間，或有多個 **[瀏覽...]** 在畫面上，按鈕的按鈕可縮減為的省略符號。  

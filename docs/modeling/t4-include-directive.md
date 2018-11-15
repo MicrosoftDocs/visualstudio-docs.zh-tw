@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: a5e2bb260f8ef44936485203689bf7cf3e34e6c1
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: b5a05629773334648239a8656577fbe0ae347625
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47857824"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49830700"
 ---
 # <a name="t4-include-directive"></a>T4 包含指示詞
 
@@ -26,31 +26,31 @@ ms.locfileid: "47857824"
 <#@ include file="filePath" [once="true"] #>
 ```
 
--   `filePath` 可以是目前範本檔的絕對路徑或相對路徑。
+- `filePath` 可以是目前範本檔的絕對路徑或相對路徑。
 
-     此外，特定的 Visual Studio 擴充功能可以指定自己的目錄搜尋 include 檔。 例如，您已安裝的 Visualization and Modeling SDK （DSL 工具），下列資料夾會加到 include 清單： `Program Files\Microsoft Visual Studio 10.0\Common7\IDE\Extensions\Microsoft\DSL SDK\DSL Designer\11.0\TextTemplates`。
+   此外，特定的 Visual Studio 擴充功能可以指定自己的目錄搜尋 include 檔。 例如，您已安裝的 Visualization and Modeling SDK （DSL 工具），下列資料夾會加到 include 清單： `Program Files\Microsoft Visual Studio 10.0\Common7\IDE\Extensions\Microsoft\DSL SDK\DSL Designer\11.0\TextTemplates`。
 
-     這些額外的 Include 資料夾可能相依於納入的檔案其副檔名。 例如，只有當納入的檔案其副檔名為 `.tt` 時才能使用 DSL 工具的 Include 資料夾
+   這些額外的 Include 資料夾可能相依於納入的檔案其副檔名。 例如，只有當納入的檔案其副檔名為 `.tt` 時才能使用 DSL 工具的 Include 資料夾
 
--   `filePath` 可以包含以 "%" 分隔的環境變數。 例如: 
+- `filePath` 可以包含以 "%" 分隔的環境變數。 例如: 
 
-    ```
-    <#@ include file="%HOMEPATH%\MyIncludeFile.t4" #>
-    ```
+  ```
+  <#@ include file="%HOMEPATH%\MyIncludeFile.t4" #>
+  ```
 
--   包含檔案的名稱不需要使用 `".tt"` 副檔名。
+- 包含檔案的名稱不需要使用 `".tt"` 副檔名。
 
-     您可以使用其他副檔名 (例如 `".t4"`) 做為包含檔案的副檔名。 這是因為當您將加入`.tt`檔案加入專案時，Visual Studio 會自動設定其**自訂工具**屬性設`TextTemplatingFileGenerator`。 您通常不希望被納入的檔案進行個別轉換。
+   您可以使用其他副檔名 (例如 `".t4"`) 做為包含檔案的副檔名。 這是因為當您將加入`.tt`檔案加入專案時，Visual Studio 會自動設定其**自訂工具**屬性設`TextTemplatingFileGenerator`。 您通常不希望被納入的檔案進行個別轉換。
 
-     另一方面，您應該留意副檔名在某些情況下會影響其他要搜尋 Include 檔的資料夾。 被納入的檔案包含其他檔案時，這一點可能十分重要。
+   另一方面，您應該留意副檔名在某些情況下會影響其他要搜尋 Include 檔的資料夾。 被納入的檔案包含其他檔案時，這一點可能十分重要。
 
--   處理所加入的內容時，幾乎可以將此內容當做是進行加入之文字範本的一部分來處理。 而且，即使 `<#+...#>` 指示詞後面有一般文字或標準控制區塊，您都可以納入包含類別功能區塊 `include` 的檔案。
+- 處理所加入的內容時，幾乎可以將此內容當做是進行加入之文字範本的一部分來處理。 而且，即使 `<#+...#>` 指示詞後面有一般文字或標準控制區塊，您都可以納入包含類別功能區塊 `include` 的檔案。
 
--   使用`once="true"`來確認範本包含在一次，即使它從多個其他 include 檔案叫用。
+- 使用`once="true"`來確認範本包含在一次，即使它從多個其他 include 檔案叫用。
 
-     而不必擔心，輕鬆地建置之可重複使用 T4 程式碼片段的程式庫，您可以包含在將此功能可讓某些其他程式碼片段具有已包含它們。  例如，假設您有處理範本處理和 C# 產生非常精細的程式碼片段的程式庫。  接著，這些會使用一些更特定的工作公用程式，例如產生例外狀況，然後您可以從任何更特定的應用程式範本使用。 如果您繪製相依性圖形，就會看到某些程式碼片段會被包含數次。 但 `once` 參數會阻止後續的包含項。
+   而不必擔心，輕鬆地建置之可重複使用 T4 程式碼片段的程式庫，您可以包含在將此功能可讓某些其他程式碼片段具有已包含它們。  例如，假設您有處理範本處理和 C# 產生非常精細的程式碼片段的程式庫。  接著，這些會使用一些更特定的工作公用程式，例如產生例外狀況，然後您可以從任何更特定的應用程式範本使用。 如果您繪製相依性圖形，就會看到某些程式碼片段會被包含數次。 但 `once` 參數會阻止後續的包含項。
 
- **MyTextTemplate.tt:**
+  **MyTextTemplate.tt:**
 
 ```
 <#@ output extension=".txt" #>
@@ -61,7 +61,6 @@ Output message 5 (from top template).
    GenerateMessage(6); // defined in TextFile1.t4
    AnotherGenerateMessage(7); // defined in TextFile2.t4
 #>
-
 ```
 
  **TextFile1.t4:**
@@ -78,7 +77,6 @@ void GenerateMessage(int n)
 <#+
 }
 #>
-
 ```
 
  **TextFile2.t4:**
@@ -93,7 +91,6 @@ void AnotherGenerateMessage(int n)
 <#+
 }
 #>
-
 ```
 
  **產生的檔案，MyTextTemplate.txt:**
@@ -108,7 +105,6 @@ Output message 1 (from top template).
 Output message 5 (from top template).
    Output Message 6 (from GenerateMessage method).
        Output Message 7 (from AnotherGenerateMessage method).
-
 ```
 
 ## <a name="msbuild"></a> 使用 MSBuild 和 Visual Studio 中的專案屬性
@@ -128,7 +124,6 @@ Output message 5 (from top template).
       <Value>$(myIncludeFolder)</Value>
     </T4ParameterValues>
   </ItemGroup>
-
 ```
 
  現在您可以在文字範本中使用專案屬性，該屬性在 Visual Studio 和 MSBuild 中會正確轉換：

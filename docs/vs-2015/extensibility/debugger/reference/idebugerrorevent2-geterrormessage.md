@@ -17,12 +17,12 @@ ms.assetid: 9e3b0d74-a2dd-4eaa-bd95-21b2f9c79409
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7fb5e3f2f048221b127286eecc0494ed5c648006
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9cfa7a713d41698a54e280cf106ca6764136c2b2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49179006"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49817609"
 ---
 # <a name="idebugerrorevent2geterrormessage"></a>IDebugErrorEvent2::GetErrorMessage
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

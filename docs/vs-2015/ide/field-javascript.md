@@ -17,12 +17,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 52f9c4ffef27b7b17bbcb75d734b4d0b7e41a3ff
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a57f84901f2ac6bc691c50fa6d1e3c8b94db6c50
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49271644"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49939902"
 ---
 # <a name="ltfieldgt-javascript"></a>&lt;欄位&gt;(JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,44 +52,44 @@ ms.locfileid: "49271644"
  `type`  
  選擇性。 欄位資料型別。 類型可以是下列其中一項：  
   
--   ECMAScript 語言輸入在 ECMAScript 5 規格中，例如`Number`和`Object`。  
+- ECMAScript 語言輸入在 ECMAScript 5 規格中，例如`Number`和`Object`。  
   
--   DOM 物件，例如`HTMLElement`， `Window`，和`Document`。  
+- DOM 物件，例如`HTMLElement`， `Window`，和`Document`。  
   
--   JavaScript 建構函式的函式。  
+- JavaScript 建構函式的函式。  
   
- `integer`  
- 選擇性。 如果`type`是`Number`，指定欄位是否為整數。 設定為`true`，表示欄位是整數; 否則設定為`false`。 這個屬性不是由 Visual Studio 提供 IntelliSense 資訊。  
+  `integer`  
+  選擇性。 如果`type`是`Number`，指定欄位是否為整數。 設定為`true`，表示欄位是整數; 否則設定為`false`。 這個屬性不是由 Visual Studio 提供 IntelliSense 資訊。  
   
- `domElement`  
- 選擇性。 這個屬性已被取代;`type`屬性會優先於此屬性。 這個屬性指定的 DOM 項目是否包含記錄的欄位。 設定為`true`若要指定欄位是 DOM 項目; 否則設定為`false`。 如果`type`未設定屬性和`domElement`設為`true`，IntelliSense 會將記錄的欄位視為`HTMLElement`執行陳述式完成時。  
+  `domElement`  
+  選擇性。 這個屬性已被取代;`type`屬性會優先於此屬性。 這個屬性指定的 DOM 項目是否包含記錄的欄位。 設定為`true`若要指定欄位是 DOM 項目; 否則設定為`false`。 如果`type`未設定屬性和`domElement`設為`true`，IntelliSense 會將記錄的欄位視為`HTMLElement`執行陳述式完成時。  
   
- `mayBeNull`  
- 選擇性。 指定是否可以設定 [記錄] 欄位為 null。 設定為`true`若要表示的欄位設定為 null，否則將為`false`。 預設值是 `false`。 這個屬性不是由 Visual Studio 提供 IntelliSense 資訊。  
+  `mayBeNull`  
+  選擇性。 指定是否可以設定 [記錄] 欄位為 null。 設定為`true`若要表示的欄位設定為 null，否則將為`false`。 預設值是 `false`。 這個屬性不是由 Visual Studio 提供 IntelliSense 資訊。  
   
- `elementType`  
- 選擇性。 如果`type`是`Array`，這個屬性會指定陣列中的項目類型。  
+  `elementType`  
+  選擇性。 如果`type`是`Array`，這個屬性會指定陣列中的項目類型。  
   
- `elementInteger`  
- 選擇性。 如果`type`已`Array`並`elementType`是`Number`，這個屬性會指定是否在陣列中的項目都是整數。 設定為`true`來指出陣列中的項目都是整數; 否則設定為`false`。 這個屬性不是由 Visual Studio 提供 IntelliSense 資訊。  
+  `elementInteger`  
+  選擇性。 如果`type`已`Array`並`elementType`是`Number`，這個屬性會指定是否在陣列中的項目都是整數。 設定為`true`來指出陣列中的項目都是整數; 否則設定為`false`。 這個屬性不是由 Visual Studio 提供 IntelliSense 資訊。  
   
- `elementDomElement`  
- 選擇性。 這個屬性已被取代;`elementType`屬性會優先於此屬性。 如果`type`是`Array`，這個屬性會指定陣列中的元素是否 DOM 項目。 設定為`true`指定之項目的 DOM 項目; 否則設定為`false`。 如果`elementType`未設定屬性和`elementDomElement`設為`true`，IntelliSense 會將做為陣列中的每個項目`HTMLElement`執行陳述式完成時。  
+  `elementDomElement`  
+  選擇性。 這個屬性已被取代;`elementType`屬性會優先於此屬性。 如果`type`是`Array`，這個屬性會指定陣列中的元素是否 DOM 項目。 設定為`true`指定之項目的 DOM 項目; 否則設定為`false`。 如果`elementType`未設定屬性和`elementDomElement`設為`true`，IntelliSense 會將做為陣列中的每個項目`HTMLElement`執行陳述式完成時。  
   
- `elementMayBeNull`  
- 選擇性。 如果`type`是`Array`，指定是否可以設定在陣列中的項目為 null。 設定為`true`若要表示為 null，否則，可以設定在陣列中的項目，設定為`false`。 預設值是 `false`。 這個屬性不是由 Visual Studio 提供 IntelliSense 資訊。  
+  `elementMayBeNull`  
+  選擇性。 如果`type`是`Array`，指定是否可以設定在陣列中的項目為 null。 設定為`true`若要表示為 null，否則，可以設定在陣列中的項目，設定為`false`。 預設值是 `false`。 這個屬性不是由 Visual Studio 提供 IntelliSense 資訊。  
   
- `helpKeyword`  
- 選擇性。 F1 說明關鍵字。  
+  `helpKeyword`  
+  選擇性。 F1 說明關鍵字。  
   
- `locid`  
- 選擇性。 如需欄位的當地語系化資訊識別項。 識別項是成員識別碼或其對應至`name`屬性 OpenAjax 中繼資料所定義的訊息組合中的值。 識別項型別取決於所指定的格式[ \<loc >](../ide/loc-javascript.md)標記。  
+  `locid`  
+  選擇性。 如需欄位的當地語系化資訊識別項。 識別項是成員識別碼或其對應至`name`屬性 OpenAjax 中繼資料所定義的訊息組合中的值。 識別項型別取決於所指定的格式[ \<loc >](../ide/loc-javascript.md)標記。  
   
- `value`  
- 選擇性。 指定應由 IntelliSense 用於評估，而不是函式程式碼本身的程式碼。 針對`<field>`，這個屬性支援的建構函式，但是不支援物件常值。 您可以使用這個屬性是未定義的欄位型別時，提供類型資訊。 例如，您可以使用`value=’1’`將欄位型別，表示為數字。  
+  `value`  
+  選擇性。 指定應由 IntelliSense 用於評估，而不是函式程式碼本身的程式碼。 針對`<field>`，這個屬性支援的建構函式，但是不支援物件常值。 您可以使用這個屬性是未定義的欄位型別時，提供類型資訊。 例如，您可以使用`value=’1’`將欄位型別，表示為數字。  
   
- `description`  
- 選擇性。 欄位描述。  
+  `description`  
+  選擇性。 欄位描述。  
   
 ## <a name="remarks"></a>備註  
  `name`屬性是必要的當您要加入註解的建構函式中的欄位。 對於所有其他案例中，所有屬性，如`<field>`是選擇性的項目。  

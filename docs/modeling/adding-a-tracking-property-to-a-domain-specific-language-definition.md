@@ -13,12 +13,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 7b9641ccc9064f576f471c7e75d59c3d5b8f0db6
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 0417507323a627753bc62e50b424c37b547d4dad
+ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859922"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50967476"
 ---
 # <a name="add-a-tracking-property-to-a-domain-specific-language-definition"></a>在特定領域語言定義中新增追蹤屬性
 
@@ -28,31 +28,32 @@ A*追蹤網域*屬性是的屬性，使用者就可以進行更新，但具有�
 
 比方說，在特定領域語言工具 （DSL 工具） 中，網域類別的屬性具有預設值的計算方式是使用網域類別，而是使用者的名稱，這個值的顯示名稱可以在設計階段變更值，或重設為導出值。
 
-在本逐步解說中，您可以建立特定領域語言 (DSL) 具有追蹤模型的預設命名空間屬性為基礎的預設值的屬性命名空間。 如需有關追蹤屬性的詳細資訊，請參閱[定義的追蹤屬性](http://msdn.microsoft.com/0538b0e4-6221-4e7d-911a-b92cd622f0be)。
+在本逐步解說中，您可以建立特定領域語言 (DSL) 具有追蹤模型的預設命名空間屬性為基礎的預設值的屬性命名空間。 如需有關追蹤屬性的詳細資訊，請參閱[定義的追蹤屬性](https://msdn.microsoft.com/0538b0e4-6221-4e7d-911a-b92cd622f0be)。
 
--   追蹤屬性描述元的 DSL 工具支援。 不過，DSL 設計工具無法用來將追蹤屬性新增至語言中。 因此，您必須新增自訂程式碼來定義和實作的追蹤屬性。
+- 追蹤屬性描述元的 DSL 工具支援。 不過，DSL 設計工具無法用來將追蹤屬性新增至語言中。 因此，您必須新增自訂程式碼來定義和實作的追蹤屬性。
 
- 追蹤屬性有兩種狀態： 追蹤，並更新使用者。 追蹤屬性具有下列功能：
+  追蹤屬性有兩種狀態： 追蹤，並更新使用者。 追蹤屬性具有下列功能：
 
--   在 追蹤狀態，追蹤屬性的值會計算，且會更新為模型變更中的其他屬性的值。
+- 在 追蹤狀態，追蹤屬性的值會計算，且會更新為模型變更中的其他屬性的值。
 
--   在更新使用者狀態的追蹤屬性的值會保留使用者上次設定的屬性值。
+- 在更新使用者狀態的追蹤屬性的值會保留使用者上次設定的屬性值。
 
--   在 [**屬性**] 視窗中，**重設**命令的屬性是在更新時，才會啟用追蹤屬性依使用者狀態。 **重設**命令會將追蹤屬性來追蹤狀態。
+- 在 [**屬性**] 視窗中，**重設**命令的屬性是在更新時，才會啟用追蹤屬性依使用者狀態。 **重設**命令會將追蹤屬性來追蹤狀態。
 
--   在 **屬性**追蹤狀態，其值的追蹤屬性時的視窗會顯示在一般的字型。
+- 在 **屬性**追蹤狀態，其值的追蹤屬性時的視窗會顯示在一般的字型。
 
--   在 [**屬性**] 視窗中，追蹤屬性在更新時根據使用者狀態，其值會顯示以粗體字。
+- 在 [**屬性**] 視窗中，追蹤屬性在更新時根據使用者狀態，其值會顯示以粗體字。
 
 ## <a name="prerequisites"></a>必要條件
 
 您可以開始本逐步解說之前，您必須先安裝這些元件：
 
-|||
+
+| | |
 |-|-|
-|Visual Studio|[http://go.microsoft.com/fwlink/?LinkID=185579](http://go.microsoft.com/fwlink/?LinkID=185579)|
-|[!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185580](http://go.microsoft.com/fwlink/?LinkID=185580)|
-|[!INCLUDE[dsl](../modeling/includes/dsl_md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185581](http://go.microsoft.com/fwlink/?LinkID=185581)|
+| Visual Studio | [http://go.microsoft.com/fwlink/?LinkID=185579](http://go.microsoft.com/fwlink/?LinkID=185579) |
+| [!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)] | [http://go.microsoft.com/fwlink/?LinkID=185580](http://go.microsoft.com/fwlink/?LinkID=185580) |
+| [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] | [http://go.microsoft.com/fwlink/?LinkID=185581](http://go.microsoft.com/fwlink/?LinkID=185581) |
 
 ## <a name="create-the-project"></a>建立專案
 
@@ -718,33 +719,33 @@ HelperClasses.cs 檔案中，新增`TrackingHelper`和`CriticalException`類別�
 
 下一個步驟是以建置並執行 DSL 設計工具中的新執行個體[!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]，讓您可以驗證是否正常運作的追蹤屬性。
 
-1.  在 **建置**功能表上，按一下**重建方案**。
+1. 在 **建置**功能表上，按一下**重建方案**。
 
-2.  按一下 [偵錯] 功能表上的 [開始偵錯]。
+2. 按一下 [偵錯] 功能表上的 [開始偵錯]。
 
-     實驗組建[!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]會開啟**偵錯**方案，其中包含空白的測試檔案。
+    實驗組建[!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]會開啟**偵錯**方案，其中包含空白的測試檔案。
 
-3.  在 **方案總管 中**，按兩下 Test.trackingPropertyDsl 檔案，以在設計工具中開啟它，然後按一下 設計介面。
+3. 在 **方案總管 中**，按兩下 Test.trackingPropertyDsl 檔案，以在設計工具中開啟它，然後按一下 設計介面。
 
-     請注意，在**屬性**圖表中，視窗**預設命名空間**屬性**DefaultNamespace**，和**自訂項目**屬性是**0/0**。
+    請注意，在**屬性**圖表中，視窗**預設命名空間**屬性**DefaultNamespace**，和**自訂項目**屬性是**0/0**。
 
-4.  拖曳**ExampleElement**項目**工具箱**到圖表介面。
+4. 拖曳**ExampleElement**項目**工具箱**到圖表介面。
 
-5.  中**屬性**視窗中的項目，選取**項目命名空間**屬性，並將值從變更**DefaultNamespace**至**OtherNamespace**。
+5. 中**屬性**視窗中的項目，選取**項目命名空間**屬性，並將值從變更**DefaultNamespace**至**OtherNamespace**。
 
-     請注意，值**項目命名空間**現在會以粗體顯示。
+    請注意，值**項目命名空間**現在會以粗體顯示。
 
-6.  在 **屬性** 視窗中，以滑鼠右鍵按一下**元素命名空間**，然後按一下 **重設**。
+6. 在 **屬性** 視窗中，以滑鼠右鍵按一下**元素命名空間**，然後按一下 **重設**。
 
-     屬性的值會變成**DefaultNamespace**，和一般字型顯示的值。
+    屬性的值會變成**DefaultNamespace**，和一般字型顯示的值。
 
-     以滑鼠右鍵按一下**項目命名空間**一次。 **重設**命令會立即停用，因為屬性目前追蹤狀態。
+    以滑鼠右鍵按一下**項目命名空間**一次。 **重設**命令會立即停用，因為屬性目前追蹤狀態。
 
-7.  將另一個**ExampleElement**從**工具箱**圖表介面，並變更其**項目命名空間**至**OtherNamespace**。
+7. 將另一個**ExampleElement**從**工具箱**圖表介面，並變更其**項目命名空間**至**OtherNamespace**。
 
-8.  按一下設計介面。
+8. 按一下設計介面。
 
-     在 **屬性**的值在圖表的視窗**自訂項目**現在**1/2**。
+    在 **屬性**的值在圖表的視窗**自訂項目**現在**1/2**。
 
 9. 變更**預設命名空間**從圖表**DefaultNamespace**來**NewNamespace**。
 

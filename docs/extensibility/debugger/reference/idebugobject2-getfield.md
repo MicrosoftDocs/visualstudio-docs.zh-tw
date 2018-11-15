@@ -1,5 +1,5 @@
 ---
-title: IDebugObject2::GetField |Microsoft 文件
+title: IDebugObject2::GetField |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e58ef7e706ff23edf28cefbf375d5f79a548b9a8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d602aa7da2f82258a7f0d9b0ba7d1d803d05cc7d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31112430"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926328"
 ---
 # <a name="idebugobject2getfield"></a>IDebugObject2::GetField
-取得此物件的類型。  
+取得這個物件的型別。  
   
 ## <a name="syntax"></a>語法  
   
@@ -44,10 +44,10 @@ int GetField(
  [out]傳回[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)物件如果不是 null 值。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，會傳回 S_OK;反之則傳回錯誤碼。  
+ 如果成功，會傳回 S_OK;否則，傳回錯誤碼。  
   
 ## <a name="remarks"></a>備註  
- 欄位描述的物件類型。  
+ 欄位描述的物件型別。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md)   

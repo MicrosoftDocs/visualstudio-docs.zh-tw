@@ -19,25 +19,25 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e9b2cd003011d610b56ac97ed95e3008b5cabc6a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 583296b47c2d230a48c21952613954b17ebfe622
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49267419"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49892333"
 ---
 # <a name="memory-usage-without-debugging"></a>記憶體使用量 (不偵錯)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 您可以使用「記憶體使用量」工具 (不偵錯) 來執行下列動作  
   
--   在開發案例時，就在 Visual Studio 中監控應用程式的記憶體使用量。  
+- 在開發案例時，就在 Visual Studio 中監控應用程式的記憶體使用量。  
   
--   建立應用程式記憶體狀態的詳細快照。  
+- 建立應用程式記憶體狀態的詳細快照。  
   
--   比較快照，以找出記憶體問題的根本原因。  
+- 比較快照，以找出記憶體問題的根本原因。  
   
- 本主題說明如何使用記憶體使用量工具，分析 Windows 通用 XAML 應用程式。 如果您想要對使用 JavaScript 和 HTML 的 Windows 通用應用程式分析記憶體使用情況，請參閱[分析記憶體使用量 (JavaScript)](http://msdn.microsoft.com/library/windows/apps/jj819176.aspx)。  
+  本主題說明如何使用記憶體使用量工具，分析 Windows 通用 XAML 應用程式。 如果您想要對使用 JavaScript 和 HTML 的 Windows 通用應用程式分析記憶體使用情況，請參閱[分析記憶體使用量 (JavaScript)](http://msdn.microsoft.com/library/windows/apps/jj819176.aspx)。  
   
 ##  <a name="BKMK_Start_a_Memory_Usage_diagnostic_session"></a>啟動記憶體使用量診斷工作階段  
   
@@ -76,13 +76,13 @@ ms.locfileid: "49267419"
 ###  <a name="BKMK_Memory_Usage_snapshot_views"></a>記憶體使用量快照檢視  
  使用快照檢視可以在新的 Visual Studio 視窗中開啟詳細報表。 有兩種快照檢視：  
   
--   [快照詳細資料報表](../profiling/memory-usage-without-debugging2.md#BKMK_Snapshot_details_reports)會顯示一張快照中的類型和執行個體。  
+- [快照詳細資料報表](../profiling/memory-usage-without-debugging2.md#BKMK_Snapshot_details_reports)會顯示一張快照中的類型和執行個體。  
   
--   [快照差異 (diff) 報表](../profiling/memory-usage-without-debugging2.md#BKMK_Snapshot_difference__diff__reports)會比較兩張快照中的類型和執行個體。  
+- [快照差異 (diff) 報表](../profiling/memory-usage-without-debugging2.md#BKMK_Snapshot_difference__diff__reports)會比較兩張快照中的類型和執行個體。  
   
- ![快照檢視連結](../profiling/media/memuse-snapshotview-numbered.png "MEMUSE__SnapshotView_Numbered")  
+  ![快照檢視連結](../profiling/media/memuse-snapshotview-numbered.png "MEMUSE__SnapshotView_Numbered")  
   
- 在快照檢視的圖片中，有編號的項目是開啟 [記憶體使用量] 報表檢視的連結。  
+  在快照檢視的圖片中，有編號的項目是開啟 [記憶體使用量] 報表檢視的連結。  
   
 |||  
 |-|-|  

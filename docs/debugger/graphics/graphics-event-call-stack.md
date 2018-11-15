@@ -24,7 +24,7 @@ Visual Studio 圖形分析器中的圖形事件呼叫堆疊可協助您對應有
   
  這是 [事件呼叫堆疊] 視窗：  
   
- ![上述 DrawIndexed 事件呼叫堆疊。] (media/gfx_diag_demo_graphics_event_call_stack_orientation.png "gfx_diag_demo_graphics_event_call_stack_orientation")  
+ ![上述 DrawIndexed 事件呼叫堆疊。](media/gfx_diag_demo_graphics_event_call_stack_orientation.png "gfx_diag_demo_graphics_event_call_stack_orientation")  
   
 ## <a name="understanding-the-graphics-event-call-stack"></a>了解圖形事件呼叫堆疊  
  您可以使用 [事件呼叫堆疊] 來了解導致特定 Direct3D 事件的執行流程。 它類似於 Visual Studio 呼叫堆疊 視窗中，不同之處在於不會顯示目前執行緒的目前呼叫堆疊中執行的應用程式，它會顯示呼叫堆疊時所選取的 Direct3D 事件發生時就存在。 在 [事件呼叫堆疊] 中，您可以跳到所選取 Direct3D 事件的呼叫位置，以檢查周圍的程式碼。  

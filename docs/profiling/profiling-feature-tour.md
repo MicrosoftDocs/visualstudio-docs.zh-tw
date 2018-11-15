@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: aeda3752fdee6ce36094c68758d99c612c82fd76
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: 9f884b92d03027782eed27f4583e06b1141341db
+ms.sourcegitcommit: e680e8ac675f003ebcc8f8c86e27f54ff38da662
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44320835"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "49356791"
 ---
 # <a name="quickstart-first-look-at-profiling-tools"></a>快速入門：初步認識分析工具
 
@@ -34,7 +34,8 @@ Visual Studio 提供各種不同的分析工具，可協助您依據應用程式
 
 若要分析您的應用程式，通常的慣用方法是使用 [診斷工具] 視窗，但您也可以針對發行組建改為執行應用程式的事後剖析分析。 如需不同方法的詳細資訊，請參閱[使用或不使用偵錯工具來執行分析工具](../profiling/running-profiling-tools-with-or-without-the-debugger.md)。 若要查看針對不同應用程式類型的分析工具支援，請參閱[應該使用哪一種工具？](#which-tool-should-i-use)
 
-> ![注意] 您可在 Windows 7 及更新版本使用事後分析工具。 Windows 8 及更新版本必須執行附有偵錯工具的分析工具 ([診斷工具] 視窗)。
+> [!NOTE]
+> 您可以在 Windows 7 及更新版本中使用事後分析工具。 Windows 8 及更新版本必須執行附有偵錯工具的分析工具 ([診斷工具] 視窗)。
 
 ## <a name="analyze-cpu-usage"></a>分析 CPU 使用量
 
@@ -119,7 +120,7 @@ CPU 使用量工具是您開始分析應用程式效能的最佳入門。 它會
 
 您也可以使用圖形來判斷是否有佔用 CPU 或 GPU 資源的效能瓶頸。
 
-## <a name="analyze-performance-javascript"></a>分析效能 (JavaScript)
+## <a name="analyze-performance-javascript-uwp"></a>分析效能 (JavaScript UWP)
 
 針對 UWP 應用程式，您可以使用 JavaScript 記憶體工具與 HTML UI 回應性工具。
 
@@ -155,8 +156,8 @@ JavaScript 記憶體工具和其他應用程式類型提供的記憶體使用量
   
 |效能工具|Windows 桌面|UWP|ASP.NET/ASP.NET Core| 
 |----------------------|---------------------|-------------|-------------|  
-|[記憶體使用量](../profiling/memory-usage.md)|是|是|是| 
 |[CPU 使用量](../profiling/cpu-usage.md)|是|是|是|
+|[記憶體使用量](../profiling/memory-usage.md)|是|是|是| 
 |[GPU 使用量](../debugger/gpu-usage.md)|是|是|no| 
 |[應用程式時間軸](../profiling/application-timeline.md)|是|是|否|
 |[效能提示](../profiling/perftips.md)|是|對 XAML 為是，對 HTML 為否|是|

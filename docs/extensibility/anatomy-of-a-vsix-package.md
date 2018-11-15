@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f5c60e0b812cd0557b266d3e34dae62cb22cc57d
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 1dea0fce75d83678161013baef109364842fcc46
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44281751"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49937729"
 ---
 # <a name="anatomy-of-a-vsix-package"></a>VSIX 封裝的結構
 VSIX 封裝 *.vsix*檔案，其中包含一或多個 Visual Studio 擴充功能，以及 Visual Studio 的中繼資料會使用分類，並安裝擴充功能。 該中繼資料會包含在 VSIX 資訊清單中， *[Content_Types].xml*檔案。 VSIX 封裝也包含一或多個*Extension.vsixlangpack*檔，以提供當地語系化設定文字，而且可能包含其他的 VSIX 套件，以安裝相依項目。  
@@ -55,7 +55,7 @@ VSIX 封裝 *.vsix*檔案，其中包含一或多個 Visual Studio 擴充功能�
 ## <a name="installation-location"></a>安裝位置  
  在安裝期間，**擴充功能和更新**VSIX 中封裝的資料夾之下的內容看起來 *%LocalAppData%\Microsoft\VisualStudio\14.0\Extensions*。  
   
- 根據預設，安裝只適用於目前的使用者，因為 *%localappdata%* 是使用者專屬目錄。 不過，如果您設定[AllUsers](https://msdn.microsoft.com/library/ac817f50-3276-4ddb-b467-8bbb1432455b)資訊清單的項目`True`，將會在安裝擴充功能 *...\\* VisualStudioInstallationFolder*\Common7\IDE\Extensions*和可供所有使用者的電腦。  
+ 根據預設，安裝只適用於目前的使用者，因為 *%localappdata%* 是使用者專屬目錄。 不過，如果您設定[AllUsers](https://msdn.microsoft.com/library/ac817f50-3276-4ddb-b467-8bbb1432455b)資訊清單的項目`True`，將會在安裝擴充功能<em>...\\</em> VisualStudioInstallationFolder<em>\Common7\IDE\Extensions</em>和可供所有使用者的電腦。  
   
 ## <a name="contenttypesxml"></a>[Content_Types].xml  
  *[Content_Types].xml*檔會識別在展開的檔案類型 *.vsix*檔案。 Visual Studio 套件的安裝期間會使用這個檔案，但不會安裝檔案本身。 如需有關這個檔案的詳細資訊，請參閱 <<c0> [ 的 [Content_types].xml 檔案結構](the-structure-of-the-content-types-dot-xml-file.md)。  

@@ -23,12 +23,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 21e2b1a7a90df2baef48483647c692c8b986c59f
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: bcc5600f38e2d53244d972e4c4c7094182bfa48c
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35670918"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50672947"
 ---
 # <a name="troubleshoot-errors-in-office-solutions"></a>針對 Office 方案中的錯誤進行疑難排解
   當您使用 Visual Studio 開發 Office 方案時，如果於過程中執行下列工作，則可能會遇到一些問題：  
@@ -124,7 +124,7 @@ ms.locfileid: "35670918"
   
  [!code-csharp[Trin_VstcoreTroubleshootingExcel#1](../vsto/codesnippet/CSharp/Trin_VstcoreTroubleshootingExcelCS/ThisWorkbook.cs#1)]  
   
- 如需 Office Pia 中的事件介面的詳細資訊，請參閱[的 Office 主要 interop 組件中類別和介面概觀](http://msdn.microsoft.com/da92dc3c-8209-44de-8095-a843659368d5)。  
+ 如需 Office Pia 中的事件介面的詳細資訊，請參閱[的 Office 主要 interop 組件中類別和介面概觀](/previous-versions/office/office-12//ms247299(v=office.12))。  
   
 ### <a name="cannot-reference-office-pia-classes-in-projects-that-target-the-includenetv40shortsharepointincludesnet-v40-short-mdmd-or-the-includenetv45vstoincludesnet-v45-mdmd"></a>無法參考 Office PIA 中類別專案目標[!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]或 [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]  
  根據預設，在以 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 或 [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] 為目標的專案中，不會編譯參考 Office PIA 中所定義類別的程式碼。 Pia 中的類別使用的命名慣例*objectname*類別，例如<xref:Microsoft.Office.Interop.Word.DocumentClass>和<xref:Microsoft.Office.Interop.Excel.WorkbookClass>。 例如，將不會編譯 Word VSTO 增益集專案中的下列程式碼。  
@@ -139,11 +139,11 @@ Word.DocumentClass document = (Word.DocumentClass) Globals.ThisAddIn.Application
   
  這段程式碼會導致下列編譯錯誤：  
   
--   Visual Basic: 「 類別 'DocumentClass' 的參考不允許使用非 PIA 模式連結它的組件時。 」  
+- Visual Basic: 「 類別 'DocumentClass' 的參考不允許使用非 PIA 模式連結它的組件時。 」  
   
--   Visual C#:"Interop 類型 'Microsoft.Office.Interop.Word.DocumentClass' 無法內嵌。 請改用適當的介面。」  
+- Visual C#:"Interop 類型 'Microsoft.Office.Interop.Word.DocumentClass' 無法內嵌。 請改用適當的介面。」  
   
- 若要解決這個錯誤，請修改程式碼以參考對應的介面。 例如，不要參考 <xref:Microsoft.Office.Interop.Word.DocumentClass> 物件，改為參考 <xref:Microsoft.Office.Interop.Word.Document> 介面的執行個體。  
+  若要解決這個錯誤，請修改程式碼以參考對應的介面。 例如，不要參考 <xref:Microsoft.Office.Interop.Word.DocumentClass> 物件，改為參考 <xref:Microsoft.Office.Interop.Word.Document> 介面的執行個體。  
   
 ```vb  
 Dim document As Word.Document = Globals.ThisAddIn.Application.ActiveDocument  

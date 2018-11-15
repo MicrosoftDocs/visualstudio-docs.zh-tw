@@ -14,27 +14,27 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: be0c91441df0ff85771993195a4f34c7c682abdb
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5ac0d333f8103f6904bce517397a73cc010b1d36
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49214691"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49873405"
 ---
 # <a name="command-line-arguments-for-the-help-content-manager"></a>Help Content Manager 的命令列引數
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 您可以使用說明內容管理員 (HlpCtntmgr.exe) 的命令列引數來指定如何部署和管理本機說明內容。 您必須以系統管理員權限來執行命令列工具的指令碼，您無法以服務方式執行這些指令碼。 使用本工具可執行下列工作：  
   
--   從磁碟或雲端新增或更新本機說明內容。  
+- 從磁碟或雲端新增或更新本機說明內容。  
   
--   移除本機說明內容。  
+- 移除本機說明內容。  
   
--   移動本機說明內容的存放區。  
+- 移動本機說明內容的存放區。  
   
--   以無訊息模式加入、更新、移除或移動本機說明內容。  
+- 以無訊息模式加入、更新、移除或移動本機說明內容。  
   
- 語法：  
+  語法：  
   
 ```  
 HlpCtntmgr.exe /operation Value /catalogname CatalogName /locale Locale /sourceuri InstallationPoint  

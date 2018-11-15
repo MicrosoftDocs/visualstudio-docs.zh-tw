@@ -20,15 +20,16 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: ac0e1d9ca251e4d12dbdfb59fbfaf115cbdd348d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 026f568d71c80af95d2d4bee640dc11d1042713f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49228867"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49913861"
 ---
 # <a name="ca1060-move-pinvokes-to-nativemethods-class"></a>CA1060：將 P/Invokes 移到 NativeMethods 類別
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|MovePInvokesToNativeMethodsClass|
@@ -42,13 +43,13 @@ ms.locfileid: "49228867"
 ## <a name="rule-description"></a>規則描述
  平台叫用方法，例如使用標記<xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName>屬性或使用所定義的方法`Declare`中的關鍵字[!INCLUDE[vbprvb](../includes/vbprvb-md.md)]，存取 unmanaged 程式碼。 這些方法應該在下列類別之一：
 
--   **NativeMethods** -此類別不會抑制堆疊查核行程，unmanaged 程式碼權限。 (<xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName>不會套用至這個類別。)這個類別是可用於任何地方會執行堆疊查核行程，因此的方法。
+- **NativeMethods** -此類別不會抑制堆疊查核行程，unmanaged 程式碼權限。 (<xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName>不會套用至這個類別。)這個類別是可用於任何地方會執行堆疊查核行程，因此的方法。
 
--   **SafeNativeMethods** -這個類別會抑制堆疊查核行程，unmanaged 程式碼權限。 (<xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName>套用至這個類別。)這個類別是對呼叫的任何人都是安全的方法。 這些方法的呼叫端不需要執行完整的安全性檢閱，以確定使用是安全的因為是無害的任何呼叫端的方法。
+- **SafeNativeMethods** -這個類別會抑制堆疊查核行程，unmanaged 程式碼權限。 (<xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName>套用至這個類別。)這個類別是對呼叫的任何人都是安全的方法。 這些方法的呼叫端不需要執行完整的安全性檢閱，以確定使用是安全的因為是無害的任何呼叫端的方法。
 
--   **UnsafeNativeMethods** -這個類別會抑制堆疊查核行程，unmanaged 程式碼權限。 (<xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName>套用至這個類別。)此類別適用於有潛在危險的方法。 這些方法的任何呼叫端必須不執行完整的安全性檢閱，以確定使用是安全的因為會執行任何的堆疊查核行程。
+- **UnsafeNativeMethods** -這個類別會抑制堆疊查核行程，unmanaged 程式碼權限。 (<xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName>套用至這個類別。)此類別適用於有潛在危險的方法。 這些方法的任何呼叫端必須不執行完整的安全性檢閱，以確定使用是安全的因為會執行任何的堆疊查核行程。
 
- 這些類別會宣告為`internal`(`Friend`，在 Visual Basic 中)，並宣告私用的建構函式，來防止建立新的執行個體。 這些類別中的方法應該`static`並`internal`(`Shared`和`Friend`Visual Basic 中)。
+  這些類別會宣告為`internal`(`Friend`，在 Visual Basic 中)，並宣告私用的建構函式，來防止建立新的執行個體。 這些類別中的方法應該`static`並`internal`(`Shared`和`Friend`Visual Basic 中)。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
  若要修正此規則的違規情形，請將方法移至適當**NativeMethods**類別。 對於大部分的應用程式，將 P/Invokes 移到新的類別，稱為**NativeMethods**就已足夠。

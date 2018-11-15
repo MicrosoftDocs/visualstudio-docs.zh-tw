@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: beeee40e7318102786a1e06b36a0eba3028eb7b7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9c3e74f66edc0a8b33ad1fe8205cc02cd0e80054
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49261075"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49866151"
 ---
 # <a name="adding-extensions-to-dsl-definitions"></a>在 DSL 定義中加入擴充功能
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,19 +26,19 @@ DSL 定義延伸模組可讓您建立的特定領域語言 (DSL) 延伸模組套
   
  其他功能包括：  
   
--   模型和呈現項目的屬性  
+- 模型和呈現項目的屬性  
   
--   圖案和接點的裝飾項目  
+- 圖案和接點的裝飾項目  
   
--   類別、 關聯性、 圖形和連接器  
+- 類別、 關聯性、 圖形和連接器  
   
--   驗證條件約束  
+- 驗證條件約束  
   
--   工具箱項目和索引標籤  
+- 工具箱項目和索引標籤  
   
- 擴充 DSL 的使用者可以建立和儲存模型，包含執行個體的其他功能，並已安裝適當的延伸模組的其他使用者可以讀取這些。 尚未安裝擴充功能的使用者無法使用額外的功能，但是它們可以更新，並儲存模型，而不會遺失的其他功能。  
+  擴充 DSL 的使用者可以建立和儲存模型，包含執行個體的其他功能，並已安裝適當的延伸模組的其他使用者可以讀取這些。 尚未安裝擴充功能的使用者無法使用額外的功能，但是它們可以更新，並儲存模型，而不會遺失的其他功能。  
   
- 範例程式碼和有關這項功能的詳細資訊，請參閱[Visual Studio Visualization and Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=186128)網站。  
+  範例程式碼和有關這項功能的詳細資訊，請參閱[Visual Studio Visualization and Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=186128)網站。  
   
 ## <a name="see-also"></a>另請參閱  
  [Visual Studio Visualization and Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=186128)

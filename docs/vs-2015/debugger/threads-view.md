@@ -18,12 +18,12 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 12ab9170c0f071ba319c0560f55291f41174ddf9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1adef2aeda5385fae1e3603127e3eea3f5ad109b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49306263"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49943033"
 ---
 # <a name="threads-view"></a>執行緒檢視
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,12 +34,12 @@ ms.locfileid: "49306263"
   
 #### <a name="to-open-the-threads-view"></a>若要開啟 [執行緒] 檢視  
   
-1.  從**Spy**功能表上，選擇**執行緒**。  
+1. 從**Spy**功能表上，選擇**執行緒**。  
   
- ![Spy&#43; &#43;執行緒檢視](../debugger/media/spy-threads.png "Spy + + _Threads")  
-Spy++ 執行緒檢視  
+   ![Spy&#43; &#43;執行緒檢視](../debugger/media/spy-threads.png "Spy + + _Threads")  
+   Spy++ 執行緒檢視  
   
- 上圖顯示 [執行緒] 檢視。  
+   上圖顯示 [執行緒] 檢視。  
   
 ## <a name="in-this-section"></a>本節內容  
  [搜尋 [執行緒] 檢視中的執行緒](../debugger/how-to-search-for-a-thread-in-threads-view.md)  

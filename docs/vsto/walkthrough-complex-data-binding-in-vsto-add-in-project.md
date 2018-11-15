@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: fd034f4802679daa442f04b469a37f04d580ea94
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: af82d74c0e0a0446b759a06a9e874a39fc57b6fd
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36758880"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50672519"
 ---
 # <a name="walkthrough-complex-data-binding-in-vsto-add-in-project"></a>逐步解說： VSTO 增益集專案中的複雜資料繫結
   您可以將資料繫結至 VSTO 增益集專案中的主控制項和 Windows Forms 控制項。 本逐步解說示範如何在執行階段將控制項加入 Microsoft Office Excel 工作表，以及將控制項繫結至資料。
@@ -31,11 +31,11 @@ ms.locfileid: "36758880"
 
  這個逐步解說將說明下列工作：
 
--   新增<xref:Microsoft.Office.Tools.Excel.ListObject>控制項加入工作表，在執行階段。
+- 新增<xref:Microsoft.Office.Tools.Excel.ListObject>控制項加入工作表，在執行階段。
 
--   建立將控制項連接至資料集的 <xref:System.Windows.Forms.BindingSource> 執行個體。
+- 建立將控制項連接至資料集的 <xref:System.Windows.Forms.BindingSource> 執行個體。
 
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
 ## <a name="prerequisites"></a>必要條件
  您需要下列元件才能完成此逐步解說：
@@ -46,9 +46,9 @@ ms.locfileid: "36758880"
 
 -   已附加 `AdventureWorksLT` 範例資料庫之執行中 SQL Server 2005 或 SQL Server 2005 Express 執行個體的存取權。 您可以下載`AdventureWorksLT`從資料庫[CodePlex 網站](http://go.microsoft.com/fwlink/?LinkId=115611)。 如需附加資料庫的詳細資訊，請參閱下列主題：
 
-    -   若要使用 SQL Server Management Studio 或 SQL Server Management Studio Express 附加資料庫，請參閱[如何： 附加資料庫 (SQL Server Management Studio)](http://msdn.microsoft.com/b4efb0ae-cfe6-4d81-a4b4-6e4916885caa)。
+    -   若要使用 SQL Server Management Studio 或 SQL Server Management Studio Express 附加資料庫，請參閱[如何： 附加資料庫 (SQL Server Management Studio)](/sql/relational-databases/databases/attach-a-database)。
 
-    -   若要使用命令列附加資料庫，請參閱[如何： 將資料庫檔案附加至 SQL Server Express](http://msdn.microsoft.com/0f8e42b5-7a8c-4c30-8c98-7d2bdc8dcc68)。
+    -   若要使用命令列附加資料庫，請參閱[如何： 將資料庫檔案附加至 SQL Server Express](/previous-versions/sql/)。
 
 ## <a name="create-a-new-project"></a>建立新專案
  第一步是建立 Excel VSTO 增益集專案。
@@ -66,27 +66,27 @@ ms.locfileid: "36758880"
 
 ### <a name="to-add-a-typed-dataset-to-the-project"></a>將具類型資料集加入專案
 
-1.  如果**資料來源**看不到視窗，顯示，請在功能表列選擇**檢視** > **其他 Windows**  >  **資料來源**。
+1. 如果**資料來源**看不到視窗，顯示，請在功能表列選擇**檢視** > **其他 Windows**  >  **資料來源**。
 
-2.  選擇 [ **加入新資料來源** ] 以啟動 [ **資料來源組態精靈**]。
+2. 選擇 [ **加入新資料來源** ] 以啟動 [ **資料來源組態精靈**]。
 
-3.  按一下 [ **資料庫**]，然後按 [ **下一步**]。
+3. 按一下 [ **資料庫**]，然後按 [ **下一步**]。
 
-4.  如果您有 `AdventureWorksLT` 資料庫的現有連接，請選擇這個連接，然後按 [ **下一步**]。
+4. 如果您有 `AdventureWorksLT` 資料庫的現有連接，請選擇這個連接，然後按 [ **下一步**]。
 
-     否則，請按一下 [ **新增連接**]，然後使用 [ **加入連接** ] 對話方塊建立新的連接。 如需詳細資訊，請參閱 <<c0> [ 新增連線](../data-tools/add-new-connections.md)。
+    否則，請按一下 [ **新增連接**]，然後使用 [ **加入連接** ] 對話方塊建立新的連接。 如需詳細資訊，請參閱 <<c0> [ 新增連線](../data-tools/add-new-connections.md)。
 
-5.  在 [將連接字串儲存到應用程式組態檔]  頁面上，按 [下一步] 。
+5. 在 [將連接字串儲存到應用程式組態檔]  頁面上，按 [下一步] 。
 
-6.  在 [選擇您的資料庫物件]  頁面中，展開 [資料表]  ，然後選取 [Address (SalesLT)] 。
+6. 在 [選擇您的資料庫物件]  頁面中，展開 [資料表]  ，然後選取 [Address (SalesLT)] 。
 
-7.  按一下 [ **完成**]。
+7. 按一下 [ **完成**]。
 
-     *AdventureWorksLTDataSet.xsd*檔案新增至**方案總管 中**。 這個檔案會定義下列項目：
+    *AdventureWorksLTDataSet.xsd*檔案新增至**方案總管 中**。 這個檔案會定義下列項目：
 
-    -   名為 `AdventureWorksLTDataSet`的具類型資料集。 這個資料集代表 AdventureWorksLT 資料庫中 [Address (SalesLT)]  資料表的內容。
+   - 名為 `AdventureWorksLTDataSet`的具類型資料集。 這個資料集代表 AdventureWorksLT 資料庫中 [Address (SalesLT)]  資料表的內容。
 
-    -   名為 TableAdapter `AddressTableAdapter`。 這個 TableAdapter 可用來讀取和寫入資料中`AdventureWorksLTDataSet`。 如需詳細資訊，請參閱 < [TableAdapter 概觀](../data-tools/fill-datasets-by-using-tableadapters.md#tableadapter-overview)。
+   - 名為 TableAdapter `AddressTableAdapter`。 這個 TableAdapter 可用來讀取和寫入資料中`AdventureWorksLTDataSet`。 如需詳細資訊，請參閱 < [TableAdapter 概觀](../data-tools/fill-datasets-by-using-tableadapters.md#tableadapter-overview)。
 
      您將在本逐步解說稍後用到這兩個物件。
 
@@ -129,7 +129,7 @@ ms.locfileid: "36758880"
 
 -   請按 **F5**。
 
-     工作表中會建立名為 <xref:Microsoft.Office.Tools.Excel.ListObject> 的 `addressListObject` 控制項。 同時也會將名為 `adventureWorksLTDataSet` 的資料集物件和名為 <xref:System.Windows.Forms.BindingSource> 的 `addressBindingSource` 加入專案。 <xref:Microsoft.Office.Tools.Excel.ListObject> 會繫結至 <xref:System.Windows.Forms.BindingSource>，而後者則繫結至資料集物件。
+     工作表中會建立名為 <xref:Microsoft.Office.Tools.Excel.ListObject> 的 `addressListObject` 控制項。 同時也會將名為 `adventureWorksLTDataSet` 的資料集物件和名為 <xref:System.Windows.Forms.BindingSource> 的 `addressBindingSource` 加入專案。 <xref:Microsoft.Office.Tools.Excel.ListObject> 已繫結至 <xref:System.Windows.Forms.BindingSource>，而後者又繫結至資料集物件。
 
 ## <a name="see-also"></a>另請參閱
 

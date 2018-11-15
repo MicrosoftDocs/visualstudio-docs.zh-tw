@@ -15,19 +15,20 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c67cd83f8487b67c580d544fd2d350612dfb48a8
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 8e7f7f4d38e494b53eb2bba11020e9d0f361ef76
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45549634"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49895674"
 ---
 # <a name="ca1821-remove-empty-finalizers"></a>CA1821：必須移除空的完成項
+
 |||
 |-|-|
 |TypeName|RemoveEmptyFinalizers|
 |CheckId|CA1821|
-|類別|Microsoft.Performance|
+|分類|Microsoft.Performance|
 |中斷變更|非重大|
 
 ## <a name="cause"></a>原因

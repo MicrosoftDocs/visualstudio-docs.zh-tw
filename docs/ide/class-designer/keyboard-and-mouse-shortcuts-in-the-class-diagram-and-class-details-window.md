@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: db39f9c58c0fa2f0ea57d94cd1be404173720088
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 87b447c3cf2fbba77584675edf3d34f44a98cb64
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33957310"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49848497"
 ---
 # <a name="keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window"></a>類別圖表和類別細節視窗中的鍵盤和滑鼠快速鍵
 
@@ -31,7 +31,7 @@ ms.locfileid: "33957310"
 類別圖表中可支援下列滑鼠動作：
 
 |滑鼠組合|內容|描述|
-|-----------------------|-------------|-----------------|
+| - |-------------|-----------------|
 |按兩下|圖案項目|開啟程式碼編輯器。|
 |按兩下|棒棒糖符號連接器|展開/摺疊棒棒糖符號。|
 |按兩下|棒棒糖符號連接器標籤|叫用 [顯示介面] 命令。|

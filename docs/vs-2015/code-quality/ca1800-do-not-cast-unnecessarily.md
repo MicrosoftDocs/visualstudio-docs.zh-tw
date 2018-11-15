@@ -20,15 +20,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 7434770acae4c8fba10e40be87413b9dba3a6eaf
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ed2769bae5cf99fdaf8545e8ad0ac2a60a58b038
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49260080"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49854892"
 ---
 # <a name="ca1800-do-not-cast-unnecessarily"></a>CA1800：請勿執行不必要的轉型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|DoNotCastUnnecessarily|

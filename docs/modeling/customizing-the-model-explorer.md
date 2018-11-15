@@ -13,12 +13,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 1455c0e1d4d5ff0aae952294ef3ee127a0d325a3
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 32ee70edb27ff68d7e2ee4c83a600a8725e6c08e
+ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859896"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50966647"
 ---
 # <a name="customizing-the-model-explorer"></a>自訂模型總管
 您可以針對您的特定領域語言設計工具中，如下所示變更的外觀和行為的 [總管] 中：
@@ -42,23 +42,23 @@ ms.locfileid: "47859896"
 
 #### <a name="to-add-an-icon-to-an-explorer-node"></a>若要將圖示新增至 [檔案總管] 節點
 
-1.  建立[!INCLUDE[dsl](../modeling/includes/dsl_md.md)]使用工作流程 方案範本的方案。
+1. 建立[!INCLUDE[dsl](../modeling/includes/dsl_md.md)]使用工作流程 方案範本的方案。
 
-2.  將包含 16 x 16 像素圖示在.bmp 檔案放**Dsl\Resources**方案中的資料夾。
+2. 將包含 16 x 16 像素圖示在.bmp 檔案放**Dsl\Resources**方案中的資料夾。
 
-3.  在  **DSL 總管 中**，以滑鼠右鍵按一下**總管行為**，然後按一下 **加入新的總管節點設定**。
+3. 在  **DSL 總管 中**，以滑鼠右鍵按一下**總管行為**，然後按一下 **加入新的總管節點設定**。
 
-     **ExplorerNodeSettings**下方的節點會出現**自訂節點設定**節點。
+    **ExplorerNodeSettings**下方的節點會出現**自訂節點設定**節點。
 
-4.  選取  **ExplorerNodeSettings**，然後在**屬性**視窗中，將**類別**至**動作項目**。
+4. 選取  **ExplorerNodeSettings**，然後在**屬性**視窗中，將**類別**至**動作項目**。
 
-5.  設定**圖示來顯示**圖示檔的路徑。
+5. 設定**圖示來顯示**圖示檔的路徑。
 
-6.  轉換所有範本，然後建置並執行方案。
+6. 轉換所有範本，然後建置並執行方案。
 
-7.  在產生的設計工具中，開啟範例圖表。
+7. 在產生的設計工具中，開啟範例圖表。
 
-     [總管] 中應該會顯示三個**動作項目**具有圖示的節點。
+    [總管] 中應該會顯示三個**動作項目**具有圖示的節點。
 
 > [!NOTE]
 >  如果您已將任何項目，會顯示在 [總管] 中產生的節點圖示，檔案總管的所有節點會都顯示圖示。 如果已設定無圖示，節點會顯示預設圖示。
@@ -115,4 +115,4 @@ ms.locfileid: "47859896"
 
 ## <a name="see-also"></a>另請參閱
 
-- [特定領域語言工具字彙](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [特定領域語言工具字彙](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

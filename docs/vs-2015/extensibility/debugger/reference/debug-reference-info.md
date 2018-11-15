@@ -17,12 +17,12 @@ ms.assetid: 24b83d00-d756-42a1-8083-730f998761dc
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bd65d927f66ce39931a52f00b5bb5dc85be2eb2b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 23b385ff3c4065aa5126eda07cf0663509d1ac0c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49248010"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49878671"
 ---
 # <a name="debugreferenceinfo"></a>DEBUG_REFERENCE_INFO
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

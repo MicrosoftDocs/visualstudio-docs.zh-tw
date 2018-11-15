@@ -17,12 +17,12 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2cb7c842d6fdcc024b4146981ece251fb5189652
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2956d5f5ce4cf8f210466f7b7006a158eee6ce43
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49234425"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49885053"
 ---
 # <a name="collecting-thread-and-process-concurrency-data"></a>收集執行緒和處理序並行資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,22 +31,22 @@ ms.locfileid: "49234425"
   
  **需求**  
   
--   [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
- 您可以使用下列其中一種程序來指定並行分析方法：  
+  您可以使用下列其中一種程序來指定並行分析方法：  
   
--   在分析精靈的第一個頁面上，按一下 [並行]。  
+- 在分析精靈的第一個頁面上，按一下 [並行]。  
   
--   在效能工作階段 [屬性] 對話方塊中的 [一般] 頁面上，按一下 [並行]。  
+- 在效能工作階段 [屬性] 對話方塊中的 [一般] 頁面上，按一下 [並行]。  
   
--   在 [效能總管] 工具列的 [方法] 清單中，按一下 [並行]。  
+- 在 [效能總管] 工具列的 [方法] 清單中，按一下 [並行]。  
   
 ## <a name="common-tasks"></a>一般工作  
  您可以在效能工作階段的 [效能工作階段]  對話方塊中指定其他選項。 若要開啟此對話方塊：  
   
--   在 **效能總管**中，以滑鼠右鍵按一下效能工作階段名稱，然後按一下 [屬性] 。  
+- 在 **效能總管**中，以滑鼠右鍵按一下效能工作階段名稱，然後按一下 [屬性] 。  
   
- 下表中的工作說明當您使用並行方法進行分析時，可以在 [效能工作階段屬性頁] 對話方塊中指定的選項。  
+  下表中的工作說明當您使用並行方法進行分析時，可以在 [效能工作階段屬性頁] 對話方塊中指定的選項。  
   
 |工作|相關內容|  
 |----------|---------------------|  

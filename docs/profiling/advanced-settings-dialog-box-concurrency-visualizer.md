@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d697ee37cb8412e4fa0a51096858d9fa4b17877
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 60f4a038056d326cfb184cc3bb6876c411263ca1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34690789"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49884000"
 ---
 # <a name="advanced-settings-dialog-box-concurrency-visualizer"></a>進階設定對話方塊 (並行視覺化檢視)
 使用並行視覺化檢視中的 [進階設定] 對話方塊，您可以控制收集追蹤的方式。  此對話方塊提供適用於符號、Just My Code、緩衝處理、篩選、CLR 事件、標記、提供者及檔案的索引標籤。  
@@ -75,15 +75,15 @@ ms.locfileid: "34690789"
 ## <a name="files"></a>檔案  
  在 [檔案] 索引標籤上，您可以指定每次收集追蹤時要儲存追蹤檔的目錄。  並行視覺化檢視會針對它所收集的每個追蹤產生四個檔案：  
   
--   核心模式的事件追蹤記錄 (ETL) 檔案 (*.* kernel.etl*)  
+- 核心模式的事件追蹤記錄 (ETL) 檔案 (<em>.</em>kernel.etl*)  
   
--   使用者模式的事件追蹤記錄檔案 (*.* user.etl*)  
+- 使用者模式的事件追蹤記錄檔案 (<em>.</em>user.etl*)  
   
--   並行視覺化檢視的資料檔案 (*.* CVData*)  
+- 並行視覺化檢視的資料檔案 (<em>.</em>CVData*)  
   
--   並行視覺化檢視的追蹤檔案 (*.* CVTrace*)  
+- 並行視覺化檢視的追蹤檔案 (<em>.</em>CVTrace*)  
   
- 這兩個 ETL 檔案會儲存原始追蹤資料，而這兩個並行視覺化檢視檔案會儲存已處理的資料。  在處理追蹤之後，通常不會用到原始的 ETL 檔案。  選取 [分析後刪除事件追蹤記錄 (ETL) 檔案] 核取方塊，可減少儲存在磁碟上的追蹤資料量。  
+  這兩個 ETL 檔案會儲存原始追蹤資料，而這兩個並行視覺化檢視檔案會儲存已處理的資料。  在處理追蹤之後，通常不會用到原始的 ETL 檔案。  選取 [分析後刪除事件追蹤記錄 (ETL) 檔案] 核取方塊，可減少儲存在磁碟上的追蹤資料量。  
   
 ## <a name="see-also"></a>另請參閱  
  [Just My Code](../profiling/just-my-code-threads-view.md)   

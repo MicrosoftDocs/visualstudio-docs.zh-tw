@@ -1,7 +1,7 @@
 ---
 title: Python/C++ 混和模式符號偵錯
 description: Visual Studio 如何針對完全混合模式的 C++ 和 Python 偵錯提供載入符號的功能。
-ms.date: 06/26/2018
+ms.date: 11/12/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: ddb171a32af89e384122a733208f92d70ad624b5
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 1b5b50d08876b9b106a836c0302a99dc7efe5204
+ms.sourcegitcommit: 6a955a2d179cd0e137942389f940d9fcbbe125de
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45547954"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51607636"
 ---
 # <a name="install-debugging-symbols-for-python-interpreters"></a>安裝 Python 解譯器的偵錯符號
 
@@ -77,6 +77,10 @@ Visual Studio 會在需要符號時提示您，一般來說，這是指啟動混
 | 3.3.2 | [32 位元](https://www.org/ftp/python/3.3.2/python-3.3.2-pdb.zip) - [64 位元](https://www.org/ftp/python/3.3.2/python-3.3.2.amd64-pdb.zip) |
 | 3.3.1 | [32 位元](https://www.org/ftp/python/3.3.1/python-3.3.1-pdb.zip) - [64 位元](https://www.org/ftp/python/3.3.1/python-3.3.1.amd64-pdb.zip) |
 | 3.3.0 | [32 位元](https://www.org/ftp/python/3.3.0/python-3.3.0-pdb.zip) - [64 位元](https://www.org/ftp/python/3.3.0/python-3.3.0.amd64-pdb.zip) |
+| 2.7.15 | [32 位元](https://www.python.org/ftp/python/2.7.15/python-2.7.15-pdb.zip) - [64 位元](https://www.python.org/ftp/python/2.7.15/python-2.7.15.amd64-pdb.zip) |
+| 2.7.14 | [32 位元](https://www.python.org/ftp/python/2.7.14/python-2.7.14-pdb.zip) - [64 位元](https://www.python.org/ftp/python/2.7.14/python-2.7.14.amd64-pdb.zip) |
+| 2.7.13 | [32 位元](https://www.python.org/ftp/python/2.7.13/python-2.7.13-pdb.zip) - [64 位元](https://www.python.org/ftp/python/2.7.13/python-2.7.13.amd64-pdb.zip) |
+| 2.7.12 | [32 位元](https://www.python.org/ftp/python/2.7.12/python-2.7.12-pdb.zip) - [64 位元](https://www.python.org/ftp/python/2.7.12/python-2.7.12.amd64-pdb.zip) |
 | 2.7.11 | [32 位元](https://www.python.org/ftp/python/2.7.11/python-2.7.11-pdb.zip) - [64 位元](https://www.python.org/ftp/python/2.7.11/python-2.7.11.amd64-pdb.zip) |
 | 2.7.10 | [32 位元](https://www.python.org/ftp/python/2.7.10/python-2.7.10-pdb.zip) - [64 位元](https://www.python.org/ftp/python/2.7.10/python-2.7.10.amd64-pdb.zip) |
 | 2.7.9 | [32 位元](https://www.python.org/ftp/python/2.7.9/python-2.7.9-pdb.zip) - [64 位元](https://www.python.org/ftp/python/2.7.9/python-2.7.9.amd64-pdb.zip) |

@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: f39ff75eaa6efe0d71d884fd5d6d76f65e5dad50
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 3a5d07e4267291e30f85b1b16b49213ab119cd1c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380197"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49932347"
 ---
 # <a name="how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results"></a>如何：放大負載測試結果圖表中的某個區域
 
@@ -94,15 +94,15 @@ ms.locfileid: "39380197"
 
 ### <a name="to-zoom-to-a-region-of-the-graph-by-choosing-and-dragging"></a>若要藉由選擇和拖曳來縮放圖形的區域
 
-1.  在縮放區域的一端選擇圖形。
+1. 在縮放區域的一端選擇圖形。
 
-2.  拖曳滑鼠指標到縮放區域的另一端。
+2. 拖曳滑鼠指標到縮放區域的另一端。
 
-3.  放開滑鼠按鈕。
+3. 放開滑鼠按鈕。
 
-     這樣會放大您藉由選擇和拖曳所定義的區域。
+    這樣會放大您藉由選擇和拖曳所定義的區域。
 
- 下列程序描述如何在不需要調整縮放列端點的情況下快速縮小。
+   下列程序描述如何在不需要調整縮放列端點的情況下快速縮小。
 
 ### <a name="to-zoom-out"></a>若要縮小
 

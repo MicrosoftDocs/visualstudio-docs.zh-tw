@@ -20,15 +20,16 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 50e75f4855079666130e063d3c2b516f317e90f1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 766de62f4781dc7ce164155a2090ffabac913a22
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49217889"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49819546"
 ---
 # <a name="ca2116-aptca-methods-should-only-call-aptca-methods"></a>CA2116：APTCA 方法應該只呼叫 APTCA 方法
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|AptcaMethodsShouldOnlyCallAptcaMethods|
@@ -44,13 +45,13 @@ ms.locfileid: "49217889"
 
  當 APTCA 屬性存在於上是完全受信任的組件，組件不允許部分信任呼叫端的另一個組件中執行程式碼，就可以 產生安全性弱點。 如果兩個方法`M1`並`M2`符合下列條件，惡意呼叫端可以使用此方法`M1`略過隱含的完全信任的連結要求保護`M2`:
 
--   `M1` 具有 APTCA 屬性的完全信任組件中宣告的公用方法。
+- `M1` 具有 APTCA 屬性的完全信任組件中宣告的公用方法。
 
--   `M1` 呼叫方法`M2`外部`M1`的組件。
+- `M1` 呼叫方法`M2`外部`M1`的組件。
 
--   `M2`組件不具有 APTCA 屬性，因此，不應執行或代表，都是部分信任呼叫端。
+- `M2`組件不具有 APTCA 屬性，因此，不應執行或代表，都是部分信任呼叫端。
 
- 部分信任呼叫端`X`可以呼叫方法`M1`，而導致`M1`呼叫`M2`。 因為`M2`APTCA 屬性，其立即呼叫端沒有 (`M1`) 必須滿足連結要求完全信任。`M1`具有完全信任，因此滿足這項檢查。 安全性風險是，因為`X`不會參與滿足連結要求保護`M2`來自不受信任的呼叫者。 因此，若方法具有 APTCA 屬性必須呼叫不具有屬性的方法。
+  部分信任呼叫端`X`可以呼叫方法`M1`，而導致`M1`呼叫`M2`。 因為`M2`APTCA 屬性，其立即呼叫端沒有 (`M1`) 必須滿足連結要求完全信任。`M1`具有完全信任，因此滿足這項檢查。 安全性風險是，因為`X`不會參與滿足連結要求保護`M2`來自不受信任的呼叫者。 因此，若方法具有 APTCA 屬性必須呼叫不具有屬性的方法。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
  如果需要 APCTA 屬性，使用需求來保護在完全信任組件呼叫的方法。 您的需求將取決於您的方法所公開的功能完全權限。 如果可能，保護以確保不會對部分信任呼叫端公開的基礎功能的完全信任要求的方法。 如果這不可行，請選取一組權限可有效保護公開的功能。 如需有關需求的詳細資訊，請參閱 <<c0> [ 需求](http://msdn.microsoft.com/en-us/e5283e28-2366-4519-b27d-ef5c1ddc1f48)。

@@ -16,12 +16,12 @@ ms.assetid: eea69f03-349c-44bb-bd4f-4925c0dc3e55
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 96a641778811d88c0087a23822ab789e72b066f0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 45f0084d060e9727f30ba39233ec5b92818d9205
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49190004"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49829881"
 ---
 # <a name="intercepting-legacy-language-service-commands"></a>攔截舊版語言服務命令
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -35,13 +35,13 @@ ms.locfileid: "49190004"
   
  您有命令處理的下列選項：  
   
--   處理命令，，然後將鏈結中的傳遞到下一個命令篩選器的命令。  
+- 處理命令，，然後將鏈結中的傳遞到下一個命令篩選器的命令。  
   
--   處理命令，並不會傳遞至下一個命令篩選器的命令。  
+- 處理命令，並不會傳遞至下一個命令篩選器的命令。  
   
--   未處理命令，但傳遞到下一個命令篩選器的命令。  
+- 未處理命令，但傳遞到下一個命令篩選器的命令。  
   
--   忽略命令。 不在目前的篩選器中處理它，並請勿將它傳遞到下一個篩選器。  
+- 忽略命令。 不在目前的篩選器中處理它，並請勿將它傳遞到下一個篩選器。  
   
- 您的語言服務應處理哪些命令的相關資訊，請參閱[語言服務篩選器的重要命令](../../extensibility/internals/important-commands-for-language-service-filters.md)。
+  您的語言服務應處理哪些命令的相關資訊，請參閱[語言服務篩選器的重要命令](../../extensibility/internals/important-commands-for-language-service-filters.md)。
 

@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty3::SetValueAsStringWithError |Microsoft 文件
+title: IDebugProperty3::SetValueAsStringWithError |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9379d474f135c5d6bbe82fd3391e7e4d8241f1b9
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5f747185dd696f6d70cc4c514f54eaddef5bfa7a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31119717"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49864435"
 ---
 # <a name="idebugproperty3setvalueasstringwitherror"></a>IDebugProperty3::SetValueAsStringWithError
-設定這個屬性的值並傳回錯誤訊息，如有必要。  
+設定這個屬性的值，並傳回錯誤訊息，如有必要。  
   
 ## <a name="syntax"></a>語法  
   
@@ -53,19 +53,19 @@ int SetValueAsStringWithError(
  [in]所設定的值的基數。  
   
  `dwTimeout`  
- [in]值設定為等候的時間長度 (`INFINITE`表示永遠等待)。  
+ [in]要設定之值的等待時間長度 (`INFINITE`表示永遠等待)。  
   
  `errorString`  
- [out]如果設定的值時發生錯誤，這會保留失敗的原因。  
+ [out]如果設定值時發生錯誤，這會保留失敗的原因。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
   
 ## <a name="remarks"></a>備註  
- 傳入的值可能是要評估的運算式。  
+ 傳入的值可以是要評估的運算式。  
   
 ## <a name="example"></a>範例  
- 下列範例示範如何實作這個方法來**CProperty**公開物件[IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)介面。  
+ 下列範例示範如何實作這個方法，如**CProperty**公開 （expose） 的物件[IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)介面。  
   
 ```cpp  
 HRESULT CProperty::SetValueAsStringWithError(   

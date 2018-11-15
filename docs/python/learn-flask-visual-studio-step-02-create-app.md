@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 61a7b36892e5cec36a4641c154227df8621c6602
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 92b34ed0abbef18473ab9ccf6b85c236111822f9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43776151"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812617"
 ---
 # <a name="step-2-create-a-flask-app-with-views-and-page-templates"></a>步驟 2：使用檢視與頁面範本來建立 Flask 應用程式
 
@@ -36,7 +36,7 @@ ms.locfileid: "43776151"
 
 1. 在您的專案資料夾中，建立一個名為 `HelloFlask` 的應用程式資料夾 (在 [方案總管] 中的專案上按一下滑鼠右鍵，然後選取 [新增] > [新增資料夾])。
 
-1. 在 *HelloFlask* 資料夾中，使用下列會建立 `Flask` 執行個體並載入應用程式檢視 (在下一個步驟中建立) 的內容來建立名為 *\_\_init\_\_.py* 的檔案：
+2. 在 *HelloFlask* 資料夾中，使用下列會建立 `Flask` 執行個體並載入應用程式檢視 (在下一個步驟中建立) 的內容來建立名為 *\_\_init\_\_.py* 的檔案：
 
     ```python
     from flask import Flask
@@ -45,7 +45,7 @@ ms.locfileid: "43776151"
     import HelloFlask.views
     ```
 
-1. 在 *HelloFlask* 資料夾中，使用下列內容來建立名為 *views.py* 的檔案。 名稱 *views.py* 很重要，因為您已在 *\_\_init\_\_.py* 內使用 `import HelloFlask.views` ；如果名稱不相符，在執行階段將會顯示錯誤。
+3. 在 *HelloFlask* 資料夾中，使用下列內容來建立名為 *views.py* 的檔案。 名稱 *views.py* 很重要，因為您已在 *\_\_init\_\_.py* 內使用 `import HelloFlask.views` ；如果名稱不相符，在執行階段將會顯示錯誤。
 
     ```python
     from flask import Flask
@@ -59,9 +59,9 @@ ms.locfileid: "43776151"
 
     除了將函式重新命名並路由傳送至 `home` 之外，此程式碼還包含來自 *app.py* 的頁面轉譯程式碼，並且會匯入 *\_\_init\_\_.py* 中所宣告的 `app` 物件。
 
-1. 在 *HelloFlask* 中建立名為 *templates* 的子資料夾，此子資料夾目前會維持空白。
+4. 在 *HelloFlask* 中建立名為 *templates* 的子資料夾，此子資料夾目前會維持空白。
 
-1. 在專案的根資料夾中，將 *app.py* 重新命名為 *runserver.py*，並讓內容符合下列程式碼：
+5. 在專案的根資料夾中，將 *app.py* 重新命名為 *runserver.py*，並讓內容符合下列程式碼：
 
     ```python
     import os
@@ -77,17 +77,17 @@ ms.locfileid: "43776151"
 
         app.run(HOST, PORT)
     ```
-1. 您的專案結構應該看起來如下圖：
+6. 您的專案結構應該看起來如下圖：
 
     ![重構程式碼後的專案結構](media/flask/step02-project-structure.png)
 
-1. 選取 [偵錯] > [開始偵錯] (**F5**)，或使用工具列上的 [網頁伺服器] 按鈕 (您看到的瀏覽器可能會有所不同)，以啟動應用程式並開啟瀏覽器。 同時嘗試 / 和 /home URL 路由。
+7. 選取 [偵錯] > [開始偵錯] (**F5**)，或使用工具列上的 [網頁伺服器] 按鈕 (您看到的瀏覽器可能會有所不同)，以啟動應用程式並開啟瀏覽器。 同時嘗試 / 和 /home URL 路由。
 
-1. 您也可以在程式碼的各個不同部分設定中斷點，然後重新啟動應用程式以依照該啟動順序。 比方說，在 *runserver.py* 和 *HelloFlask\__init__.py* 的前幾行上設定中斷點，以及在 *views.py* 的 `return "Hello Flask!"` 行上設定中斷點。 接著，重新啟動應用程式 ([偵錯] > [重新啟動]、**Ctrl**+**F5** 或以下所示的工具列按鈕)，然後逐步執行 (**F10**) 程式碼，或使用 **F5** 從每個中斷點執行。
+8. 您也可以在程式碼的各個不同部分設定中斷點，然後重新啟動應用程式以依照該啟動順序。 例如，在 *runserver.py* 和 *HelloFlask\_* init_*.py* 的前幾行上設定中斷點，並在 *views.py* 的 `return "Hello Flask!"` 行上設定中斷點。 接著，重新啟動應用程式 ([偵錯] > [重新啟動]、**Ctrl**+**F5** 或以下所示的工具列按鈕)，然後逐步執行 (**F10**) 程式碼，或使用 **F5** 從每個中斷點執行。
 
     ![Visual Studio 中偵錯工具列上的重新啟動按鈕](media/debugging-restart-toolbar-button.png)
 
-1. 完成時，請停止應用程式。
+9. 完成時，請停止應用程式。
 
 ### <a name="commit-to-source-control"></a>認可至原始檔控制
 

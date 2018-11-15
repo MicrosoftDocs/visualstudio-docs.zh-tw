@@ -1,5 +1,5 @@
 ---
-title: Target 元素 (MSBuild) | Microsoft Docs
+title: Target 項目 (MSBuild) | Microsoft Docs
 ms.custom: ''
 ms.date: 03/13/2017
 ms.technology: msbuild
@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b1b886346a43e75d38a8ea8b6ed7a8b8d7391293
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 9085861418f11ed63f76a6493a6927c63530759b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39152457"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49918788"
 ---
 # <a name="target-element-msbuild"></a>Target 元素 (MSBuild)
 包含一組可循序執行的 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 工作。  
@@ -54,7 +54,7 @@ ms.locfileid: "39152457"
 ```  
 
 ## <a name="attributes-and-elements"></a>屬性和元素  
- 以下各節說明屬性、子元素和父元素。  
+ 下列章節說明屬性、子元素和父元素。  
 
 ### <a name="attributes"></a>屬性  
 
@@ -69,22 +69,22 @@ ms.locfileid: "39152457"
 |`BeforeTargets`|選擇性屬性。<br /><br /> 以分號分隔的目標名稱清單。  指定時，表示此目標應該在指定的一或多個目標之前執行。 這讓專案作者能夠擴充現有的目標組，而不需直接修改它們。 如需詳細資訊，請參閱[目標建置順序](../msbuild/target-build-order.md)。|  
 |`AfterTargets`|選擇性屬性。<br /><br /> 以分號分隔的目標名稱清單。 指定時，表示此目標應該在指定的一或多個目標之後執行。 這讓專案作者能夠擴充現有的目標組，而不需直接修改它們。 如需詳細資訊，請參閱[目標建置順序](../msbuild/target-build-order.md)。|  
 |`DependsOnTargets`|選擇性屬性。<br /><br /> 必須在此目標執行之前，或發生最上層相依性分析之前執行的目標。 若有多個目標，則會以分號分隔。|  
-|`Label`|選擇性屬性。<br /><br /> 用來識別或排序系統和使用者元素的識別項。|  
+|`Label`|選擇性屬性。<br /><br /> 用來識別或排序系統和使用者項目的識別項。|  
 
 ### <a name="child-elements"></a>子元素  
 
-|元素|描述|  
-|-------------|-----------------|  
-|[Task](../msbuild/task-element-msbuild.md)|建立並執行 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 工作的執行個體。 目標中可能有零或多個工作。|  
-|[PropertyGroup](../msbuild/propertygroup-element-msbuild.md)|包含一組使用者定義的 `Property` 元素。 從 .NET Framework 3.5 開始，`Target` 元素可以包含 `PropertyGroup` 元素。|  
-|[ItemGroup](../msbuild/itemgroup-element-msbuild.md)|包含一組使用者定義的 `Item` 元素。 從 .NET Framework 3.5 開始，`Target` 元素可以包含 `ItemGroup` 元素。 如需詳細資訊，請參閱[項目](../msbuild/msbuild-items.md)。|  
-|[OnError](../msbuild/onerror-element-msbuild.md)|如果 `ContinueOnError` 屬性是失敗工作的 ErrorAndStop (或 `false`)，則會導致執行一或多個目標。 目標中可能有零或多個 `OnError` 元素。 如果有 `OnError` 元素存在，則它們必須是 `Target` 元素中的最後一個元素。<br /><br /> 如需 `ContinueOnError` 屬性的相關資訊，請參閱 [Task 元素 (MSBuild)](../msbuild/task-element-msbuild.md)。|  
+| 元素 | 描述 |
+| - | - |
+| [Task](../msbuild/task-element-msbuild.md) | 建立並執行 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 工作的執行個體。 目標中可能有零或多個工作。 |
+| [PropertyGroup](../msbuild/propertygroup-element-msbuild.md) | 包含一組使用者定義的 `Property` 項目。 從 .NET Framework 3.5 開始，`Target` 項目可以包含 `PropertyGroup` 項目。 |
+| [ItemGroup](../msbuild/itemgroup-element-msbuild.md) | 包含一組使用者定義的 `Item` 項目。 從 .NET Framework 3.5 開始，`Target` 項目可以包含 `ItemGroup` 項目。 如需詳細資訊，請參閱[項目](../msbuild/msbuild-items.md)。 |
+| [OnError](../msbuild/onerror-element-msbuild.md) | 如果 `ContinueOnError` 屬性是失敗工作的 ErrorAndStop (或 `false`)，則會導致執行一或多個目標。 目標中可能有零或多個 `OnError` 項目。 如果有 `OnError` 項目存在，則它們必須是 `Target` 項目中的最後一個項目。<br /><br /> 如需 `ContinueOnError` 屬性的相關資訊，請參閱 [Task 元素 (MSBuild)](../msbuild/task-element-msbuild.md)。 |
 
 ### <a name="parent-elements"></a>父元素  
 
-|元素|描述|  
-|-------------|-----------------|  
-|[專案](../msbuild/project-element-msbuild.md)|[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 專案檔案的必要根元素。|  
+| 元素 | 描述 |
+| - | - |
+| [專案](../msbuild/project-element-msbuild.md) | [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 專案檔案的必要根項目。 |
 
 ## <a name="remarks"></a>備註  
  在執行階段指定要執行的第一個目標。 目標可以相依於其他目標。 例如，適用於部署的目標相依於適用於編譯的目標。 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 引擎會依其在 `DependsOnTargets` 屬性中出現的順序，從左到右依序執行相依性。 如需詳細資訊，請參閱[目標](../msbuild/msbuild-targets.md)。  
@@ -95,14 +95,14 @@ ms.locfileid: "39152457"
 
  在 MSBuild 4 之前，`Target` 會傳回 `Outputs` 屬性中所指定的任何項目。  若要這樣做，MSBuild 必須記錄這些項目，以防組建中後續的工作需要用到它們。 由於沒有任何方法可指出哪些目標具有呼叫端所要求的輸出，因此，MSBuild 會在所有叫用的 `Target` 上累積來自所有 `Outputs` 的所有項目。 這會導致含有大量輸出項目的組建問題範圍擴大。  
 
- 如果使用者在專案中的任何 `Target` 元素上指定 `Returns`，則只有具 `Returns` 屬性的 `Target` 會記錄那些項目。  
+ 如果使用者在專案中的任何 `Target` 項目上指定 `Returns`，則只有具 `Returns` 屬性的 `Target` 會記錄這些項目。  
 
  `Target` 可能同時包含 `Outputs` 屬性和 `Returns` 屬性。  `Outputs` 會與 `Inputs` 搭配使用，以判斷目標是否為最新狀態。 如果有 `Returns`，即會覆寫 `Outputs` 的值，來判斷要將哪些項目傳回給呼叫端。  如果 `Returns` 不存在，則會將 `Outputs` 開放給呼叫端使用，但稍早所述的案例除外。  
 
  在 MSBuild 4 之前，任何時候，只要 `Target` 在其 `Outputs` 中包含多個對相同項目的參考，就會記錄這些重複項目。 若含有大量輸出和許多專案相依性的組建數量非常多，這會造成大量記憶體的浪費，因為重複項目不具任何用途。 將 `KeepDuplicateOutputs` 屬性設為 `true` 時，就會記錄這些重複項目。  
 
 ## <a name="example"></a>範例  
- 下列程式碼範例示範執行 `Csc` 工作的 `Target` 元素。  
+ 下列程式碼範例示範執行 `Csc` 工作的 `Target` 項目。  
 
 ```xml  
 <Target Name="Compile" DependsOnTargets="Resources" Returns="$(TargetPath)">  

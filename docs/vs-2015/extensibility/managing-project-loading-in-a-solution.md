@@ -15,12 +15,12 @@ ms.assetid: 097c89d0-f76a-4aaf-ada9-9a778bd179a0
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 465adc1c7804582767415c3e9e5311c2379c7b8b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9f7df8c667753c13a5b69935a31755a72d232a96
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49281381"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49914251"
 ---
 # <a name="managing-project-loading-in-a-solution"></a>管理方案中的專案載入
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -100,23 +100,23 @@ pSLMgrSupport.SetProjectLoadPriority(guidProjectID, (uint)_VSProjectLoadPriority
 ## <a name="detecting-and-managing-solution-and-project-loading"></a>偵測及管理方案和專案載入  
  若要偵測的專案和方案載入狀態，請呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.GetProperty%2A>具有下列值：  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID4>:`var`會傳回`true`方案和其所有的專案已載入，否則如果`false`。  
+- <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID4>:`var`會傳回`true`方案和其所有的專案已載入，否則如果`false`。  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID4>:`var`會傳回`true`如果批次的專案目前正在載入在背景中，否則`false`。  
+- <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID4>:`var`會傳回`true`如果批次的專案目前正在載入在背景中，否則`false`。  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID4>:`var`會傳回`true`如果批次的專案目前正在載入以同步方式導因使用者命令或其他明確的負載，否則`false`。  
+- <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID4>:`var`會傳回`true`如果批次的專案目前正在載入以同步方式導因使用者命令或其他明確的負載，否則`false`。  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID2>:`var`會傳回`true`解決方案目前正在關閉，否則如果`false`。  
+- <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID2>:`var`會傳回`true`解決方案目前正在關閉，否則如果`false`。  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID>:`var`會傳回`true`解決方案目前正在開啟，否則如果`false`。  
+- <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID>:`var`會傳回`true`解決方案目前正在開啟，否則如果`false`。  
   
- 您也可以確保專案和方案載入 （不論專案載入優先順序為何），藉由呼叫下列方法之一：  
+  您也可以確保專案和方案載入 （不論專案載入優先順序為何），藉由呼叫下列方法之一：  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution4.EnsureSolutionIsLoaded%2A>： 呼叫這個方法會強制在方法傳回之前載入的方案中的專案。  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution4.EnsureSolutionIsLoaded%2A>： 呼叫這個方法會強制在方法傳回之前載入的方案中的專案。  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution4.EnsureProjectIsLoaded%2A>： 呼叫這個方法會強制在專案`guidProject`載入方法傳回之前。  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution4.EnsureProjectIsLoaded%2A>： 呼叫這個方法會強制在專案`guidProject`載入方法傳回之前。  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution4.EnsureProjectsAreLoaded%2A>： 呼叫這個方法會強制在專案`guidProjectID`載入方法傳回之前。  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution4.EnsureProjectsAreLoaded%2A>： 呼叫這個方法會強制在專案`guidProjectID`載入方法傳回之前。  
   
 > [!NOTE]
 >  。 根據預設只需要在專案載入，並會載入背景負載優先順序，但如果<xref:Microsoft.VisualStudio.Shell.Interop.__VSBSLFLAGS>旗標會傳遞至方法中，將會載入所有專案，但標示要明確載入的項目除外。

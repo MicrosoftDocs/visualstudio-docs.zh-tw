@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3933400c1cf8ecd27c1c2f1a9bb0328dfa80d1e4
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 25a306300b1f5bf477a5435be58aca71ba5d70de
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35671147"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50671283"
 ---
 # <a name="security-and-deployment-walkthroughs"></a>安全性和部署的逐步解說
   下列主題示範如何設定安全性原則，讓您的解決方案，若要執行，以及如何部署 Office 方案。  
@@ -36,25 +36,25 @@ ms.locfileid: "35671147"
  說明如何設定[!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]信任提示來控制使用者是否可以安裝 Office 方案的選項。  
   
 ## <a name="deployment-topics"></a>部署主題  
- [如何： 使用 ClickOnce 發行 Office 方案](http://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)  
+ [如何： 使用 ClickOnce 發行 Office 方案](https://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)  
  提供有關如何使用資訊**發行精靈**或**發行**發行 Office 方案的 專案設計工具頁面。  
   
- [如何： 使用 ClickOnce 將文件層級 Office 方案發行到 SharePoint 伺服器](http://msdn.microsoft.com/2408e809-fb78-42a1-9152-00afa1522e58)  
+ [如何： 使用 ClickOnce 將文件層級 Office 方案發行到 SharePoint 伺服器](https://msdn.microsoft.com/2408e809-fb78-42a1-9152-00afa1522e58)  
  描述部署到 SharePoint 伺服器的步驟。  
   
- [如何： 安裝 ClickOnce Office 方案](http://msdn.microsoft.com/14702f48-9161-4190-994c-78211fe18065)  
+ [如何： 安裝 ClickOnce Office 方案](https://msdn.microsoft.com/14702f48-9161-4190-994c-78211fe18065)  
  提供的步驟來執行安裝程式產生在發佈過程中，安裝 Office 方案開啟部署資訊清單檔中;或開啟的自訂文件或活頁簿。  
   
- [如何： 在執行 Office 方案的終端使用者電腦上安裝必要條件](http://msdn.microsoft.com/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98)  
+ [如何： 在執行 Office 方案的終端使用者電腦上安裝必要條件](https://msdn.microsoft.com/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98)  
  描述如何建立會在安裝解決方案元件之前先檢查必要條件的安裝程式。  
   
- [如何： 準備 IIS 來部署 Office 方案](http://msdn.microsoft.com/f62bce70-81d4-4f8b-86e6-2f2afec5d9b4)  
+ [如何： 準備 IIS 來部署 Office 方案](https://msdn.microsoft.com/f62bce70-81d4-4f8b-86e6-2f2afec5d9b4)  
  描述如何設定 MIME 類型上 Microsoft Internet Information Services (IIS) 的部署資訊清單。  
   
- [如何： 更新部署 Office 方案](http://msdn.microsoft.com/be96db53-b6ea-46ab-b8d9-b76b098b3b13)  
+ [如何： 更新部署 Office 方案](https://msdn.microsoft.com/be96db53-b6ea-46ab-b8d9-b76b098b3b13)  
  提供如何使用更新 Office 方案的相關資訊**發行精靈**。  
   
- [如何： 變更 Office 方案的安裝路徑](http://msdn.microsoft.com/d0eaa07b-2d72-4902-899f-2f9fb165b8fd)  
+ [如何： 變更 Office 方案的安裝路徑](https://msdn.microsoft.com/d0eaa07b-2d72-4902-899f-2f9fb165b8fd)  
  提供有關如何變更 Office 方案的安裝路徑的資訊。  
   
 ## <a name="related-sections"></a>相關章節  

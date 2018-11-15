@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d1540e66893aeb99c4932c4667fa384b837e15a7
-ms.sourcegitcommit: 80f9daba96ff76ad7e228eb8716df3abfd115bc3
+ms.openlocfilehash: cb5e20697e5dc5364fbcbac7a1d3052790a123a2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37433311"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872651"
 ---
 # <a name="0x2x4x-msaa-variants"></a>0x/2x/4x MSAA 變異
 覆寫所有呈現目標和交換鏈結上的多重取樣消除鋸齒 (MSAA) 設定。  
@@ -33,23 +33,23 @@ ms.locfileid: "37433311"
 ## <a name="remarks"></a>備註  
  這些變異會覆寫建立呈現目標的 `ID3DDevice::CreateTexture2D` 呼叫上的樣本計數和樣本品質引數。 特別是在下列情況下，會覆寫這些參數：  
   
--   `D3D11_TEXTURE2D_DESC` 中所傳遞的 `pDesc` 物件描述呈現目標；亦即：  
+- `D3D11_TEXTURE2D_DESC` 中所傳遞的 `pDesc` 物件描述呈現目標；亦即：  
   
-    -   BindFlags 成員已設定 D3D11_BIND_TARGET 旗標或 D3D11_BIND_DEPTH_STENCIL 旗標。  
+  -   BindFlags 成員已設定 D3D11_BIND_TARGET 旗標或 D3D11_BIND_DEPTH_STENCIL 旗標。  
   
-    -   Usage 成員設定為 D3D11_USAGE_DEFAULT。  
+  -   Usage 成員設定為 D3D11_USAGE_DEFAULT。  
   
-    -   CPUAccessFlags 成員設定為 0。  
+  -   CPUAccessFlags 成員設定為 0。  
   
-    -   MipLevels 成員設定為 1。  
+  -   MipLevels 成員設定為 1。  
   
--   裝置針對要求的呈現目標格式 (D3D11_TEXTURE2D_DESC::Format 成員)，支援要求的樣本計數 (0、2 或 4) 和樣本品質 (0) (由 `ID3D11Device::CheckMultisampleQualityLevels` 決定)。  
+- 裝置針對要求的呈現目標格式 (D3D11_TEXTURE2D_DESC::Format 成員)，支援要求的樣本計數 (0、2 或 4) 和樣本品質 (0) (由 `ID3D11Device::CheckMultisampleQualityLevels` 決定)。  
   
- 如果 D3D11_TEXTURE2D_DESC::BindFlags 成員已設定 D3D_BIND_SHADER_RESOUCE 或 D3D11_BIND_UNORDERED_ACCESS 旗標，則會建立兩個版本的紋理；第一個版本已清除這些用做呈現目標的旗標，而另一個版本是非 MSAA 紋理，其完整保留這些旗標做為第一個版本的解析緩衝區。 這是必要的，因為使用 MSAA 紋理做為著色器資源，或進行未排序存取都不可能會有效；例如，處理它的著色器會產生不正確的結果，原因是它需要非 MSAA 紋理。 如果變數已建立次要非 MSAA 紋理，則只要從裝置內容取消設定 MSAA 呈現目標，就會將其內容解析為非 MSAA 紋理。 同樣地，只要 MSAA 呈現目標應該繫結為著色器資源，或用於未排序存取檢視時，就會改為繫結解析的非 MSAA 紋理。  
+  如果 D3D11_TEXTURE2D_DESC::BindFlags 成員已設定 D3D_BIND_SHADER_RESOUCE 或 D3D11_BIND_UNORDERED_ACCESS 旗標，則會建立兩個版本的紋理；第一個版本已清除這些用做呈現目標的旗標，而另一個版本是非 MSAA 紋理，其完整保留這些旗標做為第一個版本的解析緩衝區。 這是必要的，因為使用 MSAA 紋理做為著色器資源，或進行未排序存取都不可能會有效；例如，處理它的著色器會產生不正確的結果，原因是它需要非 MSAA 紋理。 如果變數已建立次要非 MSAA 紋理，則只要從裝置內容取消設定 MSAA 呈現目標，就會將其內容解析為非 MSAA 紋理。 同樣地，只要 MSAA 呈現目標應該繫結為著色器資源，或用於未排序存取檢視時，就會改為繫結解析的非 MSAA 紋理。  
   
- 這些變異也會覆寫使用 `IDXGIFactory::CreateSwapChain`、`IDXGIFactory2::CreateSwapChainForHwnd`、`IDXGIFactory2::CreateSwapChainForCoreWindow`、`IDXGIFactory2::CreateSwapChainForComposition` 和 `ID3D11CreateDeviceAndSwapChain` 所建立的所有交換鏈結上的 MSAA 設定。  
+  這些變異也會覆寫使用 `IDXGIFactory::CreateSwapChain`、`IDXGIFactory2::CreateSwapChainForHwnd`、`IDXGIFactory2::CreateSwapChainForCoreWindow`、`IDXGIFactory2::CreateSwapChainForComposition` 和 `ID3D11CreateDeviceAndSwapChain` 所建立的所有交換鏈結上的 MSAA 設定。  
   
- 這些變更的實際影響在於，會完成對 MSAA 呈現目標的所有呈現，但是，如果應用程式使用其中一個呈現目標，或交換鏈結緩衝區做為著色器資源檢視，或未排序存取檢視，則會從呈現目標的已解析非 MSAA 複本中取樣資料。  
+  這些變更的實際影響在於，會完成對 MSAA 呈現目標的所有呈現，但是，如果應用程式使用其中一個呈現目標，或交換鏈結緩衝區做為著色器資源檢視，或未排序存取檢視，則會從呈現目標的已解析非 MSAA 複本中取樣資料。  
   
 ## <a name="restrictions-and-limitations"></a>限制  
  在 Direct3D11 中，MSAA 紋理的限制多於非 MSAA 紋理。 例如，您不可以在 MSAA 紋理上呼叫 `ID3D11DeviceContext::UpdateSubresource`，而且在下列情況呼叫 `ID3D11DeviceContext::CopySubresourceRegion` 會失敗：來源資源與目的地資源的樣本計數和樣本品質不符時；這種情況可能發生在此變異覆寫某個資源的 MSAA 設定，但未覆寫另一個資源的 MSAA 設定。  

@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: dc824c11bca3202ecce915144909b527a2f6946a
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 2ead4834f1d29baff099eedbf464c1ba6344ca6c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39639549"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49950195"
 ---
 # <a name="manage-project-loading-in-a-solution"></a>管理方案中的專案載入
 Visual Studio 方案可以包含大量的專案。 Visual Studio 預設會在開啟解決方案時，階段中載入方案中的所有專案，而且不允許使用者存取的任何專案，直到它們全部完成載入。 當專案載入的程序會持續超過兩分鐘時，會顯示進度列，顯示載入的專案數目及專案的總數。 使用者可以同時使用多個專案的方案中工作卸載的專案，但此程序有一些缺點： 已卸載的專案並不是建置為重建方案 命令的一部分，並關閉 IntelliSense 描述的型別和成員專案不會顯示。  
@@ -77,20 +77,20 @@ pSolution.SetProperty((int)__VSPROPID4.VSPROPID_ActiveSolutionLoadManager, objLo
 ## <a name="detect-and-manage-solution-and-project-loading"></a>偵測及管理方案和專案載入  
  若要偵測的專案和方案載入狀態，請呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.GetProperty%2A>具有下列值：  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID4>:`var`會傳回`true`方案和其所有的專案已載入，否則如果`false`。  
+- <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID4>:`var`會傳回`true`方案和其所有的專案已載入，否則如果`false`。  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID4>:`var`會傳回`true`如果批次的專案目前正在載入在背景中，否則`false`。  
+- <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID4>:`var`會傳回`true`如果批次的專案目前正在載入在背景中，否則`false`。  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID4>:`var`會傳回`true`如果批次的專案目前正在載入以同步方式導因使用者命令或其他明確的負載，否則`false`。  
+- <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID4>:`var`會傳回`true`如果批次的專案目前正在載入以同步方式導因使用者命令或其他明確的負載，否則`false`。  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID2>:`var`會傳回`true`解決方案目前正在關閉，否則如果`false`。  
+- <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID2>:`var`會傳回`true`解決方案目前正在關閉，否則如果`false`。  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID>:`var`會傳回`true`解決方案目前正在開啟，否則如果`false`。  
+- <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID>:`var`會傳回`true`解決方案目前正在開啟，否則如果`false`。  
   
- 您也可以確保載入專案和方案，藉由呼叫下列方法之一：  
+  您也可以確保載入專案和方案，藉由呼叫下列方法之一：  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution4.EnsureSolutionIsLoaded%2A>： 呼叫這個方法會強制在方法傳回之前載入的方案中的專案。  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution4.EnsureSolutionIsLoaded%2A>： 呼叫這個方法會強制在方法傳回之前載入的方案中的專案。  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution4.EnsureProjectIsLoaded%2A>： 呼叫這個方法會強制在專案`guidProject`載入方法傳回之前。  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution4.EnsureProjectIsLoaded%2A>： 呼叫這個方法會強制在專案`guidProject`載入方法傳回之前。  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution4.EnsureProjectsAreLoaded%2A>： 呼叫這個方法會強制在專案`guidProjectID`載入方法傳回之前。  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution4.EnsureProjectsAreLoaded%2A>： 呼叫這個方法會強制在專案`guidProjectID`載入方法傳回之前。  

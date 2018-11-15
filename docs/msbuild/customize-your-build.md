@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bd397420652d5d70429daa7ecea35210194dd37a
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 31856366712da0a2287f73906c6e3a5f81f63a00
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39175952"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49857584"
 ---
 # <a name="customize-your-build"></a>自訂組建
 
@@ -34,6 +34,11 @@ ms.locfileid: "39175952"
 
 不過，您現在可以使用一個步驟將新的屬性新增至每個專案，方法是將它定義在包含原始檔的根資料夾內稱為 *Directory.Build.props* 的單一檔案中。 執行 MSBuild 時，*Microsoft.Common.props* 會搜尋您的目錄結構中是否有 *Directory.Build.props* 檔案 (而且 *Microsoft.Common.targets* 會尋找 *Directory.Build.targets*)。 如果找到，則會匯入屬性。 *Directory.Build.props* 是使用者定義的檔案，可讓您自訂目錄下的專案。
 
+> [!NOTE]
+> 以 Linux 為基礎的檔案系統會區分大小寫。 請確定 Directory.Build.props 檔案名稱的大小寫完全相符，否則在建置過程中將不會偵測到。
+>
+> 如需詳細資訊，請參閱[此 GitHub 問題](https://github.com/dotnet/core/issues/1991#issue-368441031)。
+
 ### <a name="directorybuildprops-example"></a>Directory.Build.props 範例
 
 例如，如果您想要讓所有專案存取新的 Roslyn **/deterministic** 功能 (透過 `$(Deterministic)` 屬性公開於 Roslyn `CoreCompile` 目標中)，則可以執行下列動作。
@@ -41,13 +46,13 @@ ms.locfileid: "39175952"
 1. 在存放庫根目錄中建立稱為 *Directory.Build.props* 的新檔案。
 2. 將下列 XML 新增至檔案。
 
-  ```xml
-  <Project>
+   ```xml
+   <Project>
     <PropertyGroup>
       <Deterministic>true</Deterministic>
     </PropertyGroup>
-  </Project>
-  ```
+   </Project>
+   ```
 3. 執行 MSBuild。 您專案之 *Microsoft.Common.props* 和 *Microsoft.Common.targets* 的現有匯入會找到檔案，並將它匯入。
 
 ### <a name="search-scope"></a>搜尋範圍

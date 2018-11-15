@@ -22,12 +22,12 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 1807efdefd387c4e4fa01c2acec0f7b32bbce6f8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 733eb98544d48716ec073605d68628ddeab7b794
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49215913"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49827580"
 ---
 # <a name="trusted-application-deployment-overview"></a>受信任的應用程式部署概觀
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,11 +57,11 @@ ms.locfileid: "49215913"
   
  在大型組織中，發行者和部署者通常是兩個不同的實體：  
   
--   發行者是建立 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 應用程式的群組。  
+- 發行者是建立 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 應用程式的群組。  
   
--   部署者是散發 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 應用程式到公司企業桌上型電腦的群組，通常是資訊技術 (IT) 部門。  
+- 部署者是散發 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 應用程式到公司企業桌上型電腦的群組，通常是資訊技術 (IT) 部門。  
   
- 您必須遵循下列步驟來利用信任的應用程式部署：  
+  您必須遵循下列步驟來利用信任的應用程式部署：  
   
 1.  取得發行者的憑證。  
   

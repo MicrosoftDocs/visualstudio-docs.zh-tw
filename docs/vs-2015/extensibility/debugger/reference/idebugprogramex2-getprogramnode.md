@@ -17,12 +17,12 @@ ms.assetid: 1545ffbf-1422-4b5d-9bb9-314ba8665041
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b3b69d881521ae4fcc24e2185c21fb2fa1a461f2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0f1c5e2d97df19af0c5b3c631e1b81eefcc6bfad
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49198701"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49851695"
 ---
 # <a name="idebugprogramex2getprogramnode"></a>IDebugProgramEx2::GetProgramNode
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

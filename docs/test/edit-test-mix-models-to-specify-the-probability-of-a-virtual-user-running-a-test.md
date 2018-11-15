@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 32fc3ef0684c89c422fac76550ba1fa123eb2f6b
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: ee123e474ad4b52b3debe6ad65bf6424388fe191
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39180437"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49816011"
 ---
 # <a name="edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test"></a>編輯測試混合模型以指定虛擬使用者執行測試的可能性
 
@@ -37,7 +37,7 @@ ms.locfileid: "39180437"
 ## <a name="tasks"></a>工作
 
 |工作|相關主題|
-|-----------|-----------------------|
+|-|-----------------------|
 |**指定負載測試的測試混合：** 建立負載測試時，您可以在 [新增負載測試精靈] 中指定負載測試的設定。 在 [新增負載測試精靈] 中，您可以選擇要加入至初始情節的現有 Web 和單元測試。 當您將測試加入至情節之後，就可以指定情節的測試混合。<br /><br /> 使用負載模型選項，可以讓您對進行負載測試中的網站或應用程式，更為準確地預測其預期真實使用情況。 這是相當重要的，因為不是奠基於準確負載模型的負載測試，可能會產生誤導的結果。|-   [模擬網站或應用程式的預期實際使用情況](../test/emulate-real-world-usage-of-a-web-site-in-a-load-test-using-test-mix-models.md)|
 |**編輯測試混合模型：** 您可以使用 [負載測試編輯器]，將負載測試情節變更為使用其中一種測試混合模型。||
 |**為按使用者步調的測試混合模型設定步調延遲：** 如果您的負載測試情節已設定為使用 [按使用者步調的測試混合模型]，您可以指定設定分佈步調延遲的方式。|-   [如何：在使用使用者步調測試混合模型時，將分佈套用到步調延遲](../test/how-to-apply-distribution-to-pacing-delay-when-using-a-user-pace-test-mix-model.md)|
@@ -51,7 +51,7 @@ ms.locfileid: "39180437"
 
 使用 [負載測試編輯器]，您可以在 [屬性] 視窗中編輯 [測試混合類型] 屬性，藉此在負載測試情節中變更測試混合模型。
 
-### <a name="to-change-the-test-mix-model"></a>變更測試混合模型
+### <a name="to-change-the-test-mix-model"></a>若要變更測試混合模型
 
 1.  開啟負載測試。
 

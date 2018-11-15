@@ -28,12 +28,12 @@ caps.latest.revision: 50
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 69027b99d1c7db25f1d01e91d8e6d5c05141a2d3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c5b7f053a2a63830e80247eeeeadcf34e2a6a351
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49250480"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926094"
 ---
 # <a name="create-uml-modeling-projects-and-diagrams"></a>建立 UML 模型專案和圖表
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,29 +50,29 @@ UML 模型可協助您了解、討論及設計軟體系統。 Visual Studio 提�
   
 #### <a name="to-create-a-diagram-and-add-it-to-a-project"></a>若要建立圖表，請將它加入至專案  
   
-1.  在 **架構**功能表上，選擇**新增 UML 或分層圖**。  
+1. 在 **架構**功能表上，選擇**新增 UML 或分層圖**。  
   
-2.  在 **加入新的圖表**對話方塊方塊中，按一下您想要的模型圖表類型。  
+2. 在 **加入新的圖表**對話方塊方塊中，按一下您想要的模型圖表類型。  
   
-     ![加入新的圖表對話方塊](../modeling/media/uml-adddiagram.png "UML_AddDiagram")  
+    ![加入新的圖表對話方塊](../modeling/media/uml-adddiagram.png "UML_AddDiagram")  
   
-3.  輸入新圖表的名稱。  
+3. 輸入新圖表的名稱。  
   
-4.  在 **加入至模型專案**方塊：  
+4. 在 **加入至模型專案**方塊：  
   
-    -   在您方案中，選取已經存在的模型專案，然後按一下**確定**。  
+   - 在您方案中，選取已經存在的模型專案，然後按一下**確定**。  
   
      \-或-  
   
-    1.  選取 **建立新的模型專案**，然後按一下**確定**。  
+   1.  選取 **建立新的模型專案**，然後按一下**確定**。  
   
-    2.  在 [**建立新模型專案**] 對話方塊中，輸入名稱和新的專案中，位置，然後按一下**確定**。  
+   2.  在 [**建立新模型專案**] 對話方塊中，輸入名稱和新的專案中，位置，然後按一下**確定**。  
   
-         ![建立新的模型專案 對話方塊](../modeling/media/uml-createmodel.png "UML_CreateModel")  
+        ![建立新的模型專案 對話方塊](../modeling/media/uml-createmodel.png "UML_CreateModel")  
   
-         如果您的方案已經開啟，新的專案便會加入至方案中。 如果您沒有任何開啟的方案，則可以輸入新方案的名稱。  
+        如果您的方案已經開啟，新的專案便會加入至方案中。 如果您沒有任何開啟的方案，則可以輸入新方案的名稱。  
   
- 如果您已經有模型專案時，也可以使用下列程序。  
+   如果您已經有模型專案時，也可以使用下列程序。  
   
 #### <a name="to-add-a-diagram-to-an-existing-modeling-project"></a>將圖表加入至現有的模型專案  
   

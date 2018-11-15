@@ -18,12 +18,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8ea54b743853bba445618ad3b6e08fd9a9a54027
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 86c766f776195da17a33b9d52570a2867f700c9b
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49271046"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219987"
 ---
 # <a name="options-text-editor-javascript-formatting"></a>格式、JavaScript、文字編輯器、選項
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -56,7 +56,7 @@ ms.locfileid: "49271046"
 |**將控制區塊的左大括弧置於新行**|選取這個選項時，程式碼編輯器會將與控制區塊 (例如，`if` 和 `while` 控制區塊) 相關聯的左大括弧移至新行。|  
   
 ## <a name="spacing"></a>間距  
- 這些選項會決定在 [來源] 檢視中插入空格的方式。  
+ 這些選項會決定如何中插入空格**來源**檢視。  
   
 ## <a name="uielement-list"></a>UIElement 清單  
   

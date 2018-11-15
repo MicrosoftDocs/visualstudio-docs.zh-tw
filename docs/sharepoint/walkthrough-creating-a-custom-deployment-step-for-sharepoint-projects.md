@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1e5c5856217951d15042f07edb97a918e09ba777
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c74feaed6c108f9dcfb5f2b374a72c34526134b0
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42635022"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51296147"
 ---
 # <a name="walkthrough-create-a-custom-deployment-step-for-sharepoint-projects"></a>逐步解說： 建立 SharePoint 專案的自訂部署步驟
   當您部署 SharePoint 專案時，Visual Studio 會以特定順序執行一系列的部署步驟。 Visual Studio 包含許多的內建的部署步驟，但您也可以建立您自己。  
@@ -45,28 +45,28 @@ ms.locfileid: "42635022"
 ## <a name="prerequisites"></a>必要條件  
  您需要完成這個逐步解說在開發電腦上的下列元件：  
   
--   支援的 Windows、 SharePoint 和 Visual Studio 版本。
+- 支援的 Windows、 SharePoint 和 Visual Studio 版本。
   
--   Visual Studio SDK 中。 本逐步解說會使用**VSIX 專案**建立 VSIX 封裝，來部署擴充功能 SDK 中的範本。 如需詳細資訊，請參閱 <<c0> [ 擴充 Visual Studio 中的 SharePoint 工具](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)。  
+- Visual Studio SDK 中。 本逐步解說會使用**VSIX 專案**建立 VSIX 封裝，來部署擴充功能 SDK 中的範本。 如需詳細資訊，請參閱 <<c0> [ 擴充 Visual Studio 中的 SharePoint 工具](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)。  
   
- 下列概念的知識會很有幫助，但並非必要，若要完成本逐步解說：  
+  下列概念的知識會很有幫助，但並非必要，若要完成本逐步解說：  
   
--   使用適用於 SharePoint 的伺服器物件模型。 如需詳細資訊，請參閱 <<c0> [ 使用 SharePoint Foundation 伺服器端物件模型](http://go.microsoft.com/fwlink/?LinkId=177796)。  
+- 使用適用於 SharePoint 的伺服器物件模型。 如需詳細資訊，請參閱 <<c0> [ 使用 SharePoint Foundation 伺服器端物件模型](http://go.microsoft.com/fwlink/?LinkId=177796)。  
   
--   SharePoint 方案。 如需詳細資訊，請參閱 <<c0> [ 解決方案概觀](http://go.microsoft.com/fwlink/?LinkId=169422)。  
+- SharePoint 方案。 如需詳細資訊，請參閱 <<c0> [ 解決方案概觀](http://go.microsoft.com/fwlink/?LinkId=169422)。  
   
--   升級 SharePoint 方案。 如需詳細資訊，請參閱 <<c0> [ 升級解決方案](http://go.microsoft.com/fwlink/?LinkId=177802)。  
+- 升級 SharePoint 方案。 如需詳細資訊，請參閱 <<c0> [ 升級解決方案](http://go.microsoft.com/fwlink/?LinkId=177802)。  
   
 ## <a name="create-the-projects"></a>建立專案
  若要完成此逐步解說中，您必須建立三個專案：  
   
--   若要建立 VSIX 封裝，來部署擴充功能的 VSIX 專案。  
+- 若要建立 VSIX 封裝，來部署擴充功能的 VSIX 專案。  
   
--   實作延伸的類別庫專案。 此專案必須以.NET Framework 4.5 為目標。  
+- 實作延伸的類別庫專案。 此專案必須以.NET Framework 4.5 為目標。  
   
--   定義自訂的 SharePoint 命令的類別庫專案。 此專案必須以.NET Framework 3.5 為目標。  
+- 定義自訂的 SharePoint 命令的類別庫專案。 此專案必須以.NET Framework 3.5 為目標。  
   
- 開始本逐步解說建立的專案。  
+  開始本逐步解說建立的專案。  
   
 #### <a name="to-create-the-vsix-project"></a>若要建立 VSIX 專案  
   
@@ -193,7 +193,7 @@ ms.locfileid: "42635022"
   
 1.  在 **方案總管 中**下方**UpgradeDeploymentStep**專案中，開啟捷徑功能表**source.extension.vsixmanifest**檔案，然後再選擇  **開啟**。  
   
-     Visual Studio 會在資訊清單編輯器中開啟檔案。 Source.extension.vsixmanifest 檔案中會是所有的 VSIX 套件需要 extension.vsixmanifest 檔案的基礎。 如需有關這個檔案的詳細資訊，請參閱 < [VSIX 延伸結構描述 1.0 參考](http://msdn.microsoft.com/en-us/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)。  
+     Visual Studio 會在資訊清單編輯器中開啟檔案。 Source.extension.vsixmanifest 檔案中會是所有的 VSIX 套件需要 extension.vsixmanifest 檔案的基礎。 如需有關這個檔案的詳細資訊，請參閱 < [VSIX 延伸結構描述 1.0 參考](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)。  
   
 2.  在  **Product Name**方塊中，輸入**升級 SharePoint 專案的部署步驟**。  
   
@@ -208,7 +208,7 @@ ms.locfileid: "42635022"
 6.  在 **型別**清單中，選擇**Microsoft.VisualStudio.MefComponent**。  
   
     > [!NOTE]  
-    >  這個值會對應到`MefComponent`extension.vsixmanifest 檔案中的項目。 這個元素會指定在 VSIX 封裝中的延伸模組組件名稱。 如需詳細資訊，請參閱 < [MEFComponent 項目 （VSX 結構描述）](http://msdn.microsoft.com/en-us/8a813141-8b73-44c9-b80b-ca85bbac9551)。  
+    >  這個值會對應到`MefComponent`extension.vsixmanifest 檔案中的項目。 這個元素會指定在 VSIX 封裝中的延伸模組組件名稱。 如需詳細資訊，請參閱 < [MEFComponent 項目 （VSX 結構描述）](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\))。  
   
 7.  在 **來源**清單中，選擇**目前方案中的專案**。  
   
@@ -221,7 +221,7 @@ ms.locfileid: "42635022"
 10. 在 **型別**清單中，輸入**SharePoint.Commands.v4**。  
   
     > [!NOTE]  
-    >  這個元素會指定您想要包含在 Visual Studio 擴充功能的自訂延伸模組。 如需詳細資訊，請參閱 <<c0> [ 資產項目 （VSX 結構描述）](http://msdn.microsoft.com/en-us/9fcfc098-edc7-484b-9d4c-acd17829d737)。  
+    >  這個元素會指定您想要包含在 Visual Studio 擴充功能的自訂延伸模組。 如需詳細資訊，請參閱 <<c0> [ 資產項目 （VSX 結構描述）](https://msdn.microsoft.com/9fcfc098-edc7-484b-9d4c-acd17829d737)。  
   
 11. 在 **來源**清單中，選擇**目前方案中的專案**。  
   
@@ -250,28 +250,28 @@ ms.locfileid: "42635022"
   
 #### <a name="to-create-a-sharepoint-project-with-a-list-definition-and-a-list-instance"></a>若要使用的清單定義和清單執行個體中建立 SharePoint 專案  
   
-1.  在實驗性 Visual Studio 執行個體，在功能表列上，選擇**檔案** > **新增** > **專案**。  
+1. 在實驗性 Visual Studio 執行個體，在功能表列上，選擇**檔案** > **新增** > **專案**。  
   
-2.  中**新的專案**對話方塊方塊中，展開**Visual C#** 節點或**Visual Basic**  節點，展開**SharePoint**  節點，然後選擇 **2010年**節點。  
+2. 中**新的專案**對話方塊方塊中，展開**Visual C#** 節點或**Visual Basic**  節點，展開**SharePoint**  節點，然後選擇 **2010年**節點。  
   
-3.  在對話方塊頂端，確定 **.NET Framework 3.5**會出現在.NET Framework 版本的清單。  
+3. 在對話方塊頂端，確定 **.NET Framework 3.5**會出現在.NET Framework 版本的清單。  
   
-     專案[!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)]和[!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)]需要這個版本的.NET Framework。  
+    專案[!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)]和[!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)]需要這個版本的.NET Framework。  
   
-4.  在專案範本清單中，選擇**SharePoint 2010 專案**，將專案命名**EmployeesListDefinition**，然後選擇**確定**  按鈕。  
+4. 在專案範本清單中，選擇**SharePoint 2010 專案**，將專案命名**EmployeesListDefinition**，然後選擇**確定**  按鈕。  
   
-5.  在  **SharePoint 自訂精靈**，輸入您想要用於偵錯的網站 URL。  
+5. 在  **SharePoint 自訂精靈**，輸入您想要用於偵錯的網站 URL。  
   
-6.  底下**此 SharePoint 方案的信任層級為何**，選擇**部署為伺服陣列方案**選項按鈕。  
+6. 底下**此 SharePoint 方案的信任層級為何**，選擇**部署為伺服陣列方案**選項按鈕。  
   
-    > [!NOTE]  
-    >  升級的部署步驟不支援沙箱化方案。  
+   > [!NOTE]  
+   >  升級的部署步驟不支援沙箱化方案。  
   
-7.  選擇**完成** 按鈕。  
+7. 選擇**完成** 按鈕。  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 建立 EmployeesListDefinition 專案。  
+    [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 建立 EmployeesListDefinition 專案。  
   
-8.  開啟 EmployeesListDefinition 專案的捷徑功能表，選擇 **新增**，然後選擇**新項目**。  
+8. 開啟 EmployeesListDefinition 專案的捷徑功能表，選擇 **新增**，然後選擇**新項目**。  
   
 9. 在**加入新項目-EmployeesListDefinition**對話方塊方塊中，展開**SharePoint**節點，然後選擇**2010年**節點。  
   
@@ -281,13 +281,13 @@ ms.locfileid: "42635022"
   
 11. 在 **選擇清單設定**頁面上，確認下列設定，然後選擇**完成**按鈕：  
   
-    1.  **員工清單**會出現在**您想要讓清單顯示什麼名稱？**  方塊中。  
+    1. **員工清單**會出現在**您想要讓清單顯示什麼名稱？**  方塊中。  
   
-    2.  **建立可自訂的清單為基礎：** 選擇選項按鈕。  
+    2. **建立可自訂的清單為基礎：** 選擇選項按鈕。  
   
-    3.  **預設值 （空白）** 中選擇**建立可自訂的清單為基礎：** 清單。  
+    3. **預設值 （空白）** 中選擇**建立可自訂的清單為基礎：** 清單。  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 建立員工清單項目具有標題資料行和單一的空執行個體，並開啟清單設計工具。  
+       [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 建立員工清單項目具有標題資料行和單一的空執行個體，並開啟清單設計工具。  
   
 12. 在清單設計工具中上,**資料行**索引標籤上，選擇**新的或現有的資料行名稱**資料列，，，然後加入下列中的資料行**資料行的顯示名稱**清單：  
   
@@ -419,29 +419,29 @@ ms.locfileid: "42635022"
   
 #### <a name="to-test-the-upgrade-deployment-step"></a>若要測試升級的部署步驟  
   
-1.  在 Visual Studio 中，實驗執行個體中**方案總管**，開啟捷徑功能表**EmployeesListDefinition**專案節點，然後選擇**屬性**.  
+1. 在 Visual Studio 中，實驗執行個體中**方案總管**，開啟捷徑功能表**EmployeesListDefinition**專案節點，然後選擇**屬性**.  
   
-     屬性編輯器/設計工具隨即開啟。  
+    屬性編輯器/設計工具隨即開啟。  
   
-2.  在  **SharePoint**索引標籤上，設定**現用部署組態**屬性設**升級**。  
+2. 在  **SharePoint**索引標籤上，設定**現用部署組態**屬性設**升級**。  
   
-     這項自訂部署設定包括新的升級部署步驟。  
+    這項自訂部署設定包括新的升級部署步驟。  
   
-3.  開啟捷徑功能表**員工清單**項目時，專案，然後選擇**屬性**或是**開啟**。  
+3. 開啟捷徑功能表**員工清單**項目時，專案，然後選擇**屬性**或是**開啟**。  
   
-     屬性編輯器/設計工具隨即開啟。  
+    屬性編輯器/設計工具隨即開啟。  
   
-4.  上**檢視**索引標籤上，選擇**電子郵件**資料行，然後選擇**<** 將從該資料行的索引鍵**選取的資料行**清單**可用的資料行**清單。  
+4. 上**檢視**索引標籤上，選擇**電子郵件**資料行，然後選擇**<** 將從該資料行的索引鍵**選取的資料行**清單**可用的資料行**清單。  
   
-     此動作會移除的預設檢視中的這些欄位**員工**SharePoint 網站上的清單。  
+    此動作會移除的預設檢視中的這些欄位**員工**SharePoint 網站上的清單。  
   
-5.  開始偵錯選擇**F5**金鑰或，功能表列選擇**偵錯** > **開始偵錯**。  
+5. 開始偵錯選擇**F5**金鑰或，功能表列選擇**偵錯** > **開始偵錯**。  
   
-6.  確認 Visual Studio 的其他執行個體中的程式碼是在您稍早在設定的中斷點上停止`CanExecute`方法。  
+6. 確認 Visual Studio 的其他執行個體中的程式碼是在您稍早在設定的中斷點上停止`CanExecute`方法。  
   
-7.  選擇**F5**重要的一次，或在功能表列上選擇 **偵錯** > **繼續**。  
+7. 選擇**F5**重要的一次，或在功能表列上選擇 **偵錯** > **繼續**。  
   
-8.  請確認程式碼是在您稍早在設定的中斷點上停止`Execute`方法。  
+8. 請確認程式碼是在您稍早在設定的中斷點上停止`Execute`方法。  
   
 9. 選擇**F5**鍵，或在功能表列上選擇 **偵錯** > **繼續**最後一次。  
   
@@ -449,11 +449,11 @@ ms.locfileid: "42635022"
   
 10. 在 **列出**區段的 快速啟動 區域中，選擇**員工**清單，並確認下列詳細資料：  
   
-    -   仍在清單中，是您稍早 （適用於 Andy，設備經理) 中手動加入的項目。  
+    - 仍在清單中，是您稍早 （適用於 Andy，設備經理) 中手動加入的項目。  
   
-    -   **公司電話**並**電子郵件地址**資料行不會出現在這個檢視的清單。  
+    - **公司電話**並**電子郵件地址**資料行不會出現在這個檢視的清單。  
   
-     **升級**部署組態可讓您修改現有**員工**SharePoint 網站上的清單執行個體。 如果您使用**預設**部署組態，而不是**升級**組態中，您會遇到部署衝突。 Visual Studio 會藉由取代來解決衝突**員工**清單和 Andy，設備管理員 中，項目不會刪除。  
+      **升級**部署組態可讓您修改現有**員工**SharePoint 網站上的清單執行個體。 如果您使用**預設**部署組態，而不是**升級**組態中，您會遇到部署衝突。 Visual Studio 會藉由取代來解決衝突**員工**清單和 Andy，設備管理員 中，項目不會刪除。  
   
 ## <a name="clean-up-the-development-computer"></a>清除開發電腦
  完成測試升級的部署步驟之後，從 SharePoint 網站中，移除清單執行個體和清單定義，並移除 Visual Studio 中的部署步驟延伸模組。  

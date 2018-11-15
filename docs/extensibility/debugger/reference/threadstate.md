@@ -1,5 +1,5 @@
 ---
-title: THREADSTATE |Microsoft 文件
+title: THREADSTATE |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a5a2153b6f97727cbf436c66686160cece15c287
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8fafceac4da4b80bea73a8ab969f0ecfb52b394d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31136012"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49825825"
 ---
 # <a name="threadstate"></a>THREADSTATE
 指定執行緒的狀態。  
@@ -62,7 +62,7 @@ public enum enum_THREADSTATE {
  表示執行緒已無作用。  
   
  THREADSTATE_FROZEN  
- 指出已凍結執行緒 （可以執行不會執行）。  
+ 表示已凍結執行緒 （可以執行任何執行）。  
   
 ## <a name="remarks"></a>備註  
  用於`dwThreadState`欄位[THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md)結構。  

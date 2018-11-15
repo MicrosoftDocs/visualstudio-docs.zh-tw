@@ -17,12 +17,12 @@ ms.assetid: 71c6e632-642a-42d8-a995-77e4ac190a5b
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 348492d002af533e8211c97975eec616ff24959a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1173368ac7fac6bddb13abf25f60181a129fcb87
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49191005"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49814580"
 ---
 # <a name="idebugdisassemblystream2getscope"></a>IDebugDisassemblyStream2::GetScope
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

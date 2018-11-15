@@ -11,12 +11,12 @@ ms.assetid: e2f1ca4f-787b-44bd-bc64-81a036025e96
 author: mikejo5000
 ms.author: mikejo
 manager: douge
-ms.openlocfilehash: 619f2c17d3653895c8c969e89d7a342e73f8c8d9
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 3df3a3b40dd67f12bac19f4e69f5293c85bb85f3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39081471"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49940030"
 ---
 # <a name="how-to-ignore-errors-in-tasks"></a>如何：忽略工作中的錯誤
 有時您會希望組建能夠容忍某些工作中的錯誤。 如果這些非關鍵性的工作失敗，您會想要讓組建繼續執行，因為它仍然可以產生所需的輸出。 例如，如果專案使用 `SendMail` 工作，在建置每個元件之後傳送電子郵件訊息，您可能會考慮，即使郵件伺服器無法使用且無法傳送狀態訊息，還是能夠接受組建繼續完成。 或者，例如，如果通常會在建置期間刪除中繼資料檔案，您可能會考慮，即使無法刪除這些檔案，還是能夠接受組建繼續完成。  
@@ -26,15 +26,15 @@ ms.locfileid: "39081471"
   
  `ContinueOnError` 屬性可包含一或多個下列值：  
   
--   **WarnAndContinue** 或 **true**。 當工作失敗時，[Target](../msbuild/target-element-msbuild.md) 項目中的後續工作與組建都會繼續執行，並將來自工作的所有錯誤視為警告。  
+- **WarnAndContinue** 或 **true**。 當工作失敗時，[Target](../msbuild/target-element-msbuild.md) 項目中的後續工作與組建都會繼續執行，並將來自工作的所有錯誤視為警告。  
   
--   **ErrorAndContinue**。 當工作失敗時，`Target` 項目中的後續工作與組建都會繼續執行，並將來自工作的所有錯誤視為錯誤。  
+- **ErrorAndContinue**。 當工作失敗時，`Target` 項目中的後續工作與組建都會繼續執行，並將來自工作的所有錯誤視為錯誤。  
   
--   **ErrorAndStop** 或 **false** (預設值)。 當工作失敗時，就不會執行 `Target` 項目中的其餘工作和組建，並將整個 `Target` 項目與組建視為失敗。  
+- **ErrorAndStop** 或 **false** (預設值)。 當工作失敗時，就不會執行 `Target` 項目中的其餘工作和組建，並將整個 `Target` 項目與組建視為失敗。  
   
- 只有 4.5 版之前的 .NET Framework 版本支援 `true` 和 `false` 值。  
+  只有 4.5 版之前的 .NET Framework 版本支援 `true` 和 `false` 值。  
   
- `ContinueOnError` 的預設值為 `ErrorAndStop`。 如果將屬性設為 `ErrorAndStop`，就會明確地針對任何讀取專案檔的人做出此行為。  
+  `ContinueOnError` 的預設值為 `ErrorAndStop`。 如果將屬性設為 `ErrorAndStop`，就會明確地針對任何讀取專案檔的人做出此行為。  
   
 #### <a name="to-ignore-an-error-in-a-task"></a>忽略工作中的錯誤  
   
@@ -62,6 +62,6 @@ ms.locfileid: "39081471"
 ```  
   
 ## <a name="see-also"></a>另請參閱
-[ MSBuild](../msbuild/msbuild.md)  
+[MSBuild](../msbuild/msbuild.md)  
 [工作參考](../msbuild/msbuild-task-reference.md)   
 [工作](../msbuild/msbuild-tasks.md)

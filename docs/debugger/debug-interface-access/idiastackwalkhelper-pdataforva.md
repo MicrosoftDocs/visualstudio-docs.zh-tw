@@ -1,5 +1,5 @@
 ---
-title: IDiaStackWalkHelper::pdataForVA |Microsoft 文件
+title: IDiaStackWalkHelper::pdataForVA |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9eb500539184d6ac5e7e3cb00e753a00f3585057
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: ec11596091f7039d9f711acc0d96510340a77c6c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31463214"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49901420"
 ---
 # <a name="idiastackwalkhelperpdataforva"></a>IDiaStackWalkHelper::pdataForVA
-傳回與虛擬位址相關聯的 PDATA 資料區塊。  
+傳回虛擬位址相關聯的 PDATA 資料區塊。  
   
 ## <a name="syntax"></a>語法  
   
@@ -46,15 +46,15 @@ HRESULT pdataForVA(
  [out]傳回資料的實際大小，以位元組為單位所取得。  
   
  `pbData`  
- [in、 out]要求的資料會填入緩衝區。 不能`NULL`。  
+ [in、 out]要求的資料會填入緩衝區。 不能是`NULL`。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK`。 傳回`S_FALSE`如果沒有針對指定的位址沒有 PDATA。 反之則傳回錯誤碼。  
+ 如果成功，則傳回`S_OK`。 傳回`S_FALSE`如果沒有針對指定的位址沒有 PDATA。 反之則傳回錯誤碼。  
   
 ## <a name="remarks"></a>備註  
- PDATA （名為".pdata 」 一節） 編譯包含函式的例外狀況處理的相關資訊。  
+ PDATA （名為".pdata 」 一節） 的編譯模組包含 例外狀況處理函式的相關資訊。  
   
- 呼叫端知道多少資料是要讓呼叫端沒有要求有可用的資料量不需要傳回。 因此，它是可接受的傳回錯誤，如果此方法的實作`pbData`參數是`NULL`。  
+ 呼叫端知道多少資料是要讓呼叫端沒有問多少資料，則會出現不需要傳回。 因此，它是可接受的傳回錯誤，如果此方法的實作`pbData`參數是`NULL`。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)

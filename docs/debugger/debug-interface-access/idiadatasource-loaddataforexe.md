@@ -1,5 +1,5 @@
 ---
-title: 'Idiadatasource:: Loaddataforexe |Microsoft 文件'
+title: 'Idiadatasource:: Loaddataforexe |Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8ce90f3f46b040662f0b0dc1026dbbed0b5c1166
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 32c5c3850eaeb1ce7e97fdeb2473fb707e66be1d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31465161"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49880009"
 ---
 # <a name="idiadatasourceloaddataforexe"></a>IDiaDataSource::loadDataForExe
 隨即開啟，並準備.exe/.dll 檔案相關聯的偵錯資料。  
@@ -39,35 +39,35 @@ HRESULT loadDataForExe (
  [in].Exe 或.dll 檔案路徑。  
   
  searchPath  
- [in]要搜尋的偵錯資料的替代路徑。  
+ [in]若要搜尋偵錯資料的替代路徑。  
   
  pCallback  
- [in]`IUnknown`介面之物件的支援偵錯回呼介面，例如[IDiaLoadCallback](../../debugger/debug-interface-access/idialoadcallback.md)， [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md)、 [IDiaReadExeAtOffsetCallback](../../debugger/debug-interface-access/idiareadexeatoffsetcallback.md)，及/或[IDiaReadExeAtRVACallback](../../debugger/debug-interface-access/idiareadexeatrvacallback.md)介面。  
+ [in]`IUnknown`物件，例如支援偵錯回呼介面，介面[IDiaLoadCallback](../../debugger/debug-interface-access/idialoadcallback.md)， [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md)，則[IDiaReadExeAtOffsetCallback](../../debugger/debug-interface-access/idiareadexeatoffsetcallback.md)，和/或[IDiaReadExeAtRVACallback](../../debugger/debug-interface-access/idiareadexeatrvacallback.md)介面。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK`; 否則傳回錯誤碼。 下表顯示一些可能發生的錯誤代碼，此方法。  
+ 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。 下表顯示一些可能的錯誤碼，此方法。  
   
 |值|描述|  
 |-----------|-----------------|  
-|E_PDB_NOT_FOUND|無法開啟檔案或檔案格式無效。|  
-|E_PDB_FORMAT|嘗試存取的檔案已經過時的格式。|  
+|E_PDB_NOT_FOUND|無法開啟檔案，或檔案格式無效。|  
+|E_PDB_FORMAT|嘗試存取已過時的格式的檔案。|  
 |E_PDB_INVALID_SIG|簽章不符。|  
 |E_PDB_INVALID_AGE|年齡不符。|  
 |E_INVALIDARG|無效的參數。|  
-|E_UNEXPECTED|已備妥資料來源。|  
+|E_UNEXPECTED|資料來源已準備好了。|  
   
 ## <a name="remarks"></a>備註  
- .Exe/.dll 檔案的偵錯標頭名稱相關聯的偵錯資料位置。  
+ .Exe/.dll 檔案的偵錯標頭名稱相關聯的偵錯資料的位置。  
   
- 這個方法讀取偵錯標頭，然後搜尋並準備偵錯資料。 搜尋的進度可能選擇性地報告並控制透過回呼。 例如， [idialoadcallback:: Notifydebugdir](../../debugger/debug-interface-access/idialoadcallback-notifydebugdir.md)時叫用`IDiaDataSource::loadDataForExe`方法找出並處理偵錯目錄。  
+ 這個方法讀取偵錯標頭，則會搜尋並準備偵錯資料。 （選擇性） 的搜尋進度可能，會報告，並控制透過回呼。 例如， [idialoadcallback:: Notifydebugdir](../../debugger/debug-interface-access/idialoadcallback-notifydebugdir.md)叫用時`IDiaDataSource::loadDataForExe`方法會尋找及處理偵錯目錄。  
   
- [IDiaReadExeAtOffsetCallback](../../debugger/debug-interface-access/idiareadexeatoffsetcallback.md)和[IDiaReadExeAtRVACallback](../../debugger/debug-interface-access/idiareadexeatrvacallback.md)介面可讓用戶端應用程式，以提供替代的方法，從可執行檔讀取資料檔案時檔案無法直接透過標準檔案 I/O 存取。  
+ [IDiaReadExeAtOffsetCallback](../../debugger/debug-interface-access/idiareadexeatoffsetcallback.md)並[IDiaReadExeAtRVACallback](../../debugger/debug-interface-access/idiareadexeatrvacallback.md)介面允許用戶端應用程式提供另一種方法，從可執行檔讀取資料檔案時的檔案無法直接透過標準檔案 I/O 存取。  
   
  若要載入的.pdb 檔不需要驗證，使用[idiadatasource:: Loaddatafrompdb](../../debugger/debug-interface-access/idiadatasource-loaddatafrompdb.md)方法。  
   
- 若要驗證針對特定準則的.pdb 檔，請使用[idiadatasource:: Loadandvalidatedatafrompdb](../../debugger/debug-interface-access/idiadatasource-loadandvalidatedatafrompdb.md)方法。  
+ 若要驗證對特定準則的.pdb 檔，請使用[idiadatasource:: Loadandvalidatedatafrompdb](../../debugger/debug-interface-access/idiadatasource-loadandvalidatedatafrompdb.md)方法。  
   
- 若要直接從記憶體載入.pdb 檔案，請使用[idiadatasource:: Loaddatafromistream](../../debugger/debug-interface-access/idiadatasource-loaddatafromistream.md)方法。  
+ 若要直接從記憶體中載入的.pdb 檔案，請使用[idiadatasource:: Loaddatafromistream](../../debugger/debug-interface-access/idiadatasource-loaddatafromistream.md)方法。  
   
 ## <a name="example"></a>範例  
   

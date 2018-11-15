@@ -1,5 +1,5 @@
 ---
-title: CV_HREG_e |Microsoft 文件
+title: CV_HREG_e |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,18 +14,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: aa6e567f811f163f8b79b277f5e0c8d2e4fc775b
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 091b91cb896d0e2d5753f9c3b55cac58deee8cd5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31465677"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49848601"
 ---
 # <a name="cvhrege"></a>CV_HREG_e
-指定目標暫存器。  
+指定的目標暫存器。  
   
 > [!NOTE]
->  因為`CV_HREG_e`列舉型別複製整個這裡太大，的縮寫的版本提供做為參考。 遺漏的項目會最先斜體。 Cvconst.h 標頭檔中可完整列舉。  
+>  因為`CV_HREG_e`列舉型別複製整個這裡太大的縮寫的版本提供作為參考。 遺漏的項目會最先斜體。 完整的列舉型別適用於 cvconst.h 標頭檔。  
   
 ## <a name="syntax"></a>語法  
   
@@ -412,42 +412,42 @@ enum CV_HREG_e {
   
 ## <a name="elements"></a>項目  
  CV_REG_ *  
- Intel 80x86 ix86 處理器和 p 程式碼使用的暫存器。  
+ Intel 80x86 和 ix86 處理器和 p 程式碼所使用的暫存器。  
   
  CV_R68_ *  
  68 K 處理器所使用的暫存器。  
   
  CV_M4_ *  
- 使用 MIPS 4000 系列處理器暫存器。  
+ MIPS 4000 系列處理器所使用的暫存器。  
   
  CV_ALPHA_ *  
- 由數位設備 Corporation Alpha AXP 系列處理器暫存器。  
+ 使用數位設備 Corporation Alpha AXP 系列處理器暫存器。  
   
  CV_PPC_ *  
- 由/IBM 的 Motorola PowerPC 處理器暫存器。  
+ / IBM Motorola PowerPC 處理器所使用的暫存器。  
   
  CV_SH3_ * 和 CV_SH_\*  
- 由 Hitachi SH3 和 Hitachi SH 系列處理器暫存器。  
+ Hitachi SH3 和 Hitachi SH 系列處理器所使用的暫存器。  
   
  CV_ARM_ *  
  Advanced RISC Machine (ARM) 處理器所使用的暫存器。  
   
  CV_IA64_ *  
- Intel IA64 系列處理器所使用的暫存器。  
+ Intel 的 IA64 系列處理器所使用的暫存器。  
   
  CV_TRI_ *  
- 由 Infineon 技術 TriCore 處理器暫存器。  
+ Infineon 技術 TriCore 處理器所使用的暫存器。  
   
  CV_AM33_ *  
  暫存器供 Matsushita/Panasonic AM33，以及相關的處理器。  
   
  CV_M32R_ *  
- 防止 M32R 處理器所使用的暫存器。  
+ Mitsubishi M32R 處理器所使用的暫存器。  
   
 ## <a name="remarks"></a>備註  
  每個處理器的類型會使用它自己組唯一的暫存器。  
   
- 這個列舉型別中的值傳遞給下列方法：  
+ 這個列舉型別中的值會傳遞下列方法：  
   
 -   [IDiaStackWalkFrame::get_registerValue](../../debugger/debug-interface-access/idiastackwalkframe-get-registervalue.md)  
   

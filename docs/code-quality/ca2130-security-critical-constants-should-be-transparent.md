@@ -12,19 +12,20 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 212bd1bc9f1f5b66fa8ddb485c5ec287ff39c754
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: b0c3ebb69901f031e183d883319861c7e6ef75c2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45551346"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49858175"
 ---
 # <a name="ca2130-security-critical-constants-should-be-transparent"></a>CA2130：安全性關鍵常數應該是透明的
+
 |||
 |-|-|
 |TypeName|ConstantsShouldBeTransparent|
 |CheckId|CA2130|
-|類別|Microsoft.Security|
+|分類|Microsoft.Security|
 |中斷變更|中斷|
 
 ## <a name="cause"></a>原因

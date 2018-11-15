@@ -12,12 +12,12 @@ caps.latest.revision: 36
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 760dc4f859de68040676439d84fea60d23602aeb
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 327de2e75b089e7ba836837c3c29c0d92d9ad864
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49292782"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49852709"
 ---
 # <a name="visual-studio-ide"></a>Visual Studio IDE
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -116,31 +116,31 @@ Microsoft Visual Studio 2015 是一套建立軟體的工具，適用於從規劃
 
  文字編輯器可與許多產能功能緊密互動 (如果您想要的話)，協助您更快撰寫更好的程式碼。 這些功能會因語言而異，且您不必使用任何語言 (請在 [快速啟動] 中輸入 "Editor") 來開啟或關閉功能：下列為某些常見的產能功能：
 
-1.  [Refactoring](../ide/refactoring-in-visual-studio.md) 包含一些作業，例如智慧型的變數重新命名、將選取的多行程式碼移動到個別函式、將程式碼移到其他位置、重新排序函式參數等等。
+1. [Refactoring](../ide/refactoring-in-visual-studio.md) 包含一些作業，例如智慧型的變數重新命名、將選取的多行程式碼移動到個別函式、將程式碼移到其他位置、重新排序函式參數等等。
 
-2.  *IntelliSense* 為一種涵蓋一組常用功能的概括性術語，會直接在編輯器中顯示有關您程式碼的類型資訊，而在某些情況下會為您撰寫一些程式碼。 就像內嵌在編輯器中的基本文件，讓您無需在個別的 [說明] 視窗中查閱類型資訊。 IntelliSense 功能會因語言而異。 如需詳細資訊，請參閱 [Visual C# IntelliSense](../ide/visual-csharp-intellisense.md)、[Visual C++ Intellisense](../ide/visual-cpp-intellisense.md)、[JavaScript IntelliSense](../ide/javascript-intellisense.md)、[Visual Basic 特定的 IntelliSense](../ide/visual-basic-specific-intellisense.md)。 下圖顯示一些可用的 IntelliSense 功能：
+2. *IntelliSense* 為一種涵蓋一組常用功能的概括性術語，會直接在編輯器中顯示有關您程式碼的類型資訊，而在某些情況下會為您撰寫一些程式碼。 就像內嵌在編輯器中的基本文件，讓您無需在個別的 [說明] 視窗中查閱類型資訊。 IntelliSense 功能會因語言而異。 如需詳細資訊，請參閱 [Visual C# IntelliSense](../ide/visual-csharp-intellisense.md)、[Visual C++ Intellisense](../ide/visual-cpp-intellisense.md)、[JavaScript IntelliSense](../ide/javascript-intellisense.md)、[Visual Basic 特定的 IntelliSense](../ide/visual-basic-specific-intellisense.md)。 下圖顯示一些可用的 IntelliSense 功能：
 
-     ![Visual Studio 成員清單](../ide/media/vs2015-intellisense.png "vs2015_Intellisense")
+    ![Visual Studio 成員清單](../ide/media/vs2015-intellisense.png "vs2015_Intellisense")
 
-3.  當您輸入程式碼時，[波浪線] 會即時提醒您程式碼中的錯誤或潛在問題，讓您可立即修正，不需等到編譯或執行階段才發現錯誤。 如果您將滑鼠停留在波浪線，則您會看到有關此錯誤的其他資訊。 左邊界也可能會出現燈泡與修正錯誤的建議。 如需詳細資訊，請參閱 [Perform quick actions with light bulbs](../ide/perform-quick-actions-with-light-bulbs.md)。
+3. 當您輸入程式碼時，[波浪線] 會即時提醒您程式碼中的錯誤或潛在問題，讓您可立即修正，不需等到編譯或執行階段才發現錯誤。 如果您將滑鼠停留在波浪線，則您會看到有關此錯誤的其他資訊。 左邊界也可能會出現燈泡與修正錯誤的建議。 如需詳細資訊，請參閱 [Perform quick actions with light bulbs](../ide/perform-quick-actions-with-light-bulbs.md)。
 
-     ![滑鼠游標暫留的燈泡](../ide/media/vs2015-lightbulb-hover.png "VS2015_LightBulb_Hover")
+    ![滑鼠游標暫留的燈泡](../ide/media/vs2015-lightbulb-hover.png "VS2015_LightBulb_Hover")
 
-4.  [書籤](../ide/setting-bookmarks-in-code.md)可讓您於正在處理的檔案中快速巡覽至特定一行。
+4. [書籤](../ide/setting-bookmarks-in-code.md)可讓您於正在處理的檔案中快速巡覽至特定一行。
 
-5.  您可以在文字編輯器操作功能表中，叫用 [Call Hierarchy](../ide/reference/call-hierarchy.md) 視窗以顯示方法，這些方法會呼叫插入號下面的方法，或是由其所呼叫。
+5. 您可以在文字編輯器操作功能表中，叫用 [Call Hierarchy](../ide/reference/call-hierarchy.md) 視窗以顯示方法，這些方法會呼叫插入號下面的方法，或是由其所呼叫。
 
-6.  [] 可讓您尋找程式碼、已連結的 Bug、工作項目、程式碼檢閱和單元測試的參考和變更，而不需離開編輯器。 如需詳細資訊，請參閱[尋找程式碼變更和其他記錄](../ide/find-code-changes-and-other-history-with-codelens.md)。
+6. [] 可讓您尋找程式碼、已連結的 Bug、工作項目、程式碼檢閱和單元測試的參考和變更，而不需離開編輯器。 如需詳細資訊，請參閱[尋找程式碼變更和其他記錄](../ide/find-code-changes-and-other-history-with-codelens.md)。
 
-7.  **[查看定義]** 視窗會顯示方法或類型的定義內嵌，而不用離開您目前的內容。 此視窗現在也適用於 XAML。
+7. **[查看定義]** 視窗會顯示方法或類型的定義內嵌，而不用離開您目前的內容。 此視窗現在也適用於 XAML。
 
-8.  [移至定義]  內容功能表選項會讓您直接進入定義函式或物件的位置。 以滑鼠右鍵在編輯器中按一下，還有其他巡覽命令可供使用。
+8. [移至定義]  內容功能表選項會讓您直接進入定義函式或物件的位置。 以滑鼠右鍵在編輯器中按一下，還有其他巡覽命令可供使用。
 
 9. [物件瀏覽器](http://msdn.microsoft.com/en-us/f89acfc5-1152-413d-9f56-3dc16e3f0470)是一種相關工具，可讓您檢查系統上的 .NET 或 Windows 執行階段組件，查看它們包含的類型，以及查看這些類型包含的方法和屬性。
 
      ![顯示 System.Timer 的物件瀏覽器](../ide/media/objectbrowser.png "ObjectBrowser")
 
- 大部分 [編輯] 功能表和 [檢視] 功能表上的項目在某些方面與程式碼編輯器相關。 如需編輯器的詳細資訊，請參閱[撰寫程式碼](../ide/writing-code-in-the-code-and-text-editor.md)和 [Editing Your Code](https://www.visualstudio.com/features/ide-vs) (編輯程式碼)。
+   大部分 [編輯] 功能表和 [檢視] 功能表上的項目在某些方面與程式碼編輯器相關。 如需編輯器的詳細資訊，請參閱[撰寫程式碼](../ide/writing-code-in-the-code-and-text-editor.md)和 [Editing Your Code](https://www.visualstudio.com/features/ide-vs) (編輯程式碼)。
 
 ## <a name="compiling-and-building-your-code"></a>編譯和建置您的程式碼
 

@@ -17,12 +17,12 @@ ms.assetid: 187d24ed-9f9a-4418-a0ef-b8a19f54652c
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4b48835b748f66558a34de119db694cdef64a856
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: aac14c0ae8c2ffa0b074bdf101c52213958404ec
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49297878"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49887432"
 ---
 # <a name="idebugenginecreateevent2getengine"></a>IDebugEngineCreateEvent2::GetEngine
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

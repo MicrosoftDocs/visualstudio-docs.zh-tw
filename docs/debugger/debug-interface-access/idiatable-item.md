@@ -1,5 +1,5 @@
 ---
-title: 'Idiatable:: Item |Microsoft 文件'
+title: 'Idiatable:: Item |Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cd734d287a4740a25840d93b4724b45396c7dd87
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 476e4d01ed6e092936fc2d9bc7b8e264215e21dc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31470071"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49950052"
 ---
 # <a name="idiatableitem"></a>IDiaTable::Item
 擷取指定的項目資料表中的參考。  
@@ -35,18 +35,18 @@ HRESULT Item (
   
 #### <a name="parameters"></a>參數  
  `index`  
- [in]索引的資料表中的項目介於範圍 0 到`count`-1，其中`count`傳回[idiatable:: Get_count](../../debugger/debug-interface-access/idiatable-get-count.md)方法。  
+ [in]資料表中的項目範圍介於 0 到索引`count`-1，其中`count`會傳回[idiatable:: Get_count](../../debugger/debug-interface-access/idiatable-get-count.md)方法。  
   
  `element`  
- [out]傳回`IUnknown`物件，代表指定之資料表的項目。  
+ [out]傳回`IUnknown`物件，表示指定的資料表項目。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
   
 ## <a name="remarks"></a>備註  
- 資料表代表物件的集合。 根據這些物件中，項目參數可轉換成適當的介面。 例如，如果資料表包含[IDiaSegment](../../debugger/debug-interface-access/idiasegment.md)物件，則項目參數可轉換成`IDiaSegment`介面。  
+ 資料表代表物件的集合。 根據這些物件的項目參數可以轉換成適當的介面。 例如，如果資料表包含[IDiaSegment](../../debugger/debug-interface-access/idiasegment.md)物件，則項目參數可以轉換成`IDiaSegment`介面。  
   
- 它是更常見的方法呼叫`QueryInterface`方法中的[IDiaTable](../../debugger/debug-interface-access/idiatable.md)適當的列舉程式介面的介面，並透過列舉值的特定方式來存取資料表內容。 請參閱[IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md)介面的範例。  
+ 它是更常見的方法來呼叫`QueryInterface`方法中的[IDiaTable](../../debugger/debug-interface-access/idiatable.md)適當的列舉程式介面的介面，並使用列舉值的特定方法來存取資料表內容。 請參閱[IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md)介面的範例。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDiaTable](../../debugger/debug-interface-access/idiatable.md)   

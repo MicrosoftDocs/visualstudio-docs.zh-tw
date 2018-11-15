@@ -29,25 +29,25 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e216bf3f3a15027b26c93e986df3eb8594d4d589
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: e4ce9f864307ffaee4bce51a565e9ad1726d043d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118763"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49893295"
 ---
 # <a name="provide-packaging-and-deployment-information-in-project-items"></a>提供專案項目中的封裝和部署資訊
   中的所有 SharePoint 專案項目[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]有屬性，您可以使用專案部署到 SharePoint 時，提供額外的資料。 這些屬性如下所示：  
   
--   功能屬性  
+- 功能屬性  
   
--   功能接收器  
+- 功能接收器  
   
--   專案輸出參考  
+- 專案輸出參考  
   
--   安全控制項項目  
+- 安全控制項項目  
   
- 這些屬性會出現在**屬性**視窗。  
+  這些屬性會出現在**屬性**視窗。  
   
 ## <a name="feature-properties"></a>功能屬性
  使用**功能屬性**屬性以指定的功能使用的資料。 功能屬性資料是一組值 （儲存為索引鍵/值組），它會部署到 SharePoint 時，會包含的功能。 部署功能之後，您可以在程式碼中存取屬性值。  

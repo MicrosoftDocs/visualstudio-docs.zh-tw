@@ -41,25 +41,25 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b1006a8c4b04fcb935d651f65031764a874b75f8
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 924f31ac38219453ae96fd573d968b18ce19c913
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35671518"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50672895"
 ---
 # <a name="content-controls"></a>內容控制項
   內容控制項提供一種設計文件和範本的方式，能讓它們具有下列功能：  
   
--   像表單一樣具有受控制輸入的使用者介面 (UI)。  
+- 像表單一樣具有受控制輸入的使用者介面 (UI)。  
   
--   防止使用者編輯文件或範本受保護區段的限制。 如需詳細資訊，請參閱 <<c0> [ 使用內容控制項保護文件的部分](#Protection)。  
+- 防止使用者編輯文件或範本受保護區段的限制。 如需詳細資訊，請參閱 <<c0> [ 使用內容控制項保護文件的部分](#Protection)。  
   
--   繫結至資料來源的資料。 如需詳細資訊，請參閱 <<c0> [ 將資料繫結至內容控制項](#DataBinding)。  
+- 繫結至資料來源的資料。 如需詳細資訊，請參閱 <<c0> [ 將資料繫結至內容控制項](#DataBinding)。  
   
- [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
+  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
   
- ![影片連結](../vsto/media/playvideo.gif "影片連結")如需相關的影片示範，請參閱[資料繫結至 Word 2007 內容控制項使用 Visual Studio Tools for Office system (3.0)](http://go.microsoft.com/fwlink/?LinkId=136785)。  
+  ![影片連結](../vsto/media/playvideo.gif "影片連結")如需相關的影片示範，請參閱[資料繫結至 Word 2007 內容控制項使用 Visual Studio Tools for Office system (3.0)](http://go.microsoft.com/fwlink/?LinkId=136785)。  
   
 ## <a name="overview-of-content-controls"></a>內容控制項概觀  
  內容控制項能為使用者的輸入和列印提供最佳化的 UI。 當您在文件中加入內容控制項時，可以指示使用者的框線、標題和暫存文字就會識別控制項。 文件的列印版本中不會出現控制項的框線和標題。  
@@ -68,11 +68,11 @@ ms.locfileid: "35671518"
   
  內容控制項也會協助您執行下列作業：  
   
--   防止使用者編輯或刪除文件組件。 如果文件或範本中有使用者應可讀取但無法編輯的資訊，或如果您希望使用者能夠編輯但不能刪除內容控制項，這非常有用。  
+- 防止使用者編輯或刪除文件組件。 如果文件或範本中有使用者應可讀取但無法編輯的資訊，或如果您希望使用者能夠編輯但不能刪除內容控制項，這非常有用。  
   
--   將文件或範本的組件繫結至資料。 您可以將內容控制項繫結至資料庫欄位、[!INCLUDE[dnprdnshort](../sharepoint/includes/dnprdnshort-md.md)] 中的 Managed 物件、儲存在文件的 XML 元素，及其他資料來源。  
+- 將文件或範本的組件繫結至資料。 您可以將內容控制項繫結至資料庫欄位、[!INCLUDE[dnprdnshort](../sharepoint/includes/dnprdnshort-md.md)] 中的 Managed 物件、儲存在文件的 XML 元素，及其他資料來源。  
   
- 在文件層級的專案中，您可以於設計階段或執行階段，將內容控制項加入文件。 在 VSTO 增益集專案中，您可以在執行階段將內容控制項加入任何開啟的文件。 如需詳細資訊，請參閱 <<c0> [ 如何： 將內容控制項加入 Word 文件](../vsto/how-to-add-content-controls-to-word-documents.md)。  
+  在文件層級的專案中，您可以於設計階段或執行階段，將內容控制項加入文件。 在 VSTO 增益集專案中，您可以在執行階段將內容控制項加入任何開啟的文件。 如需詳細資訊，請參閱 <<c0> [ 如何： 將內容控制項加入 Word 文件](../vsto/how-to-add-content-controls-to-word-documents.md)。  
   
 > [!NOTE]  
 >  您可以使用內容控制項只會儲存為 Open XML 格式的文件中。 您無法使用 Word 97-2003 文件中儲存的文件中的內容控制項 (*.doc*) 格式。  
@@ -81,7 +81,7 @@ ms.locfileid: "35671518"
  有九種不同型別的內容控制項可以加入文件。 大部分的內容控制項在 <xref:Microsoft.Office.Tools.Word> 命名空間中有對應的型別。 您也可以使用泛型的 <xref:Microsoft.Office.Tools.Word.ContentControl>，它可以代表任何可用的內容控制項。 如需示範如何使用每個可用的內容控制項的逐步解說，請參閱 <<c0> [ 逐步解說： 使用內容控制項建立範本](../vsto/walkthrough-creating-a-template-by-using-content-controls.md)。  
   
 ### <a name="build-block-gallery"></a>建置組塊庫  
- 建置組塊庫可讓使用者從清單中選取*文件建置組塊*插入文件。 文件建置組塊是一段可以多次使用的內容，例如通用的封面頁、格式化的資料表或頁首。 如需詳細資訊，請參閱 <xref:Microsoft.Office.Tools.Word.BuildingBlockGalleryContentControl> 型別。 如需有關建置組塊的詳細資訊，請參閱[適用於 Word 2007 中的開發人員最新消息](http://msdn.microsoft.com/74aa6688-65b3-4167-997d-131f26ad8f84)。  
+ 建置組塊庫可讓使用者從清單中選取*文件建置組塊*插入文件。 文件建置組塊是一段可以多次使用的內容，例如通用的封面頁、格式化的資料表或頁首。 如需詳細資訊，請參閱 <xref:Microsoft.Office.Tools.Word.BuildingBlockGalleryContentControl> 型別。 如需有關建置組塊的詳細資訊，請參閱[適用於 Word 2007 中的開發人員最新消息](/previous-versions/office/developer/office-2007/bb266218(v=office.12))。  
   
 ### <a name="check-box"></a>核取方塊  
  核取方塊提供的 UI，代表二進位狀態：選取或清除。  
@@ -133,11 +133,11 @@ ms.locfileid: "35671518"
   
  如果要保護的區域在內容控制項內，您可以使用內容控制項的屬性，防止使用者編輯或刪除控制項：  
   
--   **LockContents**屬性可防止使用者編輯內容。  
+- **LockContents**屬性可防止使用者編輯內容。  
   
--   **LockContentControl**屬性可防止使用者刪除控制項。  
+- **LockContentControl**屬性可防止使用者刪除控制項。  
   
- 如果要保護的區域不在內容控制項內，或者要保護的區域包含內容控制項和其他類型的內容，您可以將整個區域放入 <xref:Microsoft.Office.Tools.Word.GroupContentControl>。 不像其他內容的控制項，<xref:Microsoft.Office.Tools.Word.GroupContentControl> 不提供向使用者顯示的 UI。 它唯一的用途是定義使用者無法編輯的區域。  
+  如果要保護的區域不在內容控制項內，或者要保護的區域包含內容控制項和其他類型的內容，您可以將整個區域放入 <xref:Microsoft.Office.Tools.Word.GroupContentControl>。 不像其他內容的控制項，<xref:Microsoft.Office.Tools.Word.GroupContentControl> 不提供向使用者顯示的 UI。 它唯一的用途是定義使用者無法編輯的區域。  
   
 > [!NOTE]  
 >  如果建立的 <xref:Microsoft.Office.Tools.Word.GroupContentControl> 包含內嵌內容控制項，則不會自動保護這些內嵌內容控制項。 您必須使用**LockContents**屬性的每個內嵌控制項，以防止使用者編輯其內容。  
@@ -149,11 +149,11 @@ ms.locfileid: "35671518"
   
  內容控制項提供下列資料繫結選項：  
   
--   您可以使用與 Windows Form 相同的資料繫結模型，將內容控制項繫結到資料庫欄位或 Managed 物件。  
+- 您可以使用與 Windows Form 相同的資料繫結模型，將內容控制項繫結到資料庫欄位或 Managed 物件。  
   
--   您可以將內容控制項繫結至的 XML 片段的項目 (也稱為*自訂 XML 組件*) 內嵌於文件。  
+- 您可以將內容控制項繫結至的 XML 片段的項目 (也稱為*自訂 XML 組件*) 內嵌於文件。  
   
- 如需在 Office 方案中的主控制項繫結至資料的概觀，請參閱 <<c0> [ 將資料繫結至 Office 方案中的控制項](../vsto/binding-data-to-controls-in-office-solutions.md)。  
+  如需在 Office 方案中的主控制項繫結至資料的概觀，請參閱 <<c0> [ 將資料繫結至 Office 方案中的控制項](../vsto/binding-data-to-controls-in-office-solutions.md)。  
   
 ### <a name="use-the-windows-forms-data-binding-model"></a>使用 Windows Form 資料繫結模型  
  大部分的內容控制項支援 Windows Form 使用的簡易資料繫結模型。 簡易資料繫結表示控制項是繫結至單一資料元素，例如資料表中資料行的值。 如需詳細資訊，請參閱 <<c0> [ 資料繫結和 Windows Form](/dotnet/framework/winforms/data-binding-and-windows-forms)。  
@@ -168,7 +168,7 @@ ms.locfileid: "35671518"
 |<xref:System.DateTime>|<xref:Microsoft.Office.Tools.Word.DatePickerContentControl>|<xref:Microsoft.Office.Tools.Word.BuildingBlockGalleryContentControl><br /><br /> <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl><br /><br /> <xref:Microsoft.Office.Tools.Word.PlainTextContentControl><br /><br /> <xref:Microsoft.Office.Tools.Word.RichTextContentControl>|  
 |<xref:System.Drawing.Image><br /><br /> <xref:System.Byte> 陣列|<xref:Microsoft.Office.Tools.Word.PictureContentControl>|無|  
   
- 在文件層級和 VSTO 增益集專案中，您可以使用控制項的 <xref:System.Windows.Forms.IBindableComponent.DataBindings%2A> 屬性的 <xref:System.Windows.Forms.ControlBindingsCollection.Add%2A> 方法，以程式設計方式將內容控制項繫結至資料來源。 如果您這麼做，請傳遞字串**文字**要*propertyName*參數<xref:System.Windows.Forms.ControlBindingsCollection.Add%2A>方法。 **文字**屬性是內容控制項的預設資料繫結屬性。  
+ 在文件層級和 VSTO 增益集專案中，您可以使用控制項的 <xref:System.Windows.Forms.IBindableComponent.DataBindings%2A> 屬性的 <xref:System.Windows.Forms.ControlBindingsCollection.Add%2A> 方法，以程式設計方式將內容控制項繫結程序至資料來源。 如果您這麼做，請傳遞字串**文字**要*propertyName*參數<xref:System.Windows.Forms.ControlBindingsCollection.Add%2A>方法。 **文字**屬性是內容控制項的預設資料繫結屬性。  
   
  內容控制項也支援雙向的資料繫結，讓控制項中的變更更新回資料來源。 如需詳細資訊，請參閱 <<c0> [ 如何： 從主控制項的資料更新資料來源](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)。  
   

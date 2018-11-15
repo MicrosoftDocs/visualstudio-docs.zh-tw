@@ -1,5 +1,5 @@
 ---
-title: IDebugMethodField::IsCustomAttributeDefined |Microsoft 文件
+title: IDebugMethodField::IsCustomAttributeDefined |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f8515fd9fc9914daa7f28f876777dd5eb26ac14c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9d2481c014c149e51c4c9ee3ff837a65e040b7e8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31111156"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49882264"
 ---
 # <a name="idebugmethodfieldiscustomattributedefined"></a>IDebugMethodField::IsCustomAttributeDefined
 判斷是否已定義特定的自訂屬性。  
@@ -44,7 +44,7 @@ int IsCustomAttributeDefined(
  [in]字串，包含要尋找的自訂屬性的名稱。  
   
 ## <a name="return-value"></a>傳回值  
- 傳回 S_OK 如果自訂屬性定義於這個方法，否則會傳回 S_FALSE。  
+ 會傳回 S_OK 如果自訂屬性定義在此方法，否則會傳回 S_FALSE。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)

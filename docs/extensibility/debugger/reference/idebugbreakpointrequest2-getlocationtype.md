@@ -1,5 +1,5 @@
 ---
-title: IDebugBreakpointRequest2::GetLocationType |Microsoft 文件
+title: IDebugBreakpointRequest2::GetLocationType |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: faa536c269e8c0ebd2772617ab9bd0e3412f35b2
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 70189d61752643d78c545a5d33106a4638961c1b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31106174"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49936234"
 ---
 # <a name="idebugbreakpointrequest2getlocationtype"></a>IDebugBreakpointRequest2::GetLocationType
-取得此要求的中斷點位置類型。  
+取得此中斷點要求的中斷點位置類型。  
   
 ## <a name="syntax"></a>語法  
   
@@ -41,13 +41,13 @@ int GetLocationType(
   
 #### <a name="parameters"></a>參數  
  `pBPLocationType`  
- [out]傳回值，從[BP_LOCATION_TYPE](../../../extensibility/debugger/reference/bp-location-type.md)列舉，可描述此中斷點要求的位置。  
+ [out]傳回值，以從[BP_LOCATION_TYPE](../../../extensibility/debugger/reference/bp-location-type.md)列舉，可描述此中斷點要求的位置。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK`; 否則傳回錯誤碼。 傳回`E_FAIL`如果`bpLocation`欄位相關聯[BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)結構不正確。  
+ 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。 傳回`E_FAIL`如果`bpLocation`欄位中相關聯[BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)結構無效。  
   
 ## <a name="example"></a>範例  
- 下列範例示範如何實作這個方法來簡單`CDebugBreakpointRequest`公開物件[IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md)介面。  
+ 下列範例示範如何實作這個方法來簡單`CDebugBreakpointRequest`公開的物件[IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md)介面。  
   
 ```  
 HRESULT CDebugBreakpointRequest::GetLocationType(BP_LOCATION_TYPE* pBPLocationType)    

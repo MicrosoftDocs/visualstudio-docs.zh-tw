@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 7210a5c156b779b9064f72db9cab5445d0ce20c3
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 2072006941c0572fc8072f2dd99afe7d324326bd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47858350"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49842842"
 ---
 # <a name="share-models-and-exporting-diagrams"></a>共用模型及匯出圖表
 在 Visual Studio 中，有多種方式可與同事共用模型和圖表。
@@ -46,7 +46,7 @@ ms.locfileid: "47858350"
 ## <a name="related-topics"></a>相關主題
 
 |標題|描述|
-|-----------|-----------------|
+|-|-|
 |[建構模型方案](../modeling/structure-your-modeling-solution.md)|共用大型或中型專案中的模型。|
 |[將圖表匯出為影像](../modeling/export-diagrams-as-images.md)|您可以將部分圖表複製到應用程式，例如 PowerPoint 或 Word，或將圖表列印到 XPS 檔案。|
 |[分析架構並製作架構模型](../modeling/analyze-and-model-your-architecture.md)|模型和圖表概觀。|

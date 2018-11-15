@@ -13,54 +13,54 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8f85e7c6e4ba62842986db8e6090415d2e33f1c1
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 18587516298fa58e8a5e783ffb1f7c37d5a6b497
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498950"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49859677"
 ---
 # <a name="inside-the-editor"></a>在編輯器內
 編輯器是由數個不同的子系統，設計用來將編輯器文字檢視和使用者介面文字模型分開的。  
   
  下列各節說明不同層面的編輯器：  
   
--   [子系統的概觀](../extensibility/inside-the-editor.md#overview-of-the-subsystems)  
+- [子系統的概觀](../extensibility/inside-the-editor.md#overview-of-the-subsystems)  
   
--   [文字模型](../extensibility/inside-the-editor.md#the-text-model)  
+- [文字模型](../extensibility/inside-the-editor.md#the-text-model)  
   
--   [文字檢視](../extensibility/inside-the-editor.md#the-text-view)  
+- [文字檢視](../extensibility/inside-the-editor.md#the-text-view)  
   
- 下列各節說明編輯器的功能：  
+  下列各節說明編輯器的功能：  
   
--   [標記和分類器](../extensibility/inside-the-editor.md#tags-and-classifiers)  
+- [標記和分類器](../extensibility/inside-the-editor.md#tags-and-classifiers)  
   
--   [裝飾](../extensibility/inside-the-editor.md#adornments)  
+- [裝飾](../extensibility/inside-the-editor.md#adornments)  
   
--   [投影](../extensibility/inside-the-editor.md#projection)  
+- [投影](../extensibility/inside-the-editor.md#projection)  
   
--   [大綱](../extensibility/inside-the-editor.md#outlining)  
+- [大綱](../extensibility/inside-the-editor.md#outlining)  
   
--   [滑鼠繫結](../extensibility/inside-the-editor.md#mousebindings)  
+- [滑鼠繫結](../extensibility/inside-the-editor.md#mousebindings)  
   
--   [編輯器作業，](../extensibility/inside-the-editor.md#editoroperations)  
+- [編輯器作業，](../extensibility/inside-the-editor.md#editoroperations)  
   
--   [IntelliSense](../extensibility/inside-the-editor.md#intellisense)  
+- [IntelliSense](../extensibility/inside-the-editor.md#intellisense)  
   
 ## <a name="overview-of-the-subsystems"></a>子系統的概觀  
   
 ### <a name="text-model-subsystem"></a>文字模型子系統  
  文字模型子系統負責表示文字，並啟用其操作。 文字模型子系統包含<xref:Microsoft.VisualStudio.Text.ITextBuffer>介面，其中描述要編輯器所顯示的字元序列。 這段文字可以修改、 追蹤，並以其他方式操作在許多方面。 文字模型也會提供類型的下列層面：  
   
--   將文字檔案，並管理讀取和寫入檔案系統中的服務。  
+- 將文字檔案，並管理讀取和寫入檔案系統中的服務。  
   
--   差異服務，以尋找物件的兩個序列之間的最小差異。  
+- 差異服務，以尋找物件的兩個序列之間的最小差異。  
   
--   系統，用於描述方面的其他緩衝區中的文字子集的緩衝區中的文字。  
+- 系統，用於描述方面的其他緩衝區中的文字子集的緩衝區中的文字。  
   
- 文字模型子系統是免費的使用者介面 (UI) 的概念。 比方說，它不會負責設定格式化的文字或文字版面配置，以及它並不知道可能會使用文字產生關聯的視覺裝飾。  
+  文字模型子系統是免費的使用者介面 (UI) 的概念。 比方說，它不會負責設定格式化的文字或文字版面配置，以及它並不知道可能會使用文字產生關聯的視覺裝飾。  
   
- 文字模型子系統的公用型別包含在*Microsoft.VisualStudio.Text.Data.dll*並*Microsoft.VisualStudio.CoreUtility.dll*，其中只相依於.NET Framework 基底類別庫與 Managed Extensibility Framework (MEF)。  
+  文字模型子系統的公用型別包含在*Microsoft.VisualStudio.Text.Data.dll*並*Microsoft.VisualStudio.CoreUtility.dll*，其中只相依於.NET Framework 基底類別庫與 Managed Extensibility Framework (MEF)。  
   
 ### <a name="text-view-subsystem"></a>文字檢視子系統  
  文字檢視子系統負責格式化和顯示文字。 此子系統中的類型可分為兩個層級，取決於型別是否需要在 Windows Presentation Foundation (WPF)。 最重要的類型是<xref:Microsoft.VisualStudio.Text.Editor.ITextView>和<xref:Microsoft.VisualStudio.Text.Editor.IWpfTextView>，可控制要顯示的文字行的集合以及插入號、 選取項目和使用 WPF UI 項目來裝飾文字的功能。 此子系統也提供文字周圍的邊界會顯示區域。 這些邊界可加以擴充，而且可以包含不同類型的內容和視覺效果。 邊界的範例包括行數字的顯示和捲軸。  

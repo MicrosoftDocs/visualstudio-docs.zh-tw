@@ -18,12 +18,12 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 25765d8238464d599833462561d35ff105ce5de0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 79eb5226b9acc9f893b35b0d52ea370b6ceb7806
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49207359"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49892022"
 ---
 # <a name="idiasectioncontribgetlength"></a>IDiaSectionContrib::get_length
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

@@ -16,12 +16,12 @@ ms.assetid: 6f2e872c-5ba2-4303-9f50-a90cef9a6225
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f3e03ea9985840d20c812f56d7a0f9cae66420cc
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ff386c2f333d3558aa6631dd2e4c13f8bfd595c2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49261805"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49838747"
 ---
 # <a name="test-area-6-delete"></a>測試區域 6︰刪除
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -32,13 +32,13 @@ ms.locfileid: "49261805"
   
  以下是一份可刪除的項目：  
   
--   檔案  
+- 檔案  
   
--   資料夾  
+- 資料夾  
   
--   專案  
+- 專案  
   
- 根據專案類型中，您可能必須選擇**移除**專案 （分葉磁碟上的檔案） 或**刪除**（移除磁碟上的檔案） 的專案。 任何一項動作會移除專案或項目從**方案總管 中**。  
+  根據專案類型中，您可能必須選擇**移除**專案 （分葉磁碟上的檔案） 或**刪除**（移除磁碟上的檔案） 的專案。 任何一項動作會移除專案或項目從**方案總管 中**。  
   
 ## <a name="expected-behavior"></a>預期的行為  
  刪除測試區域中的測試案例的預期的行為是：  

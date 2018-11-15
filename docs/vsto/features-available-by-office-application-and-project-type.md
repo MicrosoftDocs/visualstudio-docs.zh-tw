@@ -22,21 +22,21 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2bbb0aad4db91119c3754a27cc5410769b494e65
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 6fac14df471b0dfcda1d0bf4763158280211bc33
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35671122"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50672443"
 ---
 # <a name="features-available-by-office-application-and-project-type"></a>依 Office 應用程式和專案類型提供的功能
   Visual Studio 有幾種類型的專案範本，可支援不同的 Microsoft Office 應用程式商務案例，包括下列類型：  
   
--   文件層級自訂。  
+- 文件層級自訂。  
   
--   VSTO 增益集。  
+- VSTO 增益集。  
   
- 並非所有應用程式都可以使用每個專案類型。 例如，文件層級專案僅用於 Microsoft Office Word 和 Microsoft Office Excel。 同樣地，某些功能僅用於特定類型的專案或應用程式。 例如，執行窗格只用於文件層級專案，而功能區擴充功能只用於某些應用程式。 如需不同專案類型的詳細資訊，請參閱[Office 方案開發概觀&#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)。  
+  並非所有應用程式都可以使用每個專案類型。 例如，文件層級專案僅用於 Microsoft Office Word 和 Microsoft Office Excel。 同樣地，某些功能僅用於特定類型的專案或應用程式。 例如，執行窗格只用於文件層級專案，而功能區擴充功能只用於某些應用程式。 如需不同專案類型的詳細資訊，請參閱[Office 方案開發概觀&#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)。  
   
 > [!NOTE]  
 >  Office 專案範本只用於某些版本的 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。 如需詳細資訊，請參閱 <<c0> [ 設定電腦以開發 Office 方案](../vsto/configuring-a-computer-to-develop-office-solutions.md)。  
@@ -62,9 +62,9 @@ ms.locfileid: "35671122"
 |公開的 VSTO 增益集至其他 Microsoft Office 方案中的物件。|VSTO 增益集專案。|[從其他 Office 方案呼叫 VSTO 增益集的程式碼](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md)|  
 |下列主控制項：<br /><br /> -圖表<br />-ListObject<br />-NamedRange<br />-內容控制項<br />-書籤|文件層級專案。<br /><br /> Word 和 Excel 的 VSTO 增益集專案。|[主項目和主控制項概觀](../vsto/host-items-and-host-controls-overview.md)|  
 |下列主控制項：<br /><br /> -XMLMappedRange<br />-XMLNode<br />-XMLNodes|文件層級專案。|[主項目和主控制項概觀](../vsto/host-items-and-host-controls-overview.md)|  
-|多專案部署。|文件層級專案。<br /><br /> VSTO 增益集專案。|[逐步解說： 部署單一的 ClickOnce 安裝程式中的多個 Office 方案](http://msdn.microsoft.com/051223c0-4082-4799-b78b-a4763a9def55)|  
+|多專案部署。|文件層級專案。<br /><br /> VSTO 增益集專案。|[逐步解說： 部署單一的 ClickOnce 安裝程式中的多個 Office 方案](https://msdn.microsoft.com/051223c0-4082-4799-b78b-a4763a9def55)|  
 |Outlook 表單區域。|Outlook 的 VSTO 增益集專案。|[建立 Outlook 表單區域](../vsto/creating-outlook-form-regions.md)|  
-|部署後動作。|文件層級專案。<br /><br /> VSTO 增益集專案。|[逐步解說： 在 ClickOnce 安裝之後將文件複製到終端使用者電腦](http://msdn.microsoft.com/100090f7-bc63-4152-b3e1-19b48bc27466)|  
+|部署後動作。|文件層級專案。<br /><br /> VSTO 增益集專案。|[逐步解說： 在 ClickOnce 安裝之後將文件複製到終端使用者電腦](https://msdn.microsoft.com/100090f7-bc63-4152-b3e1-19b48bc27466)|  
 |功能區自訂。|文件層級專案。<br /><br /> 下列應用程式的 VSTO 增益集專案：<br /><br /> Excel<br />-InfoPath (InfoPath 2013 與 InfoPath 2010 只）<br />-Outlook<br />-PowerPoint<br />專案<br />-Visio<br />字組|[功能區概觀](../vsto/ribbon-overview.md)|  
 |視覺文件設計工具。|文件層級專案。|[在 Visual Studio 環境中的 office 專案](../vsto/office-projects-in-the-visual-studio-environment.md)|  
   

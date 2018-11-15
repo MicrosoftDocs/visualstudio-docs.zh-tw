@@ -28,12 +28,12 @@ caps.latest.revision: 29
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 913ade98ef643e5e962fb87dc71afdf526c92cce
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8e3bb3994792eef69fec52fe580904c0285f827e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49183244"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49874718"
 ---
 # <a name="context-operator-c"></a>內容運算子 (C++)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,17 +59,17 @@ ms.locfileid: "49183244"
     EXAMPLE.dll!SomeFunction  
     ```  
   
--   *module* 是模組的名稱。 您可以使用完整路徑釐清具有相同名稱的模組。  
+- *module* 是模組的名稱。 您可以使用完整路徑釐清具有相同名稱的模組。  
   
-     如果 *module* 路徑包含逗號、內嵌空格或大括號，您就必須使用引號括住路徑，如此內容剖析器才能正確辨識字串。 單引號會視為 Windows 檔案名稱的一部分，因此您必須使用雙引號。 例如，套用至物件的  
+   如果 *module* 路徑包含逗號、內嵌空格或大括號，您就必須使用引號括住路徑，如此內容剖析器才能正確辨識字串。 單引號會視為 Windows 檔案名稱的一部分，因此您必須使用雙引號。 例如，套用至物件的  
   
-    ```cpp  
-    {,,"a long, long, library name.dll"} g_Var  
-    ```  
+  ```cpp  
+  {,,"a long, long, library name.dll"} g_Var  
+  ```  
   
--   *expression* 是解析為有效目標的任何有效 C++ 運算式，例如 *module*中的函式名稱、變數名稱或指標位址。  
+- *expression* 是解析為有效目標的任何有效 C++ 運算式，例如 *module*中的函式名稱、變數名稱或指標位址。  
   
- 當運算式評估工具在運算式中遇到符號時，它會依照下列順序搜尋該符號：  
+  當運算式評估工具在運算式中遇到符號時，它會依照下列順序搜尋該符號：  
   
 1.  語彙範圍向外擴展，從目前區塊開始 (大括號括住的一連串陳述式)，並繼續向外擴展至封閉區塊。 目前區塊是包含目前位置 (指令指標位址) 的程式碼。  
   

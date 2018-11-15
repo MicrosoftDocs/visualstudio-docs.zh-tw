@@ -15,12 +15,12 @@ ms.assetid: 48a9d66e-d51c-4376-a95a-15796643a9f2
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2ae3c50d33cefe6074f42e5923b5a0bf49cc2f22
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1b707e92c3d7b576368b5d00459c2b329928a242
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49213768"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49843167"
 ---
 # <a name="implementing-command-handling-for-nested-projects"></a>實作巢狀專案的命令處理
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -36,27 +36,27 @@ IDE 可以傳遞命令，會傳遞<xref:Microsoft.VisualStudio.Shell.Interop.IVs
   
 #### <a name="to-implement-command-handling"></a>若要實作命令處理  
   
-1.  當使用者選取巢狀的專案或節點中的巢狀專案：  
+1. 當使用者選取巢狀的專案或節點中的巢狀專案：  
   
-    1.  IDE 呼叫<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A>方法。  
+   1. IDE 呼叫<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A>方法。  
   
-     — 或 —  
+      — 或 —  
   
-    1.  如果此命令，在 階層 視窗中，例如在 方案總管的捷徑功能表命令產生 IDE 便會呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.QueryStatusCommand%2A>專案的父代上的方法。  
+   2. 如果此命令，在 階層 視窗中，例如在 方案總管的捷徑功能表命令產生 IDE 便會呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.QueryStatusCommand%2A>專案的父代上的方法。  
   
-2.  父專案可以檢查傳遞給參數`QueryStatus`，這類`pguidCmdGroup`和`prgCmds`，以決定父專案是否應該篩選命令。 如果父專案來篩選命令來實作，它應該設定：  
+2. 父專案可以檢查傳遞給參數`QueryStatus`，這類`pguidCmdGroup`和`prgCmds`，以決定父專案是否應該篩選命令。 如果父專案來篩選命令來實作，它應該設定：  
   
-    ```  
-    prgCmds[0].cmdf = OLECMDF_SUPPORTED;  
-    // make sure it is disabled  
-    prgCmds[0].cmdf &= ~MSOCMDF_ENABLED;  
-    ```  
+   ```  
+   prgCmds[0].cmdf = OLECMDF_SUPPORTED;  
+   // make sure it is disabled  
+   prgCmds[0].cmdf &= ~MSOCMDF_ENABLED;  
+   ```  
   
-     則應傳回父專案`S_OK`。  
+    則應傳回父專案`S_OK`。  
   
-     如果父專案不會篩選命令，它應該只傳回`S_OK`。 在此情況下，IDE 會自動將命令路由至子專案。  
+    如果父專案不會篩選命令，它應該只傳回`S_OK`。 在此情況下，IDE 會自動將命令路由至子專案。  
   
-     若要將命令路由傳送至子專案沒有父專案。 IDE 會執行此工作...  
+    若要將命令路由傳送至子專案沒有父專案。 IDE 會執行此工作...  
   
 ## <a name="see-also"></a>另請參閱  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy>   

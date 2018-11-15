@@ -1,5 +1,5 @@
 ---
-title: IDebugErrorBreakpointResolution2::GetResolutionInfo |Microsoft 文件
+title: IDebugErrorBreakpointResolution2::GetResolutionInfo |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 54d7f713eb070a578993d79bf80dc3a7b74833f0
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 475bfaae3e55af761eb1d19841d9b0aadad7a9e7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31112346"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49877067"
 ---
 # <a name="idebugerrorbreakpointresolution2getresolutioninfo"></a>IDebugErrorBreakpointResolution2::GetResolutionInfo
-取得中斷點錯誤解析資訊。  
+取得中斷點解析錯誤資訊。  
   
 ## <a name="syntax"></a>語法  
   
@@ -43,16 +43,16 @@ int GetResolutionInfo(
   
 #### <a name="parameters"></a>參數  
  `dwFields`  
- [in]從旗標的組合[BPERESI_FIELDS](../../../extensibility/debugger/reference/bperesi-fields.md)列舉型別，以決定哪些欄位的`pErrorResolutionInfo`會填入。  
+ [in]從旗標的組合[BPERESI_FIELDS](../../../extensibility/debugger/reference/bperesi-fields.md)列舉型別，判斷哪些欄位`pErrorResolutionInfo`要填寫。  
   
  `pErrorResolutionInfo`  
- [in、 out][BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md)填入這些中斷點解決方式描述的結構。  
+ [in、 out][BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md)會填入的中斷點解析描述的結構。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
   
 ## <a name="example"></a>範例  
- 下列範例會實作這個方法來簡單`CDebugErrorBreakpointResolution`公開物件[IDebugErrorBreakpointResolution2](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2.md)介面。  
+ 下列範例會實作這個方法來簡單`CDebugErrorBreakpointResolution`公開的物件[IDebugErrorBreakpointResolution2](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2.md)介面。  
   
 ```  
 HRESULT CDebugErrorBreakpointResolution::GetResolutionInfo(  

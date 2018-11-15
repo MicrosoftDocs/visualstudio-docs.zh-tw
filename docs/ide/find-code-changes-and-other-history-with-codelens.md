@@ -4,17 +4,19 @@ ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
+f1_keywords:
+- VS.ToolsOptionsPages.Text_Editor.All_Languages.CodeLens
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b50ea1ae20f6d8a03609dfd37a080108ca2e58e
-ms.sourcegitcommit: 4708f0ba09b540424efcc344f8438f25432e3d51
+ms.openlocfilehash: e11b7458c5d26d56252b228522c53b00ebadb35b
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/11/2018
-ms.locfileid: "44384197"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220296"
 ---
 # <a name="find-code-changes-and-other-history-with-codelens"></a>尋找 CodeLens 的程式碼變更和其他記錄
 
@@ -162,7 +164,7 @@ CodeLens 可讓您在了解程式碼發生什麼事時，也能保持專注在�
 **分支**資料行中的圖示告訴您該分支與您正在處理的分支的相關性。
 
 |**圖示**|**變更來源：**|
-|--------------|-----------------------------------------|
+|--------------| - |
 |![CodeLens - 從目前分支變更圖示](../ide/media/codelensbranchcurrenticon.png)|目前分支|
 |![CodeLens： 從父分支變更圖示](../ide/media/codelensbranchparenticon.png)|父分支|
 |![CodeLens - 從子分支變更圖示](../ide/media/codelensbranchchildicon.png)|子分支|
@@ -295,7 +297,7 @@ CodeLens 不支援安裝不同版本的 Lync 或 Skype。 它們可能尚未對�
 
 4. 按 **Tab** 鍵移至 [顯示設定:] 清單，然後按**向下鍵**選取 [CodeLens]。
 
-### <a name="q-can-i-move-the-codelens-heads-up-display"></a>問： 是否可以移動 CodeLens`head`的顯示器？
+### <a name="q-can-i-move-the-codelens-heads-up-display"></a>問：我可以移動 CodeLens 平視顯示窗嗎？
 
 **答：** 可以，選擇![固定圖示](../ide/media/codelensdockwindow.png)可將 CodeLens 固定為視窗。
 

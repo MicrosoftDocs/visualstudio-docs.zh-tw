@@ -15,12 +15,12 @@ caps.latest.revision: 39
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: e550d7c34640b1c4b436f6a2e098a3f3ee494757
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c6ed7f72a8125d2307b91cd829bd6f474145fa78
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49234399"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49827476"
 ---
 # <a name="define-and-install-a-modeling-extension"></a>定義和安裝模型擴充功能
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,13 +35,13 @@ ms.locfileid: "49234399"
 ## <a name="creating-a-modeling-extension-solution"></a>建立模型擴充功能方案  
  若要定義模型擴充功能，您必須建立包含這些專案的方案：  
   
--   [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 整合擴充功能 (VSIX) 專案。 這會產生做為您擴充功能元件之安裝程式的檔案。  
+- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 整合擴充功能 (VSIX) 專案。 這會產生做為您擴充功能元件之安裝程式的檔案。  
   
--   類別庫專案，包括程式碼之元件的必要項目。  
+- 類別庫專案，包括程式碼之元件的必要項目。  
   
- 如果您想要建立具有數個元件的擴充功能，則可以在單一方案中開發它們。 您只需要一個 VSIX 專案。  
+  如果您想要建立具有數個元件的擴充功能，則可以在單一方案中開發它們。 您只需要一個 VSIX 專案。  
   
- 不需要程式碼的元件 (例如自訂工具箱項目和自訂 UML 設定檔) 可以直接加入 VSIX 專案，而不使用個別的類別庫專案。 需要程式碼的元件會更輕鬆地定義於個別的類別庫專案中。 需要程式碼的元件包括軌跡處理常式、功能表命令和驗證程式碼。  
+  不需要程式碼的元件 (例如自訂工具箱項目和自訂 UML 設定檔) 可以直接加入 VSIX 專案，而不使用個別的類別庫專案。 需要程式碼的元件會更輕鬆地定義於個別的類別庫專案中。 需要程式碼的元件包括軌跡處理常式、功能表命令和驗證程式碼。  
   
 #### <a name="to-create-a-class-library-project-for-menu-commands-gesture-handlers-or-validation"></a>建立功能表命令、軌跡處理常式或驗證的類別庫專案  
   
@@ -133,15 +133,15 @@ ms.locfileid: "49234399"
   
 #### <a name="to-uninstall-an-extension"></a>解除安裝擴充功能  
   
-1.  在 [工具]  功能表上，按一下 [擴充功能和更新] 。  
+1. 在 [工具]  功能表上，按一下 [擴充功能和更新] 。  
   
-2.  展開 [已安裝的擴充功能] 。  
+2. 展開 [已安裝的擴充功能] 。  
   
-3.  選取擴充功能，然後按一下 [解除安裝] 。  
+3. 選取擴充功能，然後按一下 [解除安裝] 。  
   
- 在很少見的情況下，故障的擴充功能無法載入並且會在錯誤視窗中建立報告，但不會顯示在擴充管理員中。 在此情況下，您可以移除延伸模組，從下列位置刪除檔案所在 *%localappdata%* 通常*DriveName*: \Users\\*的使用者名稱*\AppData\Local:  
+   在很少見的情況下，故障的擴充功能無法載入並且會在錯誤視窗中建立報告，但不會顯示在擴充管理員中。 在此情況下，您可以移除延伸模組，從下列位置刪除檔案所在 *%localappdata%* 通常*DriveName*: \Users\\*的使用者名稱*\AppData\Local:  
   
- *%Localappdata%* **\Microsoft\VisualStudio\\[version] \Extensions**  
+   *%Localappdata%* **\Microsoft\VisualStudio\\[version] \Extensions**  
   
 ## <a name="see-also"></a>另請參閱  
  [定義要擴充 UML 的設定檔](../modeling/define-a-profile-to-extend-uml.md)   

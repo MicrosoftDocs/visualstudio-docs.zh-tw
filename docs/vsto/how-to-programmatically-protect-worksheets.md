@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b737fc8b589d746a5fa733c835d64c4af30a221b
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 819a1f4e07397720d806d887408b9e45aeda9ea5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35671714"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49867178"
 ---
 # <a name="how-to-programmatically-protect-worksheets"></a>如何： 以程式設計方式保護工作表
   Microsoft Office Excel 中的保護功能有助於防止使用者和程式碼修改工作表中的物件。 根據預設，開啟保護之後所有的儲存格都會鎖定。  
@@ -39,11 +39,11 @@ ms.locfileid: "35671714"
   
 ### <a name="to-protect-a-worksheet-in-the-designer"></a>若要用設計工具保護工作表  
   
-1.  在 **變更**的群組**檢閱**索引標籤上，按一下 **保護工作表**。  
+1. 在 **變更**的群組**檢閱**索引標籤上，按一下 **保護工作表**。  
   
-     **保護工作表** 對話方塊隨即出現。 您可以設定密碼，並且選擇性地指定允許使用者對工作表執行某些動作 (例如格式化儲存格或插入列)。  
+    **保護工作表** 對話方塊隨即出現。 您可以設定密碼，並且選擇性地指定允許使用者對工作表執行某些動作 (例如格式化儲存格或插入列)。  
   
- 您也可以允許使用者在受保護的工作表中編輯特定的範圍。  
+   您也可以允許使用者在受保護的工作表中編輯特定的範圍。  
   
 ### <a name="to-allow-editing-in-specific-ranges"></a>若要允許在特定範圍中進行編輯  
   

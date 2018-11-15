@@ -14,12 +14,12 @@ caps.latest.revision: 21
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: f7d2987084235f88d8360bb344445faa311956dc
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5c126fab0226198fc182fe2c6c956594a11dc2ed
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49226495"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49831714"
 ---
 # <a name="generate-files-from-a-uml-model"></a>透過 UML 模型產生檔案
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,26 +28,26 @@ ms.locfileid: "49226495"
   
  有三種主要案例：  
   
--   [從功能表命令產生檔案](#Command)或軌跡。 您可以定義 UML 模型上可用的 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 命令。  
+- [從功能表命令產生檔案](#Command)或軌跡。 您可以定義 UML 模型上可用的 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 命令。  
   
--   [從應用程式產生檔案](#Application)。 您可以撰寫可讀取 UML 模型並產生檔案的應用程式。  
+- [從應用程式產生檔案](#Application)。 您可以撰寫可讀取 UML 模型並產生檔案的應用程式。  
   
--   [在設計階段產生](#Design)。 您可以使用模型來定義一些應用程式功能，並在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 方案內產生程式碼、資源等。  
+- [在設計階段產生](#Design)。 您可以使用模型來定義一些應用程式功能，並在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 方案內產生程式碼、資源等。  
   
- 本主題結尾的討論[如何使用文字產生](#What)。 如需詳細資訊，請參閱 <<c0> [ 程式碼產生和 T4 文字範本](../modeling/code-generation-and-t4-text-templates.md)。  
+  本主題結尾的討論[如何使用文字產生](#What)。 如需詳細資訊，請參閱 <<c0> [ 程式碼產生和 T4 文字範本](../modeling/code-generation-and-t4-text-templates.md)。  
   
 ##  <a name="Command"></a> 從功能表命令產生檔案  
  您可以在 UML 功能表命令內使用前置處理文字範本。 在文字範本的程式碼或不同的部分類別中，您可以讀取圖表所檢視的模型。  
   
  如需這些功能的詳細資訊，請閱讀下列主題：  
   
--   [在模型圖上定義功能表命令](../modeling/define-a-menu-command-on-a-modeling-diagram.md)  
+- [在模型圖上定義功能表命令](../modeling/define-a-menu-command-on-a-modeling-diagram.md)  
   
--   [使用 T4 文字範本在執行階段產生文字](../modeling/run-time-text-generation-with-t4-text-templates.md)  
+- [使用 T4 文字範本在執行階段產生文字](../modeling/run-time-text-generation-with-t4-text-templates.md)  
   
--   [巡覽 UML 模型](../modeling/navigate-the-uml-model.md)  
+- [巡覽 UML 模型](../modeling/navigate-the-uml-model.md)  
   
- 下列範例中所示範的方法適用於從其中一個模型圖起始作業時，透過單一模型產生文字。 若要處理個別的內容中的模型，請考慮使用[Visual Studio Modelbus](../modeling/integrate-uml-models-with-other-models-and-tools.md)存取模型和其項目。  
+  下列範例中所示範的方法適用於從其中一個模型圖起始作業時，透過單一模型產生文字。 若要處理個別的內容中的模型，請考慮使用[Visual Studio Modelbus](../modeling/integrate-uml-models-with-other-models-and-tools.md)存取模型和其項目。  
   
 ### <a name="example"></a>範例  
  若要執行這個範例，請建立 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 延伸模組 (VSIX) 專案。 此範例中使用的專案名稱是`VdmGenerator`。 在  **source.extension.vsixmanifest**檔案中，按一下**加入內容**並將 類型 欄位設定為**MEF 元件**以及參考目前專案的來源路徑。 如需如何設定這種類型的專案的詳細資訊，請參閱[在模型圖上定義功能表命令](../modeling/define-a-menu-command-on-a-modeling-diagram.md)。  
@@ -174,41 +174,41 @@ Type Class2 ::
   
 ##### <a name="to-set-up-a-visual-studio-solution-for-this-example"></a>針對這個範例設定 Visual Studio 方案  
   
-1.  在新方案的模型專案中建立 UML 類別圖。  
+1. 在新方案的模型專案中建立 UML 類別圖。  
   
-    1.  在 **架構**功能表上，按一下**新圖表**。  
+   1.  在 **架構**功能表上，按一下**新圖表**。  
   
-    2.  選取  **UML 類別圖**。  
+   2.  選取  **UML 類別圖**。  
   
-    3.  遵循提示以建立新的方案和模型專案。  
+   3.  遵循提示以建立新的方案和模型專案。  
   
-    4.  從工具箱拖曳「UML 類別」工具，以將一些類別加入圖表。  
+   4.  從工具箱拖曳「UML 類別」工具，以將一些類別加入圖表。  
   
-    5.  儲存檔案。  
+   5.  儲存檔案。  
   
-2.  在相同的方案中，建立 C# 或 Visual Basic 專案。  
+2. 在相同的方案中，建立 C# 或 Visual Basic 專案。  
   
-    -   在 [方案總管] 中，以滑鼠右鍵按一下方案，指向**新增**，然後按一下**新的專案**。 底下**已安裝的範本**，按一下**Visual Basic**或是**Visual C#** ，然後選取 專案類型這類**主控台應用程式**。  
+   -   在 [方案總管] 中，以滑鼠右鍵按一下方案，指向**新增**，然後按一下**新的專案**。 底下**已安裝的範本**，按一下**Visual Basic**或是**Visual C#** ，然後選取 專案類型這類**主控台應用程式**。  
   
-3.  將純文字檔加入 C# 或 Visual Basic 專案。 這個檔案將包含您要撰寫數個文字範本時共用的程式碼。  
+3. 將純文字檔加入 C# 或 Visual Basic 專案。 這個檔案將包含您要撰寫數個文字範本時共用的程式碼。  
   
-    -   在 [方案總管] 中，以滑鼠右鍵按一下專案，指向**新增**，然後按一下**新項目**。 選取 **文字檔**。  
+   - 在 [方案總管] 中，以滑鼠右鍵按一下專案，指向**新增**，然後按一下**新項目**。 選取 **文字檔**。  
   
      插入下列區段中顯示的文字。  
   
-4.  將文字範本檔案加入 C# 或 Visual Basic 專案。  
+4. 將文字範本檔案加入 C# 或 Visual Basic 專案。  
   
-    -   在 [方案總管] 中，以滑鼠右鍵按一下專案，指向**新增**，然後按一下**新項目**。 選取 **文字範本**。  
+   - 在 [方案總管] 中，以滑鼠右鍵按一下專案，指向**新增**，然後按一下**新項目**。 選取 **文字範本**。  
   
      將後面的程式碼插入文字範本檔案中。  
   
-5.  儲存文字範本檔案。  
+5. 儲存文字範本檔案。  
   
-6.  檢查附屬檔案中的程式碼。 它應該包含模型中每個 UML 類別的類別。  
+6. 檢查附屬檔案中的程式碼。 它應該包含模型中每個 UML 類別的類別。  
   
-    1.  在 Visual Basic 專案中，按一下**顯示所有檔案**在 [方案總管] 工具列中。  
+   1.  在 Visual Basic 專案中，按一下**顯示所有檔案**在 [方案總管] 工具列中。  
   
-    2.  展開方案總管中的範本檔案節點。  
+   2.  展開方案總管中的範本檔案節點。  
   
 #### <a name="content-of-the-shared-text-file"></a>共用文字檔的內容  
  在這個範例中，檔案稱為 SharedTemplateCode.txt，而且位於與文字範本相同的資料夾中。  

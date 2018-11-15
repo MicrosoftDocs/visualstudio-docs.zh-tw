@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b7e42c274bd1ef5bb2d04db2e856418ea6719f8
-ms.sourcegitcommit: 4708f0ba09b540424efcc344f8438f25432e3d51
+ms.openlocfilehash: 6eba5c5dc2ec357d9aaf6a5e8f9cdef18102b8da
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/11/2018
-ms.locfileid: "44384288"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49856167"
 ---
 # <a name="install-visual-studio-2017"></a>安裝 Visual Studio 2017
 
@@ -63,11 +63,11 @@ ms.locfileid: "44384288"
 
 1. 從您的 [下載] 資料夾中，按兩下符合或類似於下列其中一項檔案的啟動載入器：
 
-  * **vs_enterprise.exe** (適用於 Visual Studio Enterprise)
-  * **vs_professional.exe** (適用於 Visual Studio Professional)
-  * **vs_community.exe** (適用於 Visual Studiofor Community)  <br><br>
+   * **vs_enterprise.exe** (適用於 Visual Studio Enterprise)
+   * **vs_professional.exe** (適用於 Visual Studio Professional)
+   * **vs_community.exe** (適用於 Visual Studiofor Community)  <br><br>
 
-  如果您收到 [使用者帳戶控制] 通知，請按一下 [是]。
+   如果您收到 [使用者帳戶控制] 通知，請按一下 [是]。
 
 2. 我們將會要求您認可 Microsoft [授權條款](https://visualstudio.microsoft.com/license-terms/)和 Microsoft [隱私權聲明](https://privacy.microsoft.com/privacystatement)。 按一下 [ **繼續**]。
 
@@ -79,7 +79,7 @@ ms.locfileid: "44384288"
 
 1. 在 [安裝 Visual Studio] 畫面中找到您想要的工作負載。
 
- ![從 Visual Studio 2017 設定對話方塊中選取工作負載](../install/media/install-visual-studio-community.png)
+   ![從 Visual Studio 2017 設定對話方塊中選取工作負載](../install/media/install-visual-studio-community.png)
 
      例如，選擇「.NET 桌面開發」工作負載。 它隨附預設核心編輯器，其中包括超過 20 種語言的基本程式碼編輯支援、能夠從任何資料夾開啟及編輯程式碼而不需要專案，以及整合的原始程式碼控制。
 
@@ -130,15 +130,17 @@ ms.locfileid: "44384288"
 
 ## <a name="step-8---start-developing"></a>步驟 8 - 開始開發
 
-1. 當 Visual Studio 安裝完成之後，請按一下 [啟動] 按鈕來[開始使用 Visual Studio 進行開發](../ide/get-started-developing-with-visual-studio.md)。
+1. 當 Visual Studio 安裝完成之後，請按一下 [啟動] 按鈕來開始使用 Visual Studio 進行開發。
 
 2. 按一下 [檔案]，然後按一下 [新增專案]。
 
-3. 選取專案類型。 <br><br>
-   例如，若要[建置 C++ 應用程式](../ide/getting-started-with-cpp-in-visual-studio.md)，請按一下 [已安裝]，展開 [Visual C++]，然後選取您要建置的 C++ 專案類型。 <br><br>
+3. 選取專案類型。
+
+   例如，若要[建置 C++ 應用程式](../ide/getting-started-with-cpp-in-visual-studio.md)，請按一下 [已安裝]，展開 [Visual C++]，然後選取您要建置的 C++ 專案類型。
+
    若要[建置 C# 應用程式](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)，請按一下 [已安裝]，展開 [Visual C#]，然後選取您要建置的 C# 專案類型。
 
-[!INCLUDE[install_get_support_md](includes/install_get_support_md.md)] 
+[!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
 ## <a name="see-also"></a>另請參閱
 

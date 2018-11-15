@@ -2,7 +2,7 @@
 title: Visual Studio 中的 C# 和 ASP.NET Core 使用者入門
 description: 了解如何在 Visual Studio 中使用 C# 逐步建立 ASP.NET Core Web 應用程式。
 ms.custom: ''
-ms.date: 09/17/2018
+ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
 ms.topic: tutorial
@@ -15,18 +15,30 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: d0e337ebb97b487adfd79be43ddc1301612ba090
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: d684ecb9e29dd4c6f140ad7d6f52e301e0d0da13
+ms.sourcegitcommit: 401be39a42ffe007593528b5bba62583ca9fcafd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46496112"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50244485"
 ---
 # <a name="tutorial-get-started-with-c-and-aspnet-core-in-visual-studio"></a>教學課程：Visual Studio 中的 C# 和 ASP.NET Core 使用者入門
 
 在這個使用 Visual Studio 透過 ASP.NET Core 進行 C# 開發的教學課程中，您將建立 C# ASP.NET Core Web 應用程式、對其進行變更、探索 IDE 的一些功能，然後執行應用程式。
 
+## <a name="before-you-begin"></a>開始之前
+
+### <a name="install-visual-studio"></a>安裝 Visual Studio
+
 如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)頁面免費進行安裝。
+
+### <a name="update-visual-studio"></a>更新 Visual Studio 2017
+
+如果您已經安裝 Visual Studio，請確定您執行的是最新版本。 如需如何更新安裝的詳細資訊，請參閱[將 Visual Studio 2017 更新至最新版本](../install/update-visual-studio.md)頁面。
+
+### <a name="choose-your-theme-optional"></a>選擇您的佈景主題 (選擇性)
+
+本教學課程包含使用深色佈景主題的螢幕擷取畫面。 如果您未使用深色佈景主題，但想要使用，請參閱[將 Visual Studio IDE 和編輯器個人化](quickstart-personalize-the-ide.md)頁面以了解做法。
 
 ## <a name="create-a-project"></a>建立專案
 
@@ -46,7 +58,7 @@ ms.locfileid: "46496112"
 
 #### <a name="option-1-use-the-new-project-dialog-box"></a>選項 1：使用 [新增專案] 對話方塊
 
-1. 選取 [新增專案] 對話方塊左窗格中的 [開啟 Visual Studio 安裝程式] 連結。
+1. 選取 [新增專案] 對話方塊左窗格中的 [開啟 Visual Studio 安裝程式] 連結。 (根據您的顯示設定，您可能必須捲動才能看到它。)
 
    ![從 [新增專案] 對話方塊中選取 [開啟 Visual Studio 安裝程式] 連結](../ide/media/open-visual-studio-installer-mycoreapp.png)
 
@@ -71,6 +83,9 @@ ms.locfileid: "46496112"
 1. 確認 [ASP.NET Core 2.1] 出現在頂端的下拉式功能表中。 然後選擇 [確定]。
 
    ![新增 ASP.NET Core Web 應用程式對話方塊](../ide/media/new-project-csharp-aspnet-razor-web-app.png)
+
+   > [!NOTE]
+   > 如果您在頂端的下拉式選單中沒有看到 [ASP.NET Core 2.0] 或更新版本，請確定您執行最新版本的 Visual Studio。 如需如何更新安裝的詳細資訊，請參閱[將 Visual Studio 2017 更新至最新版本](../install/update-visual-studio.md)頁面。
 
 ### <a name="about-your-solution"></a>關於方案
 
@@ -131,7 +146,7 @@ ms.locfileid: "46496112"
 
 1. 將瀏覽器視窗保持開啟，並回到 Visual Studio。
 
-1. 在 Visual Studio 中，選擇 [About.cshtml]。 然後，刪除文字 _changed_，並在其位置新增文字 _file and directory_。
+1. 在 Visual Studio 中，選擇 [About.cshtml]。 然後，刪除文字 _additional_，並在其位置新增文字 _file and directory_。
 
     ![變更 About.cshtml 檔案中的文字](../ide/media/csharp-aspnet-razor-aboutcshtml-mycoreapp-code-changed.png)
 
@@ -197,4 +212,4 @@ Visual Studio 是開發人員生產力工具的整合式開發套件。 請將�
 
 ## <a name="see-also"></a>另請參閱
 
-[使用 Visual Studio 將 Web 應用程式發行到 Azure App Service](..//deployment/quickstart-deploy-to-azure.md)
+[使用 Visual Studio 將 Web 應用程式發行到 Azure App Service](../deployment/quickstart-deploy-to-azure.md)

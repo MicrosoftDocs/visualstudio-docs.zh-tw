@@ -1,5 +1,5 @@
 ---
-title: IDebugField::GetSize |Microsoft 文件
+title: IDebugField::GetSize |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6e7343f6d496587c3fbf69adf3ec56a9f516a9be
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4bd47ac87eb61876302215f6a1e7e8aeed53c287
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31110350"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49867542"
 ---
 # <a name="idebugfieldgetsize"></a>IDebugField::GetSize
-這個方法會取得欄位，以位元組為單位的大小。  
+這個方法會取得一個欄位，以位元組為單位的大小。  
   
 ## <a name="syntax"></a>語法  
   
@@ -44,10 +44,10 @@ int GetSize(
  [out]傳回的大小。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
   
 ## <a name="remarks"></a>備註  
- 所有欄位都具有型別和所有型別都有大小。 比方說，類型為位元組的欄位有 1 個位元組的大小。  
+ 所有欄位都有型別和所有類型都有一個大小。 例如，類型為位元組欄位有 1 個位元組的大小。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

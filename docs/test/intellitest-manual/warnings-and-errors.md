@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 75cda2b45137d982038587ee1dcb73661b77f0df
-ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
+ms.openlocfilehash: efb82a7419ba58c27ccab864d2360538075a1089
+ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34815791"
+ms.lasthandoff: 11/05/2018
+ms.locfileid: "51000610"
 ---
 # <a name="warnings-and-errors"></a>警告和錯誤
 
@@ -81,9 +81,9 @@ public void MyTest(...) {
 在測試程式碼中，您可以使用 [PexSymbolicValue](static-helper-classes.md#pexsymbolicvalue) 略過迴圈條件產生的條件約束：
 
 ```csharp
-for (int i=0; 
+for (int i=0;
     PexSymbolicValue.Ignore(i<100); // IntelliTest will 'forget' about this path condition
-    i++) 
+    i++)
 { }
 ```
 
@@ -111,7 +111,7 @@ void ParameterizedTest(int n) {
     { ... }
 
     // irrelevant for MaxConditions, since conditions do not depend on input
-    for (int i=0; i<100; i++) 
+    for (int i=0; i<100; i++)
     { ... }
 }
 ```
@@ -135,7 +135,7 @@ void ParameterizedTest(int n) {
     int nshadow = PexSymbolicValue.Ignore(n); // IntelliTest looses track of 'n'
 
     // irrevelant for MaxConditions, since nshadow is not related to input
-    for (int i=0; i<nshadow; i++)  
+    for (int i=0; i<nshadow; i++)
     {...}
 }
 ```
@@ -220,16 +220,18 @@ public void MyTest(...) {
 <a name="help-construct"></a>
 ## <a name="need-help-to-construct-object"></a>需要協助以建構物件
 
-IntelliTest 會[產生測試輸入](input-generation.md)，而某些輸入可能是有欄位的物件。 在這裡，IntelliTest 嘗試產生有私用欄位的類別執行個體，並假設當此私用欄位具有特定值時，會發生有趣的程式行為。 
+IntelliTest 會[產生測試輸入](input-generation.md)，而某些輸入可能是有欄位的物件。
+在這裡，IntelliTest 嘗試產生有私用欄位的類別執行個體，並假設當此私用欄位具有特定值時，會發生有趣的程式行為。
 
-不過，雖然反映很可能出現這種情況，但 IntelliTest 不會製造有任意欄位值的物件。 反倒是在這些情況下，它會依賴使用者提供的相關提示，使用類別的公用方法來建立物件，並將它帶入其私用欄位有所需值的狀態。
+不過，雖然反映很可能出現這種情況，但 IntelliTest 不會製造有任意欄位值的物件。
+反倒是在這些情況下，它會依賴使用者提供的相關提示，使用類別的公用方法來建立物件，並將它帶入其私用欄位有所需值的狀態。
 
-若要了解如何協助 IntelliTest 建構有趣的物件，請參閱[現有類別具現化](input-generation.md#existing-classes)。 
+若要了解如何協助 IntelliTest 建構有趣的物件，請參閱[現有類別具現化](input-generation.md#existing-classes)。
 
 <a name="help-types"></a>
 ## <a name="need-help-to-find-types"></a>需要協助以尋找類型
 
-IntelliTest 會為所有 .NET 類型[產生測試輸入](input-generation.md)。 在這裡，IntelliTest 會嘗試建立衍生自抽象類別的執行個體，或實作抽象的介面，IntelliTest 不知道能滿足這些條件約束的任何類型。 
+IntelliTest 會為所有 .NET 類型[產生測試輸入](input-generation.md)。 在這裡，IntelliTest 會嘗試建立衍生自抽象類別的執行個體，或實作抽象的介面，IntelliTest 不知道能滿足這些條件約束的任何類型。
 
 您可以指向一或多個符合條件約束的類型，協助 IntelliTest。 通常，下列屬性之一會提供幫助：
 
@@ -252,7 +254,7 @@ IntelliTest 會為所有 .NET 類型[產生測試輸入](input-generation.md)。
 <a name="usable-type-guessed"></a>
 ## <a name="usable-type-guessed"></a>猜到可使用的類型
 
-IntelliTest 會為所有 .NET 類型[產生測試輸入](input-generation.md)。 當類型為抽象或介面時，IntelliTest 必須選擇該類型的特定實作。 它需要知道有哪些類型，才能進行這種選擇。 
+IntelliTest 會為所有 .NET 類型[產生測試輸入](input-generation.md)。 當類型為抽象或介面時，IntelliTest 必須選擇該類型的特定實作。 它需要知道有哪些類型，才能進行這種選擇。
 
 當此警告出現時，會指出 IntelliTest 曾查看過一些參考用組件，並找到實作類型，但不確定它是否應該使用該類型，或其他位置是否有更多可用的合適類型。 IntelliTest 只要選擇有希望的類型即可。
 
@@ -275,12 +277,14 @@ IntelliTest 會為所有 .NET 類型[產生測試輸入](input-generation.md)。
 
 IntelliTest 透過監視程式執行[產生測試輸入](input-generation.md)。 請務必正確檢測相關程式碼，以利 IntelliTest 監視其行為。
 
-當已檢測的程式碼呼叫另一個未經檢測組件中的方法時，就會顯示此警告。 如果您希望 IntelliTest 探索兩者的互動，您也必須檢測另一個組件 (或其部分)。
+當已檢測的程式碼呼叫另一個未經檢測組件中的方法時，就會顯示此警告。
+如果您希望 IntelliTest 探索兩者的互動，您也必須檢測另一個組件 (或其部分)。
 
 <a name="external-method-called"></a>
 ## <a name="external-method-called"></a>呼叫了外部方法
 
-IntelliTest 透過監視 .NET 應用程式的執行，[產生測試輸入](input-generation.md)。 IntelliTest 無法為非以 .NET 語言撰寫的程式碼產生有意義的測試輸入。
+IntelliTest 透過監視 .NET 應用程式的執行，[產生測試輸入](input-generation.md)。
+IntelliTest 無法為非以 .NET 語言撰寫的程式碼產生有意義的測試輸入。
 
 當已檢測的程式碼呼叫 IntelliTest 無法分析的未受管理原生方法時，就會顯示此警告。 如果您希望 IntelliTest 探索兩者的互動，您必須模擬未受管理的方法。
 
@@ -289,7 +293,7 @@ IntelliTest 透過監視 .NET 應用程式的執行，[產生測試輸入](input
 
 IntelliTest 透過監視 .NET 應用程式的執行，[產生測試輸入](input-generation.md)。 不過因為技術原因，IntelliTest 無法監視某些方法 。 例如，IntelliTest 無法監視靜態的建構函式。
 
-當已檢測的程式碼呼叫 IntelliTest 無法監視的方法時，就會顯示此警告。 
+當已檢測的程式碼呼叫 IntelliTest 無法監視的方法時，就會顯示此警告。
 
 <a name="testability-issue"></a>
 ## <a name="testability-issue"></a>可測試性問題
@@ -309,7 +313,7 @@ IntelliTest 使用[限制式求解](input-generation.md#constraint-solver)[產�
 * 浮點數和整數之間的轉換
 * **System.Decimal** 類型上的所有作業
 
-當執行過的程式碼執行作業，或呼叫 IntelliTest 無法解譯的方法時，就會顯示此警告。 
+當執行過的程式碼執行作業，或呼叫 IntelliTest 無法解譯的方法時，就會顯示此警告。
 
 <a name="observed-call-mismatch"></a>
 ## <a name="observed-call-mismatch"></a>觀察到呼叫不相符
@@ -321,7 +325,7 @@ IntelliTest 透過監視程式執行[產生測試輸入](input-generation.md)。
 
 * IntelliTest 因監視了某些程式碼而起始了對未經檢測方法的呼叫
 * 未經檢測的方法呼叫了已檢測的方法
-* IntelliTest 會監視已呼叫的已檢測方法 
+* IntelliTest 會監視已呼叫的已檢測方法
 
 IntelliTest 不知道未經檢測的中繼方法做了什麼，因此它可能無法產生與巢狀已檢測呼叫相關的測試輸入。
 
@@ -342,4 +346,4 @@ IntelliTest 不知道未經檢測的中繼方法做了什麼，因此它可能�
 
 ## <a name="got-feedback"></a>有任何意見反應嗎？
 
-您可以在 **[UserVoice](https://visualstudio.uservoice.com/forums/121579-visual-studio-2015/category/157869-test-tools?query=IntelliTest)** 張貼想法和功能要求。
+在[開發人員社群](https://developercommunity.visualstudio.com/content/idea/post.html?space=8)上張貼您的意見與功能建議。

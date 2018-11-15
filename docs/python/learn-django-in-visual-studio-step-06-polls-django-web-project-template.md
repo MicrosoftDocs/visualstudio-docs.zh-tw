@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 433ec0e4df5108dfcf0bae1c8c62af5b0536bc5e
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 9e874db45bca2938a3bceb976c679f45ecf39d69
+ms.sourcegitcommit: 1abb9cf4c3ccb90e3481ea8079272c98aad12875
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45548227"
+ms.lasthandoff: 10/26/2018
+ms.locfileid: "50143472"
 ---
 # <a name="step-6-use-the-polls-django-web-project-template"></a>步驟 6：使用投票 Django Web 專案範本
 
@@ -368,7 +368,7 @@ admin.site.register(Poll, PollAdmin)
 
 在開發電腦上執行 Web 應用程式，只是開放客戶使用應用程式過程中的一個環結而已。 接下來的步驟可能包括下列的事項：
 
-- 將 Web 應用程式部署到生產伺服器，例如 Azure App Service。 請參閱[發行至 Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md)，其中包括如 Django 應用程式所需的特定變更。
+- 將 Web 應用程式部署到生產伺服器，例如 Azure App Service。 請參閱[發佈至 Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md)。
 
 - 建立名為 *templates/404.html* 的範本，以自訂 404 頁面。 如果這個範本存在，Django 就會使用它，而不使用預設範本。 如需詳細資訊，請參閱 Django 文件中的[錯誤檢視](https://docs.djangoproject.com/en/2.0/ref/views/#error-views)。
 
@@ -376,8 +376,4 @@ admin.site.register(Poll, PollAdmin)
 
 - 將 SQLite 的應用程式變更為生產層級資料存放區，例如 PostgreSQL、MySQL 和 SQL Server (它們全部可以在 Azure 上託管)。 如同[何時使用 SQLite](https://www.sqlite.org/whentouse.html) (sqlite.org) 所述，SQLite 適合低到中等流量而且每日點擊量不足 100K 的站台，超過此限，不建議使用。 而且也只許在一台電腦上使用，因此任何多伺服器案例均不列入考慮，例如負載平衡和地理複寫。 如需 Django 支援的其他資料庫相關資訊，請參閱[資料庫安裝](https://docs.djangoproject.com/en/2.0/intro/tutorial02/#database-setup)。 您也可以使用 [Azure SDK for Python](azure-sdk-for-python.md) 來操作 Azure 儲存體服務，例如資料表和 blob。
 
-- 在 Azure Pipelines 此類的服務上設定持續整合/持續部署管線。 除了操作原始檔控制 (在 Azure Repos、GitHub 或其他位置上)，您可以讓 Azure Test Plans 自動執行單元測試作為發行必要條件，另外也請設定管線來部署至模擬環境伺服器，以便進行傳統測試，之後再部署至生產環境伺服器中。 此外，Azure DevOps Services 與 App Insights 等監視解決方案整合，並使用敏捷式規劃工具關閉整個週期。 如需詳細資訊，請參閱:
-
-  - [使用 Azure DevOps Projects來建立 Python 的 CI/CD 管線](/azure/devops-project/azure-devops-project-python?view=vsts)
-  - [使用 Visual Studio Team Services 在 Azure 中進行 Python 程式設計 (影片，11 分鐘 21 秒)](https://azure.microsoft.com/resources/videos/connect-2017-python-development-in-azure-with-visual-studio-team-services/)。
-
+- 在 Azure DevOps 此類的服務上設定持續整合/持續部署管線。 除了操作原始檔控制 (透過 Azure Repos、GitHub 或其他位置)，您可以設定 Azure DevOps 專案來自動執行單元測試作為發行必要條件，另外也請設定管線來部署至預備伺服器，以便進行傳統測試，之後再部署至生產環境伺服器中。 此外，Azure DevOps 還會與 App Insights 等監視解決方案整合，並使用敏捷式規劃工具來關閉整個週期。 如需詳細資訊，請參閱[使用 Azure DevOps 專案建立 Python 的 CI/CD 管線](/azure/devops-project/azure-devops-project-python?view=vsts)，以及一般的 [Azure DevOps 文件](/azure/devops/?view=vsts)。

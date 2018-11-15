@@ -20,15 +20,16 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: f4f318c747f6408e44546a04054ad1e534ebd9dc
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b1b4989b5b8ca47bc41328c75610cf984926aae2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49296513"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49870129"
 ---
 # <a name="ca1030-use-events-where-appropriate"></a>CA1030：建議在適當時使用事件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|UseEventsWhereAppropriate|

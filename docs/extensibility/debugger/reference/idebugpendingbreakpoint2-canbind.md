@@ -1,5 +1,5 @@
 ---
-title: IDebugPendingBreakpoint2::CanBind |Microsoft 文件
+title: IDebugPendingBreakpoint2::CanBind |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,15 +16,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e09bae8cfa6b4c2ba1b79ff74945e5256e23ed2c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 47a40691de66828a1b46067393cddaa7e303d118
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31115719"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872599"
 ---
 # <a name="idebugpendingbreakpoint2canbind"></a>IDebugPendingBreakpoint2::CanBind
-決定是否此暫止中斷點可以繫結至程式碼位置。  
+判斷這個暫止中斷點可以繫結到程式碼的位置。  
   
 ## <a name="syntax"></a>語法  
   
@@ -45,13 +45,13 @@ int CanBind (
  [out]傳回[IEnumDebugErrorBreakpoints2](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2.md)物件，其中包含一份[IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md)物件 如果可能有錯誤。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK.`傳回`S_FALSE`中斷點無法繫結，如果在此情況下會傳回錯誤由`ppErrorEnum`參數。 反之則傳回錯誤碼。 傳回`E_BP_DELETED`若已刪除中斷點。  
+ 如果成功，則傳回`S_OK.`會傳回`S_FALSE`中斷點無法繫結，如果在此情況下會傳回的錯誤`ppErrorEnum`參數。 反之則傳回錯誤碼。 傳回`E_BP_DELETED`如果中斷點已遭刪除。  
   
 ## <a name="remarks"></a>備註  
- 若要判斷時會發生什麼情況會呼叫這個方法如果這個暫止中斷點繫結。 呼叫[繫結](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md)實際繫結暫止中斷點的方法。  
+ 若要判斷會發生什麼事會呼叫這個方法如果這個暫止中斷點已繫結。 呼叫[繫結](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md)實際繫結暫止中斷點的方法。  
   
 ## <a name="example"></a>範例  
- 下列範例示範如何實作這個方法來簡單`CPendingBreakpoint`公開物件[IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)介面。  
+ 下列範例示範如何實作這個方法來簡單`CPendingBreakpoint`公開的物件[IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)介面。  
   
 ```cpp  
 HRESULT CPendingBreakpoint::CanBind(IEnumDebugErrorBreakpoints2** ppErrorEnum)    
@@ -142,4 +142,4 @@ HRESULT CPendingBreakpoint::CanBind(IEnumDebugErrorBreakpoints2** ppErrorEnum)
  [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)   
  [IEnumDebugErrorBreakpoints2](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2.md)   
  [IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md)   
- [繫結](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md)
+ [Bind](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md)

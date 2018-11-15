@@ -13,23 +13,23 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 56791d944b811ec4ca549ec51affaa74cb421909
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 91f3339fd18db8c006855c634e011b14eecc9206
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39232908"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49888922"
 ---
 # <a name="operational-modes"></a>作業模式
 有三種模式，在其中 IDE 可以操作，如下所示：  
   
--   [設計模式](#vsconoperationalmodesanchor1)  
+- [設計模式](#vsconoperationalmodesanchor1)  
   
--   [執行模式](#vsconoperationalmodesanchor2)  
+- [執行模式](#vsconoperationalmodesanchor2)  
   
--   [中斷模式](#vsconoperationalmodesanchor3)  
+- [中斷模式](#vsconoperationalmodesanchor3)  
   
- 您自訂的偵錯引擎 (DE) 這些模式之間的轉換方式是要求您先熟悉轉換機制的實作決策。 DE 可能會或可能不直接實作這些模式。 這些模式其實是偵錯封裝模式切換根據使用者動作或來自德國的事件。 比方說，從執行模式中以中斷模式轉換為啟動停止事件來自 DE。 從 [中斷] 來執行模式或步驟模式轉換被啟動使用者執行步驟或 Execute 等作業。 如需 DE 轉換的詳細資訊，請參閱[控制執行](../../extensibility/debugger/control-of-execution.md)。  
+  您自訂的偵錯引擎 (DE) 這些模式之間的轉換方式是要求您先熟悉轉換機制的實作決策。 DE 可能會或可能不直接實作這些模式。 這些模式其實是偵錯封裝模式切換根據使用者動作或來自德國的事件。 比方說，從執行模式中以中斷模式轉換為啟動停止事件來自 DE。 從 [中斷] 來執行模式或步驟模式轉換被啟動使用者執行步驟或 Execute 等作業。 如需 DE 轉換的詳細資訊，請參閱[控制執行](../../extensibility/debugger/control-of-execution.md)。  
   
 ##  <a name="vsconoperationalmodesanchor1"></a> 設計模式  
  設計模式是 nonrunning 狀態的 Visual Studio 偵錯，在這段期間您可以設定偵錯應用程式中的功能。  
@@ -46,7 +46,7 @@ ms.locfileid: "39232908"
   
  正在停止事件會繼續藉由呼叫下列方法，轉換偵錯工具中斷模式下執行，或逐步執行模式的其中一個：  
   
--   [執行](../../extensibility/debugger/reference/idebugprocess3-execute.md)  
+-   [Execute](../../extensibility/debugger/reference/idebugprocess3-execute.md)  
   
 -   [Step](../../extensibility/debugger/reference/idebugprocess3-step.md)  
   

@@ -1,5 +1,5 @@
 ---
-title: 如何： 自我裝載的 WCF 服務進行偵錯 |Microsoft 文件
+title: 如何： 偵錯自我裝載的 WCF 服務 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -19,19 +19,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 19ce90effca21f6079cc7b569fa6e58f94553627
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 255ca0f7d472060d110135536d76de99dc46a18e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31479938"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872118"
 ---
 # <a name="how-to-debug-a-self-hosted-wcf-service"></a>如何：偵錯自我裝載的 WCF 服務
-A*自我裝載的服務*是在 IIS、 WCF 服務主機，不會執行的 WCF 服務或[!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]程式開發伺服器。 若要偵錯自我裝載的 WCF 的最簡單方式是設定[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]啟動用戶端和伺服器，當您選擇**開始偵錯**上**偵錯**功能表。  
+A*自我裝載的服務*是 iis 中，WCF 服務主機，不會執行的 WCF 服務或[!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]程式開發伺服器。 若要偵錯自我裝載的 WCF 的最簡單方式是設定[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]以啟動用戶端和伺服器，當您選擇**啟動偵錯**上**偵錯**功能表。  
   
- 如果 WCF 服務自我裝載內部或程序無法啟動，請在這種方式，例如 NT 服務，您無法使用這個方法。 相反地，您可以執行下列其中一項：  
+ 如果內部或無法啟動，請在這種方式，例如 NT 服務的程序，將自我裝載 WCF 服務，您無法使用這個方法。 相反地，您可以執行下列其中一項：  
   
--   以手動方式將偵錯工具附加至裝載的處理序。 如需詳細資訊，請參閱[附加至執行的處理序](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)。  
+-   手動將偵錯工具附加至裝載處理序中。 如需詳細資訊，請參閱 <<c0> [ 附加至執行的處理序](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)。  
   
      — 或 —  
   
@@ -39,21 +39,21 @@ A*自我裝載的服務*是在 IIS、 WCF 服務主機，不會執行的 WCF 服
   
 ### <a name="to-start-both-client-and-host-from-visual-studio"></a>若要從 Visual Studio 啟動用戶端和主機  
   
-1.  建立[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]包含用戶端和伺服器專案的方案。  
+1. 建立[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]包含用戶端和伺服器專案的方案。  
   
-2.  設定解決方案來啟動用戶端和伺服器處理序，當您選擇**啟動**上**偵錯**功能表。  
+2. 將方案設定為啟動用戶端和伺服器處理序，當您選擇**開始**上**偵錯**功能表。  
   
-    1.  在**方案總管 中**，以滑鼠右鍵按一下方案名稱。  
+   1.  在 [**方案總管] 中**，以滑鼠右鍵按一下方案名稱。  
   
-    2.  按一下**設定啟始專案**。  
+   2.  按一下 **設定啟始專案**。  
   
-    3.  在**方案\<名稱 > 屬性**對話方塊中，選取**多個啟始專案**。  
+   3.  在 **解決方案\<名稱 > 屬性**對話方塊中，選取**多個啟始專案**。  
   
-    4.  在**多個啟始專案**方格中的，對應至伺服器專案中，在列上按一下**動作**選擇**啟動**。  
+   4.  在 **多個啟始專案**方格中的，對應至伺服器專案中之線條上按一下**動作**，然後選擇 **啟動**。  
   
-    5.  在一行中對應至用戶端專案，按一下 **動作**選擇**啟動**。  
+   5.  在一行中，對應至用戶端專案，按一下**動作**，然後選擇**開始**。  
   
-    6.  按一下 [確定 **Deploying Office Solutions**]。  
+   6.  按一下 [確定 **Deploying Office Solutions**]。  
   
 ## <a name="see-also"></a>另請參閱  
  [偵錯 WCF 服務](../debugger/debugging-wcf-services.md)   

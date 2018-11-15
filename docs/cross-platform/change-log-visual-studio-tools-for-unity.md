@@ -10,19 +10,28 @@ ms.author: tglee
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: abec2e0d2485b99d5cde020bffc5ad0b2dd473ac
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: da2e91e15572a9904115926447523d8dba23a36a
+ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43775380"
+ms.lasthandoff: 11/05/2018
+ms.locfileid: "51000722"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-windows"></a>變更記錄檔 (Visual Studio Tools for Unity，Windows)
 Visual Studio Tools for Unity 變更記錄。
 
+## <a name="3807"></a>3.8.0.7
+ 於 2018 年 9 月 20 日發行
+
+### <a name="bug-fixes"></a>Bug 修正
+
+-   **偵錯工具：**
+
+    -   已修正用於與 Unity 偵錯工具引擎通訊之程式庫中的死結，該死結造成 Visual Studio 或 Unity 凍結，特別是在按下 [附加到 Unity] 或重新啟動遊戲時。
+
 ## <a name="3806"></a>3.8.0.6
  發行於 2018 年 8 月 27 日
- 
+
 ### <a name="bug-fixes"></a>Bug 修正
 
 -   **整合：**
@@ -31,7 +40,7 @@ Visual Studio Tools for Unity 變更記錄。
 
 ## <a name="3805"></a>3.8.0.5
  發行於 2018 年 8 月 20 日
- 
+
 ### <a name="bug-fixes"></a>Bug 修正
 
 -   **整合：**
@@ -40,13 +49,13 @@ Visual Studio Tools for Unity 變更記錄。
 
 ## <a name="3804"></a>3.8.0.4
  發行於 2018 年 8 月 14 日
- 
+
 ### <a name="new-features"></a>新功能
 
 -   **評估：**
 
     -   新增指標值的支援。
-    
+
     -   新增泛型方法的支援。
 
 ### <a name="bug-fixes"></a>Bug 修正
@@ -57,7 +66,7 @@ Visual Studio Tools for Unity 變更記錄。
 
 ## <a name="3803"></a>3.8.0.3
  2018 年 7 月 24 日發行
- 
+
 ### <a name="bug-fixes"></a>Bug 修正
 
 -   **Project Generation:**
@@ -66,24 +75,24 @@ Visual Studio Tools for Unity 變更記錄。
 
 ## <a name="3802"></a>3.8.0.2
  發行於 2018 年 7 月 7 日
- 
+
 ### <a name="bug-fixes"></a>Bug 修正
 
 -   **Project Generation:**
 
     -   Unity 效能 Bug 的暫時性因應措施：在產生專案時，會快取 MonoIslands。
-    
+
 ## <a name="3801"></a>3.8.0.1
  2018 年 7 月 26 日發行
- 
+
 ### <a name="new-features"></a>新功能
 
 -   **偵錯：**
 
     -   新增 UserLog 和 UserBreak 命令的支援。
-    
+
     -   新增延遲類型載入支援 (最適用於網路負載和偵錯工具回應延遲)。
-       
+
 ### <a name="bug-fixes"></a>Bug 修正
 
 -   **評估：**
@@ -92,19 +101,19 @@ Visual Studio Tools for Unity 變更記錄。
 
 ## <a name="3800"></a>3.8.0.0
  發行於 2018 年 5 月 30 日
- 
+
 ### <a name="new-features"></a>新功能
 
 -   **偵錯：**
 
     -   新增在非同步建構中顯示變數的支援。
-    
+
     -   新增在設定終端點時處理巢狀型別的支援，以避免編譯器建構出現警告。
-    
+
 -   **整合：**
 
     -   新增著色器的 TextMate 文法支援 (著色器程式碼上色不再需要 C++ 工作負載)。
-    
+
 ### <a name="bug-fixes"></a>Bug 修正
 
 -   **Project Generation:**
@@ -128,15 +137,15 @@ Visual Studio Tools for Unity 變更記錄。
 -   **偵錯：**
 
     -   已新增對協調偵錯的支援 (使用同一個 Visual Studio 工作階段對多個播放器/編輯器進行偵錯)。
-    
+
     -   已新增對 Android USB 播放器偵錯的支援。
-    
+
     -   已新增對 UWP/IL2CPP 播放器偵錯的支援。
 
 -   **評估：**
 
     -   已新增對十六進位指定名稱的支援。
-    
+
     -   已改善監看視窗評估體驗。
 
 ### <a name="bug-fixes"></a>Bug 修正
@@ -832,9 +841,9 @@ Visual Studio Tools for Unity 變更記錄。
 
 ### <a name="bug-fixes"></a>Bug 修正
 
--   修正 Visual Studio 佈景主題的處理。 之前，黑色佈景主題的對話方塊可能會顯示為空白 (連接問題 [#932637](https://connect.microsoft.com/VisualStudio/feedbackdetail/view/932637/) 和 [#936439](https://connect.microsoft.com/VisualStudio/feedbackdetail/view/936439/))。
+-   修正 Visual Studio 佈景主題的處理。 之前，黑色佈景主題的對話方塊可能會顯示為空白。
 
--   修正將偵錯工具連接到正在重新編譯的 Unity 時的 Unity 凍結問題 (連接問題 [#947119](https://connect.microsoft.com/VisualStudio/feedbackdetail/view/947119/) 和 [#969211](https://connect.microsoft.com/VisualStudio/feedbackdetail/view/969211/))。
+-   修正將偵錯工具連接到正在重新編譯之 Unity 時的 Unity 凍結問題。
 
 -   修正對其他系統上所編譯的遠端編輯器或播放器進行偵錯時的中斷點問題。
 
@@ -844,7 +853,7 @@ Visual Studio Tools for Unity 變更記錄。
 
 -   修正偵錯工具中的變數範圍處理，以避免即時變數超出範圍。
 
--   修正偵錯工具之運算式評估中的靜態成員查閱 (連接問題 [#953379](https://connect.microsoft.com/VisualStudio/feedbackdetail/view/953379/))。
+-   修正偵錯工具運算式評估中的靜態成員查閱。
 
 -   修正偵錯工具之運算式評估中的類型顯示，以顯示靜態欄位和屬性。
 

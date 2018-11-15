@@ -17,12 +17,12 @@ ms.assetid: bfafef6d-0c83-43d7-a779-1f0d24b166a1
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 10b29141d35601b8bff899bcb56e919e4844a3cf
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4512663c69ba652917b77ebe2a24cef374887c2e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49227262"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49940524"
 ---
 # <a name="fieldinfo"></a>FIELD_INFO
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

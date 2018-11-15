@@ -1,7 +1,7 @@
 ---
 title: IPython REPL (互動式視窗)
 description: 在 IPython 模式中使用 Visual Studio 互動式視窗，以便有易於使用的互動式開發環境，並具有「互動式平行計算」功能。
-ms.date: 06/19/2018
+ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: c4d9d7f03f8703bd549cf9e1098327a2fb59a497
-ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
+ms.openlocfilehash: b5429ccc963923a049d54ad3fbaa409586c0f772
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40008212"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219246"
 ---
 # <a name="use-ipython-in-the-interactive-window"></a>在互動式視窗中使用 IPython
 
@@ -29,30 +29,30 @@ IPython 模式的 Visual Studio [互動式] 視窗，是個進階但容易使用
 
 1. 開啟 Visual Studio，切換到 [Python 環境] 視窗 ([檢視] > [其他視窗] > [Python 環境])，然後選取 Anaconda 環境。
 
-1. 檢查該環境的 [套件 (Conda)] 索引標籤 (這可能會顯示為 [pip] 或 [套件])，以確定會列出 `ipython` 和 `matplotlib`。 如果沒有，請在這裡安裝它們。 (請參閱 [Python 環境視窗 - 套件索引標籤](python-environments-window-tab-reference.md))。
+2. 檢查該環境的 [套件 (Conda)] 索引標籤 (這可能會顯示為 [pip] 或 [套件])，以確定會列出 `ipython` 和 `matplotlib`。 如果沒有，請在這裡安裝它們。 (請參閱 [Python 環境視窗 - 套件索引標籤](python-environments-window-tab-reference.md))。
 
-1. 選取 [概觀] 索引標籤並選取 [使用 IPython 互動模式] (在 Visual Studio 2015 中，選取 [設定互動選項] 開啟 [選項] 對話方塊，然後將 [互動模式] 設定為 [IPython]，並選取 [確定])。
+3. 選取 [概觀] 索引標籤並選取 [使用 IPython 互動模式] (在 Visual Studio 2015 中，選取 [設定互動選項] 開啟 [選項] 對話方塊，然後將 [互動模式] 設定為 [IPython]，並選取 [確定])。
 
-1. 選取 [開啟互動式視窗] 以開啟 IPython 模式的 [互動式] 視窗。 如果您剛變更互動模式，可能需要重設視窗，如果僅出現 >>> 提示，也可能需要按下 **Enter** 鍵，讓您收到如 **In [2]** 的提示。
+4. 選取 [開啟互動式視窗] 以開啟 IPython 模式的 [互動式] 視窗。 如果您剛變更互動模式，可能需要重設視窗，如果僅出現 >>> 提示，也可能需要按下 **Enter** 鍵，讓您收到如 **In [2]** 的提示。
 
     ![IPython 模式的互動式視窗](media/ipython-repl-03.png)
 
-1. 輸入下列程式碼：
+5. 輸入下列程式碼：
 
-  ```python
-  import matplotlib.pyplot as plt
-  import numpy as np
+   ```python
+   import matplotlib.pyplot as plt
+   import numpy as np
   
-  x = np.linspace(0, 5, 10)
-  y = x ** 2
-  plt.plot(x, y, 'r', x, x ** 3, 'g', x, x ** 4, 'b')
-  ```
+   x = np.linspace(0, 5, 10)
+   y = x ** 2
+   plt.plot(x, y, 'r', x, x ** 3, 'g', x, x ** 4, 'b')
+   ```
 
-1. 輸入最後一行之後，您應該會看到一個内嵌圖表 (您可以視需要拖曳右下角來調整大小)。
+6. 輸入最後一行之後，您應該會看到一個内嵌圖表 (您可以視需要拖曳右下角來調整大小)。
 
     ![互動式視窗中的內嵌圖表](media/ipython-repl-04.png)
 
-1. 除了在 REPL 中鍵入之外，您可以改為在編輯器中撰寫程式碼，選取它，按一下滑鼠右鍵，然後選取 [傳送至互動] 命令 (或按 **Ctrl**+**Enter**)。 嘗試將以下程式碼貼到編輯器中的新檔案，使用 **Ctrl**+**A** 選取它，然後傳送到 [互動式] 視窗。 (Visual Studio 將程式碼以單一單位傳送，以避免產生過渡或部分的圖表。 同時，如果您尚未開啟 Python 專案並選取不同的環境，Visual Studio 會為選取的任何環境開啟 [互動式] 視窗，作為 [Python 環境] 視窗中的預設值。)
+7. 除了在 REPL 中鍵入之外，您可以改為在編輯器中撰寫程式碼，選取它，按一下滑鼠右鍵，然後選取 [傳送至互動] 命令 (或按 **Ctrl**+**Enter**)。 嘗試將以下程式碼貼到編輯器中的新檔案，使用 **Ctrl**+**A** 選取它，然後傳送到 [互動式] 視窗。 (Visual Studio 將程式碼以單一單位傳送，以避免產生過渡或部分的圖表。 同時，如果您尚未開啟 Python 專案並選取不同的環境，Visual Studio 會為選取的任何環境開啟 [互動式] 視窗，作為 [Python 環境] 視窗中的預設值。)
 
     ```python
     from mpl_toolkits.mplot3d import Axes3D
@@ -77,7 +77,7 @@ IPython 模式的 Visual Studio [互動式] 視窗，是個進階但容易使用
 
     ![將程式碼從編輯器傳送至互動式視窗](media/ipython-repl-05.png)
 
-1. 若要在 [互動式] 視窗外查看圖表，請改為使用 [偵錯] > [啟動但不偵錯] 命令來執行程式碼。
+8. 若要在 [互動式] 視窗外查看圖表，請改為使用 [偵錯] > [啟動但不偵錯] 命令來執行程式碼。
 
 IPython 有許多其他實用功能，例如逸出到系統殼層、變數替換、擷取輸出等。如需詳細資訊，請參閱 [IPython 文件](http://ipython.org/documentation.html)。
 

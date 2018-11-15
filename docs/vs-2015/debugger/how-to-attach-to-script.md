@@ -24,12 +24,12 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b86987554a3cd39d96a44f1f0c3396a1c32b98fa
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 08a82442d4e7eed160c6ec83d67c498073b42ac9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49209686"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49852553"
 ---
 # <a name="how-to-attach-to-script"></a>如何：附加至指令碼
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,35 +38,35 @@ ms.locfileid: "49209686"
   
 ### <a name="to-attach-to-a-running-process"></a>若要附加至執行中的處理序  
   
-1.  在 [ **偵錯** ] 功能表上，選擇 [ **附加至處理序**] (如果沒有任何專案開啟時，請選擇**připojit k procesu**上**工具**功能表。)  
+1. 在 [ **偵錯** ] 功能表上，選擇 [ **附加至處理序**] (如果沒有任何專案開啟時，請選擇**připojit k procesu**上**工具**功能表。)  
   
-2.  在 [**附加至處理序**] 對話方塊中，看看**可用的處理序**清單，並且尋找指令碼處理您想要附加至。 您可以藉由查看找出指令碼處理序**型別**資料行。  
+2. 在 [**附加至處理序**] 對話方塊中，看看**可用的處理序**清單，並且尋找指令碼處理您想要附加至。 您可以藉由查看找出指令碼處理序**型別**資料行。  
   
-    1.  如果您要偵錯的處理序正執行於另一台電腦上，您必須先選取該遠端電腦。 如需詳細資訊，請參閱 <<c0> [ 如何： 選取遠端電腦](http://msdn.microsoft.com/en-us/4332ba8e-2f0b-4f62-b96a-e762b9f3c3ba)。  
+   1.  如果您要偵錯的處理序正執行於另一台電腦上，您必須先選取該遠端電腦。 如需詳細資訊，請參閱 <<c0> [ 如何： 選取遠端電腦](http://msdn.microsoft.com/en-us/4332ba8e-2f0b-4f62-b96a-e762b9f3c3ba)。  
   
-    2.  如果該處理序正在不同的使用者帳戶下執行，請選取 [顯示所有使用者的處理序]  核取方塊。  
+   2.  如果該處理序正在不同的使用者帳戶下執行，請選取 [顯示所有使用者的處理序]  核取方塊。  
   
-    3.  如果您透過連線**遠端桌面連線**，選取**顯示所有工作階段中的處理序**核取方塊。  
+   3.  如果您透過連線**遠端桌面連線**，選取**顯示所有工作階段中的處理序**核取方塊。  
   
-3.  按一下您要附加的處理序。  
+3. 按一下您要附加的處理序。  
   
-4.  在 **附加至**方塊中，您應該會看到**指令碼**或**自動： 指令碼**。 如果看到其他項目，請遵照以下步驟：  
+4. 在 **附加至**方塊中，您應該會看到**指令碼**或**自動： 指令碼**。 如果看到其他項目，請遵照以下步驟：  
   
-    1.  按一下 [選取] 。  
+   1.  按一下 [選取] 。  
   
-    2.  在 [**選取程式碼類型**] 對話方塊中，按一下**偵錯這些程式碼類型**，然後選取**指令碼**。  
+   2.  在 [**選取程式碼類型**] 對話方塊中，按一下**偵錯這些程式碼類型**，然後選取**指令碼**。  
   
-    3.  按一下 [確定 **Deploying Office Solutions**]。  
+   3.  按一下 [確定 **Deploying Office Solutions**]。  
   
-5.  按一下 [附加] 。  
+5. 按一下 [附加] 。  
   
-     此時，您可能會看到警告，指出 Internet Explorer 中已停用指令碼偵錯功能。 如果發生此情況，請參閱[警告： 指令碼偵錯已停用](../debugger/warning-script-debugging-disabled.md)。  
+    此時，您可能會看到警告，指出 Internet Explorer 中已停用指令碼偵錯功能。 如果發生此情況，請參閱[警告： 指令碼偵錯已停用](../debugger/warning-script-debugging-disabled.md)。  
   
- [可使用的處理序]  清單會在您開啟 [處理序]  對話方塊時自動顯示。 當對話方塊開啟時，處理序可以在背景中啟動和停止。 所以，內容不一定是最新的。 您可以隨時按下查看目前的處理序清單重新整理清單**重新整理** 按鈕。  
+   [可使用的處理序]  清單會在您開啟 [處理序]  對話方塊時自動顯示。 當對話方塊開啟時，處理序可以在背景中啟動和停止。 所以，內容不一定是最新的。 您可以隨時按下查看目前的處理序清單重新整理清單**重新整理** 按鈕。  
   
- 偵錯時，您可以附加至多個程式，但是無論在任何時間，偵錯工具一次只能有一個使用中程式。 您可在 [偵錯位置] 工具列中設定使用中程式。 如需詳細資訊，請參閱 <<c0> [ 如何： 設定目前的處理序](http://msdn.microsoft.com/en-us/7e1d7fa5-0e40-44cf-8c41-d3dba31c969e)。  
+   偵錯時，您可以附加至多個程式，但是無論在任何時間，偵錯工具一次只能有一個使用中程式。 您可在 [偵錯位置] 工具列中設定使用中程式。 如需詳細資訊，請參閱 <<c0> [ 如何： 設定目前的處理序](http://msdn.microsoft.com/en-us/7e1d7fa5-0e40-44cf-8c41-d3dba31c969e)。  
   
- 所有**偵錯**功能表執行命令都會影響使用中的程式。 您可以從處理序 對話方塊中斷任何偵錯的程式。請參閱[使用中斷點](../debugger/using-breakpoints.md)。  
+   所有**偵錯**功能表執行命令都會影響使用中的程式。 您可以從處理序 對話方塊中斷任何偵錯的程式。請參閱[使用中斷點](../debugger/using-breakpoints.md)。  
   
 > [!NOTE]
 >  如果您嘗試附加至未受信任的使用者帳戶所擁有的處理序，會出現安全性警告對話方塊確認訊息。 如需詳細資訊，請參閱[安全性警告： 附加至不受信任的使用者所擁有的處理序可能會造成危險。如果下列資訊看起來有問題，或您不確定，不會附加至這個處理序](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user-can-be-dangerous-if-the-following-information-looks-suspicious-or-you-are-unsure-do-not-attach-to-this-process.md)。  

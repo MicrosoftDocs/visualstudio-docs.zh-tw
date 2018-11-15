@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d9daef780847da99463811a9c10399102dc7b808
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 67ff7d911ef0cdd3debd920ac85e9e3265a619e3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637428"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49909954"
 ---
 # <a name="provide-a-language-service-context-by-using-the-legacy-api"></a>使用舊版 API 提供的語言服務內容
 有兩個選項，以提供使用者內容中使用的語言服務[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]核心編輯器： 提供文字標記的內容，或提供所有的使用者內容。 此處所述的每個之間的差異。  
@@ -35,20 +35,20 @@ ms.locfileid: "39637428"
   
  有兩種不同的方式來實作`IVsLanguageContextProvider`:  
   
--   提供的內容封包的關鍵字  
+- 提供的內容封包的關鍵字  
   
-     若要更新的內容封包呼叫編輯器時，傳入適當的關鍵字和屬性，然後傳回`S_OK`。 這個傳回值會指示要保留關鍵字和屬性的內容，而不是提供的內容封包至游標處關鍵字的編輯器。  
+   若要更新的內容封包呼叫編輯器時，傳入適當的關鍵字和屬性，然後傳回`S_OK`。 這個傳回值會指示要保留關鍵字和屬性的內容，而不是提供的內容封包至游標處關鍵字的編輯器。  
   
--   取得關鍵字的關鍵字，在游標處  
+- 取得關鍵字的關鍵字，在游標處  
   
-     若要更新的內容封包呼叫編輯器時，傳入適當的屬性，然後傳回`E_FAIL`。 這個傳回值會指示要保留您的屬性中的內容封包，但更新的內容封包中的游標處關鍵字編輯器。  
+   若要更新的內容封包呼叫編輯器時，傳入適當的屬性，然後傳回`E_FAIL`。 這個傳回值會指示要保留您的屬性中的內容封包，但更新的內容封包中的游標處關鍵字編輯器。  
   
- 下圖說明如何提供內容實作的語言服務以`IVsLanguageContextProvider`。  
+  下圖說明如何提供內容實作的語言服務以`IVsLanguageContextProvider`。  
   
- ![LangServiceImplementation2 圖形](../extensibility/media/vslanguageservice2.gif "vsLanguageService2")  
-語言服務內容  
+  ![LangServiceImplementation2 圖形](../extensibility/media/vslanguageservice2.gif "vsLanguageService2")  
+  語言服務內容  
   
- 您可以在圖表中，看到[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]核心文字編輯器有內容包附加到它。 此內容包指向三個不同的子內容包： 語言服務，預設的編輯器與文字標記。 語言標記優先型服務和文字袋包含屬性和關鍵字的語言服務如果<xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageContextProvider>介面實作，以及文字標記如果<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerContextProvider>介面的實作。 如果您不實作這些介面，編輯器會提供內容的預設編輯器子內容封包中的資料指標在關鍵字。  
+  您可以在圖表中，看到[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]核心文字編輯器有內容包附加到它。 此內容包指向三個不同的子內容包： 語言服務，預設的編輯器與文字標記。 語言標記優先型服務和文字袋包含屬性和關鍵字的語言服務如果<xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageContextProvider>介面實作，以及文字標記如果<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerContextProvider>介面的實作。 如果您不實作這些介面，編輯器會提供內容的預設編輯器子內容封包中的資料指標在關鍵字。  
   
 ## <a name="context-guidelines-for-editors-and-designers"></a>內容的指導方針編輯器和設計工具  
  設計工具和編輯器，必須提供的編輯器或設計工具視窗的一般關鍵字。 這麼做為了讓使用者按下時，將會顯示的設計工具或編輯器的泛型，但需要的說明主題**F1**。 編輯器必須，此外，提供在資料指標目前的關鍵字或提供關鍵詞彙，根據目前的選取項目。 這為了確保指向說明主題的文字或 UI 項目，或當使用者按下時，請選取顯示**F1**。 設計工具提供在設計工具，例如在表單上按鈕的選取項目內容。 編輯器和設計工具也必須連接到語言服務中所述[舊版語言服務的基本資訊](../extensibility/internals/legacy-language-service-essentials.md)。

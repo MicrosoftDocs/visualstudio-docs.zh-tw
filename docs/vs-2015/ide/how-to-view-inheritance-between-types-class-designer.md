@@ -20,12 +20,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 31d5c57408765b74ec736b8ec5c6dd8edc9d8a01
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 59d07bd9b4f069773593359e396b63df6407b1ff
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49202009"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49823069"
 ---
 # <a name="how-to-view-inheritance-between-types-class-designer"></a>如何：檢視類型之間的繼承 (類別設計工具)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,23 +34,23 @@ ms.locfileid: "49202009"
   
 ### <a name="to-find-the-base-type"></a>尋找基底類型  
   
-1.  在類別圖上，按一下要查看基底類別或介面的類型。  
+1. 在類別圖上，按一下要查看基底類別或介面的類型。  
   
-2.  在 [類別圖] 功能表上，選擇 [顯示基底類別] 或 [顯示基底介面]。  
+2. 在 [類別圖] 功能表上，選擇 [顯示基底類別] 或 [顯示基底介面]。  
   
-     隨即會在圖表上將該類型的基底類別或介面顯示為選取項目。 兩個圖案之間現在會顯示所有隱藏的繼承線。  
+    隨即會在圖表上將該類型的基底類別或介面顯示為選取項目。 兩個圖案之間現在會顯示所有隱藏的繼承線。  
   
- 您也可以使用滑鼠右鍵按一下要顯示其基底類型的類型，然後選擇 [顯示基底類別] 或 [顯示基底介面]。  
+   您也可以使用滑鼠右鍵按一下要顯示其基底類型的類型，然後選擇 [顯示基底類別] 或 [顯示基底介面]。  
   
 ### <a name="to-find-the-derived-types"></a>尋找衍生類型  
   
-1.  在類別圖上，按一下要查看衍生類別或介面的類型。  
+1. 在類別圖上，按一下要查看衍生類別或介面的類型。  
   
-2.  在 [類別圖] 功能表上，選擇 [顯示衍生類別] 或 [顯示衍生介面]。  
+2. 在 [類別圖] 功能表上，選擇 [顯示衍生類別] 或 [顯示衍生介面]。  
   
-     隨即會在圖表上顯示該類型的衍生類別或介面。 各個圖案之間現在會顯示所有隱藏的繼承線。  
+    隨即會在圖表上顯示該類型的衍生類別或介面。 各個圖案之間現在會顯示所有隱藏的繼承線。  
   
- 您也可以使用滑鼠右鍵按一下要查看其衍生類型的類型，然後選擇 [顯示衍生類別] 或 [顯示衍生介面]。  
+   您也可以使用滑鼠右鍵按一下要查看其衍生類型的類型，然後選擇 [顯示衍生類別] 或 [顯示衍生介面]。  
   
 ## <a name="see-also"></a>另請參閱  
  [如何：建立類型之間的關聯 (類別設計工具)](../ide/how-to-create-associations-between-types-class-designer.md)   

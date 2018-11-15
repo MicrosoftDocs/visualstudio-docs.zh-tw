@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ee77d340eec13c42588511575c6047b5c8f28d16
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 8d5bb2d554ee67a4a2c83decba017e9a1f0fe1e9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34765095"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49813905"
 ---
 # <a name="how-to-collect-cpu-counter-data"></a>如何：收集 CPU 計數器資料
 
@@ -31,9 +31,9 @@ CPU 事件計數器可用來收集硬體特定的效能資料。 本文說明當
 
 - Platform Events - 結合到特定 CPU 的 CPU 事件。
 
- Portable Events 包含一般事件，例如停用的指令、未暫止時脈週期、CPU 緩衝區事件、分支事件及 L2 快取事件。 可用的 Portable Events 計數器是由處理器製造商決定。
+  Portable Events 包含一般事件，例如停用的指令、未暫止時脈週期、CPU 緩衝區事件、分支事件及 L2 快取事件。 可用的 Portable Events 計數器是由處理器製造商決定。
 
- Portable 和 Platform 計數器之間可共用的事件類別。 例如，下列類別的資料是經常通用於這兩種類型︰
+  Portable 和 Platform 計數器之間可共用的事件類別。 例如，下列類別的資料是經常通用於這兩種類型︰
 
 - 記憶體事件。
 
@@ -41,7 +41,7 @@ CPU 事件計數器可用來收集硬體特定的效能資料。 本文說明當
 
 - 分支事件。
 
- 在分析工具中，收集效能計數器資料的方式有兩種：
+  在分析工具中，收集效能計數器資料的方式有兩種：
 
 - 透過檢測分析時，從一或多個計數器收集資料。
 

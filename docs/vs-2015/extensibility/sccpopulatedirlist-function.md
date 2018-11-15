@@ -17,12 +17,12 @@ ms.assetid: dfff634b-b155-498b-a356-6eb252ac4fad
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 031735127fe648be72b221461ae9dbab15929446
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1c58e374e6d22c5565f53a31c5731b35b73c43bb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49286972"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49848471"
 ---
 # <a name="sccpopulatedirlist-function"></a>SccPopulateDirList 函式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

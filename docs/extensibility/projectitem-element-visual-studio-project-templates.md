@@ -16,12 +16,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 306f8c0497228ff67adab1b472ea74e2ba9e5d90
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 585615c07d9f11f75468bccde1bae05a355bf98f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637178"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49899951"
 ---
 # <a name="projectitem-element-visual-studio-project-templates"></a>ProjectItem 項目 （Visual Studio 專案範本）
 指定專案範本中所包含的檔案。  
@@ -53,14 +53,14 @@ ms.locfileid: "39637178"
   
 ### <a name="attributes"></a>屬性  
   
-|屬性|描述|  
-|---------------|-----------------|  
-|`TargetFileName`|選擇性屬性。<br /><br /> 從範本建立專案時，請指定專案項目的路徑與名稱。 這個屬性可用於在範本中建立的目錄結構不同的目錄結構 *.zip*檔案，或用來建立項目名稱的參數取代。|  
-|`ReplaceParameters`|選擇性屬性。<br /><br /> 布林值，指定的項目是否有從範本建立專案時，必須被取代的參數值。 預設值為 `false`。|  
-|`OpenInEditor`|選擇性屬性。<br /><br /> 布林值，指定是否應該在其各自的編輯器中開啟項目[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]從範本建立專案時。<br /><br /> `OpenInWebBrowser`並`OpenInHelpBrowser`屬性會被忽略的項目上`OpenInEditor`的值`true`。<br /><br /> 預設值是 `false`。|  
-|`OpenInWebBrowser`|選擇性屬性。<br /><br /> 布林值，指定項目是否應該會開啟網頁瀏覽器從範本建立專案。<br /><br /> 僅 HTML 檔案和文字檔的本機專案可以在 Web 瀏覽器中開啟。 無法開啟外部 Url，以這個屬性。<br /><br /> 預設值是 `false`。|  
-|`OpenInHelpBrowser`|選擇性屬性。<br /><br /> 布林值，指定項目應該會開啟說明檢視器中從範本建立專案時。<br /><br /> 僅 HTML 檔案和文字檔的本機專案可以在說明瀏覽器中開啟。 無法開啟外部 Url，以這個屬性。<br /><br /> 預設值是 `false`。|  
-|`OpenOrder`|選擇性屬性。<br /><br /> 指定數值，表示項目將會開啟在其各自的編輯器中的順序。 所有的值必須是 10 的倍數。 使用更高項目`OpenOrder`值第一次開啟。|  
+| 屬性 | 描述 |
+|---------------------| - |
+| `TargetFileName` | 選擇性屬性。<br /><br /> 從範本建立專案時，請指定專案項目的路徑與名稱。 這個屬性可用於在範本中建立的目錄結構不同的目錄結構 *.zip*檔案，或用來建立項目名稱的參數取代。 |
+| `ReplaceParameters` | 選擇性屬性。<br /><br /> 布林值，指定的項目是否有從範本建立專案時，必須被取代的參數值。 預設值為 `false`。 |
+| `OpenInEditor` | 選擇性屬性。<br /><br /> 布林值，指定是否應該在其各自的編輯器中開啟項目[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]從範本建立專案時。<br /><br /> `OpenInWebBrowser`並`OpenInHelpBrowser`屬性會被忽略的項目上`OpenInEditor`的值`true`。<br /><br /> 預設值是 `false`。 |
+| `OpenInWebBrowser` | 選擇性屬性。<br /><br /> 布林值，指定項目是否應該會開啟網頁瀏覽器從範本建立專案。<br /><br /> 僅 HTML 檔案和文字檔的本機專案可以在 Web 瀏覽器中開啟。 無法開啟外部 Url，以這個屬性。<br /><br /> 預設值是 `false`。 |
+| `OpenInHelpBrowser` | 選擇性屬性。<br /><br /> 布林值，指定項目應該會開啟說明檢視器中從範本建立專案時。<br /><br /> 僅 HTML 檔案和文字檔的本機專案可以在說明瀏覽器中開啟。 無法開啟外部 Url，以這個屬性。<br /><br /> 預設值是 `false`。 |
+| `OpenOrder` | 選擇性屬性。<br /><br /> 指定數值，表示項目將會開啟在其各自的編輯器中的順序。 所有的值必須是 10 的倍數。 使用更高項目`OpenOrder`值第一次開啟。 |
   
 ### <a name="child-elements"></a>子元素  
  無。  
@@ -91,27 +91,27 @@ ms.locfileid: "39637178"
   
 ### <a name="to-rename-files-with-parameters"></a>若要重新命名具有參數檔案  
   
-1.  使用中的下列 XML *.vstemplate*檔案：  
+1. 使用中的下列 XML *.vstemplate*檔案：  
   
-    ```xml  
-    <ProjectItem TargetFileName="$safeprojectname$.vb">MyFile.vb</ProjectItem>  
-    ```  
+   ```xml  
+   <ProjectItem TargetFileName="$safeprojectname$.vb">MyFile.vb</ProjectItem>  
+   ```  
   
-2.  開啟專案檔案 (*.vbproj* for[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]專案) 中的文字編輯器或[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。  
+2. 開啟專案檔案 (*.vbproj* for[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]專案) 中的文字編輯器或[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。  
   
-3.  看起來類似下列的 XML 專案檔中找到的一行：  
+3. 看起來類似下列的 XML 專案檔中找到的一行：  
   
-    ```xml  
-    <Compile Include="MyFile.vb">  
-    ```  
+   ```xml  
+   <Compile Include="MyFile.vb">  
+   ```  
   
-4.  取代下列 XML 程式碼行：  
+4. 取代下列 XML 程式碼行：  
   
-    ```xml  
-    <Compile Include="$safeprojectname$.vb">  
-    ```  
+   ```xml  
+   <Compile Include="$safeprojectname$.vb">  
+   ```  
   
-     檔案名稱從這個範本建立專案時，會根據使用者輸入的名稱**新的專案**對話方塊中，其中所有 unsafe 字元和空格移除。 如需詳細資訊，請參閱 <<c0> [ 範本參數](../ide/template-parameters.md)。  
+    檔案名稱從這個範本建立專案時，會根據使用者輸入的名稱**新的專案**對話方塊中，其中所有 unsafe 字元和空格移除。 如需詳細資訊，請參閱 <<c0> [ 範本參數](../ide/template-parameters.md)。  
   
 ## <a name="example"></a>範例  
  下列範例顯示的專案範本的中繼資料[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]應用程式。  

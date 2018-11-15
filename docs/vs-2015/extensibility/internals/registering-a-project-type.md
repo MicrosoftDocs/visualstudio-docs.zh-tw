@@ -17,12 +17,12 @@ ms.assetid: dfc0e231-6b4e-447d-9d64-0e66dea3394a
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 30956d812aa2ece166231d6ae7580b226025e308
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 103792f4751d290d9d782fa4e71309ebcf3914da
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49271774"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49911327"
 ---
 # <a name="registering-a-project-type"></a>註冊專案類型
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -215,17 +215,17 @@ ms.locfileid: "49271774"
   
  功能表項目會指向用來擷取功能表資訊資源中的 IDE。 此資料已合併至功能表資料庫，相同的索引鍵會將登錄 MenusMerged 節中。 VSPackage 不應該修改 MenusMerged 區段下的任何項目直接。 在下表中 [資料] 欄位中，有三個逗點分隔的欄位。 第一個欄位會識別功能表資源檔的完整路徑：  
   
--   如果省略第一個欄位，則是會從附屬 VSPackage GUID 所識別的 DLL 載入功能表資源。  
+- 如果省略第一個欄位，則是會從附屬 VSPackage GUID 所識別的 DLL 載入功能表資源。  
   
- 第二個欄位識別類型 CTMENU 的功能表資源識別碼：  
+  第二個欄位識別類型 CTMENU 的功能表資源識別碼：  
   
--   如果指定的資源識別碼，而且第一個參數所提供的檔案路徑，從完整檔案路徑載入功能表資源。  
+- 如果指定的資源識別碼，而且第一個參數所提供的檔案路徑，從完整檔案路徑載入功能表資源。  
   
--   如果提供的資源識別碼，但不是檔案路徑，是會從附屬 DLL 載入功能表資源。  
+- 如果提供的資源識別碼，但不是檔案路徑，是會從附屬 DLL 載入功能表資源。  
   
--   如果提供的完整檔案路徑的資源識別碼省略，要載入的檔案被必須的 CTO 檔案。  
+- 如果提供的完整檔案路徑的資源識別碼省略，要載入的檔案被必須的 CTO 檔案。  
   
- 最後一個欄位會識別 CTMENU 的資源的版本號碼。 您可以變更版本號碼，一次合併的功能表。  
+  最後一個欄位會識別 CTMENU 的資源的版本號碼。 您可以變更版本號碼，一次合併的功能表。  
   
 |名稱|類型|資料|描述|  
 |----------|----------|----------|-----------------|  

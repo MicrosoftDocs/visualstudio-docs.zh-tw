@@ -16,19 +16,20 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3845826ef1c88eaa40c8cf05936080eb320bdecc
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: bea4af6c0ae0e21e15a79d52f4c7205a51a3ea46
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45546807"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49819117"
 ---
 # <a name="ca2004-remove-calls-to-gckeepalive"></a>CA2004：必須移除對 GC.KeepAlive 的呼叫
+
 |||
 |-|-|
 |TypeName|RemoveCallsToGCKeepAlive|
 |CheckId|CA2004|
-|類別|Microsoft.Reliability|
+|分類|Microsoft.Reliability|
 |中斷變更|非重大|
 
 ## <a name="cause"></a>原因

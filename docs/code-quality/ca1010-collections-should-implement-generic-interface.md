@@ -16,19 +16,20 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f79a0e4fcb9cf4f82b85e9d62ffa51ef969293c7
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 5264292e6dc1e8cf86a64d41dc15154d836a8444
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45550995"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49915278"
 ---
 # <a name="ca1010-collections-should-implement-generic-interface"></a>CA1010：集合應該實作泛型介面
+
 |||
 |-|-|
 |TypeName|CollectionsShouldImplementGenericInterface|
 |CheckId|CA1010|
-|類別|Microsoft.Design|
+|分類|Microsoft.Design|
 |中斷變更|非重大|
 
 ## <a name="cause"></a>原因

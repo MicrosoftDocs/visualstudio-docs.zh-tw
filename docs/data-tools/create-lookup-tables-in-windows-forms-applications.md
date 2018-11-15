@@ -13,12 +13,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 7b154b970d2a738e80efa5cbf669d29bd7bae589
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: f68cb2178242e5589f312f6ddc2c555da3f47a0e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36756762"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872820"
 ---
 # <a name="create-lookup-tables-in-windows-forms-applications"></a>在 Windows Forms 應用程式中建立查閱資料表
 詞彙*查閱資料表*描述繫結至兩個相關的資料表的控制項。 這些查閱控制項顯示從第二個資料表中選取的值為基礎的第一個資料表的資料。
@@ -52,7 +52,7 @@ ms.locfileid: "36756762"
      現在建立查閱繫結。 請參閱下表中的控制項設定的特定屬性。
 
     |屬性|設定說明|
-    |--------------|----------------------------|
+    |--------------| - |
     |**DataSource**|Visual Studio 會將此屬性設定為<xref:System.Windows.Forms.BindingSource>、 建立資料表拖曳至控制項 (相對於<xref:System.Windows.Forms.BindingSource>，建立控制項時建立)。<br /><br /> 如果您需要進行調整時，會將此設為<xref:System.Windows.Forms.BindingSource>具有您想要顯示的資料行的資料表。|
     |**DisplayMember**|Visual Studio 會將此屬性設定為主索引鍵後面具有字串資料類型的第一個資料行 (針對您拖曳至控制項的資料表)。<br /><br /> 如果您需要進行調整，請將這設為您想要顯示的資料行名稱。|
     |**ValueMember**|Visual Studio 會將此屬性設定為參與主索引鍵的第一個資料行，或者，如果未定義索引鍵，則為資料表中的第一個資料行。<br /><br /> 如果您需要進行調整，請將此設在含有您想要顯示的資料行的資料表中的主索引鍵。|

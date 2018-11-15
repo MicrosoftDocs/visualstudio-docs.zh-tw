@@ -18,12 +18,12 @@ caps.latest.revision: 43
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: cf28035726f20aa715bfe12a48b1378edfacb673
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2650afc2172cdcceca892d4ad19a05becac3e472
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49223209"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49908910"
 ---
 # <a name="how-to-create-a-domain-specific-language-solution"></a>如何：建立網域指定的語言方案
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,43 +43,43 @@ ms.locfileid: "49223209"
   
 #### <a name="to-create-a-domain-specific-language-solution"></a>若要建立特定領域語言方案  
   
-1.  啟動 [DSL] 精靈。  
+1. 啟動 [DSL] 精靈。  
   
-    1.  在 [檔案]  功能表中，指向 [新增] ，然後按一下 [專案] 。  
+   1. 在 [檔案]  功能表中，指向 [新增] ，然後按一下 [專案] 。  
   
-    2.  [ **新增專案** ] 對話方塊隨即出現。  
+   2. [ **新增專案** ] 對話方塊隨即出現。  
   
-    3.  底下**專案類型**，展開**其他專案類型**節點，然後按一下**擴充性**。  
+   3. 底下**專案類型**，展開**其他專案類型**節點，然後按一下**擴充性**。  
   
-    4.  按一下  **Domain-specific Language Designer**。  
+   4. 按一下  **Domain-specific Language Designer**。  
   
-    5.  在 **名稱**方塊中，輸入方案的名稱。 按一下 [確定 **Deploying Office Solutions**]。  
+   5. 在 **名稱**方塊中，輸入方案的名稱。 按一下 [確定 **Deploying Office Solutions**]。  
   
-         **Domain-specific Language Designer 精靈**隨即出現。  
+       **Domain-specific Language Designer 精靈**隨即出現。  
   
-        > [!NOTE]
-        >  最好是您所輸入的名稱應該是有效的 Visual C# 識別項，因為它可能會用來產生程式碼。  
+      > [!NOTE]
+      >  最好是您所輸入的名稱應該是有效的 Visual C# 識別項，因為它可能會用來產生程式碼。  
   
-     ![建立 DSL 對話方塊](../modeling/media/create-dsldialog.png "Create_DSLDialog")  
+      ![建立 DSL 對話方塊](../modeling/media/create-dsldialog.png "Create_DSLDialog")  
   
-2.  選擇 DSL 」 範本。  
+2. 選擇 DSL 」 範本。  
   
-     在 **選取特定領域語言選項**頁面上，選取其中一個解決方案範本類似**最小語言**。 選擇的範本，類似於您想要建立 DSL。  
+    在 **選取特定領域語言選項**頁面上，選取其中一個解決方案範本類似**最小語言**。 選擇的範本，類似於您想要建立 DSL。  
   
-     如需解決方案範本的詳細資訊，請參閱[選擇特定領域語言方案範本](../modeling/choosing-a-domain-specific-language-solution-template.md)。  
+    如需解決方案範本的詳細資訊，請參閱[選擇特定領域語言方案範本](../modeling/choosing-a-domain-specific-language-solution-template.md)。  
   
-3.  輸入檔案的副檔名**副檔名**頁面。 它應該是唯一的電腦，並在其上的任何電腦在您想要安裝 DSL。 您應該會看到訊息**沒有應用程式或 Visual Studio 編輯器會使用此延伸模組**。  
+3. 輸入檔案的副檔名**副檔名**頁面。 它應該是唯一的電腦，並在其上的任何電腦在您想要安裝 DSL。 您應該會看到訊息**沒有應用程式或 Visual Studio 編輯器會使用此延伸模組**。  
   
-    -   如果您已使用的副檔名，未完整安裝的上一個實驗 Dsl 中，您可以清除它們出利用**重設實驗執行個體**工具，可在[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]SDK 功能表。  
+   -   如果您已使用的副檔名，未完整安裝的上一個實驗 Dsl 中，您可以清除它們出利用**重設實驗執行個體**工具，可在[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]SDK 功能表。  
   
-    -   如果另一個[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]已完整延伸模組，可使用這個副檔名在電腦上安裝，請考慮解除安裝它。 在 **工具**功能表上，按一下**延伸模組管理員**。  
+   -   如果另一個[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]已完整延伸模組，可使用這個副檔名在電腦上安裝，請考慮解除安裝它。 在 **工具**功能表上，按一下**延伸模組管理員**。  
   
-4.  檢查，以及必要時調整，請在精靈的其餘頁面中的欄位。 當您滿意設定時，請按一下**完成**。 如需有關設定的詳細資訊，請參閱[DSL 設計工具的精靈頁面](#settings)。  
+4. 檢查，以及必要時調整，請在精靈的其餘頁面中的欄位。 當您滿意設定時，請按一下**完成**。 如需有關設定的詳細資訊，請參閱[DSL 設計工具的精靈頁面](#settings)。  
   
-     精靈會建立具有兩個專案，名為的解決方案**Dsl**並**DslPackage**。  
+    精靈會建立具有兩個專案，名為的解決方案**Dsl**並**DslPackage**。  
   
-    > [!NOTE]
-    >  如果您看到訊息，向您發出警示不執行文字範本來自不受信任的來源，請按一下**確定**。 您可以設定此訊息不會再出現。  
+   > [!NOTE]
+   >  如果您看到訊息，向您發出警示不執行文字範本來自不受信任的來源，請按一下**確定**。 您可以設定此訊息不會再出現。  
   
 ##  <a name="settings"></a> DSL 設計工具的精靈頁面  
  您可以保留預設值未變更的欄位數。 不過，請確定您設定副檔名欄位。  

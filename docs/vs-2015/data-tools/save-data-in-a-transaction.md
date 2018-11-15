@@ -23,12 +23,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 60f3014707fe9b06818bf9a47745ca8b253290d4
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b0912ffbe2a9a82ac5efbd3b2ca6ba3566ce5b02
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49208895"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219298"
 ---
 # <a name="save-data-in-a-transaction"></a>儲存異動中的資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -112,14 +112,14 @@ ms.locfileid: "49208895"
   
 #### <a name="to-modify-the-auto-generated-save-code"></a>修改自動產生的儲存程式碼  
   
-1.  選取 **儲存**按鈕**CustomersBindingNavigator** （磁碟片圖示的按鈕）。  
+1. 選取 **儲存**按鈕**CustomersBindingNavigator** （磁碟片圖示的按鈕）。  
   
-2.  以下列程式碼取代 `CustomersBindingNavigatorSaveItem_Click` 方法：  
+2. 以下列程式碼取代 `CustomersBindingNavigatorSaveItem_Click` 方法：  
   
-     [!code-csharp[VbRaddataSaving#4](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Form2.cs#4)]
-     [!code-vb[VbRaddataSaving#4](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form2.vb#4)]  
+    [!code-csharp[VbRaddataSaving#4](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Form2.cs#4)]
+    [!code-vb[VbRaddataSaving#4](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form2.vb#4)]  
   
- 對關聯資料變更的協調順序如下：  
+   對關聯資料變更的協調順序如下：  
   
 -   刪除子記錄。 (在此情況下，刪除資料錄`Orders`資料表。)  
   
@@ -161,7 +161,7 @@ ms.locfileid: "49208895"
   
 #### <a name="to-run-the-application"></a>若要執行應用程式  
   
--   選取 **F5**執行應用程式。  
+-   選取  **F5**執行應用程式。  
   
 ## <a name="see-also"></a>另請參閱  
  [將資料儲存回資料庫](../data-tools/save-data-back-to-the-database.md)

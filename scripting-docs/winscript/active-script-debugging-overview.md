@@ -14,12 +14,12 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1d9aebdc3f8fa4df0f4386609e632e1a8611c87f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: d8624c1405931edefe2e1e53e579ad28a7b238f1
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24571538"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220218"
 ---
 # <a name="active-script-debugging-overview"></a>動態指令碼偵錯概觀
 動態指令碼偵錯介面允許進行非語言相關、非主機相關偵錯，並支援各種開發環境。  
@@ -33,31 +33,30 @@ ms.locfileid: "24571538"
   
  在下列各小節中，會討論主動式偵錯中的每個重要元件以及其相關聯的介面。 不過，更進一步之前，必須定義數個重要主動式偵錯概念：  
   
- Host Application - 主應用程式  
+ **主應用程式**  
  裝載指令碼引擎並提供一組可編寫指令碼之物件 (或「物件模型」) 的應用程式。  
   
- 語言引擎  
+ **語言引擎**  
  一個元件，提供剖析、執行和偵錯特定語言的抽象概念。  
   
- 偵錯工具 IDE  
+ **偵錯工具 IDE**  
  應用程式，透過與主應用程式和語言引擎進行通訊來提供偵錯 UI。  
   
- 機器偵錯管理員  
- 一個元件，維護可偵錯應用程式處理序的登錄。  
+ **機器偵錯管理員** 一個元件，用來維護可偵錯應用程式處理序的登錄。  
   
- 處理序偵錯管理員  
+ **處理序偵錯管理員**  
  一個元件，維護特定應用程式的可偵錯文件樹狀結構、追蹤執行中執行緒等等。  
   
- 文件內容  
+ **文件內容**  
  文件內容是代表主機文件原始程式碼中特定範圍的抽象概念。  
   
- 程式碼內容  
+ **程式碼內容**  
  程式碼內容代表語言引擎之執行中程式碼中的特定位置 (「虛擬指令指標」)。  
   
- 運算式內容  
+ **運算式內容**  
  語言引擎可能在其中評估運算式的特定內容 (例如，堆疊框架)。  
   
- 物件瀏覽  
+ **物件瀏覽**  
  物件之名稱、類型、值和子物件的結構化語言無關表示法，適用於實作「監看式視窗」 UI。  
   
  以下概述每個重要主動式偵錯元件以及對應的相關聯介面，而且後面接著這些介面的詳細資料。  
@@ -65,84 +64,84 @@ ms.locfileid: "24571538"
 ## <a name="language-engine"></a>語言引擎  
  語言引擎提供：  
   
--   語言剖析和執行。  
+- 語言剖析和執行。  
   
--   偵錯支援 (中斷點等等)。  
+- 偵錯支援 (中斷點等等)。  
   
--   運算式評估。  
+- 運算式評估。  
   
--   語法著色。  
+- 語法著色。  
   
--   物件瀏覽。  
+- 物件瀏覽。  
   
--   堆疊列舉和剖析。  
+- 堆疊列舉和剖析。  
   
- 以下是指令碼引擎所需的介面，支援提供偵錯、運算式評估和物件瀏覽。 主應用程式會使用這些介面來對應其文件內容與引擎程式碼內容，而偵錯工具 UI 也會使用它們來進行運算式評估、堆疊列舉和物件瀏覽。  
+  以下是指令碼引擎所需的介面，支援提供偵錯、運算式評估和物件瀏覽。 主應用程式會使用這些介面來對應其文件內容與引擎程式碼內容，而偵錯工具 UI 也會使用它們來進行運算式評估、堆疊列舉和物件瀏覽。  
   
- [IActiveScriptDebug 介面](../winscript/reference/iactivescriptdebug-interface.md)  
- 提供語法著色和程式碼內容列舉。  
+  [IActiveScriptDebug 介面](../winscript/reference/iactivescriptdebug-interface.md)  
+  提供語法著色和程式碼內容列舉。  
   
- [IActiveScriptErrorDebug 介面](../winscript/reference/iactivescripterrordebug-interface.md)  
- 傳回錯誤的文件內容和堆疊框架。  
+  [IActiveScriptErrorDebug 介面](../winscript/reference/iactivescripterrordebug-interface.md)  
+  傳回錯誤的文件內容和堆疊框架。  
   
- [IActiveScriptSiteDebug 介面](../winscript/reference/iactivescriptsitedebug-interface.md)  
- 主機已提供從指令碼引擎到偵錯工具的連結。  
+  [IActiveScriptSiteDebug 介面](../winscript/reference/iactivescriptsitedebug-interface.md)  
+  主機已提供從指令碼引擎到偵錯工具的連結。  
   
- [IDebugCodeContext 介面](../winscript/reference/idebugcodecontext-interface.md)  
- 在執行緒中提供虛擬「指令指標」。  
+  [IDebugCodeContext 介面](../winscript/reference/idebugcodecontext-interface.md)  
+  在執行緒中提供虛擬「指令指標」。  
   
- [IEnumDebugCodeContexts 介面](../winscript/reference/ienumdebugcodecontexts-interface.md)  
- 列舉對應至文件內容的程式碼內容。  
+  [IEnumDebugCodeContexts 介面](../winscript/reference/ienumdebugcodecontexts-interface.md)  
+  列舉對應至文件內容的程式碼內容。  
   
- [IDebugStackFrame 介面](../winscript/reference/idebugstackframe-interface.md)  
- 代表執行緒堆疊上的邏輯堆疊框架。  
+  [IDebugStackFrame 介面](../winscript/reference/idebugstackframe-interface.md)  
+  代表執行緒堆疊上的邏輯堆疊框架。  
   
- [IDebugExpressionContext 介面](../winscript/reference/idebugexpressioncontext-interface.md)  
- 提供可在其中評估運算式的內容。  
+  [IDebugExpressionContext 介面](../winscript/reference/idebugexpressioncontext-interface.md)  
+  提供可在其中評估運算式的內容。  
   
- [IDebugStackFrameSniffer 介面](../winscript/reference/idebugstackframesniffer-interface.md)  
- 提供方法來列舉邏輯堆疊框架。  
+  [IDebugStackFrameSniffer 介面](../winscript/reference/idebugstackframesniffer-interface.md)  
+  提供方法來列舉邏輯堆疊框架。  
   
- [IDebugExpression 介面](../winscript/reference/idebugexpression-interface.md)  
- 代表非同步評估的運算式。  
+  [IDebugExpression 介面](../winscript/reference/idebugexpression-interface.md)  
+  代表非同步評估的運算式。  
   
- [IDebugSyncOperation 介面](../winscript/reference/idebugsyncoperation-interface.md)  
- 可讓指令碼引擎抽取巢狀於特定已封鎖執行緒時需要執行的作業。  
+  [IDebugSyncOperation 介面](../winscript/reference/idebugsyncoperation-interface.md)  
+  可讓指令碼引擎抽取巢狀於特定已封鎖執行緒時需要執行的作業。  
   
- [IDebugAsyncOperation 介面](../winscript/reference/idebugasyncoperation-interface.md)  
- 提供同步偵錯作業的非同步存取。  
+  [IDebugAsyncOperation 介面](../winscript/reference/idebugasyncoperation-interface.md)  
+  提供同步偵錯作業的非同步存取。  
   
- [IDebugAsyncOperationCallBack 介面](../winscript/reference/idebugasyncoperationcallback-interface.md)  
- 提供與 `IDebugAsyncOperation` 介面評估進度相關的狀態事件。  
+  [IDebugAsyncOperationCallBack 介面](../winscript/reference/idebugasyncoperationcallback-interface.md)  
+  提供與 `IDebugAsyncOperation` 介面評估進度相關的狀態事件。  
   
- [IEnumDebugExpressionContexts 介面](../winscript/reference/ienumdebugexpressioncontexts-interface.md)  
- 列舉 `IDebugExpressionContexts` 物件的集合。  
+  [IEnumDebugExpressionContexts 介面](../winscript/reference/ienumdebugexpressioncontexts-interface.md)  
+  列舉 `IDebugExpressionContexts` 物件的集合。  
   
- [IProvideExpressionContexts 介面](../winscript/reference/iprovideexpressioncontexts-interface.md)  
- 提供方法來列舉特定元件已知的運算式內容。  
+  [IProvideExpressionContexts 介面](../winscript/reference/iprovideexpressioncontexts-interface.md)  
+  提供方法來列舉特定元件已知的運算式內容。  
   
- [IDebugFormatter 介面](../winscript/reference/idebugformatter-interface.md)  
- 允許語言或 IDE 來自訂 VARIANT 值或 VARTYPE 類型與字串之間的轉換。  
+  [IDebugFormatter 介面](../winscript/reference/idebugformatter-interface.md)  
+  允許語言或 IDE 來自訂 VARIANT 值或 VARTYPE 類型與字串之間的轉換。  
   
- [IDebugStackFrameSnifferEx 介面](../winscript/reference/idebugstackframesnifferex-interface.md)  
- 列舉 PDM 的邏輯堆疊框架。  
+  [IDebugStackFrameSnifferEx 介面](../winscript/reference/idebugstackframesnifferex-interface.md)  
+  列舉 PDM 的邏輯堆疊框架。  
   
 ## <a name="hosts"></a>主機  
  主機：  
   
--   裝載語言引擎。  
+- 裝載語言引擎。  
   
--   提供物件模型 (可編寫指令碼的物件集)。  
+- 提供物件模型 (可編寫指令碼的物件集)。  
   
--   定義可進行偵錯的文件樹狀結構和其內容。  
+- 定義可進行偵錯的文件樹狀結構和其內容。  
   
--   將指令碼組織成虛擬應用程式。  
+- 將指令碼組織成虛擬應用程式。  
   
- 有兩種主機：  
+  有兩種主機：  
   
--   無聲主機僅支援基本動態指令碼介面。 它無法控制文件結構或組織；這完全取決於提供給語言引擎的指令碼。  
+- 無聲主機僅支援基本動態指令碼介面。 它無法控制文件結構或組織；這完全取決於提供給語言引擎的指令碼。  
   
--   智慧主機支援較大的一組介面，讓它可定義文件樹狀結構、文件內容和語法著色。 有一組協助程式介面 (如下列小節所述)，可讓主機更輕鬆地成為智慧主機。  
+- 智慧主機支援較大的一組介面，讓它可定義文件樹狀結構、文件內容和語法著色。 有一組協助程式介面 (如下列小節所述)，可讓主機更輕鬆地成為智慧主機。  
   
 ### <a name="smart-host-helper-interfaces"></a>智慧主機協助程式介面  
  `IDebugDocumentHelper` 方法提供一組大幅簡化的介面，讓主機可用來取得智慧裝載的優點，而不需要處理完整主機介面的完整複雜性和 (能力)。  
@@ -188,34 +187,34 @@ ms.locfileid: "24571538"
 ## <a name="debugger-ide"></a>偵錯工具 IDE  
  IDE 是與語言無關的偵錯 UI。 它提供：  
   
--   文件檢視器/編輯器。  
+- 文件檢視器/編輯器。  
   
--   中斷點管理。  
+- 中斷點管理。  
   
--   運算式評估和監看式視窗。  
+- 運算式評估和監看式視窗。  
   
--   堆疊框架瀏覽。  
+- 堆疊框架瀏覽。  
   
--   物件/類別瀏覽。  
+- 物件/類別瀏覽。  
   
--   瀏覽虛擬應用程式結構。  
+- 瀏覽虛擬應用程式結構。  
   
- 偵錯工具所實作的介面：  
+  偵錯工具所實作的介面：  
   
- [IApplicationDebugger 介面](../winscript/reference/iapplicationdebugger-interface.md)  
- 偵錯工具 IDE 工作階段所公開的主要介面。  
+  [IApplicationDebugger 介面](../winscript/reference/iapplicationdebugger-interface.md)  
+  偵錯工具 IDE 工作階段所公開的主要介面。  
   
- [IApplicationDebuggerUI 介面](../winscript/reference/iapplicationdebuggerui-interface.md)  
- 讓外部元件進一步控制偵錯工具的使用者介面 (UI)。  
+  [IApplicationDebuggerUI 介面](../winscript/reference/iapplicationdebuggerui-interface.md)  
+  讓外部元件進一步控制偵錯工具的使用者介面 (UI)。  
   
- [IDebugExpressionCallBack 介面](../winscript/reference/idebugexpressioncallback-interface.md)  
- 提供 `IDebugExpression` 評估進度的狀態事件。  
+  [IDebugExpressionCallBack 介面](../winscript/reference/idebugexpressioncallback-interface.md)  
+  提供 `IDebugExpression` 評估進度的狀態事件。  
   
- [IDebugDocumentTextEvents 介面](../winscript/reference/idebugdocumenttextevents-interface.md)  
- 提供指出相關聯文字文件變更的事件。  
+  [IDebugDocumentTextEvents 介面](../winscript/reference/idebugdocumenttextevents-interface.md)  
+  提供指出相關聯文字文件變更的事件。  
   
- [IDebugApplicationNodeEvents 介面](../winscript/reference/idebugapplicationnodeevents-interface.md)  
- 提供 `IDebugApplicationNode` 介面的事件介面。  
+  [IDebugApplicationNodeEvents 介面](../winscript/reference/idebugapplicationnodeevents-interface.md)  
+  提供 `IDebugApplicationNode` 介面的事件介面。  
   
 ### <a name="machine-debug-manager"></a>機器偵錯管理員  
  機器偵錯管理員提供虛擬應用程式與偵錯工具之間的連結點，方法是維護和列舉使用中虛擬應用程式的清單。  
@@ -238,60 +237,60 @@ ms.locfileid: "24571538"
 ### <a name="process-debug-manager"></a>處理序偵錯管理員  
  PDM 執行下列作業：  
   
--   同步處理多個語言引擎的偵錯。  
+- 同步處理多個語言引擎的偵錯。  
   
--   維護可偵錯文件樹狀結構。  
+- 維護可偵錯文件樹狀結構。  
   
--   合併堆疊框架。  
+- 合併堆疊框架。  
   
--   跨語言引擎協調中斷點和逐步執行。  
+- 跨語言引擎協調中斷點和逐步執行。  
   
--   追蹤執行緒。  
+- 追蹤執行緒。  
   
--   維護非同步處理的偵錯工具執行緒。  
+- 維護非同步處理的偵錯工具執行緒。  
   
--   與機器偵錯管理員和偵錯工具 IDE 進行通訊。  
+- 與機器偵錯管理員和偵錯工具 IDE 進行通訊。  
   
- 以下是處理序偵錯管理員所提供的介面。  
+  以下是處理序偵錯管理員所提供的介面。  
   
- [IProcessDebugManager 介面](../winscript/reference/iprocessdebugmanager-interface.md)  
- 處理序偵錯管理員的主要介面。 此介面可以建立、新增或移除處理序中的虛擬應用程式。  
+  [IProcessDebugManager 介面](../winscript/reference/iprocessdebugmanager-interface.md)  
+  處理序偵錯管理員的主要介面。 此介面可以建立、新增或移除處理序中的虛擬應用程式。  
   
- [IRemoteDebugApplication 介面](../winscript/reference/iremotedebugapplication-interface.md)  
- 代表執行中應用程式。  
+  [IRemoteDebugApplication 介面](../winscript/reference/iremotedebugapplication-interface.md)  
+  代表執行中應用程式。  
   
- [IDebugApplication 介面](../winscript/reference/idebugapplication-interface.md)  
- 公開非遠端偵錯方法，以供語言引擎和主機使用。  
+  [IDebugApplication 介面](../winscript/reference/idebugapplication-interface.md)  
+  公開非遠端偵錯方法，以供語言引擎和主機使用。  
   
- [IRemoteDebugApplicationThread 介面](../winscript/reference/iremotedebugapplicationthread-interface.md)  
- 代表特定應用程式內執行的執行緒。  
+  [IRemoteDebugApplicationThread 介面](../winscript/reference/iremotedebugapplicationthread-interface.md)  
+  代表特定應用程式內執行的執行緒。  
   
- [IDebugApplicationThread 介面](../winscript/reference/idebugapplicationthread-interface.md)  
- 允許語言引擎和主機提供執行緒同步處理，以及維護執行緒特定偵錯狀態資訊。  
+  [IDebugApplicationThread 介面](../winscript/reference/idebugapplicationthread-interface.md)  
+  允許語言引擎和主機提供執行緒同步處理，以及維護執行緒特定偵錯狀態資訊。  
   
- [IEnumRemoteDebugApplicationThreads 介面](../winscript/reference/ienumremotedebugapplicationthreads-interface.md)  
- 列舉應用程式中的執行中執行緒。  
+  [IEnumRemoteDebugApplicationThreads 介面](../winscript/reference/ienumremotedebugapplicationthreads-interface.md)  
+  列舉應用程式中的執行中執行緒。  
   
- [IDebugThreadCall 介面](../winscript/reference/idebugthreadcall-interface.md)  
- 分派已封送處理的呼叫。  
+  [IDebugThreadCall 介面](../winscript/reference/idebugthreadcall-interface.md)  
+  分派已封送處理的呼叫。  
   
- [IDebugApplicationNode 介面](../winscript/reference/idebugapplicationnode-interface.md)  
- 維護階層中文件的位置。  
+  [IDebugApplicationNode 介面](../winscript/reference/idebugapplicationnode-interface.md)  
+  維護階層中文件的位置。  
   
- [IEnumDebugApplicationNodes 介面](../winscript/reference/ienumdebugapplicationnodes-interface.md)  
- 列舉與應用程式建立關聯之節點的子節點。  
+  [IEnumDebugApplicationNodes 介面](../winscript/reference/ienumdebugapplicationnodes-interface.md)  
+  列舉與應用程式建立關聯之節點的子節點。  
   
- [IEnumDebugStackFrames 介面](../winscript/reference/ienumdebugstackframes-interface.md)  
- 列舉對應至從引擎合併之執行緒的堆疊框架。  
+  [IEnumDebugStackFrames 介面](../winscript/reference/ienumdebugstackframes-interface.md)  
+  列舉對應至從引擎合併之執行緒的堆疊框架。  
   
- [IDebugCookie 介面](../winscript/reference/idebugcookie-interface.md)  
- 允許在指令碼偵錯工具中設定偵錯 Cookie。  
+  [IDebugCookie 介面](../winscript/reference/idebugcookie-interface.md)  
+  允許在指令碼偵錯工具中設定偵錯 Cookie。  
   
- [IDebugHelper 介面](../winscript/reference/idebughelper-interface.md)  
- 作為物件瀏覽器的 Factory 以及指令碼引擎的簡單連線點。  
+  [IDebugHelper 介面](../winscript/reference/idebughelper-interface.md)  
+  作為物件瀏覽器的 Factory 以及指令碼引擎的簡單連線點。  
   
- [ISimpleConnectionPoint 介面](../winscript/reference/isimpleconnectionpoint-interface.md)  
- 針對指令碼引擎，提供一種簡單的方式來描述和列舉在特定連接點引發的事件。  
+  [ISimpleConnectionPoint 介面](../winscript/reference/isimpleconnectionpoint-interface.md)  
+  針對指令碼引擎，提供一種簡單的方式來描述和列舉在特定連接點引發的事件。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [動態指令碼偵錯工具介面](../winscript/reference/active-script-debugger-interfaces.md)

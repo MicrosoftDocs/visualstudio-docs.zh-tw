@@ -15,12 +15,12 @@ ms.assetid: 81a58e40-7cd0-4ef4-a475-c4e1e84d6e06
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 73555abcc1a3c6afebf6528cc493e62a403ad00a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9d81916910eb4769801ae330c10edde24cb52f52
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49196316"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49923403"
 ---
 # <a name="registering-verbs-for-file-name-extensions"></a>註冊適用於副檔名的動詞命令
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,17 +32,17 @@ ms.locfileid: "49196316"
 ## <a name="registering-standard-verbs"></a>註冊標準動詞命令  
  作業系統可辨識下列的標準動詞命令：  
   
--   開啟  
+- 開啟  
   
--   編輯  
+- 編輯  
   
--   播放  
+- 播放  
   
--   的  
+- 的  
   
--   預覽  
+- 預覽  
   
- 可能的話，請註冊一個標準動詞。 最常見的方式是開啟的動詞命令。 只有當沒有清楚的差異開啟檔案，並編輯檔案，請使用編輯動詞命令。 例如，開啟的.htm 檔案被它顯示在瀏覽器中，而編輯的.htm 檔案被啟動 HTML 編輯器。 標準動詞命令已當地語系化的作業系統地區設定。  
+  可能的話，請註冊一個標準動詞。 最常見的方式是開啟的動詞命令。 只有當沒有清楚的差異開啟檔案，並編輯檔案，請使用編輯動詞命令。 例如，開啟的.htm 檔案被它顯示在瀏覽器中，而編輯的.htm 檔案被啟動 HTML 編輯器。 標準動詞命令已當地語系化的作業系統地區設定。  
   
 > [!NOTE]
 >  註冊時的標準動詞，未設定開啟的索引鍵的預設值。 預設值會包含在功能表上的顯示字串。 作業系統會提供這個標準動詞命令的字串。  

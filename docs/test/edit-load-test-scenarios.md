@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: c589e58fb1e5b6a63706889de666d4e622f0ceb5
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 67398d5a4b2b33ace2d3ba3c74d63693861e586e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39180239"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49837135"
 ---
 # <a name="edit-load-test-scenarios"></a>編輯負載測試情節
 
@@ -46,7 +46,7 @@ ms.locfileid: "39180239"
 ## <a name="tasks"></a>工作
 
 |工作|相關主題|
-|-----------|-----------------------|
+|-|-----------------------|
 |**在情節中新增人工互動暫停：** 考慮時間是用來模擬造成人們在與網站互動時必須等待的人類行為。 考慮時間會發生在 Web 效能測試的各個要求之間，以及負載情節中各個測試反覆項目之間。 在負載測試中使用考慮時間，有助於建立更精確的負載模擬。|-   [編輯考慮時間以模擬網站人類互動延遲](../test/edit-think-times-in-load-test-scenarios.md)|
 |**為情節指定虛擬使用者數目：** 您可以設定負載模式屬性，以指定在負載測試期間調整模擬使用者負載的方式。 您可取得三種內建的負載模式：常數、逐步執行和以目標為依據。 請根據您的負載測試目標，選擇負載模式並將屬性調整為適當的層級。|-   [編輯負載模式以模型化虛擬使用者活動](../test/edit-load-patterns-to-model-virtual-user-activities.md)|
 |**設定虛擬使用者在情節中執行測試的可能性：** 您可以使用測試混合，以指定虛擬使用者在負載測試情節中執行指定測試的可能性。 這可讓您更寫實地模擬負載。 您能夠擁有數個工作流程 (而不是整個應用程式中只有一個工作流程)，這可以更貼切地呈現使用者與應用程式互動的方式。|-   [編輯測試混合模型](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md)|

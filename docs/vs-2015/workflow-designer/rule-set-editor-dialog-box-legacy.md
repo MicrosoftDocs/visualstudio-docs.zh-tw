@@ -16,12 +16,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 9da35b83eead06f40452696bb9559d409da8e38d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3469e395ee50e63f8ac76e4181d02b777ccbd4ba
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49294576"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942396"
 ---
 # <a name="rule-set-editor-dialog-box-legacy"></a>規則集編輯器對話方塊 (舊版)
 本主題描述如何使用**規則集編輯器**對話方塊中，在舊版[!INCLUDE[wfd1](../includes/wfd1-md.md)]。 當您需要以 [!INCLUDE[wfd2](../includes/wfd2-md.md)] 或 [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] 為目標時，請使用舊版 [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)]。  
@@ -67,19 +67,19 @@ ms.locfileid: "49294576"
   
  運算式支援以下運算子：  
   
--   關係運算子：==、=、!=  
+- 關係運算子：==、=、!=  
   
--   比較運算子： <， \<=、 >、 > =  
+- 比較運算子： <， \<=、 >、 > =  
   
--   算術運算子：+、-、*、/、MOD  
+- 算術運算子：+、-、*、/、MOD  
   
--   邏輯運算子:，& &、 OR、 &#124; &#124;、 NOT、 ！  
+- 邏輯運算子:，& &、 OR、 &#124; &#124;、 NOT、 ！  
   
--   位元運算子： &，&#124;  
+- 位元運算子： &，&#124;  
   
- 運算式運算子的優先順序是按照 C# 運算子優先順序規則。  
+  運算式運算子的優先順序是按照 C# 運算子優先順序規則。  
   
- 如需有關條件的詳細資訊，請參閱[在工作流程中使用條件](http://msdn.microsoft.com/en-us/541211f5-d382-4810-894f-71f00b34fa77)。  
+  如需有關條件的詳細資訊，請參閱[在工作流程中使用條件](http://msdn.microsoft.com/en-us/541211f5-d382-4810-894f-71f00b34fa77)。  
   
 ### <a name="halt-and-update-functions"></a>暫止和更新函式  
  **Then 動作：** 並**Else 動作：** 運算式支援**暫止**並**更新**函式。 若要使用**暫止**函式中，輸入**暫止**成**Then 動作：** 或**Else 動作：** 文字方塊。 **暫止**動作造成規則集執行立即停止，且控制項會傳回至呼叫的程式碼。 您使用**更新**函式與向前鏈結。  

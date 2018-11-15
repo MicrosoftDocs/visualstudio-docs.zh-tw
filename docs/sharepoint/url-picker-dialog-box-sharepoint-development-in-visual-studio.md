@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e7820723c88fd76639fa47e5c97ad179a208fc18
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 517058c99a6ec5a297b95324decbb2cfcbe04271
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118597"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49950754"
 ---
 # <a name="url-picker-dialog-box-sharepoint-development-in-visual-studio"></a>URL 選擇器對話方塊 （Visual Studio 中的 SharePoint 程式開發）
   在 [URL 選擇器] 對話方塊中，您可以選擇位於您的專案中或執行 SharePoint 的本機伺服器中的檔案，例如主版頁面檔案或影像檔。  
@@ -36,27 +36,27 @@ ms.locfileid: "37118597"
   
  依序展開**專案**節點，選擇您的專案中的檔案。 在對話方塊中，都會顯示為可選取，您的專案中的檔案必須符合下列準則：  
   
--   檔案必須包含在對應的資料夾。  
+- 檔案必須包含在對應的資料夾。  
   
--   檔案必須新增至方案套件。  
+- 檔案必須新增至方案套件。  
   
--   在另一個專案中找不到檔案。  
+- 在另一個專案中找不到檔案。  
   
- 如果您想要參考不符合這些準則的檔案，您必須以手動方式輸入檔案的路徑。  
+  如果您想要參考不符合這些準則的檔案，您必須以手動方式輸入檔案的路徑。  
   
- 依序展開**Server**節點，選擇位於本機執行 SharePoint 的伺服器的檔案。 若出現可選取在對話方塊中，這些檔案必須符合下列準則：  
+  依序展開**Server**節點，選擇位於本機執行 SharePoint 的伺服器的檔案。 若出現可選取在對話方塊中，這些檔案必須符合下列準則：  
   
--   檔案必須位於下列的對應資料夾中的一個：**映像**，**版面配置**，或**ControlTemplates**。  
+- 檔案必須位於下列的對應資料夾中的一個：**映像**，**版面配置**，或**ControlTemplates**。  
   
--   在 SharePoint 內容資料庫中找不到檔案。  
+- 在 SharePoint 內容資料庫中找不到檔案。  
   
- 如果您想要參考不符合這些準則的檔案，您必須以手動方式輸入檔案的路徑。  
+  如果您想要參考不符合這些準則的檔案，您必須以手動方式輸入檔案的路徑。  
   
- **資料夾的內容**  
- 顯示所選資料夾中的檔案清單。 選擇檔案，然後選擇**確定**按鈕以關閉對話方塊，並將您選擇傳送至呼叫它的處理序。  
+  **資料夾的內容**  
+  顯示所選資料夾中的檔案清單。 選擇檔案，然後選擇**確定**按鈕以關閉對話方塊，並將您選擇傳送至呼叫它的處理序。  
   
- **檔案類型**  
- 可讓您選擇您正執行的工作所適用之檔案的清單。  
+  **檔案類型**  
+  可讓您選擇您正執行的工作所適用之檔案的清單。  
   
 ## <a name="see-also"></a>另請參閱
  [建立 SharePoint 相關應用程式頁面](../sharepoint/creating-application-pages-for-sharepoint.md)   

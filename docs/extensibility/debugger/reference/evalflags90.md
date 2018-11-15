@@ -1,5 +1,5 @@
 ---
-title: EVALFLAGS90 |Microsoft 文件
+title: EVALFLAGS90 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,15 +13,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 120bf38afbf05f367757de3a5e453cab8b4311b1
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 43c8c7dcba7ea1125c031f0cc64a902d88f67017
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31102703"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49849420"
 ---
 # <a name="evalflags90"></a>EVALFLAGS90
-列舉有效的控制運算式評估的旗標值。 這個列舉型別擴充[EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md)列舉型別。  
+列舉有效的控制運算式評估的旗標值。 這個列舉型別會擴充[EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md)列舉型別。  
   
 ## <a name="syntax"></a>語法  
   
@@ -75,16 +75,16 @@ public enum enum_EVALFLAGS90
  指定中斷點停止。  
   
  EVAL90_ALLOWERRORREPORT  
- 指定允許主應用程式報告該錯誤。 主要用於 Internet Explorer 中指令碼中的運算式評估。  
+ 指定允許主應用程式報告該錯誤。 主要用於在 Internet Explorer 中的指令碼中的運算式評估。  
   
  EVAL90_FUNCTION_AS_ADDRESS  
  要評估做為位址，而不是叫用函式的強制函式。  
   
  EVAL90_NOFUNCEVAL  
- 函式可防止在評估。 例如，請考慮`int`運算式中的語彙基元`myExpression(int) + 10`。 此函式可以正確評估，為位址，但不是能作為值。  
+ 函式可防止進行評估。 例如，請考慮`int`運算式中的語彙基元`myExpression(int) + 10`。 為位址，但不是能作為值，就可以正確評估此函式。  
   
  EVAL90_NOEVENTS  
- 旗標，表示工作階段的偵錯管理員 (SDM) 或 IDE，您不應該傳送之運算式評估期間發生的事件。  
+ 旗標，指出工作階段的偵錯管理員 (SDM) 或 ide，不應該傳送之運算式評估期間發生的事件。  
   
  EVAL90_DESIGN_TIME_EXPR_EVAL  
  可讓設計階段運算式評估。  
@@ -93,7 +93,7 @@ public enum enum_EVALFLAGS90
  允許隱含變數的建立。  
   
  EVAL90_FORCE_EVALUATION_NOW  
- 立即強制評估。 服務要求，例如使用者要求時，這非常有用。  
+ 若要立即發生強制評估。 服務要求，例如使用者要求時，這非常有用。  
   
 ## <a name="requirements"></a>需求  
  標頭： Msdbg90.h  

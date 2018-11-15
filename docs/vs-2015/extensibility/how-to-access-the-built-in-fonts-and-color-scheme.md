@@ -17,12 +17,12 @@ ms.assetid: 6905845e-e88e-4805-adcf-21da39108ec7
 caps.latest.revision: 24
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f81d8998063fba9c3d51ddb1d66b2da9bd4fd8a9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b4938057514071836fefbca6988cf05a6399126e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49178694"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49811889"
 ---
 # <a name="how-to-access-the-built-in-fonts-and-color-scheme"></a>如何： 存取的內建的字型和色彩配置
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,26 +31,26 @@ Visual Studio 整合式的開發環境 (IDE) 有 [編輯器] 視窗相關聯的�
   
  若要使用的內建的字型和色彩配置，VSPackage 必須：  
   
--   定義要使用預設的字型和色彩服務的分類。  
+- 定義要使用預設的字型和色彩服務的分類。  
   
--   預設字型和色彩伺服器中註冊的類別。  
+- 預設字型和色彩伺服器中註冊的類別。  
   
--   建議特定的視窗藉由使用內建的顯示項目和類別目錄使用的 IDE`T:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer`和`T:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer`介面。  
+- 建議特定的視窗藉由使用內建的顯示項目和類別目錄使用的 IDE`T:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer`和`T:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer`介面。  
   
- IDE 會使用產生的類別目錄為視窗的控制代碼。 類別目錄的名稱會顯示在**顯示設定：** 中的下拉式清單方塊**字型和色彩**屬性頁。  
+  IDE 會使用產生的類別目錄為視窗的控制代碼。 類別目錄的名稱會顯示在**顯示設定：** 中的下拉式清單方塊**字型和色彩**屬性頁。  
   
 ### <a name="to-define-a-category-using-built-in-fonts-and-colors"></a>若要定義類別，使用內建的字型和色彩  
   
-1.  建立任意的 GUID。  
+1. 建立任意的 GUID。  
   
-     此 GUID 用來唯一識別類別 **。** IDE 的預設字型和色彩的規格，此類別會重複使用。  
+    此 GUID 用來唯一識別類別<strong>。</strong> IDE 的預設字型和色彩的規格，此類別會重複使用。  
   
-    > [!NOTE]
-    >  當擷取使用的字型和色彩資料<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents>或其他介面，Vspackage 會使用此 GUID 參考內建的資訊。  
+   > [!NOTE]
+   >  當擷取使用的字型和色彩資料<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents>或其他介面，Vspackage 會使用此 GUID 參考內建的資訊。  
   
-2.  類別目錄的名稱必須加入 VSPackage 的資源 (.rc) 檔，在字串資料表，以便您可以在需要時顯示在 IDE 中當地語系化。  
+2. 類別目錄的名稱必須加入 VSPackage 的資源 (.rc) 檔，在字串資料表，以便您可以在需要時顯示在 IDE 中當地語系化。  
   
-     如需詳細資訊，請參閱 <<c0> [ 新增或刪除字串](http://msdn.microsoft.com/library/077077b4-0f4b-4633-92d6-60b321164cab)。  
+    如需詳細資訊，請參閱 <<c0> [ 新增或刪除字串](http://msdn.microsoft.com/library/077077b4-0f4b-4633-92d6-60b321164cab)。  
   
 ### <a name="to-register-a-category-using-built-in-fonts-and-colors"></a>若要註冊分類，使用內建的字型和色彩  
   
@@ -73,15 +73,15 @@ Visual Studio 整合式的開發環境 (IDE) 有 [編輯器] 視窗相關聯的�
   
 ### <a name="to-initiate-the-use-of-system-provided-fonts-and-colors"></a>若要起始使用系統提供的字型和色彩  
   
-1.  建立的執行個體`T:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer`介面為視窗的實作和初始化的一部分。  
+1. 建立的執行個體`T:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer`介面為視窗的實作和初始化的一部分。  
   
-2.  呼叫<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer.GetPropertyCategory%2A>方法，以取得的執行個體`T:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer`對應至目前的介面<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>執行個體。  
+2. 呼叫<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer.GetPropertyCategory%2A>方法，以取得的執行個體`T:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer`對應至目前的介面<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>執行個體。  
   
-3.  呼叫<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer.SetProperty%2A>兩次。  
+3. 呼叫<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer.SetProperty%2A>兩次。  
   
-    -   呼叫一次使用`VSEDITPROPID_ViewGeneral_ColorCategory`做為引數。  
+   - 呼叫一次使用`VSEDITPROPID_ViewGeneral_ColorCategory`做為引數。  
   
-    -   呼叫一次使用`VSEDITPROPID_ViewGeneral_FontCategory`做為引數。  
+   - 呼叫一次使用`VSEDITPROPID_ViewGeneral_FontCategory`做為引數。  
   
      這樣會設定並公開 （expose） 為視窗的屬性的預設字型和色彩的服務。  
   

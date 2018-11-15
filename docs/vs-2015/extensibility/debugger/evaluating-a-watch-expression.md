@@ -16,12 +16,12 @@ ms.assetid: 8317cd52-6fea-4e8f-a739-774dc06bd44b
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 01b2e987ca82fc61d41ff2321f6a035a9fffb18d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f034ec5d13423958cf209e0f2b4022fe6e8046c2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49188639"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49932893"
 ---
 # <a name="evaluating-a-watch-expression"></a>評估監看運算式
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

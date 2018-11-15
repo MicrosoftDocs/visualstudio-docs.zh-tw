@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cb194836f40ce599ee3509b11fc9849b6a7780ab
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 308858941d03f6341cf3d22af074be45d790e16b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31942093"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49930215"
 ---
 # <a name="how-to-configure-projects-to-target-multiple-platforms"></a>如何：將專案設定成以多重平台為目標
 
@@ -56,11 +56,11 @@ Visual Studio 提供一種方式，可以讓方案一次以數個不同 CPU 架�
 
 ### <a name="to-build-multiple-solution-configurations-at-once"></a>一次建置多個方案組態
 
-1.  使用 [組態管理員] 為方案至少新增兩個目標平台。
+1. 使用 [組態管理員] 為方案至少新增兩個目標平台。
 
-2.  使用 [批次建置] 視窗，一次建置數個方案組態。
+2. 使用 [批次建置] 視窗，一次建置數個方案組態。
 
- 例如，可能會將方案層級平台設為 [!INCLUDE[vcprx64](../extensibility/internals/includes/vcprx64_md.md)]，而且以相同平台為目標的這個方案內沒有專案。 您的方案也可能有多個檔案，而且每個檔案都以不同的平台為目標。 建議，如果您有上述其中一種情況，則建立具有描述性名稱的新組態，以避免產生混淆。
+   例如，可能會將方案層級平台設為 [!INCLUDE[vcprx64](../extensibility/internals/includes/vcprx64_md.md)]，而且以相同平台為目標的這個方案內沒有專案。 您的方案也可能有多個檔案，而且每個檔案都以不同的平台為目標。 建議，如果您有上述其中一種情況，則建立具有描述性名稱的新組態，以避免產生混淆。
 
 ## <a name="see-also"></a>另請參閱
 

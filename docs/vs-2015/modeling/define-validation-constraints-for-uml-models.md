@@ -14,12 +14,12 @@ caps.latest.revision: 49
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 6f2b97f2b7f3db141bbbbe17d5cf1ab63212be81
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: da21c3b8646ef69432259e4430b940824ad05dd8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49176536"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49920660"
 ---
 # <a name="define-validation-constraints-for-uml-models"></a>定義 UML 模型的驗證條件約束
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,24 +51,24 @@ ms.locfileid: "49176536"
   
 #### <a name="to-create-a-validation-extension-in-its-own-vsix"></a>在自己的 VSIX 建立驗證擴充功能  
   
-1.  在 [新增專案]  對話方塊的 [模型專案] 之下，選取 [驗證擴充功能] 。  
+1. 在 [新增專案]  對話方塊的 [模型專案] 之下，選取 [驗證擴充功能] 。  
   
-2.  在新的專案中開啟 **.cs** 檔案，並修改類別來實作您的驗證條件約束。  
+2. 在新的專案中開啟 **.cs** 檔案，並修改類別來實作您的驗證條件約束。  
   
-     如需詳細資訊，請參閱 [評估驗證條件約束](#Implementing)。  
+    如需詳細資訊，請參閱 [評估驗證條件約束](#Implementing)。  
   
-    > [!IMPORTANT]
-    >  請確定您的 **.cs** 檔案包含下列 `using` 陳述式：  
-    >   
-    >  `using Microsoft.VisualStudio.ArchitectureTools.Extensibility.Uml;`  
+   > [!IMPORTANT]
+   >  請確定您的 **.cs** 檔案包含下列 `using` 陳述式：  
+   >   
+   >  `using Microsoft.VisualStudio.ArchitectureTools.Extensibility.Uml;`  
   
-3.  您可以藉由定義新的方法來加入其他條件約束。 若要指定某方法做為驗證方法，必須和初始驗證方法一樣標記屬性。  
+3. 您可以藉由定義新的方法來加入其他條件約束。 若要指定某方法做為驗證方法，必須和初始驗證方法一樣標記屬性。  
   
-4.  按 F5 來測試您的條件約束。 如需詳細資訊，請參閱 [執行驗證條件約束](#Executing)。  
+4. 按 F5 來測試您的條件約束。 如需詳細資訊，請參閱 [執行驗證條件約束](#Executing)。  
   
-5.  另一部電腦上安裝功能表命令，將檔案複製**筒\\\*\\\*.vsix**專案建置。 如需詳細資訊，請參閱 [安裝和解除安裝擴充功能](#Installing)。  
+5. 另一部電腦上安裝功能表命令，將檔案複製**筒\\\*\\\*.vsix**專案建置。 如需詳細資訊，請參閱 [安裝和解除安裝擴充功能](#Installing)。  
   
- 當您新增其他 **.cs** 檔案時，通常會需要下列 `using` 陳述式：  
+   當您新增其他 **.cs** 檔案時，通常會需要下列 `using` 陳述式：  
   
 ```csharp  
 using System.Collections.Generic;  
@@ -272,13 +272,13 @@ public void ValidateSomething
   
  `context.LogError("error string", errorCode, elementsWithError);`  
   
--   `"error string"` 會出現在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 錯誤清單中  
+- `"error string"` 會出現在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 錯誤清單中  
   
--   `errorCode` 為字串，是錯誤的唯一識別碼  
+- `errorCode` 為字串，是錯誤的唯一識別碼  
   
--   `elementsWithError` 可指出模型中的項目。 當使用者按兩下錯誤報告時，會選取代表該項目的圖形。  
+- `elementsWithError` 可指出模型中的項目。 當使用者按兩下錯誤報告時，會選取代表該項目的圖形。  
   
- `LogError(),` `LogWarning()` 和 `LogMessage()` 將訊息放在錯誤清單的不同區段。  
+  `LogError(),` `LogWarning()` 和 `LogMessage()` 將訊息放在錯誤清單的不同區段。  
   
 ## <a name="how-validation-methods-are-applied"></a>如何套用驗證方法  
  驗證會套用到模型中的每個項目，包括關聯性和較大項目的組件，例如類別的屬性及作業的參數。  
@@ -389,15 +389,15 @@ context.LogError(... , usecase);
   
 #### <a name="to-uninstall-an-extension"></a>解除安裝擴充功能  
   
-1.  在 [工具]  功能表中選擇 [擴充功能和更新] 。  
+1. 在 [工具]  功能表中選擇 [擴充功能和更新] 。  
   
-2.  展開 [已安裝的擴充功能] 。  
+2. 展開 [已安裝的擴充功能] 。  
   
-3.  選取擴充功能，然後選擇 [解除安裝] 。  
+3. 選取擴充功能，然後選擇 [解除安裝] 。  
   
- 在很少見的情況下，故障的擴充功能無法載入並且會在錯誤視窗中建立報告，但不會顯示在擴充管理員中。 在此情況下，您可以移除延伸模組，從下列位置刪除檔案所在 *%localappdata%* 通常*DriveName*: \Users\\*的使用者名稱*\AppData\Local:  
+   在很少見的情況下，故障的擴充功能無法載入並且會在錯誤視窗中建立報告，但不會顯示在擴充管理員中。 在此情況下，您可以移除延伸模組，從下列位置刪除檔案所在 *%localappdata%* 通常*DriveName*: \Users\\*的使用者名稱*\AppData\Local:  
   
- *%Localappdata%* **\Microsoft\VisualStudio\\[version] \Extensions**  
+   *%Localappdata%* **\Microsoft\VisualStudio\\[version] \Extensions**  
   
 ##  <a name="Example"></a> 範例  
  這個範例會在項目之間的相依性關聯性中尋找迴圈。  

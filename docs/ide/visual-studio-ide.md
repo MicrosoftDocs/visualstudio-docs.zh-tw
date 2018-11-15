@@ -1,6 +1,6 @@
 ---
 title: Visual Studio 2017 的概觀
-ms.date: 06/01/2018
+ms.date: 10/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
@@ -13,20 +13,22 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4465eff996664dca2fe1b5dcb31b5d7af049db53
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: bc5961e2565c8618ad0f34a8c58d149e4a82c935
+ms.sourcegitcommit: 401be39a42ffe007593528b5bba62583ca9fcafd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44320783"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50244446"
 ---
 # <a name="welcome-to-the-visual-studio-ide"></a>歡迎使用 Visual Studio IDE
 
 Visual Studio「整合式開發環境」是一個有創意的啟動控制板，可供您編輯、偵錯及建置程式碼，然後發佈應用程式。 整合式開發環境 (IDE) 是功能豐富的程式，可用於軟體開發的許多方面。 除了大部分 IDE 提供的標準編輯器和偵錯工具之外，Visual Studio 還有編譯器、程式碼完成工具、圖形設計工具和更多功能，讓軟體開發程序變得更為容易。
 
-Visual Studio 適用於 Windows 和 Mac。 [Visual Studio for Mac](/visualstudio/mac/) 有許多與 Visual Studio 2017 相同的功能，並已針對開發跨平台和行動應用程式最佳化。
+Visual Studio 適用於 Windows 和 Mac。 [Visual Studio for Mac](/visualstudio/mac/) 有許多與 Visual Studio 2017 相同的功能，並已針對開發跨平台和行動應用程式最佳化。 本文著重於 Windows 版的 Visual Studio 2017。
 
-這篇概觀文章著重在 Visual Studio 2017 for Windows。 文中將為您介紹 IDE 的基本功能。 我們將逐步解說您可以運用 Visual Studio 來進行的一些操作，包括建立簡單的專案、使用 [IntelliSense](using-intellisense.md) 作為程式碼撰寫輔助工具，以及偵錯應用程式來查看程式執行期間的變數值。 我們也將介紹各種工具視窗。
+Visual Studio 2017 有三種版本：Community、Professional 和 Enterprise。 若要了解每個版本支援哪些功能，請參閱[比較 Visual Studio 2017 IDE](https://visualstudio.microsoft.com/vs/compare/)。
+
+本篇概觀文章將為您介紹 IDE 的基本功能。 我們將逐步解說您可以運用 Visual Studio 來進行的一些操作，包括建立簡單的專案、使用 [IntelliSense](using-intellisense.md) 作為程式碼撰寫輔助工具，以及偵錯應用程式來查看程式執行期間的變數值。 我們也將介紹各種工具視窗。
 
 ## <a name="install-the-visual-studio-ide"></a>安裝 Visual Studio IDE
 
@@ -94,7 +96,7 @@ Visual Studio 的某些熱門功能可在您開發軟體時協助您提高生產
 
 - [移至定義](../ide/go-to-and-peek-definition.md)
 
-  [移至定義] 功能就可以直接帶您進入定義函式或類型的位置。
+   [移至定義] 功能就可以直接帶您進入定義函式或類型的位置。
 
    ![移至定義](../ide/media/go-to-definition-menu.png)
 
@@ -112,14 +114,14 @@ Visual Studio 的某些熱門功能可在您開發軟體時協助您提高生產
 
    ![功能表列上的 [檔案] > [新增專案]](../ide/media/file-new-project-menu.png)
 
-1. [新增專案] 對話方塊會顯示數個專案「範本」。 範本包含指定專案類型所需的基本檔案和設定。 選擇 [Visual C#] 下的 [.NET Core] 類別，然後選擇 [主控台應用程式 (.NET Core)] 範本。 在 [名稱] 文字方塊中，鍵入 **HelloWorld**，然後選取 [確定] 按鈕。
+2. [新增專案] 對話方塊會顯示數個專案「範本」。 範本包含指定專案類型所需的基本檔案和設定。 選擇 [Visual C#] 下的 [.NET Core] 類別，然後選擇 [主控台應用程式 (.NET Core)] 範本。 在 [名稱] 文字方塊中，鍵入 **HelloWorld**，然後選取 [確定] 按鈕。
 
    ![.NET Core 應用程式範本](../ide/media/overview-new-project-dialog.png)
 
    Visual Studio 會建立專案。 其為簡單的 "Hello World" 應用程式，會呼叫 <xref:System.Console.WriteLine?displayProperty=nameWithType> 方法來顯示常值字串 "Hello World!" 在主控台 (程式輸出) 視窗中。
 
-  > [!NOTE]
-  > 如果您未看到 [.NET Core] 類別，則需要安裝 [.NET Core 跨平台開發] 工作負載。 若要安裝，請選擇 [新增專案] 對話方塊左下角的 [開啟 Visual Studio 安裝程式] 連結。 在 Visual Studio 安裝程式開啟後，向下捲動並選取 [.NET Core 跨平台開發] 工作負載，然後選取 [修改]。
+   > [!NOTE]
+   > 如果您未看到 [.NET Core] 類別，則需要安裝 [.NET Core 跨平台開發] 工作負載。 若要安裝，請選擇 [新增專案] 對話方塊左下角的 [開啟 Visual Studio 安裝程式] 連結。 在 Visual Studio 安裝程式開啟後，向下捲動並選取 [.NET Core 跨平台開發] 工作負載，然後選取 [修改]。
 
    您應該會立即看到類似下列的畫面：
 
@@ -127,21 +129,21 @@ Visual Studio 的某些熱門功能可在您開發軟體時協助您提高生產
 
    您應用程式的 C# 程式碼會顯示在編輯器視窗中，占據大部分的空間。 請注意，系統會將文字自動標示色彩，以表示不同部分的程式碼，例如關鍵字和類型。 此外，程式碼中的垂直小虛線會指出那些大括號彼此成對，而行號則可協助您稍後找出程式碼。 您可以選擇帶方框的小負號來摺疊或展開程式碼區塊。 此程式碼大綱功能可讓您隱藏您不需要的程式碼，有助於讓畫面變得較為簡潔。 專案檔會列在右邊稱作 [方案總管] 的視窗中。
 
-  ![具有紅色方塊的 Visual Studio IDE](../ide/media/overview-ide-console-app-red-boxes.png)
+   ![具有紅色方塊的 Visual Studio IDE](../ide/media/overview-ide-console-app-red-boxes.png)
 
-  還有其他可用的功能表和工具視窗，但讓我們目前先繼續進行操作。
+   還有其他可用的功能表和工具視窗，但讓我們目前先繼續進行操作。
 
-1. 現在，啟動應用程式。 您可以藉由從功能表列上的 [偵錯] 功能表選擇 [啟動但不偵錯]，來執行此動作。 您也可以按 **Ctrl**+**F5**。
+3. 現在，啟動應用程式。 您可以藉由從功能表列上的 [偵錯] 功能表選擇 [啟動但不偵錯]，來執行此動作。 您也可以按 **Ctrl**+**F5**。
 
-  ![[偵錯] > [啟動但不偵錯] 功能表](../ide/media/overview-start-without-debugging.png)
+   ![[偵錯] > [啟動但不偵錯] 功能表](../ide/media/overview-start-without-debugging.png)
 
-  Visual Studio 會建置應用程式，然後主控台視窗會開啟並顯示訊息 **Hello World!**。 您現在已有一個執行中的應用程式！
+   Visual Studio 會建置應用程式，然後主控台視窗會開啟並顯示訊息 **Hello World!**。 您現在已有一個執行中的應用程式！
 
-  ![主控台視窗](../ide/media/overview-console-window.png)
+   ![主控台視窗](../ide/media/overview-console-window.png)
 
-1. 若要關閉主控台視窗，請在鍵盤上按下任意鍵。
+4. 若要關閉主控台視窗，請在鍵盤上按下任意鍵。
 
-1. 讓我們將一些其他程式碼新增至應用程式。 在 `Console.WriteLine("Hello World!");` 行前新增下列 C# 程式碼：
+5. 讓我們將一些其他程式碼新增至應用程式。 在 `Console.WriteLine("Hello World!");` 行前新增下列 C# 程式碼：
 
    ```csharp
    Console.WriteLine("\nWhat is your name?");
@@ -150,21 +152,21 @@ Visual Studio 的某些熱門功能可在您開發軟體時協助您提高生產
 
    此程式碼會在主控台視窗中顯示 **What is your name?**，然後等待使用者輸入某些文字並按下 **Enter** 鍵。
 
-1. 將 `Console.WriteLine("Hello World!");` 行變更為下列程式碼：
+6. 將 `Console.WriteLine("Hello World!");` 行變更為下列程式碼：
 
    ```csharp
    Console.WriteLine($"\nHello {name}!");
    ```
 
-1. 選取 偵錯 > 啟動但不偵錯 或按 **Ctrl**+**F5**，再次執行應用程式。
+7. 選取 偵錯 > 啟動但不偵錯 或按 **Ctrl**+**F5**，再次執行應用程式。
 
    Visual Studio 會重建應用程式，然後主控台視窗會開啟並提示您輸入您的名稱。
 
-1. 請在主控台視窗中輸入您的名稱，並按下 **ENTER**。
+8. 請在主控台視窗中輸入您的名稱，並按下 **ENTER**。
 
    ![主控台視窗輸入](media/overview-console-input.png)
 
-1. 按任意鍵以關閉主控台視窗並停止執行程式。
+9. 按任意鍵以關閉主控台視窗並停止執行程式。
 
 ## <a name="use-refactoring-and-intellisense"></a>使用重構和 IntelliSense
 
@@ -174,11 +176,11 @@ Visual Studio 的某些熱門功能可在您開發軟體時協助您提高生產
 
 1. 按兩下 `name` 變數來選取它。
 
-1. 鍵入變數的新名稱 **username**。
+2. 鍵入變數的新名稱 **username**。
 
    請注意，變數周圍會出現一個灰色方塊，而邊界會出現一個燈泡。
 
-1. 選取燈泡圖示以顯示可用的[快速動作](quick-actions.md)。 選取 [將 'name' 重新命名為 'username']。
+3. 選取燈泡圖示以顯示可用的[快速動作](quick-actions.md)。 選取 [將 'name' 重新命名為 'username']。
 
    ![重新命名 Visual Studio 中的動作](media/rename-quick-action.png)
 
@@ -186,15 +188,15 @@ Visual Studio 的某些熱門功能可在您開發軟體時協助您提高生產
 
    ![顯示 Visual Studio 中重新命名重構的動畫 GIF](media/rename-refactoring.gif)
 
-1. 現在，讓我們看看 IntelliSense。 在 `Console.WriteLine($"\nHello {username}!");` 行下方，鍵入 **DateTime now = DateTime.**。
+4. 現在，讓我們看看 IntelliSense。 在 `Console.WriteLine($"\nHello {username}!");` 行下方，鍵入 **DateTime now = DateTime.**。
 
    一個方塊會顯示 <xref:System.DateTime> 類別的成員。 此外，目前選取成員的描述會顯示在另一個方塊中。
 
    ![Visual Studio 中的 IntelliSense 清單成員](media/intellisense-list-members.png)
 
-1. 按兩下名為 **Now** 的成員或按下**定位鍵**來選取此成員，這是類別的屬性。新增分號 **;** 以完成程式碼行。
+5. 按兩下名為 **Now** 的成員或按下**定位鍵**來選取此成員，這是類別的屬性。新增分號 **;** 以完成程式碼行。
 
-1. 在下方鍵入或複製下列程式碼行：
+6. 在下方鍵入或複製下列程式碼行：
 
    ```csharp
    int dayOfYear = now.DayOfYear;
@@ -206,17 +208,17 @@ Visual Studio 的某些熱門功能可在您開發軟體時協助您提高生產
    > [!TIP]
    > <xref:System.Console.Write%2A?displayProperty=nameWithType> 與 <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> 稍有不同，它不會在列印之後新增行結束字元。 這表示傳送至輸出的下一段文字會列印在同一行。 您可以將滑鼠移至程式碼中每個方法上方來查看其描述。
 
-1. 接下來，我們將再使用一次重構，讓程式碼更精簡。 按一下 `DateTime now = DateTime.Now;` 行中的變數 `now`。
+7. 接下來，我們將再使用一次重構，讓程式碼更精簡。 按一下 `DateTime now = DateTime.Now;` 行中的變數 `now`。
 
    請注意，該行的邊界會出現一個小螺絲起子圖示。
 
-1. 按一下螺絲起子圖示，以查看 Visual Studio 所提供的建議。 在本例中，它會顯示[內嵌暫存變數](reference/inline-temporary-variable.md)重構移除程式碼行，而未變更整體行為：
+8. 按一下螺絲起子圖示，以查看 Visual Studio 所提供的建議。 在本例中，它會顯示[內嵌暫存變數](reference/inline-temporary-variable.md)重構移除程式碼行，而未變更整體行為：
 
    ![Visual Studio 中的內嵌暫存變數重構](media/inline-temporary-variable-refactoring.png)
 
-1. 按一下 [內嵌暫存變數] 以重構程式碼。
+9. 按一下 [內嵌暫存變數] 以重構程式碼。
 
-1. 按下 **Ctrl**+**F5**，再執行一次程式。 輸出會與下列內容類似：
+10. 按下 **Ctrl**+**F5**，再執行一次程式。 輸出會與下列內容類似：
 
    ![含有程式輸出的主控台視窗](../ide/media/overview-console-final.png)
 
@@ -252,7 +254,7 @@ Visual Studio 的某些熱門功能可在您開發軟體時協助您提高生產
 
 1. 在功能表列上，選擇 [工具] > [選項] 來開啟 [選項] 對話方塊。
 
-1. 在 [環境] > [一般] 選項頁面上，將 [色彩佈景主題] 選項變更為 [深色]，然後選擇 [確定]。
+2. 在 [環境] > [一般] 選項頁面上，將 [色彩佈景主題] 選項變更為 [深色]，然後選擇 [確定]。
 
    整個 IDE 的色彩佈景主題會變更為 [深色]。
 

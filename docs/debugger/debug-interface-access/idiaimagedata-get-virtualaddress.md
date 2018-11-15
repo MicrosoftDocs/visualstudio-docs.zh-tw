@@ -1,5 +1,5 @@
 ---
-title: 'Idiaimagedata:: Get_virtualaddress |Microsoft 文件'
+title: 'Idiaimagedata:: Get_virtualaddress |Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c0e3cec9c677d11b49d8d3a36fa37c395d7fe55b
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 2316fffcb0c5e60839cec3ab0908cd3a4faabe14
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31459918"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49863811"
 ---
 # <a name="idiaimagedatagetvirtualaddress"></a>IDiaImageData::get_virtualAddress
-擷取映像的虛擬記憶體中的位置。  
+擷取映像的虛擬記憶體位置。  
   
 ## <a name="syntax"></a>語法  
   
@@ -34,10 +34,10 @@ HRESULT get_virtualAddress (
   
 #### <a name="parameters"></a>參數  
  `pRetVal`  
- [out]傳回影像的虛擬位址。  
+ [out]傳回映像的虛擬位址。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDiaImageData](../../debugger/debug-interface-access/idiaimagedata.md)

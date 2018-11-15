@@ -19,12 +19,12 @@ caps.latest.revision: 44
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: aebac5a95a6d1b1ab6aa0d4230094003de2a2062
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2886e454e9986e63cbc3496d3ef5b0664e85dede
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49221256"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49851591"
 ---
 # <a name="define-a-profile-to-extend-uml"></a>定義要擴充 UML 的設定檔
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,11 +35,11 @@ ms.locfileid: "49221256"
   
  您可以定義專屬設定檔來調整 UML 並將其擴充至專屬商業領域或架構。 例如：  
   
--   如果您經常定義網站，則可以定義專屬設定檔，以提供可套用至類別圖中類別的 «網頁» 造型。 您接著可以使用類別圖來規劃網站。 每個 «網頁» 類別都會有頁面內容、樣式等的額外屬性。  
+- 如果您經常定義網站，則可以定義專屬設定檔，以提供可套用至類別圖中類別的 «網頁» 造型。 您接著可以使用類別圖來規劃網站。 每個 «網頁» 類別都會有頁面內容、樣式等的額外屬性。  
   
--   如果您開發銀行業務軟體，則可以定義提供 «帳戶» 造型的設定檔。 您接著可以使用類別圖來定義不同類型的帳戶，以及顯示其間的關聯性。  
+- 如果您開發銀行業務軟體，則可以定義提供 «帳戶» 造型的設定檔。 您接著可以使用類別圖來定義不同類型的帳戶，以及顯示其間的關聯性。  
   
- 您可以將專屬設定檔散發給您的小組。 每個小組成員都可以安裝您的設定檔。 這可讓他們編輯和建立使用其造型的模型。  
+  您可以將專屬設定檔散發給您的小組。 每個小組成員都可以安裝您的設定檔。 這可讓他們編輯和建立使用其造型的模型。  
   
 > [!NOTE]
 >  如果您在所編輯的模型中套用設定檔的造型，然後與其他人員共用模型，則他們應該在自己的電腦上安裝相同的設定檔。 否則，他們將無法看到您已經使用的造型。  
@@ -83,56 +83,56 @@ ms.locfileid: "49221256"
   
 #### <a name="to-define-a-profile-in-a-new-visual-studio-extension"></a>在新的 Visual Studio 擴充功能中定義設定檔  
   
-1.  建立 Visual Studio 擴充功能專案。  
+1. 建立 Visual Studio 擴充功能專案。  
   
-    > [!NOTE]
-    >  您必須已安裝 [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] 才能使用此程序。  
+   > [!NOTE]
+   >  您必須已安裝 [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] 才能使用此程序。  
   
-    1.  在 [檔案]  功能表中，指向 [新增] ，然後按一下 [專案] 。  
+   1.  在 [檔案]  功能表中，指向 [新增] ，然後按一下 [專案] 。  
   
-    2.  在**新的專案**對話方塊的 **已安裝的範本**，展開**Visual C#**，按一下 **擴充性**，然後按一下**VSIX 專案**。 設定專案名稱，然後按一下**確定**。  
+   2.  在**新的專案**對話方塊的 **已安裝的範本**，展開**Visual C#**，按一下 **擴充性**，然後按一下**VSIX 專案**。 設定專案名稱，然後按一下**確定**。  
   
-2.  將設定檔加入專案。  
+2. 將設定檔加入專案。  
   
-    -   在 [方案總管] 中，以滑鼠右鍵按一下專案，指向**新增**，然後按一下**現有項目**。 在對話方塊中，找到您的設定檔名稱。  
+   -   在 [方案總管] 中，以滑鼠右鍵按一下專案，指向**新增**，然後按一下**現有項目**。 在對話方塊中，找到您的設定檔名稱。  
   
-3.  設定設定檔**複製到輸出**屬性。  
+3. 設定設定檔**複製到輸出**屬性。  
   
-    1.  在 方案總管 中，以滑鼠右鍵按一下 設定檔，然後**屬性**。  
+   1.  在 方案總管 中，以滑鼠右鍵按一下 設定檔，然後**屬性**。  
   
-    2.  在 [屬性] 視窗中，設定**複製到輸出目錄**屬性設**永遠複製**。  
+   2.  在 [屬性] 視窗中，設定**複製到輸出目錄**屬性設**永遠複製**。  
   
-4.  在 [方案總管] 中，開啟 `source.extension.vsixmanifest`。  
+4. 在 [方案總管] 中，開啟 `source.extension.vsixmanifest`。  
   
-     此檔案會在擴充功能資訊清單編輯器中開啟。  
+    此檔案會在擴充功能資訊清單編輯器中開啟。  
   
-5.  在 **資產**頁面上，加入描述設定檔的資料列：  
+5. 在 **資產**頁面上，加入描述設定檔的資料列：  
   
-    -   按一下 [新增] 。 設定欄位**加入新資產**，如下所示的對話方塊。  
+   -   按一下 [新增] 。 設定欄位**加入新資產**，如下所示的對話方塊。  
   
-    -   設定**型別**至 `Microsoft.VisualStudio.UmlProfile`  
+   -   設定**型別**至 `Microsoft.VisualStudio.UmlProfile`  
   
-         這不是其中一個下拉式清單選項。 請使用鍵盤輸入這個名稱。  
+        這不是其中一個下拉式清單選項。 請使用鍵盤輸入這個名稱。  
   
-    -   按一下 **檔案系統上的**，然後選取您的設定檔的名稱，例如 `MyProfile.profile`  
+   -   按一下 **檔案系統上的**，然後選取您的設定檔的名稱，例如 `MyProfile.profile`  
   
-6.  建置專案。  
+6. 建置專案。  
   
-7.  **若要偵錯設定檔**，按下 f5 鍵。  
+7. **若要偵錯設定檔**，按下 f5 鍵。  
   
-     Visual Studio 的實驗執行個體隨即開啟。 在這種情況下，請開啟模型專案。 在 [UML 總管] 中，選取模型的根項目，並且在 [屬性] 視窗中選取您的設定檔。 然後選取模型內的項目，並選取您為這些項目定義的造型。  
+    Visual Studio 的實驗執行個體隨即開啟。 在這種情況下，請開啟模型專案。 在 [UML 總管] 中，選取模型的根項目，並且在 [屬性] 視窗中選取您的設定檔。 然後選取模型內的項目，並選取您為這些項目定義的造型。  
   
-8.  **若要擷取 VSIX 進行部署**  
+8. **若要擷取 VSIX 進行部署**  
   
-    1.  在 Windows 檔案總管中，開啟資料夾 **.\bin\Debug**或是 **.\bin\Release**若要尋找 **.vsix**檔案。 這是 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 擴充檔。 該檔案可以安裝在您的電腦上，以及傳送給其他 Visual Studio 使用者。  
+   1.  在 Windows 檔案總管中，開啟資料夾 **.\bin\Debug**或是 **.\bin\Release**若要尋找 **.vsix**檔案。 這是 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 擴充檔。 該檔案可以安裝在您的電腦上，以及傳送給其他 Visual Studio 使用者。  
   
-    2.  安裝擴充功能：  
+   2.  安裝擴充功能：  
   
-        1.  按兩下 `.vsix` 檔案。 [Visual Studio 擴充功能安裝程式] 隨即啟動。  
+       1.  按兩下 `.vsix` 檔案。 [Visual Studio 擴充功能安裝程式] 隨即啟動。  
   
-        2.  重新啟動任何正在執行的 Visual Studio 執行個體。  
+       2.  重新啟動任何正在執行的 Visual Studio 執行個體。  
   
- 如果尚未安裝 [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)]，則可以將下列替代程序用於小型擴充功能。  
+   如果尚未安裝 [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)]，則可以將下列替代程序用於小型擴充功能。  
   
 #### <a name="to-define-a-profile-extension-without-using-visual-studio-sdk"></a>在未使用 Visual Studio SDK 的情況下定義設定檔擴充功能  
   
@@ -348,24 +348,24 @@ ms.locfileid: "49221256"
  當我開啟 UML 模型時，就會出現下列錯誤： **VS1707： 無法載入下列設定檔，因為發生序列化錯誤： MyProfile.profile**  
  1.  確認 .profile 的基本 XML 語法正確。  
   
-2.  確定每個 Moniker 名稱的格式都是 /profileName/nodeName。 profileName 是根設定檔節點中 name 屬性的值。 nodeName 是 metaclass、externalType 或 enumerationType 的 name 屬性值。  
+2. 確定每個 Moniker 名稱的格式都是 /profileName/nodeName。 profileName 是根設定檔節點中 name 屬性的值。 nodeName 是 metaclass、externalType 或 enumerationType 的 name 屬性值。  
   
-3.  確定語法如下所示，且如所示_磁碟機_**: \Program Files\Microsoft Visual Studio [版本] \Common7\IDE\Extensions\Microsoft\Architecture Tools\UmlProfiles\\** .  
+3. 確定語法如下所示，且如所示_磁碟機_**: \Program Files\Microsoft Visual Studio [版本] \Common7\IDE\Extensions\Microsoft\Architecture Tools\UmlProfiles\\** .  
   
-4.  解除安裝錯誤擴充功能。 在 [工具]  功能表上，按一下 [擴充功能和更新] 。  
+4. 解除安裝錯誤擴充功能。 在 [工具]  功能表上，按一下 [擴充功能和更新] 。  
   
-    -   如果擴充功能未出現，請參閱下一個項目。  
+   -   如果擴充功能未出現，請參閱下一個項目。  
   
-5.  重建 VSIX 檔案，並在 Windows 檔案總管中開啟它進行重新安裝。 重新啟動 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。  
+5. 重建 VSIX 檔案，並在 Windows 檔案總管中開啟它進行重新安裝。 重新啟動 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。  
   
- 延伸模組不會出現在 [延伸模組管理員] 中，但當您嘗試重新安裝它時，會顯示下列訊息：**延伸模組已安裝所有適用的產品。**  
- 1.  移除的子資料夾中的擴充檔案*LocalAppData*\Microsoft\VisualStudio\\[version] \Extensions\  
+   延伸模組不會出現在 [延伸模組管理員] 中，但當您嘗試重新安裝它時，會顯示下列訊息：**延伸模組已安裝所有適用的產品。**  
+   1.  移除的子資料夾中的擴充檔案*LocalAppData*\Microsoft\VisualStudio\\[version] \Extensions\  
   
-    -   若要查看*LocalAppData*，您必須在 Windows 檔案總管資料夾選項 的 檢視 索引標籤中設定顯示隱藏的檔案和資料夾。  
+   -   若要查看*LocalAppData*，您必須在 Windows 檔案總管資料夾選項 的 檢視 索引標籤中設定顯示隱藏的檔案和資料夾。  
   
-    -   *LocalAppData*通常是在 C:\Users\\*userName*\AppData\Local\  
+   -   *LocalAppData*通常是在 C:\Users\\*userName*\AppData\Local\  
   
-2.  重新啟動 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。  
+6. 重新啟動 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。  
   
 ## <a name="see-also"></a>另請參閱  
  [將造型加入 UML 模型項目](../modeling/add-stereotypes-to-uml-model-elements.md)   

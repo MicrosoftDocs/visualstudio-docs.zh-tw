@@ -1,7 +1,7 @@
 ---
 title: Python 互動式視窗 (REPL)
 description: 如何在 Visual Studio 中使用適用於 Python 程式碼的互動式視窗 (REPL)，以進行快速程式碼開發。
-ms.date: 06/26/2018
+ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 2eeffea641fd6d571b8b682aebab7f7d0ff83a41
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 8146e43a51e4d1634cbba78d789a3ef8cff99f95
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39499064"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219922"
 ---
 # <a name="work-with-the-python-interactive-window"></a>使用 Python 互動式視窗
 
@@ -82,7 +82,7 @@ Visual Studio 有多個 Python REPL 模式可供選擇：
 | --- | --- |
 | `$$` | 插入註解，這對於在工作階段期間為程式碼做出註解非常有用。 |
 | `$attach` | 將 Visual Studio 偵錯工具附加至 REPL 視窗程序以啟用偵錯。 |
-| `$cls`, `$clear` | 清除編輯視窗的內容，但不變更記錄和執行內容。 |
+| `$cls`、 `$clear` | 清除編輯視窗的內容，但不變更記錄和執行內容。 |
 | `$help` | 顯示命令清單，或特定命令的說明。 |
 | `$load` | 從檔案載入命令並執行，直到完成為止。 |
 | `$mod` | 將目前的範圍切換到指定的模組名稱。 |
@@ -107,7 +107,7 @@ Visual Studio 有多個 Python REPL 模式可供選擇：
 
 除了直接在**互動式**視窗內操作之外，您也可以在編輯器中選取程式碼並以滑鼠右鍵按一下它，然後選擇 [傳送至互動式]，或按 **Ctrl**+**Enter**。
 
-![[傳送至互動式] 功能表命令](media/interactive-send-to.png)
+![[傳送到 Interactive] 功能表命令](media/interactive-send-to.png)
 
 此命令對於反覆式或演化式程式碼開發非常實用 (包含在開發程式碼時對它進行測試)。 例如，當您將程式碼片段傳送到**互動式**視窗並查看其輸出之後，您可以按向上鍵以再次顯示該程式碼，修改它，然後按 **Ctrl**+**Enter** 來快速測試它 (在輸入末端按 **Enter** 將會執行它，但在輸入中間按 **Enter** 則會插入新的一行)。當您撰寫出所需的程式碼之後，您可以輕鬆地將它複製回您的專案檔案中。
 

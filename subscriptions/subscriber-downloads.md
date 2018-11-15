@@ -9,12 +9,12 @@ description: 了解如何尋找及下載隨附於 Visual Studio 訂用帳戶的 
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 4ac1f74f9f60526c8b1f884cd63907329d2f91a2
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: ec2dd900e0cfae3b150bba52e31834efb53628e6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637733"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49831428"
 ---
 # <a name="using-subscriber-downloads-in-visual-studio-subscriptions"></a>使用 Visual Studio 訂用帳戶的訂閱者下載
 您可以存取各種下載軟體，這是訂閱者權益的一部分。
@@ -42,11 +42,11 @@ ms.locfileid: "39637733"
 
 當您瀏覽[下載](https://my.visualstudio.com/downloads/featured?wt.mc_id=o~msft~docs)頁面時，您會看到依產品類型分組陳列的熱門下載。  您可以選取顯示的其中一項熱門下載，或使用頁面頂端的搜尋列搜尋任何產品。
 > [!div class="mx-imgBorder"]
-> ![訂閱者下載頁面](_img\subscriber-downloads\subscriber-downloads-resized.png)
+> ![訂閱者下載頁面](_img/subscriber-downloads/subscriber-downloads-resized.png)
 
 例如，如果您從 [開發人員工具] 清單中選擇 **Visual Studio 2017**，就會看到可用的 Visual Studio 2017 下載清單。
 > [!div class="mx-imgBorder"]
-> ![Visual Studio 2017 下載](_img\subscriber-downloads\vs2017-new-UI.png)
+> ![Visual Studio 2017 下載](_img/subscriber-downloads/vs2017-new-UI.png)
 
 您可以使用所提供的下拉式功能表，輕鬆地選取您的架構、語言和檔案類型。 選擇您慣用的選項，然後按一下 [下載] 開始下載產品。
 
@@ -54,13 +54,13 @@ ms.locfileid: "39637733"
 
 按一下產品名稱或 [資訊] 連結即會顯示該下載的詳細資料，並可存取產品的版本資訊。
 > [!div class="mx-imgBorder"]
-> ![Visual Studio 2017 Pro 下載詳細資料](_img\subscriber-downloads\vs2017-pro-details.png)
+> ![Visual Studio 2017 Pro 下載詳細資料](_img/subscriber-downloads/vs2017-pro-details.png)
 
 在詳細資料窗格中，您也可以按一下 [金鑰] 索引標籤來查看產品金鑰的狀態。
 > [!div class="mx-imgBorder"]
-> ![Visual Studio 2017 Pro 產品金鑰](_img\subscriber-downloads\vs2017-pro-keys.png)
+> ![Visual Studio 2017 Pro 產品金鑰](_img/subscriber-downloads/vs2017-pro-keys.png)
 
 ### <a name="obtaining-product-keys"></a>取得產品金鑰
 若要取得用於下載的產品金鑰，您可以按一下標示為 [Get Key (取得金鑰)] 的藍色金鑰；如果您已在檢視詳細資料窗格，請在 [金鑰] 索引標籤上按一下 [Claim key (索取金鑰)]。
 > [!div class="mx-imgBorder"]
-> ![Visual Studio 2017 Pro 索取產品金鑰](_img\subscriber-downloads\vs2017-pro-claim-keys.png)
+> ![Visual Studio 2017 Pro 索取產品金鑰](_img/subscriber-downloads/vs2017-pro-claim-keys.png)

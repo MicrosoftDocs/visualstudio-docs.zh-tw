@@ -14,12 +14,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 985dfb5193082f22431db3384cc6a652f36cfb2d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 457a097d46f9af409580d3784bb577090db0c535
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49247269"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49852410"
 ---
 # <a name="wpf-data-binding-with-linq-to-xml-overview"></a>WPF 資料繫結與 LINQ to XML 概觀
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,11 +31,11 @@ ms.locfileid: "49247269"
   
  XAML 和 LINQ to XML 有兩種廣泛的方式可以互動：  
   
--   XAML 檔案是語式正確 (Well-Formed) 的 XML，因此可以透過 XML 技術 (例如，LINQ to XML) 進行查詢與管理。  
+- XAML 檔案是語式正確 (Well-Formed) 的 XML，因此可以透過 XML 技術 (例如，LINQ to XML) 進行查詢與管理。  
   
--   由於 LINQ to XML 查詢代表資料的來源，這些查詢可以當做 WPF UI 項目之資料繫結的資料來源使用。  
+- 由於 LINQ to XML 查詢代表資料的來源，這些查詢可以當做 WPF UI 項目之資料繫結的資料來源使用。  
   
- 此文件描述第二個案例。  
+  此文件描述第二個案例。  
   
 ## <a name="data-binding-in-the-windows-presentation-foundation"></a>Windows Presentation Foundation 中的資料繫結  
  WPF 資料繫結可讓 UI 項目將其屬性中的一個屬性與資料來源產生關聯。 其中一個簡單的範例為 <xref:System.Windows.Controls.Label>，其文字表示使用者定義物件中公用屬性的值。 WPF 資料繫結依賴下列元件：  
@@ -52,13 +52,13 @@ ms.locfileid: "49247269"
 ### <a name="dynamic-data-binding-in-wpf"></a>WPF 中的動態資料繫結  
  根據預設，只有在初始化目標 UI 項目後，才會發生資料繫結。 這稱為「單次」繫結。 就大部分的用途而言，這還不足夠；資料繫結解決方案通常需要在執行階段，使用下列其中一項，動態傳播這些變更：  
   
--   「單向」繫結會促使自動傳播對一端所做的變更。 最常見的情況下，對來源的變更會反映到目標中，但是反向有時候很有用。  
+- 「單向」繫結會促使自動傳播對一端所做的變更。 最常見的情況下，對來源的變更會反映到目標中，但是反向有時候很有用。  
   
--   在「雙向」繫結中，對來源所做的變更會自動傳播到目標，而對目標所做的變更也會自動傳播到來源。  
+- 在「雙向」繫結中，對來源所做的變更會自動傳播到目標，而對目標所做的變更也會自動傳播到來源。  
   
- 若要讓單向或雙向繫結發生，來源必須實作變更通知機制，例如，藉由針對支援的每個屬性實作 <xref:System.ComponentModel.INotifyPropertyChanged> 介面或使用 *PropertyNameChanged* 模式。  
+  若要讓單向或雙向繫結發生，來源必須實作變更通知機制，例如，藉由針對支援的每個屬性實作 <xref:System.ComponentModel.INotifyPropertyChanged> 介面或使用 *PropertyNameChanged* 模式。  
   
- 如需有關 WPF 中資料繫結的詳細資訊，請參閱[資料繫結 (WPF)](http://msdn.microsoft.com/library/90f79b97-17e7-40d1-abf0-3ba600ad1d7e)。  
+  如需有關 WPF 中資料繫結的詳細資訊，請參閱[資料繫結 (WPF)](http://msdn.microsoft.com/library/90f79b97-17e7-40d1-abf0-3ba600ad1d7e)。  
   
 ## <a name="dynamic-properties-in-linq-to-xml-classes"></a>LINQ to XML 類別中的動態屬性  
  多數的 LINQ to XML 類別不會限定為適當的 WPF 動態資料來源：某些最實用的資訊僅能透過方法 (而非屬性) 取得，而且這些類別中的屬性不會實作變更通知。 為了支援 WPF 資料繫結，LINQ to XML 會公開一組「動態屬性」。  
@@ -71,13 +71,13 @@ ms.locfileid: "49247269"
 ### <a name="accessing-dynamic-properties"></a>存取動態屬性  
  <xref:System.Xml.Linq.XAttribute> 和 <xref:System.Xml.Linq.XElement> 類別中的動態屬性無法像標準屬性般存取。 例如，在 CLR 相容的語言 (例如 C#) 中，這些屬性無法：  
   
--   直接在編譯階段存取。 編譯器和 Visual Studio IntelliSense 看不到動態屬性。  
+- 直接在編譯階段存取。 編譯器和 Visual Studio IntelliSense 看不到動態屬性。  
   
--   在執行階段，使用 .NET 反映尋找或存取。 即使是在執行階段，它們都不是基本 CLR 偵測的屬性。  
+- 在執行階段，使用 .NET 反映尋找或存取。 即使是在執行階段，它們都不是基本 CLR 偵測的屬性。  
   
- 在 C# 中，動態屬性僅能在執行階段，透過 <xref:System.ComponentModel> 命名空間提供的功能存取。  
+  在 C# 中，動態屬性僅能在執行階段，透過 <xref:System.ComponentModel> 命名空間提供的功能存取。  
   
- 但是，相較之下，在 XML 原始檔中，動態屬性可以透過下列格式的直接附註存取：  
+  但是，相較之下，在 XML 原始檔中，動態屬性可以透過下列格式的直接附註存取：  
   
 ```  
 <object>.<dynamic-property>  

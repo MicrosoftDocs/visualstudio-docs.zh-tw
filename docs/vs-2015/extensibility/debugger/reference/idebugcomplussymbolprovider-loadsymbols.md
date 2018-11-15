@@ -16,12 +16,12 @@ ms.assetid: 3499680d-0b9a-4f20-8432-c89a41b29b87
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d72d66d6dd4f1706790049aa758bf5a3825a0803
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e6ef9a2343f21a57c63e9f97731b24077daaf2ed
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49218253"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949912"
 ---
 # <a name="idebugcomplussymbolproviderloadsymbols"></a>IDebugComPlusSymbolProvider::LoadSymbols
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

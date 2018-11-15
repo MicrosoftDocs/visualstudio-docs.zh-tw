@@ -10,12 +10,12 @@ ms.assetid: 70879c5d-e0f0-4845-993c-2f4229869706
 caps.latest.revision: 6
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a5e2ca54ae8a79ae1fa46c354e40187158ed8964
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6e514212016b817eec6e3ce451867c52bbf1a57f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49258085"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49929981"
 ---
 # <a name="vsix-color-editor"></a>VSIX 色彩編輯器
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -47,103 +47,103 @@ Visual Studio 擴充功能色彩編輯器工具可以建立和編輯 Visual Stud
   
  若要建立使用 Visual Studio 擴充功能色彩編輯器的自訂色彩，請遵循下列步驟：  
   
-1.  判斷新的色彩語彙基元的分類和語彙基元名稱。  
+1. 判斷新的色彩語彙基元的分類和語彙基元名稱。  
   
-2.  選擇 UI 項目高對比，會使用每個佈景主題和系統色彩的色調。  
+2. 選擇 UI 項目高對比，會使用每個佈景主題和系統色彩的色調。  
   
-3.  您可以使用 色彩編輯器來建立新的色彩語彙基元。  
+3. 您可以使用 色彩編輯器來建立新的色彩語彙基元。  
   
-4.  在 Visual Studio 擴充功能中使用的色彩。  
+4. 在 Visual Studio 擴充功能中使用的色彩。  
   
-5.  在 Visual Studio 中測試的變更。  
+5. 在 Visual Studio 中測試的變更。  
   
- **步驟 1︰ 決定使用的類別和新的色彩語彙基元的語彙基元名稱。**  
+   **步驟 1︰ 決定使用的類別和新的色彩語彙基元的語彙基元名稱。**  
   
- 慣用的命名配置為 VSColor **[Category] [UI 型別] [State]**。 請勿 VSColor 名稱中使用"color"這個字，因為它是多餘。  
+   慣用的命名配置為 VSColor **[Category] [UI 型別] [State]**。 請勿 VSColor 名稱中使用"color"這個字，因為它是多餘。  
   
- 類別目錄名稱提供邏輯分組，並應定義為窄越好。 比方說，單一工具視窗的名稱可能是類別名稱，但不是整個商務單位或專案小組名稱。 群組項目類別，可協助避免混淆之間具有相同名稱的色彩。  
+   類別目錄名稱提供邏輯分組，並應定義為窄越好。 比方說，單一工具視窗的名稱可能是類別名稱，但不是整個商務單位或專案小組名稱。 群組項目類別，可協助避免混淆之間具有相同名稱的色彩。  
   
- 項目類型的情況下或 「 狀態 」 色彩會套用，必須清楚地指出語彙基元的名稱。 比方說，在使用中的資料提示的 **[UI 型別]** 可以命名為"**DataTip**」 和 **[State]** 可以命名為"**Active**，"導致色彩名稱 「**DataTipActive**。 」 由於資料提示文字，必須定義前景和背景色彩。 藉由使用的背景/前景配對，色彩編輯器會自動建立色彩 」**DataTipActive**"的背景和 「**DataTipActiveText**"前景。  
+   項目類型的情況下或 「 狀態 」 色彩會套用，必須清楚地指出語彙基元的名稱。 比方說，在使用中的資料提示的 **[UI 型別]** 可以命名為"**DataTip**」 和 **[State]** 可以命名為"**Active**，"導致色彩名稱 「**DataTipActive**。 」 由於資料提示文字，必須定義前景和背景色彩。 藉由使用的背景/前景配對，色彩編輯器會自動建立色彩 」**DataTipActive**"的背景和 「**DataTipActiveText**"前景。  
   
- UI 片段都只能有一個狀態，如果 **[State]** 名稱的一部分，則可以省略。 比方說，如果在搜尋方塊有框線，而且沒有任何狀態變更會影響框線的色彩，然後框線的色彩語彙基元可以只名為"**SearchBoxBorder**。 」  
+   UI 片段都只能有一個狀態，如果 **[State]** 名稱的一部分，則可以省略。 比方說，如果在搜尋方塊有框線，而且沒有任何狀態變更會影響框線的色彩，然後框線的色彩語彙基元可以只名為"**SearchBoxBorder**。 」  
   
- 一些常見的狀態名稱包括：  
+   一些常見的狀態名稱包括：  
   
--   作用中  
+- 作用中  
   
--   非使用中  
+- 非使用中  
   
--   MouseOver  
+- MouseOver  
   
--   MouseDown  
+- MouseDown  
   
--   已選取  
+- 已選取  
   
--   已取得焦點  
+- 已取得焦點  
   
- 少數的語彙基元名稱的清單項目控制項的組件的範例：  
+  少數的語彙基元名稱的清單項目控制項的組件的範例：  
   
--   ListItem  
+- ListItem  
   
--   ListItemBorder  
+- ListItemBorder  
   
--   ListItemMouseOver  
+- ListItemMouseOver  
   
--   ListItemMouseOverBorder  
+- ListItemMouseOverBorder  
   
--   ListItemSelected  
+- ListItemSelected  
   
--   ListItemSelectedBorder  
+- ListItemSelectedBorder  
   
--   ListItemDisabled  
+- ListItemDisabled  
   
--   ListItemDisabledBorder  
+- ListItemDisabledBorder  
   
- **步驟 2： 選擇 UI 項目高對比，會使用每個佈景主題和系統色彩的色調。**  
+  **步驟 2： 選擇 UI 項目高對比，會使用每個佈景主題和系統色彩的色調。**  
   
- 在選擇自訂色彩 ui 時，選取類似現有 UI 項目，做為基底並用其色彩。 內建的 UI 項目色彩有經過檢閱和測試，讓它們可以尋找適當和在所有佈景主題中正確運作。  
+  在選擇自訂色彩 ui 時，選取類似現有 UI 項目，做為基底並用其色彩。 內建的 UI 項目色彩有經過檢閱和測試，讓它們可以尋找適當和在所有佈景主題中正確運作。  
   
- **步驟 3： 使用色彩編輯器來建立新的色彩語彙基元。**  
+  **步驟 3： 使用色彩編輯器來建立新的色彩語彙基元。**  
   
- 啟動色彩編輯器並開啟或建立新的自訂佈景主題色彩.xml 檔案。 選取 **編輯 > 新的色彩**從功能表。 這會開啟對話方塊，可指定分類和色彩項目，該類別內的一或多個名稱：  
+  啟動色彩編輯器並開啟或建立新的自訂佈景主題色彩.xml 檔案。 選取 **編輯 > 新的色彩**從功能表。 這會開啟對話方塊，可指定分類和色彩項目，該類別內的一或多個名稱：  
   
- ![VSIX 色彩編輯器的新色彩](../../extensibility/internals/media/vsix-color-editor-new-color.png "VSIX 色彩編輯器的新色彩")  
+  ![VSIX 色彩編輯器的新色彩](../../extensibility/internals/media/vsix-color-editor-new-color.png "VSIX 色彩編輯器的新色彩")  
   
- 選取現有的分類，或選取**新的分類**来建立新的類別。 此時會開啟另一個對話方塊，建立新的類別名稱：  
+  選取現有的分類，或選取**新的分類**来建立新的類別。 此時會開啟另一個對話方塊，建立新的類別名稱：  
   
- ![VSIX 色彩編輯器的新分類](../../extensibility/internals/media/vsix-color-editor-new-category.png "VSIX 色彩編輯器的新分類")  
+  ![VSIX 色彩編輯器的新分類](../../extensibility/internals/media/vsix-color-editor-new-category.png "VSIX 色彩編輯器的新分類")  
   
- 新的類別會提供**新的色彩**類別下拉式選單。 選擇類別之後, 輸入每個新的色彩語彙基元每行一個名稱，並選取 [建立] 完成時：  
+  新的類別會提供**新的色彩**類別下拉式選單。 選擇類別之後, 輸入每個新的色彩語彙基元每行一個名稱，並選取 [建立] 完成時：  
   
- ![VSIX 色彩編輯器的新色彩填滿](../../extensibility/internals/media/vsix-color-editor-new-color-filled.png "VSIX 色彩編輯器的新色彩填滿")  
+  ![VSIX 色彩編輯器的新色彩填滿](../../extensibility/internals/media/vsix-color-editor-new-color-filled.png "VSIX 色彩編輯器的新色彩填滿")  
   
- 「 無 」，表示未定義的色彩，色彩值會顯示背景/前景配對中。 注意： 如果色彩並沒有文字色彩背景色彩配對，則只有背景需要定義。  
+  「 無 」，表示未定義的色彩，色彩值會顯示背景/前景配對中。 注意： 如果色彩並沒有文字色彩背景色彩配對，則只有背景需要定義。  
   
- ![VSIX 色彩編輯器色彩值](../../extensibility/internals/media/vsix-color-editor-color-values.png "VSIX 色彩編輯器色彩值")  
+  ![VSIX 色彩編輯器色彩值](../../extensibility/internals/media/vsix-color-editor-color-values.png "VSIX 色彩編輯器色彩值")  
   
- 若要編輯色彩語彙基元，請選取該語彙基元的佈景主題 （資料行） 的色彩項目。 以 8 位元 ARGB 格式輸入十六進位色彩值、 納入資料格中，輸入系統色彩名稱或使用下拉式選單來選取想要的色彩，透過一組色彩滑桿或系統色彩的清單中加入的色彩值。  
+  若要編輯色彩語彙基元，請選取該語彙基元的佈景主題 （資料行） 的色彩項目。 以 8 位元 ARGB 格式輸入十六進位色彩值、 納入資料格中，輸入系統色彩名稱或使用下拉式選單來選取想要的色彩，透過一組色彩滑桿或系統色彩的清單中加入的色彩值。  
   
- ![VSIX 色彩編輯器編輯色彩](../../extensibility/internals/media/vsix-color-editor-edit-color.png "VSIX 色彩編輯器編輯色彩")  
+  ![VSIX 色彩編輯器編輯色彩](../../extensibility/internals/media/vsix-color-editor-edit-color.png "VSIX 色彩編輯器編輯色彩")  
   
- ![VSIX 色彩編輯器的背景](../../extensibility/internals/media/vsix-color-editor-background.png "VSIX 色彩編輯器的背景")  
+  ![VSIX 色彩編輯器的背景](../../extensibility/internals/media/vsix-color-editor-background.png "VSIX 色彩編輯器的背景")  
   
- 針對不需要顯示文字的元件，輸入只有一種色彩值： 的背景色彩。 否則，請輸入的背景和文字的色彩，以正斜線分隔的值。  
+  針對不需要顯示文字的元件，輸入只有一種色彩值： 的背景色彩。 否則，請輸入的背景和文字的色彩，以正斜線分隔的值。  
   
- 當輸入值的高對比，請輸入有效的 Windows 系統色彩名稱。 請勿輸入硬式編碼的 ARGB 值。 您可以從色彩值下拉式清單中選取 「 背景:: 系統 」 或 「 前景:: 系統 」 來檢視有效的系統色彩名稱清單。 在建立時具有文字元件的項目，使用正確的背景/文字的系統色彩配對或文字可能無法讀取。  
+  當輸入值的高對比，請輸入有效的 Windows 系統色彩名稱。 請勿輸入硬式編碼的 ARGB 值。 您可以從色彩值下拉式清單中選取 「 背景:: 系統 」 或 「 前景:: 系統 」 來檢視有效的系統色彩名稱清單。 在建立時具有文字元件的項目，使用正確的背景/文字的系統色彩配對或文字可能無法讀取。  
   
- 當您完成建立、 設定和編輯的色彩語彙基元時，請將它們儲存到所需的.xml 或.pkgdef 格式。 沒有背景的色彩語彙基元也會儲存為.xml 格式的空白色彩前景組，但捨棄.pkgdef 格式。 對話方塊會警告您遺失的色彩，如果您嘗試將空的色彩儲存至.pkgdef 檔。  
+  當您完成建立、 設定和編輯的色彩語彙基元時，請將它們儲存到所需的.xml 或.pkgdef 格式。 沒有背景的色彩語彙基元也會儲存為.xml 格式的空白色彩前景組，但捨棄.pkgdef 格式。 對話方塊會警告您遺失的色彩，如果您嘗試將空的色彩儲存至.pkgdef 檔。  
   
- **步驟 4： 在 Visual Studio 擴充功能中使用的色彩。**  
+  **步驟 4： 在 Visual Studio 擴充功能中使用的色彩。**  
   
- 之後定義新的色彩語彙基元，在專案檔中包含.pkgdef 具有 [建置動作] 設定為 「 內容 」，而 」 包含在 VSIX"設定為"True"。  
+  之後定義新的色彩語彙基元，在專案檔中包含.pkgdef 具有 [建置動作] 設定為 「 內容 」，而 」 包含在 VSIX"設定為"True"。  
   
- ![VSIX 色彩編輯器 pkgdef](../../extensibility/internals/media/vsix-color-editor-pkgdef.png "VSIX 色彩編輯器 pkgdef")  
+  ![VSIX 色彩編輯器 pkgdef](../../extensibility/internals/media/vsix-color-editor-pkgdef.png "VSIX 色彩編輯器 pkgdef")  
   
- 在 Visual Studio 擴充功能色彩編輯器中，選擇 檔案 > 檢視資源的程式碼檢視用來存取自訂的程式碼色彩以 WPF 為基礎的 UI 中。  
+  在 Visual Studio 擴充功能色彩編輯器中，選擇 檔案 > 檢視資源的程式碼檢視用來存取自訂的程式碼色彩以 WPF 為基礎的 UI 中。  
   
- ![VSIX 色彩編輯器的資源程式碼檢視器](../../extensibility/internals/media/vsix-color-editor-resource-code-viewer.png "VSIX 色彩編輯器的資源程式碼檢視器")  
+  ![VSIX 色彩編輯器的資源程式碼檢視器](../../extensibility/internals/media/vsix-color-editor-resource-code-viewer.png "VSIX 色彩編輯器的資源程式碼檢視器")  
   
- 此程式碼納入專案中的靜態類別。 參考**Microsoft.VisualStudio.Shell。\<VSVersion >.0.dll**必須加入至專案，以使用**ThemeResourceKey**型別。  
+  此程式碼納入專案中的靜態類別。 參考**Microsoft.VisualStudio.Shell。\<VSVersion >.0.dll**必須加入至專案，以使用**ThemeResourceKey**型別。  
   
 ```csharp  
 namespace MyCustomColors  

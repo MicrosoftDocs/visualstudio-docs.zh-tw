@@ -17,37 +17,37 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 6b324e82608a79f8f57762e2538b401c794d831c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9ea239fcdef2c9b2e5eccc82fd162e0b940bdf44
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49304092"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219961"
 ---
 # <a name="properties-of-image-shapes"></a>影像圖案的屬性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 若要指定網域類別出現在產生的設計工具的方式，您可以使用映像的圖形。 藉由設定定義了影像圖形`Image`類別的屬性以預先定義的映像檔案。 支援下列格式：  
   
--   .gif  
+- .gif  
   
--   .jpg  
+- .jpg  
   
--   .jpeg  
+- .jpeg  
   
--   .bmp  
+- .bmp  
   
--   .wmf  
+- .wmf  
   
--   .emf  
+- .emf  
   
--   .png  
+- .png  
   
- 根據預設，設計工具的資源檔，例如影像檔案，位於**資源**中的資料夾**Dsl**專案。  
+  根據預設，設計工具的資源檔，例如影像檔案，位於**資源**中的資料夾**Dsl**專案。  
   
- 如需詳細資訊，請參閱 <<c0> [ 如何定義特定領域語言](../modeling/how-to-define-a-domain-specific-language.md)。 如需如何使用這些屬性的詳細資訊，請參閱[自訂及擴充特定領域語言](../modeling/customizing-and-extending-a-domain-specific-language.md)。  
+  如需詳細資訊，請參閱 <<c0> [ 如何定義特定領域語言](../modeling/how-to-define-a-domain-specific-language.md)。 如需如何使用這些屬性的詳細資訊，請參閱[自訂及擴充特定領域語言](../modeling/customizing-and-extending-a-domain-specific-language.md)。  
   
- 影像圖案具有下表中所列的屬性。  
+  影像圖案具有下表中所列的屬性。  
   
 |屬性|描述|預設|  
 |--------------|-----------------|-------------|  

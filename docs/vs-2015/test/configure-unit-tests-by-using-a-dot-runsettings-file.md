@@ -13,12 +13,12 @@ ms.assetid: f7e9e4a2-5d01-4f78-b408-5be3892bd162
 caps.latest.revision: 28
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: a78c73afb11f5c04ef3cc61a5efecb9d8069bac4
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 806c19b7132a4541ff97c253700a5e5e980ef556
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49255615"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49817973"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>使用 .runsettings 檔案設定單元測試
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,17 +36,17 @@ ms.locfileid: "49255615"
   
 ## <a name="customizing-tests-with-a-runsettings-file"></a>使用 .runsettings 檔案自訂測試  
   
-1.  將 XML 檔案加入至 Visual Studio 方案，並將它重新命名為 test.runsettings。 (檔案名稱並不重要，但是副檔名必須是 .runsettings。)  
+1. 將 XML 檔案加入至 Visual Studio 方案，並將它重新命名為 test.runsettings。 (檔案名稱並不重要，但是副檔名必須是 .runsettings。)  
   
-2.  以 [範例](#example)取代檔案內容。  
+2. 以 [範例](#example)取代檔案內容。  
   
-     依照您自已的需求進行編輯。  
+    依照您自已的需求進行編輯。  
   
-3.  在 [測試]  功能表中選擇 [測試設定] 、[選取測試設定檔] 。  
+3. 在 [測試]  功能表中選擇 [測試設定] 、[選取測試設定檔] 。  
   
- 您可以在方案中建立多個 \*.runsettings 檔案，並且使用 [測試設定] 功能表在不同的時間將它們啟用或停用。  
+   您可以在方案中建立多個 \*.runsettings 檔案，並且使用 [測試設定] 功能表在不同的時間將它們啟用或停用。  
   
- ![啟用回合設定檔](../test/media/runsettings-1.png "RunSettings-1")  
+   ![啟用回合設定檔](../test/media/runsettings-1.png "RunSettings-1")  
   
 ##  <a name="example"></a> 複製這個範例 .runsettings 檔案  
  以下是一般 *.runsettings 檔案。 因為每個值都有預設值，因此該檔案的每個項目都是選擇性的。  

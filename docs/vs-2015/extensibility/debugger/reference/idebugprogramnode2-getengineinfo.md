@@ -17,12 +17,12 @@ ms.assetid: 664e7fe5-9100-4b7d-9dc5-e5a4dd0d0451
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bdd199410c267573548077b0943107a919b2a4b9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 89feb9dfb39b87be282ececde446dfc80e6da202
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49283253"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49934050"
 ---
 # <a name="idebugprogramnode2getengineinfo"></a>IDebugProgramNode2::GetEngineInfo
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

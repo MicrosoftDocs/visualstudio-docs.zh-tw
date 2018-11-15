@@ -27,12 +27,12 @@ caps.latest.revision: 28
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2364fa5ed202f9821ab276fb5cfbb9346a4b258c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4d841456ab95d06a7b586f7a8566f8530acbb021
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49298138"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49897494"
 ---
 # <a name="debug-multithreaded-applications-in-visual-studio"></a>在 Visual Studio 中偵錯多執行緒應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -99,16 +99,16 @@ ms.locfileid: "49298138"
  [使用中斷點](../debugger/using-breakpoints.md)  
  -   在您要將中斷點放置在個別執行緒上時，可以使用的中斷點篩選條件。  
   
--   追蹤點可以讓您追蹤程式的執行，而不會中斷程式。 在研究死結這類的問題時非常好用。  
+- 追蹤點可以讓您追蹤程式的執行，而不會中斷程式。 在研究死結這類的問題時非常好用。  
   
- [執行緒處理](http://msdn.microsoft.com/library/7b46a7d9-c6f1-46d1-a947-ae97471bba87)  
- [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 程式設計中的執行緒概念，包括範例程式碼。  
+  [執行緒處理](http://msdn.microsoft.com/library/7b46a7d9-c6f1-46d1-a947-ae97471bba87)  
+  [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 程式設計中的執行緒概念，包括範例程式碼。  
   
- [元件中的多執行緒](http://msdn.microsoft.com/library/2fc31e68-fb71-4544-b654-0ce720478779)  
- 如何在 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 元件中使用多執行緒處理。  
+  [元件中的多執行緒](http://msdn.microsoft.com/library/2fc31e68-fb71-4544-b654-0ce720478779)  
+  如何在 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 元件中使用多執行緒處理。  
   
- [舊版程式碼的多執行緒支援 (Visual C++)](http://msdn.microsoft.com/library/24425b1f-5031-4c6b-aac7-017115a40e7c)  
- 提供給使用 MFC 的 C++ 程式設計人員的執行緒概念和範例程式碼。  
+  [舊版程式碼的多執行緒支援 (Visual C++)](http://msdn.microsoft.com/library/24425b1f-5031-4c6b-aac7-017115a40e7c)  
+  提供給使用 MFC 的 C++ 程式設計人員的執行緒概念和範例程式碼。  
   
 ## <a name="see-also"></a>另請參閱  
  [偵錯執行緒和處理序](../debugger/debug-threads-and-processes.md)   

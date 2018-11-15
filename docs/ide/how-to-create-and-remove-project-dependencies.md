@@ -19,12 +19,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b0948dab860431d9693e67489d958f00743fa17
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c7075f21f7927a87968dd573863402a71a40c3c4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31942018"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49856011"
 ---
 # <a name="how-to-create-and-remove-project-dependencies"></a>如何：建立和移除專案相依性
 
@@ -32,20 +32,20 @@ ms.locfileid: "31942018"
 
 ## <a name="to-assign-dependencies-to-projects"></a>指派專案相依性
 
-1.  在方案總管中選取專案。
+1. 在方案總管中選取專案。
 
-2.  在 [專案] 功能表上，選擇 [專案相依性]。
+2. 在 [專案] 功能表上，選擇 [專案相依性]。
 
-     [專案相依性] 對話方塊隨即開啟。
+    [專案相依性] 對話方塊隨即開啟。
 
-    > [!NOTE]
-    > [專案相依性] 選項只適用於具有多個專案的方案。
+   > [!NOTE]
+   > [專案相依性] 選項只適用於具有多個專案的方案。
 
-3.  在 [相依性] 索引標籤上，選取 [專案] 下拉式功能表中的專案。
+3. 在 [相依性] 索引標籤上，選取 [專案] 下拉式功能表中的專案。
 
-4.  如果任何其他專案必須在此專案之前建置，請在 [相依於] 欄位中，選取該專案的核取方塊。
+4. 如果任何其他專案必須在此專案之前建置，請在 [相依於] 欄位中，選取該專案的核取方塊。
 
- 您的方案必須包含一個以上的專案，才可以建立專案相依性。
+   您的方案必須包含一個以上的專案，才可以建立專案相依性。
 
 ## <a name="to-remove-dependencies-from-projects"></a>若要從專案移除相依性
 
@@ -65,6 +65,6 @@ ms.locfileid: "31942018"
 ## <a name="see-also"></a>另請參閱
 
 - [在 Visual Studio 中建置和清除專案與方案](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)
-- [編譯及建置](../ide/compiling-and-building-in-visual-studio.md)
+- [編譯和建置](../ide/compiling-and-building-in-visual-studio.md)
 - [了解建置組態](../ide/understanding-build-configurations.md)
 - [管理專案及解決方案屬性](managing-project-and-solution-properties.md)

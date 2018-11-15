@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7829c9fce0c8315ac42fc1c376987e4e30b4be8e
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: b6f25bb2920f8f50afbd8bfb820e7c852e160865
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39081234"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49943046"
 ---
 # <a name="access-local-and-remote-data-in-clickonce-applications"></a>ClickOnce 應用程式中存取本機和遠端資料
 大部分應用程式都會取用或產生資料。 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 提供您許多選項，以進行本機和遠端的資料讀取及寫入。  
@@ -30,11 +30,11 @@ ms.locfileid: "39081234"
 ## <a name="local-data"></a>本機資料  
  經由使用 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]，您可以利用下列任何一種方法在本機載入及儲存資料：  
   
--   [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 資料目錄  
+- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 資料目錄  
   
--   隔離儲存區  
+- 隔離儲存區  
   
--   其他本機檔案  
+- 其他本機檔案  
   
 ### <a name="clickonce-data-directory"></a>ClickOnce 資料目錄  
  在本機電腦安裝的每個 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式，都有資料目錄儲存在使用者的 [Documents and Settings] 資料夾中。 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式所含並標記為「資料」檔案的任何檔案，都會在安裝應用程式時複製到這個目錄。 資料檔案可以是任何檔案類型，最常使用的是文字、XML 和資料庫檔案 (例如 Microsoft Access.mdb 檔案)。  
@@ -45,7 +45,7 @@ ms.locfileid: "39081234"
 >  在解除安裝 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式時，也會移除其資料目錄。 永遠不會使用資料目錄來儲存終端使用者管理的資料，例如文件。  
   
 #### <a name="mark-data-files-in-a-clickonce-distribution"></a>標示 ClickOnce 散發中的資料檔案  
- 若要將現有檔案置於資料目錄中，您必須在 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式的應用程式資訊清單檔中將此現有檔案標記為資料檔案。 如需詳細資訊，請參閱 <<c0> [如何：在 ClickOnce 應用程式中納入資料檔案](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md)。  
+ 若要將現有檔案置於資料目錄中，您必須在 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式的應用程式資訊清單檔中將此現有檔案標記為資料檔案。 如需詳細資訊，請參閱 <<c0> [ 如何： 在 ClickOnce 應用程式中納入資料檔案](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md)。  
   
 #### <a name="read-from-and-write-to-the-data-directory"></a>讀取和寫入的資料目錄  
  若要從資料目錄讀取，需具備 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式要求讀取權限；同樣地，寫入目錄則需要寫入權限。 如果設定以完全信任狀態執行，您的應用程式就會自動擁有這種權限。 如需有關為您的權限提升或受信任的應用程式部署的應用程式提升權限的詳細資訊，請參閱[保護 ClickOnce 應用程式](../deployment/securing-clickonce-applications.md)。  

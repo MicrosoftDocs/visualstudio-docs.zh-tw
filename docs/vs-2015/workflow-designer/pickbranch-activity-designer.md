@@ -14,12 +14,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: e6061918df2110599731c0ac57340ae5319a8a02
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f39479c9421ab87caf7c918e05be89272f0fb4de
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49301882"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49887299"
 ---
 # <a name="pickbranch-activity-designer"></a>PickBranch 活動設計工具
 <xref:System.Activities.Statements.PickBranch> 在 <xref:System.Activities.Statements.Pick> 活動內提供了以事件為依據的執行路徑，可由傳入的事件觸發。  
@@ -34,21 +34,21 @@ ms.locfileid: "49301882"
   
  有兩種方式，以新增<xref:System.Activities.Statements.PickBranch>物件的集合<xref:System.Activities.Statements.Pick>物件： 拖曳和卸除**PickBranch**設計工具**工具箱**或使用中的內容功能表內**挑選**設計介面：  
   
-1.  **PickBranch**設計工具會建立<xref:System.Activities.Statements.PickBranch>當從拖曳**工具箱**然後放到其中的分支**挑選**上的活動設計工具[!INCLUDE[wfd2](../includes/wfd2-md.md)]介面。 新的 <xref:System.Activities.Statements.PickBranch> 物件可以放在 <xref:System.Activities.Statements.Pick> 設計工具內部，置於已經包含在集合中的任何現有 <xref:System.Activities.Statements.PickBranch> 項目的左邊或右邊。 拖曳時**PickBranch**設計工具拖曳到**挑選**滑鼠，設計工具**挑選**設計工具會使用垂直的藍灰色帶，來表示<xref:System.Activities.Statements.PickBranch>加入某個特定的滑鼠位置。  
+1. **PickBranch**設計工具會建立<xref:System.Activities.Statements.PickBranch>當從拖曳**工具箱**然後放到其中的分支**挑選**上的活動設計工具[!INCLUDE[wfd2](../includes/wfd2-md.md)]介面。 新的 <xref:System.Activities.Statements.PickBranch> 物件可以放在 <xref:System.Activities.Statements.Pick> 設計工具內部，置於已經包含在集合中的任何現有 <xref:System.Activities.Statements.PickBranch> 項目的左邊或右邊。 拖曳時**PickBranch**設計工具拖曳到**挑選**滑鼠，設計工具**挑選**設計工具會使用垂直的藍灰色帶，來表示<xref:System.Activities.Statements.PickBranch>加入某個特定的滑鼠位置。  
   
-2.  以滑鼠右鍵按一下**挑選**活動設計工具 (但不是深入探討**PickBranch**設計工具) 來取得內容功能表，再選取**Create Branch**來新增新的<xref:System.Activities.Statements.PickBranch>。 請注意，新<xref:System.Activities.Statements.PickBranch>新增至現有的權限<xref:System.Activities.Statements.PickBranch>中的物件**挑選**設計工具。  
+2. 以滑鼠右鍵按一下**挑選**活動設計工具 (但不是深入探討**PickBranch**設計工具) 來取得內容功能表，再選取**Create Branch**來新增新的<xref:System.Activities.Statements.PickBranch>。 請注意，新<xref:System.Activities.Statements.PickBranch>新增至現有的權限<xref:System.Activities.Statements.PickBranch>中的物件**挑選**設計工具。  
   
- **PickBranch**設計工具可以展開以顯示**觸發程序**並**動作**方塊，若要摺疊，只要按一下各個標題右邊的雙箭頭符號即可。 編輯<xref:System.Activities.Statements.PickBranch.Trigger%2A>並<xref:System.Activities.Statements.PickBranch.Action%2A>每個<xref:System.Activities.Statements.PickBranch>活動放進**觸發程序**並**動作**其設計工具的方塊。  
+   **PickBranch**設計工具可以展開以顯示**觸發程序**並**動作**方塊，若要摺疊，只要按一下各個標題右邊的雙箭頭符號即可。 編輯<xref:System.Activities.Statements.PickBranch.Trigger%2A>並<xref:System.Activities.Statements.PickBranch.Action%2A>每個<xref:System.Activities.Statements.PickBranch>活動放進**觸發程序**並**動作**其設計工具的方塊。  
   
- <xref:System.Activities.Statements.PickBranch>中的物件<xref:System.Activities.Statements.Pick.Branches%2A>的集合<xref:System.Activities.Statements.Pick>物件，可以藉由拖放到新的位置中重新排列**挑選**設計工具。 **挑選**設計工具會使用垂直的藍灰色帶，來表示<xref:System.Activities.Statements.PickBranch>加入某個特定的滑鼠位置。  
+   <xref:System.Activities.Statements.PickBranch>中的物件<xref:System.Activities.Statements.Pick.Branches%2A>的集合<xref:System.Activities.Statements.Pick>物件，可以藉由拖放到新的位置中重新排列**挑選**設計工具。 **挑選**設計工具會使用垂直的藍灰色帶，來表示<xref:System.Activities.Statements.PickBranch>加入某個特定的滑鼠位置。  
   
- 有兩個方法可以刪除 <xref:System.Activities.Statements.PickBranch>：  
+   有兩個方法可以刪除 <xref:System.Activities.Statements.PickBranch>：  
   
-1.  選取  **PickBranch**設計工具並將它刪除。  
+3. 選取  **PickBranch**設計工具並將它刪除。  
   
-2.  選取 [ **PickBranch**設計師] 中，按一下滑鼠右鍵取得操作功能表，然後選取**刪除**。  
+4. 選取 [ **PickBranch**設計師] 中，按一下滑鼠右鍵取得操作功能表，然後選取**刪除**。  
   
- 務必選取**PickBranch**設計工具，因為其中一個內活動及其**觸發程序**或**動作**方塊不小心刪除其中的活動而非<xref:System.Activities.Statements.PickBranch>物件。  
+   務必選取**PickBranch**設計工具，因為其中一個內活動及其**觸發程序**或**動作**方塊不小心刪除其中的活動而非<xref:System.Activities.Statements.PickBranch>物件。  
   
 ### <a name="pickbranch-properties-in-the-workflow-designer"></a>工作流程設計工具中的 PickBranch 屬性  
  下表顯示最實用的 <xref:System.Activities.Statements.PickBranch> 屬性，並且說明它們在 [!INCLUDE[wfd2](../includes/wfd2-md.md)] 中的使用方式。  

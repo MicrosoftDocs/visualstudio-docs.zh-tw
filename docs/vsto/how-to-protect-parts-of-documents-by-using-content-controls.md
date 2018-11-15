@@ -21,21 +21,21 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6cbe73fb5da7ae5d0efa01e1e7c6fb0068310ad2
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: beee4dd4a67b03f278a296d4b5f129100212fd25
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35671391"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49850356"
 ---
 # <a name="how-to-protect-parts-of-documents-by-using-content-controls"></a>如何： 使用內容控制項保護文件的組件
   當您保護文件的某個部分時，使用者即無法變更或刪除文件中該部分的內容。 您可使用多種方法，透過內容控制項來保護 Microsoft Office Word 文件的下列部分：  
   
--   您可以保護內容控制項。  
+- 您可以保護內容控制項。  
   
--   您可以保護文件中不在內容控制項內的部分。  
+- 您可以保護文件中不在內容控制項內的部分。  
   
- [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
+  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
   
 ##  <a name="EditDeleteControl"></a> 保護內容控制項  
  您可以防止使用者編輯或刪除內容控制項在文件層級專案中設定控制項的屬性，在設計階段或執行階段。  
@@ -58,12 +58,12 @@ ms.locfileid: "35671391"
   
 1.  設定`LockContents`的內容控制項的屬性 **，則為 true**防止使用者編輯控制項，並設定`LockContentControl`屬性設**true**以防止使用者刪除控制項。  
   
-     下列程式碼範例示範在文件層級專案中，使用兩個不同 <xref:Microsoft.Office.Tools.Word.RichTextContentControl> 物件的 <xref:Microsoft.Office.Tools.Word.RichTextContentControl.LockContents%2A> 和 <xref:Microsoft.Office.Tools.Word.RichTextContentControl.LockContentControl%2A> 屬性。 若要執行這個程式碼，請將程式碼加入專案的 `ThisDocument` 類別中，並從 `ThisDocument_Startup` 事件處理常式呼叫 `AddProtectedContentControls` 方法。  
+     下列程式碼範例示範在文件層級專案中，使用兩個不同 <xref:Microsoft.Office.Tools.Word.RichTextContentControl> 物件的 <xref:Microsoft.Office.Tools.Word.RichTextContentControl.LockContents%2A> 和 <xref:Microsoft.Office.Tools.Word.RichTextContentControl.LockContentControl%2A> 屬性。 若要執行這個程式碼，請將程式碼加入專案的 `ThisDocument` 類別中，並從 `AddProtectedContentControls` 事件處理常式呼叫 `ThisDocument_Startup` 方法。  
   
      [!code-csharp[Trin_ContentControlHowToProtect#2](../vsto/codesnippet/CSharp/Trin_ContentControlHowToProtect/ThisDocument.cs#2)]
      [!code-vb[Trin_ContentControlHowToProtect#2](../vsto/codesnippet/VisualBasic/Trin_ContentControlHowToProtect/ThisDocument.vb#2)]  
   
-     下列程式碼範例示範在 VSTO 增益集專案中，使用兩個不同 <xref:Microsoft.Office.Tools.Word.RichTextContentControl> 物件的 <xref:Microsoft.Office.Tools.Word.RichTextContentControl.LockContents%2A> 和 <xref:Microsoft.Office.Tools.Word.RichTextContentControl.LockContentControl%2A> 屬性。 若要執行這個程式碼，請將程式碼加入專案的 `ThisAddIn` 類別中，並從 `ThisAddIn_Startup` 事件處理常式呼叫 `AddProtectedContentControls` 方法。  
+     下列程式碼範例示範在 VSTO 增益集專案中，使用兩個不同 <xref:Microsoft.Office.Tools.Word.RichTextContentControl> 物件的 <xref:Microsoft.Office.Tools.Word.RichTextContentControl.LockContents%2A> 和 <xref:Microsoft.Office.Tools.Word.RichTextContentControl.LockContentControl%2A> 屬性。 若要執行這個程式碼，請將程式碼加入專案的 `ThisAddIn` 類別中，並從 `AddProtectedContentControls` 事件處理常式呼叫 `ThisAddIn_Startup` 方法。  
   
      [!code-vb[Trin_WordAddInDynamicControls#14](../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb#14)]
      [!code-csharp[Trin_WordAddInDynamicControls#14](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs#14)]  
@@ -95,12 +95,12 @@ ms.locfileid: "35671391"
   
 1.  以程式設計方式選取想要保護的區域，然後呼叫 <xref:Microsoft.Office.Tools.Word.ControlCollection.AddGroupContentControl%2A> 方法以建立 <xref:Microsoft.Office.Tools.Word.GroupContentControl>。  
   
-     下列文件層級專案的程式碼範例會將文字加入文件的第一個段落，然後選取此段落，再執行個體化 <xref:Microsoft.Office.Tools.Word.GroupContentControl>。 若要執行這個程式碼，請將程式碼加入專案的 `ThisDocument` 類別中，並從 `ThisDocument_Startup` 事件處理常式呼叫 `ProtectFirstParagraph` 方法。  
+     下列文件層級專案的程式碼範例會將文字加入文件的第一個段落，然後選取此段落，再執行個體化 <xref:Microsoft.Office.Tools.Word.GroupContentControl>。 若要執行這個程式碼，請將程式碼加入專案的 `ThisDocument` 類別中，並從 `ProtectFirstParagraph` 事件處理常式呼叫 `ThisDocument_Startup` 方法。  
   
      [!code-csharp[Trin_ContentControlHowToProtect#1](../vsto/codesnippet/CSharp/Trin_ContentControlHowToProtect/ThisDocument.cs#1)]
      [!code-vb[Trin_ContentControlHowToProtect#1](../vsto/codesnippet/VisualBasic/Trin_ContentControlHowToProtect/ThisDocument.vb#1)]  
   
-     下列 VSTO 增益集專案的程式碼範例會將文字加入使用中文件的第一個段落，然後選取此段落，再執行個體化 <xref:Microsoft.Office.Tools.Word.GroupContentControl>。 若要執行這個程式碼，請將程式碼加入專案的 `ThisAddIn` 類別中，並從 `ThisAddIn_Startup` 事件處理常式呼叫 `ProtectFirstParagraph` 方法。  
+     下列 VSTO 增益集專案的程式碼範例會將文字加入使用中文件的第一個段落，然後選取此段落，再執行個體化 <xref:Microsoft.Office.Tools.Word.GroupContentControl>。 若要執行這個程式碼，請將程式碼加入專案的 `ThisAddIn` 類別中，並從 `ProtectFirstParagraph` 事件處理常式呼叫 `ThisAddIn_Startup` 方法。  
   
      [!code-vb[Trin_WordAddInDynamicControls#15](../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb#15)]
      [!code-csharp[Trin_WordAddInDynamicControls#15](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs#15)]  

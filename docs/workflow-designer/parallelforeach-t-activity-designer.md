@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 53b8a8790cfa4f4e1f962fa5e6ce82b62781430f
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: c62918811ba91fe9c30f60e930ce77a640959d0f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36756902"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49846339"
 ---
 # <a name="parallelforeach-activity-designer"></a>ParallelForEach 活動設計工具
 
@@ -44,7 +44,7 @@ ms.locfileid: "36756902"
 下表顯示最為實用的 <xref:System.Activities.Statements.ParallelForEach%601> 活動屬性，並且說明它們在設計工具中的使用方式。
 
 |屬性名稱|必要項|使用方式|
-|-------------------|--------------|-----------|
+|-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|指定活動設計工具在標頭中的易記顯示名稱。 預設值是**ParallelForEach\<Int32 >**。 值可以在中選擇性地編輯**屬性**方格或直接在活動設計工具標頭。|
 |<xref:System.Activities.Statements.ParallelForEach%601.Body%2A>|False|集合中每個項目要執行的活動。 若要新增<xref:System.Activities.Statements.ParallelForEach%601.Body%2A>活動，請從工具箱拖曳到**主體**方塊**ParallelForEach\<T >** 活動設計工具提示文字 「 置放活動 」 與。|
 |**TypeArgument**|True|中的項目型別<xref:System.Activities.Statements.ParallelForEach%601.Values%2A>一般參數所指定的集合*T*。根據預設， **TypeArgument**設為**Int32**。 若要變更中的型別 T **ParallelForEach < T\>** 活動設計工具，變更的值**TypeArgument**屬性方格中的下拉式方塊。|
@@ -55,6 +55,6 @@ ms.locfileid: "36756902"
 
 ## <a name="see-also"></a>另請參閱
 
-- [順序](../workflow-designer/sequence-activity-designer.md)
-- [平行](../workflow-designer/parallel-activity-designer.md)
+- [Sequence](../workflow-designer/sequence-activity-designer.md)
+- [Parallel](../workflow-designer/parallel-activity-designer.md)
 - [控制流程](../workflow-designer/control-flow-activity-designers.md)

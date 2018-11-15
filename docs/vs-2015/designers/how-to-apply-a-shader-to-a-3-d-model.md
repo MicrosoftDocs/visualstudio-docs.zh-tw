@@ -14,12 +14,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3268bd37a0fd0038901e3e815dba290a605638c7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 804e7c0a2e7a9a710071cc6050249bf408bc8230
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49212689"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862842"
 ---
 # <a name="how-to-apply-a-shader-to-a-3-d-model"></a>如何：將著色器套用至 3D 模型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,15 +37,15 @@ ms.locfileid: "49212689"
   
 #### <a name="to-apply-a-shader-to-a-3-d-model"></a>將著色器套用至 3D 模型  
   
-1.  開始使用包含一或多個模型的 3D 場景。 如果您沒有適當的 3D 場景，請依照[如何：建立基本 3D 模型](../designers/how-to-create-a-basic-3-d-model.md)所述，建立一個場景。 您也必須要有可套用至模型的 DGSL 著色器。 如果您沒有適當的著色器，請依照[如何：建立基本色彩著色器](../designers/how-to-create-a-basic-color-shader.md)所述，建立一個著色器，並確定您已將其儲存為檔案後，再繼續進行。  
+1. 開始使用包含一或多個模型的 3D 場景。 如果您沒有適當的 3D 場景，請依照[如何：建立基本 3D 模型](../designers/how-to-create-a-basic-3-d-model.md)所述，建立一個場景。 您也必須要有可套用至模型的 DGSL 著色器。 如果您沒有適當的著色器，請依照[如何：建立基本色彩著色器](../designers/how-to-create-a-basic-color-shader.md)所述，建立一個著色器，並確定您已將其儲存為檔案後，再繼續進行。  
   
-2.  在 [選取] 模式中，選取您要套用著色器的模型，然後在 [屬性] 視窗中，於 [效果] 屬性群組的 [檔名] 屬性中，指定您想要套用至模型的 DGSL 著色器。  
+2. 在 [選取] 模式中，選取您要套用著色器的模型，然後在 [屬性] 視窗中，於 [效果] 屬性群組的 [檔名] 屬性中，指定您想要套用至模型的 DGSL 著色器。  
   
- 以下是本身已套用基本色彩效果的模型︰  
+   以下是本身已套用基本色彩效果的模型︰  
   
- ![展示基本色彩效果的 3D 場景](../designers/media/digit-3d-model-effect.png "Digit-3D-Model-Effect")  
+   ![展示基本色彩效果的 3D 場景](../designers/media/digit-3d-model-effect.png "Digit-3D-Model-Effect")  
   
- 在將著色器套用至模型之後，您可以選取該模型，然後在 [屬性] 視窗中，於 [效果] 屬性群組的 [(進階)] 屬性中，選擇省略符號(**...**) 按鈕。  
+   在將著色器套用至模型之後，您可以選取該模型，然後在 [屬性] 視窗中，於 [效果] 屬性群組的 [(進階)] 屬性中，選擇省略符號(**...**) 按鈕。  
   
 ## <a name="see-also"></a>另請參閱  
  [如何：建立基本 3D 模型](../designers/how-to-create-a-basic-3-d-model.md)   

@@ -26,12 +26,12 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: af1eb1b42281e001bb56f9556c2b0eb21d859758
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4529b44014b209bdef1fc919ac413b61d77407c1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49178252"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49902135"
 ---
 # <a name="find-in-files"></a>檔案中尋找
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,11 +42,11 @@ ms.locfileid: "49178252"
   
 ### <a name="to-display-find-in-files"></a>顯示檔案中尋找  
   
-1.  在功能表列上，依序選擇 [編輯] 和 [尋找和取代]。  
+1. 在功能表列上，依序選擇 [編輯] 和 [尋找和取代]。  
   
-2.  選擇 [檔案中尋找]。  
+2. 選擇 [檔案中尋找]。  
   
- 若要取消尋找作業，請按 CTRL + BREAK。  
+   若要取消尋找作業，請按 CTRL + BREAK。  
   
 > [!NOTE]
 >  [尋找和取代] 工具不會搜尋目錄與 `Hidden` 或 `System` 屬性集。  

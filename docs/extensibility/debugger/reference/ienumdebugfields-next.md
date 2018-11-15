@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugFields::Next |Microsoft 文件
+title: IEnumDebugFields::Next |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d9f32a0049b614c1afa4d7eb62bdeda2d55b651e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c4971b2b6c045bc0b583d616a05a5075ce60b750
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31123207"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942713"
 ---
 # <a name="ienumdebugfieldsnext"></a>IEnumDebugFields::Next
-這個方法會傳回下一個項目的集合，從列舉型別。  
+這個方法會傳回下的一個項目集的列舉型別。  
   
 ## <a name="syntax"></a>語法  
   
@@ -45,16 +45,16 @@ int Next(
   
 #### <a name="parameters"></a>參數  
  `celt`  
- [in]若要擷取的項目數目。 也會指定的大小上限`rgelt`陣列。  
+ [in]若要擷取的元素數目。 也會指定的大小上限`rgelt`陣列。  
   
  `rgelt`  
- [in、 out]陣列[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)要填入的項目。  
+ [in、 out]陣列[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)来填入的項目。  
   
  `pceltFetched`  
  [out]傳回的項目數中實際傳回`rgelt`。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK`。 傳回`S_FALSE`如果無法傳回要求的元素數目少於; 否則傳回錯誤碼。  
+ 如果成功，則傳回`S_OK`。 傳回`S_FALSE`更少的項目要求的數目可能會傳回; 否則會傳回錯誤碼。  
   
 ## <a name="see-also"></a>另請參閱  
  [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)   

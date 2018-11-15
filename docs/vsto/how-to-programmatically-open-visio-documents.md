@@ -16,23 +16,23 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a3a7d2a9855abef0415661798c8a213eb748e22f
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 28f882510e2370c0fb31645da5023e865afd667e
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35257848"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50672674"
 ---
 # <a name="how-to-programmatically-open-visio-documents"></a>如何： 以程式設計方式開啟 Visio 文件
   有兩種方法來開啟現有的 Microsoft Office Visio 文件： 開啟] 及 [OpenEx。 OpenEx 方法等同於開放式的方法，不同之處在於它會提供在其中呼叫端可以指定如何在文件開啟時的引數。  
   
- 如需此物件模型的詳細資訊，請參閱 [Microsoft.Office.Interop.Visio.Documents.Open](https://msdn.microsoft.com/library/office/ff765240.aspx) 方法和 [Microsoft.Office.Interop.Visio.Documents.OpenEx](https://msdn.microsoft.com/library/office/ff767229.aspx) 方法的 VBA 參考文件。  
+ 如需此物件模型的詳細資訊，請參閱 [Microsoft.Office.Interop.Visio.Documents.Open](/office/vba/api/Visio.Documents.Open) 方法和 [Microsoft.Office.Interop.Visio.Documents.OpenEx](/office/vba/api/Visio.Documents.OpenEx) 方法的 VBA 參考文件。  
   
 ## <a name="open-a-visio-document"></a>開啟 Visio 文件  
   
 ### <a name="to-open-a-visio-document"></a>開啟 Visio 文件  
   
--   呼叫`Microsoft.Office.Interop.Visio.Documents.Open`方法，並提供 Visio 文件的完整路徑。  
+-   呼叫 `Microsoft.Office.Interop.Visio.Documents.Open` 方法並提供 Visio 文件的完整路徑。  
   
      [!code-csharp[Trin_VstcoreVisioAutomationAddIn#5](../vsto/codesnippet/CSharp/trin_vstcorevisioautomationaddin/ThisAddIn.cs#5)]
      [!code-vb[Trin_VstcoreVisioAutomationAddIn#5](../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb#5)]  
@@ -41,7 +41,7 @@ ms.locfileid: "35257848"
   
 ### <a name="to-open-a-visio-document-as-read-only-and-docked"></a>開啟 Visio 文件為唯讀並停駐  
   
--   呼叫`Microsoft.Office.Interop.Visio.Documents.OpenEx`方法，提供 Visio 文件的完整的路徑，並包含您想要使用的引數，在此案例中，停駐且為唯讀狀態。  
+-   呼叫 `Microsoft.Office.Interop.Visio.Documents.OpenEx` 方法，提供 Visio 文件的完整路徑，以及包含要使用的引數，在本例中為「停駐」和「唯讀」。  
   
      [!code-csharp[Trin_VstcoreVisioAutomationAddIn#6](../vsto/codesnippet/CSharp/trin_vstcorevisioautomationaddin/ThisAddIn.cs#6)]
      [!code-vb[Trin_VstcoreVisioAutomationAddIn#6](../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb#6)]  

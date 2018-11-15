@@ -19,12 +19,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2d59798e5ecf503b1dcb6b76e9d0d8fb448cc1e8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1e362ca665d7012e52d7ed49cce66adc4632b013
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49295019"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49937885"
 ---
 # <a name="creating-a-ui-by-using-xaml-designer-in-visual-studio"></a>在 Visual Studio 中使用 XAML 設計工具建立 UI
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -133,31 +133,31 @@ Visual Studio 中的 XAML 設計工具提供視覺化介面，協助您設計以
 ## <a name="document-outline-window"></a>文件大綱視窗  
  XAML 設計工具中的 [文件大綱] 視窗可協助您執行下列工作：  
   
--   檢視畫板上所有項目的階層式結構。  
+- 檢視畫板上所有項目的階層式結構。  
   
--   選取項目以進行修改 (在階層中進行移動、在畫板上進行修改、在 [屬性] 視窗中設定其屬性等)。 如需詳細資訊，請參閱 [Working with elements in XAML Designer](../designers/working-with-elements-in-xaml-designer.md)。  
+- 選取項目以進行修改 (在階層中進行移動、在畫板上進行修改、在 [屬性] 視窗中設定其屬性等)。 如需詳細資訊，請參閱 [Working with elements in XAML Designer](../designers/working-with-elements-in-xaml-designer.md)。  
   
--   為控制項項目建立及修改樣板。  
+- 為控制項項目建立及修改樣板。  
   
--   使用所選項目的內容功能表。 畫板中選取的項目也可以使用相同的功能表。  
+- 使用所選項目的內容功能表。 畫板中選取的項目也可以使用相同的功能表。  
   
- 若要檢視 [文件大綱] 視窗，請在功能表列上依序選擇 [檢視] 、[其他視窗] 、[文件大綱] 。  
+  若要檢視 [文件大綱] 視窗，請在功能表列上依序選擇 [檢視] 、[其他視窗] 、[文件大綱] 。  
   
- ![[文件大綱] 視窗](../designers/media/xaml-editor-doc-outline.png "xaml_editor_doc_outline")  
+  ![[文件大綱] 視窗](../designers/media/xaml-editor-doc-outline.png "xaml_editor_doc_outline")  
   
- [文件大綱] 視窗中的可用選項包括：  
+  [文件大綱] 視窗中的可用選項包括：  
   
- **文件大綱**  
- [文件大綱] 視窗的主要檢視會以樹狀結構顯示文件的階層。 您可以利用文件大綱的階層本質，在各種詳細層級上檢查文件，以及單獨或依群組鎖定和隱藏項目。  
+  **文件大綱**  
+  [文件大綱] 視窗的主要檢視會以樹狀結構顯示文件的階層。 您可以利用文件大綱的階層本質，在各種詳細層級上檢查文件，以及單獨或依群組鎖定和隱藏項目。  
   
- **顯示/隱藏**  
- 顯示或隱藏 [文件大綱] 中的項目所對應的畫板項目。 使用 [顯示/隱藏]  按鈕 (顯示時會出現眼睛符號)，或者按 CTRL+H 隱藏項目及按 SHIFT+CTRL+H 顯示項目。  
+  **顯示/隱藏**  
+  顯示或隱藏 [文件大綱] 中的項目所對應的畫板項目。 使用 [顯示/隱藏]  按鈕 (顯示時會出現眼睛符號)，或者按 CTRL+H 隱藏項目及按 SHIFT+CTRL+H 顯示項目。  
   
- **鎖定/解除鎖定**  
- 鎖定或解除鎖定 [文件大綱] 中的項目所對應的畫板項目。 無法修改鎖定的項目。 使用 [鎖定/解除鎖定]  按鈕 (鎖定時會出現掛鎖符號)，或者按 CTRL+L 鎖定項目及按 SHIFT+CTRL+L 解除鎖定。  
+  **鎖定/解除鎖定**  
+  鎖定或解除鎖定 [文件大綱] 中的項目所對應的畫板項目。 無法修改鎖定的項目。 使用 [鎖定/解除鎖定]  按鈕 (鎖定時會出現掛鎖符號)，或者按 CTRL+L 鎖定項目及按 SHIFT+CTRL+L 解除鎖定。  
   
- **將範圍傳回 pageRoot**  
- [文件大綱] 視窗頂端顯示向上箭號符號的選項，可將文件大綱傳回到前一個範圍。 只有您在樣式或樣板的範圍內時，選定範圍才適用。  
+  **將範圍傳回 pageRoot**  
+  [文件大綱] 視窗頂端顯示向上箭號符號的選項，可將文件大綱傳回到前一個範圍。 只有您在樣式或樣板的範圍內時，選定範圍才適用。  
   
 ## <a name="properties-window"></a>屬性視窗  
  [屬性] 視窗可讓您設定控制項的屬性值。 看起來如下：  

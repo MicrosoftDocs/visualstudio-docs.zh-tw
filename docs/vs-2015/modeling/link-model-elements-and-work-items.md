@@ -22,12 +22,12 @@ caps.latest.revision: 49
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: e3c2a7558adb9036cec474429da9778394e8c1f9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 71500fca3318bf6f18e1c841c1ff90bd303bfaa6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49263915"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49891748"
 ---
 # <a name="link-model-elements-and-work-items"></a>連結模型項目和工作項目
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,27 +41,27 @@ ms.locfileid: "49263915"
   
  例如，您可以連結：  
   
--   顯示劇本如何實現為一連串作業的「使用者劇本」工作項目與活動圖。  
+- 顯示劇本如何實現為一連串作業的「使用者劇本」工作項目與活動圖。  
   
--   使用案例圖中的使用案例與測試工作項目，以確保正確實作使用案例。  
+- 使用案例圖中的使用案例與測試工作項目，以確保正確實作使用案例。  
   
--   將 UML 類別圖上類別中的屬性，以及與屬性實作中錯誤相關的 Bug 工作項目。  
+- 將 UML 類別圖上類別中的屬性，以及與屬性實作中錯誤相關的 Bug 工作項目。  
   
--   元件圖中的元件以及追蹤元件開發的「工作」(Task) 工作項目。 這類工作通常會細分為較小的工作  
+- 元件圖中的元件以及追蹤元件開發的「工作」(Task) 工作項目。 這類工作通常會細分為較小的工作  
   
- 您可以將工作項目連結至任何可在模型圖表或在 [UML 模型總管] 中選取的項目，例如：  
+  您可以將工作項目連結至任何可在模型圖表或在 [UML 模型總管] 中選取的項目，例如：  
   
--   UML 模型中的所有項目，例如 UML 類別、生命線、使用案例、子系統、活動、物件節點、元件和介面。  
+- UML 模型中的所有項目，例如 UML 類別、生命線、使用案例、子系統、活動、物件節點、元件和介面。  
   
--   UML 模型中的所有關聯 (Relation)，例如關聯 (Association)、一般化、相依性、流程和訊息。  
+- UML 模型中的所有關聯 (Relation)，例如關聯 (Association)、一般化、相依性、流程和訊息。  
   
--   項目的組成部分，例如類別的屬性和作業、生命線的執行次數、活動的輸入和輸出連接，以及元件的組件和連接埠。  
+- 項目的組成部分，例如類別的屬性和作業、生命線的執行次數、活動的輸入和輸出連接，以及元件的組件和連接埠。  
   
--   圖層和圖層相依性。  
+- 圖層和圖層相依性。  
   
--   註解和註解連結。  
+- 註解和註解連結。  
   
--   圖表。 若要選取圖表，請選擇圖表的空白部分。  
+- 圖表。 若要選取圖表，請選擇圖表的空白部分。  
   
 > [!WARNING]
 >  您必須先連接 TFS 原始程式碼控制 (SCC) 才能建立或連結工作項目。 若您嘗試開啟連接至不同的 TFS SCC，Visual Studio 會自動關閉目前方案。 請先確認您已連接至適當的 SCC，再嘗試建立或連結至工作項目。 在更新版本的 Visual Studio 中，如果沒有連接至 SCC 即無法使用功能表命令。  

@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5161f7b4878c6ef381dc26aa4689c4fe7b7cb961
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 2e9f851734a4066e1f6ab7956d124478e0cde76c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39152083"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49815477"
 ---
 # <a name="standard-and-custom-toolset-configurations"></a>標準和自訂工具組的設定
 MSBuild 工具組包含工作、目標和工具的參考，可用以組建應用程式專案。 MSBuild 包含標準的工具組，但您也可以建立自訂工具組。 如需如何指定工具組的相關資訊，請參閱[工具組 (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md)  
@@ -27,7 +27,7 @@ MSBuild 工具組包含工作、目標和工具的參考，可用以組建應用
  MSBuild 15.0 包含下列標準工具組：  
   
 |ToolsVersion|工具組路徑 (如 MSBuildToolsPath 或 MSBuildBinPath 組建屬性中所指定)|  
-|------------------|--------------------------------------------------------------------------------------------|  
+|------------------| - |  
 |2.0|*\<Windows 安裝路徑>\Microsoft.Net\Framework\v2.0.50727\\\*|  
 |3.5|*\<Windows 安裝路徑>\Microsoft.NET\Framework\v3.5\\*|  
 |4.0|*\<Windows 安裝路徑>\Microsoft.NET\Framework\v4.0.30319\\*|  
@@ -39,9 +39,9 @@ MSBuild 工具組包含工作、目標和工具的參考，可用以組建應用
   
 |登錄機碼|機碼名稱|字串索引鍵值|  
 |------------------|--------------|----------------------|  
-|**\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ MSBuild\ToolsVersions\2.0\\**  |**MSBuildToolsPath**|**.NET Framework 2.0 安裝路徑**|  
-|**\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ MSBuild\ToolsVersions\3.5\\**  |**MSBuildToolsPath**|**.NET Framework 3.5 安裝路徑**|  
-|**\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ MSBuild\ToolsVersions\4.0\\**  |**MSBuildToolsPath**|**.NET Framework 4 安裝路徑**|  
+|**\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ MSBuild\ToolsVersions\2.0\\** |**MSBuildToolsPath**|**.NET Framework 2.0 安裝路徑**|  
+|**\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ MSBuild\ToolsVersions\3.5\\** |**MSBuildToolsPath**|**.NET Framework 3.5 安裝路徑**|  
+|**\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ MSBuild\ToolsVersions\4.0\\** |**MSBuildToolsPath**|**.NET Framework 4 安裝路徑**|  
   
 ### <a name="sub-toolsets"></a>子工具組  
  如果前一份表格中的登錄機碼有子機碼，則 MSBuild 會用它來判斷覆寫父工具組中路徑的子工具組路徑。 以下列子機碼為例：  
@@ -69,7 +69,7 @@ MSBuild 工具組包含工作、目標和工具的參考，可用以組建應用
 </msbuildToolsets>  
 ```  
   
- 也必須在設定檔中定義 `<msbuildToolsets>`，如下所示。  
+ 也必須在組態檔中定義 `<msbuildToolsets>`，如下所示。  
   
 ```xml  
 <configSections>  
@@ -82,7 +82,7 @@ MSBuild 工具組包含工作、目標和工具的參考，可用以組建應用
 ```  
   
 > [!NOTE]
->  為正確讀取，`<configSections>` 必須是 `<configuration>` 區段中的第一個子區段。  
+>  為正確讀取，`<configSections>` 必須在 `<configuration>` 區段的第一個小節中。  
   
  `ToolsetConfigurationSection` 是可供任何 MSBuild 主機自訂組態使用的自訂組態區段。 如果使用自訂的工具組，主機除提供組態檔項目以外，不必執行任何作業來初始化組建引擎。 在登錄中定義項目，您就可以指定全電腦的工具組，套用至 *MSBuild.exe*、[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 和所有 MSBuild 主機。  
   
@@ -91,11 +91,11 @@ MSBuild 工具組包含工作、目標和工具的參考，可用以組建應用
   
  下列屬性專門針對專案中使用的 `ToolsVersion` 值：  
   
--   **$(MSBuildBinPath)** 設定為 `ToolsPath` 值，是在登錄或定義 `ToolsVersion` 的組態檔中指定。 登錄或組態檔中的 `$(MSBuildToolsPath)` 設定會指定核心工作和目標的位置。 在專案檔中，這會對應至 $(MSBuildBinPath) 屬性，也會對應至 $(MSBuildToolsPath) 屬性。  
+- **$(MSBuildBinPath)** 設定為 `ToolsPath` 值，是在登錄或定義 `ToolsVersion` 的組態檔中指定。 登錄或組態檔中的 `$(MSBuildToolsPath)` 設定會指定核心工作和目標的位置。 在專案檔中，這會對應至 $(MSBuildBinPath) 屬性，也會對應至 $(MSBuildToolsPath) 屬性。  
   
--   `$(MSBuildToolsPath)` 是保留的屬性，由組態檔中指定的 MSBuildToolsPath 屬性提供。 (這個屬性會取代 `$(MSBuildBinPath)`。 不過，為相容性之故會執行 `$(MSBuildBinPath)`。)自訂工具組必須定義 `$(MSBuildToolsPath)` 或 `$(MSBuildBinPath)`，但不能同時定義兩者，除非它們有相同的值。  
+- `$(MSBuildToolsPath)` 是保留的屬性，由組態檔中指定的 MSBuildToolsPath 屬性提供。 (這個屬性會取代 `$(MSBuildBinPath)`。 不過，為相容性之故會執行 `$(MSBuildBinPath)`。)自訂工具組必須定義 `$(MSBuildToolsPath)` 或 `$(MSBuildBinPath)`，但不能同時定義兩者，除非它們有相同的值。  
   
- 您也可以使用新增 MSBuildToolsPath 屬性時所用的相同語法，在組態檔中新增自訂的工具版本特定屬性。 為使專案檔能夠使用這些自訂屬性，請使用和組態檔指定的值名稱相同的名稱。 您可以在設定檔中定義工具組，但不能定義子工具組。  
+  您也可以使用新增 MSBuildToolsPath 屬性時所用的相同語法，在組態檔中新增自訂的工具版本特定屬性。 為使專案檔能夠使用這些自訂屬性，請使用和組態檔指定的值名稱相同的名稱。 您可以在設定檔中定義工具組，但不能定義子工具組。  
   
 ## <a name="see-also"></a>另請參閱  
  [工具組 (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md)

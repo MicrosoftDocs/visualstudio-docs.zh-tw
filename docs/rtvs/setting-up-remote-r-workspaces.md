@@ -10,12 +10,12 @@ ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 6ef92d907b34705e0a0461d06827f5504b0e61c3
-ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
+ms.openlocfilehash: 207e4c2d6e7db9dd40288306b3a87086c4568f76
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38978306"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49827710"
 ---
 # <a name="set-up-remote-workspaces"></a>設定遠端工作區
 
@@ -97,15 +97,15 @@ RTVS 需要所有與遠端伺服器通訊均透過 HTTP，而這需要伺服器�
 自行核發自我簽署憑證：
 
 1. SSH 或登入您的 Linux 電腦。
-1. 安裝 `ssl-cert` 套件：
+2. 安裝 `ssl-cert` 套件：
     ```sh
     sudo apt-get install ssl-cert
     ```
-1. 執行 `make-ssl-cert` 以產生預設的自我簽署 SSL 憑證：
+3. 執行 `make-ssl-cert` 以產生預設的自我簽署 SSL 憑證：
     ```sh
     sudo make-ssl-cert generate-default-snakeoil --force-overwrite
     ```
-1. 將產生的金鑰和 PEM 檔案轉換成 PFX。 產生的 PFX 應該在主資料夾中：
+4. 將產生的金鑰和 PEM 檔案轉換成 PFX。 產生的 PFX 應該在主資料夾中：
     ```sh
     openssl pkcs12 -export -out ~/ssl-cert-snakeoil.pfx -inkey /etc/ssl/private/ssl-cert-snakeoil.key -in /etc/ssl/certs/ssl-cert-snakeoil.pem -password pass:SnakeOil
     ```
@@ -135,12 +135,12 @@ RTVS 需要所有與遠端伺服器通訊均透過 HTTP，而這需要伺服器�
 
 1. 下載並安裝下列一項︰
 
-    - [Microsoft R Open](https://mran.microsoft.com/open/)
-    - [CRAN R for Windows](https://cran.r-project.org/bin/windows/base/)
+   - [Microsoft R Open](https://mran.microsoft.com/open/)
+   - [CRAN R for Windows](https://cran.r-project.org/bin/windows/base/)
 
-    兩者有相同的功能，但 Microsoft R Open 得益於使用 [Intel Math Kernel Library](https://software.intel.com/intel-mkl) (Intel 數學核心程式庫) 提供的線性代數程式庫加速的額外硬體。
+     兩者有相同的功能，但 Microsoft R Open 得益於使用 [Intel Math Kernel Library](https://software.intel.com/intel-mkl) (Intel 數學核心程式庫) 提供的線性代數程式庫加速的額外硬體。
 
-1. 執行 [R 服務安裝程式](https://aka.ms/rtvs-services)，並於系統提示時重新開機。 安裝程式會執行下列動作︰
+2. 執行 [R 服務安裝程式](https://aka.ms/rtvs-services)，並於系統提示時重新開機。 安裝程式會執行下列動作︰
 
     - 在 *%PROGRAMFILES%\R Tools for Visual Studio\1.0\\* 中建立資料夾，然後複製所有必要的二進位檔。
     - 安裝 `RHostBrokerService` 和 `RUserProfileService` 並設定自動啟動。
@@ -160,12 +160,12 @@ RTVS 需要所有與遠端伺服器通訊均透過 HTTP，而這需要伺服器�
 
 1. 下載並安裝下列一項︰
 
-    - [Microsoft R Open](https://mran.microsoft.com/open/)
-    - [CRAN R for Windows](https://cran.r-project.org/bin/linux/ubuntu/)
+   - [Microsoft R Open](https://mran.microsoft.com/open/)
+   - [CRAN R for Windows](https://cran.r-project.org/bin/linux/ubuntu/)
 
-    兩者有相同的功能，但 Microsoft R Open 得益於使用 [Intel Math Kernel Library](https://software.intel.com/intel-mkl) (Intel 數學核心程式庫) 提供的線性代數程式庫加速的額外硬體。
+     兩者有相同的功能，但 Microsoft R Open 得益於使用 [Intel Math Kernel Library](https://software.intel.com/intel-mkl) (Intel 數學核心程式庫) 提供的線性代數程式庫加速的額外硬體。
 
-1. 遵循 [Linux 的遠端 R 服務](setting-up-remote-r-service-on-linux.md)指示，其中涵蓋了實體 Ubuntu 電腦、Azure Ubuntu VM、適用於 Linux 的 Windows 子系統 (WSL) 及 Docker 容器，包括在 Azure Container Repository 上執行的項目。
+2. 遵循 [Linux 的遠端 R 服務](setting-up-remote-r-service-on-linux.md)指示，其中涵蓋了實體 Ubuntu 電腦、Azure Ubuntu VM、適用於 Linux 的 Windows 子系統 (WSL) 及 Docker 容器，包括在 Azure Container Repository 上執行的項目。
 
 ## <a name="configure-r-services"></a>設定 R 服務
 

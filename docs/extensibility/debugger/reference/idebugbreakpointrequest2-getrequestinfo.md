@@ -1,5 +1,5 @@
 ---
-title: IDebugBreakpointRequest2::GetRequestInfo |Microsoft 文件
+title: IDebugBreakpointRequest2::GetRequestInfo |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c9cfbf39ad6ff0dc889f18276a0aad2e4510434c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 80bba52a25d6931a83724ffb17e9e34d2bbf923b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31105810"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49864305"
 ---
 # <a name="idebugbreakpointrequest2getrequestinfo"></a>IDebugBreakpointRequest2::GetRequestInfo
 取得描述此中斷點要求的中斷點要求資訊。  
@@ -43,16 +43,16 @@ int GetRequestInfo(
   
 #### <a name="parameters"></a>參數  
  `dwFields`  
- [in]從旗標的組合[BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md)列舉，可判斷哪些欄位`pBPRequestInfo`參數會填入。  
+ [in]從旗標的組合[BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md)列舉，決定哪些欄位`pBPRequestInfo`參數都必須填寫。  
   
  `pBPRequestInfo`  
  [out]指定[BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)結構以填入中斷點要求的描述。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
   
 ## <a name="example"></a>範例  
- 下列範例示範如何實作這個方法來簡單`CDebugBreakpointRequest`公開物件[IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md)介面。  
+ 下列範例示範如何實作這個方法來簡單`CDebugBreakpointRequest`公開的物件[IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md)介面。  
   
 ```  
 HRESULT CDebugBreakpointRequest::GetRequestInfo(  

@@ -22,12 +22,12 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fb98b24d778b19b99b84c1d2a577d3ef3159fdc7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 632973aab0447ffcd8d2bff5e752683223ea3838
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49248699"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49844480"
 ---
 # <a name="parameter-element"></a>Parameter 元素
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

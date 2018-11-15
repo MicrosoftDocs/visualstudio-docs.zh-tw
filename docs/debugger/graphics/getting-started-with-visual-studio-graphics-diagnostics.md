@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 069dd7638296987c195fbae6cc9d858fdd3421ee
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 24cd668165b940955902605ef64c1ffb522b9fe1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37058668"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49929773"
 ---
 # <a name="getting-started-with-visual-studio-graphics-diagnostics"></a>Visual Studio 圖形診斷快速入門
 在本節中，您將準備第一次使用圖形診斷，並從 Direct3D 應用程式擷取畫面格，然後在圖形分析器中檢查它們。  
@@ -34,17 +34,17 @@ ms.locfileid: "37058668"
   
 #### <a name="to-install-graphics-tools-for-windows-10"></a>安裝適用於 Windows 10 的圖形工具  
   
-1.  在搜尋中，輸入**應用程式和功能**，然後開啟**應用程式與功能**設定。
+1. 在搜尋中，輸入**應用程式和功能**，然後開啟**應用程式與功能**設定。
   
-3.  右手邊**應用程式與功能** 對話方塊中，選擇**管理選擇性功能**(在**應用程式與功能**)。
+2. 右手邊**應用程式與功能** 對話方塊中，選擇**管理選擇性功能**(在**應用程式與功能**)。
 
-    **管理選擇性功能**對話方塊隨即出現。
+   **管理選擇性功能**對話方塊隨即出現。
   
-4.  在 [**管理選擇性功能**] 對話方塊中，選擇**新增功能**。 您可以安裝的選擇性功能清單隨即出現。  
+3. 在 [**管理選擇性功能**] 對話方塊中，選擇**新增功能**。 您可以安裝的選擇性功能清單隨即出現。  
   
-5.  選取 **圖形工具**從清單中的功能，然後選擇**安裝**。  
+4. 選取 **圖形工具**從清單中的功能，然後選擇**安裝**。  
   
- 安裝 Windows 10 SDK 時，也會自動安裝圖形工具功能。  
+   安裝 Windows 10 SDK 時，也會自動安裝圖形工具功能。  
   
 > [!TIP]
 >  Windows 10 的選擇性圖形工具功能提供輕量型擷取和播放功能 — 例如命令列擷取程式**dxcap.exe**— 可用於在支援、 測試和診斷案例未安裝開發人員工具的機器。 如需詳細資訊，請參閱 <<c0> [ 命令列擷取工具](command-line-capture-tool.md)主題。  
@@ -58,7 +58,7 @@ ms.locfileid: "37058668"
 - **DirectX 11 應用程式 (通用 Windows)** 或是**DirectX 12 應用程式 (通用 Windows)** 適用於 Windows 10 的專案範本。
 - [Direct3D 12 UAP 範例](https://code.msdn.microsoft.com/Direct3D-12-UAP-Sample-ecb1779f)適用於 Windows 10。  
   
- 繼續前請先確定您可以建置應用程式。  
+  繼續前請先確定您可以建置應用程式。  
   
 ### <a name="2---start-a-graphics-diagnostics-session"></a>2 - 啟動圖形診斷工作階段  
  您現在已經準備好開始第一個圖形診斷工作階段。 在 Visual Studio 主功能表上，選擇**偵錯，圖形開始圖形偵錯**，或直接按**alt+f5**。 這樣會使用圖形診斷來啟動您的應用程式，並在 Visual Studio 中顯示診斷工作階段視窗。  
@@ -75,11 +75,11 @@ ms.locfileid: "37058668"
   
 #### <a name="to-capture-a-sequence-of-frames"></a>擷取一系列畫面格  
   
--   在 Visual Studio 中，在診斷工作階段 視窗中，設定**要擷取的畫面**至您想要在順序中擷取的畫面格數目，然後擷取順序 」 使用您上面所述來擷取單一畫面格的方法之一。  
+- 在 Visual Studio 中，在診斷工作階段 視窗中，設定**要擷取的畫面**至您想要在順序中擷取的畫面格數目，然後擷取順序 」 使用您上面所述來擷取單一畫面格的方法之一。  
   
-     若要再次擷取單一畫面格，將**要擷取的畫面**要*1*。  
+   若要再次擷取單一畫面格，將**要擷取的畫面**要*1*。  
   
- 當您完成時擷取的畫面格剛結束應用程式，或選擇**停止**從 圖形 工具列或診斷工作階段 視窗的按鈕。  
+  當您完成時擷取的畫面格剛結束應用程式，或選擇**停止**從 圖形 工具列或診斷工作階段 視窗的按鈕。  
   
 ### <a name="4---examine-captured-frames-in-the-graphics-analyzer"></a>4-檢查在圖形分析器中擷取的畫面格  
  您現在可以檢查剛剛擷取的畫面格。 若要開始分析畫面格，請從診斷工作階段視窗中選擇您要檢查之畫面格的畫面格編號。 這會開啟中的框架**圖形分析器**，其中您可以使用圖形診斷工具來檢查您的應用程式如何使用 Direct3D 來追蹤轉譯問題，或使用**畫面格分析**工具了解其效能。  

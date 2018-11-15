@@ -17,12 +17,12 @@ ms.assetid: ee2b9084-2db1-4e49-a1d9-387284b7c3f8
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bcaa3c9b64e7958ab80f266ffa4b9eeb6de1d86e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e34fa470b419a8bf63bfdfb8e2dce78e7a81fa24
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49243057"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49906275"
 ---
 # <a name="idebugprocess2detach"></a>IDebugProcess2::Detach
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

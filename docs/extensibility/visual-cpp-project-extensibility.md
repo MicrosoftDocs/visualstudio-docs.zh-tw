@@ -11,12 +11,12 @@ ms.author: corob
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 76adb5df7fec7663f5c9bc1a4c84c378f0e14a82
-ms.sourcegitcommit: b9a32c3d94b19e7344f4872bc026efd3157cf220
+ms.openlocfilehash: 913ad2e785fcdb2067f89d0d4de2b250db40468b
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46135655"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349672"
 ---
 # <a name="visual-studio-c-project-system-extensibility-and-toolset-integration"></a>Visual Studio c + + 專案系統擴充性和工具組之間的整合
 
@@ -434,7 +434,7 @@ Visual c + + 專案系統根據[VS 專案系統](https://github.com/Microsoft/VS
 
 ### <a name="project-property-pages"></a>專案屬性頁
 
-一般設計資訊，請參閱[平台擴充性-第 1 部分](http://blogs.msdn.com/b/vsproject/archive/2009/06/10/platform-extensibility-part-1.aspx)並[平台擴充性-第 2 部分](http://blogs.msdn.com/b/vsproject/archive/2009/06/18/platform-extensibility-part-2.aspx)。
+一般設計資訊，請參閱[平台擴充性-第 1 部分](https://blogs.msdn.microsoft.com/vsproject/2009/06/09/platform-extensibility-part-1/)並[平台擴充性-第 2 部分](https://blogs.msdn.microsoft.com/vsproject/2009/06/18/platform-extensibility-part-2/)。
 
 簡單地說，屬性頁 所示**專案屬性**所定義的 c + + 專案 對話方塊*規則*檔案。 規則檔案指定要顯示在 [屬性] 頁面上，以及如何在它們應儲存在專案和檔案屬性的集。 規則檔案是使用 Xaml 格式的.xml 檔案。 用來序列化它們的型別所述[Microsoft.Build.Framework.XamlTypes](/dotnet/api/microsoft.build.framework.xamltypes)。 如需有關使用的專案中的規則檔案，請參閱[屬性頁面 XML 規則檔案](/cpp/ide/property-page-xml-files)。
 
@@ -478,12 +478,13 @@ CPS 支援內容類型，使用其他值，但不會用在 Visual c + + 專案�
 
 `PageTemplate`屬性可讓您定義規則中的顯示方式**屬性頁**對話方塊。 屬性可以有下列值之一：
 
-|屬性|描述|
-|-|-|
-`generic`|在類別目錄標題下的單一頁面上會顯示所有的屬性<br/>規則可以是顯示`Project`並`PropertySheet`內容，但不是`File`。<br/><br/> 範例： `$(VCTargetsPath)` \\ *1033年*\\*general.xml*
-`tool`|類別會顯示為子頁面。<br/>規則可以是顯示在所有的內容： `Project`，`PropertySheet`和`File`。<br/>規則內容中會顯示專案的專案已使用的項目時，才`ItemType`中定義`Rule.DataSource`，除非規則名稱會包含在`ProjectTools`項目群組。<br/><br/>範例： `$(VCTargetsPath)` \\ *1033年*\\*clang.xml*
-`debugger`|頁面會顯示為 [偵錯] 頁面的一部分。<br/>類別目前會被忽略。<br/>規則名稱應該符合偵錯啟動器 MEF 物件的`ExportDebugger`屬性。<br/><br/>範例： `$(VCTargetsPath)` \\ *1033年*\\*偵錯工具\_本機\_windows.xml*
-*custom*| 自訂範本。 範本的名稱應該符合`ExportPropertyPageUIFactoryProvider`屬性的`PropertyPageUIFactoryProvider`MEF 物件。 請參閱**Microsoft.VisualStudio.ProjectSystem.Designers.Properties.IPropertyPageUIFactoryProvider**。<br/><br/> 範例： `$(VCTargetsPath)` \\ *1033年*\\*userMacros.xml*
+
+| 屬性 | 描述 |
+|------------| - |
+| `generic` | 在類別目錄標題下的單一頁面上會顯示所有的屬性<br/>規則可以是顯示`Project`並`PropertySheet`內容，但不是`File`。<br/><br/> 範例： `$(VCTargetsPath)` \\ *1033年*\\*general.xml* |
+| `tool` | 類別會顯示為子頁面。<br/>規則可以是顯示在所有的內容： `Project`，`PropertySheet`和`File`。<br/>規則內容中會顯示專案的專案已使用的項目時，才`ItemType`中定義`Rule.DataSource`，除非規則名稱會包含在`ProjectTools`項目群組。<br/><br/>範例： `$(VCTargetsPath)` \\ *1033年*\\*clang.xml* |
+| `debugger` | 頁面會顯示為 [偵錯] 頁面的一部分。<br/>類別目前會被忽略。<br/>規則名稱應該符合偵錯啟動器 MEF 物件的`ExportDebugger`屬性。<br/><br/>範例： `$(VCTargetsPath)` \\ *1033年*\\*偵錯工具\_本機\_windows.xml* |
+| *custom* | 自訂範本。 範本的名稱應該符合`ExportPropertyPageUIFactoryProvider`屬性的`PropertyPageUIFactoryProvider`MEF 物件。 請參閱**Microsoft.VisualStudio.ProjectSystem.Designers.Properties.IPropertyPageUIFactoryProvider**。<br/><br/> 範例： `$(VCTargetsPath)` \\ *1033年*\\*userMacros.xml* |
 
 如果此規則會使用其中一個屬性方格為基礎的範本，它可以使用這些擴充點的屬性：
 

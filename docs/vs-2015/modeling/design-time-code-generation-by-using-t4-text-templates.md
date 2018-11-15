@@ -20,12 +20,12 @@ caps.latest.revision: 40
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 1edc6e7d66e8b371f38e16052ba26fa61287e398
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a302f2d4f96f7f110780feae3f76e08b440d037f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49268329"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49859274"
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>使用 T4 文字範本在設計階段產生程式碼
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -82,66 +82,66 @@ ms.locfileid: "49268329"
 ### <a name="regenerating-the-code"></a>重新產生程式碼  
  在下列任何情況下，將會執行範本，並產生附帶檔案：  
   
--   編輯範本，然後將焦點變更至不同的 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 視窗。  
+- 編輯範本，然後將焦點變更至不同的 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 視窗。  
   
--   儲存範本。  
+- 儲存範本。  
   
--   按一下 **轉換所有範本**中**建置**功能表。 這樣會轉換 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 方案中的所有範本。  
+- 按一下 **轉換所有範本**中**建置**功能表。 這樣會轉換 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 方案中的所有範本。  
   
--   在 **方案總管**，在快顯功能表的任何檔案，選擇**執行自訂工具**。 使用此方法可以轉換所選取的範本子集。  
+- 在 **方案總管**，在快顯功能表的任何檔案，選擇**執行自訂工具**。 使用此方法可以轉換所選取的範本子集。  
   
- 您也可以設定 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 專案，以在範本所讀取的資料檔案變更時執行範本。 如需詳細資訊，請參閱 <<c0> [ 自動重新產生程式碼](#Regenerating)。  
+  您也可以設定 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 專案，以在範本所讀取的資料檔案變更時執行範本。 如需詳細資訊，請參閱 <<c0> [ 自動重新產生程式碼](#Regenerating)。  
   
 ## <a name="generating-variable-text"></a>產生變數文字  
  文字範本可讓您使用程式碼，讓所產生檔案的內容不同。  
   
 #### <a name="to-generate-text-by-using-program-code"></a>使用程式碼來產生文字  
   
-1.  變更 `.tt` 檔案的內容：  
+1. 變更 `.tt` 檔案的內容：  
   
-    ```csharp  
-    <#@ template hostspecific="false" language="C#" #>  
-    <#@ output extension=".txt" #>  
-    <#int top = 10;  
+   ```csharp  
+   <#@ template hostspecific="false" language="C#" #>  
+   <#@ output extension=".txt" #>  
+   <#int top = 10;  
   
-    for (int i = 0; i<=top; i++)   
-    { #>  
+   for (int i = 0; i<=top; i++)   
+   { #>  
+      The square of <#= i #> is <#= i*i #>  
+   <# } #>  
+   ```  
+  
+   ```vb  
+   <#@ template hostspecific="false" language="VB" #>  
+   <#@ output extension=".txt" #>  
+   <#Dim top As Integer = 10  
+  
+   For i As Integer = 0 To top  
+   #>  
        The square of <#= i #> is <#= i*i #>  
-    <# } #>  
-    ```  
+   <#  
+   Next  
+   #>  
   
-    ```vb  
-    <#@ template hostspecific="false" language="VB" #>  
-    <#@ output extension=".txt" #>  
-    <#Dim top As Integer = 10  
+   ```  
   
-    For i As Integer = 0 To top  
-    #>  
-        The square of <#= i #> is <#= i*i #>  
-    <#  
-    Next  
-    #>  
+2. 儲存 .tt 檔案，並重新檢查產生的 .txt 檔案。 它會列出 0 到 10 之數字的平方。  
   
-    ```  
+   請注意，陳述式會用 `<#...#>` 括住，單一運算式則用 `<#=...#>` 括住。 如需詳細資訊，請參閱 <<c0> [ 撰寫 T4 文字範本](../modeling/writing-a-t4-text-template.md)。  
   
-2.  儲存 .tt 檔案，並重新檢查產生的 .txt 檔案。 它會列出 0 到 10 之數字的平方。  
-  
- 請注意，陳述式會用 `<#...#>` 括住，單一運算式則用 `<#=...#>` 括住。 如需詳細資訊，請參閱 <<c0> [ 撰寫 T4 文字範本](../modeling/writing-a-t4-text-template.md)。  
-  
- 如果您使用 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 撰寫產生的程式碼，則 `template` 指示詞應該包含 `language="VB"`。 `"C#"` 是預設值。  
+   如果您使用 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 撰寫產生的程式碼，則 `template` 指示詞應該包含 `language="VB"`。 `"C#"` 是預設值。  
   
 ## <a name="debugging-a-design-time-t4-text-template"></a>偵錯設計階段 T4 文字範本  
  偵錯文字範本：  
   
--   將 `debug="true"` 插入至 `template` 指示詞。 例如：  
+- 將 `debug="true"` 插入至 `template` 指示詞。 例如：  
   
-     `<#@ template debug="true" hostspecific="false" language="C#" #>`  
+   `<#@ template debug="true" hostspecific="false" language="C#" #>`  
   
--   在範本中設定中斷點，方法與您對一般程式碼設定中斷點一樣。  
+- 在範本中設定中斷點，方法與您對一般程式碼設定中斷點一樣。  
   
--   選擇**偵錯 T4 範本**從文字範本檔案，在 [方案總管] 的捷徑功能表。  
+- 選擇**偵錯 T4 範本**從文字範本檔案，在 [方案總管] 的捷徑功能表。  
   
- 範本將會執行並停止於中斷點。 您可以檢查變數，並照常逐步執行程式碼。  
+  範本將會執行並停止於中斷點。 您可以檢查變數，並照常逐步執行程式碼。  
   
 > [!TIP]
 >  `debug="true"` 會將更多行號指示詞插入至產生的程式碼，以讓產生的程式碼更精確地對應至文字範本。 如果您遺漏它，則中斷點可能會以錯誤的狀態停止執行作業。  
@@ -208,13 +208,13 @@ ms.locfileid: "49268329"
 ### <a name="structuring-text-templates"></a>建構文字範本  
  我們傾向最好將範本程式碼分成兩個部分：  
   
--   組態或資料收集部分：會在變數中設定值，但不包含文字區塊。 在上述範例中，這部分是 `properties` 的初始化。  
+- 組態或資料收集部分：會在變數中設定值，但不包含文字區塊。 在上述範例中，這部分是 `properties` 的初始化。  
   
-     這有時稱為「模型」區段，因為它會建構庫存模型，而且通常會讀取模型檔案。  
+   這有時稱為「模型」區段，因為它會建構庫存模型，而且通常會讀取模型檔案。  
   
--   文字產生部分 (在此範例中，是 `foreach(...){...}`)：使用變數的值。  
+- 文字產生部分 (在此範例中，是 `foreach(...){...}`)：使用變數的值。  
   
- 這不是必要的分隔，而是減少含文字部分的複雜性，讓範本的讀取更為容易的樣式。  
+  這不是必要的分隔，而是減少含文字部分的複雜性，讓範本的讀取更為容易的樣式。  
   
 ## <a name="reading-files-or-other-sources"></a>讀取檔案或其他來源  
  若要存取模型檔案或資料庫，您的範本程式碼可以使用 System.XML 這類組件。 若要存取這些組件，您必須插入下列這類指示詞：  

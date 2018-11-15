@@ -22,12 +22,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 426377d82385cd42de5dd265b0e727a94c0b24d1
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: e33fa9b6047cbe470702cebdbb27f74d074e460e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39177340"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49916903"
 ---
 # <a name="save-data-back-to-the-database"></a>將資料儲存回資料庫
 
@@ -73,21 +73,21 @@ ms.locfileid: "39177340"
 當合併資料集，您可以將傳遞布林值引數 (`preserveChanges`)，會告訴<xref:System.Data.DataSet.Merge%2A>方法是否要保留現有目標資料集內的修改。 因為資料集維護多個版本的記錄，很重要要牢記在心，正在合併多個版本的記錄。 下表顯示如何合併兩個資料集內的記錄：
 
 |DataRowVersion|目標資料集|來源資料集|
-|--------------------|--------------------|--------------------|
+| - | - | - |
 |原始|James Wilson|James C.Wilson|
 |目前|Jim Wilson|James C.Wilson|
 
 呼叫<xref:System.Data.DataSet.Merge%2A>方法的先前資料表上`preserveChanges=false targetDataset.Merge(sourceDataset)`會導致下列資料：
 
 |DataRowVersion|目標資料集|來源資料集|
-|--------------------|--------------------|--------------------|
+| - | - | - |
 |原始|James C.Wilson|James C.Wilson|
 |目前|James C.Wilson|James C.Wilson|
 
 呼叫<xref:System.Data.DataSet.Merge%2A>方法使用`preserveChanges = true targetDataset.Merge(sourceDataset, true)`會導致下列資料：
 
 |DataRowVersion|目標資料集|來源資料集|
-|--------------------|--------------------|--------------------|
+| - | - | - |
 |原始|James C.Wilson|James C.Wilson|
 |目前|Jim Wilson|James C.Wilson|
 
@@ -128,7 +128,7 @@ ms.locfileid: "39177340"
 下表詳細說明的可能值<xref:System.Data.DataRowState>列舉型別：
 
 |DataRowState 值|描述|
-|------------------------|-----------------|
+| - |-----------------|
 |<xref:System.Data.DataRowState.Added>|資料列都已經加入項目成為<xref:System.Data.DataRowCollection>。 (此狀態中的資料列並未安裝對應的原始版本，因為它不存在時的最後一個<xref:System.Data.DataRow.AcceptChanges%2A>方法受呼叫時)。|
 |<xref:System.Data.DataRowState.Deleted>|使用刪除資料列<xref:System.Data.DataRow.Delete%2A>的<xref:System.Data.DataRow>物件。|
 |<xref:System.Data.DataRowState.Detached>|資料列已建立，但不屬於任何<xref:System.Data.DataRowCollection>。 A<xref:System.Data.DataRow>立即建立它之後，之前它尚未加入至集合，以及從集合移除後，物件是處於此狀態。|
@@ -142,7 +142,7 @@ ms.locfileid: "39177340"
 下表詳細說明的可能值<xref:System.Data.DataRowVersion>列舉型別：
 
 |DataRowVersion 值|描述|
-|--------------------------|-----------------|
+| - |-----------------|
 |<xref:System.Data.DataRowVersion.Current>|目前版本的一筆記錄包含已自上次執行記錄的所有修改<xref:System.Data.DataRow.AcceptChanges%2A>呼叫。 如果已刪除資料列，則沒有目前的版本。|
 |<xref:System.Data.DataRowVersion.Default>|資料錄，如資料集結構描述或資料來源所定義的預設值。|
 |<xref:System.Data.DataRowVersion.Original>|一筆資料錄的原始版本是一份記錄，因為它是最後一個時間的變更被認可的資料集。 實際上，這通常是一筆記錄的版本為已讀取之資料來源。|

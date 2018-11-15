@@ -17,12 +17,12 @@ ms.assetid: 0d5674c8-a9b9-4b72-8211-d2d68695775a
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ce9736720c54cd820645404fa6d4fc46d5c095f1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 645092f5a9f72e3da086a2d53b86a18e6f3ff659
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49292213"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49835952"
 ---
 # <a name="idebugengine2getengineid"></a>IDebugEngine2::GetEngineID
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

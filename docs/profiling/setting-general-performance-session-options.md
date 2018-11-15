@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5268e6821714dc6850541c319dba450bcc04490b
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: d6c44435f69b5a94433081a518be14f8ffd1756e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34263556"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49834223"
 ---
 # <a name="set-general-performance-session-options"></a>設定一般效能工作階段選項
 
@@ -37,7 +37,7 @@ ms.locfileid: "34263556"
 |||
 |-|-|
 |**收集 .NET 物件配置資訊**. 根據預設，資料會包含已配置的物件數目和大小。 選取或清除此核取方塊，以啟用或停用 .NET 記憶體資料收集。 |- [收集 .NET 記憶體配置和存留期資料](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md)|
-|**同時收集 .NET 物件存留期的資訊**. 選取此核取方塊，以包含用來回收記憶體物件之記憶體回收世代的資料。|- [收集 .NET 記憶體配置和存留期資料](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md)  |
+|**同時收集 .NET 物件存留期的資訊**. 選取此核取方塊，以包含用來回收記憶體物件之記憶體回收世代的資料。|- [收集 .NET 記憶體配置和存留期資料](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md) |
 
  當您開始對應用程式進行程式碼剖析時，程式碼剖析工作階段頁面就會出現，您可以在此暫停、繼續執行及停止程式碼剖析。
 

@@ -16,14 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 506b9b014b375b60491161c49925d49c45c79ef9
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 7c5232ef4f6f21b1f0f012954d121e6e0abdae9c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47860234"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49950858"
 ---
 # <a name="ca1058-types-should-not-extend-certain-base-types"></a>CA1058：類型不應該擴充特定的基底類型
+
 |||
 |-|-|
 |TypeName|TypesShouldNotExtendCertainBaseTypes|

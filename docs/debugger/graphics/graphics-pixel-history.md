@@ -24,7 +24,7 @@ Visual Studio 圖形診斷工具中的 [圖形像素歷史記錄] 視窗可幫�
   
  這是 [像素歷史記錄] 視窗：  
   
- ![包含三個 Direct3D 事件的記錄中的像素。] (media/gfx_diag_demo_pixel_history_orientation.png "gfx_diag_demo_pixel_history_orientation")  
+ ![包含三個 Direct3D 事件的記錄中的像素。](media/gfx_diag_demo_pixel_history_orientation.png "gfx_diag_demo_pixel_history_orientation")  
   
 ## <a name="understanding-the-pixel-history-window"></a>了解 [像素歷史記錄] 視窗  
  使用 [像素歷史記錄]，即可分析在畫面格期間，Direct3D 事件對轉譯目標的特定像素有何影響。 您可以找出特定 Direct3D 事件的呈現問題，即使後續事件 (或相同事件中的後續基本項目) 繼續變更像素的最終色彩值也一樣。 例如，像素的呈現可能不正確，然後被另一個半透明的像素遮住，導致其色彩在畫面格緩衝區中混合在一起。 如果您只有呈現目標的最後內容可以引導您，這種問題會很難診斷。  
@@ -42,9 +42,9 @@ Visual Studio 圖形診斷工具中的 [圖形像素歷史記錄] 視窗可幫�
   
 |圖示|排除的原因|  
 |----------|--------------------------|  
-|![深度測試失敗圖示。] (media/vsg_hist_icon_failed_depth.png "vsg_hist_icon_failed_depth")|像素因為深度測試失敗而被排除。|  
-|![剪式測試失敗圖示。] (media/vsg_hist_icon_failed_scissor.png "vsg_hist_icon_failed_scissor")|像素因為剪式測試失敗而被排除。|  
-|![樣板測試失敗圖示。] (media/vsg_hist_icon_failed_stencil.png "vsg_hist_icon_failed_stencil")|像素因為樣板測試失敗而被排除。|  
+|![深度測試失敗圖示。](media/vsg_hist_icon_failed_depth.png "vsg_hist_icon_failed_depth")|像素因為深度測試失敗而被排除。|  
+|![剪式測試失敗圖示。](media/vsg_hist_icon_failed_scissor.png "vsg_hist_icon_failed_scissor")|像素因為剪式測試失敗而被排除。|  
+|![樣板測試失敗圖示。](media/vsg_hist_icon_failed_stencil.png "vsg_hist_icon_failed_stencil")|像素因為樣板測試失敗而被排除。|  
   
 ### <a name="draw-call-exclusion"></a>繪製呼叫排除  
  如果繪製呼叫中的所有基本項目都因為測試失敗而被排除會影響呈現目標，則該繪製呼叫無法展開，而且旁邊會顯示對應至排除原因的圖示。 繪製呼叫排除的原因類似基本項目排除的原因，而且它們的圖示也很類似。  

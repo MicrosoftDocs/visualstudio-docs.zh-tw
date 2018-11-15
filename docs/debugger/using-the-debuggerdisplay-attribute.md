@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5dc83fc859e99a86b1057a02b7cfb9ff2e1232af
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d3adb481ba06c086db3a272c026543464018b542
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42635521"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926198"
 ---
 # <a name="using-the-debuggerdisplay-attribute"></a>使用 DebuggerDisplay 屬性
-<xref:System.Diagnostics.DebuggerDisplayAttribute>控制物件、 屬性或欄位在偵錯工具變數視窗中顯示方式。 這個屬性可以適用於類型、委派、屬性、欄位和組件。  
+<xref:System.Diagnostics.DebuggerDisplayAttribute> 控制物件、屬性或欄位在偵錯工具變數視窗中顯示的方式。 這個屬性可以適用於類型、委派、屬性、欄位和組件。  
   
  `DebuggerDisplay` 屬性有單一引數，這是要在類型執行個體的 [值] 一欄中顯示的字串。 這個字串可以包含括號 (`{` 和 `}`)。 一對括號內的文字會評估為欄位、屬性或方法。  
   
@@ -36,7 +36,7 @@ ms.locfileid: "42635521"
  下表說明 `DebuggerDisplay` 屬性的一些可能用法和範例輸出。  
   
 |屬性|不會出現在 [值] 資料行的輸出|  
-|---------------|------------------------------------------------|  
+|---------------| - |  
 |`[DebuggerDisplay("x = {x} y = {y}")]`<br /><br /> 用於具有 `x` 和 `y`欄位的類型。|`x = 5 y = 18`|  
 |`[DebuggerDisplay("String value is {getString()}")]`參數語法會因語言而有所不同。 因此，請小心使用。|`String value is [5, 6, 6]`|  
   
@@ -61,17 +61,17 @@ csc /t:library autoexp.cs
 ## <a name="using-expressions-in-debuggerdisplay"></a>在 DebuggerDisplay 中使用運算式  
  雖然您可以在 DebuggerDisplay 屬性中使用大括號括住的一般運算式，但不建議採取這種做法。  
   
- DebuggerDisplay 中的一般運算式只能隱含存取目標類型之目前執行個體的 `this` 指標。 運算式無法存取別名、區域變數或指標。 如果運算式參考屬性 (Property)，則不會處理這些屬性 (Property) 中的屬性 (Attribute)。 例如，C# 程式碼`[DebuggerDisplay("Object {count - 2}")]`會顯示`Object 6`如果欄位`count`為 8。  
+ DebuggerDisplay 中的一般運算式只能隱含存取目標類型之目前執行個體的 `this` 指標。 運算式無法存取別名、區域變數或指標。 如果運算式參考屬性 (Property)，則不會處理這些屬性 (Property) 中的屬性 (Attribute)。 例如，如果欄位 `[DebuggerDisplay("Object {count - 2}")]`  為 8，則 C# 程式碼 `Object 6` 會顯示 `count` 。  
   
  在 DebuggerDisplay 中使用運算式可能導致下列問題：  
   
--   評估運算式是偵錯工具中最昂貴的作業，而且每次顯示運算式時都會進行評估。 這可能會在逐步執行程式碼時導致效能問題。 例如，若集合或清單中的元素數目很大，則用於顯示其中值的複雜運算式執行速度可能會非常慢。  
+- 評估運算式是偵錯工具中最昂貴的作業，而且每次顯示運算式時都會進行評估。 這可能會在逐步執行程式碼時導致效能問題。 例如，若集合或清單中的元素數目很大，則用於顯示其中值的複雜運算式執行速度可能會非常慢。  
   
--   運算式是由使用目前堆疊框架語言的運算式評估工具進行評估，而不是由撰寫運算式之語言的評估工具進行評估。 這種情況可能會在語言不同時導致無法預測的結果。  
+- 運算式是由使用目前堆疊框架語言的運算式評估工具進行評估，而不是由撰寫運算式之語言的評估工具進行評估。 這種情況可能會在語言不同時導致無法預測的結果。  
   
--   評估運算式可能會變更應用程式的狀態。 例如，設定屬性值的運算式會改變執行程式碼中的屬性值。  
+- 評估運算式可能會變更應用程式的狀態。 例如，設定屬性值的運算式會改變執行程式碼中的屬性值。  
   
- 減少運算式評估可能出現之問題的其中一種方法，是建立私用屬性來執行作業並傳回字串。 這樣 DebuggerDisplay 屬性就可以顯示該私用屬性的值。 下列範例將實作這個模式：  
+  減少運算式評估可能出現之問題的其中一種方法，是建立私用屬性來執行作業並傳回字串。 這樣 DebuggerDisplay 屬性就可以顯示該私用屬性的值。 下列範例將實作這個模式：  
   
 ```csharp  
 [DebuggerDisplay("{DebuggerDisplay,nq}")]  

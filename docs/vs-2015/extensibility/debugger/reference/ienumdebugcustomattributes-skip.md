@@ -17,12 +17,12 @@ ms.assetid: 54c72e23-cd4c-4746-935c-abea8057dd1b
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 555204016c6ce46202ef462773a26507005c9dfc
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: dea169c35124ae48aa27754e208d1d904f45c8e2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49202980"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49838305"
 ---
 # <a name="ienumdebugcustomattributesskip"></a>IEnumDebugCustomAttributes::Skip
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

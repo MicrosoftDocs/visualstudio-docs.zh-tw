@@ -10,12 +10,12 @@ ms.author: karann
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4af9ec3cffc7375dd77be72887baee6a56e1b391
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 09251f13cafa320e2736e9c61135283bb9e9739d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39077804"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49844181"
 ---
 # <a name="xaml-errors-and-warnings"></a>XAML 錯誤和警告
 
@@ -26,7 +26,7 @@ ms.locfileid: "39077804"
 系統中的多項工具會在幕後平行分析 XAML。 依據偵測到錯誤的工具來看，XAML 錯誤可以區分為下列三種類型：
 
 |**偵測到錯誤的項目**|**錯誤碼格式**|
-|--------------------------------|-----------------|
+| - |-----------------|
 |XAML 語言服務 (XAML 編輯器)|XLSxxxx|
 |XAML 設計工具|XDGxxxx|
 |XAML 編輯後繼續|XECxxxx|

@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6e2c960fda37a15fe129a6a2b67c4a55c297cefa
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 3586d6bc141992d7d8fe4629e7f56d04e4e247aa
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35671138"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50672622"
 ---
 # <a name="office-solutions-development-overview-vsto"></a>Office 方案開發概觀 (VSTO)
   您可以使用 Microsoft Office 做為方案的前端，以善用熟悉的 Microsoft Office 使用者介面和工具 (例如 Word 的文書處理功能、Excel 的資料分析功能，以及 Outlook 的電子郵件管理功能)。 您可以使用 Visual Studio 來開發方案，以自訂 Office 應用程式，以及加入符合商務流程需求的特定功能。 例如，您可以將 Word 轉變成可將已存在的組件 (這些組件可設定為是否可編輯) 組合為合約的合約產生器。 藉由 Excel，您可以建立自動化的預算工作表，為不同的專案進行自訂。 如果您使用網頁式的架構，則您的使用者也可以離線使用 Office 方案，使複雜的方案比原本可能的更加實用。  
@@ -31,13 +31,13 @@ ms.locfileid: "35671138"
 ## <a name="choose-an-office-project-type"></a>選擇 Office project 類型  
  [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 提供下列類型的專案範本，用於以 VSTO 為基礎的 Office 程式開發：  
   
--   **文件層級自訂** 與特定文件相關聯。  
+- **文件層級自訂** 與特定文件相關聯。  
   
--   **VSTO Add-ins** 與應用程式本身相關聯。  
+- **VSTO Add-ins** 與應用程式本身相關聯。  
   
- 若要決定哪些專案類型最適合您的方案，請考慮您是否只有在特定文件已開啟時才執行程式碼，或是否想要該程式碼在每次應用程式正執行時可供使用。 如需詳細的專案範本的詳細資訊，請參閱[Office 專案範本概觀](../vsto/office-project-templates-overview.md)。  
+  若要決定哪些專案類型最適合您的方案，請考慮您是否只有在特定文件已開啟時才執行程式碼，或是否想要該程式碼在每次應用程式正執行時可供使用。 如需詳細的專案範本的詳細資訊，請參閱[Office 專案範本概觀](../vsto/office-project-templates-overview.md)。  
   
- 您可以建立的專案類型，取決於您已安裝在開發電腦上的 Office 應用程式。 如需詳細資訊，請參閱 <<c0> [ 依 Office 應用程式和專案類型提供的功能](../vsto/features-available-by-office-application-and-project-type.md)。  
+  您可以建立的專案類型，取決於您已安裝在開發電腦上的 Office 應用程式。 如需詳細資訊，請參閱 <<c0> [ 依 Office 應用程式和專案類型提供的功能](../vsto/features-available-by-office-application-and-project-type.md)。  
   
 ### <a name="document-level-customizations"></a>文件層級自訂  
  文件層級自訂是由與 Microsoft Office Word 或 Microsoft Office Excel 中的單一文件、活頁簿或範本關聯的組件所組成。 組件會在相關聯的文件開啟時載入。 只有在相關聯的文件開啟時，您才能使用自己建立之自訂中的功能。 自訂不能進行應用程式層範圍的變更，例如在任何文件開啟時顯示新的選單項目或功能區索引標籤。  
@@ -83,7 +83,7 @@ ms.locfileid: "35671138"
  您可以使用 ClickOnce 或 Windows Installer，部署以 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]中之 Office 開發工具所建立的方案。 使用 ClickOnce 進行部署可以讓您建立自我更新式方案，其不需有很多使用者互動，即可安裝和執行。 Windows Installer (*.msi*) 檔案可以輕易地分配給使用者的電腦，或使用 Systems Management Server (SMS) 散發。 如需部署 VSTO Office 方案的詳細資訊，請參閱[部署 Office 方案](../vsto/deploying-an-office-solution.md)。  
   
 ### <a name="install-prerequisites"></a>安裝必要條件  
- 使用者在執行您以 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]中的 Office 開發工具建立的方案之前，必須已在電腦上安裝某些必要條件。 如果您使用 ClickOnce 或透過建立 Windows Installer 檔案來部署方案，則這些必要條件可以隨方案一起安裝。 如需詳細資訊，請參閱 < [Office 方案的部署必要條件](http://msdn.microsoft.com/9f672809-43a3-40a1-9057-397ce3b5126e)並[如何： 安裝必要條件來執行 Office 方案的終端使用者電腦上](http://msdn.microsoft.com/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98)。  
+ 使用者在執行您以 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]中的 Office 開發工具建立的方案之前，必須已在電腦上安裝某些必要條件。 如果您使用 ClickOnce 或透過建立 Windows Installer 檔案來部署方案，則這些必要條件可以隨方案一起安裝。 如需詳細資訊，請參閱 < [Office 方案的部署必要條件](https://msdn.microsoft.com/9f672809-43a3-40a1-9057-397ce3b5126e)並[如何： 安裝必要條件來執行 Office 方案的終端使用者電腦上](https://msdn.microsoft.com/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98)。  
   
 ### <a name="security"></a>安全性  
  VSTO Office 方案的安全性是透過 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 在安裝和載入方案時進行的一系列檢查來強制執行。 這些檢查包括確認是否信任部署資訊清單的位置，或是否信任用於簽署部署資訊清單的憑證。 如需詳細資訊，請參閱 <<c0> [ 保護的 Office 方案](../vsto/securing-office-solutions.md)。  
@@ -91,7 +91,7 @@ ms.locfileid: "35671138"
 ## <a name="see-also"></a>另請參閱  
  [開始使用&#40;在 Visual Studio 中的 Office 程式開發&#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
  [文件層級自訂的架構](../vsto/architecture-of-document-level-customizations.md)   
- [VSTO 增益集的架構](../vsto/architecture-of-vsto-add-ins.md)   
+ [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md)   
  [開始使用適用於 Excel 的文件層級自訂程式設計](../vsto/getting-started-programming-document-level-customizations-for-excel.md)   
  [開始使用 word 的文件層級自訂程式設計](../vsto/getting-started-programming-document-level-customizations-for-word.md)   
  [開始進行程式設計 VSTO 增益集](../vsto/getting-started-programming-vsto-add-ins.md)  

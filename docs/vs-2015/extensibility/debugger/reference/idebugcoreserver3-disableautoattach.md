@@ -17,12 +17,12 @@ ms.assetid: 9d860a20-c154-4df4-ba15-636e0fcd42bf
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9108e04f6976a84b4ddde1d80f02ed480d661cb4
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1c317a4743411125cb088357f9fe66939381cf9e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49235348"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49924183"
 ---
 # <a name="idebugcoreserver3disableautoattach"></a>IDebugCoreServer3::DisableAutoAttach
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

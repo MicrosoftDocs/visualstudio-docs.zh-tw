@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8e9f9679f235837521b06943b1335eb6577c9408
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 25294e9cb8f57036603ec4817fcbd59976a358a3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35258437"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49840281"
 ---
 # <a name="walkthrough-display-text-in-a-text-box-in-a-worksheet-using-a-button"></a>逐步解說： 使用按鈕在工作表中的文字方塊中顯示文字
   本逐步解說會示範使用 Microsoft Office Excel 工作表，以及如何建立 Excel 專案在 Visual Studio 中使用 Office 開發工具的按鈕和文字方塊的基本概念。 若要查看完整的範例結果，請參閱 Excel 控制項範例： [Office 程式開發範例和逐步解說](../vsto/office-development-samples-and-walkthroughs.md)。  
@@ -62,22 +62,22 @@ ms.locfileid: "35258437"
   
 ### <a name="to-add-a-button-and-a-text-box"></a>新增按鈕和文字方塊  
   
-1.  確認**我的 Excel Button.xlsx**活頁簿是在 Visual Studio 設計工具中開啟與`Sheet1`顯示。  
+1. 確認**我的 Excel Button.xlsx**活頁簿是在 Visual Studio 設計工具中開啟與`Sheet1`顯示。  
   
-2.  從**通用控制項** 索引標籤的 工具箱 拖曳<xref:Microsoft.Office.Tools.Excel.Controls.TextBox>至`Sheet1`。  
+2. 從**通用控制項** 索引標籤的 工具箱 拖曳<xref:Microsoft.Office.Tools.Excel.Controls.TextBox>至`Sheet1`。  
   
-3.  從**檢視**功能表上，選取**屬性 視窗**。  
+3. 從**檢視**功能表上，選取**屬性 視窗**。  
   
-4.  務必**TextBox1**會顯示在**屬性** 視窗的下拉式清單方塊，並變更**名稱**屬性的文字方塊中，以**3**.  
+4. 務必**TextBox1**會顯示在**屬性** 視窗的下拉式清單方塊，並變更**名稱**屬性的文字方塊中，以**3**.  
   
-5.  拖曳** 按鈕**控制項拖曳至`Sheet1`並變更下列屬性：  
+5. 拖曳** 按鈕**控制項拖曳至`Sheet1`並變更下列屬性：  
   
-    |屬性|值|  
-    |--------------|-----------|  
-    |**名稱**|**insertText**|  
-    |**Text**|**插入文字**|  
+   |屬性|值|  
+   |--------------|-----------|  
+   |**名稱**|**insertText**|  
+   |**Text**|**插入文字**|  
   
- 現在撰寫要在按下按鈕時執行的程式碼。  
+   現在撰寫要在按下按鈕時執行的程式碼。  
   
 ## <a name="populate-the-text-box-when-the-button-is-clicked"></a>按一下按鈕時填入文字方塊  
  每次使用者按一下按鈕， **Hello World ！** 會附加至文字方塊中。  

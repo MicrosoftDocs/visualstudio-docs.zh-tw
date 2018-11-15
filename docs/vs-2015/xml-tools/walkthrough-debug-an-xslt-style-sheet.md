@@ -14,12 +14,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b1be04d9cc723b2a741ba43676977854306cd03e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 10dad7382a30800675c257a4e2c8219d20e5b18b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49198793"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49887686"
 ---
 # <a name="walkthrough-debug-an-xslt-style-sheet"></a>逐步解說：偵錯 XSLT 樣式表
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,29 +36,29 @@ ms.locfileid: "49198793"
   
 #### <a name="to-start-debugging"></a>若要啟動偵錯  
   
-1.  從**檔案**功能表上，指向**開放**，然後按一下**檔案**。  
+1. 從**檔案**功能表上，指向**開放**，然後按一下**檔案**。  
   
-2.  找出 belowAvg.xsl 檔案，然後按一下**開啟**。  
+2. 找出 belowAvg.xsl 檔案，然後按一下**開啟**。  
   
-     樣式表會在 XML 編輯器中開啟。  
+    樣式表會在 XML 編輯器中開啟。  
   
-3.  按一下 瀏覽按鈕 (**...**) 上**輸入**文件的 屬性 視窗的欄位。  
+3. 按一下 瀏覽按鈕 (**...**) 上**輸入**文件的 屬性 視窗的欄位。  
   
-4.  找出 books.xml 檔案，然後按一下**開啟**。  
+4. 找出 books.xml 檔案，然後按一下**開啟**。  
   
-     這會設定用於 XSLT 轉換的來源文件檔案。  
+    這會設定用於 XSLT 轉換的來源文件檔案。  
   
-5.  以滑鼠右鍵按一下`xsl:if`開始標記，指向**中斷點**，然後按一下**插入中斷點**。  
+5. 以滑鼠右鍵按一下`xsl:if`開始標記，指向**中斷點**，然後按一下**插入中斷點**。  
   
-6.  按一下 **偵錯 XSL** XML 編輯器工具列上的按鈕。  
+6. 按一下 **偵錯 XSL** XML 編輯器工具列上的按鈕。  
   
- 這會啟動偵錯處理，並開啟偵錯工具所使用的幾個新視窗。  
+   這會啟動偵錯處理，並開啟偵錯工具所使用的幾個新視窗。  
   
- 顯示輸入文件與樣式表的視窗有兩個。 偵錯工具會使用這些視窗來顯示目前的執行狀態。 偵錯工具定位於樣式表的 `xsl:if` 項目上，以及 books.xml 檔的第一個書籍節點上。  
+   顯示輸入文件與樣式表的視窗有兩個。 偵錯工具會使用這些視窗來顯示目前的執行狀態。 偵錯工具定位於樣式表的 `xsl:if` 項目上，以及 books.xml 檔的第一個書籍節點上。  
   
- [本機] 視窗會顯示所有區域變數及其目前的值。 其中包括在樣式表中定義的變數，及偵錯工具用來追蹤目前內容中之節點的變數。  
+   [本機] 視窗會顯示所有區域變數及其目前的值。 其中包括在樣式表中定義的變數，及偵錯工具用來追蹤目前內容中之節點的變數。  
   
- **XSL 輸出**視窗會顯示 XSL 轉換的輸出。 此視窗是分開**Visual Studio 輸出**視窗。  
+   **XSL 輸出**視窗會顯示 XSL 轉換的輸出。 此視窗是分開**Visual Studio 輸出**視窗。  
   
 ## <a name="watch-window"></a>監看式視窗  
   

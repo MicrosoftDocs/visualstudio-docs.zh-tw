@@ -14,12 +14,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: affdd3283d328fbc72b186904fdfb025bbe824e9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f0ec7d97ace8f61f209e4664c0de42b883a6a5d0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49266029"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49896946"
 ---
 # <a name="working-with-elements-in-xaml-designer"></a>Working with elements in XAML Designer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,21 +46,21 @@ ms.locfileid: "49266029"
   
 #### <a name="to-change-the-layering-order"></a>變更圖層順序  
   
--   執行下列任一步驟：  
+- 執行下列任一步驟：  
   
-    -   在 [文件大綱] 視窗中，將項目上下拖曳以建立所需的圖層順序。  
+  - 在 [文件大綱] 視窗中，將項目上下拖曳以建立所需的圖層順序。  
   
-    -   在 [文件大綱] 視窗或畫板中，以滑鼠右鍵按一下您要變更圖層順序的項目，並指向 [順序]，然後按一下下列其中一項：  
+  - 在 [文件大綱] 視窗或畫板中，以滑鼠右鍵按一下您要變更圖層順序的項目，並指向 [順序]，然後按一下下列其中一項：  
   
-        -   **提到最上層**可將項目移到這個順序的最上層。  
+    -   **提到最上層**可將項目移到這個順序的最上層。  
   
-        -   **上移一層**可將項目在這個順序中上移一層。  
+    -   **上移一層**可將項目在這個順序中上移一層。  
   
-        -   **下移一層**可將項目在這個順序中下移一層。  
+    -   **下移一層**可將項目在這個順序中下移一層。  
   
-        -   **移到最下層**可將項目移到這個順序的最下層。  
+    -   **移到最下層**可將項目移到這個順序的最下層。  
   
-     在 [屬性] 視窗的 [版面配置] 區段中，變更 **ZIndex** 屬性。 如有重疊的項目，**ZIndex** 屬性會優先於 [文件大綱] 視窗中顯示的項目順序。 項目重疊時，具有較低 **ZIndex** 值的項目會出現在前面。  
+    在 [屬性] 視窗的 [版面配置] 區段中，變更 **ZIndex** 屬性。 如有重疊的項目，**ZIndex** 屬性會優先於 [文件大綱] 視窗中顯示的項目順序。 項目重疊時，具有較低 **ZIndex** 值的項目會出現在前面。  
   
 ## <a name="changing-the-alignment-of-an-element"></a>變更項目的對齊方式  
  您可以使用功能表命令或將項目拖曳至對齊線，來對齊畫板中的項目。  
@@ -115,9 +115,9 @@ ms.locfileid: "49266029"
   
 #### <a name="to-ungroup-elements-and-delete-the-layout"></a>將項目取消群組並刪除版面配置  
   
--   以滑鼠右鍵按一下您要取消群組的群組，然後按一下 [取消群組]。  
+- 以滑鼠右鍵按一下您要取消群組的群組，然後按一下 [取消群組]。  
   
- 您也可以以滑鼠右鍵按一下 [文件大綱] 視窗中的選取項目，然後按一下 [群組置入] 或 [取消群組]，將項目群組或取消群組。  
+  您也可以以滑鼠右鍵按一下 [文件大綱] 視窗中的選取項目，然後按一下 [群組置入] 或 [取消群組]，將項目群組或取消群組。  
   
 ## <a name="resetting-the-element-layout"></a>重設項目配置  
  您可以使用版面配置重設命令，還原某個項目特定版面配置屬性的預設值。 藉由使用這個命令，您可以個別或共同重設項目的邊界、對齊方式、寬度、高度和大小。  

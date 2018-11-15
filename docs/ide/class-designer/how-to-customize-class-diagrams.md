@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8ed2a6112d59e5d433201a417d8d85fd6683b36d
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 4546324a5789c408c22ac610d7a878ad990af2a1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33956753"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49913211"
 ---
 # <a name="how-to-customize-class-diagrams"></a>如何：自訂類別圖表
 
@@ -108,7 +108,7 @@ ms.locfileid: "33956753"
 
 2. 以滑鼠右鍵按一下含有關聯線或繼承線的類型。
 
- 對關聯線按一下 [顯示所有成員]，對繼承線則按一下 [顯示基底類別] 或 [顯示衍生類別]。
+   對關聯線按一下 [顯示所有成員]，對繼承線則按一下 [顯示基底類別] 或 [顯示衍生類別]。
 
 ## <a name="remove-a-shape-from-a-class-diagram"></a>從類別圖移除圖形
 您可以從類別圖移除類型圖形，而不會影響類型的基礎程式碼。 從類別圖移除類型圖案只會影響該圖表：定義類型的基礎程式碼以及顯示類型的其他圖表不受影響。

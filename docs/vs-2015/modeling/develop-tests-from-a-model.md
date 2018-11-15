@@ -14,12 +14,12 @@ caps.latest.revision: 22
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: fc773f9b4945a16bac0a9726e0a06f94726fad96
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 230cd5ae3bd4ae0d46baf4fe48f00eca9ffe879d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49236752"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49825111"
 ---
 # <a name="develop-tests-from-a-model"></a>透過模型開發測試
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -66,19 +66,19 @@ ms.locfileid: "49236752"
   
 ###### <a name="to-link-tests-to-a-use-case"></a>將測試連結至使用案例  
   
-1.  在 [!INCLUDE[TCMlong](../includes/tcmlong-md.md)] 中，建立需求，並以它為測試套件的基礎。 若要了解如何這麼做，請參閱[測試應用程式](http://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)。  
+1. 在 [!INCLUDE[TCMlong](../includes/tcmlong-md.md)] 中，建立需求，並以它為測試套件的基礎。 若要了解如何這麼做，請參閱[測試應用程式](http://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)。  
   
-     您所建立的需求是 [!INCLUDE[vstsTfsShort](../includes/vststfsshort-md.md)] 中的工作項目。 根據您的專案與 [!INCLUDE[esprfound](../includes/esprfound-md.md)] 搭配使用的流程範本，它可能是使用者劇本、需求或使用案例工作項目。 如需詳細資訊，請參閱 <<c0> [ 使用 Visual Studio Team Services 或 Team Foundation Server 追蹤工作](http://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503)。  
+    您所建立的需求是 [!INCLUDE[vstsTfsShort](../includes/vststfsshort-md.md)] 中的工作項目。 根據您的專案與 [!INCLUDE[esprfound](../includes/esprfound-md.md)] 搭配使用的流程範本，它可能是使用者劇本、需求或使用案例工作項目。 如需詳細資訊，請參閱 <<c0> [ 使用 Visual Studio Team Services 或 Team Foundation Server 追蹤工作](http://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503)。  
   
-2.  將需求工作項目連結至模型中的一個或多個使用案例。  
+2. 將需求工作項目連結至模型中的一個或多個使用案例。  
   
-     在使用案例圖中，以滑鼠右鍵按一下使用案例，然後按一下**連結至工作項目**。 如需詳細資訊，請參閱 <<c0> [ 連結模型項目和工作項目](../modeling/link-model-elements-and-work-items.md)。  
+    在使用案例圖中，以滑鼠右鍵按一下使用案例，然後按一下**連結至工作項目**。 如需詳細資訊，請參閱 <<c0> [ 連結模型項目和工作項目](../modeling/link-model-elements-and-work-items.md)。  
   
-3.  加入測試套件 (驗證使用案例的測試案例)。  
+3. 加入測試套件 (驗證使用案例的測試案例)。  
   
- 通常，每個使用者劇本或需求工作項目都會連結至模型中的數個使用案例，而且每個使用案例都會連結至數個使用者劇本或需求。 原因是每個使用者劇本或需求都涵蓋一組開發數個使用案例的工作。 例如，在專案的早期反覆項目中，您可能會開發基本使用者劇本，在其中，客戶可以選擇目錄中的項目並傳送它們。 在後期反覆項目中，劇本可能是使用者在完成訂單時付款，供應商則會在交貨之後收到金額。  每個劇本都會在「訂貨」(Order Goods) 使用案例的後置條件中加入子句。  
+   通常，每個使用者劇本或需求工作項目都會連結至模型中的數個使用案例，而且每個使用案例都會連結至數個使用者劇本或需求。 原因是每個使用者劇本或需求都涵蓋一組開發數個使用案例的工作。 例如，在專案的早期反覆項目中，您可能會開發基本使用者劇本，在其中，客戶可以選擇目錄中的項目並傳送它們。 在後期反覆項目中，劇本可能是使用者在完成訂單時付款，供應商則會在交貨之後收到金額。  每個劇本都會在「訂貨」(Order Goods) 使用案例的後置條件中加入子句。  
   
- 您可以建立從需求到後置條件子句的個別連結，方法是在使用案例圖的不同註解中撰寫這些子句。 您可以將每個註解連結至需求工作項目，並將註解連結至圖表上的使用案例。  
+   您可以建立從需求到後置條件子句的個別連結，方法是在使用案例圖的不同註解中撰寫這些子句。 您可以將每個註解連結至需求工作項目，並將註解連結至圖表上的使用案例。  
   
 ### <a name="base-tests-on-the-requirements-types"></a>測試是以需求類型為基礎  
  需求模型的類型 (即類別、介面和列舉) 描述使用者如何認為和溝通有關其業務的概念和關聯性。 它會排除只與系統內部設計相關的類型。  

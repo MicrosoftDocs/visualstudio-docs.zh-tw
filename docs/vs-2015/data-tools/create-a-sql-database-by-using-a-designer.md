@@ -28,12 +28,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: 8a1765c142fcf039b28b2e1c2e6ad1bf7038aaa9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0ef261ec4ea803dcfc42b6151a5c828d5b03811a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49220746"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49860322"
 ---
 # <a name="create-a-sql-database-by-using-a-designer"></a>使用設計工具建立 SQL database
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,23 +58,23 @@ ms.locfileid: "49220746"
   
 #### <a name="to-create-a-project-and-a-database-file"></a>若要建立專案和資料庫檔案  
   
-1.  建立 Windows Forms 專案，稱為`SampleDatabaseWalkthrough`。  
+1. 建立 Windows Forms 專案，稱為`SampleDatabaseWalkthrough`。  
   
-2.  在功能表列上選取**專案** > **加入新項目**。  
+2. 在功能表列上選取**專案** > **加入新項目**。  
   
-3.  在項目範本清單中，向下捲動並選取**服務架構資料庫**。  
+3. 在項目範本清單中，向下捲動並選取**服務架構資料庫**。  
   
-     ![項目範本 對話方塊](../data-tools/media/raddata-vsitemtemplates.png "raddata VSItemTemplates")  
+    ![項目範本 對話方塊](../data-tools/media/raddata-vsitemtemplates.png "raddata VSItemTemplates")  
   
-4.  為資料庫命名**命名為 SampleDatabase**，然後選取**新增** 按鈕。  
+4. 為資料庫命名**命名為 SampleDatabase**，然後選取**新增** 按鈕。  
   
-5.  如果**資料來源** 視窗未開啟，請開啟它，選取 Shift + Alt + D 鍵，或在功能表列，選取**檢視** > **其他 Windows**  >  **Zdroje dat**。  
+5. 如果**資料來源** 視窗未開啟，請開啟它，選取 Shift + Alt + D 鍵，或在功能表列，選取**檢視** > **其他 Windows**  >  **Zdroje dat**。  
   
-6.  在 **資料來源**視窗中，選取**加入新的資料來源**連結。  
+6. 在 **資料來源**視窗中，選取**加入新的資料來源**連結。  
   
-7.  在 **資料來源組態精靈**，選取**下一步**按鈕四次接受預設設定，然後按**完成** 按鈕。  
+7. 在 **資料來源組態精靈**，選取**下一步**按鈕四次接受預設設定，然後按**完成** 按鈕。  
   
- 藉由開啟資料庫的屬性視窗，就可以檢視其連接字串和主要 .mdf 檔案的位置。 您會看到資料庫檔案位於專案資料夾。  
+   藉由開啟資料庫的屬性視窗，就可以檢視其連接字串和主要 .mdf 檔案的位置。 您會看到資料庫檔案位於專案資料夾。  
   
 -   在 Visual Studio 中，選取**檢視** > **SQL Server 物件總管**如果視窗尚未開啟。 開啟 [屬性] 視窗，展開**資料連接**節點、 開啟 SampleDatabase.mdf，捷徑功能表，然後選取**屬性**。  
   

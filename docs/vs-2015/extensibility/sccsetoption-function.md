@@ -17,12 +17,12 @@ ms.assetid: 4b5e6666-c24c-438a-a9df-9c52f58f8175
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 282b30ff4877e76ff7e789bded57010b2ea165db
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 53caeea98c454116c528e403d2c3b8cffd524005
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49183920"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49901147"
 ---
 # <a name="sccsetoption-function"></a>SccSetOption 函式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

@@ -1,30 +1,30 @@
 ---
-title: 如何： Visual Studio 的往返擴充功能 |Microsoft Docs
-ms.custom: ''
+title: 如何往返擴充功能
 ms.date: 06/25/2017
 ms.technology:
 - vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 2d6cf53c-011e-4c9e-9935-417edca8c486
 author: willbrown
-ms.author: willbrown
+ms.author: gregvanl
 manager: justinclareburt
 ms.workload:
 - willbrown
-ms.openlocfilehash: cdbd8703f3aad9a32b2a86efa01ce5922ed64144
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 826089f1018bc6156cd49bab3afb19e7bb34a47d
+ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498681"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50750728"
 ---
 # <a name="how-to-make-extensions-compatible-with-visual-studio-2017-and-visual-studio-2015"></a>如何： 讓延伸模組與 Visual Studio 2017 和 Visual Studio 2015 相容
 
-本文件說明如何讓 Visual Studio 2015 和 Visual Studio 2017 之間反覆存取的擴充性專案。 完成這項升級之後, 的專案就可以開啟、 建置、 安裝及 Visual Studio 2015 和 Visual Studio 2017 中執行。  做為參考，您可以找到可以反覆存取 Visual Studio 2015 和 Visual Studio 2017 之間的某些延伸模組[此處](https://github.com/Microsoft/VSSDK-Extensibility-Samples)在 Microsoft 的擴充性範例。
+本文件說明如何讓 Visual Studio 2015 和 Visual Studio 2017 之間反覆存取的擴充性專案。 完成這項升級之後, 的專案就可以開啟、 建置、 安裝及 Visual Studio 2015 和 Visual Studio 2017 中執行。 做為參考，可以反覆存取 Visual Studio 2015 和 Visual Studio 2017 之間的某些延伸模組可在[VS SDK 擴充性範例](https://github.com/Microsoft/VSSDK-Extensibility-Samples)。
 
 如果您只想要建置在 Visual Studio 2017，但想要輸出至 Visual Studio 2015 和 Visual Studio 2017 中執行的 VSIX，然後指向[延伸模組移轉文件](how-to-migrate-extensibility-projects-to-visual-studio-2017.md)。
 
->**注意：** 由於在 Visual Studio 版本之間的變更，因此某個版本過幾個步驟，將無法運作另一個。 請確定您嘗試存取的功能有兩個版本，或擴充功能會有非預期的結果。
+> [!NOTE]
+> 由於在 Visual Studio 版本之間的變更，在另一個中無法運作之前在其中一個版本的一些事項。 請確定您嘗試存取的功能可用於這兩個版本，或擴充功能會有非預期的結果。
 
 以下是您將會完成這份文件，若要反覆存取的 VSIX 中的步驟概述：
 
@@ -57,13 +57,13 @@ ms.locfileid: "39498681"
 如果您的專案包含*project.json*檔案：
 
 * 請記下的在參考*project.json*。
-* 從**方案總管**，刪除*project.json*從專案的檔案。
-    * 這將會刪除*project.json*檔案，並將它從專案移除。
-* 新增 NuGet 參考回至專案。
+* 從**方案總管**，刪除*project.json*從專案的檔案。 這會刪除*project.json*檔案，並將它從專案移除。
+* 新增 NuGet 參考回至專案：
     * 以滑鼠右鍵按一下**解決方案**，然後選擇**管理方案的 NuGet 套件**。
-    * Visual Studio 會自動建立*packages.config*為您的檔案
+    * Visual Studio 會自動建立*packages.config*為您的檔案。
 
->**注意︰** 如果您的專案包含 EnvDTE 套件，它們可能需要以滑鼠右鍵按一下要加入**參考**選取**加入參考**並新增適當的參考。  使用 NuGet 套件，可能會嘗試建置專案時建立的錯誤。
+> [!NOTE]
+> 如果您的專案包含 EnvDTE 套件，它們可能需要以滑鼠右鍵按一下要加入**參考**選取**將參考加入**並新增適當的參考。  使用 NuGet 套件，可能會嘗試建置專案時建立的錯誤。
 
 ## <a name="add-appropriate-build-tools"></a>新增適當的建置工具
 
@@ -113,7 +113,8 @@ Visual Studio 2017 | Microsoft.VSSDK.BuildTool
 
 * 儲存並關閉檔案。
 
->**注意：** 如果您選擇達成此目的使用 VSIX 設計工具，Visual Studio 2017 中，您必須手動編輯必要的版本，以確保它是與所有版本的 Visual Studio 2017 相容。  這是因為設計工具會為您目前版本的 Visual Studio (比方說，15.0.26208.0) 插入的最小版本。  不過，因為其他使用者可能會有較早版本，您會想要以手動方式編輯這個檔案為 15.0。
+> [!NOTE]
+> 如果您選擇達成此目的使用 VSIX 設計工具，Visual Studio 2017 中，您必須手動編輯必要的版本，以確保它是與所有版本的 Visual Studio 2017 相容。  這是因為設計工具會為您目前版本的 Visual Studio (比方說，15.0.26208.0) 插入的最小版本。  不過，因為其他使用者可能會有較早版本，您會想要以手動方式編輯這個檔案為 15.0。
 
 此時，您的資訊清單檔應看起來像這樣：
 
@@ -139,7 +140,8 @@ Visual Studio 2017 | Microsoft.VSSDK.BuildTool
 
 * 新增下列標記`<VsixType>v3</VsixType>`至屬性群組。
 
->**注意︰** 建議將此新增下面`<OutputType></OutputType>`標記。
+> [!NOTE]
+> 建議將此新增下面`<OutputType></OutputType>`標記。
 
 ### <a name="3-add-the-debugging-properties"></a>3.新增偵錯屬性
 
@@ -211,4 +213,5 @@ Visual Studio 2017 | Microsoft.VSSDK.BuildTool
 
 ![尋找在 VSIX](media/finding-a-VSIX-example.png)
 
->**注意︰** 如果您的專案時停止回應並顯示訊息**開啟檔案**、 強制關閉 Visual Studio 中，瀏覽至您的專案目錄，顯示隱藏的資料夾，和刪除 *.vs*資料夾。
+> [!NOTE]
+> 如果您的專案時停止回應與訊息**開啟檔案**、 強制關閉 Visual Studio 中，瀏覽至您的專案目錄，顯示隱藏的資料夾，和刪除 *.vs*資料夾。

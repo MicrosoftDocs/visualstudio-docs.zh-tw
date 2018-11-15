@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 865a33e181d761665dbe2e44976f171a2b60d433
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: fca44524c3a7c7f10e855eaf62e8b77dc225ae01
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35255885"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49818675"
 ---
 # <a name="how-to-programmatically-add-rows-and-columns-to-word-tables"></a>如何： 以程式設計方式將資料列和資料行加入至 Word 表格
   在 Microsoft Office Word 表格中，儲存格會組織成資料列和資料行。 您可以使用 <xref:Microsoft.Office.Interop.Word.Rows> 物件的 <xref:Microsoft.Office.Interop.Word.Rows.Add%2A> 方法新增資料表的資料列，以及使用 <xref:Microsoft.Office.Interop.Word.Columns> 物件的 <xref:Microsoft.Office.Interop.Word.Columns.Add%2A> 方法來新增資料行。  
@@ -32,15 +32,15 @@ ms.locfileid: "35255885"
 ## <a name="document-level-customization-examples"></a>文件層級自訂範例  
  下列程式碼範例可以用於文件層級自訂。 若要使用這些範例，請從專案的 `ThisDocument` 類別中執行它們。 這些範例假設與您自訂相關聯的文件已經有至少一張資料表。  
   
-> [!IMPORTANT]  
+> [!IMPORTANT]
 >  只有在使用下列任何專案範本建立的專案中，才能執行此程式碼：  
->   
-> -   Word 2013 文件  
-> -   Word 2013 範本  
-> -   Word 2010 文件  
-> -   Word 2010 範本  
->   
->  如果您想要執行這項工作中任何其他類型的專案，您必須加入參考**Microsoft.Office.Interop.Word**組件，然後您必須使用該組件中的類別來加入資料表中的資料列和資料行。 如需詳細資訊，請參閱 <<c0> [ 如何： 透過主要 interop 組件的目標 Office 應用程式](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)並[Word 2010 主要 interop 組件參考](http://go.microsoft.com/fwlink/?LinkId=189588)。  
+> 
+> - Word 2013 文件  
+> - Word 2013 範本  
+> - Word 2010 文件  
+> - Word 2010 範本  
+> 
+>   如果您想要執行這項工作中任何其他類型的專案，您必須加入參考**Microsoft.Office.Interop.Word**組件，然後您必須使用該組件中的類別來加入資料表中的資料列和資料行。 如需詳細資訊，請參閱 <<c0> [ 如何： 透過主要 interop 組件的目標 Office 應用程式](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)並[Word 2010 主要 interop 組件參考](http://go.microsoft.com/fwlink/?LinkId=189588)。  
   
 ### <a name="to-add-a-row-to-a-table"></a>在資料表中新增群組  
   

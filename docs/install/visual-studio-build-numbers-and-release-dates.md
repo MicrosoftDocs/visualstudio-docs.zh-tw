@@ -5,19 +5,19 @@ keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: douge
-ms.date: 09/20/2018
+ms.date: 11/02/2018
 ms.topic: reference
 helpviewer_keywords: ''
 ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
 ms.workload:
 - multiple
-ms.openlocfilehash: 30e176c7094a303560f1d7cb81732bfd7b62f1d9
-ms.sourcegitcommit: a2d8a662601e61614ac5332391e64ee011fba28a
+ms.openlocfilehash: 8b9efa652fd81ea8de4957ef72e622ad6141c481
+ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46501152"
+ms.lasthandoff: 11/05/2018
+ms.locfileid: "51000668"
 ---
 # <a name="visual-studio-2017-build-numbers-and-release-dates"></a>Visual Studio 2017 組建編號和發行日期
 
@@ -25,6 +25,13 @@ ms.locfileid: "46501152"
 
 | **版本**| **通道** | **發行日期** | **組建版本** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 15.8.9 | 發行 | 2018 年 11 月 2 日 | 15.8.28010.2050 |
+| 15.8.8 | 發行 | 2018 年 10 月 24 日 | 15.8.28010.2048 |
+| 15.9.0 Preview 4 | 預覽 | 2018 年 10 月 23日 | 15.9.28219.56 |
+| 15.8.7 | 發行 | 2018 年 10 月 10日 | 15.8.28010.2046 |
+| 15.0.19 | 發行 | 2018 年 10 月 10日 | 15.0.26228.57 |
+| 15.9.0 Preview 3 | 預覽 | 2018 年 10 月 2日 | 15.9.28128.56 |
+| 15.8.6 | 發行 | 2018 年 10 月 2日 | 15.8.28010.2041 |
 | 15.8.5 | 發行 | 2018 年 9 月 20 日 | 15.8.28010.2036 |
 | 15.9.0 Preview 2 | 預覽 | 2018 年 9 月 11 日 | 15.9.28107.0 |
 | 15.8.4 | 發行 | 2018 年 9 月 11 日 | 15.8.28010.2026 |

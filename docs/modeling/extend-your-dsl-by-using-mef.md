@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 205408cc4241bb0c10b4a2e413449f7b70452187
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 0127bac6ca74be626f9ce22fb60ad5258ae6c3c9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39567073"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49822121"
 ---
 # <a name="extend-your-dsl-by-using-mef"></a>使用 MEF 擴充您的 DSL
 
@@ -125,43 +125,43 @@ ms.locfileid: "39567073"
 
 #### <a name="to-create-a-dsl-extension-vsix"></a>若要建立的 DSL 延伸模組的 VSIX
 
-1.  建立新的類別庫專案。 若要這樣做，請在**新的專案**對話方塊中，選取**Visual Basic**或是**Visual C#** ，然後選取**類別庫**。
+1. 建立新的類別庫專案。 若要這樣做，請在**新的專案**對話方塊中，選取**Visual Basic**或是**Visual C#** ，然後選取**類別庫**。
 
-2.  在新的類別庫專案，加入 DSL 的組件的參考。
+2. 在新的類別庫專案，加入 DSL 的組件的參考。
 
-    -   這個組件通常具有名稱的結尾 」。Dsl.dll"。
+   - 這個組件通常具有名稱的結尾 」。Dsl.dll"。
 
-    -   如果您有 DSL 專案的存取權，您可以找到組件檔案的目錄下**Dsl\bin\\\***
+   - 如果您有 DSL 專案的存取權，您可以找到組件檔案的目錄下**Dsl\bin\\\\***
 
-    -   如果您的 DSL 的 VSIX 檔案存取，您可以將 VSIX 檔案的副檔名變更為 「.zip 」 來尋找組件。 將解壓縮的.zip 檔案。
+   - 如果您的 DSL 的 VSIX 檔案存取，您可以將 VSIX 檔案的副檔名變更為 「.zip 」 來尋找組件。 將解壓縮的.zip 檔案。
 
-3.  加入下列.NET 組件的參考：
+3. 加入下列.NET 組件的參考：
 
-    -   Microsoft.VisualStudio.Modeling.Sdk.11.0.dll
+   -   Microsoft.VisualStudio.Modeling.Sdk.11.0.dll
 
-    -   Microsoft.VisualStudio.Modeling.Sdk.Diagrams.11.0.dll
+   -   Microsoft.VisualStudio.Modeling.Sdk.Diagrams.11.0.dll
 
-    -   Microsoft.VisualStudio.Modeling.Sdk.Shell.11.0.dll
+   -   Microsoft.VisualStudio.Modeling.Sdk.Shell.11.0.dll
 
-    -   System.ComponentModel.Composition.dll
+   -   System.ComponentModel.Composition.dll
 
-    -   System.Windows.Forms.dll
+   -   System.Windows.Forms.dll
 
-4.  建立 VSIX 專案，在相同的方案。 若要這樣做，請在**新的專案**對話方塊方塊中，展開**Visual Basic**或**Visual C#**，按一下 **擴充性**，然後選取  **VSIX 專案**。
+4. 建立 VSIX 專案，在相同的方案。 若要這樣做，請在**新的專案**對話方塊方塊中，展開**Visual Basic**或**Visual C#**，按一下 **擴充性**，然後選取  **VSIX 專案**。
 
-5.  在 方案總管 中，以滑鼠右鍵按一下 VSIX 專案，並再按**設定為啟始專案**。
+5. 在 方案總管 中，以滑鼠右鍵按一下 VSIX 專案，並再按**設定為啟始專案**。
 
-6.  在新的專案中，開啟**source.extension.vsixmanifest**。
+6. 在新的專案中，開啟**source.extension.vsixmanifest**。
 
-7.  按一下 **將內容加入**。 在對話方塊中，將**內容的型別**要**MEF 元件**，和**原始碼專案**您類別庫專案。
+7. 按一下 **將內容加入**。 在對話方塊中，將**內容的型別**要**MEF 元件**，和**原始碼專案**您類別庫專案。
 
-8.  加入至 DSL 的 VSIX 參考。
+8. 加入至 DSL 的 VSIX 參考。
 
-    1.  在  **source.extension.vsixmanifest**，按一下 **加入參考**
+   1. 在  **source.extension.vsixmanifest**，按一下 **加入參考**
 
-    2.  在對話方塊中，按一下**新增裝載**，然後尋找 DSL 的 VSIX 檔案。 在 VSIX 檔案建置在 DSL 方案中， **DslPackage\bin\\\***。
+   2. 在對話方塊中，按一下**新增裝載**，然後尋找 DSL 的 VSIX 檔案。 在 VSIX 檔案建置在 DSL 方案中，* * DslPackage\bin\\\\* * *。
 
-         這可讓使用者安裝 DSL 和擴充功能，在相同的時間。 如果使用者已經安裝 DSL，將會安裝您的擴充。
+       這可讓使用者安裝 DSL 和擴充功能，在相同的時間。 如果使用者已經安裝 DSL，將會安裝您的擴充。
 
 9. 檢閱及更新的其他欄位**source.extension.vsixmanifest**。 按一下 **選取版本**並確認已設定正確的 Visual Studio 版本。
 

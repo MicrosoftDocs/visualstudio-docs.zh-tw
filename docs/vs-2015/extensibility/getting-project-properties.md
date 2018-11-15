@@ -11,17 +11,17 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - project properties, displaying in tool window
-- tool windows, displaying project propeties
+- tool windows, displaying project properties
 ms.assetid: 96ba07ca-0811-4013-8602-12550ac4ba79
 caps.latest.revision: 30
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: eb2526e9e6655bd0dd60af1a525be21227881949
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b99e86c4b955471ee10e0eb63cb5ca81fa675263
+ms.sourcegitcommit: a34b7d4fdb3872865fcf98ba24a0fced58532adc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49182581"
+ms.lasthandoff: 11/12/2018
+ms.locfileid: "51561591"
 ---
 # <a name="getting-project-properties"></a>取得專案屬性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

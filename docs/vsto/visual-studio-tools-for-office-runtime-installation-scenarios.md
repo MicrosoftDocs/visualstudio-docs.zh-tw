@@ -15,23 +15,23 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f286acae2996451688b0e1a40c4d758c4de8caf6
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: ebf335291246ac8c3c15d8f04fb064a3bfaa8ef7
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35671360"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50670893"
 ---
 # <a name="visual-studio-tools-for-office-runtime-installation-scenarios"></a>Visual Studio Tools for Office runtime 安裝案例
   您可以透過三種方式安裝 Visual Studio 2010 Tools for Office 執行階段：  
   
--   當您安裝 Visual Studio 時。  
+- 當您安裝 Visual Studio 時。  
   
--   當您安裝 Microsoft Office 時。  
+- 當您安裝 Microsoft Office 時。  
   
--   當您安裝 Visual Studio 2010 Tools for Office runtime 可轉散發套件。  
+- 當您安裝 Visual Studio 2010 Tools for Office runtime 可轉散發套件。  
   
- 所安裝的執行階段元件取決於電腦組態和安裝情節。  
+  所安裝的執行階段元件取決於電腦組態和安裝情節。  
   
 ## <a name="runtime-components-that-are-installed-in-each-installation-scenario"></a>會安裝在每個安裝案例的執行階段元件  
  Visual Studio 2010 Tools for Office runtime 有三個元件： Office 方案載入器、.NET Framework 3.5 的 Office 擴充功能和 Office extensions for[!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]或更新版本。 安裝執行階段時，一律會安裝 Office 方案載入器。 適用於 .NET Framework 的 Office 擴充功能之安裝取決於電腦組態和安裝情節。 當執行階段先安裝時，如果其中一個 Office 擴充功能無法安裝，則當符合特定需求時，執行階段會自動安裝遺失的 Office 擴充功能。 執行階段的這項功能稱為*隨選安裝*。  
@@ -39,7 +39,7 @@ ms.locfileid: "35671360"
  下表顯示每個執行階段安裝情節中預設會安裝的執行階段元件。 每個情節的詳細資訊稍後出現。  
   
 |執行階段的安裝情節|Office 方案載入器|適用於 .NET Framework 3.5 的 Office 擴充功能|適用於 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 的 Office 擴充功能|適用於 [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] 的 Office 擴充功能|  
-|-----------------------------------|----------------------------|--------------------------------------------------|---------------------------------------------------------------------------------------|---------------------------------------------------------------------------|  
+|-----------------------------------|----------------------------|--------------------------------------------------| - |---------------------------------------------------------------------------|  
 |包含 [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] 和更新版本|是|是，如果 .NET Framework 3.5 已經安裝。|是|是|  
 |包含 [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)]|是|是，如果 .NET Framework 3.5 已經安裝。|否|否|  
 |包含 Office 2010 Service Pack 1 (SP1) 或更新版本|是|是，如果 .NET Framework 3.5 已經安裝。|是，如果 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 已經安裝。|否|  
@@ -58,16 +58,16 @@ ms.locfileid: "35671360"
   
  即使當您安裝 Office 時已存在 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 或更新版本，適用於 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 或更新版本的 Office 擴充功能也不會伴隨 Office 安裝。  
   
- 適用於 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 的 Office 擴充功能會隨 Office 一起安裝。 使用者可以藉由安裝 Windows 更新取得 [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] 的 Office 擴充功能。  
+ 適用於 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 的 Office 擴充功能會隨 Office 一起安裝。 終端使用者可以藉由安裝 Windows 更新取得 [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] 的 Office 擴充功能。  
   
- 若要確保您的使用者具有必要的擴充功能，使用您的應用程式，包括最新版的 Visual Studio 2010 Tools for Office runtime 可轉散發套件為您的解決方案的必要元件。 如需有關必要條件的詳細資訊，請參閱 < [Office 方案的部署必要條件](http://msdn.microsoft.com/9f672809-43a3-40a1-9057-397ce3b5126e)。  
+ 若要確保您的使用者具有必要的擴充功能，使用您的應用程式，包括最新版的 Visual Studio 2010 Tools for Office runtime 可轉散發套件為您的解決方案的必要元件。 如需有關必要條件的詳細資訊，請參閱 < [Office 方案的部署必要條件](https://msdn.microsoft.com/9f672809-43a3-40a1-9057-397ce3b5126e)。  
   
 ### <a name="install-the-runtime-by-using-the-runtime-redistributable"></a>安裝執行階段使用的執行階段可轉散發套件  
  以手動方式執行 Visual Studio 2010 Tools for Office runtime 可轉散發套件，或包含可轉散發套件的必要元件，當您部署 Office 方案時，您可以安裝執行階段。  
   
  當您安裝執行階段使用 Visual Studio 2010 Tools for Office runtime 可轉散發套件、.NET Framework 3.5 的 Office 擴充功能和 Office extensions for[!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]安裝或更新版本是如果對應的.NET 版本Framework 已存在於電腦上。 如果在安裝執行階段時電腦遺漏其中一種版本的 .NET Framework ，遺漏之 .NET Framework 版本的 Office 擴充功能不會在該時間安裝。 如果您稍後安裝遺漏的 .NET Framework 版本，則執行階段會在下一次安裝 (如果執行階段是隨使用 ClickOnce 部署的方案一起安裝) 或載入 (如果執行階段是隨使用 Windows Installer 部署的方案一起安裝) 需要此擴充功能的方案時自動安裝對應的 Office 擴充功能。  
   
- 如需有關必要條件納入 ClickOnce 方案的詳細資訊，請參閱 <<c0> [ 如何： 在執行 Office 方案的終端使用者電腦上安裝必要條件](http://msdn.microsoft.com/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98)。 如需如何手動安裝執行階段從可轉散發套件的詳細資訊，請參閱[如何： 安裝 Visual Studio Tools for Office runtime 可轉散發套件](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md)。  
+ 如需有關必要條件納入 ClickOnce 方案的詳細資訊，請參閱 <<c0> [ 如何： 在執行 Office 方案的終端使用者電腦上安裝必要條件](https://msdn.microsoft.com/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98)。 如需如何手動安裝執行階段從可轉散發套件的詳細資訊，請參閱[如何： 安裝 Visual Studio Tools for Office runtime 可轉散發套件](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md)。  
   
 ## <a name="see-also"></a>另請參閱  
  [Visual Studio Tools for Office runtime 概觀](../vsto/visual-studio-tools-for-office-runtime-overview.md)   

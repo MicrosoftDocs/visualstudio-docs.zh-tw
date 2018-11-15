@@ -9,12 +9,12 @@ description: 了解所選取 Visual Studio 訂用帳戶隨附的 DataCamp 訓練
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: f0a6fe16edf12616dd93b394b118f40651ffb0ec
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: cd0b92d8515e488d74cc124c888bb0e8ca9537e6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44282412"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49863903"
 ---
 # <a name="the-datacamp-training-benefit-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶中的 DataCamp 訓練課程權益
 
@@ -27,15 +27,15 @@ DataCamp 權益的持續時間取決於您的 Visual Studio 訂用帳戶。
 1. 登入 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)。
 
 2. 在 [Professional Development] (專業開發) 類別中，找到 DataCamp 權益磚，然後按一下 [啟用]。
-    > [!div class="mx-imgBorder"]
-    > ![DataCamp 權益磚](_img\vs-datacamp\vs-datacamp-tile-2.png)
+   > [!div class="mx-imgBorder"]
+   > ![DataCamp 權益磚](_img/vs-datacamp/vs-datacamp-tile-2.png)
 
 3. 在 DataCamp 頁面上，您可以建立新帳戶。  您可以選擇輸入電子郵件地址和密碼，或是使用現有的 Facebook、LinkedIn 或 Google 帳戶登入。  提供登入資訊之後，按一下 [Get Started] (開始)。
-    > [!div class="mx-imgBorder"]
-    > ![DataCamp 建立新帳戶](_img\vs-datacamp\vs-datacamp-create-account.png)
-
-    > [!NOTE]
-    > 當您開始建立帳戶時，可能會收到下列錯誤訊息：「糟糕！  您的促銷代碼無效或已到期。」  由於您的促銷代碼會在建立後的數分鐘到期，因此可能發生這個情況。  若您收到此訊息，只要回到[權益](https://my.visualstudio.com/benefits)頁面並按一下 DataCamp 權益磚上的 [啟用] 連結即可。
+   > [!div class="mx-imgBorder"]
+   > ![DataCamp 建立新帳戶](_img/vs-datacamp/vs-datacamp-create-account.png)
+   > 
+   > [!NOTE]
+   > 當您開始建立帳戶時，可能會收到下列錯誤訊息：「糟糕！  您的促銷代碼無效或已到期。」  由於您的促銷代碼會在建立後的數分鐘到期，因此可能發生這個情況。  若您收到此訊息，只要回到[權益](https://my.visualstudio.com/benefits)頁面並按一下 DataCamp 權益磚上的 [啟用] 連結即可。
 
 4. 建立帳戶之後，您可以選擇學習路徑。  這些選項包括：
     - Start learning R for Data Science (開始學習適用於資料科學的 R)
@@ -43,44 +43,46 @@ DataCamp 權益的持續時間取決於您的 Visual Studio 訂用帳戶。
     - Develop your Data Science Skillset (開發您的資料科學技能集)
 
 
-    只要按一下選擇的路徑即可開始。
-    > [!div class="mx-imgBorder"]
-    > ![DataCamp 選擇路徑](_img\vs-datacamp\vs-datacamp-choose-path.png)
+~~~
+Just click on your chosen path to get started.
+> [!div class="mx-imgBorder"]
+> ![DataCamp Choose Path](_img\vs-datacamp\vs-datacamp-choose-path.png)
+~~~
 
 5. 選取您的路徑之後，您可以藉由選取目標來進一步限定學習路徑。  例如，如果您選擇 [Develop your Data Science Skillset] (開發您的資料科學技能集) 路徑，您會看到下列選項。 選擇一個選項，或按一下 **[I am not sure.Show me all career paths] (我不確定，請顯示所有職涯路徑)** 以建立更廣泛的路徑。
-    > [!div class="mx-imgBorder"]
-    > ![DataCamp 資料科學技能集](_img\vs-datacamp\vs-datacamp-datascience.png)
+   > [!div class="mx-imgBorder"]
+   > ![DataCamp 資料科學技能集](_img/vs-datacamp/vs-datacamp-datascience.png)
 
 
 6. 根據您選取的路徑和選項，您會看到一系列職涯路徑。  針對您選擇的路徑，按一下 [Enroll] (註冊) 按鈕。
-    > [!div class="mx-imgBorder"]
-    > ![DataCamp 職涯路徑](_img\vs-datacamp\vs-datacamp-all-tracks.png)
+   > [!div class="mx-imgBorder"]
+   > ![DataCamp 職涯路徑](_img/vs-datacamp/vs-datacamp-all-tracks.png)
 
 7. 註冊路徑之後，該路徑的第一堂課程就會開啟。  您會看到說明如何與課程互動的教學課程，包括瀏覽和完成課程練習。
 
-    > [!div class="mx-imgBorder"]
-    > ![DataCamp 開始使用](_img\vs-datacamp\vs-datacamp-getting-started.png)
+   > [!div class="mx-imgBorder"]
+   > ![DataCamp 開始使用](_img/vs-datacamp/vs-datacamp-getting-started.png)
 
 您可以隨時停止，並在下一個工作階段繼續訓練。  只要前往 [http://www.datacamp.com](http://www.datacamp.com)，並登入。  您會看到儀表板，並可以直接從暫停的地方繼續訓練。 只要按一下 [Continue Track] (繼續路徑) 即可。
 
 > [!div class="mx-imgBorder"]   
-> ![DataCamp 繼續訓練](_img\vs-datacamp\vs-datacamp-continue-training.png)
+> ![DataCamp 繼續訓練](_img/vs-datacamp/vs-datacamp-continue-training.png)
 
 ## <a name="eligibility"></a>資格
 
 | 訂用帳戶層級                                                 |     通道                                            | 優勢                                                          | 可續約？    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (標準、年度雲端)   | VL, Azure, 零售, | 3 個月       |  否。  僅提供給新訂閱者使用          |
-| Visual Studio Professional (標準、年度雲端) | VL, Azure, 零售                                       | 3 個月                                                            |  否。  僅提供給新訂閱者使用           |
-| Visual Studio Test Professional (標準訂用帳戶)                         | VL, 零售                                              | 可用                                             |  否。  僅提供給新訂閱者使用           |
-| MSDN 平台 (標準)                                          | VL, 零售                                              | 可用                                              |  否。  僅提供給新訂閱者使用           |
+| Visual Studio Enterprise (標準、年度雲端)   | VL、Azure、零售、 | 3 個月       |  否。  僅提供給新訂閱者使用          |
+| Visual Studio Professional (標準、年度雲端) | VL、Azure、零售                                       | 3 個月                                                            |  否。  僅提供給新訂閱者使用           |
+| Visual Studio Test Professional (標準訂用帳戶)                         | VL、零售                                              | 可用                                             |  否。  僅提供給新訂閱者使用           |
+| MSDN 平台 (標準)                                          | VL、零售                                              | 可用                                              |  否。  僅提供給新訂閱者使用           |
 | Visual Studio Dev Essentials | N/A  | 2 個月 | 否。 僅提供給新訂閱者使用 |
 | Visual Studio Enterprise (標準、年度雲端)  | NFR<sup>1</sup> |無法使用  | N/A |
 | Visual Studio Enterprise、Visual Studio Professional (每月雲端) | Azure | 無法使用 | N/A |
 
 
 
-<sup>1</sup>  *包含：「禁止轉售 (NFR)」、FTE、Microsoft Valued Partner (MVP)、Region Director (RD)、Microsoft Partner Network (MPN)、Visual Studio Industry Partner (VSIP)、Microsoft Certified Trainer、BizSpark、Imagine*
+<sup>1</sup>  *包含：「禁止轉售 (NFR)」、FTE、Microsoft Valued Professional (MVP)、Region Director (RD)、Microsoft 合作夥伴網路 (MPN)、Visual Studio Industry Partner (VSIP)、Microsoft Certified Trainer、BizSpark、Imagine*
 
 
 

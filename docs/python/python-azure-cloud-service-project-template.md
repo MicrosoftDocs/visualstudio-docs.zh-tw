@@ -1,7 +1,7 @@
 ---
 title: 適用於 Python 的 Azure 雲端服務專案範本
 description: 使用 Python 所撰寫適用於 Azure 雲端服務的 Visual Studio 範本概觀，其中包括角色部署、相依性和疑難排解。
-ms.date: 06/26/2018
+ms.date: 11/12/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -12,12 +12,12 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: a9daea659f1a19919da31ea57946a7b287e6c040
-ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
+ms.openlocfilehash: 1bcb8123ace6f4671f2127ba80377ef88891bdc8
+ms.sourcegitcommit: 6a955a2d179cd0e137942389f940d9fcbbe125de
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39468321"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51607727"
 ---
 # <a name="azure-cloud-service-projects-for-python"></a>適用於 Python 的 Azure 雲端服務專案
 
@@ -25,7 +25,7 @@ Visual Studio 提供的範本有助您使用 Python 以開始建立 Azure 雲端
 
 [雲端服務](https://docs.microsoft.com/azure/cloud-services/)是由任意數目的「背景工作角色」和「Web 角色」所組成，它們會分別執行不同概念的工作，但可以視需求跨虛擬機器分別進行複寫來做出調整。 Web 角色提供前端 Web 應用程式的裝載。 就 Python 來說，任何支援 WSGI 的 Web 架構都可用來撰寫這類應用程式 (如 [Web 專案範本](python-web-application-project-templates.md)所支援)。 背景工作角色適用於長時間執行，且不會直接與使用者互動的程序。 它們通常會使用 "azure" 套件 (與 [`pip install azure`](http://pypi.org/project/azure) 一併安裝) 內的套件。
 
-本文章包含 Visual Studio 2017 中的專案範本和其他支援 (與舊版類似，但有一些差異) 的詳細資料。 如需搭配 Python 使用 Azure 的詳細資訊，請瀏覽 [Azure Python 開發人員中心](https://docs.microsoft.com/en-us/python/azure/?view=azure-python)。
+本文章包含 Visual Studio 2017 中的專案範本和其他支援 (與舊版類似，但有一些差異) 的詳細資料。 如需搭配 Python 使用 Azure 的詳細資訊，請瀏覽 [Azure Python 開發人員中心](https://docs.microsoft.com/python/azure/?view=azure-python)。
 
 ## <a name="create-a-project"></a>建立專案
 

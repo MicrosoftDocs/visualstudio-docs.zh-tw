@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_hasseh |Microsoft 文件'
+title: 'Idiasymbol:: Get_hasseh |Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dcc6cb799b5d218cec09095115a9046605780c65
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 94329d853be271653a82f184399453e06c4e9836
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31463048"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49935350"
 ---
 # <a name="idiasymbolgethasseh"></a>IDiaSymbol::get_hasSEH
-擷取指定函式是否包含任何的旗標[結構化例外狀況處理 （C/c + +）](/cpp/cpp/structured-exception-handling-c-cpp) (例如 __try /\__except 區塊)。  
+擷取指定的函式是否包含任何的旗標[Structured Exception Handling （C/c + +）](/cpp/cpp/structured-exception-handling-c-cpp) (例如 __try /\__except 區塊)。  
   
 ## <a name="syntax"></a>語法  
   
@@ -34,20 +34,20 @@ HRESULT get_hasSEH(
   
 #### <a name="parameters"></a>參數  
  `pFlag`  
- [out]傳回`TRUE`如果函式的任何結構化的例外處理區塊; 否則傳回`FALSE`。  
+ [out]會傳回`TRUE`函式有任何結構化的例外狀況處理區塊; 否則會傳回`FALSE`。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。  
+ 如果成功，則傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。  
   
 > [!NOTE]
->  傳回值為`S_FALSE`表示屬性不適用於符號。  
+>  傳回值為`S_FALSE`表示此屬性不適用於符號。  
   
 ## <a name="requirements"></a>需求  
   
 |需求|描述|  
 |-----------------|-----------------|  
 |標頭：|dia2.h|  
-|版本:|DIA SDK v8.0|  
+|版本:|DIA SDK 8.0 版|  
   
 ## <a name="see-also"></a>另請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   

@@ -17,12 +17,12 @@ ms.assetid: e3061665-ad3e-4c1b-b33f-82755fa21be3
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3c56d3af5fab3fe4ac9d9621dcbe089b810e09d4
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 73e6088557c8466b62b6673e5230428c24bec179
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49257136"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49923325"
 ---
 # <a name="idebugreference2getparent"></a>IDebugReference2::GetParent
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

@@ -17,12 +17,12 @@ ms.assetid: e5acfd19-ac17-47f3-a31a-b2aa8baca36d
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f4e8f16e1d5bf9dd6f8dd7582098f03e0040344a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d9dc74ade9a5c199f7fd94c9207957b405d2b1d6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49299377"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49817700"
 ---
 # <a name="idebugbreakpointerrorevent2geterrorbreakpoint"></a>IDebugBreakpointErrorEvent2::GetErrorBreakpoint
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

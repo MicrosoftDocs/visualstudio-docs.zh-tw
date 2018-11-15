@@ -1,7 +1,7 @@
 ---
 title: 適用於 Python 的 Web 應用程式範本
 description: 使用 Bottle、Flask 和 Django 架構以 Python 所撰寫 Web 應用程式 Visual Studio 範本的概觀，其中包括偵錯設定和發佈至 Azure App Service。
-ms.date: 07/03/2018
+ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 0db1d84c09c44cc39fe3fd614379c2381b915014
-ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
+ms.openlocfilehash: cbdf9b6890613cc4ad41af77e27f7f41c6f5c9da
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "47029023"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219844"
 ---
 # <a name="python-web-application-project-templates"></a>Python Web 應用程式專案範本
 
@@ -34,7 +34,7 @@ Visual Studio 中的 Python 支援透過專案範本以及偵錯啟動器 (其�
 
 先前提及的一般 [Web 專案] 範本只提供空白 Visual Studio 專案，而且除了作為 Python 專案之外，不會包含任何程式碼和假設。 如需 [Azure 雲端服務] 範本的詳細資料，請參閱[適用於 Python 的 Azure 雲端服務專案](python-azure-cloud-service-project-template.md)。
 
-所有其他的專案都是以 Bottle、Flask 或 Django Web 架構為基礎，且分為三個一般群組，如以下小節所述。 由這些範本之一所建立的應用程式，都會包含在本機對應用程式進行執行與偵錯的必要程式碼。 每一個範本也都會提供必要的 [WSGI 應用程式物件](http://www.python.org/dev/peps/pep-3333/) \(英文\) (python.org)，以[部署至 Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md)。
+所有其他的專案都是以 Bottle、Flask 或 Django Web 架構為基礎，且分為三個一般群組，如以下小節所述。 由這些範本之一所建立的應用程式，都會包含在本機對應用程式進行執行與偵錯的必要程式碼。 每一個範本也都會提供必要的 [WSGI 應用程式物件](http://www.python.org/dev/peps/pep-3333/) (python.org)，以便搭配生產網頁伺服器使用。
 
 ### <a name="blank-group"></a>空白群組
 

@@ -15,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 504ec33ef2cf6e0e691c00e3cf1cc013ece5ce81
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 67742078cefcd0608d1cff9a5bab609053544392
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42626161"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51296108"
 ---
 # <a name="walkthrough-create-a-silverlight-web-part-that-displays-odata-for-sharepoint"></a>逐步解說： 建立顯示 SharePoint 之 OData 的 Silverlight web 組件
   SharePoint 2010 會透過 OData 公開其清單資料。 在 SharePoint 中，OData 服務是 RESTful 服務 ListData.svc 所實作。 本逐步解說示範如何建立裝載 Silverlight 應用程式的 SharePoint web 組件。 Silverlight 應用程式會顯示使用 ListData.svc 公告 SharePoint 清單資訊。 如需詳細資訊，請參閱 < [SharePoint Foundation REST 介面](http://go.microsoft.com/fwlink/?LinkId=225999)並[開放式資料通訊協定](http://go.microsoft.com/fwlink/?LinkId=226000)。  
@@ -42,25 +42,25 @@ ms.locfileid: "42626161"
   
 #### <a name="to-create-a-silverlight-application-and-silverlight-web-part"></a>若要建立 Silverlight 應用程式和 Silverlight web 組件
   
-1.  在功能表列上選擇 [**檔案** > **新增** > **專案**顯示**新專案**] 對話方塊。  
+1. 在功能表列上選擇 [**檔案** > **新增** > **專案**顯示**新專案**] 對話方塊。  
   
-2.  依序展開**SharePoint**節點之下**Visual C#** 或**Visual Basic**，然後選擇**2010年**節點。  
+2. 依序展開**SharePoint**節點之下**Visual C#** 或**Visual Basic**，然後選擇**2010年**節點。  
   
-3.  在 [範本] 窗格中，選擇**SharePoint 2010 Silverlight Web 組件**範本。  
+3. 在 [範本] 窗格中，選擇**SharePoint 2010 Silverlight Web 組件**範本。  
   
-4.  在 [**名稱**方塊中，輸入**SLWebPartTest** ，然後選擇**確定**] 按鈕。  
+4. 在 [**名稱**方塊中，輸入**SLWebPartTest** ，然後選擇**確定**] 按鈕。  
   
-     **SharePoint 自訂精靈** 對話方塊隨即出現。  
+    **SharePoint 自訂精靈** 對話方塊隨即出現。  
   
-5.  在 **指定偵錯的網站和安全性層級**頁面上，輸入您要偵錯網站定義中，SharePoint 伺服器網站的 URL，或使用預設位置 (http://*系統名稱*/).  
+5. 在 **指定偵錯的網站和安全性層級**頁面上，輸入您要偵錯網站定義中，SharePoint 伺服器網站的 URL，或使用預設位置 (http://<em>系統名稱</em>/).  
   
-6.  在 **此 SharePoint 方案的信任層級為何？** 區段中，選擇**部署為伺服陣列方案**選項按鈕。  
+6. 在 **此 SharePoint 方案的信任層級為何？** 區段中，選擇**部署為伺服陣列方案**選項按鈕。  
   
-     雖然此範例會使用伺服器陣列方案，Silverlight web 組件專案可以部署為伺服陣列或沙箱化方案。 如需有關沙箱化方案與伺服器陣列方案的詳細資訊，請參閱 <<c0> [ 沙箱化方案考量](../sharepoint/sandboxed-solution-considerations.md)。  
+    雖然此範例會使用伺服器陣列方案，Silverlight web 組件專案可以部署為伺服陣列或沙箱化方案。 如需有關沙箱化方案與伺服器陣列方案的詳細資訊，請參閱 <<c0> [ 沙箱化方案考量](../sharepoint/sandboxed-solution-considerations.md)。  
   
-7.  在 **您要如何關聯 Silverlight Web 組件**一節**指定 Silverlight 組態資訊**頁面上，選擇**建立新的 Silverlight 專案和關聯 web 組件**選項按鈕。  
+7. 在 **您要如何關聯 Silverlight Web 組件**一節**指定 Silverlight 組態資訊**頁面上，選擇**建立新的 Silverlight 專案和關聯 web 組件**選項按鈕。  
   
-8.  變更**名稱**要**SLApplication**，將**語言**至**Visual Basic**或**Visual C#**，然後將**Silverlight 版本**要**Silverlight 4.0**。  
+8. 變更**名稱**要**SLApplication**，將**語言**至**Visual Basic**或**Visual C#**，然後將**Silverlight 版本**要**Silverlight 4.0**。  
   
 9. 選擇**完成** 按鈕。 專案會出現在**方案總管 中**。  
   
@@ -71,7 +71,7 @@ ms.locfileid: "42626161"
   
 #### <a name="to-customize-the-silverlight-application"></a>若要自訂 Silverlight 應用程式
   
-1.  在 Silverlight 應用程式中加入 System.Windows.Data 的組件參考。 如需詳細資訊，請參閱 <<c0> [ 如何： 加入或移除參考使用 Add Reference Dialog Box](http://msdn.microsoft.com/en-us/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)。  
+1.  在 Silverlight 應用程式中加入 System.Windows.Data 的組件參考。 如需詳細資訊，請參閱 <<c0> [ 如何： 加入或移除參考使用 Add Reference Dialog Box](https://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)。  
   
 2.  在 **方案總管 中**，開啟捷徑功能表**參考**，然後選擇 **加入服務參考**。  
   

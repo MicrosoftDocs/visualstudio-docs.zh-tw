@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 202ba0f384fb658efd45ec446b27a385c98c37d4
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 52260b2cd401f8cdbd3a94704ab29db2f64fdc6d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39511779"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49842231"
 ---
 # <a name="ui-text-and-help-for-visual-studio"></a>UI 文字與說明適用於 Visual Studio
 ##  <a name="BKMK_UITextAndTerminology"></a> UI 文字和術語  
@@ -279,7 +279,7 @@ ms.locfileid: "39511779"
   
 -   **UI 說明按鈕**（已過時）。 提供的存取權相關的 F1 說明主題的標題列中顯示的指示器。  
   
-### <a name="text"></a>Text  
+### <a name="text"></a>文字  
   
 #### <a name="instructional-and-supplemental-text-in-dialogs"></a>在對話方塊中的指示和補充文字  
  在支援複雜工作的對話，可能需要通常頂端或附近複雜的控制項的對話方塊提供 UI，內的說明文字。 請參閱[UI 文字和術語](../../extensibility/ux-guidelines/ui-text-and-help-for-visual-studio.md#BKMK_UITextAndTerminology)如需有關撰寫樣式。  
@@ -315,15 +315,15 @@ ms.locfileid: "39511779"
   
  此解決方案可讓您可能會導致 bug 的四個假設：  
   
--   對話方塊的 [說明] 按鈕**IDHELP** (9)。  
+- 對話方塊的 [說明] 按鈕**IDHELP** (9)。  
   
--   隱藏 [說明] 按鈕時，對話方塊看起來正確無誤。  
+- 隱藏 [說明] 按鈕時，對話方塊看起來正確無誤。  
   
--   對話方塊不會取代其 winproc。  
+- 對話方塊不會取代其 winproc。  
   
--   對話方塊不會內嵌在另一個對話方塊中。  
+- 對話方塊不會內嵌在另一個對話方塊中。  
   
- 如果您的對話方塊內 msenv，但未使用**VBDialogBoxParam**，調查運用**VBDialogBoxParam**實作您自己的處理常式之前。  
+  如果您的對話方塊內 msenv，但未使用**VBDialogBoxParam**，調查運用**VBDialogBoxParam**實作您自己的處理常式之前。  
   
 ##### <a name="dialogs-created-through-other-packages"></a>透過其他封裝所建立的對話方塊  
  您可以實作自己的解決方案了外部 msenv 的對話方塊。 在 VSPackage 中共用的對話方塊類別，請考慮將按鈕移至標題列，或實作在每個對話方塊上的處理常式。 下列程式碼是一個實作來幫助您入門的基本架構：  

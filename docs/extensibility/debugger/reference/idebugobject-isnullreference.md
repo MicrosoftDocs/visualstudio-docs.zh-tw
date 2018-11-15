@@ -1,5 +1,5 @@
 ---
-title: IDebugObject::IsNullReference |Microsoft 文件
+title: IDebugObject::IsNullReference |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1a886bf56cfafc615099aa489f9d329229ea8727
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d6b5108d9fd830c047c020d4b3adab2526854e6c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31113704"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49939692"
 ---
 # <a name="idebugobjectisnullreference"></a>IDebugObject::IsNullReference
-測試此物件是否為 null 參考。  
+測試這個物件是否為 null 參考。  
   
 ## <a name="syntax"></a>語法  
   
@@ -41,13 +41,13 @@ int IsNullReference(
   
 #### <a name="parameters"></a>參數  
  `pfIsNull`  
- [out]傳回非零 (`TRUE`) 如果此物件為 null 的參考; 否則傳回零 (`FALSE`)。  
+ [out]會傳回非零 (`TRUE`) 如果此物件為 null 的參考; 否則會傳回零 (`FALSE`)。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，會傳回 S_OK;反之則傳回錯誤碼。  
+ 如果成功，會傳回 S_OK;否則，傳回錯誤碼。  
   
 ## <a name="remarks"></a>備註  
- Null 參考表示空的物件或尚未指派給物件。  
+ Null 的參考表示空的物件或尚未指派給物件。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)

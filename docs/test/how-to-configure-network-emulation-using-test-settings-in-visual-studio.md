@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 2ce10d096ff646b462c7b0aff2cbcf33493aad0c
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: ce49eb2e6892528d95e40bc1c40e36f355495c65
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44320653"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49829283"
 ---
 # <a name="how-to-configure-network-emulation-using-test-settings-in-visual-studio"></a>如何：在 Visual Studio 中使用測試設定來設定網路模擬
 
@@ -38,21 +38,21 @@ ms.locfileid: "44320653"
 
  Visual Studio 會針對所有測試類型使用軟體實際網路模擬。 其中包括負載測試。 實際網路模擬會藉由直接操作網路封包，來模擬網路狀況。 實際網路模擬器可以使用可靠的實體連結 (如乙太網路)，來同時模擬有線和無線網路。 下列網路屬性會納入實際網路模擬中：
 
--   網路的來回時間 (延遲)
+- 網路的來回時間 (延遲)
 
--   可用的頻寬量
+- 可用的頻寬量
 
--   佇列行為
+- 佇列行為
 
--   封包遺失
+- 封包遺失
 
--   封包重新排序
+- 封包重新排序
 
--   錯誤傳用
+- 錯誤傳用
 
- 實際網路模擬在根據 IP 位址或 TCP、UDP 和 ICMP 之類通訊協定來篩選網路封包上，也提供了相當的彈性。
+  實際網路模擬在根據 IP 位址或 TCP、UDP 和 ICMP 之類通訊協定來篩選網路封包上，也提供了相當的彈性。
 
- 網路架構開發人員和測試人員可以使用實際網路模擬，來模擬所要的測試環境、評定效能、預測變更的影響或者做出有關技術最佳化的決策。 與硬體測試平台相較之下，實際網路模擬是成本更低但彈性更高的一種解決方案。
+  網路架構開發人員和測試人員可以使用實際網路模擬，來模擬所要的測試環境、評定效能、預測變更的影響或者做出有關技術最佳化的決策。 與硬體測試平台相較之下，實際網路模擬是成本更低但彈性更高的一種解決方案。
 
 ## <a name="configure-network-emulation-for-your-test-settings"></a>設定測試設定的網路模擬
  執行這個程序中的步驟之前，您必須先從 Visual Studio 開啟測試設定，然後選取 [資料和診斷] 頁面。

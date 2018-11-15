@@ -17,12 +17,12 @@ ms.assetid: 627af69c-5cce-4e1d-8233-5f4d8dbc62e5
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 82b71ed6ca6efa3c216299e53107fef97c820d94
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2318d60dcfbce3951ded58bace27259e0407252d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49207749"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49829270"
 ---
 # <a name="idebugdocumentcontext2enumcodecontexts"></a>IDebugDocumentContext2::EnumCodeContexts
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

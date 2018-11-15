@@ -1,7 +1,7 @@
 ---
 title: Azure SDK for Python
 description: 適用於 Python 的 Azure SDK 可讓您更輕鬆地從在任何平台上執行的 Python 應用程式取用 Microsoft Azure 服務。
-ms.date: 06/26/2018
+ms.date: 10/10/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -12,16 +12,16 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 6c7f38dbe58c5172c8480c88ae84c6e28f5d512b
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 9f1eb52e87cf9a411cf453c90f35ebc192616e8c
+ms.sourcegitcommit: 12d6398c02e818de4fbcb4371bae9e5db6cf9509
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45545550"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50050218"
 ---
 # <a name="azure-sdk-for-python"></a>Azure SDK for Python
 
-Azure SDK for Python 可讓您更輕鬆地從 Windows、Mac OSX 和 Linux 上執行的應用程式使用及管理 Microsoft Azure 服務。
+Azure SDK for Python 可讓您更輕鬆地從 Windows、MacOS 和 Linux 上所執行的應用程式使用及管理 Microsoft Azure 服務。
 
 ## <a name="installation"></a>安裝
 
@@ -37,13 +37,11 @@ pip install azure
 
 ## <a name="documentation"></a>文件
 
-您可以在 [azure-sdk-for-python.readthedocs.org (英文)](https://docs.microsoft.com/en-us/python/azure/?view=azure-python) 找到文件。
+[適用於 Python 的 Azure SDK 開發人員中心](https://docs.microsoft.com/python/azure/?view=azure-python)也有一些實用的資源，其中包括數個教學課程：
 
-[適用於 Python 的 Azure SDK 開發人員中心](https://azure.microsoft.com/develop/python/)也有一些實用的資源，其中包括數個教學課程：
-
-- 使用 [Django](/azure/app-service-web/web-sites-python-create-deploy-django-app)、[Flask](/azure/app-service-web/web-sites-python-create-deploy-flask-app) 和 [Bottle](/azure/app-service-web/web-sites-python-create-deploy-bottle-app) 建立 Web 應用程式。
-- [Blob 儲存體](/azure/storage/storage-python-how-to-use-blob-storage)
-- [表格儲存體](/azure/storage/storage-python-how-to-use-table-storage)
+- [在 Linux 的 Azuyre App Service 上建立 Web 應用程式](/azure/app-service/containers/quickstart-python)。
+- [Blob 儲存體](/azure/storage/blobs/storage-quickstart-blobs-python)
+- [表格儲存體](/azure/cosmos-db/table-storage-how-to-use-python)
 - [佇列儲存體](/azure/storage/storage-python-how-to-use-queue-storage)
 - [Azure Cosmos DB](/azure/cosmos-db/sql-api-python-application)
 - [服務匯流排佇列](/azure/service-bus-messaging/service-bus-python-how-to-use-queues)
@@ -58,6 +56,6 @@ pip install azure
 
 ## <a name="support"></a>支援
 
-SDK 的 Git 存放庫位於 [https://github.com/Azure/azure-sdk-for-python](https://github.com/Azure/azure-sdk-for-python)。
+SDK 的 GitHub 存放庫位於 [https://github.com/Azure/azure-sdk-for-python](https://github.com/Azure/azure-sdk-for-python)。
 
 如果您發現任何問題，或對 SDK 的使用方式有任何疑問，請[在存放庫中提出問題](https://github.com/Azure/azure-sdk-for-python/issues)。

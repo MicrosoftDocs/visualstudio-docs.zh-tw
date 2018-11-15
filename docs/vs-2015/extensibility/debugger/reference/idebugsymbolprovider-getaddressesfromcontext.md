@@ -17,12 +17,12 @@ ms.assetid: a3124883-a255-4543-a5ec-e1c7a97beb69
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 51b9259473d186879e6d9961fdedc15b8f22b110
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 82b00b17bb6de90df9544d2f2ccb3d04bcb012d2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49294277"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49839709"
 ---
 # <a name="idebugsymbolprovidergetaddressesfromcontext"></a>IDebugSymbolProvider::GetAddressesFromContext
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

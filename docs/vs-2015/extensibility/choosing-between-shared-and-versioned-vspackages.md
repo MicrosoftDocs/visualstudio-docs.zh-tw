@@ -17,12 +17,12 @@ ms.assetid: e3128ac3-2e92-48e9-87ab-3b6c9d80e8c9
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d642c265104f490739613897e1fd5c177ac0d6f9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 75bc095ba4e9fc12033787b64dd516459e574b26
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49263688"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49859927"
 ---
 # <a name="choosing-between-shared-and-versioned-vspackages"></a>在共用和建立版本的 VSPackage 之間進行選擇
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,15 +58,15 @@ ms.locfileid: "49263688"
 ## <a name="binary-compatibility"></a>二進位碼相容性  
  一般而言，二進位碼相容性可讓原生程式碼使用舊版的 Visual Studio 執行更新版本的 Visual Studio 中開發的 Vspackage。 不過，有三個重要的例外狀況：  
   
--   如果 VSPackage 依賴特定版本的 common language runtime，則必須判斷哪一個版本的[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]它正在執行。  
+- 如果 VSPackage 依賴特定版本的 common language runtime，則必須判斷哪一個版本的[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]它正在執行。  
   
--   VSPackage 可能會有另一個 VSPackage 或其他產品的特定功能的相依性。 因此，VSPackage 可以僅在滿足相依性，才執行。  
+- VSPackage 可能會有另一個 VSPackage 或其他產品的特定功能的相依性。 因此，VSPackage 可以僅在滿足相依性，才執行。  
   
--   VSPackage 可能會受到在安全性修正[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]service pack 或更新版本的[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。 以較早版本的在這些情況下，開發 VSPackage[!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)]版本中可能無法執行[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]套用的安全性修正方法之後。 不過，您可以重建您的套件與較新版本，並將它也在較早版本中執行。  
+- VSPackage 可能會受到在安全性修正[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]service pack 或更新版本的[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。 以較早版本的在這些情況下，開發 VSPackage[!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)]版本中可能無法執行[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]套用的安全性修正方法之後。 不過，您可以重建您的套件與較新版本，並將它也在較早版本中執行。  
   
- Managed 的 Vspackage 必須使用的版本來建置[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]而[!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)]符合的目標版本[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。  
+  Managed 的 Vspackage 必須使用的版本來建置[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]而[!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)]符合的目標版本[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。  
   
- 除了規劃您的 VSPackage 二進位檔二進位碼相容性，您也應該考慮的方案和專案檔案格式。 如果 VSPackage 建立新的專案類型，您必須決定是否可以執行在只有一個版本，或在多個版本的[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。 如需詳細資訊，請參閱 <<c0> [ 升級自訂專案](../misc/upgrading-custom-projects.md)。  
+  除了規劃您的 VSPackage 二進位檔二進位碼相容性，您也應該考慮的方案和專案檔案格式。 如果 VSPackage 建立新的專案類型，您必須決定是否可以執行在只有一個版本，或在多個版本的[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。 如需詳細資訊，請參閱 <<c0> [ 升級自訂專案](../misc/upgrading-custom-projects.md)。  
   
 ## <a name="see-also"></a>另請參閱  
  [使用 Windows Installer 安裝 Vspackage](../extensibility/internals/installing-vspackages-with-windows-installer.md)   

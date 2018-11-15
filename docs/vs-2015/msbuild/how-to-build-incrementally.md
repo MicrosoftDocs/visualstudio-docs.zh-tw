@@ -18,12 +18,12 @@ caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8fba24434b10a9606c800c1453d31d7d3b52b234
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 88ad4f984af2be6884005c5ec3c7dec4d7b5c6aa
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49275050"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49844607"
 ---
 # <a name="how-to-build-incrementally"></a>如何：累加建置
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,15 +36,15 @@ ms.locfileid: "49275050"
   
 #### <a name="to-specify-inputs-and-outputs-for-a-target"></a>指定目標的輸入和輸出  
   
--   使用 `Target` 項目的 `Inputs` 和 `Outputs` 屬性。 例如:   
+- 使用 `Target` 項目的 `Inputs` 和 `Outputs` 屬性。 例如:   
   
-    ```  
-    <Target Name="Build"  
-        Inputs="@(CSFile)"  
-        Outputs="hello.exe">  
-    ```  
+  ```  
+  <Target Name="Build"  
+      Inputs="@(CSFile)"  
+      Outputs="hello.exe">  
+  ```  
   
- [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 可以比較輸入檔案的時間戳記與輸出檔案的時間戳記，然後判斷是要跳過、建置還是部分重建目標。 在下列範例中，如果 `@(CSFile)` 項目清單中的任何檔案比 hello.exe 檔案新，[!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 將執行目標，否則將會略過︰  
+  [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 可以比較輸入檔案的時間戳記與輸出檔案的時間戳記，然後判斷是要跳過、建置還是部分重建目標。 在下列範例中，如果 `@(CSFile)` 項目清單中的任何檔案比 hello.exe 檔案新，[!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 將執行目標，否則將會略過︰  
   
 ```  
 <Target Name="Build"   
@@ -67,13 +67,13 @@ ms.locfileid: "49275050"
 ## <a name="example"></a>範例  
  下列範例使用為假定說明系統建置說明檔的專案。 專案的運作方式是將來源的 .txt 檔案轉換成中繼 .content 檔案，然後與 XML 中繼資料檔案結合以產生說明系統所使用的最終 .help 檔案。 專案會使用下列假定的工作︰  
   
--   `GenerateContentFiles`︰將 .txt 檔案轉換為 content 檔案。  
+- `GenerateContentFiles`︰將 .txt 檔案轉換為 content 檔案。  
   
--   `BuildHelp`︰結合 .content 檔案和 XML 中繼資料檔案，建置最終的 .help 檔案。  
+- `BuildHelp`︰結合 .content 檔案和 XML 中繼資料檔案，建置最終的 .help 檔案。  
   
- 專案會使用轉換來為 `GenerateContentFiles` 工作建立輸入與輸出之間的一對一對應。 如需詳細資訊，請參閱[轉換](../msbuild/msbuild-transforms.md)。 此外，`Output` 項目設定為自動使用來自 `GenerateContentFiles` 工作的輸出，作為 `BuildHelp` 工作的輸入。  
+  專案會使用轉換來為 `GenerateContentFiles` 工作建立輸入與輸出之間的一對一對應。 如需詳細資訊，請參閱[轉換](../msbuild/msbuild-transforms.md)。 此外，`Output` 項目設定為自動使用來自 `GenerateContentFiles` 工作的輸出，作為 `BuildHelp` 工作的輸入。  
   
- 這個專案檔同時包含 `Convert` 和 `Build` 目標。 `GenerateContentFiles` 和 `BuildHelp` 工作分別放在 `Convert` 和 `Build`目標，以便能以累加方式建置每個目標。 藉由使用 `Output` 項目，`GenerateContentFiles` 工作的輸出會放在 `ContentFile` 項目清單，在這裡它們可以作為 `BuildHelp` 工作的輸入。 這樣使用 `Output` 項目，會自動提供一個工作的輸出作為另一個工作的輸入，您便不需要以手動方式在每個工作列出個別項目或項目清單。  
+  這個專案檔同時包含 `Convert` 和 `Build` 目標。 `GenerateContentFiles` 和 `BuildHelp` 工作分別放在 `Convert` 和 `Build`目標，以便能以累加方式建置每個目標。 藉由使用 `Output` 項目，`GenerateContentFiles` 工作的輸出會放在 `ContentFile` 項目清單，在這裡它們可以作為 `BuildHelp` 工作的輸入。 這樣使用 `Output` 項目，會自動提供一個工作的輸出作為另一個工作的輸入，您便不需要以手動方式在每個工作列出個別項目或項目清單。  
   
 > [!NOTE]
 >  雖然 `GenerateContentFiles` 目標可以以累加方式建置，該目標的所有輸出永遠必須作為 `BuildHelp` 目標的輸入。 當您使用 `Output` 項目時，[!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 會自動提供一個目標的所有輸出，作為另一個目標的輸入。  

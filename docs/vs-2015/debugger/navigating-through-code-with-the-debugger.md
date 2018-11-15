@@ -26,12 +26,12 @@ caps.latest.revision: 47
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d91d99b6eaa33f3aae84ecd3510bf08fe194f101
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f37674f1899ab710d4612eb2b9cd89764ce74634
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49186156"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49898144"
 ---
 # <a name="navigating-through-code-with-the-debugger"></a>使用偵錯工具巡覽程式碼
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,25 +63,25 @@ ms.locfileid: "49186156"
   
  以下是一些詳細的行為**逐步執行**:  
   
--   [ **逐步執行** ] 會在巢狀函式呼叫中逐步執行最深的巢狀函式。 如果您在類似 **的呼叫中使用 [逐步執行]**`Func1(Func2())`，偵錯工具就會逐步執行函式 `Func2`。  
+- [ **逐步執行** ] 會在巢狀函式呼叫中逐步執行最深的巢狀函式。 如果您在類似 **的呼叫中使用 [逐步執行]**`Func1(Func2())`，偵錯工具就會逐步執行函式 `Func2`。  
   
--   偵錯工具實際上逐步執行程式碼陳述式，而不是實際程式碼行。 例如 `if` 子句可撰寫在一行上：  
+- 偵錯工具實際上逐步執行程式碼陳述式，而不是實際程式碼行。 例如 `if` 子句可撰寫在一行上：  
   
-    ```csharp  
-    int x = 42;  
-    string s = "Not answered";  
-    if( int x == 42) s = "Answered!";  
-    ```  
+  ```csharp  
+  int x = 42;  
+  string s = "Not answered";  
+  if( int x == 42) s = "Answered!";  
+  ```  
   
-    ```vb  
-    Dim x As Integer = 42  
-    Dim s As String = "Not answered"  
-    If x = 42 Then s = "Answered!"  
-    ```  
+  ```vb  
+  Dim x As Integer = 42  
+  Dim s As String = "Not answered"  
+  If x = 42 Then s = "Answered!"  
+  ```  
   
-     當您逐步執行至這一行時，偵錯工具會將條件視為一個步驟並將結果視為另一個步驟 (在此範例中，條件是 true)。  
+   當您逐步執行至這一行時，偵錯工具會將條件視為一個步驟並將結果視為另一個步驟 (在此範例中，條件是 true)。  
   
- 若要以視覺方式追蹤呼叫堆疊時逐步執行函式，請參閱[偵錯時對應呼叫堆疊上的方法](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)。  
+  若要以視覺方式追蹤呼叫堆疊時逐步執行函式，請參閱[偵錯時對應呼叫堆疊上的方法](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)。  
   
 ##  <a name="BKMK_Step_over_Step_out"></a> 逐步執行程式碼，略過函式  
  當執行程式碼偵錯工具時，通常您會發現，您不需要觀察特定的函式 (您不在意它，或是您知道它的運作方式，例如通過完善測試的程式庫程式碼)。 使用下列命令來執行程式碼略過 （函式仍在執行，當然，但偵錯工具會略過它們）。  
@@ -146,20 +146,20 @@ ms.locfileid: "49186156"
   
 > [!CAUTION]
 >  設定下一個陳述式會導致程式計數器直接跳至新的位置。 使用這個命令時請務必要注意：  
->   
->  -   不會執行舊與新執行點之間的指令  
-> -   如果將執行點向後移，並不會復原中間的指令  
-> -   將下一個陳述式移至其他函式或範圍通常會造成呼叫堆疊損毀，導致執行階段錯誤或例外狀況。 如果嘗試將下一個陳述式移至其他範圍，偵錯工具會開啟警告對話方塊，讓您有機會取消作業。 在 Visual Basic，您無法將下一個陳述式移至其他範圍或函式  
-> -   在原生 C++ 中，如果啟用執行階段檢查，設定下一個陳述式會導致在執行到方法結尾時擲回例外狀況  
-> -   啟用 [編輯後繼續] 時，如果您進行了 [編輯後繼續] 無法立即重新對應的編輯作業，[ **設定下一個陳述式** ] 就會失敗。 舉例來說，如果您編輯了 catch 區塊內的程式碼，就會發生這種情況。 當發生這種情況時，您將會看到一則錯誤訊息，說明不支援此作業。  
-  
+> 
+> - 不會執行舊與新執行點之間的指令  
+>   -   如果將執行點向後移，並不會復原中間的指令  
+>   -   將下一個陳述式移至其他函式或範圍通常會造成呼叫堆疊損毀，導致執行階段錯誤或例外狀況。 如果嘗試將下一個陳述式移至其他範圍，偵錯工具會開啟警告對話方塊，讓您有機會取消作業。 在 Visual Basic，您無法將下一個陳述式移至其他範圍或函式  
+>   -   在原生 C++ 中，如果啟用執行階段檢查，設定下一個陳述式會導致在執行到方法結尾時擲回例外狀況  
+>   -   啟用 [編輯後繼續] 時，如果您進行了 [編輯後繼續] 無法立即重新對應的編輯作業，[ **設定下一個陳述式** ] 就會失敗。 舉例來說，如果您編輯了 catch 區塊內的程式碼，就會發生這種情況。 當發生這種情況時，您將會看到一則錯誤訊息，說明不支援此作業。  
+> 
 > [!NOTE]
 >  在 Managed 程式碼中，您無法在下列情況中移動下一個陳述式：  
->   
->  -   下一個陳述式是在與目前陳述式不同的方法中  
-> -   使用 Just-In-Time 偵錯啟動偵錯。  
-> -   呼叫堆疊回溯進行中  
-> -   擲回 System.StackOverflowException 或 System.Threading.ThreadAbortException 例外狀況  
+> 
+> - 下一個陳述式是在與目前陳述式不同的方法中  
+>   -   使用 Just-In-Time 偵錯啟動偵錯。  
+>   -   呼叫堆疊回溯進行中  
+>   -   擲回 System.StackOverflowException 或 System.Threading.ThreadAbortException 例外狀況  
   
  應用程式正在執行時，不能設定下一個陳述式。 若要設定下一個陳述式，偵錯工具必須處於中斷模式下。  
   

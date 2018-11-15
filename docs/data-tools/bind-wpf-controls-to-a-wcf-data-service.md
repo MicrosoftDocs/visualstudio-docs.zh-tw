@@ -17,12 +17,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: b3cd83a16ff3d497bd9e6a46f3a66a3d99506a1f
-ms.sourcegitcommit: 3a11feebad45a0dd4ac45efcbfdf172fce46e1de
+ms.openlocfilehash: 0f18aaff185e6591d43f10c979c00b654d5608a6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39582391"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949379"
 ---
 # <a name="bind-wpf-controls-to-a-wcf-data-service"></a>將 WPF 控制項繫結至 WCF 資料服務
 
@@ -52,13 +52,13 @@ ms.locfileid: "39582391"
 
 預先了解下列概念也有助於完成此逐步解說 (但非必要)：
 
--   WCF 資料服務。 如需詳細資訊，請參閱 <<c0> [ 概觀](/dotnet/framework/data/wcf/wcf-data-services-overview)。
+- WCF 資料服務。 如需詳細資訊，請參閱 <<c0> [ 概觀](/dotnet/framework/data/wcf/wcf-data-services-overview)。
 
--   [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)]中的資料模型。
+- [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)]中的資料模型。
 
--   實體資料模型及 ADO.NET Entity Framework。 如需詳細資訊，請參閱 < [Entity Framework 概觀](/dotnet/framework/data/adonet/ef/overview)。
+- 實體資料模型及 ADO.NET Entity Framework。 如需詳細資訊，請參閱 < [Entity Framework 概觀](/dotnet/framework/data/adonet/ef/overview)。
 
--   WPF 資料繫結。 如需詳細資訊，請參閱 <<c0> [ 資料繫結概觀](/dotnet/framework/wpf/data/data-binding-overview)。
+- WPF 資料繫結。 如需詳細資訊，請參閱 <<c0> [ 資料繫結概觀](/dotnet/framework/wpf/data/data-binding-overview)。
 
 ## <a name="create-the-service-project"></a>建立服務專案
 
@@ -171,23 +171,23 @@ WCF 資料服務中建立專案，以開始此逐步解說：
 
 透過在 WPF 設計工具中修改 XAML，將數個按鈕加入至視窗。 在此逐步解說的稍後內容中，您會加入程式碼，讓使用者使用這些按鈕檢視及更新銷售記錄。
 
-1.  在 **方案總管**，按兩下**MainWindow.xaml**。
+1. 在 **方案總管**，按兩下**MainWindow.xaml**。
 
-     隨即會在 WPF 設計工具中開啟視窗。
+    隨即會在 WPF 設計工具中開啟視窗。
 
-2.  在設計工具的 [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] 檢視中，在 `<Grid>` 標記之間加入下列程式碼：
+2. 在設計工具的 [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] 檢視中，在 `<Grid>` 標記之間加入下列程式碼：
 
-    ```xaml
-    <Grid.RowDefinitions>
-        <RowDefinition Height="75" />
-        <RowDefinition Height="525" />
-    </Grid.RowDefinitions>
-    <Button HorizontalAlignment="Left" Margin="22,20,0,24" Name="backButton" Width="75"><</Button>
-    <Button HorizontalAlignment="Left" Margin="116,20,0,24" Name="nextButton" Width="75">></Button>
-    <Button HorizontalAlignment="Right" Margin="0,21,46,24" Name="saveButton" Width="110">Save changes</Button>
-    ```
+   ```xaml
+   <Grid.RowDefinitions>
+       <RowDefinition Height="75" />
+       <RowDefinition Height="525" />
+   </Grid.RowDefinitions>
+   <Button HorizontalAlignment="Left" Margin="22,20,0,24" Name="backButton" Width="75"><</Button>
+   <Button HorizontalAlignment="Left" Margin="116,20,0,24" Name="nextButton" Width="75">></Button>
+   <Button HorizontalAlignment="Right" Margin="0,21,46,24" Name="saveButton" Width="110">Save changes</Button>
+   ```
 
-3.  建置專案。
+3. 建置專案。
 
 ## <a name="create-the-data-bound-controls"></a>建立資料繫結控制項
 

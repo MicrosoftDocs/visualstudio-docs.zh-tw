@@ -18,12 +18,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: f46da0c36dfdf73fc550d57e733637ec7ab1e3fb
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8dcc182664832775f2aa3878fb3320e01d3901dd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49227907"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49840099"
 ---
 # <a name="how-to-customize-the-code-analysis-dictionary"></a>如何：自訂程式碼分析字典
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -67,17 +67,17 @@ ms.locfileid: "49227907"
 ## <a name="custom-dictionary-elements"></a>自訂字典的項目  
  您可以修改程式碼分析字典的行為將詞彙新增為自訂字典中的下列元素的內部文字：  
   
--   [字典/文字/辨識/Word](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsRecognizedWord)  
+- [字典/文字/辨識/Word](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsRecognizedWord)  
   
--   [字典/文字/無法辨識的/Word](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsUnrecognizedWord)  
+- [字典/文字/無法辨識的/Word](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsUnrecognizedWord)  
   
--   [字典/文字/取代/詞彙 [@PreferredAlternate]](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsDeprecatedTermPreferredAlternate)  
+- [字典/文字/取代/詞彙 [@PreferredAlternate]](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsDeprecatedTermPreferredAlternate)  
   
--   [字典/文字/複合/詞彙 [@CompoundAlternate]](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsCompoundTermCompoundAlternate)  
+- [字典/文字/複合/詞彙 [@CompoundAlternate]](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsCompoundTermCompoundAlternate)  
   
--   [字典/文字/DiscreteExceptions/詞彙](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsDiscreteExceptionsTerm)  
+- [字典/文字/DiscreteExceptions/詞彙](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsDiscreteExceptionsTerm)  
   
--   [字典/首字母縮略字/CasingExceptions/縮寫](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryAcronymsCasingExceptionsAcronym)  
+- [字典/首字母縮略字/CasingExceptions/縮寫](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryAcronymsCasingExceptionsAcronym)  
   
 ###  <a name="BKMK_DictionaryWordsRecognizedWord"></a> 字典/文字/辨識/Word  
  若要併入的程式碼分析識別正確拼寫的詞彙之清單中的詞彙，請新增一詞做為字典/文字/Recognized/文字項目的內部文字。 字典/文字/Recognized/文字項目中的詞彙不區分大小寫。  
@@ -154,11 +154,11 @@ ms.locfileid: "49227907"
   
  若要包含建議的替代詞彙警告中，替代 PreferredAlternate 在屬性中指定的詞彙項目。 如果您不想建議替代，您可以將屬性值保留空白。  
   
--   已被取代的詞彙中的字典/字/已過時/詞彙項目不區分大小寫。  
+- 已被取代的詞彙中的字典/字/已過時/詞彙項目不區分大小寫。  
   
--   PreferredAlternate 屬性值會區分大小寫。 複合的替代項目，請使用 Pascal 大小寫。  
+- PreferredAlternate 屬性值會區分大小寫。 複合的替代項目，請使用 Pascal 大小寫。  
   
- **範例**  
+  **範例**  
   
 ```  
 <Dictionary>  
@@ -189,11 +189,11 @@ ms.locfileid: "49227907"
 ###  <a name="BKMK_DictionaryWordsCompoundTermCompoundAlternate"></a> 字典/文字/複合/詞彙 [@CompoundAlternate]  
  內建的字典中識別為單一、 離散的詞彙，而不是複合詞彙的一些術語。 若要納入的複合字識別的程式碼分析的詞彙之清單中的詞彙，並指定正確的大小寫的詞彙，加入詞彙做為字典/文字/複合/詞彙項目的內部文字。 中的詞彙項目 CompoundAlternate 屬性，指定單字的大寫單字 （依照 pascal 命名法大小寫） 的第一個字母組成的複合詞彙。 請注意，內部文字中指定的詞彙會自動新增至字典/文字/DiscreteExceptions 清單。  
   
--   已被取代的詞彙中的字典/字/已過時/詞彙項目不區分大小寫。  
+- 已被取代的詞彙中的字典/字/已過時/詞彙項目不區分大小寫。  
   
--   PreferredAlternate 屬性值會區分大小寫。 複合的替代項目，請使用 Pascal 大小寫。  
+- PreferredAlternate 屬性值會區分大小寫。 複合的替代項目，請使用 Pascal 大小寫。  
   
- **範例**  
+  **範例**  
   
 ```  
 <Dictionary>  

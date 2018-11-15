@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: d8f6928dd09b971e2c5924d34058a1a0d5e28394
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3ab871d07a8519fa6850ad3d1743a7cd1d0fa110
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31947387"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50672481"
 ---
 # <a name="options-text-editor-c-intellisense"></a>IntelliSense、C#、文字編輯器、選項
 
@@ -46,9 +46,7 @@ ms.locfileid: "31947387"
 
 - 顯示完成項目篩選
 
-- 顯示名稱建議
-
-### <a name="snippets-behavior"></a>程式碼片段行為
+## <a name="snippets-behavior"></a>程式碼片段行為
 
 - 一律不包含程式碼片段
 
@@ -62,7 +60,7 @@ ms.locfileid: "31947387"
 
    選取這個選項時，在識別碼之後按下 **?**+**Tab**，IntelliSense 會將 C# 程式碼片段的別名新增至完成清單
 
-### <a name="enter-key-behavior"></a>ENTER 鍵行為
+## <a name="enter-key-behavior"></a>ENTER 鍵行為
 
 - 一律不在按下 ENTER 鍵時加入新行
 
@@ -85,6 +83,10 @@ ms.locfileid: "31947387"
 - 一律在按下 ENTER 鍵時加入新行
 
    指定如果您對完成清單中的項目輸入「任何字元」，然後按 **ENTER**，則會自動新增新的一行，並將游標移到這個新行。
+
+## <a name="show-name-suggestions"></a>顯示名稱建議
+
+   針對您最近選取的成員執行自動物件名稱完成。 
 
 ## <a name="see-also"></a>另請參閱
 

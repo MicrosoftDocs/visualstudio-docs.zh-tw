@@ -1,5 +1,5 @@
 ---
-title: SccRemove 函式 |Microsoft 文件
+title: SccRemove 函式 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 71a79ac1b61b3f8f69d0698ead6fa3284fe37ce0
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 28aa5c5aa887b08992b15adeb48128168b8cfa29
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31140026"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49835055"
 ---
 # <a name="sccremove-function"></a>SccRemove 函式
 此函式會從原始檔控制系統中刪除檔案。  
@@ -44,7 +44,7 @@ SCCRTN SccRemove(
  [in]原始檔控制外掛程式的內容結構。  
   
  hWnd  
- [in]原始檔控制外掛程式之任何它所提供的對話方塊，可以使用為父代 IDE 視窗的控制代碼。  
+ [in]原始檔控制外掛程式時，可以使用當做父代上，它會提供任何對話方塊 IDE 視窗的控制代碼。  
   
  nFiles  
  [in]中指定的檔案數目`lpFileNames`陣列。  
@@ -53,26 +53,26 @@ SCCRTN SccRemove(
  [in]要移除之檔案的完整格式的本機路徑名稱的陣列。  
   
  lpComment  
- [in]要套用至每個檔案移除註解。  
+ [in]要套用至要移除的每個檔案的註解。  
   
- fOptions  
+ Stored  
  [in]命令的旗標 （未使用）。  
   
  pvOptions  
  [in]原始檔控制外掛程式特定選項。  
   
 ## <a name="return-value"></a>傳回值  
- 此函式的原始檔控制外掛程式實作預期會傳回下列值之一：  
+ 此函式的原始檔控制外掛程式實作應該會傳回下列值之一：  
   
 |值|描述|  
 |-----------|-----------------|  
 |SCC_OK|已成功移除。|  
 |SCC_E_FILENOTCONTROLLED|選取的檔案不在原始檔控制中。|  
 |SCC_E_OPNOTSUPPORTED|原始檔控制系統不支援這項作業。|  
-|SCC_E_ISCHECKEDOUT|無法移除檔案，因為使用者目前已取出。|  
-|SCC_E_ACCESSFAILURE|無法存取原始檔控制系統，可能是因為網路或競爭問題。|  
-|SCC_E_NOTAUTHORIZED|不允許使用者執行這項作業。|  
-|SCC_E_NONSPECIFICERROR|不明確的失敗。未移除檔案。|  
+|SCC_E_ISCHECKEDOUT|無法移除檔案，因為使用者目前已簽出它。|  
+|SCC_E_ACCESSFAILURE|發生問題，存取原始檔控制系統，可能是因為網路或競爭問題。|  
+|SCC_E_NOTAUTHORIZED|若要執行這項作業不允許的使用者。|  
+|SCC_E_NONSPECIFICERROR|不明確的失敗;檔案不會移除。|  
 |SCC_I_OPERATIONCANCELED|作業已完成前取消。|  
   
 ## <a name="remarks"></a>備註  

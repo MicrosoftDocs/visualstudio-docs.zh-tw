@@ -18,27 +18,27 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d235508bb0b58ac17846d0b02db25f044c504deb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5db5e9408a64df80311667267561ee69234fd7d5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42634702"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49852741"
 ---
 # <a name="walkthrough-profile-a-sharepoint-application"></a>逐步解說： 剖析 SharePoint 應用程式
   本逐步解說將示範如何使用 Visual Studio 中的程式碼剖析工具最佳化 SharePoint 應用程式的效能。 範例應用程式是 SharePoint 功能事件接收器，內含的閒置迴圈會降低功能事件接收器的效能。 Visual Studio 分析工具可讓您尋找並消除成本最高 （最慢執行） 專案的一部分，也稱為*最忙碌路徑*。  
   
  本逐步解說將示範下列工作：  
   
--   [新增功能和功能事件接收器](#BKMK_AddFtrandFtrEvntReceiver)。  
+- [新增功能和功能事件接收器](#BKMK_AddFtrandFtrEvntReceiver)。  
   
--   [設定和部署 SharePoint 應用程式](#BKMK_ConfigSharePointApp)。  
+- [設定和部署 SharePoint 應用程式](#BKMK_ConfigSharePointApp)。  
   
--   [執行 SharePoint 應用程式](#BKMK_RunSPApp)。  
+- [執行 SharePoint 應用程式](#BKMK_RunSPApp)。  
   
--   [檢視和解譯分析結果](#BKMK_ViewResults)。  
+- [檢視和解譯分析結果](#BKMK_ViewResults)。  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>必要條件  
  您需要下列元件才能完成此逐步解說：  
@@ -52,23 +52,23 @@ ms.locfileid: "42634702"
   
 #### <a name="to-create-a-sharepoint-project"></a>若要建立 SharePoint 專案  
   
-1.  在功能表列上選擇 [**檔案** > **新增** > **專案**顯示**新專案**] 對話方塊。  
+1. 在功能表列上選擇 [**檔案** > **新增** > **專案**顯示**新專案**] 對話方塊。  
   
-2.  依序展開**SharePoint**節點之下**Visual C#** 或**Visual Basic**，然後選擇**2010年**節點。  
+2. 依序展開**SharePoint**節點之下**Visual C#** 或**Visual Basic**，然後選擇**2010年**節點。  
   
-3.  在 [範本] 窗格中，選擇**SharePoint 2010 專案**範本。  
+3. 在 [範本] 窗格中，選擇**SharePoint 2010 專案**範本。  
   
-4.  在 [**名稱**方塊中，輸入**ProfileTest**，然後選擇 **[確定]** ] 按鈕。  
+4. 在 [**名稱**方塊中，輸入**ProfileTest**，然後選擇 **[確定]** ] 按鈕。  
   
-     **SharePoint 自訂精靈**隨即出現。  
+    **SharePoint 自訂精靈**隨即出現。  
   
-5.  在 **指定偵錯的網站和安全性層級**頁面上，輸入您要偵錯網站定義中，SharePoint 伺服器網站的 URL，或使用預設位置 (http://*系統名稱*/).  
+5. 在 **指定偵錯的網站和安全性層級**頁面上，輸入您要偵錯網站定義中，SharePoint 伺服器網站的 URL，或使用預設位置 (http://<em>系統名稱</em>/).  
   
-6.  在 **此 SharePoint 方案的信任層級為何？** 區段中，選擇**部署為伺服陣列方案**選項按鈕。  
+6. 在 **此 SharePoint 方案的信任層級為何？** 區段中，選擇**部署為伺服陣列方案**選項按鈕。  
   
-     目前您只能分析陣列方案。 如需有關沙箱化方案與伺服器陣列方案的詳細資訊，請參閱[沙箱化方案考量](../sharepoint/sandboxed-solution-considerations.md)。  
+    目前您只能分析陣列方案。 如需有關沙箱化方案與伺服器陣列方案的詳細資訊，請參閱[沙箱化方案考量](../sharepoint/sandboxed-solution-considerations.md)。  
   
-7.  選擇**完成** 按鈕。 專案會出現在**方案總管 中**。  
+7. 選擇**完成** 按鈕。 專案會出現在**方案總管 中**。  
   
 ## <a name="add-a-feature-and-feature-event-receiver"></a>新增功能和功能事件接收器
  接下來，在專案中加入功能與功能的事件接收器。 這個事件接收器會包含要分析的程式碼。  

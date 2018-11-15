@@ -15,12 +15,12 @@ ms.assetid: 91b167a3-280a-498b-8fc2-f67859a2c64e
 caps.latest.revision: 29
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 837e004dfffbaba5eac154b195ff4ed8c382430d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f4c5a8a4d090a7603f83f6fb3c3d9deb0c67d5f8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49218344"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49846833"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>使用測試總管執行單元測試
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -67,17 +67,17 @@ ms.locfileid: "49218344"
 ###  <a name="BKMK_Run_tests"></a> 執行測試  
  您可以執行方案中的所有測試、群組中的所有測試，或是您選取的一組測試。 執行下列任一步驟：  
   
--   若要執行方案中的所有測試，請選擇 [全部執行] 。  
+- 若要執行方案中的所有測試，請選擇 [全部執行] 。  
   
--   若要執行預設群組中的所有測試，請選取 [執行…]  ，然後選取功能表上的群組。  
+- 若要執行預設群組中的所有測試，請選取 [執行…]  ，然後選取功能表上的群組。  
   
--   選取您要執行的個別測試，然後開啟所選取之測試的內容功能表並選取 [執行選取的測試] 。  
+- 選取您要執行的個別測試，然後開啟所選取之測試的內容功能表並選取 [執行選取的測試] 。  
   
--   如果個別測試之間沒有任何相依性，因此可依任意順序執行，請使用工具列上的 ![UTE&#95;parallelicon&#45;small](../test/media/ute-parallelicon-small.png "UTE_parallelicon-small") 切換按鈕，以開啟平行測試的執行。 這可大幅縮短執行所有測試所需的時間。  
+- 如果個別測試之間沒有任何相依性，因此可依任意順序執行，請使用工具列上的 ![UTE&#95;parallelicon&#45;small](../test/media/ute-parallelicon-small.png "UTE_parallelicon-small") 切換按鈕，以開啟平行測試的執行。 這可大幅縮短執行所有測試所需的時間。  
   
- 執行測試時，測試總管視窗頂端會動畫呈現成功/失敗列。 測試回合結束時，如果所有測試皆成功，成功/失敗列會變成綠色；如果有任何一個測試失敗，則會變成紅色。  
+  執行測試時，測試總管視窗頂端會動畫呈現成功/失敗列。 測試回合結束時，如果所有測試皆成功，成功/失敗列會變成綠色；如果有任何一個測試失敗，則會變成紅色。  
   
- ![回到頁首](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [內容](#BKMK_Contents)  
+  ![回到頁首](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [內容](#BKMK_Contents)  
   
 ###  <a name="BKMK_Run_tests_after_every_build"></a> 每次建置後執行測試  
   
@@ -102,19 +102,19 @@ ms.locfileid: "49218344"
   
  測試詳細資料窗格會顯示下列資訊：  
   
--   測試方法的原始檔案名稱和行號。  
+- 測試方法的原始檔案名稱和行號。  
   
--   測試的狀態。  
+- 測試的狀態。  
   
--   測試方法執行的經過時間。  
+- 測試方法執行的經過時間。  
   
- 如果測試失敗，詳細資料窗格也會顯示：  
+  如果測試失敗，詳細資料窗格也會顯示：  
   
--   測試的單元測試架構所傳回的訊息。  
+- 測試的單元測試架構所傳回的訊息。  
   
--   測試失敗時的堆疊追蹤。  
+- 測試失敗時的堆疊追蹤。  
   
- ![回到頁首](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [內容](#BKMK_Contents)  
+  ![回到頁首](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [內容](#BKMK_Contents)  
   
 ###  <a name="BKMK_View_the_source_code_of_a_test_method"></a> 檢視測試方法的原始程式碼  
  若要在 Visual Studio 編輯器顯示測試方法的原始程式碼，請選取測試，然後選擇內容功能表上的 [開啟測試]  (鍵盤：按 F12)。  
@@ -197,13 +197,13 @@ TEST_METHOD(Method1)
   
  若要依據不同準則篩選：  
   
-1.  開啟搜尋方塊右邊的下拉式清單。  
+1. 開啟搜尋方塊右邊的下拉式清單。  
   
-2.  選擇新的準則。  
+2. 選擇新的準則。  
   
-3.  在引號之間輸入篩選值。  
+3. 在引號之間輸入篩選值。  
   
- ![在測試總管中篩選測試](../test/media/ute-filtertestlist.png "UTE_FilterTestList")  
+   ![在測試總管中篩選測試](../test/media/ute-filtertestlist.png "UTE_FilterTestList")  
   
 > [!NOTE]
 >  搜尋是區分大小寫且比對指定字串與準則值的任何部分。  
@@ -255,16 +255,16 @@ FullName:"MyClass" - FullName:"PerfTest"
 ###  <a name="BKMK_Debug_unit_tests"></a> 對單元測試進行偵錯  
  您可以使用 [測試總管] 來啟動測試的偵錯工作階段。 使用 Visual Studio 偵錯工具逐步執行程式碼可讓您順暢地在單元測試和受測專案之間來回進行。 啟動偵錯：  
   
-1.  在 Visual Studio 編輯器中，於您要偵錯的一個或多個測試方法中設定中斷點。  
+1. 在 Visual Studio 編輯器中，於您要偵錯的一個或多個測試方法中設定中斷點。  
   
-    > [!NOTE]
-    >  由於測試方法可以依照任何順序執行，請在您要偵錯的所有測試方法中設定中斷點。  
+   > [!NOTE]
+   >  由於測試方法可以依照任何順序執行，請在您要偵錯的所有測試方法中設定中斷點。  
   
-2.  在測試總管中，選取測試方法，然後選擇內容功能表上的 [偵測選取的測試]  。  
+2. 在測試總管中，選取測試方法，然後選擇內容功能表上的 [偵測選取的測試]  。  
   
- 如需偵錯工具的詳細資訊，請參閱 [Visual Studio 偵錯](../debugger/debugging-in-visual-studio.md)。  
+   如需偵錯工具的詳細資訊，請參閱 [Visual Studio 偵錯](../debugger/debugging-in-visual-studio.md)。  
   
- ![回到頁首](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [內容](#BKMK_Contents)  
+   ![回到頁首](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [內容](#BKMK_Contents)  
   
 ###  <a name="BKMK_Diagnose_test_method_performance_issues"></a> 診斷測試方法的效能問題  
  若要診斷測試方法為何花費太多時間，請在測試總管中選取該方法，然後選取操作功能表上的 [設定檔]。 請參閱[效能總管](../profiling/performance-explorer.md)。  
@@ -278,19 +278,19 @@ FullName:"MyClass" - FullName:"PerfTest"
   
  若要在方案中執行測試方法的程式碼涵蓋範圍：  
   
-1.  選擇 Visual Studio 功能表上的 [測試]  ，然後選擇 [分析程式碼涵蓋範圍] 。  
+1. 選擇 Visual Studio 功能表上的 [測試]  ，然後選擇 [分析程式碼涵蓋範圍] 。  
   
-2.  從子功能表選擇下列其中一個命令：  
+2. 從子功能表選擇下列其中一個命令：  
   
-    -   [選取的測試] 會執行您在 [測試總管] 中所選取的測試方法。  
+   -   [選取的測試] 會執行您在 [測試總管] 中所選取的測試方法。  
   
-    -   [所有測試] 會執行方案中的所有測試方法。  
+   -   [所有測試] 會執行方案中的所有測試方法。  
   
- [程式碼涵蓋範圍結果] 視窗會顯示線條、函式、類別、命名空間及模組所運用的產品程式碼區塊的百分比。  
+   [程式碼涵蓋範圍結果] 視窗會顯示線條、函式、類別、命名空間及模組所運用的產品程式碼區塊的百分比。  
   
- 如需詳細資訊，請參閱[使用程式碼涵蓋範圍來決定所測試的程式碼數量](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)。  
+   如需詳細資訊，請參閱[使用程式碼涵蓋範圍來決定所測試的程式碼數量](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)。  
   
- ![回到頁首](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [內容](#BKMK_Contents)  
+   ![回到頁首](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [內容](#BKMK_Contents)  
   
 ##  <a name="BKMK_External_resources"></a> 外部資源  
   

@@ -15,12 +15,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 576cbb1fb9ef9210a3f22849a996fa5da14dd443
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 944340a8f6901934c3afc2f54323f73bc5639f8b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31946321"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49842283"
 ---
 # <a name="change-a-method-signature-refactoring"></a>變更方法特徵標記重構
 
@@ -42,44 +42,44 @@ ms.locfileid: "31946321"
 
    - C#: 
 
-    ![醒目提示的程式碼 C#](media/changesignature-highlight-cs.png)
+       ![醒目提示的程式碼 C#](media/changesignature-highlight-cs.png)
 
    - VB：
 
-    ![醒目提示的程式碼 - Visual Basic](media/changesignature-highlight-vb.png)
+       ![醒目提示的程式碼 - Visual Basic](media/changesignature-highlight-vb.png)
 
-1. 接著，執行下列其中一項操作：
+2. 接著，執行下列其中一項操作：
 
    - **鍵盤**
-     - 按 **CTRL+R**，再按 **CTRL+V**。  (請注意，根據您所選取的設定檔，鍵盤快速鍵可能會不同)。
-     - 在字行任何地方按 **Ctrl**+**.**， 以觸發 [快速動作與重構] 功能表，然後從 [預覽] 快顯視窗中選取 [變更簽章]。
+      - 按 **CTRL+R**，再按 **CTRL+V**。  (請注意，根據您所選取的設定檔，鍵盤快速鍵可能會不同)。
+      - 在字行任何地方按 **Ctrl**+**.**， 以觸發 [快速動作與重構] 功能表，然後從 [預覽] 快顯視窗中選取 [變更簽章]。
    - **滑鼠**
-     - 選取 [編輯] > [重構] > [移除參數]。
-     - 選取 [編輯] > [重構] > [重新排列參數]。
-     - 在程式碼上按一下滑鼠右鍵，選取 [快速動作與重構] 功能表，然後從 [預覽] 快顯視窗中選取 [變更簽章]。
+      - 選取 [編輯] > [重構] > [移除參數]。
+      - 選取 [編輯] > [重構] > [重新排列參數]。
+      - 在程式碼上按一下滑鼠右鍵，選取 [快速動作與重構] 功能表，然後從 [預覽] 快顯視窗中選取 [變更簽章]。
 
-1. 在 [變更簽章] 快顯對話方塊中，您可以使用右邊的按鈕來變更方法簽章：
+3. 在 [變更簽章] 快顯對話方塊中，您可以使用右邊的按鈕來變更方法簽章：
 
    ![[變更簽章] 對話方塊](media/changesignature-dialog-cs.png)
 
    | 按鈕 | 描述
    | ------ | ---
    | **向上/向下** | 將選取的參數在清單中向上和向下移動
-   | **移除**  | 將選取的參數從清單中移除
+   | **移除** | 將選取的參數從清單中移除
    | **還原** | 將所選的已刪除參數還原到清單中
 
    > [!TIP]
    > 請使用 [預覽參考變更] 核取方塊，以在認可變更之前先[查看將會有的結果](../../ide/preview-changes.md)。
 
-1. 完成時，按 [確定] 按鈕以進行變更。
+4. 完成時，按 [確定] 按鈕以進行變更。
 
    - C#: 
 
-    ![變更特徵標記結果 - C#](media/changesignature-result-cs.png)
+      ![變更特徵標記結果 - C#](media/changesignature-result-cs.png)
 
    - Visual Basic：
 
-    ![變更特徵標記結果 - Visual Basic](media/changesignature-result-vb.png)
+      ![變更特徵標記結果 - Visual Basic](media/changesignature-result-vb.png)
 
 ## <a name="see-also"></a>另請參閱
 

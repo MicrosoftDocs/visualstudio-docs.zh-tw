@@ -18,25 +18,25 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2d9542e14f41722a2f339bfac5c3353dc2e89263
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 86256cdecd878c78c34d7128a05eb7b795067701
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42635462"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49909753"
 ---
 # <a name="walkthrough-import-items-from-an-existing-sharepoint-site"></a>逐步解說： 從現有的 SharePoint 網站匯入項目
   本逐步解說示範如何從現有的 SharePoint 網站將匯入項目[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]SharePoint 專案。  
   
  本逐步解說將示範下列工作：  
   
--   透過加入自訂的網站資料行來自訂 SharePoint 網站 (也稱為*欄位*。  
+- 透過加入自訂的網站資料行來自訂 SharePoint 網站 (也稱為*欄位*。  
   
--   匯出至.wsp 檔案的 SharePoint 網站。  
+- 匯出至.wsp 檔案的 SharePoint 網站。  
   
--   匯入.wsp 檔案[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]SharePoint 使用.wsp 匯入專案。  
+- 匯入.wsp 檔案[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]SharePoint 使用.wsp 匯入專案。  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>必要條件  
  您需要下列元件才能完成此逐步解說：  
@@ -50,21 +50,21 @@ ms.locfileid: "42635462"
   
 #### <a name="to-create-and-customize-a-sharepoint-site"></a>若要建立和自訂 SharePoint 網站  
   
-1.  開啟 SharePoint 網站使用網頁瀏覽器，例如 http://*系統名稱*/SitePages/Home.aspx。  
+1. 開啟 SharePoint 網站使用網頁瀏覽器，例如 http://<em>系統名稱</em>/SitePages/Home.aspx。  
   
-2.  建立從主要的 SharePoint 網站的子網站，開啟**站台動作**功能表，然後選擇**新的站台**。  
+2. 建立從主要的 SharePoint 網站的子網站，開啟**站台動作**功能表，然後選擇**新的站台**。  
   
-3.  在站台中**建立**對話方塊方塊中，選擇**空白網站**型別。  
+3. 在站台中**建立**對話方塊方塊中，選擇**空白網站**型別。  
   
-4.  在 [**標題**方塊中，輸入**站台資料行測試 1**; 在**URL 名稱**方塊中，輸入**columntest1**; 其他設定保留其預設值值，然後選擇**建立**] 按鈕。  
+4. 在 [**標題**方塊中，輸入**站台資料行測試 1**; 在**URL 名稱**方塊中，輸入**columntest1**; 其他設定保留其預設值值，然後選擇**建立**] 按鈕。  
   
-5.  在建立網站之後，瀏覽回到主要網站中，瀏覽器中 http://*系統名稱*/SitePages/Home.aspx。  
+5. 在建立網站之後，瀏覽回到主要網站中，瀏覽器中 http://<em>系統名稱</em>/SitePages/Home.aspx。  
   
-6.  同樣地，建立空白的子網站，從主要的 SharePoint 網站開啟**網站動作**功能表上，選擇**新的站台**，然後選擇**空白網站**型別。  
+6. 同樣地，建立空白的子網站，從主要的 SharePoint 網站開啟**網站動作**功能表上，選擇**新的站台**，然後選擇**空白網站**型別。  
   
-7.  在 [**標題**方塊中，輸入**站台資料行測試 2**; 在**URL 名稱**方塊中，輸入**columntest2**; 其他設定保留其預設值值，然後選擇**建立**] 按鈕。  
+7. 在 [**標題**方塊中，輸入**站台資料行測試 2**; 在**URL 名稱**方塊中，輸入**columntest2**; 其他設定保留其預設值值，然後選擇**建立**] 按鈕。  
   
-8.  瀏覽回到第一個子網站， http://*SystemName*/columntest1/default.aspx 。  
+8. 瀏覽回到第一個子網站， http://<em>SystemName</em>/columntest1/default.aspx 。  
   
 9. 上**站台動作**功能表上，選擇**站台設定**以顯示 [站台設定] 頁面。  
   
@@ -107,28 +107,28 @@ ms.locfileid: "42635462"
   
 #### <a name="to-import-a-wsp-file"></a>若要匯入.wsp 檔案  
   
-1.  在 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]，在功能表列上選擇 [**檔案** > **新增** > **專案**顯示**新專案**] 對話方塊。 如果您的 IDE 設定為使用 Visual Basic 開發設定，在功能表列上，選擇**檔案** > **新專案**。  
+1. 在  [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]，在功能表列上選擇 **檔案** > **新增** > **專案**顯示**新專案** 對話方塊。 如果您的 IDE 設定為使用 Visual Basic 開發設定，在功能表列上，選擇**檔案** > **新專案**。  
   
-2.  依序展開**SharePoint**節點之下**Visual C#** 或**Visual Basic**，然後選擇**2010年**節點。  
+2. 依序展開**SharePoint**節點之下**Visual C#** 或**Visual Basic**，然後選擇**2010年**節點。  
   
-3.  選擇**匯入 SharePoint 2010 方案套件**中的範本**範本**窗格中，保留 WspImportProject1，作為專案名稱，然後選擇**確定**按鈕。  
+3. 選擇**匯入 SharePoint 2010 方案套件**中的範本**範本**窗格中，保留 WspImportProject1，作為專案名稱，然後選擇**確定**按鈕。  
   
-     **SharePoint 自訂精靈**隨即出現。  
+    **SharePoint 自訂精靈**隨即出現。  
   
-4.  在 **指定偵錯的網站和安全性層級**頁面上，輸入[!INCLUDE[TLA2#tla_url](../sharepoint/includes/tla2sharptla-url-md.md)]您稍早建立的第二個 SharePoint 子網站。 您將會加入新的自訂項目時，欄位 http://*系統名稱*/columntest2，該子網站。  
+4. 在 **指定偵錯的網站和安全性層級**頁面上，輸入[!INCLUDE[TLA2#tla_url](../sharepoint/includes/tla2sharptla-url-md.md)]您稍早建立的第二個 SharePoint 子網站。 您將會加入新的自訂項目時，欄位 http://<em>系統名稱</em>/columntest2，該子網站。  
   
-5.  在 **此 SharePoint 方案的信任層級為何？** 區段中，保留選取項目為**部署為沙箱化方案**。  
+5. 在 **此 SharePoint 方案的信任層級為何？** 區段中，保留選取項目為**部署為沙箱化方案**。  
   
-6.  在 [**指定新專案來源**頁面上，瀏覽至您儲存在系統上位置 *.wsp*先前檔案，然後選擇 [**下一步]** ] 按鈕。  
+6. 在 [**指定新專案來源**頁面上，瀏覽至您儲存在系統上位置 *.wsp*先前檔案，然後選擇 [**下一步]** ] 按鈕。  
   
-    > [!NOTE]  
-    >  如果您選擇**完成**按鈕，在此頁面上，在所有可用的項目 *.wsp*將匯入檔案。  
+   > [!NOTE]  
+   >  如果您選擇**完成**按鈕，在此頁面上，在所有可用的項目 *.wsp*將匯入檔案。  
   
-7.  在**選取要匯入項目**方塊中，清除所有核取方塊，在清單中，除了**測試資料行**，然後選擇**完成** 按鈕。  
+7. 在**選取要匯入項目**方塊中，清除所有核取方塊，在清單中，除了**測試資料行**，然後選擇**完成** 按鈕。  
   
-     清單包含許多項目，因為您可以選擇**Ctrl**+**A**金鑰選擇的所有項目在清單中，選擇空格鍵以清除所有核取方塊，然後選取 只檢查中的 下一步**測試資料行**項目。  
+    清單包含許多項目，因為您可以選擇**Ctrl**+**A**金鑰選擇的所有項目在清單中，選擇空格鍵以清除所有核取方塊，然後選取 只檢查中的 下一步**測試資料行**項目。  
   
-     匯入作業完成時，新的專案，名為之後**WspImportProject1**建立，其中包含名為的資料夾**欄位**。 在此資料夾是自訂的網站資料行**測試資料行**及其定義檔*Elements.xml*。  
+    匯入作業完成時，新的專案，名為之後**WspImportProject1**建立，其中包含名為的資料夾**欄位**。 在此資料夾是自訂的網站資料行**測試資料行**及其定義檔*Elements.xml*。  
   
 ## <a name="deploy-the-project"></a>部署專案
  最後，部署**WspImportProject1**到第二個 SharePoint 子網站，您稍早建立若要檢視自訂的網站資料行。  

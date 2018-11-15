@@ -13,14 +13,14 @@ ms.author: chitray
 manager: Meng
 ms.workload:
 - vssdk
-ms.openlocfilehash: f87f359d9c143adc9093b08ef58ebca89dca524e
-ms.sourcegitcommit: ed524fd809b17ad1d06bf9cd4c3374c71a44d7bf
+ms.openlocfilehash: 2e0215b22c66d6b555650e05985a674f2ad9aed4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39409911"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49943098"
 ---
-# <a name="walkthrough-create-an-extension-pack"></a>逐步解說： 建立延伸模組組件
+# <a name="walkthrough-create-an-extension-pack"></a>逐步解說：建立延伸模組組件
 
 延伸模組組件是一組可一起安裝的延伸模組。 延伸模組組件可讓您輕鬆地與其他使用者共用您最愛的擴充功能或套件組合的一組一起應付特定案例的擴充功能。
   
@@ -34,14 +34,14 @@ ms.locfileid: "39409911"
 
 延伸模組組件項目範本建立與一組可一起安裝的擴充功能的延伸模組組件。
   
-1. 在 **新的專案**對話方塊方塊中，展開**Visual C#** 或**Visual Basic** ，然後按一下 **擴充性**。 在 **範本**窗格中，選取**VSIX 專案**。 在 [名稱] 方塊中，輸入 `Test Extension Pack`。 按一下 [確定 **Deploying Office Solutions**]。  
+1. 在 **新的專案**對話方塊方塊中，展開**Visual C#** 或**Visual Basic** ，然後按一下 **擴充性**。 在 **範本**窗格中，選取**VSIX 專案**。 在 [名稱]  方塊中，輸入 `Test Extension Pack`。 按一下 [確定 **Deploying Office Solutions**]。  
   
 2. 在 **方案總管**，以滑鼠右鍵按一下專案節點，然後選取**新增 / 新項目**。 移至 Visual C#**擴充性**節點，然後選取**延伸模組套件**。 保留預設的檔案名稱 (ExtensionPack1.cs)。  
   
 3. ExtensionPack1.vsext 檔案會加入包含下列程式碼
 
-  ```json
-  {
+   ```json
+   {
     "id": "ExtensionPack1",
     "name": "ExtensionPack1",
     "description": "Read about creating extension packs at https://aka.ms/vsextpack",
@@ -56,8 +56,8 @@ ms.locfileid: "39409911"
         "name": "CopyAsHtml"
       }
     ]
-  }  
-  ```
+   }  
+   ```
 
 4. 要包含在延伸模組套件中的延伸模組的 vsixid 都位於[Visual Studio Marketplace](https://marketplace.visualstudio.com/)。 尋找您想要加入，然後按一下 擴充的功能**複製識別碼**。 您可以更新現有**vsixId**在上述檔案或另一個延伸模組新增至清單。
 

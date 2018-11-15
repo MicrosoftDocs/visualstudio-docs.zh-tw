@@ -16,12 +16,12 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 55a5c6eada52cead60abb830a5a873cc71cac194
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9c6550e4d9af994be1b703b56ab91cb33e6fdf5c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49238585"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49824204"
 ---
 # <a name="utilization-navigator"></a>使用率導覽
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,11 +35,11 @@ ms.locfileid: "49238585"
   
  以下是您可以用使用率導覽來顯示時間範圍的操控方式：  
   
--   您可以左右拖曳 Thumb 來移動瀏覽。 (鍵盤︰將焦點移至 thumb，然後按向左鍵或向右鍵。)  
+- 您可以左右拖曳 Thumb 來移動瀏覽。 (鍵盤︰將焦點移至 thumb，然後按向左鍵或向右鍵。)  
   
--   您可以拖曳其中一個控點來變更間隔的範圍。 (鍵盤︰將焦點移至控點，然後按向右鍵或向左鍵。)  
+- 您可以拖曳其中一個控點來變更間隔的範圍。 (鍵盤︰將焦點移至控點，然後按向右鍵或向左鍵。)  
   
- 如果您使用不同的並行視覺化檢視縮放控制項來變更間隔，使用率導覽會更新以反映變更。
+  如果您使用不同的並行視覺化檢視縮放控制項來變更間隔，使用率導覽會更新以反映變更。
 
 
 

@@ -15,12 +15,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: b44d57fbd36e82a84aaa0b2e837d24d429073f79
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: ca43b4daea5c5bb95a0752eeae93814d234e9a62
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34845314"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49923013"
 ---
 # <a name="bind-controls-to-data-in-visual-studio"></a>將控制項繫結至 Visual Studio 中的資料
 您可以透過將資料繫結至控制項，對應用程式的使用者顯示資料。 您可以建立這些資料繫結控制項項目從**Zdroje dat**視窗拖曳到設計介面或在 Visual Studio 中的介面上的控制項。
@@ -30,14 +30,15 @@ ms.locfileid: "34845314"
 ## <a name="data-sources"></a>資料來源
  在資料繫結內容中，資料來源代表可繫結至您的使用者介面的記憶體中的資料。 實際上，資料來源可以是 Entity Framework 類別、 資料集、 封裝.NET proxy 物件、 LINQ to SQL 類別，或任何.NET 物件或集合中的服務端點。 某些資料來源可讓您建立資料繫結控制項中的項目**Zdroje dat**  視窗中，而不是其他資料來源。 下表顯示支援的資料來源。
 
-|資料來源|中的拖放支援**Windows Form 設計工具**|中的拖放支援**WPF 設計工具**|中的拖放支援**Silverlight 設計工具**|
-|-----------------|---------------------------------------------------------------|-----------------------------------------------------|-------------------------------------------------------------|
-|資料集|[是]|是|否|
-|實體資料模型|是<sup>1</sup>|[是]|[是]|
-|LINQ to SQL 類別|否<sup>2</sup>|否<sup>2</sup>|否<sup>2</sup>|
-|服務 (包括[!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)]，WCF 服務和 web 服務)|[是]|是|[是]|
-|Object|[是]|是|[是]|
-|SharePoint|[是]|是|[是]|
+
+| 資料來源 | 中的拖放支援**Windows Form 設計工具** | 中的拖放支援**WPF 設計工具** | 中的拖放支援**Silverlight 設計工具** |
+| - | - | - | - |
+| 資料集 | 是 | 是 | 否 |
+| 實體資料模型 | 是<sup>1</sup> | 是 | 是 |
+| LINQ to SQL 類別 | 否<sup>2</sup> | 否<sup>2</sup> | 否<sup>2</sup> |
+| 服務 (包括[!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)]，WCF 服務和 web 服務) | 是 | 是 | 是 |
+| Object | 是 | 是 | 是 |
+| SharePoint | 是 | 是 | 是 |
 
  1. 產生模型使用**Entity Data Model**精靈，然後將這些物件拖曳至設計工具。
 
@@ -54,7 +55,7 @@ ms.locfileid: "34845314"
  下表列出一些最常見的工作，您執行將控制項繫結至資料。
 
 |工作|詳細資訊|
-|----------|----------------------|
+|----------| - |
 |開啟**Zdroje dat**視窗。|在編輯器中開啟的設計介面，然後選擇**檢視** > **Zdroje dat**。|
 |將資料來源新增至您的專案。|[新增資料來源](../data-tools/add-new-data-sources.md)|
 |設定當您拖曳的項目時建立的控制項**Zdroje dat**至設計工具 視窗。|[設定從資料來源視窗拖曳時要建立的控制項](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)|

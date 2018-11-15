@@ -14,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3ca011f519c53924681d2c1a7042f25dcfaad208
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2c37ab6f42be8e363dcba8a3e2aa6ef78816bff0
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42635196"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51296238"
 ---
 # <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-2"></a>逐步解說： 建立自訂動作專案項目與項目範本，第 2 部分
   您定義自訂 SharePoint 專案項目類型，並將它與 Visual Studio 中的項目範本產生關聯之後，您也可以提供範本的精靈。 您可以使用精靈，在使用您的範本將新的執行個體的專案項目加入至專案時，從使用者收集資訊。 您所收集的資訊可以用來初始化專案項目中。  
@@ -44,15 +44,15 @@ ms.locfileid: "42635196"
   
  您還需要完成這個逐步解說在開發電腦上的下列元件：  
   
--   支援的 Windows、 SharePoint 和 Visual Studio 版本。
+- 支援的 Windows、 SharePoint 和 Visual Studio 版本。
   
--   Visual Studio SDK 中。 本逐步解說會使用**VSIX 專案**SDK 來建立 VSIX 封裝，來部署專案項目中的範本。 如需詳細資訊，請參閱 <<c0> [ 擴充 Visual Studio 中的 SharePoint 工具](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)。  
+- Visual Studio SDK 中。 本逐步解說會使用**VSIX 專案**SDK 來建立 VSIX 封裝，來部署專案項目中的範本。 如需詳細資訊，請參閱 <<c0> [ 擴充 Visual Studio 中的 SharePoint 工具](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)。  
   
- 下列概念的知識會很有幫助，但並非必要，若要完成本逐步解說：  
+  下列概念的知識會很有幫助，但並非必要，若要完成本逐步解說：  
   
--   Visual Studio 中的專案和項目範本的精靈。 如需詳細資訊，請參閱 <<c0> [ 如何： 使用精靈與專案範本](../extensibility/how-to-use-wizards-with-project-templates.md)而<xref:Microsoft.VisualStudio.TemplateWizard.IWizard>介面。  
+- Visual Studio 中的專案和項目範本的精靈。 如需詳細資訊，請參閱 <<c0> [ 如何： 使用精靈與專案範本](../extensibility/how-to-use-wizards-with-project-templates.md)而<xref:Microsoft.VisualStudio.TemplateWizard.IWizard>介面。  
   
--   在 SharePoint 中的自訂動作。 如需詳細資訊，請參閱 <<c0> [ 自訂動作](http://go.microsoft.com/fwlink/?LinkId=177800)。  
+- 在 SharePoint 中的自訂動作。 如需詳細資訊，請參閱 <<c0> [ 自訂動作](http://go.microsoft.com/fwlink/?LinkId=177800)。  
   
 ## <a name="create-the-wizard-project"></a>建立精靈專案
  若要完成此逐步解說中，您必須將專案加入 CustomActionProjectItem 方案中建立[逐步解說： 建立自訂動作專案項目與項目範本，第 1 部分](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)。 您將實作<xref:Microsoft.VisualStudio.TemplateWizard.IWizard>介面，並在此專案中定義的精靈 UI。  
@@ -306,7 +306,7 @@ ms.locfileid: "42635196"
   
 13. 在 **描述**方塊中，輸入**開啟 SharePoint 開發人員中心網站**。  
   
-14. 在 [ **URL**方塊中，輸入**http://msdn.microsoft.com/sharepoint/default.aspx**，然後選擇**完成**] 按鈕。  
+14. 在 [ **URL**方塊中，輸入**https://docs.microsoft.com/sharepoint/dev/**，然後選擇**完成**] 按鈕。  
   
      Visual Studio 會加入名為的項目**CustomAction1**至您的專案，並開啟*Elements.xml*在編輯器中的檔案。 確認*Elements.xml*包含您在精靈中指定的值。  
   
@@ -327,7 +327,7 @@ ms.locfileid: "42635196"
   
      **清單設定**頁面隨即出現。  
   
-4.  底下**Communications**靠近頁面頂端的標題之下，選擇**SharePoint 開發人員中心**連結，請確認瀏覽器會開啟網站 http://msdn.microsoft.com/sharepoint/default.aspx，然後關閉瀏覽器。  
+4.  底下**Communications**靠近頁面頂端的標題之下，選擇**SharePoint 開發人員中心**連結，請確認瀏覽器會開啟網站 https://docs.microsoft.com/sharepoint/dev/，然後關閉瀏覽器。  
   
 ## <a name="cleaning-up-the-development-computer"></a>清除開發電腦
  完成測試的專案項目之後，請從 Visual Studio 的實驗執行個體中移除專案項目範本。  

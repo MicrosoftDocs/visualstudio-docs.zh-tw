@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c333d38dde1d440d5bac10770d0b3386f82ad4ad
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 756486daa709efd6ce1ff697d6d190bb7f4a2e34
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42626142"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295718"
 ---
 # <a name="walkthrough-extend-a-sharepoint-project-item-type"></a>逐步解說： 擴充 SharePoint 專案項目類型
   您可以使用**Business Data Connectivity 模型**專案項目，在 SharePoint 中建立的商務資料連接 (BDC) 服務的模型。 根據預設，當您建立模型時使用這個專案項目中，模型中的資料不是顯示給使用者。 您也必須在 SharePoint 中，讓使用者可以檢視的資料建立外部清單。  
@@ -42,24 +42,24 @@ ms.locfileid: "42626142"
 ## <a name="prerequisites"></a>必要條件  
  您需要完成這個逐步解說在開發電腦上的下列元件：  
   
--   支援的 Microsoft Windows、 SharePoint 和 Visual Studio 版本。  
+- 支援的 Microsoft Windows、 SharePoint 和 Visual Studio 版本。  
   
--   [!include[vssdk_current_long](../sharepoint/includes/vssdk-current-long-md.md)]。 本逐步解說會使用**VSIX 專案**SDK 來建立 VSIX 封裝，來部署專案項目中的範本。 如需詳細資訊，請參閱 <<c0> [ 擴充 Visual Studio 中 SharePoint 工具](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)。  
+- [!include[vssdk_current_long](../sharepoint/includes/vssdk-current-long-md.md)]。 本逐步解說會使用**VSIX 專案**SDK 來建立 VSIX 封裝，來部署專案項目中的範本。 如需詳細資訊，請參閱 <<c0> [ 擴充 Visual Studio 中 SharePoint 工具](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)。  
   
- 下列概念的知識會很有幫助，但並非必要，若要完成本逐步解說：  
+  下列概念的知識會很有幫助，但並非必要，若要完成本逐步解說：  
   
--   中的 BDC 服務[!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)]。 如需詳細資訊，請參閱 < [BDC 架構](http://go.microsoft.com/fwlink/?LinkId=177798)。  
+- 中的 BDC 服務[!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)]。 如需詳細資訊，請參閱 < [BDC 架構](http://go.microsoft.com/fwlink/?LinkId=177798)。  
   
--   BDC 模型的 XML 結構描述。 如需詳細資訊，請參閱 < [BDC 模型的基礎結構](http://go.microsoft.com/fwlink/?LinkId=177799)。  
+- BDC 模型的 XML 結構描述。 如需詳細資訊，請參閱 < [BDC 模型的基礎結構](http://go.microsoft.com/fwlink/?LinkId=177799)。  
   
 ## <a name="create-the-projects"></a>建立專案
  若要完成此逐步解說中，您需要建立兩個專案：  
   
--   若要建立 VSIX 封裝，來部署專案項目擴充功能的 VSIX 專案。  
+- 若要建立 VSIX 封裝，來部署專案項目擴充功能的 VSIX 專案。  
   
--   實作專案項目延伸的類別庫專案。  
+- 實作專案項目延伸的類別庫專案。  
   
- 開始本逐步解說建立的專案。  
+  開始本逐步解說建立的專案。  
   
 #### <a name="to-create-the-vsix-project"></a>若要建立 VSIX 專案  
   
@@ -164,7 +164,7 @@ ms.locfileid: "42626142"
   
 1.  在 **方案總管**，在 GenerateExternalDataLists 專案中，開啟 source.extension.vsixmanifest 檔案中的捷徑功能表，然後選擇**開啟**。  
   
-     Visual Studio 會在資訊清單編輯器中開啟檔案。 Source.extension.vsixmanifest 檔案中會是所有的 VSIX 套件所需 extension.vsixmanifest 檔案的基礎。 如需有關這個檔案的詳細資訊，請參閱 < [VSIX 延伸結構描述 1.0 參考](http://msdn.microsoft.com/en-us/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)。  
+     Visual Studio 會在資訊清單編輯器中開啟檔案。 Source.extension.vsixmanifest 檔案中會是所有的 VSIX 套件所需 extension.vsixmanifest 檔案的基礎。 如需有關這個檔案的詳細資訊，請參閱 < [VSIX 延伸結構描述 1.0 參考](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)。  
   
 2.  在  **Product Name**方塊中，輸入**外部的資料清單產生器**。  
   
@@ -179,7 +179,7 @@ ms.locfileid: "42626142"
 6.  在 **型別**清單中，選擇**Microsoft.VisualStudio.MefComponent**。  
   
     > [!NOTE]  
-    >  這個值會對應到`MefComponent`extension.vsixmanifest 檔案中的項目。 這個元素會指定在 VSIX 封裝中的延伸模組組件名稱。 如需詳細資訊，請參閱 < [MEFComponent 項目 （VSX 結構描述）](http://msdn.microsoft.com/en-us/8a813141-8b73-44c9-b80b-ca85bbac9551)。  
+    >  這個值會對應到`MefComponent`extension.vsixmanifest 檔案中的項目。 這個元素會指定在 VSIX 封裝中的延伸模組組件名稱。 如需詳細資訊，請參閱 < [MEFComponent 項目 （VSX 結構描述）](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\))。  
   
 7.  在 **來源**清單中，選擇**目前方案中的專案**。  
   

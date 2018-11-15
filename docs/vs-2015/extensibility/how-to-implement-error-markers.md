@@ -15,12 +15,12 @@ ms.assetid: e8e78514-5720-4fc2-aa43-00b6af482e38
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3ff4df9e76494e6409ce9d988781926e1a10602a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f1ced074e3257bee41cb9ffcc33279e17b148bbf
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49242953"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49838279"
 ---
 # <a name="how-to-implement-error-markers"></a>如何： 實作錯誤標記
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,23 +31,23 @@ ms.locfileid: "49242953"
   
 ### <a name="to-implement-the-red-wavy-underline-feature"></a>若要實作紅色波浪底線功能  
   
-1.  選取想要放置的紅色波浪底線的文字。  
+1. 選取想要放置的紅色波浪底線的文字。  
   
-2.  建立型別的標記`MARKER_CODESENSE_ERROR`。 如需詳細資訊，請參閱 <<c0> [ 如何： 新增標準的文字標記](../extensibility/how-to-add-standard-text-markers.md)。  
+2. 建立型別的標記`MARKER_CODESENSE_ERROR`。 如需詳細資訊，請參閱 <<c0> [ 如何： 新增標準的文字標記](../extensibility/how-to-add-standard-text-markers.md)。  
   
-3.  在那之後，傳入<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient>介面指標。  
+3. 在那之後，傳入<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient>介面指標。  
   
- 此程序也可讓您透過指定的標記建立提示文字或特殊的內容功能表。 如需詳細資訊，請參閱 <<c0> [ 如何： 新增標準的文字標記](../extensibility/how-to-add-standard-text-markers.md)。  
+   此程序也可讓您透過指定的標記建立提示文字或特殊的內容功能表。 如需詳細資訊，請參閱 <<c0> [ 如何： 新增標準的文字標記](../extensibility/how-to-add-standard-text-markers.md)。  
   
- 需要下列物件時，才能夠顯示錯誤標記。  
+   需要下列物件時，才能夠顯示錯誤標記。  
   
--   剖析器。  
+- 剖析器。  
   
--   工作提供者 (也就是實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsTaskProvider2>)，以找出重新剖析程式會保留行資訊中的變更記錄。  
+- 工作提供者 (也就是實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsTaskProvider2>)，以找出重新剖析程式會保留行資訊中的變更記錄。  
   
--   文字檢視篩選條件，用來擷取插入號變更事件 檢視使用<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewEvents.OnChangeCaretLine%2A>) 方法。  
+- 文字檢視篩選條件，用來擷取插入號變更事件 檢視使用<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewEvents.OnChangeCaretLine%2A>) 方法。  
   
- 剖析器、 工作提供者，以及篩選器提供，讓錯誤標記必要的基礎結構。 下列步驟提供此程序顯示錯誤標記。  
+  剖析器、 工作提供者，以及篩選器提供，讓錯誤標記必要的基礎結構。 下列步驟提供此程序顯示錯誤標記。  
   
 1.  在正在進行篩選檢視中，篩選會取得與該檢視的資料相關聯的工作提供者的指標。  
   

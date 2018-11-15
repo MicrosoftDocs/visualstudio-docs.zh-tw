@@ -20,15 +20,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: e80857ae1cfafdc6733af3eec78735dc249f4905
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 94d13514800bac80723031c6bba7920d28ac83e6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49287478"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49877292"
 ---
 # <a name="ca1063-implement-idisposable-correctly"></a>CA1063：必須正確實作 IDisposable
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|ImplementIDisposableCorrectly|
@@ -39,23 +40,23 @@ ms.locfileid: "49287478"
 ## <a name="cause"></a>原因
  `IDisposable` 未正確實作。 此問題的部分原因如下：
 
--   IDisposable 是在類別中重新實作。
+- IDisposable 是在類別中重新實作。
 
--   完成重新覆寫。
+- 完成重新覆寫。
 
--   Dispose 會覆寫。
+- Dispose 會覆寫。
 
--   Dispose （） 不是公用，密封，或名為 Dispose。
+- Dispose （） 不是公用，密封，或名為 Dispose。
 
--   Dispose （bool） 不受保護、 虛擬或未密封。
+- Dispose （bool） 不受保護、 虛擬或未密封。
 
--   非密封類型，在 dispose （） 必須呼叫 dispose （true）。
+- 非密封類型，在 dispose （） 必須呼叫 dispose （true）。
 
--   對於非密封類型，完成實作不會呼叫其中一個或兩個 dispose （bool） 或案例的類別完成項。
+- 對於非密封類型，完成實作不會呼叫其中一個或兩個 dispose （bool） 或案例的類別完成項。
 
- 這些模式的其中任何一個的違規會觸發這個警告。
+  這些模式的其中任何一個的違規會觸發這個警告。
 
- 每個未密封的根 IDisposable 類型都必須提供它自己受保護虛擬 void dispose （bool） 方法。 Dispose （） 應該呼叫 Dipose(true) 和 Finalize 應該呼叫 dispose （false）。 如果您要建立未密封的根 IDisposable 類型，您必須定義 dispose （bool），並呼叫它。 如需詳細資訊，請參閱 <<c0> [ 清除 Unmanaged 資源向上](http://msdn.microsoft.com/library/a17b0066-71c2-4ba4-9822-8e19332fc213)中[Framework 設計方針](http://msdn.microsoft.com/library/5fbcaf4f-ea2a-4d20-b0d6-e61dee202b4b).NET Framework 文件的章節。
+  每個未密封的根 IDisposable 類型都必須提供它自己受保護虛擬 void dispose （bool） 方法。 Dispose （） 應該呼叫 Dipose(true) 和 Finalize 應該呼叫 dispose （false）。 如果您要建立未密封的根 IDisposable 類型，您必須定義 dispose （bool），並呼叫它。 如需詳細資訊，請參閱 <<c0> [ 清除 Unmanaged 資源向上](http://msdn.microsoft.com/library/a17b0066-71c2-4ba4-9822-8e19332fc213)中[Framework 設計方針](http://msdn.microsoft.com/library/5fbcaf4f-ea2a-4d20-b0d6-e61dee202b4b).NET Framework 文件的章節。
 
 ## <a name="rule-description"></a>規則描述
  所有的 IDisposable 類型都需正確地實作 Dispose 模式。

@@ -36,12 +36,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a84c87ecc3c5ca0ab1d2fe52e1ff56265c9365d
-ms.sourcegitcommit: e680e8ac675f003ebcc8f8c86e27f54ff38da662
+ms.openlocfilehash: 37e34d01d2488ad5345ff65237cd708c06764661
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49356804"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49816679"
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>使用 Visual Studio 偵錯工具中的中斷點
 中斷點是在您的開發人員工具箱中最重要的偵錯技術之一。 每當您要暫停偵錯工具執行，您可以設定中斷點。 例如，您可能要查看程式碼變數的狀態，或查看呼叫堆疊，在特定中斷點。  
@@ -203,15 +203,15 @@ ms.locfileid: "49356804"
 
 **若要設定中斷點條件：**
 
-1.  以滑鼠右鍵按一下中斷點符號，然後選取**條件**。 或將滑鼠停在中斷點符號，選取**設定**圖示，然後再選取**條件**中**中斷點設定**視窗。  
+1. 以滑鼠右鍵按一下中斷點符號，然後選取**條件**。 或將滑鼠停在中斷點符號，選取**設定**圖示，然後再選取**條件**中**中斷點設定**視窗。  
 
-    您也可以設定條件**中斷點**視窗中的以滑鼠右鍵按一下中斷點，然後選取**設定**，然後選取**條件**。 
+   您也可以設定條件**中斷點**視窗中的以滑鼠右鍵按一下中斷點，然後選取**設定**，然後選取**條件**。 
   
-  ![中斷點設定](../debugger/media/breakpointsettings.png "BreakpointSettings")  
+   ![中斷點設定](../debugger/media/breakpointsettings.png "BreakpointSettings")  
   
-1. 在下拉式清單中，選取**條件運算式**，**叫用次數**，或**篩選**，並據此設定的值。 
+2. 在下拉式清單中，選取**條件運算式**，**叫用次數**，或**篩選**，並據此設定的值。 
   
-1. 選取 **關閉 **或按**Ctrl**+**Enter**以關閉 **中斷點設定**視窗。 或從**中斷點**視窗中，選取**確定**以關閉對話方塊。 
+3. 選取 **關閉 **或按**Ctrl**+**Enter**以關閉 **中斷點設定**視窗。 或從**中斷點**視窗中，選取**確定**以關閉對話方塊。 
 
 顯示具有條件設定中斷點**+** 原始程式碼中的符號和**中斷點**windows。 
 

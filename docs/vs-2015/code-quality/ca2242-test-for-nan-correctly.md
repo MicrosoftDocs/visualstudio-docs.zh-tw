@@ -19,15 +19,16 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: d04ac9152ef1b60a6d546ed94713bc267584ae36
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d7cd2d6d823dfb13c86ad3f2cc4ef001e854955c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49236492"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49842478"
 ---
 # <a name="ca2242-test-for-nan-correctly"></a>CA2242：必須正確測試 NaN
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|TestForNaNCorrectly|

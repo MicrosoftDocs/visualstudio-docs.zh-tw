@@ -13,12 +13,12 @@ ms.assetid: 73519dd9-f3d5-49b6-a634-38881b459ea4
 caps.latest.revision: 19
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: b7a032db42003c62fbd96dc6e2ba54bb152d7e78
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: cc12f77a8f1c3443606537dd6f818e9ee6625327
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49182172"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49853177"
 ---
 # <a name="using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing"></a>使用虛設常式隔離應用程式的各個組件，方便進行單元測試
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -125,13 +125,13 @@ End Function
   
  介面插入適用下列規則：  
   
--   應用程式所有元件的程式碼絕對不能明確參考另一個元件中的類別，無論是在宣告中或 `new` 陳述式中。 相反地，請使用介面宣告變數和參數。 只能由元件的容器建立元件執行個體。  
+- 應用程式所有元件的程式碼絕對不能明確參考另一個元件中的類別，無論是在宣告中或 `new` 陳述式中。 相反地，請使用介面宣告變數和參數。 只能由元件的容器建立元件執行個體。  
   
-     在此範例中，「元件」是指類別或您開發及一併更新的類別群組。 通常，元件是指 Visual Studio 專案中的程式碼。 同一個元件中的類別會同時更新，因此分離這些類別並沒有那麼重要。  
+   在此範例中，「元件」是指類別或您開發及一併更新的類別群組。 通常，元件是指 Visual Studio 專案中的程式碼。 同一個元件中的類別會同時更新，因此分離這些類別並沒有那麼重要。  
   
-     此外，您也不需要分離元件與 System.dll 等相對穩定平台的類別。 為所有類別撰寫介面會使程式碼變得過於複雜。  
+   此外，您也不需要分離元件與 System.dll 等相對穩定平台的類別。 為所有類別撰寫介面會使程式碼變得過於複雜。  
   
- 使用像這樣的介面可以分離 StockAnalyzer 程式碼和 StockFeed，使程式碼變得更好：  
+  使用像這樣的介面可以分離 StockAnalyzer 程式碼和 StockFeed，使程式碼變得更好：  
   
 ```csharp  
 public interface IStockFeed  

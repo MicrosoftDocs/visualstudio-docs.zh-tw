@@ -18,25 +18,25 @@ ms.assetid: 8f4af525-39e5-4e69-92c8-d3efabe80bb2
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 105a4ed0f30991fe656c7f257ca766dd06c150a9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0b00f2ae82a2fd8afb62dcd42237bd313c0355ff
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49261712"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49941707"
 ---
 # <a name="commands-and-menus-that-use-interop-assemblies"></a>使用 Interop 組件的命令和功能表
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 使用 interop 組件中實作功能表和工具列命令的 VSPackage 必須：  
   
--   通知[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]有關其支援的命令和是否在目前啟用的整合式的開發環境 (IDE)。  
+- 通知[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]有關其支援的命令和是否在目前啟用的整合式的開發環境 (IDE)。  
   
--   遵守的規則 （合約） 處理的命令。  
+- 遵守的規則 （合約） 處理的命令。  
   
--   明確實作命令處理，使用其中一種<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>或<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy>介面。  
+- 明確實作命令處理，使用其中一種<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>或<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy>介面。  
   
- 以下說明如何執行這些工作。  
+  以下說明如何執行這些工作。  
   
 ## <a name="in-this-section"></a>本節內容  
  [使用 Interop 組件判斷命令狀態](../../extensibility/internals/determining-command-status-by-using-interop-assemblies.md)  

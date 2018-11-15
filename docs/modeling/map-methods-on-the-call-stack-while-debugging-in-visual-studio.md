@@ -30,12 +30,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a99899f9a909ead3db7d925cd703612a7f68bcf2
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: e1d0139463f468ed6d909658bb143412dc122020
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47858702"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49856180"
 ---
 # <a name="map-methods-on-the-call-stack-while-debugging-in-visual-studio"></a>在 Visual Studio 中進行偵錯時對應呼叫堆疊上的方法
 建立 code map 以視覺方式追蹤呼叫堆疊，當您偵錯。 您可以在對應圖上做筆記，追蹤程式碼的執行狀況，以便專注於尋找 Bug。
@@ -44,27 +44,27 @@ ms.locfileid: "47858702"
 
  您需要下列項目：
 
--   [Visual Studio 企業版](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)
+- [Visual Studio 企業版](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)
 
--   您可以偵錯，例如 Visual C#、 Visual Basic、 c + +、 JavaScript 或 X + + 的程式碼
+- 您可以偵錯，例如 Visual C#、 Visual Basic、 c + +、 JavaScript 或 X + + 的程式碼
 
- 請參閱：
+  請參閱：
 
--   [影片： 可以使用 Code Map 偵錯工具整合 (Channel 9) 以視覺化方式偵錯](http://go.microsoft.com/fwlink/?LinkId=293418)
+- [影片： 可以使用 Code Map 偵錯工具整合 (Channel 9) 以視覺化方式偵錯](http://go.microsoft.com/fwlink/?LinkId=293418)
 
--   [對應呼叫堆疊](#MapStack)
+- [對應呼叫堆疊](#MapStack)
 
--   [附註解的程式碼](#MakeNotes)
+- [附註解的程式碼](#MakeNotes)
 
--   [下一個呼叫堆疊更新對應圖](#UpdateMap)
+- [下一個呼叫堆疊更新對應圖](#UpdateMap)
 
--   [將相關程式碼加入至對應](#AddRelatedCode)
+- [將相關程式碼加入至對應](#AddRelatedCode)
 
--   [使用地圖尋找 bug](#FindBugs)
+- [使用地圖尋找 bug](#FindBugs)
 
--   [問與答](#QA)
+- [問與答](#QA)
 
- 如需命令和使用 code map 時，您可以使用的動作的詳細資訊，請參閱 <<c0> [ 瀏覽和重新整理 code map](../modeling/browse-and-rearrange-code-maps.md)。
+  如需命令和使用 code map 時，您可以使用的動作的詳細資訊，請參閱 <<c0> [ 瀏覽和重新整理 code map](../modeling/browse-and-rearrange-code-maps.md)。
 
 ## <a name="MapStack"></a> 對應呼叫堆疊
 
@@ -129,63 +129,63 @@ ms.locfileid: "47858702"
 
 ## <a name="QA"></a> 問與答
 
--   **並非所有的呼叫會顯示在地圖上。為什麼？**
+- **並非所有的呼叫會顯示在地圖上。為什麼？**
 
-     根據預設，只有您的程式碼會出現在對應圖上。 若要查看外部程式碼，它在中開啟**呼叫堆疊**視窗：
+   根據預設，只有您的程式碼會出現在對應圖上。 若要查看外部程式碼，它在中開啟**呼叫堆疊**視窗：
 
-     ![使用 [呼叫堆疊] 視窗來顯示外部程式碼](../debugger/media/debuggermap_callstackmenu.png)
+   ![使用 [呼叫堆疊] 視窗來顯示外部程式碼](../debugger/media/debuggermap_callstackmenu.png)
 
-     或關閉**啟用 Just My Code**在 Visual Studio 偵錯選項：
+   或關閉**啟用 Just My Code**在 Visual Studio 偵錯選項：
 
-     ![使用 [選項] 對話方塊來顯示外部程式碼](../debugger/media/debuggermap_debugoptions.png)
+   ![使用 [選項] 對話方塊來顯示外部程式碼](../debugger/media/debuggermap_debugoptions.png)
 
--   **變更對應會影響到程式碼嗎？**
+- **變更對應會影響到程式碼嗎？**
 
-     變更對應圖不會影響以任何方式的程式碼。 請放心地重新命名、移動或移除對應圖上的任何項目。
+   變更對應圖不會影響以任何方式的程式碼。 請放心地重新命名、移動或移除對應圖上的任何項目。
 
--   **此訊息表示什麼: 「 圖表可能根據舊版程式碼 」？**
+- **此訊息表示什麼: 「 圖表可能根據舊版程式碼 」？**
 
-     從您上次更新對應圖之後，程式碼可能已經變更。 例如，對應圖上的某個呼叫可能已經不再存在於程式碼中。 關閉訊息，然後先嘗試重建方案後再更新對應圖。
+   從您上次更新對應圖之後，程式碼可能已經變更。 例如，對應圖上的某個呼叫可能已經不再存在於程式碼中。 關閉訊息，然後先嘗試重建方案後再更新對應圖。
 
--   **我要如何控制地圖的版面配置？**
+- **我要如何控制地圖的版面配置？**
 
-     開啟**版面配置**map 工具列上的功能表：
+   開啟**版面配置**map 工具列上的功能表：
 
-    -   變更預設的版面配置。
+  -   變更預設的版面配置。
 
-    -   若要停止自動重新整理對應，請關閉**偵錯時自動配置**。
+  -   若要停止自動重新整理對應，請關閉**偵錯時自動配置**。
 
-    -   若要新增項目時，重新排列盡可能對應，請關閉**累加配置**。
+  -   若要新增項目時，重新排列盡可能對應，請關閉**累加配置**。
 
--   **可以與其他人共用對應嗎？**
+- **可以與其他人共用對應嗎？**
 
-     您可以將對應匯出，如果您有 Microsoft Outlook，或將它儲存到您的解決方案，因此您可以將它簽入原始檔控制傳送給其他人。
+   您可以將對應匯出，如果您有 Microsoft Outlook，或將它儲存到您的解決方案，因此您可以將它簽入原始檔控制傳送給其他人。
 
-     ![與其他人共用堆疊呼叫 Code Map](../debugger/media/debuggermap_sharewithothers.png)
+   ![與其他人共用堆疊呼叫 Code Map](../debugger/media/debuggermap_sharewithothers.png)
 
--   **如何停止自動加入新的呼叫堆疊的對應？**
+- **如何停止自動加入新的呼叫堆疊的對應？**
 
-     選擇![按鈕&#45;顯示呼叫堆疊 code map 上自動](../debugger/media/debuggermap_automaticupdateicon.gif)map 工具列上。 若要手動新增至對應的目前呼叫堆疊，請按**Ctrl** + **Shift** + **`**。
+   選擇![按鈕&#45;顯示呼叫堆疊 code map 上自動](../debugger/media/debuggermap_automaticupdateicon.gif)map 工具列上。 若要手動新增至對應的目前呼叫堆疊，請按**Ctrl** + **Shift** + **`**。
 
-     偵錯時，將現有的呼叫堆疊，在地圖上反白顯示對應圖會繼續。
+   偵錯時，將現有的呼叫堆疊，在地圖上反白顯示對應圖會繼續。
 
--   **項目圖示和箭號的意義為何？**
+- **項目圖示和箭號的意義為何？**
 
-     若要取得項目的相關詳細資訊，請將滑鼠指標移並查看項目的工具提示。 您也可以看看**圖例**若要深入了解每個圖示的意義。
+   若要取得項目的相關詳細資訊，請將滑鼠指標移並查看項目的工具提示。 您也可以看看**圖例**若要深入了解每個圖示的意義。
 
-     ![呼叫堆疊 Code Map 上的圖示代表什麼意思？](../debugger/media/debuggermap_showlegend.png)
+   ![呼叫堆疊 Code Map 上的圖示代表什麼意思？](../debugger/media/debuggermap_showlegend.png)
 
- 請參閱：
+  請參閱：
 
--   [對應呼叫堆疊](#MapStack)
+- [對應呼叫堆疊](#MapStack)
 
--   [附註解的程式碼](#MakeNotes)
+- [附註解的程式碼](#MakeNotes)
 
--   [下一個呼叫堆疊更新對應圖](#UpdateMap)
+- [下一個呼叫堆疊更新對應圖](#UpdateMap)
 
--   [將相關程式碼加入至對應](#AddRelatedCode)
+- [將相關程式碼加入至對應](#AddRelatedCode)
 
--   [使用地圖尋找 bug](#FindBugs)
+- [使用地圖尋找 bug](#FindBugs)
 
 ## <a name="see-also"></a>另請參閱
 

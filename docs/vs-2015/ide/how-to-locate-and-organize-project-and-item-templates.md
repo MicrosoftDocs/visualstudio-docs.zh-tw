@@ -21,12 +21,12 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e497800f209c7653c1f47904df03baf604b3b134
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2a3954e5d18db6585c8dbda017773969f96b33de
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49229394"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49830973"
 ---
 # <a name="how-to-locate-and-organize-project-and-item-templates"></a>如何：尋找並組織專案範本和項目範本
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,26 +39,26 @@ ms.locfileid: "49229394"
 ### <a name="installed-templates"></a>已安裝的範本  
  依預設，與產品一起安裝的範本位於：  
   
--   \\*VisualStudioInstallationDirectory*\Common7\IDE\ItemTemplates\\<語言>\\<地區設定>\  
+- \\*VisualStudioInstallationDirectory*\Common7\IDE\ItemTemplates\\<語言>\\<地區設定>\  
   
--   \\*VisualStudioInstallationDirectory*\Common7\IDE\ProjectTemplates\\<語言>\\<地區設定>*\\*  
+- \\*VisualStudioInstallationDirectory*\Common7\IDE\ProjectTemplates\\<語言>\\<地區設定>*\\*  
   
- 例如，下列目錄包含英文的 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 專案範本：  
+  例如，下列目錄包含英文的 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 專案範本：  
   
- C:\\*VisualStudioInstallationDirectory*\Common7\IDE\ItemTemplates\VisualBasic\1033\  
+  C:\\*VisualStudioInstallationDirectory*\Common7\IDE\ItemTemplates\VisualBasic\1033\  
   
 ### <a name="custom-templates"></a>自訂範本  
  依預設，自訂範本位於：  
   
--   \My Documents\Visual Studio *Version*\Templates\ProjectTemplates\\<語言>\  
+- \My Documents\Visual Studio *Version*\Templates\ProjectTemplates\\<語言>\  
   
--   \My Documents\Visual Studio <版本>\Templates\ItemTemplates\\<語言>\  
+- \My Documents\Visual Studio <版本>\Templates\ItemTemplates\\<語言>\  
   
- 例如，下列目錄包含自訂的 [!INCLUDE[csprcs](../includes/csprcs-md.md)] 專案範本：  
+  例如，下列目錄包含自訂的 [!INCLUDE[csprcs](../includes/csprcs-md.md)] 專案範本：  
   
- C:\Documents and Settings\UserName\My 文件\\< 的 Visual Studio 版本\>\Templates\ProjectTemplates\Visual C# \  
+  C:\Documents and Settings\UserName\My 文件\\< 的 Visual Studio 版本\>\Templates\ProjectTemplates\Visual C# \  
   
- 自訂範本不包含當地語系化之範本的子目錄。 您可以在 [選項] 對話方塊的 [環境\專案和方案] 下變更自訂範本的預設目錄。  
+  自訂範本不包含當地語系化之範本的子目錄。 您可以在 [選項] 對話方塊的 [環境\專案和方案] 下變更自訂範本的預設目錄。  
   
 ## <a name="organizing-templates"></a>組織範本  
  [新增專案] 和 [新增項目] 對話方塊中的類別反映存在於已安裝和自訂範本位置的目錄結構。 您可以修改這些目錄結構，以對您有意義的方式組織範本。  
@@ -73,25 +73,25 @@ ms.locfileid: "49229394"
   
 ##### <a name="to-create-new-installed-project-template-categories"></a>建立新的已安裝專案範本類別  
   
-1.  在已安裝的範本目錄的語言資料夾中建立資料夾。 例如，若要為 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 專案範本建立 Office 類別，您將建立下列目錄：  
+1. 在已安裝的範本目錄的語言資料夾中建立資料夾。 例如，若要為 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 專案範本建立 Office 類別，您將建立下列目錄：  
   
-     \\*VisualStudioInstallationDirectory*\Common7\IDE\ProjectTemplates\VisualBasic\1033\Office\  
+    \\*VisualStudioInstallationDirectory*\Common7\IDE\ProjectTemplates\VisualBasic\1033\Office\  
   
-2.  將此類別的所有範本都放在新資料夾中。  
+2. 將此類別的所有範本都放在新資料夾中。  
   
-3.  關閉 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的所有執行個體。  
+3. 關閉 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的所有執行個體。  
   
-4.  在 [開始] 功能表上，按一下 [執行]、鍵入 **cmd**，然後按一下 [確定]。  
+4. 在 [開始] 功能表上，按一下 [執行]、鍵入 **cmd**，然後按一下 [確定]。  
   
-5.  在命令提示字元中，找出包含 devenv.exe 的目錄，然後鍵入 **devenv /installvstemplates**。  
+5. 在命令提示字元中，找出包含 devenv.exe 的目錄，然後鍵入 **devenv /installvstemplates**。  
   
-6.  執行 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。  
+6. 執行 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。  
   
-7.  按一下 [ **檔案** ] 功能表上的 [ **新增**]，然後按一下 [ **專案**]。  
+7. 按一下 [ **檔案** ] 功能表上的 [ **新增**]，然後按一下 [ **專案**]。  
   
-8.  確認 Office 類別出現在 [新增專案] 對話方塊中，位於 [專案類型] 窗格的 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 底下。  
+8. 確認 Office 類別出現在 [新增專案] 對話方塊中，位於 [專案類型] 窗格的 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 底下。  
   
- 您也可以將專案項目範本子集分組成自訂資料夾。  
+   您也可以將專案項目範本子集分組成自訂資料夾。  
   
 ##### <a name="to-create-new-installed-item-template-categories"></a>建立新的已安裝項目範本類別  
   
@@ -120,17 +120,17 @@ ms.locfileid: "49229394"
   
 ##### <a name="to-create-new-custom-project-template-categories"></a>建立新的自訂專案範本類別  
   
-1.  在自訂專案範本目錄的語言資料夾中建立資料夾。 例如，若要為 [!INCLUDE[csprcs](../includes/csprcs-md.md)] 範本建立 HelloWorld 類別，您將建立下列目錄：  
+1. 在自訂專案範本目錄的語言資料夾中建立資料夾。 例如，若要為 [!INCLUDE[csprcs](../includes/csprcs-md.md)] 範本建立 HelloWorld 類別，您將建立下列目錄：  
   
-     \My 文件\\< 的 Visual Studio 版本\>\Templates\ProjectTemplates\CSharp\HelloWorld\  
+    \My 文件\\< 的 Visual Studio 版本\>\Templates\ProjectTemplates\CSharp\HelloWorld\  
   
-2.  將此類別的所有範本都放在新資料夾中。  
+2. 將此類別的所有範本都放在新資料夾中。  
   
-3.  按一下 [ **檔案** ] 功能表上的 [ **新增**]，然後按一下 [ **專案**]。  
+3. 按一下 [ **檔案** ] 功能表上的 [ **新增**]，然後按一下 [ **專案**]。  
   
-4.  確認 HelloWorld 類別出現在 [新增專案] 對話方塊中，位於 [專案類型] 窗格的 [!INCLUDE[csprcs](../includes/csprcs-md.md)] 底下。  
+4. 確認 HelloWorld 類別出現在 [新增專案] 對話方塊中，位於 [專案類型] 窗格的 [!INCLUDE[csprcs](../includes/csprcs-md.md)] 底下。  
   
- 您也可以將自訂項目範本子集分組成自訂資料夾。  
+   您也可以將自訂項目範本子集分組成自訂資料夾。  
   
 ##### <a name="to-create-new-custom-item-template-categories"></a>建立新的自訂項目範本類別  
   

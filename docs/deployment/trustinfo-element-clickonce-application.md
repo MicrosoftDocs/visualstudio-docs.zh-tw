@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 75695598c31b1dcc3a8ae4845a41249ead71236b
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: d6d6f7955cb010d981b62e2b9fcdc70a092d76ef
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39151057"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49941218"
 ---
 # <a name="lttrustinfogt-element-clickonce-application"></a>&lt;trustInfo&gt;項目 （ClickOnce 應用程式）
 描述應用程式在用戶端電腦上執行所需的最低安全性權限。  
@@ -69,7 +69,7 @@ ms.locfileid: "39151057"
 ```  
   
 ## <a name="elements-and-attributes"></a>項目和屬性  
- `trustInfo` 為必要元素，位於 `asm.v2` 命名空間。 其沒有屬性，包含下列元素。  
+ `trustInfo` 項目是必要的，且位於 `asm.v2` 命名空間。 其沒有屬性，包含下列元素。  
   
 ## <a name="security"></a>安全性  
  必要。 這個元素是 `trustInfo` 元素的子項。 其包含 `applicationRequestMinimum` 元素，而沒有屬性。  
@@ -142,21 +142,21 @@ ms.locfileid: "39151057"
 ## <a name="requestedexecutionlevel"></a>requestedExecutionLevel  
  選擇性。 識別要執行應用程式要求的安全性層級。 這個元素沒有子項，並具有下列屬性。  
   
--   `Level`  
+- `Level`  
   
-     必要。 指出應用程式要求的安全性層級。 可能的值為：  
+   必要。 指出應用程式要求的安全性層級。 可能的值為：  
   
-     `asInvoker`，未要求其他權限。 這個層級不需要其他信任提示。  
+   `asInvoker`，未要求其他權限。 這個層級不需要其他信任提示。  
   
-     `highestAvailable`，要求父處理序可提供的最高權限。  
+   `highestAvailable`，要求父處理序可提供的最高權限。  
   
-     `requireAdministrator`，要求完整系統管理員權限。  
+   `requireAdministrator`，要求完整系統管理員權限。  
   
-     [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式只能以 `asInvoker`值安裝。 以其他任何值安裝則會失敗。  
+   [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式只能以 `asInvoker`值安裝。 以其他任何值安裝則會失敗。  
   
--   `uiAccess`  
+- `uiAccess`  
   
-     選擇性。 指出應用程式是否需要存取受保護的使用者介面元素。 值可以是 `true` 或 `false`，預設為 false。 只有已簽署的應用程式可使用值 true。  
+   選擇性。 指出應用程式是否需要存取受保護的使用者介面元素。 值可以是 `true` 或 `false`，預設為 false。 只有已簽署的應用程式可使用值 true。  
   
 ## <a name="remarks"></a>備註  
  如果 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式要求的權限比用戶端電腦預設要授與者更高，通用語言執行平台的信任管理員會詢問使用者是否要授與應用程式這個提高權限的信任層級。 如果使用者拒絕，應用程式就不會執行；否則會以要求的權限執行。  

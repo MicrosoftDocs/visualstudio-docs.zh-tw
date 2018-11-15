@@ -16,12 +16,12 @@ ms.assetid: 754d4f32-319b-44c9-915f-f7c60e53222e
 caps.latest.revision: 6
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1ee3d25fd7d08ea52c41ef24fdfe654bbf7a2eb2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 15f3af33657bc6673f138d1223e1943308deff77
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49246869"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49919888"
 ---
 # <a name="vsct-xml-schema-conditional-attributes"></a>VSCT XML 結構描述條件式屬性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

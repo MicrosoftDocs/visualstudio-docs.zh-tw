@@ -1,5 +1,5 @@
 ---
-title: Hello World |Microsoft Docs
+title: Hello World 擴充功能教學課程 |Microsoft Docs
 ms.custom: ''
 ms.date: 07/10/2017
 ms.topic: conceptual
@@ -9,12 +9,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 91d9c809d16a3763bed75d5de4c03bd7112c6e8a
-ms.sourcegitcommit: e680e8ac675f003ebcc8f8c86e27f54ff38da662
+ms.openlocfilehash: e2122a98778372690990a75269be2f3087653678
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49356752"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349461"
 ---
 # <a name="create-your-first-extension-hello-world"></a>建立您的第一個延伸模組： Hello World
 
@@ -30,6 +30,9 @@ ms.locfileid: "49356752"
 此範例中，您將使用 Visual C# 中新增自訂的功能表按鈕名為 「 顯示 Hello World ！ 」 看起來像這樣：
 
 ![Hello World 命令](media/hello-world-say-hello-world.png)
+
+> [!NOTE]
+> 這篇文章適用於在 Windows 上的 Visual Studio。 Visual Studio for Mac，請參閱 <<c0> [ 擴充性的逐步解說在 Visual Studio for Mac](/visualstudio/mac/extending-visual-studio-mac-walkthrough)。
 
 ## <a name="prerequisites"></a>必要條件
 
@@ -133,6 +136,6 @@ ms.locfileid: "49356752"
 
 既然您已經知道使用 Visual Studio 擴充性的基本概念，以下是您可以在哪裡進一步：
 
-* [開始開發 Visual Studio 擴充功能](starting-to-develop-visual-studio-extensions.md)-範例、 教學課程。 和發佈您的延伸模組。
+* [開始開發 Visual Studio 擴充功能](starting-to-develop-visual-studio-extensions.md)-範例、 教學課程。 和發佈您的延伸模組
 * [在 Visual Studio 2017 SDK 最新消息](what-s-new-in-the-visual-studio-2017-sdk.md)-Visual Studio 2017 中的新擴充功能
 * [在 Visual Studio SDK 內](internals/inside-the-visual-studio-sdk.md)-了解 Visual Studio 擴充性的詳細資料

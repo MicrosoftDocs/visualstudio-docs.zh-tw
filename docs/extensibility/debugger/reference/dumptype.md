@@ -1,5 +1,5 @@
 ---
-title: DUMPTYPE |Microsoft 文件
+title: DUMPTYPE |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fa44dfa59f4883fa29a1724344124267f28bce9f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5e886649a7eaa5f9f99eb2e2bfcc48985f12a5e4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31099632"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949548"
 ---
 # <a name="dumptype"></a>DUMPTYPE
-指定程式的狀態 （例如執行中的執行緒，堆疊框架和目前的指令位址） 中有多少傾印。  
+指定多少程式的狀態 （例如執行中執行緒的堆疊框架和目前的指令位址），傾印。  
   
 ## <a name="syntax"></a>語法  
   
@@ -44,13 +44,13 @@ public enum enum_DUMPTYPE {
   
 ## <a name="members"></a>成員  
  DUMP_MINIDUMP  
- 指定的小型、 精簡的傾印。  
+ 指定的小、 精簡的傾印。  
   
  DUMP_FULLDUMP  
- 指定的大型、 完整傾印。  
+ 指定的大型的完整傾印。  
   
 ## <a name="remarks"></a>備註  
- 做為引數傳遞[WriteDump](../../../extensibility/debugger/reference/idebugprogram2-writedump.md)方法。  
+ 作為引數[WriteDump](../../../extensibility/debugger/reference/idebugprogram2-writedump.md)方法。  
   
 ## <a name="requirements"></a>需求  
  標頭： msdbg.h  

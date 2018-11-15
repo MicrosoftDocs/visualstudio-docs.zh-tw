@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 84cf5649eac1d3183eb0c50f4a7010f202363a78
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: f29e43c66844f915d9d79de3819166905b083df2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380801"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49813982"
 ---
 # <a name="test-controller-and-test-agent-requirements-for-load-testing"></a>負載測試的測試控制器和測試代理程式需求
 
@@ -31,7 +31,7 @@ ms.locfileid: "39380801"
 下表顯示部署測試控制器和測試代理程式的建議硬體需求。
 
 |**組態**|**元件**|**CPU**|**HD**|**記憶體**|
-|-----------------------|-------------------|-------------|------------|----------------|
+|-|-------------------|-|------------|-|
 |少於 500 位虛擬使用者|測試代理程式|2.6 GHz|10 GB|2 GB|
 |少於 1000 位虛擬使用者|測試代理程式|雙重處理器 2.6 GHz|10 GB|2 GB|
 |N x 1000 位虛擬使用者|測試代理程式|延伸為 N 個代理程式，每個都具有雙重 2.6 Ghz|10GB|2GB|

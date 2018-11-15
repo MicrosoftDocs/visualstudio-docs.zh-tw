@@ -12,12 +12,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: b5e57f5d7b3ab3fa7f956516879f687ff9ac7491
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c2478925ecf481aaf49dbfbe5818d8839b9ad54f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49286464"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49844079"
 ---
 # <a name="customizing-copy-behavior"></a>自訂複製行為
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,19 +29,19 @@ ms.locfileid: "49286464"
   
  根據預設，當使用者將項目複製到 [剪貼簿] 時，也會複製下列項目：  
   
--   所選項目的內嵌子系。 (也就是來源為複製項目之內嵌關聯性的目標項目)。  
+- 所選項目的內嵌子系。 (也就是來源為複製項目之內嵌關聯性的目標項目)。  
   
--   複製項目之間的關聯性連結。  
+- 複製項目之間的關聯性連結。  
   
- 此規則會以遞迴方式套用至複製的項目和連結。  
+  此規則會以遞迴方式套用至複製的項目和連結。  
   
- ![複製並貼上項目](../modeling/media/dslcopypastedefault.png "DslCopyPasteDefault")  
+  ![複製並貼上項目](../modeling/media/dslcopypastedefault.png "DslCopyPasteDefault")  
   
- 複製的項目和連結會經過序列化並儲存在 <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype> (EGP) 中，再置於 [剪貼簿] 上。  
+  複製的項目和連結會經過序列化並儲存在 <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype> (EGP) 中，再置於 [剪貼簿] 上。  
   
- 此外，也會將複製項目的影像置於 [剪貼簿] 上。 如此可讓使用者貼入 Word 等其他應用程式。  
+  此外，也會將複製項目的影像置於 [剪貼簿] 上。 如此可讓使用者貼入 Word 等其他應用程式。  
   
- 使用者可以將複製的項目貼到根據 DSL 定義可接受項目的目標上。 例如，在從元件方案範本產生的 DSL 中，使用者可以將通訊埠貼到元件上，但無法貼到圖表上；也可以將元件貼到圖表上，但無法貼到其他元件上。  
+  使用者可以將複製的項目貼到根據 DSL 定義可接受項目的目標上。 例如，在從元件方案範本產生的 DSL 中，使用者可以將通訊埠貼到元件上，但無法貼到圖表上；也可以將元件貼到圖表上，但無法貼到其他元件上。  
   
 ## <a name="customizing-copy-and-paste-behavior"></a>自訂複製和貼上行為  
  如需有關如何使用程式碼自訂模型的詳細資訊，請參閱 <<c0> [ 巡覽及更新程式碼中的模型](../modeling/navigating-and-updating-a-model-in-program-code.md)。  
@@ -227,15 +227,15 @@ partial class MyDslClipboardCommandSet // EDIT NAME
   
  共有三個值：  
   
--   不要傳播複本  
+- 不要傳播複本  
   
--   只將複本傳播至連結 - 貼上群組時，這個連結的新複本會參考連結另一端的現有項目。  
+- 只將複本傳播至連結 - 貼上群組時，這個連結的新複本會參考連結另一端的現有項目。  
   
--   將複本傳播至連結和相反角色扮演者 - 複製的群組包含連結另一端的項目複本。  
+- 將複本傳播至連結和相反角色扮演者 - 複製的群組包含連結另一端的項目複本。  
   
- ![使用 PropagateCopyToLinkOnly 複製的效果](../modeling/media/dslpropagatecopy.png "DslPropagateCopy")  
+  ![使用 PropagateCopyToLinkOnly 複製的效果](../modeling/media/dslpropagatecopy.png "DslPropagateCopy")  
   
- 您所做的變更會影響複製的項目和影像。  
+  您所做的變更會影響複製的項目和影像。  
   
 ## <a name="programming-copy-and-paste-behavior"></a>程式設計複製和貼上行為  
  DSL 行為在許多方面與複製、貼上、建立及刪除物件相關，這些物件是由合併至圖表的 <xref:Microsoft.VisualStudio.Modeling.ElementOperations> 執行個體所管理。 您可以從 <xref:Microsoft.VisualStudio.Modeling.ElementOperations> 衍生自己的類別，並覆寫您的圖表類別的 <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram.ElementOperations%2A> 屬性，藉此修改 DSL 的行為。  
@@ -249,13 +249,13 @@ partial class MyDslClipboardCommandSet // EDIT NAME
   
 #### <a name="to-define-your-own-elementoperations"></a>定義自己的 ElementOperations  
   
-1.  在 DSL 專案的新檔案中，建立衍生自 <xref:Microsoft.VisualStudio.Modeling.Diagrams.DesignSurfaceElementOperations> 的類別。  
+1. 在 DSL 專案的新檔案中，建立衍生自 <xref:Microsoft.VisualStudio.Modeling.Diagrams.DesignSurfaceElementOperations> 的類別。  
   
-2.  加入圖表類別的部分類別定義。 這個類別的名稱可在**Dsl\GeneratedCode\Diagrams.cs**。  
+2. 加入圖表類別的部分類別定義。 這個類別的名稱可在**Dsl\GeneratedCode\Diagrams.cs**。  
   
-     在圖表類別中，覆寫 <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram.ElementOperations%2A> 以傳回 ElementOperations 子類別的執行個體。 每次呼叫都應該傳回相同的執行個體。  
+    在圖表類別中，覆寫 <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram.ElementOperations%2A> 以傳回 ElementOperations 子類別的執行個體。 每次呼叫都應該傳回相同的執行個體。  
   
- 在 DslPackage 專案的自訂程式碼檔案中加入這個程式碼：  
+   在 DslPackage 專案的自訂程式碼檔案中加入這個程式碼：  
   
 ```csharp  
   

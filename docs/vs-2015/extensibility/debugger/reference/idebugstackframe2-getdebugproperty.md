@@ -17,12 +17,12 @@ ms.assetid: 02c2fa04-1424-4bca-9936-feaecd2afab6
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 62739818f038b832ef4cf4bff06b9a57ca4ff4a6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 610271f58c979af8691feefa8b7c6038a3fec414
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49260828"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49899093"
 ---
 # <a name="idebugstackframe2getdebugproperty"></a>IDebugStackFrame2::GetDebugProperty
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

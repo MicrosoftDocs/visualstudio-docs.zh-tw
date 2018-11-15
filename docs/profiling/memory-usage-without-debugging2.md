@@ -1,7 +1,7 @@
 ---
 title: 不使用 VS 偵錯工具分析記憶體使用量 | Microsoft Docs
 ms.custom: H1Hack27Feb2017
-ms.date: 11/04/2016
+ms.date: 09/28/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
@@ -14,23 +14,23 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e6647fb758d6895db98aa6bad47295a6a4aae86
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 4fb3f0c5d44ed8043266640cfeb30838f7d37894
+ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35668393"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "51220771"
 ---
 # <a name="analyze-memory-usage-without-the-visual-studio-debugger"></a>不使用 Visual Studio 偵錯工具分析記憶體使用量
 您可以使用「記憶體使用量」工具 (不偵錯) 來執行下列動作  
   
--   在開發案例時，就在 Visual Studio 中監控應用程式的記憶體使用量。  
+- 在開發案例時，就在 Visual Studio 中監控應用程式的記憶體使用量。  
   
--   建立應用程式記憶體狀態的詳細快照。  
+- 建立應用程式記憶體狀態的詳細快照。  
   
--   比較快照，以找出記憶體問題的根本原因。  
+- 比較快照，以找出記憶體問題的根本原因。  
   
- 本主題說明如何使用記憶體使用量工具，分析 UWP XAML 應用程式。 如果您想要對使用 JavaScript 和 HTML 的 UWP 應用程式分析記憶體使用情況，請參閱[分析記憶體使用量 (JavaScript)](../profiling/javascript-memory.md)。  
+  目前，若要測量 .NET Core 應用程式的記憶體使用量，您必須使用已連結偵錯工具的工具。 至於其他受控和原生應用程式，您可以使用已連結或未連結偵錯工具的工具。 本主題中的螢幕擷取畫面顯示 UWP XAML 應用程式。 如果您想要對使用 JavaScript 和 HTML 的 UWP 應用程式分析記憶體使用情況，請參閱[分析記憶體使用量 (JavaScript)](../profiling/javascript-memory.md)。
   
 ## <a name="start-a-memory-usage-diagnostic-session"></a>開始記憶體使用量診斷工作階段  
   
@@ -69,13 +69,13 @@ ms.locfileid: "35668393"
 ###  <a name="BKMK_Memory_Usage_snapshot_views"></a>記憶體使用量快照檢視  
  使用快照檢視可以在新的 Visual Studio 視窗中開啟詳細報表。 有兩種快照檢視：  
   
--   [快照詳細資料報表](#snapshot-reports)會顯示一張快照中的類型和執行個體。  
+- [快照詳細資料報表](#snapshot-reports)會顯示一張快照中的類型和執行個體。  
   
--   [快照差異 (diff) 報表](#snapshot-difference-diff-reports)會比較兩張快照中的類型和執行個體。  
+- [快照差異 (diff) 報表](#snapshot-difference-diff-reports)會比較兩張快照中的類型和執行個體。  
   
- ![快照檢視連結](../profiling/media/memuse__snapshotview_numbered.png "MEMUSE__SnapshotView_Numbered")  
+  ![快照檢視連結](../profiling/media/memuse__snapshotview_numbered.png "MEMUSE__SnapshotView_Numbered")  
   
- 在快照檢視的圖片中，有編號的項目是開啟 [記憶體使用量] 報表檢視的連結。  
+  在快照檢視的圖片中，有編號的項目是開啟 [記憶體使用量] 報表檢視的連結。  
   
 |||  
 |-|-|  
@@ -204,5 +204,5 @@ ms.locfileid: "35668393"
  [JavaScript 記憶體](../profiling/javascript-memory.md)  
  [Visual Studio 中的分析](../profiling/index.md)  
  [初步認識分析工具](../profiling/profiling-feature-tour.md)  
- [使用 C++、C# 及 Visual Basic 的 UWP App 的效能最佳做法](http://msdn.microsoft.com/library/windows/apps/hh750313.aspx)   
+ [使用 C++、C# 及 Visual Basic 的 UWP App 的效能最佳做法](/previous-versions/windows/apps/hh750313\(v\=win.10\))   
  [使用 Visual Studio 中的新記憶體使用量工具來診斷記憶體問題](http://go.microsoft.com/fwlink/p/?LinkId=394706)

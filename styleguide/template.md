@@ -92,7 +92,7 @@ Markdown 使用 \*、\` 和 \# 等特殊字元來設定格式。 如果要在內
 
 如果 Markdown 檔案中出現 URL，系統會將它轉換成可點擊的連結。
 
-- 範例：http://www.github.com
+- 範例： http://www.github.com
 
 ### <a name="links-to-apis"></a>API 的連結
 
@@ -330,7 +330,7 @@ docs.microsoft 為 GitHub Flavored Markdown 提供幾個額外的延伸模組。
 > [!div class="button"]
 [按鈕連結](../docs/core/index.md)
 
-您可以在 [Intune 文件](https://docs.microsoft.com/en-us/intune/get-started/choose-how-to-enroll-devices)中看到按鈕的實際範例。 
+您可以在 [Intune 文件](https://docs.microsoft.com/intune/get-started/choose-how-to-enroll-devices)中看到按鈕的實際範例。 
 
 ### <a name="selectors"></a>選取器
 
@@ -338,7 +338,7 @@ docs.microsoft 為 GitHub Flavored Markdown 提供幾個額外的延伸模組。
 - [macOS](../docs/core/tutorials/using-on-macos.md)
 - [Windows](../docs/core/tutorials/using-on-windows.md)
 
-您可以在 [Intune 文件](https://docs.microsoft.com/en-us/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune#how-your-end-users-get-their-apps)中看到選取器的實際範例。
+您可以在 [Intune 文件](https://docs.microsoft.com/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune#how-your-end-users-get-their-apps)中看到選取器的實際範例。
 
 ### <a name="step-by-steps"></a>逐步執行
 
@@ -346,4 +346,4 @@ docs.microsoft 為 GitHub Flavored Markdown 提供幾個額外的延伸模組。
 [上一步](../docs/csharp/expression-trees-interpreting.md)
 [下一步](../docs/csharp/expression-trees-translating.md)
 
-您可以在 [Advanced Threat Analytics 文件](https://docs.microsoft.com/en-us/advanced-threat-analytics/deploy-use/install-ata-step2)中看到逐步執行的實際範例。
+您可以在 [Advanced Threat Analytics 文件](https://docs.microsoft.com/advanced-threat-analytics/deploy-use/install-ata-step2)中看到逐步執行的實際範例。

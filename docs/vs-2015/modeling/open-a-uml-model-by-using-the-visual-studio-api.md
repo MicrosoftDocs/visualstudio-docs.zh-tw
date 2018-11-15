@@ -14,12 +14,12 @@ caps.latest.revision: 17
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: e92ece9a8097071c8d8cef5b77ca9fdb242d677f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 14fa94779fc8d849bbfdb9176fdc94049078c674
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49292704"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49920207"
 ---
 # <a name="open-a-uml-model-by-using-the-visual-studio-api"></a>使用 Visual Studio API 開啟 UML 模型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,27 +35,27 @@ ms.locfileid: "49292704"
 ##  <a name="Showing"></a> 在 Visual Studio 中開啟模型和圖表  
  若要在使用者介面中開啟模型，請使用標準 Visual Studio API `EnvDTE.DTE`。 有兩個您可以針對模型專案項目執行的實用轉換：  
   
--   如果專案是模型專案，以及在目前 AppDomain 中載入專案，則 `EnvDTE.Project` 可以轉換為 `IModelingProject`，以及從中進行轉換。  
+- 如果專案是模型專案，以及在目前 AppDomain 中載入專案，則 `EnvDTE.Project` 可以轉換為 `IModelingProject`，以及從中進行轉換。  
   
--   如果項目是 UML 圖表，則 `EnvDTE.ProjectItem` 可以轉換為 `IDiagramContext`，以及從中進行轉換。  
+- 如果項目是 UML 圖表，則 `EnvDTE.ProjectItem` 可以轉換為 `IDiagramContext`，以及從中進行轉換。  
   
- 在下列範例中，您的專案應該匯入這些參考：  
+  在下列範例中，您的專案應該匯入這些參考：  
   
--   EnvDTE  
+- EnvDTE  
   
--   Microsoft.VisualStudio.ArchitectureTools.Extensibility  
+- Microsoft.VisualStudio.ArchitectureTools.Extensibility  
   
--   Microsoft.VisualStudio.Modeling.Sdk.[version]  
+- Microsoft.VisualStudio.Modeling.Sdk.[version]  
   
--   Microsoft.VisualStudio.Modeling.Sdk.Diagrams.[version]  
+- Microsoft.VisualStudio.Modeling.Sdk.Diagrams.[version]  
   
--   Microsoft.VisualStudio.Shell.Immutable.[version]  
+- Microsoft.VisualStudio.Shell.Immutable.[version]  
   
--   Microsoft.VisualStudio.Uml.Interfaces  
+- Microsoft.VisualStudio.Uml.Interfaces  
   
--   System.ComponentModel.Composition  
+- System.ComponentModel.Composition  
   
- 這個範例會在 Visual Studio 中開啟 UML 模型：  
+  這個範例會在 Visual Studio 中開啟 UML 模型：  
   
 ```  
 using EnvDTE; // Visual Studio API for loading diagrams  

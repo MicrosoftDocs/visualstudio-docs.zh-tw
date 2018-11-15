@@ -16,19 +16,20 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bc5c3432c13850c1fcd619629ef0368d4e78126e
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 0c1db098a485002d97aaf986fbac95e35519351b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45550501"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49924672"
 ---
 # <a name="ca1600-do-not-use-idle-process-priority"></a>CA1600：不要使用 Idle 處理序優先權
+
 |||
 |-|-|
 |TypeName|DoNotUseIdleProcessPriority|
 |CheckId|CA1600|
-|類別|Microsoft.Mobility|
+|分類|Microsoft.Mobility|
 |中斷變更|中斷|
 
 ## <a name="cause"></a>原因

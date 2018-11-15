@@ -1,5 +1,5 @@
 ---
-title: 堆積配置函式的偵錯版本 |Microsoft 文件
+title: 偵錯版本的堆積配置函式 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -25,12 +25,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e426da9491c13e0d6f9377814673ca41512e5e09
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 12b997b2aeb2b34305eafc2dc478460d9f450677
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31470939"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49941461"
 ---
 # <a name="debug-versions-of-heap-allocation-functions"></a>堆積配置函式的偵錯版本
 C 執行階段程式庫包含堆積配置 (Heap Allocation) 函式的特殊偵錯版本。 這些函式的名稱與發行版本相同，再加上「_dbg」。 本主題以 `malloc` 和 `_malloc_dbg` 為例，說明 CRT 函式發行版本和 _dbg 版本之間的差異。  
@@ -39,15 +39,15 @@ C 執行階段程式庫包含堆積配置 (Heap Allocation) 函式的特殊偵�
   
  然而，您可能要明確地呼叫 `_malloc_dbg`。 明確地呼叫 `_malloc_dbg` 會多出下列一些優點：  
   
--   追蹤 `_CLIENT_BLOCK` 類型配置。  
+- 追蹤 `_CLIENT_BLOCK` 類型配置。  
   
--   儲存發生配置要求位置的原始程式檔和行號。  
+- 儲存發生配置要求位置的原始程式檔和行號。  
   
- 如果您不想要轉換您`malloc`呼叫`_malloc_dbg`，您可以藉由定義取得來源檔案資訊[_CRTDBG_MAP_ALLOC](/cpp/c-runtime-library/crtdbg-map-alloc)，因而導致前置處理器直接對應的所有呼叫`malloc`至`_malloc_dbg`而不是依賴周圍的包裝函式`malloc`。  
+  如果您不想要轉換您`malloc`呼叫`_malloc_dbg`，您可以藉由定義取得來源檔案資訊[_CRTDBG_MAP_ALLOC](/cpp/c-runtime-library/crtdbg-map-alloc)，這會讓前置處理器直接對應到所有呼叫`malloc`至`_malloc_dbg`而不是依賴周圍的包裝函式`malloc`。  
   
- 若要追蹤用戶端區塊裡不同類型的配置，您必須直接呼叫 `_malloc_dbg` 並且將 `blockType` 參數設為 `_CLIENT_BLOCK`。  
+  若要追蹤用戶端區塊裡不同類型的配置，您必須直接呼叫 `_malloc_dbg` 並且將 `blockType` 參數設為 `_CLIENT_BLOCK`。  
   
- 未定義 _DEBUG，呼叫`malloc`不干擾，呼叫`_malloc_dbg`會解析為`malloc`，定義[_CRTDBG_MAP_ALLOC](/cpp/c-runtime-library/crtdbg-map-alloc)會被忽略，和原始程式檔相關的資訊未提供配置要求。 因為 `malloc` 沒有區塊類型參數，`_CLIENT_BLOCK` 類型的要求會被當成標準配置處理。  
+  未定義 _DEBUG，呼叫`malloc`不干擾，呼叫`_malloc_dbg`會解析為`malloc`，定義[_CRTDBG_MAP_ALLOC](/cpp/c-runtime-library/crtdbg-map-alloc)會忽略，而來源相關的檔案資訊未提供配置要求。 因為 `malloc` 沒有區塊型別參數，`_CLIENT_BLOCK` 類型的要求會被當成標準配置處理。  
   
 ## <a name="see-also"></a>另請參閱  
  [CRT 偵錯技術](../debugger/crt-debugging-techniques.md)

@@ -19,12 +19,12 @@ caps.latest.revision: 39
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f58737a75564bc31ee3916c3a6876a03e25000cf
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 86d1959d6850ae73d38970a197f8b369310fac3d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49189250"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49824421"
 ---
 # <a name="analyze-energy-use-in-store-apps"></a>分析市集應用程式中的能源利用
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,15 +41,15 @@ Visual Studio [ **能源消耗** ] 分析工具可協助您分析 Windows 市集
   
  [能源消耗] 分析工具使用下列「 *功率* 」(Power) 和「 *能源*」(Energy) 的定義：  
   
--   「*功率* 」(Power) 用於測量在某段時間內完成工作的用電速率。 在電子學中，功率的標準單位是「 *瓦*」(Watt)，其定義為一安培電流流經一伏特電位差時，工作完成的速率。 在 [用電量]  圖形上，單位顯示為毫瓦 **mW** ，相當於千分之一瓦特。  
+- 「*功率* 」(Power) 用於測量在某段時間內完成工作的用電速率。 在電子學中，功率的標準單位是「 *瓦*」(Watt)，其定義為一安培電流流經一伏特電位差時，工作完成的速率。 在 [用電量]  圖形上，單位顯示為毫瓦 **mW** ，相當於千分之一瓦特。  
   
-     請注意，由於功率是一種速率，因此有方向 (工作在某段時間內可能增加或減少) 和速度 (工作增加或減少的量)。  
+   請注意，由於功率是一種速率，因此有方向 (工作在某段時間內可能增加或減少) 和速度 (工作增加或減少的量)。  
   
--   「*能源* 」(Energy) 用於測量總功率，以容量或電位、電池的電量，或某段時間的累計總用電量表示。 能源的單位是瓦-小時，一小時內連續產生的一瓦功率數。 在 [ **能源摘要**] 中，單位顯示為毫瓦-小時 [ **mW-h**]。  
+- 「*能源* 」(Energy) 用於測量總功率，以容量或電位、電池的電量，或某段時間的累計總用電量表示。 能源的單位是瓦-小時，一小時內連續產生的一瓦功率數。 在 [ **能源摘要**] 中，單位顯示為毫瓦-小時 [ **mW-h**]。  
   
- ![能源容量、耗電量、消耗的能源總計](../profiling/media/energyprof-capcitypowerused.png "ENERGYPROF_CapcityPowerUsed")  
+  ![能源容量、耗電量、消耗的能源總計](../profiling/media/energyprof-capcitypowerused.png "ENERGYPROF_CapcityPowerUsed")  
   
- 例如，平板電腦中完全充電的電池有特定的儲存電能量。 當能源用來執行像是網路通訊、計算值或顯示圖形這類工作時，電池的電力會以不同的速率消耗。 任一段時間內的總耗電量也是以能源測量。  
+  例如，平板電腦中完全充電的電池有特定的儲存電能量。 當能源用來執行像是網路通訊、計算值或顯示圖形這類工作時，電池的電力會以不同的速率消耗。 任一段時間內的總耗電量也是以能源測量。  
   
 ##  <a name="BKMK_Identify_scenarios_with_user_marks"></a> 透過使用者標記識別情節  
  您可以將「 *使用者標記* 」(User Mark) 加入至分析資料，以便識別時間軸尺規中的區段。  
@@ -65,8 +65,8 @@ Visual Studio [ **能源消耗** ] 分析工具可協助您分析 Windows 市集
  當方法執行時，使用者標記就會與訊息一起加入至分析資料中。  
   
 > [!NOTE]
->  -   Windows.Foundation.Diagnostics LoggingChannel 會實作[Windows.Foundation.IClosable](http://msdn.microsoft.com/library/windows/apps/windows.foundation.iclosable.aspx)介面 (預計為[System.IDisposable](http://msdn.microsoft.com/library/System.IDisposable.aspx) C# 和 VB 中)。若要避免作業系統資源流失，請呼叫[LoggingChannel.Close](http://msdn.microsoft.com/library/windows/apps/windows.foundation.diagnostics.loggingchannel.close.aspx)（) (C# 和 VB 中 Windows.Foundation.Diagnostics.LoggingChannel.Dispose()) 是在完成記錄通道時。  
-> -   每個開啟的記錄通道都必須具有唯一名稱。 嘗試使用與尚未處置的通道相同的名稱建立新記錄通道，將會造成例外狀況。  
+> - Windows.Foundation.Diagnostics LoggingChannel 會實作[Windows.Foundation.IClosable](http://msdn.microsoft.com/library/windows/apps/windows.foundation.iclosable.aspx)介面 (預計為[System.IDisposable](http://msdn.microsoft.com/library/System.IDisposable.aspx) C# 和 VB 中)。若要避免作業系統資源流失，請呼叫[LoggingChannel.Close](http://msdn.microsoft.com/library/windows/apps/windows.foundation.diagnostics.loggingchannel.close.aspx)（) (C# 和 VB 中 Windows.Foundation.Diagnostics.LoggingChannel.Dispose()) 是在完成記錄通道時。  
+>   -   每個開啟的記錄通道都必須具有唯一名稱。 嘗試使用與尚未處置的通道相同的名稱建立新記錄通道，將會造成例外狀況。  
   
  如需相關範例，請參閱 [LoggingSession 範例](http://code.msdn.microsoft.com/windowsapps/LoggingSession-Sample-ccd52336) 這個 Windows SDK 範例。  
   
@@ -86,9 +86,9 @@ if (performance && performance.mark) {
  為了獲得較佳的評估結果，建議您分析以本身電池供電之低電源裝置上的應用程式能源使用情形。 由於這類裝置大部分不會執行 Visual Studio，因此您需要將 Visual Studio 電腦連接到使用 Visual Studio 遠端工具的裝置。 若要連接到遠端裝置，您必須設定 Visual Studio 專案和遠端裝置。 如需詳細資訊，請參閱[在遠端電腦上執行 Windows 市集應用程式](../debugger/run-windows-store-apps-on-a-remote-machine.md)。  
   
 > [!TIP]
->  -   我們不建議在 Windows 市集模擬器或 Visual Studio 電腦上進行能源分析。 在實際裝置上進行分析可提供更實際的資料。  
-> -   在以電池供電的目標裝置上進行分析。  
-> -   關閉其他可能使用相同資源 (網路、CPU 或顯示器) 的應用程式。  
+> - 我們不建議在 Windows 市集模擬器或 Visual Studio 電腦上進行能源分析。 在實際裝置上進行分析可提供更實際的資料。  
+>   -   在以電池供電的目標裝置上進行分析。  
+>   -   關閉其他可能使用相同資源 (網路、CPU 或顯示器) 的應用程式。  
   
 ##  <a name="BKMK_Collect_energy_profile_data_for_your_app"></a> 收集應用程式的能源分析資料  
   
@@ -112,15 +112,15 @@ if (performance && performance.mark) {
 ##  <a name="BKMK_Collect_energy_profile_data_for_an_installed_app"></a> 收集已安裝應用程式的能源分析資料  
  [能源消耗] 工具只能在從 Visual Studio 方案啟動或從 Windows 市集安裝的 Windows 8.1 市集應用程式上執行。 方案在 Visual Studio 中開啟時，預設目標為 [ **啟始專案**]。 目標為已安裝的應用程式：  
   
-1.  選擇 [ **變更目標** ]，然後選擇 [ **已安裝的應用程式**]。  
+1. 選擇 [ **變更目標** ]，然後選擇 [ **已安裝的應用程式**]。  
   
-2.  從 [ **選取已安裝的應用程式套件** ] 清單中選擇目標。  
+2. 從 [ **選取已安裝的應用程式套件** ] 清單中選擇目標。  
   
-3.  選擇 [診斷中樞] 頁面上的 [ **能源消耗** ]。  
+3. 選擇 [診斷中樞] 頁面上的 [ **能源消耗** ]。  
   
-4.  選擇 [ **開始** ]，開始分析。  
+4. 選擇 [ **開始** ]，開始分析。  
   
- 若要停止分析，請切換回到 Visual Studio (Alt+Tab)，並選擇診斷中樞頁面上的 [ **停止收集** ]。  
+   若要停止分析，請切換回到 Visual Studio (Alt+Tab)，並選擇診斷中樞頁面上的 [ **停止收集** ]。  
   
 ##  <a name="BKMK_Analyze_energy_profile_data"></a> 分析能源分析資料  
  能源分析資料會顯示在 Visual Studio 文件視窗中：  

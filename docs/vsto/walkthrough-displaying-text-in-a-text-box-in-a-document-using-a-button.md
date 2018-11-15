@@ -15,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 44cbabd41e40c0e157a75fa260985752e3d5e016
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 132a94b6e91148d943d998ab7e4aab96d0d74960
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35257907"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49822553"
 ---
 # <a name="walkthrough-display-text-in-a-text-box-in-a-document-using-a-button"></a>逐步解說： 使用按鈕文件中的文字方塊中顯示文字
   本逐步解說示範如何在 Microsoft Office Word 的文件層級自訂中使用按鈕和文字方塊。  
@@ -29,11 +29,11 @@ ms.locfileid: "35257907"
   
  這個逐步解說將說明下列工作：  
   
--   在設計階段，將控制項新增至文件層級專案中的 Word 文件。  
+- 在設計階段，將控制項新增至文件層級專案中的 Word 文件。  
   
--   按一下按鈕時填入文字方塊。  
+- 按一下按鈕時填入文字方塊。  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>必要條件  
  您需要下列元件才能完成此逐步解說：  
@@ -58,25 +58,25 @@ ms.locfileid: "35257907"
   
 ### <a name="to-add-a-button-and-a-text-box"></a>新增按鈕和文字方塊  
   
-1.  請確認已在 Visual Studio 設計工具中開啟文件。  
+1. 請確認已在 Visual Studio 設計工具中開啟文件。  
   
-2.  從**通用控制項**索引標籤**工具箱**，拖曳<xref:Microsoft.Office.Tools.Word.Controls.TextBox>文件的控制項。  
+2. 從**通用控制項**索引標籤**工具箱**，拖曳<xref:Microsoft.Office.Tools.Word.Controls.TextBox>文件的控制項。  
   
-    > [!NOTE]  
-    >  在 Word 中，控制項預設會內嵌於文字。 您可以修改方式控制項和圖案物件的插入預設值，進而**編輯**索引標籤**選項**在 Word 中的對話方塊。  
+   > [!NOTE]  
+   >  在 Word 中，控制項預設會內嵌於文字。 您可以修改方式控制項和圖案物件的插入預設值，進而**編輯**索引標籤**選項**在 Word 中的對話方塊。  
   
-3.  在 [ **檢視** ] 功能表中，按一下 [ **屬性視窗**]。  
+3. 在 [ **檢視** ] 功能表中，按一下 [ **屬性視窗**]。  
   
-4.  尋找**TextBox1**中**屬性** 視窗的下拉式清單方塊，並變更**名稱**屬性的文字方塊**3**。  
+4. 尋找**TextBox1**中**屬性** 視窗的下拉式清單方塊，並變更**名稱**屬性的文字方塊**3**。  
   
-5.  拖曳** 按鈕**控制項加入文件，並變更下列屬性。  
+5. 拖曳** 按鈕**控制項加入文件，並變更下列屬性。  
   
-    |屬性|值|  
-    |--------------|-----------|  
-    |**名稱**|**insertText**|  
-    |**Text**|**插入文字**|  
+   |屬性|值|  
+   |--------------|-----------|  
+   |**名稱**|**insertText**|  
+   |**Text**|**插入文字**|  
   
- 現在，您可以撰寫在按一下按鈕時將執行的程式碼。  
+   現在，您可以撰寫在按一下按鈕時將執行的程式碼。  
   
 ## <a name="populate-the-text-box-when-the-button-is-clicked"></a>按一下按鈕時填入文字方塊  
  每次使用者按一下按鈕， **Hello World ！** 會加入到文字方塊中。  

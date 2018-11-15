@@ -12,12 +12,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 2c0192aca40c6f58468fba35ee1fd174b0445bf1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ed469b4621205539e3f7a2ce59878bd318ba556f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49241512"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49860032"
 ---
 # <a name="sharing-classes-between-dsls-by-using-a-dsl-library"></a>使用 DSL 程式庫共用 DSL 之間的類別
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,21 +52,21 @@ ms.locfileid: "49241512"
   
 #### <a name="to-import-a-dsl-library"></a>若要匯入的 DSL 程式庫  
   
-1.  在另一個 DSL 定義中，在**DSL Explorer**，以滑鼠右鍵按一下 DSL 的根類別，然後按一下**加入新的 DslLibrary 匯入**。  
+1. 在另一個 DSL 定義中，在**DSL Explorer**，以滑鼠右鍵按一下 DSL 的根類別，然後按一下**加入新的 DslLibrary 匯入**。  
   
-2.  在 [屬性] 視窗中，設定**File-path**程式庫。 您可以使用相對或絕對路徑。  
+2. 在 [屬性] 視窗中，設定**File-path**程式庫。 您可以使用相對或絕對路徑。  
   
-     匯入程式庫會出現在 [DSL 總管] 中，在唯讀模式。  
+    匯入程式庫會出現在 [DSL 總管] 中，在唯讀模式。  
   
-3.  您可以使用匯入的類別作為基底類別。 在匯入的 DSL 中，建立網域類別，然後在 [屬性] 視窗中，將**基底類別**匯入的類別。  
+3. 您可以使用匯入的類別作為基底類別。 在匯入的 DSL 中，建立網域類別，然後在 [屬性] 視窗中，將**基底類別**匯入的類別。  
   
-4.  按一下 轉換所有範本。  
+4. 按一下 轉換所有範本。  
   
-5.  DSL 程式庫專案所建置的組件 (DLL) 的參考加入至 DSL 專案中。  
+5. DSL 程式庫專案所建置的組件 (DLL) 的參考加入至 DSL 專案中。  
   
-6.  建置方案。  
+6. 建置方案。  
   
- DSL 程式庫可以匯入其他程式庫。 當您匯入程式庫時，其匯入也會自動出現在 [DSL 總管] 中。  
+   DSL 程式庫可以匯入其他程式庫。 當您匯入程式庫時，其匯入也會自動出現在 [DSL 總管] 中。  
   
 ## <a name="see-also"></a>另請參閱  
  [如何定義特定領域語言](../modeling/how-to-define-a-domain-specific-language.md)

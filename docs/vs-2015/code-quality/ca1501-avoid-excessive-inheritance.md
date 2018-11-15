@@ -20,15 +20,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 05bafff1de36ed6560d2e75654a9d4c823dbae8d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 378a6de743a9f9698bf66949cfb7b271e836c617
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49240626"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872339"
 ---
 # <a name="ca1501-avoid-excessive-inheritance"></a>CA1501：避免過度繼承
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|AvoidExcessiveInheritance|

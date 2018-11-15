@@ -16,11 +16,11 @@ manager: douge
 ms.workload:
 - office
 ms.openlocfilehash: df388fb346c43f173ec1f96e3869088d7ce5b9dc
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35671543"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50744934"
 ---
 # <a name="application-manifests-for-office-solutions"></a>Office 方案的應用程式資訊清單
   應用程式資訊清單是描述載入至 Microsoft Office 方案之組件的 XML 檔案。 Microsoft Office 開發工具，在 Visual Studio 中的使用[!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]應用程式資訊清單結構描述中定義[ClickOnce 應用程式資訊清單](/visualstudio/deployment/clickonce-application-manifest)參考。  
@@ -96,7 +96,7 @@ ms.locfileid: "35671543"
  您可以手動編輯 Office 方案中的應用程式和部署資訊清單。 之後，您必須重新簽署應用程式和部署資訊清單使用資訊清單產生和編輯工具 (*mage.exe*並*mageui.exe*)。 如需詳細資訊，請參閱 <<c0> [ 如何： 重新簽署應用程式和部署資訊清單](/visualstudio/deployment/how-to-re-sign-application-and-deployment-manifests)。  
   
 ## <a name="file-location"></a>檔案位置  
- 每個方案版本都會有特定的應用程式資訊清單。 因此，應用程式資訊清單應該與部署資訊清單分開儲存。 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 將版本特定檔案放在相關聯版本命名的子目錄的子目錄*應用程式檔案*publish 資料夾中的子目錄。  
+ 每個方案版本都會有特定的應用程式資訊清單。 因此，應用程式資訊清單應該與部署資訊清單分開儲存。 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 會將版本特定檔案，放在以發行資料夾之 [應用程式檔案]  子目錄中相關聯版本命名的子目錄中。  
   
 ## <a name="file-name-syntax"></a>檔案名稱語法  
  應用程式資訊清單檔案的名稱應該是完整名稱和應用程式的延伸模組中, 所指明**assemblyIdentity**項目，後面接著副檔名 *.manifest*。 比方說，是指應用程式資訊清單*OutlookAddIn1.dll*自訂會使用下列的檔案名稱語法。  

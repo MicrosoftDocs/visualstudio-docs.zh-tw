@@ -31,12 +31,12 @@ caps.latest.revision: 67
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e1daa2681b52f8e052d2868135d028bbbe0092fe
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 215bebb071ce707e2997e934fd58901ec2d56b8b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49194710"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49816335"
 ---
 # <a name="javascript-intellisense"></a>JavaScript IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,27 +45,27 @@ IntelliSense 藉由在您撰寫程式碼的同時提供資訊，幫助您更快�
   
  IntelliSense 可讓您更輕鬆地完成下列工作：  
   
--   尋找成員資訊。  
+- 尋找成員資訊。  
   
--   直接將語言項目插入程式碼中。  
+- 直接將語言項目插入程式碼中。  
   
--   不需離開程式碼編輯器即可維護內容。  
+- 不需離開程式碼編輯器即可維護內容。  
   
--   支援自訂 IntelliSense 與 XML 文件註解，以及 JavaScript IntelliSense 擴充性。  
+- 支援自訂 IntelliSense 與 XML 文件註解，以及 JavaScript IntelliSense 擴充性。  
   
- 此主題包括下列章節：  
+  此主題包括下列章節：  
   
--   [判斷 IntelliSense 的內容](#DeterminingIntelliSenseContext)  
+- [判斷 IntelliSense 的內容](#DeterminingIntelliSenseContext)  
   
--   [處理 IntelliSense 資訊](#ProcessingIntelliSenseInformation)  
+- [處理 IntelliSense 資訊](#ProcessingIntelliSenseInformation)  
   
--   [JavaScript IntelliSense 功能](#Features)  
+- [JavaScript IntelliSense 功能](#Features)  
   
--   [JavaScript IntelliSense 擴充性](#Extensibility)  
+- [JavaScript IntelliSense 擴充性](#Extensibility)  
   
--   [JavaScript 驗證](#Validation)  
+- [JavaScript 驗證](#Validation)  
   
- 如需之 IntelliSense 功能的詳細資訊[!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]，請參閱 <<c2> [ 使用 IntelliSense](../ide/using-intellisense.md)。  
+  如需之 IntelliSense 功能的詳細資訊[!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]，請參閱 <<c2> [ 使用 IntelliSense](../ide/using-intellisense.md)。  
   
 ##  <a name="DeterminingIntelliSenseContext"></a> 判斷 IntelliSense 的內容  
  JavaScript IntelliSense 會根據您目前的指令碼內容相關的所有指令碼，提供程式碼撰寫的選擇。 這包括目前檔案內的指令碼項目。 它同時也包含任何從指令碼直接參考或間接參考的程式碼，例如：指令碼檔參考、組件 (Assembly) 指令碼參考、服務參考和關聯頁面參考。  
@@ -103,25 +103,25 @@ IntelliSense 藉由在您撰寫程式碼的同時提供資訊，幫助您更快�
 ##  <a name="Features"></a> JavaScript IntelliSense 功能  
  JavaScript IntelliSense 支援下列物件：  
   
--   [文件物件模型 (DOM) 項目](#HTMLDom)  
+- [文件物件模型 (DOM) 項目](#HTMLDom)  
   
--   [內建物件](#IntrinsicObjects)  
+- [內建物件](#IntrinsicObjects)  
   
--   [使用者定義的變數、 函式和物件](#UserDefined)  
+- [使用者定義的變數、 函式和物件](#UserDefined)  
   
--   使用下列參考的外部檔案中定義的物件[指令碼參考](#Script)，[參考指示詞](#ReferenceDirectives)，並[參考群組](#ReferenceGroups)。  
+- 使用下列參考的外部檔案中定義的物件[指令碼參考](#Script)，[參考指示詞](#ReferenceDirectives)，並[參考群組](#ReferenceGroups)。  
   
--   在經由 Visual Studio 下載的遠端檔案中定義的物件。  
+- 在經由 Visual Studio 下載的遠端檔案中定義的物件。  
   
--   中指定的物件[XML 文件註解](#XMLDocComments)，例如參數和欄位。  
+- 中指定的物件[XML 文件註解](#XMLDocComments)，例如參數和欄位。  
   
--   使用標準 JavaScript 註解標記 (//) 描述的物件。 如需詳細資訊，請參閱 <<c0> [ 擴充 JavaScript IntelliSense](../ide/extending-javascript-intellisense.md)。  
+- 使用標準 JavaScript 註解標記 (//) 描述的物件。 如需詳細資訊，請參閱 <<c0> [ 擴充 JavaScript IntelliSense](../ide/extending-javascript-intellisense.md)。  
   
--   使用支援的物件[JavaScript IntelliSense 擴充性](#Extensibility)機制。 如需詳細資訊，請參閱 <<c0> [ 擴充 JavaScript IntelliSense](../ide/extending-javascript-intellisense.md)。  
+- 使用支援的物件[JavaScript IntelliSense 擴充性](#Extensibility)機制。 如需詳細資訊，請參閱 <<c0> [ 擴充 JavaScript IntelliSense](../ide/extending-javascript-intellisense.md)。  
   
--   [ASP.NET AJAX 物件](#ASPNet)  
+- [ASP.NET AJAX 物件](#ASPNet)  
   
- 當 IntelliSense 無法決定物件的類型時，它會利用使用中文件中的識別項提供陳述式完成的選項。 如需詳細資訊，請參閱 <<c0> [ 識別項的陳述式完成](../ide/statement-completion-for-identifiers.md)。  
+  當 IntelliSense 無法決定物件的類型時，它會利用使用中文件中的識別項提供陳述式完成的選項。 如需詳細資訊，請參閱 <<c0> [ 識別項的陳述式完成](../ide/statement-completion-for-identifiers.md)。  
   
 ###  <a name="HTMLDom"></a> HTML DOM 項目  
  JavaScript IntelliSense 提供動態超文字標記語言 (DHTML) DOM 項目的程式設計參考，例如：`body`、`form` 和 `div`。 IntelliSense 只會顯示包含在目前文件內的項目和主版頁面 (Master Page)。 JavaScript IntelliSense 也支援 `window` 和 `document` 物件及其成員。  
@@ -227,15 +227,15 @@ IntelliSense 藉由在您撰寫程式碼的同時提供資訊，幫助您更快�
 ####  <a name="ReferenceGroups"></a> 參考群組  
  您可以使用預先定義的參考群組指定特殊 IntelliSense .js 檔案於不同 JavaScript 專案範圍中。 下列為可用的參考群組類型：  
   
--   隱含 (Windows)，適用於使用 JavaScript 的 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 應用程式。 這個群組中包含的檔案會在程式碼編輯器中針對指定類型之專案開啟的每一個 .js 檔案範圍中。  
+- 隱含 (Windows)，適用於使用 JavaScript 的 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 應用程式。 這個群組中包含的檔案會在程式碼編輯器中針對指定類型之專案開啟的每一個 .js 檔案範圍中。  
   
--   隱含 (Web)，適用於 HTML5 專案。 這個群組中包含的檔案會在程式碼編輯器中針對這些專案類型開啟的每一個 .js 檔案範圍中。  
+- 隱含 (Web)，適用於 HTML5 專案。 這個群組中包含的檔案會在程式碼編輯器中針對這些專案類型開啟的每一個 .js 檔案範圍中。  
   
--   專屬的背景工作參考群組，適用於 HTML5 Web 背景工作。 在這個群組中指定的檔案會在具有專屬背景工作參考群組之明確參考的 .js 檔案範圍中。  
+- 專屬的背景工作參考群組，適用於 HTML5 Web 背景工作。 在這個群組中指定的檔案會在具有專屬背景工作參考群組之明確參考的 .js 檔案範圍中。  
   
--   泛型，適用於其他 JavaScript 專案類型。  
+- 泛型，適用於其他 JavaScript 專案類型。  
   
- 在大部分情況下，您不需要修改參考群組。 不過，如果您要進行變更，可以使用 JavaScript 程式碼編輯器的設定選項來指定參考群組中的檔案。 如需使用這項功能的指示，請參閱[選項、 文字編輯器、 JavaScript、 IntelliSense](../ide/reference/options-text-editor-javascript-intellisense.md)。  
+  在大部分情況下，您不需要修改參考群組。 不過，如果您要進行變更，可以使用 JavaScript 程式碼編輯器的設定選項來指定參考群組中的檔案。 如需使用這項功能的指示，請參閱[選項、 文字編輯器、 JavaScript、 IntelliSense](../ide/reference/options-text-editor-javascript-intellisense.md)。  
   
 > [!TIP]
 >  IntelliSense 參考通常用來提供 IntelliSense 支援，為全域物件，以及供 IntelliSense[延伸模組](#Extensibility)。 您也可以為必須在執行階段使用指令碼載入器載入的指令碼使用這項功能。  
@@ -256,13 +256,13 @@ IntelliSense 藉由在您撰寫程式碼的同時提供資訊，幫助您更快�
   
  IntelliSense 也可以在下列情況顯示 XML 文件註解：  
   
--   參考另一個 .js 檔的 .js 檔案。  
+- 參考另一個 .js 檔的 .js 檔案。  
   
--   參考 .aspx 檔的 .js 檔案。  
+- 參考 .aspx 檔的 .js 檔案。  
   
--   參考 .js 檔的 .aspx 檔案。  
+- 參考 .js 檔的 .aspx 檔案。  
   
- 當 .aspx 檔案參考另一個 .aspx 檔時，便無法使用 IntelliSense。  
+  當 .aspx 檔案參考另一個 .aspx 檔時，便無法使用 IntelliSense。  
   
 ###  <a name="ASPNet"></a> ASP.NET AJAX 物件  
  ASP.NET AJAX 也支援 JavaScript IntelliSense。 ASP.NET AJAX 包含了用戶端架構，可擴充 ECMAScript (JavaScript) 內所提供的標準類型。 為了讓 JavaScript IntelliSense 提供與 ASP.NET AJAX 物件有關的詳細資料，在整個 [!INCLUDE[atlaslib_current_ext](../includes/atlaslib-current-ext-md.md)] 中已加入了 XML 文件註解。 這些 XML 文件註解會在您使用 ASP.NET AJAX Library 內含的類型及成員時顯示。  

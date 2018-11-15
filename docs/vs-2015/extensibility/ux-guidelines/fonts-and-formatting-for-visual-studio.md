@@ -13,12 +13,12 @@ ms.assetid: c3c3df69-83b4-4fd0-b5b1-e18c33f39376
 caps.latest.revision: 6
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 44f9bff7fe1508094474b7067237e8c0b6620605
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ca4fd95664d45c480557b8a00d503550327c60ed
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49275466"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49833027"
 ---
 # <a name="fonts-and-formatting-for-visual-studio"></a>字型和格式適用於 Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -356,13 +356,13 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 ##### <a name="title-case"></a>字首大寫  
  字首大寫是的樣式，都大寫的大部分或所有內片語的單字的第一個字母。 在 Visual Studio 中，字首大寫用於許多項目，包括：  
   
--   **工具提示。** 範例: [預覽選取的項目]  
+- **工具提示。** 範例: [預覽選取的項目]  
   
--   **資料行標頭。** 範例: 「 系統回應 」  
+- **資料行標頭。** 範例: 「 系統回應 」  
   
--   **功能表項目。** 範例: 「 儲存所有 」  
+- **功能表項目。** 範例: 「 儲存所有 」  
   
- 使用 字首大寫，它們何時改成大寫的字，以及何時將它們保留在小寫的方針：  
+  使用 字首大寫，它們何時改成大寫的字，以及何時將它們保留在小寫的方針：  
   
 |大寫|註解和範例|  
 |---------------|---------------------------|  

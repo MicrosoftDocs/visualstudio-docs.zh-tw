@@ -19,12 +19,12 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 598785a54980c73928a8d38b73fb105bc8bbe775
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5ce3ef7b1d5fe975fdc2edc21a3dbe94fa873e96
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49275518"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49813287"
 ---
 # <a name="control-execution-of-a-store-app-in-a-visual-studio-debug-session-for-windows-store-apps-javascript"></a>為 Windows 市集應用程式，在 Visual Studio 偵錯工作階段中控制市集應用程式的執行 (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,28 +55,28 @@ ms.locfileid: "49275518"
   
  [檢視 [區域變數] 視窗中的變數資料](#BKMK_View_variable_data_in_the_Locals_window)  
   
--   [檢視變數資料和物件的原型鏈結](#BKMK_View_variable_data_and_the_prototype_chain_of_an_object)  
+- [檢視變數資料和物件的原型鏈結](#BKMK_View_variable_data_and_the_prototype_chain_of_an_object)  
   
--   [檢查範圍鏈結資料](#BKMK_Examine_scope_chain_data)  
+- [檢查範圍鏈結資料](#BKMK_Examine_scope_chain_data)  
   
- [使用 [呼叫堆疊] 視窗巡覽至程式碼](#BKMK_Navigate_to_code_by_using_the_Call_Stack_window)  
+  [使用 [呼叫堆疊] 視窗巡覽至程式碼](#BKMK_Navigate_to_code_by_using_the_Call_Stack_window)  
   
 ##  <a name="BKMK_Create_the_sample_app"></a> 建立範例應用程式  
  偵錯與程式碼有關，因此範例應用程式會使用 Windows 市集應用程式的架構，只為建立原始程式檔，您可以在檔案裡看到巡覽偵錯工作階段如何運作，以及如何檢查程式狀態。 所有將會叫用的程式碼都是從 `module` default.js 檔案的函式呼叫。 沒有新增的控制項，也沒有被處理的事件。  
   
-1.  **建立一個空白 JavaScript Windows 市集應用程式。** 開啟 Visual Studio。 在首頁上，選擇 [新增專案]  連結。 在 [新專案]  對話方塊上，選擇 [已安裝]  清單中的 [JavaScript]  ，然後選擇 [Windows市集] 。 在專案範本清單中，選擇 [空白的應用程式] 。 Visual Studio 會建立新方案和專案，並在程式碼編輯器中顯示 default.htm 檔案。  
+1. **建立一個空白 JavaScript Windows 市集應用程式。** 開啟 Visual Studio。 在首頁上，選擇 [新增專案]  連結。 在 [新專案]  對話方塊上，選擇 [已安裝]  清單中的 [JavaScript]  ，然後選擇 [Windows市集] 。 在專案範本清單中，選擇 [空白的應用程式] 。 Visual Studio 會建立新方案和專案，並在程式碼編輯器中顯示 default.htm 檔案。  
   
-     請注意載入頁面的指令碼檔。  
+    請注意載入頁面的指令碼檔。  
   
-    -   `base.js` Windows Library for JavaScript `ui.js` 由 **和**檔案建立。 Windows Library for JavaScript 是一組 JavaScript 和 CSS 檔案，能讓您更輕鬆地使用 JavaScript 建立 Windows 市集應用程式。 您可以用它搭配 HTML、CSS 和 Windows 執行階段來建立您的應用程式。  
+   -   `base.js` Windows Library for JavaScript `ui.js` 由 **和**檔案建立。 Windows Library for JavaScript 是一組 JavaScript 和 CSS 檔案，能讓您更輕鬆地使用 JavaScript 建立 Windows 市集應用程式。 您可以用它搭配 HTML、CSS 和 Windows 執行階段來建立您的應用程式。  
   
-    -   您的程式碼會在 `default.js`  檔案中開啟。  
+   -   您的程式碼會在 `default.js`  檔案中開啟。  
   
-2.  **開啟 default.js 原始程式檔。** 在 方案總管 中，開啟**js**節點，然後選擇  `default.js`。  
+2. **開啟 default.js 原始程式檔。** 在 方案總管 中，開啟**js**節點，然後選擇  `default.js`。  
   
-3.  **以範例程式碼取代頁面內容。** 刪除 `default.js` 檔案中開啟。 依照此連結進行： [Debugger navigation sample code (JavaScript)](../debugger/debugger-navigation-sample-code-javascript.md)，然後將 JavaScript 區段中列出的程式碼複製到剪貼簿。 (選擇**回**瀏覽器或說明檢視器，以返回此快速入門 頁面中。)在 Visual Studio 編輯器中，將程式碼貼上至現在空白的 `default.js`。 選擇 **CTRL + S** 以儲存檔案。  
+3. **以範例程式碼取代頁面內容。** 刪除 `default.js` 檔案中開啟。 依照此連結進行： [Debugger navigation sample code (JavaScript)](../debugger/debugger-navigation-sample-code-javascript.md)，然後將 JavaScript 區段中列出的程式碼複製到剪貼簿。 (選擇**回**瀏覽器或說明檢視器，以返回此快速入門 頁面中。)在 Visual Studio 編輯器中，將程式碼貼上至現在空白的 `default.js`。 選擇 **CTRL + S** 以儲存檔案。  
   
- 您現在可以依照本主題中的範例進行。  
+   您現在可以依照本主題中的範例進行。  
   
 ##  <a name="BKMK_Set_and_run_to_a_breakpoint__step_into_a_function__and_examine_program_data"></a> 設定並執行至中斷點、 逐步執行函式，以及檢查程式資料  
  開始偵錯工作階段的最常用方式，是從 [偵錯]  功能表中選擇 [開始偵錯]  (鍵盤：F5)。 應用程式開始並繼續執行至到達中斷點、您以手動方式暫停執行、發生例外狀況，或應用程式結束為止。  
@@ -88,45 +88,45 @@ ms.locfileid: "49275518"
 ###  <a name="BKMK_Example_1"></a> 範例 1  
  在這個範例中，您在 `module` 中 `default.js` 函式的主體內設定一個中斷點，因為它會呼叫使用者陳述式中的第一個中斷點。 接著逐步執行函式，檢視偵錯工具資料提示中的變數值，然後停止偵錯。  
   
-1.  **設定中斷點。** 在呼叫 `callTrack = "module function";` 後隨即出現的陳述式 `app.start()`(module)。 選擇原始程式碼編輯器陰影裝訂邊的一行 (鍵盤：將游標放在該行，然後選擇 **F9** 鍵)。  
+1. **設定中斷點。** 在呼叫 `callTrack = "module function";` 後隨即出現的陳述式 `app.start()`(module)。 選擇原始程式碼編輯器陰影裝訂邊的一行 (鍵盤：將游標放在該行，然後選擇 **F9** 鍵)。  
   
-     ![在 example1 設定中斷點](../debugger/media/dbg-jsnav-example1-breakpoint.png "DBG_JSNAV_example1_breakpoint")  
+    ![在 example1 設定中斷點](../debugger/media/dbg-jsnav-example1-breakpoint.png "DBG_JSNAV_example1_breakpoint")  
   
-     中斷點圖示會出現在巡覽邊中。  
+    中斷點圖示會出現在巡覽邊中。  
   
-2.  **執行至中斷點。** 選擇 [偵錯]  on the  (鍵盤：F5)。  
+2. **執行至中斷點。** 選擇 [偵錯]  on the  (鍵盤：F5)。  
   
-     應用程式便會開始執行，並在您設定中斷點所在的陳述式之前立即暫停執行。 裝訂邊中的目前行圖示會識別您的位置，且目前的陳述式會反白顯示。  
+    應用程式便會開始執行，並在您設定中斷點所在的陳述式之前立即暫停執行。 裝訂邊中的目前行圖示會識別您的位置，且目前的陳述式會反白顯示。  
   
-     ![執行到中斷點](../debugger/media/dbg-jsnav-example1-run-to-breakpoint.png "DBG_JSNAV_example1_run_to_breakpoint")  
+    ![執行到中斷點](../debugger/media/dbg-jsnav-example1-run-to-breakpoint.png "DBG_JSNAV_example1_run_to_breakpoint")  
   
-     您現在可以控制應用程式的執行，而且可以在逐步執行程式陳述式時，檢查程式狀態。  
+    您現在可以控制應用程式的執行，而且可以在逐步執行程式陳述式時，檢查程式狀態。  
   
-3.  **逐步執行函式。** 在 [新專案]  功能表上，選擇 [逐步執行]  (鍵盤： **F11**)。  
+3. **逐步執行函式。** 在 [新專案]  功能表上，選擇 [逐步執行]  (鍵盤： **F11**)。  
   
-     ![逐步執行一行程式碼](../debugger/media/dbg-jsnav-example1-step-into.png "DBG_JSNAV_example1_step_into")  
+    ![逐步執行一行程式碼](../debugger/media/dbg-jsnav-example1-step-into.png "DBG_JSNAV_example1_step_into")  
   
-     請注意，偵錯工具會移至下一行，這是 `example1` 函式的呼叫。 再次選擇 [逐步執行]  。 偵錯工具會移至 `example1` 函式的第一行程式碼 。 反白顯示的程式行尚未執行，但函式已載入呼叫堆疊，區域變數的記憶體也已配置。  
+    請注意，偵錯工具會移至下一行，這是 `example1` 函式的呼叫。 再次選擇 [逐步執行]  。 偵錯工具會移至 `example1` 函式的第一行程式碼 。 反白顯示的程式行尚未執行，但函式已載入呼叫堆疊，區域變數的記憶體也已配置。  
   
-4.  當您逐步執行一行程式碼時，偵錯工具會執行下列其中一個動作：  
+4. 當您逐步執行一行程式碼時，偵錯工具會執行下列其中一個動作：  
   
-    -   如果下一個陳述式不是您方案中某個函式的呼叫，偵錯工具會執行該陳述式、移至下一個陳述式，然後暫停執行。  
+   - 如果下一個陳述式不是您方案中某個函式的呼叫，偵錯工具會執行該陳述式、移至下一個陳述式，然後暫停執行。  
   
-    -   如果陳述式在您的方案中是函式的呼叫，偵錯工具會移至被呼叫的函式第一行，然後暫止執行。  
+   - 如果陳述式在您的方案中是函式的呼叫，偵錯工具會移至被呼叫的函式第一行，然後暫止執行。  
   
      繼續逐步執行 `example1` 的陳述式，直到到達結束點。 偵錯工具會反白顯示函式的右大括號。  
   
-5.  **檢視資料提示中的變數值。** 繼續逐步執行 `example1` 的陳述式，直到到達結束點。 偵錯工具會反白顯示函式的右大括號。 當您將滑鼠停在變數名稱時，該變數的名稱和值便會顯示在資料提示中。  
+5. **檢視資料提示中的變數值。** 繼續逐步執行 `example1` 的陳述式，直到到達結束點。 偵錯工具會反白顯示函式的右大括號。 當您將滑鼠停在變數名稱時，該變數的名稱和值便會顯示在資料提示中。  
   
-     ![在資料提示中檢視變數值](../debugger/media/dbg-jsnav-data-tip.png "DBG_JSNAV_data_tip")  
+    ![在資料提示中檢視變數值](../debugger/media/dbg-jsnav-data-tip.png "DBG_JSNAV_data_tip")  
   
-6.  **新增 callTrack 變數的監看式。** `callTrack` 變數被使用在整個快速入門中，以顯示範例中呼叫的函式。 若要更輕鬆地檢視變數的值，請將它新增至 [監看式] 視窗。 在編輯器中選取變數名稱，然後從捷徑功能表中選擇 [新增監看式]  。  
+6. **新增 callTrack 變數的監看式。** `callTrack` 變數被使用在整個快速入門中，以顯示範例中呼叫的函式。 若要更輕鬆地檢視變數的值，請將它新增至 [監看式] 視窗。 在編輯器中選取變數名稱，然後從捷徑功能表中選擇 [新增監看式]  。  
   
-     ![監看變數](../debugger/media/dbg-jsnav-watch-window.png "DBG_JSNAV_watch_window")  
+    ![監看變數](../debugger/media/dbg-jsnav-watch-window.png "DBG_JSNAV_watch_window")  
   
-     您可以在監看式視窗中監看多個變數。 被監看的變數值會像資料提式視窗中的值一樣，在執行暫止的時候更新。 您監看的變數在偵錯工作階段中都會被儲存。  
+    您可以在監看式視窗中監看多個變數。 被監看的變數值會像資料提式視窗中的值一樣，在執行暫止的時候更新。 您監看的變數在偵錯工作階段中都會被儲存。  
   
-7.  **停止偵錯。** 在 [新專案]  功能表上，選擇 [逐步執行] **Stop ging** (鍵盤： **Shift+F5**)。 這樣會結束偵錯工作階段。  
+7. **停止偵錯。** 在 [新專案]  功能表上，選擇 [逐步執行] **Stop ging** (鍵盤： **Shift+F5**)。 這樣會結束偵錯工作階段。  
   
 ##  <a name="BKMK_Step_into__over__and_out_of_functions"></a> 逐步執行函式、不進入函式、跳離函式  
  相較於逐步執行父代函式所呼叫的函式，不執行函式會執行子系函式，然後在父代繼續的同時暫止執行呼叫函式。 當您已經熟悉函式的運作方式，且確定函式執行不會影響您正在調查的問題時，可能會不進入函式。  
@@ -241,13 +241,13 @@ ms.locfileid: "49275518"
 ##  <a name="BKMK_Examine_scope_chain_data"></a> 檢查範圍鏈結資料  
  函式的 *「範圍鏈結」* (scope chain) 會包含所有作用中且函式可到達的變數。 全域變數是範圍鏈結的一部分，是任何在定義目前正在執行的函式中被定義的物件 (包括函式)。 例如，在 `callTrack` 內定義的任何函式都可以到達 `module` 的 `default.js` 函式中被定義之 `module` 變數。 每個範圍會分別列於 [區域變數] 視窗中。  
   
--   目前正在執行的函式之變數會列在視窗的頂端。  
+- 目前正在執行的函式之變數會列在視窗的頂端。  
   
--   範圍鏈結中每個函式範圍的變數，會列在函式的 [範圍]  節點下。 範圍函式會依序列在鏈結中，從定義目前函式的函式，到鏈結最外側的函式。  
+- 範圍鏈結中每個函式範圍的變數，會列在函式的 [範圍]  節點下。 範圍函式會依序列在鏈結中，從定義目前函式的函式，到鏈結最外側的函式。  
   
--   [全域]  節點會列出在任何函式外定義的全域物件。  
+- [全域]  節點會列出在任何函式外定義的全域物件。  
   
- 範圍鏈結可能會令人混淆，最好以範例說明。 在下列範例中，您可以看到 `module` 函式如何建立自己的範圍，以及您如何藉由建立 Closure 來建立範圍的另一個層級。  
+  範圍鏈結可能會令人混淆，最好以範例說明。 在下列範例中，您可以看到 `module` 函式如何建立自己的範圍，以及您如何藉由建立 Closure 來建立範圍的另一個層級。  
   
 ###  <a name="BKMK_Example_4"></a> 範例 4  
   

@@ -20,29 +20,29 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 08cf57bb90ba85df8a818da92cfd5615c62c3468
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ae619be498fcb1c48bbea8b706f0b0b5fa4db54c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49292938"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49950663"
 ---
 # <a name="troubleshooting-broken-references"></a>Troubleshooting Broken References
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 如果您的應用程式嘗試使用中斷的參考，則會產生例外狀況錯誤。 此錯誤的主要原因是找不到參考的元件，但在某些情況下也可能將參考視為中斷。 下列清單顯示這些情況：  
   
--   專案的參考路徑不正確或不完整。  
+- 專案的參考路徑不正確或不完整。  
   
--   參考的檔案已被刪除。  
+- 參考的檔案已被刪除。  
   
--   參考的檔案已被重新命名。  
+- 參考的檔案已被重新命名。  
   
--   網路連線或驗證失敗。  
+- 網路連線或驗證失敗。  
   
--   參考未安裝在電腦上的 COM 元件。  
+- 參考未安裝在電腦上的 COM 元件。  
   
- 以下是這些問題的補救方法。  
+  以下是這些問題的補救方法。  
   
 > [!NOTE]
 >  組件中的檔案是使用專案檔中的絕對路徑來參考的。 因此，在多開發人員環境中工作的使用者，可能會遺漏本機環境中參考的組件。 若要避免這些錯誤，您最好在這些情況下新增專案對專案參考。 如需詳細資訊，請參閱 [NIB 如何：使用加入參考對話方塊加入或移除參考](http://msdn.microsoft.com/en-us/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)和[使用組件設計程式](http://msdn.microsoft.com/library/25918b15-701d-42c7-95fc-c290d08648d6)。  

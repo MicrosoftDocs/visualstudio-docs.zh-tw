@@ -1,5 +1,5 @@
 ---
-title: IDebugBinder::ResolveDynamicType |Microsoft 文件
+title: IDebugBinder::ResolveDynamicType |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6ac7d69bf1a3308e6eebfb11356506b8ea7fc062
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6b49e3d42e8fbcc39d259c25081405c21ca1bc15
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31100477"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49892801"
 ---
 # <a name="idebugbinderresolvedynamictype"></a>IDebugBinder::ResolveDynamicType
-這個方法會傳回變數的確切類型。  
+這個方法會傳回變數的確切型別。  
   
 ## <a name="syntax"></a>語法  
   
@@ -49,7 +49,7 @@ int ResolveDynamicType(
  [out]傳回[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)提供變數的類型的特定資訊。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)   

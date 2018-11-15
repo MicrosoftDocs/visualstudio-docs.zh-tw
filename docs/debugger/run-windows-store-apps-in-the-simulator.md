@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: fd0aa403e702a591a0b09d0891116063a3ed9ff2
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: f8d1ae730947a70cac253866d0257aa4e0216626
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44281048"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49882765"
 ---
 # <a name="run-uwp-apps-in-the-simulator"></a>在模擬器中執行 UWP 應用程式
 UWP 應用程式的 Visual Studio 模擬器是模擬 UWP 應用程式的桌面應用程式。 一般而言，您要在本機電腦、 連接的裝置或在遠端電腦上偵錯。 不過，在某些情況下，您可能想要使用 Visual Studio 模擬器來模擬不同的實體螢幕大小和解析度。 您也可以模擬常見觸控和旋轉事件，以及模擬網路連接屬性。
@@ -109,41 +109,41 @@ UWP 應用程式的 Visual Studio 模擬器是模擬 UWP 應用程式的桌面�
      ![螢幕擷取畫面設定操作功能表](../debugger/media/simulator_screenshotsettingscntxmnu.png "SIMULATOR_ScreenShotSettingsCntxMnu")  
   
 ##  <a name="BKMK_Simulate_network_connection_properties"></a> 模擬網路連接屬性  
- 您可以協助您的應用程式使用者管理計量付費的網路連線的成本，藉由持續了解網路連接成本或資料計劃狀態的變更，以及啟用您的應用程式使用此資訊來避免產生額外費用漫遊或超出指定的資料傳輸限制。 [Windows.Networking.Connectivity](/uwp/api/windows.networking.connectivity) Api 可讓您回應[NetworkStatusChanged](/uwp/api/windows.networking.connectivity.networkinformation)並[TriggerType](/uwp/api/windows.applicationmodel.background.systemtrigger)登入的事件。 請參閱[快速入門： 管理計量付費的網路費用限制](https://msdn.microsoft.com/library/windows/apps/Hh750310.aspx)。  
+ 您可以協助您的應用程式使用者管理計量付費的網路連線的成本，藉由持續了解網路連接成本或資料計劃狀態的變更，以及啟用您的應用程式使用此資訊來避免產生額外費用漫遊或超出指定的資料傳輸限制。 [Windows.Networking.Connectivity](/uwp/api/windows.networking.connectivity) API 可讓您回應簽署的 [NetworkStatusChanged](/uwp/api/windows.networking.connectivity.networkinformation) 和 [TriggerType](/uwp/api/windows.applicationmodel.background.systemtrigger) 事件。 請參閱 [快速入門：管理計量付費網路費用限制](https://msdn.microsoft.com/library/windows/apps/Hh750310.aspx)。  
   
  若要偵錯或測試您的網路成本感知程式碼，模擬器可以模擬透過公開的網路內容[ConnectionProfile](/uwp/api/windows.networking.connectivity.connectionprofile)所傳回的物件[Connectionprofile](/uwp/api/windows.networking.connectivity.networkinformation)。
   
  若要模擬網路屬性：  
   
-1.  在模擬器工具列上，選擇 [變更網路屬性]  按鈕。  
+1. 在模擬器工具列上，選擇 [變更網路屬性]  按鈕。  
   
-2.  在 [設定網路屬性]  對話方塊中，選取 [使用模擬的網路屬性] 。  
+2. 在 [設定網路屬性]  對話方塊中，選取 [使用模擬的網路屬性] 。  
   
-     清除核取方塊移除模擬，並返回目前連接介面的網路屬性。  
+    清除核取方塊移除模擬，並返回目前連接介面的網路屬性。  
   
-3.  為模擬的網路輸入 [ **設定檔名稱** ]。 我們建議使用唯一的名稱可用來識別此模擬中的[ProfileName](/uwp/api/windows.networking.connectivity.connectionprofile)屬性[ConnectionProfile](/uwp/api/windows.networking.connectivity.connectionprofile)物件。  
+3. 為模擬的網路輸入 [ **設定檔名稱** ]。 建議您使用不重複的名稱，以便在 [ConnectionProfile](/uwp/api/windows.networking.connectivity.connectionprofile) 物件的 [ProfileName](/uwp/api/windows.networking.connectivity.connectionprofile) 屬性中，能識別此模擬。  
   
-4.  選取  [NetworkCostType](/uwp/api/windows.networking.connectivity.networkcosttype)值的設定檔**網路成本類型**清單。  
+4. 從 [網路成本類型] [](/uwp/api/windows.networking.connectivity.networkcosttype) 清單中，為設定檔選取 **NetworkCostType** 值。  
   
-5.  從**的資料限制狀態旗標** 清單中，您可以設定[ApproachingDataLimit](/uwp/api/windows.networking.connectivity.connectioncost)屬性或有[OverDataLimit](/uwp/api/windows.networking.connectivity.connectioncost)屬性設為 true，或者您也可以選擇**低於資料限制**將這兩個值設定為 false。  
+5. 從**的資料限制狀態旗標** 清單中，您可以設定[ApproachingDataLimit](/uwp/api/windows.networking.connectivity.connectioncost)屬性或有[OverDataLimit](/uwp/api/windows.networking.connectivity.connectioncost)屬性設為 true，或者您也可以選擇**低於資料限制**將這兩個值設定為 false。  
   
-6.  從**漫遊狀態**清單中，設定[漫遊](/uwp/api/windows.networking.connectivity.connectioncost)屬性。  
+6. 從 [漫遊狀態]  清單，設定 [Roaming](/uwp/api/windows.networking.connectivity.connectioncost) 屬性。  
   
-7.  選擇**設定屬性**來模擬網路屬性，透過觸發前景[NetworkStatusChanged](/uwp/api/windows.networking.connectivity.networkinformation)事件和背景[Networkstatechange](/uwp/api/windows.applicationmodel.background.systemtrigger)型別的**Systemtrigger**。  
+7. 選擇 [設定屬性]  ，透過觸發前景 [NetworkStatusChanged](/uwp/api/windows.networking.connectivity.networkinformation) 事件和 [NetworkStateChange](/uwp/api/windows.applicationmodel.background.systemtrigger) 類型的背景 **SystemTrigger**來模擬網路屬性。  
   
- **管理網路連接的詳細資訊**  
+   **管理網路連接的詳細資訊**  
   
- [快速入門： 管理計量付費網路費用限制](https://msdn.microsoft.com/library/windows/apps/Hh750310.aspx)  
+   [快速入門：管理計量付費網路費用限制](https://msdn.microsoft.com/library/windows/apps/Hh750310.aspx)  
   
- [網路資訊範例](https://code.msdn.microsoft.com/windowsapps/Network-Information-Sample-63aaa201)  
+   [網路資訊範例](https://code.msdn.microsoft.com/windowsapps/Network-Information-Sample-63aaa201)  
   
- [分析能源利用](../profiling/analyze-energy-use-in-store-apps.md)  
+   [分析能源利用](../profiling/analyze-energy-use-in-store-apps.md)  
   
- [Windows.Networking.Connectivity](/uwp/api/windows.networking.connectivity)  
+   [Windows.Networking.Connectivity](/uwp/api/windows.networking.connectivity)  
   
- [如何使用背景工作的系統事件回應](/previous-versions/windows/apps/hh977058(v=win.10))  
+   [如何使用背景工作回應系統事件](/previous-versions/windows/apps/hh977058(v=win.10))  
   
- [如何在 UWP App 中觸發暫停、繼續和背景事件](/visualstudio/debugger/how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio)  
+   [如何在 UWP App 中觸發暫停、繼續和背景事件](/visualstudio/debugger/how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio)  
   
 ##  <a name="BKMK_Navigate_the_simulator_with_the_keyboard"></a> 使用鍵盤巡覽模擬器  
  您可以藉由按下巡覽模擬器工具列**CTRL + ALT + 向上鍵**將焦點從模擬器視窗切換至模擬器工具列。 使用 **向上鍵** 和 **向下鍵** 可以在工具列按鈕之間移動。  

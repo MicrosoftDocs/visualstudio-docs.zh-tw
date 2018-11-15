@@ -17,12 +17,12 @@ ms.assetid: 9d5c6bc6-7e72-4f1b-801c-7192458f3ba8
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f573ac00cec34470b10e44f70bf0b4c3b6d037b6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: fe42646f09c0d11efd295064b97f50ef65248340
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49237051"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49847080"
 ---
 # <a name="ienumcodepaths2clone"></a>IEnumCodePaths2::Clone
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

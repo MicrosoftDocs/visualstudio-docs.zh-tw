@@ -13,12 +13,12 @@ ms.assetid: f3fb5df4-3aae-40e4-9450-bbe15b0c5af5
 caps.latest.revision: 25
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: aaec132bc8780ef01e4bff403f6cbf17df570204
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5f5bff1d2977ffafa4b745eaf6fd9d6b5c84bdab
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49177849"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49890682"
 ---
 # <a name="troubleshooting-the-visual-studio-emulator-for-android"></a>Troubleshooting the Visual Studio Emulator for Android
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -100,11 +100,11 @@ ms.locfileid: "49177849"
 ##  <a name="ManualNetworkConfig"></a> 當網路設定需要手動進行時，無法連接到網路目的地  
  若要從模擬器連接到網路目的地，您的網路必須符合下列需求：  
   
--   DHCP。 模擬器需要 DHCP，因為它會將本身設定為網路上具有自己的 IP 位址的個別裝置。  
+- DHCP。 模擬器需要 DHCP，因為它會將本身設定為網路上具有自己的 IP 位址的個別裝置。  
   
--   自動設定的 DNS 和閘道設定。 您無法手動設定模擬器的 DNS 和閘道設定。  
+- 自動設定的 DNS 和閘道設定。 您無法手動設定模擬器的 DNS 和閘道設定。  
   
- 如果您的網路需要手動進行設定，請洽詢 IT 系統管理員，確定如何啟用模擬器的網路連線。  
+  如果您的網路需要手動進行設定，請洽詢 IT 系統管理員，確定如何啟用模擬器的網路連線。  
   
 ##  <a name="SlowStart"></a> 模擬器啟動很慢、因逾時而無法啟動，或應用程式部署失敗  
  在某些情況下，模擬器需要幾分鐘的時間才能啟動，或因逾時而無法啟動。 當模擬器無法啟動時，您會看到下列訊息：`App deployment failed. Please try again`。 下列情況可能會導致這個錯誤。  
@@ -147,131 +147,131 @@ ms.locfileid: "49177849"
 ##  <a name="NoStart"></a> Emulator fails to start (first use)  
  如果模擬器未啟動，請進行下列工作來找出並修正問題。  
   
--   確定符合最低硬體需求且 BIOS 設定正確無誤。  
+- 確定符合最低硬體需求且 BIOS 設定正確無誤。  
   
-     模擬器和 Windows 8 Hyper-V 需要支援第二層位址轉譯 (SLAT) 的 64 位元處理器。 針對 Intel，您基本上需要 Core i3、i5 或 i7 處理器 (或多個 Xeon 中的其中一個)。 AMD 晶片清單可在 [這裡](http://support.amd.com/en-us)取得。  
+   模擬器和 Windows 8 Hyper-V 需要支援第二層位址轉譯 (SLAT) 的 64 位元處理器。 針對 Intel，您基本上需要 Core i3、i5 或 i7 處理器 (或多個 Xeon 中的其中一個)。 AMD 晶片清單可在 [這裡](http://support.amd.com/en-us)取得。  
   
-    1.  確定您的電腦符合 [系統需求](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md)。  
+  1. 確定您的電腦符合 [系統需求](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md)。  
   
-    2.  確認 [SLAT 工具](https://slatstatuscheck.codeplex.com/) 回報您的電腦支援 SLAT。  
+  2. 確認 [SLAT 工具](https://slatstatuscheck.codeplex.com/) 回報您的電腦支援 SLAT。  
   
-    3.  在電腦的 BIOS 設定中，確定已啟用所有虛擬化技術。 確切 BIOS 描述可能會因每個硬體製造商而異。 一般而言，請啟用下列相關功能：  
+  3. 在電腦的 BIOS 設定中，確定已啟用所有虛擬化技術。 確切 BIOS 描述可能會因每個硬體製造商而異。 一般而言，請啟用下列相關功能：  
   
-        -   SLAT (第二層位址轉譯)  
+     -   SLAT (第二層位址轉譯)  
   
-        -   EPT (延伸分頁表) (Intel)  
+     -   EPT (延伸分頁表) (Intel)  
   
-        -   NPT (巢狀分頁表) (AMD)  
+     -   NPT (巢狀分頁表) (AMD)  
   
-        -   RVI (快速虛擬化索引編制) (AMD)  
+     -   RVI (快速虛擬化索引編制) (AMD)  
   
-        -   VMX (表示硬體輔助虛擬化支援的 Intel 縮寫)  
+     -   VMX (表示硬體輔助虛擬化支援的 Intel 縮寫)  
   
-        -   SVM (表示硬體輔助虛擬化支援的 AMD 縮寫)  
+     -   SVM (表示硬體輔助虛擬化支援的 AMD 縮寫)  
   
-        -   XD (執行停用) (Intel)；必須啟用這項功能  
+     -   XD (執行停用) (Intel)；必須啟用這項功能  
   
-        -   NX (沒有執行) (AMD)；必須啟用這項功能  
+     -   NX (沒有執行) (AMD)；必須啟用這項功能  
   
-    4.  如果 BIOS 中有下列選項，請加以停用。  
+  4. 如果 BIOS 中有下列選項，請加以停用。  
   
-        -   停用 Intel VT-d  
+     - 停用 Intel VT-d  
   
-        -   停用 Trusted Execution  
+     - 停用 Trusted Execution  
   
-         如需詳細資訊，請參閱這篇文章：Technet：Hyper-V：如何修正啟用 Hyper-V 的 BIOS 錯誤  
+       如需詳細資訊，請參閱這篇文章：Technet：Hyper-V：如何修正啟用 Hyper-V 的 BIOS 錯誤  
   
-    5.  確定您至少有 4 GB 的系統記憶體，而且沒有其他資源密集的程式和處理序正在使用這些記憶體。  
+  5. 確定您至少有 4 GB 的系統記憶體，而且沒有其他資源密集的程式和處理序正在使用這些記憶體。  
   
-    6.  確定您執行的是 Windows 8 Professional (含) 以後版本 (不支援 Windows Server 2008)。 支援 Windows Server 2012，但您必須啟用 [桌面體驗]。  
+  6. 確定您執行的是 Windows 8 Professional (含) 以後版本 (不支援 Windows Server 2008)。 支援 Windows Server 2012，但您必須啟用 [桌面體驗]。  
   
      您可以檢查事件檢視器，以查看是否有任何 Hypervisor 錯誤。 若要執行這個動作，請開啟事件檢視器 (開始鍵 + R，接著輸入 `eventvwr`)，並選取 [Windows 記錄] 、[系統] 。 然後依事件來源篩選記錄，並將來源設定為 [Hyper-V-Hypervisor] 。 請查看錯誤，以協助找出根本原因。  
   
      如果您的處理器符合最低需求，但 Hypervisor 仍然失敗，建議您了解電腦是否有可用的 BIOS 升級。 如果有，而且您選擇升級，則當您升級 BIOS 時，請務必遵守製造商的所有注意事項 (例如，確保 BIOS 韌體升級不會因電源中斷而中斷，這可能會永久損毀 BIOS)。  
   
--   確定您至少有 4 GB 的系統記憶體，而且沒有其他資源密集的程式和處理序正在使用這些記憶體。  
+- 確定您至少有 4 GB 的系統記憶體，而且沒有其他資源密集的程式和處理序正在使用這些記憶體。  
   
--   移除/停用可能會干擾虛擬網路的協力廠商驅動程式或軟體。  
+- 移除/停用可能會干擾虛擬網路的協力廠商驅動程式或軟體。  
   
-     安裝在 Windows 8 下的某些協力廠商產品有一些已知問題，例如網路驅動程式/通訊協定與 Hyper-V 網路堆疊不完全相容。  
+   安裝在 Windows 8 下的某些協力廠商產品有一些已知問題，例如網路驅動程式/通訊協定與 Hyper-V 網路堆疊不完全相容。  
   
-     一般而言，這些產品的開發人員必須將其軟體更新為與 Windows 8 和 Hyper-V 相容。  
+   一般而言，這些產品的開發人員必須將其軟體更新為與 Windows 8 和 Hyper-V 相容。  
   
-     下列產品可能需要升級，才能與 Windows 8 相容：VirtualBox、Virtual PC 7、VMWare、某些 VPN 用戶端、軟體防火牆、某些 Cisco VPN 用戶端版本，以及其他虛擬化系統。 請與有問題之虛擬化軟體的開發人員合作，並建議他們升級軟體，以與 Windows 8 和 Hyper-V 相容。  
+   下列產品可能需要升級，才能與 Windows 8 相容：VirtualBox、Virtual PC 7、VMWare、某些 VPN 用戶端、軟體防火牆、某些 Cisco VPN 用戶端版本，以及其他虛擬化系統。 請與有問題之虛擬化軟體的開發人員合作，並建議他們升級軟體，以與 Windows 8 和 Hyper-V 相容。  
   
-     其中一個 **因應措施**，是停用可能會干擾模擬器用來與 Visual Studio 通訊之虛擬網路的所有協力廠商驅動程式和應用程式。 這些應用程式可能包括：  
+   其中一個 **因應措施**，是停用可能會干擾模擬器用來與 Visual Studio 通訊之虛擬網路的所有協力廠商驅動程式和應用程式。 這些應用程式可能包括：  
   
-    -   防毒應用程式 (連接到網路堆疊)  
+  - 防毒應用程式 (連接到網路堆疊)  
   
-    -   網路監視工具  
+  - 網路監視工具  
   
-    -   網路記錄工具  
+  - 網路記錄工具  
   
-    -   其他系統監視軟體  
+  - 其他系統監視軟體  
   
-     除了解除安裝有問題的產品 (並要求產品開發人員發行更新版本) 之外，另一個可能的解決方法是執行下列步驟。  
+    除了解除安裝有問題的產品 (並要求產品開發人員發行更新版本) 之外，另一個可能的解決方法是執行下列步驟。  
   
-    1.  啟動網路連線管理員 (從 [開始] 畫面輸入 `View Network Connections` ，然後選取這個選項以檢視網路連線)。  
+  1. 啟動網路連線管理員 (從 [開始] 畫面輸入 `View Network Connections` ，然後選取這個選項以檢視網路連線)。  
   
-    2.  針對虛擬乙太網路 (內部乙太網路連接埠 Windows Phone 模擬器內部交換器) 介面卡，從內容功能表選擇 [內容]  。  
+  2. 針對虛擬乙太網路 (內部乙太網路連接埠 Windows Phone 模擬器內部交換器) 介面卡，從內容功能表選擇 [內容]  。  
   
-         ![Hyper&#45;V 所使用的虛擬介面卡](../cross-platform/media/android-emu-virtual-adapter.png "Android_Emu_Virtual_Adapter")  
+      ![Hyper&#45;V 所使用的虛擬介面卡](../cross-platform/media/android-emu-virtual-adapter.png "Android_Emu_Virtual_Adapter")  
   
-         介面卡內容如下所示。  
+      介面卡內容如下所示。  
   
-         ![虛擬介面卡內容](../cross-platform/media/android-emu-virtual-adapter-properties.png "Android_Emu_Virtual_Adapter_Properties")  
+      ![虛擬介面卡內容](../cross-platform/media/android-emu-virtual-adapter-properties.png "Android_Emu_Virtual_Adapter_Properties")  
   
-    3.  針對這張介面卡，您只需要在 [這個連線使用下列項目]  下選取下列選項：  
+  3. 針對這張介面卡，您只需要在 [這個連線使用下列項目]  下選取下列選項：  
   
-        -   Client for Microsoft Networks  
+     -   Client for Microsoft Networks  
   
-        -   QoS 封包排程器  
+     -   QoS 封包排程器  
   
-        -   File and Printer Sharing for Microsoft Networks  
+     -   File and Printer Sharing for Microsoft Networks  
   
-        -   Microsoft LLDP 通訊協定驅動程式  
+     -   Microsoft LLDP 通訊協定驅動程式  
   
-        -   Link-Layer Topology Discovery Mapper I/O Driver  
+     -   Link-Layer Topology Discovery Mapper I/O Driver  
   
-        -   Link-Layer Topology Discovery Responder  
+     -   Link-Layer Topology Discovery Responder  
   
-        -   網際網路通訊協定第 6 版 (TCP/IPv6)  
+     -   網際網路通訊協定第 6 版 (TCP/IPv6)  
   
-        -   網際網路通訊協定第 4 版 (TCP/IPv4)  
+     -   網際網路通訊協定第 4 版 (TCP/IPv4)  
   
-    4.  取消選取其他任何項目。  
+  4. 取消選取其他任何項目。  
   
      使用這種方法的缺點是，每當新的協力廠商產品安裝不支援的驅動程式時，或安裝模擬器時，都必須重複執行這些步驟。  
   
      解除安裝協力廠商產品之後，您可能需要還原 Windows Phone 模擬器內部交換器。 若要執行這個動作：  
   
-    -   開啟 Hyper V 並移至虛擬交換器管理員。 建立名為「Windows Phone 模擬器內部交換器」的虛擬交換器，然後將其連線類型設定為 [內部網路] 。  
+  - 開啟 Hyper V 並移至虛擬交換器管理員。 建立名為「Windows Phone 模擬器內部交換器」的虛擬交換器，然後將其連線類型設定為 [內部網路] 。  
   
-         ![虛擬交換器管理員](../cross-platform/media/android-emu-virtual-switch-manager.png "Android_Emu_Virtual_Switch_Manager")  
+     ![虛擬交換器管理員](../cross-platform/media/android-emu-virtual-switch-manager.png "Android_Emu_Virtual_Switch_Manager")  
   
-     現在啟動模擬器。 模擬器應該會正常運作。  
+    現在啟動模擬器。 模擬器應該會正常運作。  
   
 ##  <a name="NoBoot"></a> 安裝模擬器後無法啟動電腦  
  下列條件成立時，可能會發生這個問題：  
   
--   您的電腦具有有 1 GB 的主機板。  
+- 您的電腦具有有 1 GB 的主機板。  
   
--   主機板上已啟用 USB3。  
+- 主機板上已啟用 USB3。  
   
- 若要解決這個問題，請停用主機板之 BIOS 設定中的 USB3 並重新啟動電腦。 然後檢查是否已針對主機板的 BIOS 發行 GB 更新。  
+  若要解決這個問題，請停用主機板之 BIOS 設定中的 USB3 並重新啟動電腦。 然後檢查是否已針對主機板的 BIOS 發行 GB 更新。  
   
- 如需詳細資訊，請參閱下列知識庫文章 [在 GB 系統上安裝 Hyper-V 角色後開機失敗](https://support.microsoft.com/en-us/kb/2693144)。  
+  如需詳細資訊，請參閱下列知識庫文章 [在 GB 系統上安裝 Hyper-V 角色後開機失敗](https://support.microsoft.com/en-us/kb/2693144)。  
   
 ##  <a name="ADB"></a> Visual Studio 在嘗試將應用程式部署至模擬器時遇遭困難，或模擬器未作為偵錯目標出現在其他 IDE 中  
  若模擬器正在執行，但似乎未連接到 ADB (Android Debug Bridge) 或未顯示在使用 ADB (例如 Android Studio 或 Eclipse) 的 Android 工具 中，則您可能需要調整模擬器尋找 ADB 的位置。 模擬器使用登錄機碼來識別您的 Android SDK 的基礎位置，並尋找該目錄下的 \platform-tools\adb.exe 檔案。 若要修改模擬器所使用的 Android SDK 路徑：  
   
--   從 [開始] 按鈕內容功能選取 [執行]  ，在對話方塊中輸入 `regedit` ，然後選擇 [確定] ，以開啟登錄編輯程式。  
+- 從 [開始] 按鈕內容功能選取 [執行]  ，在對話方塊中輸入 `regedit` ，然後選擇 [確定] ，以開啟登錄編輯程式。  
   
--   巡覽至左側資料夾樹狀目錄中的 HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Android SDK Tools。  
+- 巡覽至左側資料夾樹狀目錄中的 HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Android SDK Tools。  
   
--   修改 [路徑]  登錄變數，以符合您的 Android SDK 路徑。  
+- 修改 [路徑]  登錄變數，以符合您的 Android SDK 路徑。  
   
- 重新啟動模擬器，您現在應該可以看到模擬器連接到 ADB 和關聯的 Android 工具。  
+  重新啟動模擬器，您現在應該可以看到模擬器連接到 ADB 和關聯的 Android 工具。  
   
 ##  <a name="XamarinPlayer"></a> 模擬器因為無法設定 UDP 連接埠而停止回應  
  您可能會因為與 Xamarin Player 不相容而遇到此問題。 若模擬器似乎停止回應，或您看到此錯誤訊息「模擬器無法連接到裝置作業系統：無法設定 UDP 連接埠。  可能停用部分功能」，即表示您遇到此問題。 請採取下列步驟。  

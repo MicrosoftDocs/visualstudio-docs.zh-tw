@@ -22,33 +22,33 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4c5dee963faaf52b6e1511d0b689ebe6ee5554e2
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 8ca93cae45eed272b683275896efcf83229ca9a3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35671530"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49880789"
 ---
 # <a name="excel-object-model-overview"></a>Excel 物件模型概觀
   若要開發使用 Microsoft Office Excel 的方案，您可以與 Excel 物件模型提供的物件進行互動。 本主題將介紹最重要的物件：  
   
--   <xref:Microsoft.Office.Interop.Excel.Application>  
+- <xref:Microsoft.Office.Interop.Excel.Application>  
   
--   <xref:Microsoft.Office.Interop.Excel.Workbook>  
+- <xref:Microsoft.Office.Interop.Excel.Workbook>  
   
--   <xref:Microsoft.Office.Interop.Excel.Worksheet>  
+- <xref:Microsoft.Office.Interop.Excel.Worksheet>  
   
--   <xref:Microsoft.Office.Interop.Excel.Range>  
+- <xref:Microsoft.Office.Interop.Excel.Range>  
   
- [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
+  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
   
- 這個物件模型密切遵循其使用者介面。 <xref:Microsoft.Office.Interop.Excel.Application> 物件代表整個應用程式，而每個 <xref:Microsoft.Office.Interop.Excel.Workbook> 物件都包含 `Worksheet` 物件的集合。 其中，代表儲存格的主要抽象物件是 <xref:Microsoft.Office.Interop.Excel.Range> 物件，它可以讓您使用個別儲存格或儲存格群組。  
+  這個物件模型密切遵循其使用者介面。 <xref:Microsoft.Office.Interop.Excel.Application> 物件代表整個應用程式，而每個 <xref:Microsoft.Office.Interop.Excel.Workbook> 物件都包含 `Worksheet` 物件的集合。 其中，代表儲存格的主要抽象物件是 <xref:Microsoft.Office.Interop.Excel.Range> 物件，它可以讓您使用個別儲存格或儲存格群組。  
   
- 在 Visual Studio 中的 Office 專案還提供 Excel 物件模型中，除了*主項目*並*主控制項*擴充 Excel 物件模型中的某些物件。 主項目和主控制項的行為與它們所擴充的 Excel 物件相同，但還具有其他功能 (例如資料繫結功能和額外事件)。 如需詳細資訊，請參閱 <<c0> [ 使用擴充的物件自動化 Excel](../vsto/automating-excel-by-using-extended-objects.md)並[主項目和裝載控制項概觀](../vsto/host-items-and-host-controls-overview.md)。  
+  在 Visual Studio 中的 Office 專案還提供 Excel 物件模型中，除了*主項目*並*主控制項*擴充 Excel 物件模型中的某些物件。 主項目和主控制項的行為與它們所擴充的 Excel 物件相同，但還具有其他功能 (例如資料繫結功能和額外事件)。 如需詳細資訊，請參閱 <<c0> [ 使用擴充的物件自動化 Excel](../vsto/automating-excel-by-using-extended-objects.md)並[主項目和裝載控制項概觀](../vsto/host-items-and-host-controls-overview.md)。  
   
- 本主題提供 Excel 物件模型的簡短概觀。 如需資源，您可以深入了解整個 Excel 物件模型，請參閱[使用 Excel 物件模型文件](#ExcelOMDocumentation)。  
+  本主題提供 Excel 物件模型的簡短概觀。 如需資源，您可以深入了解整個 Excel 物件模型，請參閱[使用 Excel 物件模型文件](#ExcelOMDocumentation)。  
   
- ![影片連結](../vsto/media/playvideo.gif "影片連結")如需相關的影片示範，請參閱[How do i： 使用事件處理常式，在 Excel 2007 增益集？](http://go.microsoft.com/fwlink/?LinkID=130291)，和[How do i： 使用圖形以建立泡泡圖在 Excel 嗎？](http://go.microsoft.com/fwlink/?LinkID=130313).  
+  ![影片連結](../vsto/media/playvideo.gif "影片連結")如需相關的影片示範，請參閱[How do i： 使用事件處理常式，在 Excel 2007 增益集？](http://go.microsoft.com/fwlink/?LinkID=130291)，和[How do i： 使用圖形以建立泡泡圖在 Excel 嗎？](http://go.microsoft.com/fwlink/?LinkID=130313).  
   
 ## <a name="access-objects-in-an-excel-project"></a>存取 Excel 專案中的物件  
  當您建立適用於 Excel 的新的 VSTO 增益集專案時，Visual Studio 會自動建立*ThisAddIn.vb*或是*ThisAddIn.cs*程式碼檔案。 您可以使用 `Me.Application` 或 `this.Application`，來存取 Application 物件。  
@@ -69,33 +69,33 @@ ms.locfileid: "35671530"
   
  由於 Excel 文件包含高度結構化的資料，因此物件模型不僅層級分明，而且非常明確。 Excel 提供數百個物件，您可能想要進行互動，但您可以取得一個不錯的起點的物件模型將焦點放在一小部分的可用的物件。 這些物件包含下列四個項目：  
   
--   應用程式  
+- 應用程式  
   
--   活頁簿  
+- 活頁簿  
   
--   工作表  
+- 工作表  
   
--   範圍  
+- 範圍  
   
- 使用 Excel 執行的大部分工作都是以這四個物件及其成員為中心。  
+  使用 Excel 執行的大部分工作都是以這四個物件及其成員為中心。  
   
 ### <a name="application-object"></a>Application 物件  
  Excel <xref:Microsoft.Office.Interop.Excel.Application> 物件代表 Excel 應用程式本身。 <xref:Microsoft.Office.Interop.Excel.Application> 物件會公開有關執行中應用程式、套用至該執行個體的選項，以及目前在執行個體中開啟之使用者物件的大量資訊。  
   
 > [!NOTE]  
->  您不應將<xref:Microsoft.Office.Interop.Excel.ApplicationClass.EnableEvents%2A>的屬性<xref:Microsoft.Office.Interop.Excel.Application>在 Excel 中的物件**false**。 將這個屬性設定為 false，會導致 Excel 無法引發任何事件，包括主控制項的事件在內。  
+>  請勿在 Excel 中，將 <xref:Microsoft.Office.Interop.Excel.ApplicationClass.EnableEvents%2A> 物件的 <xref:Microsoft.Office.Interop.Excel.Application> 屬性設定為 **false**(Native Office Object)。 將這個屬性設定為 false，會導致 Excel 無法引發任何事件，包括主控制項的事件在內。  
   
 ### <a name="workbook-object"></a>生活頁簿物件  
  <xref:Microsoft.Office.Interop.Excel.Workbook> 物件代表 Excel 應用程式中的單一活頁簿。  
   
- Visual Studio 中的 Office 程式開發工具會藉由提供 <xref:Microsoft.Office.Tools.Excel.Workbook> 類型，來擴充 <xref:Microsoft.Office.Interop.Excel.Workbook> 物件。 這個類型可讓您存取 <xref:Microsoft.Office.Interop.Excel.Workbook> 物件的所有功能。 如需詳細資訊，請參閱 < [Workbook 主項目](../vsto/workbook-host-item.md)。  
+ Visual Studio 中的 Office 程式開發工具會藉由提供 <xref:Microsoft.Office.Interop.Excel.Workbook> 類型，來擴充 <xref:Microsoft.Office.Tools.Excel.Workbook> 物件。 這個類型可讓您存取 <xref:Microsoft.Office.Interop.Excel.Workbook> 物件的所有功能。 如需詳細資訊，請參閱 < [Workbook 主項目](../vsto/workbook-host-item.md)。  
   
 ### <a name="worksheet-object"></a>Worksheet 物件  
  <xref:Microsoft.Office.Interop.Excel.Worksheet> 物件是 <xref:Microsoft.Office.Interop.Excel.Worksheets> 集合的成員。 <xref:Microsoft.Office.Interop.Excel.Worksheet> 的許多屬性、方法和事件都與 <xref:Microsoft.Office.Interop.Excel.Application> 或 <xref:Microsoft.Office.Interop.Excel.Workbook> 物件所提供的成員完全相同或類似。  
   
  Excel 提供 <xref:Microsoft.Office.Interop.Excel.Sheets> 集合，做為 <xref:Microsoft.Office.Interop.Excel.Workbook> 物件的屬性。 <xref:Microsoft.Office.Interop.Excel.Sheets> 集合的每個成員都是 <xref:Microsoft.Office.Interop.Excel.Worksheet> 或 <xref:Microsoft.Office.Interop.Excel.Chart> 物件。  
   
- Visual Studio 中的 Office 程式開發工具會藉由提供 <xref:Microsoft.Office.Tools.Excel.Worksheet> 類型，來擴充 <xref:Microsoft.Office.Interop.Excel.Worksheet> 物件。 這個類型可讓您存取 <xref:Microsoft.Office.Interop.Excel.Worksheet> 物件的所有功能，以及新功能 (例如可以裝載 Managed 控制項和處理新事件)。 如需詳細資訊，請參閱 <<c0> [ 工作表主項目](../vsto/worksheet-host-item.md)。  
+ Visual Studio 中的 Office 程式開發工具會藉由提供 <xref:Microsoft.Office.Interop.Excel.Worksheet> 類型，來擴充 <xref:Microsoft.Office.Tools.Excel.Worksheet> 物件。 這個類型可讓您存取 <xref:Microsoft.Office.Interop.Excel.Worksheet> 物件的所有功能，以及新功能 (例如可以裝載 Managed 控制項和處理新事件)。 如需詳細資訊，請參閱 <<c0> [ 工作表主項目](../vsto/worksheet-host-item.md)。  
   
 ### <a name="range-object"></a>Range 物件  
  <xref:Microsoft.Office.Interop.Excel.Range> 物件是您在 Excel 應用程式中最常使用的物件。 若要操作 Excel 中的任何區域，您必須先將其表示為 <xref:Microsoft.Office.Interop.Excel.Range> 物件，然後再搭配該範圍的方法和屬性使用。 <xref:Microsoft.Office.Interop.Excel.Range> 物件代表一個儲存格、一個資料列、一個資料行、含有一或多個不一定連續之儲存格區塊的儲存格選取範圍，或甚至是多個工作表上的儲存格群組。  

@@ -1,5 +1,5 @@
 ---
-title: 'Idiasession:: Findsymbolbyvaex |Microsoft 文件'
+title: 'Idiasession:: Findsymbolbyvaex |Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e3fad26dfd43057f02105e867c5f1f0add57b20d
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 706049acf99804038f48125b77a71b879658baac
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31463962"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49874458"
 ---
 # <a name="idiasessionfindsymbolbyvaex"></a>IDiaSession::findSymbolByVAEx
-擷取包含此項目，或最接近指定的虛擬位址 (VA) 和位移至指定的符號類型。  
+擷取包含此項目，或指定的虛擬位址 (VA) 和位移至最接近指定的符號類型。  
   
 ## <a name="syntax"></a>語法  
   
@@ -37,19 +37,19 @@ HRESULT findSymbolByVAEx (
   
 #### <a name="parameters"></a>參數  
  `va`  
- [in]指定 VA.  
+ [in]指定瑞斯  
   
  `symtag`  
- [in]要尋找的符號類型。 值取自[SymTagEnum 列舉](../../debugger/debug-interface-access/symtagenum.md)列舉型別。  
+ [in]若要找的符號類型。 值取自[SymTagEnum 列舉](../../debugger/debug-interface-access/symtagenum.md)列舉型別。  
   
  `ppSymbol`  
  [out]傳回[IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)擷取表示符號的物件。  
   
  `displacement`  
- [out]傳回值，這個值會指定從所指定的虛擬位址的位移`va`。  
+ [out]傳回值，這個值，指定所指定的虛擬位址位移`va`。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
   
 ## <a name="example"></a>範例  
   

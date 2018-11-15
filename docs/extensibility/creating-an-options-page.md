@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fea56cf7db42d7028856b88fb8572f5a4024fe07
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 9b9d61b4a57e0255577fdb0621dafd4263fc127c
+ms.sourcegitcommit: 6a955a2d179cd0e137942389f940d9fcbbe125de
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498768"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51607766"
 ---
 # <a name="create-an-options-page"></a>建立選項頁面
 本逐步解說會建立簡單的工具/選項頁面用以檢查和設定屬性的屬性方格。  
@@ -35,9 +35,9 @@ ms.locfileid: "39498768"
   
 ### <a name="to-create-the-vsix-project-and-add-a-vspackage"></a>建立 VSIX 專案，並加入 VSPackage  
   
-1.  每個 Visual Studio 擴充功能開始 VSIX 部署專案，以將包含的延伸模組資產。 建立[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]VSIX 專案，名為`MyToolsOptionsExtension`。 您可以找到在 VSIX 專案範本**新的專案**下方的對話方塊**Visual C#** > **擴充性**。  
+1. 每個 Visual Studio 擴充功能開始 VSIX 部署專案，以將包含的延伸模組資產。 建立[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]VSIX 專案，名為`MyToolsOptionsExtension`。 您可以找到在 VSIX 專案範本**新的專案**下方的對話方塊**Visual C#** > **擴充性**。  
   
-2.  藉由新增名為 Visual Studio 封裝項目範本加入 VSPackage `MyToolsOptionsPackage`。 在 **方案總管**，以滑鼠右鍵按一下專案節點，然後選取**新增** > **新項目**。 在 [**加入新項目] 對話方塊**，請移至**Visual C# 項目** > **擴充性**，然後選取**Visual Studio Package**。 在 **名稱**底部的對話方塊欄位中，將檔案名稱變更為`MyToolsOptionsPackage.cs`。 如需如何建立 VSPackage 的詳細資訊，請參閱[建立 VSPackage 擴充功能](../extensibility/creating-an-extension-with-a-vspackage.md)。  
+2. 藉由新增名為 Visual Studio 封裝項目範本加入 VSPackage `MyToolsOptionsPackage`。 在 **方案總管**，以滑鼠右鍵按一下專案節點，然後選取**新增** > **新項目**。 在 [**加入新項目] 對話方塊**，請移至**Visual C# 項目** > **擴充性**，然後選取**Visual Studio Package**。 在 **名稱**底部的對話方塊欄位中，將檔案名稱變更為`MyToolsOptionsPackage.cs`。 如需如何建立 VSPackage 的詳細資訊，請參閱[建立 VSPackage 擴充功能](../extensibility/creating-an-extension-with-a-vspackage.md)。  
   
 ### <a name="to-create-the-tools-options-property-grid"></a>若要建立工具選項屬性方格  
   
@@ -110,7 +110,7 @@ ms.locfileid: "39498768"
   
 2.  新增下列 using 陳述式。  
   
-    ```vb  
+    ```csharp  
     using System.Windows.Forms;  
     ```  
   
@@ -231,7 +231,7 @@ ms.locfileid: "39498768"
   
 1.  在封裝的程式碼檔案中，新增名為的公用屬性**OptionInteger**要**MyToolsOptionsPackage**類別。  
   
-    ```  
+    ```csharp  
     public int OptionInteger  
     {  
         get  

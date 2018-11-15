@@ -18,12 +18,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1ae4e4de3d3f81f335609201ce510b64a4b0f385
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3f1b06773cbc160c683c87c0ec2cd8b4f54436f9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49208925"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49910663"
 ---
 # <a name="diaaddressmapentry"></a>DiaAddressMapEntry
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -51,13 +51,13 @@ struct DiaAddressMapEntry {
   
  要轉譯為位址， `addrA`，在映像的位址， `addrB`，在圖 B 中，執行下列步驟：  
   
-1.  搜尋的項目，對應`e`，具有最大`rva`小於或等於`addrA`。  
+1. 搜尋的項目，對應`e`，具有最大`rva`小於或等於`addrA`。  
   
-2.  設定`delta = addrA – e.rva`。  
+2. 設定`delta = addrA – e.rva`。  
   
-3.  設定`addrB = e.rvaTo + delta`。  
+3. 設定`addrB = e.rvaTo + delta`。  
   
- 陣列`DiaAddressMapEntry`結構傳遞給[idiaaddressmap:: Set_addressmap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md)方法。  
+   陣列`DiaAddressMapEntry`結構傳遞給[idiaaddressmap:: Set_addressmap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md)方法。  
   
 ## <a name="requirements"></a>需求  
  標頭： dia2.h  

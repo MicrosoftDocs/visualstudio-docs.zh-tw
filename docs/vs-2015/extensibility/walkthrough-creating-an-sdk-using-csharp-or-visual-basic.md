@@ -13,12 +13,12 @@ ms.assetid: ef96a249-5eef-402a-a8d5-d74cb49239bd
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 96b4ded80d3c00c0f2c7a5c9037758f72907ea28
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c8f792553e29a4b24d30a25dd835db0b96befcbd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49215601"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49824265"
 ---
 # <a name="walkthrough-creating-an-sdk-using-c-or-visual-basic"></a>逐步解說︰使用 C# 或 Visual Basic 建立 SDK
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -138,23 +138,23 @@ ms.locfileid: "49215601"
   
 ##  <a name="createSample"></a> 若要建立範例應用程式使用的類別庫  
   
-1.  在功能表列上選擇 **檔案**，**新增**，**新專案**。  
+1. 在功能表列上選擇 **檔案**，**新增**，**新專案**。  
   
-2.  在範本清單中，依序展開**Visual C#** 或是**Visual Basic**，然後選擇  **Windows 市集**節點。  
+2. 在範本清單中，依序展開**Visual C#** 或是**Visual Basic**，然後選擇  **Windows 市集**節點。  
   
-3.  選擇**空白應用程式**範本，將專案命名為**ArithmeticUI**，然後選擇**確定** 按鈕。  
+3. 選擇**空白應用程式**範本，將專案命名為**ArithmeticUI**，然後選擇**確定** 按鈕。  
   
-4.  在 [**方案總管] 中**，開啟捷徑功能表**ArithmeticUI**專案，，然後選擇**新增**，**參考**。  
+4. 在 [**方案總管] 中**，開啟捷徑功能表**ArithmeticUI**專案，，然後選擇**新增**，**參考**。  
   
-5.  在參考類型的清單中，依序展開**Windows**，然後選擇**延伸模組**。  
+5. 在參考類型的清單中，依序展開**Windows**，然後選擇**延伸模組**。  
   
-6.  在 [詳細資料] 窗格中，選擇**簡單的數學 SDK**延伸模組。  
+6. 在 [詳細資料] 窗格中，選擇**簡單的數學 SDK**延伸模組。  
   
-     您的 SDK 的其他資訊會出現。 您可以選擇**更多資訊**連結，以開啟 http://www.msdn.microsoft.com ，如您在稍早在本逐步解說在 SDKManifest.xml 檔案中指定。  
+    您的 SDK 的其他資訊會出現。 您可以選擇**更多資訊**連結，以開啟 http://www.msdn.microsoft.com ，如您在稍早在本逐步解說在 SDKManifest.xml 檔案中指定。  
   
-7.  在 **參考管理員**對話方塊中，選取**簡單數學 SDK**核取方塊，，然後選擇  **確定**  按鈕。  
+7. 在 **參考管理員**對話方塊中，選取**簡單數學 SDK**核取方塊，，然後選擇  **確定**  按鈕。  
   
-8.  在功能表列上選擇 **檢視**，**物件瀏覽器**。  
+8. 在功能表列上選擇 **檢視**，**物件瀏覽器**。  
   
 9. 在 **瀏覽**清單中，選擇**簡單數學**。  
   
@@ -176,7 +176,7 @@ ms.locfileid: "49215601"
   
      正確的結果會出現。  
   
- 您已成功建立和使用擴充功能 SDK。  
+    您已成功建立和使用擴充功能 SDK。  
   
 ## <a name="see-also"></a>另請參閱  
  [逐步解說： 建立使用 c + + SDK](../extensibility/walkthrough-creating-an-sdk-using-cpp.md)   

@@ -14,12 +14,12 @@ caps.latest.revision: 21
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: eae89672a6fcbf56dcd2426547e1fb528c270db2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 25143390085ec0b4d7ab56e0fef9920d7d5eceb8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49290416"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49914539"
 ---
 # <a name="define-a-work-item-link-handler"></a>定義工作項目連結處理常式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -92,11 +92,11 @@ ms.locfileid: "49290416"
 ### <a name="import-the-work-item-namespace"></a>匯入工作項目命名空間  
  在您[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]專案**參考**，加入下列組件的參考：  
   
--   Microsoft.TeamFoundation.WorkItemTracking.Client.dll  
+- Microsoft.TeamFoundation.WorkItemTracking.Client.dll  
   
--   Microsoft.VisualStudio.TeamFoundation.WorkItemTracking.dll  
+- Microsoft.VisualStudio.TeamFoundation.WorkItemTracking.dll  
   
- 在您的程式碼中，匯入下列命名空間：  
+  在您的程式碼中，匯入下列命名空間：  
   
 ```  
 using System.ComponentModel.Composition;  
@@ -282,21 +282,21 @@ element.AddReference(ReferenceConstants.WorkItem, linkString, true);
   
  其中：  
   
--   您的伺服器 URI 是：  
+- 您的伺服器 URI 是：  
   
-     `http://tfServer:8080/tfs/projectCollection`  
+   `http://tfServer:8080/tfs/projectCollection`  
   
-     大小寫在 `projectCollection` 中很重要。  
+   大小寫在 `projectCollection` 中很重要。  
   
--   您可以從 TFS 連接取得 `RepositoryGuid`：  
+- 您可以從 TFS 連接取得 `RepositoryGuid`：  
   
-    ```csharp  
-    TfsTeamProjectCollection tpc = TfsTeamProjectCollectionFactory...;  
-    RepositoryGuid= tpc.InstanceId;  
+  ```csharp  
+  TfsTeamProjectCollection tpc = TfsTeamProjectCollectionFactory...;  
+  RepositoryGuid= tpc.InstanceId;  
   
-    ```  
+  ```  
   
- 如需參考的詳細資訊，請參閱[將參考字串附加至 UML 模型項目](../modeling/attach-reference-strings-to-uml-model-elements.md)。  
+  如需參考的詳細資訊，請參閱[將參考字串附加至 UML 模型項目](../modeling/attach-reference-strings-to-uml-model-elements.md)。  
   
 ## <a name="see-also"></a>另請參閱  
  <xref:Microsoft.TeamFoundation.WorkItemTracking.Client.WorkItemStore?displayProperty=fullName>   

@@ -17,12 +17,12 @@ ms.assetid: 111c2b85-ebfa-487f-b896-2ec4a3eac4d1
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c2fbe958655f4102606c7fbe4b40b228f726f8dc
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6b28d55ed3398642fbd5a42e8b60607b443ffd74
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49305665"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49911963"
 ---
 # <a name="idebugdocument2getdocumentclassid"></a>IDebugDocument2::GetDocumentClassID
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

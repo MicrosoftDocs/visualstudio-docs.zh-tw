@@ -17,12 +17,12 @@ ms.assetid: 1c1bb772-77d6-4870-90b2-fd9247d0004e
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 96021f6365648cf6162e270e4b87a26c6c909f91
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3aa8a4d4484cc33fba1623f732b0168a5295b3dd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49213417"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49947879"
 ---
 # <a name="pdbtype"></a>PDB_TYPE
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

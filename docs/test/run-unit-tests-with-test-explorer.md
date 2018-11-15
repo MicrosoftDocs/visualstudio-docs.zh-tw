@@ -12,12 +12,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: a0feb539be589a4eab51544f1a04154c11f6f9c7
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: dc918adb6a66f64cdcda46ea535cd0ab017c0676
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382330"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49939509"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>使用測試總管執行單元測試
 
@@ -100,7 +100,7 @@ Visual Studio 2015 包含 Managed 程式碼和機器碼皆適用的 Microsoft �
 ### <a name="test-explorer-groups"></a>測試總管群組
 
 |群組|描述|
-|-----------|-----------------|
+|-|-----------------|
 |**持續期間**|依據執行時間群組測試：[快] 、[中] 和 [慢] 。|
 |**結果**|依據執行結果群組測試：[失敗的測試] 、[略過的測試] 、[成功的測試] 。|
 |**特性**|依據您定義的分類/值組群組測試。 指定特性分類和值的語法是由單元測試架構所定義。|
@@ -115,7 +115,7 @@ Visual Studio 2015 包含 Managed 程式碼和機器碼皆適用的 Microsoft �
  Microsoft Managed 程式碼單元測試架構中，您可在  <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute> 屬性中定義特性名稱/值組。 測試架構也包含下列預先定義的特性：
 
 |特性|描述|
-|-----------|-----------------|
+|-|-----------------|
 |<xref:Microsoft.VisualStudio.TestTools.UnitTesting.OwnerAttribute>|擁有者分類是由單元測試架構所定義，會要求您提供擁有者的字串值。|
 |<xref:Microsoft.VisualStudio.TestTools.UnitTesting.PriorityAttribute>|優先權分類是由單元測試架構所定義，會要求您提供優先權的整數值。|
 |<xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute>|TestCategory 屬性可讓您提供沒有值的分類。 TestCategory 屬性定義的分類也可以是 TestProperty 屬性的分類。|
@@ -143,7 +143,7 @@ Visual Studio 2015 包含 Managed 程式碼和機器碼皆適用的 Microsoft �
 > 搜尋是區分大小寫且比對指定字串與準則值的任何部分。
 
 |限定詞|描述|
-|---------------|-----------------|
+|-|-----------------|
 |**特性**|在特性分類和值中搜尋相符項目。 指定特性分類和值的語法是由單元測試架構所定義。|
 |**Project**|在測試專案名稱中搜尋相符項目。|
 |**錯誤訊息**|在失敗的判斷提示所傳回之使用者定義錯誤訊息中搜尋相符項目。|
@@ -187,7 +187,7 @@ FilterName:"Criteria" -FilterName:"SubsetCriteria"
 
 2. 在測試總管中，選取測試方法，然後選擇內容功能表上的 [偵測選取的測試]  。
 
- 如需偵錯工具的詳細資訊，請參閱[在 Visual Studio 中偵錯](../debugger/debugging-in-visual-studio.md)。
+   如需偵錯工具的詳細資訊，請參閱[在 Visual Studio 中偵錯](../debugger/debugging-in-visual-studio.md)。
 
 ### <a name="diagnose-test-method-performance-issues"></a>診斷測試方法效能問題
 
@@ -216,7 +216,7 @@ FilterName:"Criteria" -FilterName:"SubsetCriteria"
 測試可以從 [測試總管] 執行，方法是在程式碼編輯器中，以滑鼠右鍵按一下測試，並選取 [執行測試]，或是在 Visual Studio 中使用預設的 [[測試總管] 快速鍵](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_testexplorerGLOBAL)。 部分快速鍵是以內容為基礎。 這表示它們會根據您的游標在程式碼編輯器中的位置來執行或偵錯測試。 如果游標在測試方法內，則該測試方法便會執行。 如果游標是在類別層級，則該類別中的所有測試便會執行。 對於命名空間層級也是如此。
 
 |常見命令| 鍵盤快速鍵|
-|--------------|------------------------|
+|-|------------------------|
 |TestExplorer.DebugAllTestsInContext|**Ctrl**+**R**、**Ctrl**+**T**|
 |TestExplorer.RunAllTestsInContext|**Ctrl**+**R**、**T**|
 

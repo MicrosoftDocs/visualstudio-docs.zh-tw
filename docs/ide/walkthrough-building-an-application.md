@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: af9d6476e82f37d02e1a32b1d6cb23812f0fdde5
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 2987df6c8ed8a26c2cf95020e26f67c36721d676
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34748214"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50672778"
 ---
 # <a name="walkthrough-build-an-application"></a>逐步解說：建置應用程式
 
@@ -100,7 +100,7 @@ ms.locfileid: "34748214"
 
 1. 選擇 [組建] 頁面，然後在 [隱藏警告] 方塊中指定警告編號 **0168**。
 
-     ![專案設計工具、建置頁](../ide/media/buildwalk_csharpsupresswarnings.png)
+     ![專案設計工具、建置頁](../ide/media/buildwalk_csharpsuppresswarnings.png)
 
      如需詳細資訊，請參閱[專案設計工具、建置頁 (C#)](../ide/reference/build-page-project-designer-csharp.md)。
 
@@ -114,23 +114,23 @@ ms.locfileid: "34748214"
 
 1. 在**方案總管**中，選擇頂層專案節點。
 
-1. 在功能表列上選擇 [檢視 ] > [屬性頁]。
+2. 在功能表列上選擇 [檢視 ] > [屬性頁]。
 
      [專案設計工具] 隨即開啟。
 
-1. 在 [編譯] 頁面上，選取 [停用所有警告] 核取方塊。
+3. 在 [編譯] 頁面上，選取 [停用所有警告] 核取方塊。
 
-     ![專案設計工具、編譯頁](../ide/media/buildwalk_vbsupresswarnings.png)
+     ![專案設計工具、編譯頁](../ide/media/buildwalk_vbsuppresswarnings.png)
 
      如需詳細資訊，請參閱[在 Visual Basic 中設定警告](../ide/configuring-warnings-in-visual-basic.md)。
 
-1. 建置方案。
+4. 建置方案。
 
- [輸出] 視窗只會顯示組建的摘要資訊。
+   [輸出] 視窗只會顯示組建的摘要資訊。
 
- ![Visual Basic 建置警告、輸出視窗](../ide/media/buildwalk_visualbasicbuildwarnings.png)
+   ![Visual Basic 建置警告、輸出視窗](../ide/media/buildwalk_visualbasicbuildwarnings.png)
 
- 如需詳細資訊，請參閱[如何︰隱藏編譯器警告](../ide/how-to-suppress-compiler-warnings.md)。
+   如需詳細資訊，請參閱[如何︰隱藏編譯器警告](../ide/how-to-suppress-compiler-warnings.md)。
 
 ## <a name="display-additional-build-details-in-the-output-window"></a>在輸出視窗中顯示其他組建詳細資料
 
@@ -138,7 +138,6 @@ ms.locfileid: "34748214"
 
 > [!IMPORTANT]
 > 如果顯示詳細資訊，組建將需要更長的時間來完成。
-
 
 ### <a name="change-the-amount-of-information-in-the-output-window"></a>變更輸出視窗中的資訊量
 
@@ -221,10 +220,10 @@ ms.locfileid: "34748214"
 
    可執行檔會複製到您指定的網路路徑。 其路徑會是 `\\myserver\builds\\FileName.exe`。
 
-恭喜︰您已成功完成本逐步解說。
+恭喜您！ 您已經成功完成此逐步解說。
 
 ## <a name="see-also"></a>另請參閱
 
 - [逐步解說：建置專案 (C++)](/cpp/ide/walkthrough-building-a-project-cpp)
-- [ASP.NET Web 應用程式專案先行編譯概觀](http://msdn.microsoft.com/b940abbd-178d-4570-b441-52914fa7b887)
+- [ASP.NET Web 應用程式專案先行編譯概觀](/previous-versions/aspnet/aa983464\(v\=vs.110\))
 - [逐步解說：使用 MSBuild](../msbuild/walkthrough-using-msbuild.md)

@@ -18,12 +18,12 @@ ms.assetid: e88d543f-2e83-4ba7-86ca-f874e39955ff
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1fabc2d96a4a540e7a21cb32d600ef2a9fa60e52
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c1fd718b8487be007e36842d781a54e433c7abe6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49295317"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49934011"
 ---
 # <a name="idebugpendingbreakpoint2getstate"></a>IDebugPendingBreakpoint2::GetState
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

@@ -1,5 +1,5 @@
 ---
-title: 要解碼的 URI 不有效的編碼 |Microsoft 文件
+title: 要解碼的 URI 不有效的編碼 |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -21,22 +21,22 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 2d37ca55dfd701aaeba2af729511a5ae6a4fa5f4
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24633328"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49841815"
 ---
 # <a name="the-uri-to-be-decoded-is-not-a-valid-encoding"></a>要解碼的 URI 不是有效的編碼
-您嘗試解碼格式不正確的 URI （統一資源識別項）。 Uri 有特殊的語法。大部分的非英數字元必須編碼，才能在 URI 中使用。 您可以使用`encodeURI`和`encodeURIComponent`方法來建立 URI，從一般[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]字串。  
+您嘗試解碼格式不正確的 URI （統一資源識別項）。 Uri 具有特殊語法;大部分的非英數字元必須編碼，才能在 URI 中使用。 您可以使用`encodeURI`並`encodeURIComponent`方法來建立 URI，從一般[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]字串。  
   
- 完整的 URI 是由一連串的元件和分隔符號所組成。 一般格式如下：  
+ 完整的 URI 被組成一連串的元件和分隔符號。 一般格式如下：  
   
 ```JavaScript  
 <Scheme>:<first>/<second>;<third>?<fourth>  
 ```  
   
- 角括弧括住名稱代表元件，而":"，"/"，";"和"？"是做為分隔符號使用的保留的字元。  
+ 角括弧括住的名稱代表的元件，而":"，"/"，";"和"？"是用來做為分隔符號的保留的字元。  
   
 ### <a name="to-correct-this-error"></a>更正這個錯誤  
   

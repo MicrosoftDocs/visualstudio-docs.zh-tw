@@ -16,12 +16,12 @@ caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 18045c8b6c388839f09ba42284ab498caf11dbf5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 35506967ee20ff6c936e2de4a19d7860e154e4c5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49182061"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49866567"
 ---
 # <a name="item-definitions"></a>項目定義
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -94,11 +94,11 @@ ms.locfileid: "49182061"
 ## <a name="additive-and-multiple-definitions"></a>新增及多個定義  
  當您新增定義或使用多個 ItemDefinitionGroups 時，請記住下列事項：  
   
--   額外的中繼資料規格會新增到類型。  
+- 額外的中繼資料規格會新增到類型。  
   
--   最後一個規格會具有最高的優先順序。  
+- 最後一個規格會具有最高的優先順序。  
   
- 當您具有多個 ItemDefinitionGroups 時，每個後續的規格都會將其中繼資料新增到先前的定義。 例如:   
+  當您具有多個 ItemDefinitionGroups 時，每個後續的規格都會將其中繼資料新增到先前的定義。 例如:   
   
 ```  
 <ItemDefinitionGroup>  

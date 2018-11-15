@@ -1,5 +1,5 @@
 ---
-title: IDebugStackFrame2::GetName |Microsoft 文件
+title: IDebugStackFrame2::GetName |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d4b4e5a6ac925762e23766938141dfcddb3fe598
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: dbfaefd685b61491db326f2c2edb82a38b66f639
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31116756"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49887705"
 ---
 # <a name="idebugstackframe2getname"></a>IDebugStackFrame2::GetName
 取得堆疊框架的名稱。  
@@ -44,7 +44,7 @@ int GetName (
  [out]傳回堆疊框架的名稱。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
   
 ## <a name="remarks"></a>備註  
  堆疊框架的名稱通常是正在執行之方法的名稱。  

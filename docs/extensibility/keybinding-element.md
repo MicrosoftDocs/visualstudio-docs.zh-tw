@@ -14,17 +14,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: eb8e0dca8293d5d5e853dde19e0c411cfd3e4e63
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: 77fb94e702615d0d27ce2587c034000f6c4b3e3d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46495293"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49905099"
 ---
 # <a name="keybinding-element"></a>KeyBinding 元素
 按鍵繫結關係項目會指定命令的鍵盤快速鍵。  
   
- 命令可以有與其相關聯的單一和雙重金鑰的連結。 單一索引鍵繫結的範例**Ctrl**+**S**如**儲存**命令。 雙重金鑰的繫結需要兩個連續的按鍵組合來觸發命令。 雙重金鑰繫結的範例**Ctrl * +** K **，** Ctrl**+** K * * 若要設定書籤。  
+ 命令可以有與其相關聯的單一和雙重金鑰的連結。 單一索引鍵繫結的範例**Ctrl**+**S**如**儲存**命令。 雙重金鑰的繫結需要兩個連續的按鍵組合來觸發命令。 雙重金鑰繫結的範例<strong>Ctrl*+</strong>K<strong>，</strong>Ctrl<strong>+</strong>K** 若要設定書籤。  
   
 ## <a name="syntax"></a>語法  
   

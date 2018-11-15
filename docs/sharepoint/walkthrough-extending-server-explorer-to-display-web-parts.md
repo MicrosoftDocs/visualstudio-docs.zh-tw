@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 84060ed018059f4b067b4744465bf4116f72841b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6d32f76965c0dbef359e54bda114221e460a9bfd
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42634734"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51296381"
 ---
 # <a name="walkthrough-extend-server-explorer-to-display-web-parts"></a>逐步解說： 擴充伺服器總管以顯示 web 組件
   在 Visual Studio 中，您可以使用**SharePoint 連線**節點**伺服器總管**檢視 SharePoint 網站上的元件。 不過，**伺服器總管**預設不會顯示某些元件。 在本逐步解說中，您將會延長**伺服器總管**，以顯示 Web 組件庫上每個連線的 SharePoint 網站。  
@@ -48,26 +48,26 @@ ms.locfileid: "42634734"
 ## <a name="prerequisites"></a>必要條件  
  您需要完成這個逐步解說在開發電腦上的下列元件：  
   
--   支援的 Windows、 SharePoint 和 Visual Studio 版本。  
+- 支援的 Windows、 SharePoint 和 Visual Studio 版本。  
   
--   Visual Studio SDK 中。 本逐步解說會使用**VSIX 專案**SDK 來建立 VSIX 封裝，來部署專案項目中的範本。 如需詳細資訊，請參閱 <<c0> [ 擴充 Visual Studio 中的 SharePoint 工具](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)。  
+- Visual Studio SDK 中。 本逐步解說會使用**VSIX 專案**SDK 來建立 VSIX 封裝，來部署專案項目中的範本。 如需詳細資訊，請參閱 <<c0> [ 擴充 Visual Studio 中的 SharePoint 工具](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)。  
   
- 下列概念的知識會很有幫助，但並非必要，若要完成本逐步解說：  
+  下列概念的知識會很有幫助，但並非必要，若要完成本逐步解說：  
   
--   使用適用於 SharePoint 的伺服器物件模型。 如需詳細資訊，請參閱 <<c0> [ 使用 SharePoint Foundation 伺服器端物件模型](http://go.microsoft.com/fwlink/?LinkId=177796)。  
+- 使用適用於 SharePoint 的伺服器物件模型。 如需詳細資訊，請參閱 <<c0> [ 使用 SharePoint Foundation 伺服器端物件模型](http://go.microsoft.com/fwlink/?LinkId=177796)。  
   
--   SharePoint 方案中的 web 組件。 如需詳細資訊，請參閱 < [Web 組件概觀](http://go.microsoft.com/fwlink/?LinkId=177803)。  
+- SharePoint 方案中的 web 組件。 如需詳細資訊，請參閱 < [Web 組件概觀](http://go.microsoft.com/fwlink/?LinkId=177803)。  
   
 ## <a name="create-the-projects"></a>建立專案
  若要完成此逐步解說中，您必須建立三個專案：  
   
--   若要建立 VSIX 封裝，來部署擴充功能的 VSIX 專案。  
+- 若要建立 VSIX 封裝，來部署擴充功能的 VSIX 專案。  
   
--   實作延伸的類別庫專案。 此專案必須以.NET Framework 4.5 為目標。  
+- 實作延伸的類別庫專案。 此專案必須以.NET Framework 4.5 為目標。  
   
--   定義自訂的 SharePoint 命令的類別庫專案。 此專案必須以.net Framework 3.5 為目標。  
+- 定義自訂的 SharePoint 命令的類別庫專案。 此專案必須以.net Framework 3.5 為目標。  
   
- 開始本逐步解說建立的專案。  
+  開始本逐步解說建立的專案。  
   
 #### <a name="to-create-the-vsix-project"></a>若要建立 VSIX 專案  
   
@@ -278,7 +278,7 @@ ms.locfileid: "42634734"
   
 1.  在**方案總管**，，WebPartNode 專案之下，開啟**source.extension.vsixmanifest**資訊清單編輯器 中的檔案。  
   
-     Source.extension.vsixmanifest 檔案中會是所有的 VSIX 套件需要 extension.vsixmanifest 檔案的基礎。 如需有關這個檔案的詳細資訊，請參閱 < [VSIX 延伸結構描述 1.0 參考](http://msdn.microsoft.com/en-us/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)。  
+     Source.extension.vsixmanifest 檔案中會是所有的 VSIX 套件需要 extension.vsixmanifest 檔案的基礎。 如需有關這個檔案的詳細資訊，請參閱 < [VSIX 延伸結構描述 1.0 參考](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)。  
   
 2.  在 **產品名稱**方塊中，輸入**的 伺服器總管 中的 Web 組件資源庫節點**。  
   
@@ -293,7 +293,7 @@ ms.locfileid: "42634734"
 6.  在 **型別**清單中，選擇**Microsoft.VisualStudio.MefComponent**。  
   
     > [!NOTE]  
-    >  這個值會對應到`MefComponent`extension.vsixmanifest 檔案中的項目。 這個元素會指定在 VSIX 封裝中的延伸模組組件名稱。 如需詳細資訊，請參閱 < [MEFComponent 項目 （VSX 結構描述）](http://msdn.microsoft.com/en-us/8a813141-8b73-44c9-b80b-ca85bbac9551)。  
+    >  這個值會對應到`MefComponent`extension.vsixmanifest 檔案中的項目。 這個元素會指定在 VSIX 封裝中的延伸模組組件名稱。 如需詳細資訊，請參閱 < [MEFComponent 項目 （VSX 結構描述）](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\))。  
   
 7.  在 **來源**清單中，選擇**目前方案中的專案**。  
   
@@ -306,7 +306,7 @@ ms.locfileid: "42634734"
 10. 在 **型別**方塊中，輸入**SharePoint.Commands.v4**。  
   
     > [!NOTE]  
-    >  這個元素會指定您想要包含在 Visual Studio 擴充功能的自訂延伸模組。 如需詳細資訊，請參閱 <<c0> [ 資產項目 （VSX 結構描述）](http://msdn.microsoft.com/en-us/9fcfc098-edc7-484b-9d4c-acd17829d737)。  
+    >  這個元素會指定您想要包含在 Visual Studio 擴充功能的自訂延伸模組。 如需詳細資訊，請參閱 <<c0> [ 資產項目 （VSX 結構描述）](https://msdn.microsoft.com/9fcfc098-edc7-484b-9d4c-acd17829d737)。  
   
 11. 在 **來源**清單中，選擇**目前方案中的專案**清單項目。  
   

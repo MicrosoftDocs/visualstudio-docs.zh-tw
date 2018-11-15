@@ -17,12 +17,12 @@ ms.assetid: 8bdfa05d-feb7-4d98-abac-77825a04c50f
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5507cdac8934426aef277c56635e3d378b25e4d9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 21bc4f10d83349d93b5dbae1dd95967bcadb6330
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49284345"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49894868"
 ---
 # <a name="idebugengine3setengineguid"></a>IDebugEngine3::SetEngineGuid
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

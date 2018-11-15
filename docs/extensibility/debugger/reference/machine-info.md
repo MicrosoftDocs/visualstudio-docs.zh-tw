@@ -1,5 +1,5 @@
 ---
-title: MACHINE_INFO |Microsoft 文件
+title: MACHINE_INFO |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4be6ee66149acb970287628289a15574894b8b26
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e548552b5acda6a3334b6d7df90b2aeab80c2e77
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31125368"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49847223"
 ---
 # <a name="machineinfo"></a>MACHINE_INFO
-描述特定電腦。  
+描述特定的電腦。  
   
 ## <a name="syntax"></a>語法  
   
@@ -45,16 +45,16 @@ public struct MACHINE_INFO {
   
 ## <a name="members"></a>成員  
  `Fields`  
- 從旗標的組合[MACHINE_INFO_FIELDS](../../../extensibility/debugger/reference/machine-info-fields.md)列舉，指定初始化結構的哪些欄位。  
+ 從旗標的組合[MACHINE_INFO_FIELDS](../../../extensibility/debugger/reference/machine-info-fields.md)指定結構的哪些欄位會初始化的列舉型別。  
   
  `bstrName`  
  電腦名稱。 相當於呼叫[GetMachineName](../../../extensibility/debugger/reference/idebugcoreserver2-getmachinename.md)。  
   
  `Flags`  
- 從旗標的組合[MACHINE_INFO_FLAGS](../../../extensibility/debugger/reference/machine-info-flags.md)描述機器屬性的列舉類型。  
+ 從旗標的組合[MACHINE_INFO_FLAGS](../../../extensibility/debugger/reference/machine-info-flags.md)說明機器屬性的列舉型別。  
   
 ## <a name="remarks"></a>備註  
- 這個結構由呼叫[GetMachineInfo](../../../extensibility/debugger/reference/idebugcoreserver2-getmachineinfo.md)方法。  
+ 此結構由呼叫[GetMachineInfo](../../../extensibility/debugger/reference/idebugcoreserver2-getmachineinfo.md)方法。  
   
 ## <a name="requirements"></a>需求  
  標頭： msdbg.h  

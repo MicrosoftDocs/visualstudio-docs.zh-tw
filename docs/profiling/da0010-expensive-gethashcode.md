@@ -15,14 +15,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a670eb3145f3fd2ab9478dc68e0490cdeda8ac56
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: c4bb60104fa865cffa3e06ac088b92081e444457
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34749956"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49877227"
 ---
 # <a name="da0010-expensive-gethashcode"></a>DA0010：GetHashCode 高度耗費資源
+
 |||  
 |-|-|  
 |規則 ID|DA0010|  
@@ -30,12 +31,12 @@ ms.locfileid: "34749956"
 |分析方法|取樣<br /><br /> .NET 記憶體|  
 |訊息|GetHashCode 函式應該便宜，而且不會配置任何記憶體。 盡可能降低雜湊碼函式的複雜度。|  
 |訊息類型|警告|  
-  
+
 ## <a name="cause"></a>原因  
  類型的 GetHashCode 方法呼叫大部分是分析資料，或方法會配置記憶體。  
-  
+
 ## <a name="rule-description"></a>規則描述  
  雜湊是一種技術，可快速尋找大型集合中的特定項目。 因為雜湊表可能很龐大，而且必須支援極高的存取率，所以雜湊表應該很有效率。 這項需求的含意在於 .NET Framework 中的 GetHashCode 方法不應該配置記憶體。 配置記憶體時會增加記憶體回收行程的負載，而且在因配置要求而需要執行記憶體回收時公開潛在延遲方法。  
-  
+
 ## <a name="how-to-fix-violations"></a>如何修正違規  
  降低方法的複雜性。

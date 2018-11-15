@@ -13,12 +13,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: abb318f74c04c372aaddb520ff581e7f84128f5e
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 0d697f1fed2a7b17862ff4c6f72488674859f754
+ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47860390"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50967294"
 ---
 # <a name="writing-a-t4-text-template"></a>撰寫 T4 文字範本
 文字範本包含將透過它產生的文字。 例如，建立網頁的範本會包含"\<html >...」 和所有其他標準部分 HTML 網頁。 插入範本中所*控制區塊*，這是一個片段的程式碼。 控制區塊提供不同的值，並允許文字的各部分成為條件式和重複。
@@ -255,10 +255,9 @@ private void WriteSquareLine(int i)
 #>
 Content of MyFile.txt is:
 <#= myFile #>
-
 ```
 
-您也可以取得主機所提供的其他服務。 如需詳細資訊，請參閱 <<c0> [ 存取 Visual Studio 或從範本的其他主機](http://msdn.microsoft.com/0556f20c-fef4-41a9-9597-53afab4ab9e4)。
+您也可以取得主機所提供的其他服務。 如需詳細資訊，請參閱 <<c0> [ 存取 Visual Studio 或從範本的其他主機](/previous-versions/visualstudio/visual-studio-2010/gg604090\(v\=vs.100\))。
 
 ### <a name="design-time-text-templates-run-in-a-separate-appdomain"></a>設計階段文字範本是在不同的 AppDomain 中執行
 
@@ -272,7 +271,7 @@ Content of MyFile.txt is:
 ## <a name="related-topics"></a>相關主題
 
 |工作|主題|
-|----------|-----------|
+|-|-|
 |撰寫範本。|[撰寫 T4 文字範本的方針](../modeling/guidelines-for-writing-t4-text-templates.md)|
 |使用程式碼來產生文字。|[文字範本結構](../modeling/writing-a-t4-text-template.md)|
 |在 Visual Studio 方案中產生檔案。|[使用 T4 文字範本在設計階段產生程式碼](../modeling/design-time-code-generation-by-using-t4-text-templates.md)|

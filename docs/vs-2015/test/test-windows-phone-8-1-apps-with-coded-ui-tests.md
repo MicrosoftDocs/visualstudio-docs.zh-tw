@@ -13,12 +13,12 @@ ms.assetid: 7b866776-f2d5-4823-8d15-919f889db26f
 caps.latest.revision: 31
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 604ac82fbcda190c63a15e5ba0a1800022853b07
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 808482fdd7599adb270fe7634d61d4b88acb0d80
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49285931"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49890138"
 ---
 # <a name="test-windows-uwp-and-81-phone-apps-with-coded-ui-tests"></a>使用自動程式碼 UI 測試來測試 Windows UWP 和 8.1 Phone 應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -85,37 +85,37 @@ ms.locfileid: "49285931"
 
 [如何建立通用 Windows 平台 (UWP) 應用程式的自動程式碼 UI 測試？](#uwpapps)
   
-1.  將新的自動程式碼 UI 測試專案加入使用 Windows Phone 應用程式的方案中。  
+1. 將新的自動程式碼 UI 測試專案加入使用 Windows Phone 應用程式的方案中。  
   
-     ![建立適用於 Windows Phone 的新自動程式化 UI 測試](../test/media/cuit-phone-newproject.png "CUIT_Phone_NewProject")  
+    ![建立適用於 Windows Phone 的新自動程式化 UI 測試](../test/media/cuit-phone-newproject.png "CUIT_Phone_NewProject")  
   
-2.  選擇使用交叉線工具編輯 UI 對應。  
+2. 選擇使用交叉線工具編輯 UI 對應。  
   
-     ![使用交叉線工具產生自動程式化 UI 測試](../test/media/cuit-phone-howgencodedialog.png "CUIT_Phone_HowGenCodeDialog")  
+    ![使用交叉線工具產生自動程式化 UI 測試](../test/media/cuit-phone-howgencodedialog.png "CUIT_Phone_HowGenCodeDialog")  
   
-3.  使用交叉線工具選取應用程式，然後複製應用程式的 [AutomationId]  屬性值，稍後將使用此值啟動測試中的應用程式。  
+3. 使用交叉線工具選取應用程式，然後複製應用程式的 [AutomationId]  屬性值，稍後將使用此值啟動測試中的應用程式。  
   
-     ![複製 App 的 AutomationId 值](../test/media/cuit-phone-getautomationid.png "CUIT_Phone_GetAutomationId")  
+    ![複製 App 的 AutomationId 值](../test/media/cuit-phone-getautomationid.png "CUIT_Phone_GetAutomationId")  
   
-4.  在模擬器中，啟動應用程式並使用交叉線工具選取按鈕控制項。 然後將按鈕控制項加入 UI 控制項對應。  
+4. 在模擬器中，啟動應用程式並使用交叉線工具選取按鈕控制項。 然後將按鈕控制項加入 UI 控制項對應。  
   
-     ![使用交叉線工具來對應控制項](../test/media/cuit-phone-mapbuttoncontrol.png "CUIT_Phone_MapButtonControl")  
+    ![使用交叉線工具來對應控制項](../test/media/cuit-phone-mapbuttoncontrol.png "CUIT_Phone_MapButtonControl")  
   
-5.  若要將文字方塊控制項加入 UI 控制項對應，請重複上一個步驟。  
+5. 若要將文字方塊控制項加入 UI 控制項對應，請重複上一個步驟。  
   
-     ![使用交叉線工具並對應文字方塊控制項](../test/media/cuit-phone-maptextboxcontrol.png "CUIT_Phone_MapTextBoxControl")  
+    ![使用交叉線工具並對應文字方塊控制項](../test/media/cuit-phone-maptextboxcontrol.png "CUIT_Phone_MapTextBoxControl")  
   
-6.  產生程式碼，為 UI 控制項對應的變更建立程式碼。  
+6. 產生程式碼，為 UI 控制項對應的變更建立程式碼。  
   
-     ![從產生器產生程式碼](../test/media/cuit-phone-generatecode.png "CUIT_Phone_GenerateCode")  
+    ![從產生器產生程式碼](../test/media/cuit-phone-generatecode.png "CUIT_Phone_GenerateCode")  
   
-7.  使用交叉線工具選取文字方塊控制項，然後選取 [文字]  屬性。  
+7. 使用交叉線工具選取文字方塊控制項，然後選取 [文字]  屬性。  
   
-     ![選取 Text 屬性](../test/media/cuit-phone-textproperty.png "CUIT_Phone_TextProperty")  
+    ![選取 Text 屬性](../test/media/cuit-phone-textproperty.png "CUIT_Phone_TextProperty")  
   
-8.  加入判斷提示。 測試將使用此判斷提示來驗證值是否正確。  
+8. 加入判斷提示。 測試將使用此判斷提示來驗證值是否正確。  
   
-     ![在測試中加入判斷提示](../test/media/cuit-phone-addassertion.png "CUIT_Phone_AddAssertion")  
+    ![在測試中加入判斷提示](../test/media/cuit-phone-addassertion.png "CUIT_Phone_AddAssertion")  
   
 9. 加入及產生 Assert 方法的程式碼。  
   
@@ -223,37 +223,37 @@ ms.locfileid: "49285931"
   
 11. 在方案總管中，開啟 CodedUITest1.cs 或 CodedUITest1.vb 檔案。 您現在可以針對執行測試所需的動作，將程式碼加入 CodedUTTestMethod1 方法。 使用加入 UIMap 的控制項來加入程式碼：  
   
-    1.  使用您先前複製到 [剪貼簿] 的 AutomationId 屬性，啟動 Windows Phone 應用程式：  
+    1. 使用您先前複製到 [剪貼簿] 的 AutomationId 屬性，啟動 Windows Phone 應用程式：  
   
-        ```csharp  
-        XamlWindow myAppWindow = XamlWindow.Launch("ed85f6ff-2fd1-4ec5-9eef-696026c3fa7b_cyrqexqw8cc7c!App");  
-        ```  
+       ```csharp  
+       XamlWindow myAppWindow = XamlWindow.Launch("ed85f6ff-2fd1-4ec5-9eef-696026c3fa7b_cyrqexqw8cc7c!App");  
+       ```  
   
-        ```vb  
-        XamlWindow.Launch("ed85f6ff-2fd1-4ec5-9eef-696026c3fa7b_cyrqexqw8cc7c!App");  
-        ```  
+       ```vb  
+       XamlWindow.Launch("ed85f6ff-2fd1-4ec5-9eef-696026c3fa7b_cyrqexqw8cc7c!App");  
+       ```  
   
-    2.  加入手勢，以點選按鈕控制項：  
+    2. 加入手勢，以點選按鈕控制項：  
   
-        ```csharp  
-        Gesture.Tap(this.UIMap.UIApp1Window.UIButtonButton);  
-        ```  
+       ```csharp  
+       Gesture.Tap(this.UIMap.UIApp1Window.UIButtonButton);  
+       ```  
   
-        ```vb  
-        Gesture.Tap(Me.UIMap.UIApp1Window.UIButtonButton)  
-        ```  
+       ```vb  
+       Gesture.Tap(Me.UIMap.UIApp1Window.UIButtonButton)  
+       ```  
   
-    3.  確認已自動產生的 assert 方法呼叫是在啟動應用程式之後進行，並點選按鈕上的手勢：  
+    3. 確認已自動產生的 assert 方法呼叫是在啟動應用程式之後進行，並點選按鈕上的手勢：  
   
-        ```csharp  
-        this.UIMap.AssertMethod1();  
-        ```  
+       ```csharp  
+       this.UIMap.AssertMethod1();  
+       ```  
   
-        ```vb  
-        Me.UIMap.AssertMethod1()  
-        ```  
+       ```vb  
+       Me.UIMap.AssertMethod1()  
+       ```  
   
-     加入程式碼之後，CodedUITestMethod1 測試方法應該如下所示：  
+       加入程式碼之後，CodedUITestMethod1 測試方法應該如下所示：  
   
     ```csharp  
     [TestMethod]  
@@ -340,11 +340,11 @@ public void DataDrivingDemo_MyTestMethod(int x, int y)
 ### <a name="q-how-do-i-create-coded-ui-tests-for-universal-windows-platform-uwp-apps"></a>問：如何建立通用 Windows 平台 (UWP) 應用程式的自動程式碼 UI 測試？  
  **答**：您可以根據要測試 UWP 應用程式的平台，使用下列其中一種方式來建立自動程式碼 UI 測試專案：  
   
--   在本機電腦上執行的 UWP 應用程式將會當做市集應用程式執行。 若要測試這種情況，您必須使用 [自動程式碼 UI 測試專案 (Windows)]  範本。 若要在建立新專案時找到這個範本，請移至 [Windows] 、[通用]  節點。 或移至 [Windows] 、[Windows 8] 、[Windows]  節點。  
+- 在本機電腦上執行的 UWP 應用程式將會當做市集應用程式執行。 若要測試這種情況，您必須使用 [自動程式碼 UI 測試專案 (Windows)]  範本。 若要在建立新專案時找到這個範本，請移至 [Windows] 、[通用]  節點。 或移至 [Windows] 、[Windows 8] 、[Windows]  節點。  
   
--   在行動裝置或模擬器上執行的 UWP 應用程式將會當做 Phone 應用程式執行。 若要測試這種情況，您必須使用 [自動程式碼 UI 測試專案 (Windows Phone)]  範本。 若要在建立新專案時找到這個範本，請移至 [Windows] 、[通用]  節點。 或移至 [Windows] 、[Windows 8] 、[Windows Phone]  節點。  
+- 在行動裝置或模擬器上執行的 UWP 應用程式將會當做 Phone 應用程式執行。 若要測試這種情況，您必須使用 [自動程式碼 UI 測試專案 (Windows Phone)]  範本。 若要在建立新專案時找到這個範本，請移至 [Windows] 、[通用]  節點。 或移至 [Windows] 、[Windows 8] 、[Windows Phone]  節點。  
   
- 建立專案之後，撰寫測試的作業會與之前相同。  
+  建立專案之後，撰寫測試的作業會與之前相同。  
   
 ### <a name="q-can-i-select-controls-that-are-outside-the-emulator"></a>問：我可以選取模擬器外部的控制項嗎？  
  **答**：不可以，產生器偵測不到這些控制項。  

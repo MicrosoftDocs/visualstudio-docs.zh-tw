@@ -11,12 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 873c377b4b2262df6b12f581f1cdac901d27ffce
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 538ebb2121c488fa56f693a424f91b8af19a0c3e
+ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859429"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50966839"
 ---
 # <a name="overview-of-domain-specific-language-tools"></a>Domain-Specific Language Tools 概觀
 特定領域語言工具 （DSL 工具），其裝載在 Visual Studio 中，可讓您設計的特定領域語言，然後再產生所有使用者必須具備才能建立模型為基礎之語言的項目。
@@ -34,31 +34,31 @@ ms.locfileid: "47859429"
 ## <a name="the-dsl-tools-solution"></a>DSL 工具解決方案
  定義域專屬設計工具精靈提供下列的解決方案範本：
 
--   工作流程
+- 工作流程
 
--   類別圖表
+- 類別圖表
 
--   最小語言
+- 最小語言
 
--   元件模型
+- 元件模型
 
--   最小 WPF
+- 最小 WPF
 
--   最小 Windows.Forms
+- 最小 Windows.Forms
 
--   DSL 程式庫
+- DSL 程式庫
 
- 如需詳細資訊，請參閱 <<c0> [ 選擇特定領域語言方案範本](../modeling/choosing-a-domain-specific-language-solution-template.md)。
+  如需詳細資訊，請參閱 <<c0> [ 選擇特定領域語言方案範本](../modeling/choosing-a-domain-specific-language-solution-template.md)。
 
- 精靈會建立含有下列專案的 Visual Studio 方案：
+  精靈會建立含有下列專案的 Visual Studio 方案：
 
--   Dsl
+- Dsl
 
-     Dsl 專案中定義特定領域語言，以及其編輯和處理工具。
+   Dsl 專案中定義特定領域語言，以及其編輯和處理工具。
 
--   **DslPackage**
+- **DslPackage**
 
-     在 DslPackage 專案決定語言工具如何與 Visual Studio 整合。
+   在 DslPackage 專案決定語言工具如何與 Visual Studio 整合。
 
 ## <a name="the-dsl-tools-graphical-interface"></a>DSL 工具的圖形化介面
  若要將項目和關聯性新增至您的特定領域語言，您可以使用 DSL 工具的圖形化介面。 加入項目之後，您可以將它們對應至圖形、 自訂色彩，以及加入裝飾項目來定義其外觀。 您也可以將項目加入 [工具箱] 中。
@@ -79,4 +79,4 @@ ms.locfileid: "47859429"
 ## <a name="see-also"></a>另請參閱
 
 - [實驗執行個體](../extensibility/the-experimental-instance.md)
-- [特定領域語言工具字彙](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [特定領域語言工具字彙](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

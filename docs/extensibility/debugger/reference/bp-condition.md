@@ -1,5 +1,5 @@
 ---
-title: BP_CONDITION |Microsoft 文件
+title: BP_CONDITION |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ee951c5bc18fbf92f94f557c5ade4cd7f39159f2
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f638fe36131969c50e7572ac36ef54b3ad0d10e0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31102596"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49873392"
 ---
 # <a name="bpcondition"></a>BP_CONDITION
 描述用以引發中斷點的條件。  
@@ -49,10 +49,10 @@ public struct BP_CONDITION {
   
 ## <a name="members"></a>成員  
  `pThread`  
- [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)物件，代表包含中斷點的應用程式的使用中執行緒。  
+ [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)物件，表示包含中斷點的應用程式的使用中執行緒。  
   
  `styleCondition`  
- 中的值[BP_COND_STYLE](../../../extensibility/debugger/reference/bp-cond-style.md)列舉，描述此中斷點條件的樣式。  
+ 值，以從[BP_COND_STYLE](../../../extensibility/debugger/reference/bp-cond-style.md)列舉型別描述此中斷點條件的樣式。  
   
  `bstrContext`  
  中斷點的位置。  
@@ -61,12 +61,12 @@ public struct BP_CONDITION {
  引發中斷點的條件。  
   
  `nRadix`  
- 用來評估任何數字資訊的基數。  
+ 用來評估數字的任何資訊的基數。  
   
 ## <a name="remarks"></a>備註  
- 這個結構是屬於[BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)和[BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md)結構。  
+ 此結構是隸屬[BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)並[BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md)結構。  
   
- 此結構也會當做參數傳遞[SetCondition](../../../extensibility/debugger/reference/idebugboundbreakpoint2-setcondition.md)和[SetCondition](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-setcondition.md)方法。  
+ 此結構也會做為參數傳遞[SetCondition](../../../extensibility/debugger/reference/idebugboundbreakpoint2-setcondition.md)並[SetCondition](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-setcondition.md)方法。  
   
 ## <a name="requirements"></a>需求  
  標頭： msdbg.h  

@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 957add624e8efa7542991cc03ca48d6835e497f0
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: ee3c602dfc89aeafbfb82ae50771abc7ce66937e
+ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47857569"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50966934"
 ---
 # <a name="whats-new-for-design-in-visual-studio"></a>在 Visual Studio 中設計的新功能
 
@@ -40,7 +40,7 @@ ms.locfileid: "47857569"
 
 您現在會看到您的變更，立即在方案中目前的程式碼分析結果的影響每次您儲存圖表。 您不必再等候完成 「 相依性驗證 」 命令。
 
-如需詳細資訊，請參閱 <<c0> [ 此部落格文章](https://blogs.msdn.microsoft.com/visualstudioalm/2016/10/07/live-architecture-dependency-validation-in-visual-studio-15-preview-5/)。
+如需詳細資訊，請參閱 <<c0> [ 此部落格文章](https://blogs.msdn.microsoft.com/devops/2016/10/07/live-architecture-dependency-validation-in-visual-studio-15-preview-5/)。
 
 ## <a name="uml-designers-have-been-removed"></a>已移除 UML 設計工具
 
@@ -61,7 +61,7 @@ UML 設計工具已移除了此版本的 Visual Studio Enterprise。
 
 如果您是 UML 設計工具的大量使用者時，您可以繼續使用 Visual Studio 2015 或更早版本，而您決定針對您的 UML 需求的替代工具。
 
-如需詳細資訊，請參閱 <<c0> [ 此部落格文章](https://blogs.msdn.microsoft.com/visualstudioalm/2016/10/14/uml-designers-have-been-removed-layer-designer-now-supports-live-architectural-analysis/)。
+如需詳細資訊，請參閱 <<c0> [ 此部落格文章](https://blogs.msdn.microsoft.com/devops/2016/10/14/uml-designers-have-been-removed-layer-designer-now-supports-live-architectural-analysis/)。
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
@@ -70,7 +70,7 @@ UML 設計工具已移除了此版本的 Visual Studio Enterprise。
 Visual Studio 2017 有數個版本。 並非所有版本都提供 architecture and modeling tools 的支援。 下表顯示每個工具的可用性。
 
 |**功能**|**企業版**|**專業版**|**Community 版本**|
-|-----------------|--------------------|----------------------|-------------------|
+|-|-|-|-|
 |**Code Map**|是|只支援讀取程式碼對應，對應篩選程式碼，加入新的泛型節點，並從選取範圍建立新的導向圖形。|-|
 |**相依性圖表**|是|只支援讀取相依性圖表。|只支援讀取相依性圖表。|
 |**有向圖形**（DGML 圖表）|是|是|是|

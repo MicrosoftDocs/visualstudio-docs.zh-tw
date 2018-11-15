@@ -21,12 +21,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: d1d2ea051097f297c3fdeb07d166cbbc182a4c99
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 71eebd95db1a616d4f86866ef60fb32251634cc0
+ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47860000"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50967281"
 ---
 # <a name="validate-code-with-dependency-diagrams"></a>使用相依性圖表驗證程式碼
 
@@ -115,41 +115,41 @@ ms.locfileid: "47860000"
 
 ### <a name="validate-code-at-the-command-prompt"></a>驗證程式碼，在命令提示字元
 
-1.  開啟 Visual Studio 命令提示字元。
+1. 開啟 Visual Studio 命令提示字元。
 
-2.  選擇下列其中一項：
+2. 選擇下列其中一項：
 
-    - 若要驗證對方案中的特定模型專案的程式碼，請使用下列自訂屬性執行 MSBuild。
+   - 若要驗證對方案中的特定模型專案的程式碼，請使用下列自訂屬性執行 MSBuild。
 
-        ```
-        msbuild <FilePath+ModelProjectFileName>.modelproj /p:ValidateArchitecture=true
-        ```
+       ```
+       msbuild <FilePath+ModelProjectFileName>.modelproj /p:ValidateArchitecture=true
+       ```
 
-         - 或 -
+     - 或 -
 
-         瀏覽若資料夾包含模型專案 (.modelproj) 檔案和相依性圖表，然後執行 MSBuild 使用下列自訂屬性：
+       瀏覽若資料夾包含模型專案 (.modelproj) 檔案和相依性圖表，然後執行 MSBuild 使用下列自訂屬性：
 
-        ```
-        msbuild /p:ValidateArchitecture=true
-        ```
+       ```
+       msbuild /p:ValidateArchitecture=true
+       ```
 
-    - 若要驗證對方案中的所有模型專案的程式碼，請使用下列自訂屬性執行 MSBuild:
+   - 若要驗證對方案中的所有模型專案的程式碼，請使用下列自訂屬性執行 MSBuild:
 
-        ```
-        msbuild <FilePath+SolutionName>.sln /p:ValidateArchitecture=true
-        ```
+       ```
+       msbuild <FilePath+SolutionName>.sln /p:ValidateArchitecture=true
+       ```
 
-         - 或 -
+     - 或 -
 
-         瀏覽至方案資料夾內，且必須包含模型專案包含相依性圖表，然後執行 MSBuild，使用下列自訂屬性：
+       瀏覽至方案資料夾內，且必須包含模型專案包含相依性圖表，然後執行 MSBuild，使用下列自訂屬性：
 
-        ```
-        msbuild /p:ValidateArchitecture=true
-        ```
+       ```
+       msbuild /p:ValidateArchitecture=true
+       ```
 
      發生的任何錯誤都將列出。 如需 MSBuild 的詳細資訊，請參閱[MSBuild](../msbuild/msbuild.md)並[MSBuild 工作](../msbuild/msbuild-task.md)。
 
- 如需有關驗證錯誤的詳細資訊，請參閱 <<c0> [ 了解並解決圖層驗證的錯誤](#UnderstandingValidationErrors)。
+   如需有關驗證錯誤的詳細資訊，請參閱 <<c0> [ 了解並解決圖層驗證的錯誤](#UnderstandingValidationErrors)。
 
 ### <a name="manage-validation-errors"></a>管理驗證錯誤
 
@@ -165,7 +165,7 @@ ms.locfileid: "47860000"
 使用這些工作來管理中的驗證錯誤**錯誤清單**視窗：
 
 |**若要**|**請遵循下列步驟**|
-|------------|----------------------------|
+|-|-|
 |在驗證期間隱藏選取的錯誤|以滑鼠右鍵按一下一或多個選取的錯誤、 指向**管理驗證錯誤**，然後按一下**隱藏錯誤**。<br /><br /> 隱藏的錯誤會以刪除線的格式出現。 當您下一次執行驗證時，這些錯誤將不會出現。<br /><br /> 隱藏的錯誤會在對應的相依性圖表檔案的.suppressions 檔案追蹤。|
 |停止隱藏選取的錯誤|以滑鼠右鍵按一下選取的隱藏的錯誤，並指向**管理驗證錯誤**，然後按一下**停止隱藏錯誤**。<br /><br /> 選取的隱藏錯誤將會在下一次執行驗證時出現。|
 |還原所有隱藏的錯誤**錯誤清單**視窗|以滑鼠右鍵按一下任何一處**錯誤清單** 視窗中，指向**管理驗證錯誤**，然後按一下**顯示所有隱藏的錯誤**。|
@@ -173,7 +173,7 @@ ms.locfileid: "47860000"
 
 ## <a name="validate-code-automatically"></a>自動驗證程式碼
 
-您可以在每次執行本機組建時執行圖層驗證。 如果您的小組會使用 Azure DevOps，您可以執行閘道簽入，藉由建立自訂的 MSBuild 工作和使用組建報告收集驗證錯誤，您可以指定圖層驗證。 若要建立閘道的簽入組建，請參閱[使用閘道的簽入建置流程來驗證變更](http://msdn.microsoft.com/Library/9cfc8b9c-1023-40fd-8ab5-1b1bd9c172ec)。
+您可以在每次執行本機組建時執行圖層驗證。 如果您的小組會使用 Azure DevOps，您可以執行閘道簽入，藉由建立自訂的 MSBuild 工作和使用組建報告收集驗證錯誤，您可以指定圖層驗證。 若要建立閘道的簽入組建，請參閱[TFVC 閘道簽入](/azure/devops/pipelines/build/triggers#gated)。
 
 ### <a name="to-validate-code-automatically-during-a-local-build"></a>在本機組建執行期間自動驗證程式碼
 
@@ -204,7 +204,7 @@ ms.locfileid: "47860000"
 下列表格描述圖層驗證的問題及其解決方式。 這些問題不同於因程式碼與設計衝突而導致的錯誤。 如需有關這些錯誤的詳細資訊，請參閱 <<c0> [ 了解並解決圖層驗證的錯誤](#UnderstandingValidationErrors)。
 
 |**問題**|**可能的原因**|**解決方法**|
-|---------------|------------------------|--------------------|
+|-|-|-|
 |發生非預期的驗證錯誤。|驗證不適用於相依性圖表，會複製從方案總管 中的其他相依性圖表，以及屬於相同的模型專案中。 會在這種方式中複製的相依性圖表包含與原始的相依性圖表相同的參照。|將新的相依性圖表加入至模型專案。<br /><br /> 將來源的相依性圖表中的項目複製到新的圖表。|
 
 ## <a name="resolve-layer-validation-errors"></a>解決圖層驗證錯誤
@@ -220,23 +220,23 @@ ms.locfileid: "47860000"
 以下章節說明用於這些錯誤的語法，解釋這些錯誤的意義，並且建議解析或管理這些錯誤的作法。
 
 |**語法**|**描述**|
-|----------------|---------------------|
+|-|-|
 |*ArtifactN*(*ArtifactTypeN*)|*ArtifactN*是相依性圖表的圖層相關聯的成品。<br /><br /> *ArtifactTypeN*是種*ArtifactN*，例如**類別**或是**方法**，例如：<br /><br /> MySolution.MyProject.MyClass.MyMethod(Method)|
 |*NamespaceNameN*|命名空間的名稱。|
 |*LayerNameN*|相依性圖表的圖層的名稱。|
 |*DependencyType*|之間的相依性關聯性的類型*Artifact1*並*Artifact2*。 例如， *Artifact1*已**呼叫**關聯性*Artifact2*。|
 
-|**錯誤語法**|**錯誤描述**|
-|----------------------|---------------------------|
-|DV0001:**無效的相依性**|當程式碼項目 （命名空間、 類型與成員） 對應至圖層參考對應到另一個圖層的程式碼項目，但這些相依性驗證圖表，其中包含此圖層中的圖層之間沒有任何相依性箭號時，會報告此問題。 這是相依性條件約束違規。|
-|DV1001:**無效的命名空間名稱**|此問題會回報 「 允許的命名空間名稱 」 屬性不包含此程式碼項目定義所在的命名空間的圖層相關聯的程式碼項目。 這是命名的條件約束違規。 請注意，「 允許的命名空間名稱 」 的語法是以分號分隔的清單其中程式碼與相關聯的項目是圖層的命名空間被允許定義。|
-|DV1002:**不可參考的命名空間上的相依性**|此問題會回報與圖層關聯及參考圖層的 「 不可參考命名空間 」 屬性中定義的命名空間中定義的另一個程式碼項目，程式碼項目。 這是命名的條件約束違規。 請注意，「 不可參考命名空間 」 屬性定義為以分號分隔清單，不應在此圖層相關聯的程式碼項目中參考的命名空間。|
-|DV1003:**不允許命名空間名稱**|此問題會回報 「 不允許的命名空間名稱 」 屬性包含此程式碼項目定義所在的命名空間的圖層相關聯的程式碼項目。 這是命名的條件約束違規。 請注意，「 不允許命名空間名稱 」 屬性定義為以分號分隔清單在哪一個程式碼中與此圖層相關聯的項目不應定義的命名空間。|
-|DV3001:**遺失的連結**|圖層 '*LayerName*'連結到'*成品*' 找不到其中。 您是否遺漏了組件參考?|*LayerName*連結至找不到的成品。 例如，類別的連結可能因為模型專案遺漏包含該類別之組件的參考而遺失。|
-|DV9001:**架構分析發現內部錯誤**|結果可能不完整。 如需詳細資訊，請參閱詳細建置事件記錄檔或輸出視窗。|如需詳細資訊，請參閱建置事件記錄檔或輸出視窗。|
+| **錯誤語法** | **錯誤描述** |
+|-|-|
+| DV0001:**無效的相依性** | 當程式碼項目 （命名空間、 類型與成員） 對應至圖層參考對應到另一個圖層的程式碼項目，但這些相依性驗證圖表，其中包含此圖層中的圖層之間沒有任何相依性箭號時，會報告此問題。 這是相依性條件約束違規。 |
+| DV1001:**無效的命名空間名稱** | 此問題會回報 「 允許的命名空間名稱 」 屬性不包含此程式碼項目定義所在的命名空間的圖層相關聯的程式碼項目。 這是命名的條件約束違規。 請注意，「 允許的命名空間名稱 」 的語法是以分號分隔的清單其中程式碼與相關聯的項目是圖層的命名空間被允許定義。 |
+| DV1002:**不可參考的命名空間上的相依性** | 此問題會回報與圖層關聯及參考圖層的 「 不可參考命名空間 」 屬性中定義的命名空間中定義的另一個程式碼項目，程式碼項目。 這是命名的條件約束違規。 請注意，「 不可參考命名空間 」 屬性定義為以分號分隔清單，不應在此圖層相關聯的程式碼項目中參考的命名空間。 |
+| DV1003:**不允許命名空間名稱** | 此問題會回報 「 不允許的命名空間名稱 」 屬性包含此程式碼項目定義所在的命名空間的圖層相關聯的程式碼項目。 這是命名的條件約束違規。 請注意，「 不允許命名空間名稱 」 屬性定義為以分號分隔清單在哪一個程式碼中與此圖層相關聯的項目不應定義的命名空間。 |
+| DV3001:**遺失的連結** | 圖層 '*LayerName*'連結到'*成品*' 找不到其中。 您是否遺漏了組件參考? |
+| DV9001:**架構分析發現內部錯誤** | 結果可能不完整。 如需詳細資訊，請參閱詳細建置事件記錄檔或輸出視窗。 |
 
 ## <a name="see-also"></a>另請參閱
 
-- [Visual Studio 2017 中的即時相依性驗證](https://blogs.msdn.microsoft.com/visualstudioalm/2016/11/30/live-dependency-validation-in-visual-studio-2017/)
+- [Visual Studio 2017 中的即時相依性驗證](https://blogs.msdn.microsoft.com/devops/2016/11/30/live-dependency-validation-in-visual-studio-2017/)
 - [在開發期間驗證您的系統](../modeling/validate-your-system-during-development.md)
 - [影片： 驗證即時架構相依性](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4)

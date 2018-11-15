@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c95007ed5b740812ca2b1a269390fbad6ffbc2ba
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 42c1a9cd2d1c9d1349b07e06d65a8da6a41b4245
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39079529"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49938213"
 ---
 # <a name="add-a-menu-to-the-visual-studio-menu-bar"></a>將功能表加入 Visual Studio 功能表列
 本逐步解說示範如何將 Visual Studio 整合式的開發環境 (IDE) 的功能表列中的功能表。 IDE 的功能表列包含功能表分類，例如**檔案**，**編輯**，**檢視**，**視窗**，以及**協助**.  
@@ -41,48 +41,48 @@ ms.locfileid: "39079529"
   
 ## <a name="create-a-menu-on-the-ide-menu-bar"></a>建立 IDE 的功能表列上的功能表  
   
-1.  在 **方案總管**，開啟*TestCommandPackage.vsct*。  
+1. 在 **方案總管**，開啟*TestCommandPackage.vsct*。  
   
-     在檔案結尾，還有\<符號 > 節點，其中包含數個\<GuidSymbol > 節點。 在名為 guidTestCommandPackageCmdSet 節點，加入新的符號，如下所示：  
+    在檔案結尾，還有\<符號 > 節點，其中包含數個\<GuidSymbol > 節點。 在名為 guidTestCommandPackageCmdSet 節點，加入新的符號，如下所示：  
   
-    ```xml  
-    <IDSymbol name="TopLevelMenu" value="0x1021"/>  
-    ```  
+   ```xml  
+   <IDSymbol name="TopLevelMenu" value="0x1021"/>  
+   ```  
   
-2.  建立空\<功能表 > 中的節點\<命令 > 節點，之前\<群組 >。 在 \<功能表 > 節點，新增\<功能表 > 節點，如下所示：  
+2. 建立空\<功能表 > 中的節點\<命令 > 節點，之前\<群組 >。 在 \<功能表 > 節點，新增\<功能表 > 節點，如下所示：  
   
-    ```xml  
-    <Menus>  
-          <Menu guid="guidTestCommandPackageCmdSet" id="TopLevelMenu" priority="0x700" type="Menu">  
-            <Parent guid="guidSHLMainMenu"  
-                    id="IDG_VS_MM_TOOLSADDINS" />  
-            <Strings>  
-              <ButtonText>TestMenu</ButtonText>  
-              <CommandName>TestMenu</CommandName>  
-            </Strings>  
-        </Menu>  
-    </Menus>  
-    ```  
+   ```xml  
+   <Menus>  
+         <Menu guid="guidTestCommandPackageCmdSet" id="TopLevelMenu" priority="0x700" type="Menu">  
+           <Parent guid="guidSHLMainMenu"  
+                   id="IDG_VS_MM_TOOLSADDINS" />  
+           <Strings>  
+             <ButtonText>TestMenu</ButtonText>  
+             <CommandName>TestMenu</CommandName>  
+           </Strings>  
+       </Menu>  
+   </Menus>  
+   ```  
   
-     `guid`和`id`功能表的值指定的命令集及特定的功能表中的命令集。  
+    `guid`和`id`功能表的值指定的命令集及特定的功能表中的命令集。  
   
-     `guid`和`id`父系值放置在 Visual Studio 功能表列，其中包含工具和增益集的功能表中的區段的功能表。  
+    `guid`和`id`父系值放置在 Visual Studio 功能表列，其中包含工具和增益集的功能表中的區段的功能表。  
   
-     值`CommandName`字串可讓您指定文字應該出現在功能表項目。  
+    值`CommandName`字串可讓您指定文字應該出現在功能表項目。  
   
-3.  在 \<群組 > 區段中，尋找\<群組 > 並變更\<父 > 指向我們剛才加入的功能表項目：  
+3. 在 \<群組 > 區段中，尋找\<群組 > 並變更\<父 > 指向我們剛才加入的功能表項目：  
   
-    ```csharp  
-    <Groups>  
-          <Group guid="guidTestCommandPackageCmdSet" id="MyMenuGroup" priority="0x0600">  
-            <Parent guid="guidTestCommandPackageCmdSet" id="TopLevelMenu"/>  
-          </Group>  
-        </Groups>  
-    ```  
+   ```csharp  
+   <Groups>  
+         <Group guid="guidTestCommandPackageCmdSet" id="MyMenuGroup" priority="0x0600">  
+           <Parent guid="guidTestCommandPackageCmdSet" id="TopLevelMenu"/>  
+         </Group>  
+       </Groups>  
+   ```  
   
-     這可讓新的功能表中群組的一部分。  
+    這可讓新的功能表中群組的一部分。  
   
-4.  尋找`Buttons`一節。 請注意，[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]封裝範本所產生`Button`已設為其父代的項目`MyMenuGroup`。 如此一來，此命令會出現在功能表上。  
+4. 尋找`Buttons`一節。 請注意，[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]封裝範本所產生`Button`已設為其父代的項目`MyMenuGroup`。 如此一來，此命令會出現在功能表上。  
   
 ## <a name="build-and-test-the-extension"></a>建置並測試此擴充功能  
   

@@ -10,12 +10,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 86f547ae686176ab6361f44f4f0ba432c6466da9
-ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
+ms.openlocfilehash: 077754b31b80575c4fbee78d0a2f19f87f82e481
+ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39251571"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "51220888"
 ---
 # <a name="troubleshooting-and-known-issues-visual-studio-tools-for-unity"></a>疑難排解和已知問題 (Visual Studio Tools for Unity)
 
@@ -90,7 +90,7 @@ Visual Studio Tools for Unity 需要 .NET Framework 3.5，但 Windows 8 或 Wind
 
 ## <a name="breakpoints-not-hit"></a>未達到的中斷點
 
-請檢查您正在使用的指令碼是否已正確載入/用於目前的 Unity 場景中。 結束 Unity 和 Visual Studio，然後刪除所有產生的檔案 (*.csproj、*.sln) 和整個文件庫資料夾。
+請檢查您正在使用的指令碼是否已正確載入/用於目前的 Unity 場景中。 結束 Unity 和 Visual Studio，然後刪除所有產生的檔案 (\*.csproj、\*.sln) 和整個文件庫資料夾。
 
 ## <a name="unable-to-debug-android-players"></a>無法偵錯 Android 播放器
 

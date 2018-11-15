@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7c595018dc588b6b6fbb014e074c737a53ea2013
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 8b498f9df752fd5ac1f1212649aa5b8bb62d27fb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512118"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49839111"
 ---
 # <a name="how-vspackages-add-user-interface-elements"></a>Vspackage 如何新增使用者介面項目
 VSPackage 可以將使用者介面 (UI) 項目，例如功能表、 工具列和工具視窗，透過 Visual studio *.vsct*檔案。  
@@ -90,15 +90,15 @@ VSPackage 可以將使用者介面 (UI) 項目，例如功能表、 工具列和
 #### <a name="menus"></a>Menus  
  每個功能表指[ 功能表項目](../../extensibility/menu-element.md)在`Menus`一節。 必須有功能表`guid`， `id`，並`priority`屬性，和`Parent`項目，也下列的其他屬性和子系：  
   
--   A`type`指定功能表是否應該出現在 IDE 中，為一種功能表或工具列中的屬性。  
+- A`type`指定功能表是否應該出現在 IDE 中，為一種功能表或工具列中的屬性。  
   
--   A [Strings 元素](../../extensibility/strings-element.md)，其中包含[ButtonText 元素](../../extensibility/buttontext-element.md)，在 IDE 中，指定功能表的標題和[CommandName 元素](../../extensibility/commandname-element.md)，以指定的名稱。用於**命令**來存取功能表的視窗。  
+- A [Strings 元素](../../extensibility/strings-element.md)，其中包含[ButtonText 元素](../../extensibility/buttontext-element.md)，在 IDE 中，指定功能表的標題和[CommandName 元素](../../extensibility/commandname-element.md)，以指定的名稱。用於**命令**來存取功能表的視窗。  
   
--   選擇性旗標。 A [CommandFlag 元素](../../extensibility/command-flag-element.md)可能出現在功能表定義中，以變更其外觀或行為在 IDE 中的。  
+- 選擇性旗標。 A [CommandFlag 元素](../../extensibility/command-flag-element.md)可能出現在功能表定義中，以變更其外觀或行為在 IDE 中的。  
   
- 每個`Menu`項目都必須有群組作為其父代，除非它是可停駐的項目，例如工具列。 可停駐功能表是其本身的父系。 如需功能表和值`type`屬性，請參閱[ 功能表項目](../../extensibility/menu-element.md)文件。  
+  每個`Menu`項目都必須有群組作為其父代，除非它是可停駐的項目，例如工具列。 可停駐功能表是其本身的父系。 如需功能表和值`type`屬性，請參閱[ 功能表項目](../../extensibility/menu-element.md)文件。  
   
- 下列範例顯示旁會出現在 Visual Studio 功能表列的功能表**工具**功能表。  
+  下列範例顯示旁會出現在 Visual Studio 功能表列的功能表**工具**功能表。  
   
 ```xml  
 <Menu guid="guidTopLevelMenuCmdSet"  
@@ -159,11 +159,11 @@ priority="0x0100" type="Menu">
 ##### <a name="combos"></a>Combos  
  中所定義的 combos`Combos`一節。 每個`Combo`項目代表在 IDE 中的下拉式清單方塊。 清單方塊可能會或可能不是可由使用者，根據的值寫入`type`屬性的組合。 Combos 具有相同的項目和按鈕的行為，也可以有下列額外屬性：  
   
--   A`defaultWidth`指定像素寬度的屬性。  
+- A`defaultWidth`指定像素寬度的屬性。  
   
--   `idCommandList`屬性，指定包含清單方塊中顯示的項目清單。 命令清單必須在同一個宣告`GuidSymbol`包含下拉式方塊的節點。  
+- `idCommandList`屬性，指定包含清單方塊中顯示的項目清單。 命令清單必須在同一個宣告`GuidSymbol`包含下拉式方塊的節點。  
   
- 下列範例會定義下拉式項目。  
+  下列範例會定義下拉式項目。  
   
 ```xml  
 <Combos>  
@@ -192,7 +192,7 @@ priority="0x0100" type="Menu">
  下列規則可管理項目可以呼叫另一個項目，做為其父系的方式。  
   
 |元素|在本節中的命令資料表的定義|可能包含 (當做父代，或放置在`CommandPlacements` 區段中，或兩者)|可能包含 （又稱為父代）|  
-|-------------|--------------------------------------------------|---------------------------------------------------------------------------------------------------|---------------------------------------------|  
+|-------------| - | - | - |  
 |群組|[Groups 元素](../../extensibility/groups-element.md)，IDE、 其他 Vspackage|功能表中，群組中，項目本身|功能表、 群組和命令|  
 |功能表|[功能表項目](../../extensibility/menus-element.md)，IDE、 其他 Vspackage|1 到*n*群組|0 表示*n*群組|  
 |工具列|[功能表項目](../../extensibility/menus-element.md)，IDE、 其他 Vspackage|項目本身|0 表示*n*群組|  
@@ -290,17 +290,17 @@ priority="0x0100" type="Menu">
 ## <a name="interface-element-appearance"></a>介面項目外觀  
  選取和定位命令元素的考量如下所示：  
   
--   [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 提供許多的 UI 項目顯示的方式會視位置而定。  
+- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 提供許多的 UI 項目顯示的方式會視位置而定。  
   
--   使用定義的 UI 項目`DefaultInvisible`旗標不會顯示在 IDE 中除非它是其中一個顯示它的 VSPackage 實作<xref:EnvDTE.IDTCommandTarget.QueryStatus%2A>方法，或與特定的 UI 內容，在相關聯`VisibilityConstraints`一節。  
+- 使用定義的 UI 項目`DefaultInvisible`旗標不會顯示在 IDE 中除非它是其中一個顯示它的 VSPackage 實作<xref:EnvDTE.IDTCommandTarget.QueryStatus%2A>方法，或與特定的 UI 內容，在相關聯`VisibilityConstraints`一節。  
   
--   可能不會顯示成功定位的命令。 這是因為 IDE 會自動隱藏或顯示一些命令，根據 VSPackage 具有 （或不具有） 的介面實作。 比方說，VSPackage 實作一些建置介面會自動顯示原因組建相關的功能表項目。  
+- 可能不會顯示成功定位的命令。 這是因為 IDE 會自動隱藏或顯示一些命令，根據 VSPackage 具有 （或不具有） 的介面實作。 比方說，VSPackage 實作一些建置介面會自動顯示原因組建相關的功能表項目。  
   
--   套用`CommandWellOnly`命令可以新增只能透過自訂的 UI 項目定義中的旗標表示。  
+- 套用`CommandWellOnly`命令可以新增只能透過自訂的 UI 項目定義中的旗標表示。  
   
--   IDE 在設計檢視中時，會顯示對話方塊時，才可能僅適用於某些 UI 內容，例如，命令。  
+- IDE 在設計檢視中時，會顯示對話方塊時，才可能僅適用於某些 UI 內容，例如，命令。  
   
--   若要讓特定的 UI 項目要顯示在 IDE 中，您必須實作一個或多個介面，或撰寫一些程式碼。  
+- 若要讓特定的 UI 項目要顯示在 IDE 中，您必須實作一個或多個介面，或撰寫一些程式碼。  
   
 ## <a name="see-also"></a>另請參閱  
  [擴充功能表和命令](../../extensibility/extending-menus-and-commands.md)

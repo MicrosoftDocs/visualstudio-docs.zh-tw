@@ -13,12 +13,12 @@ ms.assetid: adb6c011-5abd-41d2-8ead-08cd7579bf37
 caps.latest.revision: 14
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: e0e608f58f19acf0d2ae01b288943f71f9983c6a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 978f4e3edeb83d5980d793d74cf209e8e8f7205e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49173104"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49892788"
 ---
 # <a name="how-to-configure-unit-tests-to-target-an-earlier-version-of-the-net-framework"></a>如何：設定以舊版 .NET Framework 為目標的單元測試
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,31 +27,31 @@ ms.locfileid: "49173104"
   
  您可以建立以特定版本 .NET Framework 為目標的單元測試專案。 目標版本必須為 3.5 或更新版本，而且不能是用戶端版本。 Visual Studio 可針對以特定版本為目標的單元測試提供下列基本支援：  
   
--   您可以建立單元測試專案，並將其目標設定為特定版本 .NET Framework。  
+- 您可以建立單元測試專案，並將其目標設定為特定版本 .NET Framework。  
   
--   您可以在本機電腦上的 Visual Studio 執行以特定版本 .NET Framework 為目標的單元測試。  
+- 您可以在本機電腦上的 Visual Studio 執行以特定版本 .NET Framework 為目標的單元測試。  
   
--   您可以從命令提示字元使用 MSTest.exe 執行以特定版本 .NET Framework 為目標的單元測試。  
+- 您可以從命令提示字元使用 MSTest.exe 執行以特定版本 .NET Framework 為目標的單元測試。  
   
--   您可以於建置過程中在組建代理程式上執行單元測試。  
+- 您可以於建置過程中在組建代理程式上執行單元測試。  
   
- **測試 SharePoint 應用程式**  
+  **測試 SharePoint 應用程式**  
   
- 以上所列的功能同樣也能夠讓您使用 Visual Studio 撰寫 SharePoint 應用程式的單元測試和整合測試。 [!INCLUDE[crabout](../includes/crabout-md.md)] 若要了解如何使用 Visual Studio 開發 SharePoint 應用程式，請參閱[建立 SharePoint 方案](http://msdn.microsoft.com/library/4bfb1e59-97c9-4594-93f8-3068b4eb9631)、[建置和偵錯 SharePoint 方案](http://msdn.microsoft.com/library/c9e7c9ab-4eb3-40cd-a9b9-6c2a896f70ae)及[驗證及偵錯 SharePoint 程式碼](http://msdn.microsoft.com/library/b5f3bce2-6a51-41b1-a292-9e384bae420c)。  
+  以上所列的功能同樣也能夠讓您使用 Visual Studio 撰寫 SharePoint 應用程式的單元測試和整合測試。 [!INCLUDE[crabout](../includes/crabout-md.md)] 若要了解如何使用 Visual Studio 開發 SharePoint 應用程式，請參閱[建立 SharePoint 方案](http://msdn.microsoft.com/library/4bfb1e59-97c9-4594-93f8-3068b4eb9631)、[建置和偵錯 SharePoint 方案](http://msdn.microsoft.com/library/c9e7c9ab-4eb3-40cd-a9b9-6c2a896f70ae)及[驗證及偵錯 SharePoint 程式碼](http://msdn.microsoft.com/library/b5f3bce2-6a51-41b1-a292-9e384bae420c)。  
   
- **限制**  
+  **限制**  
   
- 當您將測試專案目標重定為舊版 .NET Framework 時，將會套用以下限制：  
+  當您將測試專案目標重定為舊版 .NET Framework 時，將會套用以下限制：  
   
--   在 .NET Framework 3.5 中，只有包含單元測試的測試專案才支援多目標。 .NET Framework 3.5 不支援任何其他測試類型，例如自動程式化 UI 或負載測試。 針對非單元測試的測試類型則會禁止重設目標。  
+- 在 .NET Framework 3.5 中，只有包含單元測試的測試專案才支援多目標。 .NET Framework 3.5 不支援任何其他測試類型，例如自動程式化 UI 或負載測試。 針對非單元測試的測試類型則會禁止重設目標。  
   
--   只有在預設的主機介面卡中才支援執行以舊版 .NET Framework 為目標的測試。 ASP.NET 主機介面卡不支援執行這類測試。 必須在 ASP.NET 程式開發伺服器內容中執行的 ASP.NET 應用程式，必須與 .NET Framework 的目前版本相容。  
+- 只有在預設的主機介面卡中才支援執行以舊版 .NET Framework 為目標的測試。 ASP.NET 主機介面卡不支援執行這類測試。 必須在 ASP.NET 程式開發伺服器內容中執行的 ASP.NET 應用程式，必須與 .NET Framework 的目前版本相容。  
   
--   當您執行支援 .NET Framework 3.5 多目標的測試時，會停用資料收集支援。 您可以使用 Visual Studio 命令列工具執行程式碼涵蓋範圍。  
+- 當您執行支援 .NET Framework 3.5 多目標的測試時，會停用資料收集支援。 您可以使用 Visual Studio 命令列工具執行程式碼涵蓋範圍。  
   
--   使用 .NET Framework 3.5 的單元測試無法在遠端電腦上執行。  
+- 使用 .NET Framework 3.5 的單元測試無法在遠端電腦上執行。  
   
--   您不能將單元測試的目標設定為架構的舊版用戶端版本。  
+- 您不能將單元測試的目標設定為架構的舊版用戶端版本。  
   
 ### <a name="re-targeting-to-a-specific-version-of-the-net-framework-for-visual-basic-unit-test-projects"></a>將 Visual Basic 單元測試專案的目標重定為特定版本的 .NET Framework  
   

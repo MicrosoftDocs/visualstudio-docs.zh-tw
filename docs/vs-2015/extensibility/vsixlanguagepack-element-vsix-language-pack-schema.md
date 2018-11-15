@@ -13,12 +13,12 @@ ms.assetid: 767f5c22-8b87-49ca-92aa-a7a3f026469f
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8cc63f24f50f8ed0fecb9640ae4b2a5d2ec669be
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1a3ff92a52613910f481492c744116c8be04463d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49224740"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49908063"
 ---
 # <a name="vsixlanguagepack-element-vsix-language-pack-schema"></a>VSIXLanguagePack 元素 （VSIX 語言套件結構描述）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,12 +68,12 @@ ms.locfileid: "49224740"
   
 ## <a name="element-information"></a>項目資訊  
   
-|||  
-|-|-|  
-|命名空間|http://schemas.microsoft.com/developer/vsx-schema-lp/2010|  
-|結構描述名稱|VSIX 語言套件結構描述|  
-|驗證檔|VSIXLanguagePackSchema.xsd|  
-|可以是空白|否|  
+|                 |                                                           |
+|-----------------|-----------------------------------------------------------|
+|    命名空間    | http://schemas.microsoft.com/developer/vsx-schema-lp/2010 |
+|   結構描述名稱   |                 VSIX 語言套件結構描述                 |
+| 驗證檔 |                VSIXLanguagePackSchema.xsd                 |
+|  可以是空白   |                            否                             |
   
 ## <a name="see-also"></a>另請參閱  
  [VSX 語言套件結構描述參考](../extensibility/vsx-language-pack-schema-reference.md)   

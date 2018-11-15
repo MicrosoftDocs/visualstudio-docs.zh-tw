@@ -16,34 +16,34 @@ ms.assetid: 33416226-9083-41b5-b153-10d2bf35c012
 caps.latest.revision: 41
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d3c19f48ffe00f3c824dc5085910b0319bc3c184
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7722132a81c63902450edd85ef90bde94ad94744
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49257344"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49880503"
 ---
 # <a name="installing-an-isolated-shell-application"></a>安裝 Isolated 的 Shell 應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 若要安裝的殼層應用程式中，您必須執行下列步驟。  
   
--   準備您的解決方案。  
+- 準備您的解決方案。  
   
--   建立您的應用程式的 Windows Installer (MSI) 封裝。  
+- 建立您的應用程式的 Windows Installer (MSI) 封裝。  
   
--   建立安裝程式啟動載入器。  
+- 建立安裝程式啟動載入器。  
   
- 本文件中的範例程式碼的所有來自[Shell 部署範例](http://go.microsoft.com/fwlink/?LinkId=262245)，您可以從 MSDN 網站上的程式碼庫下載。 此範例示範執行每個步驟的結果。  
+  本文件中的範例程式碼的所有來自[Shell 部署範例](http://go.microsoft.com/fwlink/?LinkId=262245)，您可以從 MSDN 網站上的程式碼庫下載。 此範例示範執行每個步驟的結果。  
   
 ## <a name="prerequisites"></a>必要條件  
  若要執行本主題所述的程序，您必須安裝下列工具，在您的電腦上。  
   
--   Visual Studio SDK  
+- Visual Studio SDK  
   
--   [Windows Installer XML 工具組](http://go.microsoft.com/fwlink/?LinkId=82720)3.6 版  
+- [Windows Installer XML 工具組](http://go.microsoft.com/fwlink/?LinkId=82720)3.6 版  
   
- 此範例也會要求 Microsoft Visualization and Modeling SDK，並非所有殼層需要。  
+  此範例也會要求 Microsoft Visualization and Modeling SDK，並非所有殼層需要。  
   
 ## <a name="preparing-your-solution"></a>準備您的解決方案  
  根據預設，殼層範本會建置至 VSIX 封裝，，但這主要供偵錯之用。 當您部署的殼層應用程式時，您必須使用 MSI 套件安裝期間允許進行登錄存取，並重新啟動。 若要準備您的應用程式的 MSI 部署，執行下列步驟。  

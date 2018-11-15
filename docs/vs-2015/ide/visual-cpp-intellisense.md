@@ -14,12 +14,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 104c85f7b23af8bfb412423ad1eeb27190a235c2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ced999c20678cc64dc5f96e86070b5f39d5ca2c7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49212929"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49881673"
 ---
 # <a name="visual-c-intellisense"></a>Visual C++ Intellisense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -73,23 +73,23 @@ ms.locfileid: "49212929"
   
  請注意以下各點：  
   
--   第 8 行上的 #else 分支呈現灰色，表示非使用中的區域，因為 __ANDROID\_\_ 針對 Android 專案而定義。  
+- # 第 8 行上的 else 分支呈現灰色，表示非使用中的區域，因為`__ANDROID__`定義針對 Android 專案。  
   
--   位於第 11 行的問候語變數會使用識別碼 HELLO 進行初始化，即具有紫色波浪線。 這是因為目前非使用中的 iOS 專案中並未定義任何識別碼 HELLO。 在 Android 專案中時，第 11 行會進行編譯，但不位於 iOS 中。 由於這是共用程式碼，即使它在目前使用中的組態中編譯時您仍應該進行變更。  
+- 位於第 11 行的問候語變數會使用識別碼 HELLO 進行初始化，即具有紫色波浪線。 這是因為目前非使用中的 iOS 專案中並未定義任何識別碼 HELLO。 在 Android 專案中時，第 11 行會進行編譯，但不位於 iOS 中。 由於這是共用程式碼，即使它在目前使用中的組態中編譯時您仍應該進行變更。  
   
--   第 12 行會在識別碼 BYE 具有紅色波浪線；此識別項不會在目前選取的使用中專案中定義。  
+- 第 12 行會在識別碼 BYE 具有紅色波浪線；此識別項不會在目前選取的使用中專案中定義。  
   
- 現在，將使用中的專案變更為 iOS.StaticLibrary，並注意波浪線如何變化。  
+  現在，將使用中的專案變更為 iOS.StaticLibrary，並注意波浪線如何變化。  
   
- ![已將 iOS 選取為使用中的專案](../ide/media/intellisensecppcrossplatform2.png "IntelliSenseCppCrossPlatform2")  
+  ![已將 iOS 選取為使用中的專案](../ide/media/intellisensecppcrossplatform2.png "IntelliSenseCppCrossPlatform2")  
   
- 請注意以下各點：  
+  請注意以下各點：  
   
--   第 6 行上的 #ifdef 分支呈現灰色，表示非使用中的區域，因為 __ANDROID\_\_ 並非針對 iOS 專案而定義。  
+- 在第 6 行 #ifdef 分支呈現灰色，表示非使用中的區域，因為 *_ANDROID\\*  \_未定義的 iOS 專案。  
   
--   位於第 11 行的問候語變數會使用識別碼 HELLO 進行初始化，現在它具有紅色波浪線。 這是因為目前使用中的 iOS 專案中並未定義任何識別碼 HELLO。  
+- 位於第 11 行的問候語變數會使用識別碼 HELLO 進行初始化，現在它具有紅色波浪線。 這是因為目前使用中的 iOS 專案中並未定義任何識別碼 HELLO。  
   
--   第 12 行會在識別碼 BYE 具有紫色波浪線；此識別項不會在目前選取的非使用中 Android.NativeActivity 專案中定義。  
+- 第 12 行會在識別碼 BYE 具有紫色波浪線；此識別項不會在目前選取的非使用中 Android.NativeActivity 專案中定義。  
   
 ## <a name="single-file-intellisense"></a>單一檔案 IntelliSense  
  當您開啟任何專案以外的單一檔案時，仍可使用 IntelliSense。 您可以移至 [文字編輯器]、[C/C++]、[進階] 開啟或關閉 IntelliSense 功能，以便啟用或停用特定功能。 若要針對不是專案一部分的單一檔案設定 IntelliSense，請尋找 [進階] 區段中的 [非專案檔案的 IntelliSense 及瀏覽功能]。 請參閱 [Visual C++ 導覽](http://msdn.microsoft.com/en-us/499cb66f-7df1-45d6-8b6b-33d94fd1f17c)。  

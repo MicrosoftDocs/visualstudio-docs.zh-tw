@@ -1,5 +1,5 @@
 ---
-title: IDebugComPlusSymbolProvider::GetNameFromToken |Microsoft 文件
+title: IDebugComPlusSymbolProvider::GetNameFromToken |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,15 +14,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bbd4fc3abcee9cc7cdea9c078abfaba0b6df5ba7
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8c9fae6967cc9b37938b83f61a10f8a6a85804a1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31101871"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49920426"
 ---
 # <a name="idebugcomplussymbolprovidergetnamefromtoken"></a>IDebugComPlusSymbolProvider::GetNameFromToken
-傳回與指定的中繼資料物件與指定語彙基元相關聯的名稱。  
+傳回與指定的語彙基元指定它的中繼資料物件相關聯的名稱。  
   
 ## <a name="syntax"></a>語法  
   
@@ -44,19 +44,19 @@ int GetNameFromToken (
   
 #### <a name="parameters"></a>參數  
  `pMetadataImport`  
- [in]物件，其中包含的中繼資料資訊。  
+ [in]包含中繼資料資訊的物件。  
   
  `dwToken`  
  [in]要命名為語彙基元。  
   
  `pbstrName`  
- [out]對應至語彙基元的名稱。  
+ [out]對應至權杖的名稱。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
   
 ## <a name="example"></a>範例  
- 下列範例示範如何實作這個方法來**CDebugSymbolProvider**公開物件[IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)介面。  
+ 下列範例示範如何實作這個方法，如**CDebugSymbolProvider**公開 （expose） 的物件[IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)介面。  
   
 ```cpp  
 HRESULT CDebugSymbolProvider::GetNameFromToken(  

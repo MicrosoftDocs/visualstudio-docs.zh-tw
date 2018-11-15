@@ -26,12 +26,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3a4f5a7497e24ccd8e769198938dbd20a6bdf0f2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6eb85fcef78b4b856c47ccb4436d1314ae440136
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49284553"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219727"
 ---
 # <a name="read-xml-data-into-a-dataset"></a>將 XML 資料讀入資料集
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -232,7 +232,7 @@ ADO.NET 提供簡單的方法來處理 XML 資料。 在此逐步解說中，您
   
 #### <a name="to-test-the-form"></a>若要測試表單  
   
-1.  選取 **F5**執行應用程式。  
+1.  選取  **F5**執行應用程式。  
   
 2.  選取 [**讀取 XML** ] 按鈕。  
   

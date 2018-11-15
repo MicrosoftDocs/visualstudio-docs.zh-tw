@@ -22,12 +22,12 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3fa890e15a27a3d54c420520a71119f794fd124c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5ac76a294c8f6b536da93f06afe6e423ca593b84
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49248261"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49824161"
 ---
 # <a name="how-to-debug-with-code-center-premium-source"></a>如何：以 Code Center Premium 來源進行偵錯
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,21 +38,21 @@ ms.locfileid: "49248261"
   
 ### <a name="to-prepare-for-debugging-with-code-center-premium"></a>若要準備使用 Code Center Premium 進行偵錯  
   
-1.  連接智慧卡讀取裝置，並插入您從共享原始碼計畫取得的卡片。  
+1. 連接智慧卡讀取裝置，並插入您從共享原始碼計畫取得的卡片。  
   
-2.  啟動 Visual Studio。  
+2. 啟動 Visual Studio。  
   
-3.  在 [ **工具** ] 功能表上按一下 [ **選項**]。  
+3. 在 [ **工具** ] 功能表上按一下 [ **選項**]。  
   
-4.  在 **選項**對話方塊中，開啟**偵錯**節點，然後按一下**一般**。  
+4. 在 **選項**對話方塊中，開啟**偵錯**節點，然後按一下**一般**。  
   
-5.  清除**啟用 Just My Code （僅限 Managed）** 核取方塊。  
+5. 清除**啟用 Just My Code （僅限 Managed）** 核取方塊。  
   
-6.  選取 **啟用來源伺服器支援**。  
+6. 選取 **啟用來源伺服器支援**。  
   
-7.  清除**需要來源檔案以完全符合原始版本**。  
+7. 清除**需要來源檔案以完全符合原始版本**。  
   
-8.  底下**偵錯**節點中，按一下**符號**。  
+8. 底下**偵錯**節點中，按一下**符號**。  
   
 9. 在 **符號檔 (.pdb) 位置**方塊中，清除**Microsoft 伺服器符號**核取方塊，然後加入下列位置：  
   
@@ -60,18 +60,18 @@ ms.locfileid: "49248261"
   
      `src=https://codepremium.msdn.microsoft.com/source/Visual%20Studio%202010/SP1/`  
   
-    > [!NOTE]
-    >  請務必包含結尾斜線**/** 路徑的結尾。  
+   > [!NOTE]
+   >  請務必包含結尾斜線<strong>/</strong> 路徑的結尾。  
   
      將這些位置移至清單頂端，以確保優先載入這些符號。  
   
-    > [!NOTE]
-    >  這些 Code Center Premium 位置必須先列出，才能讓它們成為優先載入的位置。 在 Visual Studio 2010 中，您無法將上述任何伺服器移**Microsoft 符號伺服器**項目，這就是為什麼您必須清除此核取方塊。  
-    >   
-    >  若要在偵錯工作階段期間從 Microsoft 符號載入符號，請執行下列作業：  
-    >   
-    >  1.  在 **偵錯**功能表上，選擇**Windows** ，然後選擇**模組**。  
-    > 2.  選取想要其符號的模組，然後開啟捷徑功能表。 選擇**載入符號來源**，然後選擇**Microsoft 符號伺服器**。  
+   > [!NOTE]
+   >  這些 Code Center Premium 位置必須先列出，才能讓它們成為優先載入的位置。 在 Visual Studio 2010 中，您無法將上述任何伺服器移**Microsoft 符號伺服器**項目，這就是為什麼您必須清除此核取方塊。  
+   > 
+   >  若要在偵錯工作階段期間從 Microsoft 符號載入符號，請執行下列作業：  
+   > 
+   > 1. 在 **偵錯**功能表上，選擇**Windows** ，然後選擇**模組**。  
+   >    2.  選取想要其符號的模組，然後開啟捷徑功能表。 選擇**載入符號來源**，然後選擇**Microsoft 符號伺服器**。  
   
 10. 在 **快取從符號伺服器，此目錄中的符號**方塊中，輸入位置，例如`C:\symbols`Code Center Premium 可以快取符號。 將符號進行快取可大幅提升偵錯期間的效能。  
   
@@ -109,22 +109,22 @@ ms.locfileid: "49248261"
   
 ### <a name="to-debug-source-code-from-an-existing-solution"></a>若要從現有的方案偵錯原始程式碼  
   
-1.  在 **方案總管**，開啟方案的捷徑功能表，然後選擇**屬性**。  
+1. 在 **方案總管**，開啟方案的捷徑功能表，然後選擇**屬性**。  
   
-2.  在 [方案屬性頁] 對話方塊中，選擇**偵錯原始程式檔**中**通用屬性**節點。  
+2. 在 [方案屬性頁] 對話方塊中，選擇**偵錯原始程式檔**中**通用屬性**節點。  
   
-3.  新增下列位置，即可**包含原始程式檔的目錄**清單：  
+3. 新增下列位置，即可**包含原始程式檔的目錄**清單：  
   
-     `https://codepremium.msdn.microsoft.com/source/Visual%20Studio%202010/SP1/`  
+    `https://codepremium.msdn.microsoft.com/source/Visual%20Studio%202010/SP1/`  
   
-    > [!NOTE]
-    >  請務必包含結尾斜線**/** 路徑的結尾。  
+   > [!NOTE]
+   >  請務必包含結尾斜線<strong>/</strong> 路徑的結尾。  
   
-4.  針對方案中的每個 Managed 專案執行下列作業  
+4. 針對方案中的每個 Managed 專案執行下列作業  
   
-    1.  在 [方案總管] 中，開啟專案的捷徑功能表，然後再選擇**屬性**。  
+   1.  在 [方案總管] 中，開啟專案的捷徑功能表，然後再選擇**屬性**。  
   
-    2.  選取 **偵錯**，然後選擇**啟用 unmanaged 程式碼偵錯**。  
+   2.  選取 **偵錯**，然後選擇**啟用 unmanaged 程式碼偵錯**。  
   
 ### <a name="to-debug-your-solution-with-code-center-premium-source"></a>若要偵錯使用 Code Center Premium 來源的方案  
   

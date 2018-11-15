@@ -14,12 +14,12 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 082471c04bd8354e392a075f1ff559961cd402ea
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 14517a3f941ae7d177c876a48a400113c775fdb2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49194116"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49897871"
 ---
 # <a name="gpu-usage"></a>GPU 使用量
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,52 +33,52 @@ ms.locfileid: "49194116"
 ## <a name="requirements"></a>需求  
  下列是圖形診斷需求以外的 GPU 使用量工具使用需求。  
   
--   支援所需計時檢測的 GPU 和驅動程式。  
+- 支援所需計時檢測的 GPU 和驅動程式。  
   
-    > [!NOTE]
-    >  如需所支援硬體和驅動程式的詳細資訊，請參閱本文件結尾的[硬體和驅動程式支援](#hwsupport)。  
+  > [!NOTE]
+  >  如需所支援硬體和驅動程式的詳細資訊，請參閱本文件結尾的[硬體和驅動程式支援](#hwsupport)。  
   
- 如需圖形診斷需求的詳細資訊，請參閱[使用者入門](../debugger/getting-started-with-visual-studio-graphics-diagnostics.md)。  
+  如需圖形診斷需求的詳細資訊，請參閱[使用者入門](../debugger/getting-started-with-visual-studio-graphics-diagnostics.md)。  
   
 ## <a name="using-the-gpu-usage-tool"></a>使用 GPU 使用量工具  
  使用 GPU 使用量工具執行應用程式時，Visual Studio 會建立一個診斷工作階段，可即時繪製應用程式轉譯效能和 GPU 使用率高階資訊的圖形。  
   
 #### <a name="to-start-the-gpu-usage-tool"></a>啟動 GPU 使用量工具：  
   
-1.  在主功能表中，依序選擇 [偵錯] 和 [效能及診斷]\(鍵盤：按 Alt+F2)。  
+1. 在主功能表中，依序選擇 [偵錯] 和 [效能及診斷]\(鍵盤：按 Alt+F2)。  
   
-2.  在 [效能及診斷] 中樞中，核取 [GPU 使用量] 旁邊的方塊。 選擇性地核取您感興趣之其他工具旁邊的方塊。 您可以同時執行數個效能與診斷工具，以取得更完整的應用程式效能。  
+2. 在 [效能及診斷] 中樞中，核取 [GPU 使用量] 旁邊的方塊。 選擇性地核取您感興趣之其他工具旁邊的方塊。 您可以同時執行數個效能與診斷工具，以取得更完整的應用程式效能。  
   
-     ![選擇您要使用的診斷工具。](../debugger/media/gfx-diag-diagsession-tools.png "gfx_diag_diagsession_tools")  
+    ![選擇您要使用的診斷工具。](../debugger/media/gfx-diag-diagsession-tools.png "gfx_diag_diagsession_tools")  
   
-    > [!NOTE]
-    >  並非所有效能及診斷工具都可以同時使用。  
+   > [!NOTE]
+   >  並非所有效能及診斷工具都可以同時使用。  
   
-3.  選擇 [效能及診斷] 中樞底部的藍色 [開始] 按鈕，以使用您選取的工具執行應用程式。  
+3. 選擇 [效能及診斷] 中樞底部的藍色 [開始] 按鈕，以使用您選取的工具執行應用程式。  
   
- 即時顯示的高階資訊包括畫面格計時、畫面播放速率和 GPU 使用率。 所有這些資訊都是單獨繪製圖形，但使用共同的時間刻度，如此您可以輕鬆地產生它們的關聯。  
+   即時顯示的高階資訊包括畫面格計時、畫面播放速率和 GPU 使用率。 所有這些資訊都是單獨繪製圖形，但使用共同的時間刻度，如此您可以輕鬆地產生它們的關聯。  
   
- [畫面格時間 (毫秒)] 和 [每秒畫面格數 (FPS)] 圖形包含兩個紅色水平線，代表每秒 60 和 30 個畫面格數的效能目標。 在 [畫面格時間] 圖形中，您的應用程式在圖形低於該線時超出效能目標，而在圖形高於該線時則錯過它。 在 [每秒畫面格數] 圖形中，則相反；您的應用程式在圖形高於該線時超出效能目標，而在圖形低於該線時則錯過它。 這些圖形主要是用來取得您應用程式效能的高階想法，以及識別您可能想要調查的速度變慢 (例如，畫面播放速率突然下降或 GPU 使用率暴增)。  
+   [畫面格時間 (毫秒)] 和 [每秒畫面格數 (FPS)] 圖形包含兩個紅色水平線，代表每秒 60 和 30 個畫面格數的效能目標。 在 [畫面格時間] 圖形中，您的應用程式在圖形低於該線時超出效能目標，而在圖形高於該線時則錯過它。 在 [每秒畫面格數] 圖形中，則相反；您的應用程式在圖形高於該線時超出效能目標，而在圖形低於該線時則錯過它。 這些圖形主要是用來取得您應用程式效能的高階想法，以及識別您可能想要調查的速度變慢 (例如，畫面播放速率突然下降或 GPU 使用率暴增)。  
   
- 使用 GPU 使用量工具執行應用程式時，診斷工作階段也會收集對 GPU 執行之圖形事件的詳細資訊。 這項資訊用來產生應用程式如何利用硬體的更精細報告。 因為需要一些時間才能從所收集的資訊產生這份報告，所以只有在診斷工作階段完成資訊收集之後才能使用它。  
+   使用 GPU 使用量工具執行應用程式時，診斷工作階段也會收集對 GPU 執行之圖形事件的詳細資訊。 這項資訊用來產生應用程式如何利用硬體的更精細報告。 因為需要一些時間才能從所收集的資訊產生這份報告，所以只有在診斷工作階段完成資訊收集之後才能使用它。  
   
- 如果想要更近地查看效能或使用率問題，請停止收集效能資訊，以產生報告。  
+   如果想要更近地查看效能或使用率問題，請停止收集效能資訊，以產生報告。  
   
 #### <a name="to-generate-and-view-the-gpu-usage-report"></a>產生和檢視 GPU 使用量報告：  
   
-1.  在 [診斷工作階段] 視窗的下半部，選擇 [停止收集] 連結，或按左上角的 [停止]。  
+1. 在 [診斷工作階段] 視窗的下半部，選擇 [停止收集] 連結，或按左上角的 [停止]。  
   
-     ![收集 GPU 和 CPU 計時資訊。](../debugger/media/gfx-diag-gpu-usage-collect.png "gfx_diag_gpu_usage_collect")  
+    ![收集 GPU 和 CPU 計時資訊。](../debugger/media/gfx-diag-gpu-usage-collect.png "gfx_diag_gpu_usage_collect")  
   
-2.  在報告的上半部，選取其中一個圖形中的一個區段，以顯示您想要調查的問題。 您的選取項目最多可以有 3 秒的時間；會向起始處截斷較長的區段。  
+2. 在報告的上半部，選取其中一個圖形中的一個區段，以顯示您想要調查的問題。 您的選取項目最多可以有 3 秒的時間；會向起始處截斷較長的區段。  
   
-     ![收集後，選取範圍以檢視詳細資料](../debugger/media/gfx-diag-gpu-usage-select1.png "gfx_diag_gpu_usage_select1")  
+    ![收集後，選取範圍以檢視詳細資料](../debugger/media/gfx-diag-gpu-usage-select1.png "gfx_diag_gpu_usage_select1")  
   
-3.  在報告的下半部，選擇 [...按一下這裡以檢視該範圍的 GPU 使用量詳細資料] 訊息中的 [檢視詳細資料] 連結，以檢視您選取項目的詳細時間軸。  
+3. 在報告的下半部，選擇 [...按一下這裡以檢視該範圍的 GPU 使用量詳細資料] 訊息中的 [檢視詳細資料] 連結，以檢視您選取項目的詳細時間軸。  
   
-     ![收集後，已選取範圍](../debugger/media/gfx-diag-gpu-usage-select2.png "gfx_diag_gpu_usage_select2")  
+    ![收集後，已選取範圍](../debugger/media/gfx-diag-gpu-usage-select2.png "gfx_diag_gpu_usage_select2")  
   
- 這會開啟包含報告的新索引標籤式文件。 [GPU 使用量] 報告可協助您查看何時在 CPU 上啟動圖形事件、它何時到達 GPU，以及 GPU 執行它所需的時間。 這項資訊可協助您找出瓶頸以及提高程式碼中平行處理的機會。  
+   這會開啟包含報告的新索引標籤式文件。 [GPU 使用量] 報告可協助您查看何時在 CPU 上啟動圖形事件、它何時到達 GPU，以及 GPU 執行它所需的時間。 這項資訊可協助您找出瓶頸以及提高程式碼中平行處理的機會。  
   
 ## <a name="using-the-gpu-usage-report"></a>使用 GPU 使用量報告  
  [GPU 使用量] 報告的上半部會顯示 CPU 處理活動、GPU 轉譯活動和 GPU 複製活動的時間軸。 這些時間軸會除以代表顯示器 vsync 的淺灰色分隔號；長條的頻率符合從中收集 GPU 使用量資料之其中一個顯示器的重新整理頻率 (使用 [顯示器] 下拉式清單進行選取)。 因為顯示器的重新整理頻率可能高於應用程式的效能目標，所以 vsync 與您想要應用程式達到的畫面播放速率之間不可能有 1 對 1 關聯性。 若要符合應用程式必須完成所有處理的效能目標，請執行轉譯，並且依目標畫面播放速率進行 Present() 呼叫，但是除非在 Present() 後面進行下一個 vsync，否則不會顯示所轉譯的畫面格。  

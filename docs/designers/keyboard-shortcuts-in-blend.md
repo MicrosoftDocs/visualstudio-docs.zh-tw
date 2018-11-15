@@ -10,14 +10,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8ae9d21808ba256612526e24b722717fed365a8b
-ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
+ms.openlocfilehash: 119c896313adb94524417cde73624987dd96e279
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38977990"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49891826"
 ---
 # <a name="keyboard-shortcuts-in-blend"></a>鍵盤快速鍵 (Blend)
+
 ## <a name="project-shortcuts"></a>專案快速鍵
 
 |若要執行此工作|請執行|
@@ -117,4 +118,4 @@ ms.locfileid: "38977990"
 |顯示或隱藏所有面板|**F4**|
 |重設使用中的工作區版面配置|**Ctrl**+**Shift**+**R**|
 |移動瀏覽工作區|按住**空格鍵**|
-|暫時使用 [選取] 工具 (在其他工具仍為選取狀態時)|按住 **Ctrl** 鍵|
+|暫時使用 [選取] 工具 (在其他工具仍為選取狀態時)|按住 **Ctrl**|

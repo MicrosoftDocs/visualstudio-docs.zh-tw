@@ -18,12 +18,12 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7669069b7fc7128e83b62456663b71d0be1d2a69
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ae6381ed30d93078e79f5108cf14642b0eda3ea0
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49190836"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219701"
 ---
 # <a name="idiaenumdebugstreamsnext"></a>IDiaEnumDebugStreams::Next
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "49190836"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT Next (   
+HRESULT Next (   
    ULONG                     celt,   
    IDiaEnumDebugStreamData** rgelt,  
    ULONG*                    pceltFetched  
@@ -42,7 +42,7 @@ HRESULT Next (
   
 #### <a name="parameters"></a>參數  
  celt  
- [in]**T**他要擷取列舉值中的偵錯資料流的數字。  
+ [in]要擷取列舉值中的偵錯資料流數目。  
   
  rgelt  
  [out]傳回的陣列[IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md)物件，表示偵錯資料流擷取。  

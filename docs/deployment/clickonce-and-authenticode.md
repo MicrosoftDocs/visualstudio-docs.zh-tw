@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2943766bb7b0df6d2e0974f8a8c1b52747f31526
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: bc0018533f089c2be3d0a94093bf41deadd9a74e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512206"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49907439"
 ---
 # <a name="clickonce-and-authenticode"></a>ClickOnce 和 Authenticode
 *Authenticode* 是 Microsoft 技術，使用業界標準密碼編譯簽署有數位憑證的應用程式程式碼，以確認應用程式發行者真偽。 使用 Authenticode 部署應用程式， [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 可以降低特洛伊木馬程式的風險。 特洛伊木馬程式是誤以為來自於已建立、可信任來源的合法程式，其實是惡意第三方的病毒或其他有害的程式。 使用數位憑證簽署 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 部署是選擇性的步驟，用以確認組件和檔案未遭竄改。  
@@ -39,11 +39,11 @@ ms.locfileid: "39512206"
   
  有三種方法可以取得程式碼簽署憑證︰  
   
--   向憑證廠商購買。  
+- 向憑證廠商購買。  
   
--   由貴組織負責建立數位憑證的群組提供。  
+- 由貴組織負責建立數位憑證的群組提供。  
   
--   產生您自己的憑證，藉由使用 New-selfsignedcertificate PowerShell cmdlet，或是利用*MakeCert.exe*，這是隨附於[!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)]。  
+- 產生您自己的憑證，藉由使用 New-selfsignedcertificate PowerShell cmdlet，或是利用*MakeCert.exe*，這是隨附於[!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)]。  
   
 ### <a name="how-using-certificate-authorities-helps-users"></a>如何使用憑證授權單位幫助使用者  
  使用 New-selfsignedcertificate 產生的憑證或*MakeCert.exe*公用程式通稱為*自助憑證*或是*測試憑證*。這種憑證的運作方式相同方式來 *.snk*檔案適用於.NET Framework 中。 它只有公開/私密密碼編譯金鑰組，不包含任何可驗證的發行者資訊。 您可以使用自助憑證部署在內部網路高度信任的 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式。 不過，當這些應用程式在用戶端電腦上執行時， [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 會視之為來自未知的發行者。 根據預設，使用自我憑證簽署並透過網際網路部署的 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式，不能使用受信任的應用程式部署。  
@@ -68,7 +68,7 @@ ms.locfileid: "39512206"
   
 ### <a name="store-certificates"></a>儲存憑證  
   
--   您可以儲存為憑證 *.pfx*檔案在您的檔案系統，或者您可以將它們儲存在金鑰容器內。 Windows 網域的使用者可以有多個金鑰容器。 根據預設， *MakeCert.exe*將憑證儲存在您個人的金鑰容器，除非您另外指定，它應該將它儲存到 *.pfx*改。 *Mage.exe*並*MageUI.exe*，則[!INCLUDE[winsdkshort](../debugger/debug-interface-access/includes/winsdkshort_md.md)]的工具來建立[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]部署，讓您使用以任一方式儲存的憑證。  
+- 您可以儲存為憑證 *.pfx*檔案在您的檔案系統，或者您可以將它們儲存在金鑰容器內。 Windows 網域的使用者可以有多個金鑰容器。 根據預設， *MakeCert.exe*將憑證儲存在您個人的金鑰容器，除非您另外指定，它應該將它儲存到 *.pfx*改。 *Mage.exe*並*MageUI.exe*，則[!INCLUDE[winsdkshort](../debugger/debug-interface-access/includes/winsdkshort_md.md)]的工具來建立[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]部署，讓您使用以任一方式儲存的憑證。  
   
 ## <a name="see-also"></a>另請參閱  
  [ClickOnce 安全性和部署](../deployment/clickonce-security-and-deployment.md)   

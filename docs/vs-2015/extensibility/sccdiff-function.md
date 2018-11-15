@@ -17,12 +17,12 @@ ms.assetid: d49bc8c5-f631-4153-9d3c-feb3564da305
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2a98f35e2829bc2eb84b9604e6b16a7b4f3f9ade
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2b0c789e0d709add0423d5d6fad9ecf7110f2abb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49242797"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49890812"
 ---
 # <a name="sccdiff-function"></a>SccDiff 函式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

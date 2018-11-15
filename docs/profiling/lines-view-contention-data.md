@@ -12,33 +12,33 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ae52ad47e18a0572a883c50f43689bdaae60234d
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: 7c05f928d7c5c6f35226985147b6a4545e2a2937
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34843847"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49890045"
 ---
 # <a name="lines-view---contention-data"></a>程式行檢視 - 爭用資料
 爭用資料的 [程式行] 檢視會針對在執行分析期間收集樣本時執行的陳述式，列出效能資料。 在原始程式檔中，陳述式在原始程式檔中可以長達多行，而單一行程式也可能包含一個以上的陳述式。  
   
  陳述式是由下列資料識別：  
   
--   包含此函式陳述式的原始程式檔。  
+- 包含此函式陳述式的原始程式檔。  
   
--   包含此陳述式的函式。  
+- 包含此陳述式的函式。  
   
--   此陳述式在原始程式檔中開始的行位置。  
+- 此陳述式在原始程式檔中開始的行位置。  
   
--   此陳述式在原始程式檔中開始的字元。  
+- 此陳述式在原始程式檔中開始的字元。  
   
--   此陳述式在原始程式檔中結束的行位置。  
+- 此陳述式在原始程式檔中結束的行位置。  
   
--   此陳述式在原始程式檔中結束的字元。  
+- 此陳述式在原始程式檔中結束的字元。  
   
- [程式行名稱] 資料行提供識別項資料的可排序串連。  
+  [程式行名稱] 資料行提供識別項資料的可排序串連。  
   
- 下表說明 [程式行] 檢視報表的資料行。  
+  下表說明 [程式行] 檢視報表的資料行。  
   
 |資料行|描述|  
 |------------|-----------------|  

@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b3002a18e4575ab57b77d90c4b7d94662683cf9d
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 81b4fb4938c1b87f4a9ca31cdc6035c4c6f124d1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39497923"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926458"
 ---
 # <a name="deploy-custom-start-pages"></a>部署自訂起始頁
 
@@ -42,17 +42,17 @@ ms.locfileid: "39497923"
 
  若要建立 VSIX 部署，而不需使用起始頁專案範本，請先建立 *.vsix*這兩種方式其中一種方法中的 [入門] 頁面的檔案：
 
--   藉由將空的 VSIX 專案中的自訂起始頁檔案。 如需詳細資訊，請參閱 < [VSIX 專案範本](../extensibility/vsix-project-template.md)。
+- 藉由將空的 VSIX 專案中的自訂起始頁檔案。 如需詳細資訊，請參閱 < [VSIX 專案範本](../extensibility/vsix-project-template.md)。
 
--   手動建立 *.vsix*檔案。 若要建立 *.vsix*手動檔案：
+- 手動建立 *.vsix*檔案。 若要建立 *.vsix*手動檔案：
 
-    1.  建立*extension.vsixmanifest*檔案並 *[Content_Types].xml*的新資料夾中的檔案。 如需詳細資訊，請參閱 < [VSIX 封裝的結構](../extensibility/anatomy-of-a-vsix-package.md)。
+  1.  建立*extension.vsixmanifest*檔案並 *[Content_Types].xml*的新資料夾中的檔案。 如需詳細資訊，請參閱 < [VSIX 封裝的結構](../extensibility/anatomy-of-a-vsix-package.md)。
 
-    2.  在 Windows 檔案總管中，以滑鼠右鍵按一下包含兩個 XML 檔案的資料夾中，按一下**傳送到**，然後按一下 壓縮的 (zipped) 資料夾。 重新命名產生 *.zip*的檔案*Filename.vsix*，其中的檔案名稱是可轉散發檔案安裝封裝的名稱。
+  2.  在 Windows 檔案總管中，以滑鼠右鍵按一下包含兩個 XML 檔案的資料夾中，按一下**傳送到**，然後按一下 壓縮的 (zipped) 資料夾。 重新命名產生 *.zip*的檔案*Filename.vsix*，其中的檔案名稱是可轉散發檔案安裝封裝的名稱。
 
- Visual Studio 能夠辨識 [入門] 頁面中，如`Content Element`VSIX 資訊清單必須包含`CustomExtension Element`具有`Type`屬性設為`"StartPage"`。 使用 VSIX 部署已安裝的起始頁延伸模組會出現在**自訂起始頁**上列出**啟動**選項頁面中以 **[安裝延伸模組]***延伸模組名稱*。
+  Visual Studio 能夠辨識 [入門] 頁面中，如`Content Element`VSIX 資訊清單必須包含`CustomExtension Element`具有`Type`屬性設為`"StartPage"`。 使用 VSIX 部署已安裝的起始頁延伸模組會出現在**自訂起始頁**上列出**啟動**選項頁面中以 **[安裝延伸模組]***延伸模組名稱*。
 
- 如果您的起始頁套件包含組件，您必須先新增繫結路徑註冊，以便 Visual Studio 啟動時可供使用。 若要這樣做，請確定您的套件，包含 *.pkgdef*具有下列資訊的檔案。
+  如果您的起始頁套件包含組件，您必須先新增繫結路徑註冊，以便 Visual Studio 啟動時可供使用。 若要這樣做，請確定您的套件，包含 *.pkgdef*具有下列資訊的檔案。
 
 ```
 [$RootKey$\BindingPaths\{Insert a new GUID here}]
@@ -85,7 +85,7 @@ ms.locfileid: "39497923"
      這會告訴 Visual Studio 以查看新的起始頁位置。
 
 ## <a name="file-copy-deployment"></a>檔案複製部署
- 您不需要建立 *.vsix*檔案來部署自訂起始頁。 相反地，您可以在其中複製標記和支援檔案直接在使用者的 * \StartPages\*資料夾。 **自訂起始頁**上列出**啟動**選項頁面上列出每個 *.xaml*該資料夾，以及路徑中的檔案 — 比方說， *%USERPROFILE%\My Documents\Visual Studio {version} \StartPages\\{檔案名稱}.xaml*。 如果您的起始頁包含私用組件的參考，您必須將其複製並貼到 * \PrivateAssemblies\*資料夾。
+ 您不需要建立 *.vsix*檔案來部署自訂起始頁。 相反地，您可以在其中複製標記，並直接在使用者的支援檔案<em>\StartPages\*資料夾。**自訂起始頁</em>* 上列出**啟動**選項頁面上列出每個 *.xaml*該資料夾，以及路徑中的檔案 — 比方說， *%USERPROFILE%\My Documents\Visual Studio {version} \StartPages\\{檔案名稱}.xaml*。 如果您的起始頁包含私用組件的參考，您必須將其複製並貼到 * \PrivateAssemblies\*資料夾。
 
  若要將您建立而不將它包裝在起始頁 *.vsix*檔案中，我們建議您使用基本的檔案複製策略，例如，批次指令碼，或其他部署技術，可讓您將檔案放在所需的目錄。
 

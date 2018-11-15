@@ -11,16 +11,16 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 14aa15d53977167a61d5570d4bc2ac7edffb197d
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 33bd31c59de85f70d653d2de912b8c9bc5bb0e30
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39511648"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295887"
 ---
 # <a name="input-generation-using-dynamic-symbolic-execution"></a>使用動態符號執行產生輸入
 
-IntelliTest 會透過分析程式中的分支條件，以產生[參數化單元測試](test-generation.md#parameterized-unit-testing)的輸入。 測試輸入是根據它們是否可觸發程式的新分支行為進行選擇。 分析是一種累加的處理序。 它會重新調整正式測試輸入參數 **I**. **q** 上的述詞 **q: I -> {true, false}**，代表 IntelliTest 已觀察到的行為集合。 一開始 **q := false**，因為尚未觀察到任何項目。
+IntelliTest 會藉由分析程式中的分支條件，以產生[參數化單元測試](test-generation.md#parameterized-unit-testing)的輸入。 測試輸入是根據它們是否可觸發程式的新分支行為進行選擇。 分析是一種累加的處理序。 它會重新調整正式測試輸入參數 **I**. **q** 上的述詞 **q: I -> {true, false}**，代表 IntelliTest 已觀察到的行為集合。 一開始 **q := false**，因為尚未觀察到任何項目。
 
 迴圈的步驟如下：
 
@@ -142,8 +142,8 @@ IntelliTest 會嘗試將觸發相關程式行為所需的陣列和字串大小�
 <a name="further-reading"></a>
 ## <a name="further-reading"></a>進一步閱讀
 
-* [它如何運作？](https://blogs.msdn.microsoft.com/visualstudioalm/2014/12/11/smart-unit-tests-a-mental-model/)
+* [它如何運作？](https://blogs.msdn.microsoft.com/devops/2014/12/11/smart-unit-tests-a-mental-model/)
 
 ## <a name="got-feedback"></a>有任何意見反應嗎？
 
-您可以在 [UserVoice](https://visualstudio.uservoice.com/forums/121579-visual-studio-2015/category/157869-test-tools?query=IntelliTest) 上張貼想法和功能要求。
+在[開發人員社群](https://developercommunity.visualstudio.com/content/idea/post.html?space=8)上張貼您的意見與功能建議。

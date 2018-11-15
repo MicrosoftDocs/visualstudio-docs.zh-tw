@@ -14,37 +14,37 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cb3473e8c34f36e1cde0450563711824ce22a37d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 96b4e4cc929dc7941fac5e8a7f090e701fe2810f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49273880"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49935389"
 ---
 # <a name="configure-the-windows-firewall-for-remote-debugging"></a>設定 Windows 防火牆進行遠端偵錯
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 本主題描述如何設定防火牆，在執行下列作業系統的電腦上啟用遠端偵錯：  
   
--   Windows 7  
+- Windows 7  
   
--   Windows 8/8.1  
+- Windows 8/8.1  
   
--   Windows 10  
+- Windows 10  
   
--   Windows Server 2008 (R2)  
+- Windows Server 2008 (R2)  
   
--   Windows Server 2012  
+- Windows Server 2012  
   
--   Windows Server 2012 R2  
+- Windows Server 2012 R2  
   
- 如果正在偵錯的網路未受到防火牆保護，便不需要進行這項設定。 否則，裝載 Visual Studio 的電腦和要進行偵錯的遠端電腦都需要進行變更防火牆設定。  
+  如果正在偵錯的網路未受到防火牆保護，便不需要進行這項設定。 否則，裝載 Visual Studio 的電腦和要進行偵錯的遠端電腦都需要進行變更防火牆設定。  
   
- **IPSec** 如果您的網路要求使用 IPSec 執行通訊，您必須在 Visual Studio 主機電腦和遠端電腦上都開啟其他連接埠。  
+  **IPSec** 如果您的網路要求使用 IPSec 執行通訊，您必須在 Visual Studio 主機電腦和遠端電腦上都開啟其他連接埠。  
   
- **網頁伺服器** 如果您正在偵錯遠端網頁伺服器，您必須在遠端電腦上開啟其他連接埠。  
+  **網頁伺服器** 如果您正在偵錯遠端網頁伺服器，您必須在遠端電腦上開啟其他連接埠。  
   
- 請注意，這兩部電腦不需要執行相同的作業系統。 例如，Visual Studio 電腦可以執行 Windows 10，而遠端電腦則可以執行 Windows Server 2012 R2。  
+  請注意，這兩部電腦不需要執行相同的作業系統。 例如，Visual Studio 電腦可以執行 Windows 10，而遠端電腦則可以執行 Windows Server 2012 R2。  
   
 ## <a name="to-configure-windows-firewall-on-the-visual-studio-computer"></a>在 Visual Studio 電腦上設定 Windows 防火牆  
  設定 Windows 防火牆的指示在不同作業系統上稍有不同。 在 Windows 7 或 Windows Server 2008，使用 **程式** 字樣，在 Windows 8/8.1、Windows 10 和 Windows Server 2012 上，則使用 **應用程式** 字樣。  我們將在下列步驟中使用 **應用程式**字樣。  

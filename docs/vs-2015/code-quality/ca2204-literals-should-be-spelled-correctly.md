@@ -20,15 +20,16 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 4bbf07e4b8475c45f5f9ea1818a51b5670e23454
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9fb00f8a0986d5ead81e36888a9b714244d1230c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49200344"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49928436"
 ---
 # <a name="ca2204-literals-should-be-spelled-correctly"></a>CA2204：常值必須使用正確的拼字
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|LiteralsShouldBeSpelledCorrectly|
@@ -42,15 +43,15 @@ ms.locfileid: "49200344"
 ## <a name="rule-description"></a>規則描述
  此規則會檢查常值字串做為值傳遞至參數或屬性，當一或多個下列情況為 true:
 
--   <xref:System.ComponentModel.LocalizableAttribute>參數或屬性的屬性設定為 true。
+- <xref:System.ComponentModel.LocalizableAttribute>參數或屬性的屬性設定為 true。
 
--   參數或屬性名稱中包含 「 文字 」、 「 訊息 」，或 「 標題 」。
+- 參數或屬性名稱中包含 「 文字 」、 「 訊息 」，或 「 標題 」。
 
--   「 值 」 或"format"字串參數傳遞至 Console.Write 或 Console.WriteLine 方法的名稱。
+- 「 值 」 或"format"字串參數傳遞至 Console.Write 或 Console.WriteLine 方法的名稱。
 
- 此規則會將常值字串剖析成單字、 token 化複合字，並檢查每個字/語彙基元的拼字。 如需剖析演算法的詳細資訊，請參閱[CA1704： 識別項應該使用正確的拼字](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)。
+  此規則會將常值字串剖析成單字、 token 化複合字，並檢查每個字/語彙基元的拼字。 如需剖析演算法的詳細資訊，請參閱[CA1704： 識別項應該使用正確的拼字](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)。
 
- 預設情況下，會使用英文 (en) 版本的拼字檢查程式。
+  預設情況下，會使用英文 (en) 版本的拼字檢查程式。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
  若要修正此規則的違規情形，更正這個字的拼字，或將該字加入至自訂字典。 如需如何使用自訂字典的詳細資訊，請參閱[如何： 自訂程式碼分析字典](../code-quality/how-to-customize-the-code-analysis-dictionary.md)。

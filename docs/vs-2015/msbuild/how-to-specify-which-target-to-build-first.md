@@ -18,12 +18,12 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3978d72372f2aa9a0c57184083c67476886016aa
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f4ea97ed3650e74a10bfc5e49657f0ed3dce60ba
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49232111"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49840690"
 ---
 # <a name="how-to-specify-which-target-to-build-first"></a>如何：指定要優先建置的目標
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,11 +36,11 @@ ms.locfileid: "49232111"
   
 #### <a name="to-specify-one-initial-target"></a>指定一個初始目標  
   
--   在 `Project` 項目的 `InitialTargets` 屬性中，指定預設的目標。 例如:   
+- 在 `Project` 項目的 `InitialTargets` 屬性中，指定預設的目標。 例如:   
   
-     `<Project InitialTargets="Clean">`  
+   `<Project InitialTargets="Clean">`  
   
- 您可以在 `InitialTargets` 屬性中指定多個初始目標，方法是依序列出目標，然後使用分號來分隔每個目標。 清單中的目標將會循序執行。  
+  您可以在 `InitialTargets` 屬性中指定多個初始目標，方法是依序列出目標，然後使用分號來分隔每個目標。 清單中的目標將會循序執行。  
   
 #### <a name="to-specify-more-than-one-initial-target"></a>指定多個初始目標  
   
@@ -53,11 +53,11 @@ ms.locfileid: "49232111"
   
 #### <a name="to-specify-one-default-target"></a>指定一個預設目標  
   
--   在 `Project` 項目的 `DefaultTargets` 屬性中，指定預設的目標。 例如:   
+- 在 `Project` 項目的 `DefaultTargets` 屬性中，指定預設的目標。 例如:   
   
-     `<Project DefaultTargets="Compile">`  
+   `<Project DefaultTargets="Compile">`  
   
- 您可以在 `DefaultTargets` 屬性中指定多個預設目標，方法是依序列出目標，然後使用分號來分隔每個目標。 清單中的目標將會循序執行。  
+  您可以在 `DefaultTargets` 屬性中指定多個預設目標，方法是依序列出目標，然後使用分號來分隔每個目標。 清單中的目標將會循序執行。  
   
 #### <a name="to-specify-more-than-one-default-target"></a>指定多個預設目標  
   

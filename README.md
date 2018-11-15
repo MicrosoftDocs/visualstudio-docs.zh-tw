@@ -7,14 +7,14 @@
 
 歡迎! 此儲存機制包含工作進行中的 Visual Studio 2017 技術文件原始程式檔。 主題發佈在 [Visual Studio 文件網站](https://docs.microsoft.com/visualstudio)。
 
-https://github.com/Microsoft/vsdocs 已於 2017 年 6 月 23 日移除這個存放庫。 舊 URL 的流量會被重新導向此處。
+此存放庫已於 2017 年 6 月 23 日從 https://github.com/Microsoft/vsdocs 移動。 舊 URL 的流量會被重新導向此處。
 
-Visual Basic 和 Visual C# 的文件位於不同的存放庫，Visual Basic 文件的存放庫網址是 [http://github.com/dotnet/core-docs](http://github.com/dotnet/core-docs)，而 Visual C++ 文件的存放庫網址是 [http://github.com/MicrosoftDocs/cpp-docs](http://github.com/MicrosoftDocs/cpp-docs)。
+Visual Basic 與 Visual C# 的文件位於 [http://github.com/dotnet/core-docs](http://github.com/dotnet/core-docs) 不同的存放庫，而 Visual C++ 文件位於 [http://github.com/MicrosoftDocs/cpp-docs](http://github.com/MicrosoftDocs/cpp-docs) 的存放庫。
 
 ## <a name="contributing-to-the-documentation"></a>參與文件
 
 若要參與這份文件，請參閱[參與指南](CONTRIBUTING.md)。
-我們歡迎您的參與，協助我們改善 Visual Studio 文件。 在此儲存機制中的所有文章都使用 GitHub 特定的 Markdown。
+我們歡迎您的參與，協助我們改善 Visual Studio 文件。在此儲存機制中的所有文章都使用 GitHub 特定的 Markdown。
 
 Visual Studio 的數個功能區域都在此儲存機制有自己的資料夾，如 **debugger**  適用於偵錯主題，**ide** 適用於 Visual Studio 互動式開發環境 (IDE) 等等。 每個資料夾的 **/media** 子資料夾中都包含主題的美工檔案。 [參與指南](CONTRIBUTING.md)有詳細資訊。
 

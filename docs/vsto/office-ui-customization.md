@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: dfbb7b1a10c27793133afdfdaf0d673fac9535c8
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 48c7fe1948231f88aba8309d6d06186848d32455
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35671670"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49836759"
 ---
 # <a name="office-ui-customization"></a>Office UI 自訂
   您可以使用 Visual Studio 中的 Office 程式開發人員工具，自訂 Microsoft Office 應用程式的使用者介面 (UI)。 本主題在下列各節中描述您可以自訂的 UI 功能：  
@@ -61,13 +61,13 @@ ms.locfileid: "35671670"
   
  Visual Studio 中的 Office 開發工具提供兩種不同的方式，可自訂工作窗格：  
   
--   您可以將執行窗格加入文件層級自訂。 根據預設，執行窗格會顯示在應用程式的右側，文件的右邊。 不過，執行窗格也可以顯示在文件的左邊、上方或底部。  
+- 您可以將執行窗格加入文件層級自訂。 根據預設，執行窗格會顯示在應用程式的右側，文件的右邊。 不過，執行窗格也可以顯示在文件的左邊、上方或底部。  
   
--   您可以將自訂工作窗格加入 VSTO 增益集。 使用者可以將自訂工作窗格固定至應用程式視窗的不同側，或是他們可以將自訂工作窗格拖曳到視窗中的任何位置。  
+- 您可以將自訂工作窗格加入 VSTO 增益集。 使用者可以將自訂工作窗格固定至應用程式視窗的不同側，或是他們可以將自訂工作窗格拖曳到視窗中的任何位置。  
   
- 執行窗格和自訂工作窗格裝載各種控制項，協助使用者進行例如輸入資料的工作來提供功能。 相較於功能區群組，執行窗格和自訂工作窗格提供更大的空間，以包含文字和控制項。  
+  執行窗格和自訂工作窗格裝載各種控制項，協助使用者進行例如輸入資料的工作來提供功能。 相較於功能區群組，執行窗格和自訂工作窗格提供更大的空間，以包含文字和控制項。  
   
- 如需有關執行窗格的詳細資訊，請參閱 <<c0> [ 執行窗格概觀](../vsto/actions-pane-overview.md)。 如需有關自訂工作窗格的詳細資訊，請參閱 <<c0> [ 自訂工作窗格](../vsto/custom-task-panes.md)。  
+  如需有關執行窗格的詳細資訊，請參閱 <<c0> [ 執行窗格概觀](../vsto/actions-pane-overview.md)。 如需有關自訂工作窗格的詳細資訊，請參閱 <<c0> [ 自訂工作窗格](../vsto/custom-task-panes.md)。  
   
 ##  <a name="Ribbon"></a> 自訂功能區 UI  
  您可以自訂功能區 UI 以公開您在 Office 中加入應用程式的功能。 功能區可組織相關的命令 (以控制項的形式)，以便能輕鬆找到它們。 您可以建立自己的功能區索引標籤和群組，讓使用者存取您在方案中提供的功能。 在較舊版本的 Microsoft Office 系統中，使用功能表和工具列存取的大多數功能，現在可以使用功能區來存取。  

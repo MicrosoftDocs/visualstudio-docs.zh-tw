@@ -20,15 +20,16 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: d29d80ea45735925a500b1c0b552697644a88d52
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3f90b4487824695fe0045c06638679607e4464b3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49258748"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49917660"
 ---
 # <a name="ca1021-avoid-out-parameters"></a>CA1021：避免使用 out 參數
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|AvoidOutParameters|

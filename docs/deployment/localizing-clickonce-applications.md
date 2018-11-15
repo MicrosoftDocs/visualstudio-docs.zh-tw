@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7897869e8cc010d54c1914cbfa8ca763dd3a3bfa
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 2a4234d8f6ee9fa946f2accfd50a587e6dbd8068
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44279338"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49822101"
 ---
 # <a name="localize-clickonce-applications"></a>當地語系化 ClickOnce 應用程式
 當地語系化是讓應用程式適合特定文化特性的程序， 這個程序包括將使用者介面 (UI) 文字翻譯成特定地區的語言、使用正確的日期和貨幣格式、調整表單上控制項的大小，以及視需要將控制項左右反轉。  
@@ -69,16 +69,16 @@ ms.locfileid: "44279338"
   
  視需要下載附屬組件與視需要下載其他類型的組件有些許的不同。 如需如何啟用此案例中使用更多的資訊和程式碼範例[!INCLUDE[winsdkshort](../debugger/debug-interface-access/includes/winsdkshort_md.md)]工具[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]，請參閱[逐步解說： 依需求以 ClickOnce 部署 API 下載附屬組件](../deployment/walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api.md)。  
   
- 您也可以在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 內啟用這種案例。  另請參閱[逐步解說： 依 ClickOnce 部署 API 使用設計工具的要求下載附屬組件](/previous-versions/visualstudio/visual-studio-2012/ms366788(v=vs.110))或[逐步解說： 依需求以 ClickOnce 部署 API 下載附屬組件使用設計工具](/previous-versions/visualstudio/visual-studio-2013/ms366788(v=vs.120))。  
+ 您也可以在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 內啟用這種案例。  另請參閱 [逐步解說：使用設計工具依 ClickOnce 部署 API 的要求下載附屬組件](/previous-versions/visualstudio/visual-studio-2012/ms366788(v=vs.110)) 或 [逐步解說：使用設計工具依 ClickOnce 部署 API 的要求下載附屬組件](/previous-versions/visualstudio/visual-studio-2013/ms366788(v=vs.120))。  
   
 ## <a name="testing-localized-clickonce-applications-before-deployment"></a>當地語系化的 ClickOnce 應用程式部署之前測試  
- 只有當 Windows Form 應用程式之主執行緒的 <xref:System.Threading.Thread.CurrentUICulture%2A> 屬性設定為附屬組件的文化特性時，才會將附屬組件用於此應用程式。 當地市場的客戶可能已經在執行文化特性設定為適當預設值的當地語系化 Windows 版本。  
+ 只有當 Windows Forms 應用程式之主執行緒的 <xref:System.Threading.Thread.CurrentUICulture%2A> 屬性設定為附屬組件的文化特性時，才會將附屬組件用於此應用程式。 當地市場的客戶可能已經在執行文化特性設定為適當預設值的當地語系化 Windows 版本。  
   
  在將應用程式提供給客戶使用之前，您有三種選擇可測試當地語系化的部署：  
   
--   您可以在適合的當地語系化 Windows 版本上執行 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式。  
+- 您可以在適合的當地語系化 Windows 版本上執行 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式。  
   
--   您可以透過程式設計方式在應用程式內設定 <xref:System.Threading.Thread.CurrentUICulture%2A> 屬性  (這個屬性必須在呼叫 <xref:System.Windows.Forms.Application.Run%2A> 方法之前設定)。  
+- 您可以透過程式設計方式在應用程式內設定 <xref:System.Threading.Thread.CurrentUICulture%2A> 屬性  (這個屬性必須在呼叫 <xref:System.Windows.Forms.Application.Run%2A> 方法之前設定)。  
   
 ## <a name="see-also"></a>另請參閱  
  [\<組件識別 > 項目](../deployment/assemblyidentity-element-clickonce-deployment.md)   

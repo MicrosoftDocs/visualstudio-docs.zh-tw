@@ -9,12 +9,12 @@ description: 了解如何充分利用 Visual Studio 訂用帳戶
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 409b5a98990f3dedc8ed321f085615c1d542ed7f
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 84e3f62bfb0939bdb30f562629c84a092cd02f4b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283427"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49822159"
 ---
 # <a name="managing-subscriptions"></a>管理訂用帳戶
 
@@ -72,14 +72,14 @@ Visual Studio 訂用帳戶入口網站可將您所有 Visual Studio 訂閱與方
 
 使用中的訂閱會醒目顯示在「權益」頁面的藍色橫幅中， 以及頁面右上方。
 > [!div class="mx-imgBorder"]
-> ![使用中的訂閱](_img\manage-vs-subscriptions\current-subscription-cropped.png)
+> ![使用中的訂閱](_img/manage-vs-subscriptions/current-subscription-cropped.png)
 
 ### <a name="to-switch-between-subscriptions-you-can"></a>若要在訂閱之間切換，您可以：
 
 - 按一下右上方的下拉式清單，然後從清單中選擇訂閱
 - 按一下 [訂閱] 索引標籤，然後按一下想要的訂閱
-> [!div class="mx-imgBorder"]
-> ![切換訂閱](_img\manage-vs-subscriptions\change-subscription-resized.png)
+  > [!div class="mx-imgBorder"]
+  > ![切換訂閱](_img/manage-vs-subscriptions/change-subscription-resized.png)
 
 ### <a name="if-your-subscription-is-not-visible"></a>如果未顯示您的訂閱...
 
@@ -124,8 +124,8 @@ Visual Studio 訂用帳戶入口網站可將您所有 Visual Studio 訂閱與方
 4. 完成變更時，請按一下 [儲存]。
 5. 按一下瀏覽器的 [返回] 按鈕，返回「權益」頁面。
 
-    > [!div class="mx-imgBorder"]
-    > ![編輯設定檔資訊](_img\manage-vs-subscriptions\edit-profile-resized.png)
+   > [!div class="mx-imgBorder"]
+   > ![編輯設定檔資訊](_img/manage-vs-subscriptions/edit-profile-resized.png)
 
 ### <a name="linking-my-subscription-to-existing-azure-devops-services-or-azure-subscriptions"></a>將訂用帳戶連結至現有的 Azure DevOps Services 或 Azure 訂用帳戶
 
@@ -140,8 +140,8 @@ Visual Studio 訂用帳戶入口網站可將您所有 Visual Studio 訂閱與方
 3. 在 [相關連結] 中，選擇 [新增其他帳戶]。
 4. 輸入您的公司帳戶/學校帳戶電子郵件地址，然後按一下 [新增]。
 
-    > [!div class="mx-imgBorder"]
-    > ![其他帳戶](_img\manage-vs-subscriptions\alternate-account-resized.png)
+   > [!div class="mx-imgBorder"]
+   > ![其他帳戶](_img/manage-vs-subscriptions/alternate-account-resized.png)
 
 新增其他帳戶之後，您可以按一下 [訂閱] 索引標籤，然後選擇 [相關連結] 區段中的適當選項，隨時更新帳戶或將其移除。
 

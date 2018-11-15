@@ -2,7 +2,7 @@
 title: 將 Node.js 應用程式發佈到 Linux App Service
 description: 您可以將 Visual Studio 中建立的 Node.js 應用程式發佈到 Azure 上的 Linux App Service
 ms.custom: ''
-ms.date: 06/10/2018
+ms.date: 11/1/2018
 ms.technology: vs-nodejs
 ms.topic: tutorial
 ms.devlang: javascript
@@ -13,12 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: cf96610abcd0cc18bdaab6177980ca04e0232642
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: 8af99919fe80f1f5e2776e381d24aa8d37bad36d
+ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37924768"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50750757"
 ---
 # <a name="publish-a-nodejs-application-to-azure-linux-app-service"></a>將 Node.js 應用程式發佈到 Azure (Linux App Service)
 
@@ -42,15 +42,19 @@ Linux App Service 會部署 Linux Docker 容器來執行 Node.js 應用程式 (�
 
 1. 使用 [檔案] > [新增專案] 對話方塊建立新的 TypeScript Express 應用程式。
 
+1. 在 [TypeScript] 節點下方，選取 [基本 Node.js Express 4 應用程式]。
+
     ![建立新的 TypeScript Express 應用程式](../javascript/media/azure-ts-express-app.png)
 
-2. 按 **F5** 來建置和執行應用程式，並確定一切都如預期般運作。
+1. 按一下 [確定] 在 Visual Studio 中建立專案。
 
-3. 選取 [檔案] > [新增至原始檔控制] 來建立專案的本機 Git 存放庫。
+1. 按 **F5** 來建置和執行應用程式，並確定一切都如預期般運作。
+
+1. 選取 [檔案] > [新增至原始檔控制] 來建立專案的本機 Git 存放庫。
 
     此時，使用 Express 架構且以 TypeScript 撰寫的 Node.js 應用程式會運作，並簽入至本機原始檔控制。
 
-4. 視需要編輯專案，再繼續下一個步驟。
+1. 視需要編輯專案，再繼續下一個步驟。
 
 ## <a name="push-code-from-visual-studio-to-github"></a>將來自 Visual Studio 的程式碼推送至 GitHub
 

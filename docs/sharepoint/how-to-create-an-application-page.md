@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: eefbb12584cdff2bb32b9d4406c916969ec435c4
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 9f390ddf14925b43f1aa1d9e79db05e2aa64f234
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118595"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51296199"
 ---
 # <a name="how-to-create-an-application-page"></a>如何： 建立應用程式頁面
   您可以為一個或多個 SharePoint 網站建立 ASP.NET 網頁。 在 SharePoint 中，這些頁面會呼叫應用程式頁面。 不同站台 頁面中，於應用程式頁面會包含後置頁面執行的程式碼。 如需詳細資訊，請參閱 <<c0> [ 建立適用於 SharePoint 的應用程式頁面](../sharepoint/creating-application-pages-for-sharepoint.md)。  
@@ -46,7 +46,7 @@ ms.locfileid: "37118595"
   
      Visual Studio 會將數個資料夾和檔案加入至您的專案。 如需有關這些檔案的詳細資訊，請參閱 <<c0> [ 建立適用於 SharePoint 的應用程式頁面](../sharepoint/creating-application-pages-for-sharepoint.md)。  
   
-     在 **來源**Visual Web Developer 設計工具中，ASP.NET 網頁檔案的檢視會出現。 您可以透過加入控制項，從設計頁面**工具箱**並將它們放置在內容預留位置上。 如需詳細資訊，請參閱 <<c0> [ 來源檢視，網頁設計師](http://msdn.microsoft.com/en-us/5911396b-fe51-4150-9ff1-b085f812862f)。  
+     在 **來源**Visual Web Developer 設計工具中，ASP.NET 網頁檔案的檢視會出現。 您可以透過加入控制項，從設計頁面**工具箱**並將它們放置在內容預留位置上。 如需詳細資訊，請參閱 <<c0> [ 來源檢視，網頁設計師](/previous-versions/aspnet/ms178154\(v\=vs.100\))。  
   
 7.  若要處理控制項事件，請將程式碼加入至應用程式頁面的程式碼檔案。  
   

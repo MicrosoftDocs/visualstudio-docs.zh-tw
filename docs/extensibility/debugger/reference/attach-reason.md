@@ -1,5 +1,5 @@
 ---
-title: ATTACH_REASON |Microsoft 文件
+title: ATTACH_REASON |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2dc7736f9210ef15cec8cece45d7899cc116a334
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6e2e103a345a3a064afb96cc7861bd3394da3a0f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31099518"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49861614"
 ---
 # <a name="attachreason"></a>ATTACH_REASON
 指定偵錯引擎 (DE) 附加至程式節點的原因。  
@@ -55,7 +55,7 @@ public enum enum_ATTACH_REASON {
  由於使用者要求附加。  
   
 ## <a name="remarks"></a>備註  
- 這些值當做參數[附加](../../../extensibility/debugger/reference/idebugengine2-attach.md)和[附加](../../../extensibility/debugger/reference/idebugprogramex2-attach.md)方法。  
+ 這些值用做為參數[Attach](../../../extensibility/debugger/reference/idebugengine2-attach.md)並[附加](../../../extensibility/debugger/reference/idebugprogramex2-attach.md)方法。  
   
 ## <a name="requirements"></a>需求  
  標頭： msdbg.h  

@@ -15,12 +15,12 @@ ms.assetid: 6b151891-c06d-40b1-9867-42298caa8492
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b089794cc9135d8658a47d61d3d40c3feef7451a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1ab7e4e0cf46d90a437f4239798c0ec8a0a28e74
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49227002"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862758"
 ---
 # <a name="getting-started-with-language-service-and-editor-extensions"></a>開始使用語言服務及編輯器延伸模組
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,17 +48,17 @@ ms.locfileid: "49227002"
   
  以下是一些基本的編輯器延伸模組類型：  
   
--   邊界和捲軸  
+- 邊界和捲軸  
   
--   Tags  
+- Tags  
   
--   裝飾  
+- 裝飾  
   
--   選項  
+- 選項  
   
--   IntelliSense  
+- IntelliSense  
   
- 如需有關編輯器擴充點的詳細資訊，請參閱[語言服務及編輯器擴充點](../extensibility/language-service-and-editor-extension-points.md)。  
+  如需有關編輯器擴充點的詳細資訊，請參閱[語言服務及編輯器擴充點](../extensibility/language-service-and-editor-extension-points.md)。  
   
 ## <a name="deploying-editor-extensions"></a>部署的編輯器延伸模組  
  在 Visual Studio 中，您可以部署編輯器延伸模組加入名為 source.extension.vsixmanifest 加入方案中，建置方案時，中繼資料檔案，然後再在 Visual studio 的已知的資料夾中新增的二進位檔和資訊清單的副本。 資訊清單檔案會定義有關擴充功能 （例如名稱、 作者、 版本和類型的內容） 的基本事項。 如需 VSIX 資訊清單檔案，以及如何部署擴充功能的詳細資訊，請參閱[傳送 Visual Studio 擴充功能](../extensibility/shipping-visual-studio-extensions.md)。  

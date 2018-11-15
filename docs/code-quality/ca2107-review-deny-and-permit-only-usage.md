@@ -16,14 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 153077e7231aba485b6f8e08efcf5e6d5752b89a
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 4324805c90c3a0f1b8dbfddcdfe277c5c8a2fd05
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859324"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49868036"
 ---
 # <a name="ca2107-review-deny-and-permit-only-usage"></a>CA2107：必須檢視 Deny 和 Permit Only 的使用方式
+
 |||
 |-|-|
 |TypeName|ReviewDenyAndPermitOnlyUsage|

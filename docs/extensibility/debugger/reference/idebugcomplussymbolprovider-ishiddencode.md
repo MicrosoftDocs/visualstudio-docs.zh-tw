@@ -1,5 +1,5 @@
 ---
-title: IDebugComPlusSymbolProvider::IsHiddenCode |Microsoft 文件
+title: IDebugComPlusSymbolProvider::IsHiddenCode |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,15 +13,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d7a1a559b6ed3b9d92299fe9d4c2cc13c11319e0
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 73c1242a21dbbcc52a81e5515c19c6fd8084da74
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31106509"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49842985"
 ---
 # <a name="idebugcomplussymbolproviderishiddencode"></a>IDebugComPlusSymbolProvider::IsHiddenCode
-決定是否要隱藏的程式碼在指定的偵錯工具的位址。  
+決定是否要隱藏在指定的偵錯工具通訊的程式碼。  
   
 ## <a name="syntax"></a>語法  
   
@@ -39,13 +39,13 @@ int IsHiddenCode(
   
 #### <a name="parameters"></a>參數  
  `pAddress`  
- [in]由偵錯位址[IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)介面。  
+ [in]所表示的偵錯位址[IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)介面。  
   
 ## <a name="return-value"></a>傳回值  
- 如果程式碼已隱藏，就會傳回`S_OK`; 否則傳回`S_FALSE`。  
+ 如果隱藏的程式碼，會傳回`S_OK`; 否則傳回`S_FALSE`。  
   
 ## <a name="example"></a>範例  
- 下列範例示範如何實作這個方法來**CDebugSymbolProvider**公開物件[IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)介面。  
+ 下列範例示範如何實作這個方法，如**CDebugSymbolProvider**公開 （expose） 的物件[IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)介面。  
   
 ```cpp  
 HRESULT CDebugSymbolProvider::IsHiddenCode(  

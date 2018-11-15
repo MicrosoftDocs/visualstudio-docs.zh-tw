@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 75e1628f461c813e07634838f57c0335bdf6a1b5
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 4aa8aa820330264357341948a468d58d98c86056
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37058720"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49853972"
 ---
 # <a name="error-debugging-isn39t-possible-because-a-kernel-debugger-is-enabled-on-the-system"></a>錯誤： 偵錯不&#39;t，可能因為在系統上啟用核心偵錯
 當您對 Managed 程式碼進行偵錯時，可能會收到下列錯誤訊息：  
@@ -34,27 +34,27 @@ Debugging isn't possible because a kernel debugger is enabled on the system
   
  當您嘗試對 Managed 程式碼進行偵錯時，這個訊息就會出現：  
   
--   在以偵錯模式啟動的 [!INCLUDE[win7](../debugger/includes/win7_md.md)] 或 [!INCLUDE[wiprlhext](../debugger/includes/wiprlhext_md.md)] 系統上。  
+- 在以偵錯模式啟動的 [!INCLUDE[win7](../debugger/includes/win7_md.md)] 或 [!INCLUDE[wiprlhext](../debugger/includes/wiprlhext_md.md)] 系統上。  
   
--   使用 CLR 2.0、3.0 或 3.5 版的應用程式。  
+- 使用 CLR 2.0、3.0 或 3.5 版的應用程式。  
   
 ## <a name="solution"></a>方案  
   
 #### <a name="to-fix-this-problem"></a>若要修復這個問題  
   
--   將您的應用程式升級為使用 CLR 4.0 或 4.5 版  
+- 將您的應用程式升級為使用 CLR 4.0 或 4.5 版  
   
-     -或-  
+   -或-  
   
--   停用核心偵錯而以 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 進行偵錯。  
+- 停用核心偵錯而以 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 進行偵錯。  
   
-     -或-  
+   -或-  
   
--   使用核心偵錯工具進行偵錯，不要使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。  
+- 使用核心偵錯工具進行偵錯，不要使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。  
   
-     -或-  
+   -或-  
   
--   在核心偵錯工具中，停用使用者模式例外狀況。  
+- 在核心偵錯工具中，停用使用者模式例外狀況。  
   
 #### <a name="to-disable-kernel-debugging-in-the-current-session"></a>若要在目前工作階段中停用核心偵錯  
   

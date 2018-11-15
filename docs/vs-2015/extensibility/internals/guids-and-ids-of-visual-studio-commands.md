@@ -19,12 +19,12 @@ ms.assetid: 2ea4bee2-0259-4675-8e65-2023b312b516
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 93efc7bfec5f4ba3e545dec7fff57f73e49260d2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4aa34194933a63206133685b52def81b784b6154
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49302441"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219824"
 ---
 # <a name="guids-and-ids-of-visual-studio-commands"></a>Visual Studio 命令的 GUID 和識別碼
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -38,30 +38,30 @@ ms.locfileid: "49302441"
   
 #### <a name="to-locate-a-command-definition"></a>若要找出命令定義  
   
-1.  在 Visual Studio 中，開啟下列檔案中的*Visual Studio SDK 安裝路徑*\VisualStudioIntegration\Common\Inc\ 資料夾： SharedCmdDef.vsct、 ShellCmdDef.vsct、 VsDbgCmdUsed.vsct、 Venusmenu.vsct。  
+1. 在 Visual Studio 中，開啟下列檔案中的*Visual Studio SDK 安裝路徑*\VisualStudioIntegration\Common\Inc\ 資料夾： SharedCmdDef.vsct、 ShellCmdDef.vsct、 VsDbgCmdUsed.vsct、 Venusmenu.vsct。  
   
-     大部分的 Visual Studio 命令 SharedCmdDef.vsct 和 ShellCmdDef.vsct 中定義。 VsDbgCmdUsed.vsct 定義命令的相關偵錯工具，而 Venusmenu.vsct 定義專屬於 Web 開發的命令。  
+    大部分的 Visual Studio 命令 SharedCmdDef.vsct 和 ShellCmdDef.vsct 中定義。 VsDbgCmdUsed.vsct 定義命令的相關偵錯工具，而 Venusmenu.vsct 定義專屬於 Web 開發的命令。  
   
-2.  如果命令的功能表項目，請注意功能表項目的的確切文字。 如果工具列上的按鈕命令，請注意當您暫停它時所顯示的工具提示文字。  
+2. 如果命令的功能表項目，請注意功能表項目的的確切文字。 如果工具列上的按鈕命令，請注意當您暫停它時所顯示的工具提示文字。  
   
-3.  按下 CTRL + F 來開啟**尋找** 對話方塊。  
+3. 按下 CTRL + F 來開啟**尋找** 對話方塊。  
   
-4.  在 **尋找目標**方塊中，輸入步驟 2 記下的文字。  
+4. 在 **尋找目標**方塊中，輸入步驟 2 記下的文字。  
   
-5.  確認**所有開啟的文件**會顯示在**查看** 方塊中。  
+5. 確認**所有開啟的文件**會顯示在**查看** 方塊中。  
   
-6.  按一下 **尋找下一步**按鈕，直到中選取的文字`<Strings>`一節[按鈕項目](../../extensibility/button-element.md)。  
+6. 按一下 **尋找下一步**按鈕，直到中選取的文字`<Strings>`一節[按鈕項目](../../extensibility/button-element.md)。  
   
-     `<Button>`命令中所顯示的項目是命令定義。  
+    `<Button>`命令中所顯示的項目是命令定義。  
   
- 當您發現命令定義時，您可以藉由建立另一個功能表或工具列上放置一份命令[CommandPlacement 元素](../../extensibility/commandplacement-element.md)具有相同`guid`和`id`做為命令的值。 如需詳細資訊，請參閱 <<c0> [ 建立可重複使用群組的按鈕](../../extensibility/creating-reusable-groups-of-buttons.md)。  
+   當您發現命令定義時，您可以藉由建立另一個功能表或工具列上放置一份命令[CommandPlacement 元素](../../extensibility/commandplacement-element.md)具有相同`guid`和`id`做為命令的值。 如需詳細資訊，請參閱 <<c0> [ 建立可重複使用群組的按鈕](../../extensibility/creating-reusable-groups-of-buttons.md)。  
   
 ### <a name="special-cases"></a>特殊案例  
  在下列情況中，功能表文字或工具提示文字可能不完全相同功能的命令定義。  
   
 -   功能表項目包含未加上底線的字元，例如**列印**命令**檔案**功能表上，在其中 P 加上底線。  
   
-     所顯示的前面加上 '&' 字元功能表項目名稱中的字元加底線。 不過，.vsct 檔案以 XML 撰寫，會使用 '&' 字元來表示特殊字元，且需要顯示連字號，必須拼出為&amp;'。 因此，在.vsct 檔案中， **P**rint 命令會顯示為 '&amp;列印 '。  
+     所顯示的前面加上 '&' 字元功能表項目名稱中的字元加底線。 不過，.vsct 檔案以 XML 撰寫，會使用 '&' 字元來表示特殊字元，且需要顯示連字號，必須拼出為&amp;'。 因此，在.vsct 檔案中，**列印**命令會顯示為 '&amp;列印 '。  
   
 -   命令，例如具有動態的文字**儲存***目前的檔名*，和動態產生功能表項目，例如項目**最近使用的檔案**清單。  
   

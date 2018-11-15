@@ -19,15 +19,16 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: f8aad4d616b3463afa44c8c776a06e6ca9159162
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0ea2ca64009071538848c71f5bf9a825250cb82e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49222049"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49900081"
 ---
 # <a name="ca1821-remove-empty-finalizers"></a>CA1821：必須移除空的完成項
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|RemoveEmptyFinalizers|

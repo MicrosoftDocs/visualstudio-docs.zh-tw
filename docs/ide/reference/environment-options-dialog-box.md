@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 959be2a2f80f215aa3d72a36b8b989e6fa219c3d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 45a7cef09937181fbf6c721b8c8eca73b6351742
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31947933"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49930540"
 ---
 # <a name="environment-options-dialog-box"></a>環境選項對話方塊
 您可以使用 [選項] 對話方塊之 [環境] 資料夾內的頁面，設定整合式開發環境 (IDE) 會如何顯示及作用某些項目。 您可以在功能表列上依序選擇 [工具] 和 [選項]，然後選取 [環境]，以存取 [環境] 頁面。
@@ -28,7 +28,7 @@ ms.locfileid: "31947933"
 
 
 |如需各項作業的詳細資訊，|請參閱|
-|----------------------------------|---------|
+| - |---------|
 |自訂視窗、功能表和其他 IDE 項目的外觀和行為。|[選項對話方塊、環境、一般](../../ide/reference/general-environment-options-dialog-box.md)|
 |變更檔案自動儲存和還原的設定值。|[選項對話方塊、環境、自動回復](../../ide/reference/autorecover-environment-options-dialog-box.md)|
 |建立包括其他檔案行為的文件顯示和管理設定。|[選項對話方塊、環境、文件](../../ide/reference/documents-environment-options-dialog-box.md)|

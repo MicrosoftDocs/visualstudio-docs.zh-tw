@@ -16,12 +16,12 @@ ms.assetid: 0da81b98-f5e3-40d3-ba9a-94551378d0b4
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: cacd0c1cd2a1e36e7c160902c93c6bcc6bfc0cdd
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c12ee9593bb7baadfbaf29ebade142f142e8f40a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49181203"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49893872"
 ---
 # <a name="vsix-extension-schema-20-reference"></a>VSIX 延伸模組結構描述 2.0 參考
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -166,31 +166,31 @@ VSIX 部署資訊清單檔描述 VSIX 封裝的內容。 檔案格式是結構�
 ### <a name="assets-element"></a>資產的項目  
  這個元素包含一份`<Asset>`這個封裝所呈現的標記每個擴充功能或內容的項目。  
   
--   `<Asset>` -此元素包含下列屬性和項目：  
+- `<Asset>` -此元素包含下列屬性和項目：  
   
-    -   `Type` – 這是延伸模組或表示由這個項目內容的型別。 每個`<Asset>`項目必須具有單一`Type`，但多個`<Asset>`項目可能會有相同`Type`。 根據命名空間慣例都應為完整格式名稱，表示這個屬性。 已知的類型包括：  
+  - `Type` – 這是延伸模組或表示由這個項目內容的型別。 每個`<Asset>`項目必須具有單一`Type`，但多個`<Asset>`項目可能會有相同`Type`。 根據命名空間慣例都應為完整格式名稱，表示這個屬性。 已知的類型包括：  
   
-        1.  Microsoft.VisualStudio.VsPackage  
+    1. Microsoft.VisualStudio.VsPackage  
   
-        2.  Microsoft.VisualStudio.MefComponent  
+    2. Microsoft.VisualStudio.MefComponent  
   
-        3.  Microsoft.VisualStudio.ToolboxControl  
+    3. Microsoft.VisualStudio.ToolboxControl  
   
-        4.  Microsoft.VisualStudio.Samples  
+    4. Microsoft.VisualStudio.Samples  
   
-        5.  Microsoft.VisualStudio.ProjectTemplate  
+    5. Microsoft.VisualStudio.ProjectTemplate  
   
-        6.  Microsoft.VisualStudio.ItemTemplate  
+    6. Microsoft.VisualStudio.ItemTemplate  
   
-        7.  Microsoft.VisualStudio.Assembly  
+    7. Microsoft.VisualStudio.Assembly  
   
-         您可以建立自己的型別，並為它們提供唯一的名稱。 在 Visual Studio 內的執行階段，您的程式碼可以列舉並透過擴充管理員 API 來存取這些自訂的類型。  
+       您可以建立自己的型別，並為它們提供唯一的名稱。 在 Visual Studio 內的執行階段，您的程式碼可以列舉並透過擴充管理員 API 來存取這些自訂的類型。  
   
-    -   路徑的檔案或資料夾包含資產之套件內的相對路徑。  
+  - 路徑的檔案或資料夾包含資產之套件內的相對路徑。  
   
-    -   `AnyAttribute*` – 屬性會公開在做為名稱 / 值組字典的執行階段開放集合。  
+  - `AnyAttribute*` – 屬性會公開在做為名稱 / 值組字典的執行階段開放集合。  
   
-         `<AnyElement>*` – 任何結構化的內容之間不允許`<Asset>`開頭和結尾標記。 所有項目都會公開為一份 XmlElement 物件。 VSIX 擴充功能可以定義資訊清單檔中的結構化型別特定中繼資料，並列舉它們在執行階段。  
+     `<AnyElement>*` – 任何結構化的內容之間不允許`<Asset>`開頭和結尾標記。 所有項目都會公開為一份 XmlElement 物件。 VSIX 擴充功能可以定義資訊清單檔中的結構化型別特定中繼資料，並列舉它們在執行階段。  
   
 ### <a name="sample-manifest"></a>範例資訊清單  
   

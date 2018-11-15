@@ -9,19 +9,19 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 36cc776f18990e7cc97b1583267c9f9f9b9c95eb
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 89723d09fdd6362cdc301f1fa551b7c062639df0
+ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381142"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50967320"
 ---
 # <a name="get-started-with-domain-specific-languages"></a>特定領域語言的使用者入門
 
 本主題說明在定義和使用適用於 Visual Studio 中使用 Modeling SDK 建立特定領域語言 (DSL) 的基本概念。
 
 > [!NOTE]
-> 在 Visual Studio 2017 中，文字範本轉換 SDK 和 Visual Studio Modeling SDK 會自動安裝時安裝 Visual Studio 的特定功能。 如需詳細資訊，請參閱 <<c0> [ 此部落格文章](https://blogs.msdn.microsoft.com/visualstudioalm/2016/12/12/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/)。
+> 在 Visual Studio 2017 中，文字範本轉換 SDK 和 Visual Studio Modeling SDK 會自動安裝時安裝 Visual Studio 的特定功能。 如需詳細資訊，請參閱 <<c0> [ 此部落格文章](https://blogs.msdn.microsoft.com/devops/2016/12/12/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/)。
 
 如果您不熟悉 dsl，建議您逐步**DSL 工具實驗室**，您可以找到此站台中： [Visualizaton and Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=186128)
 
@@ -43,11 +43,12 @@ ms.locfileid: "39381142"
 
 若要定義 DSL，您必須已安裝下列元件：
 
-|||
+
+| | |
 |-|-|
-|Visual Studio|[http://go.microsoft.com/fwlink/?LinkId=185579](http://go.microsoft.com/fwlink/?LinkId=185579)|
-|[!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185580](http://go.microsoft.com/fwlink/?LinkId=185580)|
-|Modeling SDK for Visual Studio||
+| Visual Studio | [http://go.microsoft.com/fwlink/?LinkId=185579](http://go.microsoft.com/fwlink/?LinkId=185579) |
+| [!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)] | [http://go.microsoft.com/fwlink/?LinkId=185580](http://go.microsoft.com/fwlink/?LinkId=185580) |
+| Modeling SDK for Visual Studio | |
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
@@ -111,7 +112,7 @@ ms.locfileid: "39381142"
 1.  按一下 [**轉換所有範本**中**方案總管] 中**工具列。 這樣會重新產生大部分的 DslDefinition.dsl 中的原始程式碼。
 
     > [!NOTE]
-    > 每當您變更*DslDefinition.dsl*，您必須按一下**轉換所有範本**重新建置方案之前。 您可以自動化此步驟。 如需詳細資訊，請參閱 <<c0> [ 如何自動執行轉換的所有範本](http://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a)。
+    > 每當您變更*DslDefinition.dsl*，您必須按一下**轉換所有範本**重新建置方案之前。 您可以自動化此步驟。 如需詳細資訊，請參閱 <<c0> [ 如何自動執行轉換的所有範本](/previous-versions/visualstudio/visual-studio-2012/ff521399\(v\=vs.110\))。
 
 2.  按 **F5**，或在 [偵錯]  功能表上，按一下 [開始偵錯] 。
 
@@ -143,7 +144,7 @@ ms.locfileid: "39381142"
 
 ### <a name="the-content-of-a-model"></a>模型的內容
 
-DSL 的執行個體檔案的內容會呼叫*模型*。 模型包含*模型 * * 項目*並*連結*項目之間。 DSL 定義中指定的模型項目類型，可以存在於模型中的連結。 例如，在最小語言範本所建立的 DSL 中，沒有一種類型的模型項目和一種類型的連結。
+DSL 的執行個體檔案的內容會呼叫*模型*。 模型包含*模型*<em>項目</em>並*連結*項目之間。 DSL 定義中指定的模型項目類型，可以存在於模型中的連結。 例如，在最小語言範本所建立的 DSL 中，沒有一種類型的模型項目和一種類型的連結。
 
 DSL 定義中可以指定在模型圖上的顯示方式。 您可以選擇各種圖案和接點的樣式。 您可以指定某些圖形出現在其他圖形。
 
@@ -246,39 +247,39 @@ DSL 定義中可以指定在模型圖上的顯示方式。 您可以選擇各種
 
 ##### <a name="to-add-properties-and-display-them"></a>若要加入屬性，並加以顯示
 
-1.  將屬性加入。
+1. 將屬性加入。
 
-    1.  在 DSL 定義圖表中，以滑鼠右鍵按一下**Person**網域類別，指向**新增**，然後按一下**網域屬性**。
+   1.  在 DSL 定義圖表中，以滑鼠右鍵按一下**Person**網域類別，指向**新增**，然後按一下**網域屬性**。
 
-    2.  輸入一份新的屬性名稱，例如**出生**並**死亡**。 按下**Enter**之後每一個。
+   2.  輸入一份新的屬性名稱，例如**出生**並**死亡**。 按下**Enter**之後每一個。
 
-2.  新增會在圖形中顯示的屬性的裝飾項目。
+2. 新增會在圖形中顯示的屬性的裝飾項目。
 
-    1.  請遵循從 Person 網域類別延伸到圖表的另一端的灰線。 這是圖表項目對應。 它會連結到 shape 類別的網域類別。
+   1.  請遵循從 Person 網域類別延伸到圖表的另一端的灰線。 這是圖表項目對應。 它會連結到 shape 類別的網域類別。
 
-    2.  此圖形類別上按一下滑鼠右鍵，指向**新增**，然後按一下**文字裝飾項目**。
+   2.  此圖形類別上按一下滑鼠右鍵，指向**新增**，然後按一下**文字裝飾項目**。
 
-    3.  加入兩個的裝飾項目名稱，例如**BirthDecorator**並**DeathDecorator**。
+   3.  加入兩個的裝飾項目名稱，例如**BirthDecorator**並**DeathDecorator**。
 
-    4.  選取每個新的裝飾項目，然後在 [屬性] 視窗中，將**位置**欄位。 這會決定會在圖形上顯示網域屬性值。 例如，設定**InnerBottomLeft**並**InnerBottomRight**。
+   4.  選取每個新的裝飾項目，然後在 [屬性] 視窗中，將**位置**欄位。 這會決定會在圖形上顯示網域屬性值。 例如，設定**InnerBottomLeft**並**InnerBottomRight**。
 
-         ![區間圖案定義](../modeling/media/familyt_compartment.png)
+        ![區間圖案定義](../modeling/media/familyt_compartment.png)
 
-3.  將裝飾項目對應到屬性。
+3. 將裝飾項目對應到屬性。
 
-    1.  開啟 [DSL 詳細資料] 視窗。 這通常是在 [輸出] 視窗旁邊的索引標籤。 如果您看，在**檢視**功能表上，指向**其他 Windows**，然後按一下**DSL 詳細資料**。
+   1.  開啟 [DSL 詳細資料] 視窗。 這通常是在 [輸出] 視窗旁邊的索引標籤。 如果您看，在**檢視**功能表上，指向**其他 Windows**，然後按一下**DSL 詳細資料**。
 
-    2.  在 DSL 定義圖表中，按一下 連接的線條**人員**圖形類別的網域類別。
+   2.  在 DSL 定義圖表中，按一下 連接的線條**人員**圖形類別的網域類別。
 
-    3.  在  **DSL 詳細資料**上**裝飾項目對應**索引標籤上，按一下 未對應的裝飾項目 核取方塊。 在  **Display 屬性**，選取您要它對應的網域屬性。 例如，對應**BirthDecorator**要**出生**。
+   3.  在  **DSL 詳細資料**上**裝飾項目對應**索引標籤上，按一下 未對應的裝飾項目 核取方塊。 在  **Display 屬性**，選取您要它對應的網域屬性。 例如，對應**BirthDecorator**要**出生**。
 
-4.  儲存 DSL 中，按一下 轉換所有範本，然後按 F5。
+4. 儲存 DSL 中，按一下 轉換所有範本，然後按 F5。
 
-5.  在範例模型圖中，確認，您現在可以按一下您所選擇的位置，並在其輸入值。 此外，當您選取**人員**圖形中，[屬性] 視窗會顯示生日及死亡的新屬性。
+5. 在範例模型圖中，確認，您現在可以按一下您所選擇的位置，並在其輸入值。 此外，當您選取**人員**圖形中，[屬性] 視窗會顯示生日及死亡的新屬性。
 
-6.  在.tt 檔案中，您可以加入會取得每個人的內容的程式碼。
+6. 在.tt 檔案中，您可以加入會取得每個人的內容的程式碼。
 
- ![家譜圖表、工具箱和總管](../modeling/media/familyt_instance.png)
+   ![家譜圖表、工具箱和總管](../modeling/media/familyt_instance.png)
 
 ### <a name="define-new-classes"></a>定義新的類別
  您可以將網域類別和關聯性加入模型。 例如，您可以建立新的類別來代表鄉鎮，以及新的關聯性，來代表人員存留現身。

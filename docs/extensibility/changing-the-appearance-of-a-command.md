@@ -15,25 +15,25 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d3c30b665a27f4e77d21744582a23555fdb899c9
-ms.sourcegitcommit: 95aedf723c6be5272c3c5a2911cb2bdec50e2148
+ms.openlocfilehash: 61ba39bc8a312fb06499bed7ca94e33dc5e7153e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47228769"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49825982"
 ---
 # <a name="change-the-appearance-of-a-command"></a>變更命令的外觀
 您可以變更命令的外觀，至您的使用者提供意見反應。 比方說，您可能會想看起來不同，無法使用時的命令。 您可以讓命令，可以或無法使用，隱藏或顯示，或核取或取消核取功能表上。  
   
  若要變更命令的外觀，執行下列其中一個動作：  
   
--   命令表檔案中的命令定義中指定適當的旗標。  
+- 命令表檔案中的命令定義中指定適當的旗標。  
   
--   使用<xref:Microsoft.VisualStudio.Shell.OleMenuCommandService>服務。  
+- 使用<xref:Microsoft.VisualStudio.Shell.OleMenuCommandService>服務。  
   
--   實作<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>介面，並修改原始的命令物件。  
+- 實作<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>介面，並修改原始的命令物件。  
   
- 下列步驟顯示如何尋找和使用 Managed Package Framework (MPF) 來更新命令的外觀。  
+  下列步驟顯示如何尋找和使用 Managed Package Framework (MPF) 來更新命令的外觀。  
   
 ### <a name="to-change-the-appearance-of-a-menu-command"></a>若要變更功能表命令的外觀  
   

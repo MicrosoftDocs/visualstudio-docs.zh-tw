@@ -9,12 +9,12 @@ ms.author: ghogen
 manager: douge
 ms.workload:
 - azure
-ms.openlocfilehash: 079ae6affd5c495136d97a00eae2ddccfa2c9066
-ms.sourcegitcommit: e680e8ac675f003ebcc8f8c86e27f54ff38da662
+ms.openlocfilehash: 8cf4192ce0f925624dbbe890381d3557f2a27223
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49356778"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942929"
 ---
 # <a name="get-started-with-visual-studio-kubernetes-tools"></a>開始使用 Visual Studio 的 Kubernetes 工具
 
@@ -90,21 +90,21 @@ Visual Studio Kubernetes 工具可協助簡化目標 Kubernetes 的容器化應�
 
    ![螢幕擷取畫面的發行功能表項目](media/k8s-tools-publish-project.png)
 
-1. 在 **發佈**畫面上，選擇**Container Registry**做為發佈目標，並遵循提示來選取您的容器登錄。 如果您還沒有容器登錄庫，選擇**建立新的 Azure Container Registry**建立一個從 Visual Studio。 如需詳細資訊，請參閱 <<c0> [ 作為您容器發行至 Azure Container Registry](#publish-your-container-to-azure-container-registry)。
+2. 在 **發佈**畫面上，選擇**Container Registry**做為發佈目標，並遵循提示來選取您的容器登錄。 如果您還沒有容器登錄庫，選擇**建立新的 Azure Container Registry**建立一個從 Visual Studio。 如需詳細資訊，請參閱 <<c0> [ 作為您容器發行至 Azure Container Registry](#publish-your-container-to-azure-container-registry)。
 
    ![挑選發佈目標畫面的螢幕擷取畫面](media/k8s-tools-publish-to-acr.png)
 
-1. 在 [方案總管] 中，以滑鼠右鍵按一下您*解決方案*然後按一下**發佈至 Azure AKS**。
+3. 在 [方案總管] 中，以滑鼠右鍵按一下您*解決方案*然後按一下**發佈至 Azure AKS**。
 
    ![螢幕擷取畫面的發佈至 Azure AKS 功能表項目](media/k8s-tools-publish-solution.png)
 
-1. 選擇您的訂用帳戶和您的 AKS 叢集，以及 ACR 發行您剛才建立的設定檔。 然後按一下 [確定]。 
+4. 選擇您的訂用帳戶和您的 AKS 叢集，以及 ACR 發行您剛才建立的設定檔。 然後按一下 [確定]。 
 
    ![螢幕擷取畫面的發佈至 AKS 畫面](media/k8s-tools-publish-to-aks.png)
 
    這會帶您前往**發佈至 Azure AKS**螢幕。
 
-1.  選擇**設定 Helm**更新用來在伺服器上安裝 Helm 圖表的命令列的連結。
+5. 選擇**設定 Helm**更新用來在伺服器上安裝 Helm 圖表的命令列的連結。
 
    ![連結的設定 Helm 的螢幕擷取畫面](media/k8s-tools-configure-helm.png)
 
@@ -112,7 +112,7 @@ Visual Studio Kubernetes 工具可協助簡化目標 Kubernetes 的容器化應�
 
    ![螢幕擷取畫面的 Helm 設定畫面](media/k8s-tools-helm-configure-screen.png)
 
-1. 當您準備好部署時，請按一下**發佈** 按鈕，應用程式發佈至 AKS。
+6. 當您準備好部署時，請按一下**發佈** 按鈕，應用程式發佈至 AKS。
 
    ![發行至 Azure AKS 螢幕的螢幕擷取畫面](media/k8s-tools-publish-screen.png)
 

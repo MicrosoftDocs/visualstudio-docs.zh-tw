@@ -11,12 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 1455c8dad80e4f9bc9d051663c2c224d7058028b
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 1ace7528eb1685765fe5c7ff11ce9b3c3234a941
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47860221"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49919152"
 ---
 # <a name="the-text-template-transformation-process"></a>文字範本轉換流程
 文字範本轉換流程會做為輸入的文字範本檔案，並產生新的文字檔，做為輸出。 例如，您可以使用文字範本產生 Visual Basic 或 C# 程式碼，或您可以產生一份 HTML 報告。
@@ -28,7 +28,7 @@ ms.locfileid: "47860221"
 ## <a name="components"></a>元件
 
 |元件|描述|可自訂 （是/否）|
-|---------------|-----------------|------------------------------|
+|-|-|-|
 |引擎|引擎元件控制文字範本轉換流程|否。|
 |主機|主機是引擎與使用者環境之間的介面。 Visual Studio 是一堆文字轉換程序。|可以。 您可以撰寫自訂主機。|
 |指示詞處理器|指示詞處理器會處理文字範本中的指示詞的類別。 您可以使用指示詞提供資料給文字範本中，從輸入來源。|可以。 您可以撰寫自訂指示詞處理器|

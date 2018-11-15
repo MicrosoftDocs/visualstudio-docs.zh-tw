@@ -1,7 +1,7 @@
 ---
 title: 選取並安裝 Python 解譯器
 description: Visual Studio 中所支援 Python 解譯器的完整清單，其中包含在何處找到其安裝程式的簡要說明。
-ms.date: 09/04/2018
+ms.date: 10/09/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,18 +11,18 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6491f5ec5fdcfc1435891cd953287e2c5123538a
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 3a81d81160bd6ad097e848f4af964d6ed00b17a5
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45548958"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51348704"
 ---
 # <a name="install-python-interpreters"></a>安裝 Python 解譯器
 
 根據預設，在 Visual Studio 2017 中安裝 Python 開發工作負載，也會安裝 Python 3 (64 位元)。 如[安裝](installing-python-support-in-visual-studio.md)中所述，您可以選擇安裝 32 位元和 64 位元版本的 Python 2、Python 3、Anaconda 2 和 Anaconda 3。
 
-您也可以手動安裝下表所列出 Visual Studio 安裝程式以外的任何解譯器。 例如，如果您在安裝 Visual Studio 前已經安裝了 Anaconda 3，就不需透過 Visual Studio 安裝程式再次安裝。
+您也可以手動安裝下表所列出 Visual Studio 安裝程式以外的任何解譯器。 例如，如果您在安裝 Visual Studio 前已經安裝了 Anaconda 3，就不需透過 Visual Studio 安裝程式再次安裝。 如果可用的新版本未出現在 Visual Studio 安裝程式中，您也可以手動安裝解譯器。
 
 針對 **Visual Studio 2015 及更早版本**，您必須安裝其中一個解譯器。
 
@@ -30,7 +30,7 @@ Visual Studio (所有版本) 會根據 [PEP 514 - Python registration in the Win
 
 如果 Visual Studio 偵測不到安裝的環境，請參閱[手動識別現有的環境](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment)。
 
-Visual Studio 會在 [[Python 環境]](managing-python-environments-in-visual-studio.md) 視窗中顯示所有已知的環境，並自動偵測現有解譯器的更新。
+Visual Studio 會在 [[Python 環境]](managing-python-environments-in-visual-studio.md#the-python-environments-window) 視窗中顯示所有已知的環境，並自動偵測現有解譯器的更新。
 
 | 解譯器 | 描述 |
 | --- | --- |

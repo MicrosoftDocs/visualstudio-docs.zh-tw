@@ -1,5 +1,5 @@
 ---
-title: DOCCONTEXT_COMPARE |Microsoft 文件
+title: DOCCONTEXT_COMPARE |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 966d31889d7979732af20f5e3f95546e87af6598
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8f092666833b80dd59ed4b7b3345c379078ce2bf
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31103649"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862953"
 ---
 # <a name="doccontextcompare"></a>DOCCONTEXT_COMPARE
 指定的準則來比較兩個文件內容。  
@@ -48,7 +48,7 @@ enum enum_DOCCONTEXT_COMPARE {
   
 ## <a name="members"></a>成員  
  DOCCONTEXT_EQUAL  
- 等於目標文件內容的清單中找到的第一個文件內容。  
+ 找到的第一個文件內容等於目標文件內容的清單中。  
   
  DOCCONTEXT_LESS_THAN  
  小於目標文件內容的清單中找到的第一個文件內容。  
@@ -57,12 +57,12 @@ enum enum_DOCCONTEXT_COMPARE {
  大於目標文件內容的清單中找到的第一個文件內容。  
   
  DOCCONTEXT_SAME_DOCUMENT  
- 在相同的文件為目標的文件內容中的清單中找到的第一個文件內容。  
+ 在目標文件內容相同文件中的清單中找到的第一個文件內容。  
   
 ## <a name="remarks"></a>備註  
- 做為引數傳遞[比較](../../../extensibility/debugger/reference/idebugdocumentcontext2-compare.md)方法。  
+ 作為引數[比較](../../../extensibility/debugger/reference/idebugdocumentcontext2-compare.md)方法。  
   
- 這些值可用來指定在清單中尋找第一個文件內容比較準則。 文件內容有一份文件內容來比較本身針對透過`IDebugDocumentContext2::Compare`方法。 比較運算子的清單中的第一個文件內容`true`再傳回。  
+ 這些值會用來指定在清單中尋找第一個文件內容的比較準則。 文件內容有一份文件內容來比較自行針對透過`IDebugDocumentContext2::Compare`方法。 在清單中的比較運算子的第一個文件內容`true`再傳回。  
   
 ## <a name="requirements"></a>需求  
  標頭： msdbg.h  

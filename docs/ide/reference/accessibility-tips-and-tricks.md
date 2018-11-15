@@ -13,12 +13,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7cff1eb98dd76f8b594193b2e768987b4e2a441d
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 57898fbcfba72c67b199ea584d494cb96dfbf491
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34747452"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49811837"
 ---
 # <a name="accessibility-tips-and-tricks-for-visual-studio"></a>Visual Studio 協助工具祕訣和訣竅
 
@@ -48,7 +48,7 @@ Visual Studio 編輯器包含許多文字「裝飾」，讓您知道程式碼特
 Visual Studio IDE 工具列的作用與許多工具視窗相同。 下列快速鍵組合可協助您進行存取。
 
 |功能|描述|按鍵組合|
-|-------------|-----------------|---------------------|
+|-------------|-----------------| - |
 |IDE 工具列|選取 [標準] 工具列上的第一個按鈕。|**ALT**、**CTRL** + **TAB**|
 |工作視窗工具列|將焦點移至工具視窗中的工具列。 <br> <br> **注意：** 這適用於大部分的工具視窗，但只限焦點在工具視窗中時。 此外，您必須先選擇 SHIFT 鍵再選擇 ALT 鍵。 在部分工具視窗 (例如 Team Explorer) 中，您必須先按住 SHIFT 鍵再選擇 ALT 鍵。|**SHIFT** + **ALT**|
 |工具列|移至下一個工具列中的第一個項目 (當工具列有焦點時)。|**CTRL** + **TAB**|
@@ -58,7 +58,7 @@ Visual Studio IDE 工具列的作用與許多工具視窗相同。 下列快速�
 有些其他實用快速鍵組合包括下列項目。
 
 |功能|描述|按鍵組合|
-|-------------|-----------------|---------------------|
+|-------------|-----------------| - |
 |IDE|開啟或關閉高對比。 <br> <br> **注意：** 標準 Windows 捷徑|**左 ALT + 左 SHIFT + PRINT SCREEN**|
 |對話方塊|選取或清除對話方塊中的核取方塊選項。 <br> <br> **注意：** 標準 Windows 捷徑|**空格鍵**|
 |操作功能表|開啟操作 (滑鼠右鍵) 功能表。 <br> <br> **注意：** 標準 Windows 捷徑|**SHIFT** + **F10**|
@@ -83,18 +83,18 @@ Visual Studio IDE 工具列的作用與許多工具視窗相同。 下列快速�
 
 1. 在執行 Windows 10 電腦的 [搜尋] 方塊中鍵入**變更系統音效**。
 
-  ![Windows 10 中的搜尋方塊](media/type-here-to-search.png)
+   ![Windows 10 中的搜尋方塊](media/type-here-to-search.png)
 
-  (或者，如啟用 Cortana，說出「嘿 Cortana」，接著說出「變更系統音效」。)
+   (或者，如啟用 Cortana，說出「嘿 Cortana」，接著說出「變更系統音效」。)
 
 2. 按兩下 [變更系統音效]。
 
-  ![Windows 10 中的搜尋結果](media/change-system-sounds.png)
+   ![Windows 10 中的搜尋結果](media/change-system-sounds.png)
 
 3. 在 [音效] 對話方塊中，按一下 [音效] 索引標籤。 <br><br>
- 然後，在 [程式事件] 中捲動到 **Microsoft Visual Studio**，選取您想要套用至所選事件的音效。
+   然後，在 [程式事件] 中捲動到 **Microsoft Visual Studio**，選取您想要套用至所選事件的音效。
 
-  ![Windows 10 中 [音效] 小程式的 [音效] 索引標籤](media/sound-applet.png)
+   ![Windows 10 中 [音效] 小程式的 [音效] 索引標籤](media/sound-applet.png)
 
 4. 按一下 [確定 **Deploying Office Solutions**]。
 

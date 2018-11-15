@@ -24,12 +24,12 @@ caps.latest.revision: 108
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: ec590e3c643f731a9c85bc59c0c36394988f6c7c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9e1aa8ce06603860c2e509854edbd063de2d6f4a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49204252"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49925626"
 ---
 # <a name="porting-migrating-and-upgrading-visual-studio-projects"></a>Porting, Migrating, and Upgrading Visual Studio Projects
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -92,19 +92,19 @@ ms.locfileid: "49204252"
 ## <a name="troubleshooting-project-compatibility-issues"></a>疑難排解專案相容性問題  
  當專案在 [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)] 或 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]中不會開啟時，可執行的某些作業如下：  
   
--   如果您嘗試開啟 [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)] 或 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] 不支援的專案，而且相關聯的 Visual Studio 版本也未安裝，則可能會出現專案類型不支援的訊息，並且 [不支援的專案]  底下的 [檢閱專案和方案變更] 對話方塊可能會顯示專案類型。 若要解決這個問題，請開啟 Windows [ **控制台**] 的 [程式和功能] 頁面，選取 [ **Visual Studio**]，然後選擇 [ **變更**]、[ **修復**]。 然後您就可以安裝遺漏的版本。  
+- 如果您嘗試開啟 [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)] 或 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] 不支援的專案，而且相關聯的 Visual Studio 版本也未安裝，則可能會出現專案類型不支援的訊息，並且 [不支援的專案]  底下的 [檢閱專案和方案變更] 對話方塊可能會顯示專案類型。 若要解決這個問題，請開啟 Windows [ **控制台**] 的 [程式和功能] 頁面，選取 [ **Visual Studio**]，然後選擇 [ **變更**]、[ **修復**]。 然後您就可以安裝遺漏的版本。  
   
--   如果您嘗試在 [!INCLUDE[vs_dev12_expwin](../includes/vs-dev12-expwin-md.md)] 中開啟桌面應用程式的專案，將會發生錯誤並顯示下列其中一個訊息：「這個版本的 Visual Studio 僅支援 [!INCLUDE[win81](../includes/win81-md.md)] 應用程式」或「這個專案與目前的 Visual Studio 版本不相容」。 [!INCLUDE[vs_dev12_expwin](../includes/vs-dev12-expwin-md.md)] 只能用於開發、測試和部署針對 Windows 8.1 所設計的 Windows 市集應用程式。 若要開啟桌面應用程式專案，您必須使用支援該專案類型的 Visual Studio 版本。  
+- 如果您嘗試在 [!INCLUDE[vs_dev12_expwin](../includes/vs-dev12-expwin-md.md)] 中開啟桌面應用程式的專案，將會發生錯誤並顯示下列其中一個訊息：「這個版本的 Visual Studio 僅支援 [!INCLUDE[win81](../includes/win81-md.md)] 應用程式」或「這個專案與目前的 Visual Studio 版本不相容」。 [!INCLUDE[vs_dev12_expwin](../includes/vs-dev12-expwin-md.md)] 只能用於開發、測試和部署針對 Windows 8.1 所設計的 Windows 市集應用程式。 若要開啟桌面應用程式專案，您必須使用支援該專案類型的 Visual Studio 版本。  
   
-     如需 Visual Studio 版本的詳細資訊，請參閱 [Microsoft Visual Studio 產品](http://go.microsoft.com/fwlink/?LinkId=254332)  
+   如需 Visual Studio 版本的詳細資訊，請參閱 [Microsoft Visual Studio 產品](http://go.microsoft.com/fwlink/?LinkId=254332)  
   
--   如果您嘗試在 [!INCLUDE[vs_dev12_expwin](../includes/vs-dev12-expwin-md.md)] Desktop 中開啟 Windows 市集應用程式專案，會發生錯誤。 [!INCLUDE[vs_dev12_expwin](../includes/vs-dev12-expwin-md.md)] Desktop 不可用來建置 Windows 市集應用程式。 如果您想要建置 Windows 市集應用程式，您也可以安裝 [!INCLUDE[vs_dev12_expwin](../includes/vs-dev12-expwin-md.md)]。 或者，若要開發適用於所有 Microsoft 平台和 Web 的應用程式，請嘗試 Visual Studio Professional 2013。  
+- 如果您嘗試在 [!INCLUDE[vs_dev12_expwin](../includes/vs-dev12-expwin-md.md)] Desktop 中開啟 Windows 市集應用程式專案，會發生錯誤。 [!INCLUDE[vs_dev12_expwin](../includes/vs-dev12-expwin-md.md)] Desktop 不可用來建置 Windows 市集應用程式。 如果您想要建置 Windows 市集應用程式，您也可以安裝 [!INCLUDE[vs_dev12_expwin](../includes/vs-dev12-expwin-md.md)]。 或者，若要開發適用於所有 Microsoft 平台和 Web 的應用程式，請嘗試 Visual Studio Professional 2013。  
   
--   如果專案需要 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] 的專用功能，則專案無法在較舊版本中開啟。  
+- 如果專案需要 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] 的專用功能，則專案無法在較舊版本中開啟。  
   
--   如果您使用的是 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] ，而您想要開啟 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]所建立的專案時，您或許可以自訂專案系統，將 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]的功能併入。 如需如何執行這項操作的資訊，請參閱[讓自訂專案版本感知](../misc/making-custom-projects-version-aware.md)。  
+- 如果您使用的是 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] ，而您想要開啟 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]所建立的專案時，您或許可以自訂專案系統，將 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]的功能併入。 如需如何執行這項操作的資訊，請參閱[讓自訂專案版本感知](../misc/making-custom-projects-version-aware.md)。  
   
- 如需其他疑難排解資訊，請參閱 [Visual Studio 2013 相容性](http://support.microsoft.com/kb/2863286) 知識庫文章。  
+  如需其他疑難排解資訊，請參閱 [Visual Studio 2013 相容性](http://support.microsoft.com/kb/2863286) 知識庫文章。  
   
 ##  <a name="file"></a> 檔案  
  下列清單列出 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] 是否支援每個檔案類型，是否可以同時在 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] 和 Visual Studio 2010 SP1 中開啟檔案，以及是否必須進行修改以確保相容性。  

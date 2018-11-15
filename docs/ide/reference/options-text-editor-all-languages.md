@@ -7,7 +7,7 @@ ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.JavaScript.General
 - VS.ToolsOptionsPages.Text_Editor.ResJSON.General
-- vs.toolsoptionspages.text_editor.all_languages.scrollbars
+- VS.ToolsOptionsPages.Text_Editor.All_Languages.General
 helpviewer_keywords:
 - Text Editor Options dialog box
 - statement completion
@@ -21,12 +21,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3537cf15ef1ec619a701df0036431810dfb7c087
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 6e8d3494ad0c48bb6254090b26faef9162a89f8d
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39175731"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220478"
 ---
 # <a name="options-text-editor-all-languages"></a>選項，文字編輯器，所有語言
 編輯樣式表時，這個對話方塊可讓您變更程式碼編輯器的預設行為。 這些設定也適用於以程式碼編輯器為基礎的其他編輯器，例如 HTML 設計工具的來源檢視。 若要開啟此對話方塊，請從 [工具] 功能表選取 [選項]。 在 [文字編輯器] 資料夾內，展開 [所有語言] 子資料夾，然後選擇 [一般]。
@@ -42,24 +42,24 @@ ms.locfileid: "39175731"
 
 
 ## <a name="statement-completion"></a>陳述式完成
- 自動列出成員
+ **自動列出成員**
 
  選取時，IntelliSense 會在您於編輯器中輸入時，顯示可用成員、屬性、值或方法的快顯清單。 選擇快顯清單中的任何項目，以將項目插入您的程式碼。 選取此選項可啟用 [隱藏進階成員] 選項。
 
- 隱藏進階成員
+ **隱藏進階成員**
 
  選取時，會縮短快顯陳述式完成清單，只顯示最常用的項目。 會篩選清單中的其他項目。
 
- 參數資訊
+ **參數資訊**
 
  選取時，編輯器中插入點之下會顯示目前宣告或程序的完整語法，以及所有的可用參數。 可以指派的下一個參數以粗體顯示。
 
 ## <a name="settings"></a>設定
- 啟用虛擬空間
+ **啟用虛擬空間**
 
  選取這個選項，並清除 [自動換行] 時，您可以在 [程式碼編輯器] 中，按一下行尾之外的任何位置，然後輸入內容。 這個功能可以用來將註解放置在程式碼旁邊的一致位置上。
 
- 自動換行
+ **自動換行**
 
  選取時，如果某行的水平延伸部分超過可檢視的編輯器區域，超過的部分會自動顯示於下一行。 選取這個選項，會啟用 [顯示自動換行的視覺化圖像] 選項。
 
@@ -67,7 +67,7 @@ ms.locfileid: "39175731"
 > 開啟 [自動換行] 時，[虛擬空間] 功能會關閉。
 
 
- 顯示自動換行的視覺化圖像
+ **顯示自動換行的視覺化圖像**
 
  選取時，會在長行換行至下一行之處顯示返回箭號指標。
 
@@ -79,7 +79,23 @@ ms.locfileid: "39175731"
 > 這些提醒箭號不會加入至程式碼，也不會列印。 僅供參考之用。
 
 
- 沒有選取範圍時，可將 [剪下] 或 [複製] 命令套用至空白行
+**行號**
+
+ 選取時，會在每一行程式碼旁邊顯示行號。
+
+> [!NOTE]
+> 這些行號不會新增至您的程式碼，也不會列印。 僅供參考之用。
+
+
+ **啟用按一下方式的 URL 巡覽**
+
+ 選取此選項，且滑鼠游標經過編輯器的 URL 上方時，就會變為指示手形狀。 您可以按一下 URL，在網頁瀏覽器中顯示手形指標所指示的網頁。
+
+ **導覽列**
+
+ 選取時，會在程式碼編輯器的頂端顯示 [導覽列]。 它的下拉式 [物件] 和 [成員] 清單，可讓您選擇程式碼中的特定物件、從其成員選擇，並在程式碼編輯器中巡覽至選取之成員的宣告。
+
+**沒有選取範圍時，可將 [剪下] 或 [複製] 命令套用至空白行**
 
  當您將插入點置於空白行上但不選取任何範圍，然後「複製」或「剪下」時，這個選項可設定編輯器的行為。
 
@@ -92,25 +108,7 @@ ms.locfileid: "39175731"
 > [!TIP]
 > 若要顯示空格、定位點和行尾的指示器，並進而區分縮排行與完全空白的行，請從 [編輯] 功能表選取 [進階]，並選擇 [檢視空格]。
 
-
-## <a name="display"></a>顯示
- 行號
-
- 選取時，會在每一行程式碼旁邊顯示行號。
-
-> [!NOTE]
-> 這些行號不會新增至您的程式碼，也不會列印。 僅供參考之用。
-
-
- 啟用按一下方式的 URL 巡覽
-
- 選取此選項，且滑鼠游標經過編輯器的 URL 上方時，就會變為指示手形狀。 您可以按一下 URL，在網頁瀏覽器中顯示手形指標所指示的網頁。
-
- 巡覽列
-
- 選取時，會在程式碼編輯器的頂端顯示 [導覽列]。 它的下拉式 [物件] 和 [成員] 清單，可讓您選擇程式碼中的特定物件、從其成員選擇，並在程式碼編輯器中巡覽至選取之成員的宣告。
-
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [索引標籤、所有語言、文字編輯器、選項](../../ide/reference/options-text-editor-all-languages-tabs.md)
 - [選項對話方塊、環境、一般](../../ide/reference/general-environment-options-dialog-box.md)

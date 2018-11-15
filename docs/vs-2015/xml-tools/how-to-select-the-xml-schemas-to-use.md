@@ -14,12 +14,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5300623e3bbd1eeec584b30015e122539a6c7203
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 93f573412524619292b1966e87abeda11cc0813a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49210453"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49863720"
 ---
 # <a name="how-to-select-the-xml-schemas-to-use"></a>HOW TO：選取要使用的 XML 結構描述
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,23 +36,23 @@ XML 編輯器提供位於 %InstallDir%\Xml\Schemas 目錄的結構描述快取�
   
 ### <a name="to-select-an-xml-schema-from-the-schema-cache"></a>若要從結構描述快取選取 XML 結構描述  
   
-1.  在 XML 編輯器中開啟檔案。  
+1. 在 XML 編輯器中開啟檔案。  
   
-2.  在 [文件屬性] 視窗中，按一下按鈕上**結構描述**欄位。  
+2. 在 [文件屬性] 視窗中，按一下按鈕上**結構描述**欄位。  
   
-     **XML 結構描述**對話方塊隨即出現。 對話方塊會列出具有.xsd 副檔名 （包括 catalog.xml 檔案中參考的結構描述） 結構描述快取中的所有結構描述，也會在目前的方案中，任何結構描述 Visual Studio 中開啟，在參考`xsd:schemaLocation`所參考或屬性，**結構描述**屬性。  
+    **XML 結構描述**對話方塊隨即出現。 對話方塊會列出具有.xsd 副檔名 （包括 catalog.xml 檔案中參考的結構描述） 結構描述快取中的所有結構描述，也會在目前的方案中，任何結構描述 Visual Studio 中開啟，在參考`xsd:schemaLocation`所參考或屬性，**結構描述**屬性。  
   
-3.  請進行下列任一操作，以選取用於驗證的結構描述：  
+3. 請進行下列任一操作，以選取用於驗證的結構描述：  
   
-    -   選取結構描述中所列**XML 結構描述** 對話方塊中，按一下**使用**資料行，然後選取**使用這個結構描述**。  
+   - 選取結構描述中所列**XML 結構描述** 對話方塊中，按一下**使用**資料行，然後選取**使用這個結構描述**。  
   
      -或-  
   
-    -   選取多個結構描述中所列**XML 結構描述**對話方塊，以滑鼠右鍵按一下並選取**使用這個結構描述**。  
+   - 選取多個結構描述中所列**XML 結構描述**對話方塊，以滑鼠右鍵按一下並選取**使用這個結構描述**。  
   
-4.  按一下 [確定 **Deploying Office Solutions**]。  
+4. 按一下 [確定 **Deploying Office Solutions**]。  
   
-     選取的結構描述的清單複製回**結構描述**文件屬性。  
+    選取的結構描述的清單複製回**結構描述**文件屬性。  
   
 ### <a name="to-add-an-xml-schema-to-the-schema-cache"></a>若要將 XML 結構描述加入結構描述快取中  
   

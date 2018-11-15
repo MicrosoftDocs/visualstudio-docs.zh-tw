@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 291f24c6ffdf885cf3d24c5ff163c2f4f911d7ce
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 3bb858f2ee20eb65c09dd4979f2bbba1470cbe0d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44279550"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49908238"
 ---
 # <a name="debug-an-installed-app-package-in-visual-studio-uwp"></a>偵錯已安裝的應用程式封裝在 Visual Studio (UWP)
 
@@ -78,25 +78,25 @@ ms.locfileid: "44279550"
 
      如果您不能附加使用電腦名稱 (您選擇後**啟動**)，改為使用的 IP 位址。 使用 XBox、 HoloLens、 或 IoT 裝置的 IP 位址。
 
-5. 選擇如何藉由選取的選項中進行驗證**驗證模式**。
+6. 選擇如何藉由選取的選項中進行驗證**驗證模式**。
 
     對於大多數的應用程式，請保留預設值，**通用 （未加密的通訊協定）**。
 
-6. 選取您想要在偵錯的應用程式名稱**執行**或是**未執行**，然後選擇 **啟動**或 （適用於執行應用程式）**附加**。
+7. 選取您想要在偵錯的應用程式名稱**執行**或是**未執行**，然後選擇 **啟動**或 （適用於執行應用程式）**附加**。
 
      如果您選取**不啟動，但啟動時，將我的程式碼進行偵錯**，這會導致 Visual Studio 偵錯工具附加至應用程式套件，當您啟動在自訂的時間。 這是偵錯中的控制路徑的有效辦法[不同的啟動方法](/windows/uwp/xbox-apps/automate-launching-uwp-apps)，例如，使用自訂參數的通訊協定啟用。
 
      當您第一次偵錯連接 XBox、 HoloLens、 或 IoT 裝置上已安裝的應用程式套件時，Visual Studio 會安裝正確版本的目標裝置的遠端偵錯工具。 這可能需要一些時間，您會看到一則訊息``Starting remote debugger``而發生此問題。
 
      > [!NOTE]
-> 在存在、 XBox 或 HoloLens 裝置將會重新啟動應用程式偵錯工具附加，如果已在執行。
+   > 在存在、 XBox 或 HoloLens 裝置將會重新啟動應用程式偵錯工具附加，如果已在執行。
 
 如需遠端部署的 UWP 應用程式的進階選項的資訊，請參閱 [部署和偵錯 UWP apps]((/windows/uwp/debug-test-perf/deploying-and-debugging-uwp-apps#advanced-remote-deployment-options)。 
   
 ## <a name="see-also"></a>另請參閱  
  [Visual Studio 偵錯](../debugger/index.md)  
  [偵錯工具功能導覽](../debugger/debugger-feature-tour.md)  
- [遠端偵錯](../debugger/remote-debugging.md)  
+ [Remote Debugging](../debugger/remote-debugging.md)  
  [設定 Windows 防火牆進行遠端偵錯](../debugger/configure-the-windows-firewall-for-remote-debugging.md)  
  [遠端偵錯工具連接埠指派](../debugger/remote-debugger-port-assignments.md)  
  [遠端偵錯錯誤和疑難排解](../debugger/remote-debugging-errors-and-troubleshooting.md)

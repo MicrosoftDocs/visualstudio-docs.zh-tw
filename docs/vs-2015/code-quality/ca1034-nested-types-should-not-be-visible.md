@@ -20,15 +20,16 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 44ada052299c1f61456594936286d7eb28d76820
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c246f80907ae72673df3471f0dff8e6afa4e4b2f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49252599"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49814907"
 ---
 # <a name="ca1034-nested-types-should-not-be-visible"></a>CA1034：巢狀類型不應為可見
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|NestedTypesShouldNotBeVisible|

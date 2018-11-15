@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f99bd0188c89110796f4d082e803f35ce10da867
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: c1be49bb015334ed37326fbe301ac2035a6f3269
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39152678"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49848783"
 ---
 # <a name="trusted-application-deployment-overview"></a>受信任的應用程式部署概觀
 本主題提供如何部署 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式的概觀，使用受信任的應用程式部署技術可提高此應用程式的權限。  
@@ -51,21 +51,21 @@ ms.locfileid: "39152678"
   
  在大型組織中，發行者和部署者通常是兩個不同的實體：  
   
--   發行者是建立 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式的群組。  
+- 發行者是建立 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式的群組。  
   
--   部署者是散發 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式到公司企業桌上型電腦的群組，通常是資訊技術 (IT) 部門。  
+- 部署者是散發 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式到公司企業桌上型電腦的群組，通常是資訊技術 (IT) 部門。  
   
 您必須遵循下列步驟來利用信任的應用程式部署：  
   
-1.  取得發行者的憑證。  
+1. 取得發行者的憑證。  
   
-2.  將發行者加入所有用戶端上的信任的發行者存放區。  
+2. 將發行者加入所有用戶端上的信任的發行者存放區。  
   
-3.  建立您的 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式。  
+3. 建立您的 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式。  
   
-4.  使用發行者的憑證簽署部署資訊清單。  
+4. 使用發行者的憑證簽署部署資訊清單。  
   
-5.  將應用程式部署發行到用戶端電腦。  
+5. 將應用程式部署發行到用戶端電腦。  
   
 ### <a name="obtain-a-certificate-for-the-publisher"></a>取得發行者的憑證  
  數位憑證是 Microsoft Authenticode 驗證和安全性系統的核心元件。 Authenticode 是 Windows 作業系統的標準部分。 所有 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式必須以數位憑證簽署，不論它們是否參與信任的應用程式部署。 如需 Authenticode 如何與搭配運作的完整說明[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]，請參閱 < [ClickOnce 和 Authenticode](../deployment/clickonce-and-authenticode.md)。  

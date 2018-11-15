@@ -16,12 +16,12 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9ec0c3cdd0047cf65539fbbb8e2e220ca38ee293
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 775b28f1c8839a331f64e435b886c113c30c6238
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49266717"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49889473"
 ---
 # <a name="how-to-display-thread-properties"></a>如何：顯示執行緒屬性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,11 +30,11 @@ ms.locfileid: "49266717"
   
 ### <a name="to-open-a-thread-properties-dialog-box"></a>若要開啟的執行緒屬性對話方塊  
   
-1.  從樹狀結構中顯示選取的執行緒[執行緒檢視](../debugger/threads-view.md)。  
+1. 從樹狀結構中顯示選取的執行緒[執行緒檢視](../debugger/threads-view.md)。  
   
-2.  從**檢視**功能表上，選擇**屬性**。  
+2. 從**檢視**功能表上，選擇**屬性**。  
   
- 屬性 對話方塊不是強制回應，因此您可以按一下 檢視 視窗中的另一個項目，並在對話方塊中會顯示在選取的項目上的資訊。
+   屬性 對話方塊不是強制回應，因此您可以按一下 檢視 視窗中的另一個項目，並在對話方塊中會顯示在選取的項目上的資訊。
 
 
 

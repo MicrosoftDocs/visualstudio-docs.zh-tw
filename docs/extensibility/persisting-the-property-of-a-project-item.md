@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 94b5db74c6480c848f669983cea0febcd922cefe
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: da231c924e3167a50c885cf18ef878a02b28b166
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39639346"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49915577"
 ---
 # <a name="persist-the-property-of-a-project-item"></a>保存專案項目的屬性
 若要保存的屬性，您將新增至專案項目，例如來源檔案的作者。 您可以將屬性儲存在專案檔來執行這項操作。
@@ -117,22 +117,22 @@ ms.locfileid: "39639346"
 
 ## <a name="to-verify-that-the-property-is-persisted"></a>若要確認屬性會保存
 
-1.  啟動[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]然後開啟或建立解決方案。
+1. 啟動[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]然後開啟或建立解決方案。
 
-2.  選取的專案項目中的 VsPkg.cs**方案總管 中**。
+2. 選取的專案項目中的 VsPkg.cs**方案總管 中**。
 
-3.  使用中斷點或另外判斷會載入 VSPackage 和 SetItemAttribute 執行。
+3. 使用中斷點或另外判斷會載入 VSPackage 和 SetItemAttribute 執行。
 
-    > [!NOTE]
-    > 您可以自動載入 VSPackage 中的 UI 內容<xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionExists_guid>。 如需詳細資訊，請參閱 <<c0> [ 載入 Vspackage](../extensibility/loading-vspackages.md)。
+   > [!NOTE]
+   > 您可以自動載入 VSPackage 中的 UI 內容<xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionExists_guid>。 如需詳細資訊，請參閱 <<c0> [ 載入 Vspackage](../extensibility/loading-vspackages.md)。
 
-4.  關閉[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]，然後在記事本中開啟專案檔。 您應該會看到\<作者 > 標記 Tom 的值，如下所示：
+4. 關閉[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]，然後在記事本中開啟專案檔。 您應該會看到\<作者 > 標記 Tom 的值，如下所示：
 
-    ```xml
-    <Compile Include="VsPkg.cs">
-        <Author>Tom</Author>
-    </Compile>
-    ```
+   ```xml
+   <Compile Include="VsPkg.cs">
+       <Author>Tom</Author>
+   </Compile>
+   ```
 
 ## <a name="see-also"></a>另請參閱
 

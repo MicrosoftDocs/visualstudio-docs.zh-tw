@@ -14,12 +14,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: fa5e2f46f3fa5cce9a795c2353148d2bd3f47351
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 977594493279d52154de3cb5ef7bce56d4d8f985
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49293107"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49836836"
 ---
 # <a name="properties-of-domain-properties"></a>網域屬性的屬性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,11 +33,11 @@ A*定義域屬性*是模型項目，可保存值的功能。 例如，`Person` �
   
  大部分的網域屬性會以一般 CLR 屬性實作。 然而，從程式設計的觀點而言，網域屬性的功能比一般程式屬性的功能更豐富：  
   
--   您可以定義監視屬性狀態的規則和事件。 如需詳細資訊，請參閱 <<c0> [ 回應及傳播變更](../modeling/responding-to-and-propagating-changes.md)。  
+- 您可以定義監視屬性狀態的規則和事件。 如需詳細資訊，請參閱 <<c0> [ 回應及傳播變更](../modeling/responding-to-and-propagating-changes.md)。  
   
--   異動有助於防止不一致的狀態。 如需詳細資訊，請參閱 <<c0> [ 巡覽及更新程式碼中的模型](../modeling/navigating-and-updating-a-model-in-program-code.md)。  
+- 異動有助於防止不一致的狀態。 如需詳細資訊，請參閱 <<c0> [ 巡覽及更新程式碼中的模型](../modeling/navigating-and-updating-a-model-in-program-code.md)。  
   
- 當您在圖表或 DSL Explorer 中選取 [網域屬性] 時，可以在 [屬性] 視窗中查看下列項目。 如需如何使用這些項目的詳細資訊，請參閱[自訂及擴充特定領域語言](../modeling/customizing-and-extending-a-domain-specific-language.md)。  
+  當您在圖表或 DSL Explorer 中選取 [網域屬性] 時，可以在 [屬性] 視窗中查看下列項目。 如需如何使用這些項目的詳細資訊，請參閱[自訂及擴充特定領域語言](../modeling/customizing-and-extending-a-domain-specific-language.md)。  
   
 |屬性|描述|預設值|  
 |--------------|-----------------|-------------------|  

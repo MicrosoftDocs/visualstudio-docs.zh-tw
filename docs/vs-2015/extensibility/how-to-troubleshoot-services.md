@@ -15,27 +15,27 @@ ms.assetid: 001551da-4847-4f59-a0b2-fcd327d7f5ca
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 97084a1fe66bb84c56e1f6452397df9128f4d08f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: fdce9cb5e6499066c7e96abe895db1505f952011
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49279028"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49826620"
 ---
 # <a name="how-to-troubleshoot-services"></a>如何： 針對服務進行疑難排解
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 有數個常見的問題，當您嘗試取得服務時，可能會發生：  
   
--   服務未向[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。  
+- 服務未向[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。  
   
--   要求服務時的介面型別，而不是由服務類型。  
+- 要求服務時的介面型別，而不是由服務類型。  
   
--   服務要求 VSPackage 未被設置。  
+- 服務要求 VSPackage 未被設置。  
   
--   使用錯誤的服務提供者。  
+- 使用錯誤的服務提供者。  
   
- 如果要求的服務無法取得，呼叫<xref:Microsoft.VisualStudio.Shell.Package.GetService%2A>會傳回 null。 要求服務之後，您應該一律測試 null:  
+  如果要求的服務無法取得，呼叫<xref:Microsoft.VisualStudio.Shell.Package.GetService%2A>會傳回 null。 要求服務之後，您應該一律測試 null:  
   
 ```csharp  
 IVsActivityLog log =   

@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b84223f9758302064622313cd5406b10c872f170
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 16b8c3a35a7d4a489a199b4de9f7fbe34bca9361
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179901"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50671010"
 ---
 # <a name="localizing-applications"></a>當地語系化應用程式
 
@@ -42,6 +42,6 @@ ms.locfileid: "39179901"
 
  [全球化 Windows Forms](/dotnet/framework/winforms/advanced/globalizing-windows-forms)提供建立支援多種文化特性之 Windows 應用程式的相關頁面連結。
 
- [全球化和當地語系化](http://msdn.microsoft.com/Library/8ef3838e-9d05-4236-9dd0-ceecff9df80d)提供建立支援多種文化特性之 Web 應用程式的相關頁面連結。
+ [全球化和當地語系化](https://msdn.microsoft.com/Library/8ef3838e-9d05-4236-9dd0-ceecff9df80d)提供建立支援多種文化特性之 Web 應用程式的相關頁面連結。
 
- [開發世界性的應用程式的最佳做法](http://msdn.microsoft.com/Library/f08169c7-aad8-4ec3-9a21-9ebd3b89986c)提供適用於國際對象的程式設計相關資訊，例如設計問題和技術。
+ [開發世界性的應用程式的最佳做法](/dotnet/standard/globalization-localization/best-practices-for-developing-world-ready-apps)提供適用於國際對象的程式設計相關資訊，例如設計問題和技術。

@@ -25,12 +25,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 702c1124e3b14f8bfec4f514edd8e1e7def6b776
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 238c903fc81ef2323d0de44e4e5b900a9b68d766
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31947634"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49915839"
 ---
 # <a name="install-and-manage-local-content"></a>安裝與管理本機內容
 
@@ -40,7 +40,7 @@ ms.locfileid: "31947634"
 
 ## <a name="change-the-content-installation-source"></a>變更內容安裝來源
 
-根據預設，說明檢視器會使用 Microsoft 線上服務做為來源來安裝內容。 通常您不應變更內容的來源，除非您在企業環境上使用，為此系統管理員早已安裝內容在另一個位置。
+根據預設，說明檢視器會使用 Microsoft 線上服務作為來源來安裝內容。 通常您不應變更內容的來源，除非您在企業環境上使用，為此系統管理員早已安裝內容在另一個位置。
 
 ### <a name="to-change-the-content-installation-source"></a>變更內容安裝來源
 
@@ -53,7 +53,7 @@ ms.locfileid: "31947634"
 
     -   輸入 *.msha* 檔案的路徑或服務端點的 URL。
 
-    -   選擇 [瀏覽]\(**...**) 按鈕巡覽至 *.msha* 檔案。
+    -   選擇 [瀏覽]\(**...** \) 按鈕以瀏覽到 *.msha* 檔案。
 
     -   在清單中，選擇最近使用的項目。
 
@@ -110,9 +110,9 @@ ms.locfileid: "31947634"
 
 ### <a name="to-update-local-content"></a>更新本機內容
 
--   在狀態列右下角，選擇 [按一下這裡立即下載] 連結。
+- 在狀態列右下角，選擇 [按一下這裡立即下載] 連結。
 
- 更新時間不盡相同，但是您可以在狀態列中檢視更新進度。
+更新時間不盡相同，但是您可以在狀態列中檢視更新進度。
 
 ## <a name="move-local-content"></a>移動本機內容
 

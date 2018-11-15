@@ -21,12 +21,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3bc8154be515bcf0509b2458534fed7c1c520e4e
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 9e46cf9032cae7d6400822be7d72394a7845314f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39513617"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49843817"
 ---
 # <a name="walkthrough-call-code-in-a-vsto-add-in-from-vba"></a>逐步解說： 從 VBA 在 VSTO 增益集中呼叫程式碼
   本逐步解說示範如何將 VSTO 增益集中的物件公開給其他 Microsoft Office 方案，包含 Visual Basic for Applications (VBA) 和 COM VSTO 增益集。  
@@ -37,13 +37,13 @@ ms.locfileid: "39513617"
   
  這個逐步解說將說明下列工作：  
   
--   定義可以公開給其他 Office 方案的類別。  
+- 定義可以公開給其他 Office 方案的類別。  
   
--   將類別公開給其他 Office 方案。  
+- 將類別公開給其他 Office 方案。  
   
--   從 VBA 程式碼呼叫類別的方法。  
+- 從 VBA 程式碼呼叫類別的方法。  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>必要條件  
  您需要下列元件才能完成此逐步解說：  
@@ -64,7 +64,7 @@ ms.locfileid: "39513617"
 ## <a name="define-a-class-that-you-can-expose-to-other-office-solutions"></a>定義的類別，您可以公開給其他 Office 方案  
  本逐步解說的目的是為了從 VBA 程式碼在您的 VSTO 增益集中呼叫 `ImportData` 類別的 `AddInUtilities` 方法。 這個方法會將字串寫入至使用中工作表的儲存格 A1。  
   
- 若要將 `AddInUtilities` 類別公開給其他 Office 方案，您必須使該類別成為公用類別，且為 COM 可見。 您也必須公開[IDispatch](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-idispatch)類別中的介面。 下列程序中的程式碼會示範符合這些需求的其中一種方式。 如需詳細資訊，請參閱 [Calling Code in VSTO Add-ins from Other Office Solutions](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md)。  
+ 若要將 `AddInUtilities` 類別公開給其他 Office 方案，您必須使該類別成為公用類別，且為 COM 可見。 您也必須公開類別中的 [IDispatch](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-idispatch) 介面。 下列程序中的程式碼會示範符合這些需求的其中一種方式。 如需詳細資訊，請參閱 [Calling Code in VSTO Add-ins from Other Office Solutions](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md)。  
   
 ### <a name="to-define-a-class-that-you-can-expose-to-other-office-solutions"></a>定義可以公開給其他 Office 方案的類別  
   
@@ -84,7 +84,7 @@ ms.locfileid: "39513617"
      [!code-csharp[Trin_AddInInteropWalkthrough#3](../vsto/codesnippet/CSharp/Trin_AddInInteropWalkthrough/AddInUtilities.cs#3)]
      [!code-vb[Trin_AddInInteropWalkthrough#3](../vsto/codesnippet/VisualBasic/Trin_AddInInteropWalkthrough/AddInUtilities.vb#3)]  
   
-     這個程式碼讓 `AddInUtilities` 類別為 COM 可見，並將 `ImportData` 方法加入這個類別。 若要公開[IDispatch](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-idispatch)介面`AddInUtilities`類別也有<xref:System.Runtime.InteropServices.ClassInterfaceAttribute>屬性，並實作為 COM 可見介面  
+     這個程式碼讓 `AddInUtilities` 類別為 COM 可見，並將 `ImportData` 方法加入這個類別。 為了公開 [IDispatch](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-idispatch) 介面， `AddInUtilities` 類別也會具有 <xref:System.Runtime.InteropServices.ClassInterfaceAttribute> 屬性，並實作為 COM 可見的介面。  
   
 ## <a name="expose-the-class-to-other-office-solutions"></a>類別公開給其他 Office 方案  
  若要將 `AddInUtilities` 類別公開給其他 Office 方案，請覆寫 <xref:Microsoft.Office.Tools.AddInBase.RequestComAddInAutomationService%2A> 類別中的 `ThisAddIn` 方法。 在您的覆寫中，傳回 `AddInUtilities` 類別的執行個體。  
@@ -158,7 +158,7 @@ ms.locfileid: "39513617"
  [從其他 Office 方案呼叫 VSTO 增益集的程式碼](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md)   
  [開發 Office 方案](../vsto/developing-office-solutions.md)   
  [如何： 在 Visual Studio 中建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)   
- [VSTO 增益集的架構](../vsto/architecture-of-vsto-add-ins.md)   
+ [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md)   
  [使用擴充性介面自訂 UI 功能](../vsto/customizing-ui-features-by-using-extensibility-interfaces.md)  
   
   

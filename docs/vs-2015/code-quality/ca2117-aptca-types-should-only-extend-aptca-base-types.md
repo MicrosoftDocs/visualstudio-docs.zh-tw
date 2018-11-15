@@ -20,15 +20,16 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 409133c173f497b1f21b36c7d8c4c89561c0aa15
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4b069674827ab266b4a4b7a99f81e039d487f6da
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49171453"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49922642"
 ---
 # <a name="ca2117-aptca-types-should-only-extend-aptca-base-types"></a>CA2117：APTCA 類型應該只擴充 APTCA 基底類型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|AptcaTypesShouldOnlyExtendAptcaBaseTypes|
@@ -44,15 +45,15 @@ ms.locfileid: "49171453"
 
  APTCA 屬性存在於上是完全受信任的組件，組件中的型別繼承自不允許部分信任呼叫端的類型，產生安全性弱點時，可能。 如果兩種型別`T1`並`T2`符合下列條件，惡意呼叫端可以使用型別`T1`略過隱含的完全信任的繼承要求保護`T2`:
 
--   `T1` 具有 APTCA 屬性的完全信任組件中宣告的公用型別。
+- `T1` 具有 APTCA 屬性的完全信任組件中宣告的公用型別。
 
--   `T1` 繼承自型別`T2`組件外部。
+- `T1` 繼承自型別`T2`組件外部。
 
--   `T2`組件不具有 APTCA 屬性，因此，應該不會繼承由部分信任的組件中的型別。
+- `T2`組件不具有 APTCA 屬性，因此，應該不會繼承由部分信任的組件中的型別。
 
- 部分信任的型別`X`可以繼承自`T1`，讓它存取中宣告的繼承成員`T2`。 因為`T2`沒有 APTCA 屬性，其直屬的衍生型別 (`T1`) 必須符合繼承要求完全信任。`T1`具有完全信任，因此滿足這項檢查。 安全性風險是，因為`X`不會參與滿足繼承要求保護`T2`來自不受信任的子類別化。 基於這個理由，具有 APTCA 屬性的型別必須延伸不具有屬性的類型。
+  部分信任的型別`X`可以繼承自`T1`，讓它存取中宣告的繼承成員`T2`。 因為`T2`沒有 APTCA 屬性，其直屬的衍生型別 (`T1`) 必須符合繼承要求完全信任。`T1`具有完全信任，因此滿足這項檢查。 安全性風險是，因為`X`不會參與滿足繼承要求保護`T2`來自不受信任的子類別化。 基於這個理由，具有 APTCA 屬性的型別必須延伸不具有屬性的類型。
 
- 另一個安全性問題，並可能是較常見的其中一個，是衍生型別 (`T1`) 可以透過程式設計錯誤，公開受保護的成員，從需要完全信任的型別 (`T2`)。 當發生這種情況時，不受信任的呼叫端就會獲得存取權應該僅適用於完全信任類型的資訊。
+  另一個安全性問題，並可能是較常見的其中一個，是衍生型別 (`T1`) 可以透過程式設計錯誤，公開受保護的成員，從需要完全信任的型別 (`T2`)。 當發生這種情況時，不受信任的呼叫端就會獲得存取權應該僅適用於完全信任類型的資訊。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
  如果違規所報告的類型位於組件，而無須 APTCA 屬性，請將它移除。

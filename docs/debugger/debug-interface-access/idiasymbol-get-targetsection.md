@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_targetsection |Microsoft 文件'
+title: 'Idiasymbol:: Get_targetsection |Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f8e624182226215c08d563e3ec5d1dd248f13e4b
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 145ef7ea1391e21ba1f7d472d616fd9e6d2ee01b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31480832"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49836589"
 ---
 # <a name="idiasymbolgettargetsection"></a>IDiaSymbol::get_targetSection
-擷取 thunk 目標位址 > 一的節。  
+擷取 thunk 目標的 [位址] 的區段。  
   
 ## <a name="syntax"></a>語法  
   
@@ -34,13 +34,13 @@ HRESULT get_targetSection (
   
 #### <a name="parameters"></a>參數  
  `pRetVal`  
- [out]區段部分 thunk 目標位址。  
+ [out]區段的 thunk 目標位址的一部分。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。  
+ 如果成功，則傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。  
   
 > [!NOTE]
->  傳回值為`S_FALSE`表示屬性不適用於符號。  
+>  傳回值為`S_FALSE`表示此屬性不適用於符號。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

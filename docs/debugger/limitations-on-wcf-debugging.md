@@ -18,23 +18,23 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ce5fda0eee836a8da5ad69053faa23d3c6e60082
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 001393a856dc374d92e11ff2d4707346a35aea12
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44280646"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49887419"
 ---
 # <a name="limitations-on-wcf-debugging"></a>WCF 偵錯的限制
 您可以使用三種方式開始對 WCF 服務進行偵錯：  
   
--   您要對呼叫服務的用戶端處理序進行偵錯。 偵錯工具會逐步執行服務。 服務不需要與用戶端應用程式位於相同的方案內。  
+- 您要對呼叫服務的用戶端處理序進行偵錯。 偵錯工具會逐步執行服務。 服務不需要與用戶端應用程式位於相同的方案內。  
   
--   您要對要求服務的用戶端處理序進行偵錯。 服務必須是方案的一部分。  
+- 您要對要求服務的用戶端處理序進行偵錯。 服務必須是方案的一部分。  
   
--   您使用**附加至處理序**附加至目前執行的服務。 偵錯會從服務內部開始進行。  
+- 您使用**附加至處理序**附加至目前執行的服務。 偵錯會從服務內部開始進行。  
   
- 本主題將描述這些情節的限制。  
+  本主題將描述這些情節的限制。  
   
 ## <a name="limitations-on-stepping-into-a-service"></a>逐步執行服務的限制  
  若要從您要進行偵錯的用戶端應用程式逐步執行服務，則必須符合下列條件：  
@@ -61,19 +61,19 @@ ms.locfileid: "44280646"
 ## <a name="limitations-on-automatic-attach-to-a-service"></a>自動附加至服務的限制  
  自動附加至服務具有下列限制：  
   
--   服務必須是您要偵錯之 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 方案的一部分。  
+- 服務必須是您要偵錯之 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 方案的一部分。  
   
--   服務必須已裝載。 它可能是網站專案 （檔案系統和 HTTP）、 Web 應用程式專案 （檔案系統和 HTTP） 或 WCF 服務程式庫專案的一部分。 WCF 服務庫專案可以是服務庫或工作流程服務庫。  
+- 服務必須已裝載。 它可能是網站專案 （檔案系統和 HTTP）、 Web 應用程式專案 （檔案系統和 HTTP） 或 WCF 服務程式庫專案的一部分。 WCF 服務庫專案可以是服務庫或工作流程服務庫。  
   
--   服務必須從 WCF 用戶端叫用。  
+- 服務必須從 WCF 用戶端叫用。  
   
--   您必須在 app.config 或 Web.config 檔案中使用下列程式碼啟用偵錯：  
+- 您必須在 app.config 或 Web.config 檔案中使用下列程式碼啟用偵錯：  
   
-    ```xml
-    <system.web>  
-      <compilation debug="true" />  
-    <system.web>  
-    ```  
+  ```xml
+  <system.web>  
+    <compilation debug="true" />  
+  <system.web>  
+  ```  
   
 ## <a name="self-hosting"></a>自我裝載  
  A*自我裝載的服務*是 iis 中，WCF 服務主機，不會執行的 WCF 服務或[!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]程式開發伺服器。 如需如何偵錯自我裝載的服務的資訊，請參閱[如何： 偵錯自我裝載 WCF 服務](../debugger/how-to-debug-a-self-hosted-wcf-service.md)。  

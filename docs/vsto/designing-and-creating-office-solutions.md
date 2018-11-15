@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 22ba120513d188f0a945ff18331b37062c08018f
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 05cf317823d4f5853d960109bd97da77ea8a927d
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35671364"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50671239"
 ---
 # <a name="design-and-create-office-solutions"></a>設計和建立 Office 方案
   Visual Studio 提供您可用來建立幾種不同類型之 Office 方案的專案範本。 文件的本節描述此專案範本，並提供有關建立 Office 專案的指引。 如需如何實作自訂程式碼和使用者介面，在您建立專案之後，請參閱[開發 Office 方案](../vsto/developing-office-solutions.md)。  
@@ -41,19 +41,19 @@ ms.locfileid: "35671364"
 ## <a name="choose-a-net-framework-version"></a>選擇 .NET Framework 版本  
  選取最符合您需求的專案類型後，您可以選擇要在開發程序中使用的 .NET Framework 版本。 您可以下列 Office 專案中的 .NET Framework 版本為目標：  
   
--   [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]  
+- [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]  
   
--   [!INCLUDE[net_client_v40_long](../vsto/includes/net-client-v40-long-md.md)]  
+- [!INCLUDE[net_client_v40_long](../vsto/includes/net-client-v40-long-md.md)]  
   
--   [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]  
+- [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]  
   
- 針對方案執行的終端使用者電腦上需要您選擇專案的.NET Framework 版本。 例如，如果您專案的目標[!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]，則[!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]需要使用者電腦上。 在此範例中，如果只在使用者電腦上安裝.NET Framework 3.5，不會執行您的解決方案。  
+  針對方案執行的終端使用者電腦上需要您選擇專案的.NET Framework 版本。 例如，如果您專案的目標[!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]，則[!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]需要使用者電腦上。 在此範例中，如果只在使用者電腦上安裝.NET Framework 3.5，不會執行您的解決方案。  
   
- 如果您移轉以 .NET Framework 3.5 為目標的 VSTO 增益集專案，Visual Studio 便會將您專案的目標 Framework 變更為 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 或更新版本，視您已安裝的 Office 版本而定。  
+  如果您移轉以 .NET Framework 3.5 為目標的 VSTO 增益集專案，Visual Studio 便會將您專案的目標 Framework 變更為 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 或更新版本，視您已安裝的 Office 版本而定。  
   
- 不過，Visual Studio 將目標變更為 Framework 之後，如果專案中的某些程式碼會使用特定功能，則您可能需要修改此程式碼。 如需如何變更目標 framework 的詳細資訊，請參閱[如何： 以.NET framework 版本為目標](../ide/how-to-target-a-version-of-the-dotnet-framework.md)。 如需您可能需要您在專案中變更的相關資訊，請參閱[設為.NET Framework 4 或更新版本的移轉 Office 方案](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)。  
+  不過，Visual Studio 將目標變更為 Framework 之後，如果專案中的某些程式碼會使用特定功能，則您可能需要修改此程式碼。 如需如何變更目標 framework 的詳細資訊，請參閱[如何： 以.NET framework 版本為目標](../ide/how-to-target-a-version-of-the-dotnet-framework.md)。 如需您可能需要您在專案中變更的相關資訊，請參閱[設為.NET Framework 4 或更新版本的移轉 Office 方案](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)。  
   
- 如果 Visual Studio 會變更您的專案的目標.NET Framework，而且您使用 ClickOnce 來部署您的解決方案，請確定也選取對應中的.NET Framework 版本**必要條件** 對話方塊。 當您為專案變更此目標 Framework 時，選取此選項並不會自動變更。 如需詳細資訊，請參閱 <<c0> [ 如何： 安裝必要條件來執行 Office 方案的使用者電腦上](http://msdn.microsoft.com/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98)。  
+  如果 Visual Studio 會變更您的專案的目標.NET Framework，而且您使用 ClickOnce 來部署您的解決方案，請確定也選取對應中的.NET Framework 版本**必要條件** 對話方塊。 當您為專案變更此目標 Framework 時，選取此選項並不會自動變更。 如需詳細資訊，請參閱 <<c0> [ 如何： 安裝必要條件來執行 Office 方案的使用者電腦上](https://msdn.microsoft.com/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98)。  
   
 > [!NOTE]  
 >  在使用 [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] 建立的 Office 專案中，您無法以 .NET Framework 3.5 或更早版本為目標。 您使用 [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] 建立的 Office 專案需要 [!INCLUDE[net_client_v40_long](../vsto/includes/net-client-v40-long-md.md)] 中首次推出的功能。  
@@ -61,7 +61,7 @@ ms.locfileid: "35671364"
 ### <a name="understand-when-the-office-pias-are-required-on-end-user-computers"></a>了解使用者電腦上需要 Office Pia 時  
  根據預設，Office 主要 interop 組件 (Pia) 不需要安裝在使用者電腦上，如果**內嵌 Interop 類型**專案中的每個 Office PIA 參考的屬性設定為 **，則為 True**，這是預設值。 在此情節中，您的方案所使用的 PIA 類型的類型資訊會在建置專案時嵌入至方案組件。 在執行階段，內嵌的類型資訊用而非使用 Pia，來呼叫 Office 應用程式的 COM 架構物件模型。 如需 Pia 類型如何內嵌至您的解決方案的詳細資訊，請參閱[類型等價和內嵌 interop 類型](/dotnet/framework/interop/type-equivalence-and-embedded-interop-types)。  
   
- 如果**內嵌 Interop 類型**專案中的每個 Office PIA 參考的屬性設定為**False**，必須安裝並在每個使用者電腦的全域組件快取中註冊 Office Pia，執行方案。 在大部分情況下，PIA 為 Office 的預設安裝，但是您也可以包含 PIA 可轉散發套件做為方案的必要條件。 如需詳細資訊，請參閱 < [Office 方案的部署必要條件](http://msdn.microsoft.com/9f672809-43a3-40a1-9057-397ce3b5126e)。  
+ 如果**內嵌 Interop 類型**專案中的每個 Office PIA 參考的屬性設定為**False**，必須安裝並在每個使用者電腦的全域組件快取中註冊 Office Pia，執行方案。 在大部分情況下，PIA 為 Office 的預設安裝，但是您也可以包含 PIA 可轉散發套件做為方案的必要條件。 如需詳細資訊，請參閱 < [Office 方案的部署必要條件](https://msdn.microsoft.com/9f672809-43a3-40a1-9057-397ce3b5126e)。  
   
 ### <a name="understand-the-client-profile"></a>了解 client profile  
  .NET Framework Client Profile 是完整 .NET Framework 的子集。 如果您只需要使用 .NET Framework 中的用戶端功能，而且想要提供 Office 方案的最快速部署經驗，則可以將 .NET Framework Client Profile 當做目標。 如需詳細資訊，請參閱 < [.NET Framework client profile](/dotnet/framework/deployment/client-profile)。  

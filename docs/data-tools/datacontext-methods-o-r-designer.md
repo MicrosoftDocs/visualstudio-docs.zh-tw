@@ -10,12 +10,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 3d8e3a39c79b5dee339c8835c78143277f3015f6
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 95d84442b4aba74dbc44b7aacc97d0a965162150
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36756125"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49924963"
 ---
 # <a name="datacontext-methods-or-designer"></a>DataContext 方法 (O/R 設計工具)
 
@@ -34,13 +34,13 @@ ms.locfileid: "36756125"
 
 DataContext 方法是指在資料庫中對應至預存程序和函式的方法。 您可以建立和加入 DataContext 方法上**方法**窗格**O/R Designer**。 有兩種不同類型<xref:System.Data.Linq.DataContext>方法，傳回一或多個結果集，以及不這麼做：
 
--   傳回一個或多個結果集的 <xref:System.Data.Linq.DataContext> 方法：
+- 傳回一個或多個結果集的 <xref:System.Data.Linq.DataContext> 方法：
 
-     如果您的應用程式只需要執行資料庫中的預存程序和函式並傳回結果，請建立這種 <xref:System.Data.Linq.DataContext> 方法。 如需詳細資訊，請參閱 <<c0> [ 如何： 對應至預存程序和函式 （O/R 設計工具） 建立 DataContext 方法](../data-tools/how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-o-r-designer.md)，System.Data.Linq.ISingleResult\<T >，並<xref:System.Data.Linq.IMultipleResults>。
+   如果您的應用程式只需要執行資料庫中的預存程序和函式並傳回結果，請建立這種 <xref:System.Data.Linq.DataContext> 方法。 如需詳細資訊，請參閱 <<c0> [ 如何： 對應至預存程序和函式 （O/R 設計工具） 建立 DataContext 方法](../data-tools/how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-o-r-designer.md)，System.Data.Linq.ISingleResult\<T >，並<xref:System.Data.Linq.IMultipleResults>。
 
--   不會傳回結果集的 <xref:System.Data.Linq.DataContext> 方法：例如特定實體類別的插入、更新和刪除作業。
+- 不會傳回結果集的 <xref:System.Data.Linq.DataContext> 方法：例如特定實體類別的插入、更新和刪除作業。
 
-     建立這種<xref:System.Data.Linq.DataContext>方法時您的應用程式必須執行預存程序，而不是使用預設[!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)]行為儲存修改的實體類別與資料庫之間的資料。 如需詳細資訊，請參閱 <<c0> [ 如何： 指派預存程序來執行更新、 插入和刪除 （O/R 設計工具）](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)。
+   建立這種<xref:System.Data.Linq.DataContext>方法時您的應用程式必須執行預存程序，而不是使用預設[!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)]行為儲存修改的實體類別與資料庫之間的資料。 如需詳細資訊，請參閱 <<c0> [ 如何： 指派預存程序來執行更新、 插入和刪除 （O/R 設計工具）](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)。
 
 ## <a name="return-types-of-datacontext-methods"></a>DataContext 方法的傳回型別
 
@@ -56,7 +56,7 @@ DataContext 方法是指在資料庫中對應至預存程序和函式的方法�
 - [LINQ to SQL 工具，在 Visual Studio 中](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)
 - [預存程序](/dotnet/framework/data/adonet/sql/linq/stored-procedures)
-- [如何： 建立對應至預存程序和函式 （O/R 設計工具） 的 DataContext 方法](../data-tools/how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-o-r-designer.md)
-- [如何： 指派預存程序來執行更新、 插入和刪除 （O/R 設計工具）](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)
+- [如何：建立對應至預存程序和函式的 DataContext 方法 (O/R 設計工具)](../data-tools/how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-o-r-designer.md)
+- [如何：指派用來執行更新、插入和刪除的預存程序 (O/R 設計工具)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)
 - [逐步解說：自訂實體類別的插入、更新和刪除行為](../data-tools/walkthrough-customizing-the-insert-update-and-delete-behavior-of-entity-classes.md)
 - [逐步解說： 建立 LINQ to SQL 類別 （O-R 設計工具）](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)

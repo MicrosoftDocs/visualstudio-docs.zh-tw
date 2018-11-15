@@ -1,5 +1,5 @@
 ---
-title: DISASSEMBLY_FLAGS |Microsoft 文件
+title: DISASSEMBLY_FLAGS |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: dd1aa9c73fad40d07be371ad7f9b3108464aeb34
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f6d42a7c5e9247359abfcdb4d65db5a4e0de247e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31101358"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49916386"
 ---
 # <a name="disassemblyflags"></a>DISASSEMBLY_FLAGS
 指定反組譯碼的旗標。  
@@ -55,24 +55,24 @@ public enum enum_DISASSEMBLY_FLAGS {
  指出這項指示是比前一個不同的文件中。  
   
  DF_DISABLED  
- 表示將不會執行這個指令。  
+ 表示將不會執行這項指示。  
   
  DF_INSTRUCTION_ACTIVE  
- 指出這項指示是其中一個要執行下一個程序 （可能會有多個）。  
+ 指出這項指示是其中一個要執行的下一步 的指示 （可能會有多個）。  
   
  DF_DATA  
- 指出這項指示是實際資料 （而不是程式碼）。  
+ 指出這項指示是真正的資料 （而不是程式碼）。  
   
  DF_HASSOURCE  
- 指出這個指示有來源。 某些指示，例如程式碼剖析或記憶體回收集合程式碼，有沒有對應的來源。  
+ 指出這個指示會有來源。 一些指示，例如程式碼剖析或記憶體回收集合程式碼，有沒有對應的來源。  
   
  DF_DOCUMENT_CHECKSUM  
- 表示`bstrDocumentUrl`欄位包含總和檢查碼資料後的文件 URL。 請參閱 < 備註 > 一節的[DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md)結構儲存的總和檢查碼資料的方式。  
+ 表示`bstrDocumentUrl`欄位包含總和檢查碼資料，在文件 URL。 請參閱 < 備註 > 一節[DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md)結構總和檢查碼資料的儲存方式。  
   
 ## <a name="remarks"></a>備註  
- 做為`dwFlags`隸屬[DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md)結構。  
+ 做`dwFlags`隸屬[DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md)結構。  
   
- 這些旗標可能會合併使用位元`OR`。  
+ 這些旗標可能會結合的位元`OR`。  
   
 ## <a name="requirements"></a>需求  
  標頭： msdbg.h  

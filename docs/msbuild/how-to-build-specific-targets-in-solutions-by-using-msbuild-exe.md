@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b735d1543c9af4fead999e3c530fad063672337e
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: fb1dc2885d64999ac9f4d12568fd7da29a783d8e
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39080578"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880652"
 ---
 # <a name="how-to-build-specific-targets-in-solutions-by-using-msbuildexe"></a>如何：使用 MSBuild.exe 在方案中建置特定目標
 您可以使用 *MSBuild.exe*，在方案中建置特定專案的特定目標。  
@@ -28,13 +28,13 @@ ms.locfileid: "39080578"
   
 1.  在命令列中，輸入 `MSBuild.exe <SolutionName>.sln`，其中 `<SolutionName>` 會對應至包含您想要執行之目標的方案檔案名稱。  
   
-2. 以 \<ProjectName>:\<TargetName> 格式，在 `/target:` 參數之後指定目標。 如果專案名稱包含以下任何字元：`%`、`$`、`@`、`;`、`.`、`(`、`)` 或 `'`，將其取代為指定目標名稱中的 `_`。
+2. 以 \<ProjectName>:\<TargetName> 格式，在 `-target:` 參數之後指定目標。 如果專案名稱包含以下任何字元：`%`、`$`、`@`、`;`、`.`、`(`、`)` 或 `'`，將其取代為指定目標名稱中的 `_`。
   
 ## <a name="example"></a>範例  
  下列範例會執行 `NotInSlnFolder` 專案的 `Rebuild` 目標，然後執行 `InSolutionFolder` 專案的 `Clean` 目標，其位於 NewFolder 方案資料夾中。  
   
 ```cmd
-msbuild SlnFolders.sln /target:NotInSlnfolder:Rebuild;NewFolder\InSolutionFolder:Clean
+msbuild SlnFolders.sln -target:NotInSlnfolder:Rebuild;NewFolder\InSolutionFolder:Clean
 ```
 
 ## <a name="troubleshooting"></a>疑難排解
@@ -46,5 +46,5 @@ msbuild SlnFolders.sln /target:NotInSlnfolder:Rebuild;NewFolder\InSolutionFolder
 ## <a name="see-also"></a>另請參閱  
  [命令列參考](../msbuild/msbuild-command-line-reference.md)   
  [MSBuild 參考](../msbuild/msbuild-reference.md)   
- [ MSBuild](../msbuild/msbuild.md)  
+ [MSBuild](../msbuild/msbuild.md)  
  [MSBuild 概念](../msbuild/msbuild-concepts.md)

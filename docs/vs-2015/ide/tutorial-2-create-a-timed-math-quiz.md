@@ -14,32 +14,32 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5d86d42ce7e345a30c56390bede6957dff8bcd67
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8b0b7a5949ab8fe624a087a1e024367f896ddb99
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49205064"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49884884"
 ---
 # <a name="tutorial-2-create-a-timed-math-quiz"></a>教學課程 2：建立計時的數學測驗
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 在本教學課程中，您將會建置一項測驗，在測驗中，受測者必須在指定的時間內回答四個隨機的算術問題。 您將學習如何：  
   
--   使用 `Random` 類別產生隨機數字。  
+- 使用 `Random` 類別產生隨機數字。  
   
--   使用 **Timer** 控制項觸發事件，使其在特定時間發生。  
+- 使用 **Timer** 控制項觸發事件，使其在特定時間發生。  
   
--   使用 `if else` 陳述式控制程式流程。  
+- 使用 `if else` 陳述式控制程式流程。  
   
--   在程式碼中執行基本的算術運算。  
+- 在程式碼中執行基本的算術運算。  
   
- 完成時，您的測驗看起來會像下圖一樣，但數字不同。  
+  完成時，您的測驗看起來會像下圖一樣，但數字不同。  
   
- ![包含四個問題的數學測驗](../ide/media/express-finishedquiz.png "Express_FinishedQuiz")  
-您在本教學課程中建立的測驗  
+  ![包含四個問題的數學測驗](../ide/media/express-finishedquiz.png "Express_FinishedQuiz")  
+  您在本教學課程中建立的測驗  
   
- 若要下載測驗的完整版，請參閱[Complete Math Quiz tutorial sample](http://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c)(完整的數學測驗教學課程範例)。  
+  若要下載測驗的完整版，請參閱[Complete Math Quiz tutorial sample](http://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c)(完整的數學測驗教學課程範例)。  
   
 > [!NOTE]
 >  本教學課程中同時涵蓋 Visual C# 和 Visual Basic，所以請將焦點放在您使用的程式語言專屬資訊。  

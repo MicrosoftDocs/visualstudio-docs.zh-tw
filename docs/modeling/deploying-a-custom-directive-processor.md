@@ -11,12 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 3f4af12b7c73aa2da7f580b11b1984aa2c8238b7
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 16ee7eae30d947e6a83444c8e744cbaca398bf94
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39566823"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49894814"
 ---
 # <a name="deploying-a-custom-directive-processor"></a>部署自訂指示詞處理器
 
@@ -154,7 +154,7 @@ ms.locfileid: "39566823"
 
  確認 .pkgdef 檔是否出現在組建資料夾中，這個資料夾通常是 bin\Debug 或 bin\Release。 如果沒有出現，請使用文字編輯器開啟 .csproj 檔，並移除下列節點：`<GeneratePkgDefFile>false</GeneratePkgDefFile>`。
 
- 如需詳細資訊，請參閱 < [Vspackage](../extensibility/internals/vspackages.md)。
+ 如需詳細資訊，請參閱 [VSPackages](../extensibility/internals/vspackages.md)。
 
 ## <a name="setting-a-registry-key"></a>設定登錄機碼
  除非不得已，否則不建議使用這個方法來安裝自訂指示詞處理器。 它無法提供啟用和停用指示詞處理器的便利方式，也無法提供散發指示詞處理器給其他使用者的方法。
@@ -164,30 +164,30 @@ ms.locfileid: "39566823"
 
 #### <a name="to-register-a-directive-processor-by-setting-a-registry-key"></a>若要設定登錄機碼來註冊指示詞處理器
 
-1.  執行 `regedit`。
+1. 執行 `regedit`。
 
-2.  在 regedit 中巡覽至
+2. 在 regedit 中巡覽至
 
-     **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\\*.0\TextTemplating\DirectiveProcessors**
+    **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\\*.0\TextTemplating\DirectiveProcessors**
 
-     如果您想要安裝 Visual Studio 的實驗版本中的指示詞處理器，請在"11.0"之後插入"Exp"。
+    如果您想要安裝 Visual Studio 的實驗版本中的指示詞處理器，請在"11.0"之後插入"Exp"。
 
-3.  加入與指示詞處理器相同名稱的登錄機碼。
+3. 加入與指示詞處理器相同名稱的登錄機碼。
 
-    -   在登錄樹狀目錄中，以滑鼠右鍵按一下**DirectiveProcessors**節點，指向**新增**，然後按一下**金鑰**。
+   -   在登錄樹狀目錄中，以滑鼠右鍵按一下**DirectiveProcessors**節點，指向**新增**，然後按一下**金鑰**。
 
-4.  根據下表，在新節點中加入 Class 和 CodeBase 或 Assembly 的字串值。
+4. 根據下表，在新節點中加入 Class 和 CodeBase 或 Assembly 的字串值。
 
-    1.  以滑鼠右鍵按一下您所建立的節點，指向**的新**，然後按一下**字串值**。
+   1.  以滑鼠右鍵按一下您所建立的節點，指向**的新**，然後按一下**字串值**。
 
-    2.  輸入該值的名稱。
+   2.  輸入該值的名稱。
 
-    3.  按兩下名稱，然後編輯資料。
+   3.  按兩下名稱，然後編輯資料。
 
- 如果自訂指示詞處理器不在 GAC 中，則登錄子機碼看起來應該如下表所示：
+   如果自訂指示詞處理器不在 GAC 中，則登錄子機碼看起來應該如下表所示：
 
 |名稱|類型|資料|
-|----------|----------|----------|
+|-|-|-|
 |(預設值)|REG_SZ|(值未設定)|
 |類別|REG_SZ|**\<命名空間名稱 >。\<類別名稱 >**|
 |程式碼基底|REG_SZ|**\<您的路徑 >\\< 組件名稱\>**|
@@ -195,7 +195,7 @@ ms.locfileid: "39566823"
  如果組件在 GAC 中，則登錄子機碼看起來應該如下表所示：
 
 |名稱|類型|資料|
-|----------|----------|----------|
+|-|-|-|
 |(預設值)|REG_SZ|(值未設定)|
 |類別|REG_SZ|\<**您完整的類別名稱**>|
 |Assembly|REG_SZ|\<**您在 GAC 中的組件名稱**>|

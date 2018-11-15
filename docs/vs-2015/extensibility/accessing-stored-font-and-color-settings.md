@@ -17,12 +17,12 @@ ms.assetid: beba7174-e787-45c2-b6ff-a60f67ad4998
 caps.latest.revision: 27
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8179262ceabe1765ee6c9eab96553bcbcbbee419
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: bab850a6943268581035336a923232377e6489f2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49191395"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49843674"
 ---
 # <a name="accessing-stored-font-and-color-settings"></a>存取預存的字型和色彩設定
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,17 +53,17 @@ ms.locfileid: "49191395"
 ## <a name="to-use-state-persistence-of-fonts-and-colors"></a>若要使用的字型和色彩的狀態持續性  
  保存的字型和色彩牽涉到：  
   
--   與儲存在登錄中的設定，同步處理的 IDE 設定。  
+- 與儲存在登錄中的設定，同步處理的 IDE 設定。  
   
--   傳播登錄修改資訊。  
+- 傳播登錄修改資訊。  
   
--   設定和擷取儲存在登錄中的設定。  
+- 設定和擷取儲存在登錄中的設定。  
   
- IDE 設定與同步處理的儲存體設定是透明化的。 基礎的 IDE 會自動寫入更新的設定，如**顯示的項目**至類別的登錄項目。  
+  IDE 設定與同步處理的儲存體設定是透明化的。 基礎的 IDE 會自動寫入更新的設定，如**顯示的項目**至類別的登錄項目。  
   
- 如果多個的 Vspackage 會共用特定分類，VSPackage 應要求會產生事件時的方法<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage>介面用來修改預存的登錄設定。  
+  如果多個的 Vspackage 會共用特定分類，VSPackage 應要求會產生事件時的方法<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage>介面用來修改預存的登錄設定。  
   
- 根據預設，不會啟用事件產生。 若要啟用的事件產生時，類別必須開啟使用<xref:Microsoft.VisualStudio.Shell.Interop.__FCSTORAGEFLAGS>。 這會導致呼叫適當 IDE <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents> VSPackage 實作的方法。  
+  根據預設，不會啟用事件產生。 若要啟用的事件產生時，類別必須開啟使用<xref:Microsoft.VisualStudio.Shell.Interop.__FCSTORAGEFLAGS>。 這會導致呼叫適當 IDE <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents> VSPackage 實作的方法。  
   
 > [!NOTE]
 >  透過修改**字型和色彩** 屬性頁產生事件的獨立<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage>。 您可以使用<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorCacheManager>介面，以判斷呼叫的方法之前是否需要更新的快取的字型和色彩設定<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage>類別。  

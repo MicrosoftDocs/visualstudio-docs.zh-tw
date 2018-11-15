@@ -1,5 +1,5 @@
 ---
-title: THUNK_ORDINAL |Microsoft 文件
+title: THUNK_ORDINAL |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b0701706deee68cf2dde522d48f9aa62b9a00142
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: a92e0fa81bdfc7c33e790c5022c2fbe341d632be
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31481498"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49847704"
 ---
 # <a name="thunkordinal"></a>THUNK_ORDINAL
-將指定的 thunk 型別。  
+將指定的 thunk 類型。  
   
 ## <a name="syntax"></a>語法  
   
@@ -51,13 +51,13 @@ typedef enum THUNK_ORDINAL {
  虛擬呼叫 thunk。  
   
  THUNK_ORDINAL_PCODE  
- P 程式碼 thunk。  
+ P-程式碼 thunk。  
   
  THUNK_ORDINAL_LOAD  
  延遲載入 thunk。  
   
  THUNK_ORDINAL_TRAMP_INCREMENTAL  
- 累加 trampoline thunk （trampoline thunk 用來從一個記憶體空間的呼叫跳躍到另一個）。  
+ 累加 trampoline thunk （trampoline thunk 用來從一個記憶體空間的呼叫退回到另一個）。  
   
  THUNK_ORDINAL_TRAMP_BRANCHISLAND  
  分支點 trampoline thunk。  

@@ -16,12 +16,12 @@ ms.assetid: 12b6d6db-0d22-4aaa-aa7d-1365f759b7b0
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c31d3b9f18ede2137b5cffe2dd3600de727b9de1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e85e0a56ac11baf93ad743569d57152601077599
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49235686"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49815919"
 ---
 # <a name="automation-model-overview"></a>自動化模型概觀
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -40,15 +40,15 @@ Visual Studio automation 物件
   
  其中您可以考慮擴充 automation 模型之環境的位置：  
   
--   專案  
+- 專案  
   
--   文件  
+- 文件  
   
--   程式碼  
+- 程式碼  
   
--   組建  
+- 組建  
   
- 如需有關自動化的詳細資訊，請參閱[Automation 和擴充性 Visual Studio](http://msdn.microsoft.com/library/f71a2253-3e68-4e5e-9a18-edbba816caf6)。 這份文件和文件它會提供連結，幫助您做出有關您應該提供 vspackage 的自動化的方式。  
+  如需有關自動化的詳細資訊，請參閱[Automation 和擴充性 Visual Studio](http://msdn.microsoft.com/library/f71a2253-3e68-4e5e-9a18-edbba816caf6)。 這份文件和文件它會提供連結，幫助您做出有關您應該提供 vspackage 的自動化的方式。  
   
 ## <a name="see-also"></a>另請參閱  
  [如何： 建立增益集](http://msdn.microsoft.com/library/50be56d2-e3a5-4cd2-8569-2a0666b268ce)

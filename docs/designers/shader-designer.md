@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e57a42846833024fefb4bf73660484123474d00a
-ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
+ms.openlocfilehash: 6f2f53e801df70345e34c14c15d4456e39561623
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "47029049"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49847626"
 ---
 # <a name="shader-designer"></a>著色器設計工具
 
@@ -31,7 +31,7 @@ ms.locfileid: "47029049"
 [著色器設計工具] 支援下列著色器格式︰
 
 |格式名稱|副檔名|支援的作業 (檢視、編輯、匯出)|
-|-----------------|--------------------|-------------------------------------------------|
+|-----------------| - | - |
 |有向圖著色器語言|*.dgsl*|檢視、編輯|
 |HLSL 著色器 (原始程式碼)|*.hlsl*|匯出|
 |HLSL 著色器 (位元組程式碼)|*.cso*|匯出|
@@ -177,7 +177,7 @@ ms.locfileid: "47029049"
 ## <a name="keyboard-shortcuts"></a>鍵盤快速鍵
 
 |命令|鍵盤快速鍵|
-|-------------|------------------------|
+|-------------| - |
 |切換至 [選取] 模式|**Ctrl**+**G**、**Ctrl**+**Q**<br /><br /> **S**|
 |切換到 [縮放] 模式|**Ctrl**+**G**、**Ctrl**+**Z**<br /><br /> **Z**|
 |切換到 [移動瀏覽] 模式|**Ctrl**+**G**、**Ctrl**+**P**<br /><br /> **K**|
@@ -204,5 +204,5 @@ ms.locfileid: "47029049"
 |標題|描述|
 |-----------|-----------------|
 |[使用 3D 資產來打造遊戲和應用程式](../designers/working-with-3-d-assets-for-games-and-apps.md)|提供 Visual Studio 工具的概觀，您可用來處理紋理及影像、3D 模型和著色器效果。|
-|[影像編輯器](../designers/image-editor.md)|描述如何使用 Visual Studio 影像編輯器來處理紋理和影像。|
+|[Image Editor](../designers/image-editor.md)|描述如何使用 Visual Studio 影像編輯器來處理紋理和影像。|
 |[模型編輯器](../designers/model-editor.md)|描述如何使用 Visual Studio 模型編輯器來處理 3D 模型。|

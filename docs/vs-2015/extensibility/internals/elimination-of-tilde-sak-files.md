@@ -17,12 +17,12 @@ ms.assetid: 5277b5fa-073b-4bd1-8ba1-9dc913aa3c50
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7dda375cb4657bc6fcc2089341600611b370e52b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c7422b0dae02b12d731713f6da416361798d3276
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49216095"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49824304"
 ---
 # <a name="elimination-of-sak-files"></a>消除 ~SAK 檔案
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -32,11 +32,11 @@ ms.locfileid: "49216095"
 ## <a name="sak-files"></a>~ SAK 檔案  
  Visual Studio.NET 2003年建立暫存檔案前面加上 ~ SAK。 這些檔案用來判斷是否要支援原始檔控制外掛程式：  
   
--   MSSCCPRJ。SCC 檔案。  
+- MSSCCPRJ。SCC 檔案。  
   
--   多個 （共用） 的簽出。  
+- 多個 （共用） 的簽出。  
   
- 外掛程式的支援提供的進階函式在原始檔控制外掛程式 API 1.2，IDE 可以偵測到這些功能，而不需要建立暫存檔案，透過使用新功能、 旗標和函式，下列各節中詳述。  
+  外掛程式的支援提供的進階函式在原始檔控制外掛程式 API 1.2，IDE 可以偵測到這些功能，而不需要建立暫存檔案，透過使用新功能、 旗標和函式，下列各節中詳述。  
   
 ## <a name="new-capability-flags"></a>新的功能旗標  
  `SCC_CAP_SCCFILE`  

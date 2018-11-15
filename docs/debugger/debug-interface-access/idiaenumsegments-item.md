@@ -1,5 +1,5 @@
 ---
-title: 'Idiaenumsegments:: Item |Microsoft 文件'
+title: 'Idiaenumsegments:: Item |Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 64089113f0ad5b0e3fea0189a5dc3bf680213158
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 19d42e8bb2cdf950043b6a60a0db82706cf582ac
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31466340"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49896402"
 ---
 # <a name="idiaenumsegmentsitem"></a>IDiaEnumSegments::Item
-擷取透過索引的區段。  
+透過索引中擷取的區段。  
   
 ## <a name="syntax"></a>語法  
   
@@ -35,13 +35,13 @@ HRESULT Item (
   
 #### <a name="parameters"></a>參數  
  索引  
- [in]索引的[IDiaSegment](../../debugger/debug-interface-access/idiasegment.md)要擷取的物件。 索引是在 0 到`count`-1，其中`count`傳回[idiaenumsegments:: Get_count](../../debugger/debug-interface-access/idiaenumsegments-get-count.md)方法。  
+ [in]索引[IDiaSegment](../../debugger/debug-interface-access/idiasegment.md)要擷取的物件。 索引是在範圍介於 0 到`count`-1，其中`count`會傳回[idiaenumsegments:: Get_count](../../debugger/debug-interface-access/idiaenumsegments-get-count.md)方法。  
   
  區段  
- [out]傳回[IDiaSegment](../../debugger/debug-interface-access/idiasegment.md)物件，代表所需的區段。  
+ [out]傳回[IDiaSegment](../../debugger/debug-interface-access/idiasegment.md)物件，表示所需的區段。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDiaEnumSegments](../../debugger/debug-interface-access/idiaenumsegments.md)   

@@ -1,7 +1,7 @@
 ---
 title: 使用 Python 教學課程的步驟 4：偵錯
 description: 在 Visual Studio 中 Python 功能核心逐步解說的步驟 4，涵蓋如何在偵錯工具中執行 Python 程式碼。
-ms.date: 06/26/2018
+ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: tutorial
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6b163a7e421e3713cb160f4d0274f736d5d977d7
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 312db1642fac00cb122aee5cf8c4309675520b5e
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39513331"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220130"
 ---
 # <a name="step-4-run-code-in-the-debugger"></a>步驟 4：在偵錯工具中執行程式碼
 
@@ -24,7 +24,7 @@ ms.locfileid: "39513331"
 
 除了管理專案、提供豐富的編輯體驗以及**互動式**視窗以外，Visual Studio 還針對 Python 程式碼提供完整功能的偵錯。 在偵錯工具中，您可以逐步執行程式碼 (包含迴圈的每個反覆項目)。 只要符合特定條件，您也可以暫停程式。 在偵錯工具中暫停程式的任何時間點，您都可以檢查整個程式狀態，以及變更變數的值。 這類動作是追蹤程式 Bug 的必要項目，也提供仔細遵循確切程式流程的極實用輔助。
 
-1. 將 *PythonApplication1.py* 檔案中的程式碼取代為下列程式碼。 程式碼的此差異會展開 `make_dot_string`，以在偵錯工具中檢查其離散步驟。 它也會將 `for` 迴圈放在 `main` 函式中，並呼叫該函式來明確執行它：
+1. 將 *PythonApplication1.py* 檔案中的程式碼取代為下列程式碼。 程式碼的這項差異會展開 `make_dot_string`，以在偵錯工具中檢查其離散步驟。 它也會將 `for` 迴圈放在 `main` 函式中，並呼叫該函式來明確執行它：
 
     ```python
     from math import cos, radians
@@ -88,7 +88,7 @@ ms.locfileid: "39513331"
 
 1. 繼續逐步執行 [逐步執行]，並注意到，當您到達 `make_dot_string` 結尾時，下個步驟會回到 `s` 變數中具有新傳回值的 `for` 迴圈。 當您再次逐步執行到 `print` 陳述式時，會注意到對 `print` 的 [逐步執行] 不會進入該函式。 原因是 `print` 不是以 Python 撰寫，而是 Python 執行階段內的原生程式碼。
 
-1. 繼續使用 [逐步執行]，直到您再次到達 `make_dot_string`。 然後使用 [跳離函式]，並注意到，您回到 `for` 迴圈。 使用 [跳離函式]，偵錯工具會執行函式的其餘部分，然後在發出呼叫的程式碼中自動暫停。 如果您逐步執行您想要偵錯之較長函式的某個部分，但不需要逐步執行其餘部分，也不想要在發出呼叫的程式碼中設定明確的中斷點，則這十分有用。
+1. 繼續使用 [逐步執行]，直到您再次到達 `make_dot_string`。 然後使用 [跳離函式]，並注意到，您回到 `for` 迴圈。 使用 [跳離函式]，偵錯工具會執行函式的其餘部分，然後在發出呼叫的程式碼中自動暫停。 如果您逐步執行您想要偵錯之較長函式的某個部分，但不需要逐步執行其餘部分，也不想要在要呼叫的程式碼中設定明確的中斷點，則這十分有用。
 
 1. 若要繼續執行程式，直到達到下一個中斷點，請使用 [繼續] (**F5**)。 因為您在 `for` 迴圈中有中斷點，所以會在下一個反覆項目中斷。
 

@@ -49,12 +49,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a3296ec07194f1815b819f69cf97224be50368f
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 3cb2a939fb569ca9c50e6334fa7b836a6953dca4
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34747811"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219155"
 ---
 # <a name="options-text-editor-general"></a>一般、文字編輯器、選項
 
@@ -88,20 +88,12 @@ ms.locfileid: "34747811"
 選取時，編輯器文字區域的左邊緣處會顯示垂直邊界。 您可以按一下此邊界來選取整行文字，或按一下並拖曳以選取連續文字行。
 
 |選取範圍邊界起點|選取範圍邊界終點|
-|-------------------------|--------------------------|
+| - | - |
 |![HTMLpageSelectionMarginOn 螢幕擷取畫面](../../ide/reference/media/vxselmaron.gif)|![HTMLpageSelectionMarginOff 螢幕擷取畫面](../../ide/reference/media/vxselmaroff.gif)|
 
 ### <a name="indicator-margin"></a>指示區邊界
 
 選取時，編輯器文字區域的左邊緣外圍會顯示垂直邊界。 當您按一下此邊界時，會顯示文字相關的圖示和工具提示。 比方說，指示區邊界會出現中斷點或工作清單捷徑。 列印時不會印出指示區邊界的資訊。
-
-### <a name="vertical-scroll-bar"></a>垂直捲軸
-
-選取時，會顯示垂直捲軸；您可以上下捲動來檢視位於編輯器檢視區域外的項目。 如果未顯示垂直捲軸，您可以使用 Page Up、Page Down 鍵和方向鍵來捲動。
-
-### <a name="horizontal-scroll-bar"></a>水平捲軸
-
-選取時，會顯示水平捲軸；您可以左右捲動來檢視位於編輯器檢視區域外的項目。 如果未顯示水平捲軸，您可以使用方向鍵捲動。
 
 ### <a name="highlight-current-line"></a>反白顯示目前的行
 

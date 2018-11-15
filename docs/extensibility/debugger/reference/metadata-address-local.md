@@ -1,5 +1,5 @@
 ---
-title: METADATA_ADDRESS_LOCAL |Microsoft 文件
+title: METADATA_ADDRESS_LOCAL |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 720f150be1b7cf992f0949750dd52218939c7d2e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ca9a6b1fac3627020363c92db8a2f05e5b5900ff
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31125514"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49846599"
 ---
 # <a name="metadataaddresslocal"></a>METADATA_ADDRESS_LOCAL
 此結構表示 （通常是函式或方法） 的範圍內的區域變數的位址。  
@@ -45,18 +45,18 @@ public struct METADATA_ADDRESS_LOCAL {
   
 ## <a name="terms"></a>詞彙  
  tokMethod  
- 識別碼的方法或函式本機變數是的一部分。  
+ 方法或函式識別碼的本機變數是的一部分。  
   
- [C + +]`_mdToken`是`typedef`32 位元`int`。  
+ [C + +]`_mdToken`已`typedef`適用於 32 位元`int`。  
   
  pLocal  
- 此結構表示的位址語彙基元。  
+ 這個結構是表示其位址之語彙基元。  
   
  dwIndex  
- 可以是這個方法或函式，或其他值 （語言特有） 的本機變數的索引。  
+ 可以是方法或函式或其他值 （語言特有） 中的這個本機變數的索引。  
   
 ## <a name="remarks"></a>備註  
- 這個結構是中的等位的一部分[DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)結構時`dwKind`欄位`DEBUG_ADDRESS_UNION`結構設為`ADDRESS_KIND_LOCAL`(介於[ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)列舉型別）。  
+ 此結構是中的等位的一部分[DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)結構的時機`dwKind`欄位`DEBUG_ADDRESS_UNION`結構設定為`ADDRESS_KIND_LOCAL`(中的值[ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)列舉型別）。  
   
  `Warning:` [只有 c + +] 如果`pLocal`不是 null，則您必須呼叫`Release`語彙基元的指標 (`addr`是中的欄位[DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md)結構):  
   

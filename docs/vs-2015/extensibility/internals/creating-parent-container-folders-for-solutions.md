@@ -16,12 +16,12 @@ ms.assetid: 961e68ed-2603-4479-a306-330eda2b2efa
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f731c9f441aecf5277dafffc5cc8b10d1a703a4b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8bf3de0c558dbda1d1b43e7b5887780f1a1e2b90
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49307712"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49832055"
 ---
 # <a name="creating-parent-container-folders-for-solutions"></a>為方案建立父容器資料夾
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -42,15 +42,15 @@ ms.locfileid: "49307712"
   
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE 幾乎一律會 SUR 資料夾建立時將方案加入原始檔控制。 具體來說，它會在下列情況：  
   
--   專案是檔案共用的 Web 專案。  
+- 專案是檔案共用的 Web 專案。  
   
--   有不同的磁碟機，專案和方案檔。  
+- 有不同的磁碟機，專案和方案檔。  
   
--   有不同的共用專案和方案檔。  
+- 有不同的共用專案和方案檔。  
   
--   專案已加入個別 （在原始檔控制的方案）。  
+- 專案已加入個別 （在原始檔控制的方案）。  
   
- 在 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]建議 SUR 資料夾的名稱是不含副檔名的方案名稱相同。 下表摘要說明兩種版本的行為。  
+  在 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]建議 SUR 資料夾的名稱是不含副檔名的方案名稱相同。 下表摘要說明兩種版本的行為。  
   
 |功能|tSource 控制外掛程式 API 版本 1.1|原始檔控制外掛程式 API 版本 1.2|  
 |-------------|----------------------------------------------|---------------------------------------------|  

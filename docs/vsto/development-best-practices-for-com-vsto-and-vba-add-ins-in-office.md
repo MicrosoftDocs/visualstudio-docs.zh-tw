@@ -14,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: bf00afb612e12ce6712206808897a3b851d68b3a
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 3f821b9769b9353fbee6379ddc1b3826f87ac2de
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35670822"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50671089"
 ---
 # <a name="development-best-practices-for-com-vsto-and-vba-add-ins-in-office"></a>COM、 VSTO 和 VBA 增益集 Office 的開發最佳作法
   如果您正在適用於 Office 開發 COM、 VSTO 或 VBA 增益集，請遵循本文中所述的開發最佳作法。   這有助於確保：
@@ -39,12 +39,12 @@ ms.locfileid: "35670822"
 如果您的方案會使用較早版本的.NET，我們建議您更新您的解決方案，以使用.NET 4.0 或更新版本。 使用.NET 4.0 或更新版本，可減少在較新版本的 Windows 上的執行階段必要條件。
   
 ## <a name="avoid-depending-on-specific-office-versions"></a>避免特定的 Office 版本而定。  
-如果您的解決方案會使用僅供以較新版本的 Office 的功能，請確認在執行階段 （例如，使用例外狀況處理，或藉由檢查版本） 的功能存在 （可能的話，請在功能層級）。 驗證最小版本，而不是特定的版本，在物件模型中，使用支援的 Api，例如[Application.Version 屬性](https://msdn.microsoft.com/library/office/microsoft.office.interop.excel._application.version.aspx)。 我們不建議您需要 Office 二進位中繼資料、 安裝路徑，或登錄機碼，因為這些可以在安裝、 環境和版本之間變更。
+如果您的解決方案會使用僅供以較新版本的 Office 的功能，請確認在執行階段 （例如，使用例外狀況處理，或藉由檢查版本） 的功能存在 （可能的話，請在功能層級）。 驗證最小版本，而不是特定的版本，在物件模型中，使用支援的 Api，例如[Application.Version 屬性](<xref:Microsoft.Office.Interop.Excel._Application.Version%2A>)。 我們不建議您需要 Office 二進位中繼資料、 安裝路徑，或登錄機碼，因為這些可以在安裝、 環境和版本之間變更。
 
 ## <a name="enable-both-32-bit-and-64-bit-office-usage"></a>啟用 32 位元和 64 位元 Office 使用   
 預設的 build 目標應支援 (x86) 32 位元和 64 位元 (x64)，除非您的解決方案視只適用於特定的位元的程式庫。 64 位元版本的 Office 增加的採用，尤其是在巨量資料環境。 支援 32 位元和 64 位元更容易為您的使用者，32 位元和 64 位元版本 Office 之間的轉換。
 
-在撰寫 VBA 程式碼，使用 64 位元安全 declare 陳述式，並轉換為適當的變數。 此外，請確定，可以藉由提供每一個位元程式碼執行 Office 32 位元或 64 位元版本的使用者之間共用文件。 如需詳細資訊，請參閱 <<c0> [ 應用程式概觀的 64 位元 Visual Basic](https://msdn.microsoft.com/library/office/gg264421.aspx)。
+在撰寫 VBA 程式碼，使用 64 位元安全 declare 陳述式，並轉換為適當的變數。 此外，請確定，可以藉由提供每一個位元程式碼執行 Office 32 位元或 64 位元版本的使用者之間共用文件。 如需詳細資訊，請參閱 <<c0> [ 應用程式概觀的 64 位元 Visual Basic](/office/vba/Language/Concepts/Getting-Started/64-bit-visual-basic-for-applications-overview)。
 
 ## <a name="support-restricted-environments"></a>支援限制的環境   
 您的解決方案應該不需要使用者帳戶提高權限或系統管理員權限。 此外，解決方案不應該相依於設定或變更：

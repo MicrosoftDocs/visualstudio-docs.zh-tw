@@ -16,55 +16,55 @@ ms.assetid: 18f4b18b-2173-4afa-ba0a-42fe33e61118
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f19165a5941f62fd5594a715c8812c065b371608
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 879d9e2cc40ebce42565d5eb8c607502ae17c2df
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49247684"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49830752"
 ---
 # <a name="isolated-shell-entry-point-parameters-c"></a>Isolated 的 Shell 進入點參數 （c + +）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Visual Studio shell 為基礎的應用程式啟動時，它會呼叫 Visual Studio shell 的啟動進入點。 下列設定可以覆寫的殼層啟動進入點的呼叫中。 如需每個設定的說明，請參閱[。Pkgdef 檔案](../extensibility/modifying-the-isolated-shell-by-using-the-dot-pkgdef-file.md)。  
   
--   AddinsAllowed  
+- AddinsAllowed  
   
--   AllowsDroppedFilesOnMainWindow  
+- AllowsDroppedFilesOnMainWindow  
   
--   應用程式名稱  
+- 應用程式名稱  
   
--   CommandLineLogo  
+- CommandLineLogo  
   
--   DefaultHomePage  
+- DefaultHomePage  
   
--   DefaultProjectsLocation  
+- DefaultProjectsLocation  
   
--   DefaultSearchPage  
+- DefaultSearchPage  
   
--   DefaultUserFilesFolderRoot  
+- DefaultUserFilesFolderRoot  
   
--   DisableOutputWindow  
+- DisableOutputWindow  
   
--   HideMiscellaneousFilesByDefault  
+- HideMiscellaneousFilesByDefault  
   
--   HideSolutionConcept  
+- HideSolutionConcept  
   
--   NewProjDlgInstalledTemplatesHdr  
+- NewProjDlgInstalledTemplatesHdr  
   
--   NewProjDlgSlnTreeNodeTitle  
+- NewProjDlgSlnTreeNodeTitle  
   
--   SolutionFileCreatorIdentifier  
+- SolutionFileCreatorIdentifier  
   
--   SolutionFileExt  
+- SolutionFileExt  
   
--   UserFilesSubFolderName  
+- UserFilesSubFolderName  
   
--   UserOptsFileExt  
+- UserOptsFileExt  
   
- Visual Studio Shell 獨立模式的範本會建立原始程式檔中， *solutionName*.cpp，其中*solutionName*是應用程式的方案名稱。 此檔案定義應用程式，_tWinMain 函式的主要進入點。 此函式會叫用 shell 的啟動進入點。  
+  Visual Studio Shell 獨立模式的範本會建立原始程式檔中， *solutionName*.cpp，其中*solutionName*是應用程式的方案名稱。 此檔案定義應用程式，_tWinMain 函式的主要進入點。 此函式會叫用 shell 的啟動進入點。  
   
- 您可以藉由變更這些設定，應用程式啟動時變更應用程式的行為。  
+  您可以藉由變更這些設定，應用程式啟動時變更應用程式的行為。  
   
 ## <a name="parameters"></a>參數  
  Visual Studio shell 的啟動進入點會定義五個參數。 不會變更的前四個參數。 第五個參數會設定覆寫清單。 殼層的啟動進入點是從應用程式的主要進入點呼叫。  

@@ -20,12 +20,12 @@ ms.assetid: a0322bc5-02c8-4f9f-af43-100a60b1bd28
 caps.latest.revision: 35
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 6b8831493b9d065c8a87157dbb8c38bf0b06f0cb
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: eeb7efb0c7faa9a2493cfd3f91f6cc4e72408f4c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49177667"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49889356"
 ---
 # <a name="how-to-create-a-data-driven-unit-test"></a>如何：建立資料驅動型單元測試
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,21 +34,21 @@ ms.locfileid: "49177667"
   
  此主題包括下列章節：  
   
--   [受測方法](../test/how-to-create-a-data-driven-unit-test.md#BKMK_The_method_under_test)  
+- [受測方法](../test/how-to-create-a-data-driven-unit-test.md#BKMK_The_method_under_test)  
   
--   [建立資料來源](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Creating_a_data_source)  
+- [建立資料來源](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Creating_a_data_source)  
   
--   [將 TestContext 加入測試類別](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Adding_a_TestContext_to_the_test_class)  
+- [將 TestContext 加入測試類別](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Adding_a_TestContext_to_the_test_class)  
   
--   [撰寫測試方法](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Writing_the_test_method)  
+- [撰寫測試方法](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Writing_the_test_method)  
   
-    -   [指定 DataSourceAttribute](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Specifying_the_DataSourceAttribute)  
+  -   [指定 DataSourceAttribute](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Specifying_the_DataSourceAttribute)  
   
-    -   [使用 TestContext.DataRow 存取資料](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Using_TestContext_DataRow_to_access_the_data)  
+  -   [使用 TestContext.DataRow 存取資料](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Using_TestContext_DataRow_to_access_the_data)  
   
--   [執行測試和檢視結果](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Running_the_test_and_viewing_results)  
+- [執行測試和檢視結果](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Running_the_test_and_viewing_results)  
   
- 建立資料驅動型單元測試包含下列步驟︰  
+  建立資料驅動型單元測試包含下列步驟︰  
   
 1.  建立資料來源，其中包含您在測試方法中使用的值。 資料來源可以是已註冊在執行測試之電腦上的任何類型。  
   
@@ -61,17 +61,17 @@ ms.locfileid: "49177667"
 ##  <a name="BKMK_The_method_under_test"></a> 受測方法  
  例如，假設我們已建立：  
   
-1.  名為 `MyBank` 的方案，可接受並處理不同帳戶類型的交易。  
+1. 名為 `MyBank` 的方案，可接受並處理不同帳戶類型的交易。  
   
-2.  在 `MyBank` 中名為 `BankDb` 的專案，負責管理帳戶的交易。  
+2. 在 `MyBank` 中名為 `BankDb` 的專案，負責管理帳戶的交易。  
   
-3.  `DbBank` 專案中名為 `Maths` 的類別，可執行數學函式以確保所有交易都是對銀行有利的。  
+3. `DbBank` 專案中名為 `Maths` 的類別，可執行數學函式以確保所有交易都是對銀行有利的。  
   
-4.  名為 `BankDbTests` 的單元測試專案，用來測試 `BankDb` 元件的行為。  
+4. 名為 `BankDbTests` 的單元測試專案，用來測試 `BankDb` 元件的行為。  
   
-5.  名為 `MathsTests` 的單元測試類別，用來驗證 `Maths` 類別的行為。  
+5. 名為 `MathsTests` 的單元測試類別，用來驗證 `Maths` 類別的行為。  
   
- 我們要測試 `Maths` 中的一個方法，它會使用迴圈加入兩個整數：  
+   我們要測試 `Maths` 中的一個方法，它會使用迴圈加入兩個整數：  
   
 ```  
 public int AddIntegers(int first, int second)  

@@ -13,12 +13,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: a814e3d07c2e51a8f946ae9a7b6eff03ea3c2e01
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: d54ba969e06f3bd951556f8d8f347977419fc015
+ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859233"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50966488"
 ---
 # <a name="overview-of-the-domain-specific-language-tools-user-interface"></a>Domain-Specific Language Tools 使用者介面概觀
 當您第一次開啟特定領域語言工具 （DSL 工具） 方案在 Visual Studio 中時，使用者介面將類似下列圖片。
@@ -28,7 +28,7 @@ ms.locfileid: "47859233"
  下表說明如何使用 UI 的部分。
 
 |**目**|**定義**|
-|-----------------|--------------------|
+|-|-|
 |圖表|此圖表會顯示在領域模型。<br /><br /> 圖表有兩個邊。 某一端在您的模型中定義項目類型。 另一端會定義您的模型會出現在螢幕上的方式。|
 |工具箱|拖曳工具從 [工具箱] 加入網域類別和圖形至圖表的類型。 若要新增關聯性、 連接器和圖形對應，請按一下工具]，然後按一下 [在圖表上的 [來源] 節點，然後在目標節點。|
 |DSL 總管|**DSL 總管 中**DSL 定義使用中視窗時，隨即出現。 它會顯示為樹狀結構的 DSL。 DSL 總管 可讓您編輯的模型不會顯示在圖表的功能。 例如，您可以在 [新增工具箱項目，並使用驗證程序上切換**DSL explorer]**。|
@@ -42,7 +42,7 @@ ms.locfileid: "47859233"
  下表說明一些網域模型圖表的項目。
 
 |**詞彙**|**定義**|
-|--------------|--------------------|
+|-|-|
 |網域類別|網域類別是在您的模型中的項目類型。<br /><br /> 網域類別可以出現一次在圖中，如果它是一個以上的關聯性的目標。<br /><br /> 若要加入的網域類別，將網域類別工具從拖曳**工具箱**要**類別和關聯性**圖表的側邊。|
 |網域關聯性|網域關聯性是在您的模型中的項目之間的連結類型。<br /><br /> *內嵌關聯性*表示目標項目是擁有或包含的來源項目，並且會顯示為一條實線。 在模型中的每個項目應該是一個內嵌關聯性的目標，以便模型會形成樹狀結構。 A*參考關聯性*指出一般模型項目之間連結，並且會顯示為虛線。 任何項目可以有任意數目的參考連結。<br /><br /> 此工具，即可建立關聯性**工具箱**，按一下 來源網域類別，然後按一下 目標類別。|
 |圖形與連接器|圖形可讓您指定模型項目應該如何顯示在 DSL 圖表。，連接器可用來顯示關聯性的 DSL 圖表上指定行。<br /><br /> 若要建立圖形或連接器，將工具拖曳至**圖表項目**圖表的側邊。|
@@ -51,5 +51,5 @@ ms.locfileid: "47859233"
 ## <a name="see-also"></a>另請參閱
 
 - [特定領域語言工具概觀](../modeling/overview-of-domain-specific-language-tools.md)
-- [特定領域語言工具字彙](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [特定領域語言工具字彙](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
 - [自訂及擴充特定領域語言](../modeling/customizing-and-extending-a-domain-specific-language.md)

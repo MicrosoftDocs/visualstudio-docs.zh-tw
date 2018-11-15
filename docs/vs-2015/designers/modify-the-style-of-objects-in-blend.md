@@ -14,12 +14,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b6fef77a22d043d4b98d337286e539666b5d4b2b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 70bf451a828e3884a6004f6304b91351e866ee52
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49240146"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49843637"
 ---
 # <a name="modify-the-style-of-objects-in-blend"></a>在 Blend 中修改物件的樣式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -80,15 +80,15 @@ ms.locfileid: "49240146"
   
  若要建立樣式，請選取物件，接著在 [物件] 功能表中選擇 [編輯樣式]，然後選擇 [編輯複本] 或 [建立空的]。  
   
--   選擇 [編輯複本] 以依照控制項的預設樣式或範本開始著手。  
+- 選擇 [編輯複本] 以依照控制項的預設樣式或範本開始著手。  
   
--   選擇 [建立空的] 從頭開始。  
+- 選擇 [建立空的] 從頭開始。  
   
- **編輯目前**在編輯樣式或範本，您已建立時，才會顯示選項。 若是仍然使用預設系統範本的控制項，則不會顯示此選項。  
+  **編輯目前**在編輯樣式或範本，您已建立時，才會顯示選項。 若是仍然使用預設系統範本的控制項，則不會顯示此選項。  
   
- 在 [建立樣式資源] 對話方塊中，您可以為樣式或範本命名以便之後使用，或將樣式或範本套用至該類型的所有控制項。  
+  在 [建立樣式資源] 對話方塊中，您可以為樣式或範本命名以便之後使用，或將樣式或範本套用至該類型的所有控制項。  
   
- ![](../designers/media/4818ee6a-ce60-4b79-91c8-3b1871829eea.png "4818ee6a-ce60-4b79-91c8-3b1871829eea")  
+  ![](../designers/media/4818ee6a-ce60-4b79-91c8-3b1871829eea.png "4818ee6a-ce60-4b79-91c8-3b1871829eea")  
   
 > [!NOTE]
 >  您無法為每一個類型的控制項建立樣式或範本。 如果控制項不支援此項，階層連結按鈕就不會出現在畫板上。  

@@ -1,5 +1,5 @@
 ---
-title: COMPUTER_INFO |Microsoft 文件
+title: COMPUTER_INFO |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0f9f81532608a4919707b5acafbde7ce1d8fe400
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9a52247f36f3628d91e83a89ded88a35c6ee8e68
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31102037"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49864214"
 ---
 # <a name="computerinfo"></a>COMPUTER_INFO
 描述偵錯工具執行所在的電腦。  
@@ -48,13 +48,13 @@ public struct COMPUTER_INFO
  識別微處理器的架構。  
   
  wSuiteMask  
- 識別套件遮罩。  
+ 識別套件的遮罩。  
   
  dwOperatingSystemVersion  
  作業系統版本號碼。  
   
 ## <a name="remarks"></a>備註  
- 這個結構由[GetComputerInfo](../../../extensibility/debugger/reference/idebugwindowscomputerport2-getcomputerinfo.md)方法。  
+ 此結構由[GetComputerInfo](../../../extensibility/debugger/reference/idebugwindowscomputerport2-getcomputerinfo.md)方法。  
   
 ## <a name="requirements"></a>需求  
  標頭： Msdbg.h  

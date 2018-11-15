@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0dbd45d32e2268a687d09c48527acb1a6df0bff5
-ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
+ms.openlocfilehash: 3fffaa61a494c507aedf22238d22c861ba9f11bc
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39468360"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50671036"
 ---
 # <a name="zipdirectory-task"></a>ZipDirectory 工作
 從目錄的內容建立 *.zip* 封存。
@@ -58,8 +58,7 @@ ms.locfileid: "39468360"
     <Target Name="ZipOutputPath" AfterTargets="Build">
         <ZipDirectory
             SourceDirectory="$(OutputPath)"
-            DestinationFile="$(MSBuildProjectDirectory)\output.zip">
-        />
+            DestinationFile="$(MSBuildProjectDirectory)\output.zip" />
     </Target>
 
 </Project>

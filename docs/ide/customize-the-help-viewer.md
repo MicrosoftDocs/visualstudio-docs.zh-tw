@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2fa41165041c4be1b4d527f2df20dacfcf0600af
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0de2f17933977d13fb524d34887a9e9af9c88114
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31923835"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49951102"
 ---
 # <a name="customize-the-help-viewer"></a>自訂說明檢視器
 您可以自訂說明檢視器視窗的版面配置，以及其他選項，例如字型大小、結果數目上限，以及是否要包含英文內容。
@@ -41,7 +41,7 @@ ms.locfileid: "31923835"
 請藉由選擇工具列上的 [檢視器選項] 按鈕來開啟 [檢視器選項] 對話方塊。
 
 |若要執行此工作：|請採取此步驟：|
-|---------------------------|---------------------|
+| - | - |
 |變更文字顥示的字型大小|選擇 [文字大小] 清單中的大小。|
 |變更 [搜尋] 索引標籤中顯示的搜尋結果數目上限|在 [搜尋結果上限] 清單中選擇值。|
 |變更[我的最愛] 視窗中顯示的記錄項目數目上限|在 [儲存的記錄項目上限] 清單中選擇值。|

@@ -11,12 +11,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: c39546d48cd8b8bf71594685f944751c1f023750
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 8909ef785bd721e5b07046329e4841cebc5ec24e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37117806"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49822068"
 ---
 # <a name="create-a-simple-data-application-with-wpf-and-entity-framework-6"></a>使用 WPF 和 Entity Framework 6 中建立簡單資料應用程式
 
@@ -60,35 +60,35 @@ ms.locfileid: "37117806"
 
 ## <a name="create-the-model"></a>建立模型
 
-1.  以滑鼠右鍵按一下方案總管] 中的專案節點，然後選擇 [**新增** > **新項目**。 在左窗格中，C#] 節點底下，選擇**資料**，然後在中間窗格中，選擇 [ **ADO.NET 實體資料模型**。
+1. 中的專案節點上按一下滑鼠右鍵**方案總管**，然後選擇**新增** > **新項目**。 在左窗格中，C#] 節點底下，選擇**資料**，然後在中間窗格中，選擇 [ **ADO.NET 實體資料模型**。
 
-     ![Entity Framework 模型新專案項目](../data-tools/media/raddata-ef-new-project-item.png)
+   ![Entity Framework 模型新專案項目](../data-tools/media/raddata-ef-new-project-item.png)
 
-  2.  呼叫模型`Northwind_model`，然後選擇  **確定**。 **Entity Data Model 精靈**隨即開啟。 選擇**資料庫的 EF Designer** ，然後按一下**下一步**。
+2. 呼叫模型`Northwind_model`，然後選擇  **確定**。 **Entity Data Model 精靈**隨即開啟。 選擇**資料庫的 EF Designer** ，然後按一下**下一步**。
 
-     ![從資料庫的 EF 模型](../data-tools/media/raddata-ef-model-from-database.png)
+   ![從資料庫的 EF 模型](../data-tools/media/raddata-ef-model-from-database.png)
 
-3.  在下一個畫面中，選擇您的 LocalDB Northwind 連接，然後按一下 [**下一步]**。
+3. 在下一個畫面中，選擇您的 LocalDB Northwind 連接，然後按一下 [**下一步]**。
 
-4.  在精靈的下一個頁面中，選擇哪些資料表、 預存程序，以及要包含在 Entity Framework 模型中其他資料庫物件。 展開樹狀檢視中的 [dbo] 節點，然後選擇**客戶**，**訂單**，並**Order Details**。 保留選取預設值，然後按一下**完成**。
+4. 在精靈的下一個頁面中，選擇哪些資料表、 預存程序，以及要包含在 Entity Framework 模型中其他資料庫物件。 展開樹狀檢視中的 [dbo] 節點，然後選擇**客戶**，**訂單**，並**Order Details**。 保留選取預設值，然後按一下**完成**。
 
-     ![選擇模型的資料庫物件](../data-tools/media/raddata-choose-ef-objects.png)
+    ![選擇模型的資料庫物件](../data-tools/media/raddata-choose-ef-objects.png)
 
-5.  精靈會產生代表 Entity Framework 模型的 C# 類別。 類別是純舊 C# 類別，而且是我們繫結至 WPF 使用者介面。 *.Edmx*檔案會描述關聯性和其他中繼資料與資料庫中的物件產生關聯的類別。 *.Tt*檔案會產生運作模型，並將變更儲存到資料庫的程式碼的 T4 範本。 您可以看到所有這些檔案中的**方案總管 中**Northwind_model 節點下：
+5. 精靈會產生代表 Entity Framework 模型的 C# 類別。 類別是純舊 C# 類別，而且是我們繫結至 WPF 使用者介面。 *.Edmx*檔案會描述關聯性和其他中繼資料與資料庫中的物件產生關聯的類別。 *.Tt*檔案會產生運作模型，並將變更儲存到資料庫的程式碼的 T4 範本。 您可以看到所有這些檔案中的**方案總管 中**Northwind_model 節點下：
 
-       ![方案總管 EF 模型檔案](../data-tools/media/raddata-solution-explorer-ef-model-files.png)
+      ![方案總管 EF 模型檔案](../data-tools/media/raddata-solution-explorer-ef-model-files.png)
 
-     設計工具介面 *.edmx*檔案可讓您修改一些屬性和模型中的關聯性。 我們不會在本逐步解說使用設計工具。
+    設計工具介面 *.edmx*檔案可讓您修改一些屬性和模型中的關聯性。 我們不會在本逐步解說使用設計工具。
 
-6.  *.Tt*檔案是一般用途，您需要調整其中一個，才能使用 WPF 資料繫結，需要 ObservableCollections。 在 **方案總管**，展開 Northwind_model 節點，直到您找到*Northwind_model.tt*。 (請確定您不是處於 *。Context.tt*檔案，這是正下方 *.edmx*檔案。)
+6. *.Tt*檔案是一般用途，您需要調整其中一個，才能使用 WPF 資料繫結，需要 ObservableCollections。 在 **方案總管**，展開 Northwind_model 節點，直到您找到*Northwind_model.tt*。 (請確定您不是處於 *。Context.tt*檔案，這是正下方 *.edmx*檔案。)
 
-    -   取代的兩個<xref:System.Collections.ICollection>與<xref:System.Collections.ObjectModel.ObservableCollection%601>。
+   -   取代的兩個<xref:System.Collections.ICollection>與<xref:System.Collections.ObjectModel.ObservableCollection%601>。
 
-    -   取代第一個出現<xref:System.Collections.Generic.HashSet%601>與<xref:System.Collections.ObjectModel.ObservableCollection%601>大約是第 51 行。 並不會取代 HashSet 的第二個項目。
+   -   取代第一個出現<xref:System.Collections.Generic.HashSet%601>與<xref:System.Collections.ObjectModel.ObservableCollection%601>大約是第 51 行。 並不會取代 HashSet 的第二個項目。
 
-    -   取代的唯一相符項目<xref:System.Collections.Generic>（大約是直線 431） 與<xref:System.Collections.ObjectModel>。
+   -   取代的唯一相符項目<xref:System.Collections.Generic>（大約是直線 431） 與<xref:System.Collections.ObjectModel>。
 
-7.  按下**Ctrl**+**Shift**+**B**來建置專案。 當組建完成時，模型類別會顯示資料來源精靈。
+7. 按下**Ctrl**+**Shift**+**B**來建置專案。 當組建完成時，模型類別會顯示資料來源精靈。
 
 現在您已準備好將連結至 XAML 頁面的這個模型，讓您可以檢視、 巡覽及修改資料。
 

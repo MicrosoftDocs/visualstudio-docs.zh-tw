@@ -6,7 +6,6 @@ ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Environment.Task_List
-- VS.ToolsOptionsPag.Environment.Task_List
 - VS.ToolsOptionsPages.Environment.TaskList
 - VS.Environment.Task List
 helpviewer_keywords:
@@ -25,12 +24,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fe61b439c0cb4360151d161a5a0b0190858ef71f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c152e7a193fff8d444daf86d098681f20a8f5434
+ms.sourcegitcommit: 1abb9cf4c3ccb90e3481ea8079272c98aad12875
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31947647"
+ms.lasthandoff: 10/26/2018
+ms.locfileid: "50143134"
 ---
 # <a name="task-list-environment-options-dialog-box"></a>選項對話方塊、環境、工作清單
 

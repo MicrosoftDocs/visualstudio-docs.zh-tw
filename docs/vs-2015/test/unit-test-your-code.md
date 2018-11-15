@@ -17,12 +17,12 @@ ms.assetid: c191de3e-3f3b-471e-b828-29ec24e80e2c
 caps.latest.revision: 64
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 59d0de3dd53d7d9ab3a54fc11eb50666d39dfdc7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f79fb0ac4945253f1a10ce98a7e1ed17eaa6de63
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49231214"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49950416"
 ---
 # <a name="unit-test-your-code"></a>對程式碼進行單元測試
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,17 +31,17 @@ ms.locfileid: "49231214"
   
  單元測試工具包括：  
   
-1.  **測試總管。** 測試總管可讓您執行單元測試並檢視其結果。 測試總管可以使用任何具有測試總管配接器的單元測試架構，包括協力廠商架構。  
+1. **測試總管。** 測試總管可讓您執行單元測試並檢視其結果。 測試總管可以使用任何具有測試總管配接器的單元測試架構，包括協力廠商架構。  
   
-2.  **適用於 Managed 程式碼的 Microsoft 單元測試架構。** 適用於 Managed 程式碼的 Microsoft 單元測試架構是與 Visual Studio 一起安裝的，可提供用於測試 .NET 程式碼的架構。  
+2. **適用於 Managed 程式碼的 Microsoft 單元測試架構。** 適用於 Managed 程式碼的 Microsoft 單元測試架構是與 Visual Studio 一起安裝的，可提供用於測試 .NET 程式碼的架構。  
   
-3.  **適用於 C++ 的 Microsoft 單元測試架構。** 適用於 C++ 的 Microsoft 單元測試架構是與 Visual Studio 一起安裝的，可提供用於測試機器碼的架構。  
+3. **適用於 C++ 的 Microsoft 單元測試架構。** 適用於 C++ 的 Microsoft 單元測試架構是與 Visual Studio 一起安裝的，可提供用於測試機器碼的架構。  
   
-4.  **程式碼涵蓋範圍工具。** 您可以使用測試總管中的一個命令來判斷單元測試所執行的產品程式碼數量。  
+4. **程式碼涵蓋範圍工具。** 您可以使用測試總管中的一個命令來判斷單元測試所執行的產品程式碼數量。  
   
-5.  **Microsoft Fakes 隔離架構。** Microsoft Fakes 隔離架構可以為在受測程式碼中建立相依性的生產環境和系統程式碼建立替代的類別和方法。 藉由實作函式的偽造委派，您可以控制相依性物件的行為和輸出。  
+5. **Microsoft Fakes 隔離架構。** Microsoft Fakes 隔離架構可以為在受測程式碼中建立相依性的生產環境和系統程式碼建立替代的類別和方法。 藉由實作函式的偽造委派，您可以控制相依性物件的行為和輸出。  
   
- 您也可以使用 [IntelliTest](../test/generate-unit-tests-for-your-code-with-intellitest.md) 來探索 .NET 程式碼，以產生測試資料和單元測試套件。 其會為程式碼中的每一個陳述式產生一個用以執行該陳述式的測試輸入。 程式碼的每個條件分支都會執行大小寫分析。  
+   您也可以使用 [IntelliTest](../test/generate-unit-tests-for-your-code-with-intellitest.md) 來探索 .NET 程式碼，以產生測試資料和單元測試套件。 其會為程式碼中的每一個陳述式產生一個用以執行該陳述式的測試輸入。 程式碼的每個條件分支都會執行大小寫分析。  
   
 ## <a name="key-tasks"></a>主要工作  
  下列主題可協助您了解及建立單元測試：  

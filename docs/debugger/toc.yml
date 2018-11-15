@@ -2,7 +2,11 @@ items:
 - name: 偵錯工具文件
   href: index.md
 - name: 總覽
-  href: debugger-overview.md
+  items:
+  - name: 什麼是偵錯？
+    href: what-is-debugging.md
+  - name: 使用 Visual Studio 撰寫更優質的 C# 程式碼
+    href: write-better-code-with-visual-studio.md
 - name: 快速入門
   items:
   - name: 偵錯工具簡介
@@ -129,7 +133,7 @@ items:
     - name: 使用 Just-In-Time 偵錯工具進行偵錯
       href: debug-using-the-just-in-time-debugger.md
       items:
-      - name: 回應 Just-in-Time 偵錯工具
+      - name: 停用 Just-In-Time 偵錯工具
         href: just-in-time-debugging-in-visual-studio.md
   - name: 設定偵錯
     items:
@@ -367,7 +371,7 @@ items:
       - name: 啟動 UWP 應用程式 的偵錯工作階段
         href: start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md
         items:
-        - name: 在遠端電腦上執行 UWP 應用程式
+        - name: 在遠端電腦上對 UWP 應用程式偵錯
           href: run-windows-store-apps-on-a-remote-machine.md
         - name: 在模擬器中執行 UWP 應用程式
           href: run-windows-store-apps-in-the-simulator.md
@@ -476,7 +480,7 @@ items:
               href: allocation-hooks-and-c-run-time-memory-allocations.md
           - name: 報告攔截函式
             href: report-hook-functions.md
-        - name: 使用 CRT 程式庫尋找記憶體流失
+        - name: 尋找 CRT 程式庫的記憶體流失問題
           href: finding-memory-leaks-using-the-crt-library.md
       - name: 對機器碼進行偵錯的常見問題集
         href: debugging-native-code-faqs.md
@@ -832,9 +836,9 @@ items:
   items:
   - name: Visual Studio 中偵錯工具的新功能
     href: what-s-new-for-the-debugger-in-visual-studio.md
-ms.openlocfilehash: 54fa8b8653abd4e69a115dc50d287f3e182fc53a
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: a765e04da6e5d03c47a17e3b9d1642aec182c1f7
+ms.sourcegitcommit: a34b7d4fdb3872865fcf98ba24a0fced58532adc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48880736"
+ms.lasthandoff: 11/12/2018
+ms.locfileid: "51561682"

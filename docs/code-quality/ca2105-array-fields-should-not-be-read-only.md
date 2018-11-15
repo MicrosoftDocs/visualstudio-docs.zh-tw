@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a985951cebc37e8f036e1babee36b9c04528f522
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: a033c23a323a94dcbda0a98f9ec57de529d3c308
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45548917"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49883286"
 ---
 # <a name="ca2105-array-fields-should-not-be-read-only"></a>CA2105：陣列欄位不應為唯讀
 
@@ -29,35 +29,40 @@ ms.locfileid: "45548917"
 |-|-|
 |TypeName|ArrayFieldsShouldNotBeReadOnly|
 |CheckId|CA2105|
-|類別|Microsoft.Security|
+|分類|Microsoft.Security|
 |中斷變更|中斷|
 
 ## <a name="cause"></a>原因
- 公用或受保護的欄位來保存陣列被宣告為唯讀。
+
+公用或受保護的欄位來保存陣列被宣告為唯讀。
 
 ## <a name="rule-description"></a>規則描述
- 當您套用`readonly`(`ReadOnly`在[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) 修飾詞，以包含陣列之欄位的欄位不能變更為指向不同的陣列。 但是，儲存在唯讀欄位的陣列元素則可以變更。 做出決策，或執行作業的可公開存取的唯讀陣列項目為基礎的程式碼可能會包含可利用來攻擊的安全性弱點。
 
- 請注意，有一個公用的欄位也違反設計規則[CA1051： 不要宣告可見的執行個體欄位](../code-quality/ca1051-do-not-declare-visible-instance-fields.md)。
+當您套用`readonly`(`ReadOnly`在[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) 修飾詞，以包含陣列之欄位的欄位不能變更為指向不同的陣列。 但是，儲存在唯讀欄位的陣列元素則可以變更。 做出決策，或執行作業的可公開存取的唯讀陣列項目為基礎的程式碼可能會包含可利用來攻擊的安全性弱點。
+
+請注意，有一個公用的欄位也違反設計規則[CA1051： 不要宣告可見的執行個體欄位](../code-quality/ca1051-do-not-declare-visible-instance-fields.md)。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
- 若要修正此規則所識別的安全性弱點，請勿依賴可公開存取的唯讀陣列的內容。 強烈建議使用下列程序的其中一個：
+
+若要修正此規則所識別的安全性弱點，請勿依賴可公開存取的唯讀陣列的內容。 強烈建議使用下列程序的其中一個：
 
 - 無法變更的強類型集合取代陣列。 如需詳細資訊，請參閱<xref:System.Collections.ReadOnlyCollectionBase?displayProperty=fullName>。
 
 - 公用欄位取代為傳回的私用陣列複製品的方法。 因為您的程式碼不需要複製，不是可能如果修改的項目。
 
- 如果您選擇第二種方法，並不會取代欄位與屬性;負面傳回陣列的屬性會影響效能。 如需詳細資訊，請參閱 < [CA1819： 屬性不應該傳回陣列](../code-quality/ca1819-properties-should-not-return-arrays.md)。
+如果您選擇第二種方法，並不會取代欄位與屬性;負面傳回陣列的屬性會影響效能。 如需詳細資訊，請參閱 < [CA1819： 屬性不應該傳回陣列](../code-quality/ca1819-properties-should-not-return-arrays.md)。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
- 此規則的警告排除極為不妥。 幾乎在所有情況中，就會都發生唯讀欄位的內容中都很重要。 如果這是您的案例的情況，移除`readonly`修飾詞，而不是排除該訊息。
+
+此規則的警告排除極為不妥。 幾乎在所有情況中，就會都發生唯讀欄位的內容中都很重要。 如果這是您的案例的情況，移除`readonly`修飾詞，而不是排除該訊息。
 
 ## <a name="example-1"></a>範例 1
- 此範例示範違反此規則的危險性。 第一個部分示範的範例程式庫，都有類型， `MyClassWithReadOnlyArrayField`，其中包含兩個欄位 (`grades`和`privateGrades`)，並不安全。 欄位`grades`是公用的且因此容易遭受任何呼叫端。 欄位`privateGrades`是私用，但會仍可能受到攻擊，因為它會傳回到呼叫端所`GetPrivateGrades`方法。 `securePrivateGrades`欄位會以安全的方式在`GetSecurePrivateGrades`方法。 它宣告為 private 遵循良好的設計做法。 第二個部分顯示中所儲存的值變更的程式碼`grades`和`privateGrades`成員。
 
- 範例類別程式庫會出現在下列範例。
+此範例示範違反此規則的危險性。 第一個部分示範的範例程式庫，都有類型， `MyClassWithReadOnlyArrayField`，其中包含兩個欄位 (`grades`和`privateGrades`)，並不安全。 欄位`grades`是公用的且因此容易遭受任何呼叫端。 欄位`privateGrades`是私用，但會仍可能受到攻擊，因為它會傳回到呼叫端所`GetPrivateGrades`方法。 `securePrivateGrades`欄位會以安全的方式在`GetSecurePrivateGrades`方法。 它宣告為 private 遵循良好的設計做法。 第二個部分顯示中所儲存的值變更的程式碼`grades`和`privateGrades`成員。
 
- [!code-csharp[FxCop.Security.ArrayFieldsNotReadOnly#1](../code-quality/codesnippet/CSharp/ca2105-array-fields-should-not-be-read-only_1.cs)]
+範例類別程式庫會出現在下列範例。
+
+[!code-csharp[FxCop.Security.ArrayFieldsNotReadOnly#1](../code-quality/codesnippet/CSharp/ca2105-array-fields-should-not-be-read-only_1.cs)]
 
 ## <a name="example-2"></a>範例 2
 

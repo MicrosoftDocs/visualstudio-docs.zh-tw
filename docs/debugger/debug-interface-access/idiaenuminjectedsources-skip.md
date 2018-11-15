@@ -1,5 +1,5 @@
 ---
-title: 'Idiaenuminjectedsources:: Skip |Microsoft 文件'
+title: 'Idiaenuminjectedsources:: Skip |Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 038510fbd89d58c0d122457828c2f130df39173e
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 3ed94c7e70d3d4800f8662b35bd13bc351d5bc83
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31456525"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49863798"
 ---
 # <a name="idiaenuminjectedsourcesskip"></a>IDiaEnumInjectedSources::Skip
-略過指定的數目的列舉順序中的插入來源。  
+略過指定的數目的列舉型別序列中的插入來源。  
   
 ## <a name="syntax"></a>語法  
   
@@ -34,10 +34,10 @@ HRESULT Skip (
   
 #### <a name="parameters"></a>參數  
  celt  
- [in]略過列舉順序中的插入來源數目。  
+ [in]略過列舉序列中的插入來源數目。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK`; 否則傳回`S_FALSE`如果沒有其他插入的來源，以略過。  
+ 如果成功，則傳回`S_OK`; 否則傳回`S_FALSE`有沒有其他插入的來源，以略過。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md)

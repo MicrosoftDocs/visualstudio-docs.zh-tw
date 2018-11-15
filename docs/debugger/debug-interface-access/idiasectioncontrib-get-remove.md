@@ -1,5 +1,5 @@
 ---
-title: 'Idiasectioncontrib:: Get_remove |Microsoft 文件'
+title: 'Idiasectioncontrib:: Get_remove |Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ee0b359ab5a80579bc7a0a28f59040430c665130
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 4d44143994a0516c08e4738749b65bca54ba7a66
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31461405"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49854061"
 ---
 # <a name="idiasectioncontribgetremove"></a>IDiaSectionContrib::get_remove
-擷取指出區段是否已移除，才能進行記憶體中的映像的一部分的旗標。  
+擷取旗標，指出區段是否已移除之前，它於記憶體中的映像的一部分。  
   
 ## <a name="syntax"></a>語法  
   
@@ -34,10 +34,10 @@ HRESULT get_remove (
   
 #### <a name="parameters"></a>參數  
  `pRetVal`  
- [out]傳回`TRUE`區段，則不是要加入至記憶體中的映像; 否則傳回`FALSE`。  
+ [out]會傳回`TRUE`區段，則不會加入至記憶體中的映像; 否則會傳回`FALSE`。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK`。 傳回`S_FALSE`不支援這個屬性，則為。 反之則傳回錯誤碼。  
+ 如果成功，則傳回`S_OK`。 傳回`S_FALSE`不支援這個屬性，則為。 反之則傳回錯誤碼。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

@@ -18,12 +18,12 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b77bf4e0892b81d276836f7bad45272adf338b48
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c9ee879bec628628a19914a6fbc6236cad3fb5c9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49306146"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49879112"
 ---
 # <a name="performance-session-properties"></a>效能工作階段屬性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,13 +32,13 @@ ms.locfileid: "49306146"
   
  **需求**  
   
--   [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
- 您可以執行 [效能精靈] 或手動建立工作階段，以建立 [效能工作階段]。 在 [效能工作階段] 建立完成後，[效能總管] 中便會顯示 [效能工作階段]。  
+  您可以執行 [效能精靈] 或手動建立工作階段，以建立 [效能工作階段]。 在 [效能工作階段] 建立完成後，[效能總管] 中便會顯示 [效能工作階段]。  
   
- 若要檢視 [效能工作階段] 屬性，請在 [效能總管] 中選取工作階段名稱，以滑鼠右鍵按一下，然後選取 [屬性]。  
+  若要檢視 [效能工作階段] 屬性，請在 [效能總管] 中選取工作階段名稱，以滑鼠右鍵按一下，然後選取 [屬性]。  
   
- 效能工作階段具有下列屬性頁︰  
+  效能工作階段具有下列屬性頁︰  
   
 ## <a name="general"></a>一般  
  這些設定可以讓您選取程式碼剖析方法、加入 .NET 物件集合和存留期資料，和指定預設的報告位置和命名慣例。  
@@ -59,17 +59,17 @@ ms.locfileid: "49306146"
 ## <a name="sampling"></a>取樣  
  這些設定可以讓您在使用取樣做為程式碼剖析方法時，選取取樣事件和取樣間隔。 取樣事件是用來依指定的間隔收集程式碼剖析資料。 例如，如果取樣事件是時脈週期，而取樣間隔設定為 10,000,000，則會在每一千萬個時時脈週期收集程式碼剖析資料。 有下列四種可用的取樣事件類型：  
   
--   時脈週期 - 針對 CPU-bound 問題  
+- 時脈週期 - 針對 CPU-bound 問題  
   
--   分頁錯誤 - 針對記憶體相關問題  
+- 分頁錯誤 - 針對記憶體相關問題  
   
--   系統呼叫 - 針對 I/O 相關問題  
+- 系統呼叫 - 針對 I/O 相關問題  
   
--   效能計數器 - 針對低階效能問題  
+- 效能計數器 - 針對低階效能問題  
   
--   您可以根據可用的效能計數器來指定其他取樣事件  
+- 您可以根據可用的效能計數器來指定其他取樣事件  
   
- 如需詳細資訊，請參閱[如何：選擇取樣事件](../profiling/how-to-choose-sampling-events.md)  
+  如需詳細資訊，請參閱[如何：選擇取樣事件](../profiling/how-to-choose-sampling-events.md)  
   
 ## <a name="binary"></a>二元  
  這些設定可以讓您指定是否要將已檢測的二進位檔重新配置到另一個位置。 例如，如果您正在剖析 My.DLL 並選擇不要重新配置已檢測的二進位檔，則會建立名為 My.Orig.DLL 的 My.DLL 備份複本。 接著會插入探查來修改 My.DLL 以收集資料。 如果您決定要重新配置已檢測的二進位檔，則不會重新命名原始二進位檔，而且會將已檢測的二進位檔複製到指定的位置供檢測期間使用。  

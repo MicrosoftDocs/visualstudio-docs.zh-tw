@@ -17,12 +17,12 @@ ms.assetid: 27d4bbcf-99b1-498f-8b66-40002e3db0f8
 caps.latest.revision: 47
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 89526f799c0b4e260bba140c413f2c89e573a701
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 327d312ec13e449f0e116a11f920f17a439f569c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49223727"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49818097"
 ---
 # <a name="adding-a-most-recently-used-list-to-a-submenu"></a>將最近使用的清單新增至子功能表
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,9 +42,9 @@ ms.locfileid: "49223727"
   
 ## <a name="creating-an-extension"></a>建立擴充功能  
   
--   請依照下列中的程序[子功能表加入功能表](../extensibility/adding-a-submenu-to-a-menu.md)下列程序中建立的已修改的子功能表。  
+- 請依照下列中的程序[子功能表加入功能表](../extensibility/adding-a-submenu-to-a-menu.md)下列程序中建立的已修改的子功能表。  
   
- 在本逐步解說的程序會假設 VSPackage 的名稱是`TopLevelMenu`，這是名稱中使用[將功能表加入至 Visual Studio 功能表列](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md)。  
+  在本逐步解說的程序會假設 VSPackage 的名稱是`TopLevelMenu`，這是名稱中使用[將功能表加入至 Visual Studio 功能表列](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md)。  
   
 ## <a name="creating-a-dynamic-item-list-command"></a>建立動態項目清單命令  
   

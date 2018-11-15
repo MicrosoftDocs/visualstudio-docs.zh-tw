@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: 28dbf874ab5f7f80d7f67f789e8122bcff1a2fa6
-ms.sourcegitcommit: 56f3c31f1a06f6a6d2a8793b1abfa60cdf482497
+ms.openlocfilehash: 41da2eb360bac4c50f85bd908f980f5ee3c1d141
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/05/2018
-ms.locfileid: "48817330"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49813416"
 ---
 # <a name="debug-aspnet-or-aspnet-core-apps-in-visual-studio"></a>偵錯在 Visual Studio 中的 ASP.NET 或 ASP.NET Core 應用程式
 
@@ -121,29 +121,29 @@ ASP.NET 專案具有*web.config*檔案依預設，其中包含這兩個應用程
   
 3. 請確定`debug`屬性中`compilation`元素設定為`true`。 (如果`compilation`項目不包含`debug`屬性、 將它加入，然後將它設定為`true`。) 
   
-  如果您使用本機 IIS，而不預設的 IIS Express 伺服器，請確定`targetFramework`屬性中的值`compilation`項目符合 IIS 伺服器上的架構。
+   如果您使用本機 IIS，而不預設的 IIS Express 伺服器，請確定`targetFramework`屬性中的值`compilation`項目符合 IIS 伺服器上的架構。
   
-  `compilation`項目*web.config*檔案應該看起來如下列範例所示：
+   `compilation`項目*web.config*檔案應該看起來如下列範例所示：
 
-  > [!NOTE]
-  > 此範例中為 partial *web.config*檔案。 通常其他 XML 中的章節`configuration`並`system.web`項目，和`compilation`項目也可能包含其他屬性和項目。
+   > [!NOTE]
+   > 此範例中為 partial *web.config*檔案。 通常其他 XML 中的章節`configuration`並`system.web`項目，和`compilation`項目也可能包含其他屬性和項目。
   
-  ```xml
-  <configuration>  
+   ```xml
+   <configuration>  
       ...  
       <system.web>  
           <compilation  debug="true"  targetFramework="4.6.1" ... > 
              ...  
           </compilation>  
       </system.web>  
-  </configuration>  
-  ```
+   </configuration>  
+   ```
 
 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 自動偵測到的任何變更*web.config*檔案，並套用新的組態設定。 您不需要重新啟動電腦或 IIS 伺服器，才能讓變更生效。  
   
 網站可以使用包含數個虛擬目錄和子目錄*web.config*中每個檔案。 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 應用程式會繼承組態設定的來源*web.config* URL 路徑中較高層級的檔案。 階層*web.config*檔案設定會套用到所有[!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]其下方階層中的應用程式。 在中設定不同的組態*web.config*階層中較低的檔案會覆寫較高的檔案中的設定。  
   
-比方說，如果您指定`debug="true"`中*www.microsoft.com/aaa/web.config*，在任何應用程式*aaa*資料夾或任何子資料夾中*aaa*會繼承該設定，但如果其中一個這些應用程式會有其專屬的設定覆寫*web.config*檔案。  
+比方說，如果您指定`debug="true"`中<em>www.microsoft.com/aaa/web.config</em>，在任何應用程式*aaa*資料夾或任何子資料夾中*aaa*會繼承該設定，但如果其中一個這些應用程式會有其專屬的設定覆寫*web.config*檔案。  
   
 ## <a name="publish-in-debug-mode-using-the-file-system"></a>在偵錯模式中使用檔案系統發佈
 

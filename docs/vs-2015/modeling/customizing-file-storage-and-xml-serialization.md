@@ -16,12 +16,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 012805e83e0fa3fae2a58274bfa400818d6d22fd
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 574fad0cdccd0112d7d078e86486569d16919a75
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49183012"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49867440"
 ---
 # <a name="customizing-file-storage-and-xml-serialization"></a>自訂檔案儲存體和 XML 序列化
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -105,26 +105,26 @@ ms.locfileid: "49183012"
 ## <a name="understanding-monikers"></a>了解 Moniker  
  Moniker 用來代表的模型和圖表檔案的不同部分之間的交互參考。 它們也可以用在`.diagram`檔案來參考的模型檔案中的節點。 有兩種形式的 moniker:  
   
--   *識別碼 moniker*加上引號的目標項目的 GUID。 例如:   
+- *識別碼 moniker*加上引號的目標項目的 GUID。 例如:   
   
-    ```  
-    <personShapeMoniker Id="f79734c0-3da1-4d72-9514-848fa9e75157" />  
+  ```  
+  <personShapeMoniker Id="f79734c0-3da1-4d72-9514-848fa9e75157" />  
   
-    ```  
+  ```  
   
--   *完整金鑰 moniker*呼叫的 moniker 索引鍵指定的網域屬性的值所識別的目標項目。 Moniker 的目標項目加上其父項目，在樹狀目錄中的內嵌關聯性的 moniker。  
+- *完整金鑰 moniker*呼叫的 moniker 索引鍵指定的網域屬性的值所識別的目標項目。 Moniker 的目標項目加上其父項目，在樹狀目錄中的內嵌關聯性的 moniker。  
   
-     下列範例會從在其中 DSL 有是名為 Album，有一個內嵌關聯性的網域類別具名的 Song 的網域類別：  
+   下列範例會從在其中 DSL 有是名為 Album，有一個內嵌關聯性的網域類別具名的 Song 的網域類別：  
   
-    ```  
-    <albumMoniker title="/My Favorites/Jazz after Teatime" />  
-    <songMoniker title="/My Favorites/Jazz after Teatime/Hot tea" />  
+  ```  
+  <albumMoniker title="/My Favorites/Jazz after Teatime" />  
+  <songMoniker title="/My Favorites/Jazz after Teatime/Hot tea" />  
   
-    ```  
+  ```  
   
-     如果目標類別，有網域屬性，就會使用完整的索引鍵 moniker 選項**是 Moniker 索引鍵**設為`true`中**Xml 序列化行為**。 在範例中，名為"Title"，"Album"和"Song"的網域類別中的網域屬性會設定這個選項。  
+   如果目標類別，有網域屬性，就會使用完整的索引鍵 moniker 選項**是 Moniker 索引鍵**設為`true`中**Xml 序列化行為**。 在範例中，名為"Title"，"Album"和"Song"的網域類別中的網域屬性會設定這個選項。  
   
- 完整的索引鍵 moniker 是比識別碼 moniker 所讀取的工作變得更容易。 如果您想要的模型檔案的 XML，人可閱讀，請考慮使用完整索引鍵的 moniker。 不過，就可以讓使用者可用來設定具有相同的 moniker 索引鍵的多個項目。 重複的索引鍵可能會導致不是要重新載入正確的檔案。 因此，如果您定義網域類別，使用完整索引鍵的 moniker 參考時，您應該考慮儲存重複的 moniker 的檔案時，防止使用者的方式。  
+  完整的索引鍵 moniker 是比識別碼 moniker 所讀取的工作變得更容易。 如果您想要的模型檔案的 XML，人可閱讀，請考慮使用完整索引鍵的 moniker。 不過，就可以讓使用者可用來設定具有相同的 moniker 索引鍵的多個項目。 重複的索引鍵可能會導致不是要重新載入正確的檔案。 因此，如果您定義網域類別，使用完整索引鍵的 moniker 參考時，您應該考慮儲存重複的 moniker 的檔案時，防止使用者的方式。  
   
 #### <a name="to-set-a-domain-class-to-be-referenced-by-id-monikers"></a>若要設定網域類別 ID moniker 所要參考  
   

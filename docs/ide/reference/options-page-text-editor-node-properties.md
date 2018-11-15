@@ -13,23 +13,23 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8acd51675aaca979a1dce0edddb9d7d937422d49
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: e16bdece503babe9a50bc83d64da582d390843b6
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39177808"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50670815"
 ---
 # <a name="options-page-text-editor-node-properties"></a>文字編輯器節點屬性、選項頁
 本文件描述與 [選項] 對話方塊的 [文字編輯器] 分類 `DTE.Properties("TextEditor", <Property Page>)` 相關聯的一些頁面 (或屬性集合)。 每一小節的標題就是用來存取 `Properties` 集合的呼叫，而每一小節中的表格會列出集合中的屬性。
 
- [控制選項設定](http://msdn.microsoft.com/Library/a09ed242-7494-4cde-bbd1-7a8ec617965d)中的 Visual Basic 巨集會示範，如何顯示 [選項] 對話方塊中每一個頁面目前的選項及其值。
+ [控制選項設定](https://msdn.microsoft.com/Library/a09ed242-7494-4cde-bbd1-7a8ec617965d)中的 Visual Basic 巨集會示範，如何顯示 [選項] 對話方塊中每一個頁面目前的選項及其值。
 
 ## <a name="general"></a>一般
  `DTE.Properties("TextEditor", "General")`
 
 |屬性項目名稱|值|描述|
-|------------------------|-----------|-----------------|
+| - |-----------|-----------------|
 |GoToAnchorAfterEscape|Get/Set (布林值)|如果為 `True`，在有選取範圍時按 Escape 鍵會將插入點移至建立選取範圍這個動作的起始位置。 如果為 `False`，則會將插入點移至選取範圍的結束位置。|
 |DragNDropTextEditing|Get/Set (布林值)|決定您能否在文件中拖曳選取的文字區域，執行複製或剪貼作業。|
 |HorizontalScrollBar|Get/Set (布林值)|決定編輯器視窗上是否有水平捲軸。|
@@ -48,7 +48,7 @@ ms.locfileid: "39177808"
  `PlainText` 編輯器選項會影響編輯文字檔時的編輯器設定。 每個程式語言和 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 套件都有各自特定的 [文字編輯器] 設定。 例如，若要檢視或變更 [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] 的編輯器設定，請使用 `DTE.Properties("TextEditor", "CSharp") or DTE.Properties("TextEditor", "CSharp-Specific")`。 [SQL 指令碼] 編輯器設定請使用 `DTE.Properties("TextEditor", "SQL ")`。
 
 |屬性項目名稱|值|描述|
-|------------------------|-----------|-----------------|
+| - |-----------|-----------------|
 |AutoListMembers|Get/Set (布林值)|決定當使用者在變數參考後面輸入句號時，是否自動顯示可用的成員清單|
 |AutoListParams|Get/Set (布林值)|決定當使用者在函式名稱後面輸入 "(" 時，是否自動顯示引數清單描述|
 |HideAdvancedMembers|Get/Set (布林值)|決定當陳述式完成時是否列出所有成員，或是只列出常用成員|
@@ -64,9 +64,9 @@ ms.locfileid: "39177808"
 |ShowNavigationBar|Get/Set (布林值)|決定是否在編輯器視窗的頂端顯示下拉式清單和按鈕|
 |CutCopyBlankLines|Get/Set (布林值)|在選取時剪下或複製空白行。|
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
-- [控制選項設定](http://msdn.microsoft.com/Library/a09ed242-7494-4cde-bbd1-7a8ec617965d)
-- [在選項頁中決定屬性項目的名稱](http://msdn.microsoft.com/Library/d450422d-47c7-4eeb-9f9f-3286264bc5aa)
+- [控制選項設定](https://msdn.microsoft.com/Library/a09ed242-7494-4cde-bbd1-7a8ec617965d)
+- [在選項頁中決定屬性項目的名稱](https://msdn.microsoft.com/Library/d450422d-47c7-4eeb-9f9f-3286264bc5aa)
 - [環境節點屬性、選項頁面](../../ide/reference/options-page-environment-node-properties.md)
 - [字型和色彩節點屬性、選項頁面](../../ide/reference/options-page-fonts-and-colors-node-properties.md)

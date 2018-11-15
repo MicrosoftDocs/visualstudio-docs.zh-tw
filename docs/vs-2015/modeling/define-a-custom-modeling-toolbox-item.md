@@ -14,12 +14,12 @@ caps.latest.revision: 33
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 994bb8dfd047320ac0ea4a0d63260f19a2c3d45c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: dfdf517dc1871884d4a3893a976cfcd01b3e6333
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49252365"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49879528"
 ---
 # <a name="define-a-custom-modeling-toolbox-item"></a>定義自訂模型工具箱項目
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -66,25 +66,25 @@ ms.locfileid: "49252365"
 ### <a name="what-the-custom-tool-will-replicate"></a>自訂工具將複製的內容  
  自訂工具將複製來源圖表的大部分功能：  
   
--   名稱。 從工具箱建立一個項目時，視需要會在名稱結尾加上一個數字，避免同一個命名空間中出現重複的名稱。  
+- 名稱。 從工具箱建立一個項目時，視需要會在名稱結尾加上一個數字，避免同一個命名空間中出現重複的名稱。  
   
--   色彩、大小和圖形  
+- 色彩、大小和圖形  
   
--   造型和套件設定檔  
+- 造型和套件設定檔  
   
--   屬性值，例如 Is Abstract  
+- 屬性值，例如 Is Abstract  
   
--   連結的工作項目  
+- 連結的工作項目  
   
--   關聯性的多重性和其他屬性  
+- 關聯性的多重性和其他屬性  
   
--   圖形的相對位置。  
+- 圖形的相對位置。  
   
- 自訂工具中將不會保留下列功能：  
+  自訂工具中將不會保留下列功能：  
   
--   簡單圖形。 這些是與模型項目無關的圖形，您可在某些種類的圖表上繪製該模型項目。  
+- 簡單圖形。 這些是與模型項目無關的圖形，您可在某些種類的圖表上繪製該模型項目。  
   
--   連接器路由。 如果您手動傳送連接器，則在您使用工具時將不會保留該路由。 某些巢狀圖形 (如連接埠) 的位置並不會相對於其擁有者而予以保留。  
+- 連接器路由。 如果您手動傳送連接器，則在您使用工具時將不會保留該路由。 某些巢狀圖形 (如連接埠) 的位置並不會相對於其擁有者而予以保留。  
   
 ##  <a name="tbxinfo"></a> 如何定義自訂工具的屬性  
  工具箱資訊 (**.tbxinfo**) 檔可讓您指定的工具箱名稱、 圖示、 工具提示、 索引標籤上，並說明一或多個自訂工具的關鍵字。 為其指定任何名稱，例如**MyTools.tbxinfo**。  
@@ -114,19 +114,19 @@ ms.locfileid: "49252365"
   
  每一個項目的值可以是：  
   
--   此工具箱圖示的 `<bmp fileName="…"/>` 和其他項目的 `<value>string</value>`，如範例所示。  
+- 此工具箱圖示的 `<bmp fileName="…"/>` 和其他項目的 `<value>string</value>`，如範例所示。  
   
- \-或-  
+  \-或-  
   
--   `<resource fileName="Resources.dll"`  
+- `<resource fileName="Resources.dll"`  
   
-     `baseName="Observer.resources" id="Observer.tabname" />`  
+   `baseName="Observer.resources" id="Observer.tabname" />`  
   
-     在此情況下，您會提供編譯的組件，其中此字串值已編譯為資源。  
+   在此情況下，您會提供編譯的組件，其中此字串值已編譯為資源。  
   
- 請針對您要定義的每一個工具箱項目加入 `<customToolboxItem>` 節點。  
+  請針對您要定義的每一個工具箱項目加入 `<customToolboxItem>` 節點。  
   
- 中的節點 **.tbxinfo**檔案如下所示。 每一個節點都有預設值。  
+  中的節點 **.tbxinfo**檔案如下所示。 每一個節點都有預設值。  
   
 |節點名稱|定義|  
 |---------------|-------------|  
@@ -215,21 +215,21 @@ ms.locfileid: "49252365"
   
 #### <a name="to-provide-versions-of-the-tool-in-more-than-one-language"></a>提供多種語言的工具版本  
   
-1.  建立包含一個或多個自訂工具的 Visual Studio 擴充功能專案。  
+1. 建立包含一個或多個自訂工具的 Visual Studio 擴充功能專案。  
   
-     在  **.tbxinfo**檔案，請使用資源檔方法定義的工具`displayName`，工具箱`tabName`，和工具提示。 建立其中已定義這些字串的資源檔，將它編譯成組件，並且從 tbxinfo 檔參考該資源檔。  
+    在  **.tbxinfo**檔案，請使用資源檔方法定義的工具`displayName`，工具箱`tabName`，和工具提示。 建立其中已定義這些字串的資源檔，將它編譯成組件，並且從 tbxinfo 檔參考該資源檔。  
   
-2.  建立其他組件，其中包含擁有其他語言字串的資源檔。  
+2. 建立其他組件，其中包含擁有其他語言字串的資源檔。  
   
-3.  將每一個額外的組件放入資料夾，且該資料夾以此語言的文化特性代碼命名。 例如，將法文版本的組件放入名為的資料夾**fr**。  
+3. 將每一個額外的組件放入資料夾，且該資料夾以此語言的文化特性代碼命名。 例如，將法文版本的組件放入名為的資料夾**fr**。  
   
-4.  您應該使用中性文化特性代碼，通常為兩個字母，而不是特定文化特性 (例如 `fr-CA`)。 如需文化特性代碼的詳細資訊，請參閱[CultureInfo.GetCultures 方法](http://go.microsoft.com/fwlink/?LinkId=160782)，以提供完整的文化特性代碼清單。  
+4. 您應該使用中性文化特性代碼，通常為兩個字母，而不是特定文化特性 (例如 `fr-CA`)。 如需文化特性代碼的詳細資訊，請參閱[CultureInfo.GetCultures 方法](http://go.microsoft.com/fwlink/?LinkId=160782)，以提供完整的文化特性代碼清單。  
   
-5.  建置並散發該 Visual Studio 擴充功能。  
+5. 建置並散發該 Visual Studio 擴充功能。  
   
-6.  當擴充功能安裝到另一部電腦上時，使用者當地文化特性的資源檔版本將會自動載入。 如果您尚未提供該使用者文化特性的版本，則會使用預設資源。  
+6. 當擴充功能安裝到另一部電腦上時，使用者當地文化特性的資源檔版本將會自動載入。 如果您尚未提供該使用者文化特性的版本，則會使用預設資源。  
   
- 您無法使用這個方法安裝不同版本的原型圖表。 每一次安裝的項目和連接器名稱都會相同。  
+   您無法使用這個方法安裝不同版本的原型圖表。 每一次安裝的項目和連接器名稱都會相同。  
   
 ## <a name="other-toolbox-operations"></a>其他工具箱作業  
  通常在 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 中，您可以重新命名工具、移動到不同的工具箱索引標籤和刪除工具，藉此個人化此工具箱。 但是，對於以本主題描述的程序所建立的自訂模型工具，並不會保存這些變更。 當您重新啟動 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 時，自訂工具將以其定義的名稱和工具箱位置再次出現。  

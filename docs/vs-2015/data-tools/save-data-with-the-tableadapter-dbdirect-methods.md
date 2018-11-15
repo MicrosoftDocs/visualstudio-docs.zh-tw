@@ -22,12 +22,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6bb326f1cad6ea019c5d057ca24d198c28dca2a6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6b7a7ec1d244f8bf711f0d1aaf4726c910846357
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49220806"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219714"
 ---
 # <a name="save-data-with-the-tableadapter-dbdirect-methods"></a>使用 TableAdapter DBDirect 方法儲存資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -61,7 +61,7 @@ ms.locfileid: "49220806"
   
 2.  將專案命名為**TableAdapterDbDirectMethodsWalkthrough**。  
   
-3.  選取  **Windows 應用程式**，和 thenselect**確定**。 如需詳細資訊，請參閱 <<c0> [ 用戶端應用程式](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68)。  
+3.  選取  **Windows 應用程式**，然後選取**確定**。 如需詳細資訊，請參閱 <<c0> [ 用戶端應用程式](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68)。  
   
      **TableAdapterDbDirectMethodsWalkthrough**建立專案並將其加入至**方案總管 中**。  
   
@@ -117,7 +117,7 @@ ms.locfileid: "49220806"
   
 #### <a name="to-add-code-to-insert-new-records-into-the-database"></a>加入程式碼以將新記錄插入至資料庫  
   
-1.  選取 **InsertButton**建立 click 事件的事件處理常式，並在程式碼編輯器中開啟您的表單。  
+1.  選取  **InsertButton**建立 click 事件的事件處理常式，並在程式碼編輯器中開啟您的表單。  
   
 2.  以下列程式碼取代 `InsertButton_Click` 事件處理常式：  
   
@@ -135,7 +135,7 @@ ms.locfileid: "49220806"
   
 #### <a name="to-add-code-to-delete-records-from-the-database"></a>加入程式碼以從資料庫刪除記錄  
   
-1.  選取 **DeleteButton**建立 click 事件的事件處理常式，並在程式碼編輯器中開啟您的表單。  
+1.  選取  **DeleteButton**建立 click 事件的事件處理常式，並在程式碼編輯器中開啟您的表單。  
   
 2.  以下列程式碼取代 `DeleteButton_Click` 事件處理常式：  
   
@@ -146,7 +146,7 @@ ms.locfileid: "49220806"
   
 #### <a name="to-run-the-application"></a>若要執行應用程式  
   
--   選取 **F5**執行應用程式。  
+-   選取  **F5**執行應用程式。  
   
 -   選取 **插入**按鈕，並確認新的記錄會出現在方格中。  
   

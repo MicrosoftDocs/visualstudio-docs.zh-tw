@@ -1,5 +1,5 @@
 ---
-title: CONTEXT_COMPARE |Microsoft 文件
+title: CONTEXT_COMPARE |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0563f037f77c18cc5e686c1ea6acf429c91ad06d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9a17d0b422b65093721a55d4bf8d632aba271a55
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31108579"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49950792"
 ---
 # <a name="contextcompare"></a>CONTEXT_COMPARE
 指定的準則來比較兩個記憶體內容。  
@@ -76,18 +76,18 @@ public enum enum_CONTEXT_COMPARE {
  位於相同的範圍內，做為目標的記憶體內容的清單中找到的第一個記憶體內容。  
   
  CONTEXT_SAME_FUNCTION  
- 第一個記憶體內容的清單中找到所用的目標記憶體範圍與相同的功能。  
+ 在相同的函式，做為目標的記憶體範圍中的清單中找到的第一個記憶體內容。  
   
  CONTEXT_SAME_MODULE  
- 第一個記憶體內容的清單中找到所用的目標記憶體內容相同的模組。  
+ 做為目標的記憶體內容相同的模組清單中找到的第一個記憶體內容。  
   
  CONTEXT_SAME_PROCESS  
- 第一個記憶體內容的清單中找到所用的目標記憶體內容相同的程序。  
+ 位於相同的程序，做為目標的記憶體內容的清單中找到的第一個記憶體內容。  
   
 ## <a name="remarks"></a>備註  
- 做為引數傳遞[比較](../../../extensibility/debugger/reference/idebugmemorycontext2-compare.md)方法。  
+ 作為引數[比較](../../../extensibility/debugger/reference/idebugmemorycontext2-compare.md)方法。  
   
- 這些值可用來尋找符合指定的比較準則的清單中的第一個記憶體內容。 記憶體內容指定的記憶體內容的清單比較本身針對透過`IDebugMemoryContext2::Compare`方法。 比較運算子的清單中的第一個記憶體內容`true`再傳回。  
+ 這些值用來尋找符合指定的比較準則的清單中的第一個記憶體內容。 記憶體內容給記憶體內容的清單比較自行針對透過`IDebugMemoryContext2::Compare`方法。 在清單中的比較運算子的第一個記憶體內容`true`再傳回。  
   
 ## <a name="requirements"></a>需求  
  標頭： msdbg.h  

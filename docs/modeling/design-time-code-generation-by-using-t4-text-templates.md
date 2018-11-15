@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: abb606712365108c869ee0cfe705359ad6064228
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: a41b86068f9f7aedbe10635bf859818c0b468789
+ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47860403"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50967450"
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>使用 T4 文字範本在設計階段產生程式碼
 設計階段 T4 文字範本可讓您在 Visual Studio 專案中產生程式碼和其他檔案。 通常，您會撰寫範本，讓他們變更其根據從資料產生的程式碼*模型*。 模型是檔案或資料庫，其中包含您的應用程式需求的重要資訊。
@@ -40,103 +40,102 @@ ms.locfileid: "47860403"
 
 #### <a name="to-create-a-design-time-t4-template-in-visual-studio"></a>在 Visual Studio 中建立設計階段 T4 範本
 
-1.  建立 Visual Studio 專案，或開啟現有實驗。
+1. 建立 Visual Studio 專案，或開啟現有實驗。
 
-     例如，在**檔案**功能表上，選擇**新增** > **專案**。
+    例如，在**檔案**功能表上，選擇**新增** > **專案**。
 
-2.  將文字範本檔案新增至您的專案，並為它命名副檔名 **.tt**。
+2. 將文字範本檔案新增至您的專案，並為它命名副檔名 **.tt**。
 
-     若要這樣做，請在**方案總管**，在您的專案的捷徑功能表，選擇**新增** > **新項目**。 在 [**加入新項目**] 對話方塊中選取**文字範本**從中間的窗格。
+    若要這樣做，請在**方案總管**，在您的專案的捷徑功能表，選擇**新增** > **新項目**。 在 [**加入新項目**] 對話方塊中選取**文字範本**從中間的窗格。
 
-     請注意，**自訂工具**檔案的屬性是**TextTemplatingFileGenerator**。
+    請注意，**自訂工具**檔案的屬性是**TextTemplatingFileGenerator**。
 
-3.  開啟檔案。 它已包含下列指示詞：
+3. 開啟檔案。 它已包含下列指示詞：
 
-    ```
-    <#@ template hostspecific="false" language="C#" #>
-    <#@ output extension=".txt" #>
-    ```
+   ```
+   <#@ template hostspecific="false" language="C#" #>
+   <#@ output extension=".txt" #>
+   ```
 
-     如果您已將該範本加入至 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 專案，則語言屬性會是 "`VB`"。
+    如果您已將該範本加入至 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 專案，則語言屬性會是 "`VB`"。
 
-4.  在檔案結尾加入一些文字。 例如：
+4. 在檔案結尾加入一些文字。 例如：
 
-    ```
-    Hello, world!
-    ```
+   ```
+   Hello, world!
+   ```
 
-5.  儲存檔案。
+5. 儲存檔案。
 
-     您可能會看到**安全性警告**會要求您確認您想要執行範本的訊息方塊。 按一下 [確定 **Deploying Office Solutions**]。
+    您可能會看到**安全性警告**會要求您確認您想要執行範本的訊息方塊。 按一下 [確定 **Deploying Office Solutions**]。
 
-6.  在 **方案總管**，展開範本檔節點，然後您會發現副檔名的檔案 **.txt**。 此檔案包含從範本產生的文字。
+6. 在 **方案總管**，展開範本檔節點，然後您會發現副檔名的檔案 **.txt**。 此檔案包含從範本產生的文字。
 
-    > [!NOTE]
-    >  如果您的專案是 Visual Basic 專案，您必須按一下**顯示所有檔案**才能看到輸出檔案。
+   > [!NOTE]
+   >  如果您的專案是 Visual Basic 專案，您必須按一下**顯示所有檔案**才能看到輸出檔案。
 
 ### <a name="regenerating-the-code"></a>重新產生程式碼
  在下列任何情況下，將會執行範本，並產生附帶檔案：
 
--   編輯範本，然後將焦點變更至不同的 Visual Studio 視窗。
+- 編輯範本，然後將焦點變更至不同的 Visual Studio 視窗。
 
--   儲存範本。
+- 儲存範本。
 
--   按一下 **轉換所有範本**中**建置**功能表。 這會將轉換的 Visual Studio 方案中的所有範本。
+- 按一下 **轉換所有範本**中**建置**功能表。 這會將轉換的 Visual Studio 方案中的所有範本。
 
--   在 **方案總管**，在快顯功能表的任何檔案，選擇**執行自訂工具**。 使用此方法可以轉換所選取的範本子集。
+- 在 **方案總管**，在快顯功能表的任何檔案，選擇**執行自訂工具**。 使用此方法可以轉換所選取的範本子集。
 
- 您也可以設定 Visual Studio 專案，因此它們所讀取的資料檔案變更時，範本會執行的。 如需詳細資訊，請參閱 <<c0> [ 自動重新產生程式碼](#Regenerating)。
+  您也可以設定 Visual Studio 專案，因此它們所讀取的資料檔案變更時，範本會執行的。 如需詳細資訊，請參閱 <<c0> [ 自動重新產生程式碼](#Regenerating)。
 
 ## <a name="generating-variable-text"></a>產生變數文字
  文字範本可讓您使用程式碼，讓所產生檔案的內容不同。
 
 #### <a name="to-generate-text-by-using-program-code"></a>使用程式碼來產生文字
 
-1.  變更 `.tt` 檔案的內容：
+1. 變更 `.tt` 檔案的內容：
 
-    ```csharp
-    <#@ template hostspecific="false" language="C#" #>
-    <#@ output extension=".txt" #>
-    <#int top = 10;
+   ```csharp
+   <#@ template hostspecific="false" language="C#" #>
+   <#@ output extension=".txt" #>
+   <#int top = 10;
 
-    for (int i = 0; i<=top; i++)
-    { #>
+   for (int i = 0; i<=top; i++)
+   { #>
+      The square of <#= i #> is <#= i*i #>
+   <# } #>
+   ```
+
+   ```vb
+   <#@ template hostspecific="false" language="VB" #>
+   <#@ output extension=".txt" #>
+   <#Dim top As Integer = 10
+
+   For i As Integer = 0 To top
+   #>
        The square of <#= i #> is <#= i*i #>
-    <# } #>
-    ```
+   <#
+   Next
+   #>
+   ```
 
-    ```vb
-    <#@ template hostspecific="false" language="VB" #>
-    <#@ output extension=".txt" #>
-    <#Dim top As Integer = 10
+2. 儲存 .tt 檔案，並重新檢查產生的 .txt 檔案。 它會列出 0 到 10 之數字的平方。
 
-    For i As Integer = 0 To top
-    #>
-        The square of <#= i #> is <#= i*i #>
-    <#
-    Next
-    #>
+   請注意，陳述式會用 `<#...#>` 括住，單一運算式則用 `<#=...#>` 括住。 如需詳細資訊，請參閱 <<c0> [ 撰寫 T4 文字範本](../modeling/writing-a-t4-text-template.md)。
 
-    ```
-
-2.  儲存 .tt 檔案，並重新檢查產生的 .txt 檔案。 它會列出 0 到 10 之數字的平方。
-
- 請注意，陳述式會用 `<#...#>` 括住，單一運算式則用 `<#=...#>` 括住。 如需詳細資訊，請參閱 <<c0> [ 撰寫 T4 文字範本](../modeling/writing-a-t4-text-template.md)。
-
- 如果您使用 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 撰寫產生的程式碼，則 `template` 指示詞應該包含 `language="VB"`。 `"C#"` 是預設值。
+   如果您使用 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 撰寫產生的程式碼，則 `template` 指示詞應該包含 `language="VB"`。 `"C#"` 是預設值。
 
 ## <a name="debugging-a-design-time-t4-text-template"></a>偵錯設計階段 T4 文字範本
  偵錯文字範本：
 
--   將 `debug="true"` 插入至 `template` 指示詞。 例如：
+- 將 `debug="true"` 插入至 `template` 指示詞。 例如：
 
-     `<#@ template debug="true" hostspecific="false" language="C#" #>`
+   `<#@ template debug="true" hostspecific="false" language="C#" #>`
 
--   在範本中設定中斷點，方法與您對一般程式碼設定中斷點一樣。
+- 在範本中設定中斷點，方法與您對一般程式碼設定中斷點一樣。
 
--   選擇**偵錯 T4 範本**從文字範本檔案，在 [方案總管] 的捷徑功能表。
+- 選擇**偵錯 T4 範本**從文字範本檔案，在 [方案總管] 的捷徑功能表。
 
- 範本將會執行並停止於中斷點。 您可以檢查變數，並照常逐步執行程式碼。
+  範本將會執行並停止於中斷點。 您可以檢查變數，並照常逐步執行程式碼。
 
 > [!TIP]
 >  `debug="true"` 會將更多行號指示詞插入至產生的程式碼，以讓產生的程式碼更精確地對應至文字範本。 如果您遺漏它，則中斷點可能會以錯誤的狀態停止執行作業。
@@ -154,7 +153,7 @@ ms.locfileid: "47860403"
 
     ```csharp
 
-              <#@ template debug="false" hostspecific="false" language="C#" #>
+    <#@ template debug="false" hostspecific="false" language="C#" #>
     <#@ output extension=".cs" #>
     <# var properties = new string [] {"P1", "P2", "P3"}; #>
     // This is generated code:
@@ -203,13 +202,13 @@ ms.locfileid: "47860403"
 ### <a name="structuring-text-templates"></a>建構文字範本
  我們傾向最好將範本程式碼分成兩個部分：
 
--   組態或資料收集部分：會在變數中設定值，但不包含文字區塊。 在上述範例中，這部分是 `properties` 的初始化。
+- 組態或資料收集部分：會在變數中設定值，但不包含文字區塊。 在上述範例中，這部分是 `properties` 的初始化。
 
-     這有時稱為「模型」區段，因為它會建構庫存模型，而且通常會讀取模型檔案。
+   這有時稱為「模型」區段，因為它會建構庫存模型，而且通常會讀取模型檔案。
 
--   文字產生部分 (在此範例中，是 `foreach(...){...}`)：使用變數的值。
+- 文字產生部分 (在此範例中，是 `foreach(...){...}`)：使用變數的值。
 
- 這不是必要的分隔，而是減少含文字部分的複雜性，讓範本的讀取更為容易的樣式。
+  這不是必要的分隔，而是減少含文字部分的複雜性，讓範本的讀取更為容易的樣式。
 
 ## <a name="reading-files-or-other-sources"></a>讀取檔案或其他來源
  若要存取模型檔案或資料庫，您的範本程式碼可以使用 System.XML 這類組件。 若要存取這些組件，您必須插入下列這類指示詞：
@@ -226,7 +225,7 @@ ms.locfileid: "47860403"
 
 ```csharp
 
-      <# var properties = File.ReadLines("C:\\propertyList.txt");#>
+<# var properties = File.ReadLines("C:\\propertyList.txt");#>
 ...
 <# foreach (string propertyName in properties) { #>
 ...
@@ -236,7 +235,6 @@ ms.locfileid: "47860403"
 <# For Each propertyName As String In
              File.ReadLines("C:\\propertyList.txt")
 #>
-
 ```
 
 ### <a name="opening-a-file-with-a-relative-pathname"></a>使用相對路徑名稱來開啟檔案
@@ -244,7 +242,6 @@ ms.locfileid: "47860403"
 
 ```
 <#@ template debug="false" hostspecific="true" language="C#" #>
-
 ```
 
  然後，您可以撰寫，例如：
@@ -256,7 +253,6 @@ ms.locfileid: "47860403"
 ...
 <#  foreach (string propertyName in properties { #>
 ...
-
 ```
 
 ```vb
@@ -267,7 +263,6 @@ ms.locfileid: "47860403"
 <#   For Each propertyName As String In properties
 ...
 #>
-
 ```
 
  您也可以使用 `this.Host.TemplateFile`，以識別目前範本檔的名稱。
@@ -275,19 +270,19 @@ ms.locfileid: "47860403"
  `this.Host` (在 VB 中，為 `Me.Host`) 的類型是 `Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost`。
 
 ### <a name="getting-data-from-visual-studio"></a>從 Visual Studio 中取得資料
- 若要使用 Visual Studio 中提供的服務，將`hostSpecific`屬性，並載入`EnvDTE`組件。 然後，您可以使用 IServiceProvider.GetCOMService() 來存取 DTE 和其他服務。 例如：
+ 若要使用 Visual Studio 中提供的服務，將`hostSpecific`屬性，並載入`EnvDTE`組件。 匯入`Microsoft.VisualStudio.TextTemplating`，其中包含`GetCOMService()`擴充方法。  然後，您可以使用 IServiceProvider.GetCOMService() 來存取 DTE 和其他服務。 例如：
 
-```scr
+```src
 <#@ template hostspecific="true" language="C#" #>
 <#@ output extension=".txt" #>
 <#@ assembly name="EnvDTE" #>
+<#@ import namespace="Microsoft.VisualStudio.TextTemplating" #>
 <#
   IServiceProvider serviceProvider = (IServiceProvider)this.Host;
   EnvDTE.DTE dte = (EnvDTE.DTE) serviceProvider.GetCOMService(typeof(EnvDTE.DTE));
 #>
 
 Number of projects in this VS solution:  <#= dte.Solution.Projects.Count #>
-
 ```
 
 > [!TIP]
@@ -301,7 +296,7 @@ Number of projects in this VS solution:  <#= dte.Solution.Projects.Count #>
  如果您已安裝 Visual Studio Modeling SDK，您可以在執行組建時自動轉換所有範本。 若要這麼做，請在文字編輯器中編輯您的專案檔 (.csproj 或 .vbproj)，並在接近檔案結尾處，任何其他 `<import>` 陳述式的後面加入下列各行：
 
 > [!NOTE]
-> 在 Visual Studio 2017 中，文字範本轉換 SDK 和 Visual Studio Modeling SDK 會自動安裝時安裝 Visual Studio 的特定功能。 如需詳細資訊，請參閱 <<c0> [ 此部落格文章](https://blogs.msdn.microsoft.com/visualstudioalm/2016/12/12/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/)。
+> 在 Visual Studio 2017 中，文字範本轉換 SDK 和 Visual Studio Modeling SDK 會自動安裝時安裝 Visual Studio 的特定功能。 如需詳細資訊，請參閱 <<c0> [ 此部落格文章](https://blogs.msdn.microsoft.com/devops/2016/12/12/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/)。
 
 ```xml
 <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v15.0\TextTemplating\Microsoft.TextTemplating.targets" />
@@ -326,37 +321,39 @@ Warning("A warning message");
 
 #### <a name="to-convert-an-existing-file-to-a-design-time-template"></a>將現有檔案轉換為設計階段範本
 
-1.  加入 Visual Studio 專案，將您想要產生，例如類型的檔案`.cs`， `.vb`，或`.resx`檔案。
+1. 加入 Visual Studio 專案，將您想要產生，例如類型的檔案`.cs`， `.vb`，或`.resx`檔案。
 
-2.  測試新的檔案，確定其運作。
+2. 測試新的檔案，確定其運作。
 
-3.  在 [方案總管] 中，變更的檔案名稱副檔名 **.tt**。
+3. 在 [方案總管] 中，變更的檔案名稱副檔名 **.tt**。
 
-4.  請確認下列屬性的 **.tt**檔案：
+4. 請確認下列屬性的 **.tt**檔案：
 
-    |||
-    |-|-|
-    |**自訂工具 =**|**TextTemplatingFileGenerator**|
-    |**建置動作 =**|**無**|
 
-5.  在檔案開頭，插入下列各行：
+   | | |
+   |-|-|
+   | **自訂工具 =** | **TextTemplatingFileGenerator** |
+   | **建置動作 =** | **無** |
 
-    ```
-    <#@ template debug="false" hostspecific="false" language="C#" #>
-    <#@ output extension=".cs" #>
-    ```
 
-     如果您想要在 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 中撰寫範本的產生程式碼，請將 `language` 屬性設定為 `"VB"`，而非 `"C#"`。
+5. 在檔案開頭，插入下列各行：
 
-     將 `extension` 屬性設定為您要產生之檔案類型的副檔名 (例如 `.cs`、`.resx` 或 `.xml`)。
+   ```
+   <#@ template debug="false" hostspecific="false" language="C#" #>
+   <#@ output extension=".cs" #>
+   ```
 
-6.  儲存檔案。
+    如果您想要在 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 中撰寫範本的產生程式碼，請將 `language` 屬性設定為 `"VB"`，而非 `"C#"`。
 
-     即會建立具有所指定副檔名的附帶檔案。 其屬性對檔案類型而言正確。 例如，**建置動作**.cs 檔案的屬性會是**編譯**。
+    將 `extension` 屬性設定為您要產生之檔案類型的副檔名 (例如 `.cs`、`.resx` 或 `.xml`)。
 
-     請確認產生的檔案包含與原始檔案相同的內容。
+6. 儲存檔案。
 
-7.  識別您要使其不同的檔案部分。 例如，只在特定狀況下出現的部分、重複的部分，或特定值不同的部分。 插入產生程式碼。 儲存檔案，並確認已正確地產生附帶檔案。 重複此步驟。
+    即會建立具有所指定副檔名的附帶檔案。 其屬性對檔案類型而言正確。 例如，**建置動作**.cs 檔案的屬性會是**編譯**。
+
+    請確認產生的檔案包含與原始檔案相同的內容。
+
+7. 識別您要使其不同的檔案部分。 例如，只在特定狀況下出現的部分、重複的部分，或特定值不同的部分。 插入產生程式碼。 儲存檔案，並確認已正確地產生附帶檔案。 重複此步驟。
 
 ## <a name="guidelines-for-code-generation"></a>產生程式碼的指導方針
  請參閱[撰寫 T4 文字範本的指導方針](../modeling/guidelines-for-writing-t4-text-templates.md)。
@@ -364,7 +361,7 @@ Warning("A warning message");
 ## <a name="next-steps"></a>後續步驟
 
 |後續步驟|主題|
-|---------------|-----------|
+|-|-|
 |撰寫並偵錯更進階的文字範本 (內含使用輔助函式、包含的檔案和外部資料的程式碼)。|[撰寫 T4 文字範本](../modeling/writing-a-t4-text-template.md)|
 |在執行階段，透過範本產生文件。|[使用 T4 文字範本在執行階段產生文字](../modeling/run-time-text-generation-with-t4-text-templates.md)|
 |執行 Visual Studio 外部產生的文字。|[使用 TextTransform 公用程式產生檔案](../modeling/generating-files-with-the-texttransform-utility.md)|

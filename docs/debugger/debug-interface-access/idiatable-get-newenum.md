@@ -1,5 +1,5 @@
 ---
-title: 'Idiatable:: Get__newenum |Microsoft 文件'
+title: 'Idiatable:: Get__newenum |Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e5b6123ab1056da3d5ffcc1f83b8e79a1a980533
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 5576d2c86ae648653da64e8990edd3e909192423
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31471095"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49844831"
 ---
 # <a name="idiatablegetnewenum"></a>IDiaTable::get__NewEnum
 擷取<xref:System.Runtime.InteropServices.ComTypes.IEnumVARIANT>這個列舉值的版本。  
@@ -34,10 +34,10 @@ HRESULT get__NewEnum (
   
 #### <a name="parameters"></a>參數  
  `pRetVal`  
- [out]傳回`IUnknown`表示介面<xref:System.Runtime.InteropServices.ComTypes.IEnumVARIANT>這個列舉值的版本。  
+ [out]傳回`IUnknown`介面，表示<xref:System.Runtime.InteropServices.ComTypes.IEnumVARIANT>這個列舉值的版本。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDiaTable](../../debugger/debug-interface-access/idiatable.md)

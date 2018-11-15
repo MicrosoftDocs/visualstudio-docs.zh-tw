@@ -16,12 +16,12 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 680346b640c5c6a8ad66129e30a1034b360bc084
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6a83374015fcdada482099982f0294660412a0cc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49231136"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49823706"
 ---
 # <a name="how-to-display-window-properties"></a>如何：顯示視窗屬性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,9 +30,9 @@ ms.locfileid: "49231136"
   
 ### <a name="to-open-the-window-properties-dialog-box"></a>若要開啟 [視窗屬性] 對話方塊  
   
-1.  選取的項目，然後選擇**屬性**從**檢視**功能表。  
+1. 選取的項目，然後選擇**屬性**從**檢視**功能表。  
   
- 無法強制回應屬性對話方塊。 當您按一下 [檢視] 視窗中的項目對項目，對話方塊會自動重新整理每個選取的項目上的資訊。
+   無法強制回應屬性對話方塊。 當您按一下 [檢視] 視窗中的項目對項目，對話方塊會自動重新整理每個選取的項目上的資訊。
 
 
 

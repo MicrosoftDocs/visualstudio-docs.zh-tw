@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 3db94813f6d6b87d29744be2d1f53e26c3b80f26
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 882a355742a100f7a105abab541832f86740afe7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44280164"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942731"
 ---
 # <a name="tutorial-get-started-with-the-django-web-framework-in-visual-studio"></a>教學課程：開始使用 Visual Studio 中的 Django Web 架構
 
@@ -163,16 +163,16 @@ Visual Studio 專案本身則可包含 Django 專案以及多個應用程式。 
 
     ![Python 專案內容功能表上的 Django 命令](media/django/step01-django-commands-menu.png)
 
-1. 在您的專案中，會有一個名稱和專案相同的資料夾。 其中包含基本的 Django 專案檔：
+2. 在您的專案中，會有一個名稱和專案相同的資料夾。 其中包含基本的 Django 專案檔：
 
-    - *__init.py*：告訴 Python 此資料夾為 Python 套件的空白檔案。
-    - *wsgi.py*：供 WSGI 相容的網頁伺服器服務您專案的進入點。 您通常會以現況保留此檔案，因為它可為實際執行的網頁伺服器提供勾點。
-    - *settings.py*：包含 Django 專案的設定，您可以在開發 Web 應用程式的過程中修改。
-    - *urls.py*：包含 Django 專案的目錄，您也可以在開發過程中修改。
+   - *__init.py*：告訴 Python 此資料夾為 Python 套件的空白檔案。
+   - *wsgi.py*：供 WSGI 相容的網頁伺服器服務您專案的進入點。 您通常會以現況保留此檔案，因為它可為實際執行的網頁伺服器提供勾點。
+   - *settings.py*：包含 Django 專案的設定，您可以在開發 Web 應用程式的過程中修改。
+   - *urls.py*：包含 Django 專案的目錄，您也可以在開發過程中修改。
 
-    ![[方案總管] 中的 Django 專案檔](media/django/step01-django-project-in-solution-explorer.png)
+     ![[方案總管] 中的 Django 專案檔](media/django/step01-django-project-in-solution-explorer.png)
 
-1. 如前文所述，Visual Studio 範本也會將指定 Django 套件相依性的 *requirements.txt* 檔案新增至專案。 正是因為這個檔案，系統才會在您首次建立專案時邀請您建立虛擬環境。
+3. 如前文所述，Visual Studio 範本也會將指定 Django 套件相依性的 *requirements.txt* 檔案新增至專案。 正是因為這個檔案，系統才會在您首次建立專案時邀請您建立虛擬環境。
 
 ### <a name="question-can-visual-studio-generate-a-requirementstxt-file-from-a-virtual-environment-after-i-install-other-packages"></a>問題：Visual Studio 是否可以在我安裝其他套件之後，從虛擬環境產生 requirements.txt 檔案？
 

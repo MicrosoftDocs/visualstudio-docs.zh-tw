@@ -16,12 +16,12 @@ ms.assetid: ccb7ecb0-f189-4e80-b5b2-221a095e01f5
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1bc5cfd7c5d5e7529d545790a9aab413c0021beb
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d1cd55f39d54bdbd7b01889672eaf86b6be063e1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49287772"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49848458"
 ---
 # <a name="idebugprocess3getenginefilter"></a>IDebugProcess3::GetEngineFilter
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

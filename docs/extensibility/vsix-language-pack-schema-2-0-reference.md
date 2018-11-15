@@ -16,12 +16,12 @@ author: dgriffen
 manager: douge
 ms.workload:
 - dagriffe
-ms.openlocfilehash: e4a8bc0f4b276ed649cdff986bdfc56cf8c77e06
-ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
+ms.openlocfilehash: 94d785ce55b57e35b0880537e099cbc3e03d20ab
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39586218"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49855806"
 ---
 # <a name="vsix-language-pack-schema-20-reference"></a>VSIX 語言套件結構描述 2.0 參考
 
@@ -34,6 +34,7 @@ VSIX 語言套件結構描述會提供 VSIX 封裝當地語系化的安裝資訊
 ### <a name="packagelangaugepackmanifest-element"></a>PackageLangaugePackManifest 項目
 
 內`<PackageLanguagePackManifest>`下列項目必須存在的項目：
+
 |標題|描述|
 |-----------|-----------------|
 |`<Metadata>`| 所有當地語系化的套件中繼資料包含的項目
@@ -41,6 +42,7 @@ VSIX 語言套件結構描述會提供 VSIX 封裝當地語系化的安裝資訊
 ### <a name="metadata-element"></a>中繼資料元素
 
 內`<Metadata>`項目可以有下列項目：
+
 |標題|描述|
 |-----------|-----------------|
 |`<DisplayName>`|安裝延伸模組的當地語系化的名稱|

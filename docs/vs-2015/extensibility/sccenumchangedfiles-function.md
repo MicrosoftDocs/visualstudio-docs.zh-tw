@@ -17,12 +17,12 @@ ms.assetid: 76cac510-107b-4c1a-ba60-9c39b6db2e71
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e4bc5595b5421e0be0139598464e70c6af52df80
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 16bc3c17fbf7d9d11951dcbe670c8c7edba66364
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49294472"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49860073"
 ---
 # <a name="sccenumchangedfiles-function"></a>SccEnumChangedFiles 函式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

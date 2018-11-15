@@ -13,29 +13,29 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ee151375cfff8977249ca5e21255401235987886
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: dccbac140aefb952eed97006cbcae6a61f94ac92
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39513357"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49855413"
 ---
 # <a name="implementing-a-legacy-language-service"></a>實作舊版語言服務
 若要實作使用 managed 的 package framework (MPF) 的語言服務，您必須衍生的類別<xref:Microsoft.VisualStudio.Package.LanguageService>類別並實作下列的抽象方法和屬性：  
   
--   <xref:Microsoft.VisualStudio.Package.LanguageService.GetLanguagePreferences%2A> 方法  
+- <xref:Microsoft.VisualStudio.Package.LanguageService.GetLanguagePreferences%2A> 方法  
   
--   <xref:Microsoft.VisualStudio.Package.LanguageService.GetScanner%2A> 方法  
+- <xref:Microsoft.VisualStudio.Package.LanguageService.GetScanner%2A> 方法  
   
--   <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> 方法  
+- <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> 方法  
   
--   <xref:Microsoft.VisualStudio.Package.LanguageService.Name%2A> 屬性  
+- <xref:Microsoft.VisualStudio.Package.LanguageService.Name%2A> 屬性  
   
- 實作這些方法和屬性，請參閱下方的詳細資料之適當章節。  
+  實作這些方法和屬性，請參閱下方的詳細資料之適當章節。  
   
- 若要支援額外的功能，您的語言服務可能必須從其中一個 MPF 語言服務類別，衍生類別比方說，若要支援其他的功能表命令，您必須衍生的類別<xref:Microsoft.VisualStudio.Package.ViewFilter>類別並覆寫數個命令處理常式方法 (請參閱<xref:Microsoft.VisualStudio.Package.ViewFilter>如需詳細資訊)。 <xref:Microsoft.VisualStudio.Package.LanguageService>類別提供數種方法，呼叫以建立的各種類別的新執行個體，並覆寫適當的建立方式，提供您類別的執行個體。 例如，您需要覆寫<xref:Microsoft.VisualStudio.Package.LanguageService.CreateViewFilter%2A>方法中的<xref:Microsoft.VisualStudio.Package.LanguageService>類別，以傳回您自己的執行個體<xref:Microsoft.VisualStudio.Package.ViewFilter>類別。 請參閱 < 具現化自訂類別 > 一節，如需詳細資訊。  
+  若要支援額外的功能，您的語言服務可能必須從其中一個 MPF 語言服務類別，衍生類別比方說，若要支援其他的功能表命令，您必須衍生的類別<xref:Microsoft.VisualStudio.Package.ViewFilter>類別並覆寫數個命令處理常式方法 (請參閱<xref:Microsoft.VisualStudio.Package.ViewFilter>如需詳細資訊)。 <xref:Microsoft.VisualStudio.Package.LanguageService>類別提供數種方法，呼叫以建立的各種類別的新執行個體，並覆寫適當的建立方式，提供您類別的執行個體。 例如，您需要覆寫<xref:Microsoft.VisualStudio.Package.LanguageService.CreateViewFilter%2A>方法中的<xref:Microsoft.VisualStudio.Package.LanguageService>類別，以傳回您自己的執行個體<xref:Microsoft.VisualStudio.Package.ViewFilter>類別。 請參閱 < 具現化自訂類別 > 一節，如需詳細資訊。  
   
- 您的語言服務也可以提供自己的圖示，在許多地方使用。 比方說，當顯示 IntelliSense 完成清單時，清單中的每個項目可以有與其相關聯，做為方法、 類別、 命名空間、 property、 標示的項目圖示或需要您的語言。 這些圖示可在所有的 IntelliSense 清單中，**瀏覽列**，然後在**錯誤清單**工作 視窗。 請參閱下方的 「 語言服務映像 」 區段，如需詳細資訊。  
+  您的語言服務也可以提供自己的圖示，在許多地方使用。 比方說，當顯示 IntelliSense 完成清單時，清單中的每個項目可以有與其相關聯，做為方法、 類別、 命名空間、 property、 標示的項目圖示或需要您的語言。 這些圖示可在所有的 IntelliSense 清單中，**瀏覽列**，然後在**錯誤清單**工作 視窗。 請參閱下方的 「 語言服務映像 」 區段，如需詳細資訊。  
   
 ## <a name="getlanguagepreferences-method"></a>GetLanguagePreferences 方法  
  <xref:Microsoft.VisualStudio.Package.LanguageService.GetLanguagePreferences%2A>方法一律會傳回相同的執行個體<xref:Microsoft.VisualStudio.Package.LanguagePreferences>類別。 您可以使用基底<xref:Microsoft.VisualStudio.Package.LanguagePreferences>類別，如果您不需要任何其他的喜好設定，為您的語言服務。 MPF 語言服務類別假設至少存在基底<xref:Microsoft.VisualStudio.Package.LanguagePreferences>類別。  

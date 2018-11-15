@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d0556dd29e37f45b460e3dde271384e94b1c09ed
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 70a06548dd25ade1bf64bad6a99261e043f6ac65
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31951774"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50670828"
 ---
 # <a name="options-page-debugging-node-properties"></a>偵錯節點屬性、選項頁
 下表描述與 [選項] 對話方塊的 [偵錯] 分類 `DTE.Properties("Debugging", <Property Page>)` 相關聯的頁面 (或屬性集合)。
@@ -24,7 +24,7 @@ ms.locfileid: "31951774"
  `DTE.Properties("Debugging", "General")`
 
 |屬性項目名稱|值|描述|
-|------------------------|-----------|-----------------|
+| - |-----------|-----------------|
 |PromptOnBreakpointDelete|Get/Set (布林值)|判斷偵錯工具是否先提示權限，再刪除專案中的所有中斷點。|
 |BreakAllProcesses|Get/Set (布林值)|決定是否只要單一處理序中斷，偵錯工具即中斷所有處理序。|
 |BreakAtBoundaries|Get/Set (布林值)|決定當 AppDomain 之間或 Managed 和原生程式碼之間發生越界的例外狀況時，偵錯工具是否中斷執行。|
@@ -54,7 +54,7 @@ ms.locfileid: "31951774"
  `DTE.Properties("Debugging", "EditAndContinue")`
 
 |屬性項目名稱|值|描述|
-|------------------------|-----------|-----------------|
+| - |-----------|-----------------|
 |EnableEditAndContinue|Get/Set (布林值)|決定是否啟用 [編輯後繼續]。 此選項適用於所有支援 [編輯後繼續] 的語言。|
 |InvokedByCommands|Get/Set (布林值)|當使用者選取 [步驟] 或 [繼續] 等偵錯命令時，決定 [編輯後繼續] 是否自動套用程式碼變更。 此選項僅適用於原生程式碼。|
 |InvokedByCommandsAskFirst|Get/Set (布林值)|當使用者選取 [步驟] 或 [繼續] 等偵錯命令時，決定 [編輯後繼續] 是否提示使用者提供權限以套用程式碼變更。 此選項僅適用於原生程式碼。|
@@ -66,7 +66,7 @@ ms.locfileid: "31951774"
  `DTE.Properties("Debugging", "JustInTime")`
 
 |屬性項目名稱|值|描述|
-|------------------------|-----------|-----------------|
+| - |-----------|-----------------|
 |JitManaged|Get/Set (布林值)|決定 Managed 程式碼是否啟用 Just-In-Time 偵錯。|
 |JitNative|Get/Set (布林值)|決定原生程式碼是否啟用 Just-In-Time 偵錯。|
 |JitScript|Get/Set (布林值)|決定指令碼程式碼是否啟用 Just-In-Time 偵錯。|
@@ -75,16 +75,16 @@ ms.locfileid: "31951774"
  `DTE.Properties("Debugging", "Native")`
 
 |屬性項目名稱|值|描述|
-|------------------------|-----------|-----------------|
+| - |-----------|-----------------|
 |LoadDllExports|Get/Set (布林值)|決定偵錯工具是否載入 DLL 匯出表。|
 |EnableRPC|Get/Set (布林值)|決定偵錯工具是否可以逐步執行至 COM 遠端程序呼叫。|
 
 ## <a name="see-also"></a>請參閱
 
-- [控制選項設定](http://msdn.microsoft.com/Library/a09ed242-7494-4cde-bbd1-7a8ec617965d)
-- [在選項頁中決定屬性項目的名稱](http://msdn.microsoft.com/Library/d450422d-47c7-4eeb-9f9f-3286264bc5aa)
+- [控制選項設定](https://msdn.microsoft.com/Library/a09ed242-7494-4cde-bbd1-7a8ec617965d)
+- [在選項頁中決定屬性項目的名稱](https://msdn.microsoft.com/Library/d450422d-47c7-4eeb-9f9f-3286264bc5aa)
 - [字型和色彩節點屬性、選項頁面](../../ide/reference/options-page-fonts-and-colors-node-properties.md)
 - [文字編輯器節點屬性、選項頁面](../../ide/reference/options-page-text-editor-node-properties.md)
 - [選項對話方塊、偵錯、一般](../../debugger/general-debugging-options-dialog-box.md)
-- [選項對話方塊、偵錯、編輯後繼續](http://msdn.microsoft.com/Library/009d225f-ef65-463f-a146-e4c518f86103)
+- [選項對話方塊、偵錯、編輯後繼續](/visualstudio/debugger/edit-and-continue?view=vs-2015)
 - [選項對話方塊、偵錯、Just-In-Time](../../debugger/just-in-time-debugging-options-dialog-box.md)

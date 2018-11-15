@@ -22,37 +22,37 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4832ce22bfa0137040892ffcd1ce08b3f32646bd
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b6aafde6fed0a1f1722c2d355499523114aaaa00
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42635677"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49873873"
 ---
 # <a name="walkthrough-create-a-workflow-with-association-and-initiation-forms"></a>逐步解說： 使用關聯與初始表單建立工作流程
   本逐步解說示範如何建立基本的循序工作流程，其中包含使用關聯與初始表單。 這是啟用參數加入至工作流程，以及使用者 （初始表單） 來啟動工作流程時先到 SharePoint 系統管理員 （關聯表單），相關聯的 ASPX 形式。  
   
  此逐步解說將概述使用者想要建立具有下列需求的核准工作流程的經費支出報表的其中一個的案例：  
   
--   在工作流程與清單相關聯時，系統會提示系統管理員與關聯表單，讓它們的經費支出報表，會在輸入貨幣限制時。  
+- 在工作流程與清單相關聯時，系統會提示系統管理員與關聯表單，讓它們的經費支出報表，會在輸入貨幣限制時。  
   
--   員工將其經費支出報表上傳至共用的文件清單，啟動工作流程，然後輸入 工作流程初始表單中的總費用。  
+- 員工將其經費支出報表上傳至共用的文件清單，啟動工作流程，然後輸入 工作流程初始表單中的總費用。  
   
--   如果員工費用報表總計超過了系統管理員的預先定義的限制，工作會建立供員工的經理核准的經費支出報表。 不過，如果員工的經費支出報表總計小於或等於支出限制，自動核准訊息會寫入工作流程的歷程記錄清單。  
+- 如果員工費用報表總計超過了系統管理員的預先定義的限制，工作會建立供員工的經理核准的經費支出報表。 不過，如果員工的經費支出報表總計小於或等於支出限制，自動核准訊息會寫入工作流程的歷程記錄清單。  
   
- 這個逐步解說將說明下列工作：  
+  這個逐步解說將說明下列工作：  
   
--   建立在 SharePoint 清單定義循序工作流程專案[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。  
+- 建立在 SharePoint 清單定義循序工作流程專案[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。  
   
--   建立工作流程排程。  
+- 建立工作流程排程。  
   
--   處理工作流程活動事件。  
+- 處理工作流程活動事件。  
   
--   建立工作流程關聯與初始表單。  
+- 建立工作流程關聯與初始表單。  
   
--   建立工作流程的關聯。  
+- 建立工作流程的關聯。  
   
--   以手動方式啟動的工作流程。  
+- 以手動方式啟動的工作流程。  
   
 > [!NOTE]  
 >  雖然本逐步解說使用循序工作流程專案，程序也適用於狀態機器工作流程。  

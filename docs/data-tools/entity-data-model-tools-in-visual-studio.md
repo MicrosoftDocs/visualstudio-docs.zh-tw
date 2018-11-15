@@ -10,12 +10,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 679c91014966167c64296638d9d0a9b2d302d345
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: bbffe18b108beb230a77da38df99a7100e542a27
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44284031"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49819091"
 ---
 # <a name="entity-framework-tools-in-visual-studio"></a>在 Visual Studio 中的 entity Framework 工具
 Entity Framework 是一種物件關聯式對應技術，可讓.NET 開發人員使用網域特有物件來處理關聯式資料。 它不需要開發人員通常需要撰寫的大部分資料存取程式碼。 Entity Framework 是模型對於新的.NET 應用程式的技術建議的物件關聯式對應 (ORM)。
@@ -28,16 +28,16 @@ Entity Framework 工具安裝的一部分**資料儲存和處理**Visual Studio 
 
 以下是 Visual Studio 中的 Entity Framework 工具所組成的特定工具：
 
--   您可以使用[!INCLUDE[vstecado](../data-tools/includes/vstecado_md.md)]  **[!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)]設計師**(**Entity Designer**) 以視覺化方式建立和修改實體、 關聯、 對應和繼承關聯性。 **Entity Designer**也會產生[!INCLUDE[TLA#tla_cshrp](../data-tools/includes/tlasharptla_cshrp_md.md)]或[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]物件層程式碼。
+- 您可以使用[!INCLUDE[vstecado](../data-tools/includes/vstecado_md.md)]  **[!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)]設計師**(**Entity Designer**) 以視覺化方式建立和修改實體、 關聯、 對應和繼承關聯性。 **Entity Designer**也會產生[!INCLUDE[TLA#tla_cshrp](../data-tools/includes/tlasharptla_cshrp_md.md)]或[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]物件層程式碼。
 
--   您可以使用**[!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)]精靈**從現有資料庫產生概念模型，並將資料庫連接資訊加入至您的應用程式。
+- 您可以使用**[!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)]精靈**從現有資料庫產生概念模型，並將資料庫連接資訊加入至您的應用程式。
 
--   您可以使用**建立資料庫精靈**要先建立概念模型，然後再建立支援該模型的資料庫。
+- 您可以使用**建立資料庫精靈**要先建立概念模型，然後再建立支援該模型的資料庫。
 
--   您可以使用**更新模型精靈**變更已對基礎資料庫時，更新您的概念模型、 儲存體模型和對應。
+- 您可以使用**更新模型精靈**變更已對基礎資料庫時，更新您的概念模型、 儲存體模型和對應。
 
-    > [!NOTE]
-    >  從 Visual Studio 2010 開始，Entity Framework 工具不支援[!INCLUDE[ss2k](../data-tools/includes/ss2k_md.md)]。
+  > [!NOTE]
+  >  從 Visual Studio 2010 開始，Entity Framework 工具不支援[!INCLUDE[ss2k](../data-tools/includes/ss2k_md.md)]。
 
 工具會產生或修改 *.edmx*檔案。 這 *.edmx*檔案包含描述概念模型、 儲存模型，以及它們之間的對應的資訊。 如需詳細資訊，請參閱 < [EDMX](https://docs.microsoft.com/ef/ef6/)。
 
@@ -45,12 +45,12 @@ Entity Framework 工具安裝的一部分**資料儲存和處理**Visual Studio 
 
 ## <a name="related-topics"></a>相關主題
 
-|標題|描述|
-|-----------|-----------------|
-|[ADO.NET Entity Framework](/dotnet/framework/data/adonet/ef/index)|描述如何使用[!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)]工具，其中[!INCLUDE[adonet_ef](../data-tools/includes/adonet_ef_md.md)]提供，若要建立應用程式。|
-|[實體資料模型](/dotnet/framework/data/adonet/entity-data-model)|提供用於處理資料所建置的應用程式使用的資訊和連結[!INCLUDE[adonet_ef](../data-tools/includes/adonet_ef_md.md)]。|
-|[Entity Framework (EF) 文件）](https://docs.microsoft.com/ef/ef6/get-started)|提供影片、 教學課程中，並可協助您充分利用 Entity Framework 的進階文件的索引。|
-|[ASP.NET 5 應用程式到新的資料庫](https://docs.efproject.net/en/latest/platforms/aspnetcore/new-db.html)|描述如何使用 Entity Framework 7 以建立新的 ASP.NET 5 應用程式。|
+| 標題 | 描述 |
+| - | - |
+| [ADO.NET Entity Framework](/dotnet/framework/data/adonet/ef/index) | 描述如何使用[!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)]工具，其中[!INCLUDE[adonet_ef](../data-tools/includes/adonet_ef_md.md)]提供，若要建立應用程式。 |
+| [實體資料模型](/dotnet/framework/data/adonet/entity-data-model) | 提供用於處理資料所建置的應用程式使用的資訊和連結[!INCLUDE[adonet_ef](../data-tools/includes/adonet_ef_md.md)]。 |
+| [Entity Framework (EF) 文件）](https://docs.microsoft.com/ef/ef6/get-started) | 提供影片、 教學課程中，並可協助您充分利用 Entity Framework 的進階文件的索引。 |
+| [ASP.NET 5 應用程式到新的資料庫](https://docs.efproject.net/en/latest/platforms/aspnetcore/new-db.html) | 描述如何使用 Entity Framework 7 以建立新的 ASP.NET 5 應用程式。 |
 
 ## <a name="see-also"></a>另請參閱
 

@@ -16,12 +16,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0809c7acde2959fb91aa964fec137f63a7a995dc
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 47fee24292ee92b34cea6add21bc220a1a17f135
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39500692"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49867659"
 ---
 # <a name="createpkgdef-utility"></a>CreatePkgDef 公用程式
 採用 Visual Studio 延伸模組做為參數的.dll 檔案，並建立 *.pkgdef*伴隨著檔案 *.dll*檔案。 *.Pkgdef*檔案包含會否則寫入系統登錄時已安裝的延伸模組的所有資訊。  
@@ -53,13 +53,13 @@ CreatePkgDef /out=<FileName> [/codebase] [/assembly] <AssemblyPath>
   
  *.Pkgdef*檔案必須安裝在下列位置其中之一： 
 
- - *%localappdata%\Microsoft\Visual Studio\14.0\Extensions\\* 
+- *%localappdata%\Microsoft\Visual Studio\14.0\Extensions\\* 
  
- - *%vsinstalldir%\Common7\IDE\Extensions\\*
+- *%vsinstalldir%\Common7\IDE\Extensions\\*
     
- 如果安裝資料夾 *%localappdata%\Microsoft\Visual Studio\14.0\Extensions\\*，擴充 Visual Studio 中，將會辨識，但預設會停用。 使用者可以藉由啟用延伸模組**擴充功能和更新**。 
+  如果安裝資料夾 *%localappdata%\Microsoft\Visual Studio\14.0\Extensions\\*，擴充 Visual Studio 中，將會辨識，但預設會停用。 使用者可以藉由啟用延伸模組**擴充功能和更新**。 
    
- 如果安裝資料夾 *%vsinstalldir%\Common7\IDE\Extensions\\*，預設會啟用擴充功能。  
+  如果安裝資料夾 *%vsinstalldir%\Common7\IDE\Extensions\\*，預設會啟用擴充功能。  
   
 > [!NOTE]
 >  **擴充功能和更新**工具無法用來存取延伸模組，除非它安裝 VSIX 套件的一部分。  

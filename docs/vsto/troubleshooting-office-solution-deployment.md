@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9bed7d523d91b43abe5455ea19567da5647f468c
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: bba978da26a2aa7b7263fa5d2e88fa8acdc272f0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43774649"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49885999"
 ---
 # <a name="troubleshoot-office-solution-deployment"></a>針對 Office 方案部署進行疑難排解
   本主題包含如何解決部署 Office 解決方案常見問題的相關資訊。  
@@ -35,11 +35,11 @@ ms.locfileid: "43774649"
 ## <a name="change-the-assembly-name-causes-conflicts"></a>變更組件名稱發生衝突  
  如果您變更**組件名稱**中的值**應用程式**頁面**專案設計工具**發佈工具已經部署方案之後，將會修改安裝套件，變成有一個*Setup.exe*檔案和兩個部署資訊清單。 如果您部署兩個資訊清單檔案，就可能發生下列狀況：  
   
--   如果使用者兩個版本都安裝，應用程式就會載入兩個 VSTO 增益集。  
+- 如果使用者兩個版本都安裝，應用程式就會載入兩個 VSTO 增益集。  
   
--   如果先安裝了 VSTO 增益集才變更組件名稱，使用者永遠都收不到更新。  
+- 如果先安裝了 VSTO 增益集才變更組件名稱，使用者永遠都收不到更新。  
   
- 若要避免這些狀況，不要變更解決方案的**組件名稱**值之後部署方案。  
+  若要避免這些狀況，不要變更解決方案的**組件名稱**值之後部署方案。  
   
 ## <a name="check-for-updates-takes-a-long-time"></a>檢查有更新需要很長的時間  
  Visual Studio 2010 Tools for Office runtime 提供系統管理員可用來設定下載資訊清單和解決方案的逾時值的登錄項目。  
@@ -63,7 +63,7 @@ ms.locfileid: "43774649"
  您可以將 .NET Framework、 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]和 Office 主要 interop 組件加入安裝套件當做與 Office 解決方案一起部署的必要條件。 如需有關如何安裝主要 interop 組件的資訊，請參閱 <<c0> [ 設定電腦以開發 Office 方案](../vsto/configuring-a-computer-to-develop-office-solutions.md)並[如何： 安裝 Office 主要 interop 組件](../vsto/how-to-install-office-primary-interop-assemblies.md)。  
   
 ## <a name="publish-using-localhost-can-cause-installation-problems"></a>發行使用 'Localhost' 會導致安裝問題  
- 當您使用 「 http://localhost"做為文件層級解決方案的發佈或安裝位置**發行精靈**不會將字串轉換成實際的電腦名稱。 在這種情況下，解決方案必須安裝在開發電腦上。 為使得部署的方案在開發電腦上使用 IIS，所有的 HTTP/HTTPS/FTP 位置請使用完整格式名稱，不要使用 localhost。  
+ 當您使用 「<http://localhost>"做為文件層級解決方案的發佈或安裝位置**發行精靈**不會將字串轉換成實際的電腦名稱。 在這種情況下，解決方案必須安裝在開發電腦上。 為使得部署的方案在開發電腦上使用 IIS，所有的 HTTP/HTTPS/FTP 位置請使用完整格式名稱，不要使用 localhost。  
   
 ## <a name="cached-assemblies-are-loaded-instead-of-updated-assemblies"></a>已載入，而不是更新的組件快取的組件  
  當專案輸出路徑位於網路檔案共用時、組件以強式名稱簽署時，以及自訂的組件版本未改變時，Fusion (.NET Framework 組件載入器) 會載入組件的快取複本。 如果您更新的組件符合這些條件，因為已載入了快取的複本，所以下次執行專案時，更新就不會出現。  
@@ -72,13 +72,13 @@ ms.locfileid: "43774649"
   
 ### <a name="to-download-assemblies-instead-of-loading-cached-copies"></a>下載組件，不載入快取複本  
   
-1.  在功能表列上選擇 **專案**， _ProjectName_**屬性**。  
+1. 在功能表列上選擇 **專案**， _ProjectName_**屬性**。  
   
-2.  在 [應用程式]  頁面上選擇 [組件資訊] 。  
+2. 在 [應用程式]  頁面上選擇 [組件資訊] 。  
   
-3.  在第一個**組件版本**方塊中，輸入星號 (\*)，然後選擇**確定** 按鈕。  
+3. 在第一個**組件版本**方塊中，輸入星號 (\*)，然後選擇**確定** 按鈕。  
   
- 變更組件版本之後，您可以繼續以強式名稱簽署組件，Fusion 會載入最新的自訂版本。  
+   變更組件版本之後，您可以繼續以強式名稱簽署組件，Fusion 會載入最新的自訂版本。  
   
 ## <a name="installation-fails-when-the-uri-has-characters-that-arent-us-ascii"></a>URI 有非 US-ASCII 字元時，安裝失敗  
  當您發佈 Office 解決方案到 HTTP/HTTPS/FTP 位置時，路徑不能有不是 US-ASCII 的任何 Unicode 字元。 這種字元會造成安裝程式的不一致行為。 安裝路徑請使用 US-ASCII 字元。  
@@ -91,15 +91,15 @@ ms.locfileid: "43774649"
 ## <a name="uncaught-exception-or-method-not-found-error-when-you-install-a-solution"></a>無法攔截的例外狀況或方法找不到錯誤時安裝解決方案  
  當您開啟部署資訊清單，會在安裝 Office 解決方案時 ( *.vsto*檔案)，可能會出現在下列情況下的 Office 應用程式、 文件或活頁簿中，錯誤訊息：  
   
--   找不到方法。  
+- 找不到方法。  
   
--   MissingMethodException。  
+- MissingMethodException。  
   
--   無法攔截的例外狀況。  
+- 無法攔截的例外狀況。  
   
- 若要避免這些錯誤訊息，請執行安裝程式安裝解決方案。  
+  若要避免這些錯誤訊息，請執行安裝程式安裝解決方案。  
   
- 當您安裝解決方案卻沒有執行安裝程式時，安裝程式不會檢查或安裝必要條件。 安裝程式會檢查必要條件的正確版本，並視需要加以安裝。  
+  當您安裝解決方案卻沒有執行安裝程式時，安裝程式不會檢查或安裝必要條件。 安裝程式會檢查必要條件的正確版本，並視需要加以安裝。  
   
 ## <a name="manifest-registry-keys-for-add-ins-change-after-an-installshield-limited-edition-project-is-built"></a>在建置 InstallShield 限量版專案後，資訊清單增益集變更的登錄機的碼  
  資訊清單登錄機碼是 VSTO 增益集安裝的一部分，有時候程式的變更 *.vsto*要 *。 dll.manifest*當您建置 InstallShield 限量版專案。  

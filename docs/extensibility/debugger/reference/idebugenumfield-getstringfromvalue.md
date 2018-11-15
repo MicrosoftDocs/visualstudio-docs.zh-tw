@@ -1,5 +1,5 @@
 ---
-title: IDebugEnumField::GetStringFromValue |Microsoft 文件
+title: IDebugEnumField::GetStringFromValue |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a0b7ac4f7cde93d4637906202f7b4c643750d8e0
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e9c1bd0887c8d154501a87ea9a2227e079bbb083
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31110558"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872755"
 ---
 # <a name="idebugenumfieldgetstringfromvalue"></a>IDebugEnumField::GetStringFromValue
-這個方法會取得指定其值的列舉常數的名稱。  
+這個方法會取得指定其值的列舉常數名稱。  
   
 ## <a name="syntax"></a>語法  
   
@@ -43,16 +43,16 @@ int GetStringFromValue(
   
 #### <a name="parameters"></a>參數  
  `value`  
- [in]為其取得其名稱的列舉常數的值。  
+ [in]要取得的列舉型別名稱的常值。  
   
  `pbstrValue`  
  [out]傳回列舉常數的名稱。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK`; 否則傳回`S_FALSE`值沒有相關聯的名稱，則傳回錯誤碼。  
+ 如果成功，則傳回`S_OK`; 否則傳回`S_FALSE`值沒有相關聯的名稱，則傳回錯誤碼。  
   
 ## <a name="remarks"></a>備註  
- 如果有一個以上名稱相同的值相關聯，則將傳回的列舉型別中定義的第一個名稱。  
+ 如果有多個相同的值相關聯的名稱，將會傳回定義列舉中的第一個名稱。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugEnumField](../../../extensibility/debugger/reference/idebugenumfield.md)

@@ -14,12 +14,12 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c61d2ab349a245f4720c69479519c54cc078f882
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: dd62abec72694689f810073a375f7ed9e4173bf7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49228498"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49950390"
 ---
 # <a name="halfquarter-texture-dimensions-variant"></a>半/四分之一紋理維度變異
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,15 +38,15 @@ ms.locfileid: "49228498"
 ## <a name="remarks"></a>備註  
  每次呼叫可建立來源紋理的 `ID3D11Device::CreateTexture2D` 時，紋理維度都會減少。 特別是 `pDesc` 中所傳遞的 D3D11_TEXTURE2D_DESC 物件描述呈現所使用的紋理時，紋理維度會減少；亦即：  
   
--   BindFlags 成員只設定 D3D11_BIND_SHADER_RESOURCE 旗標。  
+- BindFlags 成員只設定 D3D11_BIND_SHADER_RESOURCE 旗標。  
   
--   MiscFlags 成員未設定 D3D11_RESOURCE_MISC_TILE_POOL 旗標或 D3D11_RESOURCE_MISC_TILED 旗標 (不會調整並排資源的大小)。  
+- MiscFlags 成員未設定 D3D11_RESOURCE_MISC_TILE_POOL 旗標或 D3D11_RESOURCE_MISC_TILED 旗標 (不會調整並排資源的大小)。  
   
--   紋理格式可支援做為呈現目標 (由 D3D11_FORMAT_SUPPORT_RENDER_TARGET 所決定)，而這是減少紋理大小的必要條件。 也支援 BC1、BC2 和 BC3 格式，即使這些格式不支援做為呈現目標。  
+- 紋理格式可支援做為呈現目標 (由 D3D11_FORMAT_SUPPORT_RENDER_TARGET 所決定)，而這是減少紋理大小的必要條件。 也支援 BC1、BC2 和 BC3 格式，即使這些格式不支援做為呈現目標。  
   
- 如果是由應用程式提供初始資料，則此變異會先將紋理資料縮放為適當的大小，再建立紋理。 如果是以區塊壓縮格式 (例如 BC1、BC2 或 BC3) 提供初始資料，則會先將它解碼、縮放並重新編碼，再用來建立較小的紋理 (區塊壓縮的特性即意味著，額外的解碼-縮放-編碼流程，幾乎一律會導致影像品質低於從先前未曾編碼過，但已縮放過的紋理版本產生的區塊壓縮紋理)。  
+  如果是由應用程式提供初始資料，則此變異會先將紋理資料縮放為適當的大小，再建立紋理。 如果是以區塊壓縮格式 (例如 BC1、BC2 或 BC3) 提供初始資料，則會先將它解碼、縮放並重新編碼，再用來建立較小的紋理 (區塊壓縮的特性即意味著，額外的解碼-縮放-編碼流程，幾乎一律會導致影像品質低於從先前未曾編碼過，但已縮放過的紋理版本產生的區塊壓縮紋理)。  
   
- 如果啟用紋理的 MIP 對應，則變異也會據此減少 MIP 層級數目 (縮放為一半大小時會少一個層級，縮放為四分之一大小時則會少兩個層級)。  
+  如果啟用紋理的 MIP 對應，則變異也會據此減少 MIP 層級數目 (縮放為一半大小時會少一個層級，縮放為四分之一大小時則會少兩個層級)。  
   
 ## <a name="example"></a>範例  
  此變異會先在執行階段調整紋理大小，再呼叫 `CreateTexture2D`。 建議您不要對實際執行程式碼使用此方式，因為完整大小的紋理會耗用較多的磁碟空間，而且因為額外步驟可能會增加應用程式中的載入時間，特別是針對壓縮過的紋理，畢竟這類紋理需要大量計算資源來進行編碼。 建議您改用屬於您組建管線的影像編輯器或影像處理器，來離線調整紋理大小。 這些方式會減少磁碟空間需求，並去除應用程式中的執行階段額外負荷，以及提供更多的處理時間，讓您可以在壓縮紋理時保留最佳影像品質。  

@@ -24,15 +24,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b7751a53430518df9ce80fd053be5414e015143d
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 0db327943dcaf9b14a921cf4437b6c23874b4380
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39151650"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219428"
 ---
 # <a name="rc-task"></a>RC 工作
-包裝 Microsoft Windows 資源編譯器工具 (*rc.exe*)。 **RC** 工作會將游標、圖示、點陣圖、對話方塊和字型等資源編譯為資源 (*.res*) 檔案。 如需詳細資訊，請參閱[資源編譯器](https://docs.microsoft.com/en-us/windows/desktop/menurc/resource-compiler) \(英文\)。
+包裝 Microsoft Windows 資源編譯器工具 (*rc.exe*)。 **RC** 工作會將游標、圖示、點陣圖、對話方塊和字型等資源編譯為資源 (*.res*) 檔案。 如需詳細資訊，請參閱[資源編譯器](https://docs.microsoft.com/windows/desktop/menurc/resource-compiler) \(英文\)。
   
 ## <a name="parameters"></a>參數  
  下表說明 RC 工作的參數。 大部分的工作參數以及數組參數會對應到命令列選項。  

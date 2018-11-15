@@ -1,5 +1,5 @@
 ---
-title: STEPUNIT |Microsoft 文件
+title: STEPUNIT |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 993c92d457baa2008387aad2bc6749ce7ad9387b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a88cb7126166462e64680938eb5f1b0d456a75f4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31126605"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49901108"
 ---
 # <a name="stepunit"></a>STEPUNIT
-逐步執行步驟單位指定。  
+指定間距單位逐步執行。  
   
 ## <a name="syntax"></a>語法  
   
@@ -46,7 +46,7 @@ enum enum_STEPUNIT {
   
 ## <a name="members"></a>成員  
  STEP_STATEMENT  
- 由陳述式的步驟。  
+ 陳述式的步驟。  
   
  STEP_LINE  
  所列的步驟。  
@@ -55,7 +55,7 @@ enum enum_STEPUNIT {
  依指示的步驟。  
   
 ## <a name="remarks"></a>備註  
- 做為引數傳遞[步驟](../../../extensibility/debugger/reference/idebugprocess3-step.md)方法。  
+ 作為引數[步驟](../../../extensibility/debugger/reference/idebugprocess3-step.md)方法。  
   
 ## <a name="requirements"></a>需求  
  標頭： msdbg.h  

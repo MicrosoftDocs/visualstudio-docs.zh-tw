@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b8620a51480868302fc840bffea5bbdb427c48f5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8d68347f2b6b9f538555e05c91b15dcb045b46d6
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42635612"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295978"
 ---
 # <a name="walkthrough-create-a-sharepoint-project-extension"></a>逐步解說： 建立 SharePoint 專案擴充功能
   此逐步解說將說明如何建立 SharePoint 專案延伸模組。 您可以使用專案擴充功能，例如加入、 刪除或重新命名專案時的專案層級事件回應。 您也可以新增自訂屬性，或當屬性值變更時回應。 不同的專案項目擴充功能，於專案延伸模組不能與特定的 SharePoint 專案類型相關聯。 當您建立的專案延伸模組時，擴充功能載入任何種類的 SharePoint 專案中開啟時[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。  
@@ -53,11 +53,11 @@ ms.locfileid: "42635612"
 ## <a name="create-the-projects"></a>建立專案
  若要完成此逐步解說中，您必須建立兩個專案：  
   
--   若要建立 VSIX 封裝來部署專案擴充功能的 VSIX 專案。  
+- 若要建立 VSIX 封裝來部署專案擴充功能的 VSIX 專案。  
   
--   實作專案擴充功能的類別庫專案。  
+- 實作專案擴充功能的類別庫專案。  
   
- 開始本逐步解說建立的專案。  
+  開始本逐步解說建立的專案。  
   
 #### <a name="to-create-the-vsix-project"></a>若要建立 VSIX 專案  
   
@@ -131,7 +131,7 @@ ms.locfileid: "42635612"
   
 1.  在 [**方案總管**，開啟 source.extension.vsixmanifest 檔案中，捷徑功能表，然後選擇**開啟**] 按鈕。  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 以資訊清單設計工具中開啟檔案。 在顯示的資訊**中繼資料**索引標籤也會出現在**擴充功能和更新**。 所有的 VSIX 套件需要 extension.vsixmanifest 檔案。 如需有關這個檔案的詳細資訊，請參閱 < [VSIX 延伸結構描述 1.0 參考](http://msdn.microsoft.com/en-us/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)。  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 以資訊清單設計工具中開啟檔案。 在顯示的資訊**中繼資料**索引標籤也會出現在**擴充功能和更新**。 所有的 VSIX 套件需要 extension.vsixmanifest 檔案。 如需有關這個檔案的詳細資訊，請參閱 < [VSIX 延伸結構描述 1.0 參考](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)。  
   
 2.  在  **Product Name**方塊中，輸入**自訂專案屬性**。  
   
@@ -146,7 +146,7 @@ ms.locfileid: "42635612"
 6.  在 **型別**清單中，選擇**Microsoft.VisualStudio.MefComponent**。  
   
     > [!NOTE]  
-    >  這個值會對應到`MEFComponent`extension.vsixmanifest 檔案中的項目。 這個元素會指定在 VSIX 封裝中的延伸模組組件名稱。 如需詳細資訊，請參閱 < [MEFComponent 項目 （VSX 結構描述）](http://msdn.microsoft.com/en-us/8a813141-8b73-44c9-b80b-ca85bbac9551)。  
+    >  這個值會對應到`MEFComponent`extension.vsixmanifest 檔案中的項目。 這個元素會指定在 VSIX 封裝中的延伸模組組件名稱。 如需詳細資訊，請參閱 < [MEFComponent 項目 （VSX 結構描述）](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\))。  
   
 7.  在 **來源**清單中，選擇**目前方案中的專案**選項按鈕。  
   

@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: e39a7d770308cae7e022d419b21695f9d478aad7
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: a3adcb961e3031180054706da9d43dd04dccdedf
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381689"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51348639"
 ---
 # <a name="design-xaml-in-visual-studio"></a>在 Visual Studio 中設計 XAML
 
@@ -52,7 +52,7 @@ Visual Studio 和 Blend for Visual Studio 都提供視覺化工具，用於為�
 
 - **常見的 [方案總管]：**[方案總管] 會提供您的專案和其檔案的組織化檢視，而且也已準備好存取與其相關聯的命令。 使用 [方案總管]，使用大型企業專案更加輕鬆。 請參閱[解決方案和專案](../ide/solutions-and-projects-in-visual-studio.md)。
 
-- **Team Explorer：** 您可以使用 [Team Explorer] 管理您具有 GIT 或 TFS 儲存機制的專案，有助於團隊共同作業。 請參閱 [在 Team Explorer 中工作](http://msdn.microsoft.com/Library/fd7a5cf7-7916-4fa0-b5e6-5a83cf377a02)。
+- **Team Explorer：** 您可以使用 [Team Explorer] 管理您具有 GIT 或 TFS 儲存機制的專案，有助於團隊共同作業。 請參閱 [在 Team Explorer 中工作](/azure/devops/user-guide/work-team-explorer)。
 
 - **NuGet：** 可以管理在 Visual Studio 和 Blend for Visual Studio 中的 NuGet 封裝。 NuGet 是 .NET Framework 的封裝管理員，簡化了從方案安裝與移除封裝。
 
@@ -61,7 +61,7 @@ Visual Studio 和 Blend for Visual Studio 都提供視覺化工具，用於為�
 若要提升產能，請考慮使用 Blend for Visual Studio 來處理下列工作。 這些都是 Blend for Visual Studio 可提供比 Visual Studio 設計工具或程式碼本身更快速度和更多功能之處。
 
 |以|Visual Studio|Blend for Visual Studio|詳細資訊|
-|--------|-------------------|-----------------------------|----------------------|
+|--------|-------------------| - | - |
 |**建立動畫**|動畫沒有設計工具，您必須以程式設計方式來建立動畫。 這需要了解動畫、WPF 中的計時系統以及大量編碼專業知識。|您能以視覺化方式建立動畫，並在 Blend for Visual Studio 中預覽。 這比在程式碼中建置動畫來得更多更精準。 您可以新增觸發程序來處理使用者互動，而且可以切換到程式碼以加入事件處理常式和其他功能。|[製作物件動畫](../designers/animate-objects-in-xaml-designer.md)|
 |**將圖形和文字轉換成更容易操作的路徑**|不支援。|您可以將圖形轉換成路徑，使其更好編輯控制，藉此稍微或大幅變更圖形 (例如矩形和橢圓形)。 您可以調整形狀或合併路徑，並從多個圖形中建立複合路徑。<br /><br /> 您也可以將文字區塊轉換成路徑，以便做為向量影像來操作。|[繪製圖案與路徑](../designers/draw-shapes-and-paths.md)|
 |**將互動功能加入至 UI 設計**|需要 C#、Visual Basic 或 C++ 程式碼。|在控制項上進行拖放行為以將互動功能加入到靜態設計中。 這些行為屬於隨即可用的程式碼片段，可封裝像是拖/放、縮放及視覺狀態變更等的功能。 有越來越多的行為可供選擇，也可建立自己的行為。<br /><br /> 您可以之後在 Blend for Visual Studio 中變更行為的屬性或將事件處理常式加入至程式碼中，藉此自訂每個行為。|[插入控制項並修改其行為](../designers/insert-controls-and-modify-their-behavior-in-xaml-designer.md)|

@@ -25,12 +25,12 @@ caps.latest.revision: 39
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c71181a939ae91986ed31e2518456002f5bb417c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3852a02015ba175b49a8e94adf8991003707a497
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49237012"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49914680"
 ---
 # <a name="bind-wpf-controls-to-data-in-visual-studio"></a>將 WPF 控制項繫結至 Visual Studio 中的資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,26 +68,26 @@ ms.locfileid: "49237012"
 ### <a name="datasets"></a>資料集  
  當您將資料表或資料行**資料來源**設計工具中，視窗[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]會產生[!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)]，會執行下列：  
   
--   將資料集或新 <xref:System.Windows.Data.CollectionViewSource> 加入至拖曳目標容器的資源。 <xref:System.Windows.Data.CollectionViewSource> 物件可用來巡覽及顯示資料集中的資料。  
+- 將資料集或新 <xref:System.Windows.Data.CollectionViewSource> 加入至拖曳目標容器的資源。 <xref:System.Windows.Data.CollectionViewSource> 物件可用來巡覽及顯示資料集中的資料。  
   
--   建立控制項的資料繫結。 如果您將項目拖曳至設計工具中的現有控制項，XAML 會將控制項繫結至項目。 如果您將項目拖曳至容器時，XAML 會建立為拖曳的項目，所選取的控制項和它的項目繫結的控制項。 控制項是在新的 <xref:System.Windows.Controls.Grid> 內建立。  
+- 建立控制項的資料繫結。 如果您將項目拖曳至設計工具中的現有控制項，XAML 會將控制項繫結至項目。 如果您將項目拖曳至容器時，XAML 會建立為拖曳的項目，所選取的控制項和它的項目繫結的控制項。 控制項是在新的 <xref:System.Windows.Controls.Grid> 內建立。  
   
- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 也會對程式碼後置檔案進行下列變更：  
+  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 也會對程式碼後置檔案進行下列變更：  
   
--   針對包含控制項的 <xref:System.Windows.FrameworkElement.Loaded> 項目，建立 [!INCLUDE[TLA2#tla_ui](../includes/tla2sharptla-ui-md.md)] 事件處理常式。 事件處理常式會將資料填入資料表，從容器的資源擷取 <xref:System.Windows.Data.CollectionViewSource>，然後讓第一個資料項目成為目前的項目。 如果<xref:System.Windows.FrameworkElement.Loaded>事件處理常式已經存在，[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]將此程式碼加入至現有的事件處理常式。  
+- 針對包含控制項的 <xref:System.Windows.FrameworkElement.Loaded> 項目，建立 [!INCLUDE[TLA2#tla_ui](../includes/tla2sharptla-ui-md.md)] 事件處理常式。 事件處理常式會將資料填入資料表，從容器的資源擷取 <xref:System.Windows.Data.CollectionViewSource>，然後讓第一個資料項目成為目前的項目。 如果<xref:System.Windows.FrameworkElement.Loaded>事件處理常式已經存在，[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]將此程式碼加入至現有的事件處理常式。  
   
 ### <a name="entity-data-models"></a>實體資料模型  
  當您拖曳實體或實體屬性從**資料來源**設計工具中，視窗[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]會產生[!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)]，會執行下列：  
   
--   將新 <xref:System.Windows.Data.CollectionViewSource> 加入至拖曳目標容器的資源。 <xref:System.Windows.Data.CollectionViewSource> 物件可用來巡覽及顯示實體中的資料。  
+- 將新 <xref:System.Windows.Data.CollectionViewSource> 加入至拖曳目標容器的資源。 <xref:System.Windows.Data.CollectionViewSource> 物件可用來巡覽及顯示實體中的資料。  
   
--   建立控制項的資料繫結。 如果您將項目拖曳至設計工具中的現有控制項，[!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] 會將控制項繫結至項目。 如果您將項目拖曳到容器中，[!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)]建立控制項，已選取拖曳的項目，且它將控制項繫結至項目。 控制項是在新的 <xref:System.Windows.Controls.Grid> 內建立。  
+- 建立控制項的資料繫結。 如果您將項目拖曳至設計工具中的現有控制項，[!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] 會將控制項繫結至項目。 如果您將項目拖曳到容器中，[!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)]建立控制項，已選取拖曳的項目，且它將控制項繫結至項目。 控制項是在新的 <xref:System.Windows.Controls.Grid> 內建立。  
   
- Visual Studio 也會對程式碼後置檔案進行下列變更：  
+  Visual Studio 也會對程式碼後置檔案進行下列變更：  
   
--   加入新方法，其針對您拖曳至設計工具的實體 (或包含拖曳至設計工具之屬性的實體)，傳回查詢。 新的方法有名稱為 Get*EntityName*查詢，其中*EntityName*是實體的名稱。  
+- 加入新方法，其針對您拖曳至設計工具的實體 (或包含拖曳至設計工具之屬性的實體)，傳回查詢。 新的方法有名稱為 Get*EntityName*查詢，其中*EntityName*是實體的名稱。  
   
--   針對包含控制項的 <xref:System.Windows.FrameworkElement.Loaded> 項目，建立 [!INCLUDE[TLA2#tla_ui](../includes/tla2sharptla-ui-md.md)] 事件處理常式。 事件處理常式會呼叫 Get*EntityName*Query 方法將擷取的資料中填入實體<xref:System.Windows.Data.CollectionViewSource>從容器的資源，然後讓第一個資料項目的目前項目。 如果<xref:System.Windows.FrameworkElement.Loaded>事件處理常式已經存在，[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]將此程式碼加入至現有的事件處理常式。  
+- 針對包含控制項的 <xref:System.Windows.FrameworkElement.Loaded> 項目，建立 [!INCLUDE[TLA2#tla_ui](../includes/tla2sharptla-ui-md.md)] 事件處理常式。 事件處理常式會呼叫 Get*EntityName*Query 方法將擷取的資料中填入實體<xref:System.Windows.Data.CollectionViewSource>從容器的資源，然後讓第一個資料項目的目前項目。 如果<xref:System.Windows.FrameworkElement.Loaded>事件處理常式已經存在，[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]將此程式碼加入至現有的事件處理常式。  
   
 ### <a name="services"></a>服務  
  當您將服務物件或屬性從**資料來源**設計工具中，視窗[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]會產生[!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)]建立資料繫結控制項 （或將現有控制項繫結至物件或屬性）。 不過，[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 不會產生可將資料填入 Proxy 服務物件的程式碼。 您必須自行撰寫此程式碼。 如需示範如何執行這項操作的範例，請參閱 <<c0> [ 繫結 WPF 控制項新增至 WCF 資料服務](../data-tools/bind-wpf-controls-to-a-wcf-data-service.md)。  

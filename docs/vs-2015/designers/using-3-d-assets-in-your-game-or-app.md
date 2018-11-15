@@ -21,12 +21,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 09035e985926e3f1db3bd2dd1fc2bc009f111e33
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e04f4c82e6f11f2659b4cc65549efb291009b720
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49226302"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49863590"
 ---
 # <a name="using-3-d-assets-in-your-game-or-app"></a>在遊戲或應用程式中使用 3D 資產
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,18 +57,18 @@ ms.locfileid: "49226302"
   
 #### <a name="to-add-an-asset-to-your-build"></a>將資產加入至組建  
   
-1.  在方案總管中，於專案中，開啟資產的捷徑功能表，然後選擇 [屬性]。 資產的 [屬性頁] 對話方塊隨即顯示。  
+1. 在方案總管中，於專案中，開啟資產的捷徑功能表，然後選擇 [屬性]。 資產的 [屬性頁] 對話方塊隨即顯示。  
   
-2.  請確定 [組態] 和 [平台] 屬性設定為您要套用變更的值。  
+2. 請確定 [組態] 和 [平台] 屬性設定為您要套用變更的值。  
   
-3.  在 [組態屬性] 下，選擇 [一般]，然後在屬性格線的 [一般] 下，將 [項目類型] 屬性設定為適當的內容管線項目類型。 例如，針對影像或紋理檔，選擇 [影像內容管線]。  
+3. 在 [組態屬性] 下，選擇 [一般]，然後在屬性格線的 [一般] 下，將 [項目類型] 屬性設定為適當的內容管線項目類型。 例如，針對影像或紋理檔，選擇 [影像內容管線]。  
   
-    > [!IMPORTANT]
-    >  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 預設會假設應該使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 內建的**影像**項目類型來分類多種類型的影像檔。 因此，您需要變更想要由影像內容管線處理之每個影像的 [項目類型] 屬性。 3D 模型和視覺著色器圖形的其他類型內容管線來源檔，預設為正確的 [項目類型]。  
+   > [!IMPORTANT]
+   >  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 預設會假設應該使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 內建的**影像**項目類型來分類多種類型的影像檔。 因此，您需要變更想要由影像內容管線處理之每個影像的 [項目類型] 屬性。 3D 模型和視覺著色器圖形的其他類型內容管線來源檔，預設為正確的 [項目類型]。  
   
-4.  選擇 [確定]  按鈕。  
+4. 選擇 [確定]  按鈕。  
   
- 以下是三種內容管線項目類型與其相關聯的來源和輸出檔案類型。  
+   以下是三種內容管線項目類型與其相關聯的來源和輸出檔案類型。  
   
 |項目類型|原始程式檔類型|輸出檔案格式|  
 |---------------|-----------------------|------------------------|  

@@ -1,5 +1,5 @@
 ---
-title: IDebugPendingBreakpoint2::Bind |Microsoft 文件
+title: IDebugPendingBreakpoint2::Bind |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,15 +16,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4170fce2fad18abdf54508ee7377c96367f3bf83
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e822686cf331794ff221c94ccdbd3ddd25e2f6bd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31115368"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49933699"
 ---
 # <a name="idebugpendingbreakpoint2bind"></a>IDebugPendingBreakpoint2::Bind
-將這個暫止中斷點繫結到一或多個程式碼位置。  
+將這個暫止中斷點繫結至一個或多個程式碼位置。  
   
 ## <a name="syntax"></a>語法  
   
@@ -39,12 +39,12 @@ int Bind();
 ```  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK`; 否則傳回錯誤碼。 傳回`E_BP_DELETED`若已刪除中斷點。  
+ 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。 傳回`E_BP_DELETED`如果中斷點已遭刪除。  
   
 ## <a name="remarks"></a>備註  
- 呼叫這個方法時，偵錯引擎 (DE) 應該嘗試將這個暫止中斷點繫結至符合的所有程式碼位置。  
+ 呼叫這個方法時，偵錯引擎 (DE) 應該嘗試將這個暫止中斷點繫結到符合的所有程式碼位置。  
   
- 這個方法會傳回後，呼叫端必須等待事件指出暫止中斷點具有繫結或是錯誤，然後再假設要呼叫[EnumBoundBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumboundbreakpoints.md)或[EnumErrorBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md).methods 分別列舉所有的繫結或錯誤中斷點。  
+ 這個方法傳回之後，呼叫端必須等候暫止中斷點已繫結，或處於假設之前的錯誤，指出呼叫的事件[EnumBoundBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumboundbreakpoints.md)或[EnumErrorBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md)用會分別列舉所有的繫結或錯誤中斷點。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)   

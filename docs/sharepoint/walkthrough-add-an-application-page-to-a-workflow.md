@@ -18,25 +18,25 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 841257a03e257b92b728d33751869a02e2c40db6
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 4bdb01e5cbb45b9986e61a99e18b5984e92d37dd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43774584"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49866892"
 ---
 # <a name="walkthrough-add-an-application-page-to-a-workflow"></a>逐步解說： 將應用程式頁面加入至工作流程
   本逐步解說示範如何新增應用程式頁面，以顯示衍生自工作流程在工作流程專案的資料。 本文是根據本主題中所述的專案[逐步解說： 建立工作流程關聯與初始表單](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md)。
 
  本逐步解說將示範下列工作：
 
--   將 ASPX 應用程式頁面加入 SharePoint 工作流程專案。
+- 將 ASPX 應用程式頁面加入 SharePoint 工作流程專案。
 
--   從工作流程專案中取得資料，並用它進行操作。
+- 從工作流程專案中取得資料，並用它進行操作。
 
--   在應用程式頁面的表格中顯示資料。
+- 在應用程式頁面的表格中顯示資料。
 
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
 ## <a name="prerequisites"></a>必要條件
  您需要下列元件才能完成此逐步解說：
@@ -305,23 +305,23 @@ ms.locfileid: "43774584"
 
 #### <a name="to-test-the-application-page"></a>若要測試應用程式頁面
 
-1.  選擇**F5**鍵執行，並將專案部署到 SharePoint。
+1. 選擇**F5**鍵執行，並將專案部署到 SharePoint。
 
-2.  選擇**首頁**按鈕，然後再選擇**Shared Documents**以顯示在 SharePoint 網站上的共用文件清單的 [快速啟動] 列上的連結。
+2. 選擇**首頁**按鈕，然後再選擇**Shared Documents**以顯示在 SharePoint 網站上的共用文件清單的 [快速啟動] 列上的連結。
 
-3.  若要表示經費支出報表，此範例中，將上傳一些新的文件到文件 清單選擇**文件**連結**LibraryTools**  索引標籤頂端的頁面，然後選擇  **上傳文件**工具功能區上的按鈕。
+3. 若要表示經費支出報表，此範例中，將上傳一些新的文件到文件 清單選擇**文件**連結**LibraryTools**  索引標籤頂端的頁面，然後選擇  **上傳文件**工具功能區上的按鈕。
 
-4.  上傳一些文件之後，具現化工作流程選擇**程式庫**連結**LibraryTools**  索引標籤頂端的頁面，然後選擇**文件庫設定**工具功能區上的按鈕。
+4. 上傳一些文件之後，具現化工作流程選擇**程式庫**連結**LibraryTools**  索引標籤頂端的頁面，然後選擇**文件庫設定**工具功能區上的按鈕。
 
-5.  在 **文件庫設定**頁面上，選擇**工作流程設定**連結**權限與管理**一節。
+5. 在 **文件庫設定**頁面上，選擇**工作流程設定**連結**權限與管理**一節。
 
-6.  在 **工作流程設定**頁面上，選擇**加入的工作流程**連結。
+6. 在 **工作流程設定**頁面上，選擇**加入的工作流程**連結。
 
-7.  在**新增的工作流程**頁面上，選擇**ExpenseReport-Workflow1**工作流程中，輸入工作流程的名稱，例如**ExpenseTest**，然後選擇  **下一步**  按鈕。
+7. 在**新增的工作流程**頁面上，選擇**ExpenseReport-Workflow1**工作流程中，輸入工作流程的名稱，例如**ExpenseTest**，然後選擇  **下一步**  按鈕。
 
-     工作流程關聯表單隨即出現。 您可以使用它來報告費用限制量。
+    工作流程關聯表單隨即出現。 您可以使用它來報告費用限制量。
 
-8.  在關聯表單中，輸入**1000年**成**自動核准限制**方塊，然後再選擇**建立關聯的工作流程** 按鈕。
+8. 在關聯表單中，輸入**1000年**成**自動核准限制**方塊，然後再選擇**建立關聯的工作流程** 按鈕。
 
 9. 選擇**家用**返回 SharePoint 首頁上的按鈕。
 
@@ -337,7 +337,7 @@ ms.locfileid: "43774584"
 
 14. 重複步驟 11 – 13 與共用文件清單中的其他文件。 （文件的確切數目並不重要）。
 
-15. 顯示報表摘要的應用程式頁面隨即在瀏覽器開啟下列 URL: **http://**_SystemName_**/_layouts/ExpenseReport/ApplicationPage1.aspx**.
+15. 顯示報表摘要的應用程式頁面隨即在瀏覽器開啟下列 URL: **http://**<em>SystemName</em>**/_layouts/ExpenseReport/ApplicationPage1.aspx**.
 
      費用報表的 [摘要] 頁面會列出所有的經費支出報表已超過已配置的數量、 數量超過它和所有報表的總金額。
 

@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ac06fa18ee9459d8dc43bd0c536b68f9d027c97d
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 024241870bb4a0a2ef696130cbe5ddc94319493a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31584395"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49837200"
 ---
 # <a name="resource-details-view---contention-data"></a>資源詳細資料檢視 - 爭用資料
 資源詳細資料檢視會在時間軸圖形顯示因爭用所選取的資源而造成的封鎖事件。 因為另一個執行緒已鎖定資源的存取權時，所以會強制執行緒暫停執行而發生封鎖事件。  
@@ -48,9 +48,9 @@ ms.locfileid: "31584395"
   
 #### <a name="to-view-or-edit-the-source-code-of-a-function-in-the-call-stack"></a>檢視或編輯呼叫堆疊中函式的原始程式碼  
   
--   在 [呼叫堆疊] 視窗中，按一下該函式名稱。  
+- 在 [呼叫堆疊] 視窗中，按一下該函式名稱。  
   
- 該函式的原始程式碼必須是目前專案的一部分。  
+  該函式的原始程式碼必須是目前專案的一部分。  
   
 #### <a name="to-view-the-call-tree-of-contention-events-for-the-resource"></a>檢視資源的爭用事件呼叫樹狀圖  
   

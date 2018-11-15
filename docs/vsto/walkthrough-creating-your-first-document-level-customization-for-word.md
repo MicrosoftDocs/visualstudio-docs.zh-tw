@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 160609032a4118c0a15abe88115971f267b90f4c
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 1c5c25163a49e51b0759e57318d6119edec97983
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38778103"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49928811"
 ---
 # <a name="walkthrough-create-your-first-document-level-customization-for-word"></a>逐步解說： 建立 Word 的第一個文件層級自訂
   本入門逐步解說將示範如何建立 Microsoft Office Word 的文件層級自訂。 只有在特定的文件開啟時，才能使用您在這種解決方案中建立的功能。 您不能使用文件層級自訂來進行應用程式層級的變更，例如在任何文件開啟時顯示新功能區索引標籤。  
@@ -31,17 +31,17 @@ ms.locfileid: "38778103"
   
  這個逐步解說將說明下列工作：  
   
--   建立 Word 文件專案。  
+- 建立 Word 文件專案。  
   
--   將文字加入 Visual Studio 設計工具裝載的文件。  
+- 將文字加入 Visual Studio 設計工具裝載的文件。  
   
--   撰寫可使用 Word 物件模型的程式碼，該程式碼會在自訂文件開啟時將文字加入此文件。  
+- 撰寫可使用 Word 物件模型的程式碼，該程式碼會在自訂文件開啟時將文字加入此文件。  
   
--   建置和執行專案來進行測試。  
+- 建置和執行專案來進行測試。  
   
--   清除專案，將不需要的組建檔案和安全性設定從開發電腦上移除。  
+- 清除專案，將不需要的組建檔案和安全性設定從開發電腦上移除。  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>必要條件  
  您需要下列元件才能完成此逐步解說：  

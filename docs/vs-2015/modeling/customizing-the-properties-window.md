@@ -14,12 +14,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: aa690b88b5ab2d7aac3f8aea9967419dcbd43df1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ab8f1e85bec4c8a12a122030d2b9487a13e826a6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49241731"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49845741"
 ---
 # <a name="customizing-the-properties-window"></a>自訂屬性視窗
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,11 +33,11 @@ ms.locfileid: "49241731"
   
  **描述**。 網域屬性的描述會出現在兩個地方：  
   
--   當使用者選取的屬性中的 [屬性] 視窗的底部。 您可以使用它來向使用者解釋屬性所代表的意義。  
+- 當使用者選取的屬性中的 [屬性] 視窗的底部。 您可以使用它來向使用者解釋屬性所代表的意義。  
   
--   在產生的程式碼。 如果您使用的文件功能來擷取 API 文件時，它會顯示為 API 中的這個屬性的描述。  
+- 在產生的程式碼。 如果您使用的文件功能來擷取 API 文件時，它會顯示為 API 中的這個屬性的描述。  
   
- **分類**. 類別是中 [屬性] 視窗的標題。  
+  **分類**. 類別是中 [屬性] 視窗的標題。  
   
 ## <a name="exposing-style-features"></a>公開的樣式功能  
  可以表示的某些圖形化元素動態功能或*公開*為網域屬性。 使用者可以更新已在這種方式公開的功能，可以更輕鬆地更新程式碼。  
@@ -101,38 +101,38 @@ ms.locfileid: "49241731"
   
  不過，您可以指定下列的編輯器和型別：  
   
-1.  使用與標準類型的另一個編輯器。 例如，您可以指定為字串屬性的檔案路徑編輯器。  
+1. 使用與標準類型的另一個編輯器。 例如，您可以指定為字串屬性的檔案路徑編輯器。  
   
-2.  網域屬性和它的編輯器外部類型。  
+2. 網域屬性和它的編輯器外部類型。  
   
-3.  .NET 編輯器，例如檔案路徑編輯器中，或者您可以建立您自己的自訂屬性編輯器。  
+3. .NET 編輯器，例如檔案路徑編輯器中，或者您可以建立您自己的自訂屬性編輯器。  
   
-     外部類型和類型，例如都有一個預設編輯器的字串之間轉換。  
+    外部類型和類型，例如都有一個預設編輯器的字串之間轉換。  
   
- 在 DSL 中，*外部類型*是不是其中一個簡單的型別 （例如布林值或 Int32） 或字串的任何類型。  
+   在 DSL 中，*外部類型*是不是其中一個簡單的型別 （例如布林值或 Int32） 或字串的任何類型。  
   
 #### <a name="to-define-a-domain-property-that-has-an-external-type"></a>若要定義具有外部類型的網域屬性  
   
-1.  在 **方案總管**，將參考加入組件 (DLL) 中包含外部型別， **Dsl**專案。  
+1. 在 **方案總管**，將參考加入組件 (DLL) 中包含外部型別， **Dsl**專案。  
   
-     .NET 組件或您所提供的組件，可以使用組件。  
+    .NET 組件或您所提供的組件，可以使用組件。  
   
-2.  將類型新增至**網域類型**清單，除非您已經完成此動作。  
+2. 將類型新增至**網域類型**清單，除非您已經完成此動作。  
   
-    1.  開啟 DslDefinition.dsl，然後在**DSL Explorer**，以滑鼠右鍵按一下根節點，然後按一下 **加入新的外部類型**。  
+   1.  開啟 DslDefinition.dsl，然後在**DSL Explorer**，以滑鼠右鍵按一下根節點，然後按一下 **加入新的外部類型**。  
   
-         新的項目之下**網域類型**節點。  
+        新的項目之下**網域類型**節點。  
   
-        > [!WARNING]
-        >  功能表項目不是 DSL 的根節點上**網域類型**節點。  
+       > [!WARNING]
+       >  功能表項目不是 DSL 的根節點上**網域類型**節點。  
   
-    2.  在 [屬性] 視窗中設定的名稱和新類型的命名空間。  
+   2.  在 [屬性] 視窗中設定的名稱和新類型的命名空間。  
   
-3.  將加入網域類別的網域屬性，以一般方式。  
+3. 將加入網域類別的網域屬性，以一般方式。  
   
-     在 屬性 視窗中，從下拉式清單中選取 外部類型**型別**欄位。  
+    在 屬性 視窗中，從下拉式清單中選取 外部類型**型別**欄位。  
   
- 在這個階段，使用者可以檢視屬性的值，但他們無法編輯它。 顯示的值取自`ToString()`函式。 您可以撰寫程式碼中的命令或規則，例如設定屬性的值。  
+   在這個階段，使用者可以檢視屬性的值，但他們無法編輯它。 顯示的值取自`ToString()`函式。 您可以撰寫程式碼中的命令或規則，例如設定屬性的值。  
   
 ### <a name="setting-a-property-editor"></a>設定屬性編輯器  
  CLR 將屬性新增至網域屬性，以下列形式：  
@@ -178,11 +178,11 @@ ms.locfileid: "49241731"
   
  您所撰寫的類別是衍生自定義編輯器<xref:System.Drawing.Design.UITypeEditor>。 您的類別必須覆寫：  
   
--   <xref:System.Drawing.Design.UITypeEditor.EditValue%2A>與使用者互動，並更新屬性值。  
+- <xref:System.Drawing.Design.UITypeEditor.EditValue%2A>與使用者互動，並更新屬性值。  
   
--   <xref:System.Drawing.Design.UITypeEditor.GetEditStyle%2A>指定您的編輯器會開啟一個對話方塊，或提供下拉式選單。  
+- <xref:System.Drawing.Design.UITypeEditor.GetEditStyle%2A>指定您的編輯器會開啟一個對話方塊，或提供下拉式選單。  
   
- 您也可以提供屬性的值，將會顯示在屬性方格中的圖形表示。 若要這樣做，請覆寫`GetPaintValueSupported`，和`PaintValue`。  如需詳細資訊，請參閱<xref:System.Drawing.Design.UITypeEditor>。  
+  您也可以提供屬性的值，將會顯示在屬性方格中的圖形表示。 若要這樣做，請覆寫`GetPaintValueSupported`，和`PaintValue`。  如需詳細資訊，請參閱<xref:System.Drawing.Design.UITypeEditor>。  
   
 > [!NOTE]
 >  在不同的程式碼檔案中加入程式碼**Dsl**專案。  

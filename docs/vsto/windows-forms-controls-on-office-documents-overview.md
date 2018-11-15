@@ -30,12 +30,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 41870980aa27dd14576a3e04378d602f073091ab
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 51c671a583e4e96b51ae6627de1fce738696fe22
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35671202"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49892775"
 ---
 # <a name="windows-forms-controls-on-office-documents-overview"></a>在 Office 文件概觀上的 Windows Form 控制項
   Windows Forms 控制項是使用者可以互動，輸入或操作資料的物件。 在 Microsoft Office Excel 和 Microsoft Office Word 的文件層級專案，您可以將 Windows Form 控制項加入文件或活頁簿專案中在設計階段，或您可以在執行階段以程式設計方式加入這些控制項。 您可以程式設計方式加入這些控制項加入任何開啟的文件或 VSTO 增益集在執行階段的工作表的 Excel 或 Word。  
@@ -52,25 +52,25 @@ ms.locfileid: "35671202"
  在文件上。  
  -   當您想要一直顯示控制項時。  
   
--   當您想讓使用者直接在文件輸入資料時，例如在已鎖定編輯介面的表單式文件中。  
+- 當您想讓使用者直接在文件輸入資料時，例如在已鎖定編輯介面的表單式文件中。  
   
--   當您想控制項與文件中的資料對齊顯示時。 例如，如果您要將按鈕加入清單物件的每個資料列，您會想讓它們與每個清單項目對齊。  
+- 當您想控制項與文件中的資料對齊顯示時。 例如，如果您要將按鈕加入清單物件的每個資料列，您會想讓它們與每個清單項目對齊。  
   
- 在執行窗格或自訂工作窗格上。  
- -   當您想要提供內容資訊給使用者時。  
+  在執行窗格或自訂工作窗格上。  
+  -   當您想要提供內容資訊給使用者時。  
   
--   當您只想要文件中出現結果，而不出現查詢控制項和資料時。  
+- 當您只想要文件中出現結果，而不出現查詢控制項和資料時。  
   
--   當您想要確定控制項不會隨著文件列印出來時。  
+- 當您想要確定控制項不會隨著文件列印出來時。  
   
--   當您想要確定控制項不會影響文件檢視時。  
+- 當您想要確定控制項不會影響文件檢視時。  
   
- 在 Windows Forms 上。  
- -   當您想要控制 UI 的大小時。  
+  在 Windows Forms 上。  
+  -   當您想要控制 UI 的大小時。  
   
--   當您想要防止使用者隱藏或刪除控制項時。  
+- 當您想要防止使用者隱藏或刪除控制項時。  
   
--   當您想要從使用者取得輸入，並防止使用者在收到輸入之前在文件中做任何事時。  
+- 當您想要從使用者取得輸入，並防止使用者在收到輸入之前在文件中做任何事時。  
   
 ## <a name="add-windows-forms-controls-programmatically"></a>以程式設計方式將 Windows Forms 控制項  
  您可以為 Windows Form 控制項加入 Word 文件和 Excel 工作表，在執行階段。 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 提供 Helper 方法，來加入最常見的 Windows Forms 控制項。 這些 Helper 方法可讓您快速將控制項加入 Office 文件，並存取這些控制項結合後的 Windows Forms 控制項功能和 Office 相關功能。  
@@ -134,13 +134,13 @@ ms.locfileid: "35671202"
   
  當您將控制項加入 Word 文件在執行階段時，您還可以指定新的控制項的配置樣式，藉由使用不同`Add` \<*控制項類別*> 方法的多載<xref:Microsoft.Office.Tools.Word.ControlCollection>類別：  
   
--   若加入控制項並與文字對齊，請使用可接受指定控制項位置之 <xref:Microsoft.Office.Interop.Word.Range> 的多載。  
+- 若加入控制項並與文字對齊，請使用可接受指定控制項位置之 <xref:Microsoft.Office.Interop.Word.Range> 的多載。  
   
--   若要將控制項加入為浮動的圖形，請使用可接受控制項左邊和頂端座標的多載。  
+- 若要將控制項加入為浮動的圖形，請使用可接受控制項左邊和頂端座標的多載。  
   
- 如需詳細資訊，請參閱 <<c0> [ 將控制項加入 Office 文件，在執行階段](../vsto/adding-controls-to-office-documents-at-run-time.md)。  
+  如需詳細資訊，請參閱 <<c0> [ 將控制項加入 Office 文件，在執行階段](../vsto/adding-controls-to-office-documents-at-run-time.md)。  
   
- 如果您在 Visual Studio 設計工具中開啟 Word 範本，可能看不到範本上的非內嵌控制項，因為 Visual Studio 會在 [一般]  檢視中開啟範本。 若要檢視控制項，請將檢視變更為 [整頁模式] 。  
+  如果您在 Visual Studio 設計工具中開啟 Word 範本，可能看不到範本上的非內嵌控制項，因為 Visual Studio 會在 [一般]  檢視中開啟範本。 若要檢視控制項，請將檢視變更為 [整頁模式] 。  
   
 ### <a name="controls-outside-the-main-document-body"></a>主要的文件主體之外的控制項  
  在頁首或頁尾內，或在子文件內，不支援 Windows Forms 控制項。  

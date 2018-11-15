@@ -28,12 +28,12 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9f49664edc622c9944015c4cea9814a7deb2cfe7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2ed771857af76b0c69441a57b7616cfae376f9b6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49292678"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49951193"
 ---
 # <a name="how-to-page-up-or-down-in-memory"></a>如何：在記憶體中向上或向下翻頁
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,15 +42,15 @@ ms.locfileid: "49292678"
   
 ### <a name="to-page-up-or-down-in-memory"></a>若要在記憶體中向上或向下翻頁  
   
-1.  若要向下翻頁 (移至較高的記憶體位址)，請按一下捲動方塊下方的垂直捲軸。  
+1. 若要向下翻頁 (移至較高的記憶體位址)，請按一下捲動方塊下方的垂直捲軸。  
   
-2.  若要向上翻頁 (移至較低的記憶體位址)，請按一下拇指上方的垂直捲軸。  
+2. 若要向上翻頁 (移至較低的記憶體位址)，請按一下拇指上方的垂直捲軸。  
   
- 您也會發現垂直捲軸的操作方式沒有一定的標準。 現代電腦的位址空間很大，如果您抓取捲軸拇指並將它拖曳到隨機位置，很容易會遺失。 因此，拇指是「彈性載入」而且一定在捲軸的中央。 在機器碼應用程式中，您可以向上或向下翻頁，但不能自由捲動。  
+   您也會發現垂直捲軸的操作方式沒有一定的標準。 現代電腦的位址空間很大，如果您抓取捲軸拇指並將它拖曳到隨機位置，很容易會遺失。 因此，拇指是「彈性載入」而且一定在捲軸的中央。 在機器碼應用程式中，您可以向上或向下翻頁，但不能自由捲動。  
   
- 在 Managed 應用程式中時，反組譯碼只有一個函式，您可以正常捲動。  
+   在 Managed 應用程式中時，反組譯碼只有一個函式，您可以正常捲動。  
   
- 您會發現較高的位址出現在視窗底端。 若要檢視較高的位址，就必須向下而非向上移動。  
+   您會發現較高的位址出現在視窗底端。 若要檢視較高的位址，就必須向下而非向上移動。  
   
 #### <a name="to-move-up-or-down-one-instruction"></a>若要向上或向下移動一個指令  
   

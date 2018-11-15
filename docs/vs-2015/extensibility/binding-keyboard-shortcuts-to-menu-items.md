@@ -19,12 +19,12 @@ ms.assetid: 19f483b6-4d3e-424e-9d68-dc129c788e47
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: dfc5c937033087e3bea7b5326e90be64410fcfb8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 009e9269961b3cd532736fd5b72e28a389a4382a
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49277468"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220039"
 ---
 # <a name="binding-keyboard-shortcuts-to-menu-items"></a>將鍵盤快速鍵繫結至功能表項目
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,55 +38,55 @@ ms.locfileid: "49277468"
   
 #### <a name="to-verify-the-availability-of-a-keyboard-shortcut"></a>若要確認可用性的鍵盤快速鍵  
   
-1.  在 **工具 / 選項 / 環境**視窗中，選取**鍵盤**。  
+1. 在 **工具 / 選項 / 環境**視窗中，選取**鍵盤**。  
   
-2.  請確定**新的快速鍵**設為**Global**。  
+2. 請確定**新的快速鍵**設為**Global**。  
   
-3.  在 **按下快捷鍵**方塊中，輸入您想要使用的鍵盤快速鍵。  
+3. 在 **按下快捷鍵**方塊中，輸入您想要使用的鍵盤快速鍵。  
   
-     如果已在 Visual Studio 中，使用捷徑**目前所使用的捷徑**方塊會顯示快顯目前呼叫的命令。  
+    如果已在 Visual Studio 中，使用捷徑**目前所使用的快顯**方塊會顯示快顯目前呼叫的命令。  
   
-4.  直到您找到未對應的其中一個，請嘗試不同的組合索引鍵。  
+4. 直到您找到未對應的其中一個，請嘗試不同的組合索引鍵。  
   
-    > [!NOTE]
-    >  使用 alt 鍵的鍵盤快速鍵可能會開啟功能表，並不是直接執行命令。 因此，**目前所使用的捷徑**方塊可能是空白，當您輸入包含 ALT 捷徑。 您可以確認捷徑不會透過關閉開啟功能表**選項**] 對話方塊中，然後按 [索引鍵。  
+   > [!NOTE]
+   >  使用 alt 鍵的鍵盤快速鍵可能會開啟功能表，並不是直接執行命令。 因此，**目前所使用的快顯**方塊可能是空白，當您輸入包含 ALT 捷徑。 您可以確認捷徑不會透過關閉開啟功能表**選項**] 對話方塊中，然後按 [索引鍵。  
   
- 下列程序假設您有現有的 VSPackage，具有功能表命令。 如果您需要這麼做的說明，看看[建立具有功能表命令的擴充](../extensibility/creating-an-extension-with-a-menu-command.md)。  
+   下列程序假設您有現有的 VSPackage，具有功能表命令。 如果您需要這麼做的說明，看看[建立具有功能表命令的擴充](../extensibility/creating-an-extension-with-a-menu-command.md)。  
   
 #### <a name="to-assign-a-keyboard-shortcut-to-a-command"></a>若要指派給命令的鍵盤快速鍵  
   
-1.  開啟.vsct 檔為您的封裝。  
+1. 開啟.vsct 檔為您的封裝。  
   
-2.  建立空`<KeyBindings>`區段之後`<Commands>`如果尚不存在。  
+2. 建立空`<KeyBindings>`區段之後`<Commands>`如果尚不存在。  
   
-    > [!WARNING]
-    >  如需有關索引鍵繫結的詳細資訊，請參閱[按鍵繫結關係](../extensibility/keybinding-element.md)。  
+   > [!WARNING]
+   >  如需有關索引鍵繫結的詳細資訊，請參閱[按鍵繫結關係](../extensibility/keybinding-element.md)。  
   
-     在 `<KeyBindings>`區段中，建立`<KeyBinding>`項目。  
+    在 `<KeyBindings>`區段中，建立`<KeyBinding>`項目。  
   
-     設定`guid`和`id`您想要叫用命令的屬性。  
+    設定`guid`和`id`您想要叫用命令的屬性。  
   
-     設定`mod1`屬性設定為**控制**， **Alt**，或**Shift**。  
+    設定`mod1`屬性設定為**控制**， **Alt**，或**Shift**。  
   
-     按鍵繫結關係區段應該看起來像這樣：  
+    按鍵繫結關係區段應該看起來像這樣：  
   
-    ```xml  
-    <KeyBindings>  
-        <KeyBinding guid="<name of command set>" id="<name of command id>"  
-            editor="guidVSStd97" key1="1" mod1="CONTROL"/>  
-    </KeyBindings>  
+   ```xml  
+   <KeyBindings>  
+       <KeyBinding guid="<name of command set>" id="<name of command id>"  
+           editor="guidVSStd97" key1="1" mod1="CONTROL"/>  
+   </KeyBindings>  
   
-    ```  
+   ```  
   
- 如果您的鍵盤快速鍵需要兩個以上的索引鍵，將`mod2`和`key2`屬性。  
+   如果您的鍵盤快速鍵需要兩個以上的索引鍵，將`mod2`和`key2`屬性。  
   
- 在大部分情況下， **Shift**不應該使用而不需要的第二個修飾詞，因為它已按下會導致大部分英數字元的按鍵輸入大寫的字母或符號。  
+   在大部分情況下， **Shift**不應該使用而不需要的第二個修飾詞，因為它已按下會導致大部分英數字元的按鍵輸入大寫的字母或符號。  
   
- 虛擬按鍵碼可讓您存取並沒有與其相關聯，例如，函式的索引鍵的字元的特殊按鍵和**退格鍵**索引鍵。 如需詳細資訊，請參閱 <<c0> [ 虛擬按鍵碼](http://go.microsoft.com/fwlink/?LinkID=105932)。  
+   虛擬按鍵碼可讓您存取並沒有與其相關聯，例如，函式的索引鍵的字元的特殊按鍵和**退格鍵**索引鍵。 如需詳細資訊，請參閱 <<c0> [ 虛擬按鍵碼](http://go.microsoft.com/fwlink/?LinkID=105932)。  
   
- 若要讓命令在 Visual Studio 編輯器，請設定`editor`屬性設定為`guidVSStd97`。  
+   若要讓命令在 Visual Studio 編輯器，請設定`editor`屬性設定為`guidVSStd97`。  
   
- 若要使命令只適用於自訂編輯器，將`editor`屬性所產生的自訂編輯器的名稱[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]當您建立 VSPackage 的封裝範本包含自訂編輯器。 若要尋找的名稱值，請查看`<Symbols>`一節`<GuidSymbol>`節點其`name`結尾為屬性"`editorfactory`。 」這是自訂編輯器的名稱。  
+   若要使命令只適用於自訂編輯器，將`editor`屬性所產生的自訂編輯器的名稱[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]當您建立 VSPackage 的封裝範本包含自訂編輯器。 若要尋找的名稱值，請查看`<Symbols>`一節`<GuidSymbol>`節點其`name`結尾為屬性"`editorfactory`。 」這是自訂編輯器的名稱。  
   
 ## <a name="example"></a>範例  
  此範例中將鍵盤快速鍵 CTRL + ALT + C 繫結至名為的命令`cmdidMyCommand`名為封裝中`MyPackage`。  

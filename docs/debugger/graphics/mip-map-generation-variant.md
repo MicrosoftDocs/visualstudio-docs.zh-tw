@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a30659fcfd1b373360dc7bf9e9e53ae442ac4992
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 06b2d1e537152020b42fdff38fab1200b9cf7668
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39510145"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49908531"
 ---
 # <a name="mip-map-generation-variant"></a>Mip-map 產生變異
 在非呈現目標的紋理上啟用 MIP 對應。  
@@ -30,19 +30,19 @@ ms.locfileid: "39510145"
 ## <a name="remarks"></a>備註  
  每次呼叫建立來源紋理的 `ID3D11Device::CreateTexture2D` 時，會強制產生 MIP 對應。 在中傳遞的 D3D11_TEXTURE2D_DESC 物件時，具體來說，強制產生 mip 對應`pDesc`描述不會變更的著色器資源; 亦即：  
   
--   BindFlags 成員只設定 D3D11_BIND_SHADER_RESOURCE 旗標。  
+- BindFlags 成員只設定 D3D11_BIND_SHADER_RESOURCE 旗標。  
   
--   Usage 成員設定為 D3D11_USAGE_DEFAULT 或 D3D11_USAGE_IMMUTABLE。  
+- Usage 成員設定為 D3D11_USAGE_DEFAULT 或 D3D11_USAGE_IMMUTABLE。  
   
--   CPUAccessFlags 成員設定為 0 (無 CPU 存取)。  
+- CPUAccessFlags 成員設定為 0 (無 CPU 存取)。  
   
--   SampleDesc 成員的 Count 成員設定為 1 (無多重取樣消除鋸齒 (MSAA))。  
+- SampleDesc 成員的 Count 成員設定為 1 (無多重取樣消除鋸齒 (MSAA))。  
   
--   MipLevels 成員設定為 1 (無現有 MIP 對應)。  
+- MipLevels 成員設定為 1 (無現有 MIP 對應)。  
   
- 應用程式提供初始資料時，紋理格式必須支援自動產生 MIP 對應 (由 D3D11_FORMAT_SUPPORT_MIP_AUTOGEN 所決定)，除非格式是 BC1、BC2 或 BC3；否則，提供初始資料時，不會修改紋理，也不會產生 MIP 對應。  
+  應用程式提供初始資料時，紋理格式必須支援自動產生 MIP 對應 (由 D3D11_FORMAT_SUPPORT_MIP_AUTOGEN 所決定)，除非格式是 BC1、BC2 或 BC3；否則，提供初始資料時，不會修改紋理，也不會產生 MIP 對應。  
   
- 如果已自動產生紋理的 MIP 對應，則會在播放期間修改 `ID3D11Device::CreateShaderResourceView` 呼叫，以在紋理取樣期間使用 MIP 鏈結。  
+  如果已自動產生紋理的 MIP 對應，則會在播放期間修改 `ID3D11Device::CreateShaderResourceView` 呼叫，以在紋理取樣期間使用 MIP 鏈結。  
   
 ## <a name="example"></a>範例  
  **Mip 對應產生**即可重現變體，請使用如下的程式碼：  
@@ -72,4 +72,4 @@ d3d_device->CreateTexture2D(&texture_description, initial_data.data(), &texture)
 >  如果您想要提供您的 MIP 層級內容，而不是自動產生該內容，則必須使用可支援經過 MIP 對應之紋理的影像編輯器來建立紋理，然後載入檔案，並將 MIP 層級傳遞給 `CreateTexture2D`。  
   
 ## <a name="see-also"></a>另請參閱  
- [半/四分之一紋理維度變異](half-quarter-texture-dimensions-variant.md)
+ [二分之一/四分之一紋理維度變化](half-quarter-texture-dimensions-variant.md)

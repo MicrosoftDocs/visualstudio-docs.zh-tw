@@ -18,12 +18,12 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cc5e376bc0c4cc4674051612eb3338804c1e99ba
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0c5e84f73168abd25abdb0d971ca0bda8caab73d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49273893"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49832337"
 ---
 # <a name="idiaenumtablesclone"></a>IDiaEnumTables::Clone
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

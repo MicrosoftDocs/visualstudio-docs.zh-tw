@@ -1,5 +1,5 @@
 ---
-title: DataKind |Microsoft 文件
+title: DataKind |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c3de9ef6128c3cd5ca6eae80a257b3dc2982cd0f
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 8f2b46e420db8addf19ef8694112058bdb8b2f91
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31458186"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49867620"
 ---
 # <a name="datakind"></a>DataKind
-指出特定範圍的資料值。  
+指出特定資料值的範圍。  
   
 ## <a name="syntax"></a>語法  
   
@@ -46,7 +46,7 @@ enum DataKind {
  無法判斷資料符號。  
   
  DataIsLocal  
- 資料項目是區域變數。  
+ 資料項目是本機變數。  
   
  DataIsStaticLocal  
  資料項目是靜態區域變數。  
@@ -58,7 +58,7 @@ enum DataKind {
  資料的項目就是物件指標 (`this`)。  
   
  DataIsFileStatic  
- 資料項目是檔案範圍變數。  
+ 資料的項目是檔案範圍的變數。  
   
  DataIsGlobal  
  資料項目是全域變數。  
@@ -73,7 +73,7 @@ enum DataKind {
  資料項目是常數值。  
   
 ## <a name="remarks"></a>備註  
- 所傳回的值，這個列舉型別中[idiasymbol:: Get_datakind](../../debugger/debug-interface-access/idiasymbol-get-datakind.md)方法。  
+ 傳回這個列舉型別中的值[idiasymbol:: Get_datakind](../../debugger/debug-interface-access/idiasymbol-get-datakind.md)方法。  
   
 ## <a name="requirements"></a>需求  
  標頭： cvconst.h  

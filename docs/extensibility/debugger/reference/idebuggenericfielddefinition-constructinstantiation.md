@@ -1,5 +1,5 @@
 ---
-title: IDebugGenericFieldDefinition::ConstructInstantiation |Microsoft 文件
+title: IDebugGenericFieldDefinition::ConstructInstantiation |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d9250467aeec5a032c8e88054d868aa45ae7dda0
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: cc2c710e7fbd9a6fef3283f6dc5790707c65d30a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31116122"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49933049"
 ---
 # <a name="idebuggenericfielddefinitionconstructinstantiation"></a>IDebugGenericFieldDefinition::ConstructInstantiation
 建構指定型別引數陣列的欄位執行個體。  
@@ -47,13 +47,13 @@ int ConstructInstantiation(
  [in]中的引數`ppArgs`陣列。  
   
  `ppArgs`  
- [in]包含型別引數的陣列。 型別引數必須是關閉的型別 （非泛型或完整具現化泛型）。  
+ [in]包含型別引數的陣列。 型別引數必須是封閉式的型別 （非泛型或完整具現化泛型）。  
   
  `ppConstructedField`  
  [out]傳回[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)介面，表示新的欄位。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
   
 ## <a name="remarks"></a>備註  
  不會檢查條件約束。  

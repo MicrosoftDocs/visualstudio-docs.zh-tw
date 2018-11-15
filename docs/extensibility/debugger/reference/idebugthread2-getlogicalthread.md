@@ -1,5 +1,5 @@
 ---
-title: IDebugThread2::GetLogicalThread |Microsoft 文件
+title: IDebugThread2::GetLogicalThread |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ab093cb4ca4760737f8216452cfde7340b0329fd
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b7acf0cbb99fc9541088a339931110e56363213b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31120198"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49920140"
 ---
 # <a name="idebugthread2getlogicalthread"></a>IDebugThread2::GetLogicalThread
 偵錯引擎不會實作這個方法。  
@@ -46,10 +46,10 @@ int GetLogicalThread(
  [in][IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)物件，代表堆疊框架。  
   
  `ppLogicalThread`  
- [out]傳回`IDebugLogicalThread2`代表相關聯的邏輯執行緒的介面。 偵錯引擎實作應該設定為 null 的值。  
+ [out]傳回`IDebugLogicalThread2`介面，表示相關聯的邏輯執行緒。 偵錯引擎實作應該將此設定為 null 值。  
   
 ## <a name="return-value"></a>傳回值  
- 偵錯引擎實作一律會傳回`E_NOTIMPL`。  
+ 偵錯引擎實作永遠會傳回`E_NOTIMPL`。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)

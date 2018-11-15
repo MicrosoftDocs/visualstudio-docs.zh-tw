@@ -21,12 +21,12 @@ caps.latest.revision: 32
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 63b5938131713c32f410f89c80a3efefa8b6c346
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6a171613c4bd6f34b826869214d11d247c9c59a9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49268238"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49924001"
 ---
 # <a name="net-memory-allocations-view"></a>.NET 記憶體配置檢視
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,11 +35,11 @@ ms.locfileid: "49268238"
   
  類型資料列中的資料會顯示分析回合中所建立類型的物件總數，以及針對該類型之物件所配置的位元組總數。 類型的內含和專有值一律會相同。  
   
--   內含值是針對呼叫樹狀圖中父函式所呼叫函式和其子函式執行個體中建立的物件。  
+- 內含值是針對呼叫樹狀圖中父函式所呼叫函式和其子函式執行個體中建立的物件。  
   
--   父函式呼叫函式直接建立的物件時，專有值適用於這類物件。 不包含子函式中所建立的物件。  
+- 父函式呼叫函式直接建立的物件時，專有值適用於這類物件。 不包含子函式中所建立的物件。  
   
- 函式的資料會顯示已建立的物件數目以及針對父類型的物件所配置的位元組數目。  
+  函式的資料會顯示已建立的物件數目以及針對父類型的物件所配置的位元組數目。  
   
 ## <a name="highlighting-the-execution-hot-path"></a>反白顯示執行最忙碌路徑  
  您可以找到建立父類型大部分物件之呼叫樹狀圖的執行路徑。  

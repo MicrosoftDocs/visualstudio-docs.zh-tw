@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 19a183b9285e53a93f6fe6e44c94f5dcd14957e5
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 2aa23601ff1f85aa4e2d28be5664c4bccb8d2eff
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35668509"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49828370"
 ---
 # <a name="threadon-and-threadoff"></a>ThreadOn 和 ThreadOff
 只有在使用檢測方法的命令列分析工作階段中，才能使用 *VSPerfCmd.exe* **ThreadOff** 和 **ThreadOn** 子命令。 **ThreadOff** 和 **ThreadOn** 會暫停和繼續分析指定的執行緒。 **ThreadOff** 會停止分析執行緒，而 **ThreadOn** 會開始分析執行緒。  
@@ -26,11 +26,11 @@ ms.locfileid: "35668509"
   
  **ThreadOff** 和 **ThreadOn** 子命令也會影響分析工具 API 函式操控的執行緒開始/停止計數。  
   
--   **ThreadOff** 可立即將執行緒開始/停止計數設定為 0，並因此會暫停分析。  
+- **ThreadOff** 可立即將執行緒開始/停止計數設定為 0，並因此會暫停分析。  
   
--   **ThreadOn** 可立即將執行緒開始/停止計數設定為 1，並因此會繼續分析。  
+- **ThreadOn** 可立即將執行緒開始/停止計數設定為 1，並因此會繼續分析。  
   
- 如需詳細資訊，請參閱[分析工具 API](../profiling/profiling-tools-apis.md)。  
+  如需詳細資訊，請參閱[分析工具 API](../profiling/profiling-tools-apis.md)。  
   
 ## <a name="syntax"></a>語法  
   

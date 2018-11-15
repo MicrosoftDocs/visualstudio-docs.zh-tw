@@ -13,12 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 7d89292bd3f0c3835d6d2ed809310bc2a395553f
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 678a37eec7643976e689cc027922ff481a0e005f
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43776089"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219376"
 ---
 # <a name="unit-testing-in-nodejs"></a>Node.js 的單元測試
 

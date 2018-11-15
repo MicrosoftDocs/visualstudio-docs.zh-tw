@@ -23,12 +23,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 796e1266e93fca845f9ac40d1fef0c1ca5a5b919
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 2f9a5d0c439d619864cc6e9559608e3c3891fc7e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118730"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49890032"
 ---
 # <a name="sandboxed-solution-considerations"></a>沙箱化方案考量
   *沙箱化方案*是可讓網站集合的使用者上傳他們自己的自訂程式碼解決方案的 Microsoft SharePoint 2010 中的功能。 常見的沙箱化方案是上傳他們自己的 Web 組件的使用者。  
@@ -81,66 +81,66 @@ ms.locfileid: "37118730"
 ## <a name="sandboxed-solution-limitations"></a>沙箱化方案限制
  沙箱化方案部署時，陣列的 SharePoint 功能可供其使用僅限於以減少可能會有任何安全性弱點。 這些限制包括下列：  
   
--   沙箱化方案已部署的方案項目提供給他們的限定的子集。 無法使用可能有弱點的 SharePoint 專案範本，例如網站定義和工作流程。  
+- 沙箱化方案已部署的方案項目提供給他們的限定的子集。 無法使用可能有弱點的 SharePoint 專案範本，例如網站定義和工作流程。  
   
--   SharePoint 會執行處理序中的沙箱化方案程式碼 (*SPUCWorkerProcess.exe*) 不同於主要[!INCLUDE[TLA2#tla_iis5](../sharepoint/includes/tla2sharptla-iis5-md.md)]應用程式集區 (*w3wp.exe*) 處理程序。  
+- SharePoint 會執行處理序中的沙箱化方案程式碼 (*SPUCWorkerProcess.exe*) 不同於主要[!INCLUDE[TLA2#tla_iis5](../sharepoint/includes/tla2sharptla-iis5-md.md)]應用程式集區 (*w3wp.exe*) 處理程序。  
   
--   對應的資料夾無法加入至專案。  
+- 對應的資料夾無法加入至專案。  
   
--   中的型別[!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)]Microsoft.Office.Server 不能用在沙箱化方案的組件。 此外，只有在型別[!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)]Microsoft.SharePoint 可用沙箱化方案中的組件。  
+- 中的型別[!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)]Microsoft.Office.Server 不能用在沙箱化方案的組件。 此外，只有在型別[!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)]Microsoft.SharePoint 可用沙箱化方案中的組件。  
   
- 請務必請注意，指定 SharePoint 方案為沙箱化方案就不會影響 SharePoint 伺服器;它只會決定如何將 SharePoint 專案部署至從 SharePoint[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]和組件繫結至。 它不會影響所產生 *.wsp*檔案，而 *.wsp*檔案沒有任何直接相互關聯的資料*沙箱化方案*屬性。  
+  請務必請注意，指定 SharePoint 方案為沙箱化方案就不會影響 SharePoint 伺服器;它只會決定如何將 SharePoint 專案部署至從 SharePoint[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]和組件繫結至。 它不會影響所產生 *.wsp*檔案，而 *.wsp*檔案沒有任何直接相互關聯的資料*沙箱化方案*屬性。  
   
 ## <a name="capabilities-and-elements-in-sandboxed-solutions"></a>功能與沙箱化方案中的項目
  沙箱化方案支援下列功能和項目：  
   
--   內容的類型欄位  
+- 內容的類型欄位  
   
--   自訂動作  
+- 自訂動作  
   
--   宣告式工作流程  
+- 宣告式工作流程  
   
--   事件接收器  
+- 事件接收器  
   
--   功能的圖說文字  
+- 功能的圖說文字  
   
--   清單定義  
+- 清單定義  
   
--   清單執行個體  
+- 清單執行個體  
   
--   模組/檔案  
+- 模組/檔案  
   
--   巡覽  
+- 巡覽  
   
--   *Onet.xml*  
+- *Onet.xml*  
   
--   SPItemEventReceiver  
+- SPItemEventReceiver  
   
--   SPListEventReceiver  
+- SPListEventReceiver  
   
--   SPWebEventReceiver  
+- SPWebEventReceiver  
   
--   從衍生的所有網頁組件的支援 `System.Web.UI.WebControls.WebParts.WebPart`  
+- 從衍生的所有網頁組件的支援 `System.Web.UI.WebControls.WebParts.WebPart`  
   
--   Web 組件  
+- Web 組件  
   
--   WebTemplate 功能元素 (而非*Webtemp.xml*)  
+- WebTemplate 功能元素 (而非*Webtemp.xml*)  
   
--   視覺 Web 組件  
+- 視覺 Web 組件  
   
- 沙箱化方案不支援下列功能和項目：  
+  沙箱化方案不支援下列功能和項目：  
   
--   應用程式頁面  
+- 應用程式頁面  
   
--   自訂動作群組  
+- 自訂動作群組  
   
--   陣列範圍的功能  
+- 陣列範圍的功能  
   
--   `HideCustomAction` 項目  
+- `HideCustomAction` 項目  
   
--   Web 應用程式範圍的功能  
+- Web 應用程式範圍的功能  
   
--   使用程式碼的工作流程  
+- 使用程式碼的工作流程  
   
 ## <a name="see-also"></a>另請參閱
  [差異沙箱化方案與伺服器陣列解決方案](../sharepoint/differences-between-sandboxed-and-farm-solutions.md)   

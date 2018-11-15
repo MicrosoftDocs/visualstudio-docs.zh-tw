@@ -21,12 +21,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a086fc37be7d9cd8ba4d4f51c1012b6ad0ba7046
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: d4a9737ae9e256cdc9862c0d7725e9bffda5b633
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35670799"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49882570"
 ---
 # <a name="optional-parameters-in-office-solutions"></a>Office 方案中的選擇性參數
   Microsoft Office 應用程式物件模型中的許多方法，都接受選擇性參數。 如果您使用 Visual Basic 在 Visual Studio 中開發 Office 方案，就不必傳遞選擇性參數的值，因為每個遺漏的參數都會自動使用預設值。 在大部分情況下，您也可以省略 Visual C# 專案中的選擇性參數。 不過，您不能省略選擇性**ref**參數的`ThisDocument`文件層級 Word 專案中的類別。  
@@ -57,19 +57,19 @@ ms.locfileid: "35670799"
   
  當您呼叫 `ThisDocument` 類別的方法時，請遵循這些指導方針：  
   
--   若要接受預設值的選擇性**ref**參數，傳遞`missing`變數設為參數。 在 Visual C# Office 專案中，`missing` 變數會自動定義並指派給產生的專案程式碼中的值 <xref:System.Type.Missing>。  
+- 若要接受預設值的選擇性**ref**參數，傳遞`missing`變數設為參數。 在 Visual C# Office 專案中，`missing` 變數會自動定義並指派給產生的專案程式碼中的值 <xref:System.Type.Missing>。  
   
--   若要指定您自己的值的選擇性**ref**參數，宣告指派給您想要指定，值的物件，並接著將物件傳遞至參數。  
+- 若要指定您自己的值的選擇性**ref**參數，宣告指派給您想要指定，值的物件，並接著將物件傳遞至參數。  
   
- 下列程式碼範例示範如何呼叫<xref:Microsoft.Office.Tools.Word.DocumentBase.CheckSpelling%2A>方法，藉由指定的值*用於儲存 ignoreUppercase*參數並接受其他參數的預設值。  
+  下列程式碼範例示範如何呼叫<xref:Microsoft.Office.Tools.Word.DocumentBase.CheckSpelling%2A>方法，藉由指定的值*用於儲存 ignoreUppercase*參數並接受其他參數的預設值。  
   
- [!code-csharp[Trin_VstrefGeneralWord#4](../vsto/codesnippet/CSharp/worddocument1/ThisDocument.cs#4)]  
+  [!code-csharp[Trin_VstrefGeneralWord#4](../vsto/codesnippet/CSharp/worddocument1/ThisDocument.cs#4)]  
   
- 如果您想要撰寫程式碼，會省略選擇性**ref**中方法的參數`ThisDocument`類別，您可以另外呼叫相同的方法上<xref:Microsoft.Office.Interop.Word.Document>所傳回的物件<xref:Microsoft.Office.Tools.Word.Document.InnerObject%2A>屬性，並略過來自該方法的參數。 您可以執行這項操作的原因是，<xref:Microsoft.Office.Interop.Word.Document> 是介面不是類別。  
+  如果您想要撰寫程式碼，會省略選擇性**ref**中方法的參數`ThisDocument`類別，您可以另外呼叫相同的方法上<xref:Microsoft.Office.Interop.Word.Document>所傳回的物件<xref:Microsoft.Office.Tools.Word.Document.InnerObject%2A>屬性，並略過來自該方法的參數。 您可以執行這項操作的原因是，<xref:Microsoft.Office.Interop.Word.Document> 是介面不是類別。  
   
- [!code-csharp[Trin_VstrefGeneralWord#5](../vsto/codesnippet/CSharp/worddocument1/ThisDocument.cs#5)]  
+  [!code-csharp[Trin_VstrefGeneralWord#5](../vsto/codesnippet/CSharp/worddocument1/ThisDocument.cs#5)]  
   
- 如需值和參考型別參數的詳細資訊，請參閱[值和傳參考方式傳遞引數&#40;Visual Basic&#41; ](/dotnet/visual-basic/programming-guide/language-features/procedures/passing-arguments-by-value-and-by-reference) （適用於 Visual Basic) 和[傳遞參數&#40;C&#35;程式設計指南&#41;](/dotnet/csharp/programming-guide/classes-and-structs/passing-parameters)。  
+  如需值和參考型別參數的詳細資訊，請參閱[值和傳參考方式傳遞引數&#40;Visual Basic&#41; ](/dotnet/visual-basic/programming-guide/language-features/procedures/passing-arguments-by-value-and-by-reference) （適用於 Visual Basic) 和[傳遞參數&#40;C&#35;程式設計指南&#41;](/dotnet/csharp/programming-guide/classes-and-structs/passing-parameters)。  
   
 ## <a name="see-also"></a>另請參閱  
  [開發 Office 方案](../vsto/developing-office-solutions.md)   

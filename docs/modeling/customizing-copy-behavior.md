@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 72aa7681293fa6dd50b23e4b9d090f086d3c67ad
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 6839385e64503ce939d5244b116a9f24be786395
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47860455"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49904436"
 ---
 # <a name="customizing-copy-behavior"></a>自訂複製行為
 在使用 Visual Studio Visualization and Modeling SDK 建立特定領域語言 (DSL)，您可能會改變使用者複製及貼上項目時，會發生什麼事。
@@ -24,19 +24,19 @@ ms.locfileid: "47860455"
 
  根據預設，當使用者將項目複製到 [剪貼簿] 時，也會複製下列項目：
 
--   所選項目的內嵌子系。 (也就是來源為複製項目之內嵌關聯性的目標項目)。
+- 所選項目的內嵌子系。 (也就是來源為複製項目之內嵌關聯性的目標項目)。
 
--   複製項目之間的關聯性連結。
+- 複製項目之間的關聯性連結。
 
- 此規則會以遞迴方式套用至複製的項目和連結。
+  此規則會以遞迴方式套用至複製的項目和連結。
 
- ![複製及貼上的項目](../modeling/media/dslcopypastedefault.png)
+  ![複製及貼上的項目](../modeling/media/dslcopypastedefault.png)
 
- 複製的項目和連結會經過序列化並儲存在 <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype> (EGP) 中，再置於 [剪貼簿] 上。
+  複製的項目和連結會經過序列化並儲存在 <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype> (EGP) 中，再置於 [剪貼簿] 上。
 
- 此外，也會將複製項目的影像置於 [剪貼簿] 上。 如此可讓使用者貼入 Word 等其他應用程式。
+  此外，也會將複製項目的影像置於 [剪貼簿] 上。 如此可讓使用者貼入 Word 等其他應用程式。
 
- 使用者可以將複製的項目貼到根據 DSL 定義可接受項目的目標上。 例如，在從元件方案範本產生的 DSL 中，使用者可以將通訊埠貼到元件上，但無法貼到圖表上；也可以將元件貼到圖表上，但無法貼到其他元件上。
+  使用者可以將複製的項目貼到根據 DSL 定義可接受項目的目標上。 例如，在從元件方案範本產生的 DSL 中，使用者可以將通訊埠貼到元件上，但無法貼到圖表上；也可以將元件貼到圖表上，但無法貼到其他元件上。
 
 ## <a name="customizing-copy-and-paste-behavior"></a>自訂複製和貼上行為
  如需有關如何使用程式碼自訂模型的詳細資訊，請參閱 <<c0> [ 巡覽及更新程式碼中的模型](../modeling/navigating-and-updating-a-model-in-program-code.md)。
@@ -72,7 +72,6 @@ partial class MyDslClipboardCommandSet
      .SelectObjects(1, new object[] { diagram }, 0);
   }
 } }
-
 ```
 
  **當使用者貼到選取的目標時，請建立其他連結。** 例如，將註解方塊貼上到項目時, 兩者之間會建立連結。
@@ -142,7 +141,6 @@ partial class MyDslDiagram // EDIT NAME
   }
  private MyElementOperations singleton = null;
 }
-
 ```
 
  **貼上圖形，在選擇的位置，例如目前的游標位置。**
@@ -222,15 +220,15 @@ partial class MyDslClipboardCommandSet // EDIT NAME
 
  共有三個值：
 
--   不要傳播複本
+- 不要傳播複本
 
--   只將複本傳播至連結 - 貼上群組時，這個連結的新複本會參考連結另一端的現有項目。
+- 只將複本傳播至連結 - 貼上群組時，這個連結的新複本會參考連結另一端的現有項目。
 
--   將複本傳播至連結和相反角色扮演者 - 複製的群組包含連結另一端的項目複本。
+- 將複本傳播至連結和相反角色扮演者 - 複製的群組包含連結另一端的項目複本。
 
- ![使用 PropagateCopyToLinkOnly 複製的效用](../modeling/media/dslpropagatecopy.png)
+  ![使用 PropagateCopyToLinkOnly 複製的效用](../modeling/media/dslpropagatecopy.png)
 
- 您所做的變更會影響複製的項目和影像。
+  您所做的變更會影響複製的項目和影像。
 
 ## <a name="programming-copy-and-paste-behavior"></a>程式設計複製和貼上行為
  DSL 的行為方面複製、 貼上、 建立和刪除物件的各個層面的執行個體所控管<xref:Microsoft.VisualStudio.Modeling.ElementOperations>合併至圖表。 您可以修改您的 DSL 行為衍生您自己的類別，從<xref:Microsoft.VisualStudio.Modeling.ElementOperations>，並覆寫<xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram.ElementOperations%2A>圖表類別的屬性。
@@ -244,13 +242,13 @@ partial class MyDslClipboardCommandSet // EDIT NAME
 
 #### <a name="to-define-your-own-elementoperations"></a>定義自己的 ElementOperations
 
-1.  在 DSL 專案的新檔案中，建立衍生自 <xref:Microsoft.VisualStudio.Modeling.Diagrams.DesignSurfaceElementOperations> 的類別。
+1. 在 DSL 專案的新檔案中，建立衍生自 <xref:Microsoft.VisualStudio.Modeling.Diagrams.DesignSurfaceElementOperations> 的類別。
 
-2.  加入圖表類別的部分類別定義。 這個類別的名稱可在**Dsl\GeneratedCode\Diagrams.cs**。
+2. 加入圖表類別的部分類別定義。 這個類別的名稱可在**Dsl\GeneratedCode\Diagrams.cs**。
 
-     在圖表類別中，覆寫 <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram.ElementOperations%2A> 以傳回 ElementOperations 子類別的執行個體。 每次呼叫都應該傳回相同的執行個體。
+    在圖表類別中，覆寫 <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram.ElementOperations%2A> 以傳回 ElementOperations 子類別的執行個體。 每次呼叫都應該傳回相同的執行個體。
 
- 在 DslPackage 專案的自訂程式碼檔案中加入這個程式碼：
+   在 DslPackage 專案的自訂程式碼檔案中加入這個程式碼：
 
 ```csharp
 
@@ -281,7 +279,6 @@ using Microsoft.VisualStudio.Modeling.Diagrams.ExtensionEnablement;
     { }
     // Overridden methods follow
   }
-
 ```
 
 ## <a name="receiving-items-dragged-from-other-models"></a>接受從其他模型拖曳的項目
@@ -311,7 +308,6 @@ public override bool CanMerge(ModelElement targetShape, System.Windows.Forms.IDa
         return true;
    return base.CanMerge(targetShape, data);
  }
-
 ```
 
 ## <a name="mergeelementgroupprototype"></a>MergeElementGroupPrototype()
@@ -329,7 +325,6 @@ public override void MergeElementGroupPrototype(ModelElement targetShape, Elemen
   if (prototypeToMerge != null)
     base.MergeElementGroupPrototype(targetShape, prototypeToMerge);
 }
-
 ```
 
  這個範例處理從 UML 類別圖表拖曳的 UML 類別項目。 DSL 的設計不會直接儲存 UML 類別；相反地，我們會為每個拖曳的 UML 類別建立 DSL 項目。 這在 DSL 是執行個體圖表時，會很有用。 使用者可以將類別拖曳至圖表上，以建立這些類別的執行個體。
@@ -367,7 +362,6 @@ private ElementGroupPrototype ConvertDraggedTypeToLocal (MyTargetShape snapshot,
   }
   return null;
 }
-
 ```
 
 ## <a name="standard-copy-behavior"></a>標準複製行為
@@ -558,7 +552,6 @@ namespace Company.MyDsl
     }
   }
 }
-
 ```
 
 ## <a name="see-also"></a>另請參閱

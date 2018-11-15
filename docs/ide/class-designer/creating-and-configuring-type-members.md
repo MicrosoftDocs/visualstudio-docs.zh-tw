@@ -31,19 +31,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b5e60da7ea3058f192ad59dcc57a493115a751b
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 0b93fa4720a6f0de9e2d7a64eb2c820811610297
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33957693"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49938795"
 ---
 # <a name="create-and-configure-type-members-in-class-designer"></a>在類別設計工具中建立及設定類型成員
 
 您可以將這些成員新增至某個類別圖表上的類型，以及在 [類別細節] 視窗中設定這些成員：
 
 |**Type**|**可以包含的成員**|
-|--------------|--------------------------------|
+|--------------| - |
 |類別|方法、屬性 (針對 C# 和 Visual Basic)、欄位、事件 (針對 C# 和 Visual Basic)、建構函式 (方法)、解構函式 (方法)、常數|
 |列舉|成員|
 |介面|方法、屬性、事件 (針對 C# 和 Visual Basic)|
@@ -58,7 +58,7 @@ ms.locfileid: "33957693"
 ## <a name="common-tasks"></a>一般工作
 
 |工作|支援內容|
-|----------|------------------------|
+|----------| - |
 |**開始使用：** 您必須先開啟 [類別細節] 視窗，才可建立及設定類型成員。|- [開啟類別細節視窗](creating-and-configuring-type-members.md#open-the-class-details-window)<br />- [類別細節使用注意事項](creating-and-configuring-type-members.md#class-details-usage-notes)<br />- [顯示唯讀資訊](creating-and-configuring-type-members.md#display-of-read-only-information)<br />- [類別圖表和類別細節視窗中的鍵盤和滑鼠快速鍵](keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window.md)|
 |**建立和修改類型成員：** 您可以使用 [類別細節] 視窗來建立新的成員、修改成員，以及將參數新增至方法。|- [建立成員](creating-and-configuring-type-members.md#create-members)<br />- [修改類型成員](creating-and-configuring-type-members.md#modify-type-members)<br />- [將參數新增至方法](creating-and-configuring-type-members.md#add-parameters-to-methods)|
 

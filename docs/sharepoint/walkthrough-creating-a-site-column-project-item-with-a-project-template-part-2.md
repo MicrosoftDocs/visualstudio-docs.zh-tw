@@ -14,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7616dd184bae2cabb433879ceadae79dbeb23b93
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d4512dc15d394cdf2442d8bfcf440ccb31623a29
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42626012"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942071"
 ---
 # <a name="walkthrough-create-a-site-column-project-item-with-a-project-template-part-2"></a>逐步解說： 使用專案範本，第 2 部分中建立網站資料行專案項目
   您定義自訂 SharePoint 專案項目類型，並將它與 Visual Studio 中的專案範本產生關聯之後，您也可以提供範本的精靈。 您可以使用精靈，在使用您的範本來建立新的專案，其中包含的專案項目時，從使用者收集資訊。 您所收集的資訊可以用來初始化專案項目中。  
@@ -48,15 +48,15 @@ ms.locfileid: "42626012"
   
  您還需要完成這個逐步解說在開發電腦上的下列元件：  
   
--   支援的 Windows、 SharePoint 和 Visual Studio 版本。
+- 支援的 Windows、 SharePoint 和 Visual Studio 版本。
   
--   Visual Studio SDK 中。 本逐步解說會使用**VSIX 專案**SDK 來建立 VSIX 封裝，來部署專案項目中的範本。 如需詳細資訊，請參閱 <<c0> [ 擴充 Visual Studio 中的 SharePoint 工具](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)。  
+- Visual Studio SDK 中。 本逐步解說會使用**VSIX 專案**SDK 來建立 VSIX 封裝，來部署專案項目中的範本。 如需詳細資訊，請參閱 <<c0> [ 擴充 Visual Studio 中的 SharePoint 工具](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)。  
   
- 下列概念的知識會很有幫助，但並非必要，若要完成本逐步解說：  
+  下列概念的知識會很有幫助，但並非必要，若要完成本逐步解說：  
   
--   Visual Studio 中的專案和項目範本的精靈。 如需詳細資訊，請參閱 <<c0> [ 如何： 使用精靈與專案範本](../extensibility/how-to-use-wizards-with-project-templates.md)而<xref:Microsoft.VisualStudio.TemplateWizard.IWizard>介面。  
+- Visual Studio 中的專案和項目範本的精靈。 如需詳細資訊，請參閱 <<c0> [ 如何： 使用精靈與專案範本](../extensibility/how-to-use-wizards-with-project-templates.md)而<xref:Microsoft.VisualStudio.TemplateWizard.IWizard>介面。  
   
--   在 SharePoint 中的網站資料行。 如需詳細資訊，請參閱 <<c0> [ 資料行](http://go.microsoft.com/fwlink/?LinkId=183547)。  
+- 在 SharePoint 中的網站資料行。 如需詳細資訊，請參閱 <<c0> [ 資料行](http://go.microsoft.com/fwlink/?LinkId=183547)。  
   
 ## <a name="understand-the-wizard-components"></a>了解精靈元件
  在本逐步解說會示範 「 精靈 」 會包含數個元件。 下表說明這些元件。  
@@ -72,11 +72,11 @@ ms.locfileid: "42626012"
 ## <a name="create-the-projects"></a>建立專案
  若要完成此逐步解說中，您需要將數個專案加入至您在建立 SiteColumnProjectItem 方案[逐步解說： 使用專案範本，第 1 部分建立網站資料行專案項目](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md):  
   
--   WPF 專案。 您將實作<xref:Microsoft.VisualStudio.TemplateWizard.IWizard>介面，並在此專案中定義的精靈 UI。  
+- WPF 專案。 您將實作<xref:Microsoft.VisualStudio.TemplateWizard.IWizard>介面，並在此專案中定義的精靈 UI。  
   
--   類別庫專案定義的 SharePoint 命令。 此專案必須以.net Framework 3.5 為目標。  
+- 類別庫專案定義的 SharePoint 命令。 此專案必須以.net Framework 3.5 為目標。  
   
- 開始本逐步解說建立的專案。  
+  開始本逐步解說建立的專案。  
   
 #### <a name="to-create-the-wpf-project"></a>若要建立 WPF 專案
   
@@ -192,13 +192,13 @@ ms.locfileid: "42626012"
 ## <a name="create-the-wizard-model-signing-manager-and-sharepoint-command-ids"></a>建立精靈模型、 簽章管理員和 SharePoint 的命令 Id
  將程式碼加入 ProjectTemplateWizard 專案範例中實作下列元件：  
   
--   SharePoint 命令識別碼。 這些字串會識別精靈會使用 SharePoint 命令。 稍後在本逐步解說中，您會加入至 SharePointCommands 專案，以實作命令的程式碼。  
+- SharePoint 命令識別碼。 這些字串會識別精靈會使用 SharePoint 命令。 稍後在本逐步解說中，您會加入至 SharePointCommands 專案，以實作命令的程式碼。  
   
--   精靈資料模型。  
+- 精靈資料模型。  
   
--   專案的簽章管理員。  
+- 專案的簽章管理員。  
   
- 如需有關這些元件的詳細資訊，請參閱 <<c0> [ 了解精靈元件](#wizardcomponents)。  
+  如需有關這些元件的詳細資訊，請參閱 <<c0> [ 了解精靈元件](#wizardcomponents)。  
   
 #### <a name="to-define-the-sharepoint-command-ids"></a>若要定義的 SharePoint 命令識別碼
   
@@ -485,29 +485,29 @@ ms.locfileid: "42626012"
   
 #### <a name="to-test-the-wizard-in-visual-studio"></a>若要在 Visual Studio 中測試精靈  
   
-1.  在實驗性 Visual Studio 執行個體，在功能表列上，選擇**檔案** > **新增** > **專案**。  
+1. 在實驗性 Visual Studio 執行個體，在功能表列上，選擇**檔案** > **新增** > **專案**。  
   
-2.  依序展開**Visual C#** 節點或**Visual Basic**節點 （取決於您的專案範本支援語言），展開**SharePoint** ] 節點，然後選擇 [**2010年**節點。  
+2. 依序展開**Visual C#** 節點或**Visual Basic**節點 （取決於您的專案範本支援語言），展開**SharePoint** ] 節點，然後選擇 [**2010年**節點。  
   
-3.  在專案範本清單中，選擇**網站資料行**，將專案命名為**SiteColumnWizardTest**，然後選擇**確定**  按鈕。  
+3. 在專案範本清單中，選擇**網站資料行**，將專案命名為**SiteColumnWizardTest**，然後選擇**確定**  按鈕。  
   
-4.  確認 Visual Studio 的其他執行個體中的程式碼是在您稍早在設定的中斷點上停止`RunStarted`方法。  
+4. 確認 Visual Studio 的其他執行個體中的程式碼是在您稍早在設定的中斷點上停止`RunStarted`方法。  
   
-5.  繼續偵錯專案，選擇**F5**金鑰或，功能表列選擇**偵錯** > **繼續**。  
+5. 繼續偵錯專案，選擇**F5**金鑰或，功能表列選擇**偵錯** > **繼續**。  
   
-6.  在  **SharePoint 自訂精靈**，輸入您想要用於偵錯時，網站的 URL，然後選擇**下一步**  按鈕。  
+6. 在  **SharePoint 自訂精靈**，輸入您想要用於偵錯時，網站的 URL，然後選擇**下一步**  按鈕。  
   
-7.  中的第二頁**SharePoint 自訂精靈**，進行下列選擇：  
+7. 中的第二頁**SharePoint 自訂精靈**，進行下列選擇：  
   
-    -   在 **型別**清單中，選擇**布林**。  
+   - 在 **型別**清單中，選擇**布林**。  
   
-    -   在 **群組**清單中，選擇**自訂/否資料行**。  
+   - 在 **群組**清單中，選擇**自訂/否資料行**。  
   
-    -   在**名稱**方塊中，輸入**My/否資料行**，然後選擇**完成** 按鈕。  
+   - 在**名稱**方塊中，輸入**My/否資料行**，然後選擇**完成** 按鈕。  
   
      中**方案總管**，新的專案隨即出現，並包含名為專案項目的**Field1**，和 Visual Studio 開啟的專案*Elements.xml*在編輯器中的檔案。  
   
-8.  確認*Elements.xml*包含您在精靈中指定的值。  
+8. 確認*Elements.xml*包含您在精靈中指定的值。  
   
 #### <a name="to-test-the-site-column-in-sharepoint"></a>若要在 SharePoint 中測試網站資料行  
   

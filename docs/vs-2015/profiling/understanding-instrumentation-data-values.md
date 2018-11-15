@@ -17,12 +17,12 @@ caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 61e942a1c3cb43bcd2d3d7ef813ed4bd98267a1f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 75a1fddc6195805b786f4ad343c1c8917129dcdb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49298879"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949229"
 ---
 # <a name="understanding-instrumentation-data-values"></a>認識檢測資料值
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,37 +31,37 @@ ms.locfileid: "49298879"
   
  **需求**  
   
--   [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
- 檢測方法會在已進行程式碼剖析的二進位檔中目標函式的開始和結束處，以及在那些函式每次呼叫其他函式的前後插入程式碼。 插入程式碼會記錄下列項目︰  
+  檢測方法會在已進行程式碼剖析的二進位檔中目標函式的開始和結束處，以及在那些函式每次呼叫其他函式的前後插入程式碼。 插入程式碼會記錄下列項目︰  
   
--   此收集事件與前一個事件之間的間隔。  
+- 此收集事件與前一個事件之間的間隔。  
   
--   作業系統在間隔期間是否曾執行作業。 例如，作業系統可能會讀取或寫入磁碟，或在目標執行緒與另一個處理序中的另一個執行緒之間切換。  
+- 作業系統在間隔期間是否曾執行作業。 例如，作業系統可能會讀取或寫入磁碟，或在目標執行緒與另一個處理序中的另一個執行緒之間切換。  
   
- **需求**  
+  **需求**  
   
--   [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
- 對於每個間隔，分析工具會重新建構出現在間隔結尾的呼叫堆疊。 呼叫堆疊是某時間點在處理器上作用中的函式清單。 只有一個函式 (目前的函式) 在執行程式碼。其他函式是導致呼叫目前函式 (呼叫堆疊) 的函式呼叫鏈結。  
+  對於每個間隔，分析工具會重新建構出現在間隔結尾的呼叫堆疊。 呼叫堆疊是某時間點在處理器上作用中的函式清單。 只有一個函式 (目前的函式) 在執行程式碼。其他函式是導致呼叫目前函式 (呼叫堆疊) 的函式呼叫鏈結。  
   
- 對於呼叫堆疊上的每個函式，在記錄間隔時，分析工具分析會將間隔加入至函式的四個資料值之一或多個值。 分析會根據兩項準則將間隔加入至函式的資料值：  
+  對於呼叫堆疊上的每個函式，在記錄間隔時，分析工具分析會將間隔加入至函式的四個資料值之一或多個值。 分析會根據兩項準則將間隔加入至函式的資料值：  
   
--   函式程式碼或「子函式」 (由該函式呼叫的函式) 中是否發生間隔。  
+- 函式程式碼或「子函式」 (由該函式呼叫的函式) 中是否發生間隔。  
   
--   間隔中是否發生作業系統事件。  
+- 間隔中是否發生作業系統事件。  
   
- 函式間隔的資料值或資料範圍稱為「功能內含耗用」、「功能專屬耗用」、「應用程式內含」及「應用程式專屬」：  
+  函式間隔的資料值或資料範圍稱為「功能內含耗用」、「功能專屬耗用」、「應用程式內含」及「應用程式專屬」：  
   
--   函式的所有間隔都會加入至功能內含耗用資料值。  
+- 函式的所有間隔都會加入至功能內含耗用資料值。  
   
--   如果間隔發生在函式的程式碼中，而不是子函式中，會將間隔加入至函式的功能專屬耗用資料值。  
+- 如果間隔發生在函式的程式碼中，而不是子函式中，會將間隔加入至函式的功能專屬耗用資料值。  
   
--   如果間隔中未發生作業系統事件，會將間隔加入到應用程式內含資料值。  
+- 如果間隔中未發生作業系統事件，會將間隔加入到應用程式內含資料值。  
   
--   如果間隔內並未發生作業系統事件，而是在直接執行函式程式碼時發生間隔 (也就是未發生在子函式中)，會將間隔加入至應用程式專屬資料值。  
+- 如果間隔內並未發生作業系統事件，而是在直接執行函式程式碼時發生間隔 (也就是未發生在子函式中)，會將間隔加入至應用程式專屬資料值。  
   
- 程式碼剖析工具報表彙總程式碼剖析工作階段本身以及工作階段的處理序、執行緒及二進位檔中函式的總值。  
+  程式碼剖析工具報表彙總程式碼剖析工作階段本身以及工作階段的處理序、執行緒及二進位檔中函式的總值。  
   
 ## <a name="elapsed-inclusive-values"></a>功能內含耗用值  
  花費在執行函式和其子函式的時間總計。  

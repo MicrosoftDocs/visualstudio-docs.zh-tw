@@ -17,12 +17,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: aef6236b896495f81e91cbdd7befd2923c013a33
-ms.sourcegitcommit: 7a11a094a353f2e2a2077ad863ca4c0fb97f7ec5
+ms.openlocfilehash: 3450671c32cb7cfa03ade49bffcbecea728ddacf
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/18/2018
-ms.locfileid: "39131956"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49917515"
 ---
 # <a name="bind-wpf-controls-to-a-dataset"></a>將 WPF 控制項繫結至資料集
 
@@ -58,15 +58,15 @@ ms.locfileid: "39131956"
 
 建立新的 WPF 專案，以顯示產品記錄。
 
-1.  啟動 Visual Studio。
+1. 啟動 Visual Studio。
 
-2.  在 [檔案] 功能表上選取 [新增] > [專案]。
+2. 在 [檔案] 功能表上選取 [新增] > [專案]。
 
-3.  依序展開**Visual Basic**或是**Visual C#**，然後選取**Windows**。
+3. 依序展開**Visual Basic**或是**Visual C#**，然後選取**Windows**。
 
-4.  選取  **WPF 應用程式**專案範本。
+4. 選取  **WPF 應用程式**專案範本。
 
-5.  在 **名稱**方塊中，輸入**AdventureWorksProductsEditor** ，然後選取**確定**。
+5. 在 **名稱**方塊中，輸入**AdventureWorksProductsEditor** ，然後選取**確定**。
 
    Visual Studio 建立 AdventureWorksProductsEditor 專案。
 
@@ -126,23 +126,23 @@ ms.locfileid: "39131956"
 
 透過在 WPF 設計工具中修改 XAML，將數個按鈕加入至視窗。 在此逐步解說稍後的內容中，您會加入程式碼，讓使用者使用這些按鈕捲動及儲存產品記錄的變更。
 
-1.  在 **方案總管**，按兩下*MainWindow.xaml*。
+1. 在 **方案總管**，按兩下*MainWindow.xaml*。
 
-     視窗中開啟**WPF 設計工具**。
+    視窗中開啟**WPF 設計工具**。
 
-2.  在設計工具的 [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] 檢視中，在 `<Grid>` 標記之間加入下列程式碼：
+2. 在設計工具的 [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] 檢視中，在 `<Grid>` 標記之間加入下列程式碼：
 
-    ```xaml
-    <Grid.RowDefinitions>
-        <RowDefinition Height="75" />
-        <RowDefinition Height="625" />
-    </Grid.RowDefinitions>
-    <Button HorizontalAlignment="Left" Margin="22,20,0,24" Name="backButton" Width="75"><</Button>
-    <Button HorizontalAlignment="Left" Margin="116,20,0,24" Name="nextButton" Width="75">></Button>
-    <Button HorizontalAlignment="Right" Margin="0,21,46,24" Name="saveButton" Width="110">Save changes</Button>
-    ```
+   ```xaml
+   <Grid.RowDefinitions>
+       <RowDefinition Height="75" />
+       <RowDefinition Height="625" />
+   </Grid.RowDefinitions>
+   <Button HorizontalAlignment="Left" Margin="22,20,0,24" Name="backButton" Width="75"><</Button>
+   <Button HorizontalAlignment="Left" Margin="116,20,0,24" Name="nextButton" Width="75">></Button>
+   <Button HorizontalAlignment="Right" Margin="0,21,46,24" Name="saveButton" Width="110">Save changes</Button>
+   ```
 
-3.  建置專案。
+3. 建置專案。
 
 ## <a name="create-data-bound-controls"></a>建立資料繫結控制項
 

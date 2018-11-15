@@ -17,12 +17,12 @@ ms.assetid: 17914a71-10ea-4b6f-8982-e364f87dca53
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 12b56f2ae1c6a284880cffc665f54750d5320dfa
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 25dc1b378c129fc50b5605f781991850050738e9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49247388"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49858572"
 ---
 # <a name="idebugthread2enumframeinfo"></a>IDebugThread2::EnumFrameInfo
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

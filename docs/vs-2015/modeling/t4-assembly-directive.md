@@ -12,12 +12,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 3ede2e84ac644fc8e1438873ea561ef3010f670c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 97e28347ba6985d99386647219f92aac9a221398
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49300998"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49873574"
 ---
 # <a name="t4-assembly-directive"></a>T4 組件指示詞
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,11 +38,11 @@ ms.locfileid: "49300998"
   
  組件名稱應該是下列其中一個：  
   
--   GAC 中組件的強式名稱，例如 `System.Xml.dll`。 您也可以使用完整格式，例如 `name="System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"`。 如需詳細資訊，請參閱<xref:System.Reflection.AssemblyName>。  
+- GAC 中組件的強式名稱，例如 `System.Xml.dll`。 您也可以使用完整格式，例如 `name="System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"`。 如需詳細資訊，請參閱<xref:System.Reflection.AssemblyName>。  
   
--   組件的絕對路徑  
+- 組件的絕對路徑  
   
- `$(variableName)` 語法可用來參考 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 變數 (例如 `$(SolutionDir)`)，而 `%VariableName%` 可用來參考環境變數。 例如:   
+  `$(variableName)` 語法可用來參考 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 變數 (例如 `$(SolutionDir)`)，而 `%VariableName%` 可用來參考環境變數。 例如:   
   
 ```  
 <#@ assembly name="$(SolutionDir)\MyProject\bin\Debug\SomeLibrary.Dll" #>  
@@ -53,21 +53,21 @@ ms.locfileid: "49300998"
 ## <a name="standard-assemblies"></a>標準組件  
  下列組件會自動載入，因此您不需要為它們撰寫 assembly 指示詞：  
   
--   `Microsoft.VisualStudio.TextTemplating.1*.dll`  
+- `Microsoft.VisualStudio.TextTemplating.1*.dll`  
   
--   `System.dll`  
+- `System.dll`  
   
--   `WindowsBase.dll`  
+- `WindowsBase.dll`  
   
- 如果使用自訂指示詞，指示詞處理器可能會載入額外的組件。 例如，如果為特定領域語言 (DSL) 撰寫範本，就不需要為下列組件撰寫 assembly 指示詞：  
+  如果使用自訂指示詞，指示詞處理器可能會載入額外的組件。 例如，如果為特定領域語言 (DSL) 撰寫範本，就不需要為下列組件撰寫 assembly 指示詞：  
   
--   `Microsoft.VisualStudio.Modeling.Sdk.1*.dll`  
+- `Microsoft.VisualStudio.Modeling.Sdk.1*.dll`  
   
--   `Microsoft.VisualStudio.Modeling.Sdk.Diagrams.1*.dsl`  
+- `Microsoft.VisualStudio.Modeling.Sdk.Diagrams.1*.dsl`  
   
--   `Microsoft.VisualStudio.TextTemplating.Modeling.1*.dll`  
+- `Microsoft.VisualStudio.TextTemplating.Modeling.1*.dll`  
   
--   包含 DSL 的組件。  
+- 包含 DSL 的組件。  
   
 ##  <a name="msbuild"></a> 使用 MSBuild 和 Visual Studio 中的專案屬性  
  Visual Studio 巨集 (如 $(SolutionDir)) 在 MSBuild 中無法運作。 如果想要轉換組建電腦中的範本，您必須改用專案屬性。  

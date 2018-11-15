@@ -18,12 +18,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 5625d79221416a8799d120530d3c463041412417
-ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
+ms.openlocfilehash: 51b03ce504b2fe8f588cf3e360882f97d61664f8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39341221"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49896935"
 ---
 # <a name="map-dependencies-with-code-maps"></a>使用 code map 對應相依性
 
@@ -138,15 +138,15 @@ ms.locfileid: "39341221"
 
 10. 專注於複雜方案對應的另一個方法是產生新的對應，其中包含來自現有對應的選取項目。 保存**Ctrl**時選取您想要專注的項目，開啟捷徑功能表，然後選擇**從選取範圍新增圖形**。
 
-   ![在新的 Code Map 上顯示選取的項目](../modeling/media/codemapsshowonnewmap.png)
+    ![在新的 Code Map 上顯示選取的項目](../modeling/media/codemapsshowonnewmap.png)
 
 11. 包含的內容會轉至新的對應。 隱藏方案資料夾和您不想要查看使用的任何其他容器**篩選器**窗格。
 
-   ![篩選容器以精簡檢視](../modeling/media/codemapsexpandnewgroups.png)
+    ![篩選容器以精簡檢視](../modeling/media/codemapsexpandnewgroups.png)
 
 12. 展開群組，然後選取對應中的項目以檢視關聯性。
 
-   ![選取項目以檢視其關聯性](../modeling/media/codemapsviewnewrelationships.png)
+    ![選取項目以檢視其關聯性](../modeling/media/codemapsviewnewrelationships.png)
 
 另請參閱：
 
@@ -242,7 +242,7 @@ ms.locfileid: "39341221"
 
 - [影片： 了解使用 Visual Studio 2015 code map 的程式碼的設計](https://channel9.msdn.com/Events/Visual-Studio/Connect-event-2015/502)]
 - [使用 Code Map 偵錯您的應用程式](../modeling/use-code-maps-to-debug-your-applications.md)
-- [偵錯時對應呼叫堆疊上的方法](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)
+- [在偵錯時於呼叫堆疊上對應方法](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)
 - [使用 Code Map 分析器尋找潛在問題](../modeling/find-potential-problems-using-code-map-analyzers.md)
 - [瀏覽和重新排列 Code Map](../modeling/browse-and-rearrange-code-maps.md)
 - [藉由編輯 DGML 檔案自訂 Code Map](../modeling/customize-code-maps-by-editing-the-dgml-files.md)

@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 36cbcf01a7e070ab88230e0cd0165db935944a59
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 3afb988b226ccf62fae92ab02d8380d20b19605b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36326741"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49853425"
 ---
 # <a name="call-into-the-sharepoint-object-models"></a>呼叫 SharePoint 物件模型
   當您在 Visual Studio 中建立 SharePoint 工具擴充功能時，您可能必須呼叫 SharePoint Api 來執行特定工作。 例如，如果您建立 SharePoint 專案的自訂部署步驟時，您可能在呼叫 SharePoint Api 來執行一些工作，以部署解決方案。  
@@ -37,11 +37,11 @@ ms.locfileid: "36326741"
   
  不過，用戶端物件模型會在 SharePoint 工具擴充功能的內容中，有兩個缺點：  
   
--   用戶端物件模型會提供只有伺服器物件模型的子集。 如果您有使用中用戶端物件模型未公開的 SharePoint 功能，您必須使用伺服器物件模型。  
+- 用戶端物件模型會提供只有伺服器物件模型的子集。 如果您有使用中用戶端物件模型未公開的 SharePoint 功能，您必須使用伺服器物件模型。  
   
--   雖然使用用戶端物件模型中 SharePoint 工具擴充功能應該適用於大部分的情況下，您可能會遇到某些情況下，呼叫用戶端物件模型執行未如預期般運作。 用戶端物件模型可用於呼叫 SharePoint 網站上的遠端伺服器或伺服陣列用戶端應用程式。 Visual Studio 中 SharePoint 工具只使用本機 SharePoint 安裝在開發電腦上。 因此，當您使用用戶端物件模型中 SharePoint 工具擴充功能時，您呼叫 SharePoint 網站的本機電腦上，也就是沒有用戶端物件模型的設計方式使用。  
+- 雖然使用用戶端物件模型中 SharePoint 工具擴充功能應該適用於大部分的情況下，您可能會遇到某些情況下，呼叫用戶端物件模型執行未如預期般運作。 用戶端物件模型可用於呼叫 SharePoint 網站上的遠端伺服器或伺服陣列用戶端應用程式。 Visual Studio 中 SharePoint 工具只使用本機 SharePoint 安裝在開發電腦上。 因此，當您使用用戶端物件模型中 SharePoint 工具擴充功能時，您呼叫 SharePoint 網站的本機電腦上，也就是沒有用戶端物件模型的設計方式使用。  
   
- 如需示範如何使用用戶端物件模型中的 Visual Studio 中 SharePoint 工具延伸模組的逐步解說，請參閱[逐步解說： 呼叫 SharePoint 用戶端物件模型，在 伺服器總管延伸模組](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md)。  
+  如需示範如何使用用戶端物件模型中的 Visual Studio 中 SharePoint 工具延伸模組的逐步解說，請參閱[逐步解說： 呼叫 SharePoint 用戶端物件模型，在 伺服器總管延伸模組](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md)。  
   
 ## <a name="use-the-server-object-model-in-extension-projects"></a>在擴充功能專案中使用伺服器物件模型
  伺服器物件模型是用戶端物件模型的超集。 當您使用伺服器物件模型時，您可以使用所有功能，[!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)]和[!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)]以程式設計方式公開。  

@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: d6152d75d28e5c6468ccc0a484e2eae3a25214d9
-ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
+ms.openlocfilehash: 63cf3e71ded582b3406957ccb423c8dbf47768ba
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39203750"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49905894"
 ---
 # <a name="how-to-add-context-parameters-to-a-load-test-run-setting"></a>如何：將內容參數新增至負載測試回合設定
 
@@ -36,19 +36,19 @@ ms.locfileid: "39203750"
 
 此外，藉由在不同的負載測試回合設定中使用相同名稱將不同的值指派給內容參數，就能使用不同的環境執行負載測試：
 
--   企業臨時網頁伺服器回合設定：名為 `WebServer1=http://CorporateStagingWebServer` 的內容參數
+- 企業臨時網頁伺服器回合設定：名為 `WebServer1=http://CorporateStagingWebServer` 的內容參數
 
--   企業實際執行網頁伺服器回合設定：名為 `WebServer1=http://CorporateProductionWebServer` 的內容參數
+- 企業實際執行網頁伺服器回合設定：名為 `WebServer1=http://CorporateProductionWebServer` 的內容參數
 
- **從命令列變更回合設定**
+  **從命令列變更回合設定**
 
- 如果您想要從命令列使用不同的回合設定來運用內容參數策略，請使用下列命令：
+  如果您想要從命令列使用不同的回合設定來運用內容參數策略，請使用下列命令：
 
- **Set Test.UseRunSetting= CorporateStagingWebServer**
+  **Set Test.UseRunSetting= CorporateStagingWebServer**
 
- -和-
+  -和-
 
- **mstest /testcontainer:loadtest1.loadtest**
+  **mstest /testcontainer:loadtest1.loadtest**
 
 ## <a name="to-add-a-context-parameter-to-a-run-setting"></a>將內容參數加入至回合設定
 

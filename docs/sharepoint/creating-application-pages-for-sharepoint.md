@@ -21,12 +21,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7faa1e88a37416db85624863968e13b28de40bc6
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 5f1c3b03507ca97724106c6ca1d121b3c54eb659
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36326123"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49853138"
 ---
 # <a name="create-application-pages-for-sharepoint"></a>建立 SharePoint 相關應用程式頁面
   *應用程式頁面*是 ASP.NET 網頁，專為在 SharePoint 網站中使用。 應用程式頁面是 ASP.NET 網頁的特殊化的類型。 應用程式頁面和標準的 ASP.NET 網頁的主要差異是應用程式頁面包含與 SharePoint 主版頁面合併的內容。 主版頁面可讓應用程式頁面來做為站台的其他頁面共用相同的外觀和行為。  
@@ -67,7 +67,7 @@ ms.locfileid: "36326123"
   
  就像您會偵錯在 Visual Studio 中的其他 SharePoint 專案項目，您可以偵錯應用程式頁面。 當您啟動 Visual Studio 偵錯工具時，Visual Studio 會開啟 SharePoint 網站。  
   
- 若要檢視應用程式頁面上，您必須以手動方式瀏覽至應用程式頁面的位置 (例如： http://*Server_Name*/_layouts/*Project_Name*/ApplicationPage1.aspx)。  
+ 若要檢視應用程式頁面上，您必須以手動方式瀏覽至應用程式頁面的位置 (例如： http://<em>Server_Name</em>/_layouts/*Project_Name*/ApplicationPage1.aspx)。  
   
  如需如何偵錯 SharePoint 專案的詳細資訊，請參閱[疑難排解 SharePoint 方案](../sharepoint/troubleshooting-sharepoint-solutions.md)。  
   

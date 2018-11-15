@@ -13,46 +13,46 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 602adf27a0a165a8919d4be928a330dc3a212cf3
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 59642b934f82990ce50f6dabaa38a97f34575997
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39500471"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49941550"
 ---
 # <a name="instantiate-the-core-editor-by-using-the-legacy-api"></a>使用舊版 API 具現化核心編輯器
 編輯器會負責文字編輯功能，例如插入、 刪除、 複製和貼。 它結合了這些函式語言服務，例如文字著色、 縮排，並完成 IntelliSense 陳述式所提供的函數。  
   
  您可以具現化核心編輯器，在三種方式之一執行的個體：  
   
--   明確地建立執行個體的核心編輯器視窗中。  
+- 明確地建立執行個體的核心編輯器視窗中。  
   
--   提供傳回的核心編輯器執行個體的編輯器 factory  
+- 提供傳回的核心編輯器執行個體的編輯器 factory  
   
--   從專案階層架構中開啟檔案。  
+- 從專案階層架構中開啟檔案。  
   
- 下列各節討論如何使用舊版的 API 來具現化編輯器。  
+  下列各節討論如何使用舊版的 API 來具現化編輯器。  
   
 ## <a name="explicitly-open-a-core-editor-instance"></a>明確地開啟核心編輯器執行個體  
  當明確取得核心編輯器的執行個體：  
   
--   取得<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer>來保存要編輯的文件資料物件。  
+- 取得<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer>來保存要編輯的文件資料物件。  
   
--   藉由建立建立文件資料物件導向的線條表示法<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines>介面從<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer>介面。  
+- 藉由建立建立文件資料物件導向的線條表示法<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines>介面從<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer>介面。  
   
--   設定<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines>做為文件資料物件的預設實作的執行個體<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindow>介面，使用<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindow.SetBuffer%2A>方法。  
+- 設定<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines>做為文件資料物件的預設實作的執行個體<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindow>介面，使用<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindow.SetBuffer%2A>方法。  
   
-     主機<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindow>執行個體中<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame>介面使用<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.CreateToolWindow%2A>方法。  
+   主機<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindow>執行個體中<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame>介面使用<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.CreateToolWindow%2A>方法。  
   
- 到目前為止，顯示<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame>介面會提供視窗，其中包含的核心編輯器執行個體。  
+  到目前為止，顯示<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame>介面會提供視窗，其中包含的核心編輯器執行個體。  
   
- 不過，這不是非常有用的執行個體，因為它不會有快速鍵，或存取進階的功能。 若要取得存取快速鍵和進階的功能：  
+  不過，這不是非常有用的執行個體，因為它不會有快速鍵，或存取進階的功能。 若要取得存取快速鍵和進階的功能：  
   
--   使用<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer.SetLanguageServiceID%2A>語言服務和編輯器使用的文件資料物件建立關聯的方法。  
+- 使用<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer.SetLanguageServiceID%2A>語言服務和編輯器使用的文件資料物件建立關聯的方法。  
   
--   建立您自己的快速鍵，或使用系統預設值，藉由設定<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame>物件顯示的屬性。 若要這樣做，請呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.SetGuidProperty%2A>方法使用<xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID>屬性。  
+- 建立您自己的快速鍵，或使用系統預設值，藉由設定<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame>物件顯示的屬性。 若要這樣做，請呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.SetGuidProperty%2A>方法使用<xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID>屬性。  
   
-     若要取得並使用非標準的快速鍵，產生它們使用 *.vsct*檔案。 如需詳細資訊，請參閱 < [Visual Studio 命令表檔案 (.vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)。  
+   若要取得並使用非標準的快速鍵，產生它們使用 *.vsct*檔案。 如需詳細資訊，請參閱 < [Visual Studio 命令表檔案 (.vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)。  
   
 ## <a name="how-to-use-an-editor-factory-to-obtain-the-core-editor"></a>如何使用編輯器 factory 取得核心編輯器  
  當實作編輯器處理站使用的核心編輯器<xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A>方法，遵循所有步驟，明確裝載上一節中所述<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindow>使用<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer>文件資料物件，在<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame>物件。  

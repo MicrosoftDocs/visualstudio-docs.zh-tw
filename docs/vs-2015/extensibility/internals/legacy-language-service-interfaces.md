@@ -16,12 +16,12 @@ ms.assetid: 03b2d507-f463-417e-bc22-bdac68eeda52
 caps.latest.revision: 25
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 654a0d7de3ad75c541d14a38a2a897adb731ea7a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d64ff7ec1aea24a5e98b3f37339639440e31bf42
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49249206"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49837239"
 ---
 # <a name="legacy-language-service-interfaces"></a>舊版語言服務介面
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -35,15 +35,15 @@ ms.locfileid: "49249206"
   
  您可以在任意數目的不同類別上實作核心語言服務介面。 不過，常見的方法是在單一類別中實作下列介面：  
   
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo>  
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo>  
   
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems>  
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems>  
   
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageDebugInfo>  
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageDebugInfo>  
   
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageBlock> (選擇性)  
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageBlock> (選擇性)  
   
- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo>介面必須實作所有的語言服務。 它提供您的語言服務，例如語言，語言服務，以及如何擷取色彩標示器相關聯的檔案名稱副檔名的當地語系化名稱的相關資訊。  
+  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo>介面必須實作所有的語言服務。 它提供您的語言服務，例如語言，語言服務，以及如何擷取色彩標示器相關聯的檔案名稱副檔名的當地語系化名稱的相關資訊。  
   
 ## <a name="additional-language-service-interfaces"></a>其他語言服務介面  
  其他介面可提供與您的語言服務。 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 要求每個執行個體的文字緩衝的這些介面的個別執行個體。 因此，您應該在其本身的物件上實作這些介面。 下表顯示需要每個文字緩衝區執行個體的一個執行個體的介面。  

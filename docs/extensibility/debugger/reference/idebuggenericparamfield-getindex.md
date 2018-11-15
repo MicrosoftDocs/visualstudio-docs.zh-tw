@@ -1,5 +1,5 @@
 ---
-title: IDebugGenericParamField::GetIndex |Microsoft 文件
+title: IDebugGenericParamField::GetIndex |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,15 +13,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7dc623eca2221c0ca9c073e830683739d048f84b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 197796549ce865733f037d99e20382ac74b8a74d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31110826"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49857246"
 ---
 # <a name="idebuggenericparamfieldgetindex"></a>IDebugGenericParamField::GetIndex
-擷取這個泛型參數的索引。  
+擷取此泛型參數的索引。  
   
 ## <a name="syntax"></a>語法  
   
@@ -39,16 +39,16 @@ int GetIndex(
   
 #### <a name="parameters"></a>參數  
  `pIndex`  
- [out]這個泛型參數的索引值。  
+ [out]此泛型參數的索引值。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
   
 ## <a name="remarks"></a>備註  
- 例如，對於 Dictionary(K,V)，K 是索引 0，V 索引 1。  
+ 例如，對於 Dictionary(K,V)，K 是索引為 0，V 索引 1。  
   
 ## <a name="example"></a>範例  
- 下列範例示範如何實作這個方法來**CDebugGenericParamFieldType**公開物件[IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md)介面。  
+ 下列範例示範如何實作這個方法，如**CDebugGenericParamFieldType**公開 （expose） 的物件[IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md)介面。  
   
 ```cpp  
 HRESULT CDebugGenericParamFieldType::GetIndex(DWORD* pIndex)  

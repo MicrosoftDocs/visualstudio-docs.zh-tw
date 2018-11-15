@@ -1,5 +1,5 @@
 ---
-title: IDebugActivateDocumentEvent2::GetDocumentContext |Microsoft 文件
+title: IDebugActivateDocumentEvent2::GetDocumentContext |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,15 +16,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 03fbc1499372221a815eb639442af586f7020cf1
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b3eaf98fe0c60a23f519bd6ec86ae6c674ac3b4e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31100805"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49877032"
 ---
 # <a name="idebugactivatedocumentevent2getdocumentcontext"></a>IDebugActivateDocumentEvent2::GetDocumentContext
-取得描述的位置是由偵錯封裝成為使用中的文件中的文件內容。  
+取得文件內容，描述偵錯封裝成為作用中的文件中的位置。  
   
 ## <a name="syntax"></a>語法  
   
@@ -42,13 +42,13 @@ int GetDocumentContext (
   
 #### <a name="parameters"></a>參數  
  `ppDocContext`  
- [out]傳回[IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)物件，代表來源檔案的文件中的位置。  
+ [out]傳回[IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)物件，表示來源檔案的文件中的位置。  
   
 ## <a name="remarks"></a>備註  
- 這個位置可能用來顯示插入號，例如。  
+ 若要顯示插入號，例如，可能會使用這個位置。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugActivateDocumentEvent2](../../../extensibility/debugger/reference/idebugactivatedocumentevent2.md)   

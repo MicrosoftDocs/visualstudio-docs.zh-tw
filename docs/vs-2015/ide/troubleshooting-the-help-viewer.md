@@ -17,12 +17,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 29c7ee223bbfbeb2dd7b262c33d6c00ea3c41411
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a3497d46ed4c9c5a04d8f40cc3056ea282593884
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49245540"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49934232"
 ---
 # <a name="troubleshooting-the-help-viewer"></a>說明檢視器疑難排解
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,9 +50,9 @@ ms.locfileid: "49245540"
 ## <a name="additional-resources"></a>其他資源  
  您可以利用下列資源來取得詳細資訊，並提供 Help Viewer 的相關意見反應：  
   
--   若要提供意見反應，請參閱 Microsoft 網站上的 [Microsoft Connect](http://go.microsoft.com/fwlink/?linkid=243983)，或傳送電子郵件至 [hlpfdbk@microsoft.com](mailto:hlpfdbk@microsoft.com)。  
+- 若要提供意見反應，請參閱 Microsoft 網站上的 [Microsoft Connect](http://go.microsoft.com/fwlink/?linkid=243983)，或傳送電子郵件至 [hlpfdbk@microsoft.com](mailto:hlpfdbk@microsoft.com)。  
   
--   如需詳細資訊，請參閱 <<c0> [ 開發人員文件和說明系統](http://go.microsoft.com/fwlink/?LinkId=232741)論壇並[The Help Guy](http://go.microsoft.com/fwlink/?LinkId=232743)部落格。  
+- 如需詳細資訊，請參閱 <<c0> [ 開發人員文件和說明系統](http://go.microsoft.com/fwlink/?LinkId=232741)論壇並[The Help Guy](http://go.microsoft.com/fwlink/?LinkId=232743)部落格。  
   
 ## <a name="see-also"></a>另請參閱  
  [說明檢視器 2.1 系統管理員指南](http://go.microsoft.com/fwlink/?LinkId=243985)

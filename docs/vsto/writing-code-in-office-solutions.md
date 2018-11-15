@@ -36,12 +36,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c3466a5a448baf378cf18a00c0e987f3cbcc0cb5
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: e9773c06293f189e572ef84e9b10f45a1ca5d5d8
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35671114"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50670984"
 ---
 # <a name="write-code-in-office-solutions"></a>在 Office 方案中撰寫程式碼
   在 Office 專案中撰寫程式碼，在某些方面不同於撰寫 Visual Studio 中其他類型專案的程式碼。 其中有許多差異的原因與將 Office 物件模型公開給 Managed 程式碼的方式相關。 其他差異則與 Office 專案的設計相關。  
@@ -62,7 +62,7 @@ ms.locfileid: "35671114"
  使用者電腦不需要 Office PIA 即可執行以 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 或更新版本為目標的 Office 方案。 如需詳細資訊，請參閱 <<c0> [ 設計和建立 Office 方案](../vsto/designing-and-creating-office-solutions.md)。  
   
 ### <a name="use-types-in-primary-interop-assemblies"></a>使用主要 interop 組件中的型別  
- Office PIA 包含會公開 Office 應用程式物件模型的類型組合，以及不打算直接用於程式碼中的其他基礎結構類型。 如需 Office Pia 中的類型的概觀，請參閱 <<c0> [ 的 Office 主要 interop 組件中類別和介面概觀](http://msdn.microsoft.com/da92dc3c-8209-44de-8095-a843659368d5)。  
+ Office PIA 包含會公開 Office 應用程式物件模型的類型組合，以及不打算直接用於程式碼中的其他基礎結構類型。 如需 Office Pia 中的類型的概觀，請參閱 <<c0> [ 的 Office 主要 interop 組件中類別和介面概觀](/previous-versions/office/office-12/ms247299\(v\=office.12\))。  
   
  由於 Office PIA 中的類型對應到以 COM 為基礎的物件模型中的類型，您使用這些類型的方式通常與其他 Managed 類型不同。 比方說，您呼叫在 Office 主要 Interop 組件中有選擇性參數之方法的方式，取決於您在專案中所使用的程式設計語言。 如需詳細資訊，請參閱下列主題：  
   

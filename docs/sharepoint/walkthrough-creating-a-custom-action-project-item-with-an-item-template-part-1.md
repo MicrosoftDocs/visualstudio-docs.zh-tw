@@ -18,33 +18,33 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 16469da5a4724a2bf536fed3b5e28da0fec68aed
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8144723f68b9343c1c7d74f7a940aec569dd7969
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42635326"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51296121"
 ---
 # <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-1"></a>逐步解說： 建立自訂動作專案項目與項目範本，第 1 部分
   您可以擴充 Visual Studio 中的 SharePoint 專案系統，藉由建立您自己的專案項目類型。 在本逐步解說中，您將建立可新增至 SharePoint 專案，以在 SharePoint 網站上建立的自訂動作專案項目。 自訂動作會將功能表項目**站台動作**的 SharePoint 網站的功能表。  
   
  本逐步解說將示範下列工作：  
   
--   建立 Visual Studio 擴充功能定義新類型的自訂動作的 SharePoint 專案項目。 新的專案項目類型會實作數個自訂的功能︰  
+- 建立 Visual Studio 擴充功能定義新類型的自訂動作的 SharePoint 專案項目。 新的專案項目類型會實作數個自訂的功能︰  
   
-    -   做為起點的專案項目，例如在 Visual Studio 中顯示自訂動作的設計工具相關的其他工作的捷徑功能表。  
+  -   做為起點的專案項目，例如在 Visual Studio 中顯示自訂動作的設計工具相關的其他工作的捷徑功能表。  
   
-    -   開發人員變更特定屬性的專案項目和包含它的專案時執行的程式碼。  
+  -   開發人員變更特定屬性的專案項目和包含它的專案時執行的程式碼。  
   
-    -   中的專案項目旁邊會出現自訂圖示**方案總管 中**。  
+  -   中的專案項目旁邊會出現自訂圖示**方案總管 中**。  
   
--   建立 Visual Studio 項目範本的專案項目。  
+- 建立 Visual Studio 項目範本的專案項目。  
   
--   建置 Visual Studio 擴充功能 (VSIX) 封裝來部署專案項目範本和延伸模組組件。  
+- 建置 Visual Studio 擴充功能 (VSIX) 封裝來部署專案項目範本和延伸模組組件。  
   
--   偵錯和測試的專案項目。  
+- 偵錯和測試的專案項目。  
   
- 這是獨立的逐步解說。 完成本逐步解說之後，您可以藉由將項目範本的精靈來增強的專案項目。 如需詳細資訊，請參閱 <<c0> [ 逐步解說： 建立自訂動作專案項目與項目範本，第 2 部分](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md)。  
+  這是獨立的逐步解說。 完成本逐步解說之後，您可以藉由將項目範本的精靈來增強的專案項目。 如需詳細資訊，請參閱 <<c0> [ 逐步解說： 建立自訂動作專案項目與項目範本，第 2 部分](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md)。  
   
 > [!NOTE]  
 >  您可以下載範例，以從[Github](https://github.com/SharePoint/PnP/tree/master/Samples/Workflow.Activities) ，示範如何建立工作流程的自訂活動。  
@@ -52,26 +52,26 @@ ms.locfileid: "42635326"
 ## <a name="prerequisites"></a>必要條件  
  您需要完成這個逐步解說在開發電腦上的下列元件：  
   
--   支援的 Microsoft Windows、 SharePoint 和 Visual Studio 版本。
+- 支援的 Microsoft Windows、 SharePoint 和 Visual Studio 版本。
   
--   [!INCLUDE[vssdk_current_long](../sharepoint/includes/vssdk-current-long-md.md)]。 本逐步解說會使用**VSIX 專案**SDK 來建立 VSIX 封裝，來部署專案項目中的範本。 如需詳細資訊，請參閱 <<c0> [ 擴充 Visual Studio 中 SharePoint 工具](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)。  
+- [!INCLUDE[vssdk_current_long](../sharepoint/includes/vssdk-current-long-md.md)]。 本逐步解說會使用**VSIX 專案**SDK 來建立 VSIX 封裝，來部署專案項目中的範本。 如需詳細資訊，請參閱 <<c0> [ 擴充 Visual Studio 中 SharePoint 工具](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)。  
   
- 下列概念的知識會很有幫助，但並非必要，若要完成本逐步解說：  
+  下列概念的知識會很有幫助，但並非必要，若要完成本逐步解說：  
   
--   在 SharePoint 中的自訂動作。 如需詳細資訊，請參閱 <<c0> [ 自訂動作](http://go.microsoft.com/fwlink/?LinkId=177800)。  
+- 在 SharePoint 中的自訂動作。 如需詳細資訊，請參閱 <<c0> [ 自訂動作](http://go.microsoft.com/fwlink/?LinkId=177800)。  
   
--   在 Visual Studio 中的項目範本。 如需詳細資訊，請參閱[建立專案和項目範本](/visualstudio/ide/creating-project-and-item-templates)。  
+- 在 Visual Studio 中的項目範本。 如需詳細資訊，請參閱[建立專案和項目範本](/visualstudio/ide/creating-project-and-item-templates)。  
   
 ## <a name="create-the-projects"></a>建立專案
  若要完成此逐步解說中，您需要建立三個專案：  
   
--   VSIX 專案。 此專案建立 VSIX 封裝部署的 SharePoint 專案項目。  
+- VSIX 專案。 此專案建立 VSIX 封裝部署的 SharePoint 專案項目。  
   
--   專案的項目範本。 此專案會建立可用來將 SharePoint 專案項目新增至 SharePoint 專案項目範本。  
+- 專案的項目範本。 此專案會建立可用來將 SharePoint 專案項目新增至 SharePoint 專案項目範本。  
   
--   類別庫專案。 此專案會實作 Visual Studio 擴充功能可定義 SharePoint 專案項目的行為。  
+- 類別庫專案。 此專案會實作 Visual Studio 擴充功能可定義 SharePoint 專案項目的行為。  
   
- 開始本逐步解說建立的專案。  
+  開始本逐步解說建立的專案。  
   
 #### <a name="to-create-the-vsix-project"></a>若要建立 VSIX 專案  
   
@@ -298,7 +298,7 @@ ms.locfileid: "42635326"
   
 1.  在 **方案總管**，開啟捷徑功能表**source.extension.vsixmanifest** CustomActionProjectItem 專案中的檔案，然後選擇 **開啟**。  
   
-     Visual Studio 會在資訊清單編輯器中開啟檔案。 Source.extension.vsixmanifest 檔案中會是所有的 VSIX 套件需要 extension.vsixmanifest 檔案的基礎。 如需有關這個檔案的詳細資訊，請參閱 < [VSIX 延伸結構描述 1.0 參考](http://msdn.microsoft.com/en-us/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)。  
+     Visual Studio 會在資訊清單編輯器中開啟檔案。 Source.extension.vsixmanifest 檔案中會是所有的 VSIX 套件需要 extension.vsixmanifest 檔案的基礎。 如需有關這個檔案的詳細資訊，請參閱 < [VSIX 延伸結構描述 1.0 參考](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)。  
   
 2.  在  **Product Name**方塊中，輸入**自訂動作專案項目**。  
   
@@ -313,7 +313,7 @@ ms.locfileid: "42635326"
 6.  在 **型別**清單中，選擇**Microsoft.VisualStudio.ItemTemplate**。  
   
     > [!NOTE]  
-    >  這個值會對應到`ItemTemplate`extension.vsixmanifest 檔案中的項目。 此項目可識別包含專案項目範本的 VSIX 套件中的子資料夾。 如需詳細資訊，請參閱 < [ItemTemplate 項目 （VSX 結構描述）](http://msdn.microsoft.com/en-us/1d489e54-c1c5-4f96-a510-6c2640867ff0)。  
+    >  這個值會對應到`ItemTemplate`extension.vsixmanifest 檔案中的項目。 此項目可識別包含專案項目範本的 VSIX 套件中的子資料夾。 如需詳細資訊，請參閱 < [ItemTemplate 項目 （VSX 結構描述）](/previous-versions/visualstudio/visual-studio-2010/dd393681\(v\=vs.100\))。  
   
 7.  在 **來源**清單中，選擇**目前方案中的專案**。  
   
@@ -326,7 +326,7 @@ ms.locfileid: "42635326"
 10. 在 **型別**清單中，選擇**Microsoft.VisualStudio.MefComponent**。  
   
     > [!NOTE]  
-    >  這個值會對應到`MefComponent`extension.vsixmanifest 檔案中的項目。 這個元素會指定在 VSIX 封裝中的延伸模組組件名稱。 如需詳細資訊，請參閱 < [MEFComponent 項目 （VSX 結構描述）](http://msdn.microsoft.com/en-us/8a813141-8b73-44c9-b80b-ca85bbac9551)。  
+    >  這個值會對應到`MefComponent`extension.vsixmanifest 檔案中的項目。 這個元素會指定在 VSIX 封裝中的延伸模組組件名稱。 如需詳細資訊，請參閱 < [MEFComponent 項目 （VSX 結構描述）](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\))。  
   
 11. 在 **來源**清單中，選擇**目前方案中的專案**。  
   
@@ -420,7 +420,7 @@ ms.locfileid: "42635326"
     -   在 `UrlAction`項目，設定`Url`屬性，如下列範例所示：  
   
         ```xml  
-        Url="http://msdn.microsoft.com/sharepoint/default.aspx"  
+        Url="https://docs.microsoft.com/sharepoint/dev/"  
         ```  
   
 3.  選擇 **F5** 鍵。  
@@ -430,7 +430,7 @@ ms.locfileid: "42635326"
     > [!NOTE]  
     >  如果**指令碼偵錯已停用** 對話方塊出現時，選擇**是**按鈕以繼續進行偵錯專案。  
   
-4.  上**站台動作**功能表上，選擇**SharePoint 開發人員中心**，確認瀏覽器會開啟網站 http://msdn.microsoft.com/sharepoint/default.aspx，然後關閉網頁瀏覽器。  
+4.  上**站台動作**功能表上，選擇**SharePoint 開發人員中心**，確認瀏覽器會開啟網站 https://docs.microsoft.com/sharepoint/dev/，然後關閉網頁瀏覽器。  
   
 ## <a name="clean-up-the-development-computer"></a>清除開發電腦
  完成測試的專案項目之後，請從 Visual Studio 的實驗執行個體中移除專案項目範本。  

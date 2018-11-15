@@ -15,31 +15,31 @@ helpviewer_keywords:
 ms.assetid: 0795ee94-17a8-4327-bf57-27cd5e312a4c
 caps.latest.revision: 29
 manager: douge
-ms.openlocfilehash: b629f856bcdba13523c094b5d3fd32b6848ec23f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 08d14f1155838e53321224280a69e7a76bf07b52
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49256070"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49911846"
 ---
 # <a name="hresult-information-in-managed-code"></a>在 Managed 程式碼的 HRESULT 資訊
 遇到 HRESULT 傳回值時，Managed 程式碼與 COM 之間的互動可能會造成問題。  
   
  在 COM 介面中，HRESULT 傳回值可以扮演下列角色：  
   
--   提供錯誤資訊 (例如，<xref:Microsoft.VisualStudio.VSConstants.E_INVALIDARG>)。  
+- 提供錯誤資訊 (例如，<xref:Microsoft.VisualStudio.VSConstants.E_INVALIDARG>)。  
   
--   提供一般程式行為的狀態資訊。  
+- 提供一般程式行為的狀態資訊。  
   
- COM 呼叫 Managed 程式碼時，HRESULT 可能導致這些問題：  
+  COM 呼叫 Managed 程式碼時，HRESULT 可能導致這些問題：  
   
--   傳回 HRESULT 值小於零的 COM 函式 (失敗碼) 會產生例外狀況。  
+- 傳回 HRESULT 值小於零的 COM 函式 (失敗碼) 會產生例外狀況。  
   
--   無法區分定期傳回兩個以上不同成功碼 (例如，<xref:Microsoft.VisualStudio.VSConstants.S_OK> 或 <xref:Microsoft.VisualStudio.VSConstants.S_FALSE>) 的 COM 方法。  
+- 無法區分定期傳回兩個以上不同成功碼 (例如，<xref:Microsoft.VisualStudio.VSConstants.S_OK> 或 <xref:Microsoft.VisualStudio.VSConstants.S_FALSE>) 的 COM 方法。  
   
- 因為許多 [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] COM 函式都傳回小於零的 HRESULT 值或傳回不同的成功碼，所以已撰寫 [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] Interop 組件，來保留方法簽章。 所有 [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] Interop 方法的類型都是 `int` 。 在未進行修改且未產生例外狀況的情況下，HRESULT 值會通過 Interop 層。  
+  因為許多 [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] COM 函式都傳回小於零的 HRESULT 值或傳回不同的成功碼，所以已撰寫 [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] Interop 組件，來保留方法簽章。 所有 [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] Interop 方法的類型都是 `int` 。 在未進行修改且未產生例外狀況的情況下，HRESULT 值會通過 Interop 層。  
   
- 因為 COM 函式會將 HRESULT 傳回給可呼叫它的 Managed 方法，所以呼叫中方法必須檢查 HRESULT，並在必要時擲回例外狀況。  
+  因為 COM 函式會將 HRESULT 傳回給可呼叫它的 Managed 方法，所以呼叫中方法必須檢查 HRESULT，並在必要時擲回例外狀況。  
   
 ## <a name="handling-hresults-returned-to-managed-code-from-com"></a>處理從 COM 傳回給 Managed 程式碼的 HRESULT  
  當您透過 Managed 程式碼呼叫 COM 介面時，請檢查 HRESULT 值，並視需要擲回例外狀況。 <xref:Microsoft.VisualStudio.ErrorHandler> 類別包含會擲回 COM 例外狀況的 <xref:Microsoft.VisualStudio.ErrorHandler.ThrowOnFailure%2A> 方法 (視傳遞給它的 HRESULT 值而定)。  

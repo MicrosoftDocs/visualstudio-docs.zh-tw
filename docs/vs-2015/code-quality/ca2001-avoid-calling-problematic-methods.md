@@ -20,15 +20,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 8fff5bf48b16efb7d6347aba09bfca02a229cffe
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ddc96857cf0c3c54472eded5545ca0f328eba213
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49306211"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49902785"
 ---
 # <a name="ca2001-avoid-calling-problematic-methods"></a>CA2001：避免呼叫有問題的方法
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|AvoidCallingProblematicMethods|

@@ -16,12 +16,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: dc2f4464915a1f251c08f3de5741a82ed9d7efbd
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: ae2f0e571876c336d74c295f2cba4a654a713e93
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498606"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49821422"
 ---
 # <a name="create-an-extension-with-a-menu-command"></a>建立具有功能表命令的擴充功能
 本逐步解說示範如何建立擴充功能會啟動 [記事本] 的功能表命令。  
@@ -118,20 +118,20 @@ ms.locfileid: "39498606"
 ## <a name="next-steps"></a>後續步驟  
  此逐步解說示範了一小部分的用途與 Visual Studio 擴充功能。 以下是一份您可以使用 Visual Studio 擴充功能執行其他 （很簡單） 項目：  
   
-1.  您可以使用簡單的功能表命令的更多項目：  
+1. 您可以使用簡單的功能表命令的更多項目：  
   
-    1.  新增您自己的圖示：[將圖示加入至功能表命令](../extensibility/adding-icons-to-menu-commands.md)  
+   1.  新增您自己的圖示：[將圖示加入至功能表命令](../extensibility/adding-icons-to-menu-commands.md)  
   
-    2.  變更功能表命令文字：[變更功能表命令的文字](../extensibility/changing-the-text-of-a-menu-command.md)  
+   2.  變更功能表命令文字：[變更功能表命令的文字](../extensibility/changing-the-text-of-a-menu-command.md)  
   
-    3.  將功能表捷徑新增至命令：[將鍵盤快速鍵繫結至功能表項目](../extensibility/binding-keyboard-shortcuts-to-menu-items.md)  
+   3.  將功能表捷徑新增至命令：[將鍵盤快速鍵繫結至功能表項目](../extensibility/binding-keyboard-shortcuts-to-menu-items.md)  
   
-2.  新增不同類型的命令、 功能表和工具列：[擴充功能表和命令](../extensibility/extending-menus-and-commands.md)  
+2. 新增不同類型的命令、 功能表和工具列：[擴充功能表和命令](../extensibility/extending-menus-and-commands.md)  
   
-3.  加入工具視窗，並擴充內建的 Visual Studio 工具視窗：[擴充和自訂工具視窗](../extensibility/extending-and-customizing-tool-windows.md)  
+3. 加入工具視窗，並擴充內建的 Visual Studio 工具視窗：[擴充和自訂工具視窗](../extensibility/extending-and-customizing-tool-windows.md)  
   
-4.  加入 IntelliSense、 程式碼的建議，和其他功能，現有的程式碼編輯器：[編輯器和語言服務延伸](../extensibility/extending-the-editor-and-language-services.md)  
+4. 加入 IntelliSense、 程式碼的建議，和其他功能，現有的程式碼編輯器：[編輯器和語言服務延伸](../extensibility/extending-the-editor-and-language-services.md)  
   
-5.  加入您的延伸模組中的選項和 [屬性] 頁面和使用者設定：[擴充屬性和 [屬性] 視窗](../extensibility/extending-properties-and-the-property-window.md)和[擴充使用者設定和 Ooptions](../extensibility/extending-user-settings-and-options.md)  
+5. 加入您的延伸模組中的選項和 [屬性] 頁面和使用者設定：[擴充屬性和 [屬性] 視窗](../extensibility/extending-properties-and-the-property-window.md)和[擴充使用者設定和 Ooptions](../extensibility/extending-user-settings-and-options.md)  
   
- 其他類型的延伸模組需要多一點的工作，例如建立新的專案類型 ([擴充專案](../extensibility/extending-projects.md))，建立新類型的編輯器 ([建立自訂編輯器和設計工具](../extensibility/creating-custom-editors-and-designers.md))，或實作您在獨立的 shell 中的延伸模組： [Visual Studio 獨立模式 shell](../extensibility/visual-studio-isolated-shell.md)
+   其他類型的延伸模組需要多一點的工作，例如建立新的專案類型 ([擴充專案](../extensibility/extending-projects.md))，建立新類型的編輯器 ([建立自訂編輯器和設計工具](../extensibility/creating-custom-editors-and-designers.md))，或實作您在獨立的 shell 中的延伸模組： [Visual Studio 獨立模式 shell](../extensibility/visual-studio-isolated-shell.md)

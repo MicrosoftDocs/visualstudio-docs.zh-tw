@@ -18,30 +18,30 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1be2a91408202ce42d7371154d0201e778381300
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 25a7402a8d0464152e9b1bdd9d2edcdc66824914
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36327251"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295900"
 ---
 # <a name="develop-sharepoint-solutions"></a>開發 SharePoint 方案
   [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 中提供數個 SharePoint 專案類型範本，以用來建立 SharePoint 網站和網站元素。 如需可用的專案類型的清單，請參閱 < [SharePoint 專案和專案項目範本](../sharepoint/sharepoint-project-and-project-item-templates.md)。 以下是 SharePoint 專案的元素和屬性描述。  
   
- 如需 SharePoint 2013 與 SharePoint 增益集的相關資訊，請參閱 [SharePoint 2013](http://msdn.microsoft.com/library/jj162979.aspx) 與 [建置 SharePoint 增益集](http://msdn.microsoft.com/library/office/apps/jj163230%28v=office.15%29.aspx)。  
+ 如需 SharePoint 2013 與 SharePoint 增益集的相關資訊，請參閱 [SharePoint 2013](https://msdn.microsoft.com/library/jj162979.aspx) 與 [建置 SharePoint 增益集](/sharepoint/dev/sp-add-ins/sharepoint-add-ins)。  
   
 ## <a name="elements-of-a-sharepoint-project"></a>SharePoint 專案的項目
- SharePoint 專案下方的節點稱為 *「SharePoint 項目」*(SharePoint item)。 SharePoint 項目也可能包含一個以上的子檔案，稱為*SharePoint 項目檔案*，例如[!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]組態檔、.aspx 表單等等。  
+ SharePoint 專案下方的節點稱為 *「SharePoint 項目」*(SharePoint item)。 SharePoint 項目也可能會包含一個以上的子檔案，稱為 *「SharePoint 項目檔案」*(SharePoint item file)，例如 [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] 組態檔、.aspx 表單等等。  
   
  若不使用已填入專案項目檔案的專案範本來建立專案，您可以使用 [空專案]  範本來建立空白的 SharePoint 專案，然後手動加入專案項目。 SharePoint 專案也可以選擇性地包含一或多個功能檔案 (用於在 SharePoint 中啟用) 和用來散發專案的套件檔案。  
   
 ### <a name="special-nodes"></a>特殊節點
  每個 SharePoint 專案皆包含兩個節點，您無法重新命名、刪除、剪下、複製或從專案拖曳這兩個節點。 以下為這兩個節點：  
   
--   功能    
--   封裝  
+- 功能    
+- 封裝  
   
- 即使專案沒有定義任何功能或套件，這兩個節點仍會出現在所有 SharePoint 專案中。  
+  即使專案沒有定義任何功能或套件，這兩個節點仍會出現在所有 SharePoint 專案中。  
   
 #### <a name="features-node"></a>功能節點
  [功能]  節點包含一或多個 SharePoint 專案功能。 每種功能都是 SharePoint 擴充功能的容器。 將功能部署至 SharePoint 伺服器之後，它可以包含在網站定義中或由 SharePoint 網站上的 SharePoint 系統管理員個別啟用。 如需詳細資訊，請參閱 [使用功能](http://go.microsoft.com/fwlink/?LinkID=147704)。  
@@ -53,7 +53,7 @@ ms.locfileid: "36327251"
  將功能加入 SharePoint 專案時，它會顯示為 [方案總管]  中的節點，並使用預設節點名稱：Feature*x*.feature，其中 *x* 是唯一的編號。 將功能部署至 SharePoint 伺服器之後，SharePoint 系統管理員可以啟動它，以讓 SharePoint 網站的使用者使用。  
   
 #### <a name="package-node"></a>套件節點
- [套件]  節點包含單一檔案，以做為 SharePoint 專案的散發機制。 此檔案，稱為*方案套件*，是。封包為基礎，使用。用於根據 WSP 擴充功能。 方案套件是一種可部署並重複使用的檔案，其中包含套用至 SharePoint 網站而可個別啟用或停用的一組功能、網站定義和組件。 **封裝**節點一定會包含名為 Package.wspdef，檔案[!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]封裝定義檔。 將套件部署到執行 SharePoint 的伺服器之後，SharePoint 系統管理員即可加以安裝並啟用其功能。  
+ [套件]  節點包含單一檔案，以做為 SharePoint 專案的散發機制。 此檔案，稱為*方案套件*，是。封包為基礎，使用。用於根據 WSP 擴充功能。 方案套件是一種可部署並重複使用的檔案，其中包含套用至 SharePoint 網站而可個別啟用或停用的一組功能、網站定義和組件。 同樣地，[套件]  節點一定會包含名為 Package.wspdef 的檔案，其為套件的 [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] 定義檔。 將套件部署到執行 SharePoint 的伺服器之後，SharePoint 系統管理員即可加以安裝並啟用其功能。  
   
  您可以檢視或變更套件的內容，在封裝設計工具中，按兩下 [套件] 節點或開啟其捷徑功能表，然後選擇**開啟**。 如需詳細資訊，請參閱 <<c0> [ 建立 SharePoint 方案套件](../sharepoint/creating-sharepoint-solution-packages.md)。  
   
@@ -72,11 +72,11 @@ ms.locfileid: "36327251"
 |編輯組態|指定要用於專案的部署組態。 如需詳細資訊，請參閱 <<c0> [ 如何： 編輯 SharePoint 部署組態](../sharepoint/how-to-edit-a-sharepoint-deployment-configuration.md)並[部署、 發行和升級 SharePoint 方案套件](../sharepoint/deploying-publishing-and-upgrading-sharepoint-solution-packages.md)。|  
 |啟用 Silverlight 偵錯 (而不是指令碼偵錯)|選取時，會將 Silverlight 偵錯工具附加至偵錯程序。 清除時，會將指令碼偵錯工具附加至偵錯程序。 如需詳細資訊，請參閱 [Silverlight 偵錯概觀](http://go.microsoft.com/fwlink/?LinkId=179826)。|  
 |在套件中包含組件|指定是否要在建置階段封裝專案的組件。|  
-|部署後命令列|指定要在部署 SharePoint 方案之後執行的命令。 此命令列支援任何批次命令，以及 MSBuild 變數的解析。 如需詳細資訊，請參閱 < [How to: Set SharePoint Deployment Commands](../sharepoint/how-to-set-sharepoint-deployment-commands.md)。|  
-|預先部署命令列|指定要在部署 SharePoint 方案之前執行的命令。 此命令列支援任何批次命令，以及 MSBuild 變數的解析。 如需詳細資訊，請參閱 < [How to: Set SharePoint Deployment Commands](../sharepoint/how-to-set-sharepoint-deployment-commands.md)。|  
+|部署後命令列|指定要在部署 SharePoint 方案之後執行的命令。 此命令列支援任何批次命令，以及 MSBuild 變數的解析。 如需詳細資訊，請參閱 [How to: Set SharePoint Deployment Commands](../sharepoint/how-to-set-sharepoint-deployment-commands.md)。|  
+|預先部署命令列|指定要在部署 SharePoint 方案之前執行的命令。 此命令列支援任何批次命令，以及 MSBuild 變數的解析。 如需詳細資訊，請參閱 [How to: Set SharePoint Deployment Commands](../sharepoint/how-to-set-sharepoint-deployment-commands.md)。|  
 |專案檔|包含組建、組態以及其他專案相關資訊之檔案的名稱。|  
 |專案資料夾|專案檔的系統位置。 (唯讀)。|  
-|Sandboxed Solution|指定是否應該將專案部署為 *「沙箱化方案」*(sandboxed solution)，也就是 *使用者建立的方案*。 沙箱化方案不一定值得信任。 **true** 值表示專案會部署為沙箱化方案，而 **false** 值表示專案會部署為陣列方案。 如需詳細資訊，請參閱 < [Sandboxed Solution Considerations](../sharepoint/sandboxed-solution-considerations.md)並[Differences Between Sandboxed and Farm 解決方案](../sharepoint/differences-between-sandboxed-and-farm-solutions.md)。|  
+|Sandboxed Solution|指定是否應該將專案部署為 *「沙箱化方案」*(sandboxed solution)，也就是 *使用者建立的方案*。 沙箱化方案不一定值得信任。 **true** 值表示專案會部署為沙箱化方案，而 **false** 值表示專案會部署為陣列方案。 如需詳細資訊，請參閱 [Sandboxed Solution Considerations](../sharepoint/sandboxed-solution-considerations.md) 與 [Differences Between Sandboxed and Farm Solutions](../sharepoint/differences-between-sandboxed-and-farm-solutions.md)。|  
 |網站 URL|指定這個專案的目標網站 [!INCLUDE[TLA2#tla_url](../sharepoint/includes/tla2sharptla-url-md.md)]。|  
 |啟動項目|指定要執行之專案中的第一個項目。|  
   
@@ -86,21 +86,21 @@ ms.locfileid: "36327251"
   
 |屬性名稱|描述|  
 |-------------------|-----------------|  
-|部署衝突解決|指定在部署專案項目時，如果其屬性與伺服器上已經存在的項目相同，所應採取的動作。 如需詳細資訊，請參閱 <<c0> [ 疑難排解 SharePoint 封裝和部署](../sharepoint/troubleshooting-sharepoint-packaging-and-deployment.md)。|  
-|功能屬性|指定一組值 (儲存為索引鍵/值組)，當部署至 SharePoint 時，這些值會隨附在功能當中。 部署功能之後，您可以在程式碼中存取屬性值。 如需詳細資訊，請參閱 < [Providing Packaging and Deployment Information in 專案項目](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)。|  
-|功能接收器|提供當專案項目所含的功能發生特定事件時，要執行的程式碼。 如需詳細資訊，請參閱 < [Providing Packaging and Deployment Information in 專案項目](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)。|  
+|部署衝突解決|指定在部署專案項目時，如果其屬性與伺服器上已經存在的項目相同，所應採取的動作。 如需詳細資訊，請參閱 [Troubleshooting SharePoint Packaging and Deployment](../sharepoint/troubleshooting-sharepoint-packaging-and-deployment.md)。|  
+|功能屬性|指定一組值 (儲存為索引鍵/值組)，當部署至 SharePoint 時，這些值會隨附在功能當中。 部署功能之後，您可以在程式碼中存取屬性值。 如需詳細資訊，請參閱 [Providing Packaging and Deployment Information in Project Items](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)。|  
+|功能接收器|提供當專案項目所含的功能發生特定事件時，要執行的程式碼。 如需詳細資訊，請參閱 [Providing Packaging and Deployment Information in Project Items](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)。|  
 |資料夾名稱|SharePoint 專案項目資料夾的名稱。|  
-|專案輸出參考|指定相依性，例如您的專案項目需要執行的組件。 如需詳細資訊，請參閱 < [Providing Packaging and Deployment Information in 專案項目](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)。|  
-|安全控制項項目|指定可讓不受信任的使用者編輯的控制項。 如需詳細資訊，請參閱 < [Providing Packaging and Deployment Information in 專案項目](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)。|  
+|專案輸出參考|指定相依性，例如您的專案項目需要執行的組件。 如需詳細資訊，請參閱 [Providing Packaging and Deployment Information in Project Items](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)。|  
+|安全控制項項目|指定可讓不受信任的使用者編輯的控制項。 如需詳細資訊，請參閱 [Providing Packaging and Deployment Information in Project Items](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)。|  
   
 ### <a name="project-item-file-properties"></a>專案項目檔案屬性
   
 |屬性名稱|描述|  
 |-------------------|-----------------|  
-|建置動作|指定檔案與組建和部署處理序相關聯的方式。 如需詳細資訊，請參閱 [檔案屬性](http://msdn.microsoft.com/library/0c6xyb66(v=vs.100).aspx)。|  
-|複製到輸出目錄|指定是否要將原始程式檔複製到輸出目錄。 可為下列其中一個值：<br /><br /> -   *不要複製*<br />-   *一律複製*<br />-   *有更新時才複製*<br /><br /> 如需詳細資訊，請參閱 [檔案屬性](http://msdn.microsoft.com/library/0c6xyb66(v=vs.100).aspx)。|  
-|自訂工具|指定工具的名稱 (如果有的話)，以在設計階段轉換檔案，並將轉換的輸出放入另一個檔案。 例如，資料集 (.[!INCLUDE[TLA2#tla_xsd](../sharepoint/includes/tla2sharptla-xsd-md.md)]) 檔案具有預設的自訂工具。 如需詳細資訊，請參閱 [檔案屬性](http://msdn.microsoft.com/library/0c6xyb66(v=vs.100).aspx)。|  
-|自訂工具命名空間|會將自訂工具的輸出複製到其中的命名空間。 如需詳細資訊，請參閱 [檔案屬性](http://msdn.microsoft.com/library/0c6xyb66(v=vs.100).aspx)。|  
+|建置動作|指定檔案與組建和部署處理序相關聯的方式。 如需詳細資訊，請參閱 [檔案屬性](/previous-versions/visualstudio/visual-studio-2010/0c6xyb66\(v\=vs.100\))。|  
+|複製到輸出目錄|指定是否要將原始程式檔複製到輸出目錄。 可為下列其中一個值：<br /><br /> -   *不要複製*<br />-   *一律複製*<br />-   *有更新時才複製*<br /><br /> 如需詳細資訊，請參閱 [檔案屬性](/previous-versions/visualstudio/visual-studio-2010/0c6xyb66\(v\=vs.100\))。|  
+|自訂工具|指定工具的名稱 (如果有的話)，以在設計階段轉換檔案，並將轉換的輸出放入另一個檔案。 例如，資料集 (.[!INCLUDE[TLA2#tla_xsd](../sharepoint/includes/tla2sharptla-xsd-md.md)]) 檔案具有預設的自訂工具。 如需詳細資訊，請參閱 [檔案屬性](/previous-versions/visualstudio/visual-studio-2010/0c6xyb66\(v\=vs.100\))。|  
+|自訂工具命名空間|會將自訂工具的輸出複製到其中的命名空間。 如需詳細資訊，請參閱 [檔案屬性](/previous-versions/visualstudio/visual-studio-2010/0c6xyb66\(v\=vs.100\))。|  
 |部署位置|檔案在 SharePoint 伺服器中的完整路徑。 這個路徑是由部署根和部署路徑的子屬性構成。|  
 |部署路徑|在 SharePoint 伺服器檔案，例如 Workflow1 檔案的相對路徑\\。 將 *Deployment Path* 值串連至 *Deployment Root* 值的結尾，即可建立檔案的完整路徑。<br /><br /> 選取的值*RootFile* for*部署類型*屬性變更*Deployment Root*屬性設\<SharePointRoot >\\，產生的完整路徑\<SharePointRoot > \Workflow1\\。 如需詳細資訊，請參閱 <<c0> [ 封裝和部署 SharePoint 方案](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)。|  
 |Deployment Root|字串。 在 SharePoint 伺服器部署檔案的根資料夾。 例如， \<SharePointRoot > \Template\Features\\\<FeatureName >\\。<br /><br /> *Deployment Root* 屬性值是依據 *Deployment Type* 設定而定。|  
@@ -112,7 +112,7 @@ ms.locfileid: "36327251"
   
 |標題|描述|  
 |-----------|-----------------|  
-|[SharePoint 專案與專案項目範本](../sharepoint/sharepoint-project-and-project-item-templates.md)|說明 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 中提供的 SharePoint 專案和專案項目範本。|  
+|[SharePoint 專案與專案項目範本](../sharepoint/sharepoint-project-and-project-item-templates.md)|說明 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]中提供的 SharePoint 專案和專案項目範本。|  
 |[如何：將項目新增至 SharePoint 專案](../sharepoint/how-to-add-items-to-a-sharepoint-project.md)|說明如何將新的或現有的項目加入 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint 專案。|  
 |[逐步解說： 建立適用於 SharePoint 的網站資料行、 內容類型和清單](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md)|逐步引導您建立自訂欄位、內容類型、清單定義和清單執行個體。|  
 |[如何： 建立事件接收器](../sharepoint/how-to-create-an-event-receiver.md)|描述如何加入專案中建立事件接收器[逐步解說： 建立 SharePoint 網站資料行、 內容類型和清單](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md)。|  
@@ -128,7 +128,7 @@ ms.locfileid: "36327251"
 |[提供專案項目中的封裝和部署資訊](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)|說明如何使用專案項目屬性來提供專案的封裝和部署資訊，例如安全的控制項項目、專案輸出參考以及功能屬性等資訊。|  
 |[如何： 新增與移除對應的資料夾](../sharepoint/how-to-add-and-remove-mapped-folders.md)|說明如何將對應的資料夾加入專案，以提供更容易存取 SharePoint 資源。|  
 |[沙箱化方案考量](../sharepoint/sandboxed-solution-considerations.md)|說明與沙箱化方案相關聯的問題。|  
-|[SharePoint 方案的安全性](../sharepoint/security-for-sharepoint-solutions.md)|說明在 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 中開發 SharePoint 方案的安全性考量。|  
+|[SharePoint 方案的安全性](../sharepoint/security-for-sharepoint-solutions.md)|說明在 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]中開發 SharePoint 方案的安全性考量。|  
 |[URL 選擇器對話方塊&#40;Visual Studio 中的 SharePoint 程式開發&#41;](../sharepoint/url-picker-dialog-box-sharepoint-development-in-visual-studio.md)|說明可用來在您的專案或本機 SharePoint 伺服器上新增資源路徑參考的對話方塊。|  
   
 ## <a name="see-also"></a>另請參閱

@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e5197ba9e1a2fda9cb6a41cfe903bd772db53331
-ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
+ms.openlocfilehash: adb0180d892f34374ce58db3a4830fb7e5c21f10
+ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42626776"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "51220979"
 ---
 # <a name="run-profiling-tools-with-or-without-the-debugger"></a>使用或不使用偵錯工具來執行分析工具
 Visual Studio 現在提供各種效能工具選擇，其中有些效能工具無論是否含偵錯工具皆可執行 (例如：[CPU 使用量] 和 [記憶體使用量])。 非偵錯工具效能工具適用於針對「版本」設定執行，而偵錯工具整合工具適用於針對「偵錯」設定執行。  
@@ -42,60 +42,60 @@ Visual Studio 現在提供各種效能工具選擇，其中有些效能工具無
 ##  <a name="BKMK_Quick_start__Collect_diagnostic_data"></a>偵錯時收集程式碼剖析資料  
  下列章節說明本機偵錯。 您可以在稍後的各節裡，了解在裝置上偵錯或遠端偵錯。  
   
-1.  開啟您想要偵錯的專案，然後按一下[偵錯] > [開始偵錯] (或工具列上的 [開始] 或 **F5**)。  
+1. 開啟您想要偵錯的專案，然後按一下[偵錯] > [開始偵錯] (或工具列上的 [開始] 或 **F5**)。  
   
-2.  [偵錯工具]  視窗會自動出現，除非您將其關閉。 如需再次顯示視窗，請按一下 [偵錯] > [Windows] > [顯示診斷工具]。  
+2. [偵錯工具]  視窗會自動出現，除非您將其關閉。 如需再次顯示視窗，請按一下 [偵錯] > [Windows] > [顯示診斷工具]。  
   
-3.  執行您要收集資料的案例。  
+3. 執行您要收集資料的案例。  
   
-     在執行工作階段時，您可以看到事件、程序記憶體和 CPU 使用量的相關資訊。  
+    在執行工作階段時，您可以看到事件、程序記憶體和 CPU 使用量的相關資訊。  
   
-     下圖顯示 Visual Studio 2015 Update 1 中的 [診斷工具]  視窗：  
+    下圖顯示 Visual Studio 2015 Update 1 中的 [診斷工具]  視窗：  
   
-     ![DiagnosticTools&#45;Update1](../profiling/media/diagnostictools-update1.png "DiagnosticTools-Update1")  
+    ![DiagnosticTools&#45;Update1](../profiling/media/diagnostictools-update1.png "DiagnosticTools-Update1")  
   
-4.  您可以透過工具列上的 [選取工具] 設定來選擇要查看 [記憶體使用量] 或 [CPU 使用量] (或兩者)。 若正在執行 Visual Studio Enterprise，您可以在 [工具] > [選項] > [IntelliTrace] 中啟用或停用 IntelliTrace。  
+4. 您可以透過工具列上的 [選取工具] 設定來選擇要查看 [記憶體使用量] 或 [CPU 使用量] (或兩者)。 若正在執行 Visual Studio Enterprise，您可以在 [工具] > [選項] > [IntelliTrace] 中啟用或停用 IntelliTrace。  
   
-5.  在您停止偵錯時，診斷工作階段就會結束。  
+5. 在您停止偵錯時，診斷工作階段就會結束。  
   
- 在 Visual Studio 2015 Update 1 中，[診斷工具]  視窗可讓您更輕鬆地專注於感興趣的事件。   事件名稱現在會與分類前置詞 (**軌跡**、**程式輸出**、**中斷點**、**檔案**等等) 一起顯示，讓您能夠快速掃視指定分類的清單，或略過不在意的分類。  
+   在 Visual Studio 2015 Update 1 中，[診斷工具]  視窗可讓您更輕鬆地專注於感興趣的事件。   事件名稱現在會與分類前置詞 (**軌跡**、**程式輸出**、**中斷點**、**檔案**等等) 一起顯示，讓您能夠快速掃視指定分類的清單，或略過不在意的分類。  
   
- 這個視窗現在會有一個搜尋方塊，讓您可以找到事件清單中任何位置的特定字串。 例如，下圖顯示搜尋字串 "install" 的結果，其符合四個事件：  
+   這個視窗現在會有一個搜尋方塊，讓您可以找到事件清單中任何位置的特定字串。 例如，下圖顯示搜尋字串 "install" 的結果，其符合四個事件：  
   
- ![DiagnosticsEventSearch](../profiling/media/diagnosticseventsearch.png "DiagnosticsEventSearch")  
+   ![DiagnosticsEventSearch](../profiling/media/diagnosticseventsearch.png "DiagnosticsEventSearch")  
   
- 您也可以在視窗中篩選事件，來進行檢視或隱藏。 在 [篩選]  下拉式清單中，您可以核取或取消核取特定類別的事件。 類別名稱與前置詞名稱相同。  
+   您也可以在視窗中篩選事件，來進行檢視或隱藏。 在 [篩選]  下拉式清單中，您可以核取或取消核取特定類別的事件。 類別名稱與前置詞名稱相同。  
   
- ![DiagnosticEventFilter](../profiling/media/diagnosticeventfilter.png "DiagnosticEventFilter")  
+   ![DiagnosticEventFilter](../profiling/media/diagnosticeventfilter.png "DiagnosticEventFilter")  
   
- 如需詳細資訊，請參閱 [搜尋和篩選診斷工具視窗的事件索引標籤](http://blogs.msdn.com/b/visualstudioalm/archive/2015/11/12/searching-and-filtering-the-events-tab-of-the-diagnostic-tools-window.aspx)。  
+   如需詳細資訊，請參閱 [搜尋和篩選診斷工具視窗的事件索引標籤](https://blogs.msdn.microsoft.com/devops/2015/11/12/searching-and-filtering-the-events-tab-of-the-diagnostic-tools-window/)。  
   
 ## <a name="collect-profiling-data-without-debugging"></a>收集程式碼剖析資料但不偵錯  
  某些程式碼剖析工具需要系統管理員權限才能執行。 您可以系統管理員身分啟動 Visual Studio，或是選擇在開始診斷工作階段時，以系統管理員身分執行這些工具。  
   
-1.  在 Visual Studio 中開啟專案。  
+1. 在 Visual Studio 中開啟專案。  
   
-2.  在 [偵錯] 功能表上選擇 [效能分析工具] (快速鍵：**Alt**+**F2**)。  
+2. 在 [偵錯] 功能表上選擇 [效能分析工具] (快速鍵：**Alt**+**F2**)。  
   
-3.  在診斷啟動頁面上，選擇要在工作階段中執行的一項或多項工具。 只有適用於該專案類型、作業系統與程式設計語言的工具才會顯示。 當您選擇一項診斷工具時，將會停用無法在相同診斷工作階段中執行的工具選項。 如果是 C# UWP 應用程式，您的選擇會看起來如下：  
+3. 在診斷啟動頁面上，選擇要在工作階段中執行的一項或多項工具。 只有適用於該專案類型、作業系統與程式設計語言的工具才會顯示。 當您選擇一項診斷工具時，將會停用無法在相同診斷工作階段中執行的工具選項。 如果是 C# UWP 應用程式，您的選擇會看起來如下：  
   
-     ![選取診斷工具](../profiling/media/diag_selecttool.png "DIAG_SelectTool")  
+    ![選取診斷工具](../profiling/media/diag_selecttool.png "DIAG_SelectTool")  
   
-4.  若要開始診斷工作階段，請按一下 [開始]。  
+4. 若要開始診斷工作階段，請按一下 [開始]。  
   
-5.  執行您要為其收集資料的情節。  
+5. 執行您要為其收集資料的情節。  
   
-     執行工作階段期間，某些工具在診斷工具啟動頁面上會顯示即時資料圖表。  
+    執行工作階段期間，某些工具在診斷工具啟動頁面上會顯示即時資料圖表。  
   
-     ![在 [效能及診斷] 頁面上收集資料](../profiling/media/pdhub_collectdata.png "PDHUB_CollectData")  
+    ![在 [效能及診斷] 頁面上收集資料](../profiling/media/pdhub_collectdata.png "PDHUB_CollectData")  
   
-6.  若要結束診斷工作階段，請按一下 [停止收集]。  
+6. 若要結束診斷工作階段，請按一下 [停止收集]。  
   
- 當您停止收集診斷工作階段中的資料時，系統會分析資料並在 [診斷] 頁面中顯示報告。  
+   當您停止收集診斷工作階段中的資料時，系統會分析資料並在 [診斷] 頁面中顯示報告。  
   
- 此外，您也可以從診斷工具啟動頁面的最近開啟清單中，開啟已儲存的 .diagnostic 工作階段檔案。  
+   此外，您也可以從診斷工具啟動頁面的最近開啟清單中，開啟已儲存的 .diagnostic 工作階段檔案。  
   
- ![開啟已儲存的診斷工作階段檔案](../profiling/media/pdhub_openexistingdiagsession.png "PDHUB_OpenExistingDiagSession")  
+   ![開啟已儲存的診斷工作階段檔案](../profiling/media/pdhub_openexistingdiagsession.png "PDHUB_OpenExistingDiagSession")  
   
 ## <a name="the-profiling-report"></a>程式碼剖析報表  
  ![診斷工具報表](../profiling/media/diag_report.png "DIAG_Report")  
@@ -126,18 +126,18 @@ Visual Studio 現在提供各種效能工具選擇，其中有些效能工具無
  在遠端電腦或平板電腦上執行診斷工作階段需要安裝 Visual Studio 遠端工具，並使其於遠端目標上執行。 若為傳統型應用程式，請參閱[遠端偵錯](../debugger/remote-debugging.md)。  若為 UWP 應用程式，請參閱[在遠端電腦上執行 UWP 應用程式](../debugger/run-windows-store-apps-on-a-remote-machine.md)。  
   
 ## <a name="blog-posts-and-msdn-articles-from-the-diagnostics-development-team"></a>診斷開發小組的部落格文章和 MSDN 文章  
- [MSDN Magazine：在 Visual Studio 2015 偵錯同時分析效能 (英文)](https://msdn.microsoft.com/en-us/magazine/dn973013.aspx)  
+ [MSDN Magazine：在 Visual Studio 2015 偵錯同時分析效能 (英文)](https://msdn.microsoft.com/magazine/dn973013.aspx)
   
- [MSDN Magazine：使用 IntelliTrace 更快速地診斷問題 (英文)](https://msdn.microsoft.com/en-us/magazine/dn973014.aspx)  
+ [MSDN Magazine：使用 IntelliTrace 更快速地診斷問題 (英文)](https://msdn.microsoft.com/magazine/dn973014.aspx)
   
- [部落格文章：在 Visual Studio 2015 中使用記憶體使用量工具診斷事件處理常式流失 (英文)](http://blogs.msdn.com/b/visualstudioalm/archive/2015/04/29/diagnosing-event-handler-leaks-with-the-memory-usage-tool-in-visual-studio-2015.aspx)  
+ [部落格文章：在 Visual Studio 2015 中使用記憶體使用量工具診斷事件處理常式流失 (英文)](https://blogs.msdn.microsoft.com/devops/2015/04/29/diagnosing-event-handler-leaks-with-the-memory-usage-tool-in-visual-studio-2015/)
   
- [影片：Microsoft Visual Studio Ultimate 2015 中的 IntelliTrace 歷程偵錯 (英文)](https://channel9.msdn.com/Events/Ignite/2015/BRK3716)  
+ [影片：Microsoft Visual Studio Ultimate 2015 中的 IntelliTrace 歷程偵錯 (英文)](https://channel9.msdn.com/Events/Ignite/2015/BRK3716)
   
- [影片：使用 Visual Studio 2015 對效能問題偵錯 (英文)](https://channel9.msdn.com/Events/Build/2015/3-731)  
+ [影片：使用 Visual Studio 2015 對效能問題偵錯 (英文)](https://channel9.msdn.com/Events/Build/2015/3-731)
   
- [效能提示：使用 Visual Studio 偵錯，效能資訊一目了然 (英文)](http://blogs.msdn.com/b/visualstudioalm/archive/2014/08/18/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio.aspx)  
+ [效能提示：使用 Visual Studio 偵錯，效能資訊一目了然 (英文)](https://blogs.msdn.microsoft.com/devops/2014/08/18/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio/)
   
- [Visual Studio 2015 中的診斷工具偵錯工具視窗 (英文)](http://blogs.msdn.com/b/visualstudioalm/archive/2015/01/16/diagnostic-tools-debugger-window-in-visual-studio-2015.aspx)  
+ [Visual Studio 2015 中的診斷工具偵錯工具視窗 (英文)](https://blogs.msdn.microsoft.com/devops/2015/01/16/diagnostic-tools-debugger-window-in-visual-studio-2015/)
   
- [Visual Studio Enterprise 2015 中的 IntelliTrace (英文)](http://blogs.msdn.com/b/visualstudioalm/archive/2015/01/16/intellitrace-in-visual-studio-ultimate-2015.aspx)
+ [Visual Studio Enterprise 2015 中的 IntelliTrace (英文)](https://blogs.msdn.microsoft.com/devops/2015/01/16/intellitrace-in-visual-studio-ultimate-2015/)

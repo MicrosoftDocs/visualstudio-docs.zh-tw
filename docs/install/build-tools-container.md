@@ -12,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 42bf1427e71c21fecb0cd3822469b143b9d42df5
-ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
+ms.openlocfilehash: 08026b744cc6b71e31179666c5f85102a4093843
+ms.sourcegitcommit: 9571742f4a808c75b1034aa72fc24b54bc50692e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "43138647"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49411010"
 ---
 # <a name="install-build-tools-into-a-container"></a>將 Build Tools 安裝至容器
 
@@ -57,7 +57,7 @@ Visual Studio Build Tools (及更大範圍的 Visual Studio) 需要許多磁碟�
 
 **在 Windows 10 上**：
 
-1. 在系統匣中，[以滑鼠右鍵按一下 Docker for Windows 圖示](https://docs.docker.com/docker-for-windows/#docker-settings)，然後按一下 [設定...]。
+1. 在系統匣中，[以滑鼠右鍵按一下適用於 Windows 的 Docker 圖示](https://docs.docker.com/docker-for-windows/#docker-settings) \(英文\)，然後按一下 [設定]。
 2. [按一下 [精靈]](https://docs.docker.com/docker-for-windows/#docker-daemon) 區段。
 3. [將 [基本]](https://docs.docker.com/docker-for-windows/#edit-the-daemon-configuration-file) 按鈕切換至 [進階]。
 4. 新增下列 JSON 陣列屬性，以將磁碟空間增加到 120 GB (讓 Build Tools 有足夠的成長空間)。

@@ -29,21 +29,21 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 219ffa4a7a9c7d32348a262ea49c6f66d20e1c7f
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: b169242b9828f47f1ecfb87ebf02a9f86234699f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35671388"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49836992"
 ---
 # <a name="visual-studio-tools-for-office-runtime-overview"></a>Visual Studio Tools for Office runtime 概觀
   若要執行使用 Visual Studio 中的 Microsoft Office developer tools 所建立的解決方案，必須在使用者電腦上安裝 Visual Studio 2010 Tools for Office 執行階段。 如需詳細資訊，請參閱 <<c0> [ 如何： 安裝 Visual Studio Tools for Office runtime 可轉散發套件](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md)。 Visual Studio 2010 Tools for Office 執行階段是由兩個主要元件所組成：  
   
--   Office Extensions for .NET Framework。 這些元件是 Managed 組件，可提供您的方案與 Microsoft Office 應用程式之間的通訊層。 如需詳細資訊，請參閱 <<c0> [ 了解適用於.NET Framework 的 Office 擴充功能](#officeextensions)。  
+- Office Extensions for .NET Framework。 這些元件是 Managed 組件，可提供您的方案與 Microsoft Office 應用程式之間的通訊層。 如需詳細資訊，請參閱 <<c0> [ 了解適用於.NET Framework 的 Office 擴充功能](#officeextensions)。  
   
--   Office 方案載入器。 這個元件是一組 Unmanaged DLL，Office 應用程式會使用這組 DLL 來載入執行階段和您的方案。 如需詳細資訊，請參閱 <<c0> [ 了解 Office 方案載入器](#UnmanagedLoader)。  
+- Office 方案載入器。 這個元件是一組 Unmanaged DLL，Office 應用程式會使用這組 DLL 來載入執行階段和您的方案。 如需詳細資訊，請參閱 <<c0> [ 了解 Office 方案載入器](#UnmanagedLoader)。  
   
- 這個執行階段可以用數種不同的方式安裝。 所安裝的執行階段元件會因進行執行階段安裝時的電腦組態而異。 如需詳細資訊，請參閱 < [Visual Studio Tools for Office runtime 安裝案例](../vsto/visual-studio-tools-for-office-runtime-installation-scenarios.md)。  
+  這個執行階段可以用數種不同的方式安裝。 所安裝的執行階段元件會因進行執行階段安裝時的電腦組態而異。 如需詳細資訊，請參閱 < [Visual Studio Tools for Office runtime 安裝案例](../vsto/visual-studio-tools-for-office-runtime-installation-scenarios.md)。  
   
 ##  <a name="officeextensions"></a> 了解適用於.NET Framework 的 Office 擴充功能  
  Visual Studio 2010 Tools for Office runtime 包含 Office 擴充功能適用於.NET Framework 3.5，[!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]和更新版本。 以 .NET Framework 的每個版本為目標的方案會使用該版本的適當擴充功能。  
@@ -65,17 +65,17 @@ ms.locfileid: "35671388"
   
  根據預設，當您建立以 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 或更新版本為目標的 Office 專案時，不會啟用類型等價功能。 如果您要啟用此項功能，請將專案中下列任一組件參考的 [ **內嵌 Interop 類型** ] 屬性設為 [ **True**]：  
   
--   Microsoft.Office.Tools.dll  
+- Microsoft.Office.Tools.dll  
   
--   Microsoft.Office.Tools.Common.dll  
+- Microsoft.Office.Tools.Common.dll  
   
--   Microsoft.Office.Tools.Excel.dll  
+- Microsoft.Office.Tools.Excel.dll  
   
--   Microsoft.Office.Tools.Outlook.dll  
+- Microsoft.Office.Tools.Outlook.dll  
   
--   Microsoft.Office.Tools.Word.dll  
+- Microsoft.Office.Tools.Word.dll  
   
- 進行此項變更後，當您建置專案時，專案使用之所有執行階段類型的類型資訊都會內嵌至方案組件中。 在執行階段的解決方案會使用內嵌的類型資訊，而不是參考的組件中的類型資訊。  
+  進行此項變更後，當您建置專案時，專案使用之所有執行階段類型的類型資訊都會內嵌至方案組件中。 在執行階段的解決方案會使用內嵌的類型資訊，而不是參考的組件中的類型資訊。  
   
 ##  <a name="UnmanagedLoader"></a> 了解 Office 方案載入器  
  Visual Studio Tools for Office Runtime 包含 Office 應用程式用來載入執行階段和 Office 方案的數個 Unmanaged DLL。 雖然您應該永遠都不需要直接使用這些 DLL，但是知道這些 DLL 的用途有助於深入了解 Office 方案的架構。  
@@ -90,17 +90,17 @@ ms.locfileid: "35671388"
 ### <a name="vstoloaderdll"></a>VSTOLoader.dll  
  在後*VSTOEE.dll*載入適當版本的[!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]， *VSTOLoader.dll*執行大部分的工作，才能載入方案組件。 *VSTOLoader.dll*達成幾件事：  
   
--   為每個方案組件建立應用程式定義域。  
+- 為每個方案組件建立應用程式定義域。  
   
--   執行一組安全性檢查，確認方案組件具有執行權限。  
+- 執行一組安全性檢查，確認方案組件具有執行權限。  
   
--   載入方案所需的 Office Extensions for .NET Framework 版本。  
+- 載入方案所需的 Office Extensions for .NET Framework 版本。  
   
- *VSTOLoader.dll*也會執行 VSTO 增益集特有的幾件事：  
+  *VSTOLoader.dll*也會執行 VSTO 增益集特有的幾件事：  
   
--   實作 <xref:Extensibility.IDTExtensibility2> 介面。 <xref:Extensibility.IDTExtensibility2> 是所有 Microsoft Office 應用程式之 VSTO 增益集都必須實作的 COM 介面。 這個介面定義了應用程式要與 VSTO 增益集通訊時，所呼叫的方法。  
+- 實作 <xref:Extensibility.IDTExtensibility2> 介面。 <xref:Extensibility.IDTExtensibility2> 是所有 Microsoft Office 應用程式之 VSTO 增益集都必須實作的 COM 介面。 這個介面定義了應用程式要與 VSTO 增益集通訊時，所呼叫的方法。  
   
--   它會實作 IManagedAddin 介面。 Office 應用程式會使用這個介面協助載入 VSTO 增益集。如需詳細資訊，請參閱 < [IManagedAddin 介面](../vsto/imanagedaddin-interface.md)。  
+- 它會實作 IManagedAddin 介面。 Office 應用程式會使用這個介面協助載入 VSTO 增益集。如需詳細資訊，請參閱 < [IManagedAddin 介面](../vsto/imanagedaddin-interface.md)。  
   
 ## <a name="understand-the-32-bit-and-64-bit-versions-of-the-runtime"></a>了解的 32 位元和 64 位元版本的執行階段  
  有個別的 64 位元和 32 位元版本的 Visual Studio 2010 Tools for Office 執行階段。 這些執行階段版本可用於執行 64 位元和 32 位元版本 Office 的方案。 下表顯示 Windows 與 Office 的每一種組合所需的執行階段版本。  
@@ -123,7 +123,7 @@ ms.locfileid: "35671388"
  [在 Visual Studio Tools for Office runtime 的組件](../vsto/assemblies-in-the-visual-studio-tools-for-office-runtime.md)   
  [在 Visual Studio 中的 Office 方案的架構](../vsto/architecture-of-office-solutions-in-visual-studio.md)   
  [文件層級自訂的架構](../vsto/architecture-of-document-level-customizations.md)   
- [VSTO 增益集的架構](../vsto/architecture-of-vsto-add-ins.md)   
+ [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md)   
  [如何： 在 Visual Studio 中建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)   
  [升級和移轉 Office 方案](../vsto/upgrading-and-migrating-office-solutions.md)  
   

@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 94b1b46ce7d2843c733e1baf13f12672c98a3989
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: 25b332fb822524f5fcab5e06ab97bfe2d6af8529
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44321186"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49851604"
 ---
 # <a name="how-to-create-a-diagnostic-data-adapter"></a>如何：建立診斷資料配接器
 
@@ -33,7 +33,7 @@ ms.locfileid: "44321186"
  以下是您在建立診斷資料配接器時可以使用之關鍵事件的部分清單。 如需診斷資料配接器事件的完整清單，請參閱抽象 <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionEvents> 類別。
 
 |Event - 事件|描述|
-|-----------|-----------------|
+|-|-----------------|
 |<xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionEvents.SessionStart>|啟動測試回合|
 |<xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionEvents.SessionEnd>|結束測試回合|
 |<xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionEvents.TestCaseStart>|啟動測試回合中的每個測試|
@@ -52,78 +52,78 @@ ms.locfileid: "44321186"
 
 ### <a name="to-create-and-install-a-diagnostic-data-adapter"></a>若要建立和安裝診斷資料配接器
 
-1.  建立新的類別庫。
+1. 建立新的類別庫。
 
-    1.  在 [檔案] 功能表上選擇 [新增]，然後指向 [新增專案]。
+   1.  在 [檔案] 功能表上選擇 [新增]，然後指向 [新增專案]。
 
-    2.  從 [專案類型] 選取要使用的語言。
+   2.  從 [專案類型] 選取要使用的語言。
 
-    3.  從 [Visual Studio 安裝的範本] 中選取 [類別庫]。
+   3.  從 [Visual Studio 安裝的範本] 中選取 [類別庫]。
 
-    4.  輸入診斷資料配接器的名稱。
+   4.  輸入診斷資料配接器的名稱。
 
-    5.  選擇 [確定] 。
+   5.  選擇 [確定] 。
 
-2.  新增組件 **Microsoft.VisualStudio.QualityTools.ExecutionCommon**。
+2. 新增組件 **Microsoft.VisualStudio.QualityTools.ExecutionCommon**。
 
-    1.  在 [方案總管] 中，以滑鼠右鍵按一下 [參考]，然後選擇 [新增參考] 命令。
+   1.  在 [方案總管] 中，以滑鼠右鍵按一下 [參考]，然後選擇 [新增參考] 命令。
 
-    2.  選擇 [.NET] 並尋找 **Microsoft.VisualStudio.QualityTools.ExecutionCommon.dll**。
+   2.  選擇 [.NET] 並尋找 **Microsoft.VisualStudio.QualityTools.ExecutionCommon.dll**。
 
-    3.  選擇 [確定] 。
+   3.  選擇 [確定] 。
 
-3.  新增組件 **Microsoft.VisualStudio.QualityTools.Common**。
+3. 新增組件 **Microsoft.VisualStudio.QualityTools.Common**。
 
-    1.  在 [方案總管] 中，以滑鼠右鍵按一下 [參考]，然後選取 [新增參考] 命令。
+   1.  在 [方案總管] 中，以滑鼠右鍵按一下 [參考]，然後選取 [新增參考] 命令。
 
-    2.  選擇 [/.NET]，尋找 **Microsoft.VisualStudio.QualityTools.Common.dll**。
+   2.  選擇 [/.NET]，尋找 **Microsoft.VisualStudio.QualityTools.Common.dll**。
 
-    3.  選擇 [確定] 。
+   3.  選擇 [確定] 。
 
-4.  將下列 `using` 陳述式加入至類別檔：
+4. 將下列 `using` 陳述式加入至類別檔：
 
-    ```csharp
-    using Microsoft.VisualStudio.TestTools.Common;
-    using Microsoft.VisualStudio.TestTools.Execution;
-    using System.Linq;
-    using System.Text;
-    using System.Xml;
-    using System;
-    ```
+   ```csharp
+   using Microsoft.VisualStudio.TestTools.Common;
+   using Microsoft.VisualStudio.TestTools.Execution;
+   using System.Linq;
+   using System.Text;
+   using System.Xml;
+   using System;
+   ```
 
-5.  將 <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorTypeUriAttribute> 新增至您診斷資料配接器的類別，以將其識別為診斷資料配接器，並且將 **Company**、**Product** 和 **Version** 取代為診斷資料配接器的適當資訊：
+5. 將 <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorTypeUriAttribute> 新增至您診斷資料配接器的類別，以將其識別為診斷資料配接器，並且將 **Company**、**Product** 和 **Version** 取代為診斷資料配接器的適當資訊：
 
-    ```csharp
-    [DataCollectorTypeUri("datacollector://Company/Product/Version")]
-    ```
+   ```csharp
+   [DataCollectorTypeUri("datacollector://Company/Product/Version")]
+   ```
 
-6.  將 <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorFriendlyNameAttribute> 屬性加入至類別，而將參數取代為診斷資料配接器的適當資訊：
+6. 將 <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorFriendlyNameAttribute> 屬性加入至類別，而將參數取代為診斷資料配接器的適當資訊：
 
-    ```csharp
-    [DataCollectorFriendlyName("Collect Log Files", false)]
-    ```
+   ```csharp
+   [DataCollectorFriendlyName("Collect Log Files", false)]
+   ```
 
-     這個易記的名稱顯示在測試設定活動中。
+    這個易記的名稱顯示在測試設定活動中。
 
-    > [!NOTE]
-    > 您也可以加入 <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorConfigurationEditorAttribute>，針對此資料配接器指定自訂組態編輯器的 `Type`，以及選擇性地指定用於編輯器的說明檔。
-    >
-    > 您也可以套用 <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorEnabledByDefaultAttribute>，將它指定為永遠啟用。
+   > [!NOTE]
+   > 您也可以加入 <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorConfigurationEditorAttribute>，針對此資料配接器指定自訂組態編輯器的 `Type`，以及選擇性地指定用於編輯器的說明檔。
+   >
+   > 您也可以套用 <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorEnabledByDefaultAttribute>，將它指定為永遠啟用。
 
-7.  您的診斷資料配接器類別必須繼承自 <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollector> 類別，如下所示：
+7. 您的診斷資料配接器類別必須繼承自 <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollector> 類別，如下所示：
 
-    ```csharp
-    public class MyDiagnosticDataAdapter : DataCollector
-    ```
+   ```csharp
+   public class MyDiagnosticDataAdapter : DataCollector
+   ```
 
-8.  加入如下的區域變數：
+8. 加入如下的區域變數：
 
-    ```csharp
-    private DataCollectionEvents dataEvents;
-    private DataCollectionLogger dataLogger;
-    private DataCollectionSink dataSink;
-    private XmlElement configurationSettings;
-    ```
+   ```csharp
+   private DataCollectionEvents dataEvents;
+   private DataCollectionLogger dataLogger;
+   private DataCollectionSink dataSink;
+   private XmlElement configurationSettings;
+   ```
 
 9. 新增 <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollector.Initialize*> 方法和 **Dispose** 方法。 在 `Initialize` 方法中，您可以初始化資料接收器、來自測試設定的任何組態資料，以及註冊您要使用的事件處理常式，如下所示：
 
@@ -273,7 +273,7 @@ ms.locfileid: "44321186"
 
 17. 使用已選取您診斷資料配接器的測試設定來執行您的測試。
 
-   您指定的資料檔案會附加至測試結果。
+    您指定的資料檔案會附加至測試結果。
 
 ## <a name="see-also"></a>另請參閱
 

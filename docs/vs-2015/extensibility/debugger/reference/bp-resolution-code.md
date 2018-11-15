@@ -17,12 +17,12 @@ ms.assetid: ac103ec5-771c-4667-92de-b5abb53bbb52
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 619e849d5bfd4d4f9b2372c6455d8fe3f92d6a6f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 25c551a9805c1a482dbbb58bb30dfb9400a8aaa6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49226133"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49924676"
 ---
 # <a name="bpresolutioncode"></a>BP_RESOLUTION_CODE
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

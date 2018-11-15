@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1409431b0cdaec775ecd420fb9b6ea1ded0868de
-ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
+ms.openlocfilehash: 1f63e4f43db3f8c4b24b43bda02cf00b52befc94
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42626652"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49842179"
 ---
 # <a name="analyze-cpu-usage"></a>分析 CPU 使用量
 當您需要調查應用程式的效能問題時，了解應用程式如何使用 CPU 是不錯的起點。 「CPU 使用量」工具顯示 CPU 花時間執行 Visual C++、Visual C#/Visual Basic 和 JavaScript 程式碼的地方。 從 Visual Studio 2015 Update 1 開始，您不需要離開偵錯工具，就可以看到依函式的 CPU 使用量明細。 您可以在偵錯時開啟和關閉 CPU 分析，並檢視執行停止時的結果，例如中斷點。  
@@ -28,33 +28,33 @@ Windows 7 或更新版本必須使用本文中顯示的分析工具，也就是[
   
 ##  <a name="collect-cpu-usage-data"></a>收集 CPU 使用量資料  
   
-1.  在 Visual Studio 中，將方案組態設定為 [發行] 並選擇部署目標。  
+1. 在 Visual Studio 中，將方案組態設定為 [發行] 並選擇部署目標。  
   
-     ![選取版本和本機電腦](../profiling/media/cpuuse_selectreleaselocalmachine.png "CPUUSE_SelectReleaseLocalMachine")  
+    ![選取版本和本機電腦](../profiling/media/cpuuse_selectreleaselocalmachine.png "CPUUSE_SelectReleaseLocalMachine")  
   
-    -   在 [發行] 模式中執行應用程式，可讓您更清楚地檢視應用程式的實際效能。  
+   -   在 [發行] 模式中執行應用程式，可讓您更清楚地檢視應用程式的實際效能。  
   
-    -   在本機電腦上執行應用程式最適合重現已安裝應用程式的執行。  
+   -   在本機電腦上執行應用程式最適合重現已安裝應用程式的執行。  
   
-    -   如果您從遠端裝置收集資料，請在裝置上直接執行應用程式，而不是使用遠端桌面連接。  
+   -   如果您從遠端裝置收集資料，請在裝置上直接執行應用程式，而不是使用遠端桌面連接。  
   
-    -   對於 Windows Phone 應用程式，直接從 [裝置] 收集資料會提供最精確的資料。  
+   -   對於 Windows Phone 應用程式，直接從 [裝置] 收集資料會提供最精確的資料。  
   
-2.  在 [偵錯] 功能表上選擇 [效能分析工具]。  
+2. 在 [偵錯] 功能表上選擇 [效能分析工具]。  
   
-3.  選擇 [CPU 使用量] ，然後選擇 [啟動]。  
+3. 選擇 [CPU 使用量] ，然後選擇 [啟動]。  
   
-     ![選擇 CPU 使用量](../profiling/media/cpuuse_lib_choosecpuusage.png "CPUUSE_LIB_ChooseCpuUsage")  
+    ![選擇 CPU 使用量](../profiling/media/cpuuse_lib_choosecpuusage.png "CPUUSE_LIB_ChooseCpuUsage")  
   
-4.  當應用程式啟動時，按一下 [取得最大數目]。 在顯示輸出之後等候約 1 秒，然後選擇 [取得最大數目非同步] 。 在按鈕點選之間等候，可讓您更輕鬆地隔離診斷報告中的按鈕點選常式。  
+4. 當應用程式啟動時，按一下 [取得最大數目]。 在顯示輸出之後等候約 1 秒，然後選擇 [取得最大數目非同步] 。 在按鈕點選之間等候，可讓您更輕鬆地隔離診斷報告中的按鈕點選常式。  
   
-5.  第二個輸出行出現之後，請選擇效能和診斷中樞中的 [停止收集]  。  
+5. 第二個輸出行出現之後，請選擇效能和診斷中樞中的 [停止收集]  。  
   
- ![停止 CpuUsage 資料收集](../profiling/media/cpu_use_wt_stopcollection.png "CPU_USE_WT_StopCollection")  
+   ![停止 CpuUsage 資料收集](../profiling/media/cpu_use_wt_stopcollection.png "CPU_USE_WT_StopCollection")  
   
- CPU 使用量工具會分析資料，以及顯示報告。  
+   CPU 使用量工具會分析資料，以及顯示報告。  
   
- ![CpuUsage 報表](../profiling/media/cpu_use_wt_report.png "CPU_USE_WT_Report")  
+   ![CpuUsage 報表](../profiling/media/cpu_use_wt_report.png "CPU_USE_WT_Report")  
   
 ## <a name="analyze-the-cpu-usage-report"></a>分析 CPU 使用量報告  
   

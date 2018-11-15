@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e2111286afde9e60391f1a7410fec2778b3ed673
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 8e120d65c9336acaa509e74c79d9e538673cd256
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34693782"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349318"
 ---
 # <a name="xml-editor"></a>XML 編輯器
 
@@ -40,22 +40,22 @@ XML 編輯器以 Visual Studio 文字編輯器中，為基礎，並包含其他 
 
 - 與整合[XML 結構描述總管](../xml-tools/xml-schema-explorer.md)。 這會提供 XML 結構描述的階層式檢視。
 
-XML 編輯器中叫用已知的副檔名，例如 *.xml*， *.xsd*， *.xsl*，和 *.config*。亦可針對可能包含 XML 的檔案之任何未知副檔名叫用該編輯器。 您也可以開啟 XML 編輯器以任何檔案，使用**開啟**選項，然後從清單中選取 XML 編輯器。
+XML 編輯器中叫用已知的副檔名，例如 *.xml*， *.xsd*， *.xsl*，以及 *.config*。亦可針對可能包含 XML 的檔案之任何未知副檔名叫用該編輯器。 您也可以開啟 XML 編輯器中使用的任何檔案，使用**開啟**選項，並從清單中選取 XML 編輯器。
 
 ## <a name="xslt-intellisense"></a>XSLT IntelliSense
 
-[XSLT IntelliSense](../xml-tools/xml-editor-intellisense-features.md)可讓您將自動完成屬性集名稱、 範本模式和名稱，以及具名範本的指定之模式或指定的參數名稱。
+[XSLT IntelliSense](../xml-tools/xml-editor-intellisense-features.md)可讓您自動完成屬性集名稱、 範本模式和名稱，和指定之模式或指定的參數名稱命名範本。
 
 ## <a name="xslt-profiler"></a>XSLT 分析工具
 
-[XSLT 分析工具](../xml-tools/walkthrough-xslt-profiler.md)建立詳細的 XSLT 效能報告，協助您測量、 評估並解決 XSLT 程式碼的效能相關問題。 XSLT 分析工具也包含 XSL 和 XSLT 樣式表最佳化的實用提示。
+[XSLT 分析工具](../xml-tools/walkthrough-xslt-profiler.md)建立詳細的 XSLT 效能報告，協助您測量、 評估和解決 XSLT 程式碼中的效能相關問題。 XSLT 分析工具也包含 XSL 和 XSLT 樣式表最佳化的實用提示。
 
 ## <a name="xslt-hierarchy"></a>XSLT 階層
 
-[XSLT 階層工具](../xml-tools/walkthrough-using-xslt-hierarchy.md)可讓您在內含的樣式表和/或內建範本規則中加入中斷點。
+[XSLT 階層工具](../xml-tools/walkthrough-using-xslt-hierarchy.md)可讓您在包含的樣式表和/或內建範本規則中加入中斷點。
 
 ## <a name="see-also"></a>另請參閱
 
 - [程式碼編輯器的功能](../ide/writing-code-in-the-code-and-text-editor.md)提供文字編輯器的相關資訊。
-- [XML 標準參考](http://msdn.microsoft.com/79c78508-c9d0-423a-a00f-672e855de401)提供 XML 技術，包括 XML、 文件類型定義 (DTD)、 XML 結構描述定義語言 (XSD) 及 XSLT 技術的相關資訊。
+- [XML 標準參考](https://msdn.microsoft.com/79c78508-c9d0-423a-a00f-672e855de401)提供 XML 技術，包括 XML、 文件類型定義 (DTD)、 XML 結構描述定義語言 (XSD) 和 XSLT 的相關資訊。
 - [Visual Studio 中的 XML 工具](../xml-tools/xml-tools-in-visual-studio.md)

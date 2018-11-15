@@ -1,5 +1,5 @@
 ---
-title: IEEVisualizerDataProvider::GetObjectForVisualizer |Microsoft 文件
+title: IEEVisualizerDataProvider::GetObjectForVisualizer |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 994632a0883d45e550d519deb3288b959691e080
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: af233b7a4a7fe482ce258811c8a2833f335ae1f6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31119259"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49861536"
 ---
 # <a name="ieevisualizerdataprovidergetobjectforvisualizer"></a>IEEVisualizerDataProvider::GetObjectForVisualizer
-這個方法會取得代表這個視覺化檢視的物件。  
+這個方法會取得這個視覺化檢視表示的物件。  
   
 ## <a name="syntax"></a>語法  
   
@@ -44,10 +44,10 @@ int GetObjectForVisualizer(
  [out]這個視覺化檢視所要表示的物件  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
   
 ## <a name="remarks"></a>備註  
- `GetObjectForVisualizer` 被允許傳回物件的快取的版本。 如果呼叫端想要確定物件是最新狀態，然後它會呼叫[GetNewObjectForVisualizer](../../../extensibility/debugger/reference/ieevisualizerdataprovider-getnewobjectforvisualizer.md)。  
+ `GetObjectForVisualizer` 被允許傳回物件的快取的版本。 如果呼叫端想要確定物件是最新狀態，則它會呼叫[GetNewObjectForVisualizer](../../../extensibility/debugger/reference/ieevisualizerdataprovider-getnewobjectforvisualizer.md)。  
   
 ## <a name="see-also"></a>另請參閱  
  [IEEVisualizerDataProvider](../../../extensibility/debugger/reference/ieevisualizerdataprovider.md)   

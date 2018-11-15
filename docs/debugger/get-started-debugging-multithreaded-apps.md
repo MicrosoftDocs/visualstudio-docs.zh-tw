@@ -19,19 +19,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 11cb05ea81f086cf8c26e3058850968a909b84e3
-ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
+ms.openlocfilehash: 66239362e454d5ab333214c444aeee3fa54b1b8a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39468679"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49936851"
 ---
 # <a name="get-started-debugging-multithreaded-applications-in-visual-studio"></a>開始偵錯在 Visual Studio 中的多執行緒應用程式
 Visual Studio 提供數個工具和可協助您偵錯多執行緒應用程式的使用者介面項目。 本教學課程示範如何使用執行緒標記**平行堆疊** 視窗中，**平行監看式**視窗、 條件式中斷點和篩選中斷點。 本教學課程只需要幾分鐘，但是完成它會讓您熟悉的偵錯多執行緒應用程式的功能。
 
-|         |         |
+| | |
 |---------|---------|
-|  ![影片的電影攝影機圖示](../install/media/video-icon.png "觀看影片")  |    [觀看影片](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Debugging-Multi-threaded-Apps-in-Visual-Studio-2017-MoZPKMD6D_111787171)多執行緒偵錯，顯示類似的步驟。 |
+| ![影片的電影攝影機圖示](../install/media/video-icon.png "觀看影片") | [觀看影片](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Debugging-Multi-threaded-Apps-in-Visual-Studio-2017-MoZPKMD6D_111787171)多執行緒偵錯，顯示類似的步驟。 |
 
 其他主題提供有關使用其他的多執行緒偵錯工具的其他資訊：
 
@@ -194,7 +194,7 @@ Visual Studio 提供數個工具和可協助您偵錯多執行緒應用程式的
     End Class
     ```
   
-7.  在 **檔案**功能表上，按一下**全部儲存**。  
+7.  按一下 [ **檔案** ] 功能表上的 [ **全部儲存**]。  
   
 #### <a name="to-begin-the-tutorial"></a>若要開始本教學課程  
   
@@ -217,30 +217,30 @@ Visual Studio 提供數個工具和可協助您偵錯多執行緒應用程式的
   
 #### <a name="to-start-debugging"></a>若要啟動偵錯  
   
-1.  按 的左側裝訂邊上`Thread.Sleep`或`this_thread::sleep_for`陳述式來插入新的中斷點。  
+1. 按 的左側裝訂邊上`Thread.Sleep`或`this_thread::sleep_for`陳述式來插入新的中斷點。  
   
-     在原始碼程式碼編輯器左邊的裝訂邊，會出現的紅色圓圈。 這表示這個位置現在已設定中斷點。 
+    在原始碼程式碼編輯器左邊的裝訂邊，會出現的紅色圓圈。 這表示這個位置現在已設定中斷點。 
   
-2.  在 **偵錯**功能表上，按一下**開始偵錯**(**F5**)。  
+2. 在 **偵錯**功能表上，按一下**開始偵錯**(**F5**)。  
   
-     Visual Studio 會建置方案，應用程式啟動偵錯工具附加，以執行，然後應用程式停止於中斷點。  
+    Visual Studio 會建置方案，應用程式啟動偵錯工具附加，以執行，然後應用程式停止於中斷點。  
   
-    > [!NOTE]
-    > 如果您將焦點切換到主控台視窗，按一下[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]視窗將焦點還給[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。  
+   > [!NOTE]
+   > 如果您將焦點切換到主控台視窗，按一下[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]視窗將焦點還給[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。  
   
-4.  在原始碼程式碼編輯器中，找出包含中斷點的那一行：  
+3. 在原始碼程式碼編輯器中，找出包含中斷點的那一行：  
   
-    ```csharp  
-    Thread.Sleep(3000);  
-    ```  
+   ```csharp  
+   Thread.Sleep(3000);  
+   ```  
   
-    ```C++  
-    this_thread::sleep_for(chrono::seconds(3)); 
-    ```
+   ```C++  
+   this_thread::sleep_for(chrono::seconds(3)); 
+   ```
 
-    ```VB
-    Thread.Sleep(3000)
-    ```    
+   ```VB
+   Thread.Sleep(3000)
+   ```    
   
 #### <a name="ShowThreadsInSource"></a>若要尋找執行緒標記  
 

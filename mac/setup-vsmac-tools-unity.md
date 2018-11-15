@@ -5,12 +5,12 @@ author: dantogno
 ms.author: v-davian
 ms.date: 05/25/2018
 ms.assetid: 83FDD7A3-5D16-4B4B-9080-078E3FB5C623
-ms.openlocfilehash: 6e5e6b90350aa16d4e0ffee04673a1aa1063cded
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 3409bca77605bd55d0de15b38eb4812743af813e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37057095"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49836342"
 ---
 # <a name="setup-visual-studio-for-mac-tools-for-unity"></a>設定 Visual Studio for Mac Tools for Unity
 
@@ -57,11 +57,11 @@ Unity 安裝所隨附的 Visual Studio for Mac 版本可能不是最新。 建�
 
 1. 從 Visual Studio 功能表中，選取 [延伸模組]。
 
-  ![選取 [延伸模組]](media/setup-vsmac-tools-unity-image1.png)
+   ![選取 [延伸模組]](media/setup-vsmac-tools-unity-image1.png)
 
-1. 展開 [遊戲開發] 區段，並確認 Visual Studio for Mac Tools for Unity 項目。
+2. 展開 [遊戲開發] 區段，並確認 Visual Studio for Mac Tools for Unity 項目。
 
-  ![檢視 Unity 項目](media/setup-vsmac-tools-unity-image2.png)
+   ![檢視 Unity 項目](media/setup-vsmac-tools-unity-image2.png)
 
 ## <a name="configure-unity-for-use-with-visual-studio-for-mac"></a>設定 Unity 以與 Visual Studio for Mac 搭配使用
 
@@ -69,16 +69,16 @@ Unity 安裝所隨附的 Visual Studio for Mac 版本可能不是最新。 建�
 
 1. 從 Unity 功能表中，選取 [喜好設定]。
 
-  ![選取 [喜好設定]](media/setup-vsmac-tools-unity-image4.png)
+   ![選取 [喜好設定]](media/setup-vsmac-tools-unity-image4.png)
 
-1. 在 [喜好設定] 對話方塊中，選取 [外部工具] 索引標籤。
+2. 在 [喜好設定] 對話方塊中，選取 [外部工具] 索引標籤。
 
-1. 從 [External Script Editor] (外部指令碼編輯器) 下拉式清單中，選擇列出的 [Visual Studio]，否則請選取 [瀏覽...]。
+3. 從 [External Script Editor] (外部指令碼編輯器) 下拉式清單中，選擇列出的 [Visual Studio]，否則請選取 [瀏覽...]。
 
-  ![選取 [Visual Studio]](media/setup-vsmac-tools-unity-image5.png)
+   ![選取 [Visual Studio]](media/setup-vsmac-tools-unity-image5.png)
 
-1. 如果已選取 [瀏覽...]，請巡覽至 [應用程式] 目錄，並選取 [Visual Studio]，然後按一下 [開啟]。
+4. 如果已選取 [瀏覽...]，請巡覽至 [應用程式] 目錄，並選取 [Visual Studio]，然後按一下 [開啟]。
 
-  ![選取 [開啟]](media/setup-vsmac-tools-unity-image6.png)
+   ![選取 [開啟]](media/setup-vsmac-tools-unity-image6.png)
 
-1. 在 [External Script Editor] (外部指令碼編輯器) 清單中選取 Visual Studio 之後，請關閉 [喜好設定] 對話方塊，以完成設定程序。
+5. 在 [External Script Editor] (外部指令碼編輯器) 清單中選取 Visual Studio 之後，請關閉 [喜好設定] 對話方塊，以完成設定程序。

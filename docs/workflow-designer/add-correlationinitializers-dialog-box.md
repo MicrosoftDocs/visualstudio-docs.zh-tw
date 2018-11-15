@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d54724655db7147c06687aa88a4fe623bb277a45
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 724c4e3ac911e5fda62304a08565937f38425368
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36756936"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49948950"
 ---
 # <a name="add-correlationinitializers-dialog-box"></a>加入相互關聯初始設定式對話方塊
 
@@ -33,7 +33,7 @@ ms.locfileid: "36756936"
 下表描述的使用者介面 (UI) 項目**加入相互關聯初始設定式** 對話方塊中：
 
 |UI 項目|描述|
-|----------------|-----------------|
+|-|-----------------|
 |**新增初始設定式**|按一下 **新增初始化**方塊將額外的初始設定式新增至集合。|
 |**相互關聯類型**|指定相互關聯初始設定式的型別。 有四個型別可供選擇：<br /><br /> 1.指定 <xref:System.ServiceModel.Activities.CallbackCorrelationInitializer> 的回呼相互關聯初始設定式。<br />2.指定 <xref:System.ServiceModel.Activities.CorrelationInitializer> 的內容相互關聯初始設定式。<br />3.指定 <xref:System.ServiceModel.Activities.RequestReplyCorrelationInitializer> 的要求-回覆相互關聯初始設定式。<br />4.指定 <xref:System.ServiceModel.Activities.QueryCorrelationInitializer> 的查詢相互關聯初始設定式。<br /><br /> 若要編輯**相互關聯類型**<br /><br /> 1.中的特定資料列的索引標籤**新增初始設定式**DataGrid。<br />2.若要將焦點設定為**CorrelationTypeComboBox**，按下**Ctrl**+**索引標籤**。<br />3.按下 Alt + 向下鍵來快顯**ComboBox**並加以編輯。|
 |**XPath 查詢**|索引鍵/值組，其中包含用來從傳入與傳出訊息擷取相互關聯資料的查詢。 使用 <xref:System.ServiceModel.Activities.QueryCorrelationInitializer> 型別時，此清單才有效。|

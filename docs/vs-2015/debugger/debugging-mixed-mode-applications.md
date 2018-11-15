@@ -30,12 +30,12 @@ caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 00b448f84e0103d5cf98ae27c519e247ad3d0c25
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3bd033a9341975b6b785076188a53daf3e91a5a8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49202172"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49817336"
 ---
 # <a name="debugging-mixed-mode-applications"></a>偵錯混合模式應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,13 +54,13 @@ ms.locfileid: "49202172"
   
 #### <a name="to-turn-off-property-evaluation"></a>若要關閉屬性評估  
   
-1.  在 [ **工具** ] 功能表上選擇 [ **選項**]。  
+1. 在 [ **工具** ] 功能表上選擇 [ **選項**]。  
   
-2.  在 **選項**對話方塊中，開啟**偵錯**資料夾，然後選取**一般**類別目錄。  
+2. 在 **選項**對話方塊中，開啟**偵錯**資料夾，然後選取**一般**類別目錄。  
   
-3.  清除**啟用屬性評估及其他隱含函式呼叫**核取方塊。  
+3. 清除**啟用屬性評估及其他隱含函式呼叫**核取方塊。  
   
- 因為原生呼叫堆疊和 Managed 呼叫堆疊有所不同，偵錯工具無法一直為混合模式提供完整呼叫堆疊。 當機器碼呼叫 Managed 程式碼時，您可能會發現某些不一樣的地方。 如需詳細資訊，請參閱 <<c0> [ 混合程式碼和遺失的資訊，請在 [呼叫堆疊] 視窗中](../debugger/mixed-code-and-missing-information-in-the-call-stack-window.md)。  
+   因為原生呼叫堆疊和 Managed 呼叫堆疊有所不同，偵錯工具無法一直為混合模式提供完整呼叫堆疊。 當機器碼呼叫 Managed 程式碼時，您可能會發現某些不一樣的地方。 如需詳細資訊，請參閱 <<c0> [ 混合程式碼和遺失的資訊，請在 [呼叫堆疊] 視窗中](../debugger/mixed-code-and-missing-information-in-the-call-stack-window.md)。  
   
 ## <a name="see-also"></a>另請參閱  
  [偵錯 Managed 程式碼](../debugger/debugging-managed-code.md)

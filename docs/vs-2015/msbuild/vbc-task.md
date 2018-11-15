@@ -24,12 +24,12 @@ caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0fe2bb17979b7bc4fd068ddd7fb309446c88b7f6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1f97e3ad4321cb8503a964115922f06e62f2c121
+ms.sourcegitcommit: 1abb9cf4c3ccb90e3481ea8079272c98aad12875
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49184245"
+ms.lasthandoff: 10/26/2018
+ms.locfileid: "50143420"
 ---
 # <a name="vbc-task"></a>Vbc 工作
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -66,7 +66,7 @@ ms.locfileid: "49184245"
 |`NoLogo`|選擇性的 `Boolean` 參數。<br /><br /> 如果是 `true`，即會隱藏顯示編譯器橫幅資訊。 此參數對應至 vbc.exe 編譯器的 [/nologo](http://msdn.microsoft.com/library/25ef54b6-d676-4639-a2d2-a747a158bc07) 參數。|  
 |`NoStandardLib`|選擇性的 `Boolean` 參數。<br /><br /> 使編譯器不要參考標準程式庫。 此參數對應至 vbc.exe 編譯器的 [/nostdlib](http://msdn.microsoft.com/library/140381b8-dc96-4ad5-ae11-792c9ed0be4d) 參數。|  
 |`NoVBRuntimeReference`|選擇性的 `Boolean` 參數。<br /><br /> 僅供內部使用。 如果為 true，則防止自動參考 Microsoft.VisualBasic.dll。|  
-|`NoWarnings`|選擇性的 `Boolean` 參數。<br /><br /> 如為 `true`，工作便會隱藏所有警告。 如需詳細資訊，請參閱 [/nowarn](http://msdn.microsoft.com/library/7ebf2106-0652-4fdc-bf60-70fc86465d83)。|  
+|`NoWarnings`|選擇性的 `Boolean` 參數。<br /><br /> 如果是 `true`，工作便會隱藏所有警告。 如需詳細資訊，請參閱 [/nowarn](http://msdn.microsoft.com/library/7ebf2106-0652-4fdc-bf60-70fc86465d83)。|  
 |`Optimize`|選擇性的 `Boolean` 參數。<br /><br /> 如為 `true`，則啟用編譯器最佳化。 此參數對應至 vbc.exe 編譯器的 [/optimize](http://msdn.microsoft.com/library/fcba4a97-3622-4b87-a891-0f77deab4998) 參數。|  
 |`OptionCompare`|選擇性的 `String` 參數。<br /><br /> 指定如何進行字串比較。 此參數的值如下：<br /><br /> -   `binary`<br />-   `text`<br /><br /> 值 `binary` 指定此工作使用二進位字串比較。 值 `text` 指定此工作使用文字字串比較。 此參數的預設值為 `binary`。 此參數對應至 vbc.exe 編譯器的 [/optioncompare](http://msdn.microsoft.com/library/7237b766-b44d-4cc5-9a3c-885348a7d9e4) 參數。|  
 |`OptionExplicit`|選擇性的 `Boolean` 參數。<br /><br /> 如為 `true`，則需要明確宣告變數。 此參數對應至 vbc.exe 編譯器的 [/optionexplicit](http://msdn.microsoft.com/library/5d296ab3-bafe-4c4d-9887-78f162ed86c7) 參數。|  

@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: mikeblome
-ms.openlocfilehash: 8309ee96b0948739124e0e23c4a57dd136f63362
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: b2225ec5db308b290e932cb9d29d1c50e32d4608
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44280918"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49820261"
 ---
 # <a name="microsoftvisualstudiotesttoolscppunittestframework-api-reference"></a>Microsoft.VisualStudio.TestTools.CppUnitTestFramework API 參考
 
@@ -29,72 +29,73 @@ ms.locfileid: "44280918"
 ##  <a name="In_this_topic"></a>本主題內容
  [CppUnitTest.h](#cppUnitTest_h)
 
--   [建立測試類別和方法](#create_test_classes_and_methods)
+- [建立測試類別和方法](#create_test_classes_and_methods)
 
--   [初始化和清除](#Initialize_and_cleanup)
+- [初始化和清除](#Initialize_and_cleanup)
 
-    -   [測試方法](#test_methods)
+  -   [測試方法](#test_methods)
 
-    -   [測試類別](#test_classes)
+  -   [測試類別](#test_classes)
 
-    -   [測試模組](#test_modules)
+  -   [測試模組](#test_modules)
 
--   [建立測試屬性](#create_test_attributes)
+- [建立測試屬性](#create_test_attributes)
 
-    -   [測試方法屬性](#test_method_attributes)
+  - [測試方法屬性](#test_method_attributes)
 
-    -   [測試類別屬性](#test_class_attributes)
+  - [測試類別屬性](#test_class_attributes)
 
-    -   [測試模組屬性](#test_module_attributes)
+  - [測試模組屬性](#test_module_attributes)
 
-    -   [預先定義的屬性](#pre_defined_attributes)
+  - [預先定義的屬性](#pre_defined_attributes)
 
-     [CppUnitTestAssert.h](#cppUnitTestAssert_h)
+    [CppUnitTestAssert.h](#cppUnitTestAssert_h)
 
-    -   [一般判斷提示](#general_asserts)
+  - [一般判斷提示](#general_asserts)
 
-        -   [相等](#general_are_equal)
+    -   [相等](#general_are_equal)
 
-        -   [不相等](#general_are_not_equal)
+    -   [不相等](#general_are_not_equal)
 
-        -   [相同](#general_are_same)
+    -   [相同](#general_are_same)
 
-        -   [不相同](#general_are_not_same)
+    -   [不相同](#general_are_not_same)
 
-        -   [為 Null](#general_is_null)
+    -   [為 Null](#general_is_null)
 
-        -   [不是 Null](#general_is_not_null)
+    -   [不是 Null](#general_is_not_null)
 
-        -   [為 True](#general_is_True)
+    -   [為 True](#general_is_True)
 
-        -   [為 False](#general_is_false)
+    -   [為 False](#general_is_false)
 
-        -   [失敗](#general_Fail)
+    -   [失敗](#general_Fail)
 
-    -   [Windows 執行階段判斷提示](#winrt_asserts)
+  - [Windows 執行階段判斷提示](#winrt_asserts)
 
-        -   [相等](#winrt_are_equal)
+    -   [相等](#winrt_are_equal)
 
-        -   [相同](#winrt_are_same)
+    -   [相同](#winrt_are_same)
 
-        -   [不相等](#winrt_are_not_equal)
+    -   [不相等](#winrt_are_not_equal)
 
-        -   [不相同](#winrt_are_not_same)
+    -   [不相同](#winrt_are_not_same)
 
-        -   [為 Null](#winrt_is_null)
+    -   [為 Null](#winrt_is_null)
 
-        -   [不是 Null](#winrt_is_not_null)
+    -   [不是 Null](#winrt_is_not_null)
 
-    -   [判斷提示例外狀況](#exception_asserts)
+  - [判斷提示例外狀況](#exception_asserts)
 
-        -   [預期例外狀況](#expect_exception)
+    - [預期例外狀況](#expect_exception)
 
-         [CppUnitTestLogger.h](#cppunittestlogger_h)
+      [CppUnitTestLogger.h](#cppunittestlogger_h)
 
-        -   [記錄器](#logger)
+    - [記錄器](#logger)
 
-        -   [寫入訊息](#write_message)
-    -    [使用範例](#example)
+    - [寫入訊息](#write_message)
+
+  - [使用範例](#example)
 
 ##  <a name="cppUnitTest_h"></a> CppUnitTest.h
 
@@ -111,7 +112,6 @@ TEST_METHOD(methodName)
 {
     // test method body
 }
-
 ```
 
  定義 *methodName* 為測試方法。 `TEST_METHOD` 必須在方法的類別範圍中宣告。
@@ -125,7 +125,6 @@ TEST_METHOD_INITIALIZE(methodName)
 {
     // method initialization code
 }
-
 ```
 
  定義 *methodName* 為每個測試方法執行之前要執行的方法。 `TEST_METHOD_INITIALIZE` 只能在測試類別中定義一次，且必須在測試類別中定義。
@@ -135,7 +134,6 @@ TEST_METHOD_CLEANUP(methodName)
 {
     // test method cleanup  code
 }
-
 ```
 
  定義 *methodName* 為每個測試方法執行之後要執行的方法。 `TEST_METHOD_CLEANUP` 只能在測試類別中定義一次，且必須在測試類別的範圍中定義。

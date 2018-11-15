@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 9539e8dec80afd1f334ca89e84a5130d8d47877e
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: bda1c548b4db5d7f94a1dd85befdff5645460b83
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36283285"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295094"
 ---
 # <a name="add-a-data-source-to-a-web-performance-test"></a>將資料來源加入至 Web 效能測試
 
@@ -24,7 +24,7 @@ ms.locfileid: "36283285"
 
  ![將資料繫結至 Web 效能測試](../test/media/web_test_databinding_conceptual.png)
 
- 我們要使用範例 ASP.NET 應用程式。 其具有三個 .aspx 頁面：預設頁面、紅色頁面和藍色頁面。 預設頁面具有可選擇紅色或藍色的選項按鈕控制項和一個送出按鈕。 另外兩個 .aspx 頁面非常簡單。 一個具有名稱為 Red 的標籤，另一個有名稱為 Blue 的標籤。 當您在預設頁面上選取送出時，我們會顯示另外兩個之一的頁面。 您可以下載 [ColorWebApp](http://code.msdn.microsoft.com/Sample-ColorWebApp-76ff7506) 範例，或是就以您自己的 Web 應用程式跟著做。
+ 我們要使用範例 ASP.NET 應用程式。 其具有三個 .aspx 頁面：預設頁面、紅色頁面和藍色頁面。 預設頁面具有可選擇紅色或藍色的選項按鈕控制項和一個送出按鈕。 另外兩個 .aspx 頁面非常簡單。 一個具有名稱為 Red 的標籤，另一個有名稱為 Blue 的標籤。 當您在預設頁面上選取送出時，我們會顯示另外兩個之一的頁面。 您可以下載 [ColorWebApp](https://code.msdn.microsoft.com/Sample-ColorWebApp-76ff7506) 範例，或是就以您自己的 Web 應用程式跟著做。
 
  ![執行要測試的 Web 應用程式](../test/media/web_test_databinding_runwebapp.png)
 

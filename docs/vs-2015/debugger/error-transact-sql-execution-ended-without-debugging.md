@@ -22,12 +22,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: db777a7b35ce6576640b6ac688ae716c0e41f676
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: bbcd6fb78ef87992571347f6a32f18e939a00586
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49241666"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49892177"
 ---
 # <a name="error-transact-sql-execution-ended-without-debugging"></a>錯誤：Transact-SQL 執行未經偵錯即結束
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,21 +38,21 @@ ms.locfileid: "49241666"
   
  有兩個相關的帳戶：  
   
--   應用程式帳戶是正在執行 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的使用者帳戶。  
+- 應用程式帳戶是正在執行 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的使用者帳戶。  
   
--   連接帳戶是用來建立 SQL Server 連接的識別。 如果連接使用 SQL 驗證 (Authentication)，則不需要與正在執行 Visual Studio 的識別一樣。  
+- 連接帳戶是用來建立 SQL Server 連接的識別。 如果連接使用 SQL 驗證 (Authentication)，則不需要與正在執行 Visual Studio 的識別一樣。  
   
- SQL 偵錯需要應用程式帳戶符合連接帳戶或者是 sysadmin。  
+  SQL 偵錯需要應用程式帳戶符合連接帳戶或者是 sysadmin。  
   
- 如果您正在使用 SQL 登入 (例如 sa)，必須在 SQL Server 上將應用程式帳戶設定為 sysadmin。 根據預設，SQL Server sysadmin 是執行 SQL Server 之電腦上的系統管理員。  
+  如果您正在使用 SQL 登入 (例如 sa)，必須在 SQL Server 上將應用程式帳戶設定為 sysadmin。 根據預設，SQL Server sysadmin 是執行 SQL Server 之電腦上的系統管理員。  
   
- 若要更正這個錯誤，您可能需要：  
+  若要更正這個錯誤，您可能需要：  
   
--   驗證使用權限設定。 如需詳細資訊，請參閱 <<c0> [ 如何： 設定 SQL Server 權限進行偵錯](http://msdn.microsoft.com/en-us/84e088d0-0409-41d4-841b-f5d4b0fda414)。  
+- 驗證使用權限設定。 如需詳細資訊，請參閱 <<c0> [ 如何： 設定 SQL Server 權限進行偵錯](http://msdn.microsoft.com/en-us/84e088d0-0409-41d4-841b-f5d4b0fda414)。  
   
--   如果設定正確，請確定 SQL 偵錯作業。  
+- 如果設定正確，請確定 SQL 偵錯作業。  
   
--   請連絡網路或資料庫管理員。  
+- 請連絡網路或資料庫管理員。  
   
 ## <a name="see-also"></a>另請參閱  
  [設定 SQL 偵錯](http://msdn.microsoft.com/en-us/3db09e68-edcc-42de-9c22-4e97cfd55ab3)   

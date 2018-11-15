@@ -16,12 +16,12 @@ ms.assetid: 7d21fe48-489a-4f55-acb5-73da64c4e155
 caps.latest.revision: 35
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e7b6324112bed6d201ca57fd3fb5c77696a528f2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7bf98c263f3452e0383f5891116849e85140b763
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49305782"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49818754"
 ---
 # <a name="registration-and-selection-source-control-vspackage"></a>註冊和選取 (原始檔控制 VSPackage)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -38,13 +38,13 @@ ms.locfileid: "49305782"
 ### <a name="registry-entries"></a>登錄項目  
  原始檔控制套件需要三個私用的 Guid:  
   
--   套件 GUID： 這是包含來源控制項實作 （在這一節中稱為 ID_Package） 封裝的主要 GUID。  
+- 套件 GUID： 這是包含來源控制項實作 （在這一節中稱為 ID_Package） 封裝的主要 GUID。  
   
--   原始檔控制 GUID： 這是原始檔控制 VSPackage 用來向 Visual Studio 原始檔控制虛設常式的 GUID，也會做為命令的 UI 內容的 GUID。 原始檔控制服務的 GUID 會註冊在原始檔控制的 GUID。 在此範例中，原始檔控制 GUID 稱為 ID_SccProvider。  
+- 原始檔控制 GUID： 這是原始檔控制 VSPackage 用來向 Visual Studio 原始檔控制虛設常式的 GUID，也會做為命令的 UI 內容的 GUID。 原始檔控制服務的 GUID 會註冊在原始檔控制的 GUID。 在此範例中，原始檔控制 GUID 稱為 ID_SccProvider。  
   
--   原始檔控制服務的 GUID： 這是私用的服務 （這一節中稱為 SID_SccPkgService） 的 Visual Studio 所使用的 GUID。 此外，原始檔控制套件需要定義其他的 Guid，適用於 Vspackage，工具視窗等等。  
+- 原始檔控制服務的 GUID： 這是私用的服務 （這一節中稱為 SID_SccPkgService） 的 Visual Studio 所使用的 GUID。 此外，原始檔控制套件需要定義其他的 Guid，適用於 Vspackage，工具視窗等等。  
   
- 原始檔控制 VSPackage 必須進行下列登錄項目：  
+  原始檔控制 VSPackage 必須進行下列登錄項目：  
   
 |機碼名稱|項目|  
 |--------------|-------------|  
@@ -58,13 +58,13 @@ ms.locfileid: "49305782"
   
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 執行下列作業的任何一個時，請載入原始檔控制 VSPackage:  
   
--   （當此方案在原始檔控制） 開啟的方案。  
+- （當此方案在原始檔控制） 開啟的方案。  
   
-     開啟方案或專案原始檔控制下的時，IDE 會造成原始檔控制 VSPackage，指定要載入該方案。  
+   開啟方案或專案原始檔控制下的時，IDE 會造成原始檔控制 VSPackage，指定要載入該方案。  
   
--   執行任何的原始檔控制 VSPackage 的功能表命令。  
+- 執行任何的原始檔控制 VSPackage 的功能表命令。  
   
- 原始檔控制 VSPackage 應載入只有它們實際上將會啟動時所需的任何元件使用 （也稱為延遲載入）。  
+  原始檔控制 VSPackage 應載入只有它們實際上將會啟動時所需的任何元件使用 （也稱為延遲載入）。  
   
 ### <a name="automatic-solution-based-vspackage-swapping"></a>自動以解決方案為基礎的 VSPackage 交換  
  您可以手動交換原始檔控制 Vspackage 透過[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]**選項**下的對話方塊**原始檔控制**類別目錄。 交換已指定為特定方案的原始檔控制套件會自動設定為 作用中時開啟該方案的方式自動的方案架構封裝。 每個原始檔控制套件應該實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProvider.SetActive%2A>和<xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProvider.SetInactive%2A>。 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 處理這兩者間切換原始檔控制外掛程式 （實作原始檔控制外掛程式 API） 和原始檔控制 Vspackage。  
@@ -76,15 +76,15 @@ ms.locfileid: "49305782"
 ### <a name="visual-studio-ui-for-package-selection-and-switching"></a>Visual Studio 封裝選取項目，以及切換的 UI  
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 提供的原始檔控制 VSPackage 的 UI 和中的外掛程式選取範圍**選項**下方的對話方塊**原始檔控制**類別目錄。 它可讓使用者選取作用中的原始檔控制外掛程式或 VSPackage。 下拉式清單包括：  
   
--   所有已安裝的原始檔控制套件  
+- 所有已安裝的原始檔控制套件  
   
--   所有的原始檔控制外掛程式  
+- 所有的原始檔控制外掛程式  
   
--   [無] 選項時，會停用原始程式碼控制  
+- [無] 選項時，會停用原始程式碼控制  
   
- 作用中的原始檔控制選擇 UI 會顯示。 VSPackage 選取先前的 vspackage 會隱藏 UI，並顯示新的 UI。 作用中的 VSPackage 會選取每個使用者為基礎。 如果使用者有多個副本[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]同時開啟時，每一個都可能使用不同的使用中 VSPackage。 如果多個使用者登入同一部電腦，每個使用者可以有不同的執行個體[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]開啟每個都有不同的使用中 VSPackage。 當多個執行個體[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]中關閉的原始檔控制 VSPackage 的最後一個開啟的方案會變成預設原始檔控制 VSPackage，要設定在重新啟動作用中的現用使用者。  
+  作用中的原始檔控制選擇 UI 會顯示。 VSPackage 選取先前的 vspackage 會隱藏 UI，並顯示新的 UI。 作用中的 VSPackage 會選取每個使用者為基礎。 如果使用者有多個副本[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]同時開啟時，每一個都可能使用不同的使用中 VSPackage。 如果多個使用者登入同一部電腦，每個使用者可以有不同的執行個體[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]開啟每個都有不同的使用中 VSPackage。 當多個執行個體[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]中關閉的原始檔控制 VSPackage 的最後一個開啟的方案會變成預設原始檔控制 VSPackage，要設定在重新啟動作用中的現用使用者。  
   
- 不同於舊版[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]，IDE 重新啟動已不再切換原始檔控制 Vspackage 的唯一方式。 VSPackage 選項是自動的。 您需要 Windows 使用者權限 （沒有系統管理員或進階使用者），才能切換套件。  
+  不同於舊版[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]，IDE 重新啟動已不再切換原始檔控制 Vspackage 的唯一方式。 VSPackage 選項是自動的。 您需要 Windows 使用者權限 （沒有系統管理員或進階使用者），才能切換套件。  
   
 ## <a name="see-also"></a>另請參閱  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionPersistence>   

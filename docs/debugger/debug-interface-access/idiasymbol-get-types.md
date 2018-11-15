@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_types |Microsoft 文件'
+title: 'Idiasymbol:: Get_types |Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6521d2a7ffdf5bb285f571e0d3975626f34d84d1
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 773144f81e51167016df3dca1b6ea7beedb3661c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31470032"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49951310"
 ---
 # <a name="idiasymbolgettypes"></a>IDiaSymbol::get_types
-擷取這個符號的編譯器特定類型的陣列。  
+擷取這個符號的編緝器特定類型的陣列。  
   
 ## <a name="syntax"></a>語法  
   
@@ -39,16 +39,16 @@ HRESULT get_types (
  [in]保留的資料緩衝區的大小。  
   
  `pcTypes`  
- [out]傳回的型別所撰寫，或者，如果`types`參數是`NULL`，然後可以使用類型的總數。  
+ [out]傳回的型別所撰寫，或者，如果`types`參數是`NULL`，然後可用類型的總數。  
   
  `types[]`  
  [out]陣列，其中是要在以填滿[IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)代表這個符號的所有類型的物件。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。  
+ 如果成功，則傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。  
   
 > [!NOTE]
->  傳回值為`S_FALSE`表示屬性不適用於符號。  
+>  傳回值為`S_FALSE`表示此屬性不適用於符號。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

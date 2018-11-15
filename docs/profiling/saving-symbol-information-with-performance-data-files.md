@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 15a1a6888ca35df54ff6073aefaf686327b4cd8a
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: b5a485baaa1fdeab4a0d4c61b82f5381a931ac85
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31584928"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49897182"
 ---
 # <a name="saving-symbol-information-with-performance-data-files"></a>使用效能資料檔案儲存符號資訊
 
@@ -43,7 +43,7 @@ ms.locfileid: "31584928"
 
 - 如果您已收集類型資料，請將 /SUMMARY:TYPE 加入至 vsperfreport 命令列。
 
- 如果從 Windows 或其他 Microsoft 程式都看不到符號︰
+  如果從 Windows 或其他 Microsoft 程式都看不到符號︰
 
 - 請確定您已設定 Windows 符號快取的路徑。 請執行下列其中一項動作來設定符號快取路徑︰
 

@@ -22,12 +22,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0f2149c1645639111e9e050b88632ed911d1157b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b83a9e86aea02e27242a0c1f02ca3f8459152214
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49248569"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49870181"
 ---
 # <a name="command-window"></a>命令視窗
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -101,22 +101,22 @@ Edit.ReplaceInFiles /case /pattern:regex var[1-3]+ oldpar
   
  在此範例中，  
   
--   `Edit.ReplaceInFiles` 是命令  
+- `Edit.ReplaceInFiles` 是命令  
   
--   `/case` 和 `/pattern:regex` 是切換參數 (前面加上斜線 [/] 字元)  
+- `/case` 和 `/pattern:regex` 是切換參數 (前面加上斜線 [/] 字元)  
   
--   `regex` 是 `/pattern` 切換參數的值；`/case` 切換參數沒有值  
+- `regex` 是 `/pattern` 切換參數的值；`/case` 切換參數沒有值  
   
--   `var[1-3]+` 和 `oldpar` 是參數  
+- `var[1-3]+` 和 `oldpar` 是參數  
   
-    > [!NOTE]
-    >  任何包含空格的命令、參數、切換參數或值的兩端都必須有雙引號。  
+  > [!NOTE]
+  >  任何包含空格的命令、參數、切換參數或值的兩端都必須有雙引號。  
   
- 在命令列上，切換參數和參數的位置可以自由地互換，例外是 [Shell](../../ide/reference/shell-command.md) 命令，其切換參數和參數必須為特定順序。  
+  在命令列上，切換參數和參數的位置可以自由地互換，例外是 [Shell](../../ide/reference/shell-command.md) 命令，其切換參數和參數必須為特定順序。  
   
- 命令所支援的每個切換參數幾乎都會有兩種形式：簡短 (一個字元) 和完整形式。 多個簡短形式的切換參數可以合併成一個群組。 例如，`/p /g /m` 可以改成表示為 `/pgm`。  
+  命令所支援的每個切換參數幾乎都會有兩種形式：簡短 (一個字元) 和完整形式。 多個簡短形式的切換參數可以合併成一個群組。 例如，`/p /g /m` 可以改成表示為 `/pgm`。  
   
- 如果將多個簡短形式的切換參數合併成一個群組，並指定值，則該值會套用至每個切換參數。 例如，`/pgm:123` 等同於 `/p:123 /g:123 /m:123`。 如果群組中的任何切換參數不接受值，就會發生錯誤。  
+  如果將多個簡短形式的切換參數合併成一個群組，並指定值，則該值會套用至每個切換參數。 例如，`/pgm:123` 等同於 `/p:123 /g:123 /m:123`。 如果群組中的任何切換參數不接受值，就會發生錯誤。  
   
 ## <a name="escape-characters"></a>逸出字元  
  命令列中的插入號 (^) 字元表示緊接著的字元會解譯為常值字元，而不是控制字元。 這可用來在參數或參數的值中嵌入一般引號 (")、空格、前置斜線、插入號或任何其他常值字元，但參數名稱除外。 例如，套用至物件的  

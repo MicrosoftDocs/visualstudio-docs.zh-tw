@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 8f5f13915d248ff59e7a3ca1bde8ad4ee92c201e
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: d54c599d812bfff393cbc4ccf330aa35b902f38f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380350"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49950013"
 ---
 # <a name="manage-load-test-results-in-the-load-test-results-repository"></a>管理負載測試結果存放庫中的負載測試結果
 
@@ -44,7 +44,7 @@ ms.locfileid: "39380350"
 ## <a name="load-test-analyzer-tasks"></a>負載測試分析器工作
 
 |工作|相關主題|
-|-----------|-----------------------|
+|-|-----------------------|
 |**設定負載測試結果儲存機制：** 您可以在 SQL 資料庫上設定負載測試結果儲存機制。 **注意：** 您也可以在安裝測試控制器時建立負載測試儲存機制。 如需詳細資訊，請參閱[安裝和設定測試代理程式](../test/lab-management/install-configure-test-agents.md)。||
 |**選取及檢視結果儲存機制：** 您可以選取特定的結果儲存機制。 您不必侷限於本機結果存放區。 負載測試通常會在遠端代理程式電腦集合上執行。 從代理程式或本機電腦產生的測試結果，可以儲存在任何已經存有您所建立之負載測試結果存放區的 SQL Server 上。 在任何一種情況下，您都必須使用 [管理測試控制器] 視窗來識別要儲存負載測試結果的位置。|-   [如何：選取負載測試結果存放庫](../test/how-to-select-a-load-test-results-repository.md)<br />-   [如何：存取負載測試結果以進行分析](../test/how-to-access-load-test-results-for-analysis.md)|
 |**從儲存機制中刪除負載測試結果：** 您可以使用 [開啟和管理負載測試結果] 對話方塊，從 [負載測試編輯器] 移除負載測試結果。|-   [如何：從存放庫中刪除負載測試結果](../test/how-to-delete-load-test-results-from-a-repository.md)|

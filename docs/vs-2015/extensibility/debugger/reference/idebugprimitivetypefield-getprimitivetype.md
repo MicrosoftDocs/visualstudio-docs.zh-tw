@@ -16,12 +16,12 @@ ms.assetid: a186c922-bbfe-478c-a744-b21eb4672d8f
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 617a4fc8d672b916a62d0958780ebf5c0750180e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 21b8aae658e03a5b30bbfc8cf1fcfadb8a331234
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49246008"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49819715"
 ---
 # <a name="idebugprimitivetypefieldgetprimitivetype"></a>IDebugPrimitiveTypeField::GetPrimitiveType
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

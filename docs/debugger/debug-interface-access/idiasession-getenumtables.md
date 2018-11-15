@@ -1,5 +1,5 @@
 ---
-title: 'Idiasession:: Getenumtables |Microsoft 文件'
+title: 'Idiasession:: Getenumtables |Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7556999e1455dcfa0d79b131ee4661a77732990f
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 4f68da36fc527e0390789df22ed4550a6165adbb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31460937"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49885833"
 ---
 # <a name="idiasessiongetenumtables"></a>IDiaSession::getEnumTables
 擷取包含在符號存放區中的所有資料表的列舉值。  
@@ -34,13 +34,13 @@ HRESULT getEnumTables (
   
 #### <a name="parameters"></a>參數  
  `ppEnumTables`  
- [out]傳回[IDiaEnumTables](../../debugger/debug-interface-access/idiaenumtables.md)物件。 您可以使用此介面來列舉在符號存放區中的資料表。  
+ [out]傳回[IDiaEnumTables](../../debugger/debug-interface-access/idiaenumtables.md)物件。 您可以使用這個介面來列舉在符號存放區中的資料表。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
   
 ## <a name="example"></a>範例  
- 本範例將示範會使用一般函式`getEnumTables`方法，以取得特定的列舉值物件。 如果找到的列舉值，則函數會傳回指標可以轉換所需的介面;否則，函數會傳回`NULL`。  
+ 此範例顯示使用的一般函式`getEnumTables`方法，以取得特定的列舉值物件。 如果找到列舉值，則函數會傳回的指標可以轉換到所需的介面;否則，函數會傳回`NULL`。  
   
 ```C++  
 IUnknown *GetTable(IDiaSession *pSession, REFIID iid)  

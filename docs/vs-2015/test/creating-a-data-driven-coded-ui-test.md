@@ -15,12 +15,12 @@ ms.assetid: 5838f02d-001f-49ce-adce-c9ea1afaec2f
 caps.latest.revision: 58
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 09cf6f69348c08ec284e074feea8d9a33c488f0b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d3674d6ccbda89a2a3ee1de551587ba034ba51c7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49229460"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49932620"
 ---
 # <a name="creating-a-data-driven-coded-ui-test"></a>建立資料驅動自動程式化 UI 測試
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -204,13 +204,13 @@ ms.locfileid: "49229460"
   
 #### <a name="step-5--run-the-data-driven-test"></a>步驟 5 - 執行資料驅動測試  
   
-1.  重新執行測試，確認測試現在是資料驅動。  
+1. 重新執行測試，確認測試現在是資料驅動。  
   
-     您應該會看到使用 .csv 檔案中的值透過三個反覆項目的測試回合。 驗證也應該會運作，而且測試在 [測試總管] 中應該顯示為通過。  
+    您應該會看到使用 .csv 檔案中的值透過三個反覆項目的測試回合。 驗證也應該會運作，而且測試在 [測試總管] 中應該顯示為通過。  
   
- **指引**  
+   **指引**  
   
- 如需詳細資訊，請參閱[使用 Visual Studio 2012 測試持續傳遞 – 第 2 章：單元測試：內部測試 (英文)](http://go.microsoft.com/fwlink/?LinkID=255188) 和[使用 Visual Studio 2012 測試持續傳遞 – 第 5 章：自動化系統測試 (英文)](http://go.microsoft.com/fwlink/?LinkID=255196)  
+   如需詳細資訊，請參閱[使用 Visual Studio 2012 測試持續傳遞 – 第 2 章：單元測試：內部測試 (英文)](http://go.microsoft.com/fwlink/?LinkID=255188) 和[使用 Visual Studio 2012 測試持續傳遞 – 第 5 章：自動化系統測試 (英文)](http://go.microsoft.com/fwlink/?LinkID=255196)  
   
 ## <a name="q--a"></a>問與答  
   

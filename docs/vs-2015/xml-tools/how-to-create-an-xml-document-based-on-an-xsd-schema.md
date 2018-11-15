@@ -14,12 +14,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 54d7ead9f759e990b741ac9c5219af693d10a412
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: bbecacc0729c936489c05d3bb59260341a08d314
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49287288"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49884221"
 ---
 # <a name="how-to-create-an-xml-document-based-on-an-xsd-schema"></a>HOW TO：根據 XSD 結構描述建立 XML 文件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,23 +29,23 @@ ms.locfileid: "49287288"
   
  您可以針對下列案例使用此選項：  
   
--   了解結構描述中各種建構的使用方式。  
+- 了解結構描述中各種建構的使用方式。  
   
--   確認結構描述進行預期的作業。  
+- 確認結構描述進行預期的作業。  
   
- **產生範例 XML**功能僅可用於全域項目，而且需要有效的 XML 結構描述設定。  
+  **產生範例 XML**功能僅可用於全域項目，而且需要有效的 XML 結構描述設定。  
   
- 這項功能通常會產生有效的 XML 文件。 不過，如果結構描述包含下列其中一個或多個項目，範例可能就會無效：  
+  這項功能通常會產生有效的 XML 文件。 不過，如果結構描述包含下列其中一個或多個項目，範例可能就會無效：  
   
--   `xs:key`、`xs:keyref` 和 `xs:unique` 識別條件約束。  
+- `xs:key`、`xs:keyref` 和 `xs:unique` 識別條件約束。  
   
--   `xs:pattern` Facet。  
+- `xs:pattern` Facet。  
   
--   `xs:QName` 型別的列舉型別 (Enumeration)。  
+- `xs:QName` 型別的列舉型別 (Enumeration)。  
   
--   `xs:ENTITY`、`xs:ENTITIES` 和 `xs:NOTATION` 型別。  
+- `xs:ENTITY`、`xs:ENTITIES` 和 `xs:NOTATION` 型別。  
   
- 此外，請注意，只有當列舉型別出現在 `xs:base64Binary` 的結構描述時，系統才會產生該型別的內容。  
+  此外，請注意，只有當列舉型別出現在 `xs:base64Binary` 的結構描述時，系統才會產生該型別的內容。  
   
 ### <a name="to-generate-an-xml-instance-document-based-on-the-xsd-file"></a>根據 XSD 檔案產生 XML 執行個體文件  
   

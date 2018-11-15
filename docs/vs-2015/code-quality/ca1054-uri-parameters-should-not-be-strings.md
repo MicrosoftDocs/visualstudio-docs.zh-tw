@@ -20,15 +20,16 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: a5e986a7fdf4f215490ec271fb9670d2ce9eb2e2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: eace9811eb7f4602e204bd62563c23cad39e5a5d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49291547"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49899340"
 ---
 # <a name="ca1054-uri-parameters-should-not-be-strings"></a>CA1054：URI 參數不應該為字串
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|UriParametersShouldNotBeStrings|

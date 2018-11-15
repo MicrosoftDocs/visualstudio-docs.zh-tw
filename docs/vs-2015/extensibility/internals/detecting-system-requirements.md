@@ -16,12 +16,12 @@ ms.assetid: 0ba94acf-bf0b-4bb3-8cca-aaac1b5d6737
 caps.latest.revision: 51
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e1956130203498d32d1ee39d67121f7797dd41fc
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7d92d895b0986a8a6df888d4bea258f9dab067e8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49187469"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49880555"
 ---
 # <a name="detecting-system-requirements"></a>偵測系統需求
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -31,13 +31,13 @@ VSPackage 才能運作，除非已安裝 Visual Studio。 當您使用 Microsoft
 ## <a name="detecting-visual-studio-editions"></a>偵測 Visual Studio 版本  
  若要判斷是否已安裝的 Visual Studio 版本，確認安裝登錄機碼的值 (REG_DWORD) 1 在適當的資料夾中下, 表所示。 請注意，Visual Studio 版本的階層：  
   
-1.  企業  
+1. 企業  
   
-2.  Professional  
+2. Professional  
   
-3.  社群  
+3. 社群  
   
- 安裝 「 更高 」 的版本時，會加入該版本也與 「 低 」 版本的登錄機碼。 也就是如果安裝 Enterprise edition，則安裝機碼設為 1 的 Enterprise、 以及 Professional 及 Community 版。 因此，您必須只會檢查您所需要的 「 高 」 版本。  
+   安裝 「 更高 」 的版本時，會加入該版本也與 「 低 」 版本的登錄機碼。 也就是如果安裝 Enterprise edition，則安裝機碼設為 1 的 Enterprise、 以及 Professional 及 Community 版。 因此，您必須只會檢查您所需要的 「 高 」 版本。  
   
 > [!NOTE]
 >  在登錄編輯程式的 64 位元版本，32 位元的金鑰會顯示下 HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\\。 Visual Studio 金鑰受到 HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\DevDiv\vs\Servicing\\。  

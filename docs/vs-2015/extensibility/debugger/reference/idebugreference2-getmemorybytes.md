@@ -17,12 +17,12 @@ ms.assetid: 2006cb2b-1dfa-4a2d-8e3e-db2ce0302e0d
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 16448a792e38cabcb31c073da9c8ad57d81009b6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 508d627066f34c0561160e334240f5e91e464606
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49291768"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49851201"
 ---
 # <a name="idebugreference2getmemorybytes"></a>IDebugReference2::GetMemoryBytes
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

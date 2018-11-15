@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c309dcfd78ae0181905f691e1c36f407e763fc93
-ms.sourcegitcommit: a749c287ec7d54148505978e8ca55ccd406b71ee
+ms.openlocfilehash: b44352996c1f6cf343f8100abb4f75814765c22a
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46542477"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50672986"
 ---
 # <a name="office-primary-interop-assemblies"></a>Office 主要 Interop 組件
 
@@ -38,7 +38,7 @@ ms.locfileid: "46542477"
   
 - [Microsoft Office 應用程式之主要 Interop 組件的完整清單](#pialist)  
   
-如需有關主要 interop 組件的詳細資訊，請參閱 <<c0> [ 主要 interop 組件](http://msdn.microsoft.com/b977a8be-59a0-40a0-a806-b11ffba5c080)。  
+如需有關主要 interop 組件的詳細資訊，請參閱 <<c0> [ 主要 interop 組件](/previous-versions/dotnet/netframework-4.0/aax7sdch(v=vs.100))。  
 
 <a name="separateassemblies"></a> 
 

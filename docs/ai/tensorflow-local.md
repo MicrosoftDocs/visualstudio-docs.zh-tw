@@ -12,16 +12,17 @@ ms.service: multiple
 ms.technology: vs-ai-tools
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f60fa346df7d2b9e89f3d6905e273d0191bdf3b
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 4bca48113349607de2f5ada53356f1d24eb82088
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44281737"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49933985"
 ---
 # <a name="train-a-tensorflow-model-locally"></a>在本機定型 TensorFlow 模型
 
 在本快速入門中，我們在 Visual Studio Tools for AI 本機使用 [MNIST](http://yann.lecun.com/exdb/mnist/) 資料集來定型 TensorFlow 模型。
+
 MNIST 資料庫具有 60,000 個範例的定型集，以及 10,000 個手寫數字範例的測試集。
 
 ## <a name="prerequisites"></a>必要條件
@@ -30,7 +31,8 @@ MNIST 資料庫具有 60,000 個範例的定型集，以及 10,000 個手寫數�
 
 ### <a name="google-tensorflow"></a>Google TensorFlow
 
-在終端機中執行下列命令。
+在終端機中執行下列命令：
+
 ```cmd
 C:\>pip.exe install tensorflow
 ```
@@ -47,9 +49,9 @@ C:\>pip.exe install tensorflow
 
 - 從下載的範例存放庫中選取 **TensorFlow 範例**資料夾，然後開啟 **TensorflowExamples.sln** 檔案。
 
-![開啟專案](media\tensorflow-local\open-project.png)
+   ![開啟專案](media/tensorflow-local/open-project.png)
 
-![開啟方案](media\tensorflow-local\open-solution.png)
+   ![開啟方案](media/tensorflow-local/open-solution.png)
 
 - 在 [方案總管] 中，找到 MNIST 專案並按一下滑鼠右鍵，然後選取 [設定為啟始專案]。
 
@@ -57,7 +59,7 @@ C:\>pip.exe install tensorflow
 
 - 輸出會列印於主控台中。
 
-![主控台中的範例輸出](media\tensorflow-local\console-output.png)
+   ![主控台中的範例輸出](media/tensorflow-local/console-output.png)
 
 > [!div class="nextstepaction"]
 > [在雲端中定型 TensorFlow 模型](tensorflow-vm.md)

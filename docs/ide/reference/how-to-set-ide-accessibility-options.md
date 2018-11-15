@@ -13,12 +13,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f977c30f1f4d6db7ce165de8483c8fd1977922d8
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c5d0149be4996f762373aae77d7535dbf8e02809
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31952099"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49909792"
 ---
 # <a name="how-to-set-ide-accessibility-options"></a>如何：設定 IDE 協助工具選項
 
@@ -46,7 +46,7 @@ ms.locfileid: "31952099"
 
  您可以為以文字為基礎的工具視窗變更設定，例如 [命令] 視窗、[即時運算] 視窗，和 [輸出] 視窗，請使用 [工具] 對話方塊的 [環境] 選項中的 [字型和色彩] 窗格。 在 [顯示設定] 下拉式清單中選取 [所有文字工具視窗] 時，預設值會列為 [項目前景] 和 [項目背景] 下拉式清單中的 [預設]。 您也可以在編輯器中變更文字顯示方式的設定。
 
-##### <a name="to-change-the-size-of-text-in-text-based-tool-windows-and-editors"></a>變更以文字為基礎的工具視窗和編輯器中的文字大小
+#### <a name="to-change-the-size-of-text-in-text-based-tool-windows-and-editors"></a>變更以文字為基礎的工具視窗和編輯器中的文字大小
 
 1.  從 [工具]  功能表選擇 [選項] 。
 
@@ -69,7 +69,7 @@ ms.locfileid: "31952099"
 6.  在 [大小] 中，選取新的字型大小。
 
     > [!NOTE]
-    >  若要重設以文字為基礎之工具視窗和編輯器的文字大小，請選擇 [使用預設值]。
+    > 若要重設以文字為基礎之工具視窗和編輯器的文字大小，請選擇 [使用預設值]。
 
 7.  選擇 [確定] 。
 
@@ -78,10 +78,9 @@ ms.locfileid: "31952099"
  您也可以選擇變更編輯器中文字、邊界指標、空白字元和程式碼項目的預設色彩。
 
 > [!NOTE]
-> 若要對您作業系統上的所有應用程式視窗使用高對比的色彩，請按左 **ALT+** 左 **SHIFT+PRINT SCREEN**。 如果 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 已開啟，請關閉並重新開啟 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]，完整實作高對比色彩。
+> 若要對您作業系統上的所有應用程式視窗使用高對比的色彩，請按左 <strong>ALT+</strong>左 **SHIFT+PRINT SCREEN**。 如果 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 已開啟，請關閉並重新開啟 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]，完整實作高對比色彩。
 
-
-##### <a name="to-change-the-color-of-items-in-the-editor"></a>變更編輯器中項目的色彩
+#### <a name="to-change-the-color-of-items-in-the-editor"></a>變更編輯器中項目的色彩
 
 1.  從 [工具]  功能表選擇 [選項] 。
 
@@ -99,7 +98,7 @@ ms.locfileid: "31952099"
 
  若要改善工具列的可用性和協助工具，您可以為工具列按鈕新增文字。
 
-#### <a name="to-assign-text-to-toolbar-buttons"></a>將文字指派給工具列按鈕
+### <a name="to-assign-text-to-toolbar-buttons"></a>將文字指派給工具列按鈕
 
 1.  從 [工具] 功能表選擇 [自訂]。
 
@@ -113,7 +112,7 @@ ms.locfileid: "31952099"
 
 6.  選擇 [影像和文字]。
 
-#### <a name="to-modify-the-displayed-text-in-a-button"></a>修改按鈕的顯示文字
+### <a name="to-modify-the-displayed-text-in-a-button"></a>修改按鈕的顯示文字
 
 1.  重新選取 [修改選取項目]。
 

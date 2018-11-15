@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f0c18e4e895d8a0563699cf08e5a49fdecc973ab
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 4da159ae0fcb4347052efcea5d0dbd24d5ccd8f1
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39152255"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219233"
 ---
 # <a name="update-an-existing-application-for-msbuild-15"></a>MSBuild 15 的現有應用程式更新
 
@@ -40,7 +40,7 @@ ms.locfileid: "39152255"
 
 #### <a name="use-nuget-packages-preferred"></a>使用 NuGet 套件 (慣用)
 
-這些指示假設您使用 [PackageReference 樣式的 NuGet 參考](https://docs.microsoft.com/en-us/nuget/consume-packages/package-references-in-project-files)。
+這些指示假設您使用 [PackageReference 樣式的 NuGet 參考](https://docs.microsoft.com/nuget/consume-packages/package-references-in-project-files)。
 
 變更您的專案檔案，以從其 NuGet 套件參考 MSBuild 組件。 指定 `ExcludeAssets=runtime` 以告訴 NuGet，只有在建置時需要組件，且不應複製到輸出目錄。
 
@@ -93,6 +93,6 @@ MSBuild 套件的主要和次要版本，必須小於或等於您要支援的 Vi
 MSBuildLocator.RegisterDefaults();
 ```
 
-(在您的應用程式啟動程式碼中)。
+您的應用程式啟動程式碼。
 
 如果您想要對 MSBuild 載入進行細部控制，您可以選取 `MSBuildLocator.QueryVisualStudioInstances()` 的結果，以手動方式傳遞給 `MSBuildLocator.RegisterInstance()`，但通常不需要這個動作。

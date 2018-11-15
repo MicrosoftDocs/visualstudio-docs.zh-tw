@@ -25,12 +25,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 4184e8400c50c518b461a0877f06c54db5f84927
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e8bd1101647973a7a8f206159f8910a4e633e5da
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49217956"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49893386"
 ---
 # <a name="walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt"></a>逐步解說：建立自訂啟動載入器以顯示隱私權提示
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,23 +49,23 @@ ms.locfileid: "49217956"
   
 #### <a name="to-create-a-consent-dialog-box"></a>若要建立顯示同意對話方塊  
   
-1.  在 [檔案]  功能表中，指向 [新增] ，然後按一下 [專案] 。  
+1. 在 [檔案]  功能表中，指向 [新增] ，然後按一下 [專案] 。  
   
-2.  在 **新的專案** 對話方塊中，按一下**Windows**，然後按一下  **WindowsFormsApplication**。  
+2. 在 **新的專案** 對話方塊中，按一下**Windows**，然後按一下  **WindowsFormsApplication**。  
   
-3.  針對**名稱**，型別**ConsentDialog**，然後按一下**確定**。  
+3. 針對**名稱**，型別**ConsentDialog**，然後按一下**確定**。  
   
-4.  在設計師中，按一下 [表單]。  
+4. 在設計師中，按一下 [表單]。  
   
-5.  在 **屬性**視窗中，變更**文字**屬性設**更新同意對話方塊**。  
+5. 在 **屬性**視窗中，變更**文字**屬性設**更新同意對話方塊**。  
   
-6.  中**工具箱**，展開**所有的 Windows Form**，然後將拖曳**標籤**控制項加入表單。  
+6. 中**工具箱**，展開**所有的 Windows Form**，然後將拖曳**標籤**控制項加入表單。  
   
-7.  在設計工具中，按一下 label 控制項。  
+7. 在設計工具中，按一下 label 控制項。  
   
-8.  在 **屬性**視窗中，變更**文字**下的屬性**外觀**如下：  
+8. 在 **屬性**視窗中，變更**文字**下的屬性**外觀**如下：  
   
-     您即將安裝的應用程式會檢查在網站上最新的更新。 藉由按一下 「 我同意 」，您可以授權檢查，並自動從網際網路安裝更新的應用程式。  
+    您即將安裝的應用程式會檢查在網站上最新的更新。 藉由按一下 「 我同意 」，您可以授權檢查，並自動從網際網路安裝更新的應用程式。  
   
 9. 在 **工具箱**，拖曳**核取方塊**中間的表單控制項。  
   
@@ -118,28 +118,28 @@ ms.locfileid: "49217956"
   
      Visual Basic 開發人員只：  
   
-    1.  在 **方案總管**，按一下**ConsentDialog**。  
+    1. 在 **方案總管**，按一下**ConsentDialog**。  
   
-    2.  在上**專案**功能表上，按一下**加入模組**，然後按一下 **新增**。  
+    2. 在上**專案**功能表上，按一下**加入模組**，然後按一下 **新增**。  
   
-    3.  在 Module1.vb 的程式碼檔案中，新增下列程式碼。  
+    3. 在 Module1.vb 的程式碼檔案中，新增下列程式碼。  
   
-         [!code-vb[ConsentDialog#7](../snippets/visualbasic/VS_Snippets_ProTools/consentdialog/vb/module1.vb#7)]  
+        [!code-vb[ConsentDialog#7](../snippets/visualbasic/VS_Snippets_ProTools/consentdialog/vb/module1.vb#7)]  
   
-    4.  在上**專案** 功能表中，按一下**ConsentDialog 屬性**，然後按一下**應用程式** 索引標籤。  
+    4. 在上**專案** 功能表中，按一下**ConsentDialog 屬性**，然後按一下**應用程式** 索引標籤。  
   
-    5.  取消核取**啟用應用程式架構**。  
+    5. 取消核取**啟用應用程式架構**。  
   
-    6.  在 **啟始物件**下拉式選單中，選取**Module1**。  
+    6. 在 **啟始物件**下拉式選單中，選取**Module1**。  
   
-        > [!NOTE]
-        >  停用的應用程式架構，會停用功能，例如 Windows XP 視覺化樣式、 應用程式事件、 啟動顯示畫面、 單一執行個體的應用程式等等。 如需詳細資訊，請參閱[專案設計工具、應用程式頁 (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)。  
+       > [!NOTE]
+       >  停用的應用程式架構，會停用功能，例如 Windows XP 視覺化樣式、 應用程式事件、 啟動顯示畫面、 單一執行個體的應用程式等等。 如需詳細資訊，請參閱[專案設計工具、應用程式頁 (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)。  
   
-     適用於 Visual C# 只有開發人員：  
+       適用於 Visual C# 只有開發人員：  
   
-     開啟 Program.cs 程式碼檔案，並加入下列程式碼。  
+       開啟 Program.cs 程式碼檔案，並加入下列程式碼。  
   
-     [!code-csharp[ConsentDialog#5](../snippets/csharp/VS_Snippets_ProTools/consentdialog/cs/program.cs#5)]  
+       [!code-csharp[ConsentDialog#5](../snippets/csharp/VS_Snippets_ProTools/consentdialog/cs/program.cs#5)]  
   
 26. 在 **建置**功能表上，按一下**和 BuildSolution**。  
   

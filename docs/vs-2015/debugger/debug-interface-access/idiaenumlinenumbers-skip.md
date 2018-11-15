@@ -18,12 +18,12 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c95aa84a9728b0c4df03a9f17f43af4c80c1d214
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: dbdef7bcc34bacee22f95f0b59ab7bf0a5e45436
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49268576"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49936039"
 ---
 # <a name="idiaenumlinenumbersskip"></a>IDiaEnumLineNumbers::Skip
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

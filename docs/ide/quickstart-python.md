@@ -1,7 +1,7 @@
 ---
 title: 快速入門：使用 Visual Studio 建立 Python Web 應用程式
 description: 在此快速入門中，您將使用 Visual Studio 和 Flask 架構來建立一個簡易的 Python Web 應用程式。
-ms.date: 06/27/2018
+ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: quickstart
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d75ce507b34337c6311fe66c95732c6f6cd044ba
-ms.sourcegitcommit: 7a11a094a353f2e2a2077ad863ca4c0fb97f7ec5
+ms.openlocfilehash: 025adc3a99e2c5aabe2588852885e537553ddce6
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/18/2018
-ms.locfileid: "39131982"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219272"
 ---
 # <a name="quickstart-create-your-first-python-web-app-using-visual-studio"></a>快速入門：使用 Visual Studio 建立您的第一個 Python Web 應用程式
 
@@ -124,19 +124,19 @@ Python 中的 Web 應用程式幾乎一律使用許多可用的 Python 程式庫
 
     ![在方案總管中設定專案的啟動檔](media/quickstart-python-05-set-as-startup-file.png)
 
-1. 以滑鼠右鍵按一下 [方案總管] 中的專案，然後選取 [屬性]。 然後選取 [偵錯] 索引標籤，將 [連接埠號碼] 屬性設定為 `4449`。 這個步驟可確保 Visual Studio 以 `localhost:4449` 啟動瀏覽器，以符合程式碼中的 `app.run` 引數。
+2. 以滑鼠右鍵按一下 [方案總管] 中的專案，然後選取 [屬性]。 然後選取 [偵錯] 索引標籤，將 [連接埠號碼] 屬性設定為 `4449`。 這個步驟可確保 Visual Studio 以 `localhost:4449` 啟動瀏覽器，以符合程式碼中的 `app.run` 引數。
 
-1. 選取 [偵錯] > [啟動但不偵錯] (**Ctrl**+**F5**)，這樣可以將所做的變更儲存至檔案並執行應用程式。
+3. 選取 [偵錯] > [啟動但不偵錯] (**Ctrl**+**F5**)，這樣可以將所做的變更儲存至檔案並執行應用程式。
 
-1. 命令視窗隨即出現並顯示訊息「* 在 https://localhost:4449/ 中執行」，然後瀏覽器視窗應會開啟到 `localhost:4449`，您會看到訊息 "Hello, Python!" GET 要求也會出現在命令視窗中，狀態為 200。
+4. 命令視窗隨即出現並顯示訊息「* 在 <https://localhost:4449/> 中執行」，然後瀏覽器視窗應會開啟到 `localhost:4449`，您會看到訊息 "Hello, Python!" GET 要求也會出現在命令視窗中，狀態為 200。
 
     如果瀏覽器未自動開啟，請啟動您選擇的瀏覽器並瀏覽到 `localhost:4449`。
 
     如果您在命令視窗中只看到 Python 互動式殼層，或該視窗短暫顯示在畫面上，請確定您已在前文的步驟 1 中將 *app.py* 設定為啟動檔案。
 
-1. 瀏覽到 `localhost:4449/hello` 以測試 `/hello` 資源的裝飾項目也適用。 GET 要求再次出現在命令視窗中，狀態為 200。 您可視需要自行嘗試一些其他 URL，查看它們在命令視窗中顯示 404 狀態碼。
+5. 瀏覽到 `localhost:4449/hello` 以測試 `/hello` 資源的裝飾項目也適用。 GET 要求再次出現在命令視窗中，狀態為 200。 您可視需要自行嘗試一些其他 URL，查看它們在命令視窗中顯示 404 狀態碼。
 
-1. 關閉命令視窗以停止應用程式，然後關閉瀏覽器視窗。
+6. 關閉命令視窗以停止應用程式，然後關閉瀏覽器視窗。
 
 **問題：啟動但不偵錯命令和開始偵錯之間有何差異？**
 
