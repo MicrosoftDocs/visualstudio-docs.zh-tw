@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaSymbol::get_hasAlloca method
 ms.assetid: 3b9fb747-670b-4da7-bb70-612f7b911786
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a8040301135b0feaa3fa55a67f4852fe471c2ee2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 68ff3d14a8d306156c29cd88bad99c6b2ec38348
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49179708"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51756364"
 ---
 # <a name="idiasymbolgethasalloca"></a>IDiaSymbol::get_hasAlloca
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "49179708"
 ## <a name="syntax"></a>語法  
   
 ```  
-[C++]HRESULT get_hasAlloca(   BOOL *pFlag);  
+[C++]HRESULT get_hasAlloca(   BOOL *pFlag);  
 ```  
   
 #### <a name="parameters"></a>參數  

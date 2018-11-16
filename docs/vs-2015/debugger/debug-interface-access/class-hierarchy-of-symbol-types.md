@@ -15,15 +15,15 @@ helpviewer_keywords:
 - symbols [DIA SDK], class hierarchies
 ms.assetid: 0ccd6990-4654-44cd-a6f3-bdd82fe90f6c
 caps.latest.revision: 13
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a6fc7ee76ae8f7b1490d61cc0cc0022b719b0d7a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4c400479f761cb7d1bbe02c1aedade916da5596a
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49284033"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51793031"
 ---
 # <a name="class-hierarchy-of-symbol-types"></a>符號類型的類別階層架構
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

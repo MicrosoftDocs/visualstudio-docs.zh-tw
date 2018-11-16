@@ -15,12 +15,12 @@ ms.assetid: 21547ba7-6e81-44df-9277-265bf34f877a
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2d45f1514b34e69b0b93fb7932b85a5b656f4c9a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 073e8a2e7ff13dad0e413aa47b7875260f612cd2
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49263584"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51773791"
 ---
 # <a name="opening-a-dynamic-tool-window"></a>開啟動態工具視窗
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

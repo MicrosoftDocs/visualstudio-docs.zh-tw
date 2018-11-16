@@ -17,15 +17,15 @@ helpviewer_keywords:
 - DIA SDK, reference
 ms.assetid: 7cdbbce1-8b59-43ce-b6aa-a948bb4d7148
 caps.latest.revision: 12
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c983390c596129cd2307cd03d217f875fd639c1f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: fd4d86aac5e32a29893f87effe60a486bca141b3
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49249403"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51735538"
 ---
 # <a name="debug-interface-access-sdk-reference"></a>偵錯介面存取 SDK 參考
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

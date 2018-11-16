@@ -17,12 +17,12 @@ ms.assetid: 91a06ee7-253a-4215-be22-04bf57305aa8
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4e34f4397adf570c4e32aad240b2375614b3f91d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 781a0d28c9c1995364f7748c95db5d34c318a450
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49877890"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51732202"
 ---
 # <a name="idebugdocumentposition2getrange"></a>IDebugDocumentPosition2::GetRange
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,14 +32,14 @@ ms.locfileid: "49877890"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT GetRange(   
+HRESULT GetRange(   
    TEXT_POSITION* pBegPosition,  
    TEXT_POSITION* pEndPosition  
 );  
 ```  
   
 ```csharp  
-int GetRange(   
+int GetRange(   
    TEXT_POSITION[] pBegPosition,  
    TEXT_POSITION[] pEndPosition  
 );  

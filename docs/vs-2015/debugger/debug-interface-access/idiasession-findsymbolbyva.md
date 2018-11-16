@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaSession::findSymbolByVA method
 ms.assetid: 0350df23-9a5d-4e8d-8c26-7f571d8fb1af
 caps.latest.revision: 13
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 63ca819f930d87610135c07fa8aa42061ac7bb18
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4109d7100f9e2f7e4040ceaba2c93bb04aa59b80
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49889278"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51764902"
 ---
 # <a name="idiasessionfindsymbolbyva"></a>IDiaSession::findSymbolByVA
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "49889278"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT findSymbolByVA (   
+HRESULT findSymbolByVA (   
    ULONGLONG    va,  
    SymTagEnum   symtag,  
    IDiaSymbol** ppSymbol  
