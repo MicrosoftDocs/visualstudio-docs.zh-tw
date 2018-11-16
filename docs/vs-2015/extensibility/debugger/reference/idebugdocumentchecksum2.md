@@ -15,12 +15,12 @@ ms.assetid: 6d22fa94-21aa-46cb-b5b5-32a6399ebb20
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e1655e33c9e1a69431a2e901772231f5f2b6c6ab
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2b72a83a77b8175efc591e4e822b2d0d62be6a64
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49189562"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51751988"
 ---
 # <a name="idebugdocumentchecksum2"></a>IDebugDocumentChecksum2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

@@ -15,15 +15,15 @@ helpviewer_keywords:
 - Concurrency Visualizer, Sleep Time
 ms.assetid: 3ddb96f9-9bda-4a68-ad4d-ef488a0a68dc
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 92e19fff86d61c033ab49ea77de6fd395f00beb0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6f9b86ea0fa1b7880893e4d7300efbe51a029ce7
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49245255"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51801793"
 ---
 # <a name="sleep-time"></a>睡眠時間
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

@@ -16,12 +16,12 @@ ms.assetid: f7fe9a7e-f669-4642-ad5d-186b2e6e6ec9
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 41ea3342f19639a7051e5c9dfb641620b1b6688b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8f5a4bbd24e571100dfc708d7c34f87b6c84adcf
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49821990"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51736214"
 ---
 # <a name="designer-initialization-and-metadata-configuration"></a>設計工具初始化和中繼資料組態
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

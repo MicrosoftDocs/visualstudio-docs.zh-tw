@@ -17,12 +17,12 @@ ms.assetid: fed09686-caa6-4efc-851e-a0432019e9d0
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: addf9bd7ead2c3ff877472ca41f23e65e1f5269e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f0f9c35150147e3db45e56012101f62f05566716
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49940812"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51748902"
 ---
 # <a name="unmanagedaddressphysical"></a>UNMANAGED_ADDRESS_PHYSICAL
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

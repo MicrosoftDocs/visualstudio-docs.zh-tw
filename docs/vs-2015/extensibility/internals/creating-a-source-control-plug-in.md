@@ -17,12 +17,12 @@ ms.assetid: c7e69fa4-150e-469a-a6fc-fa1260bdbb07
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 963e721c2718b3b7cc4786f7a5dd3d5cde38910c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 04f8cc2f165ddbce41055bc087e1449d3be8ab9e
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49197063"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51804412"
 ---
 # <a name="creating-a-source-control-plug-in"></a>建立原始檔控制外掛程式
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

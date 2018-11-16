@@ -17,12 +17,12 @@ ms.assetid: e62e8e83-acbb-4c52-aedf-ffbd4670db29
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 01349617bfb0ad1ecec2a0825831b79752eea049
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f35b1822c2185080bb150aeaf4352135a61d2ef9
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49921741"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51741479"
 ---
 # <a name="idebugprogramprovider2getproviderprogramnode"></a>IDebugProgramProvider2::GetProviderProgramNode
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,24 +32,24 @@ ms.locfileid: "49921741"
 ## <a name="syntax"></a>語法  
   
 ```cpp  
-HRESULT GetProviderProgramNode(  
-   PROVIDER_FLAGS       Flags,  
-   IDebugDefaultPort2*  pPort,  
-   AD_PROCESS_ID        processId,  
-   REFGUID              guidEngine,  
-   UINT64               programId,  
-   IDebugProgramNode2** ppProgramNode  
+HRESULT GetProviderProgramNode(  
+   PROVIDER_FLAGS       Flags,  
+   IDebugDefaultPort2*  pPort,  
+   AD_PROCESS_ID        processId,  
+   REFGUID              guidEngine,  
+   UINT64               programId,  
+   IDebugProgramNode2** ppProgramNode  
 );  
 ```  
   
 ```csharp  
-int GetProviderProgramNode(  
-   enum_PROVIDER_FLAGS    Flags,  
-   IDebugDefaultPort2     pPort,  
-   AD_PROCESS_ID          ProcessId,  
-   ref Guid               guidEngine,  
-   ulong                  programId,  
-   out IDebugProgramNode2 ppProgramNode  
+int GetProviderProgramNode(  
+   enum_PROVIDER_FLAGS    Flags,  
+   IDebugDefaultPort2     pPort,  
+   AD_PROCESS_ID          ProcessId,  
+   ref Guid               guidEngine,  
+   ulong                  programId,  
+   out IDebugProgramNode2 ppProgramNode  
 );  
 ```  
   

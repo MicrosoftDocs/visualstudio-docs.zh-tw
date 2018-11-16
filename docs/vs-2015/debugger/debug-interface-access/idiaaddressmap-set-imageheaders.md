@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaAddressMap::set_imageHeaders method
 ms.assetid: a46b9d0e-43e6-433f-b2c7-aa203981e4e4
 caps.latest.revision: 10
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2bc704296fe7dac6c7d1ae229ff388cecd468c9d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f3e2504030d3e8f28c1a41dea1c053c7e1deb1bf
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49900770"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51810230"
 ---
 # <a name="idiaaddressmapsetimageheaders"></a>IDiaAddressMap::set_imageHeaders
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "49900770"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT set_imageHeaders (   
+HRESULT set_imageHeaders (   
    DWORD cbData,  
    BYTE  data[],  
    BOOL  originalHeaders  

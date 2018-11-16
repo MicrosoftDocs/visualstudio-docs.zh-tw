@@ -17,12 +17,12 @@ ms.assetid: 403c2a51-3ba5-431f-a1dd-2f3b2046c00c
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 83b5dd924997136c47ef719f22aa72e39f0f18f4
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9c336b48b0502843415c7d093afebd2376893e07
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49232735"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51782711"
 ---
 # <a name="ienumdebugfields"></a>IEnumDebugFields
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

@@ -20,15 +20,15 @@ helpviewer_keywords:
 - debugger
 ms.assetid: 590f152d-31e2-4e13-b808-a1b13e421483
 caps.latest.revision: 55
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c3323c2513b21ad5432b6784ea305bf1693990d2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c13e71a0daceabf7ee53a7c1746a82c97af55c98
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49296441"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51734776"
 ---
 # <a name="debugging-in-visual-studio"></a>Visual Studio 偵錯
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

@@ -11,15 +11,15 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 19a45032-f8a7-4137-890e-2ceeec938b8d
 caps.latest.revision: 14
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9ef9e54f58571ca5b8e62c964a840b80b9b7f25f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 17e18ada321752c1cde780031524fb45d8bd4997
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49251468"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51761126"
 ---
 # <a name="how-to-use-the-concurrency-visualizer-markers-sdk"></a>如何：使用並行視覺化檢視標記 SDK
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

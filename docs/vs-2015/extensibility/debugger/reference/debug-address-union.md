@@ -17,12 +17,12 @@ ms.assetid: e3d11aab-de0d-4109-b5dc-11e07e64382d
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5a7bc7edf46533c377857a3aae85e8dc97da8012
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0bff5235224b0bc93ebe63b7b77b812bb54e0845
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49827509"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51754859"
 ---
 # <a name="debugaddressunion"></a>DEBUG_ADDRESS_UNION
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -94,12 +94,12 @@ public struct DEBUG_ADDRESS_UNION {
  [只有 c + +]聯集的名稱。  
   
  unionmember  
- [僅限 C#]此值必須根據適當的結構類型封送處理`dwKind`。 如之間的關聯，請參閱 < 備註 > 一`dwKind`和等位的解譯。  
+ [C#只]此值必須根據適當的結構類型封送處理`dwKind`。 如之間的關聯，請參閱 < 備註 > 一`dwKind`和等位的解譯。  
   
 ## <a name="remarks"></a>備註  
  此結構是的一部分[DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md)結構，並代表不同種類的位址數的其中一個 (`DEBUG_ADDRESS`結構的呼叫會填入[GetAddress](../../../extensibility/debugger/reference/idebugaddress-getaddress.md)方法)。  
   
- [僅限 C#]下表顯示如何解譯`unionmember`位址的每種類型的成員。 此範例會示範如何做到這點一種地址。  
+ [C#只]下表顯示如何解譯`unionmember`位址的每種類型的成員。 此範例會示範如何做到這點一種地址。  
   
 |`dwKind`|`unionmember` 解譯為|  
 |--------------|----------------------------------|  
