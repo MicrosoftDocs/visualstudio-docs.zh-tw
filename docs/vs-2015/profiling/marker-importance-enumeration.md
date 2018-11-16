@@ -15,15 +15,15 @@ helpviewer_keywords:
 - Concurrency::diagnostic::marker_importance enumeration
 ms.assetid: d5524ea0-0227-4d8e-9122-332291042df5
 caps.latest.revision: 8
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 853b31ddec99587c9c649e3ee10d77a6f4b4803e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 32e57a9463e6c6966c215066fd470b62596f5481
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49179448"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51756861"
 ---
 # <a name="markerimportance-enumeration"></a>marker_importance 列舉
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

@@ -25,15 +25,15 @@ helpviewer_keywords:
 - Exception Assistant dialog box
 ms.assetid: 57999577-0129-47ca-8b87-77b80fdc317a
 caps.latest.revision: 15
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 042c74d19c079e3472655e34d20b05c66a3c9713
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: cd9750c9c88f9592158e9e8b3a8079af13b88652
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49191291"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51722779"
 ---
 # <a name="exception-assistant-dialog-box"></a>例外狀況助理對話方塊
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

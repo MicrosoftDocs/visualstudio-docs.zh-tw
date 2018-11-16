@@ -17,12 +17,12 @@ ms.assetid: d831cd81-d7bf-4172-8517-aa699867791f
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f6a7b5b937c95dbe2f21e5faede5c52f8cd215d4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 13c01f9de9537e3c363f650e461a7e85b7e894ab
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49917215"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51729547"
 ---
 # <a name="idebugprocess3execute"></a>IDebugProcess3::Execute
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -35,14 +35,14 @@ ms.locfileid: "49917215"
 ## <a name="syntax"></a>語法  
   
 ```cpp  
-HRESULT Execute(  
-   IDebugThread2* pThread  
+HRESULT Execute(  
+   IDebugThread2* pThread  
 );  
 ```  
   
 ```csharp  
-int Execute(  
-   IDebugThread2 pThread  
+int Execute(  
+   IDebugThread2 pThread  
 );  
 ```  
   

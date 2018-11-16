@@ -20,15 +20,15 @@ dev_langs:
 - C++
 ms.assetid: d67387c2-39e9-4790-93bc-e41bff12fb9c
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: af695921dfe63db4997879477d7acb6b60450f5f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a146404a4f4d396cc7afc56218850d758a608bde
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49304365"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51754965"
 ---
 # <a name="output-window-debugging-options-dialog-box"></a>選項對話方塊、偵錯、輸出視窗
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

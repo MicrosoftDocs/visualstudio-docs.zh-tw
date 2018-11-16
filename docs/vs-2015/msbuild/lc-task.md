@@ -24,12 +24,12 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e7331e5ad14c52b6056c7e636d2d48e7f86a9b5e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9f265e06deab522c0b994f0892fb6a96c7ac4a7f
+ms.sourcegitcommit: 20d1b9a5bf041bb28453501eb63bc0537a8e4f54
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49305795"
+ms.lasthandoff: 11/14/2018
+ms.locfileid: "51645051"
 ---
 # <a name="lc-task"></a>LC 工作
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
