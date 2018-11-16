@@ -18,12 +18,12 @@ ms.assetid: be48e639-340a-468a-9f5f-68911bfef93c
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 94fd3b17f282050a96abee50ad20437ae00cf047
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ebdb8b3110a8ea20835e04492fa5bd1fa1f711b1
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49258451"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51732851"
 ---
 # <a name="vsx-language-pack-schema-reference"></a>VSX 語言套件結構描述參考
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
