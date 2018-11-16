@@ -15,15 +15,15 @@ helpviewer_keywords:
 - component diagrams
 ms.assetid: 6c1bdd60-369e-477e-83ed-7f6fe75c9f0b
 caps.latest.revision: 37
-author: alexhomer1
+author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: aa08a132c752b5bdde7ba2b497a6bd206e8f2972
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7400bac1fa6dcbf086718e54d18288b8ab80f1b0
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49843843"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51801459"
 ---
 # <a name="uml-component-diagrams-guidelines"></a>UML 元件圖表：方針
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

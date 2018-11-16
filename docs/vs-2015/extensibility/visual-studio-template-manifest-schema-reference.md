@@ -10,12 +10,12 @@ ms.assetid: bc7d0a81-0df5-41a9-a912-1b30e5da1d13
 caps.latest.revision: 4
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 28301729091333191bcb0c381e37e20d3d9c53aa
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: cef2b1936ce3e7c5e9495aa65e9724c53317d17f
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49217086"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51723427"
 ---
 # <a name="visual-studio-template-manifest-schema-reference"></a>Visual Studio 範本資訊清單結構描述參考
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

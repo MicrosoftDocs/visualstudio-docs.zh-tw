@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaSymbol::get_typeId method
 ms.assetid: b40be36e-10e1-463c-9c6d-21862679d29f
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bb6dff6ba5e57b4f6ad078a48a0b5d838f044559
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b205ecca8cf8c6deeb82615f5deb92f466a3a142
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49902408"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51764338"
 ---
 # <a name="idiasymbolgettypeid"></a>IDiaSymbol::get_typeId
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "49902408"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT get_typeId (   
+HRESULT get_typeId (   
    DWORD* pRetVal  
 );  
 ```  

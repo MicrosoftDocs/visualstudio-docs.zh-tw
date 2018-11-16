@@ -18,12 +18,12 @@ ms.assetid: 1c5a5c13-c14d-42c3-af11-4c63f1032c8d
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fdb06d4909bab31169dc0a46156b7e1300b917bc
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3fa7e0969c9d45ae07280a8648036bd07c000974
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49891332"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51774480"
 ---
 # <a name="program-nodes"></a>程式節點
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

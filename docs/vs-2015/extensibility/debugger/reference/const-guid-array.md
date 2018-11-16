@@ -17,12 +17,12 @@ ms.assetid: bd55e7d8-372c-4c3e-9eed-28f6b415a5db
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: af527759568d2f36d120002e7216e1d6ce517b54
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5aa46dd87f197bad4a658a9296b794a87cde3fe6
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49816738"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51798400"
 ---
 # <a name="constguidarray"></a>CONST_GUID_ARRAY
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,16 +32,16 @@ ms.locfileid: "49816738"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-typedef struct tagCONST_GUID_ARRAY {  
-   DWORD       dwCount;  
-   CONST GUID* Members;  
-} CONST_GUID_ARRAY;  
+typedef struct tagCONST_GUID_ARRAY {  
+   DWORD       dwCount;  
+   CONST GUID* Members;  
+} CONST_GUID_ARRAY;  
 ```  
   
 ```csharp  
-public struct CONST_GUID_ARRAY {  
-   public uint   dwCount;  
-   public Guid[] Members;  
+public struct CONST_GUID_ARRAY {  
+   public uint   dwCount;  
+   public Guid[] Members;  
 }  
 ```  
   

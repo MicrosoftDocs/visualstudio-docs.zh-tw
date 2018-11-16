@@ -15,12 +15,12 @@ ms.assetid: 21cb3e63-f25c-404b-bc1d-a32ad0fdd4d5
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d70958f88bcd48ce3e2a18f2b086367800541a22
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 399900bce10edbd6fec549fc3a52ca3dbeefdabc
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49172871"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51761556"
 ---
 # <a name="providing-automation-for-code"></a>為程式碼提供自動化
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

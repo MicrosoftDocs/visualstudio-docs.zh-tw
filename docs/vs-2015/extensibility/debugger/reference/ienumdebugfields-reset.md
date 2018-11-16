@@ -17,12 +17,12 @@ ms.assetid: 38ff61e4-0120-42e8-971a-16be6050b425
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6af2eb12a0f87e07120350ff05eb11846c07644c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4e20b93412c2848ab0b28145849a9e0cb6f9b511
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49175236"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51720976"
 ---
 # <a name="ienumdebugfieldsreset"></a>IEnumDebugFields::Reset
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

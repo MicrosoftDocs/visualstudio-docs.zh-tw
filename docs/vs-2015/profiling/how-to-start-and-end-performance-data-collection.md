@@ -18,15 +18,15 @@ helpviewer_keywords:
 - profiling tools, ending sessions
 ms.assetid: 9f6eb0d5-d9e9-4bec-b627-445065610bce
 caps.latest.revision: 17
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e6d98a8a72c28bc3e70a3b6b0f0d55ce74522cb7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 393cb5776043f3e9543cc9fe2c45773e36c09dd7
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49229693"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51790028"
 ---
 # <a name="how-to-start-and-end-performance-data-collection"></a>如何︰啟動和結束效能資料收集
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

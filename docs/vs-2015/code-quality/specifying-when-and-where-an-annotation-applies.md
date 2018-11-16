@@ -16,15 +16,15 @@ f1_keywords:
 - _At_buffer_
 ms.assetid: 8e4f4f9c-5dfa-4835-87df-ecd1698fc650
 caps.latest.revision: 9
-author: corob-msft
-ms.author: gewarren
+author: mikeblome
+ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: c4772dc980743db131002dbde80346836e9dc4c0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f149f483f29f4dafb29d0f7fed16a9bf93a59b78
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49303351"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51754284"
 ---
 # <a name="specifying-when-and-where-an-annotation-applies"></a>指定套用註釋的時機和位置
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

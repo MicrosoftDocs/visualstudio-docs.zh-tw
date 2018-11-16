@@ -15,12 +15,12 @@ ms.assetid: 89fac33e-9380-4723-9b45-048a6e16f0ed
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: dfb70a3ae8321f1c1d0d04299919c82fe9ee2198
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1f7230bce49342ad8e31baeb3f46c72f1c45d776
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49223518"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51787727"
 ---
 # <a name="getting-started-with-the-vsix-project-template"></a>開始使用 VSIX 專案範本
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

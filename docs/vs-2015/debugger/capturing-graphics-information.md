@@ -15,15 +15,15 @@ f1_keywords:
 - VS.ToolsOptionsPages.Graphics_Diagnostics.Capture
 ms.assetid: 187ce86e-e340-4f6c-8937-8e8f1027a17f
 caps.latest.revision: 44
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8a66d13e9fef647432f05dc01ce60732a0c40b16
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a099254acd572b3fcbb437f8933c81f3d6bd45b9
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49855400"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51799830"
 ---
 # <a name="capturing-graphics-information"></a>擷取圖形資訊
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

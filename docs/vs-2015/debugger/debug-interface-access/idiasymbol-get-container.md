@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaSymbol::get_container method
 ms.assetid: 24e832eb-80b3-484c-a41b-11477ec9de99
 caps.latest.revision: 9
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 127c76776285c747de27fa2a277226e541a4e981
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1704948eb8992a5b575c49788f13300f303f450a
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49828945"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51723005"
 ---
 # <a name="idiasymbolgetcontainer"></a>IDiaSymbol::get_container
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

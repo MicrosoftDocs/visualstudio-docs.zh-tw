@@ -15,15 +15,15 @@ helpviewer_keywords:
 - Thunk_Ordinal enumeration
 ms.assetid: 026f98a9-36b8-41ef-8a72-12d7cbc2d362
 caps.latest.revision: 12
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8152b22b229e654b17a2f424694283189c95431b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f670656eb1ffe610b81ae8e549e04b6fb8919a62
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49834314"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51733945"
 ---
 # <a name="thunkordinal"></a>THUNK_ORDINAL
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "49834314"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-typedef enum THUNK_ORDINAL {   
+typedef enum THUNK_ORDINAL {   
    THUNK_ORDINAL_NOTYPE,  
    THUNK_ORDINAL_ADJUSTOR,  
    THUNK_ORDINAL_VCALL,  

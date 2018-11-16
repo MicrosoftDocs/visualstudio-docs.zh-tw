@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaSymbol::get_upperBoundId method
 ms.assetid: ddfa1617-bd0f-4187-ba77-a225bab93a95
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 281a46f52bb90e019c8ff58b32492074e495cf98
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2ba51b65cd55aba3ccba848a958208dfa4a9735a
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49918671"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51773401"
 ---
 # <a name="idiasymbolgetupperboundid"></a>IDiaSymbol::get_upperBoundId
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "49918671"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT get_upperBoundId (   
+HRESULT get_upperBoundId (   
    DWORD* pRetVal  
 );  
 ```  

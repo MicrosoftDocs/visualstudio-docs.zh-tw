@@ -23,15 +23,15 @@ helpviewer_keywords:
 - XML Web services, debugging
 ms.assetid: b938a91b-be96-416f-83bc-4177e7f3929a
 caps.latest.revision: 34
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bc9aefdb6fca70eae0343a5f7fffde661b5a7be1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 923a8e104f03a4014f269f587d5cb3a1da5266b7
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49276311"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51807526"
 ---
 # <a name="debugging-deployed-web-applications"></a>偵錯已部署的 Web 應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
