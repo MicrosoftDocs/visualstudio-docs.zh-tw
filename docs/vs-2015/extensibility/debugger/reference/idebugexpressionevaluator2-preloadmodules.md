@@ -16,12 +16,12 @@ ms.assetid: bcf9b968-ee14-4a92-88ad-926268a44e03
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fbee2cdb6258afa8d45d6fd2e561bc90eca46dc0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d51fe6f9f016d11826f3f731184a379ca19d6074
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49905764"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51809788"
 ---
 # <a name="idebugexpressionevaluator2preloadmodules"></a>IDebugExpressionEvaluator2::PreloadModules
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
