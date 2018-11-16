@@ -19,12 +19,12 @@ ms.assetid: c64a9bf0-9bf8-45c3-8fa2-306fa6cab66a
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 01a16f7711b35d8c1062117d486fdf00ab998566
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 856e32d4569e5dcb73e783d0a6b66e186fbb1848
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49835984"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51755887"
 ---
 # <a name="shell-isolated-or-integrated"></a>Shell （獨立模式或整合）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

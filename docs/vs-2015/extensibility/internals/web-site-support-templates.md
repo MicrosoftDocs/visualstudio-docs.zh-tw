@@ -15,12 +15,12 @@ ms.assetid: 37173c97-486b-4b3c-8ed3-cf5890c4de23
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b18d6fe0574782a6d04adb49787ac2f49f649314
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: eebacb3006826a90320cbc61edf7d56467e688ce
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49233564"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51760225"
 ---
 # <a name="web-site-support-templates"></a>網站支援範本
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

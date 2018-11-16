@@ -15,15 +15,15 @@ helpviewer_keywords:
 - Dimension Symbol
 ms.assetid: 94f791da-bfea-454f-8a14-da31e8e1596a
 caps.latest.revision: 18
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 49a8bb43ab1e8cfc253cc45dd2e08f18463dc9d9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 854db8bc8d51284c4a6ea75e7091f1fa8dabdd28
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49197726"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51790938"
 ---
 # <a name="dimension"></a>維度
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

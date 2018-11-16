@@ -13,15 +13,15 @@ helpviewer_keywords:
 - thread properties
 ms.assetid: f0e64c0e-cdb3-4ad4-9723-09934166f3a2
 caps.latest.revision: 7
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 775b28f1c8839a331f64e435b886c113c30c6238
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 19eca8a7ff1ab7bcb6bf339a9de9ea402e3fec97
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49889473"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51793122"
 ---
 # <a name="how-to-display-thread-properties"></a>如何：顯示執行緒屬性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

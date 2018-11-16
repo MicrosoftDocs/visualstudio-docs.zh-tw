@@ -14,15 +14,15 @@ helpviewer_keywords:
 - thread properties, Spy++
 ms.assetid: 5352d11a-debb-4c20-b9a0-d37d94900b1c
 caps.latest.revision: 8
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 37eee1a82fab77238b992ee391a782c5af34d7d9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8bc6a20b8c1d74d322a21d56a3fbe1cd124bc7cd
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49271696"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51759517"
 ---
 # <a name="thread-properties-dialog-box"></a>執行緒屬性對話方塊
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

@@ -14,15 +14,15 @@ f1_keywords:
 - vs.cv.threads.timeline.gpuactivity
 ms.assetid: 8a68df65-eb63-452f-9285-fb4ffc92f2b2
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3d988ab3e381ef8c5d25eed1978eed39c53e9e24
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a5b38423bd629dee0f518e0f62eedcf7c55c1db0
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49272138"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51789833"
 ---
 # <a name="gpu-activity-other-processes"></a>GPU 活動 (其他處理序)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

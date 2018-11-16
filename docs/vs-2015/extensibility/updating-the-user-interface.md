@@ -16,12 +16,12 @@ ms.assetid: 376e2f56-e7bf-4e62-89f5-3dada84a404b
 caps.latest.revision: 42
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 52559a48b842d61dd64616af6f48c946147aa1e1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e4e6b282ac58e523e8a2047e7f882d90b9f202bf
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49181036"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51765558"
 ---
 # <a name="updating-the-user-interface"></a>更新使用者介面
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

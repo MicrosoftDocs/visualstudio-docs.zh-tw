@@ -13,15 +13,15 @@ dev_langs:
 - C++
 ms.assetid: bb2ff5ed-9293-4c37-9741-654058b571c5
 caps.latest.revision: 6
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b1a0bb0285ae1df39ef26a3292a62f0262325863
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 83400d6f474693a2044a293c4802e937a22d6b76
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49228809"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51744735"
 ---
 # <a name="idiasymbolgetbasedataoffset"></a>IDiaSymbol::get_baseDataOffset
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

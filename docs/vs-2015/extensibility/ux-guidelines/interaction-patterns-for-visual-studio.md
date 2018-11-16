@@ -13,12 +13,12 @@ ms.assetid: a3643792-b0df-481c-bc35-576f948e04cf
 caps.latest.revision: 5
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7ac6dde1b09e0488f3ae07b3a6ea02409d69892e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c6dcb0ccb6a8793649c0b12b6851ba58b9374da9
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49192058"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51779368"
 ---
 # <a name="interaction-patterns-for-visual-studio"></a>適用於 Visual Studio 的互動模式
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

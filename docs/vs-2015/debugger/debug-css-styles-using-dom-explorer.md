@@ -22,15 +22,15 @@ helpviewer_keywords:
 - HTML debugging [Windows Store apps]
 ms.assetid: 2dfef7c6-7db2-4550-b694-783b0e535cea
 caps.latest.revision: 47
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9a30ac9669c7093c7eb3b656076c606cbf5a9fdc
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1f5a2c8ef6792403628430cb9881b24e6e279f02
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49220715"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51750141"
 ---
 # <a name="debug-css-styles-using-dom-explorer"></a>使用 DOM 總管偵錯 CSS 樣式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

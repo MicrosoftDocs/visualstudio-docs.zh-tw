@@ -19,15 +19,15 @@ helpviewer_keywords:
 - debugging ASP.NET Web applications, security requirements
 ms.assetid: 7810b9b2-debf-4271-8fc7-1df031123255
 caps.latest.revision: 41
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f57cdfc52079a11bfb3bd83baa2e3ff2484d368f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 16fcebe8ecb5fff974d5df6e2405acca546ea007
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49286477"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51793798"
 ---
 # <a name="aspnet-debugging-system-requirements"></a>ASP.NET 偵錯：系統需求
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

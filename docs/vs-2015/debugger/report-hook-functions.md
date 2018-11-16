@@ -27,15 +27,15 @@ helpviewer_keywords:
 - report hook functions
 ms.assetid: 1854bca7-d7eb-4502-89bf-b1ee64cb50ef
 caps.latest.revision: 18
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 557790edc774bab9db43830a4f5fc3e21cfc9758
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d3b7916f729f0d1ea1a254ecde8e5c53ea8b8a51
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49279444"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51777251"
 ---
 # <a name="report-hook-functions"></a>報告攔截函式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

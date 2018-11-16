@@ -13,15 +13,15 @@ helpviewer_keywords:
 - Using Spy++
 ms.assetid: 02769bfa-5679-4ee2-8c6b-27876edb4e8c
 caps.latest.revision: 9
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 45a787eb2e5963454239da27605e7e6cf6893f6c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 205c99d4278c1421a98373f22374add81d0f9ac7
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49210349"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51750296"
 ---
 # <a name="using-spy"></a>使用 Spy++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

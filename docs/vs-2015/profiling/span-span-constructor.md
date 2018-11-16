@@ -15,15 +15,15 @@ helpviewer_keywords:
 - Concurrency::diagnostic::span constructor
 ms.assetid: 8b5578aa-5e5c-4ac7-87c7-ce87c4246e2c
 caps.latest.revision: 10
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 21c47e968aa4e762c71a60d5c8bfc1700bffb30b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c7809e3df78ce5ae0ca451e177420204e09111c2
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49256005"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51816355"
 ---
 # <a name="spanspan-constructor"></a>span::span 建構函式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

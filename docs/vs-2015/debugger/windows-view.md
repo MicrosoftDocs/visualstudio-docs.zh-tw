@@ -15,15 +15,15 @@ helpviewer_keywords:
 - Windows view
 ms.assetid: 154786ce-c803-4bfb-8198-f7962a900363
 caps.latest.revision: 10
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f4622e268aaaf76a2968a2bc6ef67ead7b0c45b5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e297e43c25a2e72412c84e5cc01d3b59436f83dc
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49261698"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51778478"
 ---
 # <a name="windows-view"></a>視窗檢視
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

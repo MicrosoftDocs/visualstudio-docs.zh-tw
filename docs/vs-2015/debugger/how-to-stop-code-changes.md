@@ -22,15 +22,15 @@ helpviewer_keywords:
 - Edit and Continue, stopping code changes
 ms.assetid: 9e72a50c-bb0a-4eaa-9ac1-d00930b68d38
 caps.latest.revision: 21
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6d869e3e6be26db871deb3afc7bc398025cc15d0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 906c115342661ddbe90c0ffbf24bf58da6ae1413
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49862355"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51787532"
 ---
 # <a name="how-to-stop-code-changes"></a>如何：停止程式碼變更
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

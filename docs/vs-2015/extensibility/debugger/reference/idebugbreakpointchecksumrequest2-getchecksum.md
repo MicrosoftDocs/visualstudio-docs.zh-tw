@@ -15,12 +15,12 @@ ms.assetid: ec434882-e5c0-4d76-a58b-22c260d8626e
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 05772c55e3447231f2b27f7c7d80c5ff9d10a15e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3e559b354d231eefcb68052bf660d3618c96ef0b
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49907712"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51794715"
 ---
 # <a name="idebugbreakpointchecksumrequest2getchecksum"></a>IDebugBreakpointChecksumRequest2::GetChecksum
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

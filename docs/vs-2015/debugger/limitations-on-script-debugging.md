@@ -20,15 +20,15 @@ helpviewer_keywords:
 - breakpoint mapping, limitations
 ms.assetid: 280eead5-693c-47af-967f-dfe9d23f84db
 caps.latest.revision: 25
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f597cad06870f23b7481f0375c9eb3abb550e4e1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 767322cd60ce1d1e455903b357a062cc1f31927d
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49251104"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51753458"
 ---
 # <a name="limitations-on-script-debugging"></a>指令碼偵錯的限制
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ ms.locfileid: "49251104"
   
 -   中斷點必須在 `<script>` 區塊內部設定。 內嵌指令碼或 `<% %>` 區塊內的中斷點無法對應。  
   
--   頁面的瀏覽器 URL 必須包含頁面名稱。 例如， http://microsoft.com/default.apsx。 中斷點對應無法辨識來自位址重新導向例如 http://microsoft.com預設頁面。  
+-   頁面的瀏覽器 URL 必須包含頁面名稱。 例如， http://microsoft.com/default.apsx 。 中斷點對應無法辨識來自位址重新導向例如 http://microsoft.com 預設頁面。  
   
 -   中斷點必須在瀏覽器 URL 中指定的頁面中設定，而不是在 ASPX 控制項 (ascx) 檔、主版頁面或該頁面包含的其他檔案中設定。 在所包含頁面中設定的中斷點無法對應。  
   

@@ -15,12 +15,12 @@ ms.assetid: 5555b116-cfdb-4773-ba62-af80fda64abd
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 740fc83a9ded8ad35b93120d6fdec5767ceeea82
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: cac26a6aeca6985546bcd21aec6cf45d72164e8a
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49178954"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51817395"
 ---
 # <a name="new-or-changed-behavior-with-editor-adapters"></a>新增或變更的行為，與編輯器的介面卡
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

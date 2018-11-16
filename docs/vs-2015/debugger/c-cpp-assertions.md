@@ -31,15 +31,15 @@ helpviewer_keywords:
 - failures, finding locations
 ms.assetid: 2d7b0121-71aa-414b-bbb6-ede1093d0bfc
 caps.latest.revision: 25
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 00546f91441ac327956550de42e35c453ef5690a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3dc4c2a6c4f5b9d4a0e4e1cf0fd0a4a6c9928de6
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49851383"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51799752"
 ---
 # <a name="cc-assertions"></a>C/C++ 判斷提示
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

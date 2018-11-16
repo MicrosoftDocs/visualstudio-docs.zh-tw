@@ -18,12 +18,12 @@ ms.assetid: 9c399598-b9fa-4da7-84b5-defbf82e9335
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1a33a1d8b82c03b2c8a45c63f5479011ab7249aa
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d5892ab545c41f7d58f0d097f3d27c90c090f0ff
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49903136"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51736582"
 ---
 # <a name="the-structure-of-the-contenttypesxml-file"></a>結構的 [Content_types].xml 檔案
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

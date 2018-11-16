@@ -21,15 +21,15 @@ helpviewer_keywords:
 - complexity managed code
 ms.assetid: 952b6f2e-584f-4c97-a5ba-42d7bd47a576
 caps.latest.revision: 16
-author: erickson-doug
+author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 5b83ab0627685d599d0866d789c18bee8d08659a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2926fb0ced23fb7bdf794730898313ce8b4e9d1f
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49214216"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51749584"
 ---
 # <a name="measuring-complexity-and-maintainability-of-managed-code"></a>測量 Managed 程式碼的複雜度和維護性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

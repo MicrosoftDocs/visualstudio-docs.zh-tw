@@ -17,12 +17,12 @@ ms.assetid: ed1e874c-f289-4c31-8b6c-04dde03ad0f5
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9525c31475f12040ca50c4aa0d24b126f94f80be
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6e154fe6b1121855e50c32b342c3c11566cbcd03
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49878566"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51749114"
 ---
 # <a name="bplocation"></a>BP_LOCATION
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -83,21 +83,21 @@ public struct BP_LOCATION {
  [只有 c + +]包含[BP_LOCATION_RESOLUTION](../../../extensibility/debugger/reference/bp-location-resolution.md)結構，如果`bpLocationType`  =  `BPLT_RESOLUTION`。  
   
  `unionmember1`  
- [僅限 C#]請參閱有關如何解譯的備註。  
+ [C#只]請參閱有關如何解譯的備註。  
   
  `unionmember2`  
- [僅限 C#]請參閱有關如何解譯的備註。  
+ [C#只]請參閱有關如何解譯的備註。  
   
  `unionmember3`  
- [僅限 C#]請參閱有關如何解譯的備註。  
+ [C#只]請參閱有關如何解譯的備註。  
   
  `unionmember4`  
- [僅限 C#]請參閱有關如何解譯的備註。  
+ [C#只]請參閱有關如何解譯的備註。  
   
 ## <a name="remarks"></a>備註  
  此結構是隸屬[BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)並[BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md)結構。  
   
- [僅限 C#]`unionmemberX`成員會根據下表來解譯。 往下的左側資料行`bpLocationType`值，然後尋找其他資料行來判斷每個跨`unionmemberX`成員表示和封送處理`unionmemberX`據此。 請參閱範例的方式來解譯此結構在 C# 中的一部分。  
+ [C#只]`unionmemberX`成員會根據下表來解譯。 往下的左側資料行`bpLocationType`值，然後尋找其他資料行來判斷每個跨`unionmemberX`成員表示和封送處理`unionmemberX`據此。 請參閱範例的方式來解譯此結構在 C# 中的一部分。  
   
 |`bpLocationType`|`unionmember1`|`unionmember2`|`unionmember3`|`unionmember4`|  
 |----------------------|--------------------|--------------------|--------------------|--------------------|  

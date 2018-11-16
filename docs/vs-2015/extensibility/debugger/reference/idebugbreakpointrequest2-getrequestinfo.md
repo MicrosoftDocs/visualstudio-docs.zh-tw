@@ -17,12 +17,12 @@ ms.assetid: 5defd8d7-6daa-479b-8909-fcc4ae0b357a
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1855da19868a372a84e35e8e9a263edeee3f2d36
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 91a8f2c757b0425646361a854508a0a7e4e8bd06
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49895226"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51790704"
 ---
 # <a name="idebugbreakpointrequest2getrequestinfo"></a>IDebugBreakpointRequest2::GetRequestInfo
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,14 +32,14 @@ ms.locfileid: "49895226"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT GetRequestInfo(   
+HRESULT GetRequestInfo(   
    BPREQI_FIELDS    dwFields,  
    BP_REQUEST_INFO* pBPRequestInfo  
 );  
 ```  
   
 ```csharp  
-int GetRequestInfo(   
+int GetRequestInfo(   
    eunm_BPREQI_FIELDS  dwFields,  
    BP_REQUEST_INFO[]   pBPRequestInfo  
 );  

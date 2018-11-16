@@ -13,12 +13,12 @@ ms.assetid: 7028d440-d16d-4b08-9b94-eb8cc93b25fc
 caps.latest.revision: 5
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 485166f6458aafd67a002d9104700c93efc20c15
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4fee0918c0506fe433377a3063c30be1d8b03f89
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49189043"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51789352"
 ---
 # <a name="getting-service-information-from-the-settings-store"></a>從設定存放區取得服務資訊
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

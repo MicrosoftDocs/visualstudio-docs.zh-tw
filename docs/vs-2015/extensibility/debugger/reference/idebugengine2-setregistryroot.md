@@ -17,12 +17,12 @@ ms.assetid: d0d81202-8a4a-4bc3-b297-30a047c5ec60
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a7e6f68f00570590715955f661679a56a7533e4b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: aa1e67c1d2c513fb4bc30c3daf064f4555172741
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49919685"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51816420"
 ---
 # <a name="idebugengine2setregistryroot"></a>IDebugEngine2::SetRegistryRoot
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,13 +32,13 @@ ms.locfileid: "49919685"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT SetRegistryRoot(   
+HRESULT SetRegistryRoot(   
    LPCOLESTR pszRegistryRoot  
 );  
 ```  
   
 ```csharp  
-int SetRegistryRoot(   
+int SetRegistryRoot(   
    string pszRegistryRoot  
 );  
 ```  

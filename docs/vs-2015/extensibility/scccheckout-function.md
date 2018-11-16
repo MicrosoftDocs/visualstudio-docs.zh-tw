@@ -17,12 +17,12 @@ ms.assetid: 06e9ecd7-fc09-40c1-9dd1-2b56c622c80b
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9b6d8faf971cd17bc2ca2da49f159d2779913b3d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7c1a900a2052008effe084eee7cedbc9acd9d848
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49913263"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51780720"
 ---
 # <a name="scccheckout-function"></a>SccCheckout 函式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

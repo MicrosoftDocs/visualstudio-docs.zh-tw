@@ -21,15 +21,15 @@ helpviewer_keywords:
 - debugging [Visual Studio], DLLs
 ms.assetid: 433cab30-d191-460b-96f7-90d2530ca243
 caps.latest.revision: 41
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fff87db239d023dbb5aa8f13757f7af42a969dd7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c5177d7bd43a0bc1ba29778ba99cc891fd9f739b
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49814555"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51792381"
 ---
 # <a name="debugging-dll-projects"></a>偵錯 DLL 專案
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

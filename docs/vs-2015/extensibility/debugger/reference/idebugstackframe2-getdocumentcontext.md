@@ -17,12 +17,12 @@ ms.assetid: 69e81439-1238-4f18-9028-6fd1c1ba5e4a
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: dc78cf7fc5227d0b0f09ccd27432b784799cb6a3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: fdb0e7f3de5041fe4bd164b51897f0d70c850ab7
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49814306"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51774714"
 ---
 # <a name="idebugstackframe2getdocumentcontext"></a>IDebugStackFrame2::GetDocumentContext
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,13 +32,13 @@ ms.locfileid: "49814306"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT GetDocumentContext (   
+HRESULT GetDocumentContext (   
    IDebugDocumentContext2** ppCxt  
 );  
 ```  
   
 ```csharp  
-int GetDocumentContext (   
+int GetDocumentContext (   
    out IDebugDocumentContext2 ppCxt  
 );  
 ```  

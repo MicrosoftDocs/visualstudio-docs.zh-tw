@@ -18,12 +18,12 @@ ms.assetid: c51b5128-848e-4d8e-b2e9-1161339763c3
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 002f1c01c62e5578a652670f883ea2440e1d52f7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 32bfea2dd2cdea37dfa54dea3ad0bd3eebea89f4
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49928876"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51765743"
 ---
 # <a name="idebugmemorycontext2compare"></a>IDebugMemoryContext2::Compare
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "49928876"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT Compare(   
+HRESULT Compare(   
    CONTEXT_COMPARE        compare,  
    IDebugMemoryContext2** rgpMemoryContextSet,  
    DWORD                  dwMemoryContextSetLen,  

@@ -17,12 +17,12 @@ ms.assetid: 6af9b0b4-037f-404c-bb40-aaa1970768ea
 caps.latest.revision: 39
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d6ccae3f53181863ada9dcaa93cb616431885cda
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 13dec4b907b52e35b5b2377aafa511e50dc5cc48
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49830947"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51771539"
 ---
 # <a name="adding-a-menu-controller-to-a-toolbar"></a>將功能表控制器新增至工具列
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -122,15 +122,15 @@ ms.locfileid: "49830947"
 1.  在 TWTestCommandPackageGuids.cs，加入命令 Id 為這三個功能表項目之後的現有命令識別碼。  
   
     ```csharp  
-    public const int cmdidMCItem1 = 0x130;  
-    public const int cmdidMCItem2 = 0x131;  
-    public const int cmdidMCItem3 = 0x132;  
+    public const int cmdidMCItem1 = 0x130;  
+    public const int cmdidMCItem2 = 0x131;  
+    public const int cmdidMCItem3 = 0x132;  
     ```  
   
 2.  在 TWTestCommand.cs，加入下列程式碼頂端的 TWTestCommand 類別。  
   
     ```csharp  
-    private int currentMCCommand; // The currently selected menu controller command  
+    private int currentMCCommand; // The currently selected menu controller command  
     ```  
   
 3.  在 TWTestCommand 建構函式的最後一個呼叫之後`AddCommand`方法，加入程式碼以將每個命令，透過相同的處理常式的事件路由。  
@@ -145,7 +145,7 @@ ms.locfileid: "49830947"
           EventHandler(OnMCItemClicked), cmdID);  
         mc.BeforeQueryStatus += new EventHandler(OnMCItemQueryStatus);  
         commandService.AddCommand(mc);  
-        // The first item is, by default, checked.   
+        // The first item is, by default, checked.   
         if (TWTestCommandPackageGuids.cmdidMCItem1 == i)  
         {  
             mc.Checked = true;  
@@ -157,7 +157,7 @@ ms.locfileid: "49830947"
 4.  將事件處理常式加入 TWTestCommand 類別標示為已檢查選取的命令。  
   
     ```csharp  
-    private void OnMCItemQueryStatus(object sender, EventArgs e)  
+    private void OnMCItemQueryStatus(object sender, EventArgs e)  
     {  
         OleMenuCommand mc = sender as OleMenuCommand;  
         if (null != mc)  
@@ -170,7 +170,7 @@ ms.locfileid: "49830947"
 5.  加入事件處理常式，會顯示 MessageBox，當使用者選取功能表控制站上的命令：  
   
     ```csharp  
-    private void OnMCItemClicked(object sender, EventArgs e)  
+    private void OnMCItemClicked(object sender, EventArgs e)  
     {  
         OleMenuCommand mc = sender as OleMenuCommand;  
         if (null != mc)  

@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaSymbol::get_virtualBaseDispIndex method
 ms.assetid: 5561a3cb-2c82-41cf-9217-3ee2b1e1d1d1
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 13b0dac3e675cfd106e3c2641cf87cc90a92a73f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d40df07a22b1c8547924b8c4dc09031084a844c2
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49824135"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51726334"
 ---
 # <a name="idiasymbolgetvirtualbasedispindex"></a>IDiaSymbol::get_virtualBaseDispIndex
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

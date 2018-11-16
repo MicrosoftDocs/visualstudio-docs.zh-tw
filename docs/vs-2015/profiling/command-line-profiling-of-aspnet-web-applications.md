@@ -14,15 +14,15 @@ helpviewer_keywords:
 - profling tools,ASP.NET applications
 ms.assetid: 897c00d5-5767-433b-a960-4a29c6023ede
 caps.latest.revision: 26
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3942744df8708ff7932dc663b1c4a55ec2dad471
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5436da548acaf16169437fdc98b51d182891d2d9
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49257916"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51759157"
 ---
 # <a name="command-line-profiling-of-aspnet-web-applications"></a>ASP.NET Web 應用程式的命令列分析
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

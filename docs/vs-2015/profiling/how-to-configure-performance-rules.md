@@ -13,15 +13,15 @@ f1_keywords:
 - vs.performance.ruleseditor
 ms.assetid: a148b468-b849-4858-880a-808a6b47e596
 caps.latest.revision: 19
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2131a2857c5611f1653d305f63c07fcca1a3953f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3b4750dcd245094d0ea116097c7e58b87065aa91
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49199611"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51765110"
 ---
 # <a name="how-to-configure-performance-rules"></a>如何：設定效能規則
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

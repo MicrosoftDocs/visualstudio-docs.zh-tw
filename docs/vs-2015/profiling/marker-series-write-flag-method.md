@@ -15,15 +15,15 @@ helpviewer_keywords:
 - Concurrency::diagnostic::marker_series::write_flag method
 ms.assetid: ca07f388-e5d5-46fd-b991-fe6e9029a68f
 caps.latest.revision: 8
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3a5e44b0f544f5f1dc0c27fb11e865baa5881662
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c8b578e3c0b8d2f2ccbf62d8745f0deb783e9217
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49249635"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51816655"
 ---
 # <a name="markerserieswriteflag-method"></a>marker_series::write_flag 方法
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

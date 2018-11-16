@@ -15,12 +15,12 @@ ms.assetid: b64d432b-c39b-4904-ad18-3c3218b6e3aa
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: cd23565b5f3bababa16ce5d5d3faa2525bf9a99f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0ec2300e8bf700deacd50a4a980e02aa4b903bae
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49886431"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51758966"
 ---
 # <a name="visual-studio-sdk-glossary"></a>Visual Studio SDK 字彙表
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

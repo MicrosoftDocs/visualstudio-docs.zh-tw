@@ -17,12 +17,12 @@ ms.assetid: f3334ed7-39bf-4d02-a338-36f567b9b287
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 118b86193d9241744d5faae3719ad53a593537f4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: daeef787ff380a17da2d5afa9c0f806f807b8598
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49830531"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51745223"
 ---
 # <a name="idebugprocessex2attach"></a>IDebugProcessEx2::Attach
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "49830531"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT Attach(   
+HRESULT Attach(   
    IDebugSession2* pSession  
 );  
 ```  
