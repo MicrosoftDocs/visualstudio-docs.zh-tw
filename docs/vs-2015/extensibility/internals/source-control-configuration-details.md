@@ -15,12 +15,12 @@ ms.assetid: adbee9fc-7a2e-4abe-a3b8-e6615bcd797f
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7bc4d7caefe0d0db2cdadf684702ec7e0d800c9c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 55e2364ca096b5329369e51ccdadf07f191720e8
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49884156"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51753716"
 ---
 # <a name="source-control-configuration-details"></a>原始檔控制組態的詳細資料
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

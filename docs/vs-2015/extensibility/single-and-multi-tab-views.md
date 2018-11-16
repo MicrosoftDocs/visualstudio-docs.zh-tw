@@ -15,12 +15,12 @@ ms.assetid: e3611704-349f-4323-b03c-f2b0a445d781
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1e429add1b4b18cff84a2933601c56c7b026db15
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8231581761199be4df9c368494fb27bdc7926c51
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49235998"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51748986"
 ---
 # <a name="single-and-multi-tab-views"></a>單一和多重索引標籤檢視
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

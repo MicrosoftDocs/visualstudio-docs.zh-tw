@@ -17,12 +17,12 @@ ms.assetid: 2e4653c5-10f1-493c-9973-f31d266c5d48
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4d90a0406d5325ee11ec5c6230110128abc14de5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 94b40ba62e079fbc70fa4f9c7f9560e79bcc0a29
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49893360"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51771971"
 ---
 # <a name="idebugproviderprogramnode2unmarshaldebuggeeinterface"></a>IDebugProviderProgramNode2::UnmarshalDebuggeeInterface
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,16 +32,16 @@ ms.locfileid: "49893360"
 ## <a name="syntax"></a>語法  
   
 ```cpp  
-HRESULT UnmarshalDebuggeeInterface(  
-   REFIID riid,  
-   void** ppvObject  
+HRESULT UnmarshalDebuggeeInterface(  
+   REFIID riid,  
+   void** ppvObject  
 );  
 ```  
   
 ```csharp  
-int UnmarshalDebuggeeInterface(  
-   ref Guid   riid,  
-   out IntPtr ppvObject  
+int UnmarshalDebuggeeInterface(  
+   ref Guid   riid,  
+   out IntPtr ppvObject  
 );  
 ```  
   

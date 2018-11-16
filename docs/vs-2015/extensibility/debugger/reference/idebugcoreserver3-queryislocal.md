@@ -17,12 +17,12 @@ ms.assetid: cca030de-f853-4ed7-b2fb-395f08a6b884
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9bd8b13748f42aff635579899555fffce72d51ec
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7b48215df8ee803ba971332e55b0c2364e66bd84
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49949093"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51792537"
 ---
 # <a name="idebugcoreserver3queryislocal"></a>IDebugCoreServer3::QueryIsLocal
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,13 +32,13 @@ ms.locfileid: "49949093"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT QueryIsLocal(  
+HRESULT QueryIsLocal(  
    void  
 );  
 ```  
   
 ```csharp  
-int QueryIsLocal();  
+int QueryIsLocal();  
 ```  
   
 ## <a name="return-value"></a>傳回值  

@@ -14,15 +14,15 @@ helpviewer_keywords:
 - sampling profiling method,Modules view
 ms.assetid: 816f5633-65d7-41e5-aee1-033628d4e2df
 caps.latest.revision: 18
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fb282e9f764c9e0ea239f0be534b225809108d1f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a885ca96ce58be7448f5b9b814457b38e08a1233
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49193111"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51742493"
 ---
 # <a name="modules-view---sampling-data"></a>模組檢視 - 取樣資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

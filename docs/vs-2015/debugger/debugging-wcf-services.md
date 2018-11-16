@@ -19,15 +19,15 @@ helpviewer_keywords:
 - WCF, debugging
 ms.assetid: 6c8974d0-2c15-4d9f-a7f3-cabd4b204cda
 caps.latest.revision: 18
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d556f8a35cff99c1098323a9e2911af20bd2277c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 177261a3a3b842fcf9a1d2376d4f8dfcd142692e
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49258686"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51796151"
 ---
 # <a name="debugging-wcf-services"></a>偵錯 WCF 服務
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

@@ -17,12 +17,12 @@ ms.assetid: 8fa1a1d3-9fcb-4fb3-bf4e-e7172ac08d77
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 67dbed6647707711e038940726c8b68beb908eb5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b35daf4371ab57002abbc959ba5574aafdc8230b
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49843544"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51758842"
 ---
 # <a name="idebugcoreserver2getmachineinfo"></a>IDebugCoreServer2::GetMachineInfo
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,16 +32,16 @@ ms.locfileid: "49843544"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT GetInfo(   
-   MACHINE_INFO_FIELDS Fields,  
-   MACHINE_INFO*       pMachineInfo  
+HRESULT GetInfo(   
+   MACHINE_INFO_FIELDS Fields,  
+   MACHINE_INFO*       pMachineInfo  
 );  
 ```  
   
 ```csharp  
-int GetInfo(   
-   enum_ MACHINE_INFO_FIELDS  Fields,  
-   MACHINE_INFO[]             pMachineInfo  
+int GetInfo(   
+   enum_ MACHINE_INFO_FIELDS  Fields,  
+   MACHINE_INFO[]             pMachineInfo  
 );  
 ```  
   

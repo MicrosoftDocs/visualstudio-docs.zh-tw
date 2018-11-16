@@ -15,12 +15,12 @@ ms.assetid: 6c159c9d-345d-4b23-8ddd-9839d338b62f
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6fd821da5d54afdb7ea8b3d16dc32f818222a961
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: bbb9153a216b2d2fcc7cdeba0399aa60fc73881e
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49183101"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51768902"
 ---
 # <a name="properties-window-object-list"></a>屬性視窗的物件清單
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

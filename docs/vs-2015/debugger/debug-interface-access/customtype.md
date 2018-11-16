@@ -15,15 +15,15 @@ helpviewer_keywords:
 - CustomType symbol
 ms.assetid: 1b66bc0a-7979-416f-bf7f-e5df91584c91
 caps.latest.revision: 18
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4c9e2f9dd3c3ed02bfc111641d48bdc74282e946
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4d0cbf7a82cf2af95b052628ebaf0b4b87dc4094
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49237584"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51722591"
 ---
 # <a name="customtype"></a>CustomType
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

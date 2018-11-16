@@ -16,12 +16,12 @@ ms.assetid: d31a0f97-b7be-4fb5-a942-8ba4527bc068
 caps.latest.revision: 20
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0abb157765126e1fa73f0ff5955622e7a680a1f3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1c427caf79ebbd6c63753b28139814ade148b88e
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49286899"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51801824"
 ---
 # <a name="ide-guids"></a>IDE GUID
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

@@ -20,15 +20,15 @@ helpviewer_keywords:
 - DebuggerTypeProxy attribute
 ms.assetid: 943f3bb1-993e-4800-a47e-0af78b063014
 caps.latest.revision: 27
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3f7b404253c2425a64fd2a9ad4bb53943e033d8e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 14e42546245aad8e5e5071a843da87f23a038149
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49898833"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51754332"
 ---
 # <a name="using-debuggertypeproxy-attribute"></a>使用 DebuggerTypeProxy 屬性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

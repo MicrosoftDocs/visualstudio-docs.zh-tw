@@ -19,12 +19,12 @@ caps.latest.revision: 9
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 3ec83128682a874a5491d62762b424045f11c4b2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 81c01e96478ca83c546670897ab63e4eee64033f
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49849849"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51777821"
 ---
 # <a name="uninstall-visual-studio"></a>解除安裝 Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

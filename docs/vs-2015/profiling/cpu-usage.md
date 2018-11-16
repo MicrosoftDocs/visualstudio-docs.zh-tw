@@ -11,15 +11,15 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 7501a20d-04a1-480f-a69c-201524aa709d
 caps.latest.revision: 12
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f49ab702a411c1d5205be8c626ce1032e57ab4ce
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: af6d58ac5cd87523124d567e36559a82d69ddfc6
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49876512"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51810529"
 ---
 # <a name="cpu-usage"></a>CPU 使用量
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

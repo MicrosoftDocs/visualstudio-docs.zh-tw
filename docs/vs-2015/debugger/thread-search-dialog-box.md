@@ -13,15 +13,15 @@ helpviewer_keywords:
 - Thread Search
 ms.assetid: 52ecb289-9b86-455c-a52b-3dcd3f7255bf
 caps.latest.revision: 7
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e85d1504fcd34982c7316e51e4858e894e232eb2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d64bf9c96381577505fd93302f469de6cd9f8a48
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49280991"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51764261"
 ---
 # <a name="thread-search-dialog-box"></a>執行緒搜尋對話方塊
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

@@ -17,12 +17,12 @@ ms.assetid: 6905845e-e88e-4805-adcf-21da39108ec7
 caps.latest.revision: 24
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b4938057514071836fefbca6988cf05a6399126e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6b96cb16182447ca636ee363a2cf62a33dcd6823
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49811889"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51752931"
 ---
 # <a name="how-to-access-the-built-in-fonts-and-color-scheme"></a>如何： 存取的內建的字型和色彩配置
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

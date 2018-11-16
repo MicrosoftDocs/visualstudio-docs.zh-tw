@@ -19,15 +19,15 @@ helpviewer_keywords:
 - WCF, debugging limitations
 ms.assetid: 8e0333c4-1ddc-4abe-8f1c-d19bf6a2a07a
 caps.latest.revision: 33
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5e5d49b70cc594a05bae8056fe8139e405e15cba
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9c1d569712547144067cbfcfd894e31e1b41964e
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49888092"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51798308"
 ---
 # <a name="limitations-on-wcf-debugging"></a>WCF 偵錯的限制
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
