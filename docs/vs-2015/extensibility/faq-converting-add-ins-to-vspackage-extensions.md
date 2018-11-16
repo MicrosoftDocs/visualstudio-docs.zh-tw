@@ -13,12 +13,12 @@ ms.assetid: 3a01d333-6e31-423f-ae06-5091a4fcb7a9
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7b44c9d400f5983feeada9557a79de9df50cfe8f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b2318ff719f51660b4cec0eec6b7a051ea54aa67
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49934349"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51817343"
 ---
 # <a name="faq-converting-add-ins-to-vspackage-extensions"></a>常見問題集：將增益集轉換成 VSPackage 擴充功能
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
