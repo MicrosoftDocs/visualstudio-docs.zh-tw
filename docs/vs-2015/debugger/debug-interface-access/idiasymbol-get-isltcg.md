@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaSymbol::get_isLTCG method
 ms.assetid: 5f7f05b8-6b71-4958-9e1e-e4924ef9c59b
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bea27be1de99a8e74307cd8c3f8dab1c38ade70f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c7072c1ea2ce3a203d2617c108728eda5671bbd2
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49851839"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51738521"
 ---
 # <a name="idiasymbolgetisltcg"></a>IDiaSymbol::get_isLTCG
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

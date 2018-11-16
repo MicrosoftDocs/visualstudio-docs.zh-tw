@@ -15,15 +15,15 @@ helpviewer_keywords:
 - Resource Contentions view
 ms.assetid: 14a7f774-211f-4ef8-af05-94d1c8f65d2f
 caps.latest.revision: 14
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c6db867b582c4d1f5b0722d085e8a2eac48d182f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: dddc9c85731137c6499e976b4b571396af297f7a
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49253015"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51810347"
 ---
 # <a name="resource-contentions-view---contention-data"></a>資源爭用檢視 - 爭用資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

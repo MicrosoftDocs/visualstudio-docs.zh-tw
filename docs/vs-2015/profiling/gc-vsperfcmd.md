@@ -11,15 +11,15 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 7c81e88b-a748-4cf5-a7a1-3429608e1b54
 caps.latest.revision: 17
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4d13193ea49a2d96bb1bd6d4058457e48a58e5ff
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3c9a57a8fa4b0610cc3cceb00e09749a2e5b077e
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49213027"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51727876"
 ---
 # <a name="gc-vsperfcmd"></a>GC (VSPerfCmd)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

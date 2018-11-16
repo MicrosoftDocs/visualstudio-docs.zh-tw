@@ -23,15 +23,15 @@ helpviewer_keywords:
 - Executable for Debugging Session dialog box
 ms.assetid: c0ddbe32-b99f-4425-acf1-f48842804f56
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2d1279ba5b3ed79c4115143a72e4543bbd6c123d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 26a7eabe624b75c2b9ded6d14e6bf7c92505ba2d
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49189822"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51753615"
 ---
 # <a name="executable-for-debugging-session-dialog-box"></a>偵錯工作階段的可執行檔對話方塊
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

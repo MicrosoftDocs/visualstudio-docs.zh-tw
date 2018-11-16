@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaSymbol::get_backEndBuild method
 ms.assetid: 423af497-9294-438e-92b4-456c6f56dc56
 caps.latest.revision: 12
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ad714ceb91d4ecfc60de1359785f27530fa584ff
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 465f23523d5f2f8f2a9f3dc5ca5d240b18e647f7
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49892138"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51724514"
 ---
 # <a name="idiasymbolgetbackendbuild"></a>IDiaSymbol::get_backEndBuild
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "49892138"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT get_backEndBuild (   
+HRESULT get_backEndBuild (   
    DWORD* pRetVal  
 );  
 ```  

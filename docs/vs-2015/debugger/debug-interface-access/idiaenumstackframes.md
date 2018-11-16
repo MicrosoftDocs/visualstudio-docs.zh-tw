@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaEnumStackFrames interface
 ms.assetid: 3d1e8403-c9fc-42ff-ae35-0ab9a5ed2ad7
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 143ed31b8f19fcba56b7c7e6a7bb41e94f7d6432
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2242b583e0afa9dd4987c042c5faf914237463d8
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49182874"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51721783"
 ---
 # <a name="idiaenumstackframes"></a>IDiaEnumStackFrames
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

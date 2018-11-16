@@ -15,12 +15,12 @@ ms.assetid: 1352c6ab-7b92-4a16-b2d2-6520b628830e
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 484cdec882df5645c640187e4ea5f6a4ca2aee28
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5c9b3a44162d23a66d75ea81818ffe30f55c897c
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49847114"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51722429"
 ---
 # <a name="idebugcomplussymbolproviderishiddencode"></a>IDebugComPlusSymbolProvider::IsHiddenCode
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

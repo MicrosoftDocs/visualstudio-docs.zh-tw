@@ -13,15 +13,15 @@ dev_langs:
 - C++
 ms.assetid: a82ab896-0185-46a4-b4d5-babfcc660fe1
 caps.latest.revision: 6
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c4b6dd293787d8f70f5fcbffc0098f5d1f23c1e1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2528428180386eb8c159dd2edc67f496ecd66883
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49232501"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51803483"
 ---
 # <a name="idiasymbolgetsizeinudt"></a>IDiaSymbol::get_sizeInUdt
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

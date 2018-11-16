@@ -18,12 +18,12 @@ ms.assetid: db6c3ddd-a1ba-450a-897a-bb568a5377fc
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: cc1b406fa0675a481b538446f9c4bf0716475872
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2ca5932976b2115b6d9095a5dd4cc61e72800dd1
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49171875"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51726854"
 ---
 # <a name="extern-element"></a>Extern 項目
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
