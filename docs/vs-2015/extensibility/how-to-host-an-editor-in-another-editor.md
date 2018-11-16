@@ -15,12 +15,12 @@ ms.assetid: 2b0eb705-fe94-4ca8-93e0-9dbd8ce61a44
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f7bdab7eb1949cb2d1113247c1c537c1a43ccf97
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: fead1aa7b1094fe5bcd1cac989b6853d3564b00b
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49208516"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51803158"
 ---
 # <a name="how-to-host-an-editor-in-another-editor"></a>如何： 裝載在其他編輯器中的編輯器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

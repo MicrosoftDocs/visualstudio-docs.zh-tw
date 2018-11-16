@@ -17,12 +17,12 @@ ms.assetid: 10e70aa7-9381-40d3-bdd1-d2cad78ef16c
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e0261ae6da32f0d17991d256e58775713441eba6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: cb7682129ed077cf7f84f9a72edc5e75c0398ff3
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49893321"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51804542"
 ---
 # <a name="disassemblydata"></a>DisassemblyData
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "49893321"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-typedef struct tagDisassemblyData {   
+typedef struct tagDisassemblyData {   
    DISASSEMBLY_STREAM_FIELDS dwFields;  
    BSTR                      bstrAddress;  
    BSTR                      bstrAddressOffset;  
@@ -50,7 +50,7 @@ typedef struct tagDisassemblyData {
 ```  
   
 ```csharp  
-public struct DisassemblyData {   
+public struct DisassemblyData {   
    public uint          dwFields;  
    public string        bstrAddress;  
    public string        bstrAddressOffset;  

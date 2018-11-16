@@ -16,12 +16,12 @@ ms.assetid: 6857e9c6-e44a-468a-afa4-f7c4a0b77844
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 97320ebac09b9980591e3c6d9bb56eee44d46793
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c3af2c1f571287a4a33c1dd57340e2a66197bd59
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49827489"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51753954"
 ---
 # <a name="launching-a-program"></a>啟動程式
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

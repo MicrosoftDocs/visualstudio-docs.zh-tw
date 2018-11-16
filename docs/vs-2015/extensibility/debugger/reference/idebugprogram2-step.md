@@ -17,12 +17,12 @@ ms.assetid: e4c2ffce-9810-4088-8162-eac9ef04f2a9
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4a8d3696399a888493b4b8f84928418eb2c562b9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d8b0b1e72115a710798d2961105d6884edd7b493
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49859352"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51746840"
 ---
 # <a name="idebugprogram2step"></a>IDebugProgram2::Step
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ ms.locfileid: "49859352"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT Step(   
+HRESULT Step(   
    IDebugThread2*  pThread,  
    STEPKIND        sk,  
    STEPUNIT        step  
@@ -43,7 +43,7 @@ HRESULT Step(
 ```  
   
 ```csharp  
-int Step(   
+int Step(   
    IDebugThread2  pThread,  
    enum_STEPKIND  sk,  
    enum_STEPUNIT  step  

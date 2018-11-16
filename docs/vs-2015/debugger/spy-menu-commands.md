@@ -13,15 +13,15 @@ helpviewer_keywords:
 - Spy menu commands
 ms.assetid: 802549be-dbd8-4df0-a18b-971900eaa769
 caps.latest.revision: 7
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 065f000413677ae888985ffaa4dbd0b98261a7e8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b025feb66de9c533f6a291db3772c1b8f6f696b8
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49216277"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51780265"
 ---
 # <a name="spy-menu-commands"></a>Spy 功能表命令
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

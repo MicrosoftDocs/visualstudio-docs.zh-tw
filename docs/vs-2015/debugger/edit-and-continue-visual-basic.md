@@ -23,15 +23,15 @@ helpviewer_keywords:
 - 64-bit Edit and Continue
 ms.assetid: 7e90f34f-e699-45ab-a4c9-a4b527c498c8
 caps.latest.revision: 43
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 61ce8f61092bdcc612ea535debfcface976ebff8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 383e3418135857b0bded3bbefaace0e8d5832ce6
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49265091"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51750635"
 ---
 # <a name="edit-and-continue-visual-basic"></a>編輯後繼續 (Visual Basic)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

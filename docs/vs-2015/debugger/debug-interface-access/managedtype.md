@@ -17,15 +17,15 @@ helpviewer_keywords:
 - ManagedType symbol
 ms.assetid: 5db99e2a-4f2e-4796-89b7-b401b151826f
 caps.latest.revision: 18
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b9c1c3c4d27a339311412fcac31006a244e3f52b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 658c8c9b3d550495ffac79309a43966b485a7b1c
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49221373"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51759581"
 ---
 # <a name="managedtype"></a>ManagedType
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

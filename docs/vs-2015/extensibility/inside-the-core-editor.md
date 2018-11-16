@@ -15,12 +15,12 @@ ms.assetid: 8265f31c-c45b-4858-882c-6d9f1e3b9083
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: dc91a228fd788074a543678b281288e043f9385c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9aca4bb8ad55dbd4cac0a6f899731711ccb6db8f
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49227721"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51798543"
 ---
 # <a name="inside-the-core-editor"></a>在核心編輯器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

@@ -11,15 +11,15 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 45dd86b2-801e-4b07-a8c4-7bd25641d7f8
 caps.latest.revision: 36
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 02b8c3d8d21e19f671901a353af00163c17025fb
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f9c4a5f3396992b8bca2756b33b9b6f920d54733
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49188535"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51776118"
 ---
 # <a name="graphics-diagnostics-examples"></a>圖形診斷範例
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

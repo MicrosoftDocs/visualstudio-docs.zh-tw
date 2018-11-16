@@ -18,12 +18,12 @@ ms.assetid: 4cb5ed81-6f0c-41ce-a770-5adb6b4bf5d9
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9c665e42c3e10b3cb5964707b77fd3fa2faf0095
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c1d5abc33435192db8f6ea6e3bf44d57de426d53
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49813514"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51806915"
 ---
 # <a name="idebugpendingbreakpoint2delete"></a>IDebugPendingBreakpoint2::Delete
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -33,8 +33,8 @@ ms.locfileid: "49813514"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT Delete(   
-   void   
+HRESULT Delete(   
+   void   
 );  
 ```  
   

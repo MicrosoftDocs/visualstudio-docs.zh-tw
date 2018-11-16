@@ -15,12 +15,12 @@ ms.assetid: b6663608-b049-44b0-a75b-080fdc5faafc
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 403ec1a62f2d0a161ac08b78ddd4cbd4ff7da827
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 64b4ab68d973f380dcc4bc27314a69b2b605b4f1
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49206709"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51759465"
 ---
 # <a name="com-constants-in-managed-code"></a>受控碼中的 COM 常數
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

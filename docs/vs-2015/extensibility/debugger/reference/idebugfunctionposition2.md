@@ -17,12 +17,12 @@ ms.assetid: a835f65b-91b0-48ad-8485-04534c814b1b
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 60c343b4f87e208ac3ebf19af0901a3319517223
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 157495b472402d26f67440e2a472723b3fb926ec
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49222335"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51771483"
 ---
 # <a name="idebugfunctionposition2"></a>IDebugFunctionPosition2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

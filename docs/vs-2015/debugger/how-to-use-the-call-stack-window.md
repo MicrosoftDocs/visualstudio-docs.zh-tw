@@ -31,15 +31,15 @@ helpviewer_keywords:
 - Call Stack window, viewing disassembly code for functions on the call stack
 ms.assetid: 5154a2a1-4729-4dbb-b675-db611a72a731
 caps.latest.revision: 45
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0e79c491eeec373bd3753a5ea55777a079cc51ab
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c45f0a645945e68b7b3d21eefe2f981b9b4b352f
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49271657"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51751017"
 ---
 # <a name="how-to-use-the-call-stack-window"></a>如何：使用呼叫堆疊視窗
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

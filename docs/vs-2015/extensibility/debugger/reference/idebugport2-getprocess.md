@@ -17,12 +17,12 @@ ms.assetid: 3e2431b0-0e19-450d-8e1d-d7c314c8f872
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 04acaa62840eaf96bcb1408ac9f28a3a15ab819d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 05cceb9fa315a81b546f4e82df687ac7dc054394
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49825428"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51766830"
 ---
 # <a name="idebugport2getprocess"></a>IDebugPort2::GetProcess
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,14 +32,14 @@ ms.locfileid: "49825428"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT GetProcess(   
+HRESULT GetProcess(   
    AD_PROCESS_ID    ProcessId,  
    IDebugProcess2** ppProcess  
 );  
 ```  
   
 ```csharp  
-int GetProcess(   
+int GetProcess(   
    AD_PROCESS_ID      ProcessId,  
    out IDebugProcess2 ppProcess  
 );  

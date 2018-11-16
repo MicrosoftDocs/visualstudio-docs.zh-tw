@@ -21,15 +21,15 @@ helpviewer_keywords:
 - what's new [Visual Studio], debugging
 ms.assetid: 2aed9caa-2384-4e49-8595-82d8b06cf271
 caps.latest.revision: 86
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 743875ef4ab7582bd4c1a254c82f168b96ba8208
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 859233c1c79360f28e306dc0fca7df574cb39ccf
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49188613"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51774883"
 ---
 # <a name="whats-new-for-the-debugger-in-visual-studio-2015"></a>Visual Studio 2015 中偵錯工具的新功能
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

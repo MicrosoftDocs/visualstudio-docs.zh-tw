@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaReadExeAtRVACallback::ReadExecutableAtRVA method
 ms.assetid: 3c1e965f-8f05-41a8-86d8-01830b2377c9
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 42f61d7e844038812175032ab9b8caaa90b088ec
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a94993260c7614b56d5b357c26793be7d1775e37
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49868205"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51750300"
 ---
 # <a name="idiareadexeatrvacallbackreadexecutableatrva"></a>IDiaReadExeAtRVACallback::ReadExecutableAtRVA
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "49868205"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT ReadExecutableAtRVA (   
+HRESULT ReadExecutableAtRVA (   
    DWORD  relativeVirtualAddress,  
    DWORD  cbData,  
    DWORD* pcbData,  

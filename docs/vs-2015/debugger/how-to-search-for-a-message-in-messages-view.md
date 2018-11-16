@@ -15,15 +15,15 @@ helpviewer_keywords:
 - messages, searching for
 ms.assetid: 732b7ccc-54ea-41db-823b-2b96e3e4083e
 caps.latest.revision: 8
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: debad8bbfbb72f43002c92dc3c962f378b13315e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 08a2a08014d0927ecea29b1acb6bb36620f1a15a
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49853320"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51802081"
 ---
 # <a name="how-to-search-for-a-message-in-messages-view"></a>如何：在訊息檢視中搜尋訊息
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

@@ -17,12 +17,12 @@ ms.assetid: 8b86d62f-c274-4e91-82e0-38cdb9a423d5
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 207abbda08134c2a1e065cf73050fc2451d4eaab
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e1534c13c6c09a95fab21582ba0016153d1a6992
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49181453"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51806980"
 ---
 # <a name="anatomy-of-a-vsix-package"></a>VSIX 套件的結構
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

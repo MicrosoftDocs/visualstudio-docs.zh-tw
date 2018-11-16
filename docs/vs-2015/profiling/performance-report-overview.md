@@ -15,15 +15,15 @@ helpviewer_keywords:
 - performance reports, about performance reports
 ms.assetid: 7324c24c-fd09-479b-b2ad-e0c3b613e040
 caps.latest.revision: 50
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f62018eb3e58f69758bd07faebc7bd77fb26b33b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6b9a729698841d1bbbcd9b49ffe0d3dd9bddccc8
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49845845"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51790510"
 ---
 # <a name="performance-report-overview"></a>效能報告概觀
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

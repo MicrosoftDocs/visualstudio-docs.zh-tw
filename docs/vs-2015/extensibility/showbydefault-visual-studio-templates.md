@@ -18,12 +18,12 @@ ms.assetid: 7be783f6-0ef6-42bc-924a-df9a2eba7781
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9144992e2c6f76970e070ecc929d98a39375c1bd
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6cd368d33e218d0f240a8f6272cfbfba846f04e8
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49299633"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51781799"
 ---
 # <a name="showbydefault-visual-studio-templates"></a>ShowByDefault (Visual Studio 範本)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

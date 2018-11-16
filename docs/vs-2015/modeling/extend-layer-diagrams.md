@@ -14,15 +14,15 @@ helpviewer_keywords:
 - layer models
 ms.assetid: 83fca301-b008-485a-87eb-218050e71451
 caps.latest.revision: 41
-author: alexhomer1
+author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: d3c149558f53effff29d15bfce0d05f0dada0f7b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 20d84c91ef30ae549b8fa59893d439a06467ed33
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49847067"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51766920"
 ---
 # <a name="extend-layer-diagrams"></a>Extend layer diagrams
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

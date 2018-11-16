@@ -17,12 +17,12 @@ ms.assetid: ef436bd3-738e-47e8-828c-8febce752439
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 769c3902595a52679070d6b01cc70672c5613951
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5169ff103b823067d64c58a3f6223220f67a3d52
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49841776"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51734217"
 ---
 # <a name="contextinfofields"></a>CONTEXT_INFO_FIELDS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "49841776"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-enum enum_CONTEXT_INFO_FIELDS {   
+enum enum_CONTEXT_INFO_FIELDS {   
    CIF_MODULEURL =       0x00000001,  
    CIF_FUNCTION =        0x00000002,  
    CIF_FUNCTIONOFFSET =  0x00000004,  
