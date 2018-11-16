@@ -13,15 +13,15 @@ helpviewer_keywords:
 - Font dialog box
 ms.assetid: 414c42a5-7168-46a9-bbea-6ab10f2d82a8
 caps.latest.revision: 7
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d0fa7fcf78180790e9f57ae2f944a9b5683e8423
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9b7426d0bf266d8a225745e31dfd721e618d6071
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49288063"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51744032"
 ---
 # <a name="font-dialog-box-microsoft-spy-help"></a>字型對話方塊 (Microsoft Spy++ 說明)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

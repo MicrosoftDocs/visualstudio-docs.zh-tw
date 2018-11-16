@@ -19,12 +19,12 @@ ms.assetid: 8385f1a6-1e98-4dca-83d2-fcbed7177242
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 099e3e30fafdd2aab71baf26add1f0b115c470fc
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 47a95f4152e1c0779fc3def057f49b9ec9130259
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49205500"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51736727"
 ---
 # <a name="optimizing-menu-and-toolbar-commands"></a>將功能表和工具列命令最佳化
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

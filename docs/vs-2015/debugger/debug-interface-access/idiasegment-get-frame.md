@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaSegment::get_frame method
 ms.assetid: 9fece9c7-064a-4d6b-9cef-fc387f322205
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 246226b13d0474a32cfeb4c161330ae99aa50db7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d4328091aa1af561e24c8f983e3895ea838e6130
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49869401"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51785179"
 ---
 # <a name="idiasegmentgetframe"></a>IDiaSegment::get_frame
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "49869401"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT get_frame (   
+HRESULT get_frame (   
    DWORD* pRetVal  
 );  
 ```  

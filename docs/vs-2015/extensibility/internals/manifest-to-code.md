@@ -10,12 +10,12 @@ ms.assetid: 17ecacea-397d-4a97-b003-01bd5d56e936
 caps.latest.revision: 5
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5c6cc419104e8fe094034b7df35cb7e731228373
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e07700b73c4f419e5dd0fa31c5e2aad9f3d6693d
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49281342"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51758216"
 ---
 # <a name="manifest-to-code"></a>資訊清單至程式碼
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

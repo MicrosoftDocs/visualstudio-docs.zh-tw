@@ -17,12 +17,12 @@ ms.assetid: 75369fe6-ddd3-497d-80d1-2488e6100e9f
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7d9f488ff3fe50de708557e95846a1bb8a2ec860
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8973f82c2237bb606fa9dba84b1d3135adddde80
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49822309"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51735967"
 ---
 # <a name="idebugfieldequal"></a>IDebugField::Equal
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "49822309"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT Equal(   
+HRESULT Equal(   
    IDebugField* pField  
 );  
 ```  

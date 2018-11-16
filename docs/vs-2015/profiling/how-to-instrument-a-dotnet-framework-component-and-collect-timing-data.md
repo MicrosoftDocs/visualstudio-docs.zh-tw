@@ -11,15 +11,15 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: b7dcc27b-45c6-4302-9552-6fa5b1e94b56
 caps.latest.revision: 33
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 380d038b1e832aa8eacf1a7ab2f5718ff9a08ab7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 857818dac0b1cf1cd394d69aa322d9c2a0bbbe77
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942409"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51810146"
 ---
 # <a name="how-to-instrument-a-stand-alone-net-framework-component-and-collect-timing-data-with-the-profiler-from-the-command-line"></a>如何：從命令列使用程式碼剖析工具以檢測獨立的 .NET Framework 元件並收集計時資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

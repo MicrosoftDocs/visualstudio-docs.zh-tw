@@ -27,15 +27,15 @@ helpviewer_keywords:
 - machine code
 ms.assetid: eaf84dd0-c82d-481b-af51-690b74e7794c
 caps.latest.revision: 34
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8cdefbbc16021931e3d31dd2d46f4e6509c4dd17
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 67f9307f2f5fece64ee2ee11dd48863b9a951180
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49907582"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51760909"
 ---
 # <a name="how-to-use-the-disassembly-window"></a>如何：使用反組譯碼視窗
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

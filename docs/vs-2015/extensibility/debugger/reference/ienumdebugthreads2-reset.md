@@ -17,12 +17,12 @@ ms.assetid: 88980d9a-c4d6-4de4-a9ab-fb56fa71394a
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1e7d4ecfe8251ba454c8c67cc6bd1094a3383679
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: de92ff88d83e07c844690c61a2e11742e27c82e0
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49810940"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51817811"
 ---
 # <a name="ienumdebugthreads2reset"></a>IEnumDebugThreads2::Reset
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

@@ -13,15 +13,15 @@ f1_keywords:
 - vs.graphics.shaderviewer
 ms.assetid: 4ccec541-3c49-42bd-972a-686eb3a88fbc
 caps.latest.revision: 21
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3a0db7986d42b61b65241a8487bc1a595de4f655
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e2c79491703ba2e20ae7bbb8c1303cfd5496a686
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49827944"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51760932"
 ---
 # <a name="hlsl-shader-debugger"></a>HLSL 著色器偵錯工具
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

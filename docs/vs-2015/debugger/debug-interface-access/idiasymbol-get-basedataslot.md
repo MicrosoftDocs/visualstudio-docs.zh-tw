@@ -13,15 +13,15 @@ dev_langs:
 - C++
 ms.assetid: f9ed21b7-9397-4813-926e-ade11914b06b
 caps.latest.revision: 6
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9d8699bfa8c988f39b9ff89d0b6aca36a053503f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 373150e1133a36199a316856d8c798f4e04e65eb
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49278768"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51730038"
 ---
 # <a name="idiasymbolgetbasedataslot"></a>IDiaSymbol::get_baseDataSlot
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

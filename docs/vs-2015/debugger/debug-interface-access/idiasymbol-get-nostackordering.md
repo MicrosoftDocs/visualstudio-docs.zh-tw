@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaSymbol::get_noStackOrdering method
 ms.assetid: a1753917-705b-4165-9880-d05e91e6dcb4
 caps.latest.revision: 10
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a1a5189db62259586dc4ad12aab4798f027f97b6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7ac61991e16852716e2857a188b4292b51939a24
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49890344"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51788455"
 ---
 # <a name="idiasymbolgetnostackordering"></a>IDiaSymbol::get_noStackOrdering
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

@@ -16,15 +16,15 @@ helpviewer_keywords:
 - DIA SDK, interfaces
 ms.assetid: 62aee7c3-d314-4272-a32b-b2818f32fab8
 caps.latest.revision: 19
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 40934ff90ea794c0bc86c7d3a9d8fbe4fe1d3703
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d74f42008a76fb9b3f5ac6966ec01721bcb32cac
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49233313"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51809333"
 ---
 # <a name="interfaces-debug-interface-access-sdk"></a>介面 (偵錯介面存取 SDK)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

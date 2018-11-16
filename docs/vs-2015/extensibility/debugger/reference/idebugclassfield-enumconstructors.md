@@ -17,12 +17,12 @@ ms.assetid: 66a250b2-75a0-45aa-8d58-40f91cc4bf7b
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c436f4a0e2d566879e5ce52be765074bee0dfa90
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 58f8ad70612275ea1c68a712c0a6a6ce48200e05
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49933738"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51807358"
 ---
 # <a name="idebugclassfieldenumconstructors"></a>IDebugClassField::EnumConstructors
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "49933738"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT EnumConstructors(   
+HRESULT EnumConstructors(   
    CONSTRUCTOR_ENUM   cMatch,  
    IEnumDebugFields** ppEnum  
 );  

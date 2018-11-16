@@ -19,12 +19,12 @@ ms.assetid: 80a52e93-4a04-4ab2-8adc-a7847c2dc20b
 caps.latest.revision: 29
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f4b058b4e3f831f4d8eddcbd816e4e35dbd83803
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 904ac14433bf6b7b839a4fe634175a7f583e27ab
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49232853"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51772179"
 ---
 # <a name="sdk-helpers-for-debugging"></a>適用於偵錯的 SDK 協助程式
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -276,7 +276,7 @@ HRESULT EnumMetricSections(
 |*[計量值]*|指派給計量的值。 此值應該有 （字串、 數字等） 的類型取決於計量。|  
   
 > [!NOTE]
->  所有的 Guid 會儲存在格式`{GUID}`。 例如，`{123D150B-FA18-461C-B218-45B3E4589F9B}`。  
+>  所有的 Guid 會儲存在格式`{GUID}`。 例如， `{123D150B-FA18-461C-B218-45B3E4589F9B}` 。  
   
 ### <a name="debug-engines"></a>偵錯引擎  
  以下是在登錄中的偵錯引擎度量資訊的組織。 `Engine` 是偵錯引擎的計量類型名稱，以及對應至 *[計量類型]* 上述的登錄樹狀子目錄中。  

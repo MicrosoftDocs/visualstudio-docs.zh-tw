@@ -15,15 +15,15 @@ helpviewer_keywords:
 - sequence diagrams, properties
 ms.assetid: 475c10f3-a2d2-4a1e-b366-dc28997d437e
 caps.latest.revision: 22
-author: alexhomer1
+author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 7af657496fc95b07c7149f75fa03087eb1988606
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 01d63e39967df361d87ff0182b1c85b6ecd2fdb6
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49245215"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51793889"
 ---
 # <a name="properties-of-elements-on-uml-sequence-diagrams"></a>UML 循序圖上的項目屬性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

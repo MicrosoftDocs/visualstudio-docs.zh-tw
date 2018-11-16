@@ -17,12 +17,12 @@ ms.assetid: 6da944eb-36cd-4a8c-8d71-544c775cfcc1
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ab1b74092896d44b13fdb6822172f6f95ee87c0b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 586876131afdb83f7bf9b32e3f565ba95c8a52b5
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49918697"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51744392"
 ---
 # <a name="canstopreason"></a>CANSTOP_REASON
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "49918697"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-enum enum_CANSTOP_REASON {   
+enum enum_CANSTOP_REASON {   
    CANSTOP_ENTRYPOINT = 0x0000,  
    CANSTOP_STEPIN     = 0x0001  
 };  
@@ -40,7 +40,7 @@ typedef DWORD CANSTOP_REASON;
 ```  
   
 ```csharp  
-public enum enum_CANSTOP_REASON {   
+public enum enum_CANSTOP_REASON {   
    CANSTOP_ENTRYPOINT = 0x0000,  
    CANSTOP_STEPIN     = 0x0001  
 };  

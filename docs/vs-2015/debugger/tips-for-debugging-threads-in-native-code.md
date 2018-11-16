@@ -19,15 +19,15 @@ helpviewer_keywords:
 - debugging [Visual Studio], threads
 ms.assetid: 0374c8c6-57a3-4cfe-8047-2effef5ff5dc
 caps.latest.revision: 25
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 06e8690583794c23ce95fb52ef6cab3ab6667afe
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1852e2d0b3e773e5be0f3f60ad191056a4af0889
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49184921"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51775000"
 ---
 # <a name="tips-for-debugging-threads-in-native-code"></a>在機器碼中偵錯執行緒的秘訣
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

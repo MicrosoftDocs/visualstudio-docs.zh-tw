@@ -13,15 +13,15 @@ helpviewer_keywords:
 - Lines view
 ms.assetid: 6631ab87-0e62-4c76-a063-4ea7222b07da
 caps.latest.revision: 14
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: edc922b2d96776d38de1b55ab2226be0d2c10f85
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3e47ed928d32e3cc7ec1ba9a72cf7992ebd4b892
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49815724"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51776976"
 ---
 # <a name="lines-view---net-memory-sampling-data"></a>程式行檢視 - .NET 記憶體取樣資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

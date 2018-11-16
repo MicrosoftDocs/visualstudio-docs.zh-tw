@@ -16,15 +16,15 @@ dev_langs:
 - C++
 ms.assetid: b4481fef-3ebf-4f7d-9748-d43821a0ebac
 caps.latest.revision: 14
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1da34d2baba519f9b8fa8cfde5756e8fccdfe7b8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7ad7c09e163833c295be45a7ee81e2e0587fa6b2
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49868725"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51797399"
 ---
 # <a name="prefetch-content-for-windows-store-apps"></a>預先擷取 Windows 市集應用程式的內容
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

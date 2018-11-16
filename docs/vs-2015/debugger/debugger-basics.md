@@ -20,15 +20,15 @@ helpviewer_keywords:
 - debugger, roadmap
 ms.assetid: 4da42a10-384d-44d7-b4dc-032202ff784b
 caps.latest.revision: 33
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c54038d662acb772e5437cdc6ab9443634d33b37
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5bb755dd5e6936e030c1569edcdd065b8bef0547
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49208165"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51778653"
 ---
 # <a name="debugger-basics"></a>偵錯工具基礎
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

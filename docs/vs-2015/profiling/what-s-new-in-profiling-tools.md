@@ -14,15 +14,15 @@ helpviewer_keywords:
 - what's new
 ms.assetid: d4736cc8-8961-4089-be9e-d5190ce8353c
 caps.latest.revision: 47
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d5cb1d89409b38fea4e3745de7a619e913c6122f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2cf92f6560966cc5b41ad21a1587030e12f86d2a
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49290156"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51725630"
 ---
 # <a name="what39s-new-in-profiling-tools"></a>什麼&#39;程式碼剖析工具的新功能
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

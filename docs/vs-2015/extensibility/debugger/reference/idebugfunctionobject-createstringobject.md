@@ -17,12 +17,12 @@ ms.assetid: fd6070ab-07d4-4ea1-8d71-b16592d6f1a7
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5d8fa1f17031d6b59156a1e4ce807cc48846f2bc
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c4dd57277aa9e95c1c6ab68869045536c809f6b7
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49888173"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51759596"
 ---
 # <a name="idebugfunctionobjectcreatestringobject"></a>IDebugFunctionObject::CreateStringObject
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "49888173"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT CreateStringObject(   
+HRESULT CreateStringObject(   
    LPCOLESTR      pcstrString,  
    IDebugObject** ppObject  
 );  

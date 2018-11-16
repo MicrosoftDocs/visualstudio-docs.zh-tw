@@ -9,15 +9,15 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 42c06b0b-b681-4e19-b5f3-6116dd2a4072
 caps.latest.revision: 15
-author: alexhomer1
+author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 7faef9f085f21db4d4f819746acf52c119189f6d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4173b70cda9df39ce8a4500817fff199ed1a2996
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49940992"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51750016"
 ---
 # <a name="update-a-uml-model-from-a-background-thread"></a>從背景執行緒更新 UML 模型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

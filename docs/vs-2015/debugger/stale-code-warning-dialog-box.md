@@ -23,15 +23,15 @@ helpviewer_keywords:
 - Edit and Continue, stale code
 ms.assetid: 594b894c-e652-4e13-a980-9909473d5712
 caps.latest.revision: 16
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a93d9b6900ed3e1331f61495e4e80b96d446d410
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7d09355e1e565a2ed35ebd2b065677c42c66d662
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49179617"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51771460"
 ---
 # <a name="stale-code-warning-dialog-box"></a>過時程式碼警告對話方塊
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

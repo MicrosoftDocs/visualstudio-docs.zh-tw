@@ -9,15 +9,15 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: b29ce2a5-0ee3-4ab7-9aa3-13ca9c6b37a2
 caps.latest.revision: 10
-author: alexhomer1
+author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 93972dfda37b47c3d8b7ae25cfdf8e69578af1ed
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: bd80ea5ce8cc1ee3778b3fc185746ee95ad3eacf
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49228354"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51771542"
 ---
 # <a name="export-uml-diagrams-to-image-files"></a>將 UML 圖表匯出至影像檔案
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

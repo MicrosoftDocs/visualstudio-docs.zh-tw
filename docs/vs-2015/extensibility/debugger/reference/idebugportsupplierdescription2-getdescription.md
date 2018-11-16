@@ -15,12 +15,12 @@ ms.assetid: bff5f536-1cd1-4313-8856-db7b05818305
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b903f61262bc6a7e097472bf67dbe63c87d93a01
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7a470915ad04e1fd8d46b2f3ce877f368d546723
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49865059"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51808371"
 ---
 # <a name="idebugportsupplierdescription2getdescription"></a>IDebugPortSupplierDescription2::GetDescription
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

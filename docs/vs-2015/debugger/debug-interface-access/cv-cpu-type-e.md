@@ -15,15 +15,15 @@ helpviewer_keywords:
 - CV_CPU_TYPE_e enumeration
 ms.assetid: df470a7e-1d04-448e-b920-c731189514fa
 caps.latest.revision: 15
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d79be580efdc7ed9ef84459ab17273fb3dfafb60
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 76298e6de69489706fde543d036470dd44812b3d
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49867464"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51728554"
 ---
 # <a name="cvcputypee"></a>CV_CPU_TYPE_e
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ ms.locfileid: "49867464"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-typedef enum CV_CPU_TYPE_e {   
+typedef enum CV_CPU_TYPE_e {   
    CV_CFL_8080         = 0x00,  
    CV_CFL_8086         = 0x01,  
    CV_CFL_80286        = 0x02,  

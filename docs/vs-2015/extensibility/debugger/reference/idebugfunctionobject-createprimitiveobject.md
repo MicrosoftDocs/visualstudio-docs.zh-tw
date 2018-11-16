@@ -17,12 +17,12 @@ ms.assetid: 6e9dc8b6-b4e1-4abf-b6e0-e885910775bc
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 115c43f12e6f3c39eecd6692038f60d5a8701976
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 29bdf57c1d6ab77eeb2e283d13785487911efb5c
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49829998"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51767399"
 ---
 # <a name="idebugfunctionobjectcreateprimitiveobject"></a>IDebugFunctionObject::CreatePrimitiveObject
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "49829998"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT CreatePrimitiveObject(   
+HRESULT CreatePrimitiveObject(   
    OBJECT_TYPE    ot,  
    IDebugObject** ppObject  
 );  

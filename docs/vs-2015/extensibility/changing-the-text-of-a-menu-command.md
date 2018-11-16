@@ -17,12 +17,12 @@ ms.assetid: 5cb676a0-c6e2-47e5-bd2b-133dc8842e46
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 00437c10fa93bb72d7579328ad22c347cdf96049
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 52e0319edd7d8f9563998adc18e3b00f7c12713b
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49237441"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51786466"
 ---
 # <a name="changing-the-text-of-a-menu-command"></a>變更功能表命令的文字
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

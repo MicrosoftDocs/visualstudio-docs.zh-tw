@@ -17,12 +17,12 @@ ms.assetid: 546c5b2e-f166-4edb-9e61-57d797ca98a1
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fe2771457f6d0133f188e52278f41be98f73a469
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5697fdf05fb5b9cd9a2b935554ce3ae4954ada92
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49888615"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51752364"
 ---
 # <a name="idebugdocumentcontext2getname"></a>IDebugDocumentContext2::GetName
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,14 +32,14 @@ ms.locfileid: "49888615"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT GetName(   
+HRESULT GetName(   
    GETNAME_TYPE gnType,  
    BSTR*        pbstrFileName  
 );  
 ```  
   
 ```csharp  
-int GetName(   
+int GetName(   
    enum_GETNAME_TYPE  gnType,  
    out string         pbstrFileName  
 );  

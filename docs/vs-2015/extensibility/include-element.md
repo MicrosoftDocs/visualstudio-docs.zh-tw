@@ -18,12 +18,12 @@ ms.assetid: c923dfe6-084a-4105-aec1-f0a3f8399c54
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9fdc57962b101b864370e2a70fdc6327ef7e6110
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c8173234ac93d8aa4b7893ffbafc1724a1695225
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49302324"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51769459"
 ---
 # <a name="include-element"></a>Include 項目
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

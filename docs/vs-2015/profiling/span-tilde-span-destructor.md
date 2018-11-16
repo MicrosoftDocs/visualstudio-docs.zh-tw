@@ -15,15 +15,15 @@ helpviewer_keywords:
 - Concurrency::diagnostic::span::~span destructor
 ms.assetid: 9ff61542-9be7-4e81-bfe5-5d2c6eb112c1
 caps.latest.revision: 10
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bd8901315f41948e9be8b43669e90cc49c601e57
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2888b376dcc814be10158c1cd45d4e0b282d1680
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49220463"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51790015"
 ---
 # <a name="spanspan-destructor"></a>span::~span 解構函式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

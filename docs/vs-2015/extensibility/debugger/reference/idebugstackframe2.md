@@ -17,12 +17,12 @@ ms.assetid: bd212a6a-dcc6-4756-a77a-e8dfda38b104
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4adb58bc715b4cf3d287ac31550e01448d074304
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: bc6a6ea1b1d864c3f14158b9687181e6bdb6bc4a
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49252560"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51816661"
 ---
 # <a name="idebugstackframe2"></a>IDebugStackFrame2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

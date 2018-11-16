@@ -18,12 +18,12 @@ caps.latest.revision: 10
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 6266626d2eb60b64f1923a0c3f54d39c9b20072a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c4ce23be968f0717eb498a496482519e600065c8
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49268602"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51772575"
 ---
 # <a name="use-command-line-parameters-to-install-visual-studio"></a>使用命令列參數安裝 Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

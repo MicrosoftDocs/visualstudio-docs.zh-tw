@@ -16,12 +16,12 @@ ms.assetid: 724eb24b-b87c-4971-a2e7-adee7afc03b2
 caps.latest.revision: 50
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 658a4406b16c3f79f3c485e62e6de8027bb35167
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0363aba508ff1a00fcca34f4b0b7a857aa15fc4f
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49248036"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51730699"
 ---
 # <a name="list-of-available-services"></a>可用服務清單
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

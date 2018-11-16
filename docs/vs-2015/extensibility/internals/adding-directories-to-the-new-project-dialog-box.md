@@ -15,12 +15,12 @@ ms.assetid: 53b328f5-20bb-49a3-bf9e-1818f4fbdf50
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fd99b6a58bb5203e7e0dfd7df95494cb258c9228
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6a03e61cf3699cd45a7b4b8e6a7e5b7d192ca6de
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49190485"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51769741"
 ---
 # <a name="adding-directories-to-the-new-project-dialog-box"></a>將目錄新增至新增專案對話方塊
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

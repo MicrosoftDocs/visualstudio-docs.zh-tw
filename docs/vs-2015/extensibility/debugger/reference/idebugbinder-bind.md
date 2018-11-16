@@ -17,12 +17,12 @@ ms.assetid: 15a11ad7-0fcc-4e80-ae34-8a7dd7bae3c3
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1972c896ff3c2de8fd0d1d59aee8b0c2e88362dd
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: abdc0185289421fd3a4324fb1f6891b231e5a5d4
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49877240"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51780879"
 ---
 # <a name="idebugbinderbind"></a>IDebugBinder::Bind
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "49877240"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT Bind(   
+HRESULT Bind(   
    IDebugObject*  pContainer,  
    IDebugField*   pField,  
    IDebugObject** ppObject  

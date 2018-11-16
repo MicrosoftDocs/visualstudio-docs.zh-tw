@@ -16,12 +16,12 @@ ms.assetid: 4a8833f0-6ac0-4ea7-9400-8275aa991468
 caps.latest.revision: 25
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 84533d95eb6bc0f6433d0b021d429c13e504c13d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5d2bf114a22419e5ed4621db52a68d266e2e7d0e
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49212780"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51807517"
 ---
 # <a name="callback-functions-implemented-by-the-ide"></a>IDE 所實作的回呼函式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

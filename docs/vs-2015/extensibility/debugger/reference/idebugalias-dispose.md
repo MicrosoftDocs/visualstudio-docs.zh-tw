@@ -17,12 +17,12 @@ ms.assetid: e84909a4-d378-4f48-bf25-2c014c77c8e3
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 990be6f0613c038d26204acc5294f7f677b264e5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2f0607ef8deda907c69a23242c89e26edf52e769
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49180657"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51745491"
 ---
 # <a name="idebugaliasdispose"></a>IDebugAlias::Dispose
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,11 +32,11 @@ ms.locfileid: "49180657"
 ## <a name="syntax"></a>語法  
   
 ```cpp  
-HRESULT Dispose();  
+HRESULT Dispose();  
 ```  
   
 ```csharp  
-int Dispose();  
+int Dispose();  
 ```  
   
 #### <a name="parameters"></a>參數  

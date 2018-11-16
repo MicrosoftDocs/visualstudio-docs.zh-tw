@@ -17,12 +17,12 @@ ms.assetid: 8de988ab-cd79-4287-be72-3c900f2fe407
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6ade3593d948bf92a84548f44edbe4d197b48025
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 24989a5f509cd42b21ee0ed8b88f8eaac272968d
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49825266"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51787506"
 ---
 # <a name="idebugpointerfieldgetdereferencedfield"></a>IDebugPointerField::GetDereferencedField
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

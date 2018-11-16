@@ -15,12 +15,12 @@ ms.assetid: 50081d48-987f-43db-8bf9-51b7cf76e9c0
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8b34db3de6d99754f0ea6598a39777622554988e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d669485eb13c8d9f089a54dcbfcf92fac710f474
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49828074"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51784581"
 ---
 # <a name="document-windows"></a>文件視窗
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

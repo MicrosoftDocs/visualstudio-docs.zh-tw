@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaStackWalkHelper2::pdataByVA method
 ms.assetid: fafc38fe-74dc-4726-9a51-eebf3a673d7f
 caps.latest.revision: 14
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 525a19a997d5902da5d69d5804281d472b5d6a26
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c937ac3039ef5807623d99a9d7fcaadada17a3e6
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49906217"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51816745"
 ---
 # <a name="idiastackwalkhelperpdataforva"></a>IDiaStackWalkHelper::pdataForVA
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "49906217"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT pdataForVA(   
+HRESULT pdataForVA(   
    ULONGLONG  va,  
    DWORD      cbData,  
    DWORD*     pcbData,  

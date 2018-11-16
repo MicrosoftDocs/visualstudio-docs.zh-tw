@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaEnumDebugStreams::get_Count method
 ms.assetid: 5c13fa9a-b35e-47b0-806f-1f53bfe1ba89
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 10154046d8d549324e92653fb18b9b7e2ed4cb52
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 404e05992ebf3492d7c5e2fcf39964880f304d1a
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49851987"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51785465"
 ---
 # <a name="idiaenumdebugstreamsgetcount"></a>IDiaEnumDebugStreams::get_Count
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "49851987"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT get_Count(   
+HRESULT get_Count(   
    LONG* pRetVal  
 );  
 ```  

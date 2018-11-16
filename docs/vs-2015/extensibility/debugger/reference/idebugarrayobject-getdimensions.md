@@ -17,12 +17,12 @@ ms.assetid: 113e0aff-9028-49d6-b104-9fe7be4772d7
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 80c73e09b88c549779f4a46ce8e12c5ba8af22bf
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c58374115a8a3803a2190c16fc6308f275378e9a
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49868556"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51760998"
 ---
 # <a name="idebugarrayobjectgetdimensions"></a>IDebugArrayObject::GetDimensions
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "49868556"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT GetDimensions(   
+HRESULT GetDimensions(   
    DWORD dwCount,  
    DWORD dwDimensions[]  
 );  

@@ -22,15 +22,15 @@ helpviewer_keywords:
 - profiler, JavaScript [Windows Store apps]
 ms.assetid: da13070a-ba40-47dd-a846-ad72eed70d0b
 caps.latest.revision: 52
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2a8d8bd033c79257336b71e3f62099bd3eaf3808
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 63027ccfffde0aa3b62bae6c1529826fd9b26c71
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49937573"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51760723"
 ---
 # <a name="html-ui-responsiveness"></a>HTML UI 回應性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

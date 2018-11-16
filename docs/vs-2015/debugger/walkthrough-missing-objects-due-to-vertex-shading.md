@@ -11,15 +11,15 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e42b54a0-8092-455c-945b-9ecafb129d93
 caps.latest.revision: 12
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e96835aa0dc0d53cbf4067e7dfdcf0b38000ebfc
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2ecff22d99eb995f0dbe70e93783460f4343d74f
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49817585"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51745930"
 ---
 # <a name="walkthrough-missing-objects-due-to-vertex-shading"></a>逐步解說：因端點著色而遺漏的物件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

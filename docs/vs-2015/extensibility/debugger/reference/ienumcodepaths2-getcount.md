@@ -17,12 +17,12 @@ ms.assetid: 988c5092-fcc5-43a1-a94c-c261edd56ebf
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 25b8ae6cdb3d35d8f1348d9782030f2636158e27
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: bd5996c706b20a8fb22cce81089241a240871e98
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49881939"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51807305"
 ---
 # <a name="ienumcodepaths2getcount"></a>IEnumCodePaths2::GetCount
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

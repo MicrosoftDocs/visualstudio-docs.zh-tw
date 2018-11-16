@@ -28,15 +28,15 @@ helpviewer_keywords:
 - debugging Windows Forms, walkthroughs
 ms.assetid: 529db1e2-d9ea-482a-b6a0-7c543d17f114
 caps.latest.revision: 31
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 53bd1af80b9d86b6a8e22d7bdfd79cee92554a15
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 8f43835374ac74d50e1e81623ecf268fbfbfe8ca
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219649"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51726596"
 ---
 # <a name="walkthrough-debugging-a-windows-form"></a>逐步解說：偵錯 Windows Form
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

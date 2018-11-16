@@ -16,15 +16,15 @@ f1_keywords:
 - vs.performance.rules.DA0002
 ms.assetid: 76e614b3-ad7e-4b92-b7be-88dc1329be1d
 caps.latest.revision: 19
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 86f4738d72cc386e6285dfa96a7f42e906a9a5cd
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: bb1359b525b286dbc88cbd3d8eecaef27060ab23
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49242485"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51809463"
 ---
 # <a name="da0002-vsperfcorprofdll-is-missing"></a>DA0002：遺漏 VSPerfCorProf.dll
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

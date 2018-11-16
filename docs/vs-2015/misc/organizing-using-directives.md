@@ -15,14 +15,14 @@ helpviewer_keywords:
 ms.assetid: 8548dd54-ebf7-42b5-85c4-8f6088149d74
 caps.latest.revision: 13
 author: BillWagner
-ms.author: billchi
+ms.author: wiwagn
 manager: douge
-ms.openlocfilehash: 0d70c1cdf22529b793fb80c724dd581f46490cc0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d22182a1b6c6ea361f77e899c74e03e78fd2af80
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49263181"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51809034"
 ---
 # <a name="organizing-using-directives"></a>組合管理 Using 指示詞
 本內容已移至[Visual C# IntelliSense](../ide/visual-csharp-intellisense.md)。

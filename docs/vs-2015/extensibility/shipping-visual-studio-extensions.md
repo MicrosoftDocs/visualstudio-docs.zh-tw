@@ -17,12 +17,12 @@ ms.assetid: 13cd263d-25f7-488e-9c1a-cff908caedb6
 caps.latest.revision: 29
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ac367f2482a6b8bc5b5b25fca72e8ca05e1f58b7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5b1746b99ccfddef4e831326d88ea21ff9f9129c
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49260172"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51743057"
 ---
 # <a name="shipping-visual-studio-extensions"></a>推出 Visual Studio 延伸模組
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

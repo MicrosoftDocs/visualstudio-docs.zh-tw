@@ -13,15 +13,15 @@ dev_langs:
 - C++
 ms.assetid: 1ec8b8ea-e423-4327-8dc0-a390e6e3ffb0
 caps.latest.revision: 6
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 798a21bc0308e7f478f09cbd52754b81f21802e3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b30b9a07f5cc51b70d1d223ab1890ddeaf39774b
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49174053"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51760764"
 ---
 # <a name="idiasymbolgetnumberofregisterindices"></a>IDiaSymbol::get_numberOfRegisterIndices
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

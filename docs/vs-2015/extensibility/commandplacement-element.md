@@ -16,12 +16,12 @@ ms.assetid: 2cbd7ac8-c55a-43d8-a26d-713b3d790016
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9fcb1922c567ff93bba44ed529e8b78388008bd9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 53a60949cdda6d026525dcc8be5bab8f82a0fb73
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49830622"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51741540"
 ---
 # <a name="commandplacement-element"></a>CommandPlacement 項目
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

@@ -17,12 +17,12 @@ ms.assetid: a93b1412-f447-48a1-af9d-38f3dbb3092f
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e57e82f39eb89f7a937a95ca2abc50840c2fe93f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 80b19cec444a009fc62af1b2345ed631ce80ff1c
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49850759"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51784529"
 ---
 # <a name="bpcondstyle"></a>BP_COND_STYLE
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "49850759"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-enum enum_BP_COND_STYLE {   
+enum enum_BP_COND_STYLE {   
    BP_COND_NONE         = 0x0000,  
    BP_COND_WHEN_TRUE    = 0x0001,  
    BP_COND_WHEN_CHANGED = 0x0002  
@@ -41,7 +41,7 @@ typedef DWORD BP_COND_STYLE;
 ```  
   
 ```csharp  
-public enum enum_BP_COND_STYLE {   
+public enum enum_BP_COND_STYLE {   
    BP_COND_NONE         = 0x0000,  
    BP_COND_WHEN_TRUE    = 0x0001,  
    BP_COND_WHEN_CHANGED = 0x0002  

@@ -16,12 +16,12 @@ ms.assetid: 049c68f4-a041-4f24-8575-4837e7f5cf3f
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1b28b659d6f0af9164033e681a15d2fa2b4d1bd2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 248adc1b7dfbd2527940e31b88abc4d7639353ee
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49272216"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51796606"
 ---
 # <a name="getting-started-with-source-control-vspackages"></a>原始檔控制 VSPackage 的使用者入門
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
