@@ -11,15 +11,15 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 2ceb63a7-b835-4988-b756-2afc3fcc4808
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 147d15133a2c5c682960e853defcf5965d04b1d3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9367f4b7c85886eda629767809e1841c72340e4d
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49868023"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51795501"
 ---
 # <a name="creating-portable-profiling-data-files-from-the-command-line"></a>從命令列建立可移植的程式碼剖析資料檔案
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

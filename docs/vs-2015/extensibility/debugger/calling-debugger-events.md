@@ -15,12 +15,12 @@ ms.assetid: b3440ac3-80af-40c6-bef4-cbf00fa67885
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 93a5e20d8274e1d25bdb630da52a4959b0bdb788
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9682e16c059483d44953ffbe11d8e10e6d46a435
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49190342"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51767501"
 ---
 # <a name="calling-debugger-events"></a>呼叫偵錯工具事件
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

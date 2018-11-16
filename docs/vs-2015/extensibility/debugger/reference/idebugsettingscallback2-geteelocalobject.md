@@ -15,12 +15,12 @@ ms.assetid: e69a3469-a049-420c-b918-c48a1e7b9baf
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6390b67550bf27aa0eeb77b3d40a59c6bb58664b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 14ee687700aadb4eff0ab4fa160cf8ac339de54b
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49951128"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51769858"
 ---
 # <a name="idebugsettingscallback2geteelocalobject"></a>IDebugSettingsCallback2::GetEELocalObject
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

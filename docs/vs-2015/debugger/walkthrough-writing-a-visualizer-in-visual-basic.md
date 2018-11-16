@@ -19,15 +19,15 @@ helpviewer_keywords:
 - walkthroughs [Visual Studio], visualizers
 ms.assetid: c93bf5a1-3e5e-422f-894e-bd72c9bc1b57
 caps.latest.revision: 25
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e08059c18a7b5c1fff74539f4ba497c319838371
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 549e1ce240808a3947b2780f5c96485439e44ecc
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49881920"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51794878"
 ---
 # <a name="walkthrough-writing-a-visualizer-in-visual-basic"></a>逐步解說：在 Visual Basic 中撰寫視覺化檢視
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

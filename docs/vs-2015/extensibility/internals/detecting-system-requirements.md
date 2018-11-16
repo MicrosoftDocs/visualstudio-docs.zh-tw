@@ -16,12 +16,12 @@ ms.assetid: 0ba94acf-bf0b-4bb3-8cca-aaac1b5d6737
 caps.latest.revision: 51
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7d92d895b0986a8a6df888d4bea258f9dab067e8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ba755fc43fa3db634209b5c3e405dc6794c26ded
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49880555"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51763413"
 ---
 # <a name="detecting-system-requirements"></a>偵測系統需求
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

@@ -8,15 +8,15 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: aa4b8161-d98f-4a1a-9db3-520133bfc82f
 caps.latest.revision: 10
-author: BrianPeek
-ms.author: brpeek
+author: corob-msft
+ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 78ae6e6e802e5ddeb8b81fc8f7a8c62496d86b0b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b0e42c167e87f19781f9544e20e7870789af4ef9
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49855348"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51754146"
 ---
 # <a name="import-an-xcode-project"></a>匯入 XCode 專案
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

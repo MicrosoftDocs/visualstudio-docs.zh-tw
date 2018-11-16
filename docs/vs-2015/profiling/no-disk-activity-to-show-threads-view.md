@@ -15,15 +15,15 @@ helpviewer_keywords:
 - Concurrency Visualizer, No Disk Activity to Show (Threads View)
 ms.assetid: d72471e5-4c8e-4a0a-a52e-3cd91df87b2d
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fa599c1a798c50b95119652b89fae230a0fc8b67
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8cc4fc27d49e74922e021823bc2a4b7b99003eae
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49301063"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51793525"
 ---
 # <a name="no-disk-activity-to-show-threads-view"></a>沒有磁碟活動可顯示 (執行緒檢視)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

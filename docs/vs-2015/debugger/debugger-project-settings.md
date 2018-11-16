@@ -22,15 +22,15 @@ helpviewer_keywords:
 - debugging [Visual Studio], project settings
 ms.assetid: 5e1b2a30-d2db-49e8-aba3-2d3a190eea80
 caps.latest.revision: 20
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2336002552c2fa0772941d4812914b4756ebd40b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ed31c4490738d007375d1a73728a00ac17c20897
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49195555"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51755045"
 ---
 # <a name="debugger-project-settings"></a>偵錯工具專案設定
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

@@ -13,15 +13,15 @@ f1_keywords:
 - vs.tasklisterror.copy_version_conflict
 ms.assetid: cd7de1eb-7d58-4e2c-9811-a7201f7817be
 caps.latest.revision: 7
-author: mikeblome
-ms.author: mblome
+author: gewarren
+ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 0a8d6fe7440a39fc207d8d9a1b56bea06547e273
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4edf474cd67d21833743891eeeb75ce09decb87e
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49274296"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51751937"
 ---
 # <a name="error-the-dependency-39file39-in-project-39project39-cannot-be-copied-to-the-run-directory-because-it-would-conflict-with-dependency-39file39"></a>錯誤： 相依性&#39;檔案&#39;專案中&#39;專案&#39;無法複製至執行目錄中，因為它會和相依性衝突&#39;檔案&#39;
 參考之間發生衝突；正在將多個同名的相異相依性複製到 bin 目錄，以執行應用程式。 由於沒有相依性是主要參考，因此執行目錄無法解決衝突。  

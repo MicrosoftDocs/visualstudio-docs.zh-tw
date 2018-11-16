@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaStackWalkFrame interface
 ms.assetid: 42d82845-d6f6-4846-9ecd-9dd169216077
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c8b6aef255411a719e8703ce7fcb31924db69267
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1a047b1a75cb511332bf9382d19fe274eb731069
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49232774"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51790366"
 ---
 # <a name="idiastackwalkframe"></a>IDiaStackWalkFrame
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "49232774"
 ## <a name="syntax"></a>語法  
   
 ```  
-IDiaStackWalkFrame : IUnknown  
+IDiaStackWalkFrame : IUnknown  
 ```  
   
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法  

@@ -13,15 +13,15 @@ f1_keywords:
 - vs.cv.sdk.about
 ms.assetid: 4b22cdf9-59b1-4c88-a6d8-1644a4a11e08
 caps.latest.revision: 16
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 78d848f5d075ed0d5cd835f4af3daf964603c371
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d98a5383a330242110bef860b9dc19a2fb6bef87
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49207931"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51754823"
 ---
 # <a name="concurrency-visualizer-sdk"></a>並行視覺化檢視 SDK
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

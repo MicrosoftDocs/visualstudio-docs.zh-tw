@@ -19,12 +19,12 @@ ms.assetid: 03779774-9401-49ae-997c-0c3ab25ed0d5
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2e5b47a329e9ff1c9a8c34fa8476ae1b2fb909c8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 73a6761e844cee41c1a6f0df79f0d6529f4a8215
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49234960"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51768252"
 ---
 # <a name="createexpinstance-utility"></a>CreateExpInstance 公用程式
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

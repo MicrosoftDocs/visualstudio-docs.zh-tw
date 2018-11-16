@@ -16,12 +16,12 @@ ms.assetid: 9af4d5f9-1cfc-4221-aea7-c8cd3f7571a6
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6c35c9ff8826000e3b7d73754476d2f7c5007fd3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 58c7441a4f910a1da35bc464e12ddba3bd5583bc
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49230786"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51802521"
 ---
 # <a name="walkthrough-adding-custom-xaml-to-the-start-page"></a>逐步解說︰將自訂的 XAML 新增至起始頁
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

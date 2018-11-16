@@ -18,12 +18,12 @@ ms.assetid: 26a15d5c-ddea-4977-af7f-d795ff09c7ad
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c3c3da836001406b5a6de8d54b03d17cb08435d6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1c9eb2b42afa627a8bbee3529d059592763bad81
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49885729"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51792485"
 ---
 # <a name="keybindings-element"></a>KeyBindings 項目
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

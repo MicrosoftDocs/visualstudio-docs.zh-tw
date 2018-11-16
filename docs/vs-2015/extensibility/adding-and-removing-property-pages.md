@@ -17,12 +17,12 @@ ms.assetid: 34853412-ab8a-4caa-9601-7d0727b2985d
 caps.latest.revision: 30
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b3b78fd8c6d89e93e208d00cda069f93a4deb10e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 680a375d025d59d12c2a070bc564ff94085bc4b5
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49221984"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51798959"
 ---
 # <a name="adding-and-removing-property-pages"></a>新增和移除屬性頁
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

@@ -17,12 +17,12 @@ ms.assetid: 9832aac8-6320-4fd8-91dd-2a0852febb00
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5ca2f4fa5ff6023202a2dd038cf521ab208bfeaf
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 848a2690642beb7f22064ac37a76e87fd76c07d8
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49873054"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51796970"
 ---
 # <a name="idebugprogram2getencupdate"></a>IDebugProgram2::GetENCUpdate
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "49873054"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT GetENCUpdate(   
+HRESULT GetENCUpdate(   
    IUnknown** ppUpdate  
 );  
 ```  

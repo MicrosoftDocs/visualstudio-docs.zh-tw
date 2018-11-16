@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaStackWalker2::getEnumFrames2 method
 ms.assetid: 73196d3f-112c-4b3a-997b-7c6b815d4afc
 caps.latest.revision: 15
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 51b8094fb57ab4019cd4ed3d04114fbd5fa94a96
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 193c1fb9d2100e4763f86e70e0338dbe10df016a
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49935556"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51761621"
 ---
 # <a name="idiastackwalkergetenumframes2"></a>IDiaStackWalker::getEnumFrames2
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ ms.locfileid: "49935556"
   
 ```cpp#  
   
-      HRESULT getEnumFrames2(   
+      HRESULT getEnumFrames2(   
    enum  CV_CPU_TYPE_e    cpuid,  
    IDiaStackWalkHelper*   pHelper,  
    IDiaEnumStackFrames**  ppEnum  

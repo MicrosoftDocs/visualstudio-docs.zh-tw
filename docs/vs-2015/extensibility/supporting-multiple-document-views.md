@@ -15,12 +15,12 @@ ms.assetid: c7ec2366-91c4-477f-908d-e89068bdb3e3
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 91becc7afb7c236ebe9d6e08c1b8a221cb9f90fe
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6be1e48917c8ad5e7035f01caa4f74b78a6fa3d0
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49826541"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51792251"
 ---
 # <a name="supporting-multiple-document-views"></a>支援多個文件檢視
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
