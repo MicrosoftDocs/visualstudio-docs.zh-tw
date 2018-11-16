@@ -17,12 +17,12 @@ ms.assetid: e6a91ace-2d47-4ff9-aefb-8d8b68eab0b2
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4089ac8ce0f4476db3eedfd509b719a08f45ded2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2b8cfe586823352ab038ee6c0701f642bbc864b1
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49850889"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51740242"
 ---
 # <a name="unmanagedaddressthisrelative"></a>UNMANAGED_ADDRESS_THIS_RELATIVE
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

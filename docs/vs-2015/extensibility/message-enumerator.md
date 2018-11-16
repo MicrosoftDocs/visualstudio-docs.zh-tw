@@ -16,12 +16,12 @@ ms.assetid: 4a4faa0d-d352-40ea-a21d-c09ea286a8e1
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 223e011c7806713237c61e764265ee59876628ab
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 63e878a408f242d50f12fda311257da6fe50fd1f
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49842426"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51766509"
 ---
 # <a name="message-enumerator"></a>訊息列舉程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,16 +33,16 @@ ms.locfileid: "49842426"
 ## <a name="syntax"></a>語法  
   
 ```  
-enum {   
-   SCC_MSG_RTN_CANCEL = -1,   
-   SCC_MSG_RTN_OK = 0,   
-   SCC_MSG_INFO = 1   
-   SCC_MSG_WARNING,   
-   SCC_MSG_ERROR,   
-   SCC_MSG_STATUS,   
-   SCC_MSG_DOCANCEL,   
-   SCC_MSG_STARTCANCEL,   
-   SCC_MSG_STOPCANCEL   
+enum {   
+   SCC_MSG_RTN_CANCEL = -1,   
+   SCC_MSG_RTN_OK = 0,   
+   SCC_MSG_INFO = 1   
+   SCC_MSG_WARNING,   
+   SCC_MSG_ERROR,   
+   SCC_MSG_STATUS,   
+   SCC_MSG_DOCANCEL,   
+   SCC_MSG_STARTCANCEL,   
+   SCC_MSG_STOPCANCEL   
 };  
 ```  
   

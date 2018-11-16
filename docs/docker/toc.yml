@@ -6,16 +6,14 @@ items:
     href: ../docker/vs-azure-tools-docker-edit-and-refresh.md
   - name: 使用 Visual Studio 將 ASP.NET 容器部署到容器登錄
     href: ../docker/vs-azure-tools-docker-hosting-web-apps-in-docker.md
-  - name: 使用 Docker-Machine 在 Azure 中建立 Docker 主機
-    href: ../docker/vs-azure-tools-docker-machine-azure-config.md
   - name: 設定 Docker 主機以搭配 VirtualBox 使用
     href: ../docker/vs-azure-tools-docker-setup.md
   - name: 針對使用 Docker 進行 Visual Studio 2017 開發問題進行疑難排解
     href: ../docker/vs-azure-tools-docker-troubleshooting-docker-errors.md
   expanded: true
-ms.openlocfilehash: ac508684958e53e65694c3740c291efe4269e6e8
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: d5d996815f1991edf0df1b4c0e3a694eae865bed
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50673114"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51762598"

@@ -17,12 +17,12 @@ ms.assetid: add6a6b5-e752-47dd-9613-29206ea809b0
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ebf3bda946ced80dd0e0ff114c14aff730aef63e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4b413d7f3843f0fcbddfa4c06e52998bc533eb0d
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49924300"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51784802"
 ---
 # <a name="idebugobject2getfield"></a>IDebugObject2::GetField
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,14 +32,14 @@ ms.locfileid: "49924300"
 ## <a name="syntax"></a>語法  
   
 ```cpp  
-HRESULT GetField(  
- IDebugField** ppField  
+HRESULT GetField(  
+ IDebugField** ppField  
 );  
 ```  
   
 ```csharp  
-int GetField(  
-   out IDebugField ppField  
+int GetField(  
+   out IDebugField ppField  
 );  
 ```  
   

@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaFrameData::get_addressOffset method
 ms.assetid: b68e2e68-6483-4936-bf97-1b0a13cb75e2
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ce076a4c7851155db51ed8df782a887aabdc9b1d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d9b5f7da296e2ed0edab7c6f100675f95e4f57a0
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49885006"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51738208"
 ---
 # <a name="idiaframedatagetaddressoffset"></a>IDiaFrameData::get_addressOffset
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "49885006"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT get_addressOffset (   
+HRESULT get_addressOffset (   
    DWORD* pRetVal  
 );  
 ```  

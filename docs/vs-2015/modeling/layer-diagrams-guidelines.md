@@ -14,15 +14,15 @@ helpviewer_keywords:
 - constraints, architectural
 ms.assetid: 2903bec7-a93b-46a6-aac6-994ac4f3f1a7
 caps.latest.revision: 57
-author: alexhomer1
+author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: faa6c3a39b7aa8a0ca7b2788cd9946421cfe6b7b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: fa7483a000b5abd59b846edceead3af93f41dbc4
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49844155"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51734460"
 ---
 # <a name="layer-diagrams-guidelines"></a>圖層圖表：方針
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

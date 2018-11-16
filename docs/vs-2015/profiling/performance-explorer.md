@@ -16,15 +16,15 @@ helpviewer_keywords:
 - performance tools [Visual Studio ALM]
 ms.assetid: df52b717-a55d-4b1d-8c2e-d5a6a38042f4
 caps.latest.revision: 50
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d504c06cb038bbaa7298249384e88ad5bb2d5705
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ad140fcb81215a27381a75f051f07ca231f3deae
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49248478"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51786102"
 ---
 # <a name="performance-explorer"></a>效能總管
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

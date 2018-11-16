@@ -17,12 +17,12 @@ ms.assetid: 8c4570ca-ae55-42f2-bbaa-8d8e75d2fa19
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d9359637a4a1bbd1650a80c8210f615964703d68
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 67f1d4580d2722c1043c9287cd1eae4c6084dd7f
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49907764"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51736341"
 ---
 # <a name="idebugcoreserver3diagnosewebdebuggingerror"></a>IDebugCoreServer3::DiagnoseWebDebuggingError
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,14 +32,14 @@ ms.locfileid: "49907764"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT DiagnoseWebDebuggingError(  
-   LPCWSTR pszUrl  
+HRESULT DiagnoseWebDebuggingError(  
+   LPCWSTR pszUrl  
 );  
 ```  
   
 ```csharp  
-int DiagnoseWebDebuggingError(  
-   string pszUrl  
+int DiagnoseWebDebuggingError(  
+   string pszUrl  
 );  
 ```  
   

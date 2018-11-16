@@ -9,12 +9,12 @@ ms.topic: article
 ms.assetid: dedf0173-197e-4258-ae5a-807eb3abc952
 caps.latest.revision: 9
 ms.author: gregvanl
-ms.openlocfilehash: 4e5ff08c256838626537ae10ede9dffd8aea6b08
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d5bc0c22ff0a29984e59c30db6dc2b391bf007e0
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49899626"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51778783"
 ---
 # <a name="how-to-use-asyncpackage-to-load-vspackages-in-the-background"></a>如何： 使用 AsyncPackage 載入 Vspackage 在背景中
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

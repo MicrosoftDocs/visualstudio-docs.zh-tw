@@ -17,12 +17,12 @@ ms.assetid: cad0a859-7a84-4ce5-b0a9-f7f64e5f8ebb
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 236ac170967800320afcddb6a4d837356bc8f16a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 569f895e3c5c870de074394b8eaaca97d4c677ef
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49172766"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51726071"
 ---
 # <a name="hierarchies-and-selection"></a>階層和選取範圍
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

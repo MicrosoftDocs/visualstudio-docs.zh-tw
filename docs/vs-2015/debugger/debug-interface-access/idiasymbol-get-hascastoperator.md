@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaSymbol::get_hasCastOperator method
 ms.assetid: a21114a6-56a3-4e8a-a65f-58ec2a0a8908
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 51f42b5d580ebc5a3bb4f219539d3e8fed868c44
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0f14a6c40370b9fc59e54a4361593a1d32b63a2a
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49885690"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51730054"
 ---
 # <a name="idiasymbolgethascastoperator"></a>IDiaSymbol::get_hasCastOperator
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "49885690"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT get_hasCastOperator (   
+HRESULT get_hasCastOperator (   
    BOOL* pRetVal  
 );  
 ```  

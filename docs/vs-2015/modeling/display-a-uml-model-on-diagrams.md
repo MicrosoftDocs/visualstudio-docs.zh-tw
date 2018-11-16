@@ -11,15 +11,15 @@ helpviewer_keywords:
 - UML API
 ms.assetid: adf1f1f2-2ad9-4ade-82de-c6a5194ab471
 caps.latest.revision: 25
-author: alexhomer1
+author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 412bddfa7a25f613a3a400905d13dff478b5a309
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: fd30d626d6500f7bf904350133ea33f2b2a25ac5
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49173156"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51757305"
 ---
 # <a name="display-a-uml-model-on-diagrams"></a>在圖表上顯示 UML 模型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
