@@ -16,12 +16,12 @@ ms.assetid: d0861e0c-b819-490c-9604-5e6d08ac291a
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5171a40f7fb5ee28769be41b8674ad5f88de3253
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 83947d7dc1253cbc343ba50abf46cab53d2e4070
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49276662"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51761909"
 ---
 # <a name="process-debug-manager"></a>處理序偵錯管理員
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

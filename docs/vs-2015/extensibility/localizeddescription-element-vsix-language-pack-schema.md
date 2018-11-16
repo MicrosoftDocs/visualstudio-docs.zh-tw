@@ -13,12 +13,12 @@ ms.assetid: 766a1732-bbaf-4875-b276-feb42169633a
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: dbcad72308e9b78a5fcc6865c6070cc887eed06e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 408b582ec5145bab1f022776ba0793eb87b84dea
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49826475"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51797893"
 ---
 # <a name="localizeddescription-element-vsix-language-pack-schema"></a>LocalizedDescription 元素 （VSIX 語言套件結構描述）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

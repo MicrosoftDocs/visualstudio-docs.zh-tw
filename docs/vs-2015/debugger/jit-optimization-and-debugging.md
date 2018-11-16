@@ -19,15 +19,15 @@ helpviewer_keywords:
 - optimized code, debugging
 ms.assetid: 19bfabf3-1a2e-49dc-8819-a813982e86fd
 caps.latest.revision: 16
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e798d44371f04b955db9019c741100ce9e5e5ef6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ab86e023b99f524651b56bbca4ddea2d613448e2
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49201976"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51770734"
 ---
 # <a name="jit-optimization-and-debugging"></a>JIT 最佳化和偵錯
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

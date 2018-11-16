@@ -17,12 +17,12 @@ ms.assetid: 62a71579-36b3-48b9-a1c8-04ab100efa08
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a71ddff2167331936fedf16cecd3d7d4cd48b22b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0e75c3e39f2d4f56d40ca546291b2f86bd185f88
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49902641"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51744412"
 ---
 # <a name="sccgetparentprojectpath-function"></a>SccGetParentProjectPath 函式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

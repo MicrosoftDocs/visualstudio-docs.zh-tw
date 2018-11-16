@@ -17,12 +17,12 @@ ms.assetid: 78749674-ef75-46d3-a1f4-ff33afd90e32
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 08517c0ab0216be6a34a2cf095333c69c963d856
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1b10e52c15dbb5d177cee872bb04dc46e60fff80
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49934414"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51792719"
 ---
 # <a name="idebugclassfieldenumbaseclasses"></a>IDebugClassField::EnumBaseClasses
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "49934414"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT EnumBaseClasses(   
+HRESULT EnumBaseClasses(   
    IEnumDebugFields** ppEnum  
 );  
 ```  
