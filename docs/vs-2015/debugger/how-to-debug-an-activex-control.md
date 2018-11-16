@@ -27,15 +27,15 @@ helpviewer_keywords:
 - testing [Visual Studio], ActiveX controls
 ms.assetid: bbc02cf7-a7e6-44fe-99af-87a43e1d7251
 caps.latest.revision: 19
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e2cb1431b2be4c125b50ec45054e0d10685a2fe4
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f1e43d94807fa28f86193fc7818b77887d797772
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49281732"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51745161"
 ---
 # <a name="how-to-debug-an-activex-control"></a>如何：偵錯 ActiveX 控制項
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

@@ -17,12 +17,12 @@ ms.assetid: 4fff0576-b2f3-4f17-9769-930f926f273c
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e5d9b4198a2d88d7a3a71f07a393ed8e4e07df1e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1f1a2ca2b87cadf118c83501bbd6b6bf78af761a
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49177537"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51727269"
 ---
 # <a name="displaying-files-by-using-the-open-file-command"></a>使用開啟檔案命令顯示檔案
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

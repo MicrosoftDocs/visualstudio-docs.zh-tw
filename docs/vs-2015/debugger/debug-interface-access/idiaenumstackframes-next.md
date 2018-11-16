@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaEnumStackFrames::Next method
 ms.assetid: 09378a21-d5e3-4213-b7e2-10f04d85295f
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6f0ba329fcd257f91aaddcabc12e844b4a3726b1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: aaaf66da29711a279111c1f7d63ca285dc779596
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49899301"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51726474"
 ---
 # <a name="idiaenumstackframesnext"></a>IDiaEnumStackFrames::Next
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "49899301"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT Next(   
+HRESULT Next(   
    ULONG             celt,  
    IDiaStackFrame**  rgelt,  
    ULONG*            pceltFetched  

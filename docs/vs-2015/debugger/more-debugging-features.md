@@ -16,15 +16,15 @@ dev_langs:
 - C++
 ms.assetid: a41166d7-e03e-42ef-862e-dd025ef600b6
 caps.latest.revision: 15
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1bab0d6d7f0e57186d21d620589a86dc89fa9010
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9b3375e97aa356b9c22f29bcf7bf696607cd30de
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49216615"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51729314"
 ---
 # <a name="more-debugging-features"></a>更多偵錯功能
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

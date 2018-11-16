@@ -27,15 +27,15 @@ helpviewer_keywords:
 - functions [debugger]
 ms.assetid: d254a5a9-afbd-4923-9d7a-7422d824cabf
 caps.latest.revision: 21
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9cf717fec6324d26d2f483bd0f38c3a0731f0d67
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0f42e7440775f76764b7bd11399f6507f92c377a
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49172922"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51723408"
 ---
 # <a name="how-to-get-back-to-the-function-that-called-mfc-if-halted"></a>如何：如果暫止，回到呼叫 MFC 的函式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

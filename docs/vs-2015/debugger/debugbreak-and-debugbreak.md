@@ -23,15 +23,15 @@ helpviewer_keywords:
 - breakpoints, DebugBreak function
 ms.assetid: 9787c795-df94-4f48-bc8d-3bf899b67421
 caps.latest.revision: 26
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 73b818269695322d06c95e5ae39f5bdfd7059dae
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3b3196ebb11bc8566a5a8be492a692adb5886dbc
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49281108"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51724596"
 ---
 # <a name="debugbreak-and-debugbreak"></a>DebugBreak 和 __debugbreak
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

@@ -16,12 +16,12 @@ ms.assetid: 699dd0f5-7569-40b3-ade6-d0fe53e832bc
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a88969139c993163c88f2dc16fc8cbdb7a62feb6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f26ed20eccbff52afdc4f8b5060ad426cc100b71
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49202770"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51737415"
 ---
 # <a name="visualizing-and-viewing-data"></a>視覺化及檢視資料
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
