@@ -18,12 +18,12 @@ ms.assetid: 8f20177b-dab9-43a3-b959-81a591b451d6
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ad1c743f9fa5f0e0446eedf59dcbf4dd961be7aa
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c4a8f360470b22722a3008ed1ac1c05a411cd47d
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49219761"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51800352"
 ---
 # <a name="how-to-add-a-dependency-to-a-vsix-package"></a>如何： 將相依性加入至 VSIX 封裝
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

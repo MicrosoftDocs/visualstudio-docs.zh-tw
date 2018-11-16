@@ -16,12 +16,12 @@ ms.assetid: 0b4abeac-2eaf-4b2e-a2d5-c9ec303bc869
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2f9dbd1829cacfe2a475028fa7f7ecaa023be24c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 251f3e89dba4ad4385db59d70b9f473d7ad4fb5f
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49913848"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51754096"
 ---
 # <a name="idebugbeforesymbolsearchevent2getmodulename"></a>IDebugBeforeSymbolSearchEvent2::GetModuleName
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

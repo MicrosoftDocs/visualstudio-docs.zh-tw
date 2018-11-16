@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaSymbol::get_isNaked method
 ms.assetid: b16629dc-8e17-476b-9c7b-58e7277c61ed
 caps.latest.revision: 10
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 97224b4d513087c3fcd9221f80afeee3990902ed
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8a0fea18234180bf2da2c2f82648d0e7155c49bb
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49820859"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51791406"
 ---
 # <a name="idiasymbolgetisnaked"></a>IDiaSymbol::get_isNaked
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

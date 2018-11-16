@@ -15,12 +15,12 @@ ms.assetid: d9c0329f-4b0b-4fda-8061-cce69f2f502d
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 79fd2da19e7fcf77839292a63a9e472dbb2510a8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b3388d1e39ad4ad8e52339ab837cd04493481f16
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49232481"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51796645"
 ---
 # <a name="web-projects"></a>Web 專案
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

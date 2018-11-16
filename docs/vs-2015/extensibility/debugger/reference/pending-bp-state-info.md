@@ -17,12 +17,12 @@ ms.assetid: 4d73ceff-43f9-4e95-8dba-88e1fab2def3
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d9fa6016b5aa0c130c7bb9ab4af71a17242955da
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 52f38b20aea202399c45951b78e01af94b21b5f9
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49891093"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51750539"
 ---
 # <a name="pendingbpstateinfo"></a>PENDING_BP_STATE_INFO
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,14 +32,14 @@ ms.locfileid: "49891093"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-typedef struct _tagPENDING_BP_STATE_INFO {   
+typedef struct _tagPENDING_BP_STATE_INFO {   
    PENDING_BP_STATE       state;  
    PENDING_BP_STATE_FLAGS flags;  
 } PENDING_BP_STATE_INFO;  
 ```  
   
 ```csharp  
-public struct PENDING_BP_STATE_INFO {   
+public struct PENDING_BP_STATE_INFO {   
    public uint state;  
    public uint flags;  
 };  

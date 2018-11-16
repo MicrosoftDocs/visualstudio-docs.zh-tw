@@ -13,15 +13,15 @@ helpviewer_keywords:
 - fonts, SpyHelp
 ms.assetid: 3ee22eb9-978f-4efd-a5e0-f071745496ce
 caps.latest.revision: 7
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 39d8638c3b0fba1c8753fd773a447863ee01be77
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3b1adbe05d7bdff35672cc8fc9b976bcc3c87588
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49838617"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51790925"
 ---
 # <a name="how-to-change-fonts"></a>如何：變更字型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

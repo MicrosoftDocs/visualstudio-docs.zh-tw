@@ -15,12 +15,12 @@ ms.assetid: 26adc860-ee4a-4f5c-95e1-e41b207dd7e6
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 98dd3f0058e2dacd1a6ab8ed3fc048dfd2e6397e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 021a4d5e527ca7a22ecd984805b9fbec547531ee
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49245397"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51801663"
 ---
 # <a name="when-to-create-project-types"></a>建立專案類型的時機
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

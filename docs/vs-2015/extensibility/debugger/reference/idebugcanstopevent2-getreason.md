@@ -17,12 +17,12 @@ ms.assetid: f5de31ca-7b8d-4029-9cf9-ba860ac66af6
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b67c619e81eea903ddc7ceca8781517ab5641e55
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5d34802ccf4abe16d4fc6b7428405dd89558b5f6
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49842556"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51795280"
 ---
 # <a name="idebugcanstopevent2getreason"></a>IDebugCanStopEvent2::GetReason
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,13 +32,13 @@ ms.locfileid: "49842556"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT GetReason(   
+HRESULT GetReason(   
    CANSTOP_REASON* pcr  
 );  
 ```  
   
 ```csharp  
-int GetReason(   
+int GetReason(   
    out enum_CANSTOP_REASON pcr  
 );  
 ```  

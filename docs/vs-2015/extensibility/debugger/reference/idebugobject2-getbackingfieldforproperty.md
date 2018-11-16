@@ -17,12 +17,12 @@ ms.assetid: e72c6338-5573-4fad-8075-f3ade3435424
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e7a3d7e1df6f7f8aad5c829eaa586d0900ac7147
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 750a881fe6a73ef1bf43f928c8aa11d9b6a5643a
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49913679"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51752307"
 ---
 # <a name="idebugobject2getbackingfieldforproperty"></a>IDebugObject2::GetBackingFieldForProperty
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,14 +32,14 @@ ms.locfileid: "49913679"
 ## <a name="syntax"></a>語法  
   
 ```cpp  
-HRESULT GetBackingFieldForProperty(  
-   IDebugObject2** ppObject  
+HRESULT GetBackingFieldForProperty(  
+   IDebugObject2** ppObject  
 );  
 ```  
   
 ```csharp  
-int GetBackingFieldForProperty(  
-   out IDebugObject2 ppObject  
+int GetBackingFieldForProperty(  
+   out IDebugObject2 ppObject  
 );  
 ```  
   

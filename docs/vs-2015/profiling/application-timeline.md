@@ -11,15 +11,15 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: df7d854b-0a28-45a9-8a64-c015a4327701
 caps.latest.revision: 15
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: df71c984c017b731e5168d6079415ee26543bbbf
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8d3a8edb0a2bf7809fc125812b5d541ba008547a
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49226782"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51751430"
 ---
 # <a name="application-timeline"></a>應用程式時間軸
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

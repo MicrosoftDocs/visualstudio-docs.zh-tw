@@ -16,16 +16,16 @@ dev_langs:
 - C++
 ms.assetid: c122b08e-e3bf-43e6-bd6c-e776e178fd9a
 caps.latest.revision: 21
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: a7f39e3210d898e07f96f3ff787915953148e008
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 11e8587176ecc452f8f97132d296cff93b09b5ac
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49833599"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51741277"
 ---
 # <a name="analyze-cpu-usage-in-a-windows-universal-app"></a>分析 Windows 通用 App 中的 CPU 使用量
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

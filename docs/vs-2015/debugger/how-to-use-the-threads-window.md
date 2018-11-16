@@ -26,15 +26,15 @@ helpviewer_keywords:
 - debugging [Visual Studio], threads
 ms.assetid: adfbe002-3d7b-42a9-b42a-5ac0903dfc25
 caps.latest.revision: 48
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1073383ef8964fd6c7d754918f7550179372f9f4
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 925e5ec609c07fa1ca6d703943cf3437f0f9bf84
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49306250"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51791692"
 ---
 # <a name="how-to-use-the-threads-window"></a>如何：使用執行緒視窗
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

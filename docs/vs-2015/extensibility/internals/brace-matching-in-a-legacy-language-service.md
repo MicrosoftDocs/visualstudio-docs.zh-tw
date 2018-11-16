@@ -16,12 +16,12 @@ ms.assetid: 4e3d0a70-f22f-49dd-92d8-edf48ab62b52
 caps.latest.revision: 28
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7742b54b69cea8d1f814a4ac4fd8cc190dfe2b99
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 70ad3062a4cbbce8ef46c3afe8851382949fe3f3
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49265053"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51753218"
 ---
 # <a name="brace-matching-in-a-legacy-language-service"></a>舊版語言服務中的括號對稱
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

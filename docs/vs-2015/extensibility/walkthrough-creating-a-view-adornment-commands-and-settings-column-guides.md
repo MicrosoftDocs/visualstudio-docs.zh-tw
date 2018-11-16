@@ -13,12 +13,12 @@ ms.assetid: 4a2df0a3-42da-4f7b-996f-ee16a35ac922
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9e31588850d47276d63bda724e61e502c38a4575
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ba345940e956975ea6ac4bf7a29ca59bd5deca76
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49862315"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51795774"
 ---
 # <a name="walkthrough-creating-a-view-adornment-commands-and-settings-column-guides"></a>逐步解說︰建立檢視裝飾、命令和設定 (分欄輔助線)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

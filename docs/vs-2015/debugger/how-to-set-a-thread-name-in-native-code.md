@@ -22,15 +22,15 @@ helpviewer_keywords:
 - debugging [Visual Studio], threads
 ms.assetid: c85d0968-9f22-4d69-87f4-acca2ae777b8
 caps.latest.revision: 40
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c040677dfe88c4fdd5db2f7077cfcea9e81099c7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f0486d122dc9c2f84e58029e0eafedc5c1895260
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49191681"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51798530"
 ---
 # <a name="how-to-set-a-thread-name-in-native-code"></a>如何：在機器碼中設定執行緒名稱
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

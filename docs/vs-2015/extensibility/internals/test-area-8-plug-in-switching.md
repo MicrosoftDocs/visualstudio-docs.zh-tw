@@ -16,12 +16,12 @@ ms.assetid: 01370792-b5da-4e46-9ce2-7dd326587141
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f6be407cc89820cc466180077c90288d8b285f7e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 103946f29cb893672b29d7671a74acf1c26bc50e
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49296708"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51793811"
 ---
 # <a name="test-area-8-plug-in-switching"></a>測試區域 8︰外掛程式切換
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
