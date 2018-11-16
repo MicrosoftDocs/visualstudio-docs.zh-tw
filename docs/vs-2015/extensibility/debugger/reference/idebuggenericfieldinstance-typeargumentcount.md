@@ -16,12 +16,12 @@ ms.assetid: e662c5ea-a5c1-478e-a268-5980dadffcd1
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4b430d0aeae37c9fd4a07ae8be82aba668773303
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a9b1ee6813394f47574686daa94c23c3dbf1f57c
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49940589"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51755467"
 ---
 # <a name="idebuggenericfieldinstancetypeargumentcount"></a>IDebugGenericFieldInstance::TypeArgumentCount
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

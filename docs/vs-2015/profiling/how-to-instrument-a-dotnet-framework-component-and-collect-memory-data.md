@@ -11,15 +11,15 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d09cc46a-70f5-48f9-aa24-89913e67b359
 caps.latest.revision: 32
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a54360504e7070b0d6a07c9dd5dff5d08da68177
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: febdaf1396755a05acce2bb8d82cb4af69ed46bc
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49850173"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51753782"
 ---
 # <a name="how-to-instrument-a-stand-alone-net-framework-component-and-collect-memory-data-with-the-profiler-by-using-the-command-line"></a>如何：從命令列使用程式碼剖析工具以檢測獨立的 .NET Framework 元件並收集記憶體資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

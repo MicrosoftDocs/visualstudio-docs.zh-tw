@@ -13,15 +13,15 @@ helpviewer_keywords:
 - Window Properties dialog box, Styles Tab
 ms.assetid: 4ac1eae8-d6ce-4f05-98f0-a29065f471d4
 caps.latest.revision: 7
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 798b858a173f7c8c6ffa1d00048f1900aae8b395
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 05fe3c26f5015dcef12b998553127da8e8cb309c
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49277507"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51769069"
 ---
 # <a name="styles-tab-window-properties-dialog-box"></a>視窗屬性對話方塊、樣式索引標籤
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

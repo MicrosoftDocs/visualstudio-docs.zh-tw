@@ -15,12 +15,12 @@ ms.assetid: 5d60e9e8-305e-4a48-829f-b9440fc8af7b
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ab02c40911f4dbeb2d4452bebfd42c13ec232fc4
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: dd73bb7bf7fa744946dca788ed669c6153e63fea
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49254056"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51757079"
 ---
 # <a name="debugging-tasks"></a>偵錯工作
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

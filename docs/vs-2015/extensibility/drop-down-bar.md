@@ -15,12 +15,12 @@ ms.assetid: 4bb621bd-72f5-43d5-916f-9f66617da049
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2e66dcc1353da2eab6a3fbea365a2a78c564e98d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: da48806d6be6b19dc3681b19e95ac7664656eeb0
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49203368"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51791135"
 ---
 # <a name="drop-down-bar"></a>下拉式清單列
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

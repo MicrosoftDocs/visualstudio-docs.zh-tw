@@ -18,12 +18,12 @@ ms.assetid: 78272ddc-9718-4c65-a94e-a44a2e8d54f4
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d35b1bae49769bd9a804ae958057c34ba6e410f5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5815adbdc05685999d7dcd64139ebfd29b8776b9
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49198493"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51765091"
 ---
 # <a name="vstextview-object"></a>VSTextView 物件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

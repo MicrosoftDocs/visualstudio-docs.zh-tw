@@ -16,12 +16,12 @@ ms.assetid: 66778698-0258-467d-8b8b-c351744510eb
 caps.latest.revision: 30
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c69df0e8c1aace595a1c79d52b7ca4cd08b7a004
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f1181cb3f84471727b181bb1ff91b69e8613b8a5
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49941216"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51792914"
 ---
 # <a name="new-project-generation-under-the-hood-part-one"></a>產生新專案︰深入探討，第一部分
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

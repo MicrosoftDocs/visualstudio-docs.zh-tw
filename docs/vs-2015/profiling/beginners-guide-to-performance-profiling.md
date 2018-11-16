@@ -17,15 +17,15 @@ helpviewer_keywords:
 - Performance Wizard
 ms.assetid: da2fbf8a-2d41-4654-a509-dd238532d25a
 caps.latest.revision: 50
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8f69ae132a47f81438abb43bd11b04fee869aa66
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4a1b8fbc31bb05f69a1f9e30960106c08df5eb6f
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49226677"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51731481"
 ---
 # <a name="beginners-guide-to-performance-profiling"></a>效能分析的初級開發人員指南
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

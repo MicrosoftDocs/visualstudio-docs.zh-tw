@@ -19,12 +19,12 @@ ms.assetid: 2ea4bee2-0259-4675-8e65-2023b312b516
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4aa34194933a63206133685b52def81b784b6154
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: a1dbf79cc90f1f0ab0a7ff982fcabfa8d52150d3
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219824"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51760147"
 ---
 # <a name="guids-and-ids-of-visual-studio-commands"></a>Visual Studio 命令的 GUID 和識別碼
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

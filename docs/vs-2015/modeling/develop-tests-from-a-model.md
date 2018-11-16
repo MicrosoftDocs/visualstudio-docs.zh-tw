@@ -11,15 +11,15 @@ helpviewer_keywords:
 - tests and requirements
 ms.assetid: 40f87192-ba85-4552-8804-314a678261ae
 caps.latest.revision: 22
-author: alexhomer1
+author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 230cd5ae3bd4ae0d46baf4fe48f00eca9ffe879d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c0613e43816e7ef7036c5e13b7abafe90b451b81
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49825111"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51787181"
 ---
 # <a name="develop-tests-from-a-model"></a>透過模型開發測試
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

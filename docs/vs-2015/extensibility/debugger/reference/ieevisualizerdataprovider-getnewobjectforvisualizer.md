@@ -17,12 +17,12 @@ ms.assetid: a898d549-4898-4fde-aad1-e8bb89129652
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9f2d8d649070559029c40a64c1178807d2632c7b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e37bd49da72ad406f07f634e09d187e048684b9a
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49842569"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51761772"
 ---
 # <a name="ieevisualizerdataprovidergetnewobjectforvisualizer"></a>IEEVisualizerDataProvider::GetNewObjectForVisualizer
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,14 +32,14 @@ ms.locfileid: "49842569"
 ## <a name="syntax"></a>語法  
   
 ```cpp  
-HRESULT GetNewObjectForVisualizer(  
-   IDebugObject** ppObject  
+HRESULT GetNewObjectForVisualizer(  
+   IDebugObject** ppObject  
 );  
 ```  
   
 ```csharp  
-int GetNewObjectForVisualizer(  
-   out IDebugObject ppObject  
+int GetNewObjectForVisualizer(  
+   out IDebugObject ppObject  
 );  
 ```  
   

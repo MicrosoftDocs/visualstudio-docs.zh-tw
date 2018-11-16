@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaFrameData::get_lengthProlog method
 ms.assetid: 5f042ff1-e74e-430a-be34-d2cf1b18eff2
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 131a326411c98ed9fda9834f2d15df31a97617fd
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 33f1dc1d38113dec0d1aa40335e8d73e5c4623b0
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49936767"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51763345"
 ---
 # <a name="idiaframedatagetlengthprolog"></a>IDiaFrameData::get_lengthProlog
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "49936767"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT get_lengthProlog (   
+HRESULT get_lengthProlog (   
    DWORD* pRetVal  
 );  
 ```  

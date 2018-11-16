@@ -15,15 +15,15 @@ helpviewer_keywords:
 - Concurrency Visualizer, Channels (Threads View)
 ms.assetid: 2f798c17-2363-42a4-be94-a5751d208eac
 caps.latest.revision: 21
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 16903851ce014a889d386acaadf2b8b86e82b909
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: feebccb0905a4e3161484b5c1fe9f0142fa41d53
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49286895"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51743531"
 ---
 # <a name="channels-threads-view"></a>通道 (執行緒檢視)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
