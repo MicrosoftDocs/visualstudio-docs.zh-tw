@@ -17,12 +17,12 @@ ms.assetid: 748750f4-76e7-4580-9da2-afba07681b37
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4fba497ec9f062b6191f9ba808f70aec646b7666
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3b6c0b960c1ff94971cb15b05ed5045750037b94
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49861888"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51780525"
 ---
 # <a name="ieevisualizerservicegetpropertyproxy"></a>IEEVisualizerService::GetPropertyProxy
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,16 +32,16 @@ ms.locfileid: "49861888"
 ## <a name="syntax"></a>語法  
   
 ```cpp  
-HRESULT GetPropertyProxy(  
-   DWORD                  dwID,  
-   IPropertyProxyEESide** proxy  
+HRESULT GetPropertyProxy(  
+   DWORD                  dwID,  
+   IPropertyProxyEESide** proxy  
 );  
 ```  
   
 ```csharp  
-int GetPropertyProxy(  
-   uint                     dwID,  
-   out IPropertyProxyEESide proxy  
+int GetPropertyProxy(  
+   uint                     dwID,  
+   out IPropertyProxyEESide proxy  
 );  
 ```  
   

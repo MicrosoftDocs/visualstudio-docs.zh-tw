@@ -15,15 +15,15 @@ helpviewer_keywords:
 - profiling tools, exclude short functions
 ms.assetid: eaeead79-aafe-4490-86ff-6ed4cad9c15f
 caps.latest.revision: 18
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ffc2e09dda4d65cf467fe6cd1e5cc26a18bade19
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: bd17b5c383736f2c11977e117ee59a1a6fa9e571
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49285203"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51742537"
 ---
 # <a name="how-to-exclude-or-include-short-functions-from-instrumentation"></a>如何：從檢測排除或包含 Short 函式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

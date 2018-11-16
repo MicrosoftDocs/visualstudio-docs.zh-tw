@@ -17,12 +17,12 @@ ms.assetid: 1b043327-302a-4f6d-b51d-f94f9d7c7f9d
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2a515727da91bb0e813f56dbfcceedcb4a4f35d8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0c30b8132ee86b06042ffc93c1a381f4a6db0acd
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49843440"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51738038"
 ---
 # <a name="debugrefinfoflags"></a>DEBUGREF_INFO_FLAGS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "49843440"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-enum enum_DEBUGREF_INFO_FLAGS {   
+enum enum_DEBUGREF_INFO_FLAGS {   
    DEBUGREF_INFO_NAME             = 0x00000001,  
    DEBUGREF_INFO_TYPE             = 0x00000002,  
    DEBUGREF_INFO_VALUE            = 0x00000004,  
@@ -47,7 +47,7 @@ typedef DWORD DEBUGREF_INFO_FLAGS;
 ```  
   
 ```csharp  
-public enum enum_DEBUGREF_INFO_FLAGS {   
+public enum enum_DEBUGREF_INFO_FLAGS {   
    DEBUGREF_INFO_NAME             = 0x00000001,  
    DEBUGREF_INFO_TYPE             = 0x00000002,  
    DEBUGREF_INFO_VALUE            = 0x00000004,  

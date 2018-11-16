@@ -17,15 +17,15 @@ helpviewer_keywords:
 - global functions [C++], as public symbols
 ms.assetid: f8d33007-302d-4549-9dad-47fb33ea60b7
 caps.latest.revision: 20
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 295912971cda8980586fd2792e423e2c97a7f61c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 619fc9e855694ef129535772780680b74f67cdc9
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49231645"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51772725"
 ---
 # <a name="publicsymbol"></a>PublicSymbol
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

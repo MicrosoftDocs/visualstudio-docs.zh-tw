@@ -17,12 +17,12 @@ ms.assetid: 368ced5b-c5d9-4090-a5b4-26ff400d1a55
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1277e951d2f5bebebad9c8b545d4eed72439b015
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ead26674991e96bfc58ede8271722f8c6db830cf
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49878904"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51787129"
 ---
 # <a name="idebugcoreserver3getconnectionprotocol"></a>IDebugCoreServer3::GetConnectionProtocol
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,14 +32,14 @@ ms.locfileid: "49878904"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT GetConnectionProtocol(  
-   CONNECTION_PROTOCOL* pProtocol  
+HRESULT GetConnectionProtocol(  
+   CONNECTION_PROTOCOL* pProtocol  
 );  
 ```  
   
 ```csharp  
-int GetConnectionProtocol(  
-   CONNECTION_PROTOCOL[] pProtocol  
+int GetConnectionProtocol(  
+   CONNECTION_PROTOCOL[] pProtocol  
 );  
 ```  
   

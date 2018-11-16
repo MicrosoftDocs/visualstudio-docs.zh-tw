@@ -11,15 +11,15 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: c886f8af-2014-4fec-9b24-d98b68ecafb7
 caps.latest.revision: 12
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0eb90505dacbb22268087d3eb15a8df39fdcc932
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c4cf566affff500d372a980a6f07122c2df33a23
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49238767"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51788585"
 ---
 # <a name="creating-profiler-reports-from-the-command-line"></a>從命令列建立程式碼剖析工具報告
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

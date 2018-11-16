@@ -11,15 +11,15 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 3b4b3583-0b01-4f5d-aacb-3f96d19111d9
 caps.latest.revision: 9
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e983022764bc8a790987e3e0dc6045eea098a2ae
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c567f68abb5b67022bb2decd64ed23e35bf6d5d3
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49913835"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51723096"
 ---
 # <a name="mip-map-generation-variant"></a>Mip-map 產生變異
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

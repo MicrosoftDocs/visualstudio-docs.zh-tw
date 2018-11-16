@@ -17,12 +17,12 @@ ms.assetid: 61ccc14e-75c6-44e7-aae4-57a9aac52089
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c6fc09534138db7a23693a48ec6f5b96b08ab463
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1b3b363aedfcb1e1ad1fffd90e94ff6477333ab3
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49828477"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51751975"
 ---
 # <a name="idebugenginelaunch2resumeprocess"></a>IDebugEngineLaunch2::ResumeProcess
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,13 +32,13 @@ ms.locfileid: "49828477"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT ResumeProcess (   
+HRESULT ResumeProcess (   
    IDebugProcess2* pProcess  
 );  
 ```  
   
 ```csharp  
-int ResumeProcess (   
+int ResumeProcess (   
    IDebugProcess2 pProcess  
 );  
 ```  

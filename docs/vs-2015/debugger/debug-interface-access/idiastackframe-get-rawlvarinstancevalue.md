@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaStackFrame::get_rawLVarInstanceValue method
 ms.assetid: ce526259-85a6-475b-9274-0b3a21d95db2
 caps.latest.revision: 13
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3ee04a345d95ee521c13f2023ab4a5a525003dac
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c99ba92633f9cb7377252941bcabcafaf1d6242d
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49887165"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51787623"
 ---
 # <a name="idiastackframegetrawlvarinstancevalue"></a>IDiaStackFrame::get_rawLVarInstanceValue
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

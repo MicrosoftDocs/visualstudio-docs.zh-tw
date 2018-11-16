@@ -17,12 +17,12 @@ ms.assetid: aafb32c5-5790-4807-a448-878a80256438
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4544e168b4aefae60480e9249c4324a8d2fa4bb1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 15c8939fa7c220592620213ba837c5e8a76bd5f5
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49852813"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51732786"
 ---
 # <a name="idebugport2enumprocesses"></a>IDebugPort2::EnumProcesses
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,13 +32,13 @@ ms.locfileid: "49852813"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT EnumProcesses(   
+HRESULT EnumProcesses(   
    IEnumDebugProcesses2** ppEnum  
 );  
 ```  
   
 ```csharp  
-int EnumProcesses(   
+int EnumProcesses(   
    out IEnumDebugProcesses2 ppEnum  
 );  
 ```  

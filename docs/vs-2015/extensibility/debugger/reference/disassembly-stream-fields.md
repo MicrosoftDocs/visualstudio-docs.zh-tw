@@ -17,12 +17,12 @@ ms.assetid: cfc9b4de-c756-4844-bea7-d9f186a51d1b
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7d5e4c72c95122692e3cc6ebb226fa5a2cb1f469
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d65c51f1589d245ab0fcbbfe8c62d77277d925ee
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49886704"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51775793"
 ---
 # <a name="disassemblystreamfields"></a>DISASSEMBLY_STREAM_FIELDS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "49886704"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-enum enum_DISASSEMBLY_STREAM_FIELDS {   
+enum enum_DISASSEMBLY_STREAM_FIELDS {   
    DSF_ADDRESS          = 0x00000001,  
    DSF_ADDRESSOFFSET    = 0x00000002,  
    DSF_CODEBYTES        = 0x00000004,  
@@ -51,7 +51,7 @@ typedef DWORD DISASSEMBLY_STREAM_FIELDS;
 ```  
   
 ```csharp  
-public enum enum_DISASSEMBLY_STREAM_FIELDS {   
+public enum enum_DISASSEMBLY_STREAM_FIELDS {   
    DSF_ADDRESS          = 0x00000001,  
    DSF_ADDRESSOFFSET    = 0x00000002,  
    DSF_CODEBYTES        = 0x00000004,  

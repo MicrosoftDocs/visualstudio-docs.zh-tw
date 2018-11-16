@@ -15,15 +15,15 @@ helpviewer_keywords:
 - PointerType symbol
 ms.assetid: 67228681-7345-4537-8af3-93806803ee96
 caps.latest.revision: 19
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: af9c54b2a616ef699df1f84b3e9b9606bf7cf9a3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: cab157534333834d8313f72a1a8eb7394df99e40
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49215356"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51731539"
 ---
 # <a name="pointertype"></a>PointerType
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

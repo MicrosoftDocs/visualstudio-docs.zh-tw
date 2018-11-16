@@ -24,15 +24,15 @@ helpviewer_keywords:
 - dependency graphs, browsing
 ms.assetid: 08f65f77-6ca7-4b25-b060-3f6c9f5847a4
 caps.latest.revision: 91
-author: alexhomer1
+author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: dba1be310260a2b1ae6ad28efe4b3d98ac14c4a4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d931082dff95a8afe71eda94f37f0e0849811ac2
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49896832"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51747580"
 ---
 # <a name="browse-and-rearrange-code-maps"></a>瀏覽和重新排列 Code Map
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

@@ -9,15 +9,15 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 2ba70ba4-2cea-4e01-93c2-055903d59470
 caps.latest.revision: 16
-author: alexhomer1
+author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 007d194249cdca1ba95c758bc170db113cb0c3d7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 995192b372b9c1909ad3a7f164474cfaf63f07bc
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49841010"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51784451"
 ---
 # <a name="structure-your-modeling-solution"></a>建構模型方案
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

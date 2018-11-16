@@ -16,12 +16,12 @@ ms.assetid: cb513fa9-d521-4a65-b968-f55f53a368df
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a8abd62f63f3b2aa6b4b77dd94bd9b3db208dd22
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c1c24888fc62d3a3f79e375b720a41c9364d6e37
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49848367"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51780395"
 ---
 # <a name="idebugmodoptgetmodopts"></a>IDebugModOpt::GetModOpts
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

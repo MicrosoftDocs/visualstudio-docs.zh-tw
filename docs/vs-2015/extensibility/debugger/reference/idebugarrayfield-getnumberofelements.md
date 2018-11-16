@@ -17,12 +17,12 @@ ms.assetid: a1961ef3-d69d-4022-b8c9-b9cfb9811345
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e83fa791bf3da9e816b28f709be8aa7156f4a8b6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b23b5bcb7719038a08b7b4efcb3c73e0122e2c0e
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49911508"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51744777"
 ---
 # <a name="idebugarrayfieldgetnumberofelements"></a>IDebugArrayField::GetNumberOfElements
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "49911508"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT GetNumberOfElements(   
+HRESULT GetNumberOfElements(   
    DWORD* pdwNumElements  
 );  
 ```  

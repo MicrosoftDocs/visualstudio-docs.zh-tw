@@ -11,15 +11,15 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: bd9ca972-e5bf-45a6-9a5d-ac30a4d9ee02
 caps.latest.revision: 13
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3c70ef2968ddbeefe32e44855c61e87f2cfdb945
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 10b97169440814366141670768561ce314498191
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49235595"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51769239"
 ---
 # <a name="profiling-tools-apis"></a>程式碼剖析工具 API
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

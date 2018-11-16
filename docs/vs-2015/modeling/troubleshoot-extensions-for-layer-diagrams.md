@@ -12,15 +12,15 @@ helpviewer_keywords:
 - layer diagrams, troubleshooting extensions
 ms.assetid: 1fda4f8a-38b8-482b-87b8-eade1a4e5662
 caps.latest.revision: 27
-author: alexhomer1
+author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 8b4d7dbe7fc11a41d44063aab558389555a4b7af
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6361651672e72df6661f030a4b6c8e451fdaea89
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49879099"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51738768"
 ---
 # <a name="troubleshoot-extensions-for-layer-diagrams"></a>分層圖擴充功能疑難排解
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

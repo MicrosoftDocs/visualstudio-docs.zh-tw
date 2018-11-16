@@ -20,15 +20,15 @@ helpviewer_keywords:
 - pseudovariables
 ms.assetid: fae84f68-2138-4144-9bd4-c9e271b6182a
 caps.latest.revision: 40
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 028ca4630ca2e07b8f522d3cb630305d0e3ae5d4
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 79d2f47acfbd5a4b6adf6d5f679fb3b514679dab
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49281784"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51789495"
 ---
 # <a name="pseudovariables"></a>虛擬變數
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

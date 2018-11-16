@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaLoadCallback2::RestrictReferencePathAccess method
 ms.assetid: e20cb45c-0360-4ff0-a92c-b1b6f76d6e85
 caps.latest.revision: 10
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 61e3a7735760a74eb81f94a86ffd4de3329eb355
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: efc52337a2ca043d33831ddd678bf81ab62636f4
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49260100"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51778107"
 ---
 # <a name="idialoadcallback2restrictreferencepathaccess"></a>IDiaLoadCallback2::RestrictReferencePathAccess
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

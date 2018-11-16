@@ -17,12 +17,12 @@ ms.assetid: 1e44681c-1f03-41a9-9c04-b79f231b0822
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f70314c10928f3f81ab19d09f28585d8e924be3d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c85fd3298bcb488b4b0d8152fd9d32ab4522cc6b
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49922987"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51729726"
 ---
 # <a name="fieldmodifiers"></a>FIELD_MODIFIERS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "49922987"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-enum enum_FIELD_MODIFIERS {   
+enum enum_FIELD_MODIFIERS {   
    FIELD_MOD_NONE             = 0x00000000,  
   
    // Modifier of the field  

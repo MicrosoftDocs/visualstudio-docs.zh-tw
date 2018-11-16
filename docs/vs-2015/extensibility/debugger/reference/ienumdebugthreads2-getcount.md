@@ -17,12 +17,12 @@ ms.assetid: 81b7f139-d24e-4040-9adc-d664d77563ba
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2b86e1af6228a2af215512d7cb89d17b414e65e2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 01b5c911a04e502981f3f01d49dfa673adb3f17e
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49912249"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51817772"
 ---
 # <a name="ienumdebugthreads2getcount"></a>IEnumDebugThreads2::GetCount
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

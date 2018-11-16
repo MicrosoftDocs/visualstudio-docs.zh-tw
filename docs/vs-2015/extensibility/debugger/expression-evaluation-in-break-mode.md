@@ -17,12 +17,12 @@ ms.assetid: 34fe5b58-15d5-4387-a266-72120f90a4b6
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 03be07a19ac95eaec64fbdec73f92742c02ad191
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b5b307dead1d2fb193f7d34b28ef4eaec11c6dad
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49239510"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51728998"
 ---
 # <a name="expression-evaluation-in-break-mode"></a>中斷模式中的運算式評估
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

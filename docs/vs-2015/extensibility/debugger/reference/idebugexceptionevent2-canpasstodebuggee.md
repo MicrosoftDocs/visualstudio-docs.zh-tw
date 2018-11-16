@@ -17,12 +17,12 @@ ms.assetid: ae4bbe0a-fbe1-49be-a310-ea64279a434b
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ac6c84005530f72ef9ed0f252bf40b035c3034e8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 519a1077bd9f090f733b24dc5e127089613d5ddf
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49881934"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51722134"
 ---
 # <a name="idebugexceptionevent2canpasstodebuggee"></a>IDebugExceptionEvent2::CanPassToDebuggee
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,13 +32,13 @@ ms.locfileid: "49881934"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT CanPassToDebuggee(  
+HRESULT CanPassToDebuggee(  
    void  
 );  
 ```  
   
 ```csharp  
-int CanPassToDebuggee();  
+int CanPassToDebuggee();  
 ```  
   
 ## <a name="return-value"></a>傳回值  

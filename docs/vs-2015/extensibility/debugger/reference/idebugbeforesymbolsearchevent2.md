@@ -15,12 +15,12 @@ ms.assetid: 679fd7b1-765a-41a8-a046-63240c09a499
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 501e0a255bcc440d6419405f8d4ae22e0b44b854
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2781d13dcab941ffcd0ddf9c70e1c5e05c76c32a
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49306653"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51737727"
 ---
 # <a name="idebugbeforesymbolsearchevent2"></a>IDebugBeforeSymbolSearchEvent2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

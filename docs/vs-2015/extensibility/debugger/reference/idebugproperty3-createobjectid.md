@@ -17,12 +17,12 @@ ms.assetid: f2fa81e7-822f-456e-8729-a96a18eea771
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8cf9a8cfde8ea909759d573c336247720979ae2a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1e27d0dca73829bb5dd98c42d2e42ba34f4afdf0
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49916088"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51776196"
 ---
 # <a name="idebugproperty3createobjectid"></a>IDebugProperty3::CreateObjectID
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,13 +32,13 @@ ms.locfileid: "49916088"
 ## <a name="syntax"></a>語法  
   
 ```cpp  
-HRESULT CreateObjectID(  
+HRESULT CreateObjectID(  
    void  
 );  
 ```  
   
 ```csharp  
-int CreateObjectID();  
+int CreateObjectID();  
 ```  
   
 ## <a name="return-value"></a>傳回值  

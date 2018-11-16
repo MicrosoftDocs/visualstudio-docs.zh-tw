@@ -16,12 +16,12 @@ ms.assetid: 8fb0de61-71e7-42d1-8b41-2ad915474384
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1aaeb8046ae83b6a53dc40e411a907f7dcf7a1a5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 34b5480aebbe59ef9b023bf4350b2bdd35725c47
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49205916"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51786700"
 ---
 # <a name="how-to-identify-symbols-in-a-library"></a>如何： 識別文件庫中的符號
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

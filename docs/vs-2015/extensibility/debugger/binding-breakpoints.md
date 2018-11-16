@@ -15,12 +15,12 @@ ms.assetid: 70737387-c52f-4dae-8865-77d4b203bf25
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d6e89a671d8b243869639a5c3825233ff60b19c2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f8061b8d9a9cf3f29889405ea8004a79a0af8216
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49283318"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51807363"
 ---
 # <a name="binding-breakpoints"></a>繫結中斷點
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

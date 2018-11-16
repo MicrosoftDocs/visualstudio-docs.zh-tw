@@ -13,12 +13,12 @@ ms.assetid: 367c2ec8-3059-46a5-9d1c-57bead0419e7
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 337aec1b68759102d9e2a50bd4a23c13ddde7739
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5c90744c8cba05858a231dd60ec447979a76edb7
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49284735"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51774779"
 ---
 # <a name="getting-started-with-roslyn-analyzers"></a>開始使用 Roslyn 分析器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

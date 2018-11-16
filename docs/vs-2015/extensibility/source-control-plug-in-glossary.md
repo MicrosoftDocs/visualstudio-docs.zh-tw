@@ -16,12 +16,12 @@ ms.assetid: f224bbc9-38fc-4c80-ab09-51dcc8969f8e
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fabf99b4402fe8c8a2792b90f966e3ddaee4aeeb
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9535987cc729c78c7d72ee9f51529aeb91b59450
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49282161"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51732292"
 ---
 # <a name="source-control-plug-in-glossary"></a>原始檔控制外掛程式字彙表
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

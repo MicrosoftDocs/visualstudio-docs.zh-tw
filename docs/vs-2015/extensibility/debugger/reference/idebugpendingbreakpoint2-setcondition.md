@@ -18,12 +18,12 @@ ms.assetid: 0534224f-654f-4862-bc4d-a9a81a5f8899
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3b5fa5264d60a5a88e2753b079b92014016e5cf3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6ca5f5c6a422d5a445ff2206dae4c799c7787b3f
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49929513"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51780408"
 ---
 # <a name="idebugpendingbreakpoint2setcondition"></a>IDebugPendingBreakpoint2::SetCondition
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -33,13 +33,13 @@ ms.locfileid: "49929513"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT SetCondition(   
+HRESULT SetCondition(   
    BP_CONDITION bpCondition  
 );  
 ```  
   
 ```csharp  
-int SetCondition(   
+int SetCondition(   
    BP_CONDITION bpCondition  
 );  
 ```  

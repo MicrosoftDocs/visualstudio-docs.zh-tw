@@ -28,15 +28,15 @@ helpviewer_keywords:
 - DLLs, load order of
 ms.assetid: ecf62568-8b65-4a41-b8a4-e962ff2dfb71
 caps.latest.revision: 22
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 469d4a3f42fc749a0a7a05f4a034bde28332dc57
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b7af6940de5bd4e39451f44176f5c15d2e8b4548
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49183166"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51778393"
 ---
 # <a name="how-to-find-which-dll-your-program-crashed-in"></a>如何：尋找程式損毀時所在的 DLL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

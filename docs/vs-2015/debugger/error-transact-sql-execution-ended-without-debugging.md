@@ -19,15 +19,15 @@ dev_langs:
 - SQL
 ms.assetid: 7a4d4999-3973-4339-ba6a-f0d19bcb1d4a
 caps.latest.revision: 12
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bbcd6fb78ef87992571347f6a32f18e939a00586
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b67900f02a81a6a28279268c3fe6fa067bcdaedc
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49892177"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51787636"
 ---
 # <a name="error-transact-sql-execution-ended-without-debugging"></a>錯誤：Transact-SQL 執行未經偵錯即結束
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

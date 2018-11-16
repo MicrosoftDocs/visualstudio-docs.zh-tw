@@ -13,15 +13,15 @@ dev_langs:
 - C++
 ms.assetid: c18b1e38-b152-4a13-aba0-59faded5b2e6
 caps.latest.revision: 6
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d7e9eaa71569157ce38a1d31ab62a0bbdba12e7f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: de797d61c0c702d50a060d0bd1ccbb5321c35769
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49274920"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51731339"
 ---
 # <a name="idiasymbolgetisoptimizedaway"></a>IDiaSymbol::get_isOptimizedAway
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

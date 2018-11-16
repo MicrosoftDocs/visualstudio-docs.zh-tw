@@ -20,15 +20,15 @@ helpviewer_keywords:
 - debugger, parallel tasks window
 ms.assetid: f50efb78-5206-4803-bb42-426ef8133f2f
 caps.latest.revision: 22
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3be45a598535d81e23cd32ff4d30045ae2ac8dcb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 602fdd683ecb1b3244289c305e4fc850d337b03e
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49891722"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51792030"
 ---
 # <a name="using-the-parallel-stacks-window"></a>使用平行堆疊視窗
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

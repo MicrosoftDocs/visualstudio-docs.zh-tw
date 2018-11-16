@@ -14,15 +14,15 @@ helpviewer_keywords:
 - sampling data views
 ms.assetid: 798de693-e43a-4056-aff5-48310c2172c5
 caps.latest.revision: 18
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2f1ce001a1f5ee53c75001bb909d04eaa3d9222c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: bde5ae4d7f6fe7d556096ee29533bdbcae5445bf
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49302129"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51817213"
 ---
 # <a name="profiler-sampling-method-data-views"></a>程式碼剖析工具取樣方法資料檢視
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

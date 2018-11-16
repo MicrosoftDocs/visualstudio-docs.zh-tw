@@ -11,15 +11,15 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 9edbb52d-ee0b-4cc4-a382-972bcee067d3
 caps.latest.revision: 8
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c8580283e19b61356746ecca8a707369abc45355
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9d9ac50f2e1f5f92a16a7482a25c9054c2a36f68
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49299295"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51787298"
 ---
 # <a name="begincapture"></a>BeginCapture
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
