@@ -23,15 +23,15 @@ helpviewer_keywords:
 - debugging [Visual Studio], Registers window
 ms.assetid: ab354047-053e-4f94-8ac1-26e761442b6f
 caps.latest.revision: 27
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fa204726632f55ad6aa1b79e0b9d071864a5dcaa
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 27337c5bea0d0216b27411dc5e91d7ca4c778615
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49210297"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51722342"
 ---
 # <a name="debugging-basics-registers-window"></a>偵錯基本概念：暫存器視窗
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

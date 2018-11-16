@@ -11,15 +11,15 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: afa7db3b-8c1d-473a-81ac-24ede112a17f
 caps.latest.revision: 14
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fb1d25dd17ab00755de56a8b75fc3d6cead13e19
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6eab17a80df478e695af9280e967ba03e14a13de
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49198801"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51791764"
 ---
 # <a name="profiling-tools-usage-rules"></a>程式碼剖析工具使用規則
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

@@ -15,12 +15,12 @@ ms.assetid: be1f1cd5-0b2f-435c-a052-dca28a7c978d
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 78c3618edc2ca2e319bcba0e6253ca3408046cfd
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0c326e3d43a6b76e30d4d9e57c6cab99e7a8b119
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49300088"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51797113"
 ---
 # <a name="idebugprogramnamechangedevent2"></a>IDebugProgramNameChangedEvent2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

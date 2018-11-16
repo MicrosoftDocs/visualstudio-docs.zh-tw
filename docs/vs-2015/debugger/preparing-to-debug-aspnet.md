@@ -18,15 +18,15 @@ helpviewer_keywords:
 - debugging ASP.NET Web applications, setup
 ms.assetid: d65d7299-51dd-4337-b334-aa1cbb37b77e
 caps.latest.revision: 32
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 57031fa7529a7ef12c7ad8c2c61b41194bd18f74
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 70cf3eacea28a0612ac4b97acfd84758163ea88f
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49171493"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51793502"
 ---
 # <a name="preparing-to-debug-aspnet"></a>準備偵錯 ASP.NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

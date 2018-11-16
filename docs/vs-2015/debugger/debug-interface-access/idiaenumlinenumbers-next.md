@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaEnumLineNumbers::Next method
 ms.assetid: 363d5b40-1316-4ab8-836f-63637f619e0a
 caps.latest.revision: 10
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a0763cf85a256c24f83f126a980ef713c25a2177
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 21bc5e752cf23694cfdab417632e67de674f87dd
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49829218"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51737899"
 ---
 # <a name="idiaenumlinenumbersnext"></a>IDiaEnumLineNumbers::Next
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "49829218"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT Next (   
+HRESULT Next (   
    ULONG            celt,  
    IDiaLineNumber** rgelt,  
    ULONG*           pceltFetched  
