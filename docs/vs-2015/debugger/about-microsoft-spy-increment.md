@@ -13,15 +13,15 @@ helpviewer_keywords:
 - Microsoft Spy++
 ms.assetid: b32e4318-e656-441a-abfa-d38b81096924
 caps.latest.revision: 6
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2392346e8811bf417e845774cf4d01d0a1569c67
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: dae2146993bf431e66879818a9ed4e59fbc13857
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49301765"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51723252"
 ---
 # <a name="about-microsoft-spy"></a>關於 Microsoft Spy++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

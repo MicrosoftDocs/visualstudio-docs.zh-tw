@@ -21,15 +21,15 @@ helpviewer_keywords:
 - mixed-mode debugging
 ms.assetid: 2859067d-7fcc-46b0-a4df-8c2101500977
 caps.latest.revision: 32
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5c13babd3e54d11c7a32e83f645dc2ab9d12b4f7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b6ee85e5822d4792046c755c85d699dd6a9a5d26
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49226137"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51737166"
 ---
 # <a name="how-to-debug-in-mixed-mode"></a>How to: Debug in Mixed Mode
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

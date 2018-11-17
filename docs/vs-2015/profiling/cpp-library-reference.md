@@ -13,15 +13,15 @@ helpviewer_keywords:
 - Concurrency Visualizer SDK, C++ Library Reference
 ms.assetid: c9f8eea2-c964-485d-9ad0-55a4bf425ae7
 caps.latest.revision: 8
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cf82d75c57f460f10039a747de55578f7bdf458f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d21a6e11503d9322dd8eb3f5168be619cecef243
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49175795"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51761240"
 ---
 # <a name="c-library-reference"></a>C++ 程式庫參考
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

@@ -15,15 +15,15 @@ helpviewer_keywords:
 - Concurrency namespace
 ms.assetid: 001fbfce-a278-4502-aa27-26d65dd61453
 caps.latest.revision: 8
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 169df5f3d3e498575b0153dc12894622e0a6e149
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e684aa03e0485a4467c083dc795492eb9c9cd3a5
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49251251"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51774233"
 ---
 # <a name="concurrency-namespace-concurrency-visualizer"></a>Concurrency 命名空間 (並行視覺化檢視)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

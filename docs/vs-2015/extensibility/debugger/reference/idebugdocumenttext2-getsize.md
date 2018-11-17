@@ -17,12 +17,12 @@ ms.assetid: bf515a8f-dcee-4004-8f81-543d547ceaae
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 570ec02c2e4df7d2af9b175e6fa1c41dcd82ac8e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f7cd8f691b8c94dee8666a85f707674acaa73fa9
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49906360"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51745347"
 ---
 # <a name="idebugdocumenttext2getsize"></a>IDebugDocumentText2::GetSize
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,14 +32,14 @@ ms.locfileid: "49906360"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT GetSize(   
+HRESULT GetSize(   
    ULONG* pcNumLines,  
    ULONG* pcNumChars  
 );  
 ```  
   
 ```csharp  
-int GetSize(   
+int GetSize(   
    ref uint pcNumLines,  
    ref uint pcNumChars  
 );  
@@ -58,7 +58,7 @@ int GetSize(
 ## <a name="remarks"></a>備註  
  [只有 c + +]如果不需要特定的值，傳遞參數為 NULL。  
   
- [僅限 C#]必須指定這兩個參數。  
+ [C#只]必須指定這兩個參數。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md)

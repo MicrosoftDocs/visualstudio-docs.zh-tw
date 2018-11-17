@@ -16,15 +16,15 @@ dev_langs:
 - C++
 ms.assetid: 24238fc0-40b8-4079-8579-698211db9a26
 caps.latest.revision: 18
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 583296b47c2d230a48c21952613954b17ebfe622
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ebd4dd187f2b976ca7861f95609dd6ce8d8d318f
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49892333"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51808571"
 ---
 # <a name="memory-usage-without-debugging"></a>記憶體使用量 (不偵錯)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

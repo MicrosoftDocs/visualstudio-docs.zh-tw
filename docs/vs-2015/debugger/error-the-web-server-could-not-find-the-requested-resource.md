@@ -18,15 +18,15 @@ helpviewer_keywords:
 - debugger, Web application errors
 ms.assetid: 1ceeaf30-918c-42bb-ace1-96944530fef3
 caps.latest.revision: 12
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: becdd23fd5351fd02b6dc44bd849b8e627e602bb
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f490006d21f51f48cd8b2d97da262015ab170f39
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49191694"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51808293"
 ---
 # <a name="error-the-web-server-could-not-find-the-requested-resource"></a>錯誤：Web 伺服器找不到要求的資源
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

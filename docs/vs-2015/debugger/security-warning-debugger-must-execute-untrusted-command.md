@@ -18,15 +18,15 @@ dev_langs:
 - C++
 ms.assetid: e5c004b3-b364-4098-ac98-770076ca9981
 caps.latest.revision: 16
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fa5678c56d07dd76e659f10435fb3b4f8cb1a3a3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c4f37f629d12a94c65031543d196be92b3f259b6
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49215445"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51744721"
 ---
 # <a name="security-warning-debugger-must-execute-untrusted-command"></a>Security Warning: Debugger Must Execute Untrusted Command
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

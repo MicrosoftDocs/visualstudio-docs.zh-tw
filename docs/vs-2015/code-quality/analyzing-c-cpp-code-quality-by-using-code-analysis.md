@@ -19,15 +19,15 @@ helpviewer_keywords:
 - C, code analysis
 ms.assetid: 03b8b47a-e9d8-4692-835f-2d22ec6c76a4
 caps.latest.revision: 37
-author: corob-msft
-ms.author: gewarren
+author: mikeblome
+ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 09879cd71bfda25224653e7a51a61d048f06c095
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 130bd8f4507e59ec9a5b86352877f8e000745492
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49224950"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51780135"
 ---
 # <a name="analyzing-cc-code-quality-by-using-code-analysis"></a>使用程式碼分析進行 C/C++ 程式碼品質分析
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

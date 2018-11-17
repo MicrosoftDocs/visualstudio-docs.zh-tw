@@ -14,15 +14,15 @@ helpviewer_keywords:
 - profiling tools, packsymbols
 ms.assetid: 8b802505-e94d-4ee0-83e4-fdd790a332c1
 caps.latest.revision: 18
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e7c29d311eb5253da1e0a07e156d340df76c5193
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: dbe05d345e54a900fcdd5568aa898b80417bb68d
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49884754"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51761257"
 ---
 # <a name="saving-symbol-information-with-performance-data-files"></a>使用效能資料檔案儲存符號資訊
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

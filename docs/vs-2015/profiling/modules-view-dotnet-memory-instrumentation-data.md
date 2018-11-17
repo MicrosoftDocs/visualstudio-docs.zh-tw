@@ -13,15 +13,15 @@ helpviewer_keywords:
 - Modules view
 ms.assetid: 26516139-0981-41de-917d-ad5769391b8d
 caps.latest.revision: 15
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d61dace8109e56ef8c472920dd5d41196c10469f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 85024296eff4fb4d26b3a588217a1e6fe5221d3e
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49220476"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51755397"
 ---
 # <a name="modules-view---net-memory-instrumentation-data"></a>模組檢視 - .NET 記憶體檢測資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

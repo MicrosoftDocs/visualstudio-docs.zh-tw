@@ -11,15 +11,15 @@ helpviewer_keywords:
 - UML - extending, menu commands
 ms.assetid: 79c277de-5871-4fc7-9701-55eec5c3cd46
 caps.latest.revision: 63
-author: alexhomer1
+author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: b7a2fe97d7c91f07bf39ec10b032dd2fa89a610d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c211c37817ba996105d7496dc49e91db9fa9298e
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942422"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51809099"
 ---
 # <a name="define-a-menu-command-on-a-modeling-diagram"></a>在模型圖上定義功能表命令
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

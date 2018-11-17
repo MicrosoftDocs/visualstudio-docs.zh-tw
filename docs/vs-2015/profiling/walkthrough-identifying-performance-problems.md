@@ -16,15 +16,15 @@ helpviewer_keywords:
 - profiling applications, walkthroughs
 ms.assetid: 36f6f123-0c14-4763-99c3-bd60ecb95b87
 caps.latest.revision: 58
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 33450d7f904cebd79259c30245cf07e23ca1aba1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9d26e6ccabcdff12b8f4d9839888e17dc1ab3ce4
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49896135"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51745359"
 ---
 # <a name="walkthrough-identifying-performance-problems"></a>逐步解說：找出效能問題
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

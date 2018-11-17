@@ -24,15 +24,15 @@ helpviewer_keywords:
 - ActiveX controls, debugging
 ms.assetid: 3260b2a7-3239-493d-9271-aedf705c13c7
 caps.latest.revision: 23
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fca2af4745ffa932431d65771ae6c4e1761199d8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1c71aa59e62d9ac8530f34f42e15737a52b0fad6
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49246918"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51771492"
 ---
 # <a name="com-and-activex-debugging"></a>偵錯 COM 和 ActiveX
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

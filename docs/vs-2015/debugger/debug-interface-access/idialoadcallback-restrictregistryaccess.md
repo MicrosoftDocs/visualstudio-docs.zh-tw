@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaLoadCallback::RestrictRegistryAccess method
 ms.assetid: de4760c3-a746-4bab-8065-1388fed31b67
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fbaa26ab1154b1eea2611a63cf373ea92d095296
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: bb0d064d601f821c3f9e1a10030379c044690667
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49216238"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51776183"
 ---
 # <a name="idialoadcallbackrestrictregistryaccess"></a>IDiaLoadCallback::RestrictRegistryAccess
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

@@ -17,12 +17,12 @@ ms.assetid: 1c1dce9f-bbe2-4fc3-a736-5f78a237f4cc
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a8d5a29cf2d36653ecad83524f14ad38d8f7d2c7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5d5451576115dcada98f6b8f7daaf1cca5a86f95
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49206722"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51727242"
 ---
 # <a name="how-to-provide-hidden-text-support-in-a-legacy-language-service"></a>如何： 隱藏的文字中提供支援舊版語言服務
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

@@ -15,12 +15,12 @@ ms.assetid: 405488bb-1362-40ed-b0f1-04a57fc98c56
 caps.latest.revision: 33
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d167559a442e351c6256d07943092825deef288a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 96ab44df6512b4288cf01f4c1f99d435a9c24bd5
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49839423"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51806122"
 ---
 # <a name="project-subtypes-design"></a>設計專案子類型
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

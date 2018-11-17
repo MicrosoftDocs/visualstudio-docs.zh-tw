@@ -16,15 +16,15 @@ helpviewer_keywords:
 - thunk symbol
 ms.assetid: 01abb95f-d89a-465c-a4eb-8e8509598c95
 caps.latest.revision: 20
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b8da8b66a18b6f46bbd2989371f469cc49677be8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 82710f597d37146617b64ec89a1d59b056f941dd
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49180280"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51741141"
 ---
 # <a name="thunk"></a>Thunk
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

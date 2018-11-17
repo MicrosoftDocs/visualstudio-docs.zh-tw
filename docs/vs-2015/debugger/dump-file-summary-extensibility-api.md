@@ -16,15 +16,15 @@ dev_langs:
 - C++
 ms.assetid: bf008cdc-03f8-496b-868d-4c2644f1d7ee
 caps.latest.revision: 7
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9e0bab08cdbfb28aed77ebb90c5c0fb67f92c726
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d1d0f6bef5ebadaa01dbf451954cb8e9cabeb806
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49279418"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51726502"
 ---
 # <a name="dump-file-summary-extensibility-api"></a>傾印檔案摘要擴充性 API
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

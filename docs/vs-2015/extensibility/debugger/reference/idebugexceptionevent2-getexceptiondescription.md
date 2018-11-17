@@ -17,12 +17,12 @@ ms.assetid: d07d458f-5729-47e4-9b77-1bd59c61a75a
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2ab2d13c80c5be1121b198ba4ebdb560c73e7c4d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e57f2943b5f207b4d519f22ebe0f6509720b9170
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49950785"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51744337"
 ---
 # <a name="idebugexceptionevent2getexceptiondescription"></a>IDebugExceptionEvent2::GetExceptionDescription
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,13 +32,13 @@ ms.locfileid: "49950785"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT GetExceptionDescription(   
+HRESULT GetExceptionDescription(   
    BSTR* pbstrDescription  
 );  
 ```  
   
 ```csharp  
-int GetExceptionDescription(   
+int GetExceptionDescription(   
    out string pbstrDescription  
 );  
 ```  

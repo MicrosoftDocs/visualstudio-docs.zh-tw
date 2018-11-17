@@ -15,12 +15,12 @@ ms.assetid: 0f4830af-fe0c-4141-b768-817f4e426b8c
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6b7df8d24d3f7e69f2a9239696e9eff81820d455
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6de2a1d48bc2ef8721edab19139db6e245320267
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49299698"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51763436"
 ---
 # <a name="taskstaterantocompletion-field"></a>TASK_STATE_RAN_TO_COMPLETION 欄位
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

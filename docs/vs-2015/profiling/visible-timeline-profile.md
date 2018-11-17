@@ -15,15 +15,15 @@ helpviewer_keywords:
 - vs.cv.threads.activelegendConcurrency Visualizer, Threads View Active Legend
 ms.assetid: 559841d1-967c-4b51-8574-6ace23969580
 caps.latest.revision: 13
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cd028c4e70b9c30379e37974d7086d061394336e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8abd2e8dac6e54896304e26a512c7722b10d32ec
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49214161"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51761482"
 ---
 # <a name="visible-timeline-profile"></a>可見時間表分析
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

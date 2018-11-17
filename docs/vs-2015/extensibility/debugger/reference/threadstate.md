@@ -17,12 +17,12 @@ ms.assetid: 62efdd7c-25b1-4fd3-9d06-ac1830a418a9
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 07c4fe23f4bef02282ba1d53f4953f41d1f6343e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1bc74c4b893cd7eb9aa389af31780c1b9cc8d35c
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49814750"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51817304"
 ---
 # <a name="threadstate"></a>THREADSTATE
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "49814750"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-enum enum_THREADSTATE {   
+enum enum_THREADSTATE {   
    THREADSTATE_RUNNING = 0x0001,  
    THREADSTATE_STOPPED = 0x0002,  
    THREADSTATE_FRESH   = 0x0003,  
@@ -43,7 +43,7 @@ typedef DWORD THREADSTATE;
 ```  
   
 ```csharp  
-public enum enum_THREADSTATE {   
+public enum enum_THREADSTATE {   
    THREADSTATE_RUNNING = 0x0001,  
    THREADSTATE_STOPPED = 0x0002,  
    THREADSTATE_FRESH   = 0x0003,  

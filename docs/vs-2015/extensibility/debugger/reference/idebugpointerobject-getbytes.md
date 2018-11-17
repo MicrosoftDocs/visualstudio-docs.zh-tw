@@ -17,12 +17,12 @@ ms.assetid: e986c188-87fb-4b51-86e9-ee6a0035bdab
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ce8537f493fb7b459f8ca9334634bd997a138037
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 90b5548dc6963532947f151d4ca68ff81b5be24d
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49923117"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51816433"
 ---
 # <a name="idebugpointerobjectgetbytes"></a>IDebugPointerObject::GetBytes
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "49923117"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT GetBytes(   
+HRESULT GetBytes(   
    DWORD  dwStart,  
    DWORD  dwCount,  
    BYTE*  pBytes,  

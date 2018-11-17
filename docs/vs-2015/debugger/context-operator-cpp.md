@@ -25,15 +25,15 @@ helpviewer_keywords:
 - native expression evaluator
 ms.assetid: 73cc9afe-f4a4-474e-bb89-5a33fb5e570c
 caps.latest.revision: 29
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8e3bb3994792eef69fec52fe580904c0285f827e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5807b8e3c6a85c25511374e756b02fabfa5abba5
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49874718"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51731676"
 ---
 # <a name="context-operator-c"></a>內容運算子 (C++)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

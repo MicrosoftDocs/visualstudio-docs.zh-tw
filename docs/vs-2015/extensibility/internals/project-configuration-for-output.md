@@ -15,12 +15,12 @@ ms.assetid: a4517f73-45af-4745-9d7f-9fddf887b636
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e5e871a2053bb14b30ad47955104edb5c3fe4658
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1c23f9210175b848bfdf3ddab56776092e39212c
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49304118"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51740894"
 ---
 # <a name="project-configuration-for-output"></a>輸出的專案組態
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

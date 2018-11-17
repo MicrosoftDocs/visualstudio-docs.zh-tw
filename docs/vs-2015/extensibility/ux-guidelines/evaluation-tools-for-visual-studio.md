@@ -13,12 +13,12 @@ ms.assetid: 94e0e9a3-440c-4943-ad7b-772ed742e034
 caps.latest.revision: 4
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c5a36822bc4e9a30de69fc67d072c8c40a5159d3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4bf1f79cbba948f170849b6f9e89cb2421ceb9cf
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49292132"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51806239"
 ---
 # <a name="evaluation-tools-for-visual-studio"></a>適用於 Visual Studio 的評估工具
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

@@ -13,15 +13,15 @@ helpviewer_keywords:
 - Caller/Callee view
 ms.assetid: da624c06-8741-4afb-aad1-f8c0002f3de2
 caps.latest.revision: 17
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2a8cb22cb8274ea9af8fbea045eeeb779835c84a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: cf809747bff2146c6a45afd49768dbda69ae7d91
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49273828"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51782280"
 ---
 # <a name="callercallee-view---net-memory-instrumentation-data"></a>呼叫端/被呼叫端檢視 - .NET 記憶體檢測資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

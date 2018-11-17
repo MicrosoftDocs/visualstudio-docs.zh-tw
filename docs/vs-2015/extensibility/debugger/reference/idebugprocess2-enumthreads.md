@@ -17,12 +17,12 @@ ms.assetid: 05677385-7a7f-4545-8438-af00dde85db0
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c7a517e3b99571487ebdebff1ea1d49f86e47ae2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 69d4606b03504751a98b6fc0274defed4af99870
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49851292"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51747323"
 ---
 # <a name="idebugprocess2enumthreads"></a>IDebugProcess2::EnumThreads
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,14 +32,14 @@ ms.locfileid: "49851292"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT EnumThreads(  
-   IEnumDebugThreads2** ppEnum  
+HRESULT EnumThreads(  
+   IEnumDebugThreads2** ppEnum  
 );  
 ```  
   
 ```csharp  
-int EnumThreads(  
-   out IEnumDebugThreads2 ppEnum  
+int EnumThreads(  
+   out IEnumDebugThreads2 ppEnum  
 );  
 ```  
   

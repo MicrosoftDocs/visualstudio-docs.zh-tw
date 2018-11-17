@@ -17,12 +17,12 @@ ms.assetid: e85f50a3-211c-4220-a9f4-789950ba2782
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3548c80b3db2515c9c90f0eb03fc244301da8818
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 85b5d9e78af9e4e49b3a985ca00ffad102e6b53d
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49218214"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51728843"
 ---
 # <a name="idebugdocumenttext2"></a>IDebugDocumentText2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "49218214"
 ## <a name="syntax"></a>語法  
   
 ```  
-IDebugDocumentText2 : IDebugDocument2  
+IDebugDocumentText2 : IDebugDocument2  
 ```  
   
 ## <a name="notes-for-implementers"></a>實作者的附註  

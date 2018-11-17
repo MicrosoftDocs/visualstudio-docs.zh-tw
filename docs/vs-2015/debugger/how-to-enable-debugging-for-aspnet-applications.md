@@ -20,15 +20,15 @@ helpviewer_keywords:
 - debugging [Visual Studio], ASP.NET
 ms.assetid: 3beed819-cece-4864-8184-bd410000973a
 caps.latest.revision: 40
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b9d0e7a4b6f6daf4fb93884e6d5673ce550259ca
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c199e03af8a21b3134ae0e2afac7bd9b153be2f4
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49235933"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51749123"
 ---
 # <a name="how-to-enable-debugging-for-aspnet-applications"></a>如何：啟用 ASP.NET 應用程式的偵錯
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

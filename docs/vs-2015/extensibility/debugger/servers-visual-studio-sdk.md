@@ -16,12 +16,12 @@ ms.assetid: 62236d64-7956-448c-9ac3-5528f3edac1d
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 84fb3ea778dd5652458c185171dc3fbcaca5a098
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 20b1550773be903f3f5a0482d2971a4f5b30fabc
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49274218"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51727163"
 ---
 # <a name="servers-visual-studio-sdk"></a>伺服器 (Visual Studio SDK)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

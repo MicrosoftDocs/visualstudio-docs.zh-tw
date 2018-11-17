@@ -15,12 +15,12 @@ ms.assetid: 37969977-6f7d-45c9-ba03-1306ae71f5d1
 caps.latest.revision: 25
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 97569043b84cbfc18a62e3058f03e4f7f6c4b8f7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e8ea658e62ca2bcd3ca4d423f00a94f83f2a2086
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49300361"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51798179"
 ---
 # <a name="bitflags-used-by-specific-commands"></a>特定命令所使用的位元旗標
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

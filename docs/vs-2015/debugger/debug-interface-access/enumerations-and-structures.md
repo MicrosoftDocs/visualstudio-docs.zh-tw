@@ -18,15 +18,15 @@ helpviewer_keywords:
 - DIA SDK, structures
 ms.assetid: d17eed2d-d8fd-4a47-82d3-8125c0624010
 caps.latest.revision: 14
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 27f71178f0ce4da3c6085ab6b2510ee9219447f0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3bc1f7adf58e4218c823d359e93b624b8328ac0a
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49284202"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51732397"
 ---
 # <a name="enumerations-and-structures"></a>列舉和結構
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

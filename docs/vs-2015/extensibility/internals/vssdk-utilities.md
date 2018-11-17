@@ -15,12 +15,12 @@ ms.assetid: a469208a-cb70-4d87-a79b-d2086fc4fae4
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 48825ab6fe17597c1152c53832aaace766d267af
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3b720a97ee06f7cf32ce7c764ff3a4770432c45d
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49281212"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51755175"
 ---
 # <a name="vssdk-utilities"></a>VSSDK 公用程式
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

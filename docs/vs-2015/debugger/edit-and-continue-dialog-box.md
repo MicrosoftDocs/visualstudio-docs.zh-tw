@@ -22,15 +22,15 @@ helpviewer_keywords:
 - Edit and Continue dialog box
 ms.assetid: 4390c09c-fc73-4cc3-ab8e-6f07a7d70be2
 caps.latest.revision: 12
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5dcb10d5703926fd862060b716e9f2203bfadd45
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8b847df7187f35c9d1031ff800c9f242c8958b1d
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49250467"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51792511"
 ---
 # <a name="edit-and-continue-dialog-box"></a>[編輯後繼續] 對話方塊
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
