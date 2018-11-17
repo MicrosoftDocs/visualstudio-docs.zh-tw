@@ -1,5 +1,5 @@
 ---
-title: 什麼偵錯？
+title: 什麼是偵錯？
 description: 了解偵錯應用程式的意義
 ms.custom: debug-experiments
 ms.date: 10/17/2018
@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bece83e7e2a66499721c017932d4b498b664b459
-ms.sourcegitcommit: a34b7d4fdb3872865fcf98ba24a0fced58532adc
+ms.openlocfilehash: 7cd96d61718972c82c6002888e123003530c019c
+ms.sourcegitcommit: 331dbb12e11fcd7f5d15fab05f3c861e48126e43
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/12/2018
-ms.locfileid: "51561773"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51826657"
 ---
-# <a name="what-is-debugging"></a>什麼偵錯？
+# <a name="what-is-debugging"></a>什麼是偵錯？
 
 Visual Studio 偵錯工具是一個功能強大的工具。 我們示範如何使用它之前，我們想要這類討論的一些術語*偵錯工具*，*偵錯*，並*偵錯模式*。 如此一來，當我們談到稍後找出並修正 bug，我們將討論相同的動作。
 
@@ -49,7 +49,7 @@ A**偵錯**值表示偵錯組態。 當您啟動應用程式 (按綠色箭號，
 
 ## <a name="next-steps"></a>後續步驟
 
-在本文中，您已了解幾個一般的偵錯概念。 接下來，您可以開始學習如何使用 Visual Studio 偵錯，以及撰寫程式碼較少的 bug。
+在本文中，您已了解幾個一般的偵錯概念。 接下來，您可以開始學習如何使用 Visual Studio 偵錯，以及撰寫程式碼較少的 bug。 下列文章說明C#程式碼範例，但概念適用於 Visual Studio 所支援的所有語言。
 
 > [!div class="nextstepaction"]
 > [撰寫更好C#使用 Visual Studio 程式碼](../debugger/write-better-code-with-visual-studio.md)
