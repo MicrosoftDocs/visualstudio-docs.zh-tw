@@ -11,15 +11,15 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: aa4b4cdb-e6ea-433a-9579-56f3785e1385
 caps.latest.revision: 13
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9f2e702689e0261012693db47a2743f4c3e58067
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4d0d15c404284dfb40105f7a52cb23aef132f3a9
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49902239"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51764940"
 ---
 # <a name="counter"></a>計數器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

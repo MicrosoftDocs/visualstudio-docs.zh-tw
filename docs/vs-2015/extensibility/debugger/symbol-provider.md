@@ -16,12 +16,12 @@ ms.assetid: 5fce651b-fead-4418-81b0-a011df7644ab
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ec512dc9b200550996e9e82f0c1f3cbd616087d3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 31bfba509081b47988e25beae79529df7f20a760
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49236726"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51758040"
 ---
 # <a name="symbol-provider"></a>符號提供者
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

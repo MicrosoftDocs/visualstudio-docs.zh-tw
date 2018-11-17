@@ -16,12 +16,12 @@ ms.assetid: 7d1ed528-4e7a-4d8f-87b4-162440644a75
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 02adc9deba050de9b0737b14801241236b89bc49
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 88b9fdd5ac8451056454b80ad0262b8aa9bf951b
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49830401"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51759016"
 ---
 # <a name="evaluating-locals"></a>評估區域變數
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

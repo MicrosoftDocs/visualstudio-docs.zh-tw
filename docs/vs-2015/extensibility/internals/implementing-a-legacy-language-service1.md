@@ -15,12 +15,12 @@ ms.assetid: df638f24-166d-4b80-be82-c9c39ca7a556
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7ccc8d23dfb62bcbb5575ea328f74f57f15f6d16
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e5c2a258eb573f0f7d685cdb5a1159df29761944
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49291261"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51765015"
 ---
 # <a name="implementing-a-legacy-language-service"></a>實作舊版語言服務
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

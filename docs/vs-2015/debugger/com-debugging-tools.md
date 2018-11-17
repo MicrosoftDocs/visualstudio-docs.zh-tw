@@ -24,15 +24,15 @@ helpviewer_keywords:
 - debugging [C++], COM
 ms.assetid: 4296ad30-6952-46cb-b002-6b34eee1993a
 caps.latest.revision: 21
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 27721346eb5c8ab4f8700b34c150a9e862b1dbf7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5f177508e1e314da8df8a2123edd91517cdcc935
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49184258"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51737726"
 ---
 # <a name="com-debugging-tools"></a>COM 偵錯工具
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

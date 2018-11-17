@@ -23,15 +23,15 @@ helpviewer_keywords:
 - DCOM, access errors
 ms.assetid: 9d7dfc1b-9fe0-4f54-9c50-9c0e0f8358c5
 caps.latest.revision: 30
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6fa7aca2b86e8cc7c8d9cea4eba27b850d26bc13
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ec23d23934268ebb50699bc1de3d17b75d357d3a
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49825650"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51770280"
 ---
 # <a name="a-dcom-error-occurred-trying-to-contact-the-remote-computer-access-is-denied"></a>嘗試聯繫遠端電腦時，發生 DCOM 錯誤。 存取被拒絕。
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

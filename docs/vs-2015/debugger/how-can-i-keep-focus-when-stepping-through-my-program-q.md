@@ -24,15 +24,15 @@ helpviewer_keywords:
 - windows, troubleshooting activation
 ms.assetid: 11a30580-3a1a-4be8-a241-0abdc758302e
 caps.latest.revision: 21
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 29704c2543981ffd8276575d7f4ecf4fb2cbf957
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 253d331003373138a66fbe1263e6cb71eb126bc0
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49211948"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51792428"
 ---
 # <a name="how-can-i-keep-focus-when-stepping-through-my-program"></a>逐步執行我的程式時，如何保持焦點？
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

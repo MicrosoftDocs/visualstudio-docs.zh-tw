@@ -16,12 +16,12 @@ ms.assetid: cbd345c5-ca43-4630-b7a4-85564f4e2090
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3bb489c33a39e41ec286678f4670cfba2776ef97
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 96b00cfc9965b6006fa51b3cd313566658d604bd
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49284176"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51786154"
 ---
 # <a name="test-area-2-get-from-source-control"></a>測試區域 2︰從原始檔控制中取得
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

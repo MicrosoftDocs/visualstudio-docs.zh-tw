@@ -10,12 +10,12 @@ ms.assetid: ad02477b-e101-4f32-aeb7-292bf95d5c2f
 caps.latest.revision: 4
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9137510f8d6949271a255b14b293f59366048f77
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 31e2edc444e81bbfb23cc70c542c0c7ee8ab8997
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49923442"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51760258"
 ---
 # <a name="upgrading-custom-project-and-item-templates-for-visual-studio-15"></a>適用於 Visual Studio"15"升級自訂專案與項目範本
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

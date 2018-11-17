@@ -21,15 +21,15 @@ helpviewer_keywords:
 - performance tools, sample events
 ms.assetid: ce7cb734-80ac-4930-a4ef-e24395e1cc07
 caps.latest.revision: 28
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0be5c96b1ca131bee9062d4049fbea49a9aec182
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 96bf47c6bfc28e0939f6feb9fd7999e898c042a1
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49228409"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51734505"
 ---
 # <a name="how-to-choose-sampling-events"></a>如何：選擇取樣事件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

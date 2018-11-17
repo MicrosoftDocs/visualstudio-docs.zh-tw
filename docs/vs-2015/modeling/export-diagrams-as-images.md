@@ -13,15 +13,15 @@ helpviewer_keywords:
 - UML diagrams, saving
 ms.assetid: 0df68943-4c60-4f00-b1e8-b1cdee13762e
 caps.latest.revision: 17
-author: alexhomer1
+author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 2ab54543b2f79728f91d530439b6d8474d158347
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 31b7527484bf377433a7fd80b6ccb8e87722c40d
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49266016"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51794422"
 ---
 # <a name="export-diagrams-as-images"></a>將圖表匯出為影像
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

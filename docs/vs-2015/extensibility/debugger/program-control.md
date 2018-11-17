@@ -15,12 +15,12 @@ ms.assetid: 6be80904-e66c-4cae-8891-1113b799fb01
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ef80fcda875b20f7da99d21f57fef740da4c2836
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9a833c8ba19ef71d7bf09e304b49853dd0b90274
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49175613"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51759233"
 ---
 # <a name="program-control"></a>程式控制
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

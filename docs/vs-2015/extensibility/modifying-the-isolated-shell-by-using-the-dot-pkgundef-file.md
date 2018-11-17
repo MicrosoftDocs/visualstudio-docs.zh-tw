@@ -15,12 +15,12 @@ ms.assetid: 9cee2a20-f8ac-4d9d-aef9-068fcd9f27a4
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5663c3e7f8dfb3460e163c851751bde95fb630d2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2266eda9b3e50d85131148d708a934835340f074
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49256421"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51802690"
 ---
 # <a name="modifying-the-isolated-shell-by-using-the-pkgundef-file"></a>藉由修改 Isolated 的 Shell。Pkgundef 檔案
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

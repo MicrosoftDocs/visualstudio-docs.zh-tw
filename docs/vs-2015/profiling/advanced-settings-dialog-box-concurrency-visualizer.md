@@ -13,15 +13,15 @@ f1_keywords:
 - vs.cv.settings
 ms.assetid: bb3d90aa-5f08-4953-9be0-be6cea11633d
 caps.latest.revision: 14
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 052c4c59b72d5d7f5c4722fc32efc9ecedb0556b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5ad91917034dd868aad6c5d78945e4c078fcecee
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49921960"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51749539"
 ---
 # <a name="advanced-settings-dialog-box-concurrency-visualizer"></a>進階設定對話方塊 (並行視覺化檢視)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

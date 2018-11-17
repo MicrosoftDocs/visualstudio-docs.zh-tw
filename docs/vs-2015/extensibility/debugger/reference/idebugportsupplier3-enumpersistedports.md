@@ -17,12 +17,12 @@ ms.assetid: 1c3dead3-5d6c-4067-8418-4015f0b0dd07
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c043b04d908fbd95afcca69fc03627f777c702ed
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9c6378f6957bc61f2f370f137d8d095dbdc380da
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49929266"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51809346"
 ---
 # <a name="idebugportsupplier3enumpersistedports"></a>IDebugPortSupplier3::EnumPersistedPorts
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,16 +32,16 @@ ms.locfileid: "49929266"
 ## <a name="syntax"></a>語法  
   
 ```cpp  
-HRESULT EnumPersistedPorts(  
-   BSTR_ARRAY         PortNames,  
-   IEnumDebugPorts2** ppEnum  
+HRESULT EnumPersistedPorts(  
+   BSTR_ARRAY         PortNames,  
+   IEnumDebugPorts2** ppEnum  
 );  
 ```  
   
 ```csharp  
-int EnumPersistedPorts(  
-   BSTR_ARRAY           PortNames,  
-   out IEnumDebugPorts2 ppEnum  
+int EnumPersistedPorts(  
+   BSTR_ARRAY           PortNames,  
+   out IEnumDebugPorts2 ppEnum  
 );  
 ```  
   

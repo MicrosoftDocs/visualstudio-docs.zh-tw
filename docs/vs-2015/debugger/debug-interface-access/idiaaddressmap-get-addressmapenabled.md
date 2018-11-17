@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaAddressMap::get_addressMapEnabled method
 ms.assetid: 6183dc5e-befa-4e5a-ae5a-f4aa24f3ed9e
 caps.latest.revision: 10
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3107eb28d798030a6753f59c7cd4304765389c7a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 59a3ded58dcec258acdc9620f92ae6a9c653bff7
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49886977"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51754116"
 ---
 # <a name="idiaaddressmapgetaddressmapenabled"></a>IDiaAddressMap::get_addressMapEnabled
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "49886977"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT get_addressMapEnabled (   
+HRESULT get_addressMapEnabled (   
    BOOL* pRetVal  
 );  
 ```  

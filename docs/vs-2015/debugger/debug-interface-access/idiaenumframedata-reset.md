@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaEnumFrameData::Reset method
 ms.assetid: 2242165b-096b-4345-b214-4a8941dc5ba5
 caps.latest.revision: 10
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f0036c6dd38e999523365727522c1cdbfd42244e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 914349d5151e50d4326a17e62574b3c91ef5e28e
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49206241"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51760789"
 ---
 # <a name="idiaenumframedatareset"></a>IDiaEnumFrameData::Reset
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

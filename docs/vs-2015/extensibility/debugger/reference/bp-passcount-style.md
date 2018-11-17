@@ -17,12 +17,12 @@ ms.assetid: 0a647047-e2d5-4724-a0b8-68108425ecad
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a296b9e2b4f11694efef03c200a9d646c342e590
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e71ecf9abbb670a7d50efd24e778a8f86208b0a4
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49836693"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51764506"
 ---
 # <a name="bppasscountstyle"></a>BP_PASSCOUNT_STYLE
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "49836693"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-enum enum_BP_PASSCOUNT_STYLE {   
+enum enum_BP_PASSCOUNT_STYLE {   
    BP_PASSCOUNT_NONE             = 0x0000,  
    BP_PASSCOUNT_EQUAL            = 0x0001,  
    BP_PASSCOUNT_EQUAL_OR_GREATER = 0x0002,  
@@ -42,7 +42,7 @@ typedef DWORD BP_PASSCOUNT_STYLE;
 ```  
   
 ```csharp  
-public enum enum_BP_PASSCOUNT_STYLE {   
+public enum enum_BP_PASSCOUNT_STYLE {   
    BP_PASSCOUNT_NONE             = 0x0000,  
    BP_PASSCOUNT_EQUAL            = 0x0001,  
    BP_PASSCOUNT_EQUAL_OR_GREATER = 0x0002,  

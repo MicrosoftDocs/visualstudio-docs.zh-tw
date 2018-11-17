@@ -18,12 +18,12 @@ ms.assetid: f68671fe-fd7a-4e56-a0b5-330b0f1fedb1
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6c7e3c0804fb354bc1f17fa4769ce118e13b3352
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 62d1a0e78aebd39c1f305c3480d6a418b382b4fd
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49939549"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51781786"
 ---
 # <a name="project-type-design-decisions"></a>專案類型的設計決策
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

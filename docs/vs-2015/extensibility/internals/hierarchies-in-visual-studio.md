@@ -16,12 +16,12 @@ ms.assetid: 0a029a7c-79fd-4b54-bd63-bd0f21aa8d30
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a7ec254b80234b2eec4955cd2b57a641a233b1a2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9d0f5d884f3d1b890aa3faeefa27ec1209af8b91
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49250649"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51741801"
 ---
 # <a name="hierarchies-in-visual-studio"></a>Visual Studio 中的階層
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

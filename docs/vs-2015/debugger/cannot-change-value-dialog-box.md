@@ -21,15 +21,15 @@ helpviewer_keywords:
 - variables [debugger], editing
 ms.assetid: 19e930c2-5fbf-4c83-aae8-a1dc3f8fcae8
 caps.latest.revision: 12
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cde574c1148af649fe421313cb943e1cebb1e221
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 19ef7640939ba1ad9a22dcf519636c64df011394
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49254718"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51782397"
 ---
 # <a name="cannot-change-value-dialog-box"></a>無法變更值對話方塊
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

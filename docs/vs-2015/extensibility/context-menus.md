@@ -15,12 +15,12 @@ ms.assetid: 44fd9e6a-6d42-4aba-80ba-f37fa0070f1d
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e4b53174776b93d94c38982a430db3213ba184b9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: efd4e1c80b9af2a0d73730f0bd7d741cd877fb07
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49207723"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51796840"
 ---
 # <a name="context-menus"></a>操作功能表
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

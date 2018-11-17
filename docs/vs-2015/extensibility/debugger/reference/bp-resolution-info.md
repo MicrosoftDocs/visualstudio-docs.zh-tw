@@ -17,12 +17,12 @@ ms.assetid: ba0c162a-61e8-4a0b-811f-4c1d8a5d82f0
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c56a50489a863239b9830e930d669a821eb2c68d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7f721c28c8ea0d86cbae7ea09b9648720b89d52b
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49811474"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51764196"
 ---
 # <a name="bpresolutioninfo"></a>BP_RESOLUTION_INFO
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "49811474"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-typedef struct _BP_RESOLUTION_INFO {   
+typedef struct _BP_RESOLUTION_INFO {   
    BPRESI_FIELDS          dwFields;  
    BP_RESOLUTION_LOCATION bpResLocation;  
    IDebugProgram2*        pProgram;  
@@ -41,7 +41,7 @@ typedef struct _BP_RESOLUTION_INFO {
 ```  
   
 ```csharp  
-public struct BP_RESOLUTION_INFO {   
+public struct BP_RESOLUTION_INFO {   
    public uint                   dwFields;  
    public BP_RESOLUTION_LOCATION bpResLocation;  
    public IDebugProgram2         pProgram;  

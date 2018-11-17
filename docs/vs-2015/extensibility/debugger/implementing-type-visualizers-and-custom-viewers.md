@@ -16,12 +16,12 @@ ms.assetid: abef18c0-8272-4451-b82a-b4624edaba7d
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 15860e6716d30b19d2223faa8b6bb13aa0eaa466
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 11d047904e932646eedc974a50590dbe0a9ea99e
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49838734"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51791276"
 ---
 # <a name="implementing-type-visualizers-and-custom-viewers"></a>實作類型視覺化檢視和自訂檢視器
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

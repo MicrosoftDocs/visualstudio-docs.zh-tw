@@ -17,12 +17,12 @@ ms.assetid: aee34a14-4f9c-4ad3-845f-c96ee938cefd
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4b975e1749a79cf90c1bcf5b18118dffd43c7607
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 53aed36550393d7bdc90c11ff1875d7c5b6e39f6
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49186782"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51756988"
 ---
 # <a name="idebugthreadcreateevent2"></a>IDebugThreadCreateEvent2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "49186782"
 ## <a name="syntax"></a>語法  
   
 ```  
-IDebugThreadCreateEvent2 : IUnknown  
+IDebugThreadCreateEvent2 : IUnknown  
 ```  
   
 ## <a name="notes-for-implementers"></a>實作者的附註  

@@ -18,12 +18,12 @@ ms.assetid: 0930640b-eb84-48ef-a8f7-d4268f55c99c
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 28e78a76c0288cece3c42212a036ff326840b5bd
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f7d55c0eca82859afcdaaaa5f1bc4072dfad5b59
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49829205"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51778978"
 ---
 # <a name="intellisensehostflags"></a>IntelliSenseHostFlags
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

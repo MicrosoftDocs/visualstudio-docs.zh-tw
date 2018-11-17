@@ -17,12 +17,12 @@ ms.assetid: fe9ef6b6-4690-4c2c-872c-301c980d17fe
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f77b8dd1f28431665aae5d6c64da58d038a156b3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 36aa6df6c0b904ad11f0027c4e01368a9c864b8a
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49300947"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51781660"
 ---
 # <a name="implementing-single-file-generators"></a>實作單一檔案產生器
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaSectionContrib::get_virtualAddress method
 ms.assetid: e5b44a81-0804-429b-97d8-467cbba3132a
 caps.latest.revision: 12
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 750f56bfe4645a6e80f6d929bd915ba8d7164363
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b958f1db406cfe160a00e223f14868b99f42619a
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49813605"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51797373"
 ---
 # <a name="idiasectioncontribgetvirtualaddress"></a>IDiaSectionContrib::get_virtualAddress
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "49813605"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT get_virtualAddress (   
+HRESULT get_virtualAddress (   
    ULONGLONG* pRetVal  
 );  
 ```  

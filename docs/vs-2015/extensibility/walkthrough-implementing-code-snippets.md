@@ -13,12 +13,12 @@ ms.assetid: adbc5382-d170-441c-9fd0-80faa1816478
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 466da4dcf71284bcbe52bd1cffbf2ab15ade13a3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6fe91fd4e80c14e9b4cf59136fa6d3e0e003f554
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49812721"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51752055"
 ---
 # <a name="walkthrough-implementing-code-snippets"></a>逐步解說︰實作程式碼片段
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

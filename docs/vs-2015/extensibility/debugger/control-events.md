@@ -15,12 +15,12 @@ ms.assetid: 0fc63484-5fb6-4887-9ea4-1905b459ca9d
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: cb3332ead5928be9127d64c3870b3212cd6754fe
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0b8b1d7ed1ad36735bb0973701b2d6f9ddcf3e1d
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49837902"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51754756"
 ---
 # <a name="control-events"></a>控制項事件
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

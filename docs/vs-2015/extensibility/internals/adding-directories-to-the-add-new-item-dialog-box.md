@@ -15,12 +15,12 @@ ms.assetid: 67ae8af6-3752-49e8-8ce3-007aca5f7982
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6094c4c42b4745bd68c17fe15798020215db4f0d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d094f9911b80f3cff3e648da2593c62e0429fb54
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49300231"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51751494"
 ---
 # <a name="adding-directories-to-the-add-new-item-dialog-box"></a>將目錄新增至新增項目對話方塊
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

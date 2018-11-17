@@ -18,15 +18,15 @@ helpviewer_keywords:
 - profiling tools, using windows counters
 ms.assetid: db4fbac2-bea5-4558-aa8b-160fcccf4b33
 caps.latest.revision: 18
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7dfaed19949dac532949e1d4a10bb744ec464580
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 030a36f2f09465b29faf23b1fc05ad13f4a01326
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49227327"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51770499"
 ---
 # <a name="how-to-collect-windows-counter-data"></a>如何：收集 Windows 計數器資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

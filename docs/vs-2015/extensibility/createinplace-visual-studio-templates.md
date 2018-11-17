@@ -18,12 +18,12 @@ ms.assetid: 420d46ea-2470-4da9-ad8e-95165588a920
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 785e68329b358568f08a0e8c06d94182a5be263e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9bc14bd5cae376c23ece97cdb7a780a1ae7354e6
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49180774"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51751299"
 ---
 # <a name="createinplace-visual-studio-templates"></a>CreateInPlace (Visual Studio 範本)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

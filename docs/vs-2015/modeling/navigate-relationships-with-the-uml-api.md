@@ -11,15 +11,15 @@ helpviewer_keywords:
 - UML API
 ms.assetid: a4d11d45-b8c0-40f9-a597-363f07659610
 caps.latest.revision: 15
-author: alexhomer1
+author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: c2d4365cefc33b81f8df3891b860e254c7dc6b8b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0f8d1392bebf4d2591bbd7e4dc7bd8755c09f2c2
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49242498"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51740544"
 ---
 # <a name="navigate-relationships-with-the-uml-api"></a>使用 UML API 巡覽關聯性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

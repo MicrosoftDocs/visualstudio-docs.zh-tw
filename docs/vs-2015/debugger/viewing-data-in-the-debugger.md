@@ -25,15 +25,15 @@ helpviewer_keywords:
 - debugger, viewing data
 ms.assetid: 13e1105f-f987-402e-9108-ec6ac12be042
 caps.latest.revision: 33
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d6d90342e97e4e331cacd87adf33d9cc7e434576
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b5409f74a3e6be8f075155a2f87a35006209ea24
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49204356"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51793096"
 ---
 # <a name="viewing-data-in-the-debugger"></a>在偵錯工具中檢視資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

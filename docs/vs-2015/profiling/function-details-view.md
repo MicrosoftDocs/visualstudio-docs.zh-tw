@@ -16,15 +16,15 @@ helpviewer_keywords:
 - Profiling Tools, Function Details view
 ms.assetid: 8806954f-cf28-48d5-81b2-d722ceaf7d27
 caps.latest.revision: 19
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c60ca5c0e073aa3643d6f77fa1350aaa4cdce837
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e6f2246cfe9eb2ae9ae6641ca316db440f153f92
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49812266"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51799583"
 ---
 # <a name="function-details-view"></a>函式詳細資料檢視
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

@@ -13,12 +13,12 @@ ms.assetid: c0cc5e08-4897-44f2-8309-e3478f1f999e
 caps.latest.revision: 6
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 24c09b4010be419a48d686aa0ec377d04eae68f4
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 945ae5b3cf6cd8769795c31a10a4f51e1f7eccb6
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49262440"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51773297"
 ---
 # <a name="creating-an-extension-with-a-vspackage"></a>使用 VSPackage 建立延伸模組
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

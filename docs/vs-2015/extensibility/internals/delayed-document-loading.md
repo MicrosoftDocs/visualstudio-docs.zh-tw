@@ -13,12 +13,12 @@ ms.assetid: fb07b8e2-a4e3-4cb0-b04f-8eb11c491f35
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d20147480f13e30d6f996d5e0d39ae3703ad7412
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 94d79af00fced81dc7da38f323598ade926d26f4
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49859944"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51755480"
 ---
 # <a name="delayed-document-loading"></a>已延遲載入文件
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

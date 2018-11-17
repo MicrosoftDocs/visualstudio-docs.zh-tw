@@ -17,12 +17,12 @@ ms.assetid: bd08f356-cc67-4717-98c9-c3d00cad2040
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9287ccac278e1d020d7068f594063c60c3e9f629
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 88eb8160e265c51e40b3d96be7e9c1d187e8a861
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49931658"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51793187"
 ---
 # <a name="idebugproperty3destroyobjectid"></a>IDebugProperty3::DestroyObjectID
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,13 +32,13 @@ ms.locfileid: "49931658"
 ## <a name="syntax"></a>語法  
   
 ```cpp  
-HRESULT DestroyObjectID(  
+HRESULT DestroyObjectID(  
    void  
 );  
 ```  
   
 ```csharp  
-int DestroyObjectID();  
+int DestroyObjectID();  
 ```  
   
 ## <a name="return-value"></a>傳回值  

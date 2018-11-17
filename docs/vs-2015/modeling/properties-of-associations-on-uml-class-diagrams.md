@@ -13,15 +13,15 @@ helpviewer_keywords:
 - UML, element properties
 ms.assetid: f82bcd34-7903-4c00-8da1-613efa07d223
 caps.latest.revision: 26
-author: alexhomer1
+author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 4614eff754166842044a70fe61f59b62c4843500
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b132ee2aa0f67662fcfcad92b8ae945c2d66c680
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49817908"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51810277"
 ---
 # <a name="properties-of-associations-on-uml-class-diagrams"></a>UML 類別圖上的關聯性屬性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

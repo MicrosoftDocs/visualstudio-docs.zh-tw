@@ -16,12 +16,12 @@ ms.assetid: 75a046cc-d20a-4c79-ad2d-1f18426ac5d0
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8b20ac5b76dfcd24e0dbed5fbc08720c33d88fdd
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b53be5e09d4579d95cb4b9d9726d6087effb8ff1
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49254081"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51797386"
 ---
 # <a name="deleting-a-breakpoint"></a>刪除中斷點
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

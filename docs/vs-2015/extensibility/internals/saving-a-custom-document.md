@@ -17,12 +17,12 @@ ms.assetid: 040b36d6-1f0a-4579-971c-40fbb46ade1d
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1402dd3ed2acf6c4801953c59f14d2454b95c01d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5d292cc60b782f8036367c72bf0e59e8b83d5191
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49235725"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51764247"
 ---
 # <a name="saving-a-custom-document"></a>儲存自訂文件
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

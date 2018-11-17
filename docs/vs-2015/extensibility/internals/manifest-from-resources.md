@@ -10,12 +10,12 @@ ms.assetid: 0234109b-5dcb-4d9d-acb9-a63f8bd5699c
 caps.latest.revision: 5
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b18e81cfa265f79e05f1cfb1dcfbca1f348b341d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d442686ab588932cac077a0b5fdc09a1a746c3d3
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49252430"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51771857"
 ---
 # <a name="manifest-from-resources"></a>來自資源的資訊清單
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

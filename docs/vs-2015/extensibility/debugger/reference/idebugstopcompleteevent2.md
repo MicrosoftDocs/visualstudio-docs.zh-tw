@@ -15,12 +15,12 @@ ms.assetid: ff3e89f4-61bb-489d-901c-447260100218
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e30b59968fb8eca14d462ce34d12378132771b68
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b64c9719c6d2975829451dbf11cf584f98805c1b
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49195204"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51780473"
 ---
 # <a name="idebugstopcompleteevent2"></a>IDebugStopCompleteEvent2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

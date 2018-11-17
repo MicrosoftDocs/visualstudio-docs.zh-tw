@@ -17,12 +17,12 @@ ms.assetid: d713635e-088f-465b-b26d-00ac971c9e86
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ecb0e0c56278665913600157ce1738e773cc890f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5426a09148742d23b4181c5d96e85e608ae9637f
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49907023"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51771438"
 ---
 # <a name="idebugdocumentposition2getfilename"></a>IDebugDocumentPosition2::GetFileName
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,13 +32,13 @@ ms.locfileid: "49907023"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT GetFileName(   
+HRESULT GetFileName(   
    BSTR* pbstrFileName  
 );  
 ```  
   
 ```csharp  
-int GetFileName(   
+int GetFileName(   
    out string pbstrFileName  
 );  
 ```  

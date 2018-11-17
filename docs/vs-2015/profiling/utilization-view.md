@@ -15,15 +15,15 @@ helpviewer_keywords:
 - Concurrency Visualizer, CPU Utilization View
 ms.assetid: b4f7ceab-3653-4069-bb74-c309aec62866
 caps.latest.revision: 26
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d97037974c4a416a7d558f7eee85c3b835db8698
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f50c78aa9f9bad18c65658f01aa93c1e6944aa74
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49198727"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51761555"
 ---
 # <a name="utilization-view"></a>使用率檢視
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

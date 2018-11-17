@@ -15,12 +15,12 @@ ms.assetid: 08526848-a442-4cd4-afa1-b2eac2005adb
 caps.latest.revision: 47
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ea320b18dc9164c0cbf87cbccf1c33ea7fab2230
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e64d50dcd56f1421e4ffe1ab33b5396c436eeeda
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49185584"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51773037"
 ---
 # <a name="walkthrough-using-a-shell-command-with-an-editor-extension"></a>逐步解說︰搭配編輯器延伸模組使用 Shell 命令
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -115,7 +115,7 @@ ms.locfileid: "49185584"
 4.  此檔案應包含類別，名為`CommentAdornment`。  
   
     ```  
-    internal class CommentAdornment  
+    internal class CommentAdornment  
     ```  
   
 5.  新增三個欄位，來`CommentAdornment`類別的<xref:Microsoft.VisualStudio.Text.ITrackingSpan>，作者和描述。  
@@ -168,9 +168,9 @@ ms.locfileid: "49185584"
     ```csharp  
     private Geometry textGeometry;  
     private Grid commentGrid;  
-    private static Brush brush;  
-    private static Pen solidPen;  
-    private static Pen dashPen;  
+    private static Brush brush;  
+    private static Pen solidPen;  
+    private static Pen dashPen;  
     ```  
   
 5.  新增的建構函式定義註解 adornment 並加入相關的文字。  
@@ -245,7 +245,7 @@ ms.locfileid: "49185584"
 6.  也會實作<xref:System.Windows.Controls.Panel.OnRender%2A>繪製裝飾的事件處理常式。  
   
     ```csharp  
-    protected override void OnRender(DrawingContext dc)  
+    protected override void OnRender(DrawingContext dc)  
     {  
         base.OnRender(dc);  
         if (this.textGeometry != null)  
@@ -282,7 +282,7 @@ ms.locfileid: "49185584"
 4.  實作<xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener.TextViewCreated%2A>方法，因此它會呼叫靜態`Create()`事件的`CommentAdornmentManager`。  
   
     ```csharp  
-    public void TextViewCreated(IWpfTextView textView)  
+    public void TextViewCreated(IWpfTextView textView)  
     {  
         CommentAdornmentManager.Create(textView);  
     }  
@@ -291,16 +291,16 @@ ms.locfileid: "49185584"
 5.  加入的方法，您可以使用來執行命令。  
   
     ```csharp  
-    static public void Execute(IWpfTextViewHost host)  
+    static public void Execute(IWpfTextViewHost host)  
     {  
         IWpfTextView view = host.TextView;  
-        //Add a comment on the selected text.   
+        //Add a comment on the selected text.   
         if (!view.Selection.IsEmpty)  
         {  
             //Get the provider for the comment adornments in the property bag of the view.  
             CommentAdornmentProvider provider = view.Properties.GetProperty<CommentAdornmentProvider>(typeof(CommentAdornmentProvider));  
   
-            //Add some arbitrary author and comment text.   
+            //Add some arbitrary author and comment text.   
             string author = System.Security.Principal.WindowsIdentity.GetCurrent().Name;  
             string comment = "Four score....";  
   
@@ -362,7 +362,7 @@ ms.locfileid: "49185584"
     private CommentAdornmentProvider(ITextBuffer buffer)  
     {  
         this.buffer = buffer;  
-        //listen to the Changed event so we can react to deletions.   
+        //listen to the Changed event so we can react to deletions.   
         this.buffer.Changed += OnBufferChanged;  
     }  
   
@@ -371,9 +371,9 @@ ms.locfileid: "49185584"
 6.  加入 `Create()` 方法。  
   
     ```csharp  
-    public static CommentAdornmentProvider Create(IWpfTextView view)  
+    public static CommentAdornmentProvider Create(IWpfTextView view)  
     {  
-        return view.Properties.GetOrCreateSingletonProperty<CommentAdornmentProvider>(delegate { return new CommentAdornmentProvider(view.TextBuffer); });  
+        return view.Properties.GetOrCreateSingletonProperty<CommentAdornmentProvider>(delegate { return new CommentAdornmentProvider(view.TextBuffer); });  
     }  
   
     ```  
@@ -381,11 +381,11 @@ ms.locfileid: "49185584"
 7.  加入 `Detach()` 方法。  
   
     ```csharp  
-    public void Detach()  
+    public void Detach()  
     {  
         if (this.buffer != null)  
         {  
-            //remove the Changed listener   
+            //remove the Changed listener   
             this.buffer.Changed -= OnBufferChanged;  
             this.buffer = null;  
         }  
@@ -395,15 +395,15 @@ ms.locfileid: "49185584"
 8.  新增`OnBufferChanged`事件處理常式。  
   
     ```csharp  
-    private void OnBufferChanged(object sender, TextContentChangedEventArgs e)  
+    private void OnBufferChanged(object sender, TextContentChangedEventArgs e)  
     {  
         //Make a list of all comments that have a span of at least one character after applying the change. There is no need to raise a changed event for the deleted adornments. The adornments are deleted only if a text change would cause the view to reformat the line and discard the adornments.  
         IList<CommentAdornment> keptComments = new List<CommentAdornment>(this.comments.Count);  
   
-        foreach (CommentAdornment comment in this.comments)  
+        foreach (CommentAdornment comment in this.comments)  
         {  
             Span span = comment.Span.GetSpan(e.After);  
-            //if a comment does not span at least one character, its text was deleted.   
+            //if a comment does not span at least one character, its text was deleted.   
             if (span.Length != 0)  
             {  
                 keptComments.Add(comment);  
@@ -421,25 +421,25 @@ ms.locfileid: "49185584"
 9. 加入宣告`CommentsChanged`事件。  
   
     ```csharp  
-    public event EventHandler<CommentsChangedEventArgs> CommentsChanged;  
+    public event EventHandler<CommentsChangedEventArgs> CommentsChanged;  
     ```  
   
 10. 建立`Add()`將裝飾的方法。  
   
     ```csharp  
-    public void Add(SnapshotSpan span, string author, string text)  
+    public void Add(SnapshotSpan span, string author, string text)  
     {  
         if (span.Length == 0)  
-            throw new ArgumentOutOfRangeException("span");  
+            throw new ArgumentOutOfRangeException("span");  
         if (author == null)  
-            throw new ArgumentNullException("author");  
+            throw new ArgumentNullException("author");  
         if (text == null)  
-            throw new ArgumentNullException("text");  
+            throw new ArgumentNullException("text");  
   
         //Create a comment adornment given the span, author and text.  
         CommentAdornment comment = new CommentAdornment(span, author, text);  
   
-        //Add it to the list of comments.   
+        //Add it to the list of comments.   
         this.comments.Add(comment);  
   
         //Raise the changed event.  
@@ -453,19 +453,19 @@ ms.locfileid: "49185584"
 11. 新增`RemoveComments()`方法。  
   
     ```csharp  
-    public void RemoveComments(SnapshotSpan span)  
+    public void RemoveComments(SnapshotSpan span)  
     {  
         EventHandler<CommentsChangedEventArgs> commentsChanged = this.CommentsChanged;  
   
         //Get a list of all the comments that are being kept   
         IList<CommentAdornment> keptComments = new List<CommentAdornment>(this.comments.Count);  
   
-        foreach (CommentAdornment comment in this.comments)  
+        foreach (CommentAdornment comment in this.comments)  
         {  
-            //find out if the given span overlaps with the comment text span. If two spans are adjacent, they do not overlap. To consider adjacent spans, use IntersectsWith.   
+            //find out if the given span overlaps with the comment text span. If two spans are adjacent, they do not overlap. To consider adjacent spans, use IntersectsWith.   
             if (comment.Span.GetSpan(span.Snapshot).OverlapsWith(span))  
             {  
-                //Raise the change event to delete this comment.   
+                //Raise the change event to delete this comment.   
                 if (commentsChanged != null)  
                     commentsChanged(this, new CommentsChangedEventArgs(null, comment));  
             }  
@@ -483,24 +483,24 @@ ms.locfileid: "49185584"
     public Collection<CommentAdornment> GetComments(SnapshotSpan span)  
     {  
         IList<CommentAdornment> overlappingComments = new List<CommentAdornment>();  
-        foreach (CommentAdornment comment in this.comments)  
+        foreach (CommentAdornment comment in this.comments)  
         {  
             if (comment.Span.GetSpan(span.Snapshot).OverlapsWith(span))  
                 overlappingComments.Add(comment);  
         }  
   
-        return new Collection<CommentAdornment>(overlappingComments);  
+        return new Collection<CommentAdornment>(overlappingComments);  
     }  
     ```  
   
 13. 新增類別，名為`CommentsChangedEventArgs`、，如下所示。  
   
     ```csharp  
-    internal class CommentsChangedEventArgs : EventArgs  
+    internal class CommentsChangedEventArgs : EventArgs  
     {  
-        public readonly CommentAdornment CommentAdded;  
+        public readonly CommentAdornment CommentAdded;  
   
-        public readonly CommentAdornment CommentRemoved;  
+        public readonly CommentAdornment CommentRemoved;  
   
         public CommentsChangedEventArgs(CommentAdornment added, CommentAdornment removed)  
         {  
@@ -537,9 +537,9 @@ ms.locfileid: "49185584"
 4.  加入一些私用欄位。  
   
     ```csharp  
-    private readonly IWpfTextView view;  
-    private readonly IAdornmentLayer layer;  
-    private readonly CommentAdornmentProvider provider;  
+    private readonly IWpfTextView view;  
+    private readonly IAdornmentLayer layer;  
+    private readonly CommentAdornmentProvider provider;  
     ```  
   
 5.  加入訂閱的管理員的建構函式<xref:Microsoft.VisualStudio.Text.Editor.ITextView.LayoutChanged>並<xref:Microsoft.VisualStudio.Text.Editor.ITextView.Closed>事件，並且透過`CommentsChanged`事件。 建構函式是私用，因為 「 管理員 」 會具現化由靜態`Create()`方法。  
@@ -561,22 +561,22 @@ ms.locfileid: "49185584"
 6.  新增`Create()`方法，可取得提供者，或如有需要，會建立一個。  
   
     ```csharp  
-    public static CommentAdornmentManager Create(IWpfTextView view)  
+    public static CommentAdornmentManager Create(IWpfTextView view)  
     {  
-        return view.Properties.GetOrCreateSingletonProperty<CommentAdornmentManager>(delegate { return new CommentAdornmentManager(view); });  
+        return view.Properties.GetOrCreateSingletonProperty<CommentAdornmentManager>(delegate { return new CommentAdornmentManager(view); });  
     }  
     ```  
   
 7.  新增`CommentsChanged`處理常式。  
   
     ```csharp  
-    private void OnCommentsChanged(object sender, CommentsChangedEventArgs e)  
+    private void OnCommentsChanged(object sender, CommentsChangedEventArgs e)  
     {  
-        //Remove the comment (when the adornment was added, the comment adornment was used as the tag).   
+        //Remove the comment (when the adornment was added, the comment adornment was used as the tag).   
         if (e.CommentRemoved != null)  
             this.layer.RemoveAdornmentsByTag(e.CommentRemoved);  
   
-        //Draw the newly added comment (this will appear immediately: the view does not need to do a layout).   
+        //Draw the newly added comment (this will appear immediately: the view does not need to do a layout).   
         if (e.CommentAdded != null)  
             this.DrawComment(e.CommentAdded);  
     }  
@@ -585,7 +585,7 @@ ms.locfileid: "49185584"
 8.  新增<xref:Microsoft.VisualStudio.Text.Editor.ITextView.Closed>處理常式。  
   
     ```csharp  
-    private void OnClosed(object sender, EventArgs e)  
+    private void OnClosed(object sender, EventArgs e)  
     {  
         this.provider.Detach();  
         this.view.LayoutChanged -= OnLayoutChanged;  
@@ -596,19 +596,19 @@ ms.locfileid: "49185584"
 9. 新增<xref:Microsoft.VisualStudio.Text.Editor.ITextView.LayoutChanged>處理常式。  
   
     ```csharp  
-    private void OnLayoutChanged(object sender, TextViewLayoutChangedEventArgs e)  
+    private void OnLayoutChanged(object sender, TextViewLayoutChangedEventArgs e)  
     {  
         //Get all of the comments that intersect any of the new or reformatted lines of text.  
         List<CommentAdornment> newComments = new List<CommentAdornment>();  
   
-        //The event args contain a list of modified lines and a NormalizedSpanCollection of the spans of the modified lines.    
-        //Use the latter to find the comments that intersect the new or reformatted lines of text.   
+        //The event args contain a list of modified lines and a NormalizedSpanCollection of the spans of the modified lines.    
+        //Use the latter to find the comments that intersect the new or reformatted lines of text.   
         foreach (Span span in e.NewOrReformattedSpans)  
         {  
             newComments.AddRange(this.provider.GetComments(new SnapshotSpan(this.view.TextSnapshot, span)));  
         }  
   
-        //It is possible to get duplicates in this list if a comment spanned 3 lines, and the first and last lines were modified but the middle line was not.   
+        //It is possible to get duplicates in this list if a comment spanned 3 lines, and the first and last lines were modified but the middle line was not.   
         //Sort the list and skip duplicates.  
         newComments.Sort(delegate(CommentAdornment a, CommentAdornment b) { return a.GetHashCode().CompareTo(b.GetHashCode()); });  
   

@@ -16,12 +16,12 @@ ms.assetid: ba5c364b-66e6-47ea-9760-a0b70de8f0a0
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e8831517b7b679762e12356927b39e244a2a5dd1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8bb8a1861d6162e73906d74250f738ff96b9a505
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49305394"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51757915"
 ---
 # <a name="custom-parameters"></a>自訂參數
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

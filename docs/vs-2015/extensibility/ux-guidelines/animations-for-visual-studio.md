@@ -13,12 +13,12 @@ ms.assetid: 446773a9-e6f7-4c0c-8dbc-9e303bf32eb1
 caps.latest.revision: 3
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3ba2f13ff484f73a7455089ccf2689037eabebdc
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a88bb3a0ffd0e372f5e15adedb39f1a6d2cab8d7
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49824395"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51803106"
 ---
 # <a name="animations-for-visual-studio"></a>適用於 Visual Studio 的動畫
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

@@ -15,12 +15,12 @@ ms.assetid: 404a71d5-cce5-44e7-9eaf-d747c794fedb
 caps.latest.revision: 5
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3c5e1cba339ab89957a942968acbb88f2204a6af
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 03faec8cdb79dcaf8bc074328da84af77d1cb17c
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49907855"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51766877"
 ---
 # <a name="adding-an-attribute-to-a-project-item"></a>將屬性新增至專案項目
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,14 +38,14 @@ ms.locfileid: "49907855"
     EnvDTE.Project project = dte.Solution.Projects.Item(1);  
   
     string uniqueName = project.UniqueName;  
-    IVsSolution solution =     (IVsSolution)Package.GetGlobalService(typeof(SVsSolution));  
+    IVsSolution solution =     (IVsSolution)Package.GetGlobalService(typeof(SVsSolution));  
     IVsHierarchy hierarchy;  
     solution.GetProjectOfUniqueName(uniqueName, out hierarchy);  
     IVsBuildPropertyStorage buildPropertyStorage = hierarchy as IVsBuildPropertyStorage;  
     if (buildPropertyStorage != null)  
     {  
         uint itemId;  
-        string fullPath =         (string)project.ProjectItems.Item("Program.cs").Properties.Item("FullPath").Value;  
+        string fullPath =         (string)project.ProjectItems.Item("Program.cs").Properties.Item("FullPath").Value;  
         hierarchy.ParseCanonicalName(fullPath, out itemId);  
         buildPropertyStorage.SetItemAttribute(  
             itemId, "MyAttribute", "MyValue");  

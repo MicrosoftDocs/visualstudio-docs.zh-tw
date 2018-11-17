@@ -18,12 +18,12 @@ ms.assetid: 2f9a9720-c1ac-4430-8f28-200d85360452
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 098e3a50fd0274382646ab141315ad0d7983e524
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 36ebe62cf005a537b3f7e9cbe35ffe7e8904b758
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49827410"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51781969"
 ---
 # <a name="idebugpendingbreakpoint2enumerrorbreakpoints"></a>IDebugPendingBreakpoint2::EnumErrorBreakpoints
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -33,14 +33,14 @@ ms.locfileid: "49827410"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT EnumErrorBreakpoints(   
+HRESULT EnumErrorBreakpoints(   
    BP_ERROR_TYPE                 bpErrorType,  
    IEnumDebugErrorBreakpoints2** ppEnum  
 );  
 ```  
   
 ```csharp  
-int EnumErrorBreakpoints(   
+int EnumErrorBreakpoints(   
    enum_BP_ERROR_TYPE              bpErrorType,  
    out IEnumDebugErrorBreakpoints2 ppEnum  
 );  

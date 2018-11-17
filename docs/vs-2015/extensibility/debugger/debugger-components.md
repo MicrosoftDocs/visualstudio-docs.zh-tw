@@ -17,12 +17,12 @@ ms.assetid: 8b8ab77f-a134-495c-be42-3bc51aa62dfb
 caps.latest.revision: 31
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5603450bdc761626a55f34813dc46cb8141da7be
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: aabd6311212b866b9171758c8bec39e3beebbfea
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49811863"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51797490"
 ---
 # <a name="debugger-components"></a>偵錯工具元件
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

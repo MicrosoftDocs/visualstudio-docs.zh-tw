@@ -23,12 +23,12 @@ caps.latest.revision: 28
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 72c71ae80dfd44752e03f1d4fd7fd384adc13dfc
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 57052bea5a22347dccb4fa44de2eaf864fbbd998
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49812877"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51755784"
 ---
 # <a name="microsoft-language-interface-packs-lips-and-visual-studio"></a>Microsoft 語言介面套件 (LIP) 和 Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

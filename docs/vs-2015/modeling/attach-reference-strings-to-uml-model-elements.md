@@ -11,15 +11,15 @@ helpviewer_keywords:
 - UML - extending, reference strings
 ms.assetid: 15dbed99-efce-42fe-a768-714a5804e7d1
 caps.latest.revision: 11
-author: alexhomer1
+author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 4f62c99f09638127f42f1f8e36594e60a58d3b2b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: cf8a9e7e023e9c75f61fdf9a6bfb608edc3a7123
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49243850"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51804575"
 ---
 # <a name="attach-reference-strings-to-uml-model-elements"></a>將參考字串附加至 UML 模型項目
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

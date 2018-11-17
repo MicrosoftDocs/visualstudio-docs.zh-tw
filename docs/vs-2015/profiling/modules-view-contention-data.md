@@ -13,15 +13,15 @@ helpviewer_keywords:
 - Modules view
 ms.assetid: 1a9aa122-2d8f-4a09-b503-92975aa6b648
 caps.latest.revision: 17
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4461795294df4824d2af2c8ada02e2f5929e0c47
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9c98689007a9497a4186dc19086ec46588b0a842
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49305991"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51759400"
 ---
 # <a name="modules-view---contention-data"></a>模組檢視 - 爭用資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

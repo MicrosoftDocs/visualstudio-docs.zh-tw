@@ -17,12 +17,12 @@ ms.assetid: d692fedf-b46e-4d60-84bd-578635042235
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 78fd77e9a5a898b31ff296f471e308706c09ba8f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 72415a4ddfa3de9511aab4b52ae37960af872fde
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49908090"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51803574"
 ---
 # <a name="saving-a-standard-document"></a>儲存標準文件
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

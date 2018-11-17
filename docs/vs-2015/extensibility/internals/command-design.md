@@ -16,12 +16,12 @@ ms.assetid: 097108c3-f758-4b87-89d6-b32d12d9041a
 caps.latest.revision: 35
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: eacde73ded992eb72396cdb5f84dc01b145cf874
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9aed86eef616702363a661ece0ab565a768f2f75
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49949262"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51750125"
 ---
 # <a name="command-design"></a>命令設計
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

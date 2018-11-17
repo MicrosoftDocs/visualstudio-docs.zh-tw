@@ -24,15 +24,15 @@ helpviewer_keywords:
 - C, code analysis
 ms.assetid: 81f0c9e8-f471-4de5-aac4-99db336a8809
 caps.latest.revision: 27
-author: corob-msft
-ms.author: gewarren
+author: mikeblome
+ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 42de573efcc44437eddf0e7d098681d05c094131
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f7261b0bab423aa851b44ec725ca1c2818da9319
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49222036"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51763572"
 ---
 # <a name="code-analysis-for-cc-overview"></a>C/C++ 程式碼分析概觀
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

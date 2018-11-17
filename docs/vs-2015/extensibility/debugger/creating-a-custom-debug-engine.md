@@ -17,12 +17,12 @@ ms.assetid: 52794238-6fae-451c-bf1c-99f344c6f173
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: acacb3b990b94e7bf4ed2a3a13d3b29031102a20
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 516fda63a1a36e407a71cd6711ecdfabdc1e5e58
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49237701"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51784687"
 ---
 # <a name="creating-a-custom-debug-engine"></a>建立自訂的偵錯引擎
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

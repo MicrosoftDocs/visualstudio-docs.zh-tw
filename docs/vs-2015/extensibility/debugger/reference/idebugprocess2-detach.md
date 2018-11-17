@@ -17,12 +17,12 @@ ms.assetid: ee2b9084-2db1-4e49-a1d9-387284b7c3f8
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e34fa470b419a8bf63bfdfb8e2dce78e7a81fa24
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: fde2e5b22fc778ffa4dd18f94bf6c1174987f985
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49906275"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51774922"
 ---
 # <a name="idebugprocess2detach"></a>IDebugProcess2::Detach
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,8 +32,8 @@ ms.locfileid: "49906275"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT Detach(   
-   void   
+HRESULT Detach(   
+   void   
 );  
 ```  
   

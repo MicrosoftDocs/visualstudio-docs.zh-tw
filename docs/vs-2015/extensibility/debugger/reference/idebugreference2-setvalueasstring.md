@@ -17,12 +17,12 @@ ms.assetid: 9a508ced-fd54-44f5-bb42-ec15c80384d7
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 459a86b2e1d760eedf5d1034f095000fc4da5571
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: aec57f4348f14e972d22ed8644f8eae42713bc25
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49880617"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51757553"
 ---
 # <a name="idebugreference2setvalueasstring"></a>IDebugReference2::SetValueAsString
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "49880617"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT SetValueAsString (   
+HRESULT SetValueAsString (   
    LPCOLESTR pszValue,  
    DWORD     dwRadix,  
    DWORD     dwTimeout  
@@ -40,7 +40,7 @@ HRESULT SetValueAsString (
 ```  
   
 ```csharp  
-int SetValueAsString (   
+int SetValueAsString (   
    string pszValue,  
    uint   dwRadix,  
    uint   dwTimeout  

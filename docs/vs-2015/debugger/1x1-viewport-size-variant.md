@@ -11,15 +11,15 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 3dbc3247-00f5-4644-8ff9-72e9febcf09a
 caps.latest.revision: 9
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ea21a12cb8bf1b37524a4b563c70a43eeed6f7f2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5280ed07d1799346b173ccac0f0186cd2bdca992
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49184869"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51777600"
 ---
 # <a name="1x1-viewport-size-variant"></a>1x1 Viewport 大小變異
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

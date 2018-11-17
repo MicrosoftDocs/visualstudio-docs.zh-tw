@@ -10,12 +10,12 @@ ms.assetid: 359184aa-f5b6-4b6c-99fe-104655b3a494
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c3fb7c8ba5ad0a4992368b2dba9da2d2b09c7980
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 542676de0efabcfa58945fc1572fc5539f52c209
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49884275"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51752526"
 ---
 # <a name="addressing-dpi-issues"></a>處理 DPI 問題
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

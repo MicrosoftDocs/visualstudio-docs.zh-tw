@@ -30,15 +30,15 @@ helpviewer_keywords:
 - remote debugging, errors
 ms.assetid: f62e378a-3a99-4f78-9d97-8bb63a4da181
 caps.latest.revision: 40
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ccfce76d1cedacecdc467971151a6f9a66d5af68
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 168aaff6e7165c0566b198dab22174b14dad9949
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49217876"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51779290"
 ---
 # <a name="error-unable-to-start-debugging-on-the-web-server"></a>錯誤：無法在 Web 伺服器上啟動偵錯
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

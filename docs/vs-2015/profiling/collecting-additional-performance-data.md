@@ -11,15 +11,15 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 8c0ea5c6-74a4-4a23-89ca-8d589364079f
 caps.latest.revision: 17
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a72898b7880900a9c767ba765dc7fe7da74904fe
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4079942f9be683ac50be8dbf73fef127852a6c68
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49198714"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51782943"
 ---
 # <a name="collecting-additional-performance-data"></a>收集其他效能資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

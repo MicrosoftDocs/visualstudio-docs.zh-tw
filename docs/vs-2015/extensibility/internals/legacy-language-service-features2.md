@@ -15,12 +15,12 @@ ms.assetid: 97c38622-ae0b-4ae0-90ed-604072c298d3
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2e815790cd485c729d5c58847f5a244c8689d3ff
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: eedd4162f45f5e1a68aea92af7c4f3cf71171cee
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49246632"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51761505"
 ---
 # <a name="legacy-language-service-features"></a>舊版語言服務功能
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

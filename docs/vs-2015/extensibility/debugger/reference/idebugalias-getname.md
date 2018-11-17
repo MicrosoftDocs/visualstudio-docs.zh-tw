@@ -17,12 +17,12 @@ ms.assetid: ac2d8891-56b5-40ef-9866-ed74f18bb043
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ca06eb0b1769d48b206b9c8f1b2e3ae5e012cc9f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8f0e8c57f8ed011f732bdabbe04a720b98da90b5
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49935519"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51742694"
 ---
 # <a name="idebugaliasgetname"></a>IDebugAlias::GetName
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,14 +32,14 @@ ms.locfileid: "49935519"
 ## <a name="syntax"></a>語法  
   
 ```cpp  
-HRESULT GetName(  
-   BSTR* pbstrName  
+HRESULT GetName(  
+   BSTR* pbstrName  
 );  
 ```  
   
 ```csharp  
-int GetName(  
-   out string pbstrName  
+int GetName(  
+   out string pbstrName  
 );  
 ```  
   

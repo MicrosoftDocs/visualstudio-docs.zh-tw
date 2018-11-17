@@ -15,15 +15,15 @@ helpviewer_keywords:
 - Threads view
 ms.assetid: abfb4e9e-1622-47c9-afda-b6b71a9d88e4
 caps.latest.revision: 9
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1adef2aeda5385fae1e3603127e3eea3f5ad109b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 14b5038ef2512631c929dddb9262f2eec91f4485
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49943033"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51770586"
 ---
 # <a name="threads-view"></a>執行緒檢視
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
