@@ -17,12 +17,12 @@ ms.assetid: cb8441f2-f744-4e73-acfe-ae8542df9649
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1cc163ac902d96491623b1f2a24477dac83d5704
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ff04acfc408454d20013c46247525f9374d42764
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49818935"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51782488"
 ---
 # <a name="stepunit"></a>STEPUNIT
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "49818935"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-enum enum_STEPUNIT {   
+enum enum_STEPUNIT {   
    STEP_STATEMENT   = 0,  
    STEP_LINE        = 1,  
    STEP_INSTRUCTION = 2  
@@ -41,7 +41,7 @@ typedef DWORD STEPUNIT;
 ```  
   
 ```csharp  
-enum enum_STEPUNIT {   
+enum enum_STEPUNIT {   
    STEP_STATEMENT   = 0,  
    STEP_LINE        = 1,  
    STEP_INSTRUCTION = 2  

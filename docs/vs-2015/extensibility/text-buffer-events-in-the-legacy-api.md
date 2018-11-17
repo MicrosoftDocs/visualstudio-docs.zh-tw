@@ -15,12 +15,12 @@ ms.assetid: 9be49e9f-1864-41c2-8a3c-f66895881341
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8c3db7d7a4b2c52e4b831078f789dea75c73b337
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 677824142f2e7e497888627041cfe7a82487d342
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49218721"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51735506"
 ---
 # <a name="text-buffer-events-in-the-legacy-api"></a>在舊版 API 中的文字緩衝區事件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

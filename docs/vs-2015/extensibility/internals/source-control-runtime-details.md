@@ -15,12 +15,12 @@ ms.assetid: 1acd30e0-f98c-4bde-b9cd-4076845887df
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 38b086f578d71c291ef12cb7b90e3ba1ce1ee89f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b3db90aaaccefb940c9cdea773b5b18f41f60d5d
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49212429"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51756599"
 ---
 # <a name="source-control-runtime-details"></a>原始檔控制的執行階段詳細資料
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

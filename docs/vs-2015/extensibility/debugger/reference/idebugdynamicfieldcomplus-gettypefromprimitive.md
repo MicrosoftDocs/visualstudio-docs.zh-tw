@@ -16,12 +16,12 @@ ms.assetid: d7f51e2a-1b72-489c-b7b6-4af7b7e4d663
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f704c5b4fff01555d9e681d27d3b48544bb09bfd
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2f909d8cf11b65e00722c1cd459bc1ec6efabadd
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49859732"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51754939"
 ---
 # <a name="idebugdynamicfieldcomplusgettypefromprimitive"></a>IDebugDynamicFieldCOMPlus::GetTypeFromPrimitive
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

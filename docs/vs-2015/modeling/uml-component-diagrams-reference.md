@@ -19,15 +19,15 @@ helpviewer_keywords:
 - component diagrams
 ms.assetid: 5eddff6a-892a-4c3c-9278-687ac1eccc50
 caps.latest.revision: 38
-author: alexhomer1
+author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 322fb842f3e4ea5aa8afbec7835dc0bedc38f55b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0e77008d59543b0001f97b37933ff1073e488a33
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49829452"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51728115"
 ---
 # <a name="uml-component-diagrams-reference"></a>UML 元件圖表：參考
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

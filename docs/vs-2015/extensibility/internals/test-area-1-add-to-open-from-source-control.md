@@ -16,12 +16,12 @@ ms.assetid: 5b3b5b08-5e9b-41be-ac72-c63957faed22
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a4a79bc38227728a5881c973ed26baa375d082ba
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1ab1a267984f1a50cfd8e95cc8217572c0dacbcf
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49178915"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51746654"
 ---
 # <a name="test-area-1-add-toopen-from-source-control"></a>測試區域 1： 新增 / 開啟從原始檔控制
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

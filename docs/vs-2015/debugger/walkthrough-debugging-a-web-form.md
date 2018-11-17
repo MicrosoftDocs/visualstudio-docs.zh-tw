@@ -25,15 +25,15 @@ helpviewer_keywords:
 - debugging [Visual Studio], Web Forms
 ms.assetid: e2b4fa14-8f5b-444d-a903-54070b784bd4
 caps.latest.revision: 34
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f8cbda461c4472ed020087e7e606b1ab86ddb6b9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7024a9abc58117bf28ed78de107b1c17ddad601f
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49275128"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51747264"
 ---
 # <a name="walkthrough-debugging-a-web-form"></a>逐步解說：偵錯 Web Form
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaEnumDebugStreamData::get_Name method
 ms.assetid: e6cf2bed-ee2b-4122-886d-c20d93df7ff2
 caps.latest.revision: 10
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4c553d16c8f1d98fc95e42bca4d00c063228ca1c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: dcac7d43caf26d8f9bde9d3c24ae54b8a3716a54
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49865800"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51728858"
 ---
 # <a name="idiaenumdebugstreamdatagetname"></a>IDiaEnumDebugStreamData::get_name
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "49865800"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT get_Name (   
+HRESULT get_Name (   
    BSTR * pRetVal  
 )  
 ```  

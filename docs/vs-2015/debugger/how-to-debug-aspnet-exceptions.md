@@ -20,15 +20,15 @@ helpviewer_keywords:
 - exceptions, ASP.NET
 ms.assetid: 1810096e-de8c-435e-be3d-f365d0cd0a6a
 caps.latest.revision: 26
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a08e382ed9d97aa659012934d3edef45151e10ad
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3d505e67018c24f659e88401b565011a4c7bea96
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49178525"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51789209"
 ---
 # <a name="how-to-debug-aspnet-exceptions"></a>如何：偵錯 ASP.NET 例外狀況
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

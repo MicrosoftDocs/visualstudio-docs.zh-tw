@@ -12,15 +12,15 @@ helpviewer_keywords:
 - layer models, deploying extensions
 ms.assetid: 00a4675b-d20e-487e-8fd5-be2b1e0ba238
 caps.latest.revision: 29
-author: alexhomer1
+author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: cb6644b45e2256aa3fdc24ccd8e6d14095f72e13
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a31413f5332ddfec8dc6021da85e2135d691f930
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49907244"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51735114"
 ---
 # <a name="deploy-a-layer-model-extension"></a>部署圖層模型擴充功能
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

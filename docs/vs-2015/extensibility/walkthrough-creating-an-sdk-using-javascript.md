@@ -13,12 +13,12 @@ ms.assetid: a8c89d5d-5b78-4435-817f-c5f25ca6d715
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c9b495ed1bc5ada2adaa26e8382e23d9071eeab3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7d82e40de93a8b3323dbd03d9b76e935a1d303b0
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49931268"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51781045"
 ---
 # <a name="walkthrough-creating-an-sdk-using-javascript"></a>逐步解說：使用 JavaScript 建立 SDK
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

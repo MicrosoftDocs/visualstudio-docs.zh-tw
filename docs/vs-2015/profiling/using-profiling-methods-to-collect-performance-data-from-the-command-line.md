@@ -11,15 +11,15 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 5613fafc-f298-4e7a-9a2d-a853b61cdf9c
 caps.latest.revision: 19
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0c86132b2ad4677733eebbb50c78f185ff0c9871
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d853322762942e874528b35164dc3f04a6c22b0a
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49175361"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51722758"
 ---
 # <a name="using-profiling-methods-to-collect-performance-data-from-the-command-line"></a>從命令列使用程式碼剖析方法收集效能資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

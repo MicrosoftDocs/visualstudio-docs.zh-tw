@@ -23,15 +23,15 @@ helpviewer_keywords:
 - visualizers, writing
 ms.assetid: 625a0d4f-abcc-43f2-9f8c-31c131a4378e
 caps.latest.revision: 27
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1243c9d26e25bd76a7e8b3518484671bdd973fb9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2c7f1fa96bba40e5e56ca7f054b683b3243de65b
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49841867"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51724890"
 ---
 # <a name="how-to-write-a-visualizer"></a>如何：撰寫視覺化檢視
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

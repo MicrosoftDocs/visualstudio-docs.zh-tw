@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaSectionContrib::get_code16bit method
 ms.assetid: 8cde8fc5-9546-4f82-b4a8-afd0d835039e
 caps.latest.revision: 10
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 000bed489a2d43c48dabc9e341f454f5f236408f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4a7b05974e5a93f3fda2ddef3bdcee6158a6303f
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49889442"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51733957"
 ---
 # <a name="idiasectioncontribgetcode16bit"></a>IDiaSectionContrib::get_code16bit
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

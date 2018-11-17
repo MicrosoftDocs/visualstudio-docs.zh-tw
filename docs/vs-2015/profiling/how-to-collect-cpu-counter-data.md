@@ -16,15 +16,15 @@ helpviewer_keywords:
 - performance tools, portable CPU counters
 ms.assetid: 102fb6ca-5fbf-4b05-925f-56912ce3f44b
 caps.latest.revision: 26
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 89750ad7ee47f1238d75d3c51ae0b6ee291944fe
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 46ade222b6032baca17afe37d72dd6e5657ae1c2
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49940940"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51763389"
 ---
 # <a name="how-to-collect-cpu-counter-data"></a>如何：收集 CPU 計數器資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

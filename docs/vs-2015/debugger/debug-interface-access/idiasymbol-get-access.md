@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaSymbol::get_access method
 ms.assetid: 908976ae-95c4-4020-89c9-de137f727f98
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9718d07b996f13d3439ca9d4c069022cd6c35828
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4be9dabc485c135113ef3d746ec59b6e15f94139
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49868868"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51776248"
 ---
 # <a name="idiasymbolgetaccess"></a>IDiaSymbol::get_access
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "49868868"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT get_access (   
+HRESULT get_access (   
    DWORD* pRetVal  
 );  
 ```  

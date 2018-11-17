@@ -16,12 +16,12 @@ ms.assetid: 6b8579df-58df-4c7f-8112-6015993e8765
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 33ca3287b6408541f64152609a6f33b4eac03632
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0596809ceccd3d528e3276f2ed310a4835c836eb
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49180748"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51738767"
 ---
 # <a name="implementing-a-port-supplier"></a>實作連接埠提供者
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

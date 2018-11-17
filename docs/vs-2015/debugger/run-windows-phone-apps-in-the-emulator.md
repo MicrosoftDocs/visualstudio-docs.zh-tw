@@ -16,15 +16,15 @@ dev_langs:
 - C++
 ms.assetid: c7590788-beb3-403c-a7dd-18472a9e585e
 caps.latest.revision: 12
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5027c9d40d37aeaee6186662567a009fb051900e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e7035e4a77b67fb5207f878c8e0650236afda7c6
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49812604"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51739977"
 ---
 # <a name="run-windows-phone-apps-in-the-emulator"></a>在模擬器中執行 Windows Phone 應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

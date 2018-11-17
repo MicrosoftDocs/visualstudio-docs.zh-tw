@@ -18,15 +18,15 @@ helpviewer_keywords:
 - debugging, .NET Framework source
 ms.assetid: fc12e472-ac6a-4e77-8e22-a769e13a03b8
 caps.latest.revision: 15
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a4dd181a31f8fb092dc8b9156cb9a05a53ecf7e9
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: ce5e20524040d131a655da1567606ffbb0934a80
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50218405"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51725427"
 ---
 # <a name="how-to-debug-net-framework-source"></a>如何：偵錯 .NET Framework 原始檔
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

@@ -18,12 +18,12 @@ ms.assetid: deb27180-2035-49ed-b835-c47bb3cd2f8f
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2e72ad9bafbef9ae7138ca77055d7db9e7cc2575
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8f8b9ba0902b193bb630e99a7908818688c25fd1
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49238026"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51778679"
 ---
 # <a name="projectcollection-element-visual-studio-templates"></a>ProjectCollection 項目 (Visual Studio 範本)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

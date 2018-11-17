@@ -18,15 +18,15 @@ helpviewer_keywords:
 - profiling tools, instrumented binaries
 ms.assetid: 258f49e8-4b09-477e-a132-8fad685b66f4
 caps.latest.revision: 23
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6d0ddfb3cd52e212965ebf928bf087519f38b0bf
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 012236c9d3d02f498843f7a185efdd07c6e96a4d
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49240977"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51770851"
 ---
 # <a name="how-to-relocate-instrumented-binaries"></a>如何：重新配置所檢測的二進位檔
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

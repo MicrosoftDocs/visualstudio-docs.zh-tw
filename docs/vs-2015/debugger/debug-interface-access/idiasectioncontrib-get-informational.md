@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaSectionContrib::get_informational method
 ms.assetid: 5351e89f-7db1-4f8e-9e57-2dd1c74002e0
 caps.latest.revision: 8
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 51ff0d775e06a870eb47f6c5df8a7d0cf54d3e1e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: fcadd756ab9bea1d02dddb79728dcc68be8220b7
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49922207"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51788442"
 ---
 # <a name="idiasectioncontribgetinformational"></a>IDiaSectionContrib::get_informational
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

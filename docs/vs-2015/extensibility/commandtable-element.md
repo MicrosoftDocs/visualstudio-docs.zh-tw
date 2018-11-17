@@ -18,12 +18,12 @@ ms.assetid: 15c38159-660a-4ef4-9643-aa6fcfca82a9
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ce1d7b431e7918c172947c508ae06e5770877ea6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1adc3e8f8c7894cfb3a55617ce594f52a60f2498
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49863499"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51817369"
 ---
 # <a name="commandtable-element"></a>CommandTable 項目
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

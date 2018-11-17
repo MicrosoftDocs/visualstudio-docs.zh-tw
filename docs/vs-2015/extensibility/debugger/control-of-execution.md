@@ -15,12 +15,12 @@ ms.assetid: 97071846-007e-450f-95a6-f072d0f5e61e
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6e49e2dbefda04688e77c234c1df06bdb65c66d7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f4fe5259d49424fa1d46ea1ef33c0808dfc7b7be
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49827351"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51776365"
 ---
 # <a name="control-of-execution"></a>控制執行
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

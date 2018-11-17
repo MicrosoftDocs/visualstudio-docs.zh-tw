@@ -15,12 +15,12 @@ ms.assetid: 9c1d940f-8a54-41f7-a8aa-c870e324371c
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 994ccaff3bebfddb20c7de4dba550d1154699485
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c04f760adc61b011acd51d9bdcdf7275ec6b6a28
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49277845"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51759036"
 ---
 # <a name="project-types-architecture"></a>專案類型架構
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

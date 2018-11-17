@@ -18,15 +18,15 @@ helpviewer_keywords:
 - instrumentation, VSPerfReporttool
 ms.assetid: dbfd8d91-4430-4b82-81b9-97ac61412a6c
 caps.latest.revision: 37
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e90a81832a73c172695bc771fc1dc833bd8c4e20
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 12b76923a0687125643f95228397d3051cb08c5b
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49269239"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51806824"
 ---
 # <a name="vsperfreport"></a>VSPerfReport
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

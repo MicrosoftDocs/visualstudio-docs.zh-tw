@@ -18,12 +18,12 @@ ms.assetid: 1ca1736a-f554-42e4-a9c7-fe8c3c1717df
 caps.latest.revision: 29
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5c938f6d4a08e164638e70be969fe310fe2a324c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 20655534439fa187488087e1ae819a7ffca4c27a
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49223492"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51730277"
 ---
 # <a name="syntax-colorizing-in-a-legacy-language-service"></a>舊版語言服務中的語法上色
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

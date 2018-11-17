@@ -15,12 +15,12 @@ ms.assetid: b2e53175-9372-4d17-8c2b-9264c9e51e9c
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b7e9ce7df2adc05468a27de5f4eaac52c68a07e7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: eb4db6bb361a47ca7c4d974950a99f4f1e9f395b
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49215887"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51766569"
 ---
 # <a name="contributing-to-the-add-new-item-dialog-box"></a>參與新增項目對話方塊
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

@@ -17,12 +17,12 @@ ms.assetid: 86596fd1-cecc-4813-8add-dc3d70068f9b
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b5acafe1c58d8a7fee276cd193034a5b24302604
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1a9d9ed78b1b6f97f21fdbb0126db68707e4ea90
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49182984"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51725895"
 ---
 # <a name="idebugoutputstringevent2"></a>IDebugOutputStringEvent2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

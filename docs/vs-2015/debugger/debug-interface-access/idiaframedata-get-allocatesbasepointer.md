@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaFrameData::get_allocatesBasePointer method
 ms.assetid: 8a33db5d-008c-4fe5-b64f-210c9b77f686
 caps.latest.revision: 12
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f4546c052845b7fe1024d3a923a845feda26eaf0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c4f4e9e43e3e3957f9315a2b3dd1b03301c8ed29
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49932061"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51771934"
 ---
 # <a name="idiaframedatagetallocatesbasepointer"></a>IDiaFrameData::get_allocatesBasePointer
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "49932061"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT get_allocatesBasePointer (   
+HRESULT get_allocatesBasePointer (   
    BOOL* pRetVal  
 );  
 ```  

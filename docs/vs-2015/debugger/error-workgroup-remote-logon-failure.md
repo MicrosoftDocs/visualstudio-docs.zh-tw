@@ -25,15 +25,15 @@ helpviewer_keywords:
 - remote debugging, logon failure
 ms.assetid: 7be2c5bb-40fe-48d6-8cfc-c231fbd3d64e
 caps.latest.revision: 22
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 489fb331f08c95bf26a9b99c1143575aaa44257f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b13531d3a9dd5249b0c96ddc4e8f736c20696303
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49236024"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51723659"
 ---
 # <a name="error-workgroup-remote-logon-failure"></a>錯誤：工作群組遠端登入失敗
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

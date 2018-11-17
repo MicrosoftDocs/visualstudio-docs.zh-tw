@@ -15,15 +15,15 @@ helpviewer_keywords:
 - StackFrameTypeEnum enumeration
 ms.assetid: 61e40163-eee0-4c1f-af47-cef3771bdc41
 caps.latest.revision: 10
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 32f4f4082c68b455baeb00c8e0364999b606473c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: de80fd054459556e273427b666175751ced203fe
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49950169"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51740375"
 ---
 # <a name="stackframetypeenum"></a>StackFrameTypeEnum
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

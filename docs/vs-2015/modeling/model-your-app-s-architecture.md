@@ -11,15 +11,15 @@ helpviewer_keywords:
 - UML, modeling architecture
 ms.assetid: aedce746-9df5-49e1-9662-67eb1b83d313
 caps.latest.revision: 21
-author: alexhomer1
+author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 7300af951a50fb463453e83041d0651ac2c62cef
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 770f93c0ede93201ee873820d6701356837f4ea9
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49835249"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51803847"
 ---
 # <a name="model-your-app39s-architecture"></a>模型化應用程式&#39;s 架構
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
