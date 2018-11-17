@@ -11,15 +11,15 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 24b22ad9-5ad0-4161-809a-9b518eb924bf
 caps.latest.revision: 8
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e235fbca747cf8e7a78c7923bd2a0985cbdffc34
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: bf00bf536e5f1ee140a818ee59c66703906860f0
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49300324"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51727645"
 ---
 # <a name="16bpp-render-target-format-variant"></a>16bpp 呈現目標格式變異
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
