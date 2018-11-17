@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaStackFrame::get_returnAddress method
 ms.assetid: 0df91981-919f-48ed-9c70-4121567d645b
 caps.latest.revision: 14
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1b07fd0a949ef3f54deea58f46644e425c0d338c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7ed69647d904711840ae03598a1db24d5548ef06
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49902278"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51817847"
 ---
 # <a name="idiastackframegetreturnaddress"></a>IDiaStackFrame::get_returnAddress
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "49902278"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT get_returnAddress (   
+HRESULT get_returnAddress (   
    ULONGLONG* pRetVal  
 );  
 ```  

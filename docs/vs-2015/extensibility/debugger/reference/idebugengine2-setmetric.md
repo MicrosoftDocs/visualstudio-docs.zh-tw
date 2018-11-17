@@ -17,12 +17,12 @@ ms.assetid: dcda4972-c32e-4693-a0e1-25d5c58b9782
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2b5e0738e278a76fc21158f3733fcdbdc9198ca9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a8b2b8eff691767b47c83f4ef248c08b2d5a1a80
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49934076"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51743685"
 ---
 # <a name="idebugengine2setmetric"></a>IDebugEngine2::SetMetric
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,9 +32,9 @@ ms.locfileid: "49934076"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT SetMetric(  
-   LPCOLESTR pszMetric,  
-   VARIANT   varValue  
+HRESULT SetMetric(  
+   LPCOLESTR pszMetric,  
+   VARIANT   varValue  
 );  
 ```  
   

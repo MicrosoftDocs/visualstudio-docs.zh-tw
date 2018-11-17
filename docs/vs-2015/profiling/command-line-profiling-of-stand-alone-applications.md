@@ -14,15 +14,15 @@ helpviewer_keywords:
 - profling stand-alone applications
 ms.assetid: a47f2bf2-186d-4120-bb79-34e2f3a1ee42
 caps.latest.revision: 21
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0eb4f54c562ea9812c2196c53775b0acd872f877
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d2879ecfe22722b3a3c2f5fc836ec9874f7acdf2
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49252209"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51756448"
 ---
 # <a name="command-line-profiling-of-stand-alone-applications"></a>獨立應用程式的命令列分析
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

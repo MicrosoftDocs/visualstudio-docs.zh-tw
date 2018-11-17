@@ -16,15 +16,15 @@ dev_langs:
 - C++
 ms.assetid: c763d706-3213-494f-b4d2-990b6e1ec456
 caps.latest.revision: 10
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4642fa76a9891d07e927fa37650976180568f7a8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 755c4a0b66c91aa37f96d3d6f06972878ee856b8
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49249947"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51771614"
 ---
 # <a name="getting-started-with-the-debugger"></a>開始使用偵錯工具
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

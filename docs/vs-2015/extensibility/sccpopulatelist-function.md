@@ -17,12 +17,12 @@ ms.assetid: 7416e781-c571-4a7f-8af3-a089ce8be662
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: efdb79b765dc515fd1239a633a50684b2bfe9cd0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: fccf5ba354a99eaef6968c5d5027e8540762af75
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49816140"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51798894"
 ---
 # <a name="sccpopulatelist-function"></a>SccPopulateList 函式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

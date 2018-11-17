@@ -16,12 +16,12 @@ ms.assetid: 5ef63399-d2db-4dc1-97ce-be1bd4ef4e39
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 32e1e5f4c5bf236ec1c38f6a0a5314eb278a59f8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 98140c90288d8a65d22996940300a82b5e070308
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49272190"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51809918"
 ---
 # <a name="command-flag-element"></a>Command Flag 項目
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

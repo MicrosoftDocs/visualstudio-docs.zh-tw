@@ -15,15 +15,15 @@ f1_keywords:
 - vs.performance.rules.DA0503
 ms.assetid: 9047a494-eaaf-4679-b422-c64e8bde77a4
 caps.latest.revision: 13
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 75d27084ec0d086770db088db9708d5ea4608066
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6f13dc584c8865fa2caa502db0708a27c5d1a8f3
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49181716"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51816927"
 ---
 # <a name="da0503-average-working-set-in-bytes-for-the-process-being-profiled"></a>DA0503：進行程式碼剖析之處理序的平均工作集 (以位元組為單位)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

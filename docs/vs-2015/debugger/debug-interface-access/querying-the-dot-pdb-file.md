@@ -16,15 +16,15 @@ helpviewer_keywords:
 - .pdb files, querying
 ms.assetid: 8da07d1c-2712-45f9-8fbf-f34040408a8a
 caps.latest.revision: 13
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7d056224d23f487abf25776a52ca80079c08a9f5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f82180427155a364ad4240eeede0503e99857f80
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49236063"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51793252"
 ---
 # <a name="querying-the-pdb-file"></a>查詢 .Pdb 檔案
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

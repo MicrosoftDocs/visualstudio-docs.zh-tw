@@ -16,12 +16,12 @@ ms.assetid: 1bccaeb3-8109-4128-ae79-16fd8fbbaaa2
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1647eff0d9bd4ab281e0862388c6b99d120245c1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 757e74a9dde1c580a6116342948edd4eb42f9ca3
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49306639"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51737886"
 ---
 # <a name="expression-evaluator-implementation-strategy"></a>運算式評估工具的實作策略
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

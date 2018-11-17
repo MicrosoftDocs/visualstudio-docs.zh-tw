@@ -13,15 +13,15 @@ f1_keywords:
 - vs.cv.markers.flag
 ms.assetid: f3ec919e-63e5-484b-adbf-8f0e79342e75
 caps.latest.revision: 14
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: be38217610c94f269bc334e7441456f9b1bd1c18
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c4d1e5c119c5402501efaafcdccd9c3d0885ce75
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49180813"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51803197"
 ---
 # <a name="flag-markers"></a>旗標標記
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

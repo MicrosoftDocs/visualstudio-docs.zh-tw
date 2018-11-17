@@ -17,15 +17,15 @@ helpviewer_keywords:
 - performance sessions, options
 ms.assetid: 639afe26-8335-4bd4-8aa5-f2c607b81f07
 caps.latest.revision: 21
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d7988eb9c3a4893e4a74021a094bf877f1fe32fd
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a8e8fa3029f98084645bc56e490a93d5d8880b06
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49254315"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51743056"
 ---
 # <a name="how-to-specify-additional-instrumentation-options"></a>如何：指定其他的檢測選項
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

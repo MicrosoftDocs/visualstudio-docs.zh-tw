@@ -15,12 +15,12 @@ ms.assetid: f8d68c3d-9134-4a8f-b566-485956cd321e
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ca63b6a8c973b33a9dffc98966fd0622c0a5407a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e567fc212b9981d925fc11e8e0ae48132b3b05bf
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49868426"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51816810"
 ---
 # <a name="elements-of-the-isolated-shell"></a>Isolated Shell 的項目
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

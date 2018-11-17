@@ -18,12 +18,12 @@ ms.assetid: 8145d875-26b1-4049-a2a2-e7d3d7f4735f
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3a6fb56cb6e5d96f2e48af17578f4964948662bc
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ced00e9dcb05d75267d64a316732dec8f0f59ffd
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49906270"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51758790"
 ---
 # <a name="idebugboundbreakpoint2sethitcount"></a>IDebugBoundBreakpoint2::SetHitCount
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -33,13 +33,13 @@ ms.locfileid: "49906270"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT SetHitCount(   
+HRESULT SetHitCount(   
    DWORD dwHitCount  
 );  
 ```  
   
 ```csharp  
-int SetHitCount(   
+int SetHitCount(   
    uint dwHitCount  
 );  
 ```  

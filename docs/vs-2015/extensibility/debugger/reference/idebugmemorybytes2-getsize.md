@@ -18,12 +18,12 @@ ms.assetid: dae64c5f-5b54-40c3-b32f-ec3b16c093f7
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2fa4e9de3063c67939a14f693307ebd19481d551
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a935de0d2c0b44a93f99f834cb9ae598e3dec519
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49843612"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51810022"
 ---
 # <a name="idebugmemorybytes2getsize"></a>IDebugMemoryBytes2::GetSize
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "49843612"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT GetSize(   
+HRESULT GetSize(   
    UINT64* pqwSize  
 );  
 ```  

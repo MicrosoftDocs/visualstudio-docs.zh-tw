@@ -15,15 +15,15 @@ helpviewer_keywords:
 - Concurrency Visualizer, Export Button (Concurrency Visualizer)
 ms.assetid: 68550095-8a69-48ee-bb7e-eb5504810578
 caps.latest.revision: 8
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4c85d005aa7fbb0b7b9287cd6e390b7dde0fc94a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3a13ac093535cb26687348d4dad2a32e64afe25b
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49297657"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51816641"
 ---
 # <a name="export-button-concurrency-visualizer"></a>匯出按鈕 (並行視覺化檢視)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

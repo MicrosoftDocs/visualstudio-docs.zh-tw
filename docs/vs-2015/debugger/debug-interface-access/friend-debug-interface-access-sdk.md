@@ -17,15 +17,15 @@ helpviewer_keywords:
 - Friend symbol
 ms.assetid: 5147a170-41ce-4727-8ace-c318e8d11647
 caps.latest.revision: 19
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d1135380ee2bffb06bf7edc27b0253d1244922e0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f1e3262757df304bfdacc7ec7000dfd9ecdf2e92
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49190121"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51782319"
 ---
 # <a name="friend-debug-interface-access-sdk"></a>friend (偵錯介面存取 SDK)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

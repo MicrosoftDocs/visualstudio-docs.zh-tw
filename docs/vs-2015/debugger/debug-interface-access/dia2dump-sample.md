@@ -16,15 +16,15 @@ helpviewer_keywords:
 - Dia2dump sample [DIA SDK]
 ms.assetid: 492c0893-7043-452f-a020-890a47230d20
 caps.latest.revision: 15
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8d2f2dab085476a3800308c5214053c8919e84d4
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 727d7a4a97bc0aa55d370a45549941ab286930f9
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49300816"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51805394"
 ---
 # <a name="dia2dump-sample"></a>Dia2dump 範例
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

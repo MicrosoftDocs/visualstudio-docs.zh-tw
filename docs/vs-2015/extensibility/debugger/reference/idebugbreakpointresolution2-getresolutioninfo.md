@@ -17,12 +17,12 @@ ms.assetid: 828cbdf6-b87d-4c45-be87-d87087b04a60
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 91382aa3dca2950a689d7cdecdf2735ed6d5f2cb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: eb697fdbe079f5540bbd6e53e418cef86a46d721
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49948521"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51742680"
 ---
 # <a name="idebugbreakpointresolution2getresolutioninfo"></a>IDebugBreakpointResolution2::GetResolutionInfo
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,14 +32,14 @@ ms.locfileid: "49948521"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT GetResolutionInfo(   
+HRESULT GetResolutionInfo(   
    BPRESI_FIELDS       dwFields,  
    BP_RESOLUTION_INFO* pBPResolutionInfo  
 );  
 ```  
   
 ```csharp  
-int GetResolutionInfo(   
+int GetResolutionInfo(   
    enum BPRESI_FIELDS   dwFields,  
    BP_RESOLUTION_INFO[] pBPResolutionInfo  
 );  
