@@ -17,12 +17,12 @@ ms.assetid: 08aa6a3f-3e5f-4c83-8eca-7b7b5f8e208d
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: edc77eb589370df81c38027b7cb13a223aff1227
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 10018ef629709e853eede741ab26a15fcab56cad
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49863460"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51752126"
 ---
 # <a name="bpstate"></a>BP_STATE
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "49863460"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-enum enum_BP_STATE {   
+enum enum_BP_STATE {   
    BPS_NONE     = 0x0000,  
    BPS_DELETED  = 0x0001,  
    BPS_DISABLED = 0x0002,  
@@ -42,7 +42,7 @@ typedef DWORD BP_STATE;
 ```  
   
 ```csharp  
-public enum enum_BP_STATE {   
+public enum enum_BP_STATE {   
    BPS_NONE     = 0x0000,  
    BPS_DELETED  = 0x0001,  
    BPS_DISABLED = 0x0002,  

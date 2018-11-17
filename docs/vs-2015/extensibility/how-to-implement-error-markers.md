@@ -15,12 +15,12 @@ ms.assetid: e8e78514-5720-4fc2-aa43-00b6af482e38
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f1ced074e3257bee41cb9ffcc33279e17b148bbf
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3e4dd15f4cbb36ef1f81d3b7ca345a6a06bdaff4
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49838279"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51736191"
 ---
 # <a name="how-to-implement-error-markers"></a>如何： 實作錯誤標記
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

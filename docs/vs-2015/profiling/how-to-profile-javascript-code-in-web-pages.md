@@ -15,15 +15,15 @@ helpviewer_keywords:
 - web site performance profiling
 ms.assetid: 37d02aad-ca4d-4eb0-bf66-ca3ecef31fbe
 caps.latest.revision: 32
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c1fd8a4e06db5eb56b8f218ee8e1667d8eb59632
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8f9def923e0cc012a37c02d24b67e807668ae976
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49872105"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51792108"
 ---
 # <a name="how-to-profile-javascript-code-in-web-pages"></a>如何：分析網頁中的 JavaScript 程式碼
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

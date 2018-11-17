@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaSymbol::get_notReached method
 ms.assetid: e44ba922-6cda-40c2-9b62-44e5a8628e63
 caps.latest.revision: 10
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c53ae8e65861b657fa2d908ae57cbf569e51479f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 17109c26a57d38669488467e8fe536c7e8a81f06
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49933751"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51790496"
 ---
 # <a name="idiasymbolgetnotreached"></a>IDiaSymbol::get_notReached
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

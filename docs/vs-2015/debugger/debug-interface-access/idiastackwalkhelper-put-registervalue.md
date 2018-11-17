@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaStackWalkHelper2::put_registerValue method
 ms.assetid: 8f02ce54-ef59-455f-8aa6-dc26761c7aff
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4256e281bb2b0a83660f1bb0aac11543d25a3eb9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2fea0ac7d3c7124ce3b38da2a57fd291b6c7cf2b
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49865423"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51805641"
 ---
 # <a name="idiastackwalkhelperputregistervalue"></a>IDiaStackWalkHelper::put_registerValue
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "49865423"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT put_registerValue (   
+HRESULT put_registerValue (   
    DWORD     index,  
    ULONGLONG NewVal  
 );  

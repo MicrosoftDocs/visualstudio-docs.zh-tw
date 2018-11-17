@@ -15,12 +15,12 @@ ms.assetid: 666b9116-8550-4bdd-bc15-55fc57de87df
 caps.latest.revision: 25
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c2ef86b1985f71b1f6ea53106c4818e09a7f43b0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ea9a80bf469d0555b07d48ca48b158027c90abb7
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49831811"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51764793"
 ---
 # <a name="core-interfaces"></a>核心介面
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

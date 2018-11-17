@@ -16,12 +16,12 @@ ms.assetid: c74e3ccf-d771-48c8-a2f9-df323b166784
 caps.latest.revision: 35
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bfaff5de68bd9d81b6cba6a03a4acec4ad1f0959
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b822f85a0eda7952db37f1479ce6e8c536589716
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49182646"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51773258"
 ---
 # <a name="command-availability"></a>命令可用性
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

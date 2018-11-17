@@ -15,12 +15,12 @@ ms.assetid: 0c7f7889-fbfb-4b19-804f-b742138baecd
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 51579a61cad76cd3164a8ddce739511e7a81d622
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ea911dd70ae3a5ca0e53888b47ed2a8d859827c4
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49203173"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51789123"
 ---
 # <a name="using-the-automation-model"></a>使用 Automation 模型
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

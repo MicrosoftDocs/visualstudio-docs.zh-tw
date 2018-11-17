@@ -15,12 +15,12 @@ ms.assetid: 064231e7-59b5-4437-8240-a23c0a7ec2a9
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9109ef312fb16b4b370a9a8428f3ffb202b272ff
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9099cfe070f3c572823f8aa07a51e4456190f7b6
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49862862"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51749435"
 ---
 # <a name="sending-events"></a>傳送事件
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

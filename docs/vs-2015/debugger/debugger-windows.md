@@ -11,15 +11,15 @@ ms.tgt_pltfrm: ''
 ms.topic: conceptual
 ms.assetid: 4c6fe8f1-b015-4989-bb31-72ebac390026
 caps.latest.revision: 10
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 43b4c95a81d41b6764a301904782998334127ef8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9a49df0f355672a3e49a61c0cfe51c02ba96e4be
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49213243"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51727140"
 ---
 # <a name="debugger-windows"></a>偵錯工具視窗
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

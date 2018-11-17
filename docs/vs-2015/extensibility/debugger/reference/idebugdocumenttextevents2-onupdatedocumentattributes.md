@@ -17,12 +17,12 @@ ms.assetid: 31b7d151-9ce2-438e-b405-f8cc46b9f537
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5cb76fc0d90dfd76fbf45e629f03b59052fda05a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4a53149d6ec05834a7ca783dbd66b3baa03179a4
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49883070"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51788235"
 ---
 # <a name="idebugdocumenttextevents2onupdatedocumentattributes"></a>IDebugDocumentTextEvents2::onUpdateDocumentAttributes
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,13 +32,13 @@ ms.locfileid: "49883070"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT onUpdateDocumentAttributes(   
+HRESULT onUpdateDocumentAttributes(   
    TEXT_DOC_ATTR_2 textdocattr  
 );  
 ```  
   
 ```csharp  
-int onUpdateDocumentAttributes(   
+int onUpdateDocumentAttributes(   
    enum_TEXT_DOC_ATTR_2 textdocattr  
 );  
 ```  

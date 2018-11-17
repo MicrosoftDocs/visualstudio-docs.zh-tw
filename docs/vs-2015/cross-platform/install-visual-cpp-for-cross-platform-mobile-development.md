@@ -13,15 +13,15 @@ dev_langs:
 - C++
 ms.assetid: aaea6b8d-55eb-4427-8185-c050f855c257
 caps.latest.revision: 17
-author: BrianPeek
-ms.author: brpeek
+author: corob-msft
+ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 13db7f4e4f1676f46a8b0170ffeadd5cd9eb31b7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0c8cbe8992a1035e2fb4a26feb9a77b5546bfa56
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49817440"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51786011"
 ---
 # <a name="install-visual-c-for-cross-platform-mobile-development"></a>安裝 Visual C++ for Cross-Platform Mobile Development
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

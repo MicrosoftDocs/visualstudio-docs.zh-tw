@@ -15,14 +15,14 @@ helpviewer_keywords:
 ms.assetid: fd070dc3-6f43-4f73-a2ef-32ab3da9f474
 caps.latest.revision: 16
 author: BillWagner
-ms.author: billchi
+ms.author: wiwagn
 manager: douge
-ms.openlocfilehash: de5b6596a7a487dbc4ea1b6c0d16b137b209e8b7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6369fa7c5265511d434156c3830738cc6ca9d5d3
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49200041"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51772251"
 ---
 # <a name="completion-lists-in-c"></a>C# 中的完成清單 #
 本內容已移至[Visual C# IntelliSense](../ide/visual-csharp-intellisense.md)  

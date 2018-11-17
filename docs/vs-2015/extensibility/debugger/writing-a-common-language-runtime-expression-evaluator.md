@@ -17,12 +17,12 @@ ms.assetid: bd79d57f-8e0a-4e14-a417-0b1de28fa1b2
 caps.latest.revision: 24
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9369baecc160c662244fc0256f6ac06c36b2822c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: cfd368bb0302fec1fcf9fdd1f6e6e069377846ab
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49244292"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51783008"
 ---
 # <a name="writing-a-common-language-runtime-expression-evaluator"></a>撰寫 Common Language Runtime 運算式評估工具
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
