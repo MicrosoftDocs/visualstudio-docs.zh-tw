@@ -15,12 +15,12 @@ ms.assetid: 76eed51c-eecb-4579-823e-13df2f0526b9
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c23bcddceaf3d019add25c5d60ed843912348cc7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4fea8e6d5774e8991cf70cbc84e6b713d59f199f
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49243408"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51810194"
 ---
 # <a name="how-to-use-text-markers"></a>如何： 使用文字標記
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

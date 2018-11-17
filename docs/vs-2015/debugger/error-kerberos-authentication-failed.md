@@ -18,15 +18,15 @@ dev_langs:
 - C++
 ms.assetid: c18053f9-9074-4bc3-a8bf-13e4acbea921
 caps.latest.revision: 10
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dd142d08574d93053ce8a0ebd8b4ca27ed4f0790
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2ec03ae3d3b64435877b51996cb84a1768cc4a42
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49815048"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51732337"
 ---
 # <a name="error-kerberos-authentication-failed"></a>錯誤：Kerberos 驗證失敗
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

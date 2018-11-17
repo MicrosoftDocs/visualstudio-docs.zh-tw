@@ -15,15 +15,15 @@ helpviewer_keywords:
 - Concurrency Visualizer, Manage Channels
 ms.assetid: 507b06e9-bb56-4a72-8fd5-f91f958da6fc
 caps.latest.revision: 18
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1a12c6f58b383f5aa0301f826238839d265cdec2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: dba4def686f97bd3169eb5816630c272dc61d8e6
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49269161"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51725996"
 ---
 # <a name="manage-channels"></a>管理通道
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
