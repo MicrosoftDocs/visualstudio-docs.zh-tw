@@ -16,12 +16,12 @@ ms.assetid: 5e5f3436-6bad-4fd2-8823-6a30353ba648
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9cd6cc62e54fa35a8b146c93e2931b2cf35145b5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9b168eee5f5f8a8a9775d9326cb9a7dda6287792
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49209766"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51806083"
 ---
 # <a name="how-to-use-built-in-colorable-items"></a>如何： 使用內建可設定色彩的項目
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

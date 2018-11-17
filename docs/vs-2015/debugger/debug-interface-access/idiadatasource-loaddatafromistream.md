@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaDataSource::loadDataFromIStream method
 ms.assetid: 8fe33eea-1457-4b8c-ae19-f1ede5578483
 caps.latest.revision: 10
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 14130fbcdc5d7b7dbc4fa60e0026537de79d995d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8be3b85f77c5395a038e15925ca8654ea12ef60f
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49929097"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51817831"
 ---
 # <a name="idiadatasourceloaddatafromistream"></a>IDiaDataSource::loadDataFromIStream
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "49929097"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT loadDataFromIStream (   
+HRESULT loadDataFromIStream (   
    IStream* pIStream  
 );  
 ```  

@@ -15,12 +15,12 @@ ms.assetid: 891c1eb4-f6d0-4073-8df0-2859dbd417ca
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a17869c8c51f940abc03e3670e20768c61f8bc4f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e4f82fd90d95a595d39403d2ee131285034b95d0
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49906503"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51808254"
 ---
 # <a name="how-to-suppress-file-change-notifications"></a>如何： 隱藏檔案變更通知
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -83,7 +83,7 @@ void CSuspendFileChanges::Suspend()
   
     CComPtr<IUnknown> srpDocData;  
     VSCOOKIE vscookie = VSCOOKIE_NIL;  
-    pRDT->FindAndLockDocument(RDT_NoLock, T2COLE(m_strMkDocument),    
+    pRDT->FindAndLockDocument(RDT_NoLock, T2COLE(m_strMkDocument),    
       NULL, NULL, &srpDocData, &vscookie);  
     if ( (vscookie == VSCOOKIE_NIL) || !srpDocData)  
         return;  

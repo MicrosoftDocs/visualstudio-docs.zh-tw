@@ -13,15 +13,15 @@ dev_langs:
 - C++
 ms.assetid: 166a1a3a-2e10-4baa-ace1-9104b56185ce
 caps.latest.revision: 6
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a767902ce8a1c3888aa1f6a7b6a2062b72649c71
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5e718316e11ba067ec9fd31057a7696585a0bf8f
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49192762"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51764013"
 ---
 # <a name="idiasymbolgettextureslot"></a>IDiaSymbol::get_textureSlot
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

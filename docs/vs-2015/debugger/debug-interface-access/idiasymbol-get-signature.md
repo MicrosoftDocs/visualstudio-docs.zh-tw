@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaSymbol::get_signature method
 ms.assetid: 0efefa39-49a5-4282-9d41-e50832d927e0
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c5b1c3f55d733d86da5ede41869ffd096b7d3af2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 26d9c4bb0c8fe1ee663a84f3b1ad2a0ea67d9f2d
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49907621"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51766719"
 ---
 # <a name="idiasymbolgetsignature"></a>IDiaSymbol::get_signature
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "49907621"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT get_signature (   
+HRESULT get_signature (   
    DWORD* pRetVal  
 );  
 ```  
