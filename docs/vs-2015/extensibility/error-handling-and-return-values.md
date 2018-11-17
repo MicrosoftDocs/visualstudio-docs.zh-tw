@@ -17,12 +17,12 @@ ms.assetid: b2d9079d-39a6-438a-8010-290056694b5c
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 315315e925eecd45b1c001531f5ebb6be207b2e7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d55dea94e55e676a1ca37b46bcaa35a2a7a508e1
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49306848"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51728166"
 ---
 # <a name="error-handling-and-return-values"></a>錯誤處理和傳回值
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

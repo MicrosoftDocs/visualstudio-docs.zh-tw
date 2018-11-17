@@ -16,12 +16,12 @@ ms.assetid: d1796f20-523b-4e0d-8ac3-ca87f3b5a9b6
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 802137fc1f8331157c697042392e4e6ef1622cd7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 81b80af3252cd48c2656577a6efdd6e08c251738
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49257864"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51810217"
 ---
 # <a name="previewimage-element-visual-studio-templates"></a>PreviewImage 項目 (Visual Studio 範本)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

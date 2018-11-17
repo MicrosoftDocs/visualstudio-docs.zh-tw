@@ -17,12 +17,12 @@ ms.assetid: 86b3af13-7163-48c6-986b-7beeedbc26cc
 caps.latest.revision: 28
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: cebe468e6325c73802ec073fc250a598f897c2e6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 20fc9e69224f45a5e50462d38b4b2001e3122b49
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49848510"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51776755"
 ---
 # <a name="ide-defined-commands-menus-and-groups"></a>IDE 定義的命令、功能表和群組
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

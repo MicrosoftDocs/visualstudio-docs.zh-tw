@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaFrameData::get_virtualAddress method
 ms.assetid: de137bee-132f-4aae-a067-9578b7a3e6d4
 caps.latest.revision: 12
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3f6150c50b157609bf1a6a7af14e1a350e880202
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 566966d9dabde138d87c1adf41f158705ab37a07
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49913614"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51796528"
 ---
 # <a name="idiaframedatagetvirtualaddress"></a>IDiaFrameData::get_virtualAddress
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "49913614"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT get_virtualAddress (   
+HRESULT get_virtualAddress (   
    ULONGLONG* pRetVal  
 );  
 ```  

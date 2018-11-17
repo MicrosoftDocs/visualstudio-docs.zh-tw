@@ -17,12 +17,12 @@ ms.assetid: 6981bf03-66ef-4bf9-87ea-f6c9624486cb
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f57932e4a65f98d0f99a5d1562a70db607bc8dac
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4002a170c092d650ac8b07c33dba342b9d9acd2e
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49884923"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51784334"
 ---
 # <a name="idebugfieldgetaddress"></a>IDebugField::GetAddress
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "49884923"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT GetAddress(   
+HRESULT GetAddress(   
    IDebugAddress** ppAddress  
 );  
 ```  

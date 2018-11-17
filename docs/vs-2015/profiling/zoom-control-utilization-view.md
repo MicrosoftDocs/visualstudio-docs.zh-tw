@@ -15,15 +15,15 @@ helpviewer_keywords:
 - Concurrency Visualizer, Zoom Control (CPU Utilization View)
 ms.assetid: 8aeff804-0183-4588-8218-52e107a5382e
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 486519caebb0d9cc0220f1feddd541976b162e1d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 05a08040d8027732a17c4575f17da343f3cd1154
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49254094"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51810237"
 ---
 # <a name="zoom-control-utilization-view"></a>縮放控制 (使用率檢視)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

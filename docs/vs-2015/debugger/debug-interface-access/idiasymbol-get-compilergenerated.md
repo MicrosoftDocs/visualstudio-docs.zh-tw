@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaSymbol::get_compilerGenerated method
 ms.assetid: 864d9249-f0c8-4a34-b391-eb785f7e8865
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 656e7802288cc13712f401b4f68963eccdaf4cf3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8d78be5ad41aca7b30228540d4656bd52c9087c4
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49929435"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51803613"
 ---
 # <a name="idiasymbolgetcompilergenerated"></a>IDiaSymbol::get_compilerGenerated
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "49929435"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT get_compilerGenerated (   
+HRESULT get_compilerGenerated (   
    BOOL* pRetVal  
 );  
 ```  

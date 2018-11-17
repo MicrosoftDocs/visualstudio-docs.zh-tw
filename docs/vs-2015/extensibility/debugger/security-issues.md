@@ -16,12 +16,12 @@ ms.assetid: d6ffff0a-afb4-4f38-86d8-476c881c4e4b
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4c20ef751960bed02b6b6b1d393f168a9b8e510f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6807ea81d1898bfaf9c766e25e3c84c021c3aae5
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49219371"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51799635"
 ---
 # <a name="security-issues"></a>安全性問題
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

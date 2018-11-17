@@ -17,12 +17,12 @@ ms.assetid: afec3008-b1e0-4803-ad24-195dbfb6497e
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a545de68b2483a2b924aa0b4a205a8a227a35007
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: bf5387d7ee5620d97e2ba20a155c277460158530
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49911651"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51808319"
 ---
 # <a name="idebugdisassemblystream2seek"></a>IDebugDisassemblyStream2::Seek
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "49911651"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT Seek(   
+HRESULT Seek(   
    SEEK_START          dwSeekStart,  
    IDebugCodeContext2* pCodeContext,  
    UINT64              uCodeLocationId,  
@@ -41,7 +41,7 @@ HRESULT Seek(
 ```  
   
 ```csharp  
-int Seek(   
+int Seek(   
    enum_SEEK_START    dwSeekStart,  
    IDebugCodeContext2 pCodeContext,  
    ulong              uCodeLocationId,  

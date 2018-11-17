@@ -15,12 +15,12 @@ ms.assetid: 9ab046a2-147d-4167-aa14-7d661b1eaaa5
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9d16c6475675fbf563f8228a6e05dfb81f739485
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d0312bbc7bd6c73cf0141157cde13f0a381f5e41
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49211415"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51805667"
 ---
 # <a name="registering-file-name-extensions-for-side-by-side-deployments"></a>註冊副檔名以進行並存部署
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

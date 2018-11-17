@@ -17,12 +17,12 @@ ms.assetid: 8eeea600-eda5-4b7c-868a-0b86d177b0a5
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e325e7b543e8b1a86687dd33edcc34b3ae88d6b3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b04e784db657567d1b6d88c1d3a1d7f882d663a4
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49817661"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51779212"
 ---
 # <a name="programnodearray"></a>PROGRAM_NODE_ARRAY
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,16 +32,16 @@ ms.locfileid: "49817661"
 ## <a name="syntax"></a>語法  
   
 ```cpp  
-typedef struct tagPROGRAM_NODE_ARRAY {  
-   DWORD                dwCount;  
-   IDebugProgramNode2** Members;  
-} PROGRAM_NODE_ARRAY;  
+typedef struct tagPROGRAM_NODE_ARRAY {  
+   DWORD                dwCount;  
+   IDebugProgramNode2** Members;  
+} PROGRAM_NODE_ARRAY;  
 ```  
   
 ```csharp  
-public struct tagPROGRAM_NODE_ARRAY {  
-   public uint                 dwCount;  
-   public IDebugProgramNode2[] Members;  
+public struct tagPROGRAM_NODE_ARRAY {  
+   public uint                 dwCount;  
+   public IDebugProgramNode2[] Members;  
 }  
 ```  
   

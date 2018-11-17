@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaSymbol::get_offsetInUdt method
 ms.assetid: 442f20d9-9d6a-44a1-83fb-c3f8c14b6c97
 caps.latest.revision: 10
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1efe9cf560981e682bec50627529f6716b0754e9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c7feeacdb4a892a0c54df3e8a0e6d2ff8f3792bc
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49904579"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51802014"
 ---
 # <a name="idiasymbolgetoffsetinudt"></a>IDiaSymbol::get_offsetInUdt
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "49904579"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT get_offsetInUdt(   
+HRESULT get_offsetInUdt(   
    DWORD* pRetVal)  
 );  
 ```  

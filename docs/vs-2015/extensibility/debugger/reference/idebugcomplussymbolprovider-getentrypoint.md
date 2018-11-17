@@ -16,12 +16,12 @@ ms.assetid: 9640e121-1da1-41f9-8e66-76efca36baf2
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 02fa7dbd849d0f8af3f9547c7ff455e9b6c0673f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4adf92856b3cea758f91060c431125a442098a15
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49832819"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51751730"
 ---
 # <a name="idebugcomplussymbolprovidergetentrypoint"></a>IDebugComPlusSymbolProvider::GetEntryPoint
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

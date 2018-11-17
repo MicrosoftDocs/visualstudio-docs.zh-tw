@@ -19,15 +19,15 @@ dev_langs:
 - SQL
 ms.assetid: 527cf400-d12d-45ef-a7e7-baa65ca96ec5
 caps.latest.revision: 8
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b5d4780ece4ae00b2fb0b8c59bc84f3e48980b30
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4f5f66dd027ffa3c620c0291bddd41649c430bec
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49200885"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51743216"
 ---
 # <a name="error-unable-to-access-the-sql-server-debugging-interface"></a>錯誤：無法存取 SQL Server 偵錯介面
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

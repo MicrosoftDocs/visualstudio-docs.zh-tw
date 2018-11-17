@@ -18,12 +18,12 @@ ms.assetid: 963f0398-fb50-4d8e-879d-d48f8b7c6d80
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0123c813e0270970bb4fbd1ba5b2a9b2ce2cbc15
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2fd41144605b37368fe57aa00cdc2bbc8f8a0da0
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49185519"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51809723"
 ---
 # <a name="solutionfolder-element-visual-studio-templates"></a>SolutionFolder 元素 (Visual Studio 範本)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

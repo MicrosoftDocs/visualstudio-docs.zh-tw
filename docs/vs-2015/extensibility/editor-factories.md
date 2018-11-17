@@ -15,12 +15,12 @@ ms.assetid: cf4e8164-3546-441d-b465-e8a836ae7216
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 97f53e944e140948b769c351fef6c9b91f4aa008
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 74ea8d296db643e74654f9016c1f5bff4f34c6d8
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49246898"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51809450"
 ---
 # <a name="editor-factories"></a>編輯器 Factory
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

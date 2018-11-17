@@ -13,15 +13,15 @@ f1_keywords:
 - vs.cv.markers.span
 ms.assetid: 736b7765-9c71-44d7-85e5-79787d13d91c
 caps.latest.revision: 14
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7abd22757b202e902cce9056df578944c58ff4b3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 115ae981e463e0df744177c8158fa37376d23c74
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49204336"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51805581"
 ---
 # <a name="span-markers"></a>延伸標記
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

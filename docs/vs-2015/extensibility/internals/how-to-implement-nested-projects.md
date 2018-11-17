@@ -16,12 +16,12 @@ ms.assetid: d20b8d6a-f0e0-4115-b3a3-edda893ae678
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: df380078a2fa04c8c36db6f2def7aa89c7a11807
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8a392b8b336c57c47055357147075f29ba173d8f
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49816998"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51810126"
 ---
 # <a name="how-to-implement-nested-projects"></a>如何： 實作巢狀的專案
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
