@@ -13,15 +13,15 @@ helpviewer_keywords:
 - Process properties for Windows NT
 ms.assetid: c4de1866-7447-48f7-aa88-28ad92c0b930
 caps.latest.revision: 7
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 03b73263f6db5e702a44b8854517ec5ee132b561
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2cab2263da44ba46d7fbbe301f61e51b5308ba73
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49259918"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51767451"
 ---
 # <a name="space-tab-process-properties-dialog-box"></a>處理序屬性對話方塊、空間索引標籤
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

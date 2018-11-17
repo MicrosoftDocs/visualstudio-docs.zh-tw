@@ -14,15 +14,15 @@ helpviewer_keywords:
 - getting started, profiling tools
 ms.assetid: 02085214-a8e4-40fd-9b26-32391a7a7082
 caps.latest.revision: 33
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 89822656a518c13467e20b9b79ad36fd09ef36a7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3503c845bd9b8ef3b5362f689d856dd04b59280f
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49249480"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51777054"
 ---
 # <a name="getting-started-with-performance-tools"></a>效能工具入門
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

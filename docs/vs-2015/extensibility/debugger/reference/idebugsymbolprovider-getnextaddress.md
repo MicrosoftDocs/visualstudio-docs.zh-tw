@@ -17,12 +17,12 @@ ms.assetid: 704eeb94-cb13-49d1-82b6-7d83ed0f19c0
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9e98294742fd6c60864bd48266b0075d8d4b9367
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b3b345fef47a3b83bbe8505bdc380d3a0171d022
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49838149"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51778770"
 ---
 # <a name="idebugsymbolprovidergetnextaddress"></a>IDebugSymbolProvider::GetNextAddress
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "49838149"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT GetNextAddress(   
+HRESULT GetNextAddress(   
    IDebugAddress*  pAddress,  
    BOOL            fStatementOnly,  
    IDebugAddress** ppAddress  
@@ -40,7 +40,7 @@ HRESULT GetNextAddress(
 ```  
   
 ```csharp  
-int GetNextAddress(   
+int GetNextAddress(   
    IDebugAddress     pAddress,  
    bool              fStatementOnly,  
    out IDebugAddress ppAddress  

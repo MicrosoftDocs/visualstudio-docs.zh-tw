@@ -11,15 +11,15 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 44803938-5ac6-4f9f-859c-d288e1462d55
 caps.latest.revision: 22
-author: alancameronwills
-ms.author: awills
+author: gewarren
+ms.author: gewarren
 manager: kamrani
-ms.openlocfilehash: cfec9896f9fd9c4307d501bd601094069b3e152f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8281863f802e5b0a04054992ddaa674cf36becbc
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49245820"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51785101"
 ---
 # <a name="application-insights-for-visual-studio-online"></a>Application Insights for Visual Studio Online
 *Application Insights 處於預覽狀態。*  

@@ -25,15 +25,15 @@ helpviewer_keywords:
 - optimized code, debugging
 ms.assetid: fc8eeeb8-6629-4c9b-99f7-2016aee81dff
 caps.latest.revision: 28
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 30d2b52de1d6341c333d52c96df83ee36802324f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e3d0e6c86c800e2ba35fdac78d6659fa2ecd7e94
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49904605"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51734056"
 ---
 # <a name="how-to-debug-optimized-code"></a>如何：偵錯最佳化程式碼
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

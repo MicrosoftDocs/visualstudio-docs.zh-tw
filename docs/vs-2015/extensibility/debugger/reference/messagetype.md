@@ -17,12 +17,12 @@ ms.assetid: 800cc77d-3c27-4763-a9df-552a9384bd49
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: dc81ac400ce2a94674a97d9b987bf1a3e7843105
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d75b09377797135e03269bf9f0629a6ff0f81b83
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49845419"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51739572"
 ---
 # <a name="messagetype"></a>MESSAGETYPE
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "49845419"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-enum enum_MESSAGETYPE {   
+enum enum_MESSAGETYPE {   
    MT_OUTPUTSTRING      = 0x0000001,  
    MT_MESSAGEBOX        = 0x00000002,  
    MT_TYPE_MASK         = 0x000000FF,  
@@ -44,7 +44,7 @@ typedef DWORD MESSAGETYPE;
 ```  
   
 ```csharp  
-public enum enum_MESSAGETYPE {   
+public enum enum_MESSAGETYPE {   
    MT_OUTPUTSTRING      = 0x0000001,  
    MT_MESSAGEBOX        = 0x00000002,  
    MT_TYPE_MASK         = 0x000000FF,  

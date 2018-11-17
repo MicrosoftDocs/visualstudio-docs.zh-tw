@@ -15,12 +15,12 @@ ms.assetid: f22cfc75-3e31-4e0d-88a9-3ca99539203b
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 29ca670f5c660e70a5177754c3fac518443d310b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 53d8e3d33a81e20d553e6a5c97eb6e6f33339079
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49907881"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51801598"
 ---
 # <a name="solution-configuration"></a>方案組態
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

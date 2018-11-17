@@ -15,15 +15,15 @@ helpviewer_keywords:
 - Concurrency Visualizer, Per Thread Summary Report
 ms.assetid: 5a0aa339-03f5-4727-90b3-8950446bbdbe
 caps.latest.revision: 15
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bfb172c1b676d54312fdd49d9239fd3de92206a4
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7c3c919d666f1e634261895227380de43efc8853
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49268563"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51772426"
 ---
 # <a name="per-thread-summary-report"></a>個別執行緒摘要報表
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaStackWalkHelper2::get_registerValue method
 ms.assetid: 46ac5eee-73a3-44a1-8635-6c58ba193cb6
 caps.latest.revision: 12
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6c4e8c7c40a1110651451e64b98708713d54e4a5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8f155c32d9d96350b1c9955ea44dcb0d289d6aa8
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49853099"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51768120"
 ---
 # <a name="idiastackwalkhelpergetregistervalue"></a>IDiaStackWalkHelper::get_registerValue
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "49853099"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT get_registerValue (   
+HRESULT get_registerValue (   
    DWORD      index,  
    ULONGLONG* pRetVal  
 );  

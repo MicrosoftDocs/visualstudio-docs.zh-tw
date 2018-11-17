@@ -17,12 +17,12 @@ ms.assetid: d5cf57cb-b93b-4e1d-bec9-185f4fe8668d
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 59f82337d2a599ee1ddbcd9737474951dd16e09b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7c1a9881647344daf493658a05ab76d3e5ff7764
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49890293"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51723335"
 ---
 # <a name="idebugdocumentposition2ispositionindocument"></a>IDebugDocumentPosition2::IsPositionInDocument
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,13 +32,13 @@ ms.locfileid: "49890293"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT IsPositionInDocument(   
+HRESULT IsPositionInDocument(   
    IDebugDocument2* pDoc  
 );  
 ```  
   
 ```csharp  
-int IsPositionInDocument(   
+int IsPositionInDocument(   
    IDebugDocument2 pDoc  
 );  
 ```  

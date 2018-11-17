@@ -19,15 +19,15 @@ helpviewer_keywords:
 - security [Visual Studio], visualizers
 ms.assetid: cdd86bd5-b729-409b-a7c6-374efa091eb1
 caps.latest.revision: 25
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 45eb2f245e55f178d1c488c1269388851741de39
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b25c9a183a843130861818f8a80948a68a8b1ed5
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49237116"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51800623"
 ---
 # <a name="visualizer-security-considerations"></a>視覺化檢視安全性考量
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

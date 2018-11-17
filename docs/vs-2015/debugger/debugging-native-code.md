@@ -24,15 +24,15 @@ helpviewer_keywords:
 - native code, debugging
 ms.assetid: d94eee90-7e0d-4cac-88c1-9831030daa5e
 caps.latest.revision: 24
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e04540f1ed9def4e1c292a165982bf53f9439096
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a8c81efece10fe55dc1cf228a3d0c23e7f5a64af
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49217655"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51730560"
 ---
 # <a name="debugging-native-code"></a>偵錯機器碼
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

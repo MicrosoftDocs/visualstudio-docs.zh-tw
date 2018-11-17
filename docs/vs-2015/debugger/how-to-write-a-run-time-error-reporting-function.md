@@ -23,15 +23,15 @@ helpviewer_keywords:
 - reporting function
 ms.assetid: 989bf312-5038-44f3-805f-39a34d18760e
 caps.latest.revision: 20
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d5de5ecabc9a07dce04a17394448da0deec65268
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e5d7c9e3d87f7b73ccfad822ef0e7800baaa5b44
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49284813"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51771513"
 ---
 # <a name="how-to-write-a-run-time-error-reporting-function"></a>如何：撰寫執行階段錯誤報告函式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

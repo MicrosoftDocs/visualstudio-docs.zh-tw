@@ -15,15 +15,15 @@ helpviewer_keywords:
 - Concurrency::diagnostic::marker_series::write_message method
 ms.assetid: 546121bc-67e0-4a5a-a456-12bd78fd6de2
 caps.latest.revision: 8
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 07fb86bceedc0c48679c0e6183943c4993ecab65
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b98cf78223ec171bb8c0c0c32ca333ad9bb54945
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49256434"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51768068"
 ---
 # <a name="markerserieswritemessage-method"></a>marker_series::write_message 方法
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

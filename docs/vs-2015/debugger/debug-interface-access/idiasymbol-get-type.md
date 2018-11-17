@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaSymbol::get_type method
 ms.assetid: 1c6a4176-dd4e-4c22-8b8f-0e559fc078ba
 caps.latest.revision: 14
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c295a06b4a4df9fe752169b29d51192845ad8210
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d8c667b4cdf5e6e1c595103e4b713deaad7710aa
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49866775"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51767383"
 ---
 # <a name="idiasymbolgettype"></a>IDiaSymbol::get_type
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "49866775"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT get_type (   
+HRESULT get_type (   
    IDiaSymbol** pRetVal  
 );  
 ```  

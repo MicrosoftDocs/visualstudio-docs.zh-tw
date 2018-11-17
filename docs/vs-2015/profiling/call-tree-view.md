@@ -18,15 +18,15 @@ helpviewer_keywords:
 - profiling tools, Call Tree view
 ms.assetid: b2dbc033-bf95-4d10-8e51-f9462979133e
 caps.latest.revision: 39
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1df170176397bd8b74c169e8331baaffa9f6b744
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8f09b85c20d84cb25d6a1fdbbd8493c47056318a
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49225442"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51738741"
 ---
 # <a name="call-tree-view"></a>呼叫樹狀圖檢閱
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

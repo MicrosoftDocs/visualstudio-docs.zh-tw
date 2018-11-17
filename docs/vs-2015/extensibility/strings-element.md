@@ -16,12 +16,12 @@ ms.assetid: 23a42074-a689-481d-824f-b43aa448f266
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 788dd763906ca2d1410b6ec5d9efb4b7e6e1807d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5cc9adc4d13718fc9b0379c73b1892ba14e61d47
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49280939"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51789794"
 ---
 # <a name="strings-element"></a>Strings 項目
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

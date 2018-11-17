@@ -17,12 +17,12 @@ ms.assetid: e5523e45-d350-491e-a92c-fe0ca97d2052
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7d739026e161261430aa75854b36c7b7fbe18e7a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d27be74f14e3ce1c9dd4f3b5a95762f565e76458
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49911573"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51739038"
 ---
 # <a name="idebugclassfieldenuminterfacesimplemented"></a>IDebugClassField::EnumInterfacesImplemented
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "49911573"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT EnumInterfacesImplemented(   
+HRESULT EnumInterfacesImplemented(   
    IEnumDebugFields** ppEnum  
 );  
 ```  

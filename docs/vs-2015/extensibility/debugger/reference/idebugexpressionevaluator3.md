@@ -15,12 +15,12 @@ ms.assetid: c27c2a14-300b-4535-be22-767c83602f69
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 503fab684d29566ecb9c5f2be3cab59b38e2086d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9b74189477452a86f99f31eaeb3aa800c3098429
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49249339"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51799648"
 ---
 # <a name="idebugexpressionevaluator3"></a>IDebugExpressionEvaluator3
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

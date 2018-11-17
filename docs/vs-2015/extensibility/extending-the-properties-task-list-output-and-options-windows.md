@@ -20,12 +20,12 @@ ms.assetid: 06990510-5424-44b8-9fd9-6481acec5c76
 caps.latest.revision: 38
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bf62ce18094b7580d0e4d2d2dd2cb2b6ab139287
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 327d218f22b4629ec919a20ef2800d445e2d652f
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49836472"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51737827"
 ---
 # <a name="extending-the-properties-task-list-output-and-options-windows"></a>延伸屬性、工作清單、輸出和選項視窗
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

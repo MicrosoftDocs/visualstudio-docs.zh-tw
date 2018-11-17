@@ -15,12 +15,12 @@ ms.assetid: 2483cce5-321c-4d3c-9c5c-ee8385263f74
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4599c8d386ed084e7e1a7f32641a8f6c1da00b27
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c52244aa91217ae57d4265ce37a530b2e48d0e93
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49306796"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51770706"
 ---
 # <a name="additional-source-control-guidelines-for-projects-and-editors"></a>專案和編輯器適用的其他原始檔控制方針
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

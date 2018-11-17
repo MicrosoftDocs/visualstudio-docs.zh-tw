@@ -15,12 +15,12 @@ ms.assetid: d1803f4a-24eb-44b0-b5d2-cb40c15534be
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 24db09c97b499ee10aaf5d84fa1d8eb328042a3f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c2d54d0e4e8f2a19f641b984d82a5f35d6390274
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49203316"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51795182"
 ---
 # <a name="project-context"></a>專案內容
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

@@ -16,12 +16,12 @@ ms.assetid: d5ce10f9-047a-4b74-aa1d-295128898b89
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0e0eed92f8bdad30af64b63bde3905de51b5a136
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: fc6829ba4d1267d7a17c609f973b5ee6b570e9ac
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49187274"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51742509"
 ---
 # <a name="how-to-open-standard-editors"></a>如何： 開啟標準編輯器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaSymbol::get_language method
 ms.assetid: c759ad3c-1c21-4234-869b-86aa3a608a38
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d13d11b56359051b2c1b6c824d058345d3517d20
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 53b7c9c8ffdeebeab6f636e7a9332efa570dc60f
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49898742"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51732315"
 ---
 # <a name="idiasymbolgetlanguage"></a>IDiaSymbol::get_language
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "49898742"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT get_language (   
+HRESULT get_language (   
    DWORD* pRetVal  
 );  
 ```  

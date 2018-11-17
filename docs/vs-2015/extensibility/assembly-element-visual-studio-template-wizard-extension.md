@@ -18,12 +18,12 @@ ms.assetid: 0c3dc280-1753-4ea2-a13c-d31d13b935b2
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3e4f5b57a94043b702d5b85c13745ec298e20c7c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 556906747d086d6ec3193c58811806bf72e4ff35
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49224532"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51741200"
 ---
 # <a name="assembly-element-visual-studio-template-wizard-extension"></a>組件項目 (Visual Studio 範本精靈擴充)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,7 +58,7 @@ ms.locfileid: "49224532"
 ## <a name="text-value"></a>文字值  
  需要文字值。  
   
- 此文字會指定實作的組件`IWizard`介面。 這個組件名稱必須指定為完整的組件名稱。 例如，`MyAssembly, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11dd0a3a, Custom = null`。  
+ 此文字會指定實作的組件`IWizard`介面。 這個組件名稱必須指定為完整的組件名稱。 例如， `MyAssembly, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11dd0a3a, Custom = null` 。  
   
 ## <a name="remarks"></a>備註  
  `Assembly` 是 `WizardExtension` 的必要子項目。  

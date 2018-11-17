@@ -21,15 +21,15 @@ helpviewer_keywords:
 - ASP.NET, performance profilng
 ms.assetid: a62d27fd-a966-4065-bebe-6874195a71fb
 caps.latest.revision: 38
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f265bf63890cfe2dcc9ecb9ef845803ef1c858cc
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 646d5a59dee68123e478da074901c9d6f98c2763
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49840645"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51783905"
 ---
 # <a name="how-to-collect-performance-data-for-a-web-site"></a>如何：使用效能精靈對網站或 Web 應用程式進行程式碼剖析
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

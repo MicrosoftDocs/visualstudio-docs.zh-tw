@@ -16,12 +16,12 @@ ms.assetid: bcf85418-18fb-4824-9dae-d14bf3d56a77
 caps.latest.revision: 28
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fac4b901c7e9b3c5a59e125a9480b21703b19a8a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9a108acb2ae32b64292cd819c75de4726f067a00
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49217032"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51752459"
 ---
 # <a name="what39s-new-in-source-control"></a>什麼&#39;原始檔控制的新功能
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

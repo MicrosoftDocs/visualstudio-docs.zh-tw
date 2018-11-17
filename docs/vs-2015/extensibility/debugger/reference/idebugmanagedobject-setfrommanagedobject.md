@@ -17,12 +17,12 @@ ms.assetid: 8700ee8d-2704-4580-bccc-046837a24edd
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 89ebc236a2ffa2ea8d2fb2c1bfc71bd33ad4754b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9dd0284411c07a6fca7feceb22c096d270acd350
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49869518"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51744654"
 ---
 # <a name="idebugmanagedobjectsetfrommanagedobject"></a>IDebugManagedObject::SetFromManagedObject
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "49869518"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT SetFromManagedObject(   
+HRESULT SetFromManagedObject(   
    IUnknown* pManagedObject  
 );  
 ```  

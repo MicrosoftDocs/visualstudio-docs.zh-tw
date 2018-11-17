@@ -15,15 +15,15 @@ helpviewer_keywords:
 - Concurrency Visualizer, Paging Time
 ms.assetid: 67af3509-3a7d-435d-bc37-5262448da915
 caps.latest.revision: 14
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 391f231a604af3fe0c47242acf7ea49c67f40f34
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b3fc38abb47c70949b63b44958e96e3b168589fd
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49181320"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51729422"
 ---
 # <a name="memory-management-time"></a>記憶體管理時間
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

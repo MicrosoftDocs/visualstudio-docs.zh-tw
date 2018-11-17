@@ -17,12 +17,12 @@ ms.assetid: dd7dd89c-1043-46a1-a929-099cc039c344
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e8230c2653bea56f9325abed8a54460c14590a99
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d6e21b5c75572ef320630dcea7a35f3cfc8a5d00
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49852657"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51744106"
 ---
 # <a name="bperesifields"></a>BPERESI_FIELDS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "49852657"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-enum enum_BPERESI_FIELDS {   
+enum enum_BPERESI_FIELDS {   
    PERESI_BPRESLOCATION = 0x0001,  
    BPERESI_PROGRAM      = 0x0002,  
    BPERESI_THREAD       = 0x0004,  
@@ -44,7 +44,7 @@ typedef DWORD BPERESI_FIELDS;
 ```  
   
 ```csharp  
-public enum enum_BPERESI_FIELDS {   
+public enum enum_BPERESI_FIELDS {   
    PERESI_BPRESLOCATION = 0x0001,  
    BPERESI_PROGRAM      = 0x0002,  
    BPERESI_THREAD       = 0x0004,  

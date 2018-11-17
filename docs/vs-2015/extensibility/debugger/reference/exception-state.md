@@ -17,12 +17,12 @@ ms.assetid: 597f4f4c-9b70-485c-b5dc-3c2e3aecc664
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 99f78b2de9b68b638feaf3f84eba4cc12c742ed0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a77607e8207a928a969289ec2f37d1576fd8b93f
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49879723"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51793259"
 ---
 # <a name="exceptionstate"></a>EXCEPTION_STATE
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "49879723"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-enum enum_EXCEPTION_STATE {   
+enum enum_EXCEPTION_STATE {   
    EXCEPTION_NONE                          = 0x0000,  
    EXCEPTION_STOP_FIRST_CHANCE             = 0x0001,  
    EXCEPTION_STOP_SECOND_CHANCE            = 0x0002,  
@@ -57,7 +57,7 @@ typedef DWORD EXCEPTION_STATE;
 ```  
   
 ```csharp  
-public enum enum_EXCEPTION_STATE {   
+public enum enum_EXCEPTION_STATE {   
    EXCEPTION_NONE                          = 0x0000,  
    EXCEPTION_STOP_FIRST_CHANCE             = 0x0001,  
    EXCEPTION_STOP_SECOND_CHANCE            = 0x0002,  

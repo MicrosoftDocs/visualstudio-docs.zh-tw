@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaImageData::get_imageBase method
 ms.assetid: 4ba3d9e4-b205-4ee6-a41d-6996972f1f85
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fd514011e81e0881012fa5aa6a19570bd76fb9d2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e09fb71294631f95b0d1d39ac6137c2e49b5bdea
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49908912"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51801299"
 ---
 # <a name="idiaimagedatagetimagebase"></a>IDiaImageData::get_imageBase
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "49908912"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT get_imageBase (   
+HRESULT get_imageBase (   
    ULONGLONG* pRetVal  
 );  
 ```  

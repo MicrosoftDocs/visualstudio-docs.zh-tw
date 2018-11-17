@@ -13,15 +13,15 @@ helpviewer_keywords:
 - Window Search
 ms.assetid: 9c30390d-dc3c-4c27-ae1a-9d92dc076d2b
 caps.latest.revision: 7
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c9ec54fb45a84ade7d0f87cb2c7a7c5d953b9df4
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c2f32bf9800bc2ce08039fffcec26f965cbab444
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49179968"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51748083"
 ---
 # <a name="window-search-dialog-box"></a>視窗搜尋對話方塊
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

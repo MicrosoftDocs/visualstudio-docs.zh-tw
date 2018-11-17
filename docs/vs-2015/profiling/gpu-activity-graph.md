@@ -13,15 +13,15 @@ f1_keywords:
 - vs.cv.cpu.graph.gpu
 ms.assetid: d7c769af-95fb-49a3-b5ab-deafecee46fa
 caps.latest.revision: 14
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 90e84dbe71b529aef3cfad20172f62d65f8871d9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 38ba74ac314710b1202f13373685ddbdda0df0f6
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49230200"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51791120"
 ---
 # <a name="gpu-activity-graph"></a>GPU 活動圖
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

@@ -17,12 +17,12 @@ ms.assetid: 3361c495-2673-4b7c-82e3-dee74e1fa58d
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ee8371217f36229231a54e36c3b1799ba2152170
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 95c5baaea39e1996999da5aabed55555c054d0c5
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49925132"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51747927"
 ---
 # <a name="idebugreference2compare"></a>IDebugReference2::Compare
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,14 +32,14 @@ ms.locfileid: "49925132"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT Compare (   
+HRESULT Compare (   
    REFERENCE_COMPARE dwCompare,  
    IDebugReference2* pReference  
 );  
 ```  
   
 ```csharp  
-int Compare (   
+int Compare (   
    enum_REFERENCE_COMPARE dwCompare,  
    IDebugReference2       pReference  
 );  

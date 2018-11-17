@@ -11,15 +11,15 @@ helpviewer_keywords:
 - UML API, opening models in Visual Studio
 ms.assetid: 38423682-f2a7-4d2a-a2cd-fd680e9b4b4d
 caps.latest.revision: 17
-author: alexhomer1
+author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 14fa94779fc8d849bbfdb9176fdc94049078c674
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 62b8700e85ccab271dbfdc4f9bac504ee64197a6
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49920207"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51779615"
 ---
 # <a name="open-a-uml-model-by-using-the-visual-studio-api"></a>使用 Visual Studio API 開啟 UML 模型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

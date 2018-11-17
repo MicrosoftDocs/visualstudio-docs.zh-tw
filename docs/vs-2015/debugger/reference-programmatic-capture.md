@@ -11,15 +11,15 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ef60eb8d-1ac2-4e3a-9b4b-f6da0bdd9da8
 caps.latest.revision: 8
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3c68b196829b1ecf27732e325c6d2b402c720c94
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 66e80d02ac41d78f2c79e7b2accb11388d456ad8
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49230343"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51744278"
 ---
 # <a name="reference-programmatic-capture"></a>參考 (程式設計擷取)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

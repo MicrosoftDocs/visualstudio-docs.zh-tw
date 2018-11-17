@@ -25,15 +25,15 @@ helpviewer_keywords:
 - Stop Debugging in Progress dialog box
 ms.assetid: ed7ef49d-e25f-4a4d-9396-9bc7b4143117
 caps.latest.revision: 10
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 440d71a5a84ba5cd9390cc0ba9dfb6319be61cd2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2dba046c57e7b3990b3bf31994da699bed1e6442
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49190472"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51792277"
 ---
 # <a name="stop-debugging-in-progress-dialog-box"></a>停止進行中的偵錯對話方塊
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

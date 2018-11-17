@@ -16,12 +16,12 @@ ms.assetid: adcbbca1-8960-4c88-86b0-8b9467056c97
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fcfaac93790197acff5a9b5357378f64d770b4e7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 76ae283854bd8326f506ae4880af157ca95fbdbe
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49889232"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51740703"
 ---
 # <a name="idebuggenericparamfieldgetflags"></a>IDebugGenericParamField::GetFlags
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

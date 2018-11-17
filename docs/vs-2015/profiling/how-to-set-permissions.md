@@ -17,15 +17,15 @@ helpviewer_keywords:
 - performance tools, setting profiling permissions
 ms.assetid: 69f27896-8f46-4ef3-bfb7-726d95304f3a
 caps.latest.revision: 28
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d33c99ba2bbca5c7e99d73c9c8168e08674b499e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2bfbcb15d9dae16dd7d65ac00ad7c5b17600fa9d
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49905250"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51792879"
 ---
 # <a name="how-to-set-permissions"></a>如何：設定權限
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

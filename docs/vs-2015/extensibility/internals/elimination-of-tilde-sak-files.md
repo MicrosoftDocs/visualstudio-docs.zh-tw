@@ -17,12 +17,12 @@ ms.assetid: 5277b5fa-073b-4bd1-8ba1-9dc913aa3c50
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c7422b0dae02b12d731713f6da416361798d3276
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 930ee0690e14431298461f50387a94dd4bb0ce7d
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49824304"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51780460"
 ---
 # <a name="elimination-of-sak-files"></a>消除 ~SAK 檔案
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

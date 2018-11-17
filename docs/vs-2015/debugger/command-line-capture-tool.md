@@ -11,15 +11,15 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: db75b3a7-80b2-4a74-91d2-fd6e0f73b45d
 caps.latest.revision: 7
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a2c646af7102bd6a5017b1afb522448d4e6b1d8b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d4cafc8c066025f87d233d8b6db8a97be1aa16f5
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49210537"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51770694"
 ---
 # <a name="command-line-capture-tool"></a>命令列擷取工具
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

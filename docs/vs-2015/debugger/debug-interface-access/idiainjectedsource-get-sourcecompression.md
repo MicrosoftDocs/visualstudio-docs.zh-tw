@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaInjectedSource::get_sourceCompression method
 ms.assetid: 854b142f-23a9-466c-bf7f-98e581d5abcd
 caps.latest.revision: 12
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 71b1e23f9a5a5c87bbb4a789362f62dcefa06be5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2c003f7bdad613b5994f2f0aaca665fe73a13d24
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49879346"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51761660"
 ---
 # <a name="idiainjectedsourcegetsourcecompression"></a>IDiaInjectedSource::get_sourceCompression
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "49879346"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT get_sourceCompression (   
+HRESULT get_sourceCompression (   
    DWORD* pRetVal  
 );  
 ```  

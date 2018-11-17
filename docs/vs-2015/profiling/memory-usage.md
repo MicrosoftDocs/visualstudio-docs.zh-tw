@@ -11,15 +11,15 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: bbb58d6c-3362-4ca3-8e87-64b2d4415bf6
 caps.latest.revision: 17
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6a93caaf861c5118bf95651efbf41fcee1ef817e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f62137fcbc71df87fb0569ed0516a7ae36d8a30a
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49846053"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51746198"
 ---
 # <a name="memory-usage"></a>記憶體使用量
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

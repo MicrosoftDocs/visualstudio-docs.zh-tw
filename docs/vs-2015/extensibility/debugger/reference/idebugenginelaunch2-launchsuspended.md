@@ -17,12 +17,12 @@ ms.assetid: 5dd2643e-c20a-470e-9024-2a423eb39856
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: dbbebe758a73a4480a798e988535c907a33bae13
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4ec15be6da5d20fc743c1a2655eb2d67d8247ccc
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49922638"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51768364"
 ---
 # <a name="idebugenginelaunch2launchsuspended"></a>IDebugEngineLaunch2::LaunchSuspended
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "49922638"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT LaunchSuspended (   
+HRESULT LaunchSuspended (   
    LPCOLESTR             pszMachine,  
    IDebugPort2*          pPort,  
    LPCOLESTR             pszExe,  

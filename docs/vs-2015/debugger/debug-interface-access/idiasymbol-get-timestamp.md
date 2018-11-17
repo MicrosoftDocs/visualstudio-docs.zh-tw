@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaSymbol::get_timeStamp method
 ms.assetid: 5d707b76-dbaa-4d88-86c3-6f3672cc6d4c
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dae10d209e11583089b37802570c553d1cbe0f53
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9931446357ef582fa624dedc934a974abd6c646c
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49935545"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51721779"
 ---
 # <a name="idiasymbolgettimestamp"></a>IDiaSymbol::get_timeStamp
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "49935545"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT get_timeStamp (   
+HRESULT get_timeStamp (   
    DWORD* pRetVal  
 );  
 ```  

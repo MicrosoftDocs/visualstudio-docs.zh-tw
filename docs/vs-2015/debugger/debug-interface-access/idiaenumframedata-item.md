@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaEnumFrameData::Item method
 ms.assetid: 2761a72d-1868-4f5b-a32e-c2a1d9358c91
 caps.latest.revision: 10
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 17c0663c20401840f9df899b87911f6a8afb9d43
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e110251cf646c99851503a04d44a8886a0fc1b81
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49877201"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51728655"
 ---
 # <a name="idiaenumframedataitem"></a>IDiaEnumFrameData::Item
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "49877201"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT Item (   
+HRESULT Item (   
    DWORD           index,  
    IDiaFrameData** section  
 );  

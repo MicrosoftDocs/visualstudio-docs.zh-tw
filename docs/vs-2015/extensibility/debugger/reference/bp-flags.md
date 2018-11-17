@@ -17,12 +17,12 @@ ms.assetid: c45dfc74-5e7f-4f1e-a147-ab2a55dccbd0
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a819c822a813cd75ec72ff0883d36f19306d3d72
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: afa8f28439642feeabd7deb5000321b0c7c7ec87
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49829946"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51768888"
 ---
 # <a name="bpflags"></a>BP_FLAGS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "49829946"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-enum enum_BP_FLAGS {   
+enum enum_BP_FLAGS {   
    BP_FLAG_NONE            = 0x0000,  
    BP_FLAG_MAP_DOCPOSITION = 0x0001,  
    BP_FLAG_DONT_STOP       = 0x0002  
@@ -41,7 +41,7 @@ typedef DWORD BP_FLAGS;
 ```  
   
 ```csharp  
-public enum enum_BP_FLAGS {   
+public enum enum_BP_FLAGS {   
    BP_FLAG_NONE            = 0x0000,  
    BP_FLAG_MAP_DOCPOSITION = 0x0001,  
    BP_FLAG_DONT_STOP       = 0x0002  

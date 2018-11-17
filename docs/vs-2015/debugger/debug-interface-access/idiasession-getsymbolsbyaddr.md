@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaSession::getSymbolsByAddr method
 ms.assetid: eafcc757-b488-487d-a063-ad3703ff42e8
 caps.latest.revision: 12
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 19e8e9331cdd2496f358a5caa03562c633db9ff5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 762cc989f70f50d8d4508db5f2437caf5c85b04e
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49824473"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51795943"
 ---
 # <a name="idiasessiongetsymbolsbyaddr"></a>IDiaSession::getSymbolsByAddr
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "49824473"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT getSymbolsByAddr(   
+HRESULT getSymbolsByAddr(   
    IDiaEnumSymbolsByAddr** ppEnumbyAddr  
 );  
 ```  

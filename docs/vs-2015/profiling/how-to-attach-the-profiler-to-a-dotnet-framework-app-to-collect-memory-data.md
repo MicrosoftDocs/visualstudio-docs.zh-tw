@@ -11,15 +11,15 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 9a869fa4-3c98-4e08-b5d9-f43523059f0e
 caps.latest.revision: 38
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 864689c858749a29134a3551acfc024bb9fd50b4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: de9753b1471cfe90259ab552b38239a2d92a3c67
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49884741"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51766953"
 ---
 # <a name="how-to-attach-the-profiler-to-a-net-framework-stand-alone-application-to-collect-memory-data-by-using-the-command-line"></a>如何：使用命令列將程式碼剖析工具附加至 .NET Framework 獨立應用程式以收集記憶體資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

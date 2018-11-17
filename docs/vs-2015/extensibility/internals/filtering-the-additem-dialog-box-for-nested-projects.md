@@ -16,12 +16,12 @@ ms.assetid: 5b3e352e-7f18-4f66-be16-b0ad55637ce5
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2e331d070d72e06834403d35b5223257beeb27e1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 363ba8e38ae2de445bd18bb9378d48aa4d824298
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49269655"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51769766"
 ---
 # <a name="filtering-the-additem-dialog-box-for-nested-projects"></a>篩選巢狀專案的 AddItem 對話方塊
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

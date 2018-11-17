@@ -14,15 +14,15 @@ helpviewer_keywords:
 - Summary view
 ms.assetid: 79056873-2985-40be-9112-cdbc26a65156
 caps.latest.revision: 18
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3e88a974c38ab4538faa0ebf6163ec2d8e92db8e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5e470cee87a2d83f72df369d79ac337fce5412ed
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49232961"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51775234"
 ---
 # <a name="summary-view---sampling-data"></a>摘要檢視 - 取樣資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

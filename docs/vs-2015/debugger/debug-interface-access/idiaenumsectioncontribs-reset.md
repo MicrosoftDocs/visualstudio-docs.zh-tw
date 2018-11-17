@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaEnumSectionContribs::Reset method
 ms.assetid: 97ea62ed-bdf8-4df2-b178-b17b9df20adc
 caps.latest.revision: 10
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 162452af536c3ccb156a64f0598c6a9923ad7321
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 07058cb88dec873b256a3096918ebb2f60ca5f64
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49199494"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51769495"
 ---
 # <a name="idiaenumsectioncontribsreset"></a>IDiaEnumSectionContribs::Reset
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

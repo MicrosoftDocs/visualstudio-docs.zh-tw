@@ -28,15 +28,15 @@ helpviewer_keywords:
 - disassembly code, debugging
 ms.assetid: a1b4104d-d49e-451f-a91e-e39ceaf35875
 caps.latest.revision: 20
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 04c0430140d848c3c0b2386cc4156be1dbdd47c7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7ff81b082c877098acec78e56ef9ef211cae8854
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49819780"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51778146"
 ---
 # <a name="how-to-debug-injected-code"></a>如何：偵錯插入程式碼
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

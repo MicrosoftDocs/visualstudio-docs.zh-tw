@@ -16,12 +16,12 @@ ms.assetid: 74652e1b-fcfa-421b-aa9f-fbc081d3b476
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6d0993c31bdda17fd271ef73f10a3d3c0a8bd0a6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7ec55d7e7336837db5758fb49079238a84e99d28
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49856469"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51773453"
 ---
 # <a name="bitmaps-element"></a>Bitmaps 項目
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

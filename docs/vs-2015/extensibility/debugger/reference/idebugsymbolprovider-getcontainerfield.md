@@ -17,12 +17,12 @@ ms.assetid: d6b56b4f-a96b-4fa7-87c1-bac4e58fa766
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5887b01d59a12e74a0ff89726cbfb99bdf8ada38
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 133e4683109dd57f6d1123ca3490c1ce1aa1b4ca
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49831792"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51744195"
 ---
 # <a name="idebugsymbolprovidergetcontainerfield"></a>IDebugSymbolProvider::GetContainerField
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "49831792"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT GetContainerField(   
+HRESULT GetContainerField(   
    IDebugAddress*         pAddress,  
    IDebugContainerField** ppContainerField  
 );  
