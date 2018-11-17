@@ -16,15 +16,15 @@ helpviewer_keywords:
 - FunctionType symbol
 ms.assetid: 646a07e7-9d4f-4e21-95e3-3e403cdd4843
 caps.latest.revision: 20
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e56c038ef0dc3cb9b60f060914923cae3070894f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 824fdcf47712096c42d82c0211bcf1efb5db61f5
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49298086"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51727920"
 ---
 # <a name="functiontype"></a>FunctionType
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

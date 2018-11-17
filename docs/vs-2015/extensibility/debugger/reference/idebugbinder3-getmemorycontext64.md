@@ -16,12 +16,12 @@ ms.assetid: f021fd16-9fc7-4c41-86af-e54e6224cfbb
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 347bdb295fe6e0f6e3ee75812fad6ef3ae72cdb2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7f4e1b619a9af7d8a1ab7548668f2ca07deaeb7e
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49898131"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51722573"
 ---
 # <a name="idebugbinder3getmemorycontext64"></a>IDebugBinder3::GetMemoryContext64
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

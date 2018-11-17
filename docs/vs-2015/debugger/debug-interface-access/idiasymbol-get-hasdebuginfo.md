@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaSymbol::get_hasDebugInfo method
 ms.assetid: 84cd2b67-0d83-4589-9ecb-a4bcbeed55f5
 caps.latest.revision: 10
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 52b7081bce21a133d49f83fee9545bca15654ecc
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 633134dda29dde2771ea7cf3152875c6747b68e4
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49901953"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51721462"
 ---
 # <a name="idiasymbolgethasdebuginfo"></a>IDiaSymbol::get_hasDebugInfo
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

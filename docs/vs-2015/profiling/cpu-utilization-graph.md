@@ -15,15 +15,15 @@ helpviewer_keywords:
 - CPU Utilization GraphConcurrency Visualizer, CPU Utilization Graph
 ms.assetid: 5332fd38-622d-47a3-874f-8c2fd7a30f95
 caps.latest.revision: 19
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fc7dace6156cbb0909c2a54294a82f848fcb5b5e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b1eb8baeee066336834cc1fcfe427512108387a3
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49292217"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51727004"
 ---
 # <a name="cpu-utilization-graph"></a>CPU 使用率圖形
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaStackFrame::get_size method
 ms.assetid: 71e2f5ab-4aa8-4922-aa8a-b7db97ee143c
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9af5968892637f00d9076d42a21de7d632576cc9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 30cdf6074e51267129c2ba4360e90494e810d5e0
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49929292"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51737947"
 ---
 # <a name="idiastackframegetsize"></a>IDiaStackFrame::get_size
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "49929292"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT get_size (   
+HRESULT get_size (   
    DWORD* pRetVal  
 );  
 ```  

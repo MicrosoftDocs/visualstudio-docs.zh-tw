@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaEnumTables::Item method
 ms.assetid: d65ab262-10c6-48ce-95a3-b5e4cb2c85af
 caps.latest.revision: 14
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: de9d8791d2c0b9f3be67733acc1a7e1856a83d0a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b5bd6f5f431b7f631ad02be7ed3d31268a3645a8
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49935450"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51735736"
 ---
 # <a name="idiaenumtablesitem"></a>IDiaEnumTables::Item
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "49935450"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT Item (   
+HRESULT Item (   
    VARIANT     index,  
    IDiaTable** table  
 );  

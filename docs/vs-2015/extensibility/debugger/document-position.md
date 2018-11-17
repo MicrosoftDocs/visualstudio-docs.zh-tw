@@ -15,12 +15,12 @@ ms.assetid: b59d739c-7572-427f-a70d-4e5df63d02c1
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3aaec7a4bc2f2c90a277deff3cb07afb2ea77b3e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 309599afcfbeae1c7bdebcfe6b2453292e666a12
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49223479"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51725437"
 ---
 # <a name="document-position"></a>文件位置
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

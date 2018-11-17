@@ -16,12 +16,12 @@ ms.assetid: 2243d24a-c3d2-41d1-abbb-6db21a2db9ee
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bda2bc0c79f766b4c6322850a22d2a830499ff58
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: fdb69d6d489d72bea7611c807337e7429fd94ad9
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49188261"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51744257"
 ---
 # <a name="threads"></a>執行緒
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

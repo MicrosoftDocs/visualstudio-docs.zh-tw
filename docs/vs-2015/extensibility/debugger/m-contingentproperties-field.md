@@ -15,12 +15,12 @@ ms.assetid: 49e8cb36-db39-440b-acda-a325651f1165
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 66f35ec6fd4b219796fadcc0f93e245eed83bbb3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 50590184e51707f634c880210985c2752fef5617
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49219358"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51737918"
 ---
 # <a name="mcontingentproperties-field"></a>m_contingentProperties 欄位
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

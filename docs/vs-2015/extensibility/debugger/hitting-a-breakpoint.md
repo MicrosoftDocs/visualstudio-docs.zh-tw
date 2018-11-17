@@ -16,12 +16,12 @@ ms.assetid: a77816e3-b15b-46a0-90cd-be7242e4d6c9
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a4b5805621d1fd58f6c5d39c779e6b87719edac6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1b2eef9b068a64f62a955cb21feb8ff445ca0fe9
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49214977"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51720781"
 ---
 # <a name="hitting-a-breakpoint"></a>到達中斷點
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

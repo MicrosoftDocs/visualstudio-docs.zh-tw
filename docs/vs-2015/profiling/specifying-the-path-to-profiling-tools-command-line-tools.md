@@ -11,15 +11,15 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 7047bf18-5779-4f6e-872c-66e2fc47c969
 caps.latest.revision: 14
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 407ed292bea2b6b7b47e07a3a5e30183f411f991
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 886c035ddcc14b43200b13d789e59430cf090fdf
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49242901"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51731278"
 ---
 # <a name="specifying-the-path-to-profiling-tools-command-line-tools"></a>指定程式碼剖析工具命令列工具的路徑
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

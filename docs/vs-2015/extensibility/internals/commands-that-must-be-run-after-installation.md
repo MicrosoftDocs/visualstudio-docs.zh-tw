@@ -15,12 +15,12 @@ ms.assetid: c9601f2e-2c6e-4da9-9a6e-e707319b39e2
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f4db28e933d1f328b71b225ceeeb2b414cd0627b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 90ce272270ffd511ee3b0efe8a711730ccdb92b5
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49253795"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51724190"
 ---
 # <a name="commands-that-must-be-run-after-installation"></a>必須在安裝後執行的命令
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

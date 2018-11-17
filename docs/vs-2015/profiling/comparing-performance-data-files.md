@@ -14,15 +14,15 @@ helpviewer_keywords:
 - profiling tools reports, comparing
 ms.assetid: e6fda144-f21d-4912-9d16-1b8d3555a210
 caps.latest.revision: 17
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 65543b917a35ec50c3feadbfa4c8db917f4aeb78
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3aa37462915b3155a21248a968325a24b8da05bd
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49306159"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51741575"
 ---
 # <a name="comparing-performance-data-files"></a>比較效能資料檔案
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

@@ -17,12 +17,12 @@ ms.assetid: beda0da5-267e-4bf3-96c4-b659d29e2254
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 742cd3643de8cea8a8fd096f9ee88ec88a46a727
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 343b818352a9cdec5518788ec9a2969c36153331
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49879411"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51741991"
 ---
 # <a name="idebugprogram2getdisassemblystream"></a>IDebugProgram2::GetDisassemblyStream
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "49879411"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT GetDisassemblyStream(   
+HRESULT GetDisassemblyStream(   
    DISASSEMBLY_STREAM_SCOPE   dwScope,  
    IDebugCodeContext2*        pCodeContext,  
    IDebugDisassemblyStream2** ppDisassemblyStream  
@@ -40,7 +40,7 @@ HRESULT GetDisassemblyStream(
 ```  
   
 ```csharp  
-int GetDisassemblyStream(   
+int GetDisassemblyStream(   
    enum_DISASSEMBLY_STREAM_SCOPE  dwScope,  
    IDebugCodeContext2             pCodeContext,  
    out IDebugDisassemblyStream2   ppDisassemblyStream  

@@ -17,12 +17,12 @@ ms.assetid: 8f73c530-cceb-4f1f-8c63-1cc0ccd4a310
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7b02525c62a5842c3db1cf38de091a5100d971d2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5c23d859cd71bab09e307ea15358aa0cca9140e8
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49852891"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51729922"
 ---
 # <a name="idebugprocess2getserver"></a>IDebugProcess2::GetServer
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,14 +32,14 @@ ms.locfileid: "49852891"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT GetServer(   
-   IDebugCoreServer2** ppServer  
+HRESULT GetServer(   
+   IDebugCoreServer2** ppServer  
 );  
 ```  
   
 ```csharp  
-int GetServer(   
-   out IDebugCoreServer2 ppServer  
+int GetServer(   
+   out IDebugCoreServer2 ppServer  
 );  
 ```  
   

@@ -15,12 +15,12 @@ ms.assetid: e03199a6-ad5f-4075-bfba-8d36865112b7
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9a1ccca0b20a681505ef197c4eefad1b3a813af6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 503924f435dda2d4432c915f9566846f0f4dd964
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49218318"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51727307"
 ---
 # <a name="language-services-and-the-core-editor"></a>語言服務及核心編輯器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

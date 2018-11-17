@@ -17,12 +17,12 @@ caps.latest.revision: 14
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: dc16c9020cb7ebd5e0e0ae3667b69fb78471e79c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9cb869cac5059592838fe7e0ef371c4b40e1fb4d
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49197297"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51723836"
 ---
 # <a name="install-multiple-language-versions-of-visual-studio"></a>安裝 Visual studio 的多個語言版本
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

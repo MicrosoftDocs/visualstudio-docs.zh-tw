@@ -28,15 +28,15 @@ helpviewer_keywords:
 - native run-time checks, customizing
 ms.assetid: 76a365fe-6439-49db-8603-34058b78e5a8
 caps.latest.revision: 23
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 396778e87732d73462a7ecc2a420ea22a00936b1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 216a96a6702bfabc57d235144bf4a6cc05df4224
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49856596"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51721137"
 ---
 # <a name="native-run-time-checks-customization"></a>自訂原生執行階段檢查
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaSymbol::get_liveRangeStartRelativeVirtualAddress
 ms.assetid: 1da52539-9872-4c20-8eaa-74b6cb5f3b02
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fb657c83091d06539607c556fe082d83806cf6b9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 99bf3def61b46bd89bd63df56b4ee4897bd0cac5
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942630"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51739781"
 ---
 # <a name="idiasymbolgetliverangestartrelativevirtualaddress"></a>IDiaSymbol::get_liveRangeStartRelativeVirtualAddress
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "49942630"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT get_liveRangeStartRelativeVirtualAddress (   
+HRESULT get_liveRangeStartRelativeVirtualAddress (   
    DWORD* address  
 );  
 ```  

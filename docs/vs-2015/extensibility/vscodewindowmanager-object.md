@@ -18,12 +18,12 @@ ms.assetid: e313add5-afdb-4d8d-abd1-764e1fc10c44
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1589b884b4d284f475509ac13c6ff37756900cd7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9c923b99fdd50bf07bfbda0f2cced68b6c85440f
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49175015"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51736934"
 ---
 # <a name="vscodewindowmanager-object"></a>VSCodeWindowManager 物件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

@@ -13,15 +13,15 @@ dev_langs:
 - C++
 ms.assetid: a70648f2-3b25-439f-8099-239ac602515a
 caps.latest.revision: 6
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2b07684f29644924c785c673f3ae6081c22d5539
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 35ca770550df55766856792d1495b167cb02a11c
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49238600"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51734036"
 ---
 # <a name="idiasymbolgetuavslot"></a>IDiaSymbol::get_uavSlot
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

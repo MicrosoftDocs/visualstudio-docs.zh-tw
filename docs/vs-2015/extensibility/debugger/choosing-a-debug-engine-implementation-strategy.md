@@ -15,12 +15,12 @@ ms.assetid: 90458fdd-2d34-4f10-82dc-6d8f31b66d8b
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 662102fbf74d9721fc8a93d85f5f8e694fba7ccd
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9d2f4d4f907dcabb2aff5457abbbe215507d7601
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49212364"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51734631"
 ---
 # <a name="choosing-a-debug-engine-implementation-strategy"></a>選擇偵錯引擎的實作策略
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

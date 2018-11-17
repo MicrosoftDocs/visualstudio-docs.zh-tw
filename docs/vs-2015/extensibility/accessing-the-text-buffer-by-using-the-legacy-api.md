@@ -15,12 +15,12 @@ ms.assetid: cd6cf4ae-fff5-4e23-b293-7cbafdb8aed2
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 84843f40b6d07e937837914f07aecf10adad2bba
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7c52e4beb1397e9919c3bf670e009d7ca1060ce1
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49277208"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51722196"
 ---
 # <a name="accessing-the-text-buffer-by-using-the-legacy-api"></a>使用舊版 API 存取的文字緩衝區
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaSegment::get_read method
 ms.assetid: aafbc86d-352c-4e1a-911a-1472d2d59212
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 800f080b6475640c5b359d2f5b9de5d577f59a46
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 927ad321f8bad54a5a006baede2eccd6168d7b81
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49922532"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51729886"
 ---
 # <a name="idiasegmentgetread"></a>IDiaSegment::get_read
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "49922532"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT get_read (   
+HRESULT get_read (   
    BOOL* pRetVal  
 );  
 ```  

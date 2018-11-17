@@ -25,15 +25,15 @@ helpviewer_keywords:
 - APIs, debugging
 ms.assetid: 7c126f57-62ab-4d94-9805-632d696ba1f0
 caps.latest.revision: 23
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 09885a056f075a771fd034830ce15a516d2520f2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a84414c6e4d6b46cc0429fb03fd739d1dff94065
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49176703"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51735628"
 ---
 # <a name="how-can-i-debug-windows-api-functions"></a>如何偵錯 Windows API 函式？
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

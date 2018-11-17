@@ -17,12 +17,12 @@ ms.assetid: 04db10f7-df31-4464-98e8-b3777428179e
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2dff0daae241c794ddb5a41a11de19f7a9c0f3a5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 17ef2d6813183d230a9d24a6e881352361fb247e
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49950611"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51730771"
 ---
 # <a name="eventattributes"></a>EVENTATTRIBUTES
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "49950611"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-enum enum_EVENTATTRIBUTES {   
+enum enum_EVENTATTRIBUTES {   
    EVENT_ASYNCHRONOUS          = 0x0000,  
    EVENT_SYNCHRONOUS           = 0x0001,  
    EVENT_STOPPING              = 0x0002,  
@@ -45,7 +45,7 @@ typedef DWORD EVENTATTRIBUTES;
 ```  
   
 ```csharp  
-public enum enum_EVENTATTRIBUTES {   
+public enum enum_EVENTATTRIBUTES {   
    EVENT_ASYNCHRONOUS          = 0x0000,  
    EVENT_SYNCHRONOUS           = 0x0001,  
    EVENT_STOPPING              = 0x0002,  

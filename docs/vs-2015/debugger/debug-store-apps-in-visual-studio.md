@@ -16,15 +16,15 @@ dev_langs:
 - C++
 ms.assetid: 48a85bcf-290b-4390-9993-f6f9dd73ad03
 caps.latest.revision: 20
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f2e9780672abbff1cec9c74298579e575e59a665
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d9a2f2950a650a0ce76de7909fb82397d4a72bcd
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49219137"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51735590"
 ---
 # <a name="debug-store-apps-in-visual-studio"></a>在 Visual Studio 中偵錯市集應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

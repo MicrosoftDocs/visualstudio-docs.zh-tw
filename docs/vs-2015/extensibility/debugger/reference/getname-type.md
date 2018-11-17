@@ -17,12 +17,12 @@ ms.assetid: 2f9f1679-e9e8-4c9c-ac90-aa07bfe69914
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2607ddd84ead55ed627c72e1c9fd2ec3e280349f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8edbf690851d820adc2fc8fdb61044aa9c9d46e2
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49815944"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51725020"
 ---
 # <a name="getnametype"></a>GETNAME_TYPE
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "49815944"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-enum enum_GETNAME_TYPE {   
+enum enum_GETNAME_TYPE {   
    GN_NAME         = 0,  
    GN_FILENAME     = 1,  
    GN_BASENAME     = 2,  
@@ -45,7 +45,7 @@ typedef DWORD GETNAME_TYPE;
 ```  
   
 ```csharp  
-public enum enum_GETNAME_TYPE {   
+public enum enum_GETNAME_TYPE {   
    GN_NAME         = 0,  
    GN_FILENAME     = 1,  
    GN_BASENAME     = 2,  
