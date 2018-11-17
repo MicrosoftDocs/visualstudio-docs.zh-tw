@@ -17,12 +17,12 @@ ms.assetid: b9d88d3b-8b75-484a-b9cc-dc8c0fbb4bc8
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b3f67b00fa321ab499af0b608546fbf45aca2257
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0e04546ac8c75015c44cc215e161d7f56ee83426
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49877708"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51807424"
 ---
 # <a name="idebugsymbolprovidergettypebyname"></a>IDebugSymbolProvider::GetTypeByName
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "49877708"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT GetTypeByName(   
+HRESULT GetTypeByName(   
    LPCOLESTR     pszClassName,  
    NAME_MATCH    nameMatch,  
    IDebugField** ppField  

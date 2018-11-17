@@ -23,15 +23,15 @@ helpviewer_keywords:
 - inline assembly, debugging
 ms.assetid: cc5664e0-0b38-40c1-bb65-04ae720c2adb
 caps.latest.revision: 24
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7ed7aeb167b962b33819e3e07aca513c5b0bf832
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 208d0166ad5d6197b63630fc9499dde1d2b3fb3f
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49285346"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51809073"
 ---
 # <a name="how-to-debug-inline-assembly-code"></a>如何：偵錯內嵌組譯程式碼
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

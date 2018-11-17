@@ -25,15 +25,15 @@ helpviewer_keywords:
 - debug configurations, J#
 ms.assetid: e30ca810-66e9-4d6e-9cf6-9f285cd0b100
 caps.latest.revision: 25
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2d5526f3f10fbb13b7d84b0edf846453e09bc43d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 07da36adc1615217315d5ebb23f8ef62db59f5c7
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49183725"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51721175"
 ---
 # <a name="project-settings-for--c-debug-configurations"></a>C# 偵錯組態的專案設定
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

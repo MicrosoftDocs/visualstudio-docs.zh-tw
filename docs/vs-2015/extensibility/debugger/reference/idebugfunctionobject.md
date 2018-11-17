@@ -17,12 +17,12 @@ ms.assetid: 8d94e97c-a9d1-400c-8a98-a44b5385b33a
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6c9d7e8e2d5cd9e8bbe190ac25c88e30f53fb0ec
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 56a0e0c7dffa23698e83214e8a1b4293e68be210
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49285970"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51804016"
 ---
 # <a name="idebugfunctionobject"></a>IDebugFunctionObject
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ ms.locfileid: "49285970"
 ## <a name="syntax"></a>語法  
   
 ```  
-IDebugFunctionObject : IDebugObject  
+IDebugFunctionObject : IDebugObject  
 ```  
   
 ## <a name="notes-for-implementers"></a>實作者的附註  

@@ -15,15 +15,15 @@ helpviewer_keywords:
 - CV_call_e enumeration
 ms.assetid: f230560b-4243-432d-8f19-46df112043b9
 caps.latest.revision: 13
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f22025ab195ae861b66ab725be91fef37092d2db
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f687c9d95444fdad35213b86af2c3ee1a252544e
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49832828"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51726944"
 ---
 # <a name="cvcalle"></a>CV_call_e
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ ms.locfileid: "49832828"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-typedef enum CV_call_e {   
+typedef enum CV_call_e {   
    CV_CALL_NEAR_C    = 0x00,  
    CV_CALL_NEAR_FAST = 0x04,  
    CV_CALL_NEAR_STD  = 0x07,  

@@ -19,15 +19,15 @@ helpviewer_keywords:
 - debugging [Visual Studio], Web control libraries
 ms.assetid: 2413883f-9e88-406d-b874-0ed743b75d40
 caps.latest.revision: 29
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d7e942fe6909d41ed5000f5e8a4f31f0de87cf9e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a523d593b4c61a7ca730cc60a6ed22a1be541f9c
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49262504"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51807585"
 ---
 # <a name="web-control-library-managed-code"></a>Web 控制項程式庫 (Managed 程式碼)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

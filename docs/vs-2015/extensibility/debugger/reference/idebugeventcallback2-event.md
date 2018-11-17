@@ -17,12 +17,12 @@ ms.assetid: e5a3345b-d460-4e40-8f5b-3111c56a2ed9
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 26a1a2ef923caf5f63a0b2904dadbfb4b35bef85
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e47ce39ec9e911a0daed628736aa7ed52e73d8c5
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49873236"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51805485"
 ---
 # <a name="idebugeventcallback2event"></a>IDebugEventCallback2::Event
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "49873236"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT Event(   
+HRESULT Event(   
    IDebugEngine2*  pEngine,  
    IDebugProcess2* pProcess,  
    IDebugProgram2* pProgram,  
@@ -44,7 +44,7 @@ HRESULT Event(
 ```  
   
 ```csharp  
-int Event(   
+int Event(   
    IDebugEngine2  pEngine,  
    IDebugProcess2 pProcess,  
    IDebugProgram2 pProgram,  
