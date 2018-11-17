@@ -13,12 +13,12 @@ ms.assetid: 586da5dc-f678-402b-afd0-0332959fd7a6
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3135702050caf1b1825c41eb909958a7ab5d8ffb
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3229eb90dad59269d81bfd34b7eb5fa15bdab6d7
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49304625"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51794604"
 ---
 # <a name="creating-custom-project-and-item-templates"></a>建立自訂專案和項目範本
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

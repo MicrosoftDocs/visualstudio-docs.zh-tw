@@ -21,15 +21,15 @@ helpviewer_keywords:
 - remote debugging, attaching to script
 ms.assetid: 82013e9a-ef53-4fd2-b451-a6891cdc6307
 caps.latest.revision: 26
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 08a82442d4e7eed160c6ec83d67c498073b42ac9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c71364905e121ab32c9f5108717acdca32e1354e
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49852553"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51790054"
 ---
 # <a name="how-to-attach-to-script"></a>如何：附加至指令碼
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

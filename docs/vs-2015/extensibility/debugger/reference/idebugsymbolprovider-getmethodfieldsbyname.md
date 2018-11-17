@@ -17,12 +17,12 @@ ms.assetid: 1f781320-81ef-4037-b068-f1864b271258
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 367dcd6648beb14e71de11fb542c6d401b0abcc4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4042688d294803837b0806cd39c41e719d4f480c
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49843466"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51742747"
 ---
 # <a name="idebugsymbolprovidergetmethodfieldsbyname"></a>IDebugSymbolProvider::GetMethodFieldsByName
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "49843466"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT GetMethodFieldsByName(   
+HRESULT GetMethodFieldsByName(   
    LPCOLESTR          pszFullName,  
    NAME_MATCH         nameMatch,  
    IEnumDebugFields** ppEnum  

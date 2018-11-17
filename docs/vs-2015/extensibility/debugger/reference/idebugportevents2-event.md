@@ -17,12 +17,12 @@ ms.assetid: 5cc813f7-04a1-4462-9ea7-fbddcf0e0143
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9254a17f0c88efa167019a1d05aa9524f9327ab1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c4f27e05c331c500b6b490bde382a42c09103708
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49856818"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51760307"
 ---
 # <a name="idebugportevents2event"></a>IDebugPortEvents2::Event
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

@@ -15,12 +15,12 @@ ms.assetid: 2dfed0be-6972-4bec-baec-f0b78df9ef97
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 201f52e6fb49ca3974288c82e0ba74bec0d9caa3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8d0c4809eb1a108dad581c110940e933f37174e2
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49202484"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51795293"
 ---
 # <a name="idebugtypefieldbuilder"></a>IDebugTypeFieldBuilder
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaSymbol::get_reference method
 ms.assetid: 6a97cb74-6a14-41fd-8e24-2a42d7a1e529
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1a06a43d3fc7bcc6184fa9cbcd7c8ff6569bd9ce
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a8a6324fac43dcfad17b64d2be495a7cd2bf8555
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49859506"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51767428"
 ---
 # <a name="idiasymbolgetreference"></a>IDiaSymbol::get_reference
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "49859506"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT get_reference (   
+HRESULT get_reference (   
    BOOL* pRetVal  
 );  
 ```  

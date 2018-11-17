@@ -15,12 +15,12 @@ ms.assetid: 64d40695-6917-468a-8037-a253453ac159
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: cabbee04e687758eca8ff3e50cbc80a60395f044
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2875ff13302b1f54d87f1f69a68757b10fb98dca
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49204681"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51749228"
 ---
 # <a name="how-to-fire-events-when-the-editor-loses-focus"></a>如何： 引發事件當編輯器失去焦點時
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

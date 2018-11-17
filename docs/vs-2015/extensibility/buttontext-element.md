@@ -16,12 +16,12 @@ ms.assetid: 56aba884-0356-4894-ae4e-32d3938f6865
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f5ec72ffd7d0cc96b1ce66098efcfbda4fc30390
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 35973241d1f68965680332fb3baf7c9b13c1bbcc
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49255329"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51790210"
 ---
 # <a name="buttontext-element"></a>ButtonText 項目
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

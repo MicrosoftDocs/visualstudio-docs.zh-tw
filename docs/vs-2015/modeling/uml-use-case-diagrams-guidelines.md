@@ -15,15 +15,15 @@ helpviewer_keywords:
 - UML diagrams, use case
 ms.assetid: b1ae8ed0-d00b-4f9b-8e23-733e09e81e9b
 caps.latest.revision: 38
-author: alexhomer1
+author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: ece8d5de78ff5910d2624479c2d79eaa827b4759
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b4a4bc02202f8ec1f41052dcdea63d97bbcb9671
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49861991"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51793083"
 ---
 # <a name="uml-use-case-diagrams-guidelines"></a>UML 使用案例圖表：方針
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

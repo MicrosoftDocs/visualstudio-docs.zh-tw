@@ -16,12 +16,12 @@ ms.assetid: d726a161-7db3-4ef4-b258-9f6a5be68418
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0f53f682553a273d3af43e3d6c0e14eaa9d06f46
-ms.sourcegitcommit: 20d1b9a5bf041bb28453501eb63bc0537a8e4f54
-ms.translationtype: HT
+ms.openlocfilehash: e26e15e17e69e8bf182d23161cb17ddbd5de0035
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/14/2018
-ms.locfileid: "51645038"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51797100"
 ---
 # <a name="registering-the-program"></a>註冊程式
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

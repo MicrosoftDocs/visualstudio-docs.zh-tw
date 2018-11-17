@@ -17,12 +17,12 @@ ms.assetid: cd0d2cf1-2aac-43da-a830-4bb3d696c219
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 140034aa4328dccfbba47faa7e9d000cc097fc23
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e8265e9c3b5221448f4bdbeb7f190f7b88f92a07
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49924439"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51796853"
 ---
 # <a name="idebugengine2setlocale"></a>IDebugEngine2::SetLocale
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,13 +32,13 @@ ms.locfileid: "49924439"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT SetLocale(   
+HRESULT SetLocale(   
    WORD wLangID  
 );  
 ```  
   
 ```csharp  
-int SetLocale(   
+int SetLocale(   
    ushort wLangID  
 );  
 ```  

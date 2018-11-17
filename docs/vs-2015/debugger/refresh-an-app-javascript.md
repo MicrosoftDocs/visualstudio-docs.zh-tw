@@ -21,15 +21,15 @@ helpviewer_keywords:
 - Refresh [Windows Store apps]
 ms.assetid: fd99ee60-fa94-46df-8b17-369f60bfd908
 caps.latest.revision: 23
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6c38083a1a8e0255891b29ae23e5cf36d066e27a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1905d48e79567684da6215b419c348b32721e0e3
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49180566"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51722892"
 ---
 # <a name="refresh-an-app-javascript"></a>重新整理應用程式 (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

@@ -19,15 +19,15 @@ helpviewer_keywords:
 - Profiling Tools,process report
 ms.assetid: 6d4e2a5d-9f17-4ece-a6f1-75836e1fc382
 caps.latest.revision: 17
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 89ba6578e5f804bb8757807b742ff43c9dd218c8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 56fb301436b3fbe9374301fa4f7a8fd421485cbb
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49264182"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51794500"
 ---
 # <a name="process-view"></a>處理序檢視
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

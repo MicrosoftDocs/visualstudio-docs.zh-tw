@@ -15,12 +15,12 @@ ms.assetid: 09f61652-7e16-4bb0-8055-f61a84bf384e
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ed2b4ccb50a40ce9820c2170b4994a6559ad7f3d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c9ed1f59624c8fa334c99be7ec44672746902a3e
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49217317"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51769926"
 ---
 # <a name="event-descriptions"></a>事件描述
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

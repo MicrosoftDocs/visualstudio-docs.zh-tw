@@ -15,12 +15,12 @@ ms.assetid: 252c5221-2e64-461c-8dcf-b622e400e0be
 caps.latest.revision: 6
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5de1a4cdf7d3b8ecd2cc1421e1647580ecb99c9a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: af0cd00a626ff9361e17aed80ef4d28b8ff4e885
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49232514"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51777834"
 ---
 # <a name="outlining-and-hidden-text-in-a-legacy-language-service"></a>舊版語言服務中的大綱和隱藏文字
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

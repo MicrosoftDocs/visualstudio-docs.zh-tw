@@ -16,12 +16,12 @@ ms.assetid: 42907bcf-4e27-46bd-a8cb-01c2ccd2bde5
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 068f919ae0717158220712bfe010c58cd401d5d1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ff836f56601adeba7b3df675207701f6e2d6e7fa
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49177096"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51729569"
 ---
 # <a name="project-persistence"></a>專案持續性
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

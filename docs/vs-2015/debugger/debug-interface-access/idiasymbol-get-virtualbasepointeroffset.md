@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaSymbol::get_virtualBasePointerOffset method
 ms.assetid: a4f2649c-6702-491c-90a1-d6d669258c51
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9e0197824fcadded0ff7efcefc9350654af07552
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 23139e1f2afff14f53228f5e8c7eac3b59278c9a
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49814775"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51801039"
 ---
 # <a name="idiasymbolgetvirtualbasepointeroffset"></a>IDiaSymbol::get_virtualBasePointerOffset
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "49814775"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT get_virtualBasePointerOffset (   
+HRESULT get_virtualBasePointerOffset (   
    LONG* pRetVal  
 );  
 ```  

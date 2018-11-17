@@ -17,12 +17,12 @@ ms.assetid: b1b41012-a777-4ccf-81a6-3b41f0e96583
 caps.latest.revision: 20
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 15e5d71786b64b9224d89ca6a84eb7186cb12437
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 612b8eda676b7e27b226a99e04e7298df8c8fab7
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49294785"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51782631"
 ---
 # <a name="how-to-generate-registry-information-for-an-installer"></a>如何： 產生安裝程式的登錄資訊
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

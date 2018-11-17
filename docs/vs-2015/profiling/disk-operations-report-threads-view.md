@@ -15,15 +15,15 @@ helpviewer_keywords:
 - Concurrency Visualizer, File Operations Report (Threads View)
 ms.assetid: e352f4f3-f654-45eb-96ed-417863487ddc
 caps.latest.revision: 16
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5f121b8939ff55c9274cd04560ae7d507e22fde5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4e83a471fe451becf445a7d14f2b312fe5a65c38
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49245150"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51801936"
 ---
 # <a name="disk-operations-report-threads-view"></a>磁碟作業報告 (執行緒檢視)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

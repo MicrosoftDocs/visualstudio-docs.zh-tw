@@ -19,15 +19,15 @@ helpviewer_keywords:
 - debugging, WPF
 ms.assetid: 7948e8a6-40b2-4ebb-8461-e220a9e78cd7
 caps.latest.revision: 12
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c182c95ec8fe888dcea50925b06f0da40bb61e87
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b4269945556835c845150cc3983d79a47d60cb86
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49212091"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51802807"
 ---
 # <a name="debugging-wpf"></a>偵錯 WPF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

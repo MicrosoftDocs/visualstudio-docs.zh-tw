@@ -20,15 +20,15 @@ helpviewer_keywords:
 - debugger, Web application errors
 ms.assetid: b2b8ddc8-746d-46e3-87a6-b956b1ee048d
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 62d975903bc29835cbf43a21e38fe727a37aec9c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: daa9ed74df46dd6be66a27d09cbbd7c311e03de4
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49306354"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51793668"
 ---
 # <a name="error-site-uses-ip-address"></a>錯誤：站台使用 IP 位址
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

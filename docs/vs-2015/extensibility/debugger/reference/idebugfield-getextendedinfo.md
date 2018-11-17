@@ -17,12 +17,12 @@ ms.assetid: 46c0dd4d-4fd5-4efd-a908-71e4248e8e8d
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 30bc444b82f81bac44286893cabc674885e25206
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: fde5bb8f05b9aed9170c7e800634af96ccb795fd
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49911560"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51788637"
 ---
 # <a name="idebugfieldgetextendedinfo"></a>IDebugField::GetExtendedInfo
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "49911560"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT GetExtendedInfo(   
+HRESULT GetExtendedInfo(   
    REFGUID guidExtendedInfo,  
    BYTE**  prgBuffer,  
    DWORD*  pdwLen  

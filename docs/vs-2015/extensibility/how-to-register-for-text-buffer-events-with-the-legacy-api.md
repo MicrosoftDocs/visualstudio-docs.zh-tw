@@ -15,12 +15,12 @@ ms.assetid: 5fc00ced-882c-4b48-b46c-1fa5a2469f94
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 76b782e688c567eb3888b2dbc890a360d22e3014
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7e895f2d67c23454ad3f7481e558f6dde542867b
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49232241"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51782774"
 ---
 # <a name="how-to-register-for-text-buffer-events-with-the-legacy-api"></a>如何： 使用舊版 API 的文字緩衝區事件註冊
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

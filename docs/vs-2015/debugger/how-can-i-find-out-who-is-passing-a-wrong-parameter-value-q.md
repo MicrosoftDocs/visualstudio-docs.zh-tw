@@ -25,15 +25,15 @@ helpviewer_keywords:
 - parameter values, troubleshooting
 ms.assetid: 1f1ae455-0e25-4e9d-b33f-53908f5bd6ce
 caps.latest.revision: 22
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 87d44eeabd3c65d6d86125c4029bfc868a539f8c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2505d8f733554e90c14a46deafd0936682d38d66
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49207619"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51729581"
 ---
 # <a name="how-can-i-find-out-who-is-passing-a-wrong-parameter-value"></a>如何發現誰傳錯參數值？
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

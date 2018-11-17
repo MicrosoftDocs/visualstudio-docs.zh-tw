@@ -13,15 +13,15 @@ dev_langs:
 - C++
 ms.assetid: 36b1e881-ea76-48b0-b67f-e9eb0d19bec7
 caps.latest.revision: 6
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4fd1486d166554e7b1ecb557f668e99a8797bae0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 08a7573c4de073e85e3995fdfaf1f65f356a81c9
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49176601"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51764884"
 ---
 # <a name="idiasymbolgetismatrixrowmajor"></a>IDiaSymbol::get_isMatrixRowMajor
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
