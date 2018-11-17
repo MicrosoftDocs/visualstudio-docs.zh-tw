@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaLoadCallback2::RestrictDBGAccess method
 ms.assetid: 63b67a93-2910-4fff-aa70-6b2eaa08e5c8
 caps.latest.revision: 10
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 63321de2de455cbf7c2d60384948334c770d33dc
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3e76862ce44a68c328aea73d8d47c98205b6186e
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49290767"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51739900"
 ---
 # <a name="idialoadcallback2restrictdbgaccess"></a>IDiaLoadCallback2::RestrictDBGAccess
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

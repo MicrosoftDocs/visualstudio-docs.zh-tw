@@ -15,15 +15,15 @@ helpviewer_keywords:
 - CvCreateDefaultMarkerSeriesOfDefaultProvider method
 ms.assetid: 24eb80f8-8fca-4c47-93b5-bb1eb8ffdffd
 caps.latest.revision: 7
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e9d899bde342f61d3d10afca204527526197d2ac
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 999814dd92347e5c6ec44a9d3e2bb07d237f5b66
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49190654"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51804465"
 ---
 # <a name="cvcreatedefaultmarkerseriesofdefaultprovider-function"></a>CvCreateDefaultMarkerSeriesOfDefaultProvider 函式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

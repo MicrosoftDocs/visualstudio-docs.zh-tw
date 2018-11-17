@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaStackWalkHelper2 interface
 ms.assetid: d66e5c84-565d-494e-8486-f91db9a34548
 caps.latest.revision: 18
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 308f16164b8267088fc929cbfd5f1753f16aa9a1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 357d4b9482fb8a5ba7f287ed305ff71083f97590
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49188223"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51770049"
 ---
 # <a name="idiastackwalkhelper"></a>IDiaStackWalkHelper
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

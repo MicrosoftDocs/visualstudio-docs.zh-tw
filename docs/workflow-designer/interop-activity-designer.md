@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 47ede5eebc4d7caf4fe1565c5d8b93b2524ed6ef
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7f3b5fd2674d63fad6398eeaee082862c4cf6476
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49849355"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51809125"
 ---
 # <a name="interop-activity-designer"></a>Interop 活動設計工具
 
@@ -35,7 +35,7 @@ ms.locfileid: "49849355"
 
 C# 專案，您可以將專案目標重定為使用完整的.NET Framework 4 中的專案上按一下滑鼠右鍵**方案總管**，然後選取**屬性**。 在 **應用程式**索引標籤上，選取 **.NET Framework 4**選項**目標 framework**。 選取 **是**是否確認變更。
 
-對於 VB 專案，您可以將專案目標重定為使用完整的.NET Framework 4 中的專案上按一下滑鼠右鍵**方案總管**，然後選取**屬性**。 在 [**編譯**索引標籤上，按一下**進階編譯選項**] 按鈕。 選取 **.Net Framework 4**從**目標 framework 清單**，然後按一下**確定**。 選取 **是**是否確認變更。
+Visual Basic 專案，您可以將專案目標重定為使用完整的.NET Framework 4 中的專案上按一下滑鼠右鍵**方案總管**，然後選取**屬性**。 在 [**編譯**索引標籤上，按一下**進階編譯選項**] 按鈕。 選取 **.Net Framework 4**從**目標 framework 清單**，然後按一下**確定**。 選取 **是**是否確認變更。
 
 **Interop**活動設計工具可以從拖曳**工具箱**並放到工作流程設計工具介面，不論活動通常放置的例如內部<xref:System.Activities.Statements.Sequence>。 卸除**Interop**活動設計工具會建立<xref:System.Activities.Statements.Interop>活動，具有預設值**DisplayName**的 Interop。 您可以編輯<xref:System.Activities.Activity.DisplayName%2A>中的標頭**Interop**活動設計工具，或是在**DisplayName**屬性方格的方塊。
 

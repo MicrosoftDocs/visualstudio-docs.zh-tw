@@ -13,12 +13,12 @@ ms.assetid: c730edb6-5099-4c16-85a8-08def09f1455
 caps.latest.revision: 4
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ba74ac048bdfdf2be116f708fe1cf9bc94987352
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9e5546b07ef9917590daa573efd99377339412c7
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49291248"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51793551"
 ---
 # <a name="installing-the-visual-studio-sdk"></a>安裝 Visual Studio SDK
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

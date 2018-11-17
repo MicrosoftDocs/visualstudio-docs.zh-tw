@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaSymbol::get_frontEndBuild method
 ms.assetid: f7dab1c6-112b-4966-baa5-afc976949c76
 caps.latest.revision: 12
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7972026d80087d1a3d6ebdcbe755d63e3193cc0e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 940a7d5b962cd5db2144f0db0059631b702c216c
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49820742"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51799401"
 ---
 # <a name="idiasymbolgetfrontendbuild"></a>IDiaSymbol::get_frontEndBuild
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "49820742"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT get_frontEndBuild (   
+HRESULT get_frontEndBuild (   
    DWORD* pRetVal  
 );  
 ```  

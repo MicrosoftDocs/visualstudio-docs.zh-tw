@@ -17,12 +17,12 @@ ms.assetid: 7931f3f7-033c-4bf8-8abd-95183952ebb0
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1a56c1f2c59a40255b9427b6e31659feaad72ba9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8951b19bc811234dc9003853c6bf227195787403
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49918658"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51797135"
 ---
 # <a name="idebugarrayobjectgetcount"></a>IDebugArrayObject::GetCount
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "49918658"
   
 ```  
 [C++]  
-HRESULT GetCount(   
+HRESULT GetCount(   
    DWORD* pdwElements  
 );  
 ```  

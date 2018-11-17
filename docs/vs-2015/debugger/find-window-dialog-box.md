@@ -14,15 +14,15 @@ helpviewer_keywords:
 - finding windows with Spy++
 ms.assetid: ee733077-d17a-4439-8a49-bc2f5dbc60d0
 caps.latest.revision: 7
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 946d147e0fc77086039a89419a47c2a2d078785e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7d55a52b0b892f739dd542301b5665339baeae41
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49224441"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51768524"
 ---
 # <a name="find-window-dialog-box"></a>尋找視窗對話方塊
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

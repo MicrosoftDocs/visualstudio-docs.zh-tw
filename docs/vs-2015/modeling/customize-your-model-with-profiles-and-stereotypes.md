@@ -13,15 +13,15 @@ helpviewer_keywords:
 - UML model, customizing
 ms.assetid: fd607157-0d3a-4583-a84e-427a4b2a5acb
 caps.latest.revision: 20
-author: alexhomer1
+author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 7a64fa754d2693f6ea469eb2ec211935c896ebb9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 33e887764c535083c2449a7d333868b2ccd9c4c5
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49254939"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51727698"
 ---
 # <a name="customize-your-model-with-profiles-and-stereotypes"></a>使用設定檔和造型自訂您的模型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

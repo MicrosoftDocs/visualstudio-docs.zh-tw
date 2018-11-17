@@ -15,15 +15,15 @@ helpviewer_keywords:
 - CvReleaseMarkerSeries method
 ms.assetid: 3b4711ee-e534-411d-9128-f69cd7932a48
 caps.latest.revision: 8
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7b65c84257bb99e85b949006fa0fa17505c88690
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: cf62ece61be25ef92866a9b761819c842d9154c3
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49226274"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51801520"
 ---
 # <a name="cvreleasemarkerseries-function"></a>CvReleaseMarkerSeries 函式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

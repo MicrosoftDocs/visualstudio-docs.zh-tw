@@ -17,12 +17,12 @@ ms.assetid: abf89411-1853-4f23-b244-d5e0afa197b1
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fa0ec16ce47e7e96b9ef19c9e46e5ec10ec55177
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5e7960aff461de7fcf9f41a86eb01de9bbf688d0
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49863642"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51721058"
 ---
 # <a name="ipropertyproxyeesideinplaceupdateobject"></a>IPropertyProxyEESide::InPlaceUpdateObject
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

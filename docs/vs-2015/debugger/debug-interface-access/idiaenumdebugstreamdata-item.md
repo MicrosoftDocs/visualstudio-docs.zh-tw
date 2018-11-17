@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaEnumDebugStreamData::Item method
 ms.assetid: 761e61a5-44a6-4d5d-a98e-c2e9b89d2343
 caps.latest.revision: 10
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3b20eed42d59bf0c23f4bc336cf078f21d20142a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b13277b748a364c60dd764dc5deac3bdd86aa02f
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49832310"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51763544"
 ---
 # <a name="idiaenumdebugstreamdataitem"></a>IDiaEnumDebugStreamData::Item
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "49832310"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT Item (   
+HRESULT Item (   
    DWORD  index,  
    DWORD  cbData,  
    DWORD* pcbData,  

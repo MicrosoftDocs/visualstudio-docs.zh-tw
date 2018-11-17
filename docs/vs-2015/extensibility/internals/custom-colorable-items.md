@@ -16,12 +16,12 @@ ms.assetid: b4d0ddee-c04b-48dc-ba82-f6068570cef0
 caps.latest.revision: 25
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fffb77788a4ac88f2ee607dd989de8c7aab8aebf
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 272d16b9f5f8fb33b68c911c5e7bd27923f4c2db
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49821919"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51796944"
 ---
 # <a name="custom-colorable-items"></a>自訂可設定色彩的項目
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

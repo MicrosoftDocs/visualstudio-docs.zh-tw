@@ -23,15 +23,15 @@ dev_langs:
 - C++
 ms.assetid: 476e3d98-cf35-4338-b124-cd0f3010d854
 caps.latest.revision: 14
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0111f2d6c7204a05d7a62ebef9327d927a5881e9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ad979fa302a29f9d444579655e368db6da8b3e1f
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49281771"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51805407"
 ---
 # <a name="when-breakpoint-is-hit-dialog-box"></a>叫用中斷點時對話方塊
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

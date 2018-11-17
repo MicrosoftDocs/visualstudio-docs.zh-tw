@@ -13,12 +13,12 @@ ms.assetid: 57dac3b7-0cdd-405c-9af5-30ed9ca45e53
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f177306a8647d0de88546f9db51a2fc3e3ceab84
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b390c9d390a23a8a5030d06acdb0f2470a946fde
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49840944"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51740317"
 ---
 # <a name="license-element-vsix-language-pack-schema"></a>License 元素 （VSIX 語言套件結構描述）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

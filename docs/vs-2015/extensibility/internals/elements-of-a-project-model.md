@@ -17,12 +17,12 @@ ms.assetid: a1dbe0dc-68da-45d7-8704-5b43ff7e4fc4
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c062ce943e2ee42cd90877827ab7b92ee33c871b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 818e58af478b3c86c4d0ce9daa9c439681de999e
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49883649"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51810360"
 ---
 # <a name="elements-of-a-project-model"></a>專案模型的項目
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

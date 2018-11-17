@@ -17,12 +17,12 @@ ms.assetid: 9118eaa4-0453-4dc5-9e16-c7062d254869
 caps.latest.revision: 31
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5d22e5c1384e4b24bd3b05cb868a40cede19ba1f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b7a7642d8cd33d53bb7d6d2a472a0690713e25d3
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49214704"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51795826"
 ---
 # <a name="inside-the-visual-studio-sdk"></a>深入探索 Visual Studio SDK
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

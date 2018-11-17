@@ -17,12 +17,12 @@ ms.assetid: 7b2cb14a-511a-4fef-9e4f-308139719fba
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 51ac8f5ae6ed64c9b5a2d6eaae1ac5062840d42d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f7e68dc5af0189d7c06f53df1ac1f9976bffe703
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49811408"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51792498"
 ---
 # <a name="evalflags"></a>EVALFLAGS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "49811408"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-enum enum_EVALFLAGS {  
+enum enum_EVALFLAGS {  
    EVAL_RETURNVALUE = 0x0002,  
    EVAL_NOSIDEEFFECTS = 0x0004,  
    EVAL_ALLOWBPS = 0x0008,  
@@ -45,7 +45,7 @@ typedef DWORD EVALFLAGS;
 ```  
   
 ```csharp  
-public enum enum_EVALFLAGS {  
+public enum enum_EVALFLAGS {  
    EVAL_RETURNVALUE = 0x0002,  
    EVAL_NOSIDEEFFECTS = 0x0004,  
    EVAL_ALLOWBPS = 0x0008,  

@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaSymbol::get_baseType method
 ms.assetid: 5c69a241-a8d3-48ed-8b36-27463a196572
 caps.latest.revision: 14
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6a63bbe6f8f65e9e90cb4c57705cc664792bd6f4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 08af047b1c4134c6da0aa5250bd9d5ded20d4a60
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49922116"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51789183"
 ---
 # <a name="idiasymbolgetbasetype"></a>IDiaSymbol::get_baseType
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "49922116"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT get_baseType (   
+HRESULT get_baseType (   
    DWORD* pRetVal  
 );  
 ```  

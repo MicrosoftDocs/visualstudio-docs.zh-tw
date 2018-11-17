@@ -11,15 +11,15 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: a5758cb0-e73b-45f5-8cae-c0eb40491026
 caps.latest.revision: 5
-author: TerryGLee
-ms.author: tglee
+author: conceptdev
+ms.author: crdun
 manager: ghogen
-ms.openlocfilehash: 190af51cd4a2e5780ba6b206f94fcf822810aa35
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: baeb860d5d5c739f7f194b780e71bc9d3768edec
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49181257"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51771709"
 ---
 # <a name="programming-visual-studio-tools-for-unity"></a>Visual Studio Tools for Unity 程式設計
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

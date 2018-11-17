@@ -15,12 +15,12 @@ ms.assetid: 741d45f5-0ea3-4614-972a-8728fe054e07
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 48e468a8b0378e33f8c3f371b5da8dc5fd7b8758
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 45c3de943a1716877fcf33af4d16fd163721d04b
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49271566"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51737510"
 ---
 # <a name="legacy-interfaces-in-the-editor"></a>在編輯器中的舊版介面
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

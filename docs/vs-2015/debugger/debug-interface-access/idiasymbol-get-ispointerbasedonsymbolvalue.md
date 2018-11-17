@@ -13,15 +13,15 @@ dev_langs:
 - C++
 ms.assetid: 577c8011-9269-4373-8577-b4822a983724
 caps.latest.revision: 6
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 93d027d24241f5fd5d895ff7e4bc9f9a130bcfd0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 33a2a60c9da5f37ace83da3e9c4be3dbeedcad78
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49264910"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51765490"
 ---
 # <a name="idiasymbolgetispointerbasedonsymbolvalue"></a>IDiaSymbol::get_isPointerBasedOnSymbolValue
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

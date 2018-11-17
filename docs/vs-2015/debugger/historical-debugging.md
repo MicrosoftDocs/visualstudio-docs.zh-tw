@@ -11,15 +11,15 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 7cc5ddf2-2f7c-4f83-b7ca-58e92e9bfdd2
 caps.latest.revision: 9
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e10387a775c13fd67218b0a52626b4537b01273a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d43e48b67cdbfabcb38703469f8570f78336dcab
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49938470"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51794591"
 ---
 # <a name="historical-debugging"></a>歷程偵錯
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

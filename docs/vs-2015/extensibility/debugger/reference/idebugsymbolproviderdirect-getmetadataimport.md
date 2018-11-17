@@ -16,12 +16,12 @@ ms.assetid: b51a492c-af00-4b08-93fb-6c19ee4916aa
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: dcfaf4e87391e178c3f9ca308dd1a9dba9152b79
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4636943bd91f31d737320d8e3463cf08694f48d2
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49881764"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51739146"
 ---
 # <a name="idebugsymbolproviderdirectgetmetadataimport"></a>IDebugSymbolProviderDirect::GetMetaDataImport
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

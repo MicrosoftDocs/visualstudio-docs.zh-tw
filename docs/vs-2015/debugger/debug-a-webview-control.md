@@ -16,15 +16,15 @@ dev_langs:
 - C++
 ms.assetid: 7d105907-8b39-4d07-8762-5c5ed74c7f21
 caps.latest.revision: 13
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bb004576546fd028b97fa3ebb2b68ad8f4ee2f3a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1f8a4dcc64903b97e3b469fb962777e3b90f84ba
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49189835"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51729073"
 ---
 # <a name="debug-a-webview-control"></a>偵錯 WebView 控制項
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

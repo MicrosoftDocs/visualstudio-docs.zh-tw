@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaEnumSegments::Reset method
 ms.assetid: 5eabca3c-6023-4474-a545-a3bec7521e4d
 caps.latest.revision: 10
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2c52fb9c8208c6844f2e9ebb89d8a28d2ff1c40e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 973afc9bd7370753cab44d7d651a49c93a5d2804
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49200170"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51724864"
 ---
 # <a name="idiaenumsegmentsreset"></a>IDiaEnumSegments::Reset
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

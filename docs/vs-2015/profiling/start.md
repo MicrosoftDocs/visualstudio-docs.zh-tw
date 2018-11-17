@@ -11,15 +11,15 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: b85d0fe9-f67a-4b7c-8d48-7eecf3f2dfe9
 caps.latest.revision: 18
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4d035a540eecd9cae5b62483a52ca75f9db9dca7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6c2f52a000cdf5eaa1a1ef4b9afeb141500f1911
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49252508"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51724184"
 ---
 # <a name="start"></a>啟動
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

@@ -17,12 +17,12 @@ ms.assetid: d7e43183-444c-4417-af19-82e28229f83a
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fb8e905a2014aeb5cdb3ad80702761658d1d087e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8ed3ef1b337ee43c6a5484ca313696600dfe9f07
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49866463"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51774042"
 ---
 # <a name="idebugpropertycreateevent2getdebugproperty"></a>IDebugPropertyCreateEvent2::GetDebugProperty
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,13 +32,13 @@ ms.locfileid: "49866463"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT GetDebugProperty (   
+HRESULT GetDebugProperty (   
    IDebugProperty2** ppProperty  
 );  
 ```  
   
 ```csharp  
-int GetDebugProperty (   
+int GetDebugProperty (   
    out IDebugProperty2 ppProperty  
 );  
 ```  

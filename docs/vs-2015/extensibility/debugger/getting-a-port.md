@@ -16,12 +16,12 @@ ms.assetid: 745c2337-cfff-4d02-b49c-3ca7c4945c5e
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9a09a6081f9eaa7ab5035eca13630d54b598a031
-ms.sourcegitcommit: 20d1b9a5bf041bb28453501eb63bc0537a8e4f54
-ms.translationtype: HT
+ms.openlocfilehash: 660ead58af40f85b4da4d68d7172866f5fe1fd0c
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/14/2018
-ms.locfileid: "51645090"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51789898"
 ---
 # <a name="getting-a-port"></a>取得連接埠
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

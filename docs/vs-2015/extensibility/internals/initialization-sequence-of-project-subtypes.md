@@ -15,12 +15,12 @@ ms.assetid: f657f8c3-5e68-4308-9971-e81e3099ba29
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9fb0ec95622df96110ec17aa1408c2298b6ec3ce
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 53c0a474a5a5caf887599bc50e623bd25e7be782
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49883493"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51746516"
 ---
 # <a name="initialization-sequence-of-project-subtypes"></a>專案子類型的初始化順序
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

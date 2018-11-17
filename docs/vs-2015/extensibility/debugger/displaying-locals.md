@@ -16,12 +16,12 @@ ms.assetid: 62264cec-845b-4233-aed7-0b038fa79250
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: cbfff37c9a840da43219f3c3aab5a0dce4501218
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e41e77c819a08e1f0440652e023bc2776ba62934
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49201327"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51721884"
 ---
 # <a name="displaying-locals"></a>顯示區域變數
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

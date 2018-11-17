@@ -14,15 +14,15 @@ helpviewer_keywords:
 - profiling tools,.NET memory profiling views
 ms.assetid: 79184d8e-769b-4ace-be2b-521147772081
 caps.latest.revision: 15
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7a3734552871d171ff592640f131b4257421a4b6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: bc893857e56d97442efd9ceee8ffb8a5aed72ea2
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49292275"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51762492"
 ---
 # <a name="net-memory-data-views"></a>.NET 記憶體資料檢視
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

@@ -17,12 +17,12 @@ ms.assetid: 490c0e19-ff4b-4673-bd06-cdee996ac226
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f9c92452a100d85f68a13799796b45b00468304c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d90d480e3426108aeb5ee84e38bb4873301f9e8d
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49918138"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51729401"
 ---
 # <a name="ienumcodepaths2reset"></a>IEnumCodePaths2::Reset
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

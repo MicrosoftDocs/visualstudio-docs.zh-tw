@@ -21,15 +21,15 @@ helpviewer_keywords:
 - debug builds, setting up
 ms.assetid: f15a1400-b204-418d-8878-ab7755470fd7
 caps.latest.revision: 40
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 79657c6ce53bf1111eec37c1548ea3d4c61d3394
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0d670470158c86fa62c860571779ec701f65a11f
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49225312"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51766284"
 ---
 # <a name="debugger-settings-and-preparation"></a>偵錯設定及準備
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

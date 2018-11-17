@@ -16,15 +16,15 @@ helpviewer_keywords:
 - UML, profiles
 ms.assetid: 776589cb-f89d-48d5-aafa-04a4c074b0d6
 caps.latest.revision: 44
-author: alexhomer1
+author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 2886e454e9986e63cbc3496d3ef5b0664e85dede
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 37c4560b767828be0ec43419ff92ec5b6f9863ea
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49851591"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51730334"
 ---
 # <a name="define-a-profile-to-extend-uml"></a>定義要擴充 UML 的設定檔
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

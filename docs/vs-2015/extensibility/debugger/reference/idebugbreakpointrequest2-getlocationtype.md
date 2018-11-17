@@ -17,12 +17,12 @@ ms.assetid: b6d14c59-d3aa-48ff-8278-f6b5bba9c2f3
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3729a2037c9ca7d64463bdde964a3b0ef640e00c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4d1ff9d9b953c10b6f7ca5496523a7f10c63197a
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49879671"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51774571"
 ---
 # <a name="idebugbreakpointrequest2getlocationtype"></a>IDebugBreakpointRequest2::GetLocationType
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,13 +32,13 @@ ms.locfileid: "49879671"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT GetLocationType(   
+HRESULT GetLocationType(   
    BP_LOCATION_TYPE* pBPLocationType  
 );  
 ```  
   
 ```csharp  
-int GetLocationType(   
+int GetLocationType(   
    out enum_BP_LOCATION_TYPE pBPLocationType  
 );  
 ```  

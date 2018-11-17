@@ -10,12 +10,12 @@ ms.assetid: 9d9c7fbb-ebae-4b20-9dd8-3c9070c0d0d1
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5f88aa5b9983390771a9b869a6e141802e94d684
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6c0e277a123fe24da9824fae94b13eee686f5663
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49949808"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51778016"
 ---
 # <a name="image-library-viewer"></a>影像庫檢視器
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

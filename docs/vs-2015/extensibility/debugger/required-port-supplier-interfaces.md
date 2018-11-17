@@ -16,12 +16,12 @@ ms.assetid: 0c2cdd40-9f6f-425e-b305-858f7734161e
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 251b5c9d96ac7d0e82705c81b1b568e2d85b88f6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 485c295e7258f09aaf4114d5945f8136057447e6
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49248180"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51782800"
 ---
 # <a name="required-port-supplier-interfaces"></a>必要的連接埠提供者介面
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

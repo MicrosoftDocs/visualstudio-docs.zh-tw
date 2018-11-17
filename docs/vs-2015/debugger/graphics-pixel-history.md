@@ -13,15 +13,15 @@ f1_keywords:
 - vs.graphics.pixelhistory
 ms.assetid: 0a2cbde5-1ad9-487e-857c-a3664158c268
 caps.latest.revision: 17
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9ac64d352bfb6d6a35ea1bd9027d30f527aab116
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 20b33c987cf7e2b1ab57160b4f4917246d9030b6
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49208360"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51733156"
 ---
 # <a name="graphics-pixel-history"></a>圖形像素歷史記錄
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

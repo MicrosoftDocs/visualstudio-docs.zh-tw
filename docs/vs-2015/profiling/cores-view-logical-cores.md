@@ -15,15 +15,15 @@ helpviewer_keywords:
 - Concurrency Visualizer, Cores View Logical Cores
 ms.assetid: 8a471929-9a26-43e4-adef-d3b40f00f9e3
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6ba6c630666d2d5eda684a912de65e463d2fe052
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 47e2fbf6cc3b0c2daafe81e78566e55861572e56
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49247622"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51742523"
 ---
 # <a name="cores-view-logical-cores"></a>核心檢視邏輯核心
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

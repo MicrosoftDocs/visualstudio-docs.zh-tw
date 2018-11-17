@@ -17,12 +17,12 @@ ms.assetid: 96e762ca-efd0-41e7-8958-fda4897c8c7a
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a4315b9e6b6fdb12a0fcb3e97f6b208d6b84acd9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 30a53b1fc04bd08835ccf0ff0b0edb2e5d117fcb
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49259245"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51775026"
 ---
 # <a name="implementing-syntax-coloring"></a>實作語法著色
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
