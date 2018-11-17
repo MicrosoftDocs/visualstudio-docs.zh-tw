@@ -21,15 +21,15 @@ helpviewer_keywords:
 - debugging [Visual Studio], threads
 ms.assetid: c0c4d74a-0314-4b71-81c9-b0b019347ab8
 caps.latest.revision: 31
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a921fcdcd19114842e026f1ebc3bcb699e200f89
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 585c372a5ffcb71fcc8a2f7e56bb95380b3c41ca
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49256097"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51729519"
 ---
 # <a name="how-to-set-a-thread-name-in-managed-code"></a>如何：在 Managed 程式碼中設定執行緒名稱
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

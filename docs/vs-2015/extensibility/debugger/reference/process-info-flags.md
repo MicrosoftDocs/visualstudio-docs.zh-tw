@@ -17,12 +17,12 @@ ms.assetid: 696951ce-701a-40c2-ac8c-b897f3aae6e2
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e69633a33cfbc3d02b7f458dac08c340d94a4724
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 453c976ec4dd1c0c0b1c1e67592f840c17a9ac9e
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49950689"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51726792"
 ---
 # <a name="processinfoflags"></a>PROCESS_INFO_FLAGS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "49950689"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-enum enum_PROCESS_INFO_FLAGS {   
+enum enum_PROCESS_INFO_FLAGS {   
    PIFLAG_SYSTEM_PROCESS    = 0x00000001,  
    PIFLAG_DEBUGGER_ATTACHED = 0x00000002,  
    PIFLAG_PROCESS_STOPPED   = 0x00000004,  
@@ -42,7 +42,7 @@ typedef DWORD PROCESS_INFO_FLAGS;
 ```  
   
 ```csharp  
-enum enum_PROCESS_INFO_FLAGS {   
+enum enum_PROCESS_INFO_FLAGS {   
    PIFLAG_SYSTEM_PROCESS    = 0x00000001,  
    PIFLAG_DEBUGGER_ATTACHED = 0x00000002,  
    PIFLAG_PROCESS_STOPPED   = 0x00000004,  

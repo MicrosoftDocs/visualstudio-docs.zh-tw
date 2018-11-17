@@ -15,15 +15,15 @@ helpviewer_keywords:
 - BasicType enumeration
 ms.assetid: 19ae53ba-cd6e-47b6-9f94-27ae663ce955
 caps.latest.revision: 10
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 907f577f4489b4597a8feb0bc5ea6792e443a45f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 633fb76a8177f239b988554a5d15bee09e00c2d9
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49810616"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51745026"
 ---
 # <a name="basictype"></a>BasicType
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "49810616"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-enum BasicType {   
+enum BasicType {   
    btNoType   = 0,  
    btVoid     = 1,  
    btChar     = 2,  

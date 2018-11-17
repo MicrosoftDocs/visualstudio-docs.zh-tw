@@ -14,15 +14,15 @@ helpviewer_keywords:
 - process properties, Spy++
 ms.assetid: fe6c9d32-4b81-4dc4-a307-848d23af66ce
 caps.latest.revision: 8
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1e0c58dfd492886a5e4a222ba758c0652f73c014
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 22c09f9b1023242ac2de2b2e8838a74e221e0e54
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49180936"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51801130"
 ---
 # <a name="process-properties-dialog-box"></a>處理序屬性對話方塊
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

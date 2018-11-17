@@ -17,12 +17,12 @@ ms.assetid: 52fca002-a9ef-43b1-9192-afbe7bb59ad4
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ef88b2ff8a3ca2b5ababe2b3cca10522e5e75f4c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c6c1cbc6a5398be4e24729206ed4a69cc667b178
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49914017"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51731014"
 ---
 # <a name="idebugprocess3gethostingprocesslanguage"></a>IDebugProcess3::GetHostingProcessLanguage
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,8 +32,8 @@ ms.locfileid: "49914017"
 ## <a name="syntax"></a>語法  
   
 ```cpp  
-HRESULT GetHostingProcessLanguage(  
-   GUID* pguidLang  
+HRESULT GetHostingProcessLanguage(  
+   GUID* pguidLang  
 );  
 ```  
   

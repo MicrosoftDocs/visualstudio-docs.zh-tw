@@ -16,12 +16,12 @@ ms.assetid: 9dc6c33f-e6cf-4cf2-9b05-e8f7bfac1cfb
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fe76797d64bf2fac4f077fd5c2e5f582cfb0448f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 628c9ef34fc23776672a4252886c091a38f63b4b
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49260711"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51734959"
 ---
 # <a name="vsct-compiler-command-line-flags"></a>VSCT 編譯器命令列旗標
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -44,15 +44,15 @@ Syntax: vsct <infile> [<outfile>] [-S[symbols file]] [-D<preprocessor-define>]*
 [-I<include-path>]* [-L<language>] [-E[C|H|N]:<name>]  
   
   -D    Specify any additional preprocessor defines  
-  -I    Indcate what additional include paths to send to the preprocessor  
-  -L    Specify the langauge to use when selecting strings  
+  -I    Indicate what additional include paths to send to the preprocessor  
+  -L    Specify the language to use when selecting strings  
   -E    Emit C# objects in the specified namespace for command items,  
-        folowed by [L|F|H|N]:<value>  
+        followed by [L|F|H|N]:<value>  
         F = Name of the file to emit (used if -EL is provided)  
         L = Name of a language providing a CodeDOM provider  
         N = namespace (required if -EL is provided)  
         H = C++ header  
-  -c    Clean build skipping dependancy checks  
+  -c    Clean build skipping dependency checks  
   -v    Verbose output  
 ```  
   
@@ -66,7 +66,7 @@ Syntax: vsct <infile> [<outfile>] [-S[symbols file]] [-D<preprocessor-define>]*
 |-D|指定任何其他已定義的符號。|  
 |-I|表示額外的 include 路徑，應在解析檔案參考時使用。|  
 |-L|指定<xref:System.Globalization.CultureInfo>文化特性名稱，例如"EN-US"。|  
-|-E|發出命令項目，後面加上指定的命名空間中的 C# 物件 [C&#124;H&#124;N]:*檔名*其中 C = C# 中，H = c + + 標頭，N = 命名空間。 需要適用於 C# 命名空間。|  
+|-E|發出C#後面接著命令項目，指定的命名空間中的物件 [C&#124;H&#124;N]:*filename*，C = C#，H = c + + 標頭，N = 命名空間。 需要適用於 C# 命名空間。|  
 |-v|詳細資訊輸出。|  
   
  -L 選項會指示編譯器選取一組的字串，以產生對應到二進位檔.cto 檔指定<xref:System.Globalization.CultureInfo>文化特性名稱。 指定的文化特性名稱應該符合 [語言] 屬性的一或多個[Strings 元素](../../extensibility/strings-element.md).vsct 檔案中。 如果字串項目不有任何語言屬性時，它繼承自包含[CommandTable 元素](../../extensibility/commandtable-element.md)。  

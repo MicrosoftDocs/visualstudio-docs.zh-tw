@@ -13,15 +13,15 @@ helpviewer_keywords:
 - IntelliTrace, API reference
 ms.assetid: 46e6c648-293b-45c2-a29e-cca9c36cd865
 caps.latest.revision: 13
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0506044893049c54ff76ebc39e79d84629b51724
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b7194dfa00ba48cc24989f9b9eefdfca30856739
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49295083"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51760278"
 ---
 # <a name="api-reference-for-intellitrace-extensibility"></a>IntelliTrace 擴充性的 API 參考
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

@@ -15,12 +15,12 @@ ms.assetid: 5af08ac7-1d08-4ccf-997e-01aa6cb3d3d7
 caps.latest.revision: 28
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a0568060ec19fc24731850b20dc70dfa7a48231d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9795cd3c40eeff714d55f4bb95f78cf1f7f8aea9
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49247828"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51745878"
 ---
 # <a name="walkthrough-displaying-matching-braces"></a>逐步解說︰顯示成對括弧
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

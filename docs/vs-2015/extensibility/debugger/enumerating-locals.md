@@ -16,12 +16,12 @@ ms.assetid: 254a88e7-d3a7-447a-bd0c-8985e73d85cf
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ccb044c235c364bceff68df0177e7746157186a6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 96ccce43408b61309b7170d06bed7f62d0c82718
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49885209"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51747935"
 ---
 # <a name="enumerating-locals"></a>列舉區域變數
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

@@ -11,15 +11,15 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 670651e6-5e79-4845-b0c2-671beb7055a8
 caps.latest.revision: 7
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2a3188116e3b0316ccb6f3892bdd12d7e7ee2677
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 056c5f5e19a4d1e025969aa40ad75f3852b4201b
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49251806"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51781916"
 ---
 # <a name="vsgdbgvsgdbg-constructor"></a>VsgDbg::VsgDbg (建構函式)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

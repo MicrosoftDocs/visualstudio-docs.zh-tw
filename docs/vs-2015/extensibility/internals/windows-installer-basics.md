@@ -16,12 +16,12 @@ ms.assetid: 497e479b-add8-4644-870a-917f15306b97
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 23f633b57a677996a5f286ca1f5ac4b911b3cdda
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b3756f8e9c8b22b9e6a7da52e076364024fe49d1
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49829309"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51747654"
 ---
 # <a name="windows-installer-basics"></a>Windows Installer 基本概念
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

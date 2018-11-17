@@ -17,12 +17,12 @@ ms.assetid: ad2ee898-8648-4671-9078-d32873862346
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1b94b1503e5f12cbcb7aa120fd816302d9a305b5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8ff97c4ffeac4b25aa92da3213525ad35ae444a3
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49844584"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51801273"
 ---
 # <a name="debugreason"></a>DEBUG_REASON
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,18 +32,18 @@ ms.locfileid: "49844584"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-enum enum_DEBUG_REASON {  
+enum enum_DEBUG_REASON {  
    DEBUG_REASON_ERROR         = 0,  
    DEBUG_REASON_USER_LAUNCHED = 1,  
    DEBUG_REASON_USER_ATTACHED = 2,  
    DEBUG_REASON_AUTO_ATTACHED = 3,  
    DEBUG_REASON_CAUSALITY     = 4  
 };  
-typedef DWORD DEBUG_REASON;  
+typedef DWORD DEBUG_REASON;  
 ```  
   
 ```csharp  
-public enum enum_DEBUG_REASON {  
+public enum enum_DEBUG_REASON {  
    DEBUG_REASON_ERROR         = 0,  
    DEBUG_REASON_USER_LAUNCHED = 1,  
    DEBUG_REASON_USER_ATTACHED = 2,  

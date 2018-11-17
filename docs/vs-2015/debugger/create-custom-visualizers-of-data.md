@@ -25,15 +25,15 @@ helpviewer_keywords:
 - visualizers
 ms.assetid: c24c006f-f2ac-429f-89db-677fc0c6e1ea
 caps.latest.revision: 31
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1fccaad8cb22bdd5193f2a674c5a9c6bafb49a7a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d8433af07b5f1315e73e6916e58123fcd14bddf0
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49217629"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51792850"
 ---
 # <a name="create-custom-visualizers-of-data"></a>建立資料的自訂視覺化檢視
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

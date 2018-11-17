@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaEnumTables::Next method
 ms.assetid: 8d7bd359-d33e-4317-9674-d89283efd7de
 caps.latest.revision: 12
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b566d40e34b38eb5f1d2a10afc1df50e4f5199cb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ebb9dc6c3e9cb6ade79c2109fbb267a7c2c22b05
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49896311"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51776521"
 ---
 # <a name="idiaenumtablesnext"></a>IDiaEnumTables::Next
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "49896311"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT Next (   
+HRESULT Next (   
    ULONG       celt,  
    IDiaTable** rgelt,  
    ULONG*      pceltFetched  

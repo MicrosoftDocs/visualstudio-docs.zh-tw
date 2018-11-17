@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaSymbol::get_isAggregated method
 ms.assetid: 24d280ef-6ea3-4958-9418-4ad3ca7c67c1
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d7170082d0c3d06ed7eb4ac50f0a2c7c22fc3057
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: db1d709395eb632d5e0136fdb9f67d7fa4a843eb
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49932945"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51776092"
 ---
 # <a name="idiasymbolgetisaggregated"></a>IDiaSymbol::get_isAggregated
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

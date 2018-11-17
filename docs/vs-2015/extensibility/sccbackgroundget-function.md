@@ -17,12 +17,12 @@ ms.assetid: 69817e52-b9ac-4f4d-820b-2cc9c384f0dc
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d2e6adbfbf5132fef6d53debe6731a2c1509eaab
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a2b56f2a094a736e93d9bef7074939855d0e60ab
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49865085"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51730562"
 ---
 # <a name="sccbackgroundget-function"></a>SccBackgroundGet 函式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

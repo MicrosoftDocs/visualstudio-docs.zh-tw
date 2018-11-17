@@ -22,15 +22,15 @@ helpviewer_keywords:
 - aspnet_wp.exe
 ms.assetid: b58e97b1-e62a-4318-aea4-52276ea20735
 caps.latest.revision: 35
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a07e492bf8c3ae71b430acd5bde69a852b96baee
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d5d9e9cbadd2b7154eeb84bad99239e0b026eecd
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49280184"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51734439"
 ---
 # <a name="how-to-run-the-worker-process-under-a-user-account"></a>如何：在使用者帳戶下執行背景工作處理序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

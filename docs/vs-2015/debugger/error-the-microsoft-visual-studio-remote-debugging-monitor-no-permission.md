@@ -24,15 +24,15 @@ helpviewer_keywords:
 - remote debugging, Windows version error
 ms.assetid: ba08a59b-6dbc-4bbc-9c52-379d3bf5241f
 caps.latest.revision: 24
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 20accedd9591c777cad26aed30c05954dfabbdfc
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1e3ebc483c581d3283e6c2bd640144aef7554905
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49811085"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51777912"
 ---
 # <a name="error-the-microsoft-visual-studio-remote-debugging-monitor-on-the-remote-computer-does-not-have-permission-to-connect-to-this-computer"></a>錯誤：遠端電腦上的 Microsoft Visual Studio 遠端偵錯監視沒有連接至這部電腦的使用權限
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

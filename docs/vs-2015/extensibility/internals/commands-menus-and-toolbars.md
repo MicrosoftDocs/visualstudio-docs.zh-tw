@@ -17,12 +17,12 @@ ms.assetid: 07b4ed90-dbbd-40df-b6c9-8395fd6f2ab6
 caps.latest.revision: 61
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 982ae747fc1e6370fb6df1e3fd10400c6670b31c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5c9641f788951e79efb392927371bb55b49ec294
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49845352"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51752576"
 ---
 # <a name="commands-menus-and-toolbars"></a>命令、功能表及工具列
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

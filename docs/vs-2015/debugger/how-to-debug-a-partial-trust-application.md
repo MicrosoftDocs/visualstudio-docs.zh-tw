@@ -20,15 +20,15 @@ helpviewer_keywords:
 - security [Visual Studio], partial trust applications
 ms.assetid: 9d30ad92-28ce-4b21-91d8-698474cddf64
 caps.latest.revision: 28
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d6b3b7bb7e880b30e975770ee35dfb537e62827b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 76cce8cfcf57f956b5de16b72f7a275e1d629630
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49288219"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51782046"
 ---
 # <a name="how-to-debug-a-partial-trust-application"></a>How to: Debug a Partial Trust Application
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

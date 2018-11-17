@@ -16,12 +16,12 @@ ms.assetid: 0b25b82c-7432-4e0a-9e84-350269ba8260
 caps.latest.revision: 30
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ded80c0bcb7ac8246d1ac620aa936d63ecb3b04d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6205d01547f7243234facfb43db80303c9b71c51
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49902369"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51720251"
 ---
 # <a name="automation-support-for-options-pages"></a>選項頁的自動化支援
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

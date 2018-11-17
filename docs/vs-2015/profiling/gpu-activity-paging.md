@@ -14,15 +14,15 @@ f1_keywords:
 - vs.cv.threads.timeline.gpupaging
 ms.assetid: 95284ac5-3492-4f7b-a79f-7d2840a07679
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 015fa34d2bb87cf98a64fb3431a6440202cf729b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: cba0335a7090bc8f7308d5a64e8fedebedd99a6e
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49195854"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51789924"
 ---
 # <a name="gpu-activity-paging"></a>GPU 活動 (分頁)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

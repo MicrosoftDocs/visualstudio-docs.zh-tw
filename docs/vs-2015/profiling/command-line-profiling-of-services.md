@@ -14,15 +14,15 @@ helpviewer_keywords:
 - profiling services
 ms.assetid: f0d62318-b0e8-49c6-9a30-9f7a6adef2f6
 caps.latest.revision: 21
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 86613c66cf7c52419d75a858d7ad7d7fbcf6a83d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0d8bffbaa2cf16c81d1d726043590c1b632560e2
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49178775"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51729860"
 ---
 # <a name="command-line-profiling-of-services"></a>服務的命令列程式碼剖析
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

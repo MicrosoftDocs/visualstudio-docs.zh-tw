@@ -15,12 +15,12 @@ ms.assetid: bbd348db-3d19-42eb-99a2-3e808528c0ca
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d4ec48a1392efa67f17432f071c9bf4894c35e87
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 34639c535be14b2bcead44631fb83cf46e4f0eb8
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49304014"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51737232"
 ---
 # <a name="how-to-implement-the-find-and-replace-mechanism"></a>如何： 實作 尋找和取代機制
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

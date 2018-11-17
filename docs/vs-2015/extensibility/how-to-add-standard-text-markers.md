@@ -15,12 +15,12 @@ ms.assetid: a39fca69-0014-474c-933f-51f0e9b9617e
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7deaccc41e506f2ad696fd3e2ec700fcd5367433
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 54dcfc9a1952dc0cd816c2ce7ad83cd8355f0066
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49217863"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51779472"
 ---
 # <a name="how-to-add-standard-text-markers"></a>如何： 新增標準文字標記
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

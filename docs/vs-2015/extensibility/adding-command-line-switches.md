@@ -18,12 +18,12 @@ ms.assetid: 8bbbd87e-76fe-4fb5-8ef9-65f5e31967cf
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 278d7b723bde187fc765c610bd8bc470bb2b2059
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5034e6bcb5aa878c16dbf9dadf478d68276c4fac
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49823568"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51748277"
 ---
 # <a name="adding-command-line-switches"></a>新增命令列參數
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

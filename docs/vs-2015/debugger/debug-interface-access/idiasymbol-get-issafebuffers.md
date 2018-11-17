@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaSymbol::get_isSafeBuffers method
 ms.assetid: f29e373d-e7bb-4181-ab9f-bf708d401d83
 caps.latest.revision: 7
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f88124e86685b8dbdc34e558b8caa026711469be
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3979e3d8d0ea4c3639371f22820b78cba39ac7d6
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49813943"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51778731"
 ---
 # <a name="idiasymbolgetissafebuffers"></a>IDiaSymbol::get_isSafeBuffers
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "49813943"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT get_isSafeBuffers(   
+HRESULT get_isSafeBuffers(   
    BOOL* pRetVal)  
 );  
 ```  

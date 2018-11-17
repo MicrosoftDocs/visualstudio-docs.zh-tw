@@ -17,12 +17,12 @@ ms.assetid: 47ce4f45-3816-4b40-909c-5032d0692d75
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 178cad159272e1c2f98495da813564100513f780
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b01f6a8267feb0aaad7a513cf5927edfaf8889e2
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49811812"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51796073"
 ---
 # <a name="idebugclassfieldgetdefaultindexer"></a>IDebugClassField::GetDefaultIndexer
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "49811812"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT GetDefaultIndexer(   
+HRESULT GetDefaultIndexer(   
    BSTR* pbstrIndexer  
 );  
 ```  

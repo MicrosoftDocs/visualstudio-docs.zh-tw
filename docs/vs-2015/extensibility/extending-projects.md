@@ -16,12 +16,12 @@ ms.assetid: 096d273d-4fe9-4f24-9b00-470bfbdf4bdf
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1d16cf3886fb8b60cf642a3b669b22ac07838a3a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8ad4218447e6cc910ff98970d14a53d83ccc8497
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49175158"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51796567"
 ---
 # <a name="extending-projects"></a>延伸專案
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

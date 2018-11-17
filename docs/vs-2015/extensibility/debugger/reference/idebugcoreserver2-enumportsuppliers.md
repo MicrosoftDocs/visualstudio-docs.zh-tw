@@ -17,12 +17,12 @@ ms.assetid: ce0c90e4-8e02-4b08-b558-7677fb2c88f7
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e0cc1ebf536bba6cab71cc3c75ff818feb94acc3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 71de6947e23137f7bf70d952c124206cb17aada3
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49825240"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51773648"
 ---
 # <a name="idebugcoreserver2enumportsuppliers"></a>IDebugCoreServer2::EnumPortSuppliers
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,14 +32,14 @@ ms.locfileid: "49825240"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT EnumPortSuppliers(  
-   IEnumDebugPortSuppliers2** ppEnum  
+HRESULT EnumPortSuppliers(  
+   IEnumDebugPortSuppliers2** ppEnum  
 );  
 ```  
   
 ```csharp  
-int EnumPortSuppliers(  
-   out IEnumDebugPortSuppliers2 ppEnum  
+int EnumPortSuppliers(  
+   out IEnumDebugPortSuppliers2 ppEnum  
 );  
 ```  
   

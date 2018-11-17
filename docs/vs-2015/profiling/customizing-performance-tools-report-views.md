@@ -14,15 +14,15 @@ helpviewer_keywords:
 - reports, customizing profiling report views
 ms.assetid: 5224ac52-0fc2-4269-8eb2-ead7fda3afd4
 caps.latest.revision: 21
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b6de9d7e99ee592af0fde59c4ebe1d4765b3325a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9b7022dd8603c166bf976c1b2b90c422fd6d569e
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49189263"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51731253"
 ---
 # <a name="customizing-performance-tools-report-views"></a>自訂效能工具報表檢視
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

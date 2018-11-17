@@ -18,15 +18,15 @@ dev_langs:
 - C++
 ms.assetid: 0468de6c-3ff1-4979-a8c6-8afb53f37547
 caps.latest.revision: 13
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7b8ba032d30999ec1dcf9f135aab0e2b03364aa2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f0075050b6d24b63ed8380644ad9ec50dd4aa8ec
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49246944"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51737673"
 ---
 # <a name="unable-to-attach-to-the-process"></a>無法附加到處理序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

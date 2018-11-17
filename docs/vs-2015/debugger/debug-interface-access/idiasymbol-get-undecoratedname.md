@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaSymbol::get_undecoratedName method
 ms.assetid: e49edf25-a51d-4787-bd5b-2bf5af827c8c
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7b5a2d25452db4487855d6327239bc5b9eef276a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 95f84b5d5c58ddd5f9968ff9722588ec18771721
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49893087"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51762450"
 ---
 # <a name="idiasymbolgetundecoratedname"></a>IDiaSymbol::get_undecoratedName
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "49893087"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT get_undecoratedName (   
+HRESULT get_undecoratedName (   
    BSTR* pRetVal  
 );  
 ```  

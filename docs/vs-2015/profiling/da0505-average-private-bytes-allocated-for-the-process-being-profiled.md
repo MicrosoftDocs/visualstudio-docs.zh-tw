@@ -15,15 +15,15 @@ f1_keywords:
 - vs.performance.505
 ms.assetid: 32c612ea-d077-44ba-8e6f-3a96333bad00
 caps.latest.revision: 13
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c851015c9f811fc6a15f7b6c2ca037a6a30af113
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 60f1bce7fe6f0199928e68dcc86b5062e327209a
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49187420"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51789950"
 ---
 # <a name="da0505-average-private-bytes-allocated-for-the-process-being-profiled"></a>DA0505：為進行程式碼剖析的處理序所配置的平均私用位元組
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

@@ -15,15 +15,15 @@ helpviewer_keywords:
 - ArrayType symbol
 ms.assetid: 1d973a3a-2bde-46df-8625-85d519bb3cc9
 caps.latest.revision: 18
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 15ad3485e48529f875bf4c0cb11dc4442e287513
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: fae2f6fc1ca0c33580e45e95b5bc10f11c99e94e
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49207333"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51788507"
 ---
 # <a name="arraytype"></a>ArrayType
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

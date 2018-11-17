@@ -37,15 +37,15 @@ helpviewer_keywords:
 - Visual Basic projects, debug and release builds
 ms.assetid: 57b6bbb7-f2af-48f7-8773-127d75034ed2
 caps.latest.revision: 48
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7e0dae046e02685e7ce1d6ce7f744b568e47c5eb
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ba827fda69b1dc455df4efe9c9f6eb83687780f3
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49243122"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51758488"
 ---
 # <a name="how-to-set-debug-and-release-configurations"></a>如何：設定偵錯和發行組態
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

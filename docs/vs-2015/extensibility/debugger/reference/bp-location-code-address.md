@@ -17,12 +17,12 @@ ms.assetid: 83c9da8b-19d9-4be5-b225-854543654901
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e0f3264dd61f4f5a125e83eb80552c4d6e550123
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 91eee5330927fc766d9afc13243c709a19f5e9c5
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49862784"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51775546"
 ---
 # <a name="bplocationcodeaddress"></a>BP_LOCATION_CODE_ADDRESS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "49862784"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-typedef struct _BP_LOCATION_CODE_ADDRESS {   
+typedef struct _BP_LOCATION_CODE_ADDRESS {   
    BSTR bstrContext;  
    BSTR bstrModuleUrl;  
    BSTR bstrFunction;  

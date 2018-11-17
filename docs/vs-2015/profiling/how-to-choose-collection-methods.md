@@ -15,15 +15,15 @@ helpviewer_keywords:
 - performance collection methods
 ms.assetid: c87cfd3a-0fc7-49ae-9c05-d8480891cc63
 caps.latest.revision: 39
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 20617a8c05a0d9b9a57f0a181a4c985d7ffc1f4e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6ca8018b572671f349c058e314b26f7897e421b9
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49940953"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51727620"
 ---
 # <a name="how-to-choose-collection-methods"></a>如何：選擇收集方法
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

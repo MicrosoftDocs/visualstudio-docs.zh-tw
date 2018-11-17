@@ -15,12 +15,12 @@ ms.assetid: f1b05db3-50d8-453f-a72f-e68b239236a4
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5bd0a7fb88d1964b0f5fe804527a9890fe69258f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 54a2e48960fa3103e5a927a4d2fac43e881ae072
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49262297"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51724459"
 ---
 # <a name="idebugdocumentpositionoffset2"></a>IDebugDocumentPositionOffset2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

@@ -17,12 +17,12 @@ ms.assetid: 3d039a44-ebaa-4413-ac18-7cfd92c408bd
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8bc32ccaa3c65d4a478bb1b120fcf7dcdd230200
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7ad2ac0171661a2f17ffac1653157d0cee232054
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49844922"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51745073"
 ---
 # <a name="idebugdisassemblystream2getdocument"></a>IDebugDisassemblyStream2::GetDocument
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,14 +32,14 @@ ms.locfileid: "49844922"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT GetDocument(   
+HRESULT GetDocument(   
    BSTR              bstrDocumentUrl,  
    IDebugDocument2** ppDocument  
 );  
 ```  
   
 ```csharp  
-int GetDocument(   
+int GetDocument(   
    string              bstrDocumentUrl,  
    out IDebugDocument2 ppDocument  
 );  

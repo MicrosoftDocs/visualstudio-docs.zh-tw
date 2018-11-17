@@ -16,12 +16,12 @@ ms.assetid: 148de615-941e-4b64-ab11-75b692aae465
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 265334331e2530d5d568f3e61efa846982e08674
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 64b6c069abe04f25e7aa82b579cf4d905686dcf4
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49910858"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51770521"
 ---
 # <a name="idebugfunctionobject2createobject"></a>IDebugFunctionObject2::CreateObject
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

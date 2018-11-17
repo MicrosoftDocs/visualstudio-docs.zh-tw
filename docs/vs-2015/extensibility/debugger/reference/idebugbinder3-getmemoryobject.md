@@ -17,12 +17,12 @@ ms.assetid: 71d959c7-45df-485f-b0ee-f1c0439d54fb
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3ccbded4ef1f8006703afa6bf8d628b701c73588
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f93d6a76abdca5104a6187405d2141b125eaa342
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49821562"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51777496"
 ---
 # <a name="idebugbinder3getmemoryobject"></a>IDebugBinder3::GetMemoryObject
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,18 +32,18 @@ ms.locfileid: "49821562"
 ## <a name="syntax"></a>語法  
   
 ```cpp  
-HRESULT GetMemoryObject(  
-   IDebugField*   pField,  
-   UINT64         uConstant,  
-   IDebugObject** ppObject  
+HRESULT GetMemoryObject(  
+   IDebugField*   pField,  
+   UINT64         uConstant,  
+   IDebugObject** ppObject  
 );  
 ```  
   
 ```csharp  
-int GetMemoryObject(  
-   IDebugField      pField,  
-   long             uConstant,  
-   out IDebugObject ppObject  
+int GetMemoryObject(  
+   IDebugField      pField,  
+   long             uConstant,  
+   out IDebugObject ppObject  
 );  
 ```  
   

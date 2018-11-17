@@ -17,12 +17,12 @@ ms.assetid: 9d860a20-c154-4df4-ba15-636e0fcd42bf
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1c317a4743411125cb088357f9fe66939381cf9e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f91944d669557daabd40805be2f096538b160bce
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49924183"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51733499"
 ---
 # <a name="idebugcoreserver3disableautoattach"></a>IDebugCoreServer3::DisableAutoAttach
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,13 +32,13 @@ ms.locfileid: "49924183"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT DisableAutoAttach(  
+HRESULT DisableAutoAttach(  
    void  
 );  
 ```  
   
 ```csharp  
-int DisableAutoAttach();  
+int DisableAutoAttach();  
 ```  
   
 ## <a name="return-value"></a>傳回值  

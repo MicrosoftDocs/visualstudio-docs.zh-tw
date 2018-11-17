@@ -21,15 +21,15 @@ helpviewer_keywords:
 - Windows Service applications, debugging
 ms.assetid: ac0a99f7-ec3d-4a20-b17f-698a817fdcc2
 caps.latest.revision: 23
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 417f45d64fa68b1bf35e12e6c559b3a423ed597a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c27748e15b45538f826d681a1780f87c515d7641
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49286529"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51780200"
 ---
 # <a name="debugging-preparation-windows-services"></a>偵錯準備：Windows 服務
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

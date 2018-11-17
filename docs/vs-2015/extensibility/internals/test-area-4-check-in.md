@@ -16,12 +16,12 @@ ms.assetid: d0329fa8-7a8d-4d30-b67b-6f2a97b75a30
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8ca7336686fae4c62a274779ea1ad8b13fcb84ef
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 97a610325a5165a1de2cc50fede5bbabf182ef5e
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49285008"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51783299"
 ---
 # <a name="test-area-4-check-in"></a>測試區域 4︰簽入
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

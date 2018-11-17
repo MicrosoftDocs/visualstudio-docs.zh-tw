@@ -18,15 +18,15 @@ helpviewer_keywords:
 - disassembly code, errors
 ms.assetid: 112d3ea3-fdd2-4bce-92b4-167a76258934
 caps.latest.revision: 10
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2236a585c063194940cf505a0b1d225ae766e2a9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: dd959a572e29e172f3acede5fe56a33547111086
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49197882"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51720802"
 ---
 # <a name="debugger-cannot-display-source-code-or-disassembly"></a>偵錯工具無法顯示原始程式碼或反組譯碼
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

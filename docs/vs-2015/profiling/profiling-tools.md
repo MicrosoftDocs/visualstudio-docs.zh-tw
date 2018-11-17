@@ -13,15 +13,15 @@ f1_keywords:
 - vs.diagnosticshub.overview
 ms.assetid: 0fb6cd5d-e16a-4526-84a5-19e63c625bc5
 caps.latest.revision: 26
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: feeab1d1f00a681ee3af40436b395d0149cc3334
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 380e98a8cd52fe77486dae245eee910a65a41057
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49244033"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51782098"
 ---
 # <a name="profiling-tools"></a>程式碼剖析工具
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

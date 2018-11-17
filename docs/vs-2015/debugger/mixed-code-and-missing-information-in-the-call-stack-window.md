@@ -29,15 +29,15 @@ helpviewer_keywords:
 - stepping, out of managed code
 ms.assetid: dd628427-e8d6-4fc2-b524-9d6393ea5376
 caps.latest.revision: 23
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b594d5cfdee66ccdca2859a7ff0fc90fc5afb536
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6f4ae8e527e5f6ce04680c444baad58802bfad48
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49825448"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51788923"
 ---
 # <a name="mixed-code-and-missing-information-in-the-call-stack-window"></a>呼叫堆疊視窗內的混合程式碼和遺失的資訊
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

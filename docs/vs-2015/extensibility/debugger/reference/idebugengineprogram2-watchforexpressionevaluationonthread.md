@@ -17,12 +17,12 @@ ms.assetid: 01d05e77-8cac-4d1b-b19f-25756767ed27
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4ec22d837a27ce30b721f0dcd8ca3229f362a5aa
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d283005a4fee97502c160840c2330c9413fb3ac9
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49853112"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51772140"
 ---
 # <a name="idebugengineprogram2watchforexpressionevaluationonthread"></a>IDebugEngineProgram2::WatchForExpressionEvaluationOnThread
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "49853112"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT WatchForExpressionEvaluationOnThread(   
+HRESULT WatchForExpressionEvaluationOnThread(   
    IDebugProgram2*       pOriginatingProgram,  
    DWORD                 dwTid,  
    DWORD                 dwEvalFlags,  
@@ -42,7 +42,7 @@ HRESULT WatchForExpressionEvaluationOnThread(
 ```  
   
 ```csharp  
-int WatchForExpressionEvaluationOnThread(   
+int WatchForExpressionEvaluationOnThread(   
    IDebugProgram2       pOriginatingProgram,  
    uint                  dwTid,  
    uint                  dwEvalFlags,  

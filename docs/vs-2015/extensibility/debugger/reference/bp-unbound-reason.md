@@ -17,12 +17,12 @@ ms.assetid: 939b6f9c-113b-471d-9f30-b03871af6285
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5f98c13b2f87492d9aea1ea6d3cc03fd7bf4a1d3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d533af6d046e6e5f2b4ade9b1ccd3c51b775cffd
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49834515"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51779563"
 ---
 # <a name="bpunboundreason"></a>BP_UNBOUND_REASON
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "49834515"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-enum enum_BP_UNBOUND_REASON {   
+enum enum_BP_UNBOUND_REASON {   
    BPUR_UNKNOWN           = 0x0000,  
    BPUR_CODE_UNLOADED     = 0x0002,  
    BPUR_BREAKPOINT_REBIND = 0x0003,  
@@ -42,7 +42,7 @@ typedef DWORD BP_UNBOUND_REASON;
 ```  
   
 ```csharp  
-public enum enum_BP_UNBOUND_REASON {   
+public enum enum_BP_UNBOUND_REASON {   
    BPUR_UNKNOWN           = 0x0000,  
    BPUR_CODE_UNLOADED     = 0x0002,  
    BPUR_BREAKPOINT_REBIND = 0x0003,  

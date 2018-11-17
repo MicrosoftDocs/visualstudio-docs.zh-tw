@@ -20,15 +20,15 @@ helpviewer_keywords:
 - remote servers, debugging Web applications
 ms.assetid: 1cd777b5-6d20-4ca6-a0df-51653b118469
 caps.latest.revision: 30
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 448e6e7705e4df7330abce0e919adc705721102c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 72fef031e0e1b9c07c96f683cecb520c8924de53
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49227287"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51799453"
 ---
 # <a name="prerequistes-for-remote-debugging-web-applications"></a>Web 應用程式遠端偵錯的必要條件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

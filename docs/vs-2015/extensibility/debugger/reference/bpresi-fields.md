@@ -17,12 +17,12 @@ ms.assetid: 99f17b1e-3e67-4f85-89d6-5c6cf45c8008
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c589622678c3b499ac705c834348bdf38c6eae80
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 166ce76f427362601d4b0c4010d4814c3e165031
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49879359"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51735778"
 ---
 # <a name="bpresifields"></a>BPRESI_FIELDS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "49879359"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-enum enum_BPRESI_FIELDS {   
+enum enum_BPRESI_FIELDS {   
    BPRESI_BPRESLOCATION = 0x0001,  
    BPRESI_PROGRAM       = 0x0002,  
    BPRESI_THREAD        = 0x0004,  
@@ -42,7 +42,7 @@ typedef DWORD BPRESI_FIELDS;
 ```  
   
 ```csharp  
-public enum enum_BPRESI_FIELDS {   
+public enum enum_BPRESI_FIELDS {   
    BPRESI_BPRESLOCATION = 0x0001,  
    BPRESI_PROGRAM       = 0x0002,  
    BPRESI_THREAD        = 0x0004,  

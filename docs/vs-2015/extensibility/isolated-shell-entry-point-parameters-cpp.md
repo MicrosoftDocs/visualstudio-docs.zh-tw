@@ -16,12 +16,12 @@ ms.assetid: 18f4b18b-2173-4afa-ba0a-42fe33e61118
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 879d9e2cc40ebce42565d5eb8c607502ae17c2df
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 270a5c932429a518447d0029b05d3c9522db7387
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49830752"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51749154"
 ---
 # <a name="isolated-shell-entry-point-parameters-c"></a>Isolated 的 Shell 進入點參數 （c + +）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

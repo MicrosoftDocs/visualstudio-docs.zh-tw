@@ -23,15 +23,15 @@ helpviewer_keywords:
 - Assertion Failed dialog box
 ms.assetid: 64af5bed-e38b-420f-b9ce-d64f35100aae
 caps.latest.revision: 10
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: edb218b98b5eb07faaa222acfba33fd64877313c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 14a5179a88587f85784a2e16425c246a9cbfe497
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49181372"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51770479"
 ---
 # <a name="assertion-failed-dialog-box"></a>判斷提示已失敗對話方塊
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

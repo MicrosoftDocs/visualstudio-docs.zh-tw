@@ -14,15 +14,15 @@ helpviewer_keywords:
 - Domain-Specific Language, connection builder
 ms.assetid: 2ddee315-23a3-4785-9f26-0a68bd62c61a
 caps.latest.revision: 17
-author: alancameronwills
-ms.author: awills
+author: gewarren
+ms.author: gewarren
 manager: kamrani
-ms.openlocfilehash: e0246e2d476d7ddd51f302c98fd358ffa83d409d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 35cb5ed06f8887feaba6780d43d34368476a0a23
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49172948"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51728036"
 ---
 # <a name="customizing-link-creation---redirection"></a>自訂連結建立 - 重新導向
 本主題的內容已合併至下列主題：  

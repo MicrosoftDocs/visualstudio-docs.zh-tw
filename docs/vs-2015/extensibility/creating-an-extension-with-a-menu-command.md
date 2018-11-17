@@ -18,12 +18,12 @@ ms.assetid: f97104c8-2bcb-45c7-a3c9-85abeda8df98
 caps.latest.revision: 57
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: cc470e08511c7bda44bfda2012636b626ba41e83
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: fb99149a7b617d8e48e036d9e706e5e1c0a6169b
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49925925"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51779303"
 ---
 # <a name="creating-an-extension-with-a-menu-command"></a>建立具有功能表命令的延伸模組
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

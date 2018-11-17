@@ -16,12 +16,12 @@ ms.assetid: 512ab2a4-7987-4912-8f40-8804bf66f829
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9dd3dee875cfe7af7e482204130abc53bcaba616
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d1c16b0688cd5fa07fee8be0296958b23aa8c0ae
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49305743"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51742330"
 ---
 # <a name="how-to-provide-automation-for-windows"></a>如何： 提供的 Windows 自動化
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

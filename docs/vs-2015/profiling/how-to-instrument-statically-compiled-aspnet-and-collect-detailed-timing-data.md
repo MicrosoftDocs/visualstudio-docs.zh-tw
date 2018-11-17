@@ -11,15 +11,15 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: b260ce68-76e6-4c3b-8062-3c00bd5cf7b8
 caps.latest.revision: 28
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fcaecdb171bede89f98e49c2010b81cde9a2b5e7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 482c0d69bb7af968c0005aba6c6c7a4913f9e553
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49908934"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51801728"
 ---
 # <a name="how-to-instrument-a-statically-compiled-aspnet-web-application-and-collect-detailed-timing-data-with-the-profiler-by-using-the-command-line"></a>如何：使用命令列以程式碼剖析工具檢測靜態編譯的 ASP.NET Web 應用程式並收集詳細計時資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

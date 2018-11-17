@@ -23,15 +23,15 @@ helpviewer_keywords:
 - kernel debugger
 ms.assetid: 630a7abd-3303-4aaa-888a-6de3de14bc01
 caps.latest.revision: 26
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: acae508dee0e5ed0897af4914a935cc62fabff66
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: eea2e7d8277bc67df75be3d05d907a8bd13c29c5
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49231799"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51725280"
 ---
 # <a name="error-debugging-isn39t-possible-because-a-kernel-debugger-is-enabled-on-the-system"></a>錯誤： 偵錯不&#39;t，可能因為在系統上啟用核心偵錯
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

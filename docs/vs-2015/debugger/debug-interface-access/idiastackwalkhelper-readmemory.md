@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaStackWalkHelper2::readMemory method
 ms.assetid: e1eb90aa-49b7-476c-9e70-7e8f08994cbe
 caps.latest.revision: 14
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0c843291aa87671d11293b72795222af9e96b03d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9d1b2cd284611956be58c677f849236b246269fc
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49904422"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51745834"
 ---
 # <a name="idiastackwalkhelperreadmemory"></a>IDiaStackWalkHelper::readMemory
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "49904422"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT readMemory(   
+HRESULT readMemory(   
    enum MemoryTypeEnum type,  
    ULONGLONG           va,  
    DWORD               cbData,  

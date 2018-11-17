@@ -17,12 +17,12 @@ ms.assetid: 8bf47a17-f811-4d9b-bcea-7488908830ff
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d073b2e9d48283bc62a4c8270d2279a4a4c18d3a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c7581df74595ff589dda5df1a8cdbdb8445a4b25
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49867672"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51768727"
 ---
 # <a name="idebugthreaddestroyevent2getexitcode"></a>IDebugThreadDestroyEvent2::GetExitCode
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,13 +32,13 @@ ms.locfileid: "49867672"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT GetExitCode (   
+HRESULT GetExitCode (   
    DWORD* pdwExit  
 );  
 ```  
   
 ```csharp  
-int GetExitCode (   
+int GetExitCode (   
    out uint pdwExit  
 );  
 ```  

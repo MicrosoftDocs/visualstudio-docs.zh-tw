@@ -22,15 +22,15 @@ dev_langs:
 - C++
 ms.assetid: bde37134-66af-4273-b02e-05b3370c31ab
 caps.latest.revision: 19
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c321ec5cc69689dbe251b10da2e985e5511813d5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 56982a3b5c0a0d8a5cb0b682ab67b6f5eb133dd1
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49829352"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51793044"
 ---
 # <a name="debug-multiple-processes"></a>偵錯多重處理序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

@@ -15,15 +15,15 @@ helpviewer_keywords:
 - Concurrency::diagnostic::marker_series constructor
 ms.assetid: 042c7d23-f1d8-4e09-9e76-a21c30243790
 caps.latest.revision: 8
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6dfd38ef661ad050d36c8a157186094bc5316caf
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d1a19415712c0a115e4d80ecb3401559c699316c
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49190823"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51795696"
 ---
 # <a name="markerseriesmarkerseries-constructor"></a>marker_series::marker_series 建構函式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

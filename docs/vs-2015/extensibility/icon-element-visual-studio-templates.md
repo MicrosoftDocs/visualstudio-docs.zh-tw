@@ -17,12 +17,12 @@ ms.assetid: ec01d903-f4c2-4ca2-9cbc-e939ec84016c
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f05aa7ad86061158b9a36bd232ae6e80d3f22107
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4a08efd526c12c60be1bdf8e015fd5028f57e50b
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49281810"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51772570"
 ---
 # <a name="icon-element-visual-studio-templates"></a>圖示項目 (Visual Studio 範本)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

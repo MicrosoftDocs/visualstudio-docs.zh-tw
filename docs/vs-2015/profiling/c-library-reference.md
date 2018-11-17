@@ -13,15 +13,15 @@ helpviewer_keywords:
 - Concurrency Visualizer SDK, C Library Reference
 ms.assetid: 46907a60-25e2-470d-a650-ae7349f868fd
 caps.latest.revision: 8
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d991f804347976315fec090c684656b68c640865
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8cb6800423e49c23f00f5980210b7e252f2c1c3b
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49220112"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51740627"
 ---
 # <a name="c-library-reference"></a>C 程式庫參考
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

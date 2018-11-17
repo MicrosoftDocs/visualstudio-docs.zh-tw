@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaSymbol::get_age method
 ms.assetid: 60d05654-e832-4a2e-a4a7-fe9922c459fe
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 360bd975ce21c91d9fa6a414cde9272a50effd84
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 740b3903977642d129907df9c75a643d091b0206
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49853788"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51724984"
 ---
 # <a name="idiasymbolgetage"></a>IDiaSymbol::get_age
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "49853788"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT get_age (   
+HRESULT get_age (   
    DWORD* pRetVal  
 );  
 ```  

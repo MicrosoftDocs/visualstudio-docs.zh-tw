@@ -23,15 +23,15 @@ helpviewer_keywords:
 - DOM Explorer [Windows Store apps]
 ms.assetid: 6d156cff-36c6-425a-acf8-e1f02d4f7869
 caps.latest.revision: 104
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9ba8f8be0d078856833b807f5d0f6ca29f346c22
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 710bafe2383d95358ba06a287a300d9aea7baf66
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49873925"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51729981"
 ---
 # <a name="quickstart-debug-html-and-css"></a>快速入門：偵錯 HTML 和 CSS
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

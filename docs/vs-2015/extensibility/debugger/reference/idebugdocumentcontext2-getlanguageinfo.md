@@ -17,12 +17,12 @@ ms.assetid: 6a212ee5-414c-4eb5-ab11-19db1786943d
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 12133be8bea54b78dedcebf8c10ce19fde59a18a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e1a75daf781126437003e975839a9d1b9c1292ef
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49841295"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51769948"
 ---
 # <a name="idebugdocumentcontext2getlanguageinfo"></a>IDebugDocumentContext2::GetLanguageInfo
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,14 +32,14 @@ ms.locfileid: "49841295"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT GetLanguageInfo(   
+HRESULT GetLanguageInfo(   
    BSTR* pbstrLanguage,  
    GUID* pguidLanguage  
 );  
 ```  
   
 ```csharp  
-int GetLanguageInfo(   
+int GetLanguageInfo(   
    out string pbstrLanguage,  
    out Guid   pguidLanguage  
 );  

@@ -16,12 +16,12 @@ ms.assetid: 1313adb4-add4-4e74-90e2-f4be522f5259
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4bac7d9ce3c4fc0af02366f1b325faf6412759cc
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7a68d9f5dac293cc9048cb4b84aaa487c5079250
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49268953"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51748829"
 ---
 # <a name="visual-studio-command-table-vsct-files"></a>Visual Studio 命令表檔案 (.Vsct)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

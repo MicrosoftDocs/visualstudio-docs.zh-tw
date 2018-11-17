@@ -18,15 +18,15 @@ dev_langs:
 - C++
 ms.assetid: 2d9a177a-e14b-404f-a6af-49498eff0bd7
 caps.latest.revision: 24
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f0bcc8f110918a84c8b5f5f6b126169c110dd567
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ff03e5e07c07b4516009c7606f8a8ea183c57298
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49939915"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51732488"
 ---
 # <a name="create-custom-views-of-native-objects"></a>建立原生物件的自訂檢視
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

@@ -17,12 +17,12 @@ ms.assetid: 6040181f-7288-4a42-953c-d23f74200431
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 582d010128bc384cecfc316871f53e95082337d1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ef6a7c20bb54a6f9692eb87ad2bef1f866f98c28
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49833430"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51735958"
 ---
 # <a name="idebugdocumenttextevents2oninserttext"></a>IDebugDocumentTextEvents2::onInsertText
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,14 +32,14 @@ ms.locfileid: "49833430"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT onInsert(   
+HRESULT onInsert(   
    TEXT_POSITION pos,  
    DWORD         dwNumToInsert  
 );  
 ```  
   
 ```csharp  
-int onInsert(   
+int onInsert(   
    enum_TEXT_POSITION pos,  
    uint               dwNumToInsert  
 );  

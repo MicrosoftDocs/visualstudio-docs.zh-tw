@@ -17,12 +17,12 @@ ms.assetid: f2ca8ff8-539f-457c-83f8-9bbf97618065
 caps.latest.revision: 6
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: efe49a0eb58975ebc9b6c6e8bfcce310cff774a9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1b9ce150eac3137c9fd078fd111b83a517f1b825
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49902486"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51729909"
 ---
 # <a name="ienumdebugaddressesgetcount"></a>IEnumDebugAddresses::GetCount
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

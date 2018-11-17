@@ -20,15 +20,15 @@ helpviewer_keywords:
 - controls [Visual Studio], ActiveX
 ms.assetid: 9f6e1f00-e25b-48a9-8484-7e67a1232461
 caps.latest.revision: 18
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b993d6a6121c4e7631a51877cbfffa231e0714ea
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ae8863b8622987c0676646f45b5659945971c464
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49177134"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51768869"
 ---
 # <a name="debugging-a-data-bound-activex-control"></a>偵錯資料繫結的 ActiveX 控制項
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

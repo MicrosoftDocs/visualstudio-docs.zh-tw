@@ -15,12 +15,12 @@ ms.assetid: 2d371d38-f1a0-4a9a-8ea3-100e8c0149b7
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 384d785b6d4779f8269e93fedcf6b841e73d9e05
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 076fc9aee3cf794d587b736c2bd0d37f572d30ea
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49222095"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51729513"
 ---
 # <a name="debugger-concepts"></a>偵錯工具概念
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

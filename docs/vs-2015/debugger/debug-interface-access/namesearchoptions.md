@@ -15,15 +15,15 @@ helpviewer_keywords:
 - NameSearchOptions enumeration
 ms.assetid: 67dfbede-2678-47df-b664-5c49841d0b9b
 caps.latest.revision: 18
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4b5efb8578ea5a5984f3d10a90f1daa3490566ac
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 17896f1a32ab939a7f2ee5a2ebd863136ea5aaa1
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49921687"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51771334"
 ---
 # <a name="namesearchoptions"></a>NameSearchOptions
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "49921687"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-enum NameSearchOptions {   
+enum NameSearchOptions {   
    nsNone,  
    nsfCaseSensitive     = 0x1,  
    nsfCaseInsensitive   = 0x2,  

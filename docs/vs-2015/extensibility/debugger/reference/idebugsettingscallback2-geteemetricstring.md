@@ -15,12 +15,12 @@ ms.assetid: 85e3c093-6a91-4101-ab32-d8ac6eed4918
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8fb4cc020afb3044fc3f21cc4bd721f62be13808
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f6a9ca8db857caddf3b35ea8d0b03bae7bab273b
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49850018"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51773687"
 ---
 # <a name="idebugsettingscallback2geteemetricstring"></a>IDebugSettingsCallback2::GetEEMetricString
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

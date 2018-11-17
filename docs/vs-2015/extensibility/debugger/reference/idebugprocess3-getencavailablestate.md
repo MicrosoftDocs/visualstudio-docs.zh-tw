@@ -17,12 +17,12 @@ ms.assetid: 98a5d527-8a72-476c-8e92-0bff3d97c195
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 51ac83db6e1491a40f1bf0321336657e535d9161
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c0f1dac7fec0fa88fe8878dc6dc37c24eb3e0fdc
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49838981"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51747601"
 ---
 # <a name="idebugprocess3getencavailablestate"></a>IDebugProcess3::GetENCAvailableState
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,8 +32,8 @@ ms.locfileid: "49838981"
 ## <a name="syntax"></a>語法  
   
 ```cpp  
-HRESULT GetENCAvailableState(  
-   EncUnavailableReason* pReason  
+HRESULT GetENCAvailableState(  
+   EncUnavailableReason* pReason  
 );  
 ```  
   

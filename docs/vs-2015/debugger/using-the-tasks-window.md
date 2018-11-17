@@ -20,15 +20,15 @@ helpviewer_keywords:
 - debugger, parallel tasks window
 ms.assetid: bd5e0612-a0dc-41cf-a7af-1e87d0d5c35f
 caps.latest.revision: 23
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 638c0c44be94398da8b1964a849ad99011044f78
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: fa59e1e57750c9c2075c10c76ab5c518ed0e8686
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49226196"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51793896"
 ---
 # <a name="using-the-tasks-window"></a>使用工作視窗
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

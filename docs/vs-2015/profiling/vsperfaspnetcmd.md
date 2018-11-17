@@ -14,15 +14,15 @@ helpviewer_keywords:
 - VSPerfASPNETCmd
 ms.assetid: f9e9f895-57bb-41e8-8bd1-cdaa738ec220
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8eb58532e6198198b43bbcf6c24d6afefa95b935
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8b252304061cb6f28439ed388d4950d9ba067013
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49306549"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51773219"
 ---
 # <a name="vsperfaspnetcmd"></a>VSPerfASPNetCmd
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

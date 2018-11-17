@@ -15,15 +15,15 @@ helpviewer_keywords:
 - Concurrency Visualizer, Thread Ready
 ms.assetid: 68e1ec38-4b10-4b01-b32f-6c9a00b2443c
 caps.latest.revision: 12
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fe7bd10426dd9d101cbbee8dff1067e99c832e66
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c44d365381a4ac6b6a7e25d61362f2d7167b7027
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49239742"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51802090"
 ---
 # <a name="thread-ready-connector"></a>執行緒就緒連接器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

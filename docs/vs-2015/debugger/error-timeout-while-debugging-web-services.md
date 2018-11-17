@@ -19,15 +19,15 @@ helpviewer_keywords:
 - XML Web services, timeout while debugging
 ms.assetid: 4b7df112-788a-4429-9a0c-4c6dac4fb609
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5b84ac5a8142250f9c71d9617a6717a1962b7106
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 985082d675da2a56d9880414809d91e92cb1fe0d
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49190329"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51736336"
 ---
 # <a name="error-timeout-while-debugging-web-services"></a>錯誤：偵錯 Web 服務時逾時
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

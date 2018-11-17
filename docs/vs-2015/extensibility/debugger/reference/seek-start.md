@@ -17,12 +17,12 @@ ms.assetid: 55bd8901-626e-428b-a263-23b14417f4c6
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9a12e72ea6534bed226ece7aa79788e48813797f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 791bc722484519dec88bf40c1207de16cd15c516
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49903851"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51773245"
 ---
 # <a name="seekstart"></a>SEEK_START
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "49903851"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-enum enum_SEEK_START {   
+enum enum_SEEK_START {   
    SEEK_START_BEGIN       = 0x0001,  
    SEEK_START_END         = 0x0002,  
    SEEK_START_CURRENT     = 0x0003,  
@@ -43,7 +43,7 @@ typedef DWORD SEEK_START;
 ```  
   
 ```csharp  
-public enum enum_SEEK_START {   
+public enum enum_SEEK_START {   
    SEEK_START_BEGIN       = 0x0001,  
    SEEK_START_END         = 0x0002,  
    SEEK_START_CURRENT     = 0x0003,  

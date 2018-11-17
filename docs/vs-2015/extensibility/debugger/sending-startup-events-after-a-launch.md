@@ -15,12 +15,12 @@ ms.assetid: 306ea0b4-6d9e-4871-8d8d-a4032d422940
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9460a1e314828ee827d617d34f35ce8a51aeebff
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0cc0642c085510e69fe7cd16abe195095c993219
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49878639"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51769121"
 ---
 # <a name="sending-startup-events-after-a-launch"></a>在啟動後傳送啟動事件
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

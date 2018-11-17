@@ -14,15 +14,15 @@ helpviewer_keywords:
 - code analysis, samples
 ms.assetid: 09e1b9f7-5916-4ed6-a001-5c2d7e710682
 caps.latest.revision: 23
-author: corob-msft
-ms.author: gewarren
+author: mikeblome
+ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 5bcdb1e026808071167b23b829597a4d28775c02
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2ca480078bf269e8af662d94910a5d337c13bcd8
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49880652"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51722370"
 ---
 # <a name="demo-sample"></a>示範範例
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

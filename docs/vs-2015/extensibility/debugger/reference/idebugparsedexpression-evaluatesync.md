@@ -17,12 +17,12 @@ ms.assetid: 0ea04cfa-de87-4b6c-897e-4572c1a28942
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c68ef39b49ec929c829b85dd65f24c89efc2c61e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: eeab923edb2622d93ab7bab1aead08193ecd8686
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49833510"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51786895"
 ---
 # <a name="idebugparsedexpressionevaluatesync"></a>IDebugParsedExpression::EvaluateSync
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "49833510"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT EvaluateSync(   
+HRESULT EvaluateSync(   
    DWORD                 dwEvalFlags,  
    DWORD                 dwTimeout,  
    IDebugSymbolProvider* pSymbolProvider,  

@@ -19,15 +19,15 @@ helpviewer_keywords:
 - event listeners, viewing [Windows Store apps]
 ms.assetid: d5b679e7-87dd-4cec-9176-883db6ff0781
 caps.latest.revision: 26
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d9d6f5c913cb2868df1af25470eb69f84575ffab
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f1e0cf0abc35c87de3c7caa3ed00e57cb07cf987
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49223297"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51727385"
 ---
 # <a name="view-dom-event-listeners"></a>檢視 DOM 事件接聽程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

@@ -16,12 +16,12 @@ ms.assetid: 0ce7c21d-0d3f-47fe-a0bb-eed506e32609
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 22dcd12eb366504ee1e7cdd19970ffe9913241bd
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c51696cd41083e81fb1561eb8707c4f4844b32d5
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49862914"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51742646"
 ---
 # <a name="authoring-a-windows-installer-package"></a>編寫 Windows Installer 套件
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

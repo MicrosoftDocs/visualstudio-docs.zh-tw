@@ -16,12 +16,12 @@ ms.assetid: a8e2765c-cfb5-47b5-a414-6e48b434e0c2
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8a301357765f85d80afb71985d51044227204997
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6a5a0e205d04fb219d000dd87e97735cdfd26162
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49256234"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51748752"
 ---
 # <a name="adding-visual-studio-commands-to-a-start-page"></a>將 Visual Studio 命令新增至起始頁
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

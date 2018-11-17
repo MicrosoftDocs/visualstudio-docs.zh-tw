@@ -19,12 +19,12 @@ ms.assetid: e34cfc2c-361c-44f8-9cfe-9f2be229d248
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8ab10152afbefbdc49f0934f3fd062a74a2a1f30
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 56ddcae38593d35bc8a31628bf3087dc79ca25c4
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49915590"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51732552"
 ---
 # <a name="signing-vsix-packages"></a>簽署 VSIX 套件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

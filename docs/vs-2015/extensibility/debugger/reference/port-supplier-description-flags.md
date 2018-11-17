@@ -15,12 +15,12 @@ ms.assetid: 5acee0ee-3a20-41c9-a7dc-0dadae6a5ba5
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3df00e08311396611119cd509837890bd5c5ad2d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e7a9d86e988ae982bc6fbb5f184452f4ed103840
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49932165"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51771958"
 ---
 # <a name="portsupplierdescriptionflags"></a>PORT_SUPPLIER_DESCRIPTION_FLAGS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

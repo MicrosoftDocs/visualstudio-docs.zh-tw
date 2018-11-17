@@ -15,15 +15,15 @@ helpviewer_keywords:
 - Concurrency Visualizer, Cores View Timeline
 ms.assetid: 10f0c666-ac2f-4ac5-9fb5-a88f660ab840
 caps.latest.revision: 10
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8aefbaf557cd6388fb90d722fa698b33c9582428
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 90fcbe540c8ce91f219d629e28ee3006379f3df4
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49277104"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51800220"
 ---
 # <a name="cores-view-timeline"></a>核心檢視時間表
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
