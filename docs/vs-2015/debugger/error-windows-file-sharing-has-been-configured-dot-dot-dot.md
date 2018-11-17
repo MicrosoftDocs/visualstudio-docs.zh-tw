@@ -18,15 +18,15 @@ dev_langs:
 - C++
 ms.assetid: c45a1b74-61ec-4c64-9e2c-13051a4f50a5
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 579234bd705975876e9adebd4a784f0af6c01375
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 30a2fd01828d92fadeb901305f56ad8c65b863d3
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49298209"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51803912"
 ---
 # <a name="error-windows-file-sharing-has-been-configured"></a>錯誤：Windows 檔案共用已設定...
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

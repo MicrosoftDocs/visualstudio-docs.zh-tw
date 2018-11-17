@@ -16,15 +16,15 @@ helpviewer_keywords:
 - profiler result files, how to compare
 ms.assetid: 1905b45d-c6b3-43c8-87b1-1aee734f37f9
 caps.latest.revision: 25
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8a4860296945c623052efd6c5817215401210783
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: cf80c86f233a40ba0d65d239ae1668d575a66bb2
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49190563"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51752626"
 ---
 # <a name="how-to-compare-performance-data-files"></a>如何：比較效能資料檔案
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

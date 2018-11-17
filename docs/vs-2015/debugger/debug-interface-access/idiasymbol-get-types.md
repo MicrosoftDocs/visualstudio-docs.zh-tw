@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaSymbol::get_types method
 ms.assetid: 5f056e0c-e15b-4e00-8f78-aadc8574f7ea
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5c611805e2a077caec0a617deda8ac744e0b4e1a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6d22c6c973fbbd57694849e5ca7d7c7d46f79eb0
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49817311"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51766247"
 ---
 # <a name="idiasymbolgettypes"></a>IDiaSymbol::get_types
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "49817311"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT get_types (   
+HRESULT get_types (   
    DWORD       cTypes,  
    DWORD*      pcTypes,  
    IDiaSymbol* types[]  

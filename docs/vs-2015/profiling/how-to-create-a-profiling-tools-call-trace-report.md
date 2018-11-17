@@ -14,15 +14,15 @@ helpviewer_keywords:
 - ETW [Visual Studio ALM], viewing data
 ms.assetid: 7640520a-7d3c-456c-b184-872a5d2f82f3
 caps.latest.revision: 24
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6b3d54c0d9c053b8ea35b6f8000135b259f8323a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7699e169477dd0933532ff95a874d52dcf0e97d9
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49251897"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51775390"
 ---
 # <a name="how-to-create-a-profiling-tools-call-trace-report"></a>如何：建立程式碼剖析工具呼叫追蹤報表
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

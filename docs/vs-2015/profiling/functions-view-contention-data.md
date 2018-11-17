@@ -13,15 +13,15 @@ helpviewer_keywords:
 - Functions view
 ms.assetid: 208773b0-1a54-4b7a-ad37-2b6fd4f731d4
 caps.latest.revision: 15
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 661700a9faba7886294db904d8676277dd0501d1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4ada92736312501d05504cf7b69ad07b549f31df
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49214574"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51765262"
 ---
 # <a name="functions-view---contention-data"></a>函式檢視 - 爭用資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

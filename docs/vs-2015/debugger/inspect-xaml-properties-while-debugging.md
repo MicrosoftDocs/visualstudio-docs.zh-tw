@@ -16,15 +16,15 @@ dev_langs:
 - C++
 ms.assetid: 390edde4-7b8d-4c89-8d69-55106b7e6b11
 caps.latest.revision: 6
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 282b93ac9f04f5e547567e8380e65826f433ba2d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a30f04c3d2b2d109816ff8bcfbf17fe483f24886
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49282252"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51758864"
 ---
 # <a name="inspect-xaml-properties-while-debugging"></a>在偵錯時檢查 XAML 屬性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

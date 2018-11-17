@@ -17,12 +17,12 @@ ms.assetid: fbcc42a7-7851-487f-b981-8c4ae7ec7347
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 64b5c47c769901455b02d6b08f859562846a0c0c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7786dee558300b493b8f290f4c34ff66992d8563
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49183205"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51774727"
 ---
 # <a name="visual-studio-debugging-samples"></a>Visual Studio 偵錯範例
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

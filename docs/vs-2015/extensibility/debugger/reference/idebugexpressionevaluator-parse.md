@@ -17,12 +17,12 @@ ms.assetid: e6e31b3a-63a7-4293-bcda-267eb78dffb6
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0f389cd10178a5a5e72f3cb3f909c1fb067baa5e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d4d772ce5eda094b80a520d8fba4bd41f0b90d17
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49884279"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51804514"
 ---
 # <a name="idebugexpressionevaluatorparse"></a>IDebugExpressionEvaluator::Parse
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "49884279"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT Parse(   
+HRESULT Parse(   
    LPCOLESTR                upstrExpression,  
    PARSEFLAGS               dwFlags,  
    UINT                     nRadix,  

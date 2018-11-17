@@ -17,12 +17,12 @@ ms.assetid: 111c2b85-ebfa-487f-b896-2ec4a3eac4d1
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6b28d55ed3398642fbd5a42e8b60607b443ffd74
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f390a0686a2405e6cdf41a2fab82b6c6b3824262
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49911963"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51799219"
 ---
 # <a name="idebugdocument2getdocumentclassid"></a>IDebugDocument2::GetDocumentClassID
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,13 +32,13 @@ ms.locfileid: "49911963"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT GetDocumentClassID(   
+HRESULT GetDocumentClassID(   
    CLSID* pclsid  
 );  
 ```  
   
 ```csharp  
-int GetDocumentClassID(   
+int GetDocumentClassID(   
    out Guid pclsid  
 );  
 ```  

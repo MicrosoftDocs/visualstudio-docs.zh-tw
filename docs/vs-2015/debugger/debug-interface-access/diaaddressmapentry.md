@@ -15,15 +15,15 @@ helpviewer_keywords:
 - DiaAddressMapEntry enumeration
 ms.assetid: 5d0ae226-981d-4541-a801-fc4993fe663b
 caps.latest.revision: 12
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3f1b06773cbc160c683c87c0ec2cd8b4f54436f9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: fa2824b7fbd10e7628e5c6b0a016615620933df9
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49910663"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51756243"
 ---
 # <a name="diaaddressmapentry"></a>DiaAddressMapEntry
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "49910663"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-struct DiaAddressMapEntry {   
+struct DiaAddressMapEntry {   
    DWORD rva,  
    DWORD rvaTo  
 };  

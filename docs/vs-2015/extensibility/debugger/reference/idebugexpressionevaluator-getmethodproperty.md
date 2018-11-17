@@ -17,12 +17,12 @@ ms.assetid: c394fe4d-eeb6-4feb-828c-098d84a6f1ba
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 51541aebd0e476519970216b2fdb848e3db89d5e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 83925ee249dacc819aade95452f49e812cc62b91
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49811760"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51797243"
 ---
 # <a name="idebugexpressionevaluatorgetmethodproperty"></a>IDebugExpressionEvaluator::GetMethodProperty
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "49811760"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT GetMethodProperty(   
+HRESULT GetMethodProperty(   
    IDebugSymbolProvider* pSymbolProvider,  
    IDebugAddress*        pAddress,  
    IDebugBinder*         pBinder,  

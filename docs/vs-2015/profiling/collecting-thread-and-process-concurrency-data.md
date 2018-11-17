@@ -14,15 +14,15 @@ helpviewer_keywords:
 - Profiling Tools, concurrency method
 ms.assetid: fa03d381-a9ee-408c-876d-05111e29225b
 caps.latest.revision: 19
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2956d5f5ce4cf8f210466f7b7006a158eee6ce43
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: df473bea51edd157e3856d274663b72dcc11bc23
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49885053"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51762610"
 ---
 # <a name="collecting-thread-and-process-concurrency-data"></a>收集執行緒和處理序並行資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

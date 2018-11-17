@@ -15,12 +15,12 @@ ms.assetid: 81331a7b-6bec-46e4-a53e-515d0fad2400
 caps.latest.revision: 4
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2c323e58fa7a6f1df021e188cb05bfa14fa47895
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: dcd1988777b2fc09b3ea8d060b103c334aaef5a4
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49203004"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51753702"
 ---
 # <a name="asyncvoidmethodbuildermobjectidfordebugger-field"></a>AsyncVoidMethodBuilder.m_objectIdForDebugger 欄位
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

@@ -16,12 +16,12 @@ ms.assetid: 392e3063-f0a0-4130-9583-23bd2aa3fa36
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7ccca82d8716b57f854d6527bf462bb6ec687abb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0ab350133813f32b87570ea17df50060f93bc300
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49859781"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51788918"
 ---
 # <a name="combo-element"></a>Combo 項目
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

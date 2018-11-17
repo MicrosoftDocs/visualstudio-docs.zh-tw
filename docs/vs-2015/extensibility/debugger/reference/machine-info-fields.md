@@ -17,12 +17,12 @@ ms.assetid: 2d61d206-7d40-4df1-8c88-1b3c9c78821e
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: cfcb00115ec4cdde5944ffb22d685cb23068bca6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: efedc30b1e58388438127776a69b41ebb7b480ca
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49929409"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51763670"
 ---
 # <a name="machineinfofields"></a>MACHINE_INFO_FIELDS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "49929409"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-enum enum_MACHINE_INFO_FIELDS {   
+enum enum_MACHINE_INFO_FIELDS {   
    MCIF_NAME  = 0x00000001,  
    MCIF_FLAGS = 0x00000002,  
    MCIF_ALL   = 0x00000003  
@@ -41,7 +41,7 @@ typedef DWORD MACHINE_INFO_FIELDS;
 ```  
   
 ```csharp  
-public enum enum_MACHINE_INFO_FIELDS {   
+public enum enum_MACHINE_INFO_FIELDS {   
    MCIF_NAME  = 0x00000001,  
    MCIF_FLAGS = 0x00000002,  
    MCIF_ALL   = 0x00000003  

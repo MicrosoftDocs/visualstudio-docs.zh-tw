@@ -17,12 +17,12 @@ ms.assetid: b5e439d4-1e9d-4e13-9cad-bb8b136d4ca8
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 301a782ebf0eda9b1e97c9f0f09c10a0985de4c2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ebd9f1881f0e0579a3b319f6608cdbf348ed027b
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49271592"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51789326"
 ---
 # <a name="stack-frames"></a>堆疊框架
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

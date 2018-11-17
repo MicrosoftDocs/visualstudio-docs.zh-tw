@@ -18,12 +18,12 @@ ms.assetid: b32c12f9-b34d-43bd-a1b9-61af6cf8e51b
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 82b944211e4664b02555f2d0568f380e72970e70
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 804be8c41fdd775111e79c572fc421edb891ff81
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49843611"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51765218"
 ---
 # <a name="idebugboundbreakpoint2setpasscount"></a>IDebugBoundBreakpoint2::SetPassCount
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -33,13 +33,13 @@ ms.locfileid: "49843611"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT SetPassCount(   
+HRESULT SetPassCount(   
    BP_PASSCOUNT bpPassCount  
 );  
 ```  
   
 ```csharp  
-int SetPassCount(   
+int SetPassCount(   
    BP_PASSCOUNT bpPassCount  
 );  
 ```  

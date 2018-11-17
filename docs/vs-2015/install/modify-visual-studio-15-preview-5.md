@@ -20,12 +20,12 @@ caps.latest.revision: 12
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: e854f73d0a19a3dd7523f3db1a0c5558e364d8fc
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: caf0da003d177a93aa9aae09a90e7ffc997e86dc
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49263878"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51806005"
 ---
 # <a name="modify-visual-studio-2017"></a>修改 Visual Studio 2017
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

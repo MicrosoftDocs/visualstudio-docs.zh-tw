@@ -17,12 +17,12 @@ ms.assetid: 7b5578b4-a20a-4b94-ad4c-98687ac133b9
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 69ea15c814472303ffd3a0097e7e61777805d487
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 356b3d49fa8eb74ef2352e6ba36597d1c39fecf4
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49263220"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51751536"
 ---
 # <a name="outlining-in-a-legacy-language-service"></a>在舊版語言服務中製作大綱
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

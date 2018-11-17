@@ -13,15 +13,15 @@ dev_langs:
 - C++
 ms.assetid: d195aec4-6d3c-42e0-88a5-3d463539f0b8
 caps.latest.revision: 6
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6ab46c39f3a2d478a9e3f75a47bd8b2596ce4432
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7bbfa079e3944162fbf67e3a2c14f21149e6b785
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49199624"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51766859"
 ---
 # <a name="idiasymbolgetisacceleratorpointertagliverange"></a>IDiaSymbol::get_isAcceleratorPointerTagLiveRange
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

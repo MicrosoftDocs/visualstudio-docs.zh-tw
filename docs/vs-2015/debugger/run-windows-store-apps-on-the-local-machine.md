@@ -16,15 +16,15 @@ dev_langs:
 - C++
 ms.assetid: e42a21a8-6423-4caf-b4dc-72b263e76019
 caps.latest.revision: 18
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b460d1eecfe96cddce27926ee8e31aae258d8dcf
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 40fafcbdacac8a63a4aba70526a473d091b35de8
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49188379"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51766834"
 ---
 # <a name="run-windows-store-apps-on-the-local-machine"></a>在本機電腦上執行 Windows 市集應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

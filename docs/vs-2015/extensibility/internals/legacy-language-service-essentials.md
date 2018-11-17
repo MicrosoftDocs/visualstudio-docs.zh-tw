@@ -18,12 +18,12 @@ ms.assetid: c15e0ccb-e7c5-4dbb-affb-fe3d3244debe
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d66a7f249bd2e084b15293f1efc356767ed7d7d5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7c878c4fe124d0443ab5f926a03a378b5b4af014
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49229069"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51753638"
 ---
 # <a name="legacy-language-service-essentials"></a>舊版語言服務的基本資訊
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

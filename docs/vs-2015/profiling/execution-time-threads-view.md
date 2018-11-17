@@ -15,15 +15,15 @@ helpviewer_keywords:
 - Concurrency Visualizer, Execution Time (Threads View)
 ms.assetid: 80c100f8-2502-4613-bfef-4f4f2e09cc8d
 caps.latest.revision: 15
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 14e873196767c295ea3f333bbf8ef5217dc79d44
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 89dd600976e151c377db8ebb2c0e67935c23e006
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49251196"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51789859"
 ---
 # <a name="execution-time-threads-view"></a>執行時間 (執行緒檢視)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

@@ -18,15 +18,15 @@ dev_langs:
 - C++
 ms.assetid: 414580a0-175e-4a61-b82e-6755c8f7d208
 caps.latest.revision: 7
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8caded198e3eeaa324d439d4d8756c20f054b022
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: eb7b52a0403a1a982e398a3ac6e90a3fe1256ada
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49218760"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51784217"
 ---
 # <a name="symbol-load-information-dialog-box"></a>符號載入資訊對話方塊
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

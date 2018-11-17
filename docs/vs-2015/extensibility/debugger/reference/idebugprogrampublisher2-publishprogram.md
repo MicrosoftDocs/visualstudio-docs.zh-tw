@@ -17,12 +17,12 @@ ms.assetid: 92ff63f0-e869-4040-b3ae-b2c899e708ff
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c2beb511d89653aa9ad242ececc9e0c06611da8b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 53ddd111710eccb14fba2a6d2a4a9a3648c51f4e
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49838552"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51755207"
 ---
 # <a name="idebugprogrampublisher2publishprogram"></a>IDebugProgramPublisher2::PublishProgram
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,18 +32,18 @@ ms.locfileid: "49838552"
 ## <a name="syntax"></a>語法  
   
 ```cpp  
-HRESULT PublishProgram(  
-   CONST_GUID_ARRAY Engines,  
-   LPCOLESTR        szFriendlyName,  
-   IUnknown*        pDebuggeeInterface  
+HRESULT PublishProgram(  
+   CONST_GUID_ARRAY Engines,  
+   LPCOLESTR        szFriendlyName,  
+   IUnknown*        pDebuggeeInterface  
 );  
 ```  
   
 ```csharp  
-int PublishProgram(  
-   CONST_GUID_ARRAY Engines,  
-   string           szFriendlyName,  
-   object           pDebuggeeInterface  
+int PublishProgram(  
+   CONST_GUID_ARRAY Engines,  
+   string           szFriendlyName,  
+   object           pDebuggeeInterface  
 );  
 ```  
   

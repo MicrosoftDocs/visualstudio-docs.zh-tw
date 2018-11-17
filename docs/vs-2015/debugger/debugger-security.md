@@ -20,15 +20,15 @@ helpviewer_keywords:
 - security [Visual Studio], debugging best practices
 ms.assetid: d4fc3c43-e844-419c-8dbb-551cc2a9b09e
 caps.latest.revision: 21
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ed03ae8ace6fe96c579d324422403d69e2248687
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7f8166c7aea86b0decad84631f8c98054ee69253
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49881959"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51765361"
 ---
 # <a name="debugger-security"></a>偵錯工具安全性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

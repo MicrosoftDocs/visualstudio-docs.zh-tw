@@ -16,12 +16,12 @@ ms.assetid: 8e16c381-03c8-404e-92ef-3614cdf3150a
 caps.latest.revision: 53
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: dd8c6efd96d8b70f2f23f526041f2f83867bbd2f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 887466c588bf76c10e3fbf0487eb0da590121ec5
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49245423"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51784828"
 ---
 # <a name="adding-a-tool-window"></a>新增工具視窗
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

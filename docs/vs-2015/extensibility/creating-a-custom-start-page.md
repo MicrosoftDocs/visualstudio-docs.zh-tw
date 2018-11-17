@@ -13,12 +13,12 @@ ms.assetid: d67e0c53-9f5a-45fb-a929-b9d2125c3c82
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 052f05c3485e9ecdfbfe74b6a142c44c7b0699ff
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 87f653a6ac745253ae86eb6bf8dfab92169ac4db
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49239781"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51806057"
 ---
 # <a name="creating-a-custom-start-page"></a>建立自訂起始頁
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

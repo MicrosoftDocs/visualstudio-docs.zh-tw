@@ -17,12 +17,12 @@ ms.assetid: 7b2be4b9-e3fe-4412-874f-ae72ebc84c4b
 caps.latest.revision: 50
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 20ec62586f9a725c1a33da60986d3c8729f0e402
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 36dcc3742b745f8933f340b8df966b1f621d6998
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49260997"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51793148"
 ---
 # <a name="extending-menus-and-commands"></a>延伸功能表和命令
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

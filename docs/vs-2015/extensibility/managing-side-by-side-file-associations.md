@@ -15,12 +15,12 @@ ms.assetid: 9b6df3bc-d15c-4a5d-9015-948a806193b7
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ddcca5b79c858ab9331202b36d5ea9ff1ddca60f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 171342bf920c2cf1e56da78f5cc7a4bb6d87ea0c
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49889395"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51764778"
 ---
 # <a name="managing-side-by-side-file-associations"></a>管理並存的檔案關聯
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

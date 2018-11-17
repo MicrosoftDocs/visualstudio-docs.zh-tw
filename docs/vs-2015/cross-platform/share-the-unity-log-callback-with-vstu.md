@@ -11,15 +11,15 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 5d71f906-6e50-4399-b59b-d38c6dfef7ee
 caps.latest.revision: 5
-author: TerryGLee
-ms.author: tglee
+author: conceptdev
+ms.author: crdun
 manager: ghogen
-ms.openlocfilehash: 9e309f7d7340eb73de587c7a5f569377354dbab9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 278258d50f82fc55e26caf51d5989b2a7c4583fb
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49186858"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51758462"
 ---
 # <a name="share-the-unity-log-callback-with-vstu"></a>與 VSTU 共用 Unity 記錄回呼
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

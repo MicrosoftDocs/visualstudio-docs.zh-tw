@@ -18,12 +18,12 @@ ms.assetid: 2d472a24-3813-4f5f-9783-b491ad8a71ad
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5f5f567ecad10e900cc57ed210526b077cd5e94f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 509dffa0d2a474059277dbb3df2ba984fa35fe42
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49882232"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51751164"
 ---
 # <a name="feedback-to-the-user"></a>使用者的意見反應
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

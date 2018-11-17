@@ -114,15 +114,15 @@ helpviewer_keywords:
 - /MAP linker option
 ms.assetid: 860c7f13-a108-4fe5-8fca-d235cd3ca1cb
 caps.latest.revision: 52
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 05667c982daa35910bb1d4e1d895fb2bef50fb78
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 404bbc753b2729ad5ec7625fa01803b8a6bdf5c8
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49193462"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51800792"
 ---
 # <a name="project-settings-for-a-c-debug-configuration"></a>C++ 偵錯組態的專案設定
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

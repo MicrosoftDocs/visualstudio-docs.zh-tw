@@ -13,15 +13,15 @@ helpviewer_keywords:
 - Summary view
 ms.assetid: 0a3b3a1f-e22b-4ac8-b46e-71694e9b2cf1
 caps.latest.revision: 16
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ae151d944dc85f62e72e0719e6bb2dccc0f21637
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 73883b29dfd98e9ad5955505fa8840db815ec218
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49172428"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51725002"
 ---
 # <a name="summary-view---instrumentation-data"></a>摘要檢視 - 檢測資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaStackWalkHelper::searchForReturnAddressStart method
 ms.assetid: 0a33142e-5d31-44ea-874a-a2e94d95cbd2
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5e00afc5468cf7bc9fc499a055683bd27775332f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 14501945db96f1e95c33c50e312e92447e266cca
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49907556"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51775975"
 ---
 # <a name="idiastackwalkhelpersearchforreturnaddressstart"></a>IDiaStackWalkHelper::searchForReturnAddressStart
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "49907556"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT searchForReturnAddressStart(   
+HRESULT searchForReturnAddressStart(   
    IDiaFrameData*  frame,  
    ULONGLONG       startAddress,  
    ULONGLONG*      returnAddress  

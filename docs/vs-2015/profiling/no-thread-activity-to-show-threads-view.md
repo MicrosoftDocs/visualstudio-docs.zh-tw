@@ -15,15 +15,15 @@ helpviewer_keywords:
 - Concurrency Visualizer, No Thread Activity to Show (Threads View)
 ms.assetid: aa5ae9d0-561d-4ef8-b36b-258ce553d50a
 caps.latest.revision: 13
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 89945746195a7176524611b9d3ef666d86362ad3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: bd4707607b62add2591179df247d3c47705fca7f
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49178408"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51737306"
 ---
 # <a name="no-thread-activity-to-show-threads-view"></a>沒有執行緒活動可顯示 (執行緒檢視)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

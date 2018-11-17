@@ -17,12 +17,12 @@ ms.assetid: 662ca0a6-dad0-4c00-a718-bb3bbc5bd9da
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 228c19b596cb8b9069cba5f36ec980f1f86d69aa
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ccf17bf9c0a700312d04325f571d6979fcb0fa39
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49913289"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51796242"
 ---
 # <a name="ipropertyproxyeesideresolveassemblyref"></a>IPropertyProxyEESide::ResolveAssemblyRef
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

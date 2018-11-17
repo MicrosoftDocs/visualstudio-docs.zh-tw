@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaSectionContrib::get_compiland method
 ms.assetid: c0496f6f-f8f2-435f-8674-6c32db6c5934
 caps.latest.revision: 12
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9960232884ed0c41de75a2c643ebc19f24b95e83
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f8b14bb3b08c019515350277ca11a04883394fbb
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49866866"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51765067"
 ---
 # <a name="idiasectioncontribgetcompiland"></a>IDiaSectionContrib::get_compiland
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "49866866"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT get_compiland (   
+HRESULT get_compiland (   
    IDiaSymbol** pRetVal  
 );  
 ```  

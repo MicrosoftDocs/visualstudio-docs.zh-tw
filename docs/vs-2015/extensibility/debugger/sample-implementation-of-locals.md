@@ -16,12 +16,12 @@ ms.assetid: 66a2e00a-f558-4e87-96b8-5ecf5509e04c
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 23a24e36b34e1e7d5fa781153cbf5d6cd86a8df1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2ca64ed08060df3a03dbb178fc636ca243e1e48d
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49219735"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51756819"
 ---
 # <a name="sample-implementation-of-locals"></a>區域變數的範例實作
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

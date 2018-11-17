@@ -19,15 +19,15 @@ helpviewer_keywords:
 - SDI server applications, debugging
 ms.assetid: 09713718-1376-4753-b119-26f36639693e
 caps.latest.revision: 18
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ba975d21e1fbef2d32b45dd4ebdc758e8b6cf575
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ea0497c7d20c0102aff3bc77cdecf87d1525a82c
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49199064"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51752414"
 ---
 # <a name="sdi-server-applications"></a>SDI 伺服器應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

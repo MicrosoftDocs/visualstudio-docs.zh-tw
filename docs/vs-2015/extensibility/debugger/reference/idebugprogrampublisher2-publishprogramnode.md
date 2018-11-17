@@ -17,12 +17,12 @@ ms.assetid: d4b72e04-f726-46cf-8e56-5203ff205b12
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b807986d6cf257e29b6593ac782a2781843741d9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6a4d7ec693fb482f11195f4d431a04acb3d1fead
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49879333"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51781229"
 ---
 # <a name="idebugprogrampublisher2publishprogramnode"></a>IDebugProgramPublisher2::PublishProgramNode
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,14 +32,14 @@ ms.locfileid: "49879333"
 ## <a name="syntax"></a>語法  
   
 ```cpp  
-HRESULT PublishProgramNode(  
+HRESULT PublishProgramNode(  
    IDebugProgramNode2 *pProgramNode  
 );  
 ```  
   
 ```csharp  
-int PublishProgramNode(  
-   IDebugProgramNode2 pProgramNode  
+int PublishProgramNode(  
+   IDebugProgramNode2 pProgramNode  
 );  
 ```  
   

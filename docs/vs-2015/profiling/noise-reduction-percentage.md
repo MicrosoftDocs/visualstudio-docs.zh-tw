@@ -15,15 +15,15 @@ helpviewer_keywords:
 - Concurrency Visualizer, Noise Reduction Percentage
 ms.assetid: 1c10cd4c-2fdd-48c9-b562-a334b3b2df6c
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 82aca1dce25fab3ab344f4192e1c2e13ede8276a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1c18f99093a084bd47eded32781a6e8629b3d784
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49254484"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51775130"
 ---
 # <a name="noise-reduction-percentage"></a>雜訊減少百分比
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

@@ -13,15 +13,15 @@ f1_keywords:
 - vs.graphics.callstack
 ms.assetid: 8a30168d-8b39-4de1-b094-c7356ba101a3
 caps.latest.revision: 12
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 99a7bf8b128d75744925c12396a26515aca9d7c1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7c6ac7860fe846c86d846fd668c4647cd4145756
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49216331"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51762844"
 ---
 # <a name="graphics-event-call-stack"></a>圖形事件呼叫堆疊
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

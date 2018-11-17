@@ -17,12 +17,12 @@ ms.assetid: 54c72e23-cd4c-4746-935c-abea8057dd1b
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: dea169c35124ae48aa27754e208d1d904f45c8e2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b7c51905b5e497c5540b7f12854813f4a3409be5
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49838305"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51795423"
 ---
 # <a name="ienumdebugcustomattributesskip"></a>IEnumDebugCustomAttributes::Skip
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "49838305"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT Skip (   
+HRESULT Skip (   
    ULONG celt  
 );  
 ```  

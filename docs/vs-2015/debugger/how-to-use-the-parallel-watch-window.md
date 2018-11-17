@@ -20,15 +20,15 @@ helpviewer_keywords:
 - debugger, parallel watch window
 ms.assetid: 28004d9b-420c-48f7-b80e-ab1519802558
 caps.latest.revision: 19
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a5d8354c850d1f55d229ce3f1205ca0bf0fe5f13
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 43783ad2b7d0f08aace55ff3b974d64301a38db2
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49837070"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51753132"
 ---
 # <a name="how-to-use-the-parallel-watch-window"></a>如何：使用平行監看式視窗
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

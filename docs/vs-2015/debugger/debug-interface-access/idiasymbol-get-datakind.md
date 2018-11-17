@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaSymbol::get_dataKind method
 ms.assetid: 45005ad0-8b29-4cde-9d33-6bef72f6e463
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f118d3a7b2e9e7c1c0051b16b4ec035c62e728c1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ddf5c96bff7aea3d033f46dee1122de12efe5d48
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49928564"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51772998"
 ---
 # <a name="idiasymbolgetdatakind"></a>IDiaSymbol::get_dataKind
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "49928564"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT get_dataKind (   
+HRESULT get_dataKind (   
    DWORD* pRetVal  
 );  
 ```  

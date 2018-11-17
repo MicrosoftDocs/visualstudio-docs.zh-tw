@@ -17,12 +17,12 @@ ms.assetid: c460f772-d08a-4b36-81f3-dff6a51a93fd
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a2a111a27771738076b6118a43fc77cf7ea4b711
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 477da4c1430c6eac41c60365e3e9f2418b94167a
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49853372"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51816849"
 ---
 # <a name="idebugobjectisreadonly"></a>IDebugObject::IsReadOnly
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "49853372"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT IsReadOnly(   
+HRESULT IsReadOnly(   
    BOOL* pfIsReadOnly  
 );  
 ```  

@@ -17,12 +17,12 @@ ms.assetid: d714455c-e4fc-48dc-a6d4-7e8b5d7c1bce
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6db503bc269c1060ab8f757a58cb66f2f50069df
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5b882118b7236d66a3c6bede81c94f33733de059
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49831935"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51762891"
 ---
 # <a name="ienumdebugports2getcount"></a>IEnumDebugPorts2::GetCount
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

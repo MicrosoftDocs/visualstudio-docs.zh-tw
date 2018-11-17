@@ -20,15 +20,15 @@ helpviewer_keywords:
 - troubleshooting Web applications
 ms.assetid: 1624e4af-018e-4b7c-9a00-063bfe97fb7d
 caps.latest.revision: 13
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 96e16b6b1ba1b971cdce71e9ad17b112bf1f0148
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a68adce6e44885b216c053abbd5f8b58d66dd9e8
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49268823"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51788884"
 ---
 # <a name="debugging-web-applications-troubleshooting"></a>偵錯 Web 應用程式：疑難排解
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

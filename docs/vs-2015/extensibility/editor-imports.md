@@ -15,12 +15,12 @@ ms.assetid: 8d096de3-33b4-427a-a122-4aeff8a72da0
 caps.latest.revision: 20
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1b7bb4ccf7c599b66d8e4e50c01270d5fede1f3b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8f82815871f59dfcf4d384157a9461388e96d05e
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49171871"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51759033"
 ---
 # <a name="editor-imports"></a>編輯器匯入
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

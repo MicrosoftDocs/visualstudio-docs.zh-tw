@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaSymbol::get_isCVTCIL method
 ms.assetid: 711b81fd-9549-44dc-9761-5eb862ed64c0
 caps.latest.revision: 10
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dd0fee9c5b993daf227dc997ec8eaadc1e362cb8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4608706b74612f19291b02e285242f0fdb4275a9
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49922285"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51782712"
 ---
 # <a name="idiasymbolgetiscvtcil"></a>IDiaSymbol::get_isCVTCIL
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

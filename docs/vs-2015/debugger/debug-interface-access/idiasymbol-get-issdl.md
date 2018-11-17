@@ -13,15 +13,15 @@ dev_langs:
 - C++
 ms.assetid: 6aa0e116-da75-4643-a4d7-d8e142231e21
 caps.latest.revision: 6
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: eb604534ce364e04f5c59863d240baf4f970d53f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2618a8adee7f70aaec974a7b9c0ea6bd1dd46afd
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49275909"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51787324"
 ---
 # <a name="idiasymbolgetissdl"></a>IDiaSymbol::get_isSdl
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

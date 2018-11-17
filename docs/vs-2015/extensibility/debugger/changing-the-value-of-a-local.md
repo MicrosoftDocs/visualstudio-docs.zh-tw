@@ -16,12 +16,12 @@ ms.assetid: 8407d3df-d38a-4328-82d1-98084bef43ec
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8f07801b22086aa9a1e96a2efc99093a84bc72e9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 166b4d22ec24f3137044ab19255abb15b109fbe0
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49843640"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51807214"
 ---
 # <a name="changing-the-value-of-a-local"></a>變更區域變數的值
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

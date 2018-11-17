@@ -16,12 +16,12 @@ ms.assetid: 616026b5-f529-40ef-90c1-1836e116d797
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: aaa983b6365e5d8b1c0969b03ebacd5f6b0f8f94
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6a23bef10dda57d761ce7f07c3b87808b021830c
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49858507"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51766667"
 ---
 # <a name="directory-status-code-enumerator"></a>目錄狀態碼列舉值
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,10 +32,10 @@ ms.locfileid: "49858507"
   
 ```  
 enum SccDirStatus {  
-   SCC_DIRSTATUS_INVALID       = -1L,  
-   SCC_DIRSTATUS_NOTCONTROLLED = 0x0000L,  
-   SCC_DIRSTATUS_CONTROLLED    = 0x0001L,  
-   SCC_DIRSTATUS_EMPTYPROJ     = 0x0002L  
+   SCC_DIRSTATUS_INVALID       = -1L,  
+   SCC_DIRSTATUS_NOTCONTROLLED = 0x0000L,  
+   SCC_DIRSTATUS_CONTROLLED    = 0x0001L,  
+   SCC_DIRSTATUS_EMPTYPROJ     = 0x0002L  
 };  
 ```  
   

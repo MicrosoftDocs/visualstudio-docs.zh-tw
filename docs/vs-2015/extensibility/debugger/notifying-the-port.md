@@ -15,12 +15,12 @@ ms.assetid: f9fce48e-7d4e-4627-a0fb-77b75428146a
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4faaea47196e6d247aa62c5a9d067970ddeaaec4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c3cfcc4ee357301aa0e38468b13b983c3d5ca55a
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49937041"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51763365"
 ---
 # <a name="notifying-the-port"></a>通知連接埠
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

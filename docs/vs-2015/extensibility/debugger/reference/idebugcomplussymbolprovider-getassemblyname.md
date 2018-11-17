@@ -16,12 +16,12 @@ ms.assetid: a08cd609-b9b9-47bd-bf73-cbf851285907
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1f1bc987aecfcc47547196f5098460e8c2ab650b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 860e51b17ed4cace75f15234c997a96cdf14ce5a
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49843362"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51805238"
 ---
 # <a name="idebugcomplussymbolprovidergetassemblyname"></a>IDebugComPlusSymbolProvider::GetAssemblyName
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

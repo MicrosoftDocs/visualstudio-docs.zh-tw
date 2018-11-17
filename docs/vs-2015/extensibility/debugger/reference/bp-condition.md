@@ -17,12 +17,12 @@ ms.assetid: 407f87a3-2878-429b-8c65-b68feb36622a
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7e42bd7343100a82d88ac78890483fd095f7065b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2d1134ef672c3ae9f49d776d2fd63227e5fb4e8c
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49813228"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51796892"
 ---
 # <a name="bpcondition"></a>BP_CONDITION
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "49813228"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-typedef struct _BP_CONDITION {   
+typedef struct _BP_CONDITION {   
    IDebugThread2* pThread;  
    BP_COND_STYLE  styleCondition;  
    BSTR           bstrContext;  
@@ -42,7 +42,7 @@ typedef struct _BP_CONDITION {
 ```  
   
 ```csharp  
-public struct BP_CONDITION {   
+public struct BP_CONDITION {   
    public IDebugThread2 pThread;  
    public uint          styleCondition;  
    public string        bstrContext;  

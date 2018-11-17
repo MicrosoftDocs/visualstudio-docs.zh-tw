@@ -14,15 +14,15 @@ helpviewer_keywords:
 - use case diagrams, properties
 ms.assetid: 2728fb26-a275-4fce-8a2c-5a78af6bee04
 caps.latest.revision: 13
-author: alexhomer1
+author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: a498b31b6b0585285868d4a6668825db6543aced
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a81f7630a1a903af2f9c21aee3249ea6fe156af2
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49251130"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51762818"
 ---
 # <a name="properties-of-elements-on-uml-use-case-diagrams"></a>UML 使用案例圖上的項目屬性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

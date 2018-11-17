@@ -13,15 +13,15 @@ dev_langs:
 - C++
 ms.assetid: 56ba4bc0-8f96-47c2-8b18-332b4e7c2d91
 caps.latest.revision: 6
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: baed4983ee25d15e0e5a07b74e3bef7138f18b5a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3e1529c6ae6303903d2dd6e0a980a6dd611fe34a
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49814307"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51800922"
 ---
 # <a name="idiasymbolfindinlineelines"></a>IDiaSymbol::findInlineeLines
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ ms.locfileid: "49814307"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT findInlineeLines (   
+HRESULT findInlineeLines (   
    IDiaEnumLineNumbers** ppResult  
 );  
 ```  

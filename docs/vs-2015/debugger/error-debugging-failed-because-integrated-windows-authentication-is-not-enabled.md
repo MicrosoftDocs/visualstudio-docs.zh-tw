@@ -21,15 +21,15 @@ helpviewer_keywords:
 - debugger, Web application errors
 ms.assetid: 6027cd94-74cf-470f-b7ce-6f6b68bc56ba
 caps.latest.revision: 22
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1c7855ede01c522f3e79dd4c342e38830cd2fd23
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0b922e8e8fde8b185207810d107afb9a9c5a6e05
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49296136"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51757265"
 ---
 # <a name="error-debugging-failed-because-integrated-windows-authentication-is-not-enabled"></a>錯誤：偵錯失敗，因為整合式 Windows 驗證沒有啟用
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

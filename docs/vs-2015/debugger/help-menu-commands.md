@@ -13,15 +13,15 @@ helpviewer_keywords:
 - Help menu commands
 ms.assetid: a842caf3-d635-4620-bc81-1d4a6ea06ed6
 caps.latest.revision: 6
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7e3d2c63c64a0204962137a5a051c8682ac4794f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: fb72bae67813663c9cdc258f94ef9985fda60c12
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49255784"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51801000"
 ---
 # <a name="help-menu-commands"></a>說明功能表命令
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

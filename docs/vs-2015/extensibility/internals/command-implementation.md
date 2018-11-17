@@ -15,12 +15,12 @@ ms.assetid: c782175c-cce4-4bd0-8374-4a897ceb1b3d
 caps.latest.revision: 25
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ee10719fa8f0c5c45d9b45f3b1d686f454d808a4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: be1bcecb740fb0c375d0f461639a8b0d5e40669a
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49925901"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51765208"
 ---
 # <a name="command-implementation"></a>命令實作
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

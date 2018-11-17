@@ -15,12 +15,12 @@ ms.assetid: a2fd3758-09bd-45ae-8ecc-2d276c0036ba
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: eb3fcf4d15a1c9020b7bd64587362fcf442f79c6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d42d5f7ef2d2514a8352abd87ef3cc46c922c044
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49194048"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51751224"
 ---
 # <a name="expression-evaluation-context"></a>運算式評估內容
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

@@ -15,12 +15,12 @@ ms.assetid: f15d86aa-1bd9-4b16-a64a-21b01c27db2e
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7a5cb3a0d127c5dd11ef565ec62d299efb934ac9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8404ab81f9ba797f5dc81ab23188492f4a4d1393
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49862134"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51741589"
 ---
 # <a name="idebugsourceservermodulegetsourceserverdata"></a>IDebugSourceServerModule::GetSourceServerData
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

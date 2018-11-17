@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaSession::findSymbolByToken method
 ms.assetid: 3c92149c-6eef-454f-86be-66e89557b9e6
 caps.latest.revision: 12
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: be1f2509bc866fecf66697fc5c0f0bcafff808e9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e0c04fcf55dc11887a872b1d3f47ae88f693a546
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49843199"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51791227"
 ---
 # <a name="idiasessionfindsymbolbytoken"></a>IDiaSession::findSymbolByToken
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "49843199"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT findSymbolByToken (   
+HRESULT findSymbolByToken (   
    ULONG        token,  
    SymTagEnum   symtag,  
    IDiaSymbol** ppSymbol  

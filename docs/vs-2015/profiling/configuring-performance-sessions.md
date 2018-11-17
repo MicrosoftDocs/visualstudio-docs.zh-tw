@@ -16,15 +16,15 @@ helpviewer_keywords:
 - performance, gathering data
 ms.assetid: e1c3ba41-ffca-4edf-9a7f-8a5a9244ef9b
 caps.latest.revision: 41
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6b858d7a521f53876e185d8d4deb2b3467833d02
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 280d9023167b4d83dfb8b0137301219a518521b9
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49285333"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51790392"
 ---
 # <a name="configuring-performance-sessions"></a>設定效能工作階段
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

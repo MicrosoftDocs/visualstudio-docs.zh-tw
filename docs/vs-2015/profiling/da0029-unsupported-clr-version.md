@@ -18,15 +18,15 @@ helpviewer_keywords:
 - vs.performance.rules.DA0029
 ms.assetid: 76247259-c6f3-44c4-b3f9-d8dac16b5e0d
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6334fc69607f6d39e75d20c3b3ca228507db169d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 51195b14be7bffe682f4ac8588e38c6f5bd56e58
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49265105"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51762537"
 ---
 # <a name="da0029-unsupported-clr-version"></a>DA0029：不支援的 CLR 版本
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

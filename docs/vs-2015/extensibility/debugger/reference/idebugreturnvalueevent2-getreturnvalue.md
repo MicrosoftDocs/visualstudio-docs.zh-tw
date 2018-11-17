@@ -17,12 +17,12 @@ ms.assetid: 86c50d5a-6df6-4798-818a-c587a8741f90
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a175592b6b50fc18715905bf5ab206f1673849dc
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 02d39238308455003a2ea92bed7205c64ba3d014
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49903695"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51800246"
 ---
 # <a name="idebugreturnvalueevent2getreturnvalue"></a>IDebugReturnValueEvent2::GetReturnValue
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,13 +32,13 @@ ms.locfileid: "49903695"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT GetReturnValue (   
+HRESULT GetReturnValue (   
    IDebugProperty2** ppReturnValue  
 );  
 ```  
   
 ```csharp  
-int GetReturnValue (   
+int GetReturnValue (   
    out IDebugProperty2 ppReturnValue  
 );  
 ```  

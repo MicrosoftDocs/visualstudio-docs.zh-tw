@@ -21,15 +21,15 @@ helpviewer_keywords:
 - WCF, debugging
 ms.assetid: 9d531913-541b-47b8-864d-138021fca0c6
 caps.latest.revision: 34
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f5943b75513394b44d88dfcfa496e56dad267171
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d3a600059f29d7e0034e4e64239798c32d721a1f
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49205201"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51785920"
 ---
 # <a name="debugging-aspnet-and-ajax-applications"></a>偵錯 ASP.NET 和 AJAX 應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

@@ -15,12 +15,12 @@ ms.assetid: 4301ba23-c00c-4ce5-8b1e-3f27da312034
 caps.latest.revision: 6
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2ea0f1412ca45ae59ea50555d70a7130b2e99f42
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2e31ab3871098e95f8b1737259b5b37f37ab8cfc
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49295434"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51753561"
 ---
 # <a name="idebugprogram3"></a>IDebugProgram3
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

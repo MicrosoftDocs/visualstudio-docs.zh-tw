@@ -17,12 +17,12 @@ ms.assetid: c0b415ba-b825-4da0-9faf-8a60a663e302
 caps.latest.revision: 42
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a2aca4c0d9ce518410250b8274d70e17d27ab859
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 189ff14c566c3007810ef35cd63ec03a5958e07c
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49247600"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51779706"
 ---
 # <a name="using-and-providing-services"></a>使用和提供服務
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

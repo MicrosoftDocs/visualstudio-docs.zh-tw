@@ -17,12 +17,12 @@ ms.assetid: a380e53c-15f1-401f-927f-f366eea789e6
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 612a907769530bb273bcc40711e9085d3f72e4b2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8330fa51b4ab0adcb11fdc5c20729a6f2b41ca52
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49906288"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51752978"
 ---
 # <a name="idebugfunctionobjectcreatearrayobject"></a>IDebugFunctionObject::CreateArrayObject
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "49906288"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT CreateArrayObject(   
+HRESULT CreateArrayObject(   
    OBJECT_TYPE    ot,  
    IDebugField*   pClassField,  
    DWORD          dwRank,  
