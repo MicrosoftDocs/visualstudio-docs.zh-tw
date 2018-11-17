@@ -17,12 +17,12 @@ ms.assetid: 17914a71-10ea-4b6f-8982-e364f87dca53
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 25dc1b378c129fc50b5605f781991850050738e9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d8d87e4b38a0df3ca3cc61328024f3cdb1ac17eb
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49858572"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51725252"
 ---
 # <a name="idebugthread2enumframeinfo"></a>IDebugThread2::EnumFrameInfo
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "49858572"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT EnumFrameInfo (   
+HRESULT EnumFrameInfo (   
    FRAMEINFO_FLAGS        dwFieldSpec,  
    UINT                   nRadix,  
    IEnumDebugFrameInfo2** ppEnum  
@@ -40,7 +40,7 @@ HRESULT EnumFrameInfo (
 ```  
   
 ```csharp  
-int EnumFrameInfo (   
+int EnumFrameInfo (   
    enum_FRAMEINFO_FLAGS     dwFieldSpec,  
    uint                     nRadix,  
    out IEnumDebugFrameInfo2 ppEnum  

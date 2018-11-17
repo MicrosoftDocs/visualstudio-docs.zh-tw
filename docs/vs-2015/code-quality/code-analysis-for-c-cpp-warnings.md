@@ -21,15 +21,15 @@ helpviewer_keywords:
 - warnings, C/C++ analysis
 ms.assetid: 28f3fda6-35e8-485b-9755-1991aaccec3f
 caps.latest.revision: 43
-author: corob-msft
-ms.author: gewarren
+author: mikeblome
+ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 0ab2da3cf1abcd830f1a47de8b079bb59d67229f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e0e2f38bcde48a34ecb8f438a373b3bdfdb13dfa
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49245865"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51766711"
 ---
 # <a name="code-analysis-for-cc-warnings"></a>C/C++ 程式碼分析警告
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

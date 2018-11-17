@@ -16,12 +16,12 @@ ms.assetid: 029bffa2-6841-4caa-a41a-442467e1aedc
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 45a2c4fb0f3fa54a2d2b89c8473961143ec3185c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 626717ed559257d04cb0bbcca3c76283aac22d63
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49280328"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51743291"
 ---
 # <a name="component-management"></a>元件管理
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

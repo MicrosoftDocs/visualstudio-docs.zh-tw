@@ -21,12 +21,12 @@ ms.assetid: 5030e70a-241d-474a-ba8c-e3b1cf947ff0
 caps.latest.revision: 24
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 44058a483e4181b7f1918b63c844b2bb4345c89c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: aa8fb2e4af74facc0ca00343e6abad36b7fcec50
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49236427"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51743307"
 ---
 # <a name="ide-constants"></a>IDE 常數
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

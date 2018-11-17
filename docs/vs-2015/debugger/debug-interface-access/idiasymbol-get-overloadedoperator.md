@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaSymbol::get_overloadedOperator method
 ms.assetid: 257a9894-e980-47ae-bdc0-c5e2293ea734
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1ed89f1333427cfdf2cc3c41222ed9d16fe68efa
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 87ddeb73285253ee260ab915fd9d44435ba391a8
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49951284"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51750274"
 ---
 # <a name="idiasymbolgetoverloadedoperator"></a>IDiaSymbol::get_overloadedOperator
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "49951284"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT get_overloadedOperator (   
+HRESULT get_overloadedOperator (   
    BOOL* pRetVal  
 );  
 ```  

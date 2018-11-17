@@ -15,12 +15,12 @@ ms.assetid: f69972d0-809d-40df-9da3-04738791391c
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ae5380f360ca1a18bcf0edafea762417084aa3d7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2ac99d6022344089c40abb9ae36e94d825db4e3c
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49817454"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51768475"
 ---
 # <a name="operational-modes"></a>作業模式
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

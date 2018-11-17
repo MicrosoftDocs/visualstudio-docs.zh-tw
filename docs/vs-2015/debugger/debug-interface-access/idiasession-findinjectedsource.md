@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaSession::findInjectedSource method
 ms.assetid: 907531b6-1ef8-4153-986d-b72611a1632d
 caps.latest.revision: 13
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f3dafcf9249c0dbc078b107eda7030b93f39b977
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 549a5f7a04c25acaac63c11d8e3d8df9d2a909e4
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49875043"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51745876"
 ---
 # <a name="idiasessionfindinjectedsource"></a>IDiaSession::findInjectedSource
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "49875043"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT findInjectedSource (   
+HRESULT findInjectedSource (   
    LPCOLESTR                 srcFile,  
    IDiaEnumInjectedSources** ppResult  
 );  

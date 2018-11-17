@@ -19,15 +19,15 @@ helpviewer_keywords:
 - client-side scripts, debugging
 ms.assetid: bb668527-2288-47bd-a6c8-cecbad76dde2
 caps.latest.revision: 33
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1abbf86799b290bd8afd9ed76fdb7f94b390c1b8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3aa04ab77b6e3dc6264a517c83c4ed319f36d686
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49865852"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51817798"
 ---
 # <a name="client-side-script-debugging"></a>用戶端指令碼偵錯
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

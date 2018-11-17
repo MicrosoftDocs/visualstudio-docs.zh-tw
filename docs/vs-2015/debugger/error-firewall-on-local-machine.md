@@ -18,15 +18,15 @@ dev_langs:
 - C++
 ms.assetid: ab60dda9-7934-4891-aa2f-001380d2ed83
 caps.latest.revision: 10
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cbca2e944e7313e54fd469dd41774f40931ee3d2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3dfc0d216cc205f00e4c0df0bd62f86173379922
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49245345"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51728629"
 ---
 # <a name="error-firewall-on-local-machine"></a>錯誤：本機電腦的防火牆
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

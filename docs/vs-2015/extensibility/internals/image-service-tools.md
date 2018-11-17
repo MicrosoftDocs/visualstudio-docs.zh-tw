@@ -10,12 +10,12 @@ ms.assetid: 2ddb0342-eb22-429a-bdf3-ccc2719a7ceb
 caps.latest.revision: 5
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1eac417d2d37bc9c1a18921d51d4c4b816314554
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: fc6c3afe4ca4658d510fb045e39d5abb1a350582
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49275609"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51729429"
 ---
 # <a name="image-service-tools"></a>影像服務工具
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

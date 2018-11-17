@@ -17,12 +17,12 @@ ms.assetid: e7c9c60a-8e55-4ecc-aa63-0c814a1e92cc
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3ac98ff3d07df0527ff0c262740edf74288ae7be
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: fe5d773aef1fb377dcf9183047eb3205b83e5ac9
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49886860"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51751559"
 ---
 # <a name="idebugfieldgetkind"></a>IDebugField::GetKind
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "49886860"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT GetKind(   
+HRESULT GetKind(   
    FIELD_KIND* pdwKind  
 );  
 ```  

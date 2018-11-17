@@ -16,15 +16,15 @@ dev_langs:
 - C++
 ms.assetid: ef3a0f36-bfc9-4ca0-aa61-18261f619bff
 caps.latest.revision: 17
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 95b0b2dfd85f1184dc81c2c395d902d50626f7f8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1b6d94eb5541ea79fdc7ba2d1d3ebe5ef02df2d6
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49827271"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51806044"
 ---
 # <a name="deploy-windows-store-apps-from-visual-studio"></a>從 Visual Studio 部署 Windows 市集應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

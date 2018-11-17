@@ -11,15 +11,15 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 2d0f5305-585b-4b01-bc9a-7a32d6e991da
 caps.latest.revision: 7
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 67876c6b9191c8b551eb70906272751bc55ef481
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 818998511a4ef8b7f10b8225e71b414edafd9769
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49837967"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51736566"
 ---
 # <a name="bc-texture-compression-variant"></a>BC 紋理壓縮變異
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

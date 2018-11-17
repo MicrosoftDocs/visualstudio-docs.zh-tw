@@ -19,12 +19,12 @@ ms.assetid: bbec74f3-dd8e-48ad-99c1-2df503c15f5a
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 131fbf7d5587382b2e47002f52e374dad154d448
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: bd7b8cd44c72ea058f71575bdd1774efafa86731
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49293068"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51746305"
 ---
 # <a name="running-document-table"></a>執行中的文件資料表
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

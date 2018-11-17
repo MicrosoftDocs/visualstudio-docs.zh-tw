@@ -17,12 +17,12 @@ ms.assetid: 221b4b1b-4a26-466e-bc29-5eff800fab13
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: cdd6d15d5ac5547502b1b7dbc4c4f60a0a0e5750
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e1166264e83ffe07bbdb7e55b8cff3b296f67a56
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49189018"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51755592"
 ---
 # <a name="idebugthread2"></a>IDebugThread2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
