@@ -13,12 +13,12 @@ ms.assetid: c19e3022-047c-43b6-a046-a82717efed4f
 caps.latest.revision: 3
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f6929054fd2983fa6b08801cd35eab7148bd8100
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 122e93c3f6ee4dc2a9c1e41de021b89ce7dd2d34
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49829439"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51737028"
 ---
 # <a name="layout-for-visual-studio"></a>適用於 Visual Studio 的版面配置
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

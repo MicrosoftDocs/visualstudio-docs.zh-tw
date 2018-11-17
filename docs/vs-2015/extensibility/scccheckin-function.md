@@ -17,12 +17,12 @@ ms.assetid: e3f26ac2-6163-42e1-a764-22cfea5a3bc6
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 36d1ada65038e219fc56c2f0e473a615c18dac3b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 26daf5fcd3ee4ec14b0801c828a6e536a65150d8
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49858793"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51797997"
 ---
 # <a name="scccheckin-function"></a>SccCheckin 函式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

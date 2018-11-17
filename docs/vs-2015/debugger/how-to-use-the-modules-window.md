@@ -29,15 +29,15 @@ helpviewer_keywords:
 - modules, displaying
 ms.assetid: d840fdca-b035-4452-b652-72580c831896
 caps.latest.revision: 41
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fcd1b19557cf07901b5834539095847e7e1395ae
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: fea513b7593e260b5f5fb71e40ced98a1f8cc279
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49225169"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51764410"
 ---
 # <a name="how-to-use-the-modules-window"></a>如何：使用模組視窗
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

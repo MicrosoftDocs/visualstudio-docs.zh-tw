@@ -29,15 +29,15 @@ helpviewer_keywords:
 - buffers, viewing
 ms.assetid: 7f7a0439-10e4-4966-bb2d-51f04cda4fe2
 caps.latest.revision: 37
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 140d3e0fb721c9913de6feb6f1ed9249c8b75cfa
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 704c0ff20dbd11b4640b2d81670a4cdeaf3f1ea0
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219519"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51724253"
 ---
 # <a name="memory-windows"></a>記憶體視窗
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

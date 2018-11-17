@@ -15,12 +15,12 @@ ms.assetid: 9f884c49-426f-461b-b547-9d909486e73f
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 157dd859745afa4e85b093286c9583c150fbbaf3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c435f658efb3bd926c476f6f2ed0f432f2f8b792
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49837356"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51765238"
 ---
 # <a name="idebugsettingscallback2enumees"></a>IDebugSettingsCallback2::EnumEEs
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

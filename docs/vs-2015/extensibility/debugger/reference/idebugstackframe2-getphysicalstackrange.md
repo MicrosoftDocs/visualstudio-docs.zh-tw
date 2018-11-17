@@ -17,12 +17,12 @@ ms.assetid: 2f6992e2-ac1c-433f-83b7-a7f83a4ce63d
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 73024b173eb3cacd3bd75e703225bc3bc6b1eb33
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 40aab7702f4e7c50a0aa699b0f623aa107d4e9cd
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49918554"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51761921"
 ---
 # <a name="idebugstackframe2getphysicalstackrange"></a>IDebugStackFrame2::GetPhysicalStackRange
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,14 +32,14 @@ ms.locfileid: "49918554"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT GetPhysicalStackRange (   
+HRESULT GetPhysicalStackRange (   
    UINT64* paddrMin,  
    UINT64* paddrMax  
 );  
 ```  
   
 ```csharp  
-int GetPhysicalStackRange (   
+int GetPhysicalStackRange (   
    out ulong paddrMin,  
    out ulong paddrMax  
 );  

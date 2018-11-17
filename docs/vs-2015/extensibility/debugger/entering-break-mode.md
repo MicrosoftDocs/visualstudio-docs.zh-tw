@@ -16,12 +16,12 @@ ms.assetid: e9a8a241-cd21-4d4e-999a-283554c288b1
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: cc4fe6dc7e2739e9f41e43e0f90ec9257c18b9fe
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 852f9104b2a510d033ab07a854e0c7bcbf4bf8f8
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49233658"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51788273"
 ---
 # <a name="entering-break-mode"></a>進入中斷模式
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

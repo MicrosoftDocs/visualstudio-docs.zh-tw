@@ -22,15 +22,15 @@ helpviewer_keywords:
 - debugging, JavaScript
 ms.assetid: ea7adb71-52b6-4a5a-9346-98ca94b06bd7
 caps.latest.revision: 10
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7d8ece4edf9ee91446565f2790392bd6d478fd3e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 61f36594b4158c95621ec240fd7a883accd259a8
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49818324"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51802591"
 ---
 # <a name="quickstart-debug-javascript-using-the-console"></a>快速入門：使用主控台偵錯 JavaScript
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

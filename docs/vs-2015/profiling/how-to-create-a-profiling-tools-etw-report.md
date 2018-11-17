@@ -11,15 +11,15 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: bf5547b3-f6c7-4989-9d47-2fe4f1261444
 caps.latest.revision: 13
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 84556a47fe352054255a331c2e689d519c217f63
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1901cf0800483ee4ce8ba0bce26fe3cf7ac073e6
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49891841"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51761606"
 ---
 # <a name="how-to-create-a-profiling-tools-etw-report"></a>如何：建立程式碼剖析工具 ETW 報告
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

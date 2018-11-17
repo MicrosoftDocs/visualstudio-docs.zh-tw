@@ -15,12 +15,12 @@ ms.assetid: 12c9b300-0894-4124-96a1-764326176d77
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 550acb027d4d9b0fdaecdcd6057610413ae0da3c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: df84fa92cb0da8dd408b1cc8717628afa3d5ba19
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49234841"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51730638"
 ---
 # <a name="changing-view-settings-by-using-the-legacy-api"></a>變更檢視設定，以使用舊版 API
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

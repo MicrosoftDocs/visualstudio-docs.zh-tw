@@ -21,15 +21,15 @@ helpviewer_keywords:
 - debugger, GPU threads window
 ms.assetid: c647c502-a9f0-48e0-a430-976744a5fa51
 caps.latest.revision: 16
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0bf63fb2eedc03b62af46f3ecdf746aaee6dde09
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8afd9cd09cf5977f58ee3a48b891f5291869b49c
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49848666"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51799167"
 ---
 # <a name="how-to-use-the-gpu-threads-window"></a>如何：使用 GPU 執行緒視窗
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

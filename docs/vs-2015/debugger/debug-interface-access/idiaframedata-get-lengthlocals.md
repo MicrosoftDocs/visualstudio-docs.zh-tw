@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaFrameData::get_lengthLocals method
 ms.assetid: 51fe15c3-4cd6-4a06-8a41-a56502209762
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7f58c5094d21fcd01e8aa556b62dff75e7ec4b88
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 66d70767c21f253064011752f965973efa885ab2
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49880178"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51746783"
 ---
 # <a name="idiaframedatagetlengthlocals"></a>IDiaFrameData::get_lengthLocals
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "49880178"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT get_lengthLocals (   
+HRESULT get_lengthLocals (   
    DWORD* pRetVal  
 );  
 ```  

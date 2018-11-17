@@ -16,12 +16,12 @@ ms.assetid: 08511ef5-be64-4069-b169-a569cc94bc64
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 73565bb0d191e3aa70c319c290972883df4f1d3f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 62a215ee18bcd9e82047017bca90102163ff8b6f
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49814365"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51766612"
 ---
 # <a name="idebugportpickerdisplayportpicker"></a>IDebugPortPicker::DisplayPortPicker
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

@@ -27,15 +27,15 @@ helpviewer_keywords:
 - Go command
 ms.assetid: fd961a1c-76fa-420d-ad8f-c1a6c003b0db
 caps.latest.revision: 29
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9540e40325293795c44e0d9c2283a27f1d9ea0c2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5709b4bdae55c0ade6ca4559dcbaad8d66c0bbac
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49856700"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51781253"
 ---
 # <a name="how-to-enable-and-disable-edit-and-continue"></a>如何：啟用和停用編輯後繼續
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

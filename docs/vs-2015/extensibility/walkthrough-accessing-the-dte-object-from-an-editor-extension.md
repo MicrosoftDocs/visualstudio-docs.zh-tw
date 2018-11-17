@@ -15,12 +15,12 @@ ms.assetid: c1f40bab-c6ec-45b0-8333-ea5ceb02a39d
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2669571fee0ea9f43c06ba9ec7526d0716931fe0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b86f33390068b04d9e54c0022e8adeb77ed4700f
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49239924"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51720763"
 ---
 # <a name="walkthrough-accessing-the-dte-object-from-an-editor-extension"></a>逐步解說：從編輯器延伸模組存取 DTE 物件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ ms.locfileid: "49239924"
   
     -   EnvDTE  
   
-    -   [Envdte80]  
+    -   EnvDTE80  
   
     -   Microsoft.VisualStudio.Shell.Immutable.10.0  
   

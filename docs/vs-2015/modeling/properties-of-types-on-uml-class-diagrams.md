@@ -13,15 +13,15 @@ helpviewer_keywords:
 - UML, element properties
 ms.assetid: 6e1ef2d0-d67a-401a-bd64-d5e034decd2c
 caps.latest.revision: 17
-author: alexhomer1
+author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: de4bcd2779e448c48bd8ac6e66edf25ef4edddc5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e8baad41658cc6144f08d0b6b4d415aa4ff6e499
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49193163"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51750106"
 ---
 # <a name="properties-of-types-on-uml-class-diagrams"></a>UML 類別圖上的類型屬性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
