@@ -413,7 +413,7 @@ items:
           href: debugging-preparation-windows-forms-applications.md
         - name: 偵錯準備：Windows 服務
           href: debugging-preparation-windows-services.md
-      - name: 輸出視窗中的診斷訊息
+      - name: 傳送訊息至 [輸出] 視窗
         href: diagnostic-messages-in-the-output-window.md
       - name: 受控碼中的判斷提示
         href: assertions-in-managed-code.md
@@ -836,9 +836,9 @@ items:
   items:
   - name: Visual Studio 中偵錯工具的新功能
     href: what-s-new-for-the-debugger-in-visual-studio.md
-ms.openlocfilehash: a765e04da6e5d03c47a17e3b9d1642aec182c1f7
-ms.sourcegitcommit: a34b7d4fdb3872865fcf98ba24a0fced58532adc
+ms.openlocfilehash: fb63e23cce50cd7d326bb11d39628f63e8bf6a2f
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/12/2018
-ms.locfileid: "51561682"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51770461"
