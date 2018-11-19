@@ -11,15 +11,15 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: a3463eab-a352-4d17-8551-adbaad526db0
 caps.latest.revision: 66
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 839bfcd761ac090924b0964e99ea3d1f360cc7f9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e6c4c60265fda66f7506fe6d886fa671527c1587
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49852358"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51785452"
 ---
 # <a name="diagnose-problems-after-deployment"></a>於部署後診斷問題
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

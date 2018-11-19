@@ -16,12 +16,12 @@ ms.assetid: 8c8c4a24-3da4-497b-9db2-0ddd7cfbfdd2
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 14dc8020247214ef812a93cb4518e5dfeeb502d1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9c9e8a6a86fb858b5c0e85aafc21095bd579b396
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49213573"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51786167"
 ---
 # <a name="registering-a-tool-window"></a>註冊工具視窗
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

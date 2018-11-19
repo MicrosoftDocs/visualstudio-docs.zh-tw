@@ -15,15 +15,15 @@ f1_keywords:
 - vs.performance.22
 ms.assetid: f871a547-0e6f-4b11-b2d7-174d30fc2ed8
 caps.latest.revision: 13
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 270f2b90894c1dc7ede8f45c34c1e4c542fae56a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8da44ab48ae468c5b71bcd08d106548f40d04aa8
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49200391"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51757060"
 ---
 # <a name="da0022-high-rate-of-gen-2-garbage-collections"></a>DA0022：高比率的 Gen 2 記憶體回收
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

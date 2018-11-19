@@ -15,12 +15,12 @@ ms.assetid: 877173d2-ca27-43b3-b1f4-8379f7c5e268
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f600ef47526c3b2d9e703781c8f20ddb563dcf4a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ef31cd75fe6221667026bc7af8f9da1e6ac5e4ec
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49206216"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51790516"
 ---
 # <a name="restrictions-on-string-lengths"></a>字串長度限制
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

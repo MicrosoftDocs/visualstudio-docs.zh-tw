@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 669f3625827d923a0951caa1bb0137d38c0daacc
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 195d63e5ddb8b8536c1d0c1c4197270f5b3aa508
+ms.sourcegitcommit: 331dbb12e11fcd7f5d15fab05f3c861e48126e43
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637493"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51826813"
 ---
 # <a name="how-to-migrate-extensibility-projects-to-visual-studio-2017"></a>如何： 將擴充性專案移轉至 Visual Studio 2017
 
@@ -63,7 +63,7 @@ ms.locfileid: "39637493"
 * 請確定`InstallationTarget`包含 15.0。
 * （如下列範例所示），請加入必要的安裝必要條件。
   * 我們建議您指定只安裝必要條件的元件識別碼。
-  * 請參閱本文件的最後一節[識別元件識別碼的指示](#finding-component-ids)。
+  * 請參閱本文件的最後一節[識別元件識別碼的指示](#find-component-ids)。
 
 範例：
 
