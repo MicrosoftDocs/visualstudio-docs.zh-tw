@@ -14,15 +14,15 @@ helpviewer_keywords:
 - instrumentation profiling method
 ms.assetid: 481f7579-f784-49ef-bb6c-2944e9d6ab42
 caps.latest.revision: 15
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 17e4d588f2c19aa74c9741d69ee8a3c1022c677c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 23ca631f79137e48781cdb017727aa071067f8f4
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49220424"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51790535"
 ---
 # <a name="instrumentation-method-data-views"></a>檢測方法資料檢視
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

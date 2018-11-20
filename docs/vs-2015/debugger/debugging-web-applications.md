@@ -21,15 +21,15 @@ helpviewer_keywords:
 - ASP.NET Web pages, debugging
 ms.assetid: a096a90d-6d0d-4752-9fb5-417635ccab3e
 caps.latest.revision: 27
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6d6cbc06376329a80d9bade6751df5333438ea2b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4a20b83c5470f5184ab85f76904bd66756cf6ea2
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49294673"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51774041"
 ---
 # <a name="debugging-web-applications"></a>偵錯 Web 應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

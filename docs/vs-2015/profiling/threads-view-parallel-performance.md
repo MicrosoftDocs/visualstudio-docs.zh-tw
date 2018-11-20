@@ -15,15 +15,15 @@ helpviewer_keywords:
 - Concurrency Visualizer, Threads View (Parallel Performance)
 ms.assetid: 2e441103-a266-407b-88c3-fb58716257a3
 caps.latest.revision: 26
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c0b266f9267925efb2e9e1348f7cd656a6b8be77
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 39457684ba19ecbb0ad2ef82caa349e67cdaf8a7
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49846623"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51756341"
 ---
 # <a name="threads-view-parallel-performance"></a>執行緒檢視 (平行處理效能)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

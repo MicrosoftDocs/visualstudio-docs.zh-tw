@@ -26,15 +26,15 @@ helpviewer_keywords:
 - code, editing in break mode
 ms.assetid: 1eef7498-6a1f-4fba-8146-510adc6375c9
 caps.latest.revision: 33
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ebab549e6d32b355355e4970f4191ea9a024e871
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5f6024d0c00e492110d7d34172cf225e4712f213
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49266379"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51807493"
 ---
 # <a name="how-to-apply-edits-in-break-mode-with-edit-and-continue"></a>如何：以編輯後繼續在中斷模式套用編輯
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

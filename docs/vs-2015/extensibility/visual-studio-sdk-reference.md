@@ -16,12 +16,12 @@ ms.assetid: a6930db5-a112-4651-8de3-e520df851f82
 caps.latest.revision: 32
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 87d724f7df641169fde7445f6433687f67ccb8e7
-ms.sourcegitcommit: 551f13774e8bb0eb47cbd973745628a956e866aa
+ms.openlocfilehash: e4d5774c65be586a8183fe4a511a3ed21e79c38a
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2018
-ms.locfileid: "49459799"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51727155"
 ---
 # <a name="visual-studio-sdk-reference"></a>Visual Studio SDK 參考
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

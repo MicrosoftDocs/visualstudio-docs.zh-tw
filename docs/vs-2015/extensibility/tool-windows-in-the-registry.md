@@ -15,12 +15,12 @@ ms.assetid: c4bb8add-7148-49e4-a377-01d059fd5524
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9f3ea7aa24a6c049b5cee6e130dee839952bef2f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f24c51b3cf1a4930fa0cc496e12ffd31170389b0
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49266849"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51781903"
 ---
 # <a name="tool-windows-in-the-registry"></a>在登錄中的工具 Windows
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

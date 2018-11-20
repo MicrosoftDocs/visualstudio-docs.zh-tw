@@ -16,12 +16,12 @@ ms.assetid: f01c40ad-ef4b-477b-8304-602c6972bc88
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f1fc365b9fff1b611f6f13edbe5a56d3a94837b9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: bdb24cd047a0c56c53ea83239d8bb5978f9f261c
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49949496"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51817707"
 ---
 # <a name="idebugexpressionevaluator2setidebugidecallback"></a>IDebugExpressionEvaluator2::SetIDebugIDECallback
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

@@ -17,12 +17,12 @@ ms.assetid: 2830f7c3-69fb-474a-97b8-5b869e38d546
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fbc7818967c7523db1536a0f5e37fffcfbd5866e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 44e584974a0612dd88bf9364fb4ce1c5ed53d78f
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49922545"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51787610"
 ---
 # <a name="idebugprocess2candetach"></a>IDebugProcess2::CanDetach
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,13 +32,13 @@ ms.locfileid: "49922545"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT CanDetach(  
+HRESULT CanDetach(  
    void  
 );  
 ```  
   
 ```csharp  
-int CanDetach();  
+int CanDetach();  
 ```  
   
 ## <a name="return-value"></a>傳回值  

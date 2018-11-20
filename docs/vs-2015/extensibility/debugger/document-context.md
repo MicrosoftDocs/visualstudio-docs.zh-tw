@@ -15,12 +15,12 @@ ms.assetid: 8e8b5702-5c16-4988-953d-69dd807d8b84
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5e1bbe5ac2f2c752fcf6f0b5a0b0b95be144ac8f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c5753e2353b351f6aa4bd73c5aced3d4959b3cde
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49237428"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51741197"
 ---
 # <a name="document-context"></a>文件內容
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

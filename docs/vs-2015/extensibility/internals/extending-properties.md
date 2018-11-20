@@ -15,12 +15,12 @@ ms.assetid: 68e2cbd4-861c-453f-8c9f-4ab6afc80e67
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: be53c59cc0a1baf5331502c3079ee741751c53eb
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 919b5a08f003d6e6c320edef4c1321af35f17388
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49303702"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51777873"
 ---
 # <a name="extending-properties"></a>擴充屬性
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

@@ -16,12 +16,12 @@ ms.assetid: 362f00ac-1909-4a3a-bacb-c0ceb5549816
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d3603f14d07eb8531480b89f24d73cbd5045da7c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1c3d361d9e8b99467e0a8a131e9d30be5db30b9d
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49188301"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51792446"
 ---
 # <a name="launch-based-attachment"></a>啟動時附加
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

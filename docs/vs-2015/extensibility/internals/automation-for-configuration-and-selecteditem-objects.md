@@ -16,12 +16,12 @@ ms.assetid: 120377f1-51aa-4445-b2f7-06ab7fc2b47f
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 80c67567a3e9ed3fd482a9a88f6d52cddcc0a3e5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 612916da7922900a1054d785dad86ed448aa1f12
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49185415"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51733475"
 ---
 # <a name="automation-for-configuration-and-selecteditem-objects"></a>組態和 SelectedItem 物件的自動化
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

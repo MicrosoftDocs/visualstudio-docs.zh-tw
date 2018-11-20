@@ -11,15 +11,15 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: a1e37500-4ad1-4670-9737-3d9a20536386
 caps.latest.revision: 13
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2fcc2012f46311d51cfd7c50f28158a471b67e26
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9b4ed8bc95f3d842f12a5bd0002456f71875fdb7
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49269270"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51729214"
 ---
 # <a name="shutdown"></a>關機
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

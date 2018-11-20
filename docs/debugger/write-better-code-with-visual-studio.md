@@ -1,6 +1,6 @@
 ---
 title: 可讓您撰寫的 Visual Studio 說明C#程式碼較少的 bug
-description: 了解使用偵錯工具偵錯您的應用程式的時機
+description: 了解如何撰寫更好的程式碼較少的 bug
 ms.custom: debug-experiments
 ms.date: 10/30/2018
 ms.technology: vs-ide-debug
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b020dcf27ee9b248b460465a9b0c75cdb3b0ab6
-ms.sourcegitcommit: a34b7d4fdb3872865fcf98ba24a0fced58532adc
+ms.openlocfilehash: 914b4332a715c86aab7e1fad7d901231cbfd40c5
+ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/12/2018
-ms.locfileid: "51561776"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "51948955"
 ---
 # <a name="write-better-c-code-using-visual-studio"></a>撰寫更好C#使用 Visual Studio 程式碼
 
@@ -33,7 +33,7 @@ ms.locfileid: "51561776"
 
 * 使用偵錯工具的時機
 
-為了示範這些工作，我們會示範幾個最常見的錯誤和嘗試偵錯您的應用程式時，將會遇到的錯誤類型。 雖然程式碼範例C#，提供的概念性資訊是廣泛適用於 c + +、 Visual Basic、 JavaScript、 Visual Studio 其他語言支援 （除了註明）。 螢幕擷取畫面是在 C#。
+為了示範這些工作，我們會示範幾個最常見的錯誤和嘗試偵錯您的應用程式時，將會遇到的錯誤類型。 雖然程式碼範例C#，提供的概念性資訊是廣泛適用於 c + +、 Visual Basic、 JavaScript、 Visual Studio 其他語言支援 （除了註明）。 螢幕擷取畫面則使用 C# 表示。
 
 ## <a name="follow-along-using-the-sample-app"></a>遵循指示使用範例應用程式
 
@@ -42,7 +42,7 @@ ms.locfileid: "51561776"
 若要建立應用程式，請開啟 Visual Studio 並選擇**檔案 > 新增專案**。 底下**Visual C#** ，選擇**Windows 桌面**或是 **.NET Core**，然後在中間窗格選擇**主控台應用程式**。 輸入名稱，例如**Console_Parse_JSON**然後按一下**確定**。 Visual Studio 會建立專案。 貼上[程式碼範例](#sample-code)到專案的*Program.cs*檔案。
 
 > [!NOTE]
-> 如果您沒有看到**主控台應用程式**專案範本，請按一下 [**開啟 Visual Studio 安裝程式**的左窗格中的連結**新專案**] 對話方塊。 Visual Studio 安裝程式即會啟動。 選擇 **.NET 桌面開發**或是 **.NET Core 跨平台開發**工作負載，然後選擇**修改**。
+> 如果您沒有看到 [主控台應用程式] 專案範本，請在 [新增專案] 對話方塊的左窗格中，按一下 [開啟 Visual Studio 安裝程式] 連結。 Visual Studio 安裝程式即會啟動。 選擇 **.NET 桌面開發**或是 **.NET Core 跨平台開發**工作負載，然後選擇**修改**。
 
 ## <a name="find-the-red-and-green-squiggles"></a>尋找紅色和綠色波浪線 ！
 
@@ -166,13 +166,13 @@ A`try/catch`區塊有一些效能成本，因此您只會想要使用它們時�
     }
     ```
 
-* 對於不熟悉的方法包含在您的應用程式中，請檢查以查看哪些例外狀況的方法是可能會擲回的文件。 這可能是適當的錯誤處理和偵錯您的應用程式的重要資訊。
+* 對於您在您的應用程式，expecially 中包含這些外部資料 （例如 web 要求） 互動的熟悉函式，檢查以查看哪些例外狀況的函式是可能會擲回的文件。 這可能是適當的錯誤處理和偵錯您的應用程式的重要資訊。
 
 範例應用程式中，修正`SerializationException`中`GetJsonData`方法，藉由變更`4o`至`40`。
 
 ## <a name="clarify-your-code-intent-by-using-assert"></a>釐清您的程式碼的目的，使用判斷提示
 
-按一下 [**重新啟動**![重新啟動應用程式](../debugger/media/dbg-tour-restart.png "RestartApp")中偵錯] 工具列按鈕 (**Ctrl** + **Shift**  +  **F5**)。 這會應用程式更少的步驟重新啟動。 您會看到下列輸出在主控台視窗中。
+按一下偵錯工具列中的 [重新啟動] ![重新啟動應用程式](../debugger/media/dbg-tour-restart.png "RestartApp") 按鈕 (**Ctrl** + **Shift** + **F5**)。 這會應用程式更少的步驟重新啟動。 您會看到下列輸出在主控台視窗中。
 
 ![在輸出中的 null 值](../debugger/media/write-better-code-using-assert-null-output.png)
 
@@ -208,7 +208,7 @@ if (existingUser == false)
 
 藉由指定意圖，如此一來，您將強制執行您的需求。 這是簡單且方便的方法，您可以在開發期間使用介面的錯誤。 (`assert`陳述式也可作為單元測試中的主要項目。)
 
-按一下 [**重新啟動**![重新啟動應用程式](../debugger/media/dbg-tour-restart.png "RestartApp")中偵錯] 工具列按鈕 (**Ctrl** + **Shift**  +  **F5**)。
+按一下偵錯工具列中的 [重新啟動] ![重新啟動應用程式](../debugger/media/dbg-tour-restart.png "RestartApp") 按鈕 (**Ctrl** + **Shift** + **F5**)。
 
 > [!NOTE]
 > `assert`程式碼是只有在偵錯組建。
@@ -217,7 +217,10 @@ if (existingUser == false)
 
 ![判斷提示會解析為 false](../debugger/media/write-better-code-using-assert.png)
 
-`assert`錯誤告訴您，是您要調查的問題。 `assert` 可以涵蓋許多的案例不一定了例外狀況。 在此範例中，使用者不會看到例外狀況 (在其他情況下`NullReferenceException`可能會發生)，以及`null`以加入值，取得`firstname`資料庫中。 這可能會造成問題更新版本上 （例如，您會看到主控台輸出中），而且可能很難偵錯。
+`assert`錯誤告訴您，是您要調查的問題。 `assert` 可以涵蓋許多的案例不一定了例外狀況。 在此範例中，使用者不會看到例外狀況，以及`null`以加入值，取得`firstname`在清單中的記錄。 這可能會造成問題更新版本上 （例如，您會看到主控台輸出中），而且可能很難偵錯。
+
+> [!NOTE]
+> 在呼叫方法的情況下`null`值，`NullReferenceException`結果。 您通常想要避免使用`try/catch`封鎖一般的例外狀況，也就是不受限於特定的程式庫函式的例外狀況。 任何物件可能會擲回`NullReferenceException`。 如果您不確定，請檢查程式庫函式的文件。
 
 在偵錯過程中，最好保留特定`assert`陳述式，直到您知道您需要將它取代實際的程式碼修正。 例如，假設您決定使用者可能會遇到應用程式的發行組建中的例外狀況。 在此情況下，您必須重構程式碼，以確定您的應用程式不會擲回嚴重的例外狀況或一些其他錯誤所導致。 因此，若要修正此程式碼，取代下列程式碼：
 
@@ -276,7 +279,7 @@ Bug 的另一種包含效率不佳的程式碼，使您的應用程式執行速�
 
 ## <a name="sample-code"></a> 範例程式碼
 
-下列程式碼有一些您可以使用 Visual Studio IDE 來修正的 bug。 應用程式是簡單的應用程式，模擬取得的 JSON 資料，從某項作業，還原序列化至物件，資料與新的資料來更新簡單的記憶體中資料庫。
+下列程式碼有一些您可以使用 Visual Studio IDE 來修正的 bug。 應用程式是簡單的應用程式，模擬取得的 JSON 資料，從某項作業，還原序列化至物件，資料與新的資料來更新簡單的清單。
 
 ```csharp
 using System;

@@ -16,12 +16,12 @@ ms.assetid: 1a062dcb-8a8f-40dd-bea9-3d10f9448966
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 663583129453fc8bd9b71c2be2337a5528f9f7d9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f9d9c1d6c78bb026fe0e26c99bbf712d4412ebd5
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49238078"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51773206"
 ---
 # <a name="context-parameters"></a>內容參數
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

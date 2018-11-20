@@ -15,12 +15,12 @@ ms.assetid: a3f6071c-eac8-4bcd-8ffd-8d0a2d24a252
 caps.latest.revision: 25
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 954993a5733012b4e27ebd6f012fabcf1e3eda00
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6fd526abb5580b6eb3899df9ee76baacd91e56d7
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49241458"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51785283"
 ---
 # <a name="capability-flags"></a>功能旗標
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

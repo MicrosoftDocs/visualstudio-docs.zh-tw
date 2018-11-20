@@ -11,15 +11,15 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 5f31211b-d1d4-4029-9876-ec6eaaca1ac6
 caps.latest.revision: 6
-author: mikeblome
-ms.author: mblome
+author: gewarren
+ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 04c22f6c6997ce3d0c8236623b0cbf727d8a52d9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 74d6bdd3c1885d75c5267da74673eb9fc4355f11
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49175038"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51773076"
 ---
 # <a name="create-custom-window-layouts"></a>建立自訂視窗配置
 本內容已移至[自訂視窗版面配置](../ide/customizing-window-layouts-in-visual-studio.md)

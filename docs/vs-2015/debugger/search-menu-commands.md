@@ -13,15 +13,15 @@ helpviewer_keywords:
 - Search menu commands
 ms.assetid: f36dff9a-49ef-46ce-8c9a-76246458c0d0
 caps.latest.revision: 6
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bfa037cd2bb6555b8249e0cd405d301156391638
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5e674130cb2779c9a5e76aeaa0942a748d02f1ac
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49272385"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51756686"
 ---
 # <a name="search-menu-commands"></a>搜尋功能表命令
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

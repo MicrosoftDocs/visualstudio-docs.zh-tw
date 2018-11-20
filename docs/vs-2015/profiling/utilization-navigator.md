@@ -13,15 +13,15 @@ f1_keywords:
 - vs.cv.performance.utilizationnavigator
 ms.assetid: 522a981a-37ef-4cdd-a04c-f1e7525a2aab
 caps.latest.revision: 14
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9c6550e4d9af994be1b703b56ab91cb33e6fdf5c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: fd3b1df58ccfbc33c256db658e4ff7f3a98d7563
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49824204"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51784906"
 ---
 # <a name="utilization-navigator"></a>使用率導覽
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

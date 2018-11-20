@@ -16,12 +16,12 @@ ms.assetid: ba318e12-921b-4b7a-a8c2-12c712be1dbf
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7e77bfb81df5b9c30ae6b99076480f8ff72cd27a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: eacdce1e311ad15e449ddec6e99ffcf9e4d26c8a
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49273503"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51726111"
 ---
 # <a name="how-to-turn-off-compatibility-warnings-for-source-control-plug-ins"></a>如何： 關閉的原始檔控制外掛程式的相容性警告
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

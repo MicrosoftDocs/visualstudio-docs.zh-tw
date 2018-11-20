@@ -15,12 +15,12 @@ ms.assetid: 5252dcbb-8bfe-4d8a-a8e5-b022b194df19
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a8e1fb2ee13b41d1b41961d0a24a2da0bc852660
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7e696b897e19127c6f805a621f1cac9915e07aa1
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49307595"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51762790"
 ---
 # <a name="idebugalias2"></a>IDebugAlias2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

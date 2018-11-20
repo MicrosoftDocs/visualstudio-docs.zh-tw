@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaSymbol::get_targetSection method
 ms.assetid: 95382395-da41-4aa8-87f1-5b03da128565
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c08db59be4ac940f560a42aa081087adfaebd3b5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: cf199c306b11c9a48945eae8e0bfc2c39fb485a3
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49848341"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51757527"
 ---
 # <a name="idiasymbolgettargetsection"></a>IDiaSymbol::get_targetSection
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "49848341"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT get_targetSection (   
+HRESULT get_targetSection (   
    DWORD* pRetVal  
 );  
 ```  

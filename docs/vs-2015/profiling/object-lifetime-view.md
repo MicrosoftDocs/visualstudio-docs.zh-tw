@@ -19,15 +19,15 @@ helpviewer_keywords:
 - profiling tools, Lifetime view
 ms.assetid: d0501fdd-4b3a-4e74-b6ac-51d950a2e15b
 caps.latest.revision: 29
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a503a0de6a8b9935fbfb6b7e415d79cb0520f67d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4cc2e17084809e691838ea0e681e3d2b766d0769
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49202848"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51756436"
 ---
 # <a name="object-lifetime-view"></a>物件存留期檢視
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

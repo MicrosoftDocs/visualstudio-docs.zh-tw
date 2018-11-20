@@ -16,15 +16,15 @@ f1_keywords:
 - vs.performance.rules.DA0005
 ms.assetid: 8d3f267c-8a74-4cf4-91a5-0b06a76dc2bd
 caps.latest.revision: 16
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ccbd030fe6f6ec48e37da22be896bd9fb3a5c8ab
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 80b3f769a151974559f70d247696fd7abb794731
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49237714"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51745775"
 ---
 # <a name="da0005-frequent-gc2-collections"></a>DA0005：常見的 GC2 集合
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

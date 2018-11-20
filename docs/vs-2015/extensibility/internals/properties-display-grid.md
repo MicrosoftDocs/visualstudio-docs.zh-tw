@@ -15,12 +15,12 @@ ms.assetid: 318e41b0-acf5-4842-b85e-421c9d5927c5
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: cb3dc021923cebb276932071e290642daf8907ba
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1a3db18bacb2aee7bd908be4246c1ce0701e8fee
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49826607"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51741391"
 ---
 # <a name="properties-display-grid"></a>屬性顯示格線
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

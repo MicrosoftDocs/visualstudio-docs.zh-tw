@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaSymbol::get_constructor method
 ms.assetid: 2f2cf1e0-f817-4ca0-b782-3341362c46a9
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 00201b8c86eb39bbb91e54ab1e252baf0ce49df8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: dcc29e96d47d77f75b28e3e8d09d4fa57dec131e
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49935442"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51788910"
 ---
 # <a name="idiasymbolgetconstructor"></a>IDiaSymbol::get_constructor
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "49935442"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT get_constructor (   
+HRESULT get_constructor (   
    BOOL* pRetVal  
 );  
 ```  

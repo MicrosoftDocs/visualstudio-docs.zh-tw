@@ -13,15 +13,15 @@ helpviewer_keywords:
 - coyright, Spy++
 ms.assetid: 84efcb95-5e57-4e1b-9670-13c9163f6fc6
 caps.latest.revision: 7
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fa95cd2500cf2bc228f5787d77490f0cbfc5fd4b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f4ea801acf4c0156d928d89fd0fca0b1c8e4b2a6
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49201535"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51772088"
 ---
 # <a name="copyright-notice-for-spy-help"></a>Spy++ 說明的著作權注意事項
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

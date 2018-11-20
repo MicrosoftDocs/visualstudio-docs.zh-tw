@@ -16,12 +16,12 @@ ms.assetid: a0c85318-5686-4eed-b213-21f2b9e681e6
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 20fbdad8263953caaea12ed102f6915de61fcb9d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9e816ef6475cd1724ee5f7987f9a4370d9c902d2
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49933413"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51746736"
 ---
 # <a name="idebugsymbolproviderdirectgetcurrentmodulesstate"></a>IDebugSymbolProviderDirect::GetCurrentModulesState
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

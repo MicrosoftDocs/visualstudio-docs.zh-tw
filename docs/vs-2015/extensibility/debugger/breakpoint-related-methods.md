@@ -16,12 +16,12 @@ ms.assetid: a6f77bf0-bf81-443f-8683-5f12075bbe10
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4c325735ed382fe8d5204408601274a0e5d9293b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e1767afec32b2b90250a841317e0929fcdd7732c
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49277159"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51794994"
 ---
 # <a name="breakpoint-related-methods"></a>中斷點相關的方法
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

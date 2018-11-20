@@ -17,12 +17,12 @@ ms.assetid: 6b513f4e-e7b0-4969-adf0-2205ccc1e09b
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 851ed9d5124907aff892357b4faf4af6ad3c1f8f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1f90b74a018b90b405cf3e5dbeef25af33b2d9fb
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49837863"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51817733"
 ---
 # <a name="contextinfo"></a>CONTEXT_INFO
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "49837863"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-typedef struct _tagCONTEXT_INFO {   
+typedef struct _tagCONTEXT_INFO {   
    CONTEXT_INFO_FIELDS dwFields;  
    BSTR                bstrModuleUrl;  
    BSTR                bstrFunction;  

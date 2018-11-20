@@ -18,12 +18,12 @@ caps.latest.revision: 48
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: d6cc66b828b07c0facb8fae19b562dc6566df420
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b01219fa0d9f3ab95fb2d64e2d3dd003557bfe51
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49199897"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51761245"
 ---
 # <a name="install-visual-studio-versions-side-by-side"></a>安裝 Visual Studio 版本的並存
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ ms.locfileid: "49199897"
   
 -   如果您嘗試使用 Visual Studio 2015 開啟 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] 或以前版本所建立的方案，可能需要修改專案和檔案，才能與 Visual Studio 2015 相容。 如需詳細資訊，請參閱 <<c0> [ 移植、 移轉及升級 Visual Studio 專案](../misc/port-migrate-and-upgrade-visual-studio-projects-in-visual-studio-15-rc.md)頁面。  
   
--   如果在已經安裝多個 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的電腦上解除安裝其中一個版本，則會移除所有版本的 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 檔案關聯。 您可以使用 **選項** 對話方塊中，位於 [環境] 的 [一般]  頁面上的 [還原檔案關聯] [](../ide/reference/general-environment-options-dialog-box.md) 按鈕來重新對應這些檔案關聯。  
+-   如果在已經安裝多個 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的電腦上解除安裝其中一個版本，則會移除所有版本的 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 檔案關聯。 您可以使用 [選項](../ide/reference/general-environment-options-dialog-box.md) 對話方塊中，位於 [環境] 的 [一般]  頁面上的 [還原檔案關聯]  按鈕來重新對應這些檔案關聯。  
   
 -   Visual Studio 不會自動升級擴充功能，因為並非所有擴充功能都相容。 您必須從 [Visual Studio 組件庫](http://go.microsoft.com/fwlink/?LinkId=178891) 或軟體發行者重新安裝擴充功能。  
   

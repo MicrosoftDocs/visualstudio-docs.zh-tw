@@ -15,12 +15,12 @@ ms.assetid: 649abf0e-0fec-49d9-93b2-8953521f7ba5
 caps.latest.revision: 5
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: eaa57ad8ee49aa0f2fc86e1b6dbab70f284ac95c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 80458f2b3bf821e006f88cee0eac132d1c7a84d3
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49211077"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51807084"
 ---
 # <a name="asynctaskmethodbuilderlttresultgtmtask-field"></a>AsyncTaskMethodBuilder&lt;TResult&gt;.m_task 欄位
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

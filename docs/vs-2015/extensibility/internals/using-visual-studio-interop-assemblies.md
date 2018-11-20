@@ -17,12 +17,12 @@ ms.assetid: 1043eb95-4f0d-4861-be21-2a25395b3b3c
 caps.latest.revision: 34
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 38d33733c9ab2c9b3a1b0eb44fad30b46ae3c029
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9c47b709d38a9acf84810de7154b270e2b4557ea
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49195621"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51794643"
 ---
 # <a name="using-visual-studio-interop-assemblies"></a>使用 Visual Studio Interop 組件
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

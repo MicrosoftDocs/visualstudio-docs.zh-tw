@@ -13,12 +13,12 @@ ms.assetid: 585b0a3a-f85b-4f92-81bb-9ca499bb8a89
 caps.latest.revision: 6
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 13ec73d4b251cc06b6224d2d08f1bb20ad8e98dd
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 79ba397bf2dee5ae18b727830af87ae57415d885
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49204772"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51738340"
 ---
 # <a name="creating-an-extension-with-a-tool-window"></a>使用工具視窗建立延伸模組
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

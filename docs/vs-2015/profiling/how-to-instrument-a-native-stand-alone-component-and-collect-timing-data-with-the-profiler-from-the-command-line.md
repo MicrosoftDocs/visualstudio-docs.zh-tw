@@ -11,15 +11,15 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 36883074-9be8-4e90-a66f-7e87f21fcd30
 caps.latest.revision: 30
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1a3c3ccb818da98d08d1a82c1a6d25799a58d9dd
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 075d493b87203f3aacf8afb8811e3f8544882d25
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49818194"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51748411"
 ---
 # <a name="how-to-instrument-a-native-stand-alone-component-and-collect-timing-data-with-the-profiler-from-the-command-line"></a>如何：從命令列使用程式碼剖析工具以檢測原生獨立元件並收集計時資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

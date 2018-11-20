@@ -13,12 +13,12 @@ ms.assetid: 6f0e4986-3157-4bba-aed3-c28413ebe976
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4b3ca2e03b79f2cb1fcdcc738a88e3945d95972f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d2854cd8f10725ed884c27c2c78a4d107054a5bd
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49276051"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51763981"
 ---
 # <a name="requiredplatformversion-element-visual-studio-templates"></a>RequiredPlatformVersion 項目 (Visual Studio 樣板)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

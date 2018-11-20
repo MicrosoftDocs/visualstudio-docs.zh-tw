@@ -17,12 +17,12 @@ ms.assetid: 159ccb0b-f5d6-4912-b88b-e9612924ed5e
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d1dab76881ac7cd4fe5cba36ec79dc48f4c1ecf1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6ff6f4a29d194aaa5c9b868fffa19947a7321c77
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49250677"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51797204"
 ---
 # <a name="quick-info-in-a-legacy-language-service"></a>舊版語言服務中的快速諮詢
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

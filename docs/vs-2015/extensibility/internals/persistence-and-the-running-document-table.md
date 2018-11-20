@@ -18,12 +18,12 @@ ms.assetid: 27117eae-6c58-4189-a61a-1397a43b5ecf
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c85f8d579b3c2cae6ca10f217c1dabd72dfc3a53
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b734d21950fd3765a7c331bbcdc47177f48e2b0a
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49301329"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51726090"
 ---
 # <a name="persistence-and-the-running-document-table"></a>持續性與執行中的文件資料表
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

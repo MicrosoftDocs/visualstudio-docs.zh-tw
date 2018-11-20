@@ -16,12 +16,12 @@ ms.assetid: 008a20c7-1b27-4013-bf96-d6a3f510da02
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0bce0ea65aa025d7250c49b5d91f8d075a9720aa
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2643e680afcc29781eca45ab4724c17ae8846285
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49253275"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51772894"
 ---
 # <a name="evaluation-context"></a>評估內容
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

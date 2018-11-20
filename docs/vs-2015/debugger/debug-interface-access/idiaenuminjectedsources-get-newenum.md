@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaEnumInjectedSources::get__NewEnum method
 ms.assetid: f56cdcdb-dc71-43c7-82fe-e2500986f5bc
 caps.latest.revision: 10
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5bf96b1081574c751bfd937ceb0fa833ae79c3d8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e0adfad330ff3bf637558781ad244e407da6ef02
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49817687"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51766209"
 ---
 # <a name="idiaenuminjectedsourcesgetnewenum"></a>IDiaEnumInjectedSources::get__NewEnum
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "49817687"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT get__NewEnum (   
+HRESULT get__NewEnum (   
    IUnknown** pRetVal  
 );  
 ```  

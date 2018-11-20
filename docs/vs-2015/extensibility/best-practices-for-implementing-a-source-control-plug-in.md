@@ -17,12 +17,12 @@ ms.assetid: 85e73b73-29dc-464f-8734-ed308742c435
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fccadb7bd4b2ceaed201ab2d4d5b5c4fa71bc0ad
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5bcbe41bc0b5cd6c348463426fe8bb97a38ac308
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49254681"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51742350"
 ---
 # <a name="best-practices-for-implementing-a-source-control-plug-in"></a>實作原始檔控制外掛程式的最佳做法
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

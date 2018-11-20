@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaSectionContrib::get_write method
 ms.assetid: 7e75348e-c12c-44ec-b004-e97767580a3f
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a431b91df9a8c6fd28946f98ebab45bc5dc9480f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7c06f810fc1f3264536782f79f9b2d40f2a1e22c
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49839449"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51767421"
 ---
 # <a name="idiasectioncontribgetwrite"></a>IDiaSectionContrib::get_write
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "49839449"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT get_write (   
+HRESULT get_write (   
    BOOL* pRetVal  
 );  
 ```  

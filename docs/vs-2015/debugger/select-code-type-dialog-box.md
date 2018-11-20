@@ -27,15 +27,15 @@ helpviewer_keywords:
 - debugging engine selection dialog box
 ms.assetid: 932269fe-94e3-43cb-8931-078f31afd177
 caps.latest.revision: 13
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e25ff3a0c21288744306455735324d4d72547cb3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d24f20741ee3934a5835aeac852a279ac6cb2e77
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49200898"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51801806"
 ---
 # <a name="select-code-type-dialog-box"></a>選取程式碼類型對話方塊
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

@@ -13,15 +13,15 @@ dev_langs:
 - C++
 ms.assetid: cc4ea375-76f6-4ba8-baed-c5fa82108137
 caps.latest.revision: 6
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 40ceb1c5d78d0f7a685f604b71c23915b1e8f4c3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e89dcf2ef1e9ed8c435d454a2bdcaef48467998c
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49200950"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51724414"
 ---
 # <a name="idiasymbolgetisacceleratorstubfunction"></a>IDiaSymbol::get_isAcceleratorStubFunction
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

@@ -1,5 +1,5 @@
 ---
-title: 工作區和 Visual Studio 中的語言服務 |Microsoft 文件
+title: 工作區和 Visual Studio 中的語言服務 |Microsoft Docs
 ms.custom: ''
 ms.date: 02/21/2018
 ms.technology:
@@ -11,57 +11,57 @@ ms.author: svukel
 manager: viveis
 ms.workload:
 - vssdk
-ms.openlocfilehash: 551a621ab97c232970d6ef67da14379c5cdfbd46
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: be9fb8c1e3ae363898e0438bdd1ec34c9fd23727
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31140803"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51735456"
 ---
 # <a name="workspaces-and-language-services"></a>工作區和語言服務
 
-語言服務可以提供[開啟資料夾](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md)使用者相同的豐富的語言功能它們是用來使用方案和專案。 語言服務可能會自行啟動雖然這項 「 鬆散檔案 」 語言服務僅限於語法反白顯示，根據副檔名或開啟的文件的內容。 編輯/檢閱原始碼時提供更豐富的經驗被需要其他資訊。 每個語言服務有它自己 API 進行初始化這項額外內容資料的文件。 這通常被受管理專案系統，語言服務和建置系統緊密結合。
+語言服務可以提供[開啟資料夾](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md)使用者相同的豐富的語言功能它們是用來使用方案和專案時。 語言服務可能會自行啟動這個 「 鬆散檔案 」 語言服務是限制為語法反白顯示，根據副檔名或開啟的文件的內容。 其他資訊，才能編輯/檢閱原始碼時提供更豐富的體驗。 每個語言服務會有它自己的初始化與此文件的額外內容資料的 API。 這通常被管理專案系統使用，這緊密結合的語言服務，建置系統。
 
 ## <a name="initialization"></a>初始化
 
-在[工作區](workspaces.md)，語言服務由初始化<xref:Microsoft.VisualStudio.Workspace.Intellisense.ILanguageServiceProvider>延伸點，該語言服務只能在特製化，而且知道組建撰寫的任何內容。 如此一來，語言服務擁有者可以維護單一開啟資料夾存在於資料夾和檔案 （例如 MSBuild、 makefile 等），在建置期間執行其編譯器的擴充功能，不論多少的模式。 當從中建立的檔案內容的檔案會在磁碟上變更並重新整理的檔案內容時，更新的檔案內容集語言服務提供者會收到通知。 語言服務提供者則可以更新其模型。
+在 [工作區](workspaces.md)，語言服務會初始化所<xref:Microsoft.VisualStudio.Workspace.Intellisense.ILanguageServiceProvider>延伸點，只有該語言服務中專門和一無所知建置撰寫。 如此一來，語言服務擁有者可以維護單一開啟資料夾存在於資料夾和檔案 （例如 MSBuild、 makefile 等） 在建置期間執行其編譯器的延伸不限數目的模式。 當建立的檔案內容來源的檔案會在磁碟上變更並重新整理的檔案內容時，語言服務提供者會收到通知的已更新的檔案內容集。 然後，語言服務提供者可以更新其模型。
 
-在編輯器中開啟文件時，Visual Studio 只會考慮語言需要可以找到相符的檔案內容提供者檔案內容類型的服務提供者。 接著，將檔案內容比對的提供者從選取的語言服務提供者透過`ILangaugeServiceProvider.InitializeAsync`。 語言服務提供者的用途與檔案內容資料是語言服務提供者實作細節，但預期的使用者經驗會更豐富的語言服務的開啟文件。
+在編輯器中開啟文件時，Visual Studio 只會考慮語言需要找相符的檔案內容提供者的檔案內容類型的服務提供者。 然後將傳遞檔案內容從相符的提供者至選取的語言服務提供者，透過`ILanguageServiceProvider.InitializeAsync`。 語言服務提供者的功能與檔案的內容資料是語言服務提供者的實作詳細資料，但預期的使用者體驗是更豐富的語言服務，如開啟文件。
 
 ## <a name="using-ilanguageserviceprovider"></a>使用 ILanguageServiceProvider
 
-建立的檔案內容時，將會通知語言服務`ContextType`符合其中一個`SupportedContextTypes`值語言伺服器匯出的屬性。
+將通知語言服務，以建立的檔案內容`ContextType`符合其中一個`SupportedContextTypes`值的語言伺服器匯出的屬性。
 
-若要支援語言服務，將需要擴充功能：
+若要支援的語言服務，將需要擴充功能：
 
-- 唯一`Guid`。 這會用於`SupportedContextTypes`屬性引數和`FileContext`物件。
+- 唯一`Guid`。 這將用於`SupportedContextTypes`屬性的引數和`FileContext`物件。
 - 語言檔案內容
-  - 提供者處理站
-    - `ExportFileContextProviderAttribute` 具有上述屬性唯一產生`Guid`中 `SupportedContextTypes`
+  - 提供者 factory
+    - `ExportFileContextProviderAttribute` 使用上述的屬性產生的唯一專屬`Guid`中 `SupportedContextTypes`
     - 實作 `IWorkspaceProviderFactory<IFileContextProvider>`
   - 提供者實作 `IFileContextProvider.GetContextsForFileAsync`
-    - 建構新`FileContext`與`contextType`做為唯一產生的建構函式引數 `Guid`
-    - 使用`Context`屬性`FileContext`來提供深度的額外資料 `ILanguageServiceProvider`
+    - 建構新`FileContext`與`contextType`作為唯一產生建構函式引數 `Guid`
+    - 使用`Context`屬性`FileContext`提供的額外資料 `ILanguageServiceProvider`
 - 語言服務
-  - 提供者處理站
-    - `ExportLanguageServiceProvider` 具有上述屬性唯一產生`Guid`中 `SupportedContextTypes`
+  - 提供者 factory
+    - `ExportLanguageServiceProvider` 使用上述的屬性產生的唯一專屬`Guid`中 `SupportedContextTypes`
     - 實作 `IWorkspaceProviderFactory<ILanguageServiceProvider>`
   - 提供者
     - 實作 `ILanguageServiceProvider`
-    - 使用`ILanguageServiceProvider.InitializeAsync`開啟檔案時啟用提供的引數的語言服務
-    - 使用`ILanguageServiceProvider.UninitializeAsync`檔案關閉時，停用提供的引數的語言服務
+    - 使用`ILanguageServiceProvider.InitializeAsync`開啟檔案時，啟用提供的引數的語言服務
+    - 使用`ILanguageServiceProvider.UninitializeAsync`關閉檔案時，停用提供的引數的語言服務
 
 >[!WARNING]
->`ILanguageServiceProvider`主執行緒上的工作區可能會叫用的方法。 請考慮將排程工作在不同的執行緒，若要避免引進 UI 延遲。
+>`ILanguageServiceProvider`主執行緒上的工作區可能會叫用方法。 請考慮將排程工作在不同的執行緒，以避免產生 UI 延遲。
 
 ## <a name="language-server-protocol"></a>語言伺服器通訊協定
 
-`Microsoft.VisualStudio.Workspace.*`應用程式開發介面不允許您開啟的資料夾中的語言服務的唯一方式。 另一個選項是使用語言伺服器。 如需詳細資訊，請閱讀有關[語言伺服器通訊協定](language-server-protocol.md)。
+`Microsoft.VisualStudio.Workspace.*`開發介面不會啟用您的語言服務中開啟資料夾的唯一方式。 另一個選項是使用語言伺服器。 如需詳細資訊，了解[語言伺服器通訊協定](language-server-protocol.md)。
 
 ## <a name="related-interfaces"></a>相關的介面
 
-- <xref:Microsoft.VisualStudio.Workspace.Intellisense.ILanguageServiceProvider> 開啟或關閉編輯對應的檔案類型的檔案時，會叫用。
+- <xref:Microsoft.VisualStudio.Workspace.Intellisense.ILanguageServiceProvider> 比對的檔案類型的檔案是開啟或關閉進行編輯時，會叫用。
 
 ## <a name="next-steps"></a>後續步驟
 
-* [工作區組建](workspace-build.md)-開啟資料夾支援建置 MSBuild 等 makefile 的系統。 
+* [工作區建置](workspace-build.md)-開啟資料夾支援建置系統，例如 MSBuild 和 makefile。 

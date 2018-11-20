@@ -15,15 +15,15 @@ f1_keywords:
 - vs.performance.rules.DA0024
 ms.assetid: 228872da-77d0-4da5-b455-ac57fb1867c9
 caps.latest.revision: 15
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ba4069e653ce692c0561c63853bf6f4c8bf5f67a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 910f66a31f959fe15cc7165eda4e531e7965e670
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49221321"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51754251"
 ---
 # <a name="da0024-excessive-gc-cpu-time"></a>DA0024：過多 GC CPU 時間
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

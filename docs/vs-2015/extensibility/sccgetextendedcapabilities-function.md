@@ -17,12 +17,12 @@ ms.assetid: 588c6a92-2147-4d8b-a357-96ca7da0a092
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c2336a14c6d0030c0243ab7de0f5694dc159ed84
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b84565713edda09c029d6565e0fdbfdfa11e7d42
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49926302"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51809528"
 ---
 # <a name="sccgetextendedcapabilities-function"></a>SccGetExtendedCapabilities 函式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

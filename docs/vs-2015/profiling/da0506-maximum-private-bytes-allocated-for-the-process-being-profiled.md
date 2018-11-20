@@ -15,15 +15,15 @@ f1_keywords:
 - vs.performance.506
 ms.assetid: e9c43554-9a85-4d98-9fa4-3b19986e7b62
 caps.latest.revision: 12
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bb841b15e86505c60c8470ec9604b4697142724b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: bdd7d63ad7dd0261394d3333cdd35ec5f5a330f1
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49241380"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51810386"
 ---
 # <a name="da0506-maximum-private-bytes-allocated-for-the-process-being-profiled"></a>DA0506：為進行程式碼剖析的處理序所配置的最大私用位元組
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

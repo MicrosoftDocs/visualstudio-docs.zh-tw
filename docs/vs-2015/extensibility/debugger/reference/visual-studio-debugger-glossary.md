@@ -16,12 +16,12 @@ ms.assetid: 4a2cfaab-1fbd-4a23-bd00-9ac4cc50d7fd
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2a946eb1d8891bfb11179c480fde6369781fdd57
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 37c0608b5684c9d16041ce89707dd81e665b0623
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49911443"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51757937"
 ---
 # <a name="visual-studio-debugger-glossary"></a>Visual Studio 偵錯工具字彙
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

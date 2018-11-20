@@ -19,15 +19,15 @@ dev_langs:
 - SQL
 ms.assetid: 596425c8-14c7-4c05-8823-e1c52f420f5e
 caps.latest.revision: 9
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f775bd99c019a119d1bcd5193df0efd7ceadd096
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 47e0557e3ad2022250d54b7bd45844825ff79a03
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49180163"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51757471"
 ---
 # <a name="error-sql-can39t-find-ssdebugps"></a>錯誤： SQL 可以&#39;t 找不到 SSDEBUGPS
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

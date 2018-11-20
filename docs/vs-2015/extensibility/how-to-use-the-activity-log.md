@@ -16,12 +16,12 @@ ms.assetid: bb3d3322-0e5e-4dd5-b93a-24d5fbcd2ffd
 caps.latest.revision: 30
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4804f07a673abb99d2b0405b397fe53d2e52f589
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5c6b9c312fec6d11369b198e215d27cfc004c1d8
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49212443"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51798302"
 ---
 # <a name="how-to-use-the-activity-log"></a>如何： 使用活動記錄
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

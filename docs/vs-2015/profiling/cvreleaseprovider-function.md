@@ -15,15 +15,15 @@ helpviewer_keywords:
 - CvReleaseProvider method
 ms.assetid: 8d74379e-295d-452b-bd5f-0769df387d4f
 caps.latest.revision: 8
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f5b644dfdb469d84b90a1a0d7d59651fbad2460b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2c59e5516129d5712983a228f68e4e91301656c2
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49300777"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51738806"
 ---
 # <a name="cvreleaseprovider-function"></a>CvReleaseProvider 函式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

@@ -17,12 +17,12 @@ ms.assetid: 0d9cc345-3d3a-44d8-ae15-a67acb97a828
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5b15cc4577a07650aa64afd8103f06ef0b6e20c0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d4349a4a2ad55c53886ab281652ff990aa608682
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49898066"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51807734"
 ---
 # <a name="processinfofields"></a>PROCESS_INFO_FIELDS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "49898066"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-enum enum_PROCESS_INFO_FIELDS {   
+enum enum_PROCESS_INFO_FIELDS {   
    PIF_FILE_NAME             = 0x00000001,  
    PIF_BASE_NAME             = 0x00000002,  
    PIF_TITLE                 = 0x00000004,  
@@ -47,7 +47,7 @@ typedef DWORD PROCESS_INFO_FIELDS;
 ```  
   
 ```csharp  
-public enum enum_PROCESS_INFO_FIELDS {   
+public enum enum_PROCESS_INFO_FIELDS {   
    PIF_FILE_NAME             = 0x00000001,  
    PIF_BASE_NAME             = 0x00000002,  
    PIF_TITLE                 = 0x00000004,  

@@ -11,15 +11,15 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: b62fcbc1-791f-474e-890a-a6c332e0c9ea
 caps.latest.revision: 39
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 80201711683e2734921fc28af5a68b195a6484f7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: cd0375663882363a1b3379c9a20f2b2042d495b0
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49917059"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51742359"
 ---
 # <a name="how-to-attach-the-profiler-to-a-net-framework-stand-alone-application-and-collect-application-statistics-by-using-the-command-line"></a>如何：使用命令列將程式碼剖析工具附加至 .NET Framework 獨立應用程式並收集應用程式統計資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

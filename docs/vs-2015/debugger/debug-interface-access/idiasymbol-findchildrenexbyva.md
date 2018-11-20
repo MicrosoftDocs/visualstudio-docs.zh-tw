@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaSymbol::findChildrenExByVA
 ms.assetid: 29080009-36e4-4697-acd7-50f2e3e1bf1b
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dfd5d74cbe8061d88b0cbc5bb603eaf817492093
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 89382450b388524a5b08e04fa879e97cb5f26258
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49837180"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51750245"
 ---
 # <a name="idiasymbolfindchildrenexbyva"></a>IDiaSymbol::findChildrenExByVA
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "49837180"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT findChildrenExByVA (   
+HRESULT findChildrenExByVA (   
    enum SymTagEnum   symtag,  
    LPCOLESTR         name,  
    DWORD             compareFlags,  

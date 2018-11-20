@@ -13,15 +13,15 @@ helpviewer_keywords:
 - Functions view
 ms.assetid: 5d9c6302-2ffd-430e-9535-13ce795f9f7c
 caps.latest.revision: 14
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6382849660d7dea44286fc467d497502caef6180
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: bfdfbab17538648b816c094409f9396cc5f638b8
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49224792"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51788312"
 ---
 # <a name="functions-view---net-memory-sampling-data"></a>函式檢視 - .NET 記憶體取樣資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

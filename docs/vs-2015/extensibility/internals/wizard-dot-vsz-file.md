@@ -17,12 +17,12 @@ ms.assetid: 72e1d0f3-eef1-455e-b803-96827f030f50
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b1d8d36ba617f5d5828354e32b5b0f45ed9ec1ec
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 428a2faf85180b9239f128dde5a9dadca04139af
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49197153"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51786429"
 ---
 # <a name="wizard-vsz-file"></a>精靈檔 (.Vsz)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

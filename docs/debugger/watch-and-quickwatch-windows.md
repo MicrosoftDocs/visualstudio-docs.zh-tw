@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a4db887a3e27d995229da6d954c4b3f66173e9e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: aa469b109e0e22e426d76f75be50309196c6a264
+ms.sourcegitcommit: 331dbb12e11fcd7f5d15fab05f3c861e48126e43
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49897351"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51826787"
 ---
 # <a name="watch-variables-with-watch-windows-and-quickwatch"></a>監看式變數使用監看式視窗和快速監看式 
 
@@ -278,5 +278,6 @@ static void Main(string[] args)
 1. 繼續偵錯。 您可以觀察在變數**監看式**視窗。
 
 ## <a name="see-also"></a>另請參閱
-
-[偵錯工具視窗](../debugger/debugger-windows.md)
+ [什麼偵錯？](../debugger/what-is-debugging.md)  
+ [撰寫更好C#使用 Visual Studio 程式碼](../debugger/write-better-code-with-visual-studio.md)  
+ [第一次查看偵錯](../debugger/debugger-feature-tour.md)[偵錯工具視窗](../debugger/debugger-windows.md)

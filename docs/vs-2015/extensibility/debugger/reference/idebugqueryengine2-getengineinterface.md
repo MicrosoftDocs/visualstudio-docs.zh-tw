@@ -17,12 +17,12 @@ ms.assetid: ed84aa98-7ec7-48f3-97ae-821090bc3664
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1d8470db2bcb8b4b1d734c7300ae4e3f5d120de1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 48eaa9c6fb9aa246ab921362c3f88aa09eed0656
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49811876"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51721379"
 ---
 # <a name="idebugqueryengine2getengineinterface"></a>IDebugQueryEngine2::GetEngineInterface
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,13 +32,13 @@ ms.locfileid: "49811876"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT GetEngineInterface(   
+HRESULT GetEngineInterface(   
    IUnknown** ppUnk  
 );  
 ```  
   
 ```csharp  
-int GetEngineInterface(   
+int GetEngineInterface(   
    out object ppUnk  
 );  
 ```  

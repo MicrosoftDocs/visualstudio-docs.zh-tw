@@ -13,15 +13,15 @@ dev_langs:
 - C++
 ms.assetid: 4264742a-3d91-44b9-9d14-87adbc77f0f0
 caps.latest.revision: 6
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 08513c0ad94740f66dfd1d35d36c801c42a606ea
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4e18c6b4899c500e1020ce119a640307c47ce988
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49175356"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51779160"
 ---
 # <a name="idiasymbolgetstride"></a>IDiaSymbol::get_stride
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

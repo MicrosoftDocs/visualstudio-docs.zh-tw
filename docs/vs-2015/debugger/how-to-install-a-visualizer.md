@@ -23,15 +23,15 @@ helpviewer_keywords:
 - visualizers, installing
 ms.assetid: 3310ef43-515c-4d97-b0f9-51047247d3da
 caps.latest.revision: 29
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d5539b17ee4d10f603f1adfe2ce7e459332181cf
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d5b2c77bd5f9d32b3bb4a0954017b7abdee1947c
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49250220"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51731461"
 ---
 # <a name="how-to-install-a-visualizer"></a>如何：安裝視覺化檢視
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

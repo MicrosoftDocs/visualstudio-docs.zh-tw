@@ -15,12 +15,12 @@ ms.assetid: dda23b18-96ef-43c6-b0dc-06d15cbe5cbb
 caps.latest.revision: 30
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e929f46ae6e7f1ef374c663242abb5b332ed4ffb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d092994ad66d96a3fe7141cb898c7ef9b811eaf5
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49828436"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51765782"
 ---
 # <a name="instantiating-the-core-editor-by-using-the-legacy-api"></a>使用舊版 API，核心編輯器具現化
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

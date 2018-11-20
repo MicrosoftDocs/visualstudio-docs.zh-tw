@@ -14,15 +14,15 @@ helpviewer_keywords:
 - use case diagrams
 ms.assetid: 4c9ed205-9197-4ed5-b39d-ddfa24a0a421
 caps.latest.revision: 12
-author: alexhomer1
+author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 2137863e48fbedfff4736588a6f3a177786aac57
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a5b4ef580825115a1d44c3abb39404332a4277ea
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49824499"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51787909"
 ---
 # <a name="link-a-use-case-to-documents-and-diagrams"></a>將使用案例連結到文件與圖表
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

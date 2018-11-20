@@ -22,15 +22,15 @@ helpviewer_keywords:
 - debugging [Visual Studio], access violations
 ms.assetid: 780a298a-132e-4245-8370-8c82ca27c6c1
 caps.latest.revision: 22
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 486b981311d93a93866622ccf80b6eabdee748ff
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5e0ed8025986c92cd4c809ea8b04f0109fb010c5
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49290754"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51816268"
 ---
 # <a name="how-can-i-debug-access-violations-when-running-my-program-outside-the-debugger"></a>在偵錯工具外執行我的程式時，如何偵錯存取違規？
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

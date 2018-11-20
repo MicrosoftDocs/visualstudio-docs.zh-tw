@@ -16,12 +16,12 @@ ms.assetid: b6c82167-e2a5-4cff-8c8b-2d72e2a9092c
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7260ba1dd2f5485c42c25dd3319f0aeb00ff9f05
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c2b06582e1de7939e34f8fa49aa1cc9435010789
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49927199"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51733865"
 ---
 # <a name="vsix-project-template"></a>VSIX 專案範本
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

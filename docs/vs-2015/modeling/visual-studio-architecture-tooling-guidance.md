@@ -9,15 +9,15 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: fce6b398-935e-4241-bdf4-875d09ff57c7
 caps.latest.revision: 12
-author: alexhomer1
+author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 939d7d10a1118a71abb6eee0ac64a2ed033594c8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: feca9ea9ae09bc41082392d5e47a474408d1c901
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49181658"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51765906"
 ---
 # <a name="visual-studio-architecture-tooling-guidance"></a>Visual Studio 架構工具指南
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

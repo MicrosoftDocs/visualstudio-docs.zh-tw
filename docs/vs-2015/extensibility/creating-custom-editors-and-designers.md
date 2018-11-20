@@ -16,12 +16,12 @@ ms.assetid: b6a5e8b2-0ae1-4fc3-812d-09d40051b435
 caps.latest.revision: 32
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3067f9d54a91c02df63d3c22afda19da3b5707ea
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 324284a6cac44c995d652cce2f2e82a4c13702c1
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49818001"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51753257"
 ---
 # <a name="creating-custom-editors-and-designers"></a>建立自訂編輯器和設計工具
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

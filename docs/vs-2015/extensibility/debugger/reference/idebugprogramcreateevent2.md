@@ -17,12 +17,12 @@ ms.assetid: b19a7934-6179-4a68-9075-bd7dcd640b05
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: cd69afea6723050478f1b91d9b298a893b6ceceb
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d9c62756b30003dfbb1c9d892e3504b44fc3751d
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49302597"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51816602"
 ---
 # <a name="idebugprogramcreateevent2"></a>IDebugProgramCreateEvent2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

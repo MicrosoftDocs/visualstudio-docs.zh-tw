@@ -23,12 +23,12 @@ ms.assetid: 70d8c9e5-4b0b-4a69-b3b3-90f36debe880
 caps.latest.revision: 27
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2df1b61d387497c1e83519fde104ad6a66d92133
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4c4cf9f711990f5b3f1f064aa6311a8b33b64fef
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49187313"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51757684"
 ---
 # <a name="supporting-symbol-browsing-tools"></a>支援符號瀏覽工具
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

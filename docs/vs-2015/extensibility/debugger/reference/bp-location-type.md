@@ -17,12 +17,12 @@ ms.assetid: 0248430a-3b61-4809-87a9-e9b6bb7d1130
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d84cb1f79a86de5ad9c9865fcea6a0f46171d7b4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 16f990ef25e5a7e16519d3eed67becee20d236e2
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49909714"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51817382"
 ---
 # <a name="bplocationtype"></a>BP_LOCATION_TYPE
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "49909714"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-enum enum_BP_LOCATION_TYPE {   
+enum enum_BP_LOCATION_TYPE {   
    BPLT_NONE               = 0x00000000,  
    BPLT_FILE_LINE          = 0x00010000,  
    BPLT_FUNC_OFFSET        = 0x00020000,  
@@ -53,7 +53,7 @@ typedef DWORD BP_LOCATION_TYPE;
 ```  
   
 ```csharp  
-public enum enum_BP_LOCATION_TYPE {   
+public enum enum_BP_LOCATION_TYPE {   
    BPLT_NONE               = 0x00000000,  
    BPLT_FILE_LINE          = 0x00010000,  
    BPLT_FUNC_OFFSET        = 0x00020000,  

@@ -16,12 +16,12 @@ ms.assetid: ce0560f3-b4c9-4ab2-a99c-d4e10f37b9e0
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a24eba8e0779bf77a93ec2ff742868bf8836d120
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 99eb70f0b8377c1dfd1be2d365298637d0be28ae
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49844647"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51774339"
 ---
 # <a name="menu-element"></a>Menu 項目
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

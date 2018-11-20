@@ -17,12 +17,12 @@ ms.assetid: 334bb95e-c7e0-4008-9f06-8c3999e47ee8
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 27e19c6d9c73176c1b83b4ed0d1e188f270cc19f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5144a96c5bcf5b73cad98816059d1023ed61ca2b
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49901803"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51748374"
 ---
 # <a name="idebugstackframe2enumproperties"></a>IDebugStackFrame2::EnumProperties
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "49901803"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT EnumProperties (   
+HRESULT EnumProperties (   
    DEBUGPROP_INFO_FLAGS      dwFieldSpec,  
    UINT                      nRadix,  
    REFIID                    refiid,  
@@ -43,7 +43,7 @@ HRESULT EnumProperties (
 ```  
   
 ```csharp  
-int EnumProperties (   
+int EnumProperties (   
    enum_DEBUGPROP_INFO_FLAGS   dwFieldSpec,  
    uint                        nRadix,  
    ref Guid                    refiid,  

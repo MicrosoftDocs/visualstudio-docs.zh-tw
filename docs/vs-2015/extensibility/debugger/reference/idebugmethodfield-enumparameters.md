@@ -17,12 +17,12 @@ ms.assetid: d77b1197-deb6-4144-8d1b-8b09949ccfac
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 10eb1303b7ecdbfab5e7447a407cf13b6ac09c10
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ec888455bf117e113caf9d3ef779384311d2f93a
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49837850"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51807721"
 ---
 # <a name="idebugmethodfieldenumparameters"></a>IDebugMethodField::EnumParameters
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "49837850"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT EnumParameters(   
+HRESULT EnumParameters(   
    IEnumDebugFields** ppParams  
 );  
 ```  

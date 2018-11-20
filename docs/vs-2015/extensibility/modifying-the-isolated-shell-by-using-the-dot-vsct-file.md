@@ -15,12 +15,12 @@ ms.assetid: 6d147c2d-10e9-400e-b8ce-5566287b41ba
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 67955586333cf665b7cffd5039ef2f6e051834a9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0eb5b110386f4a696c228e746223d745df6b18f7
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49259996"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51817603"
 ---
 # <a name="modifying-the-isolated-shell-by-using-the-vsct-file"></a>藉由修改 Isolated 的 Shell。Vsct 檔案
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

@@ -17,12 +17,12 @@ ms.assetid: 2ba5ef0c-395e-4006-9e3c-9b06e1d711d0
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1d9953f4d7a943eeb64b8ba6a802cc18fa48bd41
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: eb9224d3694d7e86cde76ffcd85a9e3805a01e42
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49811175"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51732580"
 ---
 # <a name="idebugclassfieldenumnestedclasses"></a>IDebugClassField::EnumNestedClasses
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "49811175"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT EnumNestedClasses(   
+HRESULT EnumNestedClasses(   
    IEnumDebugFields** ppEnum  
 );  
 ```  

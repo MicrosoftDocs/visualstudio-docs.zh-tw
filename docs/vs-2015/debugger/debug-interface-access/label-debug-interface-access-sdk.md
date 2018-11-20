@@ -16,15 +16,15 @@ helpviewer_keywords:
 - Label symbol
 ms.assetid: 8cef7620-5bc8-4500-8bd0-e9e638bccb24
 caps.latest.revision: 20
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: eb6935c7e2892da15ea42cf1025b3db08af7938c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 43fcc7542e68b3a371bb45997841c0540fec506d
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49186169"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51799180"
 ---
 # <a name="label-debug-interface-access-sdk"></a>標籤 (偵錯介面存取 SDK)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

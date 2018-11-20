@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaEnumSegments::Clone method
 ms.assetid: 93deaac6-72ab-4408-ba14-66174a618757
 caps.latest.revision: 10
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 54fc6aff415b0a8c7cc53622bbd911e0f3e7f8e2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 920ae9c7f3c61425a6843855ccc7cbc10af088df
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49885658"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51799258"
 ---
 # <a name="idiaenumsegmentsclone"></a>IDiaEnumSegments::Clone
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "49885658"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT Clone (   
+HRESULT Clone (   
    IDiaEnumSegments** ppenum  
 );  
 ```  

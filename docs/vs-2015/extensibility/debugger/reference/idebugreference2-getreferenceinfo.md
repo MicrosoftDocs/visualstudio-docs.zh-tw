@@ -17,12 +17,12 @@ ms.assetid: ae611714-f114-4cf2-b5bb-37461e6ff289
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b773ebe74b0d90a69355dfbc491cb377253db51e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1771c36459931c5b8c6079eae6b84a08fb9cd670
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49823784"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51755679"
 ---
 # <a name="idebugreference2getreferenceinfo"></a>IDebugReference2::GetReferenceInfo
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "49823784"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT GetReferenceInfo (   
+HRESULT GetReferenceInfo (   
    DEBUGREF_INFO_FLAGS   dwFields,  
    DWORD                 nRadix,  
    DWORD                 dwTimeout,  
@@ -43,7 +43,7 @@ HRESULT GetReferenceInfo (
 ```  
   
 ```csharp  
-int GetReferenceInfo (   
+int GetReferenceInfo (   
    enum_DEBUGREF_INFO_FLAGS  dwFields,  
    uint                      nRadix,  
    uint                      dwTimeout,  

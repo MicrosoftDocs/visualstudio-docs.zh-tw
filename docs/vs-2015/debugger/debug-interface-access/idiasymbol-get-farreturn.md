@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaSymbol::get_farReturn method
 ms.assetid: 141df0e9-f4d9-4330-a043-5d9ea865257f
 caps.latest.revision: 10
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8adb02b4fdc17a1abf223cfb5287a36c232db279
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 95dfcbd8b951c49725e7eb150c776b8e47ac2c62
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49859144"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51728638"
 ---
 # <a name="idiasymbolgetfarreturn"></a>IDiaSymbol::get_farReturn
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

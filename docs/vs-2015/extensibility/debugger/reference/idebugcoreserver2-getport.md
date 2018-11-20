@@ -17,12 +17,12 @@ ms.assetid: 3f5ea4a8-6085-4600-980a-9e48f8b5be56
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 38b33cacec2a5a1cca2e394e6c9ec7d34030781e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c5b221831dbcbbd7054f3372ace71f3373cce8f5
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49861770"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51761728"
 ---
 # <a name="idebugcoreserver2getport"></a>IDebugCoreServer2::GetPort
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,16 +32,16 @@ ms.locfileid: "49861770"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT GetPort(   
-   REFGUID       guidPort,  
-   IDebugPort2** ppPort  
+HRESULT GetPort(   
+   REFGUID       guidPort,  
+   IDebugPort2** ppPort  
 );  
 ```  
   
 ```csharp  
-int GetPort(   
-   ref Guid        guidPort,  
-   out IDebugPort2 ppPort  
+int GetPort(   
+   ref Guid        guidPort,  
+   out IDebugPort2 ppPort  
 );  
 ```  
   

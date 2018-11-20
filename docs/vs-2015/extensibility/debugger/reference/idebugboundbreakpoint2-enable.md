@@ -18,12 +18,12 @@ ms.assetid: 1b4e3f73-c94d-4aa3-9aa8-0d8cb8a6c5ca
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1409186be32fb8d134a09e9169c782b2b9045cf1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d2a8fa16f340fb2ce916e56b8b353b3f9bfac2a2
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49855452"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51801286"
 ---
 # <a name="idebugboundbreakpoint2enable"></a>IDebugBoundBreakpoint2::Enable
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -33,13 +33,13 @@ ms.locfileid: "49855452"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT Enable(   
+HRESULT Enable(   
    BOOL fEnable  
 );  
 ```  
   
 ```csharp  
-int Enable(   
+int Enable(   
    int fEnable  
 );  
 ```  
