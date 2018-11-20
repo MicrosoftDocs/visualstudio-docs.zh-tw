@@ -7,12 +7,12 @@ ms.technology: vs-ide-debug
 ms.author: mikejo
 author: mikejo5000
 manager: douge
-ms.openlocfilehash: 9d1842cd36256912e65bd8cbe5d9146266034ab6
-ms.sourcegitcommit: 331dbb12e11fcd7f5d15fab05f3c861e48126e43
+ms.openlocfilehash: de0edba7396ceb75ce6a367a57d98e22fd43a83b
+ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51826687"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "51948253"
 ---
 # <a name="debugging-in-visual-studio"></a>Visual Studio 偵錯
 
@@ -44,7 +44,7 @@ Visual Studio 偵錯工具協助您觀察程式的執行階段行為，並找出
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/common/i_code_edit.svg" alt="Write better code">
+                            <img src="/media/common/i_code-edit.svg" alt="Write better code">
                         </div>
                     </div>
                     <div class="cardText">
