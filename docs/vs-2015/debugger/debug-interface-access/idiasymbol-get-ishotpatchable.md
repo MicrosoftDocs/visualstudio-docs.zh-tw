@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaSymbol::get_isHotpatchable method
 ms.assetid: b7b6f490-1cf2-4a68-9237-b152dac84d3c
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c33c26ba9c46d5ae4183cec60a01052af50f30b2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 061e55714c8dad1c6a04909e3ec52b9cca8f753c
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49915902"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51777743"
 ---
 # <a name="idiasymbolgetishotpatchable"></a>IDiaSymbol::get_isHotpatchable
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

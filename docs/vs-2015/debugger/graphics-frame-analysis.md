@@ -13,15 +13,15 @@ f1_keywords:
 - vs.graphics.frameanalysis
 ms.assetid: 336c48ba-a1c4-4db9-b2a4-3de4a129cdd6
 caps.latest.revision: 12
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a12a6671df94e1ea477412f489fb349c28b60b9f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 59cd0006f375335d9cf3e714689bead6615b395d
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49891579"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51770375"
 ---
 # <a name="graphics-frame-analysis"></a>圖形畫面格分析
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

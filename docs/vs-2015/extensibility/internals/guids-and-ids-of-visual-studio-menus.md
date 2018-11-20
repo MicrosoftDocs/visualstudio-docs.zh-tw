@@ -20,12 +20,12 @@ ms.assetid: 84639d86-dd21-4b35-9988-6bb654162488
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 82f6ee62167f3a56761bc74147751b9b6ce1fd69
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 72ba04f5f33b3b9ef5030326fddb69d83e0a8f9d
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49196959"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51762698"
 ---
 # <a name="guids-and-ids-of-visual-studio-menus"></a>Visual Studio 功能表的 GUID 和識別碼
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

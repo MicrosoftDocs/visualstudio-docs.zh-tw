@@ -13,15 +13,15 @@ helpviewer_keywords:
 - Window Finder Tool
 ms.assetid: 5841926b-08c3-4e43-88bd-4223d04f9aef
 caps.latest.revision: 9
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 935aab109ef15fc1478ca92bb901cbb353b89cb5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5fe233182115c8e10e78f59870d92eed69b8c492
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49198753"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51747086"
 ---
 # <a name="how-to-use-the-finder-tool"></a>如何：使用搜尋工具
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

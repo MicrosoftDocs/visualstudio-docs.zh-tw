@@ -11,15 +11,15 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 102a0404-a00c-4566-93f3-01bc8df63280
 caps.latest.revision: 8
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1b60f8bac24b01e39327357b89e9e96c04765077
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 28f9150c55c7475a9412ee440cd8ae5215ca25cb
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49248998"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51788940"
 ---
 # <a name="addmessage"></a>AddMessage
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

@@ -11,15 +11,15 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 282e9bbb-51aa-4cd0-8e5c-0901268c29e5
 caps.latest.revision: 9
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dd62abec72694689f810073a375f7ed9e4173bf7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6ef44ff579fbd96026fcd7c285b173ad19317275
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49950390"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51805979"
 ---
 # <a name="halfquarter-texture-dimensions-variant"></a>半/四分之一紋理維度變異
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

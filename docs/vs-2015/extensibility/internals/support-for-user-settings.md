@@ -17,12 +17,12 @@ ms.assetid: ad9beac3-4f8d-4093-ad0e-6fb00444a709
 caps.latest.revision: 27
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 74f96a6177409057d2c24aca6103de29d97e19fe
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 445f95b1c52b5ada41918cf0f7d8120d912c209f
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49215653"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51759895"
 ---
 # <a name="support-for-user-settings"></a>支援使用者設定
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

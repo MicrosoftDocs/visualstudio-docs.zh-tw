@@ -16,12 +16,12 @@ ms.assetid: 2203e4e7-8b7f-44ec-8884-6ff718d4f278
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 611620b0560563cfba41b302c3e8e3611ab5a7a8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d849d93bdab481cecbb7d1f0f862f1db8eb3c181
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49888654"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51769434"
 ---
 # <a name="font-and-color-overview"></a>字型和色彩概觀
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

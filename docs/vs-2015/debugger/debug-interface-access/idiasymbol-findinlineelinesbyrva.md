@@ -13,15 +13,15 @@ dev_langs:
 - C++
 ms.assetid: ac108db1-9dbf-4dc4-bf48-159ca8d3725c
 caps.latest.revision: 6
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1cf8c53f236102ada34272d06b789d04683fa73c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a11e06b29c07ca43abbd238c918d5521a66350b2
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49849784"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51764399"
 ---
 # <a name="idiasymbolfindinlineelinesbyrva"></a>IDiaSymbol::findInlineeLinesByRVA
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ ms.locfileid: "49849784"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT findInlineeLinesByRVA (    DWORD                 rva,   DWORD                 length,  
+HRESULT findInlineeLinesByRVA (    DWORD                 rva,   DWORD                 length,  
    IDiaEnumLineNumbers** ppResult  
 );  
 ```  

@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaLoadCallback2::RestrictSystemRootAccess method
 ms.assetid: 39f22db8-632a-4ef0-babc-23f758e6d937
 caps.latest.revision: 10
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3e67d112616f7206b481a66a8fcad8640ebca734
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 22be175f3d07dae440e3f409f6995200b9f66b8b
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49199481"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51817265"
 ---
 # <a name="idialoadcallback2restrictsystemrootaccess"></a>IDiaLoadCallback2::RestrictSystemRootAccess
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

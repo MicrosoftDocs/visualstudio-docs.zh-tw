@@ -17,12 +17,12 @@ ms.assetid: 09a18bd2-b788-411a-9da6-067d806e46f6
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f44b40eae8d67a9efbeed7b2f04b93638db29231
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 78c766e52278c8bae29e57cad6f1c0255de4ea43
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49892641"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51761720"
 ---
 # <a name="sccget-function"></a>SccGet 函式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

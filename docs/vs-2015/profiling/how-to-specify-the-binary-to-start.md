@@ -17,15 +17,15 @@ helpviewer_keywords:
 - performance sessions, launching
 ms.assetid: ba77fcf4-8d78-49f1-b8f3-7dd0acf84306
 caps.latest.revision: 15
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 95539f978121dd5fb366776321498d33ac1ee92a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6f3a176ded749f640f2e37f27c9753ee1902772c
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49194333"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51777366"
 ---
 # <a name="how-to-specify-the-binary-to-start"></a>如何：指定要啟動的二進位檔
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

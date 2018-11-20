@@ -17,12 +17,12 @@ ms.assetid: f58575db-f926-4ac8-83ff-7b3b86ab61e2
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0f8f1c25e2384e39ff5b0f4b90f9c0de86d2c9e8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: bd7dfcaf2de12ab74399914d3654573878fcc17a
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49851526"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51755356"
 ---
 # <a name="idebugexpressioncontext2parsetext"></a>IDebugExpressionContext2::ParseText
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "49851526"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT ParseText(   
+HRESULT ParseText(   
    LPCOLESTR           pszCode,  
    PARSEFLAGS          dwFlags,  
    UINT                nRadix,  
@@ -43,7 +43,7 @@ HRESULT ParseText(
 ```  
   
 ```csharp  
-int ParseText(   
+int ParseText(   
    string                pszCode,  
    enum_PARSEFLAGS       dwFlags,  
    uint                  nRadix,  

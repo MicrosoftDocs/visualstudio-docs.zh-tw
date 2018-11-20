@@ -17,12 +17,12 @@ ms.assetid: 24321be5-7c17-4038-82a1-c20a2b68ff3c
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 94c7061b9063a84a3e66b472713165635ad5a04a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 967070e307e4b73ede4b537e1983a99888fabc09
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49911352"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51728297"
 ---
 # <a name="metadataaddressarrayelem"></a>METADATA_ADDRESS_ARRAYELEM
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

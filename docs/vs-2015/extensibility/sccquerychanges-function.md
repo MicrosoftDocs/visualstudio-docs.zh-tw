@@ -17,12 +17,12 @@ ms.assetid: 4cd58eb3-6952-49b1-9620-8682e3eaa604
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8dea3152dcebeff667df99f52f05f2ac39a50aa6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 86403d04c84a8a298d38359a919a5b5b0e9e399c
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49848640"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51789560"
 ---
 # <a name="sccquerychanges-function"></a>SccQueryChanges 函式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "49848640"
 ## <a name="syntax"></a>語法  
   
 ```cpp  
-SCCRTN SccQueryChanges(  
+SCCRTN SccQueryChanges(  
    LPVOID           pContext,  
    LONG             nFiles,  
    LPCSTR*          lpFileNames,  

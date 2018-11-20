@@ -16,16 +16,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 865fbca5092378af044d6121862119ecba8625a2
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+ms.openlocfilehash: df2f0c94fa5d3bfc275a09b065555f32f260ba91
+ms.sourcegitcommit: 331dbb12e11fcd7f5d15fab05f3c861e48126e43
+ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 11/16/2018
-ms.locfileid: "51748673"
+ms.locfileid: "51826728"
 ---
 # <a name="navigate-through-code-with-the-visual-studio-debugger"></a>Visual Studio 偵錯工具巡覽程式碼
 
-Visual Studio 偵錯工具可協助您瀏覽程式碼來檢查應用程式的狀態，並顯示其執行流程。 若要快速取得您想要檢查的程式碼，您可以使用鍵盤快速鍵、 偵錯 命令、 中斷點及其他功能。 熟悉偵錯工具巡覽命令和快速鍵可以更快速且輕易地尋找和解決應用程式的問題。  
+Visual Studio 偵錯工具可協助您瀏覽程式碼來檢查應用程式的狀態，並顯示其執行流程。 若要快速取得您想要檢查的程式碼，您可以使用鍵盤快速鍵、 偵錯 命令、 中斷點及其他功能。 熟悉偵錯工具巡覽命令和快速鍵可以更快速且輕易地尋找和解決應用程式的問題。  如果這是您第一次您嘗試偵錯程式碼時，您可能想要讀取[撰寫出更好C#使用 Visual Studio 程式碼](../debugger/write-better-code-with-visual-studio.md)並[偵錯適用於徹底初學者](../debugger/debugging-absolute-beginners.md)再通過這篇文章。
   
 ## <a name="basic-debugging"></a>基本偵錯  
 
@@ -183,4 +183,9 @@ Visual Studio 的中斷點提供一組豐富的其他功能，例如條件式中
 1. 在 [**模組**] 視窗中，您所見的模組已經載入的符號**符號狀態**資料行。 以滑鼠右鍵按一下您想要載入符號，然後選取模組**載入符號**。  
   
 ##  <a name="BKMK_Step_into_properties_and_operators_in_managed_code"></a> 逐步執行 Managed 程式碼中的屬性及運算子  
- 根據預設，偵錯工具不進入屬性和運算子，在 managed 程式碼。 不進入屬性和運算子通常可提供更有效偵錯體驗。 若要啟用逐步執行屬性和運算子，在**工具**(或**偵錯**) >**選項** > **偵錯** > **一般**，清除**不進入屬性和運算子 （僅限受控）** 核取方塊。
+ 偵錯工具預設為不進入 Managed 程式碼中的屬性及運算子。 在大部分情況下，這會產生比較令人滿意的偵錯經驗。 若要啟用逐步執行屬性或運算子，請選擇**偵錯** > **選項**。 在 **偵錯** > **一般**頁面上，清除**不進入屬性和運算子 （僅限受控）** 核取方塊。
+
+## <a name="see-also"></a>另請參閱
+ [什麼偵錯？](../debugger/what-is-debugging.md)  
+ [撰寫更好C#使用 Visual Studio 程式碼](../debugger/write-better-code-with-visual-studio.md)  
+ [率先一睹偵錯](../debugger/debugger-feature-tour.md) 

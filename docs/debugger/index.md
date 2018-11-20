@@ -7,12 +7,12 @@ ms.technology: vs-ide-debug
 ms.author: mikejo
 author: mikejo5000
 manager: douge
-ms.openlocfilehash: f64c2748688f06e5f0f7035b1a98bc93d7a6a61c
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: de0edba7396ceb75ce6a367a57d98e22fd43a83b
+ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51348110"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "51948253"
 ---
 # <a name="debugging-in-visual-studio"></a>Visual Studio 偵錯
 
@@ -20,53 +20,35 @@ Visual Studio 偵錯工具協助您觀察程式的執行階段行為，並找出
 
 <ul class="panelContent cardsFTitle">
     <li>
-        <a href="https://docs.microsoft.com/visualstudio/debugger/debugger-feature-tour">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="/media/common/i_road-map.svg" alt="">
+        <a href="https://docs.microsoft.com/visualstudio/debugger/what-is-debugging">
+            <div class="cardSize">
+                <div class="cardPadding">
+                    <div class="card">
+                        <div class="cardImageOuter">
+                            <div class="cardImage">
+                                <img src="/media/common/i_categorize.svg" alt="What is debugging?">
+                            </div>
                         </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>開始使用偵錯工具</h3>
+                        <div class="cardText">
+                            <h3>什麼是偵錯？</h3>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
         </a>
     </li>
     <li>
-        <a href="https://docs.microsoft.com/visualstudio/debugger/debugging-absolute-beginners">
+        <a href="https://docs.microsoft.com/visualstudio/debugger/write-better-code-with-visual-studio">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/common/i_debug.svg" alt="">
+                            <img src="/media/common/i_code-edit.svg" alt="Write better code">
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>適合完全初學者的偵錯</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </li>
-    <li>
-        <a href="https://docs.microsoft.com/visualstudio/debugger/getting-started-with-the-debugger">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="/media/common/i_debug.svg" alt="">
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>了解如何偵錯</h3>
+                        <h3>撰寫 Bug 更少的 C# 程式碼！</h3>
                     </div>
                 </div>
             </div>
@@ -91,18 +73,136 @@ Visual Studio 偵錯工具協助您觀察程式的執行階段行為，並找出
         </div>
         </a>
     </li>
+</ul>
+
+<h2>透過 5 分鐘的快速入門，體驗 Visual Studio 偵錯</h2>
+
+<ul class="panelContent cardsFTitle">
     <li>
-        <a href="https://docs.microsoft.com/visualstudio/debugger/remote-debugging">
+        <a href="https://docs.microsoft.com/visualstudio/debugger/debugger-feature-tour">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/common/i_learn-about.svg" alt="">
+                            <img src="/media/common/i_road-map.svg" alt="Road map">
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>了解遠端偵錯</h3>
+                        <h3>瞧瞧偵錯工具的功能</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+        <li>
+        <a href="https://docs.microsoft.com/visualstudio/debugger/quickstart-debug-with-managed">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="https://docs.microsoft.com/media/logos/logo_net.svg" alt=".NET">
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>對 C# 或 Visual Basic 應用程式進行偵錯</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+    <li>
+        <a href="https://docs.microsoft.com/visualstudio/debugger/quickstart-debug-with-cplusplus">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="https://docs.microsoft.com/media/logos/logo_Cplusplus.svg" alt="C++">
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>對 C++ 應用程式進行偵錯</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+    <li>
+        <a href="https://docs.microsoft.com/visualstudio/debugger/quickstart-debug-aspnet">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="https://docs.microsoft.com/media/logos/logo_net.svg" alt="ASP.NET">
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>對 ASP.NET 應用程式進行偵錯</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+</ul>
+
+<h2>利用教學課程加深知識</h2>
+
+<ul class="panelContent cardsFTitle">
+    <li>
+        <a href="https://docs.microsoft.com/visualstudio/debugger/debugging-absolute-beginners">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="/media/common/i_get-started.svg" alt="Absolute beginners">
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>初學者指南</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+    <li>
+        <a href="https://docs.microsoft.com/visualstudio/debugger/getting-started-with-the-debugger">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="/media/common/i_get-started.svg" alt="Learn to use the debugger">
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>學習如何使用偵錯工具</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+    <li>
+        <a href="https://docs.microsoft.com/visualstudio/debugger/debugger-tips-and-tricks">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="/media/common/i_debug.svg" alt="Tips and tricks">
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>偵錯工具祕訣與技巧</h3>
                     </div>
                 </div>
             </div>
@@ -116,7 +216,7 @@ Visual Studio 偵錯工具協助您觀察程式的執行階段行為，並找出
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/common/i_get-started.svg" alt="">
+                            <img src="/media/common/i_debug.svg" alt="View historical app state">
                         </div>
                     </div>
                     <div class="cardText">
@@ -134,65 +234,11 @@ Visual Studio 偵錯工具協助您觀察程式的執行階段行為，並找出
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/common/i_get-started.svg" alt="">
+                            <img src="/media/common/i_debug.svg" alt="Debug Azure">
                         </div>
                     </div>
                     <div class="cardText">
                         <h3>偵錯即時 Azure App Service 應用程式</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </li>
-    <li>
-        <a href="https://docs.microsoft.com/visualstudio/debugger/debugger-tips-and-tricks">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="/media/common/i_debug.svg" alt="">
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>偵錯工具祕訣與技巧</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </li>
-    <li>
-        <a href="https://docs.microsoft.com/visualstudio/debugger/get-started-debugging-multithreaded-apps">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="/media/common/i_get-started.svg" alt="">
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>對多執行緒應用程式偵錯</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </li>
-    <li>
-        <a href="https://docs.microsoft.com/visualstudio/debugger/what-s-new-for-the-debugger-in-visual-studio">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="/media/common/i_whats-new.svg" alt="">
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>查看偵錯工具的新功能</h3>
                     </div>
                 </div>
             </div>

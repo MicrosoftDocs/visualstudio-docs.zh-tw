@@ -16,12 +16,12 @@ ms.assetid: 9fcfaa0f-7b41-4b68-82ec-7a151dca5d7e
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c8ca8cd0fdb112214cd2d0f5088bf745c2643570
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 37c41e4c2074f6bb4896c6ff91ea292c5e21ba81
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49827307"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51760640"
 ---
 # <a name="support-for-project-and-configuration-properties"></a>支援專案和組態屬性
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

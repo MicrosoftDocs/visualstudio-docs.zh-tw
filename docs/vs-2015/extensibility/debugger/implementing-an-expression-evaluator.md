@@ -16,12 +16,12 @@ ms.assetid: e9ada7be-845e-4baa-bf8f-e4890e7ba490
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c7671f3e05b990ba96abf9084582d80545495bf4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b32ae1580ccba207f7d5e86fc4ac48d38fec7fbf
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49864895"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51786830"
 ---
 # <a name="implementing-an-expression-evaluator"></a>實作運算式評估工具
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

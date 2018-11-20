@@ -13,15 +13,15 @@ dev_langs:
 - C++
 ms.assetid: ad554d18-9988-4b64-ad71-e7594c266e94
 caps.latest.revision: 6
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4aeefcbbaef120975e945e5ef87bb10b374e4ac0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 684a2c7a63cf6e70b8111b4c3fcd60dac3051274
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49184895"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51806772"
 ---
 # <a name="idiasymbolgetsrclineontypedefn"></a>IDiaSymbol::getSrcLineOnTypeDefn
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

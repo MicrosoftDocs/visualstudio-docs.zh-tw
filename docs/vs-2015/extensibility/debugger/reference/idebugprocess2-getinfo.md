@@ -17,12 +17,12 @@ ms.assetid: 46021dce-bb97-46c3-b0cc-e5b3b68acc35
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 786caef51b7c1e162670a4f9db60e6a268aee5c9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a315bdbd0662360d7f7d6855292f1c25705e8c32
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49923312"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51725119"
 ---
 # <a name="idebugprocess2getinfo"></a>IDebugProcess2::GetInfo
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,16 +32,16 @@ ms.locfileid: "49923312"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT GetInfo(  
-   PROCESS_INFO_FIELDS  Fields,  
-   PROCESS_INFO*        pProcessInfo  
+HRESULT GetInfo(  
+   PROCESS_INFO_FIELDS  Fields,  
+   PROCESS_INFO*        pProcessInfo  
 );  
 ```  
   
 ```csharp  
-int GetInfo(  
-   enum_PROCESS_INFO_FIELDS  Fields,  
-   PROCESS_INFO[]            pProcessInfo  
+int GetInfo(  
+   enum_PROCESS_INFO_FIELDS  Fields,  
+   PROCESS_INFO[]            pProcessInfo  
 );  
 ```  
   

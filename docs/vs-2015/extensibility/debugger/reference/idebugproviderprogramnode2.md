@@ -17,12 +17,12 @@ ms.assetid: f0bca1cc-afbe-44cf-b5aa-d078aa685d24
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 06026168d2544d62bfc854392037baa5ad0d98e0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8d8c8b4afd825c2968dd3b7708b944901d9bf50c
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49244448"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51741964"
 ---
 # <a name="idebugproviderprogramnode2"></a>IDebugProviderProgramNode2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

@@ -20,15 +20,15 @@ helpviewer_keywords:
 - profiling tools, IP view
 ms.assetid: 5e26e0fd-383b-4fb6-a29d-a458d8232828
 caps.latest.revision: 22
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 457aa922bbc386d3bc2b7b62296a6d876c42f601
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b5da0870bcc42a9720cb7187c5fd55af463d5c14
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49251740"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51805173"
 ---
 # <a name="instruction-pointers-ips-view"></a>指令指標 (IP) 檢視
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

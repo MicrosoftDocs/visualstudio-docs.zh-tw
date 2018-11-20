@@ -19,15 +19,15 @@ helpviewer_keywords:
 - debugging, WPF
 ms.assetid: 2a1bf1cd-90f9-4d06-9fb4-1bfc925afef3
 caps.latest.revision: 21
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1c8eb0bae29db30c5ba3a305707d886b01b5c34d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 69ce98efe7429b011915f14b267cf5346528a93d
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49188328"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51752112"
 ---
 # <a name="how-to-use-the-wpf-tree-visualizer"></a>如何：使用 WPF 樹狀架構視覺化檢閱
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

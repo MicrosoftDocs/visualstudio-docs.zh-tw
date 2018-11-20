@@ -18,12 +18,12 @@ ms.assetid: 08c7f091-1816-4d64-8834-f9ecaac5c58d
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e63ac8238b3b13bb8e331c19c58e41fa3cf9dadb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 990c92b7953470da75c64f7cc03a00c48c5404fa
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49879710"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51755329"
 ---
 # <a name="idebugmemorycontext2getinfo"></a>IDebugMemoryContext2::GetInfo
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "49879710"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT GetInfo(   
+HRESULT GetInfo(   
    CONTEXT_INFO_FIELDS dwFields,  
    CONTEXT_INFO*       pInfo  
 );  

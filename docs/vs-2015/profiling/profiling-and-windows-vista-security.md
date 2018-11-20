@@ -14,15 +14,15 @@ helpviewer_keywords:
 - performance tools, security
 ms.assetid: 842112fc-b886-4801-8cd7-a25b314b0393
 caps.latest.revision: 24
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 567640eafb3886d51469447eba31e439ca150618
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 32605cb21b79e035bba9d234cdb7b3d513417363
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49836979"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51772946"
 ---
 # <a name="profiling-and-windows-vista-security"></a>分析和 Windows Vista 安全性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

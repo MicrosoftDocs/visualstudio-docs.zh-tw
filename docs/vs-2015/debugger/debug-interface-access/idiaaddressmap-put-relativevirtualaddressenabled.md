@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaAddressMap::put_relativeVirtualAddressEnabled method
 ms.assetid: 767c078e-8ad7-4940-9e00-cae7704aadee
 caps.latest.revision: 10
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7afc6534fc44ce74623a77c4b401e0858fcd5bbf
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 696ce435ddae6fbca5cb9f4a6abbf08a3d0e7eab
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49898664"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51800964"
 ---
 # <a name="idiaaddressmapputrelativevirtualaddressenabled"></a>IDiaAddressMap::put_relativeVirtualAddressEnabled
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "49898664"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT put_relativeVirtualAddressEnabled (   
+HRESULT put_relativeVirtualAddressEnabled (   
    BOOL NewVal  
 );  
 ```  

@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaSymbol::get_isStatic method
 ms.assetid: 3be5fe1b-46e8-4b07-90d8-4929dbbe7ff7
 caps.latest.revision: 10
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1439cd9704e464ae37b238f4cf566584a8ac50d7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b6a6c1e57872aeee51780ad0ec062e007aa31529
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49817393"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51768877"
 ---
 # <a name="idiasymbolgetisstatic"></a>IDiaSymbol::get_isStatic
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

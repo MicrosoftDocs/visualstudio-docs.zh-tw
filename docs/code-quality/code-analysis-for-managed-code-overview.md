@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Studio 中的 managed 程式碼的程式碼分析
+title: Managed 程式碼的靜態程式碼分析
 ms.date: 03/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
@@ -14,16 +14,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: ad1b093c224e37ce53dc77472518d03f2dc8093b
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: 1e77955de9bb650ac262d8f9b7513c90acbd19ac
+ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44320809"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "51948422"
 ---
-# <a name="overview-of-code-analysis-for-managed-code"></a>Managed 程式碼的程式碼分析概觀
+# <a name="overview-of-static-code-analysis-for-managed-code-in-visual-studio"></a>在 Visual Studio 中的 managed 程式碼的靜態程式碼分析的概觀
 
-Visual Studio 2017 會分析 managed 程式碼有兩種： legacy *FxCop*靜態分析 managed 組件，並使用.NET 編譯器平台*分析器*。 本主題涵蓋 FxCop 靜態程式碼分析。 若要深入了解使用.NET Compiler Platform 分析器來分析程式碼，請參閱[概觀的 Roslyn 分析器](../code-quality/roslyn-analyzers-overview.md)。
+Visual Studio 2017 可以執行的 managed 程式碼的程式碼分析，有兩種： 使用*FxCop*靜態分析 managed 組件，並以更多新式*Roslyn 分析器*。 本主題涵蓋 FxCop 靜態程式碼分析。 若要深入了解使用程式碼分析器來分析程式碼，請參閱[概觀的 Roslyn 分析器](../code-quality/roslyn-analyzers-overview.md)。
 
 Managed 程式碼的程式碼分析可以分析 Managed 組件並回報有關組件的資訊，例如是否違反 Microsoft .NET Framework 設計方針所制定的程式設計和設計規則。
 
@@ -75,7 +75,7 @@ Public class MyClass
 
 ## <a name="team-build-integration"></a>Team build 整合
 
-您可以使用建置系統的整合式功能，執行分析工具做為建置流程的一部分。 如需詳細資訊，請參閱 < [Azure 管線](/azure/devops/pipelines/index?view=vsts)。
+您可以使用建置系統的整合式功能，執行分析工具做為建置流程的一部分。 如需詳細資訊，請參閱 [Azure Pipelines](/azure/devops/pipelines/index?view=vsts)。
 
 ## <a name="see-also"></a>另請參閱
 

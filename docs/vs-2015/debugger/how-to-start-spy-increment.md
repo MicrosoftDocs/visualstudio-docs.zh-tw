@@ -13,15 +13,15 @@ helpviewer_keywords:
 - Spy++, starting
 ms.assetid: 1d36813a-dc2a-4fda-9b3d-a38928a62ced
 caps.latest.revision: 14
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 50b9e68862c8dfc3d608f965cb61ee1e0c1012b9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2b5cd20a51d251e23cceb4ee86b3ce0a555f3d34
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49180306"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51797477"
 ---
 # <a name="how-to-start-spy"></a>如何：啟動 Spy++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

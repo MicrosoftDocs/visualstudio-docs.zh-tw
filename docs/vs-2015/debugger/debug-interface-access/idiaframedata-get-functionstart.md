@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaFrameData::get_functionStart method
 ms.assetid: 49fd24fb-65c2-4812-8303-56a968353e1b
 caps.latest.revision: 12
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e0a39212fd93138444c6aa412071cec4894b0667
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 958a7f839846a8a82c5b17cd37d7e58bbf49b0e4
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49812682"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51809983"
 ---
 # <a name="idiaframedatagetfunctionstart"></a>IDiaFrameData::get_functionStart
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "49812682"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT get_functionStart (   
+HRESULT get_functionStart (   
    BOOL* pRetVal  
 );  
 ```  

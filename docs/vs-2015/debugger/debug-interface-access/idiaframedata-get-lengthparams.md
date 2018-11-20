@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaFrameData::get_lengthParams method
 ms.assetid: a9177ed6-9ba8-4384-b411-24cad07d031b
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8963c7a413acfc35392fa47ec97c9056353439b0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1033898a5f98f4194fe33c430bad2716546ea695
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49829234"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51796164"
 ---
 # <a name="idiaframedatagetlengthparams"></a>IDiaFrameData::get_lengthParams
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "49829234"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT get_lengthParams (   
+HRESULT get_lengthParams (   
    DWORD* pRetVal  
 );  
 ```  

@@ -13,15 +13,15 @@ helpviewer_keywords:
 - Call Tree view
 ms.assetid: dd359707-245a-4a36-8305-2e980b9edd53
 caps.latest.revision: 16
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: af70592ef3d0c9365732c9964872b03fa4328a81
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ed87363751c18794d9cf4c00e156d75760e0bf8d
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49205149"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51782501"
 ---
 # <a name="call-tree-view---net-memory-instrumentation-data"></a>呼叫樹狀結構檢視 - .NET 記憶體檢測資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

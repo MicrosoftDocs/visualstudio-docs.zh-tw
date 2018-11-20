@@ -16,15 +16,15 @@ helpviewer_keywords:
 - debugging [DIA SDK], end point
 ms.assetid: 68f84fff-7cd3-4636-b929-7063a45009f8
 caps.latest.revision: 22
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b3b67a394889f7366a577f635308c92844071313
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 52f3d5ce1e083a67c2a72907095f8ebf52ee4578
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49200343"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51808280"
 ---
 # <a name="funcdebugend"></a>FuncDebugEnd
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

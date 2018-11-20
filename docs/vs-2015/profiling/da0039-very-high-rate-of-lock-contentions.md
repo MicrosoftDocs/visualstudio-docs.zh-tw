@@ -15,15 +15,15 @@ f1_keywords:
 - vs.performance.rules.DA0039
 ms.assetid: 5a9fc57d-9097-413b-af0c-8726b1a57048
 caps.latest.revision: 12
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7b69756928e8102488e825b87f1d0cd468e970f1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e226ad010845d6aa2419c9fe497334e93c5323f4
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49291885"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51805537"
 ---
 # <a name="da0039-very-high-rate-of-lock-contentions"></a>DA0039：鎖定爭用的比率非常高
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

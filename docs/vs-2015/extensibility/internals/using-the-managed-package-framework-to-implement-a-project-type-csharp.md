@@ -17,12 +17,12 @@ ms.assetid: 926de536-eead-415b-9451-f1ddc8c44630
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: faedd7d5630205679c851ab5f9d6b46bbe25e3ad
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f248bdafaf0fdd632069e6cffe367cf0ed21135f
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49213729"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51741977"
 ---
 # <a name="using-the-managed-package-framework-to-implement-a-project-type-c"></a>使用受控套件架構實作專案類型 (C#)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

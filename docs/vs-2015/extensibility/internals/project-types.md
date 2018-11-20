@@ -16,12 +16,12 @@ ms.assetid: 263a084f-f97a-4e09-add7-f0e8a6a27daf
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0d2aecbfb348c49d341afea5ad2ec98baf35a3cf
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: dd9828b947c9df8d86a7d66aff96990fbf753505
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49195698"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51720985"
 ---
 # <a name="project-types"></a>專案類型
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

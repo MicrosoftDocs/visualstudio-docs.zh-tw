@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c858cfbd2fb48aa850e395d74d7f03386ec8bc2f
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: b3b9683c5f41b81d529ad6f3347b54131f32f011
+ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50671855"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "51948721"
 ---
 # <a name="walkthrough-insert-text-into-a-document-from-an-actions-pane"></a>逐步解說： 從 [動作] 窗格中的文件中插入文字
   本逐步解說示範如何建立 Microsoft Office Word 文件中的 [動作] 窗格。 [動作] 窗格包含兩個控制項收集輸入，然後將文字傳送到文件。  
@@ -145,7 +145,7 @@ ms.locfileid: "50671855"
      [!code-csharp[Trin_VstcoreActionsPaneWord#8](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/InsertTextControl.cs#8)]
      [!code-vb[Trin_VstcoreActionsPaneWord#8](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/InsertTextControl.vb#8)]  
   
-2.  在 C# 中，您必須加入用於按鈕 click 事件處理常式。 您可以將此程式碼中的放`InsertTextControl`建構函式呼叫之後`IntializeComponent`。 如需建立事件處理常式的資訊，請參閱[如何： 建立 Office 專案中的事件處理常式](../vsto/how-to-create-event-handlers-in-office-projects.md)。  
+2.  在 C# 中，您必須加入用於按鈕 click 事件處理常式。 您可以將此程式碼中的放`InsertTextControl`建構函式呼叫之後`InitializeComponent`。 如需建立事件處理常式的資訊，請參閱[如何： 建立 Office 專案中的事件處理常式](../vsto/how-to-create-event-handlers-in-office-projects.md)。  
   
      [!code-csharp[Trin_VstcoreActionsPaneWord#9](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/InsertTextControl.cs#9)]  
   

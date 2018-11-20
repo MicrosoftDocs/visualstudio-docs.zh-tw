@@ -11,15 +11,15 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 61c7e44d-2780-4df5-9bcb-49e40c1152fc
 caps.latest.revision: 7
-author: erickson-doug
+author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 1b21666094d2a13054be49980028afcc7a7e39a3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a044b0682b5ac70fc38df3080ef435c5ab6aad3b
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49224012"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51768219"
 ---
 # <a name="troubleshooting-code-analysis-issues"></a>程式碼分析問題疑難排解
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

@@ -11,15 +11,15 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: eac59cb6-f12e-4a77-9953-6d62b164a643
 caps.latest.revision: 50
-author: stevehoag
-ms.author: shoag
+author: gewarren
+ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 682ae7d410f80d3ba5e960d485c144b2f7495141
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 24dfca5d4ac8432cbe659bb42ca54d0398c47c04
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49909051"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51766482"
 ---
 # <a name="develop-apps-for-the-universal-windows-platform-uwp"></a>開發適用於通用 Windows 平台 (UWP) 的應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

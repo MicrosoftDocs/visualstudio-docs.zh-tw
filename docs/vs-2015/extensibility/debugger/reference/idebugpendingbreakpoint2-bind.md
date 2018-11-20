@@ -18,12 +18,12 @@ ms.assetid: 46e3f307-219d-40cd-a929-d41399c60ecf
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6270c694c51fe2fd4e78fde27cd40241c6dcb009
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ed9293350732de81f271eca2ab27579d7d48d1b2
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49887055"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51736798"
 ---
 # <a name="idebugpendingbreakpoint2bind"></a>IDebugPendingBreakpoint2::Bind
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -33,8 +33,8 @@ ms.locfileid: "49887055"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT Bind(   
-   void   
+HRESULT Bind(   
+   void   
 );  
 ```  
   

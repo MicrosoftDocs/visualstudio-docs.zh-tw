@@ -22,15 +22,15 @@ helpviewer_keywords:
 - debugging [Visual Studio], DLLs
 ms.assetid: 40a94339-d3f7-4ab9-b8a1-b8cf82942f44
 caps.latest.revision: 33
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 965a68194241c5e93e1da5bc6a9ba3f46db17213
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 61ccfc1fbf97dc36ed0625f95f998f9b154fd68c
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49254783"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51796255"
 ---
 # <a name="how-to-debug-from-a-dll-project"></a>How to: Debug from a DLL Project
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

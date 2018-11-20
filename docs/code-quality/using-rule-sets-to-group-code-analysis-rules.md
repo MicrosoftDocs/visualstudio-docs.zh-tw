@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fa287570213e6238d0a8dffc9f6e70367b133591
-ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
+ms.openlocfilehash: ced442c0fafc47b5cdae1568dbbfb6df7c2f2f50
+ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39204423"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "51948384"
 ---
 # <a name="use-rule-sets-to-group-code-analysis-rules"></a>使用規則集分組程式碼分析規則
 
@@ -58,10 +58,15 @@ ms.locfileid: "39204423"
 > [!TIP]
 > 更輕鬆地[編輯規則集](../code-quality/working-in-the-code-analysis-rule-set-editor.md)中的圖形**規則集編輯器**比以手動方式。
 
+## <a name="specify-a-rule-set-for-a-project"></a>指定的規則集的專案
+
 規則集的專案由**CodeAnalysisRuleSet** Visual Studio 專案檔中的屬性。 例如: 
 
 ```xml
-<CodeAnalysisRuleSet>HelloWorld.ruleset</CodeAnalysisRuleSet>
+<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+  ...
+  <CodeAnalysisRuleSet>HelloWorld.ruleset</CodeAnalysisRuleSet>
+</PropertyGroup>
 ```
 
 ## <a name="see-also"></a>另請參閱

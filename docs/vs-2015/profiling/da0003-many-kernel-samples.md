@@ -16,15 +16,15 @@ f1_keywords:
 - vs.performance.rules.DAManyKernelSamples
 ms.assetid: c1f46f77-eb95-42e5-b340-d86bc9de41b4
 caps.latest.revision: 16
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ba55e787c3ee07bb94fde325832a2c6b09d8d984
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 922cc6998db9813c188eb9028b8e855a8b860270
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49200670"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51741701"
 ---
 # <a name="da0003-many-kernel-samples"></a>DA0003：許多核心樣本
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

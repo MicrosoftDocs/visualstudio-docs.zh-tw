@@ -15,12 +15,12 @@ ms.assetid: 5f60ec1a-5a74-4362-8293-817a4dd73872
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2e70d1418c88d2671c923a447a0cbccc5f273d92
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a0932d0029ee924d900dead6b80c3ad2d7e555a0
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49259222"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51726073"
 ---
 # <a name="source-control-design-decisions"></a>原始檔控制的設計決策
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

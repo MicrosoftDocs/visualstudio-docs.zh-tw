@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaEnumFrameData::frameByVA method
 ms.assetid: 0b1e441b-710a-46d8-8060-bed39071c834
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 964aafec3f20d417715c90285adc3d63a145d26d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 98888b677c1a06f0332d4042e1ceb16af04f109e
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49885079"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51731954"
 ---
 # <a name="idiaenumframedataframebyva"></a>IDiaEnumFrameData::frameByVA
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "49885079"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT frameByVA(   
+HRESULT frameByVA(   
    ULONGLONG       virtualAddress,  
    IDiaFrameData** frame  
 );  

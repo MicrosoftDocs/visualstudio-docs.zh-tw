@@ -15,12 +15,12 @@ ms.assetid: 201838c2-260d-4071-b6c3-f526874e19c9
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 02a8f6ffcacf2c96905dc60dea753ce4737fe7b5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 937ea3c68f4b2e560e90285aa6f1a9c248072691
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49192500"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51732813"
 ---
 # <a name="maction-field"></a>m_action 欄位
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

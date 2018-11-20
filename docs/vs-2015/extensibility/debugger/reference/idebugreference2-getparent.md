@@ -17,12 +17,12 @@ ms.assetid: e3061665-ad3e-4c1b-b33f-82755fa21be3
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 73e6088557c8466b62b6673e5230428c24bec179
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 34627158e304b9cc7168eb3744ca4d4e4402aa74
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49923325"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51809860"
 ---
 # <a name="idebugreference2getparent"></a>IDebugReference2::GetParent
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,13 +32,13 @@ ms.locfileid: "49923325"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT GetParent (   
+HRESULT GetParent (   
    IDebugReference2** ppParent  
 );  
 ```  
   
 ```csharp  
-int GetParent (   
+int GetParent (   
    out IDebugReference2 ppParent  
 );  
 ```  

@@ -15,15 +15,15 @@ helpviewer_keywords:
 - logs, starting message log display
 ms.assetid: 3036611c-acf3-42b6-b5d7-1a0c653f6af9
 caps.latest.revision: 7
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4d1ec1174613a99b010243c73418f71812ce4a95
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: adbb69caf7d167849c107806318fce0eae8750b4
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49205526"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51785478"
 ---
 # <a name="how-to-start-and-stop-the-message-log-display"></a>如何：啟動與停止訊息記錄顯示
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

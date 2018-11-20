@@ -25,15 +25,15 @@ helpviewer_keywords:
 - projects, modeling
 ms.assetid: c178b04b-4fd2-4bed-97e3-d793dae8649c
 caps.latest.revision: 50
-author: alexhomer1
+author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: c5b7f053a2a63830e80247eeeeadcf34e2a6a351
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5d841c9fde677eb4a8fb17e952a817364dab277e
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49926094"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51738401"
 ---
 # <a name="create-uml-modeling-projects-and-diagrams"></a>建立 UML 模型專案和圖表
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

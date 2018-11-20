@@ -17,12 +17,12 @@ ms.assetid: 7548c8c1-cbc6-48aa-a845-19058d4a85bb
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1f40970f3ced7a40512d4b9ce61d1b33c46477a9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: db6a6464bb60949f9cdd3bdf38c459319420213a
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49816543"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51724228"
 ---
 # <a name="idebugmodule3loadsymbols"></a>IDebugModule3::LoadSymbols
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

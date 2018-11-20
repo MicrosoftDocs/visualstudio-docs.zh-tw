@@ -17,12 +17,12 @@ ms.assetid: 784bd5b1-4a3f-4455-b313-c4c9a82555a5
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 669f01001fbb01d4b82e10f72d5198da44913368
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 564fb7103e82d5d4a82447a3e24a032671890557
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49226963"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51741663"
 ---
 # <a name="idebugcanstopevent2"></a>IDebugCanStopEvent2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

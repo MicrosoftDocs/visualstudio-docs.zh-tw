@@ -24,15 +24,15 @@ helpviewer_keywords:
 - corrupted memory address
 ms.assetid: a147c939-4fb1-415c-8410-cf303781e9e8
 caps.latest.revision: 22
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 04df8c5dfc0d6fbf57183cf90ab0fd8a4fc79686
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 013b88bcaa0d0cf9dc8ff308f43f3191ed2d0334
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49217311"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51734237"
 ---
 # <a name="how-can-i-find-out-if-my-pointers-corrupt-a-memory-address"></a>如何發覺我的指標是否損毀記憶體位址？
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

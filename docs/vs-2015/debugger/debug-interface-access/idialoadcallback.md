@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaLoadCallback interface
 ms.assetid: 2f18c64c-2cf0-43fc-a447-21e82702ca2a
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ada11d6039a8cb5538b9893664298219dd55efa1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: dd610a8c72792c1109265f6e729933d4d281d8a8
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49178382"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51735885"
 ---
 # <a name="idialoadcallback"></a>IDiaLoadCallback
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

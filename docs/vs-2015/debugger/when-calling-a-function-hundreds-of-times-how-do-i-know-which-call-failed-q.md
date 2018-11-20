@@ -31,15 +31,15 @@ helpviewer_keywords:
 - Skip Count
 ms.assetid: 66cfac86-f5be-4d3a-9329-d44cd74bc586
 caps.latest.revision: 20
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 60e01816d6b123c95b8bab07189710869d0193f3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 54ca585ca547d342daa5ed19776a7cd5d8f8363e
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49180982"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51721337"
 ---
 # <a name="when-calling-a-function-hundreds-of-times-how-do-i-know-which-call-failed"></a>呼叫函式好幾百次時，如何判斷是哪一個呼叫失敗？
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

@@ -10,12 +10,12 @@ ms.assetid: 99395da7-ec34-491d-9baa-0590d23283ce
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3594d587f9d4968127b6e81a5c5e3b5549a9df89
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 19ca749b3ddd2190fd667ddb6c96c2a88c557999
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49207320"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51788429"
 ---
 # <a name="vsix-color-compiler"></a>VSIX 色彩編譯器
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

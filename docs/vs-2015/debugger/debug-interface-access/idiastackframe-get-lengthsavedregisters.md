@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaStackFrame::get_lengthSavedRegisters method
 ms.assetid: b75fad6e-1ef4-44e6-89e3-c31c6fba10b3
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0a0a115eac0ddf5f12e1232b874845ed60d22bce
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ac8b736c0b332fb4534bbb2324fb57c932c78f40
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49855114"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51784932"
 ---
 # <a name="idiastackframegetlengthsavedregisters"></a>IDiaStackFrame::get_lengthSavedRegisters
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "49855114"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT get_lengthSavedRegisters (   
+HRESULT get_lengthSavedRegisters (   
    DWORD* pRetVal  
 );  
 ```  

@@ -17,12 +17,12 @@ ms.assetid: ac04ad72-fa92-4a15-ade2-0d0bbbadfc7f
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8f8e3a0a273a2575579aa0971d3d5649749e337a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 506c67d2efe01eaacb8f71c0c9884ab501d81826
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49868439"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51747672"
 ---
 # <a name="pendingbpstate"></a>PENDING_BP_STATE
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "49868439"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-enum enum_PENDING_BP_STATE {   
+enum enum_PENDING_BP_STATE {   
    PBPS_NONE     = 0x0000,  
    PBPS_DELETED  = 0x0001,  
    PBPS_DISABLED = 0x0002,  
@@ -42,7 +42,7 @@ typedef DWORD PENDING_BP_STATE;
 ```  
   
 ```csharp  
-public enum enum_PENDING_BP_STATE {   
+public enum enum_PENDING_BP_STATE {   
    PBPS_NONE     = 0x0000,  
    PBPS_DELETED  = 0x0001,  
    PBPS_DISABLED = 0x0002,  

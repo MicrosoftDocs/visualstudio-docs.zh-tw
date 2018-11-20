@@ -16,12 +16,12 @@ ms.assetid: 961e68ed-2603-4479-a306-330eda2b2efa
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8bf3de0c558dbda1d1b43e7b5887780f1a1e2b90
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0a65595b7dabc28a6851820141a71460d84a4b73
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49832055"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51762536"
 ---
 # <a name="creating-parent-container-folders-for-solutions"></a>為方案建立父容器資料夾
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

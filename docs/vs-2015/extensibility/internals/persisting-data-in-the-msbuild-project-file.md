@@ -15,12 +15,12 @@ ms.assetid: 6a920cb7-453d-4ffd-af1c-6f3084bd03f7
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4fb062ab2a3f3ad692c3b8aff2d6b8d5fefef207
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 059ddc7b9b8fe0de06530af704bb5f7e271f6744
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49187683"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51749644"
 ---
 # <a name="persisting-data-in-the-msbuild-project-file"></a>在 MSBuild 專案檔中保存資料
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

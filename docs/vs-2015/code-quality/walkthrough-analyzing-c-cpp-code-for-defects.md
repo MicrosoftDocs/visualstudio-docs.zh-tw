@@ -16,15 +16,15 @@ helpviewer_keywords:
 - code analysis tool, walkthroughs
 ms.assetid: eaee55b8-85fe-47c7-a489-9be0c46ae8af
 caps.latest.revision: 37
-author: corob-msft
-ms.author: gewarren
+author: mikeblome
+ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: f5c2f6bfeabb80c03b1940ada2f57abbefb60173
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6a5e98ee673d232065dd522b0b81a21760306979
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49272638"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51782306"
 ---
 # <a name="walkthrough-analyzing-cc-code-for-defects"></a>逐步解說：分析 C/C++ 程式碼的缺失
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

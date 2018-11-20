@@ -19,12 +19,12 @@ ms.assetid: 6b909f93-d7f5-4aec-81c6-ee9ff0f31638
 caps.latest.revision: 28
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 42d1bbb5ab83970ff4a251f65f17f782a646e2e4
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 06a9840680c76103373cde00ac37310bb6138095
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49306809"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51764288"
 ---
 # <a name="registering-project-and-item-templates"></a>註冊專案和項目範本
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

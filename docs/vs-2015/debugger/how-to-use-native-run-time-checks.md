@@ -43,15 +43,15 @@ helpviewer_keywords:
 - arrays [Visual Studio], debugging
 ms.assetid: dc7b2f1e-5ff6-42e0-89b3-dc9dead83ee1
 caps.latest.revision: 24
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ca6d6d1e4a3ad6705890efdc40171857781e6d12
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4efbb4e151ea47f655f0b28e19d2811d5541e944
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49892931"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51798751"
 ---
 # <a name="how-to-use-native-run-time-checks"></a>如何：使用原生執行階段檢查
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

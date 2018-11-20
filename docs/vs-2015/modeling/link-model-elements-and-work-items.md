@@ -19,15 +19,15 @@ helpviewer_keywords:
 - UML model, linking work items
 ms.assetid: e687a490-0f93-412c-a1ff-eea83cf7ba07
 caps.latest.revision: 49
-author: alexhomer1
+author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 71500fca3318bf6f18e1c841c1ff90bd303bfaa6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 55dfd83f3c9324b08bbb88c8404350c2aebf129f
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49891748"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51752074"
 ---
 # <a name="link-model-elements-and-work-items"></a>連結模型項目和工作項目
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

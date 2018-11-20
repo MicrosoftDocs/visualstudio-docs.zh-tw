@@ -13,15 +13,15 @@ helpviewer_keywords:
 - message properties in SpyHelp
 ms.assetid: 8b72b071-691b-48b7-8852-f748c20fc787
 caps.latest.revision: 7
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 948edbfbef7d3de0ace7c6e33e88d63dadc4dee7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ae1f0bf05d2bfdc90875b62ebad964bf8d37204f
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49897443"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51748698"
 ---
 # <a name="how-to-display-message-properties"></a>如何：顯示訊息屬性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

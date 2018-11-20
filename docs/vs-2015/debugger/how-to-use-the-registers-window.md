@@ -29,15 +29,15 @@ helpviewer_keywords:
 - Registers window
 ms.assetid: 2918ffa2-562f-40d6-9053-ef321bbeb767
 caps.latest.revision: 42
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 15d7f4fb441a62967cdbfc0ed4491b1226abbd3f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6856b2e10c43f33e22711353d33f732779e8f4af
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49238962"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51748114"
 ---
 # <a name="how-to-use-the-registers-window"></a>如何：使用暫存器視窗
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

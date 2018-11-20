@@ -17,12 +17,12 @@ ms.assetid: 74490fd8-6f44-4618-beea-dab64961bb8a
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 609662ffe4f72c6becad48282ec465c7303d7eac
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 646483fd27f59dab538aee2be888a45114ce44a3
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49906490"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51795436"
 ---
 # <a name="idebugproperty3getcustomviewerlist"></a>IDebugProperty3::GetCustomViewerList
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,20 +32,20 @@ ms.locfileid: "49906490"
 ## <a name="syntax"></a>語法  
   
 ```cpp  
-HRESULT GetCustomViewerList(  
-   ULONG                celtSkip,  
-   ULONG                celtRequested,  
-   DEBUG_CUSTOM_VIEWER* rgViewers,  
-   ULONG*               pceltFetched  
+HRESULT GetCustomViewerList(  
+   ULONG                celtSkip,  
+   ULONG                celtRequested,  
+   DEBUG_CUSTOM_VIEWER* rgViewers,  
+   ULONG*               pceltFetched  
 );  
 ```  
   
 ```csharp  
-int GetCustomViewerList(  
+int GetCustomViewerList(  
    uint                  celtSkip,  
    uint                  celtRequested,  
    DEBUG_CUSTOM_VIEWER[] rgViewers,  
-   out uint              pceltFetched  
+   out uint              pceltFetched  
 );  
 ```  
   

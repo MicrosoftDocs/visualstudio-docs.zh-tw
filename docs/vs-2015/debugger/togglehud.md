@@ -11,15 +11,15 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 7261e01d-3c72-46ce-9fb3-5f33b2ddb901
 caps.latest.revision: 8
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 62d202bfca33619c14d00ec99dc44857cb01bb6a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 02b461ac8d80146bc86bf3636a367900fcdb8f39
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49250442"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51786934"
 ---
 # <a name="togglehud"></a>ToggleHUD
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

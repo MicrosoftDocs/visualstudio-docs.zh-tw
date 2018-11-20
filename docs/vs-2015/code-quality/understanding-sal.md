@@ -11,15 +11,15 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: a94d6907-55f2-4874-9571-51d52d6edcfd
 caps.latest.revision: 20
-author: corob-msft
-ms.author: gewarren
+author: mikeblome
+ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: be3d54921f7bc3a74c858340f28b68b03497939a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 712d99f3839982632e54b622b3512eb611f2bf95
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49874276"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51792811"
 ---
 # <a name="understanding-sal"></a>了解 SAL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

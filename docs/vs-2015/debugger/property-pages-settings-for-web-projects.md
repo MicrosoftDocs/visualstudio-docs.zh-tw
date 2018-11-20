@@ -23,15 +23,15 @@ helpviewer_keywords:
 - debug configurations, Web projects
 ms.assetid: 8ec5160a-6408-4f47-8d41-f0e20e79a3b9
 caps.latest.revision: 14
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a472e134869ff48a21480ede42f330d968262d38
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4aef37bb7f6ac6b5b11c1d5a1ea80f12fae288ec
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49179981"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51777860"
 ---
 # <a name="property-pages-settings-for-web-projects"></a>Web 專案的屬性頁設定
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

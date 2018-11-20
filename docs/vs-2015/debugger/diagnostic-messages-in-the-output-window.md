@@ -31,15 +31,15 @@ helpviewer_keywords:
 - Debug class
 ms.assetid: 386e9524-be17-4573-83fb-4f7c5cae0be0
 caps.latest.revision: 19
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fa2e01859190b4e22f076892b23595c4617a29f0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c963a93e2d1b882fd38db1a546cc49cb1bfedcd6
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49951297"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51781123"
 ---
 # <a name="diagnostic-messages-in-the-output-window"></a>輸出視窗中的診斷訊息
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

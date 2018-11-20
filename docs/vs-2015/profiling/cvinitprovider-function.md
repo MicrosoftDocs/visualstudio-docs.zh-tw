@@ -15,15 +15,15 @@ helpviewer_keywords:
 - CvInitProvider method
 ms.assetid: ba1863ad-e35f-4d34-a2f2-5e68957d1915
 caps.latest.revision: 8
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: aa41b1cbbba6e88a86ae5af0c471d5f6627dcca2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a41e7fe1a6da619e926301b0e1a9b99803fc6d67
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49276207"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51798298"
 ---
 # <a name="cvinitprovider-function"></a>CvInitProvider 函式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

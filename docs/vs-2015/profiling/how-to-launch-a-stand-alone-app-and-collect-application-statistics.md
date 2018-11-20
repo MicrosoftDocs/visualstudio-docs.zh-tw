@@ -11,15 +11,15 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 52dcee2b-f178-4a76-bddc-e36c50bfcb78
 caps.latest.revision: 42
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: aff0fa2e1bfcc0139b2cb5a2517fe911007df31e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d0d06026eda41b5c7f340655bf316c2818b0bbed
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49949002"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51765340"
 ---
 # <a name="how-to-launch-a-stand-alone-application-with-the-profiler-and-collect-application-statistics-by-using-the-command-line"></a>如何：使用命令列以程式碼剖析工具啟動獨立應用程式並收集應用程式統計資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

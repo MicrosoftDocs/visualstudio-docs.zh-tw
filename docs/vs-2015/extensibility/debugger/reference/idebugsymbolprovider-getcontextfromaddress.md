@@ -17,12 +17,12 @@ ms.assetid: 7a27d56f-20d4-4e5c-af7b-7307d3aff0a1
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 60954989bf18e5216d4a4950d878d2703df12ef4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: eb2d183ccaf8765a3446d51ab1fba04bd31c4b5e
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49860143"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51743415"
 ---
 # <a name="idebugsymbolprovidergetcontextfromaddress"></a>IDebugSymbolProvider::GetContextFromAddress
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "49860143"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT GetContextFromAddress(   
+HRESULT GetContextFromAddress(   
    IDebugAddress*           pAddress,  
    IDebugDocumentContext2** ppDocContext  
 );  

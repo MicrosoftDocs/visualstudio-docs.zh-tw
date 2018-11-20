@@ -24,15 +24,15 @@ helpviewer_keywords:
 - high-performance debugging
 ms.assetid: 9d175bc2-1d95-4c47-9bc3-9755af968a9c
 caps.latest.revision: 28
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4d841456ab95d06a7b586f7a8566f8530acbb021
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f5b9ff27a8a864d648b5e9c545cee72ee64a4901
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49897494"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51758432"
 ---
 # <a name="debug-multithreaded-applications-in-visual-studio"></a>在 Visual Studio 中偵錯多執行緒應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

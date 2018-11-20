@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaSymbol::get_locationType method
 ms.assetid: fbb09c43-ebb7-4b4f-be53-ccff86eb183a
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b404f0c70649edfa7853e462711968c0026e1f45
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 16af35862d26e23e1a9ad9bafeb45b4e32907d49
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49835783"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51737549"
 ---
 # <a name="idiasymbolgetlocationtype"></a>IDiaSymbol::get_locationType
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "49835783"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT get_locationType (   
+HRESULT get_locationType (   
    DWORD* pRetVal  
 );  
 ```  
