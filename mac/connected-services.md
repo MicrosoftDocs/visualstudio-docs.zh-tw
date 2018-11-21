@@ -5,12 +5,12 @@ ms.assetid: 41CB62FF-0F39-4CE8-8917-6A77F058719F
 author: conceptdev
 ms.author: crdun
 ms.date: 04/04/2018
-ms.openlocfilehash: bcc09fab45bf9580349675a65150319c34236f97
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 463b002ed2a511c47b518dba756f3ca4c6a5ca35
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "43224009"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295172"
 ---
 # <a name="connected-services-walkthrough"></a>已連線的服務逐步解說
 
@@ -18,8 +18,7 @@ ms.locfileid: "43224009"
 
 本逐步解說將示範如何新增 Azure 後端服務，以將雲端資料儲存體、驗證及推播通知新增至跨平台 Xamarin.Forms 可攜式類別庫 (PCL) 應用程式。
 
-
-1.  從按兩下方案中的 [已連線的服務] 節點開始著手，這會顯示 [服務資源庫]。
+1. 從按兩下方案中的 [已連線的服務] 節點開始著手，這會顯示 [服務資源庫]。
   這是一份應用程式類型可用的所有服務清單。 按一下某個服務 (例如 [採用 Azure App Service 的行動後端]) 來選取該服務。
 
     [![Visual Studio for Mac 中的 已連線的服務 節點](media/connected-services-image001-sml.png "Visual Studio for Mac 中的 [已連線的服務] 節點")](media/connected-services-image001.png#lightbox)
@@ -68,7 +67,11 @@ ms.locfileid: "43224009"
 
 -   **App Service 名稱** – 方案的唯一名稱/識別碼
 -   **訂用帳戶** – 您要用來支付服務費用的訂用帳戶
--   **資源群組** – 一種組織專案所有 Azure 資源的方式。 請選擇使用現有的或是建立一個新的。 如果這是您的第一個 Azure 服務，請建立一個新的。
+-   **資源群組** - 一種組織專案所有 Azure 資源的方式。 請選擇使用現有的或是建立一個新的。 如果這是您的第一個 Azure 服務，請建立一個新的。
 -   **服務方案** – 針對使用服務的任何資源，決定其位置與費用。 請選擇使用現有的或是建立一個新的。 如果這是您的第一個 Azure 服務，請使用預設值或在免費層 (F1) 中建立一個新的。
 
-如需詳細資訊，請瀏覽 [Azure App Service 文件](https://azure.microsoft.com/documentation/learning-paths/appservice-mobileapps/)。
+如需詳細資訊，請瀏覽 [Mobile Apps 文件](/azure/app-service-mobile/)。
+
+## <a name="see-also"></a>另請參閱
+
+- [已連線的服務 (Windows 上的 Visual Studio)](/visualstudio/azure/vs-azure-tools-connected-services-storage)

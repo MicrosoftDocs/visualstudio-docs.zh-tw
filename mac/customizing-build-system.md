@@ -5,25 +5,24 @@ author: conceptdev
 ms.author: crdun
 ms.date: 04/14/2017
 ms.assetid: 6958B102-8527-4B40-BC65-3505DB63F9D3
-ms.openlocfilehash: 9549a9d51fa2d86f60564e842bfc5e13a5f6523c
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 7fbd275e3e946461559db41668a749cd6631ba09
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "43223936"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51296303"
 ---
 # <a name="customizing-the-build-system"></a>自訂組建系統
 
 MSbuild 是 Microsoft 所開發的組建引擎，可用來建置主要的 .NET 應用程式。 而 Mono 架構也有它自己的 Microsoft Build Engine 實作，稱為 **xbuild**。 不過，xbuild 已遭淘汰，改為在所有作業系統上使用 MSBuild。
 
-**MSbuild** 主要用作為 Visual Studio for Mac 中專案的組建系統。 
+**MSbuild** 主要用作為 Visual Studio for Mac 中專案的組建系統。
 
-MSBuild 的運作方式為採用一組輸入 (例如來源檔案) 並將其轉換為輸出 (例如可執行檔)。 它會透過叫用編譯器等工具來達成此輸出。 
-
+MSBuild 的運作方式為採用一組輸入 (例如來源檔案) 並將其轉換為輸出 (例如可執行檔)。 它會透過叫用編譯器等工具來達成此輸出。
 
 ## <a name="msbuild-file"></a>MSBuild 檔案
 
-MSBuild 會使用稱為專案檔的 XML 檔案，以定義屬於專案一部分的「項目」 (例如影像資源)，以及建置專案所需的「屬性」。 這個專案檔一律是以副檔名 `proj` 結尾，例如 C# 專案的 `.csproj`。 
+MSBuild 會使用稱為專案檔的 XML 檔案，以定義屬於專案一部分的「項目」 (例如影像資源)，以及建置專案所需的「屬性」。 這個專案檔一律是以副檔名 `proj` 結尾，例如 C# 專案的 `.csproj`。
 
 ### <a name="viewing-the-msbuild-file"></a>檢視 MSBuild 檔案
 
@@ -61,7 +60,7 @@ MSBuild 中有兩種基本資料類型：*項目*和*屬性*，下列各節會�
 
 屬性是索引鍵/值組，用來儲存影響編譯的設定，例如編譯器選項。
 
-它們是使用 PropertyGroup 設定，並且可以包含任意數目的 PropertiesGroups，而 PropertiesGroups 可以包含任意數目的屬性。 
+它們是使用 PropertyGroup 設定，並且可以包含任意數目的 PropertiesGroups，而 PropertiesGroups 可以包含任意數目的屬性。
 
 例如，簡單主控台應用程式的 PropertyGroup 看起來可能如下列 XML：
 
@@ -83,7 +82,7 @@ MSBuild 中有兩種基本資料類型：*項目*和*屬性*，下列各節會�
 
 項目提供一種以清單或集合輸入組建系統的處理方法，通常代表檔案。 每個項目都包含項目「類型」、項目「規格」和選擇性的任意「中繼資料」。 請注意，MSBuild 不會在個別項目上運作，而是對指定類型的所有項目 (稱為項目「集」) 執行
 
-項目是藉由宣告 `ItemGroup` 來建立。 可以有任意數目的 ItemGroup，而 ItemGroup 可以包含任何數目的項目。 
+項目是藉由宣告 `ItemGroup` 來建立。 可以有任意數目的 ItemGroup，而 ItemGroup 可以包含任何數目的項目。
 
 例如，下列程式碼片段會建立 iOS 啟動畫面。 啟動畫面擁有組建類型 `BundleResource`，包含作為映像路徑的規格：
 
@@ -104,5 +103,5 @@ MSBuild 中有兩種基本資料類型：*項目*和*屬性*，下列各節會�
 
 若要更詳細了解 MSBuild，可使用下列資源：
 
-* [MSDN - 概觀](https://msdn.microsoft.com/library/dd393574.aspx)
-* [MSDN - 概念](https://msdn.microsoft.com/library/dd637714.aspx)
+* [MSBuild 概觀](/visualstudio/msbuild/msbuild)
+* [MSBuild 概念](/visualstudio/msbuild/msbuild-concepts)

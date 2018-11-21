@@ -1,7 +1,7 @@
 ---
 title: 如何套用 Python 搜尋路徑
 description: Visual Studio 如何在環境和專案中使用 Python 搜尋路徑的概觀。
-ms.date: 10/29/2018
+ms.date: 11/12/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e3a52579a5b22308c4255cbe41617bc37f47bbab
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: ab55c7cf1daa02416e6192a02a01ee3f9a35f6f0
+ms.sourcegitcommit: 6a955a2d179cd0e137942389f940d9fcbbe125de
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219974"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51607897"
 ---
 # <a name="how-visual-studio-uses-python-search-paths"></a>Visual Studio 如何使用 Python 搜尋路徑
 
@@ -30,13 +30,19 @@ ms.locfileid: "50219974"
 
 因此，Visual Studio 提供一個可在環境和專案中直接指定搜尋路徑的方法。 您在 Visual Studio 中執行或偵錯的程式碼，會從 `PYTHONPATH` (和其他對等的變數) 值來接收搜尋路徑。 透過新增搜尋路徑，Visual Studio 便會檢查那些位置中的程式庫，並視需要為它們建置 IntelliSense 資料庫 (Visual Studio 2017 15.5 版及較早版本；視程式庫的數目而定，建構資料庫可能需要一些時間)。
 
-若要新增搜尋路徑，請在 [方案總管] 中的 [搜尋路徑] 項目上按一下滑鼠右鍵、選取 [ 將資料夾新增至搜尋路徑]，然後選取要包含的資料夾。 這個路徑會用於與該專案關聯的所有環境。 (如果是 Python 3 環境，且您嘗試將搜尋路徑新增至 Python 2.7 模組，則可能會出現錯誤)。
+若要新增搜尋路徑，請前往 [方案總管]、展開您的專案節點、以滑鼠右鍵按一下 [搜尋路徑]、選取 [將資料夾新增至搜尋路徑]：
 
-您也可以新增副檔名為 *.zip* 或 *.egg* 的檔案作為搜尋路徑，方法是選取 [ Zip 封存新增至搜尋路徑]。 與使用資料夾時相同，系統會掃描這些檔案的內容並提供給 IntelliSense 使用。
+![[方案總管] 中，搜尋路徑上的 [將資料夾新增至搜尋路徑] 命令](media/search-paths-command.png)
 
-如果您固定使用相同的搜尋路徑且內容不常變更，則將它安裝到您的站台套件資料夾中可能會較有效率。 搜尋路徑接著會被分析並儲存在 IntelliSense 資料庫中、一律會與其預期的環境建立關聯，而且不需要將搜尋路徑新增至每個專案。
+此命令會顯示瀏覽器，然後您會在其中選取要包含的資料夾。
 
-### <a name="see-also"></a>另請參閱
+如果您的 `PYTHONPATH` 環境變數已經包含您想要的資料夾，請使用 [將 PYTHONPATH 新增至搜尋路徑] 作為方便的捷徑。
+
+一旦資料夾新增至搜尋路徑，Visual Studio 會將這些路徑用於與專案建立關聯的任何環境。 (如果是 Python 3 環境，且您嘗試將搜尋路徑新增至 Python 2.7 模組，則可能會出現錯誤)。
+
+您也可以新增副檔名為 *.zip* 或 *.egg* 的檔案作為搜尋路徑，方法是選取 [ 新增 ZIP 封存至搜尋路徑] 命令。 與使用資料夾時相同，系統會掃描這些檔案的內容並提供給 IntelliSense 使用。
+
+## <a name="see-also"></a>另請參閱
 
 - [在 Visual Studio 中管理 Python 環境](managing-python-environments-in-visual-studio.md)
 - [選取專案的解譯器](selecting-a-python-environment-for-a-project.md)

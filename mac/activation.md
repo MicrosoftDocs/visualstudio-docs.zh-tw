@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: 898DFEB8-5757-4CCE-8AD2-8BC7706F5855
-ms.openlocfilehash: 738e2bf3596ea517808be829b6f893c101b957d5
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 7ead923920275c0d0eb048cb961679da4ce2fc94
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "43223917"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51294652"
 ---
 # <a name="enable-subscription"></a>啟用訂用帳戶
 
@@ -43,3 +43,7 @@ Visual Studio for Mac 提供三種不同的訂用帳戶層級供您選擇，可�
 > 若要啟用 Visual Studio 2017 for Mac Professional 或 Enterprise 的訂用帳戶，您必須在登入時連線到網際網路。
 
 如果已針對沒有網際網路連線的電腦購買了 Visual Studio Enterprise 2017 for Mac，則可以在不啟用的狀況下繼續使用 Visual Studio for Mac，但無法使用 Xamarin 偵測器、Xamarin Profiler 和內嵌組件功能。
+
+## <a name="see-also"></a>另請參閱
+
+- [登入 Visual Studio (Windows 上)](/visualstudio/ide/signing-in-to-visual-studio)

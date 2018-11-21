@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: 852B6A9D-AEFA-4EF4-A5DD-94A506019D20
-ms.openlocfilehash: bb5a91929238452041a67942cff99973637d51af
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 10d5b34ece7d093a42bafc1f0e410b670dd342f1
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "43224353"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51296446"
 ---
 # <a name="working-with-git"></a>使用 Git
 
@@ -24,7 +24,7 @@ Git 是一種分散式版本控制系統，可讓小組同時處理相同的文�
 
 ![版本控制功能表項目](media/version-control-gitVersionControlMenu.png)
 
-## <a name="push-and-pull"></a>推送和提取 
+## <a name="push-and-pull"></a>推送和提取
 
 推送和提取是 Git 內的兩個最常用動作。 若要同步處理其他人已對遠端存放庫進行的變更，您必須從該處**提取**。 這是在 Visual Studio for Mac 中完成，方法是選取 [版本控制] > [更新方案]。
 
@@ -54,11 +54,11 @@ Git 是一種分散式版本控制系統，可讓小組同時處理相同的文�
 
     ![記錄索引標籤](media/version-control-gitLog.png)
 
-* **合併** - 如果您在認可工作時發生合併衝突，則可以使用此項目。 它會以視覺方式呈現您和其他開發人員所做的變更，讓您可以完全合併這兩個程式碼區段。 
+* **合併** - 如果您在認可工作時發生合併衝突，則可以使用此項目。 它會以視覺方式呈現您和其他開發人員所做的變更，讓您可以完全合併這兩個程式碼區段。
 
-## <a name="switching-branches"></a>切換分支 
+## <a name="switching-branches"></a>切換分支
 
-根據預設，存放庫中所建立的第一個分支稱為 **Master** 分支。 就技術上而言，master 分支與任何其他分支沒有任何差別，但 master 分支是開發小組最常視為 'live' 或 'production' 分支的分支。
+根據預設，存放庫中所建立的第一個分支稱為  **Master**  分支。 就技術上而言，master 分支與任何其他分支沒有任何差別，但 master 分支是開發小組最常視為 'live' 或 'production' 分支的分支。
 
 將 Master 進行分支，即可建立獨立開發生產線 (在該情況下，為任何其他分支)。 這提供某個時間點的新版 master 分支，允許與 'live' 分支獨立進行開發。 以這種方式使用分支，通常用於軟體開發中的功能
 
@@ -80,7 +80,7 @@ Git 是一種分散式版本控制系統，可讓小組同時處理相同的文�
 
  ![Solution Pad 中顯示的目前分支](media/version-control-gitBranchName.png)
 
-## <a name="reviewing-and-committing"></a>檢閱並認可 
+## <a name="reviewing-and-committing"></a>檢閱並認可
 
 若要檢閱檔案中的變更，請使用每個文件上的 [變更]、[改動者]、[記錄] 和 [合併] 索引標籤，如本主題稍早所示。
 
@@ -90,8 +90,12 @@ Git 是一種分散式版本控制系統，可讓小組同時處理相同的文�
 
 這允許使用 [還原]、[建立修補檔案] 或 [認可] 的選項來檢視專案之每個檔案中的所有變更。
 
-若要將檔案認可到遠端存放庫，請按 [認可...]，並輸入認可訊息，然後使用 [認可] 按鈕確認：
+若要將檔案認可到遠端存放庫，請按 [認可]，並輸入認可訊息，然後使用 [認可] 按鈕確認：
 
 ![認可檔案](media/version-control-gitCommit.png)
 
 在您認可變更之後，請將它們推送到遠端存放庫，讓其他使用者可以看到它們。
+
+## <a name="see-also"></a>另請參閱
+
+* [使用 Visual Studio 2017 和 Azure Repos Git 共用您的程式碼](/azure/devops/repos/git/share-your-code-in-git-vs-2017)

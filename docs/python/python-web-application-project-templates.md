@@ -11,18 +11,18 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: cbdf9b6890613cc4ad41af77e27f7f41c6f5c9da
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 3245cd647f5da391bb0e36afc65d867137618808
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219844"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349331"
 ---
 # <a name="python-web-application-project-templates"></a>Python Web 應用程式專案範本
 
 Visual Studio 中的 Python 支援透過專案範本以及偵錯啟動器 (其可針對處理各種架構進行設定)，在 Bottle、Flask 和 Django 架構中開發 Web 專案。 這些範本包含 *requirements.txt* 檔案，以宣告所需的相依性。 從這些範本的其中之一建立專案時，Visual Studio 會提示您安裝那些套件 (請參閱本文稍後的[安裝專案需求](#install-project-requirements))。
 
-針對 Pyramid 這類其他架構，您也可以使用一般的 [Web 專案] 範本。 在此情況下，沒有架構會隨範本安裝。 相反地，請將必要的套件安裝至您要針對專案使用的環境中 (請參閱[管理 Python 環境](managing-python-environments-in-visual-studio.md))。
+針對 Pyramid 這類其他架構，您也可以使用一般的 [Web 專案] 範本。 在此情況下，沒有架構會隨範本安裝。 相反地，請將必要套件安裝至您要針對專案使用的環境中 (請參閱 [[Python 環境] 視窗 - [套件] 索引標籤](python-environments-window-tab-reference.md#packages-tab))。
 
 如需將 Python Web 應用程式部署至 Azure 的資訊，請參閱[發佈至 Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md)。
 

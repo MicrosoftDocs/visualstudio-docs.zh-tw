@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: CC1B72D6-12FF-4CCC-A9D4-00F2DC14589F
-ms.openlocfilehash: 1aadff851c709141f37f89431403bce857bafdbe
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 49a64f7752bc5f6b3dbbb0dcfed385bfdd5ef9be
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "43224432"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51296095"
 ---
 # <a name="creating-and-editing-build-configurations"></a>建立和編輯組建組態
 
@@ -38,25 +38,28 @@ ms.locfileid: "43224432"
 
 若要建立方案組建組態，請採取下列步驟：
 
-
 1. 以滑鼠右鍵按一下方案節點，然後選取 [選項]。
 
 2. 在 [方案選項] 對話方塊中，選取 [組建] > [組態]：
-    
+
     ![方案選項中的組態管理員](media/create-and-edit-configurations-image1.png)
 
 3. 若要建立新的組態，請選取 [新增]。 或者，您可以複製其中一個現有的組態。
 
 建立組態之後，您可以使用每個專案選項中的 [組建] 區段，調整屬性使其適用於您的組態：
 
-![設定組建選項](media/create-and-edit-configurations-image3.png) 
+![設定組建選項](media/create-and-edit-configurations-image3.png)
 
 ## <a name="editing-a-build-configuration"></a>編輯組建組態
 
 若要重新命名組態，請從 [專案選項] 或 [方案選項] 的組態清單中選取組態：
 
-![組態清單](media/create-and-edit-configurations-image4.png) 
+![組態清單](media/create-and-edit-configurations-image4.png)
 
 選取 [重新命名] 按鈕。
 
-![重新命名對話方塊](media/create-and-edit-configurations-image5.png) 
+![重新命名對話方塊](media/create-and-edit-configurations-image5.png)
+
+## <a name="see-also"></a>另請參閱
+
+- [建立和編輯組建組態 (Windows 上的 Visual Studio)](/visualstudio/ide/how-to-create-and-edit-configurations)

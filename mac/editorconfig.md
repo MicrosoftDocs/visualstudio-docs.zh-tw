@@ -7,18 +7,18 @@ ms.date: 05/06/2018
 ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 26A0DE31-2FBF-4E1B-99FB-083111AA1680
-ms.openlocfilehash: a2f813bee641b55b52ad3611c155bd273345ba73
-ms.sourcegitcommit: 9e796d8a8b737ed9d5bf024db89b1abf99ea809b
+ms.openlocfilehash: d42103d17b64ee9b3fb2a0660017824490655808
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "43224273"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51294015"
 ---
 # <a name="creating-and-editing-a-custom-editorconfig-file"></a>建立和編輯自訂的 EditorConfig 檔案
 
 在 Visual Studio for Mac 中，您可以在專案或方案中新增 [EditorConfig](http://editorconfig.org/) 檔案，強制使用程式碼基底的所有人都使用一致的編碼樣式。 在 EditorConfig 檔案中宣告的設定優先於全域 Visual Studio for Mac 文字編輯器設定。 在您的專案或程式碼基底中使用 EditorConfig 檔案可讓您為專案設定編碼樣式、喜好設定和警告。 因為檔案是程式碼基底的一部分，所以更容易讓所有使用者都遵守專案的編碼方式，不論他們使用 IDE 還是程式碼編輯器都一樣。
 
-許多 IDE 和程式碼編輯器 (包括Visual Studio 2017) 都支援 [EditorConfig](http://editorconfig.org/) 檔案。 
+許多 IDE 和程式碼編輯器 (包括Visual Studio 2017) 都支援 [EditorConfig](http://editorconfig.org/) 檔案。
 
 ## <a name="supported-settings"></a>支援的設定
 
@@ -33,15 +33,15 @@ Visual Studio for Mac 中的編輯器支援 [EditorConfig 屬性](http://editorc
 - `insert_final_newline`
 - `root`
 
-EditorConfig 也支援 C# 中的[編碼慣例](https://docs.microsoft.com/visualstudio/ide/editorconfig-code-style-settings-reference)。
+EditorConfig 也支援 C# 中的[編碼慣例](/visualstudio/ide/editorconfig-code-style-settings-reference)。
 
 ## <a name="add-an-editorconfig-file-to-a-project"></a>將 EditorConfig 檔案新增至專案
 
 ### <a name="adding-a-new-editorconfig-file"></a>新增新的 EditorConfig 檔案
 
-1. 在 Visual Studio for Mac 中開啟專案。 選取您想要在其中新增 EditorConfig 檔案的方案或專案節點。 將檔案新增至方案目錄會將 .editorconfig 設定套用至方案中的所有專案。 
+1. 在 Visual Studio for Mac 中開啟專案。 選取您想要在其中新增 EditorConfig 檔案的方案或專案節點。 將檔案新增至方案目錄會將 .editorconfig 設定套用至方案中的所有專案。
 
-2. 以滑鼠右鍵按一下節點，然後選取 [新增] > [新增檔案...] 來開啟 [新增檔案] 對話方塊：
+2. 以滑鼠右鍵按一下節點，然後選取 [新增] > [新增檔案] 以開啟 [新增檔案] 對話方塊：
 
     ![內容功能表項目](media/editorconfig-image0.png)
 
@@ -76,13 +76,13 @@ EditorConfig 也支援 C# 中的[編碼慣例](https://docs.microsoft.com/visual
 
 ### <a name="adding-an-existing-editorconfig-file"></a>新增現有的 EditorConfig 檔案
 
-如果您正在處理已包含 `.editorconfig` 檔案的專案或方案，則無需執行任何操作即可套用設定。 任何新的程式碼都會依照 EditorConfig 的設定進行設定格式。 
+如果您正在處理已包含 `.editorconfig` 檔案的專案或方案，則無需執行任何操作即可套用設定。 任何新的程式碼都會依照 EditorConfig 的設定進行設定格式。
 
 建議您重複使用專案中現有的 `.editorconfig` 檔案。 若要新增現有檔案，請執行下列作業：
 
-1. 以滑鼠右鍵按一下您想要在其中新增它的資料夾，然後選取 [新增] > [新增檔案...]。
+1. 以滑鼠右鍵按一下您想要在其中新增它的資料夾，然後選取 [新增] > [新增檔案]。
 
-2. 瀏覽至所需檔案的目錄。 
+2. 瀏覽至所需檔案的目錄。
 
 3. 開頭為 `.` 的檔案 (例如 `.editorconfig`) 是 macOS 中的隱藏檔案，因此請按 **Command + Shift + .** 將 `.editorconfig` 檔案設為可見。
 
@@ -104,9 +104,7 @@ EditorConfig 也支援 C# 中的[編碼慣例](https://docs.microsoft.com/visual
 
 ## <a name="editing-an-editorconfig-file"></a>編輯 EditorConfig 檔案
 
-
 EditorConfig 檔案使用簡單的檔案版面配置來指定設定，如下列示範中的說明：
-
 
 ```EditorConfig
 # This file is the top-most EditorConfig file
@@ -137,11 +135,11 @@ csharp_new_line_before_open_brace = none
 
 ![套用 editorconfig 設定之後](media/editorconfig-image5.png)
 
-如需可用之 EditorConfig 設定的詳細資訊，請參閱 [EditorConfig 的 .NET 編碼慣例設定](https://docs.microsoft.com/visualstudio/ide/editorconfig-code-style-settings-reference) 一文，以及官方文件中的 [Supported Properties](http://editorconfig.org/#supported-properties) (支援的屬性) 一節。
+如需可用之 EditorConfig 設定的詳細資訊，請參閱 [EditorConfig 的 .NET 編碼慣例設定](/visualstudio/ide/editorconfig-code-style-settings-reference) 一文，以及官方文件中的 [Supported Properties](http://editorconfig.org/#supported-properties) (支援的屬性) 一節。
 
 ## <a name="override-editorconfig-settings"></a>覆寫 EditorConfig 設定
 
-每個方案中可以有多個 `.editorconfig` 檔案。 Visual Studio for Mac 會從上到下讀取方案中的 `.editorconfig` 檔案，並新增和覆寫進行中的設定。這表示將會優先使用「最接近」所編輯檔案之 `.editorconfig`中的設定。 設定取自相同資料夾 (若存在) 中的 `.editorconfig` 檔案，然後取自父資料夾 (若存在) 中的 `.editorconfig` 等等， 直到找到 `root=true`。  
+每個方案中可以有多個 `.editorconfig` 檔案。 Visual Studio for Mac 會從上到下讀取方案中的 `.editorconfig` 檔案，並新增和覆寫進行中的設定。這表示將會優先使用「最接近」所編輯檔案之 `.editorconfig`中的設定。 設定取自相同資料夾 (若存在) 中的 `.editorconfig` 檔案，然後取自父資料夾 (若存在) 中的 `.editorconfig` 等等， 直到找到 `root=true`。
 
 如果想要確保「不」套用任何較高層級 `.editorconfig` 檔案的設定到此程式碼基底組件，請在較低層級頂端的 `.editorconfig` 檔案中新增 `root=true` 屬性：
 
@@ -149,3 +147,7 @@ csharp_new_line_before_open_brace = none
 # top-most EditorConfig file
 root = true
 ```
+
+## <a name="see-also"></a>另請參閱
+
+- [使用 EditorConfig 建立自訂編輯器設定 (Windows 上的 Visual Studio)](/visualstudio/ide/create-portable-custom-editor-options)

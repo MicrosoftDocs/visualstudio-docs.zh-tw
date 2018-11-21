@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: E4B6CB42-9FE2-43B9-93B7-BD4BD50518B1
-ms.openlocfilehash: d1907b4905e0acfc5b9c287f385499fabe8333f4
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 74a78c5cb4e9583db1eb99bb6eeb5691cb4adcfd
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "43224263"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51294236"
 ---
 # <a name="building-and-cleaning-projects-and-solutions"></a>建置和清除專案與方案
 
@@ -32,17 +32,18 @@ ms.locfileid: "43224263"
     * **全部重建** - 清除方案，然後加以建置。
     * **全部清除** - 從您的方案中移除所有組建產品。
 
-
-
 ## <a name="to-build-or-rebuild-a-single-project"></a>建立或重建單一專案
 
 1. 在 Solution Pad 中選取專案。
 
 2. 在功能表列上選擇 [建置]，然後選擇 [建置 <專案名稱>]、[重建 <專案名稱>] 或 [清除 <專案名稱>]。
 
-
 ## <a name="to-stop-a-build"></a>停止建置
 
 若要停止建置，請按狀態區域中的紅色方塊：
 
- ![按紅色方塊以停止建置](media/compiling-and-building-image3.png)
+![按紅色方塊以停止建置](media/compiling-and-building-image3.png)
+
+## <a name="see-also"></a>另請參閱
+
+- [建置和清除專案與方案 (Windows 上的 Visual Studio)](/visualstudio/ide/building-and-cleaning-projects-and-solutions-in-visual-studio)

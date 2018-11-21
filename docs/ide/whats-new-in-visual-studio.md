@@ -2,7 +2,7 @@
 title: Visual Studio 2017 的新功能
 description: 深入了解 Visual Studio 2017 中的新功能。
 ms.custom: ''
-ms.date: 09/04/2018
+ms.date: 11/13/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
 ms.topic: conceptual
@@ -17,16 +17,16 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5bf6de28ff98bf7a05098cabefb86b8cd5169d27
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 51a87e5df597c398c89f59b53fa9d92585d8d4fb
+ms.sourcegitcommit: 6a955a2d179cd0e137942389f940d9fcbbe125de
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50673025"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51607870"
 ---
 # <a name="what39s-new-in-visual-studio-2017"></a>Visual Studio 2017 的新功能
 
-**已針對 [15.8 版](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default&contextView=vs-2017)更新**
+**已針對 [15.9 版](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default&contextView=vs-2017)更新**
 
 想要從舊版 Visual Studio 升級嗎？ Visual Studio 2017 提供您下列功能：適用於任何開發人員、任何應用程式和任何平台的卓越生產力。 您可使用 Visual Studio 2017 來開發適用於 Android、iOS、Windows、Linux、Web 及雲端的應用程式。 快速編碼、輕鬆偵錯及診斷、頻繁測試，然後自信地發行。 您也可以建置自己的擴充功能來擴充和自訂 Visual Studio 。 使用版本控制、變得敏捷、使用這個版本有效率地共同作業！
 

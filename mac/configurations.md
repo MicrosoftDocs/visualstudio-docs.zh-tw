@@ -5,27 +5,26 @@ author: conceptdev
 ms.author: crdun
 ms.date: 04/14/2017
 ms.assetid: 78107CFA-9308-4293-A92A-9B552A259E15
-ms.openlocfilehash: c6aa5de66551cd224713db60ce7be0d02b25b332
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 7f130f5dec77e0a1965c68cf71e642fdb636832f
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "43224057"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51296173"
 ---
 # <a name="understanding-build-configurations"></a>了解組建組態
 
-## <a name="project-build-configurations"></a>專案組建組態 
+## <a name="project-build-configurations"></a>專案組建組態
 
 專案通常會有多個設定，在它們之間切換可在建置時產生不同的輸出。 例如，偵錯設定會輸出偵錯符號，可讓偵錯工具從已損毀應用程式的堆疊追蹤中解析函式名稱、參數或變數。 雖然在開發期間，這項額外資訊很有用，但它會導致檔案大小擴大，因而不適合用於發佈。
 
-每個平台都有其組建的特定組態。 
+每個平台都有其組建的特定組態。
 
 ## <a name="solution-configurations"></a>方案組態
 
-類似於專案組態，方案組態是用來建立整個專案的自訂組態。 透過使用 [設定對應] 索引標籤下的 [組建] > [設定] 項目，您可以為每個方案項目指派目標設定，如下圖所示：
+類似於專案組態，方案組態是用來建立整個專案的自訂組態。 透過使用 [組態對應] ****  索引標籤下的 [組建] > [組態] ****  項目，您可以為每個方案項目指派目標組態，如下圖所示：
 
-
- ![組態對應選項](media/projects-and-solutions-image3.png)
+![組態對應選項](media/projects-and-solutions-image3.png)
 
 如需有關設定的詳細資訊，請參閱由 James Montemagno 所建立的[設定管理員](https://www.youtube.com/watch?v=tjSdkqYh5Vg) \(英文\) 影片。
 
@@ -35,14 +34,14 @@ ms.locfileid: "43224057"
 
 在 Visual Studio for Mac 中，您可以設定「回合組態」，而不是設定啟始專案。 回合組態顯示在組建組態選取器旁邊的工具列下拉式清單中，如下所示：
 
- ![回合組態下拉式清單](media/projects-and-solutions-image8.png)
+![回合組態下拉式清單](media/projects-and-solutions-image8.png)
 
-回合組態是一組執行選項，具有一個名稱和數個基於不同目的定義在專案中的組態。 回合組態會在專案層級定義，並且會針對每個可執行專案自動建立一個預設組態，但是您可以新增所需數目的組態。 特定專案類型會自動產生其他的回合組態。 例如，watchOS 專案可能會產生「概覽和通知組態」。 
- 
+回合組態是一組執行選項，具有一個名稱和數個基於不同目的定義在專案中的組態。 回合組態會在專案層級定義，並且會針對每個可執行專案自動建立一個預設組態，但是您可以新增所需數目的組態。 特定專案類型會自動產生其他的回合組態。 例如，watchOS 專案可能會產生「概覽和通知組態」 __。
+
 組態可以與其他開發人員共用 (在此情況下，組態會儲存在 .csproj 檔案)，或保留在本機中 (在此情況下，它們會儲存在 .user 檔案)。
 
 ### <a name="android-run-configurations"></a>Android 回合組態
- 
+
 Android 專案的回合組態可讓您指定執行專案或對專案進行偵錯時，所要啟動的活動、服務或廣播接收器。 您可以傳遞意圖的額外資料，並設定意圖旗標，以便能夠在不同的啟動條件下測試您的元件。
 
 `MainLauncher` 以外的活動需要將 `Exported=true` 新增至活動屬性，才能對實體裝置進行偵錯，否則必須定義意圖篩選器。
@@ -67,3 +66,7 @@ Android 專案的回合組態可讓您指定執行專案或對專案進行偵錯
 * WatchKit 專案
     * 模式 (概覽、通知)
     * 通知承載
+
+## <a name="see-also"></a>另請參閱
+
+- [了解組建組態 (Windows 上的 Visual Studio)](/visualstudio/ide/understanding-build-configurations)

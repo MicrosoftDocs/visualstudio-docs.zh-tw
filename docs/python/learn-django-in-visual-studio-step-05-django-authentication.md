@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: cc238b6a8ba1a190471d25952a4d7c976ca56b9f
-ms.sourcegitcommit: e7b3fc8c788fb49d6ba4215abf27139f2a08e1a1
+ms.openlocfilehash: cd3dce86104343b6c10bd1329b3ee3cdb7c7ee4f
+ms.sourcegitcommit: a34b7d4fdb3872865fcf98ba24a0fced58532adc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48120351"
+ms.lasthandoff: 11/12/2018
+ms.locfileid: "51561643"
 ---
 # <a name="step-5-authenticate-users-in-django"></a>步驟 5：在 Django 中驗證使用者
 
@@ -152,24 +152,30 @@ ms.locfileid: "48120351"
 
 1. 若要檢查驗證的使用者是否被授權存取特定資源，您必須從您的資料庫擷取使用者特定權限。 如需詳細資訊，請參閱[使用 Django 驗證系統](https://docs.djangoproject.com/en/2.0/topics/auth/default/#permissions-and-authorization) (Django 文件)。
 
-1. 其中進階使用者或系統管理員，皆被授權使用相對 URL "/admin/" 與 "/admin/doc/" 來存取內建的 Django 系統管理員介面。 若要啟用這些介面，請開啟 Django 專案的 *urls.py*，然後移除下列項目的註解：
+1. 其中進階使用者或系統管理員，皆被授權使用相對 URL "/admin/" 與 "/admin/doc/" 來存取內建的 Django 系統管理員介面。 若要啟用這些介面，請執行下列作業：
 
-    ```python
-    from django.conf.urls import include
-    from django.contrib import admin
-    admin.autodiscover()
+    1. 將 docutils Python 套件安裝到您的環境。 要這麼做的好方法是將 docutils 新增至 *requirements.txt* 檔案，然後在 [方案總管] 中，依序展開專案、[Python 環境] 節點，然後以滑鼠右鍵按一下您使用的環境，選取 [從 requirements.txt 安裝]。
 
-    # ...
-    urlpatterns = [
+    1. 開啟 Django 專案的 *urls.py*，然後移除下列項目的預設註解：
+
+        ```python
+        from django.conf.urls import include
+        from django.contrib import admin
+        admin.autodiscover()
+
         # ...
-        url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
-        url(r'^admin/', include(admin.site.urls)),
-    ]
-    ```
+        urlpatterns = [
+            # ...
+            url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
+            url(r'^admin/', include(admin.site.urls)),
+        ]
+        ```
 
-    當您重新啟動應用程式時，便可以瀏覽至 "/admin/" 與 "/admin/doc/"，並執行如建立其他使用者帳戶的工作。
+    1. 在 Django 專案的 *settings.py* 檔案中，巡覽至 `INSTALLED_APPS` 集合，並新增 `'django.contrib.admindocs'`。
 
-    ![Django 系統管理員介面](media/django/step05-administrator-interface.png)
+    1. 當您重新啟動應用程式時，便可以巡覽至 "/admin/" 與 "/admin/doc/"，並執行如建立其他使用者帳戶的工作。
+
+        ![Django 系統管理員介面](media/django/step05-administrator-interface.png)
 
 1. 驗證流程的最後一部分就是登出。 如您在 *loginpartial.html* 中所見，[登出] 連結只會針對相對 URL "/login" 執行 POST，這是由內建檢視 `django.contrib.auth.views.logout` 所處理。 此檢視不會顯示任何 UI，而會直接巡覽至首頁 (如 "^logout$" 模式的 *urls.py* 中所示)。 如果您想要顯示登出頁面，請先如下所示變更 URL 模式，以新增 "template_name" 屬性並移除 "next_page" 屬性：
 

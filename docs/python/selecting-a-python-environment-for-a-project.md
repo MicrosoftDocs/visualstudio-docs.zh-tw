@@ -1,7 +1,7 @@
 ---
 title: 選取要用於專案的 Python 解譯器和環境
-description: 如何指派要為 Visual Studio 專案使用的 Python 環境，以及建立虛擬環境的指示。
-ms.date: 06/27/2018
+description: 如何選取 Python 環境或解譯器以用於 Visual Studio 專案，包括 Anaconda 及虛擬環境。
+ms.date: 11/08/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,16 +11,16 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e738eb52ce8cb7cef4090dd9812f6c421a7d11fd
-ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
+ms.openlocfilehash: 0bff5e81fbfda45908315091063833b31abbdd8c
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49101130"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349448"
 ---
-# <a name="how-to-assign-which-python-environment-is-used-for-a-project"></a>如何指派要為專案使用的 Python 環境
+# <a name="how-to-select-a-python-environment-for-a-project"></a>如何選取要用於專案的 Python 環境
 
-在 Python 專案中的所有程式碼，都是在特定環境的內容中執行。 Visual Studio 也會使用該環境來進行偵錯、匯入和成員完成、語法檢查，以及任何其他需要環境的工作。
+Python 專案中所有程式碼都會在特定環境的內容中執行，例如全域 Python 環境、Anaconda 環境、虛擬環境或 Conda 環境。 Visual Studio 也會使用該環境來進行偵錯、匯入和成員完成、語法檢查，以及任何其他需要 Python 版本特定語言服務和一組已安裝套件的工作。
 
 Visual Studio 中所有新的 Python 專案一開始都會設定為使用預設全域環境，該環境會出現在 [方案總管] 中的 [Python 環境] 節點中：
 
@@ -42,7 +42,7 @@ Visual Studio 中所有新的 Python 專案一開始都會設定為使用預設�
 | --- | --- |
 | **新增虛擬環境** | 開始在專案中新建虛擬環境的程序。 請參閱[建立虛擬環境](#create-a-virtual-environment)。 |
 | **新增現有的虛擬環境** | 提示您選取包含虛擬環境的資料夾，並將它新增至 [Python 環境] 底下的清單，但不會加以啟用。 [啟用現有的虛擬環境](#activate-an-existing-virtual-environment)。 |
-| **建立 Conda 環境** | 切換至 [Python 環境] 視窗，您可在其中輸入環境名稱並指定其基底解譯器。 |
+| **建立 Conda 環境** | 切換至 [Python 環境] 視窗，您可在其中輸入環境名稱並指定其基底解譯器。 請參閱 [Conda 環境](managing-python-environments-in-visual-studio.md#conda-environments)。 |
 
 ## <a name="use-virtual-environments"></a>使用虛擬環境
 

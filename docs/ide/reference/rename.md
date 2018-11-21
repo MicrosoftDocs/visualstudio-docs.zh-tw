@@ -14,12 +14,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: b85814be6df104a0d5859fbb339ce0dc665c09c4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4cde6fb353db2fc018104a031dd17b943b2b2247
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49908735"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295952"
 ---
 # <a name="rename-a-code-symbol-refactoring"></a>為程式碼符號重新命名的重構
 

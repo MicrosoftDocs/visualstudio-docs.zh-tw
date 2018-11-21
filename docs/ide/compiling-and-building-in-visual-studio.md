@@ -13,20 +13,20 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ce6a85ff80d8da081b0d69763ed477174de7ed4
-ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
+ms.openlocfilehash: 9d2ad9e3e6644f3f0ffc2d4fbf163968f16065f3
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48863617"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349129"
 ---
 # <a name="compile-and-build-in-visual-studio"></a>在 Visual Studio 中編譯與建置
 
-執行組建便可在您開發週期的任何時間點，從原始程式碼建立組件和可執行應用程式。 不同專案類型 (如 Windows、ASP.NET、行動裝置及其他類型) 進行的建置流程大致上都很相似。 不同的程式語言 (如 C#、Visual Basic、C++ 和 F#) 也進行類似的建置流程。
+當您建置原始程式碼時，建置引擎會建立組件和可執行的應用程式。 不同專案類型 (如 Windows、ASP.NET、行動裝置及其他類型) 進行的建置流程大致上都很相似。 不同的程式語言 (如 C#、Visual Basic、C++ 和 F#) 也進行類似的建置流程。
 
-經常建置程式碼讓您可以迅速識別編譯錯誤，例如語法不正確、關鍵字拼字錯誤和類型不相符。 時常建置和執行程式碼的偵錯版本也可讓您快速偵測並更正執行階段錯誤，像是邏輯錯誤和語意錯誤。
+經常建置程式碼讓您可以迅速識別編譯錯誤，例如語法不正確、關鍵字拼字錯誤和類型不相符。 您也可以藉由建置和執行程式碼的偵錯版本，偵測並修正執行階段錯誤，例如邏輯錯誤和語意錯誤。
 
-成功的組建在本質上驗證了應用程式的原始程式碼包含正確的語法，而且所有對程式庫、組件及其他元件的靜態參考均已解析。 如此會產生可執行的應用程式，不僅可在[偵錯環境](../debugger/index.md)中測試其正常運作，也可透過各種手動和自動測試來[驗證程式碼品質](../test/improve-code-quality.md)。 應用程式一經完整測試，您便可編譯發行版本以部署到您的客戶。 如需此流程的簡介，請參閱[逐步解說：建置應用程式](../ide/walkthrough-building-an-application.md)。
+成功的組建會驗證應用程式的原始程式碼包含了正確語法，而且所有對程式庫、組件及其他元件的靜態參考均可解析。 如此會產生可執行的應用程式，不僅可在[偵錯環境](../debugger/index.md)中測試其正常運作，也可透過各種手動和自動測試來[驗證程式碼品質](../test/improve-code-quality.md)。 應用程式一經完整測試，您便可編譯發行版本以部署到您的客戶。 如需此流程的簡介，請參閱[逐步解說：建置應用程式](../ide/walkthrough-building-an-application.md)。
 
 您可以使用下列任一種方法來建置應用程式：Visual Studio IDE、MSBuild 命令列工具，以及 Azure Pipelines：
 
@@ -37,6 +37,9 @@ ms.locfileid: "48863617"
 | Azure Pipelines | - 將建置流程自動化，這是持續整合/持續傳遞管線的一部分。<br />- 在每個組建套用自動化的測試。<br />- 在建置流程採用幾乎不受限制的雲端式資源。<br />- 修改建置工作流程，以及建立建置活動以執行深入自訂的工作。|
 
 本節文件進一步說明使用 IDE 的建置流程詳細資料。 如需其他方法的詳細資訊，請分別參閱 [MSBuild](../msbuild/msbuild.md) 和 [Azure Pipelines](/azure/devops/pipelines/index?view=vsts)。
+
+> [!NOTE]
+> 本主題適用於 Windows 上的 Visual Studio。 針對 Visual Studio for Mac，請參閱[在 Visual Studio for Mac 中編譯與建置](/visualstudio/mac/compiling-and-building)。
 
 ## <a name="overview-of-building-from-the-ide"></a>從 IDE 建置的概觀
 
@@ -57,3 +60,4 @@ ms.locfileid: "48863617"
 ## <a name="see-also"></a>另請參閱
 
 - [建置 (編譯) 網站專案](https://msdn.microsoft.com/Library/a9cbb88c-8fff-4c67-848b-98fbfd823193)
+- [編譯與建置 (Visual Studio for Mac)](/visualstudio/mac/compiling-and-building)

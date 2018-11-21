@@ -6,12 +6,12 @@ ms.author: crdun
 ms.date: 05/06/2018
 ms.technology: vs-ide-install
 ms.assetid: 4EB95F75-BC2E-4982-9564-2975805712D8
-ms.openlocfilehash: 2c74cf7ddd78bee538a3d37d7e4c4daa4556e3c9
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 4a0ecef49d8c3493ff6094be66f1d05ad588077c
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "43224441"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295666"
 ---
 # <a name="uninstalling-visual-studio-for-mac"></a>解除安裝 Visual Studio for Mac
 
@@ -19,7 +19,7 @@ ms.locfileid: "43224441"
 
 您可以使用本指南來個別解除安裝每項產品，方法是巡覽至相關章節，或使用[解除安裝指令碼](#uninstall-script)一節中提供的指令碼，以解除安裝所有項目。
 
-如果您先前已在電腦上安裝 Xamarin Studio，則除了下列步驟之外，還可能需要遵循 [Xamarin 解除安裝](https://docs.microsoft.com/xamarin/cross-platform/get-started/installation/uninstalling-xamarin#uninstall-xamarin-studio-on-mac)指南中的指示。
+如果您先前已在電腦上安裝 Xamarin Studio，則除了下列步驟之外，還可能需要遵循 [Xamarin 解除安裝](/xamarin/cross-platform/get-started/installation/uninstalling-xamarin#uninstall-xamarin-studio-on-mac)指南中的指示。
 
 ## <a name="uninstall-script"></a>解除安裝指令碼
 
@@ -41,7 +41,7 @@ ms.locfileid: "43224441"
 
 若要執行指令碼，請執行下列步驟：
 
-1. 以滑鼠右鍵按一下指令碼，然後選取 [另存新檔...] 以將檔案儲存至 Mac。
+1. 以滑鼠右鍵按一下指令碼，然後選取 [另存新檔] 將檔案儲存在您的 Mac 上。
 2. 開啟 [終端機]，並將工作目錄變更為已下載指令碼的位置：
 
     ```bash
@@ -61,7 +61,7 @@ ms.locfileid: "43224441"
 
 若要執行指令碼，請執行下列步驟：
 
-1. 以滑鼠右鍵按一下指令碼，然後選取 [另存新檔...] 以將檔案儲存至 Mac。
+1. 以滑鼠右鍵按一下指令碼，然後選取 [另存新檔] 將檔案儲存在您的 Mac 上。
 2. 開啟 [終端機]，並將工作目錄變更為已下載指令碼的位置：
 
     ```bash
@@ -83,7 +83,7 @@ ms.locfileid: "43224441"
 
 刪除此應用程式套件組合會移除 Visual Studio for Mac，即使檔案系統上仍然有其他 Xamarin 相關檔案也是一樣。
 
-若要移除 Visual Studio for Mac 的所有追蹤，則應該在終端機中執行下列命令：
+若要移除 Visual Studio for Mac 的所有追蹤，請在終端機中執行下列命令：
 
 ```bash
 sudo rm -rf "/Applications/Visual Studio.app"
@@ -136,8 +136,7 @@ sudo rm -rf /Library/Frameworks/Xamarin.Android.framework
 ### <a name="uninstall-android-avd"></a>解除安裝 Android AVD
 
 > [!WARNING]
-> Visual Studio for Mac 外部有其他應用程式也使用 Android AVD 以及這些額外的 Android 元件，例如 Android Studio。
-> 移除這個目錄可能會造成專案在 Android Studio 內中斷。 
+> Visual Studio for Mac 外部有其他應用程式也使用 Android AVD 以及這些額外的 Android 元件，例如 Android Studio。移除這個目錄可能會造成專案在 Android Studio 內中斷。
 
 若要移除任何 Android AVD 和額外 Android 元件，請使用下列命令：
 
@@ -150,8 +149,6 @@ rm -rf ~/.android
 ```bash
 rm -rf ~/.android/avd
 ```
-
- 
 
 ## <a name="uninstall-xamarinios"></a>解除安裝 Xamarin.iOS
 
@@ -210,3 +207,7 @@ rm -rf ~/Library/Logs/VisualStudioInstaller/
 rm -rf ~/Library/Preferences/Xamarin/
 rm -rf "~/Library/Preferences/Visual Studio/"
 ```
+
+## <a name="see-also"></a>另請參閱
+
+- [解除安裝 Visual Studio (Windows 上)](/visualstudio/install/uninstall-visual-studio)

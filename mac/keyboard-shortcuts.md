@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: 48E06A61-7294-4EC8-A09D-1763C32AD910
-ms.openlocfilehash: 3aea39862ee2221454a337d7c50defd41319623b
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: ff5a7d79bf59f841aaf1957095cb2ae0e53a46c7
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "43224438"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295107"
 ---
 # <a name="common-keyboard-shortcuts-in-visual-studio-for-mac"></a>Visual Studio for Mac 中的常用鍵盤快速鍵
 
@@ -18,17 +18,17 @@ ms.locfileid: "43224438"
 
 此命令會依內容產生程式碼：
 
- `⌘ + 1`
+`⌘ + 1`
 
 ![面板隨即出現，其中具有產生與所選符號相關之程式碼的選項](media/keyboard-shortcuts-image8.png)
 
 ## <a name="search-files-symbols-and-commands"></a>搜尋檔案、符號和命令
 
-`control + .` 
+`control + .`
 
-## <a name="autocomplete"></a>自動完成 
+## <a name="autocomplete"></a>自動完成
 
-`control + /` 
+`control + /`
 
 ## <a name="quick-fixes-and-actions"></a>快速修正和動作
 
@@ -50,7 +50,7 @@ ms.locfileid: "43224438"
 
 ## <a name="move-lines-around-in-editor"></a>在編輯器中移動行
 
-`alt + up/down` 
+`alt + up/down`
 
 使用 **Alt + 向上箭號**命令將目前這一行或目前的選取行向上移動，並使用 **Alt + 向下箭號**命令，將行向下移動。 如果語言增益集支援，這些行將會重新縮排，以在它們移入和移出範圍時符合內容。
 
@@ -71,3 +71,7 @@ ms.locfileid: "43224438"
 以邏輯方式展開字組、子運算式、陳述式和行成員選取範圍：
 
 `alt + shift + up` 以選取，`alt + shift + down` 以取消選取
+
+## <a name="see-also"></a>另請參閱
+
+- [Visual Studio 中的鍵盤快速鍵 (Windows 上)](/visualstudio/ide/tips-and-tricks-for-visual-studio)

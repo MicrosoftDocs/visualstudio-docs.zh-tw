@@ -12,16 +12,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f0d53ece6add1c781cb18569139fea5ffbbeca76
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: 539e6c95dd16e091b7f0ff2cf792a9f8b2fa416b
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51000225"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51348330"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-2017"></a>如何回報 Visual Studio 2017 的問題
 
 如果您在使用 Visual Studio 時發生問題，我們會想要進行了解。 以下說明如何向 [Developer Community](https://developercommunity.visualstudio.com/) 回報問題，讓我們加以診斷及修正。
+
+> [!NOTE]
+> 本主題適用於 Windows 上的 Visual Studio。 針對 Visual Studio for Mac，請參閱[如何在 Visual Studio for Mac 中回報問題](/visualstudio/mac/report-a-problem)。
 
 ## <a name="report-a-problem-by-using-visual-studio"></a>使用 Visual Studio 回報問題
 

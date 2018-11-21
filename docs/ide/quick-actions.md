@@ -12,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: d413d5b440c39c3603e1e909fb0c4645719f188b
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: 7089a9a654d1c346fefcca119f74a87d89f323b8
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/11/2018
-ms.locfileid: "34064846"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349370"
 ---
 # <a name="quick-actions"></a>快速動作
 
@@ -29,6 +29,9 @@ ms.locfileid: "34064846"
 - [隱藏](../code-quality/use-roslyn-analyzers.md)程式碼分析器規則的違規情況
 - 套用重構作業 (例如，[內嵌暫存變數](../ide/reference/inline-temporary-variable.md))
 - 產生程式碼 (例如，[引進區域變數](../ide/reference/introduce-local-variable.md))
+
+> [!NOTE]
+> 本主題適用於 Windows 上的 Visual Studio。 針對 Visual Studio for Mac，請參閱[重構 (Visual Studio for Mac)](/visualstudio/mac/refactoring)。
 
 快速動作的套用方式包括使用燈泡 ![燈泡圖示](media/light-bulb-icon.png) 或螺絲起子 ![螺絲起子圖示](media/screwdriver-icon.png) 圖示，以及按 **Ctrl**+**.** 當游標位於可使用動作的程式碼行上時。 如果有紅色波浪線指出錯誤，而且 Visual Studio 有該錯誤可用的修正程式，您就會看到錯誤燈泡 ![錯誤燈泡圖示](media/error-light-bulb-icon.png)。
 
@@ -60,3 +63,4 @@ ms.locfileid: "34064846"
 - [常用的快速動作](../ide/common-quick-actions.md)
 - [程式碼樣式及快速動作](../ide/code-styles-and-quick-actions.md)
 - [撰寫和重構程式碼 (C++)](/cpp/ide/writing-and-refactoring-code-cpp)
+- [重構 (Visual Studio for Mac)](/visualstudio/mac/refactoring)

@@ -6,12 +6,12 @@ ms.author: crdun
 ms.date: 04/14/2017
 ms.technology: vs-ide-sdk
 ms.assetid: D5245AB0-8404-426B-B538-F49125E672B2
-ms.openlocfilehash: 83d5eac54560d9c0c1960808d39a909858db323d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8212039cd4f83cd9ea2b53a1050f32ed5dbad367
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49900666"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295133"
 ---
 # <a name="extending-visual-studio-for-mac"></a>擴充 Visual Studio for Mac
 
@@ -23,7 +23,7 @@ Visual Studio for Mac 包含一組稱為「延伸模組套件」的模組。 您
 
 ![增益集架構](media/extending-visual-studio-mac-addin1.png)
 
-為了讓延伸模組套件從 Visual Studio for Mac 建置，它必須具有從 Visual Studio for Mac IDE 內現有擴充點建置的延伸模組。 當延伸模組套件依賴增益集主機中所定義的擴充點時，它便被稱為對該延伸模組套件具有「相依性」。
+為了讓延伸模組套件從 Visual Studio for Mac 建置，它必須具有從 Visual Studio for Mac IDE 內現有擴充點建置的延伸模組。 當延伸模組套件依賴增益集主機中所定義的擴充點時，它會被稱為對該延伸模組套件具有「相依性」 __ 。
 
 此模組化設計的好處是，Visual Studio for Mac 可以擴充 -- 有許多擴充點可供自訂延伸模組套件建置之用。 目前的延伸模組套件範例包括支援 C# 和 F#、偵錯工具和專案範本。
 
@@ -52,13 +52,13 @@ Visual Studio for Mac 包含一組稱為「延伸模組套件」的模組。 您
 
 ![插入日期螢幕擷取畫面](media/extending-visual-studio-mac-addin13.png)
 
-它們也會有對應的 `assembly:AddinDependency ` 屬性在建置階段新增。 中繼資料和相依性宣告就緒之後，您就可以專注於延伸模組套件的基本建置組塊。
+它們也會有對應的 `assembly:AddinDependency` 屬性在建置階段新增。 中繼資料和相依性宣告就緒之後，您就可以專注於延伸模組套件的基本建置組塊。
 
 ## <a name="extensions-and-extension-points"></a>延伸模組和擴充點
 
 擴充點是一個預留位置，其定義資料結構 (類型)，而延伸模組則定義符合特定擴充點指定之結構的資料。 擴充點在其宣告中指定可以接受的延伸模組類型。 延伸模組是使用型類型稱或延伸模組路徑來宣告。 如需如何建立所需擴充點的更深入說明，請參閱[擴充點參考](https://github.com/mono/mono-addins/wiki/Extension-Points)。
 
-延伸模組/擴充點的架構讓 Visual Studio for Mac 的開發能維持快速且模組化。 
+延伸模組/擴充點的架構讓 Visual Studio for Mac 的開發能維持快速且模組化。
 
 <!--Since there are a large number of extension types, this article focuses on the ones used in the extension package that was built in the [Walkthrough](~/extending-visual-studio-mac-walkthrough.md).-->
 
@@ -163,3 +163,7 @@ public enum DateInserterCommands
 
 > [!NOTE]
 > 我們目前正努力改善 Visual Studio for Mac 的擴充性情節。 如果您正在建立延伸模組並需要其他協助或相關資訊，或是想要提供意見反應，請填寫 [Visual Studio for Mac 延伸模組製作](https://aka.ms/vsmac-extensions-survey) \(英文\) 表單。
+
+## <a name="see-also"></a>另請參閱
+
+- [開發 Visual Studio 延伸模組 (Windows 上)](/visualstudio/extensibility/starting-to-develop-visual-studio-extensions)

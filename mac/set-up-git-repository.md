@@ -5,20 +5,20 @@ author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: E992FA1D-B2AD-4A28-ADC6-47E4FC471060
-ms.openlocfilehash: aafa410352be27084f2febecc734c68e4f316d6f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c8d1cec438c0d942290997a6d51c4c0f2252bf8e
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49827957"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51296212"
 ---
-# <a name="setting-up-a-git-repository"></a>設定 Git 存放庫
+# <a name="set-up-a-git-repository"></a>設定 Git 存放庫
 
 Git 是一種分散式版本控制系統，可讓小組同時處理相同的文件。 這表示有單一伺服器包含所有檔案，但只要從這個中央來源簽出存放庫時，就會將整個存放庫複製至您的本機電腦。
 
 有許多遠端主機可讓您使用 Git 來進行版本控制，不過最常見的主機是 GitHub。 下列範例使用 GitHub 主機，但您可以在 Visual Studio for Mac 中使用任何 Git 主機來進行版本控制。
 
-如果您想要使用 GitHub，請確定您已先建立並設定帳戶，再遵循本文章中的步驟。 
+如果您想要使用 GitHub，請確定您已先建立並設定帳戶，再遵循本文章中的步驟。
 
 ## <a name="creating-a-remote-repo-on-github"></a>在 GitHub 上建立遠端存放庫
 
@@ -40,46 +40,45 @@ Git 是一種分散式版本控制系統，可讓小組同時處理相同的文�
 
    您需要 HTTPS 位址，才能將 Visual Studio for Mac 指向這個存放庫。
 
-
 ## <a name="publishing-an-existing-project"></a>發行現有專案
 
 如果您有尚「未」在版本控制中的現有專案，請使用下列步驟在 Git 中進行設定：
 
-4.  從 Visual Studio for Mac 的 Solution Pad 中選取方案名稱。 
+1.  從 Visual Studio for Mac 的 Solution Pad 中選取方案名稱。
 
-5. 在功能表列中，選取 [版本控制] > [在版本控制中發行] 以顯示 [選取存放庫] 對話方塊：
+2. 在功能表列中，選取 [版本控制] > [在版本控制中發行] 以顯示 [選取存放庫] 對話方塊：
 
     ![在 Visual Studio for Mac 中開始簽出](media/version-control-git4-sml.png)
 
-    如果此功能表項目在功能表中呈現灰色，請確定您已選取方案名稱。  
+    如果此功能表項目在功能表中呈現灰色，請確定您已選取方案名稱。
 
-6. 選擇 [已註冊的存放庫] 索引標籤，然後按 [新增] 按鈕：
+3. 選擇 [已註冊的存放庫] 索引標籤，然後按 [新增] 按鈕：
 
     ![](media/version-control-git5.png)
 
-7. 輸入您想要顯示在本機的存放庫名稱，並貼入步驟 3 中的 URL。 [存放庫組態] 對話方塊應該與下列類似。 按 [確定]： 
+4. 輸入您想要顯示在本機的存放庫名稱，並貼入步驟 3 中的 URL。 [存放庫組態] 對話方塊應該與下列類似。 按 [確定]：
 
     ![輸入 Git 詳細資料對話方塊](media/version-control-git6.png)
 
-    請注意，也可以使用 SSH 連線至 Git。
+    也可以使用 SSH 連線至 Git。
 
-8. 若要嘗試將應用程式發行至 Git，請選取存放庫，然後確定 [模組名稱] 和 [訊息] 文字欄位皆已完成：
+5. 若要嘗試將應用程式發行至 Git，請選取存放庫，然後確定 [模組名稱] 和 [訊息] 文字欄位皆已完成：
 
     ![嘗試將專案發行至 Git](media/version-control-git7.png)
 
-9. 按一下 [確定]，然後按一下警示對話方塊中的 [發行]。
+6. 按一下 [確定]，然後按一下警示對話方塊中的 [發行]。
 
-10. 如果您尚未在 Visual Studio for Mac 喜好設定中輸入 Git 認證，請立即將其輸入。 首先，您必須建立存取權杖，以用來取代密碼。 如果您尚未建立存取權杖，請遵循 Git [存取權杖](https://help.github.com/articles/creating-an-access-token-for-command-line-use/) \(英文\) 文件中的步驟。
+7. 如果您尚未在 Visual Studio for Mac 喜好設定中輸入 Git 認證，請立即將其輸入。 首先，您必須建立存取權杖，以用來取代密碼。 如果您尚未建立存取權杖，請遵循 Git [存取權杖](https://help.github.com/articles/creating-an-access-token-for-command-line-use/) \(英文\) 文件中的步驟。
 
-11. 輸入使用者名稱和個人存取權杖，然後按 [確定]：
+8. 輸入使用者名稱和個人存取權杖，然後按 [確定]：
 
     ![輸入 Git 的使用者名稱和密碼](media/version-control-git9-sml.png)
 
-12. 幾秒之後，方案應該搭配其初始認可發行。 透過瀏覽 [版本控制] 功能表項目來確認方案已發行；現在其中應該已填入許多選項： 
+9. 幾秒之後，方案應該搭配其初始認可發行。 透過瀏覽 [版本控制] 功能表項目來確認方案已發行；現在其中應該已填入許多選項：
 
     ![版本控制功能表](media/version-control-git10.png)
 
-13. 在您開始進行其他變更時，請選取 [推送變更] 以將變更推送到 **remote** 存放庫。 這將允許所有適當的使用者在 github.com 上進行檢視： 
+10. 在您開始進行其他變更時，請選取 [推送變更] ****  以將變更推送至 **遠端** 存放庫。 這將允許所有適當的使用者在 github.com 上進行檢視：
 
     ![將變更推送到遠端存放庫](media/version-control-git11.png)
 
@@ -89,11 +88,11 @@ Git 是一種分散式版本控制系統，可讓小組同時處理相同的文�
 
 ![將變更推送到遠端存放庫](media/version-control-git12.png)
 
-## <a name="checkout-an-existing-repository"></a>簽出現有的存放庫
+## <a name="check-out-an-existing-repository"></a>簽出現有的存放庫
 
-您可能必須使用只存在於遠端的 GitHub 存放庫，而不是本機電腦上的 GitHub 存放庫。 Visual Studio for Mac 可讓您快速簽出這個存放庫。 請遵循下列步驟將其複製到您的電腦：
+您可能必須使用只存在於遠端的 GitHub 存放庫，而不是本機電腦上的 GitHub 存放庫。 Visual Studio for Mac 可讓您快速簽出此存放庫。 請遵循下列步驟將其複製到您的電腦：
 
-1. 在功能表列中，選取 [版本控制] > [簽出...]：
+1. 在功能表列中，選取 [版本控制] > [簽出]：
 
 2. 這會顯示 [連線到存放庫] 索引標籤：
 
@@ -114,12 +113,16 @@ Git 是一種分散式版本控制系統，可讓小組同時處理相同的文�
 
 如果您在初始化含有空白遠端存放庫的專案時發生問題，可以嘗試下列步驟：
 
-- 移至方案資料夾。
-- 按 `Command + Shift + . `。顯示隱藏的檔案和資料夾。
-- 如果有 **.git** 資料夾，請刪除它。
-- 如果有 **gitignore** 檔案，請刪除它。
-- 按 `Command + Shift + . `。隱藏檔案和資料夾。
-- 在 VS for Mac 中開啟方案。
-- 在 Solution Pad 上，選取方案節點。
-- 瀏覽至 [版本控制] 功能表，然後選擇 [Publish in Version Control] (在版本控制中發行)。
-- 遵循上述教學課程中從步驟 6 開始的步驟。
+1. 移至方案資料夾。
+1. 按下 **Command + Shift + .** 以顯示隱藏的檔案和資料夾。
+1. 如果有 **.git** 資料夾，請刪除它。
+1. 如果有 **gitignore** 檔案，請刪除它。
+1. 按下 **Command + Shift + .** 以隱藏檔案和資料夾。
+1. 在 VS for Mac 中開啟方案。
+1. 在 Solution Pad 上選取您的方案節點。
+1. 瀏覽至 [版本控制] 功能表，然後選擇 [Publish in Version Control] (在版本控制中發行)。
+1. 遵循上述教學課程中從步驟 6 開始的步驟。
+
+## <a name="see-also"></a>另請參閱
+
+- [Visual Studio (Windows) 中的版本控制](/visualstudio/version-control/)
