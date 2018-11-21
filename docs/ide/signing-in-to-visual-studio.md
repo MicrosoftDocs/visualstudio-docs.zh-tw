@@ -11,16 +11,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 67207d653d7300ecc5d0a7ae7a85ddea1bc0d7e9
-ms.sourcegitcommit: a749c287ec7d54148505978e8ca55ccd406b71ee
+ms.openlocfilehash: e947ec99ff0d63f413e00f5602035a7baa0bd708
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46542490"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51348329"
 ---
 # <a name="sign-in-to-visual-studio"></a>登入 Visual Studio
 
 只要透過登入此 IDE 來設定個人化帳戶，您就可以個人化和最佳化 Visual Studio 中的開發經驗。
+
+> [!NOTE]
+> 本主題適用於 Windows 上的 Visual Studio。 針對 Visual Studio for Mac，請參閱[登入 Visual Studio for Mac](/visualstudio/mac/signing-in)。
 
 ## <a name="why-should-i-sign-in-to-visual-studio"></a>我為何應該登入 Visual Studio？
 
@@ -68,3 +71,5 @@ ms.locfileid: "46542490"
 
 * [如何解除鎖定 Visual Studio](../ide/how-to-unlock-visual-studio.md)
 * [Visual Studio IDE 概觀](../ide/visual-studio-ide.md)
+* [登入 (Visual Studio for Mac)](/visualstudio/mac/signing-in)
+* [啟用 (Visual Studio for Mac)](/visualstudio/mac/activation)

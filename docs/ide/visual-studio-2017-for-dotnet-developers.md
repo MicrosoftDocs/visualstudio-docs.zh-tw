@@ -12,12 +12,12 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: 31800a7ec4e5a008234f7ee72b6c43bba559fbf9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5a2158663defe02dc51e91e888d47f325db7226a
+ms.sourcegitcommit: 20d1b9a5bf041bb28453501eb63bc0537a8e4f54
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49928343"
+ms.lasthandoff: 11/14/2018
+ms.locfileid: "51645142"
 ---
 # <a name="visual-studio-2017-c-productivity-guide"></a>Visual Studio 2017 C# 生產力指南
 
@@ -46,7 +46,7 @@ ms.locfileid: "49928343"
 | **Ctrl**+**.** (在 C# 設定檔中為 **Alt**+**Enter**) | 快速動作及重構 | 查看您游標位置或選取的程式碼有哪些程式碼修正、程式碼產生動作、重構或其他快速動作可供使用 |
 | **Ctrl**+**D** | 重複行 | 複製游標所在行的程式碼 (適用於 **Visual Studio 2017 15.6 版**和更新版本) |
 | **Shift**+**Alt**+**+**/**-** | 展開/折疊選取項目 | 展開或折疊編輯器中的前選取項目 (適用於 **Visual Studio 2017 15.5 版**和更新版本) |
-| **Ctrl** + **Alt** + **.** | 插入下一個相符的插入點 | 在下一個符合目前選取項目的位置，新增選取項目及插入點 (在 **Visual Studio 2017 版本 15.8** 及最新版本中提供) |
+| **Shift** + **Alt** + **.** | 插入下一個相符的插入點 | 在下一個符合目前選取項目的位置，新增選取項目及插入點 (在 **Visual Studio 2017 版本 15.8** 及最新版本中提供) |
 | **Ctrl**+**Q** | 快速啟動 | 搜尋所有 Visual Studio 設定 |
 | **F5** | 開始偵錯 | 開始偵錯應用程式 |
 | **Ctrl**+**F5** | 執行而不偵錯 | 在本機執行應用程式而不偵錯 |

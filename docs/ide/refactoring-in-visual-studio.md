@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 75945e1a3e66951021866370d043a645c8918541
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: dd99aba0855a3136d8992739ae00e242a5f54658
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34447683"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51348952"
 ---
 # <a name="refactor-code"></a>重構程式碼
 
@@ -32,3 +32,4 @@ ms.locfileid: "34447683"
 - [Visual Studio IDE](../ide/visual-studio-ide.md)
 - [程式碼編輯器的功能](../ide/writing-code-in-the-code-and-text-editor.md)
 - [預覽變更](../ide/preview-changes.md)
+- [重構 (Visual Studio for Mac)](/visualstudio/mac/refactoring)

@@ -17,18 +17,21 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d8d222a35c06cd7d53e2e104761cc1f30bf816e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a912534b9e0212e68a947fa892395a233f263a87
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49813813"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349633"
 ---
 # <a name="create-solutions-and-projects"></a>建立方案和專案
 
 「專案」是 Visual Studio 中的邏輯容器，用以保存建置您應用程式所需的項目，例如原始程式碼檔、點陣圖、圖示，以及元件和服務參考。 當您建立新的專案時，Visual Studio 會建立一個包含該專案的「解決方案」。 接著可以視需要將新的或現有專案新增至解決方案。 解決方案也可以包含未連線至任何特定專案的檔案。
 
 ![方案/專案階層架構](./media/vside-proj-soln.png)
+
+> [!NOTE]
+> 本主題適用於 Windows 上的 Visual Studio。 針對 Visual Studio for Mac，請參閱[在 Visual Studio for Mac 中建立專案](/visualstudio/mac/create-new-projects)。
 
 您可以在稱為**方案總管**的工具視窗中，檢視方案和專案。 下列螢幕擷取畫面顯示方案總管中的範例解決方案 (**BikeSharing.Xamarin-UWP**) 包含兩個專案：**BikeSharing.Clients.Core** 和 **BikeSharing.Clients.Windows**。 每個專案包含多個檔案、資料夾和參考。 以粗體顯示的專案名稱是「啟始專案」，也就是當您執行應用程式時所啟動的專案。 您可以指定哪一個專案是啟始專案。
 
@@ -39,7 +42,7 @@ ms.locfileid: "49813813"
 也就是說，在 Visual Studio 中開發應用程式不需要方案和專案。 您也可以直接開啟從 Git 複製或從其他位置下載的程式碼。 如需詳細資訊，請參閱[在 Visual Studio 中不使用專案或方案來開發程式碼](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md)。
 
 > [!NOTE]
-> 本主題中的描述以 Visual Studio Community 版本為基礎。 您看到的對話方塊與功能表命令，可能會依您的設定與 Visual Studio 版本而與此處描述的有所不同。 若要變更您的設定 (例如變更為 [一般] 或 [Visual C++] 設定)，請選擇 [工具]、[匯入和匯出設定]，然後選擇 [重設所有設定]。
+> 本主題中的描述以 Visual Studio Community 版本為基礎。 您看到的對話方塊與功能表命令，可能會依您的設定與 Visual Studio 版本而與此處描述的有所不同。 若要變更您的設定 (例如變更為 [一般] 或 [Visual C++] 設定)，請選擇 [工具] > [匯入和匯出設定]，然後選擇 [重設所有設定]。
 
 ## <a name="to-create-a-project-from-a-project-template"></a>從專案範本建立專案
 
@@ -138,3 +141,4 @@ ms.locfileid: "49813813"
 - [方案和專案](../ide/solutions-and-projects-in-visual-studio.md)
 - [GitHub 上的 Microsoft 開放原始碼存放庫](https://github.com/Microsoft)
 - [開發人員程式碼範例](https://code.msdn.microsoft.com/)
+- [建立專案 (Visual Studio for Mac)](/visualstudio/mac/create-new-projects)

@@ -9,16 +9,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fd4f00313cbbb7f082934bddff338f77f117fd5c
-ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
+ms.openlocfilehash: 8d2e42c31d7cbdb52e602eee4e424eb78ee89d77
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32064541"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51348691"
 ---
 # <a name="personalize-the-visual-studio-ide"></a>將 Visual Studio IDE 個人化
 
 您可以使用各種不同的方法來個人化 Visual Studio，以最佳方式支援您自己的開發風格與需求。 您的許多設定可在 Visual Studio 執行個體之間漫遊 &mdash; 請參閱[同步設定](../ide/synchronized-settings-in-visual-studio.md)。 本主題簡要說明各種不同的個人化設定，以及何處可找到詳細資訊。
+
+> [!NOTE]
+> 本主題適用於 Windows 上的 Visual Studio。 針對 Visual Studio for Mac，請參閱[自訂 Visual Studio for Mac IDE](/visualstudio/mac/customizing-the-ide)。
 
 ## <a name="general-environment-options"></a>一般環境選項
 
@@ -61,3 +64,4 @@ ms.locfileid: "32064541"
 
 - [Visual Studio IDE 概觀](../ide/visual-studio-ide.md)
 - [快速入門：Visual Studio IDE 初探](../ide/quickstart-ide-orientation.md)
+- [自訂 Visual Studio for Mac IDE](/visualstudio/mac/customizing-the-ide)

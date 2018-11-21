@@ -16,16 +16,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 47468c7ff7ead04ad2c6261725089ca454faffc2
-ms.sourcegitcommit: 7bb0225e1fd45999ce09e0b49c2cfae515c27e11
+ms.openlocfilehash: 7766a7fd935cc1e1131c4780a5a88ef6fa54e838
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45612697"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349388"
 ---
 # <a name="use-the-task-list"></a>使用工作清單
 
 您可以使用 [工作清單] 來追蹤使用 `TODO` 和 `HACK` 這類語彙基元或自訂語彙基元的程式碼註解，以及管理會直接將您帶往程式碼中預先定義位置的捷徑。 按一下清單中的項目，以移至它在原始程式碼中的位置。
+
+> [!NOTE]
+> 本主題適用於 Windows 上的 Visual Studio。 針對 Visual Studio for Mac，請參閱[工作註解 (Visual Studio for Mac)](/visualstudio/mac/task-comments)。
 
 ## <a name="the-task-list-window"></a>工作清單視窗
 
@@ -104,3 +107,4 @@ ms.locfileid: "45612697"
 ## <a name="see-also"></a>另請參閱
 
 - [選項對話方塊、環境、工作清單](../ide/reference/task-list-environment-options-dialog-box.md)
+- [工作註解 (Visual Studio for Mac)](/visualstudio/mac/task-comments)

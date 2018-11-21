@@ -6,23 +6,22 @@ ms.author: crdun
 ms.date: 05/06/2018
 ms.technology: vs-ide-debug
 ms.assetid: BB7A084D-9AC2-48B5-8076-6C8518796BBA
-ms.openlocfilehash: 66f7b33c944ced6ab662cf8e89341be6d7a2fb8b
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: e17a423e9db6826c8cc693e1c75c75bb067a19e8
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "43224324"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295289"
 ---
 # <a name="debugging-with-xamarin"></a>以 Xamarin 偵錯
 
-
 Visual Studio for Mac 具有原生偵錯工具，能夠支援 Xamarin.iOS、 Xamarin.Mac 和 Xamarin.Android 應用程式的偵錯。
+
 Visual Studio for Mac 使用 [ *Mono Soft Debugger*](http://www.mono-project.com/docs/advanced/runtime/docs/soft-debugger/)，它實作到 Mono 執行階段之中，讓 Visual Studio for Mac 能跨所有平台進行 Managed 程式碼的偵錯。
 
 ## <a name="the-debugger"></a>偵錯工具
 
 Visual Studio for Mac 使用 Mono Soft Debugger 針對所有 Xamarin 應用程式進行 Managed (C# 或 F#) 程式碼的偵錯。 Mono Soft Debugger 不同於一般偵錯工具，它是內建於 Mono 執行階段的合作型偵錯工具。產生的程式碼和 Mono 執行階段會與 IDE 合作，提供偵錯體驗。 Mono 執行階段會透過網路通訊協定公開偵錯功能，您可以在 [Mono 文件](http://www.mono-project.com/docs/advanced/runtime/docs/soft-debugger-wire-format/)中深入了解。
-
 
 硬式偵錯工具，例如 [LLDB]( http://lldb.llvm.org/index.html) 或 [GDB]( https://www.gnu.org/software/gdb/)，會控制程式，而被偵錯的程式不必知情或合作，但在您需要偵錯原生 iOS 或 Android 程式碼，偵錯 Xamarin 應用程式時仍然十分有用。
 
@@ -38,11 +37,9 @@ Visual Studio for Mac 使用 Mono Soft Debugger 針對所有 Xamarin 應用程�
 
 ![在邊界設定中斷點](media/debugging-image0.png)
 
-
 您可以移至 [中斷點] 面板，檢視程式碼中已設定的所有中斷點：
 
 ![中斷點的清單](media/debugging-image0a.png)
-
 
 ## <a name="start-debugging"></a>開始偵錯
 
@@ -62,17 +59,13 @@ Visual Studio for Mac 使用 Mono Soft Debugger 針對所有 Xamarin 應用程�
 
 您也可以設定規則，指出應該發生中斷點的情況，這就是新增「條件中斷點」。 若要設定條件中斷點，請存取 [中斷點屬性] 視窗，這可以透過兩種方式進行：
 
-
 * 若要新增條件中斷點，請在您想要設定中斷點的程式碼行號左邊，以滑鼠右鍵按一下編輯器邊界，然後選取 [新增中斷點]：
-
 
  ![[中斷點] 操作功能表](media/debugging-image4.png)
 
 * 若要新增現有中斷點的條件，請以滑鼠右鍵按一下中斷點，然後選取 [中斷點屬性]，或在 [中斷點] 板中選取 [編輯中斷點] 按鈕，如下所示：
 
-
  ![在 [中斷點] 板中編輯現有的中斷點](media/debugging-image5.png)
-
 
 然後，您可以輸入想要中斷點發生的條件：
 
@@ -91,12 +84,16 @@ Visual Studio for Mac 使用 Mono Soft Debugger 針對所有 Xamarin 應用程�
 *   **逐步執行** - 這也會執行下一行程式碼。 如果下一行是函式呼叫，逐步執行會停止在函式的第一行，讓您繼續一行一行地進行函式的偵錯。 如果下一行不是函式，它的行為與「不進入函式」相同。
 *   **跳離函式** - 這會回到呼叫目前函式的行。
 
-
 ## <a name="debugging-monos-class-libraries"></a>Mono 類別庫偵錯
+
 Xamarin 產品隨附 Mono 類別庫的原始程式碼，您可以使用它從偵錯工具逐步檢查一切背後運作的情況。
 
 因為這項功能會在偵錯期間消耗較多的記憶體，所以它預設會關閉。
 
 若要啟用這項功能，請瀏覽至 [Visual Studio for Mac] > [喜好設定] > [偵錯工具]，並確定 [只偵錯專案程式碼; 不涉及架構程式碼。] 選項為 [未選取]，如下所示：
 
- ![不進入架構程式碼選項](media/debugging-image8.png)
+![不進入架構程式碼選項](media/debugging-image8.png)
+
+## <a name="see-also"></a>另請參閱
+
+- [在 Visual Studio (Windows) 中偵錯](/visualstudio/debugger/)

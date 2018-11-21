@@ -9,12 +9,12 @@ description: 了解 Visual Studio 訂用帳戶中所含的 Office 365 開發人�
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: d75c64c3d8902432adde846badabe18a820a16b0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ae195f8e132ab7d92c48a1bbc6ce04f684abe616
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49858338"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51758384"
 ---
 # <a name="the-office-365-developer-subscription-benefit-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶的 Office 365 開發人員訂用帳戶權益
 
@@ -28,19 +28,19 @@ ms.locfileid: "49858338"
 
 3. 登入程序完成之後，您應該會看到「訂用帳戶權益」頁面。  如果您有多個訂用帳戶，則按一下右上角之黑色功能區下方的下拉式箭號，即可切換訂用帳戶。  Office 365 開發人員訂用帳戶權益磚是位在工具類別中。  請使用磚資料列右側的箭號進行捲動，直到看見 Office 磚為止。
 
-4. 按一下權益磚底部的 [啟用] 連結。   
+4. 按一下權益磚底部的 [啟用] 連結。
    > [!div class="mx-imgBorder"]
    > ![Office 365 開發人員權益磚](_img/vs-office-dev/vs-office-dev-tile.png)
 
-5. 下一個步驟是建立帳戶。  將會顯示您的名稱和登入電子郵件地址。  
+5. 下一個步驟是建立帳戶。  將會顯示您的名稱和登入電子郵件地址。
 6. 選擇您的國家/地區。
-7. 輸入您的公司名稱。 
-8. 按一下第一個核取方塊以接受條款和條件。 
+7. 輸入您的公司名稱。
+8. 按一下第一個核取方塊以接受條款和條件。
 9. 按 [ **下一步**]。
    > [!div class="mx-imgBorder"]
    > ![Office 365 開發人員註冊](_img/vs-office-dev/vs-office-dev-signup.png)
 
-10. 指出您的喜好設定和感興趣區域，然後按一下 [啟用訂用帳戶]。   
+10. 指出您的喜好設定和感興趣區域，然後按一下 [啟用訂用帳戶]。
     > [!div class="mx-imgBorder"]
     > ![Office 365 開發人員喜好設定](_img/vs-office-dev/vs-office-dev-preferences.png)
 
@@ -48,7 +48,7 @@ ms.locfileid: "49858338"
     > [!div class="mx-imgBorder"]
     > ![Office 365 開發人員使用者名稱和網域](_img/vs-office-dev/vs-office-dev-domain.png)
 
-12. 輸入您的電話號碼，然後按一下 [傳送驗證碼]。  這可協助我們確定帳戶是由真人所建立。 
+12. 輸入您的電話號碼，然後按一下 [傳送驗證碼]。  這可協助我們確定帳戶是由真人所建立。
     > [!div class="mx-imgBorder"]
     > ![Office 365 開發人員電話驗證](_img/vs-office-dev/vs-office-dev-send-code.png)
 
@@ -56,22 +56,22 @@ ms.locfileid: "49858338"
     > [!div class="mx-imgBorder"]
     > ![Office 365 開發人員驗證碼驗證](_img/vs-office-dev/vs-office-dev-setup.png)
 
-就這麼容易！  您會看到一個頁面，顯示符合您喜好設定的資訊。  
+就這麼容易！  您會看到一個頁面，顯示符合您喜好設定的資訊。
 
 ## <a name="next-steps"></a>後續步驟
+
 若要存取您的開發人員訂用帳戶，請前往 [office.com](https://www.office.com) 並以您剛才建立的使用者識別碼和密碼登入。
 
-若要深入了解 Office 365 開發人員訂用帳戶，請參閱 [Office 365 開發人員計畫常見問題集](https://docs.microsoft.com/office/developer-program/office-365-developer-program-faq) \(英文\)。 
-
+若要深入了解 Office 365 開發人員訂用帳戶，請參閱 [Office 365 開發人員計畫常見問題集](/office/developer-program/office-365-developer-program-faq) \(英文\)。
 
 ## <a name="eligibility"></a>資格
 
 | 訂用帳戶層級                                                 |     通道                                            | 優勢                                                          | 可續約？    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (標準、年度雲端)   | VL、Azure、零售、選取的 NFR<sup>1</sup> | 包含      |  是          |
-| Visual Studio Professional (標準、年度雲端) | VL、Azure、零售                                       | 無法使用                                                            |NA         |
-| Visual Studio Test Professional (標準訂用帳戶)                         | VL、零售                                              | 無法使用                                             |  NA         |
-| MSDN 平台 (標準)                                          | VL、零售                                              | 無法使用                                              | NA         |
+| Visual Studio Enterprise (標準、年度雲端)   | VL, Azure, 零售, 選取的 NFR<sup>1</sup> | 包含      |  [是]          |
+| Visual Studio Professional (標準、年度雲端) | VL, Azure, 零售                                       | 無法使用                                                            |NA         |
+| Visual Studio Test Professional (標準訂用帳戶)                         | VL, 零售                                              | 無法使用                                             |  NA         |
+| MSDN 平台 (標準)                                          | VL, 零售                                              | 無法使用                                              | NA         |
 | Visual Studio Dev Essentials | NA  | 無法使用 |NA |
 | Visual Studio Enterprise、Visual Studio Professional (每月雲端) | Azure                                       | 無法使用                                                           |NA|
 
@@ -79,9 +79,8 @@ ms.locfileid: "49858338"
 
 不確定您使用哪一個訂用帳戶？  連線到 [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) 以查看指派給您的電子郵件地址的所有訂用帳戶。 若沒有看到您的所有訂用帳戶，可能有一或多個訂用帳戶是指派到不同的電子郵件地址。  您必須以該電子郵件地址登入才能查看對應的訂用帳戶。
 
-
-
 ## <a name="support-resources"></a>支援資源
+
 -  需要 Office 開發人員訂用帳戶的說明嗎？ 查看 [Office 開發人員中心](https://developer.microsoft.com/office)上的[支援](https://developer.microsoft.com/office/support)資源。
 -  如需 Visual Studio 訂用帳戶有關銷售、訂閱、帳戶與計費的協助，請聯繫 Visual Studio [訂用帳戶支援](https://visualstudio.microsoft.com/subscriptions/support/)。
 -  是否有關於 Visual Studio IDE、Azure DevOps Services 或其他 Visual Studio 產品或服務的問題？  前往 [Visual Studio 支援](https://visualstudio.microsoft.com/support/)

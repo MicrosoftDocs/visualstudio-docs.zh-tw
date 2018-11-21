@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 96581fbaff9c2ddc85fbb92d73096f2a369d4c7b
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 77ac77ca999ef627c0f3c9e763b7e5799b97d679
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34746308"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349240"
 ---
 # <a name="manage-project-and-solution-properties"></a>管理專案和解決方案屬性
 
@@ -25,6 +25,9 @@ ms.locfileid: "34746308"
 在專案樹狀結構本身，.NET 專案也可能具有屬性節點。
 
 ![方案總管樹狀目錄中的 [屬性] 節點](../ide/media/vs2015_props_se.png)
+
+> [!NOTE]
+> 本主題適用於 Windows 上的 Visual Studio。 針對 Visual Studio for Mac，請參閱[管理方案和專案屬性 (Visual Studio for Mac)](/visualstudio/mac/managing-solutions-and-project-properties)。
 
 ## <a name="project-properties"></a>專案屬性
 
@@ -56,3 +59,4 @@ C++ 和 JavaScript 專案具有不同的使用者介面來管理專案屬性。 
 ## <a name="see-also"></a>另請參閱
 
 - [Visual Studio 中的方案和專案](../ide/solutions-and-projects-in-visual-studio.md)
+- [管理方案和專案屬性 (Visual Studio for Mac)](/visualstudio/mac/managing-solutions-and-project-properties)

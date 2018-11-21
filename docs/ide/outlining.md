@@ -17,16 +17,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f6c8102eb2bc94785d36256fc0c5653146cc5c76
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: c0b1312ef84e88050423cce74953f452e33dd9bf
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34447202"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349175"
 ---
 # <a name="outlining"></a>大綱
 
 您可以選擇隱藏部分程式碼不進行檢視，方法是摺疊程式碼區域，使其出現在加號 (**+**) 下方。 您可以按一下加號來展開已摺疊的區域 如果您是鍵盤使用者，則可以選擇 **Ctrl**+**M**+**M** 摺疊和展開。 您也可以摺疊大綱區域，方法是按兩下大綱邊界之區域中的任一行，而大綱邊界出現在程式碼左邊。 當您將滑鼠停留在已摺疊的區域上方時，已摺疊區域的內容會成為工具提示。
+
+> [!NOTE]
+> 本主題適用於 Windows 上的 Visual Studio。 針對 Visual Studio for Mac，請參閱[原始檔編輯器 (Visual Studio for Mac )](/visualstudio/mac/source-editor)。
 
 當您將滑鼠停留在邊界上方時，也會反白顯示大綱邊界中的區域。 在某些色彩組態中，預設反白顯示色彩似乎太過模糊。 您可以在 [工具] > [選項] > [環境] > [字型和色彩] > [可摺疊區域] 中進行變更。
 
@@ -55,3 +58,4 @@ ms.locfileid: "34447202"
 ## <a name="see-also"></a>另請參閱
 
 - [程式碼編輯器的功能](../ide/writing-code-in-the-code-and-text-editor.md)
+- [原始檔編輯器 (Visual Studio for Mac)](/visualstudio/mac/source-editor)

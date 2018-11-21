@@ -6,14 +6,14 @@ ms.author: crdun
 ms.date: 05/06/2018
 ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
-ms.openlocfilehash: f6ec6a446b68c848885e2c08804bc49a0cf1941b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5ad3154390494c3d949ceba1cc84ded87d33a3fd
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49934609"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51294990"
 ---
-# <a name="setup-and-install-visual-studio-for-mac"></a>設定與安裝 Visual Studio for Mac
+# <a name="set-up-and-install-visual-studio-for-mac"></a>設定和安裝 Visual Studio for Mac
 
 ## <a name="setup"></a>安裝程式
 
@@ -86,7 +86,6 @@ ms.locfileid: "49934609"
 > [!NOTE]
 > 如果您在原始安裝期間選擇不安裝平台或工具 (在步驟 #6 中取消選取它)，當您稍後想要新增元件時，必須再次執行[安裝程式](https://visualstudio.microsoft.com/vs/)。
 
-
 ## <a name="install-visual-studio-for-mac-behind-a-firewall-or-proxy-server"></a>將 Visual Studio for Mac 安裝在防火牆或 Proxy 伺服器後方
 
 若要將 Visual Studio for Mac 安裝在防火牆後方，某些端點必須設為可供存取，才能允許下載您軟體所需的工具和更新。
@@ -104,7 +103,6 @@ ms.locfileid: "49934609"
 1. [Hello, iOS](https://developer.xamarin.com/guides/ios/getting_started/hello,_iOS/)
 2. [裝置部署](https://developer.xamarin.com/guides/ios/getting_started/installation/device_provisioning) \(英文\) (在裝置上執行您的應用程式)。
 
-
 ### <a name="android"></a>Android
 
 1. [使用 Xamarin Android SDK 管理員](https://developer.xamarin.com/guides/android/getting_started/installation/android-sdk/?ide=xs) \(英文\)
@@ -114,3 +112,7 @@ ms.locfileid: "49934609"
 ### <a name="net-core-apps-aspnet-core-web-apps-unity-game-development"></a>.NET Core 應用程式、ASP.NET Core Web 應用程式、Unity 遊戲開發
 
 對於其他工作負載，請參閱[工作負載](workloads.md)頁面。
+
+## <a name="see-also"></a>另請參閱
+
+- [安裝 Visual Studio 2017 (Windows 上)](/visualstudio/install/install-visual-studio)

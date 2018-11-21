@@ -6,12 +6,12 @@ ms.author: crdun
 ms.date: 05/06/2018
 ms.technology: vs-ide-debug
 ms.assetid: 527E6BEC-EF15-4002-ACB5-62AE1C16F6B7
-ms.openlocfilehash: f2d9e05a9325073e2844b0cdce97f2cfb480b880
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 896fa055c536f9f3ee693773ad4f4ae0edd7e7fe
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "43224352"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349435"
 ---
 # <a name="data-visualizations"></a>資料視覺效果
 
@@ -19,43 +19,40 @@ Visual Studio for Mac 包含支援偵錯工具的 UI，允許在偵錯時將變�
 
 若要顯示偵錯**本機**板中的視覺化工具，只要按一下使用者停留在資料列上時出現在值右邊的預覽圖示即可：
 
- ![本機板](media/data-visualizations-image9.png)
+![本機板](media/data-visualizations-image9.png)
 
 下列清單列出在 Visual Studio for Mac 中進行偵錯時可用的許多新視覺效果。
 
 ## <a name="point"></a>點
 Point/PointF 或 iOS 和 Mac 中的 CGPoint，會在偵錯板中轉譯為顯示 X 和 Y 值的 Tuple：
 
- ![點視覺效果](media/data-visualizations-image10.png)
+![點視覺效果](media/data-visualizations-image10.png)
 
 ## <a name="size"></a>大小
-Size/SizeF 或 iOS 和 Mac 中的 CGSize 會轉譯為矩形。 將進行繪製以擴展直到尺寸的增長超過 250 px 為止，此時它會將矩形擴展為最大尺寸 250 px：
+Size/SizeF 或 iOS 和 Mac 中的 CGSize 會轉譯為矩形。 將進行繪製以擴展直到尺寸的增長超過 250 px 為止，此時會將矩形擴展為最大尺寸 250 px：
 
-![大小視覺效果](media/data-visualizations-image11.png)
-
+[大小視覺效果](media/data-visualizations-image11.png)
 
 ## <a name="rectangle"></a>矩形
-Rectangle/RectangleF 或 iOS 和 Mac 的 CGRect 會顯示尺寸和原點。 與大小類似，將進行繪製以擴展直到尺寸的增長超過 250 px 為止：
+Rectangle/RectangleF 或 iOS 和 Mac 的 CGRect 會顯示尺寸和原點。 與大小類似，將會進行繪製以擴展直到尺寸的增長超過 250 px 為止：
 
- ![矩形視覺效果](media/data-visualizations-image12.png)
+![矩形視覺效果](media/data-visualizations-image12.png)
 
 ## <a name="coordinate"></a>座標
 座標會繪製在地圖上，並將位置釘選到中央：
 
-![座標視覺效果](media/data-visualizations-image13.png)
+[座標視覺效果](media/data-visualizations-image13.png)
 
 ## <a name="color"></a>色彩
 這會顯示 UIColor、CGColor 和 Color 屬性，用來描述彩色預覽、RGBA 元件、色調-飽和-亮度值和色彩的十六進位值：
 
 ![色彩視覺效果](media/data-visualizations-image14.png)
 
-
 ## <a name="images"></a>影像
 
 媒體呈現時最多擴展為最大尺寸 250 px，並且將在影像超過 250 px 時進行縮放以符合大小：
 
- ![影像視覺效果](media/data-visualizations-image15.png)
-
+![影像視覺效果](media/data-visualizations-image15.png)
 
 ## <a name="bezier-curves"></a>貝茲曲線
 
@@ -63,10 +60,9 @@ Rectangle/RectangleF 或 iOS 和 Mac 的 CGRect 會顯示尺寸和原點。 與�
 
 ![貝茲曲線視覺效果](media/data-visualizations-image16.png)
 
-
 ## <a name="string"></a>String
 
-少於 100 個字元的字串將完整顯示，而不進行預覽。 較長的字串將會在預覽中完整顯示。 字串可進行編輯，且視覺化檢視會伴隨顯示 [編輯] 按鈕，讓您能夠在預覽或字串值編輯器中編輯字串值，如下所示：
+少於 100 個字元的字串會完整顯示，而不進行預覽。 較長的字串會在預覽中完整顯示。 字串可進行編輯，且視覺化檢視會伴隨顯示 [編輯] 按鈕，讓您能夠在預覽或字串值編輯器中編輯字串值，如下所示：
 
 ![字串視覺效果](media/data-visualizations-image17.png)
 
@@ -78,7 +74,7 @@ Rectangle/RectangleF 或 iOS 和 Mac 的 CGRect 會顯示尺寸和原點。 與�
 
 ### <a name="editor"></a>編輯器：
 
- ![編輯器視覺效果](media/data-visualizations-image21.png)
+![編輯器視覺效果](media/data-visualizations-image21.png)
 
 ## <a name="ienumerable"></a>IEnumerable
 
@@ -90,7 +86,7 @@ IEnumerable 會列舉所有值；透過按一下 [顯示值] 按鈕，即可檢�
 
 也有自己的內嵌視覺化檢視的其他某些類型如下：
 
- ![其他視覺效果](media/data-visualizations-image23.png)
+![其他視覺效果](media/data-visualizations-image23.png)
 
 *   **Primitives**
     *   這會顯示基本類型的原始值。
@@ -104,3 +100,8 @@ IEnumerable 會列舉所有值；透過按一下 [顯示值] 按鈕，即可檢�
     *   這會顯示可按式超連結。
 *   **IntPtr**
     *   這會顯示 IntPtr 的十六進位表示法。
+
+## <a name="see-also"></a>另請參閱
+
+- [檢查 [自動] 視窗和 [本機] 視窗中的變數 (Windows 上的 Visual Studio)](/visualstudio/debugger/autos-and-locals-windows)
+- [檢視視覺化檢視中的字串 (Windows 上的 Visual Studio)](/visualstudio/debugger/string-visualizer-dialog-box)

@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c8ee96ef2cd8713b592eabef11942e895bd93534
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 5588d5dbf86039273854ddc372d1bbe096dad70b
+ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39510126"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "51948136"
 ---
 # <a name="edit-devenvexe"></a>/Edit (devenv.exe)
 在現有 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 執行個體中開啟指定的檔案。

@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 9e9471d3ddfe61e200bc3aefc3d20ed2013120ce
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: baa1ebbc63f0e9649e1601bbcb6220ef8bc5f5b5
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382134"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51296056"
 ---
 # <a name="using-emulators-to-isolate-unit-tests-for-sharepoint-2010-applications"></a>使用模擬器來隔離 Sharepoint 2010 應用程式的單元測試
 
@@ -267,7 +267,7 @@ namspace MySPAppTests
 
 若要明確呼叫 Microsoft Fakes 填充碼：
 
-1.  如果您要使用未模擬之 SharePoint 類別的填充碼，請編輯 *Microsoft.SharePoint.fakes* 檔，並將此類別加入填充類別清單。 請參閱 [Microsoft Fakes 中的程式碼產生、編譯和命名慣例](../test/code-generation-compilation-and-naming-conventions-in-microsoft-fakes.md)的[設定虛設常式和填充碼的程式碼產生](http://msdn.microsoft.com/library/hh708916.aspx#bkmk_configuring_code_generation_of_stubs)一節。
+1.  如果您要使用未模擬之 SharePoint 類別的填充碼，請編輯 *Microsoft.SharePoint.fakes* 檔，並將此類別加入填充類別清單。 請參閱 [Microsoft Fakes 中的程式碼產生、編譯和命名慣例](../test/code-generation-compilation-and-naming-conventions-in-microsoft-fakes.md)的 [設定設常式的程式碼產生](code-generation-compilation-and-naming-conventions-in-microsoft-fakes.md#configure-code-generation-of-stubs)一節。
 
      ![方案總管中的 Fakes 資料夾](../test/media/ut_emulators_fakesfilefolder.png)
 
@@ -281,7 +281,7 @@ namspace MySPAppTests
 
 **實作 SharePoint 方法的填充碼委派**
 
-在範例專案中，`GetAppointmentsForToday` 方法會呼叫 [SPList.GetItems(SPQuery)](http://msdn.microsoft.com/library/ms457534.aspx) SharePoint API 方法。
+在範例專案中，`GetAppointmentsForToday` 方法會呼叫 [SPList.GetItems(SPQuery)](xref:Microsoft.SharePoint.SPList.GetItems%2A) SharePoint API 方法。
 
 ```csharp
 // method under test
@@ -485,67 +485,67 @@ namspace MySPAppTests
 
 ##  <a name="BKMK_Emulated_SharePoint_types"></a> 模擬的 SharePoint 類型
 
-[Microsoft.SharePoint.SPField](http://msdn.microsoft.com/library/Microsoft.SharePoint.SPField)
+ <xref:Microsoft.SharePoint.SPField?displayProperty=nameWithType>
 
- [Microsoft.SharePoint.SPFieldIndex](http://msdn.microsoft.com/library/Microsoft.SharePoint.SPFieldIndex)
+ <xref:Microsoft.SharePoint.SPFieldIndex?displayProperty=nameWithType>
 
- [Microsoft.SharePoint.SPFieldIndexCollection](http://msdn.microsoft.com/library/Microsoft.SharePoint.SPFieldIndexCollection)
+ <xref:Microsoft.SharePoint.SPFieldIndexCollection?displayProperty=nameWithType>
 
- [Microsoft.SharePoint.SPFieldLink](http://msdn.microsoft.com/library/Microsoft.SharePoint.SPFieldLink)
+ <xref:Microsoft.SharePoint.SPFieldLink?displayProperty=nameWithType>
 
- [Microsoft.SharePoint.SPFieldLinkCollection](http://msdn.microsoft.com/library/Microsoft.SharePoint.SPFieldLinkCollection)
+ <xref:Microsoft.SharePoint.SPFieldLinkCollection?displayProperty=nameWithType>
 
- [Microsoft.SharePoint.SPFieldUrlValue](http://msdn.microsoft.com/library/Microsoft.SharePoint.SPFieldUrlValue)
+ <xref:Microsoft.SharePoint.SPFieldUrlValue?displayProperty=nameWithType>
 
- [Microsoft.SharePoint.SPFile](http://msdn.microsoft.com/library/Microsoft.SharePoint.SPFile)
+ <xref:Microsoft.SharePoint.SPFile?displayProperty=nameWithType>
 
- [Microsoft.SharePoint.SPFileCollection](http://msdn.microsoft.com/library/Microsoft.SharePoint.SPFileCollection)
+ <xref:Microsoft.SharePoint.SPFileCollection?displayProperty=nameWithType>
 
- [Microsoft.SharePoint.SPFolder](http://msdn.microsoft.com/library/Microsoft.SharePoint.SPFolder)
+ <xref:Microsoft.SharePoint.SPFolder?displayProperty=nameWithType>
 
- [Microsoft.SharePoint.SPFolderCollection](http://msdn.microsoft.com/library/Microsoft.SharePoint.SPFolderCollection)
+ <xref:Microsoft.SharePoint.SPFolderCollection?displayProperty=nameWithType>
 
- [Microsoft.SharePoint.SPItem](http://msdn.microsoft.com/library/Microsoft.SharePoint.SPItem)
+ <xref:Microsoft.SharePoint.SPItem?displayProperty=nameWithType>
 
- [Microsoft.SharePoint.SPItemEventDataCollection](http://msdn.microsoft.com/library/Microsoft.SharePoint.SPItemEventDataCollection)
+ <xref:Microsoft.SharePoint.SPItemEventDataCollection?displayProperty=nameWithType>
 
- [Microsoft.SharePoint.SPItemEventProperties](http://msdn.microsoft.com/library/Microsoft.SharePoint.SPItemEventProperties)
+ <xref:Microsoft.SharePoint.SPItemEventProperties?displayProperty=nameWithType>
 
- [Microsoft.SharePoint.SPList](http://msdn.microsoft.com/library/Microsoft.SharePoint.SPList)
+ <xref:Microsoft.SharePoint.SPList?displayProperty=nameWithType>
 
- [Microsoft.SharePoint.SPListCollection](http://msdn.microsoft.com/library/Microsoft.SharePoint.SPListCollection)
+ <xref:Microsoft.SharePoint.SPListCollection?displayProperty=nameWithType>
 
- [Microsoft.SharePoint.SPListEventProperties](http://msdn.microsoft.com/library/Microsoft.SharePoint.SPListEventProperties)
+ <xref:Microsoft.SharePoint.SPListEventProperties?displayProperty=nameWithType>
 
- [Microsoft.SharePoint.SPListItem](http://msdn.microsoft.com/library/Microsoft.SharePoint.SPListItem)
+ <xref:Microsoft.SharePoint.SPListItem?displayProperty=nameWithType>
 
- [Microsoft.SharePoint.SPListItemCollection](http://msdn.microsoft.com/library/Microsoft.SharePoint.SPListItemCollection)
+ <xref:Microsoft.SharePoint.SPListItemCollection?displayProperty=nameWithType>
 
- [Microsoft.SharePoint.SPQuery](http://msdn.microsoft.com/library/Microsoft.SharePoint.SPQuery)
+ <xref:Microsoft.SharePoint.SPQuery?displayProperty=nameWithType>
 
- [Microsoft.SharePoint.SPRoleAssignment](http://msdn.microsoft.com/library/Microsoft.SharePoint.SPRoleAssignment)
+ <xref:Microsoft.SharePoint.SPRoleAssignment?displayProperty=nameWithType>
 
- [Microsoft.SharePoint.SPRoleAssignmentCollection](http://msdn.microsoft.com/library/Microsoft.SharePoint.SPRoleAssignmentCollection)
+ <xref:Microsoft.SharePoint.SPRoleAssignmentCollection?displayProperty=nameWithType>
 
- [Microsoft.SharePoint.SPSecurableObject](http://msdn.microsoft.com/library/Microsoft.SharePoint.SPSecurableObject)
+ <xref:Microsoft.SharePoint.SPSecurableObject?displayProperty=nameWithType>
 
- [Microsoft.SharePoint.SPSecurity](http://msdn.microsoft.com/library/Microsoft.SharePoint.SPSecurity)
+ <xref:Microsoft.SharePoint.SPSecurity?displayProperty=nameWithType>
 
- [Microsoft.SharePoint.SPSite](http://msdn.microsoft.com/library/Microsoft.SharePoint.SPSite)
+ <xref:Microsoft.SharePoint.SPSite?displayProperty=nameWithType>
 
- [Microsoft.SharePoint.SPUser](http://msdn.microsoft.com/library/Microsoft.SharePoint.SPUser)
+ <xref:Microsoft.SharePoint.SPUser?displayProperty=nameWithType>
 
- [Microsoft.SharePoint.SPUserCollection](http://msdn.microsoft.com/library/Microsoft.SharePoint.SPUserCollection)
+ <xref:Microsoft.SharePoint.SPUserCollection?displayProperty=nameWithType>
 
- [Microsoft.SharePoint.SPView](http://msdn.microsoft.com/library/Microsoft.SharePoint.SPView)
+ <xref:Microsoft.SharePoint.SPView?displayProperty=nameWithType>
 
- [Microsoft.SharePoint.SPViewCollection](http://msdn.microsoft.com/library/Microsoft.SharePoint.SPViewCollection)
+ <xref:Microsoft.SharePoint.SPViewCollection?displayProperty=nameWithType>
 
- [Microsoft.SharePoint.SPViewContext](http://msdn.microsoft.com/library/Microsoft.SharePoint.SPViewContext)
+ <xref:Microsoft.SharePoint.SPViewContext?displayProperty=nameWithType>
 
- [Microsoft.SharePoint.SPWeb](http://msdn.microsoft.com/library/Microsoft.SharePoint.SPWeb)
+ <xref:Microsoft.SharePoint.SPWeb?displayProperty=nameWithType>
 
- [Microsoft.SharePoint.SPWebCollection](http://msdn.microsoft.com/library/Microsoft.SharePoint.SPWebCollection)
+ <xref:Microsoft.SharePoint.SPWebCollection?displayProperty=nameWithType>
 
 ## <a name="see-also"></a>另請參閱
 

@@ -1,20 +1,20 @@
 ---
-title: 註解
+title: 註解化程式碼
 description: 本文描述如何使用 Visual Studio for Mac 原始檔編輯器中的註解
 author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: 0FE5E929-1846-4F48-B5E3-70990FAF9504
-ms.openlocfilehash: 28c02f7f6347da67133a82c1d0aa71d44a4309d2
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 1f792e5ba670854e4a3a9ce703212d18c16e5512
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "43224167"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295653"
 ---
 # <a name="comments"></a>註解
 
-對程式碼進行偵錯或實驗時，暫時或長期註解程式碼區塊可能很有用。 
+對程式碼進行偵錯或實驗時，暫時或長期註解程式碼區塊可能很有用。
 
 若要將整個程式碼區塊標記為註解：
 
@@ -24,20 +24,21 @@ OR
 
 * 在選取的程式碼上使用 `cmd + /` 按鍵繫結關係。
 
-這些方法可用來註解和取消註解程式碼區段。 在 C# 檔案中，可以新增其他行註解層級，這可讓您註解和取消註解程式碼區域，同時仍保留實際註解： 
+這些方法可用來註解和取消註解程式碼區段。 在 C# 檔案中，可以新增其他行註解層級，這可讓您註解和取消註解程式碼區域，同時仍保留實際註解：
 
- ![多層級註解](media/source-editor-image8.png)
+![多層級註解](media/source-editor-image8.png)
 
 對於未來可能會與程式碼進行互動的開發人員，註解也可用來記錄程式碼。 這些通常是以多行註解的形式進行，而多行註解則使用下列方式新增在每個語言中：
 
 **C#**
 
-``` cs
+```csharp
 /*
  This is a multi-line
  comment in C#
 */
 ```
+
 **F#**
 
 ```fsharp
@@ -46,3 +47,7 @@ OR
   comment in F#
 *)
 ```
+
+## <a name="see-also"></a>另請參閱
+
+- [將程式碼標記為註解 (Windows 上的 Visual Studio)](/visualstudio/ide/quickstart-editor#comment-out-code)

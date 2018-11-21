@@ -26,12 +26,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 02e34d891fe972bc5d8722598e4b8b1af6066384
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 666ce7d65269992af486e59c6b5ce11e94da736b
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50671023"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51348111"
 ---
 # <a name="javascript-intellisense"></a>JavaScript IntelliSense
 
@@ -143,3 +143,4 @@ function Foo(param1) {
 ## <a name="see-also"></a>另請參閱
 
 - [使用 IntelliSense](../ide/using-intellisense.md)
+- [JavaScript 支援 (Visual Studio for Mac)](/visualstudio/mac/javascript)

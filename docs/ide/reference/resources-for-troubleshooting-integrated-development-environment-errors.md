@@ -95,16 +95,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3bcb994c0ee79cb36e1c2e2db792346842194c73
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 5dcdcffbcf947efa7da8471a970d07a23fe90ba4
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176537"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349280"
 ---
 # <a name="resources-for-troubleshooting-integrated-development-environment-errors"></a>用於針對整合式開發環境錯誤進行疑難排解的資源
 
 並非所有錯誤訊息都有特定的相關說明主題。 如果錯誤訊息中的資訊無法協助您解決問題，則可以參閱知識庫文章、論壇或產品支援這類其他資源。
+
+> [!NOTE]
+> 本主題適用於 Windows 上的 Visual Studio。 針對 Visual Studio for Mac，請參閱 [針對 Visual Studio for Mac 進行疑難排解](/visualstudio/mac/troubleshooting)。
 
 ## <a name="knowledge-base-articles"></a>知識庫文章
 
@@ -123,3 +126,4 @@ ms.locfileid: "39176537"
 ## <a name="see-also"></a>另請參閱
 
 * [對網路相關錯誤或 Proxy 錯誤進行疑難排解](../../install/install-and-use-visual-studio-behind-a-firewall-or-proxy-server.md#troubleshoot-network-related-errors)
+* [疑難排解 (Visual Studio for Mac)](/visualstudio/mac/troubleshooting)

@@ -33,12 +33,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f6359585f13a4086a332d8a4dbcc3c435aeaa26
-ms.sourcegitcommit: 4708f0ba09b540424efcc344f8438f25432e3d51
+ms.openlocfilehash: 6120d1ece56e24712fd1217090159ec627f88d61
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/11/2018
-ms.locfileid: "44384236"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349097"
 ---
 # <a name="find-and-replace-text"></a>尋找和取代文字
 
@@ -93,6 +93,9 @@ ms.locfileid: "44384236"
 
 ## <a name="multi-caret-selection"></a>多重游標選取
 
+> [!NOTE]
+> 本節適用於 Windows 上的 Visual Studio。 針對 Visual Studio for Mac，請參閱[區塊選取](/visualstudio/mac/block-selection)。
+
 **Visual Studio 2017 15.8 版的新功能**
 
 使用「多重游標選取」，同時對兩處以上進行相同的編輯。 舉例來說，您可以同時在多個位置插入相同的文字或修改現有文字。
@@ -130,3 +133,4 @@ ms.locfileid: "44384236"
 
 - [在 Visual Studio 中使用規則運算式](../ide/using-regular-expressions-in-visual-studio.md)
 - [在 Visual Studio 中重構程式碼](../ide/refactoring-in-visual-studio.md)
+- [區塊選取 (Visual Studio for Mac)](/visualstudio/mac/block-selection)

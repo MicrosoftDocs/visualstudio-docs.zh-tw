@@ -20,18 +20,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3aa3aaa197f392d300e8787d582314846e789f47
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 2d3f6b271eb6b9b663e30953fa597fb7d8cec6ac
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38808788"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51348522"
 ---
 # <a name="how-to-create-and-edit-configurations"></a>如何：建立和編輯組態
 
 您可以為方案建立數個組建組態。 例如，您可以設定偵錯組建讓測試人員可以用來尋找和修正問題，也可以設定不同類型的組建，散發給不同的客戶。
 
-[!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
+> [!NOTE]
+> 本主題適用於 Windows 上的 Visual Studio。 針對 Visual Studio for Mac，請參閱 [在 Visual Studio for Mac 中建立和編輯組態](/visualstudio/mac/create-and-edit-configurations)。
 
 ## <a name="create-build-configurations"></a>建立組建組態
 
@@ -127,3 +128,4 @@ ms.locfileid: "38808788"
 - [了解建置組態](../ide/understanding-build-configurations.md)
 - [在 Visual Studio 中建置和清除專案與方案](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)
 - [管理專案及解決方案屬性](managing-project-and-solution-properties.md)
+- [建立和編輯組態 (Visual Studio for Mac)](/visualstudio/mac/create-and-edit-configurations)

@@ -12,16 +12,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 397ed4ea94aa54c8f8d31fc6ff0d08da16a93479
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: 8be5d3692459c2c65d4243c831ef4de002828bb0
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42627206"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349071"
 ---
 # <a name="features-of-the-code-editor"></a>程式碼編輯器的功能
 
 Visual Studio 編輯器提供許多功能，讓您能夠更輕鬆地撰寫並管理程式碼和文字。 您可以使用大綱，展開及摺疊程式碼的不同區塊。 您可以使用 IntelliSense、[物件瀏覽器] 及呼叫階層，進一步了解程式碼。 您可以使用 [移至]、[移至定義] 和 [尋找所有參考] 這類功能，找到程式碼。 您可以將程式碼片段插入程式碼區塊，並使用像是 [從使用量產生] 的功能來產生程式碼。 如果您從未使用過 Visual Studio 編輯器，請參閱[編輯程式碼](https://visualstudio.microsoft.com/vs/features/ide/)，以取得快速概觀。
+
+> [!NOTE]
+> 本主題適用於 Windows 上的 Visual Studio。 針對 Visual Studio for Mac，請參閱[原始檔編輯器 (Visual Studio for Mac )](/visualstudio/mac/source-editor)。
 
 檢視程式碼有許多不同的方法。 根據預設，**方案總管**會顯示您按檔案組織的程式碼。 您可以按一下視窗底部的 [類別檢視] 索引標籤來檢視依類別組織的程式碼。
 
@@ -87,6 +90,7 @@ Visual Studio 編輯器提供許多功能，讓您能夠更輕鬆地撰寫並管
 
 ## <a name="see-also"></a>另請參閱
 
+- [原始檔編輯器 (Visual Studio for Mac)](/visualstudio/mac/source-editor)
 - [Visual Studio IDE](../ide/visual-studio-ide.md)
 - [Visual Studio 中的 C++ 使用者入門](../ide/getting-started-with-cpp-in-visual-studio.md)
 - [Visual Studio 中的 C# 和 ASP.NET 使用者入門](../ide/tutorial-csharp-aspnet-core.md)

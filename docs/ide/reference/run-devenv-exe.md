@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9e10b12729ed8f547c2658c0f4ce6ece84a12dbe
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 2efa616bab79f4d41ddf53a08c5a3628f47e3524
+ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704625"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "51948409"
 ---
 # <a name="run-devenvexe"></a>/Run (devenv.exe)
 編譯並執行指定的專案或方案。

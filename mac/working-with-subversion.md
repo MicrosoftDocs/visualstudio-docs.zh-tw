@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: 2400ED9C-6236-4C0A-A3AB-9D7CBE1F0CF4
-ms.openlocfilehash: 81c33d426989f9bab3216802aa4e815228e1e82a
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 7dcbd619fe0c1a0ab84a8667f5a781d006f80999
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "43224403"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295190"
 ---
 # <a name="working-with-subversion"></a>使用 Subversion
 
@@ -50,7 +50,10 @@ Subversion 使用「複製-修改-合併」模型，允許使用者同時處理�
 
 若要將檔案認可到遠端存放庫，請按 [認可...]，並輸入認可訊息，然後使用 [認可] 按鈕確認：
 
-
 ![認可檔案](media/version-control-svnCommit.png)
 
 這會將變更傳送至存放庫，而它們會在其中建立您的所有修改的新修訂。
+
+## <a name="see-also"></a>另請參閱
+
+- [設定 Subversion 存放庫](set-up-subversion-repository.md)

@@ -9,16 +9,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3de51b0c984522810b174bdb1784420620ba037f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a895124effa8155ab2edb4652962b605926234d5
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49858469"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349474"
 ---
 # <a name="adding-references-using-nuget-versus-an-extension-sdk"></a>使用 NuGet 和延伸模組 SDK 新增參考的比較
 
-您可以使用 Visual Studio 的 NuGet 延伸模組或軟體開發套件 (SDK)，提供套件以在 Visual Studio 專案內使用。 藉由描述這兩個機制之間的差異與相似之處，本主題可以協助您選擇適合您工作的機制。
+您可以使用 NuGet 或軟體開發套件 (SDK)，提供套件以在 Visual Studio 專案內使用。 藉由描述這兩個機制之間的差異與相似之處，本文可以協助您選擇適合您工作的機制。
 
 - NuGet 是開放原始碼套件管理系統，可簡化程式庫併入專案方案的程序。 如需詳細資訊，請參閱 [NuGet 文件](/nuget)。
 
@@ -27,7 +27,6 @@ ms.locfileid: "49858469"
 ## <a name="which-mechanism-should-i-use"></a>應該使用哪一種機制？
 
 下表可協助您比較 SDK 的參考功能與 NuGet 的參考功能。
-
 
 | 功能 | SDK 支援 | SDK 資訊 | NuGet 支援 | NuGet 資訊 |
 | - | - | - |---------------| - |
@@ -71,3 +70,4 @@ ms.locfileid: "49858469"
 ## <a name="see-also"></a>另請參閱
 
 - [管理專案中的參考](../ide/managing-references-in-a-project.md)
+- [管理專案中的參考 (Visual Studio for Mac)](/visualstudio/mac/managing-references-in-a-project)

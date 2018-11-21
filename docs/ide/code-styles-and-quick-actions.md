@@ -12,12 +12,12 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.Basic.Code_Style.General
 ms.workload:
 - multiple
-ms.openlocfilehash: c008462ded2b84b5978b65fc41344477c36bee76
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: df3fbccff1bd76954b153c4c3159e1d65527e90b
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42626855"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349285"
 ---
 # <a name="code-style-preferences"></a>程式碼樣式喜好設定
 
@@ -26,6 +26,9 @@ ms.locfileid: "42626855"
 清單中的每個項目會在選取時顯示個別的喜好設定預覽：
 
 ![程式碼樣式選項](media/code-style-quick-actions-dialog.png)
+
+> [!NOTE]
+> 本主題適用於 Windows 上的 Visual Studio。 針對 Visual Studio for Mac，請參閱 [Visual Studio for Mac 中的編輯器行為](/visualstudio/mac/editor-behavior)。
 
 ## <a name="preference-and-severity"></a>喜好設定和嚴重性
 
@@ -50,3 +53,4 @@ ms.locfileid: "42626855"
 
 - [快速動作](../ide/quick-actions.md)
 - [EditorConfig 的 .NET 編碼慣例設定](../ide/editorconfig-code-style-settings-reference.md)
+- [編輯器行為 (Visual Studio for Mac)](/visualstudio/mac/editor-behavior)

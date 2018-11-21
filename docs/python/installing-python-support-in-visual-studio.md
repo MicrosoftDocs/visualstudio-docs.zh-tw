@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e4f4e79941be143f4eb6252dac735015f6145881
-ms.sourcegitcommit: 48bc8492973e93612e5afaba3b47d0f98aecf97c
+ms.openlocfilehash: 5e7479a8d121eeb518d5ba39c9eb1444af64a788
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49324986"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349017"
 ---
 # <a name="how-to-install-python-support-in-visual-studio-on-windows"></a>如何在 Windows 上的 Visual Studio 中安裝 Python 支援
 
@@ -59,7 +59,7 @@ ms.locfileid: "49324986"
 
     | 選項 | 描述 |
     | --- | --- |
-    | Python 散發 | 選擇您要使用的 Python 2、Python 3、Anaconda2 和 Anaconda3 散發的任何 32 位元和 64 位元變異組合。 每個都包含散發的解譯器、執行階段和程式庫。 具體而言，Anaconda 是包含各種預先安裝套件的開放型資料科學平台。 (您隨時都可以回到 Visual Studio 安裝程式，以新增或移除散發)。**注意**：如果您已經安裝 Visual Studio 安裝程式以外的發行版本，就不需要在此檢查對應項選項。 Visual Studio 會自動偵測現有的 Python 安裝。 請參閱 [Python 環境](managing-python-environments-in-visual-studio.md)。 此外，如果已提供比安裝程式中所示還要新的 Python 版本，您可以另外安裝該版本，而且 Visual Studio 將會偵測到該版本。 |
+    | Python 散發 | 選擇您要使用的 Python 2、Python 3、Anaconda2 和 Anaconda3 散發的任何 32 位元和 64 位元變異組合。 每個都包含散發的解譯器、執行階段和程式庫。 具體而言，Anaconda 是包含各種預先安裝套件的開放型資料科學平台。 (您隨時都可以回到 Visual Studio 安裝程式，以新增或移除散發)。**注意**：如果您已經安裝 Visual Studio 安裝程式以外的發行版本，就不需要在此檢查對應項選項。 Visual Studio 會自動偵測現有的 Python 安裝。 請參閱 [Python 環境視窗](managing-python-environments-in-visual-studio.md#the-python-environments-window)。 此外，如果已提供比安裝程式中所示還要新的 Python 版本，您可以另外安裝該版本，而且 Visual Studio 將會偵測到該版本。 |
     | **Cookiecutter 範本支援** | 安裝 Cookiecutter 圖形化 UI 來探索範本、輸入範本選項，以及建立專案和檔案。 請參閱[使用 Cookiecutter 延伸模組](using-python-cookiecutter-templates.md)。 |
     | **Python Web 支援** | 安裝進行 Web 開發的工具 (包含 HTML、CSS 和 JavaScript 編輯支援)，以及使用 Bottle、Flask 和 Django 架構之專案的範本。 請參閱 [Python Web 專案範本](python-web-application-project-templates.md)。 |
     | **Python IoT 支援** | 使用 Python 支援 Windows IoT Core 開發。 |

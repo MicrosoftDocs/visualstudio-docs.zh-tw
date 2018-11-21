@@ -27,16 +27,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0bb8395d0e0a3b7d4295577cd86568cf15f0db3d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a3e361b407d013f27f3cf76d1ff0da98aa36c3c8
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49901186"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349045"
 ---
 # <a name="understand-build-configurations"></a>了解組建組態
 
 您可以儲存不同的方案和專案屬性組態，以用於不同類型的組建。 若要建立、選取、修改或刪除組態，您可以使用 [組態管理員]。 若要開啟組態，請在功能表列上，選擇 [建置] > [組態管理員]，或直接在 [快速啟動] 方塊中鍵入**組態**。 您也可以使用 [標準] 工具列上的 [方案組態] 清單，來選取組態或開啟 [組態管理員]。
+
+> [!NOTE]
+> 本主題適用於 Windows 上的 Visual Studio。 針對 Visual Studio for Mac，請參閱 [Visual Studio for Mac 中的組建組態](/visualstudio/mac/configurations)。
 
 > [!NOTE]
 > 如果您在工具列上找不到方案組態設定，而且無法存取 [組態管理員]，則可能會套用 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 開發設定。 如需詳細資訊，請參閱[如何：在套用 Visual Basic 開發者設定的情況下管理組態](../ide/how-to-manage-build-configurations-with-visual-basic-developer-settings-applied.md)。
@@ -51,7 +54,7 @@ ms.locfileid: "49901186"
 
 > [!NOTE]
 > 當您定義新的方案組態並選取 [建立新專案組態] 核取方塊時，[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 會將新的組態自動指派給所有專案。 同樣地，當您定義新的方案平台並選取 [建立新專案組態] 核取方塊時，[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 會將新的平台自動指派給所有專案。 此外，如果您加入以新平台為目標的專案，Visual Studio 會將該平台加入方案平台清單中，並指派給所有專案。
-> 
+>
 > 您仍然可以修改每個專案的設定。
 
 使用中的方案組態也會提供 IDE 的內容。 例如，如果您正在處理某個專案，且組態指定這個專案是針對行動裝置所建置，則 [工具箱] 只會顯示可用於行動裝置專案中的項目。
@@ -92,3 +95,4 @@ ms.locfileid: "49901186"
 - [方案和專案](../ide/solutions-and-projects-in-visual-studio.md)
 - [C/C++ 組建參考](/cpp/build/reference/c-cpp-building-reference)
 - [Devenv 命令列參數](../ide/reference/devenv-command-line-switches.md)
+- [組建組態 (Visual Studio for Mac)](/visualstudio/mac/configurations)
