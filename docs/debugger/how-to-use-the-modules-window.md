@@ -25,14 +25,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4604932084289919a86ba09516b8d2c237f44cd9
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 33a09fe01157e0e3f5493568437c1499f2831bdb
+ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51296264"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52257286"
 ---
-# <a name="view-dlls-and-executables-in-the-modules-window"></a>在 [模組] 視窗中檢視的 Dll 和可執行檔
+# <a name="view-dlls-and-executables-in-the-modules-window-c-c-visual-basic-f"></a>在 [模組] 視窗中檢視的 Dll 和可執行檔 (C#，c + +、 Visual Basic 中， F#)
  
 Visual Studio 偵錯時，**模組** 視窗列出和顯示的 Dll 和可執行檔的相關資訊 (*.exe*檔案) 應用程式使用。 
 

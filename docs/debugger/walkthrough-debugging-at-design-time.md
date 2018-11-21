@@ -17,14 +17,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f1235e6360ccc5f6c0677f7ec9acb1dd85cad226
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 452b4045357db12c4b4cff1a5b6e27035cf85d82
+ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39180174"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52257195"
 ---
-# <a name="debug-at-design-time-in-visual-studio"></a>在 Visual Studio 中的設計階段偵錯
+# <a name="debug-at-design-time-in-visual-studio-c-c-visual-basic-f"></a>在 Visual Studio 中的設計階段偵錯 (C#，c + +、 Visual Basic 中， F#)
 
 在某些情況下，您可能想要偵錯程式碼，在設計應用程式執行時，而不是時間。 您可以使用**Immediate**視窗。 如果您想要偵錯 XAML 互動的程式碼與其他程式碼，例如資料繫結的程式碼，您可以使用**偵錯** > **附加至處理序**若要這麼做。
   
@@ -32,7 +32,7 @@ ms.locfileid: "39180174"
 
 您可以使用 Visual Studio **Immediate**視窗，以在您的應用程式未在執行時執行函式或副程式。 如果函式或副程式含有中斷點，Visual Studio 會中斷執行的適當位置。 然後，您就可以使用偵錯工具視窗來檢查程式狀態。 這項功能稱為設計階段偵錯。  
 
-下列範例是在 Visual Basic 中，但**Immediate**視窗也支援在 C# 和 c + + 應用程式。
+下列範例是在 Visual Basic 中。 利用**即時運算**在執行階段 視窗也支援C#，c + +，和F#應用程式。
   
 1.  將下列程式碼貼到 Visual Basic 主控台應用程式：  
   

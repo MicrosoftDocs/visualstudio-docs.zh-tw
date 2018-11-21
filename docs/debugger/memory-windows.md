@@ -25,14 +25,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 04ba88470a6b83a49d7c233266b144387586137f
-ms.sourcegitcommit: 12d6398c02e818de4fbcb4371bae9e5db6cf9509
+ms.openlocfilehash: cdf8e5fc5ee0ac34b4c295f6cc593e0a93b548ae
+ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50050107"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52257256"
 ---
-# <a name="use-the-memory-windows-in-the-visual-studio-debugger"></a>使用 Visual Studio 偵錯工具中的 [記憶體] 視窗
+# <a name="use-the-memory-windows-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>使用 Visual Studio 偵錯工具中的 [記憶體] 視窗 (C#，c + +、 Visual Basic 中， F#)
 
 偵錯時，**記憶體**視窗會顯示您的應用程式使用的記憶體空間。 
 

@@ -29,14 +29,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2eb7d535b99aa6af8b977711fbc60f7b4d9856dd
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: c289da63a8fbc8469734e905c29edca1149e04c4
+ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349487"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52257377"
 ---
-# <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger"></a>在 Visual Studio Debugger 中指定符號 (.pdb) 和原始程式檔
+# <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>在 Visual Studio debugger 中指定符號 (.pdb) 和原始程式檔 (C#，c + +、 Visual Basic 中， F#)
 
 程式資料庫 (*.pdb*) 檔案，也稱為符號檔將識別項對應，並在對應的識別項專案的原始程式碼中的陳述式中及指示編譯應用程式。 
 

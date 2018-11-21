@@ -16,16 +16,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1d72a9cd4ad29785884417881324e6d348e03d83
-ms.sourcegitcommit: 331dbb12e11fcd7f5d15fab05f3c861e48126e43
+ms.openlocfilehash: b196d993e7091fd9d4b09fe3c228346e7421911e
+ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51826702"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52257208"
 ---
 # <a name="inspect-variables-in-the-autos-and-locals-windows"></a>檢查 [自動變數] 和 [區域變數] 視窗中的變數
 
 **自動變數**並**區域變數**在偵錯時，windows 會顯示變數的值。 在偵錯工作階段期間，才可以使用 windows。 **自動變數**視窗會顯示目前中斷點周圍使用的變數。 **區域變數**視窗會顯示在本機的範圍中，通常是目前函式或方法定義的變數。 如果這是您第一次您嘗試偵錯程式碼時，您可能想要讀取[撰寫出更好C#使用 Visual Studio 程式碼](../debugger/write-better-code-with-visual-studio.md)並[偵錯適用於徹底初學者](../debugger/debugging-absolute-beginners.md)再通過這篇文章。
+
+ **自動變數**視窗可供C#，Visual Basic、 c + + 和 Python 程式碼，但不適用於 JavaScript 或F#。
   
 若要開啟 **自動變數**視窗中的，偵錯時，選取**偵錯** > **Windows** > **自動變數**，或按**Ctrl**+**Alt**+**V** > **A**。  
 
@@ -34,7 +36,7 @@ ms.locfileid: "51826702"
 如果您需要基本偵錯的詳細資訊，請參閱[開始使用偵錯工具](../debugger/getting-started-with-the-debugger.md)。
 
 > [!NOTE]
-> 本主題適用於在 Windows 上的 Visual Studio。 Visual Studio for Mac，請參閱 <<c0> [ 在 Visual Studio for Mac 中的資料視覺效果](/visualstudio/mac/data-visualizations)。
+> 本主題適用於 Windows 上的 Visual Studio。 Visual Studio for Mac，請參閱 <<c0> [ 在 Visual Studio for Mac 中的資料視覺效果](/visualstudio/mac/data-visualizations)。
 
 ## <a name="use-the-autos-and-locals-windows"></a>使用 [自動變數] 和 [區域變數] 視窗
 
@@ -71,9 +73,7 @@ ms.locfileid: "51826702"
 
 ![偵錯位置工具列](../debugger/media/debuglocationtoolbar.png "偵錯位置工具列")
 
-## <a name="bkmk_whatvariables"></a> 在 [自動變數] 視窗中的變數
-
- **自動變數**視窗可供C#，Visual Basic 和 c + + 程式碼，而非適用於 JavaScript 或F#。
+## <a name="bkmk_whatvariables"></a> 在 [自動變數] 視窗中的變數 (C#，c + +、 Visual Basic、 Python)
 
  不同的程式碼的語言會顯示在不同的變數**自動變數**視窗。
 

@@ -25,14 +25,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ceadd2f131a75e01cec67c21dca0d7837b02738a
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 5f236bf43d3667cd4263d205c4588593a973824d
+ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45551843"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52257159"
 ---
-# <a name="view-register-values-and-use-the-registers-window-in-the-visual-studio-debugger"></a>檢視暫存器值，並使用 Visual Studio 偵錯工具中的 [暫存器] 視窗
+# <a name="view-register-values-and-use-the-registers-window-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>檢視暫存器值，並使用 Visual Studio 偵錯工具中的 [暫存器] 視窗 (C#，c + +、 Visual Basic 中， F#)
 暫存器視窗是在已啟用位址層級偵錯時，才可以使用**選項** 對話方塊中，**偵錯**節點，**一般**類別目錄。  
   
  **註冊**視窗會顯示暫存器內容。 如果您保留**註冊**視窗開啟，當您逐步執行程式，您可以看到您的程式碼執行時暫存器值的變更。 最近變更過的值以紅色顯示。 您可以編輯暫存器值。 如需詳細資訊，請參閱 <<c0> [ 如何： 編輯暫存器值](../debugger/how-to-edit-a-register-value.md)。  

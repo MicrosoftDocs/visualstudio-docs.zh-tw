@@ -23,14 +23,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 51510d09a1840035bb96817d30aebdcd6bf3ebd7
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 9733569c3fa53d2c5a5905b5b893d16b4eeaf10b
+ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50671140"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52257039"
 ---
-# <a name="view-disassembly-code-in-the-visual-studio-debugger"></a>在 Visual Studio 偵錯工具中檢視反組譯碼
+# <a name="view-disassembly-code-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>在 Visual Studio 偵錯工具中檢視反組譯碼 (C#，c + +、 Visual Basic 中， F#)
 
 **反組譯碼**視窗會顯示對應到編譯器所建立之指令的組件程式碼。 如果您偵錯 managed 程式碼時，這些組譯碼指令對應至 Just in Time (JIT) 編譯器，而不的 Microsoft intermediate language (MSIL) 建立的 Visual Studio 編譯器所建立的原生程式碼。  
   
@@ -41,7 +41,7 @@ ms.locfileid: "50671140"
 
 除了組譯碼指令**反組譯碼**視窗可以顯示下列選擇性資訊：  
   
-- 每一指令所在的記憶體位址。 原生應用程式，它可以是實際的記憶體位址。 Visual basic 中， C#，或 managed 程式碼，它是從函式開頭的位移。  
+- 每一指令所在的記憶體位址。 原生應用程式，它可以是實際的記憶體位址。 適用於 Visual Basic 或C#，它是從函式開頭的位移。  
   
 - 從組譯程式碼衍生的來源原始程式碼。  
   

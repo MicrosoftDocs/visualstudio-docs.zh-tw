@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d0bde2f36aa644bf9335ce74cf4a1ac3bd433a6c
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: f32b5e68dec6696f6947fe78883c64b4c3caa322
+ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44282062"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52257026"
 ---
 # <a name="debugger-settings-and-preparation"></a>偵錯設定及準備
 本章節說明與偵錯工具相關的屬性設定，以及使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 偵錯工具偵錯程式時所需的準備。 如果您是在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中使用專案範本建立程式，這些設定會正確設定在偵錯組態中。  
@@ -44,9 +44,6 @@ ms.locfileid: "44282062"
   
  [如何：偵錯不屬於 Visual Studio 方案的可執行檔](../debugger/how-to-debug-an-executable-not-part-of-a-visual-studio-solution.md)  
  說明如何對不是建立為 Visual Studio 專案一部分的可執行檔進行偵錯。  
-  
- [如何：以 Code Center Premium 來源進行偵錯](../debugger/how-to-debug-with-code-center-premium-source.md)  
- 描述如何在 Visual Studio 專案中的從 Microsoft Code Center Premium 來源進行偵錯。  
   
  [偵錯 64 位元應用程式](../debugger/debug-64-bit-applications.md)  
  描述如何偵錯 64 位元應用程式。  
