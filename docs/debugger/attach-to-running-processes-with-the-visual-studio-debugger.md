@@ -29,12 +29,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bdd83cb8b2d20d3e3abcacbb69d50e1a68831ca4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: af44fcfe553cd720461de3a4e16986d573785c2f
+ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49843258"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52257338"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>使用 Visual Studio 偵錯工具附加至執行中處理序
 您可以將 Visual Studio 偵錯工具附加至本機或遠端電腦上執行的處理序。 此程序執行之後，請選取**偵錯** > **附加至處理序**或按**Ctrl**+**Alt** +**P**在 Visual Studio 中，並使用**附加至處理序**對話方塊，即可將偵錯工具附加至處理程序。
@@ -153,7 +153,7 @@ ms.locfileid: "49843258"
 
 偵錯工具若要附加至以 C++ 撰寫的程式碼，該程式碼必須發出 `DebuggableAttribute`。 您可以使用 [/ASSEMBLYDEBUG](/cpp/build/reference/assemblydebug-add-debuggableattribute) 連結器選項連結，將其自動加入程式碼。
 
-針對用戶端指令碼偵錯，必須在瀏覽器中啟用指令碼偵錯。 偵錯在 Chrome 上的用戶端指令碼中，選擇**Webkit**做為程式碼類型，並根據您的應用程式類型而定，您可能需要在偵錯模式啟動瀏覽器 (型別`chrome.exe --remote-debugging-port=9222`從命令列)。
+針對用戶端指令碼偵錯，必須在瀏覽器中啟用指令碼偵錯。 偵錯在 Chrome 上的用戶端指令碼中，選擇**Webkit**做為程式碼類型，並根據您的應用程式類型而定，您可能需要關閉所有 Chrome 執行個體，並在偵錯模式啟動瀏覽器 (型別`chrome.exe --remote-debugging-port=9222`從命令列)。
 
 若要快速地選取 執行中處理序要在 Visual Studio 中，附加至輸入**Ctrl**+**Alt**+**P**，然後輸入的第一個字母處理序名稱。
 

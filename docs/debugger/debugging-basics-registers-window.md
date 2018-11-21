@@ -19,14 +19,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 14f43e8708573a2fdd11a1c667a69bc1767ecda3
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 0219418b754c93b8e5e50997ede73e0611ed496a
+ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44278825"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52257052"
 ---
-# <a name="about-the-registers-window-in-visual-studio"></a>關於 Visual Studio 中的暫存器視窗
+# <a name="about-the-registers-window-in-visual-studio-c-c-visual-basic-f"></a>關於 Visual Studio 中的暫存器視窗 (C#，c + +、 Visual Basic 中， F#)
+
 **註冊** 視窗是在已啟用位址層級偵錯時，才可以使用**選項** 對話方塊中，**偵錯**節點。  
   
  暫存器是處理器 (CPU) 中的特殊位置，用來儲存處理器正在使用中的小型資料。 編譯或解譯原始程式碼將會根據需要，產生可將資料從記憶體移到暫存器，以及從暫存器移回記憶體的指示。 和存取記憶體內的資料相比，存取暫存器資料的速度非常快，因此允許處理器將資料留在暫存器內並重複存取的程式碼在執行方面，會比需要處理器經常載入與卸載暫存器的程式碼快很多。 為了讓編譯器可以更容易將資料保存於暫存器內，並執行其他的最佳化處理，您應該避免使用全域變數，盡可能使用區域變數。 用這種方式撰寫的程式碼，通常都會具有良好的參考位置。 使用某些語言時 (例如，C/C++)，程式設計人員可宣告一個暫存器變數 (Register Variable)，要求編譯器盡量將該變數保留在暫存器內。 如需詳細資訊，請參閱 < [Register 關鍵字](https://msdn.microsoft.com/library/5b66905a-2f7f-4918-bb55-5e66d4bc50f9)。  

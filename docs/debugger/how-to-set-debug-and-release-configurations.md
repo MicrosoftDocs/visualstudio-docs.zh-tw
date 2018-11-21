@@ -33,12 +33,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 18689a82fe2ae7c66eb8e8d6ef9bd115e2950cac
-ms.sourcegitcommit: 50b19010b2e2b4736835350710e2edf93b980b56
+ms.openlocfilehash: 9a65a3331c210bdfb4143ff890180fdc7d663229
+ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "49073985"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52257221"
 ---
 # <a name="set-debug-and-release-configurations-in-visual-studio"></a>設定偵錯和發行 Visual Studio 中的組態
 
@@ -64,7 +64,7 @@ Visual Studio 專案針對您的程式具有不同的版本和偵錯組態。 �
 
   ![工具列組建組態](../debugger/media/toolbarbuildconfiguration.png "ToolbarBuildConfiguration")
 
-## <a name="BKMK_symbols_release"></a>產生組建的符號 (.pdb) 檔
+## <a name="BKMK_symbols_release"></a>產生組建的符號 (.pdb) 檔 (C#，c + +、 Visual Basic 中， F#)
 
 您可以選擇產生符號 (.pdb) 檔，以及偵錯應包含的資訊。 對於大部分的專案類型，編譯器會產生符號檔預設為偵錯和發行組建，而其他預設設定會因專案類型] 和 [Visual Studio 版本。
 

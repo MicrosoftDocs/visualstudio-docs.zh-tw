@@ -30,23 +30,23 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 92d138e954ce01af04405b72ce50ab72a76d8cf3
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 264aeeeaac47e30eb08b4320443da15ea48a8601
+ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51348887"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52257234"
 ---
 # <a name="view-the-call-stack-and-use-the-call-stack-window-in-the-debugger"></a>檢視呼叫堆疊，並使用偵錯工具中的 [呼叫堆疊] 視窗
 
-藉由使用**呼叫堆疊** 視窗中，您可以檢視目前在堆疊上函式或程序呼叫。 **呼叫堆疊**視窗會顯示方法和函式會取得呼叫的順序。 呼叫堆疊會檢查並了解應用程式的執行流程的好方法。
+藉由使用**呼叫堆疊** 視窗中，您可以檢視目前在堆疊上函式或程序呼叫。 [呼叫堆疊] 視窗會顯示方法和函式的呼叫順序。 呼叫堆疊是檢查並了解應用程式執行流程的好方法。
   
 當[偵錯符號](#bkmk_symbols)沒有可用的呼叫堆疊的一部分**呼叫堆疊**視窗可能無法顯示正確的呼叫堆疊，並改為顯示該部分的資訊：  
   
 `[Frames below may be incorrect and/or missing, no symbols loaded for name.dll]`
 
 > [!NOTE]
-> **呼叫堆疊**視窗是類似於偵錯觀點來看一些像是 Eclipse Ide 中。 
+> [呼叫堆疊] 視窗類似於某些 IDE (例如 Eclipse) 中的 [偵錯] 檢視方塊。 
 > 
 > [!NOTE]
 >  根據您目前使用的設定或版本，您所看到的對話方塊與功能表命令可能會與此處所描述的不同。 若要變更您的設定，請選取**匯入和匯出設定**上**工具**功能表。  請參閱[個人化 IDE](../ide/personalizing-the-visual-studio-ide.md)。
@@ -103,7 +103,7 @@ ms.locfileid: "51348887"
 
 ![Code Map 上顯示呼叫堆疊](../debugger/media/dbg_basics_show_call_stack_on_code_map.gif "ShowCallStackOnCodeMap")
   
-## <a name="view-the-disassembly-code-for-a-function-on-the-call-stack"></a>檢視呼叫堆疊上的函式的反組譯碼程式碼  
+## <a name="view-the-disassembly-code-for-a-function-on-the-call-stack-c-c-visual-basic-f"></a>檢視呼叫堆疊上的函式的反組譯碼程式碼 (C#，c + +、 Visual Basic 中， F#) 
   
 -   在 **呼叫堆疊**視窗中，以滑鼠右鍵按一下看到並選取要反組譯程式碼的函式**移至反組譯碼**。    
 
@@ -111,7 +111,8 @@ ms.locfileid: "51348887"
   
 -   以滑鼠右鍵按一下**呼叫堆疊** 視窗，然後設定或清除**顯示\<** _您想要的資訊_**>**.  
   
-## <a name="bkmk_symbols"></a> 載入模組的符號
+## <a name="bkmk_symbols"></a> 載入模組的符號 (C#，c + +、 Visual Basic 中， F#)
+
 在 [**呼叫堆疊**] 視窗中，您可以載入目前沒有載入的符號的程式碼的偵錯符號。 這些符號可能是.NET Framework 或系統符號從 Microsoft 公用符號伺服器下載或您正在偵錯的電腦上的符號路徑中的符號。  
   
 請參閱[指定符號 (.pdb) 和原始程式檔](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)。

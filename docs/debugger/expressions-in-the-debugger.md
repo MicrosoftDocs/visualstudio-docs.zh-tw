@@ -21,17 +21,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4df9ae5c8b525ff75985ff7aff071d2b2e86e1cb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 035d66590c6b6087c56887a4eaa2b0538406f87b
+ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49926185"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52257247"
 ---
 # <a name="expressions-in-the-visual-studio-debugger"></a>Visual Studio 偵錯工具中的運算式
 當您在 [ **快速監看式** ] 對話方塊、[ **監看式** ] 視窗或 [ **即時運算** ] 視窗中輸入運算式時，都能使用 Visual Studio 偵錯工具所包含的運算式評估工具。 在 [ **中斷點** ] 視窗和偵錯工具中的其他許多地方，也都可以使用運算式評估工具。
   
- 下列章節會提供有關不同語言之運算式的詳細資料。  
+ 下列各節說明支援的 Visual Studio 語言的運算式評估的限制。
   
 ## <a name="f-expressions-are-not-supported"></a>不支援 F# 運算式  
  無法辨識 F# 運算式。 如果您正在偵錯 F# 程式碼，您要先將運算式轉譯成 C# 語法，才能在偵錯工具視窗或對話方塊方塊中輸入運算式。 當您將運算式從 F# 轉譯為 C# 時，務必記得 C# 使用 `==` 運算子來測試是否相等，而 F# 使用單一 `=`。  
