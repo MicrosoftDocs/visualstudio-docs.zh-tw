@@ -16,12 +16,12 @@ ms.assetid: 33ffd197-1221-41bc-a9f6-f133ebdcb783
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b9a924145ee17612deec234ffc32d4f5b17a2bcb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9f6885d82cee2b4b7d27d6d6f7ba6ad70d7e6ba7
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49833375"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51740288"
 ---
 # <a name="idebugsymbolproviderdirectgetmethodfromaddress"></a>IDebugSymbolProviderDirect::GetMethodFromAddress
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

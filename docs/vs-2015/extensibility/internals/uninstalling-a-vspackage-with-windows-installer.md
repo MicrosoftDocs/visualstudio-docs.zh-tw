@@ -17,12 +17,12 @@ ms.assetid: c4575ac7-82da-4af8-a375-ea756a101fbf
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a00f2b9bd39d25510860d1d8da0484910b8991a1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0082e86389620881c3879fe6dc79936b540d557f
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49283027"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51742733"
 ---
 # <a name="uninstalling-a-vspackage-with-windows-installer"></a>使用 Windows Installer 解除安裝 VSPackage
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

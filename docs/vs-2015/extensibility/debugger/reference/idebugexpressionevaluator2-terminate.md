@@ -16,12 +16,12 @@ ms.assetid: 38265100-4d80-4902-833a-07bb569f9ba8
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8056b1023bfc268bdd5458970d96b7decc5f0023
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 271fc612580cfcff383b74ed198a80024db570d0
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49816036"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51752194"
 ---
 # <a name="idebugexpressionevaluator2terminate"></a>IDebugExpressionEvaluator2::Terminate
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

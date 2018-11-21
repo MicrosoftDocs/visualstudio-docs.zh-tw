@@ -16,12 +16,12 @@ ms.assetid: 57245708-f539-42dc-8963-2754a48f0189
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c3ce0eecd5bb231af12d4007f02e729560970453
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8089314293c92a24396a90f4be4dd4120c03bbcd
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49303013"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51725087"
 ---
 # <a name="command-contracts-in-interop-assemblies"></a>Interop 組件中的命令合約
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

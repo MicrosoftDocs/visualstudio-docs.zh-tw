@@ -22,15 +22,15 @@ helpviewer_keywords:
 - debugging [C++], resolving ambiguity
 ms.assetid: d9f47455-a116-4c84-8bad-2dfbf4d77f74
 caps.latest.revision: 10
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 115c3dc86515f44d5b4be85b95e54ca62022efd1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 13458279d1970bd1b398a0de6e74b34b0b3a99a0
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49303182"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51807578"
 ---
 # <a name="resolve-ambiguity-dialog-box"></a>解決語意模糊對話方塊
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

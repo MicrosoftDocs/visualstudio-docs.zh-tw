@@ -19,15 +19,15 @@ helpviewer_keywords:
 - high-perfomance debugging
 ms.assetid: a2f0eb07-840e-4f95-a1b1-9509217e5b8f
 caps.latest.revision: 27
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c5d57e1ff9a4ab082698b1c5d31b09a668cdc1c5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 75f2a96df18137f04b8b7637940c70378842e23d
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49262544"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51747726"
 ---
 # <a name="how-to-debug-on-a-high-performance-cluster"></a>如何：偵錯高效能叢集
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

@@ -13,15 +13,15 @@ helpviewer_keywords:
 - Spy++ Help contents
 ms.assetid: 82155004-8d9e-4875-b7db-237a3cffb530
 caps.latest.revision: 9
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a61446ef9f0cff37a2d07fc2e6111321dbef32d3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 38afcac385a846e169f0fbf601fc759fbec62304
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49196939"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51723752"
 ---
 # <a name="spy-help"></a>Spy++ 說明
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

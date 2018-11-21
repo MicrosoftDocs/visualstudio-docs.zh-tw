@@ -17,12 +17,12 @@ ms.assetid: aee48fc6-a15f-4fd5-8420-7f18824de220
 caps.latest.revision: 24
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 58d456e9c6578ba36b8d4425238208a2435a6523
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 98cdcf426f2aeeb794e9e33754108c792f9725e5
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49859235"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51753970"
 ---
 # <a name="creating-a-basic-project-system-part-2"></a>建立基本的專案系統，第 2 部分
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

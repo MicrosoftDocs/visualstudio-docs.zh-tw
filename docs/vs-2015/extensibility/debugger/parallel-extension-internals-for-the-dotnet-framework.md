@@ -15,12 +15,12 @@ ms.assetid: 93e07cfa-91fa-464c-b866-8bf5570411df
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8c6a6c0444da1200e5cd28a0a4c97a74587acefa
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 88155d1c9cf55cb8f0397f0b737a77bd04dd2fa6
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49239956"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51794955"
 ---
 # <a name="parallel-extension-internals-for-the-net-framework"></a>.NET Framework 適用的平行延伸模組內部資訊
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

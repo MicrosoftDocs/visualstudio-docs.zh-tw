@@ -15,12 +15,12 @@ ms.assetid: 78338537-b451-4655-9f04-a21f6fe197a3
 caps.latest.revision: 5
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ba96ccc8d3da5c2c3788644db07e1eab992e03b9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f7b503ed25c97a048cbee4cb6bf308ca95f81ac8
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49247531"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51766638"
 ---
 # <a name="asynctaskmethodbuilderobjectidfordebugger-property"></a>AsyncTaskMethodBuilder.ObjectIdForDebugger 屬性
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

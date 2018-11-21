@@ -17,12 +17,12 @@ ms.assetid: 4127760c-e602-4e86-9232-457e382a52c7
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: dbaa1a02d780acce0b3c818f9f90103cfed0e683
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7c75880fe66e2b8442f1a1027c836557f848d5b7
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49183764"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51737801"
 ---
 # <a name="idebugportsupplier3canpersistports"></a>IDebugPortSupplier3::CanPersistPorts
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,11 +32,11 @@ ms.locfileid: "49183764"
 ## <a name="syntax"></a>語法  
   
 ```cpp  
-HRESULT CanPersistPorts();  
+HRESULT CanPersistPorts();  
 ```  
   
 ```csharp  
-int CanPersistPorts();  
+int CanPersistPorts();  
 ```  
   
 #### <a name="parameters"></a>參數  

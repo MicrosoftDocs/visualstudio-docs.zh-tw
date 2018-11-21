@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaSymbol::get_constType method
 ms.assetid: cb43605e-fa39-4f83-b047-f936a8019d03
 caps.latest.revision: 12
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: aa10a03341ed77218085d43dbba00ef0e73a68da
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3efe2d5bcf78849aa9e06cf5503cdc54cc92394d
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49819858"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51809372"
 ---
 # <a name="idiasymbolgetconsttype"></a>IDiaSymbol::get_constType
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "49819858"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT get_constType (   
+HRESULT get_constType (   
    BOOL* pRetVal  
 );  
 ```  

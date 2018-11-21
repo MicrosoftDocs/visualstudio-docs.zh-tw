@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaEnumLineNumbers::get_Count method
 ms.assetid: dbb55936-b754-4a27-8b82-9537a7adb664
 caps.latest.revision: 10
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 33380f960828f4407696b9b5986bfc7f08946255
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c4043479de64e7f9c6d3a3bff7d86c566c9114fe
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49919191"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51737584"
 ---
 # <a name="idiaenumlinenumbersgetcount"></a>IDiaEnumLineNumbers::get_Count
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "49919191"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT get_Count (   
+HRESULT get_Count (   
    LONG* pRetVal  
 );  
 ```  

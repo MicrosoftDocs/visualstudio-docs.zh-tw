@@ -24,15 +24,15 @@ helpviewer_keywords:
 - commands, debugger
 ms.assetid: 76ac9b77-f536-43b5-a9fc-984854b1c566
 caps.latest.revision: 14
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bc832be84dfaef1b4f7d47cd2c18cb2526c43170
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5edc195397b9652d790620b8281100cc7651a02d
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49187120"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51802300"
 ---
 # <a name="how-to-restore-hidden-debugger-commands"></a>如何：還原隱藏的偵錯工具命令
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

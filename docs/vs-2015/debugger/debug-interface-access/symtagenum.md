@@ -15,15 +15,15 @@ helpviewer_keywords:
 - SymTagEnum enumeration
 ms.assetid: 528a50cf-e13d-46ec-a98c-323d5d047de9
 caps.latest.revision: 15
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1a74e47158345bf271482c58c2aa44957cb7e3a3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 09462ee9d9223c79b4ee0dcf4e8a5efa37b4c796
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49937287"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51783295"
 ---
 # <a name="symtagenum"></a>SymTagEnum
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "49937287"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-enum SymTagEnum {   
+enum SymTagEnum {   
    SymTagNull,  
    SymTagExe,  
    SymTagCompiland,  

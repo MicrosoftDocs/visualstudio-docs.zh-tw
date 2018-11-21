@@ -14,12 +14,12 @@ caps.latest.revision: 28
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 3ecbc851433ba63e8d66d10060a06e5509d209db
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: dea8fc403ac6fbb20d8bbc52fe6449b87d51a6d9
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49230252"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51805584"
 ---
 # <a name="how-to-upgrade-from-a-trial-edition-of-visual-studio"></a>如何：從 Visual Studio 試用版升級
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

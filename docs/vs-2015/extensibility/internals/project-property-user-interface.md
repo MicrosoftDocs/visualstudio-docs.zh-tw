@@ -17,12 +17,12 @@ ms.assetid: b6aec634-8533-476c-9ebd-36536a2288e2
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 898a266e2bb6f46d0b46fe2c97120d606833b546
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e295bff2f8398765f90c3fd537ca4f546208ce4b
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49941772"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51768302"
 ---
 # <a name="project-property-user-interface"></a>專案屬性使用者介面
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

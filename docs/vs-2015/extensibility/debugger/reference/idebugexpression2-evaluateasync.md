@@ -17,12 +17,12 @@ ms.assetid: 848fe6cb-0759-42f2-890b-d2b551c527d6
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f2e4a13ad7621eb05916b2fa75c4fb70df3f94d0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b478e5ee9a58a7a44b8614602d333a6d16375e5b
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49912327"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51792589"
 ---
 # <a name="idebugexpression2evaluateasync"></a>IDebugExpression2::EvaluateAsync
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "49912327"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT EvaluateAsync (   
+HRESULT EvaluateAsync (   
    EVALFLAGS             dwFlags,  
    IDebugEventCallback2* pExprCallback  
 );  

@@ -16,12 +16,12 @@ ms.assetid: fe2970ab-d4c5-4355-a8e4-772ee0a57178
 caps.latest.revision: 5
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2ab6547f0b6f2c186b39587dc04c9c3088a252de
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 46239b3fe4505e633f8b985fb9d0cc2805cc5b8d
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49288079"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51730663"
 ---
 # <a name="asyncvoidmethodbuilder-structure---internal-members"></a>AsyncVoidMethodBuilder 結構 - 內部成員
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

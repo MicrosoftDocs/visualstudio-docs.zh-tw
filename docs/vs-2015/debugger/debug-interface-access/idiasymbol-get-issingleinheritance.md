@@ -13,15 +13,15 @@ dev_langs:
 - C++
 ms.assetid: 46cde656-059b-4c20-9476-3ca68ccc9912
 caps.latest.revision: 6
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 37604017643aad62ca7b57b549a03be3a4dc5c83
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d5978a15445b343c57a5bf81b22491c352145fc4
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49246957"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51771178"
 ---
 # <a name="idiasymbolgetissingleinheritance"></a>IDiaSymbol::get_isSingleInheritance
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

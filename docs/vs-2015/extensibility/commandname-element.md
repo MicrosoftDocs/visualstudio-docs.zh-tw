@@ -16,12 +16,12 @@ ms.assetid: a338b767-aa7e-4536-9908-e19a50ab60ac
 caps.latest.revision: 6
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: babcc7bd3bfd752d6647c9ec8625010bfaedceb8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1f997a68a7f267800632f8ea4ec9eac5db1cf097
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49200742"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51817291"
 ---
 # <a name="commandname-element"></a>CommandName 項目
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

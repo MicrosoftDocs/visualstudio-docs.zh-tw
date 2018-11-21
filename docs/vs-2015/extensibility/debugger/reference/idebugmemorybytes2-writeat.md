@@ -18,12 +18,12 @@ ms.assetid: 61cc3704-47fa-4d9b-aa62-bb4585ac8fb1
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b432f24b5d2e357f8ae5c20cb079ce4a415e083c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c496712c12d25e80677724ca7d80fead0596b146
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49827366"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51802742"
 ---
 # <a name="idebugmemorybytes2writeat"></a>IDebugMemoryBytes2::WriteAt
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "49827366"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT WriteAt(   
+HRESULT WriteAt(   
    IDebugMemoryContext2* pStartContext,  
    DWORD                 dwCount,  
    BYTE*                 rgbMemory  

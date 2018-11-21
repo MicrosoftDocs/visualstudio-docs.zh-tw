@@ -15,12 +15,12 @@ ms.assetid: 2f70863b-425b-4e65-86b4-d6a898e29dc7
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7a421ba2278c177eeb0fdba8571497e50ba71b39
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ca9ae7d9e4f0ffc031d2dc8db3e940c9b844c57e
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49894231"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51778549"
 ---
 # <a name="adding-items-to-the-add-new-item-dialog-boxes"></a>將項目新增至新增項目對話方塊
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

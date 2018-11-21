@@ -18,15 +18,15 @@ dev_langs:
 - C++
 ms.assetid: e4b0216c-7006-4832-883f-08e982ba8d3f
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 82440d378e34c5808e9bcb250172f6c1abfbfdf6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5dfb5d43ef78e16a5280c7faff92a3ea7e791c43
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49239235"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51805595"
 ---
 # <a name="error-mixed-mode-debugging-for-x64-processes-is-supported-only-when-using-microsoft-net-framework-4-or-greater"></a>錯誤：只有使用 Microsoft .NET Framework 4 或更新版本時才支援 x64 處理序的混合模式偵錯
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

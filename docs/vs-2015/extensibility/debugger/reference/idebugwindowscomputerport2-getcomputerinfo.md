@@ -16,12 +16,12 @@ ms.assetid: 654910b2-c239-44c8-92fc-317680a5672f
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ccb434bb771a0fb32455f9ce03555123b156ed4b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: eb7c2085059bf3d85ff431116881d09bec13bb5c
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49875680"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51736102"
 ---
 # <a name="idebugwindowscomputerport2getcomputerinfo"></a>IDebugWindowsComputerPort2::GetComputerInfo
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

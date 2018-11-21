@@ -15,15 +15,15 @@ helpviewer_keywords:
 - Concurrency Visualizer, Cores View Legend
 ms.assetid: e160384c-fcfe-49b3-86b7-229adb736c51
 caps.latest.revision: 17
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3d28cef1493371fc55fc15c38a1e493d0cad0621
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2c00b6ccf56eb9e171fbaf9afdaea1828b5a1325
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49176250"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51783099"
 ---
 # <a name="cores-view-legend"></a>核心檢視圖例
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

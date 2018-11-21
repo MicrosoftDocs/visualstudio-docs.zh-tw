@@ -20,15 +20,15 @@ helpviewer_keywords:
 - No Source Code Available for the Current Location dialog box
 ms.assetid: ed0732bc-4b8c-490f-adb1-af06869a2a6b
 caps.latest.revision: 19
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8f9213abc9dab5824422b0fadf3920ffb188ab14
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: cc8331c710141a2cc2837d97101e9dff2b49785b
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49266080"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51798374"
 ---
 # <a name="no-source-available"></a>沒有可用來源
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

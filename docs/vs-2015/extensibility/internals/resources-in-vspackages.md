@@ -17,12 +17,12 @@ ms.assetid: cc8c17a6-b190-4856-b001-0c1104f104b2
 caps.latest.revision: 24
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d032863677a24f377da8068b4a6e5565c5a2241c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9f6330055eb3e7b410cc71dc7bab9bc55769c4fd
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49830674"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51725321"
 ---
 # <a name="resources-in-vspackages"></a>VSPackage 中的資源
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

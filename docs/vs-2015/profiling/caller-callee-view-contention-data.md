@@ -13,15 +13,15 @@ helpviewer_keywords:
 - Caller/Callee view
 ms.assetid: a18a1b1b-9b39-43c7-b1f3-708fd20376f6
 caps.latest.revision: 14
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 633c56fedf14efc835d119f9d112baa6eb3299ae
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0e226cb5a44923e73d64a9374eb1d170e18d2428
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49271761"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51797607"
 ---
 # <a name="caller--callee-view----contention-data"></a>呼叫端 / 被呼叫端檢視 - 爭用資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

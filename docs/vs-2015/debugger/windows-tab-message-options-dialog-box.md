@@ -13,15 +13,15 @@ helpviewer_keywords:
 - message options, Windows
 ms.assetid: 6e9cc5ca-24cc-49cf-aa22-c89733828f8c
 caps.latest.revision: 7
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 307ebbe46cf74ce03bbf546273c6bfcd760d0956
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 18c4df45b05ded298243797382be3793a205e640
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49189802"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51779550"
 ---
 # <a name="windows-tab-message-options-dialog-box"></a>訊息選項對話方塊、視窗索引標籤
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

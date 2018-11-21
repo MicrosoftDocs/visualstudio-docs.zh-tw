@@ -36,15 +36,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 37e34d01d2488ad5345ff65237cd708c06764661
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: bd522a5f5ff39814df3526843ae7d03578f92e86
+ms.sourcegitcommit: 331dbb12e11fcd7f5d15fab05f3c861e48126e43
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49816679"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51826839"
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>使用 Visual Studio 偵錯工具中的中斷點
-中斷點是在您的開發人員工具箱中最重要的偵錯技術之一。 每當您要暫停偵錯工具執行，您可以設定中斷點。 例如，您可能要查看程式碼變數的狀態，或查看呼叫堆疊，在特定中斷點。  
+中斷點是在您的開發人員工具箱中最重要的偵錯技術之一。 每當您要暫停偵錯工具執行，您可以設定中斷點。 例如，您可能要查看程式碼變數的狀態，或查看呼叫堆疊，在特定中斷點。 如果這是您第一次嘗試偵錯程式碼，您可能需要先閱讀[適用於徹底初學者偵錯](../debugger/debugging-absolute-beginners.md)，再瀏覽本文。
   
 ##  <a name="BKMK_Overview"></a> 在原始程式碼中設定中斷點  
  您可以在任何可執行程式碼行上設定中斷點。 比方說，在下列 C# 程式碼，您可以設定中斷點在變數宣告中，`for`迴圈或任何程式碼內`for`迴圈。 您無法在命名空間或類別宣告或方法簽章上設定中斷點。  
@@ -235,8 +235,8 @@ ms.locfileid: "49816679"
  >- 原生程式碼，偵錯工具不會視為變更，因此不會叫用第一次評估中斷點條件的第一次評估。 
  >- Managed 程式碼，偵錯工具叫用中斷點之後的第一個評估**變更時**已選取。  
   
-### <a name="using-object-ids-in-conditional-expressions-c-and-f-only"></a>在 條件運算式 （C# 和 F # 只有） 使用物件 Id  
- 有些的時候，當您想要觀察特定物件的行為。 比方說，您可能會想了解為什麼物件插入至集合一次以上。 在 C# 和 F # 中，您可以建立的特定執行個體的物件識別碼[參考的型別](/dotnet/csharp/language-reference/keywords/reference-types)，並在中斷點條件中使用它們。 物件 ID 是由 Common Language Runtime (CLR) 偵錯服務所產生並與物件相關聯。  
+### <a name="using-object-ids-in-conditional-expressions-c-and-f-only"></a>使用條件式運算式中的物件識別碼 (C#和F#只)  
+ 有些的時候，當您想要觀察特定物件的行為。 比方說，您可能會想了解為什麼物件插入至集合一次以上。 在C#和F#，您可以建立的特定執行個體的物件識別碼[參照型別](/dotnet/csharp/language-reference/keywords/reference-types)，並在中斷點條件中使用它們。 物件 ID 是由 Common Language Runtime (CLR) 偵錯服務所產生並與物件相關聯。  
 
 **若要建立的物件識別碼：** 
   
@@ -305,5 +305,7 @@ ms.locfileid: "49816679"
 追蹤點會顯示為原始程式碼的左邊界中的紅色方塊並**中斷點**windows。 
   
 ## <a name="see-also"></a>另請參閱  
-[疑難排解 Visual Studio 偵錯工具中的中斷點](../debugger/troubleshooting-breakpoints.md)  
-[偵錯工具巡覽程式碼](../debugger/navigating-through-code-with-the-debugger.md)
+ [什麼偵錯？](../debugger/what-is-debugging.md)  
+ [撰寫更好C#使用 Visual Studio 程式碼](../debugger/write-better-code-with-visual-studio.md)  
+ [率先一睹偵錯](../debugger/debugger-feature-tour.md)  
+ [疑難排解 Visual Studio 偵錯工具中的中斷點](../debugger/troubleshooting-breakpoints.md)  

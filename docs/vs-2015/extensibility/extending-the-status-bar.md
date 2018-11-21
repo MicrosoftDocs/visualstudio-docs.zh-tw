@@ -16,12 +16,12 @@ ms.assetid: f955115c-4c5f-45ec-b41b-365868c5ec0c
 caps.latest.revision: 24
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c8ea7854bb90564f68a7f178ceda7b561b123dce
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ea1ed437a58069039be144bbc5153f7596a6ac95
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49244734"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51733898"
 ---
 # <a name="extending-the-status-bar"></a>延伸狀態列
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

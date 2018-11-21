@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Studio 中建置和清除專案與方案
+title: 建置和清除專案與方案
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-compile
@@ -24,15 +24,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f4b0ef6eab346215631559e8c9cfb16ecac0a4bf
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c96a3b6699428b156a23ad643eb7958cb438b994
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31918526"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349266"
 ---
-# <a name="building-and-cleaning-projects-and-solutions-in-visual-studio"></a>在 Visual Studio 中建置和清除專案與方案
+# <a name="build-and-clean-projects-and-solutions-in-visual-studio"></a>在 Visual Studio 中建置和清除專案與方案
+
 您可以使用本主題中的程序來建置、重建或清除所有或部分專案，或方案中的專案項目。 如需逐步教學課程，請參閱[逐步解說︰建置應用程式](../ide/walkthrough-building-an-application.md)。
+
+> [!NOTE]
+> 本主題適用於 Windows 上的 Visual Studio。 針對 Visual Studio for Mac，請參閱[在 Visual Studio for Mac 中建置和清除專案和方案](/visualstudio/mac/building-and-cleaning-projects-and-solutions)。
 
 > [!NOTE]
 > 您 Visual Studio 版本中的 UI 可能不同於本主題所述，視您目前使用的設定而定。 若要變更您的設定 (例如變更為 [一般] 或 [Visual C++] 設定)，請選擇 [工具] > [匯入和匯出設定]，然後選擇 [重設所有設定]。
@@ -46,7 +50,7 @@ ms.locfileid: "31918526"
     -   選擇 [建置] 或 [建置方案]，只編譯自從最近建置後已變更的那些專案檔案和元件。
 
         > [!NOTE]
-        >  當方案包含多個專案時，[建置] 命令會變成 [建置方案]。
+        > 當方案包含多個專案時，[建置] 命令會變成 [建置方案]。
 
     -   選擇 [重建方案] 以「清除」方案，然後建置所有專案檔和元件。
 
@@ -118,3 +122,4 @@ ms.locfileid: "31918526"
 - [C/C++ 建置參考](/cpp/build/reference/c-cpp-building-reference)
 - [Devenv 命令列參數](../ide/reference/devenv-command-line-switches.md)
 - [方案和專案](../ide/solutions-and-projects-in-visual-studio.md)
+- [建置和清除專案與方案 (Visual Studio for Mac)](/visualstudio/mac/building-and-cleaning-projects-and-solutions)

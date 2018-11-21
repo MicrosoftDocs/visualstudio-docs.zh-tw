@@ -17,12 +17,12 @@ ms.assetid: 069d4f96-363f-404e-9c89-5318c4c9821b
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 997c560547e800e98c0c2da7cf1973f35da20541
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6e2c244dc66888f050ab8d90601bb41c3179b0a2
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49879814"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51758080"
 ---
 # <a name="idebugstackframe2getname"></a>IDebugStackFrame2::GetName
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,13 +32,13 @@ ms.locfileid: "49879814"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT GetName (   
+HRESULT GetName (   
    BSTR* pbstrName  
 );  
 ```  
   
 ```csharp  
-int GetName (   
+int GetName (   
    out string pbstrName  
 );  
 ```  

@@ -15,12 +15,12 @@ ms.assetid: 46d52e2c-ca2a-4bbd-8500-5b0129768aec
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 39ee9ee4e842dc49484170845cd451366aeb3a3c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 312d8a760cc7005afc4308b637b12a292bd20329
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49172844"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51756705"
 ---
 # <a name="web-site-support-attributes"></a>網站支援屬性
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

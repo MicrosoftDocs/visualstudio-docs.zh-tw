@@ -17,12 +17,12 @@ ms.assetid: d652e09c-cdc1-4519-8116-d7c743f5679b
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a8811fcdc4caef62cb3973364b4b8b594d83936d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9a444ec6e3d4321f2bb167bd1edfd5183ff13f02
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49885066"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51740404"
 ---
 # <a name="idebugobjectsetvalue"></a>IDebugObject::SetValue
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "49885066"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT SetValue(   
+HRESULT SetValue(   
    BYTE* pValue,  
    UINT  nSize  
 );  

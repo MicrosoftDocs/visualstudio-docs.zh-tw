@@ -14,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 48cdb36294f027fcd2e47fca8d903caf5856c236
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: aeb4dad2be491cea09decd5338ba11d9e25370d9
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49906061"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349591"
 ---
 # <a name="update-visual-studio-2017-to-the-most-recent-release"></a>將 Visual Studio 2017 更新至最新版本
 
@@ -29,6 +29,9 @@ ms.locfileid: "49906061"
 
 > [!IMPORTANT]
 > 您必須以具有安裝、更新或修改 Visual Studio 之系統管理權限的帳戶登入。 如需詳細資訊，請參閱[使用者權限和 Visual Studio](../ide/user-permissions-and-visual-studio.md)。
+
+> [!NOTE]
+> 本主題適用於 Windows 上的 Visual Studio。 針對 Visual Studio for Mac，請參閱[更新 Visual Studio for Mac](/visualstudio/mac/update)。
 
 ## <a name="update-visual-studio-2017-version-156-or-later"></a>更新 Visual Studio 2017 15.6 版或更新版本
 

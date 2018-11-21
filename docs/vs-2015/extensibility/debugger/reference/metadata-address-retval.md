@@ -17,12 +17,12 @@ ms.assetid: 5b0ec0fb-84b3-4ce7-8e24-becf3d881d7d
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ddb17920d210c1eee328cb0e124bb53bfff8b009
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 72569a36a9fbf25f9429b923e0eeb34ae320b74a
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49947988"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51757876"
 ---
 # <a name="metadataaddressretval"></a>METADATA_ADDRESS_RETVAL
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

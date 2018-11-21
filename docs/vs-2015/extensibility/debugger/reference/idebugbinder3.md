@@ -17,12 +17,12 @@ ms.assetid: 92353a74-dc74-4f93-8762-61d6b220478c
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 406207d070d64bcd5e26670930d94a72cf3f8595
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c3d9f00ba0ecf19d6f1a4fa8bc21e3799511b179
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49200350"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51809162"
 ---
 # <a name="idebugbinder3"></a>IDebugBinder3
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

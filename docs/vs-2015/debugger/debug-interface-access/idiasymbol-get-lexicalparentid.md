@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaSymbol::get_lexicalParentId method
 ms.assetid: 6c0c2874-cc47-4e4f-ad9c-02a18a108d9d
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 845db9b96d08a2ead39c2ab938c48c7fc067cbb8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: fab4710b523bd4d5921386f831b14ef11a7014cd
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49820826"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51798868"
 ---
 # <a name="idiasymbolgetlexicalparentid"></a>IDiaSymbol::get_lexicalParentId
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "49820826"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT get_lexicalParentId (   
+HRESULT get_lexicalParentId (   
    DWORD* pRetVal  
 );  
 ```  

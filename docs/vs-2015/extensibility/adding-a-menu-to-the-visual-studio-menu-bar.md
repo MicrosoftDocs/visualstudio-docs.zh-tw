@@ -16,12 +16,12 @@ ms.assetid: 58fc1a31-2aeb-441c-8e48-c7d5cbcfe501
 caps.latest.revision: 52
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d35b9247af4e1fe9c870650fc33f2071ba0999f6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: aaad040724efc2b090db606c5675dce6f7422f5e
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49275232"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51806213"
 ---
 # <a name="adding-a-menu-to-the-visual-studio-menu-bar"></a>將功能表新增至 Visual Studio 功能表列
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

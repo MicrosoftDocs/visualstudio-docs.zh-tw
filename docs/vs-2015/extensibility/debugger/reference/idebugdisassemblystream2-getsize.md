@@ -17,12 +17,12 @@ ms.assetid: 8f512704-12d0-46d2-959a-4f8dffe117b5
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f5ed22c3901e21d8e4a744dd74f130713d928e6e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2d5dfa1727727f42479e03331c4b2350bf92a93f
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49843284"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51805369"
 ---
 # <a name="idebugdisassemblystream2getsize"></a>IDebugDisassemblyStream2::GetSize
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,13 +32,13 @@ ms.locfileid: "49843284"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT GetSize(   
+HRESULT GetSize(   
    UINT64* pnSize  
 );  
 ```  
   
 ```csharp  
-int GetSize(   
+int GetSize(   
    out ulong pnSize  
 );  
 ```  

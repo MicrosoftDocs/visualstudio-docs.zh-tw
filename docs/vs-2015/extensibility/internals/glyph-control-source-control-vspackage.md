@@ -16,12 +16,12 @@ ms.assetid: b9413b08-b3c3-4fc3-a6e0-3dc0db3652d7
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ad922a083e11007bb20ab83006a04726a38a034e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 820ffdd2578cc40f91d95bb489f13403c5cdecc5
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49267601"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51772348"
 ---
 # <a name="glyph-control-source-control-vspackage"></a>字符控制 (原始檔控制 VSPackage)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

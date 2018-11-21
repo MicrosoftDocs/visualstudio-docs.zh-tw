@@ -16,12 +16,12 @@ ms.assetid: 46ac1f9f-4ecc-4a72-88d3-4c7e1647e1cb
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 725adb2325d5da10ff3ecd3c646464c5a4a6eb4f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e521c239f474d803da5b615de8dcf1cf56d37df3
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49236354"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51755250"
 ---
 # <a name="getting-started-with-source-control-plug-ins"></a>原始檔控制外掛程式的使用者入門
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

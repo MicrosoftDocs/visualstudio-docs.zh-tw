@@ -17,12 +17,12 @@ ms.assetid: 3670439e-2171-405d-9d77-dedb0f1cba93
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b2d7059f6445882f15c9d4a850181e672f061dd2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 83d1e6b5bb9cfdca1fddbec31d46d58940897b9f
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49201054"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51726620"
 ---
 # <a name="idebugcodecontext2"></a>IDebugCodeContext2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "49201054"
 ## <a name="syntax"></a>語法  
   
 ```  
-IDebugCodeContext2 : IDebugMemoryContext2  
+IDebugCodeContext2 : IDebugMemoryContext2  
 ```  
   
 ## <a name="notes-for-implementers"></a>實作者的附註  

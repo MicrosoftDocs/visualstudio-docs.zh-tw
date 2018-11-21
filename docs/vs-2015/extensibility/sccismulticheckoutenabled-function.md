@@ -17,12 +17,12 @@ ms.assetid: 6721639d-e475-4766-81b5-ee40a280fc70
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 642f42de508702bfd1dd344b489ec875de9deedc
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e449ab110b4087f2c7e997b92d66f62f7bd780f8
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49845767"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51769411"
 ---
 # <a name="sccismulticheckoutenabled-function"></a>SccIsMultiCheckoutEnabled 函式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

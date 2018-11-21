@@ -15,12 +15,12 @@ ms.assetid: 78f67d92-77f7-45cb-ad75-6e3346379cc3
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: de4bf6ace6860cbd6155fe67a0de824e5626cfe3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d26350e9b0465b3a175cb135509f85cf69da21f0
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49257214"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51778809"
 ---
 # <a name="command-handling"></a>命令處理
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

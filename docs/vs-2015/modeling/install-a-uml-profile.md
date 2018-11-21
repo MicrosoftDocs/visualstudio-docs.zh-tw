@@ -11,15 +11,15 @@ helpviewer_keywords:
 - UML - extending, profiles
 ms.assetid: 586f9ba5-4d01-4a1d-b001-32e2efaa4f24
 caps.latest.revision: 13
-author: alexhomer1
+author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 7b72c87f79ce5bafbc655fade59d6a8b7570f694
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0b109916689aa395f8f5684ea6c78ae2b5b3465e
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49275206"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51729028"
 ---
 # <a name="install-a-uml-profile"></a>安裝 UML 設定檔
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

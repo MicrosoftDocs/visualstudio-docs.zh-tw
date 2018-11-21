@@ -13,15 +13,15 @@ dev_langs:
 - C++
 ms.assetid: 37aaf48a-65cb-4ec2-823e-1c637a9f939c
 caps.latest.revision: 6
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f315b455caee384ba45a5edd3065eccd18ac2c01
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 854ea9d7fc3964d1084d2de9a2f16fd73b5a506c
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49297618"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51735078"
 ---
 # <a name="idiasymbolgetisreturnvalue"></a>IDiaSymbol::get_isReturnValue
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

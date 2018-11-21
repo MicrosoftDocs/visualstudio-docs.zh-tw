@@ -15,12 +15,12 @@ ms.assetid: ced826ae-09a9-4acf-af00-a2343d396bb8
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8a6f888fd065dd22d0d726cca45f2557e3d267ae
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d7026e5fa8c041bbf8c8734b854da70acb2f9861
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49251871"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51733596"
 ---
 # <a name="taskstatefaulted-field"></a>TASK_STATE_FAULTED 欄位
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

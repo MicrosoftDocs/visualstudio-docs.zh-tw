@@ -17,12 +17,12 @@ ms.assetid: 1cdedb47-caf8-468e-aaf4-163f16afb403
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 920498a445d74e9857f7a41fcc9e63d877757259
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: de56ac6aac6d83d8a6a56220e88df64d7b2bfdd0
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49838162"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51790835"
 ---
 # <a name="idebugprogram2getmemorybytes"></a>IDebugProgram2::GetMemoryBytes
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,13 +32,13 @@ ms.locfileid: "49838162"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT GetMemoryBytes(   
+HRESULT GetMemoryBytes(   
    IDebugMemoryBytes2** ppMemoryBytes  
 );  
 ```  
   
 ```csharp  
-int GetMemoryBytes(   
+int GetMemoryBytes(   
    out IDebugMemoryBytes2 ppMemoryBytes  
 );  
 ```  

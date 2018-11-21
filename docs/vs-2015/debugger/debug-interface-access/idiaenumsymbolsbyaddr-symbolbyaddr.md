@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaEnumSymbolsByAddr::symbolByAddr method
 ms.assetid: 0b6f5a68-8402-4f29-8219-20576fda8166
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ba85118e7852f283f894cda643a88091949284ef
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 618b1b8ac328c8186445ba423dd24d5982fb6741
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49891306"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51787415"
 ---
 # <a name="idiaenumsymbolsbyaddrsymbolbyaddr"></a>IDiaEnumSymbolsByAddr::symbolByAddr
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "49891306"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT symbolByAddr (   
+HRESULT symbolByAddr (   
    DWORD**      isect,  
    DWORD**      offsect,  
    IDiaSymbol** ppsymbol  

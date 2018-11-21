@@ -13,15 +13,15 @@ helpviewer_keywords:
 - Visual Studio ALM, developing the application
 ms.assetid: 535b9e67-ce9e-4a3e-8d28-9365f257036e
 caps.latest.revision: 19
-author: erickson-doug
+author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 88b0ebabfa093a8ef0cdffc8e9c137032dee1ab6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: eb059f758ce443e6e7e1c2a88c2c881a962b2aec
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49253782"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51750650"
 ---
 # <a name="troubleshooting-quality-tools"></a>品質工具疑難排解
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

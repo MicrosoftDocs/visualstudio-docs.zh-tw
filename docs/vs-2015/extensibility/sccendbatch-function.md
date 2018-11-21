@@ -17,12 +17,12 @@ ms.assetid: 100e7833-fe0a-45c0-9fca-3e61fd1165b7
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8ca4e829f4535018c456011654058b6c0ae5dea3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3d2d24a2d6fcc50bcb2af529c824c1906b40470e
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49246687"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51747295"
 ---
 # <a name="sccendbatch-function"></a>SccEndBatch 函式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

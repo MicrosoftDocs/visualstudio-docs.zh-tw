@@ -12,12 +12,12 @@ ms.topic: article
 ms.assetid: 9d3186f3-07d2-441f-b33e-435e95d8a0b8
 caps.latest.revision: 11
 ms.author: v-brickg
-ms.openlocfilehash: acc359d7dec2c008bec49a86357faa7227d53ff6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: fa4d2235660ecd7cc61998aa0e4ba568f0f28593
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49875069"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51805511"
 ---
 # <a name="shared-colors"></a>共用色彩
 在此插入簡介。  

@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d832753b798cc9e476b675f8791c1ab245b3adee
-ms.sourcegitcommit: a34b7d4fdb3872865fcf98ba24a0fced58532adc
+ms.openlocfilehash: ba3da2325750fca655e0de28e13bb13da208963d
+ms.sourcegitcommit: 331dbb12e11fcd7f5d15fab05f3c861e48126e43
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/12/2018
-ms.locfileid: "51561669"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51826774"
 ---
 # <a name="tutorial-learn-to-debug-using-visual-studio"></a>教學課程：了解如何使用 Visual Studio 進行偵錯
 
@@ -297,7 +297,7 @@ ms.locfileid: "51561669"
 
     中斷點是可靠偵錯最基本也最重要的功能。 中斷點會指出 Visual Studio 應暫停程式碼執行的地方，如此一來您可以查看變數的值或記憶體的行為，或查看程式碼分支是否正在執行。 
 
-6. 按下 **F5** 鍵或 [開始偵錯] 按鈕，應用程式會啟動，而偵錯工具會執行到您設定中斷點的程式碼行。
+2. 按下 **F5** 鍵或 [開始偵錯] 按鈕，應用程式會啟動，而偵錯工具會執行到您設定中斷點的程式碼行。
 
     ![設定並叫用中斷點](../debugger/media/get-started-set-breakpoint.gif)
 
@@ -325,14 +325,14 @@ ms.locfileid: "51561669"
 
 ## <a name="navigate-code-using-run-to-click"></a>使用 [執行至點選處] 來巡覽程式碼
 
-5. 在程式碼編輯器中，向下捲動並停留在 `Triangle` 類別的 `Console.WriteLine` 方法 (C++ 為 `std::cout`) 上，直到綠色的 [執行至點選處] 按鈕 ![執行至點選處](../debugger/media/dbg-tour-run-to-click.png "RunToClick") 出現在左側為止。
+1. 在程式碼編輯器中，向下捲動並停留在 `Triangle` 類別的 `Console.WriteLine` 方法 (C++ 為 `std::cout`) 上，直到綠色的 [執行至點選處] 按鈕 ![執行至點選處](../debugger/media/dbg-tour-run-to-click.png "RunToClick") 出現在左側為止。
 
      ![使用 [執行至點選處] 功能](../debugger/media/get-started-run-to-click.png "執行至點選處")
 
    > [!NOTE]
    > [執行至點選處] 按鈕是 [!include[vs_dev15](../misc/includes/vs_dev15_md.md)] 的新功能。 如果您沒有看到綠色箭號按鈕，請在此範例中改用 **F11** 鍵，將偵錯工具推進到正確的位置。
 
-6. 按一下 [執行至點選處] 按鈕 ![執行至點選處](../debugger/media/dbg-tour-run-to-click.png "RunToClick")。
+2. 按一下 [執行至點選處] 按鈕 ![執行至點選處](../debugger/media/dbg-tour-run-to-click.png "RunToClick")。
 
     使用此按鈕類似於設定暫時中斷點。 [執行至點選處] 方便您在應用程式程式碼的可見區域內快速瀏覽 (您可以按一下任何開啟的檔案)。
 
@@ -447,4 +447,4 @@ ms.locfileid: "51561669"
 在本教學課程中，您已了解如何啟動偵錯工具、逐步執行程式碼，以及檢查變數。 建議您進一步查看偵錯工具功能，以及詳細資訊的連結。
 
 > [!div class="nextstepaction"]
-> [偵錯工具祕訣與技巧](../debugger/debugger-tips-and-tricks.md)
+> [偵錯工具簡介](../debugger/debugger-feature-tour.md)

@@ -17,12 +17,12 @@ ms.assetid: b1ffba10-eb9d-48ba-bf48-6d8b71d6f270
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c93a71491a9b9ad2558301dce3dad292d719f48f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e9b611e23f46d19bcd0afa7b3640678929e5f971
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49884039"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51759620"
 ---
 # <a name="referencetype"></a>REFERENCE_TYPE
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "49884039"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-enum enum_REFERENCE_TYPE {   
+enum enum_REFERENCE_TYPE {   
    REF_TYPE_WEAK   = 0x0001,  
    REF_TYPE_STRONG = 0x0002  
 };  
@@ -40,7 +40,7 @@ typedef DWORD REFERENCE_TYPE;
 ```  
   
 ```csharp  
-public enum enum_REFERENCE_TYPE {   
+public enum enum_REFERENCE_TYPE {   
    REF_TYPE_WEAK   = 0x0001,  
    REF_TYPE_STRONG = 0x0002  
 };  

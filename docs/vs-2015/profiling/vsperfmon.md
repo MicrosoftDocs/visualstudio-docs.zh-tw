@@ -19,15 +19,15 @@ helpviewer_keywords:
 - profilng tools,VSPerfCmd
 ms.assetid: 37052afb-7a58-441f-bb17-f1587cc57068
 caps.latest.revision: 35
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1af640bc4b9ecca585a069b0eb1e7ee732dee4ad
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0c9abe6af1a775ad995fccbb6b67e1498224925a
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49192968"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51721302"
 ---
 # <a name="vsperfmon"></a>VSPerfMon
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

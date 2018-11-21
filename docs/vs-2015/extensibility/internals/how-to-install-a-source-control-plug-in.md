@@ -16,12 +16,12 @@ ms.assetid: 9e2e01d9-7beb-42b2-99b2-86995578afda
 caps.latest.revision: 33
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5f8c442aec21042faa4aa992dcdefc4f9d2ad335
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5f151653387c95e77d775bfc9f37cbdfb9f824e7
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49812981"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51741639"
 ---
 # <a name="how-to-install-a-source-control-plug-in"></a>如何： 安裝原始檔控制外掛程式
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

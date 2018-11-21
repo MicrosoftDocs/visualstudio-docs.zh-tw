@@ -16,12 +16,12 @@ ms.assetid: 5bb24967-434a-4ef4-87a0-2f3250c9e22d
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a3cc9f3ffc7869506dc5ac46a715c9bd7b042a81
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9c4af521a8c6044742d69a1d71dcf605145d600d
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49210792"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51731417"
 ---
 # <a name="exposing-project-objects"></a>公開專案物件
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

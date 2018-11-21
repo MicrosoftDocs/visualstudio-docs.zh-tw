@@ -16,12 +16,12 @@ ms.assetid: 73c58fe3-d53c-4f4e-b025-29567c6cbb7c
 caps.latest.revision: 6
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 31a6e0cf18422118c184f290fc8200d9c9263356
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d7c82d55425ccc732ddc5255642d889816810352
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49186669"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51731524"
 ---
 # <a name="icon-element"></a>Icon 項目
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

@@ -15,12 +15,12 @@ ms.assetid: f92c0838-45be-42b8-9c55-713e9bb8df07
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9cbba98f26417d7f980734fc1a948b10d54f2437
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a872cf3ebfebf68c01256a0a8c42ebfcfeb02dd5
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49292873"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51781539"
 ---
 # <a name="how-to-attach-views-to-document-data"></a>如何： 將檢視附加至文件資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

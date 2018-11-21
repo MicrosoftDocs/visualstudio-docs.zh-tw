@@ -17,12 +17,12 @@ ms.assetid: 77022946-bb8b-4114-aa81-614df6e54b13
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 06876664ea0bcc3ead15496905067e0c0aadf6ed
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: db7f32844118751a1409dedf55cfc8ae0b97b9f4
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49833976"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51773947"
 ---
 # <a name="idebugmodule3isusercode"></a>IDebugModule3::IsUserCode
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,8 +32,8 @@ ms.locfileid: "49833976"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT IsUserCode(  
-   BOOL* pfUser  
+HRESULT IsUserCode(  
+   BOOL* pfUser  
 );  
 ```  
   

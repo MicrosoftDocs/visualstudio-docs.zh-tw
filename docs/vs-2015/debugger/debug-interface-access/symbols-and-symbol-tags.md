@@ -15,15 +15,15 @@ helpviewer_keywords:
 - symbols [DIA SDK]
 ms.assetid: 2ee3a262-cda6-48bf-b799-a37edde6c8b8
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7eaf514ce88b20954ace1206ab625ae55ed12cd2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 67fbe790eaded11806f1ca1fbfcaaeee38a36116
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49189783"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51732196"
 ---
 # <a name="symbols-and-symbol-tags"></a>符號和符號標記
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

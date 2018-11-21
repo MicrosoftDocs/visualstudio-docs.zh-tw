@@ -15,12 +15,12 @@ ms.assetid: 7279dc16-db14-482c-86b8-7b3da5a581d2
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ac3e05d37c844006642469e28eadff22553ec31e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2640641a4cb02c34255cbd0b0016c31a0dd14638
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49269213"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51732964"
 ---
 # <a name="exception-handling-visual-studio-sdk"></a>例外狀況處理 (Visual Studio SDK)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

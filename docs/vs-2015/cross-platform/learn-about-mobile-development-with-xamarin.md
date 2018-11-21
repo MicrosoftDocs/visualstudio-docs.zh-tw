@@ -10,12 +10,12 @@ ms.assetid: e970d936-1df4-4c0c-96e3-ef6191295882
 caps.latest.revision: 14
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: e9390182f6fec91d049a1c080e33802aecfed305
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 329c684dcc09a15ec86f80493d9f084e486b7cfe
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49860691"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51733177"
 ---
 # <a name="learn-about-mobile-development-with-xamarin"></a>了解 Xamarin 的行動應用程式開發
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

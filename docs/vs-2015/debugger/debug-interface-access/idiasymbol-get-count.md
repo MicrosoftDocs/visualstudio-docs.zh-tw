@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaSymbol::get_count method
 ms.assetid: f6d6ac2f-6d96-4f88-962b-29c0a66890b0
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7e5120a837322b94f71c00683480e18dd7855105
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 86812f989d6f6927c86e6ff910f028a58cfcf38d
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49824460"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51720508"
 ---
 # <a name="idiasymbolgetcount"></a>IDiaSymbol::get_count
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "49824460"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT get_count (   
+HRESULT get_count (   
    DWORD* pRetVal  
 );  
 ```  

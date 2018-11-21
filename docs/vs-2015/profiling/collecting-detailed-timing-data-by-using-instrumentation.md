@@ -14,15 +14,15 @@ helpviewer_keywords:
 - instrumentation profiling method
 ms.assetid: e9deb370-c459-45ac-84d3-14d646590d05
 caps.latest.revision: 23
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 95bd21e908b24e00619a659445b3cd30d4e915a4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 53a73bca3e8f868d94a548d9e45416dcd68f0553
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49870103"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51747009"
 ---
 # <a name="collecting-detailed-timing-data-by-using-instrumentation"></a>使用檢測收集計時詳細資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

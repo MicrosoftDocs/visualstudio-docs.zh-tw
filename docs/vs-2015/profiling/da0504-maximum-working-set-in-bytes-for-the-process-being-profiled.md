@@ -15,15 +15,15 @@ f1_keywords:
 - vs.performance.rules.DA0504
 ms.assetid: 36e71603-ece7-4000-85fc-9da4eed61bf2
 caps.latest.revision: 12
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0355657c878352879e9cc4d5123c55591d07edb9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a39171c8786f3b2149a50bd3c4a6915575f050ae
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49283604"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51800194"
 ---
 # <a name="da0504-maximum-working-set-in-bytes-for-the-process-being-profiled"></a>DA0504：進行程式碼剖析之處理序的最大工作集 (以位元組為單位)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

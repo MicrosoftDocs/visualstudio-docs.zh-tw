@@ -16,15 +16,15 @@ dev_langs:
 - C++
 ms.assetid: 4e2d1346-91d6-4935-9e70-130e369a4cb7
 caps.latest.revision: 6
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 33703a08212c46d4207ff320fcd947f5161d4f8f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6a1300d023ac7fbcf3007400c6c7dcb1caa8a750
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49174170"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51764300"
 ---
 # <a name="debugger-navigation-sample-code-javascript"></a>偵錯工具導覽範例程式碼 (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

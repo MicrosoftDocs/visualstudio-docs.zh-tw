@@ -9,15 +9,15 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: cc3e4ae7-60fa-4e22-9227-98020b480b73
 caps.latest.revision: 10
-author: alexhomer1
+author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: a09bf3bc22ce74dc316c75b877231bbc3222655c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f352d87975bf2c9705b348b465215a0a9fe72f2a
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49886262"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51790886"
 ---
 # <a name="directed-graph-markup-language-dgml-reference"></a>有向圖形標記語言 (DGML) 參考
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

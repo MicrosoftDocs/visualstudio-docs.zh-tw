@@ -18,12 +18,12 @@ ms.assetid: b935fc82-9d6b-4a8d-9b70-e9a5c5ad4a55
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 09bbded597fe29f01ac83589c0dc551929380030
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 337fa34bce713f743b8962f41a6889335b54b722
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49297787"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51817447"
 ---
 # <a name="rdtreadlock-usage"></a>RDT_ReadLock 使用方式
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

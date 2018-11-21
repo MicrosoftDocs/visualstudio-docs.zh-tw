@@ -25,15 +25,15 @@ helpviewer_keywords:
 - executable files, specifying for debug sessions
 ms.assetid: 76b34d15-a66d-4963-842e-c8b955c81696
 caps.latest.revision: 20
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2807fa9d0085c70e3336a5f9a0d66b28a775f4fd
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6577395d33d9004d8f17d91f273e3a53e7a3897d
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49830596"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51757482"
 ---
 # <a name="how-to-debug-native-dlls"></a>如何：偵錯原生 DLL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

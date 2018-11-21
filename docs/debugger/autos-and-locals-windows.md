@@ -16,20 +16,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 35fa37831ad79a55effe849f8605ae6b5d299d3a
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 1d72a9cd4ad29785884417881324e6d348e03d83
+ms.sourcegitcommit: 331dbb12e11fcd7f5d15fab05f3c861e48126e43
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349646"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51826702"
 ---
 # <a name="inspect-variables-in-the-autos-and-locals-windows"></a>檢查 [自動變數] 和 [區域變數] 視窗中的變數
 
-**自動變數**並**區域變數**在偵錯時，windows 會顯示變數的值。 在偵錯工作階段期間，才可以使用 windows。
-
-**自動變數**視窗會顯示目前中斷點周圍使用的變數。 **區域變數**視窗會顯示在本機的範圍中，通常是目前函式或方法定義的變數。
-
-若要開啟 **自動變數**視窗中的，偵錯時，選取**偵錯** > **Windows** > **自動變數**，或按**Ctrl**+**Alt**+**V** > **A**。
+**自動變數**並**區域變數**在偵錯時，windows 會顯示變數的值。 在偵錯工作階段期間，才可以使用 windows。 **自動變數**視窗會顯示目前中斷點周圍使用的變數。 **區域變數**視窗會顯示在本機的範圍中，通常是目前函式或方法定義的變數。 如果這是您第一次您嘗試偵錯程式碼時，您可能想要讀取[撰寫出更好C#使用 Visual Studio 程式碼](../debugger/write-better-code-with-visual-studio.md)並[偵錯適用於徹底初學者](../debugger/debugging-absolute-beginners.md)再通過這篇文章。
+  
+若要開啟 **自動變數**視窗中的，偵錯時，選取**偵錯** > **Windows** > **自動變數**，或按**Ctrl**+**Alt**+**V** > **A**。  
 
 若要開啟 **區域變數**視窗中的，偵錯時，選取**偵錯** > **Windows** > **區域變數**，或按**Alt**+**4**。
 
@@ -147,13 +145,13 @@ private static int subtractVars(int i, int j)
 
 若要查看的傳回值`sumVars()`和`subtractVars()`方法會呼叫 [自動變數] 視窗中：
 
-1. 在 `int x = sumVars(a, b) + subtractVars(c, d);` 行上設定中斷點。
-
-1. 開始偵錯，以及時的中斷點處暫停執行，選取**不進入函式**或按**F10**。 您應該會看到下列中的傳回值**自動變數**視窗：
-
-  ![自動變數傳回值C# ](../debugger/media/autosreturnvaluecsharp2.png "自動變數傳回值C#")
-
-## <a name="see-also"></a>另請參閱
-
-- [偵錯工具視窗](../debugger/debugger-windows.md)
-- [在 Visual Studio for Mac 中的資料視覺效果](/visualstudio/mac/data-visualizations)
+1. 在 `int x = sumVars(a, b) + subtractVars(c, d);` 行上設定中斷點。  
+   
+1. 開始偵錯，以及時的中斷點處暫停執行，選取**不進入函式**或按**F10**。 您應該會看到下列中的傳回值**自動變數**視窗：  
+   
+  ![自動變數傳回值C# ](../debugger/media/autosreturnvaluecsharp2.png "自動變數傳回值C#")  
+  
+## <a name="see-also"></a>另請參閱  
+ [什麼偵錯？](../debugger/what-is-debugging.md)  
+ [撰寫更好C#使用 Visual Studio 程式碼](../debugger/write-better-code-with-visual-studio.md)  
+ [第一次查看偵錯](../debugger/debugger-feature-tour.md)[偵錯工具視窗](../debugger/debugger-windows.md)

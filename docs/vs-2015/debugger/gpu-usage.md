@@ -11,15 +11,15 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 957fed3c-4ded-4e05-87c6-ccc33de65349
 caps.latest.revision: 7
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 14517a3f941ae7d177c876a48a400113c775fdb2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3068f614275c14d022ed4d74fa6a10ffe396f68b
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49897871"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51817499"
 ---
 # <a name="gpu-usage"></a>GPU 使用量
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

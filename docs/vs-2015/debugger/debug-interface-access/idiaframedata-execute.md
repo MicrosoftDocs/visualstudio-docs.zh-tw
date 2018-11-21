@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaFrameData::execute method
 ms.assetid: 7a6c7d03-1ff1-4059-bd54-5f407eeebc26
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 933b05bbd9e0ff93a9e132578a72fb44db8be945
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4aaab686fb7a6a5ffa75c55f5464a446db7e1cc8
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49859719"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51735099"
 ---
 # <a name="idiaframedataexecute"></a>IDiaFrameData::execute
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "49859719"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT execute (   
+HRESULT execute (   
    IDiaStackWalkFrame* frame  
 );  
 ```  

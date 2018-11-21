@@ -24,15 +24,15 @@ helpviewer_keywords:
 - executable images
 ms.assetid: 720b4479-a8bc-4fec-860e-80c1a0780405
 caps.latest.revision: 12
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 741e4ee8e7b05db9d8b63b296569e268d7144dc7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5076ea7eee1c762ac42d92482e20ef43e5c224a0
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49193605"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51767795"
 ---
 # <a name="overview-debug-interface-access-sdk"></a>概觀 (偵錯介面存取 SDK)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

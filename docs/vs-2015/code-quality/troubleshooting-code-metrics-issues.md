@@ -11,15 +11,15 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: f2fdb995-4888-4246-85dc-7bacadd45968
 caps.latest.revision: 6
-author: erickson-doug
+author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 76cd6d3b05346ee8ed0577dcbea512b609789167
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2cc5c586e1e994ff2e14710b39c04bb424b770d2
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49274582"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51800636"
 ---
 # <a name="troubleshooting-code-metrics-issues"></a>程式碼度量問題疑難排解
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

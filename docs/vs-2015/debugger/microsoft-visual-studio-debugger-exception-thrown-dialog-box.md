@@ -23,15 +23,15 @@ helpviewer_keywords:
 - throwing exceptions, during debugging
 ms.assetid: 1fe98d10-c8f9-4b39-a920-99169bfd542e
 caps.latest.revision: 13
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5c3ce3a3362c657d4302ba919c866d4a32055423
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 851a48bc4573aadfbb89b4e5891a482a29b69e00
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49226159"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51737843"
 ---
 # <a name="microsoft-visual-studio-debugger-exception-thrown-dialog-box"></a>Microsoft Visual Studio 偵錯工具 (擲回例外狀況) 對話方塊
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

@@ -17,12 +17,12 @@ ms.assetid: a6d0ae82-7617-4915-9713-369abe3e2e53
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b6415552da7c4b5c2a8541e0922dbe431d8485c7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d5ee0aaa2511a85135ad1346fa1e3eea0067dd0f
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49865540"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51797711"
 ---
 # <a name="idebugdisassemblystream2getcodecontext"></a>IDebugDisassemblyStream2::GetCodeContext
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,14 +32,14 @@ ms.locfileid: "49865540"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT GetCodeContext(   
+HRESULT GetCodeContext(   
    UINT64               uCodeLocationId,  
    IDebugCodeContext2** ppCodeContext  
 );  
 ```  
   
 ```csharp  
-int GetCodeContext(   
+int GetCodeContext(   
    ulong                  uCodeLocationId,  
    out IDebugCodeContext2 ppCodeContext  
 );  

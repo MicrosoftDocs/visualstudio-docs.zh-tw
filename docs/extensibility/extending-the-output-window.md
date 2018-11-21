@@ -13,17 +13,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ceb739cc8ad2dc65b1aca6c38d6c4f49ec792215
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 33e34a78fc06bc2b7f40129e33b6d2d78ff561c5
+ms.sourcegitcommit: 20d1b9a5bf041bb28453501eb63bc0537a8e4f54
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39635865"
+ms.lasthandoff: 11/14/2018
+ms.locfileid: "51645207"
 ---
 # <a name="extend-the-output-window"></a>擴充 [輸出] 視窗
 **輸出**視窗是一組讀取/寫入文字窗格。 Visual Studio 有這些內建的窗格：**建置**，哪一個專案中進行通訊的組建中，相關訊息並**一般**，在其中[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]會傳達有關 IDE 的訊息。 專案取得參照**建置**窗格自動透過<xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildableProjectCfg>介面方法和 Visual Studio 提供直接存取**一般**窗格中的透過<xref:Microsoft.VisualStudio.Shell.Interop.SVsGeneralOutputWindowPane>服務。 除了內建的窗格中，您可以建立和管理您自己自訂的窗格。  
   
- 您可以控制**輸出**視窗中直接透過<xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindow>和<xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindowPane>介面。 <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindow>介面，提供<xref:Microsoft.VisualStudio.Shell.Interop.SVsOutputWindow>服務，請定義用來建立、 擷取和終結方法**輸出**視窗窗格。 <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindow>介面會定義用於顯示窗格、 隱藏窗格，以及管理其文字的方法。 控制另一種**輸出** 視窗是透過<xref:EnvDTE.OutputWindow>和<xref:EnvDTE.OutputWindowPane>Visual Studio Automation 物件模型中的物件。 這些物件會封裝幾乎所有的功能<xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindow>和<xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindowPane>介面。 颾魤 ㄛ<xref:EnvDTE.OutputWindow>並<xref:EnvDTE.OutputWindowPane>物件加入一些較高層級的功能，讓您更輕鬆地列舉**輸出**視窗窗格以及從窗格擷取文字。  
+ 您可以控制**輸出**視窗中直接透過<xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindow>和<xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindowPane>介面。 <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindow>介面，提供<xref:Microsoft.VisualStudio.Shell.Interop.SVsOutputWindow>服務，請定義用來建立、 擷取和終結方法**輸出**視窗窗格。 <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindowPane>介面會定義用於顯示窗格、 隱藏窗格，以及管理其文字的方法。 控制另一種**輸出** 視窗是透過<xref:EnvDTE.OutputWindow>和<xref:EnvDTE.OutputWindowPane>Visual Studio Automation 物件模型中的物件。 這些物件會封裝幾乎所有的功能<xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindow>和<xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindowPane>介面。 颾魤 ㄛ<xref:EnvDTE.OutputWindow>並<xref:EnvDTE.OutputWindowPane>物件加入一些較高層級的功能，讓您更輕鬆地列舉**輸出**視窗窗格以及從窗格擷取文字。  
   
 ## <a name="create-an-extension-that-uses-the-output-pane"></a>建立會使用 [輸出] 窗格的擴充功能  
  您可以讓擴充功能執行輸出 窗格的不同層面。  
@@ -34,7 +34,7 @@ ms.locfileid: "39635865"
   
     1.  EnvDTE  
   
-    2.  [Envdte80]  
+    2.  EnvDTE80  
   
 3.  在  *TestOutput.cs*，新增下列 using 陳述式：  
   

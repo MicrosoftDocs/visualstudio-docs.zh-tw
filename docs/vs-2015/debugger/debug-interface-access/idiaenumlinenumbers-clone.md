@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaEnumLineNumbers::Clone method
 ms.assetid: fcd2479a-8ff7-4aba-a737-06123c280d54
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 479ebca52b010c88afd8193c5e279b6440d879d3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6d9563d950948c7cc6f360af3d5bd62b2cd66e99
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49830648"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51725098"
 ---
 # <a name="idiaenumlinenumbersclone"></a>IDiaEnumLineNumbers::Clone
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "49830648"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT Clone (   
+HRESULT Clone (   
    IDiaEnumLineNumbers** ppenum  
 );  
 ```  

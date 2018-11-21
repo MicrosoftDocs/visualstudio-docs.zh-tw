@@ -16,15 +16,15 @@ helpviewer_keywords:
 - compilands, compiland symbol
 ms.assetid: c798eb2b-664a-41ec-ae90-5e9d292507ca
 caps.latest.revision: 20
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 34cb6f2c8660a6344ca906f036abd3292a69dda3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8fd4620fcd2a1ff6f8c1b167035bf4032da176eb
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49217161"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51810321"
 ---
 # <a name="compiland"></a>編譯模組
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

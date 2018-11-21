@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaSymbol::get_noReturn method
 ms.assetid: 704c1cc0-5b84-4334-a02a-70f43aff39d5
 caps.latest.revision: 10
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d60e68e68c5016a78756a372e38481fbc5a88650
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 826b8828ccd4300d277cdd19f4585afc93b262ea
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49951427"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51780369"
 ---
 # <a name="idiasymbolgetnoreturn"></a>IDiaSymbol::get_noReturn
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

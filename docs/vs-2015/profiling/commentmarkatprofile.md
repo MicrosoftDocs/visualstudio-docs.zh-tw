@@ -14,15 +14,15 @@ helpviewer_keywords:
 - CommentMarkAtProfileA
 ms.assetid: 04294ca3-bf9c-4c76-86f1-898c2140de27
 caps.latest.revision: 16
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 913f4e6fb3e31ac812518a7d7046be90e70c57e0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b65b7067dee996f7b50cb98345c2777fc6224df3
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49899262"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51805183"
 ---
 # <a name="commentmarkatprofile"></a>CommentMarkAtProfile
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "49899262"
 ## <a name="syntax"></a>語法  
   
 ```  
-PROFILE_COMMAND_STATUS PROFILERAPI CommentMarkAtProfile (  
+PROFILE_COMMAND_STATUS PROFILERAPI CommentMarkAtProfile (  
                                    __int64 dnTimestamp,  
                                    long lMarker,  
                                    LPCTSTR szComment);  

@@ -19,15 +19,15 @@ helpviewer_keywords:
 - debugging [Visual Studio], Code Center Premium
 ms.assetid: 18b4769d-b007-4428-9dae-9e72c283ff0d
 caps.latest.revision: 26
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5ac76a294c8f6b536da93f06afe6e423ca593b84
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 090326e2bc86aee9acc6e9cee92bc518f64ad63d
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49824161"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51800181"
 ---
 # <a name="how-to-debug-with-code-center-premium-source"></a>如何：以 Code Center Premium 來源進行偵錯
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

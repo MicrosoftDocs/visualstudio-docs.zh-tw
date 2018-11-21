@@ -16,12 +16,12 @@ ms.assetid: 617439dc-3f0e-4e5f-b346-3e4e7fcf3c1b
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ab481ff516cb6b10a4330b4255ea3e75a333f3da
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d88ebe84ec3ec5efb1d7c4ac04ebaee50ac65b97
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49175054"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51796489"
 ---
 # <a name="statement-completion-in-a-legacy-language-service"></a>舊版語言服務中的陳述式完成
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

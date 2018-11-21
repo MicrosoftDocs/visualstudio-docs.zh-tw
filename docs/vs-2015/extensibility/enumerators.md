@@ -15,12 +15,12 @@ ms.assetid: a60030c5-e1d1-47e1-84bb-cbfe838ab479
 caps.latest.revision: 20
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4dcc660ba5aacf1b8014e7c4ca15443f2fdf881b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 90ba436dcfbd09c29f68bff056e315f057e1a983
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49258492"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51810274"
 ---
 # <a name="enumerators"></a>列舉值
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

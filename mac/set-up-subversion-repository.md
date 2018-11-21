@@ -5,14 +5,14 @@ author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: 0D58FB37-530E-495B-BED6-FD499477A9B6
-ms.openlocfilehash: 8e8e17f7787486e5f14fd94927278bb957439e81
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 3995db4ef4609f68512dede454855da1f770141f
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "43224054"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295549"
 ---
-# <a name="setting-up-a-subversion-repository"></a>設定 Subversion 存放庫
+# <a name="set-up-a-subversion-repository"></a>設定 Subversion 存放庫
 
 Subversion 是集中式的版本控制系統，這表示會有包含所有檔案和修訂的單一伺服器，而使用者可以從中簽出任何檔案的任何版本。 從遠端 Subversion 存放庫簽出檔案時，使用者會收到存放庫在該時間點的快照集。
 
@@ -32,19 +32,19 @@ xcode-select --install
 
 Subversion 安裝至電腦後，請使用下列步驟在 SVN 中發佈您的專案。
 
-1. 線上建立免費 SVN 存放庫。 在此範例中，已使用 [Assembla](https://app.assembla.com/)。 建立之後，將會提供 URL，以用來連線至存放庫： 
+1. 線上建立免費 SVN 存放庫。 在此範例中，已使用 [Assembla](https://app.assembla.com/)。 建立之後，將會提供 URL，以用來連線至存放庫：
 
     ![複製 SVN URL](media/version-control-subversion1-sml.png)
 
 2. 開啟或建立 Visual Studio for Mac 專案。
 
-3. 以滑鼠右鍵按一下專案，然後選取 [版本控制] > [Publish in Version Control] (在版本控制中發行)： 
+3. 以滑鼠右鍵按一下專案，然後選取 [版本控制] > [Publish in Version Control] (在版本控制中發行)：
 
     ![開始發行專案](media/version-control-subversion2.png)
 
 4. 在 [連線至存放庫] 索引標籤中，從頂端的下拉式清單選取 [Subversion]。
 
-5. 輸入步驟 1 中的 URL。 輸入 URL 後，預設會填入其他欄位： 
+5. 輸入步驟 1 中的 URL。 輸入 URL 後，預設會填入其他欄位：
 
     ![選取存放庫和輸入詳細資料對話方塊](media/version-control-subversion3.png)
 
@@ -56,3 +56,6 @@ Subversion 安裝至電腦後，請使用下列步驟在 SVN 中發佈您的專�
 
 8.  現在應該可以在版本控制功能表中看到所有可用的版本控制命令。
 
+## <a name="see-also"></a>另請參閱
+
+- [使用 Subversion](working-with-subversion.md)

@@ -13,12 +13,12 @@ ms.assetid: e8747d07-6c90-46cc-b425-55b589f7e9e4
 caps.latest.revision: 3
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bb802aa9dd797004b61ab856dda7b7670f204c79
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 208fdec375927c53c185465b4ded05f7ed3fb406
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49908234"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51777470"
 ---
 # <a name="ui-text-and-help-for-visual-studio"></a>UI 文字與說明適用於 Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

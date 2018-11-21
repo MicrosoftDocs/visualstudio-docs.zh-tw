@@ -13,12 +13,12 @@ ms.assetid: 36ea793b-3832-41a1-b906-69e680ad5e1d
 caps.latest.revision: 33
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c10611ee05178f907c36aae268b0d6990a9e6606
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0932759213d064c3df717b7b6735c1201e62ce14
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49905697"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51773466"
 ---
 # <a name="walkthrough-creating-an-sdk-using-c"></a>逐步解說：使用 C++ 建立 SDK
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

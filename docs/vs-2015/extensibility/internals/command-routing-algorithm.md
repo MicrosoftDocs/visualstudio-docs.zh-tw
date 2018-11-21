@@ -16,12 +16,12 @@ ms.assetid: 998b616b-bd08-45cb-845f-808efb8c33bc
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 23975d0ae73edd3bb411334e034672a6b5f0e477
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 44fc431f008c59a7d4ceff2d9b9ec14d85091daf
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49209309"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51728009"
 ---
 # <a name="command-routing-algorithm"></a>路由傳送命令的演算法
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

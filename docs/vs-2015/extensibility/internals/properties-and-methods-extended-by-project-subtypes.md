@@ -16,12 +16,12 @@ ms.assetid: 2b9833bf-8551-4ae1-93db-197ba645c65e
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7c589c6d40e49bf064c805c35e88433556f7b677
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f74f1f4a88fb01e09b30e7987f1bcec1d450571a
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49260195"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51765118"
 ---
 # <a name="properties-and-methods-extended-by-project-subtypes"></a>專案子類型所擴充的屬性和方法
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

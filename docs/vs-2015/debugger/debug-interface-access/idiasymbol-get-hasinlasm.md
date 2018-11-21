@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaSymbol::get_hasInlAsm method
 ms.assetid: 7001c7cc-1459-4929-851b-a08066a803c6
 caps.latest.revision: 10
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3aba3d106dd7787f53b8e1d24a9e9454eebe37fd
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0cd376ccc2ac207206f3aa96fb1bc91aed1eb7dd
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49837161"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51757109"
 ---
 # <a name="idiasymbolgethasinlasm"></a>IDiaSymbol::get_hasInlAsm
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

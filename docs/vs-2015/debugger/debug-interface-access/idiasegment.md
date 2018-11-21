@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaSegment interface
 ms.assetid: 384ae0e1-077e-4d4f-98de-ac43c32c882f
 caps.latest.revision: 16
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5382959755cdee2fa8e4672b09ade3bff38b3c43
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 00288219d3e538a06431f8b22186a9f3acd2554e
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49292808"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51788598"
 ---
 # <a name="idiasegment"></a>IDiaSegment
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "49292808"
 ## <a name="syntax"></a>語法  
   
 ```  
-IDiaSegment : IUnknown  
+IDiaSegment : IUnknown  
 ```  
   
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法  

@@ -14,15 +14,15 @@ helpviewer_keywords:
 - Profiling Tools,.NET memory method
 ms.assetid: 62a6dd5f-db66-4456-9d57-f8913dbfe4d5
 caps.latest.revision: 23
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5e0bda22a63b5286db9336bc0924ce11bc05e2bc
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0b31f4cfce52c60e4b8f65758fc56e16e29bef6b
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49844571"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51761577"
 ---
 # <a name="collecting-net-memory-allocation-and-lifetime-data"></a>收集 .NET 記憶體配置和存留期資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

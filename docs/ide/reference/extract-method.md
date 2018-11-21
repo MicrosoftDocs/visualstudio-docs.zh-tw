@@ -14,12 +14,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 049b3caebc884ea22bd2928e9e4ff10e9921fd1d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6978457fdc976f87a8334b181ab69dfd78ef240c
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49930592"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51294536"
 ---
 # <a name="extract-a-method-refactoring"></a>擷取方法重構
 

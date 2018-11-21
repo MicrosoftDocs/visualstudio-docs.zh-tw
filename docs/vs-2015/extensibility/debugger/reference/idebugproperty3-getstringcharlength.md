@@ -17,12 +17,12 @@ ms.assetid: 89a8676b-6da9-4358-91c2-039bf33f99e4
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a20dc964868386bc345b38fa6ca164cec3a2cada
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 71fb9bb6a390c4b9f44cce3f06f1fb8c9c82460d
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49876291"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51792264"
 ---
 # <a name="idebugproperty3getstringcharlength"></a>IDebugProperty3::GetStringCharLength
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

@@ -16,12 +16,12 @@ caps.latest.revision: 20
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 50075d46edcf6ffc73ccdcdedb0daf42c8ff6e2d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e25c7e47b1d80cbdf30304ed3f4e6568704bb3d7
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49827593"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51792817"
 ---
 # <a name="how-to-install-a-specific-release-of-visual-studio"></a>如何：安裝特定版本的 Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

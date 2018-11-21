@@ -18,12 +18,12 @@ ms.assetid: 1969146d-46bf-422d-8d46-0e9493925003
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5c385e895480ed11b480c1d5d1e4085d71952e4e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e5e3e0df8583e48dd6a3f7604f4fa72b2803779b
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49202941"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51795647"
 ---
 # <a name="references-element-visual-studio-templates"></a>參考項目 (Visual Studio 範本)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

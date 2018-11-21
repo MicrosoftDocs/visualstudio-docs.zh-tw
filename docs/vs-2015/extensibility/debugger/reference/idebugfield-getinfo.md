@@ -17,12 +17,12 @@ ms.assetid: 7d508200-89ce-400f-a8ea-f28e7610cb2b
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 584ab582879ca9e12909db449043560311177f7a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: eb4709321c60f812f1f5211cc9f2c065d3f0a236
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49850668"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51741626"
 ---
 # <a name="idebugfieldgetinfo"></a>IDebugField::GetInfo
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "49850668"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT GetInfo(   
+HRESULT GetInfo(   
    FIELD_INFO_FIELDS dwFields,  
    FIELD_INFO* pFieldInfo  
 );  

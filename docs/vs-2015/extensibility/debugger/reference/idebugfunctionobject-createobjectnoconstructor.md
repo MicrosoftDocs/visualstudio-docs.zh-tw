@@ -17,12 +17,12 @@ ms.assetid: 4e2bd6d5-f4bd-4c10-a998-3db451c9a0c8
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0973497a7985902b5ace6211e62be1e660597e69
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 13e081de229157aefbc0648699e09a921af5a40a
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49930189"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51748949"
 ---
 # <a name="idebugfunctionobjectcreateobjectnoconstructor"></a>IDebugFunctionObject::CreateObjectNoConstructor
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "49930189"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT CreateObjectNoConstructor(   
+HRESULT CreateObjectNoConstructor(   
    IDebugField*   pClassObject,  
    IDebugObject** ppObject  
 );  

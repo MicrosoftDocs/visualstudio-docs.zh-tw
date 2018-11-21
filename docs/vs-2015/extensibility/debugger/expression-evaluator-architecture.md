@@ -17,12 +17,12 @@ ms.assetid: aad7c4c6-1dc1-4d32-b975-f1fdf76bdeda
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c7b461a6ebf7b7fa1b6e35f49b1c25d6422277d0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5ca1c7af9ee8a8a779cf238816125c0bc20199ca
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49196296"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51772699"
 ---
 # <a name="expression-evaluator-architecture"></a>運算式評估工具架構
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

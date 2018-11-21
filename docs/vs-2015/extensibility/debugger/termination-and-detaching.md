@@ -16,12 +16,12 @@ ms.assetid: 268c1e51-6363-45d1-964c-1ab99bdfa4f9
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fb6705c1189649b986776b99cd105f1e9532e160
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b1641a9a44a3f37b07e8192169e7301153881484
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49305327"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51773869"
 ---
 # <a name="termination-and-detaching"></a>終止並中斷連結
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

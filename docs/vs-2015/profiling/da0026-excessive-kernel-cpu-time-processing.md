@@ -15,15 +15,15 @@ f1_keywords:
 - vs.performance.26
 ms.assetid: 4cfc8a29-b29b-4a72-b386-03d8856fdf8a
 caps.latest.revision: 12
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 95aac29eb4610712cc113ea9efee413ca20d2390
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e2dbf52ab216a2272cb3b6094126a34987588704
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49186234"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51749670"
 ---
 # <a name="da0026-excessive-kernel-cpu-time-processing"></a>DA0026：過多核心 CPU 時間處理
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

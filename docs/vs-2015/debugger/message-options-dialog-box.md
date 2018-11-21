@@ -14,15 +14,15 @@ helpviewer_keywords:
 - Spy++, message options
 ms.assetid: 88ad85af-3f56-4df1-98b6-fab34c1e5874
 caps.latest.revision: 7
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7824ce5a0e65b762d992392b0d9b0e267d85e236
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 240886ba79f1439a31c5c42828b5d9e616ea78e2
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49286516"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51801845"
 ---
 # <a name="message-options-dialog-box"></a>訊息選項對話方塊
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

@@ -17,12 +17,12 @@ ms.assetid: bf8fa94c-6d9d-4e4f-ac08-3b44ba5ace68
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4349c411133d04d4cb9d38690293c060c2df87db
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8909e7299b23fa467258320af005f3469c3c5e8b
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49863473"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51779492"
 ---
 # <a name="idebugportex2terminateprocess"></a>IDebugPortEx2::TerminateProcess
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,13 +32,13 @@ ms.locfileid: "49863473"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT TerminateProcess(   
+HRESULT TerminateProcess(   
    IDebugProcess2* pPortProcess  
 );  
 ```  
   
 ```csharp  
-int TerminateProcess(   
+int TerminateProcess(   
    IDebugProcess2 pPortProcess  
 );  
 ```  

@@ -17,12 +17,12 @@ ms.assetid: 4201f10e-c9f7-4b38-bb45-40fe0082d5bf
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e34b0240c7f700aed245081a5be4586c1b9b0d52
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a37e27f6d7d1a9435f9519d3cecf359eb65fe204
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49283214"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51790769"
 ---
 # <a name="symbol-provider-interfaces"></a>Symbol Provider Interfaces
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

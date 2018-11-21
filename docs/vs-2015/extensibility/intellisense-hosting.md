@@ -15,12 +15,12 @@ ms.assetid: 20c61f8a-d32d-47e2-9c67-bf721e2cbead
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a6b02716effa95beb1492c25c56d835e6deb91de
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e7e6ae688c0af3506f3d77cf2c1bac5291595b80
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49216979"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51737871"
 ---
 # <a name="intellisense-hosting"></a>IntelliSense 裝載
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

@@ -13,15 +13,15 @@ helpviewer_keywords:
 - Lines view
 ms.assetid: 46497249-c797-42c5-a02c-3e4bb3b4ee60
 caps.latest.revision: 16
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 73a50b3daf77fdd1a1e0a058bd64ddd068467c2a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c4cd360e120b9747a16234aa28c42912de4254b6
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49932984"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51734668"
 ---
 # <a name="lines-view---sampling-data"></a>程式行檢視 - 取樣資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

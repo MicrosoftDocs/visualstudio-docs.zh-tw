@@ -15,12 +15,12 @@ ms.assetid: acfcabed-9f2f-436c-ad18-7ca2f45d631b
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 783e996ce0a2b1d1761bc765f7748794487364c6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4223f694c55025c0fc3e4d0afe8fca530940520b
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49827606"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51764741"
 ---
 # <a name="breakpoints-visual-studio-sdk"></a>中斷點 (Visual Studio SDK)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

@@ -15,15 +15,15 @@ helpviewer_keywords:
 - performance tools, command-line tools
 ms.assetid: 1c6f1586-3d6a-431f-bedf-c54088e280ba
 caps.latest.revision: 20
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4362db36cb4b4695b667fc680dad58ce4092eced
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1b670ef29ca2edcc96ed8886b82dd5d7c6cb416b
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49177995"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51741458"
 ---
 # <a name="walkthrough-command-line-profiling-using-instrumentation"></a>逐步解說：使用檢測進行命令列剖析
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

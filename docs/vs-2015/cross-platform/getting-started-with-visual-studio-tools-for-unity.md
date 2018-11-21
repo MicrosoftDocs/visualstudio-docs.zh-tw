@@ -11,15 +11,15 @@ ms.tgt_pltfrm: ''
 ms.topic: conceptual
 ms.assetid: 66b5b4eb-13b5-4071-98d2-87fafa4598a8
 caps.latest.revision: 12
-author: TerryGLee
-ms.author: tglee
+author: conceptdev
+ms.author: crdun
 manager: ghogen
-ms.openlocfilehash: c4075da9288e6b9c05e3eec9abee0ae4cbe86bea
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9ed6cb4127ba57c6b9b84a32996968dbf9fac4fe
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49234737"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51762714"
 ---
 # <a name="getting-started-with-visual-studio-tools-for-unity"></a>Visual Studio Tools for Unity 使用者入門
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

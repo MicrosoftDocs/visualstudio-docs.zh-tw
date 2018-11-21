@@ -15,15 +15,15 @@ helpviewer_keywords:
 - Concurrency Visualizer, Blocking Time Profile Report
 ms.assetid: 3bc45af0-3ba6-4fa3-a336-be8e9ae95107
 caps.latest.revision: 21
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5be0649cd9d3fb7aa5f4e3f52496ec43658a41ba
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 31be25e5fb41f2e7a92ee2c19803d74c442fcad4
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49842868"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51807019"
 ---
 # <a name="blocking-time-profile-report"></a>封鎖時間分析報表
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

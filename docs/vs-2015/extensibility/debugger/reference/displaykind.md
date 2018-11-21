@@ -15,12 +15,12 @@ ms.assetid: 940968c5-6065-4bda-8ee6-c31597db4d71
 caps.latest.revision: 6
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1ce3bf9559592794a098e4e55c6a8a6d04efa9fb
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: afe6f0d4a77b841a1c0d696bf90502df8cb0fee1
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49277975"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51773661"
 ---
 # <a name="displaykind"></a>DisplayKind
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

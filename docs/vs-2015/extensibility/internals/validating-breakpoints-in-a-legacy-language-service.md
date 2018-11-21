@@ -16,12 +16,12 @@ ms.assetid: a7e873cd-dfe1-474f-bda5-fd7532774b15
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2739bfd8807552653e7bb302e5e5efad2835529b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0868e516720fd32a445f60f05f345936d24d6d7a
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49216836"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51734974"
 ---
 # <a name="validating-breakpoints-in-a-legacy-language-service"></a>在舊版語言服務中驗證中斷點
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

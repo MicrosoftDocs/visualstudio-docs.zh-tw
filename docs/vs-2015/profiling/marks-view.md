@@ -16,15 +16,15 @@ helpviewer_keywords:
 - profiling tools reports, Marks view
 ms.assetid: b2773344-8081-4116-85a1-58f770448f6a
 caps.latest.revision: 23
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c475a6bee2ca3d725cc62a9775ad8c22db97057e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 10d893a4f643404161d0bcbe6b2c8f623719d0c7
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49179084"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51762700"
 ---
 # <a name="marks-view"></a>標記檢視
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

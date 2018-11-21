@@ -25,15 +25,15 @@ helpviewer_keywords:
 - debugging [Visual Studio], foreground programs
 ms.assetid: 9e67a308-1c81-42ab-966b-7fc3c1d2bf7a
 caps.latest.revision: 19
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 296cb0da8615e07c4f7cb22e76b81d6819a8f816
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: dfa72ac59968ffdd1a31c3d19f4dff35cefe2cb9
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49286503"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51766189"
 ---
 # <a name="how-can-i-use-debugger-windows-while-debugging-a-foreground-program"></a>偵錯前景程式時，如何使用偵錯工具視窗？
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

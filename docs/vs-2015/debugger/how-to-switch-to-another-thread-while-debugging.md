@@ -18,15 +18,15 @@ helpviewer_keywords:
 - threads, switching [debugging]
 ms.assetid: 5cd76c52-76fa-4fcc-b37e-e9f0ecac0e9e
 caps.latest.revision: 29
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8d242207115389bc80f7b79e2e9eb587939affb4
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ad13c81afc82ac69055ae117c862a1cf73b51478
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49189590"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51737704"
 ---
 # <a name="how-to-switch-to-another-thread-while-debugging"></a>如何：在偵錯時切換到另一個執行緒
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

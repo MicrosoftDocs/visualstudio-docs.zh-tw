@@ -15,12 +15,12 @@ ms.assetid: 81a58e40-7cd0-4ef4-a475-c4e1e84d6e06
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9d81916910eb4769801ae330c10edde24cb52f52
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3a1300f7f66e9c3e9e9cebe3a7b0c7c84e7df4c2
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49923403"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51782423"
 ---
 # <a name="registering-verbs-for-file-name-extensions"></a>註冊適用於副檔名的動詞命令
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

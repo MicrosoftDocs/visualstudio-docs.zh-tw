@@ -24,15 +24,15 @@ helpviewer_keywords:
 - COM [Visual Studio], debugging
 ms.assetid: b7ce8696-ebb8-4354-a767-f76b8ada4ac1
 caps.latest.revision: 23
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1df02319e081abe882cef7031eba144ef22d7c4b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a495b90f68d0a12d9fb34babf28aca073580f2aa
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49263045"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51788000"
 ---
 # <a name="com-server-and-container-debugging"></a>COM 伺服器和容器偵錯
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

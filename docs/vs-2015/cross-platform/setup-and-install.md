@@ -10,12 +10,12 @@ ms.assetid: 2cfcad00-352c-4161-814c-f5ae32d8ada8
 caps.latest.revision: 19
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 58596bc4ab8286641ddeda8bec7f9200da5ccd25
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f3a72c197963332ad433f88e6cb7fffde5a9a41b
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49874107"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51730417"
 ---
 # <a name="setup-and-install"></a>設定和安裝
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

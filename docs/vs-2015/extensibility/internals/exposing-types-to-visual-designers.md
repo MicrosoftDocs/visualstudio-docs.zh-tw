@@ -17,12 +17,12 @@ ms.assetid: a7a32ad4-3a0a-4eb8-a6ac-491c42885639
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 401ba1744ad03260140ca29d706f24d699863246
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c19fe00713bd328574e5a05cc6f6f3a60f18ddf9
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49242004"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51791549"
 ---
 # <a name="exposing-types-to-visual-designers"></a>將類型公開至視覺化設計工具
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

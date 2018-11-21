@@ -17,12 +17,12 @@ ms.assetid: a15d1cc3-97b7-438c-8d24-c23149708f42
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a8a3b7c05b8898971d43520b7138e5b7c4e146b7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7bf5e35251012c12e89e9948f3b0e5f59b337ab3
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49284280"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51799960"
 ---
 # <a name="idebugentrypointevent2"></a>IDebugEntryPointEvent2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

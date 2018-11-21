@@ -13,12 +13,12 @@ ms.assetid: 72c8b352-0b7a-42b3-ba5d-2a2d1e90c34b
 caps.latest.revision: 6
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: aaf5b34239b62d685422834d80f001e2e0450c0b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4462e42eb0810c3ab988610149395fd4a52fce78
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49246060"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51731031"
 ---
 # <a name="sdkreference-element-visual-studio-templates"></a>SDKReference 項目 (Visual Studio 樣板)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

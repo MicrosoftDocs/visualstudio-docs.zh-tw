@@ -17,12 +17,12 @@ ms.assetid: 35b3c2f3-69f4-4013-b555-f847221f62e8
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 408303e5a67c7ef700504d594540ceb04dd2299c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9bff6f65691f917fa8a887335b842dbd9425b6f3
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49844168"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51798330"
 ---
 # <a name="idebugreference2enumchildren"></a>IDebugReference2::EnumChildren
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "49844168"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT EnumChildren (   
+HRESULT EnumChildren (   
    DEBUGREF_INFO_FLAGS        dwFields,  
    DWORD                      dwRadix,  
    DBG_ATTRIB_FLAGS           dwAttribFilter,  
@@ -43,7 +43,7 @@ HRESULT EnumChildren (
 ```  
   
 ```csharp  
-int EnumChildren (   
+int EnumChildren (   
    enum_DEBUGREF_INFO_FLAGS     dwFields,  
    uint                         dwRadix,  
    enum_DBG_ATTRIB_FLAGS        dwAttribFilter,  

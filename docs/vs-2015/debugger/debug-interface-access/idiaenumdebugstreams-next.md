@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaEnumDebugStreams::Next method
 ms.assetid: eb8eae5a-be27-45f4-a7bd-6e4ef0652385
 caps.latest.revision: 10
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ae6381ed30d93078e79f5108cf14642b0eda3ea0
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 436a57a524f56fbcdff843b54399cfd7143cb83e
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219701"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51780694"
 ---
 # <a name="idiaenumdebugstreamsnext"></a>IDiaEnumDebugStreams::Next
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

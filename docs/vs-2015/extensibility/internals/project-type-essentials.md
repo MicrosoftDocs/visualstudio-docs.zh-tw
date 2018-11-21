@@ -15,12 +15,12 @@ ms.assetid: 09991589-2300-430e-b6a4-7f2b95fe676f
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: caf2b8d75d9c82724474c94fb49fca6b45107d06
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5a719ea26473874cb0d771b46ee05ea15092fb17
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49863564"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51746461"
 ---
 # <a name="project-type-essentials"></a>專案類型的基本資訊
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

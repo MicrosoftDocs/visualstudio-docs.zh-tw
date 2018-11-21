@@ -17,12 +17,12 @@ ms.assetid: beba7174-e787-45c2-b6ff-a60f67ad4998
 caps.latest.revision: 27
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bab850a6943268581035336a923232377e6489f2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ee5ed57639127bd6c30d2e7e1373a56848eca504
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49843674"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51772816"
 ---
 # <a name="accessing-stored-font-and-color-settings"></a>存取預存的字型和色彩設定
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

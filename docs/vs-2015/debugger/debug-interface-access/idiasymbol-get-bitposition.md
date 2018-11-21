@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaSymbol::get_bitPosition method
 ms.assetid: b0059407-8655-497b-81ca-025595989371
 caps.latest.revision: 12
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6a2bd66ac279342a1fb723b292d3e97e9268b9ae
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 04e964fb4f85671795578f86fb670f0abb1d618c
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49894036"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51735658"
 ---
 # <a name="idiasymbolgetbitposition"></a>IDiaSymbol::get_bitPosition
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "49894036"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT get_bitPosition (   
+HRESULT get_bitPosition (   
    DWORD* pRetVal  
 );  
 ```  

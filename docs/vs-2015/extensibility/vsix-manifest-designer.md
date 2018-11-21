@@ -19,12 +19,12 @@ ms.assetid: 5a691e77-cf91-430d-90ea-361d9031ef83
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c2648b237cbe2dd2cbaab28b94de68752bb596f0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 72639c3fbef6b8e297d9e81a7383b2ee8220d896
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49843778"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51796437"
 ---
 # <a name="vsix-manifest-designer"></a>VSIX 資訊清單設計工具
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

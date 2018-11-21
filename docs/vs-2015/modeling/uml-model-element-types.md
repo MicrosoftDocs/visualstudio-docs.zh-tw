@@ -11,15 +11,15 @@ helpviewer_keywords:
 - UML API, types
 ms.assetid: 25345a53-7246-4eb7-8ad9-0b695aa171a2
 caps.latest.revision: 10
-author: alexhomer1
+author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 782485523cd5c80e61032eafc575c111592895b6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 55311d02bef9654637a1b413519cc562a5c7f52b
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49252378"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51758527"
 ---
 # <a name="uml-model-element-types"></a>UML 模型項目類型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

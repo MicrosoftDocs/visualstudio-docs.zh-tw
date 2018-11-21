@@ -13,15 +13,15 @@ helpviewer_keywords:
 - refreshing views
 ms.assetid: 2ed0ba66-7259-486b-a518-aab6e45030aa
 caps.latest.revision: 8
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d07edbd6e69b8afc90f1e4a9758df904a39c9f40
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 51561959a35ac2aa0779bae7d87ef907f7f8a786
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49195360"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51805524"
 ---
 # <a name="how-to-refresh-the-view"></a>如何：重新整理檢視
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

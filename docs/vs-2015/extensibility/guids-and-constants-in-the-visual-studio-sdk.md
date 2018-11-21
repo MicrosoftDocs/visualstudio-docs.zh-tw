@@ -16,12 +16,12 @@ ms.assetid: 438c1079-0747-4995-ae7a-32aa399c96f5
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ea2a52d27d4ecceda93818ce16d6fb0836a1e984
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4d14553c2c06fd330ca6b8d5ac5342d18ae7f893
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49270764"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51722737"
 ---
 # <a name="guids-and-constants-in-the-visual-studio-sdk"></a>Visual Studio SDK 中的 GUID 和常數
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

@@ -21,15 +21,15 @@ helpviewer_keywords:
 - debugging [C#], Edit and Continue
 ms.assetid: 591bd1b7-ef10-4d10-817b-3f92ca4be006
 caps.latest.revision: 21
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f4d8e35b9447d8383ad9c4ce11042be93082535a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: fff791d948d12d88b5e4813d106baa21740b0269
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49226040"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51751119"
 ---
 # <a name="edit-and-continue-visual-c"></a>編輯後繼續 (Visual C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

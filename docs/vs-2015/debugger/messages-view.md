@@ -15,15 +15,15 @@ helpviewer_keywords:
 - Messages view
 ms.assetid: 14c2a786-c23a-4b2d-acad-8c32a856c70d
 caps.latest.revision: 9
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 76d033cdbe0949cfe861f44be8f390d72c316af8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3f896650d7979365346d493c5aac06340007cbb7
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49182087"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51784373"
 ---
 # <a name="messages-view"></a>訊息檢視
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

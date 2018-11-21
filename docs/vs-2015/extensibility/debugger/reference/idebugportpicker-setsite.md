@@ -15,12 +15,12 @@ ms.assetid: 7319e187-adfe-4b3f-aec9-521356fb5a8a
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ffc1d70a4033af0a1d1c58594e7a05b67278ec5f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 54cafb3ae3fee0f986c4eaa5f979b9c38026776f
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49912225"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51760958"
 ---
 # <a name="idebugportpickersetsite"></a>IDebugPortPicker::SetSite
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

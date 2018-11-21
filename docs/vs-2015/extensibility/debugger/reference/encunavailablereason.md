@@ -17,12 +17,12 @@ ms.assetid: c10aa4c0-d7e0-4de1-b8ff-7e050985eb12
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b804ce1d7ada1de0c457662c93542b1e0fef996a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5ec7c652fd2a35aa927cb5c634fea3cdf9b19ee3
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49925691"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51784009"
 ---
 # <a name="encunavailablereason"></a>EncUnavailableReason
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "49925691"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-enum tagEncUnavailableReason {  
+enum tagEncUnavailableReason {  
    ENCUN_NONE,  
    ENCUN_INTEROP,  
    ENCUN_SQLCLR,  
@@ -41,11 +41,11 @@ enum tagEncUnavailableReason {
    ENCUN_ATTACH,  
    ENCUN_WIN64  
 };  
-typedef enum tagEncUnavailableReason EncUnavailableReason;  
+typedef enum tagEncUnavailableReason EncUnavailableReason;  
 ```  
   
 ```csharp  
-public enum EncUnavailableReason {  
+public enum EncUnavailableReason {  
    ENCUN_NONE,  
    ENCUN_INTEROP,  
    ENCUN_SQLCLR,  

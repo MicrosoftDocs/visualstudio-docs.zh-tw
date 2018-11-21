@@ -17,12 +17,12 @@ ms.assetid: 59d0defc-99fd-445c-bdac-8224d5dea3f9
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: cb8b49c20e7559c3bcb69896e0160bf021843679
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 77c1033a69971153b0ddf9269543f8535eed3a32
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49937131"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51794838"
 ---
 # <a name="idebugerrorbreakpoint2getpendingbreakpoint"></a>IDebugErrorBreakpoint2::GetPendingBreakpoint
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,13 +32,13 @@ ms.locfileid: "49937131"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT GetPendingBreakpoint (   
+HRESULT GetPendingBreakpoint (   
    IDebugPendingBreakpoint2** ppPendingBreakpoint  
 );  
 ```  
   
 ```csharp  
-int GetPendingBreakpoint (   
+int GetPendingBreakpoint (   
    out IDebugPendingBreakpoint2 ppPendingBreakpoint  
 );  
 ```  

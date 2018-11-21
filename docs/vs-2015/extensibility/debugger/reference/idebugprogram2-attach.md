@@ -17,12 +17,12 @@ ms.assetid: de069fbf-a565-4905-b102-f5658c55aacd
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4c64b4839d2f16adfcf40b082d54f60a95d7a468
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 894c3eeb8fa86c51b540fefdb970f1ecfbbf1e46
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49881634"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51776339"
 ---
 # <a name="idebugprogram2attach"></a>IDebugProgram2::Attach
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,13 +32,13 @@ ms.locfileid: "49881634"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT Attach(   
+HRESULT Attach(   
    IDebugEventCallback2* pCallback  
 );  
 ```  
   
 ```csharp  
-int Attach(   
+int Attach(   
    IDebugEventCallback2 pCallback  
 );  
 ```  

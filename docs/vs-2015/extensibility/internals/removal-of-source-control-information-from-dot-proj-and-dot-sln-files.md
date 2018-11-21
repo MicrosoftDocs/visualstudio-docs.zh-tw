@@ -15,12 +15,12 @@ ms.assetid: 7b06883f-35de-41e2-9a9e-d3edba236f17
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4a68818ca17cef59ce80c0a232ab067a4b2e1bc2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 850f2278480b27eb302fe9cc87c608c0cd522e38
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49263825"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51761530"
 ---
 # <a name="removal-of-source-control-information-from-proj-and-sln-files"></a>從 .Proj 和 .Sln 檔案移除原始檔控制資訊
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

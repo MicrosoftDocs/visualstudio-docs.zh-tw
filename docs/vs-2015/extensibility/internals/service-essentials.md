@@ -15,12 +15,12 @@ ms.assetid: fbe84ad9-efe1-48b1-aba3-b50b90424d47
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ec9ccc92a8650c71336fc4a6916b797bd449dc7a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 90cec13c403194c70b9d44cff349b53495a0e160
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49178125"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51776456"
 ---
 # <a name="service-essentials"></a>服務的基本資訊
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

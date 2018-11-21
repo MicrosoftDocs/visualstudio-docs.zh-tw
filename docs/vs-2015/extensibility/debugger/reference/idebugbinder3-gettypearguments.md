@@ -17,12 +17,12 @@ ms.assetid: fa0c37a7-327f-463e-9a9d-bb3f534584cb
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9a99e7182db1ad074364fb6b87150ebd2d68e89d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: bdf947a0a1b573a6f3c17539bee1253fe0758020
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49890240"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51751347"
 ---
 # <a name="idebugbinder3gettypearguments"></a>IDebugBinder3::GetTypeArguments
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -31,20 +31,20 @@ ms.locfileid: "49890240"
 ## <a name="syntax"></a>語法
 
 ```cpp
-HRESULT GetTypeArguments(
-   UINT          skip,
-   UINT          count,
-   IDebugField** ppFields,
-   UINT*         pFetched
+HRESULT GetTypeArguments(
+   UINT          skip,
+   UINT          count,
+   IDebugField** ppFields,
+   UINT*         pFetched
 );
 ```
 
 ```csharp
 int GetTypeArguments(
-   uint          skip,
-   uint          count,
-   IDebugField[] ppFields,
-   out uint      pFetched
+   uint          skip,
+   uint          count,
+   IDebugField[] ppFields,
+   out uint      pFetched
 );
 ```
 

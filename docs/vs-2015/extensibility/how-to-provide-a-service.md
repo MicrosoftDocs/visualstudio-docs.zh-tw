@@ -15,12 +15,12 @@ ms.assetid: 12bc1f12-47b1-44f6-b8db-862aa88d50d1
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0b9dc7d2ef8aabab628f13ce9648e0fa5dc1f3b8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3e0d0425e0e931d28157439d3d8a4174f1d4961a
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49845085"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51785907"
 ---
 # <a name="how-to-provide-a-service"></a>如何： 提供的服務
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

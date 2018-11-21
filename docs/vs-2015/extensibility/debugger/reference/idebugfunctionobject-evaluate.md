@@ -17,12 +17,12 @@ ms.assetid: 29349ea3-d5c1-4135-aa76-ced073ab9683
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3eafb749a71c7dc9e6163bd60a8c5c4d2396de32
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 85c5e734108be01c6a252231d30ef0faac42631d
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49835802"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51780356"
 ---
 # <a name="idebugfunctionobjectevaluate"></a>IDebugFunctionObject::Evaluate
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "49835802"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT Evaluate(   
+HRESULT Evaluate(   
    IDebugObject** ppParams,  
    DWORD          dwParams,  
    DWORD          dwTimeout,  

@@ -17,12 +17,12 @@ ms.assetid: ba509cc5-5816-4925-a094-4c72d88c360c
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 15e02cdd0f1f3e601a37d144c9476877646674c4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6a5c7b33b0bcfdc9a7211b94b40a50d111c68edd
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49872950"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51803184"
 ---
 # <a name="idebugcustomattributegetname"></a>IDebugCustomAttribute::GetName
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "49872950"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT GetName(   
+HRESULT GetName(   
    BSTR* bstrName  
 );  
 ```  

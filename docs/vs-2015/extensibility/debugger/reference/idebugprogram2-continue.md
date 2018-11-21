@@ -17,12 +17,12 @@ ms.assetid: e5a6e02a-d21b-4a03-a034-e8de1f71ce2e
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d787e06c2586a2d5c3b6c48817262c80e14183d2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b90f9bd5fef44ab05cf835f41e274b4ec7695cab
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49825313"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51744313"
 ---
 # <a name="idebugprogram2continue"></a>IDebugProgram2::Continue
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -35,13 +35,13 @@ ms.locfileid: "49825313"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT Continue(   
+HRESULT Continue(   
    IDebugThread2* pThread  
 );  
 ```  
   
 ```csharp  
-int Continue(   
+int Continue(   
    IDebugThread2 pThread  
 );  
 ```  

@@ -19,15 +19,15 @@ helpviewer_keywords:
 - ASP.NET process
 ms.assetid: 931a7597-b0f0-4a28-931d-46e63344435f
 caps.latest.revision: 32
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 223e060083554169ab6ffdb95faf4979e9466d02
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2ad3bea47bcde0da87bd185fac132c95f26ce4b0
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49825617"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51793239"
 ---
 # <a name="how-to-find-the-name-of-the-aspnet-process"></a>如何：尋找 ASP.NET 處理序的名稱
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

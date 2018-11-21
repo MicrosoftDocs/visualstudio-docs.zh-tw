@@ -18,15 +18,15 @@ helpviewer_keywords:
 - Summary view
 ms.assetid: 98a1eb71-bbf5-4ce7-8559-cdc29f082c4b
 caps.latest.revision: 42
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 242250476a55ce33344863003a90d9c829eaea1a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: fdacfcba18d465685053cdea4581a5806c25db9d
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49301531"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51757319"
 ---
 # <a name="summary-view"></a>摘要檢視
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

@@ -11,15 +11,15 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 01875b05-cc7b-4add-afba-f2b776f86974
 caps.latest.revision: 17
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 80bb5f5561ad3170d2ecbbe02bb10749e605dfd8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5d65c3d2525533e5881b4626941e43fb302ce2aa
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49922363"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51733201"
 ---
 # <a name="walkthrough-debugging-rendering-errors-due-to-shading"></a>逐步解說：偵錯因著色而產生的顯示錯誤
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

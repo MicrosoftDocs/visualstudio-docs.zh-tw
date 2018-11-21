@@ -11,15 +11,15 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 59fc9424-76ca-4365-ae47-bb14a736c9c2
 caps.latest.revision: 19
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9276f567f0edf91111853e417f1f8dff1eb2a4df
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 689997704fa6d74dad611ee68eb0773612d57248
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49227093"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51793824"
 ---
 # <a name="performance-rules-reference"></a>效能規則參考
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

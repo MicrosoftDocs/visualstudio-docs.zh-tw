@@ -17,12 +17,12 @@ ms.assetid: bb6e74c3-93e4-4ef7-afc7-1c9b342f083b
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 97fb82459540e897d88283d0c09ba3a81b265c00
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: fb596c8fbc7ab3c354b5b8d3e2a116ee752f06a4
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49299256"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51724127"
 ---
 # <a name="how-to-support-outlining-in-a-legacy-language-service"></a>如何： 支援舊版語言服務中的大綱
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

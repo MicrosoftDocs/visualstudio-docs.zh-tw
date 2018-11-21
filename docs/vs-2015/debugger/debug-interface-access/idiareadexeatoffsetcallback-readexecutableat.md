@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaReadExeAtOffsetCallback::ReadExecutableAt method
 ms.assetid: 30b1cef0-b366-4712-8e89-d21f640964f8
 caps.latest.revision: 10
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 250fa60ec1564b87ccc561400e8b378619e9e850
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 113cb31684e55b66c34f775ae6a03cf850977a53
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49930917"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51751235"
 ---
 # <a name="idiareadexeatoffsetcallbackreadexecutableat"></a>IDiaReadExeAtOffsetCallback::ReadExecutableAt
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "49930917"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT ReadExecutableAt (   
+HRESULT ReadExecutableAt (   
    DWORDLONG fileOffset,  
    DWORD     cbData,  
    DWORD*    pcbData,  

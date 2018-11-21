@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaLineNumber::get_length method
 ms.assetid: 2c55a6f7-4ef5-45fb-9fd1-d72deaaa2829
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 79657b3f7b03d7e5884cab278cf4cc46aa123033
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 62f428da5f72ce96ea8066767b2f7bdc8e573d80
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49823667"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51772504"
 ---
 # <a name="idialinenumbergetlength"></a>IDiaLineNumber::get_length
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "49823667"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT get_length (   
+HRESULT get_length (   
    DWORD* pRetVal  
 );  
 ```  

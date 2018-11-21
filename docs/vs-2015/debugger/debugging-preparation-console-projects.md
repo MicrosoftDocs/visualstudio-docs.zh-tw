@@ -20,15 +20,15 @@ helpviewer_keywords:
 - console applications, debugging
 ms.assetid: 9641f1d9-2d5a-48b1-8731-6525e8f67892
 caps.latest.revision: 29
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d268495f21ca9b4869d4c084d3fd6982d842e6c7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 78cdf137f4804b2cdad26a21daf2dc34592ed774
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49825909"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51722923"
 ---
 # <a name="debugging-preparation-console-projects"></a>偵錯準備：主控台專案
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

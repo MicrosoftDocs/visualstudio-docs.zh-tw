@@ -11,15 +11,15 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 76082063-20ef-47ae-ad64-81b43b654865
 caps.latest.revision: 14
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cd3a571d5dc522485acbc5c776c67dd7c90766f6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 93fe4acedfcae36f75ed38bef102ccc35f08f2ce
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49226306"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51759661"
 ---
 # <a name="lineoff"></a>LineOff
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

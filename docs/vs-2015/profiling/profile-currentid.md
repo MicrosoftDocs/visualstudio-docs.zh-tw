@@ -13,15 +13,15 @@ helpviewer_keywords:
 - PROFILE_CURRENTID
 ms.assetid: 55ccf665-a05e-48c3-adf7-7714c0a9aaef
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a33f3a873aaf9b7a25fb2d3018866b2ddf4fabbb
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f8e39234d9767be0cfb1305d25d107324ee073e7
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49295499"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51792836"
 ---
 # <a name="profilecurrentid"></a>PROFILE_CURRENTID
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

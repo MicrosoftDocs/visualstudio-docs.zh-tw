@@ -16,12 +16,12 @@ ms.assetid: 1d7f3aa7-7eff-4cab-bc53-0a566b1a9363
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4915dc5131cedbdc368c4c9d651e98c2302aceba
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a72b9118c06930c328db631938271d4feb938027
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49884013"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51786233"
 ---
 # <a name="ports"></a>連接埠
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

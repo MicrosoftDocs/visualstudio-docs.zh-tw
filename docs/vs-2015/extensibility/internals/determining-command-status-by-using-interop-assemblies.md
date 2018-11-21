@@ -16,12 +16,12 @@ ms.assetid: 2f5104d1-7b4c-4ca0-a626-50530a8f7f5c
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8871793d27366771978b2cb23284d1dbe5f4dc5a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1983f66158c00e5812823bbbf36eeea3aa139ea8
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49948248"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51789300"
 ---
 # <a name="determining-command-status-by-using-interop-assemblies"></a>使用 Interop 組件判斷命令狀態
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

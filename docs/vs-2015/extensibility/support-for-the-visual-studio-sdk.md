@@ -19,12 +19,12 @@ ms.assetid: d9011f5a-cb53-418f-9d8f-74b15b9fc5f5
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f3e33a47052a399b0edac2bb4425c27872cb6b37
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ebc4b31d054bc78b9bb9c74dc9da2423ff5acc55
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49229199"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51725345"
 ---
 # <a name="support-for-the-visual-studio-sdk"></a>支援 Visual Studio SDK
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

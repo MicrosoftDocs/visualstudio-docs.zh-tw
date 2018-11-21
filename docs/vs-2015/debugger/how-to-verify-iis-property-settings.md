@@ -22,15 +22,15 @@ helpviewer_keywords:
 - properties [debugger], setting with IIS administration tool
 ms.assetid: 9efc50bf-02fb-4750-9b3e-f03c38f10d8b
 caps.latest.revision: 15
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 38e647c25268b8d7c9e55fe1ee30f933a66f9f72
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4639055fe9320c8fd1bf1b2575bca323642dd17f
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49236141"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51742080"
 ---
 # <a name="how-to-verify-iis-property-settings"></a>如何：檢查 IIS 屬性設定
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

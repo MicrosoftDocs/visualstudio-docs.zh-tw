@@ -15,12 +15,12 @@ ms.assetid: 822cbb8d-7ab4-40ee-bd12-44016ebcce81
 caps.latest.revision: 32
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6c8589afcd64e62e2869283cb4d2a25835b672e7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ddca5ab4b0d7dc6aa43f3db8c641ad5fc9e583b2
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49870584"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51735190"
 ---
 # <a name="inside-the-editor"></a>深入探索編輯器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

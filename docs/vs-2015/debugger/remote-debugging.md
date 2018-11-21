@@ -21,15 +21,15 @@ helpviewer_keywords:
 - remote debugging, setup
 ms.assetid: 5a94ad64-100d-43ca-9779-16cb5af86f97
 caps.latest.revision: 81
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 61b1bc7f81ca4d6c3f313c543be23b746d56d37e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0ac1bbe2cc1832d0b34706f88b4df583d117149c
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49812890"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51799271"
 ---
 # <a name="remote-debugging"></a>Remote Debugging
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -166,7 +166,7 @@ ms.locfileid: "49812890"
   
 4. 加入使用者帳戶的名稱和密碼。  
   
-    您可能需要將 [以服務方式登入]  使用者權利加入此帳戶。 (在 [開始]  頁面或視窗 (或在命令提示字元輸入 **secpol** ) 尋找 [本機安全性原則]  (secpol.msc)。 視窗出現時，請按兩下 [使用者權限指派] ，然後在右窗格中尋找 [以服務方式登入]  。 對它按兩下。 將使用者帳戶加入**屬性**視窗，然後按一下**確定**。)按一下 [**下一步]**。  
+    您可能需要將 [以服務方式登入]  使用者權利加入此帳戶。 (在 [開始]  頁面或視窗 (或在命令提示字元輸入 **secpol** ) 尋找 [本機安全性原則]  (secpol.msc)。 視窗出現時，請按兩下 [使用者權限指派] ，然後在右窗格中尋找 [以服務方式登入]  。 對它按兩下。 將使用者帳戶加入**屬性**視窗，然後按一下**確定**。)按 [ **下一步**]。  
   
 5. 選取您要遠端工具與之通訊的網路類型。 必須至少選取一種網路類型。 如果此電腦經由網域連線，您就必須選擇第一個項目。 如果此電腦經由工作群組或家用群組連線，您就必須選擇第二個或第三個項目。 按 [ **下一步**]。  
   

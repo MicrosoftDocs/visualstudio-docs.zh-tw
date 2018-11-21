@@ -16,15 +16,15 @@ helpviewer_keywords:
 - Annotation symbol
 ms.assetid: eb9f759b-98a5-45fc-b085-91f1f2666e72
 caps.latest.revision: 9
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 18d1bf16f2157bc5def93c779276079324fdf6f3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 079e035f92e7dc3dbabc996bef28d52df627b63d
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49212065"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51774389"
 ---
 # <a name="annotation"></a>註釋
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

@@ -24,15 +24,15 @@ helpviewer_keywords:
 - IntelliTrace, debugging after a crash
 ms.assetid: 486bfec2-39bd-4d78-892a-42352128ee52
 caps.latest.revision: 142
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6f96b0df5028974317be46fed7c727b3141e8b64
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a1cd1cc041970588cf7c90c2c6275100687e1bcb
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49912977"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51737208"
 ---
 # <a name="intellitrace"></a>IntelliTrace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,7 +63,7 @@ ms.locfileid: "49912977"
 |||  
 |-|-|  
 |**支援**|-Visual Basic 和 Visual C# 應用程式使用.NET Framework 2.0 或更新版本。<br />     您可以偵錯大部分應用程式，包括 ASP.NET、Microsoft Azure、Windows Form、WCF、WPF、Windows Workflow、SharePoint 2010、SharePoint 2013 和 64 位元應用程式。<br />     若要偵錯 SharePoint 應用程式，使用 IntelliTrace，請參閱[逐步解說： 偵錯 SharePoint 應用程式所使用 IntelliTrace](http://msdn.microsoft.com/library/4bd80d2f-f680-4bf4-81c3-f14e8185f6a4)。<br />     若要使用 IntelliTrace 的 Microsoft Azure 應用程式進行偵錯，請參閱[偵錯已發佈的雲端服務使用 IntelliTrace 和 Visual Studio](http://go.microsoft.com/fwlink/?LinkID=262248)。|  
-|**有限的支援**|-F # 實驗基礎的應用程式<br />-Windows 市集應用程式支援僅適用於事件|  
+|**有限的支援**|-F#實驗基礎的應用程式<br />-Windows 市集應用程式支援僅適用於事件|  
 |**不支援**|-C + +、 其他語言和指令碼<br />-Windows 服務、 Silverlight、 Xbox 或[!INCLUDE[winmobile](../includes/winmobile-md.md)]應用程式|  
   
 > [!NOTE]

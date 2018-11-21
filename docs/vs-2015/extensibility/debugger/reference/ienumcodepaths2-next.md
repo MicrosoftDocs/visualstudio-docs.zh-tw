@@ -17,12 +17,12 @@ ms.assetid: c7a8fe97-2abc-4cee-8aef-64f1daa93b5c
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1b4c5b76d978b1c03991bef38cf360d98a9ce7d2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1ea51efe7cb831c7de7253b8fcd1cfa43c422c97
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49832352"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51786557"
 ---
 # <a name="ienumcodepaths2next"></a>IEnumCodePaths2::Next
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

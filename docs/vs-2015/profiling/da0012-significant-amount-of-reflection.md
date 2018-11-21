@@ -16,15 +16,15 @@ f1_keywords:
 - vs.performance.DA0011
 ms.assetid: c92a1d76-21fa-426e-8b1b-a3c08e9bcbca
 caps.latest.revision: 18
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3dfe5e163d0ecf40001c4d5151d000e00789f12b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9cea0faef4a0ee46b2fba0ea5c5bbbcd91e43bfc
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49250558"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51739509"
 ---
 # <a name="da0012-significant-amount-of-reflection"></a>DA0012：大量的反射
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

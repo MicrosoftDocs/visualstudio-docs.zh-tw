@@ -12,15 +12,15 @@ helpviewer_keywords:
 - layer models, updating in program code
 ms.assetid: c60edc87-33ee-4964-a954-40069f9febf3
 caps.latest.revision: 22
-author: alexhomer1
+author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 69286377a302fabc900fe4cf9384bb65d094a378
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ec36aa78ce5ed90098587092207806444681146a
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49214920"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51734736"
 ---
 # <a name="navigate-and-update-layer-models-in-program-code"></a>巡覽及更新程式碼中的圖層模型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

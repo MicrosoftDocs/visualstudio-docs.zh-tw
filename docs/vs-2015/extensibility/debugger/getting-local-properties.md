@@ -17,12 +17,12 @@ ms.assetid: 6c3a79e8-1ba1-4863-97c3-0216c3d9f092
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2fcdca591dac7cf5a101c60a514b9004dd1fb503
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a96b9abfd215dc297a5b245e0ac670b4822d70c2
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49892489"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51799115"
 ---
 # <a name="getting-local-properties"></a>取得區域變數的屬性
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

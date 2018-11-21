@@ -22,15 +22,15 @@ helpviewer_keywords:
 - Win32, error codes
 ms.assetid: 8fb4ff42-b8eb-4152-b49e-b802d194b05e
 caps.latest.revision: 19
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ce5cc450c05ee759d4d65e22394c6ef814b0a872
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f0606463eafc5c681aacaef9fb4111f71260ecb7
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49205994"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51723744"
 ---
 # <a name="where-can-i-look-up-win32-error-codes"></a>哪裡可以查看 Win32 錯誤碼？
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

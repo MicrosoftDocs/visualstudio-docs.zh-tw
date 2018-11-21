@@ -16,15 +16,15 @@ dev_langs:
 - C++
 ms.assetid: 8f4266bc-4597-43ab-b620-8b08ea988a8e
 caps.latest.revision: 6
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e36ea7214767a45202cc854784ee7b21c4aa98e0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: dd8245c6d4705ba074f12feebb39ec183b53bf57
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49240002"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51807684"
 ---
 # <a name="debugger-navigation-sample-code-xaml-and-c"></a>偵錯工具巡覽範例程式碼 (Xaml 和 C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

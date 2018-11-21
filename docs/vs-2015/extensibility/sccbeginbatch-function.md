@@ -17,12 +17,12 @@ ms.assetid: 33968183-2e15-4e0d-955b-ca12212d1c25
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 50fa6d14507a9af98d9ca303bc7bf9dbbf93ab6a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 31064e0bc746ecc6fb67f5e2feacbd9ae91ca7bd
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49283448"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51724344"
 ---
 # <a name="sccbeginbatch-function"></a>SccBeginBatch 函式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

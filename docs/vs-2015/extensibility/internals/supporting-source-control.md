@@ -15,12 +15,12 @@ ms.assetid: 567acde3-354e-4f39-8d99-0ef86c103396
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 12a7cb2de6f3710f7b9e608f008d72d3b0b0e777
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8310a18d9390858256067ba8dd16b61129b819a6
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49279574"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51746332"
 ---
 # <a name="supporting-source-control"></a>支援原始檔控制
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

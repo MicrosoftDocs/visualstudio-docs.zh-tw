@@ -15,12 +15,12 @@ ms.assetid: 82b20efc-08f2-4cd2-91f6-4e01e3da906b
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0852425b4062b286f95406d01bc1649056967e49
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2b0b0fdc5e69e97d85b0446968a1572b04f40cfd
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49171122"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51754302"
 ---
 # <a name="mstateflags-field"></a>m_stateFlags 欄位
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

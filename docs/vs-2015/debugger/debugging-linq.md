@@ -22,15 +22,15 @@ helpviewer_keywords:
 - LINQ, edit and continue
 ms.assetid: dbae26cb-ac5f-4312-b474-b9f29714f4c6
 caps.latest.revision: 28
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cac093ffbec9c96e215de4c8c5d3cdc956f94c49
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 081c97bffc062bf2bbc9d24feed13e5e512b8c74
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49266613"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51755602"
 ---
 # <a name="debugging-linq"></a>偵錯 LINQ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

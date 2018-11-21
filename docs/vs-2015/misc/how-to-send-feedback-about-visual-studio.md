@@ -17,15 +17,15 @@ helpviewer_keywords:
 - sending feedback [Visual Studio]
 ms.assetid: c9f1dd8f-bcb6-40ac-b896-1e9eca0bb209
 caps.latest.revision: 41
-author: mikeblome
-ms.author: mblome
+author: gewarren
+ms.author: gewarren
 manager: douge
-ms.openlocfilehash: e70ee13b76c9bc40f74f11e5c047801cc9a5e5c5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8a7f1fa0592a6136e96f33803744cd8b42c265ee
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49251170"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51768389"
 ---
 # <a name="how-to-send-feedback-about-visual-studio"></a>如何：傳送您對 Visual Studio 的意見
 這個內容已移除。 如需資訊，請參閱[告訴我們](../ide/talk-to-us.md)。

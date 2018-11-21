@@ -23,15 +23,15 @@ helpviewer_keywords:
 - debugging [Visual Basic], Stop statements vs. breakpoints
 ms.assetid: 4ad3fe5c-3dfb-4913-b2eb-a0b635751c18
 caps.latest.revision: 16
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 45752b6b33a68e785dd9de028bd5c3de2930e964
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 16af01f24c10cbfd83f10a398c5e0a7048ba3098
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49261907"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51817408"
 ---
 # <a name="stop-statements-in-visual-basic"></a>Visual Basic 中的 Stop 陳述式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

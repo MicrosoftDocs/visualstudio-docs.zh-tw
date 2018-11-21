@@ -17,12 +17,12 @@ ms.assetid: 85522449-3fd8-4da5-b0fe-a43160e0c33b
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 778fe55b654524f81e37eee7e48d0322bde5f715
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e2e2fe8e529b3f4ed8457ce4552ff4d61dd00036
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49842699"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51783151"
 ---
 # <a name="pendingbpstateflags"></a>PENDING_BP_STATE_FLAGS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "49842699"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-enum enum_PENDING_BP_STATE_FLAGS {   
+enum enum_PENDING_BP_STATE_FLAGS {   
    PBPSF_NONE        = 0x0000,  
    PBPSF_VIRTUALIZED = 0x0001  
 };  
@@ -40,7 +40,7 @@ typedef DWORD PENDING_BP_STATE_FLAGS;
 ```  
   
 ```csharp  
-public enum enum_PENDING_BP_STATE_FLAGS {   
+public enum enum_PENDING_BP_STATE_FLAGS {   
    PBPSF_NONE        = 0x0000,  
    PBPSF_VIRTUALIZED = 0x0001  
 };  

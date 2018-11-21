@@ -13,15 +13,15 @@ dev_langs:
 - C++
 ms.assetid: 36a122e6-f27e-40cd-9784-cdaf279e1905
 caps.latest.revision: 6
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 234a9ed99f7cb980b40411bb33a9f1472d05ca24
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d418917d3e5a7f90bc96c5df7d14056829abe4d3
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49827417"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51746189"
 ---
 # <a name="idiasymbolfindinlineframesbyaddr"></a>IDiaSymbol::findInlineFramesByAddr
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ ms.locfileid: "49827417"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT findInlineFramesByAddr (   
+HRESULT findInlineFramesByAddr (   
    DWORD             isect,  
    DWORD             offset,  
    IDiaEnumSymbols** ppResult  

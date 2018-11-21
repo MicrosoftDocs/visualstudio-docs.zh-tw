@@ -17,12 +17,12 @@ ms.assetid: 47943f0a-54cb-4493-a62e-5dba97bd4c35
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 27f0c32c8a432a6aaa0ef83b06d6b424486ce29b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 017216917ab25e934d5dcbce03636c333a40d68d
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49898352"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51773128"
 ---
 # <a name="parseflags"></a>PARSEFLAGS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "49898352"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-enum enum_PARSEFLAGS {   
+enum enum_PARSEFLAGS {   
    PARSE_EXPRESSION            = 0x0001,  
    PARSE_FUNCTION_AS_ADDRESS   = 0x0002,  
    PARSE_DESIGN_TIME_EXPR_EVAL = 0x1000  
@@ -41,7 +41,7 @@ typedef DWORD PARSEFLAGS;
 ```  
   
 ```csharp  
-public enum enum_PARSEFLAGS {   
+public enum enum_PARSEFLAGS {   
    PARSE_EXPRESSION            = 0x0001,  
    PARSE_FUNCTION_AS_ADDRESS   = 0x0002,  
    PARSE_DESIGN_TIME_EXPR_EVAL = 0x1000  

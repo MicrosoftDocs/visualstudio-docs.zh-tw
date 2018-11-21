@@ -13,15 +13,15 @@ dev_langs:
 - C++
 ms.assetid: 64834351-e2c9-4f1c-9dc0-2abb5478bc63
 caps.latest.revision: 6
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3f1d2209c5f8bb1b0657d6d35dffda58d22457c0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b48646a9317ca8dcc51eb9c9453b56c5675082f3
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49179695"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51734801"
 ---
 # <a name="idiasymbolgetnumberofcolumns"></a>IDiaSymbol::get_numberOfColumns
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

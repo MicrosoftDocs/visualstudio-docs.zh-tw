@@ -16,12 +16,12 @@ ms.assetid: 99311a93-d642-4344-bbf9-ff6e7fa5bf7f
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3f42caa637b654e6c565c36c354d0df8f851eecc
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 394f8f99539ab49c1201fa61ce612aee22ff2064
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49831064"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51769119"
 ---
 # <a name="implementing-custom-categories-and-display-items"></a>實作自訂類別和顯示項目
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

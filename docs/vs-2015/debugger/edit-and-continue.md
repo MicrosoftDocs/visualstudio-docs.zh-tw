@@ -25,15 +25,15 @@ helpviewer_keywords:
 - debugger, tools for debugging
 ms.assetid: 2cdd4531-7117-4221-a809-8447812de2a1
 caps.latest.revision: 27
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: df27a9f2eaa9c6a923a17c640f19ab94c608d6df
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a82d3e22eec449e499f845965ad8c838600d9ea3
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49175717"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51723295"
 ---
 # <a name="edit-and-continue"></a>編輯後繼續
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

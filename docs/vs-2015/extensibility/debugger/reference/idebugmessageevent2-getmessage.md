@@ -18,12 +18,12 @@ ms.assetid: 9fca7285-f7f1-422d-8565-92bf0e0db60a
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 36b3068c696e08ddc3563f138c6495a77f6ab350
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5a75699b8fcd06f8a84373ad75ee80ad71d675ed
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49846014"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51789820"
 ---
 # <a name="idebugmessageevent2getmessage"></a>IDebugMessageEvent2::GetMessage
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "49846014"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT GetMessage(   
+HRESULT GetMessage(   
    MESSAGETYPE* pMessageType,  
    BSTR*        pbstrMessage,  
    DWORD*       pdwType,  
@@ -43,7 +43,7 @@ HRESULT GetMessage(
 ```  
   
 ```csharp  
-int GetMessage(   
+int GetMessage(   
    out enum_MESSAGETYPE pMessageType,  
    out string           pbstrMessage,  
    out uint             pdwType,  

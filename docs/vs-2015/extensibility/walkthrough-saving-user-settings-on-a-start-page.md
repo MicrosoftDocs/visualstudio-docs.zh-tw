@@ -13,12 +13,12 @@ ms.assetid: 754b9bf3-8681-4c77-b0a4-09146a4e1d2d
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 48e5b5bf5fe6128ba25252afcf67a18eff7eb7eb
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: bdba9506b15b0d11f2c741c8651af2098b2f9da4
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49283649"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51763296"
 ---
 # <a name="walkthrough-saving-user-settings-on-a-start-page"></a>逐步解說︰將使用者設定儲存於起始頁
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +48,7 @@ ms.locfileid: "49283649"
   
     -   EnvDTE  
   
-    -   [Envdte80]  
+    -   EnvDTE80  
   
     -   Microsoft.VisualStudio.OLE.Interop  
   

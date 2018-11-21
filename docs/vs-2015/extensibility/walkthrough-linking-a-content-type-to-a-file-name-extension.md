@@ -15,12 +15,12 @@ ms.assetid: 21ee64ce-9afe-4b08-94a0-8389cc4dc67c
 caps.latest.revision: 25
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 45534f4a85cd289360c098083228ac5f28025a90
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f543992ba23e08be25d5c8206d2b5b0565d33948
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49261725"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51739880"
 ---
 # <a name="walkthrough-linking-a-content-type-to-a-file-name-extension"></a>逐步解說︰將內容類型連結至副檔名
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

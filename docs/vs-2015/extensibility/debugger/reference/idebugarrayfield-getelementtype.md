@@ -17,12 +17,12 @@ ms.assetid: c46bf625-0a48-4cbb-8f1f-286356f2c065
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1ef66400ed7f7fdf66d830345d7d87ed2420378f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4b01a5604e834b94ec34369d23f7779fb25b4444
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49912132"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51721210"
 ---
 # <a name="idebugarrayfieldgetelementtype"></a>IDebugArrayField::GetElementType
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "49912132"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT GetElementType(   
+HRESULT GetElementType(   
    IDebugField** ppType  
 );  
 ```  

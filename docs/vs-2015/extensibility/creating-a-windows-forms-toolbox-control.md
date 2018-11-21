@@ -17,12 +17,12 @@ ms.assetid: 0be6ffc1-8afd-4d02-9a5d-e27dde05fde6
 caps.latest.revision: 20
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7b7f1c5f9f052253e2b18ac2f7c669b7442ac391
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 371fd4269cee5918bd0d0b623eb49e1f709a311d
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49294212"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51781708"
 ---
 # <a name="creating-a-windows-forms-toolbox-control"></a>建立 Windows Forms 工具箱控制項
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -81,16 +81,16 @@ Windows Forms 工具箱控制項項目範本包含在 Visual Studio 擴充性工
 3.  建立下列公用屬性宣告。  
   
     ```csharp  
-    public int Value {  
+    public int Value {  
         get { return currentValue; }   
     }  
   
-    public string Message {  
+    public string Message {  
         get { return displayText; }  
         set { displayText = value; }  
     }  
   
-    public bool ShowReset {  
+    public bool ShowReset {  
         get { return btnReset.Visible; }  
         set { btnReset.Visible = value; }  
     }  
@@ -102,7 +102,7 @@ Windows Forms 工具箱控制項項目範本包含在 Visual Studio 擴充性工
 4.  將下列程式碼置於`Load`控制項事件。  
   
     ```csharp  
-    private void Counter_Load(object sender, EventArgs e)  
+    private void Counter_Load(object sender, EventArgs e)  
     {  
         currentValue = 0;  
         label1.Text = Message + Value;  
@@ -115,7 +115,7 @@ Windows Forms 工具箱控制項項目範本包含在 Visual Studio 擴充性工
 5.  建立下列公用方法，以遞增計數器。  
   
     ```csharp  
-    public void Increment()  
+    public void Increment()  
     {  
         currentValue++;  
         label1.Text = displayText + Value;  
@@ -127,7 +127,7 @@ Windows Forms 工具箱控制項項目範本包含在 Visual Studio 擴充性工
 6.  加入宣告`Incremented`控制項類別的事件。  
   
     ```csharp  
-    public event EventHandler Incremented;  
+    public event EventHandler Incremented;  
     ```  
   
      呼叫端可以新增處理常式，此事件以回應變更計數器的值。  
@@ -135,7 +135,7 @@ Windows Forms 工具箱控制項項目範本包含在 Visual Studio 擴充性工
 7.  返回設計檢視，然後按兩下`Reset`按鈕，以產生`btnReset_Click`事件處理常式，然後在下列範例所示填入。  
   
     ```csharp  
-    private void btnReset_Click(object sender, EventArgs e)  
+    private void btnReset_Click(object sender, EventArgs e)  
     {  
         currentValue = 0;  
         label1.Text = displayText + Value;  
@@ -149,7 +149,7 @@ Windows Forms 工具箱控制項項目範本包含在 Visual Studio 擴充性工
   
     ```csharp  
     [ProvideToolboxControl("General", false)]  
-    public partial class Counter : UserControl  
+    public partial class Counter : UserControl  
     ```  
   
 ### <a name="testing-the-control"></a>測試控制項  

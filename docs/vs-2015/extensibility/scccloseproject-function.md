@@ -17,12 +17,12 @@ ms.assetid: 259c2069-d349-4814-810f-1c3151b7fb84
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1f689b149ed48b36143e1d18ced3004bb4b17d68
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e4af9d73c19708369bcd4d341b573e421f8bc015
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49825370"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51807518"
 ---
 # <a name="scccloseproject-function"></a>SccCloseProject 函式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

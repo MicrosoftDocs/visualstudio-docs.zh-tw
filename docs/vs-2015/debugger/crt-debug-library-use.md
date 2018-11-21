@@ -32,15 +32,15 @@ helpviewer_keywords:
 - /LDd compiler function [C++]
 ms.assetid: 464de16b-4215-4787-9bfa-921aaff9d9f4
 caps.latest.revision: 19
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cd9eb706627600b9c32b4cda7c020174777d1a2d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c6bba5b9c1b9d65c867176ac72c0641fac4cd286
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49199509"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51817642"
 ---
 # <a name="crt-debug-library-use"></a>CRT 偵錯程式庫操作
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

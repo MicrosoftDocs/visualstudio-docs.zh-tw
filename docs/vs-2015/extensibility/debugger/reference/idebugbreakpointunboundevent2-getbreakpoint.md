@@ -17,12 +17,12 @@ ms.assetid: ad73a207-b778-4dc5-b645-5ec668a63333
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 592f2df84a49c4aedf0a41fd55b8d9094a34b36e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c6f3f059c25853c969e9765c24830887a4db9199
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49834158"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51784087"
 ---
 # <a name="idebugbreakpointunboundevent2getbreakpoint"></a>IDebugBreakpointUnboundEvent2::GetBreakpoint
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,13 +32,13 @@ ms.locfileid: "49834158"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT GetBreakpoint(   
+HRESULT GetBreakpoint(   
    IDebugBoundBreakpoint2** ppBP  
 );  
 ```  
   
 ```csharp  
-int GetBreakpoint(   
+int GetBreakpoint(   
    out IDebugBoundBreakpoint2 ppBP  
 );  
 ```  

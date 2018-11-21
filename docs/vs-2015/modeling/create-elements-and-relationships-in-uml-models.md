@@ -11,15 +11,15 @@ helpviewer_keywords:
 - UML API
 ms.assetid: cae81d32-8cc7-4f7c-9f00-20119952bc51
 caps.latest.revision: 17
-author: alexhomer1
+author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: d0e68a3701d4455c0a627bd275eaab2cd857abc1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5ed918bc96168196400dd34d87ec65574fdfc5b6
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49198545"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51785868"
 ---
 # <a name="create-elements-and-relationships-in-uml-models"></a>在 UML 模型中建立項目和關聯性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

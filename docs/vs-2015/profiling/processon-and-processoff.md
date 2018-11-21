@@ -11,15 +11,15 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d3dc6a7e-bc0f-48a6-a4ec-f386348bb296
 caps.latest.revision: 13
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e7595d48d0f08fc16bed00385094167b1d65efc8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 64ebad6b1491fd599f27e98b0f61e12017434ffe
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49849395"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51761018"
 ---
 # <a name="processon-and-processoff"></a>ProcessOn 和 ProcessOff
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

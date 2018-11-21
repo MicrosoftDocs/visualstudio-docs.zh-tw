@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaSectionContrib::get_initializedData method
 ms.assetid: f5c108be-a0cc-408b-9590-b8d44361810c
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9d51eb6f47d4a1a7b6616b0178147eb3811d68a0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 565e3f5b300fa86097d4f51a9acdb2cd024a289d
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49886580"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51769827"
 ---
 # <a name="idiasectioncontribgetinitializeddata"></a>IDiaSectionContrib::get_initializedData
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "49886580"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT get_initializedData (   
+HRESULT get_initializedData (   
    BOOL* pRetVal  
 );  
 ```  

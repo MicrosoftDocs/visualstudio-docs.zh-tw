@@ -16,12 +16,12 @@ ms.assetid: f4ad4dd3-b39e-42df-ad89-d403cdf24a2b
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e502f78698d830c916b09968e8fa2cfbcd74fbf7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 44c5f424ec36d3c04403f62547920f59622208a9
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49915772"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51747996"
 ---
 # <a name="configuration-options-overview"></a>組態選項概觀
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

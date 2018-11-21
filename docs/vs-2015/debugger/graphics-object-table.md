@@ -15,15 +15,15 @@ f1_keywords:
 - vs.graphics.bufferviewer
 ms.assetid: f48f62d9-16ff-4a2e-8c01-5cbe99513788
 caps.latest.revision: 19
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 09ddad36cf6d9ae70c21a0e1f9505e257b253ca3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0ba3ce8aa0727471ff4385792d85659fa2d208dc
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49219516"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51809086"
 ---
 # <a name="graphics-object-table"></a>圖形物件表
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

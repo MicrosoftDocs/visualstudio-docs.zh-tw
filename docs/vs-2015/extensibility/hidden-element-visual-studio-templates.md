@@ -17,12 +17,12 @@ ms.assetid: f37406b0-52e7-4f2c-aacf-bc8d7a4117b3
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: be8ff4e506c03d587f788a1fb7dbefd4efc09365
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 439d2b9eb518cc1d75736be7cb8a31678402985b
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49263363"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51757027"
 ---
 # <a name="hidden-element-visual-studio-templates"></a>隱藏項目 (Visual Studio 範本)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

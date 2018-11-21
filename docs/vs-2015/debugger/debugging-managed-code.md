@@ -23,15 +23,15 @@ helpviewer_keywords:
 - managed code, debugging
 ms.assetid: fa3aff01-c271-4aa7-b5b1-def560471c84
 caps.latest.revision: 37
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8ba07591cf4682ef40579f58b290f6b26bb4c111
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 801a4654b2297e3c19929063716339c7a4fcd50b
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49211584"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51774415"
 ---
 # <a name="debugging-managed-code"></a>偵錯 Managed 程式碼
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

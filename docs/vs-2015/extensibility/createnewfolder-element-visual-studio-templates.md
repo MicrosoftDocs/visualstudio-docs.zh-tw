@@ -17,12 +17,12 @@ ms.assetid: acef2016-4140-45d6-ace8-b8160eabd676
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ed756b9b7a558f600ced6b9a91ca50b21dc40267
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9cbce17a23444902cf35ed5e9f04032087c8f651
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49264110"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51779420"
 ---
 # <a name="createnewfolder-element-visual-studio-templates"></a>CreateNewFolder 項目 (Visual Studio 範本)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

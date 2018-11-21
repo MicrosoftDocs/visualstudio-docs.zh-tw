@@ -7,12 +7,12 @@ ms.date: 05/06/2018
 ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 38FD2070-5151-482E-B0A9-993715128736
-ms.openlocfilehash: 80e6f3291f0f0fdc26883d8f98e90e296ee0c7c3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d6a0683405340d479fb3289540ffde2c5e7a4f78
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49919737"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51296433"
 ---
 # <a name="tutorial-getting-started-with-azure-functions"></a>教學課程：開始使用 Azure Functions
 
@@ -44,12 +44,10 @@ ms.locfileid: "49919737"
 
     ![命名及建立您的 Azure Functions 專案](media/azure-functions-lab-image2.png)
 
-5. 展開 **Solution Pad** 中的節點。 預設專案範本包含各種 Azure WebJobs 套件及 Newtonsoft.json 套件的 NuGet 參考。 
+5. 展開 **Solution Pad** 中的節點。 預設專案範本包含各種 Azure WebJobs 套件及 Newtonsoft.json 套件的 NuGet 參考。
 
-     還有三個檔案：  
-        - **host.json**：用於描述主機的全域設定選項  
-        - **local.settings.json**：用於設定服務設定。  
-        - 專案範本也會建立預設 HttpTrigger。 為了此實驗室，您應該從專案刪除 **HttpTrigger.cs** 檔案。  
+     另外還有三個檔案： - **host.json** 用於描述主機的全域組態選項 - **local.settings.json** 用於進行服務設定。
+        - 專案範本也會建立預設 HttpTrigger。 為了此實驗室，您應該從專案刪除 **HttpTrigger.cs** 檔案。
 
     開啟 **local.settings.json**。 預設會有兩個空的連接字串設定。
 
@@ -58,7 +56,7 @@ ms.locfileid: "49919737"
 ## <a name="exercise-2-creating-an-azure-storage-account"></a>練習 2：建立 Azure 儲存體帳戶
 
 1. 登入您的 Azure 帳戶 (網址為 [https://portal.azure.com](https://portal.azure.com))。
- 
+
 1. 在畫面左側的 [我的最愛] 區段下，選取 [儲存體帳戶]：
 
     ![Azure 入口網站的 [我的最愛] 區段顯示 [儲存體帳戶] 項目](media/azure-functions-lab-image4.png)
@@ -91,7 +89,7 @@ ms.locfileid: "49919737"
 
 ## <a name="example-3-creating-and-debugging-an-azure-function"></a>範例 3：建立及偵錯 Azure 函式
 
-1. 您現在已準備好開始新增一些程式碼。 使用 .NET 類別庫時，Azure 函式會新增為靜態方法。 從 **Solution Pad**，以滑鼠右鍵按一下 [AzureFunctions] 專案節點，然後選取 [新增] > [新增函式...]：
+1. 您現在已準備好開始新增一些程式碼。 使用 .NET 類別庫時，Azure 函式會新增為靜態方法。 從 **Solution Pad**，以滑鼠右鍵按一下 [AzureFunctions] 專案節點，然後選取 [新增] > [新增函式]：
 
     ![[新增函式] 選項](media/azure-functions-lab-image11.png)
 
@@ -121,8 +119,8 @@ ms.locfileid: "49919737"
         return x + y;
     }
     ```
-1. 讓我們逐步解說此方法定義。 
-    
+1. 讓我們逐步解說此方法定義。
+
     您首先會看到 **FunctionName** 屬性將此方法標示為 Azure 函式。 該屬性會指定函式的公用名稱。 屬性名稱不一定要與實際方法名稱相符。
 
     ![醒目提示 FunctionName 屬性的新 Run 方法](media/azure-functions-lab-image13.png)
@@ -157,7 +155,7 @@ ms.locfileid: "49919737"
 
     ![Azure 函式 API URL](media/azure-functions-lab-image20.png)
 
-1. 此中斷點應該會立即觸發。 Web 要求已路由傳送至函式，現在可進行偵錯。 將滑鼠移至 **x** 變數上方以查看其值。 
+1. 此中斷點應該會立即觸發。 Web 要求已路由傳送至函式，現在可進行偵錯。 將滑鼠移至 **x** 變數上方以查看其值。
 
     ![中斷點已觸發](media/azure-functions-lab-image21.png)
 
@@ -306,7 +304,7 @@ ms.locfileid: "49919737"
 
 ## <a name="exercise-5-working-with-azure-storage-tables"></a>練習 5：使用 Azure 儲存體資料表
 
-通常，您建置的服務可能會比我們目前為止所建置的服務更複雜，而且需要大量時間及/或基礎結構才能執行。 在此情況下，您可能會發現將要求排入佇列，再於 Azure Functions 提供支援的資源變成可用時進行處理，是很有效的做法。 在其他情況下，您會想要集中儲存資料。 Azure 儲存體資料表可讓您快速地執行此作業。 
+通常，您建置的服務可能會比我們目前為止所建置的服務更複雜，而且需要大量時間及/或基礎結構才能執行。 在此情況下，您可能會發現將要求排入佇列，再於 Azure Functions 提供支援的資源變成可用時進行處理，是很有效的做法。 在其他情況下，您會想要集中儲存資料。 Azure 儲存體資料表可讓您快速地執行此作業。
 
 1. 將下列類別新增至 **Add.cs**。 它應該移至命名空間內，但在現有的類別之外。
 
@@ -332,7 +330,7 @@ ms.locfileid: "49919737"
         TraceWriter log)
     {
         log.Info($"Processing {x} + {y}");
-    
+
         return new TableRow()
         {
             PartitionKey = "sums",
@@ -353,7 +351,7 @@ ms.locfileid: "49919737"
 
 1. 返回瀏覽器，將要求重新整理為相同的 URL。 此時，您會在 **Process** 方法之後看到錯誤。 這是因為程式碼嘗試使用已存在的分割區和資料列索引鍵組合，將資料列新增至 Azure 資料表儲存體資料表。
 
-    ``` 
+    ```
     System.Private.CoreLib: Exception while executing function: Process. Microsoft.Azure.WebJobs.Host: Error while handling parameter $return after function returned:. Microsoft.Azure.WebJobs.Host: The specified entity already exists.
     ```
 
@@ -387,7 +385,7 @@ ms.locfileid: "49919737"
 1. 返回 **Visual Studio for Mac** 並結束偵錯工作階段。
 
 <!--
-1. Finally, let's take a look at what it's like to work with multiple input records. Rather than specify a specific **TableRow**, you can request an **IQueryable<TableRow>** using the same attributes, and the runtime will fill it with the appropriate resource you need. Add the code below to create a **List** function that lists all items that currently exist in the Azure table we've been working with. Also note that we're specifying that the MIME type of the response is **application/json**, so the runtime will automatically render as JSON. 
+1. Finally, let's take a look at what it's like to work with multiple input records. Rather than specify a specific **TableRow**, you can request an **IQueryable<TableRow>** using the same attributes, and the runtime will fill it with the appropriate resource you need. Add the code below to create a **List** function that lists all items that currently exist in the Azure table we've been working with. Also note that we're specifying that the MIME type of the response is **application/json**, so the runtime will automatically render as JSON.
 
     ```csharp
     [FunctionName("List")]

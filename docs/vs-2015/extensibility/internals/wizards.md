@@ -15,12 +15,12 @@ ms.assetid: 59d9a77f-ee80-474b-a14f-90f477ab717b
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2331c75b5e0d708d6a2d0fa1ab987cc869879cd2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: cbf2eceeb3ae8a3870954d53f8d85c46f3322d24
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49224298"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51747591"
 ---
 # <a name="wizards"></a>精靈
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

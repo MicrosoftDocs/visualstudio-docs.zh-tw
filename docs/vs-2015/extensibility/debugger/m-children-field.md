@@ -15,12 +15,12 @@ ms.assetid: 0a3b5653-7bc0-4a7a-8963-9020bc52b9cb
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a681f3a58fddbb136383a1259aa5e4c0c3b96b69
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f044c2dae278a0656f1f9e4c41a3940d87658a64
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49289624"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51731035"
 ---
 # <a name="mchildren-field"></a>m_children 欄位
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

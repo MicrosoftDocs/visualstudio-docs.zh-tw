@@ -13,15 +13,15 @@ dev_langs:
 - C++
 ms.assetid: aa9b5599-9602-41be-ab50-d84b90bee72f
 caps.latest.revision: 6
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d71f8f20f74b0c2af01c6cf6ba8584af7f1f3efd
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: fac12459d1b04cdcc71983fb4697b041e19b8487
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49279470"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51788055"
 ---
 # <a name="idiasymbolgetispointertomemberfunction"></a>IDiaSymbol::get_isPointerToMemberFunction
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

@@ -29,15 +29,15 @@ helpviewer_keywords:
 - code exploration, visualizing
 ms.assetid: e04850a2-17c5-459b-93ec-6c74143b3292
 caps.latest.revision: 245
-author: alexhomer1
+author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: f160ff1b8ea66eecaacd4aa7ccccdf1f52bb6134
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 20122a1b254eee15efb557b5899e59fc914fda3a
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49894023"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51740042"
 ---
 # <a name="map-dependencies-across-your-solutions"></a>對應方案之間的相依性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

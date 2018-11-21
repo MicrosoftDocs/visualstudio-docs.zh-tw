@@ -11,15 +11,15 @@ helpviewer_keywords:
 - UML API
 ms.assetid: d52e0bbf-0166-4bb4-a2e3-cefed6188875
 caps.latest.revision: 21
-author: alexhomer1
+author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 25143390085ec0b4d7ab56e0fef9920d7d5eceb8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7ce74627d1d2d48ab02e0b124fbc38949f1f76f9
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49914539"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51733060"
 ---
 # <a name="define-a-work-item-link-handler"></a>定義工作項目連結處理常式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -262,7 +262,7 @@ public void OnWorkItemLinked
   item.Open();  
   item.Title = "something";  
   item.Save();  
-}   
+}   
 ```  
   
 ## <a name="accessing-the-work-item-reference-links"></a>存取工作項目參考連結  

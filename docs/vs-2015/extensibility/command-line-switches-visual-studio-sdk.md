@@ -17,12 +17,12 @@ ms.assetid: 0a22516f-f60e-4476-ac5b-f41e5ffaaf8b
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 04a40cde9caeb3386776bbfb6cd31c9a2931d0d2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1cfe08769f6b7734ba6fdd87cd010726cbcc3d9a
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49303131"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51764736"
 ---
 # <a name="command-line-switches-visual-studio-sdk"></a>命令列參數 (Visual Studio SDK)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

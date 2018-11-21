@@ -18,15 +18,15 @@ helpviewer_keywords:
 - .iTrace files
 ms.assetid: 9f2cce86-345a-4e22-84ba-91542d81e67a
 caps.latest.revision: 112
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7ab3e165a00fa55c8e08f4b538d749d53471e0eb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f10878e9717ca90725455d5c66f6f9a015040dc1
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49929487"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51723613"
 ---
 # <a name="using-saved-intellitrace-data"></a>使用儲存的 IntelliTrace 資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

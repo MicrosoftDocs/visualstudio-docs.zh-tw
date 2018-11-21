@@ -16,12 +16,12 @@ ms.assetid: 104c4c55-78b8-42f4-b6b0-9a334101aaea
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7c527d34abcd8743cd8a521acc6ee372ae04eee6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: fc6eb16d1873c7986d9fac556440f24eb007396f
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49210414"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51774168"
 ---
 # <a name="providing-automation-for-vspackages"></a>為 VSPackage 提供自動化
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

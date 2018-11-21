@@ -16,12 +16,12 @@ ms.assetid: 8c3db51d-7014-4484-802a-15aa1353dbdb
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: dc88f866b03f23f11ce47cab510d378f408f89b0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c7609b955127d6d1eb0f664dba24b0dcd37aa8e6
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49265677"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51729064"
 ---
 # <a name="customdatasignature-element-visual-studio-templates"></a>CustomDataSignature 項目 (Visual Studio 範本)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

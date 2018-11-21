@@ -11,15 +11,15 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 1971868e-89fa-4452-8ee7-76e4daf31b66
 caps.latest.revision: 15
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: acca8f8bf77c465873bae25a61de18230a038234
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: df4bd7d2b527aa365adfc65affbada8545ca4517
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49247676"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51765035"
 ---
 # <a name="timer"></a>計時器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

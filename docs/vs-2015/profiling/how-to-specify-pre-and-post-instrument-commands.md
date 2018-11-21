@@ -17,15 +17,15 @@ helpviewer_keywords:
 - pre-instrument events, performance tools
 ms.assetid: 6a8d5340-1d1b-4d81-88dd-8e1f435eb828
 caps.latest.revision: 33
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 34ebe35ba7cad601a0ba5d43cd5c424743cb2684
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b88d49be8ee4651d82135b3e8d27bef8218ffd43
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49848380"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51772218"
 ---
 # <a name="how-to-specify-pre--and-post-instrument-commands"></a>如何：指定檢測前置和檢測後續命令
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

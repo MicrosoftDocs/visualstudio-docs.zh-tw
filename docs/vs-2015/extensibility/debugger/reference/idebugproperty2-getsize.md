@@ -17,12 +17,12 @@ ms.assetid: 0deb8ec5-d6fb-4622-bb14-0c46b9459cc6
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d66a14ed1503bee00c024172f69ebcd6be3abd46
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a8b2c4ae9477b279c56de7b23277f4a98636033c
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49822328"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51727121"
 ---
 # <a name="idebugproperty2getsize"></a>IDebugProperty2::GetSize
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,13 +32,13 @@ ms.locfileid: "49822328"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT GetSize (   
+HRESULT GetSize (   
    DWORD* pdwSize  
 );  
 ```  
   
 ```csharp  
-int GetSize (   
+int GetSize (   
    out uint pdwSize  
 );  
 ```  

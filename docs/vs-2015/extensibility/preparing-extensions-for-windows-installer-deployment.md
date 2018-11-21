@@ -15,12 +15,12 @@ ms.assetid: 5ee2d1ba-478a-4cb7-898f-c3b4b2ee834e
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d4483fef9c200f6814c247f14ee956bfef4582e6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 90dc7fb0ca361e6c1994cfd7108b171cda2ad1f9
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49197921"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51755095"
 ---
 # <a name="preparing-extensions-for-windows-installer-deployment"></a>準備適用於 Windows Installer 部署的延伸模組
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

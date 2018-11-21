@@ -18,12 +18,12 @@ caps.latest.revision: 22
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 0f73247c02034d32a5843c69477f3fdcbdea4410
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6d17d8e7e5edcff6913e0046f0b580362cbc4950
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49949626"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51755655"
 ---
 # <a name="create-an-offline-installation-of-visual-studio"></a>建立 Visual Studio 的離線安裝
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

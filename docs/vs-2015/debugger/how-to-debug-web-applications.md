@@ -21,15 +21,15 @@ helpviewer_keywords:
 - debugging ASP.NET Web applications, during development
 ms.assetid: 6440d12e-6b29-42c5-a958-99aeaaff480f
 caps.latest.revision: 40
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a4e185b1b35a2462547ca8689dc1a4bfe80ff036
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d2a5110a6801aafb6eaf98cb4fb4164b045b2408
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49260808"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51793629"
 ---
 # <a name="how-to-debug-web-applications"></a>如何：偵錯 Web 應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

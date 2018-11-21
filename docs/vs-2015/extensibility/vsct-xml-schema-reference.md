@@ -16,12 +16,12 @@ ms.assetid: 49e7efae-e713-4762-a824-96fdaf92cdc9
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2129dcb4f8be717ab37c5e220b2d4b65f3b16698
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: bff3fb766c11987b84ba88b5c86ab3c8d24dbc94
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49840827"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51755869"
 ---
 # <a name="vsct-xml-schema-reference"></a>VSCT XML 結構描述參考
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

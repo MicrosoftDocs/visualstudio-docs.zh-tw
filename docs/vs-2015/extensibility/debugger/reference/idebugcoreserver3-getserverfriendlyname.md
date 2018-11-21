@@ -17,12 +17,12 @@ ms.assetid: 7035b904-b3d7-4d9b-98d9-65714b8a8b9f
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: aaecf1be2896630055eb988de28a52c5ce39ca3c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5c0a774ef2ca295565c36179b6cc87a77d587667
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49859441"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51740731"
 ---
 # <a name="idebugcoreserver3getserverfriendlyname"></a>IDebugCoreServer3::GetServerFriendlyName
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,14 +32,14 @@ ms.locfileid: "49859441"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT GetServerFriendlyName(  
-   BSTR* pbstrName  
+HRESULT GetServerFriendlyName(  
+   BSTR* pbstrName  
 );  
 ```  
   
 ```csharp  
-int GetServerFriendlyName(  
-   out string pbstrName  
+int GetServerFriendlyName(  
+   out string pbstrName  
 );  
 ```  
   

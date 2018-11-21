@@ -16,12 +16,12 @@ ms.assetid: 61bf00b2-8293-49d3-b919-1efb0dec9151
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1bc99f7170b24e48c5066d3bd36e6b9204f9d2d2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5c1f52a209ec6bc399e1cf3f294501c0a8aeda2d
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49258735"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51777132"
 ---
 # <a name="when-a-breakpoint-binds-or-becomes-unbound"></a>當中斷點繫結或變成未繫結時
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

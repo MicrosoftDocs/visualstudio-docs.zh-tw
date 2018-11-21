@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaEnumSegments::Item method
 ms.assetid: ee44dd55-39a0-4b7b-97ff-2e1226eeb2bd
 caps.latest.revision: 10
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7f7d98e160f3a0723293ce8349f475bf6519ed51
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8bb8942f2c465a9394893d4d4089401f0bfa3ab9
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49913692"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51750169"
 ---
 # <a name="idiaenumsegmentsitem"></a>IDiaEnumSegments::Item
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "49913692"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT Item (   
+HRESULT Item (   
    DWORD         index,  
    IDiaSegment** segment  
 );  

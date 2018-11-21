@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaSymbol::get_InlSpec method
 ms.assetid: 30af6a2f-be84-429e-a96a-d0f9ed9343fb
 caps.latest.revision: 10
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8a347aaa5dbfe9cef9516690f1c17dd6f26d8208
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 12a271782b57afe953a9d278be557d287e352daa
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49897364"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51805732"
 ---
 # <a name="idiasymbolgetinlspec"></a>IDiaSymbol::get_InlSpec
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

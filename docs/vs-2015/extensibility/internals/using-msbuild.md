@@ -17,12 +17,12 @@ ms.assetid: 9d38c388-1f64-430e-8f6c-e88bc99a4260
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2d382261615624fe099694af5b067de55090ad0e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: dba9feb50ddab868d81eb61565c34a8c694c2a69
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49229329"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51768177"
 ---
 # <a name="using-msbuild"></a>使用 MSBuild
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

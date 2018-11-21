@@ -17,12 +17,12 @@ ms.assetid: 627e7d38-b2ac-4873-9a40-37ff7f47cd1d
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 572f3a24d76006f912e17598e1fd012204a51fe1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: fb9367fc86191510ccd0e37ce54d39dbac4ec77f
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49814263"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51729799"
 ---
 # <a name="idebugprogrampublisher2unpublishprogram"></a>IDebugProgramPublisher2::UnpublishProgram
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,14 +32,14 @@ ms.locfileid: "49814263"
 ## <a name="syntax"></a>語法  
   
 ```cpp  
-HRESULT UnpublishProgram(  
-   IUnknown* pDebuggeeInterface  
+HRESULT UnpublishProgram(  
+   IUnknown* pDebuggeeInterface  
 );  
 ```  
   
 ```csharp  
-int UnpublishProgram(  
-   object pDebuggeeInterface  
+int UnpublishProgram(  
+   object pDebuggeeInterface  
 );  
 ```  
   

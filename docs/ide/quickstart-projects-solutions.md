@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2995e3b71ffb46b726d17ffc2f1f7fe68f6663ff
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: dffc0344c0cd7c226ae6651679c4a8f491d8aaa3
+ms.sourcegitcommit: 6a955a2d179cd0e137942389f940d9fcbbe125de
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "42626520"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51607799"
 ---
 # <a name="learn-about-projects-and-solutions"></a>了解專案與解決方案
 
@@ -100,7 +100,7 @@ ms.locfileid: "42626520"
    }
    ```
 
-   您不需要了解程式碼的作用，但如果您想要，則可以執行程式，並查看它是否將今天的日期列印至主控台 (或標準輸出) 視窗。
+   您不需要了解程式碼的作用，但如果您想要，則可以按 **Ctrl**+**F5** 執行程式，並查看它是否將今天的日期列印至主控台 (或標準輸出) 視窗。
 
 ## <a name="add-a-second-project"></a>新增第二個專案
 
@@ -148,7 +148,7 @@ ms.locfileid: "42626520"
 
    您會在一些程式碼下方看到紅色「曲線」。 我們將修正這個錯誤，方法是將測試專案設為 **QuickDate** 專案的 [friend 組件](/dotnet/csharp/programming-guide/concepts/assemblies-gac/friend-assemblies)。
 
-1. 回到 **QuickDate** 專案，開啟尚未開啟的 *Calendar.cs* 檔案，並新增下列 [using 陳述式](/dotnet/csharp/language-reference/keywords/using-statement)和 <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> 屬性，以解決測試專案中的錯誤。
+1. 回到 **QuickDate** 專案，開啟尚未開啟的 *Calendar.cs* 檔案，並將下列 [using 陳述式](/dotnet/csharp/language-reference/keywords/using-statement)和 <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> 屬性新增至檔案頂端，以解決測試專案中的錯誤。
 
    ```csharp
    using System.Runtime.CompilerServices;
@@ -162,11 +162,11 @@ ms.locfileid: "42626520"
 
 ## <a name="project-properties"></a>專案屬性
 
-C# 程式碼檔案中包含 <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> 屬性的行會參考 **QuickTest** 專案的組件名稱 (檔案名稱)。 組件名稱不一定會與專案名稱相同。 若要尋找專案的組件名稱，請開啟專案屬性。
+*Calendar.cs* 程式碼檔案中包含 <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> 屬性的行會參考 **QuickTest** 專案的組件名稱 (檔案名稱)。 組件名稱不一定會與專案名稱相同。 若要尋找專案的組件名稱，請開啟專案屬性。
 
 1. 在方案總管中，選取 **QuickTest** 專案。 從右鍵功能表或操作功能表中，選擇 [屬性]，或只按 **Alt**+**Enter** 鍵。
 
-   專案的「屬性頁」會在 [應用程式] 索引標籤上開啟。屬性頁包含專案的各種設定。 請注意，**QuickTest** 專案的組件名稱確實是 "QuickTest"。 如果您想要變更它，則這是進行變更的位置。 然後，當您建置測試專案時，所產生可執行檔的名稱會從 *QuickTest.exe* 變更為您選擇的任何名稱。
+   專案的「屬性頁」會在 [應用程式] 索引標籤上開啟。屬性頁包含專案的各種設定。 請注意，**QuickTest** 專案的組件名稱確實是 "QuickTest"。 如果您想要變更它，則這是進行變更的位置。 然後，當您建置測試專案時，所產生二進位檔案的名稱會從 *QuickTest.dll* 變更為您選擇的任何名稱。
 
    ![專案屬性](media/quickstart-projects-properties.png)
 
@@ -175,6 +175,11 @@ C# 程式碼檔案中包含 <xref:System.Runtime.CompilerServices.InternalsVisib
 ## <a name="next-steps"></a>後續步驟
 
 如果您想要確認單元測試是否正常運作，請從功能表列中選擇 [測試] > [執行] > [所有測試]。 稱為 [測試總管] 的視窗隨即開啟，而且您應該會看到 **TestGetCurrentDate** 測試通過。
+
+![Visual Studio 中顯示已通過測試的 [測試總管]](media/quickstart-projects-test-explorer.png)
+
+> [!TIP]
+> 如果 [測試總管] 未自動開啟，請從功能表列選擇 [測試] > [Windows] > [測試總管] 開啟它。
 
 ## <a name="see-also"></a>另請參閱
 

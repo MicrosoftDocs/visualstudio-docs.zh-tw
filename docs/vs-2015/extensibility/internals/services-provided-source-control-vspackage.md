@@ -16,12 +16,12 @@ ms.assetid: 9db07d70-87d2-4401-bc88-e3a49d81e9a2
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ee980b74415d906a5c48cfd5ad1e20e7b5544320
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d3131acfb26dc1e973314f69fab69cad46df6295
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49273373"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51786635"
 ---
 # <a name="services-provided-source-control-vspackage"></a>提供的服務 (原始檔控制 VSPackage)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

@@ -13,15 +13,15 @@ helpviewer_keywords:
 - layer diagrams
 ms.assetid: c9dafb47-7b1d-4c72-9432-d43be3db1799
 caps.latest.revision: 39
-author: alexhomer1
+author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 33d5de340455e5e0f6a39dd9ce470d2e96327216
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 03cac924853f4348faabd773260a9512c2d82b6b
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49262180"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51760979"
 ---
 # <a name="validate-your-system-during-development"></a>在開發期間驗證您的系統
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

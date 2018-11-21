@@ -16,15 +16,15 @@ f1_keywords:
 - vs.performance.rules.DA0006
 ms.assetid: 4d85bdd6-b571-47e0-afd6-ba3764e4eed5
 caps.latest.revision: 17
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b2e09783d5961172033a82e8be8285d9398992ef
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a60bc533ccc826b09e288e7d8ca934702f0443e5
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49285411"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51768323"
 ---
 # <a name="da0006-override-equals-for-value-types"></a>DA0006：覆寫實值類型的 Equals()
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

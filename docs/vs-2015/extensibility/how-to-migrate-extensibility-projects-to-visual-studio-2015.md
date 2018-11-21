@@ -15,12 +15,12 @@ ms.assetid: 22491cdc-8f04-4e1c-8eb4-ff33798ec792
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ff64d4578a0add2e027af8f6bf93c01e0f32ce24
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 564e279d259cae879ca2925eed3309c30d7513db
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49282278"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51785153"
 ---
 # <a name="how-to-migrate-extensibility-projects-to-visual-studio-2015"></a>如何： 將擴充性專案移轉至 Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

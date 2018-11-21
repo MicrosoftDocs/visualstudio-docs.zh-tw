@@ -15,15 +15,15 @@ helpviewer_keywords:
 - Concurrency::diagnostic::span class
 ms.assetid: 527826a8-2590-43ad-b907-7bc0b7288e92
 caps.latest.revision: 9
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5320fd055a9c63b8e89780db98a2d15e76e9250b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2f881cd6e184583f5774a03979b9c437a32fb49a
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49274790"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51737860"
 ---
 # <a name="span-class"></a>span 類別
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

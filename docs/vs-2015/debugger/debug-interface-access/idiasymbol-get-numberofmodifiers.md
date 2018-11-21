@@ -13,15 +13,15 @@ dev_langs:
 - C++
 ms.assetid: 61ff7431-1994-4f7e-a182-1817f16f60a9
 caps.latest.revision: 6
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 227c5fc2824d5a120e989f98bca91913882e6f9e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 41c197335da3025cbc27dfb6e4bce33e8657efd3
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49262591"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51781231"
 ---
 # <a name="idiasymbolgetnumberofmodifiers"></a>IDiaSymbol::get_numberOfModifiers
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

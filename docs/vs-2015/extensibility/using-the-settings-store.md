@@ -15,12 +15,12 @@ ms.assetid: 447ec08a-eca5-40b8-89b0-f98fdf3d39a4
 caps.latest.revision: 29
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1e7d103415869cc30f2c940b632c73f611986af2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 421ae479d2c25fc6b01ae63083f18c2b1c55c69d
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49811358"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51749916"
 ---
 # <a name="using-the-settings-store"></a>使用設定存放區
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

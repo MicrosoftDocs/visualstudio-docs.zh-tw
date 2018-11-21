@@ -17,12 +17,12 @@ ms.assetid: 34b2cf99-2e52-4757-8969-1d12ac517ec0
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 652dca7c8d17a2572119146af57663cfa22fb730
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4c073f6fc5fc9cab37ef110f4c733b7a9c74e7a5
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49937001"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51749066"
 ---
 # <a name="idebugportex2launchsuspended"></a>IDebugPortEx2::LaunchSuspended
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "49937001"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT LaunchSuspended(   
+HRESULT LaunchSuspended(   
    LPCOLESTR        pszExe,  
    LPCOLESTR        pszArgs,  
    LPCOLESTR        pszDir,  
@@ -45,7 +45,7 @@ HRESULT LaunchSuspended(
 ```  
   
 ```csharp  
-int LaunchSuspended(   
+int LaunchSuspended(   
    string             pszExe,  
    string             pszArgs,  
    string             pszDir,  

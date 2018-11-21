@@ -16,12 +16,12 @@ ms.assetid: 1c323afd-fb4e-449a-adaa-bb7a5d3b1468
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9539565cef0ac4dd718134f2f33a9f5fea3322c5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b5831bfe9ef722e2253b35255ec23304068bab9d
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49262517"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51725814"
 ---
 # <a name="enabling-the-azure-sdk"></a>啟用 Azure SDK
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

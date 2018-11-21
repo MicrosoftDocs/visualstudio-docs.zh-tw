@@ -15,15 +15,15 @@ helpviewer_keywords:
 - Concurrency Visualizer, Execution Profile Report
 ms.assetid: c8128472-a8ed-46f4-b1c8-a25358d6f2c1
 caps.latest.revision: 14
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a66f3961cc6ddd4bb3f8970c77a8f7cff9b0fe22
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4c211271bbc4be147d22ab4cb0262b591f4b839a
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49849225"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51763609"
 ---
 # <a name="execution-profile-report"></a>執行分析報表
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

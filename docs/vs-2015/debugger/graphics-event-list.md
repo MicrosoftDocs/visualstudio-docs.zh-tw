@@ -13,15 +13,15 @@ f1_keywords:
 - vs.graphics.eventlist
 ms.assetid: a1252e19-b27d-4dc7-a16b-fdac894c1f0e
 caps.latest.revision: 23
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 812f58109431bdf2e0cf623b05797009bef5a822
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 497ee3fe1c588c84195a544179d0d2955b1932b0
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49210778"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51766219"
 ---
 # <a name="graphics-event-list"></a>圖形事件清單
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

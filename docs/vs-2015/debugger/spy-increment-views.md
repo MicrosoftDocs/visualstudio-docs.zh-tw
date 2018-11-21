@@ -14,15 +14,15 @@ helpviewer_keywords:
 - Spy++, views
 ms.assetid: c60867af-f814-4fac-8f06-3c39cbefc7ea
 caps.latest.revision: 8
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2a361e09e534a19e0fc68bd44a68cccd8359b4b0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: be2400734d84ebaf760f383eea3370e385058834
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49190966"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51773895"
 ---
 # <a name="spy-views"></a>Spy++ 檢視
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

@@ -16,12 +16,12 @@ ms.assetid: 4a7eb360-de83-41d5-be53-3cfb160d19f9
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 39ce7fa1baee3f28a86cf92fd2a063646de33778
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5e788f9bb1ca0333fd20237103cf6bce136af2e0
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49841269"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51795107"
 ---
 # <a name="deploying-custom-start-pages"></a>部署自訂起始頁
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

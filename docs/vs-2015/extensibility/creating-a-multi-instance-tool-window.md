@@ -16,12 +16,12 @@ ms.assetid: 4a7872f1-acc9-4f43-8932-5a526b36adea
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bb5e058924d62d4c6688c95974774579f8ae81f6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2dc658024447b433b8bc0b5a8dac59234554509f
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49286360"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51794568"
 ---
 # <a name="creating-a-multi-instance-tool-window"></a>建立多執行個體工具視窗
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

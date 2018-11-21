@@ -14,15 +14,15 @@ helpviewer_keywords:
 - instrumentation profiling method
 ms.assetid: 2cf94cf9-c317-4a52-bf00-670f1262165e
 caps.latest.revision: 34
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 75a1fddc6195805b786f4ad343c1c8917129dcdb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: aaa94700c22858be5b6a739034715d1bc926eaf9
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49949229"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51787935"
 ---
 # <a name="understanding-instrumentation-data-values"></a>認識檢測資料值
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

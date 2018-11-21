@@ -20,15 +20,15 @@ helpviewer_keywords:
 - WCF, debugging
 ms.assetid: 288922be-ba3f-411e-af50-bba39c9529cc
 caps.latest.revision: 28
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ec8f1fee46a1df931842992df1daa38942ca07bc
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: cb9e7d965470a85d41b856d42c6e2c0b291723b4
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49182243"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51787467"
 ---
 # <a name="how-to-debug-a-self-hosted-wcf-service"></a>如何：偵錯自我裝載的 WCF 服務
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

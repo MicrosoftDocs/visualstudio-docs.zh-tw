@@ -15,12 +15,12 @@ ms.assetid: dcffc090-4ed8-47b2-ba51-bce1a6b6428d
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1536f511ffa02d182e2fbe248eab6990b710ed14
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 60628c3029d96f5e0c942e1c72b6d028c0fc45b0
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49948326"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51781942"
 ---
 # <a name="idebugcomplussymbolproviderisfunctionstale"></a>IDebugComPlusSymbolProvider::IsFunctionStale
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

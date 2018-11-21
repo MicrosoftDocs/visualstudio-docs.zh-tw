@@ -16,15 +16,15 @@ f1_keywords:
 - vs.performance.rules.DA0001
 ms.assetid: a7cc7613-ad5f-48c8-bd2b-56372cc12dfc
 caps.latest.revision: 19
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e0a001b78d400b684339ae179d1fe7abc5c111f7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4cbfbabc96273f6a39a69888025b80d12103dd4b
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49244305"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51803314"
 ---
 # <a name="da0001-use-stringbuilder-for-concatenations"></a>DA0001：使用 StringBuilder 進行串連
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

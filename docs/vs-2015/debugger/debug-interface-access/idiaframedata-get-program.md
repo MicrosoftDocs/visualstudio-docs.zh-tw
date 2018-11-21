@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaFrameData::get_program method
 ms.assetid: 9201409e-b4b1-4e2e-a9f8-d17678ac538b
 caps.latest.revision: 13
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ad54e98e2f05647a129158a10459cb111e199c99
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a393b4768de11e34e14126da6979a185513d4ac0
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49859209"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51800844"
 ---
 # <a name="idiaframedatagetprogram"></a>IDiaFrameData::get_program
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "49859209"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT get_program (   
+HRESULT get_program (   
    BSTR* pRetVal  
 );  
 ```  

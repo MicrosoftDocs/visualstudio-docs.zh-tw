@@ -17,12 +17,12 @@ ms.assetid: 5b88acb9-03ea-4c29-a788-f0087dccbe23
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 859d022723b96475fda4bee3a4d62048a9c8b95a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1bcc299a9179a4e0aff5e405569690a9ce8db0ba
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49888888"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51774103"
 ---
 # <a name="threadpropertyfields"></a>THREADPROPERTY_FIELDS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "49888888"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-enum enum_THREADPROPERTY_FIELDS {   
+enum enum_THREADPROPERTY_FIELDS {   
    TPF_ID           = 0x0001,  
    TPF_SUSPENDCOUNT = 0x0002,  
    TPF_STATE        = 0x0004,  
@@ -45,7 +45,7 @@ typedef DWORD THREADPROPERTY_FIELDS;
 ```  
   
 ```csharp  
-public enum enum_THREADPROPERTY_FIELDS {   
+public enum enum_THREADPROPERTY_FIELDS {   
    TPF_ID           = 0x0001,  
    TPF_SUSPENDCOUNT = 0x0002,  
    TPF_STATE        = 0x0004,  

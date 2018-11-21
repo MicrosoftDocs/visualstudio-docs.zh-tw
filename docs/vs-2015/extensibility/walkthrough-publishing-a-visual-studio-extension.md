@@ -16,12 +16,12 @@ ms.assetid: a7816161-0490-4043-86f5-0f7331ed83b3
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5d92bf805aba9b3d168f3f8d5bc3af84dfff423f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 010a842af8f45572123298d29540c28624f394b4
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49204057"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51770564"
 ---
 # <a name="walkthrough-publishing-a-visual-studio-extension"></a>逐步解說︰發佈 Visual Studio 延伸模組
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

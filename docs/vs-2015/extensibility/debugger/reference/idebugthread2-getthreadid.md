@@ -17,12 +17,12 @@ ms.assetid: db8b1c07-6b86-47f9-b292-bac19c276d36
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 89253a38970d58bcdeed41f2e2447b2137ef648c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 913a83325b527dc65484b535549ec791e3a09138
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49832273"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51772530"
 ---
 # <a name="idebugthread2getthreadid"></a>IDebugThread2::GetThreadId
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,13 +32,13 @@ ms.locfileid: "49832273"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT GetThreadId (   
+HRESULT GetThreadId (   
    DWORD* pdwThreadId  
 );  
 ```  
   
 ```csharp  
-int GetThreadId (   
+int GetThreadId (   
    out uint pdwThreadId  
 );  
 ```  

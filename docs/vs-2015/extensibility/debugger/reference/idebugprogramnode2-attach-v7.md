@@ -18,12 +18,12 @@ ms.assetid: b5ffc736-efc7-4ca8-964d-5536ff891b0e
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e4f7fd65a04e0601cad95e44a38341449fbae606
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8cec22985451386b88662818a15f60a90e93e6ae
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49948796"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51780603"
 ---
 # <a name="idebugprogramnode2attachv7"></a>IDebugProgramNode2::Attach_V7
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "49948796"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT Attach_V7 (   
+HRESULT Attach_V7 (   
    IDebugProgram2*       pMDMProgram,  
    IDebugEventCallback2* pCallback,  
    DWORD                 dwReason  
@@ -41,7 +41,7 @@ HRESULT Attach_V7 (
 ```  
   
 ```csharp  
-int Attach_V7 (   
+int Attach_V7 (   
    IDebugProgram2       pMDMProgram,  
    IDebugEventCallback2 pCallback,  
    uint                 dwReason  

@@ -16,15 +16,15 @@ f1_keywords:
 - vs.performance.DA0007
 ms.assetid: ee8ba8b5-2313-46c9-b129-3f3a2a232898
 caps.latest.revision: 18
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 11f4f88a14739231556af7d6368671282582f559
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a86c36c55d11f91daff8e876e852daed2f222307
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49227509"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51737090"
 ---
 # <a name="da0007-avoid-using-exceptions-for-control-flow"></a>DA0007：避免使用例外狀況進行控制流程
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

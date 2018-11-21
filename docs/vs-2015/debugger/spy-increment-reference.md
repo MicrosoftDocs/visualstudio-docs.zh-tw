@@ -14,15 +14,15 @@ helpviewer_keywords:
 - Spy++ reference
 ms.assetid: 2cf41bc9-55f3-4bb6-b28d-08c75215debd
 caps.latest.revision: 7
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5ed0dc159521901827116fb23adc22980de84113
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ed7aea0617db31c6edec9a739d7bae66d8fbe43f
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49301518"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51817590"
 ---
 # <a name="spy-reference"></a>Spy++ 參考
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

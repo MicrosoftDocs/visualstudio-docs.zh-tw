@@ -11,15 +11,15 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: f0300371-9cac-4def-a3f5-7d7b62dcd6f3
 caps.latest.revision: 3
-author: alancameronwills
-ms.author: awills
+author: gewarren
+ms.author: gewarren
 manager: kamrani
-ms.openlocfilehash: 2352a6ba3c03df7c89b8888102fd5860a2c48810
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3dfb863828c20df36b59a66d7198613b1a21eb29
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49294355"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51725213"
 ---
 # <a name="how-to-respond-to-changes-in-a-uml-model"></a>如何：回應 UML 模型中的變更
 可以撰寫程式碼，在 Visual Studio 中的 UML 模型發生變更時執行。 它會平均回應直接由使用者，以及其他 Visual Studio 擴充功能所做的變更。 若要查看哪些 Visual Studio 版本支援 UML 模型，請參閱 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。  

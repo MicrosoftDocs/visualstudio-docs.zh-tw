@@ -15,12 +15,12 @@ ms.assetid: d090abb6-d99f-4083-a3db-cd16bf81ce7d
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2184571bbba906a239ad60d8a7a19903219592f0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0b7c8bd8643b6c670e614f4745650f42ccca35f5
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49292912"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51809736"
 ---
 # <a name="walkthrough-creating-a-custom-editor"></a>逐步解說︰建立自訂編輯器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

@@ -11,15 +11,15 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 19c95b0d-9a4d-441f-9ed7-3acb39e67521
 caps.latest.revision: 8
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5e582c8093b08c6b23b428415edade7db4ac22b6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9b43affa6db83d34d18a3f485a88f41ccde5d22a
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49178829"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51804407"
 ---
 # <a name="vsgnodefaultinstance"></a>VSG_NODEFAULT_INSTANCE
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

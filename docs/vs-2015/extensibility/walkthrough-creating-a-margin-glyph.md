@@ -15,12 +15,12 @@ ms.assetid: 814185db-24f9-417f-b3b1-7c5aabb42b45
 caps.latest.revision: 30
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a44b816df914567ff3470f6726ac7ba380921839
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 172ac543f8777219bb7c5adc94d19e1baeea24e7
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49270994"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51783203"
 ---
 # <a name="walkthrough-creating-a-margin-glyph"></a>逐步解說：建立邊界字符
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

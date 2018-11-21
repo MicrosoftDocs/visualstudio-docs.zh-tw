@@ -15,15 +15,15 @@ helpviewer_keywords:
 - Concurrency Visualizer, UI Processing Time
 ms.assetid: 0ddb05a3-8c6b-448b-8488-2751c1e5abcc
 caps.latest.revision: 10
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 15b1e69f8b37662f816a97571fb4020e9723f0ad
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ecf2c33b2af2e57c964e145a334f6dd0d7161a92
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49173507"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51738441"
 ---
 # <a name="ui-processing-time"></a>UI 處理時間
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

@@ -13,15 +13,15 @@ helpviewer_keywords:
 - performance tools, limiting instrumentation to functions
 ms.assetid: bd98d6bf-2560-4eba-b063-2facb09f87c4
 caps.latest.revision: 24
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f06408b65d3cda1f2ee807daac7ab39ce2182a90
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c7fa666c42d31035bd42841a2bbb41221bc16b5e
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49891774"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51782566"
 ---
 # <a name="how-to-limit-instrumentation-to-specific-functions"></a>如何：限制檢測特定函式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ ms.locfileid: "49891774"
   
     **/include:** `FuncSpec` **[;** `FuncSpec` **]** `...`  
   
-    `FuncSpec` 是命名空間和函式名稱。 其格式為 `Namespace`**::**`FunctionName`。 請使用分號來分隔多個函式。 使用星號 (\*) 指定代表一或多個字元的萬用字元。 例如， **/include: MyNS::\\*** 指定 MyNS 命名空間中的所有函式。  
+    `FuncSpec` 是命名空間和函式名稱。 其格式為 `Namespace`**::**`FunctionName`。 請使用分號來分隔多個函式。 使用星號 (\*) 指定代表一或多個字元的萬用字元。 例如，**/include:MyNS::\\*** 可指定 MyNS 命名空間中的所有函式。  
   
    > [!NOTE]
    >  若要列出二進位檔中的函式，請在程式碼剖析工具安裝目錄 (通常是 [!INCLUDE[vsprvsts](../includes/vsprvsts-md.md)] 安裝目錄底下的 \Team Tools\Performance Tools 目錄) 中開啟命令提示字元視窗，然後輸入 **vsinstr /DumpFuncs**  
@@ -68,7 +68,7 @@ ms.locfileid: "49891774"
   
     **/include:** `FuncSpec` **[;** `FuncSpec` **]** `...`  
   
-    `FuncSpec` 是命名空間和函式名稱。 其格式為 `Namespace`**::**`FunctionName`。 請使用分號來分隔多個函式。 使用星號 (\*) 指定代表一或多個字元的萬用字元。 例如， **/include: MyNS::\\*** 指定 MyNS 命名空間中的所有函式。  
+    `FuncSpec` 是命名空間和函式名稱。 其格式為 `Namespace`**::**`FunctionName`。 請使用分號來分隔多個函式。 使用星號 (\*) 指定代表一或多個字元的萬用字元。 例如，**/include:MyNS::\\*** 可指定 MyNS 命名空間中的所有函式。  
   
    > [!NOTE]
    >  若要列出二進位檔中的函式，請在程式碼剖析工具安裝目錄 (通常是 [!INCLUDE[vsprvsts](../includes/vsprvsts-md.md)] 安裝目錄底下的 \Team Tools\Performance Tools 目錄) 中開啟命令提示字元視窗，然後輸入 **vsinstr /DumpFuncs**  

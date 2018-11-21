@@ -16,12 +16,12 @@ ms.assetid: c7425db6-4347-4f69-8f88-337ddaa34fa6
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ac85bb50da04eeb53f63ec2561caf8fed55c52f3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0a1640e258773f2ef2e494fafd15f7e94ef00e7a
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49839462"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51768251"
 ---
 # <a name="idebugcustomattributequeryiscustomattributedefined"></a>IDebugCustomAttributeQuery::IsCustomAttributeDefined
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

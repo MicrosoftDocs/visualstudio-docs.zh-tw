@@ -5,18 +5,18 @@ author: conceptdev
 ms.author: crdun
 ms.date: 04/14/2017
 ms.assetid: 5C800815-0B13-4B27-B017-95FCEF1A0EA2
-ms.openlocfilehash: af10c9b6f5b2d2462d0dfd08bb8010c2bbe74e2f
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 4c945af52f4d19a1966809e905119d491cfc7432
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "43223920"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295744"
 ---
-# <a name="including-a-nuget-package-in-your-project"></a>在專案中包含 NuGet 套件
+# <a name="include-a-nuget-package-in-your-project"></a>在專案中包含 NuGet 套件
 
 NuGet 是進行 .NET 開發的最受歡迎套件管理員，並內建於 Visual Studio for Mac 以及 Windows 上的 Visual Studio。 您可以使用任一 IDE 來搜尋套件，並將其新增至 Xamarin.iOS 和 Xamarin.Android 專案。
 
-本文件查看如何在專案中包含 NuGet 套件，並示範讓處理序順暢處理的工具鏈。
+本文描述如何在專案中包含 NuGet 套件，並示範讓處理序順暢處理的工具鏈。
 
 ## <a name="nuget-in-visual-studio-for-mac"></a>Visual Studio for Mac 中的 NuGet
 
@@ -42,8 +42,7 @@ NuGet 是進行 .NET 開發的最受歡迎套件管理員，並內建於 Visual 
 
 ![列出 NuGet 套件](media/nuget-walkthrough-AddPackages1.png)
 
-使用右上角的 [搜尋] 方塊來尋找特定套件，例如 `azure`。 當您發現想要使用的套件時，請選取它，然後按一下 [新增套件] 按鈕開始安裝。
-
+使用右上角的搜尋方塊來尋找特定套件，例如  `azure`。 當您發現想要使用的套件時，請選取它，然後按一下 [新增套件] ****  按鈕開始安裝。
 
 [新增 Azure NuGet 套件](media/nuget-walkthrough-AddPackages2.png)
 
@@ -55,9 +54,9 @@ NuGet 是進行 .NET 開發的最受歡迎套件管理員，並內建於 Visual 
 
 ## <a name="using-nuget-packages"></a>使用 NuGet 套件
 
-新增 NuGet 套件並更新專案參考之後，即可針對 API 進行程式設計，就像任何專案參考一樣。
+新增 NuGet 套件並更新專案參考之後，即可針對 API 進行程式設計，如同任何專案參考。
 
-確定您將任何必要 `using` 指示詞新增至檔案頂端：
+確定您將任何必要的  `using`  指示詞新增至檔案頂端：
 
 ```csharp
 using Newtonsoft.Json;
@@ -81,7 +80,7 @@ using Newtonsoft.Json;
 *   **更新** - 檢查每個套件的來源伺服器，然後下載任何較新版本。
 *   **還原** - 下載任何遺漏的套件 (不會將現有套件更新為較新版本)。
 
-方案層級也會提供 [更新] 和 [還原] 選項，而且這些選項會影響方案中的所有專案。 
+方案層級也會提供 [更新] 和 [還原] 選項，而且這些選項會影響方案中的所有專案。
 
 您也可以以滑鼠右鍵按一下個別套件，來存取操作功能表：
 
@@ -91,12 +90,11 @@ using Newtonsoft.Json;
 *   **更新** - 檢查來源伺服器，然後下載較新版本 (如果已存在)。
 *   **移除** - 從這個專案中移除套件，並從專案的參考中移除相關組件。
 
-
 ## <a name="adding-package-sources"></a>新增套件來源
 
 一開始會從 nuget.org 擷取可用於安裝的套件。不過，您可以將其他套件位置新增至 Visual Studio for Mac。 這適用於測試您自己正在開發的 NuGet 套件，或在公司或組織內使用私用 NuGet 伺服器。
 
-在 Visual Studio for Mac 中，巡覽至 [Visual Studio] > [喜好設定] > [NuGet] > [來源] 來檢視和編輯套件來源清單。 請注意，來源可以是遠端伺服器 (由 URL 指定) 或本機目錄。 
+在 Visual Studio for Mac 中，巡覽至 [Visual Studio] > [喜好設定] > [NuGet] > [來源] 來檢視和編輯套件來源清單。 請注意，來源可以是遠端伺服器 (由 URL 指定) 或本機目錄。
 
 ![套件來源](media/nuget-walkthrough-PackageSource.png)
 
@@ -110,9 +108,12 @@ using Newtonsoft.Json;
 
 ## <a name="version-control"></a>版本控制
 
-NuGet 文件討論 [using NuGet without committing packages to source control](https://docs.microsoft.com/nuget/consume-packages/packages-and-source-control) (在未將套件認可到原始檔控制的情況下使用 NuGet)。 如果您不想要將二進位檔和未使用的資訊儲存至原始檔控制，則可以設定 Visual Studio for Mac 自動從伺服器還原套件。 這表示，開發人員第一次從原始檔控制擷取專案時，Visual Studio for Mac 將會自動下載並安裝必要的套件。
+NuGet 文件討論 [using NuGet without committing packages to source control](/nuget/consume-packages/packages-and-source-control) (在未將套件認可到原始檔控制的情況下使用 NuGet)。 如果您不想要將二進位檔和未使用的資訊儲存至原始檔控制，則可以設定 Visual Studio for Mac 自動從伺服器還原套件。 這表示，開發人員第一次從原始檔控制擷取專案時，Visual Studio for Mac 將會自動下載並安裝必要的套件。
 
 ![自動還原套件](media/nuget-walkthrough-AutoRestore.png)
 
 如需如何排除 `packages` 目錄不進行追蹤的詳細資料，請參閱特定原始檔控制文件。
 
+## <a name="see-also"></a>另請參閱
+
+* [在 Visual Studio 中安裝並使用套件 (Windows 上)](/nuget/quickstart/install-and-use-a-package-in-visual-studio)

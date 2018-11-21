@@ -16,12 +16,12 @@ ms.assetid: 6ec4780a-bda4-4327-bb3e-c6c9e7eabf35
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 54bfa75703e88b08d87daff5d460b868afca3c9d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e9389d03da7c4e4b763e979a721a22639ecb9fbe
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49228120"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51796918"
 ---
 # <a name="test-area-7-share"></a>測試區域 7︰共用
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

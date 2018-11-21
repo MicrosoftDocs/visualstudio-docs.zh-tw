@@ -25,15 +25,15 @@ helpviewer_keywords:
 - options, debugging
 ms.assetid: ea172841-7fef-47bf-bd02-e7da4c3c7109
 caps.latest.revision: 26
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7251c2cf2c2b8d6879a85dfdc4427dc456fbf8f0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d2e9213605fb351ab44e90c0885bcb556d10b695
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49215549"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51757617"
 ---
 # <a name="how-to-specify-debugger-settings"></a>如何：指定偵錯工具設定
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

@@ -8,15 +8,15 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 21dcf46e-5d6d-439c-90e3-3d678e50c5a6
 caps.latest.revision: 7
-author: ghogen
-ms.author: ghogen
+author: conceptdev
+ms.author: crdun
 manager: ghogen
-ms.openlocfilehash: 77613d3e8303a02031da713ec149602a40ef9acb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f439fdedd1be094eb2f1b437b2abeed2c49bc8b5
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49846029"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51735490"
 ---
 # <a name="visual-studio-tools-for-apache-cordova"></a>Visual Studio Tools for Apache Cordova
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

@@ -8,15 +8,15 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: a2098fd9-8334-4e95-9b8d-bc3da689d9e3
 caps.latest.revision: 11
-author: corob-msft
-ms.author: gewarren
+author: mikeblome
+ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 63cd97a23f26d23b99aa7c93be90cef91a630856
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1153f7a32c26946fafb1230699c4afcae976cd9e
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49906164"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51799557"
 ---
 # <a name="using-the-c-core-guidelines-checkers"></a>使用 c + + Core Guidelines 檢查工具
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

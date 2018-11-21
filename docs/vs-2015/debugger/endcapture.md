@@ -11,15 +11,15 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 06084c3b-e065-49b6-968e-d578762fb871
 caps.latest.revision: 9
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8655d2f99a9d69319b6019fdec6ad2fcdbbedbeb
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3547de40190a7a591b3781d982f34378c3354044
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49182828"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51817551"
 ---
 # <a name="endcapture"></a>EndCapture
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

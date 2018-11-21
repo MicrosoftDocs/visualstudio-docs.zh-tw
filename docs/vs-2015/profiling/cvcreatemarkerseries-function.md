@@ -17,15 +17,15 @@ helpviewer_keywords:
 - CvCreateMarkerSeriesW method
 ms.assetid: e280530b-137a-43a7-8643-aa514ab86ed7
 caps.latest.revision: 8
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 24fb577cc08dd92b0179438cb07f14882a8b90bc
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 52ef56d1e33ddb66a4c35f7c46596ea080478a6c
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49285827"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51734712"
 ---
 # <a name="cvcreatemarkerseries-function"></a>CvCreateMarkerSeries 函式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

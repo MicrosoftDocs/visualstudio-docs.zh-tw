@@ -23,15 +23,15 @@ helpviewer_keywords:
 - ASP.NET, installation error messages
 ms.assetid: 6286dd3d-3e2b-4edd-959d-81e0ed45500b
 caps.latest.revision: 17
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 35268c6867c5438f2f3d0c4c4f9e649451a21991
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 20a6d85fbdc7fad9077a19704b6c448c73dae787
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49220970"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51739598"
 ---
 # <a name="error-aspnet-not-installed"></a>錯誤：尚未安裝 ASP.NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

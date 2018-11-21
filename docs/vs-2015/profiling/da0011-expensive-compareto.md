@@ -16,15 +16,15 @@ f1_keywords:
 - vs.performance.rules.DA0011
 ms.assetid: 239a381d-0d97-4367-8668-746c93f5af2c
 caps.latest.revision: 12
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0726ef4eb93d3e962e5fa39fe9cc7acbdbfbe8ca
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: af5797a9e3939d3163d6d1cee9719f38036543ab
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49210440"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51720858"
 ---
 # <a name="da0011-expensive-compareto"></a>DA0011：CompareTo 高度耗費資源
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

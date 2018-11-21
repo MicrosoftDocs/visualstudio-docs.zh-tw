@@ -18,12 +18,12 @@ ms.assetid: 3c47e646-ce9e-4dd3-8f1a-6dbd3827d407
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0d49b4b94e8fcfe0d2a817a20c618a9264b58ce6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4136d17552b2f903857ba090ebf9e9f1045ebd5b
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49919698"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51797529"
 ---
 # <a name="idebugmemorycontext2add"></a>IDebugMemoryContext2::Add
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "49919698"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT Add(   
+HRESULT Add(   
    UINT64                 dwCount,  
    IDebugMemoryContext2** ppMemCxt  
 );  

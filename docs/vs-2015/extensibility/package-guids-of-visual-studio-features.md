@@ -15,12 +15,12 @@ ms.assetid: f56f0356-f3ac-48bc-9674-94259e29a4df
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2ccac7110c5be5fcb0a7f846ca2756ecc334d767
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e23d1fdde0e7080e2226e02a38213ccb3f2640a9
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49233267"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51733387"
 ---
 # <a name="package-guids-of-visual-studio-features"></a>Visual Studio 功能的封裝 Guid
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

@@ -17,12 +17,12 @@ ms.assetid: 8bdfa05d-feb7-4d98-abac-77825a04c50f
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 21bc4f10d83349d93b5dbae1dd95967bcadb6330
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f398405a3773752d2dc0ecd11f8f0cb1b1a10aa5
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49894868"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51743669"
 ---
 # <a name="idebugengine3setengineguid"></a>IDebugEngine3::SetEngineGuid
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,8 +32,8 @@ ms.locfileid: "49894868"
 ## <a name="syntax"></a>語法  
   
 ```cpp  
-HRESULT SetEngineGuid(  
-   GUID* guidEngine  
+HRESULT SetEngineGuid(  
+   GUID* guidEngine  
 );  
 ```  
   

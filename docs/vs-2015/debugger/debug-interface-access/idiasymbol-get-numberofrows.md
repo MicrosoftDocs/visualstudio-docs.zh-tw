@@ -13,15 +13,15 @@ dev_langs:
 - C++
 ms.assetid: cf3eb110-d07f-4995-b68b-08290aa67d6f
 caps.latest.revision: 6
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0c0dae7ad262ac6d5dd2f32fb08f555da5241314
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3be01be73d45eaabeae2557a9513e089af176c33
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49182939"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51724549"
 ---
 # <a name="idiasymbolgetnumberofrows"></a>IDiaSymbol::get_numberOfRows
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

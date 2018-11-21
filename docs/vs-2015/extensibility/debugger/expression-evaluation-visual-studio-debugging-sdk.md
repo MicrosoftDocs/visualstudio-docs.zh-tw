@@ -16,12 +16,12 @@ ms.assetid: 5044ced5-c18c-4534-b0bf-cc3e50cd57ac
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 80e30f9a7579d511a6d2c1678d0980efdb7b8d2e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: eb5bfe5f5c77e7ba1881f803830e1cb3d357561b
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49238039"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51781578"
 ---
 # <a name="expression-evaluation-visual-studio-debugging-sdk"></a>運算式評估 (Visual Studio Debugging SDK)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

@@ -16,12 +16,12 @@ ms.assetid: dd53bd0c-459a-4077-ba81-780defb71e87
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e4167bfea1ff6eb7813a08e66401ca93c4b938ac
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b4a046769c0ee4533e4717cca715412da0d528c2
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49823537"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51789225"
 ---
 # <a name="idebugprogramdestroyeventflags2getflags"></a>IDebugProgramDestroyEventFlags2::GetFlags
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

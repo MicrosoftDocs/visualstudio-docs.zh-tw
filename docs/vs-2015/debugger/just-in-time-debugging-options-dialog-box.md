@@ -26,15 +26,15 @@ helpviewer_keywords:
 - Options dialog box, debugging
 ms.assetid: 7f11b2e3-3fb5-449d-b07c-6ecf1d6a487d
 caps.latest.revision: 22
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fbe323d5c8939ee5a4088436c906b99b4696254e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 06fdd9d12003053ea6d992aa1d7d0fe9ed7144d9
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49872924"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51788130"
 ---
 # <a name="just-in-time-debugging-options-dialog-box"></a>選項對話方塊、偵錯、Just-In-Time
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

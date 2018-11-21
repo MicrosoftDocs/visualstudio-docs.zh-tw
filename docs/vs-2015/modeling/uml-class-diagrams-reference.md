@@ -24,15 +24,15 @@ helpviewer_keywords:
 - diagrams - modeling, UML class
 ms.assetid: b7c88be0-0d86-4d65-af74-f37e8812d20f
 caps.latest.revision: 43
-author: alexhomer1
+author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: cad1f9d5e0e4cefe6e0fba6ec4e919e78f00dd4e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4f3a4fe9949236045238688a9edcd5eef911efb8
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49855849"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51741067"
 ---
 # <a name="uml-class-diagrams-reference"></a>UML 類別圖表：參考
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

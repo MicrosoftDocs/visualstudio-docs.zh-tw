@@ -17,12 +17,12 @@ ms.assetid: c1ec5a4d-5d42-4660-932c-7348550140cb
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 079da6aff49dde2fda94ebd98f38742ae81324f7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 581b0945ceaf9ca4348e0f5bd779dbd9c5311afc
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49842543"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51741076"
 ---
 # <a name="disassemblyflags"></a>DISASSEMBLY_FLAGS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "49842543"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-enum enum_DISASSEMBLY_FLAGS {   
+enum enum_DISASSEMBLY_FLAGS {   
    DF_DOCUMENTCHANGE     = 0x00000001,  
    DF_DISABLED           = 0x00000002,  
    DF_INSTRUCTION_ACTIVE = 0x00000004,  
@@ -44,7 +44,7 @@ typedef DWORD DISASSEMBLY_FLAGS;
 ```  
   
 ```csharp  
-public enum enum_DISASSEMBLY_FLAGS {   
+public enum enum_DISASSEMBLY_FLAGS {   
    DF_DOCUMENTCHANGE     = 0x00000001,  
    DF_DISABLED           = 0x00000002,  
    DF_INSTRUCTION_ACTIVE = 0x00000004,  

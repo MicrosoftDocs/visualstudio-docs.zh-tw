@@ -17,15 +17,15 @@ helpviewer_keywords:
 - profiling tools, Modules view
 ms.assetid: 4314a404-2120-425b-be42-180cd4bac840
 caps.latest.revision: 22
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c84b71772c42bf11b90005a6951aadbc4b222e53
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 90e81530a3d682b1604a5226bb66f9e62637dd0e
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49239209"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51731358"
 ---
 # <a name="modules-view"></a>模組檢視
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

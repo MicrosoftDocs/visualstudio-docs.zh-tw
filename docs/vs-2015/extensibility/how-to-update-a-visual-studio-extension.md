@@ -17,12 +17,12 @@ ms.assetid: 93f79774-7b79-4dd6-94ad-13698f72c257
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b1d86f723ae4c9acc64dfe7643552b9a74b78963
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f4dce6301e5f55dce2c9786033ca895e0ac43518
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49254893"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51721052"
 ---
 # <a name="how-to-update-a-visual-studio-extension"></a>如何： 更新 Visual Studio 擴充功能
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

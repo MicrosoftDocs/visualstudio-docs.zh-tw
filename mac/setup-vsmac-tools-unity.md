@@ -5,14 +5,14 @@ author: dantogno
 ms.author: v-davian
 ms.date: 05/25/2018
 ms.assetid: 83FDD7A3-5D16-4B4B-9080-078E3FB5C623
-ms.openlocfilehash: 3409bca77605bd55d0de15b38eb4812743af813e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 56fb99f1748d799732f2ba44dde4980687687eef
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49836342"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51294899"
 ---
-# <a name="setup-visual-studio-for-mac-tools-for-unity"></a>設定 Visual Studio for Mac Tools for Unity
+# <a name="set-up-visual-studio-for-mac-tools-for-unity"></a>設定 Visual Studio for Mac Tools for Unity
 
 本節說明如何開始使用 Visual Studio for Mac Tools for Unity。
 
@@ -20,7 +20,7 @@ ms.locfileid: "49836342"
 
 ### <a name="unity-bundled-installation"></a>Unity 配套安裝
 
-從 Unity 2018.1 開始，Visual Studio for Mac 是 Unity 的預設 C# IDE，而且包含在 Unity 下載助理，以及 Unity 中樞安裝工具中。 從 [store.unity.com](https://store.unity.com/) 下載 Unity。
+從 Unity 2018.1 開始，Visual Studio for Mac 是 Unity 的預設 C# 整合式開發環境 (IDE)，而且包含在 Unity 下載助理和 Unity 中樞安裝工具中。 從 [store.unity.com](https://store.unity.com/) 下載 Unity。
 
 在安裝期間，請確定已核取要與 Unity 一起安裝之元件清單中的 Visual Studio for Mac：
 

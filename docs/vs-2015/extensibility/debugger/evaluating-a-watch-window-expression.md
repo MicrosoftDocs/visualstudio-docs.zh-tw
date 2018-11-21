@@ -17,12 +17,12 @@ ms.assetid: b07e72c7-60d3-4b30-8e3f-6db83454c348
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a704f887449913c31b3fdb7984743127341b5787
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4dc9a56927ebe1e7b962ab815eb34028ba75350c
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49295297"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51801458"
 ---
 # <a name="evaluating-a-watch-window-expression"></a>評估監看式視窗的運算式
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

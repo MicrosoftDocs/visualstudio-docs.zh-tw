@@ -26,15 +26,15 @@ helpviewer_keywords:
 - debugging [Visual Studio], expression evaluation
 ms.assetid: d5c18377-2a0e-4819-a645-407e24ccc58c
 caps.latest.revision: 50
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0f9d881970e24a00223a17cbf3873bdb842ed32e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b171352475b6c0b3bc916d27ab4ba351e84be42b
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49940372"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51791668"
 ---
 # <a name="watch-and-quickwatch-windows"></a>監看式及快速監看式視窗
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

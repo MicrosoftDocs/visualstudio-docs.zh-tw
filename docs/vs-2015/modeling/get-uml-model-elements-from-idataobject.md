@@ -11,15 +11,15 @@ helpviewer_keywords:
 - UML API, copy and paste
 ms.assetid: e0b9cec8-3b93-4a24-8bd3-3e086501d387
 caps.latest.revision: 20
-author: alexhomer1
+author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 07dd0d092883e643e093c27349574a6509cd9dfb
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a560ce5116c52b8c2e83ce9b28252f060e2485f1
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49199559"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51782072"
 ---
 # <a name="get-uml-model-elements-from-idataobject"></a>從 IDataObject 取得 UML 模型項目
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ using Microsoft.VisualStudio.Modeling;
   // for ElementGroupPrototype  
 using Microsoft.VisualStudio.Modeling.Diagrams;    
   // for ShapeElement, DiagramDragEventArgs, DiagramPointEventArgs  
-…   
+…   
   /// <summary>  
   /// Retrieves UML IElements from drag arguments.  
   /// Works for drags from UML diagrams.  

@@ -17,12 +17,12 @@ ms.assetid: 0c561617-fb86-476d-8bd1-c6e5e7464c65
 caps.latest.revision: 45
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b248543fa68e700ab978270c5cdb7bbd908c39d4
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 79098eb51d9adc56021d3c57cb8d242edddeb9c3
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49232960"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51732321"
 ---
 # <a name="creating-reusable-groups-of-buttons"></a>建立可重複使用的按鈕群組
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

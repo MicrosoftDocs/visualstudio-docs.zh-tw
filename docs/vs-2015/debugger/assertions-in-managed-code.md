@@ -28,15 +28,15 @@ helpviewer_keywords:
 - assertions, managed code
 ms.assetid: 70ab2522-6486-4076-a1a9-e0f11cd0f3a1
 caps.latest.revision: 32
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: feae495e83e4f78fcd627bec25dd5e988962cec4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c47b2b05ab358826d594d0c6ef29c1b50e0a529f
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49917696"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51806538"
 ---
 # <a name="assertions-in-managed-code"></a>Managed 程式碼中的判斷提示
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

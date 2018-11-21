@@ -17,12 +17,12 @@ ms.assetid: 17863747-1901-4c53-a2b3-ed996085e120
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 40832984886aeb96e0a58279ef1c91c352b7c1c9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3165580baae4f2b3b7d64f9c86e05b042a505a13
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49853814"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51786479"
 ---
 # <a name="sccgetuseroption-function"></a>SccGetUserOption 函式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,10 +32,10 @@ ms.locfileid: "49853814"
 ## <a name="syntax"></a>語法  
   
 ```cpp  
-SCCRTN SccGetUserOption(  
-   LPVOID pContext,  
-   LONG nOption,  
-   LPLONG lpVal  
+SCCRTN SccGetUserOption(  
+   LPVOID pContext,  
+   LONG nOption,  
+   LPLONG lpVal  
 );  
 ```  
   

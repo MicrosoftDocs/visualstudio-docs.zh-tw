@@ -19,15 +19,15 @@ helpviewer_keywords:
 - UML, sequence diagrams
 ms.assetid: 366fc324-aeeb-4894-bd13-ec2e40754b8e
 caps.latest.revision: 43
-author: alexhomer1
+author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 7ebadcc72e346aac26b227ff069e20ffd81a601e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5c92d9eb8ee7858a036fdbb8dfb621c269e3ed4c
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49195126"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51797022"
 ---
 # <a name="uml-sequence-diagrams-reference"></a>UML 順序圖表：參考
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

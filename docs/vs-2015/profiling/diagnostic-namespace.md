@@ -15,15 +15,15 @@ helpviewer_keywords:
 - Concurrency::diagnostic namespace
 ms.assetid: ad786b19-7c4c-46ee-bfb6-c4752b373a09
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b52f7cceee8eddc2d5643661d0d820afef10e504
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9ad88a96f67b09d1bc4dd24df4368e1a2943536f
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49297281"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51810113"
 ---
 # <a name="diagnostic-namespace"></a>diagnostic 命名空間
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

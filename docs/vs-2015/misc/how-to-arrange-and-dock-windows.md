@@ -34,15 +34,15 @@ helpviewer_keywords:
 - windows, hiding
 ms.assetid: 6a68f761-4589-4634-b39d-311fc46309aa
 caps.latest.revision: 35
-author: mikeblome
-ms.author: mblome
+author: gewarren
+ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 1a4e0e0d03daaffb1d44d5e2e9d624892796e00a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7b3442fe14ab0a34db54a8bec0dc217f1fd02b1c
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49278534"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51778718"
 ---
 # <a name="how-to-arrange-and-dock-windows"></a>如何：排列和停駐視窗
 本內容已移至[自訂視窗版面配置](../ide/customizing-window-layouts-in-visual-studio.md)

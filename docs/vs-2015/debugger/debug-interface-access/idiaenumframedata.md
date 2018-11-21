@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaEnumFrameData interface
 ms.assetid: 2ca7fd5a-b2fa-4b3a-9492-0263eafc435b
 caps.latest.revision: 16
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bc632f9b03eb125aefe0846b3ba41dd27882c672
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1fbb6c294b6de0a19a8915487e830cb092a7ada7
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49202796"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51732392"
 ---
 # <a name="idiaenumframedata"></a>IDiaEnumFrameData
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "49202796"
 ## <a name="syntax"></a>語法  
   
 ```  
-IDiaEnumFrameData : IUnknown  
+IDiaEnumFrameData : IUnknown  
 ```  
   
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法  

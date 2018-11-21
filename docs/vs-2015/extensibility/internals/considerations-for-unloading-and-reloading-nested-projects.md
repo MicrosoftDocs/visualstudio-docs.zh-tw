@@ -16,12 +16,12 @@ ms.assetid: 06c3427e-c874-45b1-b9af-f68610ed016c
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1712c05ab1bd6dbf32537d4306517ddf189b4084
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 28c5ba7dffecd73556a5f963c471910bb190f1db
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49277553"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51756957"
 ---
 # <a name="considerations-for-unloading-and-reloading-nested-projects"></a>卸載並重新載入巢狀專案的考量
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

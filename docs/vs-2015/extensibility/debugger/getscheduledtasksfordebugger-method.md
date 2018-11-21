@@ -15,12 +15,12 @@ ms.assetid: 7c9b4cde-6e4a-4cef-929f-7d02b1da5762
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 57d71dff0404b8bcea7f7274b943925eb45e0830
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3041d21a19ad276ed51e5fdcb9f11ad5468888bd
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49201968"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51810061"
 ---
 # <a name="getscheduledtasksfordebugger-method"></a>GetScheduledTasksForDebugger 方法
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

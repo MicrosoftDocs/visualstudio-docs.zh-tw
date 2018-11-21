@@ -11,15 +11,15 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ea490b7e-fc0d-44b1-858a-a725ce20e396
 caps.latest.revision: 14
-author: TerryGLee
-ms.author: tglee
+author: conceptdev
+ms.author: crdun
 manager: ghogen
-ms.openlocfilehash: 98d0aa1be1ac30de74a226735ca90743474043b7
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: f21a5491d1b0e23bff90ce0105b81eb6291ac7e5
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51000838"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51807188"
 ---
 # <a name="change-log-visual-studio-tools-for-unity"></a>變更記錄 (Visual Studio Tools for Unity)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -333,9 +333,9 @@ Visual Studio Tools for Unity 變更記錄。
 
 ### <a name="bug-fixes"></a>Bug 修正
 
--   修正 Visual Studio 佈景主題的處理。 之前，黑色佈景主題的對話方塊可能會顯示空白。
+-   修正 Visual Studio 佈景主題的處理。 之前，黑色佈景主題的對話方塊可能會顯示為空白。
 
--   連接到重新編譯的 Unity 偵錯工具時，請修正 Unity 凍結。
+-   修正將偵錯工具連接到正在重新編譯之 Unity 時的 Unity 凍結問題。
 
 -   修正對其他系統上所編譯的遠端編輯器或播放器進行偵錯時的中斷點問題。
 
@@ -345,7 +345,7 @@ Visual Studio Tools for Unity 變更記錄。
 
 -   修正偵錯工具中的變數範圍處理，以避免即時變數超出範圍。
 
--   修正靜態成員的查閱中的偵錯工具之運算式評估。
+-   修正偵錯工具運算式評估中的靜態成員查閱。
 
 -   修正偵錯工具之運算式評估中的類型顯示，以顯示靜態欄位和屬性。
 

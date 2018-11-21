@@ -18,15 +18,15 @@ f1_keywords:
 - _Inexpressible_
 ms.assetid: adf29f8c-89fd-4a5e-9804-35ac83e1c457
 caps.latest.revision: 9
-author: corob-msft
-ms.author: gewarren
+author: mikeblome
+ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 1b50742c0176b8c880d3ed0b58b7b8ef76355777
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7258092b79ca0c10079a986e2a80b34c25660054
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49174482"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51788104"
 ---
 # <a name="intrinsic-functions"></a>內建函式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

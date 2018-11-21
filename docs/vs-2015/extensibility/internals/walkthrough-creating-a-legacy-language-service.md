@@ -15,12 +15,12 @@ ms.assetid: 6a5dd2c2-261b-4efd-a3f4-8fb90b73dc82
 caps.latest.revision: 20
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 996806b1a15d6e7b45204a954c58b153e33a4be4
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0d80b40aa1db779c233dea846b49dbbc66084015
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49220047"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51783879"
 ---
 # <a name="walkthrough-creating-a-legacy-language-service"></a>逐步解說：建立舊版語言服務
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

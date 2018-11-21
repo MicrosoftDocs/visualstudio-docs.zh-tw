@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaPropertyStorage::ReadMultiple
 ms.assetid: 6ccc9397-ce41-4f72-b261-72ac252cd4a5
 caps.latest.revision: 13
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 338326e478c87a6c179cc8f1f506d82e8a782c30
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c36dcd5fc0f6e02804c57d94c9ae1d5c05e3b19f
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49938212"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51796229"
 ---
 # <a name="idiapropertystoragereadmultiple"></a>IDiaPropertyStorage::ReadMultiple
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "49938212"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT ReadMultiple(   
+HRESULT ReadMultiple(   
    ULONG          cpspec,  
    PROPSPEC const rgpspec,  
    PROPVARIANT    rgvar  

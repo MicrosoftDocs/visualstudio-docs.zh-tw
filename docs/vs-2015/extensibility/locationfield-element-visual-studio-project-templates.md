@@ -17,12 +17,12 @@ ms.assetid: 6aaaa155-6ce0-4f7f-aa50-8d63d7a7c992
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1d913c6c1c340e0599828ef2f5528b8741ddf20b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9d7d1abef8213ea06e04d35c05b38295e0b01bd9
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49294524"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51778640"
 ---
 # <a name="locationfield-element-visual-studio-project-templates"></a>LocationField 項目 (Visual Studio 專案範本)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

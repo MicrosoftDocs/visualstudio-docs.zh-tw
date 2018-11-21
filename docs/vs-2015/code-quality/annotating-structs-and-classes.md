@@ -26,15 +26,15 @@ f1_keywords:
 - _Field_size_full_opt_
 ms.assetid: b8278a4a-c86e-4845-aa2a-70da21a1dd52
 caps.latest.revision: 11
-author: corob-msft
-ms.author: gewarren
+author: mikeblome
+ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: f3d20769215058cca6e30955ae37ad2a78b6bc7c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 965a823c658516edf247f6a99d23d189097b31f0
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49287452"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51801466"
 ---
 # <a name="annotating-structs-and-classes"></a>註釋結構和類別
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

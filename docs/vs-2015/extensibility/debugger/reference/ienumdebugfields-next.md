@@ -17,12 +17,12 @@ ms.assetid: 22c177a2-af81-4234-812b-f9b47be245a2
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c9edcf0c2c388c82aa8d7463eee2a4ae01f082d8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 737cb311f87a8012da03bc2b0dfbb65a0d172047
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49866853"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51797880"
 ---
 # <a name="ienumdebugfieldsnext"></a>IEnumDebugFields::Next
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

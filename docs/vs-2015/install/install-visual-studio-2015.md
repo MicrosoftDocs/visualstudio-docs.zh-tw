@@ -23,12 +23,12 @@ caps.latest.revision: 183
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 51bbedefcb81dca303c9863a2f56d410ddd8c58c
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: 2552af00acdcb490c5f54f642fdfcdc3588d22e0
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51000325"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51789989"
 ---
 # <a name="install-visual-studio-2015"></a>安裝 Visual Studio 2015
 

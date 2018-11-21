@@ -17,12 +17,12 @@ ms.assetid: 1bed38c9-73d2-4474-9717-f9dc26a89cbe
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 020d30c9c81a188e3104928a52e58d7319523338
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 045f0007aff7733e12ce46250055fe31e85d3511
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49914199"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51796411"
 ---
 # <a name="sccproperties-function"></a>SccProperties 函式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

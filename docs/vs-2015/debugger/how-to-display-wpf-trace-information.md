@@ -19,15 +19,15 @@ helpviewer_keywords:
 - debugging, WPF
 ms.assetid: be3c6859-06e1-459e-9fd0-46375b5f55ef
 caps.latest.revision: 16
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ec7a25cc9a9b72af9a659ee0f958607c750905fd
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0a91d9f1f58a6905d50e14351bbbaf6fe732c60f
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49239456"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51771253"
 ---
 # <a name="how-to-display-wpf-trace-information"></a>如何：顯示 WPF 追蹤資訊
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

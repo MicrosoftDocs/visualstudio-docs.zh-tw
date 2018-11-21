@@ -15,12 +15,12 @@ ms.assetid: af5cc22a-c9cf-45b1-a894-1022d563f3ca
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3ce5cb31e2ac3d7014dec30e71a1dc08b122a330
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2a5da4b7c25ab97356798fe8c2db184982fc885d
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49229121"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51739307"
 ---
 # <a name="how-to-use-linked-undo-management"></a>如何： 使用連結的復原管理
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

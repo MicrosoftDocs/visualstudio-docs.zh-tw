@@ -15,12 +15,12 @@ ms.assetid: 6b151891-c06d-40b1-9867-42298caa8492
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1ab7e4e0cf46d90a437f4239798c0ec8a0a28e74
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f09056d184256e2d62387af08c61186c6ff57c02
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49862758"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51735217"
 ---
 # <a name="getting-started-with-language-service-and-editor-extensions"></a>開始使用語言服務及編輯器延伸模組
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

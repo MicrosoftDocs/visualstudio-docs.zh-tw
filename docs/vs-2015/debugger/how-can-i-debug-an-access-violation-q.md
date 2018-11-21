@@ -22,15 +22,15 @@ helpviewer_keywords:
 - debugging [Visual Studio], access violations
 ms.assetid: 9311d754-0ce9-4145-b147-88b6ca77ba63
 caps.latest.revision: 21
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1afc4902e818024e85f0f860173cece20ae9c73e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e9c9384790a07898862bf158f854b4af65395bf7
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49290585"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51739574"
 ---
 # <a name="how-can-i-debug-an-access-violation"></a>如何偵錯存取違規？
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

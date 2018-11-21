@@ -18,12 +18,12 @@ ms.assetid: a992f2c9-f68b-4146-8cc2-027753bf7ce6
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bf49ade15252a1adefa9fbf810a35f7c159e81e0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0f3c8d43e0186ff368494d65a681ded58ef7f2bd
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49852137"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51765937"
 ---
 # <a name="idebugprogramnode2gethostmachinenamev7"></a>IDebugProgramNode2::GetHostMachineName_V7
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -33,13 +33,13 @@ ms.locfileid: "49852137"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT GetHostMachineName_V7 (   
+HRESULT GetHostMachineName_V7 (   
    BSTR* pbstrHostMachineName  
 );  
 ```  
   
 ```csharp  
-int GetHostMachineName_V7 (   
+int GetHostMachineName_V7 (   
    out string pbstrHostMachineName  
 );  
 ```  

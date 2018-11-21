@@ -11,15 +11,15 @@ helpviewer_keywords:
 - UML model, validation constraints
 ms.assetid: 87b3b0da-122d-4121-9318-200c38ff49d0
 caps.latest.revision: 49
-author: alexhomer1
+author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: da21c3b8646ef69432259e4430b940824ad05dd8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6647d37636ed0e79d817113e388ae5df23a88a29
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49920660"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51782410"
 ---
 # <a name="define-validation-constraints-for-uml-models"></a>定義 UML 模型的驗證條件約束
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

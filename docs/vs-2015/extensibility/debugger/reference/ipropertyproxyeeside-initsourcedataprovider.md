@@ -17,12 +17,12 @@ ms.assetid: 5156f593-5052-4e3a-9d02-081916fb342d
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 50dc95ce6cb2e50d613b27a9fdae0e060643339f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 65f30cc32a0d82ffdeb4e2dadb3e333714da9d65
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49948612"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51801605"
 ---
 # <a name="ipropertyproxyeesideinitsourcedataprovider"></a>IPropertyProxyEESide::InitSourceDataProvider
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

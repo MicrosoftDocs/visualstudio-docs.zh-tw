@@ -18,15 +18,15 @@ dev_langs:
 - C++
 ms.assetid: f607af6f-57fe-472a-a32e-b6202067aa96
 caps.latest.revision: 8
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2dada2e6715dfc02cf17409912ed3a28a617285f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1248ab59841ccd2861507bbf075fcbeb93959ae4
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49261049"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51753046"
 ---
 # <a name="mixed-mode-debugging-is-only-supported-when-using-microsoft-net-framework-20-or-30"></a>只有使用 Microsoft .NET Framework 2.0 或 3.0 版本時才支援混合模式偵錯
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

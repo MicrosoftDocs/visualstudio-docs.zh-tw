@@ -15,12 +15,12 @@ ms.assetid: b75bbb51-8e42-41b1-bece-09ab0b1f03cc
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 22f297027d2196cf69c241f651fd84cbb18ecfa1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c4ff50fe0fe156c548351c378ba3a256e230ec43
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49184960"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51772014"
 ---
 # <a name="contained-languages"></a>包含的語言
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)] 

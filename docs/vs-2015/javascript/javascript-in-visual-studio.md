@@ -11,15 +11,15 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: f3eee13e-30e4-4bc1-81f5-058d7e379b75
 caps.latest.revision: 18
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e937f08ba73c8014bc7917fa0149b110ef349678
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a4bf4cfe1b5416638db4340427a10330b04fb206
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49897585"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51797594"
 ---
 # <a name="javascript-in-visual-studio"></a>Visual Studio 中的 JavaScript
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

@@ -18,15 +18,15 @@ helpviewer_keywords:
 - Caller/Callee view
 ms.assetid: d3511bcf-cce0-4cbe-aecb-b94c7c80ad1b
 caps.latest.revision: 37
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8e2eaae167f1d11097db8a27c355ea190ac5564a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7631085e0560c74ea162f8aeae9147bbcf9412e2
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49200274"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51784425"
 ---
 # <a name="callercallee-view"></a>呼叫端/被呼叫端檢視
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

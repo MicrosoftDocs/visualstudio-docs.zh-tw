@@ -15,12 +15,12 @@ ms.assetid: 2258fcdd-38d1-479d-b8f8-1d4e6525f72c
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c4f60a5b385ee24f2855e67e92f8a563d2603be0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a5eb9d92e3604224f3806cf64f2dd8d4529e8d01
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49183530"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51729058"
 ---
 # <a name="accessing-text-layers-by-using-the-legacy-api"></a>使用舊版 API 存取文字圖層
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

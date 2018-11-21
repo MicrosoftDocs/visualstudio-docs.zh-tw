@@ -13,15 +13,15 @@ helpviewer_keywords:
 - profiling tools, remote profiling
 ms.assetid: b8e76363-65cd-424d-8173-3e2b5f54203b
 caps.latest.revision: 21
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9f0e3c64575d7efe6ee724ee2486d7785a5f655f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ebffd85a3895a47ebaaa4e9739452c862ac8c4b7
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49205617"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51798623"
 ---
 # <a name="how-to-pause-and-resume-performance-data-collection"></a>如何︰暫停和繼續效能資料收集
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

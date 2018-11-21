@@ -17,12 +17,12 @@ ms.assetid: 70fd3c6f-2f82-43a3-993b-c1dc8aa080bf
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7be832b048040da87feaca0a6ea8709c4b1f1e6b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d3a30942f3f849278d2edf99413aac0aaa48286c
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49880713"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51784035"
 ---
 # <a name="ieevisualizerdataprovidercansetobjectforvisualizer"></a>IEEVisualizerDataProvider::CanSetObjectForVisualizer
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,14 +32,14 @@ ms.locfileid: "49880713"
 ## <a name="syntax"></a>語法  
   
 ```cpp  
-HRESULT CanSetObjectForVisualizer(  
-   BOOL* b  
+HRESULT CanSetObjectForVisualizer(  
+   BOOL* b  
 );  
 ```  
   
 ```csharp  
-int CanSetObjectForVisualizer(  
-   out int b  
+int CanSetObjectForVisualizer(  
+   out int b  
 );  
 ```  
   

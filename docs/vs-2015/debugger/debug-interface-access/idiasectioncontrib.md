@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaSectionContrib interface
 ms.assetid: 371d40f6-ca0e-4d7e-9210-64d3768996c6
 caps.latest.revision: 17
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e00a055f1d52233eb73e251340ec70f1642d707d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c15e3fa37eb53f5ef01134b1a8a8c7f078455231
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49225273"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51817824"
 ---
 # <a name="idiasectioncontrib"></a>IDiaSectionContrib
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "49225273"
 ## <a name="syntax"></a>語法  
   
 ```  
-IDiaSectionContrib : IUnknown  
+IDiaSectionContrib : IUnknown  
 ```  
   
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法  

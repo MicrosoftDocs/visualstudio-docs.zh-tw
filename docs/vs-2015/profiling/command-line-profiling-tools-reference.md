@@ -11,15 +11,15 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: a34ba40e-01b1-4386-90b1-c8e628a8c527
 caps.latest.revision: 13
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 01d37fe9dad323aa1ea78e6464e8f4b10fe65ed3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4ca70f57e10abdcf6e7511cef047386d2e3fa69d
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49194008"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51806707"
 ---
 # <a name="command-line-profiling-tools-reference"></a>命令列程式碼剖析工具參考
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

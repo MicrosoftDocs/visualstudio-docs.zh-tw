@@ -17,12 +17,12 @@ ms.assetid: 9810fc50-43c7-4916-9916-1cf333037b51
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8c3e45670976d0f7ba26312b39ce448b6736f8ea
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b2f2f757dfdf599cc5358e61824b340c0c76ce14
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49191837"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51768286"
 ---
 # <a name="reference-visual-studio-debugging-apis"></a>參考 (Visual Studio 偵錯 API)
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

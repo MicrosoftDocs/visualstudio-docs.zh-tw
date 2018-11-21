@@ -15,12 +15,12 @@ ms.assetid: cf6cc6c6-5a65-4f90-8f14-663decf74672
 caps.latest.revision: 33
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: dd08e17349008760fd029887c0bc17554ef4c7d8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1e68cf9d3e33ad07ab092de680078972dfaf2d70
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49848679"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51797451"
 ---
 # <a name="walkthrough-using-a-shortcut-key-with-an-editor-extension"></a>逐步解說︰搭配編輯器延伸模組使用快速鍵
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -71,7 +71,7 @@ this.layer = view.GetAdornmentLayer("PurpleCornerBox");
 3.  名為 KeyBindingCommandFilter 的類別應該繼承自<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>。  
   
     ```csharp  
-    internal class KeyBindingCommandFilter : IOleCommandTarget  
+    internal class KeyBindingCommandFilter : IOleCommandTarget  
     ```  
   
 4.  文字檢視的私用欄位下, 一個命令中加入命令鏈結中，以及表示是否已新增命令篩選器旗標。  
@@ -79,8 +79,8 @@ this.layer = view.GetAdornmentLayer("PurpleCornerBox");
     ```csharp  
     private IWpfTextView m_textView;  
     internal IOleCommandTarget m_nextTarget;  
-    internal bool m_added;  
-    internal bool m_adorned;  
+    internal bool m_added;  
+    internal bool m_adorned;  
     ```  
   
 5.  新增設定文字檢視的建構函式。  

@@ -11,15 +11,15 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: fd0a86b9-015d-408e-aa58-59a0a97826ac
 caps.latest.revision: 8
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a4e4268220531db9cdedeeb8fa6e1db27e6ebf87
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 47ff316a9725692d228c9bc1e8d1415b5e458f4a
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49853187"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51741717"
 ---
 # <a name="using-the-microsoft-monitoring-agent"></a>使用 Microsoft Monitoring Agent
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaSymbol::get_intrinsic method
 ms.assetid: f969f595-d9f9-48b9-adaa-63a6e4e09575
 caps.latest.revision: 7
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ab71cd1f648ef09bbd69b6eb764784a01f3a9c4c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a4518744ee85adc5d4deed33fbaae4b553ed75c3
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49887276"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51738005"
 ---
 # <a name="idiasymbolgetintrinsic"></a>IDiaSymbol::get_intrinsic
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "49887276"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT get_intrinsic(   
+HRESULT get_intrinsic(   
    BOOL* pRetVal)  
 );  
 ```  

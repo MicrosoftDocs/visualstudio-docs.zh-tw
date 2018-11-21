@@ -17,12 +17,12 @@ ms.assetid: a636d9d3-47c1-4b48-ac6b-bcfde19d6cf9
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5dd296d84d9d5bed9394a565f9692dd9a8aac069
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8621b437cd21d0294abee65386c40465888bd3e8
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49911950"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51740063"
 ---
 # <a name="scchistory-function"></a>SccHistory 函式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

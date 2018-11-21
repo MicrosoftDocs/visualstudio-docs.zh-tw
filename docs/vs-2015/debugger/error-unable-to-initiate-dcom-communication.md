@@ -18,15 +18,15 @@ dev_langs:
 - C++
 ms.assetid: 2a7b27e6-2526-4f32-bc4d-eaee447f24ec
 caps.latest.revision: 12
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 83b9bee3e67876ea941e3640c9f77906d8f53d96
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 69fc98b18b89e3720340298500b44e62b621f0c4
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49277273"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51807006"
 ---
 # <a name="error-unable-to-initiate-dcom-communication"></a>錯誤：無法啟始 DCOM 通訊
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

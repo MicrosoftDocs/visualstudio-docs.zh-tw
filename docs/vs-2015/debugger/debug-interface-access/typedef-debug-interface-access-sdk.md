@@ -15,15 +15,15 @@ helpviewer_keywords:
 - Typedef symbol [DIA SDK]
 ms.assetid: 9ab441b9-cc72-47fa-83e2-87b3c2b891b4
 caps.latest.revision: 18
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cdb4effcdff8a4eb6ffb23c9dfc4c39b35e613de
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 96779ffd9a7aa184ff907f8734ae1658d304f5fa
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49232696"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51793681"
 ---
 # <a name="typedef-debug-interface-access-sdk"></a>Typedef (偵錯介面存取 SDK)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

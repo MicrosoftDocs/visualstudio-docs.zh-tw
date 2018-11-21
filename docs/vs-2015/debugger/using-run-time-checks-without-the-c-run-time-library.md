@@ -29,15 +29,15 @@ helpviewer_keywords:
 - debugging [Visual Studio], run-time routines
 ms.assetid: 30ed90f3-9323-4784-80a4-937449eb54f6
 caps.latest.revision: 20
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 02d5128a3d80b7fabe3fd8cf774d5891a66fc20c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d4929b569c8d40413e948a4b208e7800afb39acb
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49263057"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51816771"
 ---
 # <a name="using-run-time-checks-without-the-c-run-time-library"></a>不使用 C 語言執行階段程式庫進行執行階段檢查
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

@@ -16,12 +16,12 @@ ms.assetid: 08a4f609-51a5-4723-b89f-99277fb18871
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 374ee45be29dd51a2a29d1c949939d1d3b939aa3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e40d52b4b5f194c04b9b46326a7d4d302c871cb5
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49171792"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51755744"
 ---
 # <a name="requiredframeworkversion-element-visual-studio-templates"></a>RequiredFrameworkVersion 項目 (Visual Studio 範本)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

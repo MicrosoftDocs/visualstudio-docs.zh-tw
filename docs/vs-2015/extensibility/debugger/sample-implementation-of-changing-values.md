@@ -16,12 +16,12 @@ ms.assetid: ee2d955b-12ca-4f27-89aa-c2d0e768b6b6
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bfe3559d1b5b49db5a9235d16227b5320fc0ef7f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: dd7be330e4db12be446683d460f19d5365bbd45a
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49847314"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51758607"
 ---
 # <a name="sample-implementation-of-changing-values"></a>變更值的範例實作
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

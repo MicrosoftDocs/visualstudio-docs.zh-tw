@@ -15,12 +15,12 @@ ms.assetid: 48a9d66e-d51c-4376-a95a-15796643a9f2
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1b707e92c3d7b576368b5d00459c2b329928a242
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 113cc2c061b008892921aac348f3eb56a7bef0d3
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49843167"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51742565"
 ---
 # <a name="implementing-command-handling-for-nested-projects"></a>實作巢狀專案的命令處理
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

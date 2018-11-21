@@ -14,15 +14,15 @@ helpviewer_keywords:
 - NameProfileA
 ms.assetid: 1bb05441-c4ff-4323-9fef-f3924fba4430
 caps.latest.revision: 21
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dfe1b5fb517ed7b886e681081ac7910cfe717cc6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7e56788c36e8c77ec134ed24a7636475c54da664
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49867165"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51733833"
 ---
 # <a name="nameprofile"></a>NameProfile
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

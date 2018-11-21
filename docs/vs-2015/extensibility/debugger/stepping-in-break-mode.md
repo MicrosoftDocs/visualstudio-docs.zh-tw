@@ -17,12 +17,12 @@ ms.assetid: b08dc8ee-6c63-4462-a097-6f525cfbb35a
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6ac13b201534289cdb161980716bbfdeda7b969e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4400bcbecce322185ec514e6d05ac9a37e27fdde
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49240600"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51749089"
 ---
 # <a name="stepping-in-break-mode"></a>在中斷模式中逐步執行
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

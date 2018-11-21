@@ -13,12 +13,12 @@ ms.assetid: ff978cc2-5a25-46d6-921b-e51adaa65992
 caps.latest.revision: 16
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: a9361c60413192aa91a618ad0c6acc074f23264a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f2e7af8227e11d554a4f953593dad396d5543aca
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49274634"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51745208"
 ---
 # <a name="application-lifecycle-management-alm-with-xamarin-apps"></a>應用程式生命週期管理 (ALM) 與 Xamarin 應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

@@ -19,15 +19,15 @@ helpviewer_keywords:
 - walkthroughs [Visual Studio], visualizers
 ms.assetid: 53467461-8e0f-45ee-9bc4-374bbaeaf00f
 caps.latest.revision: 36
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ab85428e0ba912aa5a125b189259c43bbcd58d20
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e265810e30423064e27b1650f57fb054743341ce
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49900523"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51817330"
 ---
 # <a name="walkthrough-writing-a-visualizer-in-c"></a>逐步解說：在 C# 中撰寫視覺化檢視 #
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

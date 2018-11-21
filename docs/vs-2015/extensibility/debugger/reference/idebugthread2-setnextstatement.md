@@ -17,12 +17,12 @@ ms.assetid: 9e2834dd-4ecf-45af-8e6c-f9318ebdac06
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3624d6a98f250f63afbf5b6ec6ab3a176cfa1358
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5956a57e9bd6db646091a5c0b7a0948d3cdac4bb
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49950403"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51776235"
 ---
 # <a name="idebugthread2setnextstatement"></a>IDebugThread2::SetNextStatement
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,14 +32,14 @@ ms.locfileid: "49950403"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT SetNextStatement (   
+HRESULT SetNextStatement (   
    IDebugStackFrame2*  pStackFrame,  
    IDebugCodeContext2* pCodeContext  
 );  
 ```  
   
 ```csharp  
-int SetNextStatement (   
+int SetNextStatement (   
    IDebugStackFrame2  pStackFrame,  
    IDebugCodeContext2 pCodeContext  
 );  

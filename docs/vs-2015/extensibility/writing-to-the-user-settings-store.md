@@ -13,12 +13,12 @@ ms.assetid: efd27f00-7fe5-45f8-9b97-371af732be97
 caps.latest.revision: 4
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 90d34ebf751ee62fd7779a92214f42779cf84b59
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 70522d8a291cad559a042dab7f4eeb3c3c4684ac
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49202042"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51779719"
 ---
 # <a name="writing-to-the-user-settings-store"></a>寫入使用者設定存放區
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

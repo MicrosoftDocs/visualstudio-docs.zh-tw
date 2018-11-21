@@ -17,12 +17,12 @@ ms.assetid: 57dfdbc2-4e68-4dbf-9579-006cd6fb1c62
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e1a2f9fede9119b4db0baf45e61213bcb2b5b67c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5790fdd73261bd4f07c04239e0df3eaab037d2c1
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49177758"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51740028"
 ---
 # <a name="idebugbreakevent2"></a>IDebugBreakEvent2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

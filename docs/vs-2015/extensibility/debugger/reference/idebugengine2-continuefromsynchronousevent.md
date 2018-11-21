@@ -17,12 +17,12 @@ ms.assetid: 9a57dfcd-df8e-4be5-b1fe-bd853e3c6bb2
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2269644a4de6aeb69f70ac18995f1b0d32ac46d6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: cac253f92eee14840e658a48eb7a0727e8281b5e
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49949509"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51740084"
 ---
 # <a name="idebugengine2continuefromsynchronousevent"></a>IDebugEngine2::ContinueFromSynchronousEvent
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,13 +32,13 @@ ms.locfileid: "49949509"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT ContinueFromSynchronousEvent(   
+HRESULT ContinueFromSynchronousEvent(   
    IDebugEvent2* pEvent  
 );  
 ```  
   
 ```csharp  
-HRESULT ContinueFromSynchronousEvent(   
+HRESULT ContinueFromSynchronousEvent(   
    IDebugEvent2 pEvent  
 );  
 ```  

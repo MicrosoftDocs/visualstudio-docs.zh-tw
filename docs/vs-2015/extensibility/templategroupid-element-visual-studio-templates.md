@@ -18,12 +18,12 @@ ms.assetid: bce7b49a-90bc-4691-aff3-a87e209f6d83
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7a6c2852938e77f87143b3ddd15fce0a4a6e5bcd
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9955b577db6f2e1ab7c34ed7b97b242d7b763c72
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49203914"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51792199"
 ---
 # <a name="templategroupid-element-visual-studio-templates"></a>TemplateGroupID 項目 (Visual Studio 範本)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

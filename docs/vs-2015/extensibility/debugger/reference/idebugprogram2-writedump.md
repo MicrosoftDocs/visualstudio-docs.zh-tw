@@ -17,12 +17,12 @@ ms.assetid: 375afb8c-882d-44db-bfa7-e2c9eb555122
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e072d747a17c155eec2b089c0c6557654b2aa67a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c895d7bb35dd700552d1db664ae6dbf8c617114c
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49858520"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51723435"
 ---
 # <a name="idebugprogram2writedump"></a>IDebugProgram2::WriteDump
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,14 +32,14 @@ ms.locfileid: "49858520"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT WriteDump(   
+HRESULT WriteDump(   
    DUMPTYPE  DumpType,  
    LPCOLESTR pszDumpUrl  
 );  
 ```  
   
 ```csharp  
-int WriteDump(   
+int WriteDump(   
    enum_DUMPTYPE  DumpType,  
    string         pszDumpUrl  
 );  

@@ -15,15 +15,15 @@ helpviewer_keywords:
 - CvLeaveSpan method
 ms.assetid: 3bf65fdf-a471-4efd-ac7a-03e701bbae5d
 caps.latest.revision: 8
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 057efa489206fcdbe6627c7059fb0509d7bea7cc
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 859ca4d0050ff0fe457048bb03ae9e38d75f3542
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49175365"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51721802"
 ---
 # <a name="cvleavespan-function"></a>CvLeaveSpan 函式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

@@ -18,15 +18,15 @@ helpviewer_keywords:
 - memory leaks, JavaScript example
 ms.assetid: f595412f-776b-49a2-8433-ea0062c6904d
 caps.latest.revision: 36
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 17bb1aaaae10c5c23968634ae06773909c27ffcb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e2b84adac23547f42cca6113c5f5a7090f224e8c
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49929563"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51744942"
 ---
 # <a name="walkthrough-find-a-memory-leak-javascript"></a>逐步解說：尋找記憶體遺漏 (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

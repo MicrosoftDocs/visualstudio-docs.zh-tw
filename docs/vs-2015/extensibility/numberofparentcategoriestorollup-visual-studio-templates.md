@@ -18,12 +18,12 @@ ms.assetid: 6f9d36f5-ae23-4a92-8132-b11799e2c21a
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 32806124c556ff389b3451d9c74ff72ce3a0ef78
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b0b766c9064f8a6f6f09036d602365d37a9174dc
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49188241"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51769710"
 ---
 # <a name="numberofparentcategoriestorollup-visual-studio-templates"></a>NumberOfParentCategoriesToRollUp (Visual Studio 範本)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

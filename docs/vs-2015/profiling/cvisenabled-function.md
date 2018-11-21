@@ -17,15 +17,15 @@ helpviewer_keywords:
 - CvIsEnabledEx method
 ms.assetid: 2e4fea6d-758d-4150-8744-6102a1d58c1c
 caps.latest.revision: 8
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4349d42309482622ae57ba27bb3e675bbdd6a403
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 91a8a0a27456299a914b2919aaf169fa72edf540
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49222465"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51723893"
 ---
 # <a name="cvisenabled-function"></a>CvIsEnabled 函式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

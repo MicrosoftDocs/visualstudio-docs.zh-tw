@@ -11,15 +11,15 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 2cdd9903-39db-47e8-93dd-5e6a21bc3435
 caps.latest.revision: 22
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: eb1d242e729ccf6c369e1e9234796444bd45cdcf
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ccdf566de19a193bf7dfca58831c7a7be2734619
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49846534"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51790782"
 ---
 # <a name="how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-memory-data-by-using-the-profiler-command-line"></a>如何：使用程式碼剖析工具命令列檢測動態編譯的 ASP.NET Web 應用程式並收集記憶體資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

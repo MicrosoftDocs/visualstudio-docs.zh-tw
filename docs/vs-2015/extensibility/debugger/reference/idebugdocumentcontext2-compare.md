@@ -17,12 +17,12 @@ ms.assetid: 2327b1ba-52d0-42fb-a01e-63cb4b332d2f
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3f4ddd3958bbe470500de91dd82b5467fa283a15
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3d440f585cca5b531fbd97cbbfe6b1ff852cec9d
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49833398"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51744906"
 ---
 # <a name="idebugdocumentcontext2compare"></a>IDebugDocumentContext2::Compare
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "49833398"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT Compare(   
+HRESULT Compare(   
    DOCCONTEXT_COMPARE       compare,  
    IDebugDocumentContext2** rgpDocContextSet,  
    DWORD                    dwDocContextSetLen,  
@@ -41,7 +41,7 @@ HRESULT Compare(
 ```  
   
 ```csharp  
-int Compare(   
+int Compare(   
    enum_ DOCCONTEXT_COMPARE compare,  
    IDebugDocumentContext2[] rgpDocContextSet,  
    uint                     dwDocContextSetLen,  

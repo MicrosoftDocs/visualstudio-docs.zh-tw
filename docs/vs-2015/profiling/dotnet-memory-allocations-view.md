@@ -18,15 +18,15 @@ helpviewer_keywords:
 - profiling tools reports, Allocation view
 ms.assetid: 01eb876e-c413-4516-977b-4f896929e8a6
 caps.latest.revision: 32
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6a171613c4bd6f34b826869214d11d247c9c59a9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 73a2be1314b01a0a7de73f71794bc94b18f0e851
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49924001"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51760350"
 ---
 # <a name="net-memory-allocations-view"></a>.NET 記憶體配置檢視
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

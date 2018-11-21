@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaSourceFile::get_fileName method
 ms.assetid: a5cb8927-23c6-469e-8f78-f2787d85dba4
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a361d0f9b69f635fb19cfcead96a0401c16cee00
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b7816f87d344467804e51060416950ba5eec2e20
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49813579"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51792043"
 ---
 # <a name="idiasourcefilegetfilename"></a>IDiaSourceFile::get_fileName
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "49813579"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT get_fileName (   
+HRESULT get_fileName (   
    BSTR* pRetVal  
 );  
 ```  

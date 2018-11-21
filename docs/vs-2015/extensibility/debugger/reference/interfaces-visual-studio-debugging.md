@@ -15,12 +15,12 @@ ms.assetid: 79875cbb-f946-49d4-94eb-941d0e1a40b2
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a6f75e4a81199f4cc7452392bb55ffdfe871e66d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: eefaa61cb0bbac0746c886699e7e20cc5d5045eb
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49195815"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51803080"
 ---
 # <a name="interfaces-visual-studio-debugging"></a>介面 (Visual Studio 偵錯)
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

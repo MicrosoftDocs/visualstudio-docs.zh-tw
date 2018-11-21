@@ -15,12 +15,12 @@ ms.assetid: edd3f2ff-ca32-4465-8ace-4330493b67bb
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f8645a853e1be5b3ef43f2e471b2c2a6a0f143d2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 614acd30985df51c7089f93f067e95bd6ec1f12e
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49269329"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51749370"
 ---
 # <a name="source-control-vspackage-design-elements"></a>原始檔控制 VSPackage 的設計項目
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

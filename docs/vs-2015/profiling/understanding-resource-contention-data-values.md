@@ -14,15 +14,15 @@ helpviewer_keywords:
 - Profiling Tools, concurrency method
 ms.assetid: 071c0f0f-1eba-4dc8-ae87-0810e4086dd0
 caps.latest.revision: 14
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f9a6ac882a258767fd1de1ebd45015e9b86912e9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 64bad925b7d0ac6170a4ac581fc327450aa2dd04
+ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49911989"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "51948110"
 ---
 # <a name="understanding-resource-contention-data-values"></a>認識資源爭用資料值
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

@@ -17,12 +17,12 @@ ms.assetid: 1b496acc-b326-4cdb-bb48-e3b5c6f12e05
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1ad12e0884818688c56643e72cb62b7dbfe6f194
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: fe3bb7b5a97fc0e840a425231765f3d33fb98764
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49234932"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51785894"
 ---
 # <a name="wizard-support-for-nested-projects"></a>巢狀專案的精靈支援
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

@@ -11,15 +11,15 @@ helpviewer_keywords:
 - UML API, transactions
 ms.assetid: a1df6c38-a3d1-4a3f-82bc-c8f363ab916e
 caps.latest.revision: 18
-author: alexhomer1
+author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 99cbbb2a2c67ec077fec8554694cba58fc37bd59
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: fb8bb5dfd5238871324b786f120d618d70f14b43
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49844493"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51800402"
 ---
 # <a name="link-uml-model-updates-by-using-transactions"></a>使用異動連結 UML 模型更新
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

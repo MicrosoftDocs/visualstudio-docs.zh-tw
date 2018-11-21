@@ -14,15 +14,15 @@ helpviewer_keywords:
 - Spy++, searching
 ms.assetid: db0c32cf-8e50-4e1b-9a9f-4c07fd6a2163
 caps.latest.revision: 7
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e85abd53bd7f9c133115c562f9d3d291c60ae27e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 44e2318fe7de45e8d2b66e1d87df562c4eabc7c5
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49285190"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51730163"
 ---
 # <a name="search-tools-for-spy-views"></a>Spy++ 檢視的搜尋工具
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

@@ -15,12 +15,12 @@ ms.assetid: be6e504d-4ab3-4141-a61b-0953ee0e038e
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 669d764b58d9655c4337ce548f248a646441937c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 192eac33a668f85412aad5e1abc6898f08b26c32
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49189952"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51748283"
 ---
 # <a name="idebugarrayobject2"></a>IDebugArrayObject2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

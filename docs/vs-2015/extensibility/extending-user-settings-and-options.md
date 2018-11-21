@@ -18,12 +18,12 @@ ms.assetid: 5bb6277a-8c9d-48c8-9b4e-1cb3052caded
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: defc56dc9ebe924a4aee660c1d73072a2c3df7ea
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: bcbb1d86c024c3623b0f0061e7415855672e1c79
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49177628"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51783372"
 ---
 # <a name="extending-user-settings-and-options"></a>延伸使用者設定和選項
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

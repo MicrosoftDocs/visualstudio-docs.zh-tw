@@ -15,12 +15,12 @@ ms.assetid: 9e12500c-2c1c-49b1-a0ba-e08366c97eb8
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 048674fb1b024b5a4d7fa602a4757d81347c769b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 990e15dfee18c4158ca145e89ec3137b72ae6454
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49812253"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51788754"
 ---
 # <a name="guidarray"></a>GUID_ARRAY
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

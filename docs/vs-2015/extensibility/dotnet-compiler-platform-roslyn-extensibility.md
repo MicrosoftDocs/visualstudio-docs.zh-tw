@@ -13,12 +13,12 @@ ms.assetid: 564201b3-1e18-4b88-b615-42c2f57f3fe8
 caps.latest.revision: 5
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 67429d7d5703aceeaf135f49451ec1895b78d397
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: de01ec4f857042c6eaaaa70632b28cfc830886cb
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49209959"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51817083"
 ---
 # <a name="net-compiler-platform-quotroslynquot-extensibility"></a>.NET 編譯器平台 (&quot;Roslyn&quot;) 擴充性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

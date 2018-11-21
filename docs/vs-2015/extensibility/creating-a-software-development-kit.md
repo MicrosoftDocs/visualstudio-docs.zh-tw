@@ -13,12 +13,12 @@ ms.assetid: 8496afb4-1573-4585-ac67-c3d58b568a12
 caps.latest.revision: 55
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 296bc30089d4c0f4b2b739e1dd977fd66cba1ace
-ms.sourcegitcommit: 1abb9cf4c3ccb90e3481ea8079272c98aad12875
+ms.openlocfilehash: a7c3ff7a3a8c872c4b624c8d2956a6802a0ab139
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/26/2018
-ms.locfileid: "50143290"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51723669"
 ---
 # <a name="creating-a-software-development-kit"></a>建立軟體開發套件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

@@ -18,12 +18,12 @@ ms.assetid: 3ffc4312-c6db-4759-a946-a4bb85f4a17a
 caps.latest.revision: 36
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: af377c3f0ff5e49e43d00395d8f08bf4498e6636
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 00ed8231641718b6d0dce8d535b0c43e40b83dd8
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49883955"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51783034"
 ---
 # <a name="making-commands-available"></a>提供可用的命令
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ ms.locfileid: "49883955"
 ## <a name="delayed-loading"></a>延遲載入  
  若要啟用的一般方式延遲載入是設計的 VSPackage，讓其命令會顯示在 UI 中，但直到使用者按一下其中一個命令，將不載入封裝本身。 若要這麼做，在.vsct 檔案中，建立不有任何命令旗標的命令。  
   
- 下列範例顯示從.vsct 檔案功能表命令的定義。 這是 Visual Studio 封裝範本所產生的命令時**功能表命令**選取範本中的選項。  
+ 下列範例顯示從.vsct 檔案功能表命令的定義。 這是 Visual Studio Package 範本所產生的命令時**功能表命令**選取範本中的選項。  
   
 ```xml  
 <Button guid="guidTopLevelMenuCmdSet" id="cmdidTestCommand" priority="0x0100" type="Button">  

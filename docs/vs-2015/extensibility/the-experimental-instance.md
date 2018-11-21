@@ -17,12 +17,12 @@ ms.assetid: ead0df4e-6f88-4b42-9297-581b7902f050
 caps.latest.revision: 37
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 212fc490c26ab66284cf7bdfa4e51946c817266d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b529ba3a0ea8b38a27d06e03ce15106cbd7512a5
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49220437"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51787987"
 ---
 # <a name="the-experimental-instance"></a>實驗執行個體
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

@@ -15,12 +15,12 @@ ms.assetid: 2116d3d0-c46c-4d0a-b482-08a178584f46
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7f848c64072ebd77dfa3494b5dfc390c34855948
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 16b7a139a3f1061516f779cb9b384bfb69eda7d3
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49940849"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51740955"
 ---
 # <a name="application-of-settings-across-multiple-project-connections"></a>跨多個專案連線套用設定
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

@@ -11,15 +11,15 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 48f12f6e-57b4-48ec-a145-89fa71a42424
 caps.latest.revision: 22
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d76c3e2b6caada74deb6d7c99dead93b0cf7e65c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2f419e80cec27807ba3bd7ac98f7fb7108a49377
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49825303"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51802131"
 ---
 # <a name="walkthrough-capturing-graphics-information"></a>逐步解說：擷取圖形資訊
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

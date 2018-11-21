@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaStackFrame::get_systemExceptionHandling
 ms.assetid: c76cf265-dea0-4159-883f-32b50bbef044
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 89ccde509168390acc932aec6f1ee4338fe21822
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2c291224c8bbe783a2fd6cef814c335fa87ad31e
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49819884"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51796268"
 ---
 # <a name="idiastackframegetsystemexceptionhandling"></a>IDiaStackFrame::get_systemExceptionHandling
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "49819884"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT get_systemExceptionHandling (   
+HRESULT get_systemExceptionHandling (   
    BOOL* pRetVal  
 );  
 ```  

@@ -17,12 +17,12 @@ ms.assetid: 39631545-2b0e-45b4-978b-d63656484b02
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5d8e332974859693cab75c5345f7ec6b03548d8b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 279851ef90b35f8862bd099c0460fb2860e38d96
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49843960"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51784835"
 ---
 # <a name="providerfields"></a>PROVIDER_FIELDS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,17 +32,17 @@ ms.locfileid: "49843960"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-enum enum_PROVIDER_FIELDS {  
-   PFIELD_PROGRAM_NODES       = 0x01,  
-   PFIELD_IS_DEBUGGER_PRESENT = 0x02  
+enum enum_PROVIDER_FIELDS {  
+   PFIELD_PROGRAM_NODES       = 0x01,  
+   PFIELD_IS_DEBUGGER_PRESENT = 0x02  
 };  
 typedef DWORD PROVIDER_FIELDS;  
 ```  
   
 ```csharp  
-public enum enum_PROVIDER_FIELDS {  
-   PFIELD_PROGRAM_NODES       = 0x01,  
-   PFIELD_IS_DEBUGGER_PRESENT = 0x02  
+public enum enum_PROVIDER_FIELDS {  
+   PFIELD_PROGRAM_NODES       = 0x01,  
+   PFIELD_IS_DEBUGGER_PRESENT = 0x02  
 };  
 ```  
   

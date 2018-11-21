@@ -17,12 +17,12 @@ ms.assetid: e65b4b15-46d8-4ca7-9456-2b4c078f7cf9
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3c75fbcbb7a79202fe9e2bf5dec6f6b330fadb8e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e3a20d5adff505cd7e869b63830e840d44f390a3
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49831246"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51761694"
 ---
 # <a name="idebugprogramnode2gethostpid"></a>IDebugProgramNode2::GetHostPid
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,13 +32,13 @@ ms.locfileid: "49831246"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT GetHostPid (   
+HRESULT GetHostPid (   
    AD_PROCESS_ID * pdwHostPid  
 );  
 ```  
   
 ```csharp  
-int GetHostPid (   
+int GetHostPid (   
    out AD_PROCESS_ID pdwHostPid  
 );  
 ```  

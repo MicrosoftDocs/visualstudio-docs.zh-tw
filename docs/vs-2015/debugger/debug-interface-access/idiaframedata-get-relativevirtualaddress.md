@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaFrameData::get_relativeVirtualAddress method
 ms.assetid: de070ef4-6c9d-43ca-911c-5245cbcb8dbe
 caps.latest.revision: 12
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 20735a9c7efc1ce9676dbd4e5ac187c6a0dbd789
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8c88db89b92319f480d91d97ed0523a8a25676df
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49904488"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51793018"
 ---
 # <a name="idiaframedatagetrelativevirtualaddress"></a>IDiaFrameData::get_relativeVirtualAddress
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "49904488"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT get_relativeVirtualAddress (   
+HRESULT get_relativeVirtualAddress (   
    DWORD* pRetVal  
 );  
 ```  

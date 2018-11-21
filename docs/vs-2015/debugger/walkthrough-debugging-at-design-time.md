@@ -25,15 +25,15 @@ helpviewer_keywords:
 - design-time debugging
 ms.assetid: 35bfdd2c-6f60-4be1-ba9d-55fce70ee4d8
 caps.latest.revision: 23
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a4ff1d0e1c155784bd6116be2bc6eb63e6c53d80
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4b6660bc4d9cf0073f1e18b0960c3fa9c0ae9c13
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49227225"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51737773"
 ---
 # <a name="walkthrough-debugging-at-design-time"></a>逐步解說：在設計階段進行偵錯
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

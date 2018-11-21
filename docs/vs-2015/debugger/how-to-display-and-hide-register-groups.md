@@ -25,15 +25,15 @@ helpviewer_keywords:
 - register groups, displaying and hiding
 ms.assetid: 6be5dfb4-4cfe-4daf-b538-60405640857d
 caps.latest.revision: 31
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2ff44cb0977103d7169ac0b3f14a8bf0fb8f6c7c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 63c23193dd0ef3d697a2346bb61bbc0b1f686e76
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49206488"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51739897"
 ---
 # <a name="how-to-display-and-hide-register-groups"></a>如何：顯示和隱藏暫存器群組
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

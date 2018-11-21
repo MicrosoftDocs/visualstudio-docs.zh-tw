@@ -17,12 +17,12 @@ ms.assetid: 40dad2be-57ff-4f74-9d82-c48039c125c4
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fdbd6ec439fc46b0ecab7621d4f793c1b3e33450
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5d5a939bbb14fa820811fc2f40907cb635aa9027
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49893477"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51751690"
 ---
 # <a name="ieevisualizerdataprovidersetobjectforvisualizer"></a>IEEVisualizerDataProvider::SetObjectForVisualizer
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,18 +32,18 @@ ms.locfileid: "49893477"
 ## <a name="syntax"></a>語法  
   
 ```cpp  
-HRESULT SetObjectForVisualizer(  
-   IDebugObject*  pNewObject,  
-   BSTR*          error,  
-   IDebugObject** pException  
+HRESULT SetObjectForVisualizer(  
+   IDebugObject*  pNewObject,  
+   BSTR*          error,  
+   IDebugObject** pException  
 );  
 ```  
   
 ```csharp  
-int SetObjectForVisualizer(  
-   IDebugObject     pNewObject,  
-   out string       error,  
-   out IDebugObject pException  
+int SetObjectForVisualizer(  
+   IDebugObject     pNewObject,  
+   out string       error,  
+   out IDebugObject pException  
 );  
 ```  
   

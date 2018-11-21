@@ -15,15 +15,15 @@ helpviewer_keywords:
 - Concurrency Visualizer, Callstack at Selection Point
 ms.assetid: 2c7b1ae5-3756-4795-bc59-f6bb113f2ba5
 caps.latest.revision: 15
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 598b2945d5d7727ed82fab6f695af47b5b564609
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0731118ae3e14d319507851005e4d15a2c2c4ffa
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49253301"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51726734"
 ---
 # <a name="current-tab"></a>目前索引標籤
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

@@ -11,15 +11,15 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: fdd41576-797e-4312-8520-fee7bb767e4a
 caps.latest.revision: 34
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4e68155fc835bd17b2ccc5dcf6f639f060774324
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f0523b367ec00dd7551dcf30f5002d855a99bf79
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49276623"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51790405"
 ---
 # <a name="how-to-attach-the-profiler-to-a-net-framework-stand-alone-application-to-collect-concurrency-data-by-using-the-command-line"></a>如何：使用命令列將程式碼剖析工具附加至 .NET Framework 獨立應用程式以收集並行資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

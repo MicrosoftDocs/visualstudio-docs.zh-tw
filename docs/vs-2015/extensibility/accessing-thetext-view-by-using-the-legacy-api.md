@@ -15,12 +15,12 @@ ms.assetid: 8f751f72-c972-4be3-84ee-19c281e02e25
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 943a55f09404224ec3d9b793c2ff473b90a66f0d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 83204584f786edf0784878aeaad90eb309aa321a
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49296188"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51758132"
 ---
 # <a name="accessing-thetext-view-by-using-the-legacy-api"></a>使用舊版 API 存取 theText 檢視
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

@@ -15,12 +15,12 @@ ms.assetid: c1e31f76-42a1-4c3d-afb2-664044ef12fd
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5f49ac150af84cdd5dfae52e905cb353722b0ed0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 693f4560d181aa765946bdd971f835ee651daed1
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49243629"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51759945"
 ---
 # <a name="strings-used-as-keys-for-finding-a-source-control-plug-in"></a>用作索引鍵以尋找原始檔控制外掛程式的字串
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

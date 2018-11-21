@@ -18,15 +18,15 @@ dev_langs:
 - C++
 ms.assetid: dda1acb8-bed7-4bc8-9991-9cdc49c2ac1e
 caps.latest.revision: 13
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8907dac5310e2f70ff5a7053cc564e72b0b2cd98
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2b76fbea5871bc4662779098f1d83dab537554e1
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49186039"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51802482"
 ---
 # <a name="error-firewall-no-authentication"></a>錯誤：非驗證防火牆
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

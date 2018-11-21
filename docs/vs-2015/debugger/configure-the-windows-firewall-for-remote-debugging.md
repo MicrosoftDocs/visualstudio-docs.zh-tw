@@ -11,15 +11,15 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 66e3230a-d195-4473-bbce-8ca198516014
 caps.latest.revision: 6
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 96b4e4cc929dc7941fac5e8a7f090e701fe2810f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 39854b47bd31660fdc523bfd122363d5958df8e2
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49935389"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51734589"
 ---
 # <a name="configure-the-windows-firewall-for-remote-debugging"></a>設定 Windows 防火牆進行遠端偵錯
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

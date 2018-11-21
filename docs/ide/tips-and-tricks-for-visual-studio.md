@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cde519515782f453a8a60894a8bcc6dc6c714cc1
-ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
+ms.openlocfilehash: 039d0caac98bdb574f2e42303ccb001e9600a740
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "51220849"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51348939"
 ---
 # <a name="keyboard-shortcuts-for-visual-studio"></a>Visual Studio 的鍵盤快速鍵
 
@@ -22,6 +22,9 @@ ms.locfileid: "51220849"
 
 > [!TIP]
 > 這裡列出的快速鍵只是可用鍵盤快速鍵的子集。 如需更完整的清單，請參閱[預設鍵盤快速鍵](../ide/default-keyboard-shortcuts-in-visual-studio.md)。
+
+> [!NOTE]
+> 本主題適用於 Windows 上的 Visual Studio。 針對 Visual Studio for Mac，請參閱 [Visual Studio for Mac 中的常用鍵盤快速鍵](/visualstudio/mac/keyboard-shortcuts)。
 
 ## <a name="window-management"></a>視窗管理
 
@@ -136,4 +139,5 @@ ms.locfileid: "51220849"
 
 - [協助工具祕訣和訣竅](../ide/reference/accessibility-tips-and-tricks.md)
 - [鍵盤快速鍵 (Azure DevOps Services 和 TFS)](/azure/devops/project/navigation/keyboard-shortcuts?view=vsts)
-- [Visual Studio 秘訣和訣竅部落格](https://blogs.msdn.com/b/zainnab)
+- [Visual Studio 秘訣和訣竅部落格](https://blogs.msdn.microsoft.com/zainnab/)
+- [Visual Studio for Mac 中的常用鍵盤快速鍵](/visualstudio/mac/keyboard-shortcuts)

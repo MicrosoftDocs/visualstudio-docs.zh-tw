@@ -17,12 +17,12 @@ ms.assetid: 79221c6b-a924-4c8e-a778-e312e4e0c0c8
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 136b371b6d024a93e2a4cb4cadd792928db49800
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7614a82e4c25c2896fa98ba9685de0a6a5920fbc
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49197960"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51770807"
 ---
 # <a name="breakpoint-errors"></a>中斷點錯誤
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

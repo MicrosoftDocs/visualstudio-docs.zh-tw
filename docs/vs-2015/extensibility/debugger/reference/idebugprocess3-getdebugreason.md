@@ -17,12 +17,12 @@ ms.assetid: f23fbabc-8b18-4278-bebf-4cdc7091513c
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0e64bcc61c701d775e50571feb6c3f5cceca22bf
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a68751c4604fe579b780d8081ad30d9de94200e8
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49884195"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51793954"
 ---
 # <a name="idebugprocess3getdebugreason"></a>IDebugProcess3::GetDebugReason
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,8 +32,8 @@ ms.locfileid: "49884195"
 ## <a name="syntax"></a>語法  
   
 ```cpp  
-HRESULT GetDebugReason(  
-   DEBUG_REASON* pReason  
+HRESULT GetDebugReason(  
+   DEBUG_REASON* pReason  
 );  
 ```  
   

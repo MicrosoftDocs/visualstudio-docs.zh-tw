@@ -14,15 +14,15 @@ helpviewer_keywords:
 - code analysis,C/C++
 ms.assetid: 6110b8ba-0af6-4acd-b1ba-bb0551f90e44
 caps.latest.revision: 10
-author: corob-msft
-ms.author: gewarren
+author: mikeblome
+ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 3d841150a35e88a1ac5bf8a300f9c74fc8bbdf99
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 56f14abab372a6a6e533675b070d420a4dfc7a5e
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49851058"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51758200"
 ---
 # <a name="quick-start-code-analysis-for-cc"></a>快速入門：C/C++ 程式碼分析
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

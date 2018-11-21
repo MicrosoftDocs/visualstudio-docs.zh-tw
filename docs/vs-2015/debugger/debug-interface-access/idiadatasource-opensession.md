@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaDataSource::openSession method
 ms.assetid: a3319ed0-3979-483b-9852-c0af96852c48
 caps.latest.revision: 10
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ac1a21bbc56a112a7e2c102c2df77a5ab910e11d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 79c3ec1974341ddee0a147830491bf324b1fe0c5
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49901342"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51769837"
 ---
 # <a name="idiadatasourceopensession"></a>IDiaDataSource::openSession
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "49901342"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT openSession (   
+HRESULT openSession (   
    IDiaSession** ppSession  
 );  
 ```  

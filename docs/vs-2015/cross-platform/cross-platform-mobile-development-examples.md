@@ -13,15 +13,15 @@ dev_langs:
 - C++
 ms.assetid: bc384c12-fccc-45d7-9fb9-b90d536aa663
 caps.latest.revision: 5
-author: BrianPeek
-ms.author: brpeek
+author: corob-msft
+ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 27faa0111bba30d7551a11ab0354cfd7df8926ee
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 204aafd41427f46c86146b9867880137cf1b096b
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49939332"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51795267"
 ---
 # <a name="cross-platform-mobile-development-examples"></a>跨平台行動開發範例
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

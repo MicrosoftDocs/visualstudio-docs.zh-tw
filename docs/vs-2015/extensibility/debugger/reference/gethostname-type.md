@@ -17,12 +17,12 @@ ms.assetid: 2be92bea-8133-412b-9015-1833baf16e1b
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 845ec1b24125ee21874efda0b19c956d1e055d8e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ae1060507d20f6416168e41f2e09ecbc45ee7a37
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49848406"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51732639"
 ---
 # <a name="gethostnametype"></a>GETHOSTNAME_TYPE
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "49848406"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-enum enum_GETHOSTNAME_TYPE {   
+enum enum_GETHOSTNAME_TYPE {   
    GHN_FRIENDLY_NAME = 0,  
    GHN_FILE_NAME     = 1  
 };  
@@ -40,7 +40,7 @@ typedef DWORD GETHOSTNAME_TYPE;
 ```  
   
 ```csharp  
-public enum enum_GETHOSTNAME_TYPE {   
+public enum enum_GETHOSTNAME_TYPE {   
    GHN_FRIENDLY_NAME = 0,  
    GHN_FILE_NAME     = 1  
 };  

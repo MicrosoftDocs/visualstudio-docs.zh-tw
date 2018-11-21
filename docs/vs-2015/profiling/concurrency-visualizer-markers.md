@@ -13,15 +13,15 @@ f1_keywords:
 - vs.cv.markersui
 ms.assetid: c4692d17-6cd2-4ad1-8590-d7275c771c70
 caps.latest.revision: 17
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2cfbc1f3fd18b14891ecac825545bbdaeddad039
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4fa2a57d08f2b86fec573f02129a326907e3e3a9
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49830187"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51790444"
 ---
 # <a name="concurrency-visualizer-markers"></a>並行視覺化檢視中的標記
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

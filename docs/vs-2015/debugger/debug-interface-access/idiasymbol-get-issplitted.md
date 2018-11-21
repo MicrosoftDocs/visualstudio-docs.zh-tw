@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaSymbol::get_isSplitted method
 ms.assetid: ff160cf6-003b-4ef5-a406-20a7b287b2bf
 caps.latest.revision: 10
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c5c1be281ddc1d34e13055313de7aaa349e9acf1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e0d8b220c4df7a5381f2d436e23148724df058cb
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49890799"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51730270"
 ---
 # <a name="idiasymbolgetissplitted"></a>IDiaSymbol::get_isSplitted
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

@@ -17,12 +17,12 @@ ms.assetid: 90ae401c-b294-49ac-98da-e0d274f5bebb
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 39d5e5326b3719cf0eaae897610470b4f4f8798e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d6c69458c0980f2ea8340080333e4056fc7a95c0
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49265186"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51801624"
 ---
 # <a name="templatecontent-element-visual-studio-templates"></a>TemplateContent 項目 (Visual Studio 範本)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

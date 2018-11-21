@@ -14,15 +14,15 @@ helpviewer_keywords:
 - profiling tools, advanced tasks
 ms.assetid: e713ad63-b948-46f3-8db9-59b30922ebe5
 caps.latest.revision: 32
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e7735d8b7276c62953c063d2cbda18d0dc59cc5a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c8022dd8fdd480e4bc545923eeb96d64f16ed9a9
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49306588"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51803418"
 ---
 # <a name="controlling-data-collection"></a>控制資料收集
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

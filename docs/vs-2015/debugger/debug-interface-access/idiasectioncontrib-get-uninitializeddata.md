@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaSectionContrib::get_uninitializedData method
 ms.assetid: 39736f35-6c73-4f54-a092-517192e417ff
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 84979fe9c10c11d3bec544b69f3f1179a2cbf2e6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ef3a4ade34efe390e83aa3c48655abafc2a22bbb
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49913659"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51736284"
 ---
 # <a name="idiasectioncontribgetuninitializeddata"></a>IDiaSectionContrib::get_uninitializedData
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "49913659"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT get_uninitializedData (   
+HRESULT get_uninitializedData (   
    BOOL* pRetVal  
 );  
 ```  

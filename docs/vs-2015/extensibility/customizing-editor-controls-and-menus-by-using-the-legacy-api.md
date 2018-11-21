@@ -15,12 +15,12 @@ ms.assetid: 1ce1f55b-6825-4654-a60a-7831af2ab44f
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2038d3e084778a6df6c765be5fbff9e7d53a1f90
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ad505c9f2d6f63d275a0f4aea49dc38e0be1bb4d
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49240486"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51798764"
 ---
 # <a name="customizing-editor-controls-and-menus-by-using-the-legacy-api"></a>使用舊版 API 自訂編輯器控制項及功能表
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

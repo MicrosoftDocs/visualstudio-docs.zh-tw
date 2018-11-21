@@ -8,15 +8,15 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: c71a4d7c-120e-4559-a114-3a99c4b860a9
 caps.latest.revision: 10
-author: BrianPeek
-ms.author: brpeek
+author: corob-msft
+ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 0135aa1b2a23beb0ce9781fe07403a7ddc43acb7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9187d4dcf4a88e672a245e0c589b3d75cf4f696a
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49268225"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51722112"
 ---
 # <a name="sync-changes-between-xcode-and-visual-studio"></a>同步處理 XCode 和 Visual Studio 之間的變更
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

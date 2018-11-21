@@ -11,15 +11,15 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 0b61cdf7-75b7-4abd-aff2-7bd997717626
 caps.latest.revision: 15
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 76ba6100285f18b39ac1dd63d0a73eaa9c4a9478
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 93e9f75ad953ff9c6cd08e8eb78bcfbf01542223
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49251585"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51787922"
 ---
 # <a name="troubleshooting-performance-tools-issues"></a>效能工具問題疑難排解
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

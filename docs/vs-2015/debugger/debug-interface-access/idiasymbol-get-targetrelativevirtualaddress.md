@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaSymbol::get_targetRelativeVirtualAddress method
 ms.assetid: 49a159f3-6943-44d3-90a3-0dba51e8a7ec
 caps.latest.revision: 13
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6035c17822bcf2cf7a8bf998bef74cd43f8c0920
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 08dbc4e2791970953b0bfdf41d3232e554b3cca7
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49880490"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51734423"
 ---
 # <a name="idiasymbolgettargetrelativevirtualaddress"></a>IDiaSymbol::get_targetRelativeVirtualAddress
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "49880490"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT get_targetRelativeVirtualAddress (   
+HRESULT get_targetRelativeVirtualAddress (   
    DWORD* pRetVal  
 );  
 ```  

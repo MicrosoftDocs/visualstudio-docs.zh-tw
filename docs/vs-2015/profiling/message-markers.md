@@ -13,15 +13,15 @@ f1_keywords:
 - vs.cv.markers.message
 ms.assetid: 721f40ca-5af2-4a01-b8b6-2b90f6cb7f89
 caps.latest.revision: 18
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f9bc998a697dcf387df21b7e5576a8548d51d0e2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3790374a00ecc19d20df7e914b207455f6dd25e1
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49269942"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51795254"
 ---
 # <a name="message-markers"></a>訊息標記
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

@@ -13,15 +13,15 @@ helpviewer_keywords:
 - SuspendProfile
 ms.assetid: 7c8de6e6-bb88-4353-92c3-ce7290310d61
 caps.latest.revision: 13
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4661ccad3a111f4ee65766bf16fb3fbebbd0bc6d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a21358e63ff30a88351607ae4f474a485b7059ac
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49244656"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51768155"
 ---
 # <a name="suspendprofile"></a>SuspendProfile
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

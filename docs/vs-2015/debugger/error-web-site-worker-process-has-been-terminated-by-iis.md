@@ -18,15 +18,15 @@ dev_langs:
 - C++
 ms.assetid: 5707b972-71a6-4cc6-ab99-c7c00ca8628c
 caps.latest.revision: 23
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 45ade231d24fe5e544110ed338abb935adbf423f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 93271bcba524054a2289b078b0e92fde115eaf23
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49857571"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51789053"
 ---
 # <a name="error-web-site-worker-process-has-been-terminated-by-iis"></a>錯誤：網站背景工作處理序已被 IIS 終止
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

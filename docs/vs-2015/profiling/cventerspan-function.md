@@ -27,15 +27,15 @@ helpviewer_keywords:
 - CvEnterSpanExW method
 ms.assetid: 91689e9c-6733-44b9-b36a-8b9b2eef7d1d
 caps.latest.revision: 8
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 61062503ecd2f7a92116ca43f9dffd75841fcea3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 818dda3c96dd4c10d7fc9e87cc957015497906be
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49173182"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51816272"
 ---
 # <a name="cventerspan-function"></a>CvEnterSpan 函式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

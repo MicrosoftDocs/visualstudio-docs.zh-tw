@@ -13,15 +13,15 @@ dev_langs:
 - C++
 ms.assetid: d0c311c9-9eb9-42c5-ba07-25604362cd28
 caps.latest.revision: 13
-author: BrianPeek
-ms.author: brpeek
+author: corob-msft
+ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 41ad445190624ba70305d0e96ac55fc964702763
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6a5d5543ace2087db4ed5349e72fcaf53228d8ec
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49911274"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51787805"
 ---
 # <a name="install-and-configure-tools-to-build-using-ios"></a>Install and Configure Tools to Build using iOS
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

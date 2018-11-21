@@ -17,12 +17,12 @@ ms.assetid: caf68de6-6f7c-4efd-b803-121347a5032e
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 491b13490ce3d15f510bb7bd57794dccc343595e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b3f60a98e07c183de059270d1bcbc0e890034d16
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49930696"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51794708"
 ---
 # <a name="idebugbinder3gettypeargumentcount"></a>IDebugBinder3::GetTypeArgumentCount
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,14 +32,14 @@ ms.locfileid: "49930696"
 ## <a name="syntax"></a>語法  
   
 ```cpp  
-HRESULT GetTypeArgumentCount(  
-   UINT* uCount  
+HRESULT GetTypeArgumentCount(  
+   UINT* uCount  
 );  
 ```  
   
 ```csharp  
-int GetTypeArgumentCount(  
-   out uint uCount  
+int GetTypeArgumentCount(  
+   out uint uCount  
 );  
 ```  
   

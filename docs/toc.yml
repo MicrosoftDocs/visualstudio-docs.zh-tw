@@ -1,7 +1,7 @@
 items:
 - name: Visual Studio 文件
   href: ide/index.md
-- name: 總覽
+- name: 概觀
   items:
   - name: Visual Studio 2017 概觀
     href: ide/visual-studio-ide.md
@@ -94,6 +94,27 @@ items:
       items:
       - name: Visual Studio 工作負載與元件識別碼
         href: install/workload-and-component-ids.md
+        items:
+        - name: Visual Studio Enterprise 2017
+          href: install/workload-component-id-vs-enterprise.md
+        - name: Visual Studio Professional 2017
+          href: install/workload-component-id-vs-professional.md
+        - name: Visual Studio Community 2017
+          href: install/workload-component-id-vs-community.md
+        - name: Visual Studio Team Explorer 2017
+          href: install/workload-component-id-vs-team-explorer.md
+        - name: Visual Studio Desktop Express 2017
+          href: install/workload-component-id-vs-express.md
+        - name: Visual Studio Build Tools 2017
+          href: install/workload-component-id-vs-build-tools.md
+        - name: Visual Studio Test Agent 2017
+          href: install/workload-component-id-vs-test-agent.md
+        - name: Visual Studio Test Controller 2017
+          href: install/workload-component-id-vs-test-controller.md
+        - name: Visual Studio Test Professional 2017
+          href: install/workload-component-id-vs-test-professional.md
+        - name: Visual Studio Feedback Client 2017
+          href: install/workload-component-id-vs-feedback-client.md
       - name: Visual Studio 組建編號和發行日期
         href: install/visual-studio-build-numbers-and-release-dates.md
   - name: 從 Azure 虛擬機器使用 Visual Studio
@@ -574,11 +595,11 @@ items:
       items:
       - name: 變更組建輸出目錄
         href: ide/how-to-change-the-build-output-directory.md
-      - name: 建置到通用輸出目錄
+      - name: 建置通用輸出目錄
         href: ide/how-to-build-to-a-common-output-directory.md
       - name: 指定自訂建置事件
         href: ide/specifying-custom-build-events-in-visual-studio.md
-      - name: 設定多重啟動專案
+      - name: 設定多個啟始專案
         href: ide/how-to-set-multiple-startup-projects.md
       - name: 建立及移除專案相依性
         href: ide/how-to-create-and-remove-project-dependencies.md
@@ -588,14 +609,16 @@ items:
         href: ide/how-to-exclude-projects-from-a-build.md
       - name: 隱藏編譯器警告
         href: ide/how-to-suppress-compiler-warnings.md
-    - name: 組建組態
+    - name: 建置動作
+      href: ide/build-actions.md
+    - name: 組建設定
       href: ide/understanding-build-configurations.md
       items:
-      - name: 建立及編輯組態
+      - name: 建立及編輯設定
         href: ide/how-to-create-and-edit-configurations.md
-      - name: 在套用 Visual Basic 開發人員設定的情況下管理組建組態
+      - name: 使用 Visual Basic 開發人員設定管理組建設定
         href: ide/how-to-manage-build-configurations-with-visual-basic-developer-settings-applied.md
-      - name: 同時建置多個組態
+      - name: 同時建置多個設定
         href: ide/how-to-build-multiple-configurations-simultaneously.md
     - name: 建置平台
       href: ide/understanding-build-platforms.md
@@ -612,9 +635,9 @@ items:
       href: ide/how-to-specify-build-events-visual-basic.md
     - name: 指定建置事件 (C#)
       href: ide/how-to-specify-build-events-csharp.md
-    - name: Configuring Warnings in Visual Basic
+    - name: 在 Visual Basic 中設定警告
       href: ide/configuring-warnings-in-visual-basic.md
-    - name: 逐步解說：建立多電腦組建環境
+    - name: 逐步解說：建立多電腦建置環境
       href: ide/walkthrough-creating-a-multiple-computer-build-environment.md
   - name: 偵錯...
     href: debugger/index.md
@@ -1081,12 +1104,13 @@ items:
       href: /visualstudio/productinfo/2017-redistribution-vs?context=visualstudio/default&contextView=vs-2017
     - name: 支援生命週期和服務
       href: /visualstudio/productinfo/vs-servicing-vs?context=visualstudio/default&contextView=vs-2017
-  - name: 回報 Visual Studio 的問題
-    href: ide/how-to-report-a-problem-with-visual-studio-2017.md
-    items:
     - name: 開發人員社群資料隱私權
       href: ide/developer-community-privacy.md
-  - name: 提出 Visual Studio 功能建議
+  - name: 如何在 Visual Studio 中回報問題
+    href: ide/how-to-report-a-problem-with-visual-studio-2017.md
+  - name: 概觀：回報問題
+    href: ide/report-a-problem.md
+  - name: 概觀：建議功能
     href: ide/suggest-a-feature.md
   - name: 客戶經驗改進計畫
     href: ide/visual-studio-experience-improvement-program.md
@@ -1097,9 +1121,9 @@ items:
     href: ide/reference/resources-for-troubleshooting-integrated-development-environment-errors.md
   - name: 告訴我們
     href: ide/talk-to-us.md
-ms.openlocfilehash: 92828f8043c85d42349fde61442bc12a9604ef62
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 1347181f66b898b7fe862357a6a52c3552e2cd9c
+ms.sourcegitcommit: f61ad0e8babec8810295f039e67629f4bdebeef0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349698"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "52001317"

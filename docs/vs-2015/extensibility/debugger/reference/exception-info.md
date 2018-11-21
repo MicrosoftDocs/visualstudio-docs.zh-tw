@@ -17,12 +17,12 @@ ms.assetid: d046957a-b97d-420b-b46b-c67cbaef709e
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a5790d0c37f6e9e0383abc73c56e02a23b4f7838
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8a6feebb3be6f6f6f50a7d1a2ed3ff8525dacf6c
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49830076"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51786882"
 ---
 # <a name="exceptioninfo"></a>EXCEPTION_INFO
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "49830076"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-typedef struct tagEXCEPTION_INFO {   
+typedef struct tagEXCEPTION_INFO {   
    IDebugProgram2* pProgram;  
    BSTR            bstrProgramName;  
    BSTR            bstrExceptionName;  
@@ -43,7 +43,7 @@ typedef struct tagEXCEPTION_INFO {
 ```  
   
 ```csharp  
-public struct EXCEPTION_INFO {   
+public struct EXCEPTION_INFO {   
    public IDebugProgram2 pProgram;  
    public string         bstrProgramName;  
    public string         bstrExceptionName;  

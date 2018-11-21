@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: 7DC64A52-AA41-4F3A-A8A1-8A20BCD81CC7
-ms.openlocfilehash: a6ea00e468e178f96bf0a08b5520d2f7e3d64b85
-ms.sourcegitcommit: 95aedf723c6be5272c3c5a2911cb2bdec50e2148
+ms.openlocfilehash: 37c4f6c50cc5deaee1decf6fcfae5eda211018b2
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47228856"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295679"
 ---
 # <a name="visual-studio-for-mac-tour"></a>Visual Studio for Mac 教學課程
 
@@ -56,13 +56,13 @@ Solution Pad 能組織方案中的專案：
 如需在 Visual Studio for Mac 中使用專案和方案的詳細資訊，請參閱[專案和方案](projects-and-solutions.md)一文。
 
 ## <a name="assembly-references"></a>組件參考
- 
+
 每個專案的組件參考，提供於 [參考] 資料夾底下：
 
 ![Solution Pad 中的 [參考] 資料夾](media/ide-tour-image19.png)
 
 其他參考資料是使用 [編輯參考] 對話方塊來新增，其顯示方法是在 [參考] 資料夾上按兩下，或在其操作功能表動作上選取 [編輯參考]：
- 
+
 ![[編輯參考] 對話方塊](media/ide-tour-image20.png)
 
 如需在 Visual Studio for Mac 中使用參考的詳細資訊，請參閱[管理專案中的參考](managing-references-in-a-project.md)一文。
@@ -93,7 +93,7 @@ Visual Studio for Mac 具有原生偵錯工具，能夠支援 Xamarin.iOS、 Xam
 
 ## <a name="version-control"></a>版本控制
 
-Visual Studio for Mac 與 Git 和子版本原始檔控制系統整合。 進行原始檔控制的專案會以解決方案名稱旁邊的分支表示： 
+Visual Studio for Mac 與 Git 和子版本原始檔控制系統整合。 進行原始檔控制的專案會以解決方案名稱旁邊的分支表示：
 
 ![分支名稱指出專案進行原始檔控制](media/ide-tour-image22.png)
 
@@ -102,3 +102,7 @@ Visual Studio for Mac 與 Git 和子版本原始檔控制系統整合。 進行�
 ![Solution Pad 中的未認可檔案](media/ide-tour-image23.png)
 
 如需在 Visual Studio 中使用版本控制的詳細資訊，請查看[版本控制](version-control.md)一文。
+
+## <a name="see-also"></a>另請參閱
+
+- [Visual Studio IDE (Windows 上)](/visualstudio/ide/visual-studio-ide)

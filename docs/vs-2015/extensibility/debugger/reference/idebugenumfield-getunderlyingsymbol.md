@@ -17,12 +17,12 @@ ms.assetid: c3b8a117-6708-4cfd-8ffc-5f007d706bc5
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 267a4ce3052ffc32faa2228aceaa03d76575867b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f6ee8b960aee596cc86ba06adbda314e70bae583
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49864899"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51739351"
 ---
 # <a name="idebugenumfieldgetunderlyingsymbol"></a>IDebugEnumField::GetUnderlyingSymbol
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

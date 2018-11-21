@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaEnumLineNumbers::Item method
 ms.assetid: 08efbeaf-22f7-49e9-96a8-bb906dfe4fd8
 caps.latest.revision: 10
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 25e405fccf32bd38cc79c99368830f05ab831509
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e22ee9fd5df4419583552d8e9071d9d831d3ad82
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49920240"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51772413"
 ---
 # <a name="idiaenumlinenumbersitem"></a>IDiaEnumLineNumbers::Item
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "49920240"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT Item (   
+HRESULT Item (   
    DWORD            index,  
    IDiaLineNumber** lineNumber  
 );  

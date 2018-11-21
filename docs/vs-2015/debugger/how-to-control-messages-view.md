@@ -14,15 +14,15 @@ helpviewer_keywords:
 - Messages view, controlling
 ms.assetid: 32685ab2-6c5b-41fc-b429-29260caef585
 caps.latest.revision: 7
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: be9a4ad0be92b9b5b6eedc982973ec63885fafad
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: aa67ad4e6b176a9548cf55912cfeb11f038eae73
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49821587"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51752781"
 ---
 # <a name="how-to-control-messages-view"></a>如何：控制訊息檢視
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

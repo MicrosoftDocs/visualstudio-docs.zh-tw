@@ -15,12 +15,12 @@ ms.assetid: 71eea623-f566-4feb-84cd-ca1ba71bc493
 caps.latest.revision: 24
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 258718a99e774b7098ff29dd66efc51a57062475
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 55f082711de306e9dd22fdf55e769282ad150f17
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49206904"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51755293"
 ---
 # <a name="document-data-and-document-view-in-custom-editors"></a>自訂編輯器中的文件資料和文件檢視
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

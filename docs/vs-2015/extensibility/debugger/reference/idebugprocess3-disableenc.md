@@ -17,12 +17,12 @@ ms.assetid: cffdbdac-4d76-4aeb-aa55-5d0410db99f1
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5680717d3912ba434e9c5ffba4dc5b3c7628030f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0d518ce42642e683fa5f38f67ce9f8458f9a0979
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49939471"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51807110"
 ---
 # <a name="idebugprocess3disableenc"></a>IDebugProcess3::DisableENC
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,8 +32,8 @@ ms.locfileid: "49939471"
 ## <a name="syntax"></a>語法  
   
 ```cpp  
-HRESULT DisableENC(  
-   EncUnavailableReason reason  
+HRESULT DisableENC(  
+   EncUnavailableReason reason  
 );  
 ```  
   

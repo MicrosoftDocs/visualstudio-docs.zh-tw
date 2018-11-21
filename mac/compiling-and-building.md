@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: FB253757-DB00-4889-A6BF-E44722E25BD1
-ms.openlocfilehash: a66cc250b0d019b3efa4873b89eef252af44b8a6
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: fece226d9e7fd7ba023369928171553c393b46d5
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283700"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51294314"
 ---
 # <a name="compiling-and-building-in-visual-studio-for-mac"></a>在 Visual Studio for Mac 中編譯和建置
 
@@ -48,3 +48,7 @@ Visual Studio for Mac 也可用來執行下列作業：
 
 * [建置 Xamarin 應用程式](/vsts/pipelines/apps/mobile/xamarin?view=vsts&tabs=vsts)
 * [使用 Xamarin 的連續整合](https://developer.xamarin.com/guides/cross-platform/ci/)
+
+## <a name="see-also"></a>另請參閱
+
+- [編譯與建置 (Windows 上的 Visual Studio)](/visualstudio/ide/compiling-and-building-in-visual-studio)

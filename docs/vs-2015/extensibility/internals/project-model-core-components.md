@@ -16,12 +16,12 @@ ms.assetid: b2f572d3-b26d-4846-92d1-84055fac141a
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2819f32993df6215e506ae6612d2716f95780bf8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 70cb00e6d2ecae8ba5fb8abefb76f7061406f0fd
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49283331"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51741323"
 ---
 # <a name="project-model-core-components"></a>專案模型的核心元件
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

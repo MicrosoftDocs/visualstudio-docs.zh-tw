@@ -17,12 +17,12 @@ ms.assetid: 41578062-8455-412a-9d8b-1e1e9dc8d52e
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 180d8e3501b4111ed5e3bde99e7fe141cf5721a6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f6b6406bb48ee7ca544d1983f4d6e483833b49d8
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49858936"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51760866"
 ---
 # <a name="frameinfoflags"></a>FRAMEINFO_FLAGS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "49858936"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-enum enum_FRAMEINFO_FLAGS {  
+enum enum_FRAMEINFO_FLAGS {  
    FIF_FUNCNAME              = 0x00000001,  
    FIF_RETURNTYPE            = 0x00000002,  
    FIF_ARGS                  = 0x00000004,  
@@ -69,7 +69,7 @@ typedef DWORD FRAMEINFO_FLAGS;
 ```  
   
 ```csharp  
-public enum enum_FRAMEINFO_FLAGS {  
+public enum enum_FRAMEINFO_FLAGS {  
    FIF_FUNCNAME              = 0x00000001,  
    FIF_RETURNTYPE            = 0x00000002,  
    FIF_ARGS                  = 0x00000004,  

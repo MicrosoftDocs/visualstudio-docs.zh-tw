@@ -16,15 +16,15 @@ helpviewer_keywords:
 - DBG files
 ms.assetid: cb3d040a-2846-40d7-bdbc-8a5beb5dd2f6
 caps.latest.revision: 18
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bde835248c6f837b27958f13085c4cb832c25e9a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4b5b04868bac6e27e5badd690d84cdc21722c723
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49928473"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51753095"
 ---
 # <a name="getting-started-debug-interface-access-sdk"></a>使用者入門 (偵錯介面存取 SDK)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

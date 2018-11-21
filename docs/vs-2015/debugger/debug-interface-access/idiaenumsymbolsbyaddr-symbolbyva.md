@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaEnumSymbolsByAddr::symbolByVA method
 ms.assetid: ac84339f-70c6-48ed-85d0-6d7d1b5194e8
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 476a4a688c1c5b6a84e25a032f6a398d38c71a4f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b383b0ad61f3bf9042b4ccaa794301c948718ad2
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49903799"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51777503"
 ---
 # <a name="idiaenumsymbolsbyaddrsymbolbyva"></a>IDiaEnumSymbolsByAddr::symbolByVA
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "49903799"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT symbolByVA (   
+HRESULT symbolByVA (   
    DWORD**      virtualAddress,  
    IDiaSymbol** ppsymbol  
 );  

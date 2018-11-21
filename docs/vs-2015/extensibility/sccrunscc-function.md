@@ -17,12 +17,12 @@ ms.assetid: bbe7c931-b17a-4779-9cf6-59e5f9f0c172
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 15cabe2d1a7ea25f37ec61c95b8afaca47369d4f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 67d2ad2ee783d23e3bd8c960ad5a94eac3fbd908
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49836615"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51733696"
 ---
 # <a name="sccrunscc-function"></a>SccRunScc 函式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

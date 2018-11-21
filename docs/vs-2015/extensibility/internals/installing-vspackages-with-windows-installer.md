@@ -16,12 +16,12 @@ ms.assetid: 41d2c72c-0a97-4fcd-b3aa-33a8d3aa962a
 caps.latest.revision: 31
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ae0e99b278924a123410f5590cea9f8239acd9ad
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5a43f48c337751c989af37c49a361ae011aa4e16
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49227964"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51733914"
 ---
 # <a name="installing-vspackages-with-windows-installer"></a>使用 Windows Installer 安裝 VSPackage
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

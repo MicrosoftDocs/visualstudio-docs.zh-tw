@@ -16,12 +16,12 @@ ms.assetid: 2c83615d-fa4d-4b9f-b315-7a69b3000da0
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bcac8acced823f294c4e6dd33302e3eea30b0439
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ef43fe505e859cb32f7c0fbe407bcc73c4f4e0e8
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49221113"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51725522"
 ---
 # <a name="project-configuration-for-building"></a>建置的專案組態
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

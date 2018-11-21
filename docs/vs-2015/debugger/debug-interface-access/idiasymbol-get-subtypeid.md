@@ -13,15 +13,15 @@ dev_langs:
 - C++
 ms.assetid: 0f899920-4fc5-4de8-84a3-cd98c57bf124
 caps.latest.revision: 6
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: af506a2598d5ba4d8c8722acc585fc717b8d1cdd
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c841eab7a434220341a39f9145fa6bb6f0d92e3f
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49217085"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51736359"
 ---
 # <a name="idiasymbolgetsubtypeid"></a>IDiaSymbol::get_subTypeId
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

@@ -17,12 +17,12 @@ ms.assetid: 545268f3-8e83-446a-a398-1a9db9e866e8
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7d0ac6ba5ef5e4950030d80efb030742a121e876
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 29703be15369649df2208c1521a6636e5ccbefb9
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49879007"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51765837"
 ---
 # <a name="sccadd-function"></a>SccAdd 函式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

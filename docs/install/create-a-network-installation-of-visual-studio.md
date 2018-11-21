@@ -14,16 +14,16 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b85d7f209648831900b8f7b7e1bb1f45ffd8979
-ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
+ms.openlocfilehash: f30dc9f270111b28d8ac8738336af380234d2c3b
+ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "43139245"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "51948968"
 ---
 # <a name="create-a-network-installation-of-visual-studio-2017"></a>建立 Visual Studio 2017 的網路安裝
 
-一般而言，企業系統管理員會針對用戶端工作站部署建立網路安裝點。 我們已經設計 Visual Studio 2017，讓您可以快取初始安裝的檔案以及單一資料夾的所有產品更新 (這個程序也稱為「建立配置」)。我們已完成此作業，因此，用戶端工作站可以使用相同的網路位置來管理其安裝，即使它們尚未更新為最新的服務更新也是一樣。
+一般而言，企業系統管理員會針對用戶端工作站部署建立網路安裝點。 我們已經設計 Visual Studio 2017，讓您可以快取初始安裝的檔案以及單一資料夾的所有產品更新 (這個程序也稱為「建立配置」)。我們已完成這項作業，因此，用戶端工作站可以使用相同的網路位置來管理其安裝，即使它們尚未更新為最新的服務更新也是一樣。
 
  > [!NOTE]
  > 如果您的企業內使用多個 Visual Studio 版本 (例如，同時有 Visual Studio Professional 和 Visual Studio Enteprise)，則必須針對每個版本建立個別的網路安裝共用。
@@ -36,9 +36,10 @@ ms.locfileid: "43139245"
 
 |版本 | 下載|
 |-------------|-----------------------|
-|Visual Studio 企業版 | [**vs_enterprise.exe**](https://aka.ms/vs/15/release/vs_enterprise.exe) |
-|Visual Studio Professional | [**vs_professional.exe**](https://aka.ms/vs/15/release/vs_professional.exe) |
-|Visual Studio Community | [**vs_community.exe**](https://aka.ms/vs/15/release/vs_community.exe) |
+|Visual Studio 企業版 | [**vs_enterprise.exe**](
+https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=enterprise&rel=15?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=network+install&utm_content=download+vs2017) |
+|Visual Studio Professional | [**vs_professional.exe**](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=professional&rel=15?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=network+install&utm_content=download+vs2017) |
+|Visual Studio Community | [**vs_community.exe**](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=community&rel=15?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=network+install&utm_content=download+vs2017) |
 
 其他支援的啟動載入器包括 [vs_buildtools.exe](https://aka.ms/vs/15/release/vs_buildtools.exe)、[vs_feedbackclient.exe](https://aka.ms/vs/15/release/vs_feedbackclient.exe)、[vs_teamexplorer.exe](https://aka.ms/vs/15/release/vs_teamexplorer.exe)、[vs_testagent.exe](https://aka.ms/vs/15/release/vs_testagent.exe)、[vs_testcontroller.exe](https://aka.ms/vs/15/release/vs_testcontroller.exe) 及 [vs_testprofessional.exe](https://aka.ms/vs/15/release/vs_testprofessional.exe)。
 

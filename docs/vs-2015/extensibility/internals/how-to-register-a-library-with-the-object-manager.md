@@ -19,12 +19,12 @@ ms.assetid: f124dd05-cb0f-44ad-bb2a-7c0b34ef4038
 caps.latest.revision: 27
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 204291cae617c704943889b8b88c590145935db3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ed547d82ccacec44383fed29a0c04bb363b10084
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49174703"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51732954"
 ---
 # <a name="how-to-register-a-library-with-the-object-manager"></a>如何： 使用物件管理員註冊程式庫
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

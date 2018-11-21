@@ -9,15 +9,15 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 745d74ae-e48c-4fd9-a755-4354b81b9f8a
 caps.latest.revision: 9
-author: alexhomer1
+author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 1e3a8cdd6d8551a4ea399a2ef387d383acca136c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6ba485b40beb82db9ea8cfe573cb6d9e6742ecea
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49873665"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51817317"
 ---
 # <a name="run-unit-tests-on-uml-extensions"></a>在 UML 擴充功能上執行單元測試
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

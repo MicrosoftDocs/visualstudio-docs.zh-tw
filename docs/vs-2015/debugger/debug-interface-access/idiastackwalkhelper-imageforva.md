@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaStackWalkHelper::imageForVA method
 ms.assetid: 8d4edabf-3c01-4fef-8b61-4779f3371067
 caps.latest.revision: 10
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1c386591172867f85b127c4744055e4c2bc37b5d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a48891d39f79705e072196b52c0136aef64661c2
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49916162"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51740243"
 ---
 # <a name="idiastackwalkhelperimageforva"></a>IDiaStackWalkHelper::imageForVA
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

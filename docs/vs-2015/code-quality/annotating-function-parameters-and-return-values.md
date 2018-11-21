@@ -128,15 +128,15 @@ f1_keywords:
 - _Ret_null_
 ms.assetid: 82826a3d-0c81-421c-8ffe-4072555dca3a
 caps.latest.revision: 17
-author: corob-msft
-ms.author: gewarren
+author: mikeblome
+ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: dbd84b13757e4d742896c0450bd4661b5c4d06cf
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7886b7a49999890520aaeaf216159647cd9fdf27
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49900159"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51788390"
 ---
 # <a name="annotating-function-parameters-and-return-values"></a>註釋函式參數和傳回值
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

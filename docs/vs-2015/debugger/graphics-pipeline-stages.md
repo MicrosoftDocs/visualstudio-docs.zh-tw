@@ -13,15 +13,15 @@ f1_keywords:
 - vs.graphics.pipeline
 ms.assetid: 2bf5c12e-2a00-401c-8163-4e373d08ad3f
 caps.latest.revision: 16
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 140dea9d65260a4ea5140e09df5876a59e64b2de
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2ba12ac4147250cd4a49a222e589049de16d04fc
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49938600"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51803067"
 ---
 # <a name="graphics-pipeline-stages"></a>圖形管線階段
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

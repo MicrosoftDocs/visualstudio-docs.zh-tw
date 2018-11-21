@@ -18,12 +18,12 @@ ms.assetid: 8f4af525-39e5-4e69-92c8-d3efabe80bb2
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0b00f2ae82a2fd8afb62dcd42237bd313c0355ff
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1a1c7d0e3acde1ca412d7bfaba0cfa3606ee54a4
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49941707"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51753673"
 ---
 # <a name="commands-and-menus-that-use-interop-assemblies"></a>使用 Interop 組件的命令和功能表
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

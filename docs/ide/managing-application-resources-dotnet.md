@@ -19,16 +19,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e0e854cc2d271048a7d7205017710264efac0395
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: b9a80a84276648f8a0f0d5a94992b5f58cbcfefa
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381643"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51348114"
 ---
 # <a name="manage-application-resources-net"></a>管理應用程式資源 (.NET)
 
 資源檔案是屬於應用程式的一部分，但不會經過編譯的檔案，例如圖示檔案或音訊檔案。 由於這些檔案不屬於編譯處理程序的一部分，您可以變更它們而無需重新編譯二進位檔。 如果您打算將應用程式當地語系化，您應該針對所有字串和其他在將應用程式當地語系化時需要變更的資源使用資源檔。
+
+> [!NOTE]
+> 本主題適用於 Windows 上的 Visual Studio。 針對 Visual Studio for Mac，請參閱[管理應用程式資源 (Visual Studio for Mac)](/visualstudio/mac/managing-app-resources)。
 
 如需 .NET 桌面應用程式中的資源的詳細資訊，請參閱[桌面應用程式中的資源](/dotnet/framework/resources/index)。
 
@@ -52,3 +55,4 @@ ms.locfileid: "39381643"
 ## <a name="see-also"></a>另請參閱
 
 - [桌面應用程式中的資源 (.NET Framework)](/dotnet/framework/resources/index)
+- [管理應用程式資源 (Visual Studio for Mac)](/visualstudio/mac/managing-app-resources)

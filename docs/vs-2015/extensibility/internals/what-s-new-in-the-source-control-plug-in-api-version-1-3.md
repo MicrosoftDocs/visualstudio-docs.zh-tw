@@ -16,12 +16,12 @@ ms.assetid: 7dfb2227-6e1d-4028-bce9-f8967456a993
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f6abe06f57e0e7ba83298f8dd5b2658a8f2e26c1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 58756bde7f3eb9fbc0f42bf494d82e8cc508796e
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49242101"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51793915"
 ---
 # <a name="what39s-new-in-the-source-control-plug-in-api-version-13"></a>什麼&#39;的新功能的原始檔控制外掛程式 API 版本 1.3
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

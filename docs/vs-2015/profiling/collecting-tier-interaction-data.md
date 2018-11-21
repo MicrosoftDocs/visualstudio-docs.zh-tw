@@ -18,15 +18,15 @@ helpviewer_keywords:
 - ADO.NET performance profiling
 ms.assetid: 47a944c2-3098-497c-8fc7-e1f43d750bbc
 caps.latest.revision: 18
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2d62ee60f2fd84f3c43f0885b775a740fd01e4ac
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 31e2d46992b48b987966bac7d7dc68787f4016c2
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49221169"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51761182"
 ---
 # <a name="collecting-tier-interaction-data"></a>收集階層互動資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

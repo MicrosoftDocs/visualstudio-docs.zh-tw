@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaPropertyStorage::ReadDWORD
 ms.assetid: 5f4c034e-a9d3-4560-94b5-ede524741439
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c71744899c8fdf7f6583d3fe929be9881ef8e40b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 87eaa46ae4611af5afc2f726438809b795f7f26b
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49895102"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51743711"
 ---
 # <a name="idiapropertystoragereaddword"></a>IDiaPropertyStorage::ReadDWORD
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "49895102"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT ReadDWORD (   
+HRESULT ReadDWORD (   
    PROPID id,  
    DWORD* pValue  
 );  

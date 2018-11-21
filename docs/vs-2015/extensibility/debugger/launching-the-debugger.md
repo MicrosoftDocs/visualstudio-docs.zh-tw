@@ -16,12 +16,12 @@ ms.assetid: f24da1a1-f923-48b4-989f-18a22b581d1b
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2a985d2184ecc69ab4fa2da3b634ab82281fc3ef
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: bcb73a46f6055d1c8637fe1d5375ba9be0fc8652
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49201210"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51774870"
 ---
 # <a name="launching-the-debugger"></a>啟動偵錯工具
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

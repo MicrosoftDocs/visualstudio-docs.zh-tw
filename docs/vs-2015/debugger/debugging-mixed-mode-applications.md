@@ -27,15 +27,15 @@ helpviewer_keywords:
 - mixed-mode debugging, call stack
 ms.assetid: 60e34477-ae4e-48c7-9093-3e37f72e1bc3
 caps.latest.revision: 22
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3bd033a9341975b6b785076188a53daf3e91a5a8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b176ae4a911e6948634cda2330d0c895f8b61cfd
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49817336"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51773336"
 ---
 # <a name="debugging-mixed-mode-applications"></a>偵錯混合模式應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

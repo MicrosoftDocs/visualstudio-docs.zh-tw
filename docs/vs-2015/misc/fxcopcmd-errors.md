@@ -13,14 +13,14 @@ helpviewer_keywords:
 - FxCopCmd errors
 ms.assetid: bb614ed0-1b7c-4b56-99ae-da50ef6cfef9
 caps.latest.revision: 12
-ms.author: susanno
+ms.author: mikejo
 manager: douge
-ms.openlocfilehash: eae6b19d9901eb2a2d047b4c262b02a825c0f83b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 828805e0746fb985ea310b755cdaaa252e215a07
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49303208"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51751723"
 ---
 # <a name="fxcopcmd-errors"></a>FxCopCmd 錯誤
 FxCopCmd 不會考慮所有的錯誤，是嚴重的錯誤。 如果 FxCopCmd 有足夠的資訊來執行部分的分析，它會執行分析和報告所發生的錯誤。 錯誤的程式碼，也就是 32 位元整數，包含對應至錯誤的數字值的位元組合。  

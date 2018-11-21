@@ -13,12 +13,12 @@ ms.assetid: b4231bb9-45c4-4c77-ac3c-d05033b26393
 caps.latest.revision: 6
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 657f54b258d759d0d966f65ff40649e0fb2a0669
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f403a1001cb32376b91da472acdebaa31cc91682
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49823524"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51744246"
 ---
 # <a name="overview-of-visual-studio-tools-for-unity"></a>Visual Studio Tools for Unity 概觀
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

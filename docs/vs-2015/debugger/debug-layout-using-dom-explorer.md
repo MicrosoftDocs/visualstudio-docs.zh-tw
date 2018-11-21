@@ -20,15 +20,15 @@ helpviewer_keywords:
 - layout, debugging [Windows Store apps]
 ms.assetid: ded6566d-fc29-49a7-8029-dee8e50fe733
 caps.latest.revision: 36
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 65d0bc2dbd48609f1e229691551ab2b713988471
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ba06e6a8ba95887c0cc6b6acfd14cef10ff03798
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49272608"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51787742"
 ---
 # <a name="debug-layout-using-dom-explorer"></a>使用 DOM 總管偵錯配置
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

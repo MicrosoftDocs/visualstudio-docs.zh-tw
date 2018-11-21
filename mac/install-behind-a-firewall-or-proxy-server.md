@@ -6,12 +6,12 @@ ms.assetid: 79C0F1A3-0C13-4E55-A820-1138A4082B77
 author: asb3993
 ms.author: amburns
 ms.date: 10/23/2018
-ms.openlocfilehash: a63f3a6ff8963cd1136b604bf151d71d950f2164
-ms.sourcegitcommit: 97204b85caadbcf14baeb6738710e287a196673e
+ms.openlocfilehash: 70ac8defdcea9cccd8a3b3f9be71d38fb78c9c50
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/24/2018
-ms.locfileid: "49991877"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295186"
 ---
 # <a name="install-and-use-visual-studio-for-mac-behind-a-firewall-or-proxy-server"></a>在防火牆或 Proxy 伺服器後方安裝及使用 Visual Studio for Mac
 
@@ -27,7 +27,7 @@ ms.locfileid: "49991877"
 
 ### <a name="microsoft-domains"></a>Microsoft 網域
 
-| 網域| 用途 |
+| Domain| 用途 |
 | ----------------------------------- |---------------------------|
 | *.live.com| 認證管理 |
 | app.vssps.visualstudio.com| 安裝程式中繼資料|
@@ -42,7 +42,7 @@ ms.locfileid: "49991877"
 
 ### <a name="third-party-domains"></a>協力廠商網域
 
-| 網域| 用途 |
+| Domain| 用途 |
 | --------------------------|-------------------------|
 | dl.google.com | Android SDK |
 | download.oracle.com | Java SDK|
@@ -54,7 +54,7 @@ ms.locfileid: "49991877"
 
 ### <a name="general"></a>一般
 
-| 網域 | 連接埠|用途|
+| Domain | 連接埠|用途|
 | ----------------------|------------------|------------------|
 | go.microsoft.com | 80/443|Microsoft URL 解析 |
 | vsstartpage.blob.core.windows.net| 80/443| 起始頁資料|
@@ -65,7 +65,7 @@ ms.locfileid: "49991877"
 
 ### <a name="identity"></a>身分識別
 
-| 網域 | 連接埠|用途|
+| Domain | 連接埠|用途|
 | ----------------------|------------------|------------------|
 | login.microsoftonline.com | 80/443| 識別提供者|
 | secure.aadcdn.microsoftonline-p.com | 80/443|識別提供者|
@@ -74,14 +74,14 @@ ms.locfileid: "49991877"
 
 ### <a name="nuget"></a>NuGet
 
-| 網域 | 連接埠|用途|
+| Domain | 連接埠|用途|
 | ----------------------|------------------|------------------|
 | api.nuget.org | 80/443|NuGet API|
 | secure.aadcdn.microsoftonline-p.com |80/443| 識別提供者|
 
 ### <a name="android-projects"></a>Android 專案
 
-| 網域| 用途|
+| Domain| 用途|
 | ------------------------------------|------------------------------------|
 | time.android.com| Android Emulator 的時間伺服器 |
 | connectivitycheck.gstatic.com | Android Emulator 的連線|
@@ -89,5 +89,5 @@ ms.locfileid: "49991877"
 
 ## <a name="see-also"></a>另請參閱
 
-- [在防火牆或 Proxy 伺服器後方安裝並使用 Visual Studio 2017 和 Azure 服務](https://docs.microsoft.com/visualstudio/install/install-and-use-visual-studio-behind-a-firewall-or-proxy-server)
-- [在 Windows 上對類似問題進行疑難排解](https://docs.microsoft.com/visualstudio/install/troubleshooting-network-related-errors-in-visual-studio)
+- [在防火牆或 Proxy 伺服器後方安裝並使用 Visual Studio 2017 和 Azure 服務](/visualstudio/install/install-and-use-visual-studio-behind-a-firewall-or-proxy-server)
+- [在 Windows 上對類似問題進行疑難排解](/visualstudio/install/troubleshooting-network-related-errors-in-visual-studio)

@@ -16,12 +16,12 @@ ms.assetid: e1b508f1-6521-492f-b110-ab957744a037
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: de6fb060e609907f89d7fc794d9d58a5e8c20186
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e461aa9ca5b15a1fff1e62ac557dbcd2e63ad880
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49825124"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51765859"
 ---
 # <a name="idebugcomplussymbolprovider2functionhaslineinfo"></a>IDebugComPlusSymbolProvider2::FunctionHasLineInfo
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

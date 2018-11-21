@@ -17,12 +17,12 @@ ms.assetid: 741d0829-0943-49bf-b56e-61e836043006
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8ba463bf35eb45d8884a01d05e25716ccedab1ab
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5ed1065e0f26cf609deadb029daaa58ffd036a3b
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49823719"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51725918"
 ---
 # <a name="idebugportsupplier2getportsupplierid"></a>IDebugPortSupplier2::GetPortSupplierId
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,13 +32,13 @@ ms.locfileid: "49823719"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT GetPortSupplierId(   
+HRESULT GetPortSupplierId(   
    GUID* pguidPortSupplier  
 );  
 ```  
   
 ```csharp  
-HRESULT GetPortSupplierId(   
+HRESULT GetPortSupplierId(   
    out Guid pguidPortSupplier  
 );  
 ```  

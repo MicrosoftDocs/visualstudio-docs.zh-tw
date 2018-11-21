@@ -27,15 +27,15 @@ helpviewer_keywords:
 - _malloc_dbg function
 ms.assetid: 91748bdc-f4cd-4d8b-ab98-0493dab7ed0d
 caps.latest.revision: 20
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7a6bf3976138f385f103c6d046e2b71133a8795d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f7a649d8afd3ae7bf7d6d9abff98734ac96e05cd
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49874994"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51802088"
 ---
 # <a name="debug-versions-of-heap-allocation-functions"></a>堆積配置函式的偵錯版本
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

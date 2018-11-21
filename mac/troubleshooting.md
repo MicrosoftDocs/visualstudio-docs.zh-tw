@@ -1,17 +1,17 @@
 ---
-title: Visual Studio for Mac 疑難排解
+title: 疑難排解
 description: Visual Studio for Mac 使用者的常見問題及解決方法。
 ms.topic: troubleshooting
 author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: CE860D79-E29E-4B93-B094-BE74B35FC1C2
-ms.openlocfilehash: 6d8edc7942b460c4c11e20bc9a0c5cae204328cf
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 3a5ea59e6f98891cd113ccad9a74038ca52cccf8
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "43224213"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51294639"
 ---
 # <a name="troubleshooting"></a>疑難排解
 
@@ -46,3 +46,7 @@ ms.locfileid: "43224213"
 11. 將 `exception.ToString()` 輸出複製至剪貼簿的 [複製] 按鈕。
 
 請注意，只有在例外狀況有內部例外狀況時，才會顯示其中一些區段。
+
+## <a name="see-also"></a>另請參閱
+
+- [IDE 錯誤疑難排解資源 (Windows 上的 Visual Studio)](/visualstudio/ide/reference/resources-for-troubleshooting-integrated-development-environment-errors)

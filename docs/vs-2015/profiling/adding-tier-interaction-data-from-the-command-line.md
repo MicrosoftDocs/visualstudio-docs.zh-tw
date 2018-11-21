@@ -14,15 +14,15 @@ helpviewer_keywords:
 - profiling tools,tier interaction method
 ms.assetid: 5a35647f-03f2-4555-8eeb-fda7e0080e67
 caps.latest.revision: 14
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f7ac10e62c1c982f1b2357fcaea17b6b54865dec
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b3912e823a6e6ee32488fcda94616aef414d3d22
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49872066"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51775299"
 ---
 # <a name="adding-tier-interaction-data-from-the-command-line"></a>從命令列加入階層互動資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

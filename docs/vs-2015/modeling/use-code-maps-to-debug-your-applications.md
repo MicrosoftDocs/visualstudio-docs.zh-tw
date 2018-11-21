@@ -18,15 +18,15 @@ helpviewer_keywords:
 - mapping relationships in code
 ms.assetid: 9fd0c9a2-d351-40c8-be88-0749788264bf
 caps.latest.revision: 51
-author: alexhomer1
+author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 354c99a9e11f7dbf86f93dab48f669c206323ce5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: af5f34b307f94f1bae4c913421acbe0a934ed113
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49263981"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51743826"
 ---
 # <a name="use-code-maps-to-debug-your-applications"></a>使用 Code Map 偵錯您的應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

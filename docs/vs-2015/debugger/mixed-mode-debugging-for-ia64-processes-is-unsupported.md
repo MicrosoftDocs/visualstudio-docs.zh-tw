@@ -18,15 +18,15 @@ dev_langs:
 - C++
 ms.assetid: 20bc1e38-049b-4388-87c4-936815d85b46
 caps.latest.revision: 6
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1b1c35a2801c79b4775b1e58b8c8c3c74c194fd5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 12623f2692735b8a6ec31a4ecaa7bfc0b07e9364
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49262674"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51806460"
 ---
 # <a name="mixed-mode-debugging-for-ia64-processes-is-unsupported"></a>不支援 IA64 處理序的混合模式偵錯。
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

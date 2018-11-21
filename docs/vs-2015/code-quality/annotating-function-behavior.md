@@ -23,15 +23,15 @@ f1_keywords:
 - _Use_decl_annotations_
 ms.assetid: c0aa268d-6fa3-4ced-a8c6-f7652b152e61
 caps.latest.revision: 13
-author: corob-msft
-ms.author: gewarren
+author: mikeblome
+ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 1be20fed5e7fd98860a4a62c3d59fc458bed04ef
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 88213e1cd8112aecac527f7d72d2d74dbf10c559
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49234386"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51783125"
 ---
 # <a name="annotating-function-behavior"></a>註釋函式行為
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

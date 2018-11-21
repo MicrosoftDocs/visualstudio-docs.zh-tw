@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaSession::findSymbolByRVAEx method
 ms.assetid: 61344966-fed4-4c02-9e27-20356ec2ef7c
 caps.latest.revision: 13
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bd938b334edc3ed62ab82ddd7dcb31eb8c91c95f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f507258a0c4eec9ee550d781029b7dbf0ced7b28
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49904397"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51776066"
 ---
 # <a name="idiasessionfindsymbolbyrvaex"></a>IDiaSession::findSymbolByRVAEx
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "49904397"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT findSymbolByRVAEx (   
+HRESULT findSymbolByRVAEx (   
    DWORD        rva,  
    SymTagEnum   symtag,  
    IDiaSymbol** ppSymbol,  

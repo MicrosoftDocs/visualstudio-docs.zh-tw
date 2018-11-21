@@ -24,15 +24,15 @@ helpviewer_keywords:
 - errors [Visual Studio], debugger
 ms.assetid: 73baaf39-3026-48c9-be48-8b9ba0063cde
 caps.latest.revision: 13
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 225cd9e209d3fd513d4991e5c20bfc4a6a07e9d8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 094d7fa8e47cb718ee63ec5abb075db20ec1b66c
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49216653"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51743290"
 ---
 # <a name="debugging-errors-and-warning-dialog-boxes"></a>偵錯錯誤和警告對話方塊
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

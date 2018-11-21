@@ -17,12 +17,12 @@ ms.assetid: bce6230e-41d4-49b7-a050-2dde5efb6805
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7e4b15a091027682555cb1e9247b1f5fd0c511ff
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e157ab220972579aa1a8a78e8094b5589de8ff28
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49843700"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51810193"
 ---
 # <a name="idebugthread2getlogicalthread"></a>IDebugThread2::GetLogicalThread
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,14 +32,14 @@ ms.locfileid: "49843700"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT GetLogicalThread(   
+HRESULT GetLogicalThread(   
    IDebugStackFrame2*     pStackFrame,  
    IDebugLogicalThread2** ppLogicalThread  
 );  
 ```  
   
 ```csharp  
-int GetLogicalThread(   
+int GetLogicalThread(   
    IDebugStackFrame2        pStackFrame,  
    out IDebugLogicalThread2 ppLogicalThread  
 );  

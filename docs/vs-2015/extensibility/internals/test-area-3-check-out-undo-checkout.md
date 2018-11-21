@@ -18,12 +18,12 @@ ms.assetid: ce00c5a5-d472-4f45-8776-d77a1fbe9d37
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2fd293abc674059f7c0046e076e4166b7dffa631
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: adc6a84dbdc4fb182dd589c54527f02a1aa90d99
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49178590"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51723003"
 ---
 # <a name="test-area-3-check-outundo-checkout"></a>測試區域 3︰ 簽出/復原簽出
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

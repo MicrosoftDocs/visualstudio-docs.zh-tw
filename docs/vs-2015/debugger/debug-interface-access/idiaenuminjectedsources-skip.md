@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaEnumInjectedSources::Skip method
 ms.assetid: 4aad6a51-f2d3-4064-b216-60d830d0a560
 caps.latest.revision: 10
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a3c27e653a978bd2ac0e1d13f8e0046f3ccdb0fe
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6e9b28573ad1bdb82ac491d58abd7d7f0020e9b1
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942617"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51722742"
 ---
 # <a name="idiaenuminjectedsourcesskip"></a>IDiaEnumInjectedSources::Skip
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "49942617"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT Skip (   
+HRESULT Skip (   
    ULONG celt  
 );  
 ```  

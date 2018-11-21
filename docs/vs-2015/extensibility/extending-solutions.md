@@ -13,12 +13,12 @@ ms.assetid: 5cb60183-2a87-4551-a19f-c7c4e65d60c0
 caps.latest.revision: 3
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 439ea435805b1b4c235874a09bb6835e58f15a05
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: bbf2549db6ebd2cf22dc6e5782ae4749933d873f
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49252716"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51767352"
 ---
 # <a name="extending-solutions"></a>延伸方案
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

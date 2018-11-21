@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaSymbol::get_value method
 ms.assetid: 2e40174a-2a61-4e5f-bb32-9e0ceec2178a
 caps.latest.revision: 12
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 278e199400fa46782035ec767e65f72040d47c4a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9620c583c64e6a95c2650747f16a34ff98f54e59
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49870220"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51731565"
 ---
 # <a name="idiasymbolgetvalue"></a>IDiaSymbol::get_value
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "49870220"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT get_value (   
+HRESULT get_value (   
    VARIANT* pRetVal  
 );  
 ```  

@@ -15,12 +15,12 @@ ms.assetid: d75a44aa-265a-44d4-9c28-457f59c4ff9f
 caps.latest.revision: 31
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0d86dd811339122415a4511b7b7cf28f239be752
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 897ff6a39716f424c40fa587d905847a0dbb3682
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49181970"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51805264"
 ---
 # <a name="walkthrough-outlining"></a>逐步解說︰大綱
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

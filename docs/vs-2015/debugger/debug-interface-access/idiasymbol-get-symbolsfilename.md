@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaSymbol::get_symbolsFileName method
 ms.assetid: c1aa39ee-d645-431e-bf5f-0640c0998934
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0fc4e8c35b3641ebaeeb85ddb6db4d9b2a136031
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c0f16a4c0b5ed4f2b3f0b41c407cc9f1c5947694
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49878423"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51743811"
 ---
 # <a name="idiasymbolgetsymbolsfilename"></a>IDiaSymbol::get_symbolsFileName
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "49878423"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT get_symbolsFileName (   
+HRESULT get_symbolsFileName (   
    BSTR* pRetVal  
 );  
 ```  

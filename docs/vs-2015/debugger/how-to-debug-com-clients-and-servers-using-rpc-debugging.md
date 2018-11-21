@@ -28,15 +28,15 @@ helpviewer_keywords:
 - in-process remote procedure call debugging
 ms.assetid: 3e8526c8-43b5-4b87-8e0d-b22c24f0a3ea
 caps.latest.revision: 26
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4222bdfcc2f54159e69bd89e30da3c0e85d7a5b3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 78a4c85d24ea382e5946000ac2225588c5deceed
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49268095"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51786792"
 ---
 # <a name="how-to-debug-com-clients-and-servers-using-rpc-debugging"></a>如何：使用 RPC 偵錯對 COM 用戶端和伺服器進行偵錯
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

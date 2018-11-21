@@ -16,12 +16,12 @@ ms.assetid: 6e7e0f95-181a-4805-adb3-c2407de0ab93
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2f579bff28a86e360520ba105152bd595a66643f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0dbb0ff8a4755fa4c85a55bd90c655a13a63d228
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49876941"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51816472"
 ---
 # <a name="idebuggenericfieldinstancegettypearguments"></a>IDebugGenericFieldInstance::GetTypeArguments
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

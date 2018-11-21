@@ -17,12 +17,12 @@ ms.assetid: c6ce01a2-7da3-46ec-9837-855042fa7244
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1e5615384ff62a484c0b46980c9fc604ce7152d3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f86268abc9035ba80279c80ea6364f7b7c449f53
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49815973"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51785634"
 ---
 # <a name="ienumdebugboundbreakpoints2clone"></a>IEnumDebugBoundBreakpoints2::Clone
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

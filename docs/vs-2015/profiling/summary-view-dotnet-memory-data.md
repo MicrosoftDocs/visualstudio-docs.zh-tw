@@ -13,15 +13,15 @@ helpviewer_keywords:
 - Summary view
 ms.assetid: 0cb317c3-0ae6-4531-aaa8-447576eec037
 caps.latest.revision: 16
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f114deff56e39aa10f96ae741dc33eb3fc955a1b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8e0bfa7a6643aa27cba5e2b546ba9f2fc50fbd89
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49251858"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51816407"
 ---
 # <a name="summary-view---net-memory-data"></a>摘要檢視 - .NET 記憶體資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

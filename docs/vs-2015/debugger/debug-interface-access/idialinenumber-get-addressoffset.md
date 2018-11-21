@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaLineNumber::get_addressOffset method
 ms.assetid: 3bcb5500-b26c-4d3c-9d81-0a389a3715c3
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d454d81aaab15a9e095e7f7ef4d83c2fe0a0981f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0fc2a89ec50e185d001f3606f653d0417f4945f1
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49938340"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51753717"
 ---
 # <a name="idialinenumbergetaddressoffset"></a>IDiaLineNumber::get_addressOffset
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "49938340"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT get_addressOffset (   
+HRESULT get_addressOffset (   
    DWORD* pRetVal  
 );  
 ```  

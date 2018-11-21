@@ -15,12 +15,12 @@ ms.assetid: ce29a248-81a0-42c0-99a7-1606e8c548ec
 caps.latest.revision: 5
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c4ded7950a86409e7f4de0541a182e31b7d000e5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: cc386d2d343f7100eb04138600497106ed8aa279
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49291482"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51755564"
 ---
 # <a name="idebugprocessqueryproperties"></a>IDebugProcessQueryProperties
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

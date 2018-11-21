@@ -17,15 +17,15 @@ helpviewer_keywords:
 - VSPerfCmd tool
 ms.assetid: 778bc105-7643-46c4-a338-f3620e31125a
 caps.latest.revision: 54
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1ddd7e2045086cce5fc58e2cd240a4d304d94e6b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e8cd602a005026c8dec4bf5a309d6f04044b960d
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49214782"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51766657"
 ---
 # <a name="vsperfcmd"></a>VSPerfCmd
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

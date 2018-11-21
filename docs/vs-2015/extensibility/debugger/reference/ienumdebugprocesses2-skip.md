@@ -17,12 +17,12 @@ ms.assetid: b9e9d888-189b-44c4-a65f-e91612458898
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 17d7f3a0a4e175a9ff5b70b22ea105d0cc2117a4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9473af008e6f50d6f5917da362ffb5c0cdfba499
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49879372"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51761211"
 ---
 # <a name="ienumdebugprocesses2skip"></a>IEnumDebugProcesses2::Skip
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

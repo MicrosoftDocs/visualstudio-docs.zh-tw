@@ -19,15 +19,15 @@ helpviewer_keywords:
 - profiler
 ms.assetid: 56a99c39-e7f6-4f48-ae56-04ab8e022bf7
 caps.latest.revision: 35
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5ee38f210585124f8492f6aed9f062003602f287
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 931608decb44f0e49cb4ae2984b9cbf724a63d56
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49895311"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51778237"
 ---
 # <a name="how-to-attach-and-detach-performance-tools-to-running-processes"></a>如何：為執行中的處理序附加和中斷連結程式碼剖析工具
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

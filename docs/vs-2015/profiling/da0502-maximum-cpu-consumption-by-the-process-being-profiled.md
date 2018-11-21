@@ -15,15 +15,15 @@ f1_keywords:
 - vs.performance.502
 ms.assetid: 1ee53df5-b0dc-4265-9d4f-527830d08725
 caps.latest.revision: 13
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: adc15c55c155248fdd3331daa4422d0c42dc21eb
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: dd2665e9b8055812678fc1a17c0b9df0f0405e42
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49197235"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51731243"
 ---
 # <a name="da0502-maximum-cpu-consumption-by-the-process-being-profiled"></a>DA0502：進行程式碼剖析之處理序所需的最大 CPU 使用量
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

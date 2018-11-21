@@ -13,12 +13,12 @@ ms.assetid: e559471b-5e0f-468f-a5b8-903c44fe9073
 caps.latest.revision: 4
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 79b94ff16d2f6ed6274d4801ec29b827fc2881c9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c7555029d91cf40f454333ca1daa86584f422cbe
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49187651"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51725907"
 ---
 # <a name="extending-connected-services"></a>擴充已連線的服務
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

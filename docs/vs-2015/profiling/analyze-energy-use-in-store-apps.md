@@ -16,15 +16,15 @@ dev_langs:
 - C++
 ms.assetid: 96d06843-b97e-45a8-8126-07478a40bfc4
 caps.latest.revision: 39
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 86d1959d6850ae73d38970a197f8b369310fac3d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 102302a1c14f379745007135593cc039aa9f8836
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49824421"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51742005"
 ---
 # <a name="analyze-energy-use-in-store-apps"></a>分析市集應用程式中的能源利用
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

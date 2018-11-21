@@ -26,15 +26,15 @@ helpviewer_keywords:
 - code changes
 ms.assetid: f5754363-8a56-417b-b904-b05d9dd26d03
 caps.latest.revision: 29
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ad873a4aaa71dc03a2e7cbf213d40973d73dcdf6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a68ad4add5f8c08e00067c903d5ba3946ca14538
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49840983"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51797971"
 ---
 # <a name="supported-code-changes-c"></a>支援的程式碼變更 (C++)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

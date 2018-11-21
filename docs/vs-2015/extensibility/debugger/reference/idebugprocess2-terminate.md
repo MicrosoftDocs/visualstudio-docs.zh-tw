@@ -17,12 +17,12 @@ ms.assetid: 5e6bf373-0fe9-4321-b04a-473a65f664d9
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 972bf51b785b4acb9c54a4dedbe99ddb8bf79bc9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c587e7b11ae6743010721d8d67c3c32715ae429d
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49911289"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51802001"
 ---
 # <a name="idebugprocess2terminate"></a>IDebugProcess2::Terminate
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,8 +32,8 @@ ms.locfileid: "49911289"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT Terminate(   
-   void   
+HRESULT Terminate(   
+   void   
 );  
 ```  
   

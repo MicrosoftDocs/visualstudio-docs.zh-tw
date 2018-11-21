@@ -17,12 +17,12 @@ ms.assetid: b9b3e6e8-1e30-4c89-9862-330265dcf38c
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2b2ce17deeb1af3054dfd87a42f0b8114c981d69
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 74da0df2939b08615f3a659dfca70b1cea0e495d
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49868777"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51759864"
 ---
 # <a name="property-pages"></a>屬性頁
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

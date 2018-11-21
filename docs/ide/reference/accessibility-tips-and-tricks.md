@@ -13,12 +13,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 57898fbcfba72c67b199ea584d494cb96dfbf491
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 473f46e87ded78e134ab021b68c57248f8ac1a33
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49811837"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349201"
 ---
 # <a name="accessibility-tips-and-tricks-for-visual-studio"></a>Visual Studio 協助工具祕訣和訣竅
 
@@ -26,6 +26,9 @@ ms.locfileid: "49811837"
 > 若要深入了解最新的協助工具更新，請參閱 [Visual Studio 2017 15.3 版中的協助工具改善](https://blogs.msdn.microsoft.com/visualstudio/2017/08/14/accessibility-improvements-in-visual-studio-2017-version-15-3/) \(英文\) 部落格文章。
 
 Visual Studio 有與螢幕助讀程式和其他輔助技術相容的內建協助工具功能。 本主題列出的常見快速組合鍵，可用以執行只能使用鍵盤的工作，包括使用高對比佈景主題以改善可見性的相關資訊。 它也會向您示範如何使用註解顯示實用的程式碼資訊，以及如何設定組建和中斷點事件的音效提示。
+
+> [!NOTE]
+> 本主題適用於 Windows 上的 Visual Studio。 針對 Visual Studio for Mac，請參閱 [Visual Studio for Mac 的協助工具](/visualstudio/mac/accessibility)。
 
 ## <a name="save-your-ide-settings"></a>儲存 IDE 設定
 
@@ -104,3 +107,4 @@ Visual Studio IDE 工具列的作用與許多工具視窗相同。 下列快速�
 * [如何：在 Visual Studio 中自訂功能表和工具列](../../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md)
 * [將 Visual Studio IDE 個人化](../../ide/personalizing-the-visual-studio-ide.md)
 * [Microsoft Accessibility](https://www.microsoft.com/Accessibility) (Microsoft 協助工具)
+* [協助工具 (Visual Studio for Mac)](/visualstudio/mac/accessibility)

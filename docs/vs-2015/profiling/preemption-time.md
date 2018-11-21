@@ -15,15 +15,15 @@ helpviewer_keywords:
 - Concurrency Visualizer, Preemption Time
 ms.assetid: 6b78f91e-a006-440c-83fb-e7368040951d
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f302dff3ea72217c6325aca667aec8ff4d7f218f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e1ddd0f239317021d38017ec159de46ecbc2aa77
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49905227"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51721404"
 ---
 # <a name="preemption-time"></a>先佔時間
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

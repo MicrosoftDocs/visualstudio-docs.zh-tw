@@ -13,15 +13,15 @@ helpviewer_keywords:
 - message options, Messages
 ms.assetid: fb9fa211-e82c-40a5-9e4b-ba8de07313c0
 caps.latest.revision: 7
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 533cbf2e6c971da709818343089d13a78d99a997
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b44a5932d178fe8432273038d677f5831d568146
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49912262"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51793941"
 ---
 # <a name="messages-tab-message-options-dialog-box"></a>訊息選項對話方塊、訊息索引標籤
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

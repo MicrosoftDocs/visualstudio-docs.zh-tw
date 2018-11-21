@@ -16,12 +16,12 @@ ms.assetid: bdb2d22e-d622-450c-bb2d-98152a745fcf
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6b23e63d8bf04c859b156a23a04af8a91b2dd932
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 58b31e363d78af7902e6174c9683b7e794031263
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49260243"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51756201"
 ---
 # <a name="creating-project-types"></a>建立專案類型
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

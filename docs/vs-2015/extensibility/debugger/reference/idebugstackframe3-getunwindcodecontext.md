@@ -17,12 +17,12 @@ ms.assetid: b25f7e7d-2b24-48e4-93b3-829e61d73ebf
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9fd2d971681f006e26cbf9b144a4573df867cb1f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ea8e79cec9920a7286b914c89b2c09fbe6cef8c4
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49886990"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51757056"
 ---
 # <a name="idebugstackframe3getunwindcodecontext"></a>IDebugStackFrame3::GetUnwindCodeContext
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

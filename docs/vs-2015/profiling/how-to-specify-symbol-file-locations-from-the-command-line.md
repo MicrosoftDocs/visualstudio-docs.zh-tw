@@ -11,15 +11,15 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 8aa067bb-e8bf-4081-aff0-cfbcf65934a0
 caps.latest.revision: 16
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f90a844d3e4e4d02a2e2eddd64e62d8fce59407c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3d138166bc0dfdf93df5d4e340fc0d0a62d1828b
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49825292"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51721186"
 ---
 # <a name="how-to-specify-symbol-file-locations-from-the-command-line"></a>如何：從命令列指定符號檔位置
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

@@ -18,15 +18,15 @@ dev_langs:
 - C++
 ms.assetid: bbba0766-2502-4ef1-a75d-bf1f0db39e37
 caps.latest.revision: 15
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 59c4be18adc854e326b8e756399818d46ba469ad
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6c86e5a193348a8f90e4888e0df3472d102beb08
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49237922"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51800870"
 ---
 # <a name="error-remote-computer-could-not-initiate-dcom-communications"></a>錯誤：遠端電腦無法啟始 DCOM 通訊
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

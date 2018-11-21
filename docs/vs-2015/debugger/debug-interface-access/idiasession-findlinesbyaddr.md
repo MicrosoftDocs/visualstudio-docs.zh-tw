@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaSession::findLinesByAddr method
 ms.assetid: 640403c0-14cf-403c-ad19-38b3bdc28ca8
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 28c6786f9e204467e95ccb5309822c0249fa0daa
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b29a9adcd028c78cb2b2f457b812d21443a8cfbe
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49827437"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51733812"
 ---
 # <a name="idiasessionfindlinesbyaddr"></a>IDiaSession::findLinesByAddr
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "49827437"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT findLinesByAddr (   
+HRESULT findLinesByAddr (   
    DWORD                 seg,  
    DWORD                 offset,  
    DWORD                 length,  

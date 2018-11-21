@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaSectionContrib::get_compilandId method
 ms.assetid: 71ef2e63-d095-42b6-88d8-626e3129f0d9
 caps.latest.revision: 12
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1c3f6a151fc85afa8c6f407137c4001ad3de5db3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d61f929935d1ece7d2f22e946c073dc26d27d1a9
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49885716"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51801169"
 ---
 # <a name="idiasectioncontribgetcompilandid"></a>IDiaSectionContrib::get_compilandId
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "49885716"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT get_compilandId (   
+HRESULT get_compilandId (   
    DWORD* pRetVal  
 );  
 ```  

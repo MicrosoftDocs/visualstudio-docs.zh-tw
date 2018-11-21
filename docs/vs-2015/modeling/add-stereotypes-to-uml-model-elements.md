@@ -11,15 +11,15 @@ helpviewer_keywords:
 - UML model, stereotypes
 ms.assetid: 82545252-83ce-4e11-a419-61373be75d16
 caps.latest.revision: 17
-author: alexhomer1
+author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 48bc410c2f9f6a3dfb0e18b713a9b50dda499ea8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: dbd5f4288833a29bdfef2df97ee71ac765ae168f
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49259710"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51725378"
 ---
 # <a name="add-stereotypes-to-uml-model-elements"></a>將造型加入 UML 模型項目
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

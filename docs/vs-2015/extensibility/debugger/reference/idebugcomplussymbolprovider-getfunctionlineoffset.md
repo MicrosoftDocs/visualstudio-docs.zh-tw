@@ -16,12 +16,12 @@ ms.assetid: 51460f5a-4e98-427a-8315-27246e24fb61
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 27168387452cf364ecbf51ba648818617fcff3c7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f6a50f249c7a6a8348bdba93001fa0eb5c001b23
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49828906"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51789224"
 ---
 # <a name="idebugcomplussymbolprovidergetfunctionlineoffset"></a>IDebugComPlusSymbolProvider::GetFunctionLineOffset
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

@@ -21,15 +21,15 @@ helpviewer_keywords:
 - UML, diagrams
 ms.assetid: 87affd40-8127-4ee9-9d3a-ad977abe2ed6
 caps.latest.revision: 86
-author: alexhomer1
+author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: fafbccdae03c604e4d9b150b5745a75792833681
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 92d2be3abfb849b0b5cf5c1c820040b658e2240c
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49834574"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51803431"
 ---
 # <a name="edit-uml-models-and-diagrams"></a>編輯 UML 模型和圖表
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

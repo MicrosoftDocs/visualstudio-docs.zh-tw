@@ -32,15 +32,15 @@ helpviewer_keywords:
 - _CrtSetDbgFlag
 ms.assetid: cf6dc7a6-cd12-4283-b1b6-ea53915f7ed1
 caps.latest.revision: 33
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8157e10ccc79df3caea8257d46753f2993501e5c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: eca7af1cb572714214f264cac35b488fba993bdd
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49812280"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51726566"
 ---
 # <a name="finding-memory-leaks-using-the-crt-library"></a>使用 CRT 程式庫尋找記憶體遺漏
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

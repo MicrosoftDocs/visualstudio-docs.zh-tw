@@ -15,15 +15,15 @@ helpviewer_keywords:
 - Concurrency Visualizer, Cores View Zoom Tool
 ms.assetid: f7d48602-ba32-4487-b51a-89e596124108
 caps.latest.revision: 10
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b72ad17581ec461c9b4309b4fd049ccb324542e5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d3d902c2642171fdfa27f20a764c5414daa3ccf3
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49291287"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51727801"
 ---
 # <a name="cores-view-zoom-tool"></a>核心檢視縮放工具
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

@@ -13,15 +13,15 @@ helpviewer_keywords:
 - Window menu commands
 ms.assetid: 9b5f1b5f-fd42-4de5-a3e1-d8e7e2e8cf1a
 caps.latest.revision: 6
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b3efec4ad36a386a42d0084c5b1c7cdcec3f09b0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4c9ed63d1c70ae3a30ae1a7716d166cad4548010
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49221646"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51794136"
 ---
 # <a name="window-menu-commands"></a>視窗功能表命令
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

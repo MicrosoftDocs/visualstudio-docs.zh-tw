@@ -16,15 +16,15 @@ f1_keywords:
 - vs.performance.4
 ms.assetid: 2c4fb569-929e-4f1d-8c50-b590ee371351
 caps.latest.revision: 17
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 681905b5d57991bb647335184a334e82cbec4df4
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a942a26bb4cd8ccca94fd442250fe8a239cba4ed
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49179203"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51764034"
 ---
 # <a name="da0004-high-processor-usage"></a>DA0004：處理器使用率高
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

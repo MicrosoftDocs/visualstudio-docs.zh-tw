@@ -11,15 +11,15 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 6cabc626-5310-4622-a743-210a9abb5535
 caps.latest.revision: 6
-author: TerryGLee
-ms.author: tglee
+author: conceptdev
+ms.author: crdun
 manager: ghogen
-ms.openlocfilehash: 18abe24c5c4323ce3e54239cf6ac0dd8de276711
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7bdcdbc4a19914494b0a48932afc25c1f7626fbb
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49274361"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51762324"
 ---
 # <a name="visual-studio-tools-for-unity"></a>Visual Studio Tools for Unity
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

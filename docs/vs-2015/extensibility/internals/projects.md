@@ -19,12 +19,12 @@ ms.assetid: 237742e4-a638-4d5b-a9b3-6a69d627763c
 caps.latest.revision: 44
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bb67c01732f5347e13c09146379d2b79298d198d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c3d31f1ce7d063969aad113b95a6684272a28fe9
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49236050"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51761230"
 ---
 # <a name="projects"></a>專案
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

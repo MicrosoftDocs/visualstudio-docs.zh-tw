@@ -13,12 +13,12 @@ ms.assetid: 8ed68602-4e28-46fe-b39f-f41979b308a2
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d52a6e8eb5be9fb6516bcbc7788cf3115e2debdf
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d3c0be041628d840908b1814e26f14a488651603
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49848692"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51748457"
 ---
 # <a name="application-patterns-for-visual-studio"></a>適用於 Visual Studio 的應用程式模式
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

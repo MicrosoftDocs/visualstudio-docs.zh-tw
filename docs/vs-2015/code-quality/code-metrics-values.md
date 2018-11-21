@@ -15,15 +15,15 @@ helpviewer_keywords:
 - measure code quality
 ms.assetid: bc38831e-2083-4ea4-8527-ee41499a342f
 caps.latest.revision: 22
-author: erickson-doug
+author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: d0c22a6659105a3d00f5c73cd880a33d357e216e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 22c42cb215999fcc4415f4d7541b8f4b95ac2d29
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49183452"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51782956"
 ---
 # <a name="code-metrics-values"></a>程式碼度量值
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

@@ -13,15 +13,15 @@ dev_langs:
 - C++
 ms.assetid: 9a63b298-8577-4c15-8595-530558d41bf1
 caps.latest.revision: 6
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 56e7cdaf65944ac811f3b0ce12494fd4124da44d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 73d50d24b473d834d9bc4c6c36eb5a0507d6fccb
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49189328"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51774740"
 ---
 # <a name="idiasymbolgetmemoryspacekind"></a>IDiaSymbol::get_memorySpaceKind
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

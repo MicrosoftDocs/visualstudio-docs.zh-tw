@@ -16,15 +16,15 @@ f1_keywords:
 - vs.performance.rules.DA0008
 ms.assetid: 8a5b78aa-7b3d-476c-a47d-abfaff3fae7c
 caps.latest.revision: 20
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d6e294c03f958259f26938865a3e26c6fb7669d6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 291daa031f66cc37e444a41ea085cff65a177b9d
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49289805"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51759375"
 ---
 # <a name="da0008-few-samples-collected"></a>DA0008：收集的樣本少
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

@@ -25,15 +25,15 @@ helpviewer_keywords:
 - memory analyzer, JavaScript
 ms.assetid: 78f8532b-7b4e-4b50-b8b7-68ca0926dd4e
 caps.latest.revision: 54
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d0d1d45caa7f5bfe275cd851711dfbc9a8186d74
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b2341e9cf0ca1494d8dad79cd521c283c2c23a06
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49814937"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51798933"
 ---
 # <a name="javascript-memory"></a>JavaScript 記憶體
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

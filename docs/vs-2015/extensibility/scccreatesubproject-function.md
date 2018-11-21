@@ -17,12 +17,12 @@ ms.assetid: 08154aed-ae5c-463c-8694-745d0e332965
 caps.latest.revision: 20
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3663da662989c6c67439f053a0cb2f26302573d9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 905a3319627a54ef84b5d473d3725069a9f1eecb
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49824247"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51766439"
 ---
 # <a name="scccreatesubproject-function"></a>SccCreateSubProject 函式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

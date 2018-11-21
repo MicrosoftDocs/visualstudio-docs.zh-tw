@@ -15,15 +15,15 @@ helpviewer_keywords:
 - Concurrency Visualizer, Synchronization Time
 ms.assetid: affa04cc-8bba-4848-9301-b19846d3c2cb
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 12be885a79daa3ba5531f6da9652d6a9708b3c96
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 76775ca0270b46c17506106640ba2d68e795049b
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49826995"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51755392"
 ---
 # <a name="synchronization-time"></a>同步處理時間
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

@@ -17,15 +17,15 @@ helpviewer_keywords:
 - results window, code metrics
 ms.assetid: 988193ec-b4a3-4e11-b5a1-7334979807d5
 caps.latest.revision: 19
-author: erickson-doug
+author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: ae1ba68981b3ed462fc4f0f849226913c81ce1e8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ca9d384b8c7b6d49e44826c65a156d715baa0786
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49302207"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51775884"
 ---
 # <a name="working-with-code-metrics-data"></a>使用程式碼度量資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

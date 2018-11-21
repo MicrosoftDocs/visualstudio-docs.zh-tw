@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaSymbol::get_oemId method
 ms.assetid: c472830f-c3eb-46ab-9498-cd637763d241
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 15dbcf250b021eae820bfaaf2ae6fce73589955d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f95f86cdf05aa23c9c4623c58ca76d8242a8c9ed
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49923026"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51806733"
 ---
 # <a name="idiasymbolgetoemid"></a>IDiaSymbol::get_oemId
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "49923026"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT get_oemId (   
+HRESULT get_oemId (   
    DWORD* pRetVal  
 );  
 ```  

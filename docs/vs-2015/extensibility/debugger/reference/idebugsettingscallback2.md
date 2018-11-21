@@ -15,12 +15,12 @@ ms.assetid: 7e525d0b-7d7a-4d1c-8b78-e1398fa922f2
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2c855ae853ff9479ac9d156c4580e1c3ce7e85cf
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 40198e146cc4a1a48c30375d568594dcac424070
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49242734"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51722064"
 ---
 # <a name="idebugsettingscallback2"></a>IDebugSettingsCallback2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

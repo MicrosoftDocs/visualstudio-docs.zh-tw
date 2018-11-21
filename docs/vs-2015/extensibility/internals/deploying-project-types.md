@@ -16,12 +16,12 @@ ms.assetid: 7f132f67-8589-464c-90dc-0d57ae02aa8f
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b54250a32c8c3a24232d2b6a654aeb87fa9a727b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0a1da27c22f2675042ecd03ffe092c209eaa1bbc
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49188238"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51729751"
 ---
 # <a name="deploying-project-types"></a>部署專案類型
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

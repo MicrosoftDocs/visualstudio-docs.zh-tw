@@ -18,12 +18,12 @@ ms.assetid: 12cce037-9840-4761-845e-5abd5fb317b0
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3ec874d68b7a94811f0733f7045414cb48ddc880
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b4ccf51dd492a32990718ffe84bfe78cd736a42c
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49294251"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51805196"
 ---
 # <a name="nesting-projects"></a>巢狀專案
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

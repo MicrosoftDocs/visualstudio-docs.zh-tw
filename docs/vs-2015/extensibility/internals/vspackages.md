@@ -15,12 +15,12 @@ ms.assetid: cad0893a-9c5f-45b7-952a-e2294f83e324
 caps.latest.revision: 46
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 512c14b27d829ca9532de63f32a1bcabb81f7597
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 61ae8e4a02a611a0b2f4c5e482dfa9af3a8c0380
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49215289"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51759747"
 ---
 # <a name="vspackages"></a>VSPackages
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

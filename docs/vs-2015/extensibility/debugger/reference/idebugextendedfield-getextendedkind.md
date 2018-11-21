@@ -16,12 +16,12 @@ ms.assetid: 20dc1c13-3cc0-4bb4-9c99-fa85587c86c3
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 76cfb7f468b1061146da58bebb4402f99a25c123
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 79e61830655c83c8e276556e00cacb9272b7993d
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49840086"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51722788"
 ---
 # <a name="idebugextendedfieldgetextendedkind"></a>IDebugExtendedField::GetExtendedKind
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

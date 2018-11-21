@@ -13,15 +13,15 @@ helpviewer_keywords:
 - message options, Search
 ms.assetid: 44fb43b7-b006-46cc-a70c-036aac3cceec
 caps.latest.revision: 8
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2466efee1232f244a01215db5e8495936de2868a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f01a95c87f5be7f628ea06d7100751eab907765c
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49237038"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51740924"
 ---
 # <a name="message-search-dialog-box"></a>訊息搜尋對話方塊
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

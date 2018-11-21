@@ -13,15 +13,15 @@ helpviewer_keywords:
 - message codes
 ms.assetid: 9f91f4e2-c1f1-4349-9f11-2fbbf59654be
 caps.latest.revision: 7
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 33707cf748ff19af4780d4ded7f74ebf52d007d1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0464042c17a3ed0836b99183dacbe4918823c752
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49209767"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51724640"
 ---
 # <a name="message-codes"></a>訊息代碼
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

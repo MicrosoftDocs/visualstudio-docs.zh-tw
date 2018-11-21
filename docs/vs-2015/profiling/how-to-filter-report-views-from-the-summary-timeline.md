@@ -11,15 +11,15 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 056b10a0-952b-4790-89e0-02aebe902e87
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8bdf402f8de9f5ce952d2abe4f4b015545a02b1b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 993e1626a3454a199c7427fdbab562c2301f7d72
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49231773"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51817226"
 ---
 # <a name="how-to-filter-report-views-from-the-summary-timeline"></a>如何：從摘要時間軸篩選報表檢視
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

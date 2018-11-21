@@ -17,12 +17,12 @@ ms.assetid: 8fb789df-8f30-420d-8ca5-bb496a6738f1
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8f5db5c023f5b211a8254460e83869d61c7706e7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d7567edf5028d661f41680752234f07bd0a0c26f
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49828852"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51779875"
 ---
 # <a name="idebugbindergetfunctionobject"></a>IDebugBinder::GetFunctionObject
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "49828852"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT GetFunctionObject(   
+HRESULT GetFunctionObject(   
    IDebugFunctionObject **ppFunction  
 );  
 ```  

@@ -17,12 +17,12 @@ ms.assetid: 7428dfeb-8929-41b2-9b99-cb343a86c02d
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c7bb44ba63730de9842c679ebf363ae5ed8782bd
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 80e67c26924a906cada5dec022b8a385f0f4afad
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49835129"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51796112"
 ---
 # <a name="idebugcustomattributequery2getcustomattributebyname"></a>IDebugCustomAttributeQuery2::GetCustomAttributeByName
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "49835129"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT GetCustomAttributeByName(   
+HRESULT GetCustomAttributeByName(   
    LPCOLESTR pszCustomAttributeName,  
    BYTE*     ppBlob,  
    DWORD*    pdwLen  

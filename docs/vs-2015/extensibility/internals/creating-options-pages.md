@@ -16,12 +16,12 @@ ms.assetid: 1bf11fec-dece-4943-8053-6de1483c43eb
 caps.latest.revision: 30
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 555234ae1c35c496b1fb5b1361efec0100479a35
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 076c4934fe4f81bd56edc70356ecdcc1101456e8
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49893685"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51760321"
 ---
 # <a name="creating-options-pages"></a>建立選項頁
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

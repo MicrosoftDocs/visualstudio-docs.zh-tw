@@ -15,12 +15,12 @@ ms.assetid: 6f26b098-84ad-4f6e-ba27-6136581ba630
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b6b00010947a1841367f767165e821d65c6df677
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a8d0c6823c530d7c546a956ecebb3876c1ad6715
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49263824"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51720845"
 ---
 # <a name="taskstatewaitingonchildren-field"></a>TASK_STATE_WAITING_ON_CHILDREN 欄位
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

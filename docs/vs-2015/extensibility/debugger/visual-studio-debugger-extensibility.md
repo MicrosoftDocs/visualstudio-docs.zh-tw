@@ -16,12 +16,12 @@ ms.assetid: c088b6a2-c3ad-446b-830d-9c6f41b2934b
 caps.latest.revision: 33
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ca40964befc940bd0cf28457755f5f338ea36579
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8b5e9e7a3db38b5138f6392ff89f3a3bb4a13303
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49212611"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51743486"
 ---
 # <a name="visual-studio-debugger-extensibility"></a>Visual Studio 偵錯工具的擴充性
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

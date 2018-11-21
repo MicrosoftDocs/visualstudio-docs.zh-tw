@@ -11,15 +11,15 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 2dc61e63-9ba2-4c16-b1ad-f46249e576b6
 caps.latest.revision: 14
-author: TerryGLee
-ms.author: tglee
+author: conceptdev
+ms.author: crdun
 manager: ghogen
-ms.openlocfilehash: 997533d55274ef23966a3b229886f67023d20bdb
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0a39bee5517f0a4311613af336a5b8bc6e6fa00e
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49247022"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51760698"
 ---
 # <a name="application-lifecycle-management-alm-with-unity-apps"></a>應用程式生命週期管理 (ALM) (含 Unity 應用程式)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

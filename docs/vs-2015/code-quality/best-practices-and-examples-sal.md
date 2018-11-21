@@ -11,15 +11,15 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 666276fb-99c2-4dc9-8bac-d74861c203ea
 caps.latest.revision: 14
-author: corob-msft
-ms.author: gewarren
+author: mikeblome
+ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 5abb716bd562b6bd82b430f6b94251153a9abbe3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9327ab850bb5f62158e48abc4c8445d3f9b6fe9b
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49934700"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51743740"
 ---
 # <a name="best-practices-and-examples-sal"></a>最佳作法和範例 (SAL)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

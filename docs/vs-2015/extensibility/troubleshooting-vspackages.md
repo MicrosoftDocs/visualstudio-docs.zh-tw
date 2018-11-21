@@ -16,12 +16,12 @@ ms.assetid: 274673e7-72e7-476f-a263-3411b5b874be
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0cc3395f065d211c2d8e7d4f68a6b3ec8c25474d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b2c9a7b57a8b15683cb202b71e33e908a1bfd1b5
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49949303"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51764000"
 ---
 # <a name="troubleshooting-vspackages"></a>針對 VSPackage 進行疑難排解
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

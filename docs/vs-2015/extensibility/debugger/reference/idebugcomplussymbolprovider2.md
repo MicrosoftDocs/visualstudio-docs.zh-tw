@@ -15,12 +15,12 @@ ms.assetid: fa2f9b49-03ad-43c7-92d6-6dcb9c3d0531
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6aed363d7f3571fa26d291858ce63ba654afaec1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2fd160ad4ac59e6e479512f9183a4cddb5b0ec55
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49186221"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51795508"
 ---
 # <a name="idebugcomplussymbolprovider2"></a>IDebugComPlusSymbolProvider2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

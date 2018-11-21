@@ -15,12 +15,12 @@ ms.assetid: 3f59a285-6c33-4ae3-a4fb-ec1f5aa21bd1
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 65e3c544fc5e571368afb9872e6e13fda128e79a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 41d5768c8cfddc3474616d7a2eee16b84cd24d56
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49877578"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51754692"
 ---
 # <a name="managed-extensibility-framework-in-the-editor"></a>編輯器中的 Managed Extensibility Framework
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

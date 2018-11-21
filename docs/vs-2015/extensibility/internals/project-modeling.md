@@ -16,12 +16,12 @@ ms.assetid: c8db8fdb-88c1-4b12-86fe-f3c30a18f9ee
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 324c870e42a9a9da37036979304e06637364c4d0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 37b237a462900735ea641407d10719d43334262e
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49229719"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51808410"
 ---
 # <a name="project-modeling"></a>將專案模型化
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

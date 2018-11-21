@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaSymbol::get_frontEndMajor method
 ms.assetid: f8a067c5-3306-4fc5-bc20-8910a47ed504
 caps.latest.revision: 12
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7e241d279898929119cd79530e5ee8b0ceb76a2c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: cdda597a737a79377a051a635bfb5add01b9ca38
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49867880"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51749475"
 ---
 # <a name="idiasymbolgetfrontendmajor"></a>IDiaSymbol::get_frontEndMajor
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "49867880"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT get_frontEndMajor (   
+HRESULT get_frontEndMajor (   
    DWORD* pRetVal  
 );  
 ```  

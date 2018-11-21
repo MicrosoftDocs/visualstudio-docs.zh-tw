@@ -13,15 +13,15 @@ helpviewer_keywords:
 - UML, modeling requirements
 ms.assetid: 359900f8-6d69-493d-bfdf-2c9069c74a26
 caps.latest.revision: 30
-author: alexhomer1
+author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: bc0620c06b6fa5b4018b6e027e30a18216454b29
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ab92a08aa7359aa4393b3356384a4ccc352afb27
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49863954"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51776482"
 ---
 # <a name="model-user-requirements"></a>模型使用者需求
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

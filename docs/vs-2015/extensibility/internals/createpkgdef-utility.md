@@ -18,12 +18,12 @@ ms.assetid: c745cb76-47a6-49ff-9eed-16af0f748e35
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 63334ba9d454407bb93a87bf89b12cb472184d58
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 492e34c92019de7f3c0921b853d103252e09b996
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49181593"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51782644"
 ---
 # <a name="createpkgdef-utility"></a>CreatePkgDef 公用程式
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

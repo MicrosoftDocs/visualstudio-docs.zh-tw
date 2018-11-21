@@ -11,15 +11,15 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ddd429d9-ac70-4ac4-9e69-299c6ea2df09
 caps.latest.revision: 32
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 87b9486430f4d2a8bf2b33b468aca865f78671b2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4716ac398916a869fe122b54f829bbfda2f9911b
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49285736"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51810438"
 ---
 # <a name="overview-of-visual-studio-graphics-diagnostics"></a>Visual Studio 圖形診斷概觀
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

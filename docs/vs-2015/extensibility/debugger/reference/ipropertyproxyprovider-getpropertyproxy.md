@@ -17,12 +17,12 @@ ms.assetid: 3ebb7515-5bfe-48f4-9b8d-721b8f664eb6
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f93c6d34e1b1a2998a72bfa9bf4d950f135de176
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b6215c3b11310f57f2288df945927c38c7867fb2
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49815790"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51727255"
 ---
 # <a name="ipropertyproxyprovidergetpropertyproxy"></a>IPropertyProxyProvider::GetPropertyProxy
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]

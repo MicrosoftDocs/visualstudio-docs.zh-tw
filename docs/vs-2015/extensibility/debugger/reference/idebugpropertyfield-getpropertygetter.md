@@ -17,12 +17,12 @@ ms.assetid: ab9f861a-42ad-4a82-9ae6-2606176f755a
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fe920764f27d8028983c514ea58de7309e7474bd
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b44917780920ecb72a5387fcb887e6cd7b028445
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49845858"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51736656"
 ---
 # <a name="idebugpropertyfieldgetpropertygetter"></a>IDebugPropertyField::GetPropertyGetter
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "49845858"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT GetPropertyGetter(   
+HRESULT GetPropertyGetter(   
    IDebugMethodField** ppField  
 );  
 ```  

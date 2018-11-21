@@ -16,12 +16,12 @@ ms.assetid: 1cda43d8-42a5-4b1b-a3c8-cf0401c3202f
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5973d9997c6d4c1afc5b5659fc4ecfc65164f6b3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6b9bccb3874d5b85a8a69288e2bf44adb14b5b3f
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49852513"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51783241"
 ---
 # <a name="symbols-element"></a>Symbols 項目
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

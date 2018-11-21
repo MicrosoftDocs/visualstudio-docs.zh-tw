@@ -15,15 +15,15 @@ f1_keywords:
 - vs.performance.rules.DA0023
 ms.assetid: aba875fe-9cbc-418d-a2c4-6eb47519a5bb
 caps.latest.revision: 15
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 999b82029893e3c27eeb7648e601c1b403e1213f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6aab85fcead879aa719879cd0d3c53cf9db4ffa3
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49209725"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51806382"
 ---
 # <a name="da0023-high-gc-cpu-time"></a>DA0023：高 GC CPU 時間
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

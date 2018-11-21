@@ -16,15 +16,15 @@ dev_langs:
 - C++
 ms.assetid: f7f08402-610e-47f0-ba10-575dd395a0f0
 caps.latest.revision: 5
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c45ef73b4fe448d64a23292c83de8f01e0b6f339
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 53df72fcdc5df0022be337aa01a0eab003ba3949
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49281693"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51810009"
 ---
 # <a name="debugging-applications"></a>對應用程式進行偵錯
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

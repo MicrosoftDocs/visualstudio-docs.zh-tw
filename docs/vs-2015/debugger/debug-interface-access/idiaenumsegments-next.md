@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaEnumSegments::Next method
 ms.assetid: 53f61874-d821-47ab-a1f5-27e982804a6a
 caps.latest.revision: 10
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 79cc56da307a2374f0bf1cb9108a1babbc83e84a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 794d1c234d6e7ed673376450f612b350184a8ab7
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49819598"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51799898"
 ---
 # <a name="idiaenumsegmentsnext"></a>IDiaEnumSegments::Next
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "49819598"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT Next (   
+HRESULT Next (   
    ULONG         celt,   
    IDiaSegment** rgelt,  
    ULONG*        pceltFetched  

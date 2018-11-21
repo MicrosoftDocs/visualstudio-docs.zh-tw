@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaFrameData::get_type method
 ms.assetid: efca38b5-c479-4d0a-a164-f903f25c5509
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: abae285ebbb8401f399095101432b52e36baaab1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 48fc62b0e1ca302aca61faedc42537925d13c7a5
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49885768"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51750414"
 ---
 # <a name="idiaframedatagettype"></a>IDiaFrameData::get_type
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "49885768"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT get_type (   
+HRESULT get_type (   
    DWORD* pRetVal  
 );  
 ```  

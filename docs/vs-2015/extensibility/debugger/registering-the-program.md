@@ -16,12 +16,12 @@ ms.assetid: d726a161-7db3-4ef4-b258-9f6a5be68418
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 07420cce0c39c29d721b83ec504370c0f4bc04eb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e26e15e17e69e8bf182d23161cb17ddbd5de0035
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49912522"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51797100"
 ---
 # <a name="registering-the-program"></a>註冊程式
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -77,7 +77,7 @@ ms.locfileid: "49912522"
                 if (SUCCEEDED(hr))  
                 {  
                     // pass on the parameters we were given (omitted here)  
-                    hr = spPortEx->LaunchSuspended(/* omitted paramters */,ppDebugProcess)  
+                    hr = spPortEx->LaunchSuspended(/* omitted parameters */,ppDebugProcess)  
                 }  
             }  
         }  

@@ -17,12 +17,12 @@ ms.assetid: 260c33cc-a05e-4645-84b6-536d0b3b0537
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 94fa9edf53d56fefb817c1a4ba6d7b3f027ab2a6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b7d99110511f9d126c2545ae2917c67afffb361f
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49886418"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51767132"
 ---
 # <a name="processinfo"></a>PROCESS_INFO
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "49886418"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-typedef struct tagPROCESS_INFO {   
+typedef struct tagPROCESS_INFO {   
    PROCESS_INFO_FIELDS Fields;  
    BSTR                bstrFileName;  
    BSTR                bstrBaseName;  
@@ -46,7 +46,7 @@ typedef struct tagPROCESS_INFO {
 ```  
   
 ```csharp  
-public struct PROCESS_INFO {   
+public struct PROCESS_INFO {   
    public uint          Fields;  
    public string        bstrFileName;  
    public string        bstrBaseName;  

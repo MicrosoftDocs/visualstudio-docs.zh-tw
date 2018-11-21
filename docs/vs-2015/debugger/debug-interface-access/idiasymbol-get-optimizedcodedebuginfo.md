@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaSymbol::get_optimizedCodeDebugInfo method
 ms.assetid: 57ef4170-37a9-46b0-8217-c1a674725113
 caps.latest.revision: 12
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ef2910e008beb1e3d28bd67b2c49496ccbcfd78a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: cfd7652f304d23c9ad75dbd043b975ffb9e0a8e2
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49849966"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51797438"
 ---
 # <a name="idiasymbolgetoptimizedcodedebuginfo"></a>IDiaSymbol::get_optimizedCodeDebugInfo
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

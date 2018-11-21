@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaSession::symbolById method
 ms.assetid: 062e4b5a-9c4d-4703-88da-ec13102c2b66
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ff684a86e81fb1584177b304ccb2ab4c23cc05b8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c02e4764e5ad152e27d8861892f8d82728a0c2e7
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49849810"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51806018"
 ---
 # <a name="idiasessionsymbolbyid"></a>IDiaSession::symbolById
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "49849810"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT symbolById (   
+HRESULT symbolById (   
    DWORD        id,  
    IDiaSymbol** ppSymbol  
 );  

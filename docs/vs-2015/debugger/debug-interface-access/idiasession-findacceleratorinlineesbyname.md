@@ -13,15 +13,15 @@ dev_langs:
 - C++
 ms.assetid: e203e5c2-6563-43fa-be56-3063955043ab
 caps.latest.revision: 6
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c143ee5eaca8d2544ae54658b38cf471dac58a41
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b547d38779578ca4fc2fba44effc9b5a6037f4fe
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49929318"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51761837"
 ---
 # <a name="idiasessionfindacceleratorinlineesbyname"></a>IDiaSession::findAcceleratorInlineesByName
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ ms.locfileid: "49929318"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT findAcceleratorInlineeLinesByName (   
+HRESULT findAcceleratorInlineeLinesByName (   
    LPCOLESTR             name,  
    DWORD                 option,  
    IDiaEnumSymbols**     ppResult  

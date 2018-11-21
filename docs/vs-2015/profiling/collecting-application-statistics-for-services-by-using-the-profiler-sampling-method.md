@@ -11,15 +11,15 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 07840ab2-3a92-4744-ac87-48b19e0ceecd
 caps.latest.revision: 19
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3a847777ad3d5b12162eedc8e998098ad20926a1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 54aad4b8fb2282c1f2d5514f50b67c82ee1c4f53
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49295551"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51726813"
 ---
 # <a name="collecting-application-statistics-for-services-by-using-the-profiler-sampling-method"></a>使用程式碼剖析工具取樣方法收集服務的應用程式統計資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

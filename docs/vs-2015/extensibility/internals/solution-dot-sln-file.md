@@ -17,12 +17,12 @@ ms.assetid: 7d7ef539-2e4b-4637-b853-8ec7626609df
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4bd3089d6916615a8b16d07b92b51f32afafaedc
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: bc61824e7df36fa3b615d1a2c4b729cd7b7c8c1c
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49886951"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51796177"
 ---
 # <a name="solution-sln-file"></a>方案檔 (.Sln)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

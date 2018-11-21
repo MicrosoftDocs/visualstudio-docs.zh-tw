@@ -15,12 +15,12 @@ ms.assetid: e0f666a0-92a7-4f9c-ba79-d05b13fb7f11
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 39f2cc0932e875a33621241d6cba0cb0b692ff6a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 826a27fd3e3041e99f34acce0474a8e71837c69d
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49247298"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51807604"
 ---
 # <a name="migrating-a-legacy-language-service"></a>移轉舊版語言服務
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

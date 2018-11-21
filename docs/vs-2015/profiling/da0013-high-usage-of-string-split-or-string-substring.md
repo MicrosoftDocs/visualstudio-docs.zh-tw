@@ -19,15 +19,15 @@ helpviewer_keywords:
 - vs.performance.rules.DA0013
 ms.assetid: f501f423-bef9-4e08-bf96-c9ac9957e5a2
 caps.latest.revision: 19
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 06e738444b2a8e3e888da406097e94fbc9e10a28
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b469a9931ea48b60e49f9b5210e4e4db05fda362
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49198688"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51807453"
 ---
 # <a name="da0013-high-usage-of-stringsplit-or-stringsubstring"></a>DA0013：String.Split 或 String.Substring 的用量高
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

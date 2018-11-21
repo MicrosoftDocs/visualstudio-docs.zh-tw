@@ -15,15 +15,15 @@ helpviewer_keywords:
 - Concurrency Visualizer, Average CPU Utilization
 ms.assetid: 5797d004-2325-46cf-bbf3-6739a15958ec
 caps.latest.revision: 15
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6e96f396a6c4f3f2129f4d9a57add3b0495332a3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5534da38c373b36a7e34bb1623d0a83f9bc405cb
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49191733"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51786999"
 ---
 # <a name="average-cpu-utilization"></a>平均 CPU 使用率
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

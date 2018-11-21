@@ -16,12 +16,12 @@ author: dgriffen
 manager: douge
 ms.workload:
 - dagriffe
-ms.openlocfilehash: 94d785ce55b57e35b0880537e099cbc3e03d20ab
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3c1dfa0e3de06bcd6c61472a085ea3c4cdeeac27
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49855806"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51780785"
 ---
 # <a name="vsix-language-pack-schema-20-reference"></a>VSIX 語言套件結構描述 2.0 參考
 
@@ -31,7 +31,7 @@ VSIX 語言套件結構描述會提供 VSIX 封裝當地語系化的安裝資訊
 
 語言組件檔案的根項目是`<PackageLanguagePackManifest>`，屬性為`Version`，這是語言組件格式的版本。 這篇文章描述的語言組件格式，藉由設定資訊清單中所指定的 2.0 版`Version`屬性的值`Version="2.0.0"`。 根項目包含一個子`<Metadata>`項目。
 
-### <a name="packagelangaugepackmanifest-element"></a>PackageLangaugePackManifest 項目
+### <a name="packagelanguagepackmanifest-element"></a>PackageLanguagePackManifest 項目
 
 內`<PackageLanguagePackManifest>`下列項目必須存在的項目：
 

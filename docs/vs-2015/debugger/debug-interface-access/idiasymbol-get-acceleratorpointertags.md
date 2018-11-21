@@ -13,15 +13,15 @@ dev_langs:
 - C++
 ms.assetid: 30e13cee-e511-49ec-affd-99b0097071b2
 caps.latest.revision: 6
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 28b38d7e87862822d9bf8f1e5c729629486f44d5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: efad3aeaf0d8a30d521d16612639d0b663ee8ebe
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49236089"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51720665"
 ---
 # <a name="idiasymbolgetacceleratorpointertags"></a>IDiaSymbol::get_acceleratorPointerTags
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

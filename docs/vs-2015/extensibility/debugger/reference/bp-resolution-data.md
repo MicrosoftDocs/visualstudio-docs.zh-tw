@@ -17,12 +17,12 @@ ms.assetid: 9e0b9000-6a84-47b9-b07a-367a75764389
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 042b837e7a4a265d08589dee9a6a99c8ff5cf8fd
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 02d64bd1fcef350fba50832168a6c5d2e41144d9
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49832247"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51771558"
 ---
 # <a name="bpresolutiondata"></a>BP_RESOLUTION_DATA
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "49832247"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-typedef struct _BP_RESOLUTION_DATA {   
+typedef struct _BP_RESOLUTION_DATA {   
    BSTR              bstrDataExpr;  
    BSTR              bstrFunc;  
    BSTR              bstrImage;  
@@ -41,7 +41,7 @@ typedef struct _BP_RESOLUTION_DATA {
 ```  
   
 ```csharp  
-public struct BP_RESOLUTION_DATA {   
+public struct BP_RESOLUTION_DATA {   
    public string bstrDataExpr;  
    public string bstrFunc;  
    public string bstrImage;  

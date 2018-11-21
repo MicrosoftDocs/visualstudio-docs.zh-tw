@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaStackWalker2 interface
 ms.assetid: 00c73cf9-2933-472e-bc1d-d041f4d7e412
 caps.latest.revision: 13
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 025600306c244f3325d4ac5a8dd6affeac85bc18
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f7da15729b25d5a3e61da3a7c6c1bc0fe14fda45
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49940472"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51750611"
 ---
 # <a name="idiasymbolgetisctypes"></a>IDiaSymbol::get_isCTypes
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

@@ -11,15 +11,15 @@ helpviewer_keywords:
 - UML activity diagrams, programming
 ms.assetid: 8cdd0203-85ef-4c62-9abc-da4cb26fa504
 caps.latest.revision: 27
-author: alexhomer1
+author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 0711a16206ae1f6fc1efba0b3422c650c993396d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f68cf87a7f45b906c6de43e0a837d49132b7a3e0
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49941993"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51725565"
 ---
 # <a name="edit-uml-sequence-diagrams-by-using-the-uml-api"></a>使用 UML API 編輯 UML 循序圖
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

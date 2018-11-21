@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDiaPropertyStorage::ReadBSTR
 ms.assetid: 7214643b-3286-48ed-90aa-0fe95b4cae5b
 caps.latest.revision: 11
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0363cbc8923303ba3ea5ce12a31e68d3bdf5d955
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 888cadb5778bb99da52a0a8a7fd4f048cf0f2c1f
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49932997"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51787389"
 ---
 # <a name="idiapropertystoragereadbstr"></a>IDiaPropertyStorage::ReadBSTR
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "49932997"
 ## <a name="syntax"></a>語法  
   
 ```cpp#  
-HRESULT ReadBSTR (   
+HRESULT ReadBSTR (   
    PROPID id,  
    BSTR*  pValue  
 );  

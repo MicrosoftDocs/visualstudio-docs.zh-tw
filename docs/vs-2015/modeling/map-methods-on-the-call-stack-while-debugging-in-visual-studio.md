@@ -32,15 +32,15 @@ helpviewer_keywords:
 - debugging [Visual Studio], visualizing the call stack
 ms.assetid: d6a72e5e-f88d-46fc-94a3-1789d34805ef
 caps.latest.revision: 43
-author: mikejo5000
+author: MikeJo5000
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 6526d0f499c86a5ae0afb055e8edd6b86c561f46
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f67a891327d179ffd23b56eb5bae951309bab8da
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49883104"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51725606"
 ---
 # <a name="map-methods-on-the-call-stack-while-debugging-in-visual-studio"></a>在 Visual Studio 中進行偵錯時對應呼叫堆疊上的方法
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

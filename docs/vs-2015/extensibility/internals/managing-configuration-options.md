@@ -15,12 +15,12 @@ ms.assetid: 596c28ee-f48d-4252-a5c4-f730c43a39e6
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b114948ad662b9c027e208609dc1e48a6bec8979
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5f7407a4c75321899498f2f4fa9e555f32198c0c
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49243226"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51748737"
 ---
 # <a name="managing-configuration-options"></a>管理組態選項
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

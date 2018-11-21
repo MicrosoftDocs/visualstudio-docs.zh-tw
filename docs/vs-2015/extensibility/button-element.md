@@ -16,12 +16,12 @@ ms.assetid: 96dccf51-2b00-4700-9d28-924b34c21ecd
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4ebf62f5c5a1a6ac2bfea03834fb0cddb38834e3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 20673b87972c51a6cc0e3ce07553a0a721d7cca3
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49179528"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51733318"
 ---
 # <a name="button-element"></a>Button 項目
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
