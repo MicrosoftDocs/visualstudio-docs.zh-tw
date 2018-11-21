@@ -17,21 +17,21 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 99ed1a6db16b8e1fb765898c976b962bfe43f041
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 09faa6473ee3f9570e57655e065a4bb9bd622e9c
+ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178197"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "51948266"
 ---
 # <a name="code-a-custom-validation-rule-for-a-web-performance-test"></a>為 Web 效能測試撰寫自訂驗證規則程式碼
 
-您可以建立自己的驗證規則。 若要執行此作業，您可以從驗證規則類別中衍生自己的規則類別。 驗證規則衍生自 <xref:Microsoft.VisualStudio.TestTools.WebTesting.ValidationRule> 基底類別。
+您可以建立自己的驗證規則。 若要執行這項作業，您可以從驗證規則類別中衍生自己的規則類別。 驗證規則衍生自 <xref:Microsoft.VisualStudio.TestTools.WebTesting.ValidationRule> 基底類別。
 
 > [!NOTE]
 > 您也可以建立自訂擷取規則。 如需詳細資訊，請參閱[為負載測試建立自訂程式碼和外掛程式](../test/create-custom-code-and-plug-ins-for-load-tests.md)。
 
-## <a name="to-create-custom-validation-rules"></a>建立自訂驗證規則
+## <a name="to-create-custom-validation-rules"></a>若要建立自訂驗證規則
 
 1.  開啟包含 Web 效能測試的測試專案。
 
@@ -138,11 +138,11 @@ namespace SampleWebTestRules
             {
                 if (numTagsFound > 0)
                 {
-                    e.Message = String.Format("Only found {0} occurences of the tag", numTagsFound);
+                    e.Message = String.Format("Only found {0} occurrences of the tag", numTagsFound);
                 }
                 else
                 {
-                    e.Message = String.Format("Did not find any occurences of tag '{0}'", RequiredTagName);
+                    e.Message = String.Format("Did not find any occurrences of tag '{0}'", RequiredTagName);
                 }
             }
         }
@@ -233,9 +233,9 @@ Namespace SampleWebTestRules
             ' If the validation fails, set the error text that the user sees
             If Not (validated) Then
                 If numTagsFound > 0 Then
-                    e.Message = String.Format("Only found {0} occurences of the tag", numTagsFound)
+                    e.Message = String.Format("Only found {0} occurrences of the tag", numTagsFound)
                 Else
-                    e.Message = String.Format("Did not find any occurences of tag '{0}'", RequiredTagName)
+                    e.Message = String.Format("Did not find any occurrences of tag '{0}'", RequiredTagName)
                 End If
             End If
         End Sub
