@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 368680321f8ff8ab908e79e075a5797ba9ecd598
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0297058fea98568551f54d8960e62f80bb35ccd7
+ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31945112"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "51948877"
 ---
 # <a name="deploy-devenvexe"></a>/Deploy (devenv.exe)
 在建置或重建之後部署方案。 只適用於 受控碼專案。

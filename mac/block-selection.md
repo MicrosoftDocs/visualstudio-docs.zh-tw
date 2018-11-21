@@ -3,14 +3,14 @@ title: 區塊選取
 description: 本文說明如何使用 Visual Studio for Mac 中的區塊選取功能
 author: conceptdev
 ms.author: crdun
-ms.date: 05/06/2018
+ms.date: 11/06/2018
 ms.assetid: E8E0831E-E076-44B1-A82A-A325382916A6
-ms.openlocfilehash: 0b63161781f281b08e7603b3fec4a58223b1f63e
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: f4aa0283bc2dc950ce1c3f6573176f75b6a3da8f
+ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51294431"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "51948800"
 ---
 # <a name="block-selection"></a>區塊選取
 
