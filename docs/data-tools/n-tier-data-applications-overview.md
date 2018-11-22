@@ -15,12 +15,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4e386c052b43ee62ddde0516fa203298fe1babe5
-ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
+ms.openlocfilehash: 3f9cf8c6a75e5f2a517931bf0fd858ea8f8f860c
+ms.sourcegitcommit: c9a01c599ce19a5845605b3b28c0229fd0abb93f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37089026"
+ms.lasthandoff: 11/21/2018
+ms.locfileid: "52281741"
 ---
 # <a name="n-tier-data-applications-overview"></a>多層式架構資料應用程式概觀
 *多層式架構*資料應用程式是指分隔成多個資料應用程式*層*。 也稱為 「 分散式應用程式 」 和 「 多層式應用程式，多層式架構應用程式在個別分成離散層級的用戶端與伺服器之間分散處理。 當您開發應用程式以存取資料時，您應該有清楚的區隔，組成應用程式各層之間。
@@ -64,7 +64,7 @@ Visual Studio 包含數個功能，可協助開發人員建立多層式架構應
 中介層通常會連接到資料層使用的資料連接。 此資料連接通常會儲存在資料存取元件中。
 
 ## <a name="data-tier"></a>資料層
-*資料層*基本上是將應用程式的資料儲存在伺服器 (例如，將執行的伺服器[!INCLUDE[ssNoVersion](../data-tools/includes/ssnoversion_md.md)])。
+*資料層*基本上是儲存應用程式的資料 （例如，執行 SQL Server 的伺服器） 的伺服器。
 
 下圖顯示功能和技術，可在 Visual Studio 中，和他們可能適用於什麼情況的多層式架構應用程式資料層。
 

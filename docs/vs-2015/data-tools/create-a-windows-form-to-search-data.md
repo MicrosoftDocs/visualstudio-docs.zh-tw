@@ -16,19 +16,19 @@ helpviewer_keywords:
 - Windows Forms, searching data
 - Windows Forms, displaying data
 - parameters, displaying filtered data
-- data [Visual Studio], paramaterizing queries
+- data [Visual Studio], parameterizing queries
 - data [Visual Studio], searching
 ms.assetid: 65ca79a9-7458-466c-af55-978cd24c549e
 caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: cf0941d1f08060bcc0c8889b3038d491dc91d1a7
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: e42c86cf94115d317eb20df66f4cef005e05eba9
+ms.sourcegitcommit: c9a01c599ce19a5845605b3b28c0229fd0abb93f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50220400"
+ms.lasthandoff: 11/21/2018
+ms.locfileid: "52281793"
 ---
 # <a name="create-a-windows-form-to-search-data"></a>建立 Windows Form 以搜尋資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

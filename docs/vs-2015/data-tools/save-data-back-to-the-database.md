@@ -29,12 +29,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: baddf87e24efc48ea597e44c52abcee5e5bdcfad
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6b6fd99b2b1a41d6baa3a110b2a595afb1dd7e3f
+ms.sourcegitcommit: c9a01c599ce19a5845605b3b28c0229fd0abb93f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49829635"
+ms.lasthandoff: 11/21/2018
+ms.locfileid: "52281845"
 ---
 # <a name="save-data-back-to-the-database"></a>將資料儲存回資料庫
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,7 +68,7 @@ ms.locfileid: "49829635"
 ## <a name="two-stage-updates"></a>兩階段更新  
  更新資料來源是兩個步驟的程序。 第一個步驟是使用新的記錄、 已變更的記錄或已刪除的記錄更新的資料集。 如果您的應用程式永遠不會傳送回資料來源的這些變更，您已完成的更新。  
   
- 如果您不要將變更傳送回資料庫，第二個步驟是必要的。 如果您未使用資料繫結控制項，您就必須以手動方式呼叫的 Update 方法相同的 TableAdapter （或資料配接器），您用來填入資料集。 不過，您也可以使用不同的配接器，例如，若要將資料從一個資料來源移到另一個，或更新多個資料來源。 如果您未使用資料繫結，並儲存相關資料表的變更，您必須以手動方式具現化自動產生 TableAdapterManager 類別的變數，然後呼叫其 UdpateAll 方法。  
+ 如果您不要將變更傳送回資料庫，第二個步驟是必要的。 如果您未使用資料繫結控制項，您就必須以手動方式呼叫的 Update 方法相同的 TableAdapter （或資料配接器），您用來填入資料集。 不過，您也可以使用不同的配接器，例如，若要將資料從一個資料來源移到另一個，或更新多個資料來源。 如果您未使用資料繫結，並儲存相關資料表的變更，您必須以手動方式具現化自動產生 TableAdapterManager 類別的變數，然後呼叫其 UpdateAll 方法。  
   
  ![Visual Basic 資料集更新](../data-tools/media/vbdatasetupdates.gif "vbDatasetUpdates")  
 兩階段更新程序，而且在成功的更新中 DataRowVersion 的角色  
