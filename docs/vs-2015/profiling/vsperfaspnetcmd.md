@@ -17,12 +17,12 @@ caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8b252304061cb6f28439ed388d4950d9ba067013
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.openlocfilehash: 07c460020595d3b951aa7c5737e37499da7daa7f
+ms.sourcegitcommit: c9a01c599ce19a5845605b3b28c0229fd0abb93f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51773219"
+ms.lasthandoff: 11/21/2018
+ms.locfileid: "52281767"
 ---
 # <a name="vsperfaspnetcmd"></a>VSPerfASPNetCmd
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ ms.locfileid: "51773219"
 |**/Tip** 或 **/i**|將詳細 ASP.NET 要求和 ADO.NET 呼叫資訊加入至分析資料。 **/Tip** 可以搭配取樣或檢測方法使用，且可與 **/Memory** 選項一起使用。|  
 |**/Output:** `File` 或 **/o:**`File`|指定分析資料 (.vsp) 檔案的路徑與檔案名稱。|  
 |**/NoWait** 或 **/n**|立即傳回命令提示字元，以便在 [命令提示字元] 視窗中使用其他命令。 您必須在個別的命令列上輸入 **VSPerfASPNETCmd /Shutdown** 以關閉分析。|  
-|**/PackSymbols**[:{**on**&#124;**off**} 或 **/p**[:{**on**&#124;**off**}|在分析資料 (.vsp) 檔案中內嵌符號 (函式與參數名稱等)。|  
+|**/PackSymbols**[:{**on**&#124;**off**} 或 **/p**[:{**on**&#124;**off**}|程式碼剖析資料 (.vsp) 檔案中內嵌符號 （函式和參數名稱等）。|  
 |**/Shutdown:** `Website` 或 **/d:**`Website`|關閉分析。 在使用 **/NoWait** 選項啟動分析之後，或者分析工具非預期地結束時，作為命令列上的唯一選項使用。 指定您在原始 **VSPerfASPNETCmd** 命令中使用的相同 URL。|  
 |`Website`|要分析之網站的 URL。|  
   
