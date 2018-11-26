@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 04/14/2017
 ms.assetid: 5C800815-0B13-4B27-B017-95FCEF1A0EA2
-ms.openlocfilehash: 4c945af52f4d19a1966809e905119d491cfc7432
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 0a98425ba12ae7aba16a2bc6ffa29e701c1b9f11
+ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295744"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "51948618"
 ---
 # <a name="include-a-nuget-package-in-your-project"></a>在專案中包含 NuGet 套件
 

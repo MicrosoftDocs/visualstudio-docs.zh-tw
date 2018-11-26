@@ -13,12 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 678a37eec7643976e689cc027922ff481a0e005f
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 071f64c4239441d3c3fd2c111d1b912175e23316
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219376"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51766547"
 ---
 # <a name="unit-testing-in-nodejs"></a>Node.js 的單元測試
 
@@ -33,7 +33,7 @@ ms.locfileid: "50219376"
 > [!WARNING]
 > Tape 的問題目前會導致 Tape 測試無法執行。 如果合併了 [PR #361](https://github.com/substack/tape/pull/361)，應該就能解決問題。
 
-如果不支援您最愛的架構，請參閱[新增單元測試架構的支援](#addingFramework)，以取得新增支援的資訊。 
+如果不支援您最愛的架構，請參閱[新增單元測試架構的支援](#addingFramework)，以取得新增支援的資訊。
 
 ## <a name="write-unit-tests"></a>撰寫單元測試
 
@@ -129,7 +129,7 @@ Test execution time: 1.5731 Seconds
 ```
 
 > [!NOTE]
-> 如果您收到錯誤，指出找不到 *vstest.console.exe*，請確定您已開啟開發人員命令提示字元，而不是一般的命令提示字元。 
+> 如果您收到錯誤，指出找不到 *vstest.console.exe*，請確定您已開啟開發人員命令提示字元，而不是一般的命令提示字元。
 
 ## <a name="addingFramework"></a>新增單元測試架構的支援
 
@@ -149,7 +149,7 @@ Test execution time: 1.5731 Seconds
 探索可用的測試架構會在 Visual Studio 啟動時發生。 如果在 Visual Studio 執行時新增架構，請重新啟動 Visual Studio 來偵測此架構。 不過，當您對實作進行變更時，不需要重新啟動。
 
 ## <a name="unit-tests-in-other-project-types"></a>其他專案類型中的單元測試
-您並不限於只能在 Node.js 專案中撰寫單元測試。 當您將 TestFramework 和 TestRoot 屬性新增至任何 C# 或 VB 專案時，會列舉那些測試，且您可以使用 [測試總管] 視窗執行它們。
+您並不限於只能在 Node.js 專案中撰寫單元測試。 當您將 TestFramework 和 TestRoot 屬性新增至任何 C# 或 Visual Basic 專案時，會列舉那些測試，且您可以使用 [測試總管] 視窗執行它們。
 
 若要啟用此功能，請以滑鼠右鍵按一下 [方案總管] 中的專案節點、選擇 [卸載專案]，然後選擇 [編輯專案]。 然後在專案檔中，將下列兩個項目新增至屬性群組。
 

@@ -1,7 +1,7 @@
 ---
 title: 效能工具使用者入門 | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 11/04/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,31 +13,28 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6fe0a1d3a305ca19b36358ab28fbb794d56df2aa
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 10c568705be09948b96f8c8b3df23be1f5e8d137
+ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31576439"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "51948903"
 ---
 # <a name="getting-started-with-performance-tools"></a>效能工具使用者入門
-本節提供當您使用 Visual Studio 效能工具來收集、檢視和分析程式碼效能時將運用之概念和工作的概觀。  
+
+Visual Studio 提供數種方式供您收集、檢視和分析程式碼效能資料。 在許多情況下，最佳的效能工具使用者入門方式是使用 [效能精靈] 的預設設定。 該精靈會收集應用程式統計資料，以協助您找出程式碼中的效能問題。  
   
- 這些工具提供數種方式供您收集和分析效能資料。 但在許多情況下，開始的最佳方式是使用 [效能精靈] 的預設設定，它可讓您收集應用程式統計資料，協助您找出程式碼中的效能問題。  
+- Visual Studio [錯誤清單] 視窗中會顯示效能警告，以通知您常見的程式碼撰寫問題。 您可以從警告巡覽至您的原始程式碼，以及可協助您撰寫更有效率程式碼的詳細說明主題。
+
+- 效能報告可讓您檢視應用程式結構的不同層級、原始程式碼行及處理序。 效能報告會顯示應用程式執行資料，舉凡特定函式的呼叫函式及所呼叫函式，或是整個應用程式的呼叫樹狀結構。  
   
--   *效能警告*會通知您常見的程式碼撰寫問題。 警告會在 Visual Studio 的 [錯誤] 視窗中顯示。 您可以從警告瀏覽到您的原始程式碼及可協助您撰寫更有效率的程式碼的詳細說明主題。  
+若要快速分析專案、應用程式或 ASP.NET 網站，請選取 [偵錯] > [效能分析工具]，然後選取 [效能精靈]。 如需詳細指示，請參閱[效能分析的初學者指南](../profiling/beginners-guide-to-cpu-sampling.md)和[如何：收集網站的效能資料](../profiling/how-to-collect-performance-data-for-a-web-site.md)。  
+
+若要手動指定及設定效能分析工作階段，請選取 [偵錯] > [分析工具] > [效能總管]。 使用 [效能總管] 中的 [目標] 資料夾和 [屬性] 頁面以設定工作階段。 如需指示，請參閱[如何：手動建立效能工作階段](../profiling/how-to-manually-create-performance-sessions.md)。  
   
--   您可利用效能報告檢視應用程式結構的不同層級 (舉凡原始程式碼行或處理序)，以及取得程式執行資料 (舉凡特定函式的呼叫函式及所呼叫函式，或是整個應用程式的呼叫樹狀圖)。  
+**另請參閱：**
   
-## <a name="common-tasks"></a>一般工作  
-  
-|工作|相關內容|  
-|----------|---------------------|  
-|**快速剖析應用程式或網站：** 使用「效能精靈」針對 Visual Studio 方案或網站設定及執行程式碼剖析工作階段。|-   [效能分析的初級開發人員指南](../profiling/beginners-guide-to-cpu-sampling.md)<br />-   [如何：使用效能精靈對網站或 Web 應用程式進行程式碼剖析](../profiling/how-to-collect-performance-data-for-a-web-site.md)|  
-|**在不使用精靈的情況下對應用程式進行程式碼剖析：** 了解使用效能工作階段屬性頁建立效能工作階段。|-   [如何：手動建立效能工作階段](../profiling/how-to-manually-create-performance-sessions.md)|  
-  
-## <a name="see-also"></a>另請參閱  
- [概觀](../profiling/overviews-performance-tools.md)   
+ [效能工具概觀](../profiling/overviews-performance-tools.md)   
  [分析效能工具資料](../profiling/analyzing-performance-tools-data.md)   
  [使用效能規則分析資料](../profiling/using-performance-rules-to-analyze-data.md)   
  [設定效能工作階段](../profiling/configuring-performance-sessions.md)

@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a8987354af4a0b62438cea3aab3f18f4def7bfa
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 818bbb38fab706dde2f4d36d5a534e0a351a6450
+ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49907036"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "51948890"
 ---
 # <a name="devenv-command-line-switches"></a>Devenv 命令列參數
 
@@ -31,9 +31,9 @@ Devenv 可讓您設定整合式開發環境 (IDE) 的各種選項，也可讓您
 
 ## <a name="devenv-switch-syntax"></a>Devenv 參數語法
 
-根據預設，devenv 命令會將參數傳遞至 devenv.com 公用程式。 Devenv.com 公用程式會透過標準系統資料流來傳遞輸出，像是 `stdout` 和 `stderr`。 當公用程式擷取到輸出時，會決定適當的 I/O 重新導向，例如導向 .txt 檔案。
+以 `devenv` 開頭的命令是由 `devenv.com` 公用程式處理，它會透過標準系統資料流提供輸出，例如 `stdout` 和 `stderr`。 當公用程式擷取到輸出時，會決定適當的 I/O 重新導向，例如導向 .txt 檔案。
 
-另一方面，以 `devenv.exe` 開頭的命令可以使用相同參數，但會略過 devenv.com 公用程式。
+另一方面，以 `devenv.exe` 為開頭的命令可以使用相同參數，但會略過 `devenv.com` 公用程式。 直接使用 `devenv.exe` 會導致輸出不顯示在主控台上。
 
 `devenv` 參數的語法規則與其他 DOS 命令列公用程式的語法規則類似。 下列語法規則套用至所有 `devenv` 參數和其引數︰
 
@@ -45,7 +45,7 @@ Devenv 可讓您設定整合式開發環境 (IDE) 的各種選項，也可讓您
 
 - 如果第一個引數不是解決方案檔或專案檔，則會使用適當的編輯器在 IDE 的新執行個體開啟該檔案。
 
-- 如果您提供專案檔名稱，而不是解決方案檔名稱，`devenv` 命令會在專案檔的父資料夾中搜尋同名的解決方案檔。 例如，`devenv /build myproject1.vbproj` 命令會在父資料夾中搜尋名為 "myproject1.sln" 的解決方案檔。
+- 如果您提供專案檔名稱，而不是解決方案檔名稱，`devenv` 命令會在專案檔的父資料夾中搜尋同名的解決方案檔。 例如，`devenv myproject1.vbproj /build` 命令會在父資料夾中搜尋名為 "myproject1.sln" 的解決方案檔。
 
     > [!NOTE]
     > 只能有一個參考此專案的方案檔應該位於其上層資料夾。 如果父資料夾未包含參考此專案的解決方案檔，或父資料夾包含二或多個參考此專案的解決方案檔，則會建立暫存解決方案檔。
@@ -78,12 +78,12 @@ Devenv 可讓您設定整合式開發環境 (IDE) 的各種選項，也可讓您
 
 |命令列參數|描述|
 | - |-----------------|
-|[/?](../../ide/reference/q-devenv-exe.md)|在 [命令提示字元] 視窗中顯示 devenv 參數的說明。<br /><br /> **Devenv /?**|
-|[/Build](../../ide/reference/build-devenv-exe.md)|根據所指定方案的組態，建置指定的方案或專案。<br /><br /> **Devenv myproj.csproj /build**|
-|[/Clean](../../ide/reference/clean-devenv-exe.md)|刪除 build 命令所建立的任何檔案，而不會影響原始程式檔。<br /><br /> **Devenv myproj.csproj /clean**|
-|[/Deploy](../../ide/reference/deploy-devenv-exe.md)|根據方案組態，建置方案，以及部署所需的檔案。<br /><br /> **Devenv myproj.csproj /deploy**|
+|[/?](../../ide/reference/q-devenv-exe.md)|在 [命令提示字元] 視窗中顯示 devenv 參數的說明。<br /><br /> `devenv /?`|
+|[/Build](../../ide/reference/build-devenv-exe.md)|根據所指定方案的組態，建置指定的方案或專案。<br /><br /> `devenv myproj.csproj /build`|
+|[/Clean](../../ide/reference/clean-devenv-exe.md)|刪除 build 命令所建立的任何檔案，而不會影響原始程式檔。<br /><br /> `devenv myproj.csproj /clean`|
+|[/Deploy](../../ide/reference/deploy-devenv-exe.md)|根據方案組態，建置方案，以及部署所需的檔案。<br /><br /> `devenv myproj.csproj /deploy`|
 |[/Diff](../../ide/reference/diff.md)|比較兩個檔案。 接受四個參數：SourceFile、TargetFile、SourceDisplayName (選擇性)、TargetDisplayName (選擇性)。|
-|[/Out](../../ide/reference/out-devenv-exe.md)|可讓您指定要在建置時接收錯誤的檔案。<br /><br /> **Devenv myproj.csproj /build /out log.txt**|
+|[/Out](../../ide/reference/out-devenv-exe.md)|可讓您指定要在建置時接收錯誤的檔案。<br /><br /> `devenv myproj.csproj /build /out log.txt`|
 |[/Project](../../ide/reference/project-devenv-exe.md)|要建置、清除或部署的專案。 只有在同時提供 /build、/rebuild、/clean 或 /deploy 參數時，才能使用此參數。|
 |[/ProjectConfig](../../ide/reference/projectconfig-devenv-exe.md)|指定要建置或部署的專案組態。 只有在同時提供 /project 參數時，才能使用此參數。|
 |[/Rebuild](../../ide/reference/rebuild-devenv-exe.md)|根據所指定方案的組態，清除後建置指定的方案或專案。|
