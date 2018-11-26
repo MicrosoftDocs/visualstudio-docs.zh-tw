@@ -5,16 +5,16 @@ ms.author: jaunger
 manager: evelynp
 ms.date: 01/04/2018
 ms.topic: Get-Started-Article
-description: 了解有關隨附於 Visual Studio 訂用帳戶的 Pluralsight 訓練課程訂用帳戶。
+description: 了解有關隨附於所選 Visual Studio 訂用帳戶的 Pluralsight 訓練課程訂用帳戶。
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 06acd50823b05e6b39cdf9cb41d2f4ec2d456c0d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a384769b5d2f643a215a1a0c136fc44fd7d45e42
+ms.sourcegitcommit: 331dbb12e11fcd7f5d15fab05f3c861e48126e43
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49912002"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51826694"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶中的 Pluralsight 訓練課程權益
 
@@ -75,17 +75,17 @@ ms.locfileid: "49912002"
 
 |                          訂用帳戶層級                          |     通道      |    優勢    |   可續約？   |
 |----------------------------------------------------------------------|-------------------|---------------|----------------|
-|          Visual Studio Enterprise (標準、年度雲端)           | VL、Azure、零售 |   6 個月    | 否<sup>2</sup> |
-|         Visual Studio Professional (標準、年度雲端)          | VL、Azure、零售 |   3 個月    | 否<sup>2</sup> |
-|              Visual Studio Test Professional (標準訂用帳戶)              |    VL、零售     |   3 個月    | 否<sup>2</sup> |
-|                      MSDN 平台 (標準)                       |    VL、零售     |   3 個月    | 否<sup>2</sup> |
-|                     Visual Studio Dev Essentials                     |        NA         |   3 個月    |       否       |
+|          Visual Studio Enterprise (標準、年度雲端)           | VL, Azure, 零售 |   6 個月    | 否<sup>2</sup> |
+|         Visual Studio Professional (標準、年度雲端)          | VL, Azure, 零售 |   3 個月    | 否<sup>2</sup> |
+|              Visual Studio Test Professional (標準訂用帳戶)              |    VL, 零售     |   3 個月    | 否<sup>2</sup> |
+|                      MSDN 平台 (標準)                       |    VL, 零售     |   3 個月    | 否<sup>2</sup> |
+|                     Visual Studio Dev Essentials                     |        NA         |   1 個月    |       否       |
 | Visual Studio Enterprise、Visual Studio Professional (每月雲端) |       Azure       | 無法使用 |       NA       |
 |             Visual Studio Enterprise (NFR<sup>1</sup>)              |      計畫      | 無法使用 |       NA       |
 
 <sup>1</sup>  *包含：「禁止轉售 (NFR)」、Visual Studio Industry Partner (VSIP)、BizSpark、MCT Software & Services Developer、MCT Software & Service、Microsoft Valued Professional (MVP)、Region Director (RD)、Microsoft 合作夥伴網路 (MPN)、FTE、Imagine。*
 
-<sup>2</sup>  Pluralsight 權益僅限單人使用，與個人綁定。一旦訂閱者使用了權益，就無法重設。如需詳細資訊，請參閱下面的常見問題集。在 Pluralsight 訂用帳戶過期之後，您就有資格收到三個研究領域中其中一個研究領域的 50 個所選取 Pluralsight 課程的 12 個月存取權。
+<sup>2</sup>  *Pluralsight 權益僅限單人使用，與個人綁定。  一旦訂閱者使用了權益，就無法重設。 
 
 不確定您使用哪一個訂用帳戶？  連線到 [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) 以查看指派給您的電子郵件地址的所有訂用帳戶。 若沒有看到您的所有訂用帳戶，可能有一或多個訂用帳戶是指派到不同的電子郵件地址。  您必須以該電子郵件地址登入才能查看對應的訂用帳戶。
 
@@ -105,9 +105,7 @@ ms.locfileid: "49912002"
 
 
 ### <a name="q-what-happens-when-my-pluralsight-subscription-runs-out"></a>問：當我的 Pluralsight 訂用帳戶到期時會發生什麼事？
-答：當您的 Pluralsight 免費訂用帳戶結束時，您有兩種選項：
-- 您會取得三個主要區域其中之一中有限的一組 50 堂課程免費的 12 個月存取 (檢查[資格表格](#eligibility)查看您的訂用帳戶是否符合資格)，包括：雲端上的應用程式開發；AI、機器學習服務和資料；以及雲端中的 DevOps。 查看來自 Pluralsight 的電子郵件，以索取到期之後的免費存取。 您可以在每個部分的程式庫下查看可用的[課程清單](https://help.pluralsight.com/help/which-courses-are-included-with-the-visual-studio-benefit)。
-- 您可以選擇直接從 Pluralsight 以 10% 折扣購買訂用帳戶，這可讓您存取其完整的課程類別目錄。  請連絡 [Pluralsight](http://www.pluralsight.com) 以了解完整詳細資料。
+答：在免費的 Pluralsight 訂用帳戶結束時，您可以選擇直接從 Pluralsight 購買訂用帳戶。  請連絡 [Pluralsight](http://www.pluralsight.com) 以了解完整詳細資料。
 
 ### <a name="q-my-company-renews-their-visual-studio-subscription-through-an-enterprise-agreement-does-the-pluralsight-benefit-reset"></a>問：我的公司透過 Enterprise 合約更新其 Visual Studio 訂用帳戶。 Pluralsight 權益是否會重設？
 答：不會。  Pluralsight 權益僅限單人使用，綁定到個人。  一旦訂閱者使用了權益，就無法重設。  這適用於所有採購通道，包括零售、雲端和大量授權 (VL) 採購。
@@ -116,3 +114,6 @@ ms.locfileid: "49912002"
 -  [Pluralsight 說明中心](https://help.pluralsight.com/help) \(英文\) 可提供針對 Pluralsight 課程或 Pluralsight 網站的使用協助。
 -  如需 Visual Studio 訂用帳戶有關銷售、訂閱、帳戶與計費的協助，請聯繫 Visual Studio [訂用帳戶支援](https://visualstudio.microsoft.com/subscriptions/support/)。
 -  是否有關於 Visual Studio IDE、Azure DevOps Services 或其他 Visual Studio 產品或服務的問題？  前往 [Visual Studio 支援](https://visualstudio.microsoft.com/support/)
+
+## <a name="next-steps"></a>後續步驟
+一旦您的帳戶建立完成，即準備好開始訓練課程。  請前往 [https://www.pluralsight.com](http://www.pluralsight.com)，然後點選頁面右上角的 [登入] 開始新的課程，或返回已在進行中的課程。 

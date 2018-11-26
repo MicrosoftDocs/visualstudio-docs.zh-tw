@@ -9,12 +9,12 @@ description: 登入可能會因為使用別名或易記名稱而失敗
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 48faa1ce2e002b6a21c3e467db627d9c08bec2e6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3743cc11d5001d12ba4cd030ddc0cfc914db3131
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49854464"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51817434"
 ---
 # <a name="signing-in-to-visual-studio-subscriptions-may-fail-when-using-aliases"></a>登入 Visual Studio 訂用帳戶可能會因為使用別名而失敗
 
@@ -24,7 +24,7 @@ ms.locfileid: "49854464"
 
 「別名處理」一詞指的是使用不同身分識別來登入 Windows (或您的 Active Directory) 並存取電子郵件的使用者。
 
-當公司使用 Microsoft Online Service 做為其目錄登入使用 (例如 JohnD@contoso.com)，但使用者使用別名或易記名稱存取其電子郵件帳戶 (例如 John.Doe@contoso.com) 時，就會發生別名處理。  針對透過大量授權服務中心 (VLSC) 管理其訂用帳戶的客戶，這會導致不成功的登入體驗，因為提供的電子郵件地址 (John.Doe@contoso.com) 不符合成功透過 [公司或學校帳戶] 選項驗證所需的目錄地址 (JohnD@contoso.com)。
+當公司使用 Microsoft Online Service 做為其目錄登入使用 (例如 JohnD@contoso.com)，但使用者使用別名或易記名稱存取其電子郵件帳戶 (例如 John.Doe@contoso.com) 時，就會發生別名處理。 針對透過大量授權服務中心 (VLSC) 管理其訂用帳戶的客戶，這會導致不成功的登入體驗，因為提供的電子郵件地址 (John.Doe@contoso.com) 不符合成功透過 [公司或學校帳戶] 選項驗證所需的目錄地址 (JohnD@contoso.com)。
 
 ## <a name="as-an-administrator-what-options-do-i-have"></a>身為系統管理員，我有哪些選項？
 
@@ -33,15 +33,15 @@ ms.locfileid: "49854464"
 - 第二個選項 (較不安全) 是允許您的訂閱者將其「公司或學校」電子郵件地址與「個人」帳戶 (亦即 Microsoft 帳戶或 MSA) 建立關聯。 如需詳細資訊，請參閱此文章中的[將公司或學校帳戶定義為個人帳戶](#defining-a-work-or-school-account-as-a-personal-account )一節。
 
 > [!NOTE]
-> 一旦您的公司移轉到新的 Visual Studio 訂用帳戶[管理入口網站](https://manage.visualstudio.com)，您將可以獲得新系統管理體驗的優點，此體驗允許使用者提供目錄與電子郵件地址作為訂閱者設定檔的一部分。  深入了解[移轉](https://support.microsoft.com/help/4013930/visual-studio-subscriptions-administrator-migration-details)。
+> 一旦您的公司移轉到新的 Visual Studio 訂用帳戶[管理入口網站](https://manage.visualstudio.com)，您將可以獲得新系統管理體驗的優點，此體驗允許使用者提供目錄與電子郵件地址作為訂閱者設定檔的一部分。 深入了解[移轉](https://support.microsoft.com/help/4013930/visual-studio-subscriptions-administrator-migration-details)。
 
 ## <a name="as-a-subscriber-what-options-do-i-have"></a>身為訂閱者，我有哪些選項？
 
-從訂閱者觀點來看，先與您的系統管理員合作以了解您公司的身分識別設定非常重要。  如果有需要，您的系統管理員可能必須從其系統管理入口網站更新您的帳戶設定，或您可能需要使用您的公司電子郵件地址建立 Microsoft 帳戶 (MSA)。  採取建立 MSA 的步驟之前，請先就採取此步驟可能涉及的任何原則或問題洽詢您的系統管理員。  如需詳細資訊，請參閱此文章中的[將公司或學校帳戶定義為個人帳戶](#defining-a-work-or-school-account-as-a-personal-account )一節。
+從訂閱者觀點來看，先與您的系統管理員合作以了解您公司的身分識別設定非常重要。 如果有需要，您的系統管理員可能必須從其系統管理入口網站更新您的帳戶設定，或您可能需要使用您的公司電子郵件地址建立 Microsoft 帳戶 (MSA)。 採取建立 MSA 的步驟之前，請先就採取此步驟可能涉及的任何原則或問題洽詢您的系統管理員。 如需詳細資料，請參閱本文中的[將工作或學校帳戶定義為個人帳戶](#defining-a-work-or-school-account-as-a-personal-account)一節。
 
 ## <a name="assigning-subscribers-to-a-directory-account"></a>將訂閱者指派到目錄帳戶
 
-在所有案例中，大量授權服務中心 (VLSC) 中的訂閱管理員都必須使用新訂閱者的目錄地址，或更新「現有」訂閱者的電子郵件地址。  請務必了解使用目錄地址表示任何新的訂閱者都不會收到歡迎電子郵件，系統管理員將必須通知訂閱者訂閱已被指派給他們。  依照下面的步驟執行之後，您也可以使用電子郵件[範本](#notifying-your-subscribers-with-directory-addresses)來通知您的訂閱者，並協助他們完成登入程序。
+在所有案例中，大量授權服務中心 (VLSC) 中的訂閱管理員都必須使用新訂閱者的目錄地址，或更新「現有」訂閱者的電子郵件地址。 請務必了解使用目錄地址表示任何新的訂閱者都不會收到歡迎電子郵件，系統管理員將必須通知訂閱者訂閱已被指派給他們。 依照下面的步驟執行之後，您也可以使用電子郵件[範本](#notifying-your-subscribers-with-directory-addresses)來通知您的訂閱者，並協助他們完成登入程序。
 
 ### <a name="adding-new-subscribers"></a>加入新的訂閱者
 
@@ -88,7 +88,7 @@ ms.locfileid: "49854464"
 
 %SUBSCRIBER NAME%，您好
 
-您已被指派 Visual Studio 訂用帳戶。  請瀏覽 https://my.visualstudio.com 並使用您的 %DIRECTORY ADDRESS% 地址登入，以啟用並存取您的訂用帳戶。
+您已被指派 Visual Studio 訂用帳戶。 請瀏覽 https://my.visualstudio.com 並使用您的 %DIRECTORY ADDRESS% 地址登入，以啟用並存取您的訂用帳戶。
 
 如果您持續遇到問題，請連絡支援小組 (https://visualstudio.microsoft.com/subscriptions/support/)。
 
@@ -99,8 +99,6 @@ ms.locfileid: "49854464"
    - 選取想要的 [輔助支援] 選項
 
 ----------- 複製到這裡 -----------
-
-
 
 ## <a name="defining-a-work-or-school-account-as-a-personal-account"></a>將公司或學校帳戶定義為個人帳戶
 

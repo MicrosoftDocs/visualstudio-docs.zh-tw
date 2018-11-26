@@ -13,38 +13,20 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bc5961e2565c8618ad0f34a8c58d149e4a82c935
-ms.sourcegitcommit: 401be39a42ffe007593528b5bba62583ca9fcafd
+ms.openlocfilehash: de90947f175905ec89955298dc2b4b52af8ffbd4
+ms.sourcegitcommit: 331dbb12e11fcd7f5d15fab05f3c861e48126e43
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "50244446"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51826800"
 ---
 # <a name="welcome-to-the-visual-studio-ide"></a>歡迎使用 Visual Studio IDE
 
 Visual Studio「整合式開發環境」是一個有創意的啟動控制板，可供您編輯、偵錯及建置程式碼，然後發佈應用程式。 整合式開發環境 (IDE) 是功能豐富的程式，可用於軟體開發的許多方面。 除了大部分 IDE 提供的標準編輯器和偵錯工具之外，Visual Studio 還有編譯器、程式碼完成工具、圖形設計工具和更多功能，讓軟體開發程序變得更為容易。
 
-Visual Studio 適用於 Windows 和 Mac。 [Visual Studio for Mac](/visualstudio/mac/) 有許多與 Visual Studio 2017 相同的功能，並已針對開發跨平台和行動應用程式最佳化。 本文著重於 Windows 版的 Visual Studio 2017。
-
-Visual Studio 2017 有三種版本：Community、Professional 和 Enterprise。 若要了解每個版本支援哪些功能，請參閱[比較 Visual Studio 2017 IDE](https://visualstudio.microsoft.com/vs/compare/)。
-
-本篇概觀文章將為您介紹 IDE 的基本功能。 我們將逐步解說您可以運用 Visual Studio 來進行的一些操作，包括建立簡單的專案、使用 [IntelliSense](using-intellisense.md) 作為程式碼撰寫輔助工具，以及偵錯應用程式來查看程式執行期間的變數值。 我們也將介紹各種工具視窗。
-
-## <a name="install-the-visual-studio-ide"></a>安裝 Visual Studio IDE
-
-若要開始，請[下載 Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) 並將它安裝在您的系統上。
-
-模組安裝程式可讓您選擇並安裝「工作負載」，這些通常是您慣用的程式設計語言或平台所需的幾組功能。 若要遵循[建立程式](#create-a-program)的步驟，請務必在安裝期間選取 **.NET Core 跨平台開發**工作負載。
-
-![Visual Studio 安裝程式中的 .NET Core 跨平台開發工作負載](../ide/media/dotnet-core-cross-platform-workload.png)
-
-當您第一次啟動 Visual Studio 時，可以視需要使用您的 Microsoft 帳戶或是工作或學校帳戶來[登入](signing-in-to-visual-studio.md)。
-
-## <a name="tour-of-the-ide"></a>IDE 導覽
-
-為了提供您一個概要的 Visual Studio 視覺總覽，下圖顯示已開啟一個專案及數個您可能使用之重要工具視窗的 Visual Studio：
-
 ![Visual Studio IDE](../ide/media/visualstudioide.png)
+
+此圖顯示 Visual Studio，其中包含一個開啟的專案，以及您想要使用的數個重要工具視窗：
 
 - [方案總管][](../ide/solutions-and-projects-in-visual-studio.md) (右上) 可讓您檢視、巡覽及管理您的程式碼檔案。 [方案總管] 透過將程式碼的檔案分組到[解決方案和專案](quickstart-projects-solutions.md)，以協助組織程式碼。
 
@@ -54,7 +36,13 @@ Visual Studio 2017 有三種版本：Community、Professional 和 Enterprise。 
 
 - [Team Explorer](/azure/devops/user-guide/work-team-explorer?view=vsts) (右下) 可讓您追蹤工作項目，並使用版本控制技術 (例如 [Git](https://git-scm.com/) 和 [Team Foundation 版本控制 (TFVC)](/azure/devops/repos/tfvc/overview?view=vsts)) 與其他人共用程式碼。
 
-### <a name="popular-productivity-features"></a>熱門的生產力功能
+## <a name="editions"></a>版本
+
+Visual Studio 適用於 Windows 和 Mac。 [Visual Studio for Mac](/visualstudio/mac/) 有許多與 Visual Studio 2017 相同的功能，並已針對開發跨平台和行動應用程式最佳化。 本文著重於 Windows 版的 Visual Studio 2017。
+
+Visual Studio 2017 有三種版本：Community、Professional 和 Enterprise。 若要了解每個版本支援哪些功能，請參閱[比較 Visual Studio 2017 IDE](https://visualstudio.microsoft.com/vs/compare/)。
+
+## <a name="popular-productivity-features"></a>熱門的生產力功能
 
 Visual Studio 的某些熱門功能可在您開發軟體時協助您提高生產力，這些功能包括：
 
@@ -106,9 +94,19 @@ Visual Studio 的某些熱門功能可在您開發軟體時協助您提高生產
 
    ![查看定義](../ide/media/peek-definition.png)
 
+## <a name="install-the-visual-studio-ide"></a>安裝 Visual Studio IDE
+
+此概觀文章將引導您建立簡單的專案，並嘗試您可以運用 Visual Studio 來進行的一些操作，例如變更色彩佈景主題、使用 [IntelliSense](using-intellisense.md) 作為程式碼撰寫輔助工具，以及偵錯應用程式來查看程式執行期間的變數值。 若要開始，請[下載 Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) 並將它安裝在您的系統上。
+
+模組安裝程式可讓您選擇並安裝「工作負載」，這些通常是您慣用的程式設計語言或平台所需的幾組功能。 若要遵循[建立程式](#create-a-program)的步驟，請務必在安裝期間選取 **.NET Core 跨平台開發**工作負載。
+
+![Visual Studio 安裝程式中的 .NET Core 跨平台開發工作負載](../ide/media/dotnet-core-cross-platform-workload.png)
+
+當您第一次啟動 Visual Studio 時，可以視需要使用您的 Microsoft 帳戶或是工作或學校帳戶來[登入](signing-in-to-visual-studio.md)。
+
 ## <a name="create-a-program"></a>建立程式
 
-讓我們來深入探討並建立一個新的簡單程式。
+讓我們來深入探討並建立一個簡單的程式。
 
 1. 開啟 Visual Studio。 在功能表上，選擇 [檔案] > [新增] > [專案]。
 

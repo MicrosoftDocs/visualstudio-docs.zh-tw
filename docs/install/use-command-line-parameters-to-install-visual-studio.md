@@ -2,7 +2,7 @@
 title: 使用命令列參數來安裝 Visual Studio
 description: 了解如何使用命令列參數來控制或自訂您的 Visual Studio 安裝。
 ms.custom: ''
-ms.date: 05/07/2018
+ms.date: 11/14/2018
 ms.technology: vs-acquisition
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 051935a2c7022af3c6811e90a89697a08f52fa9a
-ms.sourcegitcommit: 12d6398c02e818de4fbcb4371bae9e5db6cf9509
+ms.openlocfilehash: e52d61c1226e131c9d989a70f7c8e6432d8f3733
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50050361"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51768520"
 ---
 # <a name="use-command-line-parameters-to-install-visual-studio-2017"></a>使用命令列參數來安裝 Visual Studio 2017
 
@@ -55,6 +55,7 @@ ms.locfileid: "50050361"
 | `update` | 更新所安裝的產品。 |
 | `repair` | 修復所安裝的產品。 |
 | `uninstall` | 解除安裝所安裝的產品。 |
+| `export` | **15.9 的新功能**：將安裝選取項目匯出至安裝組態檔。 |
 
 | **安裝選項** | **描述** |
 | ----------------------- | --------------- |
@@ -74,6 +75,7 @@ ms.locfileid: "50050361"
 | `--nickname <name>` | **選擇性**︰這會定義要指派給所安裝產品的暱稱。 暱稱的長度不能大於 10 個字元。  |
 | `--productKey` | **選擇性**︰這會定義要用於所安裝產品的產品金鑰。 此金鑰是以 `xxxxx-xxxxx-xxxxx-xxxxx-xxxxx` 或 `xxxxxxxxxxxxxxxxxxxxxxxxx` 格式，由 25 個英數字元構成的。 |
 | `--help, --?, -h, -?` | 顯示此頁面的離線版本。 |
+| `--config <path>` | **選擇性**和 **15.9 的新功能**：在安裝或修改作業期間，這會根據先前儲存的安裝組態檔，來決定要新增的工作負載和元件。 這是累加作業，不會移除檔案中沒有的任何工作負載或元件。 此外，不會新增未套用至產品的項目。 在匯出作業期間，這會決定安裝組態檔的儲存位置。 |
 
 > 注意︰指定多個工作負載和元件時，您必須針對每個項目重複 `--add` 或 `--remove` 命令列參數。
 

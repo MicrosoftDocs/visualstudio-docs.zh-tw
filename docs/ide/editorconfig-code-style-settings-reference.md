@@ -8,7 +8,7 @@ dev_langs:
 helpviewer_keywords:
 - coding conventions [EditorConfig]
 - EditorConfig coding conventions
-- language conventions [EditorConfig]
+- language code style rules [EditorConfig]
 - formatting conventions [EditorConfig]
 author: kuhlenh
 ms.author: gewarren
@@ -18,12 +18,12 @@ ms.technology: vs-ide-general
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 237651c67cd2578b2b2a2e4ffade3f4c6d180d78
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: a54a3d6b967e7652c25e24922d7bd3b49141cc17
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50967541"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51769757"
 ---
 # <a name="net-coding-convention-settings-for-editorconfig"></a>EditorConfig 的 .NET 編碼慣例設定
 
@@ -35,7 +35,7 @@ ms.locfileid: "50967541"
 
 有三個支援的 .NET 程式碼慣例類別：
 
-- [語言慣例](#language-conventions)
+- [語言程式碼樣式](#language-code-styles)
 
    有關 C# 或 Visual Basic 語言的規則。 例如，您可以在定義變數或指定運算式主體成員時，指定使用 `var` 或明確類型的規則。
 
@@ -47,13 +47,13 @@ ms.locfileid: "50967541"
 
    有關程式碼項目的命名規則。 例如，您可以指定 `async` 方法必須以 "Async" 結尾。
 
-## <a name="language-conventions"></a>語言慣例
+## <a name="language-code-styles"></a>語言程式碼樣式
 
-語言慣例規則具有下列格式：
+語言程式碼樣式規則具有下列格式：
 
 `options_name = false|true : none|silent|suggestion|warning|error`
 
-每個語言慣例規則必須指定 [true] (慣用此樣式) 或 [false] (不喜此樣式) 和 [嚴重性]。 嚴重性會指定該樣式的強制層級。
+每個語言程式碼樣式規則必須指定 [true] (偏好此樣式) 或 [false] (不偏好此樣式) 和 [嚴重性]。 嚴重性會指定該樣式的強制層級。
 
 下表列出可能的嚴重性值及其效果：
 
@@ -65,7 +65,7 @@ ms.locfileid: "50967541"
 `warning` | 違反此樣式規則時，顯示編譯器警告。
 `error` | 違反此樣式規則時，顯示編譯器錯誤。
 
-下列清單顯示允許的語言慣例規則：
+下列清單顯示可允許的語言程式碼樣式設定：
 
 - .NET 程式碼樣式設定
     - ["This." 和 "Me." 限定詞](#this_and_me)
@@ -2244,7 +2244,7 @@ dotnet_naming_symbols.constant_fields.applicable_accessibilities  = *
 dotnet_naming_symbols.constant_fields.required_modifiers          = const
 
 ###############################
-# C# Coding Conventions       #
+# C# Code Style Rules         #
 ###############################
 
 [*.cs]
@@ -2261,7 +2261,7 @@ csharp_style_expression_bodied_properties = true:none
 csharp_style_expression_bodied_indexers = true:none
 csharp_style_expression_bodied_accessors = true:none
 
-# Pattern matching preferences
+# Pattern-matching preferences
 csharp_style_pattern_matching_over_is_with_cast_check = true:suggestion
 csharp_style_pattern_matching_over_as_with_null_check = true:suggestion
 
@@ -2314,9 +2314,9 @@ csharp_space_between_method_call_empty_parameter_list_parentheses = false
 csharp_preserve_single_line_statements = true
 csharp_preserve_single_line_blocks = true
 
-###############################
-# VB Coding Conventions       #
-###############################
+##################################
+# Visual Basic Code Style Rules  #
+##################################
 
 [*.vb]
 # Modifier preferences

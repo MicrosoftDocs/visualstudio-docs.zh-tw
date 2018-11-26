@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c10032bf12060c8c5e42f93f6596fe576adfccf
-ms.sourcegitcommit: 7bb0225e1fd45999ce09e0b49c2cfae515c27e11
+ms.openlocfilehash: fa998896ad4c67bcd9e10ee50b4939bdbf915330
+ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45612671"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52257364"
 ---
 # <a name="how-to-debug-for-absolute-beginners"></a>完全初學者如何偵錯
 
@@ -80,7 +80,7 @@ ms.locfileid: "45612671"
 
 1. 您必須已安裝 Visual Studio，並根據您要建立的應用程式類型，安裝 **.NET 桌面開發**或 **.NET Core 跨平台開發**工作負載。
 
-    如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)頁面免費進行安裝。
+    如果您尚未安裝 Visual Studio，請前往  [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) 頁面免費進行安裝。
 
     如果您需要安裝工作負載，但已擁有 Visual Studio，請按一下 [工具] > [取得工具與功能]。 Visual Studio 安裝程式即會啟動。 選擇 [.NET 桌面開發] (或 [.NET Core 跨平台開發]) 工作負載，然後選擇 [修改]。
 
@@ -325,11 +325,11 @@ ms.locfileid: "45612671"
 * 檢查您的應用程式是否正在執行您所預期程式碼。 (例如，在範例應用程式中，我們預期 switch 陳述式的程式碼將銀河類型設定為不規則，但由於錯字，應用程式已略過該程式碼。)
 
 > [!TIP]
-> 您可以使用偵錯工具協助找出 Bug。 偵錯工具只有在知道您程式碼的意圖時，才可「為您」找出 Bug。 您身為開發人員必須表示程式碼的意圖，工具才能知道該意圖。 您可以撰寫[單元測試](../test/improve-code-quality.md)來執行這項作業。
+> 您可以使用偵錯工具協助找出 Bug。 偵錯工具只有在知道您程式碼的意圖時，才可「為您」找出 Bug。 您身為開發人員必須表示程式碼的意圖，工具才能知道該意圖。 您可以撰寫[單元測試](../test/improve-code-quality.md)來執行這項作業。 
 
 ## <a name="next-steps"></a>後續步驟
 
-在本文中，您已了解幾個一般偵錯概念。 接下來，您可以開始了解如何使用 Visual Studio 進行偵錯。
+在本文中，您已了解幾個一般偵錯概念。 接下來，您可以開始深入了解偵錯工具。
 
 > [!div class="nextstepaction"]
 > [了解使用 Visual Studio 進行偵錯](../debugger/getting-started-with-the-debugger.md)

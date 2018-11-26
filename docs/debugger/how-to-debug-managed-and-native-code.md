@@ -16,14 +16,14 @@ manager: douge
 ms.workload:
 - dotnet
 - cplusplus
-ms.openlocfilehash: 121584611dcf0f25fa1f32a616253ecdecf04332
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: dc115cc833bbf50e8f6ae1f1e3207d3acfd6b2d1
+ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295757"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52257273"
 ---
-# <a name="tutorial-debug-managed-and-native-code-in-the-same-debugging-session"></a>教學課程：在相同的偵錯工作階段中對受控程式碼與機器碼進行偵錯
+# <a name="tutorial-debug-c-and-c-in-the-same-debugging-session"></a>教學課程：在同一個偵錯工作階段中進行 C# 和 C++ 偵錯
 
 Visual Studio 可讓您在偵錯工作階段中啟用多個偵錯工具類型，稱為混合模式偵錯。 在本教學課程中，您將了解如何在單一偵錯工作階段中，同時對受控程式碼與機器碼進行偵錯。 
 
