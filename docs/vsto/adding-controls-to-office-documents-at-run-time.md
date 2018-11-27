@@ -20,17 +20,17 @@ helpviewer_keywords:
 - document-level customizations [Office development in Visual Studio], Windows Forms controls
 - controls [Office development in Visual Studio], adding at runtime
 - helper methods [Office development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2a23a779058276460f33b18ed881abcc4d40eca7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2ad16bc414e6d67b563240bcd2bceb15e9c34e97
+ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49941174"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52305633"
 ---
 # <a name="add-controls-to-office-documents-at-runtime"></a>將控制項加入 Office 文件，在執行階段
   您可以將控制項新增至 Microsoft Office Word 文件和 Microsoft Office Excel 活頁簿，在執行階段。 您也可以在執行階段移除它們。 您新增或移除在執行階段的控制項稱為*動態控制項*。  
