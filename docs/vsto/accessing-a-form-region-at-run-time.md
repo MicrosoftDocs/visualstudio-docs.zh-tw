@@ -12,29 +12,29 @@ helpviewer_keywords:
 - Inspectors [Office development in Visual Studio]
 - Explorers [Office development in Visual Studio]
 - form regions [Office development in Visual Studio], accessing at runtime
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c0cdea460b2a50819aff3c300b8510ffd577c8f6
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: f2c1f3e80f5ca4015a19b5eee7f2f4c673dcc615
+ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34262065"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52304476"
 ---
 # <a name="access-a-form-region-at-runtime"></a>存取表單區域在執行階段
 
 |適用於|  
 |----------------|  
-|本主題資訊僅適用於下列 Microsoft Office 專案類型及版本。 如需詳細資訊，請參閱[依 Office 應用程式和專案類型提供的功能](../vsto/features-available-by-office-application-and-project-type.md)。<br /><br /> **專案類型**<br /><br /> VSTO 增益集專案中<br /><br /> **Microsoft Office 版本**<br /><br /> -   [!INCLUDE[Outlook_14_short](../vsto/includes/outlook-14-short-md.md)]|  
+|本主題資訊僅適用於下列 Microsoft Office 專案類型及版本。 如需詳細資訊，請參閱 <<c0> [ 依 Office 應用程式和專案類型提供的功能](../vsto/features-available-by-office-application-and-project-type.md)。<br /><br /> **專案類型**<br /><br /> VSTO 增益集專案<br /><br /> **Microsoft Office 版本**<br /><br /> -   [!INCLUDE[Outlook_14_short](../vsto/includes/outlook-14-short-md.md)]|  
 
- 使用 `Globals` 類別，從任何地方在 Outlook 專案中存取表單區域。 如需有關`Globals`類別，請參閱[全域存取 Office 專案中的物件](../vsto/global-access-to-objects-in-office-projects.md)。  
+ 使用 `Globals` 類別，從任何地方在 Outlook 專案中存取表單區域。 如需詳細資訊`Globals`類別，請參閱[全域存取 Office 專案中的物件](../vsto/global-access-to-objects-in-office-projects.md)。  
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
 
-## <a name="access-form-regions-that-appear-in-a-specific-outlook-inspector-window"></a>存取特定 [Outlook 檢查] 視窗中出現的表單區域  
+## <a name="access-form-regions-that-appear-in-a-specific-outlook-inspector-window"></a>存取表單區域，會出現在特定的 Outlook 偵測器視窗  
  若要存取出現在特定 Outlook 檢查中的所有表單區域，請呼叫 `FormRegions` 類別的 `Globals` 屬性，並傳入代表該檢查的 <xref:Microsoft.Office.Interop.Outlook.Inspector> 物件。  
 
  以下範例將取得目前擁有焦點之檢查中出現的表單區域集合。 然後這個範例會存取名為 `formRegion1` 之集合中的表單區域，並且將出現在文字方塊中的文字設定為 `Hello World`。  
@@ -42,7 +42,7 @@ ms.locfileid: "34262065"
  [!code-vb[Trin_Outlook_FR_Access#2](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Access_O12/ThisAddIn.vb#2)]
  [!code-csharp[Trin_Outlook_FR_Access#2](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Access_O12/ThisAddIn.cs#2)]  
 
-## <a name="access-form-regions-that-appear-in-a-specific-outlook-explorer-window"></a>存取出現在特定 [Outlook 總管] 視窗中的表單區域  
+## <a name="access-form-regions-that-appear-in-a-specific-outlook-explorer-window"></a>出現在特定 Outlook 總管 視窗中的存取表單區域  
  若要存取出現在特定 Outlook 總管中的所有表單區域，請呼叫 `FormRegions` 類別的 `Globals` 屬性，並傳入代表該總管的 <xref:Microsoft.Office.Interop.Outlook.Explorer> 物件。  
 
  以下範例將取得目前擁有焦點之總管中出現的表單區域集合。 然後這個範例會存取名為 `formRegion1` 之集合中的表單區域，並且將出現在文字方塊中的文字設定為 `Hello World`。  
@@ -71,17 +71,17 @@ ms.locfileid: "34262065"
 
  若要啟用區域程式碼檔案之外控制項表單的存取，請在表單區域程式碼檔案中建立屬性以傳回該控制項。  
 
- 如需如何在 C# 中建立屬性的詳細資訊，請參閱[如何： 宣告和使用讀取寫入屬性&#40;C&#35;程式設計指南&#41;](/dotnet/csharp/programming-guide/classes-and-structs/how-to-declare-and-use-read-write-properties)。  
+ 如需有關如何建立屬性，在C#，請參閱[如何： 宣告和使用讀取寫入的屬性&#40;C&#35;程式設計指南&#41;](/dotnet/csharp/programming-guide/classes-and-structs/how-to-declare-and-use-read-write-properties)。  
 
- 如需如何在 Visual Basic 中建立屬性的詳細資訊，請參閱[How to： 建立屬性 (Visual Basic)](/dotnet/visual-basic/programming-guide/language-features/procedures/how-to-create-a-property)。  
+ 如需如何在 Visual Basic 中建立屬性的詳細資訊，請參閱[如何： 建立屬性 (Visual Basic)](/dotnet/visual-basic/programming-guide/language-features/procedures/how-to-create-a-property)。  
 
 ## <a name="see-also"></a>另請參閱  
  [若要建立 Outlook 表單區域的指導方針](../vsto/guidelines-for-creating-outlook-form-regions.md)   
  [逐步解說： 設計 Outlook 表單區域](../vsto/walkthrough-designing-an-outlook-form-region.md)   
  [如何： 在 Outlook 增益集專案中加入表單區域](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)   
  [Outlook 表單區域中的自訂動作](../vsto/custom-actions-in-outlook-form-regions.md)   
- [將表單區域與 Outlook 訊息類別產生關聯](../vsto/associating-a-form-region-with-an-outlook-message-class.md)   
- [逐步解說： 匯入在 Outlook 中設計的表單區域](../vsto/walkthrough-importing-a-form-region-that-is-designed-in-outlook.md)   
+ [Outlook 訊息類別相關聯的表單區域](../vsto/associating-a-form-region-with-an-outlook-message-class.md)   
+ [逐步解說： 匯入在 Outlook 中設計表單區域](../vsto/walkthrough-importing-a-form-region-that-is-designed-in-outlook.md)   
  [如何： 防止 Outlook 顯示表單區域](../vsto/how-to-prevent-outlook-from-displaying-a-form-region.md)   
  [建立 Outlook 表單區域](../vsto/creating-outlook-form-regions.md)   
- [存取在執行階段的功能區](../vsto/accessing-the-ribbon-at-run-time.md)  
+ [在執行階段功能區的存取](../vsto/accessing-the-ribbon-at-run-time.md)  
