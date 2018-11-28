@@ -1,5 +1,5 @@
 ---
-title: 自訂 Visual Studio 為資料繫結的控制項建立標題的方式
+title: 自訂資料繫結控制項的標題
 ms.date: 11/03/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,16 +15,16 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 69e97efe6db8b06f476b7dc004e3b52a77701cb0
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
-ms.translationtype: MT
+ms.openlocfilehash: 11f7249f30b1866ca7c4aea4bbefa850a5353c0f
+ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36758416"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52305581"
 ---
 # <a name="customize-how-visual-studio-creates-captions-for-data-bound-controls"></a>自訂 Visual Studio 為資料繫結的控制項建立標題的方式
 
-當您拖曳項目從[資料來源視窗](add-new-data-sources.md)拖曳至設計工具中，特殊的考量派上用場： 標題標籤中的資料行名稱重新格式化成更容易閱讀的字串當兩個或更多的字發現串連在一起。 您可以自訂這些標籤建立所在，藉由設定的方式**SmartCaptionExpression**， **SmartCaptionReplacement**，並**SmartCaptionSuffix**中的值**HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\15.0\Data 設計工具**登錄機碼。
+當您拖曳項目從[資料來源 視窗](add-new-data-sources.md#data-sources-window)拖曳至設計工具中，特殊的考量派上用場： 標題標籤中的資料行名稱重新格式化成更容易閱讀的字串當兩個或更多的字發現串連在一起。 您可以自訂這些標籤建立所在，藉由設定的方式**SmartCaptionExpression**， **SmartCaptionReplacement**，並**SmartCaptionSuffix**中的值**HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\15.0\Data 設計工具**登錄機碼。
 
 > [!NOTE]
 > 此登錄機碼不存在，您必須建立它。
@@ -44,7 +44,7 @@ ms.locfileid: "36758416"
 |登錄項目|預設值|說明|
 |-------------------|-------------------|-----------------|
 |**SmartCaptionExpression**|**(\\\p{Ll}) (\\\p{Lu})&#124;_ +**|比對後面接著大寫的字元或底線為小寫字元。|
-|**SmartCaptionReplacement**|**$1 $2**|**$1**代表第一個運算式的括號中比對任何字元， **$2**表示相符的第二個括號中的任何字元。 取代為第一個相符項目、 一個空格，然後第二個相符項目。|
+|**SmartCaptionReplacement**|"$103"|**$1**代表第一個運算式的括號中比對任何字元， **$2**表示相符的第二個括號中的任何字元。 取代為第一個相符項目、 一個空格，然後第二個相符項目。|
 |**SmartCaptionSuffix**|**:**|表示附加至傳回字串的字元。 例如，如果標題是`Company Name`後, 置詞可讓 `Company Name:`|
 
 > [!CAUTION]
@@ -60,25 +60,25 @@ ms.locfileid: "36758416"
 
 3.  依序展開**HKEY_CURRENT_USER** > **軟體** > **Microsoft** > **VisualStudio**節點。
 
-7.  以滑鼠右鍵按一下**15.0**節點，並建立新**金鑰**名為`Data Designers`。
+4.  以滑鼠右鍵按一下**15.0**節點，並建立新**金鑰**名為`Data Designers`。
 
-8.  以滑鼠右鍵按一下**資料設計工具** 節點，並建立三個新的字串值：
+5.  以滑鼠右鍵按一下**資料設計工具** 節點，並建立三個新的字串值：
 
     - `SmartCaptionExpression`
     - `SmartCaptionReplacement`
     - `SmartCaptionSuffix`
 
-11. 以滑鼠右鍵按一下**SmartCaptionExpression**值，然後選取**修改**。
+6. 以滑鼠右鍵按一下**SmartCaptionExpression**值，然後選取**修改**。
 
-12. 輸入您想要的規則運算式**Zdroje dat**視窗，以使用。
+7. 輸入您想要的規則運算式**Zdroje dat**視窗，以使用。
 
-13. 以滑鼠右鍵按一下**SmartCaptionReplacement**值，然後選取**修改**。
+8. 以滑鼠右鍵按一下**SmartCaptionReplacement**值，然後選取**修改**。
 
-14. 輸入要取代的字串格式化的方式，您想要顯示在您的規則運算式比對的模式。
+9. 輸入要取代的字串格式化的方式，您想要顯示在您的規則運算式比對的模式。
 
-15. 以滑鼠右鍵按一下**SmartCaptionSuffix**值，然後選取**修改**。
+10. 以滑鼠右鍵按一下**SmartCaptionSuffix**值，然後選取**修改**。
 
-16. 輸入任何您想要顯示的標題結尾的字元。
+11. 輸入任何您想要顯示的標題結尾的字元。
 
     在下一次將項目從**Zdroje dat**  視窗中，建立標題標籤使用提供的新登錄值。
 
@@ -90,21 +90,21 @@ ms.locfileid: "36758416"
 
 3.  依序展開**HKEY_CURRENT_USER** > **軟體** > **Microsoft** > **VisualStudio**節點。
 
-7.  以滑鼠右鍵按一下**15.0**節點，並建立新**金鑰**名為`Data Designers`。
+4.  以滑鼠右鍵按一下**15.0**節點，並建立新**金鑰**名為`Data Designers`。
 
-8.  以滑鼠右鍵按一下**資料設計工具** 節點，並建立三個新的字串值：
+5.  以滑鼠右鍵按一下**資料設計工具** 節點，並建立三個新的字串值：
 
     - `SmartCaptionExpression`
     - `SmartCaptionReplacement`
     - `SmartCaptionSuffix`
 
-11. 以滑鼠右鍵按一下**SmartCaptionExpression**項目，然後選取**修改**。
+6. 以滑鼠右鍵按一下**SmartCaptionExpression**項目，然後選取**修改**。
 
-12. 輸入`(.*)`值。 這會比對整個字串。
+7. 輸入`(.*)`值。 這會比對整個字串。
 
-13. 以滑鼠右鍵按一下**SmartCaptionReplacement**項目，然後選取**修改**。
+8. 以滑鼠右鍵按一下**SmartCaptionReplacement**項目，然後選取**修改**。
 
-14. 輸入`$1`值。 這會將字串取代相符的值，也就是整個字串，以便將維持不變。
+9. 輸入`$1`值。 這會將字串取代相符的值，也就是整個字串，以便將維持不變。
 
     在下一次將項目從**Zdroje dat**  視窗中，與未修改的標題，會建立標題標籤。
 

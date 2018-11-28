@@ -18,21 +18,21 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 0affe931e5b85d32acdc95fecaa50f3b7f2fe8f4
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
-ms.translationtype: MT
+ms.openlocfilehash: f8f7371418df19ec8452334641c7c9414328e557
+ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39175695"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52305009"
 ---
-# <a name="how-to-connect-to-data-in-a-service"></a>如何： 連接到服務中的資料
+# <a name="how-to-connect-to-data-in-a-service"></a>如何：連接至服務中的資料
 
 連接您的應用程式，執行從服務傳回的資料[資料來源組態精靈](../data-tools/media/data-source-configuration-wizard.png)，然後選取**服務**上**選擇資料來源類型**頁面。
 
-完成精靈的詳細資訊，服務參考加入至專案並立即提供[資料來源視窗](add-new-data-sources.md)。
+完成精靈的詳細資訊，服務參考加入至專案並立即提供[資料來源 視窗](add-new-data-sources.md#data-sources-window)。
 
 > [!NOTE]
-> 在出現的項目**Zdroje dat**視窗均依存於服務所傳回的資訊。 某些服務可能並未提供足夠的資訊，如**資料來源組態精靈**來建立可繫結的物件。 例如，如果服務傳回不具類型的資料集，顯示任何項目中**資料來源視窗**時正在完成精靈。 這是因為不具類型資料集不會提供結構描述，所以精靈沒有足夠的資訊來建立資料來源。
+> [資料來源] **視窗中所顯示的項目取決於服務所傳回的資訊。 部分服務所提供的資訊可能不足，無法供 [資料來源組態精靈] **建立可繫結的物件。 例如，如果服務傳回不具類型的資料集，顯示任何項目中**Zdroje dat**時完成精靈 的視窗。 這是因為不具類型資料集不會提供結構描述，所以精靈沒有足夠的資訊來建立資料來源。
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 
@@ -53,7 +53,7 @@ ms.locfileid: "39175695"
 
 6.  按一下 [ **完成**]。
 
-     若要新增資料來源**Zdroje dat**視窗。
+     ** 資料來源就會加入到 [{2&gt;資料來源&lt;2}] 視窗。
 
 ## <a name="next-steps"></a>後續步驟
 
@@ -62,4 +62,4 @@ ms.locfileid: "39175695"
 ## <a name="see-also"></a>另請參閱
 
 - [將 WPF 控制項繫結至 WCF 資料服務](../data-tools/bind-wpf-controls-to-a-wcf-data-service.md)
-- [在 Visual Studio 中的 Windows Communication Foundation 服務和 WCF 資料服務](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)
+- [Visual Studio 中的 Windows Communication Foundation 服務和 WCF 資料服務](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)

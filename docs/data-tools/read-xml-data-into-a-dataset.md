@@ -22,27 +22,24 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 160d008425cc1c82fb8be26e7a6be9b3be82e999
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 1e43d118a5fcfe00a8eb6eaa7f34a17ff1f6a4be
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49908420"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52389211"
 ---
 # <a name="read-xml-data-into-a-dataset"></a>將 XML 資料讀入資料集
 
 ADO.NET 提供簡單的方法來處理 XML 資料。 在此逐步解說中，您可以建立 XML 資料載入資料集的 Windows 應用程式。 資料集即會顯示在<xref:System.Windows.Forms.DataGridView>控制項。 最後，XML 檔案的內容為基礎的 XML 結構描述會顯示在文字方塊中。
 
-> [!NOTE]
-> 對話方塊和功能表命令，您會看到 [說明] 中所述，根據您目前使用的設定或版本可能會有所不同，您正在使用。 若要變更您的設定，在**工具**功能表上，選取**匯入和匯出設定**。 如需詳細資訊，請參閱[將 Visual Studio IDE 個人化](../ide/personalizing-the-visual-studio-ide.md)。
-
 ## <a name="create-a-new-project"></a>建立新專案
 
-在此步驟中，您可以建立 Visual Basic 或 Visual C# 專案。
+在此步驟中，建立 Visual Basic 或 VisualC#專案。
 
 1. 在 Visual Studio 中，在**檔案**功能表上，選取**新增** > **專案**。
 
-2. 展開  **Visual C#** 或是**Visual Basic**的左側窗格中，然後選取**Windows Desktop**。
+2. 展開  **Visual C#** 或是**Visual Basic**左窗格中，然後選取**Windows Desktop**。
 
 3. 在中間窗格中，選取**Windows Forms 應用程式**專案類型。
 
@@ -54,7 +51,7 @@ ADO.NET 提供簡單的方法來處理 XML 資料。 在此逐步解說中，您
 
 本逐步解說著重於 XML 資料讀入資料集，因為提供的 XML 檔案的內容。
 
-1. 在 **專案**功能表上，選取**加入新項目**。
+1. 在 [專案] **功能表中，選取 [加入新項目]**。
 
 2. 選取  **XML 檔案**，將檔案命名**authors.xml**，然後選取**新增**。
 
@@ -155,7 +152,7 @@ ADO.NET 提供簡單的方法來處理 XML 資料。 在此逐步解說中，您
     |控制項|屬性|設定|
     |-------------|--------------|-------------|
     |`TextBox1`|**多行**|`true`|
-    ||**捲軸**|**垂直**|
+    ||ScrollBars|**垂直**|
     |`Button1`|**名稱**|`ReadXmlButton`|
     ||**Text**|`Read XML`|
     |`Button2`|**名稱**|`ShowSchemaButton`|
@@ -202,7 +199,7 @@ ADO.NET 提供簡單的方法來處理 XML 資料。 在此逐步解說中，您
 
      **程式碼編輯器**會在開啟`ShowSchemaButton_Click`事件處理常式。
 
-3.  貼上下列程式碼插入`ShowSchemaButton_Click`事件處理常式。
+3.  將下列程式碼貼至 `ShowSchemaButton_Click` 事件處理常式：
 
      [!code-csharp[VbRaddataFillingAndExecuting#3](../data-tools/codesnippet/CSharp/read-xml-data-into-a-dataset_2.cs)]
      [!code-vb[VbRaddataFillingAndExecuting#3](../data-tools/codesnippet/VisualBasic/read-xml-data-into-a-dataset_2.vb)]
