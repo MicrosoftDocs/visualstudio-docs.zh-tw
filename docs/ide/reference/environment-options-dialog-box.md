@@ -13,19 +13,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 45a7cef09937181fbf6c721b8c8eca73b6351742
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 61b2e6461fb80cfd12f76a6e96ac629ce640fa89
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49930540"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388763"
 ---
 # <a name="environment-options-dialog-box"></a>環境選項對話方塊
+
 您可以使用 [選項] 對話方塊之 [環境] 資料夾內的頁面，設定整合式開發環境 (IDE) 會如何顯示及作用某些項目。 您可以在功能表列上依序選擇 [工具] 和 [選項]，然後選取 [環境]，以存取 [環境] 頁面。
-
-> [!NOTE]
-> 根據您目前使用的設定和 Visual Studio 版本而定，出現在電腦上的對話方塊和功能表命令可能會與 [說明] 中所描述的不相同。 若要變更設定，請從 [ **工具** ] 功能表中選取 [ **匯入和匯出設定** ]。 如需詳細資訊，請參閱[將 Visual Studio IDE 個人化](../../ide/personalizing-the-visual-studio-ide.md)。
-
 
 |如需各項作業的詳細資訊，|請參閱|
 | - |---------|
@@ -45,6 +42,6 @@ ms.locfileid: "49930540"
 |學習如何設定工作和工作清單的選項。|[選項對話方塊、環境、工作清單](../../ide/reference/task-list-environment-options-dialog-box.md)|
 |變更預設的首頁和搜尋網頁、變更系統原始檔編輯器，並設定 Internet Explorer 選項。|[選項對話方塊、環境、Web 瀏覽器](../../ide/reference/web-browser-environment-options-dialog-box.md)|
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [選項對話方塊](../../ide/reference/options-dialog-box-visual-studio.md)

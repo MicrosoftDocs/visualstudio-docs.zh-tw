@@ -18,19 +18,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3ab871d07a8519fa6850ad3d1743a7cd1d0fa110
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 041b3c5d0a67d590bc409c21dd53d5d162b0a0b9
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50672481"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52389247"
 ---
 # <a name="options-text-editor-c-intellisense"></a>IntelliSense、C#、文字編輯器、選項
 
 使用 [IntelliSense] 選項頁修改影響 C# 之 IntelliSense 行為的設定。 若要存取此選項頁面，選擇 [工具] > [選項]，然後選擇 [文字編輯器] > [C#] > [IntelliSense]。
-
-> [!NOTE]
-> 根據您目前使用的設定或版本，您所看到的對話方塊與功能表命令可能會與 [說明] 中描述的不同。 若要變更設定，請從 [ **工具** ] 功能表中選取 [ **匯入和匯出設定** ]。 如需詳細資訊，請參閱[將 Visual Studio IDE 個人化](../../ide/personalizing-the-visual-studio-ide.md)。
 
 [IntelliSense] 頁面包含下列選項：
 
@@ -86,7 +83,7 @@ ms.locfileid: "50672481"
 
 ## <a name="show-name-suggestions"></a>顯示名稱建議
 
-   針對您最近選取的成員執行自動物件名稱完成。 
+針對您最近選取的成員執行自動物件名稱完成。
 
 ## <a name="see-also"></a>另請參閱
 
