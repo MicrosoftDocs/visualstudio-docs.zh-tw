@@ -12,21 +12,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 26625fad5435fa8d5088a59465612e15808a07c4
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 4a5efe344859c8b9fbdc10edbea0bbb193c6df55
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50671231"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52389353"
 ---
 # <a name="options-dialog-box-projects-and-solutions-web-projects"></a>選項對話方塊、專案和方案、Web 專案
 
 設定 Web 專案將用來在 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 內進行開發的 Web 伺服器。 若要存取這些選項，請選取 [工具] > [選項] 來展開 [專案和解決方案]，然後選取 [Web 專案]。
 
 根據預設，在 Visual Studio 中執行 Web 專案會使用 Visual Studio 程式開發伺服器。 如需詳細資訊，請參閱 [Visual Studio 中 ASP.NET Web 專案的 Web 伺服器](/previous-versions/aspnet/58wxa9w5\(v\=vs.120\))。
-
-> [!NOTE]
-> 根據您目前使用的設定或版本，您所看到的對話方塊可用選項，以及功能表命令的名稱和位置，可能會與 [說明] 中描述的有所不同。 撰寫此說明頁時，主要是以 [Web 設定] 為考量。 若要檢視或變更您的設定，請選擇 [工具] 功能表上的 [匯入和匯出設定]。 如需詳細資訊，請參閱[將 Visual Studio IDE 個人化](../../ide/personalizing-the-visual-studio-ide.md)。
 
 ## <a name="settings"></a>設定
 

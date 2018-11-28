@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fddf53101cf356772745462542bf4435a4ca4f4d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 9890b68b05f4cedbb1a95299b87f505daea902f9
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31945892"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52389412"
 ---
 # <a name="setting-language-specific-editor-options"></a>設定語言特定編輯器選項
 
@@ -58,4 +58,4 @@ Visual Studio 提供多種 [文字編輯器] 選項，可以套用至特定的�
 
 - [自訂編輯器](../../ide/customizing-the-editor.md)
 - [使用 EditorConfig 建立可攜式自訂編輯器設定](../../ide/create-portable-custom-editor-options.md)
-- [將 Visual Studio IDE 個人化](../../ide/personalizing-the-visual-studio-ide.md) &mdash; 提供說明如何自訂設定、按鍵繫結關係及其他整合式開發環境 (IDE) 功能的主題連結。
+- [將 Visual Studio IDE 個人化](../../ide/personalizing-the-visual-studio-ide.md)

@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f3009a3730a858707490d1f043d039b9f82ecb1
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 4d0ebbac34795255a48e1ec1c8ff72db829b30c3
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39177707"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388526"
 ---
 # <a name="how-to-display-urls-as-links-in-the-editor"></a>如何：以連結方式顯示編輯器中的 URL
 
@@ -31,12 +31,7 @@ ms.locfileid: "39177707"
 
 -   當您在連結上使用 **Ctrl**+**按一下**時，嘗試開啟指出的網站。 網站預設會顯示於內部網頁瀏覽器中。
 
-> [!NOTE]
-> 根據您目前使用的設定或版本，您所看到的對話方塊與功能表命令可能會與 [說明] 中描述的不同。 若要變更設定，請從 [ **工具** ] 功能表中選取 [ **匯入和匯出設定** ]。 如需詳細資訊，請參閱[將 Visual Studio IDE 個人化](../../ide/personalizing-the-visual-studio-ide.md)。
-
-## <a name="procedure"></a>程序
-
-### <a name="to-display-urls-as-links"></a>將 URL 顯示為連結
+## <a name="display-urls-as-links"></a>將 URL 顯示為連結
 
 1.  在 [ **工具** ] 功能表上按一下 [ **選項**]。
 
