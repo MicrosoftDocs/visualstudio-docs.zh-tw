@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3227b2f17932936e54c244f385a648c583677923
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e295bc8c09f41c4c1c77b216a9d91d0644d2d24e
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49831922"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388539"
 ---
 # <a name="vsix-extension-schema-20-reference"></a>VSIX 延伸結構描述 2.0 參考
 VSIX 部署資訊清單檔描述 VSIX 封裝的內容。 檔案格式是結構描述所決定。 此結構描述的 2.0 版支援的自訂型別和屬性加入。  資訊清單的結構描述是 「 可延伸的。 它並不了解的 XML 元素和屬性，則會忽略資訊清單的載入器。  
@@ -130,7 +130,11 @@ VSIX 部署資訊清單檔描述 VSIX 封裝的內容。 檔案格式是結構�
         -   單一版本 #-指定的版本。  
   
         > [!IMPORTANT]
-        >  2.0 版 VSIX 結構描述的是 Visual Studio 2012 中引進。 若要使用此結構描述您必須將 Visual Studio 2012 或稍後在電腦上安裝和使用是該產品的一部分 VSIXInstaller.exe。 您可以針對舊版的 Visual Studio 與 Visual Studio 2012 或更新版本的 VSIXInstaller，但只能透過使用較新版本的安裝程式。  
+        >  2.0 版 VSIX 結構描述的是 Visual Studio 2012 中引進。 若要使用此結構描述您必須將 Visual Studio 2012 或稍後在電腦上安裝和使用是該產品的一部分 VSIXInstaller.exe。 您可以針對舊版的 Visual Studio 與 Visual Studio 2012 或更新版本的 VSIXInstaller，但只能透過使用較新版本的安裝程式。 
+        
+        Visual Studio 2017 版本號碼，請參閱[Visual Studio 組建編號和發行日期](../install/visual-studio-build-numbers-and-release-dates.md)。
+        
+        Visual Studio 2017 的版本更新的版本時，次要的版本應該總是**0**。 Visual Studio 2017 版本 15.3.26730.0 比方說，應該以 [15.0.26730.0,16.0)。 這只是所需的 Visual Studio 2017 版本號碼。
   
     -   `AnyAttribute*` -`<InstallationTarget>`項目可讓在做為名稱 / 值組字典的執行階段會公開屬性的開放集合。  
   
