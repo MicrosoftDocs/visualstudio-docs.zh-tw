@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 568a829ff10cbee535729361b7c95dd7db6814f5
-ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
+ms.openlocfilehash: c8f826db0c619e1dfb5811aaf9d0c5ef40093c97
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "51948059"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388659"
 ---
 # <a name="resetsettings-devenvexe"></a>/ResetSettings (devenv.exe)
 
@@ -28,7 +28,7 @@ ms.locfileid: "51948059"
 第一次啟動 Visual Studio 時，選取的設定檔即會決定預設值。
 
 > [!TIP]
-> 若要了解如何使用整合式開發環境 (IDE) 重設設定，請參閱[重設設定](../synchronized-settings-in-visual-studio.md#reset-settings)。
+> 若要了解如何使用整合式開發環境 (IDE) 重設設定，請參閱[重設設定](../environment-settings.md#reset-settings)。
 
 ## <a name="syntax"></a>語法
 
@@ -58,6 +58,6 @@ Devenv.exe /ResetSettings "C:\My Files\MySettings.vssettings"
 
 ## <a name="see-also"></a>另請參閱
 
-- [重設設定](../synchronized-settings-in-visual-studio.md#reset-settings)
+- [環境設定](../environment-settings.md)
 - [將 Visual Studio IDE 個人化](../../ide/personalizing-the-visual-studio-ide.md)
 - [Devenv 命令列參數](../../ide/reference/devenv-command-line-switches.md)

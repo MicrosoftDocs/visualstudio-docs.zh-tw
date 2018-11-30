@@ -13,12 +13,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c5d0149be4996f762373aae77d7535dbf8e02809
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: df94a57358edd9619b43bbcddb26d4e3485a1ab1
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49909792"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388422"
 ---
 # <a name="how-to-set-ide-accessibility-options"></a>如何：設定 IDE 協助工具選項
 
@@ -27,10 +27,10 @@ ms.locfileid: "49909792"
 
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 包含功能，可讓視力障礙人士更容易閱讀，讓靈活度有限的人士更容易書寫。 這些功能包括在編輯器中變更文字的大小和色彩、變更工具列上的文字和按鈕大小，和自動完成方法及參數等等。
 
- 此外，[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 支援 Dvorak 鍵盤配置，這會讓最常鍵入的字元更容易存取。 您也可以自訂 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 提供的預設快速鍵。 如需詳細資訊，請參閱[識別及自訂鍵盤快速鍵](../../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)。
+此外，[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 支援 Dvorak 鍵盤配置，這會讓最常鍵入的字元更容易存取。 您也可以自訂 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 提供的預設快速鍵。 如需詳細資訊，請參閱[識別及自訂鍵盤快速鍵](../../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)。
 
 > [!NOTE]
-> 根據您目前使用的設定或版本，您所看到的對話方塊與功能表命令可能會與 [說明] 中描述的不同。 若要變更設定，請從 [ **工具** ] 功能表中選取 [ **匯入和匯出設定** ]。 如需詳細資訊，請參閱[將 Visual Studio IDE 個人化](../../ide/personalizing-the-visual-studio-ide.md)。
+> 根據您目前使用的設定或版本，您所看到的對話方塊與功能表命令可能會與 [說明] 中描述的不同。 若要變更設定，請從 [ **工具** ] 功能表中選取 [ **匯入和匯出設定** ]。 如需詳細資訊，請參閱[重設設定](../environment-settings.md#reset-settings)。
 
 ## <a name="editors-dialogs-and-tool-windows"></a>編輯器、對話方塊和工具視窗
 
