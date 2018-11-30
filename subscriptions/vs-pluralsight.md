@@ -9,12 +9,12 @@ description: 了解有關隨附於所選 Visual Studio 訂用帳戶的 Pluralsig
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: a384769b5d2f643a215a1a0c136fc44fd7d45e42
-ms.sourcegitcommit: 331dbb12e11fcd7f5d15fab05f3c861e48126e43
+ms.openlocfilehash: c39b7e052f3e978530dbc093767fabde4172d8e2
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51826694"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52389107"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶中的 Pluralsight 訓練課程權益
 
@@ -39,11 +39,7 @@ ms.locfileid: "51826694"
    > [!div class="mx-imgBorder"]
    > ![Pluralsight 權益啟用](_img/vs-pluralsight/vs-pluralsight-activate.png)
 
-3. 系統會將您重新導向至 Visual Studio 訂閱隨附的 Pluralsight 權益頁面。  在此範例中，我們將啟用 Visual Studio Dev Essentials 成員資格所提供的權益。 按一下 [Activate your benefit (啟用您的權益)]。
-   > [!div class="mx-imgBorder"]
-   > ![Pluralsight VSDE 登陸頁面](_img/vs-pluralsight/vs-pluralsight-vsde-landing.png)
-
-4. 在啟用頁面上：
+3. 系統會將您重新導向至 Visual Studio 訂閱隨附的 Pluralsight 權益頁面。  
    - 在表單中提供要求的連絡資訊
    - 按一下核取方塊，接受使用條款和隱私權原則
    - 按一下 [I agree, activate benefit] (我同意，啟用權益)。
@@ -85,7 +81,7 @@ ms.locfileid: "51826694"
 
 <sup>1</sup>  *包含：「禁止轉售 (NFR)」、Visual Studio Industry Partner (VSIP)、BizSpark、MCT Software & Services Developer、MCT Software & Service、Microsoft Valued Professional (MVP)、Region Director (RD)、Microsoft 合作夥伴網路 (MPN)、FTE、Imagine。*
 
-<sup>2</sup>  *Pluralsight 權益僅限單人使用，與個人綁定。  一旦訂閱者使用了權益，就無法重設。 
+<sup>2</sup>  Pluralsight 權益僅限單人使用，與個人綁定。一旦訂閱者使用了權益，即無法重設。
 
 不確定您使用哪一個訂用帳戶？  連線到 [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) 以查看指派給您的電子郵件地址的所有訂用帳戶。 若沒有看到您的所有訂用帳戶，可能有一或多個訂用帳戶是指派到不同的電子郵件地址。  您必須以該電子郵件地址登入才能查看對應的訂用帳戶。
 
