@@ -1,3 +1,4 @@
+items:
 - name: Visual Studio 測試工具
   href: improve-code-quality.md
 - name: 測試情節
@@ -5,395 +6,373 @@
 - name: 單元測試
   href: unit-test-your-code.md
   items:
-    - name: 開始使用
-      href: getting-started-with-unit-testing.md
-    - name: 單元測試基本概念
-      href: unit-test-basics.md
-    - name: 建立單元測試專案
-      href: create-a-unit-test-project.md
-    - name: 建立單元測試命令
-      href: create-unit-tests-menu.md
-    - name: IntelliTest
-      href: generate-unit-tests-for-your-code-with-intellitest.md
+  - name: 開始使用
+    href: getting-started-with-unit-testing.md
+  - name: 單元測試基本概念
+    href: unit-test-basics.md
+  - name: 建立單元測試專案
+    href: create-a-unit-test-project.md
+  - name: 建立單元測試命令
+    href: create-unit-tests-menu.md
+  - name: IntelliTest
+    href: generate-unit-tests-for-your-code-with-intellitest.md
+    items:
+    - name: 總覽
+      href: intellitest-manual/introduction.md
+    - name: 使用者入門
+      href: intellitest-manual/getting-started.md
+    - name: 章節索引
+      href: intellitest-manual/index.md
+    - name: 測試產生
+      href: intellitest-manual/test-generation.md
+    - name: 動態執行符號
+      href: intellitest-manual/input-generation.md
+    - name: 探索界限
+      href: intellitest-manual/exploration-bounds.md
+    - name: 屬性字彙
+      href: intellitest-manual/attribute-glossary.md
+    - name: 設定瀑布圖
+      href: intellitest-manual/settings-waterfall.md
+    - name: 靜態協助程式類別
+      href: intellitest-manual/static-helper-classes.md
+    - name: 警告和錯誤
+      href: intellitest-manual/warnings-and-errors.md
+  - name: 安裝協力廠商單元測試架構
+    href: install-third-party-unit-test-frameworks.md
+  - name: 使用測試總管執行單元測試
+    href: run-unit-tests-with-test-explorer.md
+    items:
+    - name: 測試清單編輯器常見問題集
+      href: test-explorer-faq.md
+  - name: 從命令列執行測試
+    href: vstest-console-options.md
+  - name: 以 64 位元處理序的形式執行單元測試
+    href: run-a-unit-test-as-a-64-bit-process.md
+  - name: 使用 .runsettings 檔案設定單元測試
+    href: configure-unit-tests-by-using-a-dot-runsettings-file.md
+  - name: 撰寫受控碼的單元測試
+    items:
+    - name: 逐步解說：為受控碼建立和執行單元測試
+      href: walkthrough-creating-and-running-unit-tests-for-managed-code.md
+    - name: 快速入門：搭配測試清單編輯器進行測試驅動開發
+      href: quick-start-test-driven-development-with-test-explorer.md
+    - name: 在單元測試中使用 Microsoft.VisualStudio.TestTools.UnitTesting 成員
+      href: using-microsoft-visualstudio-testtools-unittesting-members-in-unit-tests.md
+    - name: 使用 Assert 類別
+      href: using-the-assert-classes.md
+    - name: 使用 Microsoft Fakes 隔離測試中的程式碼
+      href: isolating-code-under-test-with-microsoft-fakes.md
       items:
-        - name: 總覽
-          href: intellitest-manual/introduction.md
-        - name: 使用者入門
-          href: intellitest-manual/getting-started.md
-        - name: 章節索引
-          href: intellitest-manual/index.md
-        - name: 測試產生
-          href: intellitest-manual/test-generation.md
-        - name: 動態執行符號
-          href: intellitest-manual/input-generation.md
-        - name: 探索界限
-          href: intellitest-manual/exploration-bounds.md
-        - name: 屬性字彙
-          href: intellitest-manual/attribute-glossary.md
-        - name: 設定瀑布圖
-          href: intellitest-manual/settings-waterfall.md
-        - name: 靜態協助程式類別
-          href: intellitest-manual/static-helper-classes.md
-        - name: 警告和錯誤
-          href: intellitest-manual/warnings-and-errors.md
-    - name: 安裝協力廠商單元測試架構
-      href: install-third-party-unit-test-frameworks.md
-    - name: 使用測試總管執行單元測試
-      href: run-unit-tests-with-test-explorer.md
+      - name: 使用虛設常式隔離應用程式的各個組件，方便進行單元測試
+        href: using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md
+      - name: 使用填充碼將應用程式與其他組件隔離，方便進行單元測試
+        href: using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md
+      - name: Microsoft Fakes 中的程式碼產生、編譯和命名慣例
+        href: code-generation-compilation-and-naming-conventions-in-microsoft-fakes.md
+    - name: 建立資料驅動的單元測試
+      href: how-to-create-a-data-driven-unit-test.md
       items:
-        - name: 測試清單編輯器常見問題集
-          href: test-explorer-faq.md
-    - name: 從命令列執行測試
-      href: vstest-console-options.md
-    - name: 以 64 位元處理序的形式執行單元測試
-      href: run-a-unit-test-as-a-64-bit-process.md
-    - name: 使用 .runsettings 檔案設定單元測試
-      href: configure-unit-tests-by-using-a-dot-runsettings-file.md
-    - name: 撰寫受控碼的單元測試
-      items:
-        - name: 逐步解說：為受控碼建立和執行單元測試
-          href: walkthrough-creating-and-running-unit-tests-for-managed-code.md
-        - name: 快速入門：搭配測試清單編輯器進行測試驅動開發
-          href: quick-start-test-driven-development-with-test-explorer.md
-        - name: 在單元測試中使用 Microsoft.VisualStudio.TestTools.UnitTesting 成員
-          href: using-microsoft-visualstudio-testtools-unittesting-members-in-unit-tests.md
-        - name: 使用 Assert 類別
-          href: using-the-assert-classes.md
-        - name: 使用 Microsoft Fakes 隔離測試中的程式碼
-          href: isolating-code-under-test-with-microsoft-fakes.md
-          items:
-            - name: 使用虛設常式隔離應用程式的各個組件，方便進行單元測試
-              href: using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md
-            - name: 使用填充碼將應用程式與其他組件隔離，方便進行單元測試
-              href: using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md
-            - name: Microsoft Fakes 中的程式碼產生、編譯和命名慣例
-              href: code-generation-compilation-and-naming-conventions-in-microsoft-fakes.md
-        - name: 建立資料驅動的單元測試
-          href: how-to-create-a-data-driven-unit-test.md
-          items:
-            - name: 逐步解說：使用組態檔定義資料來源
-              href: walkthrough-using-a-configuration-file-to-define-a-data-source.md
-        - name: 泛型方法的單元測試
-          href: unit-tests-for-generic-methods.md
-        - name: 設定以舊版 .NET Framework 為目標的單元測試
-          href: how-to-configure-unit-tests-to-target-an-earlier-version-of-the-dotnet-framework.md
-        - name: 用於建立單元測試的範例專案
-          href: sample-project-for-creating-unit-tests.md
-    - name: 撰寫 C/C++ 程式碼的單元測試
-      href: writing-unit-tests-for-c-cpp.md
-      items:
-        - name: 使用適用於 C++ 的 Microsoft 單元測試架構
-          href: how-to-use-microsoft-test-framework-for-cpp.md
-        - name: 使用 Google C++ 測試架構
-          href: how-to-use-google-test-for-cpp.md
-        - name: 使用 Boost.Test
-          href: how-to-use-boost-test-for-cpp.md
-        - name: 使用 CTest
-          href: how-to-use-ctest-for-cpp.md
-        - name: 撰寫 C/C++ DLL 的單元測試
-          href: how-to-write-unit-tests-for-cpp-dlls.md
-        - name: 逐步解說：撰寫 C/C++ DLL 的單元測試
-          href: walkthrough-writing-unit-tests-for-cpp-dlls.md
-        - name: 適用於 C++ 的 Microsoft 單元測試架構 API 參考
-          href: microsoft-visualstudio-testtools-cppunittestframework-api-reference.md
-    - name: 建立並執行 UWP App 的單元測試
-      items:
-        - name: 對 C++ UWP DLL 進行單元測試
-          href: unit-testing-a-visual-cpp-dll-for-store-apps.md
-        - name: '對 UWP 應用程式中的 Visual C# 程式碼進行單元測試'
-          href: unit-testing-visual-csharp-code-in-a-store-app.md
-        - name: 逐步解說：建立並執行 UWP 應用程式的單元測試
-          href: walkthrough-creating-and-running-unit-tests-for-windows-store-apps.md
-    - name: 使用程式碼涵蓋範圍來決定所測試的程式碼數量
-      href: using-code-coverage-to-determine-how-much-code-is-being-tested.md
-      items:
-        - name: 自訂程式碼涵蓋範圍分析
-          href: customizing-code-coverage-analysis.md
-        - name: 對程式碼涵蓋範圍進行疑難排解
-          href: troubleshooting-code-coverage.md
-    - name: 使用模擬器來隔離 Sharepoint 2010 應用程式的單元測試
-      href: using-emulators-to-isolate-unit-tests-for-sharepoint-2010-applications.md
+      - name: 逐步解說：使用組態檔定義資料來源
+        href: walkthrough-using-a-configuration-file-to-define-a-data-source.md
+    - name: 泛型方法的單元測試
+      href: unit-tests-for-generic-methods.md
+    - name: 設定以舊版 .NET Framework 為目標的單元測試
+      href: how-to-configure-unit-tests-to-target-an-earlier-version-of-the-dotnet-framework.md
+    - name: 用於建立單元測試的範例專案
+      href: sample-project-for-creating-unit-tests.md
+  - name: 撰寫 C/C++ 程式碼的單元測試
+    href: writing-unit-tests-for-c-cpp.md
+    items:
+    - name: 使用適用於 C++ 的 Microsoft 單元測試架構
+      href: how-to-use-microsoft-test-framework-for-cpp.md
+    - name: 使用 Google C++ 測試架構
+      href: how-to-use-google-test-for-cpp.md
+    - name: 使用 Boost.Test
+      href: how-to-use-boost-test-for-cpp.md
+    - name: 使用 CTest
+      href: how-to-use-ctest-for-cpp.md
+    - name: 撰寫 C/C++ DLL 的單元測試
+      href: how-to-write-unit-tests-for-cpp-dlls.md
+    - name: 逐步解說：撰寫 C/C++ DLL 的單元測試
+      href: walkthrough-writing-unit-tests-for-cpp-dlls.md
+    - name: 適用於 C++ 的 Microsoft 單元測試架構 API 參考
+      href: microsoft-visualstudio-testtools-cppunittestframework-api-reference.md
+  - name: 建立並執行 UWP App 的單元測試
+    items:
+    - name: 對 C++ UWP DLL 進行單元測試
+      href: unit-testing-a-visual-cpp-dll-for-store-apps.md
+    - name: 對 UWP 應用程式中的 Visual C# 程式碼進行單元測試
+      href: unit-testing-visual-csharp-code-in-a-store-app.md
+    - name: 逐步解說：建立並執行 UWP 應用程式的單元測試
+      href: walkthrough-creating-and-running-unit-tests-for-windows-store-apps.md
+  - name: 使用程式碼涵蓋範圍來決定所測試的程式碼數量
+    href: using-code-coverage-to-determine-how-much-code-is-being-tested.md
+    items:
+    - name: 自訂程式碼涵蓋範圍分析
+      href: customizing-code-coverage-analysis.md
+    - name: 對程式碼涵蓋範圍進行疑難排解
+      href: troubleshooting-code-coverage.md
+  - name: 使用模擬器來隔離 Sharepoint 2010 應用程式的單元測試
+    href: using-emulators-to-isolate-unit-tests-for-sharepoint-2010-applications.md
 - name: 即時單元測試
   href: live-unit-testing-intro.md
   items:
-    - name: Live Unit Testing 的新功能
-      href: live-unit-testing-whats-new.md
-    - name: Live Unit Testing 的使用者入門
-      href: live-unit-testing-start.md
-    - name: 使用 Visual Studio 2017 Enterprise Edition 中的 Live Unit Testing
-      href: live-unit-testing.md
-    - name: Live Unit Testing 常見問題集
-      href: live-unit-testing-faq.md
+  - name: Live Unit Testing 的新功能
+    href: live-unit-testing-whats-new.md
+  - name: Live Unit Testing 的使用者入門
+    href: live-unit-testing-start.md
+  - name: 使用 Visual Studio 2017 Enterprise Edition 中的 Live Unit Testing
+    href: live-unit-testing.md
+  - name: Live Unit Testing 常見問題集
+    href: live-unit-testing-faq.md
 - name: Web 效能和負載測試
   items:
-    - name: 快速入門：建立負載測試專案
-      href: quickstart-create-a-load-test-project.md
-    - name: 設定負載測試
-      href: edit-load-tests.md
+  - name: 快速入門：建立負載測試專案
+    href: quickstart-create-a-load-test-project.md
+  - name: 設定負載測試
+    href: edit-load-tests.md
+    items:
+    - name: 編輯情節
+      href: edit-load-test-scenarios.md
       items:
-        - name: 編輯情節
-          href: edit-load-test-scenarios.md
-          items:
-            - name: 情節屬性
-              href: load-test-scenario-properties.md
-            - name: 測試混合
-              href: edit-the-test-mix-in-a-load-test-scenario.md
-            - name: 測試混合模型
-              href: emulate-real-world-usage-of-a-web-site-in-a-load-test-using-test-mix-models.md
-              items:
-                - name: 編輯測試混合模型
-                  href: edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md
-            - name: 瀏覽器混合
-              href: edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario.md
-            - name: 網路混合
-              href: specify-virtual-network-types-in-a-load-test-scenario.md
-            - name: 考慮特性
-              href: edit-think-times-in-load-test-scenarios.md
-            - name: 負載模式
-              href: edit-load-patterns-to-model-virtual-user-activities.md
-              items:
-                - name: 逐步遞增時間屬性
-                  href: how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern.md
-            - name: 開始延遲
-              href: configure-scenario-start-delays.md
-            - name: 測試反覆項目
-              href: configure-test-iterations-in-a-load-test-scenario.md
-            - name: 新使用者的百分比
-              href: how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data.md
-            - name: 步調延遲分佈
-              href: how-to-apply-distribution-to-pacing-delay-when-using-a-user-pace-test-mix-model.md
-        - name: 編輯計數器集合
-          href: specify-counter-sets-and-threshold-rules-for-load-testing.md
-          items:
-            - name: 新增計數器
-              href: how-to-add-counters-to-counter-sets-using-the-load-test-editor.md
-            - name: 自訂計數器集合
-              href: how-to-add-custom-counter-sets-using-the-load-test-editor.md
-            - name: 將電腦標籤新增至計數器集合對應
-              href: how-to-add-computer-tags-to-counter-set-mappings-using-the-load-test-editor.md
-            - name: 管理計數器集合
-              href: how-to-manage-counter-sets-using-the-load-test-editor.md
-            - name: 新增臨界值規則
-              href: how-to-add-a-threshold-rule-using-the-load-test-editor.md
-        - name: 編輯執行設定
-          href: configure-load-test-run-settings.md
-          items:
-            - name: 回合設定屬性
-              href: load-test-run-settings-properties.md
-            - name: 新增其他回合設定
-              href: how-to-add-additional-run-settings-to-a-load-test.md
-            - name: 內容參數
-              href: how-to-add-context-parameters-to-a-load-test-run-setting.md
-            - name: 記錄設定
-              href: modify-load-test-logging-settings.md
-              items:
-                - name: 記錄檔大小上限
-                  href: how-to-specify-the-maximum-size-for-the-log-file.md
-                - name: 儲存頻率
-                  href: how-to-specify-how-frequently-test-logs-are-saved.md
-                - name: 失敗的測試
-                  href: how-to-specify-if-test-failures-are-saved-to-test-logs.md
-            - name: 計時詳細資料儲存區
-              href: how-to-specify-the-timing-details-storage-property-for-a-load-test.md
-              items:
-                - name: 收集完整詳細資料
-                  href: how-to-configure-load-tests-to-collect-full-details.md
-            - name: 測試反覆項目
-              href: how-to-specify-the-number-of-test-iterations-in-a-load-test.md
-            - name: 採樣速率
-              href: how-to-specify-the-sample-rate-for-a-load-test.md
-            - name: 選取回合設定
-              href: how-to-select-the-active-run-setting-for-a-load-test.md
-              items:
-                - name: 命令列
-                  href: how-to-select-a-load-test-run-setting-from-the-command-line.md
-    - name: 逐步解說：建立和執行負載測試
-      href: walkthrough-create-and-run-a-load-test.md
-    - name: Web 效能測試
+      - name: 情節屬性
+        href: load-test-scenario-properties.md
+      - name: 測試混合
+        href: edit-the-test-mix-in-a-load-test-scenario.md
+      - name: 測試混合模型
+        href: emulate-real-world-usage-of-a-web-site-in-a-load-test-using-test-mix-models.md
+        items:
+        - name: 編輯測試混合模型
+          href: edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md
+      - name: 瀏覽器混合
+        href: edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario.md
+      - name: 網路混合
+        href: specify-virtual-network-types-in-a-load-test-scenario.md
+      - name: 考慮特性
+        href: edit-think-times-in-load-test-scenarios.md
+      - name: 負載模式
+        href: edit-load-patterns-to-model-virtual-user-activities.md
+        items:
+        - name: 逐步遞增時間屬性
+          href: how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern.md
+      - name: 開始延遲
+        href: configure-scenario-start-delays.md
+      - name: 測試反覆項目
+        href: configure-test-iterations-in-a-load-test-scenario.md
+      - name: 新使用者的百分比
+        href: how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data.md
+      - name: 步調延遲分佈
+        href: how-to-apply-distribution-to-pacing-delay-when-using-a-user-pace-test-mix-model.md
+    - name: 編輯計數器集合
+      href: specify-counter-sets-and-threshold-rules-for-load-testing.md
       items:
-        - name: 建立 Web 服務測試
-          href: how-to-create-a-web-service-test.md
-        - name: 產生自動程式化 Web 效能測試
-          href: generate-and-run-a-coded-web-performance-test.md
-        - name: 將資料來源新增至 Web 效能測試
-          href: add-a-data-source-to-a-web-performance-test.md
-        - name: 動態參數
-          href: fix-non-detectable-dynamic-parameters-in-a-web-performance-test.md
-    - name: 測試控制器和測試代理程式
-      href: configure-test-agents-and-controllers-for-load-tests.md
+      - name: 新增計數器
+        href: how-to-add-counters-to-counter-sets-using-the-load-test-editor.md
+      - name: 自訂計數器集合
+        href: how-to-add-custom-counter-sets-using-the-load-test-editor.md
+      - name: 管理計數器集合
+        href: how-to-manage-counter-sets-using-the-load-test-editor.md
+      - name: 新增臨界值規則
+        href: how-to-add-a-threshold-rule-using-the-load-test-editor.md
+    - name: 編輯執行設定
+      href: configure-load-test-run-settings.md
       items:
-        - name: 需求
-          href: test-controller-and-test-agent-requirements-for-load-testing.md
-        - name: 管理測試控制器和測試代理程式
-          href: manage-test-controllers-and-test-agents.md
-        - name: 如何指定測試代理程式
-          href: how-to-specify-test-agents-to-use-in-load-test-scenarios.md
-        - name: 指派角色
-          href: assign-roles-to-a-test-controller-and-test-agent.md
-        - name: 設定連接埠
-          href: configure-ports-for-test-controllers-and-test-agents.md
-        - name: 繫結至網路介面卡
-          href: how-to-bind-a-test-controller-or-test-agent-to-a-network-adapter.md
-        - name: 執行與桌面互動的測試
-          href: how-to-set-up-your-test-agent-to-run-tests-that-interact-with-the-desktop.md
-        - name: 逾時期間
-          href: how-to-specify-timeout-periods-for-test-controllers-and-test-agents.md
-        - name: 疑難排解
-          href: troubleshoot-test-controllers-and-test-agents.md
-    - name: 自訂負載測試
+      - name: 回合設定屬性
+        href: load-test-run-settings-properties.md
+      - name: 新增其他回合設定
+        href: how-to-add-additional-run-settings-to-a-load-test.md
+      - name: 內容參數
+        href: how-to-add-context-parameters-to-a-load-test-run-setting.md
+      - name: 記錄設定
+        href: modify-load-test-logging-settings.md
+        items:
+        - name: 記錄檔大小上限
+          href: how-to-specify-the-maximum-size-for-the-log-file.md
+        - name: 失敗的測試
+          href: how-to-specify-if-test-failures-are-saved-to-test-logs.md
+      - name: 計時詳細資料儲存區
+        href: how-to-specify-the-timing-details-storage-property-for-a-load-test.md
+      - name: 測試反覆項目
+        href: how-to-specify-the-number-of-test-iterations-in-a-load-test.md
+      - name: 採樣速率
+        href: how-to-specify-the-sample-rate-for-a-load-test.md
+      - name: 選取回合設定
+        href: how-to-select-the-active-run-setting-for-a-load-test.md
+        items:
+        - name: 命令列
+          href: how-to-select-a-load-test-run-setting-from-the-command-line.md
+  - name: 逐步解說：建立和執行負載測試
+    href: walkthrough-create-and-run-a-load-test.md
+  - name: Web 效能測試
+    items:
+    - name: 建立 Web 服務測試
+      href: how-to-create-a-web-service-test.md
+    - name: 產生自動程式化 Web 效能測試
+      href: generate-and-run-a-coded-web-performance-test.md
+    - name: 將資料來源新增至 Web 效能測試
+      href: add-a-data-source-to-a-web-performance-test.md
+    - name: 動態參數
+      href: fix-non-detectable-dynamic-parameters-in-a-web-performance-test.md
+  - name: 測試控制器和測試代理程式
+    href: configure-test-agents-and-controllers-for-load-tests.md
+    items:
+    - name: 需求
+      href: test-controller-and-test-agent-requirements-for-load-testing.md
+    - name: 管理測試控制器和測試代理程式
+      href: manage-test-controllers-and-test-agents.md
+    - name: 如何指定測試代理程式
+      href: how-to-specify-test-agents-to-use-in-load-test-scenarios.md
+    - name: 指派角色
+      href: assign-roles-to-a-test-controller-and-test-agent.md
+    - name: 設定連接埠
+      href: configure-ports-for-test-controllers-and-test-agents.md
+    - name: 繫結至網路介面卡
+      href: how-to-bind-a-test-controller-or-test-agent-to-a-network-adapter.md
+    - name: 執行與桌面互動的測試
+      href: how-to-set-up-your-test-agent-to-run-tests-that-interact-with-the-desktop.md
+    - name: 逾時期間
+      href: how-to-specify-timeout-periods-for-test-controllers-and-test-agents.md
+    - name: 疑難排解
+      href: troubleshoot-test-controllers-and-test-agents.md
+  - name: 自訂負載測試
+    items:
+    - name: 負載測試 API
+      href: how-to-use-the-load-test-api.md
+    - name: Web 效能測試 API
+      href: how-to-use-the-web-performance-test-api.md
+    - name: 建立自訂擷取規則
+      href: code-a-custom-extraction-rule-for-a-web-performance-test.md
+    - name: 建立自訂驗證規則
+      href: code-a-custom-validation-rule-for-a-web-performance-test.md
+    - name: 建立自訂程式碼和外掛程式
+      href: create-custom-code-and-plug-ins-for-load-tests.md
       items:
-        - name: 負載測試 API
-          href: how-to-use-the-load-test-api.md
-        - name: Web 效能測試 API
-          href: how-to-use-the-web-performance-test-api.md
-        - name: 建立自訂擷取規則
-          href: code-a-custom-extraction-rule-for-a-web-performance-test.md
-        - name: 建立自訂驗證規則
-          href: code-a-custom-validation-rule-for-a-web-performance-test.md
-        - name: 建立自訂程式碼和外掛程式
-          href: create-custom-code-and-plug-ins-for-load-tests.md
-          items:
-            - name: 建立 Web 效能測試外掛程式
-              href: how-to-create-a-web-performance-test-plug-in.md
-            - name: 建立要求層級外掛程式
-              href: how-to-create-a-request-level-plug-in.md
-            - name: 建立負載測試外掛程式
-              href: how-to-create-a-load-test-plug-in.md
-            - name: 建立錄製器外掛程式
-              href: how-to-create-a-recorder-plug-in.md
-            - name: 建立自訂 HTTP 內容編輯器
-              href: how-to-create-a-custom-http-body-editor-for-the-web-performance-test-editor.md
-    - name: 負載測試的診斷
+      - name: 建立 Web 效能測試外掛程式
+        href: how-to-create-a-web-performance-test-plug-in.md
+      - name: 建立要求層級外掛程式
+        href: how-to-create-a-request-level-plug-in.md
+      - name: 建立負載測試外掛程式
+        href: how-to-create-a-load-test-plug-in.md
+      - name: 建立錄製器外掛程式
+        href: how-to-create-a-recorder-plug-in.md
+      - name: 建立自訂 HTTP 內容編輯器
+        href: how-to-create-a-custom-http-body-editor-for-the-web-performance-test-editor.md
+  - name: 負載測試的診斷
+    items:
+    - name: 建立診斷資料配接器
+      href: create-a-diagnostic-data-adapter-to-collect-custom-data-or-affect-a-test-machine.md
       items:
-        - name: 建立診斷資料配接器
-          href: create-a-diagnostic-data-adapter-to-collect-custom-data-or-affect-a-test-machine.md
-          items:
-            - name: 如何建立
-              href: how-to-create-a-diagnostic-data-adapter.md
-            - name: 如何安裝
-              href: how-to-install-a-custom-diagnostic-data-adapter.md
-            - name: 建立自訂編輯器
-              href: how-to-create-a-custom-editor-for-data-for-your-diagnostic-data-adapter.md
-            - name: 範例專案
-              href: sample-project-for-creating-a-diagnostic-data-adapter.md
-        - name: 使用測試設定收集診斷資料
-          href: collect-diagnostic-information-using-test-settings.md
-          items:
-            - name: 建立測試設定
-              href: how-to-create-a-test-setting-for-a-distributed-load-test.md
-            - name: 設定 ASP.NET 分析工具
-              href: how-to-configure-aspnet-profiler-for-load-tests-using-test-settings.md
-            - name: 設定網路模擬
-              href: how-to-configure-network-emulation-using-test-settings-in-visual-studio.md
-        - name: 收集 IntelliTrace 資料
-          href: how-to-collect-intellitrace-data-to-help-debug-difficult-issues.md
-        - name: 錄製聲音和畫面
-          href: how-to-include-recordings-of-the-screen-and-voice-during-tests.md
-        - name: 防止診斷資料配接器逾時
-          href: how-to-prevent-time-outs-for-diagnostic-data-adapters.md
-    - name: 分析結果
-      href: analyze-load-test-results-using-the-load-test-analyzer.md
+      - name: 如何建立
+        href: how-to-create-a-diagnostic-data-adapter.md
+    - name: 使用測試設定收集診斷資料
+      href: collect-diagnostic-information-using-test-settings.md
       items:
-        - name: 存取結果
-          href: how-to-access-load-test-results-for-analysis.md
-        - name: 摘要概觀
-          href: load-test-results-summary-overview.md
-        - name: 資料表檢視
-          href: analyze-load-test-results-and-errors-in-the-tables-view.md
-          items:
-            - name: 網頁回應時間
-              href: how-to-view-web-page-response-time-in-a-load-test.md
-        - name: 圖形檢視
-          href: analyze-load-test-results-in-the-graphs-view.md
-          items:
-            - name: 新增和刪除計數器
-              href: how-to-add-and-delete-counters-on-graphs-in-load-test-results.md
-            - name: 建立自訂圖表
-              href: how-to-create-custom-graphs-in-load-test-results.md
-            - name: 繪圖選項
-              href: how-to-specify-plot-options-for-graphing-counters.md
-            - name: 使用圖例
-              href: use-the-graphs-view-legend-to-analyze-load-tests.md
-            - name: 如何縮放
-              href: how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md
-        - name: 詳細資料檢視
-          href: analyze-load-test-virtual-user-activity-in-the-details-view.md
-          items:
-            - name: 分析虛擬使用者活動
-              href: how-to-analyze-virtual-user-activity-during-a-load-test.md
-            - name: 逐步解說：使用活動圖表
-              href: walkthrough-use-the-virtual-user-activity-chart-to-isolate-issues.md
-        - name: 計數器面板
-          href: counters-panel-in-load-test-analyzer.md
-          items:
-            - name: 分析錯誤
-              href: how-to-analyze-errors-using-the-counters-panel.md
-            - name: 分析臨界值違規
-              href: how-to-analyze-threshold-violations-using-the-counters-panel.md
-        - name: 臨界值規則違規
-          href: analyze-threshold-rule-violations-in-load-tests.md
-        - name: 檢視資料和診斷附件
-          href: how-to-view-data-and-diagnostic-attachments-using-the-load-test-analyzer.md
-        - name: 比較結果及分析趨勢
-          href: compare-load-test-results.md
-        - name: 將註解新增至負載測試結果
-          href: how-to-add-comments-on-a-completed-load-test.md
-        - name: 在 Excel 中建立報表
-          href: how-to-create-load-test-performance-reports-using-microsoft-excel.md
-        - name: 在 Word 中建立報表
-          href: how-to-manually-create-a-load-test-performance-report-using-microsoft-word.md
-        - name: 結果存放庫
-          href: manage-load-test-results-in-the-load-test-results-repository.md
-          items:
-            - name: 選取存放庫
-              href: how-to-select-a-load-test-results-repository.md
-            - name: 匯入結果
-              href: how-to-import-load-test-results-into-a-repository.md
-            - name: 匯出結果
-              href: how-to-export-load-test-results-from-a-repository.md
-            - name: 刪除結果
-              href: how-to-delete-load-test-results-from-a-repository.md
-        - name: 建立結果檢視器的增益集
-          href: how-to-create-an-add-in-for-the-web-performance-test-results-viewer.md
+      - name: 建立測試設定
+        href: how-to-create-a-test-setting-for-a-distributed-load-test.md
+      - name: 設定 ASP.NET 分析工具
+        href: how-to-configure-aspnet-profiler-for-load-tests-using-test-settings.md
+      - name: 設定網路模擬
+        href: how-to-configure-network-emulation-using-test-settings-in-visual-studio.md
+    - name: 收集 IntelliTrace 資料
+      href: how-to-collect-intellitrace-data-to-help-debug-difficult-issues.md
+    - name: 錄製聲音和畫面
+      href: how-to-include-recordings-of-the-screen-and-voice-during-tests.md
+  - name: 分析結果
+    href: analyze-load-test-results-using-the-load-test-analyzer.md
+    items:
+    - name: 存取結果
+      href: how-to-access-load-test-results-for-analysis.md
+    - name: 摘要概觀
+      href: load-test-results-summary-overview.md
+    - name: 資料表檢視
+      href: analyze-load-test-results-and-errors-in-the-tables-view.md
+      items:
+      - name: 網頁回應時間
+        href: how-to-view-web-page-response-time-in-a-load-test.md
+    - name: 圖形檢視
+      href: analyze-load-test-results-in-the-graphs-view.md
+      items:
+      - name: 新增和刪除計數器
+        href: how-to-add-and-delete-counters-on-graphs-in-load-test-results.md
+      - name: 建立自訂圖表
+        href: how-to-create-custom-graphs-in-load-test-results.md
+      - name: 使用圖例
+        href: use-the-graphs-view-legend-to-analyze-load-tests.md
+      - name: 如何縮放
+        href: how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md
+    - name: 詳細資料檢視
+      href: analyze-load-test-virtual-user-activity-in-the-details-view.md
+      items:
+      - name: 分析虛擬使用者活動
+        href: how-to-analyze-virtual-user-activity-during-a-load-test.md
+      - name: 逐步解說：使用活動圖表
+        href: walkthrough-use-the-virtual-user-activity-chart-to-isolate-issues.md
+    - name: 臨界值規則違規
+      href: analyze-threshold-rule-violations-in-load-tests.md
+    - name: 比較結果及分析趨勢
+      href: compare-load-test-results.md
+    - name: 在 Excel 中建立報表
+      href: how-to-create-load-test-performance-reports-using-microsoft-excel.md
+    - name: 在 Word 中建立報表
+      href: how-to-manually-create-a-load-test-performance-report-using-microsoft-word.md
+    - name: 結果存放庫
+      href: manage-load-test-results-in-the-load-test-results-repository.md
+      items:
+      - name: 選取存放庫
+        href: how-to-select-a-load-test-results-repository.md
+      - name: 匯入結果
+        href: how-to-import-load-test-results-into-a-repository.md
+      - name: 匯出結果
+        href: how-to-export-load-test-results-from-a-repository.md
+      - name: 刪除結果
+        href: how-to-delete-load-test-results-from-a-repository.md
+    - name: 建立結果檢視器的增益集
+      href: how-to-create-an-add-in-for-the-web-performance-test-results-viewer.md
 - name: UI 測試自動化
   href: use-ui-automation-to-test-your-code.md
   items:
-    - name: 逐步解說：建立、編輯及維護程式碼 UI 測試
-      href: walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md
-    - name: 使用程式碼 UI 測試來測試 UWP 應用程式
-      href: test-uwp-app-with-coded-ui-test.md
-    - name: 為 UWP 控制項設定獨特的自動化屬性
-      href: set-a-unique-automation-property-for-windows-store-controls-for-testing.md
-    - name: 在自動程式化 UI 測試中使用 HTML5 控制項
-      href: using-html5-controls-in-coded-ui-tests.md
-    - name: 使用自動程式化 UI 測試來測試 SharePoint 2010 應用程式
-      href: testing-sharepoint-2010-applications-with-coded-ui-tests.md
-    - name: 建立資料驅動式自動程式化 UI 測試
-      href: creating-a-data-driven-coded-ui-test.md
-    - name: 在播放期間等候特定事件
-      href: making-coded-ui-tests-wait-for-specific-events-during-playback.md
-    - name: 使用不同的網頁瀏覽器搭配自動程式化 UI 測試
-      href: using-different-web-browsers-with-coded-ui-tests.md
-    - name: 使用自動程式化 UI 測試編輯器來編輯自動程式化 UI 測試
-      href: editing-coded-ui-tests-using-the-coded-ui-test-editor.md
-    - name: 使用自動程式化 UI 測試記錄來分析自動程式化 UI 測試
-      href: analyzing-coded-ui-tests-using-coded-ui-test-logs.md
-    - name: 自動程式化 UI 測試的結構
-      href: anatomy-of-a-coded-ui-test.md
-    - name: 自動程式化 UI 測試的最佳作法
-      href: best-practices-for-coded-ui-tests.md
-    - name: 測試含有多個 UI 對應的大型應用程式
-      href: testing-a-large-application-with-multiple-ui-maps.md
-    - name: 啟用控制項的自動程式化 UI 測試功能
-      href: enable-coded-ui-testing-of-your-controls.md
-    - name: 支援的組態與平台
-      href: supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md
-    - name: 擴充程式碼 UI 測試架構
-      href: extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md
+  - name: 逐步解說：建立、編輯及維護程式碼 UI 測試
+    href: walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md
+  - name: 使用程式碼 UI 測試來測試 UWP 應用程式
+    href: test-uwp-app-with-coded-ui-test.md
+  - name: 為 UWP 控制項設定獨特的自動化屬性
+    href: set-a-unique-automation-property-for-windows-store-controls-for-testing.md
+  - name: 在自動程式化 UI 測試中使用 HTML5 控制項
+    href: using-html5-controls-in-coded-ui-tests.md
+  - name: 使用自動程式化 UI 測試來測試 SharePoint 2010 應用程式
+    href: testing-sharepoint-2010-applications-with-coded-ui-tests.md
+  - name: 建立資料驅動式自動程式化 UI 測試
+    href: creating-a-data-driven-coded-ui-test.md
+  - name: 在播放期間等候特定事件
+    href: making-coded-ui-tests-wait-for-specific-events-during-playback.md
+  - name: 使用不同的網頁瀏覽器搭配自動程式化 UI 測試
+    href: using-different-web-browsers-with-coded-ui-tests.md
+  - name: 使用自動程式化 UI 測試編輯器來編輯自動程式化 UI 測試
+    href: editing-coded-ui-tests-using-the-coded-ui-test-editor.md
+  - name: 使用自動程式化 UI 測試記錄來分析自動程式化 UI 測試
+    href: analyzing-coded-ui-tests-using-coded-ui-test-logs.md
+  - name: 自動程式化 UI 測試的結構
+    href: anatomy-of-a-coded-ui-test.md
+  - name: 自動程式化 UI 測試的最佳作法
+    href: best-practices-for-coded-ui-tests.md
+  - name: 測試含有多個 UI 對應的大型應用程式
+    href: testing-a-large-application-with-multiple-ui-maps.md
+  - name: 啟用控制項的自動程式化 UI 測試功能
+    href: enable-coded-ui-testing-of-your-controls.md
+  - name: 支援的組態與平台
+    href: supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md
+  - name: 擴充程式碼 UI 測試架構
+    href: extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md
 - name: 測試實驗室管理
   href: lab-management/using-a-lab-environment-for-your-application-lifecycle.md
   items:
-    - name: 使用建置或發行管理進行自動化的測試
-      href: lab-management/use-build-or-rm-instead-of-lab-management.md
-    - name: 安裝測試代理程式和測試控制器
-      href: lab-management/install-configure-test-agents.md
+  - name: 使用建置或發行管理進行自動化的測試
+    href: lab-management/use-build-or-rm-instead-of-lab-management.md
+  - name: 安裝測試代理程式和測試控制器
+    href: lab-management/install-configure-test-agents.md
+ms.openlocfilehash: 3035030458d8d0a3914952d606ca775ad33a62fc
+ms.sourcegitcommit: a811f6a194ccd40d844e74e618d847df87c85c16
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "52621509"
