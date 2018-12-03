@@ -1,7 +1,7 @@
 ---
 title: 使用者程式碼，Just My code 偵錯 |Microsoft Docs
 ms.custom: ''
-ms.date: 05/18/2018
+ms.date: 10/22/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 0f0df097-bbaf-46ad-9ad1-ef5f40435079
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 854ce90f18b5df7d3e25b4b0949d76202e4f4a04
-ms.sourcegitcommit: 12d6398c02e818de4fbcb4371bae9e5db6cf9509
-ms.translationtype: MT
+ms.openlocfilehash: 01e36c528b71bb49b29265890ca6c48863f01be9
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50050335"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52389023"
 ---
 # <a name="debug-only-user-code-with-just-my-code"></a>只有使用 Just My Code 的使用者程式碼進行偵錯 
 
@@ -56,7 +56,7 @@ Just My Code.NET Framework、 c + + 和 JavaScript 專案中的運作方式。
 
 按兩下在展開的外部程式碼行**呼叫堆疊**視窗會反白顯示呼叫端的程式碼行，以在原始程式碼中的綠色。 Dll 或其他模組找不到或載入，符號或原始程式找不到可能會開啟頁面。
 
-##  <a name="BKMK__NET_Framework_Just_My_Code"></a>.NET framework Just My Code 
+##  <a name="BKMK__NET_Framework_Just_My_Code"></a>.NET Framework Just My Code 
 
 在.NET Framework 專案中，Just My Code 會使用符號 (*.pdb*) 檔案和程式最佳化分類使用者和非使用者程式碼。 .NET Framework 偵錯工具會考慮最佳化二進位檔和非粗體 *.pdb*非使用者程式碼的檔案。
   
@@ -81,7 +81,7 @@ Just My Code.NET Framework、 c + + 和 JavaScript 專案中的運作方式。
   
 如果啟用 例外狀況的第一個可能的例外狀況，則呼叫使用者程式碼行是以在原始程式碼中的綠色反白顯示。 **呼叫堆疊** 視窗會顯示標示為標註的框架 **[外部程式碼]**。  
 
-##  <a name="BKMK_C___Just_My_Code"></a> C + + Just My Code  
+##  <a name="BKMK_C___Just_My_Code"></a> C++ Just My Code  
   
 在 c + +，啟用 Just My Code 是使用相同[/JMC （只 my code 偵錯）](/cpp/build/reference/jmc)編譯器參數。
 
@@ -196,7 +196,7 @@ A *.natjmc*檔案是 XML 檔案使用此語法：
   
 ##  <a name="BKMK_JavaScript_Just_My_Code"></a> JavaScript Just My Code  
 
-<a name="BKMK_JS_User_and_non_user_code"></a> JavaScript Just My Code 會控制逐步執行和呼叫堆疊顯示分類中其中一個這些分類的程式碼：  
+<a name="BKMK_JS_User_and_non_user_code"></a> JavaScript Just My Code 將程式碼分類為下列類別其中一類，來控制逐步執行和呼叫堆疊顯示：  
 
 |||  
 |-|-|  
@@ -218,7 +218,7 @@ JavaScript 偵錯工具會將分類為使用者或依此順序的非使用者程
   
 每個分類步驟都會覆寫先前的步驟。 
 
-所有其他程式碼分為**MyCode**。  
+所有其他程式碼會分類為 **MyCode**。  
 
 您可以修改預設分類，並為使用者或非使用者程式碼，分類特定檔案和 Url，加上 *.json*檔案名*mycode.json*到 JavaScript 專案的根資料夾。 請參閱[自訂 JavaScript Just My Code](#BKMK_JS_Customize_Just_My_Code)。 
 
@@ -226,7 +226,7 @@ JavaScript 偵錯工具會將分類為使用者或依此順序的非使用者程
 
 - 如果函式為非使用者程式碼中，**偵錯** > **逐步**(或**F11**) 的行為與相同**偵錯** > **不進入函式**(或**F10**)。  
 - 如果在步驟一開始會處於非使用者 (**LibraryCode**或是**UnrelatedCode**) 程式碼，逐步執行暫時的行為就如同 Just My Code 未啟用。 當您倒退回使用者程式碼，Just My Code 逐步執行隨即重新啟用。  
-- 當使用者程式碼步驟造成離開目前的執行內容時，偵錯工具停止於下一步 執行的使用者程式碼。 例如，如果在執行回呼**LibraryCode**程式碼，偵錯工具會繼續執行直到執行下的一行使用者程式碼。
+- 當使用者程式碼步驟造成離開目前的執行內容時，偵錯工具停止於下一步 執行的使用者程式碼。 例如，如果回呼於 **LibraryCode** 程式碼中執行，則偵錯工具會繼續執行，直到下一行使用者程式碼執行為止。
 - **跳離函式**(或**Shift**+**F11**) 會停止在下一行使用者程式碼。 
 
 如果沒有更多的使用者程式碼，繼續進行偵錯直到結束、 叫用另一個中斷點，或擲回錯誤。 
@@ -242,7 +242,7 @@ JavaScript 偵錯工具會將分類為使用者或依此順序的非使用者程
   
 如果啟用 first-chance 例外狀況的例外狀況，並在發生例外狀況**LibraryCode**或是**UnrelatedCode**:  
   
--   如果處理的例外狀況，偵錯工具不會中斷。  
+-   如果已經處理此例外狀況，則偵錯工具不會中斷。  
 -   如果例外狀況未經處理，則偵錯工具會中斷。  
   
 ###  <a name="BKMK_JS_Customize_Just_My_Code"></a> 自訂 JavaScript Just My Code  
@@ -277,30 +277,30 @@ JavaScript 偵錯工具會將分類為使用者或依此順序的非使用者程
   
 ```  
   
- **Eval、 Function 和 ScriptBlock**  
+ **Eval、Function 和 ScriptBlock**  
   
- **Eval**，**函式**，並**ScriptBlock**機碼值組決定如何以動態方式產生的程式碼之分類：  
+ **Eval**、**Function** 和 **ScriptBlock** 索引鍵值組會判斷要如何分類動態產生的程式碼：  
   
 |||  
 |-|-|  
-|**評估版**|藉由傳遞字串給主機所提供的 `eval` 函式來執行的指令碼。 根據預設，Eval 指令碼之分類為**MyCode**。|  
-|**Function**|藉由傳遞字串給 `Function` 建構函式來執行的指令碼。 根據預設，函式的指令碼之分類為**LibraryCode**。|  
-|**指令碼區塊**|由傳遞字串給 `setTimeout`、`setImmediate` 或 `setInterval` 函式所執行的指令碼。 根據預設，ScriptBlock 指令碼之分類為**UnrelatedCode**。|  
+|**Eval**|藉由傳遞字串給主機所提供的 `eval` 函式來執行的指令碼。 根據預設，Eval 指令碼會分類為 **MyCode**。|  
+|**Function**|藉由傳遞字串給 `Function` 建構函式來執行的指令碼。 根據預設，Function 指令碼會分類為 **LibraryCode**。|  
+|**ScriptBlock**|由傳遞字串給 `setTimeout`、`setImmediate` 或 `setInterval` 函式所執行的指令碼。 根據預設，ScriptBlock 指令碼會分類為 **UnrelatedCode**。|  
   
  您可以變更此值為這些關鍵字之一：  
   
--   `MyCode`  將做為指令碼分類**MyCode**。  
--   `Library`  將做為指令碼分類**LibraryCode**。  
--   `Unrelated`  將做為指令碼分類**UnrelatedCode**。  
+-   `MyCode` 將此指令碼分類為 **MyCode**。  
+-   `Library` 將此指令碼分類為 **LibraryCode**。  
+-   `Unrelated` 將此指令碼分類為 **UnrelatedCode**。  
   
-  **MyCode、 Libraries 和不相關**  
+  **MyCode、Libraries 和 Unrelated**  
   
- **MyCode**，**程式庫**，並**Unrelated**機碼值組指定的 Url 或您想要包含在某個分類中的檔案：  
+ **MyCode**、**Libraries** 和 **Unrelated** 索引鍵值組會指定您在分類中要包含的 URL 或檔案：  
   
 |||  
 |-|-|  
-|**MyCode**|分類為的檔案或 Url 的陣列**MyCode**。|  
-|**程式庫**|分類為的檔案或 Url 的陣列**LibraryCode**。|  
-|**不相關的**|分類為的檔案或 Url 的陣列**UnrelatedCode**。|  
+|**MyCode**|分類為 **MyCode** 的 URL 陣列或檔案陣列。|  
+|**Libraries**|分類為 **LibraryCode** 的 URL 陣列或檔案陣列。|  
+|**Unrelated**|分類為 **UnrelatedCode** 的 URL 陣列或檔案陣列。|  
   
  URL 或檔案字串可以有一或多個`*`比對零或多個字元的字元。 `*` 規則運算式與相同`.*`。

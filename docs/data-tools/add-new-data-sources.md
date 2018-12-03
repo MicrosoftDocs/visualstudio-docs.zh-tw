@@ -1,6 +1,6 @@
 ---
-title: 加入新的資料來源
-ms.date: 11/04/2016
+title: 新增新資料來源
+ms.date: 11/21/2018
 ms.topic: conceptual
 f1_keywords:
 - vs.datasource.datasourcefieldspicker
@@ -15,16 +15,16 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 1bbe808f1c43e0f4083f5ed1d04db347560a2630
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
-ms.translationtype: MT
+ms.openlocfilehash: fe32424632d06ed637b41dcd3d4b614afde369bd
+ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35666627"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52304606"
 ---
-# <a name="add-new-data-sources"></a>加入新的資料來源
+# <a name="add-new-data-sources"></a>新增新資料來源
 
-.NET data tools 在 Visual Studio 中的內容中的字詞*資料來源*是指連接到資料存放區，並將資料公開給.NET 應用程式的.NET 物件。 Visual Studio 設計工具可以取用資料來源產生拖曳和卸除資料庫物件時，將資料繫結至表單的未定案程式碼的輸出**Zdroje dat**視窗。 這種資料來源可以是：
+.NET data tools 在 Visual Studio 中的內容中的字詞*資料來源*是指連接到資料存放區，並將資料提供給.NET 應用程式的.NET 物件。 Visual Studio 設計工具可以取用資料來源產生拖曳和卸除資料庫物件時，將資料繫結至表單的未定案程式碼的輸出**Zdroje dat**視窗。 這種資料來源可以是：
 
 - 與某些類型的資料庫相關聯的 Entity Framework 模型中的類別。
 
@@ -43,7 +43,16 @@ ms.locfileid: "35666627"
 
 ![資料來源組態精靈](../data-tools/media/data-source-configuration-wizard.png)
 
-建立資料來源之後，它會出現在**資料來源**工具視窗 (**Shift**+**Alt**+**D**或是**檢視** > **其他 Windows** > **資料來源**)。 您可以將從資料來源**Zdroje dat**視窗拖曳到表單的設計介面或控制項。 這會導致未定案程式碼產生，顯示從資料存放區的資料。 下圖顯示資料集拖曳至 Windows form 已卸除。 如果您選取**F5**應用程式，在基礎資料庫中的資料會出現在表單的控制項。
+## <a name="data-sources-window"></a>資料來源視窗
+
+建立資料來源之後，它會出現在**Zdroje dat**工具視窗。
+
+> [!TIP]
+> 若要開啟 **資料來源**視窗中，請確定您的專案已開啟，然後再按下**Shift**+**Alt**+**D**，或選擇**檢視** > **其他 Windows** > **Zdroje dat**。
+
+您可以將從資料來源**Zdroje dat**視窗拖曳到表單的設計介面或控制項。 這會導致未定案程式碼產生，顯示從資料存放區的資料。
+
+下圖顯示資料集拖曳至 Windows form 已卸除。 如果您選取**F5**應用程式，在基礎資料庫中的資料會出現在表單的控制項。
 
 ![資料來源拖放作業](../data-tools/media/raddata-data-source-drag-operation.png)
 
@@ -86,7 +95,7 @@ ms.locfileid: "35666627"
 - Web 服務
 
     > [!NOTE]
-    > 在出現的項目**Zdroje dat**視窗均依存於服務所傳回的資料。 某些服務可能並未提供足夠的資訊，如**資料來源組態精靈**來建立可繫結的物件。 例如，如果服務傳回不具類型的資料集，顯示任何項目中**Zdroje dat**視窗中，當您完成精靈。 這是因為不具類型資料集不提供結構描述，因此精靈沒有足夠的資訊來建立資料來源。
+    > 在出現的項目**Zdroje dat**視窗均依存於服務所傳回的資料。 部分服務所提供的資訊可能不足，無法供 [資料來源組態精靈] 建立可繫結的物件。 例如，如果服務傳回不具類型的資料集，顯示任何項目中**Zdroje dat**視窗中，當您完成精靈。 這是因為不具類型資料集不提供結構描述，因此精靈沒有足夠的資訊來建立資料來源。
 
 ## <a name="data-source-for-an-object"></a>物件的資料來源
 
