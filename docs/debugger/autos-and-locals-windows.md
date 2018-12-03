@@ -1,7 +1,7 @@
 ---
 title: 檢查 [自動變數] 和 [區域變數] 視窗中的變數 |Microsoft Docs
 ms.custom: H1Hack27Feb2017
-ms.date: 04/17/2018
+ms.date: 10/18/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b196d993e7091fd9d4b09fe3c228346e7421911e
-ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
-ms.translationtype: MT
+ms.openlocfilehash: 37843e6f84bf16efee4d149ed08a7ecb525d7574
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52257208"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388513"
 ---
 # <a name="inspect-variables-in-the-autos-and-locals-windows"></a>檢查 [自動變數] 和 [區域變數] 視窗中的變數
 
@@ -54,7 +54,7 @@ ms.locfileid: "52257208"
 
 您可以輸入值的運算式，例如 `a + b`。 偵錯工具接受大部分的有效語言運算式。
 
-在原生 C++ 程式碼中，您可能必須限定變數名稱的內容。 如需詳細資訊，請參閱 <<c0> [ 內容運算子 （c + +）](../debugger/context-operator-cpp.md)。
+在原生 C++ 程式碼中，您可能必須限定變數名稱的內容。 如需詳細資訊，請參閱[內容運算子 (C++)](../debugger/context-operator-cpp.md)。
 
 >[!CAUTION]
 >請確定您瞭解後果，再變更值和運算式。 一些可能的問題是：
@@ -77,7 +77,7 @@ ms.locfileid: "52257208"
 
  不同的程式碼的語言會顯示在不同的變數**自動變數**視窗。
 
- - 在C#和 Visual Basic**自動變數** 視窗會顯示目前或先前一行使用的任何變數。 例如，在C#或 Visual Basic 程式碼中，宣告下列四個變數：
+ - 在 C# 和 Visual Basic 中，[自動變數] 視窗會顯示目前或前一行使用的任何變數。 例如，在C#或 Visual Basic 程式碼中，宣告下列四個變數：
 
    ```csharp
        public static void Main()
@@ -152,6 +152,6 @@ private static int subtractVars(int i, int j)
   ![自動變數傳回值C# ](../debugger/media/autosreturnvaluecsharp2.png "自動變數傳回值C#")  
   
 ## <a name="see-also"></a>另請參閱  
- [什麼偵錯？](../debugger/what-is-debugging.md)  
+ [什麼是偵錯？](../debugger/what-is-debugging.md)  
  [撰寫更好C#使用 Visual Studio 程式碼](../debugger/write-better-code-with-visual-studio.md)  
  [第一次查看偵錯](../debugger/debugger-feature-tour.md)[偵錯工具視窗](../debugger/debugger-windows.md)

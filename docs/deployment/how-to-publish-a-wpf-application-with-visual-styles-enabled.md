@@ -10,14 +10,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: af0a07abe1cbb380acde91067e3e6252d0cd8596
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 4dc45c624d44ed550fb491fc57638ba033090346
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49830050"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388104"
 ---
-# <a name="how-to-publish-a-wpf-application-with-visual-styles-enabled"></a>如何： 發行已啟用視覺化樣式的 WPF 應用程式
+# <a name="how-to-publish-a-wpf-application-with-visual-styles-enabled"></a>如何：發佈已啟用視覺樣式的 WPF 應用程式
 視覺化樣式會啟用常見的控制項，以根據使用者選擇的佈景主題變更的外觀。 根據預設，已啟用視覺化樣式未針對 Windows Presentation Foundation (WPF) 應用程式，因此您必須手動啟用它們。 不過，啟用視覺化樣式的 WPF 應用程式，然後發佈方案會導致錯誤。 本主題說明如何解決此錯誤，發佈已啟用視覺化樣式的 WPF 應用程式的程序。 如需視覺化樣式的詳細資訊，請參閱[視覺化樣式概觀](/windows/desktop/Controls/visual-styles-overview)。 如需詳細的錯誤訊息的詳細資訊，請參閱[疑難排解 ClickOnce 部署的特定錯誤](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md)。  
   
  若要解決此錯誤，並發行方案，您必須執行下列工作：  
@@ -39,7 +39,11 @@ ms.locfileid: "49830050"
      根據預設，不會啟用視覺化樣式。  
   
     ```xml  
-    <dependency>    <dependentAssembly>      <assemblyIdentity          type="win32"          name="Microsoft.Windows.Common-Controls"          version="6.0.0.0"          processorArchitecture="*"          publicKeyToken="6595b64144ccf1df"          language="*"        />    </dependentAssembly>  </dependency>  
+    <dependency>
+        <dependentAssembly>
+            <assemblyIdentity type="win32" name="Microsoft.Windows.Common-Controls" version="6.0.0.0" processorArchitecture="*" publicKeyToken="6595b64144ccf1df" language="*" />
+        </dependentAssembly>
+    </dependency>
     ```  
   
      下列程序示範如何開啟與您的專案相關聯的資訊清單檔案。  
@@ -54,7 +58,7 @@ ms.locfileid: "49830050"
   
          在中開啟 app.manifest 檔案**程式碼編輯器**。  
   
-    ###### <a name="to-open-the-manifest-file-in-a-c-project"></a>若要開啟 C# 專案中的 資訊清單檔案  
+    ###### <a name="to-open-the-manifest-file-in-a-c-project"></a>若要開啟中的資訊清單檔案C#專案  
   
     1.  在功能表列上選擇 **專案**， *ProjectName* **屬性**，其中*ProjectName*是 WPF 專案的名稱。  
   
@@ -65,7 +69,7 @@ ms.locfileid: "49830050"
         > [!NOTE]
         >  如果**使用預設設定嵌入資訊清單**或是**Vytvořit aplikaci bez 資訊清單**會出現在資訊清單的欄位中，不會啟用視覺化樣式。 如果資訊清單檔案的名稱會出現在資訊清單的欄位，請繼續此程序的下一個步驟。  
   
-    3.  在 **方案總管**，選擇**顯示所有檔案**。  
+    3.  在 [方案總管] 中選擇 [顯示所有檔案]。  
   
          此按鈕會顯示所有的專案項目，包括已排除以及一些通常會隱藏。 資訊清單檔會顯示為專案項目。  
   
@@ -78,7 +82,18 @@ ms.locfileid: "49830050"
      這段 XML 會說明包含支援視覺化樣式的控制項的組件。  
   
     ```xml  
-    <?xml version="1.0" encoding="utf-8"?><asmv1:assembly manifestVersion="1.0"                xmlns="urn:schemas-microsoft-com:asm.v1"                xmlns:asmv1="urn:schemas-microsoft-com:asm.v1"                xmlns:asmv2="urn:schemas-microsoft-com:asm.v2"                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">  <dependency>    <dependentAssembly>      <assemblyIdentity        type="win32"        name="Microsoft.Windows.Common-Controls"        version="6.0.0.0"        processorArchitecture="*"        publicKeyToken="6595b64144ccf1df"        language="*"        />    </dependentAssembly>  </dependency></asmv1:assembly>  
+    <?xml version="1.0" encoding="utf-8"?>
+    <asmv1:assembly manifestVersion="1.0" 
+        xmlns="urn:schemas-microsoft-com:asm.v1" 
+        xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" 
+        xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" 
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <dependency>
+            <dependentAssembly>
+                <assemblyIdentity type="win32" name="Microsoft.Windows.Common-Controls" version="6.0.0.0" processorArchitecture="*" publicKeyToken="6595b64144ccf1df" language="*" />
+            </dependentAssembly>
+        </dependency>
+    </asmv1:assembly>
     ```  
   
 2.  在記事本中，按一下**檔案**，然後按一下**另存新檔**。  
@@ -163,7 +178,7 @@ ms.locfileid: "49830050"
   
 ## <a name="see-also"></a>另請參閱
 
--[疑難排解 ClickOnce 部署中的特定錯誤](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md)
+-[針對 ClickOnce 部署的特定錯誤進行疑難排解](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md)
 - [視覺化樣式的概觀](/windows/desktop/Controls/visual-styles-overview)
 - [啟用視覺化樣式](/windows/desktop/Controls/cookbook-overview)
 - [命令提示字元](/dotnet/framework/tools/developer-command-prompt-for-vs)

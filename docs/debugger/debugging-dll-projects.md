@@ -20,14 +20,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 96dc4277bfdc783d969a2e98fb93fcc5975e9ad7
-ms.sourcegitcommit: 6a955a2d179cd0e137942389f940d9fcbbe125de
-ms.translationtype: MT
+ms.openlocfilehash: c00740b31e5b9d7cc5678bfc248e673a57e59ccf
+ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51607623"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52305308"
 ---
-# <a name="debug-dlls-in-visual-studio"></a>偵錯在 Visual Studio 中的 Dll
+# <a name="debug-dlls-in-visual-studio-c-c-visual-basic-f"></a>偵錯在 Visual Studio 中的 Dll (C#，c + +、 Visual Basic 中， F#)
 
 DLL （動態連結程式庫） 是包含程式碼和資料可供多個應用程式的程式庫。 您可以使用 Visual Studio 來建立、 建置、 設定和偵錯 Dll。 
 
@@ -35,11 +35,11 @@ DLL （動態連結程式庫） 是包含程式碼和資料可供多個應用程
 
 下列 Visual Studio 專案範本可以建立 Dll:
 
-- C#或 Visual Basic 類別庫 
+- C#Visual Basic 中，或F#類別庫 
 - C#Visual Basic Windows Form 控制項 (WCF) 程式庫或 
 - C + + 動態連結程式庫 (DLL)
 
-如需詳細資訊，請參閱 < [MFC 偵錯技術](../debugger/mfc-debugging-techniques.md)。
+如需詳細資訊，請參閱 [MFC 偵錯技術](../debugger/mfc-debugging-techniques.md)。
 
 偵錯 WCF 程式庫是類似於偵錯類別庫。 如需詳細資訊，請參閱 < [Windows Forms 控制項](/dotnet/framework/winforms/controls/index)。  
 
@@ -50,9 +50,9 @@ DLL （動態連結程式庫） 是包含程式碼和資料可供多個應用程
 當您使用 Visual Studio 專案範本建立應用程式，[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]偵錯和發行組建組態，便會自動建立必要的設定。 如有必要，您可以變更這些設定。 如需詳細資訊，請參閱下列文章：
 
 - [C++ 偵錯設定的專案設定](../debugger/project-settings-for-a-cpp-debug-configuration.md)
-- [專案設定為C#偵錯組態](../debugger/project-settings-for-csharp-debug-configurations.md)
+- [C# 偵錯設定的專案設定](../debugger/project-settings-for-csharp-debug-configurations.md)
 - [Visual Basic 偵錯設定的專案設定](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)
-- [如何： 設定偵錯和發行組態](../debugger/how-to-set-debug-and-release-configurations.md)  
+- [如何：設定偵錯和發行組態](../debugger/how-to-set-debug-and-release-configurations.md)  
   
 ### <a name="set-c-debuggableattribute"></a>設定 c + + DebuggableAttribute
 
@@ -110,28 +110,27 @@ DLL （動態連結程式庫） 是包含程式碼和資料可供多個應用程
   
 - 將應用程式從[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]中相同或不同的解決方案，從 DLL 專案。  
 - 已部署的現有應用程式，並在測試或實際執行電腦上的執行。  
-- 位於 web 上，並透過 URL 存取。  
+- 位於 Web 上並經由 URL 存取。  
 - 嵌入該 DLL 的網頁與 web 應用程式。  
   
-
 若要偵錯 DLL，以從呼叫端的應用程式，您可以：  
   
 - 開啟的專案呼叫的應用程式，並開始偵錯選取**偵錯** > **開始偵錯**或按下**F5**。  
 
   或  
 
-- 附加至已部署和執行測試或實際執行電腦上的應用程式。 在網站或 web 應用程式中，請使用這個方法的 Dll。 如需詳細資訊，請參閱 <<c0> [ 如何： 附加至正在執行的處理序](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)。  
+- 附加至已部署和執行測試或實際執行電腦上的應用程式。 在網站或 web 應用程式中，請使用這個方法的 Dll。 如需詳細資訊，請參閱[如何：附加至執行中處理序](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)。  
   
 在開始偵錯呼叫的應用程式之前，請在 DLL 中設定中斷點。 請參閱[使用中斷點](../debugger/using-breakpoints.md)。 當 DLL 叫用中斷點時，您可以逐步執行程式碼中，觀察每一行程式碼的動作。 如需詳細資訊，請參閱 <<c0> [ 偵錯工具中巡覽程式碼](../debugger/navigating-through-code-with-the-debugger.md)。
   
-偵錯期間，您可以使用**模組**視窗以確認 Dll 和 *.exe*檔案在應用程式載入。 若要開啟 **模組**視窗中的，偵錯時，選取**偵錯** > **Windows** > **模組**。 如需詳細資訊，請參閱 <<c0> [ 如何： 使用模組視窗](../debugger/how-to-use-the-modules-window.md)。 
+偵錯期間，您可以使用**模組**視窗以確認 Dll 和 *.exe*檔案在應用程式載入。 若要開啟 **模組**視窗中的，偵錯時，選取**偵錯** > **Windows** > **模組**。 如需詳細資訊，請參閱[如何：使用模組視窗](../debugger/how-to-use-the-modules-window.md)。 
 
 ###  <a name="vxtskdebuggingdllprojectstheimmediatewindow"></a> 使用即時運算視窗  
 
 您可以使用**Immediate**視窗，以在設計階段評估的 DLL 函式或方法。 **Immediate**視窗扮演的角色的呼叫端的應用程式。 
 
 >[!NOTE]
->您可以使用**Immediate**在設計階段與大部分的專案類型的視窗。 它是目前不支援.NET Core、 SQL 或 web 專案。
+>您可以使用**Immediate**在設計階段與大部分的專案類型的視窗。 它不支援 SQL、 web 專案或指令碼。
 
 例如，若要測試的方法命名為`Test`類別中`Class1`:
 
@@ -153,21 +152,21 @@ DLL （動態連結程式庫） 是包含程式碼和資料可供多個應用程
    
    中的結果會列印**Immediate**視窗。  
    
-1. 您可以繼續偵錯`Test`中放置中斷點，並再一次評估該函式。  
+1. 您可以將中斷點放置在 `Test` 內繼續對其進行偵錯，然後再次評估該函式。  
    
-   會叫用中斷點，而且您可以透過`Test`。 執行作業已經離開之後`Test`，偵錯工具會返回設計模式。
+   會叫用中斷點，而且您可以透過`Test`。 當執行離開 `Test` 之後，偵錯工具會返回設計模式。
 
 ##  <a name="vxtskdebuggingdllprojectsmixedmodedebugging"></a> 混合模式偵錯  
 
-您可以在 managed 或原生程式碼 dll 撰寫呼叫端的應用程式。 如果原生應用程式呼叫的 managed 的 DLL，而且您想要偵錯，您可以啟用這兩個 managed 和原生偵錯工具在專案屬性中。 確切的程序取決於您是否想要開始偵錯 DLL 專案中或呼叫的應用程式專案。 如需詳細資訊，請參閱 <<c0> [ 如何： 在混合模式偵錯](../debugger/how-to-debug-in-mixed-mode.md)。 
+您可以在 managed 或原生程式碼 dll 撰寫呼叫端的應用程式。 如果原生應用程式呼叫的 managed 的 DLL，而且您想要偵錯，您可以啟用這兩個 managed 和原生偵錯工具在專案屬性中。 確切的程序取決於您是否想要開始偵錯 DLL 專案中或呼叫的應用程式專案。 如需詳細資訊，請參閱[如何：在混合模式中偵錯](../debugger/how-to-debug-in-mixed-mode.md)。 
 
 您也可以偵錯原生 DLL 從受控呼叫的專案。 如需詳細資訊，請參閱 <<c0> [ 如何偵錯 managed 和原生程式碼](how-to-debug-managed-and-native-code.md)。 
 
 ## <a name="see-also"></a>另請參閱  
- [偵錯 managed 程式碼](../debugger/debugging-managed-code.md)   
- [Visual c + + 專案類型](../debugger/debugging-preparation-visual-cpp-project-types.md)   
- [C#F#，和 Visual Basic 專案類型](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)   
- [C + + 偵錯組態的專案設定](../debugger/project-settings-for-a-cpp-debug-configuration.md)   
- [專案設定為C#偵錯組態](../debugger/project-settings-for-csharp-debug-configurations.md)   
+ [對受控碼進行偵錯](../debugger/debugging-managed-code.md)   
+ [Visual C++ 專案類型](../debugger/debugging-preparation-visual-cpp-project-types.md)   
+ [C#、F# 和 Visual Basic 專案類型](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)   
+ [C++ 偵錯組態的專案設定](../debugger/project-settings-for-a-cpp-debug-configuration.md)   
+ [C# 偵錯組態的專案設定](../debugger/project-settings-for-csharp-debug-configurations.md)   
  [Visual Basic 偵錯組態的專案設定](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)   
  [偵錯工具安全性](../debugger/debugger-security.md)

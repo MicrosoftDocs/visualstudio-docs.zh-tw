@@ -19,12 +19,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 97d18ef8323eeb0781eb103eb8baa0c3fab0d63c
-ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
-ms.translationtype: MT
+ms.openlocfilehash: f9b4fad02b6b0d8324e13d4465f4602c16ce85ba
+ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50750824"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52305048"
 ---
 # <a name="walkthrough-save-data-in-a-transaction"></a>逐步解說：儲存異動中的資料
 
@@ -54,21 +54,21 @@ ms.locfileid: "50750824"
 
 1. 在 Visual Studio 中，在**檔案**功能表上，選取**新增** > **專案**。
 
-2. 展開  **Visual C#** 或是**Visual Basic**的左側窗格中，然後選取**Windows Desktop**。
+2. 展開  **Visual C#** 或是**Visual Basic**左窗格中，然後選取**Windows Desktop**。
 
 3. 在中間窗格中，選取**Windows Forms 應用程式**專案類型。
 
 4. 將專案命名為**SavingDataInATransactionWalkthrough**，然後選擇**確定**。
 
-     **SavingDataInATransactionWalkthrough**建立專案並將其加入至**方案總管 中**。
+     隨即建立 **SavingDataInATransactionWalkthrough** 專案，並將其新增至 [方案總管]。
 
 ## <a name="create-a-database-data-source"></a>建立資料庫資料來源
 
 此步驟中使用**資料來源組態精靈**來建立資料來源，根據`Customers`和`Orders`Northwind 範例資料庫中的資料表。
 
-1.  在 **資料**功能表上，選取**顯示資料來源**。
+1.  若要開啟 [**資料來源**] 視窗，請在**資料**功能表上，選取**顯示資料來源**。
 
-2.  在 **資料來源**視窗中，選取**加入新的資料來源**來啟動**資料來源組態精靈**。
+2.  在 [資料來源] 視窗中，選取 [新增新資料來源]，以啟動 [資料來源組態精靈]。
 
 3.  在 [**選擇資料來源類型**畫面上，選取**資料庫**，然後選取**下一步]**。
 
@@ -78,7 +78,7 @@ ms.locfileid: "50750824"
 
          -或-
 
-    -   選取**新的連線**來啟動**加入/修改連接**對話方塊並且建立與 Northwind 資料庫的連接。
+    -   選取 [新增連線] 以啟動 [新增/修改連線] 對話方塊，並建立 Northwind 資料庫的連線。
 
 5.  如果您的資料庫需要密碼，請選取選項來加入敏感性資料，然後選取**下一步**。
 
@@ -88,15 +88,15 @@ ms.locfileid: "50750824"
 
 8.  選取 `Customers`並`Orders`資料表，然後選取**完成**。
 
-     **NorthwindDataSet**新增至您的專案和`Customers`並`Orders`資料表會出現在**Zdroje dat**視窗。
+     **NorthwindDataSet** 會新增至您的專案中，且 `Customers` 和 `Orders` 資料表會出現在 [資料來源] 視窗中。
 
 ## <a name="add-controls-to-the-form"></a>將控制項加入表單
 
-您可以建立資料繫結控制項項目從**Zdroje dat**視窗拖曳至表單。
+您可以從 [資料來源] 視窗將項目拖曳至表單，以建立資料繫結控制項。
 
 1. 在 [**資料來源**] 視窗中，展開**客戶**節點。
 
-2. 主**客戶**從節點**Zdroje dat**  視窗拖曳到**Form1**。
+2. 從 [資料來源] 視窗，將 [客戶] 主節點拖曳至 **Form1**。
 
    <xref:System.Windows.Forms.DataGridView> 控制項以及用於巡覽記錄的工具區域 (<xref:System.Windows.Forms.BindingNavigator>) 會出現在表單上。 A [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md)， `CustomersTableAdapter`， <xref:System.Windows.Forms.BindingSource>，和<xref:System.Windows.Forms.BindingNavigator>會出現在元件匣。
 
@@ -114,7 +114,7 @@ ms.locfileid: "50750824"
 
 2.  選取 [ **System.Transactions** (在 **.NET** ] 索引標籤)，然後選取**確定**。
 
-     參考**System.Transactions**加入至專案。
+     隨即會將 **System.Transactions** 的參考新增至專案。
 
 ## <a name="modify-the-code-in-the-bindingnavigators-saveitem-button"></a>修改 BindingNavigator 的 SaveItem 按鈕中的程式碼
 
@@ -141,28 +141,28 @@ ms.locfileid: "50750824"
 
 ### <a name="to-delete-existing-orders"></a>刪除現有訂單
 
--   新增下列`DeleteOrders`方法，以**Form1**:
+-   將下列 `DeleteOrders` 方法新增至 **Form1**：
 
      [!code-vb[VbRaddataSaving#5](../data-tools/codesnippet/VisualBasic/save-data-in-a-transaction_2.vb)]
      [!code-csharp[VbRaddataSaving#5](../data-tools/codesnippet/CSharp/save-data-in-a-transaction_2.cs)]
 
 ### <a name="to-delete-existing-customers"></a>刪除現有客戶
 
--   新增下列`DeleteCustomers`方法，以**Form1**:
+-   將下列 `DeleteCustomers` 方法新增至 **Form1**：
 
      [!code-vb[VbRaddataSaving#6](../data-tools/codesnippet/VisualBasic/save-data-in-a-transaction_3.vb)]
      [!code-csharp[VbRaddataSaving#6](../data-tools/codesnippet/CSharp/save-data-in-a-transaction_3.cs)]
 
 ### <a name="to-add-new-customers"></a>加入新客戶
 
--   新增下列`AddNewCustomers`方法，以**Form1**:
+-   將下列 `AddNewCustomers` 方法新增至 **Form1**：
 
      [!code-vb[VbRaddataSaving#7](../data-tools/codesnippet/VisualBasic/save-data-in-a-transaction_4.vb)]
      [!code-csharp[VbRaddataSaving#7](../data-tools/codesnippet/CSharp/save-data-in-a-transaction_4.cs)]
 
 ### <a name="to-add-new-orders"></a>加入新訂單
 
--   新增下列`AddNewOrders`方法，以**Form1**:
+-   將下列 `AddNewOrders` 方法新增至 **Form1**：
 
      [!code-vb[VbRaddataSaving#8](../data-tools/codesnippet/VisualBasic/save-data-in-a-transaction_5.vb)]
      [!code-csharp[VbRaddataSaving#8](../data-tools/codesnippet/CSharp/save-data-in-a-transaction_5.cs)]
@@ -173,5 +173,5 @@ ms.locfileid: "50750824"
 
 ## <a name="see-also"></a>另請參閱
 
-- [如何： 使用異動儲存資料](../data-tools/save-data-by-using-a-transaction.md)
+- [如何：使用交易儲存資料](../data-tools/save-data-by-using-a-transaction.md)
 - [將資料儲存回資料庫](../data-tools/save-data-back-to-the-database.md)

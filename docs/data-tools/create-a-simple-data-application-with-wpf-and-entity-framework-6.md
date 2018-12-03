@@ -1,5 +1,5 @@
 ---
-title: 使用 WPF 和 Entity Framework 6 中建立簡單資料應用程式
+title: 使用 WPF 和 Entity Framework 6 建立簡單的資料應用程式
 ms.date: 08/22/2017
 ms.topic: conceptual
 dev_langs:
@@ -11,14 +11,14 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 8909ef785bd721e5b07046329e4841cebc5ec24e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 5993256b41a07c4861ef2def58dc14d7fd849313
+ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49822068"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52305607"
 ---
-# <a name="create-a-simple-data-application-with-wpf-and-entity-framework-6"></a>使用 WPF 和 Entity Framework 6 中建立簡單資料應用程式
+# <a name="create-a-simple-data-application-with-wpf-and-entity-framework-6"></a>使用 WPF 和 Entity Framework 6 建立簡單的資料應用程式
 
 本逐步解說示範如何在 Visual Studio 中建立基本 「 資料表單 」 應用程式。 SQL Server LocalDB，Northwind 資料庫中，Entity Framework 6，與 Windows Presentation Foundation，則會使用應用程式。 它示範如何執行基本的資料繫結，主版詳細資料檢視，而且也有自訂繫結瀏覽器，並用於按鈕**移到下一個**，**移到上一個**，**移動開始**，**移到結尾**，**更新**並**刪除**。
 
@@ -46,7 +46,7 @@ ms.locfileid: "49822068"
 
 ## <a name="configure-the-project"></a>設定專案
 
-1.  在 Visual Studio 中，選擇**檔案** > **新增** > **專案**，然後建立新 C# WPF 應用程式。
+1.  在 Visual Studio 中，選擇**檔案** > **新增** > **專案**，然後再建立 新C#WPF 應用程式。
 
 2.  接下來，針對 Entity Framework 6 中新增 NuGet 套件。 在 [**方案總管] 中**，選取 [專案] 節點。 在主功能表中，選擇**專案** > **管理 NuGet 套件**。
 
@@ -60,11 +60,11 @@ ms.locfileid: "49822068"
 
 ## <a name="create-the-model"></a>建立模型
 
-1. 中的專案節點上按一下滑鼠右鍵**方案總管**，然後選擇**新增** > **新項目**。 在左窗格中，C#] 節點底下，選擇**資料**，然後在中間窗格中，選擇 [ **ADO.NET 實體資料模型**。
+1. 中的專案節點上按一下滑鼠右鍵**方案總管**，然後選擇**新增** > **新項目**。 在左窗格中，在C#節點，選擇**資料**，然後在中間窗格中，選擇  **ADO.NET 實體資料模型**。
 
    ![Entity Framework 模型新專案項目](../data-tools/media/raddata-ef-new-project-item.png)
 
-2. 呼叫模型`Northwind_model`，然後選擇  **確定**。 **Entity Data Model 精靈**隨即開啟。 選擇**資料庫的 EF Designer** ，然後按一下**下一步**。
+2. 呼叫模型`Northwind_model`，然後選擇  **確定**。 [實體資料模型精靈] 隨即開啟。 選擇**資料庫的 EF Designer** ，然後按一下**下一步**。
 
    ![從資料庫的 EF 模型](../data-tools/media/raddata-ef-model-from-database.png)
 
@@ -74,7 +74,7 @@ ms.locfileid: "49822068"
 
     ![選擇模型的資料庫物件](../data-tools/media/raddata-choose-ef-objects.png)
 
-5. 精靈會產生代表 Entity Framework 模型的 C# 類別。 類別是純舊 C# 類別，而且是我們繫結至 WPF 使用者介面。 *.Edmx*檔案會描述關聯性和其他中繼資料與資料庫中的物件產生關聯的類別。 *.Tt*檔案會產生運作模型，並將變更儲存到資料庫的程式碼的 T4 範本。 您可以看到所有這些檔案中的**方案總管 中**Northwind_model 節點下：
+5. 精靈會產生C#表示 Entity Framework 模型的類別。 類別是純舊C#類別，而且它們是我們繫結至 WPF 使用者介面。 *.Edmx*檔案會描述關聯性和其他中繼資料與資料庫中的物件產生關聯的類別。 *.Tt*檔案會產生運作模型，並將變更儲存到資料庫的程式碼的 T4 範本。 您可以看到所有這些檔案中的**方案總管 中**Northwind_model 節點下：
 
       ![方案總管 EF 模型檔案](../data-tools/media/raddata-solution-explorer-ef-model-files.png)
 

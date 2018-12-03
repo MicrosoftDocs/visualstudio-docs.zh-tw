@@ -1,7 +1,7 @@
 ---
 title: 附加至執行程序中使用 Visual Studio 中偵錯工具 |Microsoft Docs
 ms.custom: H1Hack27Feb2017
-ms.date: 06/20/2018
+ms.date: 09/27/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
@@ -29,17 +29,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: af44fcfe553cd720461de3a4e16986d573785c2f
-ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
-ms.translationtype: MT
+ms.openlocfilehash: fd1ceb341ac613eef3e26f3599ee137161545a85
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52257338"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52389185"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>使用 Visual Studio 偵錯工具附加至執行中處理序
-您可以將 Visual Studio 偵錯工具附加至本機或遠端電腦上執行的處理序。 此程序執行之後，請選取**偵錯** > **附加至處理序**或按**Ctrl**+**Alt** +**P**在 Visual Studio 中，並使用**附加至處理序**對話方塊，即可將偵錯工具附加至處理程序。
+您可以將 Visual Studio 偵錯工具附加至本機或遠端電腦上執行的處理序。 此程序執行之後，請選取**偵錯** > **připojit k procesu**或按**Ctrl**+**Alt** +**P**在 Visual Studio 中，並使用**附加至處理序**對話方塊，即可將偵錯工具附加至處理程序。
 
-您可以使用**附加至處理序**偵錯在本機或遠端電腦上執行的應用程式，同時偵錯多個處理序、 偵錯不在 Visual Studio 中建立的應用程式或從 Visual Studio 中使用未啟動任何應用程式進行偵錯附加偵錯工具。 比方說，如果您正在執行的應用程式，而不偵錯工具，並叫用例外狀況，您可以接著將偵錯工具附加至執行應用程式的處理序並開始偵錯。
+您可以使用**附加至處理序**偵錯在本機或遠端電腦上執行的應用程式，同時偵錯多個處理序、 偵錯在 Visual Studio 中建立的應用程式或您未使用從 Visual Studio 啟動任何應用程式進行偵錯附加偵錯工具。 比方說，如果您正在執行的應用程式，而不偵錯工具，並叫用例外狀況，您可以接著將偵錯工具附加至執行應用程式的處理序並開始偵錯。
 
 如需在 Visual Studio 中的基本偵錯資訊，請參閱[開始使用偵錯工具](../debugger/getting-started-with-the-debugger.md)。
 
@@ -54,7 +54,7 @@ ms.locfileid: "52257338"
 
 **若要附加至本機電腦上的處理序：**  
 
-1. 在 Visual Studio 中，選取**偵錯** > **附加至處理序** (或按**Ctrl**+**Alt** + **P**) 以開啟**附加至處理序** 對話方塊。
+1. 在 Visual Studio 中，選取**偵錯** > **připojit k procesu** (或按**Ctrl**+**Alt** + **P**) 以開啟**附加至處理序** 對話方塊。
   
    **連線類型**應該設定為**預設**。 **連線目標**應該是您本機電腦名稱。 
   
@@ -84,13 +84,13 @@ ms.locfileid: "52257338"
 
 ##  <a name="BKMK_Attach_to_a_process_on_a_remote_computer"></a> 附加至遠端電腦上的處理序  
 
-您也可以選取遠端電腦**附加至處理序** 對話方塊中，檢視可用的處理序在該電腦上執行的清單，並將附加至一或多個處理序進行偵錯。 遠端偵錯工具 (*msvsmon.exe*) 必須在遠端電腦上執行。 如需詳細資訊，請參閱 <c0> [ 遠端偵錯](../debugger/remote-debugging.md)。 
+您也可以選取遠端電腦**附加至處理序** 對話方塊中，檢視可用的處理序在該電腦上執行的清單，並將附加至一或多個處理序進行偵錯。 遠端偵錯工具 (*msvsmon.exe*) 必須在遠端電腦上執行。 如需詳細資訊，請參閱 <<c0> [ 遠端偵錯](../debugger/remote-debugging.md)。 
 
 如需更完整的偵錯已部署至 IIS 的 ASP.NET 應用程式的詳細指示，請參閱[遠端偵錯 IIS 的遠端電腦上的 ASP.NET](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)。
 
 **若要附加至遠端電腦上執行的處理序：**  
 
-1. 在 Visual Studio 中，選取**偵錯** > **附加至處理序** (或按**Ctrl**+**Alt** + **P**) 以開啟**附加至處理序** 對話方塊。
+1. 在 Visual Studio 中，選取**偵錯** > **připojit k procesu** (或按**Ctrl**+**Alt** + **P**) 以開啟**附加至處理序** 對話方塊。
   
 2. **連線類型**應該**預設**對大部分的情況。 在 **連線目標**方塊中，選取 遠端電腦，使用下列方法之一：
 
@@ -134,13 +134,13 @@ ms.locfileid: "52257338"
 >[!NOTE]
 >您可以附加至多個應用程式進行偵錯，但一次只能有一個應用程式是在偵錯工具中。 您可以在 Visual Studio 中設定使用的應用程式**偵錯位置**工具列或**處理序**視窗。  
 
-在某些情況下，當您在遠端桌面 （終端機服務） 工作階段中偵錯**可用的處理序**清單不會顯示所有可用的處理序。 如果您的使用者具有受限的使用者帳戶身分執行 Visual Studio**可用的處理序**清單不會顯示在工作階段 0，它用於服務和其他伺服器處理序，包括中執行的處理序*w3wp.exe*。 您可藉由使用系統管理員帳戶來執行 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]，或是從伺服器主控台 (而非終端機服務工作階段) 執行 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]，來解決這個問題。 
+在某些情況下，當您在遠端桌面 （終端機服務） 工作階段中偵錯**可用的處理序**清單不會顯示所有可用的處理序。 如果您的使用者具有受限的使用者帳戶身分執行 Visual Studio**可用的處理序**清單不會顯示在工作階段 0 執行的處理序。 工作階段 0 用於服務以及其他伺服器處理序，包括*w3wp.exe*。 您可藉由使用系統管理員帳戶來執行 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ，或是從伺服器主控台 (而非終端機服務工作階段) 執行 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ，來解決這個問題。 
 
-如果這些解決方法都沒，第三個選項是附加至處理序中，執行`vsjitdebugger.exe -p <ProcessId>`從 Windows 命令列。 您可以判斷處理序識別碼使用*tlist.exe*。 若要取得*tlist.exe*，請下載並安裝偵錯工具針對 Windows，網址[WDK 和 WinDbg 下載](/windows-hardware/drivers/download-the-wdk)。
+如果這些解決方法都沒有效，則第三個選項是從 Windows 命令列執行 `vsjitdebugger.exe -p <ProcessId>` 以附加至處理序。 您可以使用 *tlist.exe* 來判斷處理序識別碼。 若要取得 *tlist.exe*，您可以從 [WDK 和 WinDbg 下載](/windows-hardware/drivers/download-the-wdk)來下載並安裝適用於 Windows 的偵錯工具。
 
 ## <a name="BKMK_reattach"></a> 重新附加至處理程序
 
-您可以快速重新附加至您先前選擇附加至處理程序**偵錯** > **重新附加至處理程序**(**Shift** +**Alt**+**P**)。 當您選擇此命令時，偵錯工具會立即嘗試將附加到最後一個處理序附加至藉由先嘗試比對上一個處理序識別碼，然後，如果失敗，藉由比對先前的程序名稱。 如果找不到任何相符項目，或使用相同的名稱，找到的多個處理序**附加至處理序**對話方塊隨即開啟，因此您可以選取正確的處理序。
+您可以快速重新附加至您先前選擇附加至處理程序**偵錯** > **重新附加至處理程序**(**Shift** +**Alt**+**P**)。 當您選擇此命令時，偵錯工具會立即嘗試將附加到最後一個處理序附加至藉由先嘗試比對上一個處理序識別碼，以及如果失敗，藉由比對上一個處理序名稱。 如果找不到任何相符項目，或是數個程序有相同的名稱，**附加至處理序**對話方塊隨即開啟，因此您可以選取正確的處理序。
 
 > [!NOTE]
 > **重新附加至處理序**命令是 Visual Studio 2017 的新功能。
@@ -161,40 +161,40 @@ ms.locfileid: "52257338"
 |-|-|-|-|
 |遠端偵錯 ASP.NET 4 或 4.5 上 IIS 伺服器|使用遠端工具和**附加至處理序**|*w3wp.exe*|請參閱[遠端偵錯 IIS 的遠端電腦上的 ASP.NET](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)|
 |在 IIS 伺服器上遠端偵錯 ASP.NET Core|使用遠端工具和**附加至處理序**|*dotnet.exe*|應用程式部署，請參閱[發行至 IIS](https://docs.asp.net/en/latest/publishing/iis.html)。 進行偵錯，請參閱[IIS 的遠端電腦上的遠端偵錯 ASP.NET Core](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md)|
-|本機 IIS 伺服器 （支援的應用程式類型） 上的用戶端指令碼偵錯|使用**附加至處理序**|*chrome.exe*， *MicrosoftEdgeCP.exe*，或*iexplore.exe*|必須啟用指令碼偵錯。 Chrome 中，您也必須針對執行 Chrome 偵錯模式，然後選取**Webkit 程式碼**中**附加至**欄位。|
-|偵錯在本機電腦上的 C#、 Visual Basic 或 c + + 應用程式|使用任何一種[標準偵錯](../debugger/getting-started-with-the-debugger.md)或**附加至處理序**|*\<appname >.exe*|在大部分情況下，會使用標準偵錯而非**附加至處理序**。|
-|遠端偵錯 Windows 傳統型應用程式|遠端工具|N/A| 請參閱[遠端偵錯的 C# 或 Visual Basic 應用程式](../debugger/remote-debugging-csharp.md)或[遠端偵錯 c + + 應用程式](../debugger/remote-debugging-cpp.md)|
-|之後啟動的應用程式，而不偵錯工具偵錯在本機電腦上的 ASP.NET 應用程式|使用**附加至處理序**|*iiexpress.exe*|這可能是很有幫助您載入的應用程式更快，這類 （例如） 程式碼剖析時。 |
-|在 伺服器處理序上其他支援的應用程式類型進行偵錯|使用遠端工具 （如果伺服器位於遠端） 和**附加至處理序**|*chrome.exe*， *iexplore.exe*，或其他處理程序|如有必要，使用資源監視器來識別處理程序。 請參閱[遠端偵錯](../debugger/remote-debugging.md)。|
-|遠端偵錯的通用 Windows App (UWP)、 OneCore、 HoloLens、 或 IoT 應用程式|偵錯已安裝的應用程式套件|N/A|請參閱[偵錯已安裝的應用程式套件](debug-installed-app-package.md)而不是使用**附加至處理序**|
-|您未從 Visual Studio 啟動的通用 Windows App (UWP)、 OneCore、 HoloLens、 或 IoT 應用程式進行偵錯|偵錯已安裝的應用程式套件|N/A|請參閱[偵錯已安裝的應用程式套件](debug-installed-app-package.md)而不是使用**附加至處理序**|  
+|在本機 IIS 伺服器上，支援的應用程式類型的用戶端指令碼偵錯 |使用**附加至處理序**|*chrome.exe*， *MicrosoftEdgeCP.exe*，或*iexplore.exe*|必須啟用指令碼偵錯。 Chrome 中，您也必須針對執行 Chrome 偵錯模式，然後選取**Webkit 程式碼**中**附加至**欄位。|
+|偵錯C#，Visual Basic 或 c + + 在本機電腦上的應用程式|使用任何一種[標準偵錯](../debugger/getting-started-with-the-debugger.md)或**附加至處理序**|*\<appname >.exe*|在大部分情況下，會使用標準偵錯而非**附加至處理序**。|
+|遠端偵錯 Windows 傳統型應用程式|遠端工具|N/A| 請參閱[遠端偵錯C#或 Visual Basic 應用程式](../debugger/remote-debugging-csharp.md)或是[遠端偵錯 c + + 應用程式](../debugger/remote-debugging-cpp.md)|
+|啟動但不偵錯工具的應用程式之後，偵錯在本機電腦上的 ASP.NET 應用程式|使用**附加至處理序**|*iiexpress.exe*|這可能是很有幫助您載入的應用程式更快，這類 （例如） 程式碼剖析時。 |
+|在 伺服器處理序上其他支援的應用程式類型進行偵錯|如果遠端伺服器，使用 遠端工具，和**附加至處理序**|*chrome.exe*， *iexplore.exe*，或其他處理程序|如有必要，使用資源監視器來識別處理程序。 請參閱[遠端偵錯](../debugger/remote-debugging.md)。|
+|遠端偵錯的通用 Windows App (UWP)、 OneCore、 HoloLens、 或 IoT 應用程式|針對已安裝的應用程式套件進行偵錯|N/A|請參閱[偵錯已安裝的應用程式套件](debug-installed-app-package.md)而不是使用**附加至處理序**|
+|您未從 Visual Studio 啟動的通用 Windows App (UWP)、 OneCore、 HoloLens、 或 IoT 應用程式進行偵錯|針對已安裝的應用程式套件進行偵錯|N/A|請參閱[偵錯已安裝的應用程式套件](debug-installed-app-package.md)而不是使用**附加至處理序**|  
   
 ## <a name="use-debugger-features"></a>使用偵錯工具功能
 
-若要使用完整的功能 （例如叫用中斷點） 的 Visual Studio 偵錯工具附加至處理序，當應用程式必須完全符合您的本機來源和符號 (也就是偵錯工具必須能夠載入正確[符號 (.pbd) 檔](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)). 根據預設，這需要偵錯組建。
+若要使用完整的功能 （例如叫用中斷點） 的 Visual Studio 偵錯工具附加至處理序，當應用程式必須完全符合您的本機來源和符號。 也就是偵錯工具必須能夠載入正確[符號 (.pdb) 檔](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)。 根據預設，這需要偵錯組建。
 
 遠端偵錯的情況下，您必須擁有原始碼 （或一份原始碼） 已在 Visual Studio 中開啟。 在本機電腦上，在遠端電腦上的已編譯的應用程式二進位碼檔案必須來自同一個組建。
 
-在本機偵錯案例，您可以偵錯在 Visual Studio 中而無法存取來源如果應用程式有正確的符號檔 （根據預設，這需要偵錯組建）。 如需詳細資訊，請參閱 <<c0> [ 指定的符號和原始程式檔](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)。
+在本機偵錯案例，您可以偵錯在 Visual Studio 中而無法存取來源如果應用程式有正確的符號檔。 根據預設，這需要偵錯組建。 如需詳細資訊，請參閱 <<c0> [ 指定的符號和原始程式檔](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)。
   
-##  <a name="BKMK_Troubleshoot_attach_errors"></a> 疑難排解附加錯誤  
+##  <a name="BKMK_Troubleshoot_attach_errors"></a> 針對附加錯誤進行疑難排解  
  當偵錯工具附加至執行中的處理序時，該處理序可以包含一種或多種程式碼類型。 偵錯工具可附加的程式碼類型會在 [選取程式碼類型]  對話方塊中顯示並供您選取。  
   
  有時候，偵錯工具可以成功附加至一種程式碼類型，而無法附加至另一種程式碼類型。 如果您嘗試附加至遠端電腦上正在執行的處理序，可能會發生這種狀況。 遠端電腦可能為某些程式碼類型安裝了遠端偵錯元件，但沒有安裝其他程式碼類型的遠端偵錯元件。 如果您嘗試附加至兩個或多個處理序以進行直接的資料庫偵錯，也可能會發生這種狀況。 (SQL 偵錯僅支援附加至單一處理序)。  
   
  如果偵錯工具無法附加至某些，但不是全部的程式碼類型時，您會看到用來識別哪些類型附加失敗的訊息。  
   
- 如果偵錯工具成功附加到至少一種程式碼類型，您可以繼續偵錯該處理序。 您只能偵錯已附加成功的程式碼類型。 處理序中未連結的程式碼仍會執行，但您無法設定中斷點、 檢視資料，或執行其他偵錯的作業，該程式碼。  
+ 如果偵錯工具成功附加到至少一種程式碼類型，您可以繼續偵錯該處理序。 您只能偵錯已附加成功的程式碼類型。 處理序中未連結的程式碼仍會執行，但您將無法設定中斷點、 檢視資料，或執行其他偵錯的作業，該程式碼。  
   
- 如果您需要更多相關資訊以暸解偵錯工具無法附加至程式碼類型的原因，可以嘗試重新附加至該程式碼。  
+ 如果您想要偵錯工具附加至程式碼類型失敗的原因的更具體資訊，請嘗試重新附加至該程式碼。  
   
- **若要取得特定資訊的程式碼類型附加失敗的原因：**  
+ **取得程式碼類型為何無法附加的相關資訊：**  
   
 1.  與處理序中斷連結。 在 **偵錯**功能表上，選取**中斷所有連結**。  
   
 2.  重新附加至處理程序，只選取程式碼類型附加失敗。  
   
-    1.  在  **附加至處理序**對話方塊方塊中，選取中的程序**可用的處理序**清單。  
+    1.  在 [附加至處理序] 對話方塊的 [可使用的處理序] 清單中，選取該處理序。  
   
     2.  選取 **選取**。  
   
@@ -202,12 +202,12 @@ ms.locfileid: "52257338"
   
     4.  選取 [確定]。  
   
-    5.  在  **附加至處理序**對話方塊中，選取**附加**。  
+    5.  在  **připojit k procesu**對話方塊中，選取**附加**。  
   
     這時，該附加將完全失敗，您將取得特定的錯誤訊息。  
   
 ## <a name="see-also"></a>另請參閱  
- [偵錯多個處理序](../debugger/debug-multiple-processes.md)   
- [在 Just-in-time 偵錯](../debugger/just-in-time-debugging-in-visual-studio.md)   
+ [針對多重處理序進行偵錯](../debugger/debug-multiple-processes.md)   
+ [Just-In-Time 偵錯](../debugger/just-in-time-debugging-in-visual-studio.md)   
  [遠端偵錯](../debugger/remote-debugging.md)
  

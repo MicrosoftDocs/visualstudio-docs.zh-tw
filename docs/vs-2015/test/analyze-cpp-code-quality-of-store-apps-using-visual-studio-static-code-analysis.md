@@ -16,12 +16,12 @@ caps.latest.revision: 15
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: e140f2e1066f6e2025491517106d27f6955d871b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 1df08b7b6a44df14ab50a06194f677be5006cce3
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49863785"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52389094"
 ---
 # <a name="analyze-c-code-quality-of-store-apps-using-visual-studio-static-code-analysis"></a>使用 Visual Studio 靜態程式碼分析，分析市集應用程式的 C++ 程式碼品質
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -167,18 +167,18 @@ ms.locfileid: "49863785"
 |                      [C28182](../code-quality/c28182.md)                       |         取值的指標為 NULL。 指標所包含的 NULL 值與另一個指標相同。          |
 |                      [C28202](../code-quality/c28202.md)                       |                                    非靜態成員的參考不合法                                     |
 |                      [C28203](../code-quality/c28203.md)                       |                                     類別成員的參考模稜兩可。                                      |
-|                      [C28205](../code-quality/c28205.md)                       |                           \_成功\_或是\_On_failure\_不合法的內容中使用                            |
+|                      [C28205](../code-quality/c28205.md)                       |                           在不合法的內容中使用了 \_Success\_ 或 \_On_failure\_                            |
 |                      [C28206](../code-quality/c28206.md)                       |                                   左運算元指向結構，請使用 '->'                                   |
 |                      [C28207](../code-quality/c28207.md)                       |                                       左運算元是結構，請使用 '.'                                       |
 |                      [C28210](../code-quality/c28210.md)                       |                 _On_failure_ 內容的註釋不能在明確 pre context 中                  |
 |                      [C28211](../code-quality/c28211.md)                       |                                 SAL_context 需要靜態內容名稱                                  |
 |                      [C28212](../code-quality/c28212.md)                       |                                  註釋需要指標運算式                                   |
-|                      [C28213](../code-quality/c28213.md)                       | \_Use_decl_annotations\_註解必須用來參考，不需修改之前的宣告。 |
+|                      [C28213](../code-quality/c28213.md)                       | \_Use_decl_annotations\_ 註釋必須不需修改就能用來參考預先宣告。 |
 |                      [C28214](../code-quality/c28214.md)                       |                                   屬性參數名稱必須是 p1...p9                                   |
 |                      [C28215](../code-quality/c28215.md)                       |                    typefix 不能套用到已經有 typefix 的參數                    |
 |                      [C28216](../code-quality/c28216.md)                       |        checkReturn 註釋只適用於特定函式參數的後置條件。         |
 |                      [C28217](../code-quality/c28217.md)                       |            對於函式，註釋的參數數目不符合檔案中找到的參數數目             |
-|                      [C28218](../code-quality/c28218.md)                       |             對於函式參數，註釋的參數不符合檔案中找到的參數              |
+|                      [C28218](../code-quality/c28218.md)                       |             函式參數，註釋的參數不符合找到的檔案              |
 |                      [C28219](../code-quality/c28219.md)                       |                 註釋中標註的參數需要列舉的成員                 |
 |                      [C28220](../code-quality/c28220.md)                       |                  註釋中標註的參數需要整數運算式                   |
 |                      [C28221](../code-quality/c28221.md)                       |                        註釋中的參數需要字串運算式                         |
@@ -216,22 +216,22 @@ ms.locfileid: "49863785"
 |                      [C28267](../code-quality/c28267.md)                       |                    在函式 (隸屬於註釋) 中找到註釋的語法錯誤。                    |
 |                      [C28272](../code-quality/c28272.md)                       |      函式參數的註釋在檢查時，與函式宣告不一致      |
 |                      [C28273](../code-quality/c28273.md)                       |                    對於函式，線索與函式宣告不一致                     |
-|                      [C28275](../code-quality/c28275.md)                       |                                   參數\_Macro_value\_為 null                                    |
+|                      [C28275](../code-quality/c28275.md)                       |                                   \_Macro_value\_ 的參數為 Null                                    |
 |                      [C28279](../code-quality/c28279.md)                       |                           找到符號的 'begin'，但沒有相符的 'end'                            |
 |                      [C28280](../code-quality/c28280.md)                       |                           找到符號的 'end'，但沒有相符的 'begin'                           |
 |                      [C28282](../code-quality/c28282.md)                       |                                    格式字串必須在前置條件中                                    |
 |                      [C28285](../code-quality/c28285.md)                       |                                    對於函式，參數中有語法錯誤                                    |
 |                      [C28286](../code-quality/c28286.md)                       |                                    對於函式，結尾附近發生語法錯誤                                    |
-|                      [C28287](../code-quality/c28287.md)                       |                函式的語法錯誤中\_在\_（） 註釋 （無法辨認的參數名稱）                |
-|                      [C28288](../code-quality/c28288.md)                       |                  函式的語法錯誤中\_在\_（） 註釋 （無效的參數名稱）                   |
+|                      [C28287](../code-quality/c28287.md)                       |                函式的 \_At\_() 註釋中有語法錯誤 (無法辨認的參數名稱)                |
+|                      [C28288](../code-quality/c28288.md)                       |                  函式的 \_At\_() 註釋中有語法錯誤 (無效的參數名稱)                   |
 |                      [C28289](../code-quality/c28289.md)                       |                對於函式：ReadableTo 或 WritableTo 沒有有限的規格做為參數                |
 |                      [C28290](../code-quality/c28290.md)                       |           函式的註釋包含比實際參數數目還多的外部            |
 |                      [C28291](../code-quality/c28291.md)                       |                        位於 deref 層級 0 的 post null/notnull 對函式是無意義的。                        |
 |                      [C28300](../code-quality/c28300.md)                       |                            運算子的運算式運算元類型不相容                             |
 |                      [C28301](../code-quality/c28301.md)                       |                               函式的第一個宣告沒有註釋。                               |
-|                      [C28302](../code-quality/c28302.md)                       |                             額外\_Deref\_註釋上找不到運算子。                              |
-|                      [C28303](../code-quality/c28303.md)                       |                           模稜兩可\_Deref\_註釋上找不到運算子。                            |
-|                      [C28304](../code-quality/c28304.md)                       |                     不當放置\_Notref\_找不到運算子套用到語彙基元。                      |
+|                      [C28302](../code-quality/c28302.md)                       |                             在註釋中發現額外的 \_Deref\_ 運算子。                              |
+|                      [C28303](../code-quality/c28303.md)                       |                           在註釋發現模擬兩可的 \_Deref\_ 運算子。                            |
+|                      [C28304](../code-quality/c28304.md)                       |                     發現有位置不正確的 \_Notref\_ 運算子套用至語彙基元。                      |
 |                      [C28305](../code-quality/c28305.md)                       |                                剖析語彙基元時發現錯誤。                                 |
 |                      [C28350](../code-quality/c28350.md)                       |                  註釋描述了條件不適用的狀況。                   |
 |                      [C28351](../code-quality/c28351.md)                       |         註釋描述條件中不可以使用動態值 (變數)。          |

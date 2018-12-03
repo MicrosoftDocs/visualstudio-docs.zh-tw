@@ -26,47 +26,49 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 479df9e5761066248b8657d9656132b072bddb13
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 8efcc5780b27967644330e55dc540333a19105a2
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49866073"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52389334"
 ---
 # <a name="how-to-debug-injected-code"></a>如何：偵錯插入程式碼
+
 > [!NOTE]
->  根據您目前使用的設定或版本，您所看到的對話方塊與功能表命令可能會與 [說明] 中描述的不同。 若要變更設定，請從 [工具] 功能表中選擇 [匯入和匯出設定]。 如需詳細資訊，請參閱[將 Visual Studio IDE 個人化](../ide/personalizing-the-visual-studio-ide.md)。  
-  
- 使用屬性可以大幅簡化 C++ 程式設計。 如需詳細資訊，請參閱 <<c0> [ 概念](/cpp/windows/attributed-programming-concepts)。 有些屬性 (Attribute) 可以直接由編譯器 (Compiler) 解譯。 其他屬性 (Attribute) 會將程式碼插入到編譯器將編譯的程式來源中。 這種插入的程式碼可藉著減少必須由您撰寫的程式碼數量，使程式設計更為容易。 然而，有時一個錯誤便可能會造成應用程式在執行插入程式碼時失敗。 當這種情況發生時，您可能要查看插入程式碼。 Visual Studio 提供兩種讓您查看插入程式碼的方法：  
-  
-- 您可以檢視插入程式碼中的**反組譯碼**視窗。  
-  
-- 使用[/Fx](/cpp/build/reference/fx-merge-injected-code)，您可以建立合併的原始程式檔，其中包含原始和插入程式碼。  
-  
-  **反組譯碼**視窗會顯示對應到原始程式碼和由屬性插入的程式碼的組合語言指令。 颾魤 ㄛ**反組譯碼**視窗可以顯示原始程式碼附註。  
-  
-### <a name="to-turn-on-source-annotation"></a>若要開啟來源附註  
-  
--   以滑鼠右鍵按一下**反組譯碼** 視窗中，然後選擇**顯示原始程式碼**從捷徑功能表。  
-  
-     如果您知道在來源視窗中屬性的位置，您可以尋找插入程式碼中的使用快顯功能表**反組譯碼**視窗。  
-  
-### <a name="to-view-injected-code"></a>若要檢視插入程式碼  
-  
-1.  偵錯工具必須處於中斷模式。  
-  
-2.  在原始程式碼視窗裡，將游標放置在您要檢視的插入程式碼的屬性之前。  
-  
-3.  以滑鼠右鍵按一下，然後選取**移至反組譯碼**從捷徑功能表。  
-  
-     如果屬性位置是目前的執行點附近，您可以選取**反組譯碼**從視窗**偵錯**功能表。  
-  
-### <a name="to-view-the-disassembly-code-at-the-current-execution-point"></a>若要檢視目前執行點的反組譯程式碼  
-  
-1.  偵錯工具必須處於中斷模式。  
-  
-2.  從**偵錯**功能表上，選擇**Windows**，然後按一下**反組譯碼**。  
-  
-## <a name="see-also"></a>另請參閱  
- [偵錯工具安全性](../debugger/debugger-security.md)   
- [偵錯機器碼](../debugger/debugging-native-code.md)
+> 根據您目前使用的設定或版本，您所看到的對話方塊與功能表命令可能會與 [說明] 中描述的不同。 若要變更設定，請從 [工具] 功能表中選擇 [匯入和匯出設定]。 如需詳細資訊，請參閱[重設設定](../ide/environment-settings.md#reset-settings)。
+
+使用屬性可以大幅簡化 C++ 程式設計。 如需詳細資訊，請參閱 <<c0> [ 概念](/cpp/windows/attributed-programming-concepts)。 有些屬性 (Attribute) 可以直接由編譯器 (Compiler) 解譯。 其他屬性 (Attribute) 會將程式碼插入到編譯器將編譯的程式來源中。 這種插入的程式碼可藉著減少必須由您撰寫的程式碼數量，使程式設計更為容易。 然而，有時一個錯誤便可能會造成應用程式在執行插入程式碼時失敗。 當這種情況發生時，您可能要查看插入程式碼。 Visual Studio 提供兩種讓您查看插入程式碼的方法：
+
+- 您可以在 [反組譯碼] 視窗中檢視插入程式碼。
+
+- 使用 [/Fx](/cpp/build/reference/fx-merge-injected-code)，您可以建立包含原始和插入程式碼的合併來源檔案。
+
+[反組譯碼] 視窗會顯示與原始程式碼和由屬性插入之程式碼對應的組合語言指令。 此外，[反組譯碼] 視窗可以顯示原始程式碼註釋。
+
+## <a name="to-turn-on-source-annotation"></a>若要開啟來源附註
+
+-   以滑鼠右鍵按一下 [反組譯碼] 視窗，並從捷徑功能表選擇 [顯示原始程式碼]。
+
+     如果您知道屬性在來源視窗的位置，您就可以使用捷徑功能表在 [反組譯碼] 視窗裡尋找插入程式碼。
+
+## <a name="to-view-injected-code"></a>若要檢視插入程式碼
+
+1.  偵錯工具必須處於中斷模式。
+
+2.  在原始程式碼視窗裡，將游標放置在您要檢視的插入程式碼的屬性之前。
+
+3.  以滑鼠右鍵按一下，並從捷徑功能表選取 [前往反組譯碼]。
+
+     如果屬性位置距離目前執行點很近，您只要從 [偵錯] 功能表選取 [反組譯碼] 視窗即可。
+
+## <a name="to-view-the-disassembly-code-at-the-current-execution-point"></a>若要檢視目前執行點的反組譯程式碼
+
+1.  偵錯工具必須處於中斷模式。
+
+2.  請在 [偵錯] 功能表中選擇 [視窗]，然後按一下 [反組譯碼]。
+
+## <a name="see-also"></a>另請參閱
+
+- [偵錯工具安全性](../debugger/debugger-security.md)
+- [偵錯機器碼](../debugger/debugging-native-code.md)

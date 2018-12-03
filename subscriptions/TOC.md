@@ -58,7 +58,7 @@
 ###### [尋找您的主要連絡人](find-primary-contact.md)
 #### [針對 MPSA](mpsa.md)
 #### [針對雲端訂閱](cloud-admin.md)
-#### [上線影片](https://channel9.msdn.com/Series/Visual-Studio-Subscriptions-Administration/Onboarding-your-organization-to-the-new-Visual-Studio-Subscription-Administration-Portal-and-setting)
+#### [上線影片](https://youtu.be/plSu6fpi7UI)
 ### [使用管理入口網站](using-admin-portal.md)
 #### [指派訂用帳戶](assign-license.md)
 #### [重新傳送指派電子郵件](resend-assignment-email.md)
