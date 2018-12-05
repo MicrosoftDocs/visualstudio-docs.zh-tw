@@ -12,16 +12,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c16cfdc8d554ce9bf556ea707f977989e1dab72
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
-ms.translationtype: HT
+ms.openlocfilehash: e4cf3c7ae8b45f6d3410925977c2c67784b1ca6d
+ms.sourcegitcommit: a811f6a194ccd40d844e74e618d847df87c85c16
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389373"
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "52621587"
 ---
 # <a name="fix-bugs-by-writing-better-c-code-using-visual-studio"></a>藉由撰寫更好修正 bugC#使用 Visual Studio 程式碼
 
-偵錯程式碼時，可能很耗時-，而且有時候挫折-工作。 花時間了解如何有效偵錯。 功能強大的 IDE，例如 Visual Studio 可讓您的工作輕鬆許多。 IDE 可協助您更快速地偵錯您的程式碼並不只是的但它也可以幫助您撰寫更好的程式碼且錯誤更少。 我們在本文中的目標是為您提供的偵錯的程序的整體檢視，讓您將了解何時使用程式碼分析工具，以使用偵錯工具，以及何時使用其他工具時。
+偵錯程式碼時，可能很耗時-，而且有時候挫折-工作。 需要一段時間，以了解如何有效地偵錯，但功能強大的 IDE，例如 Visual Studio 可讓您的工作輕鬆許多。 IDE 可協助您更快速地偵錯您的程式碼並不只是的但它也可以幫助您撰寫更好的程式碼且錯誤更少。 我們在本文中的目標是為您提供的偵錯的程序的整體檢視，讓您將了解何時使用程式碼分析工具，以使用偵錯工具，以及何時使用其他工具時。  
 
 在本文中，我們會討論利用 IDE，可讓您偵錯工作階段更具生產力。 我們介紹數個工作，例如：
 

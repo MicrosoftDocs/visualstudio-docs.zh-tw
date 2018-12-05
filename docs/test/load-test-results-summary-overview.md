@@ -16,18 +16,20 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: fd184f292a063823b6513e7b6a1817e2477db303
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: ae70422ce3c88a3de6842f3f0946666b86ae559e
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380560"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895011"
 ---
 # <a name="load-test-results-summary-overview"></a>負載測試結果摘要概觀
 
 執行負載測試之後，您可以檢視負載測試摘要，快速了解測試的結果。 負載測試摘要以精簡易讀的格式提供主要的結果。 您也可以列印負載測試摘要， 以方便您和專案關係人一起討論測試的結果。 當您從先前執行的負載測試開啟負載測試結果時，負載測試摘要也是預設檢視。 如需詳細資訊，請參閱[如何：存取負載測試結果以進行分析](../test/how-to-access-load-test-results-for-analysis.md)。
 
- ![摘要檢視](../test/media/ltest_summaryview.png)
+![摘要檢視](../test/media/ltest_summaryview.png)
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="the-load-test-summary"></a>負載測試摘要
 
@@ -127,7 +129,7 @@ ms.locfileid: "39380560"
 
 ## <a name="errors"></a>錯誤
 
-錯誤區段包含負載測試期間發生之所有錯誤的清單， 並顯示錯誤的類型及子類型、計數和最後一則訊息。 您可以選擇錯誤開啟 [錯誤] 資料表，並查看該錯誤的其他詳細資料。 如需詳細資訊，請參閱[在資料表檢視中分析負載測試結果和錯誤](../test/analyze-load-test-results-and-errors-in-the-tables-view.md)和[如何：使用計數器面板來分析錯誤](../test/how-to-analyze-errors-using-the-counters-panel.md)。
+錯誤區段包含負載測試期間發生之所有錯誤的清單， 並顯示錯誤的類型及子類型、計數和最後一則訊息。 您可以選擇錯誤開啟 [錯誤] 資料表，並查看該錯誤的其他詳細資料。 如需詳細資訊，請參閱[在資料表檢視中分析負載測試結果和錯誤](../test/analyze-load-test-results-and-errors-in-the-tables-view.md)。
 
 > [!NOTE]
 > 選擇區段標題左側的箭號，就可以摺疊或展開此區段。

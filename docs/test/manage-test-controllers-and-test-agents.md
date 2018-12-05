@@ -9,16 +9,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bc225862ee4b9fbc2c4c94aaab4f410719391ee7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 48c377a8a5c48db7e0726ab5d5cc238e6b83c71c
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49926588"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895284"
 ---
 # <a name="manage-test-controllers-and-test-agents"></a>管理測試控制器和測試代理程式
 
 如果您要使用 Visual Studio 從遠端執行測試、將測試分散到多部電腦上，或是執行負載測試，則必須設定測試控制器、測試代理程式和測試設定檔。 本主題將描述如何在第一次安裝及設定測試控制器和測試代理程式之後進行管理。
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 如果您使用 Microsoft Test Manager 在實驗室環境中執行測試，可以使用 Microsoft Test Manager 的 [實驗室中心] 中的 [測試控制器管理員] 管理測試控制器及其代理程式。 本主題僅適用於使用 Visual Studio 執行測試的情況。
 

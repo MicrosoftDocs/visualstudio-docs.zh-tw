@@ -10,16 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 8b38366a97351fae52ae82a4291ed13da996bf41
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 2f04912423dfdbd2baa7beab431871f814c044b0
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51296082"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895466"
 ---
 # <a name="how-to-create-a-test-setting-for-a-distributed-load-test"></a>如何：建立分散式負載測試的測試設定
 
 為您的負載測試設定「測試設定」，如此您可以使用測試代理程式和測試控制器將這些測試散佈到多部電腦。 您還可以使用「診斷資料配接器」設定測試設定，該配接器會指定要收集的資料種類，或指定從 Visual Studio 執行負載測試時如何影響測試電腦。
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 例如，您可以使用 ASP.NET 分析工具診斷資料配接器收集程式碼的效能解析。 此外，診斷資料配接器可以用來模擬測試電腦上的可能瓶頸，或減少可用的系統記憶體。
 

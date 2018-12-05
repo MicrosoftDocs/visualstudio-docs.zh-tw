@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Studio 中使用測試設定收集診斷資訊
+title: 使用測試設定收集診斷資訊
 ms.date: 10/03/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 0b2d44d0fa50a4d733f62845d54116cceb2f2016
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 288d1ce5511d33a48006c97030d2b9c2f12ec88c
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49865345"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895206"
 ---
 # <a name="collect-diagnostic-information-using-test-settings"></a>使用測試設定收集診斷資訊
 
@@ -32,6 +32,8 @@ ms.locfileid: "49865345"
 -   收集 IntelliTrace 資料，協助找出無法重現的 Bug
 
 診斷資料配接器也可用來變更測試電腦的行為。 例如，透過 Visual Studio 中的測試設定就可以模擬各種不同的網路拓撲瓶頸，以評估小組應用程式的效能。
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="use-test-settings-with-visual-studio"></a>使用 Visual Studio 的測試設定
 

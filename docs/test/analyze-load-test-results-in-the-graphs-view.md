@@ -17,16 +17,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 57c73a0da427141e4a8f94a51fa57ef7aa871019
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9c635d3a2c21d1ab84feca285c8cea8eb2aac68f
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49870051"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895076"
 ---
 # <a name="analyze-load-test-results-in-the-graphs-view-of-the-load-test-analyzer"></a>在負載測試分析器的圖形檢視中分析負載測試結果
 
 負載測試的結果會顯示成數個不同窗格中的資料。
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 若要以圖形呈現測試結果，請選擇 [負載測試] 工具列上的 [圖形]。 在窗格中會顯示每個獨立的圖形，窗格頂端的下拉式清單會顯示圖形名稱。 若要在窗格中顯示不同的圖形，請從清單選擇不同的圖形名稱。
 
@@ -82,7 +84,6 @@ ms.locfileid: "49870051"
 |**在圖形上顯示計數器：** 藉由在圖形上置放計數器，您可以將各種資料新增至負載測試結果圖形。|-   [如何：在圖形上新增和刪除計數器](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md)|
 |**放大圖形：** 完成負載測試後，可以使用縮放列來放大及捲動到圖形的某個區域。 藉由圖形放大，您可以更為仔細地檢查負載測試回合期間收集到的資料。|-   [如何：放大圖形中的某個區域](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md)|
 |**並排顯示圖形：** 您可以使用數種模式排列負載測試結果圖形。 最多可以並排顯示四個圖形。||
-|**修改圖形中效能計數器繪圖的外觀：** 您可以變更圖形中效能計數器的繪圖線條選項。 包括色彩和線條樣式。 此外，也可以指定要自動或手動指定用於繪製效能計數器的範圍。|-   [如何：指定圖形計數器的繪圖選項](../test/how-to-specify-plot-options-for-graphing-counters.md)|
 |**建立自訂圖形：** 您可以設計用來顯示有關負載測試結果的特定資訊的圖形。 藉由指定圖形要顯示的負載測試計數器，即可以設計自訂圖形。|-   [如何：建立自訂圖形](../test/how-to-create-custom-graphs-in-load-test-results.md)|
 |**匯出圖形中的效能計數器資料：** 您可以在 [負載測試分析器] 的 [圖形] 檢視中使用工具列上的 [將圖形資料匯出至 Excel] 按鈕，將圖形資料匯出至 Microsoft Excel。||
 

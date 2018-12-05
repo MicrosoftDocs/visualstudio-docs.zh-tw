@@ -12,16 +12,18 @@ dev_langs:
 - VB
 ms.workload:
 - uwp
-ms.openlocfilehash: 92764cbb78dfc11b718d2640cd059febe913a9b2
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 3dcbd6065d45bf5350b80d555f335d3b8ec1cec7
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35668381"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895960"
 ---
 # <a name="create-a-coded-ui-test-to-test-a-uwp-app"></a>建立自動程式化 UI 測試來測試 UWP 應用程式
 
 本文說明如何建立通用 Windows 平台 (UWP) 應用程式的自動程式化 UI 測試。
+
+[!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
 ## <a name="create-a-uwp-app-to-test"></a>建立要測試的 UWP 應用程式
 

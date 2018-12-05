@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 2c2a5366a9772060a3e94de14b12f5d2ae62cbdf
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: dbff48696a7fe10266a2c72fc3a3d9fb0e9ba81d
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49949304"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896042"
 ---
 # <a name="how-to-create-a-visual-studio-add-in-for-the-web-performance-test-results-viewer"></a>如何：建立 Web 效能測試結果檢視器的 Visual Studio 增益集
 
@@ -28,7 +28,9 @@ ms.locfileid: "49949304"
 
 此外，您必須新增 LoadTestPackage DLL 的參考，這個檔案位於 *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\PrivateAssemblies* 資料夾中。
 
--   若要擴充 [Web 效能測試結果檢視器] 的 UI，您必須建立 Visual Studio 增益集和使用者控制項。 下列程序將說明如何建立增益集、使用者控制項，以及如何實作必要的類別，以便擴充 [Web 效能測試結果檢視器] 的 UI。
+若要擴充 [Web 效能測試結果檢視器] 的 UI，您必須建立 Visual Studio 增益集和使用者控制項。 下列程序將說明如何建立增益集、使用者控制項，以及如何實作必要的類別，以便擴充 [Web 效能測試結果檢視器] 的 UI。
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="create-or-open-a-solution-that-contains-an-aspnet-web-application-and-a-web-performance-and-load-test-project"></a>建立或開啟包含 ASP.NET Web 應用程式和 Web 效能測試及負載測試專案的方案
 

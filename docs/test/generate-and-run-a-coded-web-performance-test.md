@@ -16,16 +16,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: f57d22963aa5078d3947bc94d3077c1e24534481
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 76b2e7eebf66bb4a9c2564ca30a72a7b17dbdcfc
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295562"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895505"
 ---
 # <a name="generate-and-run-a-coded-web-performance-test"></a>產生和執行 Web 效能測試程式碼
 
 Web 效能測試是透過瀏覽您的 Web 應用程式來錄製。 測試包含在負載測試中，測量您的 Web 應用程式在多個使用者壓力下的執行效能。 可將 Web 效能測試轉換成程式碼指令碼，您可以像編輯和自訂其他原始程式碼一樣編輯這個指令碼。 例如，您可以加入迴圈和分支建構。
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="generate-a-coded-web-performance-test"></a>產生 Web 效能測試程式碼
 
