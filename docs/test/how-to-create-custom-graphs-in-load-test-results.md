@@ -11,18 +11,20 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 7de5d684b0a4299c2f3d90e4a00338c55d2d6870
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 7973fbf5ac81da2ba603aacb201b7592e602969e
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381995"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895817"
 ---
 # <a name="how-to-create-custom-graphs-in-load-test-results"></a>如何：在負載測試結果中建立自訂圖表
 
 您可以設計用來顯示有關負載測試結果的特定資訊的圖形。 藉由指定圖形要顯示的負載測試計數器，即可以設計自訂圖形。
 
- 您可以在執行負載測試時或是完成執行後，執行下列程序。
+您可以在執行負載測試時或是完成執行後，執行下列程序。
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="to-create-a-custom-load-test-results-graph"></a>若要建立自訂負載測試結果圖形
 

@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: d6196a940ff1aba0c072c2b81a96371a5ad700d1
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 65e8632a161ac345408a030d2d536086abbe48af
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381449"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895115"
 ---
 # <a name="how-to-specify-if-test-failures-are-saved-to-test-logs-using-the-load-test-editor"></a>如何：使用負載測試編輯器指定測試失敗是否會儲存至測試記錄
 
@@ -25,6 +25,7 @@ ms.locfileid: "39381449"
 > [!NOTE]
 > 如需回合設定屬性及其描述的完整清單，請參閱[負載測試回合設定屬性](../test/load-test-run-settings-properties.md)。
 
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="to-specify-if-the-test-log-is-saved-when-a-test-fails-in-a-scenario"></a>若要指定當情節中的測試失敗時是否儲存測試記錄檔
 
@@ -48,5 +49,3 @@ ms.locfileid: "39381449"
 
 - [編輯負載測試情節](../test/edit-load-test-scenarios.md)
 - [逐步解說：建立和執行負載測試](../test/walkthrough-create-and-run-a-load-test.md)
-- [如何：設定收集完整詳細資料以便啟用虛擬使用者活動圖](../test/how-to-configure-load-tests-to-collect-full-details.md)
-- [如何：指定儲存測試記錄的頻率](../test/how-to-specify-how-frequently-test-logs-are-saved.md)

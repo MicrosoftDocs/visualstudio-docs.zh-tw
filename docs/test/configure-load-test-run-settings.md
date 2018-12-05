@@ -10,16 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 2171912d3542049564f23ea69b06186cd1846943
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9c20a56ce2d78ab5ba3c3fdcde19af573a830fc5
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49813849"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895622"
 ---
 # <a name="configure-load-test-run-settings"></a>設定負載測試回合設定
 
 「回合設定」是會影響負載測試執行方式的一組屬性。 這些設定會在 [屬性] 視窗中，依照分類進行組織。
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 您可以在一個負載測試中擁有多個回合設定；不過，每個回合只能有其中一個回合設定在使用中。 其他的回合設定則會對後續的測試回合提供能夠快速選取替代設定的方法。
 

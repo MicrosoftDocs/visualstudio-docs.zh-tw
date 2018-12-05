@@ -12,22 +12,24 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 85759cc5f9297ba2bb0706352d788ba619a8021c
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 12b01e8428c35874f4a913c846f57f89a02162c6
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380664"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52894465"
 ---
 # <a name="how-to-create-a-web-service-test"></a>如何：建立 Web 服務測試
 
 您可以使用 Web 效能測試以測試 Web 服務。 藉由使用 [插入要求] 和 [插入 Web 服務要求] 選項，您可以在 [Web 效能測試編輯器] 中自訂個別要求，以便找到 Web 服務頁面。 一般而言，這些頁面不會顯示在 Web 應用程式中。 因此，您必須自訂要求，以取得這些頁面的存取權。
 
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
+
 下列程序使用 Commerce Starter Kit 內所包含的 Web 服務。 您可以從 [ASP.NET Commerce Starter Kit](http://go.microsoft.com/fwlink/?LinkId=181469) 下載它。
 
- **需求**
+**需求**
 
--   Visual Studio 企業版
+Visual Studio 企業版
 
 ## <a name="to-test-a-web-service"></a>測試 Web 服務
 

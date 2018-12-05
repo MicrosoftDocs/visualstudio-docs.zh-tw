@@ -13,16 +13,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 01ae9f07d5ec1c0eb2cddda6c24831f213f4bf86
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ed7b588d597626348b4c148c10dad165649b0468
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49826969"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895752"
 ---
 # <a name="create-custom-code-and-plug-ins-for-load-tests"></a>為負載測試建立自訂程式碼和外掛程式
 
 自訂外掛程式會使用您撰寫並附加至負載測試或 Web 效能測試內的程式碼。 您可以使用負載測試 API 和 Web 效能測試 API，針對測試建立可擴充至內建功能的自訂外掛程式。 您可以將多個外掛程式新增至負載測試。
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="tasks"></a>工作
 

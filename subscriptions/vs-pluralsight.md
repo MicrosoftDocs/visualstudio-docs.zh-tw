@@ -9,12 +9,12 @@ description: 了解有關隨附於所選 Visual Studio 訂用帳戶的 Pluralsig
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: c39b7e052f3e978530dbc093767fabde4172d8e2
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 18de63935f4d8c85e5b5f8d2c3ca26fa4d09b4fc
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389107"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895349"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶中的 Pluralsight 訓練課程權益
 
@@ -44,7 +44,7 @@ ms.locfileid: "52389107"
    - 按一下核取方塊，接受使用條款和隱私權原則
    - 按一下 [I agree, activate benefit] (我同意，啟用權益)。
      > [!div class="mx-imgBorder"]
-     > ![Pluralsight 權益啟用](_img/vs-pluralsight/vs-pluralsight-create-account-no-code.png)
+     > ![Pluralsight 權益啟用](_img/vs-pluralsight/vs-pluralsight-create-account-no-code.png)  
      > [!div class="mx-imgBorder"]
      > ![Pluralsight 權益條款](_img/vs-pluralsight/vs-pluralsight-terms.png)
 
@@ -81,7 +81,7 @@ ms.locfileid: "52389107"
 
 <sup>1</sup>  *包含：「禁止轉售 (NFR)」、Visual Studio Industry Partner (VSIP)、BizSpark、MCT Software & Services Developer、MCT Software & Service、Microsoft Valued Professional (MVP)、Region Director (RD)、Microsoft 合作夥伴網路 (MPN)、FTE、Imagine。*
 
-<sup>2</sup>  Pluralsight 權益僅限單人使用，與個人綁定。一旦訂閱者使用了權益，即無法重設。
+<sup>2</sup>  Pluralsight 權益僅限單人使用，與個人綁定。* 一旦訂閱者使用了權益，即無法重設。
 
 不確定您使用哪一個訂用帳戶？  連線到 [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) 以查看指派給您的電子郵件地址的所有訂用帳戶。 若沒有看到您的所有訂用帳戶，可能有一或多個訂用帳戶是指派到不同的電子郵件地址。  您必須以該電子郵件地址登入才能查看對應的訂用帳戶。
 

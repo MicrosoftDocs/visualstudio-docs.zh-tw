@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: ef21d270154025a52c603186ba959fad080e5bba
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: ce3e85965aa8823aa12102fff41401cf24eef6a7
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380534"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896727"
 ---
 # <a name="how-to-create-a-load-test-plug-in"></a>如何：建立負載測試外掛程式
 
@@ -27,6 +27,8 @@ ms.locfileid: "39380534"
 
 > [!NOTE]
 > 您也可以建立 Web 效能測試的外掛程式。 如需詳細資訊，請參閱[如何：建立 Web 效能測試外掛程式](../test/how-to-create-a-web-performance-test-plug-in.md)
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="to-create-a-load-test-plug-in-by-using-visual-c"></a>使用 Visual C# 建立負載測試外掛程式
 

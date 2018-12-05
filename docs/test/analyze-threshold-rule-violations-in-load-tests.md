@@ -17,18 +17,20 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 41837a9ff3d67f2d712352115bcb6581580b32a3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 17a79e4c684ee60d18288bc30ce1e3fce83dc8a5
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49812994"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895427"
 ---
 # <a name="analyzing-threshold-rule-violations-in-load-tests-using-the-load-test-analyzer"></a>使用負載測試分析器來分析負載測試中的臨界值規則違規
 
 臨界值規則與特定的效能計數器有關，而違規指的是效能計數器超過或未達設定值。 當您執行負載測試時，可以針對事先設定的臨界值規則分析所發生的違規。
 
 如果發生違規，**負載測試分析器**的狀態列就會出現 [臨界值違規] 超連結，並指出發生的違規數量。 您可以選擇超連結顯示臨界值違規資料表。 您也可以在 [計數器] 視窗和圖形上檢視臨界值違規。
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="view-threshold-violations-in-the-table"></a>在資料表中檢視臨界值違規
 
@@ -67,8 +69,6 @@ ms.locfileid: "49812994"
  您也可以選擇在圖形上顯示臨界值違規。 臨界值圖示會出現在圖形上發生臨界值違規的資料點旁。
 
  在計數器樹狀目錄中，臨界值違規的圖示是從特定的計數器節點傳送過來的，最深可達根節點。 這會提醒您在樹狀目錄上可能看不到 (因為樹狀目錄未展開) 之計數器的違規。
-
- 如需詳細資訊，請參閱[使用圖形檢視和資料表檢視中的計數器面板](../test/counters-panel-in-load-test-analyzer.md)。
 
 ## <a name="view-threshold-violations-on-the-graph"></a>在圖形上檢視臨界值違規
 

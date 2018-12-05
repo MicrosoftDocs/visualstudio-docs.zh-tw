@@ -13,20 +13,22 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: d54c599d812bfff393cbc4ccf330aa35b902f38f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: fc0dff5f9e2c647d153cf1c38bb33802b47151d6
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49950013"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895453"
 ---
 # <a name="manage-load-test-results-in-the-load-test-results-repository"></a>管理負載測試結果存放庫中的負載測試結果
 
 當您執行負載測試時，負載測試執行期間所收集到的任何資訊，都可以儲存在「負載測試結果儲存機制」(也就是 SQL 資料庫) 中。 [負載測試結果儲存機制] 含有效能計數器資料，以及已記錄之錯誤的相關資訊。 結果儲存機制資料庫是由控制器的安裝程式所建立，或是在第一次從本機執行負載測試時自動建立。 對於本機執行，如果不存在負載測試結構描述，就會自動建立資料庫。
 
- 如果您修改了控制器的結果存放庫連接字串以使用不同的伺服器，新的伺服器就需要執行 *loadtestresultsrepository.sql* 指令檔來建立結構描述。
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
- Visual Studio Enterprise 提供具名計數器集合，可根據技術收集常用的效能計數器。 當您在分析 IIS 伺服器、ASP.NET 伺服器或 SQL 伺服器時，這些集合都相當有用。 以計數器集合收集的所有資料，都會儲存在負載測試結果儲存機制中。
+如果您修改了控制器的結果存放庫連接字串以使用不同的伺服器，新的伺服器就需要執行 *loadtestresultsrepository.sql* 指令檔來建立結構描述。
+
+Visual Studio Enterprise 提供具名計數器集合，可根據技術收集常用的效能計數器。 當您在分析 IIS 伺服器、ASP.NET 伺服器或 SQL 伺服器時，這些集合都相當有用。 以計數器集合收集的所有資料，都會儲存在負載測試結果儲存機制中。
 
 > [!IMPORTANT]
 > 計數器集合與效能計數器資料不同。 效能集合是中繼資料 (Metadata)， 它定義了一組效能計數器，這些計數器的收集來源應該是執行特定角色 (例如 IIS 或 SQL Server) 的電腦。 因此這個計數器集合會是負載測試定義的一部分。 而效能計數器資料則是根據計數器集合、特定電腦之計數器集合的對應，以及取樣率來進行收集。
