@@ -11,16 +11,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ce47b5e9db018a8c3c525d5202a01f0860def2a6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c23d8149d6946464eef1a465ea952e6102d65086
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49940446"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896137"
 ---
 # <a name="create-a-data-driven-coded-ui-test"></a>建立資料驅動自動程式碼 UI 測試
 
 若要測試不同的情況，您可以使用不同的參數值，多次執行您的測試。 資料驅動自動程式碼 UI 測試是方便進行這項作業的方法。 您可以在資料來源中定義參數值，而且資料來源中的每個資料列都是自動程式碼 UI 測試的反覆項目。 整體測試結果將會根據所有反覆項目的結果。 例如，如果其中一個測試反覆項目失敗，則整體測試結果就是失敗。
+
+[!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
 **需求**
 

@@ -11,18 +11,20 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 5333fe1562a9398e930bb077dd2a4cfe6aab6825
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 082b3da934e602aef2f0c4eefcfffc45da2c40f0
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380244"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896077"
 ---
 # <a name="use-the-graphs-view-legend-to-analyze-load-tests"></a>使用圖表檢視圖例來分析負載測試
 
 [負載測試分析器] 的 [圖形] 檢視包含圖例面板，其中顯示每個與目前選取圖形相關聯之效能計數器的資訊。
 
 ![圖形檢視圖例](../test/media/load_viewlegend.png)
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 下列資訊都包含在此圖例中：
 
@@ -31,11 +33,11 @@ ms.locfileid: "39380244"
 -   **範圍：** 這個資料行會顯示效能計數器的 Y 軸範圍。 根據預設，這個值會在樣本資料範圍變更時自動調整。 自動調整的範圍一定是 10 的下一個次方 (超過最大值)，包括十的負數次方。 圖形可以包含各種計數器，而且每個計數器各有不同的範圍。 因此，Y 軸不會標示任何特定範圍，不過卻會標示 0-100 的值，代表每個計數器總範圍的百分比。 例如，若為範圍是 1000 的計數器，Y 軸上的資料點 60 就會對應至計數器的值 600。
 
     > [!NOTE]
-    > 您可以將範圍鎖定為特定值，藉以關閉自動範圍值調整。 鎖定範圍時，任何超過此範圍的值都會顯示為您在圖形頂端指定的最大值。 請使用 [繪圖選項] 對話方塊，將範圍鎖定為特定值。 如需詳細資訊，請參閱[如何：指定圖表計數器的繪圖選項](../test/how-to-specify-plot-options-for-graphing-counters.md)。
+    > 您可以將範圍鎖定為特定值，藉以關閉自動範圍值調整。 鎖定範圍時，任何超過此範圍的值都會顯示為您在圖形頂端指定的最大值。 請使用 [繪圖選項] 對話方塊，將範圍鎖定為特定值。
 
 -   **計數器：** 四個名為 [計數器]、[執行個體]、[分類] 和 [電腦] 的資料行可唯一識別效能計數器。
 
--   **色彩：**[色彩] 資料行會顯示效能計數器之繪製線條的色彩和線條樣式。 請使用 [繪圖選項] 對話方塊來變更圖形上效能計數器的色彩或線條樣式。 您可以從圖例的捷徑功能表存取 [繪圖選項] 對話方塊。 如需詳細資訊，請參閱[如何：指定圖表計數器的繪圖選項](../test/how-to-specify-plot-options-for-graphing-counters.md)。
+-   **色彩：**[色彩] 資料行會顯示效能計數器之繪製線條的色彩和線條樣式。 請使用 [繪圖選項] 對話方塊來變更圖形上效能計數器的色彩或線條樣式。 您可以從圖例的捷徑功能表存取 [繪圖選項] 對話方塊。
 
 -   **統計資料：**[最小值]、[最大值]、[平均值] 和 [最後一筆] 資料行會顯示效能計數器的個別統計資料。 這些值會對應至顯示於圖形可見區域上的資料。 例如，如果您放大某個回合的區域，圖例統計資料就只會反映放大區域的值。 [最後一筆] 資料行是針對上次完成的取樣間隔，效能計數器所呈現的值。
 
@@ -59,6 +61,5 @@ ms.locfileid: "39380244"
 
 ## <a name="see-also"></a>另請參閱
 
-- [如何：指定圖表計數器的繪圖選項](../test/how-to-specify-plot-options-for-graphing-counters.md)
 - [如何：放大圖形中的某個區域](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md)
 - [在圖表檢視中分析負載測試結果](../test/analyze-load-test-results-in-the-graphs-view.md)
