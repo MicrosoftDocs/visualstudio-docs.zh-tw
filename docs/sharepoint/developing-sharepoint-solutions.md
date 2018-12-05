@@ -87,11 +87,11 @@ ms.locfileid: "51295900"
 |屬性名稱|描述|  
 |-------------------|-----------------|  
 |部署衝突解決|指定在部署專案項目時，如果其屬性與伺服器上已經存在的項目相同，所應採取的動作。 如需詳細資訊，請參閱 [Troubleshooting SharePoint Packaging and Deployment](../sharepoint/troubleshooting-sharepoint-packaging-and-deployment.md)。|  
-|功能屬性|指定一組值 (儲存為索引鍵/值組)，當部署至 SharePoint 時，這些值會隨附在功能當中。 部署功能之後，您可以在程式碼中存取屬性值。 如需詳細資訊，請參閱 [Providing Packaging and Deployment Information in Project Items](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)。|  
-|功能接收器|提供當專案項目所含的功能發生特定事件時，要執行的程式碼。 如需詳細資訊，請參閱 [Providing Packaging and Deployment Information in Project Items](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)。|  
+|功能屬性|指定一組值 (儲存為索引鍵/值組)，當部署至 SharePoint 時，這些值會隨附在功能當中。 部署功能之後，您可以在程式碼中存取屬性值。 如需詳細資訊，請參閱 [提供專案項目中的封裝和部署資訊](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)。|  
+|功能接收器|提供當專案項目所含的功能發生特定事件時，要執行的程式碼。 如需詳細資訊，請參閱 [提供專案項目中的封裝和部署資訊](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)。|  
 |資料夾名稱|SharePoint 專案項目資料夾的名稱。|  
-|專案輸出參考|指定相依性，例如您的專案項目需要執行的組件。 如需詳細資訊，請參閱 [Providing Packaging and Deployment Information in Project Items](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)。|  
-|安全控制項項目|指定可讓不受信任的使用者編輯的控制項。 如需詳細資訊，請參閱 [Providing Packaging and Deployment Information in Project Items](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)。|  
+|專案輸出參考|指定相依性，例如您的專案項目需要執行的組件。 如需詳細資訊，請參閱 [提供專案項目中的封裝和部署資訊](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)。|  
+|安全控制項項目|指定可讓不受信任的使用者編輯的控制項。 如需詳細資訊，請參閱 [提供專案項目中的封裝和部署資訊](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)。|  
   
 ### <a name="project-item-file-properties"></a>專案項目檔案屬性
   
