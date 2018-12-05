@@ -9,16 +9,18 @@ manager: douge
 ms.workload:
 - uwp
 author: gewarren
-ms.openlocfilehash: c01633f4814326867d7c7e43e345f4faf052622f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1cc8986c3101bb2048e0cd4ace739974031344ed
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49924976"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52894777"
 ---
 # <a name="set-a-unique-automation-property-for-uwp-controls-for-testing"></a>為 UWP 控制項設定唯一自動化屬性以進行測試
 
 如果您想要執行以 XAML 為基礎之 UWP 應用程式的自動程式化 UI 測試，則必須以唯一的自動化屬性識別每個控制項。 您可以根據應用程式中的 XAML 控制項類型來指派唯一自動化屬性。
+
+[!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
 ## <a name="static-xaml-definition"></a>靜態 XAML 定義
 
@@ -43,7 +45,7 @@ ms.locfileid: "49924976"
 在 XAML 中，將控制項的 **AutomationProperties.AutomationId** 明確地設定為 **ButtonX**。
 
 ```xaml
-<Button AutomationProperties.AutomationId="ButtonX" Height="31" HorizontalAlignment="Left" Margin="23,26,0,0"  VerticalAlignment="Top" Width="140" Click="ButtonX_Click" />
+<Button AutomationProperties.AutomationId="ButtonX" Height="31" HorizontalAlignment="Left" Margin="23,26,0,0"  VerticalAlignment="Top" Width="140" Click="ButtonX_Click" />
 ```
 
 在 XAML 中，將控制項的 **AutomationProperties.Name** 明確設定為 **ButtonY**。

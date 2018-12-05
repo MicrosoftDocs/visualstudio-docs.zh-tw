@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 30a19e786894a9722e6843a5c1c69cdf1f038e58
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: e3c090fbcbc1a322574a5b0eca06ce917594348b
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36297813"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896545"
 ---
 # <a name="configure-scenario-start-delays-in-load-tests"></a>在負載測試中設定情節啟動延遲
 
@@ -24,6 +24,8 @@ ms.locfileid: "36297813"
 比方說，如果您需要某個情節開始產生另一個情節會使用的項目，則可能需要使用 [延遲開始時間] 屬性。 您可以延遲使用項目的情節，讓產生項目的情節可以填入一些資料。
 
 而某個情節只能在一天中的特定時間中執行，這是另一個範例。 因此，您要延遲啟動情節以同步進行此項作業。
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="specify-the-delay-start-time-of-a-scenario"></a>指定情節的延遲開始時間
 

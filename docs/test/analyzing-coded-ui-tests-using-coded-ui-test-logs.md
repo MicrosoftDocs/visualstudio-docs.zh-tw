@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Studio 中使用自動程式化 UI 測試記錄分析自動程式化 UI 測試
+title: 使用自動程式化 UI 測試記錄分析自動程式化 UI 測試
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -9,16 +9,18 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 7d743dd11b67c3883bad815b26234717f377ff57
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 9c31dd90981cf39f1de296b2c96d6064afc730b4
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295991"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896675"
 ---
 # <a name="analyzing-coded-ui-tests-using-coded-ui-test-logs"></a>使用自動程式化 UI 測試記錄分析自動程式化 UI 測試
 
 自動程式碼 UI 測試記錄會篩選和錄製您自動程式碼 UI 測試執行的重要資訊。 記錄是以允許快速偵錯問題的格式所呈現。
+
+[!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
 ## <a name="step-1-enable-logging"></a>步驟 1：啟用記錄
 

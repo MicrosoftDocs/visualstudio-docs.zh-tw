@@ -12,16 +12,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 0310ac0ee0e6226f9f5685c590e4dc2e0c49b6b3
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: f5ec275c4b6e7fcf239aa0903ffe68757c5412cc
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176137"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896207"
 ---
 # <a name="configure-test-iterations-in-a-load-test-scenario"></a>在負載測試情節中設定測試反覆項目
 
 若要進行測試反覆項目設定，請使用 [負載測試編輯器] 和 [屬性] 視窗以編輯負載測試情節。 根據預設，設定的負載測試情節中，不會指定測試反覆項目上限。 您可以選擇在情節中設定反覆項目數目的上限，以及反覆項目之間暫停的時間長度。
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="specify-the-maximum-test-iterations-for-a-scenario"></a>針對情節指定測試反覆項目上限
 
@@ -45,7 +47,7 @@ ms.locfileid: "39176137"
 
  ![在情節中指定測試反覆項目](../test/media/loadtest_prop.png)
 
-### <a name="to-specify-the-maximum-test-iterations"></a>指定測試反覆項目上限
+### <a name="to-specify-the-maximum-test-iterations"></a>若要指定測試反覆項目上限
 
 1. 開啟負載測試。
 

@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fa998896ad4c67bcd9e10ee50b4939bdbf915330
-ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
+ms.openlocfilehash: 7f6b0855b18f12bd80ad17c5b544a95e5ee57de9
+ms.sourcegitcommit: d7f232a7596420e40ff8051d42cdf90203af4a74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52257364"
+ms.lasthandoff: 12/03/2018
+ms.locfileid: "52821366"
 ---
 # <a name="how-to-debug-for-absolute-beginners"></a>完全初學者如何偵錯
 
@@ -244,7 +244,7 @@ ms.locfileid: "52257364"
 
     ![語法錯誤](../debugger/media/beginners-no-definition.png)
 
-    雖然我們使用 `GType` 類型物件 (具有 `MGType` 屬性) 設定每個銀河，但偵錯工具不會將 `theGalaxy` 物件視為 `GType` 類型物件。 這是怎麼一回事？ 您想要仔細檢查設定銀河類型的任何程式碼。 當您這樣做時，您會看到 `GType` 類別確實具有 `MyGType` 屬性，但有些不對勁。 `object` 的相關錯誤訊息是條線索；對於語言解譯器，類型會顯示為 `object` 類型物件，而不是 `GType` 類型物件。
+    雖然我們使用 `GType` 類型物件 (具有 `MyGType` 屬性) 設定每個銀河，但偵錯工具不會將 `theGalaxy` 物件視為 `GType` 類型物件。 這是怎麼一回事？ 您想要仔細檢查設定銀河類型的任何程式碼。 當您這樣做時，您會看到 `GType` 類別確實具有 `MyGType` 屬性，但有些不對勁。 `object` 的相關錯誤訊息是條線索；對於語言解譯器，類型會顯示為 `object` 類型物件，而不是 `GType` 類型物件。
 
 1. 仔細檢查與設定銀河類型相關的程式碼，您會發現 `Galaxy` 類別的 `GalaxyType` 屬性已指定為 `object`，而不是 `GType`。
 

@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Studio 中使用不同的網頁瀏覽器搭配自動程式化 UI 測試
+title: 使用不同的 Web 瀏覽器搭配自動程式化 UI 測試
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -9,16 +9,18 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 088ae3f16e20234760194be3ed3d6ddb4beb98f3
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: f7301ef674e3ad3b940204be30bfffa878f88e45
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295614"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895102"
 ---
 # <a name="use-different-web-browsers-with-coded-ui-tests"></a>使用不同的網頁瀏覽器搭配自動程式化 UI 測試
 
 自動程式化 UI 測試可以使用 Internet Explorer 錄製測試，以自動測試 Web 應用程式。 之後，您可以自訂測試再使用 Internet Explorer 或其他瀏覽器類型的 Web 應用程式進行播放。
+
+[!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
 首先，安裝 [Selenium components for Coded UI Cross Browser Testing](https://marketplace.visualstudio.com/items?itemName=AtinBansal.SeleniumcomponentsforCodedUICrossBrowserTesting) (自動程式碼 UI 跨瀏覽器測試專用的 Selenium 元件)。
 

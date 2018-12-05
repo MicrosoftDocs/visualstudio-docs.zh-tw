@@ -1,6 +1,6 @@
 ---
 title: 自動化 UI 測試
-ms.date: 11/04/2016
+ms.date: 12/04/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
@@ -18,16 +18,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cbe8f1b9e0fc1fcc47a8d90e0033e8edb933e1aa
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: ce10c81265ecfd95f43d62c73d69c902eda1a6c6
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51296069"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896636"
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>使用 UI 自動化來測試您的程式碼
 
 在 Visual Studio 中，透過應用程式使用者介面 (UI) 來驅動應用程式的自動化測試稱為「自動程式化 UI 測試」(CUIT)。 這些測試包括 UI 控制項的功能測試。 它們可讓您確認整個應用程式 (包括其使用者介面) 正確運作。 自動程式碼 UI 測試特別適用於使用者介面中有驗證或其他邏輯時 (例如，在網頁中)。 它們也經常用來自動化現有手動測試。
+
+[!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
 如下圖所示，一般的開發體驗可能是一開始您只是建置應用程式，然後按一下各個 UI 控制項來確認功能都正確運作。 接著，您可能決定建立自動化測試，如此便不需要繼續手動測試應用程式。 視應用程式中測試的特定功能而定，您可以撰寫程式碼來進行功能測試，或進行可能包含 (也可能不包含) UI 層級測試的整合測試。 如果您想要直接存取某個商務邏輯，則可以編寫單元測試。 不過，在特定情況下，也可能對測試您應用程式中的各種 UI 控制項有所助益。 自動程式化 UI 測試可以確認程式碼變換不會影響您應用程式的功能。
 

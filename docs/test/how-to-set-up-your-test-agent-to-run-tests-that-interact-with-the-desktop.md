@@ -10,16 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: b8eba85de98dd46a8ff6ad44154249598a489f5a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f657babf33c315be2760cf59f3ec57525643f70e
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49862095"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52894569"
 ---
 # <a name="how-to-set-up-your-test-agent-to-run-tests-that-interact-with-the-desktop"></a>如何：將您的測試代理程式設定為執行與桌面互動的測試
 
 如果您想要執行與桌面互動的自動化測試，必須將代理程式設定成以處理序 (而不是服務) 的方式執行。 例如，如果您想要使用測試控制器和測試代理程式執行自動程式化 UI 測試，或想要執行測試並在執行測試時擷取視訊錄製，則必須設定代理程式做為處理序執行。 當使用 Visual Studio 將代理程式指派給測試設定中的角色，或使用 Microsoft Test Manager 將代理程式指派給環境中的角色時，必須針對指派給需要與桌面互動之角色的代理程式變更設定。
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 > [!WARNING]
 > 如果您使用 Microsoft Test Manager 設定實驗室環境，它會安裝測試代理程式。 您可以在 [環境建立精靈] 中指定，表示您要設定其中一個角色來執行自動程式化 UI 測試。

@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: ce49eb2e6892528d95e40bc1c40e36f355495c65
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d58bf2bc321b3041ffa0958786b976276acf0186
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49829283"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896298"
 ---
 # <a name="how-to-configure-network-emulation-using-test-settings-in-visual-studio"></a>如何：在 Visual Studio 中使用測試設定來設定網路模擬
 
@@ -24,7 +24,9 @@ ms.locfileid: "49829283"
 > [!WARNING]
 > 如果在實際網路上執行測試，實際網路與您模擬的網路相比較慢時，測試仍會以較慢的網路速度執行。 模擬也只會減慢網路環境速度，而不會加快速度。
 
- 下列程序說明如何從組態編輯器設定網路模擬。 這些步驟同時適用於 Microsoft Test Manager 和 Visual Studio 中的組態編輯器。
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
+
+下列程序說明如何從組態編輯器設定網路模擬。 這些步驟同時適用於 Microsoft Test Manager 和 Visual Studio 中的組態編輯器。
 
 > [!NOTE]
 > 網路模擬診斷資料配接器僅適用於 Visual Studio 測試設定。 它不會用於 Microsoft Test Manager 中的測試設定。
@@ -34,9 +36,9 @@ ms.locfileid: "49829283"
 > [!NOTE]
 > Network Service 帳戶 (這是測試代理程式的預設帳戶) 並不是 [Administrators] 群組的成員。
 
- **實際網路模擬**
+**實際網路模擬**
 
- Visual Studio 會針對所有測試類型使用軟體實際網路模擬。 其中包括負載測試。 實際網路模擬會藉由直接操作網路封包，來模擬網路狀況。 實際網路模擬器可以使用可靠的實體連結 (如乙太網路)，來同時模擬有線和無線網路。 下列網路屬性會納入實際網路模擬中：
+Visual Studio 會針對所有測試類型使用軟體實際網路模擬。 其中包括負載測試。 實際網路模擬會藉由直接操作網路封包，來模擬網路狀況。 實際網路模擬器可以使用可靠的實體連結 (如乙太網路)，來同時模擬有線和無線網路。 下列網路屬性會納入實際網路模擬中：
 
 - 網路的來回時間 (延遲)
 
@@ -50,12 +52,13 @@ ms.locfileid: "49829283"
 
 - 錯誤傳用
 
-  實際網路模擬在根據 IP 位址或 TCP、UDP 和 ICMP 之類通訊協定來篩選網路封包上，也提供了相當的彈性。
+實際網路模擬在根據 IP 位址或 TCP、UDP 和 ICMP 之類通訊協定來篩選網路封包上，也提供了相當的彈性。
 
-  網路架構開發人員和測試人員可以使用實際網路模擬，來模擬所要的測試環境、評定效能、預測變更的影響或者做出有關技術最佳化的決策。 與硬體測試平台相較之下，實際網路模擬是成本更低但彈性更高的一種解決方案。
+網路架構開發人員和測試人員可以使用實際網路模擬，來模擬所要的測試環境、評定效能、預測變更的影響或者做出有關技術最佳化的決策。 與硬體測試平台相較之下，實際網路模擬是成本更低但彈性更高的一種解決方案。
 
 ## <a name="configure-network-emulation-for-your-test-settings"></a>設定測試設定的網路模擬
- 執行這個程序中的步驟之前，您必須先從 Visual Studio 開啟測試設定，然後選取 [資料和診斷] 頁面。
+
+執行這個程序中的步驟之前，您必須先從 Visual Studio 開啟測試設定，然後選取 [資料和診斷] 頁面。
 
 ### <a name="to-configure-network-emulation-for-your-test-settings"></a>若要設定測試設定的網路模擬
 
