@@ -16,18 +16,20 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: e2d857ccc22d6e824d32a5ae429295563bba334d
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 91e1b3c3a094e9bb510132d9160432a868fd559c
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39175669"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896441"
 ---
 # <a name="how-to-access-load-test-results-for-analysis"></a>如何：存取負載測試結果以進行分析
 
 當您從 [負載測試編輯器] 執行負載測試時，負載測試結果會自動開啟，而且執行中的負載測試會顯示在 [負載測試分析器] 中。 當您從命令列執行負載測試時，必須手動存取負載測試結果。
 
 已完成之負載測試的負載測試結果包含效能計數器樣本，以及定期從受測電腦收集而來的錯誤資訊。 您可以在負載測試回合進行期間收集大量效能計數器樣本。 收集的效能資料量會視測試回合的長度、取樣間隔、受測電腦數量、收集的計數器數量、設定的資料收集器，以及記錄層級而定。 若為大型負載測試，所收集的效能資料數量可能很輕易就達到數 GB。 如需詳細資訊，請參閱[測試控制器和測試代理程式](configure-test-agents-and-controllers-for-load-tests.md)。
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="to-access-a-load-test-result"></a>存取負載測試結果
 
