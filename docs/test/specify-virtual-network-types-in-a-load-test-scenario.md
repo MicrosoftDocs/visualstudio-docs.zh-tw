@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Studio 中指定負載測試情節中的虛擬網路類型
+title: 在負載測試情節中指定虛擬網路類型
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,32 +14,34 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: b1f545260b3632c8097ce4bfed9eff7f2de0ccbd
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 586038d325f17d37167166a361ee214d959ba2ab
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380224"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52894673"
 ---
 # <a name="specify-virtual-network-types-in-a-load-test-scenario"></a>在負載測試情節中指定虛擬網路類型
 
 「網路混合」提供在負載測試情節中更真實的模擬負載方法。 負載是以網路類型的異質混合，而非使用單一網路類型所產生。 您會更貼切地呈現使用者與應用程式的互動方式。
 
- 網路混合會指定一位虛擬使用者執行特定「網路設定檔」的可能性。 網路設定檔則可模擬應用程式層的網路頻寬， 但它並不會模擬延遲時間 (Latency)。
+網路混合會指定一位虛擬使用者執行特定「網路設定檔」的可能性。 網路設定檔則可模擬應用程式層的網路頻寬， 但它並不會模擬延遲時間 (Latency)。
 
- 建立負載測試時，您可能想模擬該負載透過一或多種網路連接類型產生。 網路混合提供數種網路類型。 網路混合會模擬不同的網路。 當您選擇 `Cable-DSL 1.5Mbps` 之類的選項時，等候時間會插入測試內，以便模擬選取的頻寬。
+建立負載測試時，您可能想模擬該負載透過一或多種網路連接類型產生。 網路混合提供數種網路類型。 網路混合會模擬不同的網路。 當您選擇 `Cable-DSL 1.5Mbps` 之類的選項時，等候時間會插入測試內，以便模擬選取的頻寬。
 
- 網路混合的運作方式和其他混合選項類似。 與某個虛擬使用者關聯的網路類型，是依照網路混合隨意選擇的。 該使用者的測試會使用特定的網路類型執行，視您在混合中指定的可能性而定。
+網路混合的運作方式和其他混合選項類似。 與某個虛擬使用者關聯的網路類型，是依照網路混合隨意選擇的。 該使用者的測試會使用特定的網路類型執行，視您在混合中指定的可能性而定。
 
- 指定網路混合之後，便可加入和移除網路類型。 您還可以使用混合控制，變更網路混合的散發。
+指定網路混合之後，便可加入和移除網路類型。 您還可以使用混合控制，變更網路混合的散發。
 
- 混合控制項可讓您輕鬆調整情境中網路的分佈。
+混合控制項可讓您輕鬆調整情境中網路的分佈。
 
- 如需詳細資訊，請參閱[關於混合控制項](../test/specify-virtual-network-types-in-a-load-test-scenario.md)。
+如需詳細資訊，請參閱[關於混合控制項](../test/specify-virtual-network-types-in-a-load-test-scenario.md)。
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="true-network-emulation"></a>實際網路模擬
 
- Visual Studio 會針對所有測試類型 (包括負載測試) 使用軟體實際網路模擬。 實際網路模擬會藉由直接操作網路封包，來模擬網路狀況。 實際網路模擬器可以使用可靠的實體連結 (如乙太網路)，來同時模擬有線和無線網路。 下列網路屬性會納入實際網路模擬中：
+Visual Studio 會針對所有測試類型 (包括負載測試) 使用軟體實際網路模擬。 實際網路模擬會藉由直接操作網路封包，來模擬網路狀況。 實際網路模擬器可以使用可靠的實體連結 (如乙太網路)，來同時模擬有線和無線網路。 下列網路屬性會納入實際網路模擬中：
 
 -   網路的來回時間 (延遲)
 

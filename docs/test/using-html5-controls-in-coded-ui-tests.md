@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Studio 中的自動程式化 UI 測試中使用 HTML5 控制項
+title: 在自動程式化 UI 測試中使用 HTML5 控制項
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -9,16 +9,18 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 418c0aa6660b01896252d04a711d4069da389f00
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a603a662c9007ab3ee0e66df0b23959bfdce83fb
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49914485"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896183"
 ---
 # <a name="using-html5-controls-in-coded-ui-tests"></a>在自動程式化 UI 測試中使用 HTML5 控制項
 
 自動程式化 UI 測試支援 Internet Explorer 9 和 Internet Explorer 10 所含的一些 HTML5 控制項。
+
+[!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
  **需求**
 
@@ -27,15 +29,14 @@ ms.locfileid: "49914485"
 > [!WARNING]
 > 在 Internet Explorer 10 之前的版本，可以在相較於 Internet Explorer 處理序更高的權限層級中，執行自動程式碼 UI 測試。 在 Internet Explorer 10 執行自動程式碼 UI 測試時，自動程式碼 UI 測試和 Internet Explorer 程序必須是相同的權限層級。 這是因為 Internet Explorer 10 中的 AppContainer 功能更安全。
 
-
 > [!WARNING]
 > 如果您在 Internet Explorer 10 中建立自動程式碼 UI 測試，可能無法使用 Internet Explorer 9 或 Internet Explorer 8 執行。 這是因為 Internet Explorer 10 包含 HTML5 控制項，例如 Audio、Video、ProgressBar 和 Slider。 Internet Explorer 9 或 Internet Explorer 8 無法辨識這些 HTML5 控制項。 同樣地，使用 Internet Explorer 9 的自動程式碼 UI 測試可能包含一些 Internet Explorer 8 無法辨識的 HTML5 控制項。
 
-
 ## <a name="audio-control"></a>音訊控制項
- **音訊控制項：** 正確記錄和播放 HTML5 Audio 控制項上的動作。
 
- ![HTML5 Audio 控制項](../test/media/codedui_html5_audio.png)
+**音訊控制項：** 正確記錄和播放 HTML5 Audio 控制項上的動作。
+
+![HTML5 Audio 控制項](../test/media/codedui_html5_audio.png)
 
 |動作|錄製|產生的程式碼|
 |-|---------------|-|

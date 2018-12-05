@@ -13,16 +13,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: ad1dff59ed942c16f05176f3e26f0042234d4933
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 365b1be6dd3c383c42b08d2c480db7fad104c48f
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380162"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52894517"
 ---
 # <a name="how-to-create-a-web-performance-test-plug-in"></a>如何：建立 Web 效能測試外掛程式
 
 Web 效能測試外掛程式可以讓您在 Web 效能測試的主要宣告式陳述式之外找出及重複使用程式碼。 自訂的 Web 效能測試外掛程式則能讓您在執行 Web 效能測試時呼叫某些程式碼。 在每個測試反覆項目中，Web 效能測試外掛程式都會執行一次。 此外，如果您覆寫測試外掛程式中的 PreRequest 或 PostRequest 方法，這些要求外掛程式將會分別在每項要求之前或之後執行。
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 您可以建立自訂的 Web 效能測試外掛程式，方法是從 <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestPlugin> 基底類別中衍生您自己的類別。
 

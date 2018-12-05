@@ -10,16 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: f5e7a56ff01e06c0d5046ab477ec78635f01f6c4
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 3bff9be24d5d1f615270bc80790a04e85e7cf25c
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381907"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895323"
 ---
 # <a name="how-to-select-the-active-run-setting-for-a-load-test"></a>如何：選取負載測試的使用中回合設定
 
 使用 [新增負載測試精靈] 建立負載測試之後，您就可以使用 [負載測試編輯器] 來變更情節屬性，以便符合您的測試需求和目標。
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 負載測試可以包含一或多個「回合設定」，這是指一組會影響負載測試執行方式的屬性。 這些設定會在 [屬性] 視窗中，依照分類進行組織。 負載測試執行時，它會使用目前設為使用中的回合設定。
 
@@ -31,8 +33,6 @@ ms.locfileid: "39381907"
 在 [負載測試編輯器] 中，使用中的回合設定可由 "[Active]" 後置字元加以辨識。
 
 ## <a name="select-the-active-run-setting"></a>選取使用中的回合設定
-
-### <a name="to-select-the-active-run-setting-in-a-load-test"></a>若要在負載測試中選取使用中的回合設定
 
 1.  開啟負載測試。
 
