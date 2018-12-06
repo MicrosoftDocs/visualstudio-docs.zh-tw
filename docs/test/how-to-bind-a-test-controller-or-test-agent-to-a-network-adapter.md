@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 7ec26a9356c0136404f6fb9fe97e88b7b40ecf7f
-ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
+ms.openlocfilehash: 222fe589a0d4282531b9ee73d476678d54747e7b
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39203959"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896043"
 ---
 # <a name="how-to-bind-a-test-controller-or-test-agent-to-a-network-adapter"></a>如何：將測試控制器或測試代理程式繫結至網路介面卡
 
@@ -31,9 +31,11 @@ ms.locfileid: "39203959"
 >
 > 在有超過一張以上網路介面卡的電腦上安裝測試控制器，便可能導致此錯誤。 也有可能在您嘗試執行測試之前，都能夠成功安裝代理程式，而且不會看到這個問題。
 
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
+
 ## <a name="bind-a-test-controller-to-a-specific-network-adapter"></a>將測試控制器繫結至特定網路介面卡
 
-### <a name="to-obtain-the-ip-addresses-of-the-network-adapters"></a>取得網路介面卡的 IP 位址
+### <a name="to-obtain-the-ip-addresses-of-the-network-adapters"></a>若要取得網路介面卡的 IP 位址
 
 1.  在 Microsoft Windows 中選擇 [開始]，在 [開始搜尋] 方塊中鍵入 **cmd**，然後選擇 **Enter**。
 

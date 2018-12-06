@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Studio 中啟用控制項的自動程式化 UI 測試功能
+title: 啟用控制項的自動程式化 UI 測試功能
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -9,18 +9,20 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 6f71012cca199cbee90995be654a75c1abb7fa79
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: b9f9256407f854e5e7eefbca0cdd767679b9c88c
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39153559"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895947"
 ---
 # <a name="enable-coded-ui-testing-of-your-controls"></a>啟用控制項的自動程式化 UI 測試功能
 
 請實作自動程式化 UI 測試架構的支援，讓您的控制項能夠進行測試。 您可以用累加方式加入不斷增加的支援層級。 請從支援錄製和播放以及屬性驗證開始。 然後，以此為建置基礎，讓自動程式化的 UI 測試產生器能夠辨識控制項的自訂屬性。 請提供自訂類別，以從產生的程式碼存取那些屬性。 您也可以協助自動程式化 UI 測試產生器，以較接近所錄製動作之意圖的方式來擷取動作。
 
 ![CUIT&#95;Full](../test/media/cuit_full.png)
+
+[!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
 ## <a name="support-record-and-playback-and-property-validation-by-implementing-accessibility"></a>藉由實作協助工具，支援錄製和播放以及屬性驗證
 

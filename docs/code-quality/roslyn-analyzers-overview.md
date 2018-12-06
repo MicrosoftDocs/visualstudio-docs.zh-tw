@@ -1,5 +1,5 @@
 ---
-title: Visual Studio 中的 Roslyn 分析器
+title: 使用 Roslyn 分析器的程式碼分析
 ms.date: 03/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
@@ -13,16 +13,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3d5836c0522ef97a634f44799934aab2750b3a45
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 620f2905e2511ed403f0d25f32fa1bfc9b1eca68
+ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39511418"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "51948838"
 ---
 # <a name="overview-of-net-compiler-platform-analyzers"></a>.NET Compiler Platform 分析器概觀
 
-Visual Studio 2017 包含一組內建的 .NET Compiler Platform 分析器，會分析您鍵入的 C# 和 Visual Basic 程式碼。 您可以將其他分析器安裝為 Visual Studio 延伸模組，或根據每個專案安裝為 NuGet 套件。 分析器會查看程式碼樣式、程式碼品質和可維護性、程式碼設計，以及其他問題。
+Visual Studio 2017 包含一組內建的 .NET Compiler Platform 分析器，會分析您鍵入的 C# 和 Visual Basic 程式碼。 分析器會查看程式碼樣式、程式碼品質和可維護性、程式碼設計，以及其他問題。 您可以將其他分析器安裝為 Visual Studio 延伸模組，或根據每個專案安裝為 NuGet 套件。
 
 如果分析器發現違反規則，則會在程式碼編輯器中將違反的程式碼加上「曲線」，並在 [錯誤清單] 中回報這些違規。
 

@@ -11,16 +11,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 5d5e378e62f03208c620669fada783fc5fdfb1b1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e184db43fcaca96008f85daffdb9abdbc41df07b
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49842166"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895219"
 ---
 # <a name="how-to-specify-the-timing-details-storage-property-for-a-load-test-run-setting"></a>如何：指定負載測試回合設定的計時詳細資料儲存區屬性
 
 使用 [新增負載測試精靈] 建立負載測試之後，您就可以使用 [負載測試編輯器] 來變更設定，以便符合您的測試需求和目標。
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 您可以在 [屬性] 視窗中編輯回合設定的 [計時詳細資料儲存區] 屬性值。 [計時詳細資料儲存區] 屬性可以設為下列任何選項：
 

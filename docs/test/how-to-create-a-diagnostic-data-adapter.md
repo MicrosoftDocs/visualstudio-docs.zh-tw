@@ -10,27 +10,29 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 25b332fb822524f5fcab5e06ab97bfe2d6af8529
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 25adfc867ca208f367f047e4cb94322718e12b52
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49851604"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895310"
 ---
 # <a name="how-to-create-a-diagnostic-data-adapter"></a>如何：建立診斷資料配接器
 
 若要建立「診斷資料配接器」，您可以使用 Visual Studio 建立類別庫，然後將 Visual Studio Enterprise 提供的診斷資料配接器 API 新增類別庫。 在處理測試回合期間引發的事件時，請以資料流或檔案的形式將您所需要的資訊傳送至架構所提供的 <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionSink>。 測試完成時，傳送至 <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionSink> 的資料流或檔案會儲存為測試結果的附件。 如果從這些測試結果建立 Bug，或當使用[!INCLUDE[mtrlong](../test/includes/mtrlong_md.md)]時，檔案也會連結至 Bug。
 
- 您可以建立診斷資料配接器，其會影響執行測試所在機器，或屬於要用來執行待測應用程式環境的機器。 例如，收集執行測試之測試機器上的檔案，或者收集擔任應用程式之 Web 伺服器角色的機器上的檔案。
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
- 您可以為診斷資料配接器指定易記的名稱，這個名稱會在使用 Microsoft Test Manager 或使用 Visual Studio 建立測試設定時顯示。 測試設定可讓您定義在執行測試時，要以環境中的哪個電腦角色執行特定診斷資料配接器。 您也可以在建立測試設定時，設定診斷資料配接器。 例如，您可建立從 Web 伺服器收集自訂記錄檔的診斷資料配接器。 當建立測試設定時，您可以選取在執行這個 Web 伺服器角色的一部或多部電腦上執行此診斷資料配接器，並且可以修改測試設定的組態，以只收集最後建立的三個記錄檔。 如需測試設定的詳細資訊，請參閱[使用測試設定收集診斷資訊](../test/collect-diagnostic-information-using-test-settings.md)。
+您可以建立診斷資料配接器，其會影響執行測試所在機器，或屬於要用來執行待測應用程式環境的機器。 例如，收集執行測試之測試機器上的檔案，或者收集擔任應用程式之 Web 伺服器角色的機器上的檔案。
 
- 當執行測試時會引發事件，如此診斷資料配接器便可以在該時間點執行工作。
+您可以為診斷資料配接器指定易記的名稱，這個名稱會在使用 Microsoft Test Manager 或使用 Visual Studio 建立測試設定時顯示。 測試設定可讓您定義在執行測試時，要以環境中的哪個電腦角色執行特定診斷資料配接器。 您也可以在建立測試設定時，設定診斷資料配接器。 例如，您可建立從 Web 伺服器收集自訂記錄檔的診斷資料配接器。 當建立測試設定時，您可以選取在執行這個 Web 伺服器角色的一部或多部電腦上執行此診斷資料配接器，並且可以修改測試設定的組態，以只收集最後建立的三個記錄檔。 如需測試設定的詳細資訊，請參閱[使用測試設定收集診斷資訊](../test/collect-diagnostic-information-using-test-settings.md)。
+
+當執行測試時會引發事件，如此診斷資料配接器便可以在該時間點執行工作。
 
 > [!IMPORTANT]
 > 這些事件可能會在不同的執行緒上引發，尤其是您在多部電腦上執行測試時。 因此，您必須留意可能發生的執行緒問題，並避免不慎損毀自訂配接器的內部資料。 請確定您的診斷資料配接器符合執行緒安全。
 
- 以下是您在建立診斷資料配接器時可以使用之關鍵事件的部分清單。 如需診斷資料配接器事件的完整清單，請參閱抽象 <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionEvents> 類別。
+以下是您在建立診斷資料配接器時可以使用之關鍵事件的部分清單。 如需診斷資料配接器事件的完整清單，請參閱抽象 <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionEvents> 類別。
 
 |Event - 事件|描述|
 |-|-----------------|
@@ -44,9 +46,9 @@ ms.locfileid: "49851604"
 > [!NOTE]
 > 當手動測試完成時，系統不會將其他資料收集事件傳送至診斷資料配接器。 重新執行某項測試時，會使用新的測試案例識別項。 如果使用者在測試期間重設測試 (這會引發 <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionEvents.TestCaseReset> 事件)，或變更測試步驟結果，則不會傳送任何資料收集事件至診斷資料配接器，但測試案例識別項仍會相同。 若要判斷測試案例是否已重設，您必須追蹤診斷資料配接器中的測試案例識別項。
 
- 使用下列程序建立診斷資料配接器，以收集根據您在建立測試設定時所設定之資訊的資料檔案。
+使用下列程序建立診斷資料配接器，以收集根據您在建立測試設定時所設定之資訊的資料檔案。
 
- 如需診斷資料配接器專案的完整範例 (包括自訂組態編輯器)，請參閱[建立診斷資料配接器的專案範例](../test/sample-project-for-creating-a-diagnostic-data-adapter.md)。
+如需診斷資料配接器專案的完整範例 (包括自訂組態編輯器)，請參閱[建立診斷資料配接器的專案範例](../test/sample-project-for-creating-a-diagnostic-data-adapter.md)。
 
 ##  <a name="create-and-install-a-diagnostic-data-adapter"></a>建立和安裝診斷資料配接器
 

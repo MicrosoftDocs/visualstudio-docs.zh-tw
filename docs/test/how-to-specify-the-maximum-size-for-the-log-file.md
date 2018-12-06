@@ -10,16 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 29329cb1403745b80d68670f5316ce570582d72c
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 22cc77426abca46a95fd12c8954fd0965a194f5e
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39379393"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52894426"
 ---
 # <a name="how-to-specify-the-maximum-size-for-the-log-file-for-load-tests"></a>如何：指定負載測試的記錄檔大小上限
 
 根據預設，用於負載測試之記錄檔的大小上限設定為 20 MB。 您可以透過編輯與控制器服務建立關聯的組態檔，來變更這個值。
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="specify-the-maximum-log-file-size-for-load-test"></a>指定負載測試的記錄檔大小上限
 

@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 095e986e46332b4bf548cb84188d9f0c35324bc3
-ms.sourcegitcommit: 20d1b9a5bf041bb28453501eb63bc0537a8e4f54
+ms.openlocfilehash: 2a2f75e1aee917a3f4cc9dc7feed15619c23f24e
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/14/2018
-ms.locfileid: "51645181"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895596"
 ---
 # <a name="fix-non-detectable-dynamic-parameters-in-a-web-performance-test"></a>在 Web 效能測試中修正無法偵測的動態參數
 
@@ -30,6 +30,8 @@ ms.locfileid: "51645181"
 -   設定為查詢字串或表單張貼參數的動態參數值。 這些是在錄製 Web 效能測試之後，透過動態參數偵測來處理。
 
 有部分類型的動態參數是偵測不到的。 由於每次執行測試時動態的值可能會不同，未偵測到的動態參數將會在您執行 Web 效能測試時造成測試失敗。 若要正確處理這些參數，您可以在 Web 效能測試中，手動將擷取規則加入至動態參數。
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="create-and-run-a-web-app-with-dynamic-parameters"></a>建立並執行具有動態參數的 Web 應用程式
 

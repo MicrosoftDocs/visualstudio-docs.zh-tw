@@ -16,21 +16,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dbd3fe20377cd2aa4954e904fec50702cc9b7120
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: 09881462b0723dc1e601c908efeabc317ed70b69
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34843987"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388945"
 ---
 # <a name="projects-and-solutions-page-options-dialog-box"></a>選項對話方塊、專案和方案頁面
 
 設定與專案和解決方案有關的 Visual Studio 行為。 若要存取這些選項，請選取 [工具] > [選項] 來展開 [專案和方案]，然後選取 [一般]。
 
 專案和範本資料夾的預設路徑會透過相同對話方塊中的 [位置] 索引標籤進行設定。
-
-> [!NOTE]
-> 視您使用中的設定或版本而定，UI 中的可用選項可能不同於此處所描述的選項。 撰寫本文時，會考慮到 [一般開發設定]。 若要檢視或變更您的設定，請選擇 [工具] 功能表上的 [匯入和匯出設定]。 如需詳細資訊，請參閱[將 Visual Studio IDE 個人化](../../ide/personalizing-the-visual-studio-ide.md)。
 
 ## <a name="general-page"></a>[一般] 頁面
 

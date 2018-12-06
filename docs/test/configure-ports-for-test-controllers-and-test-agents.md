@@ -15,20 +15,22 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 9f41e372f6c75e10ebf4d66fcd68eb4652b02f0f
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: c5b740329a1d0cdf9810401a1056ba901056a3af
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36297593"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52894530"
 ---
 # <a name="configure-ports-for-test-controllers-and-test-agents"></a>設定測試控制器和測試代理程式的通訊埠
 
 您可以變更測試控制器、測試代理程式和用戶端所使用的預設連入通訊埠。 如果您要嘗試使用測試控制器、測試代理程式或用戶端搭配與通訊埠設定衝突的其他某些軟體，這可能就是必要的動作。 其他變更通訊埠的原因是測試控制器與用戶端之間的防火牆限制。 在此情況下，您可能會想要手動設定要納入的通訊埠，以便針對防火牆啟用此通訊埠，讓測試控制器能夠將結果傳送至用戶端。
 
- 下圖顯示測試控制器、測試代理程式與用戶端之間的連接點。 本文將概述哪些通訊埠會用於連入和連出連線，以及這些通訊埠所使用的安全性限制。
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
- ![測試控制器和測試代理程式的通訊埠與安全性](../test/media/test-controller-agent-firewall.png)
+下圖顯示測試控制器、測試代理程式與用戶端之間的連接點。 本文將概述哪些通訊埠會用於連入和連出連線，以及這些通訊埠所使用的安全性限制。
+
+![測試控制器和測試代理程式的通訊埠與安全性](../test/media/test-controller-agent-firewall.png)
 
 ## <a name="incoming-connections"></a>連入連線
 

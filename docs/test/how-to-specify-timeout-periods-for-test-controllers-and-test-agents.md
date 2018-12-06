@@ -13,18 +13,20 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: e70c468a70d37d1d8e261844c004af785a68eb54
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9c7e85dcbd62c5f068ce3286145fec2ddddc7947
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49827931"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895687"
 ---
 # <a name="how-to-specify-timeout-periods-for-test-controllers-and-test-agents"></a>如何：指定測試控制器和測試代理程式的逾時期限
 
 測試控制器和測試代理程式都有數個逾時設定，指定發生錯誤而失敗之前應該等候彼此回應或資料來源回應的時間。 在某些情況下，可能需要編輯逾時值，以符合您的拓撲需求或解決其他環境問題。 若要編輯逾時值，請編輯與測試控制器或測試代理程式相關聯的 XML 組態檔，如下列程序所示。
 
- 若要編輯測試控制器或測試代理程式的各種逾時設定，請使用下表中的機碼名稱和值修改下列組態檔：
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
+
+若要編輯測試控制器或測試代理程式的各種逾時設定，請使用下表中的機碼名稱和值修改下列組態檔：
 
 -   測試控制器：*QTController.exe.config*
 

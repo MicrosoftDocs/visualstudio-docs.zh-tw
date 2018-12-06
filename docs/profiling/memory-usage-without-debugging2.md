@@ -1,7 +1,7 @@
 ---
-title: 不使用 VS 偵錯工具分析記憶體使用量 | Microsoft Docs
+title: 分析記憶體使用量 (不偵錯) | Microsoft Docs
 ms.custom: H1Hack27Feb2017
-ms.date: 09/28/2018
+ms.date: 11/15/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
@@ -14,195 +14,210 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4fb3f0c5d44ed8043266640cfeb30838f7d37894
-ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
+ms.openlocfilehash: 4dcc5c66998501044b04e4a8265d669927e3368a
+ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "51220771"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "51948929"
 ---
-# <a name="analyze-memory-usage-without-the-visual-studio-debugger"></a>不使用 Visual Studio 偵錯工具分析記憶體使用量
-您可以使用「記憶體使用量」工具 (不偵錯) 來執行下列動作  
+# <a name="analyze-memory-usage-without-the-debugger"></a>分析記憶體使用量 (不使用偵錯工具)
+
+[記憶體使用量] 工具會監視您的應用程式記憶體使用量。 您可以使用此工具，在 Visual Studio 中研究積極開發中案例的即時記憶體效果。 您可以建立詳細的應用程式記憶體狀態快照，並比較快照以找出記憶體問題的根本原因。  
   
-- 在開發案例時，就在 Visual Studio 中監控應用程式的記憶體使用量。  
+不論有無偵錯工具，都可以執行 [記憶體使用量] 工具。 下列指示說明如何使用 [記憶體使用量] 工具而不搭配 Visual Studio [效能分析工具] 中的偵錯工具。 
+
+>[!NOTE]
+>- 若要測量 .NET Core 應用程式的記憶體使用量，您必須使用 [記憶體使用量] 工具搭配偵錯工具。 如需指示，請參閱[分析 Visual Studio 中的記憶體使用量](memory-usage.md)。 
+>- 若要分析 JavaScript 或 HTML UWP 應用程式中的記憶體使用量，請使用 [效能分析工具] 中的 [JavaScript 記憶體](../profiling/javascript-memory.md)工具。
   
-- 建立應用程式記憶體狀態的詳細快照。  
+## <a name="memory-usage-diagnostic-sessions"></a>[記憶體使用量] 診斷工作階段  
+
+**開始 [記憶體使用量] 診斷工作階段：**
+
+1. 在 Visual Studio 中開啟 C# 通用 Windows (UWP) 專案。  
+   
+1. 在功能表列上，依序選擇 [偵錯] > [效能分析工具]。  
+   
+1. 選取 [記憶體使用量]，然後選取 [開始]。  
+   
+   ![開始 [記憶體使用量] 診斷工作階段](../profiling/media/memuse_start_diagnosticssession.png "開始 [記憶體使用量] 診斷工作階段")  
   
-- 比較快照，以找出記憶體問題的根本原因。  
+### <a name="monitor-memory-use"></a>監控記憶體使用量 
+
+當您開始診斷工作階段時，您的應用程式會啟動，且 [診斷工具] 視窗會顯示應用程式記憶體使用量的時間軸圖形。  
+
+![記憶體使用量概觀頁面](../profiling/media/memuse__reportoverview.png "MEMUSE__ReportOverview")  
+
+時間軸圖形會在應用程式執行時顯示記憶體波動。 圖形中的高峰通常表示一些程式碼正在收集或建立資料，然後在處理完成時將它捨棄。 大型的高峰表示您可能可以最佳化的區域。 更值得關注的是未傳回的記憶體耗用提高，因為它可能表示記憶體使用效率低落，或甚至是記憶體流失。  
   
-  目前，若要測量 .NET Core 應用程式的記憶體使用量，您必須使用已連結偵錯工具的工具。 至於其他受控和原生應用程式，您可以使用已連結或未連結偵錯工具的工具。 本主題中的螢幕擷取畫面顯示 UWP XAML 應用程式。 如果您想要對使用 JavaScript 和 HTML 的 UWP 應用程式分析記憶體使用情況，請參閱[分析記憶體使用量 (JavaScript)](../profiling/javascript-memory.md)。
+### <a name="take-snapshots-of-app-memory-states"></a>擷取應用程式記憶體狀態的快照 
+
+應用程式會使用大量的物件，您可能會想專注分析單一案例。 或者，您可能會發現要調查的記憶體問題。 您可以在診斷工作階段期間擷取快照，以便擷取特定時刻的記憶體使用量。 在記憶體問題出現之前先取得基準快照、第一次出現問題之後擷取另一張快照，且如果您能重複案例便再額外擷取快照，這是不錯的做法。  
+
+若要收集快照，當您想要擷取記憶體資料時，請選取 [擷取快照]。  
+
+###  <a name="BKMK_Close_a_monitoring_session"></a> 關閉診斷工作階段  
+
+若要停止監控工作階段而不建立報表，只需關閉診斷視窗。 當您完成時收集或擷取快照時若要產生報表，請選取 [停止收集]。  
+
+![停止收集](../profiling/media/memuse__stopcollection.png "停止收集")  
+
+##  <a name="memory-usage-reports"></a>[記憶體使用量] 報表 
+
+停止資料收集之後，[記憶體使用量] 工具會停止應用程式，並顯示 [記憶體使用量] 概觀報表。  
+
+![[記憶體使用量] 概觀頁面](../profiling/media/memuse__reportoverview1.png "[記憶體使用量] 概觀頁面")  
+
+### <a name="BKMK_Memory_Usage_snapshot_views"></a> [記憶體使用量] 快照 
+
+[快照] 窗格中的數字顯示擷取每個快照時，記憶體中的位元組和物件，以及快照與上一個快照之間的差異。 
+
+數字是連結，其會在新的 Visual Studio 視窗中開啟詳細的 [記憶體使用量] 報表檢視。 [快照詳細資料報表](#snapshot-details-report)顯示一張快照中的類型和執行個體。 [快照差異 (diff) 報表](#snapshot-difference-diff-reports)會比較兩張快照的類型和執行個體。  
   
-## <a name="start-a-memory-usage-diagnostic-session"></a>開始記憶體使用量診斷工作階段  
-  
-1.  在 Visual Studio 中開啟 C# 通用 Windows 專案。  
-  
-2.  在功能表列上，依序選擇 [偵錯] > [效能分析工具]。  
-  
-3.  選取 [記憶體使用量]，然後選擇頁面底部的 [啟動] 按鈕。  
-  
-     ![啟動記憶體使用量診斷工作階段](../profiling/media/memuse_start_diagnosticssession.png "MEMUSE_Start_DiagnosticsSession")  
-  
-## <a name="monitor-memory-use"></a>監控記憶體使用量  
- 您可以使用 [記憶體使用量] 工具產生詳細報表，用來尋找和修正問題，也可以用來研究您正在積極開發之案例的即時記憶體效果。  
-  
- 當您開始診斷工作階段時，您的應用程式會啟動，且 [診斷工具] 視窗會顯示應用程式記憶體使用量的時間軸圖形。  
-  
- ![記憶體使用量概觀頁面](../profiling/media/memuse__reportoverview.png "MEMUSE__ReportOverview")  
-  
- 時間軸圖形會顯示應用程式在執行時，在記憶體內的波動情況。 圖形中的高峰通常表示一些程式碼正在收集或建立資料，然後在處理完成時將它捨棄。 大型的高峰表示您可能可以最佳化的區域。 更值得關注的是未傳回的記憶體耗用提高，因為它可能表示記憶體使用效率低落，或甚至是記憶體流失。  
-  
-###  <a name="BKMK_Close_a_monitoring_session"></a>關閉監控工作階段  
- ![停止收集](../profiling/media/memuse__stopcollection.png "MEMUSE__StopCollection")  
-  
- 若要停止監控工作階段而不建立報表，只需關閉診斷視窗。 若要在擷取記憶體快照時產生報表，請選擇 [停止]。  
-  
-## <a name="take-snapshots-of-the-memory-state-of-your-app"></a>擷取應用程式記憶體狀態的快照  
- 如果您發現想要調查的記憶體問題，可以在診斷工作階段期間擷取快照，在特定時刻擷取記憶體內的物件。 由於應用程式使用大量且許多類型的物件，您可能會想專注分析單一案例。 在記憶體問題出現之前先取得基準快照、第一次出現問題之後擷取另一張快照，並且如果您能重複案例便再額外擷取一或多張快照，也是不錯的做法。  
-  
- 若要收集快照，請開始新的診斷工作階段。 想要擷取記憶體資料時，選擇 [擷取快照]。 若要產生報表，請選擇 [停止]。  
-  
-##  <a name="memory-usage-overview-page"></a>記憶體使用量概觀頁面  
- 停止資料收集之後，[記憶體使用量] 工具會停止應用程式，並顯示概觀報表。  
-  
- ![記憶體使用量概觀頁面](../profiling/media/memuse__reportoverview.png "MEMUSE__ReportOverview")  
-  
-###  <a name="BKMK_Memory_Usage_snapshot_views"></a>記憶體使用量快照檢視  
- 使用快照檢視可以在新的 Visual Studio 視窗中開啟詳細報表。 有兩種快照檢視：  
-  
-- [快照詳細資料報表](#snapshot-reports)會顯示一張快照中的類型和執行個體。  
-  
-- [快照差異 (diff) 報表](#snapshot-difference-diff-reports)會比較兩張快照中的類型和執行個體。  
-  
-  ![快照檢視連結](../profiling/media/memuse__snapshotview_numbered.png "MEMUSE__SnapshotView_Numbered")  
-  
-  在快照檢視的圖片中，有編號的項目是開啟 [記憶體使用量] 報表檢視的連結。  
+  ![快照檢視連結](../profiling/media/memuse__snapshotview_numbered.png "快照檢視連結")  
   
 |||  
 |-|-|  
-|![步驟 1](../profiling/media/procguid_1.png "ProcGuid_1")|連結文字顯示在擷取快照時，記憶體中的總位元組數。<br /><br /> 選擇這個連結可以顯示快照詳細資料報表，此報表依類型執行個體的大小總計進行排序。|  
-|![步驟 2](../profiling/media/procguid_2.png "ProcGuid_2")|連結文字顯示擷取快照時記憶體中的總物件數。<br /><br /> 選擇這個連結可以顯示快照詳細資料報表，此報表依類型執行個體的計數進行排序。|  
-|![步驟 3](../profiling/media/procguid_3.png "ProcGuid_3")|連結文字顯示此快照時的記憶體中物件大小總計與上一個快照大小總計之間的差異。<br /><br /> 此快照的記憶體大小大於與上一個快照時，連結文字是正數，大小較小時則為負數。 連結文字 [基準] 表示這個是診斷工作階段中的第一個快照。[無差異] 表示差異是零。<br /><br /> 選擇這個連結可以顯示快照差異報表，此報表依類型執行個體的大小總計差異進行排序。|  
-|![步驟 4](../profiling/media/procguid_4.png "ProcGuid_4")|連結文字顯示此快照中的記憶體物件總數與上一個快照物件數之間的差異。<br /><br /> 選擇這個連結可以顯示快照差異報表，此報表依類型執行個體的總計數差異進行排序。|  
+|![步驟 1](../profiling/media/procguid_1.png "ProcGuid_1")|在擷取快照時，記憶體中的總位元組數。<br /><br /> 選取這個連結可以顯示快照詳細資料報表，此報表依類型執行個體的大小總計進行排序。|  
+|![步驟 2](../profiling/media/procguid_2.png "ProcGuid_2")|在擷取快照時，記憶體中的物件總數。<br /><br /> 選取這個連結可以顯示快照詳細資料報表，此報表依類型執行個體的計數進行排序。|  
+|![步驟 3](../profiling/media/procguid_3.png "ProcGuid_3")|此快照中記憶體物件與上一個快照物件之大小總計之間的差異。 <br /><br /> 正數表示此快照的記憶體大小大於與上一個快照，負數則表示大小較小。 **基準**表示快照是診斷工作階段中的第一個。 **無任何差異**表示差異為零。<br /><br /> 選取這個連結可以顯示快照差異報表，此報表依執行個體類型的大小總計差異進行排序。|  
+|![步驟 4](../profiling/media/procguid_4.png "ProcGuid_4")|此快照中的記憶體物件與上一個快照物件總數之間的差異。<br /><br /> 選取這個連結可以顯示快照差異報表，此報表依執行個體類型的總計數差異進行排序。|  
   
-## <a name="snapshot-reports"></a>快照報表  
- ![記憶體使用量快照報表](../profiling/media/memuse_snapshotreport_all.png "MEMUSE_SnapshotReport_All")  
+## <a name="memory-usage-snapshot-reports"></a>[記憶體使用量] 快照報表 
+
+<a name="BKMK_Snapshot_report_trees"></a> 當您選取 [記憶體使用量] 概觀頁面中的其中一個快照連結時，會在新的頁面開啟快照報表。 
+
+![[記憶體使用量] 快照報表](../profiling/media/memuse_snapshotreport_all.png "[記憶體使用量] 快照報表")  
   
-###  <a name="BKMK_Snapshot_report_trees"></a>快照報表樹狀目錄  
+您可以在快照報表中，展開 [物件類型] 項目，以顯示子項目。 執行個體名稱是由 [記憶體使用量] 工作所產生的唯一識別碼。 
+
+如果 [物件類型] 是藍色，則您可以選取它以在個別視窗中巡覽至原始程式碼中的物件。  
+
+您無法辨識或不了解其在程式碼中參與情況的類型，可能是 .NET Framework、作業系統或編譯器物件。 [記憶體使用量] 工具會顯示這些物件，如果它們參與您物件的擁有權鏈結。  
+
+在快照報表中： 
+
+- [受控堆積] 樹狀結構顯示報表中的類型和執行個體。 選取類型或執行個體會顯示選取項目的 [根的路徑] 和 [參考的物件] 樹狀目錄。  
   
-####  <a name="BKMK_Managed_Heap"></a>Managed 堆積  
- Managed 堆積樹狀目錄 [Managed 堆積樹狀目錄 (快照詳細資料)](../profiling/memory-usage-without-debugging2.md#BKMK_Managed_Heap_tree__Snapshot_details_) 和 [Managed 堆積樹狀目錄 (快照差異)](../profiling/memory-usage-without-debugging2.md#BKMK_Managed_Heap_tree__Snapshot_diff_) 會在報表中顯示類型和執行個體。 選取類型或執行個體會顯示選取項目的 [根的路徑] 和 [參考的物件] 樹狀目錄。  
+- [根的路徑] 樹狀結構顯示參考類型或執行個體的物件鏈結。 .NET Framework 記憶體回收行程只會在對物件的所有參考都已釋放時才清除物件的記憶體。  
   
-####  <a name="BKMK_Paths_to_Root"></a>根的路徑  
- [根的路徑樹狀目錄 (快照詳細資料)](../profiling/memory-usage-without-debugging2.md#BKMK_Paths_to_Root_tree__Snapshot_details_) 和[根的路徑樹狀目錄 (快照差異)](../profiling/memory-usage-without-debugging2.md#BKMK_Paths_to_Root_tree__Snapshot_diff_) 會顯示參考類型或執行個體的物件鏈結。 .NET Framework 記憶體回收行程只會在對物件的所有參考都已釋放時才清除物件的記憶體。  
-  
-####  <a name="BKMK_Referenced_Objects"></a>參考的物件  
- [參考的物件樹狀目錄 (快照詳細資料)](../profiling/memory-usage-without-debugging2.md#BKMK_Referenced_Objects_tree__Snapshot_details_) 和[參考的物件樹狀目錄 (快照差異)](../profiling/memory-usage-without-debugging2.md#BKMK_Referenced_Objects_tree__Snapshot_diff_) 會顯示選取類型或執行個體所參考的物件。  
-  
-###  <a name="BKMK_Object_Type_and_Instance_fields"></a>物件類型和執行個體欄位  
- 當 [物件類型] 項目有子項目時，您可以選擇箭頭圖示來顯示它們。 如果 [物件類型] 文字的顏色是藍色，則可加以選擇，巡覽到其原始程式碼檔案中的物件。 原始程式檔會在個別的視窗中開啟。  
-  
- 執行個體名稱是由 [記憶體使用量] 工作所產生的唯一識別碼。  
-  
- 如果您注意到有不容易識別的類型，或您不知道該類型和您的程式碼有何關聯，其可能是 [記憶體使用量] 工具所顯示來自 .NET Framework、作業系統或編譯器的物件，因為它與您物件的所有權鏈結有關。  
+- [參考的類型] 或 [參考的物件] 樹狀結構顯示所選取類型或執行個體參考的物件。  
   
 ###  <a name="BKMK_Report_tree_filters_"></a>報表樹狀目錄篩選條件  
- 大多數應用程式包含的類型數量大得驚人，應用程式開發人員對其中大部分都沒什麼興趣。 [記憶體使用量] 工具定義兩個篩選條件，您可以用來隱藏 [Managed 堆積] 和 [根的路徑] 樹狀目錄中的大部分類型。 您也可以根據類型名稱來篩選樹狀目錄。  
+
+在應用程式中，有許多類型對於應用程式開發人員而言不是非常有趣。 快照報表篩選條件可以在 [受控堆積] 和 [根的路徑] 樹狀結構中，隱藏這些類型的大部分。   
+
+![排序和篩選選項](../profiling/media/memuse_sortandfilter.png "MEMUSE_SortAndFilter")  
+
+- <a name="BKMK_Filter"></a> 若要依類型名稱來篩選樹狀結構，請在 [篩選條件] 方塊中輸入名稱。 篩選條件不會區分大小寫，且它會辨識類型名稱任何部分中的指定字串。  
   
- ![排序和篩選選項](../profiling/media/memuse_sortandfilter.png "MEMUSE_SortAndFilter")  
+- <a name="BKMK_Collapse_Small_Objects"></a> 選取 [篩選條件] 下拉式清單中的 [摺疊小物件]，隱藏 [大小 (位元組)] 小於總記憶體 0.5% 的類型。  
   
-####  <a name="BKMK_Filter"></a>篩選條件  
- 在 [篩選條件] 方塊中輸入字串，將樹狀目錄顯示限制在包含指定文字的類型。 篩選條件不會區分大小寫，且它會辨識類型名稱任何部分中的指定字串。  
-  
-####  <a name="BKMK_Collapse_Small_Objects"></a>摺疊小物件  
- 套用此篩選條件時，[大小 (位元組)] 小於快照記憶體大小總計 0.5% 的類型，會在 [Managed 堆積] 清單中隱藏。  
-  
-####  <a name="BKMK_Just_My_Code"></a> Just My Code  
- [Just My Code] 篩選條件會隱藏由外部程式碼所產生的大多數執行個體。 外部類型是由作業系統或 Framework 元件所擁有，或者由編輯器產生。  
+- <a name="BKMK_Just_My_Code"></a> 選取 [篩選條件] 下拉式清單中的 [Just My Code]，隱藏外部程式碼所產生的大部分執行個體。 外部類型屬於作業系統或架構元件，或者由編輯器產生。  
   
 ## <a name="snapshot-details-reports"></a>快照詳細資料報表  
- 您可以使用快照詳細資料報表，專注在診斷工作階段的一張快照。 若要開啟詳細資料報表，請選擇快照檢視中的其中一個連結，如下圖所示。 這兩個連結都會開啟相同報表。唯一的差別在於報表中 [Managed 堆積] 樹狀目錄的起始排序次序。 在兩種情況下，您都能在報表開啟之後變更排序順序。  
+
+ 快照詳細資料報表描述診斷工作階段的一張快照。 若要開啟報表，請選取快照窗格中的大小或物件連結。 
+
+ ![連往快照窗格中的快照報表連結](../profiling/media/memuse_snapshotview_snapshotdetailslinks.png "連往快照窗格中的快照報表連結")  
   
- ![快照檢視中的快照報表連結](../profiling/media/memuse_snapshotview_snapshotdetailslinks.png "MEMUSE_SnapshotView_SnapshotDetailsLinks")  
+兩個連結都會開啟相同的報表。 唯一的差別在於 [受控堆積] 樹狀結構的起始排序次序。 大小連結會依據 [內含大小 (位元組)] 資料行來排序報表。 物件連結會依據 [計數] 資料行來排序報表。 您可以在報表開啟之後變更排序資料行或次序。  
   
--   [MB] 連結會依據 [內含大小 (位元組)] 欄來排序報表。  
+###  <a name="BKMK_Managed_Heap_tree__Snapshot_details_"></a> [受控堆積] 樹狀結構 (快照詳細資料報表)  
+ [Managed 堆積] 樹狀目錄會列出保留在記憶體中的物件類型。 展開類型名稱，即可檢視依大小排序的前十大類型執行個體。 選取類型或執行個體會顯示選取項目的 [根的路徑] 和 [參考的物件] 樹狀結構。  
   
--   [物件] 連結會依據 [計數] 欄來排序報表。  
+ ![[受控堆積] 樹狀結構](../profiling/media/memuse__snapshotdetails_managedheaptree.png "[受控堆積] 樹狀結構")  
   
-###  <a name="BKMK_Managed_Heap_tree__Snapshot_details_"></a>Managed 堆積樹狀目錄 (快照詳細資料)  
- [Managed 堆積] 樹狀目錄會列出保留在記憶體中的物件類型。 您可以展開類型名稱，檢視依大小排序的前十大類型執行個體。 選取類型或執行個體會顯示選取項目的 [根的路徑] 和 [參考的物件] 樹狀目錄。  
-  
- ![Managed 堆積樹狀目錄](../profiling/media/memuse__snapshotdetails_managedheaptree.png "MEMUSE__SnapshotDetails_ManagedHeapTree")  
-  
+快照詳細資料報表中的 [受控堆積] 樹狀結構有下列資料行：
+
 |||  
 |-|-|  
 |**物件類型**|類型或物件執行個體的名稱。|  
-|**計數**|類型的物件執行個體數目。 一個執行個體的數目一律為 1。|  
-|**大小 (位元組)**|對於類型，此為記憶體快照中，類型的所有執行個體大小，但排除執行個體中包含的物件大小。<br /><br /> 對於執行個體、類型，此為物件的大小，但排除執行個體中包含的物件大小。 執行個體。|  
+|**計數**|類型的物件執行個體數目。 一個執行個體的 [計數] 一律為 1。|  
+|**大小 (位元組)**|針對類型，此為快照中類型的所有執行個體大小，減去執行個體中包含的物件大小。<br /><br /> 針對執行個體，此為物件的大小，減去執行個體中包含的物件大小。 |  
 |**內含大小 (位元組)**|類型執行個體的大小，或是單一執行個體的大小，且包括所包含物件的大小。|  
+|**模組**|包含物件的模組。|  
   
-###  <a name="BKMK_Paths_to_Root_tree__Snapshot_details_"></a>根的路徑樹狀目錄 (快照詳細資料)  
- [根的路徑] 樹狀目錄顯示參考類型或執行個體的物件鏈結。 .NET Framework 記憶體回收行程只會在對物件的所有參考都已釋放時才清除物件的記憶體。  
+###  <a name="BKMK_Paths_to_Root_tree__Snapshot_details_"></a> [根的路徑] 樹狀結構 (快照詳細資料報表)  
+[根的路徑] 樹狀結構顯示參考類型或執行個體的物件鏈結。 .NET Framework 記憶體回收行程只會在對物件的所有參考都已釋放時才清除物件的記憶體。  
   
- ![根的路徑樹狀目錄，用於類型](../profiling/media/memuse_snapshotdetails_type_pathstoroottree.png "MEMUSE_SnapshotDetails_Type_PathsToRootTree")  
+針對 [根的路徑] 樹狀結構中的類型，會在 [參考計數] 資料行顯示保有該類型參考的物件數目。 
+
+![類型的 [根的路徑] 樹狀結構](../profiling/media/memuse_snapshotdetails_type_pathstoroottree.png "類型的 [根的路徑] 樹狀結構")  
   
- 當您在 [根的路徑] 樹狀目錄檢閱類型時，會在 [參考計數] 欄顯示保有該類型參考的類型物件數目。 當您分析執行個體時不會顯示該欄。  
+###  <a name="BKMK_Referenced_Objects_tree__Snapshot_details_"></a> [參考的類型] 或 [參考的物件] 樹狀結構 (快照詳細資料報表)  
+[參考的類型] 或 [參考的物件] 樹狀結構顯示所選取類型或執行個體參考的物件。  
   
-###  <a name="BKMK_Referenced_Objects_tree__Snapshot_details_"></a>參考的物件樹狀目錄 (快照詳細資料)  
- [參考的物件] 樹狀目錄顯示所選取類型或執行個體參考的物件。  
+![執行個體的 [參考的物件] 樹狀結構](../profiling/media/memuse_snapshotdetails_referencedobjects_instance.png "執行個體的 [參考的物件] 樹狀結構")  
   
- ![參考的物件樹狀目錄，用於執行個體](../profiling/media/memuse_snapshotdetails_referencedobjects_instance.png "MEMUSE_SnapshotDetails_ReferencedObjects_Instance")  
-  
+快照詳細資料報表中的 [參考的類型] 樹狀結構有下列資料行。 [參考的物件] 樹狀結構沒有 [參考計數] 資料行。
+
 |||  
 |-|-|  
-|**物件類型 / 執行個體**|類型或物件執行個體的名稱。|  
-|**大小 (位元組)**|對於類型，此為類型的所有執行個體大小，但排除類型中包含的物件大小。<br /><br /> 對於執行個體，此為物件的大小，但排除物件中包含的物件大小。|  
+|**物件類型**或**執行個體**|類型或執行個體的名稱。|  
+|**參考計數**|針對類型，此為類型的物件執行個體數目。|  
+|**大小 (位元組)**|針對類型，此為類型的所有執行個體大小，減去類型中包含的物件大小。<br /><br /> 針對執行個體，此為物件的大小，減去物件中包含的物件大小。|  
 |**內含大小 (位元組)**|類型執行個體的大小總計，或是執行個體的大小，且包括所包含物件的大小。|  
+|**模組**|包含物件的模組。|  
   
 ## <a name="snapshot-difference-diff-reports"></a>快照差異 (diff) 報表  
- 快照差異 (diff) 報表會顯示主要快照與在它之間立即擷取的快照之間的變更。 若要開啟差異報表，請選擇快照檢視中的其中一個連結，如下圖所示。 這兩個連結都會開啟相同報表。唯一的差別在於報表中 [Managed 堆積] 樹狀目錄的起始排序次序。 您可以在報表開啟之後變更排序順序。  
+
+快照差異 (diff) 報表會顯示主要快照與在它之前快照之間的變更。 若要開啟差異報表，請在快照窗格中選取其中一個差異連結。 
+
+兩個連結都會開啟相同的報表。 唯一的差別在於報表中 [受控堆積] 樹狀結構的起始排序次序。 大小連結會依據 [內含大小差異 (位元組)] 資料行來排序報表。 物件連結會依據 [計數差異] 資料行來排序報表。 您可以在報表開啟之後變更排序資料行或次序。  
   
- ![快照檢視中的差異報表連結](../profiling/media/memuse_snapshotview_snapshotdifflinks.png "MEMUSE_SnapshotView_SnapshotDiffLinks")  
+ ![連往快照窗格中的差異報表連結](../profiling/media/memuse_snapshotview_snapshotdifflinks.png "連往快照窗格中的差異報表連結")  
   
--   [MB] 連結會依據 [內含大小 (位元組)] 欄來排序報表。  
+###  <a name="BKMK_Managed_Heap_tree__Snapshot_diff_"></a> [受控堆積] 樹狀結構 (快照差異報表) 
+
+ [Managed 堆積] 樹狀目錄會列出保留在記憶體中的物件類型。 您可以展開類型名稱，檢視依大小排序的前十大類型執行個體。 選取類型或執行個體會顯示選取項目的 [根的路徑] 和 [參考的物件] 樹狀結構。  
   
--   [物件] 連結會依據 [計數] 欄來排序報表。  
+ ![差異報表中類型的 [受控堆積] 樹狀結構](../profiling/media/memuse_snapshotdiff_type_heap.png "差異報表中類型的 [受控堆積] 樹狀結構")  
   
-###  <a name="BKMK_Managed_Heap_tree__Snapshot_diff_"></a>Managed 堆積樹狀目錄 (快照差異)  
- [Managed 堆積] 樹狀目錄會列出保留在記憶體中的物件類型。 您可以展開類型名稱，檢視依大小排序的前十大類型執行個體。 選取類型或執行個體會顯示選取項目的 [根的路徑] 和 [參考的物件] 樹狀目錄。  
-  
- ![差異報表中類型的 Managed 堆積樹狀目錄](../profiling/media/memuse_snapshotdiff_type_heap.png "MEMUSE_SnapshotDiff_Type_Heap")  
-  
- 請注意，圖片中已摺疊 [計數]、[大小 (位元組)] 和 [內含大小 (位元組)] 欄。  
-  
+快照差異報表中的 [受控堆積] 樹狀結構有下列資料行：
+
 |||  
 |-|-|  
 |**物件類型**|類型或物件執行個體的名稱。|  
 |**計數**|主要快照中類型的執行個體數目。 一個執行個體的 [計數] 一律為 1。|  
 |**計數差異**|對於類型，此為主要快照和上一個快照中的類型執行個體數目差異。 執行個體的欄位空白。|  
-|**大小 (位元組)**|主要快照中的物件大小，但排除物件中包含的物件大小。 對於類型，[大小 (位元組)] 和 [內含大小 (位元組)] 是類型執行個體的大小總計。|  
-|**總大小差異 (位元組)**|對於類型，此為主要快照與上一個快照之間，類型的執行個體大小總計，但排除執行個體中包含的物件大小。 執行個體的欄位空白。|  
-|**內含大小 (位元組)**|主要快照中的物件大小，包括物件中包含的物件大小。|  
-|**內含大小差異 (位元組)**|對於類型，此為主要快照與上一個快照之間，類型的所有執行個體大小差異，包括物件中包含的物件大小。 執行個體的欄位空白。|  
+|**大小 (位元組)**|主要快照中的物件大小，減去物件中包含的物件大小。 對於類型，[大小 (位元組)] 和 [內含大小 (位元組)] 是類型執行個體的大小總計。|  
+|**總大小差異 (位元組)**|針對類型，此為主要快照與上一個快照之間，類型的執行個體大小總計，減去執行個體中的物件大小。 執行個體的欄位空白。|  
+|**內含大小 (位元組)**|主要快照中的物件大小，包括物件中的物件大小。|  
+|**內含大小差異 (位元組)**|針對類型，此為主要快照與上一個快照之間，類型的所有執行個體大小差異，包括物件中的物件大小。 執行個體的欄位空白。|  
+|**模組**|包含物件的模組。|  
   
-###  <a name="BKMK_Paths_to_Root_tree__Snapshot_diff_"></a>根的路徑樹狀目錄 (快照差異)  
- [根的路徑] 樹狀目錄顯示參考類型或執行個體的物件鏈結。 .NET Framework 記憶體回收行程只會在對物件的所有參考都已釋放時才清除物件的記憶體。  
+###  <a name="BKMK_Paths_to_Root_tree__Snapshot_diff_"></a> [根的路徑] 樹狀結構 (快照差異報表)  
+
+[根的路徑] 樹狀結構顯示參考類型或執行個體的物件鏈結。 .NET Framework 記憶體回收行程只會在對物件的所有參考都已釋放時才清除物件的記憶體。 
+
+針對 [根的路徑] 樹狀結構中的類型，會在 [參考計數] 資料行顯示保有該類型參考的物件數目。 與上一個快照的計數差異位在 [參考差異] 資料行中。 
+
+ ![差異報表中的 [根的路徑] 樹狀結構](../profiling/media/memuse_snapshotdiff_pathstoroot_instance_all.png "差異報表中的 [根的路徑] 樹狀結構")  
   
- ![差異檢視中根的路徑樹狀目錄，用於執行個體](../profiling/media/memuse_snapshotdiff_pathstoroot_instance_all.png "MEMUSE_SnapshotDiff_PathsToRoot_Instance_All")  
-  
-###  <a name="BKMK_Referenced_Objects_tree__Snapshot_diff_"></a>參考的物件樹狀目錄 (快照差異)  
- [參考的物件] 樹狀目錄顯示主要類型或執行個體參考的物件。  
-  
- ![參考的物件樹狀目錄，用於執行個體](../profiling/media/memuse_snapshotdetails_referencedobjects_instance.png "MEMUSE_SnapshotDetails_ReferencedObjects_Instance")  
-  
+###  <a name="BKMK_Referenced_Objects_tree__Snapshot_diff_"></a> [參考的類型] 或 [參考的物件] 樹狀結構 (快照差異報表)  
+
+[參考的類型] 或 [參考的物件] 樹狀結構顯示所選取類型或執行個體參考的物件。  
+
+![差異報表中的 [參考的類型]](../profiling/media/memuse_snapshotdiff_referencedtypes.png "差異報表中的 [參考的類型]")  
+
+快照差異報表中的 [參考的類型] 樹狀結構有下列資料行。 [參考的物件] 樹狀結構有 [執行個體]、[大小 (位元組)]、[內含大小 (位元組)]和 [模組] 資料行。
+
 |||  
 |-|-|  
-|**物件類型 / 執行個體**|類型或物件執行個體的名稱。|  
-|**大小 (位元組)**|對於執行個體，此為主要快照中的物件大小，但排除執行個體中包含的物件大小。<br /><br /> 對於類型，此為主要快照中，類型的執行個體大小總計，但排除執行個體中包含的物件大小。|  
-|**內含大小 (位元組)**|主要快照中的物件大小，包括物件中包含的物件大小。|  
-  
+|**物件類型**或**執行個體**|類型或物件執行個體的名稱。|  
+|**參考計數**|主要快照中類型的執行個體數目。|  
+|**參考計數差異**|對於類型，此為主要快照和上一個快照中的類型執行個體數目差異。|  
+|**大小 (位元組)**|主要快照中的物件大小，減去物件中包含的物件大小。 對於類型，[大小 (位元組)] 和 [內含大小 (位元組)] 是類型執行個體的大小總計。|  
+|**總大小差異 (位元組)**|針對類型，此為主要快照與上一個快照之間，類型的執行個體大小總計，減去執行個體中的物件大小。 |  
+|**內含大小 (位元組)**|主要快照中的物件大小，包括物件中的物件大小。|  
+|**內含大小差異 (位元組)**|針對類型，此為主要快照與上一個快照之間，類型的所有執行個體大小差異，包括物件中的物件大小。|  
+|**模組**|包含物件的模組。|  
+
 ## <a name="see-also"></a>另請參閱  
  [JavaScript 記憶體](../profiling/javascript-memory.md)  
  [Visual Studio 中的分析](../profiling/index.md)  
  [初步認識分析工具](../profiling/profiling-feature-tour.md)  
  [使用 C++、C# 及 Visual Basic 的 UWP App 的效能最佳做法](/previous-versions/windows/apps/hh750313\(v\=win.10\))   
- [使用 Visual Studio 中的新記憶體使用量工具來診斷記憶體問題](http://go.microsoft.com/fwlink/p/?LinkId=394706)
+ [使用 Visual Studio 中的新 [記憶體使用量] 工具來診斷記憶體問題](http://go.microsoft.com/fwlink/p/?LinkId=394706)

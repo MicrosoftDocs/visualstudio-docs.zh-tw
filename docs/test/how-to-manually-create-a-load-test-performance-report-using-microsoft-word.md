@@ -11,16 +11,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: c4bafd4e7e50838adbe8ba458191c370b4d7427d
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 4a5dd85c56a57b6257041c129925703e8e91e050
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380690"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895609"
 ---
 # <a name="how-to-manually-create-a-load-test-performance-report-using-microsoft-word"></a>如何：使用 Microsoft Word 手動建立負載測試效能報告
 
 您可以從 [負載測試結果] 摘要檢視和圖表檢視複製並貼上資料，藉以手動建立 Microsoft Word 負載測試報告。 當您複製呈現在摘要檢視和圖形檢視中的資料時，這項資料會套用 HTML 格式。
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 > [!TIP]
 > 您可以將資料表檢視中的純文字和詳細資料檢視中的螢幕擷取畫面複製到 Microsoft Word，但是這些項目不會套用 HTML 格式，而且需要進行其他格式設定和編輯。

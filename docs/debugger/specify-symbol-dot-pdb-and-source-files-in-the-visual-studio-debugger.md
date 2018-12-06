@@ -1,7 +1,7 @@
 ---
 title: 指定符號 (.pdb) 和原始程式檔偵錯工具 |Microsoft Docs
 ms.custom: H1Hack27Feb2017
-ms.date: 04/05/2018
+ms.date: 10/08/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
@@ -29,14 +29,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2eb7d535b99aa6af8b977711fbc60f7b4d9856dd
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
-ms.translationtype: MT
+ms.openlocfilehash: 35eb141850770a20b78020c57868a7fb2ff3bf90
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349487"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52389172"
 ---
-# <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger"></a>在 Visual Studio Debugger 中指定符號 (.pdb) 和原始程式檔
+# <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>在 Visual Studio debugger 中指定符號 (.pdb) 和原始程式檔 (C#，c + +、 Visual Basic 中， F#)
 
 程式資料庫 (*.pdb*) 檔案，也稱為符號檔將識別項對應，並在對應的識別項專案的原始程式碼中的陳述式中及指示編譯應用程式。 
 
@@ -49,7 +49,7 @@ ms.locfileid: "51349487"
 
 符號檔也會顯示原始程式檔中，並選擇性地擷取它們從伺服器的位置。
   
-偵錯工具只會載入 *.pdb*完全符合的檔案 *.pdb*建置應用程式時建立的檔案 (也就是原始 *.pdb*檔案或複本)。 完全重複項目是必要的因為應用程式的配置可以變更，即使未變更程式碼本身。 如需詳細資訊，請參閱[為什麼 Visual Studio 需要建置的二進位檔完全相符項目偵錯工具符號檔案？](https://blogs.msdn.microsoft.com/jimgries/2007/07/06/why-does-visual-studio-require-debugger-symbol-files-to-exactly-match-the-binary-files-that-they-were-built-with/)
+偵錯工具只會載入 *.pdb*完全符合的檔案 *.pdb*建置應用程式時建立的檔案 (也就是原始 *.pdb*檔案或複本)。 完全重複項目是必要的因為應用程式的配置可以變更，即使未變更程式碼本身。 如需詳細資訊，請參閱 [Why does Visual Studio require debugger symbol files to exactly match the binary files that they were built with?](https://blogs.msdn.microsoft.com/jimgries/2007/07/06/why-does-visual-studio-require-debugger-symbol-files-to-exactly-match-the-binary-files-that-they-were-built-with/) (Visual Studio 為何要求偵錯工具符號檔案必須完全符合當初建置這些符號檔案時所使用的二進位檔案？)
 
 > [!TIP]
 > 偵錯專案程式碼中，外部程式碼，例如 Windows 程式碼或協力廠商程式碼專案呼叫，您必須指定外部程式碼的位置 *.pdb*檔案 （以及 （選擇性） 原始程式檔），這必須完全符合在您的應用程式的組建。 
@@ -71,7 +71,7 @@ ms.locfileid: "51349487"
    
 3. 指定符號檔的偵錯工具選項中的任何位置。 若要新增並啟用符號位置，請參閱[設定符號位置和載入選項](#BKMK_Specify_symbol_locations_and_loading_behavior)。 
    
-   - 任何本機符號快取資料夾中。  
+   - 任何本機符號快取資料夾。  
   
    - 如果選取，請指定網路、 網際網路或本機符號伺服器和位置，例如 Microsoft 符號伺服器。 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 可以從實作符號伺服器下載偵錯符號檔`symsrv`通訊協定。 [Visual Studio Team Foundation Server](/azure/devops/pipelines/tasks/build/index-sources-publish-symbols)而[的 Windows 偵錯工具](/windows-hardware/drivers/debugger/index)是兩項工具，可以使用符號伺服器。
       
@@ -112,7 +112,7 @@ ms.locfileid: "51349487"
      >搜尋指定的資料夾。 您必須新增您想要搜尋的任何子資料夾的項目。  
    
    - 若要新增 VSTS 符號伺服器位置， 
-     1. 選取 [![工具&#47;選項&#47;偵錯&#47;符號新伺服器] 圖示](media/dbg_tools_options_foldersicon.png "工具&#45;選項&#45;偵錯&#45;符號新的伺服器圖示")工具列中的圖示。 
+     1. 選取 ![工具&#47;選項&#47;偵錯&#47;符號新伺服器 圖示](media/dbg_tools_options_foldersicon.png "工具&#45;選項&#45;偵錯&#45;符號新的伺服器圖示")工具列中的圖示。 
      1. 在 [**連線至 VSTS 符號伺服器**] 對話方塊中，選擇其中一個可用的符號伺服器，然後選取**Connect**。  
    
    - 若要變更符號位置的載入順序，請使用**Ctrl**+**向上**並**Ctrl**+**向下**，或**向上**並**向下**箭號圖示。 
@@ -139,7 +139,7 @@ ms.locfileid: "51349487"
   
 您可以選取中的其他符號選項**工具** > **選項** > **偵錯** > **一般**(或**偵錯** > **選項** > **一般**):  
 
-- **載入 DLL 匯出 （僅限機器碼）**  
+- **載入 DLL 匯出 (僅限原生)**  
   
   載入 DLL 匯出表 C/c + +。 如需詳細資訊，請參閱 < [DLL 匯出表](#use-dumpbin-exports)。 讀取 DLL 匯出資訊會涉及一些額外負荷，因此載入匯出資料表預設關閉。 您也可以使用`dumpbin /exports`C/c + + 建置命令列中。  
   
@@ -156,7 +156,7 @@ ms.locfileid: "51349487"
   您可以限制命令的*srcsrv.dll*可以從應用程式的執行 *.pdb*列出允許的命令，在名為的檔案*srcsrv.ini*。 地方*srcsrv.ini*相同的資料夾中的檔案*srcsrv.dll*並*devenv.exe*。  
   
   >[!IMPORTANT]
-  >在應用程式的可內嵌任意命令 *.pdb*檔案中，因此請務必將只有您想要執行的命令*srcsrv.ini*檔案。 任何嘗試執行命令不是位於*srcsvr.ini*檔案會導致出現的確認對話方塊。 如需詳細資訊，請參閱 [Security Warning: Debugger Must Execute Untrusted Command](../debugger/security-warning-debugger-must-execute-untrusted-command.md)。 
+  >在應用程式的可內嵌任意命令 *.pdb*檔案中，因此請務必將只有您想要執行的命令*srcsrv.ini*檔案。 嘗試執行 *srcsvr.ini* 檔案中未包含的任何命令，會讓確認對話方塊出現。 如需詳細資訊，請參閱 [Security Warning: Debugger Must Execute Untrusted Command](../debugger/security-warning-debugger-must-execute-untrusted-command.md)。 
   >
   >由於不會對命令參數進行任何驗證，因此請謹慎使用受信任的命令。 例如，如果您列出*cmd.exe*中您*srcsrv.ini*，惡意使用者可能在上指定參數*cmd.exe*這會讓它危險。  
   
@@ -168,7 +168,7 @@ ms.locfileid: "51349487"
 
 當您從 Visual Studio IDE 與標準，會在建置專案時**偵錯**組建組態時，c + + 和 managed 的編譯器建立您的程式碼的適當的符號檔。 您也可以在程式碼中設定編譯器選項。 
 
-### <a name="cc-options"></a>C/c + + 選項 
+### <a name="cc-options"></a>C/C++ 選項 
 
 - *VC\<x >.pdb*並*\<專案 >.pdb*檔案
   
@@ -176,13 +176,13 @@ ms.locfileid: "51349487"
   
   如果您建置 C/c + + 應用程式使用 makefile，且您指定 **/ZI**或是 **/Zi**不用 **/Fd**，編譯器會建立兩個 *.pdb*檔案：  
   
-  - *VC\<x >.pdb*，其中 *\<x >* 例如代表版本的 Visual c + +， *VC11.pdb* 
+  - *VC\<x>.pdb*，其中 *\<x>* 代表 Visual C++ 的版本，例如 *VC11.pdb* 
     
-    *VC\<x >.pdb*檔案會儲存個別物件檔案的所有偵錯資訊，並且位在與專案 makefile 相同的目錄中。 每次建立物件檔時，C/c + + 編譯器會將合併到偵錯資訊*VC\<x >.pdb*。 因此，即使每個原始程式檔包含了常見的標頭檔這類 *\<windows.h >*，這些標頭檔的 typedef 也會儲存一次，而非每個目的檔中。 插入的資訊包含型別資訊，但不包含符號的資訊，例如函式定義。  
+    *VC\<x >.pdb*檔案會儲存個別物件檔案的所有偵錯資訊，並且位在與專案 makefile 相同的目錄中。 每次建立物件檔時，C/c + + 編譯器會將合併到偵錯資訊*VC\<x >.pdb*。 因此，即使每個原始程式檔包含了常見的標頭檔這類 *\<windows.h >*，這些標頭檔的 typedef 也會儲存一次，而非每個目的檔中。 插入的資訊包括類型資訊，但是不包括符號資訊 (例如函式定義)。  
   
   - *\<專案 >.pdb* 
     
-    *\<專案 >.pdb*檔案會儲存專案的所有偵錯資訊 *.exe*檔案，並位於*\debug*子目錄。 *\<專案 >.pdb*檔案包含完整的偵錯資訊，包括函式原型中找到不只是型別資訊*VC\<x >.pdb*。 
+    *\<專案 >.pdb*檔案會儲存專案的所有偵錯資訊 *.exe*檔案，並位於*\debug*子目錄。 這個 *\<project>.pdb* 包含完整的偵錯資訊，包括函式原型，而不僅是在 *VC\<x>.pdb* 找到的類型資訊。 
   
   這兩個*VC\<x >.pdb*並*\<專案 >.pdb*檔案允許累加式更新。 連結器也會將路徑嵌入 *.pdb*中的檔案 *.exe*或是 *.dll*它所建立的檔案。  
   
@@ -194,7 +194,7 @@ ms.locfileid: "51349487"
   
 ### <a name="net-framework-options"></a>.NET Framework 選項 
   
-使用建置 **/debug**來建立 *.pdb*檔案。 您可以使用 **/debug:full** 或 **/debug:pdbonly**建置應用程式。 使用 **/debug:full** 建置會產生可偵錯的程式碼。 使用建置 **/debug:pdbonly**會產生 *.pdb*檔案，但不會產生`DebuggableAttribute`通知 JIT 編譯器有可用的偵錯資訊。 使用 **/debug:pdbonly**如果您想要產生 *.pdb*檔案做為發行版本建置，您不希望是可偵錯。 如需詳細資訊，請參閱 < [/debug （C# 編譯器選項）](/dotnet/csharp/language-reference/compiler-options/debug-compiler-option)或是[/debug (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/debug)。  
+使用建置 **/debug**來建立 *.pdb*檔案。 您可以使用 **/debug:full** 或 **/debug:pdbonly**建置應用程式。 使用 **/debug:full** 建置會產生可偵錯的程式碼。 使用 **/debug:pdbonly** 進行建置則會產生 *.pdb* 檔案，但是不會產生用於通知 JIT 編譯器有可用偵錯資訊的 `DebuggableAttribute`。 如果您要為發行組建 (Release Build) 產生 *.pdb* 檔案，但不希望為可偵錯，則請使用 **/debug:pdbonly**。 如需詳細資訊，請參閱 [/debug (C# 編譯器選項)](/dotnet/csharp/language-reference/compiler-options/debug-compiler-option) 或 [/debug (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/debug)。  
   
 ### <a name="web-applications"></a>Web 應用程式  
   
@@ -265,4 +265,4 @@ ms.locfileid: "51349487"
 ## <a name="see-also"></a>另請參閱  
 [了解符號檔和 Visual Studio 符號設定](https://blogs.msdn.microsoft.com/devops/2015/01/05/understanding-symbol-files-and-visual-studios-symbol-settings/)
 
-[.NET 遠端符號載入 Visual Studio 2012 和 2013年中的變更](https://blogs.msdn.microsoft.com/devops/2013/10/16/net-remote-symbol-loading-changes-in-visual-studio-2012-and-2013/)
+[Visual Studio 2012 和 2013 中的 .NET 遠端符號載入變更](https://blogs.msdn.microsoft.com/devops/2013/10/16/net-remote-symbol-loading-changes-in-visual-studio-2012-and-2013/)

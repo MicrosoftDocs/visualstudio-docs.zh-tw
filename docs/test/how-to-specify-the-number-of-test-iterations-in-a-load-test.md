@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: a94a5681c0348e6e08f9d777ecebaa3e69886cfe
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: bba6ddfa9162583d687f6638c9b75e178556132b
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39379491"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52894790"
 ---
 # <a name="how-to-specify-the-number-of-test-iterations-in-a-load-test-run-setting"></a>如何：在負載測試回合設定中指定測試反覆項目的數目
 
@@ -27,6 +27,7 @@ ms.locfileid: "39379491"
 > [!NOTE]
 > 如需回合設定屬性及其描述的完整清單，請參閱[負載測試回合設定屬性](../test/load-test-run-settings-properties.md)。
 
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="to-specify-the-number-of-test-iterations-in-a-run-setting"></a>若要在回合設定中指定測試反覆項目的數目
 

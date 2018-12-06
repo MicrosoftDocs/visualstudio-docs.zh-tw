@@ -12,16 +12,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: cbe16b5e0b711783c9dfd12ab9a652fb4055fc36
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 649fe84b716355f5c7228e371fa88d80937f24af
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381012"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895375"
 ---
 # <a name="walkthrough-create-and-run-a-load-test-that-contains-unit-tests"></a>逐步解說：建立和執行包含單元測試的負載測試
 
 在這個逐步解說中，您會建立包含單元測試的負載測試。
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 本逐步解說會引導您使用 Visual Studio Enterprise 建立及執行負載測試。 負載測試是 Web 效能測試和單元測試的容器。 負載測試是利用 [新增負載測試精靈] 所建立。
 

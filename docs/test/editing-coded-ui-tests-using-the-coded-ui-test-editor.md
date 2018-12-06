@@ -13,16 +13,18 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 4b884afae90d477716c2041e468ceb0c64c5d41d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6c45a8abceacb1d566ca5aba382e7955f1c2601e
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49849654"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895557"
 ---
 # <a name="edit-coded-ui-tests-using-the-coded-ui-test-editor"></a>使用自動程式化 UI 測試編輯器來編輯自動程式化 UI 測試
 
 自動程式碼 UI 測試編輯器可讓您輕鬆地修改自動程式碼 UI 測試。 您可以使用自動程式碼 UI 測試編輯器，尋找、檢視和編輯測試方法和 UI 動作的屬性。 此外，您也可以使用 UI 控制項對應，檢視和編輯其對應的控制項。
+
+[!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
 **需求**
 

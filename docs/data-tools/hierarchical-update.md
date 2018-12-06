@@ -23,18 +23,18 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 56b85f96815fca34330f57f6b653c497f21a835b
-ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
-ms.translationtype: MT
+ms.openlocfilehash: 52225ba4801fcee92b3f68fd6ec1cf7cc6c63086
+ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50750795"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52305711"
 ---
 # <a name="hierarchical-update"></a>階層式更新
 
 *階層式更新*是指儲存回資料庫的更新的資料 （從含有兩個或多個相關資料表的資料集），同時維護參考完整性規則的程序。 *參考完整性*指的是控制行為的插入、 更新和刪除相關的記錄在資料庫中的條件約束所提供的一致性規則。 比方說，就會強制執行允許該客戶的訂單建立之前建立的客戶記錄的參考完整性。  如需有關在資料集中的關聯性的詳細資訊，請參閱[中的資料集的關聯性](../data-tools/relationships-in-datasets.md)。
 
-階層式更新功能會使用`TableAdapterManager`來管理`TableAdapter`中具類型資料集。 `TableAdapterManager`元件是 Visual Studio 所產生的類別，因此不屬於[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]。 當您將資料表從資料來源視窗拖曳至 Windows Form 或 WPF 頁面時，Visual Studio 會將類型 TableAdapterManager 的變數加入至表單或頁面上，以及您在 元件匣中的設計工具中看到它。 如需詳細資訊`TableAdapterManager`類別，請參閱 TableAdapterManager 參考 > 一節[TableAdapters](../data-tools/create-and-configure-tableadapters.md)。
+階層式更新功能會使用`TableAdapterManager`來管理`TableAdapter`中具類型資料集。 `TableAdapterManager`元件是 Visual Studio 所產生的類別，因此不屬於[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]。 當您將從資料表**Zdroje dat**至 Windows Form 或 WPF 頁面時，Visual Studio] 視窗將型別的 TableAdapterManager 變數加入至表單或頁面上，以及您在 [元件匣中的設計工具中看到它。 如需詳細資訊`TableAdapterManager`類別，請參閱 > 一節參考 TableAdapterManager [TableAdapters](../data-tools/create-and-configure-tableadapters.md)。
 
 根據預設，資料集視為相關的資料表 」，關聯性 」 表示它不會強制執行 foreign key 條件約束。 您可以使用，以修改該設定，在設計階段**Dataset 設計工具**。 選取以顯示兩個資料表之間的關聯線**關聯** 對話方塊。 這裡所做的變更將會決定如何`TableAdapterManager`行為時它所做的變更相關的資料表中傳送回資料庫。
 
@@ -65,7 +65,7 @@ ms.locfileid: "50750795"
 > [!NOTE]
 > 請務必了解的是包含所有更新的順序。 也就是，當執行更新時，插入和刪除執行資料集內的所有資料表。
 
-若要設定`UpdateOrder`屬性中的，拖曳項目之後[資料來源視窗](add-new-data-sources.md)到表單上，選取`TableAdapterManager`在元件匣，然後將設定`UpdateOrder`中的屬性**屬性**  視窗。
+若要設定`UpdateOrder`屬性中的，拖曳項目之後[資料來源視窗](add-new-data-sources.md#data-sources-window)到表單上，選取`TableAdapterManager`在元件匣，然後將設定`UpdateOrder`中的屬性**屬性**  視窗。
 
 ## <a name="create-a-backup-copy-of-a-dataset-before-performing-a-hierarchical-update"></a>建立資料集的備份副本，然後再執行階層式更新
 
@@ -80,18 +80,18 @@ ms.locfileid: "50750795"
 
 呼叫 `TableAdapterManager.UpdateAll` 方法並傳入包含關聯資料表的資料集名稱，可將資料集內關聯資料表的變更儲存至資料庫。 例如，執行 `TableAdapterManager.UpdateAll(NorthwindDataset)` 方法，以將 NorthwindDataset 中所有資料表的更新傳送至後端資料庫。
 
-卸除的項目之後**資料來源** 視窗中，程式碼會自動新增至`Form_Load`事件，以填入每個資料表 (`TableAdapter.Fill`方法)。 程式碼也會加入至**儲存**按鈕 click 事件<xref:System.Windows.Forms.BindingNavigator>，將資料從資料集儲存回資料庫 (`TableAdapterManager.UpdateAll`方法)。
+從 [資料來源] 視窗置放項目後，程式碼會自動新增至 `Form_Load` 事件，以填入每個資料表 (`TableAdapter.Fill` 方法)。 程式碼也會新增至 <xref:System.Windows.Forms.BindingNavigator> 的 [儲存] 按鈕 Click 事件，以將資料集的資料存回資料庫 (`TableAdapterManager.UpdateAll` 方法)。
 
-產生的儲存程式碼也包含一行會呼叫 `CustomersBindingSource.EndEdit` 方法的程式碼。 更具體來說，它會呼叫<xref:System.Windows.Forms.BindingSource.EndEdit%2A>方法的第一個<xref:System.Windows.Forms.BindingSource>加入至表單。 換句話說，此程式碼才會產生第一個資料表，從拖曳**Zdroje dat**視窗拖曳至表單。 <xref:System.Windows.Forms.BindingSource.EndEdit%2A> 呼叫會認可目前正在編輯的所有資料繫結控制項中，所有正在進行的變更。 因此，如果資料繫結控制項還有焦點時，您按一下**儲存**按鈕，所有暫止的編輯，因為在實際儲存之前，請先認可控制項 (`TableAdapterManager.UpdateAll`方法)。
+產生的儲存程式碼也包含一行會呼叫 `CustomersBindingSource.EndEdit` 方法的程式碼。 更具體來說，它會呼叫<xref:System.Windows.Forms.BindingSource.EndEdit%2A>方法的第一個<xref:System.Windows.Forms.BindingSource>加入至表單。 換句話說，此程式碼才會產生第一個資料表，從拖曳**Zdroje dat**視窗拖曳至表單。 <xref:System.Windows.Forms.BindingSource.EndEdit%2A> 呼叫會認可目前正在編輯的所有資料繫結控制項中，所有正在進行的變更。 因此，當資料繫結控制項還有焦點時，您可以按一下 [儲存] 按鈕，就會在實際儲存 (`TableAdapterManager.UpdateAll` 方法) 之前，先認可該控制項中所有暫止的編輯項目。
 
 > [!NOTE]
 > **Dataset 設計工具**只會增加`BindingSource.EndEdit`拖曳至表單上的第一個資料表的程式碼。 因此，您必須對表單上每個關聯資料表，加入一行程式碼以呼叫 `BindingSource.EndEdit` 方法。 在此逐步說明中，這表示您必須加入 `OrdersBindingSource.EndEdit` 方法的呼叫。
 
 ### <a name="to-update-the-code-to-commit-changes-to-the-related-tables-before-saving"></a>更新程式碼以在儲存前認可關聯資料表的變更
 
-1.  按兩下**儲存**按鈕<xref:System.Windows.Forms.BindingNavigator>以開啟**Form1**在程式碼編輯器。
+1.  按兩下 <xref:System.Windows.Forms.BindingNavigator> 上的 [儲存] 按鈕，以在程式碼編輯器中開啟 **Form1**。
 
-2.  在呼叫 `OrdersBindingSource.EndEdit` 方法的程式碼行後方，加入一行程式碼以呼叫 `CustomersBindingSource.EndEdit` 方法。 中的程式碼**儲存**按鈕 click 事件應該如下所示：
+2.  在呼叫 `OrdersBindingSource.EndEdit` 方法的程式碼行後方，加入一行程式碼以呼叫 `CustomersBindingSource.EndEdit` 方法。 [儲存] 按鈕 Click 事件中的程式碼應與下列類似：
 
      [!code-vb[VSProDataOrcasHierarchicalUpdate#1](../data-tools/codesnippet/VisualBasic/hierarchical-update_1.vb)]
      [!code-csharp[VSProDataOrcasHierarchicalUpdate#1](../data-tools/codesnippet/CSharp/hierarchical-update_1.cs)]

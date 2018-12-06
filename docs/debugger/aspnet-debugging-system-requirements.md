@@ -20,7 +20,7 @@ ms.workload:
 - aspnet
 ms.openlocfilehash: 71b6cbc3f523b8f21b21b0e69b1d6e45e23acb0c
 ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/23/2018
 ms.locfileid: "49915343"
@@ -44,7 +44,7 @@ ms.locfileid: "49915343"
  > [!IMPORTANT]
  > 從 Windows Server 2008 R2 開始，我們建議您使用[ApplicationPoolIdentity](/iis/manage/configuring-security/application-pool-identities)做為每個應用程式集區識別。
   
- [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 背景工作處理序的名稱會隨偵錯情節和 IIS 的版本而有所不同。 如需詳細資訊，請參閱 [How to: Find the Name of the ASP.NET Process](../debugger/how-to-find-the-name-of-the-aspnet-process.md)。  
+ [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 背景工作處理序的名稱會隨偵錯情節和 IIS 的版本而有所不同。 如需詳細資訊，請參閱[如何：尋找 ASP.NET 處理序的名稱](../debugger/how-to-find-the-name-of-the-aspnet-process.md)。  
   
  您可以編輯執行 IIS 的伺服器上的 machine.config 檔案，變更 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 背景工作處理序執行的使用者帳戶。 若要執行這項操作，最好是使用 [Internet Information Services (IIS) 管理員] 。 如需詳細資訊，請參閱 <<c0> [ 如何： 執行背景工作處理序在使用者帳戶](../debugger/how-to-run-the-worker-process-under-a-user-account.md)。  
   

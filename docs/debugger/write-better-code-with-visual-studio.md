@@ -2,7 +2,7 @@
 title: 可讓您撰寫的 Visual Studio 說明C#程式碼較少的 bug
 description: 了解如何撰寫更好的程式碼較少的 bug
 ms.custom: debug-experiments
-ms.date: 10/30/2018
+ms.date: 11/20/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,16 +12,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 914b4332a715c86aab7e1fad7d901231cbfd40c5
-ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
-ms.translationtype: MT
+ms.openlocfilehash: e4cf3c7ae8b45f6d3410925977c2c67784b1ca6d
+ms.sourcegitcommit: a811f6a194ccd40d844e74e618d847df87c85c16
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "51948955"
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "52621587"
 ---
-# <a name="write-better-c-code-using-visual-studio"></a>撰寫更好C#使用 Visual Studio 程式碼
+# <a name="fix-bugs-by-writing-better-c-code-using-visual-studio"></a>藉由撰寫更好修正 bugC#使用 Visual Studio 程式碼
 
-偵錯程式碼時，可能很耗時-，而且有時候挫折-工作。 花時間了解如何有效偵錯。 功能強大的 IDE，例如 Visual Studio 可讓您的工作輕鬆許多。 IDE 可協助您更快速地偵錯您的程式碼並不只是的但它也可以幫助您撰寫更好的程式碼且錯誤更少。 我們在本文中的目標是為您提供的偵錯的程序的整體檢視，讓您將了解何時使用程式碼分析工具，以使用偵錯工具，以及何時使用其他工具時。
+偵錯程式碼時，可能很耗時-，而且有時候挫折-工作。 需要一段時間，以了解如何有效地偵錯，但功能強大的 IDE，例如 Visual Studio 可讓您的工作輕鬆許多。 IDE 可協助您更快速地偵錯您的程式碼並不只是的但它也可以幫助您撰寫更好的程式碼且錯誤更少。 我們在本文中的目標是為您提供的偵錯的程序的整體檢視，讓您將了解何時使用程式碼分析工具，以使用偵錯工具，以及何時使用其他工具時。  
 
 在本文中，我們會討論利用 IDE，可讓您偵錯工作階段更具生產力。 我們介紹數個工作，例如：
 
@@ -42,7 +42,7 @@ ms.locfileid: "51948955"
 若要建立應用程式，請開啟 Visual Studio 並選擇**檔案 > 新增專案**。 底下**Visual C#** ，選擇**Windows 桌面**或是 **.NET Core**，然後在中間窗格選擇**主控台應用程式**。 輸入名稱，例如**Console_Parse_JSON**然後按一下**確定**。 Visual Studio 會建立專案。 貼上[程式碼範例](#sample-code)到專案的*Program.cs*檔案。
 
 > [!NOTE]
-> 如果您沒有看到 [主控台應用程式] 專案範本，請在 [新增專案] 對話方塊的左窗格中，按一下 [開啟 Visual Studio 安裝程式] 連結。 Visual Studio 安裝程式即會啟動。 選擇 **.NET 桌面開發**或是 **.NET Core 跨平台開發**工作負載，然後選擇**修改**。
+> 如果您沒有看到 [主控台應用程式] 專案範本，請在 [新增專案] 對話方塊的左窗格中，按一下 [開啟 Visual Studio 安裝程式] 連結。 Visual Studio 安裝程式即會啟動。 選擇 [.NET 桌面開發] (或 [.NET Core 跨平台開發]) 工作負載，然後選擇 [修改]。
 
 ## <a name="find-the-red-and-green-squiggles"></a>尋找紅色和綠色波浪線 ！
 
@@ -81,7 +81,7 @@ ms.locfileid: "51948955"
 internal string points;
 ```
 
-為此值：
+轉換為：
 
 ```csharp
 [DataMember]
@@ -113,7 +113,7 @@ item.totalpoints += users[i].points;
 
 當您已修正所有紅色的波浪線和解決，或至少調查-所有綠色波浪線，您已準備好開始偵錯工具，並執行應用程式。
 
-按下**F5** (**偵錯 > 啟動偵錯**) 或**開始偵錯**按鈕![開始偵錯](../debugger/media/dbg-tour-start-debugging.png "開始偵錯")偵錯 工具列中。
+按下 **F5** ([偵錯] > [開始偵錯]) 或在偵錯工具列中按下 [開始偵錯] 按鈕 ![開始偵錯](../debugger/media/dbg-tour-start-debugging.png "開始偵錯")。
 
 到目前為止，範例應用程式會擲回`SerializationException`例外狀況 （執行階段錯誤）。 也就是您應用程式可以在它嘗試要序列化的資料。 因為您在偵錯模式 （附加偵錯工具） 中啟動應用程式，則偵錯工具的例外狀況協助程式會帶您前往擲回例外狀況，並提供您很有幫助的錯誤訊息的程式碼的權限。
 
@@ -407,4 +407,4 @@ namespace Console_Parse_JSON_DotNetCore
 在本文中，您已了解如何避免並修正程式碼中的許多常見的錯誤，以及使用偵錯工具的時機。 接下來，深入了解使用 Visual Studio 偵錯工具若要修正的 bug。
 
 > [!div class="nextstepaction"]
-> [適用於徹底初學者偵錯](../debugger/debugging-absolute-beginners.md)
+> [適合完全初學者的偵錯](../debugger/debugging-absolute-beginners.md)

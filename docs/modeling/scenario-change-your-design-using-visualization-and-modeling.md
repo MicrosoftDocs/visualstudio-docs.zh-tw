@@ -147,7 +147,7 @@ Dinner Now 必須評估符合新需求所需的成本。 這有一部分取決�
 |**地圖或圖表**|**顯示**|
 |-|-|
 |*Code Map*<br /><br /> 請參閱：<br /><br /> - [對應方案之間的相依性](../modeling/map-dependencies-across-your-solutions.md)<br />- [瀏覽和重新排列 code map](../modeling/browse-and-rearrange-code-maps.md)<br />- [藉由編輯 DGML 檔案自訂 code map](../modeling/customize-code-maps-by-editing-the-dgml-files.md)|程式碼中的相依性及其他關聯性<br /><br /> 例如，Dinner Now 可能一開始會檢閱組件 Code Map，以取得組件及其相依性的概觀。 他們可以深入研究此地圖，以探索這些組件中的命名空間及類別。<br /><br /> Dinner Now 也可以建立地圖，以探索程式碼中的特定區域及其他種類的關聯性。 他們可以使用 [方案總管] 來尋找並選取其感興趣的區域及關聯性。|
-|*以程式碼為基礎的類別圖表*<br /><br /> 請參閱 [How to: Add Class Diagrams to Projects (Class Designer)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)。|程式碼中的現有類別|
+|*以程式碼為基礎的類別圖表*<br /><br /> 請參閱[如何：將類別圖表新增至專案 (類別設計工具)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)。|程式碼中的現有類別|
 
  例如，開發人員建立了 Code Map。 接著調整其範圍以便將焦點放在新情節會影響的區域。 這些區域在地圖上會處於選取及醒目提示的狀態：
 
@@ -167,7 +167,7 @@ Dinner Now 必須評估符合新需求所需的成本。 這有一部分取決�
 
 |**圖表**|**描述**|
 |-|-|
-|*以程式碼為基礎的類別圖表*<br /><br /> 請參閱 [How to: Add Class Diagrams to Projects (Class Designer)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)。|程式碼中的現有類別。|
+|*以程式碼為基礎的類別圖表*<br /><br /> 請參閱[如何：將類別圖表新增至專案 (類別設計工具)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)。|程式碼中的現有類別。|
 
 ### <a name="ValidatingCode"></a> 保留程式碼與設計一致
  Dinner Now 必須確定已更新的程式碼與設計保持一致。 他們建立相依性圖表，描述系統中的層級的功能，請指定允許與這些圖層的方式，以及關聯的方案成品之間的相依性。
@@ -332,7 +332,7 @@ Code Map 顯示程式碼的目前組織及關聯性。 項目在地圖上是以 
 |**圖表**|**描述**|
 |-|-|
 |相依性圖表|系統的邏輯架構。 您可以使用相依性驗證以確定程式碼保持與設計一致。<br /><br /> 若要易於識別現有 dependencys 或預期的 dependencys，請建立 code map 並群組相關的項目。 若要建立相依性圖表，請參閱：<br /><br /> - [從您的程式碼建立相依性圖表](../modeling/create-layer-diagrams-from-your-code.md)<br />- [相依性圖表： 指導方針](../modeling/layer-diagrams-guidelines.md)|
-|類別圖表 (以程式碼為基礎)|特定專案程式碼中的現有類別。<br /><br /> 若要修改程式碼中的現有類別並將其視覺化，請使用 [類別設計工具]。<br /><br /> 請參閱 [How to: Add Class Diagrams to Projects (Class Designer)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)。|
+|類別圖表 (以程式碼為基礎)|特定專案程式碼中的現有類別。<br /><br /> 若要修改程式碼中的現有類別並將其視覺化，請使用 [類別設計工具]。<br /><br /> 請參閱[如何：將類別圖表新增至專案 (類別設計工具)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)。|
 
 ### <a name="DefineClasses"></a> 定義類型的詞彙：類別圖表
  類別圖表定義參與系統的實體、詞彙或概念，以及彼此的關聯性。 例如，您可以在開發期間使用這些圖表來描述每個類別的屬性及作業，不論其實作語言或樣式為何。

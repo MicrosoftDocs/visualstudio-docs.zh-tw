@@ -1,5 +1,5 @@
 ---
-title: Visual Studio 中自動程式化 UI 測試的最佳做法
+title: 自動程式化 UI 測試的最佳作法
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -11,16 +11,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d158d3d0fade2b44cf819cf40209a901534a18ad
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: ed2ab3ff15e94bf0e014b99b6451840e6f26a04e
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36283272"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896013"
 ---
 # <a name="best-practices-for-coded-ui-tests"></a>自動程式化 UI 測試的最佳做法
 
 本主題描述一些開發自動程式化 UI 測試的建議。
+
+[!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
 ## <a name="best-practices"></a>最佳作法
 
@@ -92,4 +94,4 @@ Playback.PlaybackSettings.WaitForReadyLevel = WaitForReadyLevel.UIThreadOnly;
 - [使用 UI 自動化來測試您的程式碼](../test/use-ui-automation-to-test-your-code.md)
 - [建立自動程式化 UI 測試](../test/use-ui-automation-to-test-your-code.md)
 - [測試含有多個 UI 對應的大型應用程式](../test/testing-a-large-application-with-multiple-ui-maps.md)
-- [自動程式化 UI 測試和動作記錄的支援組態和平台](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
+- [自動程式碼 UI 測試和動作記錄的支援組態和平台](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)

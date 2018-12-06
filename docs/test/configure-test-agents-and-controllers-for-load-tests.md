@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: abc993d13752cdae00ea75c1eba8e39901f562c0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 363aac5bc07b49670cb35f5f1080f7835e7c4701
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942981"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895635"
 ---
 # <a name="configure-test-agents-and-test-controllers-for-running-load-tests"></a>設定用於執行負載測試的測試代理程式和測試控制器
 
@@ -22,6 +22,8 @@ Visual Studio 可以使用實體或虛擬機器產生應用程式適用的模擬
 
 > [!NOTE]
 > 您也可以使用雲端式負載測試提供虛擬機器，產生多位使用者同時存取網站之負載。 如需雲端式負載測試的詳細資訊，請參閱 [使用 Azure Test Plans 執行負載測試](/azure/devops/test/load-test/get-started-simple-cloud-load-test?view=vsts)。
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="load-simulation-architecture"></a>負載模擬架構
 

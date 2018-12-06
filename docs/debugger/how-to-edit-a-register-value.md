@@ -1,5 +1,5 @@
 ---
-title: 如何： 編輯暫存器值 |Microsoft 文件
+title: 如何： 編輯暫存器值 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -21,19 +21,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: de743aa67b3875654dee1b13b27a74e208bb6d53
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 0d0337f7c77d1ed601c7a6c13c702f4758cbfdbd
+ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31474999"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52257068"
 ---
-# <a name="how-to-edit-a-register-value"></a>如何：編輯暫存器值
-暫存器視窗是在已啟用位址層級偵錯時，才可以使用**選項**對話方塊中，**偵錯**節點。  
+# <a name="how-to-edit-a-register-value-c-c-visual-basic-f"></a>如何： 編輯暫存器值 (C#，c + +、 Visual Basic 中， F#)
+
+暫存器視窗是在已啟用位址層級偵錯時，才可以使用**選項** 對話方塊中，**偵錯**節點。  
   
 ### <a name="to-change-the-value-of-a-register"></a>若要變更暫存器值  
   
-1.  在**註冊**視窗中，使用 TAB 鍵或滑鼠來移動插入點到您想要變更的值。 輸入時，游標必須放在要覆寫的值的前面。  
+1.  在 **註冊**視窗中，使用 TAB 鍵或滑鼠來移動插入點到您想要變更的值。 輸入時，游標必須放在要覆寫的值的前面。  
   
 2.  輸入新值。  
   

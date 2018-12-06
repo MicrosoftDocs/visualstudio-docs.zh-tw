@@ -1,6 +1,8 @@
 ---
-title: Visual Studio 中的資料集工具
-ms.date: 11/04/2016
+title: 資料集工具
+ms.date: 11/21/2018
+ms.prod: visual-studio-dev15
+ms.technology: vs-data-tools
 ms.topic: conceptual
 f1_keywords:
 - vs.data.DataSet
@@ -45,16 +47,14 @@ ms.assetid: ee57f4f6-9fe1-4e0a-be9a-955c486ff427
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 3b7dfe75b27108384312bc10d20cbc80084eaaf6
-ms.sourcegitcommit: 3a11feebad45a0dd4ac45efcbfdf172fce46e1de
-ms.translationtype: MT
+ms.openlocfilehash: 3a8a1ac0f2ac4e4b147fbe11dba8d88ccea4c255
+ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39582456"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52304983"
 ---
 # <a name="dataset-tools-in-visual-studio"></a>Visual Studio 中的資料集工具
 
@@ -63,7 +63,7 @@ ms.locfileid: "39582456"
 
 A`DataSet`物件是基本上是小型資料庫的記憶體物件。 它包含`DataTable`， `DataColumn`，和`DataRow`物件中，您可以儲存和修改一或多個資料庫中的資料，而不需要維護的開啟連接。 資料集會維護其資料，變更的相關資訊，因此更新可以追蹤與您的應用程式變得重新連線時，傳送回資料庫。
 
-資料集和相關的類別會定義在*System.Data* .NET Framework 類別庫中的命名空間。 您可以建立及修改資料集，以動態方式使用 ADO.NET 程式碼。 在本節中的文件會示範如何使用 Visual Studio 設計工具使用資料集。 會透過設計工具使用的資料集**TableAdapter**與資料庫互動的物件。 以程式設計方式建立的資料集使用**DataAdapter**物件。 如需以程式設計方式建立資料集的資訊，請參閱[Dataadapter 和 Datareader](/dotnet/framework/data/adonet/dataadapters-and-datareaders)。
+資料集和相關的類別會定義在<xref:System.Data?displayProperty=fullName>.NET Framework 類別庫中的命名空間。 您可以建立及修改資料集，以動態方式使用 ADO.NET 程式碼。 在本節中的文件會示範如何使用 Visual Studio 設計工具使用資料集。 會透過設計工具使用的資料集**TableAdapter**與資料庫互動的物件。 以程式設計方式建立的資料集使用**DataAdapter**物件。 如需以程式設計方式建立資料集的資訊，請參閱[Dataadapter 和 Datareader](/dotnet/framework/data/adonet/dataadapters-and-datareaders)。
 
 如果您的應用程式必須只從資料庫讀取資料，並不會執行更新、 新增，或刪除，您可以使用，通常取得較佳的效能`DataReader`物件擷取資料到泛型`List`物件或另一個集合物件。 如果您要顯示的資料，您可以資料繫結的使用者介面的集合。
 
@@ -71,7 +71,7 @@ A`DataSet`物件是基本上是小型資料庫的記憶體物件。 它包含`Da
 
 Visual Studio 提供工具，以簡化使用資料集。 基本的端對端工作流程是：
 
-- 使用**資料來源**視窗建立新的資料集從一個或多個資料來源。 使用**Dataset 設計工具**設定資料集，並設定其屬性。 例如，您需要指定哪一個資料表包含，資料來源，以及每個資料表資料行。 請小心選擇，以保留的資料集需要的記憶體數量。 如需詳細資訊，請參閱[建立和設定資料集](../data-tools/create-and-configure-datasets-in-visual-studio.md)。
+- 使用[資料來源 視窗](add-new-data-sources.md#data-sources-window)從一或多個資料來源建立新的資料集。 使用**Dataset 設計工具**設定資料集，並設定其屬性。 例如，您需要指定哪一個資料表包含，資料來源，以及每個資料表資料行。 請小心選擇，以保留的資料集需要的記憶體數量。 如需詳細資訊，請參閱[建立和設定資料集](../data-tools/create-and-configure-datasets-in-visual-studio.md)。
 
 - 指定在資料表之間的關聯性，以便能夠正確處理外部索引鍵。 如需詳細資訊，請參閱 <<c0> [ 使用 Tableadapter 填入資料集](../data-tools/fill-datasets-by-using-tableadapters.md)。
 

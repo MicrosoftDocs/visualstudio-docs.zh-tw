@@ -11,16 +11,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 749c4be37586401d48e9c4a11d8fc70b8ed44c44
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: cf94de633554cef495b0a9a023426ac49de75c76
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382031"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895271"
 ---
 # <a name="how-to-create-a-request-level-plug-in"></a>如何：建立要求層級外掛程式
 
 「要求」是指構成 Web 效能測試的宣告式陳述式。 Web 效能測試外掛程式可以讓您在 Web 效能測試的主要宣告式陳述式之外找出及重複使用程式碼。 您可以建立外掛程式，並將其加入到個別的要求中，也可以加入到包含要求的 Web 效能測試中。 自訂的「要求外掛程式」提供您一種方式，可以在特別要求於 Web 效能測試中執行時呼叫程式碼。
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 每個 Web 效能測試要求外掛程式都有 PreRequest 方法和 PostRequest 方法。 將要求外掛程式附加至特定 http 要求後，會在發出要求前引發 PreRequest 事件，並會在收到回應後引發 PostRequest。
 

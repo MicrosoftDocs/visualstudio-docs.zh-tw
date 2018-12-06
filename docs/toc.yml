@@ -1,7 +1,7 @@
 items:
 - name: Visual Studio 文件
   href: ide/index.md
-- name: 概觀
+- name: 總覽
   items:
   - name: Visual Studio 2017 概觀
     href: ide/visual-studio-ide.md
@@ -611,7 +611,7 @@ items:
         href: ide/how-to-suppress-compiler-warnings.md
     - name: 建置動作
       href: ide/build-actions.md
-    - name: 組建設定
+    - name: 組建組態
       href: ide/understanding-build-configurations.md
       items:
       - name: 建立及編輯設定
@@ -637,7 +637,7 @@ items:
       href: ide/how-to-specify-build-events-csharp.md
     - name: 在 Visual Basic 中設定警告
       href: ide/configuring-warnings-in-visual-basic.md
-    - name: 逐步解說：建立多電腦建置環境
+    - name: 逐步解說：建立多電腦組建環境
       href: ide/walkthrough-creating-a-multiple-computer-build-environment.md
   - name: 偵錯...
     href: debugger/index.md
@@ -658,6 +658,10 @@ items:
     items:
     - name: 快速入門：將佈景主題與文字色彩個人化
       href: ide/quickstart-personalize-the-ide.md
+    - name: 環境設定
+      href: ide/environment-settings.md
+    - name: 同步設定
+      href: ide/synchronized-settings-in-visual-studio.md
     - name: 變更字型與色彩
       href: ide/how-to-change-fonts-and-colors-in-visual-studio.md
     - name: 自訂功能表與工具列
@@ -672,13 +676,13 @@ items:
       href: ide/finding-and-using-visual-studio-extensions.md
     - name: 管理外部工具
       href: ide/managing-external-tools.md
-    - name: 同步設定
-      href: ide/synchronized-settings-in-visual-studio.md
   - name: 將效能最佳化
     href: ide/optimize-visual-studio-performance.md
     items:
     - name: 啟動時間
       href: ide/optimize-visual-studio-startup-time.md
+    - name: 載入已篩選的解決方案
+      href: ide/filtered-solutions.md
     - name: 秘訣和訣竅
       href: ide/visual-studio-performance-tips-and-tricks.md
   - name: 管理協助工具功能
@@ -688,11 +692,11 @@ items:
       href: ide/reference/how-to-set-ide-accessibility-options.md
     - name: 以獨佔模式使用鍵盤
       href: ide/reference/how-to-use-the-keyboard-exclusively.md
-    - name: 協助工具秘訣和訣竅
+    - name: 協助工具祕訣和訣竅
       href: ide/reference/accessibility-tips-and-tricks.md
-    - name: Microsoft 提供的協助工具產品和服務
+    - name: Microsoft 的協助工具產品和服務
       href: ide/reference/accessibility-products-and-services-from-microsoft.md
-    - name: 設計可及性應用程式的資源
+    - name: 用於設計無障礙應用程式的資源
       href: ide/reference/resources-for-designing-accessible-applications.md
   - name: 全球化和當地語系化應用程式
     href: ide/globalizing-and-localizing-applications.md
@@ -1080,8 +1084,10 @@ items:
       href: ide/dotfuscator/upgrades.md
 - name: 資源
   items:
-  - name: 新功能
+  - name: Visual Studio 2017 的新功能
     href: ide/whats-new-in-visual-studio.md
+  - name: Visual Studio 2019 的新功能
+    href: ide/whats-new-visual-studio-2019.md
   - name: 版本資訊與系統需求
     items:
     - name: 目前版本資訊
@@ -1121,9 +1127,9 @@ items:
     href: ide/reference/resources-for-troubleshooting-integrated-development-environment-errors.md
   - name: 告訴我們
     href: ide/talk-to-us.md
-ms.openlocfilehash: 1347181f66b898b7fe862357a6a52c3552e2cd9c
-ms.sourcegitcommit: f61ad0e8babec8810295f039e67629f4bdebeef0
+ms.openlocfilehash: 618c6a9660cc85a6ae675a17389462584669972b
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "52001317"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895544"

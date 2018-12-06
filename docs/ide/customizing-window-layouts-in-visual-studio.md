@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Studio 中自訂視窗版面配置
+title: 自訂視窗版面配置
 ms.date: 01/23/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -25,12 +25,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 62fa251eac1546b0d5588dfc4dc43bead725bf81
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 849f94d178453d3b90140f59dc9ed5a84cd98466
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34746841"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52389639"
 ---
 # <a name="customize-window-layouts-in-visual-studio"></a>在 Visual Studio 中自訂視窗版面配置
 
@@ -81,9 +81,6 @@ IDE 提供兩種基本的視窗型別：「工具視窗」  與「文件視窗�
 -   將視窗位置重設為預設版面配置，或是已儲存的自訂版面配置。
 
 您可透過拖曳、使用 [視窗]  功能表上的命令，或是在要排列的視窗標題列上按一下滑鼠右鍵，來排列工具和文件視窗。
-
-> [!NOTE]
-> 在下列指示的某些 Visual Studio 使用者介面項目中，您的電腦可能會顯示不同的名稱或位置。 您所擁有的 Visual Studio 版本以及使用的設定會決定這些項目。 如需詳細資訊，請參閱[將 Visual Studio IDE 個人化](../ide/personalizing-the-visual-studio-ide.md)。
 
 ### <a name="dock-windows"></a>固定視窗
 

@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Studio 中編輯負載測試情節
+title: 負載測試情節
 ms.date: 10/03/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,18 +12,20 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 67398d5a4b2b33ace2d3ba3c74d63693861e586e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 865be7c7c6371f92f85d853a7dde045274fc5efb
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49837135"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896532"
 ---
 # <a name="edit-load-test-scenarios"></a>編輯負載測試情節
 
 負載測試「情節」可指定負載模式、測試混合、瀏覽器混合和網路混合。 這些情節很重要，因為它們可讓您設定測試來模擬複雜且真實的工作負載。
 
 例如，您可能針對數以百計的客戶同時透過許多連接速度，並且使用不同瀏覽器連接至具有網際網路前端之電子商務網站進行測試。 相同的網站也可能具有系統管理功能，內部員工會利用這些系統管理功能更新產品資訊和檢視統計資料。 這些內部使用者通常會使用相同的瀏覽器和高速的 LAN 連線存取網站。 您可以將這兩個不同使用者群組的屬性封裝成不同的情節。 每個情節都包含虛擬使用者類型。 在這種情況下，您可以使用一個負載測試情節來代表虛擬客戶，並使用另一個情節來代表網站的虛擬內部使用者。
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="scenario-components"></a>情節元件
 

@@ -306,7 +306,7 @@ ms.locfileid: "51296238"
   
 13. 在 **描述**方塊中，輸入**開啟 SharePoint 開發人員中心網站**。  
   
-14. 在 [ **URL**方塊中，輸入**https://docs.microsoft.com/sharepoint/dev/**，然後選擇**完成**] 按鈕。  
+14. 在 [ **URL**方塊中，輸入 **https://docs.microsoft.com/sharepoint/dev/** ，然後選擇**完成**] 按鈕。  
   
      Visual Studio 會加入名為的項目**CustomAction1**至您的專案，並開啟*Elements.xml*在編輯器中的檔案。 確認*Elements.xml*包含您在精靈中指定的值。  
   

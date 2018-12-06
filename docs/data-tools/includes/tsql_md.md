@@ -14,10 +14,10 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 ms.openlocfilehash: be1696ea121cbe401478620184fe8473f25d56a1
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.sourcegitcommit: c9a01c599ce19a5845605b3b28c0229fd0abb93f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38944516"
+ms.lasthandoff: 11/22/2018
+ms.locfileid: "52292628"
 ---
 Transact-SQL

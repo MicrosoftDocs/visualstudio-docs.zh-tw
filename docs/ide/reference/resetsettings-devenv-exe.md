@@ -1,6 +1,6 @@
 ---
 title: -ResetSettings (devenv.exe)
-ms.date: 11/04/2016
+ms.date: 11/16/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,18 +14,21 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c3d3a6ef558b510cfde716716daf97a549fbba4
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: c8f826db0c619e1dfb5811aaf9d0c5ef40093c97
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33703983"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388659"
 ---
 # <a name="resetsettings-devenvexe"></a>/ResetSettings (devenv.exe)
 
 還原 Visual Studio 預設設定，並會自動啟動 Visual Studio IDE。 選擇性地將設定重設為指定的 *vssettings* 檔案。
 
 第一次啟動 Visual Studio 時，選取的設定檔即會決定預設值。
+
+> [!TIP]
+> 若要了解如何使用整合式開發環境 (IDE) 重設設定，請參閱[重設設定](../environment-settings.md#reset-settings)。
 
 ## <a name="syntax"></a>語法
 
@@ -53,7 +56,8 @@ Devenv /ResetSettings SettingsFile
 Devenv.exe /ResetSettings "C:\My Files\MySettings.vssettings"
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
+- [環境設定](../environment-settings.md)
 - [將 Visual Studio IDE 個人化](../../ide/personalizing-the-visual-studio-ide.md)
 - [Devenv 命令列參數](../../ide/reference/devenv-command-line-switches.md)

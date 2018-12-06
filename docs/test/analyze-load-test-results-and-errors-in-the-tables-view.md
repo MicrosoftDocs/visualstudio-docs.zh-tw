@@ -23,16 +23,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: c2a0ccc4ee9f002a6c0f335aed590d3b8bb79a7c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: cab92c4daac6da81541771b534f4f1a6f9be159e
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49928668"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896623"
 ---
 # <a name="analyze-load-test-results-and-errors-in-the-tables-view-of-the-load-test-analyzer"></a>在負載測試分析器的資料表檢視中分析負載測試結果和錯誤
 
 當您檢視負載測試回合的結果時，您可以顯示不同窗格以提供不同的資料分析方法。 您可以用圖形方式檢視資料，觀察資料在時間過程中如何改變，或者可以用詳細資料表的方式檢視資料。
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 若要切換至資料表檢視，請選擇 [負載測試] 工具列上的 [資料表]。 若要在不同資料表之間切換，請使用資料表方格上工具列的 [資料表] 下拉式清單。 在資料表檢視中，您一次最多可以檢視四份資料表。 如需詳細資訊，請參閱本主題中的[並排顯示負載測試資料表](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#tile-load-test-tables)。
 
@@ -41,14 +43,14 @@ ms.locfileid: "49928668"
 > [!NOTE]
 > 只有在負載測試執行時，名為 [最後一筆] 的資料行才可使用。 當負載測試完成後，這些資料行就無法使用了。
 
- 大部分資料表都可以藉由選擇想要排序的資料行標題進行排序。 根據預設，有些資料表並不顯示所有可用的資料行。 如果資料行可以使用，您可以將資料行加入至資料表中。 若要新增資料行，請以滑鼠右鍵按一下資料表，然後選擇 [新增/移除資料行]。
+大部分資料表都可以藉由選擇想要排序的資料行標題進行排序。 根據預設，有些資料表並不顯示所有可用的資料行。 如果資料行可以使用，您可以將資料行加入至資料表中。 若要新增資料行，請以滑鼠右鍵按一下資料表，然後選擇 [新增/移除資料行]。
 
 > [!NOTE]
 > 表格資料還可以複製到其他應用程式 (例如 Excel)，以便進行其他分析。
 
 ## <a name="the-load-test-tables"></a>負載測試資料表
 
- 下列表格列出可用於分析負載測試回合的資料表。
+下列表格列出可用於分析負載測試回合的資料表。
 
 |資料表名稱|描述|
 |-|-|

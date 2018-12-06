@@ -16,7 +16,7 @@ ms.workload:
 - cordova
 ms.openlocfilehash: f10439e63b95fc2e78980ceb585e32dbbabd44d9
 ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/23/2018
 ms.locfileid: "49823745"
@@ -70,7 +70,7 @@ ms.locfileid: "49823745"
 |`$(id)`|依 ID 傳回項目。 這是 `document.getElementById(id)`的捷徑命令，其中 `id` 是代表項目 ID 的字串。|`$("contenthost")`|  
 |`$$(selector)`|傳回項目陣列，其符合使用 CSS 選取器語法的指定選取器。 這是 `document.querySelectorAll()`的捷徑命令。|`$$(".itemlist")`|  
 |`cd()`<br /><br /> `cd(window)`|可讓您將運算式評估的內容，從頁面的預設最上層視窗變更為指定框架的視窗。 呼叫不帶參數的 `cd()` ，會將內容傳回至最上層視窗。|`cd();`<br /><br /> `cd(myframe);`|  
-|`select(element)`|選取 [DOM 總管] [](../debugger/quickstart-debug-html-and-css.md)中指定的項目。|`select(document.getElementById("element"));`<br /><br /> `select($("element"));`<br /><br /> `select($1);`|  
+|`select(element)`|選取 [DOM 總管](../debugger/quickstart-debug-html-and-css.md)中指定的項目。|`select(document.getElementById("element"));`<br /><br /> `select($("element"));`<br /><br /> `select($1);`|  
 |`dir(object)`|傳回指定物件的視覺化檢視。 您可以使用視覺化檢視在主控台視窗中檢查屬性。|`dir(obj);`|  
   
 ## <a name="checking-whether-a-console-command-exists"></a>檢查主控台命令是否存在  

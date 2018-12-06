@@ -15,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b0fc5cd2a70176e671caa187358d8f940f9f11f
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: c71161c85c1a532b8c7e188f23cb00e73f78b06c
+ms.sourcegitcommit: f61ad0e8babec8810295f039e67629f4bdebeef0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51000119"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "52001213"
 ---
 # <a id="top"> </a> Azure 上的 Visual Studio 映像
 
@@ -34,14 +34,13 @@ ms.locfileid: "51000119"
 
 | 發行版本                                              | 版本                     |     產品版本     |
 |:------------------------------------------------------------:|:----------------------------:|:-----------------------:|
-| Visual Studio 2017：最新 (15.8 版)                    |    Enterprise、Community     |      15.8.7 版     |
-| Visual Studio 2017：最新預覽 (15.9 版 Preview 5) |    Enterprise、Community     |      15.9 版       |
+| Visual Studio 2017：最新 (15.9 版)                    |    Enterprise、Community     |      15.9.0 版     |
 |         Visual Studio 2017：RTW                              |    Enterprise、Community     |      15.0.18 版    |
 |   Visual Studio 2015：最新 (Update 3)                      |    Enterprise、Community     |  14.0.25431.01 版  |
 |         Visual Studio 2015：RTW                              |             無             | (維護已過期) |
 
 > [!NOTE]
-> 根據 Microsoft 維護原則，Visual Studio 2015 的原始發行 (RTW) 版本的維護已過期。 Visual Studio 2015 Update 3 是 Visual Studio 2015 產品線剩下唯一提供的版本。
+> 根據 Microsoft 維護原則，Visual Studio 2015 的原始發行 (RTW) 版本的維護已過期。 Visual Studio 2015 Update 3 是 Visual Studio 2015 產品線剩下唯一提供的版本。  此外，自 Visual Studio 2017 15.9 版發行後，我們已停止包含 15.9 版預覽的「最新預覽」影像。
 
 如需詳細資訊，請參閱[Visual Studio IDE 維護原則](/visualstudio/productinfo/vs-servicing-vs)。
 

@@ -13,21 +13,18 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9cf1cde04a45df47627b8b8bf9a0fad7b9bef0c4
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: c4ffef0b1b76f453048ff20e3cbada0b8a591c65
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50673209"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388828"
 ---
 # <a name="options-text-editor-cc-view"></a>選項、文字編輯器、C/C++、檢視
 
 在使用 C 或 C++ 進行程式設計時，請使用這些屬性頁變更程式碼編輯器的預設行為。
 
 若要存取此屬性頁面，請選擇 [工具] > [選項] 並展開 [文字編輯器]、[C/C++]，然後選擇 [檢視]。
-
-> [!NOTE]
-> 在下列指示的某些 Visual Studio 使用者介面項目中，您的電腦可能會顯示不同的名稱或位置。 您所擁有的 Visual Studio 版本以及使用的設定會決定這些項目。 請參閱[將 Visual Studio IDE 個人化](../../ide/personalizing-the-visual-studio-ide.md)。
 
 ## <a name="code-squiggles"></a>程式碼波浪線
 
@@ -49,7 +46,7 @@ ms.locfileid: "50673209"
 
 - **列舉註解工作** - 掃描開啟中的原始程式檔以找出 VS 語彙基元，然後將其回報於 [工作清單] 視窗中。
 
-- **醒目提示相符的語彙基元** - 醒目提示與游標位置相符的右括弧或語法。 
+- **醒目提示相符的語彙基元** - 醒目提示與游標位置相符的右括弧或語法。
 
 ## <a name="outlining"></a>大綱
 

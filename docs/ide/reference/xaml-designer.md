@@ -11,19 +11,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 16d0ed610843826f0eac77fc2ce95bcfca3df6e2
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 52691c0b49c74bd39fa97ec8d297ffb823ba705c
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31952283"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388357"
 ---
 # <a name="xaml-designer-options-page"></a>XAML 設計工具選項頁面
 
 使用 [XAML 設計工具] 選項頁面來指定如何設定 XAML 文件中元素和屬性的格式。 若要開啟此頁面，請選擇 [工具] 功能表，然後選擇 [選項]。 若要存取 [XAML 設計工具] 屬性頁面，請選擇 [XAML 設計工具] 節點。 當您開啟文件時，會套用 XAML 設計工具的設定。 因此，若要變更設定，您需要關閉然後重新開啟 Visual Studio，才能看到變更。
 
 > [!NOTE]
-> 根據您目前使用的設定或版本，您所看到的對話方塊與功能表命令可能會與 [說明] 中描述的不同。 若要變更設定，請從 [ **工具** ] 功能表中選取 [ **匯入和匯出設定** ]。 如需詳細資訊，請參閱[將 Visual Studio IDE 個人化](../../ide/personalizing-the-visual-studio-ide.md)。
+> 根據您目前使用的設定或版本，您所看到的對話方塊與功能表命令可能會與 [說明] 中描述的不同。 若要變更設定，請從 [ **工具** ] 功能表中選取 [ **匯入和匯出設定** ]。 如需詳細資訊，請參閱[重設設定](../environment-settings.md#reset-settings)。
 
 ## <a name="enable-xaml-designer"></a>啟用 XAML 設計工具
 

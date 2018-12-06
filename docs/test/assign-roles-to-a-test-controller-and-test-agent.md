@@ -14,24 +14,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 4f47fdad1b2f04a69b2a4bc1c3f6d1e6b60fa881
-ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
+ms.openlocfilehash: 021693266278bd705678c22d2c3f07e534901e5a
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46370727"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895336"
 ---
 # <a name="assign-roles-to-a-test-controller-and-test-agent"></a>將角色指派至測試控制器和測試代理程式
 
 本逐步解說將示範如何建立和設定測試設定，讓這個測試設定透過測試控制器和測試代理程式使用 Visual Studio 將測試分散到多部電腦。 此外，本逐步解說也會示範如何將診斷和資料配接器加入至測試設定。
 
-在這個逐步解說中，您將完成下列工作：
-
--   建立測試設定。
-
--   將角色指派至測試控制器和測試代理程式。
-
--   將診斷和資料配接器指派至測試設定。
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="prerequisites"></a>必要條件
 

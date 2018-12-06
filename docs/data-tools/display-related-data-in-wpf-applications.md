@@ -1,5 +1,5 @@
 ---
-title: WPF 應用程式中顯示相關的資料
+title: 在 WPF 應用程式中顯示相關資料
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -18,41 +18,42 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 38c25cc1631529895a11af566298ce22930a2e6a
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
-ms.translationtype: MT
+ms.openlocfilehash: f37fdeb7ddd305c7c258958d92c08cf1d8f2a4a8
+ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34746542"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52304593"
 ---
-# <a name="display-related-data-in-wpf-applications"></a>WPF 應用程式中顯示相關的資料
-在某些應用程式，您可以使用來自多個資料表或實體的父子式關聯性中彼此有關聯的資料。 例如，您可能想要顯示一個方格，其中會顯示從客戶`Customers`資料表。 當使用者選取特定的客戶時，另一個方格會顯示該客戶的相關訂單`Orders`資料表。
+# <a name="display-related-data-in-wpf-applications"></a>在 WPF 應用程式中顯示相關資料
 
-您可以建立資料繫結控制項顯示相關的資料的項目從**資料來源**WPF 設計工具的視窗。
+在某些應用程式中，您可能想要使用來自多個資料表或在父子式關聯性彼此相關的實體的資料。 例如，您可能想要顯示一個方格，其中會顯示從客戶`Customers`資料表。 當使用者選取特定的客戶時，另一部的方格會顯示該客戶的相關訂單`Orders`資料表。
 
-## <a name="to-create-controls-that-display-related-records"></a>若要建立顯示相關的記錄的控制項
+您可以建立資料繫結控制項，顯示相關的資料的項目從**Zdroje dat**至 WPF 設計工具 視窗。
 
-1. 在**資料**功能表上，按一下 **顯示資料來源**開啟**資料來源**視窗。
+## <a name="to-create-controls-that-display-related-records"></a>若要建立顯示相關的記錄控制項
 
-2. 按一下**加入新資料來源**，並完成**資料來源組態**精靈。
+1. 按一下 [資料 **] 功能表上的 [顯示資料來源**]，以開啟 [資料來源 **] 視窗。
 
-3. 開啟 WPF 設計工具中，並確定在設計工具包含的項目中的有效置放目標的容器**資料來源**視窗。
+2. 按一下 [加入新資料來源]**，並完成 [資料來源組態精靈]**。
 
-     如需有效置放目標的詳細資訊，請參閱[繫結 WPF 控制項加入 Visual Studio 中的資料](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)。
+3. 開啟 WPF 設計工具中，並確定設計工具會包含有效的置放目標中的項目容器**Zdroje dat**視窗。
 
-4. 在**資料來源**視窗中，展開節點，表示父資料表或關聯性中的物件。 父資料表或物件是一對多關聯性的 「 一 」 端上。
+     如需有關有效置放目標的詳細資訊，請參閱 <<c0> [ 繫結 WPF 控制項新增至 Visual Studio 中的資料](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)。
 
-5. 拖曳父節點 （或任何個別的項目父節點中） 從**資料來源**視窗拖曳至設計工具中的有效置放目標。
+4. 在 [ **Zdroje dat** ] 視窗中，展開代表父資料表的節點或關聯性中的物件。 物件的父資料表是一對多關聯性的 「 一 」 端上。
 
-     Visual Studio 會產生 XAML，會建立新的資料繫結控制項，針對您拖曳每個項目。 XAML 也會加入新<xref:System.Windows.Data.CollectionViewSource>父資料表或物件的拖放目標資源。 對於某些資料來源，Visual Studio 也會產生程式碼，以將資料載入至父資料表或物件。 如需詳細資訊，請參閱[繫結 WPF 控制項加入 Visual Studio 中的資料](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)。
+5. 將父節點 （或任何個別的項目父節點中） 從拖曳**Zdroje dat**視窗拖曳至設計工具中的有效置放目標。
 
-6. 在**資料來源**視窗中，找出相關的子系資料表或物件。 相關的子系資料表和物件會顯示為資料的父節點的清單底部的可展開節點。
+     Visual Studio 會產生 XAML 會建立新的資料繫結控制項，您將每個項目。 XAML 也會加入新<xref:System.Windows.Data.CollectionViewSource>父資料表或物件的置放目標的資源。 對於某些資料來源，Visual Studio 也會產生程式碼，以將資料載入至父資料表或物件。 如需詳細資訊，請參閱 <<c0> [ 繫結 WPF 控制項新增至 Visual Studio 中的資料](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)。
 
-7. 將子節點 （或任何子節點中的個別項目） 從拖曳**資料來源**視窗拖曳至設計工具中的有效置放目標。
+6. 在 [ **Zdroje dat** ] 視窗中，找出相關的子資料表或物件。 相關的子資料表和物件顯示為可展開節點底部的父節點的清單中的資料。
 
-     Visual Studio 會產生針對每一個您拖曳的項目建立新的資料繫結控制項的 XAML。 XAML 也會加入新<xref:System.Windows.Data.CollectionViewSource>子資料表或物件的拖放目標資源。 這個新<xref:System.Windows.Data.CollectionViewSource>繫結至您剛才拖曳至設計工具的物件之父資料表的屬性。 對於某些資料來源，Visual Studio 也會產生程式碼，以將資料載入至子資料表或物件。
+7. 將子節點 （或任何子節點中的個別項目） 從拖曳**Zdroje dat**視窗拖曳至設計工具中的有效置放目標。
 
-     下圖示範相關**訂單**資料表**客戶**資料表中的資料集在**資料來源**視窗。
+     Visual Studio 會產生每個您所拖曳的項目建立新的資料繫結控制項的 XAML。 XAML 也會加入新<xref:System.Windows.Data.CollectionViewSource>子資料表或物件的置放目標的資源。 這個新<xref:System.Windows.Data.CollectionViewSource>繫結至您剛拖曳至設計工具的物件之父資料表的屬性。 對於某些資料來源，Visual Studio 也會產生程式碼，以將資料載入至子資料表或物件。
+
+     下圖示範相關**訂單**的資料表**客戶**資料表中的資料集**Zdroje dat**視窗。
 
      ![顯示關聯的資料來源視窗](../data-tools/media/datasources2.gif)
 

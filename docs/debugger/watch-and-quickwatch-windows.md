@@ -18,18 +18,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: aa469b109e0e22e426d76f75be50309196c6a264
-ms.sourcegitcommit: 331dbb12e11fcd7f5d15fab05f3c861e48126e43
-ms.translationtype: MT
+ms.openlocfilehash: 944347f6afc371775afca1b58bae77271b60359c
+ms.sourcegitcommit: a811f6a194ccd40d844e74e618d847df87c85c16
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51826787"
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "52621639"
 ---
 # <a name="watch-variables-with-watch-windows-and-quickwatch"></a>監看式變數使用監看式視窗和快速監看式 
 
 當您偵錯時，您可以使用**監看式**windows 並**快速監看式**監看變數和運算式。 在偵錯工作階段期間，才可以使用 windows。
 
 **監看式**視窗可以顯示數個變數，偵錯時，一次。 **快速監看式**對話方塊顯示單一變數一次，而且必須關閉偵錯才能繼續。
+
+如果這是您第一次您嘗試偵錯程式碼時，您可能想要讀取[修正 bug，藉由撰寫更好C#程式碼](../debugger/write-better-code-with-visual-studio.md)並[偵錯適用於徹底初學者](../debugger/debugging-absolute-beginners.md)再通過這篇文章。
 
 ## <a name="observe-variables-with-a-watch-window"></a>觀察 監看式視窗變數
 
@@ -142,11 +144,11 @@ var1 = var2
 
 若要避免的副作用指定的一個方法是關閉自動函式評估。 在 **工具** > **選項** > **偵錯** > **一般**，取消選取**啟用屬性評估及其他隱含函式呼叫**。
 
-針對C#，當屬性評估或隱含函式呼叫關閉時，您可以強制評估加**ac**格式修飾詞的變數**名稱**中**監看式**視窗。 請參閱[格式規範，在 C#](../debugger/format-specifiers-in-csharp.md)。
+針對C#，當屬性評估或隱含函式呼叫關閉時，您可以強制評估加**ac**格式修飾詞的變數**名稱**中**監看式**視窗。 請參閱 [Format specifiers in C#](../debugger/format-specifiers-in-csharp.md) (C# 中的格式規範)。
 
 ## <a name="bkmk_objectIds"></a> 在 [監看式] 視窗中使用物件識別碼 (C#和 Visual Basic)
 
-有時您想要觀察特定物件的行為。 例如，您可能要追蹤所參考的本機變數之後，該變數已超出範圍的物件。 在C#和 Visual Basic 中，您可以建立參考類型的特定執行個體的物件識別碼中使用這些**監看式**視窗和中斷點條件中。 物件識別碼是由 common language runtime (CLR) 偵錯服務所產生，並與物件相關聯。
+有時您想要觀察特定物件的行為。 例如，您可能要追蹤所參考的本機變數之後，該變數已超出範圍的物件。 在 C# 和 Visual Basic 中，您可以針對參考型別的特定執行個體建立物件識別碼，並在 [監看式] 視窗和中斷點條件中加以使用。 物件識別碼由 Common Language Runtime (CLR) 偵錯服務產生，會與物件建立關聯。
 
 > [!NOTE]
 > 物件 Id 會建立不會阻止物件進行記憶體回收的弱式參考。 它們僅針對目前的偵錯工作階段才有效。
@@ -217,13 +219,13 @@ public class Program
 
 若只要顯示**動態檢視**物件，請新增**動態**格式規範中的動態物件名稱之後**監看式**視窗：
 
-- 若為 C# 中： `ObjectName, dynamic`
-- Visual basic: `$dynamic, ObjectName`
+- 若為 C#：`ObjectName, dynamic`
+- 若為 Visual basic：`$dynamic, ObjectName`
 
 >[!NOTE]
 >- C#偵錯工具不會自動重新評估中的值**動態檢視**當您逐步執行至下一行程式碼。 
 >- Visual Basic 偵錯工具會自動重新整理透過 新增運算式**動態檢視**。
->- 評估的成員**動態檢視**可以有[副作用](https://en.wikipedia.org/wiki/Side_effect_\(computer_science\))。 
+>- 評估**動態檢視**的成員可能會有[副作用](https://en.wikipedia.org/wiki/Side_effect_\(computer_science\))。 
 
 **若要插入新的監看式變數，會轉換成動態物件的物件：**
   
@@ -273,11 +275,11 @@ static void Main(string[] args)
    
 1. 若要加入的變數或運算式，從**快速監看式**要**監看式**視窗中，選取**加入監看式**。
    
-1. 選取 **關閉 **以關閉**快速監看式**視窗。 (**快速監看式**是強制回應對話方塊中，因此您無法繼續偵錯，只要已開啟。)
+1. 選取 **關閉** 以關閉**快速監看式**視窗。 (**快速監看式**是強制回應對話方塊中，因此您無法繼續偵錯，只要已開啟。)
    
 1. 繼續偵錯。 您可以觀察在變數**監看式**視窗。
 
 ## <a name="see-also"></a>另請參閱
- [什麼偵錯？](../debugger/what-is-debugging.md)  
- [撰寫更好C#使用 Visual Studio 程式碼](../debugger/write-better-code-with-visual-studio.md)  
+ [什麼是偵錯？](../debugger/what-is-debugging.md)  
+ [透過撰寫更好的 C# 程式碼來修正 Bug](../debugger/write-better-code-with-visual-studio.md)  
  [第一次查看偵錯](../debugger/debugger-feature-tour.md)[偵錯工具視窗](../debugger/debugger-windows.md)

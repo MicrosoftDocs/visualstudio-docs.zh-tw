@@ -30,22 +30,20 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 4174191f9927679eb698e2e918a7bfa50f915a3e
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 30986c0f18a2cc272cb917be9ce24b2a335c0b4b
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50673202"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388630"
 ---
 # <a name="options-text-editor-xaml-miscellaneous"></a>選項、文字編輯器、XAML、其他
+
 使用 [其他] 屬性頁來指定如何格式化您 XAML 文件中的項目和屬性。 若要開啟 [選項] 對話方塊，請按一下 [工具] 功能表，然後按一下 [選項]。 若要存取 [其他] 屬性頁，請展開 [文字編輯器] > [XAML] > [其他] 節點。
 
-> [!NOTE]
-> 根據您目前使用的設定或版本，您所看到的對話方塊與功能表命令可能會與 [說明] 中描述的不同。 若要變更設定，請從 [ **工具** ] 功能表中選取 [ **匯入和匯出設定** ]。 如需詳細資訊，請參閱[將 Visual Studio IDE 個人化](../../ide/personalizing-the-visual-studio-ide.md)。
-
-
 ## <a name="auto-insert"></a>自動插入
- 使用此設定可控制標記和引號的自動產生時機。
+
+使用此設定可控制標記和引號的自動產生時機。
 
 |||
 |-|-|
@@ -55,7 +53,8 @@ ms.locfileid: "50673202"
 |**分隔 MarkupExtension 參數的逗號**|指定是否在您於標記延伸中輸入多個參數時產生逗號。|
 
 ## <a name="errors-and-warnings"></a>錯誤和警告
- 使用此設定來控制錯誤和警告的自動產生時機。 如需詳細資訊，請參閱 [XAML 錯誤和警告](../../designers/xaml-errors-warnings.md)。
+
+使用此設定來控制錯誤和警告的自動產生時機。 如需詳細資訊，請參閱 [XAML 錯誤和警告](../../designers/xaml-errors-warnings.md)。
 
 ## <a name="see-also"></a>另請參閱
 

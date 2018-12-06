@@ -1,16 +1,13 @@
 ---
-title: 如何：在套用 Visual Basic 開發者設定的情況下管理組建組態
-ms.date: 11/04/2016
+title: 使用 Visual Basic 開發人員設定管理組建設定
+ms.date: 11/21/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-compile
 ms.topic: conceptual
 helpviewer_keywords:
-- Visual Studio, building with Visual Basic settings
-- MSBuild, debug build
 - advanced build configurations
-- building with Visual Basic developer settings
+- building with Visual Basic developer settings (Visual Studio)
 - debug builds
-- MSBuild, release build
 - release builds
 ms.assetid: eaea6e0b-6c61-4869-8d63-d372c745a23c
 author: gewarren
@@ -18,20 +15,20 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 987419e62d54b44a21a70f625e2a240bd7aecc21
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 90e00c544db2064f55d78de5dad00cc27105451e
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31946256"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388682"
 ---
 # <a name="how-to-manage-build-configurations-with-visual-basic-developer-settings-applied"></a>如何：在套用 Visual Basic 開發者設定的情況下管理組建組態
 
-根據預設，所有進階組建組態選項會隱藏，並套用 Visual Basic 開發人員設定。 本主題說明如何手動啟用這些設定。
+根據預設，在套用 Visual Basic 開發人員設定時，所有進階組建組態選項都會被隱藏。 本文說明如何手動啟用這些組建設定。
 
 ## <a name="enable-advanced-build-configurations"></a>啟用進階組建組態
 
-根據預設，Visual Basic 開發人員設定會隱藏開啟 [組態管理員] 對話方塊和[專案設計工具](..//ide/reference/application-page-project-designer-visual-basic.md)中的 [組態] 和 [平台] 清單的選項。
+根據預設，Visual Basic 開發人員設定會隱藏開啟 [組態管理員] 對話方塊和[專案設計工具](../ide/reference/application-page-project-designer-visual-basic.md)中的 [組態] 和 [平台] 清單的選項。
 
 1.  在 [ **工具** ] 功能表上按一下 [ **選項**]。
 
@@ -44,9 +41,10 @@ ms.locfileid: "31946256"
 
 4.  按一下 [確定 **Deploying Office Solutions**]。
 
-     在 [組建] 功能表上，現在已可使用 [組態管理員]，而且 [組態] 和 [平台] 清單也會顯示在**專案設計工具**中。
+     在 [組建] 功能表上現在已可使用 [組態管理員]，且 [組態] 和 [平台] 清單也會顯示在 [專案設計工具] 中。
 
 ## <a name="see-also"></a>另請參閱
 
 - [了解建置組態](../ide/understanding-build-configurations.md)
-- [編譯及建置](../ide/compiling-and-building-in-visual-studio.md)
+- [編譯和建置](../ide/compiling-and-building-in-visual-studio.md)
+- [環境設定](../ide/environment-settings.md)

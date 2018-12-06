@@ -5,27 +5,31 @@ items:
   items:
   - name: 什麼是偵錯？
     href: what-is-debugging.md
-  - name: 使用 Visual Studio 撰寫更優質的 C# 程式碼
+  - name: 透過撰寫更好的 C# 程式碼來修正錯誤 (Bug)
     href: write-better-code-with-visual-studio.md
 - name: 快速入門
   items:
   - name: 偵錯工具簡介
     href: debugger-feature-tour.md
-  - name: 對受控應用程式進行偵錯
+  - name: 對 C# 或 Visual Basic 應用程式進行偵錯
     href: quickstart-debug-with-managed.md
-  - name: 對原生應用程式進行偵錯
+  - name: 對 C++ 應用程式進行偵錯
     href: quickstart-debug-with-cplusplus.md
   - name: 對 ASP.NET 應用程式進行偵錯
     href: quickstart-debug-aspnet.md
 - name: 教學課程
   items:
-  - name: 了解使用 Visual Studio 進行偵錯
+  - name: 了解如何對 C# 偵錯
     href: getting-started-with-the-debugger.md
+  - name: 了解如何對 C++ 偵錯
+    href: getting-started-with-the-debugger-cpp.md
+  - name: 了解如何對 Visual Basic 偵錯
+    href: getting-started-with-the-debugger-vb.md
   - name: 在偵錯工具中執行 Python 程式碼...
     href: ../python/tutorial-working-with-python-in-visual-studio-step-04-debugging.md
   - name: 對即時 Azure 應用程式進行偵錯
     href: debug-live-azure-applications.md
-  - name: 對受控碼與機器碼進行偵錯
+  - name: 對 C# 和 C++ 程式碼偵錯
     href: how-to-debug-managed-and-native-code.md
   - name: 檢查先前的應用程式狀態
     href: view-historical-application-state.md
@@ -105,7 +109,7 @@ items:
       items:
       - name: 使用編輯後繼續 (C#)
         href: how-to-use-edit-and-continue-csharp.md
-      - name: 支援的程式碼變更 (C#)
+      - name: 支援的程式碼變更
         href: supported-code-changes-csharp.md
     - name: 編輯後繼續 (Visual Basic)
       href: edit-and-continue-visual-basic.md
@@ -836,9 +840,9 @@ items:
   items:
   - name: Visual Studio 中偵錯工具的新功能
     href: what-s-new-for-the-debugger-in-visual-studio.md
-ms.openlocfilehash: fb63e23cce50cd7d326bb11d39628f63e8bf6a2f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.openlocfilehash: 82809574dbbecf01e26e1677a4bb22ce9a482cf6
+ms.sourcegitcommit: d7f232a7596420e40ff8051d42cdf90203af4a74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51770461"
+ms.lasthandoff: 12/03/2018
+ms.locfileid: "52821392"

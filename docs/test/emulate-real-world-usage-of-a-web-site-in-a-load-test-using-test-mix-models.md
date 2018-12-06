@@ -11,16 +11,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 3e3710d82ee22975963169940bfae71b21a64279
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 33f44051025310072972ef3c15a1d4a4325c0efe
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49820898"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896571"
 ---
 # <a name="emulate-expected-real-world-usage-of-a-website-or-application-in-a-load-test-using-a-test-mix-model"></a>使用測試混合模型在負載測試中模擬網站或應用程式的預期實際使用情況
 
 使用負載模型選項，可以讓您對進行負載測試中的網站或應用程式，更為準確地預測其預期真實使用情況。 這是相當重要的，因為不是奠基於準確負載模型的負載測試，可能會產生誤導的結果。
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="test-mix-model-enhancements"></a>測試混合模型的加強功能
 

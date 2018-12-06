@@ -11,24 +11,25 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: cce61d9a56a0f8f79ec943b58fd4d1a1f88e8289
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 1f0fc5bdc5b17c13bfb0d4adf07a4a48347ce38b
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382301"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896454"
 ---
 # <a name="how-to-use-the-web-performance-test-api"></a>如何：使用 Web 效能測試 API
 
 您可以為 Web 效能測試撰寫程式碼。 Web 效能測試 API 可以用來建立 Web 效能測試程式碼、Web 效能測試外掛程式、要求外掛程式、要求、擷取規則和驗證規則。 構成這些型別的類別，就是這個 API 中的核心類別。 這個 API 中的其他類型可用來支援 <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTest>、<xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestPlugin>、<xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRequestPlugin>、<xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRequest>、<xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRule> 和 <xref:Microsoft.VisualStudio.TestTools.WebTesting.ValidationRule> 等物件的建立。 您可以使用 <xref:Microsoft.VisualStudio.TestTools.WebTesting> 命名空間來建立自訂 Web 效能測試。
 
- 您也可以使用 Web 效能測試 API，以程式設計方式建立及儲存宣告式 Web 效能測試。 若要這樣做，請使用 <xref:Microsoft.VisualStudio.TestTools.WebTesting.DeclarativeWebTest> 和 <xref:Microsoft.VisualStudio.TestTools.WebTesting.DeclarativeWebTestSerializer> 類別。
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
+
+您也可以使用 Web 效能測試 API，以程式設計方式建立及儲存宣告式 Web 效能測試。 若要這樣做，請使用 <xref:Microsoft.VisualStudio.TestTools.WebTesting.DeclarativeWebTest> 和 <xref:Microsoft.VisualStudio.TestTools.WebTesting.DeclarativeWebTestSerializer> 類別。
 
 > [!TIP]
 > 使用物件瀏覽器檢查 <xref:Microsoft.VisualStudio.TestTools.WebTesting> 命名空間。 Visual C# 和 Visual Basic 編輯器都提供 IntelliSense 支援，以便使用命名空間中的類別來撰寫程式碼。
 
-
- 您也可以為負載測試建立外掛程式。 如需詳細資訊，請參閱[如何：使用負載測試 API](../test/how-to-use-the-load-test-api.md) 和[如何：建立負載測試外掛程式](../test/how-to-create-a-load-test-plug-in.md)。
+您也可以為負載測試建立外掛程式。 如需詳細資訊，請參閱[如何：使用負載測試 API](../test/how-to-use-the-load-test-api.md) 和[如何：建立負載測試外掛程式](../test/how-to-create-a-load-test-plug-in.md)。
 
 ## <a name="to-use-the-webtesting-namespace"></a>若要使用 WebTesting 命名空間
 

@@ -10,22 +10,24 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 00abfd827bf98d79e74ecbaf9a01efdc7761c3ee
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6737a5b12b9205e5d6ed3ddde6de89e820d92fce
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49881699"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895232"
 ---
 # <a name="how-to-analyze-what-virtual-users-are-doing-during-a-load-test-using-the-virtual-user-activity-chart"></a>如何：使用虛擬使用者活動圖表分析虛擬使用者在負載測試期間的行為
 
 您可以使用「虛擬使用者活動圖」檢視與負載測試關聯的虛擬使用者活動。 圖表中的每一列都表示個別的虛擬使用者。 「虛擬使用者活動圖」會顯示每一個虛擬使用者在測試期間的行為。 您可以查看使用者活動的模式、負載模式、讓失敗或緩慢的測試產生關聯，以及查看其他虛擬使用者活動的要求。 「虛擬使用者活動圖」只有在負載測試完成執行之後才能使用。
 
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
+
 下列程序會示範如何檢視「虛擬使用者活動圖」、如何調查特定使用者的活動，以及如何使用篩選。
 
 ## <a name="to-view-the-virtual-user-activity-chart-in-your-load-test-results"></a>若要在負載測試結果中檢視虛擬使用者活動圖
 
-1.  若要檢視虛擬使用者資料，您必須先設定與負載測試關聯之 [計時詳細資料儲存區] 屬性的 [所有個別詳細資料] 設定。 然後再次執行負載測試。 如需詳細資料，請參閱[如何：設定收集完整詳細資料以便啟用虛擬使用者活動圖](../test/how-to-configure-load-tests-to-collect-full-details.md)。
+1.  若要檢視虛擬使用者資料，您必須先設定與負載測試關聯之 [計時詳細資料儲存區] 屬性的 [所有個別詳細資料] 設定。 然後再次執行負載測試。
 
 2.  執行負載測試之後，測試結果摘要頁面隨即顯示。 選擇工具列上的 [使用者詳細資料] 按鈕。
 

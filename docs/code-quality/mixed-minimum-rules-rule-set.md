@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 59ece2ea879b8c79ebe002265d5d1eb6fd8ec82e
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: ff0446e81257cfc782fd1c7d34cde2b274ddde5e
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37945984"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388928"
 ---
 # <a name="mixed-minimum-rules-rule-set"></a>混合最小規則規則集
 Microsoft 混合最小規則的重點在於支援 Common Language Runtime，包括潛在的安全性漏洞和應用程式損毀的 c + + 專案中最關鍵的問題。 您應該包含您為支援 Common Language Runtime 之 c + + 專案建立此規則設定任何自訂規則集中。
@@ -37,7 +37,7 @@ Microsoft 混合最小規則的重點在於支援 Common Language Runtime，包�
 |[C6270](../code-quality/c6270.md)|遺漏格式函式的浮點引數|
 |[C6271](../code-quality/c6271.md)|格式函式的多餘引數|
 |[C6272](../code-quality/c6272.md)|格式函式的非浮點引數|
-|[C6273](../code-quality/c6273.md)|格式函式的非整數引數|
+|[C6273](../code-quality/c6273.md)|若要格式函式的非整數引數|
 |[C6274](../code-quality/c6274.md)|格式函式的非字元引數|
 |[C6276](../code-quality/c6276.md)|無效的字串轉型|
 |[C6277](../code-quality/c6277.md)|無效的 CreateProcess 呼叫|
@@ -96,7 +96,7 @@ Microsoft 混合最小規則的重點在於支援 Common Language Runtime，包�
 |[C28215](../code-quality/c28215.md)|typefix 不能套用到已經有 typefix 的參數|
 |[C28216](../code-quality/c28216.md)|checkReturn 註釋只適用於特定函式參數的後置條件。|
 |[C28217](../code-quality/c28217.md)|對於函式，註釋的參數數目不符合檔案中找到的參數數目|
-|[C28218](../code-quality/c28218.md)|對於函式參數，註釋的參數不符合檔案中找到的參數|
+|[C28218](../code-quality/c28218.md)|函式參數，註釋的參數不符合找到的檔案|
 |[C28219](../code-quality/c28219.md)|註釋中標註的參數需要列舉的成員|
 |[C28220](../code-quality/c28220.md)|註釋中標註的參數需要整數運算式|
 |[C28221](../code-quality/c28221.md)|註釋中的參數需要字串運算式|

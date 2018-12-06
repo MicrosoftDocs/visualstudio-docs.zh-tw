@@ -20,12 +20,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: e23a023b3e37b9c4f3869bfa699ffee1f44caffa
-ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
-ms.translationtype: MT
+ms.openlocfilehash: fef30f836ab27cd7a67d85a04254be0018d5b33e
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50750808"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388734"
 ---
 # <a name="handle-a-concurrency-exception"></a>處理並行例外狀況
 
@@ -65,16 +65,13 @@ ms.locfileid: "50750808"
 
        短時間之後，查詢完成執行，並建立 Northwind 資料庫。
 
-> [!NOTE]
-> 對話方塊和功能表命令，您會看到，可能會有所不同說明中所述取決於您使用的設定或您使用的版本不同。 若要變更設定，請從 [ **工具** ] 功能表中選取 [ **匯入和匯出設定** ]。 如需詳細資訊，請參閱[將 Visual Studio IDE 個人化](../ide/personalizing-the-visual-studio-ide.md)。
-
 ## <a name="create-a-new-project"></a>建立新專案
 
 開始建立新的 Windows Forms 應用程式：
 
 1. 在 Visual Studio 中，在**檔案**功能表上，選取**新增** > **專案**。
 
-2. 展開  **Visual C#** 或是**Visual Basic**的左側窗格中，然後選取**Windows Desktop**。
+2. 展開  **Visual C#** 或是**Visual Basic**左窗格中，然後選取**Windows Desktop**。
 
 3. 在中間窗格中，選取**Windows Forms 應用程式**專案類型。
 
@@ -88,7 +85,7 @@ ms.locfileid: "50750808"
 
 1. 在 **資料**功能表上，選擇**加入新的資料來源**。
 
-   資料來源組態精靈 隨即開啟。
+   [資料來源組態精靈] 隨即開啟。
 
 2. 在 **選擇資料來源類型**畫面上，選取**資料庫**。
 
@@ -109,7 +106,7 @@ ms.locfileid: "50750808"
 
 在本節中，您會建立<xref:System.Windows.Forms.DataGridView?displayProperty=nameWithType>藉由拖曳**客戶**項目從**Zdroje dat**視窗拖曳至您的 Windows Form。
 
-1. 在上**資料**功能表上，選擇**顯示資料來源**以開啟**資料來源視窗**。
+1. 若要開啟 **資料來源**視窗，請在**資料**功能表上，選擇 **顯示資料來源**。
 
 2. 在 [**資料來源**] 視窗中，展開**NorthwindDataSet**節點，然後再選取**客戶**資料表。
 

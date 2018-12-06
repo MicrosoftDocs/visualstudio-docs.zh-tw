@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: 5399BCB1-E317-4C7B-87B1-C531E985DE6E
-ms.openlocfilehash: a5b1175caf0ac7f6654fbe20b5300327679eccbc
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 16617f8de15fbef40941c4f9409497da142c9e8a
+ms.sourcegitcommit: f61ad0e8babec8810295f039e67629f4bdebeef0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51294288"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "52001174"
 ---
 # <a name="build-actions"></a>建置動作
 
@@ -28,3 +28,7 @@ Visual Studio for Mac 專案中的所有檔案都有一個建置動作。 它可
 您可以在 [方案總管] 中選取多個檔案，這可讓您一次為多個檔案設定建置動作。
 
 此外，還有針對特定專案的建置動作。 Xamarin.iOS 專案擁有 **BundleResource** 建置動作，該動作會新增檔案作為應用程式套件組合的一部分。 如需 Xamarin.Android 特定建置動作的資訊，請參閱[建置流程](/xamarin/android/deploy-test/building-apps/build-process#Build_Actions)指南。
+
+## <a name="see-also"></a>另請參閱
+
+- [建置動作 (Windows 上的 Visual Studio)](/visualstudio/ide/build-actions)

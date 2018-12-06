@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: d908467ca131546d3d224e4c51f38bb5eaa850d9
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: ef7c49c514c9104ee4659db983b04c27036df889
+ms.sourcegitcommit: c9a01c599ce19a5845605b3b28c0229fd0abb93f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50967112"
+ms.lasthandoff: 11/21/2018
+ms.locfileid: "52281819"
 ---
 # <a name="code-generation-in-a-build-process"></a>在建置流程中的程式碼產生
 
@@ -136,7 +136,7 @@ ms.locfileid: "50967112"
 
 若要指定必須覆寫唯讀檔案，請插入以下屬性：
 
-`<OverwriteReadOnlyOutputFiles>true</OverwriteReadOnlyOuputFiles>`
+`<OverwriteReadOnlyOutputFiles>true</OverwriteReadOnlyOutputFiles>`
 
 除非您自訂後置處理步驟，否則覆寫檔案時就會將警告記錄於錯誤清單中。
 

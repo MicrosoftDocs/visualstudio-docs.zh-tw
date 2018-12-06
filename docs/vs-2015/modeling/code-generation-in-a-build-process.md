@@ -15,12 +15,12 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: abb37b7bdfbc01affea63aa90d35b3702dcb4719
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e7cadbf9d4d99fa9deaf4d71545f43d2bf49a3f3
+ms.sourcegitcommit: c9a01c599ce19a5845605b3b28c0229fd0abb93f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49907920"
+ms.lasthandoff: 11/21/2018
+ms.locfileid: "52281806"
 ---
 # <a name="code-generation-in-a-build-process"></a>建置流程中的程式碼產生
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -137,7 +137,7 @@ ms.locfileid: "49907920"
 
 若要指定必須覆寫唯讀檔案，請插入以下屬性：
 
-`<OverwriteReadOnlyOuputFiles>true</OverwriteReadOnlyOuputFiles>`
+`<OverwriteReadOnlyOutputFiles>true</OverwriteReadOnlyOutputFiles>`
 
 除非您自訂後置處理步驟，否則覆寫檔案時就會將警告記錄於錯誤清單中。
 

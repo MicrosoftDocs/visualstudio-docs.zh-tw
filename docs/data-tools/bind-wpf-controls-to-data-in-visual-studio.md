@@ -1,5 +1,5 @@
 ---
-title: 將 WPF 控制項繫結至 Visual Studio-第 1 部分中的資料 |Microsoft Docs
+title: 將 WPF 控制項繫結至資料-第 1 部分
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -18,33 +18,33 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 1dadf656ad287512a956bc510bbbcc043d21ab07
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 4fa8ddf42cad6ad613846ceff2b49739b7dc1c18
+ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942903"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52305334"
 ---
 # <a name="bind-wpf-controls-to-data-in-visual-studio"></a>將 WPF 控制項繫結至 Visual Studio 中的資料
 
 您可以透過將資料繫結至 [!INCLUDE[TLA#tla_titlewinclient](../data-tools/includes/tlasharptla_titlewinclient_md.md)] 控制項，對應用程式的使用者顯示資料。 若要建立這些資料繫結控制項，您可以將項目從**資料來源**視窗拖曳至[!INCLUDE[wpfdesigner_current_short](../data-tools/includes/wpfdesigner_current_short_md.md)]Visual Studio 中。 本主題描述可用來建立資料繫結 [!INCLUDE[TLA#tla_titlewinclient](../data-tools/includes/tlasharptla_titlewinclient_md.md)] 應用程式的一些最常用工作、工具和類別。
 
-如需如何在 Visual Studio 中建立資料繫結控制項的一般資訊，請參閱[控制項繫結至 Visual Studio 中的資料](../data-tools/bind-controls-to-data-in-visual-studio.md)。 如需詳細資訊[!INCLUDE[TLA#tla_titlewinclient](../data-tools/includes/tlasharptla_titlewinclient_md.md)]的資料繫結，請參閱[資料繫結概觀](/dotnet/framework/wpf/data/data-binding-overview)。
+如需如何在 Visual Studio 中建立資料繫結控制項的一般資訊，請參閱[控制項繫結至 Visual Studio 中的資料](../data-tools/bind-controls-to-data-in-visual-studio.md)。 如需 [!INCLUDE[TLA#tla_titlewinclient](../data-tools/includes/tlasharptla_titlewinclient_md.md)] 資料繫結的詳細資訊，請參閱[資料繫結概觀](/dotnet/framework/wpf/data/data-binding-overview)。
 
-## <a name="tasks-involved-in-binding-wpf-controls-to-data"></a>WPF 控制項繫結至資料的相關工作
+## <a name="tasks-involved-in-binding-wpf-controls-to-data"></a>將 WPF 控制項繫結至資料的工作
 
-下表列出的工作，可藉由將項目從**資料來源** 視窗來[!INCLUDE[wpfdesigner_current_short](../data-tools/includes/wpfdesigner_current_short_md.md)]。
+下表列出可透過從 [資料來源] 視窗將項目拖曳至 [!INCLUDE[wpfdesigner_current_short](../data-tools/includes/wpfdesigner_current_short_md.md)] 所完成的工作。
 
 |工作|詳細資訊|
 |----------| - |
 |建立新的資料繫結控制項。<br /><br /> 將現有控制項繫結至資料。|[將 WPF 控制項繫結至資料集](../data-tools/bind-wpf-controls-to-a-dataset.md)|
 |建立可顯示父子關係中相關資料的控制項：當使用者選取某個控制項中的父資料記錄時，另一個控制項會顯示選取之記錄的相關子資料。|[在 WPF 應用程式中顯示相關資料](../data-tools/display-related-data-in-wpf-applications.md)|
-|建立*查閱資料表*，會顯示從一個資料表根據另一個資料表中的外部索引鍵欄位值的資訊。|[在 WPF 應用程式中建立查閱資料表](../data-tools/create-lookup-tables-in-wpf-applications.md)|
+|建立「查閱資料表」，其根據某個資料表中的外部索引鍵欄位值，顯示另一個資料表的資訊。|[在 WPF 應用程式中建立查閱資料表](../data-tools/create-lookup-tables-in-wpf-applications.md)|
 |將控制項繫結至資料庫中的圖片。|[從資料庫將控制項繫結至圖片](../data-tools/bind-controls-to-pictures-from-a-database.md)|
 
 ## <a name="valid-drop-targets"></a>有效置放目標
 
-您可以拖曳項目**資料來源**中的有效置放目標視窗[!INCLUDE[wpfdesigner_current_short](../data-tools/includes/wpfdesigner_current_short_md.md)]。 有效置放目標有兩種：容器和控制項。 容器是通常會包含控制項的使用者介面項目。 例如，格線是容器，視窗也是容器。
+[資料來源] 視窗中的項目，只能拖曳至 [!INCLUDE[wpfdesigner_current_short](../data-tools/includes/wpfdesigner_current_short_md.md)] 中的有效置放目標。 有效置放目標有兩種：容器和控制項。 容器是通常會包含控制項的使用者介面項目。 例如，格線是容器，視窗也是容器。
 
 ## <a name="generated-xaml-and-code"></a>產生的 XAML 和程式碼
 
@@ -52,13 +52,12 @@ ms.locfileid: "49942903"
 
 下表列出[!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)]和 Visual Studio 會為每一種資料來源中產生的程式碼**Zdroje dat**視窗。
 
-
 | 資料來源 | 產生可將控制項繫結至資料來源的 XAML | 產生可將資料填入資料來源的程式碼 |
 | - | - | - |
-| 資料集 | 是 | 是 |
-| [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] | 是 | 是 |
-| 服務 | 是 | 否 |
-| Object | 是 | 否 |
+| 資料集 | [是] | [是] |
+| [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] | [是] | [是] |
+| 服務 | [是] | 否 |
+| Object | [是] | 否 |
 
 ### <a name="datasets"></a>資料集
 
@@ -74,7 +73,7 @@ Visual Studio 也會對程式碼後置檔案進行下列變更：
 
 ### <a name="entity-data-models"></a>實體資料模型
 
-當您拖曳實體或實體屬性從**資料來源**視窗，以設計工具中，Visual Studio 會產生[!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)]，會進行下列作業：
+當您拖曳實體或實體屬性從**資料來源**產生的設計工具中，Visual Studio 視窗[!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)]，會進行下列作業：
 
 - 將新 <xref:System.Windows.Data.CollectionViewSource> 加入至拖曳目標容器的資源。 <xref:System.Windows.Data.CollectionViewSource> 物件可用來巡覽及顯示實體中的資料。
 
@@ -101,7 +100,7 @@ Visual Studio 會產生執行下列工作的 XAML：
 當您將物件或屬性從**資料來源**視窗，以設計工具中，Visual Studio 會產生[!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)]建立資料繫結控制項 （或將現有控制項繫結至物件或屬性）。 不過，Visual Studio 不會產生程式碼，以填入資料的物件。 您必須自行撰寫此程式碼。
 
 > [!NOTE]
->  自訂類別必須是公用的和，根據預設，具有不含參數的建構函式。 它們 can'tbe 巢狀類別，其語法中有 「 點 」。 如需詳細資訊，請參閱 < [XAML 的 WPF 和自訂類別](/dotnet/framework/wpf/advanced/xaml-and-custom-classes-for-wpf)。
+> 自訂類別必須是公用的和，根據預設，具有不含參數的建構函式。 它們 can'tbe 巢狀類別，其語法中有 「 點 」。 如需詳細資訊，請參閱 < [XAML 的 WPF 和自訂類別](/dotnet/framework/wpf/advanced/xaml-and-custom-classes-for-wpf)。
 
 Visual Studio 會產生[!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)]，會進行下列作業：
 

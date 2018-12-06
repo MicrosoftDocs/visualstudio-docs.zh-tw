@@ -1,5 +1,5 @@
 ---
-title: Visual Studio 中的負載測試回合設定
+title: 負載測試回合設定
 ms.date: 10/19/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,20 +10,22 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: d0a3311c90638b3fd34b9d651b89af2bed07f421
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9b0123ba4e6f9565cc31f63a23bb0be0b5bee344
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49817383"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895492"
 ---
 # <a name="load-test-run-settings-properties"></a>負載測試回合設定屬性
 
 負載測試的回合設定會決定多種其他設定，包括測試的持續期間、結果收集詳細層級，以及在測試執行時所收集的計數器集合。 您可以針對每個負載測試建立和儲存多個回合設定，然後在執行測試時選取一個特定的設定。 當您使用 [新增負載測試精靈] 來建立負載測試時，就會將初始回合設定新增至負載測試。
 
- 下表將說明負載測試回合設定的各種屬性。 您可以修改這些屬性，以符合特定的負載測試需求。
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
- 如需詳細資訊，請參閱[設定負載測試回合設定](../test/configure-load-test-run-settings.md)。
+下表將說明負載測試回合設定的各種屬性。 您可以修改這些屬性，以符合特定的負載測試需求。
+
+如需詳細資訊，請參閱[設定負載測試回合設定](../test/configure-load-test-run-settings.md)。
 
 ## <a name="general-properties"></a>一般屬性
 
@@ -42,7 +44,7 @@ ms.locfileid: "49817383"
 |屬性|定義|
 |-|----------------|
 |**測試記錄數目上限**|指定要為負載測試儲存的測試記錄數目上限。 當達到為測試記錄數目上限輸入的值時，負載測試會停止收集記錄。 因此，在測試開始時就會收集記錄，而非在測試結束時。 負載測試會繼續執行，直到完成。|
-|**已完成之測試的儲存記錄檔頻率**|指定寫入測試記錄檔的頻率。 此數字表示次數，即測試每執行到輸入的次數，就會儲存至測試記錄檔。 例如，如果輸入值 10，即等於指定將第 10、20、30 次 (依此類推) 的測試寫入至測試記錄檔。 將值設定為 0 表示不儲存測試記錄檔。<br /><br /> 如需詳細資訊，請參閱[如何：指定儲存測試記錄的頻率](../test/how-to-specify-how-frequently-test-logs-are-saved.md)|
+|**已完成之測試的儲存記錄檔頻率**|指定寫入測試記錄檔的頻率。 此數字表示次數，即測試每執行到輸入的次數，就會儲存至測試記錄檔。 例如，如果輸入值 10，即等於指定將第 10、20、30 次 (依此類推) 的測試寫入至測試記錄檔。 將值設定為 0 表示不儲存測試記錄檔。|
 |**測試失敗時儲存記錄檔**|布林值，用於判斷當負載測試中的測試失敗時是否要儲存測試記錄。 預設為 `True`。<br /><br /> 如需詳細資訊，請參閱[如何：指定測試失敗是否會儲存至測試記錄](../test/how-to-specify-if-test-failures-are-saved-to-test-logs.md)|
 
  如需詳細資訊，請參閱[修改負載測試記錄設定](../test/modify-load-test-logging-settings.md)。

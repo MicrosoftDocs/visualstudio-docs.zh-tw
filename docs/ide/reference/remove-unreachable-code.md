@@ -8,15 +8,15 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 dev_langs:
-- csharp
+- CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: dd06fb7cd7b0e31df777a488c34a59e5a036e3b8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 65dc8a9318c679743030a86c94ad39b3681dc0ad
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49836381"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896337"
 ---
 # <a name="remove-unreachable-code-refactoring"></a>移除執行不到的程式碼重構
 

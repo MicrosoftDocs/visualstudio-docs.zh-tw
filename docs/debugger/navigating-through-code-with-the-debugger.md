@@ -16,22 +16,22 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: df2f0c94fa5d3bfc275a09b065555f32f260ba91
-ms.sourcegitcommit: 331dbb12e11fcd7f5d15fab05f3c861e48126e43
-ms.translationtype: MT
+ms.openlocfilehash: 404204696a61c1073b2fa04eeb803e75b50ba38c
+ms.sourcegitcommit: a811f6a194ccd40d844e74e618d847df87c85c16
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51826728"
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "52621522"
 ---
 # <a name="navigate-through-code-with-the-visual-studio-debugger"></a>Visual Studio 偵錯工具巡覽程式碼
 
-Visual Studio 偵錯工具可協助您瀏覽程式碼來檢查應用程式的狀態，並顯示其執行流程。 若要快速取得您想要檢查的程式碼，您可以使用鍵盤快速鍵、 偵錯 命令、 中斷點及其他功能。 熟悉偵錯工具巡覽命令和快速鍵可以更快速且輕易地尋找和解決應用程式的問題。  如果這是您第一次您嘗試偵錯程式碼時，您可能想要讀取[撰寫出更好C#使用 Visual Studio 程式碼](../debugger/write-better-code-with-visual-studio.md)並[偵錯適用於徹底初學者](../debugger/debugging-absolute-beginners.md)再通過這篇文章。
+Visual Studio 偵錯工具可協助您瀏覽程式碼來檢查應用程式的狀態，並顯示其執行流程。 若要快速取得您想要檢查的程式碼，您可以使用鍵盤快速鍵、 偵錯 命令、 中斷點及其他功能。 熟悉偵錯工具巡覽命令和快速鍵可以更快速且輕易地尋找和解決應用程式的問題。  如果這是您第一次您嘗試偵錯程式碼時，您可能想要讀取[修正 bug，藉由撰寫更好C#程式碼](../debugger/write-better-code-with-visual-studio.md)並[偵錯適用於徹底初學者](../debugger/debugging-absolute-beginners.md)再通過這篇文章。
   
 ## <a name="basic-debugging"></a>基本偵錯  
 
 若要附加偵錯工具啟動應用程式，請按**F5**，選取**偵錯** > **開始偵錯**，或在 Visual Studio 工具列中選取的綠色箭頭。  
   
- ![DBG&#95;Basics&#95;Start&#95;Debugging](../debugger/media/dbg_basics_start_debugging.png "DBG_Basics_Start_Debugging")  
+ ![DBG&#95;基本概念&#95;啟動&#95;偵錯](../debugger/media/dbg_basics_start_debugging.png "DBG_Basics_Start_Debugging")  
   
 當您偵錯時，黃色反白顯示就會顯示的一行程式碼會執行下一步。  
   
@@ -55,7 +55,7 @@ Visual Studio 偵錯工具可協助您瀏覽程式碼來檢查應用程式的狀
 
 若要停止程式碼或在偵錯時的陳述式的每一行，使用**偵錯** > **逐步**，或按**F11**。  
 
-偵錯工具會逐步引導您程式碼陳述式，而不實際程式碼行。 比方說，`if`子句可以撰寫在一行上：  
+偵錯工具會逐步引導您程式碼陳述式，而不實際程式碼行。 例如 `if` 子句可以寫在一行上：  
   
   ```csharp  
   int x = 42;  
@@ -99,7 +99,7 @@ Visual Studio 的中斷點提供一組豐富的其他功能，例如條件式中
   
 ### <a name="run-to-a-function-breakpoint"></a>執行至函式中斷點  
 
-您可以告知偵錯工具執行，直到它到達指定的函式。 您可以指定函式名稱，或您可以在呼叫堆疊中選擇它。  
+您可以告知偵錯工具執行，直到它到達指定的函式。 您可以依名稱來指定函式，或是在呼叫堆疊中選擇函式。  
   
 **依名稱指定函式中斷點**
 
@@ -183,9 +183,9 @@ Visual Studio 的中斷點提供一組豐富的其他功能，例如條件式中
 1. 在 [**模組**] 視窗中，您所見的模組已經載入的符號**符號狀態**資料行。 以滑鼠右鍵按一下您想要載入符號，然後選取模組**載入符號**。  
   
 ##  <a name="BKMK_Step_into_properties_and_operators_in_managed_code"></a> 逐步執行 Managed 程式碼中的屬性及運算子  
- 偵錯工具預設為不進入 Managed 程式碼中的屬性及運算子。 在大部分情況下，這會產生比較令人滿意的偵錯經驗。 若要啟用逐步執行屬性或運算子，請選擇**偵錯** > **選項**。 在 **偵錯** > **一般**頁面上，清除**不進入屬性和運算子 （僅限受控）** 核取方塊。
+ 偵錯工具預設為不進入 Managed 程式碼中的屬性及運算子。 在大部分情況下，這會產生比較令人滿意的偵錯經驗。 若要啟用逐步執行屬性或運算子，請選擇**偵錯** > **選項**。 在 [偵錯] > [一般] 頁面上，清除 [不進入屬性和運算子 (僅限受控)] 核取方塊。
 
 ## <a name="see-also"></a>另請參閱
- [什麼偵錯？](../debugger/what-is-debugging.md)  
- [撰寫更好C#使用 Visual Studio 程式碼](../debugger/write-better-code-with-visual-studio.md)  
+ [什麼是偵錯？](../debugger/what-is-debugging.md)  
+ [透過撰寫更好的 C# 程式碼來修正 Bug](../debugger/write-better-code-with-visual-studio.md)  
  [率先一睹偵錯](../debugger/debugger-feature-tour.md) 
