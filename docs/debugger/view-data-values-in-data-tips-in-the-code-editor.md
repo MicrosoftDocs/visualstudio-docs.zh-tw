@@ -19,16 +19,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c473faf449176b38d4505675b1060618344db0d6
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
-ms.translationtype: HT
+ms.openlocfilehash: 4156ff8f81e7a011aeff0cf753af60bb3d6cd924
+ms.sourcegitcommit: a811f6a194ccd40d844e74e618d847df87c85c16
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388156"
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "52621535"
 ---
 # <a name="view-data-values-in-datatips-in-the-code-editor"></a>在資料提示方塊中，程式碼編輯器中的檢視資料值
 
-資料提示方塊是在您的應用程式中檢視變數的相關資訊，在偵錯期間的便利方式。 
+資料提示方塊提供方便的方法，讓您在偵錯期間檢視程式中的變數資訊。 資料提示方塊只能夠在中斷模式中運作，並且只能使用目前執行範圍內的變數。 如果這是您第一次您嘗試偵錯程式碼時，您可能想要讀取[修正 bug，藉由撰寫更好C#程式碼](../debugger/write-better-code-with-visual-studio.md)並[偵錯適用於徹底初學者](../debugger/debugging-absolute-beginners.md)再通過這篇文章。
 
 如果這是您第一次，偵錯時，您可能想要閱讀[撰寫出更好C#使用 Visual Studio 程式碼](../debugger/write-better-code-with-visual-studio.md)並[偵錯適用於徹底初學者](../debugger/debugging-absolute-beginners.md)閱讀這篇文章之前。
   
@@ -127,8 +127,8 @@ Float 固定資料提示方塊，將滑鼠停在資料提示方塊，並從操�
 
 ## <a name="see-also"></a>另請參閱  
  [什麼是偵錯？](../debugger/what-is-debugging.md)  
- [撰寫更好C#使用 Visual Studio 程式碼](../debugger/write-better-code-with-visual-studio.md)  
- [率先一睹偵錯](../debugger/debugger-feature-tour.md)   
- [在偵錯工具中檢視資料](../debugger/viewing-data-in-the-debugger.md)   
+ [透過撰寫更好的 C# 程式碼來修正 Bug](../debugger/write-better-code-with-visual-studio.md)  
+ [第一次查看偵錯](../debugger/debugger-feature-tour.md)[偵錯工具中的 檢視資料](../debugger/viewing-data-in-the-debugger.md)   
  [監看式及快速監看式視窗](../debugger/watch-and-quickwatch-windows.md)   
  [建立自訂視覺化檢視](../debugger/create-custom-visualizers-of-data.md)   
+

@@ -3,14 +3,14 @@ title: Visual Studio for Mac 簡介
 description: 本文介紹 Mac 版 Visual Studio 的功能
 author: conceptdev
 ms.author: crdun
-ms.date: 05/06/2018
+ms.date: 11/03/2018
 ms.assetid: 3A130EC1-DD8C-4125-9034-B08D7AF7EA65
-ms.openlocfilehash: b04b670be5c56811be2e6ee1ea9dad28677a35e7
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 10b27c26fcef622687b64f225dd04ae966f43cd5
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "42625887"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895674"
 ---
 # <a name="introducing-visual-studio-for-mac"></a>Visual Studio for Mac 簡介
 
@@ -26,9 +26,12 @@ Visual Studio for Mac 是現代化的尖端 IDE，具備可用於建立行動、
 
 本文概括論述 Visual Studio for Mac 的不同章節，並介紹有哪些功能使其成為建立跨平台應用程式的強大工具。
 
+> [!TIP]
+> Visual Studio 2019 for Mac 預覽現在開放測試。 請遵循這些[安裝指示](install-preview.md)，並看看 [IDE 導覽](ide-tour.md)。
+
 ## <a name="installation"></a>安裝
 
-遵循[安裝](installation.md)指南中的步驟，下載及安裝 Visual Studio for Mac。
+遵循[安裝](install-preview.md)指南中的步驟，下載及安裝 Visual Studio for Mac。
 
 ## <a name="language-support"></a>語言支援
 

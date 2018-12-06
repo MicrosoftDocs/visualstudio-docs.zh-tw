@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7cd96d61718972c82c6002888e123003530c019c
-ms.sourcegitcommit: 331dbb12e11fcd7f5d15fab05f3c861e48126e43
-ms.translationtype: MT
+ms.openlocfilehash: 8f0aa6cbe09f902ef69e1fd5cb3a2d9712cabf28
+ms.sourcegitcommit: d7f232a7596420e40ff8051d42cdf90203af4a74
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51826657"
+ms.lasthandoff: 12/03/2018
+ms.locfileid: "52821444"
 ---
 # <a name="what-is-debugging"></a>什麼是偵錯？
 
@@ -25,13 +25,13 @@ Visual Studio 偵錯工具是一個功能強大的工具。 我們示範如何�
 
 ## <a name="debugger-vs-debugging"></a>偵錯工具與偵錯
 
-詞彙*偵錯*是相當一般，而且可以是指很多不同的事項。 在 word 的最常使用方式，這表示移除您的程式碼中的 bug。 現在，有很多方法可以執行這項操作。 例如，您可能會偵錯掃描程式碼，尋找有錯字，或使用程式碼分析工具。 若要偵錯程式碼，可能會使用效能分析工具。 或者，您可能會使用偵錯*偵錯工具*。
+詞彙*偵錯*可以表示不同的東西，很多，但是最常值，表示移除您的程式碼中的 bug。 現在，有很多方法可以執行這項操作。 例如，您可能會偵錯掃描程式碼，尋找有錯字，或使用程式碼分析工具。 若要偵錯程式碼，可能會使用效能分析工具。 或者，您可能會使用偵錯*偵錯工具*。
 
-偵錯工具是非常特殊的開發人員工具。 偵錯工具附加至您執行的應用程式，並可讓您檢查您的程式碼。 在 Visual Studio 的偵錯文件，這通常是什麼意思是說 「 偵錯 」。
+偵錯工具是一種非常特殊的開發人員工具，附加至您執行的應用程式，並可讓您檢查您的程式碼。 在 Visual Studio 的偵錯文件，這通常是什麼意思是說 「 偵錯 」。
 
 ## <a name="debug-mode-vs-running-your-app"></a>偵錯模式與執行您的應用程式
 
-當您第一次，在 Visual Studio 中執行您的應用程式時，可能會開始藉由按下綠色箭號按鈕![開始偵錯](../debugger/media/dbg-tour-start-debugging.png "開始偵錯")工具列中。 根據預設，**偵錯**值會出現在左側下拉式清單。 如果您是剛接觸 Visual Studio，這可能讓偵錯您的應用程式已執行和的印象您的應用程式-它，但這些基本上是兩個非常不同的工作。
+當您第一次，在 Visual Studio 中執行您的應用程式時，可能會開始藉由按下綠色箭號按鈕![開始偵錯](../debugger/media/dbg-tour-start-debugging.png "開始偵錯")工具列中 (或**F5**)。 根據預設，**偵錯**值會出現在左側下拉式清單。 如果您是剛接觸 Visual Studio，這可能讓偵錯您的應用程式已執行和的印象您的應用程式-它，但這些基本上是兩個非常不同的工作。
 
 ![選取 偵錯組建](../debugger/media/what-is-debugging-debug-build.png)
 
@@ -49,7 +49,7 @@ A**偵錯**值表示偵錯組態。 當您啟動應用程式 (按綠色箭號，
 
 ## <a name="next-steps"></a>後續步驟
 
-在本文中，您已了解幾個一般的偵錯概念。 接下來，您可以開始學習如何使用 Visual Studio 偵錯，以及撰寫程式碼較少的 bug。 下列文章說明C#程式碼範例，但概念適用於 Visual Studio 所支援的所有語言。
+在本文中，您已了解幾個一般偵錯概念。 接下來，您可以開始學習如何使用 Visual Studio 偵錯，以及撰寫程式碼較少的 bug。 下列文章說明C#程式碼範例，但概念適用於 Visual Studio 所支援的所有語言。
 
 > [!div class="nextstepaction"]
-> [撰寫更好C#使用 Visual Studio 程式碼](../debugger/write-better-code-with-visual-studio.md)
+> [透過撰寫更好的 C# 程式碼來修正 Bug](../debugger/write-better-code-with-visual-studio.md)
