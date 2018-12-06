@@ -14,12 +14,12 @@ manager: douge
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: a2dfc759fbd42dd435133e223c72760ae5c274c3
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
-ms.translationtype: MT
+ms.openlocfilehash: b9162b1e0cc6b1e4e0a5292825dbdebfeff1ae5f
+ms.sourcegitcommit: d7f232a7596420e40ff8051d42cdf90203af4a74
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39154459"
+ms.lasthandoff: 12/03/2018
+ms.locfileid: "52821418"
 ---
 # <a name="debug-live-aspnet-azure-apps-using-the-snapshot-debugger"></a>偵錯即時 ASP.NET Azure 應用程式使用快照集偵錯工具
 
@@ -36,7 +36,7 @@ ms.locfileid: "39154459"
 
 ## <a name="prerequisites"></a>必要條件
 
-* 快照偵錯工具僅適用於 Visual Studio 2017 Enterprise 15.5 版或更高版本**ASP.NET 和 web 開發工作負載**。 針對 ASP.NET Core，您也需要。**.NET Core 開發**安裝的工作負載。
+* 快照偵錯工具僅適用於 Visual Studio 2017 Enterprise 15.5 版或更高版本**ASP.NET 和 web 開發工作負載**。 針對 ASP.NET Core，您也需要 **.NET Core 開發**安裝工作負載。
 
     如果尚未安裝，安裝[Visual Studio 2017 Enterprise 版本 15.5](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)或更新版本。 如果您從舊版的 Visual Studio 2017 安裝中更新，執行 Visual Studio 安裝程式，並簽入的快照集偵錯工具元件**ASP.NET 和 web 開發工作負載**。
 
@@ -114,7 +114,7 @@ ms.locfileid: "39154459"
 
 1. 以滑鼠右鍵按一下 貼齊點圖示 （空心的球），然後選擇 **設定**。
 
-   ![選擇 [設定]](../debugger/media/snapshot-snappoint-settings.png)
+   ![選擇設定](../debugger/media/snapshot-snappoint-settings.png)
 
 1. 在 [貼齊點設定] 視窗中，輸入運算式。
 
@@ -140,7 +140,7 @@ ms.locfileid: "39154459"
 
     ![Diagsession 視窗中的記錄點資料](../debugger/media/snapshot-logpoint-output.png)
 
-    如果您選擇**應用程式記錄檔傳送**、 遇到 logpoint 時，訊息會出現任何位置，您可以查看來自訊息`System.Diagnostics.Trace`(或`ILogger`.NET Core 中)，例如[App Insights](/azure/application-insights/app-insights-asp-net-trace-logs)。
+    如果您選擇**傳送至應用程式記錄檔**，當叫用的記錄點，則訊息會出現任何位置，您可以看到來自`System.Diagnostics.Trace`(或`ILogger`.NET Core 中)，例如[App Insights](/azure/application-insights/app-insights-asp-net-trace-logs)。
 
 ## <a name="next-steps"></a>後續步驟
 

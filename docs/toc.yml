@@ -681,6 +681,8 @@ items:
     items:
     - name: 啟動時間
       href: ide/optimize-visual-studio-startup-time.md
+    - name: 載入已篩選的解決方案
+      href: ide/filtered-solutions.md
     - name: 秘訣和訣竅
       href: ide/visual-studio-performance-tips-and-tricks.md
   - name: 管理協助工具功能
@@ -690,11 +692,11 @@ items:
       href: ide/reference/how-to-set-ide-accessibility-options.md
     - name: 以獨佔模式使用鍵盤
       href: ide/reference/how-to-use-the-keyboard-exclusively.md
-    - name: 協助工具秘訣和訣竅
+    - name: 協助工具祕訣和訣竅
       href: ide/reference/accessibility-tips-and-tricks.md
-    - name: Microsoft 提供的協助工具產品和服務
+    - name: Microsoft 的協助工具產品和服務
       href: ide/reference/accessibility-products-and-services-from-microsoft.md
-    - name: 設計可及性應用程式的資源
+    - name: 用於設計無障礙應用程式的資源
       href: ide/reference/resources-for-designing-accessible-applications.md
   - name: 全球化和當地語系化應用程式
     href: ide/globalizing-and-localizing-applications.md
@@ -1082,8 +1084,10 @@ items:
       href: ide/dotfuscator/upgrades.md
 - name: 資源
   items:
-  - name: 新功能
+  - name: Visual Studio 2017 的新功能
     href: ide/whats-new-in-visual-studio.md
+  - name: Visual Studio 2019 的新功能
+    href: ide/whats-new-visual-studio-2019.md
   - name: 版本資訊與系統需求
     items:
     - name: 目前版本資訊
@@ -1123,9 +1127,9 @@ items:
     href: ide/reference/resources-for-troubleshooting-integrated-development-environment-errors.md
   - name: 告訴我們
     href: ide/talk-to-us.md
-ms.openlocfilehash: 4e8c6398d89f5db9f97b8ce61a17960a76e938cb
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 618c6a9660cc85a6ae675a17389462584669972b
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389237"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895544"
