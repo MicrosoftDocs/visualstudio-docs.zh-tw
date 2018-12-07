@@ -1,6 +1,6 @@
 ---
 title: 在防火牆或 Proxy 伺服器後方安裝並使用 Visual Studio 和 Azure 服務 | Microsoft Docs
-description: 如果您的組織使用防火牆或 Proxy 伺服器，請檢閱您可能想要列入白名單或開啟的網域 URL、連接埠及通訊協定
+description: 如果您的組織使用防火牆或 Proxy 伺服器，請檢閱您可能想要列入允許清單或開啟的網域 URL、連接埠及通訊協定
 ms.custom: ''
 ms.date: 07/10/2018
 ms.technology: vs-acquisition
@@ -26,7 +26,7 @@ ms.locfileid: "51349565"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>在防火牆或 Proxy 伺服器後方安裝並使用 Visual Studio 和 Azure 服務
 
-如果您或您的組織使用防火牆或 Proxy 伺服器等安全性措施，則您應該將部分網域 URL 加入白名單，並開啟某些連接埠和通訊協定，以在安裝及使用 Visual Studio 及 Azure 服務時取得最佳體驗。
+如果您或您的組織使用防火牆或 Proxy 伺服器等安全性措施，則您應該將部分網域 URL 加入允許清單，並開啟某些連接埠和通訊協定，以在安裝及使用 Visual Studio 及 Azure 服務時取得最佳體驗。
 
 * **[安裝 Visual Studio](#install-visual-studio)**：這些表格包含需加入允許清單的網域 URL，使您可以存取所有所需的元件和工作負載。
 
@@ -79,9 +79,9 @@ ms.locfileid: "51349565"
 
 ## <a name="use-visual-studio-and-azure-services"></a>使用 Visual Studio 和 Azure 服務
 
-### <a name="urls-to-whitelist-and-ports-and-protocols-to-open"></a>應加入白名單的 URL 及應開啟的連接埠和通訊協定
+### <a name="urls-to-whitelist-and-ports-and-protocols-to-open"></a>應加入允許清單的 URL 及應開啟的連接埠和通訊協定
 
-為了確保您在防火牆或 Proxy 伺服器後方使用 Visual 或 Azure 服務時能存取所有所需的服務，以下是您應該加入白名單的 URL，以及建議開啟的連接埠和通訊協定。
+為了確保您在防火牆或 Proxy 伺服器後方使用 Visual 或 Azure 服務時能存取所有所需的服務，以下是您應該加入允許清單的 URL，以及建議開啟的連接埠和通訊協定。
 
 | 服務或案例 | DNS 端點 | 通訊協定 | 連接埠 | 描述 |
 | - | - | - | - | - |
