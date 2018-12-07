@@ -1,6 +1,6 @@
 ---
 title: 在防火牆或 Proxy 伺服器後方安裝及使用 Visual Studio for Mac
-description: 此文件提供的主機清單必須列在防火牆的白名單中，讓 Visual Studio for Mac (以及其工作負載，包括 Xamarin) 在公司環境中運作。
+description: 此文件提供的主機清單必須列在防火牆的允許清單中，讓 Visual Studio for Mac (以及其工作負載，包括 Xamarin) 在公司環境中運作。
 ms.topic: troubleshooting
 ms.assetid: 79C0F1A3-0C13-4E55-A820-1138A4082B77
 author: asb3993
@@ -15,11 +15,11 @@ ms.locfileid: "51295186"
 ---
 # <a name="install-and-use-visual-studio-for-mac-behind-a-firewall-or-proxy-server"></a>在防火牆或 Proxy 伺服器後方安裝及使用 Visual Studio for Mac
 
-如果您或您的組織使用防火牆或 Proxy 伺服器等安全性措施，則您應該將部分網域 URL 加入白名單，並開放某些連接埠與通訊協定，以在安裝及使用 Visual Studio for Mac 與 Azure 服務時獲得最佳體驗。
+如果您或您的組織使用防火牆或 Proxy 伺服器等安全性措施，則您應該將部分網域 URL 加入允許清單，並開放某些連接埠與通訊協定，以在安裝及使用 Visual Studio for Mac 與 Azure 服務時獲得最佳體驗。
 
-- [**安裝 Visual Studio for Mac**](#install-visual-studio-for-mac)：這些表格包含需加入白名單的 URL，以便您可以存取 Visual Studio for Mac 的所有功能與工作負載。
+- [**安裝 Visual Studio for Mac**](#install-visual-studio-for-mac)：這些表格包含需加入允許清單的 URL，以便您可以存取 Visual Studio for Mac 的所有功能與工作負載。
 
-- [**使用 Visual Studio for Mac**](#use-visual-studio-for-mac)：這些表格包含需加入白名單的 URL，以便您可以存取想要的所有服務與功能。
+- [**使用 Visual Studio for Mac**](#use-visual-studio-for-mac)：這些表格包含需加入允許清單的 URL，以便您可以存取想要的所有服務與功能。
 
 ## <a name="install-visual-studio-for-mac"></a>安裝 Visual Studio for Mac
 
@@ -50,7 +50,7 @@ ms.locfileid: "51295186"
 
 ## <a name="use-visual-studio-for-mac"></a>使用 Visual Studio for Mac
 
-為了確保您在 Proxy 或防火牆後方時，可以存取 Visual Studio for Mac 中的每一個功能，我們建議您將下列網域與連接埠加入白名單。
+為了確保您在 Proxy 或防火牆後方時，可以存取 Visual Studio for Mac 中的每一個功能，我們建議您將下列網域與連接埠加入允許清單。
 
 ### <a name="general"></a>一般
 

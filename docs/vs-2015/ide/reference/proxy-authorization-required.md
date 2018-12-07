@@ -16,7 +16,7 @@ ms.author: gewarren
 manager: ghogen
 ms.openlocfilehash: 2650dadddefe3be18a4406eb4fd07c5599622212
 ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/12/2018
 ms.locfileid: "49259204"
@@ -43,7 +43,7 @@ ms.locfileid: "49259204"
   
     -   *.live.com  
   
--   否則您可以移除 http://go.microsoft.com位址從白名單，以便 proxy 驗證對話方塊會顯示兩個 http://go.microsoft.com位址及伺服器端點時重新啟動 Visual Studio。  
+-   否則您可以移除 http://go.microsoft.com位址從允許清單，以便 proxy 驗證對話方塊會顯示兩個 http://go.microsoft.com位址及伺服器端點時重新啟動 Visual Studio。  
   
 -   OR  
   
