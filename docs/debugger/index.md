@@ -1,18 +1,19 @@
 ---
 layout: LandingPage
-title: 對 Visual Studio 中的應用程式進行偵錯 | Microsoft Docs
+title: 為您的應用程式偵錯 |Microsoft Docs
 description: 了解如何使用 Visual Studio 2017 以您選擇的語言，針對您的平台和裝置進行應用程式、服務及工具的偵錯。
+ms.custom: seodec18
 ms.topic: landing-page
 ms.technology: vs-ide-debug
 ms.author: mikejo
 author: mikejo5000
 manager: douge
-ms.openlocfilehash: de0edba7396ceb75ce6a367a57d98e22fd43a83b
-ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
+ms.openlocfilehash: b6ec9fffe0223a018724f9bd82125a63204a15fa
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "51948253"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53048602"
 ---
 # <a name="debugging-in-visual-studio"></a>Visual Studio 偵錯
 

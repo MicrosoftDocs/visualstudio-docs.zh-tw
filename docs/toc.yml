@@ -6,9 +6,9 @@ items:
   - name: Visual Studio 2017 概觀
     href: ide/visual-studio-ide.md
   - name: 程式碼編輯器概觀
-    href: ide/quickstart-editor.md
+    href: get-started/tutorial-editor.md
   - name: 專案與解決方案概觀
-    href: ide/quickstart-projects-solutions.md
+    href: get-started/tutorial-projects-solutions.md
   - name: 更多 Visual Studio 功能
     href: ide/advanced-feature-overview.md
   expanded: true
@@ -180,6 +180,8 @@ items:
         href: ide/creating-solutions-and-projects.md
       - name: 移植、移轉及升級專案
         href: porting/port-migrate-and-upgrade-visual-studio-projects.md
+      - name: 在 Visual Studio 2019 Preview 中移植、移轉及升級專案
+        href: porting/port-migrate-upgrade-visual-studio-projects-2019.md
       - name: 管理專案和解決方案屬性
         href: ide/managing-project-and-solution-properties.md
       - name: 管理專案中的參考
@@ -243,6 +245,8 @@ items:
       items:
       - name: 自訂建置與偵錯工作
         href: ide/customize-build-and-debug-tasks-in-visual-studio.md
+    - name: 連線到專案或存放庫
+      href: ide/connect-team-project.md
     - name: 使用編輯器
       href: ide/writing-code-in-the-code-and-text-editor.md
       items:
@@ -913,6 +917,8 @@ items:
       href: ide/reference/property-pages-javascript.md
     - name: 屬性視窗
       href: ide/reference/properties-window.md
+    - name: Team Explorer 參考
+      href: ide/reference/team-explorer-reference.md
     - name: 工具箱
       href: ide/reference/toolbox.md
       items:
@@ -1127,9 +1133,9 @@ items:
     href: ide/reference/resources-for-troubleshooting-integrated-development-environment-errors.md
   - name: 告訴我們
     href: ide/talk-to-us.md
-ms.openlocfilehash: 618c6a9660cc85a6ae675a17389462584669972b
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 82155ce10d1a70376ed79611b78745e440360097
+ms.sourcegitcommit: 5c049194fa256b876ad303f491af11edd505756c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895544"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53027441"

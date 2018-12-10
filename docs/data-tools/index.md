@@ -1,21 +1,21 @@
 ---
+title: 開發資料解決方案
+description: 了解 Visual Studio 中適用於資料解決方案的工具。
 layout: LandingPage
 ms.date: 01/01/2018
 author: gewarren
 ms.author: gewarren
-title: 使用 Visual Studio 中的資料工具來開發資料解決方案
-description: 了解 Visual Studio 中適用於資料解決方案的工具。
 ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.topic: landing-page
 ms.workload:
 - data-storage
-ms.openlocfilehash: bb2a5c33f0cdfe75f6e2bf6713ab92e36b588986
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6920ad723db86ada57994734cd8638a6219981a3
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49948404"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53058496"
 ---
 # <a name="use-data-tools-in-visual-studio-to-develop-data-solutions"></a>使用 Visual Studio 中的資料工具來開發資料解決方案
 
