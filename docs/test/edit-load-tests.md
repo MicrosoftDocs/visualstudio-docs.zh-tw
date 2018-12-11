@@ -11,23 +11,26 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: f4c29f3b98440c9e8462083a24012944157b848b
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: cb39ea39261d5b359437b2c31ec963bab8df01fe
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178409"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895388"
 ---
 # <a name="edit-load-tests"></a>編輯負載測試
 
 負載測試可執行 Web 效能測試或單元測試，以模擬同時存取某部伺服器的多位使用者。 負載測試可讓您獲得應用程式壓力和效能資料。 負載測試可設定為模擬各種負載狀況，例如使用者負載和網路類型。
 
-> [!NOTE]
-> 只有 Visual Studio 2017 Enterprise 版提供負載測試。
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 負載測試是由「情節」、「計數器集合」和「回合設定」定義。 下圖說明[情節](../test/edit-load-test-scenarios.md)、[計數器集合](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md)和[回合設定](../test/load-test-run-settings-properties.md)之間的差異：
 
 ![負載測試架構](../test/media/load_test_editor.png)
+
+## <a name="software-requirements"></a>軟體需求
+
+只有 Visual Studio Enterprise 版中可以使用 Web 效能和負載測試專案。
 
 ## <a name="edit-load-test-scenario-settings"></a>編輯負載測試情節設定
 

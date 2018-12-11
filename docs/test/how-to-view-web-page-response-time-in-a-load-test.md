@@ -12,16 +12,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 945bbe8377d51974bdfb09b762e415da3004346b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9740d26ef99c10bb9ec84afa23b998f6e1467f40
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49821834"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895258"
 ---
 # <a name="how-to-view-web-page-response-time-in-a-load-test-using-the-load-test-analyzer"></a>如何：使用負載測試分析器在負載測試中檢視網頁回應時間
 
 每個網頁載入所花的時間稱為「回應時間」。 當您建立 Web 效能測試時，可以在 Web 效能測試中為每一個網頁要求設定回應時間目標。
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 如果您在負載測試中的壓力下執行 Web 效能測試，將可以分析每一個網頁的下列資訊：
 
@@ -36,8 +38,6 @@ ms.locfileid: "49821834"
 -   在圖形檢視中分析網頁回應時間
 
 ## <a name="view-response-time-data-in-a-table"></a>在資料表中檢視回應時間資料
-
-### <a name="to-view-response-time-data-in-a-table"></a>在資料表中檢視回應時間資料
 
 1. 在 [負載測試分析器] 中，選擇工具列上的 [資料表]，確定資料表格線已顯示。
 
@@ -70,7 +70,7 @@ ms.locfileid: "49821834"
 
 您也可以在圖形中檢視回應時間資料，查看它在負載測試期間隨著時間的變化。 如果您的負載模式隨著測試回合而增加 (例如使用步驟負載模式) 時，這會非常有用。 如需詳細資訊，請參閱[編輯負載模式以模型化虛擬使用者活動](../test/edit-load-patterns-to-model-virtual-user-activities.md)。
 
-### <a name="to-view-response-time-data-in-a-graph"></a>在圖形中檢視回應時間資料
+若要在圖表中檢視回應時間資料：
 
 1. 在 [負載測試分析器] 中，選擇工具列上的 [圖表]，確認圖表已顯示。
 

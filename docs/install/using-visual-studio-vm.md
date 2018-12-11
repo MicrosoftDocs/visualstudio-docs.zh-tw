@@ -15,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c71161c85c1a532b8c7e188f23cb00e73f78b06c
-ms.sourcegitcommit: f61ad0e8babec8810295f039e67629f4bdebeef0
+ms.openlocfilehash: 5d0d51e1c5c3ba94363c2ce0377f3d1a5e22c582
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "52001213"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895838"
 ---
 # <a id="top"> </a> Azure 上的 Visual Studio 映像
 
@@ -32,15 +32,16 @@ ms.locfileid: "52001213"
 
 您可以在 Azure Marketplace 中找到最新主要版本 (Visual Studio 2017 和 Visual Studio 2015) 的映像。 針對每個主要版本，您都會看見原始發行 (RTW) 版本及最新更新的版本。 這些版本每個都會提供 Visual Studio Enterprise 和 Visual Studio Community 版本。 這些映像每個月至少都會更新一次，以包含最新的 Visual Studio 和 Windows 更新。 雖然映像名稱保持相同，但每個映像的描述都包含安裝的產品版本和映像的「起自」日期。
 
-| 發行版本                                              | 版本                     |     產品版本     |
-|:------------------------------------------------------------:|:----------------------------:|:-----------------------:|
-| Visual Studio 2017：最新 (15.9 版)                    |    Enterprise、Community     |      15.9.0 版     |
-|         Visual Studio 2017：RTW                              |    Enterprise、Community     |      15.0.18 版    |
-|   Visual Studio 2015：最新 (Update 3)                      |    Enterprise、Community     |  14.0.25431.01 版  |
-|         Visual Studio 2015：RTW                              |             無             | (維護已過期) |
+| 發行版本                                              | 版本                     |     產品版本      |
+|:------------------------------------------------------------:|:----------------------------:|:------------------------:|
+|   Visual Studio 2019：預覽 (Preview 1 )                   |           企業         | 16.0.0 版 Preview 1 |
+| Visual Studio 2017：最新 (15.9 版)                    |    Enterprise、Community     |      15.9.0 版      |
+|         Visual Studio 2017：RTW                              |    Enterprise、Community     |      15.0.18 版     |
+|   Visual Studio 2015：最新 (Update 3)                      |    Enterprise、Community     |  14.0.25431.01 版   |
+|         Visual Studio 2015：RTW                              |             無             | (維護已過期)  |
 
 > [!NOTE]
-> 根據 Microsoft 維護原則，Visual Studio 2015 的原始發行 (RTW) 版本的維護已過期。 Visual Studio 2015 Update 3 是 Visual Studio 2015 產品線剩下唯一提供的版本。  此外，自 Visual Studio 2017 15.9 版發行後，我們已停止包含 15.9 版預覽的「最新預覽」影像。
+> 根據 Microsoft 維護原則，Visual Studio 2015 的原始發行 (RTW) 版本的維護已過期。 Visual Studio 2015 Update 3 是 Visual Studio 2015 產品線剩下唯一提供的版本。
 
 如需詳細資訊，請參閱[Visual Studio IDE 維護原則](/visualstudio/productinfo/vs-servicing-vs)。
 

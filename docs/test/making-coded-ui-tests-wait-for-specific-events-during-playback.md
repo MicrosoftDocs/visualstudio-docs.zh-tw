@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Studio 中讓自動程式化 UI 測試等候特定事件
+title: 讓自動程式化 UI 測試等候特定事件
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -9,54 +9,55 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c8a88980869d6eb7f8b30c4e1197f373f1895d52
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: d1f077269ddfd736aa98b78c64c81170037853eb
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295120"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52894764"
 ---
 # <a name="make-coded-ui-tests-wait-for-specific-events-during-playback"></a>讓自動程式化 UI 測試在播放期間等候特定事件
 
 在自動程式化 UI 測試播放中，您可以指示測試等待發生特定事件 (例如出現視窗、進度列消失等)。 若要這樣做，請使用下表所述的適當 UITestControl.WaitForControlXXX() 方法。 如需使用 <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlEnabled%2A> 方法等候啟用控制項的自動程式化 UI 測試範例，請參閱[逐步解說：建立、編輯和維護自動程式化 UI 測試](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)。
 
- **需求**
+[!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
- Visual Studio 企業版
+**需求**
+
+Visual Studio 企業版
 
 > [!TIP]
 > 您也可以使用自動程式化 UI 測試編輯器，以新增動作之前的延遲。 如需詳細資訊，請參閱[如何：使用自動程式化 UI 測試編輯器，在 UI 動作前插入延遲](editing-coded-ui-tests-using-the-coded-ui-test-editor.md#insert-a-delay-before-a-ui-action)。
 
+**UITestControl.WaitForControlXXX() 方法**
 
- **UITestControl.WaitForControlXXX() 方法**
+<xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlReady%2A>
 
- <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlReady%2A>
+等候控制項準備好接受滑鼠和鍵盤輸入。 引擎會先針對所有等待控制項備妥的動作，隱含地呼叫這個 API，然後再進行任何作業。 不過，在某些罕見的情況下，您可能必須執行明確呼叫。
 
- 等候控制項準備好接受滑鼠和鍵盤輸入。 引擎會先針對所有等待控制項備妥的動作，隱含地呼叫這個 API，然後再進行任何作業。 不過，在某些罕見的情況下，您可能必須執行明確呼叫。
+<xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlEnabled%2A>
 
- <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlEnabled%2A>
+當精靈藉由呼叫伺服器來執行輸入的一些非同步驗證時，等候啟用控制項。 例如，您可以命令方法等候精靈的 [下一步] 按鈕啟用 ()。 如需此方法的範例，請參閱[逐步解說：建立、編輯和維護自動程式化 UI 測試](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)。
 
- 當精靈藉由呼叫伺服器來執行輸入的一些非同步驗證時，等候啟用控制項。 例如，您可以命令方法等候精靈的 [下一步] 按鈕啟用 ()。 如需此方法的範例，請參閱[逐步解說：建立、編輯和維護自動程式化 UI 測試](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)。
+<xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlExist%2A>
 
- <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlExist%2A>
+等候要出現在 UI 上的控制項。 比方說，在應用程式完成參數驗證後，您預期會出現錯誤對話方塊。 驗證所花費的時間是變數。 您可以使用這個方法來等候錯誤對話方塊。
 
- 等候要出現在 UI 上的控制項。 比方說，在應用程式完成參數驗證後，您預期會出現錯誤對話方塊。 驗證所花費的時間是變數。 您可以使用這個方法來等候錯誤對話方塊。
+<xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlNotExist%2A>
 
- <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlNotExist%2A>
+等候控制項從 UI 消失。 例如，您可以等候進度列消失。
 
- 等候控制項從 UI 消失。 例如，您可以等候進度列消失。
+<xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlPropertyEqual%2A>
 
- <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlPropertyEqual%2A>
+等候控制項的指定屬性具有給定值。 例如，等候狀態文字變更為 [完成]。
 
- 等候控制項的指定屬性具有給定值。 例如，等候狀態文字變更為 [完成]。
+<xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlPropertyNotEqual%2A>
 
- <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlPropertyNotEqual%2A>
+等候控制項的指定屬性具有指定值的相反值。 例如，您等候編輯方塊變成非唯讀狀態，亦即可供您進行編輯。
 
- 等候控制項的指定屬性具有指定值的相反值。 例如，您等候編輯方塊變成非唯讀狀態，亦即可供您進行編輯。
+<xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlCondition%2A>
 
- <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlCondition%2A>
-
- 等候指定的述詞傳回 `true`。 這可以用於指定控制項上的複雜等候作業 (例如 OR 條件)。 例如，您可以等到狀態文字變成 [成功] 或 [失敗]，如下列程式碼所示：
+等候指定的述詞傳回 `true`。 這可以用於指定控制項上的複雜等候作業 (例如 OR 條件)。 例如，您可以等到狀態文字變成 [成功] 或 [失敗]，如下列程式碼所示：
 
 ```csharp
 
