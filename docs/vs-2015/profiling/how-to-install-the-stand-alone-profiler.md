@@ -19,7 +19,7 @@ ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 1d387a9f085b8cf755bfb8efb8ddd056c16cca4e
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51817161"

@@ -19,7 +19,7 @@ ms.author: mblome
 manager: ghogen
 ms.openlocfilehash: 56f14abab372a6a6e533675b070d420a4dfc7a5e
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51758200"
