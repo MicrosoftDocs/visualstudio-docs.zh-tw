@@ -16,17 +16,17 @@ helpviewer_keywords:
 - data binding, controls
 - Office applications [Office development in Visual Studio], data binding
 - controls, data binding
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f329680d4e469d5009c8659e7a2047c87f906105
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 5b5d7a52e4f8b9e6c9741d3b62bc18b2d4cb66f7
+ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50744861"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53248016"
 ---
 # <a name="bind-data-to-controls-in-office-solutions"></a>資料繫結至 Office 方案中的控制項
   您可以將 Microsoft Office Word 文件或 Microsoft Office Excel 工作表中的 Windows Form 控制項和「主控制項」  (host control) 繫結至資料來源，讓控制項自動顯示資料。 您可以將資料繫結至應用程式層級和文件層級專案中的控制項。  
@@ -37,7 +37,7 @@ ms.locfileid: "50744861"
   
  Windows Form 和主控制項都會使用 Windows Form 資料繫結模型，這個模型同時支援對資料集和資料表等資料來源執行「簡單資料繫結」  (simple data binding) 和「複雜資料繫結」  (complex data binding)。 如需在 Windows Form 中的資料繫結模型的完整資訊，請參閱[進行資料繫結和 Windows Form](/dotnet/framework/winforms/data-binding-and-windows-forms)。  
   
- ![影片連結](../vsto/media/playvideo.gif "影片連結")如需相關的影片示範，請參閱[How do i： 使用 Excel 中的資料庫資料？](http://go.microsoft.com/fwlink/?LinkID=130287)。  
+ ![影片連結](../vsto/media/playvideo.gif "影片連結")如需相關的影片示範，請參閱[How do i:使用 Excel 中的資料庫資料？](http://go.microsoft.com/fwlink/?LinkID=130287).  
   
 ## <a name="simple-data-binding"></a>簡單資料繫結  
  當控制項屬性繫結至單一資料項目時，例如資料表中的值，便存在簡單資料繫結。 例如， <xref:Microsoft.Office.Tools.Excel.NamedRange> 控制項具有 <xref:Microsoft.Office.Tools.Excel.NamedRange.Value2%2A> 屬性，該屬性可繫結至資料集中的欄位。 當資料集中的欄位變更時，具名範圍中的值也會變更。 除了 <xref:Microsoft.Office.Tools.Word.XMLNodes> 控制項以外，所有主控制項都支援簡單資料繫結。 <xref:Microsoft.Office.Tools.Word.XMLNodes> 控制項是一個集合，因此不支援資料繫結。  
@@ -49,7 +49,7 @@ ms.locfileid: "50744861"
  [!code-vb[Trin_BindableComponent#4](../vsto/codesnippet/VisualBasic/Trin_BindableComponent/Sheet1.vb#4)]
  [!code-csharp[Trin_BindableComponent#4](../vsto/codesnippet/CSharp/Trin_BindableComponent/Sheet1.cs#4)]  
   
- 如需示範簡單資料繫結的逐步解說，請參閱[逐步解說： 在文件層級專案中的簡單資料繫結](../vsto/walkthrough-simple-data-binding-in-a-document-level-project.md)文件層級專案及[逐步解說： VSTO 增益集專案中的簡單資料繫結](../vsto/walkthrough-simple-data-binding-in-vsto-add-in-project.md) VSTO 增益集專案。  
+ 如需示範簡單資料繫結的逐步解說，請參閱[逐步解說：在文件層級專案中的簡單資料繫結](../vsto/walkthrough-simple-data-binding-in-a-document-level-project.md)文件層級專案及[逐步解說：在 VSTO 增益集專案中的簡單資料繫結](../vsto/walkthrough-simple-data-binding-in-vsto-add-in-project.md)VSTO 增益集專案。  
   
 ## <a name="complex-data-binding"></a>複雜資料繫結  
  當控制項屬性繫結至多個資料項目時，例如資料表中的多個資料行，便存在複雜資料繫結。 Excel 的 <xref:Microsoft.Office.Tools.Excel.ListObject> 控制項是唯一支援複雜資料繫結的主控制項。 另外還有許多支援複雜資料繫結的 Windows Form 控制項，例如 <xref:System.Windows.Forms.DataGridView> 控制項。  
@@ -61,7 +61,7 @@ ms.locfileid: "50744861"
  [!code-csharp[Trin_ExcelListObject#18](../vsto/codesnippet/CSharp/Trin_ExcelListObject/Trin_ExcelListObject.cs#18)]
  [!code-vb[Trin_ExcelListObject#18](../vsto/codesnippet/VisualBasic/Trin_ExcelListObject/Sheet1.vb#18)]  
   
- 如需示範複雜資料繫結的逐步解說，請參閱[逐步解說： 在文件層級專案中的複雜資料繫結](../vsto/walkthrough-complex-data-binding-in-a-document-level-project.md)文件層級專案及[逐步解說： VSTO 增益集專案中的複雜資料繫結](../vsto/walkthrough-complex-data-binding-in-vsto-add-in-project.md) VSTO 增益集專案。  
+ 如需示範複雜資料繫結的逐步解說，請參閱[逐步解說：在文件層級專案中的複雜資料繫結](../vsto/walkthrough-complex-data-binding-in-a-document-level-project.md)文件層級專案及[逐步解說：在 VSTO 增益集專案中的複雜資料繫結](../vsto/walkthrough-complex-data-binding-in-vsto-add-in-project.md)VSTO 增益集專案。  
   
 ## <a name="display-data-in-documents-and-workbooks"></a>在文件和活頁簿中顯示資料  
  在文件層級專案中，您可以輕鬆地使用 [資料來源]  視窗將資料繫結控制項加入文件或活頁簿，與用於 Windows Form 的方法相同。 如需使用詳細資訊**資料來源** 視窗中，請參閱[繫結 Windows Form 控制項加入 Visual Studio 中的資料](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)並[加入新的資料來源](../data-tools/add-new-data-sources.md)。  
@@ -76,22 +76,22 @@ ms.locfileid: "50744861"
 ### <a name="bind-data-in-document-level-projects-at-design-time"></a>將文件層級專案中的資料繫結在設計階段  
  下列主題示範如何在設計階段繫結資料：  
   
--   [如何： 從資料庫的資料填入工作表](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)  
+-   [如何：從資料庫的資料填入工作表](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)  
   
--   [如何： 的資料庫中的資料填入文件](../vsto/how-to-populate-documents-with-data-from-a-database.md)  
+-   [如何：資料庫中的資料填入文件](../vsto/how-to-populate-documents-with-data-from-a-database.md)  
   
--   [如何： 的物件的資料填入文件](../vsto/how-to-populate-documents-with-data-from-objects.md)  
+-   [如何：物件的資料填入文件](../vsto/how-to-populate-documents-with-data-from-objects.md)  
   
--   [如何： 擴展的資料服務文件](../vsto/how-to-populate-documents-with-data-from-services.md)  
+-   [如何：服務中的資料填入文件](../vsto/how-to-populate-documents-with-data-from-services.md)  
   
--   [如何： 捲動工作表中的資料庫記錄](../vsto/how-to-scroll-through-database-records-in-a-worksheet.md)  
+-   [如何：捲動工作表中的資料庫記錄](../vsto/how-to-scroll-through-database-records-in-a-worksheet.md)  
   
 ### <a name="bind-data-in-vsto-add-in-projects"></a>在 VSTO 增益集專案中繫結資料  
  在 VSTO 增益集專案中，您可以只在執行階段將控制項。 下列主題會示範在執行階段繫結資料的範例：  
   
--   [逐步解說： VSTO 增益集專案中的簡單資料繫結](../vsto/walkthrough-simple-data-binding-in-vsto-add-in-project.md)  
+-   [逐步解說：在 VSTO 增益集專案中的簡單資料繫結](../vsto/walkthrough-simple-data-binding-in-vsto-add-in-project.md)  
   
--   [逐步解說： VSTO 增益集專案中的複雜資料繫結](../vsto/walkthrough-complex-data-binding-in-vsto-add-in-project.md)  
+-   [逐步解說：在 VSTO 增益集專案中的複雜資料繫結](../vsto/walkthrough-complex-data-binding-in-vsto-add-in-project.md)  
   
 ## <a name="update-data-that-is-bound-to-host-controls"></a>更新資料繫結至主控制項  
  資料來源與主控制項之間的資料繫結涉及雙向資料更新。 在簡單資料繫結中，資料來源中的變更會自動反映在主控制項中，但主控制項中的變更需要明確的呼叫才能更新資料來源。 這是因為在某些情況下，一個資料繫結欄位中的變更，必須也發生在另一個資料繫結欄位中，才會予以接受。 例如，您可能有兩個欄位，一個用於年齡，另一個用於工作經驗。 工作經驗不可超過年齡。 使用者不可將年齡從 50 更新為 25，然後再將工作經驗從 30 更新為 10，除非該使用者同時進行變更。 為了解決這個問題，簡單資料繫結的欄位會在程式碼明確傳送更新之後才進行更新。  
@@ -100,12 +100,12 @@ ms.locfileid: "50744861"
   
  使用 <xref:Microsoft.Office.Tools.Excel.ListObject> 控制項執行複雜資料繫結時，不需要明確更新記憶體內部資料來源。 在該情況下，變更會自動傳送至記憶體內部資料來源，而不需要其他程式碼。  
   
- 如需詳細資訊，請參閱 <<c0> [ 如何： 從主控制項的資料更新資料來源](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)。  
+ 如需詳細資訊，請參閱[＜How to：從主控制項的資料更新資料來源](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)。  
   
 ## <a name="see-also"></a>另請參閱  
- [如何： 使用 Excel 中的資料庫資料？](http://go.microsoft.com/fwlink/?LinkID=130287)   
+ [How do i使用 Excel 中的資料庫資料？](http://go.microsoft.com/fwlink/?LinkID=130287)   
  [資料繫結和 Windows Form](/dotnet/framework/winforms/data-binding-and-windows-forms)   
- [如何： 建立 Windows Form 上的簡單繫結控制項](/dotnet/framework/winforms/how-to-create-a-simple-bound-control-on-a-windows-form)   
+ [如何：建立 Windows Form 上的簡單繫結控制項](/dotnet/framework/winforms/how-to-create-a-simple-bound-control-on-a-windows-form)   
  [將 Windows Forms 控制項繫結至 Visual Studio 中的資料](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)   
  [將資料儲存回資料庫](../data-tools/save-data-back-to-the-database.md)    
  [使用 TableAdapter 更新資料](../data-tools/update-data-by-using-a-tableadapter.md)    

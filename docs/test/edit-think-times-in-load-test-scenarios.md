@@ -1,5 +1,5 @@
 ---
-title: Visual Studio 中用於負載測試的考慮時間
+title: 負載測試的考慮時間
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,22 +12,24 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 8f8f90eb341112cd700d45b6b7c7d100cad2a024
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 236b6dffa3885928b48b7d6ea044f2494e7d7b28
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39175978"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895908"
 ---
 # <a name="edit-think-times-to-simulate-website-human-interaction-delays-in-load-tests-scenarios"></a>在負載測試情節中編輯考慮時間以模擬網站人類互動延遲
 
 考慮時間可用來模擬造成人們在與網站互動時必須等待的人類行為。 考慮時間會發生在 Web 效能測試的各個要求之間，以及負載情節中各個測試反覆項目之間。 在負載測試中使用考慮時間，有助於建立更精確的負載模擬。 您可以決定負載測試中要使用或忽略考慮時間。 您會在 [負載測試編輯器] 中變更負載測試中是否要使用考慮時間。
 
- 「考慮特性」是套用到負載測試中之情節的設定。 此設定會決定在負載測試期間，是否要使用儲存在個別 Web 效能測試中的考慮時間。 如果想在某些 Web 效能測試中使用考慮時間，其他則不使用，則必須在不同的情節中使用不同的考慮時間設定。 如需情節的詳細資訊，請參閱[編輯負載測試情節](../test/edit-load-test-scenarios.md)。
+「考慮特性」是套用到負載測試中之情節的設定。 此設定會決定在負載測試期間，是否要使用儲存在個別 Web 效能測試中的考慮時間。 如果想在某些 Web 效能測試中使用考慮時間，其他則不使用，則必須在不同的情節中使用不同的考慮時間設定。 如需情節的詳細資訊，請參閱[編輯負載測試情節](../test/edit-load-test-scenarios.md)。
 
- 一開始，您會在使用 [新增負載測試精靈] 建立負載測試時，設定負載測試中是否要使用考慮時間。 如需詳細資訊，請參閱[編輯負載測試情節](../test/edit-load-test-scenarios.md)。
+一開始，您會在使用 [新增負載測試精靈] 建立負載測試時，設定負載測試中是否要使用考慮時間。 如需詳細資訊，請參閱[編輯負載測試情節](../test/edit-load-test-scenarios.md)。
 
- [考慮特性] 選項的描述如下列清單：
+[考慮特性] 選項的描述如下列清單：
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 **Off**
 
@@ -46,7 +48,7 @@ ms.locfileid: "39175978"
 
 ## <a name="change-the-think-profile"></a>變更考慮特性
 
-### <a name="to-change-a-think-profile-in-a-load-test-scenario"></a>變更負載測試情節中的考慮特性
+### <a name="to-change-a-think-profile-in-a-load-test-scenario"></a>若要變更負載測試情節中的考慮特性
 
 1.  從 Web 效能和負載測試專案中，開啟負載測試。
 

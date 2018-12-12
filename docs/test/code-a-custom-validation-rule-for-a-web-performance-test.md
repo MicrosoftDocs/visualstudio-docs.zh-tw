@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Studio 中為 Web 效能測試撰寫自訂驗證規則程式碼
+title: 為 Web 效能測試撰寫自訂驗證規則程式碼
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: ffc5d54b9eac28e975b6ee538e6193e52f98282f
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 407c6e5b8beec118ce8f25edb35e66722990e8ca
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895141"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53047670"
 ---
 # <a name="code-a-custom-validation-rule-for-a-web-performance-test"></a>為 Web 效能測試撰寫自訂驗證規則程式碼
 

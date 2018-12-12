@@ -11,16 +11,20 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 8829644e34c169f8992959013f70d453a70d41b8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: fc54324f2c5bc91dba64aa35b125bbdc12ca1a45
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49834277"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895024"
 ---
 # <a name="report-load-tests-results-for-test-comparisons-or-trend-analysis"></a>針對測試比較或趨勢分析報告負載測試結果
 
-您可以根據兩個或多個測試結果，產生 Microsoft Excel 負載測試報告。 共有兩種負載測試報告可供使用：
+您可以根據兩個或多個測試結果，產生 Microsoft Excel 負載測試報告。
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
+
+共有兩種負載測試報告可供使用：
 
 - 執行比較&mdash;這個報告其實是兩個報告，可使用資料表和橫條圖並排顯示比較資料。
 
@@ -33,7 +37,7 @@ ms.locfileid: "49834277"
 此外，也能和專案關係人共用試算表檔案，因此專案關係人不必連接至資料庫就能查看報告。
 
 > [!NOTE]
-> 如果您將註解加入至負載測試，這些註解就會顯示在 Excel 報表中。 如需詳細資訊，請參閱[如何：在分析已完成的負載測試時新增註解](../test/how-to-add-comments-on-a-completed-load-test.md)。
+> 如果您將註解新增至負載測試，這些註解就會顯示在 Excel 報表中。
 
 ## <a name="tasks"></a>工作
 

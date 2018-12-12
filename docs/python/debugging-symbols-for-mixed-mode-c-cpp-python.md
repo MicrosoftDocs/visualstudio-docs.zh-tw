@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 1b5b50d08876b9b106a836c0302a99dc7efe5204
-ms.sourcegitcommit: 6a955a2d179cd0e137942389f940d9fcbbe125de
+ms.openlocfilehash: 62e3727b36e6ba3231ee12388e1be5bde40d080a
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51607636"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062686"
 ---
 # <a name="install-debugging-symbols-for-python-interpreters"></a>安裝 Python 解譯器的偵錯符號
 
@@ -71,12 +71,12 @@ Visual Studio 會在需要符號時提示您，一般來說，這是指啟動混
 | 3.4.2 | [32 位元](https://www.python.org/ftp/python/3.4.2/python-3.4.2-pdb.zip) - [64 位元](https://www.python.org/ftp/python/3.4.2/python-3.4.2.amd64-pdb.zip) |
 | 3.4.1 | [32 位元](https://www.python.org/ftp/python/3.4.1/python-3.4.1-pdb.zip) - [64 位元](https://www.python.org/ftp/python/3.4.1/python-3.4.1.amd64-pdb.zip) |
 | 3.4.0 | [32 位元](https://www.python.org/ftp/python/3.4.0/python-3.4.0-pdb.zip) - [64 位元](https://www.python.org/ftp/python/3.4.0/python-3.4.0.amd64-pdb.zip) |
-| 3.3.5 | [32 位元](http://www.python.org/ftp/python/3.3.5/python-3.3.5-pdb.zip) - [64 位元](http://www.python.org/ftp/python/3.3.5/python-3.3.5.amd64-pdb.zip) |
-| 3.3.4 | [32 位元](https://www.python.org/ftp/python/3.3.4/python-3.3.4-pdb.zip) - [64 位元](https://www.org/ftp/python/3.3.4/python-3.3.4.amd64-pdb.zip) |
-| 3.3.3 | [32 位元](https://www.org/ftp/python/3.3.3/python-3.3.3-pdb.zip) - [64 位元](https://www.org/ftp/python/3.3.3/python-3.3.3.amd64-pdb.zip) |
-| 3.3.2 | [32 位元](https://www.org/ftp/python/3.3.2/python-3.3.2-pdb.zip) - [64 位元](https://www.org/ftp/python/3.3.2/python-3.3.2.amd64-pdb.zip) |
-| 3.3.1 | [32 位元](https://www.org/ftp/python/3.3.1/python-3.3.1-pdb.zip) - [64 位元](https://www.org/ftp/python/3.3.1/python-3.3.1.amd64-pdb.zip) |
-| 3.3.0 | [32 位元](https://www.org/ftp/python/3.3.0/python-3.3.0-pdb.zip) - [64 位元](https://www.org/ftp/python/3.3.0/python-3.3.0.amd64-pdb.zip) |
+| 3.3.5 | [32 位元](https://www.python.org/ftp/python/3.3.5/python-3.3.5-pdb.zip) - [64 位元](https://www.python.org/ftp/python/3.3.5/python-3.3.5.amd64-pdb.zip) |
+| 3.3.4 | [32 位元](https://www.python.org/ftp/python/3.3.4/python-3.3.4-pdb.zip) - [64 位元](https://www.python.org/ftp/python/3.3.4/python-3.3.4.amd64-pdb.zip) |
+| 3.3.3 | [32 位元](https://www.python.org/ftp/python/3.3.3/python-3.3.3-pdb.zip) - [64 位元](https://www.python.org/ftp/python/3.3.3/python-3.3.3.amd64-pdb.zip) |
+| 3.3.2 | [32 位元](https://www.python.org/ftp/python/3.3.2/python-3.3.2-pdb.zip) - [64 位元](https://www.python.org/ftp/python/3.3.2/python-3.3.2.amd64-pdb.zip) |
+| 3.3.1 | [32 位元](https://www.python.org/ftp/python/3.3.1/python-3.3.1-pdb.zip) - [64 位元](https://www.python.org/ftp/python/3.3.1/python-3.3.1.amd64-pdb.zip) |
+| 3.3.0 | [32 位元](https://www.python.org/ftp/python/3.3.0/python-3.3.0-pdb.zip) - [64 位元](https://www.python.org/ftp/python/3.3.0/python-3.3.0.amd64-pdb.zip) |
 | 2.7.15 | [32 位元](https://www.python.org/ftp/python/2.7.15/python-2.7.15-pdb.zip) - [64 位元](https://www.python.org/ftp/python/2.7.15/python-2.7.15.amd64-pdb.zip) |
 | 2.7.14 | [32 位元](https://www.python.org/ftp/python/2.7.14/python-2.7.14-pdb.zip) - [64 位元](https://www.python.org/ftp/python/2.7.14/python-2.7.14.amd64-pdb.zip) |
 | 2.7.13 | [32 位元](https://www.python.org/ftp/python/2.7.13/python-2.7.13-pdb.zip) - [64 位元](https://www.python.org/ftp/python/2.7.13/python-2.7.13.amd64-pdb.zip) |
@@ -86,12 +86,12 @@ Visual Studio 會在需要符號時提示您，一般來說，這是指啟動混
 | 2.7.9 | [32 位元](https://www.python.org/ftp/python/2.7.9/python-2.7.9-pdb.zip) - [64 位元](https://www.python.org/ftp/python/2.7.9/python-2.7.9.amd64-pdb.zip) |
 | 2.7.8 | [32 位元](https://www.python.org/ftp/python/2.7.8/python-2.7.8-pdb.zip) - [64 位元](https://www.python.org/ftp/python/2.7.8/python-2.7.8.amd64-pdb.zip) |
 | 2.7.7 | [32 位元](https://www.python.org/ftp/python/2.7.7/python-2.7.7-pdb.zip) - [64 位元](https://www.python.org/ftp/python/2.7.7/python-2.7.7.amd64-pdb.zip) |
-| 2.7.6 | [32 位元](https://www.org/ftp/python/2.7.6/python-2.7.6-pdb.zip) - [64 位元](https://www.org/ftp/python/2.7.6/python-2.7.6.amd64-pdb.zip) |
-| 2.7.5 | [32 位元](https://www.org/ftp/python/2.7.5/python-2.7.5-pdb.zip) - [64 位元](https://www.org/ftp/python/2.7.5/python-2.7.5.amd64-pdb.zip) |
-| 2.7.4 | [32 位元](https://www.org/ftp/python/2.7.4/python-2.7.4-pdb.zip) - [64 位元](https://www.org/ftp/python/2.7.4/python-2.7.4.amd64-pdb.zip) |
-| 2.7.3 | [32 位元](https://www.org/ftp/python/2.7.3/python-2.7.3-pdb.zip) - [64 位元](https://www.org/ftp/python/2.7.3/python-2.7.3.amd64-pdb.zip) |
-| 2.7.2 | [32 位元](https://www.org/ftp/python/2.7.2/python-2.7.2-pdb.zip) - [64 位元](https://www.org/ftp/python/2.7.2/python-2.7.2.amd64-pdb.zip) |
-| 2.7.1 | [32 位元](https://www.org/ftp/python/2.7.1/python-2.7.1-pdb.zip) - [64 位元](https://www.org/ftp/python/2.7.1/python-2.7.1.amd64-pdb.zip) |
+| 2.7.6 | [32 位元](https://www.python.org/ftp/python/2.7.6/python-2.7.6-pdb.zip) - [64 位元](https://www.python.org/ftp/python/2.7.6/python-2.7.6.amd64-pdb.zip) |
+| 2.7.5 | [32 位元](https://www.python.org/ftp/python/2.7.5/python-2.7.5-pdb.zip) - [64 位元](https://www.python.org/ftp/python/2.7.5/python-2.7.5.amd64-pdb.zip) |
+| 2.7.4 | [32 位元](https://www.python.org/ftp/python/2.7.4/python-2.7.4-pdb.zip) - [64 位元](https://www.python.org/ftp/python/2.7.4/python-2.7.4.amd64-pdb.zip) |
+| 2.7.3 | [32 位元](https://www.python.org/ftp/python/2.7.3/python-2.7.3-pdb.zip) - [64 位元](https://www.python.org/ftp/python/2.7.3/python-2.7.3.amd64-pdb.zip) |
+| 2.7.2 | [32 位元](https://www.python.org/ftp/python/2.7.2/python-2.7.2-pdb.zip) - [64 位元](https://www.python.org/ftp/python/2.7.2/python-2.7.2.amd64-pdb.zip) |
+| 2.7.1 | [32 位元](https://www.python.org/ftp/python/2.7.1/python-2.7.1-pdb.zip) - [64 位元](https://www.python.org/ftp/python/2.7.1/python-2.7.1.amd64-pdb.zip) |
 
 ## <a name="enthought-canopy"></a>Enthought Canopy
 

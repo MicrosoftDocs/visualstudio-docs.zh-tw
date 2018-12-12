@@ -1,5 +1,6 @@
 ---
 title: '&lt;增益集&gt;元素 （在 Visual Studio 中的 Office 程式開發）'
+titleSuffix: ''
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology: office-development
@@ -17,12 +18,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: bb2161cbc6633163ba8fba3f8eb678cb0ad72333
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: 06c3941e73ee1825d1dc0f593bd3aa6563c511df
+ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52304463"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53247977"
 ---
 # <a name="ltaddingt-element-office-development-in-visual-studio"></a>&lt;增益集&gt;元素 （在 Visual Studio 中的 Office 程式開發）
   **Addin**項目`vstav3`命名空間包含的是 Microsoft Office VSTO 增益集和使用 Visual Studio 開發的文件層級自訂專屬的資訊。  
@@ -59,16 +60,16 @@ ms.locfileid: "52304463"
  `addin` 項目具有下列子項目。  
 
 ### <a name="entrypoints"></a>entryPoints  
- 必要。 **進入點**項目所述[&#60;進入點&#62;項目的&#40;Visual Studio 中的 Office 程式開發&#41;](../vsto/entrypoints-element-office-development-in-visual-studio.md)。  
+ 必要項。 **進入點**項目所述[&#60;進入點&#62;項目的&#40;Visual Studio 中的 Office 程式開發&#41;](../vsto/entrypoints-element-office-development-in-visual-studio.md)。  
 
 ### <a name="update"></a>更新  
- 必要。 **更新**項目所述[&#60;更新&#62;項目的&#40;Visual Studio 中的 Office 程式開發&#41;](../vsto/update-element-office-development-in-visual-studio.md)。  
+ 必要項。 **更新**項目所述[&#60;更新&#62;項目的&#40;Visual Studio 中的 Office 程式開發&#41;](../vsto/update-element-office-development-in-visual-studio.md)。  
 
 ### <a name="postactions"></a>postActions  
  選擇性。 **PostActions**項目所述[ &#60;postActions&#62;項目的&#40;Visual Studio 中的 Office 程式開發&#41;](../vsto/postactions-element-office-development-in-visual-studio.md)。  
 
 ### <a name="application"></a>應用程式  
- 必要。 **應用程式**項目所述[&#60;應用程式&#62;項目的&#40;Visual Studio 中的 Office 程式開發&#41;](../vsto/application-element-office-development-in-visual-studio.md)。  
+ 必要項。 **應用程式**項目所述[&#60;應用程式&#62;項目的&#40;Visual Studio 中的 Office 程式開發&#41;](../vsto/application-element-office-development-in-visual-studio.md)。  
 
 ## <a name="document-level-customization-example"></a>文件層級自訂範例  
 

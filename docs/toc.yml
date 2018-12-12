@@ -4,7 +4,7 @@ items:
 - name: 總覽
   items:
   - name: Visual Studio 2017 概觀
-    href: ide/visual-studio-ide.md
+    href: get-started/visual-studio-ide.md
   - name: 程式碼編輯器概觀
     href: get-started/tutorial-editor.md
   - name: 專案與解決方案概觀
@@ -138,11 +138,11 @@ items:
     href: ide/quickstart-nodejs.md
   - name: F#：建立 Web 服務
     href: ide/quickstart-fsharp.md
-  - name: C#：建立 Web 應用程式
+  - name: 'C#: 建立 Web 應用程式'
     href: ide/quickstart-aspnet-core.md
-  - name: C#：建立 UWP 應用程式
+  - name: 'C#: 建立 UWP 應用程式'
     href: ide/quickstart-uwp-csharp.md
-  - name: C#：建立主控台應用程式
+  - name: 'C#: 建立主控台應用程式'
     href: ide/quickstart-csharp-console.md
   - name: Visual Basic：建立主控台應用程式
     href: ide/quickstart-visual-basic-console.md
@@ -158,9 +158,9 @@ items:
     href: javascript/tutorial-nodejs.md
   - name: Visual Studio 中的 C#
     items:
-    - name: C#：建立 Web 應用程式
+    - name: 'C#: 建立 Web 應用程式'
       href: ide/tutorial-csharp-aspnet-core.md
-    - name: C#：建立主控台應用程式
+    - name: 'C#: 建立主控台應用程式'
       href: ide/tutorial-csharp-console.md
   - name: Visual Studio 中的 Visual Basic
     href: ide/tutorial-visual-basic-console.md
@@ -523,65 +523,65 @@ items:
         - name: 教學課程 1：建立圖片檢視器 (C#)
           href: ide/tutorial-1-create-a-picture-viewer.md
           items:
-          - name: 步驟 1：建立 Windows Form 應用程式專案
+          - name: 步驟 1：建立 Windows Forms 應用程式專案
             href: ide/step-1-create-a-windows-forms-application-project.md
-          - name: 步驟 2：執行您的程式
+          - name: 步驟 2：執行程式
             href: ide/step-2-run-your-program.md
-          - name: 步驟 3：設定您的表單屬性
+          - name: 步驟 3：設定表單屬性
             href: ide/step-3-set-your-form-properties.md
-          - name: 步驟 4：使用 TableLayoutPanel 控制項來配置您的表單
+          - name: 步驟 4：使用 TableLayoutPanel 控制項來配置表單
             href: ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md
-          - name: 步驟 5：將控制項加入至您的表單
+          - name: 步驟 5：將控制項新增至表單
             href: ide/step-5-add-controls-to-your-form.md
-          - name: 步驟 6：命名您的按鈕控制項
+          - name: 步驟 6：命名按鈕控制項
             href: ide/step-6-name-your-button-controls.md
-          - name: 步驟 7：將對話方塊元件加入至您的表單
+          - name: 步驟 7：將對話方塊元件新增至表單
             href: ide/step-7-add-dialog-components-to-your-form.md
           - name: 步驟 8：為顯示圖片按鈕事件處理常式撰寫程式碼
             href: ide/step-8-write-code-for-the-show-a-picture-button-event-handler.md
-          - name: 步驟 9：檢閱、註解和測試您的程式碼
+          - name: 步驟 9：檢閱、註解及測試您的程式碼
             href: ide/step-9-review-comment-and-test-your-code.md
-          - name: 步驟 10：撰寫其他按鈕和核取方塊的程式碼
+          - name: 步驟 10：為其他按鈕及核取方塊撰寫程式碼
             href: ide/step-10-write-code-for-additional-buttons-and-a-check-box.md
           - name: 步驟 11：執行您的程式並嘗試其他功能
             href: ide/step-11-run-your-program-and-try-other-features.md
         - name: 教學課程 2：建立計時數學測驗 (C#)
           href: ide/tutorial-2-create-a-timed-math-quiz.md
           items:
-          - name: 步驟 1：建立專案並將標籤加入至表單
+          - name: 步驟 1：建立專案並將標籤新增至表單
             href: ide/step-1-create-a-project-and-add-labels-to-your-form.md
           - name: 步驟 2：建立隨機加法問題
             href: ide/step-2-create-a-random-addition-problem.md
-          - name: 步驟 3：加入倒數計時器
+          - name: 步驟 3：新增倒數計時器
             href: ide/step-3-add-a-countdown-timer.md
-          - name: 步驟 4：加入 CheckTheAnswer() 方法
+          - name: 步驟 4：新增 CheckTheAnswer() 方法
             href: ide/step-4-add-the-checktheanswer-parens-method.md
-          - name: 步驟 5：加入 NumericUpDown 控制項的 Enter 事件處理常式
+          - name: 步驟 5：新增 NumericUpDown 控制項的 Enter 事件處理常式
             href: ide/step-5-add-enter-event-handlers-for-the-numericupdown-controls.md
-          - name: 步驟 6：加入減法問題
+          - name: 步驟 6：新增減法問題
             href: ide/step-6-add-a-subtraction-problem.md
-          - name: 步驟 7：加入乘法和除法問題
+          - name: 步驟 7：新增乘法及除法問題
             href: ide/step-7-add-multiplication-and-division-problems.md
           - name: 步驟 8：自訂測驗
             href: ide/step-8-customize-the-quiz.md
         - name: 教學課程 3：建立配對遊戲 (C#)
           href: ide/tutorial-3-create-a-matching-game.md
           items:
-          - name: 步驟 1：建立專案並將資料表加入至表單
+          - name: 步驟 1：建立專案並將資料表新增至表單
             href: ide/step-1-create-a-project-and-add-a-table-to-your-form.md
-          - name: 步驟 2：加入隨機物件和圖示清單
+          - name: 步驟 2：新增隨機物件及圖示的清單
             href: ide/step-2-add-a-random-object-and-a-list-of-icons.md
-          - name: 步驟 3：將隨機圖示指派給每個標籤
+          - name: 步驟 3：將隨機圖示指派給每一個標籤
             href: ide/step-3-assign-a-random-icon-to-each-label.md
-          - name: 步驟 4：將 Click 事件處理常式加入至每個標籤
+          - name: 步驟 4：將 Click 事件處理常式新增至每一個標籤
             href: ide/step-4-add-a-click-event-handler-to-each-label.md
-          - name: 步驟 5：加入標籤參考
+          - name: 步驟 5：新增標籤參考
             href: ide/step-5-add-label-references.md
-          - name: 步驟 6：加入計時器
+          - name: 步驟 6：新增計時器
             href: ide/step-6-add-a-timer.md
           - name: 步驟 7：讓配對保持可見
             href: ide/step-7-keep-pairs-visible.md
-          - name: 步驟 8：加入方法以驗證玩家是否贏了
+          - name: 步驟 8：新增驗證玩家是否勝利的方法
             href: ide/step-8-add-a-method-to-verify-whether-the-player-won.md
           - name: 步驟 9：嘗試其他功能
             href: ide/step-9-try-other-features.md
@@ -641,7 +641,7 @@ items:
       href: ide/how-to-specify-build-events-csharp.md
     - name: 在 Visual Basic 中設定警告
       href: ide/configuring-warnings-in-visual-basic.md
-    - name: 逐步解說：建立多電腦組建環境
+    - name: 逐步解說：建立多電腦建置環境
       href: ide/walkthrough-creating-a-multiple-computer-build-environment.md
   - name: 偵錯...
     href: debugger/index.md
@@ -660,7 +660,7 @@ items:
   - name: 自訂 IDE
     href: ide/personalizing-the-visual-studio-ide.md
     items:
-    - name: 快速入門：將佈景主題與文字色彩個人化
+    - name: 快速入門：個人化佈景主題與文字色彩
       href: ide/quickstart-personalize-the-ide.md
     - name: 環境設定
       href: ide/environment-settings.md
@@ -1133,9 +1133,9 @@ items:
     href: ide/reference/resources-for-troubleshooting-integrated-development-environment-errors.md
   - name: 告訴我們
     href: ide/talk-to-us.md
-ms.openlocfilehash: 82155ce10d1a70376ed79611b78745e440360097
-ms.sourcegitcommit: 5c049194fa256b876ad303f491af11edd505756c
+ms.openlocfilehash: 26d86461928e5494d4c0d8686cdf279847f29342
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53027441"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53160071"

@@ -1,5 +1,5 @@
 ---
-title: Visual Studio 命令
+title: 命令
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -14,34 +14,34 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7344a1051385b57f92720e9ca671e6aeb1ec46b5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: da258aab0a9c4e100591bf33abff710b1cf54f53
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49878999"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53063457"
 ---
 # <a name="visual-studio-commands"></a>Visual Studio 命令
+
 Visual Studio 的命令可讓您透過 [命令]  視窗、[即時運算]  視窗，或 [尋找/命令]  方塊來叫用命令。 在每種情況下，大於符號 (`>`) 都用來表示應執行命令，而不是搜尋或偵錯作業。
 
- 您可以在 [Keyboard, Environment Options] (鍵盤、環境選項)  對話方塊中找到命令和其語法的完整清單。
+您可以在 [Keyboard, Environment Options] (鍵盤、環境選項)  對話方塊中找到命令和其語法的完整清單。
 
- Visual Studio 命令的逸出字元是插入號 (^) 字元，這表示緊接著的字元會解譯為常值字元，而不是控制字元。 這可用來在參數或參數的值中嵌入一般引號 (")、空格、前置斜線、插入號或任何其他常值字元，但參數名稱除外。 例如，套用至物件的
+Visual Studio 命令的逸出字元是插入號 (^) 字元，這表示緊接著的字元會解譯為常值字元，而不是控制字元。 這可用來在參數或參數的值中嵌入一般引號 (")、空格、前置斜線、插入號或任何其他常值字元，但參數名稱除外。 例如，套用至物件的
 
 ```
 >Edit.Find ^^t /regex
 ```
 
- 無論插入號位於引號內部或外部，功能都相同。 如果插入號是該程式行的最後一個字元，則會將其忽略。
+無論插入號位於引號內部或外部，功能都相同。 如果插入號是該程式行的最後一個字元，則會將其忽略。
 
- 在當地語系化版本的 IDE 中，您可以使用 IDE 的原生語言或英文輸入命令名稱。 例如，您可以在法文 IDE 中輸入 `File.NewFile` 或 `Fichier.NouveauFichier` 以執行相同的命令。
+在當地語系化版本的 IDE 中，您可以使用 IDE 的原生語言或英文輸入命令名稱。 例如，您可以在法文 IDE 中輸入 `File.NewFile` 或 `Fichier.NouveauFichier` 以執行相同的命令。
 
- 許多命令具有別名。 如需命令別名的清單，請參閱 [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)。
+許多命令具有別名。 如需命令別名的清單，請參閱 [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)。
 
- 下列命令需要引數和/或參數。
+下列命令需要引數和/或參數。
 
-
-| 命令名稱： | 描述 |
+| 命令名稱： | 說明 |
 | - | - |
 | [加入現有項目](../../ide/reference/add-existing-item-command.md) | 將現有檔案新增至目前的方案，並開啟它。 |
 | [加入現有專案](../../ide/reference/add-existing-project-command.md) | 將現有專案新增至目前的方案。 |

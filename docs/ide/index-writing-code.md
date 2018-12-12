@@ -12,12 +12,12 @@ f1_keywords:
 - vs.newproject
 ms.workload:
 - multiple
-ms.openlocfilehash: cb81dacbe4ff128f2e5078147653f4fd6e3c8ae8
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 929ee8c5618c08431c27754327c9466a54a68b85
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44279033"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159373"
 ---
 # <a name="write-and-manage-code-using-visual-studio"></a>使用 Visual Studio 來撰寫和管理程式碼
 
@@ -103,7 +103,7 @@ ms.locfileid: "44279033"
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/common/i_code-samples.svg" alt="" />
+                            <img src="/media/common/i_code-samples.svg" alt="Code samples graphic" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -146,7 +146,7 @@ ms.locfileid: "44279033"
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/media/logos/logo_Csharp.svg" alt="" />
+                            <img src="https://docs.microsoft.com/media/logos/logo_Csharp.svg" alt="C# logo" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -164,7 +164,7 @@ ms.locfileid: "44279033"
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/media/logos/logo_Cplusplus.svg" alt="Get started with C++" />
+                            <img src="https://docs.microsoft.com/media/logos/logo_Cplusplus.svg" alt="C++ logo" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -182,7 +182,7 @@ ms.locfileid: "44279033"
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/media/logos/logo_python.svg" alt="" />
+                            <img src="https://docs.microsoft.com/media/logos/logo_python.svg" alt="Python logo" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -200,7 +200,7 @@ ms.locfileid: "44279033"
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/media/logos/logo_vb.svg" alt="Create Visual Basic console app" />
+                            <img src="https://docs.microsoft.com/media/logos/logo_vb.svg" alt="Visual Basic logo" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -218,7 +218,7 @@ ms.locfileid: "44279033"
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/media/logos/logo_nodejs.svg" alt="Create Node.js web app" />
+                            <img src="https://docs.microsoft.com/media/logos/logo_nodejs.svg" alt="Node.js logo" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -236,7 +236,7 @@ ms.locfileid: "44279033"
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/media/logos/logo_r.svg" alt="Get started with R Tools" />
+                            <img src="https://docs.microsoft.com/media/logos/logo_r.svg" alt="R Tools logo" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -254,7 +254,7 @@ ms.locfileid: "44279033"
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/media/logos/logo_Windows.svg" alt="Create a UWP app with C#" />
+                            <img src="https://docs.microsoft.com/media/logos/logo_Windows.svg" alt="Windows logo" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -272,7 +272,7 @@ ms.locfileid: "44279033"
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/media/logos/logo_NETcore.svg" alt="Create a .NET Core app in C#" />
+                            <img src="https://docs.microsoft.com/media/logos/logo_NETcore.svg" alt=".NET Core logo" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -290,7 +290,7 @@ ms.locfileid: "44279033"
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/media/logos/logo_azure.svg" alt="Create an Azure web app" />
+                            <img src="https://docs.microsoft.com/media/logos/logo_azure.svg" alt="Azure logo" />
                         </div>
                     </div>
                     <div class="cardText">

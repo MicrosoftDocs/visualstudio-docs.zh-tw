@@ -28,7 +28,7 @@ ms.author: mikejo
 manager: wpickett
 ms.openlocfilehash: a08c7cc22129a783e692c437724114b3f44888a3
 ms.sourcegitcommit: 6a955a2d179cd0e137942389f940d9fcbbe125de
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 11/13/2018
 ms.locfileid: "51607779"

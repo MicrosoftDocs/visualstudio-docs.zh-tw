@@ -1,5 +1,6 @@
 ---
 title: 在 Visual Studio 中的 Office 方案的架構
+titleSuffix: ''
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology: office-development
@@ -12,17 +13,17 @@ helpviewer_keywords:
 - Office development in Visual Studio, architecture
 - architecture [Office development in Visual Studio], solutions
 - Office applications [Office development in Visual Studio], architecture
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 86426e9741e38fb2cbd782659878562e395a2cf1
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 0b5916ca091d7479b76c21aff914811d090f6667
+ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50744843"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53247896"
 ---
 # <a name="architecture-of-office-solutions-in-visual-studio"></a>在 Visual Studio 中的 Office 方案的架構
   本節中的主題提供有關使用 Visual Studio 中之 Office Developer Tools 建立方案之運作方式的資訊。  

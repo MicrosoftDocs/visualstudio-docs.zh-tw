@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Studio 中建立單元測試專案
+title: 建立單元測試專案
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: d49748be3067ac2bbb6df9016883cb7be0f48f89
-ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
+ms.openlocfilehash: c217b2956f5bff2f8aa5f44b88033f7f74580d3c
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39586856"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53059044"
 ---
 # <a name="create-a-unit-test-project"></a>建立單元測試專案
 

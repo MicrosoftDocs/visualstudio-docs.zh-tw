@@ -26,12 +26,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ba0ed54e8acd28be3f267d83473f9514f471ef4a
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 518479d92aa9b0ec51c4fda8b7484a03ce45a560
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349305"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159668"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Visual Studio 中的方案和專案
 
@@ -60,7 +60,7 @@ ms.locfileid: "51349305"
 
 Visual Studio 使用兩種檔案類型 (*.sln* 和 *.suo*) 來儲存方案的設定。
 
-|副檔名|名稱|描述|
+|副檔名|名稱|說明|
 |---------------|----------|-----------------|
 |.sln|Visual Studio 方案|將專案、專案項目和方案項目組織到方案中。|
 |.suo|方案使用者選項|儲存使用者層級設定和自訂項目，例如中斷點。|
@@ -79,6 +79,6 @@ Visual Studio 使用兩種檔案類型 (*.sln* 和 *.suo*) 來儲存方案的設
 
 ## <a name="see-also"></a>另請參閱
 
-- [Visual Studio IDE](../ide/visual-studio-ide.md)
+- [Visual Studio IDE](../get-started/visual-studio-ide.md)
 - [專案和方案 (Visual Studio for Mac)](/visualstudio/mac/projects-and-solutions)
 - [新增和移除專案項目 (Visual Studio for Mac)](/visualstudio/mac/add-and-remove-project-items)

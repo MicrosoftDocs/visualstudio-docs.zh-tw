@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Studio 中使用測試設定於測試期間包含螢幕和聲音錄製
+title: 在測試期間錄製螢幕及聲音
 ms.date: 10/03/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: c213d7f7119b2c7310212f61c140177ef7c84c76
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: 1470ab88cb21a7a80fa46f57f944ec5df21d544f
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44321069"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52894409"
 ---
 # <a name="how-to-include-recordings-of-the-screen-and-voice-during-tests-using-test-settings"></a>如何：使用測試設定在測試期間包含螢幕和聲音錄製
 
@@ -25,6 +25,8 @@ ms.locfileid: "44321069"
 > 螢幕和聲音錄製不支援多重監視器組態。
 
 螢幕和聲音錄製器可以搭配手動或自動化測試使用。 例如，如果遠端執行自動程式化 UI 測試，您可能想要錄製桌面來查看自動程式化 UI 測試執行時的情況。 如需如何從遠端擷取螢幕和聲音錄製的詳細資訊，請參閱[如何：將您的測試代理程式設定為執行與桌面互動的測試](../test/how-to-set-up-your-test-agent-to-run-tests-that-interact-with-the-desktop.md)。
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="to-configure-screen-and-voice-recording-for-your-test-settings"></a>若要設定測試設定的螢幕和聲音錄製
 
