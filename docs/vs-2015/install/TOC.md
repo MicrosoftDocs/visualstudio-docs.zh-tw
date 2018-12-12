@@ -12,5 +12,3 @@
 ## [如何：從 Visual Studio 試用版升級](how-to-upgrade-from-a-trial-edition-of-visual-studio.md)
 ## [如何：找出 Visual Studio 產品金鑰](how-to-locate-the-visual-studio-product-key.md)
 ## [Visual Studio 週期原則例外](visual-studio-lifecycle-policy-exceptions.md)
-# [安裝 Visual Studio 2017](install-visual-studio-15-preview-5.md)
-## [修改 Visual Studio 2017](modify-visual-studio-15-preview-5.md)

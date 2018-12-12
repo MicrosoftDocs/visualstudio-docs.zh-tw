@@ -1,5 +1,6 @@
 ---
-title: Visual Studio 版本支援的視覺效果&amp;Modeling SDK
+title: Visualization and Modeling SDK 支援 Visual Studio 版本
+titleSuffix: ''
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,18 +12,20 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 3dce04e4460222bcd0fcf2cebd747d9dd95f14d4
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: 65014d8c697adbf5fb8e13d28708090360bb9c17
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50966748"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53049946"
 ---
-# <a name="supported-visual-studio-editions-for-visualization-amp-modeling-sdk"></a>Visual Studio 版本支援的視覺效果&amp;Modeling SDK
+# <a name="supported-visual-studio-editions-for-visualization--modeling-sdk"></a>支援的 Visual Studio Visualization & Modeling SDK 版本
+
 以下是支援的 Visual Studio 版本的清單[!INCLUDE[dsl](../modeling/includes/dsl_md.md)]編寫和部署環境中。 如需有關這些版本的詳細資訊，請參閱 Microsoft Visual Studio[開發人員中心](http://go.microsoft.com/fwlink/?LinkId=75628)。
 
 ## <a name="authoring-edition"></a>撰寫版本
- 若要定義 DSL，您必須已安裝下列元件：
+
+若要定義 DSL，您必須已安裝下列元件：
 
 |||
 |-|-|
@@ -33,7 +36,8 @@ ms.locfileid: "50966748"
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
 ## <a name="deployment-editions"></a>部署版本
- [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] 支援用於部署您建置之網域指定的語言的下列組態：
+
+[!INCLUDE[dsl](../modeling/includes/dsl_md.md)] 支援用於部署您建置之網域指定的語言的下列組態：
 
 -   Visual Studio 企業版
 
@@ -44,7 +48,7 @@ ms.locfileid: "50966748"
 -   Visual Studio Shell (隔離模式) 可轉散發套件
 
 > [!NOTE]
->  若要讓 DSL 能夠在 Shell 產品上執行，您必須設定**支援的 VS 版本**延伸模組資訊清單中的欄位。 如需詳細資訊，請參閱 <<c0> [ 部署特定領域語言方案](../modeling/deploying-domain-specific-language-solutions.md)。
+> 若要讓 DSL 能夠在 Shell 產品上執行，您必須設定**支援的 VS 版本**延伸模組資訊清單中的欄位。 如需詳細資訊，請參閱 <<c0> [ 部署特定領域語言方案](../modeling/deploying-domain-specific-language-solutions.md)。
 
 ## <a name="see-also"></a>另請參閱
 
