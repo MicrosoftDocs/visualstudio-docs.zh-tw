@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Studio 中為負載測試將計數器新增至計數器集合
+title: 將計數器新增至計數器集合以進行負載測試
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,22 +12,23 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 7174f56febaa912873657291511ef7ba20a4bc4d
-ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
+ms.openlocfilehash: b2a6ba058ba7c09eb66c15cb578fcaaf36d2ced2
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39203634"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52894699"
 ---
 # <a name="how-to-add-counters-to-counter-sets-using-the-load-test-editor"></a>如何：使用負載測試編輯器將計數器新增至計數器集合
 
 當您使用 [負載測試精靈] 建立負載測試時，您會新增初始的計數器集合。 這些都會為您的負載測試提供一組預先定義的計數器集合。 如需詳細資訊，請參閱[在負載測試中指定電腦的計數器集合和臨界值規則](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md)。
 
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
+
 > [!NOTE]
 > 如果您的負載測試已分配給遠端電腦，控制器和代理程式計數器就會對應至控制器和代理程式計數器集合。 如需如何在負載測試中使用遠端電腦的詳細資訊，請參閱[測試控制器和測試代理程式](configure-test-agents-and-controllers-for-load-tests.md)。
 
-
- 請在 [負載測試編輯器] 中管理計數器。 您可以在負載測試的 [計數器集合] 節點中，看到已新增至測試的計數器集合。 當您建立負載測試之後，可以將新的計數器加入至現有的計數器集合。
+請在 [負載測試編輯器] 中管理計數器。 您可以在負載測試的 [計數器集合] 節點中，看到已新增至測試的計數器集合。 當您建立負載測試之後，可以將新的計數器加入至現有的計數器集合。
 
 ## <a name="to-add-counters-to-a-counter-set"></a>將計數器加入至計數器集合
 

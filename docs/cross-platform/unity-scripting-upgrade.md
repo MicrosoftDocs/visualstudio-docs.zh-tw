@@ -1,19 +1,19 @@
 ---
 title: 在 Unity 中使用 .NET 4.x
-author: conceptdev
-ms.author: crdun
+author: therealjohn
+ms.author: johmil
 ms.date: 08/29/2018
 ms.topic: conceptual
 ms.assetid: E2C9420F-A5D5-4472-9020-2B63FB27A133
 ms.technology: vs-unity-tools
 ms.workload:
 - unity
-ms.openlocfilehash: 6346a119d32c9ce822e002704449daca8d9df22a
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: 294f3efe5e541a316a8bb90da07d75e9319e7983
+ms.sourcegitcommit: 5c049194fa256b876ad303f491af11edd505756c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46495605"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53027363"
 ---
 # <a name="using-net-4x-in-unity"></a>在 Unity 中使用 .NET 4.x
 

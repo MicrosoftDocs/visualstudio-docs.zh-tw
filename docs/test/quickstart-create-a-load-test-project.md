@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Studio 中建立 Web 效能和負載測試專案
+title: 建立 Web 效能和負載測試專案
 ms.date: 03/14/2018
 ms.topic: quickstart
 helpviewer_keywords:
@@ -9,19 +9,22 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 515c5d4c1bd09d65ae23d3d1af2f3183607c6b53
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: 30e67768b502228ba8cba5acd813ec829624a822
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44320952"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53057564"
 ---
 # <a name="quickstart-create-a-load-test-project"></a>快速入門：建立負載測試專案
 
 在此 10 分鐘的快速入門中，您將了解如何在 Visual Studio 中建立及執行 Web 效能和負載測試專案。 負載測試可執行 Web 效能或單元測試，以模擬同時存取某部伺服器的多位使用者。
 
-> [!IMPORTANT]
-> 只有 Visual Studio 2017 Enterprise 版中可以使用 Web 效能和負載測試專案。
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
+
+## <a name="software-requirements"></a>軟體需求
+
+只有 Visual Studio Enterprise 版可以使用 Web 效能和負載測試專案。
 
 ## <a name="install-the-load-testing-component"></a>安裝負載測試元件
 

@@ -5,17 +5,17 @@ ms.date: 07/03/2018
 ms.technology: vs-unity-tools
 ms.topic: conceptual
 ms.assetid: 8f5db192-8d78-4627-bd07-dbbc803ac554
-author: conceptdev
-ms.author: crdun
+author: therealjohn
+ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 077754b31b80575c4fbee78d0a2f19f87f82e481
-ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
+ms.openlocfilehash: 1c69c78e9a081680c6ee5279ddce1816bf500672
+ms.sourcegitcommit: 5c049194fa256b876ad303f491af11edd505756c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "51220888"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53027285"
 ---
 # <a name="troubleshooting-and-known-issues-visual-studio-tools-for-unity"></a>疑難排解和已知問題 (Visual Studio Tools for Unity)
 
@@ -25,7 +25,7 @@ ms.locfileid: "51220888"
 
 ### <a name="confirm-editor-attaching-is-enabled"></a>確認已啟用 [編輯器附加]
 
-在 Unity 功能表中，選取 編輯 > 喜好設定，然後選取 外部工具 索引標籤。確認已啟用 編輯器附加 核取方塊。 如需詳細資訊，請參閱 [Unity 喜好設定文件](https://docs.unity3d.com/Manual/Preferences.html)。
+在 Unity 功能表中，選取 編輯 > [喜好設定]，然後選取 [外部工具] 索引標籤。確認已啟用 [編輯器附加] 核取方塊。 如需詳細資訊，請參閱 [Unity 喜好設定文件](https://docs.unity3d.com/Manual/Preferences.html)。
 
 ### <a name="unable-to-attach"></a>無法附加
 

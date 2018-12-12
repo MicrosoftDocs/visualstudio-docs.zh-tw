@@ -16,12 +16,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ae2f0e571876c336d74c295f2cba4a654a713e93
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 539ab866056b97f7054dda1843870dcfdd4379d9
+ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49821422"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53248133"
 ---
 # <a name="create-an-extension-with-a-menu-command"></a>建立具有功能表命令的擴充功能
 本逐步解說示範如何建立擴充功能會啟動 [記事本] 的功能表命令。  
@@ -55,23 +55,15 @@ ms.locfileid: "49821422"
 2.  找到的私用 FirstCommand 建構函式。 這是命令連結至命令服務和命令處理常式會指定位置。 變更命令處理常式的名稱來 StartNotepad，如下所示：  
   
     ```csharp  
-    private FirstCommand(Package package)  
+    private FirstCommand(AsyncPackage package, OleMenuCommandService commandService)  
     {  
-        if (package == null)  
-        {  
-            throw new ArgumentNullException(nameof(package));  
-        }  
-  
-        this.package = package;  
-  
-         OleMenuCommandService commandService = this.ServiceProvider.GetService(typeof(IMenuCommandService)) as OleMenuCommandService;  
-        if (commandService != null)  
-        {  
-            CommandID menuCommandID = new CommandID(CommandSet, CommandId);  
-            // Change to StartNotepad handler.  
-            MenuCommand menuItem = new MenuCommand(this.StartNotepad, menuCommandID);  
-            commandService.AddCommand(menuItem);  
-        }  
+        this.package = package ?? throw new ArgumentNullException(nameof(package));
+        commandService = commandService ?? throw new ArgumentNullException(nameof(commandService));
+
+        CommandID menuCommandID = new CommandID(CommandSet, CommandId);
+        // Change to StartNotepad handler.
+        MenuCommand menuItem = new MenuCommand(this.StartNotepad, menuCommandID);
+        commandService.AddCommand(menuItem);
     }  
     ```  
   
@@ -130,8 +122,8 @@ ms.locfileid: "49821422"
   
 3. 加入工具視窗，並擴充內建的 Visual Studio 工具視窗：[擴充和自訂工具視窗](../extensibility/extending-and-customizing-tool-windows.md)  
   
-4. 加入 IntelliSense、 程式碼的建議，和其他功能，現有的程式碼編輯器：[編輯器和語言服務延伸](../extensibility/extending-the-editor-and-language-services.md)  
+4. 加入現有的程式碼編輯器的 IntelliSense、 程式碼的建議，以及其他功能：[編輯器和語言服務延伸](../extensibility/extending-the-editor-and-language-services.md)  
   
-5. 加入您的延伸模組中的選項和 [屬性] 頁面和使用者設定：[擴充屬性和 [屬性] 視窗](../extensibility/extending-properties-and-the-property-window.md)和[擴充使用者設定和 Ooptions](../extensibility/extending-user-settings-and-options.md)  
+5. 加入您的延伸模組的選項和 [屬性] 頁面和使用者設定：[擴充屬性和屬性視窗](../extensibility/extending-properties-and-the-property-window.md)和[擴充使用者設定和 Ooptions](../extensibility/extending-user-settings-and-options.md)  
   
-   其他類型的延伸模組需要多一點的工作，例如建立新的專案類型 ([擴充專案](../extensibility/extending-projects.md))，建立新類型的編輯器 ([建立自訂編輯器和設計工具](../extensibility/creating-custom-editors-and-designers.md))，或實作您在獨立的 shell 中的延伸模組： [Visual Studio 獨立模式 shell](../extensibility/visual-studio-isolated-shell.md)
+   其他類型的延伸模組需要多一點的工作，例如建立新的專案類型 ([擴充專案](../extensibility/extending-projects.md))，建立新類型的編輯器 ([建立自訂編輯器和設計工具](../extensibility/creating-custom-editors-and-designers.md))，或實作您在獨立的 shell 中的延伸模組：[Visual Studio 獨立模式 shell](../extensibility/visual-studio-isolated-shell.md)

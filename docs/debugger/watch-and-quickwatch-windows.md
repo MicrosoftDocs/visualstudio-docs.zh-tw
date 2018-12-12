@@ -1,6 +1,6 @@
 ---
-title: 在 Visual Studio 中的變數設定監看式 |Microsoft Docs
-ms.custom: H1Hack27Feb2017
+title: 在變數設定監看式 |Microsoft Docs
+ms.custom: seodec18
 ms.date: 10/11/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 944347f6afc371775afca1b58bae77271b60359c
-ms.sourcegitcommit: a811f6a194ccd40d844e74e618d847df87c85c16
+ms.openlocfilehash: 898c79f3985e24f52620f12dc25ad6044d05ac64
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "52621639"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53059479"
 ---
 # <a name="watch-variables-with-watch-windows-and-quickwatch"></a>監看式變數使用監看式視窗和快速監看式 
 

@@ -1,5 +1,6 @@
 ---
 title: Visual Studio 2017 的進階功能
+titleSuffix: ''
 ms.date: 06/01/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -9,16 +10,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 778d52d738af318dd21fa58a115dd053b44fa3a8
-ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
+ms.openlocfilehash: bd351ef1bf6b1e5eee16451e554d6cae94c60127
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48863644"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159395"
 ---
 # <a name="features-of-visual-studio-2017"></a>Visual Studio 2017 的功能
 
-[Visual Studio IDE 概觀](../ide/visual-studio-ide.md)一文提供 Visual Studio 的基本介紹。 本文描述的功能可能更適合資深開發人員或已十分熟悉 Visual Studio 的人員使用。
+[Visual Studio IDE 概觀](../get-started/visual-studio-ide.md)一文提供 Visual Studio 的基本介紹。 本文描述的功能可能更適合資深開發人員或已十分熟悉 Visual Studio 的人員使用。
 
 ## <a name="modular-installation"></a>模組安裝
 
@@ -126,5 +127,5 @@ Team Foundation Server (TFS) 是 Visual Studio 的應用程式生命週期管理
 
 ## <a name="see-also"></a>另請參閱
 
-- [Visual Studio IDE 概觀](../ide/visual-studio-ide.md)
+- [Visual Studio IDE 概觀](../get-started/visual-studio-ide.md)
 - [Visual Studio 2017 的新功能](../ide/whats-new-in-visual-studio.md)

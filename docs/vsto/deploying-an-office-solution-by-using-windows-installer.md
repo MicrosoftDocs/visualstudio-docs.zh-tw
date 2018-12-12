@@ -223,7 +223,7 @@ ms.locfileid: "50673051"
 
 4. 在 [記事本] 中，貼上 GUID 以取代文字 **Your GUID goes here** 。  
 
-   **&lt;properties&gt;** 項目與下列範例類似。  
+    **&lt;properties&gt;** 項目與下列範例類似。  
 
 
    ```xml  

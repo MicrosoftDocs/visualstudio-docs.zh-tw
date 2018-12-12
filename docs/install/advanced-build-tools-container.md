@@ -1,9 +1,9 @@
 ---
 title: 容器的進階範例
 description: ''
-ms.custom: ''
 ms.date: 04/18/2018
 ms.technology: vs-acquisition
+ms.custom: ''
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: e03835db-a616-41e6-b339-92b41d0cfc70
@@ -12,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9b8d779dec88bf912f04dca6d8b736fb5f3e53dd
-ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
+ms.openlocfilehash: e1c79051627bd59ae48b0ad88411a94f4cb36c78
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "43139297"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159811"
 ---
 # <a name="advanced-example-for-containers"></a>容器的進階範例
 

@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Studio 中測試含有多個 UI 對應的大型應用程式
+title: 測試含有多個 UI 對應的大型應用程式
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -12,26 +12,28 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0072d04ed8f31b492e0ee792717b8975478c8c99
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: dfc1cf44cb92ab58b50284f0398178c8f96f2a2e
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49891020"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895128"
 ---
 # <a name="test-a-large-application-with-multiple-ui-maps"></a>測試含有多個 UI 對應的大型應用程式
 
 本主題討論如何使用自動程式化 UI 測試，透過多個 UI 對應來測試大型應用程式。
 
- **需求**
+[!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
+
+**需求**
 
 - Visual Studio 企業版
 
-  當您建立新的自動程式化 UI 測試時，Visual Studio 測試架構預設會在 <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap> 類別中產生測試的程式碼。 如需如何錄製自動程式化 UI 測試的詳細資訊，請參閱[建立自動程式化 UI 測試](../test/use-ui-automation-to-test-your-code.md)和[自動程式化 UI 測試的結構](../test/anatomy-of-a-coded-ui-test.md)。
+當您建立新的自動程式化 UI 測試時，Visual Studio 測試架構預設會在 <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap> 類別中產生測試的程式碼。 如需如何錄製自動程式化 UI 測試的詳細資訊，請參閱[建立自動程式化 UI 測試](../test/use-ui-automation-to-test-your-code.md)和[自動程式化 UI 測試的結構](../test/anatomy-of-a-coded-ui-test.md)。
 
-  為 UI 對應產生的程式碼會針對與測試互動的每個物件各包含一個類別。 針對每個產生的方法，系統會專門為該方法產生方法參數的附屬類別。 如果您的應用程式中有大量物件、頁面、表單和控制項，UI 對應可能會變得非常大。 此外，如果多人處理測試，只有單一大型 UI 對應檔的應用程式會變得不便使用。
+為 UI 對應產生的程式碼會針對與測試互動的每個物件各包含一個類別。 針對每個產生的方法，系統會專門為該方法產生方法參數的附屬類別。 如果您的應用程式中有大量物件、頁面、表單和控制項，UI 對應可能會變得非常大。 此外，如果多人處理測試，只有單一大型 UI 對應檔的應用程式會變得不便使用。
 
-  使用多個 UI 對應檔可提供下列優點：
+使用多個 UI 對應檔可提供下列優點：
 
 - 每個對應可與一個應用程式邏輯子集相關聯。 這樣會更容易管理變更。
 

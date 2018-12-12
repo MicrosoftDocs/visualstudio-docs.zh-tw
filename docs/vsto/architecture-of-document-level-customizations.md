@@ -17,17 +17,17 @@ helpviewer_keywords:
 - document-level customizations [Office development in Visual Studio]
 - AddInLoader.dll
 - architecture [Office development in Visual Studio], document-level customizations
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a0188a54e500f56c9c3d947ec27d53640173837b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4e07c8ae29c773a1f50fedd68376a062e2203570
+ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49912619"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53248266"
 ---
 # <a name="architecture-of-document-level-customizations"></a>文件層級自訂的架構
   [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] 包含的專案可以建立 Microsoft Office Word 和 Microsoft Office Excel 的文件層級自訂。 本主題描述文件層級自訂的下列各方面：  
@@ -81,7 +81,7 @@ ms.locfileid: "49912619"
 |開發人員可以使用 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]撰寫 Word 和 Excel 能夠存取的程式碼。<br /><br /> 雖然看起來好像是開發人員要建立執行 Word 或 Excel 的可執行檔，但實際上是完全相反的程序。 文件會與一個組件相關聯，並且含有指向該組件的指標。 當文件開啟時，Word 或 Excel 會尋找這個組件並執行程式碼，以回應所有已處理的事件。|使用方案的任何人只要開啟文件或活頁簿 (或者從範本建立新文件)，就像開啟其他任何 Microsoft Office 檔案一樣。<br /><br /> 該組件會提供文件或活頁簿中的自訂，例如以目前的資料自動填入，或顯示要求資訊的對話方塊。|  
   
 ### <a name="supported-document-formats-for-document-level-customizations"></a>支援文件層級自訂的文件格式  
- 當您建立自訂專案時，您可以選擇要在專案中使用的文件格式。 如需詳細資訊，請參閱 <<c0> [ 如何： 在 Visual Studio 中的建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
+ 當您建立自訂專案時，您可以選擇要在專案中使用的文件格式。 如需詳細資訊，請參閱[＜How to：在 Visual Studio 中建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
   
  下表列出您可以在 Excel 和 Word 的文件層級自訂中使用的文件格式。  
   
@@ -142,7 +142,7 @@ ms.locfileid: "49912619"
   
 8.  [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 會將自訂組件載入至此應用程式定義域中。  
   
-9. [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 呼叫自訂組件中的 **Startup** 事件處理常式。 如需詳細資訊，請參閱[Office 專案中的事件](../vsto/events-in-office-projects.md)  
+9.  [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 呼叫自訂組件中的 **Startup** 事件處理常式。 如需詳細資訊，請參閱[Office 專案中的事件](../vsto/events-in-office-projects.md)  
   
 ## <a name="see-also"></a>另請參閱  
  [在 Visual Studio 中的 Office 方案的架構](../vsto/architecture-of-office-solutions-in-visual-studio.md)   

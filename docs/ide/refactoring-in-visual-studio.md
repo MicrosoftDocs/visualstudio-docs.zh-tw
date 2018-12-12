@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Studio 中重構程式碼 | Microsoft Docs
+title: 重構
 ms.date: 01/10/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dd99aba0855a3136d8992739ae00e242a5f54658
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 3275e03139b9befff0ec0e1f817bc8b54532bb72
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51348952"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159428"
 ---
 # <a name="refactor-code"></a>重構程式碼
 
@@ -29,7 +29,7 @@ ms.locfileid: "51348952"
 ## <a name="see-also"></a>另請參閱
 
 - [快速動作](../ide/quick-actions.md)
-- [Visual Studio IDE](../ide/visual-studio-ide.md)
+- [Visual Studio IDE](../get-started/visual-studio-ide.md)
 - [程式碼編輯器的功能](../ide/writing-code-in-the-code-and-text-editor.md)
 - [預覽變更](../ide/preview-changes.md)
 - [重構 (Visual Studio for Mac)](/visualstudio/mac/refactoring)

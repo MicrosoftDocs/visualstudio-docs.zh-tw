@@ -1,5 +1,5 @@
 ---
-title: Visual Studio 中負載測試的測試控制器和測試代理程式需求
+title: 負載測試的 Test Controller 和 Test Agent 需求
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: ceb3ecde3941a12b7113ede04b5f7dda841c7816
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 8a5cc1f58e0cbdb59458311a1b9a4390bf69bbff
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52894725"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53051444"
 ---
 # <a name="test-controller-and-test-agent-requirements-for-load-testing"></a>負載測試的測試控制器和測試代理程式需求
 

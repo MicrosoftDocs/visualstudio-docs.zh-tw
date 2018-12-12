@@ -21,7 +21,7 @@ ms.author: gregvanl
 manager: ghogen
 ms.openlocfilehash: a1dbf79cc90f1f0ab0a7ff982fcabfa8d52150d3
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51760147"

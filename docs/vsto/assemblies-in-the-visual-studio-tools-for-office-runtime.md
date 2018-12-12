@@ -1,5 +1,6 @@
 ---
 title: 在 Visual Studio Tools for Office runtime 的組件
+titleSuffix: ''
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology: office-development
@@ -10,17 +11,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - Visual Studio Tools for Office runtime, assemblies
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 550963966b45ed2d8024b36735f17ff24b6701fc
-ms.sourcegitcommit: 12d6398c02e818de4fbcb4371bae9e5db6cf9509
+ms.openlocfilehash: 66ee95d4f102ac4206a9ed55a1fc97fc251c4f9c
+ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50050205"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53248107"
 ---
 # <a name="assemblies-in-the-visual-studio-tools-for-office-runtime"></a>在 Visual Studio Tools for Office runtime 的組件
   當您建立 Office 專案時，Visual Studio 會自動針對專案類型和專案的目標 .NET Framework，加入適用 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 組件的參考。 適用於 .NET Framework 3.5、 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]和 [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]的 Office 擴充功能包含不同的組件。 如需 Office 擴充功能的詳細資訊，請參閱[Visual Studio Tools for Office runtime 概觀](../vsto/visual-studio-tools-for-office-runtime-overview.md)。  
@@ -30,7 +31,7 @@ ms.locfileid: "50050205"
   
 |組件名稱|描述|  
 |-------------------|-----------------|  
-|Microsoft.Office.Tools.Common.dll|提供下列類型：<br /><br /> -用於建立功能區自訂和智慧標籤型別。 **注意︰** 中已被取代的智慧標籤[!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)]和[!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)]。<br />-建立執行窗格中的文件層級自訂和自訂工作窗格在 VSTO 增益集的型別。|  
+|Microsoft.Office.Tools.Common.dll|提供下列類型：<br /><br /> -用於建立功能區自訂和智慧標籤型別。 **注意：**    智慧標籤在 [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)] 和 [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)]中已被取代。<br />-建立執行窗格中的文件層級自訂和自訂工作窗格在 VSTO 增益集的型別。|  
 |Microsoft.Office.Tools.Excel.dll|提供代表 Excel 專案之主項目和主控制項的介面，以及支援類型。 如需詳細資訊，請參閱 <<c0> [ 使用擴充的物件自動化 Excel](../vsto/automating-excel-by-using-extended-objects.md)。|  
 |Microsoft.Office.Tools.Outlook.dll|提供可讓您在 Outlook VSTO 增益集中建立自訂表單區域的類型。|  
 |Microsoft.Office.Tools.Word.dll|提供代表 Word 專案之主項目和主控制項的介面，以及支援類型。 如需詳細資訊，請參閱 <<c0> [ 使用擴充的物件自動化 Word](../vsto/automating-word-by-using-extended-objects.md)。|  
@@ -53,7 +54,7 @@ ms.locfileid: "50050205"
   
 |組件名稱|描述|  
 |-------------------|-----------------|  
-|Microsoft.Office.Tools.Common.v9.0.dll|提供下列類型：<br /><br /> VSTO 增益集-Microsoft.Office.Tools.AddIn 基底類別。<br />-用於建立功能區自訂和智慧標籤的類別。 **注意︰** 中已被取代的智慧標籤[!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)]和[!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)]。<br />-用於在文件層級自訂和 VSTO 增益集的自訂工作窗格中建立執行窗格的類別。|  
+|Microsoft.Office.Tools.Common.v9.0.dll|提供下列類型：<br /><br /> VSTO 增益集-Microsoft.Office.Tools.AddIn 基底類別。<br />-用於建立功能區自訂和智慧標籤的類別。 **注意：**    智慧標籤在 [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)] 和 [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)]中已被取代。<br />-用於在文件層級自訂和 VSTO 增益集的自訂工作窗格中建立執行窗格的類別。|  
 |Microsoft.Office.Tools.Excel.v9.0.dll|提供 Excel 方案的主項目和主控制項。 如需詳細資訊，請參閱 <<c0> [ 使用擴充的物件自動化 Excel](../vsto/automating-excel-by-using-extended-objects.md)。|  
 |Microsoft.Office.Tools.Outlook.v9.0.dll|提供可讓您在 Outlook VSTO 增益集中建立自訂表單區域的類別。|  
 |Microsoft.Office.Tools.Word.v9.0.dll|提供 Word 方案的主項目和主控制項。 如需詳細資訊，請參閱 <<c0> [ 使用擴充的物件自動化 Word](../vsto/automating-word-by-using-extended-objects.md)。|  

@@ -15,17 +15,17 @@ helpviewer_keywords:
 - add-ins [Office development in Visual Studio], calling code from other solutions
 - interoperability [Office development in Visual Studio]
 - calling code from VBA
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7849f0df8f7e2f29c34b129dbf8e684424711b44
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9290fcdd705f6f38b4b7e91e46d5b635f1e309ff
+ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49904644"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53248094"
 ---
 # <a name="call-code-in-vsto-add-ins-from-other-office-solutions"></a>從其他 Office 方案呼叫 VSTO 增益集的程式碼
   您可以將 VSTO 增益集中的物件公開給其他方案 (包括其他 Microsoft Office 方案)。 如果您想要讓其他方案也能使用 VSTO 增益集提供的服務，這就很有用。 比方說，如果您的 VSTO 增益集從 Web 服務的財務資料執行計算的 Microsoft Office Excel，其他方案可以藉由呼叫 Excel VSTO 增益集在執行階段執行這些計算。  
@@ -77,7 +77,7 @@ ms.locfileid: "49904644"
   
    -   在您定義介面的專案中設定 [註冊 COM Interop]  屬性。 時，您想要讓用戶端使用早期繫結來呼叫 VSTO 增益集時，才需要此屬性。  
   
-   下列程式碼範例示範 `AddInUtilities` 類別，該類別具有其他方案可以呼叫的 `ImportData` 方法。 若要查看較大的逐步解說的內容中此程式碼，請參閱[逐步解說： 在 VSTO 增益集中呼叫程式碼，從 VBA](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md)。  
+   下列程式碼範例示範 `AddInUtilities` 類別，該類別具有其他方案可以呼叫的 `ImportData` 方法。 若要查看較大的逐步解說的內容中此程式碼，請參閱[逐步解說：在 VSTO 增益集中呼叫程式碼，從 VBA](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md)。  
   
    [!code-csharp[Trin_AddInInteropWalkthrough #3](../vsto/codesnippet/CSharp/Trin_AddInInteropWalkthrough/AddInUtilities.cs#3)]
    [!code-vb[Trin_AddInInteropWalkthrough#3](../vsto/codesnippet/VisualBasic/Trin_AddInInteropWalkthrough/AddInUtilities.vb#3)]  
@@ -95,7 +95,7 @@ ms.locfileid: "49904644"
  如需在 Office 方案中使用執行緒的詳細資訊，請參閱[Office 中的執行緒支援](../vsto/threading-support-in-office.md)。  
   
 ### <a name="override-the-requestcomaddinautomationservice-method"></a>覆寫 RequestComAddInAutomationService 方法  
- 下列程式碼範例示範如何在您的 VSTO 增益集中覆寫 <xref:Microsoft.Office.Tools.AddInBase.RequestComAddInAutomationService%2A> 類別中的 `ThisAddIn` 。 此範例假設您已定義類別，名為`AddInUtilities`您想要公開給其他方案。 若要查看較大的逐步解說的內容中此程式碼，請參閱[逐步解說： 在 VSTO 增益集中呼叫程式碼，從 VBA](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md)。  
+ 下列程式碼範例示範如何在您的 VSTO 增益集中覆寫 <xref:Microsoft.Office.Tools.AddInBase.RequestComAddInAutomationService%2A> 類別中的 `ThisAddIn` 。 此範例假設您已定義類別，名為`AddInUtilities`您想要公開給其他方案。 若要查看較大的逐步解說的內容中此程式碼，請參閱[逐步解說：在 VSTO 增益集中呼叫程式碼，從 VBA](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md)。  
   
  [!code-csharp[Trin_AddInInteropWalkthrough#1](../vsto/codesnippet/CSharp/Trin_AddInInteropWalkthrough/ThisAddIn.cs#1)]
  [!code-vb[Trin_AddInInteropWalkthrough#1](../vsto/codesnippet/VisualBasic/Trin_AddInInteropWalkthrough/ThisAddIn.vb#1)]  
@@ -114,7 +114,7 @@ ms.locfileid: "49904644"
    您使用 COMAddIn.Object 屬性的傳回值的方式是不同的 VBA 用戶端和非 VBA 用戶端。 對於跨處理序用戶端，還需要其他程式碼才能避免可能的競爭情形。  
   
 ### <a name="access-objects-from-vba-solutions"></a>從 VBA 方案存取物件  
- 下列程式碼範例示範如何使用 VBA 呼叫 VSTO 增益集所公開的方法。 這個 VBA 巨集會呼叫名為方法`ImportData`定義中的 VSTO 增益集，稱為**ExcelImportData**。 若要查看較大的逐步解說的內容中此程式碼，請參閱[逐步解說： 在 VSTO 增益集中呼叫程式碼，從 VBA](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md)。  
+ 下列程式碼範例示範如何使用 VBA 呼叫 VSTO 增益集所公開的方法。 這個 VBA 巨集會呼叫名為方法`ImportData`定義中的 VSTO 增益集，稱為**ExcelImportData**。 若要查看較大的逐步解說的內容中此程式碼，請參閱[逐步解說：在 VSTO 增益集中呼叫程式碼，從 VBA](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md)。  
   
 ```vb
 Sub CallVSTOMethod()  
@@ -147,9 +147,9 @@ utilities.ImportData();
   
 ## <a name="see-also"></a>另請參閱  
  [程式 VSTO 增益集](../vsto/programming-vsto-add-ins.md)   
- [逐步解說： 從 VBA 在 VSTO 增益集中呼叫程式碼](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md)   
+ [逐步解說：從 VBA 呼叫 VSTO 增益集中的程式碼](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md)   
  [開發 Office 方案](../vsto/developing-office-solutions.md)   
- [如何： 在 Visual Studio 中建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)   
+ [如何：在 Visual Studio 中建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)   
  [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md)   
  [使用擴充性介面自訂 UI 功能](../vsto/customizing-ui-features-by-using-extensibility-interfaces.md)  
   
