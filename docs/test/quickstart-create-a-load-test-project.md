@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Studio 中建立 Web 效能和負載測試專案
+title: 建立 Web 效能和負載測試專案
 ms.date: 03/14/2018
 ms.topic: quickstart
 helpviewer_keywords:
@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: f2e0f06eddee4acd500e6bf4a8094dde4efc0d14
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 30e67768b502228ba8cba5acd813ec829624a822
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52896285"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53057564"
 ---
 # <a name="quickstart-create-a-load-test-project"></a>快速入門：建立負載測試專案
 

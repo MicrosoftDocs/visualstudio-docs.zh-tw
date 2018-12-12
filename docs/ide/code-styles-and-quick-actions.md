@@ -1,5 +1,5 @@
 ---
-title: Visual Studio 程式碼樣式喜好設定
+title: 程式碼樣式喜好設定
 ms.date: 03/10/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -12,12 +12,12 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.Basic.Code_Style.General
 ms.workload:
 - multiple
-ms.openlocfilehash: df3fbccff1bd76954b153c4c3159e1d65527e90b
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 718110b3339628052d8a4a2e3ebbcdd163707a97
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349285"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53065257"
 ---
 # <a name="code-style-preferences"></a>程式碼樣式喜好設定
 

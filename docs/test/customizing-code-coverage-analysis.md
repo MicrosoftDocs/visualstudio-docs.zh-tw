@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Studio 中自訂程式碼涵蓋範圍分析
+title: 自訂程式碼涵蓋範圍分析
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 52e2465a1e0a25e852073dc39a8aee18a6b47d7e
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 09af57ca64524dafa506d57d486e9385a4c35a93
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295343"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53054932"
 ---
 # <a name="customize-code-coverage-analysis"></a>自訂程式碼涵蓋範圍分析
 
@@ -61,7 +61,7 @@ ms.locfileid: "51295343"
 
 ### <a name="exclude-and-include"></a>排除和包含
 
-您可以在程式碼涵蓋範圍分析中排除指定的組件。 例如: 
+您可以在程式碼涵蓋範圍分析中排除指定的組件。 例如：
 
 ```xml
 <ModulePaths>
@@ -137,7 +137,7 @@ ms.locfileid: "51295343"
 
 - **Attribute** - 比對附加特定屬性的項目。 指定屬性的完整名稱，並在名稱結尾包括 "Attribute"。
 
-- **Function** - 依完整名稱比對程序、函式或方法。 若要比對函式名稱，規則運算式必須符合函式的完整名稱，包括命名空間、類別名稱、方法名稱和參數清單。 例如: 
+- **Function** - 依完整名稱比對程序、函式或方法。 若要比對函式名稱，規則運算式必須符合函式的完整名稱，包括命名空間、類別名稱、方法名稱和參數清單。 例如：
 
    ```csharp
    Fabrikam.Math.LocalMath.SquareRoot(double);

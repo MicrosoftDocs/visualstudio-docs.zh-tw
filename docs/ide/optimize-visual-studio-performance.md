@@ -1,5 +1,6 @@
 ---
 title: Visual Studio 變慢時改善效能
+titleSuffix: ''
 ms.date: 04/11/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +14,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d67ef259309750e115be0065a6eb2024e4cf1c8
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: f5fe9324360a01700024e14e6c70755d61aa3e60
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36280347"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53065771"
 ---
 # <a name="optimize-visual-studio-performance"></a>最佳化 Visual Studio 效能
 

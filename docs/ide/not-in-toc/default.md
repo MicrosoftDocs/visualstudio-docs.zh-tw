@@ -11,12 +11,12 @@ author: gewarren
 ms.author: gewarren
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
-ms.openlocfilehash: c80ee0791c1c073c82681e59e124c5c45b378a07
-ms.sourcegitcommit: e2373d40ca9829cee63519152a97172763471e21
+ms.openlocfilehash: 5c87831c468ce105bccaaad26e826aae6f0b46bc
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "34335703"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53160045"
 ---
 # <a name="f1-help"></a>F1 說明
 
@@ -28,7 +28,7 @@ ms.locfileid: "34335703"
 
 ## <a name="useful-links"></a>實用連結
 
-- 如需 Visual Studio 的一般資訊，請參閱 [Visual Studio 概觀](../../ide/visual-studio-ide.md)。
+- 如需 Visual Studio 的一般資訊，請參閱 [Visual Studio 概觀](../../get-started/visual-studio-ide.md)。
 - 如需 Visual Studio 文字編輯器的說明，請參閱[使用程式碼編輯器](../../ide/writing-code-in-the-code-and-text-editor.md)。
 - 如需 C# 的說明，請參閱 [C# 指南](/dotnet/csharp/index)。
 - 如需 Visual Basic 的說明，請參閱 [Visual Basic 指南](/dotnet/visual-basic/)。

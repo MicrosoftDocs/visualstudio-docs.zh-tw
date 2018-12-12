@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Studio 中使用 Microsoft Fakes 在測試期間隔離程式碼
+title: 使用 Microsoft Fakes 在測試期間隔離程式碼
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -12,12 +12,12 @@ author: gewarren
 dev_langs:
 - VB
 - CSharp
-ms.openlocfilehash: 2cba207c3d1ef202082c5a10905273eb07910b28
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0ca26ca155f14ada97e432aea044166fbe32eee7
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49823811"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53067151"
 ---
 # <a name="isolate-code-under-test-with-microsoft-fakes"></a>使用 Microsoft Fakes 隔離測試中的程式碼
 

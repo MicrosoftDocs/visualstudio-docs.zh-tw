@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Studio 中為 Web 效能測試撰寫自訂擷取規則程式碼
+title: 為 Web 效能測試撰寫自訂擷取規則程式碼
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 9452df28719dc86e9b43b7f8770787b846c04669
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 41e9a025db4ec9c8425e0de6ba4ecad25f775d50
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895362"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53066674"
 ---
 # <a name="code-a-custom-extraction-rule-for-a-web-performance-test"></a>為 Web 效能測試撰寫自訂擷取規則程式碼
 

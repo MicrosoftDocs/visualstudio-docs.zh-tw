@@ -11,12 +11,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e947ec99ff0d63f413e00f5602035a7baa0bd708
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: c7568583ac9239e168760000f0712ca7dcc4c33f
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51348329"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159850"
 ---
 # <a name="sign-in-to-visual-studio"></a>登入 Visual Studio
 
@@ -70,6 +70,6 @@ ms.locfileid: "51348329"
 ## <a name="see-also"></a>另請參閱
 
 * [如何解除鎖定 Visual Studio](../ide/how-to-unlock-visual-studio.md)
-* [Visual Studio IDE 概觀](../ide/visual-studio-ide.md)
+* [Visual Studio IDE 概觀](../get-started/visual-studio-ide.md)
 * [登入 (Visual Studio for Mac)](/visualstudio/mac/signing-in)
 * [啟用 (Visual Studio for Mac)](/visualstudio/mac/activation)

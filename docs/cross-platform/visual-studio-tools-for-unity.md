@@ -5,17 +5,17 @@ ms.date: 07/03/2018
 ms.technology: vs-unity-tools
 ms.topic: conceptual
 ms.assetid: 6cabc626-5310-4622-a743-210a9abb5535
-author: conceptdev
-ms.author: crdun
+author: therealjohn
+ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: a4e3dc416a406976403dceb0568cea5b8cbfd56e
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: fa0884f024c51c76c6ed5e5d748c65e767b70d9d
+ms.sourcegitcommit: 5c049194fa256b876ad303f491af11edd505756c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48880524"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53027467"
 ---
 # <a name="visual-studio-tools-for-unity"></a>Visual Studio Tools for Unity
 
