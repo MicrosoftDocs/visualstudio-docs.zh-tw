@@ -24,17 +24,17 @@ helpviewer_keywords:
 - Office projects [Office development in Visual Studio], building
 - application development [Office development in Visual Studio], debugging
 - Office solutions [Office development in Visual Studio], debugging
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4d69322360a83a6d615efcaf8de077de80e64398
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 989014bb512ec77af908d823390b1e95b9a7872c
+ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49847574"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53248227"
 ---
 # <a name="build-office-solutions"></a>建置 Office 方案
   一般而言，建置和偵錯 Office 專案，和在 Visual Studio 中建置和偵錯其他類型的專案是相同的，例如 Windows Forms。 本節主題會說明兩者之間的差異。 如需如何建置應用程式的一般資訊，請參閱[編譯，並在 Visual Studio 建置](/visualstudio/ide/compiling-and-building-in-visual-studio)。  
@@ -100,7 +100,7 @@ ms.locfileid: "49847574"
 ## <a name="change-the-platform-target"></a>變更平台目標  
  Office 專案的平台目標預設是 **任何 CPU**。 通常不應該變更這項設定。 使用平台目標設定為 **任何 CPU** 所建置的 Office 解決方案，可在 32 位元和 64 位元版本的 Microsoft [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] 或 [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)]中執行。  
   
- 只有建立只能在 64 位元版本的 Microsoft [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] 或 [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)]中執行的解決方案時，才將平台目標設定為 x64，而這種解決方案需要原生的 64 位元應用程式開發介面。 如需變更平台目標設定的詳細資訊，請參閱 <<c0> [ 如何： 將專案設定到目標平台](../ide/how-to-configure-projects-to-target-platforms.md)。  
+ 只有建立只能在 64 位元版本的 Microsoft [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] 或 [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)]中執行的解決方案時，才將平台目標設定為 x64，而這種解決方案需要原生的 64 位元應用程式開發介面。 如需變更平台目標設定的詳細資訊，請參閱[How to:專案設定為目標平台](../ide/how-to-configure-projects-to-target-platforms.md)。  
   
  如果平台目標設定為 x64，解決方案就不能在 32 位元版本的 Windows 或 Office 中執行。 X64 平台目標需要解決方案在 64 位元處理序中執行。  
   
@@ -112,8 +112,8 @@ ms.locfileid: "49847574"
 |標題|描述|  
 |-----------|-----------------|  
 |[偵錯 Office 專案](../vsto/debugging-office-projects.md)|列出偵錯 Office 專案的相關問題。|  
-|[逐步解說： 建立您第一個適用於 Excel 的文件層級自訂](../vsto/walkthrough-creating-your-first-document-level-customization-for-excel.md)|示範如何建立 Excel 的基本文件層級自訂。|  
-|[如何： 重新啟用 VSTO 增益集已停用](../vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled.md)|描述如何重新啟用 VSTO 增益集已強制或非強制停用。|  
+|[逐步解說：建立您第一個適用於 Excel 的文件層級自訂](../vsto/walkthrough-creating-your-first-document-level-customization-for-excel.md)|示範如何建立 Excel 的基本文件層級自訂。|  
+|[如何：重新啟用 VSTO 增益集已停用](../vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled.md)|描述如何重新啟用 VSTO 增益集已強制或非強制停用。|  
 |[設計和建立 Office 方案](../vsto/designing-and-creating-office-solutions.md)|提供建立 Office 解決方案以及解決方案之組件角色相關資訊的連結。|  
   
   
