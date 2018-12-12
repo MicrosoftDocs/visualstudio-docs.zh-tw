@@ -1,5 +1,5 @@
 ---
-title: Modeling SDK for Visual Studio 的 API 參考
+title: Modeling SDK 的 API 參考
 ms.date: 11/04/2016
 ms.topic: reference
 author: gewarren
@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 21da4ff34c26d28944af5edcb14e40b2db0d94d7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d2176e18678685cc1dbc69f8c33b5aee7e426d57
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49896962"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53061717"
 ---
 # <a name="api-reference-for-modeling-sdk-for-visual-studio"></a>Modeling SDK for Visual Studio 的 API 參考
 

@@ -1,5 +1,5 @@
 ---
-title: 使用 TextTransform 公用程式，在 Visual Studio 中產生檔案
+title: 使用 TextTransform 公用程式產生檔案
 ms.date: 03/22/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 6572ef97027466fa97c254664327f2f77b4ea7f2
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: 554ed126aa46b15148b902b901d8e9b664e3cdbd
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50967073"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062292"
 ---
 # <a name="generate-files-with-the-texttransform-utility"></a>產生使用 TextTransform 公用程式的檔案
 
