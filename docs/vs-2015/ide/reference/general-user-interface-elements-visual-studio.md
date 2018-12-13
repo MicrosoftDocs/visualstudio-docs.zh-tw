@@ -1,5 +1,5 @@
 ---
-title: 一般使用者介面項目 (Visual Studio) | Microsoft Docs
+title: 一般使用者介面項目 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -14,12 +14,12 @@ caps.latest.revision: 40
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5d197f0272bfad8769477cf1cb8ee21110b816ad
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+ms.openlocfilehash: f2559cc618b006213fd5aa1f8fe66ecdce9d9f84
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49214639"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53054433"
 ---
 # <a name="general-user-interface-elements-visual-studio"></a>一般使用者介面項目 (Visual Studio)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -50,11 +50,11 @@ ms.locfileid: "49214639"
 
  [選項、 文字編輯器、 C/c + +、 進階](../../ide/reference/options-text-editor-c-cpp-advanced.md)可讓您指定 C 或 c + + 檔案的進階的選項。
 
- [選項、 文字編輯器、 C#、 格式](../../ide/reference/options-text-editor-csharp-formatting.md)可讓您指定 C# 檔案的格式化選項。
+ [選項、 文字編輯器 中， C#、 格式化](../../ide/reference/options-text-editor-csharp-formatting.md)可讓您指定的格式化選項C#檔案。
 
- [選項、 文字編輯器、 C# 中，進階](../../ide/reference/options-text-editor-csharp-advanced.md)可讓您指定 C# 檔案的進階的選項。
+ [選項、 文字編輯器 中，C#的進階](../../ide/reference/options-text-editor-csharp-advanced.md)可讓您指定進階的選項C#檔案。
 
- [選項、 文字編輯器、 C# 中，IntelliSense](../../ide/reference/options-text-editor-csharp-intellisense.md)可讓您指定 C# 檔案的 IntelliSense 選項。
+ [選項、 文字編輯器 中， C#，IntelliSense](../../ide/reference/options-text-editor-csharp-intellisense.md)可讓您指定的 IntelliSense 選項C#檔案。
 
  [選項、 文字編輯器、 XAML，格式化](../../ide/reference/options-text-editor-xaml-formatting.md)可讓您指定的 XAML 檔案的格式化選項。
 

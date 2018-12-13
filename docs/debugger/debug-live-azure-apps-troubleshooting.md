@@ -1,5 +1,6 @@
 ---
-title: 疑難排解和已知問題的快照集偵錯 |Microsoft Docs
+title: 疑難排解 快照集偵錯 |Microsoft Docs
+ms.custom: seodec18
 ms.date: 11/07/2017
 ms.technology: vs-ide-debug
 ms.topic: troubleshooting
@@ -11,18 +12,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d5b5eeefe2bbed542ef18689fd7e16073174bd3
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
-ms.translationtype: MT
+ms.openlocfilehash: 82d8a310b86d5dc3c776243293a91f176025f897
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44284103"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53059823"
 ---
 # <a name="troubleshooting-and-known-issues-for-snapshot-debugging-in-visual-studio"></a>針對快照集偵錯在 Visual Studio 中的疑難排解和已知問題
 
 如果這篇文章中所述的步驟無法解決您的問題，請連絡snaphelp@microsoft.com。
 
-## <a name="issue-snappoint-does-not-turn-on"></a>問題︰ 貼齊點不會開啟
+## <a name="issue-snappoint-does-not-turn-on"></a>問題：貼齊點不會開啟
 
 如果您看到警告圖示![貼齊點警告圖示](../debugger/media/snapshot-troubleshooting-snappoint-warning-icon.png "貼齊點警告圖示")與您貼齊點而不是一般的貼齊點圖示，然後貼齊點未開啟。
 
@@ -32,7 +33,7 @@ ms.locfileid: "44284103"
 
 1. 請確定您有相同版本的原始碼，用來建置及部署您 app.isua1。 請確定您正在載入正確的符號，為您的部署。 若要這樣做，請檢視**模組**視窗在快照集偵錯時，並確認已載入模組進行偵錯的符號檔的資料行顯示的.pdb 檔案。 快照集偵錯工具會嘗試自動下載，並為您的部署使用的符號。
 
-## <a name="issue-symbols-do-not-load-when-i-open-a-snapshot"></a>問題： 符號時，未載入我開啟快照集
+## <a name="issue-symbols-do-not-load-when-i-open-a-snapshot"></a>問題：開啟 快照集時，未載入符號
 
 如果您看到下列視窗中，未載入符號。
 
@@ -48,14 +49,14 @@ ms.locfileid: "44284103"
 
 - 或者，如果您的組織使用符號伺服器，或是卸除另一個路徑中的符號，請使用符號設定載入正確的符號，為您的部署。
 
-## <a name="issue-i-cannot-see-the-attach-snapshot-debugger-option-in-the-cloud-explorer"></a>問題： 我看不到 [雲端總管] 中的 「 附加快照偵錯工具 」 選項
+## <a name="issue-i-cannot-see-the-attach-snapshot-debugger-option-in-the-cloud-explorer"></a>問題：我看不到 [雲端總管] 中的 「 附加快照偵錯工具 」 選項
 
 執行下列步驟：
 
 - 請確定已安裝的快照集偵錯工具元件。 開啟 Visual Studio 安裝程式，並檢查**快照集偵錯工具**Azure 工作負載的元件。
 - 請確定您的應用程式支援。 目前，只有 ASP.NET (4.6.1+) 並支援 ASP.NET Core （2.0 +） 應用程式部署至 Azure App Service。
 
-## <a name="issue-i-only-see-throttled-snapshots-in-the-diagnostic-tools"></a>問題： 我只會看到節流診斷工具中的快照集
+## <a name="issue-i-only-see-throttled-snapshots-in-the-diagnostic-tools"></a>問題：我只會看到節流診斷工具中的快照集
 
 ![節流的貼齊點](../debugger/media/snapshot-troubleshooting-throttled-snapshots.png "節流的貼齊點")
 

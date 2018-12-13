@@ -1,6 +1,6 @@
 ---
-title: 逐步解說： 偵錯 Web Form |Microsoft Docs
-ms.custom: ''
+title: 偵錯 Web Form |Microsoft Docs
+ms.custom: seodec18
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 67eba0d7a439583d8486f8937693a63e65dca0d6
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: d28ebc797715614aefaf7206f170157d4f4485f2
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389600"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53055150"
 ---
 # <a name="walkthrough-debugging-a-web-form"></a>逐步解說：偵錯 Web Form
 這個逐步解說中的步驟將示範如何偵錯 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web 應用程式 (也稱為 Web Form)。 會向您示範如何啟動及停止執行、設定中斷點，以及在 [監看式] 視窗中檢查變數。
@@ -69,7 +69,7 @@ ms.locfileid: "52389600"
 
 11. 在您所放置的 Button 控制項上按兩下。
 
-     這會帶您前往字碼頁：Default.aspx.cs (C#) 或 Default.aspx.vb ([!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)])。 資料指標 (Cursor) 應該在 `Button1_Click` 函式中。
+     這會帶您前往字碼頁：Default.aspx.cs，如C#） 或 Default.aspx.vb ( [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]。 資料指標 (Cursor) 應該在 `Button1_Click` 函式中。
 
 12. 在 `Button1_Click` 函式中，加入下列程式碼：
 
