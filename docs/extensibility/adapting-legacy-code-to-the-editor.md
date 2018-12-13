@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2b7e7052ab2d92e7518a57ad5587c29eabf550f3
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: e04ae5484b6c1fd5bcc56154c6cec23334e7ef8d
+ms.sourcegitcommit: 8cdc6e2ad2341f34bd6b02859a7c975daa0c9320
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39078596"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53307787"
 ---
 # <a name="adapt-legacy-code-to-the-editor"></a>調整傳統的程式碼編輯器
 Visual Studio 編輯器中有許多功能，您可以從現有的程式碼元件存取。 下列指示說明如何調整非 MEF 元件，例如，VSPackage，使用編輯器功能。 指示也會說明如何使用配接器在 managed 和 unmanaged 程式碼中取得編輯器的服務。  
@@ -97,7 +97,7 @@ VsLocalCreateInstance(CLSID_VsTextBuffer, NULL, CLSCTX_INPROC_SERVER, IID_IVsTex
   
 ### <a name="to-get-an-ivxtextbuffer"></a>若要取得 IVxTextBuffer  
   
-1.  IVx * 介面的定義位於*VSEditor.h*中的檔案*\..\VisualStudioIntegration\Common\Inc\\* Visual Studio SDK 安裝資料夾。  
+1.  定義 IVx\*介面位於*VSEditor.h*檔案中*\..\VisualStudioIntegration\Common\Inc\\* Visual studio 的資料夾SDK 安裝。  
   
 2.  下列程式碼會具現化的文字緩衝區使用`IVsUserData->GetData()`方法。 下列程式碼中，`pData`是一個指向`IVsUserData`物件。  
   
