@@ -1,6 +1,6 @@
 ---
-title: 如何： 指定偵錯.NET Framework 版本 |Microsoft Docs
-ms.custom: ''
+title: 指定偵錯的.NET Framework 版本 |Microsoft Docs
+ms.custom: seodec18
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -18,14 +18,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 15792a8ecbc538bdbf5516d480abde4903fbd8d3
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: 86289c9a93a0bb9e0f7756443d79f4a1a6dd38a6
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52304879"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53056004"
 ---
-# <a name="how-to-specify-a-net-framework-version-for-debugging-c-visual-basic-f"></a>如何： 指定偵錯.NET Framework 版本 (C#，Visual Basic 中， F#)
+# <a name="how-to-specify-a-net-framework-version-for-debugging-c-visual-basic-f"></a>HOW TO：指定偵錯.NET Framework 版本 (C#，Visual Basic 中， F#)
 
 Visual Studio 偵錯工具支援偵錯舊版 Microsoft[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]以及目前的版本。 如果您從 Visual Studio 啟動應用程式，則偵錯工具一律可以為正在偵錯的應用程式識別正確 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 版本。 不過，如果應用程式已經執行，而且開始使用偵錯**附加至**，偵錯工具不一定能夠識別舊版[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]。 如果發生這種情況，就會出現錯誤訊息：  
 
@@ -47,7 +47,7 @@ The debugger has made an incorrect assumption about the [!INCLUDE[dnprdnshort](.
   
 3. 在 [登錄編輯程式] 中開啟 HKEY_LOCAL_MACHINE 資料夾。  
   
-4. 巡覽至：HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\10.0\AD7Metrics\Engine\\{449EC4CC-30D2-4032-9256-EE18EB41B62B}  
+4. 巡覽至。HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\10.0\AD7Metrics\Engine\\{449EC4CC-30D2-4032-9256-EE18EB41B62B}  
   
     如果此機碼不存在，請以滑鼠右鍵按一下 HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\10.0\AD7Metrics\Engine，然後按一下 [新增機碼]。 新的機碼命名`{449EC4CC-30D2-4032-9256-EE18EB41B62B}`。  
   
@@ -57,7 +57,7 @@ The debugger has made an incorrect assumption about the [!INCLUDE[dnprdnshort](.
   
 6. 按兩下 [CLRVersionForDebugging]。  
   
-7. 在 [編輯字串] 方塊的 [值] 方塊中鍵入 .NET Framework 版本號碼。 例如：V1.1.4322。  
+7. 在 [編輯字串] 方塊的 [值] 方塊中鍵入 .NET Framework 版本號碼。 例如：V1.1.4322  
   
 8. 按一下 [確定 **Deploying Office Solutions**]。  
   

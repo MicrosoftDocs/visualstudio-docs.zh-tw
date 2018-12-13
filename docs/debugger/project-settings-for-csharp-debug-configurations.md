@@ -1,6 +1,6 @@
 ---
 title: 專案設定為C#偵錯組態 |Microsoft Docs
-ms.custom: ''
+ms.custom: seodec18
 ms.date: 11/21/2018
 ms.technology: vs-ide-debug
 ms.topic: reference
@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7152e6ac16c8a15ba6973eb3ac33c373560a0d76
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 6de7bfd547516b227063c0d3143b508bcbd9ddfd
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388961"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53059268"
 ---
 # <a name="project-settings-for--c-debug-configurations"></a>C# 偵錯組態的專案設定
 
@@ -42,7 +42,7 @@ ms.locfileid: "52388961"
   
 ## <a name="debug-tab"></a>偵錯索引標籤  
   
-|設定|描述|
+|設定|說明|
 |-------------------------------------| - |
 | **組態** | 建置應用程式的設定模式。 選取 **現用 （偵錯）**，**偵錯**，**版本**，或**所有組態**從下拉式清單。 |
 | **起始動作** | 指定的動作，當您選取**啟動**偵錯組態。<br />- [起始專案] 是預設動作，並且會啟動用於偵錯的啟始專案。 如需詳細資訊，請參閱 <<c0> [ 選擇啟始專案](/previous-versions/visualstudio/visual-studio-2010/0s590bew(v=vs.100))。<br />- **啟動外部程式**開始，並將附加至應用程式不屬於[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]專案。 如需詳細資訊，請參閱 <<c0> [ 附加至執行中處理序偵錯工具](attach-to-running-processes-with-the-visual-studio-debugger.md)。<br />- **以 URL 啟動瀏覽器**可讓您偵錯 web 應用程式。 |
@@ -54,7 +54,7 @@ ms.locfileid: "52388961"
   
 ## <a name="build-tab"></a>建置索引標籤  
   
-|設定|描述|  
+|設定|說明|  
 |-------------|-----------------|  
 |**一般** > **條件式編譯符號**|如果選取，請定義 DEBUG 和 TRACE 常數。<br /><br /> 這些常數可啟用 [Debug 類別](/dotnet/api/system.diagnostics.debug)和 [Trace 類別](/dotnet/api/system.diagnostics.trace)的條件式編譯。 完成這些常數定義之後，Debug 和 Trace 類別方法即會於[輸出視窗](../ide/reference/output-window.md)產生輸出。 如果沒有這些常數，Debug 和 Trace 類別方法便不會編譯，且不會產生輸出。<br /><br />通常，偵錯是定義在偵錯版本的組建和發行版本中未定義。 追蹤已定義在偵錯和發行版本。|  
 |**一般** > **最佳化程式碼**|除非錯誤只會出現在最佳化程式碼，否則請保留 偵錯組建的 已取消選取此設定。 最佳化程式碼較難偵錯，因為直接至在原始程式碼中的陳述式沒有對應的指示。|  

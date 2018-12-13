@@ -1,5 +1,5 @@
 ---
-title: Visual Studio 秘訣和訣竅 | Microsoft Docs
+title: 祕訣和訣竅 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -14,12 +14,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1e640aa6676cec22bd9b124727be0cbe88c5c6cb
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
-ms.translationtype: MT
+ms.openlocfilehash: b067302576dd83d88853a517f66e1c19186e3a78
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51000106"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53051152"
 ---
 # <a name="tips-and-tricks-for-visual-studio"></a>Visual Studio 秘訣和訣竅
 
@@ -144,9 +144,9 @@ ms.locfileid: "51000106"
 
 ##  <a name="BKMK_ALM"></a> 應用程式生命週期管理
 
-請參閱[鍵盤快速鍵：Visual Studio Online、TFS 入口網站和 Team Explorer](/azure/devops/project/navigation/keyboard-shortcuts?view=vsts)。
+請參閱[鍵盤快速鍵：Visual Studio Online、 TFS 入口網站和 Team Explorer](/azure/devops/project/navigation/keyboard-shortcuts?view=vsts)。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [Visual Studio 部落格](http://blogs.msdn.com/b/visualstudio)
 - [Visual Studio 秘訣和訣竅部落格](http://blogs.msdn.com/b/zainnab)
