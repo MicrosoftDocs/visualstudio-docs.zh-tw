@@ -1,5 +1,6 @@
 ---
 title: Visual Studio 文件
+titleSuffix: ''
 description: 了解 Visual Studio 如何協助您使用各種程式設計語言開發應用程式。
 ms.date: 01/01/2018
 layout: LandingPage
@@ -10,12 +11,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: a20e248ae13fa15442c753dfce85b56620505d7d
-ms.sourcegitcommit: 4708f0ba09b540424efcc344f8438f25432e3d51
+ms.openlocfilehash: b9b3c4417506fc08f4fa048b051d0406a460cbb8
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/11/2018
-ms.locfileid: "44384171"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53060021"
 ---
 # <a name="visual-studio-documentation"></a>Visual Studio 文件
 
@@ -101,7 +102,7 @@ ms.locfileid: "44384171"
         </a>
     </li>
     <li>
-        <a href="/visualstudio/ide/quickstart-projects-solutions">
+        <a href="/visualstudio/get-started/tutorial-projects-solutions">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -119,7 +120,7 @@ ms.locfileid: "44384171"
         </a>
     </li>
     <li>
-        <a href="/visualstudio/ide/quickstart-editor">
+        <a href="/visualstudio/get-started/tutorial-editor">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">

@@ -1,16 +1,17 @@
 ---
 layout: HubPage
-title: 容器開發工具文件
+title: Docker 容器開發工具文件
 description: 了解如何建置及管理以容器為基礎的應用程式和服務。 取得文件、程式碼範例、教學課程等。
 ms.topic: hub-page
+ms.custom: seodec18
 featureFlags:
 - clicktale
-ms.openlocfilehash: fceea4bbdd3f0964c95cd5d94a3b6a1fbe78c1bc
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: a8d4f46c733ba9518a1c53d83e676ff955b59b71
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51000187"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53067229"
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -134,7 +135,7 @@ ms.locfileid: "51000187"
                                                 <div class="cardText">
                                                     <h3>其他網站</h3>
                                                     <ul class="noBullet">
-                                                        <li><a class="barLink" href="http://wwww.docker.com/docker-windows"><img src="https://docs.microsoft.com/media/logos/logo_docker.svg" alt="">適用於 Windows 的 Docker</a></li>
+                                                        <li><a class="barLink" href="http://www.docker.com/docker-windows"><img src="https://docs.microsoft.com/media/logos/logo_docker.svg" alt="">適用於 Windows 的 Docker</a></li>
                                                         <li><a class="barLink" href="https://kubernetes.io"><img src="https://docs.microsoft.com/media/logos/logo_kubernetes.svg" alt="">Kubernetes</a></li>
                                                         <li><a class="barLink" href="https://helm.sh"><img src="media/helm-logo.png" alt="">Helm</a></li>
                                                     </ul>

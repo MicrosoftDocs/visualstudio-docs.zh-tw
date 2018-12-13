@@ -1,6 +1,6 @@
 ---
-title: 使用 Visual Studio 偵錯工具巡覽程式碼 |Microsoft Docs
-ms.custom: H1Hack27Feb2017
+title: 偵錯工具巡覽程式碼 |Microsoft Docs
+ms.custom: seodec18
 ms.date: 11/12/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 404204696a61c1073b2fa04eeb803e75b50ba38c
-ms.sourcegitcommit: a811f6a194ccd40d844e74e618d847df87c85c16
+ms.openlocfilehash: f951732704b178c2726d60f20fc4fedcbd4cde90
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "52621522"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068269"
 ---
 # <a name="navigate-through-code-with-the-visual-studio-debugger"></a>Visual Studio 偵錯工具巡覽程式碼
 
@@ -80,7 +80,7 @@ Visual Studio 偵錯工具可協助您瀏覽程式碼來檢查應用程式的狀
 
 您可能不在意函式偵錯時，或您知道它的運作方式，例如通過完善測試的程式庫程式碼。 您可以使用下列命令，可以跳過的程式碼。 函式仍在執行，但偵錯工具會略過它們。  
   
-|鍵盤命令|偵錯 功能表命令|描述|  
+|鍵盤命令|偵錯 功能表命令|說明|  
 |----------------------|------------------|-----------------|  
 |**F10**|**不進入函式**|如果目前這一行包含函式呼叫**不進入函式**執行的程式碼，然後在第一行程式碼中暫止執行之後呼叫的函式會傳回。|  
 |**Shift**+**F11**|**跳離函式**|**跳離函式**會繼續執行程式碼和目前的函式傳回時，會暫停執行。 偵錯工具會略過透過目前的函式。|  

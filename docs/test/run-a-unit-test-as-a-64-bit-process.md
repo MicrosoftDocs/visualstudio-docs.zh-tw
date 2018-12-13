@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Studio 中以 64 位元處理序的形式執行單元測試
+title: 以 64 位元處理序的形式執行單元測試
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -12,12 +12,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: cf8a815cb0827ed69c24686053bf118a48c020eb
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 4ee070adba33328253d7abeb122ec2ca2da145ef
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39379900"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062712"
 ---
 # <a name="run-a-unit-test-as-a-64-bit-process"></a>以 64 位元處理序的形式執行單元測試
 

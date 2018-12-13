@@ -13,17 +13,17 @@ dev_langs:
 helpviewer_keywords:
 - FormRegionMessageClassAttribute
 - form regions [Office development in Visual Studio], message classes
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0e28653749b19c9f53bd8e43e245fd8dcb20aa31
-ms.sourcegitcommit: 12d6398c02e818de4fbcb4371bae9e5db6cf9509
+ms.openlocfilehash: b9614a0feab70dd97cfd64861737c8b42dd146b7
+ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50050258"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53248029"
 ---
 # <a name="associate-a-form-region-with-an-outlook-message-class"></a>Outlook 訊息類別相關聯的表單區域
   您可以指定哪些 Microsoft Office Outlook 項目顯示表單區域的表單區域關聯至每個項目的訊息類別。 例如，如果您想要的郵件項目底部附加表單區域，您可以將表單區域`IPM.Note`訊息類別。  
@@ -48,7 +48,7 @@ ms.locfileid: "50050258"
  您也可以指定自訂訊息類別的名稱。 自訂訊息類別會識別您在 Outlook 中定義的自訂表單。  
   
 > [!NOTE]  
->  為取代型和全部取代型表單區域，您可以指定新的自訂訊息類別名稱。 您不需要使用現有的自訂表單的訊息類別名稱。 自訂訊息類別名稱必須是唯一的。 若要確保名稱是唯一的一個方式是使用類似下列的命名慣例： \< *StandardMessageClassName*>。\<*公司*>。\<*MessageClassName*> (例如： `IPM.Note.Contoso.MyMessageClass`)。  
+>  為取代型和全部取代型表單區域，您可以指定新的自訂訊息類別名稱。 您不需要使用現有的自訂表單的訊息類別名稱。 自訂訊息類別名稱必須是唯一的。 若要確保名稱是唯一的一個方式是使用如下所示的命名慣例：\<*StandardMessageClassName*>。\<*公司*>。\<*MessageClassName*> (例如： `IPM.Note.Contoso.MyMessageClass`)。  
   
 ## <a name="associate-a-form-region-with-an-outlook-message-class"></a>Outlook 訊息類別相關聯的表單區域  
  有兩種方式，將表單區域關聯的訊息類別：  
@@ -60,19 +60,19 @@ ms.locfileid: "50050258"
 ### <a name="use-the-new-outlook-form-region-wizard"></a>使用新的 Outlook 表單區域精靈  
  在最後一頁**新的 Outlook 表單區域**精靈，您可以選取標準訊息類別，並輸入您要與表單區域相關聯的自訂訊息類別名稱。  
   
- 標準訊息類別不可以使用表單區域設計來取代整個表單的預設頁面。 您可以指定只能用於表單，表單中新增新的頁面或，就會附加至表單底部的標準訊息類別名稱。 如需詳細資訊，請參閱 <<c0> [ 如何： 在 Outlook 增益集專案中加入表單區域](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)。  
+ 標準訊息類別不可以使用表單區域設計來取代整個表單的預設頁面。 您可以指定只能用於表單，表單中新增新的頁面或，就會附加至表單底部的標準訊息類別名稱。 如需詳細資訊，請參閱[＜How to：將表單區域加入 Outlook 增益集專案](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)。  
   
  要包含一個或多個自訂訊息類別，請輸入其名稱的**的自訂訊息類別會顯示此表單區域？**  方塊中。  
   
  您輸入的名稱必須遵守下列指導方針：  
   
-- 使用完整的訊息類別名稱 (例如:"IPM。Note.Contoso")。  
+- 使用完整的訊息類別名稱 (例如：「 IPM。Note.Contoso")。  
   
 - 請使用分號來分隔多個訊息類別名稱。  
   
 - 不包括標準的 Outlook 訊息類別，「 分號。附註 」 或者 「 IPM。連絡 」。 只包含自訂訊息類別，「 分號。Note.Contoso"。  
   
-- 單獨使用時，未指定基底訊息類別 (例如:"IPM 」)。  
+- 單獨使用時，未指定基底訊息類別 (例如：「 IPM")。  
   
 - 不能超過 256 個字元的每個訊息類別名稱。  
   
@@ -93,13 +93,13 @@ ms.locfileid: "50050258"
   
  屬性必須遵守下列指導方針：  
   
-- 自訂訊息類別，使用 完整格式的訊息類別名稱 (例如:"IPM。Note.Contoso")。  
+- 自訂訊息類別，使用 完整格式的訊息類別名稱 (例如：「 IPM。Note.Contoso")。  
   
-- 單獨使用時，未指定基底訊息類別 (例如:"IPM 」)。  
+- 單獨使用時，未指定基底訊息類別 (例如：「 IPM")。  
   
 - 不能超過 256 個字元的每個訊息類別名稱。  
   
-- 如果表單區域取代整個表單的預設頁面不包含標準訊息類別的名稱。 您可以指定只能用於表單，表單中新增新的頁面或，就會附加至表單底部的標準訊息類別名稱。 如需詳細資訊，請參閱 <<c0> [ 如何： 在 Outlook 增益集專案中加入表單區域](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)。  
+- 如果表單區域取代整個表單的預設頁面不包含標準訊息類別的名稱。 您可以指定只能用於表單，表單中新增新的頁面或，就會附加至表單底部的標準訊息類別名稱。 如需詳細資訊，請參閱[＜How to：將表單區域加入 Outlook 增益集專案](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)。  
   
   當您建置專案時，visual Studio 就會驗證訊息類別名稱的格式。  
   
@@ -109,7 +109,7 @@ ms.locfileid: "50050258"
 ## <a name="see-also"></a>另請參閱  
  [存取表單區域在執行階段](../vsto/accessing-a-form-region-at-run-time.md)   
  [建立 Outlook 表單區域](../vsto/creating-outlook-form-regions.md)   
- [逐步解說： 設計 Outlook 表單區域](../vsto/walkthrough-designing-an-outlook-form-region.md)   
+ [逐步解說：設計 Outlook 表單區域](../vsto/walkthrough-designing-an-outlook-form-region.md)   
  [若要建立 Outlook 表單區域的指導方針](../vsto/guidelines-for-creating-outlook-form-regions.md)   
  [表單的名稱和訊息類別的概觀](/office/vba/outlook/Concepts/Forms/form-name-and-message-class-overview)   
  [Outlook 表單和項目如何一起運作](/office/vba/outlook/Concepts/Forms/how-outlook-forms-and-items-work-together)  

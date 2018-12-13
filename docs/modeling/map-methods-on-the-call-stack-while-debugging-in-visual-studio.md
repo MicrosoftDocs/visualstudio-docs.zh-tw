@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Studio 中進行偵錯時對應呼叫堆疊上的方法
+title: 進行偵錯時對應呼叫堆疊上的方法
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
@@ -30,15 +30,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e1d0139463f468ed6d909658bb143412dc122020
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c4597f1352e02033c55fcdced126e184f854b463
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49856180"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53067394"
 ---
 # <a name="map-methods-on-the-call-stack-while-debugging-in-visual-studio"></a>在 Visual Studio 中進行偵錯時對應呼叫堆疊上的方法
-建立 code map 以視覺方式追蹤呼叫堆疊，當您偵錯。 您可以在對應圖上做筆記，追蹤程式碼的執行狀況，以便專注於尋找 Bug。
+在您偵錯時建立 Code Map 以視覺方式追蹤呼叫堆疊。 您可以在對應圖上做筆記，追蹤程式碼的執行狀況，以便專注於尋找 Bug。
 
  ![使用 Code Map 上的堆疊呼叫來偵錯](../debugger/media/debuggermap_overview.png)
 
@@ -80,17 +80,17 @@ ms.locfileid: "49856180"
 
      當您繼續偵錯時，對應會自動更新。 請參閱[以下一個呼叫堆疊更新對應圖](#UpdateMap)。
 
-## <a name="MakeNotes"></a> 附註解的程式碼
+## <a name="MakeNotes"></a> 製作程式碼的筆記
  新增註解，以追蹤程式碼中的情況。 若要加入新的一行的註解，請按**Shift + Return**。
 
  ![為 Code Map 上的堆疊呼叫加入註解](../debugger/media/debuggermap_addcomment.png)
 
-## <a name="UpdateMap"></a> 下一個呼叫堆疊更新對應圖
+## <a name="UpdateMap"></a> 以下一個呼叫堆疊更新地圖
  執行應用程式到下一個中斷點或逐步執行函式。 對應圖中就會加入新的呼叫堆疊。
 
  ![使用下一個堆疊呼叫來更新 Code Map](../debugger/media/debuggermap_addclearcallstack.png)
 
-## <a name="AddRelatedCode"></a> 將相關程式碼加入至對應
+## <a name="AddRelatedCode"></a> 將相關程式碼新增至地圖
  現在您已經有對應-什麼接下來？ 如果您正在使用 C# 或 Visual Basic 中，新增項目，例如欄位、 屬性和其他方法，來追蹤程式碼中的情況。
 
  按兩下某個方法以查看它的程式碼定義，或使用方法的捷徑功能表 (鍵盤： 選取的方法，在地圖，然後按**F12**)
@@ -114,14 +114,14 @@ ms.locfileid: "49856180"
 
  ![堆疊呼叫 Code Map 上使用欄位的方法](../debugger/media/debuggermap_foundallreferences.png)
 
-## <a name="FindBugs"></a> 使用地圖尋找 bug
+## <a name="FindBugs"></a> 使用地圖尋找 Bug
  視覺化程式碼可協助您更快速找到 Bug。 例如，假設您正在調查繪圖程式中的 bug。 當您繪製一條線並嘗試復原時，卻沒有發生任何動作，直到您繪製另一條線為止。
 
  因此您在 `clear`、`undo` 和 `Repaint` 方法中設定中斷點、開始偵錯，並建置一個如下所示的對應圖：
 
  ![將其他堆疊呼叫加入至 Code Map](../debugger/media/debuggermap_addpaintobjectcallstack.png)
 
- 您會注意到對應圖上的所有使用者手勢都呼叫 `Repaint`，除了 `undo` 之外。 這或許可以解釋為什麼`undo`立即無法運作。
+ 您會注意到對應圖上的所有使用者手勢都呼叫 `Repaint`，除了 `undo` 之外。 這或許能解釋 `undo` 未立即執行的原因。
 
  在修正 Bug 並繼續執行程式之後，對應圖會加入從 `undo` 到 `Repaint` 的新呼叫：
 

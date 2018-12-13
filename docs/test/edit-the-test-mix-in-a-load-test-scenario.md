@@ -1,5 +1,5 @@
 ---
-title: Visual Studio 中用於負載測試情節的測試混合
+title: 用於負載測試情節的測試混合
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,23 +13,25 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 3fd2ab4689128ca06ab463aed1743a244597b9ea
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 3b3bd0ae4df657d7234a77413003b18d5db86138
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179511"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895986"
 ---
 # <a name="edit-the-test-mix-to-specify-which-web-performance-unit-and-coded-ui-tests-to-include-in-a-load-test-scenario"></a>編輯測試混合以指定要包含在負載測試情節中的 Web 效能測試、單元測試和自動程式化 UI 測試
 
 情節的「測試混合」結合了情節所包含之 Web 效能和單元測試的選取範圍，以及這些測試在情節中的分佈方式。 分佈就是您可以針對虛擬使用者在負載測試回合期間選取特定測試之可能性指定的設定。
 
- 將一組測試新增至負載測試之後，「測試混合」便會像其他混合選項般運作。 虛擬使用者會根據您在混合中指定的可能性，隨機地選取測試。 例如，如果您有兩個測試，各佔混合的 50%，則新虛擬使用者大約有一半的時間會選擇執行第一個測試。 在 50/50 混合中，如果某個測試較長，而另一個測試較短，則較長的測試便會造成較多負載。
+將一組測試新增至負載測試之後，「測試混合」便會像其他混合選項般運作。 虛擬使用者會根據您在混合中指定的可能性，隨機地選取測試。 例如，如果您有兩個測試，各佔混合的 50%，則新虛擬使用者大約有一半的時間會選擇執行第一個測試。 在 50/50 混合中，如果某個測試較長，而另一個測試較短，則較長的測試便會造成較多負載。
 
- 將測試加入至混合之後，您就可以移除測試。 此外，您也可以使用混合控制項，變更測試混合的分佈。 混合控制可讓您輕鬆地調整測試在情節中的分佈方式。
+將測試加入至混合之後，您就可以移除測試。 此外，您也可以使用混合控制項，變更測試混合的分佈。 混合控制可讓您輕鬆地調整測試在情節中的分佈方式。
 
 > [!NOTE]
 > 分佈是用來度量虛擬使用者在執行負載測試期間選取特定測試的可能性。 而且會以百分比表示分佈程度。 因此，情節中所有測試的分佈數目總和是 100。 例如，如果情節僅包含一個測試，則該測試的分佈程度為 100%。
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="add-new-tests-to-a-test-mix-in-an-existing-scenario"></a>將新的測試新增至現有情節中的測試混合
 
@@ -39,13 +41,13 @@ ms.locfileid: "39179511"
 
 ![將測試加入至現有的負載測試](../test/media/ltest_addingtests.png)
 
-### <a name="to-add-more-tests-to-an-existing-scenario"></a>將其他測試加入至現有的情節
+### <a name="to-add-more-tests-to-an-existing-scenario"></a>若要將其他測試加入至現有的情節
 
 1.  開啟負載測試。
 
 2.  在 [負載測試編輯器] 中，以滑鼠右鍵按一下現有的情節，然後選擇 [加入測試]。
 
-     [加入測試] 對話方塊隨即出現。 方案中所有原本不存在於情節的 Web 效能、單元和自動程式化 UI 測試都可以加入至情節。
+     [新增測試] 對話方塊隨即出現。 方案中所有原本不存在於情節的 Web 效能、單元和自動程式化 UI 測試都可以加入至情節。
 
 3.  在 [可用的測試] 窗格中，選取您想要新增的 Web 效能、單元和自動程式化 UI 測試。 選擇向右箭號，將測試新增至 [選取的測試] 窗格。
 

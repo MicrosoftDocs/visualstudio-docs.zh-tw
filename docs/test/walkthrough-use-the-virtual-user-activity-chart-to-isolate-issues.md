@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Studio 中使用虛擬使用者活動圖以進行負載測試
+title: 使用虛擬使用者活動圖以進行負載測試
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,30 +11,20 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 19d2a50eba8850b3950e951da58800aed77931ad
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 8e4584d386cb61aaf7809c8bb5ab748e49543c7e
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295786"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895921"
 ---
 # <a name="walkthrough-using-the-virtual-user-activity-chart-to-isolate-issues"></a>逐步解說：使用虛擬使用者活動圖來找出問題
 
-在此逐步解說中，您將了解如何使用「虛擬使用者活動圖」找出執行負載測試之個別虛擬使用者所發生的錯誤。
+在此逐步解說中，您將了解如何使用「虛擬使用者活動圖」隔離出執行負載測試之個別虛擬使用者所發生的錯誤。
 
 虛擬使用者活動圖可讓您虛擬化與負載測試相關聯的虛擬使用者活動。 圖表中的每一列都表示個別的虛擬使用者。 虛擬使用者活動圖會顯示每一個虛擬使用者在測試期間的行為。 這樣可讓您藉由查看使用者活動模式、負載模式來找出效能問題、讓失敗或緩慢的測試產生關聯，以及查看其他虛擬使用者活動的要求。 虛擬使用者活動圖只有在負載測試完成執行之後才能使用。
 
-在這個逐步解說中，您將完成下列工作：
-
--   了解如何使用下列與「虛擬使用者活動圖」相關聯的工具：
-
-    -   使用 [縮放至時間週期] 工具可在圖表上指定您要分析的特定時間週期。
-
-    -   使用 [詳細資料圖例] 面板和 [篩選結果] 面板套用篩選至圖表，以協助找出問題。
-
--   使用 [虛擬使用者活動圖] 分析特定虛擬使用者所發生的錯誤，並且檢視有問題的錯誤類型詳細資料。
-
-如需詳細資訊，請參閱[在詳細資料檢視中分析虛擬使用者活動](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md)。
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="prerequisites"></a>必要條件
 
@@ -47,8 +37,6 @@ ms.locfileid: "51295786"
     -   [建立和執行負載測試](/azure/devops/test/load-test/run-performance-tests-app-before-release#create-a-load-test)
 
 ## <a name="open-the-colorwebapp-solution-created-in-the-previous-walkthroughs"></a>開啟在先前逐步解說中建立的 ColorWebApp 方案
-
-### <a name="open-the-solution"></a>開啟方案
 
 1.  啟動 Visual Studio。
 

@@ -1,16 +1,16 @@
 ---
 title: Visual Studio for Mac Tools for Unity
 description: 隆重介紹 Visual Studio Tools for Unity 延伸模組
-author: dantogno
-ms.author: v-davian
+author: therealjohn
+ms.author: johmil
 ms.date: 05/25/2018
 ms.assetid: 83FDD7A3-5D16-4B4B-9080-078E3FB5C623
-ms.openlocfilehash: c527a27bcca51748b146f60541dd02019e2853ac
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: f275288ea54b4b24996825aeb14c7a55ee3a3018
+ms.sourcegitcommit: 5c049194fa256b876ad303f491af11edd505756c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36279846"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53027350"
 ---
 # <a name="visual-studio-for-mac-tools-for-unity"></a>Visual Studio for Mac Tools for Unity
 

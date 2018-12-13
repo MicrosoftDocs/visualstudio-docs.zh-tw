@@ -2,8 +2,8 @@
 title: 編輯簡介
 ms.date: 11/30/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
-ms.topic: quickstart
+ms.technology: vs-acquisition
+ms.topic: tutorial
 author: gewarren
 ms.author: gewarren
 manager: douge
@@ -11,12 +11,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 420250a9e8dc99d6a02505efa7efb8f44e287e12
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 9e2f451ecfb73e0c1ac69da4e48f3d2c8033aa51
+ms.sourcegitcommit: 5c049194fa256b876ad303f491af11edd505756c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "42626805"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53027687"
 ---
 # <a name="learn-to-use-the-code-editor"></a>了解如何使用程式碼編輯器
 
@@ -36,7 +36,7 @@ ms.locfileid: "42626805"
 
    使用 C# 類別的基本架構，在編輯器中開啟新的檔案。 (請注意，我們不需要建立完整的 Visual Studio 專案，才能享有程式碼編輯器提供的一些優點，您只需要一份程式碼檔案！)
 
-   ![Visual Studio 中的 C# 程式碼檔案](media/quickstart-editor.png)
+   ![Visual Studio 中的 C# 程式碼檔案](media/tutorial-editor.png)
 
 ## <a name="use-code-snippets"></a>使用程式碼片段
 
@@ -46,7 +46,7 @@ Visual Studio 提供實用的「程式碼片段」，讓您可以用來快速且
 
    快顯對話方塊出現，內有 `svm` 程式碼片段的相關資訊。
 
-   ![Visual Studio 中程式碼片段的 IntelliSense](media/quickstart-intellisense-snippet.png)
+   ![Visual Studio 中程式碼片段的 IntelliSense](media/tutorial-intellisense-snippet.png)
 
 1. 按兩次 **Tab** 鍵，以插入程式碼片段。
 
@@ -54,15 +54,15 @@ Visual Studio 提供實用的「程式碼片段」，讓您可以用來快速且
 
 可用的程式碼片段會因不同的程式設計語言而異。 您可以選擇 [編輯] > [IntelliSense] > [插入程式碼片段]，然後選擇您語言的資料夾，以查看程式設計語言的可用程式碼片段。 針對 C#，清單如下：
 
-![C# 程式碼片段清單](media/quickstart-code-snippet-list.png)
+![C# 程式碼片段清單](media/tutorial-code-snippet-list.png)
 
 此清單包含的程式碼片段可用於建立[類別](/dotnet/csharp/programming-guide/classes-and-structs/classes)、[建構函式](/dotnet/csharp/programming-guide/classes-and-structs/constructors)、[for](/dotnet/csharp/language-reference/keywords/for) 迴圈、[if](/dotnet/csharp/language-reference/keywords/if-else) 或 [switch](/dotnet/csharp/language-reference/keywords/switch) 陳述式等。
 
 ## <a name="comment-out-code"></a>註解化程式碼
 
-工具列是 Visual Studio 功能表列下的按鈕列，有助您提高撰寫程式碼的效率。 例如，您可以切換 IntelliSense 完成模式 ([IntelliSense](using-intellisense.md) 是程式碼撰寫的輔助工具，可顯示其他項目中符合的方法清單)，增加或減少行的縮排，也可以為不要編譯的程式碼加上註解。 在本節中，我們會為一些程式碼加上註解。
+工具列是 Visual Studio 功能表列下的按鈕列，有助您提高撰寫程式碼的效率。 例如，您可以切換 IntelliSense 完成模式 ([IntelliSense](../ide/using-intellisense.md) 是程式碼撰寫的輔助工具，可顯示其他項目中符合的方法清單)，增加或減少行的縮排，也可以為不要編譯的程式碼加上註解。 在本節中，我們會為一些程式碼加上註解。
 
-![編輯器工具列](media/quickstart-editor-toolbar.png)
+![編輯器工具列](media/tutorial-editor-toolbar.png)
 
 1. 將下列程式碼貼入 `Main()` 方法主體。
 
@@ -90,7 +90,7 @@ Visual Studio 提供實用的「程式碼片段」，讓您可以用來快速且
 
 1. 我們目前不會使用 `morewords` 變數，但之後可能會用到，所以我們不想要完全將其刪除。 相反地，請將這些行註解化。 選取 `morewords` 的整個定義，直到結尾分號為止，然後選擇工具列上的 [為所選行加上註解] 按鈕。 如果您習慣使用鍵盤，請按 **Ctrl**+**K**、**Ctrl**+**C**。
 
-   ![註解化按鈕](media/quickstart-comment-out.png)
+   ![註解化按鈕](media/tutorial-comment-out.png)
 
    C# 註解字元 `//` 會新增至每個選取行的開頭，以將程式碼註解化。
 
@@ -98,7 +98,7 @@ Visual Studio 提供實用的「程式碼片段」，讓您可以用來快速且
 
 我們不想要看到所產生的 `Class1` 具有空白[建構函式](/dotnet/csharp/programming-guide/classes-and-structs/constructors)，所以為了整理我們的程式碼檢視，讓我們將其摺疊。 選擇建構函式第一行邊緣中其內有減號的小型灰色方塊。 或者，如果您是鍵盤使用者，請將游標放在建構函式程式碼中的任何位置，然後按 **Ctrl**+**M**、**Ctrl**+**M**。
 
-![大綱摺疊按鈕](media/quickstart-collapse.png)
+![大綱摺疊按鈕](media/tutorial-collapse.png)
 
 程式碼區塊只會摺疊到第一行，並且後面接著省略符號 (`...`)。 若要再次展開程式碼區塊，請按一下現在其內有加號的相同灰色方塊，或再次按 **Ctrl**+**M**、**Ctrl**+**M**。 這項功能稱為[大綱](../ide/outlining.md)，而且特別適用於摺疊較長的方法或整個類別。
 
@@ -110,7 +110,7 @@ Visual Studio 編輯器讓檢查類型、方法等等的定義變得十分輕鬆
 
    快顯視窗隨即出現，並內含 `String` 類別的定義。 您可以在快顯視窗內捲動，或甚至查看已查看程式碼中另一種類型的定義。
 
-   ![查看定義視窗](media/quickstart-peek-definition.png)
+   ![查看定義視窗](media/tutorial-peek-definition.png)
 
 1. 選擇快顯視窗右上方含 "x" 的小型方塊，以關閉查看的定義視窗。
 
@@ -126,7 +126,7 @@ Visual Studio 編輯器讓檢查類型、方法等等的定義變得十分輕鬆
 
    您會看到 IntelliSense 示範 `query` 符號的 [快速諮詢]。
 
-   ![Visual Studio 中的 IntelliSense 文字完成](media/quickstart-intellisense-completion-list.png)
+   ![Visual Studio 中的 IntelliSense 文字完成](media/tutorial-intellisense-completion-list.png)
 
 1. 若要使用 IntelliSense 的文字完成功能來插入 `query`這個字的其餘部分，請按 **Tab** 鍵。
 
@@ -149,7 +149,7 @@ Visual Studio 編輯器讓檢查類型、方法等等的定義變得十分輕鬆
 
 1. 輸入所需名稱 **words**。 請注意，也會自動重新命名查詢中 `words` 的參考。 按 **Enter** 鍵之前，請選取 [重新命名] 快顯方塊中的 [包括註解] 核取方塊。
 
-   ![重新命名對話方塊](media/quickstart-rename.png)
+   ![重新命名對話方塊](media/tutorial-rename.png)
 
 1. 按 **Enter** 鍵。
 
@@ -158,7 +158,7 @@ Visual Studio 編輯器讓檢查類型、方法等等的定義變得十分輕鬆
 ## <a name="next-steps"></a>後續步驟
 
 > [!div class="nextstepaction"]
-> [了解專案與解決方案](../ide/quickstart-projects-solutions.md)
+> [了解專案與解決方案](../get-started/tutorial-projects-solutions.md)
 
 ## <a name="see-also"></a>另請參閱
 

@@ -16,17 +16,17 @@ helpviewer_keywords:
 - data [Office development in Visual Studio], cache
 - data [Office development in Visual Studio], document-level solutions
 - document-level customizations [Office development in Visual Studio], data model
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0710f196e6572cf6bc9851d8a765758fcb43326d
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: c17c24dda11ea210c190a31197b783036357f2de
+ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35671488"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53248292"
 ---
 # <a name="cached-data-in-document-level-customizations"></a>文件層級自訂中的快取的資料
   文件層級自訂的主要目標是將資料從 Office 文件中的檢視。 資料是指儲存在文件，包括數字和文字的資訊。 檢視是指使用者介面和 Microsoft Office Word 和 Microsoft Office Excel 物件模型。  

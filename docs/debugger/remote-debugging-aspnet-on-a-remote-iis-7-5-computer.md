@@ -12,7 +12,7 @@ ms.workload:
 - aspnet
 ms.openlocfilehash: 1a13488f632e3cf1f244449b2a7a4dbfd7869428
 ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/23/2018
 ms.locfileid: "49826502"

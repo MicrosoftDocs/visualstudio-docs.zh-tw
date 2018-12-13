@@ -2,19 +2,19 @@
 title: 專案和解決方案簡介
 ms.date: 12/11/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
-ms.topic: quickstart
+ms.technology: vs-acquisition
+ms.topic: tutorial
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dffc0344c0cd7c226ae6651679c4a8f491d8aaa3
-ms.sourcegitcommit: 6a955a2d179cd0e137942389f940d9fcbbe125de
+ms.openlocfilehash: 4a4967f687f214e544aa65526144803ce31e99d7
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51607799"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159330"
 ---
 # <a name="learn-about-projects-and-solutions"></a>了解專案與解決方案
 
@@ -43,7 +43,7 @@ ms.locfileid: "51607799"
 
 1. 在左窗格中，展開 [其他專案類型]，然後選擇 [Visual Studio 解決方案]。 在中央窗格中，選擇 [空白方案] 範本。 將方案命名為 **QuickSolution**，然後選擇 [確定] 按鈕。
 
-   ![Visual Studio 中的空白方案範本](media/quickstart-projects-new-solution.png)
+   ![Visual Studio 中的空白方案範本](media/tutorial-projects-new-solution.png)
 
    [起始頁] 隨即關閉，而且方案會出現在 Visual Studio 視窗右側的 [方案總管] 中。 您可能會經常使用方案總管來瀏覽專案的內容。
 
@@ -62,7 +62,7 @@ ms.locfileid: "51607799"
    > [!NOTE]
    > 如果您在對話方塊的左窗格中看不到 [Visual C#]，則需要安裝 **.NET 桌面開發** Visual Studio「工作負載」。 Visual Studio 會使用工作負載安裝，只安裝您執行之開發類型所需的元件。 安裝新工作負載的簡單方式是選擇 [新增專案] 對話方塊左下角的 [開啟 Visual Studio 安裝程式] 連結。 Visual Studio Installer 啟動之後，請選擇 [.NET 桌面開發] 工作負載，然後選取 [修改] 按鈕。
 
-   ![開啟 Visual Studio 安裝程式連結](media/quickstart-projects-open-installer.png)
+   ![開啟 Visual Studio 安裝程式連結](media/tutorial-projects-open-installer.png)
 
 ## <a name="add-an-item-to-the-project"></a>將項目新增至專案
 
@@ -116,7 +116,7 @@ ms.locfileid: "51607799"
 
    第二個專案會新增至**方案總管**，並在編輯器中開啟名為 *UnitTest1.vb* 的檔案。 *.vb* 是提供給 Visual Basic 程式碼檔案的副檔名。
 
-   ![包含兩個專案的 Visual Studio 方案總管](media/quickstart-projects-solution-explorer.png)
+   ![包含兩個專案的 Visual Studio 方案總管](media/tutorial-projects-solution-explorer.png)
 
 ## <a name="add-a-project-reference"></a>新增專案參考
 
@@ -124,7 +124,7 @@ ms.locfileid: "51607799"
 
 1. 選擇 [QuickTest] 專案中的 [參考] 節點，然後從右鍵功能表或操作功能表中選擇 [新增參考]。
 
-   ![新增參考功能表](media/quickstart-projects-add-reference.png)
+   ![新增參考功能表](media/tutorial-projects-add-reference.png)
 
    [參考管理員] 對話方塊隨即開啟。
 
@@ -158,7 +158,7 @@ ms.locfileid: "51607799"
 
    程式碼檔應該如下：
 
-   ![CSharp 程式碼](media/quickstart-projects-cs-code.png)
+   ![CSharp 程式碼](media/tutorial-projects-cs-code.png)
 
 ## <a name="project-properties"></a>專案屬性
 
@@ -168,7 +168,7 @@ ms.locfileid: "51607799"
 
    專案的「屬性頁」會在 [應用程式] 索引標籤上開啟。屬性頁包含專案的各種設定。 請注意，**QuickTest** 專案的組件名稱確實是 "QuickTest"。 如果您想要變更它，則這是進行變更的位置。 然後，當您建置測試專案時，所產生二進位檔案的名稱會從 *QuickTest.dll* 變更為您選擇的任何名稱。
 
-   ![專案屬性](media/quickstart-projects-properties.png)
+   ![專案屬性](media/tutorial-projects-properties.png)
 
 1. 探索專案屬性頁的一些其他索引標籤 (例如 [編譯] 和 [設定])。 不同專案類型的這些索引標籤不同。
 
@@ -176,7 +176,7 @@ ms.locfileid: "51607799"
 
 如果您想要確認單元測試是否正常運作，請從功能表列中選擇 [測試] > [執行] > [所有測試]。 稱為 [測試總管] 的視窗隨即開啟，而且您應該會看到 **TestGetCurrentDate** 測試通過。
 
-![Visual Studio 中顯示已通過測試的 [測試總管]](media/quickstart-projects-test-explorer.png)
+![Visual Studio 的 [測試總管] 顯示已通過測試](media/tutorial-projects-test-explorer.png)
 
 > [!TIP]
 > 如果 [測試總管] 未自動開啟，請從功能表列選擇 [測試] > [Windows] > [測試總管] 開啟它。
@@ -187,4 +187,4 @@ ms.locfileid: "51607799"
 - [管理專案及解決方案屬性](../ide/managing-project-and-solution-properties.md)
 - [管理專案中的參考](../ide/managing-references-in-a-project.md)
 - [在 Visual Studio 中不使用專案或方案來開發程式碼](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md)
-- [Visual Studio IDE 概觀](../ide/visual-studio-ide.md)
+- [Visual Studio IDE 概觀](../get-started/visual-studio-ide.md)
