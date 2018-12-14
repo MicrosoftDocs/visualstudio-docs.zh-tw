@@ -1,6 +1,6 @@
 ---
-title: 偵錯準備： 主控台專案 |Microsoft Docs
-ms.custom: ''
+title: 準備偵錯主控台專案 |Microsoft Docs
+ms.custom: seodec18
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
 ms.topic: reference
@@ -19,16 +19,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 29c54c4bfdeb0341270d78ce677b6085d6f159a2
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: 55c588bfffbf11d4abd26fbae1490cf0039373c3
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52305178"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53057071"
 ---
-# <a name="debugging-preparation-console-projects-c-c-visual-basic-f"></a>偵錯準備： 主控台專案 (C#，c + +、 Visual Basic 中， F#)
+# <a name="debugging-preparation-console-projects-c-c-visual-basic-f"></a>偵錯準備：主控台專案 (C#，c + +、 Visual Basic 中， F#)
 
-準備偵錯主控台專案與準備偵錯 Windows 專案類似，只需進行一些額外考量。 如需詳細資訊，請參閱 < [Windows Forms 應用程式](../debugger/debugging-preparation-windows-forms-applications.md)，並[偵錯準備： Windows Forms 應用程式 (.NET)](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/sez9z95a(v=vs.100))。 由於所有主控台應用程式都有相似性，這個主題的內容會涵蓋下列專案類型：  
+準備偵錯主控台專案與準備偵錯 Windows 專案類似，只需進行一些額外考量。 如需詳細資訊，請參閱 < [Windows Forms 應用程式](../debugger/debugging-preparation-windows-forms-applications.md)，和[偵錯準備：Windows Forms 應用程式 (.NET)](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/sez9z95a(v=vs.100)) 由於所有主控台應用程式都有相似性，這個主題的內容會涵蓋下列專案類型：  
   
 - C#Visual Basic 中，與F#主控台應用程式  
   
