@@ -1,1 +1,0 @@
-Visual Basic 2005 Express 版
