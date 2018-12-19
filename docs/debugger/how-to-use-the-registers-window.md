@@ -1,6 +1,6 @@
 ---
-title: 檢視暫存器值，在 Visual Studio 偵錯工具 |Microsoft Docs
-ms.custom: ''
+title: 檢視暫存器值中偵錯工具 |Microsoft Docs
+ms.custom: seodec18
 ms.date: 11/19/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -25,25 +25,25 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ab40e0b63b2a679b4c36a4625d517a03b6c123ad
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 31d9b9a9243bdf5bd39ebddf90ffa0ea32b23072
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389321"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53058437"
 ---
 # <a name="view-register-values-in-the-registers-window-c-c-visual-basic-f"></a>檢視暫存器暫存器視窗中的值 (C#，c + +、 Visual Basic 中， F#)
 
-**註冊**視窗會顯示在 Visual Studio 偵錯期間暫存器內容。 暫存器的基本概念的高階簡介及**註冊** 視窗中，請參閱[偵錯基本概念： 暫存器視窗](../debugger/debugging-basics-registers-window.md)。
+**註冊**視窗會顯示在 Visual Studio 偵錯期間暫存器內容。 暫存器的基本概念的高階簡介及**註冊** 視窗中，請參閱[偵錯基本概念：暫存器視窗](../debugger/debugging-basics-registers-window.md)。
 
 > [!NOTE]
 > 無法使用的指令碼或 SQL 應用程式註冊資訊。
 
 偵錯期間，註冊值變更，在您的應用程式中執行的程式碼。 最近，已變更的值會出現在紅色**註冊**視窗。
 
-為了減少雜亂的情況，[暫存器] 視窗會依據平台和處理器類型，將暫存器分為不同的群組。 您可以顯示或隱藏暫存器群組。 如需詳細資訊，請參閱[如何：顯示和隱藏暫存器群組](../debugger/how-to-display-and-hide-register-groups.md)。
+為了減少雜亂的情況，[暫存器] 視窗會依據平台和處理器類型，將暫存器分為不同的群組。 您可以顯示或隱藏暫存器群組。 如需詳細資訊，請參閱[＜How to：顯示和隱藏暫存器群組](../debugger/how-to-display-and-hide-register-groups.md)。
 
-您可以編輯暫存器值。 如需詳細資訊，請參閱 <<c0> [ 如何： 編輯暫存器值](../debugger/how-to-edit-a-register-value.md)。
+您可以編輯暫存器值。 如需詳細資訊，請參閱[＜How to：編輯暫存器值](../debugger/how-to-edit-a-register-value.md)。
 
 **若要開啟 暫存器視窗**
 
@@ -56,5 +56,5 @@ ms.locfileid: "52389321"
 
 ### <a name="see-also"></a>另請參閱
 
-- [偵錯基本概念：暫存器視窗](../debugger/debugging-basics-registers-window.md)
+- [偵錯的基本概念：暫存器視窗](../debugger/debugging-basics-registers-window.md)
 - [在偵錯工具中檢視資料](../debugger/viewing-data-in-the-debugger.md)

@@ -1,6 +1,6 @@
 ---
-title: 如何： 執行背景工作處理序，使用者帳戶 |Microsoft Docs
-ms.custom: ''
+title: 執行背景工作處理序的使用者帳戶 |Microsoft Docs
+ms.custom: seodec18
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -21,14 +21,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e0caba3cce487f8a706aee7e0944a75255d1df6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 47aefcb73fd20dcc82b19ed6200fec5fd57dd486
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49939107"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53067812"
 ---
-# <a name="how-to-run-the-worker-process-under-a-user-account"></a>如何：在使用者帳戶下執行背景工作處理序
+# <a name="how-to-run-the-worker-process-under-a-user-account"></a>HOW TO：在使用者帳戶下執行背景工作處理序
 若要設定電腦以便在某個使用者帳戶下執行 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 背景工作處理序 (aspnet_wp.exe 或 w3wp.exe)，請依照下列步驟執行。  
 
  > [!IMPORTANT]
@@ -40,7 +40,7 @@ ms.locfileid: "49939107"
   
 1. 開啟 machine.config 檔，這個檔案位於電腦中安裝執行階段之路徑下的 CONFIG 資料夾內。  
   
-2. 尋找&lt;processModel&gt;區段，然後將 user 和 password 屬性變更為您要用來執行 aspnet_wp.exe 的使用者帳戶的密碼與名稱。  
+2. 尋找 &lt;processModel&gt; 區段，然後將 user 和 password 屬性變更為您要用來執行 aspnet_wp.exe 之使用者帳戶的名稱和密碼。  
   
 3. 儲存 machine.config 檔。  
   
@@ -86,7 +86,7 @@ ms.locfileid: "49939107"
   
 13. 按一下 [ **確定** ] 以關閉此 [ **暫存 ASP.NET 檔案屬性** ] 對話方塊。  
   
-## <a name="see-also"></a>另請參閱  
-[偵錯 ASP.NET 應用程式](../debugger/how-to-enable-debugging-for-aspnet-applications.md)   
+## <a name="see-also"></a>請參閱  
+[針對 ASP.NET 應用程式進行偵錯](../debugger/how-to-enable-debugging-for-aspnet-applications.md)   
 [ASP.NET 偵錯：系統需求](../debugger/aspnet-debugging-system-requirements.md)  
   

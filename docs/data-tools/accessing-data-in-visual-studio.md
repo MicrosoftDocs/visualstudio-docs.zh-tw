@@ -16,12 +16,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 463bc06bb023e973ac6fe62f5f92a3d9067b2841
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
-ms.translationtype: MT
+ms.openlocfilehash: e31eeaf3061968cfa916d2ec5a0d0e522b9f6ebb
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44280593"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159525"
 ---
 # <a name="access-data-in-visual-studio"></a>使用 Visual Studio 存取資料
 
@@ -37,32 +37,35 @@ JavaScript、 Python、 PHP、 Ruby 或 c + + 中的應用程式，您連接到�
 
 **Microsoft Azure**
 
-||||
-|-|-|-|
-|SQL Database|Azure Cosmos DB|儲存體 （blob、 資料表、 佇列、 檔案）|
-|SQL 資料倉儲|SQL Server Stretch Database|StorSimple|
-
-等等...
+- SQL Database
+- Azure Cosmos DB
+- 儲存體 （blob、 資料表、 佇列、 檔案）
+- SQL 資料倉儲
+- SQL Server Stretch Database
+- StorSimple
+- 等等...
 
 **SQL**
 
-||||
-|-|-|-|
-|SQL Server 2005-2016(&a，包括 Express 和 LocalDB|Firebird|MariaDB|
-|MySQL|Oracle|PostgreSQL|
-|SQLite|||
-
-等等...
+- SQL Server 2005-2016 （包括 Express 和 LocalDB）
+- Firebird
+- MariaDB
+- MySQL
+- Oracle
+- PostgreSQL
+- SQLite
+- 等等...
 
 **NoSQL**
 
-||||
-|-|-|-|
-|Apache Cassandra|CouchDB|MongoDB|
-|NDatabase|OrientDB|RavenDB|
-|VelocityDB|||
-
-等等...
+- Apache Cassandra
+- CouchDB
+- MongoDB
+- NDatabase
+- OrientDB |
+- RavenDB
+- VelocityDB
+- 等等...
 
 許多資料庫供應商，以及第三方支援 Visual Studio 整合的 NuGet 套件。 在 nuget.org 上或透過 NuGet 套件管理員在 Visual Studio 中，您可以瀏覽供應項目 (**工具** > **NuGet 套件管理員** > **管理 nuget 封裝方案套件**)。 與 Visual Studio 整合擴充功能為其他資料庫產品。 您可以瀏覽至連線，瀏覽這些供應項目，在 Visual Studio Marketplace**工具**，**擴充功能和更新**，然後選取**Online**的左窗格中 對話方塊。 如需詳細資訊，請參閱 <<c0> [ 相容的資料庫系統，適用於 Visual Studio](../data-tools/installing-database-systems-tools-and-samples.md)。
 
@@ -73,9 +76,9 @@ JavaScript、 Python、 PHP、 Ruby 或 c + + 中的應用程式，您連接到�
 
 所有的.NET 資料存取，包括在.NET Core 中，根據 ADO.NET，一組類別，定義介面來存取任何種類的資料來源、 關聯式和非關聯性。 Visual Studio 有數個工具和設計工具，可以使用 ADO.NET 來協助您連接到資料庫，操作資料，並將資料呈現給使用者。 在本節中的文件說明如何使用這些工具。 您也可以直接用於 ADO.NET 命令物件執行程式。 如需有關直接呼叫 ADO.NET Api 的詳細資訊，請參閱[ADO.NET](/dotnet/framework/data/adonet/index)。
 
-如需關於 ASP.NET 資料存取文件，請參閱[使用資料](http://www.asp.net/web-forms/overview/presenting-and-managing-data)ASP.NET 網站上。 如需使用 Entity Framework 搭配 ASP.NET MVC 教學課程，請參閱 < [Getting Started with Entity Framework 6 Code First 使用 MVC 5](/aspnet/mvc/overview/getting-started/getting-started-with-ef-using-mvc/creating-an-entity-framework-data-model-for-an-asp-net-mvc-application)。
+如需關於 ASP.NET 資料存取文件，請參閱[使用資料](https://www.asp.net/web-forms/overview/presenting-and-managing-data)ASP.NET 網站上。 如需使用 Entity Framework 搭配 ASP.NET MVC 教學課程，請參閱 < [Getting Started with Entity Framework 6 Code First 使用 MVC 5](/aspnet/mvc/overview/getting-started/getting-started-with-ef-using-mvc/creating-an-entity-framework-data-model-for-an-asp-net-mvc-application)。
 
-在 C# 或 Visual Basic 中的通用 Windows 平台 (UWP) 應用程式可以使用 Microsoft Azure SDK for.NET 存取 Azure 儲存體和其他 Azure 服務。 Windows.Web.HttpClient 類別可讓您與任何 RESTful 服務的通訊。 如需詳細資訊，請參閱 <<c0> [ 如何連接至 HTTP 伺服器使用 windows.web.http 應用程式開發](https://msdn.microsoft.com/library/windows/apps/dn469430.aspx)。
+中的通用 Windows 平台 (UWP) 應用程式C#或 Visual Basic 可以使用 Microsoft Azure SDK for.NET 存取 Azure 儲存體和其他 Azure 服務。 Windows.Web.HttpClient 類別可讓您與任何 RESTful 服務的通訊。 如需詳細資訊，請參閱 <<c0> [ 如何連接至 HTTP 伺服器使用 windows.web.http 應用程式開發](https://msdn.microsoft.com/library/windows/apps/dn469430.aspx)。
 
 在本機電腦上的資料儲存體，建議的方法是使用 SQLite，會在應用程式相同的程序中執行。 如果需要物件關聯式對應 (ORM) 層，您可以使用 Entity Framework。 如需詳細資訊，請參閱 <<c0> [ 資料存取](/windows/uwp/data-access/index)Windows 開發人員中心。
 
@@ -103,9 +106,9 @@ JavaScript、 Python、 PHP、 Ruby 或 c + + 中的應用程式，您連接到�
 
 使用 REST 服務的 c + + 程式可以使用[c + + REST SDK](https://github.com/Microsoft/cpprestsdk)。
 
-使用 Microsoft Azure 儲存體的 c + + 程式可以使用[Microsoft Azure 儲存體用戶端](http://www.nuget.org/packages/wastorage)。
+使用 Microsoft Azure 儲存體的 c + + 程式可以使用[Microsoft Azure 儲存體用戶端](https://www.nuget.org/packages/Microsoft.Azure.Storage.CPP)。
 
-資料模型化&mdash;Visual Studio 不提供 c + + 的 ORM 層。 [ODB](http://www.codesynthesis.com/products/odb/) c + + 是熱門的開放原始碼 ORM。
+資料模型化&mdash;Visual Studio 不提供 c + + 的 ORM 層。 [ODB](https://www.codesynthesis.com/products/odb/) c + + 是熱門的開放原始碼 ORM。
 
 若要深入了解從 c + + 應用程式連接到資料庫，請參閱[c + + 的 Visual Studio data tools](../data-tools/visual-studio-data-tools-for-cpp.md)。 如需有關舊版的 Visual c + + 資料存取技術的詳細資訊，請參閱[資料存取](/cpp/data/data-access-in-cpp)。
 
@@ -135,11 +138,11 @@ JavaScript、 Python、 PHP、 Ruby 或 c + + 中的應用程式，您連接到�
 
 [ADO.NET Entity Framework](https://docs.microsoft.com/ef/ef6/)&mdash;說明如何建立資料應用程式可讓開發人員針對概念模型而不是直接針對關聯式資料庫設計程式。
 
-[WCF Data Services 4.5](/dotnet/framework/data/wcf/index)&mdash;說明如何使用[!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)]部署在 web 或內部網路上的資料服務可實作[Open Data Protocol (OData)](http://go.microsoft.com/fwlink/?LinkID=182204)。
+[WCF Data Services 4.5](/dotnet/framework/data/wcf/index)&mdash;說明如何使用[!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)]部署在 web 或內部網路上的資料服務可實作[Open Data Protocol (OData)](https://www.odata.org/)。
 
 [在 Office 方案中的資料](../vsto/data-in-office-solutions.md)&mdash;包含說明資料在 Office 方案中的運作方式的主題連結。 這包括有關結構描述導向程式設計、 資料快取，以及伺服器端資料存取的資訊。
 
-[LINQ (Language-Integrated Query)](/dotnet/csharp/linq/)&mdash;說明內建 C# 和 Visual Basic 中，以及通用模型來查詢關聯式資料庫、 XML 文件、 資料集和記憶體中集合的查詢功能。
+[LINQ (Language-Integrated Query)](/dotnet/csharp/linq/)&mdash;告訴您，內建的查詢功能C#和 Visual Basic 和查詢關聯式資料庫、 XML 文件、 資料集和記憶體中集合的一般模型。
 
 [Visual Studio 中的 XML 工具](../xml-tools/xml-tools-in-visual-studio.md)&mdash;討論使用 XML 資料、 偵錯 XSLT，.NET Framework 的 XML 功能，以及 XML 查詢的架構。
 

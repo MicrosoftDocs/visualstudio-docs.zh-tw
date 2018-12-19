@@ -1,6 +1,6 @@
 ---
-title: 如何發現誰傳錯參數值？ | Microsoft Docs
-ms.custom: ''
+title: 了解誰傳錯參數值 |Microsoft Docs
+ms.custom: seodec18
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 91c0574d3783c56a56e9e1932a675c45cb758ded
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
-ms.translationtype: MT
+ms.openlocfilehash: 164ca15cfc508b952ccfe2f986892c0801fd1539
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44284168"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53059362"
 ---
 # <a name="how-can-i-find-out-who-is-passing-a-wrong-parameter-value"></a>如何發現誰傳錯參數值？
 ## <a name="problem-description"></a>問題說明  
@@ -40,19 +40,19 @@ ms.locfileid: "44284168"
   
 1.  在函式的開頭設定位置中斷點。  
   
-2.  以滑鼠右鍵按一下中斷點，然後選取**條件**。  
+2.  以滑鼠右鍵按一下中斷點並選取 [條件]。  
   
-3.  在 [**中斷點條件**] 對話方塊中，按一下**條件**核取方塊。 請參閱[進階中斷點](../debugger/using-breakpoints.md#BKMK_Specify_a_breakpoint_condition_using_a_code_expression)。  
+3.  在 [中斷點條件] 對話方塊中，按一下 [條件] 核取方塊。 請參閱[進階中斷點](../debugger/using-breakpoints.md#BKMK_Specify_a_breakpoint_condition_using_a_code_expression)。  
   
 4.  在文字方塊中輸入運算式，例如 `Var==3`；其中 `Var` 是含有錯誤值的參數名稱，而 `3` 則是傳入的錯誤值。  
   
-5.  選取 [**為 True，否則**選項按鈕，然後按一下**確定**] 按鈕。  
+5.  選取 [為 True] 選項按鈕，然後按一下 [確定] 按鈕。  
   
 6.  現在再次執行程式。 當 `Var` 參數的值是 `3` 時，中斷點會造成程式暫止在函式的開頭。  
   
-7.  然後您可以使用 [呼叫堆疊] 視窗來找出呼叫函式並且巡覽原始程式碼。 如需詳細資訊，請參閱 <<c0> [ 如何： 使用 [呼叫堆疊] 視窗](../debugger/how-to-use-the-call-stack-window.md)。  
+7.  然後您可以使用 [呼叫堆疊] 視窗來找出呼叫函式並且巡覽原始程式碼。 如需詳細資訊，請參閱[＜How to：使用 [呼叫堆疊] 視窗](../debugger/how-to-use-the-call-stack-window.md)。  
   
-## <a name="see-also"></a>另請參閱  
- [偵錯機器碼常見問題集](../debugger/debugging-native-code-faqs.md)   
+## <a name="see-also"></a>請參閱  
+ [對機器碼進行偵錯的常見問題集](../debugger/debugging-native-code-faqs.md)   
  [中斷點](https://msdn.microsoft.com/library/fe4eedc1-71aa-4928-962f-0912c334d583)   
  [偵錯機器碼](../debugger/debugging-native-code.md)

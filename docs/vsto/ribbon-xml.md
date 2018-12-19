@@ -26,12 +26,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e5502ed118bf5b8bf622f18fd777889127e12aab
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
-ms.translationtype: MT
+ms.openlocfilehash: 69bd6ac15bcaa08800177df92eb8a40e8109d6b1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50672441"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49823680"
 ---
 # <a name="ribbon-xml"></a>功能區 XML
   功能區 (XML) 項目可讓您使用 XML 自訂功能區。 如果您想要自訂功能區的功能區 （視覺化設計工具） 項目不支援的方式，請使用功能區 (XML) 項目。 您可以使用每個項目進行比較，請參閱[功能區概觀](../vsto/Ribbon-overview.md)。  
@@ -78,7 +78,7 @@ ms.locfileid: "50672441"
   
  您在屬性中指定的方法可以具有任何名稱。 但必須符合您在功能區程式碼檔案中定義之方法的名稱。  
   
- 您可以將許多不同類型的回呼方法指定給功能區控制項。 如需每個控制項可用之回呼方法的完整清單，請參閱技術文件[適用於開發人員 (第 3 之 3) 自訂 Office (2007) 功能區使用者介面](/previous-versions/office/developer/office-2007/aa722523(v=office.12))。  
+ 您可以將許多不同類型的回呼方法指定給功能區控制項。 如需每個控制項可用之回呼方法的完整清單，請參閱技術文件[適用於開發人員 (第 3 之 3) 自訂 Office (2007) 功能區使用者介面](http://msdn.microsoft.com/a16c7df5-93f3-4920-baa8-7b7290794c15)。  
   
 ###  <a name="CallBackMethods"></a> 定義回呼方法  
  請在功能區程式碼檔案的功能區類別中定義回呼方法。 回呼方法具有幾項需求：  
@@ -89,7 +89,7 @@ ms.locfileid: "50672441"
   
 - 其簽章必須符合相關功能區項目適用之回呼方法類型的簽章。  
   
-  如需功能區控制項回呼方法簽章的完整清單，請參閱技術文件[適用於開發人員 (第 3 之 3) 自訂 Office (2007) 功能區使用者介面](/previous-versions/office/developer/office-2007/aa722523(v=office.12))。 Visual Studio 不會針對您在功能區程式碼檔案中建立的回呼方法提供 IntelliSense 支援。 如果您建立的回呼方法不符合有效的簽章，雖然程式碼會進行編譯，但是當使用者按一下控制項時，並不會產生任何反應。  
+  如需功能區控制項回呼方法簽章的完整清單，請參閱技術文件[適用於開發人員 (第 3 之 3) 自訂 Office (2007) 功能區使用者介面](http://msdn.microsoft.com/a16c7df5-93f3-4920-baa8-7b7290794c15)。 Visual Studio 不會針對您在功能區程式碼檔案中建立的回呼方法提供 IntelliSense 支援。 如果您建立的回呼方法不符合有效的簽章，雖然程式碼會進行編譯，但是當使用者按一下控制項時，並不會產生任何反應。  
   
   所有的回呼方法都有 <xref:Microsoft.Office.Core.IRibbonControl> 參數，代表呼叫該方法的控制項。 您可以使用這個參數，對多個控制項重複使用相同的回呼方法。 下列程式碼範例示範的 **GetCustomUI** 回呼方法會根據使用者所按下的控制項，執行不同的工作。  
   
@@ -133,7 +133,7 @@ ms.locfileid: "50672441"
 |**id**|**group**|識別群組。|  
 |**標籤**|**group**|指定出現在群組上的文字。|  
   
- 功能區 XML 檔案中的預設項目和屬性是可用項目和屬性的小型子集。 如需可用的項目和屬性的完整清單，請參閱技術文件[適用於開發人員 (第 2 部分為 3) 自訂 Office (2007) 功能區使用者介面](/previous-versions/office/developer/office-2007/aa338199(v=office.12))。  
+ 功能區 XML 檔案中的預設項目和屬性是可用項目和屬性的小型子集。 如需可用的項目和屬性的完整清單，請參閱技術文件[適用於開發人員 (第 2 部分為 3) 自訂 Office (2007) 功能區使用者介面](http://msdn.microsoft.com/6b904f55-525f-4520-9b81-a017db65657b)。  
   
 ##  <a name="RibbonExtensionClass"></a> 功能區類別參考  
  Visual Studio 會在功能區程式碼檔中產生功能區類別。 這個類別中加入功能區上的控制項的回呼方法。 這個類別會實作 <xref:Microsoft.Office.Core.IRibbonExtensibility> 介面。  
@@ -143,7 +143,7 @@ ms.locfileid: "50672441"
 |方法|描述|  
 |------------|-----------------|  
 |`GetCustomUI`|傳回功能區 XML 檔案的內容。 Microsoft Office 應用程式會呼叫這個方法來取得定義的自訂功能區使用者介面的 XML 字串。 這個方法會實作 <xref:Microsoft.Office.Core.IRibbonExtensibility.GetCustomUI%2A> 方法。 **注意︰** `GetCustomUI`應該實作成只傳回功能區 XML 檔案的內容; 它不應該用來初始化您 VSTO 增益集。 具體而言，您不應嘗試在 `GetCustomUI` 實作中顯示對話方塊或其他視窗。 否則自訂功能區可能無法正確運作。 如果需要執行初始化 VSTO 增益集的程式碼，請將該程式碼加入至 `ThisAddIn_Startup` 事件處理常式。|  
-|`OnLoad`|將 <xref:Microsoft.Office.Core.IRibbonControl> 參數指派給 `Ribbon` 欄位。 Microsoft Office 應用程式會呼叫這個方法，當它們載入自訂功能區。 您可以使用此欄位，以動態方式更新自訂功能區。 如需詳細資訊，請參閱技術文件[適用於開發人員 (第 3 的第 1 部分) 中自訂 Office (2007) 功能區使用者介面](/previous-versions/office/developer/office-2007/aa338202(v=office.12))。|  
+|`OnLoad`|將 <xref:Microsoft.Office.Core.IRibbonControl> 參數指派給 `Ribbon` 欄位。 Microsoft Office 應用程式會呼叫這個方法，當它們載入自訂功能區。 您可以使用此欄位，以動態方式更新自訂功能區。 如需詳細資訊，請參閱技術文件[適用於開發人員 (第 3 的第 1 部分) 中自訂 Office (2007) 功能區使用者介面](http://msdn.microsoft.com/a4fd6d18-d4a8-4e64-bd89-f437208573d3)。|  
 |`GetResourceText`|由 `GetCustomUI` 方法呼叫以取得功能區 XML 檔案的內容。|  
   
 ## <a name="see-also"></a>另請參閱  

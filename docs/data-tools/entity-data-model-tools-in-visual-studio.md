@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Studio 中的 entity Framework 工具
+title: Entity Framework Tools
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 1b06b573-84aa-4458-b3f5-e238df47bf45
@@ -10,21 +10,22 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: bbffe18b108beb230a77da38df99a7100e542a27
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 14a0e5b6b746356e38dfc71c26f53ced5a470e34
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49819091"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53066793"
 ---
 # <a name="entity-framework-tools-in-visual-studio"></a>在 Visual Studio 中的 entity Framework 工具
+
 Entity Framework 是一種物件關聯式對應技術，可讓.NET 開發人員使用網域特有物件來處理關聯式資料。 它不需要開發人員通常需要撰寫的大部分資料存取程式碼。 Entity Framework 是模型對於新的.NET 應用程式的技術建議的物件關聯式對應 (ORM)。
 
-Entity Framework 工具專門設計來協助您建置 Entity Framework (EF) 應用程式。 以下是 Entity Framework 的完整文件： [EF Core 和 EF 6](/ef/)。
+Entity Framework 工具專門設計來協助您建置 Entity Framework (EF) 應用程式。 Entity Framework 的完整文件位於這裡：[EF Core 和 EF 6](/ef/)。
 
 您可以使用 Entity Framework 工具，建立*概念模型*從現有資料庫然後以圖形方式以視覺化方式檢視和編輯概念模型。 或者，您可以先以圖形方式建立概念模型，然後產生可支援該模型的資料庫。 無論使用哪一種方式，當基礎資料庫變更時，您都可以自動更新模型，而且可以自動產生應用程式的物件層程式碼。 資料庫產生和物件層程式碼產生皆可自訂。
 
-Entity Framework 工具安裝的一部分**資料儲存和處理**Visual Studio 安裝程式中的工作負載。 您也可以安裝它們為 indvidual 元件底下**Sdk、 程式庫和架構**類別目錄。
+Entity Framework 工具安裝的一部分**資料儲存和處理**Visual Studio 安裝程式中的工作負載。 您也可以安裝它們作為個別的元件底下**Sdk、 程式庫和架構**類別目錄。
 
 以下是 Visual Studio 中的 Entity Framework 工具所組成的特定工具：
 
@@ -37,7 +38,7 @@ Entity Framework 工具安裝的一部分**資料儲存和處理**Visual Studio 
 - 您可以使用**更新模型精靈**變更已對基礎資料庫時，更新您的概念模型、 儲存體模型和對應。
 
   > [!NOTE]
-  >  從 Visual Studio 2010 開始，Entity Framework 工具不支援[!INCLUDE[ss2k](../data-tools/includes/ss2k_md.md)]。
+  > 從 Visual Studio 2010 開始，Entity Framework 工具不支援[!INCLUDE[ss2k](../data-tools/includes/ss2k_md.md)]。
 
 工具會產生或修改 *.edmx*檔案。 這 *.edmx*檔案包含描述概念模型、 儲存模型，以及它們之間的對應的資訊。 如需詳細資訊，請參閱 < [EDMX](https://docs.microsoft.com/ef/ef6/)。
 
@@ -45,7 +46,7 @@ Entity Framework 工具安裝的一部分**資料儲存和處理**Visual Studio 
 
 ## <a name="related-topics"></a>相關主題
 
-| 標題 | 描述 |
+| 標題 | 說明 |
 | - | - |
 | [ADO.NET Entity Framework](/dotnet/framework/data/adonet/ef/index) | 描述如何使用[!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)]工具，其中[!INCLUDE[adonet_ef](../data-tools/includes/adonet_ef_md.md)]提供，若要建立應用程式。 |
 | [實體資料模型](/dotnet/framework/data/adonet/entity-data-model) | 提供用於處理資料所建置的應用程式使用的資訊和連結[!INCLUDE[adonet_ef](../data-tools/includes/adonet_ef_md.md)]。 |

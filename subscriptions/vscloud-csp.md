@@ -9,12 +9,12 @@ description: 如何為您的客戶購買和管理 Visual Studio 雲端訂用帳�
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 50f4cfeaa6d0f530a70729155f0e81065359281d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a455e645629266be28e50718ae5fffde309b3dd9
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49899457"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44282283"
 ---
 # <a name="buy-and-manage-visual-studio-cloud-subscriptions-for-your-customers"></a>為您的客戶購買及管理 Visual Studio 雲端訂閱
 
@@ -28,8 +28,6 @@ ms.locfileid: "49899457"
 
 [進一步了解](/azure/devops/organizations/billing/csp/set-up-csp-customer)
 
-## <a name="who-can-buy-visual-studio-subscriptions"></a>誰可以購買 Visual Studio 訂用帳戶？
-擁有 Azure 訂用帳戶[擁有者或參與者存取權](https://na01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Fvsts%2Forganizations%2Fbilling%2Fadd-backup-billing-managers%3Fview%3Dvsts%2520%2520sa&data=02%7C01%7C%7Cb9e717e8abff47b0cd7e08d618edd860%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636723807145220358&sdata=aIaamEXHhx94KCYVY%2FFibqFzNBEqKPntpql867xAMgU%3D&reserved=0)的任何人都可以購買 Visual Studio 訂用帳戶。 
 
 ## <a name="how-to-buy"></a>如何購買
 
@@ -75,7 +73,6 @@ ms.locfileid: "49899457"
 若要檢視 CSP 合作夥伴的 Visual Studio 定價，請登入[合作夥伴中心](https://partnercenter.microsoft.com)。  從左邊的巡覽列選擇 [Pricing and offers] (定價和供應項目)。  選擇右上 [usage-based services] (用量型服務) 下的當月定價檔案。 下載 Excel 試算表後，請移至 [Azure Price List] (Azure 價格清單) 工作表，在 [計量類別目錄] 欄中篩選 [Visual Studio]。
 
 以下是您所見此試算表內容的解讀方法：
-
 | 計量類別目錄    |   名稱                 |  單位                                |           說明                          |
 |-------------------|------------------------|---------------------------------------|-------------------------------------------------|
 | Visual Studio     | 企業             |  訂閱                         | Visual Studio Enterprise 月租方案   |

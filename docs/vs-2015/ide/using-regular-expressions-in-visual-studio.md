@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Studio 中使用規則運算式 | Microsoft Docs
+title: 使用規則運算式
 ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -24,16 +24,16 @@ caps.latest.revision: 56
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0cf59b1061b6312a1c2881ff4dccdf03e5c502b4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 90639e9f3f24a7985255e0a7ea42e303b9917739
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49906711"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53059427"
 ---
 # <a name="use-regular-expressions-in-visual-studio"></a>在 Visual Studio 中使用規則運算式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-Visual Studio 會使用.NET Framework 規則運算式來尋找和取代文字。 如需 .NET 規則運算式的詳細資訊，請參閱 [.NET Framework 規則運算式](http://msdn.microsoft.com/library/521b3f6d-f869-42e1-93e5-158c54a6895d)。
+Visual Studio 使用 .NET Framework 規則運算式來尋找和取代文字。 如需 .NET 規則運算式的詳細資訊，請參閱 [.NET Framework 規則運算式](http://msdn.microsoft.com/library/521b3f6d-f869-42e1-93e5-158c54a6895d)。
 
 在 Visual Studio 2012 之前，Visual Studio 在 [尋找和取代] 視窗中使用自訂的規則運算式語法。 如需如何將一些常用的自訂規則運算式符號轉換成該 .NET 版本之說明，請參閱 [Visual Studio Regular Expression Conversions](https://msdn.microsoft.com/library/2k3te2cs\(v=vs.110\).aspx) (Visual Studio 規則運算式轉換)。
 
@@ -41,7 +41,7 @@ Visual Studio 會使用.NET Framework 規則運算式來尋找和取代文字。
 > 在 Windows 作業系統中，大部分的程式行都是以 "\r\n" 結尾 (歸位字元後面接著新行)。 這些字元並不可見，但是會顯示在編輯器中，並傳遞至 .NET 規則運算式服務。
 
 > [!TIP]
-> 如需取代模式中所用規則運算式的資訊，請參閱[替代](http://msdn.microsoft.com/library/d1f52431-1c7d-4dc6-8792-6b988256892e)。 若要使用已編號的擷取群組，指定編號的群組之語法為 `$1`，以及使用 `(x)` 指定考慮中的此群組。 例如，群組規則運算式 `(\d)([a-z])` 在下列字串中找到四個相符項目：**1a 2b 3c 4d**。 取代字串 `z$1` 會將該字串轉換為 **z1 z2 z3 z4**。
+> 如需取代模式中所用規則運算式的資訊，請參閱[替代](http://msdn.microsoft.com/library/d1f52431-1c7d-4dc6-8792-6b988256892e)。 若要使用已編號的擷取群組，指定編號的群組之語法為 `$1`，以及使用 `(x)` 指定考慮中的此群組。 例如，群組的規則運算式`(\d)([a-z])`下列字串中找到四個的相符項目：**1a 2b 3c 4d**。 取代字串 `z$1` 會將該字串轉換為 **z1 z2 z3 z4**。
 
 ## <a name="regular-expression-examples"></a>規則運算式範例
 
@@ -52,7 +52,7 @@ Visual Studio 會使用.NET Framework 規則運算式來尋找和取代文字。
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
 |                                                                                                  比對任何單一字元 (分行符號除外)                                                                                                   |                                                         。                                                          |                                     `a.o` 會比對 "around" 中的 "aro" 和 "about" 中的 "abo"，但不比對 "across" 中的 "acro"。                                      |
 |                                                                          比對先前運算式中零個或多個項目 (比對的字元越多越好)                                                                          |                                                         \*                                                         |                                            `a*r` 會比對 "rack" 中的 "r"、"ark" 中的 "ar"，以及 "aardvark" 中的 "aar"                                            |
-|                                                                                                比對任何字元零或多次 (萬用字元\*)                                                                                                 |                                                        .\*                                                         |                                        c.\*e 比對"racket"中的"cke"、"comment"中的"comme"，以及"code"中的"code"                                        |
+|                                                                                                比對任何字元零或多次 (萬用字元 \*)                                                                                                 |                                                        .\*                                                         |                                        c.\*e 會比對 "racket" 中的 "cke"、"comment" 中的 "comme"，以及 "code" 中的 "code"                                        |
 |                                                                          比對先前運算式中一個或多個項目 (比對的字元越多越好)                                                                           |                                                         +                                                          |                                                      `e.+e` 會比對 "feeder" 中的 "eede"，但不比對 "ee"。                                                      |
 |                                                                                                 比對任何字元一或多次 (萬用字元 ?)                                                                                                  |                                                         .+                                                         |                                                       e.+e 會比對 "feeder" 中的 "eede"，但不比對 "ee"。                                                       |
 |                                                                          比對先前運算式中零個或多個項目 (比對的字元越少越好)                                                                           |                                                        \*?                                                         |                                                     `e.*?e` 會比對 "feeder" 中的 "ee"，但不比對 "eede"。                                                      |
@@ -65,7 +65,7 @@ Visual Studio 會使用.NET Framework 規則運算式來尋找和取代文字。
 |                                                                                                                 使比對失效                                                                                                                  |                                                      (?!abc)                                                       | `real (?!ity)` 會比對 "realty" 和 "really" 中的 "real"，但不比對 "reality" 中的 "real"。 它也會在 "realityreal" 中找到第二個 "real" (但不是第一個 "real")。 |
 |                                                                                            比對任何不在特定一組字元中的字元。                                                                                             |                                                       [^abc]                                                       |                             `be[^n-t]` 會比對 "before" 中的 "bef"、"behind" 中的 "beh" 和 "below" 中的 "bel"，但不比對 "beneath"。                             |
 |                                                                                           比對符號之前或之後的運算式。                                                                                           |                                                       &#124;                                                       |                                              `(sponge&#124;mud) bath` 會比對 "sponge bath" 和 "mud bath"。                                               |
-|                                                                                                    逸出反斜線之後的字元                                                                                                     |                                          \|`\^` 比對字元 ^。                                           |                                                                                                                                                           |
+|                                                                                                    逸出反斜線之後的字元                                                                                                     |                                          \|`\^` 會比對 ^ 字元。                                           |                                                                                                                                                           |
 |                                                                                        指定前置字元或群組的出現次數。                                                                                        |                                     {x}，其中 x 是發生次數。                                      |                           `x(ab){2}x` 會比對 "xababx"，而 `x(ab){2,3}x` 會比對 "xababx" 和 "xabababx"，但不比對 "xababababx"。                           |
 | 比對 Unicode 字元類別中的文字，其中 “X” 是 Unicode 數字。 如需 Unicode 字元類別的詳細資訊，請參閱 <br /><br /> [Unicode Standard 5.2 字元屬性](http://www.unicode.org/versions/Unicode5.2.0/ch04.pdf)。 |                                                       \p{X}                                                        |                                                       `\p{Lu}` 會比對 "Thomas Doe" 中的 "T" 和 "D"。                                                       |
 |                                                                                                                比對字邊界                                                                                                                | `\b` (在字元類別之外 \b 會指定字邊界，在字元類別內則會指定退格鍵)。 |                                                     `\bin` 會比對 "inside" 中的 "in"，但不比對 "pinto"。                                                      |
@@ -78,4 +78,3 @@ Visual Studio 會使用.NET Framework 規則運算式來尋找和取代文字。
 |                                                                                                            比對引號內的字串                                                                                                             |                                             ((\\".+?\\")&#124;('.+?'))                                             |                                                    比對單引號或雙引號內的任何字串。                                                     |
 |                                                                                                             比對十六進位數字                                                                                                              |                                              \b0[xX]([0-9a-fA-F]\)\b                                               |                                                          比對 "0xc67f" 但不比對 "0xc67fc67f"。                                                           |
 |                                                                                                             比對整數和小數                                                                                                             |                                               \b[0-9]\*\\。\*[0-9] + \b                                               |                                                                     會比對 "1.333"。                                                                      |
-

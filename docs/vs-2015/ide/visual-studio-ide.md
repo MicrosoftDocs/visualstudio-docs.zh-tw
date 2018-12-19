@@ -1,6 +1,6 @@
 ---
-title: Visual Studio IDE | Microsoft Docs
-ms.custom: ''
+title: Visual Studio 2015 |Microsoft Docs
+titleSuffix: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
@@ -12,12 +12,12 @@ caps.latest.revision: 36
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 327de2e75b089e7ba836837c3c29c0d92d9ad864
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: c6bd4e34e25add01de6e6e54c2439c2ca80ccf33
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49852709"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062479"
 ---
 # <a name="visual-studio-ide"></a>Visual Studio IDE
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,13 +25,13 @@ Microsoft Visual Studio 2015 是一套建立軟體的工具，適用於從規劃
 
 您可以使用 Visual Studio 來建立許多種類的應用程式，從簡單的市集應用程式和行動用戶端的遊戲，到能讓企業和資料中心營運的大型、複雜的系統。 您可以建立：
 
-- 應用程式和遊戲執行於 Windows，但也 Android 和 iOS。
+- 應用程式和遊戲，這些不只能在 Windows 上執行，也能在 Android 和 iOS 上執行。
 
-- ASP.NET、 JQuery、 AngularJS 和其他常用架構為基礎的網站和 web 服務。
+- 以 ASP.NET、JQuery、AngularJS 和其他常用架構為基礎的網站和 Web 服務。
 
-- 應用程式平台和裝置如 Azure、 Office、 Sharepoint、 Hololens、 Kinect 和物聯網，舉幾個例子。
+- 應用程式，供各種不同平台和裝置使用，例如 Azure、Office、Sharepoint、Hololens、Kinect 和物聯網等。
 
-- 遊戲及圖形密集應用程式的各種 Windows 裝置，包括 Xbox 在內使用 DirectX。
+- 使用 DirectX 提供適用於各種 Wondows 裝置包括 Xbox 在內的遊戲與大量圖形的應用程式。
 
 根據預設，Visual Studio 提供對於 C#、C 及 C++、JavaScript、F# 和 Visual Basic 的支援。 Visual Studio 透過 [Visual Studio Tools for Unity](../cross-platform/visual-studio-tools-for-unity.md) 延伸模組和 [Visual Studio Tools for Apache Cordova](http://msdn.microsoft.com/library/db446f2c-6ba4-4c76-aac5-4c66f43b8c42)分別與 Unity 及 Apache Cordova 等協力廠商應用程式密切合作及整合。 您可以建立執行特定工作的自訂工具來自行擴充 Visual Studio。
 
@@ -42,7 +42,7 @@ Microsoft Visual Studio 2015 是一套建立軟體的工具，適用於從規劃
 ## <a name="visual-studio-setup"></a>Visual Studio 設定
  您可以在 [Visual Studio 版本](http://www.visualstudio.com/products/visual-studio-with-msdn-overview-vs)找到最適合您的 Visual Studio 版本。
 
- 您可以從 [Visual Studio 下載](http://www.visualstudio.com/downloads/download-visual-studio-vs.aspx)下載並安裝 Visual Studio 2015。 若要深入了解安裝程序，請參閱[安裝 Visual Studio 2015](../install/install-visual-studio-2015.md)。
+ 您可以從 [Visual Studio 下載](http://www.visualstudio.com/downloads/download-visual-studio-vs.aspx)下載並安裝 Visual Studio 2015。 如果您需要進一步了解安裝程序，請參閱[安裝 Visual Studio 2015](../install/install-visual-studio-2015.md)。
 
 ## <a name="ide-basics"></a>IDE 的基本概念
  下圖顯示 Visual Studio IDE 與開啟的專案，以及用於在專案檔案中巡覽的 [方案總管] 視窗和用於巡覽原始檔控制及工作項目追蹤的 [Team Explorer] 視窗。 下面將更詳細地說明所叫出之標題列中的功能。
@@ -62,7 +62,7 @@ Microsoft Visual Studio 2015 是一套建立軟體的工具，適用於從規劃
 
  !['new project' 的快速啟動結果](../ide/media/productivity-quicklaunch.png "Productivity_QuickLaunch")
 
- MSDN 是提供技術文件的 Microsoft 網站；您目前就正在 MSDN 上閱讀這個頁面！ 在 Visual Studio 中，您可以按 **F1** 鍵，移至使用中視窗的 MSDN 說明頁面。 您也可以在程式碼編輯器中按 **F1** 鍵，移至目前插入號位置的應用程式開發介面或關鍵字之 MSDN 說明頁面。 例如，在 C# 檔案中，將插入號在某處，或只在結尾`System.String`宣告，然後按**F1**移至 MSDN 說明頁面<xref:System.String>。
+ MSDN 是提供技術文件的 Microsoft 網站；您目前就正在 MSDN 上閱讀這個頁面！ 在 Visual Studio 中，您可以按 **F1** 鍵，移至使用中視窗的 MSDN 說明頁面。 您也可以在程式碼編輯器中按 **F1** 鍵，移至目前插入號位置的應用程式開發介面或關鍵字之 MSDN 說明頁面。 例如，在 C# 檔案中，於某處放入插入號，或只在 `System.String` 宣告的結尾放入插入號，然後按 **F1** 鍵以移至 <xref:System.String> 的 MSDN 說明頁面。
 
 ### <a name="giving-feedback"></a>提供意見反應
  不管何時，只要您願意，就能很簡單地在 Visual Studio 上給我們意見反應。 按一下 **QuickLaunch** 旁邊標題列的意見反應圖示，然後按一下 [回報問題]  或 [提供建議] 。 Visual Studio 的發行前版本還有 [為此產品評分]  選項。 我們會查看所有意見，並用來改善產品。 如需詳細資訊，請參閱 [Talk to Us](../ide/talk-to-us.md)。
@@ -114,7 +114,7 @@ Microsoft Visual Studio 2015 是一套建立軟體的工具，適用於從規劃
 
  ![程式碼編輯器中的 GreetingsConsoleApp.cpp](../ide/media/c-ide-editorlinenumberswordwrapon.png "C + + IDE_EditorLineNumbersWordWrapOn")
 
- 文字編輯器可與許多產能功能緊密互動 (如果您想要的話)，協助您更快撰寫更好的程式碼。 這些功能會因語言而異，且您不必使用任何語言 (請在 [快速啟動] 中輸入 "Editor") 來開啟或關閉功能：下列為某些常見的產能功能：
+ 文字編輯器可與許多產能功能緊密互動 (如果您想要的話)，協助您更快撰寫更好的程式碼。 功能會視語言而異，您不必使用任何這些 （型別 「 編輯器 」，在 快速啟動） 若要開啟或關閉功能：一些常見的生產力功能包括：
 
 1. [Refactoring](../ide/refactoring-in-visual-studio.md) 包含一些作業，例如智慧型的變數重新命名、將選取的多行程式碼移動到個別函式、將程式碼移到其他位置、重新排序函式參數等等。
 
@@ -146,7 +146,7 @@ Microsoft Visual Studio 2015 是一套建立軟體的工具，適用於從規劃
 
 建置專案代表要編譯原始程式碼，並執行任何用以產生可執行檔的必要步驟。 不同語言有不同的建置作業，而一般網站則完全不用建置。 不論專案的類型為何，[建置] 功能表是這些命令的標準位置。 按 F5，即可以單一按鍵編譯和執行您的程式碼。 每個編譯器都可完全透過 IDE 設定。 [建置] 工具列可讓您指定是否要建置您程式的偵錯版本，搭配符號和額外的錯誤檢查來支援中斷點和偵錯工具的逐步執行，或指定建置您最後要交給客戶的發行組建。 在專案屬性頁上，您可以設定更多建置設定，以及許多其他的設定。 在 [方案總管] 中，以滑鼠右鍵按一下專案節點，並選擇 [屬性]。 您也可以從命令列執行建置。
 
-從組建中，包含錯誤或成功訊息，輸出會出現在**輸出**視窗。 **錯誤清單**顯示建置錯誤的詳細的資訊。
+組建的輸出會出現在 [輸出] 視窗，包含錯誤或成功訊息。 **錯誤清單**顯示建置錯誤的詳細的資訊。
 
 ## <a name="debugging-your-code"></a>偵錯您的程式碼
  Visual Studio 相當先進的偵錯程式可讓您對本機專案、遠端裝置或模擬器上執行的程式碼偵錯，例如適用 Android 或 Windows Phone 的模擬器。 您可以一次一個逐步執行程式碼陳述式，並隨時檢查變數，也可以逐步執行多執行緒應用程式，您也可以設定當指定的條件為真時才會叫用的中斷點。 這些全部都可以在程式碼編輯器本身中設定，如此您就不必離開程式碼的內容。
@@ -196,7 +196,7 @@ Microsoft Visual Studio 2015 是一套建立軟體的工具，適用於從規劃
 |||
 |-|-|
 |[使用者帳戶和更新](../ide/user-accounts-and-updates.md)|[個人化 IDE](../ide/personalizing-the-visual-studio-ide.md)|
-|[何：在 IDE 中四處移動](../ide/how-to-move-around-in-the-visual-studio-ide.md)|[Visual Studio 使用者開發入門](../ide/get-started-developing-with-visual-studio.md)|
+|[如何：在 IDE 中四處移動](../ide/how-to-move-around-in-the-visual-studio-ide.md)|[Visual Studio 使用者開發入門](../ide/get-started-developing-with-visual-studio.md)|
 |[尋找和使用 Visual Studio 延伸模組](../ide/finding-and-using-visual-studio-extensions.md)|[專案和方案](../ide/solutions-and-projects-in-visual-studio.md)|
 |[撰寫程式碼](../ide/writing-code-in-the-code-and-text-editor.md)|[Visual Studio 偵錯](../debugger/debugging-in-visual-studio.md)|
 |[分析工具](../profiling/profiling-tools.md)|[改善程式碼品質](http://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)|
@@ -206,10 +206,10 @@ Microsoft Visual Studio 2015 是一套建立軟體的工具，適用於從規劃
 |[Visual Studio 範例](../ide/visual-studio-samples.md)|[Microsoft Help Viewer](../ide/microsoft-help-viewer.md)|
 |[全球化和當地語系化應用程式](../ide/globalizing-and-localizing-applications.md)|[UI 參考](../ide/reference/general-user-interface-elements-visual-studio.md)|
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [安裝 Visual Studio 2015](../install/install-visual-studio-2015.md)
-- [編輯您的程式碼](https://www.visualstudio.com/features/ide-vs)
+- [編輯程式碼](https://www.visualstudio.com/features/ide-vs)
 - [Visual Studio 2015 的新功能](../what-s-new-in-visual-studio-2015.md)
 - [移植、移轉和升級 Visual Studio 專案](../porting/porting-migrating-and-upgrading-visual-studio-projects.md)
 - [告訴我們](../ide/talk-to-us.md)

@@ -1,6 +1,6 @@
 ---
-title: 疑難排解 Visual Studio 偵錯工具中的中斷點 |Microsoft Docs
-ms.custom: ''
+title: 進行偵錯工具中斷點疑難排解 |Microsoft Docs
+ms.custom: seodec18
 ms.date: 01/23/2018
 ms.technology: vs-ide-debug
 ms.topic: troubleshooting
@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b285fd77c7e1ee25e6c82fc3f8c0ce48b4429e8b
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
-ms.translationtype: MT
+ms.openlocfilehash: e27d9dee1713b8d9e748ad13d75d809f2057f24a
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39155395"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53052847"
 ---
 # <a name="troubleshoot-breakpoints-in-the-visual-studio-debugger"></a>疑難排解 Visual Studio 偵錯工具中的中斷點
 
@@ -24,7 +24,7 @@ ms.locfileid: "39155395"
 
 下列兩節會說明重要的警告，以及如何加以修正。 
 
-### <a name="no-symbols-have-been-loaded-for-this-document"></a>「 這份文件已不載入任何符號 」 
+### <a name="no-symbols-have-been-loaded-for-this-document"></a>「未載入此文件的符號」 
 
 移至**模組** 視窗 (**偵錯** > **Windows** > **模組**)，並檢查您的模組是否為載入。  
 * 如果您的模組載入時，請檢查**符號狀態**欄，查看是否已載入符號。 
@@ -36,7 +36,7 @@ ms.locfileid: "39155395"
 
 * 如果未載入您的模組，請檢查下列命令來找出原因： 
   * 請確認您正在偵錯正確的處理序。 
-  * 請檢查您正在偵錯正確類型的程式碼。 您可以找出何種程式碼偵錯工具已設定為在偵錯**處理程序** 視窗 (**偵錯** > **Windows**  >  **處理序**)。 比方說，如果您嘗試偵錯 C# 程式碼，確認您偵錯工具設定為適當類型的.NET Framework (例如，Managed (v4\*) 與受管理 (v2\*/v3\*) 與受管理 (CoreCLR))。 
+  * 請檢查您正在偵錯正確類型的程式碼。 您可以找出何種程式碼偵錯工具已設定為在偵錯**處理程序** 視窗 (**偵錯** > **Windows**  >  **處理序**)。 比方說，如果您嘗試偵錯C#程式碼中，確認您偵錯工具會設定為適當類型的.NET Framework (例如，Managed (v4\*) 與受管理 (v2\*/v3\*) 與受管理 (CoreCLR)). 
 
 ### <a name="-the-current-source-code-is-different-from-the-version-built-into"></a>"… 目前的原始碼與不同版本內建...」 
 
@@ -54,7 +54,7 @@ ms.locfileid: "39155395"
 
 以下是要檢查的一些事項： 
 1. 如果您的程式碼是在多個處理序或多部電腦執行，請確定您正在偵錯的正確的處理序或電腦。  
-2. 確認您的程式碼正在執行。 若要測試您的程式碼正在執行，將呼叫加入`System.Diagnostics.Debugger.Break`(C# /VB) 或`__debugbreak`（c + +） 的程式碼行，您嘗試設定的中斷點，然後重建您的專案。 
+2. 確認您的程式碼正在執行。 若要測試您的程式碼正在執行，將呼叫加入`System.Diagnostics.Debugger.Break`(C#/VB) 或`__debugbreak`（c + +） 的程式碼行，您嘗試設定的中斷點，然後重建您的專案。 
 3. 如果您正在偵錯最佳化程式碼，請確定函式設定中斷點的位置不在內嵌於另一個函式。 `Debugger.Break`中先前的核取所述的測試可以用來測試此問題。 
 
 ## <a name="i-deleted-a-breakpoint-but-i-continue-to-hit-it-when-i-start-debugging-again"></a>我刪除了中斷點，但再次啟動偵錯時繼續叫用此中斷點 

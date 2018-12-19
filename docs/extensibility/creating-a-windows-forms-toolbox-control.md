@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 34c263479be170b9f108c4cbc095be737f0b2b22
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a44dfd224324ba641e70e0cfe6ded87f88fe6765
+ms.sourcegitcommit: 8cdc6e2ad2341f34bd6b02859a7c975daa0c9320
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49936034"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53307699"
 ---
 # <a name="create-a-windows-forms-toolbox-control"></a>建立 Windows Forms 工具箱控制項
 Windows Forms 工具箱控制項項目範本包含在 Visual Studio 擴充性工具 (VS SDK) 可讓您建立的控制項，會自動新增至**工具箱**安裝擴充功能時。 本主題說明如何使用範本來建立簡單的計數器控制項，您就可以散發給其他使用者。  
@@ -77,16 +77,16 @@ Windows Forms 工具箱控制項項目範本包含在 Visual Studio 擴充性工
 3.  建立下列公用屬性宣告。  
   
     ```csharp  
-    public int Value {  
+    public int Value {  
         get { return currentValue; }   
     }  
   
-    public string Message {  
+    public string Message {  
         get { return displayText; }  
         set { displayText = value; }  
     }  
   
-    public bool ShowReset {  
+    public bool ShowReset {  
         get { return btnReset.Visible; }  
         set { btnReset.Visible = value; }  
     }  
@@ -98,7 +98,7 @@ Windows Forms 工具箱控制項項目範本包含在 Visual Studio 擴充性工
 4.  將下列程式碼置於`Load`控制項事件。  
   
     ```csharp  
-    private void Counter_Load(object sender, EventArgs e)  
+    private void Counter_Load(object sender, EventArgs e)  
     {  
         currentValue = 0;  
         label1.Text = Message + Value;  
@@ -111,7 +111,7 @@ Windows Forms 工具箱控制項項目範本包含在 Visual Studio 擴充性工
 5.  建立下列公用方法，以遞增計數器。  
   
     ```csharp  
-    public void Increment()  
+    public void Increment()  
     {  
         currentValue++;  
         label1.Text = displayText + Value;  
@@ -123,7 +123,7 @@ Windows Forms 工具箱控制項項目範本包含在 Visual Studio 擴充性工
 6.  加入宣告`Incremented`控制項類別的事件。  
   
     ```csharp  
-    public event EventHandler Incremented;  
+    public event EventHandler Incremented;  
     ```  
   
      呼叫端可以新增處理常式，此事件以回應變更計數器的值。  
@@ -131,7 +131,7 @@ Windows Forms 工具箱控制項項目範本包含在 Visual Studio 擴充性工
 7.  返回設計檢視，然後按兩下**重設**按鈕，以產生`btnReset_Click`事件處理常式，然後在下列範例所示填入。  
   
     ```csharp  
-    private void btnReset_Click(object sender, EventArgs e)  
+    private void btnReset_Click(object sender, EventArgs e)  
     {  
         currentValue = 0;  
         label1.Text = displayText + Value;  
@@ -145,7 +145,7 @@ Windows Forms 工具箱控制項項目範本包含在 Visual Studio 擴充性工
   
     ```csharp  
     [ProvideToolboxControl("General", false)]  
-    public partial class Counter : UserControl  
+    public partial class Counter : UserControl  
     ```  
   
 ### <a name="test-the-control"></a>測試控制項  
@@ -190,7 +190,7 @@ Windows Forms 工具箱控制項項目範本包含在 Visual Studio 擴充性工
   
      表單隨即開啟。 `Counter`控制項會顯示下列文字。  
   
-     **計數： 0**  
+     **計數：0**  
   
 14. 按一下 [測試] 。  
   
@@ -209,7 +209,7 @@ Windows Forms 工具箱控制項項目範本包含在 Visual Studio 擴充性工
      此計數器會重設為**0**。  
   
 ## <a name="next-steps"></a>後續步驟  
- 當您建置**工具箱**控制項，Visual Studio 會建立名為的檔案*ProjectName.vsix*中<em>\bin\debug\*您專案的資料夾。您可以將控制項部署上傳 *.vsix</em>檔案到網路或網站。 當使用者在開啟 *.vsix*是安裝檔案，該控制項，並將其加入 Visual Studio**工具箱**使用者的電腦上。 或者，您可以上傳 *.vsix*的檔案[Visual Studio 組件庫](http://go.microsoft.com/fwlink/?LinkID=123847)網站，讓使用者可以瀏覽來尋找它**工具** >  **延伸模組和更新**對話方塊。  
+ 當您建置**工具箱**控制項，Visual Studio 會建立名為的檔案*ProjectName.vsix*您專案的 \bin\debug\ 資料夾中。 您可以將控制項部署上傳 *.vsix*檔案到網路或網站。 當使用者在開啟 *.vsix*是安裝檔案，該控制項，並將其加入 Visual Studio**工具箱**使用者的電腦上。 或者，您可以上傳 *.vsix*的檔案[Visual Studio Marketplace](http://go.microsoft.com/fwlink/?LinkID=123847) ，讓使用者可以瀏覽來尋找它**工具** >  **延伸模組和更新**對話方塊。  
   
 ## <a name="see-also"></a>另請參閱  
  [擴充 Visual Studio 的其他部分](../extensibility/extending-other-parts-of-visual-studio.md)   

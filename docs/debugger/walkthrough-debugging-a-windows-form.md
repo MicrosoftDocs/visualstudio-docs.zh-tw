@@ -1,6 +1,6 @@
 ---
-title: 逐步解說： 偵錯 Windows Form |Microsoft Docs
-ms.custom: ''
+title: 偵錯 Windows Form |Microsoft Docs
+ms.custom: seodec18
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -24,15 +24,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dd847a4db232d32c941722d5ee537a21bdaf33a8
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
-ms.translationtype: HT
+ms.openlocfilehash: 545155f622111c2452af3bacb57fd88930ce5ab0
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349162"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53066752"
 ---
 # <a name="walkthrough-debugging-a-windows-form"></a>逐步解說：偵錯 Windows Form
-Windows 表單是其中一個最常見的受管理應用程式。 在 Windows Form 建立標準的 Windows 應用程式。 您可以完成此逐步解說使用 Visual Basic、 C# 或 c + +。  
+Windows 表單是其中一個最常見的受管理應用程式。 在 Windows Form 建立標準的 Windows 應用程式。 您可以完成此逐步解說使用 Visual Basic 中， C#，或 c + +。  
   
  首先，您必須先關閉任何開啟的方案。  
   
@@ -49,9 +49,9 @@ Windows 表單是其中一個最常見的受管理應用程式。 在 Windows Fo
   
      [ **新增專案** ] 對話方塊隨即出現。  
   
-2.  在 [專案類型] 窗格中，開啟**Visual Basic**， **Visual C#**，或**Visual c + +** 節點，然後  
+2.  在 [專案類型] 窗格中，開啟**Visual Basic**，**視覺化C#** ，或**Visual c + +** 節點，然後  
   
-    1.  Visual Basic 或 Visual C#，請選取**Windows 桌面** > **Windows 表單應用程式**。  
+    1.  Visual Basic 或 Visual C#，選取**Windows 桌面** > **Windows 表單應用程式**。  
   
     2.  Visual c + + 中，選取**Windows 桌面應用程式**。  
   
@@ -65,7 +65,7 @@ Windows 表單是其中一個最常見的受管理應用程式。 在 Windows Fo
   
      [工具箱] 便會開啟。 如需詳細資訊，請參閱[工具箱](../ide/reference/toolbox.md)。  
   
-6.  在 工具箱 中，按一下** 按鈕**控制項，將控制項拖曳至表單的設計介面。 將按鈕放在表單上。  
+6.  在 工具箱 中，按一下 **按鈕**控制項，將控制項拖曳至表單的設計介面。 將按鈕放在表單上。  
   
 7.  在 [工具箱] 中，按一下**TextBox**控制項，將控制項拖曳至表單的設計介面。 卸除**TextBox**表單上。  
   
@@ -73,7 +73,7 @@ Windows 表單是其中一個最常見的受管理應用程式。 在 Windows Fo
   
      這會帶您前往字碼頁。 資料指標應該在`button1_Click`。  
   
-10. 函式中`button1_Click`。，新增下列程式碼：  
+10. 在 `button1_Click` 函式中，新增下列程式碼：  
   
     ```vb  
     textBox1.Text = "Button was clicked!"
@@ -89,7 +89,7 @@ Windows 表單是其中一個最常見的受管理應用程式。 在 Windows Fo
   
 11. 在 [建置] 功能表上，選取 [建置方案]。  
   
-     未出現任何錯誤，應該可以建置專案。  
+     專案應該會建置而無錯誤。  
   
 ## <a name="debug-your-form"></a>偵錯您的表單  
  現在，您已準備好開始偵錯。  
@@ -110,12 +110,12 @@ Windows 表單是其中一個最常見的受管理應用程式。 在 Windows Fo
     textBox1->Text = "Button was clicked!";  
     ``` 
   
-     會出現一個紅點，並且該行上的文字會以紅色反白顯示。 紅點表示中斷點。 如需詳細資訊，請參閱 <<c0> [ 中斷點](https://msdn.microsoft.com/fe4eedc1-71aa-4928-962f-0912c334d583)。 當您在偵錯工具下執行應用程式時，偵錯工具會在遇到程式碼的位置中斷執行。 接著您就可以檢視應用程式的狀態並對它進行偵錯。  
+     會出現一個紅點，並且該行上的文字會以紅色反白顯示。 紅點表示中斷點。 如需詳細資訊，請參閱[中斷點](https://msdn.microsoft.com/fe4eedc1-71aa-4928-962f-0912c334d583)。 當您在偵錯工具下執行應用程式時，偵錯工具會在遇到程式碼的位置中斷執行。 接著您就可以檢視應用程式的狀態並對它進行偵錯。  
   
     > [!NOTE]
     >  您也可以以滑鼠右鍵按一下任何一行程式碼，指向**中斷點**，然後按一下**插入中斷點**這一行加入中斷點。  
   
-2.  ON**偵錯**功能表上，選擇**開始**。  
+2.  在 [偵錯] 功能表上選擇 [啟動]。  
   
      Windows Form 會開始執行。  
   
@@ -125,13 +125,13 @@ Windows 表單是其中一個最常見的受管理應用程式。 在 Windows Fo
   
 4.  在上**偵錯** 功能表中，選擇**Windows**，然後**監看式**，然後按一下**監看式 1**。  
   
-5.  在 **監看式 1**視窗中，按一下空白資料列。 在 **名稱**資料行中輸入`textBox1.Text`（如果您使用 Visual Basic 或 Visual C#） 或`textBox1->Text`（如果您使用 c + +），然後按 ENTER 鍵。  
+5.  在 **監看式 1**視窗中，按一下空白資料列。 在 **名稱**資料行中輸入`textBox1.Text`(如果您使用 Visual Basic 或 Visual C#) 或`textBox1->Text`（如果您使用 c + +），然後按 ENTER 鍵。  
   
      **監看式 1**視窗會顯示此變數的值以引號括起來：  
   
     `""`  
  
-6.  在 **偵錯**功能表上，選擇**逐步執行**。  
+6.  在 [偵錯] 功能表上，選擇 [逐步執行]。  
   
      TextBox1.Text 變更的值**監看式 1**視窗：  
   
@@ -147,7 +147,7 @@ Windows 表單是其中一個最常見的受管理應用程式。 在 Windows Fo
   
      這會從您的程式碼移除中斷點。  
   
-10. 在 **偵錯**功能表上，選擇**停止偵錯**。  
+10. 在 [偵錯] 功能表中，選擇 [停止偵錯]。  
   
 ## <a name="attach-to-your-windows-form-application-for-debugging"></a>附加至您的 Windows Form 應用程式進行偵錯  
  在 [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] 中，您可以將偵錯工具附加至執行中的處理序。 如果您使用的 Express 版本，不支援這項功能。  

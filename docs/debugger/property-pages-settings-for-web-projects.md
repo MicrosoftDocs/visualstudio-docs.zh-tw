@@ -1,6 +1,6 @@
 ---
-title: Web 專案的屬性頁設定 |Microsoft Docs
-ms.custom: ''
+title: Web 專案的屬性設定 |Microsoft Docs
+ms.custom: seodec18
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
 ms.topic: reference
@@ -22,21 +22,21 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e859f94f9ed86b7e94c6a30153cece18663f337f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: fbe5ab8d863cbf77647bde8b8d7da69d9c4823e5
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49868491"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53064215"
 ---
 # <a name="property-pages-settings-for-web-projects"></a>Web 專案的屬性頁設定
-您可以變更網站偵錯組態中的屬性設定**屬性頁** 對話方塊中所述[偵錯和發行組態](../debugger/how-to-set-debug-and-release-configurations.md)。 下表顯示與偵錯工具相關的設定中的位置**屬性頁** 對話方塊。  
+您可以在 [屬性頁] 對話方塊中使用[偵錯和發行組態](../debugger/how-to-set-debug-and-release-configurations.md)中所討論的方法，變更網站偵錯組態的屬性設定。 下表顯示 [屬性頁] 對話方塊中與偵錯工具相關的設定位置。  
   
 ### <a name="configuration-properties-folder-start-options-category"></a>組態屬性資料夾 (起始選項分類)  
   
 | **設定** | **描述** |
 | - | - |
-| **啟動動作** | 標題，用以分類與應用程式啟動相關的選項。 |
+| **起始動作** | 標題，用以分類與應用程式啟動相關的選項。 |
 | **使用目前的頁面** | 指定目前的頁面為偵錯的起始點。 |
 | **特定的頁面：** | 指定您要開始偵錯的網頁。 |
 | **起始外部程式：** | 指定用來啟動您要偵錯的應用程式之命令。 |
@@ -45,13 +45,13 @@ ms.locfileid: "49868491"
 | **起始 URL** | 指定您要偵錯的 Web 應用程式之位置。 |
 | **不要開啟頁面。等候來自外部應用程式的要求** | 等候來自外部應用程式的要求。 這個選項不會啟動 Internet Explorer 或其他應用程式。 只會在應用程式呼叫時準備進行偵錯。 |
 | **伺服器** | 標題，用以分類與使用的伺服器相關的選項。 |
-| **使用預設 Web 伺服器** | 使用預設的 Web 伺服器。 |
-| **使用自訂的伺服器** | 允許您輸入基礎 URL 用以做為伺服器。 |
+| **使用預設網頁伺服器** | 使用預設的 Web 伺服器。 |
+| **使用自訂伺服器** | 允許您輸入基礎 URL 用以做為伺服器。 |
 | **偵錯工具** | 標題，用以分類與要進行之偵錯類型相關的選項。 |
-| **ASP.NET 偵錯** | 啟用為 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 開發平台所撰寫的伺服器頁面偵錯。 您必須指定中的 URL**起始 URL**。 |
-| **原生程式碼偵錯** | 讓您可以從 Managed 應用程式偵錯原生 (Unmanaged) Win32 程式碼的呼叫。 |
+| **ASP.NET 偵錯** | 啟用為 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 開發平台所撰寫的伺服器頁面偵錯。 您必須在 [起始 URL] 中指定 URL。 |
+| **機器碼偵錯** | 讓您可以從 Managed 應用程式偵錯原生 (Unmanaged) Win32 程式碼的呼叫。 |
 | **SQL Server 偵錯** | 允許 SQL Server 資料庫物件偵錯。 |
 | **Silverlight 偵錯** | 允許偵錯 Silverlight 元件。 |
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [偵錯設定和準備](../debugger/debugger-settings-and-preparation.md)

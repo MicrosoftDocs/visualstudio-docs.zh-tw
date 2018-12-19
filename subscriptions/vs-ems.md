@@ -9,12 +9,12 @@ description: 了解 Visual Studio 訂用帳戶中所含的 Enterprise Mobility +
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 96f093f6f267e80c5136bd87a009dd25e43ab2cf
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 81d93a4a030fd4a588903073d065041a6dbd69e6
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49930111"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283284"
 ---
 # <a name="enterprise-mobility--security-ems-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶的 Enterprise Mobility + Security (EMS)
 
@@ -27,42 +27,41 @@ Visual Studio Enterprise 年度雲端和標準訂用帳戶包含 Enterprise Mobi
 
 若要使用 EMS，您必須設定帳戶，或使用現有的帳戶登入。
 
-1. 登入 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)。
+1.  登入 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)。
 
-2. 在 [工具] 區段中找出 [Enterprise Mobility & Security] 磚，並按一下位於磚底部的 [取得代碼] 連結。   您會收到已成功擷取代碼的通知。  按一下 [啟用]。
-   > [!div class="mx-imgBorder"]
-   > ![EMS 權益磚](_img/vs-ems/vs-ems-tile.png)
+2.  在 [工具] 區段中找出 [Enterprise Mobility & Security] 磚，並按一下位於磚底部的 [取得代碼] 連結。   您會收到已成功擷取代碼的通知。  按一下 [啟用]。
+    > [!div class="mx-imgBorder"]
+    > ![EMS 權益磚](_img\vs-ems\vs-ems-tile.png)
 
-3. 在 Enterprise Mobility + Security E5 頁面上，您可以使用現有訂用帳戶登入，或建立新的訂用帳戶。  若要建立新帳戶，請完成要求的資訊，然後按一下 [下一步]。
-   > [!div class="mx-imgBorder"]
-   > ![EMS 權益建立帳戶](_img/vs-ems/vs-ems-create-account-cropped.png)
+2.  在 Enterprise Mobility + Security E5 頁面上，您可以使用現有訂用帳戶登入，或建立新的訂用帳戶。  若要建立新帳戶，請完成要求的資訊，然後按一下 [下一步]。
+    > [!div class="mx-imgBorder"]
+    > ![EMS 權益建立帳戶](_img\vs-ems\vs-ems-create-account-cropped.png)
 
-4. 建立您的使用者識別碼和密碼。  按一下 [Create my account] (建立我的帳戶) 繼續。
-   > [!div class="mx-imgBorder"]
-   > ![EMS 權益建立使用者識別碼](_img/vs-ems/vs-ems-userID-cropped.png)
+3. 建立您的使用者識別碼和密碼。  按一下 [Create my account] (建立我的帳戶) 繼續。
+    > [!div class="mx-imgBorder"]
+    > ![EMS 權益建立使用者識別碼](_img\vs-ems\vs-ems-userID-cropped.png)
 
-5. 接下來，透過電話或簡訊，提供電話號碼來接收驗證碼。  輸入代碼，然後按一下 [下一步]。
-   > [!div class="mx-imgBorder"]
-   > ![EMS 權益驗證](_img/vs-ems/vs-ems-robot-cropped.png)
+4.  接下來，透過電話或簡訊，提供電話號碼來接收驗證碼。  輸入代碼，然後按一下 [下一步]。
+    > [!div class="mx-imgBorder"]
+    > ![EMS 權益驗證](_img\vs-ems\vs-ems-robot-cropped.png)
 
-6. 下一頁會顯示您的登入頁面和使用者識別碼。  儲存該資訊供日後使用。  按一下 [您已準備就緒...]
-   > [!div class="mx-imgBorder"]
-   > ![EMS 權益已建立帳戶](_img/vs-ems/vs-ems-save-info-cropped.png)
+5.  下一頁會顯示您的登入頁面和使用者識別碼。  儲存該資訊供日後使用。  按一下 [您已準備就緒...]
+    > [!div class="mx-imgBorder"]
+    > ![EMS 權益已建立帳戶](_img\vs-ems\vs-ems-save-info-cropped.png)
 
-7. EMS 需要存取 Microsoft [Azure 入口網站](https://azure.microsoft.com)。  遵循 EMS 登陸頁面上的三個步驟來啟用您的 Azure 訂用帳戶、新增使用者，以及設定 EMS。
+6.  EMS 需要存取 Microsoft [Azure 入口網站](https://azure.microsoft.com)。  遵循 EMS 登陸頁面上的三個步驟來啟用您的 Azure 訂用帳戶、新增使用者，以及設定 EMS。
 
 ## <a name="eligibility"></a>資格
-
 | 訂用帳戶層級                                                 |     通道                                            | 優勢                                                          | 可續約？    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (標準、年度雲端)   | VL、Azure、零售、選取的 NFR<sup>1</sup> | 可用       |  是          |
-| Visual Studio Professional (標準<sup>2</sup>、年度雲端) | VL、Azure、零售                                       | 可用                                                            |  是          |
-| Visual Studio Test Professional (標準訂用帳戶)                         | VL、零售                                              | 無法使用                                             |  N/A          |
-| MSDN 平台 (標準)                                          | VL、零售                                              | 無法使用                                              |  N/A          |
+| Visual Studio Enterprise (標準、年度雲端)   | VL, Azure, 零售, 選取的 NFR<sup>1</sup> | 可用       |  [是]          |
+| Visual Studio Professional (標準<sup>2</sup>、年度雲端) | VL, Azure, 零售                                       | 可用                                                            |  [是]          |
+| Visual Studio Test Professional (標準訂用帳戶)                         | VL, 零售                                              | 無法使用                                             |  N/A          |
+| MSDN 平台 (標準)                                          | VL, 零售                                              | 無法使用                                              |  N/A          |
 | Visual Studio Enterprise、Visual Studio Professional (每月雲端) | Azure | 無法使用 | N/A |
 | Visual Studio Dev Essentials | N/A  | 無法使用 |N/A |
 
-<sup>1</sup>  *包含：「禁止轉售 (NFR)」、Visual Studio Industry Partner (VSIP)、Microsoft Partner Network (MPN)、FTE、MCT Software & Services Developer、BizSpark。排除：Microsoft Valued Professional (MVP)、Region Director (RD)、MCT Software & Services、Imagine、Microsoft 合作夥伴網路 (Professional)。*
+<sup>1</sup>  *包含：「禁止轉售 (NFR)」、Visual Studio Industry Partner (VSIP)、Microsoft Partner Network (MPN)、FTE、MCT Software & Services Developer、BizSpark。排除：Microsoft Valued Partner (MVP)、Region Director (RD)、MCT Software & Services、Imagine、Microsoft Partner Network (Professional)。*
 
 <sup>2</sup> *排除 Microsoft Partner Network (Professional)*
 

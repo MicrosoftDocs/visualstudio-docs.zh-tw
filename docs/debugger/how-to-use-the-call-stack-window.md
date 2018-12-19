@@ -1,6 +1,6 @@
 ---
-title: 在 Visual Studio 偵錯工具中檢視呼叫堆疊 |Microsoft Docs
-ms.custom: H1Hack27Feb2017
+title: 檢視呼叫堆疊偵錯工具 |Microsoft Docs
+ms.custom: seodec18
 ms.date: 10/29/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -30,16 +30,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7804ed478fc218d1e218af6e26f5ee91071fb29c
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: fe3b266ee44b326749ed555df77dee66b8e82aae
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388021"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062347"
 ---
 # <a name="view-the-call-stack-and-use-the-call-stack-window-in-the-debugger"></a>檢視呼叫堆疊，並使用偵錯工具中的 [呼叫堆疊] 視窗
 
-您可以使用 [呼叫堆疊 **] 視窗來檢視目前堆疊上的函式或程序呼叫。 [呼叫堆疊] 視窗會顯示方法和函式的呼叫順序。 呼叫堆疊是檢查並了解應用程式執行流程的好方法。
+您可以使用 [呼叫堆疊] 視窗來檢視目前堆疊上的函式或程序呼叫。 [呼叫堆疊] 視窗會顯示方法和函式的呼叫順序。 呼叫堆疊是檢查並了解應用程式執行流程的好方法。
 
 當[偵錯符號](#bkmk_symbols)沒有可用的呼叫堆疊的一部分**呼叫堆疊**視窗可能無法顯示正確的呼叫堆疊，並改為顯示該部分的資訊：
 
@@ -49,7 +49,7 @@ ms.locfileid: "52388021"
 > [呼叫堆疊] 視窗類似於某些 IDE (例如 Eclipse) 中的 [偵錯] 檢視方塊。
 
 > [!NOTE]
-> 根據您目前使用的設定或版本，您所看到的對話方塊與功能表命令可能會與此處所描述的不同。 若要變更設定，請選取 [工具 **] 功能表上的 [匯入和匯出設定**]。  請參閱[重設設定](../ide/environment-settings.md#reset-settings)。
+> 根據您目前使用的設定或版本，您所看到的對話方塊與功能表命令可能會與此處所描述的不同。 若要變更設定，請選取 [工具] 功能表上的 [匯入和匯出設定]。  請參閱[重設設定](../ide/environment-settings.md#reset-settings)。
 
 ## <a name="view-the-call-stack-while-in-the-debugger"></a>檢視呼叫堆疊偵錯工具中
 
@@ -61,7 +61,7 @@ ms.locfileid: "52388021"
 
 ## <a name="display-non-user-code-in-the-call-stack-window"></a>在 [呼叫堆疊] 視窗中顯示非使用者程式碼
 
--   以滑鼠右鍵按一下 [呼叫堆疊 **] 視窗，然後選取 [顯示外部程式碼**]。
+-   以滑鼠右鍵按一下 [呼叫堆疊] 視窗，然後選取 [顯示外部程式碼]。
 
 非使用者程式碼是不會顯示時的任何程式碼[Just My Code](../debugger/just-my-code.md)已啟用。 在 managed 程式碼，預設會隱藏非使用者程式碼框架。 下列標記法會出現的非使用者程式碼框架取代：
 
@@ -73,13 +73,13 @@ ms.locfileid: "52388021"
 
     或者，您可以按兩下框架**呼叫堆疊**視窗切換至該範圍內。
 
-2.  選取 [切換至框架 **]。
+2.  選取 [切換至框架]。
 
-     旁邊所選取之堆疊框架，會出現尾端彎曲的綠色箭號。 執行指標會留在原來的框架中，並仍以黃色箭頭標示。 如果您從 [偵錯 **] 功能表中選取 [逐步執行**] 或 [繼續 **]，則會從原本的框架而非選取的框架繼續執行。
+     旁邊所選取之堆疊框架，會出現尾端彎曲的綠色箭號。 執行指標會留在原來的框架中，並仍以黃色箭頭標示。 如果您從 [偵錯] 功能表中選取 [逐步執行] 或 [繼續]，則會從原本框架而非選取的框架繼續執行。
 
 ## <a name="view-the-source-code-for-a-function-on-the-call-stack"></a>檢視呼叫堆疊上的函式的原始程式碼
 
--   在 [呼叫堆疊 **] 視窗，以滑鼠右鍵按一下您要查看原始程式碼的函式，然後選取 [移至原始程式碼**]。
+-   在 [呼叫堆疊] 視窗，以滑鼠右鍵按一下您要查看原始程式碼的函式，然後選取 [移至原始程式碼]。
 
 ## <a name="run-to-a-specific-function-from-the-call-stack-window"></a>從 [呼叫堆疊] 視窗執行至特定函式
 
@@ -91,13 +91,13 @@ ms.locfileid: "52388021"
 
 ## <a name="display-calls-to-or-from-another-thread"></a>顯示呼叫，或從另一個執行緒
 
--   以滑鼠右鍵按一下 [呼叫堆疊 **] 視窗，然後選取 [包含至/從其他執行緒的呼叫**]。
+-   以滑鼠右鍵按一下 [呼叫堆疊] 視窗，然後選取 [包含至/從其他執行緒的呼叫]。
 
 ## <a name="visually-trace-the-call-stack"></a>以視覺方式追蹤呼叫堆疊
 
 在 Visual Studio Enterprise （僅限），您可以檢視呼叫堆疊的 code map 偵錯時。
 
-- 在 [呼叫堆疊 **] 視窗中，開啟捷徑功能表。 選擇**Code Map 上顯示呼叫堆疊**(**Ctrl** + **Shift** + **`**)。
+- 在 [呼叫堆疊] 視窗中，開啟捷徑功能表。 選擇**Code Map 上顯示呼叫堆疊**(**Ctrl** + **Shift** + **`**)。
 
     如需詳細資訊，請參閱 <<c0> [ 偵錯時對應呼叫堆疊上的方法](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)。
 
@@ -105,7 +105,7 @@ ms.locfileid: "52388021"
 
 ## <a name="view-the-disassembly-code-for-a-function-on-the-call-stack-c-c-visual-basic-f"></a>檢視呼叫堆疊上的函式的反組譯碼程式碼 (C#，c + +、 Visual Basic 中， F#)
 
--   在 [呼叫堆疊 **] 視窗中，以滑鼠右鍵按一下您要查看反組譯程式碼的函式，然後選取 [移至反組譯碼**]。
+-   在 [呼叫堆疊] 視窗中，以滑鼠右鍵按一下您要查看反組譯程式碼的函式，然後選取 [移至反組譯碼]。
 
 ## <a name="change-the-optional-information-displayed"></a>變更顯示的選擇性資訊
 
@@ -113,7 +113,7 @@ ms.locfileid: "52388021"
 
 ## <a name="bkmk_symbols"></a> 載入模組的符號 (C#，c + +、 Visual Basic 中， F#)
 
-在 [呼叫堆疊 **] 視窗中，您可以載入目前尚未載入符號之程式碼的偵錯符號。 這些符號可能是從 Microsoft 公用符號伺服器下載的 .NET Framework 或系統符號，或是您所偵錯之電腦上符號路徑中的符號。
+在 [呼叫堆疊] 視窗中，您可以載入目前尚未載入符號之程式碼的偵錯符號。 這些符號可能是從 Microsoft 公用符號伺服器下載的 .NET Framework 或系統符號，或是您所偵錯之電腦上符號路徑中的符號。
 
 請參閱[指定符號 (.pdb) 和原始程式檔](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)。
 
@@ -125,15 +125,15 @@ ms.locfileid: "52388021"
 
 ### <a name="to-set-the-symbol-path"></a>若要設定符號路徑
 
-1.  在 [呼叫堆疊 **] 視窗中，從捷徑功能表選擇 [符號設定**]。
+1.  在 [呼叫堆疊] 視窗中，從捷徑功能表選擇 [符號設定]。
 
-     [選項 **] 對話方塊隨即開啟，並顯示 [符號**] 頁面。
+     [選項] 對話方塊隨即開啟，並顯示 [符號] 頁面。
 
 2.  選取 **符號設定**。
 
-3.  在 [選項 **] 對話方塊中，按一下 [資料夾] 圖示。
+3.  在 [選項] 對話方塊中，按一下資料夾圖示。
 
-     游標隨即出現在 [符號檔 (.pdb) 位置 **] 方塊中。
+     游標隨即出現在 [符號檔 (.pdb) 位置] 方塊中。
 
 4.  輸入您要偵錯的電腦上符號位置的目錄路徑名稱。 本機和遠端偵錯，這是您的本機電腦上的路徑。
 
