@@ -1,6 +1,6 @@
 ---
-title: 如何： 啟用和停用編輯後繼續 (C#、 VB、 c + +) |Microsoft Docs
-ms.custom: ''
+title: HOW TO：啟用和停用編輯後繼續 |Microsoft Docs
+ms.custom: seodec18
 ms.date: 10/04/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -27,16 +27,16 @@ manager: douge
 ms.workload:
 - dotnet
 - cplusplus
-ms.openlocfilehash: f0bf354f64be9c03a64beadcffdd7ff1138218df
-ms.sourcegitcommit: c5e72875206b8c5737c29d5b1ec7b86eec747303
-ms.translationtype: MT
+ms.openlocfilehash: 0b5fbc7ee0f2d85c72ccda75bc2e8531419d52e3
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "49382738"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53051383"
 ---
-# <a name="how-to-enable-and-disable-edit-and-continue-c-vb-c"></a>如何： 啟用和停用編輯後繼續 (C#、 VB、 c + +)
+# <a name="how-to-enable-and-disable-edit-and-continue-c-vb-c"></a>HOW TO：啟用和停用編輯後繼續 (C#、 VB、 c + +)
 
-您可以停用或啟用**編輯後繼續**在 Visual Studio**選項**在設計階段的對話方塊。 **編輯後繼續**works 只在偵錯組建。 如需詳細資訊，請參閱 <<c0> [ 編輯後繼續](../debugger/edit-and-continue.md)。 
+您可以停用或啟用**編輯後繼續**在 Visual Studio**選項**在設計階段的對話方塊。 [編輯後繼續] 只能用於偵錯組建中。 如需詳細資訊，請參閱[編輯後繼續](../debugger/edit-and-continue.md)。 
   
 原生 c + + 中，**編輯後繼續**需要使用`/INCREMENTAL`選項。 如需有關 c + + 中的功能需求的詳細資訊，請參閱此[部落格文章](https://blogs.msdn.microsoft.com/vcblog/2016/07/01/c-edit-and-continue-in-visual-studio-2015-update-3/)並[編輯後繼續 （Visual c + +）](../debugger/edit-and-continue-visual-cpp.md)。
   
@@ -50,11 +50,11 @@ ms.locfileid: "49382738"
     >  如果已啟用 IntelliTrace，而且您同時收集 IntelliTrace 事件和呼叫資訊，則會停用 [編輯後繼續]。 如需詳細資訊，請參閱 < [IntelliTrace](../debugger/intellitrace.md)。
     
 1.  針對 c + + 程式碼，請確定**啟用原生編輯後繼續**已選取此項目，並設定其他選項：
-    - **將變更套用在繼續執行 （僅限機器碼）**  
+    - **繼續時套用變更 (僅限原生)**  
       
       如果選取，Visual Studio 會自動編譯，並繼續偵錯從中斷狀態時，會套用程式碼變更。 否則，您可以選擇要套用變更**偵錯** > **套用程式碼變更**。  
       
-    - **警告出現過時的程式碼 （僅限機器碼）**  
+    - **警告出現過時的程式碼 (僅限原生)**  
       
       如果選取，會提供過時的程式碼的警告。 
   

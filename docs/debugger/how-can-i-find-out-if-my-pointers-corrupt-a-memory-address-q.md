@@ -1,6 +1,6 @@
 ---
-title: 如何發覺我的指標是否損毀記憶體位址？ | Microsoft Docs
-ms.custom: ''
+title: 找出是否有我的指標損毀記憶體位址 |Microsoft Docs
+ms.custom: seodec18
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8965ec268e5d236b9a33e5c3e8acfa35e51dcdb3
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 966a21bfbe5e6813bd4ea1cd6f11c682deea2d0f
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31479308"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062963"
 ---
 # <a name="how-can-i-find-out-if-my-pointers-corrupt-a-memory-address"></a>如何發覺我的指標是否損毀記憶體位址？
 ## <a name="problem-description"></a>問題說明  
@@ -41,10 +41,10 @@ ms.locfileid: "31479308"
   
 #### <a name="to-find-where-the-memory-address-is-modified"></a>若要找出記憶體位址遭修改的位置  
   
-1.  在 0x00408000 設定資料中斷點。 請參閱[設定資料變更中斷點 （原生 c + + 只）](../debugger/using-breakpoints.md#BKMK_set_a_data_breakpoint_native_cplusplus_only)。  
+1.  在 0x00408000 設定資料中斷點。 請參閱[設定資料變更中斷點 (僅限原生 C++)](../debugger/using-breakpoints.md#BKMK_set_a_data_breakpoint_native_cplusplus_only)。  
   
-2.  當您叫用中斷點時，使用**記憶體**0x00408000 開始的視窗來檢視記憶體內容。 如需詳細資訊，請參閱[記憶體 Windows](../debugger/memory-windows.md)。  
+2.  當您遇到中斷點時，使用 [記憶體] 視窗來檢視從 0x00408000 開始的記憶體內容。 如需詳細資訊，請參閱 <<c0> [ 記憶體 Windows](../debugger/memory-windows.md)。  
   
-## <a name="see-also"></a>另請參閱  
- [機器碼偵錯 Faq](../debugger/debugging-native-code-faqs.md)   
+## <a name="see-also"></a>請參閱  
+ [對機器碼進行偵錯的常見問題集](../debugger/debugging-native-code-faqs.md)   
  [偵錯機器碼](../debugger/debugging-native-code.md)

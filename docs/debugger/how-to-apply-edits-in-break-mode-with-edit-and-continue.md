@@ -1,6 +1,6 @@
 ---
-title: 如何： 套用在中斷模式中的編輯，以編輯後繼續 |Microsoft Docs
-ms.custom: ''
+title: 在編輯後繼續的中斷模式套用編輯 |Microsoft Docs
+ms.custom: seodec18
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -24,14 +24,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f45b2a64e7602d038a12f436019a8f99e352aa26
-ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
-ms.translationtype: MT
+ms.openlocfilehash: 51a69414a8b61368cbb492494187567554f98e4c
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52257066"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53063722"
 ---
-# <a name="how-to-apply-edits-in-break-mode-with-edit-and-continue-visual-basic"></a>如何： 套用在中斷模式中的編輯，以編輯後繼續 (Visual Basic)
+# <a name="how-to-apply-edits-in-break-mode-with-edit-and-continue-visual-basic"></a>HOW TO：套用在中斷模式中的編輯，以編輯後繼續 (Visual Basic)
 您可以在中斷模式中使用 [編輯後繼續] 編輯程式碼，並繼續進行而不需停止及重新啟動執行。  
   
 如需有關使用 [編輯後繼續偵錯時的限制，請參閱[支援的程式碼變更 (C#和 Visual Basic](../debugger/supported-code-changes-csharp.md)]
@@ -40,11 +40,11 @@ ms.locfileid: "52257066"
   
 1.  執行下列其中一種方法進入中斷模式  
   
-    -   您的程式碼中設定中斷點，然後選擇**開始偵錯**從**偵錯**功能表，然後等待應用程式叫用中斷點。  
+    -   在程式碼中設定中斷點，然後從 [偵錯] 功能表中選擇 [開始偵錯]，並等待應用程式叫用中斷點。  
   
          -或-  
   
-    -   開始偵錯，然後按**全部中斷**從**偵錯**功能表。  
+    -   開始偵錯，然後從 [偵錯] 功能表中選取 [全部中斷]。  
   
          -或-  
   
@@ -57,10 +57,10 @@ ms.locfileid: "52257066"
     > [!NOTE]
     >  如果您嘗試進行 [編輯後繼續] 不允許的程式碼變更，您的編輯會被加上紫色波浪線，而且 [工作清單] 中會出現工作。 除非您復原不合法的程式碼變更，否則將無法繼續執行程式碼。  
   
-3.  在 [**偵錯**] 功能表中，按一下**繼續**恢復執行。  
+3.  在 [偵錯] 功能表上，按一下 [繼續] 以恢復執行。  
   
      這時程式碼便會一併執行您套用至專案的編輯。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [支援的程式碼變更 (C#和 Visual Basic](../debugger/supported-code-changes-csharp.md)   
  [編輯後繼續 (Visual Basic)](../debugger/edit-and-continue-visual-basic.md)

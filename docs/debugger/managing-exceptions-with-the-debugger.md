@@ -1,6 +1,6 @@
 ---
-title: 使用 Visual Studio 偵錯工具管理例外狀況 |Microsoft Docs
-ms.custom: ''
+title: 使用偵錯工具管理例外狀況 |Microsoft Docs
+ms.custom: seodec18
 ms.date: 10/09/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -34,12 +34,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f19bbbfbde9a111c6edea112b7250fca934ac7f7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 02c7fbfca9a63ac736972ebea01a854e24f90188
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49881686"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53057914"
 ---
 # <a name="manage-exceptions-with-the-debugger-in-visual-studio"></a>使用 Visual Studio 中偵錯工具管理例外狀況
 
@@ -47,7 +47,7 @@ ms.locfileid: "49881686"
 
 提供回應最重要的例外狀況的處理常式。 也了解如何設定偵錯工具一定中斷執行，某些例外狀況。
 
-偵錯工具時發生例外狀況時，將例外狀況訊息寫入**輸出**視窗。 它可能會中斷執行，在下列情況下，當：
+發生例外狀況時，偵錯工具都會將例外狀況訊息寫入至 [輸出] 視窗。 它可能會中斷執行，在下列情況下，當：
 
 - 例外狀況會擲回未處理。
 - 偵錯工具會設定為在叫用任何處理常式之前中斷執行。
@@ -59,7 +59,7 @@ ms.locfileid: "49881686"
 <!-- Two consecutive notes are intentional here...-->
 
 > [!NOTE]
-> 在 Visual Basic 應用程式偵錯工具會管理所有錯誤當成例外狀況，即使使用 On Error 類型錯誤處理常式。
+> 在 Visual Basic 應用程式中，即使使用 On Error 樣式的錯誤處理常式，偵錯工具還是會將所有錯誤都當成例外狀況管理。
 
 ## <a name="tell-the-debugger-to-break-when-an-exception-is-thrown"></a>告知偵錯工具中斷擲回例外狀況時
 
@@ -74,7 +74,7 @@ ms.locfileid: "49881686"
 
 如果您選取中的例外狀況**例外狀況設定** 視窗中，偵錯工具會中斷執行每當擲回例外狀況是，不論是否處理它。 現在該例外狀況稱為第一次出現的例外狀況。 例如，以下是幾個情節：
 
-- 下列 C# 主控台應用程式，在 Main 方法會擲回**AccessViolationException**內`try/catch`區塊。
+- 在下列 C# 主控台應用程式中，Main 方法會在 **try/catch** 區塊內部擲回 `try/catch`。
 
   ```csharp
   static void Main(string[] args)
@@ -101,7 +101,7 @@ ms.locfileid: "49881686"
 
   但不會顯示`here`列。
 
-- C# 主控台應用程式參考類別庫有兩種方法的類別。 其中一種方法會擲回例外狀況，並處理它，而第二個方法會擲回相同的例外狀況，但不會加以處理。
+- C#主控台應用程式所參考的類別，有兩種方法的類別程式庫。 其中一種方法會擲回例外狀況，並處理它，而第二個方法會擲回相同的例外狀況，但不會加以處理。
 
   ```csharp
   public class Class1
@@ -125,7 +125,7 @@ ms.locfileid: "49881686"
   }
   ```
 
-  以下是主控台應用程式的 main() 方法：
+  以下是主控台應用程式的 Main () 方法：
 
   ```csharp
   static void Main(string[] args)
@@ -136,7 +136,7 @@ ms.locfileid: "49881686"
   }
   ```
 
-  如果您有**AccessViolationException**簽入**例外狀況設定**，執行會在中斷`throw`兩者中**throwunhandledexception()** 和**Throwunhandledexception**當您在偵錯工具中，會在執行此程式碼時。
+  如果您有**AccessViolationException**簽入**例外狀況設定**，執行會在中斷`throw`兩者中**throwunhandledexception （)** 和**Throwunhandledexception**當您在偵錯工具中，會在執行此程式碼時。
 
 若要將例外狀況設定還原為預設值，請選擇**將清單還原為預設設定**按鈕：
 
@@ -181,9 +181,9 @@ ms.locfileid: "49881686"
 若要加入的 GPU 記憶體存取例外狀況、 JavaScript 執行階段例外狀況或 Win32 例外狀況類別的例外狀況，包括錯誤碼和描述。
 
 > [!TIP]
-> 請檢查您的拼字！ **例外狀況設定**視窗並不會檢查加入的例外狀況是否存在。 因此，如果您鍵入**Sytem.UriTemplateMatchException**，您會得到的項目，針對該例外狀況 (而非**System.UriTemplateMatchException**)。
+> 請檢查您的拼字！ [例外狀況設定] 視窗並不會檢查新增的例外狀況是否存在。 因此如果您鍵入 **Sytem.UriTemplateMatchException**，您會得到針對該例外狀況 (而非針對 **System.UriTemplateMatchException**) 的項目。
 
-例外狀況設定會保存在方案的.suo 檔案中，因此可套用至特定的解決方案。 您無法跨解決方案，以重複使用特定的例外狀況設定。 現在會保存已加入的例外狀況;不是 已刪除的例外狀況。 您可能會加入例外狀況，關閉並重新開啟方案，以及例外狀況仍會發生。 但是，如果您刪除例外狀況，然後關閉/重新開啟此方案，則該例外狀況會重新出現。
+例外狀況設定會保存在此方案的 .suo 檔案中，因此可套用至特定的方案中。 您無法在不同方案間重複使用特定的例外狀況設定。 現在會保存已加入的例外狀況;不是 已刪除的例外狀況。 您可能會加入例外狀況，關閉並重新開啟方案，以及例外狀況仍會發生。 但是，如果您刪除例外狀況，然後關閉/重新開啟此方案，則該例外狀況會重新出現。
 
 [例外狀況設定]  視窗在 C# 中支援泛型例外狀況類型，但在 Visual Basic 中不支援。 若要中斷類似 `MyNamespace.GenericException<T>`的例外狀況，您必須新增例外狀況為 [MyNamespace.GenericException'1] 。 也就是說，如果您已建立此程式碼類似的例外狀況：
 
@@ -226,5 +226,5 @@ public class GenericException<T> : Exception
 [於例外狀況之後繼續執行](../debugger/continuing-execution-after-an-exception.md)<br/>
 [如何：在發生例外狀況後檢查系統程式碼](../debugger/how-to-examine-system-code-after-an-exception.md)<br/>
 [如何：使用原生執行階段檢查](../debugger/how-to-use-native-run-time-checks.md)<br/>
-[不使用 C 執行階段程式庫中使用執行階段檢查](../debugger/using-run-time-checks-without-the-c-run-time-library.md)<br/>
-[教學課程： 了解如何使用 Visual Studio 進行偵錯](../debugger/getting-started-with-the-debugger.md)
+[不使用 C 執行階段程式庫進行執行階段檢查](../debugger/using-run-time-checks-without-the-c-run-time-library.md)<br/>
+[教學課程：了解使用 Visual Studio 進行偵錯](../debugger/getting-started-with-the-debugger.md)

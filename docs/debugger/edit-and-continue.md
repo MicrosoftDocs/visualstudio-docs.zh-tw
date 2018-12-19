@@ -1,6 +1,6 @@
 ---
-title: 編輯程式碼，並繼續在 Visual Studio 中偵錯 |Microsoft Docs
-ms.custom: ''
+title: 編輯程式碼，並繼續偵錯 |Microsoft Docs
+ms.custom: seodec18
 ms.date: 05/31/2017
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -22,14 +22,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: da5d7eb9f3ae32097f46c5eb0436297eaa602fed
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
-ms.translationtype: MT
+ms.openlocfilehash: 28f07d9a8f05ab63e6b945fd590fdf9fa576ca48
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44284014"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53048577"
 ---
-# <a name="edit-code-and-continue-debugging-in-visual-studio-c-vb-c"></a>編輯程式碼，並繼續偵錯在 Visual Studio 中 （C#、 VB、 c + +）
+# <a name="edit-code-and-continue-debugging-in-visual-studio-c-vb-c"></a>編輯程式碼，並在 Visual Studio 中繼續偵錯 (C#、 VB、 c + +)
 [編輯後繼續] 功能可以在您的程式處於中斷模式時，讓您對原始程式碼進行變更以節省時間。 當您選擇之類的執行命令，會在繼續執行程式時**繼續**或是**步驟**、 編輯及繼續自動套用程式碼變更，但有一些限制。 這可以讓您在偵錯工作階段期間變更程式碼而不需要停止、重新編譯整個程式並重新啟動偵錯工作階段。  
   
  本節包括下列主題：   
@@ -46,7 +46,7 @@ ms.locfileid: "44284014"
   
  [F# 不支援編輯後繼續](../debugger/edit-and-continue-not-supported-for-f-hash.md)  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [偵錯工具安全性](../debugger/debugger-security.md)   
  [選項對話方塊、偵錯、編輯後繼續](https://msdn.microsoft.com/library/bcew296c.aspx)   
  [偵錯工具基礎](../debugger/getting-started-with-the-debugger.md)

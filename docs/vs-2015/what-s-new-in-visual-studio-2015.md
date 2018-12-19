@@ -1,6 +1,6 @@
 ---
-title: 什麼&#39;Visual Studio 2015 的新功能 |Microsoft Docs
-ms.custom: ''
+title: Visual Studio 2015 的新功能 | Microsoft Docs
+titleSuffix: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
@@ -17,14 +17,14 @@ caps.latest.revision: 364
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ab9d2536b3f92b62233a2ae05b79a722696136e4
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
-ms.translationtype: MT
+ms.openlocfilehash: f1d2b37a988f0078149228cce808397f9fb915d1
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51000254"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062434"
 ---
-# <a name="what39s-new-in-visual-studio-2015"></a>什麼&#39;Visual Studio 2015 的新功能
+# <a name="what39s-new-in-visual-studio-2015"></a>Visual Studio 2015 的新功能
 [!INCLUDE[vs2017banner](./includes/vs2017banner.md)]
 
 歡迎使用 Visual Studio 2015 這套整合了開發人員生產力工具、雲端服務和擴充功能的套件，讓您和您的團隊可以建立適用於網路、Windows 市集、桌上型電腦、Android 及 iOS 的絕佳應用程式和遊戲。
@@ -41,7 +41,7 @@ ms.locfileid: "51000254"
  ![Visual Studio 2015 安裝程式對話方塊](./ide/media/vs2015-setup-screen.png "VS2015_Setup_screen")
 
 ## <a name="sign-in-across-multiple-accounts"></a>跨多個帳戶登入
- Visual Studio 2015 的新登入功能設計，可以大大地簡化您存取線上資源的流程，即使使用多個 Visual Studio 帳戶，也一樣地有效率。 當您登入 Visual Studio 之後，您會自動登入您電腦上所有的 Visual Studio 2015 執行個體及 Blend 執行個體。 登入會自動為您開始漫遊您的設定。 在 Visual Studio 2015 中，所有功能會共用您的帳戶，因此，只要您持有有效的權杖，便能從 **Team Explorer**存取您的 Visual Studio Team Services 帳戶，以及使用您的 Microsoft Azure 訂用帳戶，從 [伺服器總管] 存取資源及網站。 您也可以在 Application Insights 專案的 [新增專案] 對話方塊中，檢視您的 Azure 資源；還可在新增加的 [[加入已連接服務]](http://msdn.microsoft.com/office/aa905340.aspx) 對話方塊中，檢視 Azure Mobile、Azure 儲存體、 [Microsoft Office 365](https://developer.salesforce.com/) 和 **Saleforce.com 開發人員** 帳戶。
+ Visual Studio 2015 的新登入功能設計，可以大大地簡化您存取線上資源的流程，即使使用多個 Visual Studio 帳戶，也一樣地有效率。 當您登入 Visual Studio 之後，您會自動登入您電腦上所有的 Visual Studio 2015 執行個體及 Blend 執行個體。 登入會自動為您開始漫遊您的設定。 在 Visual Studio 2015 中，所有功能會共用您的帳戶，因此，只要您持有有效的權杖，便能從 **Team Explorer**存取您的 Visual Studio Team Services 帳戶，以及使用您的 Microsoft Azure 訂用帳戶，從 [伺服器總管] 存取資源及網站。 您也可以在 Application Insights 專案的 [新增專案] 對話方塊中，檢視您的 Azure 資源；還可在新增加的 [**加入已連接服務**]  對話方塊中，檢視 Azure Mobile、Azure 儲存體、 [Microsoft Office 365](http://msdn.microsoft.com/office/aa905340.aspx) 和 [Saleforce.com 開發人員](https://developer.salesforce.com/) 帳戶。
 
  您可以前往或使用新的帳戶管理員，加入多個使用者帳戶在 Visual Studio 中使用。 如此一來，您便能夠在要連線到服務或存取線上資源時，隨時切換帳戶。 Visual Studio 會記住您加入的帳戶，因此您可以從任何 Visual Studio 或 Blend 執行個體使用這些帳戶。 Visual Studio 也將隨您的個人化帳戶漫遊帳戶清單 (不過我們不會漫遊您的重要認證)，因此您可以在其他裝置上快速開始使用其中一個帳戶。 您也可以隨時從 [帳戶設定] 對話方塊中移除這些帳戶。 若要開始使用，請參閱 [Work with multiple user accounts](./ide/work-with-multiple-user-accounts.md)。
 
@@ -53,7 +53,7 @@ ms.locfileid: "51000254"
  此外，對於傳統桌面應用程式的支援也比過去更好，無論在語言、程式庫及工具上，都有多項的改進。
 
 ### <a name="cross-platform-mobile-apps-in-c-with-xamarin-for-visual-studio"></a>搭配使用 C# 和適用於 Visual Studio 的 Xamarin 的跨平台行動應用程式
- Xamarin 是可讓您以 C# 撰寫程式碼的行動架構，以原生繫結至 iOS 和 Android API。 Microsoft 也與 Xamarin 密切合作，共同發行了適用於 Visual Studio 的 Xamarin 這項擴充功能，讓您可以在單一方案中使用同一組程式碼，進行 Android、iOS 和 Windows Phone 的開發工作。 使用 Xamarin，您將使用一種語言和一種程式碼基底 (平台間的差異極小)。  Visual Studio 2010 和更新版本支援適用於 Visual Studio 的 Xamarin。 Xamarin 的入門版本會包含在 Visual Studio 2015。 若要開始，請參閱[建置應用程式具有原生 UI，使用 Visual Studio 的 Xamarin](./cross-platform/build-apps-with-native-ui-using-xamarin-in-visual-studio.md)。
+ Xamarin 是可讓您以 C# 撰寫程式碼的行動架構，以原生繫結至 iOS 和 Android API。 Microsoft 也與 Xamarin 密切合作，共同發行了適用於 Visual Studio 的 Xamarin 這項擴充功能，讓您可以在單一方案中使用同一組程式碼，進行 Android、iOS 和 Windows Phone 的開發工作。 使用 Xamarin，您將使用一種語言和一種程式碼基底 (平台間的差異極小)。  Visual Studio 2010 和更新版本支援適用於 Visual Studio 的 Xamarin。 Visual Studio 2015 中已包括 Xamarin 的入門版本。 若要開始，請參閱[建置應用程式具有原生 UI，使用 Visual Studio 的 Xamarin](./cross-platform/build-apps-with-native-ui-using-xamarin-in-visual-studio.md)。
 
 ### <a name="cross-platform-mobile-apps-in-htmljavascript-with-apache-cordova"></a>搭配使用 HTML/JavaScript 撰寫的跨平台行動應用程式與 Apache Cordova
  Visual Studio Tools for Apache Cordova 是 Microsoft 與開放原始碼 Apache Cordova 社群密切合作的結果。 這些工具允許使用 HTML、CSS 和 JavaScript (或 Typescript) 進行跨平台行動開發。 您只須使用一組程式碼，就能執行目標平台為 Android、iOS 和 Windows 的開發工作，同時使用 Visual Studio IDE 所提供的豐富功能，包括 JavaScript IntelliSense、DOM 總管、JavaScript 主控台、中斷點、監看功能、區域變數、Just My Code 等等。  透過 Visual Studio Tools for Apache Cordova，您的應用程式可以透過提供一般 JavaScript API 的外掛程式，存取所有平台上的原生裝置功能。 若要開始，請參閱[開始使用 Visual Studio Tools for Apache Cordova](http://msdn.microsoft.com/library/db446f2c-6ba4-4c76-aac5-4c66f43b8c42)。
@@ -84,7 +84,7 @@ ms.locfileid: "51000254"
 #### <a name="the-net-framework"></a>.NET Framework
  Microsoft [!INCLUDE[net_v46](./includes/net-v46-md.md)] 新增大約 150 項 API 及 50 項更新的 API，可以應用在更多的案例上。 例如有更多的集合實作了 <xref:System.Collections.Generic.IReadOnlyCollection%601>，在使用性上也變得更好。 除此之外，前文所述的 ASP.NET 5 也提供簡式 .NET 平台，可用於建置現代化的雲端應用程式。
 
- 使用 C++ 為目標平台為 .NET Framework 所撰寫的 Windows 市集應用程式，現在也可使用 .NET Native 將應用程式編譯為原生程式碼，而不是 IL；此外，[!INCLUDE[net_v46](./includes/net-v46-md.md)] 也增加了 64 位元的 Just-In-Time (JIT) 編譯器。
+ 使用 C++ 為目標平台為 .NET Framework 所撰寫的 Windows 市集應用程式，現在也可使用 .NET Native 將應用程式編譯為原生程式碼，而不是 IL；此外， [!INCLUDE[net_v46](./includes/net-v46-md.md)] 也增加了 64 位元的 Just-In-Time (JIT) 編譯器。
 
  新增加的 C# 與 VB 編譯器 ("Roslyn") 可大幅縮短編譯時間，並提供豐富的程式碼分析 API。 Visual Studio 2015 透過 Roslyn 提供更的重構功能，包括內嵌重新命名、分析器及快速檢修。
 
@@ -144,7 +144,7 @@ ms.locfileid: "51000254"
  下列新的或改進的工具可對程式碼執行不同類型的診斷和分析：
 
 ### <a name="perftips"></a>效能提示
- 效能提示顯示偵錯期間方法的執行時間，可讓您快速發現瓶頸，而不需要叫用分析工具。 若要開始，請參閱 [效能提示：使用 Visual Studio 偵錯，效能資訊快速檢視](http://blogs.msdn.com/b/visualstudioalm/archive/2014/08/18/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio.aspx)。
+ 效能提示顯示偵錯期間方法的執行時間，可讓您快速發現瓶頸，而不需要叫用分析工具。 若要開始，請參閱[效能提示：使用 Visual Studio 偵錯時的效能資訊一覽 (英文)](http://blogs.msdn.com/b/visualstudioalm/archive/2014/08/18/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio.aspx)。
 
 ### <a name="error-list"></a>錯誤清單
  錯誤清單現在支援對任何資料行進行篩選。 該清單也可以隨著您的輸入調整，以顯示整個 C# 或 Visual Basic 方案中之錯誤、警告和程式碼分析的即時檢視，就算程式碼變更產生了數千項警告也沒有問題。 新的錯誤清單可回溯相容於現有的使用量。 如需詳細資訊，請參閱 [Error List Window](./ide/reference/error-list-window.md)。
@@ -160,13 +160,13 @@ ms.locfileid: "51000254"
 ## <a name="enjoy-these-additional-ide-improvements"></a>享受下列其他 IDE 改進
 
 ### <a name="synchronized-settings-roaming-settings"></a>同步設定 (漫遊設定)
- Visual Studio 2013 針對一些最常見的組態設定 (例如文字編輯器、按鍵組合、主題和字型和色彩、啟動，以及環境別名)，引進同步設定。  Visual Studio 2015 透過同步處理更多您的設定，以及同步處理不同 Visual Studio 系列應用程式 (例如 Professional、Enterprise、Express SKU 和 Blend) 的設定，改進這項體驗。 當您使用與 Visual Studio 2013 所用相同的帳戶第一次登入 Visual Studio 2015 時，您會看到從 Visual Studio 2013 套用的同步設定。 您可以輸入"sync"存取您的設定，在**快速啟動**，或瀏覽至**工具 > 選項 > 環境 > 同步處理設定**。
+ Visual Studio 2013 針對一些最常見的組態設定 (例如文字編輯器、按鍵繫結關係、主題和字型和色彩、啟動，以及環境別名)，引進同步設定。  Visual Studio 2015 透過同步處理更多您的設定，以及同步處理不同 Visual Studio 系列應用程式 (例如 Professional、Enterprise、Express SKU 和 Blend) 的設定，改進這項體驗。 當您使用與 Visual Studio 2013 所用相同的帳戶第一次登入 Visual Studio 2015 時，您會看到從 Visual Studio 2013 套用的同步設定。 您可以在 [快速啟動] 中鍵入 "sync"，或巡覽至 [工具] > [選項] > [環境] > [同步設定] 來存取您的設定。
 
 ### <a name="automatic-extension-updates"></a>自動擴充功能更新
  現在，如果您已安裝的 Visual Studio 擴充功能在 Visual Studio 組件庫上有新版本時，即可自動更新。 如需如何自訂擴充功能自動更新的詳細資訊，請參閱 [尋找及使用 Visual Studio 擴充功能](./ide/finding-and-using-visual-studio-extensions.md) 。
 
 ### <a name="title-case-menus"></a>字首大寫的功能表
- 我們重視您的意見反應。 Visual Studio 功能表再一次預設為字首大寫。 不過，如果您偏好全部大寫樣式，您可以將它在啟動時設定，或在**工具 > 選項 > 一般**屬性頁：
+ 我們重視您的意見反應。 Visual Studio 功能表再一次預設為字首大寫。 若您偏好全部大寫的樣式，可以在啟動時或使用 [工具] > [選項] > [一般] 屬性頁面中加以設定：
 
  ![Visual Studio 2015 標題大寫主功能表命令](./ide/media/vs2015-mainmenu.png "VS2015_MainMenu")
 
@@ -183,18 +183,18 @@ ms.locfileid: "51000254"
 ### <a name="notification-hub"></a>通知中樞
  通知中區的使用者介面已經過簡化，方便您快速掃描。 已加入其他種類的通知，包括效能問題、轉譯問題和當機，而且您現在可以告訴 Visual Studio 停止顯示通知。 如需詳細資訊，請參閱 [Visual Studio 通知](./ide/visual-studio-notifications.md)。
 
-### <a name="codelens-find-what-happened-to-your-code-enterprise-and-professional-editions-only"></a>CodeLens：了解您的程式碼的狀態 (僅限 Enterprise 和 Professional 版)
+### <a name="codelens-find-what-happened-to-your-code-enterprise-and-professional-editions-only"></a>CodeLens了解您的程式碼 （僅包括 Enterprise 和 Professional 版本）
  尋找程式碼的相關資訊而不需要離開編輯器，讓您可以專注於工作。 您可以檢閱儲存在 Visual Studio Team Services (VSTS) 或 Team Foundation Server (TFS) 中之程式碼的變更，以及工作項目、Bug、程式碼檢閱等其他記錄。
 
  在 Visual Studio Professional 和 Visual Studio Professional 中，您現在可以：
 
 - 取得 Visual Studio 編輯器中整個程式碼檔案的歷程記錄。
 
-   ![CodeLens：取得程式碼檔案詳細資料](./ide/media/codelensfilelevel.png "CodeLensFileLevel")
+   ![CodeLens取得程式碼檔案詳細資料](./ide/media/codelensfilelevel.png "CodeLensFileLevel")
 
 - 查看顯示變更您程式碼之人員的圖表。 這可協助您找出小組變更的模式，並評估其影響。
 
-   ![CodeLens：以圖形方式檢視程式碼變更記錄](./ide/media/codelens.png "CodeLens")
+   ![CodeLens查看以圖形的程式碼變更記錄](./ide/media/codelens.png "CodeLens")
 
 - 輕鬆地查看上次變更程式碼的時間。
 
@@ -203,7 +203,7 @@ ms.locfileid: "51000254"
   請參閱 [CodeLens](./ide/find-code-changes-and-other-history-with-codelens.md)。
 
 ### <a name="design-and-modeling-tools-enterprise-edition-only"></a>設計和模型工具 (僅限 Enterprise 版本)
- **Code map 和相依性圖形**
+ **Code Map 和相依性圖形**
 
  在 Visual Studio Enterprise 中，當您想要了解程式碼中的特定相依性時，請建立 Code Map 來將其視覺化。 然後，您可以使用出現在您程式碼旁邊的對應，來巡覽這些關聯性。 Code Map 也可以在您工作或偵錯程式碼時，協助追蹤您在程式碼中的位置，如此一來，當您進一步了解程式碼設計時，便可以少看一些程式碼。
 
@@ -235,7 +235,7 @@ ms.locfileid: "51000254"
 
   請參閱 [Map dependencies across your solutions](./modeling/map-dependencies-across-your-solutions.md)。
 
-  **在此版本中其他設計和模型變更：**
+  **本版中的其他設計和模型變更：**
 
 - **分層圖**。 使用類別檢視和物件瀏覽器來更新這些圖表。 為了達到軟體設計需求，請使用分層圖來描述軟體所需的相依性。 透過尋找不符合這些條件約束的程式碼，並使用這個基準來驗證未來的程式碼，讓程式碼與這個設計保持一致。
 
@@ -268,8 +268,9 @@ ms.locfileid: "51000254"
 
  首先，請依照前述步驟傳送苦臉。 接著在隨後顯示的對話方塊上，您可以使用任何預設標籤，或是建立您自己的標籤來標記您的意見反應。 使用標籤可以協助我們將您的意見反應分立到正確的功能團隊。 從 [選擇類別]  下拉式清單中，選取可代表您回報之問題的選項，然後遵循所示步驟重現問題。 此外也會提供如何使用 Visual Studio 提供意見反應的詳細步驟。 如需詳細資訊，請參閱 < [Visual Studio 傳送笑臉指示 >](http://msdn.microsoft.com/library/5cc9b67a-54d0-41b0-aa8f-80dff4475a6b)。
 
-## <a name="see-also"></a>另請參閱
-* [建置使用 Apache Cordova 的跨平台應用程式](http://msdn.microsoft.com/library/34d3c1be-22b3-4812-97fb-10b4e8ad2134)
+## <a name="see-also"></a>請參閱
+
+* [使用 Apache Cordova 建置跨平台應用程式](http://msdn.microsoft.com/library/34d3c1be-22b3-4812-97fb-10b4e8ad2134)
 * [使用 Visual Studio 的 Xamarin 建置具有原生 UI 的應用程式](./cross-platform/build-apps-with-native-ui-using-xamarin-in-visual-studio.md)
 * [使用 Visual C++ 建置跨平台行動裝置應用程式](./misc/build-cross-platform-mobile-apps-with-visual-cpp.md)
 * [使用 IntelliTest 為程式碼產生單元測試](./test/generate-unit-tests-for-your-code-with-intellitest.md)

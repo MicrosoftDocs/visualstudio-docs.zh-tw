@@ -1,6 +1,6 @@
 ---
-title: 使用 Visual Studio 偵錯工具中的中斷點 |Microsoft Docs
-ms.custom: H1Hack27Feb2017
+title: 在 偵錯工具中使用中斷點 |Microsoft Docs
+ms.custom: seodec18
 ms.date: 10/15/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -36,12 +36,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 15fa2172aab62d6b6f6ffcd21186b28f336ead4e
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
-ms.translationtype: MTE95
+ms.openlocfilehash: 16bcb4bb12e852a8fa268998d0605b2ffc7471e5
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389133"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068444"
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>使用 Visual Studio 偵錯工具中的中斷點
 中斷點是在您的開發人員工具箱中最重要的偵錯技術之一。 每當您要暫停偵錯工具執行，您可以設定中斷點。 例如，您可能要查看程式碼變數的狀態，或查看呼叫堆疊，在特定中斷點。 如果這是您第一次嘗試偵錯程式碼，您可能需要先閱讀[適用於徹底初學者偵錯](../debugger/debugging-absolute-beginners.md)，再瀏覽本文。
@@ -61,7 +61,7 @@ ms.locfileid: "52389133"
   
  ![中斷點執行已停止](../debugger/media/breakpointexecution.png "中斷點執行")  
   
- 當偵錯工具停止於中斷點時，您可以查看應用程式，包括變數值和呼叫堆疊的目前狀態。 如需此呼叫堆疊的詳細資訊，請參閱[如何：使用呼叫堆疊視窗](../debugger/how-to-use-the-call-stack-window.md)。  
+ 當偵錯工具停止於中斷點時，您可以查看應用程式，包括變數值和呼叫堆疊的目前狀態。 如需有關呼叫堆疊的詳細資訊，請參閱[How to:使用 [呼叫堆疊] 視窗](../debugger/how-to-use-the-call-stack-window.md)。  
 
 - 中斷點是切換。 您可以按一下它，請按**F9**，或使用**偵錯** > **切換中斷點**刪除，或將它重新插入。
   
@@ -89,7 +89,7 @@ ms.locfileid: "52389133"
 
 偵錯工具會在指令處中斷。  
 
-如需此呼叫堆疊的詳細資訊，請參閱[如何：使用呼叫堆疊視窗](../debugger/how-to-use-the-call-stack-window.md)。 
+如需有關呼叫堆疊的詳細資訊，請參閱[How to:使用 [呼叫堆疊] 視窗](../debugger/how-to-use-the-call-stack-window.md)。 
 
 若要在程式碼執行期間的可用空間以視覺化方式追蹤中斷點，請參閱[偵錯時對應呼叫堆疊上的方法](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)。 
   
@@ -220,7 +220,7 @@ ms.locfileid: "52389133"
 <a name="BKMK_Specify_a_breakpoint_condition_using_a_code_expression"></a>
 ### <a name="conditional-expression"></a>條件運算式
 
-當您選取**條件運算式**，您可以選擇兩個條件：**成立**或是**變更時**。 選擇**成立**滿足運算式時中斷或**變更時**以運算式的值變更時中斷。  
+當您選取**條件運算式**，您可以選擇兩個條件：**成立**或是**時變更**。 選擇**成立**滿足運算式時中斷或**變更時**以運算式的值變更時中斷。  
   
  在下列範例中，叫用中斷點時，才的值`testInt`已**4**:  
   

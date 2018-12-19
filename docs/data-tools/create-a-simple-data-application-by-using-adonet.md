@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Studio 中使用 ADO.NET 建立簡單資料應用程式
+title: 使用 ADO.NET 建立簡單的資料應用程式
 ms.date: 08/23/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,21 +13,21 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5bcdd9120088663e469070c31962dfacc97bce0a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 75043a1716cca0c727eb0530cd63ca715a60424b
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49891007"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53064868"
 ---
-# <a name="create-a-simple-data-application-by-using-adonet"></a>使用 ADO.NET 建立簡單資料應用程式
+# <a name="create-a-simple-data-application-by-using-adonet"></a>使用 ADO.NET 建立簡單的資料應用程式
 
-當您建立應用程式來管理資料庫中的資料時，您會執行基本工作，例如定義連接字串、 插入資料，以及執行預存程序。 遵循本主題，您可以探索如何使用 Visual C# 或 Visual Basic 和 ADO.NET 與簡單的 Windows Forms 「 資料表單 」 應用程式內的資料庫互動。  所有的.NET 資料技術，包括資料集，LINQ to SQL 和 Entity Framework，最後執行非常類似於本文中所示的步驟。
+建立應用程式來管理資料庫中的資料時，您會執行基本工作，例如定義連接字串、插入資料及執行預存程序。 您可以依照本主題，了解如何藉由使用視覺效果進行互動的簡單 Windows Form 「 資料表單 」 應用程式中將資料庫從C#或 Visual Basic 和 ADO.NET。  所有的.NET 資料技術，包括資料集，LINQ to SQL 和 Entity Framework，最後執行非常類似於本文中所示的步驟。
 
 這篇文章示範簡單的方式，以快速的方式取得資料庫中的資料。 如果您的應用程式需要非一般的方式修改資料，並更新資料庫，您應該考慮使用 Entity Framework，並使用資料繫結至自動同步處理使用者介面控制項的基礎資料中的變更。
 
 > [!IMPORTANT]
-> 為了簡化程式碼，它不包含可實際執行的例外狀況處理。
+> 為了簡化程式碼，它不會包含已準備好投入生產環境的例外狀況處理。
 
 ## <a name="prerequisites"></a>必要條件
 
@@ -37,7 +37,7 @@ ms.locfileid: "49891007"
 
 -   SQL Server Express LocalDB。 如果您沒有 SQL Server Express LocalDB，您可以安裝從[SQL Server Express 下載頁面](https://www.microsoft.com/sql-server/sql-server-editions-express)。
 
-本主題假設您已熟悉使用 Visual Studio IDE 的基本功能和可以建立在 Windows Forms 應用程式，將表單加入專案中，將按鈕和其他控制項在表單上的設定屬性的控制項，以及編碼簡單事件。 如果您不熟悉這些工作，我們建議您先完成[開始使用 Visual C# 和 Visual Basic](../ide/getting-started-with-visual-csharp-and-visual-basic.md)主題，然後再開始本逐步解說。
+本主題假設您已熟悉使用 Visual Studio IDE 的基本功能和可以建立在 Windows Forms 應用程式，將表單加入專案中，將按鈕和其他控制項在表單上的設定屬性的控制項，以及編碼簡單事件。 如果您不熟悉這些工作，我們建議您先完成[開始使用視覺效果C#和 Visual Basic](../ide/getting-started-with-visual-csharp-and-visual-basic.md)再開始本逐步解說中的主題。
 
 ## <a name="set-up-the-sample-database"></a>設定範例資料庫
 
@@ -61,15 +61,15 @@ ms.locfileid: "49891007"
 
 7. 將 T-SQL 指令碼貼到查詢編輯器，然後選擇**Execute**  按鈕。
 
-     短時間之後，查詢完成執行，並建立資料庫物件。 資料庫包含兩個資料表： 客戶和訂單。 這些資料表一開始，包含任何資料，但當您執行的應用程式，您將建立時，您可以加入資料。 資料庫也會包含四個簡單的預存程序。
+     短時間之後，查詢完成執行，並建立資料庫物件。 資料庫包含兩個資料表：客戶和訂單。 這些資料表一開始，包含任何資料，但當您執行的應用程式，您將建立時，您可以加入資料。 資料庫也會包含四個簡單的預存程序。
 
 ## <a name="create-the-forms-and-add-controls"></a>建立表單並加入控制項
 
-1. 建立 Windows Forms 應用程式的專案，然後加以命名**SimpleDataApp**。
+1. 建立 Windows Forms 應用程式的專案，然後將其命名為 **SimpleDataApp**。
 
-    Visual Studio 會建立專案和數個檔案，包括空白 Windows 表單名為**Form1**。
+    Visual Studio 會建立專案和數個檔案，包括名為 **Form1** 的空白 Windows 表單。
 
-2. 將兩個 Windows form 加入專案，使其具有三種形式，並再提供下列名稱：
+2. 將兩個 Windows 表單新增至專案，使其具有三種形式，然後提供下列名稱：
 
    -   **巡覽**
 
@@ -82,7 +82,7 @@ ms.locfileid: "49891007"
    > [!NOTE]
    > 加入群組方塊和標籤控制項會更清楚，但是不在程式碼中使用。
 
-   **瀏覽表單**
+   **巡覽表單**
 
    ![[巡覽] 對話方塊](../data-tools/media/simpleappnav.png)
 
@@ -126,7 +126,7 @@ ms.locfileid: "49891007"
 
  您可以找到連接字串上按一下滑鼠右鍵**銷售額**中的資料連線**伺服器總管**，然後選擇**屬性**。 找出**ConnectionString**屬性，然後使用**Ctrl**+**A**， **Ctrl**+**C**選取，並將字串複製到剪貼簿。
 
-1.  如果您使用 C# 中，在**方案總管**，展開**屬性**節點下專案，然後開啟**Settings.settings**檔案。
+1.  如果您使用C#，請在**方案總管**，展開**屬性**節點下專案，然後開啟**Settings.settings**檔案。
     如果您使用 Visual Basic 中，在**方案總管**，按一下**顯示所有檔案**，展開**我的專案**節點，然後再開啟**Settings.settings**檔案。
 
 2.  在 **名稱**資料行中，輸入`connString`。
@@ -146,11 +146,11 @@ ms.locfileid: "49891007"
 
 ### <a name="navigation-form"></a>導覽表單
 
-當您執行應用程式時，瀏覽表單隨即開啟。 **新增帳戶**按鈕會開啟 NewCustomer 表單。 **填寫或取消訂單**按鈕會開啟 FillOrCancel 表單。 **結束** 按鈕會關閉應用程式。
+當您執行應用程式時，瀏覽表單隨即開啟。 [新增帳戶] 按鈕會開啟 NewCustomer 表單。 [填寫或取消訂單] 按鈕會開啟 FillOrCancel 表單。 [結束] 按鈕會關閉應用程式。
 
 #### <a name="make-the-navigation-form-the-startup-form"></a>讓瀏覽表單成為啟動表單
 
-如果您使用 C# 中，在**方案總管**，開啟**Program.cs**，然後變更`Application.Run`這一行： `Application.Run(new Navigation());`
+如果您使用 C#，在 [方案總管] 中開啟 **Program.cs**，然後將 `Application.Run` 這一行變更如下：`Application.Run(new Navigation());`
 
 如果您使用 Visual Basic 中，在**方案總管**，開啟**屬性**視窗中，選取**應用程式**索引標籤，然後再選取  **SimpleDataApp.Navigation**中**啟動表單**清單。
 
@@ -231,7 +231,7 @@ FillOrCancel 表單會執行查詢來傳回訂單，當您輸入訂單 ID，然�
 
 ## <a name="test-your-application"></a>測試您的應用程式
 
-選取  **F5**來建置及測試您的應用程式之後您程式碼的每個 Click 事件處理常式中，, 索引鍵，然後在您完成撰寫程式碼。
+在您編碼每一個 Click 事件處理常式，然後完成撰寫程式碼之後，選取 **F5** 鍵來建置及測試您的應用程式。
 
 ## <a name="see-also"></a>另請參閱
 
