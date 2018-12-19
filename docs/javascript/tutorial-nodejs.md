@@ -2,7 +2,7 @@
 title: 建立 Node.js 與 Express 應用程式
 description: 在本教學課程中，您會使用適用於 Visual Studio 的 Node.js 工具來建立應用程式
 ms.custom: ''
-ms.date: 09/24/2018
+ms.date: 06/27/2018
 ms.technology: vs-nodejs
 ms.topic: tutorial
 ms.devlang: javascript
@@ -13,12 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 8e7a1d04b83ffef2f7ec6efc786af6f5bc6e992e
-ms.sourcegitcommit: 000cdd1e95dd02e99a7c7c1a34c2f8fba6a632af
+ms.openlocfilehash: 2093f8a2f2d048661b7fb23f45c5317011f25076
+ms.sourcegitcommit: aea5cdb76fbc7eb31d1e5cc3c8d6adb0c743220f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/25/2018
-ms.locfileid: "47168340"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44124914"
 ---
 # <a name="tutorial-create-a-nodejs-and-express-app-in-visual-studio"></a>教學課程：在 Visual Studio 中建立 Node.js 和 Express 應用程式
 在使用 Node.js 和 Express 進行 Visual Studio 開發的這個教學課程中，您將建立簡單的 Node.js Web 應用程式、新增一些程式碼、探索 IDE 的一些功能，以及執行應用程式。 如果您尚未安裝 Visual Studio，請在[這裡](http://visualstudio.microsoft.com)免費安裝它。
@@ -192,11 +192,9 @@ IntelliSense 是一種 Visual Studio 工具，可協助您撰寫程式碼。
 
 ## <a name="run-the-application"></a>執行應用程式
 
-1. 在 [偵錯] 工具列中選取偵錯目標，例如 Edge 或 Chrome。
+1. 在 [偵錯] 工具列中選取偵錯目標。
 
     ![選取偵錯目標](../javascript/media/tutorial-nodejs-deploy-target.png)
-
-    如果您的電腦中有 Chrome 可供使用，但未顯示為選項，請從偵錯目標下拉式清單中選擇 [瀏覽方式]，並選取 Chrome 作為預設瀏覽器目標 (選擇 [設為預設值])。
 
 1. 按 **F5** ([偵錯] > [開始偵錯]) 以執行應用程式。
 

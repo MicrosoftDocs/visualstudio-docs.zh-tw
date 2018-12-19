@@ -1,6 +1,8 @@
 ---
-title: Visual Studio 遠端偵錯 |Microsoft Docs
-ms.custom: remotedebugging
+title: 遠端偵錯 |Microsoft Docs
+ms.custom:
+- remotedebugging
+- seodec18
 ms.date: 07/02/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -20,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6718c3390e26b0949d26805e24bcffb17e4c6deb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 6701a05d76117e0b8164488de3ec858c61021e17
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49872430"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53065502"
 ---
 # <a name="remote-debugging"></a>Remote Debugging
 您可以偵錯已部署在不同電腦的 Visual Studio 應用程式。 若要這樣做，您可以使用 Visual Studio 遠端偵錯工具。
@@ -44,7 +46,7 @@ ms.locfileid: "49872430"
 
 如果您只想要下載並安裝遠端偵錯工具，而不需要任何額外的指示，針對您的案例，請遵循這篇文章中的步驟。
 
-## <a name="download-and-install-the-remote-tools"></a>下載並安裝遠端工具
+## <a name="download-and-install-the-remote-tools"></a>下載及安裝遠端工具
 
 [!INCLUDE [remote-debugger-download](../debugger/includes/remote-debugger-download.md)]
 
@@ -103,7 +105,7 @@ ms.locfileid: "49872430"
 
 4. 加入使用者帳戶的名稱和密碼。
 
-    您可能需要新增**做為服務登入**權利加入此帳戶的使用者 (尋找**本機安全性原則**(secpol.msc) 中**啟動**頁面或視窗 (或類型**secpol**在命令提示字元)。 視窗出現時，請按兩下 [使用者權限指派] ，然後在右窗格中尋找 [以服務方式登入]  。 對它按兩下。 將使用者帳戶加入**屬性**視窗，然後按一下**確定**)。 按 [ **下一步**]。
+    您可能需要新增**做為服務登入**權利加入此帳戶的使用者 (尋找**本機安全性原則**(secpol.msc) 中**啟動**頁面或視窗 (或類型**secpol**在命令提示字元)。 視窗出現時，請按兩下 [使用者權限指派] ，然後在右窗格中尋找 [以服務方式登入]  。 對它按兩下。 將使用者帳戶新增至 [屬性] 視窗，然後按一下 [確定]。 按 [ **下一步**]。
 
 5. 選取您要遠端工具與之通訊的網路類型。 必須至少選取一種網路類型。 如果此電腦經由網域連線，您就必須選擇第一個項目。 如果此電腦經由工作群組或家用群組連線，您就必須選擇第二個或第三個項目。 按 [ **下一步**]。
 
@@ -111,9 +113,9 @@ ms.locfileid: "49872430"
 
 7. 按一下 [ **完成**]。
 
-   此時 [遠端偵錯工具] 會以服務方式執行。 您可以驗證，請前往**控制台 > 服務**並尋找**Visual Studio 2015 遠端偵錯工具**。
+   此時 [遠端偵錯工具] 會以服務方式執行。 您可以前往 [控制台] > [服務]，然後尋找 [Visual Studio 2015 遠端偵錯工具]。
 
-   您可以停止和啟動遠端偵錯工具服務，從**控制台 > 服務**。
+   您可以從 [控制台] > [服務] 停止和啟動遠端偵錯工具服務。
 
 ## <a name="set-up-debugging-with-remote-symbols"></a>設定遠端符號偵錯
 

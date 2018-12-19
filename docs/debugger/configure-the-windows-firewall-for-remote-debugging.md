@@ -1,6 +1,5 @@
 ---
 title: 設定 Windows 防火牆進行遠端偵錯 |Microsoft Docs
-ms.custom: ''
 ms.date: 10/31/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -10,18 +9,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d4e4ccc09d8919260b1634fd02790c1bf5b10636
-ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
-ms.translationtype: HT
+ms.openlocfilehash: da505c6193dd7d05cc10a8e7cec8383f8ee3adfc
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50750932"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53058593"
 ---
 # <a name="configure-windows-firewall-for-remote-debugging"></a>設定 Windows 防火牆進行遠端偵錯
 
 在網路上受保護的 Windows 防火牆，您必須設定防火牆，以允許遠端偵錯。 Visual Studio 和遠端偵錯工具嘗試在安裝或啟動時，開啟正確的防火牆連接埠，但您也可能需要開啟連接埠，或以手動方式允許應用程式。 
 
-本主題描述如何設定 Windows 防火牆以啟用在 Windows 10、windows 8/8.1 和 7; 上的遠端偵錯與 Windows Server 2012 R2、 2012年和 2008 R2 電腦。 Visual Studio 和遠端電腦不用執行相同的作業系統。 比方說，在 Visual Studio 電腦可以執行 Windows 10 和遠端電腦可以執行 Windows Server 2012 R2。      
+本主題描述如何設定 Windows 防火牆以啟用在 Windows 10、windows 8/8.1 和 7; 上的遠端偵錯與 Windows Server 2012 R2、 2012年和 2008 R2 電腦。 Visual Studio 和遠端電腦不用執行相同的作業系統。 例如，Visual Studio 電腦可以執行 Windows 10，而遠端電腦則可以執行 Windows Server 2012 R2。      
   
 >[!NOTE]
 >在不同的作業系統，以及舊版 Windows 的指示來設定 Windows 防火牆有些許不同。 Windows 8/8.1、 Windows 10 和 Windows Server 2012 的設定，請使用這個字*應用程式*，而 Windows 7 和 Windows Server 2008 使用 word*程式*。  
@@ -56,23 +55,23 @@ Visual Studio 和遠端偵錯工具嘗試在安裝或啟動期間開啟正確的
 
 |**連接埠**|**傳入/傳出**|**通訊協定**|**描述**|   
 |-|-|-|-|
-|4022|連入|TCP|適用於 VS 2017。 針對每個 Visual Studio 版本 2 通訊埠數字會遞增。 如需詳細資訊，請參閱 < [Visual Studio 遠端偵錯工具連接埠指派](../debugger/remote-debugger-port-assignments.md)。|  
-|4023|連入|TCP|適用於 VS 2017。 針對每個 Visual Studio 版本 2 通訊埠數字會遞增。 此連接埠是只用於從遠端偵錯從 64 位元版本的遠端偵錯工具的 32 位元處理程序。 如需詳細資訊，請參閱 < [Visual Studio 遠端偵錯工具連接埠指派](../debugger/remote-debugger-port-assignments.md)。| 
+|4022|傳入|TCP|針對 VS 2017。 針對每個 Visual Studio 版本 2 通訊埠數字會遞增。 如需詳細資訊，請參閱 [Visual Studio 遠端偵錯工具連接埠指派](../debugger/remote-debugger-port-assignments.md)。|  
+|4023|傳入|TCP|針對 VS 2017。 針對每個 Visual Studio 版本 2 通訊埠數字會遞增。 此連接埠是只用於從遠端偵錯從 64 位元版本的遠端偵錯工具的 32 位元處理程序。 如需詳細資訊，請參閱 [Visual Studio 遠端偵錯工具連接埠指派](../debugger/remote-debugger-port-assignments.md)。| 
 |3702|傳出|UDP|（選擇性）遠端偵錯工具探索的必要項。|    
   
 如果您選取**使用 Managed 相容性模式**下方**工具** > **選項** > **偵錯**，開啟這些額外的遠端偵錯工具連接埠。 偵錯工具 Managed 相容性模式可讓舊版、 偵錯工具的 Visual Studio 2010 版本。 
 
 |**連接埠**|**傳入/傳出**|**通訊協定**|**描述**|  
 |-|-|-|-|  
-|135、139、445|傳出|TCP|必要。|  
-|137、138|傳出|UDP|必要。|  
+|135、139、445|傳出|TCP|必要項。|  
+|137、138|傳出|UDP|必要項。|  
 
 如果您的網域原則需要透過 IPSec 進行網路通訊，您必須開啟 Visual Studio 和遠端電腦上的其他連接埠。 若要偵錯遠端 IIS web 伺服器上，開啟遠端電腦上的連接埠 80。
 
 |**連接埠**|**傳入/傳出**|**通訊協定**|**描述**|  
 |-|-|-|-|  
 |500、4500|傳出|UDP|如果您的網域原則需要透過 IPSec 進行網路通訊時，則為必要項。|  
-|80|傳出|TCP|Web 伺服器偵錯的必要項。|
+|80|傳出|TCP|網頁伺服器偵錯的必要項。|
 
 若要允許通過 Windows 防火牆的特定應用程式，請參閱[設定通過 Windows 防火牆的遠端偵錯](#configure-remote-debugging-through-windows-firewall)。 
 

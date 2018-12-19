@@ -16,27 +16,27 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f0a6a50ca1e84d9b1f5508cccbad24607f36b3f7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 250e3ed3fb548dad26bc29f83fae35b8e6727c9f
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942058"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35671082"
 ---
 # <a name="customize-a-ribbon-for-infopath"></a>自訂 infopath 的功能區
   當您在 Microsoft Office InfoPath 自訂功能區時，您必須考慮自訂功能區在應用程式中出現的位置。 [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)] 可以在下列三種 InfoPath 應用程式視窗中顯示功能區：  
   
-- 顯示在設計模式中開啟表單範本的視窗。  
+-   顯示在設計模式中開啟表單範本的視窗。  
   
-- 根據表單範本來顯示表單的視窗。  
+-   根據表單範本來顯示表單的視窗。  
   
-- 預覽列印視窗。  
+-   預覽列印視窗。  
   
-  **適用對象：** 本主題資訊適用於 InfoPath 2010 的 VSTO 增益集專案。 如需詳細資訊，請參閱 <<c0> [ 依 Office 應用程式和專案類型提供的功能](../vsto/features-available-by-office-application-and-project-type.md)。  
+ **適用對象：** 本主題資訊適用於 InfoPath 2010 的 VSTO 增益集專案。 如需詳細資訊，請參閱 <<c0> [ 依 Office 應用程式和專案類型提供的功能](../vsto/features-available-by-office-application-and-project-type.md)。  
   
-  使用者和設計人員會在設計模式開啟表單範本來修改範本的外觀和版面配置。 使用者開啟以表單範本為基礎的表單來加入內容。  
+ 使用者和設計人員會在設計模式開啟表單範本來修改範本的外觀和版面配置。 使用者開啟以表單範本為基礎的表單來加入內容。  
   
-  [預覽列印] 視窗可讓設計人員和使用者在列印前預覽表單或表單範本的頁面。  
+ [預覽列印] 視窗可讓設計人員和使用者在列印前預覽表單或表單範本的頁面。  
   
 > [!NOTE]  
 >  [增益集]  索引標籤不會出現在 [預覽列印] 視窗。 如果您想要在 [預覽列印] 視窗中顯示自訂索引標籤，請確定索引標籤的 [OfficeId]  屬性未設定為 [TabAddIns] 。  
@@ -68,6 +68,6 @@ ms.locfileid: "49942058"
  [在執行階段功能區的存取](../vsto/accessing-the-ribbon-at-run-time.md)   
  [功能區概觀](../vsto/ribbon-overview.md)   
  [功能區設計工具](../vsto/ribbon-designer.md)   
- [Ribbon XML](../vsto/ribbon-xml.md)  
+ [功能區 XML](../vsto/ribbon-xml.md)  
   
   

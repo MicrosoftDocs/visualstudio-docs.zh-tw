@@ -1,6 +1,6 @@
 ---
-title: 指定符號 (.pdb) 和原始程式檔偵錯工具 |Microsoft Docs
-ms.custom: H1Hack27Feb2017
+title: 設定偵錯工具中的符號 (.pdb) 和原始程式檔
+ms.custom: seodec18
 ms.date: 10/08/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -29,12 +29,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 35eb141850770a20b78020c57868a7fb2ff3bf90
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 6ba2f7794b052712d35bbdadb02a0ea8551dc78b
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389172"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53060442"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>在 Visual Studio debugger 中指定符號 (.pdb) 和原始程式檔 (C#，c + +、 Visual Basic 中， F#)
 
@@ -77,11 +77,11 @@ ms.locfileid: "52389172"
       
      您可以使用的符號伺服器包括：  
       
-     **公用 Microsoft 符號伺服器**： 若要偵錯發生在系統 DLL 或協力廠商程式庫呼叫期間當機，因此您通常需要系統 *.pdb*檔案。 系統 *.pdb*檔案包含 Windows Dll 符號 *.exe*檔案和裝置驅動程式。 您可以取得 Windows 作業系統、 MDAC、 IIS、 ISA、 符號和[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]從公用 Microsoft 符號伺服器。 
+     **公用 Microsoft 符號伺服器**:若要偵錯發生在系統 DLL 或協力廠商程式庫呼叫期間當機，因此您通常需要系統 *.pdb*檔案。 系統 *.pdb*檔案包含 Windows Dll 符號 *.exe*檔案和裝置驅動程式。 您可以取得 Windows 作業系統、 MDAC、 IIS、 ISA、 符號和[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]從公用 Microsoft 符號伺服器。 
       
-     **符號伺服器的內部網路或本機電腦上**： 您的小組或公司可以從外部來源建立您自己的產品，以及做為快取符號的符號伺服器。 您的電腦上可能有符號伺服器。 
+     **內部網路或本機電腦上的符號伺服器**：您的小組或公司可以為自己的產品建立符號伺服器，以及作為外部來源符號的快取。 您的電腦上可能有符號伺服器。 
       
-     **協力廠商符號伺服器**： 的 Windows 應用程式和程式庫的協力廠商提供者可以提供網際網路上的符號伺服器的存取權。 
+     **協力廠商符號伺服器**：Windows 應用程式和程式庫的協力廠商提供者可提供對網際網路上符號伺服器的存取。 
     
      > [!WARNING]
      > 如果您使用公用 Microsoft 符號伺服器以外的符號伺服器，請確定符號伺服器和它的路徑是值得信任。 由於符號檔可能包含任意可執行程式碼，您可以公開安全性威脅。  
@@ -156,7 +156,7 @@ ms.locfileid: "52389172"
   您可以限制命令的*srcsrv.dll*可以從應用程式的執行 *.pdb*列出允許的命令，在名為的檔案*srcsrv.ini*。 地方*srcsrv.ini*相同的資料夾中的檔案*srcsrv.dll*並*devenv.exe*。  
   
   >[!IMPORTANT]
-  >在應用程式的可內嵌任意命令 *.pdb*檔案中，因此請務必將只有您想要執行的命令*srcsrv.ini*檔案。 嘗試執行 *srcsvr.ini* 檔案中未包含的任何命令，會讓確認對話方塊出現。 如需詳細資訊，請參閱 [Security Warning: Debugger Must Execute Untrusted Command](../debugger/security-warning-debugger-must-execute-untrusted-command.md)。 
+  >在應用程式的可內嵌任意命令 *.pdb*檔案中，因此請務必將只有您想要執行的命令*srcsrv.ini*檔案。 嘗試執行 *srcsvr.ini* 檔案中未包含的任何命令，會讓確認對話方塊出現。 如需詳細資訊，請參閱[安全性警告：偵錯工具必須執行未受信任的命令](../debugger/security-warning-debugger-must-execute-untrusted-command.md)。 
   >
   >由於不會對命令參數進行任何驗證，因此請謹慎使用受信任的命令。 例如，如果您列出*cmd.exe*中您*srcsrv.ini*，惡意使用者可能在上指定參數*cmd.exe*這會讓它危險。  
   
@@ -214,7 +214,7 @@ ms.locfileid: "52389172"
 1. 在 [**模組**] 視窗中，以滑鼠右鍵按一下**符號狀態**或**符號檔**標頭或任何模組。 
 1. 在操作功能表中，選取下列選項之一：  
   
-|選項|描述|  
+|選項|說明|  
 |------------|-----------------|  
 |**載入符號**|會出現以略過、 找不到或未載入符號的模組。 嘗試從指定的位置載入符號**選項** > **偵錯** > **符號**頁面。 如果找不到或未載入符號檔，會啟動**檔案總管**以便您可以指定要搜尋的新位置。|  
 |**符號載入資訊**|顯示檔案的位置載入的符號或偵錯工具找不到檔案時所搜尋的位置。|  

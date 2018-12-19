@@ -1,6 +1,6 @@
 ---
-title: 檢視 DataTips 中的資料值，在程式碼編輯器 |Microsoft Docs
-ms.custom: ''
+title: 檢視 DataTips 中的變數值 |Microsoft Docs
+ms.custom: seodec18
 ms.date: 11/21/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4156ff8f81e7a011aeff0cf753af60bb3d6cd924
-ms.sourcegitcommit: a811f6a194ccd40d844e74e618d847df87c85c16
+ms.openlocfilehash: c84c6c9049fe11de16267267df86c88851cfcdfe
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "52621535"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53066846"
 ---
 # <a name="view-data-values-in-datatips-in-the-code-editor"></a>在資料提示方塊中，程式碼編輯器中的檢視資料值
 
@@ -128,7 +128,7 @@ Float 固定資料提示方塊，將滑鼠停在資料提示方塊，並從操�
 ## <a name="see-also"></a>另請參閱  
  [什麼是偵錯？](../debugger/what-is-debugging.md)  
  [透過撰寫更好的 C# 程式碼來修正 Bug](../debugger/write-better-code-with-visual-studio.md)  
- [第一次查看偵錯](../debugger/debugger-feature-tour.md)[偵錯工具中的 檢視資料](../debugger/viewing-data-in-the-debugger.md)   
+ [第一次查看偵錯](../debugger/debugger-feature-tour.md)[偵錯工具中的檢視資料](../debugger/viewing-data-in-the-debugger.md)   
  [監看式及快速監看式視窗](../debugger/watch-and-quickwatch-windows.md)   
  [建立自訂視覺化檢視](../debugger/create-custom-visualizers-of-data.md)   
 

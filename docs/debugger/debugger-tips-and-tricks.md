@@ -1,7 +1,7 @@
 ---
-title: 祕訣和訣竅，Visual Studio 偵錯工具
+title: 祕訣和訣竅，偵錯工具
 description: 了解一些 Visual Studio 偵錯工具支援鮮為人知的功能
-ms.custom: ''
+ms.custom: seodec18
 ms.date: 06/15/2017
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 072cfcf253bb01687df20a6a0f2d41b71468b90c
-ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
-ms.translationtype: MT
+ms.openlocfilehash: 238236df48adab491cd8a1f9282a8f6a440c5321
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52257351"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53055221"
 ---
 # <a name="learn-productivity-tips-and-tricks-for-the-debugger-in-visual-studio"></a>了解 Visual Studio 中偵錯工具的產能的秘訣和訣竅
 
@@ -32,7 +32,7 @@ ms.locfileid: "52257351"
 
 ![固定資料提示](../debugger/media/dbg-tips-data-tips-pinned.png "PinningDataTip")
 
-## <a name="edit-your-code-and-continue-debugging-c-vb-c"></a>編輯您的程式碼，並繼續偵錯 （C#、 VB、 c + +）
+## <a name="edit-your-code-and-continue-debugging-c-vb-c"></a>編輯您的程式碼，並繼續偵錯 (C#、 VB、 c + +)
 
 在大部分的語言支援的 Visual Studio 中，您可以編輯您的程式碼在偵錯工作階段中央，並繼續偵錯。 若要使用這項功能，可按一下以進入您的程式碼，將游標暫停偵錯工具，請編輯，然後按下時使用**F5**， **F10**，或**F11**繼續偵錯。
 
@@ -65,7 +65,7 @@ ms.locfileid: "52257351"
 > [!WARNING]
 > 您通常需要謹慎使用這項功能，您會在工具提示中看到一則警告。 也可能會看到其他警告。 將指標移無法還原成先前的應用程式狀態的應用程式。
 
-## <a name="track-an-out-of-scope-object-c-visual-basic"></a>追蹤範圍外的物件 （C#、 Visual Basic）
+## <a name="track-an-out-of-scope-object-c-visual-basic"></a>追蹤的範圍外的物件 (C#，Visual Basic)
 
 就可以輕鬆地檢視變數使用偵錯工具視窗，例如**監看式**視窗。 不過，當變數超出範圍內**監看式** 視窗中，您可能會注意到，它會呈現灰色。在某些應用程式案例中，即使變數超出範圍，以及要密切，可能會變更變數的值 （例如，變數可能會收到回收）。 您可以在建立物件識別碼來追蹤變數**監看式**視窗。
 
@@ -166,5 +166,5 @@ ms.locfileid: "52257351"
 - [在 Visual Studio 中偵錯的較小者已知的駭客 7](https://blogs.msdn.microsoft.com/visualstudio/2017/06/26/7-lesser-known-hacks-for-debugging-in-visual-studio/)
 - [在 Visual Studio 中隱藏的寶藏 7](https://blogs.msdn.microsoft.com/visualstudio/2017/10/05/7-hidden-gems-in-visual-studio-2017/)
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 [鍵盤快速鍵](../ide/tips-and-tricks-for-visual-studio.md)

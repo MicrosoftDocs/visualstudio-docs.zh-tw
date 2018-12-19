@@ -13,17 +13,17 @@ helpviewer_keywords:
 - actions panes [Office development in Visual Studio]
 - smart documents [Office development in Visual Studio]
 - user controls [Office development in Visual Studio], actions panes
-author: John-Hart
-ms.author: johnhart
+author: TerryGLee
+ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e8c7136c1f97f531600799f3aede30170813cf0a
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
-ms.translationtype: MT
+ms.openlocfilehash: e19494af4d0c774e7cb70613151376be733f0a63
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52305672"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35671574"
 ---
 # <a name="actions-pane-overview"></a>執行窗格概觀
   執行窗格是可自訂**文件動作**附加至特定的 Microsoft Office Word 文件或 Microsoft Office Excel 活頁簿的工作窗格。 動作 窗格位於 Office 工作窗格，以及其他內建的工作 窗格中，這類**XML 來源**在 Excel 中的工作窗格或**樣式與格式**在 Word 中的工作窗格。 您可以使用 Windows Form 控制項或 WPF 控制項，設計執行窗格使用者介面。
@@ -48,16 +48,16 @@ ms.locfileid: "52305672"
 ### <a name="add-multiple-controls-to-the-actions-pane"></a>將多個控制項新增至 [動作] 窗格  
  當您將多個控制項加入 [動作] 窗格時，您應該群組中的使用者控制項的控制項，然後再新增使用者控制項<xref:Microsoft.Office.Tools.ActionsPane.Controls%2A>屬性。 這個程序包括下列步驟：  
 
-1. 建立動作 窗格中的使用者介面 (UI)，加上**執行窗格控制項**或是**使用者控制項**項目加入您的專案。 這兩個項目都包含自訂的 Windows Form <xref:System.Windows.Forms.UserControl> 類別。 **執行窗格控制項**並**使用者控制**是相等的項目; 唯一的差別在於其名稱。  
+1.  建立動作 窗格中的使用者介面 (UI)，加上**執行窗格控制項**或是**使用者控制項**項目加入您的專案。 這兩個項目都包含自訂的 Windows Form <xref:System.Windows.Forms.UserControl> 類別。 **執行窗格控制項**並**使用者控制**是相等的項目; 唯一的差別在於其名稱。  
 
-2. 使用設計工具或撰寫程式碼，將 Windows Form 控制項加入 <xref:System.Windows.Forms.UserControl>。  
+2.  使用設計工具或撰寫程式碼，將 Windows Form 控制項加入 <xref:System.Windows.Forms.UserControl>。  
 
-   > [!NOTE]  
-   >  您也可以藉由將 WPF <xref:System.Windows.Controls.UserControl> 加入 Windows Form <xref:System.Windows.Forms.UserControl>，在執行窗格中加入 WPF 控制項。 如需詳細資訊，請參閱 <<c0> [ 使用 WPF 控制項在 Office 方案中](../vsto/using-wpf-controls-in-office-solutions.md)。  
+    > [!NOTE]  
+    >  您也可以藉由將 WPF <xref:System.Windows.Controls.UserControl> 加入 Windows Form <xref:System.Windows.Forms.UserControl>，在執行窗格中加入 WPF 控制項。 如需詳細資訊，請參閱 <<c0> [ 使用 WPF 控制項在 Office 方案中](../vsto/using-wpf-controls-in-office-solutions.md)。  
 
-3. 在專案的 `ThisWorkbook` (Excel) 或 `ThisDocument` (Word) 類別 `ActionsPane` 欄位所包含的控制項中，加入自訂使用者控制項的執行個體。  
+3.  在專案的 `ThisWorkbook` (Excel) 或 `ThisDocument` (Word) 類別 `ActionsPane` 欄位所包含的控制項中，加入自訂使用者控制項的執行個體。  
 
-   如需示範此程序的更詳細的範例，請參閱[如何： 加入執行窗格加入 Word 文件或 Excel 活頁簿](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)。  
+ 如需示範此程序的更詳細的範例，請參閱[如何： 加入執行窗格加入 Word 文件或 Excel 活頁簿](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)。  
 
 ## <a name="hide-the-actions-pane"></a>隱藏 [動作] 窗格  
  雖然 <xref:Microsoft.Office.Tools.ActionsPane> 類別具有 <xref:Microsoft.Office.Tools.ActionsPane.Hide%2A> 方法和 <xref:Microsoft.Office.Tools.ActionsPane.Visible%2A> 屬性，但您不能使用 <xref:Microsoft.Office.Tools.ActionsPane> 類別本身的任何成員，從使用者介面移除執行窗格。 呼叫<xref:Microsoft.Office.Tools.ActionsPane.Hide%2A>方法或設定<xref:Microsoft.Office.Tools.ActionsPane.Visible%2A>屬性設**false**隱藏 [動作] 窗格中; 上的控制項不能隱藏工作窗格。  
@@ -83,7 +83,7 @@ ms.locfileid: "52305672"
  當使用者儲存文件，[動作] 窗格可見時，[動作] 窗格會顯示每次開啟文件時，不論 [動作] 窗格包含任何控制項。 如果想要控制其出現時機，請呼叫 `ThisDocument` 或 `ThisWorkbook` 的 `Startup` 事件處理常式中 `ActionsPane` 欄位的 <xref:Microsoft.Office.Tools.ActionsPane.Clear%2A> 方法，以確保文件開啟時不顯示執行窗格。  
 
 ### <a name="determine-when-the-actions-pane-is-closed"></a>判斷當關閉 [動作] 窗格  
- 執行窗格關閉時未引發任何事件。 雖然 <xref:Microsoft.Office.Tools.ActionsPane> 類別具有 <xref:Microsoft.Office.Tools.ActionsPane.VisibleChanged> 事件，但當終端使用者關閉執行窗格時並未引發這個事件。 藉由呼叫隱藏 [動作] 窗格上的控制項時，相反地，引發這個事件<xref:Microsoft.Office.Tools.ActionsPane.Hide%2A>方法或藉由設定<xref:Microsoft.Office.Tools.ActionsPane.Visible%2A>屬性設**false**。  
+ 執行窗格關閉時未引發任何事件。 雖然 <xref:Microsoft.Office.Tools.ActionsPane> 類別具有 <xref:Microsoft.Office.Tools.ActionsPane.VisibleChanged> 事件，但當使用者關閉執行窗格時並未引發這個事件。 藉由呼叫隱藏 [動作] 窗格上的控制項時，相反地，引發這個事件<xref:Microsoft.Office.Tools.ActionsPane.Hide%2A>方法或藉由設定<xref:Microsoft.Office.Tools.ActionsPane.Visible%2A>屬性設**false**。  
 
  當使用者關閉動作 窗格中時，使用者可以重新顯示藉由執行下列程序的其中一個應用程式的使用者介面 (UI) 中。  
 
