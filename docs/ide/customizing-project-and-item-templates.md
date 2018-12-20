@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Studio 中自訂專案和項目範本
+title: 自訂專案範本和項目範本
 ms.date: 01/02/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -10,12 +10,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: ab2707de0b82d7e3af151c79ea5ee60e5869bfab
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 451885aca46addf663d0e3a3ae9768f7d0f0cdba
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34571873"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53051752"
 ---
 # <a name="customize-project-and-item-templates"></a>自訂專案和項目範本
 
@@ -27,15 +27,15 @@ ms.locfileid: "34571873"
 
 - 修改現有範本，並將其匯出為使用者範本。
 
-   如需詳細資訊，請參閱[如何：更新現有的範本](../ide/how-to-update-existing-templates.md)。
+   如需詳細資訊，請參閱[＜How to：更新現有的範本](../ide/how-to-update-existing-templates.md)。
 
 - 將自訂參數傳遞給範本，以取代現有值。
 
-   如需詳細資訊，請參閱[如何：替代範本中的參數](../ide/how-to-substitute-parameters-in-a-template.md)。
+   如需詳細資訊，請參閱[＜How to：替代範本中的參數](../ide/how-to-substitute-parameters-in-a-template.md)。
 
 - 自訂從範本建立專案的精靈。
 
-   如需詳細資訊，請參閱[如何：搭配使用精靈與專案範本 (擴充性)](../extensibility/how-to-use-wizards-with-project-templates.md)。
+   如需詳細資訊，請參閱[＜How to：搭配專案範本 (擴充性) 使用精靈](../extensibility/how-to-use-wizards-with-project-templates.md)。
 
 ## <a name="see-also"></a>另請參閱
 

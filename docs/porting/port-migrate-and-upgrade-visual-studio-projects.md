@@ -19,12 +19,12 @@ helpviewer_keywords:
 - conversion, projects
 - asset compatibility
 - projects, conversion
-ms.openlocfilehash: 0c082540632be14f7ddce94cb64ef41f03b1e1f7
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: a8161fd7534554da0ad45b3aa2b985a68dd9e49d
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349539"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53067057"
 ---
 # <a name="project-migration-and-upgrade-reference-for-visual-studio-2017"></a>Visual Studio 2017 的專案移轉與升級參考
 
@@ -62,10 +62,10 @@ ms.locfileid: "51349539"
 | SharePoint 2010 | 當使用 Visual Studio 2017 開啟 SharePoint 方案專案時，便會將該專案升級至 SharePoint 2013 或 SharePoint 2016。 必須在 Visual Studio 2017 中安裝「.NET 桌面開發」工作負載以進行升級。<br/><br/>如需如何升級 SharePoint 專案的詳細資訊，請參閱[升級到 SharePoint 2013](https://technet.microsoft.com/library/cc303420.aspx)、[在 SharePoint Server 2013 中更新工作流程 (英文)](https://technet.microsoft.com/library/dn133867.aspx)，以及[針對資料庫附加升級建立 SharePoint Server 2016 伺服器陣列 (英文)](https://technet.microsoft.com/library/cc263026(v=office.16).aspx)。 |
 | SharePoint 2016 | 在 Office Developer Tools Preview 2 中建立的 SharePoint 增益集專案，無法在 Visual Studio 2017 中開啟。 若要規避此限制，請將 csproj vbproj 檔案中的 `MinimumVisualStudioVersion` 更新為 12.0，並將 `MinimumOfficeToolsVersion` 更新為 12.2。 |
 | Silverlight | Visual Studio 2017 不支援 Silverlight 專案。 若要維護 Silverlight 應用程式，請繼續使用 Visual Studio 2015。 |
-| SQL Server Reporting Services 和 SQL Server Analysis Services (SSRS、SSDT、SSAS、MSAS) | 這些專案類型的支援是透過 Visual Studio 組件庫中的兩個延伸模組來提供：[Microsoft Analysis Services 模型專案](https://marketplace.visualstudio.com/items?itemName=ProBITools.MicrosoftAnalysisServicesModelingProjects)和 [Microsoft Reporting Services 專案](https://marketplace.visualstudio.com/items?itemName=ProBITools.MicrosoftReportProjectsforVisualStudio)。 SSDT 支援也隨附於 Visual Studio 2017 中的資料儲存和處理工作負載。 |
+| SQL Server Reporting Services 和 SQL Server Analysis Services (SSRS、SSDT、SSAS、MSAS) | 這些專案類型的支援會透過 Visual Studio 資源庫中的兩個延伸模組提供：[Microsoft Analysis Services Modeling Projects](https://marketplace.visualstudio.com/items?itemName=ProBITools.MicrosoftAnalysisServicesModelingProjects) (Microsoft Analysis Services Modeling 專案) 與 [Microsoft Reporting Services Projects](https://marketplace.visualstudio.com/items?itemName=ProBITools.MicrosoftReportProjectsforVisualStudio) (Microsoft Reporting Services 專案)。 SSDT 支援也隨附於 Visual Studio 2017 中的資料儲存和處理工作負載。 |
 | SQL Server Integration Services (SSIS) | 透過 SQL Server Data Tools (SSDT) 可取得 Visual Studio 2017 的支援。 如需詳細資訊，請參閱 [SQL Server Integration Services 部落格](https://blogs.msdn.microsoft.com/ssis/2017/08/23/ssis-designer-is-now-available-for-visual-studio-2017/)。 |
 | Visual C++ | 您可以使用 Visual Studio 2017 來處理在較早之前 Visual Studio 版本 (自 Visual Studio 2010 起) 中建立的專案。 當您第一次開啟專案時，可以選擇要升級到最新的編譯器和工具組，或是繼續使用原本的編譯器和工具組。 如果您選擇繼續使用原本的編譯器和工具組，Visual Studio 2017 不會修改專案檔，並且會使用較早 Visual Studio 安裝的工具組來建置您的專案。 保留原本的選項表示您仍然可以視需要在原始的 Visual Studio 版本中開啟該專案。 如需詳細資訊，請參閱[在 Visual Studio 中使用原生多目標來建置舊專案](/cpp/porting/use-native-multi-targeting)。 |
-| Visual Studio 擴充性/VSIX | 系統會更新含 MinimumVersion 14.0 或以下版本的專案，以宣告 MinimumVersion 15.0；如此一來，即無法在舊版的 Visual Studio 中開啟專案。 若要允許在舊版本中開啟專案，請將 MinimumVersion 設定為 `$(VisualStudioVersion)`。 另請參閱[如何︰將擴充性專案移轉至 Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md)。 |
+| Visual Studio 擴充性/VSIX | 系統會更新含 MinimumVersion 14.0 或以下版本的專案，以宣告 MinimumVersion 15.0；如此一來，即無法在舊版的 Visual Studio 中開啟專案。 若要允許在舊版本中開啟專案，請將 MinimumVersion 設定為 `$(VisualStudioVersion)`。 另請參閱[如何：將擴充性專案移轉至 Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md)。 |
 | Visual Studio Lab Management | 您可以使用 Microsoft Test Manager 或 Visual Studio 2010 SP1 和更新版本，開啟在這些版本中建立的環境。 不過，若是 Visual Studio 2010 SP1，Microsoft Test Manager 的版本必須符合 Team Foundation Server 的版本才能建立環境。 |
 | Visual Studio Tools for Apache Cordova | 專案可以在 Visual Studio 2017 中開啟，但不具備回溯相容性。 從 Visual Studio 2015 中開啟專案時，系統會提示您允許對專案進行修改。 此修改會將專案升級為使用工具組 (而不是 `taco.json` 檔案) 來管理 Cordova 程式庫、其平台、其外掛程式，以及其節點/npm 相依性的版本設定。 如需詳細資訊，請參閱[移轉指南](https://docs.microsoft.com/visualstudio/cross-platform/tools-for-cordova/first-steps/migrate-from-visual-studio-2015)。 |
 | Web 部署 (wdproj) | 對 Web 部署專案的支援已在 Visual Studio 2012 中移除，但加入發行設定檔支援。 因為在 Visual Studio 2017 中沒有對等項目，所以沒有適用於此類專案的自動移轉路徑。 請改為在文字編輯器中開啟該 wdproj 檔案，然後將任何自訂項目複製並貼上到 pubxml (發行設定檔) 檔案中，如 [StackOverflow](https://stackoverflow.com/a/12061065/1203388) \(英文\) 上所述。 另請參閱 [Plans regarding website and web deployment projects](https://blogs.msdn.microsoft.com/webdev/2012/08/06/plans-regarding-website-projects-and-web-deployment-projects/) (有關網站和 Web 部署專案的計劃)。 |
@@ -95,7 +95,13 @@ Visual Studio 的每個新版本通常都會嘗試維持與舊版的相容性，
 
 在此情況下，自然會產生下列問題：您是否應該嘗試以手動方式更新，或將專案移轉至較新的 `ToolsVersion` 值。 進行這類變更是不必要的作業，而且可能會產生許多錯誤和警告，您必須修正這些問題才能重新建置專案。 此外，如果 Visual Studio 日後移除對特定 `ToolsVersion` 的支援，則開啟專案將會明確地觸發專案移轉處理序，因為 `ToolsVersion` 值必須進行變更。 在這種情況下，該特定專案類型的子系統會確切知道需要變更哪些項目，而且會遵循本文稍早所述自動進行這些變更。
 
+# <a name="next-steps"></a>後續步驟
+
 請參閱下列文章以了解進一步的討論內容：
 
 - [ToolsVersion 指引](../msbuild/msbuild-toolset-toolsversion.md)
 - [Framework 目標指引](../ide/visual-studio-multi-targeting-overview.md)
+
+## <a name="see-also"></a>另請參閱
+
+[Visual Studio 2019 Preview 的專案移轉與升級參考](port-migrate-upgrade-visual-studio-projects-2019.md)

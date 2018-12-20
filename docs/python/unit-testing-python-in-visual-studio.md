@@ -1,6 +1,6 @@
 ---
-title: Python 的單元測試
-description: 在 Visual Studio 中設定 Python 程式碼的單元測試，以充分利用測試總管的功能來探索、執行和偵錯測試。
+title: 單元測試 Python 程式碼
+description: 在 Visual Studio 中設定 Python 程式碼的單元測試，以充分利用 [測試總管] 的功能來探索、執行和偵錯測試。
 ms.date: 11/12/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -8,15 +8,16 @@ ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e8a3a61b7c77031033c9cdc988753437f25166a1
-ms.sourcegitcommit: 6a955a2d179cd0e137942389f940d9fcbbe125de
+ms.openlocfilehash: 57076aa4bf86b8053a38e6b8af96b6006bbdfa0a
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51607571"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53052526"
 ---
 # <a name="set-up-unit-testing-for-python-code"></a>設定 Python 程式碼的單元測試
 

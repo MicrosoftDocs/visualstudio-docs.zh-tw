@@ -1,5 +1,5 @@
 ---
-title: Visual Studio 中負載測試回合設定的計時詳細資料儲存區屬性
+title: 負載測試回合設定的計時詳細資料儲存區屬性
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,14 +11,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: e184db43fcaca96008f85daffdb9abdbc41df07b
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 6c82d0898f53bbe9c02126f7379d2d3a0a96fdbf
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895219"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53054580"
 ---
-# <a name="how-to-specify-the-timing-details-storage-property-for-a-load-test-run-setting"></a>如何：指定負載測試回合設定的計時詳細資料儲存區屬性
+# <a name="how-to-specify-the-timing-details-storage-property-for-a-load-test-run-setting"></a>HOW TO：指定負載測試回合設定的計時詳細資料儲存區屬性
 
 使用 [新增負載測試精靈] 建立負載測試之後，您就可以使用 [負載測試編輯器] 來變更設定，以便符合您的測試需求和目標。
 
@@ -59,7 +59,7 @@ ms.locfileid: "52895219"
 
 5.  在 [結果] 分類底下，選擇 [計時詳細資料儲存區] 屬性，並選取 [所有個別細節]。
 
-     設定 [計時詳細資料儲存區] 屬性的 [所有個別細節] 設定之後，您可以執行負載測試並檢視 [虛擬使用者活動圖]。 如需詳細資訊，請參閱[如何：分析虛擬使用者在負載測試期間的行為](../test/how-to-analyze-virtual-user-activity-during-a-load-test.md)。
+     設定 [計時詳細資料儲存區] 屬性的 [所有個別細節] 設定之後，您可以執行負載測試並檢視 [虛擬使用者活動圖]。 如需詳細資訊，請參閱[＜How to：分析虛擬使用者在負載測試期間的行為](../test/how-to-analyze-virtual-user-activity-during-a-load-test.md)。
 
 ## <a name="see-also"></a>另請參閱
 

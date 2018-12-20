@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Studio 中實作介面
+title: 實作介面
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9abc1d5fde69127f796dcfcd4c7c09cf8743c915
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 7abe20831c920a0d4fd74f60a75e6112c480ab39
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295419"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068470"
 ---
 # <a name="implement-an-interface-in-visual-studio"></a>在 Visual Studio 中實作介面
 
@@ -26,9 +26,9 @@ ms.locfileid: "51295419"
 
 **功能：** 讓您立即產生實作介面所需的程式碼。
 
-**時機：** 您想要從介面繼承。
+**時機：** 您想要從介面繼承時。
 
-**原因：** 您可以手動逐一實作所有介面，不過，此功能將可自動產生所有方法簽章。
+**原因：** 您可以手動逐一實作所有介面；不過，此功能將會自動產生所有方法的簽章。
 
 ## <a name="how-to"></a>操作說明
 

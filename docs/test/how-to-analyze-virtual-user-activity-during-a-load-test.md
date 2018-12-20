@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Studio 中分析負載測試的虛擬使用者活動
+title: 分析負載測試的虛擬使用者活動
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,14 +10,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 6737a5b12b9205e5d6ed3ddde6de89e820d92fce
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 0cac452a7fa4799c986df0f182643ed1b94afbe6
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895232"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53059518"
 ---
-# <a name="how-to-analyze-what-virtual-users-are-doing-during-a-load-test-using-the-virtual-user-activity-chart"></a>如何：使用虛擬使用者活動圖表分析虛擬使用者在負載測試期間的行為
+# <a name="how-to-analyze-what-virtual-users-are-doing-during-a-load-test-using-the-virtual-user-activity-chart"></a>HOW TO：使用虛擬使用者活動圖分析虛擬使用者在負載測試期間的行為
 
 您可以使用「虛擬使用者活動圖」檢視與負載測試關聯的虛擬使用者活動。 圖表中的每一列都表示個別的虛擬使用者。 「虛擬使用者活動圖」會顯示每一個虛擬使用者在測試期間的行為。 您可以查看使用者活動的模式、負載模式、讓失敗或緩慢的測試產生關聯，以及查看其他虛擬使用者活動的要求。 「虛擬使用者活動圖」只有在負載測試完成執行之後才能使用。
 
@@ -108,4 +108,4 @@ ms.locfileid: "52895232"
 ## <a name="see-also"></a>另請參閱
 
 - [在詳細資料檢視中分析虛擬使用者活動](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md)
-- [逐步解說：使用虛擬使用者活動圖來隔離問題](../test/walkthrough-use-the-virtual-user-activity-chart-to-isolate-issues.md)
+- [逐步解說：使用虛擬使用者活動圖來找出問題](../test/walkthrough-use-the-virtual-user-activity-chart-to-isolate-issues.md)

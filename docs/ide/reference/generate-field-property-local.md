@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Studio 中產生欄位、屬性或區域變數
+title: 產生欄位、屬性、區域變數
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 60472c83738351ebc46a96e9d53bc4ae3015c514
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: d3cd886e4ed08bbe4dbeea1b177dc4dd22502d99
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51296225"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53064030"
 ---
 # <a name="generate-a-field-property-or-local-variable-in-visual-studio"></a>在 Visual Studio 中產生欄位、屬性或區域變數
 
@@ -26,9 +26,9 @@ ms.locfileid: "51296225"
 
 **功能：** 讓您針對先前未宣告的欄位、屬性或區域變數立即產生程式碼。
 
-**時機：** 您在輸入時引進新的欄位、屬性或區域變數，並想要自動正確地宣告這些項目。
+**時機：** 您在鍵入時引進新的欄位、屬性或區域變數，並想要自動正確地宣告這些項目。
 
-**原因：** 您可以在使用欄位、屬性或區域變數之前先宣告這些項目，不過，此功能將可自動產生宣告和類型。
+**原因：** 您可以在使用欄位、屬性或區域變數之前先宣告這些項目；不過，此功能將自動產生宣告和類型。
 
 ## <a name="how-to"></a>操作說明
 
@@ -48,8 +48,8 @@ ms.locfileid: "51296225"
       - 在字行任何地方按 **Ctrl**+**.**， 以觸發 [快速動作與重構] 功能表。
    - **滑鼠**
       - 以滑鼠右鍵按一下並選取 [快速動作與重構] 功能表。
-      - 將游標暫留在紅色曲線上，然後按一下顯示的 ![燈泡](media/bulb-cs.png) 出現的圖示。
-      - 按一下 ![燈泡](media/bulb-cs.png) 圖示，如果文字游標已經在具有紅色曲線的行上，此圖示就會出現在左邊界上。
+      - 將游標暫留在紅色曲線上，然後按一下顯示的 ![燈泡](media/bulb-cs.png) 圖示。
+      - 按一下 ![燈泡](media/bulb-cs.png) 圖示，如果文字游標已經在含有紅色曲線的行上，此圖示就會出現在左邊界上。
 
       ![「產生欄位/屬性/區域變數」預覽](media/field-preview-cs.png)
 

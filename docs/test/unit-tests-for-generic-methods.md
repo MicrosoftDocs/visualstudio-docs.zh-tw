@@ -1,5 +1,5 @@
 ---
-title: Visual Studio 中的泛型方法單元測試
+title: 泛型方法的單元測試
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -12,12 +12,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: bb93e9b2d99c33c30b1478466f0cd8fa39388371
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: ced33798841a732773310a902c0d51568bc36fe7
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295581"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53067556"
 ---
 # <a name="unit-tests-for-generic-methods"></a>泛型方法的單元測試
 
@@ -117,10 +117,10 @@ public void SizeOfLinkedListTest()
 ```
 
 > [!NOTE]
-> 每次 SizeOfLinkedListTest 測試執行時，都會呼叫其 TestHelper 方法兩次。 Assert 陳述式的計算結果每次都必須為 true，測試才會通過。 如果測試失敗，可能無法確定造成失敗的是指定 `<int>` 的呼叫，還是指定 `<char>` 的呼叫。 如果要找出答案，您可以檢查呼叫堆疊，也可以在測試方法中設定中斷點，然後在執行測試時同時進行偵錯。 如需詳細資訊，請參閱[如何：在 ASP.NET 方案中執行測試時偵錯](https://msdn.microsoft.com/Library/de4d7aa1-4a1e-467e-a19b-4a85ec245b8b)。
+> 每次 SizeOfLinkedListTest 測試執行時，都會呼叫其 TestHelper 方法兩次。 Assert 陳述式的計算結果每次都必須為 true，測試才會通過。 如果測試失敗，可能無法確定造成失敗的是指定 `<int>` 的呼叫，還是指定 `<char>` 的呼叫。 如果要找出答案，您可以檢查呼叫堆疊，也可以在測試方法中設定中斷點，然後在執行測試時同時進行偵錯。 如需詳細資訊，請參閱[＜How to：在 ASP.NET 解決方案中執行測試時偵錯](https://msdn.microsoft.com/Library/de4d7aa1-4a1e-467e-a19b-4a85ec245b8b)。
 
 
-###  <a name="TypeConstraintNotSatisfied"></a> 範例 2：使用類型條件約束
+###  <a name="TypeConstraintNotSatisfied"></a> 範例 2：使用型別條件約束
  本範例示範泛型方法的單元測試，而該泛型方法使用了未能滿足的類型條件約束。 第一個區段顯示來自待測程式碼專案的程式碼。 其中的類型條件約束以反白顯示。
 
  第二個區段顯示來自測試專案的程式碼。

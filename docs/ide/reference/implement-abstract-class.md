@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Studio 中實作抽象類別
+title: 實作抽象類別
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4da74a60741ac33143efd7aecf0a4275185b6d3b
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: dfa2c6692ddcef9e41454bf902580f354c32f861
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51294692"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53047599"
 ---
 # <a name="implement-an-abstract-class-in-visual-studio"></a>在 Visual Studio 中實作抽象類別
 
@@ -28,7 +28,7 @@ ms.locfileid: "51294692"
 
 **時機：** 您想要從抽象類別繼承。
 
-**原因：** 您可以手動逐一實作所有抽象成員，不過，此功能將可自動產生所有方法簽章。
+**原因：** 您可以手動逐一實作所有抽象成員；不過，此功能將可自動產生所有方法簽章。
 
 ## <a name="how-to"></a>操作說明
 

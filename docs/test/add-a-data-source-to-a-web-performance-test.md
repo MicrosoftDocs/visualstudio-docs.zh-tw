@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Studio 中將資料來源新增至 Web 效能測試
+title: 將資料來源加入至 Web 效能測試
 ms.date: 10/03/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 13d0f405b59b95df0edbcfc5e6f051c1f3140035
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 6d2ae95883884909641541e0efe6e4efbc7fe06a
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52896103"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53065203"
 ---
 # <a name="add-a-data-source-to-a-web-performance-test"></a>將資料來源加入至 Web 效能測試
 
@@ -124,9 +124,9 @@ ms.locfileid: "52896103"
 
 ## <a name="q--a"></a>問與答
 
-### <a name="q-what-databases-can-i-use-as-a-data-source"></a>問：我可以使用哪些資料庫做為資料來源？
+### <a name="q-what-databases-can-i-use-as-a-data-source"></a>問：我可以使用哪些資料庫作為資料來源？
 
-**答：** 您可使用下列項目：
+**答：** 您可以使用下列項目：
 
 - Microsoft SQL Azure。
 
@@ -140,7 +140,7 @@ ms.locfileid: "52896103"
 
 - Oracle 7.3、8i、9i 或 10g。
 
-### <a name="q-how-do-i-use-a-comma-separated-value-csv-text-file-as-a-data-source"></a>問：如何使用逗號分隔值 (CSV) 文字檔做為資料來源？
+### <a name="q-how-do-i-use-a-comma-separated-value-csv-text-file-as-a-data-source"></a>問：如何使用逗號分隔值 (CSV) 文字檔作為資料來源？
 
 **答：** 方式如下：
 
@@ -164,7 +164,7 @@ ms.locfileid: "52896103"
 
      ![輸入名稱並選擇 CSV 檔案](../test/media/web_test_databinding_adddatasourcedialog.png)
 
-### <a name="q-what-if-my-existing-csv-file-does-not-contain-column-headers"></a>問：如果我現有的 CSV 檔未包含資料行標頭，該如何處理？
+### <a name="q-what-if-my-existing-csv-file-does-not-contain-column-headers"></a>問：如果我現有的 CSV 檔案未包含資料行標頭，該如何處理？
 
 **答：** 如果無法新增資料行標頭，您可以使用結構描述檔案將 CSV 檔案當成資料庫處理。
 
@@ -215,7 +215,7 @@ ms.locfileid: "52896103"
 
      ![已加入至測試的資料來源](../test/media/web_test_databinding_adddatasourcecolortext7.png)
 
-### <a name="q-how-do-i-use-an-xml-file-as-a-data-source"></a>問：如何使用 XML 檔案做為資料來源？
+### <a name="q-how-do-i-use-an-xml-file-as-a-data-source"></a>問：如何使用 XML 檔案作為資料來源？
 
 **答：** 可以。
 
@@ -247,9 +247,9 @@ ms.locfileid: "52896103"
 
      ![輸入名稱並選擇 XML 檔案](../test/media/web_test_databinding_adddatasourcedialogxml.png)
 
-### <a name="q-can-i-add-data-binding-to-a-web-service-request-that-uses-soap"></a>問：我可以將資料繫結加入至使用 SOAP 的 Web 服務要求嗎？
+### <a name="q-can-i-add-data-binding-to-a-web-service-request-that-uses-soap"></a>問：我可以將資料繫結新增至使用 SOAP 的 Web 服務要求嗎？
 
-**答：** 是，您必須手動變更 SOAP XML。
+**答：** 可以，您必須手動變更 SOAP XML。
 
 1. 在要求樹狀中選擇 Web 服務要求，並在 [屬性] 視窗中選擇 [字串內容] 屬性中的省略符號 (...)。
 

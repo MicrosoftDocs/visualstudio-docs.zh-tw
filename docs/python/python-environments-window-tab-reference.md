@@ -1,22 +1,23 @@
 ---
 title: Python 環境視窗參考
 description: 有關 Visual Studio [Python 環境] 視窗中所出現每個索引標籤的詳細資料。
-ms.date: 09/04/2018
+ms.date: 12/06/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 45a14fb5667d7eb28d4d298731886db662985d17
-ms.sourcegitcommit: 9ea4b62163ad6be556e088da1e2a355f31366f39
+ms.openlocfilehash: 3bd65efb0cbaf38de88acb87c9078ee98f3869bc
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43996073"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53051425"
 ---
 # <a name="python-environments-window-tabs-reference"></a>Python 環境視窗索引標籤參考
 
@@ -35,7 +36,7 @@ ms.locfileid: "43996073"
 
 ![Python 環境的 [Oview (概觀)] 索引標籤](media/environments-overview-tab.png)
 
-| 命令 | 描述 |
+| 命令 | 說明 |
 | --- | --- |
 | **將此環境設為新專案的預設值** | 設定使用中環境，可能會導致在載入 IntelliSense 資料庫時，Visual Studio (2017 15.5 版及更早版本) 短暫沒有反應。 環境如果含有許多套件，則無反應的時間可能會更長。 |
 | **瀏覽散發者的網站** | 將瀏覽器開啟至 Python 發行所提供的 URL。 例如，Python 3.x 會移至 python.org。 |
@@ -61,7 +62,7 @@ ms.locfileid: "43996073"
 
 ![Python 環境的 [Configure (設定)] 索引標籤](media/environments-configure-tab.png)
 
-| 欄位 | 描述 |
+| 欄位 | 說明 |
 | --- | --- |
 | **描述** | 要賦予環境的名稱。 |
 | **Prefix path (前置路徑)** | 解譯器的基底資料夾位置。 填入此值並按一下 [自動偵測] 之後，Visual Studio 就會嘗試為您填入其他欄位。 |
@@ -102,7 +103,7 @@ ms.locfileid: "43996073"
 
 ![套件安裝的提高權限提示](media/environments-pip-elevate.png)
 
-[立即提高權限] 會將系統管理權限授與 pip 以進行單一作業、主題，也會授與權限的任何作業系統提示。 選取 [在沒有系統管理員權限的情況下繼續] 會嘗試安裝套件，但在嘗試建立包含「錯誤: 無法建立 'C:\Program Files\Anaconda3\Lib\site-packages\png.py': 權限遭拒」這類輸出的資料夾時，pip 會失敗。
+[立即提高權限] 會將系統管理權限授與 pip 以進行單一作業、主題，也會授與權限的任何作業系統提示。 選取 [在沒有系統管理員權限的情況下繼續] 會嘗試安裝套件，但在嘗試建立資料夾時 pip 會失敗，並出現類似如下的輸出：**錯誤：無法建立 'C:\Program Files\Anaconda3\Lib\site-packages\png.py'：權限遭拒**。
 
 選取 [安裝或移除套件時一律提高權限] 可防止在環境有問題時顯示對話方塊。 若要再次顯示對話方塊，請移至 [工具] > [選項] > [Python 工具] > [一般]，然後選取 [重設所有永久隱藏的對話方塊] 按鈕。
 

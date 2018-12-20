@@ -1,5 +1,5 @@
 ---
-title: 使用 Microsoft Word 建立 Visual Studio 負載測試效能報告
+title: 使用 Microsoft Word 建立負載測試效能報表
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,14 +11,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 4a5dd85c56a57b6257041c129925703e8e91e050
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: c718501f4a3665f2383560f8c472102bfb5be757
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895609"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53064452"
 ---
-# <a name="how-to-manually-create-a-load-test-performance-report-using-microsoft-word"></a>如何：使用 Microsoft Word 手動建立負載測試效能報告
+# <a name="how-to-manually-create-a-load-test-performance-report-using-microsoft-word"></a>HOW TO：使用 Microsoft Word 手動建立負載測試效能報表
 
 您可以從 [負載測試結果] 摘要檢視和圖表檢視複製並貼上資料，藉以手動建立 Microsoft Word 負載測試報告。 當您複製呈現在摘要檢視和圖形檢視中的資料時，這項資料會套用 HTML 格式。
 
@@ -28,7 +28,7 @@ ms.locfileid: "52895609"
 > 您可以將資料表檢視中的純文字和詳細資料檢視中的螢幕擷取畫面複製到 Microsoft Word，但是這些項目不會套用 HTML 格式，而且需要進行其他格式設定和編輯。
 
 > [!TIP]
-> 您也可以自動產生組織化的 Microsoft Excel 報告。 如需詳細資訊，請參閱[如何：使用 Microsoft Excel 建立負載測試效能報告](../test/how-to-create-load-test-performance-reports-using-microsoft-excel.md)。
+> 您也可以自動產生組織化的 Microsoft Excel 報告。 如需詳細資訊，請參閱[＜How to：使用 Microsoft Excel 建立負載測試效能報表](../test/how-to-create-load-test-performance-reports-using-microsoft-excel.md)。
 
 ## <a name="copy-summary-view-data"></a>複製摘要檢視資料
 
@@ -46,7 +46,7 @@ ms.locfileid: "52895609"
 
 1.  在 [負載測試結果] 中，如果目前沒有顯示圖表檢視，請選擇工具列中的 [圖表]。
 
-2.  (選擇性) 放大您想要複製到 Microsoft Word 文件的特定圖表，如下圖所示。 如需詳細資訊，請參閱[如何：放大圖形中的某個區域](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md)。
+2.  (選擇性) 放大您想要複製到 Microsoft Word 文件的特定圖表，如下圖所示。 如需詳細資訊，請參閱[＜How to：放大圖表中的某個區域](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md)。
 
      ![圖形檢視縮放控制](../test/media/ltest_zoomcontrol.png)
 
@@ -60,4 +60,4 @@ ms.locfileid: "52895609"
 ## <a name="see-also"></a>另請參閱
 
 - [針對測試比較或趨勢分析報告負載測試結果](../test/compare-load-test-results.md)
-- [如何：使用 Microsoft Excel 建立負載測試效能報告](../test/how-to-create-load-test-performance-reports-using-microsoft-excel.md)
+- [如何：使用 Microsoft Excel 建立負載測試效能報表](../test/how-to-create-load-test-performance-reports-using-microsoft-excel.md)

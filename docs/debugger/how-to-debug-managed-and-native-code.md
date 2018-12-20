@@ -1,7 +1,7 @@
 ---
-title: 教學課程：對受控程式碼與機器碼進行偵錯 (混合模式)
+title: 教學課程：對 C# 和 C++ 程式碼進行偵錯 (混合模式)
 description: 了解如何使用混合模式偵錯，從 .NET Core 或 .NET Framework 應用程式偵錯原生 DLL
-ms.custom: ''
+ms.custom: seodec18
 ms.date: 11/02/2018
 ms.technology: vs-ide-debug
 ms.topic: tutorial
@@ -16,12 +16,12 @@ manager: douge
 ms.workload:
 - dotnet
 - cplusplus
-ms.openlocfilehash: dc115cc833bbf50e8f6ae1f1e3207d3acfd6b2d1
-ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
+ms.openlocfilehash: 690d607bb62b322cf7fa07e5c45aa59924d29c71
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52257273"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53051443"
 ---
 # <a name="tutorial-debug-c-and-c-in-the-same-debugging-session"></a>教學課程：在同一個偵錯工作階段中進行 C# 和 C++ 偵錯
 

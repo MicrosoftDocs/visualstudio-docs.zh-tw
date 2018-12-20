@@ -1,5 +1,5 @@
 ---
-title: 如何：在 Visual Studio 的負載測試結果中建立自訂圖形
+title: HOW TO：在負載測試結果中建立自訂圖表
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,14 +11,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 7973fbf5ac81da2ba603aacb201b7592e602969e
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: c65b9ad5c6a9d554f2c71cc5d17c63ce9368df2c
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895817"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53055396"
 ---
-# <a name="how-to-create-custom-graphs-in-load-test-results"></a>如何：在負載測試結果中建立自訂圖表
+# <a name="how-to-create-custom-graphs-in-load-test-results"></a>HOW TO：在負載測試結果中建立自訂圖表
 
 您可以設計用來顯示有關負載測試結果的特定資訊的圖形。 藉由指定圖形要顯示的負載測試計數器，即可以設計自訂圖形。
 
@@ -40,9 +40,9 @@ ms.locfileid: "52895817"
 
      新的圖表就會出現在 [負載測試分析器] 中。 圖形會出現在目前選取的圖形面板中，並取代該面板中原先顯示的圖形。
 
-3.  加入計數器即可自訂新圖形。 如需詳細資訊，請參閱[如何：在圖形上新增和刪除計數器](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md)。
+3.  加入計數器即可自訂新圖形。 如需詳細資訊，請參閱[＜How to：在圖表上新增和刪除計數器](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md)。
 
 ## <a name="see-also"></a>另請參閱
 
 - [在圖表檢視中分析負載測試結果](../test/analyze-load-test-results-in-the-graphs-view.md)
-- [如何：在圖形上新增和刪除計數器](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md)
+- [如何：在圖表上新增和刪除計數器](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md)

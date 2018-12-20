@@ -1,5 +1,5 @@
 ---
-title: Visual Studio 中常用命令的預設鍵盤快速鍵
+title: 常用命令的預設鍵盤快速鍵
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f917486a6b4a539401c8652f70ca95b2e7bc7bc7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c8a2b269f64bff048f1407db289a9ac4252b8f31
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49843194"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53056473"
 ---
 # <a name="default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio"></a>Visual Studio 中常用命令的預設鍵盤快速鍵
 

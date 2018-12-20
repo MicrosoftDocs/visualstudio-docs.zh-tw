@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Studio 中插入 XML 文件註解
+title: 插入 XML 文件註解
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -9,14 +9,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: e3c38e46a5c73d1f8018f56f76b971939ba8c316
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 04ee7c992fc67e0025bd2481d392a38806d51ed9
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31945424"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53063470"
 ---
-# <a name="how-to-insert-xml-comments-for-documentation-generation"></a>如何：在文件產生中插入 XML 註解
+# <a name="how-to-insert-xml-comments-for-documentation-generation"></a>HOW TO：在文件產生中插入 XML 註解
 
 Visual Studio 可藉由自動產生標準 XML 文件註解結構，來幫助您記錄諸如類別和方法的程式碼項目。 編譯時間中，您可以產生包含文件註解的 XML 檔案。 編譯器所產生的 XML 檔案可以隨著 .NET 組件一起散發，因此 Visual Studio 和其他 IDE 可以使用 IntelliSense 來顯示類型和成員的快速資訊。 此外，可以透過 [DocFX](https://dotnet.github.io/docfx/) 和 [Sandcastle](https://www.microsoft.com/download/details.aspx?id=10526) 這類工具執行 XML 檔案來產生 API 參考網站。
 

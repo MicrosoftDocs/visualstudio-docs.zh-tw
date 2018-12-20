@@ -1,5 +1,5 @@
 ---
-title: 使用 requirements.txt 檔案管理套件需求
+title: 使用 requirements.txt 檔案管理套件相依性
 description: requirements.txt 檔案會描述專案的相依性。 如果您收到包含 requirements.txt 檔案的專案，就可以輕鬆地在單一步驟中安裝那些相依性。
 ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
@@ -8,19 +8,20 @@ ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 49f87ff5836188d6fefb80feac94b27902de7968
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 1f6fefdeac06d28229b99a79f432f82ed844d950
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50218418"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53066168"
 ---
 # <a name="manage-required-packages-with-requirementstxt"></a>使用 requirements.txt 管理必要套件
 
-如果您與其他人共用專案、使用建置系統，或是打算將專案複製到需要還原環境的其他任何位置，則必須指定專案所需的外部套件。 建議的方法是使用 [requirements.txt 檔案](http://pip.readthedocs.org/en/latest/user_guide.html#requirements-files) (readthedocs.org)，此檔案包含 pip 命令清單，可安裝所需的相依套件版本。 最常見的命令是 `pip freeze > requirements.txt`，它會將環境的目前套件清單記錄到 *requirements.txt*。
+如果您與其他人共用專案、使用建置系統，或是打算將專案複製到需要還原環境的其他任何位置，則必須指定專案所需的外部套件。 建議的方法是使用 [requirements.txt 檔案](https://pip.readthedocs.org/en/latest/user_guide.html#requirements-files) (readthedocs.org)，此檔案包含 pip 命令清單，可安裝所需的相依套件版本。 最常見的命令是 `pip freeze > requirements.txt`，它會將環境的目前套件清單記錄到 *requirements.txt*。
 
 就技術而言，任何檔案名稱都可用來追蹤必要條件 (透過在安裝套件時使用 `-r <full path to file>`)，但 Visual Studio 為 *requirements.txt* 提供了專屬支援：
 

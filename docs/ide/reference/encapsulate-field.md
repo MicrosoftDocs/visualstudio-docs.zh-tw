@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Studio 中將欄位重構為屬性
+title: 將欄位重構為屬性
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -14,12 +14,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0c6594521774ca7e4fe91bc47776c4f0c4a489a9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a6cb74b64ec03c865ca4e6e52fa3922c997468d6
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942916"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53049927"
 ---
 # <a name="encapsulate-a-field-refactoring"></a>封裝欄位重構
 
@@ -29,7 +29,7 @@ ms.locfileid: "49942916"
 
 - Visual Basic
 
-**功能：** 讓您將欄位轉換為屬性，並更新該欄位的所有使用方式以使用新建立的屬性。
+**功能：** 讓您將欄位轉換為屬性，並更新該欄位所有使用方式以使用新建立的屬性。
 
 **時機：** 您想要將欄位移到屬性中，並更新對該欄位的所有參考。
 
@@ -56,7 +56,7 @@ ms.locfileid: "49942916"
       - 選取 [編輯] > [重構] > [封裝欄位]。
       - 在程式碼上按一下滑鼠右鍵，選取 [快速動作與重構] 功能表，然後從 [預覽] 快顯視窗中選取任一個 [封裝欄位] 項目。
 
-   選取 | 描述
+   選取 | 說明
    --------- | -----------
    **封裝欄位 (並使用屬性)** | 使用屬性來封裝欄位，並更新該欄位的所有使用方式以使用產生的屬性
    **封裝欄位 (但仍使用欄位)** | 使用屬性來封裝欄位，但將該欄位的所有使用方式保持不變

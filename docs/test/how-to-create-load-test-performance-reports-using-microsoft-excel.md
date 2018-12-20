@@ -1,5 +1,5 @@
 ---
-title: 使用 Microsoft Excel 建立 Visual Studio 負載測試效能報告
+title: 使用 Microsoft Excel 建立負載測試效能報表
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,14 +11,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 7eda8336c45d0e0d90441ce918845d111976aaf4
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 5f276702aef4bf062d7da3e921965e674d5ec738
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52896558"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53064992"
 ---
-# <a name="how-to-create-load-test-performance-reports-using-microsoft-excel"></a>如何：使用 Microsoft Excel 建立負載測試效能報告
+# <a name="how-to-create-load-test-performance-reports-using-microsoft-excel"></a>HOW TO：使用 Microsoft Excel 建立負載測試效能報表
 
 您可以根據兩個或多個測試結果，產生 Microsoft Excel 負載測試報告。
 
@@ -31,7 +31,7 @@ ms.locfileid: "52896558"
 -   **趨勢**：您可以為兩個以上的負載測試結果產生趨勢分析。 結果會以折線圖顯示，但也可以利用樞紐分析表使用資料。
 
 > [!TIP]
-> 您也可以透過從摘要檢視、圖形檢視和資料表檢視複製並貼上資料，手動建立 Microsoft Word 報告。 請參閱[如何：使用 Microsoft Word 手動建立負載測試效能報告](../test/how-to-manually-create-a-load-test-performance-report-using-microsoft-word.md)。
+> 您也可以透過從摘要檢視、圖形檢視和資料表檢視複製並貼上資料，手動建立 Microsoft Word 報告。 請參閱[如何：使用 Microsoft Word 手動建立負載測試效能報表](../test/how-to-manually-create-a-load-test-performance-report-using-microsoft-word.md)。
 
 上述兩種報告都能用來與專案關係人共用效能資料，傳達出整體效能和系統的健康狀況是變好還是變差。
 
@@ -104,7 +104,7 @@ ms.locfileid: "52896558"
    - **錯誤比較** - 比較兩個回合間所遇到的錯誤類型以及發生次數。
 
      > [!TIP]
-     > 為求較佳的報告效果，負載測試和 Web 效能測試可使用一些屬性，以提供較豐富的報告。 頁面要求有兩個屬性會呈現在報告中：目標和報告名稱。 針對目標報告的是頁面回應時間，另外報告中會使用報告名稱而非 URL。 在負載測試回合設定的 [管理計數器集合] 下方，[電腦標記] 屬性會以報告電腦名稱表示。 此屬性很適合在報告中用來描述特定電腦的角色。
+     > 為求較佳的報告效果，負載測試和 Web 效能測試可使用一些屬性，以提供較豐富的報告。 頁面要求有兩個屬性會呈現在報表中：目標和報表名稱。 針對目標報告的是頁面回應時間，另外報告中會使用報告名稱而非 URL。 在負載測試回合設定的 [管理計數器集合] 下方，[電腦標記] 屬性會以報告電腦名稱表示。 此屬性很適合在報告中用來描述特定電腦的角色。
 
 ## <a name="to-generate-load-test-trend-reports-using-excel"></a>若要使用 Excel 產生負載測試趨勢報告
 
@@ -144,7 +144,7 @@ ms.locfileid: "52896558"
 9. 隨即產生報告，其中的目錄可連結至報告中產生的各個 Excel 活頁簿索引標籤。 這些連結是以針對趨勢報告所選取的計數器為依據。 例如，如果您選取步驟 7 中的預設計數器，則報告會根據步驟 7 列出的每個計數器，在不同的 Excel 索引標籤中呈現資料。 針對每個計數器所產生的資料，會以趨勢樣式圖表呈現。
 
    > [!TIP]
-   > 為求較佳的報告效果，負載測試和 Web 效能測試可使用一些屬性，以提供較豐富的報告。 頁面要求有兩個屬性會呈現在報告中：目標和報告名稱。 針對目標報告的是頁面回應時間，另外報告中會使用報告名稱而非 URL。 在負載測試回合設定的 [管理計數器集合] 下方，[電腦標記] 屬性會以報告電腦名稱表示。 此屬性很適合在報告中用來描述特定電腦的角色。
+   > 為求較佳的報告效果，負載測試和 Web 效能測試可使用一些屬性，以提供較豐富的報告。 頁面要求有兩個屬性會呈現在報表中：目標和報表名稱。 針對目標報告的是頁面回應時間，另外報告中會使用報告名稱而非 URL。 在負載測試回合設定的 [管理計數器集合] 下方，[電腦標記] 屬性會以報告電腦名稱表示。 此屬性很適合在報告中用來描述特定電腦的角色。
 
 ## <a name="net-framework-security"></a>.NET Framework 安全性
 

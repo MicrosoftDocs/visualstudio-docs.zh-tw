@@ -1,6 +1,6 @@
 ---
 title: Python 混和模式偵錯
-description: 如何在 Visual Studio 中同時對 C++ 和 Python 進行偵錯，包括跨環境之間逐步執行、檢視值和評估運算式。
+description: 在 Visual Studio 中同時對 C++ 和 Python 進行偵錯，包括在環境之間逐步執行、檢視值和評估運算式。
 ms.date: 11/12/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -8,15 +8,16 @@ ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 2038f681578c3410b8b4dc1fe67552064e0e2d93
-ms.sourcegitcommit: 6a955a2d179cd0e137942389f940d9fcbbe125de
+ms.openlocfilehash: 42d413ab8d96ccd5533afe99cffb2c05c8ac7d6f
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51607831"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53052231"
 ---
 # <a name="debug-python-and-c-together"></a>同時對 Python 和 C++ 進行偵錯
 
@@ -35,11 +36,11 @@ Visual Studio 有針對 Python 及原生 C/C++ 提供整合式的同時混合模
 - 請參閱原生框架中 Python 的物件表示法 (反之亦然)
 - 在 Python 專案或 C++ 專案的內容中進行偵錯
 
-![混合模式偵錯](media/mixed-mode-debugging.png)
+![Visual Studio 中的 Python 混合模式偵錯](media/mixed-mode-debugging.png)
 
 |   |   |
 |---|---|
-| ![影片的電影攝影機圖示](../install/media/video-icon.png "觀看影片") | 如需使用 Visual Studio 建置、測試原生 C 模組並進行偵錯的簡介，請參閱 [Deep Dive: Create Native Modules](https://youtu.be/D9RlT06a1EI) (深入探討︰建立原生模組) (youtube.com，9 分 09 秒)。 本影片適用於 Visual Studio 2015 和 Visual Studio 2017。 |
+| ![影片的電影攝影機圖示](../install/media/video-icon.png "觀看影片") | 如需使用 Visual Studio 建置、測試原生 C 模組並進行偵錯的簡介，請參閱 [Deep Dive:Create Native Modules](https://youtu.be/D9RlT06a1EI) (深入探討︰建立原生模組) (youtube.com，9 分 09 秒)。 本影片適用於 Visual Studio 2015 和 Visual Studio 2017。 |
 
 ## <a name="enable-mixed-mode-debugging-in-a-python-project"></a>在 Python 專案中啟用混合模式偵錯
 
@@ -96,7 +97,7 @@ Visual Studio 2017 (15.5 版和更新版本) 支援從 C/C++ 專案進行混合�
 
 [呼叫堆疊] 視窗會穿插顯示原生和 Python 堆疊框架，而兩者間會標示轉換：
 
-![合併的呼叫堆疊](media/mixed-mode-debugging-call-stack.png)
+![合併的呼叫堆疊與混合模式偵錯](media/mixed-mode-debugging-call-stack.png)
 
 如果設定 [工具] > [選項] > [偵錯] > [一般] > [啟用 Just My Code] 選項，轉換會顯示為 [外部程式碼]，而不指定轉換的方向。
 
@@ -110,11 +111,11 @@ Visual Studio 2017 (15.5 版和更新版本) 支援從 C/C++ 專案進行混合�
 
 當原生 (C 或 C++) 框架為使用中時，其區域變數會顯示在偵錯工具的 [區域變數] 視窗。 在原生 Python 延伸模組中，其中有許多變數都是 `PyObject` 類型 (即 `_object` 的 typedef)，或是一些其他基本 Python 類型 (請參閱下方清單)。 在混合模式偵錯中，這些值會出現一個標示為 [Python 檢視] 的額外子節點。 展開時，此節點會顯示變數的 Python 表示法，您所看到的一切，會與參考相同物件的本機變數出現在 Python 框架時相同。 此節點的子系是可編輯的。
 
-![Python 檢視](media/mixed-mode-debugging-python-view.png)
+![[區域變數] 視窗中的 [Python 檢視]](media/mixed-mode-debugging-python-view.png)
 
 若要停用這項功能，請以滑鼠右鍵按一下 [區域變數] 視窗的任意處，然後切換 [Python] > [顯示 Python 檢視節點] 功能表選項：
 
-![啟用 Python 檢視中](media/mixed-mode-debugging-enable-python-view.png)
+![在 [區域變數] 視窗中啟用 [Python 檢視]](media/mixed-mode-debugging-enable-python-view.png)
 
 會顯示 [Python 檢視] 節點 (如果啟用) 的 C 類型：
 
@@ -143,11 +144,11 @@ Visual Studio 2017 (15.5 版和更新版本) 支援從 C/C++ 專案進行混合�
 
 如同上一節，當 Python 框架為使用中時，您可以在 [區域變數] 視窗中為原生值啟用 [C++ 檢視]。 此功能預設為未啟用，請以滑鼠右鍵按一下 [區域變數] 視窗，然後切換 [Python] > [顯示 C++ 檢視節點] 功能表選項來開啟它。
 
-![啟用 C++ 檢視中](media/mixed-mode-debugging-enable-cpp-view.png)
+![在 [區域變數] 視窗中啟用 [C++ 檢視]](media/mixed-mode-debugging-enable-cpp-view.png)
 
 [C++ 檢視] 節點提供值的基礎 C/C++ 結構的表示法，如在原生框架中所見。 比方說，它會顯示 Python 長整數的 `_longobject` (`PyLongObject` 是其 typedef) 執行個體，而且會嘗試推斷您自行撰寫之原生類別的類型。 此節點的子系是可編輯的。
 
-![C++ 檢視](media/mixed-mode-debugging-cpp-view.png)
+![[區域變數] 視窗中的 [C++ 檢視]](media/mixed-mode-debugging-cpp-view.png)
 
 如果物件的子欄位為 `PyObject` 類型或其他支援的類型之一，它將包含一個 [Python 檢視] 表示法節點 (如果已啟用那些表示法)，您就可以瀏覽物件圖形，其中的連結不會直接向 Python 公開。
 
@@ -169,8 +170,8 @@ static int FobObject_init(FobObject* self, PyObject* args, PyObject* kwds) {
 
 - 不支援的功能︰條件式中斷點、[偵錯互動式] 視窗及跨平台遠端偵錯。
 - [即時運算] 視窗︰可以使用，但僅有其中一小部分的功能，包括此處所列的所有限制。
-- 支援的 Python 版本︰僅限 CPython 2.7 和 3.3 及更新版本。
-- Visual Studio Shell︰搭配使用 Python 和 Visual Studio Shell 時 (例如使用整合式安裝程式進行安裝時)，Visual Studio 無法開啟 C++ 專案，且針對 C++ 檔案的編輯體驗僅如同使用基本文字編輯器。 不過，Shell 搭配偵錯工具視窗中的原始程式碼、逐步執行到原生程式碼及 C++ 運算式評估，可完整支援 C/C++ 偵錯和混合模式偵錯。
+- 支援的 Python 版本：僅限 CPython 2.7 和 3.3 及更新版本。
+- Visual Studio Shell：搭配使用 Python 和 Visual Studio Shell 時 (例如使用整合式安裝程式進行安裝時)，Visual Studio 無法開啟 C++ 專案，且針對 C++ 檔案的編輯體驗僅如同使用基本文字編輯器。 不過，Shell 搭配偵錯工具視窗中的原始程式碼、逐步執行到原生程式碼及 C++ 運算式評估，可完整支援 C/C++ 偵錯和混合模式偵錯。
 - 檢視和擴充物件︰在 [區域變數] 和 [監看式] 偵錯工具的工具視窗中檢視 Python 物件時，混合模式偵錯工具只會顯示物件的結構。 它不會自動評估屬性，或顯示計算的屬性。 對於集合，它只會顯示內建集合類型的元素 (`tuple`、`list``dict``set`)。 自訂集合類型不會視覺化為集合，除非它們繼承自某些內建的集合類型。
 - 運算式評估：請參閱下文。
 

@@ -1,5 +1,5 @@
 ---
-title: 對安裝或使用 Visual Studio 時所發生的網路相關錯誤進行疑難排解
+title: 針對網路或 Proxy 錯誤進行疑難排解
 description: 針對您在使用防火牆或 Proxy 伺服器的情況下安裝或使用 Visual Studio 時可能會遇到的網路或 Proxy 相關錯誤，尋找解決方案。
 ms.custom: ''
 ms.date: 02/12/2018
@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 28c92fdc09320effcb8603c42edcfca152f71248
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: d344682f948421bf6d02ff14d41fa26fec1c3f32
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50672310"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53047612"
 ---
 # <a name="troubleshooting-network-related-errors-when-you-install-or-use-visual-studio"></a>對安裝或使用 Visual Studio 時所發生的網路相關錯誤進行疑難排解
 

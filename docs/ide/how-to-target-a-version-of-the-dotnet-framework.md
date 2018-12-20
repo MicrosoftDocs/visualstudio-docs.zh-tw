@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Studio 中將某個 .NET Framework 版本設定為目標
+title: 以一個 .NET Framework 版本為目標
 ms.date: 02/06/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -12,19 +12,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 36599475e743259d8cf09d24172a633b54b09693
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 3673d3c57a33d99c3c26dd22cd5c2b7b8959e7d6
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34752303"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53059466"
 ---
-# <a name="how-to-target-a-version-of-the-net-framework"></a>如何：將 .NET Framework 的某個版本設定為目標
+# <a name="how-to-target-a-version-of-the-net-framework"></a>HOW TO：以一個 .NET Framework 版本為目標
 
 本文件描述如何在建立專案時以某個 .NET Framework 版本為目標，以及如何變更現有 Visual Basic、Visual C# 或 Visual F# 專案的目標版本。
 
 > [!IMPORTANT]
-> 如需如何變更 C++ 專案之目標版本的資訊，請參閱[如何：修改目標 Framework 和平台工具組](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset)。
+> 如需如何變更 C++ 專案目標版本的資訊，請參閱[如何：修改目標 Framework 和平台工具組](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset)。
 
 ## <a name="to-target-a-version-when-you-create-a-project"></a>若要在建立專案時設定目標版本
 
@@ -46,7 +46,7 @@ ms.locfileid: "34752303"
 
 您可以遵循下列順序變更 Visual Basic、C# 或 Visual F# 專案中的目標 .NET Framework 版本。
 
-如需如何變更 C++ 專案之目標版本的資訊，請參閱[如何：修改目標 Framework 和平台工具組](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset)。
+如需如何變更 C++ 專案目標版本的資訊，請參閱[如何：修改目標 Framework 和平台工具組](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset)。
 
 1. 在方案總管中開啟您所要變更專案的捷徑功能表，然後選擇 [屬性]。
 

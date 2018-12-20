@@ -1,5 +1,5 @@
 ---
-title: 識別及自訂 Visual Studio 中的鍵盤快速鍵
+title: 識別及自訂鍵盤快速鍵
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -19,12 +19,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ed1806ce5810814c8ea2ce9c08462ecc8f9fd77
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 61ea8d6ee9243f79fe250872820643904bb2367a
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34747225"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062965"
 ---
 # <a name="identify-and-customize-keyboard-shortcuts-in-visual-studio"></a>識別及自訂 Visual Studio 中的鍵盤快速鍵
 
@@ -69,7 +69,7 @@ ms.locfileid: "34747225"
 
 2. 展開 [環境] 資料夾，然後選擇 [鍵盤]。
 
-3. 選擇性：在 [顯示包含下列的命令] 方塊中，輸入沒有空格的全部或部分命令名稱，以篩選命令清單。
+3. 選擇項：在 [顯示包含下列的命令] 方塊中，輸入沒有空格的全部或部分命令名稱，以篩選命令清單。
 
 4. 在清單中，選擇您要指派給鍵盤快速鍵的命令。
 
@@ -78,7 +78,7 @@ ms.locfileid: "34747225"
     例如，若要在所有的環境中使用該快速鍵，請選擇 [全域]。 您可以使用未在另一個編輯器中對應 (為「全域」) 的任何捷徑。 否則，編輯器會覆寫快速鍵。
 
     > [!NOTE]
-    > 您在 [全域] 中無法指派下列按鍵作為鍵盤快速鍵的一部分：Print Scrn/Sys Rq、Scroll Lock、Pause/Break、Tab、Caps Lock、Insert、Home、End、Page Up、Page Down、Windows 標幟按鍵、應用程式鍵，任一個方向鍵或 Enter；數字鍵台上的 Num Lock、Delete 或 Clear；Ctrl+Alt+Delete 按鍵組合。
+    > 您在 [全域] 中無法指派下列按鍵作為鍵盤快速鍵的一部分：Print Scrn/Sys Rq、Scroll Lock、Pause/Break、Tab、Caps Lock、Insert、Home、End、Page Up、Page Down、Windows 標誌按鍵、應用程式鍵，任一個方向鍵或 Enter；數字鍵台上的 Num Lock、Delete 或 Clear；Ctrl+Alt+Delete 按鍵組合。
 
 6. 在 [按快速鍵] 方塊中，輸入您要使用的捷徑。
 

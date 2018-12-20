@@ -1,5 +1,5 @@
 ---
-title: Visual Studio 中的負載測試計數器集合
+title: 負載測試計數器集合
 ms.date: 10/19/2016
 ms.topic: conceptual
 f1_keywords:
@@ -15,14 +15,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 022e105261c5d1e7f079a29915363ed02812d3bc
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 995cf0653886745d44ede4553e03f81ed45d37d7
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52894348"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53049077"
 ---
-# <a name="how-to-manage-counter-sets-using-the-load-test-editor"></a>如何：使用負載測試編輯器管理計數器集合
+# <a name="how-to-manage-counter-sets-using-the-load-test-editor"></a>HOW TO：使用負載測試編輯器管理計數器集合
 
 當您使用 [新增負載測試精靈] 建立負載測試時，會新增初始的計數器集合。 這些都會為您的負載測試提供一組預先定義的計數器集合。
 

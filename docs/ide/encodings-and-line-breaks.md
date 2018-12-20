@@ -1,5 +1,5 @@
 ---
-title: Visual Studio 編碼與分行符號字元
+title: 編碼與分行符號字元
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -19,12 +19,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d6a07dceb796ad697653657c27ab3ff16b3433ac
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 7acf048b112a88b73c614e8c383722c6e2adb051
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37117091"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53052005"
 ---
 # <a name="encodings-and-line-endings"></a>編碼與行尾結束符號
 

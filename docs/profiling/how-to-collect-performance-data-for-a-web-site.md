@@ -1,5 +1,5 @@
 ---
-title: 如何：收集網站的效能資料 | Microsoft Docs
+title: HOW TO：收集網站的效能資料 | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -19,14 +19,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bfe90b47086232650a38581bb2a8af1b534b8063
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a2d9cb832d8797eb4ebf16482f4bef02aa6644a3
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49835980"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53064293"
 ---
-# <a name="how-to-collect-performance-data-for-a-web-site"></a>如何：收集網站的效能資料
+# <a name="how-to-collect-performance-data-for-a-web-site"></a>HOW TO：收集網站的效能資料
 
 您可以使用 [效能精靈] 收集 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web 應用程式的效能資料。 您可以對 Visual Studio 中開啟的 Web 應用程式進行分析，也可以對位於本機電腦上但未在 Visual Studio IDE 中開啟的 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 網站進行分析。
 
@@ -79,11 +79,11 @@ ms.locfileid: "49835980"
 
 5. 在精靈第三個頁面的 [您要使用哪個 URL 或路徑執行 Web 應用程式]  方塊中，輸入應用程式首頁的 URL，然後按一下 [下一步] 。
 
-   - 針對以伺服器 (IIS) 為基礎的網站，請鍵入 URL，例如 **<http://localhost/MySite/default.aspx>** 。 這會對本機電腦上位於 MySite 之應用程式根目錄的 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 應用程式進行程式碼剖析，然後 Internet Explorer 會啟動該網站的 default.aspx 頁面以開始工作階段。
+   - 針對以伺服器 (IIS) 為基礎的網站，請鍵入 URL，例如 **<`http://localhost/MySite/default.aspx`>**。 這會對本機電腦上位於 MySite 之應用程式根目錄的 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 應用程式進行程式碼剖析，然後 Internet Explorer 會啟動該網站的 default.aspx 頁面以開始工作階段。
 
-   - 針對檔案架構的網站，請輸入如檔案///**c:\WebSites\MySite\default.aspx**之類的路徑。 這會對位於 c:\webSites\MySite 的 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 應用程式進行分析，然後 Internet Explorer 會啟動 http://localhost:nnnn/MySite/default.aspx 頁面以開始工作階段。
+   - 針對檔案架構的網站，請輸入如檔案///**c:\WebSites\MySite\default.aspx**之類的路徑。 這會對位於 c:\webSites\MySite 的 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 應用程式進行分析，然後 Internet Explorer 會啟動 `http://localhost:nnnn/MySite/default.aspx` 頁面以開始工作階段。
 
-   - 針對您想要收集 JavaScript 資料的外部網站，請鍵入如 http://www.contoso.com 之類的 URL。
+   - 針對您想要收集 JavaScript 資料的外部網站，請鍵入如 `http://www.contoso.com` 之類的 URL。
 
      如需詳細資訊，請檢視 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 目標二進位檔的屬性頁。
 

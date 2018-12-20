@@ -1,6 +1,6 @@
 ---
-title: 分析概觀 - Visual Studio | Microsoft Docs
-ms.custom: mvc
+title: 用於測量效能的工具概觀 | Microsoft Docs
+ms.custom: seodec18
 ms.date: 03/27/2018
 ms.technology: vs-ide-debug
 ms.topic: overview
@@ -9,14 +9,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c846b01634c1af9ba14e5c7ff460c279bf385a6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 46b10f62f54306ddcbe8ab566f4e60d77526b0d2
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49844116"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53059531"
 ---
-# <a name="overview-of-profiling-in-visual-studio"></a>Visual Studio 中的分析概觀
+# <a name="overview-of-tools-for-measuring-performance-in-visual-studio"></a>Visual Studio 中用於測量效能的工具概觀
 
 程式碼剖析和診斷工具可協助您診斷記憶體和 CPU 使用量，以及其他應用程式層級的問題。 使用這些工具，您可以累積一段時間 (例如執行應用程式的時間) 的資料 (例如變數值、函式呼叫和事件)。 您可以檢視程式碼執行期間不同時間點的應用程式狀態，或執行應用程式效能的事後分析。
 

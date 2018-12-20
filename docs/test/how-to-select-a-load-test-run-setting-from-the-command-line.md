@@ -1,5 +1,5 @@
 ---
-title: 從命令列設定 Visual Studio 負載測試回合設定
+title: 從命令列設定負載測試回合設定
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,14 +11,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: e0f279b8d6efb4a43d0cdb93c7e0c6e922721fb0
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 51c9971d35eb5b7a369041eeaefd32fa00aa3571
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895245"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53051833"
 ---
-# <a name="how-to-select-a-load-test-run-setting-to-use-from-the-command-line"></a>如何：從命令列中選取要使用的負載測試回合設定
+# <a name="how-to-select-a-load-test-run-setting-to-use-from-the-command-line"></a>HOW TO：從命令列中選取要使用的負載測試回合設定
 
 負載測試可以包含「回合設定」，這是指會影響負載測試回合的屬性。 這些設定會在 [屬性] 視窗中，依照分類進行組織。 負載測試執行時，它會使用目前設為使用中的回合設定。
 

@@ -1,5 +1,6 @@
 ---
-title: 教學課程 - 了解 Visual Studio 中的 Django，步驟 5
+title: Visual Studio 中的了解 Django 教學課程步驟 5，驗證
+titleSuffix: ''
 description: 逐步解說 Visual Studio 專案內容中的 Django 基本知識，特別是 [Django Web 專案] 範本所提供的驗證功能。
 ms.date: 11/19/2018
 ms.prod: visual-studio-dev15
@@ -8,19 +9,20 @@ ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: cb195e971612124ace53d8eb33b5c3563cd19a12
-ms.sourcegitcommit: f61ad0e8babec8810295f039e67629f4bdebeef0
+ms.openlocfilehash: 77cc7816a1a05e3b6a883416225717679dd5661b
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "52001226"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53064069"
 ---
 # <a name="step-5-authenticate-users-in-django"></a>步驟 5：在 Django 中驗證使用者
 
-**上一個步驟：[使用完整的 Django Web 專案範本](learn-django-in-visual-studio-step-04-full-django-project-template.md)**
+**上一步：[使用完整的 Django Web 專案範本](learn-django-in-visual-studio-step-04-full-django-project-template.md)**
 
 因為 Web 應用程式一般都需要驗證，所以 [Django Web 專案] 範本會包含基本的驗證流程。 (本教學課程步驟 6 中所討論的 [投票 Django Web 專案] 範本也包含相同的流程)。使用任何 Django 專案範本時，Visual Studio 會在 Django 專案的 *settings.py* 中包含驗證所需的所有模組。
 
@@ -204,7 +206,7 @@ ms.locfileid: "52001226"
 
 1. 當您全部完成時，請停止伺服器，並再次將變更認可至原始檔控制。
 
-### <a name="question-what-is-the-purpose-of-the--csrftoken--tag-that-appears-in-the-form-elements"></a>問題：\<form\> 元素中出現的 {% csrf_token %} 標籤有什麼用途？
+### <a name="question-what-is-the-purpose-of-the--csrftoken--tag-that-appears-in-the-form-elements"></a>問題：\<form\> 項目中出現的 {% csrf_token %} 標籤有什麼用途？
 
 回答：`{% csrf_token %}` 標籤包含 Django 的內建[跨網站偽造要求 (csrf) 保護](https://docs.djangoproject.com/en/2.0/ref/csrf/) (Django 文件)。 您通常會將此標籤新增至任何涉及 POST、PUT 或 DELETE 要求方法的項目 (例如表單)。 然後，範本轉譯函式 (`render`) 會插入必要的保護。
 

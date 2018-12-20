@@ -5,17 +5,17 @@ ms.date: 07/03/2018
 ms.technology: vs-unity-tools
 ms.topic: conceptual
 ms.assetid: e67ec9a2-a449-413e-8930-9a471bd43a06
-author: conceptdev
-ms.author: crdun
+author: therealjohn
+ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 74bd467417d6138d603382bd5432fe84af04d3b2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 380618e0cee57a1cf0f45a1324d150170e5ee16e
+ms.sourcegitcommit: 5c049194fa256b876ad303f491af11edd505756c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49909844"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53027337"
 ---
 # <a name="use-visual-studio-tools-for-unity"></a>使用 Visual Studio Tools for Unity
 
@@ -181,7 +181,7 @@ Visual Studio Tools for Unity 可讓您使用 Visual Studio 的強大偵錯工�
 
 #### <a name="to-debug-a-managed-dll-project-used-in-your-unity-project"></a>為 Unity 專案所使用的 Managed DLL 專案偵錯
 
-1. 將現有的 DLL 專案加入 Visual Studio Tools for Unity 所產生的 Visual Studio 方案。 在較不常見的情況下，您可能會啟動新的 Managed DLL 專案來包含 Unity 專案中的程式碼元件；如果是這種情況，您可以改為將新的 Managed DLL 專案加入 Visual Studio 方案。 如需將新的或現有的專案加入至方案的詳細資訊，請參閱[作法：將專案加入至方案](https://msdn.microsoft.com/library/ff460187.aspx)。
+1. 將現有的 DLL 專案加入 Visual Studio Tools for Unity 所產生的 Visual Studio 方案。 在較不常見的情況下，您可能會啟動新的 Managed DLL 專案來包含 Unity 專案中的程式碼元件；如果是這種情況，您可以改為將新的 Managed DLL 專案加入 Visual Studio 方案。 如需將新專案或現有專案新增至方案的詳細資訊，請參閱[如何：將專案新增至方案](https://msdn.microsoft.com/library/ff460187.aspx)。
 
    ![將現有的 DLL 專案加入至方案。](../cross-platform/media/vstu_debugging_dll_add_existing.png "vstu_debugging_dll_add_existing")
 

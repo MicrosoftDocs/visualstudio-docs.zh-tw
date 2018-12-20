@@ -1,5 +1,5 @@
 ---
-title: 如何：在 Visual Studio 中建立診斷資料配接器
+title: HOW TO：建立診斷資料配接器
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,14 +10,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 25adfc867ca208f367f047e4cb94322718e12b52
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 051f5ad7783271c2b0eea26bc3af5c0980f2c1fc
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895310"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068298"
 ---
-# <a name="how-to-create-a-diagnostic-data-adapter"></a>如何：建立診斷資料配接器
+# <a name="how-to-create-a-diagnostic-data-adapter"></a>HOW TO：建立診斷資料配接器
 
 若要建立「診斷資料配接器」，您可以使用 Visual Studio 建立類別庫，然後將 Visual Studio Enterprise 提供的診斷資料配接器 API 新增類別庫。 在處理測試回合期間引發的事件時，請以資料流或檔案的形式將您所需要的資訊傳送至架構所提供的 <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionSink>。 測試完成時，傳送至 <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionSink> 的資料流或檔案會儲存為測試結果的附件。 如果從這些測試結果建立 Bug，或當使用[!INCLUDE[mtrlong](../test/includes/mtrlong_md.md)]時，檔案也會連結至 Bug。
 
@@ -34,7 +34,7 @@ ms.locfileid: "52895310"
 
 以下是您在建立診斷資料配接器時可以使用之關鍵事件的部分清單。 如需診斷資料配接器事件的完整清單，請參閱抽象 <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionEvents> 類別。
 
-|Event - 事件|描述|
+|Event - 事件|說明|
 |-|-----------------|
 |<xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionEvents.SessionStart>|啟動測試回合|
 |<xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionEvents.SessionEnd>|結束測試回合|
@@ -224,7 +224,7 @@ ms.locfileid: "52895310"
 
      這些檔案會附加至測試結果。 如果從這些測試結果建立 Bug，或當您使用[!INCLUDE[mtrlong](../test/includes/mtrlong_md.md)]時，檔案也會附加至 Bug。
 
-     如果您想要使用自己的編輯器收集要在測試設定中使用的資料，請參閱[如何：為您的診斷資料配接器建立資料的自訂編輯器](../test/how-to-create-a-custom-editor-for-data-for-your-diagnostic-data-adapter.md)。
+     如果您想要使用自有編輯器來收集要在測試設定中使用的資料，請參閱[如何：為診斷資料配接器建立資料的自訂編輯器](../test/how-to-create-a-custom-editor-for-data-for-your-diagnostic-data-adapter.md)。
 
 11. 若要在測試完成時根據使用者在測試設定中進行的設定收集記錄檔，您必須建立 *App.config* 檔並且將它加入方案中。 此檔案的格式如下所示，而且必須包含 URI，診斷資料配接器才能識別該檔案。 請將 "Company/ProductName/Version" 替換為實際值。
 
@@ -257,15 +257,15 @@ ms.locfileid: "52895310"
     > [!NOTE]
     > 預設組態項目可以包含您需要的任何資料。 如果使用者未在測試設定中設定診斷資料配接器，則在診斷資料配接器執行時預設資料會傳遞給它。 由於您加入至 `<DefaultConfigurations>` 區段的 XML 不可能是宣告之結構描述的一部分，因此您可以忽略它產生的任何 XML 錯誤。
     >
-    > 下列路徑中會有其他組態檔範例，取決於您的安裝目錄：*Program Files\Microsoft Visual Studio 10.0\Common7\IDE\PrivateAssemblies\DataCollectors*。
+    > 根據您的安裝目錄，下列路徑中有組態檔的其他範例：*Program Files\Microsoft Visual Studio 10.0\Common7\IDE\PrivateAssemblies\DataCollectors*。
 
      如需詳細資訊，了解如何進行測試設定以在執行測試時使用環境，請參閱[在手動測試中收集診斷資料 (Azure Test Plans)](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)。
 
-     如需安裝組態檔的詳細資訊，請參閱[如何：安裝自訂的診斷資料配接器](../test/how-to-install-a-custom-diagnostic-data-adapter.md)
+     如需安裝組態檔的詳細資訊，請參閱[如何：安裝自訂診斷資料配接器](../test/how-to-install-a-custom-diagnostic-data-adapter.md)
 
 12. 建置方案以建立您的診斷資料配接器組件。
 
-13. 如需安裝自訂編輯器的資訊，請參閱[如何：安裝自訂的診斷資料配接器](../test/how-to-install-a-custom-diagnostic-data-adapter.md)。
+13. 如需安裝自訂編輯器的詳細資訊，請參閱[如何：安裝自訂診斷資料配接器](../test/how-to-install-a-custom-diagnostic-data-adapter.md)。
 
 14. 如需詳細資訊，了解如何進行測試設定以在執行測試時使用環境，請參閱[在手動測試中收集診斷資料 (Azure Test Plans)](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)。
 
@@ -289,4 +289,4 @@ ms.locfileid: "52895310"
 - [使用測試設定收集診斷資訊](../test/collect-diagnostic-information-using-test-settings.md)
 - [在手動測試中收集診斷資料 (Azure Test Plans)](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)
 - [在測試時收集診斷資料 (Azure Test Plans)](/azure/devops/test/collect-diagnostic-data?view=vsts)
-- [如何：為您的診斷資料配接器建立資料的自訂編輯器](../test/how-to-create-a-custom-editor-for-data-for-your-diagnostic-data-adapter.md)
+- [如何：為診斷資料配接器建立資料的自訂編輯器](../test/how-to-create-a-custom-editor-for-data-for-your-diagnostic-data-adapter.md)

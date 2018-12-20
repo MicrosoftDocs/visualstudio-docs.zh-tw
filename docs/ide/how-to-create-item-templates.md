@@ -1,5 +1,5 @@
 ---
-title: 建立 Visual Studio 的項目範本
+title: 建立項目範本
 ms.date: 01/02/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -9,14 +9,14 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 342b7ebd17280c47296fae43c6541a5e969ad5f3
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: b871c5c502c026a8a374af232888c09f18798a0c
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31954658"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062453"
 ---
-# <a name="how-to-create-item-templates"></a>如何：建立項目範本
+# <a name="how-to-create-item-templates"></a>HOW TO：建立項目範本
 
 本文會向您示範如何使用 [匯出範本精靈] 建立項目範本。 如果您的範本中包含多個檔案，請參閱[如何：建立多檔案項目範本](../ide/how-to-create-multi-file-item-templates.md)。
 
@@ -26,7 +26,7 @@ ms.locfileid: "31954658"
 
 1. 如有需要，可將項目新增至專案並加以修改。
 
-1. 修改程式碼檔，指出要執行參數取代的地方。 如需詳細資訊，請參閱[如何：替代範本中的參數](../ide/how-to-substitute-parameters-in-a-template.md)。
+1. 修改程式碼檔，指出要執行參數取代的地方。 如需詳細資訊，請參閱[＜How to：替代範本中的參數](../ide/how-to-substitute-parameters-in-a-template.md)。
 
 1. 選擇 [專案] 功能表上的 [匯出範本]。
 
@@ -113,7 +113,7 @@ ms.locfileid: "31954658"
 
 1. 修改專案項目，直到它準備好儲存成範本。
 
-1. 修改程式碼檔案，指出要執行參數取代的位置 (如有)。 如需參數取代的詳細資訊，請參閱[如何：替代範本中的參數](../ide/how-to-substitute-parameters-in-a-template.md)。
+1. 修改程式碼檔案，指出要執行參數取代的位置 (如有)。 如需參數取代的詳細資訊，請參閱[如何：替代範本中的參數。](../ide/how-to-substitute-parameters-in-a-template.md)
 
 1. 在與專案項目檔案相同的目錄中，使用 *.vstemplate* 檔案副檔名來建立並儲存 XML 檔案。
 
@@ -123,7 +123,7 @@ ms.locfileid: "31954658"
 
 1. 在 **Windows 檔案總管**中選取您想要併入範本的檔案。 以滑鼠右鍵按一下選項，選擇 [傳送到] > [壓縮的 (zipped) 資料夾]。 您選取的檔案即會壓縮成 *.zip* 檔。
 
-1. 複製 *.zip* 檔案，並在使用者項目範本位置中貼上它。 在 Visual Studio 2017 中，預設目錄是 *%USERPROFILE%\Documents\Visual Studio 2017\Templates\ItemTemplates*。 如需詳細資訊，請參閱[如何：尋找並整理專案範本和項目範本](../ide/how-to-locate-and-organize-project-and-item-templates.md)。
+1. 複製 *.zip* 檔案，並在使用者項目範本位置中貼上它。 在 Visual Studio 2017 中，預設目錄是 *%USERPROFILE%\Documents\Visual Studio 2017\Templates\ItemTemplates*。 如需詳細資訊，請參閱[＜How to：尋找及整理專案與項目範本](../ide/how-to-locate-and-organize-project-and-item-templates.md)。
 
 ## <a name="see-also"></a>另請參閱
 

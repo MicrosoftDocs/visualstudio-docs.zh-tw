@@ -1,5 +1,5 @@
 ---
-title: 如何：在 Visual Studio 中自訂功能表和工具列
+title: 自訂功能表與工具列
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -29,14 +29,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9e9cab18be65d29b6cdd22b8948d2e89f75c4fe9
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: bb58d0a20e8764e7cefe013458476ddcd41ac416
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34745945"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53049687"
 ---
-# <a name="how-to-customize-menus-and-toolbars-in-visual-studio"></a>如何：在 Visual Studio 中自訂功能表和工具列
+# <a name="how-to-customize-menus-and-toolbars-in-visual-studio"></a>HOW TO：在 Visual Studio 中自訂功能表和工具列
 
 您可以自訂 Visual Studio，不只是可以新增及移除功能表列上的工具列和功能表，還可以新增及移除任何指定工具列或功能表上的命令。
 
@@ -81,7 +81,7 @@ ms.locfileid: "34745945"
         您也可以拖曳工具列的左邊緣，將它移動至主要停駐區中的任何位置。
 
         > [!NOTE]
-        > 如需如何改善工具列的可用性和協助工具的詳細資訊，請參閱[如何：設定 IDE 協助工具選項](../ide/reference/how-to-set-ide-accessibility-options.md)。
+        > 如需如何改善工具列可用性和協助工具的詳細資訊，請參閱[如何：設定 IDE 協助工具選項](../ide/reference/how-to-set-ide-accessibility-options.md)。
 
 ## <a name="customizing_menu">自訂功能表或工具列</a>
 

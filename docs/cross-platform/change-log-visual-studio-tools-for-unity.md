@@ -1,24 +1,60 @@
 ---
 title: 變更記錄檔 (Visual Studio Tools for Unity，Windows) | Microsoft Docs
 ms.custom: ''
-ms.date: 08/06/2018
+ms.date: 11/28/2018
 ms.technology: vs-unity-tools
 ms.topic: conceptual
 ms.assetid: ea490b7e-fc0d-44b1-858a-a725ce20e396
-author: TerryGLee
-ms.author: tglee
+author: therealjohn
+ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: da2e91e15572a9904115926447523d8dba23a36a
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: 4db1d1d5340465b2e977a651eea2e6ad592c22e0
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51000722"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068376"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-windows"></a>變更記錄檔 (Visual Studio Tools for Unity，Windows)
 Visual Studio Tools for Unity 變更記錄。
+
+## <a name="3903"></a>3.9.0.3
+ 發行時間：2018 年 11 月 28 日
+
+### <a name="bug-fixes"></a>Bug 修正
+
+-   **整合：**
+
+    -   修正新增或移除位於第一個專案中的指令碼時，所發生的專案重新載入與 intellisense 問題。
+
+## <a name="3902"></a>3.9.0.2
+ 發行時間：2018 年 11 月 19 日
+
+### <a name="bug-fixes"></a>Bug 修正
+
+-   **偵錯工具：**
+
+    -   已修正用於與 Unity 偵錯工具引擎通訊之程式庫中的死結，該死結造成 Visual Studio 或 Unity 凍結，特別是在按下 [附加到 Unity] 或重新啟動遊戲時。
+
+## <a name="3901"></a>3.9.0.1
+ 發行時間：2018 年 11 月 15 日
+
+### <a name="bug-fixes"></a>Bug 修正
+
+-   **整合：**
+
+    -   修正選取其他預設編輯器時的 Unity 外掛程式啟用問題。
+
+## <a name="3900"></a>3.9.0.0
+ 發行時間：2018 年 11 月 13 日
+
+### <a name="bug-fixes"></a>Bug 修正
+
+-   **Project Generation:**
+
+    -   針對 Unity 已修正的 Unity 效能 Bug 復原因應措施。
 
 ## <a name="3807"></a>3.8.0.7
  於 2018 年 9 月 20 日發行
@@ -27,7 +63,7 @@ Visual Studio Tools for Unity 變更記錄。
 
 -   **偵錯工具：**
 
-    -   已修正用於與 Unity 偵錯工具引擎通訊之程式庫中的死結，該死結造成 Visual Studio 或 Unity 凍結，特別是在按下 [附加到 Unity] 或重新啟動遊戲時。
+    -   (從 3.9.0.2 反向移植) 修正用於與 Unity 偵錯工具引擎通訊程式庫中的死結，該死結會造成 Visual Studio 或 Unity 凍結，特別是在點擊 [附加到 Unity] 或重新啟動遊戲時。
 
 ## <a name="3806"></a>3.8.0.6
  發行於 2018 年 8 月 27 日
@@ -71,7 +107,7 @@ Visual Studio Tools for Unity 變更記錄。
 
 -   **Project Generation:**
 
-    -   針對 Unity 已修正的 Unity 效能 Bug 復原因應措施。
+    -   (從 3.9.0.0 反向移植) 針對已由 Unity 修正的 Unity 效能 Bug 來復原因應措施。
 
 ## <a name="3802"></a>3.8.0.2
  發行於 2018 年 7 月 7 日
@@ -634,7 +670,7 @@ Visual Studio Tools for Unity 變更記錄。
 
 -   已修正 Windows 市集 App 之 UnityEngine 和 UnityEditor 組件的參考。
 
--   已修正當偵錯工具逐步執行時的錯誤：無法逐步執行，一般例外狀況。
+-   修正在偵錯工具中逐步執行時的錯誤：無法逐步執行，發生一般例外狀況。
 
 -   已修正在 Visual Studio 2015 的叫用次數中斷點。
 
@@ -714,13 +750,13 @@ Visual Studio Tools for Unity 變更記錄。
 
     -   安裝 Unity 5 的 Visual Studio Tools for Unity 套件。
 
--   **文件：** 提升文件產生的效能。
+-   **文件：** 改善文件產生的效能。
 
 -   **精靈：** 支援 Unity 4.6 和 Unity 5 的新 MonoBehavior 方法。
 
 -   **Unity：** 在專案檔產生期間，查閱 .rsp 檔中的不安全旗標和自訂定義。
 
--   **UI：** 在 Visual Studio 中新增 Visual Studio Tools for Unity [選項]  對話方塊。
+-   **UI：** 在 Visual Studio 中新增 Visual Studio Tools for Unity [選項] 對話方塊。
 
 ### <a name="bug-fixes"></a>Bug 修正
 
@@ -760,7 +796,7 @@ Visual Studio Tools for Unity 變更記錄。
 
 -   **精靈：** 更正產生程式碼時的 MonoBehavior 方法參數順序。
 
--   **UI：** 內容功能表和圖示支援 Visual Studio 佈景主題。
+-   **UI：** 支援操作功能表和圖示的 Visual Studio 佈景主題。
 
 ## <a name="1980---20-preview"></a>1.9.8.0 - 2.0 Preview
  發行於 2014 年 11 月 12 日
@@ -1105,21 +1141,21 @@ Visual Studio Tools for Unity 變更記錄。
 
 -   修正 Bug UVS-48：輸入雙引號有時會產生錯誤並中斷所有函式 (程式碼完成、語法反白顯示等)。
 
--   已修正 Bug UVS-46：按一下 Visual Studio 的 [錯誤清單] 時，重複開啟指令碼檔案 (UnityScript)。
+-   修正 Bug UVS-46：按一下 Visual Studio 的 [錯誤清單] 時，重複開啟指令碼檔案 (UnityScript)。
 
--   已修正 Bug UVS-42：狀態列中的 Unity 連線標誌不會處理 VS 2012 中的滑鼠事件。
+-   修正 Bug UVS-42：VS 2012 中狀態列的 Unity 連線能力標誌不會處理滑鼠事件。
 
--   已修正 Bug UVS-44：VS 2012 中未提供代表 Quick MonoBehaviours 的 CTRL+SHIFT+Q。
+-   修正 Bug UVS-44：VS 2012 中未提供代表 Quick MonoBehaviours 的 CTRL+SHIFT+Q。
 
--   已修正 Bug UVS-40：當視窗在 VS2012 的「暗色調」佈景主題中沒有作用時，無法讀取 Unity Project Explorer 中的選取項目。
+-   修正 Bug UVS-40：當視窗在 VS2012 的「深色」佈景主題中沒有作用時，無法讀取 Unity Project Explorer 中的選取項目。
 
--   已修正 Bug UVS-39：Token 化逸出字串的問題。
+-   修正 Bug UVS-39：Token 化逸出字串的問題。
 
--   已修正 Bug UVS-35：檢查變數時會對物件叫 ToString。
+-   修正 Bug UVS-35：檢查變數時會對物件叫用 ToString。
 
--   已修正 Bug UVS-27：Goto 符號視窗與 VS2012 的「暗色調」佈景主題不一致。
+-   修正 Bug UVS-27：Goto Symbol 視窗與 VS2012 的「深色」佈景主題不一致。
 
--   已修正 Bug UVS-11：協同程式中的區域變數。
+-   修正 Bug UVS-11：協同程式中的區域變數。
 
 ## <a name="1100---beta-release"></a>1.1.0.0 - 搶鮮版 (Beta)
  發行於 2013 年 3 月 9 日
@@ -1225,9 +1261,9 @@ Visual Studio Tools for Unity 變更記錄。
 
 -   修正針對運算式評估在載入組件中搜尋類型的方式。
 
--   已修正 Bug UVS-21：指派 Unity 物件的評估沒有任何作用。
+-   修正 Bug UVS-21：指派 Unity 物件的評估沒有任何作用。
 
--   已修正 Bug UVS-21：評估 Unity Math API 的方法引動過程時，指標無效。
+-   修正 Bug UVS-21：評估 Unity Math API 的方法引動過程時，指標無效。
 
 ## <a name="1080"></a>1.0.8.0
  發行於 2012 年 9 月 26 日

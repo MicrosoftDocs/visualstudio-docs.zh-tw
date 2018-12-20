@@ -1,6 +1,6 @@
 ---
-title: 操作說明：使用命令列將分析工具附加至 .NET Framework 獨立應用程式並收集應用程式統計資料 | Microsoft Docs
-ms.custom: ''
+title: 將分析工具附加至 .NET Framework 獨立應用程式並收集應用程式統計資料
+ms.custom: seodec18
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -10,14 +10,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 17a6e425984872b8611ca5210d8cc47af5a96be5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 06092367bc900c34ff6c599e6819321800cf2084
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49833469"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53067488"
 ---
-# <a name="how-to-attach-the-profiler-to-a-net-framework-stand-alone-application-and-collect-application-statistics-by-using-the-command-line"></a>如何：使用命令列將分析工具附加至 .NET Framework 獨立應用程式並收集應用程式統計資料
+# <a name="how-to-attach-the-profiler-to-a-net-framework-stand-alone-application-and-collect-application-statistics-by-using-the-command-line"></a>HOW TO：使用命令列將分析工具附加至 .NET Framework 獨立應用程式並收集應用程式統計資料
 本文描述如何使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具命令列工具將分析工具附加到執行中的 .NET Framework 獨立 (用戶端) 應用程式，並使用取樣方法收集效能統計資料。  
 
 > [!NOTE]
@@ -53,7 +53,7 @@ ms.locfileid: "49833469"
 
      您可以使用下列任一選項搭配 **/start:sample** 選項。  
 
-   | 選項 | 描述 |
+   | 選項 | 說明 |
    | - | - |
    | [/user](../profiling/user-vsperfcmd.md) **:**[`Domain`**\\**]`UserName` | 針對擁有已分析處理序的帳戶，指定帳戶的選擇性網域和使用者名稱。 只有在受分析應用程式以不是登入的使用者啟動時，才需要此選項。 |
    | [/crosssession](../profiling/crosssession.md) | 在其他登入工作階段啟用處理序程式碼剖析。 **/crosssession** 可縮寫成 **/CS**。 如果應用程式在不同的工作階段中執行，則需要這個選項。 |
@@ -76,7 +76,7 @@ ms.locfileid: "49833469"
 
    |||  
    |-|-|  
-   |取樣事件|描述|  
+   |取樣事件|說明|  
    |[/timer](../profiling/timer.md) **:** `Interval`|將取樣間隔變更為 `Interval` 指定的未暫止時脈週期數。|  
    |[/pf](../profiling/pf.md) [**:**`Interval`]|將取樣事件變更為分頁錯誤。 如果指定 `Interval`，請設定樣本間的分頁錯誤數。 預設值為 10。|  
    |[/sys](../profiling/sys-vsperfcmd.md) [**:**`Interval`]|將取樣事件從處理器變更為作業系統核心的系統呼叫 (syscalls)。 如果指定 `Interval`，請設定樣本間的呼叫數。 預設值為 10。|  
@@ -91,7 +91,7 @@ ms.locfileid: "49833469"
 
 -   下列成對的選項會開始和停止資料收集。 請在個別的命令列上指定各個選項。 您可以多次開始和停止資料收集。  
 
-    |選項|描述|  
+    |選項|說明|  
     |------------|-----------------|  
     |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|開始 (**/globalon**) 或停止 (**/globaloff**) 所有處理序的資料收集。|  
     |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|開始 (**/processon**) 或停止 (**/processoff**) 對 `PID` 指定的處理序收集資料。|  

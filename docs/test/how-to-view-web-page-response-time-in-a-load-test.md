@@ -1,5 +1,5 @@
 ---
-title: Visual Studio 中負載測試的頁面回應時間
+title: 負載測試的頁面回應時間
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,14 +12,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 9740d26ef99c10bb9ec84afa23b998f6e1467f40
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 73ba296be1c001415746145c7bcf4d13c8b25053
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895258"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068091"
 ---
-# <a name="how-to-view-web-page-response-time-in-a-load-test-using-the-load-test-analyzer"></a>如何：使用負載測試分析器在負載測試中檢視網頁回應時間
+# <a name="how-to-view-web-page-response-time-in-a-load-test-using-the-load-test-analyzer"></a>HOW TO：使用負載測試分析器在負載測試中檢視網頁回應時間
 
 每個網頁載入所花的時間稱為「回應時間」。 當您建立 Web 效能測試時，可以在 Web 效能測試中為每一個網頁要求設定回應時間目標。
 
@@ -45,7 +45,7 @@ ms.locfileid: "52895258"
 
 3. 每一個頁面的資料會顯示在方格中。 通常會顯示下列資料行。
 
-   |資料行標題|描述|
+   |資料行標題|說明|
    |-|-|
    |**頁面**|網頁的名稱。|
    |**案例**|情節的名稱。 如果您的 Web 效能測試中有多個情節，此項就很重要。|
@@ -61,7 +61,7 @@ ms.locfileid: "52895258"
    |**最大值**|頁面回應時間的最大值。<br /><br /> 根據預設並未收集這個資料。 若要收集此資料，請在 [負載測試編輯器] 的 [回合設定] 節點下，選取回合設定節點予以變更。 在 [屬性] 視窗中的 [計時詳細資料儲存區] 屬性，選取 [所有個別細節]。|
    |**標準差**|根據預設，標準差資料並未收集。 若要收集此資料，請在 [負載測試編輯器] 的 [回合設定] 節點下，選取回合設定節點予以變更。 在 [屬性] 視窗中的 [計時詳細資料儲存區] 屬性，選取 [所有個別細節]。|
    |**頁面時間**|對網頁發出的所有要求的平均回應時間。|
-   |**目標**|頁面時間目標。 這是頁面的常數值。 **注意：** 只有在定義了 Web 效能測試之要求的目標時，才會顯示「頁面時間目標」。|
+   |**目標**|頁面時間目標。 這是頁面的常數值。 **注意：** 只有在定義了 Web 效能測試要求的目標時，才會顯示「頁面時間目標」。|
    |**% 符合目標**|對符合回應時間目標的網頁發出的要求百分比。|
 
    如需詳細資訊，請參閱[在資料表檢視中分析負載測試結果和錯誤](../test/analyze-load-test-results-and-errors-in-the-tables-view.md)。

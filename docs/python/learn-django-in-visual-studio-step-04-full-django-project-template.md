@@ -1,5 +1,6 @@
 ---
-title: 教學課程 - 了解 Visual Studio 中的 Django，步驟 4
+title: Visual Studio 中的了解 Django 教學課程步驟 4，Web 專案範本
+titleSuffix: ''
 description: 逐步解說 Visual Studio 專案環境中的 Django 基本知識，尤其是 Django Web 專案範本提供的功能。
 ms.date: 11/19/2018
 ms.prod: visual-studio-dev15
@@ -8,19 +9,20 @@ ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: f087086343623d0a8e698821902a5cf92598061e
-ms.sourcegitcommit: f61ad0e8babec8810295f039e67629f4bdebeef0
+ms.openlocfilehash: 865a0368933fa0a66728afaead6677cbeca84834
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "52001200"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53065457"
 ---
 # <a name="step-4-use-the-full-django-web-project-template"></a>步驟 4：使用完整的 Django Web 專案範本
 
-**上一個步驟：[提供靜態檔案、新增頁面，以及使用範本繼承](learn-django-in-visual-studio-step-03-serve-static-files-and-add-pages.md)**
+**上一步：[提供靜態檔案、新增頁面，然後使用範本繼承](learn-django-in-visual-studio-step-03-serve-static-files-and-add-pages.md)**
 
 您已透過 Visual Studio 的「空白 Django Web 專案」範本來建置應用程式，因而探索 Django 的基本知識，現在就可以輕鬆地了解由「Django Web 專案」範本所產生的較完整應用程式。
 
@@ -77,7 +79,7 @@ ms.locfileid: "52001200"
 
 ### <a name="question-is-it-possible-to-share-a-virtual-environment-between-visual-studio-projects"></a>問題：Visual Studio 專案之間是否可以共用虛擬環境？
 
-答：可以，不過這麼做的時候要注意到不同專案經過一段時間後可能會使用不同的套件。因此，共用的虛擬環境必須針對使用該虛擬環境的所有專案，包含所有相關的套件。
+回答：可以，不過這麼做的時候要注意到不同專案經過一段時間後可能會使用不同套件；因此，所共用虛擬環境必須針對使用該虛擬環境的所有專案，包含所有相關套件。
 
 不過，若要使用現有的虛擬環境，請執行下列作業：
 
@@ -165,7 +167,7 @@ def about(request):
 
 ### <a name="question-can--block--and--endblock--be-indented-in-the-django-page-template"></a>問題：在 Django 頁面範本中，{% block %} 和 {% endblock %} 可以縮排嗎？
 
-答：可以。例如，如果您為了讓區塊標籤在對應的父元素內對齊而縮排區塊標籤，Django 頁面範本依然能運作正常。 在 Visual Studio 專案範本所產生的頁面範本中，區塊標籤不會縮排，因此您可以清楚看到區塊標籤的位置。
+回答：可以。例如，如果您為了讓區塊標籤在對應的父項目內對齊而縮排區塊標籤，Django 頁面範本依然能正常運作。 在 Visual Studio 專案範本所產生的頁面範本中，區塊標籤不會縮排，因此您可以清楚看到區塊標籤的位置。
 
 ## <a name="step-4-3-understand-the-url-routing-created-by-the-template"></a>步驟 4-3：了解範本所建立的 URL 路由
 
@@ -208,7 +210,7 @@ urlpatterns = [
 
 ### <a name="question-in-the-project-i-created-why-does-the-about-url-pattern-uses-about-instead-of-about-as-shown-here"></a>問題：在我建立的專案中，為什麼 "about" (關於) URL 模式會使用 '^about'，而不是此處所顯示的 '^about$'？
 
-答：規則運算式中少了尾端 '$' 只是許多專案範本版本中的單純疏忽。 URL 模式可以正常運作於名為 "about" (關於) 的頁面。不過，如果少了尾端 '$'，該 URL 模式也會符合 "about=django"、"about09876"、"aboutoflaughter" 等等的 URL。 此處顯示的尾端 '$' 是為了建立只符合 "about" 的 URL 模式。
+回答：規則運算式中少了尾端 '$' 只是許多專案範本版本中的單純疏忽。 URL 模式可以正常運作於名為 "about" (關於) 的頁面。不過，如果少了尾端 '$'，該 URL 模式也會符合 "about=django"、"about09876"、"aboutoflaughter" 等等的 URL。 此處顯示的尾端 '$' 是為了建立只符合 "about" 的 URL 模式。
 
 ## <a name="next-steps"></a>後續步驟
 

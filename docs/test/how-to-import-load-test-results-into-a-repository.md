@@ -1,5 +1,5 @@
 ---
-title: 如何：在 Visual Studio 中將負載測試結果匯入至存放庫
+title: HOW TO：將負載測試結果匯入存放庫
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,14 +13,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 80bb7f0998dd8ee1bc46105892e0e6f4e23b74c1
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 4f4b62f13a78ae716fd7bfe4e1a158450590a864
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895063"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53065982"
 ---
-# <a name="how-to-import-load-test-results-into-a-repository"></a>如何：將負載測試結果匯入至存放庫
+# <a name="how-to-import-load-test-results-into-a-repository"></a>HOW TO：將負載測試結果匯入存放庫
 
 當您執行負載測試時，執行期間所收集到的資訊，都會儲存在負載測試結果儲存機制中。 負載測試結果儲存機制含有效能計數器資料，以及錄製之錯誤的相關資訊。 如需詳細資訊，請參閱[管理負載測試結果存放庫中的負載測試結果](../test/manage-load-test-results-in-the-load-test-results-repository.md)。
 

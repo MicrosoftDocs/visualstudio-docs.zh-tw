@@ -1,5 +1,5 @@
 ---
-title: Visual Studio 中的 IntelliTrace 資料
+title: Intellitrace 資料
 ms.date: 10/13/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,14 +13,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 8501f141c2fdf60a57daecda33a3ff7436a16a5d
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: cad52f39fc45e5561e2a87f12c804cb0d445d96a
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52894634"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53064753"
 ---
-# <a name="how-to-collect-intellitrace-data-to-help-debug-difficult-issues"></a>如何：收集 IntelliTrace 資料以協助偵錯困難的問題
+# <a name="how-to-collect-intellitrace-data-to-help-debug-difficult-issues"></a>HOW TO：收集 IntelliTrace 資料以協助偵錯困難的問題
 
 您可以在 Visual Studio 中設定診斷資料配接器，讓 IntelliTrace 收集特定診斷追蹤資訊。 測試可以使用此配接器，如此測試就可以收集應用程式的重大診斷事件，讓開發人員之後使用這些事件追蹤整個程式碼，找出 Bug 的原因。 IntelliTrace 的診斷資料配接器可以用於手動或自動化測試。
 

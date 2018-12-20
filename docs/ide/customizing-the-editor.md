@@ -1,5 +1,5 @@
 ---
-title: 自訂 Visual Studio 編輯器
+title: 自訂編輯器
 ms.date: 11/20/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a397932e23386356757ca96dc86dee7222947431
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: e7643da4819d88282b5588bc97020f769301c483
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34446140"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53065082"
 ---
 # <a name="customize-the-editor"></a>自訂編輯器
 

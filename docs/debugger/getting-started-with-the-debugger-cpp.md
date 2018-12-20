@@ -1,6 +1,6 @@
 ---
 title: 了解如何使用 Visual Studio 偵錯工具對 C++ 進行偵錯
-ms.description: Learn how to start the Visual Studio debugger, step through code, and inspect data.
+description: 了解如何啟動 Visual Studio 偵錯工具，逐步執行程式碼並檢查資料。
 ms.custom: debug-experiment
 ms.date: 08/01/2018
 ms.technology: vs-ide-debug
@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 56ef97401a87f39e9c3bfd3138ee3a26646064c6
-ms.sourcegitcommit: d7f232a7596420e40ff8051d42cdf90203af4a74
+ms.openlocfilehash: f3578955d72dcb223baeb022a199fb274c0cc659
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2018
-ms.locfileid: "52825902"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53065244"
 ---
 # <a name="tutorial-learn-to-debug-c-code-using-visual-studio"></a>教學課程：了解如何使用 Visual Studio 對 C++ 程式碼進行偵錯
 
@@ -298,7 +298,7 @@ ms.locfileid: "52825902"
 
 ## <a name="examine-the-call-stack"></a>檢查呼叫堆疊
 
-1. 在 `for` 迴圈中暫停時，請按一下 [呼叫堆疊] 視窗，此視窗預設會在右下方的窗格中開啟。
+1. 在 `for` 迴圈中暫停時，按一下 [呼叫堆疊] 視窗，此視窗預設會在右下方的窗格中開啟。
 
 2. 按幾下 **F11** 鍵，直到您看到偵錯工具在程式碼編輯器中 `Rectangle` 類別的 `Shape::Draw` 方法中暫停為止。 查看 [呼叫堆疊] 視窗。
 
@@ -313,7 +313,7 @@ ms.locfileid: "52825902"
 
     您可以按兩下某一行的程式碼來查看其原始程式碼，這也會變更偵錯工具所檢查的目前範圍。 此動作不會讓偵錯工具往前推進。
 
-    您也可以從 [呼叫堆疊] 視窗使用滑鼠右鍵功能表來執行其他動作。 例如，您可以在指定的函式中插入中斷點，使用 [執行至游標處] 讓偵錯工具往前推進，並檢查原始程式碼。 如需詳細資訊，請參閱[如何：檢查呼叫堆疊](../debugger/how-to-use-the-call-stack-window.md)。
+    您也可以從 [呼叫堆疊] 視窗使用滑鼠右鍵功能表來執行其他動作。 例如，您可以在指定的函式中插入中斷點，使用 [執行至游標處] 讓偵錯工具往前推進，並檢查原始程式碼。 如需詳細資訊，請參閱[＜How to：檢查呼叫堆疊](../debugger/how-to-use-the-call-stack-window.md)。
 
 ## <a name="change-the-execution-flow"></a>變更執行流程
 

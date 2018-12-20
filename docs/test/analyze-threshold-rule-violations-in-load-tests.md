@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Studio 中分析負載測試的臨界值規則違規
+title: 分析負載測試的臨界值規則違規
 ms.date: 10/19/2016
 ms.topic: conceptual
 f1_keywords:
@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 17a79e4c684ee60d18288bc30ce1e3fce83dc8a5
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: be0784197c03aa3117d559cd4aa99797027c8170
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895427"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53061807"
 ---
 # <a name="analyzing-threshold-rule-violations-in-load-tests-using-the-load-test-analyzer"></a>使用負載測試分析器來分析負載測試中的臨界值規則違規
 
@@ -36,12 +36,12 @@ ms.locfileid: "52895427"
 
  臨界值違規資料表會顯示最前面的 1,000 個違規。 下表包含這些資料行：
 
-|資料行|描述|預設為可見|
+|資料行|說明|預設為可見|
 |-|-|-|
-|時間|負載測試期間發生違規的時間。|[是]|
-|電腦|發生違規之測試中的電腦名稱。 **注意：** 當您在 Rig 上執行負載測試時，這很重要。|[是]|
-|分類|發生違規之效能計數器的分類。|[是]|
-|計數器|發生違規之效能計數器的名稱。|[是]|
+|時間|負載測試期間發生違規的時間。|是|
+|電腦|發生違規之測試中的電腦名稱。 **注意：** 當您在 Rig 上執行負載測試時，這很重要。|是|
+|分類|發生違規之效能計數器的分類。|是|
+|計數器|發生違規之效能計數器的名稱。|是|
 |執行個體|發生違規的效能計數器執行個體。|[是]|
 |訊息|描述臨界值違規的訊息。 例如，**值 5 超過 0 的關鍵臨界值**。|[是]|
 

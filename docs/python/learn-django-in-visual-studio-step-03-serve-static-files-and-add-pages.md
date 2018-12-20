@@ -1,5 +1,6 @@
 ---
-title: 教學課程 - 了解 Visual Studio 中的 Django，步驟 3
+title: Visual Studio 中的了解 Django 教學課程步驟 3，靜態檔案和頁面
+titleSuffix: ''
 description: 逐步解說 Visual Studio 專案環境中的 Django 基本知識，特別示範如何提供靜態檔案、將頁面加入應用程式，以及使用範本繼承
 ms.date: 11/19/2018
 ms.prod: visual-studio-dev15
@@ -8,19 +9,20 @@ ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: bea209e2d7cf751c66f3e627311a2985c79f55c3
-ms.sourcegitcommit: f61ad0e8babec8810295f039e67629f4bdebeef0
+ms.openlocfilehash: cfde21f356e35366cfb80b029f918eed0364a7b5
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "52001291"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53066076"
 ---
-# <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>步驟 3：提供靜態檔案、新增頁面，然後使用範本繼承
+# <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>步驟 3：提供靜態檔案、新增頁面，以及使用範本繼承
 
-**上一個步驟：[使用檢視與頁面範本來建立 Django 應用程式](learn-django-in-visual-studio-step-02-create-an-app.md)**
+**先前步驟：[使用檢視與頁面範本建立 Django 應用程式](learn-django-in-visual-studio-step-02-create-an-app.md)**
 
 在本教學課程的先前步驟中，您已學會如何建立具有單一獨立式 HTML 頁面的最小 Django 應用程式。 不過，現代化 Web 應用程式通常是由許多網頁所組成，並且利用 CSS 和 JavaScript 檔案等共用資源來提供一致的樣式和行為。
 
@@ -44,7 +46,7 @@ ms.locfileid: "52001291"
 
 ### <a name="question-how-does-visual-studio-know-which-item-templates-to-offer"></a>問題：Visual Studio 如何知道應提供哪些項目範本？
 
-回答：Visual Studio 專案檔 (*.pyproj*) 包含將它標示為 Python 專案的專案類型識別碼。 Visual Studio 會使用此類型的識別碼，以便只顯示適用於專案類型的項目範本。 如此一來，Visual Studio 便可為許多專案類型提供豐富的項目範本，而無須要求您每次都要查看整理範本。
+答：Visual Studio 專案檔 (*.pyproj*) 包含將它標示為 Python 專案的專案類型識別碼。 Visual Studio 會使用此類型的識別碼，以便只顯示適用於專案類型的項目範本。 如此一來，Visual Studio 便可為許多專案類型提供豐富的項目範本，而無須要求您每次都要查看整理範本。
 
 ## <a name="step-3-2-serve-static-files-from-your-app"></a>步驟 3-2：從您的應用程式提供靜態檔案
 
@@ -97,13 +99,13 @@ STATIC_ROOT = posixpath.join(*(BASE_DIR.split(os.path.sep) + ['static']))
 
 ### <a name="question-what-is-the-purpose-of-the--load-staticfiles--tag"></a>問題：{% load staticfiles %} 標籤的用途是什麼？
 
-答：需要有 `{% load staticfiles %}` 這一行，才能在 `<head>` 和 `<body>` 之類的元素中參考靜態檔案。 本節顯示的範例中，"staticfiles" 是指自訂 Django 範本標籤集，它可讓您使用 `{% static %}` 語法來參照靜態檔案。  如果沒有 `{% load staticfiles %}`，則在應用程式執行時會出現例外狀況。
+答：需要有 `{% load staticfiles %}` 這一行，才能在 `<head>` 和 `<body>` 之類的項目中參考靜態檔案。 本節顯示的範例中，"staticfiles" 是指自訂 Django 範本標籤集，它可讓您使用 `{% static %}` 語法來參照靜態檔案。  如果沒有 `{% load staticfiles %}`，則在應用程式執行時會出現例外狀況。
 
-### <a name="question-are-there-any-conventions-for-organizing-static-files"></a>問題：組織靜態檔案有任何慣例嗎？
+### <a name="question-are-there-any-conventions-for-organizing-static-files"></a>問題：整理靜態檔案有任何慣例嗎？
 
-回答：您可以依偏好將其他的 CSS、JavaScript 和 HTML 檔案新增至您的 *static* 資料夾。 組織靜態檔案的一般方式是建立名為 *fonts*、*scripts* 和 *content* 的子資料夾 (針對樣式表和任何其他檔案)。 在各種情況中，請記得要將那些資料夾包含在 `{% static %}` 參考中的檔案相對路徑。
+答：您可以視需要將其他 CSS、JavaScript 和 HTML 檔案新增至您的 *static* 資料夾。 組織靜態檔案的一般方式是建立名為 *fonts*、*scripts* 和 *content* 的子資料夾 (針對樣式表和任何其他檔案)。 在各種情況中，請記得要將那些資料夾包含在 `{% static %}` 參考中的檔案相對路徑。
 
-## <a name="step-3-3-add-a-page-to-the-app"></a>步驟 3-3：將頁面加入應用程式
+## <a name="step-3-3-add-a-page-to-the-app"></a>步驟 3-3：將頁面新增到應用程式
 
 將其他頁面加入應用程式意義如下：
 
@@ -164,9 +166,9 @@ STATIC_ROOT = posixpath.join(*(BASE_DIR.split(os.path.sep) + ['static']))
 
 1. 執行專案以觀察結果並檢查頁面之間的瀏覽。 完成時，關閉伺服器。
 
-### <a name="question-i-tried-using-index-for-the-link-to-the-home-page-but-it-didnt-work-why"></a>問題：我嘗試使用 "index" (索引) 於首頁連結，但無法運作。 為什麼？
+### <a name="question-i-tried-using-index-for-the-link-to-the-home-page-but-it-didnt-work-why"></a>問題：我嘗試使用 "index" (索引) 連結到首頁，但無法運作。 為什麼？
 
-答：雖然在 *views.py* 中的檢視函式的名稱是 `index`，但是 Django 專案中 *urls.py* 檔案的 URL 路由模式並不包含符合 "index" (索引) 字串的規則運算式。 若要符合該字串，您必須為 `^index$` 模式新增另一個項目。
+答：雖然在 *views.py* 中檢視函式的名稱是 `index`，但是 Django 專案中 *urls.py* 檔案 URL 路由模式並不包含符合 "index" (索引) 字串的規則運算式。 若要符合該字串，您必須為 `^index$` 模式新增另一個項目。
 
 如下一節所示，最好是在頁面範本中使用 `{% url '<pattern_name>' %}` 標籤來參考模式的 *name* (名稱)，在此情況下，Django 會為您建立適當的 URL。 例如，將 *about.html* 中的 `<div><a href="home">Home</a></div>` 取代為 `<div><a href="{% url 'index' %}">Home</a></div>`。 此處使用 'index' (索引) 得以運作是因為 *urls.py* 中的第一個 URL 模式事實上是名為 'index' (因為 `name='index'` 引數之故)。 您也可以使用 'home' (首頁) 來參考第二個模式。
 

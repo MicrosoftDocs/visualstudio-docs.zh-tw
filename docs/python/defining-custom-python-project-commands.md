@@ -1,6 +1,6 @@
 ---
-title: 如何定義 Python 專案的自訂功能表命令
-description: 示範如何在 Visual Studio 中編輯專案及 .targets 檔案，以將自訂命令新增至 Python 專案操作功能表。 命令可叫用可執行程式、指令碼、模組、內嵌程式碼片段及 PIP。
+title: 定義 Python 專案的自訂功能表命令
+description: 您可以藉由編輯專案和目標檔案，將自訂命令新增至 Visual Studio 中的 Python 專案操作功能表，以叫用可執行程式、指令碼、模組、內嵌程式碼片段，以及 pip。
 ms.date: 11/12/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -8,15 +8,16 @@ ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: cce4400a4cecb3bb0937c3f4ce41ea148edcc49f
-ms.sourcegitcommit: 6a955a2d179cd0e137942389f940d9fcbbe125de
+ms.openlocfilehash: be8befcc549b76c8ac2b6435146c636b592b5494
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51607844"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062867"
 ---
 # <a name="define-custom-commands-for-python-projects"></a>定義 Python 專案的自訂命令
 
@@ -45,7 +46,7 @@ Visual Studio 中有部分 Python 專案範本已經使用其 *.targets* 檔案�
 
 為了讓您更熟悉自訂命令，本節將透過使用 *python.exe* 直接執行專案啟動檔案的簡單範例為您進行逐步解說 (此命令與使用 [偵錯] > [啟動但不偵錯] 的效果相同)。
 
-1. 使用 [Python 應用程式] 範本建立名為 "Python-CustomCommands" 的新專案。 (若仍對程序不熟悉，請參閱[快速入門：從範本建立 Python 專案](quickstart-02-python-in-visual-studio-project-from-template.md)的說明。)
+1. 使用 [Python 應用程式] 範本建立名為 "Python-CustomCommands" 的新專案。 (若仍對處理序不熟悉，請參閱[快速入門：從範本建立 Python 專案](quickstart-02-python-in-visual-studio-project-from-template.md)的說明。)
 
 1. 在 *Python_CustomCommands.py* 中新增程式碼 `print("Hello custom commands")`。
 
@@ -132,9 +133,9 @@ Visual Studio 中有部分 Python 專案範本已經使用其 *.targets* 檔案�
 
 ### <a name="target-attributes"></a>目標屬性
 
-| 屬性 | 必要 | 描述 |
+| 屬性 | 必要 | 說明 |
 | --- | --- | --- |
-| 名稱 | [是] | Visual Studio 專案中的命令識別項。 您必須將此名稱新增至 `<PythonCommands>` 屬性群組，命令才會顯示在 [Python] 子功能表上。 |
+| 名稱 | 是 | Visual Studio 專案中的命令識別項。 您必須將此名稱新增至 `<PythonCommands>` 屬性群組，命令才會顯示在 [Python] 子功能表上。 |
 | 標籤 | [是] | [Python] 子功能表上顯示的 UI 顯示名稱。 |
 | Returns | [是] | 必須包含可將目標識別為命令的 `@(Commands)`。 |
 
@@ -142,12 +143,12 @@ Visual Studio 中有部分 Python 專案範本已經使用其 *.targets* 檔案�
 
 所有屬性值均區分大小寫。
 
-| 屬性 | 必要 | 描述 |
+| 屬性 | 必要 | 說明 |
 | --- | --- | --- |
-| TargetType | [是] | 指定目標屬性的內容，以及其搭配 Arguments 屬性使用的方式：<ul><li>：執行在 Target 中命名的可執行檔，附加 Arguments 中的值，使其看似直接在命令列上輸入。 此值只能包含程式名稱，而不能包含引數。</li><li>**script**：以 Target 中的檔案名稱執行 *python.exe*，後面接著 Arguments 中的值。</li><li>**module**：執行 `python -m`，後面依序接著 Target 中的模組名稱及 Arguments 中的值。</li><li>**code**：執行 Target 中包含的內嵌程式碼。 這會忽略 Arguments 值。</li><li>**pip**：以 Target 中的命令執行 `pip`，後面接著 Arguments，is ExecuteIn 設定為 "output"，但 PIP 會假設 `install` 命令並將 Target 用作套件名稱。</li></ul> |
-| 目標 | [是] | 要使用的檔案名稱、模組名稱、程式碼或 PIP 命令，端視 TargetType 而定。 |
+| TargetType | 是 | 指定目標屬性的內容，以及其搭配 Arguments 屬性使用的方式：<ul><li>**executable**：執行在 Target 中命名的可執行檔，並附加 Arguments 中的值，如同直接在命令列上輸入一樣。 此值只能包含程式名稱，而不能包含引數。</li><li>**script**：以 Target 中的檔案名稱執行 *python.exe*，後面接著 Arguments 中的值。</li><li>**module**：執行 `python -m`，後面依序接著 Target 中模組名稱及 Arguments 中的值。</li><li>**code**：執行 Target 中包含的內嵌程式碼。 這會忽略 Arguments 值。</li><li>**pip**：以 Target 中的命令執行 `pip`，後面接著 Arguments；ExecuteIn 設定為 "output"，但 PIP 會使用 `install` 命令並將 Target 用作套件名稱。</li></ul> |
+| 目標 | 是 | 要使用的檔案名稱、模組名稱、程式碼或 PIP 命令，端視 TargetType 而定。 |
 | 引數 | Optional | 指定要指派至目標的引數字串 (如果有的話)。 請注意，當 TargetType 為 `script` 時，引數會指派至 Python 程序，而非 *python.exe*。 若為 `code` TargetType 請予以略過。 |
-| ExecuteIn | [是] | 指定要在其中執行命令的環境：<ul><li>**console**：(預設) 將 Target 與 Arguments 視作直接在命令列上輸入加以執行。 命令視窗會在 Target 執行時顯示，然後自動關閉。</li><li>**consolepause**：與 console 相同，但會在關閉視窗前等待按鍵動作。</li><li>**output**：執行 Target，並在 Visual Studio 的 [輸出] 視窗中顯示其結果。 若 TargetType 為 "pip"，Visual Studio 會將 Target 用作套件名稱並在後面加上 Arguments。</li><li>**repl**：在 [Python 互動式](python-interactive-repl-in-visual-studio.md)視窗中執行 Target；選擇性顯示名稱會用於視窗標題。</li><li>**none**：行為與 console 相同。</li></ul>|
+| ExecuteIn | 是 | 指定要在其中執行命令的環境：<ul><li>**console**：(預設) 執行 Target 與 Arguments，如同直接在命令列上輸入一樣。 命令視窗會在 Target 執行時顯示，然後自動關閉。</li><li>**consolepause**：與 console 相同，但會在關閉視窗前等待按鍵動作。</li><li>**output**：執行 Target，並在 Visual Studio 的 [輸出] 視窗中顯示其結果。 若 TargetType 為 "pip"，Visual Studio 會將 Target 用作套件名稱並在後面加上 Arguments。</li><li>**repl**：在 [Python 互動式](python-interactive-repl-in-visual-studio.md)視窗中執行 Target；選擇性顯示名稱會用於視窗標題。</li><li>**none**：行為與 console 相同。</li></ul>|
 | WorkingDirectory | Optional | 要在其中執行命令的資料夾。 |
 | ErrorRegex<br>WarningRegEx | Optional | 僅在 ExecuteIn 為 `output` 時使用。 這兩個值均會指定規則運算式，Visual Studio 將用以剖析命令輸出，並在其 [錯誤清單] 視窗中顯示錯誤與警告。 若未指定，則命令並不會影響 [錯誤清單] 視窗。 如需有關 Visual Studio 要求的詳細資訊，請參閱[具名擷取群組](#named-capture-groups-for-regular-expressions)。 |
 | RequiredPackages | Optional | 命令的套件需求清單，格式與 [*requirements.txt*](https://pip.readthedocs.io/en/1.1/requirements.html) (pip.readthedocs.io) 相同。 例如 [執行 PyLint] 命令會指定 `pylint>=1.0.0`。 執行命令前，Visual Studio 會檢查清單中的所有套件皆已安裝。 Visual Studio 會使用 PIP 來安裝所有缺少的套件。 |
@@ -159,9 +160,9 @@ Visual Studio 中有部分 Python 專案範本已經使用其 *.targets* 檔案�
 
 - `(?<message>...)`：錯誤的文字
 - `(?<code>...)`：錯誤碼
-- `(?<filename>...)`：回報有錯誤的檔案名稱
+- `(?<filename>...)`：回報錯誤的檔案名稱
 - `(?<line>...)`：檔案中回報錯誤的位置行號。
-- `(?<column>...)`：檔案中回報錯誤的資料行編號。
+- `(?<column>...)`：檔案中回報錯誤的位置資料行編號。
 
 例如，PyLint 會產生下列形式的警告：
 

@@ -1,5 +1,5 @@
 ---
-title: 使用 Visual Studio 提高生產力的祕訣
+title: 生產力祕訣
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 362004cba4792fe2405d6cc009a0ae918fdd535e
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: e4b4d4e6a0833d6fbea1a34c26a5858f3e28be1c
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50671296"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53067974"
 ---
 # <a name="productivity-tips-for-visual-studio"></a>使用 Visual Studio 提高生產力的祕訣
 
@@ -118,11 +118,11 @@ ms.locfileid: "50671296"
 
      您也可以建立另一個方案總管執行個體並移至其他監視器，更輕鬆地管理檔案。 若要建立另一個方案總管執行個體，請開啟方案總管中的捷徑功能表，然後選擇 [新增方案總管檢視]。
 
-- **自訂出現在 Visual Studio 中的字型**。 您可以為 IDE 中使用的文字變更字體、大小和色彩。 例如，您可以為編輯器裏的某一種程式碼項目自訂色彩，以及變更工具視窗或整個 IDE 的字體。 如需詳細資訊，請參閱[如何：變更字型和色彩](../ide/how-to-change-fonts-and-colors-in-visual-studio.md)和[如何：在編輯器中變更字型和顏色](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)。
+- **自訂出現在 Visual Studio 中的字型**。 您可以為 IDE 中使用的文字變更字體、大小和色彩。 例如，您可以為編輯器裏的某一種程式碼項目自訂色彩，以及變更工具視窗或整個 IDE 的字體。 如需詳細資訊，請參閱[＜How to：變更字型和色彩](../ide/how-to-change-fonts-and-colors-in-visual-studio.md)及[如何：在編輯器中變更字型和色彩](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)。
 
 ## <a name="see-also"></a>另請參閱
 
 - [常用命令的預設鍵盤快速鍵](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md)
-- [如何：自訂功能表和工具列](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md)
+- [如何：自訂功能表與工具列](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md)
 - [逐步解說：建立簡單的應用程式](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)
 - [協助工具祕訣和訣竅](../ide/reference/accessibility-tips-and-tricks.md)

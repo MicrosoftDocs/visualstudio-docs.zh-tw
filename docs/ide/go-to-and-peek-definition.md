@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Studio 中檢視型別定義
+title: 檢視類型定義
 ms.date: 01/10/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 529486e39db57228feb703817eea44fab9399c85
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: e7b159eb48e995fa0bca6ea86299d09c1a10cf27
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34745759"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062078"
 ---
 # <a name="view-type-and-member-definitions"></a>檢視型別與成員的定義
 
@@ -52,7 +52,7 @@ ms.locfileid: "34745759"
 
 如果您從快顯視窗查看另一個定義，則將啟動階層連結路徑，而階層連結路徑可使用出現在快顯視窗上方的圓形和箭號進行巡覽。
 
-如需詳細資訊，請參閱[如何：使用查看定義 (Alt+F12) 檢視和編輯程式碼](how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)。
+如需詳細資訊，請參閱[＜How to：使用查看定義 (Alt+F12) 檢視及編輯程式碼](how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)。
 
 ## <a name="view-metadata-as-source-code-c"></a>中繼資料視為原始程式碼 (C#)
 
@@ -79,4 +79,4 @@ Visual Studio 2017 15.6 版中的新功能：您可以設定選項，以在檢�
 ## <a name="see-also"></a>另請參閱
 
 - [巡覽程式碼](../ide/navigating-code.md)
-- [如何：使用查看定義 (Alt+F12) 檢視和編輯程式碼](how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)
+- [如何：使用查看定義 (Alt+F12) 檢視及編輯程式碼](how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)

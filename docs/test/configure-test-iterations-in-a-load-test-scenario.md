@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Studio 中設定用於負載測試的測試反覆項目
+title: 設定用於負載測試的測試反覆項目
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: f5ec275c4b6e7fcf239aa0903ffe68757c5412cc
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 28bc6d6cb35397d49868c0603f7beb17f9138c2d
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52896207"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53055683"
 ---
 # <a name="configure-test-iterations-in-a-load-test-scenario"></a>在負載測試情節中設定測試反覆項目
 

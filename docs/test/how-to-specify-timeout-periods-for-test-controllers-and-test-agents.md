@@ -1,5 +1,5 @@
 ---
-title: Visual Studio 中測試控制器和測試代理程式的逾時期限
+title: 測試控制器和測試代理程式的逾時期間
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,14 +13,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 9c7e85dcbd62c5f068ce3286145fec2ddddc7947
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 53127df8837f9f86d49cb5d5fa36ca3b50f401fa
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895687"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53064675"
 ---
-# <a name="how-to-specify-timeout-periods-for-test-controllers-and-test-agents"></a>如何：指定測試控制器和測試代理程式的逾時期限
+# <a name="how-to-specify-timeout-periods-for-test-controllers-and-test-agents"></a>HOW TO：指定測試控制器和測試代理程式的逾時期間
 
 測試控制器和測試代理程式都有數個逾時設定，指定發生錯誤而失敗之前應該等候彼此回應或資料來源回應的時間。 在某些情況下，可能需要編輯逾時值，以符合您的拓撲需求或解決其他環境問題。 若要編輯逾時值，請編輯與測試控制器或測試代理程式相關聯的 XML 組態檔，如下列程序所示。
 
@@ -30,21 +30,21 @@ ms.locfileid: "52895687"
 
 -   測試控制器：*QTController.exe.config*
 
-    |機碼名稱|描述|值|
+    |機碼名稱|說明|值|
     |-|-----------------|-|
     |AgentConnectionTimeoutInSeconds|在連接被視為遺失之前候代理程式 Ping 要求的秒數。|"n" 秒。|
     |AgentSyncTimeoutInSeconds|當您啟動同步處理的測試回合時，在中止回合之前等候所有代理程式同步的秒數。|"n" 秒。|
-    |AgentInitializeTimeout|在中止測試回合之前，等候所有代理程式及其資料收集器於測試回合開始時初始化的秒數。 如果使用資料收集器，這個值應該適度大。|"n" 秒。 預設值："120" (2 分鐘)。|
-    |AgentCleanupTimeout|在完成測試回合之前等候所有代理程式及其資料收集器清除的秒數。 如果使用資料收集器，這個值應該適度大。|"n" 秒。 預設值："120" (2 分鐘)。|
+    |AgentInitializeTimeout|在中止測試回合之前，等候所有代理程式及其資料收集器於測試回合開始時初始化的秒數。 如果使用資料收集器，這個值應該適度大。|"n" 秒。 預設："120" (兩分鐘)。|
+    |AgentCleanupTimeout|在完成測試回合之前等候所有代理程式及其資料收集器清除的秒數。 如果使用資料收集器，這個值應該適度大。|"n" 秒。 預設："120" (2 分鐘)。|
 
 -   測試代理程式：*QTAgentService.exe.config*
 
-    |機碼名稱|描述|值|
+    |機碼名稱|說明|值|
     |-|-----------------|-|
-    |ControllerConnectionPeriodInSeconds|對控制器之連接嘗試的相隔秒數。|"n" 秒。 預設值："30" (30 秒)。|
-    |RemotingTimeoutSeconds|遠端呼叫可存留的最大時間 (以秒為單位)。|"n" 秒。 預設值："600" (10 分鐘)。|
-    |StopTestRunCallTimeoutInSeconds|等候呼叫停止測試回合的秒數。|"n" 秒。 預設值："120" (2 分鐘)。|
-    |GetCollectorDataTimeout|等候資料收集器的秒數。|"n" 秒。 預設值："300" (5 分鐘)。|
+    |ControllerConnectionPeriodInSeconds|對控制器之連接嘗試的相隔秒數。|"n" 秒。 預設："30" (30 秒)。|
+    |RemotingTimeoutSeconds|遠端呼叫可存留的最大時間 (以秒為單位)。|"n" 秒。 預設："600" (10 分鐘)。|
+    |StopTestRunCallTimeoutInSeconds|等候呼叫停止測試回合的秒數。|"n" 秒。 預設："120" (2 分鐘)。|
+    |GetCollectorDataTimeout|等候資料收集器的秒數。|"n" 秒。 預設："300" (5 分鐘)。|
 
 ## <a name="to-specify-agent-timeout-options-for-a-test-controller"></a>指定測試控制器的代理程式逾時選項
 

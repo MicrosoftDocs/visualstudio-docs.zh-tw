@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Studio 中使用查看定義
+title: 使用查看定義
 ms.date: 01/10/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -9,14 +9,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c64f271f041c28dc621ed85a8cd9d79c36caa3dd
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 518256c550f56832c6711ab6d2ca2dae4eb0aa2c
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34746711"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53059648"
 ---
-# <a name="how-to-view-and-edit-code-by-using-peek-definition-altf12"></a>如何：使用查看定義 (Alt+F12) 來檢視及編輯程式碼
+# <a name="how-to-view-and-edit-code-by-using-peek-definition-altf12"></a>HOW TO：使用查看定義 (Alt+F12) 檢視及編輯程式碼
 
 您可以使用 [查看定義] 命令來檢視和編輯程式碼，而不需要離開撰寫中的程式碼。 [查看定義] 和 [移至定義] 會顯示相同資訊，但是 [查看定義] 是在快顯視窗中顯示，而 [移至定義] 則在個別程式碼視窗中顯示程式碼。 [移至定義] 會讓內容 (也就是作用中的程式碼視窗、目前行和游標位置) 轉換成定義程式碼視窗。 使用 [查看定義] 可以檢視和編輯該定義並在定義檔中移動，同時保留您在原始程式碼檔案中的位置。
 

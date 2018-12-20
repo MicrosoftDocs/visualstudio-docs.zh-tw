@@ -1,5 +1,6 @@
 ---
-title: 教學課程 - 了解 Visual Studio 中的 Flask，步驟 4
+title: Visual Studio 中的了解 Flask 教學課程步驟 4，Web 專案範本
+titleSuffix: ''
 description: 逐步解說 Visual Studio 專案內容中的 Flask 基本知識，特別是「Flask Web 專案」和「Flask/Jade Web 專案」範本所提供的功能。
 ms.date: 09/04/2018
 ms.prod: visual-studio-dev15
@@ -8,19 +9,20 @@ ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6e9171b7f44a51380fd086798b4ab9c50fa98729
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: c072d1187abf463cc2f185946f7e238bb091a534
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43775954"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53051697"
 ---
 # <a name="step-4-use-the-full-flask-web-project-template"></a>步驟 4：使用完整的 Flask Web 專案範本
 
-**上一個步驟：[提供靜態檔案、新增頁面，以及使用範本繼承](learn-flask-visual-studio-step-03-serve-static-files-add-pages.md)**
+**上一步：[提供靜態檔案、新增頁面，然後使用範本繼承](learn-flask-visual-studio-step-03-serve-static-files-add-pages.md)**
 
 既然您已透過利用 Visual Studio 的「空白 Flask 應用程式專案」範本來建置應用程式以探索 Flask 的基本知識，現在便可輕鬆了解「Flask Web 專案」範本所產生更完整應用程式。
 
@@ -76,7 +78,7 @@ ms.locfileid: "43775954"
 
 ### <a name="question-is-it-possible-to-share-a-virtual-environment-between-visual-studio-projects"></a>問題：Visual Studio 專案之間是否可以共用虛擬環境？
 
-答：可以，不過這麼做的時候要注意到不同專案經過一段時間後可能會使用不同的套件。因此，共用的虛擬環境必須針對使用該虛擬環境的所有專案，包含所有相關的套件。
+回答：可以，不過這麼做的時候要注意到不同專案經過一段時間後可能會使用不同套件；因此，所共用虛擬環境必須針對使用該虛擬環境的所有專案，包含所有相關套件。
 
 不過，若要使用現有的虛擬環境，請執行下列作業：
 
@@ -235,4 +237,4 @@ block content
 
 - [撰寫您的第一個 Flask 應用程式，第 4 部分 - 表單和一般檢視](https://docs.djangoproject.com/en/2.0/intro/tutorial04/) \(英文\) (docs.djangoproject.com)
 - [GitHib 上的 Jade (文件)](https://github.com/liuliqiang/pyjade) \(英文\) (github.com)
-- GitHub 上的教學課程原始程式碼：[Microsoft/python-sample-vs-learning-flask](https://github.com/Microsoft/python-sample-vs-learning-flask) \(英文\)
+- GitHub 上的教學課程原始程式碼：[Microsoft/python-sample-vs-learning-flask](https://github.com/Microsoft/python-sample-vs-learning-flask)

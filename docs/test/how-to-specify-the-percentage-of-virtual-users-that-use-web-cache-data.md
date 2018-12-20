@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Studio 中指定使用 Web 快取資料進行負載測試的虛擬使用者百分比
+title: 指定使用 Web 快取資料進行負載測試的虛擬使用者百分比
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,14 +10,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 1178cd08bf8d12b4fba61e858ca5631d103292c2
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 2195b99658d05e9e73a86cf723fcb8e9d4f36bd4
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895570"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53060235"
 ---
-# <a name="how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data"></a>如何：指定使用 Web 快取資料之虛擬使用者的百分比
+# <a name="how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data"></a>HOW TO：指定使用 Web 快取資料的虛擬使用者百分比
 
 使用 [新增負載測試精靈] 建立負載測試之後，您就可以使用 [負載測試編輯器] 來變更情節屬性，以便符合您的測試需求和目標。 如需負載測試情節屬性及其描述的完整清單，請參閱[負載測試情節屬性](../test/load-test-scenario-properties.md)。
 

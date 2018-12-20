@@ -1,5 +1,5 @@
 ---
-title: Visual Studio Command Aliases
+title: 命令別名
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 01cba4998db732a4f851f4bcd2f7185868e9341f
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: a74bc2bc38befe81ec3a26c5da4819dbe1c66148
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39513529"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53056434"
 ---
 # <a name="visual-studio-command-aliases"></a>Visual Studio Command Aliases
 

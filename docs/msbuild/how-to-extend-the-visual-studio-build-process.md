@@ -1,6 +1,6 @@
 ---
-title: 如何：擴充 Visual Studio 建置處理序 | Microsoft Docs
-ms.custom: ''
+title: 延伸建置流程
+ms.custom: seodec18
 ms.date: 11/04/2016
 ms.technology: msbuild
 ms.topic: conceptual
@@ -15,14 +15,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 777c2c4ecb5ea8561a43a12f1897c2260d6638d0
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 380933a07636cddd2bc32fb45f14f9b2a65830df
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39081549"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53058268"
 ---
-# <a name="how-to-extend-the-visual-studio-build-process"></a>如何：擴充 Visual Studio 建置處理序
+# <a name="how-to-extend-the-visual-studio-build-process"></a>HOW TO：延伸 Visual Studio 建置流程
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 建置處理序是由匯入至您專案檔的一系列 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] .targets 檔案所定義。 可以擴充其中一個已匯入的檔案 (Microsoft.Common.targets)，以讓您在建置處理序的數個點執行自訂工作。 本文說明您可以使用兩種方法來擴充 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 建置處理序：  
   
 -   覆寫 *Microsoft.Common.targets* 中所定義的特定預先定義目標。  
@@ -36,7 +36,7 @@ ms.locfileid: "39081549"
   
 1.  識別 *Microsoft.Common.targets* 中您要覆寫的預先定義目標。 如需您可安全覆寫之目標的完整清單，請參閱下表。  
   
-2.  在專案檔結尾，於 `</Project>` 標記的正前方定義目標。 例如:   
+2.  在專案檔結尾，於 `</Project>` 標記的正前方定義目標。 例如：  
   
     ```xml  
     <Project>  
@@ -54,15 +54,15 @@ ms.locfileid: "39081549"
 
 下表顯示 *Microsoft.Common.targets* 中您可安全覆寫的所有目標。  
   
-|目標名稱|描述|  
+|目標名稱|說明|  
 |-----------------|-----------------|  
-|`BeforeCompile`, `AfterCompile`|在核心編譯完成之前或之後，會執行插入至其中一個目標的工作。 大部分的自訂是在這兩個目標的其中一個中完成。|  
-|`BeforeBuild`, `AfterBuild`|在組建的任何其他項目之前或之後，將會執行其中一個目標中插入的工作。 **注意︰**`BeforeBuild` 和 `AfterBuild` 目標定義於大部分專案檔結尾的註解中，可讓您輕鬆地將建置前和建置後事件新增至專案檔。|  
-|`BeforeRebuild`, `AfterRebuild`|在叫用核心重建功能之前或之後，執行插入至其中一個目標的工作。 *Microsoft.Common.targets* 中的目標執行順序是：`BeforeRebuild`、`Clean`、`Build` 和 `AfterRebuild`。|  
-|`BeforeClean`, `AfterClean`|在叫用核心清除功能之前或之後，執行插入至其中一個目標的工作。|  
-|`BeforePublish`, `AfterPublish`|在叫用核心發行功能之前或之後，執行插入至其中一個目標的工作。|  
-|`BeforeResolveReference`, `AfterResolveReferences`|在解析組件參考之前或之後，會執行插入至其中一個目標的工作。|  
-|`BeforeResGen`, `AfterResGen`|在產生資源之前或之後，會執行插入至其中一個目標的工作。|  
+|`BeforeCompile`、 `AfterCompile`|在核心編譯完成之前或之後，會執行插入至其中一個目標的工作。 大部分的自訂是在這兩個目標的其中一個中完成。|  
+|`BeforeBuild`、 `AfterBuild`|在組建的任何其他項目之前或之後，將會執行其中一個目標中插入的工作。 **注意：**`BeforeBuild` 和 `AfterBuild` 目標已定義於大部分專案檔結尾的註解中，可讓您輕鬆地將建置前和建置後事件新增至專案檔。|  
+|`BeforeRebuild`、 `AfterRebuild`|在叫用核心重建功能之前或之後，執行插入至其中一個目標的工作。 *Microsoft.Common.targets* 中的目標執行順序是：`BeforeRebuild`、`Clean`、`Build` 和 `AfterRebuild`。|  
+|`BeforeClean`、 `AfterClean`|在叫用核心清除功能之前或之後，執行插入至其中一個目標的工作。|  
+|`BeforePublish`、 `AfterPublish`|在叫用核心發行功能之前或之後，執行插入至其中一個目標的工作。|  
+|`BeforeResolveReference`、 `AfterResolveReferences`|在解析組件參考之前或之後，會執行插入至其中一個目標的工作。|  
+|`BeforeResGen`、 `AfterResGen`|在產生資源之前或之後，會執行插入至其中一個目標的工作。|  
   
 ## <a name="override-dependson-properties"></a>覆寫 DependsOn 屬性  
  覆寫預先定義的目標是擴充建置處理序的簡單方法，但因為 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 會循序評估目標的定義，所以沒有任何方法可防止另一個匯入您專案的專案覆寫您已覆寫的目標。 因此，例如，在匯入所有其他專案之後，專案檔中所定義的最後一個 `AfterBuild` 目標就是建置期間所使用的目標。  
@@ -118,7 +118,7 @@ ms.locfileid: "39081549"
   
 ### <a name="commonly-overridden-dependson-properties"></a>經常覆寫的 DependsOn 屬性  
   
-|屬性名稱|描述|  
+|屬性名稱|說明|  
 |-------------------|-----------------|  
 |`BuildDependsOn`|如果您想要在整個建置處理序之前或之後插入自訂目標，這是要覆寫的屬性。|  
 |`CleanDependsOn`|如果您想要清除自訂建置處理序的輸出，這是要覆寫的屬性。|  

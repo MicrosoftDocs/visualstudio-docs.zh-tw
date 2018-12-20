@@ -1,22 +1,23 @@
 ---
 title: 快速入門 - 使用範本建立 Python 專案
 description: 在此快速入門中，您可以使用基本 Flask 應用程式的內建範本來建立 Python 的 Visual Studio 專案。
-ms.date: 09/04/2018
+ms.date: 12/06/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: quickstart
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b9f361ba73f8fd1d3963ca39a90ac01ba9effe6f
-ms.sourcegitcommit: 9ea4b62163ad6be556e088da1e2a355f31366f39
+ms.openlocfilehash: c36fc6e10b196c3da4ba58ff047adab62345fa6f
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43995998"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53066021"
 ---
 # <a name="quickstart-create-a-python-project-from-a-template-in-visual-studio"></a>快速入門：在 Visual Studio 中從範本建立 Python 專案
 
@@ -78,7 +79,7 @@ ms.locfileid: "43995998"
 
 **問題：Visual Studio 還提供其他哪些 Python 範本？**
 
-**解答**：安裝 Python 工作負載後，Visual Studio 提供各種不同的專案範本，包括可用於 [Flask、Bottle 及 Django Web 架構](../python/python-web-application-project-templates.md)、Azure 雲端服務、不同機器學習案例，甚至還有範本可從包含 Python 應用程式的現有資料夾結構建立專案。 您可以透過 [檔案] > [新增] > [專案] 對話方塊選取 [Python] 語言節點與其子節點，來存取這些範本。
+**答**：安裝 Python 工作負載後，Visual Studio 即可提供各種不同的專案範本，包括適用於 [Flask、Bottle 及 Django Web 架構](../python/python-web-application-project-templates.md)、Azure 雲端服務、不同機器學習案例，以及可從包含 Python 應用程式之現有資料夾結構來建立專案的範本。 您可以透過 [檔案] > [新增] > [專案] 對話方塊選取 [Python] 語言節點與其子節點，來存取這些範本。
 
 Visual Studio 也提供各種不同的檔案或「項目範本」來快速建立 Python 類別、Python 套件、Python 單元測試、*web.config* 檔案等等。 當 Python 專案開啟時，您可以透過 [專案] > [加入新項目] 功能表命令來存取項目範本。 請參閱[項目範本](python-item-templates.md)參考。
 
@@ -86,7 +87,7 @@ Visual Studio 也提供各種不同的檔案或「項目範本」來快速建立
 
 **問題：我是否也可以使用 Cookiecutter 範本？**
 
-**解答**：是！ 事實上，Visual Studio 提供與 Cookiecutter 的直接整合，您可以透過[快速入門：從 Cookiecutter 範本建立專案](../python/quickstart-04-python-in-visual-studio-project-from-cookiecutter.md)來了解內容。
+**答**：可以！ 事實上，Visual Studio 提供與 Cookiecutter 的直接整合，您可以透過以下文章了解內容：[快速入門：從 Cookiecutter 範本建立專案](../python/quickstart-04-python-in-visual-studio-project-from-cookiecutter.md)。
 
 ## <a name="next-steps"></a>後續步驟
 

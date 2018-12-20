@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Studio 中建立方案和專案
+title: 建立方案和專案
 ms.date: 02/06/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a912534b9e0212e68a947fa892395a233f263a87
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 7c03709517f1c1d5bd28a2a0847a51895eb49557
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349633"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53052148"
 ---
 # <a name="create-solutions-and-projects"></a>建立方案和專案
 
@@ -33,7 +33,7 @@ ms.locfileid: "51349633"
 > [!NOTE]
 > 本主題適用於 Windows 上的 Visual Studio。 針對 Visual Studio for Mac，請參閱[在 Visual Studio for Mac 中建立專案](/visualstudio/mac/create-new-projects)。
 
-您可以在稱為**方案總管**的工具視窗中，檢視方案和專案。 下列螢幕擷取畫面顯示方案總管中的範例解決方案 (**BikeSharing.Xamarin-UWP**) 包含兩個專案：**BikeSharing.Clients.Core** 和 **BikeSharing.Clients.Windows**。 每個專案包含多個檔案、資料夾和參考。 以粗體顯示的專案名稱是「啟始專案」，也就是當您執行應用程式時所啟動的專案。 您可以指定哪一個專案是啟始專案。
+您可以在稱為**方案總管**的工具視窗中，檢視方案和專案。 下列螢幕擷取畫面顯示 [方案總管] 中的範例方案 (**BikeSharing.Xamarin-UWP**) 包含兩個專案：**BikeSharing.Clients.Core** 和 **BikeSharing.Clients.Windows**。 每個專案包含多個檔案、資料夾和參考。 以粗體顯示的專案名稱是「啟始專案」，也就是當您執行應用程式時所啟動的專案。 您可以指定哪一個專案是啟始專案。
 
 ![內含專案的方案總管](./media/vside-solution-explorer-projects.png)
 

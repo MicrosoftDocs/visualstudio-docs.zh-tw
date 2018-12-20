@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Studio 中產生方法覆寫
+title: 產生方法覆寫
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5d51139d2e5197607de2255b267c24bf2a9db2b3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: bb4a35c1f7c9e2752148e54f934a3fcbfb974136
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49919061"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53063638"
 ---
 # <a name="generate-an-override-in-visual-studio"></a>在 Visual Studio 中產生覆寫
 
@@ -28,7 +28,7 @@ ms.locfileid: "49919061"
 
 **時機：** 您想要覆寫基底類別方法並自動產生簽章。
 
-**原因：** 您可以自行撰寫方法簽章，不過，此功能將可自動產生簽章。
+**原因：** 您可以自行撰寫方法簽章；不過，此功能將自動產生簽章。
 
 ## <a name="how-to"></a>操作說明
 

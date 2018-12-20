@@ -1,6 +1,6 @@
 ---
 title: 管理 Python 應用程式專案
-description: 專案在 Visual Studio 中的目的，在於如何建立及管理適用於 Python 程式碼的專案，以及可供 Python 使用的各種專案範本。
+description: Visual Studio 中的專案會管理檔案之間的相依性，以及應用程式中的關聯性複雜度。
 ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -8,15 +8,16 @@ ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9f5612aa166f81bf1f42983989db5bdf5422a7ef
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 6b0d31905cd0dfb835275d6fd0bbe8f153253b56
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50220465"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068282"
 ---
 # <a name="python-projects-in-visual-studio"></a>Visual Studio 中的 Python 專案
 
@@ -38,7 +39,7 @@ Visual Studio 提供各種 Python 專案範本，可讓您快速設定一些應�
 |   |   |
 |---|---|
 | ![影片的電影攝影機圖示](../install/media/video-icon.png "觀看影片") | [觀看 Python 專案簡介的影片 (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Getting-Python-Code-iLAv23LWE_3905918567) \(英文\) (2 分 17 秒)。 |
-| ![影片的電影攝影機圖示](../install/media/video-icon.png "觀看影片") | 另請參閱 [Deep Dive: Use source control with Python projects](https://youtu.be/Aq8eqApnugM) (深度剖析：使用原始檔控制搭配 Python 專案) (youtube.com，8 分 55 秒)。 |
+| ![影片的電影攝影機圖示](../install/media/video-icon.png "觀看影片") | 另請參閱 [Deep Dive:Use source control with Python projects](https://youtu.be/Aq8eqApnugM) (深度剖析：使用原始檔控制搭配 Python 專案) (youtube.com，8 分 55 秒)。 |
 
 ## <a name="add-files-assign-a-startup-file-and-set-environments"></a>新增檔案、指派啟動檔案及設定環境
 
@@ -65,7 +66,7 @@ Visual Studio 提供您一些方法來建立 Python 專案，不論是從頭開�
 
 下表摘要說明 Visual Studio 2017 中可用的範本 (並非所有範本在所有舊版中都有提供)：
 
-| 範本 | 描述 |
+| 範本 | 說明 |
 | --- | --- |
 | [**從現有 Python 程式碼**](#create-project-from-existing-files) | 從資料夾結構中的現有 Python 程式碼建立 Visual Studio 專案。  |
 | **Python 應用程式** | 具有單一空白原始程式檔的新 Python 應用程式基本專案結構。 根據預設，專案會在預設全域環境的主控台解譯器中執行，您可以透過[指派不同的環境](selecting-a-python-environment-for-a-project.md)來變更此環境。 |
@@ -92,7 +93,7 @@ Visual Studio 提供您一些方法來建立 Python 專案，不論是從頭開�
 
 ## <a name="linked-files"></a>連結的檔案
 
-連結的檔案就是已導入專案中但通常位於應用程式專案資料夾外的檔案。 它們在 [方案總管] 中會顯示為帶有重疊捷徑圖示的一般檔案：![連結的檔案圖示](media/projects-linked-file-icon.png)
+連結的檔案就是已導入專案中但通常位於應用程式專案資料夾外的檔案。 它們在 [方案總管] 中會顯示為具有重疊捷徑圖示的一般檔案：![連結的檔案圖示](media/projects-linked-file-icon.png)
 
 連結的檔案是在 *.pyproj* 檔案中使用 `<Compile Include="...">` 元素來指定的。 如果連結的檔案使用目錄結構以外的相對路徑，則為隱含的連結檔案；如果連結的檔案使用 [方案總管] 內的路徑，則為明確的連結檔案：
 

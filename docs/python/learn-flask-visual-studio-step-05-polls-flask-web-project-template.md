@@ -1,5 +1,6 @@
 ---
-title: 教學課程 - 了解 Visual Studio 中的 Flask，步驟 5
+title: Visual Studio 中的了解 Flask 教學課程步驟 5，Polls 專案範本
+titleSuffix: ''
 description: 逐步解說 Visual Studio 專案內容中的 Flask 基本知識，特別是「投票 Flask Web 專案」和「投票 Flask/Jade Web 專案」範本的功能。
 ms.date: 09/04/2018
 ms.prod: visual-studio-dev15
@@ -8,19 +9,20 @@ ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: bf6c9299f994ba1f5272c68724171fb42e85a679
-ms.sourcegitcommit: 1abb9cf4c3ccb90e3481ea8079272c98aad12875
+ms.openlocfilehash: a29e222df2a8443e9d5210c0382125cdc65a814f
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/26/2018
-ms.locfileid: "50143199"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53065995"
 ---
 # <a name="step-5-use-the-polls-flask-web-project-template"></a>步驟 5：使用 Polls Flask Web 專案範本
 
-**上一個步驟：[使用完整的 Flask Web 專案範本](learn-flask-visual-studio-step-04-full-flask-project-template.md)**
+**先前步驟：[使用完整的 Flask Web 專案範本](learn-flask-visual-studio-step-04-full-flask-project-template.md)**
 
 在了解 Visual Studio 的「Flask Web 專案」範本之後，您現在可以研究一下第三個 Flask 範本「投票 Flask Web 專案」，此專案以相同的程式碼基底為基礎。
 
@@ -234,7 +236,7 @@ def seed():
 
 ### <a name="question-how-does-one-add-new-polls-to-the-app"></a>問題：要如何將新投票項目新增到應用程式？
 
-回答：透過專案範本提供的應用程式不包含新增或編輯投票項目的機能。 您可以修改 *models\samples.json* 以建立新的初始化資料，但這麼做將意謂著重設資料存放區。 若要實作編輯功能，您必須使用可建立必要 `Choice` 和 `Poll` 執行個體的方法來延伸 `Repository` 類別介面，然後在使用這些方法的額外頁面上實作 UI。
+答：透過專案範本所提供應用程式不包含新增或編輯投票項目的機能。 您可以修改 *models\samples.json* 以建立新的初始化資料，但這麼做將意謂著重設資料存放區。 若要實作編輯功能，您必須使用可建立必要 `Choice` 和 `Poll` 執行個體的方法來延伸 `Repository` 類別介面，然後在使用這些方法的額外頁面上實作 UI。
 
 ## <a name="step-5-4-understand-the-poll-detail-and-results-views"></a>步驟 5-4：了解投票詳細資料和結果檢視
 
@@ -346,7 +348,7 @@ def results(key):
 ## <a name="next-steps"></a>後續步驟
 
 > [!Note]
-> 如果您一直在致力於為本教學課程中的原始檔控制，研究出自己的 Visual Studio 方案，現在是另一次做出貢獻的好機會。 您的方案應與 GitHub 上的教學課程原始程式碼相吻合：[Microsoft/python-sample-vs-learning-flask](https://github.com/Microsoft/python-sample-vs-learning-flask)。
+> 如果您一直在致力於為本教學課程中的原始檔控制，研究出自己的 Visual Studio 方案，現在是另一次做出貢獻的好機會。 您的解決方案應與 GitHub 上教學課程原始程式碼相符：[Microsoft/python-sample-vs-learning-flask](https://github.com/Microsoft/python-sample-vs-learning-flask)。
 
 您現在已探索完 Visual Studio 中的「空白 Flask Web 專案」、「Flask[/Jade] Web 專案」及「投票 Flask[/Jade] Web 專案」範本的全部內容。 您已了解 Flask 的所有基本知識 (例如檢視、範本及路由)，也了解了如何使用支援資料存放區。 現在，您應該能夠利用所需的任何檢視和模型，開始建立自己的 Web 應用程式。
 

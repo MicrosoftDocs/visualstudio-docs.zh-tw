@@ -1,5 +1,5 @@
 ---
-title: Visual Studio 中的程式碼產生功能 | Microsoft Docs
+title: 程式碼產生功能
 ms.date: 01/11/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: c9c370a0ac169abe68da44d3c2e0438f9fbf15a5
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 79e3f2d47aee0bc2de43ab9db657cfa96bc1c2ac
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31915903"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53063136"
 ---
 # <a name="code-generation-features-in-visual-studio"></a>Visual Studio 中的程式碼產生功能
 

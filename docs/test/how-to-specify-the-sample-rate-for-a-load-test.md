@@ -1,5 +1,5 @@
 ---
-title: 如何：在 Visual Studio 中指定負載測試回合設定的採樣速率
+title: HOW TO：指定負載測試回合設定的採樣速率
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,14 +10,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: a672e5a61006ed9764497bd115ba2bd98f91f6cd
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: b022b4648931bf0e403df589d37cb086fb2a9c2c
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52896779"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53053045"
 ---
-# <a name="how-to-specify-the-sample-rate-for-a-load-test-run-setting"></a>如何：指定負載測試回合設定的採樣速率
+# <a name="how-to-specify-the-sample-rate-for-a-load-test-run-setting"></a>HOW TO：指定負載測試回合設定的採樣速率
 
 使用 [新增負載測試精靈] 建立負載測試之後，您就可以使用 [負載測試編輯器]，將屬性變更為符合您的測試需求和目標。
 
@@ -25,7 +25,7 @@ ms.locfileid: "52896779"
 
 使用 [負載測試編輯器] 時，您可以在 [屬性] 視窗中編輯回合設定的 [採樣速率] 屬性值。 如需回合設定屬性及其描述的完整清單，請參閱[負載測試回合設定屬性](../test/load-test-run-settings-properties.md)。
 
-請根據負載測試的長度，為負載測試回合設定選擇 [採樣速率] 屬性的適當值。 較小的取樣率 (例如五秒的預設值) 會在負載測試結果資料庫中佔用較多空間。 若為較長的負載測試，增加取樣率會降低您所收集的資料量。 如需詳細資訊，請參閱[如何：指定負載測試回合設定的採樣速率](../test/how-to-specify-the-sample-rate-for-a-load-test.md)。
+請根據負載測試的長度，為負載測試回合設定選擇 [採樣速率] 屬性的適當值。 較小的取樣率 (例如五秒的預設值) 會在負載測試結果資料庫中佔用較多空間。 若為較長的負載測試，增加取樣率會降低您所收集的資料量。 如需詳細資訊，請參閱[＜How to：指定負載測試回合設定的採樣速率](../test/how-to-specify-the-sample-rate-for-a-load-test.md)。
 
 下面是一些取樣率的方針：
 

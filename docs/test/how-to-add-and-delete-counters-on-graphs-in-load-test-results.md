@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Studio 中的負載測試結果圖表上新增及刪除計數器
+title: 在負載測試結果的圖形上新增和刪除計數器
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,14 +13,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 21fa28e9ff149bcf117e3bde5d553a2cf641c04a
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: c4cb68370a743381a13b88c8a5fdc7d61700cb17
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52896519"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53049934"
 ---
-# <a name="how-to-add-and-delete-counters-on-graphs-in-load-test-results"></a>如何：在負載測試結果的圖形上加入和刪除計數器
+# <a name="how-to-add-and-delete-counters-on-graphs-in-load-test-results"></a>HOW TO：在負載測試結果的圖形上新增和刪除計數器
 
 您可以使用 [計數器] 面板將效能計數器加入至圖形。
 
@@ -30,7 +30,7 @@ ms.locfileid: "52896519"
 
 **效能計數器取樣間隔考量**
 
-請根據負載測試的長度，在負載測試回合設定中選擇 [採樣速率] 屬性的值。 較小的取樣率 (例如五秒的預設值) 會在負載測試結果資料庫中佔用較多空間。 若為較長的負載測試，增加取樣率會降低您所收集的資料量。 如需詳細資訊，請參閱[如何：指定採樣速率](../test/how-to-specify-the-sample-rate-for-a-load-test.md)。
+請根據負載測試的長度，在負載測試回合設定中選擇 [採樣速率] 屬性的值。 較小的取樣率 (例如五秒的預設值) 會在負載測試結果資料庫中佔用較多空間。 若為較長的負載測試，增加取樣率會降低您所收集的資料量。 如需詳細資訊，請參閱[＜How to：指定採樣速率](../test/how-to-specify-the-sample-rate-for-a-load-test.md)。
 
 下面是一些取樣率的方針：
 
@@ -49,7 +49,7 @@ ms.locfileid: "52896519"
 
 負載測試結果儲存機制用來儲存計時詳細資料所需的空間可能相當大，尤其是長時間執行的負載測試。 其次，在負載測試結束時，用來將這項資料儲存至負載測試結果儲存機制的時間會比較長，因為在負載測試執行完成之後，這項資料會儲存在負載測試代理程式上。 當負載測試完成時，資料就會儲存至儲存機制中。 預設會啟用 [計時詳細資料儲存區] 屬性。 如果您的測試環境發生這種問題，您可能會想要將 [計時詳細資料儲存區] 設定為 [無]。
 
-如需詳細資訊，請參閱[如何：指定計時詳細資料儲存區屬性](../test/how-to-specify-the-timing-details-storage-property-for-a-load-test.md)。
+如需詳細資訊，請參閱[＜How to：指定計時詳細資料儲存區屬性](../test/how-to-specify-the-timing-details-storage-property-for-a-load-test.md)。
 
 ## <a name="to-display-a-particular-performance-counter-on-a-load-test-graph"></a>若要在負載測試圖形上顯示特定效能計數器
 
@@ -87,4 +87,4 @@ ms.locfileid: "52896519"
 ## <a name="see-also"></a>另請參閱
 
 - [在圖表檢視中分析負載測試結果](../test/analyze-load-test-results-in-the-graphs-view.md)
-- [如何：建立自訂圖形](../test/how-to-create-custom-graphs-in-load-test-results.md)
+- [如何：建立自訂圖表](../test/how-to-create-custom-graphs-in-load-test-results.md)
