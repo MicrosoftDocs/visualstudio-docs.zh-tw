@@ -1,22 +1,23 @@
 ---
 title: 安裝 Python 支援
 description: 如何在 Visual Studio 2017、2015、2013、2012 和 2010 中安裝「適用於 Visual Studio 的 Python 工具」(PTVS)，包括選項和安裝位置。
-ms.date: 10/09/2018
+ms.date: 12/06/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 5e7479a8d121eeb518d5ba39c9eb1444af64a788
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: e306bffe8f2cd59332f367822cd90b54b44b7635
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349017"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53063751"
 ---
 # <a name="how-to-install-python-support-in-visual-studio-on-windows"></a>如何在 Windows 上的 Visual Studio 中安裝 Python 支援
 
@@ -57,9 +58,9 @@ ms.locfileid: "51349017"
 
     ![Visual Studio 安裝程式中的 Python 開發選項](media/installation-python-options.png)
 
-    | 選項 | 描述 |
+    | 選項 | 說明 |
     | --- | --- |
-    | Python 散發 | 選擇您要使用的 Python 2、Python 3、Anaconda2 和 Anaconda3 散發的任何 32 位元和 64 位元變異組合。 每個都包含散發的解譯器、執行階段和程式庫。 具體而言，Anaconda 是包含各種預先安裝套件的開放型資料科學平台。 (您隨時都可以回到 Visual Studio 安裝程式，以新增或移除散發)。**注意**：如果您已經安裝 Visual Studio 安裝程式以外的發行版本，就不需要在此檢查對應項選項。 Visual Studio 會自動偵測現有的 Python 安裝。 請參閱 [Python 環境視窗](managing-python-environments-in-visual-studio.md#the-python-environments-window)。 此外，如果已提供比安裝程式中所示還要新的 Python 版本，您可以另外安裝該版本，而且 Visual Studio 將會偵測到該版本。 |
+    | Python 散發 | 選擇您要使用的 Python 2、Python 3、Anaconda2 和 Anaconda3 散發的任何 32 位元和 64 位元變異組合。 每個都包含散發的解譯器、執行階段和程式庫。 具體而言，Anaconda 是包含各種預先安裝套件的開放型資料科學平台。 (您隨時都可以回到 Visual Studio 安裝程式，以新增或移除散發)。**注意**：如果您已經安裝 Visual Studio 安裝程式以外的發行版本，就不需要在此檢查對應選項。 Visual Studio 會自動偵測現有的 Python 安裝。 請參閱 [Python 環境視窗](managing-python-environments-in-visual-studio.md#the-python-environments-window)。 此外，如果已提供比安裝程式中所示還要新的 Python 版本，您可以另外安裝該版本，而且 Visual Studio 將會偵測到該版本。 |
     | **Cookiecutter 範本支援** | 安裝 Cookiecutter 圖形化 UI 來探索範本、輸入範本選項，以及建立專案和檔案。 請參閱[使用 Cookiecutter 延伸模組](using-python-cookiecutter-templates.md)。 |
     | **Python Web 支援** | 安裝進行 Web 開發的工具 (包含 HTML、CSS 和 JavaScript 編輯支援)，以及使用 Bottle、Flask 和 Django 架構之專案的範本。 請參閱 [Python Web 專案範本](python-web-application-project-templates.md)。 |
     | **Python IoT 支援** | 使用 Python 支援 Windows IoT Core 開發。 |
@@ -82,7 +83,7 @@ ms.locfileid: "51349017"
 - 使用 Visual Studio 安裝程式中的 [[修復]](../install/repair-visual-studio.md) 選項。
 - 透過 Windows 中的 [設定] > [應用程式與功能] 來修復或重新安裝 Python。
 
-**範例錯誤**：無法啟動互動式處理序: System.ComponentModel.Win32Exception (0x80004005): 在 Microsoft.PythonTools.Repl.PythonInteractiveEvaluator.d__43.MoveNext() 發生未知的錯誤 (0xc0000135)。
+**範例錯誤**：無法啟動互動式處理序：System.ComponentModel.Win32Exception (0x80004005)：在 Microsoft.PythonTools.Repl.PythonInteractiveEvaluator.d__43.MoveNext() 發生未知的錯誤 (0xc0000135)。
 
 ## <a name="visual-studio-2015"></a>Visual Studio 2015
 
@@ -100,9 +101,9 @@ ms.locfileid: "51349017"
 
 1. 針對您的 Visual Studio 版本，安裝適當版本的「適用於 Visual Studio 的 Python 工具」：
 
-    - Visual Studio 2013：[適用於 Visual Studio 2013 的 PTVS 2.2 (英文)](https://github.com/Microsoft/PTVS/releases/v2.2)。 Visual Studio 2013 中的 [檔案] > [新增專案] 對話方塊能提供您此程序的捷徑。
-    - Visual Studio 2012：[適用於 Visual Studio 2012 的 PTVS 2.1 (英文)](https://pytools.codeplex.com/downloads/get/920478)
-    - Visual Studio 2010：[適用於 Visual Studio 2010 的 PTVS 2.1 (英文)](https://pytools.codeplex.com/downloads/get/920479)
+    - Visual Studio 2013：[適用於 Visual Studio 2013 的 PTVS 2.2](https://github.com/Microsoft/PTVS/releases/v2.2)。 Visual Studio 2013 中的 [檔案] > [新增專案] 對話方塊能提供您此程序的捷徑。
+    - Visual Studio 2012：[適用於 Visual Studio 2012 的 PTVS 2.1](https://pytools.codeplex.com/downloads/get/920478)
+    - Visual Studio 2010：[適用於 Visual Studio 2010 的 PTVS 2.1](https://pytools.codeplex.com/downloads/get/920479)
 
 1. [安裝您所選的 Python 解譯器](installing-python-interpreters.md)。 如果您已安裝解譯器但 Visual Studio 無法自動偵測到該解譯器，請參閱[手動識別現有的環境](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment)。
 
@@ -116,10 +117,10 @@ ms.locfileid: "51349017"
 
 - 32 位元：
   - 路徑：*%Program Files(x86)%\Microsoft Visual Studio \<VS_ver>\Common7\IDE\Extensions\Microsoft\Python Tools for Visual Studio\\<PTVS_ver>*
-  - 路徑的登錄位置：**HKEY_LOCAL_MACHINE\Software\Microsoft\PythonTools\\<VS_ver>\InstallDir**
+  - 路徑的登錄位置：**HKEY_LOCAL_MACHINE\Software\Microsoft\PythonTools\\<VS 版本>\InstallDir**
 - 64 位元︰
   - 路徑：*%Program Files%\Microsoft Visual Studio \<VS_ver>\Common7\IDE\Extensions\Microsoft\Python Tools for Visual Studio\\<PTVS_ver>*
-  - 路徑的登錄位置：**HKEY_LOCAL_MACHINE\Software\Wow6432Node\Microsoft\PythonTools\\<VS_ver>\InstallDir**
+  - 路徑的登錄位置：**HKEY_LOCAL_MACHINE\Software\Wow6432Node\Microsoft\PythonTools\\<VS 版本>\InstallDir**
 
 其中：
 

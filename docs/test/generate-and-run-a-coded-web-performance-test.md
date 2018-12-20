@@ -1,5 +1,5 @@
 ---
-title: Visual Studio 中的 Web 效能測試程式碼
+title: 自動程式化 Web 效能測試
 ms.date: 10/03/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 76b2e7eebf66bb4a9c2564ca30a72a7b17dbdcfc
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 8a4e1ea45b8fe3ae0e33064973fcf1bc3517598e
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895505"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53067838"
 ---
 # <a name="generate-and-run-a-coded-web-performance-test"></a>產生和執行 Web 效能測試程式碼
 
@@ -87,16 +87,16 @@ Web 效能測試是透過瀏覽您的 Web 應用程式來錄製。 測試包含�
 ## <a name="qa"></a>問與答
 
 ### <a name="q-can-i-run-more-than-one-test-at-a-time"></a>問：我可以同時執行多個測試嗎？
- **答：** 是，請使用 [方案總管] 中的操作功能表。
+ **答：** 可以，請使用 [方案總管] 中的操作功能表。
 
-### <a name="q-should-i-add-a-data-source-before-or-after-i-generate-a-coded-test"></a>問：我應該在產生程式碼測試之前或之後加入資料來源？
- **答：** 在您產生自動程式化測試之前，新增[資料來源](../test/add-a-data-source-to-a-web-performance-test.md)比較容易，因為會自動產生程式碼。
+### <a name="q-should-i-add-a-data-source-before-or-after-i-generate-a-coded-test"></a>問：我應該在產生自動程式化測試之前或之後新增資料來源？
+ **答：** 在您產生自動程式化測試之前，新增[資料來源](../test/add-a-data-source-to-a-web-performance-test.md)比較容易，因為會自動為您產生程式碼。
 
  當您執行具有資料來源的程式碼測試時，可能會看到下列錯誤訊息：
 
- **無法在代理程式 \<電腦名稱> 上執行測試 \<測試名稱>：物件參考未設定為物件的執行個體。**
+ **無法在代理程式 \<<電腦名稱> 上執行測試 \<測試名稱>：並未將物件參考設為物件的執行個體。**
 
  發生此錯誤的原因是測試類別擁有已定義的 DataSourceAttribute，而沒有相對應的 DataBindingAttribute。 若要解決這個錯誤，請加入適當的 DataBindingAttribute、刪除它，或在程式碼註解它。
 
-### <a name="q-should-i-add-validation-and-extraction-rules-before-or-after-i-generate-a-coded-test"></a>問：我應該在產生程式碼測試之前或之後加入驗證和擷取規則？
+### <a name="q-should-i-add-validation-and-extraction-rules-before-or-after-i-generate-a-coded-test"></a>問：我應該在產生自動程式化測試之前或之後新增驗證和擷取規則？
  **答：** 在產生自動程式化測試之前新增驗證規則和擷取規則比較容易；不過建議您使用[自動程式化 UI 測試](../test/use-ui-automation-to-test-your-code.md)進行驗證。

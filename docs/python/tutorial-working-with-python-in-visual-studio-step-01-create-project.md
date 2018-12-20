@@ -1,5 +1,6 @@
 ---
-title: 使用 Python 教學課程，步驟 1，建立專案
+title: Visual Studio 中的 Python 教學課程步驟 1 來建立專案
+titleSuffix: ''
 description: 在 Visual Studio 中 Python 功能核心逐步解說的概觀與步驟 1，包含必要條件和建立新的 Python 專案。
 ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
@@ -8,15 +9,16 @@ ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 2eb9871aeda7134f6d488b7efe55c5ec149677a5
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 1aaf0c0258d502693b771cad66f9347dd60f80e8
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50220078"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53049843"
 ---
 # <a name="tutorial-work-with-python-in-visual-studio"></a>教學課程：在 Visual Studio 中使用 Python
 

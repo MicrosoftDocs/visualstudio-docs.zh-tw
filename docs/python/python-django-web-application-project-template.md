@@ -1,6 +1,6 @@
 ---
 title: 適用於 Python 的 Django Web 專案範本
-description: 使用 Django 架構以 Python 所撰寫 Web 應用程式 Visual Studio 範本的概觀。
+description: Visual Studio 提供使用 Python 快速建立 Django Web 應用程式的完整範本。
 ms.date: 11/12/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -8,15 +8,16 @@ ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 1e00fd7df429b219589e1e49ddbc5ccadca5e032
-ms.sourcegitcommit: 6a955a2d179cd0e137942389f940d9fcbbe125de
+ms.openlocfilehash: c1aba68ad8cde6aebbc881e61937dc53037b58c5
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51607428"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53066518"
 ---
 # <a name="django-web-project-template"></a>Django Web 專案範本
 
@@ -50,19 +51,19 @@ Django 管理主控台的存取方式是透過 [專案] 功能表上的各種命
 
 - **開啟 Django 殼層**：在您的應用程式內容中開啟可讓您操作模型的殼層：
 
-    ![主控台](media/template-django-console-shell.png)
+    ![開啟 Django 殼層命令的結果](media/template-django-console-shell.png)
 
 - **Django 同步 DB**：在**互動式** 視窗中執行 `manage.py syncdb`：
 
-    ![主控台](media/template-django-console-sync-db.png)
+    ![Django 同步 DB 命令的結果](media/template-django-console-sync-db.png)
 
 - **收集靜態**：執行 `manage.py collectstatic --noinput` 以將所有靜態檔案複製到由 *settings.py* 中的 `STATIC_ROOT` 所指定的路徑。
 
-    ![主控台](media/template-django-console-collect-static.png)
+    ![收集靜態命令的結果](media/template-django-console-collect-static.png)
 
 - **驗證**：執行 `manage.py validate`，這會報告由 *settings.py* 中的 `INSTALLED_APPS` 所指定之已安裝模型中的所有驗證錯誤：
 
-    ![主控台](media/template-django-console-validate.png)
+    ![驗證命令的結果](media/template-django-console-validate.png)
 
 ## <a name="see-also"></a>另請參閱
 

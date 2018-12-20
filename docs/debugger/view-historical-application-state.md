@@ -1,7 +1,7 @@
 ---
 title: 使用 IntelliTrace 檢視先前的應用程式狀態
-ms.description: Learn how to take snapshots, and view snapshots with IntelliTrace step-back
-ms.custom: mvc
+description: 了解如何建立快照集，以及使用 IntelliTrace 回溯檢視快照集
+ms.custom: seodec18
 ms.date: 09/19/2018
 ms.technology: vs-ide-debug
 ms.topic: tutorial
@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d43e1a04570d68ce69f283cde264280fc24865a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ba1ab23fead36cfabc8b2754535e8b10de981987
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49846859"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53060141"
 ---
 # <a name="inspect-previous-app-states-using-intellitrace-step-back-in-visual-studio"></a>使用 Visual Studio 中的 IntelliTrace 回溯，檢查先前的應用程式狀態
 
@@ -96,9 +96,9 @@ IntelliTrace 回溯可用於 Visual Studio Enterprise 2017 15.5 版和更新版�
 
 事件唯一模式下的 IntelliTrace，可讓您啟用偵錯工具步驟和中斷點上的歷程偵錯。 但是，如果視窗已開啟，則 IntelliTrace 只會擷取 [本機] 和 [自動] 視窗中的資料，並且只會擷取已展開且在檢視中的資料。 在事件唯一模式中，您通常沒有變數和複雜物件的完整檢視。 此外，不支援 [監看] 視窗中的運算式評估和檢視資料。 
 
-在事件與快照模式中，IntelliTrace 會擷取整個應用程式程序的快照，包括複雜物件。 在一行程式碼中，您可以看到與在中斷點停止時相同的資訊 (無論您先前是否展開過資訊)。 檢視快照時，也支援運算式評估。  
+在事件與快照模式中，IntelliTrace 會擷取整個應用程式程序的快照，包括複雜物件。 在一行程式碼中，您可以看到與在中斷點停止時相同的資訊 (無論您先前是否展開過資訊)。 檢視快照時，也支援運算式評估。  
 
-#### <a name="what-is-the-performance-impact-of-this-feature"></a>這項功能對效能有何影響？ 
+#### <a name="what-is-the-performance-impact-of-this-feature"></a>這項功能對效能有何影響？ 
 
 對整體逐步執行效能的影響，取決於您的應用程式。 建立快照的額外負荷大約是 30 毫秒。 建立快照時，應用程式的程序將會分支，並且分支的複本將會暫止。 當您檢視快照時，Visual Studio 附加至該程序的分支複本。 針對每個快照，Visual Studio 僅會複製頁面資料表，並將頁面設定為寫入時複製。 如果堆積上的物件在偵錯工具步驟與相關聯快照之間發生變更，則會複製對應的頁面資料表，進而最大限度降低記憶體成本。 如果 Visual Studio 偵測到沒有足夠的記憶體來擷取快照，則不會進行擷取。
  

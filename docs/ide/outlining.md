@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Studio 中摺疊和展開程式碼的區域
+title: 摺疊和展開程式碼的區域
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c0b1312ef84e88050423cce74953f452e33dd9bf
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: b39e9613e36b45f812738ab4eab6b945727b196b
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349175"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53064701"
 ---
 # <a name="outlining"></a>大綱
 
@@ -53,7 +53,7 @@ ms.locfileid: "51349175"
 |摺疊區塊︰\<邏輯界限>|(Visual C++) 摺疊包含插入點之函式中的區域。 例如，如果插入點落在迴圈內，則會隱藏迴圈。|
 |\<邏輯結構> 中的全部摺疊|(Visual C++) 摺疊函式內的所有結構。|
 
-您也可以使用 Visual Studio SDK 來定義您想要展開或摺疊的文字區域。 請參閱[逐步解說︰大綱](../extensibility/walkthrough-outlining.md)。
+您也可以使用 Visual Studio SDK 來定義您想要展開或摺疊的文字區域。 請參閱[逐步解說：大綱](../extensibility/walkthrough-outlining.md)。
 
 ## <a name="see-also"></a>另請參閱
 

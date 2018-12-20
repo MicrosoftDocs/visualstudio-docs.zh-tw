@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Studio 中擷取介面重構
+title: 擷取介面重構
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -14,12 +14,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: b126d3753c0b4d92a3ef7bc2579c6208e61e308b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 62d79251d0ec93c92ec13450e9110e08143d7966
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49849877"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53061652"
 ---
 # <a name="extract-an-interface-refactoring"></a>擷取介面重構
 
@@ -51,24 +51,24 @@ ms.locfileid: "49849877"
 
    - **鍵盤**
       - 按 **CTRL+R**，再按 **CTRL+I**。 (請注意，根據您所選取的設定檔，鍵盤快速鍵可能會不同)。
-      - 在字行任何地方按 **Ctrl**+**.**， 以觸發 [快速動作與重構]**** 功能表，然後從 [預覽] 快顯視窗中選取 [擷取介面]****。
+      - 在字行任何地方按 **Ctrl**+**.**， 以觸發 [快速動作與重構] 功能表，然後從 [預覽] 快顯視窗中選取 [擷取介面]。
    - **滑鼠**
-      - 選取 [編輯] > [重構] > [擷取介面]****。
-      - 在類別名稱上按一下滑鼠右鍵，選取 [快速動作與重構]**** 功能表，然後從 [預覽] 快顯視窗中選取 [擷取介面]****。
+      - 選取 [編輯] > [重構] > [擷取介面]。
+      - 在類別名稱上按一下滑鼠右鍵，選取 [快速動作與重構] 功能表，然後從 [預覽] 快顯視窗中選取 [擷取介面]。
 
-3. 在 [擷取介面]**** 快顯對話方塊中，輸入系統要求的資訊：
+3. 在 [擷取介面] 快顯對話方塊中，輸入系統要求的資訊：
 
    ![擷取介面](media/extractinterface-dialog-cs.png)
 
 
-   | 欄位 | 描述 |
+   | 欄位 | 說明 |
    | - | - |
    | **新介面名稱** | 要建立的介面名稱。 這會預設為 I*ClassName*，其中 *ClassName* 是您在上面選取的類別名稱。 |
    | **新檔名** | 所將產生之將包含介面的檔案名稱。 與介面名稱一樣，這會預設為 I*ClassName*，其中 *ClassName* 是您在上面選取的類別名稱。 |
    | **選取公用成員以形成介面** | 要擷取到介面中的項目。 您可以視需要選取所需數量的項目。 |
 
 
-4. 選擇 [確定] ****。
+4. 選擇 [確定] 。
 
    系統會在指定名稱的檔案中建立介面。 此外，您選取的類別會實作該介面。
 

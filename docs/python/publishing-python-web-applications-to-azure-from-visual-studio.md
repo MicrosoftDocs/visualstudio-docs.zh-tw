@@ -1,23 +1,24 @@
 ---
-title: 將 Python 應用程式發佈至 Azure App Service
-description: 將 Python 應用程式發佈至 Azure App Service 的選項。
-ms.date: 10/10/2018
+title: 將 Python 應用程式發佈到 Azure App Service
+description: 適用於將 Python 應用程式發佈到 Azure App Service 的選項，包括 Git 部署及 Linux 的容器，以及部署到 IIS。
+ms.date: 12/06/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 050b98f663a1db6bde6d32342b094fe454046283
-ms.sourcegitcommit: 551f13774e8bb0eb47cbd973745628a956e866aa
+ms.openlocfilehash: 1c8c48eaa777da973f0a4b21d826bbab384b4536
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2018
-ms.locfileid: "49459656"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53066687"
 ---
 # <a name="publish-to-azure-app-service"></a>發佈至 Azure App Service
 
@@ -34,7 +35,7 @@ Git 部署可將 Linux 上的 App Service 連線至特定的 Git 存放庫分支
 
 如需詳細資訊，請參閱 Azure 文件中的下列文章：
 
-- [快速入門：在 App Service 中建立 Python Web 應用程式](/azure/app-service/containers/quickstart-python?toc=%2Fpython%2Fazure%2FTOC.json)提供簡短的逐步解說，說明如何使用本機 Git 存放庫中的簡單 Flask 應用程式和部署，進行 Git 部署程序。
+- [快速入門：在 App Service 中建立 Python Web 應用程式](/azure/app-service/containers/quickstart-python?toc=%2Fpython%2Fazure%2FTOC.json)提供簡短的逐步解說，說明如何使用本機 Git 存放庫中的簡單 Flask 應用程式和部署，進行 Git 部署的過程。
 - [如何設定 Python](/azure/app-service/containers/how-to-configure-python)說明 Linux 容器上的 App Service 特性，以及如何自訂您應用程式的 Gunicorn 啟動命令。
 
 ## <a name="publish-to-app-service-on-linux-using-containers"></a>使用容器發佈至 Linux 上的 App Service

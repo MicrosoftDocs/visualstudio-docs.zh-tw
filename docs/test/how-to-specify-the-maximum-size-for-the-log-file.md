@@ -1,5 +1,5 @@
 ---
-title: Visual Studio 中負載測試的記錄檔大小
+title: 負載測試的記錄檔大小
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,14 +10,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 22cc77426abca46a95fd12c8954fd0965a194f5e
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: eb77c9c037a46ad1195482abfddd102f50bcd1ae
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52894426"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53067271"
 ---
-# <a name="how-to-specify-the-maximum-size-for-the-log-file-for-load-tests"></a>如何：指定負載測試的記錄檔大小上限
+# <a name="how-to-specify-the-maximum-size-for-the-log-file-for-load-tests"></a>HOW TO：指定負載測試的記錄檔大小上限
 
 根據預設，用於負載測試之記錄檔的大小上限設定為 20 MB。 您可以透過編輯與控制器服務建立關聯的組態檔，來變更這個值。
 

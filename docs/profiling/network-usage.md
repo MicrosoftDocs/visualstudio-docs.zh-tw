@@ -1,6 +1,6 @@
 ---
-title: 在 Visual Studio 中分析 UWP App 的網路使用量 | Microsoft Docs
-ms.custom: H1Hack27Feb2017
+title: 分析 UWP App 的網路使用量
+ms.custom: seodec18
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 03b5a669c0977aa35ef6943af3fa6afe6dda2aaa
-ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
+ms.openlocfilehash: 06546e3d36e0568c27e4160342ad271a026b7b9e
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "51220784"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062240"
 ---
 # <a name="analyze-network-usage-in-uwp-apps"></a>分析 UWP App 的網路使用量
 Visual Studio 的 [網路] 診斷工具會收集使用 [Windows.Web.Http 應用程式開發介面](/uwp/api/windows.web.http)執行之網路作業的相關資料。 分析這份資料可協助您解決存取和驗證、不正確的快取使用，以及顯示和下載效能不佳等問題。  
@@ -75,6 +75,6 @@ Visual Studio 的 [網路] 診斷工具會收集使用 [Windows.Web.Http 應用�
 ## <a name="see-also"></a>另請參閱  
  [使用或不使用偵錯工具來執行程式碼剖析工具](../profiling/running-profiling-tools-with-or-without-the-debugger.md)  
  [Visual Studio 部落格：Visual Studio 網路檢查簡介](http://go.microsoft.com/fwlink/?LinkId=535022)   
- [Channel 9 影片︰VS 診斷工具 - 新的網路分析工具](https://channel9.msdn.com/Series/ConnectOn-Demand/206)  
+ [Channel 9 影片：VS 診斷工具 - 新的網路分析工具](https://channel9.msdn.com/Series/ConnectOn-Demand/206)  
  [Visual Studio 中的分析](../profiling/index.md)  
  [初步認識分析工具](../profiling/profiling-feature-tour.md)

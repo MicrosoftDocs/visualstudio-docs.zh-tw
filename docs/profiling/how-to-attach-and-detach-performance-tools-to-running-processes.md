@@ -1,6 +1,6 @@
 ---
-title: 如何：為執行中的處理序附加和中斷連結程式碼剖析工具 | Microsoft Docs
-ms.custom: ''
+title: 將效能工具附加至執行中的處理序
+ms.custom: seodec18
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -18,14 +18,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fbacad455f6663eae13aea42d0424091a0e3ec6a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: cb245b6930d1a633d5d5befa3266c3c7540c0915
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49920926"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53048524"
 ---
-# <a name="how-to-attach-and-detach-performance-tools-to-running-processes"></a>如何：為執行中的處理序附加和中斷連結效能工具
+# <a name="how-to-attach-and-detach-performance-tools-to-running-processes"></a>HOW TO：為執行中的處理序附加和中斷連結效能工具
 程式碼剖析工具可以用來附加至或中斷連結執行中的處理序，以協助取樣與蒐集效能資料。 當您想要避免蒐集應用程式載入時間的資料，或是在處理序進入特定狀態後監視其效能時，就可以使用這種方法來執行處理序的程式碼剖析。  
   
 > [!NOTE]

@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Studio 中移除執行不到的程式碼重構
+title: 移除執行不到的程式碼重構
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -11,12 +11,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 65dc8a9318c679743030a86c94ad39b3681dc0ad
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 34bd11fe681199cecd0acd2e79cbc2f5d11fc494
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52896337"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53059307"
 ---
 # <a name="remove-unreachable-code-refactoring"></a>移除執行不到的程式碼重構
 
@@ -26,9 +26,9 @@ ms.locfileid: "52896337"
 
 **功能：** 移除永遠不會執行的程式碼。
 
-**時機：** 您的程式沒有某個程式碼片段的路徑，使得該程式碼片段變成不必要的程式碼片段。
+**時機：** 您的程式沒有某個程式碼片段路徑，這使得該程式碼片段變成不必要的程式碼片段。
 
-**原因：** 藉由移除多餘且永遠不會執行的程式碼來提升可讀性和便於維護。
+**原因：** 藉由移除多餘且永遠不會執行的程式碼來提升可讀性和可維護性。
 
 ## <a name="how-to"></a>操作說明
 

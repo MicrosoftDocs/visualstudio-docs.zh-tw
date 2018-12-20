@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Studio 中為負載測試建立自訂程式碼和外掛程式
+title: 為負載測試建立自訂程式碼和外掛程式
 ms.date: 10/19/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: ed7b588d597626348b4c148c10dad165649b0468
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: e138445989477fe4ead6fde0dc000430626c2638
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895752"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062741"
 ---
 # <a name="create-custom-code-and-plug-ins-for-load-tests"></a>為負載測試建立自訂程式碼和外掛程式
 
@@ -30,10 +30,10 @@ ms.locfileid: "52895752"
 
 |工作|相關主題|
 |-|-----------------------|
-|**針對負載測試建立自訂外掛程式：** 您可以使用負載測試 API 來建立自訂外掛程式，以便將其他測試功能新增至負載測試。|-   [如何：使用負載測試 API](../test/how-to-use-the-load-test-api.md)<br />-   [如何：建立負載測試外掛程式](../test/how-to-create-a-load-test-plug-in.md)|
+|**針對負載測試建立自訂外掛程式**：您可以使用負載測試 API 來建立自訂外掛程式，以便將其他測試功能新增至負載測試。|-   [如何：使用負載測試 API](../test/how-to-use-the-load-test-api.md)<br />-   [如何：建立負載測試外掛程式](../test/how-to-create-a-load-test-plug-in.md)|
 |**針對 Web 效能測試建立自訂外掛程式：** 您可以使用 Web 效能測試 API 來建立自訂外掛程式，以便將其他測試功能新增至 Web 效能測試 (包括要求層級)。 您也可以建立 Web 服務測試。<br /><br /> 此外，您可以建立 Web 錄製器外掛程式，以便在 Web 效能測試記錄之後但在 [Web 效能測試結果檢視器] 中出現之前，進行修改。|-   [如何：使用 Web 效能測試 API](../test/how-to-use-the-web-performance-test-api.md)<br />-   [如何：建立 Web 效能測試外掛程式](../test/how-to-create-a-web-performance-test-plug-in.md)<br />-   [如何：建立要求層級外掛程式](../test/how-to-create-a-request-level-plug-in.md)<br />-   [如何：建立 Web 服務測試](../test/how-to-create-a-web-service-test.md)<br />-   [如何：建立錄製器外掛程式](../test/how-to-create-a-recorder-plug-in.md)|
 |**將 UI 功能新增至 Web 效能測試結果檢視器：** 您可以使用 Visual Studio 增益集，將其他 UI 功能新增至 Web 效能測試結果檢視器。|-   [如何：建立 Web 效能測試結果檢視器的 Visual Studio 增益集](../test/how-to-create-an-add-in-for-the-web-performance-test-results-viewer.md)|
-|**建立自訂 HTTP 內容編輯器：** 您可以建立自訂編輯器，以便編輯來自 Web 服務的二進位或字串 Http XML 回應。|-   [如何：建立 Web 效能測試編輯器的自訂 HTTP 內容編輯器](../test/how-to-create-a-custom-http-body-editor-for-the-web-performance-test-editor.md)|
+|**建立自訂 HTTP 內容編輯器：** 您可以建立自訂編輯器，以編輯來自 Web 服務的二進位或字串 HTTP XML 回應。|-   [如何：建立 Web 效能測試編輯器的自訂 HTTP 內容編輯器](../test/how-to-create-a-custom-http-body-editor-for-the-web-performance-test-editor.md)|
 
 ## <a name="reference"></a>參考資料
 

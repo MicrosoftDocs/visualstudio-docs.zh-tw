@@ -1,5 +1,5 @@
 ---
-title: Visual Studio 全螢幕和虛擬空間模式
+title: 全螢幕和虛擬空間模式
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -26,14 +26,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 94bc99bf70340ef76639d0ae0f05e1f7737173a2
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: e5250176bee4993f9d01bffcaed71579c17e55c9
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31943344"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53056304"
 ---
-# <a name="how-to-manage-editor-modes"></a>如何：管理編輯器模式
+# <a name="how-to-manage-editor-modes"></a>HOW TO：管理編輯器模式
 
 您可以使用各種不同的顯示模式來顯示 Visual Studio 程式碼編輯器。
 

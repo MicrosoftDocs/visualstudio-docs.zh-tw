@@ -1,7 +1,8 @@
 ---
-title: 移除 Visual Studio 2017 | Microsoft Docs
+title: 移除 Visual Studio
+titleSuffix: ''
 description: 了解如何逐步從您的電腦完全移除 Visual Studio。
-ms.custom: ''
+ms.custom: seodec18
 ms.date: 09/12/2017
 ms.technology: vs-acquisition
 ms.prod: visual-studio-dev15
@@ -21,14 +22,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e72482dce3df2ceaa5d5131838ce08b13a05cd90
-ms.sourcegitcommit: c5e72875206b8c5737c29d5b1ec7b86eec747303
+ms.openlocfilehash: fb3f86c59f205137dc3b72c8f0beff69f4d95a99
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "49382762"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159655"
 ---
-# <a name="remove-visual-studio"></a>移除 Visual Studio
+# <a name="remove-visual-studio-2017"></a>移除 Visual Studio 2017
 
 如果您遇到重大錯誤，且無法修復或解除安裝 Visual Studio，您可以執行 `InstallCleanup.exe` 工具來針對已安裝的所有 Visual Studio 2017 (與更新版本) 執行個體移除安裝檔案與產品資訊。 執行此工具只可作為修復或解除安裝失敗時的最後手段，而且可能將其他 Visual Studio 安裝或其他需要修復之產品中的功能解除安裝。
 
@@ -41,9 +42,9 @@ ms.locfileid: "49382762"
 
 1. 關閉 Visual Studio 安裝程式。
 2. 開啟系統管理員命令提示字元。 若要開啟系統管理員命令提示字元，請遵循下列步驟：
-   * 按一下 [開始]**** 功能表
+   * 按一下 [開始] 功能表
    * 輸入 **cmd**。
-   * 以滑鼠右鍵按一下 [命令提示字元]****，然後按一下 [以系統管理員身分執行]****。
+   * 以滑鼠右鍵按一下 [命令提示字元]，然後按一下 [以系統管理員身分執行]。
 3. 輸入 `InstallCleanup.exe` 公用程式的完整路徑，並傳遞您想要的任何命令列參數。 根據預設，公用程式的路徑如下所示：
    ```
    C:\Program Files (x86)\Microsoft Visual Studio\Installer\resources\app\layout\InstallCleanup.exe

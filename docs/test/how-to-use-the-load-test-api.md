@@ -1,5 +1,5 @@
 ---
-title: Visual Studio 中的負載測試 API
+title: 負載測試 API
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,14 +12,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 3b35b74f7adca4ff794f4d0c78b5585551864c8f
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: ea28bba2d59515ce8080d577248dd7bddee0c570
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52894393"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53049901"
 ---
-# <a name="how-to-use-the-load-test-api"></a>如何：使用負載測試 API
+# <a name="how-to-use-the-load-test-api"></a>HOW TO：使用負載測試 API
 
 Visual Studio 支援能夠控制或增強負載測試的負載測試外掛程式。 負載測試外掛程式是使用者定義的類別，能夠實作 <xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin> 命名空間中的 <xref:Microsoft.VisualStudio.TestTools.LoadTesting> 介面， 讓您可以使用自訂的負載測試控制項，例如，在計數器或錯誤臨界值到達所設定的值時，中止負載測試。 請使用 <xref:Microsoft.VisualStudio.TestTools.LoadTesting.LoadTest> 類別上的屬性，以取得或設定使用者定義程式碼中的負載測試參數， 也可以使用 <xref:Microsoft.VisualStudio.TestTools.LoadTesting.LoadTest> 類別上的事件，在負載測試執行時，附加告知的委派 (Delegate)。
 
@@ -28,7 +28,7 @@ Visual Studio 支援能夠控制或增強負載測試的負載測試外掛程式
 > [!TIP]
 > 使用物件瀏覽器檢查 <xref:Microsoft.VisualStudio.TestTools.LoadTesting> 命名空間。 Visual C# 和 Visual Basic 編輯器都提供 IntelliSense 支援，以便使用命名空間中的類別來撰寫程式碼。
 
-您也可以建立 Web 效能測試的外掛程式。 如需詳細資訊，請參閱[如何：建立 Web 效能測試外掛程式](../test/how-to-create-a-web-performance-test-plug-in.md)和[如何：建立要求層級外掛程式](../test/how-to-create-a-request-level-plug-in.md)。
+您也可以建立 Web 效能測試的外掛程式。 如需詳細資訊，請參閱[＜How to：建立 Web 效能測試外掛程式](../test/how-to-create-a-web-performance-test-plug-in.md)和[如何：建立要求層級外掛程式](../test/how-to-create-a-request-level-plug-in.md)。
 
 ## <a name="to-use-the-loadtesting-namespace"></a>若要使用 LoadTesting 命名空間
 
@@ -59,7 +59,7 @@ Visual Studio 支援能夠控制或增強負載測試的負載測試外掛程式
 
 9. 執行負載測試。
 
-     如需 <xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin> 的實作，請參閱[如何：建立負載測試外掛程式](../test/how-to-create-a-load-test-plug-in.md)。
+     若要實作 <xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin>，請參閱[如何：建立負載測試外掛程式](../test/how-to-create-a-load-test-plug-in.md)。
 
 ## <a name="see-also"></a>另請參閱
 

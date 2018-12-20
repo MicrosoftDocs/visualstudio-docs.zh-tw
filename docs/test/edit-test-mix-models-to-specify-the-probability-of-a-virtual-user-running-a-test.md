@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Studio 中編輯測試混合模型
+title: 編輯測試混合模型
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: acb786a4182a79a4133e2d94000ab5f7693bade3
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 6016aaa3273347509d82af5ef4fba70fa3ecc253
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52894660"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53057109"
 ---
 # <a name="edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test"></a>編輯測試混合模型以指定虛擬使用者執行測試的可能性
 
@@ -30,11 +30,11 @@ ms.locfileid: "52894660"
 
 -   **按總測試數：** 判斷當虛擬使用者啟動測試反覆項目時所執行的 Web 效能或單元測試。 在負載測試結束時，特定測試的執行次數會與指定的測試分佈相符。 當您的測試混合是以 IIS 記錄或實際執行資料中的異動百分比為基礎時，請使用此測試混合模型。
 
--   **按虛擬使用者人數：** 判斷將執行特定 Web 效能或單元測試之虛擬使用者的百分比。 在負載測試的任一時間點，執行特定測試的使用者人數會與指定的測試分佈相符。 當您的測試混合是以執行特定測試的使用者百分比為基礎時，請使用此測試混合模型。
+-   **按虛擬使用者人數：** 判斷將執行特定 Web 效能或單元測試的虛擬使用者百分比。 在負載測試的任一時間點，執行特定測試的使用者人數會與指定的測試分佈相符。 當您的測試混合是以執行特定測試的使用者百分比為基礎時，請使用此測試混合模型。
 
 -   **按使用者步調：** 在負載測試進行期間，每個 Web 效能測試或單元測試會在每小時內針對每位使用者執行指定的次數。 當您想要讓虛擬使用者在整個負載測試中以特定步調執行測試時，請使用此測試混合模型。
 
--   **依據循序順序：** 每位虛擬使用者都會按照情節中定義測試的順序來執行 Web 效能或單元測試。 虛擬使用者會繼續按照此順序進行測試循環，直到負載測試完成為止。
+-   **循序順序：** 每位虛擬使用者都會按照情節中定義測試的順序來執行 Web 效能或單元測試。 虛擬使用者會繼續按照此順序進行測試循環，直到負載測試完成為止。
 
 ## <a name="tasks"></a>工作
 
@@ -42,7 +42,7 @@ ms.locfileid: "52894660"
 |-|-----------------------|
 |**指定負載測試的測試混合：** 建立負載測試時，您可以在 [新增負載測試精靈] 中指定負載測試的設定。 在 [新增負載測試精靈] 中，您可以選擇要加入至初始情節的現有 Web 和單元測試。 當您將測試加入至情節之後，就可以指定情節的測試混合。<br /><br /> 使用負載模型選項，可以讓您對進行負載測試中的網站或應用程式，更為準確地預測其預期真實使用情況。 這是相當重要的，因為不是奠基於準確負載模型的負載測試，可能會產生誤導的結果。|-   [模擬網站或應用程式的預期實際使用情況](../test/emulate-real-world-usage-of-a-web-site-in-a-load-test-using-test-mix-models.md)|
 |**編輯測試混合模型：** 您可以使用 [負載測試編輯器]，將負載測試情節變更為使用其中一種測試混合模型。||
-|**為按使用者步調的測試混合模型設定步調延遲：** 如果您的負載測試情節已設定為使用 [按使用者步調的測試混合模型]，您可以指定設定分佈步調延遲的方式。|-   [如何：在使用使用者步調測試混合模型時，將分佈套用到步調延遲](../test/how-to-apply-distribution-to-pacing-delay-when-using-a-user-pace-test-mix-model.md)|
+|**為按使用者步調的測試混合模型設定步調延遲：** 如果您的負載測試情節已設定為使用 [按使用者步調的測試混合模型]，則您可以指定設定分佈步調延遲的方式。|-   [如何：在以使用者步調測試混合模型時，將分佈套用到步調延遲](../test/how-to-apply-distribution-to-pacing-delay-when-using-a-user-pace-test-mix-model.md)|
 
 ## <a name="change-the-test-mix-model-in-a-scenario"></a>變更情節中的測試混合模型
 

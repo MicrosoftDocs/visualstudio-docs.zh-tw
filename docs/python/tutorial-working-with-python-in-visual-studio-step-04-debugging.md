@@ -1,5 +1,6 @@
 ---
-title: 使用 Python 教學課程的步驟 4：偵錯
+title: Visual Studio 中的 Python 教學課程步驟 4，偵錯
+titleSuffix: ''
 description: 在 Visual Studio 中 Python 功能核心逐步解說的步驟 4，涵蓋如何在偵錯工具中執行 Python 程式碼。
 ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
@@ -8,19 +9,20 @@ ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 312db1642fac00cb122aee5cf8c4309675520b5e
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 5facce6eff378586ece01b5774089e76058615f9
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50220130"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53060416"
 ---
 # <a name="step-4-run-code-in-the-debugger"></a>步驟 4：在偵錯工具中執行程式碼
 
-**上一個步驟：[使用互動式 REPL 視窗](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md)**
+**上一步：[使用互動式 REPL 視窗](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md)**
 
 除了管理專案、提供豐富的編輯體驗以及**互動式**視窗以外，Visual Studio 還針對 Python 程式碼提供完整功能的偵錯。 在偵錯工具中，您可以逐步執行程式碼 (包含迴圈的每個反覆項目)。 只要符合特定條件，您也可以暫停程式。 在偵錯工具中暫停程式的任何時間點，您都可以檢查整個程式狀態，以及變更變數的值。 這類動作是追蹤程式 Bug 的必要項目，也提供仔細遵循確切程式流程的極實用輔助。
 

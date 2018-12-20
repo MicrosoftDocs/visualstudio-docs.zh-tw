@@ -1,6 +1,6 @@
 ---
-title: Visual Studio 中 CPU 取樣的初級開發人員指南 | Microsoft Docs
-ms.custom: H1Hack27Feb2017
+title: CPU 取樣的初級開發人員指南
+ms.custom: seodec18
 ms.date: 02/27/2017
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 42131bc1a596cf14a219f674227dbbadeb26c370
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 29ef34a15591a87b7eeb70e204f58329c8c55838
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35668389"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53066388"
 ---
 # <a name="beginners-guide-to-cpu-sampling"></a>CPU 取樣的初級開發人員指南
 您可以使用 Visual Studio 程式碼剖析工具來分析應用程式中的效能問題。 此程序示範如何使用 [取樣] 資料。
@@ -33,7 +33,7 @@ ms.locfileid: "35668389"
   
  依指定的間隔，[取樣] 方法會收集在應用程式中執行函式的詳細資訊。 在您完成執行程式碼剖析後，程式碼剖析資料的 [摘要] 檢閱會顯示最常使用的函式呼叫樹狀圖，稱為 [最忙碌路徑]，其中在應用程式中的大部分工作都已執行。 此檢視也列出正在執行最多個別工作的函式，並提供讓您用來專注於取樣工作階段特定區段的時間軸圖形。  
   
- 如果 [取樣] 沒有提供您所需的資料，則其他程式碼剖析工具集合方法可提供不同種類的資訊，這可能會很有幫助。 如需這類其他方法的詳細資訊，請參閱[如何：選擇收集方法](../profiling/how-to-choose-collection-methods.md)。  
+ 如果 [取樣] 沒有提供您所需的資料，則其他程式碼剖析工具集合方法可提供不同種類的資訊，這可能會很有幫助。 如需這些其他方法的詳細資訊，請參閱[如何：選擇收集方法](../profiling/how-to-choose-collection-methods.md)。  
   
 > [!TIP]
 >  如果您剖析呼叫 Windows 函式的程式碼，您應該要確定您有最新的 .*pdb* 檔案。 如果沒有這些檔案，您的報告檢視會列出隱晦且難以了解的 Windows 函式名稱。 如需如何確認您擁有所需檔案的詳細資訊，請參閱[如何：參考 Windows 符號資訊](../profiling/how-to-reference-windows-symbol-information.md)。  
@@ -69,7 +69,7 @@ ms.locfileid: "35668389"
   
  建議您先檢查 [最忙碌路徑]，接著檢查執行最多工作之函式的清單，最後使用 [摘要時間表] 來專注於其他函式以開始分析資料。 您也可以在 [錯誤清單] 視窗中檢視分析建議和警告。  
   
- 請注意此取樣方法可能無法提供您所需的資訊。 例如，只有在應用程式執行使用者模式程式碼時才會收集樣本。 因此，取樣不會擷取某些功能，例如輸入和輸出作業。 [程式碼剖析工具] 提供讓您專注於重要資料的數個收集方法。 如需這類其他方法的詳細資訊，請參閱[如何：選擇收集方法](../profiling/how-to-choose-collection-methods.md)。  
+ 請注意此取樣方法可能無法提供您所需的資訊。 例如，只有在應用程式執行使用者模式程式碼時才會收集樣本。 因此，取樣不會擷取某些功能，例如輸入和輸出作業。 [程式碼剖析工具] 提供讓您專注於重要資料的數個收集方法。 如需其他方法的詳細資訊，請參閱[如何：選擇收集方法](../profiling/how-to-choose-collection-methods.md)。  
   
  圖中的每個編號區域與程序中的步驟相關。  
   

@@ -1,6 +1,7 @@
 ---
-title: Visual Studio 整合 (MSBuild) | Microsoft Docs
-ms.custom: ''
+title: Visual Studio 整合 (MSBuild)
+titleSuffix: ''
+ms.custom: seodec18
 ms.date: 11/04/2016
 ms.technology: msbuild
 ms.topic: conceptual
@@ -20,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 874642371f173b56a174dabdd17ee1cf50cc79fc
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7449e8585cd9f1db8a4a43cddf8092f1a92c9758
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49875472"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53052419"
 ---
 # <a name="visual-studio-integration-msbuild"></a>Visual Studio 整合 (MSBuild)
 Visual Studio 會裝載 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] ，用於載入及建置 Managed 專案。 由於 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 是負責處理專案，因此幾乎任何 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 格式的專案都可以成功地用在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]中，即使專案是用不同的工具撰寫，而且含有自訂的建置處理序，也不會有問題。  
@@ -47,7 +48,7 @@ Visual Studio 會裝載 [!INCLUDE[vstecmsbuild](../extensibility/internals/inclu
   
 ```xml  
 Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' "  
-Condition=" '$(Configuration)' == 'Release' "   
+Condition=" '$(Configuration)' == 'Release' "   
 Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' "  
 ```  
   
@@ -181,7 +182,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
  快速更新檢查並不適用 Visual Studio 中的定期組建，而且專案的建置方式就如同您在命令提示字元中叫用組建一般。  
   
 ## <a name="see-also"></a>另請參閱  
- [如何：擴充 Visual Studio 建置處理序](../msbuild/how-to-extend-the-visual-studio-build-process.md)   
+ [如何：延伸 Visual Studio 建置流程](../msbuild/how-to-extend-the-visual-studio-build-process.md)   
  [從 IDE 中啟動組建](../msbuild/starting-a-build-from-within-the-ide.md)   
  [登錄 .NET Framework 的擴充功能](../msbuild/registering-extensions-of-the-dotnet-framework.md)   
  [MSBuild 概念](../msbuild/msbuild-concepts.md)   

@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Studio 中不使用專案或方案來開發程式碼
+title: 不使用專案或方案來開發程式碼
 ms.date: 02/21/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ba1ad9158431a157bdba588b88f366eac45889a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5885fc8c62b8da4213446601f37700cc077eda8c
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49812071"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062360"
 ---
 # <a name="develop-code-in-visual-studio-without-projects-or-solutions"></a>在 Visual Studio 中不使用專案或方案來開發程式碼
 

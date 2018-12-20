@@ -1,5 +1,5 @@
 ---
-title: 使用虛設常式隔離應用程式的組件，以便在 Visual Studio 中進行單元測試
+title: 使用虛設常式隔離應用程式的組件，以便進行單元測試
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -12,12 +12,12 @@ author: gewarren
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 9ee4fbcec25bdfa454f4c009f4d676a5291b7289
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 2bf3441deef786a210b970fe9daaa7b30388d46e
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382564"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53065528"
 ---
 # <a name="use-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing"></a>使用虛設常式隔離應用程式的各個組件，方便進行單元測試
 
@@ -396,7 +396,7 @@ public void TestGetValue()
 
 ### <a name="stubs-of-virtual-classes"></a>虛擬類別的 Stub
 
-在上述範例中，虛設常式是從介面產生。 您也可以從具有虛擬或抽象成員的類別產生虛設常式。 例如: 
+在上述範例中，虛設常式是從介面產生。 您也可以從具有虛擬或抽象成員的類別產生虛設常式。 例如：
 
 ```csharp
 // Base class in application under test

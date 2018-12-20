@@ -1,5 +1,5 @@
 ---
-title: 如何：建置並執行 LinqToXmlDataBinding 範例
+title: HOW TO：建置並執行 LinqToXmlDataBinding 範例
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-designers
@@ -9,18 +9,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1164312d74259ad4f3a56750a487fb2578595cf0
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: 67d8bc9ece20867e96f0ae0ee6d6ceb9ad2e3952
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37924157"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159772"
 ---
-# <a name="how-to-build-and-run-the-linqtoxmldatabinding-example"></a>如何：建置並執行 LinqToXmlDataBinding 範例
+# <a name="how-to-build-and-run-the-linqtoxmldatabinding-example"></a>HOW TO：建置並執行 LinqToXmlDataBinding 範例
 
 這個主題顯示如何建立與建置 LinqToXmlDataBinding Visual Studio 專案，以及如何執行所產生的 LinqToXmlDataBinding Windows Presentation Foundation (WPF) 範例程式。
 
-如需 Visual Studio 的詳細資訊，請參閱 [Visual Studio IDE 概觀](../ide/visual-studio-ide.md)。
+如需 Visual Studio 的詳細資訊，請參閱 [Visual Studio IDE 概觀](../get-started/visual-studio-ide.md)。
 
 ## <a name="create-and-populate-the-project"></a>建立並填入專案
 
@@ -82,4 +82,4 @@ LinqToXmlDataBinding 程式可讓使用者檢視與管理儲存為內嵌 XML 項
 
 - [使用 LINQ to XML 的 WPF 資料繫結範例](../designers/wpf-data-binding-using-linq-to-xml-example.md)
 - [逐步解說：LinqToXmlDataBinding 範例](../designers/walkthrough-linqtoxmldatabinding-example.md)
-- [Visual Studio IDE 概觀](../ide/visual-studio-ide.md)
+- [Visual Studio IDE 概觀](../get-started/visual-studio-ide.md)

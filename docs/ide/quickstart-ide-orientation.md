@@ -1,5 +1,6 @@
 ---
 title: Visual Studio IDE 導覽
+titleSuffix: ''
 ms.date: 07/12/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -9,14 +10,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dbf969e6e9a37179621cad52243418a2d0536f1a
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 7864a85e676e76dda593580d58036c4429fa43c7
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "42626697"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159564"
 ---
-# <a name="quickstart-first-look-at-the-visual-studio-ide"></a>快速入門：Visual Studio IDE 初探
+# <a name="quickstart-first-look-at-the-visual-studio-ide"></a>快速入門：Visual Studio 整合式開發環境 (IDE) 初探
 
 在這個 5-10 分鐘的 Visual Studio 整合式開發環境 (IDE) 簡介中，我們將簡介部分視窗、功能表和其他 UI 功能。
 
@@ -105,13 +106,13 @@ Visual Studio 頂端的功能表列可將命令依類別分組。 例如，[專�
 我們已經介紹 Visual Studio 的幾個功能，藉以熟悉使用者介面。 若要進一步探索：
 
 > [!div class="nextstepaction"]
-> [了解程式碼編輯器](../ide/quickstart-editor.md)
+> [了解程式碼編輯器](../get-started/tutorial-editor.md)
 
 > [!div class="nextstepaction"]
-> [了解專案與解決方案](../ide/quickstart-projects-solutions.md)
+> [了解專案與解決方案](../get-started/tutorial-projects-solutions.md)
 
 ## <a name="see-also"></a>另請參閱
 
-- [Visual Studio IDE 預覽](../ide/visual-studio-ide.md)
+- [Visual Studio IDE 預覽](../get-started/visual-studio-ide.md)
 - [Visual Studio 2017 的其他功能](../ide/advanced-feature-overview.md)
 - [變更佈景主題與字型色彩](../ide/quickstart-personalize-the-ide.md)

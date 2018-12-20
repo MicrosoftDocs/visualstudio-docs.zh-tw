@@ -1,5 +1,5 @@
 ---
-title: 概觀：提出 Visual Studio 功能建議
+title: 建議功能
 description: 說明開發人員社群上有哪些建議、提出建議的方式，以及 Microsoft 會如何將這些建議用於 Visual Studio 的藍圖
 ms.date: 11/15/2018
 ms.prod: visual-studio-dev15
@@ -10,24 +10,24 @@ ms.author: seiyer
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 04d76dcb09db27ed3ac63ba0dd6cc8fc60588f0f
-ms.sourcegitcommit: 331dbb12e11fcd7f5d15fab05f3c861e48126e43
+ms.openlocfilehash: 541d8968ea71844d89903b9e4f146e86a15737e2
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51826688"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53160032"
 ---
 # <a name="overview-suggest-a-feature"></a>概觀：建議功能
 
 除了 [Visual Studio 開發人員社群](https://developercommunity.visualstudio.com) \(英文\) 目前回報問題的功能之外，我們也推出了建議功能的全新體驗。 這是可讓您直接參與 Visual Studio 工程工作流程的新方式。
 
-在此之前，Visual Studio 使用者都是使用 User Voice 論壇來針對新功能提出想法。 開發人員社群中的 [建議功能] 體驗，可讓您從 User Voice 論壇轉換至能與 Visual Studio 產品小組直接互動，並可提出各種意見反應的單一平台。  
+在此之前，Visual Studio 使用者都是使用 User Voice 論壇來針對新功能提出想法。 開發人員社群中的 [建議功能] 體驗，可讓您從 User Voice 論壇轉換至能與 Visual Studio 產品小組直接互動，並可提出各種意見反應的單一平台。
 
 我們已從 User Voice 論壇先將數個想法移轉至開發人員社群。 我們選擇要移轉哪些想法的方式，是根據該意見反應對社群所產生的影響，以及我們的產品藍圖的優先順序。 如果您認為我們忽略了某個您期望看見的建議，歡迎您將它新增至開發人員社群。
 
 ## <a name="votes"></a>投票
 
-User Voice 與開發人員社群中的投票系統，在運作上有著顯著差異。 為了維持開發人員社群投票計數的完整性，並避免不公正的投票結果，我們會在每個功能建議旁邊以標記的形式清楚地顯示 User Voice 投票計數。 現在，如果您在改良後的開發人員社群中重複為某個建議投票，您的新投票計數將會有別於 User Voice 投票計數個別顯示。  
+User Voice 與開發人員社群中的投票系統，在運作上有著顯著差異。 為了維持開發人員社群投票計數的完整性，並避免不公正的投票結果，我們會在每個功能建議旁邊以標記的形式清楚地顯示 User Voice 投票計數。 現在，如果您在改良後的開發人員社群中重複為某個建議投票，您的新投票計數將會有別於 User Voice 投票計數個別顯示。
 
 ## <a name="user-voice"></a>User Voice
 
@@ -77,7 +77,7 @@ User Voice 網站現在是唯讀狀態，可讓您回去查看所需的內容。
 
 - - -
 
-![適用於開發人員社群上建議的 [Closed - Not Enough Info] \(已關閉 - 資訊不足\) 狀態](../ide/media/SuggestStates/ClosedNotEnoughInfo.jpg) 
+![適用於開發人員社群上建議的 [Closed - Not Enough Info] \(已關閉 - 資訊不足\) 狀態](../ide/media/SuggestStates/ClosedNotEnoughInfo.jpg)
 
 [Closed - Not Enough Info] \(已關閉 - 資訊不足\) 代表我們在數次嘗試之後，仍然無法接收到足夠的資訊以充分了解您的功能建議。 我們必須關閉新功能建議，因為我們目前無法進一步採取任何動作。
 

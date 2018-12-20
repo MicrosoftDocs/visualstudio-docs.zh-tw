@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Studio 中放大負載測試結果圖形
+title: 放大負載測試結果圖形
 ms.date: 10/19/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,14 +13,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: aa5f6b3c5f4069a0b62fa6433c8ecef527558a0d
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 558d6429c5d92f833e81074fe928436ab6e7f30e
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895882"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53064889"
 ---
-# <a name="how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results"></a>如何：放大負載測試結果圖表中的某個區域
+# <a name="how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results"></a>HOW TO：放大負載測試結果圖表中的某個區域
 
 完成負載測試後，可以使用縮放列來放大及捲動到圖形的某個區域。 藉由圖形放大，您可以更為仔細地檢查負載測試回合期間收集到的資料。
 
@@ -59,7 +59,7 @@ ms.locfileid: "52895882"
 
      \-或-
 
-     檢視先前執行的負載測試的詳細資料。 如需詳細資訊，請參閱[如何：存取負載測試結果以進行分析](../test/how-to-access-load-test-results-for-analysis.md)。
+     檢視先前執行的負載測試的詳細資料。 如需詳細資訊，請參閱[＜How to：存取負載測試結果以進行分析](../test/how-to-access-load-test-results-for-analysis.md)。
 
 3.  如果沒有顯示圖形，請選擇 [圖形]。
 
@@ -119,4 +119,4 @@ ms.locfileid: "52895882"
 
 - [在圖表檢視中分析負載測試結果](../test/analyze-load-test-results-in-the-graphs-view.md)
 - [分析負載測試結果](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
-- [如何：在圖形上新增和刪除計數器](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md)
+- [如何：在圖表上新增和刪除計數器](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md)

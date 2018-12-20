@@ -1,6 +1,6 @@
 ---
 title: 如何套用 Python 搜尋路徑
-description: Visual Studio 如何在環境和專案中使用 Python 搜尋路徑的概觀。
+description: Visual Studio 提供更具體方法來指定環境和專案的搜尋路徑，以避免使用全系統變數。
 ms.date: 11/12/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -8,15 +8,16 @@ ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: ab55c7cf1daa02416e6192a02a01ee3f9a35f6f0
-ms.sourcegitcommit: 6a955a2d179cd0e137942389f940d9fcbbe125de
+ms.openlocfilehash: e3e6bd1ce14e1803e48a476246e3cfb8858286bb
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51607897"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53051525"
 ---
 # <a name="how-visual-studio-uses-python-search-paths"></a>Visual Studio 如何使用 Python 搜尋路徑
 
@@ -26,7 +27,7 @@ ms.locfileid: "51607897"
 1. 包含您正在執行之 Python 程式碼的資料夾。
 1. 適用的環境變數所定義的「模組搜尋路徑」。 (請參閱核心 Python 文件中的[模組搜尋路徑 (英文)](https://docs.python.org/2/tutorial/modules.html#the-module-search-path) 和[環境變數 (英文)](https://docs.python.org/2/using/cmdline.html#envvar-PYTHONPATH))。
 
-不過，即使針對整個系統設定了搜尋路徑環境變數，Visual Studio 也會將它忽略。 實際上，正「因為」變數是對整個系統而設定的，並會提出「所參考的模組是用於 Python 2.7 還是 Python 3.6+？」這類無法自動回答的問題，所以會予以忽略 它們是否將覆寫標準程式庫程式庫模組？ 開發人員是否知道此行為，或它是否是惡意的劫持嘗試？
+不過，即使針對整個系統設定了搜尋路徑環境變數，Visual Studio 也會將它忽略。 實際上，正「因為」變數是針對整個系統所設定，並會提出無法自動回答的特定問題，所以會予以忽略：所參考的模組是用於 Python 2.7 還是 Python 3.6+？ 它們是否將覆寫標準程式庫程式庫模組？ 開發人員是否知道此行為，或它是否是惡意的劫持嘗試？
 
 因此，Visual Studio 提供一個可在環境和專案中直接指定搜尋路徑的方法。 您在 Visual Studio 中執行或偵錯的程式碼，會從 `PYTHONPATH` (和其他對等的變數) 值來接收搜尋路徑。 透過新增搜尋路徑，Visual Studio 便會檢查那些位置中的程式庫，並視需要為它們建置 IntelliSense 資料庫 (Visual Studio 2017 15.5 版及較早版本；視程式庫的數目而定，建構資料庫可能需要一些時間)。
 

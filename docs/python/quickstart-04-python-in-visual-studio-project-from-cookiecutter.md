@@ -1,22 +1,23 @@
 ---
 title: 快速入門 - 使用 Cookiecutter 來建立 Python 專案
 description: 在此快速入門中，您可以使用 Cookiecutter 範本來建立 Python 的 Visual Studio 專案。
-ms.date: 09/04/2018
+ms.date: 12/06/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: quickstart
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8e4f2fcf8422c0fa11e1f43723d4337804720050
-ms.sourcegitcommit: 9ea4b62163ad6be556e088da1e2a355f31366f39
+ms.openlocfilehash: b8ad6d53a337e6a2a0d879ff9637156fb3d6d791
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43995887"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062699"
 ---
 # <a name="quickstart-create-a-project-from-a-cookiecutter-template"></a>快速入門：從 Cookiecutter 範本建立專案
 

@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Studio 中引進區域變數
+title: 引進區域變數
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 173173e090f285fcaf6fc9d7c94ba85b692d68e2
-ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
+ms.openlocfilehash: 108477845bb79d5ed13cb3ebdf3121e4960455a6
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "51948344"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068078"
 ---
 # <a name="introduce-a-local-variable-in-visual-studio"></a>在 Visual Studio 中引進區域變數
 
@@ -28,7 +28,7 @@ ms.locfileid: "51948344"
 
 **時機：** 您有只要放在區域變數中便可在稍後輕鬆重複使用的程式碼。
 
-**原因：** 您可以多次複製和貼上程式碼以在各種位置中使用該程式碼，不過，最好只執行該作業一次，將結果儲存在區域變數中，然後全程使用區域變數。
+**原因：** 您可以多次複製和貼上程式碼以在各種位置中使用該程式碼；不過，最好只執行該作業一次，將結果儲存在區域變數中，然後全程使用區域變數。
 
 ## <a name="how-to"></a>操作說明
 

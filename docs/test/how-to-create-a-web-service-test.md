@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Studio 中建立 Web 服務測試
+title: 建立 Web 服務測試
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,14 +12,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 12b01e8428c35874f4a913c846f57f89a02162c6
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 99d4c413dcb02efd56bf89dae3aa24b7f6905216
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52894465"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53053395"
 ---
-# <a name="how-to-create-a-web-service-test"></a>如何：建立 Web 服務測試
+# <a name="how-to-create-a-web-service-test"></a>HOW TO：建立 Web 服務測試
 
 您可以使用 Web 效能測試以測試 Web 服務。 藉由使用 [插入要求] 和 [插入 Web 服務要求] 選項，您可以在 [Web 效能測試編輯器] 中自訂個別要求，以便找到 Web 服務頁面。 一般而言，這些頁面不會顯示在 Web 應用程式中。 因此，您必須自訂要求，以取得這些頁面的存取權。
 

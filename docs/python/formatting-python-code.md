@@ -1,6 +1,6 @@
 ---
 title: 格式化 Python 程式碼
-description: 如何在 Visual Studio 中自動重新設定 Python 程式碼格式，包括間距、陳述式、換行和註解。
+description: Visual Studio 可以自動重新設定 Python 程式碼格式，包括間距、陳述式、換行和註解。
 ms.date: 10/28/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -8,15 +8,16 @@ ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b0ce6b5db57b4f6140fb164391ebf5c07e623baf
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 452dc1104147e5b29dd38790cbfa726ad0de7b1f
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219545"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53052189"
 ---
 # <a name="format-python-code"></a>格式化 Python 程式碼
 
@@ -29,7 +30,7 @@ Visual Studio 可讓您快速重新格式化程式碼，以符合預先設定的
 
 ![Visual Studio 中的 Python 格式選項](media/options-editor-formatting.png)
 
-格式選項預設會設定成符合 [PEP 8 樣式指南](http://www.python.org/dev/peps/pep-0008/) \(英文\) 的超集合。 [一般] 索引標籤能決定何時套用格式；針對其他三個索引標籤的設定，會於本文章中說明。
+格式選項預設會設定成符合 [PEP 8 樣式指南](https://www.python.org/dev/peps/pep-0008/) \(英文\) 的超集合。 [一般] 索引標籤能決定何時套用格式；針對其他三個索引標籤的設定，會於本文章中說明。
 
 此外，[Visual Studio 中的 Python 支援](installing-python-support-in-visual-studio.md)也會將實用的 [[填滿註解段落]](#fill-comment-paragraph-command) 命令新增至 [編輯] > [進階] 功能表中，如後續小節中所述。
 
@@ -112,7 +113,7 @@ Visual Studio 可讓您快速重新格式化程式碼，以符合預先設定的
 
 [編輯] > [進階] > [填滿註解段落] (**Ctrl**+**E** > **P**) 會自動重排和格式化註解文字、結合較短的行和拆解較長的行。
 
-例如: 
+例如：
 
 ```python
 # foo

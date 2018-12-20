@@ -1,5 +1,5 @@
 ---
-title: 將 Python 應用程式發佈至 Windows 上的 Azure App Service
+title: 在 Windows 上將 Python 應用程式發佈到 Azure App Service
 description: 如何從 Visual Studio 將 Python Web 應用程式直接發佈到 Windows 上的 Azure App Service，包括 web.config 檔案的必要內容。
 ms.date: 10/18/2018
 ms.prod: visual-studio-dev15
@@ -8,16 +8,17 @@ ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: cae15da8b6a59587037171ae982ee77d2cce2861
-ms.sourcegitcommit: 551f13774e8bb0eb47cbd973745628a956e866aa
+ms.openlocfilehash: 083deb7b836bfae0b0c1352430ffb6ed4080c3dc
+ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2018
-ms.locfileid: "49459954"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53248201"
 ---
 # <a name="publishing-to-azure-app-service-on-windows"></a>發佈至 Windows 上的 Azure App Service
 
@@ -80,7 +81,7 @@ Visual Studio 2017 和 Visual Studio 2015 的發佈程序有所不同。 具體�
 
 從 Visual Studio 2017 發佈至 Azure App Service 時，僅會將您專案中的檔案複製到伺服器。 因此，您必須建立必要的檔案來設定伺服器環境。
 
-1. 在 Visual Studio 的方案總管中，以滑鼠右鍵按一下專案，然後選取 *[新增] > [新增項目]。在出現的對話方塊中，選取 "Azure web.config (Fast CGI)" 範本並選取 [確定]。 這會在您的專案根目錄中建立 `web.config` 檔案。
+1. 在 Visual Studio 的 [方案總管] 中，以滑鼠右鍵按一下專案，然後選取 [新增] > [新增項目...]。在出現的對話方塊中，選取 "Azure web.config (Fast CGI)" 範本並選取 [確定]。 這會在您的專案根目錄中建立 `web.config` 檔案。
 
 1. 修改 `web.config` 中的 `PythonHandler` 項目，使路徑符合伺服器上的 Python 安裝 (如需詳細資料，請參閱 [IIS 設定參考](https://www.iis.net/configreference) \(英文\) (iis.net))。 例如，若是 Python 3.6.1 x64，顯示的項目應如下所示：
 
@@ -110,7 +111,7 @@ Visual Studio 2017 和 Visual Studio 2015 的發佈程序有所不同。 具體�
         <add key="WSGI_HANDLER" value="FlaskAzurePublishExample.app"/>
         ```
 
-    - **Django**：Django 專案需要對 `web.config` 進行兩個變更。 第一，將 `WSGI_HANDLER` 值變更為 `django.core.wsgi.get_wsgi_application()` (此物件位於 `wsgi.py` 檔案中)：
+    - **Django**：Django 專案需要對 `web.config` 進行兩項變更。 第一，將 `WSGI_HANDLER` 值變更為 `django.core.wsgi.get_wsgi_application()` (此物件位於 `wsgi.py` 檔案中)：
 
         ```xml
         <!-- Django apps only -->
@@ -123,7 +124,7 @@ Visual Studio 2017 和 Visual Studio 2015 的發佈程序有所不同。 具體�
         <add key="DJANGO_SETTINGS_MODULE" value="DjangoAzurePublishExample.settings" />
         ```
 
-1. **僅 Django 應用程式**：在 Django 專案的 `settings.py` 檔案中，將您的網站 URL 網域新增至 `ALLOWED_HOSTS`(如下所示)，並使用您的 URL 取代 'vspython-test-02.azurewebsites.net'：
+1. **僅限 Django 應用程式**：在 Django 專案的 `settings.py` 檔案中，將您的網站 URL 網域新增至 `ALLOWED_HOSTS` (如下所示)，並使用您的 URL 取代 'vspython-test-02.azurewebsites.net'：
 
     ```python
     # Change the URL to your specific site
@@ -184,7 +185,7 @@ Visual Studio 2017 和 Visual Studio 2015 的發佈程序有所不同。 具體�
 ## <a name="publishing-to-app-service---visual-studio-2015"></a>發佈至 App Service - Visual Studio 2015
 
 > [!Note]
-> 如需此程序的短片，請觀看 [Visual Studio Python Tutorial: Building a Website](https://www.youtube.com/watch?v=FJx5mutt1uk&list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff&index=6) (Visual Studio Python 教學課程：建置網站，youtube.com，3 分 10 秒)。
+> 如需此程序的短片，請觀看 [Visual Studio Python tutorial:Building a Website](https://www.youtube.com/watch?v=FJx5mutt1uk&list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff&index=6) (Visual Studio Python 教學課程：建置網站) (youtube.com，3 分 10 秒)。
 
 1. 在 [方案總管] 中，以滑鼠右鍵按一下專案，選取 [發行]。
 

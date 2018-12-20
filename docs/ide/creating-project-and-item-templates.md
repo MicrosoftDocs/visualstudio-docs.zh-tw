@@ -1,5 +1,5 @@
 ---
-title: 適用於專案和檔案的 Visual Studio 範本
+title: 適用於專案和檔案的範本
 ms.date: 01/02/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -12,12 +12,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 62e51a5a03011874acc723eaf159e3f7130d1340
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 04aa647d378e956c7a2394b7c3fc2a187a7c5963
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34573254"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53049274"
 ---
 # <a name="project-and-item-templates"></a>專案範本與項目範本
 
@@ -29,7 +29,7 @@ ms.locfileid: "34573254"
 
 使用者可將這些範本當作起點開始建立專案，或擴充現有的專案。 專案範本提供特定專案類型所需的檔案、包含標準組件參考，並設定預設專案屬性和編譯器選項。 項目範本複雜多變，從有特定副檔名的單一空檔案，到具有虛設常式程式碼的多個原始程式碼檔案、設計工具資訊檔案和內嵌資源，都有可能。
 
-您可以使用 [新增專案] 和 [新增項目] 對話方塊中的已安裝範本、撰寫自己的範本，或下載並使用社群所建立的範本。 如需詳細資訊，請參閱[如何：建立專案範本](../ide/how-to-create-project-templates.md)和[如何：建立項目範本](../ide/how-to-create-item-templates.md)。
+您可以使用 [新增專案] 和 [新增項目] 對話方塊中的已安裝範本、撰寫自己的範本，或下載並使用社群所建立的範本。 如需詳細資訊，請參閱[＜How to：建立專案範本](../ide/how-to-create-project-templates.md)和[如何：建立項目範本](../ide/how-to-create-item-templates.md)。
 
 ## <a name="contents-of-a-template"></a>範本的內容
 

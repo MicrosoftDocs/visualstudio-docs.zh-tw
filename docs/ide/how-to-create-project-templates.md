@@ -1,5 +1,5 @@
 ---
-title: 建立 Visual Studio 的專案範本
+title: 建立專案範本
 ms.date: 01/02/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -11,14 +11,14 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 05ba1dcd5328b80d8fa5526336cf027995abf7dc
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5cb90ea6f1e404d65ac3c375f49e77dd02c6711c
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49903721"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53066911"
 ---
-# <a name="how-to-create-project-templates"></a>如何：建立專案範本
+# <a name="how-to-create-project-templates"></a>HOW TO：建立專案範本
 
 本主題示範如何使用 [匯出範本精靈] 建立範本，此精靈會將您的範本封裝在 *.zip* 檔案中。
 
@@ -29,7 +29,7 @@ ms.locfileid: "49903721"
     > [!NOTE]
     > 在命名將會是範本來源的專案時，請您只使用有效的識別項字元。 否則，從範本建立的專案會發生編譯錯誤。 如需有效識別碼字元的詳細資訊，請參閱[宣告項目名稱 (Visual Basic)](/dotnet/visual-basic/programming-guide/language-features/declared-elements/declared-element-names) 或 [識別碼 (C++)](/cpp/cpp/identifiers-cpp)。 或者，您也可以使用[範本參數](../ide/template-parameters.md)為類別和命名空間使用「安全」的名稱。
 
-2. 編輯專案，直到它準備好匯出成範本。 例如，您可能想要編輯程式碼檔案，指出應該執行參數取代的地方。 請參閱[如何：替代範本中的參數](../ide/how-to-substitute-parameters-in-a-template.md)。
+2. 編輯專案，直到它準備好匯出成範本。 例如，您可能想要編輯程式碼檔案，指出應該執行參數取代的地方。 請參閱[如何：替換範本中的參數](../ide/how-to-substitute-parameters-in-a-template.md)。
 
 3. 選擇 [專案] 功能表上的 [匯出範本]。
 
@@ -42,11 +42,11 @@ ms.locfileid: "49903721"
    專案會匯出成 *.zip* 檔案並放在指定的輸出位置，且如果選取，則會匯入到 Visual Studio。
 
 >[!NOTE]
-> 若要在 [新增專案] 對話方塊中尋找您的範本，請展開 [已安裝]，然後展開對應至 *.vstemplate* 檔案之 `ProjectType` 項目的類別。 例如，包含 `<ProjectType>CSharp</ProjectType>` 的 *.vstemplate* 檔案預設出現在 [已安裝] > [Visual C#] 下。 您可以將範本整理成專案類型的子目錄，只要在該目錄中建立資料夾，然後放入您範本的 *.zip* 檔案即可。 如需詳細資訊，請參閱[如何：尋找並整理範本](../ide/how-to-locate-and-organize-project-and-item-templates.md)。
+> 若要在 [新增專案] 對話方塊中尋找您的範本，請展開 [已安裝]，然後展開對應至 *.vstemplate* 檔案之 `ProjectType` 項目的類別。 例如，包含 `<ProjectType>CSharp</ProjectType>` 的 *.vstemplate* 檔案預設出現在 [已安裝] > [Visual C#] 下。 您可以將範本整理成專案類型的子目錄，只要在該目錄中建立資料夾，然後放入您範本的 *.zip* 檔案即可。 如需詳細資訊，請參閱[＜How to：尋找並整理範本](../ide/how-to-locate-and-organize-project-and-item-templates.md)。
 
 ## <a name="other-ways-to-create-project-templates"></a>建立專案範本的其他方式
 
-您可以將構成專案的檔案收集在一個資料夾中，然後使用合適的中繼資料建立 *.vstemplate* XML 檔案，以手動方式建立專案範本。 如需詳細資訊，請參閱[如何：以手動方式建立網站範本](../ide/how-to-manually-create-web-templates.md)。
+您可以將構成專案的檔案收集在一個資料夾中，然後使用合適的中繼資料建立 *.vstemplate* XML 檔案，以手動方式建立專案範本。 如需詳細資訊，請參閱[＜How to：手動建立網站範本](../ide/how-to-manually-create-web-templates.md)。
 
 如已安裝 Visual Studio SDK，可以使用 [VSIX 專案] 範本，將完成的範本包裝成 VSIX 檔進行部署。 如需詳細資訊，請參閱[開始使用 VSIX 專案範本](../extensibility/getting-started-with-the-vsix-project-template.md)。
 

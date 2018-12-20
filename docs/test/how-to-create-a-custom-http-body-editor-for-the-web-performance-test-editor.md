@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Studio 中建立 Web 效能測試編輯器的自訂 HTTP 內容編輯器
+title: 建立 Web 效能測試編輯器的自訂 HTTP 本文編輯器
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,14 +10,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 0dc31bef7a7d2e91599cdc25be4f98445beda67f
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 83ed50b5f242f5a869e1c0a69bf6a0674bdf4d69
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52896740"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068405"
 ---
-# <a name="how-to-create-a-custom-http-body-editor-for-the-web-performance-test-editor"></a>如何：建立 Web 效能測試編輯器的自訂 HTTP 內容編輯器
+# <a name="how-to-create-a-custom-http-body-editor-for-the-web-performance-test-editor"></a>HOW TO：建立 Web 效能測試編輯器的自訂 HTTP 本文編輯器
 
 您可以建立自訂內容編輯器，讓您能夠編輯 Web 服務要求的字串內容或二進位內容，例如 SOAP、REST、asmx、wcf、RIA 和其他 Web 服務要求類型。
 

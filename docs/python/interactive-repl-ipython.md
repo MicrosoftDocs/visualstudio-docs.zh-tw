@@ -1,6 +1,6 @@
 ---
 title: IPython REPL (互動式視窗)
-description: 在 IPython 模式中使用 Visual Studio 互動式視窗，以便有易於使用的互動式開發環境，並具有「互動式平行計算」功能。
+description: 在 IPython 模式中使用 Visual Studio 互動式視窗，以取得具有「互動式平行運算」功能且方便使用的互動式開發環境。
 ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -8,15 +8,16 @@ ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b5429ccc963923a049d54ad3fbaa409586c0f772
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 84e93d06e294ef11cc345eb4c443845421a8f834
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219246"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53067799"
 ---
 # <a name="use-ipython-in-the-interactive-window"></a>在互動式視窗中使用 IPython
 
@@ -79,9 +80,9 @@ IPython 模式的 Visual Studio [互動式] 視窗，是個進階但容易使用
 
 8. 若要在 [互動式] 視窗外查看圖表，請改為使用 [偵錯] > [啟動但不偵錯] 命令來執行程式碼。
 
-IPython 有許多其他實用功能，例如逸出到系統殼層、變數替換、擷取輸出等。如需詳細資訊，請參閱 [IPython 文件](http://ipython.org/documentation.html)。
+IPython 有許多其他實用功能，例如逸出到系統殼層、變數替換、擷取輸出等。如需詳細資訊，請參閱 [IPython 文件](https://ipython.org/documentation.html)。
 
-### <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>另請參閱
 
 - 若要輕鬆使用 Jupyter，且不需安裝，請嘗試免費的 [Azure Notebooks 託管服務](https://notebooks.azure.com/)，可讓您保留並與其他人共用您的筆記。
 

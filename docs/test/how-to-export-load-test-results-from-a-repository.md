@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Studio 中匯出負載測試結果
+title: 匯出負載測試結果
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,14 +13,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: d0219b2acaab32da72639c088046bf4d19620808
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: d50a97854aafda3baf1eedbc9d821c0e530e6bf6
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52894323"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53057161"
 ---
-# <a name="how-to-export-load-test-results-from-a-repository"></a>如何：從存放庫匯出負載測試結果
+# <a name="how-to-export-load-test-results-from-a-repository"></a>HOW TO：從存放庫匯出負載測試結果
 
 當您執行負載測試時，執行期間所收集到的資訊，都會儲存在負載測試結果儲存機制中。 負載測試結果儲存機制含有效能計數器資料，以及錄製之錯誤的相關資訊。 如需詳細資訊，請參閱[管理負載測試結果存放庫中的負載測試結果](../test/manage-load-test-results-in-the-load-test-results-repository.md)。
 
@@ -60,4 +60,4 @@ ms.locfileid: "52894323"
 - [管理負載測試結果儲存機制中的負載測試結果](../test/manage-load-test-results-in-the-load-test-results-repository.md)
 - [如何：從存放庫中刪除負載測試結果](../test/how-to-delete-load-test-results-from-a-repository.md)
 - [分析負載測試結果](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
-- [如何：將負載測試結果匯入至存放庫](../test/how-to-import-load-test-results-into-a-repository.md)
+- [如何：將負載測試結果匯入存放庫](../test/how-to-import-load-test-results-into-a-repository.md)

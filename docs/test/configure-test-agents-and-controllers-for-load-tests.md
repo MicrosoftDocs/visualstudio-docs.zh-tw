@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Studio 中設定用於負載測試的測試代理程式和測試控制器
+title: 設定用於負載測試的測試代理程式和測試控制器
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 363aac5bc07b49670cb35f5f1080f7835e7c4701
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 1f33859522ff42fc85c31261527f17ea0f765199
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895635"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068013"
 ---
 # <a name="configure-test-agents-and-test-controllers-for-running-load-tests"></a>設定用於執行負載測試的測試代理程式和測試控制器
 
@@ -43,7 +43,7 @@ Visual Studio 可以使用實體或虛擬機器產生應用程式適用的模擬
 
    **本機組態：**
 
-  - 電腦 1： Visual Studio、控制器、代理程式。
+  - 電腦 1：Visual Studio、控制器、代理程式。
 
     ![使用控制器和代理程式的本機電腦](./media/load-test-configa.png)
 
@@ -53,7 +53,7 @@ Visual Studio 可以使用實體或虛擬機器產生應用程式適用的模擬
 
   - 電腦 3：控制器 (也可以安裝代理程式)。
 
-  - 電腦 4-n：所有與電腦 3 的控制器相關聯的代理程式。
+  - 電腦 4 到 n：所有與電腦 3 控制器建立關聯的代理程式。
 
     ![使用控制器和代理程式的遠端電腦](./media/load-test-configb.png)
 

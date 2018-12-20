@@ -1,5 +1,6 @@
 ---
-title: 使用 Blend for Visual Studio 建立 UI
+title: 建立 UI - Blend for Visual Studio
+titleSuffix: ''
 ms.date: 07/17/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-designers
@@ -11,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0cd1d8ab718575977e9f65ed55bfc6c3185d1642
-ms.sourcegitcommit: 522ba712c0d625e51352506146b0556414681964
+ms.openlocfilehash: 76743674ef4e92f2ad52be108c1dafb8d942676c
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37890138"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53059856"
 ---
 # <a name="creating-a-ui-by-using-blend-for-visual-studio"></a>使用 Blend for Visual Studio 建立 UI
 
@@ -60,7 +61,7 @@ Blend for Visual Studio 是 Visual Studio 的元件。 若要安裝 Blend，請�
 |![格線模式與清單模式](../designers/media/b1_2.png)|**格線模式與清單模式**：切換資產的 [格線模式] 檢視與 [清單模式] 檢視。|
 |![資產分類](../designers/media/b1_3.png)|**資產分類**：按一下分類或子分類可檢視該分類中的資產清單。|
 |![樣式](../designers/media/b1_4.png)|**樣式**：顯示資源字典中所包含的所有樣式。|
-|![描述](../designers/media/b1_5.png)|**描述**：檢視所選的資產分類或子分類的描述。|
+|![說明](../designers/media/b1_5.png)|**描述**：檢視所選的資產分類或子分類的描述。|
 
 ## <a name="tour-of-the-objects-and-timeline-panel"></a>[物件與時間軸] 面板導覽
 
@@ -115,7 +116,7 @@ Blend for Visual Studio 是 Visual Studio 的元件。 若要安裝 Blend，請�
 |![圖說文字 16](../designers/media/b5_label_16.png)|**漸層滑桿**：只有選取漸層筆刷時才會出現。|
 |![顯示進階屬性](../designers/media/d50027a1-6824-4ad8-8b4e-558b0756dcf8.png)|**顯示進階屬性**：檢視較不常用之屬性的分類。|
 
-**觀看短片：**![設定已安裝的功能](../designers/media/bldadminconsoleinitialconfigicon.png) [[屬性] 面板](https://www.youtube.com/watch?v=HCqQfiobdag&list=PLBDF977B2F1DAB358&index=7)。
+**觀看短片：**![設定已安裝的功能](../designers/media/bldadminconsoleinitialconfigicon.png) [屬性面板](https://www.youtube.com/watch?v=HCqQfiobdag&list=PLBDF977B2F1DAB358&index=7)。
 
 ## <a name="see-also"></a>另請參閱
 

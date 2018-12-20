@@ -1,5 +1,6 @@
 ---
-title: 使用 Python 教學課程的步驟 3：互動式 REPL
+title: Visual Studio 中的 Python 教學課程步驟 3，互動式 REPL
+titleSuffix: ''
 description: 在 Visual Studio 中 Python 功能核心逐步解說的步驟 3，涵蓋 Python 互動式 REPL 視窗。
 ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
@@ -8,19 +9,20 @@ ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 504192e81af94413e61d4ad1252ab11bf97b8a38
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 7f237dde510ad9fd65416ae7521ebeed705781c2
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219584"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53066115"
 ---
 # <a name="step-3-use-the-interactive-repl-window"></a>步驟 3：使用互動式 REPL 視窗
 
-**上一個步驟：[撰寫並執行程式碼](tutorial-working-with-python-in-visual-studio-step-02-writing-code.md)**
+**先前步驟：[撰寫並執行程式碼](tutorial-working-with-python-in-visual-studio-step-02-writing-code.md)**
 
 適用於 Python 的 Visual Studio **互動式**視窗提供一個豐富的「讀取、求值、輸出」迴圈 (REPL) 體驗，可大幅縮短一般「編輯-建置-偵錯」循環。 **互動式**視窗提供 Python 命令列之 REPL 體驗的所有功能。 它也讓在 Visual Studio 編輯器中與原始程式檔交換程式碼變得極為簡單，而使用命令列來執行此作業則會十分麻煩。
 

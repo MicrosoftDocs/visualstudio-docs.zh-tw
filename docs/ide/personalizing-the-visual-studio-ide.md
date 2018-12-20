@@ -1,5 +1,5 @@
 ---
-title: 自訂 Visual Studio IDE
+title: 自訂 IDE
 ms.date: 11/20/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d8f52061acff03a1339a9c7b7f3f8ff4901ec6a5
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: cfd3ed3461b40f85e66d62f01e68aff4ce740031
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388721"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159499"
 ---
 # <a name="personalize-the-visual-studio-ide"></a>將 Visual Studio IDE 個人化
 
@@ -42,7 +42,7 @@ ms.locfileid: "52388721"
 
 若要在亮色、暗色及藍色的色彩佈景主題之間變更，請在 [快速啟動] 方塊中鍵入 `environment`，然後選擇 [環境] --> [一般]。 在 [選項] 對話方塊中，變更 [色彩佈景主題] 選項。
 
-若要變更編輯器中的顏色標示選項，請在 [快速啟動] 方塊中鍵入 `environment`，然後選擇 [環境] --> [字型和色彩]。 請參閱[如何：變更字型和色彩](../ide/how-to-change-fonts-and-colors-in-visual-studio.md)。
+若要變更編輯器中的顏色標示選項，請在 [快速啟動] 方塊中鍵入 `environment`，然後選擇 [環境] --> [字型和色彩]。 請參閱[如何：變更字型與色彩](../ide/how-to-change-fonts-and-colors-in-visual-studio.md)。
 
 ### <a name="main-menu-casing"></a>主功能表大小寫
 
@@ -50,7 +50,7 @@ ms.locfileid: "52388721"
 
 ### <a name="customize-menus-and-toolbars"></a>自訂功能表與工具列
 
-若要新增或移除功能表或工具列項目，請參閱[如何：自訂功能表和工具列](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md)。
+若要新增或移除功能表或工具列項目，請參閱[如何：自訂功能表與工具列](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md)。
 
 ## <a name="start-page"></a>起始頁
 
@@ -67,6 +67,6 @@ ms.locfileid: "52388721"
 ## <a name="see-also"></a>另請參閱
 
 - [環境設定](environment-settings.md)
-- [Visual Studio IDE 概觀](../ide/visual-studio-ide.md)
-- [快速入門：Visual Studio IDE 初探](../ide/quickstart-ide-orientation.md)
+- [Visual Studio IDE 概觀](../get-started/visual-studio-ide.md)
+- [快速入門：Visual Studio 整合式開發環境 (IDE) 初探](../ide/quickstart-ide-orientation.md)
 - [自訂 Visual Studio for Mac IDE](/visualstudio/mac/customizing-the-ide)

@@ -1,6 +1,6 @@
 ﻿---
 title: 匯入發行設定以發行至 Azure
-ms.description: Create and import a publishing profile to deploy an application from Visual Studio to Azure App Service
+description: 建立和匯入發佈設定檔，以將應用程式從 Visual Studio 部署到 Azure App Service
 ms.date: 05/07/2018
 ms.technology: vs-ide-deployment
 ms.topic: tutorial
@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b4b0e4ea963f20199267f32a8c87440c8cc350b
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 804965df5142ddb18c1857a2540c5c69c08c4f9a
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38808317"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53058490"
 ---
 # <a name="publish-an-application-to-azure-app-service-by-importing-publish-settings-in-visual-studio"></a>在 Visual Studio 中匯入發行設定，即可將應用程式發行至 Azure App Service
 
@@ -40,7 +40,7 @@ ms.locfileid: "38808317"
 
 * 您必須安裝 Visual Studio 2017，以及 **ASP.NET** 和 .**NET Framework** 開發工作負載。 針對 .NET Core 應用程式，您還需要 .**NET Core** 工作負載。
 
-    如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)頁面免費進行安裝。
+    如果您尚未安裝 Visual Studio，請前往  [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) 頁面免費進行安裝。
 
 * 建立 Azure App Service。 如需詳細指示，請參閱[使用 Visual Studio 將 ASP.NET Core Web 應用程式部署至 Azure](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs)。
 

@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Studio 中將回合設定新增至負載測試
+title: 將回合設定新增至負載測試
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,14 +11,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: e894bb0b53240795ad2bf7505ba081dbf479989d
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 439120b80350081e1770ccce619d51b92673feef
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52896610"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53048050"
 ---
-# <a name="how-to-add-additional-run-settings-to-a-load-test"></a>如何：將其他回合設定新增至負載測試
+# <a name="how-to-add-additional-run-settings-to-a-load-test"></a>HOW TO：將其他回合設定新增至負載測試
 
 負載測試的回合設定會決定各種其他設定。 這些設定包括測試的持續期間、結果收集詳細層級，以及在測試執行時所收集的計數器集合。 您可以針對每個負載測試建立和儲存多個回合設定，然後在執行測試時選取一個特定的設定。 當您使用 [新增負載測試精靈] 來建立負載測試時，就會將初始回合設定加入至負載測試。
 
@@ -47,7 +47,7 @@ ms.locfileid: "52896610"
     > [!NOTE]
     > 如需回合設定屬性及其描述的完整清單，請參閱[負載測試回合設定屬性](../test/load-test-run-settings-properties.md)。
 
-     您現在可以指定想要使用加入的回合設定 (將它設定為使用中)。 如需詳細資訊，請參閱[如何：選取負載測試的使用中回合設定](../test/how-to-select-the-active-run-setting-for-a-load-test.md)。
+     您現在可以指定想要使用加入的回合設定 (將它設定為使用中)。 如需詳細資訊，請參閱[＜How to：選取負載測試的使用中回合設定](../test/how-to-select-the-active-run-setting-for-a-load-test.md)。
 
 ## <a name="see-also"></a>另請參閱
 

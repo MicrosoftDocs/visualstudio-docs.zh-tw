@@ -1,10 +1,11 @@
 ---
-title: 快速入門：使用 Visual Studio 建立您的第一個 C# 主控台應用程式
+title: 使用 Visual Studio 建立您的第一個 C# 主控台應用程式
+titleSuffix: ''
 description: 了解如何使用 C# 在 Visual Studio 中逐步建立簡單的 Hello World 主控台應用程式。
-ms.custom: ''
 ms.date: 09/21/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
+ms.custom: seodec18
 ms.topic: quickstart
 ms.devlang: vb
 author: TerryGLee
@@ -14,12 +15,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: ee40aadd3287018e52910ad6b4a4000db6bcce8a
-ms.sourcegitcommit: 6672a1e9d135d7e5cca3cceea07c6fe5a0871475
+ms.openlocfilehash: a1d7b165466f686549273394c204e4ab31c06b46
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/28/2018
-ms.locfileid: "47443411"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53158602"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-c-console-app"></a>快速入門：使用 Visual Studio 建立您的第一個 C# 主控台應用程式
 

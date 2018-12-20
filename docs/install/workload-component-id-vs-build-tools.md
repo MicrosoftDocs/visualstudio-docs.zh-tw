@@ -1,5 +1,6 @@
 ---
 title: Visual Studio Build Tools 2017 工作負載和元件識別碼
+titleSuffix: ''
 description: 使用 Visual Studio 工作負載和元件識別碼來建置傳統 Windows 型應用程式
 keywords: ''
 author: TerryGLee
@@ -17,12 +18,12 @@ ms.prod: visual-studio-dev15
 ms.assetid: b99298df-0280-47fc-af73-44cd7a8ac553
 ms.workload:
 - multiple
-ms.openlocfilehash: 958e4e842468e871cd9aa65f0a20b87a84aeb4ca
-ms.sourcegitcommit: 6a955a2d179cd0e137942389f940d9fcbbe125de
+ms.openlocfilehash: 2e47eca638e81cf1b99a451e3017614be45d2c59
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51607857"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53063042"
 ---
 # <a name="visual-studio-build-tools-2017-component-directory"></a>Visual Studio Build Tools 2017 元件目錄
 
@@ -35,7 +36,7 @@ ms.locfileid: "51607857"
 * 您也可以選擇安裝「建議」元件和「選擇性」元件。
 * 我們還新增了一個章節，當中列出不屬於任何工作負載的額外元件。
 
-當您在 VSIX 資訊清單中設定相依性時，必須僅指定「元件識別碼」。 請使用此頁面上的表格來決定我們的最基本元件相依性。 在某些情況下，這可能意謂著您僅指定一個來自工作負載的元件。 在其他情況下，則可能意謂著您指定來自單一工作負載的多個元件，或來自多個工作負載的多個元件。 如需詳細資訊，請參閱[如何︰將擴充性專案移轉至 Visual Studio 2017 (英文)](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md) 頁面。
+當您在 VSIX 資訊清單中設定相依性時，必須僅指定「元件識別碼」。 請使用此頁面上的表格來決定我們的最基本元件相依性。 在某些情況下，這可能意謂著您僅指定一個來自工作負載的元件。 在其他情況下，則可能意謂著您指定來自單一工作負載的多個元件，或來自多個工作負載的多個元件。 如需詳細資訊，請參閱[如何：將擴充性專案移轉至 Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md) 頁面。
 
 如需有關如何使用這些識別碼的詳細資訊，請參閱[使用命令列參數安裝 Visual Studio 2017](use-command-line-parameters-to-install-visual-studio.md) 頁面。 而如需其他產品的工作負載和元件識別碼清單，請參閱 [Visual Studio 2017 工作負載和元件識別碼 (英文)](workload-and-component-ids.md) 頁面。
 
@@ -43,7 +44,7 @@ ms.locfileid: "51607857"
 
 **識別碼：** Microsoft.VisualStudio.Workload.AzureBuildTools
 
-**描述：** 用於建置 Azure 應用程式的 MSBuild 工作和目標。
+**描述：** 用於建置 Azure 應用程式的 MSBuild 工作與目標。
 
 ### <a name="components-included-by-this-workload"></a>此工作負載所包含的元件
 
@@ -180,7 +181,7 @@ Microsoft.Net.Core.Component.SDK.1x | .NET Core 1.0 - 1.1 開發工具 | 15.6.27
 
 **識別碼：** Microsoft.VisualStudio.Workload.NodeBuildTools
 
-**描述：** 用於使用 Node.js 這個非同步事件驅動的 JavaScript 執行階段，建置可調式網路應用程式的 MSBuild 工作與目標。
+**描述：** 使用非同步的事件驅動 JavaScript 執行階段 Node.js 來建置可調式網路應用程式的 MSBuild 工作與目標。
 
 ### <a name="components-included-by-this-workload"></a>此工作負載所包含的元件
 
@@ -312,7 +313,7 @@ Microsoft.VisualStudio.ComponentGroup.Windows10SDK.16299 | Windows 10 SDK (10.0.
 
 **識別碼：** Microsoft.VisualStudio.Workload.VisualStudioExtensionBuildTools
 
-**描述：** 用於建置 Visual Studio 增益集與延伸模組的工具，包括新的命令、程式碼分析器與工具視窗。
+**描述：** 用於建置 Visual Studio 附加元件與延伸模組的工具，包括新的命令、程式碼分析器與工具視窗。
 
 ### <a name="components-included-by-this-workload"></a>此工作負載所包含的元件
 
@@ -338,7 +339,7 @@ Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | VC++ 2017 15.9 版 v14.16 �
 
 **識別碼：** Microsoft.VisualStudio.Workload.WebBuildTools
 
-**描述：** 用於建置 Web 應用程式的 MSBuild 工作和目標。
+**描述：** 用於建置 Web 應用程式的 MSBuild 工作與目標。
 
 ### <a name="components-included-by-this-workload"></a>此工作負載所包含的元件
 
@@ -383,7 +384,7 @@ Microsoft.Net.Core.Component.SDK.1x | .NET Core 1.0 - 1.1 開發工具 | 15.6.27
 
 **識別碼：** Microsoft.VisualStudio.Workload.XamarinBuildTools
 
-**描述：** 這些工具可讓您使用 C# 及 F# 建置可在 iOS、Android 及 Windows 上執行的跨平台應用程式。
+**描述：** 這些工具可讓您使用 C# 和 F# 建置 iOS、Android 及 Windows 的跨平台應用程式。
 
 ### <a name="components-included-by-this-workload"></a>此工作負載所包含的元件
 
