@@ -1,5 +1,6 @@
 ---
-title: 教學課程 - 了解 Visual Studio 中的 Flask，步驟 3
+title: Visual Studio 中的了解 Flask 教學課程步驟 3，靜態檔案和頁面
+titleSuffix: ''
 description: 逐步解說 Visual Studio 專案內容中的 Flask 基本知識，特別是示範如何提供靜態檔案、將頁面新增至應用程式，以及使用範本繼承
 ms.date: 09/04/2018
 ms.prod: visual-studio-dev15
@@ -8,19 +9,20 @@ ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6cdc8e3658b02c7c4371181d6c0e5723d0a3537c
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 906c44ca3b1d0771202e78910870d38f9d4fb995
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43775752"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53065021"
 ---
 # <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>步驟 3：提供靜態檔案、新增頁面，然後使用範本繼承
 
-**上一個步驟：[使用檢視與頁面範本來建立 Flask 應用程式](learn-flask-visual-studio-step-02-create-app.md)**
+**上一步：[使用檢視與頁面範本來建立 Flask 應用程式](learn-flask-visual-studio-step-02-create-app.md)**
 
 在本教學課程的先前步驟中，您已學會如何建立具有單一獨立式 HTML 頁面的精簡 Flask 應用程式。 不過，現代化 Web 應用程式通常是由許多網頁所組成，並且利用 CSS 和 JavaScript 檔案等共用資源來提供一致的樣式和行為。
 
@@ -113,15 +115,15 @@ Flask 提供一個稱為 `serve_static_file` 的函式，您可以從程式碼�
 
 1. 執行應用程式，然後瀏覽至 /api/data 端點以查看是否已傳回靜態檔案。 完成時，請停止應用程式。
 
-### <a name="question-are-there-any-conventions-for-organizing-static-files"></a>問題：組織靜態檔案有任何慣例嗎？
+### <a name="question-are-there-any-conventions-for-organizing-static-files"></a>問題：整理靜態檔案有任何慣例嗎？
 
-回答：您可以依偏好將其他的 CSS、JavaScript 和 HTML 檔案新增至您的 *static* 資料夾。 組織靜態檔案的一般方式是建立名為 *fonts*、*scripts* 和 *content* 的子資料夾 (針對樣式表和任何其他檔案)。
+回答：您可以視需要將其他 CSS、JavaScript 和 HTML 檔案新增至您的 *static* 資料夾。 組織靜態檔案的一般方式是建立名為 *fonts*、*scripts* 和 *content* 的子資料夾 (針對樣式表和任何其他檔案)。
 
 ### <a name="question-how-do-i-handle-url-variables-and-query-parameters-in-an-api"></a>問題：如何處理 API 中的 URL 變數和查詢參數？
 
-回答：請參閱步驟 1-4 中[問題：Flask 如何與變數 URL 路由和查詢參數搭配運作？](learn-flask-visual-studio-step-01-project-solution.md#qa-url-variables)的回答
+回答：請參閱步驟 1-4 中的[問題：Flask 如何與變數 URL 路由和查詢參數搭配運作？](learn-flask-visual-studio-step-01-project-solution.md#qa-url-variables)
 
-## <a name="step-3-3-add-a-page-to-the-app"></a>步驟 3-3：將頁面加入應用程式
+## <a name="step-3-3-add-a-page-to-the-app"></a>步驟 3-3：將頁面新增至應用程式
 
 將其他頁面加入應用程式意義如下：
 
@@ -288,4 +290,4 @@ Flask 的範本化系統 (預設為 Jinja) 提供兩種方法，可跨多個範�
 - [將 Web 應用程式部署至 Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md)
 - 如需了解更多 Jinja 範本的功能 (例如控制流程)，請參閱 [Jinja 範本設計工具文件](http://jinja.pocoo.org/docs/2.10/templates) \(英文\) (jinja.pocoo.org)
 - 如需有關使用 `url_for`的詳細資料，請參閱 Flask 應用程式物件文件內的 [url_for](http://flask.pocoo.org/docs/1.0/api/?highlight=url_for#flask.url_for)(英文\) (flask.pocoo.org)
-- GitHub 上的教學課程原始程式碼：[Microsoft/python-sample-vs-learning-flask](https://github.com/Microsoft/python-sample-vs-learning-flask) \(英文\)
+- GitHub 上的教學課程原始程式碼：[Microsoft/python-sample-vs-learning-flask](https://github.com/Microsoft/python-sample-vs-learning-flask)

@@ -1,5 +1,6 @@
 ---
-title: 教學課程 - 了解 Visual Studio 中的 Django，步驟 6
+title: Visual Studio 中的了解 Django 教學課程步驟 6，Polls 投票專案範本
+titleSuffix: ''
 description: 以 Django Visual Studio 專案做背景，逐步解說 Django 的基礎知識，我們將重點介紹 Polls Django Web 專案的各項功能，例如自訂管理功能。
 ms.date: 11/19/2018
 ms.prod: visual-studio-dev15
@@ -8,19 +9,20 @@ ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 94c858a847e0e5029a989a6939a2094ed3792903
-ms.sourcegitcommit: f61ad0e8babec8810295f039e67629f4bdebeef0
+ms.openlocfilehash: ecc0637495b484ae06cb0f18e45ba329c7fa3407
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "52001252"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062492"
 ---
-# <a name="step-6-use-the-polls-django-web-project-template"></a>步驟 6：使用投票 Django Web 專案範本
+# <a name="step-6-use-the-polls-django-web-project-template"></a>步驟 6：使用 Polls Django Web 專案範本
 
-**上一個步驟： [在 Django 中驗證使用者](learn-django-in-visual-studio-step-05-django-authentication.md)**
+**上一步：[在 Django 中驗證使用者](learn-django-in-visual-studio-step-05-django-authentication.md)**
 
 在了解 Visual Studio 的「Django Web 專案」 範本之後，讓我們介紹第三個 Django 範本 - 投票 Django Web 專案，它是利用相同的程式碼基底設計而成的，為各位示範如何與資料庫搭配使用。
 
@@ -35,7 +37,7 @@ ms.locfileid: "52001252"
 
 利用這個範本建立的專案，與借鑑 Django 文件的[設計您的第一個 Django 應用程式](https://docs.djangoproject.com/en/2.0/intro/tutorial01/)教學課程所建立的專案，二者並無多大差別。這個網站應用程式有一個公共站台，允許使用者查看各種問卷調查並進行投票，另外還有一個自訂管理界面，您可以用來管理問卷調查。 它採用與 Django Web 專案範本相同的驗證系統，並實作 Django 模型，讓資料庫發揮更大的用途。相關資訊，請參閱以下各節。
 
-## <a name="step-6-1-create-the-project-and-initialize-the-database"></a>步驟 6-1： 建立專案，並初始化資料庫
+## <a name="step-6-1-create-the-project-and-initialize-the-database"></a>步驟 6-1：建立專案並初始化資料庫
 
 1. 在 Visual Studio 中，移至 [方案總管]，接著在本教學課程稍早建立的 **LearningDjango** 方案上按一下滑鼠右鍵，然後依序選取 [新增] > [新增專案]。 (或者，如果您想要使用新的方案，請依序選取 [檔案] > [新增] > [專案])。
 
@@ -67,7 +69,7 @@ ms.locfileid: "52001252"
 
 如前文所述， 如果您已瀏覽 Visual Studio 中的其他專案範本，那麼對於利用「投票 Django Web 專案」範本所建立的專案，應該有一定的了解。 本文章中的其他步驟會歸納更重大的修改和增添，也就是資料模型和其他檢視。
 
-### <a name="question-what-does-the-django-migrate-command-do"></a>問題：Django 遷移命令有何作用？
+### <a name="question-what-does-the-django-migrate-command-do"></a>問題：Django 移轉命令有何作用？
 
 回答：**Django 遷移**命令專門負責執行 `manage.py migrate` 命令，然後這個命令又會執行 *app/migrations* 資料夾中先前任何未執行的指令碼。 在本案例中，這個命令會執行這個資料夾中的 *0001_initial.py* 指令碼，以便在資料庫中設定必要的結構描述。
 
@@ -158,11 +160,11 @@ def seed(request):
 
 ![自帶種子資料庫的「投票 Django Web 專案」應用程式](media/django/step06-app-with-seeded-database.png)
 
-### <a name="question-is-it-possible-to-initialize-the-database-using-the-django-administrative-utility"></a>問題：能不能使用 Django 系統管理公用程式來初始化資料庫？
+### <a name="question-is-it-possible-to-initialize-the-database-using-the-django-administrative-utility"></a>問題：可以使用 Django 系統管理公用程式來初始化資料庫嗎？
 
-回答： 可以的，您可以使用 [django-admin loaddata 命令](https://docs.djangoproject.com/en/1.9/ref/django-admin/#loaddata)來完成與應用程式種子頁面中相同的作業。 在完整的 Web 應用程式上進行操作時，您可以將下列兩種方法結合使用：從命令列初始化資料庫，然後將此處的種子頁面轉換成一個 API，這樣您就可以將任何其他 JSON 傳送到這個 API，不需要透過硬式編碼的檔案了。
+回答：可以，您能夠使用 [django-admin loaddata 命令](https://docs.djangoproject.com/en/1.9/ref/django-admin/#loaddata)來完成與應用程式種子頁面相同的作業。 在完整的 Web 應用程式上進行操作時，您可以將下列兩種方法結合使用：從命令列初始化資料庫，然後將此處的種子頁面轉換成一個 API，這樣您就可以將任何其他 JSON 傳送到這個 API，不需要透過硬式編碼的檔案了。
 
-## <a name="step-6-3-use-migrations"></a>步驟 6-3： 使用遷移
+## <a name="step-6-3-use-migrations"></a>步驟 6-3：使用移轉
 
 當您在建立專案之後，執行 `manage.py makemigrations` 命令 (使用 Visual Studio 中的快顯功能表)，Django 會建立 *app/migrations/0001_initial.py* 檔案。 這個檔案包含一個指令碼，可以用來建立初始的資料庫資料表。
 
@@ -190,23 +192,23 @@ Django 會追蹤哪些已套用至任何特定資料庫的遷移，所以只要�
 
 整體來說，Django 的遷移功能表示您永遠不需要手動管理資料庫結構描述。 只要在您的模型做一些變更，接著產生遷移指令碼，然後使用遷移命令來套用這些指令碼就可以了。
 
-### <a name="question-what-happens-if-i-forget-to-run-the-migrate-command-after-making-changes-to-models"></a>問題：萬一我對模型做了一些變更，但之後卻忘了執行遷移命令，該怎麼辦？
+### <a name="question-what-happens-if-i-forget-to-run-the-migrate-command-after-making-changes-to-models"></a>問題：萬一我對模型做了一些變更，但之後卻忘了執行移轉命令，該怎麼辦？
 
-回答： 如果模型與資料庫的內容不相符時，Django 會在執行階段因例外狀況而失敗。 例如，如果您忘記遷移前一節顯示的模型變更，就會看到**沒有這種資料行：app_poll.author** 錯誤訊息：
+回答：如果模型與資料庫的內容不相符，Django 就會在執行階段因適用的例外狀況而失敗。 例如，如果您忘記遷移前一節顯示的模型變更，就會看到**沒有這種資料行：app_poll.author** 錯誤訊息：
 
 ![當模型變更尚未遷移時，就會顯示錯誤](media/django/step06-exception-when-forgetting-to-migrate.png)。
 
-### <a name="question-why-doesnt-solution-explorer-show-newly-generated-scripts-after-running-django-make-migrations"></a>問題： 為什麼執行 Djang 遷移之後，方案總管不顯示產生的新指令碼？
+### <a name="question-why-doesnt-solution-explorer-show-newly-generated-scripts-after-running-django-make-migrations"></a>問題：為什麼執行 Django 移轉之後，[方案總管] 不顯示產生的新指令碼？
 
-回答：雖然產生的新指令碼存在於 *app/migrations* 資料夾並在執行 [Django 遷移] 命令時套用了新指令碼，但因為它們未被新增至 Visual Studio 專案，所以不會自動顯示在 [方案總管] 中。 若要顯示它們，請先依序選取 [專案] > [顯示所有檔案]功能表命令或下圖中列出的工具列按鈕。 這個命令會使用虛線輪廓圖示代表尚未新增至專案中的項目，讓**方案總管**顯示資料夾中的所有檔案。 在您想新增的檔案上按一下滑鼠右鍵，然後選取 [包含在專案中]，這樣下次您認可時，也會將它們包含在原始控制項中。
+回答：雖然產生的新指令碼存在於 *app/migrations* 資料夾中，並會在執行 [Django 移轉] 命令時套用這些新指令碼，但因為它們尚未新增至 Visual Studio 專案，所以不會自動顯示在 [方案總管] 中。 若要顯示它們，請先依序選取 [專案] > [顯示所有檔案]功能表命令或下圖中列出的工具列按鈕。 這個命令會使用虛線輪廓圖示代表尚未新增至專案中的項目，讓**方案總管**顯示資料夾中的所有檔案。 在您想新增的檔案上按一下滑鼠右鍵，然後選取 [包含在專案中]，這樣下次您認可時，也會將它們包含在原始控制項中。
 
 ![包含在方案總管的專案命令中](media/django/step06-include-migrations-script-in-project.png)
 
-### <a name="question-can-i-see-what-migrations-would-be-applied-before-running-the-migrate-command"></a>問題：執行遷移命令之前，有辦法知道哪些遷移會被套用嗎？
+### <a name="question-can-i-see-what-migrations-would-be-applied-before-running-the-migrate-command"></a>問題：執行移轉命令之前，有辦法知道將套用哪些移轉嗎？
 
-回答：可以，請使用 [django admin showmigrations 命令](https://docs.djangoproject.com/en/2.0/ref/django-admin/#showmigrations)。
+回答：有的，請使用 [django-admin showmigrations 命令](https://docs.djangoproject.com/en/2.0/ref/django-admin/#showmigrations)。
 
-## <a name="step-6-4-understand-the-views-and-page-templates-created-by-the-project-template"></a>步驟 6-4：了解專案範本建立的檢視和頁面範本
+## <a name="step-6-4-understand-the-views-and-page-templates-created-by-the-project-template"></a>步驟 6-4：了解專案範本所建立的檢視和頁面範本
 
 「投票 Django Web 專案」範本產生的大部分檢視，例如「關於」和「連絡人」頁面的檢視，與您稍早在本教學課程中利用「Django Web 專案」範本建立的檢視十分類似。 投票應用程式的不同處在於它的首頁會使用模型，也會新增幾個的頁面來進行投票和檢視投票結果。
 
@@ -362,7 +364,7 @@ admin.site.register(Poll, PollAdmin)
 ## <a name="next-steps"></a>後續步驟
 
 > [!Note]
-> 如果您一直在致力於為本教學課程中的原始檔控制，研究出自己的 Visual Studio 方案，現在是另一次做出貢獻的好機會。 您的方案應與 GitHub 上的教學課程原始程式碼相吻合：[Microsoft/python-sample-vs-learning-django](https://github.com/Microsoft/python-sample-vs-learning-django)。
+> 如果您一直在致力於為本教學課程中的原始檔控制，研究出自己的 Visual Studio 方案，現在是另一次做出貢獻的好機會。 您的解決方案應與 GitHub 上教學課程原始程式碼相符：[Microsoft/python-sample-vs-learning-django](https://github.com/Microsoft/python-sample-vs-learning-django)。
 
 您現在已探索完 Visual Studio 中的「空白 Django Web 專案」、「Django Web 專案」和「投票 Django Web 專案」 範本的全部內容。 您學會了 Django 的所有基礎知識，例如檢視和範本，也探索了路由、驗證及資料庫模型的應用。 您現在應該能夠利用所有必備的檢視和模型，建立您自己的 Web 應用程式。
 

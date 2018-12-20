@@ -1,5 +1,5 @@
 ---
-title: 建立 Visual Studio 的多專案範本
+title: 建立多重專案範本
 ms.date: 01/02/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -11,14 +11,14 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 24002512ec891866839ad3bd33590c3dfe966e99
-ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
+ms.openlocfilehash: f53fa69f9fafd1dd3686a80fb367c2bc0b99a013
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38978381"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53049660"
 ---
-# <a name="how-to-create-multi-project-templates"></a>如何：建立多專案範本
+# <a name="how-to-create-multi-project-templates"></a>HOW TO：建立多重專案範本
 
 多專案範本是做為兩個以上專案的容器使用。 當您根據多專案範本從 [新增專案] 對話方塊建立專案時，範本中的每個專案都會新增至解決方案。
 

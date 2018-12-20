@@ -1,5 +1,5 @@
 ---
-title: 建立 Visual Studio 的多檔案項目範本
+title: 建立多檔案項目範本
 ms.date: 01/02/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -11,14 +11,14 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 0ba36e666daf7940971dff587aa483d62f97b6a9
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: dd2cbe6d7a0ff586c0e673a6eb0e3d42aa4dec4e
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31942152"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53065405"
 ---
-# <a name="how-to-create-multi-file-item-templates"></a>如何：建立多檔案項目範本
+# <a name="how-to-create-multi-file-item-templates"></a>HOW TO：建立多重檔案項目範本
 
 項目範本只能指定一個項目，但有時項目是由多個檔案所構成。 例如，Windows Forms 項目範本需要下列三個檔案：
 
@@ -38,7 +38,7 @@ ms.locfileid: "31942152"
 
 1. 以手動建立單一檔案項目範本的方式建立項目範本，但包含構成多檔案項目的每一個檔案。
 
-1. 在 *.vstemplate* XML 檔案中，為每個個別的檔案新增 `ProjectItem` 項目，並在此項目中新增 `TargetFileName` 屬性。 將 `TargetFileName` 屬性的值設為 *$fileinputname$.FileExtension*，其中 *FileExtension* 是範本中所含檔案的檔案副檔名。 例如: 
+1. 在 *.vstemplate* XML 檔案中，為每個個別的檔案新增 `ProjectItem` 項目，並在此項目中新增 `TargetFileName` 屬性。 將 `TargetFileName` 屬性的值設為 *$fileinputname$.FileExtension*，其中 *FileExtension* 是範本中所含檔案的檔案副檔名。 例如：
 
     ```xml
     <ProjectItem TargetFileName="$fileinputname$.vb">
@@ -59,7 +59,7 @@ ms.locfileid: "31942152"
 
    您選取的檔案即會壓縮成 *.zip* 檔。
 
-1. 將 *.zip* 檔案複製到使用者項目範本的位置。 此目錄預設為 *%USERPROFILE%\Documents\Visual Studio \<版本\>\Templates\ItemTemplates*。 如需詳細資訊，請參閱[如何：尋找並整理範本](../ide/how-to-locate-and-organize-project-and-item-templates.md)。
+1. 將 *.zip* 檔案複製到使用者項目範本的位置。 此目錄預設為 *%USERPROFILE%\Documents\Visual Studio \<版本\>\Templates\ItemTemplates*。 如需詳細資訊，請參閱[＜How to：尋找並整理範本](../ide/how-to-locate-and-organize-project-and-item-templates.md)。
 
 1. 結束再重新開啟 Visual Studio。
 

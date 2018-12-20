@@ -1,5 +1,6 @@
 ---
-title: 使用 Python 教學課程，步驟 5，安裝套件
+title: Visual Studio 中的 Python 教學課程步驟 5，安裝套件
+titleSuffix: ''
 description: 在 Visual Studio 中 Python 功能核心逐步解說的步驟 5，示範 Visual Studio 在 Python 環境中管理套件的功能。
 ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
@@ -8,19 +9,20 @@ ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 82cb54eb64d0864ba3b1d326d68f7303d3f2d882
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 81dccdb276596e96e1a7064f796afa43de79f032
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50220504"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53067284"
 ---
-# <a name="step-5-install-packages-in-your-python-environment"></a>步驟 5：在 Python 環境中安裝套件
+# <a name="step-5-install-packages-in-your-python-environment"></a>步驟 5：在您的 Python 環境中安裝套件
 
-**上一步：[在偵錯工具中執行程式碼](tutorial-working-with-python-in-visual-studio-step-04-debugging.md)**
+**先前步驟：[在偵錯工具中執行程式碼](tutorial-working-with-python-in-visual-studio-step-04-debugging.md)**
 
 Python 開發人員社群已產生數千個有用的套件，您可以將它們加入自己的專案。 Visual Studio 提供了一個可在 Python 環境中管理套件的 UI。
 

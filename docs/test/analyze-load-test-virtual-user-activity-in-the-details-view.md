@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Studio 中分析負載測試虛擬使用者活動
+title: 分析負載測試虛擬使用者活動
 ms.date: 10/03/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 58ab8859bffa89ae19eed6d37c442b71f98ef224
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: ff4d71af450fa6d3f907bb1e1b5b963044e959ff
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52896090"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53059904"
 ---
 # <a name="analyzing-load-test-virtual-user-activity-in-the-details-view-of-the-load-test-analyzer"></a>在負載測試分析器的詳細資料檢視中分析負載測試虛擬使用者活動
 
@@ -59,7 +59,7 @@ ms.locfileid: "52896090"
 |-|-|
 |**執行負載測試：** 建立負載測試並設定為啟用虛擬使用者活動資料收集之後，您必須執行測試，直到測試完成才能檢視 [虛擬使用者活動圖]。||
 |**檢視其中包含虛擬使用者活動資料的負載測試結果：** 建立、設定以及完成執行負載測試之後，您可以使用 [虛擬使用者活動圖] 檢視虛擬使用者活動資料。|-   [分析負載測試結果](../test/analyze-load-test-results-using-the-load-test-analyzer.md)<br />-   [如何：分析虛擬使用者在負載測試期間的行為](../test/how-to-analyze-virtual-user-activity-during-a-load-test.md)|
-|**找出負載測試中的效能問題：** 您可以使用 [虛擬使用者活動圖]，協助在負載測試中找出效能問題。|-   [逐步解說：使用虛擬使用者活動圖來隔離問題](../test/walkthrough-use-the-virtual-user-activity-chart-to-isolate-issues.md)|
+|**找出負載測試中的效能問題：** 您可以使用 [虛擬使用者活動圖]，協助在負載測試中找出效能問題。|-   [逐步解說：使用虛擬使用者活動圖來找出問題](../test/walkthrough-use-the-virtual-user-activity-chart-to-isolate-issues.md)|
 
 ## <a name="see-also"></a>另請參閱
 

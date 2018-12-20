@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Studio 中撰寫 C++ DLL 的單元測試
+title: 撰寫 C++ DLL 的單元測試
 ms.date: 11/04/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -9,22 +9,22 @@ manager: douge
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 829882cf3504583a4e9dbc3532c900df26a921f2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 045f33c2afcb4f37f5ab81beb21e778edbdd1a61
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49862517"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53056171"
 ---
 # <a name="write-unit-tests-for-c-dlls-in-visual-studio"></a>在 Visual Studio 中撰寫 C++ DLL 的單元測試
 
  有幾種方式可以測試 DLL 程式碼，這取決於它是否匯出您要測試的函式。 請選擇下列其中一種方式：
 
- **單元測試只會呼叫從 DLL 匯出的函式：** 新增個別的測試專案，如[撰寫 C/C++ 的單元測試](writing-unit-tests-for-c-cpp.md)中所述。 在測試專案中，加入 DLL 專案的參考。
+ **單元測試只會呼叫從 DLL 匯出的函式：** 如[撰寫 C/C++ 的單元測試](writing-unit-tests-for-c-cpp.md)中所述，新增個別的測試專案。 在測試專案中，加入 DLL 專案的參考。
 
  移至[從 DLL 專案參考匯出的函式](#projectRef)程序。
 
- **DLL 建置為 .exe 檔：** 新增個別的測試專案。 將它連結至輸出目的檔。
+ **DLL 建置為 .exe 檔：** 加入個別的測試專案。 將它連結至輸出目的檔。
 
  移至[將測試連結至物件或程式庫檔案](#objectRef)程序。
 
@@ -34,7 +34,7 @@ ms.locfileid: "49862517"
 
  移至[將 DLL 變更為靜態程式庫](#staticLink)程序。
 
- **單元測試必須呼叫未匯出的非成員函式，而程式碼必須建置為動態連結程式庫 (DLL)：** 將單元測試新增至與產品程式碼相同的專案中。
+ **單元測試必須呼叫未匯出的非成員函式，而程式碼必須建置為動態連結程式庫 (DLL)：** 將單元測試加入至與產品程式碼相同的專案中。
 
  請移至[在相同專案中新增單元測試](#sameProject)程序。
 

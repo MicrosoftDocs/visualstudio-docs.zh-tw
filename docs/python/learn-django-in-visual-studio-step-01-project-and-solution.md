@@ -1,5 +1,6 @@
 ---
-title: 教學課程 - 了解 Visual Studio 中的 Django，步驟 1
+title: Visual Studio 中的了解 Django 教學課程步驟 1，Django 基本知識
+titleSuffix: ''
 description: 逐步解說 Visual Studio 專案內容中的 Django 基本知識，示範 Visual Studio 為 Django 開發所提供的支援。
 ms.date: 11/19/2018
 ms.prod: visual-studio-dev15
@@ -8,15 +9,16 @@ ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 32779861c3f7b8a0bc8ea9e8a3a42d00a8226e1a
-ms.sourcegitcommit: f61ad0e8babec8810295f039e67629f4bdebeef0
+ms.openlocfilehash: 549bd552cee0d9b833d1dee36f29f3a36b3f5f07
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "52001239"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53061076"
 ---
 # <a name="tutorial-get-started-with-the-django-web-framework-in-visual-studio"></a>教學課程：開始使用 Visual Studio 中的 Django Web 架構
 
@@ -64,7 +66,7 @@ Visual Studio 專案本身則可包含 Django 專案以及多個應用程式。 
     - **位置**：指定要在其中建立 Visual Studio 解決方案和專案的位置。
     - **解決方案**：讓此控制項保持設定為預設的 [建立新解決方案] 選項。
     - **解決方案名稱**：設定為 **LearningDjango**，這適用於本教學課程中作為多個專案容器的解決方案。
-    - **為解決方案建立目錄**：設定維持不變 (預設值)。
+    - **為解決方案建立目錄**：維持在設定狀態 (預設)。
     - **建立新的 Git 存放庫**：選取此選項 (預設為清除)，以便 Visual Studio 在建立解決方案時一併建立本機 Git 存放庫。 若您沒有看到此選項，請執行 Visual Studio 2017 安裝工具，並在 [程式碼工具] 下的 [個別元件] 索引標籤上新增 **Git for Windows** 和 **GitHub Extension for Visual Studio**。
 
 1. 隨後 Visual Studio 會以對話方塊提示您，指出**此專案需要外部套件** (如下所示)。 之所以會出現此對話方塊，是因為範本包含參考最新 Django 1.x 套件的 *requirements.txt* 檔案。 (選取 [顯示必要套件] 來查看確切相依性)。
@@ -73,7 +75,7 @@ Visual Studio 專案本身則可包含 Django 專案以及多個應用程式。 
 
 1. 選取 [我將自行安裝] 選項。 您很快便會建立虛擬環境，以確定它已從原始檔控制中排除。 (環境隨時可以從 *requirements.txt* 建立。)
 
-## <a name="step-1-2-examine-the-git-controls-and-publish-to-a-remote-repository"></a>步驟 1-2：檢查 Git 控制項並發佈至遠端存放庫
+## <a name="step-1-2-examine-the-git-controls-and-publish-to-a-remote-repository"></a>步驟 1-2：檢查 Git 控制項並發佈到遠端存放庫
 
 因為您已在 [新專案] 對話方塊中選取 [建立新的 Git 存放庫]，所以在建立流程完成時，系統便會立即對本機原始檔控制認可此專案。 在此步驟中，您將能熟悉 Visual Studio 的 Git 控制項，以及用來處理原始檔控制的 [Team Explorer] 視窗。
 
@@ -107,15 +109,15 @@ Visual Studio 專案本身則可包含 Django 專案以及多個應用程式。 
 > [!Tip]
 > 若要在 Team Explorer 內快速瀏覽，請選取標題 (在上面影像中標為 [變更] 或 [推送]) 以查看可用頁面的快顯功能表。
 
-### <a name="question-what-are-some-advantages-of-using-source-control-from-the-beginning-of-a-project"></a>問題：從專案一開始就使用原始檔控制會有哪些優點？
+### <a name="question-what-are-some-advantages-of-using-source-control-from-the-beginning-of-a-project"></a>問題：從專案一開始就使用原始檔控制有哪些優點？
 
-回答：首先，從一開始就使用原始檔控制 (特別是在您也使用遠端存放庫時)，可為專案提供頻繁的離站備份。 不同於只在本機檔案系統上維護專案，原始檔控制也能提供完整的變更記錄，並能輕易將單一檔案或整個專案還原至先前的狀態。 該變更記錄可協助判斷迴歸 (測試失敗) 的原因。 此外，原始檔控制在有多人一起處理專案的情況下是不可或缺的，因為它可管理覆寫並提供衝突解決方式。 最後，原始檔控制基本上是一種自動化的形式，可為您妥善設定自動化建置、測試和發行管理。 它確實是針對專案採用 DevOps 的第一步；由於其門檻非常低，因此實在沒有什麼原因不在一開始便使用原始檔控制。
+回答：首先，從一開始就使用原始檔控制 (特別是在您也使用遠端存放庫時)，可為專案提供頻繁的異地備份。 不同於只在本機檔案系統上維護專案，原始檔控制也能提供完整的變更記錄，並能輕易將單一檔案或整個專案還原至先前的狀態。 該變更記錄可協助判斷迴歸 (測試失敗) 的原因。 此外，原始檔控制在有多人一起處理專案的情況下是不可或缺的，因為它可管理覆寫並提供衝突解決方式。 最後，原始檔控制基本上是一種自動化的形式，可為您妥善設定自動化建置、測試和發行管理。 它確實是針對專案採用 DevOps 的第一步；由於其門檻非常低，因此實在沒有什麼原因不在一開始便使用原始檔控制。
 
-如需原始檔控制作為自動化的進一步討論，請參閱 MSDN Magazine 針對行動應用程式 (但也同樣適用於 Web 應用程式) 所撰寫的文章：[本質來源：存放庫在 DevOps 中的角色](https://msdn.microsoft.com/magazine/mt763232) \(英文\)。
+如需以自動化進行原始檔控制的進一步討論，請參閱 [The Source of Truth:The Role of Repositories in DevOps](https://msdn.microsoft.com/magazine/mt763232) (原始檔的真相：存放庫在 DevOps 中所扮演的角色)；這篇 MSDN Magazine 中專為行動應用程式撰寫的文章也適用於 Web 應用程式。
 
 ### <a name="question-can-i-prevent-visual-studio-from-auto-committing-a-new-project"></a>問題：我能夠避免 Visual Studio 自動認可新專案嗎？
 
-回答：是。 若要停用自動認可，請移至 [Team Explorer] 中的 [設定] 頁面，選取 [Git] > [全域設定]，清除標示為 [預設在合併後認可變更] 的選項，然後選取 [更新]。
+回答：可以。 若要停用自動認可，請移至 [Team Explorer] 中的 [設定] 頁面，選取 [Git] > [全域設定]，清除標示為 [預設在合併後認可變更] 的選項，然後選取 [更新]。
 
 ## <a name="step-1-3-create-the-virtual-environment-and-exclude-it-from-source-control"></a>步驟 1-3：建立虛擬環境並將它從原始檔控制中排除
 
@@ -147,7 +149,7 @@ Visual Studio 專案本身則可包含 Django 專案以及多個應用程式。 
 
 ### <a name="question-why-do-i-want-to-create-a-virtual-environment"></a>問題：為什麼我要建立虛擬環境？
 
-答案：虛擬環境是隔離應用程式確切相依性的絕佳方法。 這類隔離方式可避免在全域 Python 環境中發生衝突，並協助測試和共同作業。 隨著您持續開發應用程式，不免會帶入許多有用的 Python 套件。 透過將套件留在專案特定的虛擬環境中，您可以輕鬆更新專案中描述該環境的 *requirements.txt* 檔案 (其包含在原始檔控制中)。 將專案複製到任何其他電腦 (包括建置伺服器、部署伺服器及其他開發電腦) 時，只要使用 *requirements.txt* 就能輕鬆重新建立環境 (這就是為何環境不需要位於原始檔控制中的原因)。 如需詳細資訊，請參閱[使用虛擬環境](selecting-a-python-environment-for-a-project.md#use-virtual-environments)。
+回答：虛擬環境是隔離應用程式確切相依性的絕佳方法。 這類隔離方式可避免在全域 Python 環境中發生衝突，並協助測試和共同作業。 隨著您持續開發應用程式，不免會帶入許多有用的 Python 套件。 透過將套件留在專案特定的虛擬環境中，您可以輕鬆更新專案中描述該環境的 *requirements.txt* 檔案 (其包含在原始檔控制中)。 將專案複製到任何其他電腦 (包括建置伺服器、部署伺服器及其他開發電腦) 時，只要使用 *requirements.txt* 就能輕鬆重新建立環境 (這就是為何環境不需要位於原始檔控制中的原因)。 如需詳細資訊，請參閱[使用虛擬環境](selecting-a-python-environment-for-a-project.md#use-virtual-environments)。
 
 ### <a name="question-how-do-i-remove-a-virtual-environment-thats-already-committed-to-source-control"></a>問題：我要如何移除已認可至原始檔控制的虛擬環境？
 
@@ -155,7 +157,7 @@ Visual Studio 專案本身則可包含 Django 專案以及多個應用程式。 
 
 再來，請開啟命令視窗，巡覽至包含虛擬環境資料夾 (例如 *env*) 的資料夾 (例如 *BasicProject*)，然後執行 `git rm -r env`。 接著，從命令列 (`git commit -m 'Remove venv'`) 認可那些變更，或是從 [Team Explorer] 的 [變更] 頁面認可它們。
 
-## <a name="step-1-4-examine-the-boilerplate-code"></a>步驟 1-4：檢查未定案程式碼
+## <a name="step-1-4-examine-the-boilerplate-code"></a>步驟 1-4：檢查重複使用程式碼
 
 專案建立完成之後，請檢查未定案的 Django 專案程式碼 (這同樣和 CLI 命令 `django-admin startproject <project_name>` 所產生的程式碼相同)。
 
@@ -176,7 +178,7 @@ Visual Studio 專案本身則可包含 Django 專案以及多個應用程式。 
 
 ### <a name="question-can-visual-studio-generate-a-requirementstxt-file-from-a-virtual-environment-after-i-install-other-packages"></a>問題：Visual Studio 是否可以在我安裝其他套件之後，從虛擬環境產生 requirements.txt 檔案？
 
-回答：是。 展開 [Python 環境] 節點，以滑鼠右鍵按一下虛擬環境，然後選取 [產生 requirements.txt] 命令。 在您修改環境時，最好定期使用此命令，並將對 *requirements.txt* 的變更，連同依存於該環境的任何其他程式碼變更認可至原始檔控制。 如果您在組建伺服器上設定持續整合，每當您修改環境時，都應該產生該檔案並認可變更。
+回答：可以。 展開 [Python 環境] 節點，以滑鼠右鍵按一下虛擬環境，然後選取 [產生 requirements.txt] 命令。 在您修改環境時，最好定期使用此命令，並將對 *requirements.txt* 的變更，連同依存於該環境的任何其他程式碼變更認可至原始檔控制。 如果您在組建伺服器上設定持續整合，每當您修改環境時，都應該產生該檔案並認可變更。
 
 ## <a name="step-1-5-run-the-empty-django-project"></a>步驟 1-5：執行空白 Django 專案
 
@@ -198,7 +200,7 @@ Visual Studio 專案本身則可包含 Django 專案以及多個應用程式。 
 
 ### <a name="question-whats-the-difference-between-using-the-debug-menu-commands-and-the-server-commands-on-the-projects-python-submenu"></a>問題：使用 [偵錯] 功能表命令和使用專案 Python 子功能表上的伺服器命令，兩者有何差異？
 
-回答：除了 [偵錯] 功能表命令與工具列按鈕之外，您也可以使用專案內容功能表上的 [Python] > [執行伺服器]或 [Python] > [執行偵錯伺服器] 命令來啟動伺服器。 這兩個命令都會開啟主控台視窗，您可在該處看到執行中伺服器的本機 URL (localhost:port)。 不過，您必須使用該 URL 手動開啟瀏覽器，執行偵錯伺服器並不會自動啟動 Visual Studio 偵錯工具。 您可以視需要使用 [偵錯] > [附加至處理序] 命令，於稍後將偵錯工具附加至執行中的處理序。
+回答：除了 [偵錯] 功能表命令與工具列按鈕之外，您也可以使用專案操作功能表上的 [Python] > [執行伺服器] 或 [Python] > [執行偵錯伺服器] 命令來啟動伺服器。 這兩個命令都會開啟主控台視窗，您可在該處看到執行中伺服器的本機 URL (localhost:port)。 不過，您必須使用該 URL 手動開啟瀏覽器，執行偵錯伺服器並不會自動啟動 Visual Studio 偵錯工具。 您可以視需要使用 [偵錯] > [附加至處理序] 命令，於稍後將偵錯工具附加至執行中的處理序。
 
 ## <a name="next-steps"></a>後續步驟
 
@@ -209,6 +211,6 @@ Visual Studio 專案本身則可包含 Django 專案以及多個應用程式。 
 
 ## <a name="go-deeper"></a>深入了解
 
-- Django 專案程式碼：[撰寫第一個 Django 應用程式，第 1 部分](https://docs.djangoproject.com/en/2.0/intro/tutorial01/) \(英文\) (docs.djangoproject.com)
+- Django 專案程式碼：[Writing your first Django app, part 1](https://docs.djangoproject.com/en/2.0/intro/tutorial01/) (撰寫您的第一個 Django 應用程式，第 1 部分) (docs.djangoproject.com)
 - 系統管理公用程式：[django-admin 與 manage.py](https://docs.djangoproject.com/en/2.0/ref/django-admin/) \(英文\) (docs.djangoproject.com)
 - GitHub 上的教學課程原始程式碼：[Microsoft/python-sample-vs-learning-django](https://github.com/Microsoft/python-sample-vs-learning-django)

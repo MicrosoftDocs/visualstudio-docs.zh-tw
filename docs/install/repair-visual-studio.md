@@ -1,22 +1,23 @@
 ---
-title: 修復 Visual Studio 2017 | Microsoft Docs
-description: 了解如何修復 Visual Studio 2017 的安裝。
-keywords: ''
+title: 修復 Visual Studio
+titleSuffix: ''
+description: 了解如何修復 Visual Studio 2017 的安裝
+ms.date: 09/28/2017
+ms.technology: vs-acquisition
+ms.custom: seodec18
+ms.prod: visual-studio-dev15
+ms.topic: conceptual
 author: PoulChapman
 ms.author: tglee
 manager: douge
-ms.date: 09/28/2017
-ms.topic: conceptual
-ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a7717a9ef889ee575afb3cc0b01fbb573a54f1f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a622c005626c28a1275915f3f464b7961cdbd914
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49880426"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53158823"
 ---
 # <a name="repair-visual-studio-2017"></a>修復 Visual Studio 2017
 
@@ -24,12 +25,12 @@ ms.locfileid: "49880426"
 
 1. 在電腦上找到 Visual Studio 安裝程式。
 
-     例如，在執行「Windows 10 年度更新版」或更新版本的電腦上，選取 [開始]****，然後捲動至字母 [V]****，它是列為 [Visual Studio 安裝程式]****。
+     例如，在執行「Windows 10 年度更新版」或更新版本的電腦上，選取 [開始]，然後捲動至字母 [V]，它是列為 [Visual Studio 安裝程式]。
 
    > [!NOTE]
-   >   在某些電腦上，Visual Studio 安裝程式可能會列在 **"M"** 字母下方，成為 [Microsoft Visual Studio 安裝程式]****。<br/><br/> 您也可以在下列位置找到 Visual Studio 安裝程式：`C:\Program Files (x86)\Microsoft Visual Studio\Installer\vs_installer.exe`
+   >   在某些電腦上，Visual Studio 安裝程式可能會列在 **"M"** 字母下方，成為 [Microsoft Visual Studio 安裝程式]。<br/><br/> 您也可以在下列位置找到 Visual Studio 安裝程式：`C:\Program Files (x86)\Microsoft Visual Studio\Installer\vs_installer.exe`
 
-2. 按一下或點選來啟動安裝程式，然後選取 [更多]****，再選取 [修復]****。
+2. 按一下或點選來啟動安裝程式，然後選取 [更多]，再選取 [修復]。
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

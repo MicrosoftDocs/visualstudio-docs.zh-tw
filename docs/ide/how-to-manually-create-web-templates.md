@@ -1,5 +1,5 @@
 ---
-title: 建立 Visual Studio 的 Web 範本
+title: 建立網站範本
 ms.date: 01/02/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -12,14 +12,14 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 4ec63f231698bfa4c5a1360d21908aa2a4e2649e
-ms.sourcegitcommit: 6a955a2d179cd0e137942389f940d9fcbbe125de
+ms.openlocfilehash: cff4fda5113cdbacba2d9389e360707f49ba595b
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51607454"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53063664"
 ---
-# <a name="how-to-manually-create-web-templates"></a>如何：手動建立網站範本
+# <a name="how-to-manually-create-web-templates"></a>HOW TO：手動建立網站範本
 
 建立網站範本與建立其他種類的範本不同。 因為 Web 專案範本出現在 [加入新網站] 對話方塊中，並且依程式語言分類 Web 專案項目，所以 *vstemplate* 檔案必須將範本指定為網站範本，並識別程式設計語言。
 
@@ -43,7 +43,7 @@ ms.locfileid: "51607454"
    - CSharp
    - VisualBasic
 
-     例如: 
+     例如：
 
      ```xml
      <TemplateData>

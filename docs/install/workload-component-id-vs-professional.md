@@ -1,5 +1,6 @@
 ---
 title: Visual Studio Professional 2017 工作負載和元件識別碼
+titleSuffix: ''
 description: 使用工作負載和元件識別碼透過命令列安裝 Visual Studio，或是在 VSIX 資訊清單中指定為相依性
 keywords: ''
 author: TerryGLee
@@ -17,12 +18,12 @@ ms.prod: visual-studio-dev15
 ms.assetid: 5719032b-2c2e-416e-a281-a4573ec74e38
 ms.workload:
 - multiple
-ms.openlocfilehash: 38b826ad23da0fb25d68411bbc29b98fe8bac111
-ms.sourcegitcommit: 6a955a2d179cd0e137942389f940d9fcbbe125de
+ms.openlocfilehash: 38c4d3a37f0327137cd1398b64efc2a0fb4be088
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51607948"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068606"
 ---
 # <a name="visual-studio-professional-2017-component-directory"></a>Visual Studio Professional 2017 元件目錄
 
@@ -35,7 +36,7 @@ ms.locfileid: "51607948"
 * 您也可以選擇安裝「建議」元件和「選擇性」元件。
 * 我們還新增了一個章節，當中列出不屬於任何工作負載的額外元件。
 
-當您在 VSIX 資訊清單中設定相依性時，必須僅指定「元件識別碼」。 請使用此頁面上的表格來決定我們的最基本元件相依性。 在某些情況下，這可能意謂著您僅指定一個來自工作負載的元件。 在其他情況下，則可能意謂著您指定來自單一工作負載的多個元件，或來自多個工作負載的多個元件。 如需詳細資訊，請參閱[如何︰將擴充性專案移轉至 Visual Studio 2017 (英文)](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md) 頁面。
+當您在 VSIX 資訊清單中設定相依性時，必須僅指定「元件識別碼」。 請使用此頁面上的表格來決定我們的最基本元件相依性。 在某些情況下，這可能意謂著您僅指定一個來自工作負載的元件。 在其他情況下，則可能意謂著您指定來自單一工作負載的多個元件，或來自多個工作負載的多個元件。 如需詳細資訊，請參閱[如何：將擴充性專案移轉至 Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md) 頁面。
 
 如需有關如何使用這些識別碼的詳細資訊，請參閱[使用命令列參數安裝 Visual Studio 2017](use-command-line-parameters-to-install-visual-studio.md) 頁面。 而如需其他產品的工作負載和元件識別碼清單，請參閱 [Visual Studio 2017 工作負載和元件識別碼 (英文)](workload-and-component-ids.md) 頁面。
 
@@ -56,7 +57,7 @@ Microsoft.VisualStudio.Component.StartPageExperiment.Cpp | C++ 使用者的 Visu
 
 **識別碼：** Microsoft.VisualStudio.Workload.Azure
 
-**描述：** 用於開發雲端 App、建立資源及建置包含 Docker 支援之容器的 Azure SDK、工具及專案。
+**描述：** Azure SDK、工具及專案，可用於開發雲端應用程式、建立資源及建置包含 Docker 支援的容器。
 
 ### <a name="components-included-by-this-workload"></a>此工作負載所包含的元件
 
@@ -150,7 +151,7 @@ Microsoft.VisualStudio.Component.Wcf.Tooling | Windows Communication Foundation 
 
 **識別碼：** Microsoft.VisualStudio.Workload.Data
 
-**描述：** 使用 SQL Server、Azure Data Lake 或 Hadoop 來連線、開發及測試資料解決方案。
+**描述：** 使用 SQL Server、Azure Data Lake 或 Hadoop 連線、開發及測試資料解決方案。
 
 ### <a name="components-included-by-this-workload"></a>此工作負載所包含的元件
 
@@ -211,7 +212,7 @@ Microsoft.VisualStudio.Component.FSharp.Desktop | F# 桌面語言支援 | 15.8.2
 
 **識別碼：** Microsoft.VisualStudio.Workload.DataScience
 
-**描述：** 用於建立資料科學應用程式的語言與工具，包括 Python、R 和 F#。
+**描述：** 用於建立資料科學應用程式的語言與工具，包括 Python、R 及 F#。
 
 ### <a name="components-included-by-this-workload"></a>此工作負載所包含的元件
 
@@ -256,7 +257,7 @@ Microsoft.VisualStudio.Component.Windows81SDK | Windows 8.1 SDK | 15.6.27406.0 |
 
 **識別碼：** Microsoft.VisualStudio.Workload.ManagedDesktop
 
-**描述：** 使用 C#、Visual Basic 與 F# 來建置 WPF、Windows Forms 和主控台應用程式。
+**描述：** 使用 C#、Visual Basic 及 F# 來建置 WPF、Windows Forms 與主控台應用程式。
 
 ### <a name="components-included-by-this-workload"></a>此工作負載所包含的元件
 
@@ -331,7 +332,7 @@ Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions | ASP.NET 與網頁程�
 
 **識別碼：** Microsoft.VisualStudio.Workload.ManagedGame
 
-**描述：** 使用強大的跨平台開發環境 Unity 來建立 2D 與 3D 遊戲。
+**描述：** 使用強大的跨平台開發環境 Unity 來建立 2D 和 3D 遊戲。
 
 ### <a name="components-included-by-this-workload"></a>此工作負載所包含的元件
 
@@ -351,7 +352,7 @@ Component.UnityEngine.x86 | Unity 5.6 32 位元編輯器 | 15.6.27406.0 | 建議
 
 **識別碼：** Microsoft.VisualStudio.Workload.NativeCrossPlat
 
-**描述：** 建立在 Linux 環境中執行的應用程式並對其進行偵錯。
+**描述：** 建立和偵錯 Linux 環境中執行的應用程式。
 
 ### <a name="components-included-by-this-workload"></a>此工作負載所包含的元件
 
@@ -371,7 +372,7 @@ Component.MDD.Linux.GCC.arm | 內嵌及 IoT 開發 | 15.6.27309.0 | Optional
 
 **識別碼：** Microsoft.VisualStudio.Workload.NativeDesktop
 
-**描述：** 使用 Microsoft C++ 工具組、ATL 或 MFC 建置 Windows 傳統型應用程式。
+**描述：** 使用 Microsoft C++ 工具組、ATL 或 MFC 來建置 Windows 傳統型應用程式。
 
 ### <a name="components-included-by-this-workload"></a>此工作負載所包含的元件
 
@@ -426,7 +427,7 @@ Microsoft.VisualStudio.ComponentGroup.Windows10SDK.16299 | Windows 10 SDK (10.0.
 
 **識別碼：** Microsoft.VisualStudio.Workload.NativeGame
 
-**描述：** 使用 C++ 的完整功能來建置由 DirectX、Unreal 或 Cocos2d 提供技術的專業遊戲。
+**描述：** 使用 C++ 的完整功能來建置採用 DirectX、Unreal 或 Cocos2d 技術的專業遊戲。
 
 ### <a name="components-included-by-this-workload"></a>此工作負載所包含的元件
 
@@ -484,7 +485,7 @@ Microsoft.VisualStudio.ComponentGroup.Windows10SDK.16299 | Windows 10 SDK (10.0.
 
 **識別碼：** Microsoft.VisualStudio.Workload.NativeMobile
 
-**描述：** 使用 C++ 來建置適用於 iOS、Android 或 Windows 的跨平台應用程式。
+**描述：** 使用 C++ 來建置 iOS、Android 或 Windows 的跨平台應用程式。
 
 ### <a name="components-included-by-this-workload"></a>此工作負載所包含的元件
 
@@ -515,7 +516,7 @@ Component.MDD.IOS | C++ iOS 開發工具 | 15.0.26621.2 | Optional
 
 **識別碼：** Microsoft.VisualStudio.Workload.NetCoreTools
 
-**描述：** 使用 .NET Core、ASP.NET Core、HTML/JavaScript 及包括 Docker 支援的容器來建置跨平台的應用程式。
+**描述：** 使用 .NET Core、ASP.NET Core、HTML/JavaScript 及包括 Docker 支援的容器來建置跨平台應用程式。
 
 ### <a name="components-included-by-this-workload"></a>此工作負載所包含的元件
 
@@ -583,7 +584,7 @@ Microsoft.VisualStudio.ComponentGroup.IISDevelopment | 開發時間的 IIS 支�
 
 **識別碼：** Microsoft.VisualStudio.Workload.NetCrossPlat
 
-**描述：** 使用 Xamarin 來建置適用於 iOS、Android 或 Windows 的跨平台應用程式。
+**描述：** 使用 Xamarin 來建置 iOS、Android 或 Windows 的跨平台應用程式。
 
 ### <a name="components-included-by-this-workload"></a>此工作負載所包含的元件
 
@@ -713,7 +714,7 @@ Microsoft.VisualStudio.Web.Mvc4.ComponentGroup | ASP.NET MVC 4 | 15.6.27406.0 | 
 
 **識別碼：** Microsoft.VisualStudio.Workload.Node
 
-**描述：** 使用非同步的事件驅動 JavaScript 執行階段 Node.js 來建置可調整的網路應用程式。 
+**描述：** 使用非同步事件驅動的 JavaScript 執行階段 Node.js 來建置可調整網路應用程式。 
 
 ### <a name="components-included-by-this-workload"></a>此工作負載所包含的元件
 
@@ -806,7 +807,7 @@ Microsoft.Net.ComponentGroup.4.7.DeveloperTools | .NET Framework 4.7 開發工�
 
 **識別碼：** Microsoft.VisualStudio.Workload.Python
 
-**描述︰** 對 Python 進行編輯、偵錯、互動式開發及原始檔控制。
+**描述：** 適用於 Python 的編輯、偵錯、互動式開發及原始檔控制。
 
 ### <a name="components-included-by-this-workload"></a>此工作負載所包含的元件
 
@@ -889,7 +890,7 @@ Microsoft.VisualStudio.ComponentGroup.Web | ASP.NET 和 Web 開發工具的必�
 
 **識別碼：** Microsoft.VisualStudio.Workload.Universal
 
-**描述：** 使用 C#、VB、JavaScript 或選用 C++ 來建立適用於通用 Windows 平台的應用程式。
+**描述：** 使用 C#、VB、JavaScript 或選擇性的 C++ 來建立通用 Windows 平台應用程式。
 
 ### <a name="components-included-by-this-workload"></a>此工作負載所包含的元件
 
@@ -951,7 +952,7 @@ Microsoft.VisualStudio.ComponentGroup.Windows10SDK.16299 | Windows 10 SDK (10.0.
 
 **識別碼：** Microsoft.VisualStudio.Workload.VisualStudioExtension
 
-**描述：** 建立適用於 Visual Studio 的附加元件與擴充功能，包括新的命令、程式碼分析器及工具視窗。
+**描述：** 建立適用於 Visual Studio 的增益集與延伸模組，包括新的命令、程式碼分析器與工具視窗。
 
 ### <a name="components-included-by-this-workload"></a>此工作負載所包含的元件
 
@@ -987,7 +988,7 @@ Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | VC++ 2017 15.9 版 v14.16 �
 
 **識別碼：** Microsoft.VisualStudio.Workload.WebCrossPlat
 
-**描述：** 使用適用於 Apache Cordova 的工具來建置 Android、iOS 及 UWP 應用程式。
+**描述：** 使用 Apache Cordova 工具來建置 Android、iOS 及 UWP 應用程式。
 
 ### <a name="components-included-by-this-workload"></a>此工作負載所包含的元件
 

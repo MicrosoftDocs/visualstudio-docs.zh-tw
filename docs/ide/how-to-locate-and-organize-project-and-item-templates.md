@@ -1,5 +1,5 @@
 ---
-title: 整理 Visual Studio 中的範本
+title: 組織範本
 ms.date: 01/02/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -13,14 +13,14 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 65d4940e7a7969fe28fe115ec7ef42cfdc645c9a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c6bca61dd88b164fcae2b2ccb7e2a98086bf102b
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31948726"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53066284"
 ---
-# <a name="how-to-locate-and-organize-project-and-item-templates"></a>如何：尋找並整理專案範本和項目範本
+# <a name="how-to-locate-and-organize-project-and-item-templates"></a>HOW TO：尋找及整理專案與項目範本
 
 範本檔案必須放在 Visual Studio 可以辨識的位置，這樣範本才會出現在 [新增專案] 和 [新增項目] 對話方塊中。 您也可以在使用者範本位置中建立自訂的子目錄，且目錄會顯示在 [新增專案] 和 [新增項目] 對話方塊中。
 

@@ -1,5 +1,6 @@
 ---
-title: 教學課程 - 了解 Visual Studio 中的 Flask，步驟 2
+title: Visual Studio 中的了解 Flask 教學課程步驟 2，檢視與範本
+titleSuffix: ''
 description: 逐步解說 Visual Studio 專案內容中的 Flask 基本知識，特別是建立應用程式及使用檢視與範本的步驟。
 ms.date: 09/04/2018
 ms.prod: visual-studio-dev15
@@ -8,19 +9,20 @@ ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 92b34ed0abbef18473ab9ccf6b85c236111822f9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: cbdf9232bdff56fa2d244f8baeed2d070dcb37a9
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49812617"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53052941"
 ---
 # <a name="step-2-create-a-flask-app-with-views-and-page-templates"></a>步驟 2：使用檢視與頁面範本來建立 Flask 應用程式
 
-**上一個步驟：[建立 Visual Studio 專案和解決方案](learn-flask-visual-studio-step-01-project-solution.md)**
+**上一步：[建立 Visual Studio 專案和方案](learn-flask-visual-studio-step-01-project-solution.md)**
 
 本教學課程步驟 1 會產生一個 Flask 應用程式。此應用程式為單一檔案，其中包含單一頁面與所有程式碼。 若要考慮進一步開發，最好是將程式碼重構，並為頁面範本建立結構。 特別是，您會想要將應用程式檢視程式碼與其他方面 (例如起始程式碼) 分開。
 
@@ -196,11 +198,11 @@ ms.locfileid: "49812617"
 
 ### <a name="question-do-page-templates-have-to-be-in-a-separate-file"></a>問題：頁面範本是否必須位於個別檔案中？
 
-回答：雖然範本通常會維護於個別的 HTML 檔案中，您也可以使用內嵌範本。 不過，還是建議您使用個別的檔案，以在標記和程式碼之間維持清楚的分隔。
+回答：雖然範本通常會維護於個別的 HTML 檔案中，但您也可以使用內嵌範本。 不過，還是建議您使用個別的檔案，以在標記和程式碼之間維持清楚的分隔。
 
 ### <a name="question-must-templates-use-the-html-file-extension"></a>問題：範本必須使用 .html 副檔名嗎？
 
-回答：頁面範本檔案的 *.html* 副檔名完全是選擇性的，因為您一律是在 `render_template` 函式的第一個引數中識別檔案的確切相對路徑。 不過，Visual Studio (與其他編輯器) 通常會針對 *.html* 檔案為您提供程式碼完成和語法色彩等功能，其重要性超過頁面範本不一定是 HTML 的事實。
+回答：頁面範本檔案的 *.html* 副檔名完全是選擇性的，因為您一定會在 `render_template` 函式第一個引數中識別該檔案的確切相對路徑。 不過，Visual Studio (與其他編輯器) 通常會針對 *.html* 檔案為您提供程式碼完成和語法色彩等功能，其重要性超過頁面範本不一定是 HTML 的事實。
 
 實際上，當您在處理 Flask 專案時，Visual Studio 會自動偵測出您正在編輯的 HTML 檔案實際上是 Flask 範本，然後提供一些自動完成功能。 例如，當您開始鍵入 Flask 頁面範本註解 (`{#`) 時，Visual Studio 會自動提供結尾的 `#}` 字元。 [註解選取範圍] 與 [取消註解選取範圍] 命令 (位在 [編輯] > [進階] 功能表和工具列上) 也會使用範本註解，而不是 HTML 註解。
 
@@ -220,4 +222,4 @@ ms.locfileid: "49812617"
 ## <a name="go-deeper"></a>深入了解
 
 - [Flask 快速入門 - 轉譯範本](http://flask.pocoo.org/docs/1.0/quickstart/#rendering-templates) \(英文\) (flask.pocoo.org)
-- GitHub 上的教學課程原始程式碼：[Microsoft/python-sample-vs-learning-flask](https://github.com/Microsoft/python-sample-vs-learning-flask) \(英文\)
+- GitHub 上的教學課程原始程式碼：[Microsoft/python-sample-vs-learning-flask](https://github.com/Microsoft/python-sample-vs-learning-flask)

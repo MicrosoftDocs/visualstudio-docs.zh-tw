@@ -1,5 +1,5 @@
 ---
-title: Visual Studio Devenv 命令列參數
+title: Devenv 命令列參數
 ms.date: 02/28/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 818bbb38fab706dde2f4d36d5a534e0a351a6450
-ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
+ms.openlocfilehash: 3bf255a0e4eb622cb81718ddfc30d5b568bad2c2
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "51948890"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53063392"
 ---
 # <a name="devenv-command-line-switches"></a>Devenv 命令列參數
 
@@ -60,7 +60,7 @@ Devenv 可讓您設定整合式開發環境 (IDE) 的各種選項，也可讓您
 
 下列命令列參數顯示 IDE，並執行所述的工作。
 
-|命令列參數|描述|
+|命令列參數|說明|
 | - |-----------------|
 |[/Command](../../ide/reference/command-devenv-exe.md)|啟動 IDE，並執行指定的命令。|
 |[/DebugExe](../../ide/reference/debugexe-devenv-exe.md)|在偵錯工具的控制下載入 C++ 可執行檔。 此參數不適用於 Visual Basic 或 C# 可執行檔。 如需詳細資訊，請參閱[在偵錯工具中自動啟動處理序](../../debugger/debug-multiple-processes.md#BKMK_Automatically_start_an_process_in_the_debugger)。|
@@ -76,7 +76,7 @@ Devenv 可讓您設定整合式開發環境 (IDE) 的各種選項，也可讓您
 
 下列命令列參數不會顯示 IDE。
 
-|命令列參數|描述|
+|命令列參數|說明|
 | - |-----------------|
 |[/?](../../ide/reference/q-devenv-exe.md)|在 [命令提示字元] 視窗中顯示 devenv 參數的說明。<br /><br /> `devenv /?`|
 |[/Build](../../ide/reference/build-devenv-exe.md)|根據所指定方案的組態，建置指定的方案或專案。<br /><br /> `devenv myproj.csproj /build`|

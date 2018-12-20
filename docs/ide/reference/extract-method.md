@@ -1,5 +1,5 @@
 ---
-title: 使用 Visual Studio 來擷取方法
+title: 擷取方法
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -14,12 +14,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6978457fdc976f87a8334b181ab69dfd78ef240c
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: b80b5053022b9e42bb6cfd30e3c76a72bef70746
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51294536"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53064610"
 ---
 # <a name="extract-a-method-refactoring"></a>擷取方法重構
 
@@ -31,7 +31,7 @@ ms.locfileid: "51294536"
 
 **功能：** 讓您將程式碼片段轉換成它自己的方法。
 
-**時機：** 您在某個必須從另一個方法來呼叫的方法中有現有的程式碼片段。
+**時機：** 您在某個必須從另一個方法呼叫之方法中有現有的程式碼片段。
 
 **原因：** 您可以複製/貼上該程式碼，但那樣會造成重複。 較好的解決方案是將該片段重構成它自己的且可由任何其他方法自由呼叫的方法。
 

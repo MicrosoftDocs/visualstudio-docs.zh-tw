@@ -1,5 +1,6 @@
 ---
 title: Visual Studio Test Controller 2017 工作負載和元件識別碼
+titleSuffix: ''
 description: 使用 Visual Studio 工作負載和元件識別碼將自動化測試散發到多部電腦
 keywords: ''
 author: TerryGLee
@@ -17,12 +18,12 @@ ms.prod: visual-studio-dev15
 ms.assetid: fbbda9c8-d2c6-474d-b52d-a95227d52fe7
 ms.workload:
 - multiple
-ms.openlocfilehash: de9dae76799080baf773600cea7155162c9fe618
-ms.sourcegitcommit: 6a955a2d179cd0e137942389f940d9fcbbe125de
+ms.openlocfilehash: 48d95724c64d1335067139a8e036febdef137d52
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51607520"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53048443"
 ---
 # <a name="visual-studio-test-controller-2017-component-directory"></a>Visual Studio Test Controller 2017 元件目錄
 
@@ -35,7 +36,7 @@ ms.locfileid: "51607520"
 * 您也可以選擇安裝「建議」元件和「選擇性」元件。
 * 我們還新增了一個章節，當中列出不屬於任何工作負載的額外元件。
 
-當您在 VSIX 資訊清單中設定相依性時，必須僅指定「元件識別碼」。 請使用此頁面上的表格來決定我們的最基本元件相依性。 在某些情況下，這可能意謂著您僅指定一個來自工作負載的元件。 在其他情況下，則可能意謂著您指定來自單一工作負載的多個元件，或來自多個工作負載的多個元件。 如需詳細資訊，請參閱[如何︰將擴充性專案移轉至 Visual Studio 2017 (英文)](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md) 頁面。
+當您在 VSIX 資訊清單中設定相依性時，必須僅指定「元件識別碼」。 請使用此頁面上的表格來決定我們的最基本元件相依性。 在某些情況下，這可能意謂著您僅指定一個來自工作負載的元件。 在其他情況下，則可能意謂著您指定來自單一工作負載的多個元件，或來自多個工作負載的多個元件。 如需詳細資訊，請參閱[如何：將擴充性專案移轉至 Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md) 頁面。
 
 如需有關如何使用這些識別碼的詳細資訊，請參閱[使用命令列參數安裝 Visual Studio 2017](use-command-line-parameters-to-install-visual-studio.md) 頁面。 而如需其他產品的工作負載和元件識別碼清單，請參閱 [Visual Studio 2017 工作負載和元件識別碼 (英文)](workload-and-component-ids.md) 頁面。
 
@@ -43,7 +44,7 @@ ms.locfileid: "51607520"
 
 **識別碼：** Microsoft.VisualStudio.Workload.TestController
 
-**描述：** 將自動化測試散發到多部電腦
+**描述：** 將自動化的測試散發至多部電腦
 
 ### <a name="components-included-by-this-workload"></a>此工作負載所包含的元件
 

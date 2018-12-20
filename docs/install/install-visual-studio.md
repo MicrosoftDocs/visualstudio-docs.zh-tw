@@ -1,7 +1,8 @@
 ---
-title: 安裝 Visual Studio 2017 | Microsoft Docs
+title: 安裝 Visual Studio
+titleSuffix: ''
 description: 了解如何逐步安裝 Visual Studio。
-ms.custom: ''
+ms.custom: seodec18
 ms.date: 05/07/2018
 ms.technology: vs-acquisition
 ms.prod: visual-studio-dev15
@@ -19,12 +20,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c3ba26f014b09624b1a8fec88bed8a5aefa632b
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 9160a5ebca6efe2cca48a2b8832a51fab3c6ca5a
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349685"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159733"
 ---
 # <a name="install-visual-studio-2017"></a>安裝 Visual Studio 2017
 
@@ -125,7 +126,7 @@ ms.locfileid: "51349685"
 
 ## <a name="step-7---change-the-installation-location-optional"></a>步驟 7 - 變更安裝位置 (選擇性)
 
-**15.7 的新功能**：現在您可以減少 Visual Studio 在系統磁碟機上的安裝使用量。 您可以選擇將快取、共用元件、SDK 和工具下載至不同的磁碟機，並將 Visual Studio 保留在以最快速度執行它的磁碟機上。
+**15.7 版中的新功能**：現在您可以減少 Visual Studio 在系統磁碟機上的安裝磁碟使用量。 您可以選擇將快取、共用元件、SDK 和工具下載至不同的磁碟機，並將 Visual Studio 保留在以最快速度執行它的磁碟機上。
 
   ![Visual Studio 2017 - 變更安裝位置](media/installation-options-by-location.png "變更安裝位置")
 

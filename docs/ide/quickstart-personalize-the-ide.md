@@ -1,5 +1,5 @@
 ---
-title: 設定 Visual Studio 中的色彩佈景主題和字型
+title: 設定色彩佈景主題和字型
 ms.date: 11/20/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -9,14 +9,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d68bdf8ae879506e89aace7f3e176a862289a8bd
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 511c9d44e9aac49c0150be5a13651e5368e10eaf
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "42626926"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159408"
 ---
-# <a name="quickstart-personalize-the-visual-studio-ide-and-editor"></a>快速入門：將 Visual Studio IDE 和編輯器個人化
+# <a name="quickstart-personalize-the-visual-studio-ide-and-editor"></a>快速入門：個人化 Visual Studio 整合式開發環境 (IDE) 及編輯器
 
 在這段 5-10 分鐘的快速入門中，我們會選取深色佈景主題，來自訂 Visual Studio 色彩佈景主題。 我們還會為文字編輯器中的兩種不同文字自訂色彩。
 
@@ -100,4 +100,4 @@ Visual Studio 2017 使用者介面的預設色彩佈景主題為 [藍色]。 讓
 ## <a name="see-also"></a>另請參閱
 
 - [自訂編輯器](../ide/customizing-the-editor.md)
-- [Visual Studio IDE 概觀](../ide/visual-studio-ide.md)
+- [Visual Studio IDE 概觀](../get-started/visual-studio-ide.md)

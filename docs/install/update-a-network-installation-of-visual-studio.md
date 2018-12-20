@@ -1,8 +1,9 @@
 ---
-title: 更新 Visual Studio 的網路型安裝
+title: 更新網路型安裝
 description: 了解如何使用 --layout 命令來更新網路型 Visual Studio 安裝
 ms.date: 08/14/2017
 ms.technology: vs-acquisition
+ms.custom: seodec18
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,14 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 29b9efc68d3cf094873ba5dc5ccd3844eb01209a
-ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
+ms.openlocfilehash: 736f8dc9c79faa5c81055296c9fbf534c512f6fa
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "43138824"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159486"
 ---
-# <a name="update-a-network-based-installation-of-visual-studio"></a>更新 Visual Studio 的網路型安裝
+# <a name="update-a-network-based-installation-of-visual-studio-2017"></a>更新 Visual Studio 2017 的網路型安裝
 
 可以使用最新的產品更新來更新 Visual Studio 的網路安裝配置，這樣一來它就可以同時作為 Visual Studio 最新更新的安裝點，也能維護已部署至用戶端工作站的安裝。
 

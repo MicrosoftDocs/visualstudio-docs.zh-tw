@@ -1,9 +1,9 @@
 ---
-title: 快速入門：使用 Visual Basic 在 Visual Studio 中建立第一個主控台應用程式
+title: 使用 Visual Basic 建立您的第一個主控台應用程式
 description: 了解如何使用 Visual Basic 在 Visual Studio 中逐步建立簡單的 Hello World 主控台應用程式。
-ms.custom: ''
 ms.date: 12/10/2017
 ms.prod: visual-studio-dev15
+ms.custom: seodec18
 ms.technology: vs-acquisition
 ms.topic: quickstart
 ms.devlang: vb
@@ -14,14 +14,14 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d75c178abdaae516b8694e9278d8df2007c2e1d
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 67a990b98b385cacab89bfa8270d8409f9e9aa5f
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "42627237"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159603"
 ---
-# <a name="quickstart-create-your-first-console-app-in-visual-studio-with-visual-basic"></a>快速入門：使用 Visual Basic 在 Visual Studio 中建立第一個主控台應用程式
+# <a name="quickstart-create-your-first-console-app-in-visual-studio-with-visual-basic"></a>快速入門：使用 Visual Basic 在 Visual Studio 中建立您的第一個主控台應用程式
 
 在這個 5-10 分鐘的 Visual Studio 整合式開發環境 (IDE) 簡介中，您將建立在主控台上執行的簡單 Visual Basic 應用程式。
 

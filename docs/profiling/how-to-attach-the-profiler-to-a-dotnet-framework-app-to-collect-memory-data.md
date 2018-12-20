@@ -1,6 +1,6 @@
 ---
-title: 如何：使用命令列將分析工具附加至 .NET Framework 獨立應用程式以收集記憶體資料 | Microsoft Docs
-ms.custom: ''
+title: 將分析工具附加至 .NET 應用程式以收集記憶體資料
+ms.custom: seodec18
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -9,14 +9,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9a72a6a7bdaa77cb313369dda8b84aff8b405a79
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a550ac10b5983041da93b0c290877f8e1b1a3720
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49835042"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53051791"
 ---
-# <a name="how-to-attach-the-profiler-to-a-net-framework-stand-alone-application-to-collect-memory-data-by-using-the-command-line"></a>如何：使用命令列將分析工具附加至 .NET Framework 獨立應用程式以收集記憶體資料
+# <a name="how-to-attach-the-profiler-to-a-net-framework-stand-alone-application-to-collect-memory-data-by-using-the-command-line"></a>HOW TO：使用命令列將分析工具附加至 .NET Framework 獨立應用程式以收集記憶體資料
 
 本文描述如何使用 Visual Studio 分析工具命令列工具，將分析工具附加至執行中的 .NET Framework 獨立 (用戶端) 應用程式，並收集記憶體資料。
 
@@ -57,7 +57,7 @@ ms.locfileid: "49835042"
      您可以使用下列任一選項搭配 **/start:sample** 選項。
 
 
-     | 選項 | 描述 |
+     | 選項 | 說明 |
      | - | - |
      | [/user](../profiling/user-vsperfcmd.md) **:**[`Domain`**\\**]`UserName` | 指定擁有程式碼剖析處理序之帳戶的網域和使用者名稱。 只有在以登入的使用者之外的使用者身分執行處理序時，才需要這個選項。 處理序擁有者會列在 [Windows 工作管理員] 的 [處理程序] 索引標籤上的 [使用者名稱] 欄。 |
      | [/crosssession &#124; /cs](../profiling/crosssession.md) | 在其他工作階段啟用處理序程式碼剖析。 如果應用程式在不同的工作階段中執行，則需要這個選項。 工作階段識別碼會列在 [Windows 工作管理員] 的 [處理程序] 索引標籤上的 [工作階段識別碼] 欄。 **/crosssession** 可縮寫成 **/CS**。 |
@@ -83,7 +83,7 @@ ms.locfileid: "49835042"
 
 - 下列成對的選項會開始和停止資料收集。 請在個別的命令列上指定各個選項。 您可以多次開始和停止資料收集。
 
-    |選項|描述|
+    |選項|說明|
     |------------|-----------------|
     |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|開始 (**/globalon**) 或停止 (**/globaloff**) 所有處理序的資料收集。|
     |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|開始 (**/processon**) 或停止 (**/processoff**) 對 `PID` 指定的處理序收集資料。|

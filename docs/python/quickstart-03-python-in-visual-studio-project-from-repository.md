@@ -1,24 +1,25 @@
 ---
 title: 快速入門 - 複製 Python 程式碼存放庫
 description: 在此快速入門中，您可以使用 Visual Studio Team Explorer 複製 Python Koans 存放庫，以在 Visual Studio 中建立 Python 專案。
-ms.date: 09/04/2018
+ms.date: 12/06/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: quickstart
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: a4b01cc775c32bc602699aa2753482f184661079
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 871a5f620cc90db5064562461336fdeac38ba757
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44281685"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068389"
 ---
-# <a name="quickstart-clone-a-repository-of-python-code-in-visual-studio"></a>快速入門：在 Visual Studio 中複製 Python 程式碼的存放庫
+# <a name="quickstart-clone-a-repository-of-python-code-in-visual-studio"></a>快速入門：在 Visual Studio 中複製 Python 程式碼存放庫
 
 [在 Visual Studio 2017 中安裝 Python 支援](installing-python-support-in-visual-studio.md)之後，您可以為 Visual Studio 新增 GitHub 延伸模組。 延伸模組可讓您輕鬆地複製 Python 程式碼的存放庫，並在 IDE 中透過該存放庫建立專案。 您也可以一律在命令列上複製存放庫，然後在 Visual Studio 中使用它們。
 
@@ -57,7 +58,7 @@ ms.locfileid: "44281685"
 
 1. 按 **Ctrl**+**F5**，或是選取 [偵錯] > [啟動但不偵錯]，以執行程式。 如果您看到 *koans.txt* 的 **FileNotFoundError**，請重新檢查上一個步驟中所述的工作目錄設定。
 
-1. 程式順利執行時，會在 *python3/koans/about_asserts.py* 的第 17 行顯示判斷提示錯誤。 這是故意的：程式設計成讓您更正所有故意性錯誤來教導 Python。 (在 Python Koans 所產生的 [Ruby Koans](http://rubykoans.com/) 上可以找到詳細資料)。
+1. 程式順利執行時，會在 *python3/koans/about_asserts.py* 的第 17 行顯示判斷提示錯誤。 這是故意的：程式設計成讓您更正所有故意性錯誤來教導 Python。 (在 Python Koans 所產生的 [Ruby Koans](https://rubykoans.com/) 上可以找到詳細資料)。
 
     ![Python Koans 程式中的第一個輸出](media/koans-output.png)
 

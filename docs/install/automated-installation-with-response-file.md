@@ -1,8 +1,9 @@
 ---
-title: 使用回應檔自動安裝 Visual Studio
+title: 使用回應檔自動化安裝
 description: 了解如何建立可協助您自動化 Visual Studio 安裝的 JSON 回應檔
 ms.date: 08/14/2017
 ms.technology: vs-acquisition
+ms.custom: seodec18
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d9dbcb5c033469db3e92bd4cde931257ece9ab1
-ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
+ms.openlocfilehash: 30e7af50259a2087a0a380b1fe2d0c96c0d83f9a
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "43138445"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53158771"
 ---
 # <a name="how-to-define-settings-in-a-response-file"></a>如何在回應檔中定義設定
 

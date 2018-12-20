@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 171d329ed852bf6a27f20f12ae0f5421103820ff
-ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
+ms.openlocfilehash: 6e8835edb2b340778c4431d3de5b554d6aeb6c6d
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46370803"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53158810"
 ---
 # <a name="get-started-with-unit-testing"></a>開始使用單元測試
 
@@ -147,7 +147,7 @@ ms.locfileid: "46370803"
 
 1. 撰寫單元測試的程式碼。
 
-   ![將程式碼新增至您的單元測試](media/create3rdpartyunittest7.png)
+   ![將程式碼新增至您的單元測試程式碼檔案](media/create3rdpartyunittest7.png)
 
 ## <a name="see-also"></a>另請參閱
 

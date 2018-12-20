@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Studio 中新增用於負載測試的臨界值規則
+title: 新增用於負載測試的臨界值規則
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,14 +13,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: cddc0b9ca470fa43b00ec08b3b6316704df41e91
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: ac4b542c7f9b557ad04ead05422f8c89cd4f909c
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52896324"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53063366"
 ---
-# <a name="how-to-add-a-threshold-rule-using-the-load-test-editor"></a>如何：使用負載測試編輯器新增臨界值規則
+# <a name="how-to-add-a-threshold-rule-using-the-load-test-editor"></a>HOW TO：使用負載測試編輯器新增臨界值規則
 
 負載測試中的臨界值規則會將效能計數器值與常數值或其他效能計數器值做比較。
 
@@ -38,7 +38,7 @@ ms.locfileid: "52896324"
 
      [新增臨界值規則] 對話方塊隨即出現。
 
-5.  您可以選擇兩種規則類型：**比較常數**和**比較計數器**。 請選取適當的類型並設定其值。
+5.  您可以選擇兩種類型的規則：**比較常數**和**比較計數器**。 請選取適當的類型並設定其值。
 
     > [!NOTE]
     > 將 [超出時提醒] 屬性設定為 [True]，表示超出臨界值會是一個問題，或設為 [False]，表示未達臨界值會是一個問題。

@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Studio 中設定負載測試回合設定
+title: 設定負載測試回合設定
 ms.date: 10/03/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 9c20a56ce2d78ab5ba3c3fdcde19af573a830fc5
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 9aa2defb458fba0d7962813743fa603fe71081e2
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895622"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53053314"
 ---
 # <a name="configure-load-test-run-settings"></a>設定負載測試回合設定
 
@@ -35,9 +35,9 @@ ms.locfileid: "52895622"
 |-|-|
 |**將其他回合設定新增至負載測試：** 除了執行 [新增負載測試精靈] 時所建立的回合設定以外，您還可以將其他回合設定新增至負載測試，以便在不同的狀況下執行測試。|-   [如何：將其他回合設定新增至負載測試](../test/how-to-add-additional-run-settings-to-a-load-test.md)|
 |**指定要搭配負載測試使用的使用中回合設定：** 您可以使用 [負載測試編輯器] 來選取想要搭配負載測試使用的回合設定。 現用回合設定可由 "[Active]" 後置字元加以識別。|-   [如何：選取負載測試的使用中回合設定](../test/how-to-select-the-active-run-setting-for-a-load-test.md)|
-|**編輯回合設定屬性：** 您可以針對記錄選項等項目編輯回合設定屬性 (詳情請參閱下面)，以便決定測試的長度、準備持續期間、所回報錯誤詳細資料的數目上限、取樣率、連接模型 (僅限 Web 效能測試)、結果儲存類型、驗證層級，以及 SQL 追蹤。 回合設定應該反映負載測試的目標。|-   [負載測試回合設定屬性](../test/load-test-run-settings-properties.md)<br />-   [變更回合設定屬性](../test/load-test-run-settings-properties.md#change-run-setting-properties)|
+|**編輯回合設定屬性：** 您可以針對記錄選項等項目編輯回合設定屬性 (詳情請參閱下面)，以便決定測試的長度、準備持續期間、所回報錯誤詳細資料的數目上限、取樣速率、連線模型 (僅限 Web 效能測試)、結果儲存類型、驗證層級，以及 SQL 追蹤。 回合設定應該反映負載測試的目標。|-   [負載測試回合設定屬性](../test/load-test-run-settings-properties.md)<br />-   [變更回合設定屬性](../test/load-test-run-settings-properties.md#change-run-setting-properties)|
 |**在負載測試回合設定中指定測試反覆項目計數：** 您可以透過設定 [測試反覆項目] 屬性，指定要在所有負載測試情節中執行所有 Web 效能測試和單元測試的次數。|-   [如何：在回合設定中指定測試反覆項目的數目](../test/how-to-specify-the-number-of-test-iterations-in-a-load-test.md)|
-|**指定負載測試回合設定的採樣速率：** 您可以透過設定 [採樣速率] 屬性，指定負載測試收集效能計數器資料的頻率。|-   [如何：指定採樣速率](../test/how-to-specify-the-sample-rate-for-a-load-test.md)|
+|**指定負載測試回合設定的取樣速率：** 您可以透過設定 [採樣速率] 屬性，指定負載測試收集效能計數器資料的頻率。|-   [如何：指定採樣速率](../test/how-to-specify-the-sample-rate-for-a-load-test.md)|
 |**指定計時詳細資料儲存區選項：** 您可以透過設定 [計時詳細資料儲存區] 屬性，指定負載測試詳細資料的儲存方式。|-   [如何：指定計時詳細資料儲存區屬性](../test/how-to-specify-the-timing-details-storage-property-for-a-load-test.md)|
 |**指定測試資源保留期間：** 藉由設定 [資源保留時間] 屬性，在指定的期間內保留測試資源，以加速測試 > 修正 > 重新測試的週期。|-   [保留資源以加速負載測試](/azure/devops/test/load-test/getting-started-with-performance-testing?view=vsts)|
 |**使用內容參數：** 您可以使用內容參數將字串參數化。 例如，如果您的負載測試含有使用參數型網頁伺服器的 Web 效能測試，您就可以將內容參數新增至對應不同伺服器的回合設定。|-   [如何：將內容參數新增至回合設定](../test/how-to-add-context-parameters-to-a-load-test-run-setting.md)|

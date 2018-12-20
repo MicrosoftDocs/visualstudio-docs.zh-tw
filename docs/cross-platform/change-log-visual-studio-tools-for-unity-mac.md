@@ -1,24 +1,45 @@
 ---
 title: 變更記錄檔 (Visual Studio Tools for Unity，Mac) | Microsoft Docs
 ms.custom: ''
-ms.date: 08/06/2018
+ms.date: 11/13/2018
 ms.technology: vs-unity-tools
 ms.topic: conceptual
 ms.assetid: 33a6ac54-d997-4308-b5a0-af7387460849
-author: conceptdev
-ms.author: crdun
+author: therealjohn
+ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 197701258a47b3edc49f4e9477c6634d17b22920
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 0b641c9dd1fe797fc036a6ece893ad61fc52ff87
+ms.sourcegitcommit: 5c049194fa256b876ad303f491af11edd505756c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43775183"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53027233"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-mac"></a>變更記錄檔 (Visual Studio Tools for Unity，Mac)
 Visual Studio Tools for Unity 變更記錄。
+
+## <a name="1700"></a>1.7.0.0
+ 發行時間：2018 年 11 月 13 日
+
+### <a name="new-features"></a>新功能
+
+-   **偵錯工具：**
+
+    -   在 [附加] 對話方塊中新增更多用戶端資訊 (IP、電腦名稱)。
+
+### <a name="bug-fixes"></a>Bug 修正
+
+-   **偵錯工具：**
+
+     -   已修正用於與 Unity 偵錯工具引擎通訊之程式庫中的死結，該死結造成 Visual Studio 或 Unity 凍結，特別是在按下 [附加到 Unity] 或重新啟動遊戲時。
+     
+-   **整合：**
+
+     -   修正選取其他預設編輯器時的 Unity 外掛程式啟用問題。
+     
+     -   修正 Unity 檔案範本建立問題。
 
 ## <a name="1602"></a>1.6.0.2
  2018 年 7 月 24 日發行

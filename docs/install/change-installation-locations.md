@@ -1,8 +1,9 @@
 ---
-title: 在 Visual Studio 2017 中選取安裝位置
-description: 了解如何將下載快取、共用元件、SDK 和工具的位置變更為不同的磁碟機，來減少系統磁碟機上的安裝使用量。
+title: 選取安裝位置
+description: 了解如何將下載快取、共用元件、SDK 和工具的位置變更為不同的磁碟機，來減少 Visual Studio 在系統磁碟機上的安裝磁碟使用量。
 ms.date: 11/07/2018
 ms.technology: vs-acquisition
+ms.custom: seodec18
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,16 +16,16 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ed3b54674c24e3becf62e7568be127344104de0f
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 2acefee22976e061b3feff83b00891037a0f2bbd
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295029"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159837"
 ---
 # <a name="select-the-installation-locations-in-visual-studio-2017"></a>在 Visual Studio 2017 中選取安裝位置
 
-**15.7 的新功能**：您可以變更某些檔案的位置，來減少 Visual Studio 在系統磁碟機上的安裝使用量。 具體而言，您可以針對下載快取、共用元件、SDK 和工具檔案使用不同的位置。
+**15.7 中的新功能**：您可以變更某些檔案的位置，來減少 Visual Studio 在系統磁碟機上的安裝磁碟使用量。 具體而言，您可以針對下載快取、共用元件、SDK 和工具檔案使用不同的位置。
 
    > [!NOTE]
    > 某些工具和 SDK 對於可安裝的位置有不同的規則。 這類工具和 SDK 會安裝在您的系統磁碟機上，即使您選擇其他位置也一樣。

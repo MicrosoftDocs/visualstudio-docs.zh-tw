@@ -1,6 +1,6 @@
 ---
-title: 在 Visual Studio 中使用 IntelliTest 為程式碼產生單元測試
-ms.date: 2015-10-05
+title: 使用 IntelliTest 為程式碼產生單元測試
+ms.date: 10/05/2015
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
@@ -11,17 +11,18 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: f0ea1fa864e108117d45c1a6edd4cc03f3e3024f
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 4aefb4aebe65503620f866955f7cbd62e33b3940
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51294158"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53052350"
 ---
 # <a name="generate-unit-tests-for-your-code-with-intellitest"></a>使用 IntelliTest 為程式碼產生單元測試
+
 IntelliTest 會探索您的 .NET 程式碼，從而產生測試資料及單元測試套件。 其會為程式碼中的每一個陳述式產生一個用以執行該陳述式的測試輸入。 程式碼的每個條件分支都會執行大小寫分析。 例如，可能擲回例外狀況的 `if` 陳述式、判斷提示及所有作業都會加以分析。 這項分析會用於為每個方法的參數型單元測試產生測試資料，從而建立具有高程式碼涵蓋範圍的單元測試。
 
- 當您執行 IntelliTest 時，您很容易就能看到哪些測試失敗，進而加入必要的程式碼來修正測試。 您可以選取產生的測試，將其儲存到測試專案中做為迴歸套件。 當您變更程式碼時，請重新執行 IntelliTest，如此所產生的測試才能與您的程式碼變更保持同步。
+當您執行 IntelliTest 時，您很容易就能看到哪些測試失敗，進而加入必要的程式碼來修正測試。 您可以選取產生的測試，將其儲存到測試專案中做為迴歸套件。 當您變更程式碼時，請重新執行 IntelliTest，如此所產生的測試才能與您的程式碼變更保持同步。
 
 ## <a name="availability-and-extensions"></a>可用性和延伸模組
 
@@ -36,7 +37,8 @@ IntelliTest 會探索您的 .NET 程式碼，從而產生測試資料及單元�
 * 不支援 x64 設定。
 
 ## <a name="explore-use-intellitest-to-explore-your-code-and-generate-unit-tests"></a>探索：使用 IntelliTest 探索您的程式碼並產生單元測試
- 若要產生單元測試，您的類型必須是公用的。 否則，就必須先 [建立單元測試](#NoRun) 才能產生它們。
+
+若要產生單元測試，您的類型必須是公用的。 否則，就必須先 [建立單元測試](#NoRun) 才能產生它們。
 
 1.  在 Visual Studio 中開啟您的方案。 開啟包含您要測試之方法的類別檔案。
 
@@ -94,13 +96,13 @@ IntelliTest 會探索您的 .NET 程式碼，從而產生測試資料及單元�
 
 ##  <a name="q--a"></a>問與答
 
-### <a name="q-can-you-use-intellitest-for-unmanaged-code"></a>問：IntelliTest 適用於 Unmanaged 程式碼嗎？
+### <a name="q-can-you-use-intellitest-for-unmanaged-code"></a>問：IntelliTest 適用於非受控碼嗎？
 
-**答：** 不適用，IntelliTest 只適用於 Managed 程式碼。
+**答：** 不適用，IntelliTest 只適用於受控碼。
 
 ### <a name="q-when-does-a-generated-test-pass-or-fail"></a>問：產生的測試會在何時成功或失敗？
 
-**答：** 一如其他單元測試般，只要未發生任何例外狀況，測試便會成功。 當有任何判斷提示失敗，或有測試的程式擲回無法處理的例外狀況時，測試便會失敗。
+**答：** 如同任何其他單元測試，只要未發生任何例外狀況，測試便會成功。 當有任何判斷提示失敗，或有測試的程式擲回無法處理的例外狀況時，測試便會失敗。
 
  若您的測試在擲回某些例外狀況時仍能成功，可以依據您的需求，在測試方法、測試類別或組件層級設定下列屬性：
 
@@ -112,15 +114,15 @@ IntelliTest 會探索您的 .NET 程式碼，從而產生測試資料及單元�
 
 -   **PexAllowedExceptionFromAssemblyAttribute**
 
-### <a name="q-can-i-add-assumptions-to-the-parameterized-unit-test"></a>問：我可以在參數型單元測試中加入假設嗎？
+### <a name="q-can-i-add-assumptions-to-the-parameterized-unit-test"></a>問：我可以在參數化單元測試中新增假設嗎？
 
-**答：** 可以，您可以使用假設，為特定方法的單元測試指定不需要的測試資料。 您可以使用 <xref:Microsoft.Pex.Framework.PexAssume> 類別加入假設。 例如，您可以如下列範例般，加入長度變數不是 Null 的假設。
+**答：** 可以，您可以使用假設，為特定方法單元測試指定不需要的測試資料。 您可以使用 <xref:Microsoft.Pex.Framework.PexAssume> 類別加入假設。 例如，您可以如下列範例般，加入長度變數不是 Null 的假設。
 
  `PexAssume.IsNotNull(lengths);`
 
  加入假設之後，請重新執行 IntelliTest，以移除不再相關的測試資料。
 
-### <a name="q-can-i-add-assertions-to-the-parameterized-unit-test"></a>問：我可以在參數型單元測試中加入判斷提示嗎？
+### <a name="q-can-i-add-assertions-to-the-parameterized-unit-test"></a>問：我可以在參數化單元測試中新增判斷提示嗎？
 
 **答：** 可以，IntelliTest 會在執行單元測試時，檢查陳述式中的判斷提示是否符合實際情況。 使用 <xref:Microsoft.Pex.Framework.PexAssert> 類別或測試架構隨附的判斷提示 API，以加入判斷提示。 例如，您可以加入判斷提示，指出兩個變數相等。
 
@@ -128,7 +130,7 @@ IntelliTest 會探索您的 .NET 程式碼，從而產生測試資料及單元�
 
  當您加入判斷提示並重新執行 IntelliTest 時，其會檢查該判斷提示是否正確，若不正確，測試即會失敗。
 
-###  <a name="NoRun"></a> 問： 是否可以產生參數化的單元測試而不需先執行 IntelliTest?
+###  <a name="NoRun"></a> 問：是否可以產生參數化單元測試而不需先執行 IntelliTest?
 
 **答：** 可以，只要以滑鼠右鍵按一下類別或方法，然後選擇 [建立 IntelliTest] 即可。
 
@@ -139,9 +141,9 @@ IntelliTest 會探索您的 .NET 程式碼，從而產生測試資料及單元�
  ![以 MSTest 預設值建立 IntelliTest](../test/media/pexcreateintellitestmstest.png)
 
 <a name="extend-framework"></a>
-### <a name="q-can-i-use-other-unit-test-frameworks-with-intellitest"></a>問： 是否可以使用其他單元測試架構搭配 IntelliTest？
+### <a name="q-can-i-use-other-unit-test-frameworks-with-intellitest"></a>問：是否可以使用其他單元測試架構搭配 IntelliTest？
 
-**答：** 可以，請遵循 [尋找並安裝其他架構](../test/install-third-party-unit-test-frameworks.md)中的步驟。
+**答：** 可以，請遵循[尋找並安裝其他架構](../test/install-third-party-unit-test-frameworks.md)中的步驟。
 Visual Studio Marketplace 也提供測試架構延伸模組︰
 
 * [測試產生器的 NUnit 延伸模組](https://marketplace.visualstudio.com/items?itemName=NUnitDevelopers.TestGeneratorNUnitextension-18371)
@@ -157,4 +159,4 @@ Visual Studio Marketplace 也提供測試架構延伸模組︰
 
 ### <a name="q-can-i-learn-more-about-how-the-tests-are-generated"></a>問：我可以進一步了解如何產生測試嗎？
 
-**答：** 可以，如需高階概觀，請閱讀這篇 [部落格文章](https://blogs.msdn.microsoft.com/devops/2015/07/05/intellitest-one-test-to-rule-them-all/)。
+**答：** 可以，如需高階概觀，請閱讀這篇[部落格文章](https://blogs.msdn.microsoft.com/devops/2015/07/05/intellitest-one-test-to-rule-them-all/)。

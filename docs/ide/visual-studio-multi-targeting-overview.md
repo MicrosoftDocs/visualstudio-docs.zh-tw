@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Studio 中以 .NET Framework 為目標
+title: 以 .NET Framework 為目標
 ms.date: 02/06/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: cba93b86d6ecebf249e11d18bd6e4b6b86e59fda
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: e0004678b62b9deba97d31815de577721008f77d
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32425085"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53058294"
 ---
 # <a name="visual-studio-multi-targeting-overview"></a>Visual Studio 多目標概觀
 
@@ -68,13 +68,13 @@ Framework 目標包括下列功能：
 
 ![[新增專案] 對話方塊中的 [Framework] 下拉式清單](media/vside-newproject-framework.png)
 
-在現有專案中，您可以在專案屬性對話方塊中變更目標 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 版本。 如需詳細資訊，請參閱[如何：以 .NET Framework 版本為目標](../ide/how-to-target-a-version-of-the-dotnet-framework.md)。
+在現有專案中，您可以在專案屬性對話方塊中變更目標 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 版本。 如需詳細資訊，請參閱[＜How to：以一個 .NET Framework 版本為目標](../ide/how-to-target-a-version-of-the-dotnet-framework.md)。
 
 ## <a name="resolve-system-and-user-assembly-references"></a>解析系統與使用者組件參考
 
 若要設定目標 .NET Framework 版本，您必須先安裝適當的組件參考。 您可以在 [.NET 下載](https://www.microsoft.com/net/download/windows)頁面下載不同 .NET Framework 版本的開發人員套件。
 
-[加入參考] 對話方塊會停用與目標 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 版本無關的系統組件，如此一來就不會不慎將系統組件新增至專案。 (系統組件是包含在 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 版本中的 *.dll* 檔案)。無法解析屬於晚於目標版本之 Framework 版本的參考，也無法新增相依於這類參考的控制項。 如果您想要啟用這類參考，請將專案的 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 目標重設為包含參考的目標。  如需詳細資訊，請參閱[如何：以 .NET Framework 版本為目標](../ide/how-to-target-a-version-of-the-dotnet-framework.md)。
+[加入參考] 對話方塊會停用與目標 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 版本無關的系統組件，如此一來就不會不慎將系統組件新增至專案。 (系統組件是包含在 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 版本中的 *.dll* 檔案)。無法解析屬於晚於目標版本之 Framework 版本的參考，也無法新增相依於這類參考的控制項。 如果您想要啟用這類參考，請將專案的 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 目標重設為包含參考的目標。  如需詳細資訊，請參閱[＜How to：以一個 .NET Framework 版本為目標](../ide/how-to-target-a-version-of-the-dotnet-framework.md)。
 
 如需組件參考的詳細資訊，請參閱[在設計階段時解析組件](../msbuild/resolving-assemblies-at-design-time.md)。
 

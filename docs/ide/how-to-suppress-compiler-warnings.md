@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Studio 中隱藏專案和 NuGet 套件的編譯器警告
+title: 隱藏專案和 NuGet 套件的編譯器警告
 ms.date: 01/24/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-compile
@@ -9,16 +9,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e3a84dff28b174676ff6fe74bf5420863afcc83
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 6f805ce50a94304651aca6dd1379fbbf2f5ecc7b
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31948557"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53060361"
 ---
-# <a name="how-to-suppress-compiler-warnings"></a>如何：隱藏編譯器警告
+# <a name="how-to-suppress-compiler-warnings"></a>HOW TO：隱藏編譯器警告
 
-您可以簡化組建記錄檔，方法是篩選掉一或多個類型的編譯器警告。 例如，您可能只想檢閱當您將組建記錄檔詳細等級設定為 [一般]、[詳細資料] 或 [診斷] 時所產生的部分輸出。 如需詳細資訊的詳細資訊，請參閱[如何：檢視、儲存和設定組建記錄檔](../ide/how-to-view-save-and-configure-build-log-files.md)。
+您可以簡化組建記錄檔，方法是篩選掉一或多個類型的編譯器警告。 例如，您可能只想檢閱當您將組建記錄檔詳細等級設定為 [一般]、[詳細資料] 或 [診斷] 時所產生的部分輸出。 如需詳細資訊層級的詳細資訊，請參閱[如何：檢視、儲存及設定組建記錄檔](../ide/how-to-view-save-and-configure-build-log-files.md)。
 
 ## <a name="suppress-specific-warnings-for-visual-c-or-f"></a>隱藏 Visual C# 或 F# 的特定警告 #
 
@@ -88,7 +88,7 @@ ms.locfileid: "31948557"
     ```
 
    > [!NOTE]
-   > .NET Core 專案不包含預設的組建組態屬性群組。 若要隱藏.NET Core 專案中的警告，請手動將組建組態區段加入至檔案中。 例如: 
+   > .NET Core 專案不包含預設的組建組態屬性群組。 若要隱藏.NET Core 專案中的警告，請手動將組建組態區段加入至檔案中。 例如：
    >
    > ```xml
    > <Project Sdk="Microsoft.NET.Sdk">
@@ -134,5 +134,5 @@ ms.locfileid: "31948557"
 ## <a name="see-also"></a>另請參閱
 
 - [逐步解說：建置應用程式](../ide/walkthrough-building-an-application.md)
-- [如何：檢視、儲存和設定組建記錄檔](../ide/how-to-view-save-and-configure-build-log-files.md)
-- [編譯及建置](../ide/compiling-and-building-in-visual-studio.md)
+- [如何：檢視、儲存及設定組建記錄檔](../ide/how-to-view-save-and-configure-build-log-files.md)
+- [編譯和建置](../ide/compiling-and-building-in-visual-studio.md)

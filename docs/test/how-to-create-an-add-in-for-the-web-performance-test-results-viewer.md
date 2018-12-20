@@ -1,5 +1,5 @@
 ---
-title: 建立 Web 效能測試結果檢視器的 Visual Studio 增益集
+title: 建立 Web 效能測試結果檢視器的增益集
 ms.date: 10/20/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,14 +11,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: dbff48696a7fe10266a2c72fc3a3d9fb0e9ba81d
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 6672bd1e38dee5b27d350b9d2e12626cef122115
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52896042"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068337"
 ---
-# <a name="how-to-create-a-visual-studio-add-in-for-the-web-performance-test-results-viewer"></a>如何：建立 Web 效能測試結果檢視器的 Visual Studio 增益集
+# <a name="how-to-create-a-visual-studio-add-in-for-the-web-performance-test-results-viewer"></a>HOW TO：建立 Web 效能測試結果檢視器的 Visual Studio 增益集
 
 您可以使用下列命名空間來擴充 [Web 效能測試結果檢視器] 的 UI：
 
@@ -39,7 +39,7 @@ ms.locfileid: "52896042"
 建立或開啟您可以用來實驗的非生產環境方案，其中包含 ASP.NET Web 應用程式以及 Web 效能和負載測試專案 (含有 ASP.NET Web 應用程式的一個或多個效能測試)。
 
 > [!NOTE]
-> 您可以遵循[如何：建立 Web 服務測試](../test/how-to-create-a-web-service-test.md)和[產生及執行自動程式化 Web 效能測試](../test/generate-and-run-a-coded-web-performance-test.md)中的程序，建立 ASP.NET Web 應用程式以及包含 Web 效能測試的 Web 效能和負載測試專案。
+> 您可以遵循下列文章中的程序，來建立 ASP.NET Web 應用程式與包含 Web 效能測試的 Web 效能與負載測試專案：[如何：建立 Web 服務測試](../test/how-to-create-a-web-service-test.md)及[產生及執行自動程式化 Web 效能測試](../test/generate-and-run-a-coded-web-performance-test.md)。
 
 ## <a name="create-a-visual-studio-add-in"></a>建立 Visual Studio 增益集
 

@@ -1,5 +1,5 @@
 ---
-title: 新增其他語言的 Visual Studio 編輯器支援
+title: 新增其他語言的編輯器支援
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -18,12 +18,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 57991a7cac2d45cf618642ccd19ead1d94ce5978
-ms.sourcegitcommit: 401be39a42ffe007593528b5bba62583ca9fcafd
+ms.openlocfilehash: f0ac463161d42e0d9ddf6b845b752916675ba4fe
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "50244472"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062091"
 ---
 # <a name="add-visual-studio-editor-support-for-other-languages"></a>新增其他語言的 Visual Studio 編輯器支援
 
@@ -76,7 +76,7 @@ Visual Studio 2015 Update 1 及更新版本藉由使用 [TextMate 文法](https:
 
 如果適用於您的情況，在此基底路徑下，新增下列資料夾︰
 
-|資料夾名稱|描述|
+|資料夾名稱|說明|
 |-----------------|-----------------|
 |\\\<語言名稱>|語言資料夾。 將 \<語言名稱> 取代為語言的名稱。 例如 *\Matlab*。|
 |*\Syntaxes*|文法資料夾。 包含語言的文法 *.json* 檔案，例如 *Matlab.json*。|
@@ -84,7 +84,7 @@ Visual Studio 2015 Update 1 及更新版本藉由使用 [TextMate 文法](https:
 
 在 Windows 中，會將 *%userprofile%* 解析為 *c:\Users\\\<使用者名稱>* 路徑。 如果您的系統上的 extensions 資料夾不存在，您必須建立它。 如果資料夾已存在，它會隱藏。
 
-如需如何建立 TextMate 文法的詳細資料，請參閱 [TextMate - Introduction to Language Grammars: How to add source code syntax highlighting embedded in HTML](https://developmentality.wordpress.com/2011/02/08/textmate-introduction-to-language-grammars/) (TextMate - 語言文法簡介︰如何新增內嵌於 HTML 的原始程式碼語法反白顯示) 和 [Notes on how to create a Language Grammar and Custom Theme for a Textmate Bundle](https://benparizek.com/notebook/notes-on-how-to-create-a-language-grammar-and-custom-theme-for-a-textmate-bundle) (如何為 Textmate 組合建立語言文法及自訂佈景主題的附註)。
+如需如何建立 TextMate 文法的詳細資料，請參閱 [TextMate - Introduction to Language Grammars:How to add source code syntax highlighting embedded in HTML](https://developmentality.wordpress.com/2011/02/08/textmate-introduction-to-language-grammars/) (TextMate - 語言文法簡介︰如何新增內嵌於 HTML 的原始程式碼語法醒目提示) 和 [Notes on how to create a Language Grammar and Custom Theme for a Textmate Bundle](https://benparizek.com/notebook/notes-on-how-to-create-a-language-grammar-and-custom-theme-for-a-textmate-bundle) (如何為 Textmate 組合建立語言文法及自訂佈景主題的附註)。
 
 ## <a name="see-also"></a>另請參閱
 

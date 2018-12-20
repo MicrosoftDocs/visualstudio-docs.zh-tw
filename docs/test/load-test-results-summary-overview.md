@@ -1,5 +1,5 @@
 ---
-title: Visual Studio 中的負載測試結果摘要概觀
+title: 負載測試結果摘要概觀
 ms.date: 10/19/2016
 ms.topic: conceptual
 f1_keywords:
@@ -16,16 +16,16 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: ae70422ce3c88a3de6842f3f0946666b86ae559e
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 3f5187aabeb0c8e2ef81b0c6b6883b96590d7005
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895011"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062605"
 ---
 # <a name="load-test-results-summary-overview"></a>負載測試結果摘要概觀
 
-執行負載測試之後，您可以檢視負載測試摘要，快速了解測試的結果。 負載測試摘要以精簡易讀的格式提供主要的結果。 您也可以列印負載測試摘要， 以方便您和專案關係人一起討論測試的結果。 當您從先前執行的負載測試開啟負載測試結果時，負載測試摘要也是預設檢視。 如需詳細資訊，請參閱[如何：存取負載測試結果以進行分析](../test/how-to-access-load-test-results-for-analysis.md)。
+執行負載測試之後，您可以檢視負載測試摘要，快速了解測試的結果。 負載測試摘要以精簡易讀的格式提供主要的結果。 您也可以列印負載測試摘要， 以方便您和專案關係人一起討論測試的結果。 當您從先前執行的負載測試開啟負載測試結果時，負載測試摘要也是預設檢視。 如需詳細資訊，請參閱[＜How to：存取負載測試結果以進行分析](../test/how-to-access-load-test-results-for-analysis.md)。
 
 ![摘要檢視](../test/media/ltest_summaryview.png)
 
@@ -39,11 +39,11 @@ ms.locfileid: "52895011"
 
 - 整體結果
 
-- 基本統計資料: 前 5 名最慢的頁面
+- 基本統計資料：前 5 名最慢的頁面
 
-- 基本統計資料: 前 5 名最慢的測試
+- 基本統計資料：前 5 名最慢的測試
 
-- 基本統計資料: 前 5 名最慢的 SQL 作業
+- 基本統計資料：前 5 名最慢的 SQL 作業
 
     > [!NOTE]
     > 只有當負載測試啟用了 SQL 追蹤功能時，才會顯示 SQL 作業區段。
@@ -72,7 +72,7 @@ ms.locfileid: "52895011"
 
 ## <a name="key-statistic-top-5-slowest-pages"></a>基本統計資料：前 5 名最慢的頁面
 
-最慢的頁面區段包含負載測試中前 5 名最慢的頁面， 並顯示每個頁面的 URL 和平均頁面載入時間。 這些頁面是依遞減順序列出。 您可以選擇頁面的 URL 開啟 [頁面] 資料表，並查看該頁面的其他詳細資料。 如需詳細資訊，請參閱[如何：檢視網頁回應](../test/how-to-view-web-page-response-time-in-a-load-test.md)。
+最慢的頁面區段包含負載測試中前 5 名最慢的頁面， 並顯示每個頁面的 URL 和平均頁面載入時間。 這些頁面是依遞減順序列出。 您可以選擇頁面的 URL 開啟 [頁面] 資料表，並查看該頁面的其他詳細資料。 如需詳細資訊，請參閱[＜How to：檢視網頁回應](../test/how-to-view-web-page-response-time-in-a-load-test.md)。
 
 [95% 頁面時間 (秒)] 的百分位數會報告 95% 頁面的完成時間都不超過這段時間 (以秒為單位)。
 
@@ -95,7 +95,7 @@ ms.locfileid: "52895011"
 
 ## <a name="page-results"></a>頁面結果
 
-頁面結果區段包含負載測試中所有網頁的清單， 並顯示 URL、情節、測試的名稱、平均頁面時間和計數。 您可以選擇頁面的 URL 開啟 [頁面] 資料表，並查看該頁面的其他詳細資料。 如需詳細資訊，請參閱[如何：檢視網頁回應](../test/how-to-view-web-page-response-time-in-a-load-test.md)。
+頁面結果區段包含負載測試中所有網頁的清單， 並顯示 URL、情節、測試的名稱、平均頁面時間和計數。 您可以選擇頁面的 URL 開啟 [頁面] 資料表，並查看該頁面的其他詳細資料。 如需詳細資訊，請參閱[＜How to：檢視網頁回應](../test/how-to-view-web-page-response-time-in-a-load-test.md)。
 
 > [!NOTE]
 > 選擇區段標題左側的箭號，就可以摺疊或展開此區段。

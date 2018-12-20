@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Studio 中儲存測試失敗的負載測試記錄
+title: 儲存測試失敗的負載測試記錄
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,14 +11,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 65e8632a161ac345408a030d2d536086abbe48af
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: c583418fa34a44d4bc0bf78996df4cb35908b4f0
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895115"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53064400"
 ---
-# <a name="how-to-specify-if-test-failures-are-saved-to-test-logs-using-the-load-test-editor"></a>如何：使用負載測試編輯器指定測試失敗是否會儲存至測試記錄
+# <a name="how-to-specify-if-test-failures-are-saved-to-test-logs-using-the-load-test-editor"></a>HOW TO：使用負載測試編輯器指定測試失敗是否會儲存至測試記錄
 
 使用 [新增負載測試精靈] 建立負載測試之後，您就可以使用 [負載測試編輯器]，將負載測試屬性變更為符合您的測試需求和目標。 請參閱[逐步解說：建立和執行負載測試](../test/walkthrough-create-and-run-a-load-test.md)。 您可以變更 [測試失敗時儲存記錄] 屬性，指定當負載測試中的測試失敗時，是否要儲存測試記錄。
 

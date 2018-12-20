@@ -1,7 +1,7 @@
 ---
 title: 測量您應用程式中的 CPU 使用量
 description: 使用與偵錯工具整合的診斷工具來分析您應用程式中的 CPU 效能問題。
-ms.custom: mvc
+ms.custom: seodec18
 ms.date: 02/27/2017
 ms.technology: vs-ide-debug
 ms.topic: tutorial
@@ -18,14 +18,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 966697652e969c3d6de9f3c17f52f88e84c89bb8
-ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
+ms.openlocfilehash: 46837bb68854f0f5dbb5c799d405c37431f6c379
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "51220673"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53065758"
 ---
-# <a name="profile-application-performance-in-visual-studio"></a>在 Visual Studio 中分析應用程式效能
+# <a name="measure-application-performance-by-analyzing-cpu-usage"></a>透過分析 CPU 使用量測量應用程式效能
 您可以使用 Visual Studio 程式碼剖析工具來分析應用程式中的效能問題。 此程序示範如何使用 [診斷工具] 的 [CPU 使用量] 索引標籤，以取得您的應用程式的效能資料。 診斷工具可用於 Visual Studio 中的 .NET 開發 (包括 ASP.NET) 和原生/C++ 開發。
   
 當偵錯工具暫停時，[CPU 使用量] 工具會收集在應用程式中執行的函式的詳細資訊。 此工具列出正在執行工作的函式，並提供讓您用來專注於取樣工作階段特定區段的時間軸圖形。
@@ -46,7 +46,7 @@ ms.locfileid: "51220673"
 > * 收集 CPU 使用量資料
 > * 分析 CPU 使用量資料
   
-## <a name="step-1-collect-profiling-data"></a>步驟 1︰收集分析資料 
+## <a name="step-1-collect-profiling-data"></a>步驟 1：收集分析資料 
   
 1.  開啟您想要在 Visual Studio 中偵錯的專案，並在您的應用程式中要檢查 CPU 使用量的位置設定中斷點。
 

@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Studio 中建立負載測試外掛程式
+title: 建立負載測試外掛程式
 ms.date: 10/19/2016
 ms.topic: conceptual
 f1_keywords:
@@ -14,19 +14,19 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: ce3e85965aa8823aa12102fff41401cf24eef6a7
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: c106eeda8ad3fd1f9293d6f7c3c7df1a8b48767b
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52896727"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53064714"
 ---
-# <a name="how-to-create-a-load-test-plug-in"></a>如何：建立負載測試外掛程式
+# <a name="how-to-create-a-load-test-plug-in"></a>HOW TO：建立負載測試外掛程式
 
 您可以建立負載測試外掛程式，以便在執行負載測試的不同時刻執行。 您可以建立外掛程式，以擴充或修改負載測試的內建功能。 例如，您可以撰寫負載測試外掛程式，以便在執行負載測試時，設定或修改負載測試模式。 若要這麼做，就必須建立繼承自 <xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin> 介面的類別。 這個類別必須實作此介面的 <xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin.Initialize*> 方法。 如需詳細資訊，請參閱<xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin>。
 
 > [!NOTE]
-> 您也可以建立 Web 效能測試的外掛程式。 如需詳細資訊，請參閱[如何：建立 Web 效能測試外掛程式](../test/how-to-create-a-web-performance-test-plug-in.md)
+> 您也可以建立 Web 效能測試的外掛程式。 如需詳細資訊，請參閱[＜How to：建立 Web 效能測試外掛程式](../test/how-to-create-a-web-performance-test-plug-in.md)
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
@@ -94,7 +94,7 @@ ms.locfileid: "52896727"
     > [!WARNING]
     > 當您執行使用外掛程式的 Web 效能測試或負載測試時，可能會收到如下錯誤：
     >
-    > **要求失敗: \<plug-in> 事件中發生例外狀況: 無法載入檔案或組件 '\<"Plug-in name".dll file>, Version=\<n.n.n.n>, Culture=neutral, PublicKeyToken=null' 或其相依性的其中之一。系統找不到指定的檔案。**
+    > **要求失敗：\<外掛程式> 事件中發生例外狀況：無法載入檔案或組件 '\<外掛程式名稱.dll 檔案>, Version=\<n.n.n.n>, Culture=neutral, PublicKeyToken=null' 或其相依性的其中之一。系統找不到指定的檔案。**
     >
     > 如果您對任何外掛程式進行程式碼變更並建立新的 DLL 版本 **(Version=0.0.0.0)**，但是外掛程式仍然參考原始的外掛程式版本，就會導致此錯誤發生。 若要更正此問題，請依照下列步驟執行：
     >

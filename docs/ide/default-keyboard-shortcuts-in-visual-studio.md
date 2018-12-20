@@ -1,5 +1,5 @@
 ---
-title: Visual Studio 中的預設鍵盤快速鍵
+title: 預設鍵盤快速鍵
 ms.date: 06/26/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -15,16 +15,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 23e11629849c29a3c3024fe7aea7b708b1b7d87a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c8e4e44409b45762eb6c43f16e93017ae0db3750
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49854477"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53061509"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Visual Studio 中的預設鍵盤快速鍵
 
-如需鍵盤存取範圍的詳細資訊，請參閱[協助工具祕訣和訣竅](../ide/reference/accessibility-tips-and-tricks.md)和[如何：以獨佔模式使用鍵盤](../ide/reference/how-to-use-the-keyboard-exclusively.md)。
+如需鍵盤協助工具的詳細資訊，請參閱[協助工具祕訣和訣竅](../ide/reference/accessibility-tips-and-tricks.md)和[如何：以獨佔模式使用鍵盤](../ide/reference/how-to-use-the-keyboard-exclusively.md)。
 
 只需選擇適當的鍵盤快速鍵，您就可以在 Visual Studio 中存取各種命令和視窗。 本主題列出 [一般開發] 設定檔的預設捷徑，您可能已在已安裝的 Visual Studio 中選擇該設定檔。 不管您選擇哪一個設定檔，都可以開啟 [選項] 對話方塊、展開 [環境] 節點，然後選擇 [鍵盤] 來識別命令的捷徑。 您也可以為指定的命令指派不同的捷徑，以自訂捷徑。
 

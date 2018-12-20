@@ -1,8 +1,9 @@
 ---
-title: 設定 Visual Studio 企業部署的預設值
+title: 設定企業部署的預設
 description: 深入了解 Visual Studio 企業部署的網域原則和其他組態作業。
 ms.date: 05/05/2017
 ms.technology: vs-acquisition
+ms.custom: seodec18
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
@@ -17,14 +18,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5689a273ac5f80b3468b9020825b980b88966e3b
-ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
+ms.openlocfilehash: a173a378ba2165963b8ea9b44e7391807584886b
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "43139212"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159551"
 ---
-# <a name="set-defaults-for-enterprise-deployments-of-visual-studio"></a>設定 Visual Studio 企業部署的預設值
+# <a name="set-defaults-for-enterprise-deployments-of-visual-studio-2017"></a>設定 Visual Studio 2017 企業部署的預設
 
 您可以設定會影響 Visual Studio 部署的登錄原則。 這些原則全面適用於新的安裝程式，而且會影響︰
 

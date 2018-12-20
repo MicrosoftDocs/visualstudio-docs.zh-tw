@@ -1,6 +1,6 @@
 ---
-title: 如何：使用命令列將程式碼剖析工具附加至 ASP.NET Web 應用程式以收集並行資料 | Microsoft Docs
-ms.custom: ''
+title: 將分析工具附加至 ASP.NET 應用程式以收集並行資料
+ms.custom: seodec18
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -10,14 +10,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: 9c18b96f794f8317dacc890345ae544765bcb204
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c806150acf8fb37ab7e3fd36a879a6c1273b015a
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49831701"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53063353"
 ---
-# <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-concurrency-data-by-using-the-command-line"></a>如何：使用命令列將分析工具附加至 ASP.NET Web 應用程式以收集並行資料
+# <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-concurrency-data-by-using-the-command-line"></a>HOW TO：使用命令列將分析工具附加至 ASP.NET Web 應用程式以收集並行資料
 本文描述如何使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具命令列工具將分析工具附加至 ASP.NET 應用程式，並收集處理序和執行緒並行資料。  
 
  分析工具的命令列工具位於 Visual Studio 安裝目錄的 *\Team Tools\Performance Tools* 子目錄中。 在 64 位元電腦上，64 位元和 32 位元版本的工具都可以使用。 若要在命令提示字元使用程式碼剖析工具，必須將工具路徑加入至**命令提示字元**視窗的 PATH 環境變數，或將它加入至命令本身。 如需詳細資訊，請參閱[指定命令列工具的路徑](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)。  
@@ -38,7 +38,7 @@ ms.locfileid: "49831701"
 
      您可以使用下表中的任一選項搭配 **/start** 選項。  
 
-   | 選項 | 描述 |
+   | 選項 | 說明 |
    | - | - |
    | [/user](../profiling/user-vsperfcmd.md) **:**[`Domain\`]`UserName` | 指定要授與程式碼剖析工具存取權之帳戶的選擇性網域和使用者名稱。 |
    | [/crosssession](../profiling/crosssession.md) | 在其他登入工作階段啟用處理序程式碼剖析。 |
@@ -62,7 +62,7 @@ ms.locfileid: "49831701"
 
 -   下表中成對的 VSPerfCmd 選項會開始和停止資料收集。 請在個別的命令列上指定各個選項。 您可以多次開始和停止資料收集。  
 
-    |選項|描述|  
+    |選項|說明|  
     |------------|-----------------|  
     |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|開始 (**/globalon**) 或停止 (**/globaloff**) 所有處理序的資料收集。|  
     |[/processon](../profiling/processon-and-processoff.md) **:** `PID`  [processoff](../profiling/processon-and-processoff.md) **:** `PID`|開始 (**/processon**) 或停止 (**/processoff**) 處理序 ID (`PID`) 指定的處理序資料收集。|  

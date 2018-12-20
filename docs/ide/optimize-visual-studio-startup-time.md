@@ -1,5 +1,5 @@
 ---
-title: 改善 Visual Studio 啟動時間
+title: 改善啟動時間
 ms.date: 11/15/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -16,12 +16,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 20f56af789a84ef73c66e0cd50c87ec48a6212a4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: cccdf9cae50d886f5e44fa7bb403bdd4d38ad535
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49884052"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53067670"
 ---
 # <a name="optimize-visual-studio-startup-time"></a>最佳化 Visual Studio 啟動時間
 
@@ -61,9 +61,9 @@ Visual Studio 設計旨在盡可能快速且有效率地啟動。 不過，某�
 
    - **使用預設行為：** 工具視窗的預設行為。 保持選取這個選項不會改善啟動效能。
 
-   - **啟動時不要顯示視窗**：開啟 Visual Studio 時，一律會關閉指定的工具視窗，即使您在前一個工作階段中開啟也是一樣。 您可以在需要時從適當的功能表開啟工具視窗。
+   - **不要在啟動時顯示視窗：** 開啟 Visual Studio 時，一律會關閉指定的工具視窗，即使您在前一個工作階段中開啟也一樣。 您可以在需要時從適當的功能表開啟工具視窗。
 
-   - **啟動時自動隱藏視窗**：如果已在前一個工作階段中開啟工具視窗，則此選項會在啟動時摺疊工具視窗的群組，以避免初始化工具視窗。 如果您經常使用工具視窗，這個選項是不錯的選擇。 工具視窗仍然可用，但不再對 Visual Studio 啟動時間造成負面影響。
+   - **啟動時自動隱藏視窗：** 如果已在前一個工作階段中開啟工具視窗，則此選項會在啟動時摺疊工具視窗的群組，以避免初始化工具視窗。 如果您經常使用工具視窗，這個選項是不錯的選擇。 工具視窗仍然可用，但不再對 Visual Studio 啟動時間造成負面影響。
 
      ![管理 Visual Studio 效能 - 工具視窗檢視](../ide/media/vside_perfdialog_toolwindows.png)
 

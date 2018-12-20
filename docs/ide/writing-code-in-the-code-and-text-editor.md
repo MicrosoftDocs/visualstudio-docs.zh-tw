@@ -1,5 +1,5 @@
 ---
-title: Visual Studio 中的程式碼編輯器功能
+title: 程式碼編輯器功能
 ms.date: 02/23/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8be5d3692459c2c65d4243c831ef4de002828bb0
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: ca203b0c27906d1f861689953ca55280f73fa894
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349071"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53160110"
 ---
 # <a name="features-of-the-code-editor"></a>程式碼編輯器的功能
 
@@ -60,8 +60,8 @@ Visual Studio 編輯器提供許多功能，讓您能夠更輕鬆地撰寫並管
 |選取範圍定位鍵轉空白鍵|將前置定位點變更為空格。 如果您要將檔案中所有空格轉換為定位點 (或轉換所有定位點為空格)，可以使用 `Edit.ConvertSpacesToTabs` 及 `Edit.ConvertTabsToSpaces` comm及s. 在 Visual Studio 功能表中看不到這些命令，但可以透過 [快速存取] 視窗或命令視窗加以呼叫。|
 |設成大寫|將選取範圍中的所有字元變更為大寫；如果沒有選取範圍，則將插入點的字元變更為大寫。|
 |設成小寫|將選取範圍中的所有字元變更為小寫；如果沒有選取範圍，則將插入點的字元變更為小寫。|
-|將選取的行向上移|將選取的行上移一行。 快速鍵︰**Alt**+**向上鍵**。|
-|將選取行向下移|將選取的行下移一行。 快速鍵︰**Alt**+**向下鍵**。|
+|將選取的行向上移|將選取的行上移一行。 快速鍵：**Alt**+**向上鍵**。|
+|將選取行向下移|將選取的行下移一行。 快速鍵：**Alt**+**向下鍵**。|
 |刪除水平空白區|刪除目前行尾的定位點或空格。|
 |檢視空白區|將空格顯示為浮點，定位點則為箭號。 顯示檔案結尾為矩形圖像。 如果選取了 [工具] > [選項] > [文字編輯器] > [所有語言] > [自動換行] > [顯示自動換行的可見字符] 選項，則該字符也將顯示。|
 |自動換行|讓文件中的所有行在程式碼視窗中皆可看到。 您可以在 [文字編輯器] 的 [所有語言] 設定 ([工具] > [選項] > [文字編輯器] > [所有語言]) 中，開啟或關閉自動換行。|
@@ -91,7 +91,7 @@ Visual Studio 編輯器提供許多功能，讓您能夠更輕鬆地撰寫並管
 ## <a name="see-also"></a>另請參閱
 
 - [原始檔編輯器 (Visual Studio for Mac)](/visualstudio/mac/source-editor)
-- [Visual Studio IDE](../ide/visual-studio-ide.md)
+- [Visual Studio IDE](../get-started/visual-studio-ide.md)
 - [Visual Studio 中的 C++ 使用者入門](../ide/getting-started-with-cpp-in-visual-studio.md)
 - [Visual Studio 中的 C# 和 ASP.NET 使用者入門](../ide/tutorial-csharp-aspnet-core.md)
 - [Visual Studio 中的 Python 使用者入門](../ide/quickstart-python.md)

@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Studio 中將類型移到對應的檔案重構
+title: 將類型移到對應的檔案重構
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -12,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 73e1d9d67d905fed5eb37e29c1be1ba7677da3e8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 997cf31d14acd65abd003bcb00cce4a9797b394a
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49884143"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53059635"
 ---
 # <a name="move-a-type-to-a-matching-file-refactoring"></a>將類型移到對應的檔案重構
 
@@ -27,9 +27,9 @@ ms.locfileid: "49884143"
 
 - Visual Basic
 
-**功能：** 讓您將選取的類型移到具有相同名稱的個別檔案。
+**功能：** 讓您將所選取類型移到具有相同名稱的個別檔案。
 
-**時機：** 您在相同檔案中有多個類別、結構、介面等，而想要加以分隔。
+**時機：** 您在相同檔案中有多個類別、結構、介面等，而您想要加以分隔。
 
 **原因：** 將多個類型放在相同檔案中會很難尋找這些類型。 藉由將類型移到具有相同名稱的檔案，程式碼會變得較容易閱讀及瀏覽。
 
@@ -54,7 +54,7 @@ ms.locfileid: "49884143"
 
    該類型將移動到專案中與該類型名稱相同的新檔案。
 
-   - C#：
+   - C#: 
 
       ![內嵌結果 - C#](media/movetype-result-cs.png)
 

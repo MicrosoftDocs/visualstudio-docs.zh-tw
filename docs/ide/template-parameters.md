@@ -1,5 +1,5 @@
 ---
-title: Visual Studio 專案和項目範本參數
+title: 專案和項目範本參數
 ms.date: 01/02/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -12,12 +12,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 4c76eaf68f63b4f3b8a5713d0b206b395ee7c9f1
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: bd566988d7546bed72f6ae3ea2c5c6f3159054f4
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178630"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53067664"
 ---
 # <a name="template-parameters"></a>範本參數
 
@@ -37,7 +37,7 @@ ms.locfileid: "39178630"
 
 1. 在範本的 *.vstemplate* 檔案中，針對您要啟用參數取代的項目，找出對應的 `ProjectItem` 元素。
 
-1. 將 `ReplaceParameters` 元素的 `ProjectItem` 屬性設定為 `true`。
+1. 將 `ReplaceParameters` 項目的 `ProjectItem` 屬性設定為 `true`。
 
 1. 在適當時，於專案項目的程式碼檔案中納入參數。 例如，下列參數指定用於檔案中命名空間的安全專案名稱：
 
@@ -49,7 +49,7 @@ ms.locfileid: "39178630"
 
 下表列出可用於任何範本的保留範本參數。
 
-|參數|描述|
+|參數|說明|
 |---------------|-----------------|
 |clrversion|通用語言執行平台 (CLR) 的最新版本。|
 |guid[1-10]|GUID；用來取代專案檔中的專案 GUID。 您最多可以指定 10 個唯一的 GUID (例如，`guid1`)。|
@@ -72,9 +72,9 @@ ms.locfileid: "39178630"
 
 ## <a name="custom-template-parameters"></a>自訂範本參數
 
-除了參數取代期間所使用的預設保留範本參數之外，您也可以指定自己的範本參數和值。 如需詳細資訊，請參閱 [CustomParameters 元素 (Visual Studio 範本)](../extensibility/customparameters-element-visual-studio-templates.md)。
+除了參數取代期間所使用的預設保留範本參數之外，您也可以指定自己的範本參數和值。 如需詳細資訊，請參閱 [CustomParameters 項目 (Visual Studio 範本)](../extensibility/customparameters-element-visual-studio-templates.md)。
 
-## <a name="example-use-the-project-name-for-a-file-name"></a>範例：檔案名稱使用專案名稱
+## <a name="example-use-the-project-name-for-a-file-name"></a>範例：針對檔案名稱使用專案名稱
 
 您可以在 `TargetFileName` 屬性中使用參數，來指定專案項目的變數檔案名稱。
 
@@ -91,7 +91,7 @@ ms.locfileid: "39178630"
 </TemplateContent>
 ```
 
-## <a name="example-use-the-safe-project-name-for-the-namespace-name"></a>範例：命名空間名稱使用安全的專案名稱
+## <a name="example-use-the-safe-project-name-for-the-namespace-name"></a>範例：針對命名空間名稱使用安全的專案名稱
 
 若要在 C# 類別檔案為命名空間使用安全的專案名稱，請使用下列語法：
 

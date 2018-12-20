@@ -1,10 +1,11 @@
 ---
 title: Visual Studio 2017 的新功能
+titleSuffix: ''
 description: 深入了解 Visual Studio 2017 中的新功能。
-ms.custom: ''
 ms.date: 12/04/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
+ms.custom: seodec18
 ms.topic: conceptual
 f1_keywords:
 - VS.StartPage.WhatsNew
@@ -17,18 +18,18 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a007d6557fe7ebd533ee34fecc8b8c0315024edf
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: c490d15f27801dff6bb09f6356ad7c665b09c558
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895765"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53160188"
 ---
 # <a name="what39s-new-in-visual-studio-2017"></a>Visual Studio 2017 的新功能
 
 **已針對 [15.9 版](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default&contextView=vs-2017)更新**
 
-想要從舊版 Visual Studio 升級嗎？ Visual Studio 2017 提供您下列功能：適用於任何開發人員、任何應用程式和任何平台的卓越生產力。 您可使用 Visual Studio 2017 來開發適用於 Android、iOS、Windows、Linux、Web 及雲端的應用程式。 快速編碼、輕鬆偵錯及診斷、頻繁測試，然後自信地發行。 您也可以建置自己的擴充功能來擴充和自訂 Visual Studio 。 使用版本控制、變得敏捷、使用這個版本有效率地共同作業！
+想要從舊版 Visual Studio 升級嗎？ 以下是 Visual Studio 2017 能為您提供的內容：適用於任何開發人員、任何應用程式及任何平台的卓越生產力。 您可使用 Visual Studio 2017 來開發適用於 Android、iOS、Windows、Linux、Web 及雲端的應用程式。 快速編碼、輕鬆偵錯及診斷、頻繁測試，然後自信地發行。 您也可以建置自己的擴充功能來擴充和自訂 Visual Studio 。 使用版本控制、變得敏捷、使用這個版本有效率地共同作業！
 
 以下是自舊版 Visual Studio 2015 以來，我們所做變更的高階回顧：
 
@@ -64,7 +65,7 @@ ms.locfileid: "52895765"
 
 * 想要選擇您自己的元件，而不是使用工作負載嗎？ 從安裝程式選取 [個別元件] 索引標籤。
 * 想要安裝語言套件，同時不需要變更 Windows 語言選項嗎？ 選擇安裝程式的 [語言套件] 索引標籤。
-* **15.7 的新功能**：想要變更 Visual Studio 的安裝位置嗎？ 選擇安裝程式的 [安裝選項] 索引標籤。
+* **15.7 中的新功能**：想要變更 Visual Studio 的安裝位置嗎？ 選擇安裝程式的 [安裝選項] 索引標籤。
 
 若要深入了解新的安裝體驗 (包括引導您執行這項作業的逐步指示)，請參閱[安裝 Visual Studio](../install/install-visual-studio.md) 頁面。
 
@@ -106,11 +107,11 @@ Visual Studio 正在移動其擴充功能 (同時也在處理協力廠商擴充�
 
 當您使用漫遊延伸模組管理員時，清單上會有三個圖示類型︰
 
-* ![已漫遊圖示](../ide/media/vs2017ide-roamedicon.png) **_已漫遊_**：在漫遊清單中，但尚未安裝在電腦上的延伸模組。
+* ![漫遊圖示](../ide/media/vs2017ide-roamedicon.png) **_漫遊_**：在 [漫遊] 清單中，但尚未安裝在電腦上的延伸模組。
   (您可以使用 [下載] 按鈕進行安裝)。
-* ![已漫遊並已安裝圖示](../ide/media/vs2017ide-roamedinstalledicon.png) **_已漫遊並已安裝_**︰在漫遊清單中，並已安裝在開發環境中的所有延伸模組。
+* ![已漫遊並已安裝圖示](../ide/media/vs2017ide-roamedinstalledicon.png) **_已漫遊並已安裝_**：所有位於此 [漫遊] 清單中，並且已在您開發環境上安裝的延伸模組。
   (如果您決定不再漫遊，則可以使用 [停止漫遊] 按鈕予以移除)。
-* ![已安裝圖示](../ide/media/vs2017ide-installedicon.png) **_已安裝_**︰已安裝在開發環境中，但不在漫遊清單中的所有延伸模組。
+* ![已安裝圖示](../ide/media/vs2017ide-installedicon.png) **_已安裝_**：所有已安裝在此環境中，但不在您 [漫遊] 清單內的延伸模組。
   (使用 [開始漫遊] 按鈕，即可將延伸模組新增至 [漫遊] 清單)。
 
 您在已登入期間下載的所有延伸模組都會以 [Roamed & Installed] \(已漫遊且已安裝\) 的形式新增至您的清單。 延伸模組隨後會成為漫遊清單的一部份，使您得以從任何電腦存取。
@@ -131,19 +132,19 @@ Visual Studio 正在移動其擴充功能 (同時也在處理協力廠商擴充�
 
 如需有關自動化測試的詳細資訊，請參閱 [DevOps 中自動化測試的 CI/CD 管線](https://blogs.msdn.microsoft.com/visualstudioalmrangers/2017/04/20/set-up-a-cicd-pipeline-to-run-automated-tests-efficiently/) \(英文\) 部落格文章。
 
-此外，如需 [Visual Studio 持續傳遞工具](https://marketplace.visualstudio.com/items?itemName=VSIDEDevOpsMSFT.ContinuousDeliveryToolsforVisualStudio) DevLabs 延伸模組新功能的詳細資訊，請參閱 [Commit with confidence: Commit time code quality](https://blogs.msdn.microsoft.com/visualstudio/2017/08/21/committing-with-confidence-commit-time-code-quality-information-updated/) (有信心地認可：認可時的程式碼品質) 部落格文章。
+此外，如需 [Visual Studio 持續傳遞工具](https://marketplace.visualstudio.com/items?itemName=VSIDEDevOpsMSFT.ContinuousDeliveryToolsforVisualStudio) DevLabs 延伸模組新功能的詳細資訊，請參閱 [Commit with confidence:Commit time code quality](https://blogs.msdn.microsoft.com/visualstudio/2017/08/21/committing-with-confidence-commit-time-code-quality-information-updated/) (有信心地認可：認可時的程式碼品質) 部落格文章。
 
 ### <a name="visual-studio-ide-enhancements"></a>Visual Studio IDE 加強功能
 
 #### <a name="multi-caret-editing"></a>多重游標編輯
 
-**15.8 中的新功能**：現在要在一個檔案中編輯多個位置，是輕而易舉的事。 一開始，先在一個檔案中的多個位置建立插入點和選取範圍。 接著使用多重游標編輯功能，同時對兩處以上進行相同的編輯。
+**15.8 中的新功能**：現在要在一個檔案中同時編輯多個位置，是輕而易舉的事。 一開始，先在一個檔案中的多個位置建立插入點和選取範圍。 接著使用多重游標編輯功能，同時對兩處以上進行相同的編輯。
 
 如需詳細資訊，請參閱[尋找和取代文字](finding-and-replacing-text.md)頁面的[多重游標選取](finding-and-replacing-text.md#multi-caret-selection)章節。
 
 #### <a name="keep-keybinding-profiles-consistent"></a>讓按鍵繫結關係設定檔保持一致
 
-**15.8 中的新功能**：現在，您可以透過兩個新的鍵盤設定檔：Visual Studio Code 和 ReSharper (Visual Studio)，在工具之間保持一致的按鍵繫結關係。 您可以在 [工具] > [選項] > [一般] > [鍵盤] 和頂端下拉式功能表下，找到這些結構描述。
+**15.8 中的新功能**：現在，您可以透過兩個新的鍵盤設定檔，在工具之間保持一致的按鍵繫結關係：Visual Studio Code 和 ReSharper (Visual Studio)。 您可以在 [工具] > [選項] > [一般] > [鍵盤] 和頂端下拉式功能表下，找到這些結構描述。
 
   ![Visual Studio Code 和 ReSharper 的新按鍵繫結關係設定檔](../ide/media/vs-keyboard-mappings-code-resharper.png)
 
@@ -172,7 +173,7 @@ Visual Studio 正在移動其擴充功能 (同時也在處理協力廠商擴充�
 
 我們已重新整理瀏覽體驗，以協助您在從 A 移到 B 時更為堅定而不易分心。
 
-* **15.4 的新功能**：**移至定義** (**Ctrl**+**按一下滑鼠左鍵**或 **F12**) &ndash; 滑鼠使用者可透過按住 **Ctrl** 鍵然後按一下成員，更輕鬆地巡覽至成員的定義。 按住 **Ctrl** 鍵並將滑鼠游標暫留在程式碼符號上，會加上底線並將它轉換成連結。 如需詳細資訊，請參閱[移至定義和查看定義](../ide/go-to-and-peek-definition.md)。
+* **15.4 中的新功能**：**移至定義** (**Ctrl**+**按一下滑鼠左鍵**或 **F12**) &ndash; 滑鼠使用者可透過按住 **Ctrl** 然後按一下成員，更輕鬆地巡覽至成員的定義。 按住 **Ctrl** 鍵並將滑鼠游標暫留在程式碼符號上，會加上底線並將它轉換成連結。 如需詳細資訊，請參閱[移至定義和查看定義](../ide/go-to-and-peek-definition.md)。
 
 * **移至實作** (**Ctrl**+**F12**) &ndash; 從任何基底類型或成員巡覽至其各種實作。
 
@@ -216,7 +217,7 @@ Visual Studio 正在移動其擴充功能 (同時也在處理協力廠商擴充�
 
 #### <a name="snapshots-and-intellitrace-step-back"></a>快照集和 IntelliTrace 回溯
 
-**15.5 的新功能**：IntelliTrace 回溯會自動擷取應用程式在每個中斷點和偵錯工具逐步執行事件的快照集。 記錄的快照集可讓您回溯到先前的中斷點或步驟，以檢視應用程式過去的狀態。 如果您想要查看先前的應用程式狀態，但不想要重新啟動偵錯或重新建立所需的應用程式狀態，IntelliTrace 回溯可節省您的時間。
+**15.5 的新功能**：IntelliTrace 回溯會自動擷取應用程式在每個中斷點以及偵錯工具步驟事件的快照。 記錄的快照集可讓您回溯到先前的中斷點或步驟，以檢視應用程式過去的狀態。 如果您想要查看先前的應用程式狀態，但不想要重新啟動偵錯或重新建立所需的應用程式狀態，IntelliTrace 回溯可節省您的時間。
 
 您可以使用[偵錯] 工具列的 [逐步返回] 和 [逐步前進] 按鈕，來巡覽及檢視快照集。 這些按鈕可巡覽出現在 [診斷工具] 視窗之 [事件] 索引標籤中的事件。 逐步返回或前進至某個事件會自動啟動所選事件的歷程偵錯。
 
@@ -245,7 +246,7 @@ Visual Studio 正在移動其擴充功能 (同時也在處理協力廠商擴充�
 
 ### <a name="debug-live-aspnet-apps-using-snappoints-and-logpoints-in-live-azure-applications"></a>使用即時 Azure 應用程式中的快照點和記錄點對即時 ASP.NET 應用程式進行偵錯
 
-**15.5 的新功能**：快照集偵錯工具會在您感興趣的程式碼執行時，擷取實際執行應用程式的快照集。 若要指示偵錯工具擷取快照集，您可以在程式碼中設定快照點和記錄點。 偵錯工具可讓您清楚了解發生什麼問題，而不會影響實際執行應用程式的流量。 快照集偵錯工具可協助您大幅縮短為解決出現在生產環境之問題所花費的時間。
+**15.5 的新功能**：[快照偵錯工具] 會在您感興趣的程式碼執行時，擷取實際執行應用程式的快照集。 若要指示偵錯工具擷取快照集，您可以在程式碼中設定快照點和記錄點。 偵錯工具可讓您清楚了解發生什麼問題，而不會影響實際執行應用程式的流量。 快照集偵錯工具可協助您大幅縮短為解決出現在生產環境之問題所花費的時間。
 
 快照集合適用於 Azure App Service 中執行的下列 Web 應用程式：
 
@@ -281,13 +282,13 @@ Visual Studio 正在移動其擴充功能 (同時也在處理協力廠商擴充�
 
 ### <a name="entitlements-editor"></a>權利編輯器
 
-**15.3 的新功能**：針對 iOS 開發需求，我們已新增獨立權利編輯器。 它包含可輕鬆地瀏覽的使用者易記 UI。 若要啟動它，請按兩下 *entitlements.plist* 檔案。
+**15.3 中的新功能**：針對 iOS 開發需求，我們已新增獨立權利編輯器。 它包含可輕鬆地瀏覽的使用者易記 UI。 若要啟動它，請按兩下 *entitlements.plist* 檔案。
 
 ![Xamarin 的權利編輯器](../ide/media/xamarin-entitlements-editor.png)
 
 ### <a name="visual-studio-tools-for-xamarin"></a>Visual Studio Tools for Xamarin
 
-**15.4 的新功能**：Xamarin Live 能讓開發人員直接在 iOS 和 Android 裝置上持續部署、測試及偵錯他們的應用程式。 下載 Xamarin Live Player 後 &mdash;可從 App Store 或 Google Play 取得&mdash;，您就可以配對裝置和 Visual Studio，並改革建置行動應用程式的方式。 這項功能現在已包含在 Visual Studio 中，於 [工具] > [選項] > [Xamarin] > [其他] > [啟用 Xamarin Live Player] 啟用。
+**15.4 中的新功能**：Xamarin Live 能讓開發人員直接在 iOS 和 Android 裝置上持續部署、測試及偵錯他們的應用程式。 下載 Xamarin Live Player 後 &mdash;可從 App Store 或 Google Play 取得&mdash;，您就可以配對裝置和 Visual Studio，並改革建置行動應用程式的方式。 這項功能現在已包含在 Visual Studio 中，於 [工具] > [選項] > [Xamarin] > [其他] > [啟用 Xamarin Live Player] 啟用。
 
 ![Xamarin Live Player 配對、部署和即時編輯模式的動畫](../ide/media/xamarinliveplayer.gif)
 
@@ -299,7 +300,7 @@ Visual Studio 正在移動其擴充功能 (同時也在處理協力廠商擴充�
 
 #### <a name="xamarinandroid-designer-split-view-editor"></a>Xamarin.Android Designer 分割檢視編輯器
 
-也是 **15.8 中的新功能**：我們對 Xamarin.Android 的設計工具體驗進行了大幅改進。 其中一個亮點是新的分割檢視編輯器，可讓您同時建立、編輯及預覽版面配置。
+**15.8 中的其他新功能**：我們大幅改善了 Xamarin.Android 的設計工具體驗。 其中一個亮點是新的分割檢視編輯器，可讓您同時建立、編輯及預覽版面配置。
 
 ![Xamarin.Android Designer 分割檢視編輯器](../ide/media/android-designer-split-view.png)
 
@@ -307,11 +308,11 @@ Visual Studio 正在移動其擴充功能 (同時也在處理協力廠商擴充�
 
 ### <a name="visual-studio-app-center"></a>Visual Studio 應用程式中心
 
-**15.5 的新功能**：Visual Studio 應用程式中心 (現在 Android、iOS、macOS 和 Windows 應用程式都能使用) 具有管理應用程式生命週期所需的一切功能，包括自動化組建、在雲端測試實際裝置、散發給搶鮮版 (Beta) 測試人員和應用程式市集，以及透過損毀和分析資料來監視真實世界的使用情況。 所有功能都支援以 Objective-C、Swift、Java、C#、Xamarin 和 React Native 撰寫的應用程式。
+**15.5 的新功能**：Visual Studio App Center (現在 Android、iOS、macOS 和 Windows 應用程式都能使用) 具有管理應用程式生命週期所需的一切功能，包括自動化組建、在雲端測試實際裝置、散發給搶鮮版 (Beta) 測試人員和應用程式市集，以及透過損毀和分析資料來監視真實世界的使用情況。 所有功能都支援以 Objective-C、Swift、Java、C#、Xamarin 和 React Native 撰寫的應用程式。
 
   ![Visual Studio 應用程式中心測試環境](../ide/media/app-center-test-env.png)
 
-如需詳細資訊，請參閱 [Introducing App Center: Build, test, distribute and monitor apps in the cloud](https://blogs.msdn.microsoft.com/vsappcenter/introducing-visual-studio-app-center/) (App Center 簡介：在雲端建置、測試、散發及監視應用程式) 部落格文章。
+如需詳細資訊，請參閱 [Introducing App Center:Build, test, distribute and monitor apps in the cloud](https://blogs.msdn.microsoft.com/vsappcenter/introducing-visual-studio-app-center/) (App Center 簡介：在雲端中建置、測試、散發和監視應用程式) 部落格文章。
 
 ## <a name="cross-platform-development"></a>跨平台開發
 
@@ -338,7 +339,7 @@ Visual Studio 正在移動其擴充功能 (同時也在處理協力廠商擴充�
 
 而且，它現在包含 Docker 支援。
 
-**15.3 的新功能**：Visual Studio 2017 版本 15.3 支援 .NET Core 2.0 開發 使用 .NET Core 2.0 需要分別下載和安裝 .NET Core 2.0 SDK。
+**15.3 中的新功能**：Visual Studio 2017 版本 15.3 支援 .NET Core 2.0 開發。 使用 .NET Core 2.0 需要分別下載和安裝 .NET Core 2.0 SDK。
 
 如需詳細資訊，請參閱 [.NET Core 指南](/dotnet/core/index)頁面。
 

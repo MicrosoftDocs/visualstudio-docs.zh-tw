@@ -1,6 +1,6 @@
 ---
-title: 在 Visual Studio 中分析 XAML 應用程式的資源耗用量 | Microsoft Docs
-ms.custom: H1Hack27Feb2017
+title: 分析 XAML 應用程式中的資源耗用量
+ms.custom: seodec18
 ms.date: 11/01/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 971d8eff11d28eda884066407b03f3f6addb43ad
-ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
+ms.openlocfilehash: 32368b280faf7b87aa128865cf169c7675a58c95
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "51220953"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53059174"
 ---
 # <a name="analyze-resource-consumption-and-ui-thread-activity-xaml"></a>分析資源耗用量和 UI 執行緒活動 (XAML)
 
@@ -124,7 +124,7 @@ ms.locfileid: "51220953"
   
 ## <a name="see-also"></a>另請參閱
 
-- [WPF team blog: New UI performance analysis tool for WPF applications](https://blogs.msdn.microsoft.com/wpf/2015/01/16/new-ui-performance-analysis-tool-for-wpf-applications/) (WPF 小組部落格︰WPF 應用程式的新 UI 效能分析工具)  
+- [WPF 小組部落格：New UI performance analysis tool for WPF applications](https://blogs.msdn.microsoft.com/wpf/2015/01/16/new-ui-performance-analysis-tool-for-wpf-applications/) (WPF 應用程式的新 UI 效能分析工具)  
 - [使用 C++、C# 及 Visual Basic 的 UWP App 效能最佳做法](/previous-versions/windows/apps/hh750313\(v\=win.10\))
 - [最佳化 WPF 應用程式效能](/dotnet/framework/wpf/advanced/optimizing-wpf-application-performance)  
 - [Visual Studio 中的分析](../profiling/index.md)  

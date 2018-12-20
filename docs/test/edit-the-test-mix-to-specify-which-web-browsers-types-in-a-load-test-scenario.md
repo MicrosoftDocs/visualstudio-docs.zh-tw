@@ -1,5 +1,5 @@
 ---
-title: Visual Studio 中用於負載測試的瀏覽器測試混合
+title: 用於負載測試的瀏覽器測試混合
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 8999d3acdd9160ea33f6e1fa9d07dc9f69619b01
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: c9cf19ad65131976ea5603ef5af49e8dd3ba555d
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52896467"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53049324"
 ---
 # <a name="edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario"></a>編輯測試混合以指定負載測試情節中的網頁瀏覽器類型
 

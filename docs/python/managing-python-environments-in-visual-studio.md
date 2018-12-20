@@ -1,7 +1,7 @@
 ---
 title: 管理 Python 環境與解譯器
 description: 使用 [Python 環境] 視窗管理全域、虛擬和 conda 環境、安裝 Python 解譯器和套件，以及將環境指派給 Visual Studio 專案。
-ms.date: 11/08/2018
+ms.date: 12/07/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: f69178fde2a0912d39c813028385f21f6ca87d7a
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 887776b3a3f1275b97b2abee26c4613d8aad39fc
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349357"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53063204"
 ---
 # <a name="how-to-create-and-manage-python-environments-in-visual-studio"></a>如何在 Visual Studio 中建立及管理 Python 環境
 
@@ -57,7 +57,9 @@ Visual Studio 知道的環境會顯示在 [Python 環境] 視窗中。 若要開
 
 Visual Studio 會使用登錄尋找已安裝的全域環境 (在 [PEP 514](https://www.python.org/dev/peps/pep-0514/) 之後)，以及虛擬環境和 Conda 環境 (請參閱[環境的類型](#types-of-environments))。 如果在清單中沒有看到您預期的環境，請參閱[手動識別現有的環境](#manually-identify-an-existing-environment)。
 
-當您在清單中選取環境時，Visual Studio 會在 [概觀] 索引標籤上顯示該環境的各種屬性與指令。例如，如您在上圖中所見，解譯器的位置是 *C:\Python36-32*。 使用環境清單下的下拉式清單，切換到不同的索引標籤，例如 [套件] 和 [IntelliSense]。 這些索引標籤描述於 [Python 環境視窗索引標籤參考](python-environments-window-tab-reference.md)。
+當您在清單中選取環境時，Visual Studio 會在 [概觀] 索引標籤上顯示該環境的各種屬性與指令。例如，如您在上圖中所見，解譯器的位置是 *C:\Python36-32*。 [概觀] 索引標籤底部的四個命令各自都會開啟命令提示字元，其中已執行解譯器。 如需詳細資訊，請參閱 [Python 環境視窗索引標籤參考 - 概觀](python-environments-window-tab-reference.md#overview-tab)。
+
+使用環境清單下的下拉式清單，切換到不同的索引標籤，例如 [套件] 和 [IntelliSense]。 [Python 環境視窗索引標籤參考](python-environments-window-tab-reference.md)也提供這些索引標籤的說明。
 
 選取環境不會變更它與任何專案的關聯性。 在清單中以粗體顯示的預設環境，是 Visual Studio 用於任何新專案的環境。 若要使用不同環境來搭配新專案，請使用 [將此設定為新專案的預設環境] 命令。 在專案的內容中，您一律可以選取特定的環境。 如需詳細資訊，請參閱[選取專案的環境](selecting-a-python-environment-for-a-project.md)。
 

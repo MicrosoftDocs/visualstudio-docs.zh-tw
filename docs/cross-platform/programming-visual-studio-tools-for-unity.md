@@ -5,17 +5,17 @@ ms.date: 11/04/2016
 ms.technology: vs-unity-tools
 ms.topic: conceptual
 ms.assetid: a5758cb0-e73b-45f5-8cae-c0eb40491026
-author: conceptdev
-ms.author: crdun
+author: therealjohn
+ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 48a557addca76c4be56b19890e9abdf8c9eca38d
-ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
+ms.openlocfilehash: 0811445e2dcf985aef7b6449ff3fb86c5ac9a1c8
+ms.sourcegitcommit: 5c049194fa256b876ad303f491af11edd505756c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39252436"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53027370"
 ---
 # <a name="program-visual-studio-tools-for-unity"></a>使用 Visual Studio Tools for Unity 設計程式
 在本節中，您將找到使用 Visual Studio Tools for Unity 應用程式開發介面的範例。

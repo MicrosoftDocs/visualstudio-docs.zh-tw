@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Studio 中將檔案名稱重新命名以符合類型
+title: 將檔案名稱重新命名以符合類型
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -12,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8407e89d9e28c501358877df9c244175ca8155c8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: bfc1a88091fa30bceea15a3f8e1b78df5cc7a87c
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942318"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53054783"
 ---
 # <a name="sync-a-type-to-a-filename-or-a-filename-to-a-type-refactoring"></a>將類型同步至檔案名稱，或將檔案名稱同步至類型的重構
 
@@ -31,7 +31,7 @@ ms.locfileid: "49942318"
 
 **時機：** 您已將檔案或類型重新命名，但尚未更新對應的檔案或類型來使其相符。
 
-**原因：** 將類型放在不同名稱的檔案中 (或反之亦然) 會很難找出所要尋找的項目。 藉由將類型或檔案名稱重新命名，程式碼會變得較容易閱讀及瀏覽。
+**原因：** 將類型放在不同名稱的檔案中 (或反之亦然) 會很難找出所要尋找項目。 藉由將類型或檔案名稱重新命名，程式碼會變得較容易閱讀及瀏覽。
 
 ## <a name="how-to"></a>操作說明
 
@@ -56,7 +56,7 @@ ms.locfileid: "49942318"
 
    類型或檔案會重新命名。
 
-   - C#：在下面的範例中，檔案 **MyClass.cs** 已重新命名為 **MyNewClass.cs** 以符合類型名稱。
+   - C#: 在下面的範例中，檔案 **MyClass.cs** 已重新命名為 **MyNewClass.cs** 以符合類型名稱。
 
        ![內嵌結果 C#](media/synctype-result-cs.png)
 

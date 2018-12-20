@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Studio 中設定 ASP.NET 分析工具以進行負載測試
+title: 設定 ASP.NET 分析工具以進行負載測試
 ms.date: 10/13/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,14 +10,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 36176ce14b51af1cf692b6b04d862882a48d7e4e
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 197a6c4a743f5f30e060950413b7e2214fb91b36
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895193"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068418"
 ---
-# <a name="how-to-configure-aspnet-profiler-for-load-tests-using-test-settings-in-visual-studio"></a>如何：在 Visual Studio 中使用測試設定來設定 ASP.NET 分析工具以進行負載測試
+# <a name="how-to-configure-aspnet-profiler-for-load-tests-using-test-settings-in-visual-studio"></a>HOW TO：在 Visual Studio 中使用測試設定來設定 ASP.NET 分析工具以進行負載測試
 
 您可以使用 ASP.NET 分析工具診斷資料配接器，收集 ASP.NET 分析工具資訊。 這個診斷資料配接器會收集 ASP.NET 應用程式的效能資料。
 
@@ -31,7 +31,7 @@ ASP.NET 分析工具診斷資料配接器可讓您在執行負載測試時，從
 > [!NOTE]
 > ASP.NET 分析工具診斷資料配接器會分析 Internet Information Services (IIS) 處理序， 因此不會針對開發 Web 伺服器執行。 若要在負載測試中分析網站，您必須在 IIS 執行所在的電腦上安裝測試代理程式。 測試代理程式不會產生負荷，只用於收集資料。 如需詳細資訊，請參閱[安裝和設定測試代理程式](../test/lab-management/install-configure-test-agents.md)。
 
-如需詳細資訊，請參閱[如何：建立分散式負載測試的測試設定](../test/how-to-create-a-test-setting-for-a-distributed-load-test.md)。
+如需詳細資訊，請參閱[＜How to：建立分散式負載測試的測試設定](../test/how-to-create-a-test-setting-for-a-distributed-load-test.md)。
 
 ## <a name="configure-the-aspnet-profiler-for-your-test-settings"></a>針對測試設定來設定 ASP.NET 分析工具
 

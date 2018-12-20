@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Studio 中的負載測試回合設定中指定測試反覆項目的數目
+title: 在負載測試回合設定中指定測試反覆項目的數目
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,14 +11,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: bba6ddfa9162583d687f6638c9b75e178556132b
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: e250096a99cfc272cd23b58bf0f7b70eeb3a7c9d
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52894790"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53059836"
 ---
-# <a name="how-to-specify-the-number-of-test-iterations-in-a-load-test-run-setting"></a>如何：在負載測試回合設定中指定測試反覆項目的數目
+# <a name="how-to-specify-the-number-of-test-iterations-in-a-load-test-run-setting"></a>HOW TO：在負載測試回合設定中指定測試反覆項目的數目
 
 使用 [新增負載測試精靈] 建立負載測試之後，您就可以使用 [負載測試編輯器] 來變更情節屬性，以便符合您的測試需求和目標。 如需詳細資訊，請參閱[逐步解說：建立和執行負載測試](../test/walkthrough-create-and-run-a-load-test.md)。
 

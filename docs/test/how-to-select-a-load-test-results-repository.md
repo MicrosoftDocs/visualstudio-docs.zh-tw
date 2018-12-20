@@ -1,5 +1,5 @@
 ---
-title: 如何：在 Visual Studio 中選取負載測試結果存放庫
+title: HOW TO：選取負載測試結果存放庫
 ms.date: 10/19/2016
 ms.topic: conceptual
 f1_keywords:
@@ -17,14 +17,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 6c3627b55fa7b4b60193d31fc96be803301ce4c9
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 169020d61cee1ae109a302eede0a9beb133fe82f
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895648"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53059969"
 ---
-# <a name="how-to-select-a-load-test-results-repository"></a>如何：選取負載測試結果存放庫
+# <a name="how-to-select-a-load-test-results-repository"></a>HOW TO：選取負載測試結果存放庫
 
 您不必侷限於本機結果存放區。 負載測試通常會在遠端代理程式電腦集合上執行。 代理程式加上控制器能夠產生比任何單一電腦更接近的模擬負載。 如需詳細資訊，請參閱[測試控制器和測試代理程式](configure-test-agents-and-controllers-for-load-tests.md)。
 
