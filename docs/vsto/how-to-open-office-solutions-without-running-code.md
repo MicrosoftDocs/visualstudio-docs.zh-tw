@@ -1,5 +1,5 @@
 ---
-title: 如何： 開啟的 Office 方案，而不需執行的程式碼
+title: HOW TO：不執行程式碼開啟 Office 方案
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -16,19 +16,19 @@ helpviewer_keywords:
 - assemblies [Office development in Visual Studio], bypassing
 - Office documents [Office development in Visual Studio, opening without running code
 - documents [Office development in Visual Studio], opening without running code
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f7ced7b38a4f32d96b397e7f9eebb1d40be03ae3
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 7684fd2d01d0151798c9e59c593e3e0c2acb95b1
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35254984"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53646902"
 ---
-# <a name="how-to-open-office-solutions-without-running-code"></a>如何： 開啟的 Office 方案，而不需執行的程式碼
+# <a name="how-to-open-office-solutions-without-running-code"></a>HOW TO：不執行程式碼開啟 Office 方案
   即使使用者的 Office 應用程式中的安全性設定設為 「 高 」，就會執行使用 managed 程式碼擴充功能所建立的 Microsoft Office 方案。 這是因為.NET 組件程式碼安全性由 Microsoft.NET Framework 中，不是由 Microsoft Office。  
   
  不過，有一些您可能的想来開啟的文件，而不需執行的程式碼。 例如，文件開啟時執行程式碼可能修改的內容中，但您想要更新的文件的外觀之前的程式碼變更它的方式。 或要在其中的特定資訊的文件傳送給某個成員，並不想讓程式碼以執行，並可能修改的內容。  

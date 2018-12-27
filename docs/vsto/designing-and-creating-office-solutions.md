@@ -13,17 +13,17 @@ helpviewer_keywords:
 - Office development in Visual Studio, creating solutions
 - solutions [Office development in Visual Studio], creating
 - Office project types in Visual Studio
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 05cf317823d4f5853d960109bd97da77ea8a927d
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 4803cbb515c680ce0d004cb2f9c1f5ee730bc588
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50671239"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648803"
 ---
 # <a name="design-and-create-office-solutions"></a>設計和建立 Office 方案
   Visual Studio 提供您可用來建立幾種不同類型之 Office 方案的專案範本。 文件的本節描述此專案範本，並提供有關建立 Office 專案的指引。 如需如何實作自訂程式碼和使用者介面，在您建立專案之後，請參閱[開發 Office 方案](../vsto/developing-office-solutions.md)。  
@@ -34,7 +34,7 @@ ms.locfileid: "50671239"
 >  想要開發解決方案，擴充的 Office 體驗，跨[多個平台](https://dev.office.com/add-in-availability)嗎？ 查看新[Office 增益集模型](https://dev.office.com/docs/add-ins/overview/office-add-ins)。 Office 增益集較小的使用量，相較於 VSTO 增益集和解決方案，而且您可以使用幾乎任何 web 程式設計技術，例如 HTML5、 JavaScript、 CSS3、 以及 XML 來建置。  
   
 ## <a name="create-office-projects"></a>建立 Office 專案  
- 在開始之前，您應該判斷您的需求，並探索能提供最適合之方案的類型。 例如，如果您每次使用應用程式時，都必須執行 Office 方案，則 VSTO 增益集對您的需求最為適合。 如果程式碼與單一文件緊密整合，則請建立文件層級的自訂。 這些專案類型可做為 Visual Studio 專案範本提供使用。 如需隨附於 Visual Studio 的 Office 專案範本的詳細資訊，請參閱[Office 專案範本概觀](../vsto/office-project-templates-overview.md)。 如需如何建立 Office 專案的詳細資訊，請參閱[如何： 在 Visual Studio 中的建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
+ 在開始之前，您應該判斷您的需求，並探索能提供最適合之方案的類型。 例如，如果您每次使用應用程式時，都必須執行 Office 方案，則 VSTO 增益集對您的需求最為適合。 如果程式碼與單一文件緊密整合，則請建立文件層級的自訂。 這些專案類型可做為 Visual Studio 專案範本提供使用。 如需隨附於 Visual Studio 的 Office 專案範本的詳細資訊，請參閱[Office 專案範本概觀](../vsto/office-project-templates-overview.md)。 如需如何建立 Office 專案的詳細資訊，請參閱[How to:在 Visual Studio 中建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
   
  Office 專案具有不同於其他 Visual Studio 之專案類型的功能和專案項目。 例如，當您建立文件層級專案時，專案中的文件或活頁簿可以在 Visual Studio 內開啟和編輯。 如需詳細資訊，請參閱 < [Visual Studio 環境中的 Office 專案](../vsto/office-projects-in-the-visual-studio-environment.md)。  
   
@@ -51,9 +51,9 @@ ms.locfileid: "50671239"
   
   如果您移轉以 .NET Framework 3.5 為目標的 VSTO 增益集專案，Visual Studio 便會將您專案的目標 Framework 變更為 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 或更新版本，視您已安裝的 Office 版本而定。  
   
-  不過，Visual Studio 將目標變更為 Framework 之後，如果專案中的某些程式碼會使用特定功能，則您可能需要修改此程式碼。 如需如何變更目標 framework 的詳細資訊，請參閱[如何： 以.NET framework 版本為目標](../ide/how-to-target-a-version-of-the-dotnet-framework.md)。 如需您可能需要您在專案中變更的相關資訊，請參閱[設為.NET Framework 4 或更新版本的移轉 Office 方案](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)。  
+  不過，Visual Studio 將目標變更為 Framework 之後，如果專案中的某些程式碼會使用特定功能，則您可能需要修改此程式碼。 如需如何變更目標 framework 的詳細資訊，請參閱[How to:以一個 .NET Framework 版本為目標](../ide/how-to-target-a-version-of-the-dotnet-framework.md)。 如需您可能需要您在專案中變更的相關資訊，請參閱[設為.NET Framework 4 或更新版本的移轉 Office 方案](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)。  
   
-  如果 Visual Studio 會變更您的專案的目標.NET Framework，而且您使用 ClickOnce 來部署您的解決方案，請確定也選取對應中的.NET Framework 版本**必要條件** 對話方塊。 當您為專案變更此目標 Framework 時，選取此選項並不會自動變更。 如需詳細資訊，請參閱 <<c0> [ 如何： 安裝必要條件來執行 Office 方案的使用者電腦上](https://msdn.microsoft.com/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98)。  
+  如果 Visual Studio 會變更您的專案的目標.NET Framework，而且您使用 ClickOnce 來部署您的解決方案，請確定也選取對應中的.NET Framework 版本**必要條件** 對話方塊。 當您為專案變更此目標 Framework 時，選取此選項並不會自動變更。 如需詳細資訊，請參閱[＜How to：安裝必要條件來執行 Office 方案的使用者電腦上](https://msdn.microsoft.com/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98)。  
   
 > [!NOTE]  
 >  在使用 [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] 建立的 Office 專案中，您無法以 .NET Framework 3.5 或更早版本為目標。 您使用 [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] 建立的 Office 專案需要 [!INCLUDE[net_client_v40_long](../vsto/includes/net-client-v40-long-md.md)] 中首次推出的功能。  
@@ -66,7 +66,7 @@ ms.locfileid: "50671239"
 ### <a name="understand-the-client-profile"></a>了解 client profile  
  .NET Framework Client Profile 是完整 .NET Framework 的子集。 如果您只需要使用 .NET Framework 中的用戶端功能，而且想要提供 Office 方案的最快速部署經驗，則可以將 .NET Framework Client Profile 當做目標。 如需詳細資訊，請參閱 < [.NET Framework client profile](/dotnet/framework/deployment/client-profile)。  
   
- 當您建立以 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 為目標的 Office 專案時，根據預設會以 [!INCLUDE[net_client_v40_long](../vsto/includes/net-client-v40-long-md.md)] 為目標。 如果要針對完整 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 開發，您必須在建立專案之後設定這個選項。 如需詳細資訊，請參閱[如何：以 .NET Framework 版本為目標](../ide/how-to-target-a-version-of-the-dotnet-framework.md)。  
+ 當您建立以 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 為目標的 Office 專案時，根據預設會以 [!INCLUDE[net_client_v40_long](../vsto/includes/net-client-v40-long-md.md)] 為目標。 如果要針對完整 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 開發，您必須在建立專案之後設定這個選項。 如需詳細資訊，請參閱[＜How to：以一個 .NET Framework 版本為目標](../ide/how-to-target-a-version-of-the-dotnet-framework.md)。  
   
 ## <a name="create-solutions-for-the-64-bit-edition-of-microsoft-office"></a>建立 64 位元版本的 Microsoft Office 解決方案  
  Microsoft Office 提供 64 位元和 32 位元的版本。 若要建立可以在任一版本中執行的 Office 方案，平台目標設定為您的專案必須設定為**任何 CPU**。 這是 Office 專案的預設值。 如需詳細資訊，請參閱 <<c0> [ 建置 Office 方案](../vsto/building-office-solutions.md)。  
@@ -96,13 +96,13 @@ ms.locfileid: "50671239"
   
 ## <a name="see-also"></a>另請參閱  
  [Office 專案範本概觀](../vsto/office-project-templates-overview.md)   
- [如何： 在 Visual Studio 中建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)   
+ [如何：在 Visual Studio 中建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)   
  [在 Visual Studio 環境中的 office 專案](../vsto/office-projects-in-the-visual-studio-environment.md)   
  [Office 專案中的屬性](../vsto/properties-in-office-projects.md)   
  [執行不同版本的 Microsoft Office 中的方案](../vsto/running-solutions-in-different-versions-of-microsoft-office.md)   
- [如何： 透過主要 interop 組件的目標 Office 應用程式](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)   
+ [如何：透過主要 interop 組件的目標 Office 應用程式](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)   
  [在 Office 方案中的應用程式和部署資訊清單](../vsto/application-and-deployment-manifests-in-office-solutions.md)   
- [如何： 設定 Office 方案的組態資訊](../vsto/how-to-set-up-configuration-information-for-an-office-solution.md)   
+ [如何：設定 Office 方案的組態資訊](../vsto/how-to-set-up-configuration-information-for-an-office-solution.md)   
  [使用 Visual studio 的 Office 功能](../vsto/using-office-functionality-inside-of-visual-studio.md)   
  [部署 Office 方案](../vsto/deploying-an-office-solution.md)   
  [在 Office 程式設計中的一般工作](../vsto/common-tasks-in-office-programming.md)   

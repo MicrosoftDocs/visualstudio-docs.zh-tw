@@ -16,12 +16,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9ebfc937ee5cf6025761bb9da5d5f6589caf77d1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0f8349cc71bf0541d726a47bf5b875724c89bcc6
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49901043"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53738585"
 ---
 # <a name="add-command-line-switches"></a>新增命令列參數
 您可以新增套用至 VSPackage 的命令列參數時*devenv.exe*執行。 使用<xref:Microsoft.VisualStudio.Shell.ProvideAppCommandLineAttribute>宣告的參數和其屬性的名稱。 在此範例中，加入名為 VSPackage 的子類別 myswitch 之交換器**AddCommandSwitchPackage**搭配任何引數與自動載入 VSPackage。  
@@ -76,4 +76,4 @@ cmdline.GetOption("MySwitch", out isPresent, out optionValue);
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A>   
  [Devenv 命令列參數](../ide/reference/devenv-command-line-switches.md)   
  [CreatePkgDef 公用程式](../extensibility/internals/createpkgdef-utility.md)   
- [.Pkgdef 檔案](../extensibility/modifying-the-isolated-shell-by-using-the-dot-pkgdef-file.md)
+ [.Pkgdef 檔案](/visualstudio/extensibility/shell/modifying-the-isolated-shell-by-using-the-dot-pkgdef-file)

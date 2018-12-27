@@ -1,5 +1,5 @@
 ---
-title: 如何： 將 NamedRange 控制項加入工作表
+title: HOW TO：將 NamedRange 控制項加入工作表
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -12,19 +12,19 @@ helpviewer_keywords:
 - ranges, adding to worksheets
 - NamedRange control, adding to worksheets
 - controls [Office development in Visual Studio], adding to worksheets
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 35febfa4c4d13b3f5d3d279f7d1c35e96051d54b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8a279ab6419807d5010b830453ab0ec92d8c5ca7
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49867113"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648361"
 ---
-# <a name="how-to-add-namedrange-controls-to-worksheets"></a>如何： 將 NamedRange 控制項加入工作表
+# <a name="how-to-add-namedrange-controls-to-worksheets"></a>HOW TO：將 NamedRange 控制項加入工作表
   您可以新增<xref:Microsoft.Office.Tools.Excel.NamedRange>Microsoft Office Excel 工作表在設計階段，並在執行階段在文件層級專案中的控制項。  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
@@ -102,7 +102,7 @@ ms.locfileid: "49867113"
  [NamedRange 控制項](../vsto/namedrange-control.md)   
  [使用擴充的物件自動化 Excel](../vsto/automating-excel-by-using-extended-objects.md)   
  [主項目和主控制項概觀](../vsto/host-items-and-host-controls-overview.md)   
- [如何： 調整 NamedRange 控制項的大小](../vsto/how-to-resize-namedrange-controls.md)   
+ [如何：調整 NamedRange 控制項的大小](../vsto/how-to-resize-namedrange-controls.md)   
  [主項目和主控制項的程式設計限制](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)  
   
   

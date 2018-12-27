@@ -17,17 +17,17 @@ helpviewer_keywords:
 - objects [Office development in Visual Studio], Office object models
 - Excel object model
 - Office object models
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8ca93cae45eed272b683275896efcf83229ca9a3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: eb5b930df90f36395a22461ad0f26e82548afb6f
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49880789"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647521"
 ---
 # <a name="excel-object-model-overview"></a>Excel 物件模型概觀
   若要開發使用 Microsoft Office Excel 的方案，您可以與 Excel 物件模型提供的物件進行互動。 本主題將介紹最重要的物件：  
@@ -48,7 +48,7 @@ ms.locfileid: "49880789"
   
   本主題提供 Excel 物件模型的簡短概觀。 如需資源，您可以深入了解整個 Excel 物件模型，請參閱[使用 Excel 物件模型文件](#ExcelOMDocumentation)。  
   
-  ![影片連結](../vsto/media/playvideo.gif "影片連結")如需相關的影片示範，請參閱[How do i： 使用事件處理常式，在 Excel 2007 增益集？](http://go.microsoft.com/fwlink/?LinkID=130291)，和[How do i： 使用圖形以建立泡泡圖在 Excel 嗎？](http://go.microsoft.com/fwlink/?LinkID=130313).  
+  ![影片連結](../vsto/media/playvideo.gif "影片連結")如需相關的影片示範，請參閱[How do i:使用事件處理常式，在 Excel 2007 增益集嗎？](http://go.microsoft.com/fwlink/?LinkID=130291)，和[How do i:在 Excel 中建立泡泡圖中使用圖形？](http://go.microsoft.com/fwlink/?LinkID=130313).  
   
 ## <a name="access-objects-in-an-excel-project"></a>存取 Excel 專案中的物件  
  當您建立適用於 Excel 的新的 VSTO 增益集專案時，Visual Studio 會自動建立*ThisAddIn.vb*或是*ThisAddIn.cs*程式碼檔案。 您可以使用 `Me.Application` 或 `this.Application`，來存取 Application 物件。  
@@ -106,7 +106,7 @@ ms.locfileid: "49880789"
  如需 Excel 物件模型的完整資訊，您可以參閱 Excel 主要 Interop 組件 (PIA) 參考和 VBA 物件模型參考。  
   
 ### <a name="primary-interop-assembly-reference"></a>主要 interop 組件參考  
- Excel PIA 參考文件說明 Excel 主要 Interop 組件中的類型。 這份文件可從下列位置： [Excel 2010 主要 interop 組件參考](http://go.microsoft.com/fwlink/?LinkId=189585)。  
+ Excel PIA 參考文件說明 Excel 主要 Interop 組件中的類型。 這份文件可從下列位置：[Excel 2010 主要 interop 組件參考](http://go.microsoft.com/fwlink/?LinkId=189585)。  
   
  如需有關設計的 Excel PIA，例如類別和介面之間的差異以及 PIA 中的事件實作的方式，請參閱[的 Office 主要 interop 組件中類別和介面概觀](http://go.microsoft.com/fwlink/?LinkId=189592).  
   

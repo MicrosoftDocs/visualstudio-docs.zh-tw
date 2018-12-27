@@ -1,6 +1,7 @@
 ---
 title: 取得已啟動 （Office 程式開發在 Visual Studio）
-ms.custom: ''
+titleSuffix: ''
+ms.custom: seodec18
 ms.date: 02/02/2017
 ms.technology:
 - office-development
@@ -10,17 +11,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - Office development in Visual Studio, getting started
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5c7fb4888daecfe396ade51500cd156e49801850
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: d415fc57cd4923fbe5c62f4f9758dac23a4fccc3
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35671562"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647660"
 ---
 # <a name="get-started-office-development-in-visual-studio"></a>取得已啟動 （Office 程式開發在 Visual Studio）
   本節包含的主題可協助您開始使用 Visual Studio 中的 Microsoft Office Developer Tools。  

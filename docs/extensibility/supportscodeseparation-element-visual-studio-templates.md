@@ -1,10 +1,9 @@
 ---
-title: SupportsCodeSeparation 項目 （Visual Studio 範本） |Microsoft 文件
+title: SupportsCodeSeparation 項目 （Visual Studio 範本） |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#SupportsCodeSeparation
 helpviewer_keywords:
@@ -16,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: edd8eb9bbabb47444754d3756216fc81d02c7d7d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e669cf01f7becde7fa95af602ce4518bbaf6957e
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31140738"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561373"
 ---
 # <a name="supportscodeseparation-element-visual-studio-templates"></a>SupportsCodeSeparation 項目 (Visual Studio 範本)
-指定是否**程式碼置於個別檔案**中已啟用 核取方塊**加入新項目** 對話方塊。  
+指定是否**程式碼置於個別的檔案**中已啟用 核取方塊**加入新項目** 對話方塊。  
   
  \<VSTemplate >  
  \<TemplateData >  
@@ -42,26 +41,26 @@ ms.locfileid: "31140738"
 ### <a name="attributes"></a>屬性  
  無。  
   
-### <a name="child-elements"></a>子項目  
+### <a name="child-elements"></a>子元素  
  無。  
   
 ### <a name="parent-elements"></a>父項目  
   
 |項目|描述|  
 |-------------|-----------------|  
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|必要項目。<br /><br /> 將範本分類，並定義中顯示的方式**新專案**或**新項目** 對話方塊。|  
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|必要項目。<br /><br /> 將範本分類，並定義中顯示的方式**新的專案**或**新項目**對話方塊。|  
   
 ## <a name="text-value"></a>文字值  
  需要文字值。  
   
- 此文字必須`true`或`false`，表示是否**程式碼置於不同的檔案**中已啟用 核取方塊**加入新項目** 對話方塊。  
+ 文字必須是`true`或`false`，這表示，zda bude**程式碼置於個別檔案**中已啟用 核取方塊**加入新項目** 對話方塊。  
   
 ## <a name="remarks"></a>備註  
- `SupportsCodeSeparation` 是選擇性項目。 預設值是 `false`。  
+ `SupportsCodeSeparation` 是選擇性項目。 預設值為 `false`。  
   
- `SupportsCodeSeparation`項目只適用於 Web 項目範本。  
+ `SupportsCodeSeparation`項目僅適用於 Web 項目範本。  
   
- 程式碼分離或程式碼後置頁面模型，可讓您將標記放在一個檔案，將程式碼放在另一個檔案。 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 與其他.NET 語言都會使用此模型。  
+ 程式碼分離或程式碼後置頁面模型中，可讓您將標記放在一個檔案，將程式碼放在另一個檔案。 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 和其他.NET 語言使用此模型。  
   
 ## <a name="example"></a>範例  
  下列範例會指定要顯示**程式碼置於個別檔案**選項。  

@@ -2,9 +2,8 @@
 title: 參考項目 （Visual Studio 範本） |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#Reference
 helpviewer_keywords:
@@ -16,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b1f05bc8a19377576788fdb72400bf0af566b796
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 4c5f7d82918924ddda4c70d6d86573fae9c58681
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39638107"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561026"
 ---
 # <a name="reference-element-visual-studio-templates"></a>Reference 項目 （Visual Studio 範本）
 指定項目加入專案時要加入的組件參考。  

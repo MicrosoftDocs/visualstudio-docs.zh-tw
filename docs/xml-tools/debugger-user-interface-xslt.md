@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c2cedf1a07307b8494e6a6b810e9590f347c9f1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 255f1b9f8a277f0d58437f8b0a8b1400a069c237
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49847379"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561914"
 ---
 # <a name="debugger-user-interface-xslt"></a>偵錯工具使用者介面 (XSLT)
 
@@ -92,15 +92,15 @@ ms.locfileid: "49847379"
 
 -   不允許使用者定義函式。
 
-如需詳細資訊，請參閱 <<c0> [ 如何： 評估 XPath 運算式](../xml-tools/how-to-evaluate-an-xpath-expression.md)。
+如需詳細資訊，請參閱[＜How to：評估 XPath 運算式](../xml-tools/how-to-evaluate-an-xpath-expression.md)。
 
 ## <a name="disassembly-window"></a>反組譯碼視窗
  [反組譯碼] 視窗會顯示由 XSLT 編譯器產生的組譯程式碼。 此視窗的使用方式可以與所有其他 Visual Studio 反組譯碼視窗相同。
 
- 如需詳細資訊，[如何： 使用反組譯碼視窗](../debugger/how-to-use-the-disassembly-window.md)。
+ 如需詳細資訊， [How to:使用反組譯碼視窗](../debugger/how-to-use-the-disassembly-window.md)。
 
 ## <a name="see-also"></a>另請參閱
 
 - [偵錯 XSLT](../xml-tools/debugging-xslt.md)
-- [偵錯工具基礎](../debugger/getting-started-with-the-debugger.md)
+- [偵錯工具簡介](../debugger/debugger-feature-tour.md)   
 - [檢查 [Visual Studio 中的] [自動變數] 和 [區域變數] 視窗中的變數](../debugger/autos-and-locals-windows.md)

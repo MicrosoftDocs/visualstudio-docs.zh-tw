@@ -20,15 +20,15 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6922105fa66dbb5184aa7c991fe9b90278a9a052
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 86837d410b44c2508d50b1f630b43852b0fc8fea
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31919673"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53738446"
 ---
 # <a name="code-analysis-for-cc-warnings"></a>C/C++ 程式碼分析警告
-本節列出 C/c + + 程式碼分析警告，除了所引發[c + + 核心指導方針西洋棋](code-analysis-for-cpp-corecheck.md)。 如需程式碼分析資訊，請參閱[/analyze （程式碼分析）](/cpp/build/reference/analyze-code-analysis)和[快速入門： C/c + + 程式碼分析](../code-quality/quick-start-code-analysis-for-c-cpp.md)。
+此區段會列出以外所引發的 C/c + + 程式碼分析警告[c + + 核心指南檢查工具](code-analysis-for-cpp-corecheck.md)。 如需程式碼分析的資訊，請參閱 < [/analyze （程式碼分析）](/cpp/build/reference/analyze-code-analysis)和[快速入門：C/c + + 程式碼分析](../code-quality/quick-start-code-analysis-for-c-cpp.md)。
 
 ## <a name="see-also"></a>另請參閱
- [使用程式碼分析進行 C/c + + 程式碼品質](../code-quality/analyzing-c-cpp-code-quality-by-using-code-analysis.md)[使用 SAL 註釋減少 C/c + + 程式碼缺失](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)
+ [使用程式碼分析，分析 C/c + + 程式碼品質](../code-quality/code-analysis-for-c-cpp-overview.md)[使用 SAL 註釋減少 C/c + + 程式碼的缺失](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)

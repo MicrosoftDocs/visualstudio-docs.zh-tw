@@ -13,18 +13,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e3f8d6f2df0b0d9ec6e3f9d8ead7fd1e08929f8e
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: 83ec85855e17f8798f55b01f043d47d7140278e7
+ms.sourcegitcommit: c7b16358a5d6f7ea1dd2f70a6ac2a8266efa9c15
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50966527"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "53425769"
 ---
-# <a name="how-to-generate-code-metrics-data"></a>如何： 產生程式碼度量資料
+# <a name="how-to-generate-code-metrics-data"></a>HOW TO：產生程式碼度量資料
 
 您可以產生一或多個專案或整個解決方案的程式碼度量資訊結果。 程式碼度量可供 Visual Studio 互動式開發環境 (IDE) 內，以及針對C#和 Visual Basic 專案，在命令列。
 
-此外，您可以安裝[NuGet 套件](https://dotnet.myget.org/feed/roslyn-analyzers/package/nuget/Microsoft.CodeAnalysis.FxCopAnalyzers/2.6.2-beta2-63202-01)包含四個程式碼度量[分析器](roslyn-analyzers-overview.md)規則： CA1501、 CA1502、 ca1505 應及 CA1506。 根據預設，會停用這些規則，但您也可以將它們從啟用**方案總管**或是在[規則集](using-rule-sets-to-group-code-analysis-rules.md)檔案。
+此外，您可以安裝[NuGet 套件](https://dotnet.myget.org/feed/roslyn-analyzers/package/nuget/Microsoft.CodeAnalysis.FxCopAnalyzers/2.6.2-beta2-63202-01)包含四個程式碼度量[分析器](roslyn-analyzers-overview.md)規則：CA1501、 CA1502、 ca1505 應及 CA1506。 根據預設，會停用這些規則，但您也可以將它們從啟用**方案總管**或是在[規則集](using-rule-sets-to-group-code-analysis-rules.md)檔案。
 
 ## <a name="visual-studio-ide-code-metrics"></a>Visual Studio IDE 的程式碼度量
 
@@ -68,7 +68,7 @@ ms.locfileid: "50966527"
    msbuild /m /v:m /p:Configuration=Release Metrics.csproj
    ```
 
-   為可執行檔*Metrics.exe*就會發出*二進位檔*存放庫根目錄下的目錄。
+   為可執行檔*Metrics.exe*就會發出*artifacts\bin*存放庫根目錄下的目錄。
 
    > [!TIP]
    > 若要建置*Metrics.exe*中[舊版模式](#legacy-mode)，執行下列命令：

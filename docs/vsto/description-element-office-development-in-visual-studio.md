@@ -1,6 +1,7 @@
 ---
 title: '&lt;描述&gt;元素 （在 Visual Studio 中的 Office 程式開發）'
-ms.custom: ''
+titleSuffix: ''
+ms.custom: secdec18
 ms.date: 02/02/2017
 ms.technology:
 - office-development
@@ -12,17 +13,17 @@ helpviewer_keywords:
 - description element
 - <description> element
 - application manifests [Office development in Visual Studio], <description> element
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9fcdac1e950d98394b5703322f40dd1823b246f6
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: fcd9525c5e1f4e075acdcadc94cfcd7fe0650c1c
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34265111"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648335"
 ---
 # <a name="ltdescriptiongt-element-office-development-in-visual-studio"></a>&lt;描述&gt;元素 （在 Visual Studio 中的 Office 程式開發）
   `description` 命名空間的 `vstov4` 元素會儲存 Microsoft Office 應用程式之 [COM 增益集] 對話方塊中所顯示的 Office 解決方案描述。  
@@ -42,7 +43,7 @@ ms.locfileid: "34265111"
 ## <a name="vsto-add-in-example"></a>VSTO 增益集範例  
   
 ### <a name="description"></a>描述  
- 下列程式碼範例說明使用 `description` 部署之應用程式層級解決方案的 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]元素。 這個程式碼範例是中提供之較大範例的一部分[Office 方案的應用程式資訊清單](../vsto/application-manifests-for-office-solutions.md)。  
+ 下列程式碼範例說明使用 `description` 部署之應用程式層級解決方案的 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]元素。 此程式碼範例是中提供之較大範例的一部分[Application manifests for Office 方案](../vsto/application-manifests-for-office-solutions.md)。  
   
 ### <a name="code"></a>程式碼  
   

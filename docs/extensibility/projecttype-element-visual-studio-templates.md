@@ -2,9 +2,8 @@
 title: ProjectType 項目 （Visual Studio 範本） |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#ProjectType
 helpviewer_keywords:
@@ -15,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 14726d5338830eb4044d22778d886241cfd0cd83
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3531eb6ee1c974b0978904572d47ae581d6a9cd0
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49921128"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561875"
 ---
 # <a name="projecttype-element-visual-studio-templates"></a>ProjectType 項目 （Visual Studio 範本）
 將分類的專案範本，使其出現在中指定的群組**新的專案**或**加入新項目** 對話方塊。  
@@ -58,11 +57,11 @@ ms.locfileid: "49921128"
   
  這個值會指定的專案範本類型會建立，而且必須包含下列值之一：  
   
-- `CSharp`： 指定此範本會建立[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]專案或項目。  
+- `CSharp`：指定此範本會建立[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]專案或項目。  
   
-- `VisualBasic`： 指定此範本會建立[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]專案或項目。  
+- `VisualBasic`：指定此範本會建立[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]專案或項目。  
   
-- `Web`： 指定此範本會建立 Web 專案或項目。 如果`ProjectType`項目會包含此值，項目之專案的語言定義於[ProjectSubType 項目 （Visual Studio 範本）](../extensibility/projectsubtype-element-visual-studio-templates.md)。  
+- `Web`：指定此範本會建立 Web 專案或項目。 如果`ProjectType`項目會包含此值，項目之專案的語言定義於[ProjectSubType 項目 （Visual Studio 範本）](../extensibility/projectsubtype-element-visual-studio-templates.md)。  
   
 ## <a name="remarks"></a>備註  
  `ProjectType` 是 `TemplateData` 的必要子項目。  

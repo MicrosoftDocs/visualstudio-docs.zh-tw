@@ -23,12 +23,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 35f694d9cc397800249dd9b4acd86bf63d22ad93
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: a1aeb3cea738a08850762083929741c082d7ccb6
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44320705"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53739850"
 ---
 # <a name="code-analysis-for-cc-overview"></a>程式碼分析 C/c + + 的概觀
 
@@ -52,24 +52,24 @@ C:\>cl /analyze Sample.cpp
 
 ## <a name="pragma-support"></a>#pragma 支援
 
-您可以使用`#pragma`指示詞，以將警告視為錯誤; 啟用或停用警告，並隱藏個別的程式碼行警告。 如需詳細資訊，請參閱 <<c0> [ 如何： 為 C/c + + 專案設定程式碼分析屬性](how-to-set-code-analysis-properties-for-c-cpp-projects.md)。
+您可以使用`#pragma`指示詞，以將警告視為錯誤; 啟用或停用警告，並隱藏個別的程式碼行警告。 如需詳細資訊，請參閱[＜How to：為 C/c + + 專案設定程式碼分析屬性](how-to-set-code-analysis-properties-for-c-cpp-projects.md)。
 
 ## <a name="annotation-support"></a>註釋支援
 
-註解改善程式碼分析的正確性。 註釋函式參數上提供前置和後置條件的其他資訊，並傳回型別。 如需詳細資訊，請參閱[How to： 使用 __analysis_assume 指定其他的程式碼資訊](../code-quality/how-to-specify-additional-code-information-by-using-analysis-assume.md)
+註解改善程式碼分析的正確性。 註釋函式參數上提供前置和後置條件的其他資訊，並傳回型別。 如需詳細資訊，請參閱[＜How to：使用 __analysis_assume 指定其他程式碼資訊](../code-quality/how-to-specify-additional-code-information-by-using-analysis-assume.md)
 
 ## <a name="run-analysis-tool-as-part-of-check-in-policy"></a>簽入原則的一部分執行分析工具
 
-您可以在需要所有來源的程式碼簽入都滿足特定的原則。 特別是，您會想要確定步驟中的最新的本機組建已執行分析。 如需啟用程式碼分析簽入原則的詳細資訊，請參閱[建立和使用程式碼分析簽入原則](../code-quality/creating-and-using-code-analysis-check-in-policies.md)
+您可以在需要所有來源的程式碼簽入都滿足特定的原則。 特別是，您會想要確定步驟中的最新的本機組建已執行分析。 如需啟用程式碼分析簽入原則的詳細資訊，請參閱[建立和使用程式碼分析簽入原則](../code-quality/how-to-create-or-update-standard-code-analysis-check-in-policies.md)
 
 ## <a name="team-build-integration"></a>Team Build 整合
 
-您可以使用建置系統的整合式的功能的步驟執行程式碼分析工具[!INCLUDE[esprtfs](../code-quality/includes/esprtfs_md.md)]建置程序。 如需詳細資訊，請參閱 < [Azure 管線](/azure/devops/pipelines/index?view=vsts)。
+您可以使用建置系統的整合式的功能的步驟執行程式碼分析工具[!INCLUDE[esprtfs](../code-quality/includes/esprtfs_md.md)]建置程序。 如需詳細資訊，請參閱 [Azure Pipelines](/azure/devops/pipelines/index?view=vsts)。
 
 ## <a name="see-also"></a>另請參閱
 
-- [快速入門： C/c + + 程式碼分析](quick-start-code-analysis-for-c-cpp.md)
-- [逐步解說： 分析 C/c + + 程式碼的缺失](walkthrough-analyzing-c-cpp-code-for-defects.md)
+- [快速入門：C/c + + 的程式碼分析](quick-start-code-analysis-for-c-cpp.md)
+- [逐步解說：分析 C/c + + 程式碼的缺失](walkthrough-analyzing-c-cpp-code-for-defects.md)
 - [C/C++ 程式碼分析警告](code-analysis-for-c-cpp-warnings.md)
 - [使用 C++ Core Guidelines 檢查工具](using-the-cpp-core-guidelines-checkers.md)
 - [C + + Core Guidelines 檢查工具參考](code-analysis-for-cpp-corecheck.md)

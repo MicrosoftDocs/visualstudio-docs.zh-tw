@@ -34,17 +34,17 @@ helpviewer_keywords:
 - document-level customizations [Office development in Visual Studio], host items
 - Word [Office development in Visual Studio], host controls
 - host controls [Office development in Visual Studio], deleting
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 48ce311a767d68ce1402961d2ddf4cf8b673637c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4ff20a05b752ee16971e67cb8e12c838384523b9
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49937495"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647970"
 ---
 # <a name="host-items-and-host-controls-overview"></a>主項目和主控制項概觀
   主項目和主控制項類型可為使用 Visual Studio 中的 Office 開發工具建立的 Office 方案，提供程式撰寫模型。 主項目和主控制項會以較接近與 Managed 物件 (例如 Windows Form 控制項) 互動的方式，與以 COM 為基礎的 Microsoft Office Word 和 Microsoft Office Excel 物件模型進行互動。  
@@ -131,21 +131,21 @@ ms.locfileid: "49937495"
   
   如需如何將主控制項加入文件的詳細資訊，請參閱下列主題：  
   
-- [如何： 將圖表控制項加入工作表](../vsto/how-to-add-chart-controls-to-worksheets.md)  
+- [如何：將圖表控制項加入工作表](../vsto/how-to-add-chart-controls-to-worksheets.md)  
   
-- [如何： 將 ListObject 控制項加入工作表](../vsto/how-to-add-listobject-controls-to-worksheets.md)  
+- [如何：將 ListObject 控制項加入工作表](../vsto/how-to-add-listobject-controls-to-worksheets.md)  
   
-- [如何： 將 NamedRange 控制項加入工作表](../vsto/how-to-add-namedrange-controls-to-worksheets.md)  
+- [如何：將 NamedRange 控制項加入工作表](../vsto/how-to-add-namedrange-controls-to-worksheets.md)  
   
-- [如何： 將 XMLMappedRange 控制項加入工作表](../vsto/how-to-add-xmlmappedrange-controls-to-worksheets.md)  
+- [如何：將 XMLMappedRange 控制項加入工作表](../vsto/how-to-add-xmlmappedrange-controls-to-worksheets.md)  
   
-- [如何： 將書籤控制項加入 Word 文件](../vsto/how-to-add-bookmark-controls-to-word-documents.md)  
+- [如何：將書籤控制項加入 Word 文件](../vsto/how-to-add-bookmark-controls-to-word-documents.md)  
   
-- [如何： 將內容控制項加入 Word 文件](../vsto/how-to-add-content-controls-to-word-documents.md)  
+- [如何：加入內容控制項加入 Word 文件](../vsto/how-to-add-content-controls-to-word-documents.md)  
   
-- [如何： 將 XMLNode 控制項加入 Word 文件](../vsto/how-to-add-xmlnode-controls-to-word-documents.md)  
+- [如何：將 XMLNode 控制項加入 Word 文件](../vsto/how-to-add-xmlnode-controls-to-word-documents.md)  
   
-- [如何： 將 XMLNodes 控制項加入 Word 文件](../vsto/how-to-add-xmlnodes-controls-to-word-documents.md)  
+- [如何：XMLNodes 控制項加入 Word 文件](../vsto/how-to-add-xmlnodes-controls-to-word-documents.md)  
   
 ### <a name="name-host-controls"></a>命名主控制項  
  當您將主控制項從 [工具箱]  拖曳至文件時，會自動使用控制項類型來命名控制項，並在結尾處加上一個累加號碼。 例如，書籤會命名為 **bookmark1**、 **bookmark2**，依此類推。 如果使用 Word 或 Excel 的原生功能來加入控制項，可以在建立控制項時為它指定特定名稱。 您也可以變更 [屬性]  視窗中的 [名稱]  屬性值，來重新命名控制項。  
@@ -166,7 +166,7 @@ ms.locfileid: "49937495"
 >  請勿在文件或工作表的 `Shutdown` 事件處理常式期間，以程式設計方式移除控制項。 當 `Shutdown` 事件發生時，UI 項目便無法再使用。 如果您想要在應用程式關閉之前移除控制項，請將程式碼加入其他事件處理常式，例如 `BeforeClose` 或 `BeforeSave`。  
   
 ### <a name="program-against-host-control-events"></a>針對主控制項事件進行程式設計  
- 主控制項擴充 Office 物件的其中一種方法是透過加入事件。 例如，Excel 中的 <xref:Microsoft.Office.Interop.Excel.Range> 物件和 Word 中 <xref:Microsoft.Office.Interop.Word.Bookmark> 物件沒有事件，但是 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 會藉由加入可程式化的事件來擴充這些物件。 您可以透過下列用以存取 Windows Form 控制項事件的相同方式，來存取這些事件並對其撰寫程式碼：透過 Visual Basic 中的事件下拉式清單，以及 C# 中的事件屬性頁。 如需詳細資訊，請參閱 <<c0> [ 逐步解說： 針對 NamedRange 控制項的事件的程式](../vsto/walkthrough-programming-against-events-of-a-namedrange-control.md)。  
+ 主控制項擴充 Office 物件的其中一種方法是透過加入事件。 例如，Excel 中的 <xref:Microsoft.Office.Interop.Excel.Range> 物件和 Word 中 <xref:Microsoft.Office.Interop.Word.Bookmark> 物件沒有事件，但是 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 會藉由加入可程式化的事件來擴充這些物件。 您可以透過下列用以存取 Windows Form 控制項事件的相同方式，來存取這些事件並對其撰寫程式碼：透過 Visual Basic 中的事件下拉式清單，以及 C# 中的事件屬性頁。 如需詳細資訊，請參閱[逐步解說：針對 NamedRange 控制項的事件的程式](../vsto/walkthrough-programming-against-events-of-a-namedrange-control.md)。  
   
 > [!NOTE]  
 >  請勿在 Excel 中，將 <xref:Microsoft.Office.Interop.Excel._Application.EnableEvents%2A> 物件的 <xref:Microsoft.Office.Interop.Excel.Application> 屬性設定為 **false**(Native Office Object)。 將這個屬性設定為 **false** ，會導致 Excel 無法引發任何事件，包括主控制項的事件在內。  

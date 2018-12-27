@@ -1,10 +1,9 @@
 ---
-title: SortOrder 項目 （Visual Studio 範本） |Microsoft 文件
+title: SortOrder 項目 （Visual Studio 範本） |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#SortOrder
 helpviewer_keywords:
@@ -16,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b963b6e74b7c24d31ddc611407df22380ff8bb60
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2710c85caf2ff675a05236aac48d08412e794ca6
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31140319"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561339"
 ---
 # <a name="sortorder-element-visual-studio-templates"></a>SortOrder 項目 (Visual Studio 範本)
-指定值，用於排列次序相同分類中的其他範本中所顯示的樣子**新專案**或**加入新項目** 對話方塊。  
+指定值，因為它會出現在其中一個用來排列的範本，在相同類別中，其他範本之間**新的專案**或是**加入新項目** 對話方塊。  
   
  \<VSTemplate >  
  \<TemplateData >  
@@ -42,7 +41,7 @@ ms.locfileid: "31140319"
 ### <a name="attributes"></a>屬性  
  無。  
   
-### <a name="child-elements"></a>子項目  
+### <a name="child-elements"></a>子元素  
  無。  
   
 ### <a name="parent-elements"></a>父項目  
@@ -57,14 +56,14 @@ ms.locfileid: "31140319"
  `integer`表示排序順序值。  
   
 ## <a name="remarks"></a>備註  
- `SortOrder` 是選擇性項目。 預設值 100，而且所有的值必須是 10 的倍數。  
+ `SortOrder` 是選擇性項目。 預設值是 100，而且所有的值必須是 10 的倍數。  
   
- `SortOrder`便會忽略使用者建立的範本的元素。 所有使用者建立的範本會依字母順序都排序。  
+ `SortOrder`項目會被忽略的使用者建立的範本。 所有使用者建立的範本會依字母順序都排序。  
   
- 具有低排序順序值的範本會顯示在**新專案**或**加入新項目**之前有高的排序順序值的範本 對話方塊。  
+ 具有低的排序順序值的範本會出現在其中一個**新的專案**或**新加入的項目**有高的排序次序值的範本之前的對話方塊。  
   
 ## <a name="example"></a>範例  
- 下列範例說明標準的中繼資料[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]類別樣板。  
+ 下列範例說明一種標準的中繼資料[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]類別樣板。  
   
 ```  
 <VSTemplate Type="Item" Version="3.0.0"  
@@ -83,7 +82,7 @@ ms.locfileid: "31140319"
 </VSTemplate>  
 ```  
   
- 在此範例中，`SortOrder`項目是相當高。 可能是其他[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]項目範本會有`SortOrder`值低於`290`和會出現在此範本中**新項目** 對話方塊。  
+ 在此範例中，`SortOrder`項目是相當高。 可能是其他[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]項目範本會有`SortOrder`值低於`290`而且會出現在此範本之前**新項目** 對話方塊。  
   
 ## <a name="see-also"></a>另請參閱  
  [Visual Studio 範本結構描述參考](../extensibility/visual-studio-template-schema-reference.md)   

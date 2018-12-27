@@ -1,5 +1,5 @@
 ---
-title: 如何： 將 Windows form 控制項加入 Office 文件
+title: HOW TO：將 Windows form 控制項加入 Office 文件
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -13,19 +13,19 @@ helpviewer_keywords:
 - Windows Forms controls [Office development in Visual Studio], adding
 - controls [Office development in Visual Studio], Windows Forms controls
 - documents [Office development in Visual Studio], Windows Forms controls
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7b5a6246a79d2d1f910b6ca39ce290f6c325dbe6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 10fa7da3028c2d4706ec380bb4ceeae1d55b45af
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49892749"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647854"
 ---
-# <a name="how-to-add-windows-forms-controls-to-office-documents"></a>如何： 將 Windows Form 控制項加入 Office 文件
+# <a name="how-to-add-windows-forms-controls-to-office-documents"></a>HOW TO：將 Windows Form 控制項加入 Office 文件
   您可以在文件層級專案的設計階段中，將 Windows Form 控制項加入 Microsoft Office Excel 和 Microsoft Office Word 文件。 在執行階段，您可以新增控制項，在文件層級自訂和 VSTO 增益集。例如，您可以將 <xref:Microsoft.Office.Tools.Excel.Controls.ComboBox> 控制項加入工作表，讓使用者可以從選項清單中進行選取。  
   
  [!INCLUDE[appliesto_controls](../vsto/includes/appliesto-controls-md.md)]  
@@ -38,7 +38,7 @@ ms.locfileid: "49892749"
   
 - [在 VSTO 增益集的執行階段加入控制項](#runtimeaddin)  
   
-  ![影片連結](../vsto/media/playvideo.gif "影片連結")如需相關的影片示範，請參閱[如何執行 do i： 將控制項加入文件介面在執行階段？](http://go.microsoft.com/fwlink/?LinkId=132782)。  
+  ![影片連結](../vsto/media/playvideo.gif "影片連結")如需相關的影片示範，請參閱[How do i:您可以將控制項加入文件介面在執行階段？](http://go.microsoft.com/fwlink/?LinkId=132782).  
   
 ##  <a name="designtime"></a> 在設計階段加入控制項  
  您可以用幾種方式，透過文件層級專案，於設計階段將 Windows Form 控制項加入文件。  
@@ -47,7 +47,7 @@ ms.locfileid: "49892749"
   
 ### <a name="to-drag-a-windows-forms-control-to-the-document"></a>若要將 Windows Form 控制項拖曳至文件  
   
-1.  在 Visual Studio 中建立或開啟 Excel 活頁簿專案或 Word 文件專案，如此才能在設計工具中看到文件。 如需建立專案資訊，請參閱 <<c0> [ 如何： 在 Visual Studio 中的建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
+1.  在 Visual Studio 中建立或開啟 Excel 活頁簿專案或 Word 文件專案，如此才能在設計工具中看到文件。 如需建立專案資訊，請參閱[How to:在 Visual Studio 中建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
   
 2.  在 **通用控制項**索引標籤**工具箱**、 按一下您要新增的控制項，並將它拖曳至文件。  
   
@@ -56,7 +56,7 @@ ms.locfileid: "49892749"
   
 ### <a name="to-draw-a-windows-forms-control-on-the-document"></a>若要將 Windows Form 控制項拖曳至文件  
   
-1.  在 Visual Studio 中建立或開啟 Excel 活頁簿專案或 Word 文件專案，如此才能在設計工具中看到文件。 如需建立專案資訊，請參閱 <<c0> [ 如何： 在 Visual Studio 中的建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
+1.  在 Visual Studio 中建立或開啟 Excel 活頁簿專案或 Word 文件專案，如此才能在設計工具中看到文件。 如需建立專案資訊，請參閱[How to:在 Visual Studio 中建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
   
 2.  在 **通用控制項**索引標籤**工具箱**，按一下您想要新增的控制項。  
   
@@ -69,7 +69,7 @@ ms.locfileid: "49892749"
   
 ### <a name="to-add-a-windows-forms-control-to-the-document-by-single-clicking-the-control"></a>若要按一下控制項，將 Windows Form 控制項加入文件  
   
-1.  在 Visual Studio 中建立或開啟 Excel 活頁簿專案或 Word 文件專案，如此才能在設計工具中看到文件。 如需建立專案資訊，請參閱 <<c0> [ 如何： 在 Visual Studio 中的建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
+1.  在 Visual Studio 中建立或開啟 Excel 活頁簿專案或 Word 文件專案，如此才能在設計工具中看到文件。 如需建立專案資訊，請參閱[How to:在 Visual Studio 中建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
   
 2.  在 **通用控制項**索引標籤**工具箱**，按一下您想要新增的控制項  
   
@@ -82,7 +82,7 @@ ms.locfileid: "49892749"
   
 ### <a name="to-add-a-windows-forms-control-to-the-document-by-double-clicking-the-control"></a>若要按兩下控制項，將 Windows Form 控制項加入文件  
   
-1.  在 Visual Studio 中建立或開啟 Excel 活頁簿專案或 Word 文件專案，如此才能在設計工具中看到文件。 如需建立專案資訊，請參閱 <<c0> [ 如何： 在 Visual Studio 中的建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
+1.  在 Visual Studio 中建立或開啟 Excel 活頁簿專案或 Word 文件專案，如此才能在設計工具中看到文件。 如需建立專案資訊，請參閱[How to:在 Visual Studio 中建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
   
 2.  在 **通用控制項**索引標籤**工具箱**，連按兩下您想要新增的控制項。  
   
@@ -93,7 +93,7 @@ ms.locfileid: "49892749"
   
 ### <a name="to-add-a-windows-forms-control-to-the-document-by-pressing-the-enter-key"></a>若要將 Windows Forms 控制項加入文件，藉由按下 Enter 鍵  
   
-1.  在 Visual Studio 中建立或開啟 Excel 活頁簿專案或 Word 文件專案，如此才能在設計工具中看到文件。 如需建立專案資訊，請參閱 < [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
+1.  在 Visual Studio 中建立或開啟 Excel 活頁簿專案或 Word 文件專案，如此才能在設計工具中看到文件。 如需建立專案資訊，請參閱[How to:在 Visual Studio 中建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
   
 2.  在**通用控制項**索引標籤**工具箱**，按一下您想要新增，請按下的控制項**Enter**索引鍵。  
   
@@ -138,7 +138,7 @@ ms.locfileid: "49892749"
 ## <a name="see-also"></a>另請參閱  
  [在 Office 文件概觀上的 Windows Form 控制項](../vsto/windows-forms-controls-on-office-documents-overview.md)   
  [將控制項加入 Office 文件，在執行階段](../vsto/adding-controls-to-office-documents-at-run-time.md)   
- [如何： 在工作表儲存格內的控制項重新調整大小](../vsto/how-to-resize-controls-within-worksheet-cells.md)   
+ [如何：調整工作表儲存格內的控制項的大小](../vsto/how-to-resize-controls-within-worksheet-cells.md)   
  [主項目和主控制項概觀](../vsto/host-items-and-host-controls-overview.md)   
  [Office 方案中的選擇性參數](../vsto/optional-parameters-in-office-solutions.md)  
   

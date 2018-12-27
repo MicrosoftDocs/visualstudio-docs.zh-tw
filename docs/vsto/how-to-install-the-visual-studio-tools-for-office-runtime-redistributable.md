@@ -1,6 +1,7 @@
 ---
-title: 如何： 安裝 Visual Studio Tools for Office runtime 可轉散發套件
-ms.custom: ''
+title: HOW TO：安裝 Visual Studio Tools for Office runtime 可轉散發套件
+titleSuffix: ''
+ms.custom: seodec18
 ms.date: 02/02/2017
 ms.technology:
 - office-development
@@ -11,19 +12,19 @@ dev_langs:
 helpviewer_keywords:
 - Office runtime [Office development in Visual Studio]
 - installing Office development tools in Visual Studio
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 15e3c1b25d4834808fb17e596fcc7babe7dd969f
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 83bc53dec2c4085b59a07ddc4694ff184b9e75a7
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35255846"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648492"
 ---
-# <a name="how-to-install-the-visual-studio-tools-for-office-runtime-redistributable"></a>如何： 安裝 Visual Studio Tools for Office runtime 可轉散發套件
+# <a name="how-to-install-the-visual-studio-tools-for-office-runtime-redistributable"></a>HOW TO：安裝 Visual Studio Tools for Office runtime 可轉散發套件
   執行使用中的 Microsoft Office developer tools 所建立的解決方案的每部電腦上必須安裝 Visual Studio 2010 Tools for Office runtime [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。 當您安裝 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 和 Microsoft Office 時，此執行階段會自動安裝。 如需詳細資訊，請參閱 < [Visual Studio Tools for Office runtime 安裝案例](../vsto/visual-studio-tools-for-office-runtime-installation-scenarios.md)。  
   
  在下列情況下，您可能需要遵循手動安裝指示：  
@@ -54,8 +55,8 @@ ms.locfileid: "35255846"
 ## <a name="see-also"></a>另請參閱  
  [開始使用&#40;在 Visual Studio 中的 Office 程式開發&#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
  [設定電腦以開發 Office 方案](../vsto/configuring-a-computer-to-develop-office-solutions.md)   
- [如何： 設定電腦以開發 Office 方案](../vsto/how-to-configure-a-computer-to-develop-office-solutions.md)   
- [如何： 安裝 Office 主要 interop 組件](../vsto/how-to-install-office-primary-interop-assemblies.md)   
+ [如何：設定電腦以開發 Office 方案](../vsto/how-to-configure-a-computer-to-develop-office-solutions.md)   
+ [如何：安裝 Office 主要 interop 組件](../vsto/how-to-install-office-primary-interop-assemblies.md)   
  [使用 ServerDocument 類別管理伺服器上的文件](../vsto/managing-documents-on-a-server-by-using-the-serverdocument-class.md)   
  [部署 Office 方案](../vsto/deploying-an-office-solution.md)  
   

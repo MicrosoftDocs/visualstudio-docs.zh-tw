@@ -15,21 +15,21 @@ helpviewer_keywords:
 - Office documents [Office development in Visual Studio], custom properties
 - _AssemblyLocation property
 - _AssemblyName property
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 23d0aa3b065a05b1c85b54e7889c4fe1bac4af7a
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 9fcd250f75e21d24409bb7b17764d9d18e7d6c7b
+ms.sourcegitcommit: a715de2ba8c703f37aa2102567b1aa2c0f05a117
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50671517"
+ms.lasthandoff: 12/15/2018
+ms.locfileid: "53441440"
 ---
 # <a name="custom-document-properties-overview"></a>自訂文件屬性概觀
 
-當您建置文件層級專案時，Visual Studio 會將兩個自訂屬性加入至專案中的文件：\_組件位置和\_組件名稱。 當使用者開啟文件時，Microsoft Office 應用程式會檢查這些自訂文件屬性。 如果它們存在文件中，應用程式載入[!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]，這會啟動自訂。 如需詳細資訊，請參閱 < [Visual Studio 中的 Office 架構方案](../vsto/architecture-of-office-solutions-in-visual-studio.md)。
+當您建置文件層級專案時，Visual Studio 會將兩個自訂屬性加入專案中的文件中：\_組件位置和\_組件名稱。 當使用者開啟文件時，Microsoft Office 應用程式會檢查這些自訂文件屬性。 如果它們存在文件中，應用程式載入[!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]，這會啟動自訂。 如需詳細資訊，請參閱 < [Visual Studio 中的 Office 架構方案](../vsto/architecture-of-office-solutions-in-visual-studio.md)。
 
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]
 
@@ -58,5 +58,5 @@ ms.locfileid: "50671517"
 - [在 Visual Studio 中的 Office 方案的架構](../vsto/architecture-of-office-solutions-in-visual-studio.md)
 - [文件層級自訂的架構](../vsto/architecture-of-document-level-customizations.md)
 - [在 Office 方案中的應用程式和部署資訊清單](../vsto/application-and-deployment-manifests-in-office-solutions.md)
-- [如何： 使用 ClickOnce 發行 Office 方案](https://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)
-- [如何： 建立和修改自訂文件屬性](../vsto/how-to-create-and-modify-custom-document-properties.md)
+- [如何：使用 ClickOnce 發行 Office 方案](https://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)
+- [如何：建立和修改自訂文件屬性](../vsto/how-to-create-and-modify-custom-document-properties.md)

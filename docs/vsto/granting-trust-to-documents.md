@@ -13,17 +13,17 @@ helpviewer_keywords:
 - inclusion lists [Office development in Visual Studio], about inclusion lists
 - trust [Office development in Visual Studio], 2007 Office system
 - granting trust [Office development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5dfa0ad9b27b94c472feabc0e202bd9eee58f08d
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: e1fb856897f4db39fb41875f3230603237f0cc0b
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50670906"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648830"
 ---
 # <a name="grant-trust-to-documents"></a>將信任授與文件
   文件層級專案和應用程式層級專案具有相同的安全性需求：您需使用憑證簽署資訊清單，或按一下信任提示。 此外，文件或活頁簿所在的目錄，必須指定為信任位置。  
@@ -44,7 +44,7 @@ ms.locfileid: "50670906"
   
 -   雖然文件本身是因為使用受信任的位置而受到信任，但仍需要額外的權限才能信任自訂項目。 您可以使用簽署資訊清單的憑證、 按一下信任提示，或安裝 Office 解決方案，以授與完全信任給自訂*Program Files*目錄。  
   
--   您可將文件層級方案的文件或活頁簿儲存在組件的相同目錄中，或在不同的目錄中亦可。 例如，文件可能位於 SharePoint 伺服器上，而組件則位於網路檔案共用當中。 如需詳細資訊，請參閱 <<c0> [ 如何： 使用 ClickOnce 將文件層級 Office 方案發行到 SharePoint 伺服器](https://msdn.microsoft.com/2408e809-fb78-42a1-9152-00afa1522e58)。  
+-   您可將文件層級方案的文件或活頁簿儲存在組件的相同目錄中，或在不同的目錄中亦可。 例如，文件可能位於 SharePoint 伺服器上，而組件則位於網路檔案共用當中。 如需詳細資訊，請參閱[＜How to：使用 ClickOnce 將文件層級 Office 方案發行到 SharePoint 伺服器](https://msdn.microsoft.com/2408e809-fb78-42a1-9152-00afa1522e58)。  
   
 ## <a name="see-also"></a>另請參閱  
  [授與信任給 Office 方案](../vsto/granting-trust-to-office-solutions.md)   

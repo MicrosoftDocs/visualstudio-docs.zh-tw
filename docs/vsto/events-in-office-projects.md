@@ -30,17 +30,17 @@ helpviewer_keywords:
 - Sheet1_Shutdown
 - events [Office development in Visual Studio]
 - ThisAddIn_Shutdown
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 85cbee61cde596831d06aa83af326cc0a0534f0f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5ed18bdcf0f4a7ef6dbb8a358cbf11fd7b49e628
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49949678"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647644"
 ---
 # <a name="events-in-office-projects"></a>Office 專案中的事件
   每個 Office 專案範本會自動產生數個事件處理常式。 文件層級自訂的事件處理常式與 VSTO 增益集的事件處理常式有些許不同。  
@@ -48,7 +48,7 @@ ms.locfileid: "49949678"
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
   
 ## <a name="document-level-projects"></a>文件層級專案  
- Visual Studio 會在文件層級自訂中為新的或現有的文件或工作表，提供產生的後置程式碼。 這個程式碼會引發兩個不同的事件： **Startup** 和 **Shutdown**。  
+ Visual Studio 會在文件層級自訂中為新的或現有的文件或工作表，提供產生的後置程式碼。 此程式碼會引發兩個不同的事件：**啟始**並**關機**。  
   
 ### <a name="startup-event"></a>Startup 事件  
  在執行文件且組件中的所有初始設定程式碼都已執行之後，每個主項目 (文件、活頁簿或工作表) 都會引發 **Startup** 事件。 這是在程式碼執行的類別建構函式中，所執行的最後動作。 如需主項目的詳細資訊，請參閱[主項目和裝載控制項概觀](../vsto/host-items-and-host-controls-overview.md)。  
@@ -157,7 +157,7 @@ ms.locfileid: "49949678"
   
 ## <a name="see-also"></a>另請參閱  
  [開發 Office 方案](../vsto/developing-office-solutions.md)   
- [如何： 在 Visual Studio 中建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)   
+ [如何：在 Visual Studio 中建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)   
  [程式文件層級自訂](../vsto/programming-document-level-customizations.md)   
  [程式 VSTO 增益集](../vsto/programming-vsto-add-ins.md)   
  [Office 專案範本概觀](../vsto/office-project-templates-overview.md)  

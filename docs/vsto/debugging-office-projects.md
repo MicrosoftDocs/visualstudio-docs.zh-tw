@@ -15,17 +15,17 @@ helpviewer_keywords:
 - debugging [Office development in Visual Studio], Outlook projects
 - Office projects [Office development in Visual Studio], debugging
 - Outlook [Office development in Visual Studio], projects
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: cc1774e57fafadafc7087bb498e0b77a90e96d85
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 6c7320ae6cbd0a6d7baa94835177d2a3a6f222cf
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35671130"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647896"
 ---
 # <a name="debug-office-projects"></a>偵錯 Office 專案
   您可以使用與偵錯其他 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 專案時所使用的相同 Microsoft [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 工具，來偵錯 Office 專案。 當您偵錯 Office 專案時，也可以使用[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 偵錯工具功能，例如可以插入中斷點，以及在 [區域變數]  視窗中檢視變數。 如需詳細資訊[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]偵錯工具，請參閱[Visual Studio 中偵錯](/visualstudio/debugger/debugging-in-visual-studio)。  
@@ -79,7 +79,7 @@ ms.locfileid: "35671130"
  若要偵錯 Word 97-2003 文件的 Word 文件專案 (*/*.doc *) 格式，您必須將受信任的資料夾清單中的專案資料夾。 如需有關如何執行這項操作的詳細資訊，請參閱 <<c0> [ 授與信任給文件](../vsto/granting-trust-to-documents.md)。  
   
 ## <a name="debug-disabled-add-ins"></a>偵錯已停用增益集  
- Microsoft Office 應用程式可以停用無法如預期般運作的 VSTO 增益集。 Microsoft Office 應用程式會停用 VSTO 增益集，以防止在每次應用程式啟動時載入有問題的程式碼。 不過，在進行一般偵錯時，也很容易會導致未預期的行為。 如需有關如何重新啟用 VSTO 增益集的資訊，請參閱[如何： 重新啟用 VSTO 增益集已停用](../vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled.md)。  
+ Microsoft Office 應用程式可以停用無法如預期般運作的 VSTO 增益集。 Microsoft Office 應用程式會停用 VSTO 增益集，以防止在每次應用程式啟動時載入有問題的程式碼。 不過，在進行一般偵錯時，也很容易會導致未預期的行為。 如需有關如何重新啟用 VSTO 增益集的資訊，請參閱[How to:重新啟用 VSTO 增益集已停用](../vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled.md)。  
   
  Microsoft Office 應用程式有兩種停用 VSTO 增益集的方式：強制停用和非強制停用。  
   
@@ -103,7 +103,7 @@ ms.locfileid: "35671130"
   
 ## <a name="see-also"></a>另請參閱  
  [建置 Office 方案](../vsto/building-office-solutions.md)   
- [如何： 重新啟用 VSTO 增益集已停用](../vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled.md)   
+ [如何：重新啟用 VSTO 增益集已停用](../vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled.md)   
  [程式 VSTO 增益集](../vsto/programming-vsto-add-ins.md)  
   
   

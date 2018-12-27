@@ -1,5 +1,5 @@
 ---
-title: 如何： 將 ListObject 控制項加入工作表
+title: HOW TO：將 ListObject 控制項加入工作表
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -11,19 +11,19 @@ dev_langs:
 helpviewer_keywords:
 - ListObject control, adding to worksheets
 - controls [Office development in Visual Studio], adding to worksheets
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 402e7f80ea208d714b31bd61e25b352494310487
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ae6abd9791bfaa9ce0e7c15f1f6f66034a75c6c7
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49949249"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53646967"
 ---
-# <a name="how-to-add-listobject-controls-to-worksheets"></a>如何： 將 ListObject 控制項加入工作表
+# <a name="how-to-add-listobject-controls-to-worksheets"></a>HOW TO：將 ListObject 控制項加入工作表
   您可以新增<xref:Microsoft.Office.Tools.Excel.ListObject>Microsoft Office Excel 工作表在設計階段，並在執行階段在文件層級專案中的控制項。  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
@@ -41,7 +41,7 @@ ms.locfileid: "49949249"
   如需詳細資訊<xref:Microsoft.Office.Tools.Excel.ListObject>控制項，請參閱[ListObject 控制項](../vsto/listobject-control.md)。  
   
 ##  <a name="designtime"></a> 在設計階段加入 ListObject 控制項  
- 有幾種方式可在文件層級專案中，於設計階段將 <xref:Microsoft.Office.Tools.Excel.ListObject> 控制項加入工作表：在 Excel 中、透過 Visual Studio 的 [工具箱] ，以及透過 [資料來源]  視窗。  
+ 有數種方式可以新增<xref:Microsoft.Office.Tools.Excel.ListObject>控制項加入文件層級專案在設計階段中工作表：從在 Excel 中、 從 Visual Studio**工具箱**，以及從**Zdroje dat**視窗。  
   
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
@@ -95,7 +95,7 @@ ms.locfileid: "49949249"
  [ListObject 控制項](../vsto/listobject-control.md)   
  [使用擴充的物件自動化 Excel](../vsto/automating-excel-by-using-extended-objects.md)   
  [主項目和主控制項概觀](../vsto/host-items-and-host-controls-overview.md)   
- [如何： 調整 ListObject 控制項的大小](../vsto/how-to-resize-listobject-controls.md)   
+ [如何：調整 ListObject 控制項的大小](../vsto/how-to-resize-listobject-controls.md)   
  [資料繫結至 Office 方案中的控制項](../vsto/binding-data-to-controls-in-office-solutions.md)   
  [主項目和主控制項的程式設計限制](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)  
   

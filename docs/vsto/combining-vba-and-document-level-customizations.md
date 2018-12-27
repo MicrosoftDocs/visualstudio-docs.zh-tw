@@ -22,17 +22,17 @@ helpviewer_keywords:
 - VBA [Office development in Visual Studio], about VBA and document-level customizations
 - managed code [Office development in Visual Studio], Visual Basic for Applications and
 - document-level customizations [Office development in Visual Studio], Visual Basic for Applications and
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2243a3e03ed84325523f62d77ae3cc6d20f83bbb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2dc8a08d7d921c650c8332d3c363d16f5c414b1c
+ms.sourcegitcommit: a715de2ba8c703f37aa2102567b1aa2c0f05a117
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49878072"
+ms.lasthandoff: 12/15/2018
+ms.locfileid: "53441713"
 ---
 # <a name="combine-vba-and-document-level-customizations"></a>合併 VBA 和文件層級自訂
   您可以在屬於 Microsoft Office Word 或 Microsoft Office Excel 文件層級自訂的文件中使用 Visual Basic for Applications (VBA) 程式碼。 您可以在來自自訂組件的文件中呼叫 VBA 程式碼，或者可以設定專案，讓文件中的 VBA 程式碼可以呼叫自訂組件中的程式碼。  
@@ -118,7 +118,7 @@ Globals.Sheet1.Application.Run("MyMacro", missing, missing, missing,
   
   3.  將專案中任何主項目類別的 **ReferenceAssemblyFromVbaProject** 屬性設為 **True**。 這樣會將自訂組件的類型程式庫內嵌至組件，並將類型程式庫的參考加入文件中的 VBA 專案。  
   
-  如需詳細指示，請參閱 <<c0> [ 如何： 公開給 VBA 的程式碼，在 Visual Basic 專案](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md)並[如何： 公開給 Visual C 中的 VBA 程式碼&#35;專案](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md)。</c0>  
+  如需詳細指示，請參閱[How to:公開給 VBA 的程式碼，在 Visual Basic 專案中](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md)和[How to:公開給 Visual C 中的 VBA 程式碼&#35;專案](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md)。  
   
   **EnableVbaCallers** 和 **ReferenceAssemblyFromVbaProject** 屬性都只在設計階段的 [屬性]  視窗使用，不能用在執行階段。 若要檢視屬性，請在 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]開啟主項目的設計工具。 如需有關設定這些屬性時，Visual Studio 會執行特定工作的詳細資訊，請參閱[主機項目屬性執行的工作](#PropertyTasks)。  
   
@@ -253,10 +253,10 @@ GetManagedClass(pdispInteropObject Object) As Object
 |重新命名自訂組件之後，呼叫自訂組件的 VBA 程式碼會停止運作。|如果您在將自訂組件名稱公開給 VBA 程式碼之後才變更它，文件中的 VBA 專案與自訂組件之間的連結已中斷。 若要修正此問題，請將專案中的 **ReferenceFromVbaAssembly** 屬性變更為 **False** ，然後再變回 **True**，最後將 VBA 程式碼中的任何舊組件名稱參考取代為新的組件名稱。|  
   
 ## <a name="see-also"></a>另請參閱  
- [如何： 公開給 VBA 的程式碼，在 Visual Basic 專案](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md)   
- [如何： 公開給 Visual C 中的 VBA 程式碼&#35;專案](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md)   
- [逐步解說： 從 VBA 呼叫程式碼，在 Visual Basic 專案](../vsto/walkthrough-calling-code-from-vba-in-a-visual-basic-project.md)   
- [逐步解說： 從 Visual C 中的 VBA 呼叫程式碼&#35;專案](../vsto/walkthrough-calling-code-from-vba-in-a-visual-csharp-project.md)   
+ [如何：公開給 VBA 的程式碼，在 Visual Basic 專案](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md)   
+ [如何：公開給 Visual C 中的 VBA 程式碼&#35;專案](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md)   
+ [逐步解說：在 Visual Basic 專案中，從 VBA 呼叫程式碼](../vsto/walkthrough-calling-code-from-vba-in-a-visual-basic-project.md)   
+ [逐步解說：從 Visual C 中的 VBA 呼叫程式碼&#35;專案](../vsto/walkthrough-calling-code-from-vba-in-a-visual-csharp-project.md)   
  [設計和建立 Office 方案](../vsto/designing-and-creating-office-solutions.md)   
  [比較 Visual Studio 中的 VBA 和 Office 方案](../vsto/vba-and-office-solutions-in-visual-studio-compared.md)   
  [程式文件層級自訂](../vsto/programming-document-level-customizations.md)  

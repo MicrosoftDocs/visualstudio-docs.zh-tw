@@ -1,5 +1,5 @@
 ---
-title: CA1506：應避免使用結合過度的類別
+title: CA1506:避免使用結合過度的類別
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
@@ -16,20 +16,20 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 57c23ea9c6afb27ee89886936fff690a4285f5c0
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: d4c36d824fcfe698f8eb7a75b1111ccec03f4064
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45549897"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53740295"
 ---
-# <a name="ca1506-avoid-excessive-class-coupling"></a>CA1506：應避免使用結合過度的類別
+# <a name="ca1506-avoid-excessive-class-coupling"></a>CA1506:避免使用結合過度的類別
 
 |||
 |-|-|
 |TypeName|AvoidExcessiveClassCoupling|
 |CheckId|CA1506|
-|類別|Microsoft.Maintainability|
+|分類|Microsoft.Maintainability|
 |中斷變更|中斷|
 
 ## <a name="cause"></a>原因
@@ -49,4 +49,4 @@ ms.locfileid: "45549897"
 ## <a name="see-also"></a>另請參閱
 
 - [維護性警告](../code-quality/maintainability-warnings.md)
-- [測量 Managed 程式碼的複雜度和維護性](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)
+- [測量 Managed 程式碼的複雜度和維護性](../code-quality/code-metrics-values.md)

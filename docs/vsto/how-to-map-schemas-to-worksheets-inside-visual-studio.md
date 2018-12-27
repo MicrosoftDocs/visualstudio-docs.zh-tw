@@ -1,6 +1,7 @@
 ---
-title: 如何： 將結構描述對應至 Visual Studio 內的工作表
-ms.custom: ''
+title: HOW TO：將結構描述對應至 Visual Studio 內的工作表
+titleSuffix: ''
+ms.custom: seodec18
 ms.date: 02/02/2017
 ms.technology:
 - office-development
@@ -13,19 +14,19 @@ helpviewer_keywords:
 - mappings [Office development in Visual Studio], XML schemas to Excel worksheets
 - Excel [Office development in Visual Studio], XML schemas
 - worksheets [Office development in Visual Studio], XML schemas
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8b95e24d151ef6bf8a0083d130c4e38f3f33d480
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 672acf2b33463ee5110dc537f14831a1c034380e
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35256041"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53646650"
 ---
-# <a name="how-to-map-schemas-to-worksheets-inside-visual-studio"></a>如何： 將結構描述對應至 Visual Studio 內的工作表
+# <a name="how-to-map-schemas-to-worksheets-inside-visual-studio"></a>HOW TO：將結構描述對應至 Visual Studio 內的工作表
   Visual Studio 中開啟工作表時，您可以將 XML 結構描述對應至工作表中。 您使用 Visual Studio 外部開啟活頁簿時，您所使用的相同 Microsoft Office Excel 工具。 是否將結構描述對應至工作表之前，或建立您的 Excel 解決方案之後，Office 專案就會建立相同的物件。  
   
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]  
@@ -42,7 +43,7 @@ ms.locfileid: "35256041"
 3.  按一下 [功能區] 上的 [開發人員]  索引標籤。  
   
     > [!NOTE]  
-    >  如果 [開發人員]  索引標籤沒有顯示，您必須先使其顯示。 如需詳細資訊，請參閱 <<c0> [ 如何： 在功能區顯示開發人員索引標籤](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)。  
+    >  如果 [開發人員]  索引標籤沒有顯示，您必須先使其顯示。 如需詳細資訊，請參閱[＜How to：在功能區顯示開發人員索引標籤](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)。  
   
 4.  在  **XML**群組中，按一下**來源**。  
   
@@ -67,7 +68,7 @@ ms.locfileid: "35256041"
      如果您將重複的結構描述項目時，Office 專案會產生<xref:Microsoft.Office.Tools.Excel.ListObject>未自動繫結至資料來源的控制項。 如需詳細資訊，請參閱 < [XML 結構描述和資料在文件層級自訂](../vsto/xml-schemas-and-data-in-document-level-customizations.md)。  
   
 ## <a name="see-also"></a>另請參閱  
- [如何： 將結構描述對應至 Visual Studio 中的 Word 文件](../vsto/how-to-map-schemas-to-word-documents-inside-visual-studio.md)   
+ [如何：將結構描述對應至 Visual Studio 中的 Word 文件](../vsto/how-to-map-schemas-to-word-documents-inside-visual-studio.md)   
  [XML 結構描述和文件層級自訂中的資料](../vsto/xml-schemas-and-data-in-document-level-customizations.md)  
   
   

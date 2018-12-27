@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 96f00e6080cb10778a92aaa860422da8366be54d
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: c76ee4a98694fee811b9edea4bcd8a095640cd25
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389308"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53739678"
 ---
 # <a name="overview-of-static-code-analysis-for-managed-code-in-visual-studio"></a>在 Visual Studio 中的 managed 程式碼的靜態程式碼分析的概觀
 
@@ -30,13 +30,13 @@ Managed 程式碼的程式碼分析可以分析 Managed 組件並回報有關組
 分析工具會將分析期間所做的檢查顯示為警告訊息。 警告訊息會識別任何相關的程式設計和設計問題，並且在可能的時候，提供如何修正問題的資訊。
 
 > [!NOTE]
-> Visual Studio 中的.NET Core 和.NET Standard 專案中的靜態程式碼分析不支援。 如果您執行.NET Core 或.NET Standard 專案下的程式碼分析做為 msbuild 的一部分時，您會看到類似的錯誤**錯誤： CA0055： 無法識別的平台\<your.dll >**。 若要分析的.NET Core 或.NET Standard 專案中的程式碼，使用[Roslyn 分析器](../code-quality/roslyn-analyzers-overview.md)改。
+> Visual Studio 中的.NET Core 和.NET Standard 專案中的靜態程式碼分析不支援。 如果您執行.NET Core 或.NET Standard 專案下的程式碼分析做為 msbuild 的一部分時，您會看到類似的錯誤**錯誤：CA0055:無法識別的平台\<your.dll >**。 若要分析的.NET Core 或.NET Standard 專案中的程式碼，使用[Roslyn 分析器](../code-quality/roslyn-analyzers-overview.md)改。
 
 ## <a name="ide-integrated-development-environment-integration"></a>IDE （整合式的開發環境） 整合
 
 您可以在您的專案上執行程式碼分析，手動或自動。
 
-若要執行程式碼分析每次建置專案，選取**建置時啟用程式碼分析**專案的屬性頁上。 如需詳細資訊，請參閱 <<c0> [ 如何： 啟用和停用自動程式碼分析](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md)。
+若要執行程式碼分析每次建置專案，選取**建置時啟用程式碼分析**專案的屬性頁上。 如需詳細資訊，請參閱[＜How to：啟用和停用自動程式碼分析](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md)。
 
 若要在專案上手動執行程式碼分析，從功能表列選擇**分析** > **執行程式碼分析** > **上執行程式碼分析\<專案>**。
 
@@ -71,7 +71,7 @@ Public class MyClass
 
 - 最新的組建的一部分執行的程式碼分析。
 
-您可以指定簽入原則，達成上述要求。 如需詳細資訊，請參閱 <<c0> [ 使用專案簽入原則強化程式碼品質](../code-quality/enhancing-code-quality-with-team-project-check-in-policies.md)。
+您可以指定簽入原則，達成上述要求。 如需詳細資訊，請參閱 <<c0> [ 使用專案簽入原則強化程式碼品質](../code-quality/how-to-create-or-update-standard-code-analysis-check-in-policies.md)。
 
 ## <a name="team-build-integration"></a>Team build 整合
 

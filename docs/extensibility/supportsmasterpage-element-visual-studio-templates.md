@@ -1,10 +1,9 @@
 ---
-title: SupportsMasterPage 項目 （Visual Studio 範本） |Microsoft 文件
+title: SupportsMasterPage 項目 （Visual Studio 範本） |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#SupportsMasterPage
 helpviewer_keywords:
@@ -16,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 94d7db9c00e75b255f5cfe1486b45a5d9460faac
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8c3eb9a421e6a2678405bcedc95d835990c3a7d9
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31138430"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561300"
 ---
 # <a name="supportsmasterpage-element-visual-studio-templates"></a>SupportsMasterPage 項目 (Visual Studio 範本)
-指定是否**選取主版頁面**上已啟用的核取方塊**加入新項目** 對話方塊。  
+指定是否**選取主版頁面**上已啟用 核取方塊**加入新項目** 對話方塊。  
   
  \<VSTemplate >  
  \<TemplateData >  
@@ -42,24 +41,24 @@ ms.locfileid: "31138430"
 ### <a name="attributes"></a>屬性  
  無。  
   
-### <a name="child-elements"></a>子項目  
+### <a name="child-elements"></a>子元素  
  無。  
   
 ### <a name="parent-elements"></a>父項目  
   
 |項目|描述|  
 |-------------|-----------------|  
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|指定資料將範本分類，並且定義中顯示的方式**新專案**或**新項目** 對話方塊。|  
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|指定分類的範本，並定義中的顯示方式的資料**新的專案**或是**新項目** 對話方塊。|  
   
 ## <a name="text-value"></a>文字值  
  需要文字值。  
   
- 此文字必須`true`或`false`，表示是否**選取主版頁面**上已啟用的核取方塊**加入新項目** 對話方塊。  
+ 文字必須是`true`或是`false`，這表示，zda bude**選取主版頁面**上已啟用 核取方塊**加入新項目**對話方塊。  
   
 ## <a name="remarks"></a>備註  
  `SupportsMasterPage` 是選擇性項目。 預設值是 `false`。  
   
- `SupportsMasterPage`項目只適用於 Web 項目範本。  
+ `SupportsMasterPage`項目僅適用於 Web 項目範本。  
   
 ## <a name="example"></a>範例  
  下列範例說明包含支援主版頁面的 Web 專案的中繼資料。  

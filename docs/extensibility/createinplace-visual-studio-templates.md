@@ -1,10 +1,8 @@
 ---
-title: CreateInPlace （Visual Studio 範本） |Microsoft Docs
-ms.custom: ''
+title: CreateInPlace 項目 （Visual Studio 範本）
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#CreateInPlace
 helpviewer_keywords:
@@ -16,14 +14,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 33d4a05f3c1f7a3aff83d05e1816308511414ad2
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 61fa7f61acbe59f61feb4472c55459e07e4980a6
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39231387"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561810"
 ---
-# <a name="createinplace-visual-studio-templates"></a>CreateInPlace （Visual Studio 範本）
+# <a name="createinplace-element-visual-studio-templates"></a>CreateInPlace 項目 （Visual Studio 範本）
 指定是否要建立專案和執行參數取代在指定的位置，或執行參數取代的暫存位置中，然後將專案儲存至指定的位置。  
   
  \<VSTemplate >  
@@ -57,7 +55,7 @@ ms.locfileid: "39231387"
  此文字必須是 `true` 或 `false`。 如果`true`，專案會建立，而且在指定的位置上執行參數取代**新的專案** 對話方塊。 如果`false`執行參數取代的暫存位置中，專案再複製到指定的位置。  
   
 ## <a name="remarks"></a>備註  
- `CreateInPlace` 是選擇性項目。 預設值是 `true`。  
+ `CreateInPlace` 是選擇性項目。 預設值為 `true`。  
   
 ## <a name="example"></a>範例  
  下列範例說明 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 範本的中繼資料。  

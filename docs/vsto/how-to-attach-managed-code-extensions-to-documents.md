@@ -1,5 +1,5 @@
 ---
-title: 如何： 附加 managed 程式碼擴充的文件
+title: HOW TO：將 managed 程式碼擴充附加至文件
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -11,19 +11,19 @@ dev_langs:
 helpviewer_keywords:
 - managed code extensions [Office development in Visual Studio], attaching
 - documents [Office development in Visual Studio], managed code extensions
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c6e39f27caf9d321bb83666d72114a9675091f03
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: aa7eda6dfed28ceebb9b400568463cc689993f1e
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35257035"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53646889"
 ---
-# <a name="how-to-attach-managed-code-extensions-to-documents"></a>如何： 附加 managed 程式碼擴充的文件
+# <a name="how-to-attach-managed-code-extensions-to-documents"></a>HOW TO：將 managed 程式碼擴充附加至文件
   您可以將自訂組件附加至現有的 Microsoft Office Word 文件或 Microsoft Office Excel 活頁簿。 文件或活頁簿可以處於任何支援的 Visual Studio 中的開發工具與 Microsoft Office 專案的檔案格式。 如需詳細資訊，請參閱 <<c0> [ 文件層級自訂的架構](../vsto/architecture-of-document-level-customizations.md)。  
   
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
@@ -33,7 +33,7 @@ ms.locfileid: "35257035"
 > [!NOTE]  
 >  自訂將無法載入程式碼預期沒有指定的文件的控制項。  
   
- ![影片連結](../vsto/media/playvideo.gif "影片連結")如需相關的影片示範，請參閱[如何 do i： 附加或中斷連結的 Word 文件從 VSTO 組件？](http://go.microsoft.com/fwlink/?LinkId=136782)。  
+ ![影片連結](../vsto/media/playvideo.gif "影片連結")如需相關的影片示範，請參閱[How do i:附加或中斷連結的 Word 文件從 VSTO 組件嗎？](http://go.microsoft.com/fwlink/?LinkId=136782).  
   
 ### <a name="to-attach-managed-code-extensions-to-a-document"></a>若要將 managed 程式碼擴充附加至文件  
   
@@ -55,6 +55,6 @@ ms.locfileid: "35257035"
   
 ## <a name="see-also"></a>另請參閱  
  [使用 ServerDocument 類別管理伺服器上的文件](../vsto/managing-documents-on-a-server-by-using-the-serverdocument-class.md)   
- [如何： 移除文件從 managed 程式碼擴充](../vsto/how-to-remove-managed-code-extensions-from-documents.md)   
+ [如何：從文件移除 managed 程式碼擴充功能](../vsto/how-to-remove-managed-code-extensions-from-documents.md)   
  [在 Office 方案中的應用程式和部署資訊清單](../vsto/application-and-deployment-manifests-in-office-solutions.md)  
   

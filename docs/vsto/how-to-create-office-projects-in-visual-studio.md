@@ -1,6 +1,7 @@
 ---
-title: 如何： 在 Visual Studio 中建立 Office 專案
-ms.custom: ''
+title: HOW TO：在 Visual Studio 中建立 Office 專案
+titleSuffix: ''
+ms.custom: seodec18
 ms.date: 02/02/2017
 ms.technology:
 - office-development
@@ -19,19 +20,19 @@ helpviewer_keywords:
 - projects [Office development in Visual Studio], creating
 - document-level customizations [Office development in Visual Studio], creating
 - application-level add-ins [Office development in Visual Studio], creating projects
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6930ce085405c010e59e13adb8a3d380cff28d0e
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 90dc0903f1a653ab2402d5877ebd4f962ba8cbe1
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50672765"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647883"
 ---
-# <a name="how-to-create-office-projects-in-visual-studio"></a>如何： 在 Visual Studio 中建立 Office 專案
+# <a name="how-to-create-office-projects-in-visual-studio"></a>HOW TO：在 Visual Studio 中建立 Office 專案
   您可以使用[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]建立 VSTO 增益集和文件層級自訂的 Microsoft Office 應用程式。 如需這些專案類型的詳細資訊，請參閱[Office 方案開發概觀&#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)。  
   
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
