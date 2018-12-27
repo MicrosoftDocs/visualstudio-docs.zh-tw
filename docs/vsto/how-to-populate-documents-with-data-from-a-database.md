@@ -1,5 +1,5 @@
 ---
-title: 如何： 的資料庫中的資料填入文件
+title: HOW TO：資料庫中的資料填入文件
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -11,19 +11,19 @@ dev_langs:
 helpviewer_keywords:
 - documents, populating with data
 - data, adding to documents
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: af068fc9cdacc0f681232ee4c7424d67d77f3a11
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 71c2494a4c1b70e6bcf40b23062f70e91587f2e3
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36756797"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647387"
 ---
-# <a name="how-to-populate-documents-with-data-from-a-database"></a>如何： 的資料庫中的資料填入文件
+# <a name="how-to-populate-documents-with-data-from-a-database"></a>HOW TO：資料庫中的資料填入文件
 
 您可以用存取 Windows Form 專案資料的相同方式，存取 Microsoft Office 文件層級專案的資料。 使用相同的工具和程式碼，可從資料庫將資料帶入您的解決方案，而且可以使用 Windows Form 控制項顯示資料。
 
@@ -31,7 +31,7 @@ ms.locfileid: "36756797"
 
 [!INCLUDE[appliesto_wdalldoc](../vsto/includes/appliesto-wdalldoc-md.md)]
 
-下列範例示範如何使用設計工具，在文件層級專案中加入資料繫結控制項。 如需如何在 VSTO 增益集專案中新增資料繫結控制項，在執行階段的範例，請參閱 <<c0> [ 逐步解說： VSTO 增益集專案中的簡單資料繫結](../vsto/walkthrough-simple-data-binding-in-vsto-add-in-project.md)。
+下列範例示範如何使用設計工具，在文件層級專案中加入資料繫結控制項。 如需如何在 VSTO 增益集專案中新增資料繫結控制項，在執行階段的範例，請參閱[逐步解說：在 VSTO 增益集專案中的簡單資料繫結](../vsto/walkthrough-simple-data-binding-in-vsto-add-in-project.md)。
 
 ![影片連結](../vsto/media/playvideo.gif "影片連結")如需相關的影片示範，請參閱[資料繫結至 Word 2007 內容控制項使用 Visual Studio Tools for Office system (3.0)](http://go.microsoft.com/fwlink/?LinkId=136785)。
 
@@ -67,14 +67,14 @@ ms.locfileid: "36756797"
 
 -   使用 <xref:System.Windows.Forms.BindingSource> 方法，如 <xref:System.Windows.Forms.BindingSource.MoveNext%2A> 和 <xref:System.Windows.Forms.BindingSource.MovePrevious%2A>。
 
-如需有關如何將更新傳送至具類型資料集和資料庫的資訊，請參閱 <<c0> [ 如何： 從主控制項的資料更新資料來源](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)。
+如需有關如何將更新傳送至具類型資料集和資料庫的資訊，請參閱[How to:從主控制項的資料更新資料來源](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)。
 
 ## <a name="see-also"></a>另請參閱
 
 - [資料繫結至 Office 方案中的控制項](../vsto/binding-data-to-controls-in-office-solutions.md)
 - [新增資料來源](../data-tools/add-new-data-sources.md)
 - [將 Windows Forms 控制項繫結至 Visual Studio 中的資料](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
-- [如何： 的物件的資料填入文件](../vsto/how-to-populate-documents-with-data-from-objects.md)
-- [如何： 從主控制項的資料更新資料來源](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)
+- [如何：物件的資料填入文件](../vsto/how-to-populate-documents-with-data-from-objects.md)
+- [如何：從主控制項的資料更新資料來源](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)
 - [使用本機資料庫檔案，在 Office 方案概觀](../vsto/using-local-database-files-in-office-solutions-overview.md)
 - [BindingSource 元件概觀](/dotnet/framework/winforms/controls/bindingsource-component-overview)

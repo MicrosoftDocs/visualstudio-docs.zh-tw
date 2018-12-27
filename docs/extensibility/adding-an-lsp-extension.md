@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7f2710693c7dae7c4238f9f31fbe8065d6864a19
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 4c583b9af65610340886794c03cb92be945b73d4
+ms.sourcegitcommit: c7b16358a5d6f7ea1dd2f70a6ac2a8266efa9c15
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50672960"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "53425860"
 ---
 # <a name="add-a-language-server-protocol-extension"></a>新增語言伺服器通訊協定延伸模組
 
@@ -202,12 +202,12 @@ namespace MockLanguageExtension
             await StartAsync.InvokeAsync(this, EventArgs.Empty);
         }
 
-        public async Task OnServerInitializeFailedAsync(Exception e)
+        public Task OnServerInitializeFailedAsync(Exception e)
         {
             return Task.CompletedTask;
         }
 
-        public async Task OnServerInitializedAsync()
+        public Task OnServerInitializedAsync()
         {
             return Task.CompletedTask;
         }
@@ -242,8 +242,8 @@ Visual Studio 會使用[MEF](https://github.com/Microsoft/vs-mef/blob/master/doc
 
 ![定義 MEF 資產](media/lsp-define-asset.png)
 
-* **型別**: Microsoft.VisualStudio.MefComponent
-* **來源**： 目前的方案中的專案
+* **型別**:Microsoft.VisualStudio.MefComponent
+* **來源**:目前的方案中的專案
 * **專案**: [專案]
 
 ### <a name="content-type-definition"></a>內容類型定義
@@ -326,8 +326,8 @@ namespace MockLanguageExtension
 
    ![編輯 vspackage 資產](media/lsp-add-vspackage-asset.png)
 
-   * **型別**: Microsoft.VisualStudio.VsPackage
-   * **來源**： 檔案系統上的
+   * **型別**:Microsoft.VisualStudio.VsPackage
+   * **來源**:檔案系統上的檔案
    * **路徑**: [路徑您 *.pkgdef*檔案]
 
 ### <a name="user-editing-of-settings-for-a-workspace"></a>使用者編輯的工作區設定

@@ -1,5 +1,5 @@
 ---
-title: 工作流程設計工具-如何： 使用引數設計工具
+title: 工作流程設計工具-如何：使用引數設計工具
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.prod: visual-studio-dev15
@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 868fc13474e90be219cf1acebc00074641df142e
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 88d9d568a115680c545a32a0d5f533fcab51da1f
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36755518"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684596"
 ---
 # <a name="how-to-use-the-argument-designer"></a>HOW TO：使用引數設計工具
 
@@ -37,5 +37,5 @@ ms.locfileid: "36755518"
 
 ## <a name="see-also"></a>另請參閱
 
-- [使用工作流程設計工具](../workflow-designer/using-the-workflow-designer.md)
+- [使用工作流程設計工具](developing-applications-with-the-workflow-designer.md)
 - [變數與引數](/dotnet/framework/windows-workflow-foundation/variables-and-arguments)

@@ -1,5 +1,5 @@
 ---
-title: 工作流程設計工具-如何： 將活動新增至工具箱
+title: 工作流程設計工具-如何：將活動新增至工具箱
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.prod: visual-studio-dev15
@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a009f36152163e3ac23b85deac4ea99f26092be9
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 1d542d55593ca492b624b1939c71bb389ac42ad3
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118209"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684557"
 ---
 # <a name="how-to-add-activities-to-the-toolbox"></a>HOW TO：將活動新增至工具箱
 
@@ -23,7 +23,7 @@ ms.locfileid: "37118209"
 
 ## <a name="to-add-an-activity-from-within-your-current-project"></a>若要從目前的專案內部加入活動
 
-1.  將新的自訂活動加入到目前的工作流程專案。 如需有關如何將新的自訂活動新增至您專案的詳細資訊，請參閱 <<c0> [ 如何： 將新的項目新增至工作流程專案](../workflow-designer/how-to-add-a-new-item-to-a-workflow-project.md)。
+1.  將新的自訂活動加入到目前的工作流程專案。 如需有關如何將新的自訂活動新增至您專案的詳細資訊，請參閱[How to:將新的項目新增至工作流程專案](../workflow-designer/how-to-add-a-new-item-to-a-workflow-project.md)。
 
 2.  加入自訂邏輯至活動。
 
@@ -62,4 +62,4 @@ ms.locfileid: "37118209"
 
 ## <a name="see-also"></a>另請參閱
 
-- [使用工作流程設計工具](../workflow-designer/using-the-workflow-designer.md)
+- [使用工作流程設計工具](developing-applications-with-the-workflow-designer.md)

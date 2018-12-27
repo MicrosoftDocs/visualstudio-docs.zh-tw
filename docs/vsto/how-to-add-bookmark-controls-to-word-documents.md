@@ -1,5 +1,5 @@
 ---
-title: 如何： 將書籤控制項加入 Word 文件
+title: HOW TO：將書籤控制項加入 Word 文件
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -14,19 +14,19 @@ helpviewer_keywords:
 - Bookmark control, adding to documents
 - Create Bookmark Control dialog box
 - controls [Office development in Visual Studio], adding to documents
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 33afb16b9862f418f4d661bb5432ea4bb3866f16
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0e58525d20efe17d24cd916b5e9eff79c7da59d7
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49878605"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647786"
 ---
-# <a name="how-to-add-bookmark-controls-to-word-documents"></a>如何： 將書籤控制項加入 Word 文件
+# <a name="how-to-add-bookmark-controls-to-word-documents"></a>HOW TO：將書籤控制項加入 Word 文件
   在文件層級專案中，您可以新增<xref:Microsoft.Office.Tools.Word.Bookmark>控制項加入文件，在您的專案，在設計階段或執行階段。 在 VSTO 增益集專案中，您可以新增<xref:Microsoft.Office.Tools.Word.Bookmark>控制項加入任何開啟的文件，在執行階段。  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
@@ -135,6 +135,6 @@ ms.locfileid: "49878605"
  [主項目和主控制項的程式設計限制](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
  [程式 VSTO 增益集](../vsto/programming-vsto-add-ins.md)   
  [程式文件層級自訂](../vsto/programming-document-level-customizations.md)   
- [如何： 調整書籤控制項的大小](../vsto/how-to-resize-bookmark-controls.md)  
+ [如何：調整書籤控制項的大小](../vsto/how-to-resize-bookmark-controls.md)  
   
   

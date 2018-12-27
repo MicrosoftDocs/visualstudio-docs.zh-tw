@@ -13,31 +13,31 @@ helpviewer_keywords:
 - deployment manifests [Office development in Visual Studio]
 - manifests [Office development in Visual Studio], deployment
 - Office development in Visual Studio, deployment manifests
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 41f0e6b484ae61d53913c51e3d51b123a5d054a2
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 4404b9469aef465a2a105d037b3474855ed3bb68
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34263486"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647161"
 ---
 # <a name="deployment-manifests-for-office-solutions"></a>Office 方案的部署資訊清單
   部署資訊清單是 XML 檔案，說明 Office 方案的部署設定，以及識別目前的應用程式版本。  
   
- 使用 Visual Studio 中的 Office 程式開發[!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]部署資訊清單結構描述中定義[ClickOnce 部署資訊清單](/visualstudio/deployment/clickonce-deployment-manifest)參考。  
+ 使用 Visual Studio 中的 Office 程式開發[!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]中定義的部署資訊清單結構描述[ClickOnce 部署資訊清單](/visualstudio/deployment/clickonce-deployment-manifest)參考。  
   
 ## <a name="remarks"></a>備註  
- Office 方案的部署資訊清單檔會識別目前的版本與其他部署設定。 它會參考應用程式資訊清單中，並描述目前版本的方案和方案中的所有檔案中。  
+ Office 方案的部署資訊清單檔會識別目前的版本和其他部署設定。 它會參考應用程式資訊清單，並說明解決方案和解決方案中的所有檔案中的目前版本。  
   
-## <a name="file-name-syntax"></a>檔名語法  
- 部署資訊清單檔的名稱必須以結尾 *.vsto*延伸模組。 雖然它是一種標準[!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]部署資訊清單中，若要啟用 Visual Studio Tools for Office 執行階段來處理檔案不同的擴充功能。  
+## <a name="file-name-syntax"></a>檔案名稱語法  
+ 部署資訊清單檔案名稱必須以結尾 *.vsto*延伸模組。 雖然它是一種標準[!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]部署資訊清單中，若要啟用 Visual Studio Tools for Office 執行階段來處理檔案不同的延伸模組。  
   
 ## <a name="example"></a>範例  
- 下列程式碼範例會說明 Visual Studio Tools for Office 方案的部署資訊清單。  
+ 下列程式碼範例說明 Visual Studio Tools for Office 方案的部署資訊清單。  
   
 ```xml
 <?xml version="1.0" encoding="utf-8"?>  

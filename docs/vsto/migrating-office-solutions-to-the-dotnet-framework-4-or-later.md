@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5059028b87818e34e44123dadde9851eee4200bd
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a7e281f65f58cc3fa10325574eb397d0aa20308e
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49906542"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53740006"
 ---
 # <a name="migrate-office-solutions-to-the-net-framework-4-or-later"></a>移轉至.NET Framework 4 或更新版本的 Office 方案
   如果 Office 專案的目標 framework 變更為[!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]或更新版本從.NET Framework 較早版本，一些額外的步驟可能需要以繼續在開發和終端使用者電腦上執行方案。 如需詳細資訊，請參閱 <<c0> [ 需要變更執行您移轉至.NET Framework 4 或.NET Framework 4.5 的 Office 專案](../vsto/required-changes-to-run-office-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md)。  
@@ -31,7 +31,7 @@ ms.locfileid: "49906542"
   
 - [更新您移轉至.NET Framework 4 或.NET Framework 4.5 的 Excel 和 Word 專案](../vsto/updating-excel-and-word-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md)  
   
-- [更新您移轉至.NET Framework 4 或.NET Framework 4.5 的 Office 專案中的功能區自訂](../vsto/updating-ribbon-customizations-in-office-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md)  
+- [更新您移轉至.NET Framework 4 或.NET Framework 4.5 的 Office 專案中的功能區自訂](/visualstudio/vsto/update-ribbon-customizations-in-office-projects-to-migrate-to-dotnet-framework-4-or-4-5)  
   
 - [更新您移轉至.NET Framework 4 或.NET Framework 4.5 之 Outlook 專案中的表單區域](../vsto/updating-form-regions-in-outlook-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md)  
   
@@ -41,7 +41,7 @@ ms.locfileid: "49906542"
   
 ## <a name="see-also"></a>另請參閱  
  [設計和建立 Office 方案](../vsto/designing-and-creating-office-solutions.md)   
- [如何：將 .NET Framework 的某個版本設定為目標](../ide/how-to-target-a-version-of-the-dotnet-framework.md)   
+ [如何：.NET Framework 版本為目標](../ide/how-to-target-a-version-of-the-dotnet-framework.md)   
  [針對 Office 方案中的錯誤進行疑難排解](../vsto/troubleshooting-errors-in-office-solutions.md)   
  [Office 方案錯誤的其他支援](../vsto/additional-support-for-errors-in-office-solutions.md)  
   

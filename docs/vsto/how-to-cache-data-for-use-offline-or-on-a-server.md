@@ -1,5 +1,5 @@
 ---
-title: 如何： 快取資料以供使用，離線或在伺服器上
+title: HOW TO：離線或在伺服器上快取資料以供使用
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -15,19 +15,19 @@ helpviewer_keywords:
 - offline data [Office development in Visual Studio]
 - data [Office development in Visual Studio], caching
 - data caching [Office development in Visual Studio], offline use
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a53b3539d71383d4fad95838250380c5849e8c5b
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: e5c6b0155f2fbfd50fd4234bae28d69d1e83416a
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35254208"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647091"
 ---
-# <a name="how-to-cache-data-for-use-offline-or-on-a-server"></a>如何： 快取資料以供使用，離線或在伺服器上
+# <a name="how-to-cache-data-for-use-offline-or-on-a-server"></a>HOW TO：離線或在伺服器上快取資料以供使用
   您可以將標記資料項目，以快取中的文件，如此就可以使用離線。 這也使得資料可能儲存在伺服器的文件，會由其他程式碼操作文件中。  
   
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
@@ -64,8 +64,8 @@ ms.locfileid: "35254208"
   
 ## <a name="see-also"></a>另請參閱  
  [快取資料](../vsto/caching-data.md)   
- [如何： 以程式設計方式快取 Office 文件中的資料來源](../vsto/how-to-programmatically-cache-a-data-source-in-an-office-document.md)   
- [如何： 快取受密碼保護的文件中的資料](../vsto/how-to-cache-data-in-a-password-protected-document.md)   
+ [如何：以程式設計方式快取 Office 文件中的資料來源](../vsto/how-to-programmatically-cache-a-data-source-in-an-office-document.md)   
+ [如何：在受密碼保護的文件中的快取資料](../vsto/how-to-cache-data-in-a-password-protected-document.md)   
  [存取伺服器上的文件中的資料](../vsto/accessing-data-in-documents-on-the-server.md)   
  [將資料儲存](/visualstudio/data-tools/saving-data)  
   

@@ -1,5 +1,5 @@
 ---
-title: 如何： 開始自訂功能區
+title: HOW TO：開始自訂功能區
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -13,19 +13,19 @@ helpviewer_keywords:
 - Ribbon [Office development in Visual Studio], adding
 - Ribbon [Office development in Visual Studio], customizing
 - customizing the Ribbon, adding Ribbon to project
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7a4c7edbc78182908ea7bce9b91945bbbccdb54c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e52efc4cfd1252ff908785195df5c06b8bc90baa
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49838337"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647145"
 ---
-# <a name="how-to-get-started-customizing-the-ribbon"></a>如何： 開始自訂功能區
+# <a name="how-to-get-started-customizing-the-ribbon"></a>HOW TO：開始自訂功能區
   若要自訂 Microsoft Office 應用程式的功能區，請新增**功能區 （視覺化設計工具）** 或是**功能區 (XML)** 在 Office 專案的項目。  
   
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]  
@@ -76,7 +76,7 @@ ms.locfileid: "49838337"
  [在執行階段功能區的存取](../vsto/accessing-the-ribbon-at-run-time.md)   
  [功能區設計工具](../vsto/ribbon-designer.md)   
  [功能區 XML](../vsto/ribbon-xml.md)   
- [逐步解說： 使用功能區設計工具建立自訂索引標籤](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)   
- [逐步解說： 使用功能區 XML 建立自訂索引標籤](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md)  
+ [逐步解說：使用功能區設計工具建立自訂的索引標籤](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)   
+ [逐步解說：使用功能區 XML 建立自訂的索引標籤](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md)  
   
   

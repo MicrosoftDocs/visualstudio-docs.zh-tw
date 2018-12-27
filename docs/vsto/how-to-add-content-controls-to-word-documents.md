@@ -1,5 +1,5 @@
 ---
-title: 如何： 將內容控制項加入 Word 文件
+title: HOW TO：加入內容控制項加入 Word 文件
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -24,19 +24,19 @@ helpviewer_keywords:
 - ComboBoxContentControl, adding to documents
 - DatePickerContentControl, adding to documents
 - Word [Office development in Visual Studio], restricted permissions
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f654efacace3e4b7cbdfff8919309a09d4a544ff
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8a7f99768236c8945fe82645c70c586361edcdde
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49936962"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648042"
 ---
-# <a name="how-to-add-content-controls-to-word-documents"></a>如何： 將內容控制項加入 Word 文件
+# <a name="how-to-add-content-controls-to-word-documents"></a>HOW TO：加入內容控制項加入 Word 文件
   在文件層級 Word 專案中，您可以將內容控制項加入文件在您的專案在設計階段或執行階段。 在 Word VSTO 增益集專案中，您可以將內容控制項加入任何開啟的文件，在執行階段。  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
@@ -58,7 +58,7 @@ ms.locfileid: "49936962"
   
 - 使用與在 Word 中加入原生內容控制項相同的方式，將內容控制項加入文件。  
   
-- 從 [資料來源]  視窗將內容控制項拖曳至文件。 若您要於控制項建立的同時將控制項繫結至資料，這麼做非常實用。 如需詳細資訊，請參閱 <<c0> [ 如何： 的物件的資料填入文件](../vsto/how-to-populate-documents-with-data-from-objects.md)並[How to： 的資料庫中的資料填入文件](../vsto/how-to-populate-documents-with-data-from-a-database.md)。  
+- 從 [資料來源]  視窗將內容控制項拖曳至文件。 若您要於控制項建立的同時將控制項繫結至資料，這麼做非常實用。 如需詳細資訊，請參閱[＜How to：物件的資料填入文件](../vsto/how-to-populate-documents-with-data-from-objects.md)和[How to:資料庫中的資料填入文件](../vsto/how-to-populate-documents-with-data-from-a-database.md)。  
   
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
@@ -93,7 +93,7 @@ ms.locfileid: "49936962"
 2.  按一下 [功能區] 上的 [開發人員]  索引標籤。  
   
     > [!NOTE]  
-    >  如果 [開發人員]  索引標籤沒有顯示，您必須先使其顯示。 如需詳細資訊，請參閱 <<c0> [ 如何： 在功能區顯示開發人員索引標籤](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)。  
+    >  如果 [開發人員]  索引標籤沒有顯示，您必須先使其顯示。 如需詳細資訊，請參閱[＜How to：在功能區顯示開發人員索引標籤](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)。  
   
 3.  按一下 [控制項]  群組中代表所要加入內容控制項的圖示。  
   

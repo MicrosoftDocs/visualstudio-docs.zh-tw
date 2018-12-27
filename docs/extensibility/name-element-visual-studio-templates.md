@@ -2,9 +2,8 @@
 title: Name 元素 （Visual Studio 範本） |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#Name
 helpviewer_keywords:
@@ -15,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 743c732410c97aa795264dd6fe2495d2d14f2481
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 66e23b99c715f59a0c7a817c379e6cf06001c285
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39638866"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561196"
 ---
 # <a name="name-element-visual-studio-templates"></a>Name 元素 （Visual Studio 範本）
 指定範本的名稱，因為它會出現在**新的專案**或是**加入新項目** 對話方塊。  

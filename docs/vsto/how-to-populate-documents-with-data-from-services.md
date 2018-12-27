@@ -1,5 +1,5 @@
 ---
-title: 如何： 擴展的資料服務文件
+title: HOW TO：服務中的資料填入文件
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -12,27 +12,27 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], populating with data
 - Web services [Office development in Visual Studio], populating documents
 - data [Office development in Visual Studio], adding to documents
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4ac901b524818086d6dbf23b7b55487054170b3e
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: fe69a35fb7f11eb649a45cd2d2238d1fb8e17ad1
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36758538"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647032"
 ---
-# <a name="how-to-populate-documents-with-data-from-services"></a>如何： 擴展的資料服務文件
+# <a name="how-to-populate-documents-with-data-from-services"></a>HOW TO：服務中的資料填入文件
 
 在 Microsoft Office 文件層級專案中存取資料時，其運作方式與在 Windows Forms 專案中的運作方式相同。 您可以使用相同的工具和程式碼將資料帶入方案中，甚至可以使用 Windows Forms 控制項顯示資料。 此外，還可以利用一種稱為主控制項的控制項，這是 Microsoft Office Excel 和 Microsoft Office Word 中的原生物件，但是經過事件和資料繫結功能的加強。 如需詳細資訊，請參閱 <<c0> [ 主項目和裝載控制項概觀](../vsto/host-items-and-host-controls-overview.md)。
 
 [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]
 
-下列範例說明如何在設計階段，將資料繫結控制項加入文件。 如需如何將 VSTO 增益集的資料繫結控制項，在執行階段的範例，請參閱 <<c0> [ 逐步解說： 從 VSTO 增益集專案中的服務繫結至資料](../vsto/walkthrough-binding-to-data-from-a-service-in-a-vsto-add-in-project.md)。
+下列範例說明如何在設計階段，將資料繫結控制項加入文件。 如需如何將 VSTO 增益集的資料繫結控制項，在執行階段的範例，請參閱[逐步解說：從 VSTO 增益集專案中的服務繫結至資料](../vsto/walkthrough-binding-to-data-from-a-service-in-a-vsto-add-in-project.md)。
 
-![影片連結](../vsto/media/playvideo.gif "影片連結")如需相關的影片示範，請參閱[How do i： 互動與 web 服務從 Microsoft Excel？](http://go.microsoft.com/fwlink/?LinkID=130284)。
+![影片連結](../vsto/media/playvideo.gif "影片連結")如需相關的影片示範，請參閱[How do i:從 Microsoft Excel 與 web 服務互動？](http://go.microsoft.com/fwlink/?LinkID=130284).
 
 ## <a name="to-populate-a-document-level-project-with-data-from-a-web-service"></a>若要填入的文件層級專案與 web 服務的資料
 
@@ -59,7 +59,7 @@ ms.locfileid: "36758538"
 - [資料繫結至 Office 方案中的控制項](../vsto/binding-data-to-controls-in-office-solutions.md)
 - [新增資料來源](../data-tools/add-new-data-sources.md)
 - [將 Windows Forms 控制項繫結至 Visual Studio 中的資料](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
-- [如何： 從資料庫的資料填入工作表](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)
-- [如何： 的物件的資料填入文件](../vsto/how-to-populate-documents-with-data-from-objects.md)
-- [如何： 的資料庫中的資料填入文件](../vsto/how-to-populate-documents-with-data-from-a-database.md)
-- [如何： 從主控制項的資料更新資料來源](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)
+- [如何：從資料庫的資料填入工作表](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)
+- [如何：物件的資料填入文件](../vsto/how-to-populate-documents-with-data-from-objects.md)
+- [如何：資料庫中的資料填入文件](../vsto/how-to-populate-documents-with-data-from-a-database.md)
+- [如何：從主控制項的資料更新資料來源](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)

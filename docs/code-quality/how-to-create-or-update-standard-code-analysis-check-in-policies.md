@@ -13,14 +13,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 99f0e665e00e614cfcf3f4e285e33345e31ab42b
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 9c4a7405dd94837d5e373470cd9181c18d913191
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283232"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53740071"
 ---
-# <a name="how-to-create-or-update-standard-code-analysis-check-in-policies"></a>如何：建立或更新標準程式碼分析簽入原則
+# <a name="how-to-create-or-update-standard-code-analysis-check-in-policies"></a>HOW TO：建立或更新標準程式碼分析簽入原則
 
 您可以要求 Azure DevOps 專案中的所有程式碼專案上執行程式碼分析，使用程式碼分析簽入原則。 需要程式碼分析，可以改善簽入程式碼基底的程式碼的品質。
 
@@ -71,4 +71,4 @@ ms.locfileid: "44283232"
 
 ## <a name="see-also"></a>另請參閱
 
-- [建立和使用程式碼分析簽入原則](../code-quality/creating-and-using-code-analysis-check-in-policies.md)
+- [建立和使用程式碼分析簽入原則](../code-quality/how-to-create-or-update-standard-code-analysis-check-in-policies.md)

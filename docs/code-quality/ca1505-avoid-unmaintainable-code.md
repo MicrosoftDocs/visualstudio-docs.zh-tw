@@ -1,5 +1,5 @@
 ---
-title: CA1505：應避免撰寫無法維護的程式碼
+title: CA1505： 應避免撰寫無法維護的程式碼
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
@@ -16,27 +16,27 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9aae34f6e999bcf74fdfbae4597b22529863e34f
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 7678b0f6b435929c9e53a40062155842e273bbdc
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45546911"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53740308"
 ---
-# <a name="ca1505-avoid-unmaintainable-code"></a>CA1505：應避免撰寫無法維護的程式碼
+# <a name="ca1505-avoid-unmaintainable-code"></a>CA1505： 應避免撰寫無法維護的程式碼
 
 |||
 |-|-|
 |TypeName|AvoidUnmantainableCode|
 |CheckId|CA1505|
-|類別|Microsoft.Maintainability|
+|分類|Microsoft.Maintainability|
 |中斷變更|非重大|
 
 ## <a name="cause"></a>原因
  類型或方法的維護性指標值很低。
 
 ## <a name="rule-description"></a>規則描述
- 可維護性指數的計算方式是使用下列計量： 程式碼、 計劃的磁碟區和循環複雜度。 程式磁碟區是深入了解型別或方法為基礎的運算子和程式碼中的運算元數目的困難度的量值。 循環複雜度是複雜性的結構化型別或方法的量值。 您可以深入了解在程式碼度量[測量的複雜性和可維護性的 Managed 程式碼](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)。
+ 可維護性指數的計算方式是使用下列計量： 程式碼、 計劃的磁碟區和循環複雜度。 程式磁碟區是深入了解型別或方法為基礎的運算子和程式碼中的運算元數目的困難度的量值。 循環複雜度是複雜性的結構化型別或方法的量值。 您可以深入了解在程式碼度量[測量的複雜性和可維護性的 Managed 程式碼](../code-quality/code-metrics-values.md)。
 
  低維護性指數表示的型別或方法可能難以維護，而且會重新設計的良好候選項目。
 
@@ -49,4 +49,4 @@ ms.locfileid: "45546911"
 ## <a name="see-also"></a>另請參閱
 
 - [維護性警告](../code-quality/maintainability-warnings.md)
-- [測量 Managed 程式碼的複雜度和維護性](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)
+- [測量 Managed 程式碼的複雜度和維護性](../code-quality/code-metrics-values.md)

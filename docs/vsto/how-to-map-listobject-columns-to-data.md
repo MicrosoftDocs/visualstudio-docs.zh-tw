@@ -1,5 +1,5 @@
 ---
-title: 如何： 對應 ListObject 資料行的資料
+title: HOW TO：將 ListObject 欄對應到資料
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -11,24 +11,24 @@ dev_langs:
 helpviewer_keywords:
 - data [Office development in Visual Studio], mapping to ListObject column
 - ListObject control, mapping data
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b77d33b8d30ed7f581e27e1cbe07d0c90715ff04
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 64c098fe1c1d4695feb9addd8e5161175dc09dc9
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35671494"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53646834"
 ---
-# <a name="how-to-map-listobject-columns-to-data"></a>如何： 對應 ListObject 資料行的資料
+# <a name="how-to-map-listobject-columns-to-data"></a>HOW TO：將 ListObject 欄對應到資料
   當您將 <xref:Microsoft.Office.Tools.Excel.ListObject> 控制項繫結到 <xref:System.Data.DataTable>時，您可能不想在清單中顯示所有資料行，或可能有某些資料行未繫結至資料。 當您呼叫 <xref:Microsoft.Office.Tools.Excel.ListObject> 方法時，您可以對應想要顯示在 <xref:Microsoft.Office.Tools.Excel.ListObject.SetDataBinding%2A> 的資料行。  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
   
- ![影片連結](../vsto/media/playvideo.gif "影片連結")如需相關的影片示範，請參閱[如何： 建立 Excel 連接到 SharePoint 清單中的清單？](http://go.microsoft.com/fwlink/?LinkID=130263)。  
+ ![影片連結](../vsto/media/playvideo.gif "影片連結")如需相關的影片示範，請參閱[How do i:在連接至 SharePoint 清單的 Excel 中建立清單嗎？](http://go.microsoft.com/fwlink/?LinkID=130263).  
   
 ## <a name="map-columns"></a>將資料行對應  
   
@@ -66,7 +66,7 @@ ms.locfileid: "35671494"
  [擴充 Word 文件和 Excel 活頁簿，VSTO 增益集在執行階段](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)   
  [Office 文件上的控制項](../vsto/controls-on-office-documents.md)   
  [將控制項加入 Office 文件，在執行階段](../vsto/adding-controls-to-office-documents-at-run-time.md)   
- [如何： 填滿 ListObject 控制項的資料](../vsto/how-to-fill-listobject-controls-with-data.md)   
+ [如何：使用資料填入 ListObject 控制項](../vsto/how-to-fill-listobject-controls-with-data.md)   
  [使用擴充的物件自動化 Excel](../vsto/automating-excel-by-using-extended-objects.md)   
  [ListObject 控制項](../vsto/listobject-control.md)  
   

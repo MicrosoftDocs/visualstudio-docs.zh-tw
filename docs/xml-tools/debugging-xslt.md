@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 55c52d1ed054d5005a68f160e0b5442fbd02c3f1
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: b89fce53567e0d88827cf4ba68349a68c31bc560
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51348535"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684635"
 ---
 # <a name="debugging-xslt"></a>偵錯 XSLT
 
@@ -32,5 +32,5 @@ ms.locfileid: "51348535"
 
 - [編輯 XSLT 樣式表](../xml-tools/editing-xslt-style-sheets.md)討論使用 XML 編輯器來編輯樣式表。
 - [使用 XML 資料時的安全性考量](../xml-tools/security-considerations-when-working-with-xml-data.md)討論您需要使用 XML 編輯器或 XSLT 偵錯工具時，了解的安全性問題。
-- [在 Visual Studio 中偵錯](../debugger/debugging-in-visual-studio.md)介紹 Visual Studio 偵錯工具。
+- [在 Visual Studio 中偵錯](../debugger/debugger-feature-tour.md)介紹 Visual Studio 偵錯工具。
 - [XSLT 參考](https://msdn.microsoft.com/678bcd68-cbbb-4be5-9dd2-40f94488a1cf)提供 XSLT 項目和函式的參考資料。

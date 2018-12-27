@@ -21,24 +21,24 @@ helpviewer_keywords:
 - Word [Office development in Visual Studio], custom XML parts
 - Excel [Office development in Visual Studio], custom XML parts
 - documents [Office development in Visual Studio], custom XML parts
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 71720ef96ee7d17bd52ea118a8c44a8f4b117cad
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 467b1055518697b035a3fa7e2a094d7f22b8198a
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50671725"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648348"
 ---
 # <a name="custom-xml-parts-overview"></a>自訂 XML 組件概觀
   您可以將 XML 資料嵌入某些 Microsoft Office 應用程式的文件中。 當您將 XML 資料嵌入文件時，該資料就稱為*自訂 XML 組件*。  
   
  您可以使用 Visual Studio 中的 VSTO 增益集或文件層級方案，建立和修改文件中的自訂 XML 組件。 您不必啟動 Microsoft Office 應用程式，即可建立和修改自訂 XML 組件。  
   
- **適用於：** Excel、 PowerPoint 和 Word 的本主題資訊適用於文件層級專案及 VSTO 增益集專案。 如需詳細資訊，請參閱 <<c0> [ 依 Office 應用程式和專案類型提供的功能](../vsto/features-available-by-office-application-and-project-type.md)。  
+ **適用於：** 本主題資訊適用於 Excel、 PowerPoint 和 Word 的 文件層級專案及 VSTO 增益集專案。 如需詳細資訊，請參閱 <<c0> [ 依 Office 應用程式和專案類型提供的功能](../vsto/features-available-by-office-application-and-project-type.md)。  
   
 > [!NOTE]  
 >  Visual Studio 也可讓您快取文件層級自訂中的資料物件。 雖然這項功能與自訂 XML 組件有些類似，但兩者卻不相同。 如需詳細資訊，請參閱 <<c0> [ 快取文件層級自訂中的資料](../vsto/cached-data-in-document-level-customizations.md)。  
@@ -52,9 +52,9 @@ ms.locfileid: "50671725"
   
 -   [Office (2007) Open XML 檔案格式簡介](/previous-versions/office/developer/office-2007/aa338205(v=office.12))  
   
--   [如何： 操作 Open XML 格式的文件](/previous-versions/office/developer/office-2007/aa982683(v=office.12))  
+-   [如何：操作 Open XML 格式的文件](/previous-versions/office/developer/office-2007/aa982683(v=office.12))  
   
--   [逐步解說： Word 2007 XML 格式](/previous-versions/office/developer/office-2007/bb266220(v=office.12))  
+-   [逐步解說：Word 2007 XML 格式](/previous-versions/office/developer/office-2007/bb266220(v=office.12))  
   
 -   [建置使用 Open XML 格式的 Word 2007 文件](/previous-versions/office/developer/office-2007/bb264572(v=office.12))  
   
@@ -69,9 +69,9 @@ ms.locfileid: "50671725"
   
  若要使用 Visual Studio 建立自訂 XML 組件，請將新的 <xref:Microsoft.Office.Core.CustomXMLPart> 加入文件的 <xref:Microsoft.Office.Core.CustomXMLParts> 集合中。 如需詳細資訊，請參閱下列主題：  
   
--   [如何： 將自訂 XML 組件新增至文件層級自訂](../vsto/how-to-add-custom-xml-parts-to-document-level-customizations.md)  
+-   [如何：將自訂 XML 組件新增至文件層級自訂](../vsto/how-to-add-custom-xml-parts-to-document-level-customizations.md)  
   
--   [如何： 使用 VSTO 增益集將自訂 XML 組件新增至文件](../vsto/how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins.md)  
+-   [如何：使用 VSTO 增益集將自訂 XML 組件新增至文件](../vsto/how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins.md)  
   
 ### <a name="modify-xml-parts-without-starting-the-office-application"></a>修改 XML 組件，但不會啟動 Office 應用程式  
  您可以在未啟動 Excel、PowerPoint 或 Word 的情況下，加入或修改自訂 XML 組件。 如果您想要在尚未安裝 Microsoft Office 應用程式的電腦 (例如伺服器) 上處理文件中的 XML 資料，則這種做法會很實用。  
@@ -83,7 +83,7 @@ ms.locfileid: "50671725"
   
 ## <a name="see-also"></a>另請參閱  
  [XML 結構描述和文件層級自訂中的資料](../vsto/xml-schemas-and-data-in-document-level-customizations.md)   
- [如何： 將自訂 XML 組件新增至文件層級自訂](../vsto/how-to-add-custom-xml-parts-to-document-level-customizations.md)   
- [如何： 使用 VSTO 增益集將自訂 XML 組件新增至文件](../vsto/how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins.md)   
+ [如何：將自訂 XML 組件新增至文件層級自訂](../vsto/how-to-add-custom-xml-parts-to-document-level-customizations.md)   
+ [如何：使用 VSTO 增益集將自訂 XML 組件新增至文件](../vsto/how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins.md)   
  [內容控制項](../vsto/content-controls.md)   
- [逐步解說： 將內容控制項繫結至自訂 XML 組件](../vsto/walkthrough-binding-content-controls-to-custom-xml-parts.md)  
+ [逐步解說：內容控制項繫結至自訂 XML 組件](../vsto/walkthrough-binding-content-controls-to-custom-xml-parts.md)  

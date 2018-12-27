@@ -2,9 +2,8 @@
 title: CustomParameter 元素 （Visual Studio 範本） |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#CustomParameter
 helpviewer_keywords:
@@ -15,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: de6f5bf513d9d3582ba05bf7a34471d13743f8de
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 2efb89f53244f2a14031ef386021e83c48b5048c
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39500679"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561274"
 ---
 # <a name="customparameter-element-visual-studio-templates"></a>CustomParameter 元素 （Visual Studio 範本）
 包含自訂的參數名稱和值，以從範本建立專案或項目時使用。  
@@ -38,8 +37,8 @@ ms.locfileid: "39500679"
   
 |屬性|描述|  
 |---------------|-----------------|  
-|`Name`|必要。 參數名稱。 參數的格式為 $*名稱*$。|  
-|`Value`|必要。 參數的取代值。|  
+|`Name`|必要項。 參數名稱。 參數的格式為 $*名稱*$。|  
+|`Value`|必要項。 參數的取代值。|  
   
 ### <a name="child-elements"></a>子元素  
  無。  

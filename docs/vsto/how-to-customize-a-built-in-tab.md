@@ -1,5 +1,5 @@
 ---
-title: 如何： 自訂內建索引標籤
+title: HOW TO：自訂內建索引標籤
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -11,19 +11,19 @@ dev_langs:
 helpviewer_keywords:
 - Ribbon [Office development in Visual Studio], tabs
 - built-in tabs [Office development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 30b4af116df218f3f778b9efa1e295fbadbad86a
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 3a219d4c5d7a57e73c63ec972ccb29724d616d1a
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35257263"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647332"
 ---
-# <a name="how-to-customize-a-built-in-tab"></a>如何： 自訂內建索引標籤
+# <a name="how-to-customize-a-built-in-tab"></a>HOW TO：自訂內建索引標籤
   您可在內建索引標籤加入群組和控制項。內建索引標籤是已位在 Microsoft Office 應用程式功能區的索引標籤。 例如，**資料** 索引標籤是在 Excel 中的內建索引標籤。 當您建立自訂群組時，它會出現在索引標籤的最末端，但是您可以在索引標籤上任意移動群組。  
   
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]  
@@ -36,7 +36,7 @@ ms.locfileid: "35257263"
 1.  以滑鼠右鍵按一下功能區程式碼檔案中的**方案總管**，然後按一下**檢視表設計工具**。  
   
     > [!NOTE]  
-    >  如果功能區程式碼檔案不會出現在**方案總管**，您必須新增**功能區項目**至您的專案。 請參閱[如何： 開始自訂功能區](../vsto/how-to-get-started-customizing-the-ribbon.md)。  
+    >  如果功能區程式碼檔案不會出現在**方案總管**，您必須新增**功能區項目**至您的專案。 請參閱[如何：開始自訂功能區](../vsto/how-to-get-started-customizing-the-ribbon.md)。  
   
 2.  在功能區設計工具中，任何索引標籤上按一下滑鼠右鍵，然後按一下**屬性**。  
   
@@ -46,7 +46,7 @@ ms.locfileid: "35257263"
   
      控制項 ID 是唯一識別 Microsoft Office 應用程式內建索引標籤、群組和控制項的名稱。  
   
-     如需控制項 Id 的清單，請參閱 < [Office 2010 說明檔： Office fluent 使用者介面控制項識別碼](http://go.microsoft.com/fwlink/?LinkID=181052)。  
+     如需控制項 Id 的清單，請參閱[Office 2010 說明檔：Office fluent 使用者介面控制項識別碼](http://go.microsoft.com/fwlink/?LinkID=181052)。  
   
 5.  從**Office 功能區控制項**索引標籤**工具箱**，將群組拖曳至 [] 索引標籤。  
   
@@ -67,17 +67,17 @@ ms.locfileid: "35257263"
   
 4.  設定**OfficeId**的內建群組的控制項 ID 的屬性。  
   
-     如需控制項 Id 的清單，請參閱 < [Office 2010 說明檔： Office fluent 使用者介面控制項識別碼](http://go.microsoft.com/fwlink/?LinkID=181052)。  
+     如需控制項 Id 的清單，請參閱[Office 2010 說明檔：Office fluent 使用者介面控制項識別碼](http://go.microsoft.com/fwlink/?LinkID=181052)。  
   
 ## <a name="see-also"></a>另請參閱  
  [功能區概觀](../vsto/ribbon-overview.md)   
  [功能區設計工具](../vsto/ribbon-designer.md)   
  [功能區 XML](../vsto/ribbon-xml.md)   
- [逐步解說： 使用功能區設計工具建立自訂索引標籤](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)   
- [逐步解說： 使用功能區 XML 建立自訂索引標籤](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md)   
- [如何： 開始自訂功能區](../vsto/how-to-get-started-customizing-the-ribbon.md)   
- [如何： 變更功能區上的索引標籤的位置](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md)   
- [如何： 將控制項加入至 Backstage 檢視](../vsto/how-to-add-controls-to-the-backstage-view.md)   
- [如何： 顯示增益集使用者介面錯誤](../vsto/how-to-show-add-in-user-interface-errors.md)  
+ [逐步解說：使用功能區設計工具建立自訂的索引標籤](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)   
+ [逐步解說：使用功能區 XML 建立自訂的索引標籤](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md)   
+ [如何：開始自訂功能區](../vsto/how-to-get-started-customizing-the-ribbon.md)   
+ [如何：變更功能區上的索引標籤的位置](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md)   
+ [如何：將控制項加入至 Backstage 檢視](../vsto/how-to-add-controls-to-the-backstage-view.md)   
+ [如何：顯示增益集使用者介面錯誤](../vsto/how-to-show-add-in-user-interface-errors.md)  
   
   

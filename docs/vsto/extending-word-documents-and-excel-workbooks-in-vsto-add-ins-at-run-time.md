@@ -16,17 +16,17 @@ helpviewer_keywords:
 - application-level add-ins [Office development in Visual Studio], extending Excel workbooks
 - controls [Office development in Visual Studio], adding at run time
 - HasVstoObject method
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 424b2cf8a6461ed0d60a1c16555c49c0ed8a0136
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: eb1197d85f52c314eb9ec0a01ccd5069f9c43f39
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49895778"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647815"
 ---
 # <a name="extend-word-documents-and-excel-workbooks-in-vsto-add-ins-at-runtime"></a>擴充 Word 文件和 Excel 活頁簿，在 VSTO 增益集在執行階段
   您可以使用 VSTO 增益集，以下列方式自訂 Word 文件和 Excel 活頁簿：  
@@ -39,7 +39,7 @@ ms.locfileid: "49895778"
   
   若要使用這項功能，您可以產生在擴充的文件或活頁簿的執行階段物件。  
   
-  **適用於：** 這篇文章中的資訊適用於下列應用程式的 VSTO 增益集專案： Excel 和 Word。 如需詳細資訊，請參閱 <<c0> [ 依 Office 應用程式和專案類型提供的功能](../vsto/features-available-by-office-application-and-project-type.md)。  
+  **適用於：** 這篇文章中的資訊適用於下列應用程式的 VSTO 增益集專案：Excel 和 Word。 如需詳細資訊，請參閱 <<c0> [ 依 Office 應用程式和專案類型提供的功能](../vsto/features-available-by-office-application-and-project-type.md)。  
   
 ## <a name="generate-extended-objects-in-vsto-add-ins"></a>在 VSTO 增益集產生擴充的物件  
  *「擴充物件」* (Extended Object) 是 Visual Studio Tools for Office Runtime 所提供的類型執行個體，可為原本存在於 Word 或 Excel 物件模型中的物件 (稱為 *「原生 Office 物件」*(Native Office Object)) 新增功能。 若要產生 Word 或 Excel 物件的擴充物件，請使用 `GetVstoObject` 方法。 第一次呼叫`GetVstoObject`方法指定的 Word 或 Excel 物件，它會傳回可擴充指定的物件的新物件。 每次呼叫方法並指定相同的 Word 或 Excel 物件時，都會傳回相同的擴充物件。  

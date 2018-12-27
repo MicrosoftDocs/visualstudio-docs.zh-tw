@@ -15,16 +15,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: eab54410c7eb1db9dfc0ac3b2c9b2f5df8b85eac
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4eae301ca32ef986c76203fd04e7bd6dc9302fec
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42634550"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53740175"
 ---
 # <a name="code-analysis-application-errors"></a>程式碼分析應用程式錯誤
 
-本節是 managed 程式碼分析工具所產生的錯誤訊息的參考。 若要取得特定的錯誤訊息的說明，請輸入中的錯誤號碼**尋找**方塊中的索引。
+本節是 managed 程式碼分析工具所產生的錯誤訊息的參考。
 
 ## <a name="in-this-section"></a>本節內容
 
@@ -45,20 +45,20 @@ ms.locfileid: "42634550"
 |[CA0062](ca0062.md)|規則 '*RuleId*'中的規則集所參考的'*RuleSetName*' 找不到。|
 |[CA0063](ca0063.md)|無法載入規則集檔案或其相依的規則集檔案。|
 |[CA0064](ca0064.md)|不執行任何分析，因為指定的規則集未包含任何 FxCop 規則。|
-|[CA0065](ca0065.md)|不支援的中繼資料建構： 類型 '*TypeName*'包含的屬性和具有相同名稱的欄位'*PropertyFieldName*'|
+|[CA0065](ca0065.md)|不支援的中繼資料建構：類型 '*TypeName*'包含的屬性和具有相同名稱的欄位'*PropertyFieldName*'|
 |[CA0066](ca0066.md)|值 '*VersionID*' 提供給 **/targetframeworkversion**不是可辨識的版本。|
 |[CA0067](ca0067.md)|找不到目錄。|
 |[CA0068](ca0068.md)|偵錯目標組件，找不到資訊 *'AssemblyName'*。|
-|[CA0069](ca0069.md)|使用替代的平台。 *FrameworkVersion1*找不到。 使用*FrameworkVersion2*改。 為獲得最佳分析結果請確定已安裝正確的.NET Framework。|
+|[CA0069](ca0069.md)|使用替代的平台。 *FrameworkVersion1*找不到。 使用*FrameworkVersion2*改。 為了獲得最佳分析結果，請確定已安裝正確的.NET Framework。|
 |[CA0070](ca0070.md)|無法載入組件或類型，因為安全性權限。|
 |[CA0501](ca0501.md)|無法讀取輸出報告。|
 |[CA0502](ca0502.md)|不支援的語言。|
-|[CA0503](ca0503.md)|屬性已被取代。 使用 superceding 屬性|
+|[CA0503](ca0503.md)|屬性已被取代。 使用取代屬性|
 |[CA0504](ca0504.md)|已忽略規則目錄，因為它不存在|
-|[CA0505](ca0505.md)|屬性已被取代。 使用 superceding 屬性|
+|[CA0505](ca0505.md)|屬性已被取代。 使用取代屬性|
 |[FxCopCmd 錯誤](fxcopcmd-errors.md)|Managed 程式碼分析錯誤。|
 
 ## <a name="related-sections"></a>相關章節
 
 - [Code Analysis Policy Errors](../code-quality/code-analysis-policy-errors.md)
-- [分析 Managed 程式碼品質](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)
+- [分析 Managed 程式碼品質](../code-quality/code-analysis-for-managed-code-overview.md)

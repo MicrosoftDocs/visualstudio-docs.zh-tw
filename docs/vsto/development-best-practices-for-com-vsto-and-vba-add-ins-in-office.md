@@ -9,17 +9,17 @@ dev_langs:
 - ''
 helpviewer_keywords:
 - ''
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3f821b9769b9353fbee6379ddc1b3826f87ac2de
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 53286b4545a45f1b3ed49d9470501cde9d2cca74
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50671089"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648903"
 ---
 # <a name="development-best-practices-for-com-vsto-and-vba-add-ins-in-office"></a>COM、 VSTO 和 VBA 增益集 Office 的開發最佳作法
   如果您正在適用於 Office 開發 COM、 VSTO 或 VBA 增益集，請遵循本文中所述的開發最佳作法。   這有助於確保：
@@ -28,13 +28,13 @@ ms.locfileid: "50671089"
 -  降低您的使用者和 IT 系統管理員的增益集部署的複雜度。
 -  不會發生非預期的安裝或執行階段失敗的增益集。
 
->注意： 使用[傳統型橋接器](/windows/uwp/porting/desktop-to-uwp-root)來準備您的 COM、 VSTO 或 VBA 增益集不支援 Windows 市集。 無法在 Windows 市集 」 或 「 Office 市集散發 COM、 VSTO 和 VBA 增益集。 
+>注意:使用[傳統型橋接器](/windows/uwp/porting/desktop-to-uwp-root)來準備您的 COM、 VSTO 或 VBA 增益集不支援 Windows 市集。 無法在 Windows 市集 」 或 「 Office 市集散發 COM、 VSTO 和 VBA 增益集。 
   
 ## <a name="do-not-check-for-office-during-installation"></a>不要在安裝期間檢查 Office  
  我們不建議具有偵測增益集安裝程序期間是否已安裝 Office 增益集。 如果未安裝 Office，您可以安裝增益集，以及使用者將能夠存取它，在安裝 Office 之後。 
   
 ## <a name="use-embedded-interop-types-nopia"></a>使用內嵌的 Interop 類型 (NoPIA)  
-如果您的方案會使用.NET 4.0 或更新版本中，使用內嵌的 interop 類型 (NoPIA) 而不是取決於 Office 主要 Interop 組件 (PIA) 可轉散發套件。 使用內嵌型別可縮小安裝您的方案，並確保未來的相容性。 Office 2010 為 Office PIA 可轉散發套件隨附的最後一個版本。 如需詳細資訊，請參閱 <<c0> [ 逐步解說： 從 Microsoft Office 組件內嵌類型資訊](https://msdn.microsoft.com/library/ee317478.aspx)並[類型等價和內嵌 interop 類型](/windows/uwp/porting/desktop-to-uwp-root)。
+如果您的方案會使用.NET 4.0 或更新版本中，使用內嵌的 interop 類型 (NoPIA) 而不是取決於 Office 主要 Interop 組件 (PIA) 可轉散發套件。 使用內嵌型別可縮小安裝您的方案，並確保未來的相容性。 Office 2010 為 Office PIA 可轉散發套件隨附的最後一個版本。 如需詳細資訊，請參閱[逐步解說：從 Microsoft Office 組件內嵌類型資訊](https://msdn.microsoft.com/library/ee317478.aspx)並[類型等價和內嵌 interop 類型](/windows/uwp/porting/desktop-to-uwp-root)。
 
 如果您的方案會使用較早版本的.NET，我們建議您更新您的解決方案，以使用.NET 4.0 或更新版本。 使用.NET 4.0 或更新版本，可減少在較新版本的 Windows 上的執行階段必要條件。
   
@@ -64,7 +64,7 @@ ms.locfileid: "50671089"
 
 若要提供 Office 用戶端應用程式 （例如 Word 或 Excel） 的支援聲明，先確認您的增益集執行在目前的 Office 版本中，然後認可來提供更新，如果您的增益集中斷在未來的版本。 您沒有 Microsoft 發行新的組建或 Office 的更新時，測試您的增益集。 Microsoft 很少變更在 Office 中的 COM、 VSTO 和 VBA 擴充性平台，這些變更將會有完善的記載。
 
->重要事項： Microsoft 會維護一份支援增益集的就緒程度報告和 ISV 的連絡資訊。 若要取得增益集內所列，請參閱[ https://aka.ms/readyforwindows ](https://aka.ms/readyforwindows)。
+>重要事項：Microsoft 會維護一份支援增益集的就緒程度報告和 ISV 的連絡資訊。 若要取得增益集內所列，請參閱[ https://aka.ms/readyforwindows ](https://aka.ms/readyforwindows)。
 
 ## <a name="use-process-monitor-to-help-debug-installation-or-loading-issues"></a>使用處理序監視器，以協助偵錯安裝或載入問題
 如果增益集有在安裝或負載期間的相容性問題，他們可能會與檔案或登錄存取問題。 使用[處理序監視](/sysinternals/downloads/procmon)或類似的偵錯工具，來記錄和比較行為的工作環境，以協助找出問題。

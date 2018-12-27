@@ -2,9 +2,8 @@
 title: ProjectTemplateLink 項目 （Visual Studio 範本） |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#ProjectTemplateLink
 helpviewer_keywords:
@@ -16,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f0f2d810f2e6dff135230af71b10a823d22330e8
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: 09cd9a5168f0051834b4f3b1de74ed9cd2e97381
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46495969"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561495"
 ---
 # <a name="projecttemplatelink-element-visual-studio-templates"></a>ProjectTemplateLink 項目 （Visual Studio 範本）
 指定的路徑 *.vstemplate*多專案範本中的某個專案的檔案。  
@@ -71,7 +70,7 @@ ms.locfileid: "46495969"
  此文字會指定的路徑 *.vstemplate*範本的檔案。  
   
 ## <a name="remarks"></a>備註  
- 多專案範本是做為兩個以上專案的容器使用。 `ProjectTemplateLink`項目用以指定的位置 *.vstemplate*其中一個範本中的專案檔。 *.Vstemplate*檔案的多專案範本包含一個`ProjectTemplateLink`每個專案範本中的項目。 如需有關多專案範本的詳細資訊，請參閱 <<c0> [ 如何： 建立多專案範本](../ide/how-to-create-multi-project-templates.md)。  
+ 多專案範本是做為兩個以上專案的容器使用。 `ProjectTemplateLink`項目用以指定的位置 *.vstemplate*其中一個範本中的專案檔。 *.Vstemplate*檔案的多專案範本包含一個`ProjectTemplateLink`每個專案範本中的項目。 如需有關多專案範本的詳細資訊，請參閱[How to:建立多專案範本](../ide/how-to-create-multi-project-templates.md)。  
   
 ## <a name="example"></a>範例  
  此範例將示範簡單的多專案根 *.vstemplate*檔案。 在這個範例中，範本包含兩個專案 `My Windows Application` 和 `My Class Library`。 `ProjectName` 項目的 `ProjectTemplateLink` 屬性會設定 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 的名稱，以指派此專案。 如果`ProjectName`屬性不存在，名稱 *.vstemplate*檔案做為專案名稱。  
@@ -101,4 +100,4 @@ ms.locfileid: "46495969"
 ## <a name="see-also"></a>另請參閱  
  [Visual Studio 範本結構描述參考](../extensibility/visual-studio-template-schema-reference.md)   
  [建立專案和項目範本](../ide/creating-project-and-item-templates.md)   
- [如何： 建立多專案範本](../ide/how-to-create-multi-project-templates.md)
+ [如何：建立多專案範本](../ide/how-to-create-multi-project-templates.md)

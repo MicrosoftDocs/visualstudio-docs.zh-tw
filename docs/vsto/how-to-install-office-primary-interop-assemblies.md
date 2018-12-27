@@ -1,5 +1,5 @@
 ---
-title: 如何： 安裝 Office 主要 interop 組件
+title: HOW TO：安裝 Office 主要 interop 組件
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -11,19 +11,19 @@ dev_langs:
 helpviewer_keywords:
 - primary interop assemblies [Office development in Visual Studio], installing
 - Office primary interop assemblies, installing
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: dd044c228e20bbdf169dda456cf24c3246b0ae34
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: bca78cc9387756c1abd4e6c11d3a549777c3f452
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35255664"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648583"
 ---
-# <a name="how-to-install-office-primary-interop-assemblies"></a>如何： 安裝 Office 主要 interop 組件
+# <a name="how-to-install-office-primary-interop-assemblies"></a>HOW TO：安裝 Office 主要 interop 組件
   當您安裝 Office 時，請安裝 Microsoft Office 主要 Interop 組件 (PIA)。  
   
 ## <a name="to-install-the-pias-when-you-install-office"></a>在安裝 Office 時安裝 PIA  
@@ -37,9 +37,9 @@ ms.locfileid: "35255664"
   
 ## <a name="see-also"></a>另請參閱  
  [Office 主要 interop 組件](../vsto/office-primary-interop-assemblies.md)   
- [如何： 透過主要 interop 組件的目標 Office 應用程式](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)   
- [如何： 設定電腦以開發 Office 方案](../vsto/how-to-configure-a-computer-to-develop-office-solutions.md)   
- [如何： 安裝 Visual Studio Tools for Office runtime 可轉散發套件](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md)   
+ [如何：透過主要 interop 組件的目標 Office 應用程式](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)   
+ [如何：設定電腦以開發 Office 方案](../vsto/how-to-configure-a-computer-to-develop-office-solutions.md)   
+ [如何：安裝 Visual Studio Tools for Office runtime 可轉散發套件](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md)   
  [Office 方案開發概觀&#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)   
  [開始使用&#40;在 Visual Studio 中的 Office 程式開發&#41;](../vsto/getting-started-office-development-in-visual-studio.md)  
   

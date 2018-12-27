@@ -13,17 +13,17 @@ dev_langs:
 helpviewer_keywords:
 - application-level add-ins [Office development in Visual Studio], getting started
 - add-ins [Office development in Visual Studio], getting started
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8136a090dbf5e3c3f86ce9b4ade1321f7b36b829
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: bf6577d48bed61a6dd5a1775da499ddd89f3769c
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49858884"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648677"
 ---
 # <a name="get-started-programming-vsto-add-ins"></a>開始進行程式設計 VSTO 增益集
   您可以使用 VSTO 增益集來自動化 Microsoft Office 應用程式、擴充應用程式的功能，以及自訂應用程式的使用者介面 (UI)。 如需 VSTO 增益集相較於其他類型 Office 方案的如何使用 Visual Studio，您可以建立，請參閱[Office 方案開發概觀&#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)。  
@@ -33,7 +33,7 @@ ms.locfileid: "49858884"
 ## <a name="create-vsto-add-in-projects"></a>建立 VSTO 增益集專案  
  使用其中一個 VSTO 增益集專案中的範本建立 VSTO 增益集專案**新的專案** 對話方塊。 這些範本包含必要的組件參考和專案檔。 Visual Studio 為 Office 中的大部分應用程式，提供 VSTO 增益集專案範本。  
   
- 如需如何建立 VSTO 增益集專案的詳細資訊，請參閱[如何： 在 Visual Studio 中的建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)。 如需詳細的專案範本的詳細資訊，請參閱[Office 專案範本概觀](../vsto/office-project-templates-overview.md)。  
+ 如需如何建立 VSTO 增益集專案的詳細資訊，請參閱[How to:在 Visual Studio 中建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)。 如需詳細的專案範本的詳細資訊，請參閱[Office 專案範本概觀](../vsto/office-project-templates-overview.md)。  
   
 ## <a name="develop-vsto-add-in-projects"></a>開發 VSTO 增益集專案  
  當您建立 VSTO 增益集專案時，Visual Studio 會自動建立*ThisAddIn.vb* (在[!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)]) 或*ThisAddIn.cs* （在 C#) 程式碼檔案。 此檔案包含`ThisAddIn`類別，可提供您 VSTO 增益集的基礎。 載入或卸載 VSTO 增益集時，您可以使用這個類別的成員來執行程式碼，以存取主應用程式的物件模型及擴充應用程式的功能。 如需詳細資訊，請參閱 <<c0> [ 程式 VSTO 增益集](../vsto/programming-vsto-add-ins.md)。  
@@ -75,22 +75,22 @@ ms.locfileid: "49858884"
 ## <a name="next-steps"></a>後續步驟  
  若要了解如何建立 VSTO 增益集，請參閱下面的逐步解說：  
   
-- [您第一個 VSTO 增益集建立適用於 Excel 的逐步解說：](../vsto/walkthrough-creating-your-first-vsto-add-in-for-excel.md)  
+- [逐步解說：適用於 Excel 建立您第一個 VSTO 增益集](../vsto/walkthrough-creating-your-first-vsto-add-in-for-excel.md)  
   
-- [逐步解說： 建立您第一個 VSTO 增益集適用於 Outlook](../vsto/walkthrough-creating-your-first-vsto-add-in-for-outlook.md)  
+- [逐步解說：建立您第一個 VSTO 增益集適用於 Outlook](../vsto/walkthrough-creating-your-first-vsto-add-in-for-outlook.md)  
   
-- [逐步解說： 建立 PowerPoint 的第一個 VSTO 增益集](../vsto/walkthrough-creating-your-first-vsto-add-in-for-powerpoint.md)  
+- [逐步解說：您第一個 VSTO 增益集建立 powerpoint](../vsto/walkthrough-creating-your-first-vsto-add-in-for-powerpoint.md)  
   
-- [逐步解說： 建立您第一個 VSTO 增益集專案](../vsto/walkthrough-creating-your-first-vsto-add-in-for-project.md)  
+- [逐步解說：建立您第一個 VSTO 增益集專案](../vsto/walkthrough-creating-your-first-vsto-add-in-for-project.md)  
   
-- [逐步解說： 建立 Word 的第一個 VSTO 增益集](../vsto/walkthrough-creating-your-first-vsto-add-in-for-word.md)  
+- [逐步解說：Word 建立您第一個 VSTO 增益集](../vsto/walkthrough-creating-your-first-vsto-add-in-for-word.md)  
   
   這些逐步解說會為您介紹 Visual Studio 中的 Office Developer Tools，以及 VSTO 增益集的程式撰寫模型。  
   
   如需逐步引導您完成一些常見工作，在 Office 專案中的主題，請參閱[在 Office 程式設計中的一般工作](../vsto/common-tasks-in-office-programming.md)。  
   
 ## <a name="see-also"></a>另請參閱  
- [如何： 在 Visual Studio 中建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)   
+ [如何：在 Visual Studio 中建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)   
  [開始使用&#40;在 Visual Studio 中的 Office 程式開發&#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
  [在 Office 方案中撰寫程式碼](../vsto/writing-code-in-office-solutions.md)   
  [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md)   

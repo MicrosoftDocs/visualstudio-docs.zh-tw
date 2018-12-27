@@ -2,9 +2,8 @@
 title: 參考項目 （Visual Studio 範本） |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#References
 helpviewer_keywords:
@@ -16,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 24b1e29faf2a322bf8dd40d48622b3e2a0c8da65
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: fa4b760f9762c07ede4a21dbb37d00ef9f84dd59
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39639158"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561979"
 ---
 # <a name="references-element-visual-studio-templates"></a>References 項目 （Visual Studio 範本）
 群組的範本加入至專案的組件參考。  
@@ -50,7 +49,7 @@ ms.locfileid: "39639158"
   
 |項目|描述|  
 |-------------|-----------------|  
-|[參考](../extensibility/reference-element-visual-studio-templates.md)|必要項目。<br /><br /> 指定項目加入專案時要加入的組件參考。 必須有一或多個`Reference`中的項目`References`項目。|  
+|[參考資料](../extensibility/reference-element-visual-studio-templates.md)|必要項目。<br /><br /> 指定項目加入專案時要加入的組件參考。 必須有一或多個`Reference`中的項目`References`項目。|  
   
 ### <a name="parent-elements"></a>父元素  
   

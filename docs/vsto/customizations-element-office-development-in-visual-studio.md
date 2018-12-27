@@ -1,6 +1,7 @@
 ---
 title: '&lt;自訂&gt;元素 （在 Visual Studio 中的 Office 程式開發）'
-ms.custom: ''
+titleSuffix: ''
+ms.custom: seodec18
 ms.date: 02/02/2017
 ms.technology:
 - office-development
@@ -12,17 +13,17 @@ helpviewer_keywords:
 - <customizations> element
 - customizations element
 - application manifests [Office development in Visual Studio], <customizations> element
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9ac1a78f0d35b2fac751e87874bbfe169798712a
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 6f324b65e6a008aa25df03ef5870617b9a8427e7
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35670830"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53646663"
 ---
 # <a name="ltcustomizationsgt-element-office-development-in-visual-studio"></a>&lt;自訂&gt;元素 （在 Visual Studio 中的 Office 程式開發）
   `customizations` 命名空間的 `vstov4` 項目包含安裝及載入每個 Office 方案的所有資訊。  
@@ -65,12 +66,12 @@ ms.locfileid: "35670830"
  `customizations` 項目具有下列子項目。  
   
 ### <a name="customization"></a>自訂  
- 必要。 `customization`中的項目`vstov4`中所定義的命名空間[&#60;自訂&#62;項目的&#40;Visual Studio 中的 Office 程式開發&#41;](../vsto/customization-element-office-development-in-visual-studio.md)。  
+ 必要項。 `customization`中的項目`vstov4`中所定義的命名空間[&#60;自訂&#62;項目的&#40;Visual Studio 中的 Office 程式開發&#41;](../vsto/customization-element-office-development-in-visual-studio.md)。  
   
 ## <a name="example-of-a-document-level-customization"></a>文件層級自訂範例  
   
 ### <a name="description"></a>描述  
- 下列程式碼範例說明文件層級自訂的 `customizations` 項目。  
+ 下列程式碼範例可說明文件層級自訂的 `customizations` 項目。  
   
 > [!NOTE]  
 >  此程式碼範例是中提供之較大範例的一部分[Application manifests for Office 方案](../vsto/application-manifests-for-office-solutions.md)。  

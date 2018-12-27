@@ -10,17 +10,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - globalization [Office development in Visual Studio], configuring
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ade59e757778ac7858732f5bf9880b9f88eacd69
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 4a305a74d24b8480732fb2132bf6c25f4f4f3d7a
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39567452"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647773"
 ---
 # <a name="globalization-and-localization-of-excel-solutions"></a>全球化和當地語系化的 Excel 方案
   本節包含在非英文設定的 Windows 電腦上執行 Microsoft Office Excel 解決方案之特殊考量的相關資訊。 當您使用 Visual Studio 建立其他種類的解決方案時，遇到的 Microsoft Office 解決方案全球化和當地語系化問題層面，大部分都一樣。 如需一般資訊，請參閱 < [Globalize 和當地語系化應用程式](/visualstudio/ide/globalizing-and-localizing-applications)。  
@@ -39,7 +39,7 @@ ms.locfileid: "39567452"
   
  雖然 Managed 程式碼傳遞或操作的資料使用了英文 (美國) 格式，但 Excel 仍會根據使用者的地區設定正確轉譯和顯示資料。 Excel 能夠正確地格式化資料，是因為 Managed 程式碼會把地區設定識別碼 1033 和資料一起傳遞，這表示資料是英文 (美國) 格式，因此必須重新格式以符合使用者的地區設定。  
   
- 例如，如果使用者的地區選項設為德文 (德國) 地區設定，他們會希望 2005 年 6 月 29 日這個日期格式化成：29.06.2005。 不過，如果您的解決方案將日期傳遞至 Excel 做為字串，您就必須根據英文 (美國) 格式將日期格式化成：6/29/2005。 如果儲存格已格式化為 [日期] 儲存格，Excel 就會以德文 (德國) 格式顯示日期。  
+ 比方說，如果使用者有地區選項設為德文 （德國） 地區設定，則會預期要格式化的日期 2005 年 6 月 29 日：29.06.2005。 不過，如果您的解決方案會將日期傳遞至 Excel 做為字串，您必須設定格式英文 （美國） 格式的日期：6/29/2005。 如果儲存格已格式化為 [日期] 儲存格，Excel 就會以德文 (德國) 格式顯示日期。  
   
 ### <a name="pass-other-locale-ids-to-the-excel-object-model"></a>將其他地區設定識別碼傳遞給 Excel 物件模型  
  通用語言執行平台 (CLR) 會自動將地區設定識別碼 1033 傳遞給接受區分地區設定資料之 Excel 物件模型中的所有方法和屬性。 沒有任何方法可以自動為進入物件模型的所有呼叫變更此行為。 但是，您可以將不同的地區設定識別碼傳遞給特定的方法：使用 <xref:System.Type.InvokeMember%2A> 呼叫方法，並把地區設定識別碼傳遞給此方法的 *culture* 參數。  
@@ -99,7 +99,7 @@ Application.ActiveCell.Value2 = "05/12/04"
  任何開啟或使用外部資料的程式碼，例如包含從舊有系統匯出的以逗號分隔值的檔案 (CSV 檔案)，如果使用 en-US 以外的任何格式匯出，也可能受到影響。 因為所有值應該都是二進位格式，所以資料庫存取可能不受影響；除非資料庫將日期儲存為字串，或執行了不使用二進位格式的作業。 此外，如果您使用 Excel 資料建構 SQL 查詢，您可能需要確保其為 en-US 格式，視所用函數而定。  
   
 ## <a name="see-also"></a>另請參閱  
- [如何： 以 Office 多語系使用者介面為目標](../vsto/how-to-target-the-office-multilingual-user-interface.md)   
+ [如何：目標的 Office 多語系使用者介面](../vsto/how-to-target-the-office-multilingual-user-interface.md)   
  [設計和建立 Office 方案](../vsto/designing-and-creating-office-solutions.md)   
  [Office 方案中的選擇性參數](../vsto/optional-parameters-in-office-solutions.md)  
   

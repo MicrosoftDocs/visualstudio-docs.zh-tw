@@ -2,9 +2,8 @@
 title: Icon 元素 （Visual Studio 範本） |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#Icon
 helpviewer_keywords:
@@ -15,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 23908a11c22d93ad37ee4e615f4100c5890e0fa5
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 40febe9ea2ac45011499dfb38f49fbaa85aa1958
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39499288"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53560696"
 ---
 # <a name="icon-element-visual-studio-templates"></a>Icon 元素 （Visual Studio 範本）
 指定的路徑和檔名做為圖示時，就會出現在其中一個映像檔的**新的專案**或**加入新項目**對話方塊中，範本。  

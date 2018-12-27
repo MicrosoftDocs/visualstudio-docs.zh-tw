@@ -16,12 +16,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 539ab866056b97f7054dda1843870dcfdd4379d9
-ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
+ms.openlocfilehash: 358b61c5b09bfd9fb701bc44135101fe230dacce
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53248133"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53739263"
 ---
 # <a name="create-an-extension-with-a-menu-command"></a>建立具有功能表命令的擴充功能
 本逐步解說示範如何建立擴充功能會啟動 [記事本] 的功能表命令。  
@@ -126,4 +126,4 @@ ms.locfileid: "53248133"
   
 5. 加入您的延伸模組的選項和 [屬性] 頁面和使用者設定：[擴充屬性和屬性視窗](../extensibility/extending-properties-and-the-property-window.md)和[擴充使用者設定和 Ooptions](../extensibility/extending-user-settings-and-options.md)  
   
-   其他類型的延伸模組需要多一點的工作，例如建立新的專案類型 ([擴充專案](../extensibility/extending-projects.md))，建立新類型的編輯器 ([建立自訂編輯器和設計工具](../extensibility/creating-custom-editors-and-designers.md))，或實作您在獨立的 shell 中的延伸模組：[Visual Studio 獨立模式 shell](../extensibility/visual-studio-isolated-shell.md)
+   其他類型的延伸模組需要多一點的工作，例如建立新的專案類型 ([擴充專案](../extensibility/extending-projects.md))，建立新類型的編輯器 ([建立自訂編輯器和設計工具](../extensibility/creating-custom-editors-and-designers.md))，或實作您在獨立的 shell 中的延伸模組：[Visual Studio 獨立模式 shell](/visualstudio/extensibility/shell/visual-studio-isolated-shell)
