@@ -13,17 +13,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f147171d8af075029a4a763a84fd48c5209f8fe1
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 7e1f4b37a799b01539fa9a5032d5c0c1cf3e224b
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39080604"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53804061"
 ---
 # <a name="text-buffer-events-in-the-legacy-api"></a>在舊版的 API 中的文字緩衝區事件
 文字緩衝區物件會發出數個不同的事件，讓您能夠回應不同的情況。  
   
- 當您使用舊版 API 時，您應該實作下列介面以接收通知的文字緩衝區變更。 公開介面，以文字緩衝區使用`IConnectionPointContainer`文字緩衝區，以接收通知列上的介面變更緩衝區。 如需詳細資訊，請參閱 <<c0> [ 如何： 註冊使用舊版 API 的文字緩衝區事件](../extensibility/how-to-register-for-text-buffer-events-with-the-legacy-api.md)。 若是`IVsTextStreamEvents`或`IVsTextLinesEvents`介面，會傳回的變更可能是一個或 two 維度座標中，分別。  
+ 當您使用舊版 API 時，您應該實作下列介面以接收通知的文字緩衝區變更。 公開介面，以文字緩衝區使用`IConnectionPointContainer`文字緩衝區，以接收通知列上的介面變更緩衝區。 如需詳細資訊，請參閱[＜How to：註冊使用舊版 API 的文字緩衝區事件](../extensibility/how-to-register-for-text-buffer-events-with-the-legacy-api.md)。 若是`IVsTextStreamEvents`或`IVsTextLinesEvents`介面，會傳回的變更可能是一個或 two 維度座標中，分別。  
   
 ## <a name="text-buffer-interfaces"></a>文字緩衝區介面  
  以下是文字緩衝區物件所實作的介面。  
@@ -53,4 +53,6 @@ ms.locfileid: "39080604"
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsFinalTextChangeCommitEvents>|通知用戶端的最後一個認可手勢來觸發事件，並提供變更的文字範圍。 `IVsFinalTextChangeCommitEvents`介面並不會引發以復原或重做命令的回應。 事件才會觸發已復原管理員的緩衝區。 `IVsFinalTextChangeCommitEvents` 是用於只能由語言服務或其他擁有完整控制權編輯的物件。 VSPackage 必須監視其中一個`IVsPreliminaryTextChangeCommitEvents`介面或`IVsFinalTextChangeCommitEvents`介面，但非兩者。|  
   
 ## <a name="see-also"></a>另請參閱
- [使用舊版 API 存取的文字緩衝](../extensibility/accessing-the-text-buffer-by-using-the-legacy-api.md) [How to： 使用舊版 API 的文字緩衝區事件註冊](../extensibility/how-to-register-for-text-buffer-events-with-the-legacy-api.md)
+
+- [使用舊版的 API 來存取文字緩衝區](../extensibility/accessing-the-text-buffer-by-using-the-legacy-api.md)
+- [如何：註冊使用舊版 API 的文字緩衝區事件](../extensibility/how-to-register-for-text-buffer-events-with-the-legacy-api.md)
