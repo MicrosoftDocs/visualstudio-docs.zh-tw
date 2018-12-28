@@ -16,12 +16,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3ec436383aa745ed033858724b4d4b2ff8b929c6
-ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
+ms.openlocfilehash: 7af96fd1973b32587a217a1cd57ef0d99b0cd626
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48863916"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53803003"
 ---
 # <a name="add-a-submenu-to-a-menu"></a>將子功能表加入至功能表
 本逐步解說是根據在示範[Visual Studio 功能表列中加入功能表](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md)示範如何以新增至子功能表**TestMenu**功能表。
@@ -156,4 +156,6 @@ ms.locfileid: "48863916"
 5.  在上**TestMenu**功能表上，按一下**子功能表**，然後按一下 **測試子命令**。 訊息方塊應該會出現，並顯示文字，也就是 「 第命令頁，在 TestCommand.SubItemCallback() 測試 」。
 
 ## <a name="see-also"></a>另請參閱
- [將功能表加入 Visual Studio 功能表列](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md)[命令、 功能表和工具列](../extensibility/internals/commands-menus-and-toolbars.md)
+
+- [將功能表加入 Visual Studio 功能表列](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md)
+- [命令、 功能表和工具列](../extensibility/internals/commands-menus-and-toolbars.md)

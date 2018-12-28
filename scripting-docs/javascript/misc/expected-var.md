@@ -1,5 +1,5 @@
 ---
-title: 必須是 &#39; var &#39; |Microsoft 文件
+title: 必須是 'var' |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -20,14 +20,14 @@ caps.latest.revision: 2
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3a99bfdd61d6c7007af2c0984219f3e458b313a3
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 0562fba98055cdb38757a4b638caa34b3bc21456
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24633238"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53803464"
 ---
-# <a name="expected-39var39"></a>必須是 &#39; var &#39;
+# <a name="expected-var"></a>必須是 'var'
 必須是 ' var' (ERRnoVar 1034))  
   
  您無法加入關鍵字 var，必要時。  

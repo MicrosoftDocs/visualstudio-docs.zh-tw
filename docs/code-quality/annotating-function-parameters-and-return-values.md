@@ -127,12 +127,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: ae4fcfa442f648126a93d1ec6a3b0d3c4fc7c981
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d60691836b38720cadeddfdf254d3646f9fa5479
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49924820"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53805103"
 ---
 # <a name="annotating-function-parameters-and-return-values"></a>註釋函式參數和傳回值
 這篇文章說明簡單的函式參數的註解的一般用法： 純量和結構和類別的指標，及各種緩衝區。  這篇文章也會顯示註釋的常見使用模式。 與功能相關的其他註解，請參閱[標註函式行為](../code-quality/annotating-function-behavior.md)
@@ -495,4 +495,12 @@ ms.locfileid: "49924820"
  [程式碼分析小組部落格](http://go.microsoft.com/fwlink/?LinkId=251197)
 
 ## <a name="see-also"></a>另請參閱
- [使用 SAL 註釋減少 C/c + + 程式碼缺失](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)[了解 SAL](../code-quality/understanding-sal.md) [註釋函式行為](../code-quality/annotating-function-behavior.md)[註釋結構和類別](../code-quality/annotating-structs-and-classes.md) [註釋鎖定行為](../code-quality/annotating-locking-behavior.md)[指定套用註釋的時機和位置](../code-quality/specifying-when-and-where-an-annotation-applies.md)[內建函式](../code-quality/intrinsic-functions.md)[最佳做法和範例](../code-quality/best-practices-and-examples-sal.md)
+
+- [使用 SAL 註釋減少 C/C++ 程式碼的缺失](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)
+- [了解 SAL](../code-quality/understanding-sal.md)
+- [註釋函式行為](../code-quality/annotating-function-behavior.md)
+- [註釋結構和類別](../code-quality/annotating-structs-and-classes.md)
+- [註釋鎖定行為](../code-quality/annotating-locking-behavior.md)
+- [指定套用註釋的時機和位置](../code-quality/specifying-when-and-where-an-annotation-applies.md)
+- [內建函式](../code-quality/intrinsic-functions.md)
+- [最佳做法和範例](../code-quality/best-practices-and-examples-sal.md)

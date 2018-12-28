@@ -26,12 +26,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ba6f0a1aff0c263534c17256b7f5cf49ff9c9533
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 46cd388079db9d7869bcae733c6baef33c07a212
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49898053"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53805129"
 ---
 # <a name="troubleshoot-sharepoint-packaging-and-deployment"></a>針對 SharePoint 封裝和部署進行疑難排解
   這個主題涵蓋您在封裝和部署 SharePoint 方案時可能會遇到的各種問題。
@@ -40,10 +40,10 @@ ms.locfileid: "49898053"
  若要在 Visual Studio、SharePoint 和其他圖層之間進行診斷，您可以使用 EnableDiagnostics 登錄機碼來檢視堆疊追蹤。 如需詳細資訊，請參閱 <<c0> [ 偵錯 SharePoint 方案](../sharepoint/debugging-sharepoint-solutions.md)。
 
 ## <a name="add-project-output-to-the-solution-package"></a>將專案輸出加入到方案套件
- 您可以透過 [封裝設計工具] 將專案輸出加入至套件。 然而，當您加入專案輸出時，要確定專案的平台與 SharePoint 方案的平台相符。 我們建議您改用**任何 CPU**平台目標的組件，您想要部署到 SharePoint 伺服器。 如需詳細資訊，請參閱 <<c0> [ 專案設計工具、 編譯頁面&#40;Visual Basic&#41; ](/visualstudio/ide/reference/compile-page-project-designer-visual-basic)並[進階編譯器設定對話方塊&#40;Visual Basic&#41;](/visualstudio/ide/reference/advanced-compiler-settings-dialog-box-visual-basic)。</c0>
+ 您可以透過 [封裝設計工具] 將專案輸出加入至套件。 然而，當您加入專案輸出時，要確定專案的平台與 SharePoint 方案的平台相符。 我們建議您改用**任何 CPU**平台目標的組件，您想要部署到 SharePoint 伺服器。 如需詳細資訊，請參閱 <<c0> [ 專案設計工具、 編譯頁面&#40;Visual Basic&#41; ](../ide/reference/compile-page-project-designer-visual-basic.md)並[進階編譯器設定對話方塊&#40;Visual Basic&#41;](../ide/reference/advanced-compiler-settings-dialog-box-visual-basic.md)。</c0>
 
 ## <a name="validation-warnings-and-errors"></a>驗證警告和錯誤
- Visual Studio 中的 SharePoint 開發工具會執行驗證步驟，來驗證方案套件的格式是否正確。 您也可以為您的「功能」和套件建立自訂驗證步驟。 如需詳細資訊，請參閱 <<c0> [ 如何： 建立自訂的功能和封裝驗證規則，SharePoint 方案的](../sharepoint/how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md)。
+ Visual Studio 中的 SharePoint 開發工具會執行驗證步驟，來驗證方案套件的格式是否正確。 您也可以為您的「功能」和套件建立自訂驗證步驟。 如需詳細資訊，請參閱[＜How to：建立自訂的功能和封裝驗證規則，SharePoint 方案的](../sharepoint/how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md)。
 
 ## <a name="deployment-conflict-resolution"></a>部署衝突解決方式
  當您部署 SharePoint 方案時，可能會在伺服器上項目與方案套件中項目具有相同名稱、URL 或 ID 的情況中發現衝突。 您可以變更**部署衝突解決**屬性，以解決、 報告或忽略模組、 Web 組件、 清單執行個體和內容類型的衝突。
@@ -65,7 +65,7 @@ ms.locfileid: "49898053"
 
 3. 根據 [封裝設計工具] 中的階層，設定功能啟動順序。
 
-   您可以新增自訂部署步驟進一步變更**F5**行為。 如需詳細資訊，請參閱 <<c0> [ 逐步解說： 建立 SharePoint 專案的自訂部署步驟](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md)。
+   您可以新增自訂部署步驟進一步變更**F5**行為。 如需詳細資訊，請參閱[逐步解說：建立 SharePoint 專案的自訂部署步驟](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md)。
 
 ## <a name="delay-displaying-sharepoint-page-when-deploy-visual-web-part"></a>延遲顯示 SharePoint 頁面時部署視覺 web 組件
  將視覺 Web 組件部署至 [!INCLUDE[wiprlhext](../sharepoint/includes/wiprlhext-md.md)]、[!INCLUDE[win7](../sharepoint/includes/win7-md.md)] 或 [!INCLUDE[winsvr08](../sharepoint/includes/winsvr08-md.md)] 上的 Bin 資料夾時，會花費很長時間才會出現 SharePoint 頁面。 如果您變更最上層 [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] 目錄 (例如，Bin 目錄) 中的任何檔案，則會重新編譯整個 Web 應用程式。 這樣會導致 SharePoint 頁面的呈現存在長達 25 秒的延遲。
@@ -76,7 +76,7 @@ ms.locfileid: "49898053"
 ### <a name="resolution"></a>解決方式
  若要解決這個問題，請執行下列步驟：
 
-1.  安裝 Microsoft 支援文章中所述的更新 KB967535[修正： hotfix 已提供適用於 Windows Vista 和 Windows Server 2008 在 IIS 7.0 上修正兩個問題在 ASP.NET 中](http://go.microsoft.com/fwlink/?LinkId=179055)。
+1.  安裝 Microsoft 支援文章中所述的更新 KB967535[修正：Hotfix 已提供適用於 Windows Vista 和 Windows Server 2008 在 IIS 7.0 上修正兩個問題在 ASP.NET 中](http://go.microsoft.com/fwlink/?LinkId=179055)。
 
 2.  將下列行加入至 Web.config 檔案：
 
@@ -88,7 +88,7 @@ ms.locfileid: "49898053"
  如果有任何 SharePoint 專案項目的名稱中包含括號，其方案的部署即會因錯誤而失敗。
 
 ### <a name="error-message"></a>錯誤訊息
- 部署步驟「加入方案」中發生錯誤：無法擷取方案中的封包檔。
+ 部署步驟 「 加入方案 」 中發生錯誤：無法擷取方案中的封包檔。
 
 ### <a name="resolution"></a>解決方式
  若要解決這個問題，請移除 SharePoint 專案項目名稱中的括號。
@@ -97,7 +97,7 @@ ms.locfileid: "49898053"
  當您第一次在非目前用來進行部署的 Web 應用程式上將視覺 Web 組件部署至網站時 (藉由變更視覺 Web 組件的 SiteUrl 屬性)，會出現錯誤。
 
 ### <a name="error-message"></a>錯誤訊息
- 部署步驟「加入方案」中發生錯誤：識別碼為 [#] 的功能已經安裝在此伺服器陣列中。 請使用強制屬性明確重新安裝功能。
+ 部署步驟 「 加入方案 」 中發生錯誤：識別碼為 [#] 功能已安裝此伺服器陣列中。 請使用強制屬性明確重新安裝功能。
 
 ### <a name="resolution"></a>解決方式
  這個錯誤是由於在 SharePoint 中撤銷視覺 Web 組件功能的方式不當所致。 若要成功部署視覺 Web 組件，重新部署方案選擇**F5**索引鍵。
@@ -114,5 +114,5 @@ ms.locfileid: "49898053"
  若要移除這項警告，請建置專案，然後關閉設計工具再重新開啟，或者停用專案的自動撤銷選項。 若要這樣做，請清除**偵錯後自動撤銷** 核取方塊**SharePoint**  索引標籤的 專案屬性 對話方塊。
 
 ## <a name="see-also"></a>另請參閱
- [封裝和部署 SharePoint 方案](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)
 
+- [封裝和部署 SharePoint 方案](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)

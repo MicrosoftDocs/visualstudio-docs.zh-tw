@@ -26,12 +26,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: e4294284ff2911fd05cc771bf4deaad368e3c28b
-ms.sourcegitcommit: 95aedf723c6be5272c3c5a2911cb2bdec50e2148
+ms.openlocfilehash: a4fb171ec575fdcf85879ed62252c9d373283f62
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47228821"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53802627"
 ---
 # <a name="annotating-structs-and-classes"></a>註釋結構和類別
 您可以使用作用類似非變異項目的註釋來標註結構和類別，在包含封入結構做為參數或結果值的任何函式呼叫或函式進入/結束點，會假定這些註釋為真。
@@ -79,4 +79,12 @@ ms.locfileid: "47228821"
     ```
 
 ## <a name="see-also"></a>另請參閱
- [使用 SAL 註釋減少 C/c + + 程式碼缺失](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)[了解 SAL](../code-quality/understanding-sal.md) [註釋函式參數和傳回值](../code-quality/annotating-function-parameters-and-return-values.md)[註釋函式行為](../code-quality/annotating-function-behavior.md)[註釋鎖定行為](../code-quality/annotating-locking-behavior.md)[指定套用註釋的時機和位置](../code-quality/specifying-when-and-where-an-annotation-applies.md)[內建函式](../code-quality/intrinsic-functions.md)[最佳做法和範例](../code-quality/best-practices-and-examples-sal.md)
+
+- [使用 SAL 註釋減少 C/C++ 程式碼的缺失](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)
+- [了解 SAL](../code-quality/understanding-sal.md)
+- [註釋函式參數和傳回值](../code-quality/annotating-function-parameters-and-return-values.md)
+- [註釋函式行為](../code-quality/annotating-function-behavior.md)
+- [註釋鎖定行為](../code-quality/annotating-locking-behavior.md)
+- [指定套用註釋的時機和位置](../code-quality/specifying-when-and-where-an-annotation-applies.md)
+- [內建函式](../code-quality/intrinsic-functions.md)
+- [最佳做法和範例](../code-quality/best-practices-and-examples-sal.md)

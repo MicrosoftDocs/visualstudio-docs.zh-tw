@@ -1,5 +1,5 @@
 ---
-title: 如何： 以程式設計方式將圖片及文字藝術師加入至文件
+title: HOW TO：以程式設計方式將圖片及文字藝術師加入至文件
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -14,19 +14,19 @@ helpviewer_keywords:
 - Word documents, adding Word Art
 - graphics, adding to Word documents
 - WordArt, adding to documents
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 61399df32ef0f22d1d0aacf23dea45c1357c7579
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 5be1a78cd5962e823f56f4eac3fca0c91cb81e1e
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35255102"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53804834"
 ---
-# <a name="how-to-programmatically-add-pictures-and-word-art-to-documents"></a>如何： 以程式設計方式將圖片及文字藝術師加入至文件
+# <a name="how-to-programmatically-add-pictures-and-word-art-to-documents"></a>HOW TO：以程式設計方式將圖片及文字藝術師加入至文件
   您可以在設計階段或執行階段，將圖片和繪圖物件加入至您的文件。 文字藝術師可讓您將裝飾文字加入至 Microsoft Office Word 文件。 這些特殊文字效果是繪圖物件，您可自訂並將它們插入至文件。  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
@@ -103,10 +103,10 @@ ms.locfileid: "35255102"
 -   名為圖片*SamplePicture.jpg*必須存在於 c 磁碟機。  
   
 ## <a name="see-also"></a>另請參閱  
- [如何： 以程式設計方式開啟現有文件](../vsto/how-to-programmatically-open-existing-documents.md)   
- [如何： 以程式設計方式將文字插入 Word 文件](../vsto/how-to-programmatically-insert-text-into-word-documents.md)   
- [如何： 以程式設計方式在搜尋後還原選取範圍](../vsto/how-to-programmatically-restore-selections-after-searches.md)   
- [如何： 以程式設計方式儲存文件](../vsto/how-to-programmatically-save-documents.md)   
+ [如何：以程式設計方式開啟現有文件](../vsto/how-to-programmatically-open-existing-documents.md)   
+ [如何：以程式設計方式將文字插入 Word 文件](../vsto/how-to-programmatically-insert-text-into-word-documents.md)   
+ [如何：以程式設計方式在搜尋後還原選取範圍](../vsto/how-to-programmatically-restore-selections-after-searches.md)   
+ [如何：以程式設計方式儲存文件](../vsto/how-to-programmatically-save-documents.md)   
  [Office 方案中的選擇性參數](../vsto/optional-parameters-in-office-solutions.md)  
   
   

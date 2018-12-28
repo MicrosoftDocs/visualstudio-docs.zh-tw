@@ -1,5 +1,5 @@
 ---
-title: 必須是&#39;)&#39;中的規則運算式 (JavaScript) |Microsoft Docs
+title: 必須是 ')' 在規則運算式 (JavaScript) |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -20,14 +20,14 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b5d1075a41d2b97d10166b1372e8df3a93dd9d8e
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 6c344105010e406ef4936fdcca58baffbd610088
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44279124"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53802338"
 ---
-# <a name="expected-3939-in-regular-expression-javascript"></a>必須是&#39;)&#39;中的規則運算式 (JavaScript)
+# <a name="expected--in-regular-expression-javascript"></a>在規則運算式中必須是 ')' (JavaScript)
 您嘗試建立規則運算式的擷取、 判斷提示或群組，但並未包含的右括號。 括號內會有多種用途，規則運算式中。 它們主要是用來擷取子運算式，指定判斷提示，或將群組模式在一起，讓項目可以視為單一單位的 *，+，？，依此類推。  
   
 ### <a name="to-correct-this-error"></a>更正這個錯誤  
