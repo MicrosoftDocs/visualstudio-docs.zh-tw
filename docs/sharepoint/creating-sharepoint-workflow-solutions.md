@@ -23,12 +23,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3b60987b90440d6f72ede8cdc0f02023c8f4cc6b
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: 0dd8a1339dddc52326bf7b0e42d52c1eaa53e6cf
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53739422"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53802494"
 ---
 # <a name="create-sharepoint-workflow-solutions"></a>建立 SharePoint 工作流程方案
 
@@ -127,7 +127,7 @@ ms.locfileid: "53739422"
 ## <a name="debug-a-sharepoint-workflow-template"></a>偵錯 SharePoint 工作流程範本
  您可以偵錯 SharePoint 工作流程專案相同當您偵錯其他[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Web 專案。 當您啟動[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]偵錯工具，[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]會使用您在中指定的設定**SharePoint 自訂精靈**開啟適當的 SharePoint 網站，並自動建立關聯的工作流程範本使用適當的程式庫或清單中。 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 也會附加[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]偵錯工具，[!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)]名為處理序*w3wp.exe*。
 
- 若要測試工作流程，您必須手動加以啟動。 如需詳細資訊，請參閱 < 偵錯工作流程 > 一節中[偵錯 SharePoint 方案](../sharepoint/debugging-sharepoint-solutions.md)。 如需詳細資訊[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Web 應用程式偵錯，請參閱[web 應用程式和指令碼進行偵錯](/visualstudio/debugger/how-to-enable-debugging-for-aspnet-applications)。
+ 若要測試工作流程，您必須手動加以啟動。 如需詳細資訊，請參閱 < 偵錯工作流程 > 一節中[偵錯 SharePoint 方案](../sharepoint/debugging-sharepoint-solutions.md)。 如需詳細資訊[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Web 應用程式偵錯，請參閱[web 應用程式和指令碼進行偵錯](../debugger/how-to-enable-debugging-for-aspnet-applications.md)。
 
 ## <a name="deploy-a-sharepoint-workflow-template"></a>部署 SharePoint 工作流程範本
  [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 就像其他部署的 SharePoint 工作流程專案[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]SharePoint 專案。 如需詳細資訊，請參閱 <<c0> [ 封裝和部署 SharePoint 方案](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)。

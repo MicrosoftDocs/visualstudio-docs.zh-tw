@@ -20,12 +20,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 80dfd4901fdaaeff064ba18d80bfe3f69e08116c
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: a9de737604da898c42243895ed84e8962a8c656f
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53739884"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53803148"
 ---
 # <a name="how-to-set-code-analysis-properties-for-cc-projects"></a>HOW TO：為 C/c + + 專案設定程式碼分析屬性
 您可以設定程式碼分析工具用來分析專案的每個組態中的程式碼的規則。 此外，您可以將程式碼分析，以隱藏來自產生並由第三方工具加入至專案的程式碼的警告。
@@ -52,4 +52,6 @@ ms.locfileid: "53739884"
  如果您的專案包含 managed 程式碼，您可以選取要套用的程式碼分析中，選取規則集從的規則**執行此規則集**清單。
 
 ## <a name="see-also"></a>另請參閱
- [分析 Managed 程式碼品質](../code-quality/code-analysis-for-managed-code-overview.md) [C/c + + 警告的程式碼分析](../code-quality/code-analysis-for-c-cpp-warnings.md)
+
+- [分析 Managed 程式碼品質](../code-quality/code-analysis-for-managed-code-overview.md)
+- [C/C++ 程式碼分析警告](../code-quality/code-analysis-for-c-cpp-warnings.md)

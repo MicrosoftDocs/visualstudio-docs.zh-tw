@@ -1,5 +1,5 @@
 ---
-title: 必須是&#39;-&#39; |Microsoft Docs
+title: 必須是 '-' |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -20,14 +20,14 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 141d7239ebbd32ceff9be45a8b4be97afd8887b0
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: d1c0891065569a1f43777f87692568af26323924
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283271"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53804756"
 ---
-# <a name="expected-39-39"></a>必須是&#39;-&#39;
+# <a name="expected--"></a>必須是 '-'
 您嘗試建立的規則運算式常值，但不是包含斜線 （/） 的其中一個。 就像字串常值會寫入為一對引號內的字元，規則運算式常值會表示為斜線 （/） 字元的一組內的字元。  
   
 ### <a name="to-correct-this-error"></a>更正這個錯誤  

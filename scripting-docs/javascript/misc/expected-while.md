@@ -1,5 +1,5 @@
 ---
-title: 預期 &#39; 時 &#39; |Microsoft 文件
+title: 必須是 'while' |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -20,15 +20,15 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: de38e7e593d0547a695c2e037903d01387cdf0bb
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 689e740b9954cada3788e53094e5a4fc1241baf8
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24633028"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53801968"
 ---
-# <a name="expected-39while39"></a>預期 &#39; 時 &#39;
-您並未包含`while`狀況`do...while`迴圈。 A**不要**陳述式必須有對應`while`測試的程式碼區塊的結尾。  
+# <a name="expected-while"></a>必須是 'while'
+您未包含`while`狀況`do...while`迴圈。 A**請勿**陳述式必須有對應`while`測試的程式碼區塊的結尾。  
   
 ### <a name="to-correct-this-error"></a>更正這個錯誤  
   

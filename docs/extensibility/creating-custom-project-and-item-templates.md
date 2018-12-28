@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9e4d938bbfbe1c65882e73630689edff208670e9
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: b2a8e95d8ea8e169eb75a3ecba886a96808b87a1
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53739821"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53802731"
 ---
 # <a name="create-custom-project-and-item-templates"></a>建立自訂專案和項目範本
 
@@ -29,7 +29,7 @@ Visual Studio SDK 包含專案範本，可建立自訂專案範本和自訂項�
 基本的範本建立的情況下，您應該使用**匯出範本**精靈，將輸出到壓縮的檔案。 如需有關建立基本範本的詳細資訊，請參閱 <<c0> [ 建立專案和項目範本](../ide/creating-project-and-item-templates.md)。
 
 > [!NOTE]
-> 啟動 Visual Studio 2017 中，自訂專案與項目範本的掃描將不會再執行。 相反地，延伸模組必須提供範本資訊清單檔案來描述這些範本的安裝位置。 您可以使用 Visual Studio 2017 更新您的 VSIX 擴充功能。 如果您部署使用 MSI 延伸模組，您必須以手動方式產生範本資訊清單檔。 如需詳細資訊，請參閱 <<c0> [ 升級自訂專案和項目範本適用於 Visual Studio 2017](../extensibility/upgrading-custom-project-and-item-templates-for-visual-studio-2017.md)。 範本資訊清單結構描述記載於[Visual Studio 範本資訊清單結構描述參考](../extensibility/visual-studio-template-manifest-schema-reference.md)。
+> 啟動 Visual Studio 2017 中，自訂專案與項目範本的掃描將不會再執行。 相反地，延伸模組必須提供範本資訊清單檔案來描述這些範本的安裝位置。 您可以使用 Visual Studio 2017 更新您的 VSIX 擴充功能。 如果您部署使用 MSI 延伸模組，您必須以手動方式產生範本資訊清單檔。 如需詳細資訊，請參閱 < [Visual Studio 2017 的升級自訂專案與項目範本](../extensibility/upgrading-custom-project-and-item-templates-for-visual-studio-2017.md)。 範本資訊清單結構描述記載於[Visual Studio 範本資訊清單結構描述參考](../extensibility/visual-studio-template-manifest-schema-reference.md)。
 
 ## <a name="create-a-project-template"></a>建立專案範本
 

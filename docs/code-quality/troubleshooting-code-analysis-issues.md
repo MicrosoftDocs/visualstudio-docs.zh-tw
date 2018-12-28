@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 34fce91db15d484b140aee291f9abd915d9399d2
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: b481a200cfd085cddcd0e8826eef94f7d4e5fbee
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53738789"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53804386"
 ---
 # <a name="troubleshooting-code-analysis-issues"></a>程式碼分析問題疑難排解
 本主題包含下列 Visual Studio 程式碼分析問題的疑難排解資訊。
@@ -32,4 +32,7 @@ ms.locfileid: "53738789"
 3. 重新開啟規則集，並回復變更，然後重新儲存規則集。
 
 ## <a name="see-also"></a>另請參閱
- [應用程式品質分析](../code-quality/analyzing-application-quality-by-using-code-analysis-tools.md)[分析 Managed 程式碼品質](../code-quality/code-analysis-for-managed-code-overview.md)[使用規則集分組程式碼分析規則](../code-quality/using-rule-sets-to-group-code-analysis-rules.md)
+
+- [分析應用程式品質](../code-quality/code-analysis-for-managed-code-overview.md)
+- [分析 Managed 程式碼品質](../code-quality/code-analysis-for-managed-code-overview.md)
+- [使用規則集分組程式碼分析規則](../code-quality/using-rule-sets-to-group-code-analysis-rules.md)

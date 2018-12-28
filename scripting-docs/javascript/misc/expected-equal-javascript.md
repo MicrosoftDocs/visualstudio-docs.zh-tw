@@ -1,5 +1,5 @@
 ---
-title: 必須是&#39;=&#39; (JavaScript) |Microsoft Docs
+title: 必須是 '=' (JavaScript) |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -20,14 +20,14 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8cae54b60ae94be5929ae5c5cfb8f8f0c1a2ea92
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b0ba826bdc4af9e4c87c0e5a85d47caffc187f00
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49909993"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53802260"
 ---
-# <a name="expected-3939-javascript"></a>必須是&#39;=&#39; (JavaScript)
+# <a name="expected--javascript"></a>必須是 '=' (JavaScript)
 您嘗試建立變數，以搭配條件式編譯陳述式，但未將變數與您想要指派給它的值之間的等號。  
   
 ### <a name="to-correct-this-error"></a>更正這個錯誤  

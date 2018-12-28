@@ -1,5 +1,5 @@
 ---
-title: 如何： 以程式設計方式在 Visio 文件中加入圖形
+title: HOW TO：以程式設計方式在 Visio 文件中加入圖形
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -11,19 +11,19 @@ dev_langs:
 helpviewer_keywords:
 - Visio [Office development in Visual Studio], adding Visio shapes
 - shapes [Office development in Visual Studio], adding Visio shapes
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 94e8b43830c26aad82937cc0533ca19e109f33d0
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 09bc0ca6d0c84f87a1a1621c9028c3a147373bc5
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50671868"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53802655"
 ---
-# <a name="how-to-programmatically-add-shapes-to-a-visio-document"></a>如何： 以程式設計方式在 Visio 文件中加入圖形
+# <a name="how-to-programmatically-add-shapes-to-a-visio-document"></a>HOW TO：以程式設計方式在 Visio 文件中加入圖形
   您可以從樣板擷取主圖形並把圖形放在使用中的頁面上，即可在 Microsoft Office Visio 文件中加入圖形。  
   
  如需詳細資訊，請參閱 [Microsoft.Office.Interop.Visio.Documents.Add](/office/vba/api/Visio.Documents.Add) 方法、 [Microsoft.Office.Interop.Visio.Application.ActivePage](/office/vba/api/Visio.Application.ActivePage) 屬性和 [Microsoft.Office.Interop.Visio.Page.Drop](/office/vba/api/Visio.Page.Drop) 方法的 VBA 參考文件。  
@@ -43,6 +43,6 @@ ms.locfileid: "50671868"
  [Visio 方案](../vsto/visio-solutions.md)   
  [Visio 物件模型概觀](../vsto/visio-object-model-overview.md)   
  [使用 Visio 圖案](../vsto/working-with-visio-shapes.md)   
- [如何： 以程式設計方式複製並貼上 Visio 文件中的圖形](../vsto/how-to-programmatically-copy-and-paste-shapes-in-a-visio-document.md)  
+ [如何：以程式設計方式複製並貼上 Visio 文件中的圖形](../vsto/how-to-programmatically-copy-and-paste-shapes-in-a-visio-document.md)  
   
   

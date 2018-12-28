@@ -1,5 +1,5 @@
 ---
-title: 如何： 以程式設計方式新增和刪除工作表註解
+title: HOW TO：以程式設計方式新增和刪除工作表註解
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -12,19 +12,19 @@ helpviewer_keywords:
 - ranges, comments
 - worksheets, comments
 - comments, worksheets
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: fe41fe7f6370697335fa76b468e79e61d6e1269a
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 06097d72693e0b7a00c7af48609523d5e7dfc5a0
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35670794"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53804191"
 ---
-# <a name="how-to-programmatically-add-and-delete-worksheet-comments"></a>如何： 以程式設計方式新增和刪除工作表註解
+# <a name="how-to-programmatically-add-and-delete-worksheet-comments"></a>HOW TO：以程式設計方式新增和刪除工作表註解
   您可以透過程式設計方式，加入及刪除 Microsoft Office Excel 工作表中的註解。 註解只能加入單一儲存格，而不能加入多個儲存格範圍。  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
@@ -65,7 +65,7 @@ ms.locfileid: "35670794"
   
 ## <a name="see-also"></a>另請參閱  
  [使用工作表](../vsto/working-with-worksheets.md)   
- [如何： 以程式設計方式顯示工作表註解](../vsto/how-to-programmatically-display-worksheet-comments.md)   
+ [如何：以程式設計方式顯示工作表註解](../vsto/how-to-programmatically-display-worksheet-comments.md)   
  [NamedRange 控制項](../vsto/namedrange-control.md)  
   
   
