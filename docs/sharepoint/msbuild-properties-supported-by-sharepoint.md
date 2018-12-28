@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1695a23ba9dddc27a37f23c714678fe6b779d328
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 55561d570605cfd5690fc0459444b2fbadeca51a
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35671143"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684804"
 ---
 # <a name="msbuild-properties-supported-by-sharepoint"></a>SharePoint 支援的 MsBuild 屬性
   任何[!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)]Microsoft.VisualStudio.SharePoint.targets 檔案、 專案檔或專案使用者檔案中定義的屬性可以用於[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]SharePoint 專案。 除了一般[!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)]專案中，SharePoint 所提供的屬性會定義 SharePoint 專案特有的其他屬性。  
@@ -57,5 +57,5 @@ ms.locfileid: "35671143"
 >  您可以使用[!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)]變數語法`$(` *propertyName* `)`或環境變數語法`%` *propertyName* `%`指定的屬性。  
   
 ## <a name="see-also"></a>另請參閱
- [MSBuild 參考](/visualstudio/msbuild/msbuild-reference)  
-  
+
+- [MSBuild 參考](../msbuild/msbuild-reference.md)  
