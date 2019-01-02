@@ -15,7 +15,7 @@ ms.workload:
 - vssdk
 ms.openlocfilehash: bdd96c124dafabf5584dfa13547cdea1e2b843b8
 ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/23/2018
 ms.locfileid: "49879320"
