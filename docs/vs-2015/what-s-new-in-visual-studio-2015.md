@@ -17,12 +17,12 @@ caps.latest.revision: 364
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f1d2b37a988f0078149228cce808397f9fb915d1
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 16c9a490970d6c41a5661f0755f09731ce2fba7e
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53062434"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53740269"
 ---
 # <a name="what39s-new-in-visual-studio-2015"></a>Visual Studio 2015 的新功能
 [!INCLUDE[vs2017banner](./includes/vs2017banner.md)]
@@ -137,14 +137,14 @@ ms.locfileid: "53062434"
 -   **C++ / Android**。 使用 [適用於跨平台行動裝置開發的 Visual C++](http://msdnstage.redmond.corp.microsoft.com/library/dn872463\(v=vs.140\).aspx) 範本以及如 [Android NDK](https://developer.android.com/tools/sdk/ndk/index.html) 的協力廠商工具，建立適用於 Windows 和 Android 的原生應用程式。
 
 ## <a name="debugging-and-diagnostics"></a>偵錯和診斷
- 如需偵錯新功能的相關資訊，請參閱 [What’s New for the Debugger in Visual Studio 2015](./debugger/what’s-new-for-the-debugger-in-visual-studio-2015.md)。
+ 如需偵錯新功能的相關資訊，請參閱 [What’s New for the Debugger in Visual Studio 2015](/visualstudio/debugger/what-s-new-for-the-debugger-in-visual-studio-2015?view=vs-2015)。
 
  在診斷中的新功能相關資訊，請參閱[What's New in 程式碼剖析工具](./profiling/what-s-new-in-profiling-tools.md)。
 
  下列新的或改進的工具可對程式碼執行不同類型的診斷和分析：
 
 ### <a name="perftips"></a>效能提示
- 效能提示顯示偵錯期間方法的執行時間，可讓您快速發現瓶頸，而不需要叫用分析工具。 若要開始，請參閱[效能提示：使用 Visual Studio 偵錯時的效能資訊一覽 (英文)](http://blogs.msdn.com/b/visualstudioalm/archive/2014/08/18/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio.aspx)。
+ 效能提示顯示偵錯期間方法的執行時間，可讓您快速發現瓶頸，而不需要叫用分析工具。 若要開始，請參閱 [效能提示：使用 Visual Studio 偵錯，效能資訊快速檢視](http://blogs.msdn.com/b/visualstudioalm/archive/2014/08/18/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio.aspx)。
 
 ### <a name="error-list"></a>錯誤清單
  錯誤清單現在支援對任何資料行進行篩選。 該清單也可以隨著您的輸入調整，以顯示整個 C# 或 Visual Basic 方案中之錯誤、警告和程式碼分析的即時檢視，就算程式碼變更產生了數千項警告也沒有問題。 新的錯誤清單可回溯相容於現有的使用量。 如需詳細資訊，請參閱 [Error List Window](./ide/reference/error-list-window.md)。
@@ -190,11 +190,11 @@ ms.locfileid: "53062434"
 
 - 取得 Visual Studio 編輯器中整個程式碼檔案的歷程記錄。
 
-   ![CodeLens取得程式碼檔案詳細資料](./ide/media/codelensfilelevel.png "CodeLensFileLevel")
+   ![CodeLens：取得程式碼檔案詳細資料](./ide/media/codelensfilelevel.png "CodeLensFileLevel")
 
 - 查看顯示變更您程式碼之人員的圖表。 這可協助您找出小組變更的模式，並評估其影響。
 
-   ![CodeLens查看以圖形的程式碼變更記錄](./ide/media/codelens.png "CodeLens")
+   ![CodeLens：以圖形方式檢視程式碼變更記錄](./ide/media/codelens.png "CodeLens")
 
 - 輕鬆地查看上次變更程式碼的時間。
 
