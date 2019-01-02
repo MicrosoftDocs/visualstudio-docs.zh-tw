@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d441da0fd7a9342ef7b64f47374dc2ca61706db7
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
-ms.translationtype: HT
+ms.openlocfilehash: 13673e14ae7257dceba8638f24d6b2d5d222efd8
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53066414"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561443"
 ---
 # <a name="debugging-preparation-windows-forms-applications"></a>偵錯準備：Windows Forms 應用程式
 Windows Form 專案範本會建立 Windows Forms 應用程式。 在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中可以直接偵錯這種類型的應用程式。 如需詳細資訊，請參閱 <<c0> [ 建立 Windows 應用程式專案](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/42wc9kk5(v=vs.100))。  
@@ -63,7 +63,7 @@ Windows Form 專案範本會建立 Windows Forms 應用程式。 在 [!INCLUDE[v
   
 3. 按一下 [偵錯] 功能表上的 [開始]。  
   
-4. 使用所述的技巧進行偵錯[偵錯工具基本概念](../debugger/getting-started-with-the-debugger.md)。  
+4. 使用所述的技巧進行偵錯[第一次查看偵錯工具](../debugger/debugger-feature-tour.md)。  
   
 ## <a name="see-also"></a>請參閱  
  [偵錯 Managed 程式碼](../debugger/debugging-managed-code.md)   

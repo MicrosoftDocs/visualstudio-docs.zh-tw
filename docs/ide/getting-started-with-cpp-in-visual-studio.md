@@ -13,12 +13,12 @@ dev_langs:
 - CPP
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 406b3c24cf3c46b694afc8ab24c0ddca11b434ee
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: 182f020ee5ca8132eb19647fc9f24c834544ac2e
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53159993"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684349"
 ---
 # <a name="get-started-with-c-in-visual-studio"></a>Visual Studio 中的 C++ 使用者入門
 
@@ -156,5 +156,5 @@ Visual Studio 會使用「專案」來組織應用程式的程式碼，並使用
 ## <a name="see-also"></a>另請參閱
 
 - [使用 Visual Studio IDE 進行 C++ 桌面程式開發](/cpp/ide/using-the-visual-studio-ide-for-cpp-desktop-development)
-- [逐步解說：使用 C# 或 Visual Basic 建立簡單的應用程式](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)
+- [逐步解說：使用 C# 或 Visual Basic 建立簡單的應用程式](../get-started/csharp/tutorial-wpf.md)
 - [使用 Visual Studio 提高生產力的祕訣](../ide/productivity-tips-for-visual-studio.md)

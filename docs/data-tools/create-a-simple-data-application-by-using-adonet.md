@@ -13,12 +13,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 75043a1716cca0c727eb0530cd63ca715a60424b
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 1e82dd7fbae434ae129e90562aab91875bb4e28b
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53064868"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53740097"
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>使用 ADO.NET 建立簡單的資料應用程式
 
@@ -37,7 +37,7 @@ ms.locfileid: "53064868"
 
 -   SQL Server Express LocalDB。 如果您沒有 SQL Server Express LocalDB，您可以安裝從[SQL Server Express 下載頁面](https://www.microsoft.com/sql-server/sql-server-editions-express)。
 
-本主題假設您已熟悉使用 Visual Studio IDE 的基本功能和可以建立在 Windows Forms 應用程式，將表單加入專案中，將按鈕和其他控制項在表單上的設定屬性的控制項，以及編碼簡單事件。 如果您不熟悉這些工作，我們建議您先完成[開始使用視覺效果C#和 Visual Basic](../ide/getting-started-with-visual-csharp-and-visual-basic.md)再開始本逐步解說中的主題。
+本主題假設您已熟悉使用 Visual Studio IDE 的基本功能和可以建立在 Windows Forms 應用程式，將表單加入專案中，將按鈕和其他控制項在表單上的設定屬性的控制項，以及編碼簡單事件。 如果您不熟悉這些工作，我們建議您先完成[開始使用視覺效果C#和 Visual Basic](../ide/quickstart-visual-basic-console.md)再開始本逐步解說中的主題。
 
 ## <a name="set-up-the-sample-database"></a>設定範例資料庫
 

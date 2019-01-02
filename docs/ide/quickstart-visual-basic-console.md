@@ -14,12 +14,12 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 67a990b98b385cacab89bfa8270d8409f9e9aa5f
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: 9e93ea0c5f9d12b1a5a395b153bf3edbc5d26b9c
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53159603"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684463"
 ---
 # <a name="quickstart-create-your-first-console-app-in-visual-studio-with-visual-basic"></a>快速入門：使用 Visual Basic 在 Visual Studio 中建立您的第一個主控台應用程式
 
@@ -91,4 +91,4 @@ ms.locfileid: "53159603"
 恭喜您完成此快速入門！ 我們希望您更了解 Visual Basic 和 Visual Studio IDE。 若要深入了解，請繼續下列教學課程。
 
 > [!div class="nextstepaction"]
-> [Visual Studio 中的 Visual Basic 使用者入門](tutorial-visual-basic-console.md)
+> [Visual Studio 中的 Visual Basic 使用者入門](../get-started/visual-basic/tutorial-console.md)

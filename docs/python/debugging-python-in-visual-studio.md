@@ -12,12 +12,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 0e4cc2ff43b59fff0aac70d9cc13a0a00662e209
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 64eafbffcf453832dd2ba764ef3396cb7129be89
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53068431"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561745"
 ---
 # <a name="debug-your-python-code"></a>偵錯您的 Python 程式碼
 
@@ -84,7 +84,7 @@ Visual Studio 提供全面的 Python 偵錯體驗，包括附加至執行中處�
 
 ### <a name="inspect-and-modify-values"></a>檢查和修改值
 
-在偵錯工具中停止時，您可以檢查和修改變數的值。 您也可以使用 [監看式] 視窗來監視個別的變數及自訂運算式 (如需一般詳細資訊，請參閱[檢查變數](../debugger/getting-started-with-the-debugger.md#inspect-variables-with-the-autos-and-locals-windows))。
+在偵錯工具中停止時，您可以檢查和修改變數的值。 您也可以使用 [監看式] 視窗來監視個別的變數及自訂運算式 (如需一般詳細資訊，請參閱[檢查變數](../debugger/debugger-feature-tour.md#inspect-variables-with-the-autos-and-locals-windows))。
 
 若要使用 **DataTips** 檢視值，只要將滑鼠游標停在編輯器中任一變數的上方。 您可以按一下值來變更它︰
 

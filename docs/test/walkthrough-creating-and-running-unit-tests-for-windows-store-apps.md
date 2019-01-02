@@ -14,12 +14,12 @@ manager: douge
 ms.workload:
 - uwp
 author: gewarren
-ms.openlocfilehash: 66a107fbd738bc26fdf608223ff43f958754e3ae
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 87f7b724f2b7712e4318bc2bfbef4f06ee5ee9bb
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53065296"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53802481"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-uwp-apps"></a>逐步解說：建立並執行 UWP App 的單元測試
 
@@ -108,5 +108,5 @@ Visual Studio 包含進行通用 Windows 平台 (UWP) 應用程式單元測試�
 
 ## <a name="see-also"></a>另請參閱
 
-- [使用 Visual Studio 測試 UWP 應用程式](../test/testing-store-apps-with-visual-studio.md)
+- [使用 Visual Studio 測試 UWP 應用程式](../test/unit-test-your-code.md)
 - [建置並測試 UWP 應用程式](/azure/devops/pipelines/apps/windows/universal?tabs=vsts)

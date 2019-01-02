@@ -26,12 +26,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2702eb38e895f5fa9021fae754ae1e4a9325cf18
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
-ms.translationtype: HT
+ms.openlocfilehash: ec90c7f797c8b25337a23a12321352ff487a12ca
+ms.sourcegitcommit: 6efb9378a82924cb133912d207c6da4bd5a0b9c2
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53066778"
+ms.lasthandoff: 12/15/2018
+ms.locfileid: "53443921"
 ---
 # <a name="view-dlls-and-executables-in-the-modules-window-c-c-visual-basic-f"></a>在 [模組] 視窗中檢視的 Dll 和可執行檔 (C#，c + +、 Visual Basic 中， F#)
  
@@ -42,7 +42,7 @@ Visual Studio 偵錯時，**模組** 視窗列出和顯示的 Dll 和可執行�
   
 ## <a name="use-the-modules-window"></a>使用模組視窗
 
-若要偵錯時，請開啟 [模組] 視窗中，選取**偵錯** > **Windows** > **模組**。 
+若要偵錯時，請開啟 [模組] 視窗中，選取**偵錯** > **Windows** > **模組**(或按**Ctrl + Alt + U**). 
   
 根據預設，[模組] 視窗會依載入順序來排序模組。 若要排序視窗中的任何資料行，請選取頂端的資料行的標頭。  
   

@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 051f5ad7783271c2b0eea26bc3af5c0980f2c1fc
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: f16f9356f40aade9f0de3ade8f74606ce89be12e
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53068298"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53802575"
 ---
 # <a name="how-to-create-a-diagnostic-data-adapter"></a>HOW TO：建立診斷資料配接器
 
@@ -48,7 +48,7 @@ ms.locfileid: "53068298"
 
 使用下列程序建立診斷資料配接器，以收集根據您在建立測試設定時所設定之資訊的資料檔案。
 
-如需診斷資料配接器專案的完整範例 (包括自訂組態編輯器)，請參閱[建立診斷資料配接器的專案範例](../test/sample-project-for-creating-a-diagnostic-data-adapter.md)。
+如需診斷資料配接器專案的完整範例 (包括自訂組態編輯器)，請參閱[建立診斷資料配接器的專案範例](../test/quickstart-create-a-load-test-project.md)。
 
 ##  <a name="create-and-install-a-diagnostic-data-adapter"></a>建立和安裝診斷資料配接器
 
@@ -224,7 +224,7 @@ ms.locfileid: "53068298"
 
      這些檔案會附加至測試結果。 如果從這些測試結果建立 Bug，或當您使用[!INCLUDE[mtrlong](../test/includes/mtrlong_md.md)]時，檔案也會附加至 Bug。
 
-     如果您想要使用自有編輯器來收集要在測試設定中使用的資料，請參閱[如何：為診斷資料配接器建立資料的自訂編輯器](../test/how-to-create-a-custom-editor-for-data-for-your-diagnostic-data-adapter.md)。
+     如果您想要使用自有編輯器來收集要在測試設定中使用的資料，請參閱[如何：為診斷資料配接器建立資料的自訂編輯器](../test/quickstart-create-a-load-test-project.md)。
 
 11. 若要在測試完成時根據使用者在測試設定中進行的設定收集記錄檔，您必須建立 *App.config* 檔並且將它加入方案中。 此檔案的格式如下所示，而且必須包含 URI，診斷資料配接器才能識別該檔案。 請將 "Company/ProductName/Version" 替換為實際值。
 
@@ -261,11 +261,11 @@ ms.locfileid: "53068298"
 
      如需詳細資訊，了解如何進行測試設定以在執行測試時使用環境，請參閱[在手動測試中收集診斷資料 (Azure Test Plans)](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)。
 
-     如需安裝組態檔的詳細資訊，請參閱[如何：安裝自訂診斷資料配接器](../test/how-to-install-a-custom-diagnostic-data-adapter.md)
+     如需安裝組態檔的詳細資訊，請參閱[如何：安裝自訂診斷資料配接器](../test/quickstart-create-a-load-test-project.md)
 
 12. 建置方案以建立您的診斷資料配接器組件。
 
-13. 如需安裝自訂編輯器的詳細資訊，請參閱[如何：安裝自訂診斷資料配接器](../test/how-to-install-a-custom-diagnostic-data-adapter.md)。
+13. 如需安裝自訂編輯器的詳細資訊，請參閱[如何：安裝自訂診斷資料配接器](../test/quickstart-create-a-load-test-project.md)。
 
 14. 如需詳細資訊，了解如何進行測試設定以在執行測試時使用環境，請參閱[在手動測試中收集診斷資料 (Azure Test Plans)](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)。
 
@@ -289,4 +289,4 @@ ms.locfileid: "53068298"
 - [使用測試設定收集診斷資訊](../test/collect-diagnostic-information-using-test-settings.md)
 - [在手動測試中收集診斷資料 (Azure Test Plans)](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)
 - [在測試時收集診斷資料 (Azure Test Plans)](/azure/devops/test/collect-diagnostic-data?view=vsts)
-- [如何：為診斷資料配接器建立資料的自訂編輯器](../test/how-to-create-a-custom-editor-for-data-for-your-diagnostic-data-adapter.md)
+- [如何：為診斷資料配接器建立資料的自訂編輯器](../test/quickstart-create-a-load-test-project.md)

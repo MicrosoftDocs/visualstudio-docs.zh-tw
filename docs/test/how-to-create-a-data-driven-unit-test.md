@@ -16,12 +16,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 4806003d7a533e2f3e9523f877f6e002e8d15b5b
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: d7c8e24505fb237fb35efd195ee1c8d17a4d8645
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53067446"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53739065"
 ---
 # <a name="how-to-create-a-data-driven-unit-test"></a>如何：建立資料驅動型單元測試
 
@@ -169,4 +169,4 @@ int x = Convert.ToInt32(TestContext.DataRow["FirstNumber"]);
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert?displayProperty=fullName>
 - [對程式碼進行單元測試](../test/unit-test-your-code.md)
 - [使用測試總管執行單元測試](../test/run-unit-tests-with-test-explorer.md)
-- [使用適用於受控程式碼的 Microsoft 單元測試架構撰寫適用於 .NET Framework 的單元測試](../test/writing-unit-tests-for-the-dotnet-framework-with-the-microsoft-unit-test-framework-for-managed-code.md)
+- [使用適用於受控程式碼的 Microsoft 單元測試架構撰寫適用於 .NET Framework 的單元測試](../test/unit-test-your-code.md)

@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c490d15f27801dff6bb09f6356ad7c665b09c558
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: c06c77d2bc5a291b4dd2d624352a25abd29338b7
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53160188"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53740389"
 ---
 # <a name="what39s-new-in-visual-studio-2017"></a>Visual Studio 2017 的新功能
 
@@ -223,7 +223,7 @@ Visual Studio 正在移動其擴充功能 (同時也在處理協力廠商擴充�
 
 ![Visual Studio 中新的例外狀況協助程式對話方塊](../debugger/media/intellitrace-step-back-icons-description.png  "[逐步返回] 和 [逐步前進] 按鈕")
 
-如需詳細資訊，請參閱[使用 IntelliTrace 回溯檢視快照集](../debugger/how-to-use-intellitrace-step-back.md)頁面。
+如需詳細資訊，請參閱[使用 IntelliTrace 回溯檢視快照集](../debugger/view-historical-application-state.md)頁面。
 
 ### <a name="containerization"></a>容器化
 
@@ -278,7 +278,7 @@ Visual Studio 正在移動其擴充功能 (同時也在處理協力廠商擴充�
 
 熟悉 C#、.NET 和 Visual Studio 的開發人員可以使用 Xamarin 來提供原生 Android、iOS 和 Windows 應用程式，以作為「.NET 的行動開發」工作負載的一部分。 開發人員在使用 Xamarin 開發行動應用程式時，可以不需要了解 Objective-C 或 Java 等機器碼語言，也能享有相同的功能和生產力，包括在 Android、iOS 和 Windows 裝置上進行遠端偵錯。
 
-如需詳細資訊，請參閱 [Visual Studio 和 Xamarin](../cross-platform/visual-studio-and-xamarin.md) 頁面。
+如需詳細資訊，請參閱 [Visual Studio 和 Xamarin](/xamarin/) 頁面。
 
 ### <a name="entitlements-editor"></a>權利編輯器
 
@@ -366,7 +366,7 @@ Visual Studio 正在移動其擴充功能 (同時也在處理協力廠商擴充�
 我們對 Visual Studio 2017 的更新通常附帶可大幅改善您開發體驗的新功能。 以下提供最值得您注意的更新回顧，目前處於實驗性預覽：
 
 * **[Live Share](https://visualstudio.microsoft.com/services/live-share/)**：這項新工具可讓您與組員共用程式碼庫和其中的內容，並直接從 Visual Stuido 中進行即時雙向共同作業。 組員可透過 Live Share 來閱讀、瀏覽、編輯和偵錯您與其共用的專案，過程相當自然且安全。<br><br>如需詳細資訊，請參閱 [Live Share 常見問題集](/visualstudio/liveshare/faq)。<br><br>
-* **[IntelliCode](https://visualstudio.microsoft.com/services/intellicode/)**：這項新功能使用了 AI 帶來更棒的內容感知程式碼完成以改善軟體開發，可引導開發人員遵循其小組的模式與風格進行編碼、找出難以發現的程式碼問題，並將程式碼檢閱聚焦於真正重要之處。 <br><br>如需詳細資訊，請參閱 [IntelliCode 常見問題集](../ide/not-in-toc/intellicode-faq.md)。
+* **[IntelliCode](https://visualstudio.microsoft.com/services/intellicode/)**：這項新功能使用了 AI 帶來更棒的內容感知程式碼完成以改善軟體開發，可引導開發人員遵循其小組的模式與風格進行編碼、找出難以發現的程式碼問題，並將程式碼檢閱聚焦於真正重要之處。 <br><br>如需詳細資訊，請參閱 [IntelliCode 常見問題集](/visualstudio/intellicode/faq)。
 
 想深入了解 Visual Studio 2017 中還包含哪些內容嗎？ 請參閱 [Visual Studio 路程圖](/visualstudio/productinfo/vs2018-roadmap)頁面。
 
