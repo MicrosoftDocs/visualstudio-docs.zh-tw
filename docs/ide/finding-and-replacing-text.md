@@ -12,7 +12,6 @@ f1_keywords:
 - findresultswindow
 - vs.findreplace.quickreplace
 - vs.findsymbol
-- vs.findinfiles
 - vs.findresults1
 - vs,findsymbolwindow
 - vs.findreplace.quickfind
@@ -33,12 +32,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6120d1ece56e24712fd1217090159ec627f88d61
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 03e6ebe4997151d679d34376beafa415aeeeb85e
+ms.sourcegitcommit: c7b16358a5d6f7ea1dd2f70a6ac2a8266efa9c15
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349097"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "53425795"
 ---
 # <a name="find-and-replace-text"></a>尋找和取代文字
 
