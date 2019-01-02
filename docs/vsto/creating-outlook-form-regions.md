@@ -14,17 +14,17 @@ helpviewer_keywords:
 - form regions [Office development in Visual Studio]
 - form regions [Office development in Visual Studio], creating
 - Outlook [Office development in Visual Studio], form regions
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d5d4aed381841d5f88209aefdcff641a2a821f01
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 77dcdecc766b253eb0cafb808bec8cb48294d6fa
+ms.sourcegitcommit: a715de2ba8c703f37aa2102567b1aa2c0f05a117
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50673077"
+ms.lasthandoff: 12/15/2018
+ms.locfileid: "53441726"
 ---
 # <a name="create-outlook-form-regions"></a>建立 Outlook 表單區域
   您可以使用表單區域自訂 Microsoft Office Outlook 表單。 Visual Studio 提供進階的工具，可讓您更方便地設計、開發和偵錯表單區域。  
@@ -79,7 +79,7 @@ ms.locfileid: "50673077"
 |Replacement|加入表單區域，做為取代 Outlook 表單預設頁面的新頁面。|  
 |全部取代|以表單區域取代整個 Outlook 表單。|  
   
- 您也可以使用此精靈指定顯示條件以及選取要擴充的表單類型。 如需詳細資訊，請參閱 <<c0> [ 如何： 在 Outlook 增益集專案中加入表單區域](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)。  
+ 您也可以使用此精靈指定顯示條件以及選取要擴充的表單類型。 如需詳細資訊，請參閱[＜How to：將表單區域加入 Outlook 增益集專案](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)。  
   
  您在精靈中所做的選擇會影響其他精靈頁面中提供的選項。 比方說，如果您選取**相鄰 （adjoining)** 或是**個別**中**建立新的 Outlook 表單區域**頁面上，則**標題**和**描述**欄位會在無法使用**提供描述文字和選取顯示設定**頁面。 這是因為 Outlook 顯示相鄰或獨立表單區域時不會使用這些欄位。  
   
@@ -107,7 +107,7 @@ ms.locfileid: "50673077"
 ###  <a name="AddingExistingFormRegion"></a> 將現有的表單區域加入至專案  
  如果在其他 Outlook 專案中有您使用的 Outlook 表單區域，則可使用 [加入現有項目]  對話方塊在目前的 Outlook VSTO 增益集專案中重複使用該表單區域。  
   
- 現有的表單區域必須擁有程式碼檔案 (*.vb*或 *.cs*); 您無法新增 Outlook 表單儲存區 (*.ofs*) 所使用的檔案**加入現有項目**  對話方塊。 不過，您可以藉由匯入 Outlook 表單儲存區檔案建立新的表單區域。 如需詳細資訊，請參閱 <<c0> [ 如何： 在 Outlook 增益集專案中加入表單區域](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)。  
+ 現有的表單區域必須擁有程式碼檔案 (*.vb*或 *.cs*); 您無法新增 Outlook 表單儲存區 (*.ofs*) 所使用的檔案**加入現有項目**  對話方塊。 不過，您可以藉由匯入 Outlook 表單儲存區檔案建立新的表單區域。 如需詳細資訊，請參閱[＜How to：將表單區域加入 Outlook 增益集專案](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)。  
   
 ##  <a name="UsingFormRegionDesigner"></a> 使用表單區域設計工具  
  [表單區域設計工具] 可協助您設計表單區域的配置和外觀。 您可以將 managed 的控制項拖曳至設計工具的介面、 按兩下控制項開啟事件處理常式，和在 設定屬性**屬性**視窗。  
@@ -136,7 +136,7 @@ ms.locfileid: "50673077"
   
  若要在 Visual Basic 專案中處理事件，請從 [程式碼編輯器] 頂端的方法名稱清單選取事件。  
   
- 若要在 C# 專案中處理事件，請在 <xref:Microsoft.Office.Tools.Outlook.FormRegionControl.FormRegionShowing> 方法中訂閱控制項事件。 如需詳細資訊，請參閱 <<c0> [ 如何： 訂閱及取消訂閱事件&#40;C&#35;程式設計指南&#41;](/dotnet/csharp/programming-guide/events/how-to-subscribe-to-and-unsubscribe-from-events)。</c0>  
+ 若要在 C# 專案中處理事件，請在 <xref:Microsoft.Office.Tools.Outlook.FormRegionControl.FormRegionShowing> 方法中訂閱控制項事件。 如需詳細資訊，請參閱[＜How to：訂閱及取消訂閱事件&#40;C&#35;程式設計指南&#41;](/dotnet/csharp/programming-guide/events/how-to-subscribe-to-and-unsubscribe-from-events)。  
   
  您可以在表單區域 Factory 類別的 `InitializeManifest` 方法中變更表單區域屬性。  
   
@@ -156,7 +156,7 @@ ms.locfileid: "50673077"
   
 |Event - 事件|描述|  
 |-----------|-----------------|  
-|FormRegionInitializing|在表單區域初始化之前發生。 您可以檢查這個事件處理常式中的條件，以決定 Outlook 是否應顯示表單區域。 如需詳細資訊，請參閱 <<c0> [ 如何： 防止 Outlook 顯示表單區域](../vsto/how-to-prevent-outlook-from-displaying-a-form-region.md)。|  
+|FormRegionInitializing|在表單區域初始化之前發生。 您可以檢查這個事件處理常式中的條件，以決定 Outlook 是否應顯示表單區域。 如需詳細資訊，請參閱[＜How to：防止 Outlook 顯示表單區域](../vsto/how-to-prevent-outlook-from-displaying-a-form-region.md)。|  
 |FormRegionShowing|發生於建立表單區域的執行個體之後，但在表單區域顯示之前。|  
 |FormRegionClosed|發生於關閉表單區域之前。|  
   
@@ -182,12 +182,12 @@ ms.locfileid: "50673077"
 |標題|描述|  
 |-----------|-----------------|  
 |[指導方針建立 Outlook 表單區域](../vsto/guidelines-for-creating-outlook-form-regions.md)|提供資訊來協助您最佳化表單區域及避免發生可能的問題。|  
-|[如何： 在 Outlook 增益集專案中加入表單區域](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)|示範如何建立表單區域，以擴充標準或自訂 Microsoft Office Outlook 表單使用**新的 Outlook 表單區域**精靈。|  
+|[如何：將表單區域加入 Outlook 增益集專案](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)|示範如何建立表單區域，以擴充標準或自訂 Microsoft Office Outlook 表單使用**新的 Outlook 表單區域**精靈。|  
 |[Outlook 訊息類別相關聯的表單區域](../vsto/associating-a-form-region-with-an-outlook-message-class.md)|說明如何藉由將表單區域和每個 Microsoft Office Outlook 項目的訊息類別產生關聯，指定要顯示表單區域的 Microsoft Office Outlook 項目。|  
-|[逐步解說： 設計 Outlook 表單區域](../vsto/walkthrough-designing-an-outlook-form-region.md)|示範如何設計自訂表單區域，該表單區域會在連絡人項目的 [檢查] 視窗中顯示為新頁面。|  
-|[逐步解說： 匯入在 Outlook 中設計表單區域](../vsto/walkthrough-importing-a-form-region-that-is-designed-in-outlook.md)|示範如何設計在 Microsoft Office Outlook 表單區域，並接著使用匯入表單區域至 Outlook VSTO 增益集專案**新的 Outlook 表單區域**精靈。|  
+|[逐步解說：設計 Outlook 表單區域](../vsto/walkthrough-designing-an-outlook-form-region.md)|示範如何設計自訂表單區域，該表單區域會在連絡人項目的 [檢查] 視窗中顯示為新頁面。|  
+|[逐步解說：匯入在 Outlook 中設計的表單區域](../vsto/walkthrough-importing-a-form-region-that-is-designed-in-outlook.md)|示範如何設計在 Microsoft Office Outlook 表單區域，並接著使用匯入表單區域至 Outlook VSTO 增益集專案**新的 Outlook 表單區域**精靈。|  
 |[存取表單區域在執行階段](../vsto/accessing-a-form-region-at-run-time.md)|描述如何撰寫程式碼以顯示、隱藏或修改表單區域上的控制項，以及如何使用 `Globals` 類別讓使用者從您專案的其他區域執行程式碼。|  
-|[如何： 防止 Outlook 顯示表單區域](../vsto/how-to-prevent-outlook-from-displaying-a-form-region.md)|示範如何防止 Microsoft Office Outlook 針對特定項目顯示表單區域。|  
+|[如何：防止 Outlook 顯示表單區域](../vsto/how-to-prevent-outlook-from-displaying-a-form-region.md)|示範如何防止 Microsoft Office Outlook 針對特定項目顯示表單區域。|  
 |示範如何存取顯示表單區域的 Outlook 項目。|  
 |[Outlook 表單區域中的自訂動作](../vsto/custom-actions-in-outlook-form-regions.md)|描述如何讓使用者回應 Outlook 項目。|  
   

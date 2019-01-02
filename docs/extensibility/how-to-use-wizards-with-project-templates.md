@@ -1,9 +1,7 @@
 ---
-title: 如何： 搭配專案範本使用精靈 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：搭配專案範本使用精靈
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - project templates [Visual Studio], wizards
@@ -17,29 +15,31 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 76bcd13fcee2f8b0bda775cc3ae241d7a363658e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 57a24f8c7b01a0c6df3803e95c49d1eb34ca1fe1
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49928440"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53562369"
 ---
-# <a name="how-to-use-wizards-with-project-templates"></a>如何： 搭配專案範本使用精靈
+# <a name="how-to-use-wizards-with-project-templates"></a>HOW TO：使用精靈與專案範本
+
 Visual Studio 提供<xref:Microsoft.VisualStudio.TemplateWizard.IWizard>介面，這個介面實作時，可讓您執行自訂程式碼，當使用者從範本建立專案。  
   
- 專案範本自訂可用來顯示專案中收集使用者輸入，以自訂範本、 將其他檔案新增至範本，或是允許的任何其他動作的自訂 UI。  
+專案範本自訂可用來顯示專案中收集使用者輸入，以自訂範本、 將其他檔案新增至範本，或是允許的任何其他動作的自訂 UI。  
   
- <xref:Microsoft.VisualStudio.TemplateWizard.IWizard>在專案建立時，只要使用者按一下啟動不同時間呼叫介面方法**確定**上**新專案** 對話方塊。 介面的每個方法稱為來描述處呼叫它的點。 例如，Visual Studio 會呼叫<xref:Microsoft.VisualStudio.TemplateWizard.IWizard.RunStarted%2A>立即開始建立專案時，使得撰寫自訂程式碼，來收集使用者輸入的理想位置。  
+<xref:Microsoft.VisualStudio.TemplateWizard.IWizard>在專案建立時，只要使用者按一下啟動不同時間呼叫介面方法**確定**上**新專案** 對話方塊。 介面的每個方法稱為來描述處呼叫它的點。 例如，Visual Studio 會呼叫<xref:Microsoft.VisualStudio.TemplateWizard.IWizard.RunStarted%2A>立即開始建立專案時，使得撰寫自訂程式碼，來收集使用者輸入的理想位置。  
   
 ## <a name="create-a-project-template-project-with-a-vsix-project"></a>使用 VSIX 專案建立專案範本專案  
- 您開始建立自訂的範本與專案範本的專案，這是 Visual Studio SDK 的一部分。 在此程序中，我們將使用 C# 專案範本的專案，但也是 Visual Basic 專案範本專案。 然後您加入 VSIX 專案包含專案範本專案的方案。  
+
+您開始建立自訂範本專案範本專案時，這是 Visual Studio SDK 的一部分。 此程序中，我們將使用C#專案範本專案，但是另外還有 Visual Basic 專案範本專案。 然後您加入 VSIX 專案包含專案範本專案的方案。  
   
 1. 建立 C# 專案範本的專案 (在 Visual Studio 中，**檔案** > **新增** > **專案** > **Visual C#**  > **擴充性** > **C# 專案範本**)。 命名**MyProjectTemplate**。  
   
    > [!NOTE]
-   >  系統可能會要求您安裝 Visual Studio SDK。 如需詳細資訊，請參閱 <<c0> [ 安裝 Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md)。  
+   > 系統可能會要求您安裝 Visual Studio SDK。 如需詳細資訊，請參閱 <<c0> [ 安裝 Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md)。  
   
-2. 加入新的 VSIX 專案 (**檔案** > **新增** > <strong>專案 > * * Visual C#</strong>   > <strong>擴充性> * * VSIX 專案</strong>) 相同的方案與專案範本專案中 (在**方案總管**，選取方案節點、 按一下滑鼠右鍵，然後選取**新增** > **新的專案**)。 它命名為**MyProjectWizard。**  
+2. 加入新的 VSIX 專案 (**檔案** > **新增** > **專案** > **Visual C#**  > **擴充性** > **VSIX 專案**) 相同的方案與專案範本專案中 (在**方案總管 中**，選取方案節點、 按一下滑鼠右鍵，然後選取**新增** > **新專案**)。 它命名為**MyProjectWizard。**  
   
 3. 將 VSIX 專案設定為啟始專案。 在 **方案總管**，選取 VSIX 專案節點、 按一下滑鼠右鍵，然後選取**設定為啟始專案**。  
   
@@ -51,14 +51,15 @@ Visual Studio 提供<xref:Microsoft.VisualStudio.TemplateWizard.IWizard>介面�
   
 7. 建置方案並開始偵錯。 Visual Studio 的第二個執行個體隨即出現。 （這可能需要幾分鐘的時間）。  
   
-8. 在 Visual Studio 的第二個執行個體，嘗試使用新的範本建立新的專案。 (**檔案** > **新** > **專案 > Visual C#** > **MyProject 範本**)。 使用名為類別的新的專案應該會出現**Class1**。 您現在已建立自訂專案範本 ！ 現在停止偵錯。  
+8. 在 Visual Studio 的第二個執行個體，再嘗試使用新的範本建立新的專案 (**檔案** > **新增** > **專案 > Visual C#**  >  **MyProject 範本**)。 使用名為類別的新的專案應該會出現**Class1**。 您現在已建立自訂專案範本 ！ 現在停止偵錯。  
   
 ## <a name="create-a-custom-template-wizard"></a>建立自訂範本精靈  
- 本主題說明如何建立自訂精靈建立專案之前開啟 Windows 表單。 表單可讓使用者加入自訂參數值在專案建立期間新增至原始程式碼。  
+
+此程序示範如何建立自訂精靈建立專案之前開啟 Windows 表單。 表單可讓使用者加入自訂參數值在專案建立期間新增至原始程式碼。  
   
 1. 設定 VSIX 專案，以允許它建立組件。  
   
-2. 在 [**方案總管] 中**，選取 [VSIX 專案] 節點。 下面 [方案總管] 中，您應該看到**屬性**視窗。 如果您不這樣做，請選取**檢視** > **屬性 視窗**，或按**F4**。 在 **屬性**視窗中，選取下列欄位加入`true`:  
+2. 在 [**方案總管] 中**，選取 [VSIX 專案] 節點。 下面**方案總管**，您應該會看到**屬性**視窗。 如果您不這樣做，請選取**檢視** > **屬性 視窗**，或按**F4**。 在 **屬性**視窗中，選取下列欄位加入`true`:  
   
    -   **IncludeAssemblyInVSIXContainer**  
   
@@ -68,7 +69,7 @@ Visual Studio 提供<xref:Microsoft.VisualStudio.TemplateWizard.IWizard>介面�
   
 3. 做為資產中加入 VSIX 專案的組件。 開啟*source.extension.vsixmanifest*檔案，然後選取**資產** 索引標籤。中**加入新資產** 視窗中，如**型別**選取**Microsoft.VisualStudio.Assembly**，如**來源**選取**的目前方案中的專案**，並針對**專案**選取**MyProjectWizard**。  
   
-4. 將下列參考加入 VSIX 專案。 (在**方案總管**，在 VSIX 專案節點，選取**參考**，按一下滑鼠右鍵，然後選取**加入參考**。)在 **加入參考**對話方塊，請在**Framework**索引標籤上，尋找**System.Windows 表單**組件並加以選取。 現在，選取**延伸模組** 索引標籤尋找**EnvDTE**組件並加以選取。 也會發現**Microsoft.VisualStudio.TemplateWizardInterface**組件並加以選取。 按一下 [確定 **Deploying Office Solutions**]。  
+4. 將下列參考加入 VSIX 專案。 (在**方案總管**，VSIX 專案節點下，選取**參考**，按一下滑鼠右鍵，然後選取**加入參考**。)在 **加入參考**對話方塊，請在**Framework**索引標籤上，尋找**System.Windows 表單**組件並加以選取。 現在，選取**延伸模組** 索引標籤。尋找**EnvDTE**組件並加以選取。 也會發現**Microsoft.VisualStudio.TemplateWizardInterface**組件並加以選取。 按一下 [確定 **Deploying Office Solutions**]。  
   
 5. 加入 VSIX 專案的精靈實作的類別。 (在**方案總管**，以滑鼠右鍵按一下 VSIX 專案節點，然後選取**新增**，然後**新項目**，然後**類別**。)將類別命名為**WizardImplementation**。  
   
@@ -157,7 +158,7 @@ Visual Studio 提供<xref:Microsoft.VisualStudio.TemplateWizard.IWizard>介面�
   
    - <xref:System.Object> Visual studio 包含一組參數的陣列傳遞給精靈。  
   
-     這個範例會從使用者輸入表單，以加入的參數值<xref:System.Collections.Generic.Dictionary%602>參數。 每個執行個體`$custommessage$`專案中的參數將會取代使用者所輸入的文字。 您必須將下列組件加入至專案：**系統**並**System.Drawing**。
+     這個範例會從使用者輸入表單，以加入的參數值<xref:System.Collections.Generic.Dictionary%602>參數。 每個執行個體`$custommessage$`專案中的參數將會取代使用者所輸入的文字。 您必須在您的專案中新增下列組件：**系統**並**System.Drawing**。
   
 7. 現在，建立**UserInputForm**。 在  *WizardImplementation.cs*檔案中，新增下列程式碼結尾之後`WizardImplementation`類別。  
   
@@ -205,7 +206,8 @@ Visual Studio 提供<xref:Microsoft.VisualStudio.TemplateWizard.IWizard>介面�
     使用者輸入的表單提供一個簡單的表單輸入的自訂參數。 此表單包含名為文字方塊`textBox1`和名為按鈕`button1`。 當按一下按鈕時，從文字方塊中的文字會儲存在`customMessage`參數。  
   
 ## <a name="connect-the-wizard-to-the-custom-template"></a>連接至自訂範本的精靈  
- 為了讓您自訂專案範本，若要使用您自訂的精靈，您需要登入精靈 的組件，並將一些行新增至您的自訂專案範本，讓它知道哪裡可以找到精靈的實作，建立新的專案時。  
+
+為了讓您自訂專案範本，若要使用您自訂的精靈，您需要登入精靈 的組件，並將一些行新增至您的自訂專案範本，讓它知道哪裡可以找到精靈的實作，建立新的專案時。  
   
 1. 簽署組件。 在 **方案總管**，選取 VSIX 專案、 按一下滑鼠右鍵，然後選取**專案屬性**。  
   
@@ -259,7 +261,8 @@ Visual Studio 提供<xref:Microsoft.VisualStudio.TemplateWizard.IWizard>介面�
 13. 儲存在專案中的所有檔案，並重建。  
   
 ## <a name="add-the-custom-parameter-to-the-template"></a>將自訂參數新增至範本  
- 在此範例中，做為範本的專案會顯示自訂精靈的使用者輸入表單中指定的訊息。  
+
+在此範例中，做為範本的專案會顯示自訂精靈的使用者輸入表單中指定的訊息。  
   
 1. 在 **方案總管**，請移至**MyProjectTemplate**專案，然後開啟*Class1.cs*。  
   
@@ -271,7 +274,7 @@ Visual Studio 提供<xref:Microsoft.VisualStudio.TemplateWizard.IWizard>介面�
   
     參數`$custommessage$`會取代從範本建立專案時，使用者輸入表單中輸入的文字。  
   
-   以下是完整的程式碼檔案，才能匯出成範本。  
+以下是完整的程式碼檔案，才能匯出成範本。  
   
 ```csharp  
 using System;  
@@ -292,7 +295,8 @@ namespace $safeprojectname$
 ```  
   
 ## <a name="use-the-custom-wizard"></a>使用自訂的精靈  
- 現在您可以從您的範本建立專案，並使用自訂的精靈。  
+
+現在您可以從您的範本建立專案，並使用自訂的精靈。  
   
 1.  重建方案，並開始偵錯。 Visual Studio 的第二個執行個體應該會出現。  
   
@@ -312,7 +316,7 @@ namespace $safeprojectname$
   
 ## <a name="see-also"></a>另請參閱  
 
-<xref:Microsoft.VisualStudio.TemplateWizard.IWizard>   
-[自訂範本](../ide/customizing-project-and-item-templates.md)  
-[WizardExtension 項目 （Visual Studio 範本）](../extensibility/wizardextension-element-visual-studio-templates.md)  
-[Visual Studio 範本中的 NuGet 套件](/nuget/visual-studio-extensibility/visual-studio-templates)
+- <xref:Microsoft.VisualStudio.TemplateWizard.IWizard>   
+- [自訂範本](../ide/customizing-project-and-item-templates.md)  
+- [WizardExtension 項目 （Visual Studio 範本）](../extensibility/wizardextension-element-visual-studio-templates.md)  
+- [Visual Studio 範本中的 NuGet 套件](/nuget/visual-studio-extensibility/visual-studio-templates)

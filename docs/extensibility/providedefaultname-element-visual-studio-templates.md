@@ -2,9 +2,8 @@
 title: ProvideDefaultName 項目 （Visual Studio 範本） |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#ProvideDefaultName
 helpviewer_keywords:
@@ -15,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a187df0e50a2948ab6f1ef3a0fffea651dca23b9
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 684eff17bbc655736c9913b43c717b636f4393b8
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39636008"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561651"
 ---
 # <a name="providedefaultname-element-visual-studio-templates"></a>ProvideDefaultName 項目 （Visual Studio 範本）
 指定是否[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]專案系統會產生的範本中的預設名稱**加入新項目**或是**新專案** 對話方塊。  

@@ -1,10 +1,9 @@
 ---
-title: TemplateGroupID 項目 （Visual Studio 範本） |Microsoft 文件
+title: TemplateGroupID 項目 （Visual Studio 範本） |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#TemplateGroupID
 helpviewer_keywords:
@@ -16,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 91631975d48f6e7e13646c428cdd5b5473bbeed2
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 68e89b0211c64dcee61507afc15c50bd8e5e85d2
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31144433"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53560647"
 ---
 # <a name="templategroupid-element-visual-studio-templates"></a>TemplateGroupID 項目 (Visual Studio 範本)
-指定要顯示哪一種專案項目範本。 這個項目時，重要[ShowByDefault （Visual Studio 範本）](../extensibility/showbydefault-visual-studio-templates.md)設`false`。 當[ShowByDefault （Visual Studio 範本）](../extensibility/showbydefault-visual-studio-templates.md)設`true`，則是所有專案類型中可用的項目範本。  
+指定要顯示哪一種專案項目範本。 這個項目時，重要[ShowByDefault （Visual Studio 範本）](../extensibility/showbydefault-visual-studio-templates.md)設定為`false`。 當[ShowByDefault （Visual Studio 範本）](../extensibility/showbydefault-visual-studio-templates.md)設定為`true`，則項目範本會提供在所有專案類型。  
   
  \<VSTemplate >  
  \<TemplateData >  
@@ -42,7 +41,7 @@ ms.locfileid: "31144433"
 ### <a name="attributes"></a>屬性  
  無。  
   
-### <a name="child-elements"></a>子項目  
+### <a name="child-elements"></a>子元素  
  無。  
   
 ### <a name="parent-elements"></a>父項目  
@@ -59,7 +58,7 @@ ms.locfileid: "31144433"
 ## <a name="remarks"></a>備註  
  `TemplateGroupID` 是元素。  
   
- 值`TemplateGroupID`搭配專案系統登錄項目 (HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<版本號碼 >* \Projects\\)篩選的範本中出現的**加入新項目** 對話方塊。  
+ 值`TemplateGroupID`項目搭配專案系統登錄 (hkey_local_machine\software\microsoft\visualstudio \\\*\<版本號碼 >* \Projects\\)會出現在篩選器範本**加入新項目** 對話方塊。  
   
 |Visual C++ 值|意義|  
 |------------------------|-------------|  

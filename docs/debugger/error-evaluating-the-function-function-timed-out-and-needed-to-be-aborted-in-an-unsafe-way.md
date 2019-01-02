@@ -1,5 +1,5 @@
 ---
-title: 錯誤： 評估函式&#39;函式&#39;逾時，需要以不安全的方式中止 |Microsoft Docs
+title: 錯誤：評估函式&#39;函式&#39;逾時，需要以不安全的方式中止 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.topic: troubleshooting
@@ -11,16 +11,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1f36e56b2870d5f099a3b8ed95265fe7e2d688ff
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 459ece9551ce8bd64703db139f8024ece4953cfa
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49934440"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648544"
 ---
-# <a name="error-evaluating-the-function-39function39-timed-out-and-needed-to-be-aborted-in-an-unsafe-way"></a>錯誤： 評估函式&#39;函式&#39;已逾時及所需的不安全的方法中止
+# <a name="error-evaluating-the-function-39function39-timed-out-and-needed-to-be-aborted-in-an-unsafe-way"></a>錯誤：評估函式&#39;函式&#39;已逾時及所需的不安全的方法中止
 
-完整訊息文字： 評估函式 'function' 已逾時及所需的不安全的方法中止。 這可能已損毀目標處理序。 
+完整訊息文字：評估 'function' 函式逾時，且需以不安全的方法中止 這可能已損毀目標處理序。 
 
 若要讓您更輕鬆地檢查.NET 物件的狀態，偵錯工具會自動強制執行額外的程式碼 （通常是屬性 getter 方法和 ToString 函式） 偵錯的處理序。 在大部分的所有情況下，這些函式會快速完成，並進行偵錯更容易。 不過，偵錯工具不會在沙箱中執行應用程式。 如此一來，屬性 getter 或停止回應的原生函式所呼叫的 ToString 方法可能會導致長的逾時，可能無法復原。 如果您遇到此錯誤訊息發生這種情況。
  
@@ -28,9 +28,9 @@ ms.locfileid: "49934440"
  
 ## <a name="to-correct-this-error"></a>更正這個錯誤
  
-有三個可能的解決方案，此問題。
+有數個可能的解決方案，此問題。
  
-### <a name="solution-1-prevent-the-debugger-from-calling-the-getter-property-or-tostring-method"></a>解決方案 1： 可防止偵錯工具呼叫 ToString 方法的 getter 屬性
+### <a name="solution-1-prevent-the-debugger-from-calling-the-getter-property-or-tostring-method"></a>解決方案 1防止偵錯工具呼叫 ToString 方法的 getter 屬性
  
 錯誤訊息會告訴您偵錯工具嘗試呼叫函式的名稱。 如果您可以修改這個函式，您可以防止偵錯工具呼叫屬性 getter 或 ToString 方法。 請嘗試下列其中一項：
  
@@ -40,13 +40,17 @@ ms.locfileid: "49934440"
     -或-
 * （適用於屬性 getter)Put`[System.Diagnostics.DebuggerBrowsable(DebuggerBrowsableState.Never)]`屬性上的屬性。 這非常有用，如果您有必須保持 API 相容性的原因，屬性的方法，但它其實應該是一種方法。
  
-### <a name="solution-2-have-the-target-code-ask-the-debugger-to-abort-the-evaluation"></a>解決方案 2： 已要求中止評估偵錯工具的目標程式碼
+### <a name="solution-2-have-the-target-code-ask-the-debugger-to-abort-the-evaluation"></a>解決方案 2已要求中止評估偵錯工具的目標程式碼
  
 錯誤訊息會告訴您偵錯工具嘗試呼叫函式的名稱。 如果屬性 getter 或 ToString 方法有時會無法正確執行，特別是在的情況下問題的程式碼需要另一個執行緒來執行程式碼，然後實作函式可以呼叫`System.Diagnostics.Debugger.NotifyOfCrossThreadDependency`要求中止函式偵錯工具評估之旅。 使用此解決方案，仍可明確評估這些函式，但預設行為是 NotifyOfCrossThreadDependency 呼叫發生時停止執行。
  
-### <a name="solution-3-disable-all-implicit-evaluation"></a>解決方案 3： 停用所有隱含的評估
+### <a name="solution-3-disable-all-implicit-evaluation"></a>解決方案 3停用所有隱含的評估
  
-如果先前的解決方案不修正此問題，請移至*工具* > *選項*，然後取消選取設定*偵錯* >  *一般* > *啟用屬性評估及其他隱含函式呼叫*。 這將會停用大部分的隱含函式評估，並應可解決問題。
+如果先前的解決方案不修正此問題，請移至**工具** > **選項**，然後取消選取設定**偵錯** >  **一般** > **啟用屬性評估及其他隱含函式呼叫**。 這將會停用大部分的隱含函式評估，並應可解決問題。
+
+### <a name="solution-4-enable-managed-compatibility-mode"></a>方案(&S)啟用受控相容性模式
+
+如果您切換成舊版偵錯引擎，您可以消除這項錯誤。 移至**工具** > **選項**，然後選取設定**偵錯** > **一般** > **使用 managed 相容性模式**。 如需詳細資訊，請參閱 <<c0> [ 一般偵錯選項](../debugger/general-debugging-options-dialog-box.md)。
 
 
 

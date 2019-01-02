@@ -18,15 +18,15 @@ author: TerryGLee
 ms.author: tglee
 manager: douge
 ms.workload: office
-ms.openlocfilehash: e79442ea42583f326f9cb59360777269c399b7a0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1d1b606d4416da10c329a7421378ea979a2fa4cf
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49879294"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684687"
 ---
 # <a name="replaceable-parameters"></a>可置換的參數
-  可置換的參數，或*語彙基元*，可以使用專案檔內，以提供其實際的值不在設計階段已知的 SharePoint 方案項目中的值。 它們是類似的函式中的標準[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]範本語彙基元。 如需詳細資訊，請參閱 <<c0> [ 範本參數](/visualstudio/ide/template-parameters)。  
+  可置換的參數，或*語彙基元*，可以使用專案檔內，以提供其實際的值不在設計階段已知的 SharePoint 方案項目中的值。 它們是類似的函式中的標準[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]範本語彙基元。 如需詳細資訊，請參閱 <<c0> [ 範本參數](../ide/template-parameters.md)。  
   
 ## <a name="token-format"></a>權杖格式
  權杖會開始，並以貨幣符號 （$） 字元結尾。 在部署中，使用任何權杖實際值時取代 SharePoint 方案套件封裝專案時 (*.wsp*檔案)。 例如，語彙基元 **$SharePoint.Package.Name$** 可能會解析為 「 測試 SharePoint 套件 」 的字串。  
@@ -111,4 +111,3 @@ ms.locfileid: "49879294"
   
 ## <a name="see-also"></a>另請參閱
  [開發 SharePoint 方案](../sharepoint/developing-sharepoint-solutions.md)  
-  

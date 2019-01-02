@@ -1,5 +1,5 @@
 ---
-title: 如何： 防止 Outlook 顯示表單區域
+title: HOW TO：防止 Outlook 顯示表單區域
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -11,19 +11,19 @@ dev_langs:
 helpviewer_keywords:
 - form regions [Office development in Visual Studio], canceling display
 - canceling form region display
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1ec9f45b2055a7a56e067440d216482877da14c2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0aaeafe14f35092be30c982ebb758e40afedb8aa
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49949054"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647077"
 ---
-# <a name="how-to-prevent-outlook-from-displaying-a-form-region"></a>如何： 防止 Outlook 顯示表單區域
+# <a name="how-to-prevent-outlook-from-displaying-a-form-region"></a>HOW TO：防止 Outlook 顯示表單區域
   可能有不想要顯示特定項目的表單區域的 Microsoft Office Outlook 中的情況。 例如，如果連絡人項目沒有商務地址，您就可以防止表單區域，使其不出現對應中會顯示企業的位置。  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
@@ -44,9 +44,9 @@ ms.locfileid: "49949054"
   
 ## <a name="see-also"></a>另請參閱  
  [建立 Outlook 表單區域](../vsto/creating-outlook-form-regions.md)   
- [逐步解說： 設計 Outlook 表單區域](../vsto/walkthrough-designing-an-outlook-form-region.md)   
- [如何： 在 Outlook 增益集專案中加入表單區域](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)   
- [逐步解說： 設計 Outlook 表單區域](../vsto/walkthrough-designing-an-outlook-form-region.md)   
- [逐步解說： 匯入在 Outlook 中設計表單區域](../vsto/walkthrough-importing-a-form-region-that-is-designed-in-outlook.md)  
+ [逐步解說：設計 Outlook 表單區域](../vsto/walkthrough-designing-an-outlook-form-region.md)   
+ [如何：將表單區域加入 Outlook 增益集專案](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)   
+ [逐步解說：設計 Outlook 表單區域](../vsto/walkthrough-designing-an-outlook-form-region.md)   
+ [逐步解說：匯入在 Outlook 中設計的表單區域](../vsto/walkthrough-importing-a-form-region-that-is-designed-in-outlook.md)  
   
   

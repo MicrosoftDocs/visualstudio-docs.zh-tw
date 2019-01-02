@@ -14,12 +14,12 @@ manager: douge
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: b7f98dccebe9db183c63c6f859ceb2234fdb1acf
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: d3dcc5390eac698f3c135c23d497073340bbd8b2
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53056914"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648816"
 ---
 # <a name="debug-live-aspnet-azure-apps-using-the-snapshot-debugger"></a>偵錯即時 ASP.NET Azure 應用程式使用快照集偵錯工具
 
@@ -36,7 +36,7 @@ ms.locfileid: "53056914"
 
 ## <a name="prerequisites"></a>必要條件
 
-* 快照偵錯工具僅適用於 Visual Studio 2017 Enterprise 15.5 版或更高版本**ASP.NET 和 web 開發工作負載**。 針對 ASP.NET Core，您也需要 **.NET Core 開發**安裝工作負載。
+* 快照偵錯工具僅適用於 Visual Studio 2017 Enterprise 15.5 版或更高版本**Azure 開發工作負載**。 (下**個別元件**索引標籤上，您會發現下**偵錯和測試** > **快照偵錯工具**。)
 
     如果尚未安裝，安裝[Visual Studio 2017 Enterprise 版本 15.5](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)或更新版本。 如果您從舊版的 Visual Studio 2017 安裝中更新，執行 Visual Studio 安裝程式，並簽入的快照集偵錯工具元件**ASP.NET 和 web 開發工作負載**。
 

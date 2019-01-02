@@ -1,5 +1,5 @@
 ---
-title: CA1903：只使用來自目標架構的 API
+title: CA1903:使用來自目標架構的 API
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
@@ -16,14 +16,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b1d42a74cfaf93ba0e8e5aec7e15c522d2e26b7a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ace24746aafa70c73bc87c55c197913136f1a7b1
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49822809"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53738868"
 ---
-# <a name="ca1903-use-only-api-from-targeted-framework"></a>CA1903：只使用來自目標架構的 API
+# <a name="ca1903-use-only-api-from-targeted-framework"></a>CA1903:使用來自目標架構的 API
 
 |||
 |-|-|
@@ -48,7 +48,7 @@ ms.locfileid: "49822809"
 |.NET Framework 3.5|.NET Framework 3.5 SP1|
 |.NET Framework 4|N/A|
 
- 若要變更專案的目標架構，請參閱[特定的.NET Framework 版本為目標](../ide/targeting-a-specific-dotnet-framework-version.md)。
+ 若要變更專案的目標架構，請參閱[特定的.NET Framework 版本為目標](../ide/visual-studio-multi-targeting-overview.md)。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
  若要移除的相依性的 service pack，請移除新的成員或類型的所有使用方式。 如果這是刻意的相依性時，隱藏警告，或關閉這項規則。
@@ -69,4 +69,4 @@ ms.locfileid: "49822809"
 ## <a name="see-also"></a>另請參閱
 
 - [Portability Warnings](../code-quality/portability-warnings.md)
-- [以特定的 .NET Framework 版本為目標](../ide/targeting-a-specific-dotnet-framework-version.md)
+- [以特定的 .NET Framework 版本為目標](../ide/visual-studio-multi-targeting-overview.md)

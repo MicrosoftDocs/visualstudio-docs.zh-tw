@@ -1,5 +1,5 @@
 ---
-title: '&#39;傳回&#39;陳述式，函式外的 |Microsoft Docs'
+title: "'return' 陳述式，函式外的 |Microsoft Docs"
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -20,14 +20,14 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 07b633c87dc11b291a5a5783f8121b2a368996d6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a7c4b71938d960d3825030c42e965b6510ca575b
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49846514"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53802520"
 ---
-# <a name="39return39-statement-outside-of-function"></a>&#39;傳回&#39;函式外的陳述式
+# <a name="return-statement-outside-of-function"></a>函式外部的 'return' 陳述式
 您已使用`return`全域範圍中的陳述式，您的程式碼。 `return`陳述式應該只出現在函式主體。  
   
  叫用的函式`()`運算子是一個運算式。 所有運算式都有的值;`return`陳述式用來指定函式所傳回的值。 一般格式如下：  

@@ -1,6 +1,7 @@
 ---
 title: 使用 Visual Studio 建立適用於 Office 的 VSTO 增益集
-ms.custom: ''
+titleSuffix: ''
+ms.custom: seodec18
 ms.date: 02/02/2017
 ms.technology:
 - office-development
@@ -8,17 +9,17 @@ ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ab047953c1a19d444b4315b7dc605a1a990667df
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: ae35f11066ccb0bbd5e9fa36f137c8a77281463c
+ms.sourcegitcommit: a715de2ba8c703f37aa2102567b1aa2c0f05a117
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50670867"
+ms.lasthandoff: 12/15/2018
+ms.locfileid: "53441492"
 ---
 # <a name="create-vsto-add-ins-for-office-by-using-visual-studio"></a>使用 Visual Studio 建立適用於 Office 的 VSTO 增益集
   您可以使用 Visual Studio 中的 Microsoft Office Developer Tools 來建立 .NET Framework 應用程式，以擴充 Office 功能。 這些應用程式也稱為 *「Office 方案」*(Office Solution)。  
@@ -90,7 +91,7 @@ ms.locfileid: "50670867"
  提供有關 Office 主要 interop 組件、 資訊清單、 使用者介面項目，以及錯誤訊息的詳細資訊連結。  
   
  [受控參考&#40;在 Visual Studio 中的 Office 程式開發&#41;](../vsto/managed-reference-office-development-in-visual-studio.md)  
- 提供有關以 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]為目標的 Office 專案所使用之 API 命名空間和類型的資訊連結。 如需命名空間和類型的.NET Framework 3.5 為目標的 Office 專案所使用的 API 參考文件，請參閱 Visual Studio 2008 文件中的下列參考章節： [2007 system managed 參考](http://go.microsoft.com/fwlink/?LinkId=160658).  
+ 提供有關以 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]為目標的 Office 專案所使用之 API 命名空間和類型的資訊連結。 有關的命名空間和類型的 Office 專案所使用的 API 參考文件的目標.NET Framework 3.5，請參閱 Visual Studio 2008 文件中的下列參考章節：[2007 system managed 參考](http://go.microsoft.com/fwlink/?LinkId=160658)。  
   
  [Unmanaged API 參考&#40;在 Visual Studio 中的 Office 程式開發&#41;](../vsto/unmanaged-api-reference-office-development-in-visual-studio.md)  
  包含 COM 介面的相關資訊連結，您可以使用這些介面來執行載入及卸載 Office 應用程式中受管理之 VSTO 增益集等動作。  

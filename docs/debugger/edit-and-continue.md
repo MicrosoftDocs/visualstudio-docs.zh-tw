@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 28f07d9a8f05ab63e6b945fd590fdf9fa576ca48
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
-ms.translationtype: HT
+ms.openlocfilehash: 64018143403555dfa671c7fb79be09dcd04d9011
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53048577"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53562162"
 ---
 # <a name="edit-code-and-continue-debugging-in-visual-studio-c-vb-c"></a>編輯程式碼，並在 Visual Studio 中繼續偵錯 (C#、 VB、 c + +)
 [編輯後繼續] 功能可以在您的程式處於中斷模式時，讓您對原始程式碼進行變更以節省時間。 當您選擇之類的執行命令，會在繼續執行程式時**繼續**或是**步驟**、 編輯及繼續自動套用程式碼變更，但有一些限制。 這可以讓您在偵錯工作階段期間變更程式碼而不需要停止、重新編譯整個程式並重新啟動偵錯工作階段。  
@@ -49,4 +49,4 @@ ms.locfileid: "53048577"
 ## <a name="see-also"></a>請參閱  
  [偵錯工具安全性](../debugger/debugger-security.md)   
  [選項對話方塊、偵錯、編輯後繼續](https://msdn.microsoft.com/library/bcew296c.aspx)   
- [偵錯工具基礎](../debugger/getting-started-with-the-debugger.md)
+ [偵錯工具簡介](../debugger/debugger-feature-tour.md)

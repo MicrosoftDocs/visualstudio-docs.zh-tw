@@ -18,17 +18,17 @@ caps.latest.revision: 8
 author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9c25877a3ab54f70207103a2c909163807b4c2e4
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.openlocfilehash: f2a1a1380869ae26dbda30f47f6b3de08b288b7a
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51740135"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53802377"
 ---
 # <a name="cvcreatemarkerserieswithcodepagea-function"></a>CvCreateMarkerSeriesWithCodePageA 函式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-建立指定提供者與指定字碼頁的標記系列。 此函式可以用來明確指定標記 API ANSI 函式所寫出文字的字碼頁。 如果要擷取追蹤並使用不同的地區設定/語言在不同電腦上進行分析，設定字碼頁會很有用。 預設會使用 GetACP() 函式所傳回的字碼頁。  
+為特定提供者與指定字碼頁建立標記系列。 此函式可以用來明確指定標記 API ANSI 函式所寫出文字的字碼頁。 如果要擷取追蹤並使用不同的地區設定/語言在不同電腦上進行分析，設定字碼頁會很有用。 預設會使用 GetACP() 函式所傳回的字碼頁。  
   
 ## <a name="syntax"></a>語法  
   
@@ -60,7 +60,7 @@ HRESULT CvCreateMarkerSeriesWithCodePageA(
 ## <a name="requirements"></a>需求  
  **標頭︰** cvmarkers.h  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [C++ 程式庫參考](../profiling/cpp-library-reference.md)
 
 

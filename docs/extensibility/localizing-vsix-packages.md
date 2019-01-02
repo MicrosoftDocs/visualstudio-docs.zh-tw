@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 54de0b219eb1c86a413b7a95e87a48e7f65ac9ec
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 85d32f25e8dd1f2f56af0857f2be0ff24c4d3126
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39636970"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53740243"
 ---
 # <a name="localizing-vsix-packages"></a>將 VSIX 套件當地語系化
 
@@ -106,6 +106,6 @@ ms.locfileid: "39636970"
 
 |標題|描述|
 |-----------|-----------------|
-|[VSIX 語言套件結構描述 2.0 參考](../extensibility/vsixlanguagepack-element-vsix-language-pack-schema.md)|VSIX 語言套件描述.vsix 部署檔案的當地語系化資訊。|
+|[VSIX 語言套件結構描述 2.0 參考](/visualstudio/extensibility/vsix-language-pack-schema-2-0-reference)|VSIX 語言套件描述.vsix 部署檔案的當地語系化資訊。|
 |[VSIX 封裝的結構](../extensibility/anatomy-of-a-vsix-package.md)|Vsix 封裝的內容與結構描述。|
 |[將功能表命令當地語系化](../extensibility/localizing-menu-commands.md)|示範如何將延伸模組中的其他文字資源當地語系化。|

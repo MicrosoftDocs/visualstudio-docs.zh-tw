@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a5d6e84bc526cf597fbfd22bd36b93cd419ba0d6
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: eaae915b8e201b5596bdd435c432ffccfa9ad8c3
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349659"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53739915"
 ---
 # <a name="starting-to-develop-visual-studio-extensions"></a>開始開發 Visual Studio 擴充功能
 
@@ -64,7 +64,7 @@ ms.locfileid: "51349659"
 
 -   [擴充 Visual Studio 的其他部分](../extensibility/extending-other-parts-of-visual-studio.md)
 
--   [Visual Studio Isolated Shell](../extensibility/visual-studio-isolated-shell.md)
+-   [Visual Studio Isolated Shell](/visualstudio/extensibility/shell/visual-studio-isolated-shell)
 
 ##  <a name="BKMK_ProjectTemplate"></a> 哪些專案範本所提供的 VSSDK？
  延伸模組的兩個主要類型都是 Vspackage 和 MEF 擴充功能。 一般情況下，VSPackage 擴充功能可使用或擴充命令、 工具視窗和專案的延伸模組。 MEF 擴充功能用來擴充或自訂 Visual Studio 編輯器中。
@@ -75,13 +75,13 @@ ms.locfileid: "51349659"
 
  Isolated Shell 範本用來封裝的版本，您可以加上商標及散發為您自己的 Visual Studio shell 擴充功能。 下列主題會示範如何開始使用每種類型的延伸模組：
 
--   功能表命令：[建立擴充的功能表命令](../extensibility/creating-an-extension-with-a-menu-command.md)
+-   功能表命令：[建立具有功能表命令的擴充功能](../extensibility/creating-an-extension-with-a-menu-command.md)
 
--   工具視窗：[建立擴充功能與工具視窗](../extensibility/creating-an-extension-with-a-tool-window.md)
+-   工具視窗：[使用工具視窗建立擴充功能](../extensibility/creating-an-extension-with-a-tool-window.md)
 
 -   編輯器擴充功能：[使用編輯器項目範本建立擴充功能](../extensibility/creating-an-extension-with-an-editor-item-template.md)
 
--   基本 Vspackage: [Creating an Extension with VSPackage](../extensibility/creating-an-extension-with-a-vspackage.md)
+-   基本的 Vspackage 中：[使用 VSPackage 建立擴充功能](../extensibility/creating-an-extension-with-a-vspackage.md)
 
 -   VSIX 專案範本：[開始使用 VSIX 專案範本](../extensibility/getting-started-with-the-vsix-project-template.md)
 
@@ -94,7 +94,7 @@ ms.locfileid: "51349659"
 ## <a name="how-can-i-distribute-my-extension"></a>我要如何散發 my 擴充功能？
  您可以在另一部電腦上安裝擴充功能，或將它傳送給您的朋友為.vsix 檔案，按兩下安裝。 您可以深入了解在 VSIX 封裝[傳送 Visual Studio 擴充功能](../extensibility/shipping-visual-studio-extensions.md)。
 
- 您也可以發佈您的延伸模組，可讓您更大量的 Visual Studio 客戶看到 Visual Studio Marketplace 上。 封裝至 Marketplace 延伸模組的範例，請參閱[逐步解說： 發行 Visual Studio 擴充功能](../extensibility/walkthrough-publishing-a-visual-studio-extension.md)。 如需有關您要如何在 Marketplace 上發佈的詳細資訊，請參閱 <<c0> [ 產品和 Visual Studio 擴充功能](/azure/devops/extend/overview?view=vsts)。
+ 您也可以發佈您的延伸模組，可讓您更大量的 Visual Studio 客戶看到 Visual Studio Marketplace 上。 封裝至 Marketplace 延伸模組的範例，請參閱[逐步解說：發行 Visual Studio 擴充功能](../extensibility/walkthrough-publishing-a-visual-studio-extension.md)。 如需有關您要如何在 Marketplace 上發佈的詳細資訊，請參閱 <<c0> [ 產品和 Visual Studio 擴充功能](/azure/devops/extend/overview?view=vsts)。
 
 ## <a name="see-also"></a>另請參閱
 

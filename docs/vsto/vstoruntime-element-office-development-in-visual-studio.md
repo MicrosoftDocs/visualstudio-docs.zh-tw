@@ -17,51 +17,50 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d21e097c0a05dfba2aa15bc41e37441ae02a63e4
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 80ef1c8e347aa2447ff48838015bb6499236e123
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34768062"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53802658"
 ---
 # <a name="ltvstoruntimegt-element-office-development-in-visual-studio"></a>&lt;vstoRuntime&gt;元素 （在 Visual Studio 中的 Office 程式開發）
-  `vstoRuntime` 命名空間的 `vstav3` 項目包含特定 Office 方案支援的 Visual Studio Tools for Office Runtime 版本。  
-  
-## <a name="syntax"></a>語法  
-  
-```xml  
-<vstoRuntime  
-    release  
-    version  
-    supportUrl />  
-```  
-  
-## <a name="elements-and-attributes"></a>項目和屬性  
- `vstoRuntime` 項目是必要項，且位於 `vstav3` 命名空間。 如果 Office 方案支援兩種 Visual Studio Tools for Office Runtime 版本，應用程式資訊清單中會有兩個 `vstoRuntime` 項目。  
-  
- `vstoRuntime` 項目具有下列屬性。  
-  
-|屬性|描述|  
-|---------------|-----------------|  
-|`release`|必要。 Visual Studio Tools for Office Runtime 的發行版本。|  
-|`version`|必要。 Visual Studio Tools for Office Runtime 的版本號碼。|  
-|`supportUrl`|選擇性。 Visual Studio Tools for Office Runtime 的安裝位置連結。|  
-  
- `vstoRuntime` 沒有任何項目。  
-  
-## <a name="example"></a>範例  
- 下列程式碼範例說明使用 `vstoRuntime` 所部署之 Office 方案的應用程式資訊清單中的 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]項目。 這個程式碼範例是中提供之較大範例的一部分[Office 方案的應用程式資訊清單](../vsto/application-manifests-for-office-solutions.md)。  
-  
-```xml  
-<vstav3:vstoRuntime  
-    release="VSTOR40Beta1"  
-    version="10.0.20303"  
-    supportUrl="http://www.microsoft.com" />  
-```  
-  
-## <a name="see-also"></a>另請參閱  
- [Office 方案的應用程式資訊清單](../vsto/application-manifests-for-office-solutions.md)   
- [Office 方案的部署資訊清單](../vsto/deployment-manifests-for-office-solutions.md)   
- [ClickOnce 應用程式資訊清單](/visualstudio/deployment/clickonce-application-manifest)  
-  
-  
+  `vstoRuntime` 命名空間的 `vstav3` 項目包含特定 Office 方案支援的 Visual Studio Tools for Office Runtime 版本。
+
+## <a name="syntax"></a>語法
+
+```xml
+<vstoRuntime
+    release
+    version
+    supportUrl />
+```
+
+## <a name="elements-and-attributes"></a>項目和屬性
+ `vstoRuntime` 項目是必要的，且位於 `vstav3` 命名空間。 如果 Office 方案支援兩種 Visual Studio Tools for Office Runtime 版本，應用程式資訊清單中會有兩個 `vstoRuntime` 項目。
+
+ `vstoRuntime` 項目具有下列屬性。
+
+|屬性|描述|
+|---------------|-----------------|
+|`release`|必要項。 Visual Studio Tools for Office Runtime 的發行版本。|
+|`version`|必要項。 Visual Studio Tools for Office Runtime 的版本號碼。|
+|`supportUrl`|選擇性。 Visual Studio Tools for Office Runtime 的安裝位置連結。|
+
+ `vstoRuntime` 沒有任何項目。
+
+## <a name="example"></a>範例
+ 下列程式碼範例說明使用 `vstoRuntime` 所部署之 Office 方案的應用程式資訊清單中的 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]項目。 此程式碼範例是中提供之較大範例的一部分[Application manifests for Office 方案](../vsto/application-manifests-for-office-solutions.md)。
+
+```xml
+<vstav3:vstoRuntime
+    release="VSTOR40Beta1"
+    version="10.0.20303"
+    supportUrl="http://www.microsoft.com" />
+```
+
+## <a name="see-also"></a>另請參閱
+
+- [Office 方案的應用程式資訊清單](../vsto/application-manifests-for-office-solutions.md)
+- [Office 方案的部署資訊清單](../vsto/deployment-manifests-for-office-solutions.md)
+- [ClickOnce 應用程式資訊清單](../deployment/clickonce-application-manifest.md)

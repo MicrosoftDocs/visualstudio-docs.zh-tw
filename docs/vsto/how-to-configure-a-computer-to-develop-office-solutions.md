@@ -1,5 +1,5 @@
 ---
-title: 如何： 設定電腦以開發 Office 方案
+title: HOW TO：設定電腦以開發 Office 方案
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -11,19 +11,19 @@ dev_langs:
 helpviewer_keywords:
 - prerequisites [Office development in Visual Studio]
 - Office development in Visual Studio, installing tools
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6a07545fb9a7ddb2fc70ba5053ad131d2e214636
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 848994aec796b25c031e7367db10f67e95f09f79
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50671309"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648470"
 ---
-# <a name="how-to-configure-a-computer-to-develop-office-solutions"></a>如何： 設定電腦以開發 Office 方案
+# <a name="how-to-configure-a-computer-to-develop-office-solutions"></a>HOW TO：設定電腦以開發 Office 方案
   若要設定開發電腦，讓您可以使用 Visual Studio 中的 Microsoft Office Developer Tools，請遵循本主題中的指示。 您必須擁有開發電腦上的系統管理權限，才能執行這些步驟。  
   
 ### <a name="to-configure-the-development-computer"></a>設定開發電腦  
@@ -39,7 +39,7 @@ ms.locfileid: "50671309"
 ## <a name="see-also"></a>另請參閱  
  [中的 Office 程式開發最新消息](https://msdn.microsoft.com/bf054af2-c896-4723-aa15-6381145b14bb)   
  [開始使用&#40;在 Visual Studio 中的 Office 程式開發&#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
- [如何： 安裝 Visual Studio Tools for Office runtime 可轉散發套件](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md)   
- [如何： 安裝 Office 主要 interop 組件](../vsto/how-to-install-office-primary-interop-assemblies.md)  
+ [如何：安裝 Visual Studio Tools for Office runtime 可轉散發套件](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md)   
+ [如何：安裝 Office 主要 interop 組件](../vsto/how-to-install-office-primary-interop-assemblies.md)  
   
   

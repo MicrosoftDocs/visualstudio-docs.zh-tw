@@ -2,9 +2,8 @@
 title: Assembly 項目 （Visual Studio 範本精靈擴充） |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#Assembly
 helpviewer_keywords:
@@ -16,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9fa0728be191086ba84de86110deea122316466f
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 829ba0fd25494affb2a8bf7e59c31361cbc9dc4b
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39153852"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53562018"
 ---
 # <a name="assembly-element-visual-studio-template-wizard-extension"></a>Assembly 項目 （Visual Studio 範本精靈擴充）
 指定的名稱或實作的組件的強式名稱`IWizard`介面。  
@@ -54,7 +53,7 @@ ms.locfileid: "39153852"
 ## <a name="text-value"></a>文字值  
  需要文字值。  
   
- 此文字會指定實作的組件`IWizard`介面。 這個組件名稱必須指定為完整的組件名稱。 例如，`MyAssembly, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11dd0a3a, Custom = null`。  
+ 此文字會指定實作的組件`IWizard`介面。 這個組件名稱必須指定為完整的組件名稱。 例如， `MyAssembly, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11dd0a3a, Custom = null` 。  
   
 ## <a name="remarks"></a>備註  
  `Assembly` 是 `WizardExtension` 的必要子項目。  
@@ -93,4 +92,4 @@ ms.locfileid: "39153852"
 ## <a name="see-also"></a>另請參閱  
  [Visual Studio 範本結構描述參考](../extensibility/visual-studio-template-schema-reference.md)   
  [建立專案和項目範本](../ide/creating-project-and-item-templates.md)   
- [如何： 搭配專案範本使用精靈](../extensibility/how-to-use-wizards-with-project-templates.md)
+ [如何：使用精靈與專案範本](../extensibility/how-to-use-wizards-with-project-templates.md)

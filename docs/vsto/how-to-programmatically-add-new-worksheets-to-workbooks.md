@@ -1,5 +1,5 @@
 ---
-title: 如何： 以程式設計方式在活頁簿中加入新的工作表
+title: HOW TO：以程式設計方式在活頁簿中加入新的工作表
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -13,26 +13,26 @@ helpviewer_keywords:
 - workbooks, creating worksheets
 - worksheets, creating
 - worksheets, adding to workbooks
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 80e3ddaa3edd4520e16c8733d3310497ab4ea5af
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 7d5750bebc4b58305133ae762bb6cb52e0d37e62
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35255007"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53805022"
 ---
-# <a name="how-to-programmatically-add-new-worksheets-to-workbooks"></a>如何： 以程式設計方式在活頁簿中加入新的工作表
+# <a name="how-to-programmatically-add-new-worksheets-to-workbooks"></a>HOW TO：以程式設計方式在活頁簿中加入新的工作表
   您可以用程式設計方式建立工作表，然後將工作表加入活頁簿的工作表集合。  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
   
 ## <a name="to-add-a-new-worksheet-to-a-workbook-in-a-document-level-customization"></a>在文件層級自訂的活頁簿中加入新的工作表  
   
-1.  使用 <xref:Microsoft.Office.Interop.Excel.Worksheets.Add%2A> 集合的 <xref:Microsoft.Office.Interop.Excel.Sheets> 方法。  
+1.  使用 <xref:Microsoft.Office.Interop.Excel.Sheets> 集合的 <xref:Microsoft.Office.Interop.Excel.Worksheets.Add%2A> 方法。  
   
      [!code-csharp[Trin_VstcoreExcelAutomation#15](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#15)]
      [!code-vb[Trin_VstcoreExcelAutomation#15](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#15)]  
@@ -51,8 +51,8 @@ ms.locfileid: "35255007"
 ## <a name="see-also"></a>另請參閱  
  [使用工作表](../vsto/working-with-worksheets.md)   
  [主項目和主控制項概觀](../vsto/host-items-and-host-controls-overview.md)   
- [如何： 以程式設計方式從活頁簿中刪除工作表](../vsto/how-to-programmatically-delete-worksheets-from-workbooks.md)   
- [如何： 以程式設計方式選取工作表](../vsto/how-to-programmatically-select-worksheets.md)   
+ [如何：以程式設計方式從活頁簿中刪除工作表](../vsto/how-to-programmatically-delete-worksheets-from-workbooks.md)   
+ [如何：以程式設計方式選取工作表](../vsto/how-to-programmatically-select-worksheets.md)   
  [使用擴充的物件自動化 Excel](../vsto/automating-excel-by-using-extended-objects.md)   
  [全域存取 Office 專案中的物件](../vsto/global-access-to-objects-in-office-projects.md)   
  [Office 方案中的選擇性參數](../vsto/optional-parameters-in-office-solutions.md)  

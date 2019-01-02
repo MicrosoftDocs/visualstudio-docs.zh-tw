@@ -1,10 +1,9 @@
 ---
-title: SolutionFolder 元素 （Visual Studio 範本） |Microsoft 文件
+title: SolutionFolder 元素 （Visual Studio 範本） |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#SolutionFolder
 helpviewer_keywords:
@@ -16,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 635ebd5a8cfc962dd7b56b928b86a9d583a3575d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c5e47729d55b9c248b81c5867175fed75e8b93a8
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31141522"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561586"
 ---
 # <a name="solutionfolder-element-visual-studio-templates"></a>SolutionFolder 元素 (Visual Studio 範本)
 將多專案範本中的專案分組。  
@@ -48,7 +47,7 @@ ms.locfileid: "31141522"
 |---------------|-----------------|  
 |`Name`|必要屬性。<br /><br /> 方案資料夾的名稱。|  
   
-### <a name="child-elements"></a>子項目  
+### <a name="child-elements"></a>子元素  
   
 |項目|描述|  
 |-------------|-----------------|  
@@ -63,7 +62,7 @@ ms.locfileid: "31141522"
 |`SolutionFolder`|將多專案範本中的專案分組。|  
   
 ## <a name="remarks"></a>備註  
- 多專案範本是做為兩個以上專案的容器使用。 `SolutionFolder` 項目可將範本中的專案分成群組。 由 `SolutionFolder` 項目所指定的資料夾會建立為 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 之專案中的方案資料夾。 如需有關多專案範本的詳細資訊，請參閱[How to： 建立多專案範本](../ide/how-to-create-multi-project-templates.md)。  
+ 多專案範本是做為兩個以上專案的容器使用。 `SolutionFolder` 項目可將範本中的專案分成群組。 由 `SolutionFolder` 項目所指定的資料夾會建立為 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 之專案中的方案資料夾。 如需有關多專案範本的詳細資訊，請參閱[How to:建立多專案範本](../ide/how-to-create-multi-project-templates.md)。  
   
 ## <a name="example"></a>範例  
  這個範例會使用 `SolutionFolder` 項目將多專案範本分成兩個群組，也就是 `Math Classes` 和 `Graphics Classes`。 範本包含四個專案，每個方案資料夾各包含兩個專案。  
@@ -103,4 +102,4 @@ ms.locfileid: "31141522"
 ## <a name="see-also"></a>另請參閱  
  [Visual Studio 範本結構描述參考](../extensibility/visual-studio-template-schema-reference.md)   
  [建立專案和項目範本](../ide/creating-project-and-item-templates.md)   
- [如何：建立多專案的範本](../ide/how-to-create-multi-project-templates.md)
+ [如何：建立多專案範本](../ide/how-to-create-multi-project-templates.md)

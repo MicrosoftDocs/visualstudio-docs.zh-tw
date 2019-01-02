@@ -18,17 +18,17 @@ helpviewer_keywords:
 - FormRegionStartup interface
 - add-ins [Office development in Visual Studio], extensibility interfaces
 - extensibility interfaces [Office development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ec1f538515c8765629e812b8d7f4070476dd95ba
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 94ef77afa51e7cccb8f5aed18b1cf5ad0e1eaf1f
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50670837"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648887"
 ---
 # <a name="customize-ui-features-by-using-extensibility-interfaces"></a>使用擴充性介面自訂 UI 功能
   當您使用 Visual Studio 中的 Office 開發工具，在 VSTO 增益集中建立自訂工作窗格、功能區自訂和 Outlook 表單區域時，這些工具提供可處理許多實作詳細資料的類別和設計工具。 不過，如果您有特殊需求，也可以針對每項功能自行實作 *「擴充性介面」* (Extensibility Interface)。  
@@ -47,7 +47,7 @@ ms.locfileid: "50670837"
   
 |介面|描述|應用程式|  
 |---------------|-----------------|------------------|  
-|<xref:Microsoft.Office.Core.IRibbonExtensibility>|實作這個介面可自訂功能區 UI。 **注意︰** 您可以加入**功能區 (XML)** 項目加入專案，以產生預設<xref:Microsoft.Office.Core.IRibbonExtensibility>您 VSTO 增益集中實作。 如需詳細資訊，請參閱 [Ribbon XML](../vsto/ribbon-xml.md)。|Excel<br /><br /> [!INCLUDE[InfoPath_15_short](../vsto/includes/infopath-15-short-md.md)]<br /><br /> InfoPath 2010<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> 專案<br /><br /> Visio<br /><br /> 字組|  
+|<xref:Microsoft.Office.Core.IRibbonExtensibility>|實作這個介面可自訂功能區 UI。 **注意：** 您可以加入**功能區 (XML)** 項目加入專案，以產生預設<xref:Microsoft.Office.Core.IRibbonExtensibility>您 VSTO 增益集中實作。 如需詳細資訊，請參閱 [Ribbon XML](../vsto/ribbon-xml.md)。|Excel<br /><br /> [!INCLUDE[InfoPath_15_short](../vsto/includes/infopath-15-short-md.md)]<br /><br /> InfoPath 2010<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> 專案<br /><br /> Visio<br /><br /> 字組|  
 |<xref:Microsoft.Office.Core.ICustomTaskPaneConsumer>|實作這個介面可建立自訂工作窗格。|Excel<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> 字組|  
 |<xref:Microsoft.Office.Interop.Outlook.FormRegionStartup>|實作這個介面可建立 Outlook 表單區域。|Outlook|  
   
@@ -84,7 +84,7 @@ ms.locfileid: "50670837"
  [程式 VSTO 增益集](../vsto/programming-vsto-add-ins.md)   
  [開發 Office 方案](../vsto/developing-office-solutions.md)   
  [從其他 Office 方案呼叫 VSTO 增益集的程式碼](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md)   
- [如何： 在 Visual Studio 中建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)   
+ [如何：在 Visual Studio 中建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)   
  [VSTO 增益集的架構](../vsto/architecture-of-vsto-add-ins.md)  
   
   

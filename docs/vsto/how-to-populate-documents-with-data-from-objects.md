@@ -1,5 +1,5 @@
 ---
-title: 如何： 的物件的資料填入文件
+title: HOW TO：物件的資料填入文件
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -11,19 +11,19 @@ dev_langs:
 helpviewer_keywords:
 - documents [Office development in Visual Studio], populating with data
 - data [Office development in Visual Studio], adding to documents
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ef3d1441f9587bceeca0c4aacdc054a4769a2369
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 87e194aa29a44458c23e5057d7813e5e21ffbc42
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36758108"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648369"
 ---
-# <a name="how-to-populate-documents-with-data-from-objects"></a>如何： 的物件的資料填入文件
+# <a name="how-to-populate-documents-with-data-from-objects"></a>HOW TO：物件的資料填入文件
 
 在 Microsoft Office Word 文件層級專案中使用資料物件存取資料時，其運作方式與在 Windows Form 專案中的運作方式相同。 您可以使用相同的工具和程式碼，將資料從物件帶入方案中，也可以使用 Windows Form 控制項顯示資料。 此外，也可以使用主控制項來顯示資料。 主控制項是 Microsoft Office Word 中的原生物件，已使用事件和資料繫結功能強化。 如需詳細資訊，請參閱 <<c0> [ 主項目和裝載控制項概觀](../vsto/host-items-and-host-controls-overview.md)。
 
@@ -73,6 +73,6 @@ ms.locfileid: "36758108"
 
 - [新增資料來源](../data-tools/add-new-data-sources.md)
 - [將 Windows Forms 控制項繫結至 Visual Studio 中的資料](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
-- [如何： 的資料庫中的資料填入文件](../vsto/how-to-populate-documents-with-data-from-a-database.md)
-- [如何： 從主控制項的資料更新資料來源](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)
+- [如何：資料庫中的資料填入文件](../vsto/how-to-populate-documents-with-data-from-a-database.md)
+- [如何：從主控制項的資料更新資料來源](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)
 - [BindingSource 元件概觀](/dotnet/framework/winforms/controls/bindingsource-component-overview)

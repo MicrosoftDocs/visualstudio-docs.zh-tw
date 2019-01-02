@@ -1,5 +1,5 @@
 ---
-title: 工作流程設計工具-如何： 在工作流程中設定中斷點
+title: 工作流程設計工具-如何：在工作流程中設定中斷點
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.prod: visual-studio-dev15
@@ -10,18 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a1d7dcb437a77bd91c8dbb3360a33c7260fabb91
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 96db38e8a69d0b8b9ee042420647851aa1fbf0c0
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36755228"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684245"
 ---
-# <a name="how-to-set-breakpoints-in-workflows"></a>如何： 在工作流程中設定中斷點
+# <a name="how-to-set-breakpoints-in-workflows"></a>HOW TO：在工作流程中設定中斷點
 
 當您使用工作流程設計工具時，您可以設定中斷點，在您的圖形化工作流程和一樣在 Visual Basic 或 C# 程式碼中即可。 如預期般，工作流程執行會在您設定的每個中斷點上停止。
 
-中斷點有三種狀態：*暫止*，*繫結*，並*錯誤*。 設定中斷點時，狀態為「擱置」，由實心的紅色圖示表示。 如果執行階段已載入工作流程型別，中斷點就會變成「繫結」狀態。 如果您指定的中斷點格式不正確，例如活動名稱無效，就會出現錯誤視窗。 中斷點仍會新增至中斷點視窗，但以小的 "x" 記號標示。
+中斷點有三種狀態：*暫止*，*繫結*，以及*錯誤*。 設定中斷點時，狀態為「擱置」，由實心的紅色圖示表示。 如果執行階段已載入工作流程型別，中斷點就會變成「繫結」狀態。 如果您指定的中斷點格式不正確，例如活動名稱無效，就會出現錯誤視窗。 中斷點仍會新增至中斷點視窗，但以小的 "x" 記號標示。
 
 > [!NOTE]
 > 不支援在已叫用的工作流程上設定中斷點。
@@ -42,6 +42,5 @@ ms.locfileid: "36755228"
 
 ## <a name="see-also"></a>另請參閱
 
-- [如何：叫用工作流程偵錯工具](../workflow-designer/how-to-invoke-the-workflow-debugger.md)
 - [使用工作流程設計工具偵錯工作流程](../workflow-designer/debugging-workflows-with-the-workflow-designer.md)
-- [如何：使用工作流程設計工具對 XAML 進行偵錯](../workflow-designer/how-to-debug-xaml-with-the-workflow-designer.md)
+- [如何：偵錯 XAML 與工作流程設計工具](../workflow-designer/how-to-debug-xaml-with-the-workflow-designer.md)

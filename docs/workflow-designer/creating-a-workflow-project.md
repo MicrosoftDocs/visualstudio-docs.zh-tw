@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a4f8ed1effbc459bd2a17e3433738c1b461513b
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: cf7c9c5348e7a7c31fa7e1d65b7fa6047d05d565
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36755650"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53685701"
 ---
 # <a name="workflow-project-templates"></a>工作流程專案範本
 
@@ -72,12 +72,12 @@ Visual Studio 提供四個不同的工作流程專案範本：
 
 如果您選擇**活動設計工具程式庫**範本，Visual Studio 會建立活動設計工具定義在 XAML 和程式碼後置實作檔案中。 工作流程設計工具隨即開啟，並顯示您的活動設計工具畫布。 將 Windows Presentation Foundation (WPF) 控制項從**工具箱**至設計介面，以在您的自訂活動設計工具中使用它們。
 
-如需如何實作自訂活動設計工具的範例，請參閱 <<c0> [ 如何： 建立自訂活動設計工具](/dotnet/framework/windows-workflow-foundation/how-to-create-a-custom-activity-designer)。
+如需如何實作自訂活動設計工具的範例，請參閱[How to:建立自訂活動設計工具](/dotnet/framework/windows-workflow-foundation/how-to-create-a-custom-activity-designer)。
 
 > [!NOTE]
 > 可用於自訂活動設計工具，自訂活動和用於預設.NET Framework 的活動。
 
 ## <a name="see-also"></a>另請參閱
 
-- [使用工作流程設計工具](../workflow-designer/using-the-workflow-designer.md)
+- [使用工作流程設計工具](developing-applications-with-the-workflow-designer.md)
 - [設計工作流程 (.NET Framework)](/dotnet/framework/windows-workflow-foundation/designing-workflows)

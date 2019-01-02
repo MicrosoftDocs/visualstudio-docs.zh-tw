@@ -1,5 +1,5 @@
 ---
-title: CA1502：避免過度複雜
+title: CA1502:避免造成過度複雜
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
@@ -20,14 +20,14 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: bfa12a2a1ade8d32c5518660c46ce79bc997d776
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 969e16eae2d04ed1635e2d2bc9b496ed510a6074
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49819299"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53740321"
 ---
-# <a name="ca1502-avoid-excessive-complexity"></a>CA1502：避免過度複雜
+# <a name="ca1502-avoid-excessive-complexity"></a>CA1502:避免造成過度複雜
 
 |||
 |-|-|
@@ -50,7 +50,7 @@ ms.locfileid: "49819299"
 
 循環複雜度超過 25 項時，此規則會報告違規情形。
 
-您可以深入了解在程式碼度量[測量的複雜性和可維護性的 Managed 程式碼](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)，
+您可以深入了解在程式碼度量[測量的複雜性和可維護性的 Managed 程式碼](../code-quality/code-metrics-values.md)，
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
 
@@ -104,8 +104,8 @@ ms.locfileid: "49819299"
 
 ## <a name="related-rules"></a>相關的規則
 
-[CA1501：避免在物件間過度繼承](../code-quality/ca1501-avoid-excessive-inheritance.md)
+[CA1501:避免過度繼承](../code-quality/ca1501-avoid-excessive-inheritance.md)
 
 ## <a name="see-also"></a>另請參閱
 
-- [測量 Managed 程式碼的複雜度和維護性](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)
+- [測量 Managed 程式碼的複雜度和維護性](../code-quality/code-metrics-values.md)

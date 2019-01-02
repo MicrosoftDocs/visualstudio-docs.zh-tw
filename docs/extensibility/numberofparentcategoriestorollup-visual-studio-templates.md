@@ -1,10 +1,8 @@
 ---
-title: NumberOfParentCategoriesToRollUp （Visual Studio 範本） |Microsoft Docs
-ms.custom: ''
+title: NumberOfParentCategoriesToRollUp 項目 （Visual Studio 範本）
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#NumberOfParentCategoriesToRollUp
 helpviewer_keywords:
@@ -16,14 +14,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e6c3eae15aaa4aa7b81148915fc2c59fee723230
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 36c3f8ef1e8016fd1ab46cb61f5e076afdd4190a
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39639509"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53562278"
 ---
-# <a name="numberofparentcategoriestorollup-visual-studio-templates"></a>NumberOfParentCategoriesToRollUp （Visual Studio 範本）
+# <a name="numberofparentcategoriestorollup-element-visual-studio-templates"></a>NumberOfParentCategoriesToRollUp 項目 （Visual Studio 範本）
 指定的數目會顯示在範本的父類別**新的專案** 對話方塊。  
   
  \<VSTemplate >  
@@ -32,11 +30,11 @@ ms.locfileid: "39639509"
   
 ## <a name="syntax"></a>語法  
   
-```  
+```xml
 <NumberOfParentCategoriesToRollUp>  
-    1  
+1  
 </NumberOfParentCategoriesToRollUp>  
-```  
+```
   
 ## <a name="attributes-and-elements"></a>屬性和元素  
  下列章節說明屬性、子元素和父元素。  
@@ -62,9 +60,9 @@ ms.locfileid: "39639509"
  `NumberOfParentCategoriesToRollUp` 是選擇性項目。  
   
 ## <a name="example"></a>範例  
- 此範例說明的中繼資料[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]Windows 應用程式。 如果此中繼資料的範本放兩個資料夾層級以下的最上層[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]節點，此範本將顯示在中的最上層節點**新的專案** 對話方塊。 如果`NumberOfParentCategoriesToRollUp`未設定，範本只會出現在節點中實際上是位於。  
+ 此範例說明的中繼資料[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]Windows 應用程式。 如果此中繼資料的範本放兩個資料夾層級以下的最上層[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]節點，此範本將顯示在中的最上層節點**新的專案** 對話方塊。 如果`NumberOfParentCategoriesToRollUp`未設定，範本只會出現在節點中實際上是位於。
   
-```  
+```xml
 <VSTemplate Type="Project" Version="3.0.0"  
     xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">  
     <TemplateData>  

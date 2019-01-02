@@ -16,17 +16,17 @@ helpviewer_keywords:
 - ClickOnce deployment [Office development in Visual Studio], MSI
 - publishing Office solutions [Office development in Visual Studio], setup project
 - Office applications [Office development in Visual Studio], MSI
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3e811fac767e8b89f0a6958511c54642f07190cf
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: f5aaf0cdff2795ff0726ca2de36e794179f2d924
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50673051"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648764"
 ---
 # <a name="deploy-an-office-solution-by-using-windows-installer"></a>使用 Windows Installer 部署 Office 方案
 使用 [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)]以了解如何為 Office 方案建立 Windows Installer。  
@@ -223,7 +223,7 @@ ms.locfileid: "50673051"
 
 4. 在 [記事本] 中，貼上 GUID 以取代文字 **Your GUID goes here** 。  
 
-    **&lt;properties&gt;** 項目與下列範例類似。  
+   **&lt;properties&gt;** 項目與下列範例類似。  
 
 
    ```xml  
@@ -528,7 +528,7 @@ ms.locfileid: "50673051"
 
 9. 在功能表列上選擇 **建置** > **建置 OfficeAddInSetup**。  
 
-   在建置完成之後，您可以找出*setup.exe*的檔案**OfficeAddInSetup**專案中的，於下列位置： <em>OfficeAddInSetupProjectRoot</em> **\OfficeAddInSetup\Express\SingleImage\DiskImages\DISK1\\**  
+   在建置完成之後，您可以找出*setup.exe*的檔案**OfficeAddInSetup**專案中的，於下列位置：<em>OfficeAddInSetupProjectRoot</em>**\OfficeAddInSetup\Express\SingleImage\DiskImages\DISK1\\**  
 
 
 ## <a name="see-also"></a>另請參閱  

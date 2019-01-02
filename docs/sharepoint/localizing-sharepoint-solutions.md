@@ -22,16 +22,16 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ba02d8811fc6633a55e06ae63c9399c70f59634f
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 3897efa937991b598f6aae1cf24781ab2ce26c37
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118759"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684739"
 ---
 # <a name="localize-sharepoint-solutions"></a>當地語系化 SharePoint 方案
 
-  準備您的應用程式，以便它們可全球使用的處理程序稱為 「 當地語系化 」。 當地語系化轉譯特定文化特性的資源。 如需詳細資訊，請參閱 < [Globalizing and Localizing Applications](/visualstudio/ide/globalizing-and-localizing-applications)。 本主題提供有關如何當地語系化 SharePoint 方案的概觀。  
+  準備您的應用程式，以便它們可全球使用的處理程序稱為 「 當地語系化 」。 當地語系化轉譯特定文化特性的資源。 如需詳細資訊，請參閱 < [Globalizing and Localizing Applications](../ide/globalizing-and-localizing-applications.md)。 本主題提供有關如何當地語系化 SharePoint 方案的概觀。  
   
  若要當地語系化方案，您可以從程式碼中移除硬式編碼的字串，並它們抽出資源檔。 資源檔[!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]-架構檔案 *.resx*延伸模組。 資源檔包含在解決方案中使用的字串翻譯的版本。 如需詳細資訊，請參閱 <<c0> [ 應用程式中的資源](http://go.microsoft.com/fwlink/?LinkID=155844)。  
   
@@ -59,7 +59,7 @@ ms.locfileid: "37118759"
  有三個區域，您通常會當地語系化中[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]SharePoint 應用程式： 功能、 ASPX 頁面標記和程式碼。 下列各節進行說明，假設您有想要當地語系化為德文和日文的 SharePoint 方案。 預設語言是英文。  
   
 ### <a name="localize-features"></a>當地語系化功能
- 若要當地語系化功能，您必須參考已轉譯的標題和字串在當地語系化的資源檔中的運算式中取代的硬式編碼的標題和描述的功能。 您進行這項變更**功能設計工具**在[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。 如需詳細資訊，請參閱 <<c0> [ 如何： 當地語系化功能](../sharepoint/how-to-localize-a-feature.md)。  
+ 若要當地語系化功能，您必須參考已轉譯的標題和字串在當地語系化的資源檔中的運算式中取代的硬式編碼的標題和描述的功能。 您進行這項變更**功能設計工具**在[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。 如需詳細資訊，請參閱[＜How to：當地語系化功能](../sharepoint/how-to-localize-a-feature.md)。  
   
  若要將英文功能當地語系化為德文和日文，您必須將三個資源檔的專案項目加入專案： 分別用於英文、 德文和日文。 功能資源檔不能用來當地語系化 ASPX 標記或程式碼;需要為其個別的資源檔。  
   
@@ -109,7 +109,7 @@ $Resources:String ID
 <asp:literal ID="Literal1" runat="server" Text="<%$Resources:Resource1, String9%>" />  
 ```  
   
- 如需詳細資訊，請參閱 <<c0> [ 如何： 當地語系化 ASPX 標記](../sharepoint/how-to-localize-aspx-markup.md)。  
+ 如需詳細資訊，請參閱[＜How to：當地語系化 ASPX 標記](../sharepoint/how-to-localize-aspx-markup.md)。  
   
 ### <a name="localize-code"></a>當地語系化程式碼
  除了當地語系化 「 功能 」 字串和[!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)]標記中，您還必須當地語系化的訊息字串和出現在您方案的程式碼中的錯誤字串。 當地語系化的告知性及錯誤訊息包含在附屬組件。 附屬組件包含字串時，會對使用者顯示，例如[!INCLUDE[TLA2#tla_ui](../sharepoint/includes/tla2sharptla-ui-md.md)]文字和輸出訊息類似例外狀況。  
@@ -126,7 +126,7 @@ $Resources:String ID
 HttpContext.GetGlobalResourceObject("<Resource File Name>", "<String ID>")  
 ```  
   
- 如需詳細資訊，請參閱 <<c0> [ 如何： 當地語系化程式碼](../sharepoint/how-to-localize-code.md)。  
+ 如需詳細資訊，請參閱[＜How to：當地語系化程式碼](../sharepoint/how-to-localize-code.md)。  
   
 #### <a name="web-part-code-localization"></a>Web 組件程式碼當地語系化
  Web 組件包含自訂屬性編輯器 功能，包括使用硬式編碼的字串，例如 WebDisplayName、 Category 和 WebDescription 的程式碼屬性。 若要取代這些屬性的字串值，建立個別的類別衍生自屬性的類別。 在這些類別中，設定該屬性的屬性。 將屬性取決於基底類別。 例如，WebDisplayName 屬性屬性為 DisplayNameValue，而 WebDescription 屬性屬性為 DescriptionValue。  
@@ -134,9 +134,8 @@ HttpContext.GetGlobalResourceObject("<Resource File Name>", "<String ID>")
  在衍生類別中，參考的字串 ID 的資源檔和 ResourceManager 物件來取得當地語系化的字串 id。 此值傳回至屬性編輯器。  
   
 ## <a name="see-also"></a>另請參閱
- [如何： 當地語系化功能](../sharepoint/how-to-localize-a-feature.md)   
- [如何： 當地語系化 ASPX 標記](../sharepoint/how-to-localize-aspx-markup.md)   
- [如何： 當地語系化程式碼](../sharepoint/how-to-localize-code.md)   
- [如何： 加入資源檔](../sharepoint/how-to-add-a-resource-file.md)   
- [如何： 使用資源檔來指定當地語系化的名稱、 屬性和權限](../sharepoint/how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions.md)  
-  
+ [如何：當地語系化功能](../sharepoint/how-to-localize-a-feature.md)   
+ [如何：當地語系化 ASPX 標記](../sharepoint/how-to-localize-aspx-markup.md)   
+ [如何：當地語系化程式碼](../sharepoint/how-to-localize-code.md)   
+ [如何：加入資源檔](../sharepoint/how-to-add-a-resource-file.md)   
+ [如何：使用資源檔來指定當地語系化的名稱、 屬性和權限](../sharepoint/how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions.md)  

@@ -1,10 +1,9 @@
 ---
-title: SupportsLanguageDropDown 項目 （Visual Studio 範本） |Microsoft 文件
+title: SupportsLanguageDropDown 項目 （Visual Studio 範本） |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#SupportsLanguageDropDown
 helpviewer_keywords:
@@ -16,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b02dcf9b54cfec3dcccca62f9529291e01a912f6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 92043550d9318fc5de70d14bed12b110d3ef2e26
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31138824"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53562122"
 ---
 # <a name="supportslanguagedropdown-element-visual-studio-templates"></a>SupportsLanguageDropDown 項目 (Visual Studio 範本)
-指定是否多種語言，與相同網站項目範本，以及是否**語言**上啟用選項**加入新項目** 對話方塊。  
+指定是否 Web 項目範本是相同的多種語言，以及是否**語言**上，已啟用**加入新項目** 對話方塊。  
   
  \<VSTemplate >  
  \<TemplateData >  
@@ -42,7 +41,7 @@ ms.locfileid: "31138824"
 ### <a name="attributes"></a>屬性  
  無。  
   
-### <a name="child-elements"></a>子項目  
+### <a name="child-elements"></a>子元素  
  無。  
   
 ### <a name="parent-elements"></a>父項目  
@@ -54,14 +53,14 @@ ms.locfileid: "31138824"
 ## <a name="text-value"></a>文字值  
  需要文字值。  
   
- 此文字必須`true`或`false`，表示是否**語言**選項都**加入新項目** 對話方塊。  
+ 文字必須是`true`或`false`，這表示，zda bude**語言**選項可從**加入新項目** 對話方塊。  
   
 ## <a name="remarks"></a>備註  
- `SupportsLanguageDropDown` 是選擇性項目。 預設值是 `false`。  
+ `SupportsLanguageDropDown` 是選擇性項目。 預設值為 `false`。  
   
- `SupportsLanguageDropDown`項目只適用於 Web 項目範本。  
+ `SupportsLanguageDropDown`項目僅適用於 Web 項目範本。  
   
- 如果此項目的值設定為`true`，則項目範本是相同的所有程式設計語言和**語言**選項中啟用**加入新項目** 對話方塊。 此選項可讓您選擇您想要從範本建立的新項目之程式語言。  
+ 如果此項目的值設定為`true`，則所有的程式設計語言的等同項目範本和**語言**都會啟用選項**加入新項目** 對話方塊。 此選項可讓您選擇的程式設計語言，您想要從範本建立的新項目。  
   
 ## <a name="example"></a>範例  
  下列範例會指定要顯示**語言**下拉式清單選項。  

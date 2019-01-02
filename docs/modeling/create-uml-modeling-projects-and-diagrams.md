@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 700b6c42cbdbf0a8b8c6f604a4c25f0042e2bffe
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: d0e956f1d86079bbeea20beb84201d0a92026b9a
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50966774"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684498"
 ---
 # <a name="create-uml-modeling-projects-and-diagrams"></a>建立 UML 模型專案和圖表
 
@@ -31,4 +31,4 @@ ms.locfileid: "50966774"
 * [建立應用程式模型](create-models-for-your-app.md)
 * [在開發程序中使用模型](use-models-in-your-development-process.md)
 * [在開發期間驗證您的系統](validate-your-system-during-development.md)
-* [擴充 UML 模型和圖表](extend-uml-models-and-diagrams.md)
+* [擴充 UML 模型和圖表](create-uml-modeling-projects-and-diagrams.md)

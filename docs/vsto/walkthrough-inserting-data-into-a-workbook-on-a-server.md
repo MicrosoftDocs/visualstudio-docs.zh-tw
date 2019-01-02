@@ -1,5 +1,5 @@
 ---
-title: 逐步解說： 將資料插入的伺服器上的活頁簿
+title: 逐步解說：在伺服器上的活頁簿中插入資料
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -19,14 +19,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: dc27a04e39ad93d9898364df308f6e7b042cd11b
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 0c594a15b2f411b9c1360d94f0f41624c11cebcf
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50672323"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53804860"
 ---
-# <a name="walkthrough-insert-data-into-a-workbook-on-a-server"></a>逐步解說： 將資料插入的伺服器上的活頁簿
+# <a name="walkthrough-insert-data-into-a-workbook-on-a-server"></a>逐步解說：在伺服器上的活頁簿中插入資料
   本逐步解說示範如何將資料插入的資料集，Microsoft Office Excel 活頁簿中快取不會啟動 Excel 使用<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument>類別。
 
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]
@@ -57,9 +57,9 @@ ms.locfileid: "50672323"
 
 -   存取權的 Microsoft SQL Server 或 Microsoft SQL Server Express 具有附加的 AdventureWorksLT 範例資料庫執行個體。 您可以下載 AdventureWorksLT 資料庫，從[CodePlex 網站](http://go.microsoft.com/fwlink/?linkid=87843)。 如需附加資料庫的詳細資訊，請參閱下列主題：
 
-    -   若要使用 SQL Server Management Studio 或 SQL Server Management Studio Express 附加資料庫，請參閱[如何： 附加資料庫 (SQL Server Management Studio)](/sql/relational-databases/databases/attach-a-database)。
+    -   若要使用 SQL Server Management Studio 或 SQL Server Management Studio Express 附加資料庫，請參閱[How to:附加資料庫 (SQL Server Management Studio)](/sql/relational-databases/databases/attach-a-database)。
 
-    -   若要使用命令列附加資料庫，請參閱[如何： 將資料庫檔案附加至 SQL Server Express](/previous-versions/sql/)。
+    -   若要使用命令列附加資料庫，請參閱[How to:將資料庫檔案附加至 SQL Server Express](/previous-versions/sql/)。
 
 ## <a name="create-a-class-library-project-that-defines-a-dataset"></a>建立定義資料集的類別庫專案
  若要使用相同的資料集的 Excel 活頁簿專案和主控台應用程式中，您必須定義資料集由兩個專案參考其他組件中。 此逐步解說中定義的類別庫專案中的資料集。
@@ -89,7 +89,7 @@ ms.locfileid: "50672323"
 ## <a name="define-a-dataset-in-the-class-library-project"></a>類別庫專案中定義資料集
  定義具類型的資料集，其中包含適用於 SQL Server 2005 的 AdventureWorksLT 資料庫中的資料。 稍後在本逐步解說中，您將參考此資料集的 Excel 活頁簿專案和主控台應用程式專案。
 
- 資料集*類型資料集*表示 AdventureWorksLT 資料庫之 Product 資料表中的資料。 如需有關具類型資料集的詳細資訊，請參閱 < [Visual Studio 中的資料集工具](/visualstudio/data-tools/dataset-tools-in-visual-studio)。
+ 資料集*類型資料集*表示 AdventureWorksLT 資料庫之 Product 資料表中的資料。 如需有關具類型資料集的詳細資訊，請參閱 < [Visual Studio 中的資料集工具](../data-tools/dataset-tools-in-visual-studio.md)。
 
 ### <a name="to-define-a-typed-dataset-in-the-class-library-project"></a>若要定義類別庫專案中的具類型資料集
 
@@ -103,7 +103,7 @@ ms.locfileid: "50672323"
 
 5. 如果您有現有的連線到 AdventureWorksLT 資料庫，請選擇此連線，然後按一下 [**下一步]**。
 
-    否則，請按一下 [ **新增連接**]，然後使用 [ **加入連接** ] 對話方塊建立新的連接。 如需詳細資訊，請參閱 <<c0> [ 如何： 連接到資料庫中的資料](../vsto/walkthrough-inserting-data-into-a-workbook-on-a-server.md)。
+    否則，請按一下 [ **新增連接**]，然後使用 [ **加入連接** ] 對話方塊建立新的連接。 如需詳細資訊，請參閱[＜How to：連接到資料庫中的資料](../vsto/walkthrough-inserting-data-into-a-workbook-on-a-server.md)。
 
 6. 在 [將連接字串儲存到應用程式組態檔]  頁面上，按 [下一步] 。
 
@@ -157,7 +157,7 @@ ms.locfileid: "50672323"
 
 2.  在 [ **資料** ] 功能表上，請按一下 [ **加入新資料來源**]。
 
-     **資料來源組態精靈**隨即開啟。
+     [資料來源組態精靈] 隨即開啟。
 
 3.  按一下 [**物件**，然後按一下**下一步]**。
 
@@ -293,8 +293,8 @@ ms.locfileid: "50672323"
 
 您可以深入了解使用快取的資料，從下列主題：
 
--   中的快取的資料集的資料變更而不啟動 Excel。 如需詳細資訊，請參閱 <<c0> [ 逐步解說： 變更快取伺服器上的活頁簿資料](../vsto/walkthrough-changing-cached-data-in-a-workbook-on-a-server.md)。
+-   中的快取的資料集的資料變更而不啟動 Excel。 如需詳細資訊，請參閱[逐步解說：變更伺服器的活頁簿中的快取的資料](../vsto/walkthrough-changing-cached-data-in-a-workbook-on-a-server.md)。
 
 ## <a name="see-also"></a>另請參閱
 
-- [逐步解說： 變更伺服器的活頁簿中的快取的資料](../vsto/walkthrough-changing-cached-data-in-a-workbook-on-a-server.md)
+- [逐步解說：變更伺服器的活頁簿中的快取的資料](../vsto/walkthrough-changing-cached-data-in-a-workbook-on-a-server.md)

@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d85e915099c9d94123f7e97b0d19bf235c0efae
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: d7f6ca4310e8de644f799c8c921ac27cb3e1c458
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36758037"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684327"
 ---
 # <a name="using-the-activity-designers"></a>使用活動設計工具
 
@@ -30,8 +30,6 @@ ms.locfileid: "36758037"
 
 ## <a name="related-sections"></a>相關章節
 
- [使用工作流程設計工具](../workflow-designer/using-the-workflow-designer.md)
-
- [使用工作流程設計工具偵錯工作流程](../workflow-designer/debugging-workflows-with-the-workflow-designer.md)
-
- [工作流程設計工具 UI 說明](../workflow-designer/workflow-designer-ui-help.md)
+- [使用工作流程設計工具](../workflow-designer/developing-applications-with-the-workflow-designer.md)
+- [使用工作流程設計工具偵錯工作流程](../workflow-designer/debugging-workflows-with-the-workflow-designer.md)
+- [工作流程設計工具 UI 說明](../workflow-designer/workflow-designer-ui-help.md)

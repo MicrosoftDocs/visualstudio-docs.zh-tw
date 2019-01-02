@@ -1,5 +1,5 @@
 ---
-title: 如何： 將命令加入至捷徑功能表
+title: HOW TO：將命令加入至捷徑功能表
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -11,26 +11,26 @@ dev_langs:
 helpviewer_keywords:
 - Office menus, creating
 - Office development in Visual Studio, context menus
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9accca69c5d56461f07d21d25821c0f4181c8fbd
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 37c0c4c54fdb50f56d7d8f6920eedfd15491a6a7
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35671355"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648425"
 ---
-# <a name="how-to-add-commands-to-shortcut-menus"></a>如何： 將命令加入至捷徑功能表
+# <a name="how-to-add-commands-to-shortcut-menus"></a>HOW TO：將命令加入至捷徑功能表
   本主題示範如何使用 VSTO 增益集將命令加入 Office 應用程式中的捷徑功能表。  
   
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
   
 ### <a name="to-add-commands-to-shortcut-menus-in-office"></a>將命令加入 Office 的捷徑功能表  
   
-1.  將 **功能區 XML** 項目加入文件層級或 VSTO 增益集專案。 如需詳細資訊，請參閱 <<c0> [ 如何： 開始自訂功能區](../vsto/how-to-get-started-customizing-the-ribbon.md)。 In  
+1.  將 **功能區 XML** 項目加入文件層級或 VSTO 增益集專案。 如需詳細資訊，請參閱[＜How to：開始自訂功能區](../vsto/how-to-get-started-customizing-the-ribbon.md)。 In  
   
 2.  在方案總管中，選取 **ThisAddin.cs** 或 **ThisAddin.vb**。  
   
@@ -51,7 +51,7 @@ ms.locfileid: "35671355"
   
 7.  在程式碼編輯器中，加入描述捷徑功能表以及您想要加入捷徑功能表之控制項的 XML。  
   
-     下列範例會將按鈕、功能表和圖庫控制項加入 Word 文件的捷徑功能表。 這個捷徑功能表的控制項 ID 是 ContextMenuText。 如需完整的 Office 2010 捷徑控制項 ID，請參閱[Office 2010 說明檔： Office fluent 使用者介面控制項識別碼](http://go.microsoft.com/fwlink/?LinkID=181052)。  
+     下列範例會將按鈕、功能表和圖庫控制項加入 Word 文件的捷徑功能表。 這個捷徑功能表的控制項 ID 是 ContextMenuText。 如需完整的 Office 2010 捷徑控制項 ID，請參閱[Office 2010 說明檔：Office fluent 使用者介面控制項識別碼](http://go.microsoft.com/fwlink/?LinkID=181052)。  
   
     ```xml
     <?xml version="1.0" encoding="UTF-8"?>  
@@ -84,7 +84,7 @@ ms.locfileid: "35671355"
   
 ## <a name="see-also"></a>另請參閱  
  [Office UI 自訂](../vsto/office-ui-customization.md)   
- [逐步解說： 建立書籤的捷徑功能表](../vsto/walkthrough-creating-shortcut-menus-for-bookmarks.md)   
+ [逐步解說：建立書籤的捷徑功能表](../vsto/walkthrough-creating-shortcut-menus-for-bookmarks.md)   
  [Office 方案中的選擇性參數](../vsto/optional-parameters-in-office-solutions.md)   
  [自訂 Office 2010 中的操作功能表](http://go.microsoft.com/fwlink/?LinkId=182186)  
   

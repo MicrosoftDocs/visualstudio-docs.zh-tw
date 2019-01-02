@@ -11,7 +11,6 @@ f1_keywords:
 - vs.debug.file
 - vs.debug.breakpt.new
 - vs.debug.whenbreakpointishit
-- vs.debug.breakpt.choose
 - vs.debug.breakpt.location.address
 - vs.debug.breakpt.constraints
 - vs.debug.breakpoints.delete
@@ -36,12 +35,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 16bcb4bb12e852a8fa268998d0605b2ffc7471e5
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
-ms.translationtype: HT
+ms.openlocfilehash: 092a9fce2c84506f36717808a7630391c7c1fc89
+ms.sourcegitcommit: c7b16358a5d6f7ea1dd2f70a6ac2a8266efa9c15
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53068444"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "53425847"
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>使用 Visual Studio 偵錯工具中的中斷點
 中斷點是在您的開發人員工具箱中最重要的偵錯技術之一。 每當您要暫停偵錯工具執行，您可以設定中斷點。 例如，您可能要查看程式碼變數的狀態，或查看呼叫堆疊，在特定中斷點。 如果這是您第一次嘗試偵錯程式碼，您可能需要先閱讀[適用於徹底初學者偵錯](../debugger/debugging-absolute-beginners.md)，再瀏覽本文。
@@ -61,7 +60,7 @@ ms.locfileid: "53068444"
   
  ![中斷點執行已停止](../debugger/media/breakpointexecution.png "中斷點執行")  
   
- 當偵錯工具停止於中斷點時，您可以查看應用程式，包括變數值和呼叫堆疊的目前狀態。 如需有關呼叫堆疊的詳細資訊，請參閱[How to:使用 [呼叫堆疊] 視窗](../debugger/how-to-use-the-call-stack-window.md)。  
+ 當偵錯工具停止於中斷點時，您可以查看應用程式，包括變數值和呼叫堆疊的目前狀態。 如需有關呼叫堆疊的詳細資訊，請參閱[How to:使用 [呼叫堆疊] 視窗](../debugger/how-to-use-the-call-stack-window.md)  
 
 - 中斷點是切換。 您可以按一下它，請按**F9**，或使用**偵錯** > **切換中斷點**刪除，或將它重新插入。
   
@@ -89,7 +88,7 @@ ms.locfileid: "53068444"
 
 偵錯工具會在指令處中斷。  
 
-如需有關呼叫堆疊的詳細資訊，請參閱[How to:使用 [呼叫堆疊] 視窗](../debugger/how-to-use-the-call-stack-window.md)。 
+如需有關呼叫堆疊的詳細資訊，請參閱[How to:使用 [呼叫堆疊] 視窗](../debugger/how-to-use-the-call-stack-window.md) 
 
 若要在程式碼執行期間的可用空間以視覺化方式追蹤中斷點，請參閱[偵錯時對應呼叫堆疊上的方法](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)。 
   
@@ -306,8 +305,9 @@ ms.locfileid: "53068444"
 
 追蹤點會顯示為原始程式碼的左邊界中的紅色方塊並**中斷點**windows。 
   
-## <a name="see-also"></a>另請參閱  
- [什麼是偵錯？](../debugger/what-is-debugging.md)  
- [撰寫更好C#使用 Visual Studio 程式碼](../debugger/write-better-code-with-visual-studio.md)  
- [率先一睹偵錯](../debugger/debugger-feature-tour.md)  
- [疑難排解 Visual Studio 偵錯工具中的中斷點](../debugger/troubleshooting-breakpoints.md)  
+## <a name="see-also"></a>另請參閱
+
+- [什麼是偵錯？](../debugger/what-is-debugging.md)
+- [撰寫更好C#使用 Visual Studio 程式碼](../debugger/write-better-code-with-visual-studio.md)
+- [率先一睹偵錯](../debugger/debugger-feature-tour.md)
+- [疑難排解 Visual Studio 偵錯工具中的中斷點](../debugger/troubleshooting-breakpoints.md)

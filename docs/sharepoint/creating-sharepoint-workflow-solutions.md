@@ -23,12 +23,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c4e808d93d2ae3039d4c5d79d1c14c65360bba32
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0dd8a1339dddc52326bf7b0e42d52c1eaa53e6cf
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49892307"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53802494"
 ---
 # <a name="create-sharepoint-workflow-solutions"></a>建立 SharePoint 工作流程方案
 
@@ -78,7 +78,7 @@ ms.locfileid: "49892307"
 
   活動可以有屬性、 方法和事件。 使用**屬性**視窗來設定活動的屬性。
 
-  您也可以建立自訂活動。 如需詳細資訊，請參閱 <<c0> [ 逐步解說： 建立自訂網站工作流程活動](../sharepoint/walkthrough-create-a-custom-site-workflow-activity.md)。
+  您也可以建立自訂活動。 如需詳細資訊，請參閱[逐步解說：建立自訂網站工作流程活動](../sharepoint/walkthrough-create-a-custom-site-workflow-activity.md)。
 
   活動會組織中的下列索引標籤**工具箱**:
 
@@ -122,12 +122,12 @@ ms.locfileid: "49892307"
   其中，[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]包含關聯和初始表單的項目範本。 舉例*關聯表單*是可讓系統管理員安裝工作流程的其中一個輸入參數與工作流程，例如費用工作流程的消費限制。 舉例*初始表單*是可讓費用工作流程的使用者到工作流程中輸入所花費的金額。 如需這些表單類型的詳細資訊，請參閱 < [SharePoint 專案和專案項目範本](../sharepoint/sharepoint-project-and-project-item-templates.md)。
 
 ### <a name="item-properties"></a>項目屬性
- 您也可以使用 SharePoint 文件庫或清單中項目的屬性，從使用者收集資訊。 主要程式碼檔案 （Workflow1.cs 或 Workflow1.vb） 會宣告名為 Microsoft.SharePoint.Workflow.SPWorkflowActivationProperties.WorkflowProperties 類別的執行個體`workflowProperties`。 使用`workflowProperties`物件來存取文件庫或清單中的程式碼的屬性。 如需範例，請參閱[逐步解說： 建立和偵錯 SharePoint 工作流程方案](../sharepoint/walkthrough-creating-and-debugging-a-sharepoint-workflow-solution.md)。
+ 您也可以使用 SharePoint 文件庫或清單中項目的屬性，從使用者收集資訊。 主要程式碼檔案 （Workflow1.cs 或 Workflow1.vb） 會宣告名為 Microsoft.SharePoint.Workflow.SPWorkflowActivationProperties.WorkflowProperties 類別的執行個體`workflowProperties`。 使用`workflowProperties`物件來存取文件庫或清單中的程式碼的屬性。 如需範例，請參閱[逐步解說：建立和偵錯 SharePoint 工作流程方案](../sharepoint/walkthrough-creating-and-debugging-a-sharepoint-workflow-solution.md)。
 
 ## <a name="debug-a-sharepoint-workflow-template"></a>偵錯 SharePoint 工作流程範本
  您可以偵錯 SharePoint 工作流程專案相同當您偵錯其他[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Web 專案。 當您啟動[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]偵錯工具，[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]會使用您在中指定的設定**SharePoint 自訂精靈**開啟適當的 SharePoint 網站，並自動建立關聯的工作流程範本使用適當的程式庫或清單中。 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 也會附加[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]偵錯工具，[!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)]名為處理序*w3wp.exe*。
 
- 若要測試工作流程，您必須手動加以啟動。 如需詳細資訊，請參閱 < 偵錯工作流程 > 一節中[偵錯 SharePoint 方案](../sharepoint/debugging-sharepoint-solutions.md)。 如需詳細資訊[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Web 應用程式偵錯，請參閱[web 應用程式和指令碼進行偵錯](../debugger/debugging-web-applications-and-script.md)。
+ 若要測試工作流程，您必須手動加以啟動。 如需詳細資訊，請參閱 < 偵錯工作流程 > 一節中[偵錯 SharePoint 方案](../sharepoint/debugging-sharepoint-solutions.md)。 如需詳細資訊[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Web 應用程式偵錯，請參閱[web 應用程式和指令碼進行偵錯](../debugger/how-to-enable-debugging-for-aspnet-applications.md)。
 
 ## <a name="deploy-a-sharepoint-workflow-template"></a>部署 SharePoint 工作流程範本
  [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 就像其他部署的 SharePoint 工作流程專案[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]SharePoint 專案。 如需詳細資訊，請參閱 <<c0> [ 封裝和部署 SharePoint 方案](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)。
@@ -139,11 +139,11 @@ ms.locfileid: "49892307"
 
 |標題|描述|
 |-----------|-----------------|
-|[逐步解說： 建立和偵錯 SharePoint 工作流程方案](../sharepoint/walkthrough-creating-and-debugging-a-sharepoint-workflow-solution.md)|將引導您逐步完成建立和偵錯簡單[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]工作流程。|
-|[逐步解說： 使用關聯與初始表單建立工作流程](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md)|會引導您逐步建立功能更完整[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]使用關聯和初始表單的工作流程完成。|
-|[逐步解說： 將應用程式頁面加入至工作流程](../sharepoint/walkthrough-add-an-application-page-to-a-workflow.md)|本主題是根據[逐步解說： 使用關聯與初始表單建立工作流程](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md)加上額外 *.aspx*報表資料輸入到工作流程的應用程式頁面。|
-|[逐步解說： 建立自訂網站工作流程活動](../sharepoint/walkthrough-create-a-custom-site-workflow-activity.md)|示範如何執行兩項重要工作： 建立網站層級的工作流程，並建立自訂工作流程活動。|
-|[逐步解說： 將 SharePoint Designer 可重複使用的工作流程匯入 Visual Studio](../sharepoint/walkthrough-import-a-sharepoint-designer-reusable-workflow-into-visual-studio.md)|示範如何匯入可重複使用 SharePoint Designer 2010 中建立的宣告式工作流程[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]SharePoint 專案。|
+|[逐步解說：建立和偵錯 SharePoint 工作流程方案](../sharepoint/walkthrough-creating-and-debugging-a-sharepoint-workflow-solution.md)|將引導您逐步完成建立和偵錯簡單[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]工作流程。|
+|[逐步解說：使用關聯與初始表單建立工作流程](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md)|會引導您逐步建立功能更完整[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]使用關聯和初始表單的工作流程完成。|
+|[逐步解說：將應用程式頁面加入至工作流程](../sharepoint/walkthrough-add-an-application-page-to-a-workflow.md)|本主題是根據[逐步解說：使用關聯與初始表單建立工作流程](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md)加上額外 *.aspx*報表資料輸入到工作流程的應用程式頁面。|
+|[逐步解說：建立自訂網站工作流程活動](../sharepoint/walkthrough-create-a-custom-site-workflow-activity.md)|示範如何執行兩項重要工作： 建立網站層級的工作流程，並建立自訂工作流程活動。|
+|[逐步解說：SharePoint Designer 可重複使用工作流程匯入 Visual Studio](../sharepoint/walkthrough-import-a-sharepoint-designer-reusable-workflow-into-visual-studio.md)|示範如何匯入可重複使用 SharePoint Designer 2010 中建立的宣告式工作流程[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]SharePoint 專案。|
 
 ## <a name="see-also"></a>另請參閱
 

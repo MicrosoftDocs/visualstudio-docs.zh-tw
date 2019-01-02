@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9b2710b6efcc765f98977c2730c5f729e3a8b260
-ms.sourcegitcommit: e7b3fc8c788fb49d6ba4215abf27139f2a08e1a1
+ms.openlocfilehash: 70fcbd9eacbfa581166fccf4471b25c0b22fb74a
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48120379"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53739834"
 ---
 # <a name="msbuild-reference"></a>MSBuild 參考
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 是適用於 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 的建置系統。 下列連結會引導至包含 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 參考資訊的主題。  
@@ -53,7 +53,7 @@ ms.locfileid: "48120379"
  說明可以與 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].exe 搭配使用的引數和參數。  
   
  [.Targets 檔案](../msbuild/msbuild-dot-targets-files.md)  
- 描述 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 內含的 .Targets** 檔案。  
+ 描述 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 內含的 .Targets 檔案。  
   
  [已知的項目中繼資料](../msbuild/msbuild-well-known-item-metadata.md)  
  列出與每個項目一起建立的中繼資料。  
@@ -61,7 +61,7 @@ ms.locfileid: "48120379"
  [回應檔](../msbuild/msbuild-response-files.md)  
  說明包含命令列參數的 *.rsp* 檔案。  
   
- [其他資源](../msbuild/additional-resources-for-msbuild.md)  
+ [其他資源](https://social.msdn.microsoft.com/forums/vstudio/home?forum=msbuild)  
  提供 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 網站和新聞群組的連結。  
   
  [WPF MSBuild 參考](../msbuild/wpf-msbuild-reference.md)  

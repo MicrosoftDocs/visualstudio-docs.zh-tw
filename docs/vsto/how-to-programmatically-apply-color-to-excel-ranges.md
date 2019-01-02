@@ -1,5 +1,5 @@
 ---
-title: 如何： 以程式設計方式將色彩套用至 Excel 範圍
+title: HOW TO：以程式設計方式將色彩套用至 Excel 範圍
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -12,19 +12,19 @@ helpviewer_keywords:
 - formatting [Office development in Visual Studio]
 - color, Excel ranges
 - ranges, applying color
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: feaa149f879137634ada607f31ea78b813544d2d
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: bcd48caa95b2dca1391582ce91156fb6e4859b99
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35256233"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53802312"
 ---
-# <a name="how-to-programmatically-apply-color-to-excel-ranges"></a>如何： 以程式設計方式將色彩套用至 Excel 範圍
+# <a name="how-to-programmatically-apply-color-to-excel-ranges"></a>HOW TO：以程式設計方式將色彩套用至 Excel 範圍
   若要將色彩套用至資料格範圍內的文字，使用<xref:Microsoft.Office.Tools.Excel.NamedRange>控制項或原生的 Excel 範圍物件。  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
@@ -56,8 +56,8 @@ ms.locfileid: "35256233"
 ## <a name="see-also"></a>另請參閱  
  [使用範圍](../vsto/working-with-ranges.md)   
  [NamedRange 控制項](../vsto/namedrange-control.md)   
- [如何： 以程式設計方式將樣式套用至活頁簿中的範圍](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)   
- [如何： 以程式設計方式參考程式碼中的工作表範圍](../vsto/how-to-programmatically-refer-to-worksheet-ranges-in-code.md)   
+ [如何：以程式設計方式將樣式套用至活頁簿中的範圍](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)   
+ [如何：以程式設計方式參考程式碼中的工作表範圍](../vsto/how-to-programmatically-refer-to-worksheet-ranges-in-code.md)   
  [使用擴充的物件自動化 Excel](../vsto/automating-excel-by-using-extended-objects.md)   
  [Office 方案中的選擇性參數](../vsto/optional-parameters-in-office-solutions.md)  
   

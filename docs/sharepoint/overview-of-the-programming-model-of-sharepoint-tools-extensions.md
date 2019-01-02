@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 82309d00d45ab6ac801297a55371cf9be5620440
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8417600d379312304a05d0e4a1ddfc49637ae0e9
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49829478"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684911"
 ---
 # <a name="overview-of-the-programming-model-of-sharepoint-tools-extensions"></a>概觀的程式設計模型的 SharePoint 工具擴充功能
   在 Visual Studio 中建立 SharePoint 工具的延伸模組時，您會從實作 SharePoint 工具公開的一或多個擴充性介面開始。 在大部分情況下，您也會使用 SharePoint 工具所提供的其他類型，在您的延伸模組中實作功能。 在某些情況下，您也可以使用 Visual Studio 和 SharePoint 所提供的其他物件模型中的類型。 您必須了解每個這些物件模型的用途，而且知道如何與其他用來建立 SharePoint 工具擴充功能。  
@@ -34,14 +34,14 @@ ms.locfileid: "49829478"
 
 |介面|描述|  
 |---------------|-----------------|  
-|<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider>|實作這個介面可定義 SharePoint 專案項目的新類型。 如需範例，請參閱[如何： 定義 SharePoint 專案項目類型](../sharepoint/how-to-define-a-sharepoint-project-item-type.md)。|  
-|<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeExtension>|實作這個介面來擴充 Visual Studio 中已安裝的 SharePoint 專案項目的類型。 如需範例，請參閱[如何： 建立 SharePoint 專案項目擴充功能](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md)。|  
-|<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension>|實作這個介面來擴充 SharePoint 專案。 如需範例，請參閱[如何： 建立 SharePoint 專案擴充功能](../sharepoint/how-to-create-a-sharepoint-project-extension.md)。|  
-|<xref:Microsoft.VisualStudio.SharePoint.Deployment.IDeploymentStep>|實作這個介面來定義新的部署步驟，可以在部署或撤回 SharePoint 專案項目時執行。 如需範例，請參閱[逐步解說： 建立 SharePoint 專案的自訂部署步驟](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md)。|  
-|<xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeExtension>|實作這個介面來擴充現有的節點下**SharePoint 連線**中的節點**伺服器總管**視窗。 如需範例，請參閱[如何： 擴充 SharePoint 節點在 伺服器總管](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md)。|  
-|<xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeProvider>|實作這個介面來定義新類型的節點下**SharePoint 連線**中的節點**伺服器總管**視窗。 如需範例，請參閱[如何： 擴充 SharePoint 節點在 伺服器總管](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md)。|  
-|<xref:Microsoft.VisualStudio.SharePoint.Validation.IFeatureValidationRule>|實作這個介面來定義自訂功能驗證規則。 如需範例，請參閱[如何： 建立自訂的功能和封裝驗證規則，SharePoint 方案的](../sharepoint/how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md)。|  
-|<xref:Microsoft.VisualStudio.SharePoint.Validation.IPackageValidationRule>|實作這個介面來定義自訂封裝驗證規則。 如需範例，請參閱[如何： 建立自訂的功能和封裝驗證規則，SharePoint 方案的](../sharepoint/how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md)。|  
+|<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider>|實作這個介面可定義 SharePoint 專案項目的新類型。 如需範例，請參閱[How to:定義 SharePoint 專案項目類型](../sharepoint/how-to-define-a-sharepoint-project-item-type.md)。|  
+|<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeExtension>|實作這個介面來擴充 Visual Studio 中已安裝的 SharePoint 專案項目的類型。 如需範例，請參閱[How to:建立 SharePoint 專案項目擴充功能](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md)。|  
+|<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension>|實作這個介面來擴充 SharePoint 專案。 如需範例，請參閱[How to:建立 SharePoint 專案擴充功能](../sharepoint/how-to-create-a-sharepoint-project-extension.md)。|  
+|<xref:Microsoft.VisualStudio.SharePoint.Deployment.IDeploymentStep>|實作這個介面來定義新的部署步驟，可以在部署或撤回 SharePoint 專案項目時執行。 如需範例，請參閱[逐步解說：建立 SharePoint 專案的自訂部署步驟](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md)。|  
+|<xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeExtension>|實作這個介面來擴充現有的節點下**SharePoint 連線**中的節點**伺服器總管**視窗。 如需範例，請參閱[How to:擴充 SharePoint 節點在 伺服器總管](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md)。|  
+|<xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeProvider>|實作這個介面來定義新類型的節點下**SharePoint 連線**中的節點**伺服器總管**視窗。 如需範例，請參閱[How to:擴充 SharePoint 節點在 伺服器總管](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md)。|  
+|<xref:Microsoft.VisualStudio.SharePoint.Validation.IFeatureValidationRule>|實作這個介面來定義自訂功能驗證規則。 如需範例，請參閱[How to:建立自訂的功能和封裝驗證規則，SharePoint 方案的](../sharepoint/how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md)。|  
+|<xref:Microsoft.VisualStudio.SharePoint.Validation.IPackageValidationRule>|實作這個介面來定義自訂封裝驗證規則。 如需範例，請參閱[How to:建立自訂的功能和封裝驗證規則，SharePoint 方案的](../sharepoint/how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md)。|  
 
  實作 SharePoint 工具的擴充功能之後，您必須在 Visual Studio 擴充功能 (VSIX) 封裝中部署延伸模組組件，才能啟用 Visual Studio 來探索及載入擴充功能。 如需詳細資訊，請參閱 <<c0> [ 部署適用於 Visual Studio 中 SharePoint 工具擴充功能](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)。  
 
@@ -69,7 +69,7 @@ ms.locfileid: "49829478"
 |<xref:Microsoft.VisualStudio.SharePoint.Explorer>|包含您用來下擴充節點的型別**SharePoint 連線**中的節點**伺服器總管** 視窗中，或定義新類型的節點。 如需詳細資訊，請參閱 <<c0> [ 擴充 SharePoint 連線節點，在 伺服器總管](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)。|  
 |<xref:Microsoft.VisualStudio.SharePoint.Features>|包含用來存取 SharePoint 專案中功能定義的類型。|  
 |<xref:Microsoft.VisualStudio.SharePoint.Packages>|包含用來存取 SharePoint 方案中封裝定義的類型。|  
-|<xref:Microsoft.VisualStudio.SharePoint.Validation>|包含用來自訂 SharePoint 專案的功能和封裝驗證行為的類型。 如需詳細資訊，請參閱 <<c0> [ 如何： 建立自訂的功能和封裝驗證規則，SharePoint 方案的](../sharepoint/how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md)。| 
+|<xref:Microsoft.VisualStudio.SharePoint.Validation>|包含用來自訂 SharePoint 專案的功能和封裝驗證行為的類型。 如需詳細資訊，請參閱[＜How to：建立自訂的功能和封裝驗證規則，SharePoint 方案的](../sharepoint/how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md)。| 
 
 #### <a name="microsoftvisualstudiosharepointcommandsdll"></a>Microsoft.VisualStudio.SharePoint.Commands.dll
 
@@ -97,7 +97,7 @@ ms.locfileid: "49829478"
 
  此物件模型是在隨附於 Visual Studio SDK 的組件集中定義。 此物件模型中的主要組件的部分*Microsoft.visualstudio.shell.11.0.dll、microsoft.visualstudio.shell.interop.dll*， *Microsoft.VisualStudio.Shell.Interop.dll*，和*Microsoft.VisualStudio.OLE.Interop.dll*。  
 
- 如需有關整合物件模型的詳細資訊，請參閱[Automation Model Overview](/visualstudio/extensibility/internals/automation-model-overview)並[Visual Studio SDK 參考](/visualstudio/extensibility/visual-studio-sdk-reference)。  
+ 如需有關整合物件模型的詳細資訊，請參閱[Automation Model Overview](../extensibility/internals/automation-model-overview.md)並[Visual Studio SDK 參考](../extensibility/visual-studio-sdk-reference.md)。  
 
 ### <a name="sharepoint-object-models"></a>SharePoint 物件模型
  SharePoint 工具擴充功能可以使用 SharePoint API，來修改 SharePoint 網站，或從 SharePoint 網站擷取資料。 [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] 和 [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] 提供兩個不同的物件模型：伺服器物件模型和用戶端物件模型。  
@@ -113,4 +113,3 @@ ms.locfileid: "49829478"
  [擴充 Visual Studio 中的 SharePoint 工具](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)   
  [呼叫 SharePoint 物件模型](../sharepoint/calling-into-the-sharepoint-object-models.md)   
  [使用 SharePoint 專案服務](../sharepoint/using-the-sharepoint-project-service.md)  
-

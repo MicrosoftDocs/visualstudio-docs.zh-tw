@@ -12,17 +12,17 @@ helpviewer_keywords:
 - Office development in Visual Studio, about developing solutions
 - solutions [Office development in Visual Studio], developing
 - Office solutions [Office development in Visual Studio], developing
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a95c5f5767e227c35763cfaea1e3619093fffda3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ea6054ae0917413a4e862e5c6309492ce84deff2
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49833059"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648848"
 ---
 # <a name="develop-office-solutions"></a>開發 Office 方案
   在您使用 Visual Studio 中的 Office Developer Tools 來設計專案並且設定專案檔之後，即可開始專注於實作程式碼和自訂使用者介面 (UI)。  
@@ -63,15 +63,15 @@ ms.locfileid: "49833059"
 |[Office 專案中的協助工具](../vsto/accessibility-in-office-projects.md)|描述在 Office 方案中可用的協助工具功能。|  
   
 ## <a name="see-also"></a>另請參閱  
- [如何： 建立和修改自訂文件屬性](../vsto/how-to-create-and-modify-custom-document-properties.md)   
- [如何： 讀取和寫入文件屬性](../vsto/how-to-read-from-and-write-to-document-properties.md)   
- [如何： 以 Office 多語系使用者介面為目標](../vsto/how-to-target-the-office-multilingual-user-interface.md)   
- [您第一個 VSTO 增益集建立適用於 Excel 的逐步解說：](../vsto/walkthrough-creating-your-first-vsto-add-in-for-excel.md)   
- [逐步解說： 建立您第一個適用於 Excel 的文件層級自訂](../vsto/walkthrough-creating-your-first-document-level-customization-for-excel.md)   
- [逐步解說： 建立您第一個 VSTO 增益集適用於 Outlook](../vsto/walkthrough-creating-your-first-vsto-add-in-for-outlook.md)   
- [逐步解說： 建立 PowerPoint 的第一個 VSTO 增益集](../vsto/walkthrough-creating-your-first-vsto-add-in-for-powerpoint.md)   
- [逐步解說： 建立您第一個 VSTO 增益集專案](../vsto/walkthrough-creating-your-first-vsto-add-in-for-project.md)   
- [逐步解說： 建立 Word 的第一個 VSTO 增益集](../vsto/walkthrough-creating-your-first-vsto-add-in-for-word.md)   
- [逐步解說： 建立 Word 的第一個文件層級自訂](../vsto/walkthrough-creating-your-first-document-level-customization-for-word.md)  
+ [如何：建立和修改自訂文件屬性](../vsto/how-to-create-and-modify-custom-document-properties.md)   
+ [如何：讀取和寫入文件屬性](../vsto/how-to-read-from-and-write-to-document-properties.md)   
+ [如何：目標的 Office 多語系使用者介面](../vsto/how-to-target-the-office-multilingual-user-interface.md)   
+ [逐步解說：適用於 Excel 建立您第一個 VSTO 增益集](../vsto/walkthrough-creating-your-first-vsto-add-in-for-excel.md)   
+ [逐步解說：建立您第一個適用於 Excel 的文件層級自訂](../vsto/walkthrough-creating-your-first-document-level-customization-for-excel.md)   
+ [逐步解說：建立您第一個 VSTO 增益集適用於 Outlook](../vsto/walkthrough-creating-your-first-vsto-add-in-for-outlook.md)   
+ [逐步解說：您第一個 VSTO 增益集建立 powerpoint](../vsto/walkthrough-creating-your-first-vsto-add-in-for-powerpoint.md)   
+ [逐步解說：建立您第一個 VSTO 增益集專案](../vsto/walkthrough-creating-your-first-vsto-add-in-for-project.md)   
+ [逐步解說：Word 建立您第一個 VSTO 增益集](../vsto/walkthrough-creating-your-first-vsto-add-in-for-word.md)   
+ [逐步解說：建立 Word 的第一個文件層級自訂](../vsto/walkthrough-creating-your-first-document-level-customization-for-word.md)  
   
   

@@ -1,5 +1,5 @@
 ---
-title: 如何： 快取受密碼保護的文件中的資料
+title: HOW TO：在受密碼保護的文件中的快取資料
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -12,19 +12,19 @@ helpviewer_keywords:
 - data caching [Office development in Visual Studio], protected documents
 - datasets [Office development in Visual Studio], caching
 - data [Office development in Visual Studio], caching
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c15d3fee1728118df2701cc940dc288ae500942d
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 21e2b0501b96a1c04cee72487678b3e909440fb4
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35255339"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647287"
 ---
-# <a name="how-to-cache-data-in-a-password-protected-document"></a>如何： 快取受密碼保護的文件中的資料
+# <a name="how-to-cache-data-in-a-password-protected-document"></a>HOW TO：在受密碼保護的文件中的快取資料
   如果您將資料加入文件或密碼保護的活頁簿中的資料快取時，會不會自動儲存變更快取的資料。 您可以藉由覆寫專案中的兩個方法，來快取的資料儲存變更。  
   
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
@@ -78,7 +78,7 @@ ms.locfileid: "35255339"
   
 ## <a name="see-also"></a>另請參閱  
  [快取資料](../vsto/caching-data.md)   
- [如何： 快取資料以供使用，離線或在伺服器上](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md)   
- [如何： 以程式設計方式快取 Office 文件中的資料來源](../vsto/how-to-programmatically-cache-a-data-source-in-an-office-document.md)  
+ [如何：離線或在伺服器上快取資料以供使用](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md)   
+ [如何：以程式設計方式快取 Office 文件中的資料來源](../vsto/how-to-programmatically-cache-a-data-source-in-an-office-document.md)  
   
   

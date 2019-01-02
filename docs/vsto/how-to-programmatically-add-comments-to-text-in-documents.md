@@ -1,5 +1,5 @@
 ---
-title: 如何： 以程式設計方式在文件中的文字中加入註解
+title: HOW TO：以程式設計方式在文件中的文字中加入註解
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -11,19 +11,19 @@ dev_langs:
 helpviewer_keywords:
 - comments, adding to documents
 - documents [Office development in Visual Studio], adding comments
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ca0d15ee69bb58aae765c03c1233a78bfeeb119c
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: c5e7900f5316e64ef884d857bfc1448ac315fd19
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35670862"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53804600"
 ---
-# <a name="how-to-programmatically-add-comments-to-text-in-documents"></a>如何： 以程式設計方式在文件中的文字中加入註解
+# <a name="how-to-programmatically-add-comments-to-text-in-documents"></a>HOW TO：以程式設計方式在文件中的文字中加入註解
   文件類別的註解屬性中某個範圍的 Microsoft Office Word 文件中的文字加入註解。  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
@@ -50,7 +50,7 @@ ms.locfileid: "35670862"
  若要變更 Word 加入註解中的使用者縮寫，請使用 <xref:Microsoft.Office.Interop.Word._Application.UserInitials%2A> 屬性。  
   
 ## <a name="see-also"></a>另請參閱  
- [如何： 以程式設計方式在文件中移除所有註解](../vsto/how-to-programmatically-remove-all-comments-from-documents.md)   
+ [如何：以程式設計方式在文件中移除所有註解](../vsto/how-to-programmatically-remove-all-comments-from-documents.md)   
  [文件主項目](../vsto/document-host-item.md)  
   
   

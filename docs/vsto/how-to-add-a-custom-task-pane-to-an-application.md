@@ -1,5 +1,5 @@
 ---
-title: 如何： 應用程式中加入自訂工作窗格
+title: HOW TO：應用程式中加入自訂工作窗格
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -11,20 +11,20 @@ dev_langs:
 helpviewer_keywords:
 - task panes [Office development in Visual Studio], adding to application
 - custom task panes [Office development in Visual Studio], adding to application
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b8608fcc263be4750c38b6fe3f84967f40dd34ab
-ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
+ms.openlocfilehash: 6436176c7af4206319d9d2f8408baccb0572da5b
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/25/2018
-ms.locfileid: "34548810"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53646993"
 ---
-# <a name="how-to-add-a-custom-task-pane-to-an-application"></a>如何： 應用程式中加入自訂工作窗格
-  您可以使用 VSTO 增益集，將自訂工作窗格加入上面所列的應用程式。 如需詳細資訊，請參閱[自訂工作窗格](../vsto/custom-task-panes.md)。  
+# <a name="how-to-add-a-custom-task-pane-to-an-application"></a>HOW TO：應用程式中加入自訂工作窗格
+  您可以使用 VSTO 增益集，將自訂工作窗格加入上面所列的應用程式。 如需詳細資訊，請參閱 <<c0> [ 自訂工作窗格](../vsto/custom-task-panes.md)。  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
   
@@ -35,17 +35,17 @@ ms.locfileid: "34548810"
   
 ### <a name="to-add-a-custom-task-pane-to-an-application"></a>若要在應用程式中加入自訂工作窗格  
   
-1.  針對上面所列的其中一個應用程式，開啟或建立 VSTO 增益集專案。 如需詳細資訊，請參閱[How to： 在 Visual Studio 建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
+1.  針對上面所列的其中一個應用程式，開啟或建立 VSTO 增益集專案。 如需詳細資訊，請參閱[＜How to：在 Visual Studio 中建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
   
 2.  在 [專案]  功能表上，按一下 [加入使用者控制項] 。  
   
-3.  在**加入新項目**對話方塊方塊中，變更至新的使用者控制項名稱**MyUserControl**，然後按一下 **新增**。  
+3.  在 **加入新項目**對話方塊方塊中，變更至新的使用者控制項的名稱**MyUserControl**，然後按一下**新增**。  
   
      使用者控制項隨即在設計工具中開啟。  
   
-4.  新增一或多個 Windows Form 控制項，從**工具箱**至使用者控制項。  
+4.  新增一或多個 Windows Forms 控制項，從**工具箱**至使用者控制項。  
   
-5.  開啟**ThisAddIn.cs**或**ThisAddIn.vb**程式碼檔案。  
+5.  開啟**ThisAddIn.cs**或是**ThisAddIn.vb**程式碼檔案。  
   
 6.  將下列程式碼加入 `ThisAddIn` 類別。 此程式碼會將 `MyUserControl` 和 <xref:Microsoft.Office.Tools.CustomTaskPane> 的執行個體宣告為 `ThisAddIn` 類別的成員。  
   
@@ -58,11 +58,11 @@ ms.locfileid: "34548810"
      [!code-csharp[Trin_TaskPaneBasic#2](../vsto/codesnippet/CSharp/Trin_TaskPaneBasic/ThisAddIn.cs#2)]  
   
     > [!NOTE]  
-    >  這個程式碼會使您自訂的工作窗格與應用程式中的現用視窗相關聯。 對於某些應用程式，您可能想要修改這個程式碼以確保工作窗格會隨其他文件或項目一起在應用程式中顯示。 如需詳細資訊，請參閱[自訂工作窗格](../vsto/custom-task-panes.md)。  
+    >  這個程式碼會使您自訂的工作窗格與應用程式中的現用視窗相關聯。 對於某些應用程式，您可能想要修改這個程式碼以確保工作窗格會隨其他文件或項目一起在應用程式中顯示。 如需詳細資訊，請參閱 <<c0> [ 自訂工作窗格](../vsto/custom-task-panes.md)。  
   
 ## <a name="see-also"></a>另請參閱  
  [Office UI 自訂](../vsto/office-ui-customization.md)   
  [自訂工作窗格](../vsto/custom-task-panes.md)   
- [逐步解說： 運用自訂工作窗格應用程式自動化](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md)  
+ [逐步解說：自動化運用自訂工作窗格應用程式](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md)  
   
   

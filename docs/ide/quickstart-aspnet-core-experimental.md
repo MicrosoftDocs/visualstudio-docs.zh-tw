@@ -1,5 +1,5 @@
 ---
-title: 以 C# 建立 ASP.NET Core Web 應用程式
+title: 使用 Visual Studio 在 C# 中建立 ASP.NET Core Web 應用程式
 description: 了解如何在 Visual Studio 中使用 C# 與 ASP.NET Core 逐步建立簡單的 Hello World Web 應用程式。
 ms.custom: mvc
 ms.date: 10/29/2018
@@ -14,12 +14,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: ab4ce9393e922dec6677d37d7679e1a400a2b5fc
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: 8487d09c75ff8880fd6c3fe4af59fa2b494b315e
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53158875"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684963"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-app"></a>快速入門：使用 Visual Studio 建立您的第一個 ASP.NET Core Web 應用程式
 
@@ -105,8 +105,8 @@ ms.locfileid: "53158875"
 若要深入了解，請繼續進行下列教學課程：
 
 > [!div class="nextstepaction"]
-> [Visual Studio 中的 C# 和 ASP.NET 使用者入門](tutorial-csharp-aspnet-core.md)
+> [Visual Studio 中的 C# 和 ASP.NET 使用者入門](../get-started/csharp/tutorial-aspnet-core.md)
 
 ## <a name="see-also"></a>另請參閱
 
-[使用 Visual Studio 將 Web 應用程式發行到 Azure App Service](..//deployment/quickstart-deploy-to-azure.md)
+[使用 Visual Studio 將 Web 應用程式發行到 Azure App Service](../deployment/quickstart-deploy-to-azure.md)

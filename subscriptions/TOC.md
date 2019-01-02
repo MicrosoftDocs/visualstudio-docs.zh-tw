@@ -44,7 +44,6 @@
 #### [Azure 諮詢對談](vs-azure-advisory-chat.md)
 #### [Azure 社群](vs-azure-community.md)
 #### [技術支援](vs-tech-support.md)
-#### [開發人員社群支援](vs-priority-support.md)
 #### [指引支援](vs-concierge-chat.md)
 ## 管理訂閱
 ### [系統管理員責任](admin-responsibilities.md)

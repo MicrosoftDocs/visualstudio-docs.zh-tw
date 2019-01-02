@@ -1,5 +1,5 @@
 ---
-title: 逐步解說： 偵錯 SharePoint 應用程式使用 IntelliTrace |Microsoft Docs
+title: 逐步解說：使用 IntelliTrace 偵錯 SharePoint 應用程式 |Microsoft Docs
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -19,14 +19,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 59f801c79c8bb19a63064bdac2fe717ee3e3a845
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 307d4842f25b3227f3857cf81be154a5db817a7e
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295576"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53804282"
 ---
-# <a name="walkthrough-debug-a-sharepoint-application-by-using-intellitrace"></a>逐步解說： 偵錯 SharePoint 應用程式使用 IntelliTrace
+# <a name="walkthrough-debug-a-sharepoint-application-by-using-intellitrace"></a>逐步解說：使用 IntelliTrace 偵錯 SharePoint 應用程式
 
 藉由使用 IntelliTrace，您可以更輕鬆地偵錯 SharePoint 方案。 傳統偵錯工具可讓您只是方案的快照集在目前時間。 不過，您可以使用 IntelliTrace 來檢閱過去您方案中發生的事件和在其中發生的人員，並巡覽至程式碼的內容。
 
@@ -206,7 +206,7 @@ ms.locfileid: "51295576"
     {
         // The following line induces an error to demonstrate debugging.
         // Remove this line later for proper operation.
-        throw new System.InvalidOperationException("A serious error occurred!"); 
+        throw new System.InvalidOperationException("A serious error occurred!");
         try
         {
             using (SPSite site = new SPSite(siteUrl))
@@ -261,7 +261,7 @@ ms.locfileid: "51295576"
 
 2. 顯示 公告 和 工作清單的內容。
 
-     宣告清單應該具有名為新公告**已啟動 」 功能： IntelliTraceTest_Feature1**，且 [工作] 清單應具有新的工作，名為**停用功能： IntelliTraceTest_Feature1**。 如果任一項目遺失，請確認是否要啟用此功能。 如果它是不會啟動，啟動它。
+     宣告清單應該會有新的宣告名為**已啟動 」 功能：IntelliTraceTest_Feature1**，且 [工作] 清單應具有新的工作，稱為**停用功能：IntelliTraceTest_Feature1**。 如果任一項目遺失，請確認是否要啟用此功能。 如果它是不會啟動，啟動它。
 
 3. 停用此功能，藉由執行下列步驟：
 
@@ -280,9 +280,9 @@ ms.locfileid: "51295576"
 如果您在執行 SharePoint 的系統上安裝 Microsoft Monitoring Agent，您可以使用 IntelliTrace 所傳回的一般資訊比更特定的資料來偵錯 SharePoint 方案。 代理程式適用於 Visual Studio 之外透過 PowerShell cmdlet 來擷取您的 SharePoint 方案執行時的偵錯資訊。
 
 > [!NOTE]
-> 本章節中的組態資訊是此範例中的特定項目。 如需其他組態選項的詳細資訊，請參閱[使用 IntelliTrace 獨立收集器](/visualstudio/debugger/using-the-intellitrace-stand-alone-collector)。
+> 本章節中的組態資訊是此範例中的特定項目。 如需其他組態選項的詳細資訊，請參閱[使用 IntelliTrace 獨立收集器](../debugger/using-the-intellitrace-stand-alone-collector.md)。
 
-1. 在執行 SharePoint 的電腦上[設定 Microsoft Monitoring Agent，並開始監視您的解決方案](/visualstudio/debugger/using-the-intellitrace-stand-alone-collector)。
+1. 在執行 SharePoint 的電腦上[設定 Microsoft Monitoring Agent，並開始監視您的解決方案](../debugger/using-the-intellitrace-stand-alone-collector.md)。
 
 2. 停用此功能：
 
@@ -310,7 +310,7 @@ ms.locfileid: "51295576"
 
 2. 選擇**偵錯例外狀況** 按鈕。
 
-     出現提示時，載入符號檔。 在 [ **IntelliTrace** ] 視窗中，例外狀況會反白顯示為 「 擲回： 發生嚴重錯誤 ！"。
+     出現提示時，載入符號檔。 在 [ **IntelliTrace** ] 視窗中，例外狀況會反白顯示為 「 擲回：發生嚴重錯誤 ！ 」。
 
      在 [IntelliTrace] 視窗中，選擇要顯示失敗的程式碼的例外狀況。
 
@@ -334,6 +334,6 @@ ms.locfileid: "51295576"
 
 ## <a name="see-also"></a>另請參閱
 
-[驗證及偵錯 SharePoint 程式碼](../sharepoint/verifying-and-debugging-sharepoint-code.md)  
-[IntelliTrace](/visualstudio/debugger/intellitrace)  
-[逐步解說： 使用單元測試來確認 SharePoint 程式碼](/previous-versions/visualstudio/visual-studio-2010/gg599006\(v\=vs.100\))
+- [驗證及偵錯 SharePoint 程式碼](../sharepoint/verifying-and-debugging-sharepoint-code.md)
+- [IntelliTrace](../debugger/intellitrace.md)
+- [逐步解說：使用單元測試來確認 SharePoint 程式碼](/previous-versions/visualstudio/visual-studio-2010/gg599006\(v\=vs.100\))
