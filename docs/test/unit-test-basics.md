@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dff6910f74b9a08a8064e4fb88828a21940c8ab9
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 2b56608a0d81be17fbd68ad7ccd0d5626a818376
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53053165"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53740347"
 ---
 # <a name="unit-test-basics"></a>單元測試基本概念
 
@@ -257,7 +257,7 @@ public void My_Test ()
 
 2.  在 [測試總管] 中選取測試方法，然後從捷徑功能表中選擇 [偵錯選取的測試]。
 
-進一步了解 [偵錯單元測試](../debugger/debugging-in-visual-studio.md)的詳細資料。
+進一步了解 [偵錯單元測試](../debugger/debugger-feature-tour.md)的詳細資料。
 
 **問：如果我使用 TDD，要如何從我的測試產生程式碼？**
 

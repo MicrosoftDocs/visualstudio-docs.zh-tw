@@ -10,12 +10,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - multiple
-ms.openlocfilehash: c28dcf247a9e0faaec13ddc4b3006cf6a93fda90
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: 5923e3106ad93608effe2604d4305cc0f3038a58
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46496138"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53802796"
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Visual Studio 中的跨平台行動裝置應用程式開發
 
@@ -34,9 +34,9 @@ ms.locfileid: "46496138"
 |**進一步了解**|
 |--------------------|
 |[安裝 Visual Studio](http://visualstudio.microsoft.com/products/visual-studio-community-vs) (VisualStudio.com)|
-|[了解 Visual Studio 中的 Xamarin](https://visualstudio.microsoft.com/xamarin/) (VisualStudio.com)|
+|[了解 Visual Studio 的 Xamarin](https://visualstudio.microsoft.com/xamarin/) (VisualStudio.com)|
 |[Xamarin 行動應用程式開發文件](/xamarin/) |
-|[使用 Xamarin 應用程式進行 DevOps](../cross-platform/application-lifecycle-management-alm-with-xamarin-apps.md) |
+|[使用 Xamarin 應用程式進行 DevOps](/xamarin/tools/ci/devops/) |
 |[了解 Visual Studio 的通用 Windows app](https://visualstudio.microsoft.com/vs/universal-windows-platform/) (VisualStudio.com)|
 |[了解 Swift 與 C# 之間的相似性](http://aka.ms/scposter) (download.microsoft.com)|
 
@@ -54,7 +54,7 @@ ms.locfileid: "46496138"
 
 #### <a name="design-one-set-of-pages-that-render-across-all-devices-by-using-xamarinforms"></a>設計一組頁面，使用 Xamarin.Forms 在所有裝置上轉譯
 
- 根據您應用程式設計的複雜度，您可能會考慮使用專案範本之 [行動應用程式] 群組中的 **Xamarin.Forms** 範本，來建置應用程式。 Xamarin.Forms 是可讓您建立單一使用者介面的 UI 工具組，您可以跨 Android、iOS 和 Windows 共用該介面。  當您編譯 Xamarin.Forms 方案時，將取得 Android 應用程式、iOS 應用程式和 Windows 應用程式。 如需詳細資訊，請參閱[了解如何使用 Xamarin 進行行動裝置應用程式開發](../cross-platform/learn-about-mobile-development-with-xamarin.md)和 [Xamarin.Forms 文件](/xamarin/xamarin-forms/)。
+ 根據您應用程式設計的複雜度，您可能會考慮使用專案範本之 [行動應用程式] 群組中的 **Xamarin.Forms** 範本，來建置應用程式。 Xamarin.Forms 是可讓您建立單一使用者介面的 UI 工具組，您可以跨 Android、iOS 和 Windows 共用該介面。  當您編譯 Xamarin.Forms 方案時，將取得 Android 應用程式、iOS 應用程式和 Windows 應用程式。 如需詳細資訊，請參閱[了解如何使用 Xamarin 進行行動裝置應用程式開發](/xamarin/cross-platform/get-started/introduction-to-mobile-development/)和 [Xamarin.Forms 文件](/xamarin/xamarin-forms/)。
 
 ####  <a name="ShareHTML"></a> 在 Android、iOS 和 Windows 應用程式之間共用程式碼
 
@@ -139,7 +139,7 @@ ms.locfileid: "46496138"
 |[安裝跨平台行動裝置開發適用的 Visual C++ 工具。](https://msdn.microsoft.com/library/dn707591.aspx) (MSDN Library)。|
 |[進一步了解如何使用 C++ 來將多個平台作為目標。](https://visualstudio.microsoft.com/vs/cplusplus-mdd/) (VisualStudio.com)|
 |[安裝所需項目，然後建立 Android 原生活動應用程式](https://msdn.microsoft.com/library/dn707595.aspx) (MSDN Library)|
-|[深入了解如何與 Android 和 Windows 應用程式共用 C++ 程式碼](https://visualstudio.microsoft.com/vs/cplusplus-mdd/) (VisualStudio.com)|
+|[深入了解與 Android 及 Windows 應用程式共用 C++ 程式碼](https://visualstudio.microsoft.com/vs/cplusplus-mdd/) (VisualStudio.com)|
 |[適用於 C++ 的跨平台行動開發範例](https://msdn.microsoft.com/library/dn707596.aspx) (MSDN Library)|
 |[其他適用於 C++ 的跨平台行動開發範例](https://code.msdn.microsoft.com/site/search?f%5B0%5D.Type=SearchText&f%5B0%5D.Value=android&f%5B1%5D.Type=ProgrammingLanguage&f%5B1%5D.Value=C%2B%2B&f%5B1%5D.Text=C%2B%2B) (code.msdn)|
 

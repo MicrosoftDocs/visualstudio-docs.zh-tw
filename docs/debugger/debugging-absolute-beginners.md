@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 31b6812ec41aedd4e33eb0d043476365d3938767
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: 2540f5ed20ae07ab317c0ea23f35de386117fa13
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53160019"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561508"
 ---
 # <a name="how-to-debug-for-absolute-beginners"></a>完全初學者如何偵錯
 
@@ -332,4 +332,4 @@ ms.locfileid: "53160019"
 在本文中，您已了解幾個一般偵錯概念。 接下來，您可以開始深入了解偵錯工具。
 
 > [!div class="nextstepaction"]
-> [了解使用 Visual Studio 進行偵錯](../debugger/getting-started-with-the-debugger.md)
+> [偵錯工具簡介](../debugger/debugger-feature-tour.md)

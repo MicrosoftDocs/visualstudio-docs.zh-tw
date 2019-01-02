@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 70a06548dd25ade1bf64bad6a99261e043f6ac65
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 9c0fac6932413b5d1992cf9c775415d63abf0344
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50670828"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684830"
 ---
 # <a name="options-page-debugging-node-properties"></a>偵錯節點屬性、選項頁
 下表描述與 [選項] 對話方塊的 [偵錯] 分類 `DTE.Properties("Debugging", <Property Page>)` 相關聯的頁面 (或屬性集合)。
@@ -23,7 +23,7 @@ ms.locfileid: "50670828"
 ## <a name="general"></a>一般
  `DTE.Properties("Debugging", "General")`
 
-|屬性項目名稱|值|描述|
+|屬性項目名稱|值|說明|
 | - |-----------|-----------------|
 |PromptOnBreakpointDelete|Get/Set (布林值)|判斷偵錯工具是否先提示權限，再刪除專案中的所有中斷點。|
 |BreakAllProcesses|Get/Set (布林值)|決定是否只要單一處理序中斷，偵錯工具即中斷所有處理序。|
@@ -53,7 +53,7 @@ ms.locfileid: "50670828"
 ## <a name="edit-and-continue"></a>編輯後繼續
  `DTE.Properties("Debugging", "EditAndContinue")`
 
-|屬性項目名稱|值|描述|
+|屬性項目名稱|值|說明|
 | - |-----------|-----------------|
 |EnableEditAndContinue|Get/Set (布林值)|決定是否啟用 [編輯後繼續]。 此選項適用於所有支援 [編輯後繼續] 的語言。|
 |InvokedByCommands|Get/Set (布林值)|當使用者選取 [步驟] 或 [繼續] 等偵錯命令時，決定 [編輯後繼續] 是否自動套用程式碼變更。 此選項僅適用於原生程式碼。|
@@ -65,7 +65,7 @@ ms.locfileid: "50670828"
 ## <a name="just-in-time"></a>Just-In-Time
  `DTE.Properties("Debugging", "JustInTime")`
 
-|屬性項目名稱|值|描述|
+|屬性項目名稱|值|說明|
 | - |-----------|-----------------|
 |JitManaged|Get/Set (布林值)|決定 Managed 程式碼是否啟用 Just-In-Time 偵錯。|
 |JitNative|Get/Set (布林值)|決定原生程式碼是否啟用 Just-In-Time 偵錯。|
@@ -74,7 +74,7 @@ ms.locfileid: "50670828"
 ## <a name="native"></a>原生
  `DTE.Properties("Debugging", "Native")`
 
-|屬性項目名稱|值|描述|
+|屬性項目名稱|值|說明|
 | - |-----------|-----------------|
 |LoadDllExports|Get/Set (布林值)|決定偵錯工具是否載入 DLL 匯出表。|
 |EnableRPC|Get/Set (布林值)|決定偵錯工具是否可以逐步執行至 COM 遠端程序呼叫。|
@@ -86,5 +86,5 @@ ms.locfileid: "50670828"
 - [字型和色彩節點屬性、選項頁面](../../ide/reference/options-page-fonts-and-colors-node-properties.md)
 - [文字編輯器節點屬性、選項頁面](../../ide/reference/options-page-text-editor-node-properties.md)
 - [選項對話方塊、偵錯、一般](../../debugger/general-debugging-options-dialog-box.md)
-- [選項對話方塊、偵錯、編輯後繼續](/visualstudio/debugger/edit-and-continue?view=vs-2015)
+- [選項對話方塊、偵錯、編輯後繼續](../../debugger/edit-and-continue.md?view=vs-2015)
 - [選項對話方塊、偵錯、Just-In-Time](../../debugger/just-in-time-debugging-options-dialog-box.md)

@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 40b2d37e5b416047aa8a6fecf8c2c9cca0c681ca
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 4ac332e7feca281f49ad6b56030a26dbd9a41e47
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53062976"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53803068"
 ---
 # <a name="design-xaml-in-visual-studio"></a>在 Visual Studio 中設計 XAML
 
@@ -42,7 +42,7 @@ Visual Studio 和 Blend for Visual Studio 都提供視覺化工具，用於為�
 
 - **XAML IntelliSense：** 兩者的 IDE 都支援所有您預期來自 IntelliSense 的通用功能，包括陳述式完成、支援一般編輯器作業，例如註解和格式化程式碼，以及巡覽至資源、繫結和程式碼。
 
-- **基本偵錯功能：** 您現在可以在 Blend 中偵錯，包括在程式碼中設定中斷點來偵錯執行中的應用程式。 為了維持與 Visual Studio 一致的偵錯體驗，Blend for Visual Studio 包含大部分的 Visual Studio 偵錯視窗和工具列。 進階偵錯功能，例如診斷和程式碼分析，只能在 Visual Studio 中使用。 請參閱[在 Visual Studio 中偵錯](../debugger/debugging-in-visual-studio.md)。
+- **基本偵錯功能：** 您現在可以在 Blend 中偵錯，包括在程式碼中設定中斷點來偵錯執行中的應用程式。 為了維持與 Visual Studio 一致的偵錯體驗，Blend for Visual Studio 包含大部分的 Visual Studio 偵錯視窗和工具列。 進階偵錯功能，例如診斷和程式碼分析，只能在 Visual Studio 中使用。 請參閱[在 Visual Studio 中偵錯](../debugger/debugger-feature-tour.md)。
 
 - **檔案重新載入體驗：** 您可以在 Blend for Visual Studio 或 Visual Studio 中編輯 XAML 檔案，當您在已編輯的檔案之間切換時，會讓它們自動重新載入。 若要降低工作流程中斷，您現在可以在 [檔案重新載入] 對話方塊中設定您的檔案重新載入喜好。
 

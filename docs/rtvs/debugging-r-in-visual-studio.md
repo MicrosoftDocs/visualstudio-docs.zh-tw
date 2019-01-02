@@ -10,16 +10,16 @@ ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: c89eed2f3e15259489ce43920b912db14ab862a6
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: 1f0f37be96603ed5d1e53c5ef36ea011d636dcaa
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36235243"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53804847"
 ---
 # <a name="debug-r-in-visual-studio"></a>在 Visual Studio 中偵錯 R
 
-Visual Studio R 工具整合了完整的 Visual Studio 偵錯體驗 (請參閱 [Visual Studio 偵錯](../debugger/debugging-in-visual-studio.md)。 這項支援包括中斷點、附加至執行中處理序、檢查和監看變數，以及檢查呼叫堆疊。 本文接著會探索 R 和 RTVS 特有的偵錯功能。
+Visual Studio R 工具整合了完整的 Visual Studio 偵錯體驗 (請參閱 [Visual Studio 偵錯](/visualstudio/debugger/debugger-feature-tour)。 這項支援包括中斷點、附加至執行中處理序、檢查和監看變數，以及檢查呼叫堆疊。 本文接著會探索 R 和 RTVS 特有的偵錯功能。
 
 在 R 專案中，啟動 R 檔案的偵錯工具啟動方式，與其他專案類型一樣︰使用 [偵錯] > [啟動偵錯]、**F5** 鍵，或 [偵錯] 工具列上的 [執行啟動檔案]： 
 
@@ -55,7 +55,7 @@ add <- function(x, y) {
 
 環境瀏覽器支援許多特殊命令︰
 
-| 命令 | 描述 |
+| 命令 | 說明 |
 | --- | --- |
 | n | 下一步︰執行程式碼檔案中的下一個陳述式 (與不進入函式相同)。 |
 | 秒 | 逐步執行︰執行程式碼檔案中的下一個陳述式，如果下一個陳述式是函式呼叫，則逐步執行函式範圍。 |

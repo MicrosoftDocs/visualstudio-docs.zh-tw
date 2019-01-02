@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2df7031baffcdcfcac07f4b2054ff2aeb9ab81ab
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2c581797c36cfd69032ef635a9944b339333d6de
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49885755"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684674"
 ---
 # <a name="user-permissions-and-visual-studio"></a>使用者權限和 Visual Studio
 
@@ -33,12 +33,12 @@ ms.locfileid: "49885755"
 |區域圖|工作|如需詳細資訊|
 |----------|----------| - |
 |安裝|安裝 Visual Studio。|[安裝 Visual Studio](../install/install-visual-studio.md)|
-||安裝、更新或移除本機說明內容。|[安裝和管理本機說明內容](../ide/install-and-manage-local-content.md)|
+||安裝、更新或移除本機說明內容。|[安裝和管理本機說明內容](../help-viewer/install-manage-local-content.md)|
 |工具箱|將傳統 COM 控制項新增至 [工具箱]。|[工具箱](../ide/reference/toolbox.md)|
 |建置|使用註冊元件的建置後事件。|[了解自訂建置步驟和建置事件](/cpp/ide/understanding-custom-build-steps-and-build-events)|
 ||包含當您建置 C++ 專案時的註冊步驟。||
 |偵錯|對以更高權限執行的應用程式進行偵錯。|[偵錯設定和準備](../debugger/debugger-settings-and-preparation.md)|
-||對在不同使用者帳戶下執行的應用程式進行偵錯，例如 ASP.NET 網站。|[對 ASP.NET 和 AJAX 應用程式進行偵錯](../debugger/debugging-aspnet-and-ajax-applications.md)|
+||對在不同使用者帳戶下執行的應用程式進行偵錯，例如 ASP.NET 網站。|[對 ASP.NET 和 AJAX 應用程式進行偵錯](../debugger/how-to-enable-debugging-for-aspnet-applications.md)|
 ||在 XAML 瀏覽器應用程式 (XBAP) 的區域中進行偵錯。|[WPF 主應用程式 (PresentationHost.exe)](/dotnet/framework/wpf/app-development/wpf-host-presentationhost-exe)|
 ||使用模擬器來對 Microsoft Azure 雲端服務專案進行偵錯。|[在 Visual Studio 中針對雲端服務進行偵錯](/azure/vs-azure-tools-debug-cloud-services-virtual-machines)|
 ||設定遠端偵錯的防火牆。|[遠端偵錯](../debugger/remote-debugging.md)|
