@@ -15,12 +15,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: a1d7b165466f686549273394c204e4ab31c06b46
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: a68909f602b0be0139cbbe98701012bb3af1ff30
+ms.sourcegitcommit: a715de2ba8c703f37aa2102567b1aa2c0f05a117
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53158602"
+ms.lasthandoff: 12/15/2018
+ms.locfileid: "53441531"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-c-console-app"></a>快速入門：使用 Visual Studio 建立您的第一個 C# 主控台應用程式
 
@@ -99,4 +99,4 @@ ms.locfileid: "53158602"
 恭喜您完成此快速入門！ 希望您已經更了解 C# 和 Visual Studio IDE。 若要深入了解，請繼續進行下列教學課程。
 
 > [!div class="nextstepaction"]
-> [開始在 Visual Studio 中使用 C# 主控台應用程式](tutorial-csharp-console.md)
+> [開始在 Visual Studio 中使用 C# 主控台應用程式](../get-started/csharp/tutorial-console.md)
