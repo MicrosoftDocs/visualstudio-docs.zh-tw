@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0bf1ca8fabf70f2d4fbe5920803773af07db0a99
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 4ee9d52f63f3158979f2f018ea44d5b68d6612c1
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389224"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53562330"
 ---
 # <a name="view-threads-and-tasks-in-the-parallel-stacks-window"></a>在 [平行堆疊] 視窗中檢視執行緒和工作
 
@@ -48,7 +48,7 @@ ms.locfileid: "52389224"
 
 ![在 [平行堆疊] 視窗的工具列](../debugger/media/parallel_stackstoolbar.png "平行堆疊 工具列")  
   
-|圖示|控制項|描述|  
+|圖示|控制項|說明|  
 |-|-|-|  
 |![執行緒/工作下拉式方塊](media/parallel_toolbar1.png "執行緒/工作下拉式方塊")|**執行緒**/**工作**下拉式方塊|切換執行緒呼叫堆疊檢閱和工作呼叫堆疊檢閱。 如需詳細資訊，請參閱[工作檢視](#tasks-view)和[執行緒檢視](#threads-view)。|  
 |![顯示只加上旗標圖示](media/parallel_toolbar2.png "僅顯示已標幟的圖示")|僅顯示有旗標的項目|顯示呼叫堆疊，只針對這類標示其他偵錯工具視窗中，執行緒**GPU 執行緒**視窗和**平行監看式**視窗。|  
@@ -59,7 +59,7 @@ ms.locfileid: "52389224"
 ### <a name="stack-frame-icons"></a>堆疊框架的圖示
 下列圖示會提供所有檢視中的作用中和目前的堆疊框架的相關資訊：
 
-|圖示|描述|  
+|圖示|說明|  
 |-|-|  
 |![黃色箭號](media/icon_parallelyellowarrow.gif)|表示目前執行緒的目前位置 （作用中堆疊框架）。|
 |![執行緒圖示](media/icon_parallelthreads.gif)|表示非目前執行緒的目前位置 （作用中堆疊框架）。|
@@ -70,7 +70,7 @@ ms.locfileid: "52389224"
 
 ![[平行堆疊] 視窗中的快顯功能表](../debugger/media/parallel_contmenu.png "平行堆疊 視窗中的快顯功能表")  
 
-|Menu item|描述|  
+|Menu item|說明|  
 |-|-|  
 |**旗標**|將選取的項目加上旗標。|  
 |**取消旗標**|取消所選取項目的旗標。|  
@@ -100,7 +100,7 @@ ms.locfileid: "52389224"
 
 下表描述的主要特色**執行緒**檢視：  
   
-|圖說文字|元素名稱|描述|  
+|圖說文字|元素名稱|說明|  
 |-|-|-|  
 |1|呼叫堆疊區段或節點|包含一系列的一個或多個執行緒的方法。 如果畫面不連線到它的箭號行，框架會顯示執行緒的整個呼叫路徑。|  
 |2|藍色醒目提示|表示目前執行緒的呼叫路徑。|  
@@ -122,7 +122,7 @@ ms.locfileid: "52389224"
 
 如下圖所示**執行緒**檢視，在頂端，並對應**工作**底部的檢視。  
 
-![執行緒 和 [工作] 檢視](../debugger/media/parallel_threads-tasks.png "執行緒 和 [工作] 檢視")  
+![[執行緒] 和 [工作] 檢視](../debugger/media/parallel_threads-tasks.png "[執行緒] 和 [工作] 檢視")  
 
 暫留在顯示工具提示的其他資訊的方法。 在 **工作**檢視中，工具提示會顯示所有工作資料表中類似**工作**視窗。 
 
@@ -139,9 +139,8 @@ ms.locfileid: "52389224"
   
 ## <a name="see-also"></a>另請參閱  
  [開始偵錯多執行緒應用程式](../debugger/get-started-debugging-multithreaded-apps.md)   
- [逐步解說：針對平行應用程式進行偵錯](../debugger/walkthrough-debugging-a-parallel-application.md)   
- [偵錯工具基礎](../debugger/getting-started-with-the-debugger.md)   
- [針對受控碼進行偵錯](../debugger/debugging-managed-code.md)   
+ [逐步解說：偵錯平行應用程式](../debugger/walkthrough-debugging-a-parallel-application.md)   
+ [第一次查看偵錯工具](../debugger/debugger-feature-tour.md)[偵錯 managed 程式碼](../debugger/debugging-managed-code.md)   
  [平行程式設計](/dotnet/standard/parallel-programming/index)   
  [使用工作視窗](../debugger/using-the-tasks-window.md)   
  [工作類別](../extensibility/debugger/task-class-internal-members.md)

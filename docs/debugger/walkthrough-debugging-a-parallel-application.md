@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 48bcfe8ca54236fc2134d431f5f6dd16d4b82a48
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
-ms.translationtype: HT
+ms.openlocfilehash: 0623c3e0fdd0db0315e5fe719c9a81ec97e6a2c6
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53060183"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53562096"
 ---
 # <a name="walkthrough-debugging-a-parallel-application-in-visual-studio"></a>逐步解說：偵錯在 Visual Studio 中的平行應用程式
 本逐步解說顯示如何使用 [平行工作] 和 [平行堆疊] 視窗來偵錯平行應用程式。 這些視窗可協助您了解，並確認使用的程式碼的執行階段行為[Task Parallel Library (TPL)](/dotnet/standard/parallel-programming/task-parallel-library-tpl)或[並行執行階段](/cpp/parallel/concrt/concurrency-runtime)。 本逐步解說提供具有內建中斷點的範例程式碼。 在程式碼中斷之後，本逐步解說會顯示如何使用 [平行工作] 和 [平行堆疊] 視窗來檢查程式碼。  
@@ -156,7 +156,7 @@ ms.locfileid: "53060183"
   
      請注意，S.L 在其他兩個方塊中是粗體，所以您可以看到它出現在其他地方。 如果您要查看有哪些框架呼叫 S.L 和它呼叫哪些框架，請按一下工具列的 [切換方法檢視] 按鈕。 下圖顯示的方法檢視**平行堆疊**視窗。  
   
-     ![平行堆疊視窗中的方法檢視](../debugger/media/pdb_walkthrough_4.png "PDW_Walkthrough_4")  
+     ![[平行堆疊] 視窗中的 [方法檢視]](../debugger/media/pdb_walkthrough_4.png "PDW_Walkthrough_4")  
   
      請注意圖表如何隨選取的方法而轉移，以及它在檢視中間如何放在自己的方塊中。 被呼叫端和呼叫端出現在上方和下方。 再按一次 [切換方法檢視] 按鈕以結束這個模式。  
   
@@ -298,7 +298,7 @@ ms.locfileid: "53060183"
   
 ## <a name="see-also"></a>請參閱  
  [偵錯多執行緒應用程式](../debugger/walkthrough-debugging-a-parallel-application.md)   
- [偵錯工具基礎](../debugger/getting-started-with-the-debugger.md)   
+ [偵錯工具簡介](../debugger/debugger-feature-tour.md)  
  [偵錯 Managed 程式碼](../debugger/debugging-managed-code.md)   
  [平行程式設計](/dotnet/standard/parallel-programming/index)   
  [並行執行階段](/cpp/parallel/concrt/concurrency-runtime)   
