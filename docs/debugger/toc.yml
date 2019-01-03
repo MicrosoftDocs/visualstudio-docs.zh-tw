@@ -265,7 +265,7 @@ items:
       - name: 請確認目標電腦上的 DNS 設定都正確
         href: error-ensure-that-dns-is-correctly-configured-on-the-target-computer.md
       - name: Microsoft Visual Studio 遠端偵錯監視 (MSVSMON.EXE) 似乎沒有在遠端電腦上執行。
-        href: error-the-microsoft-visual-studio-remote-debugging-monitor-msvsmon-exe-does-not-appear-to-be-running-on-the-remote-computer.md
+        href: /visualstudio/debugger/error-remote-debugging-monitor-msvsmon-exe-does-not-appear-to-be-running
       - name: 無法連線至 Microsoft Visual Studio 遠端偵錯監視
         href: unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor.md
       - name: 無法起始 DCOM 通訊
@@ -840,9 +840,9 @@ items:
   items:
   - name: Visual Studio 中偵錯工具的新功能
     href: what-s-new-for-the-debugger-in-visual-studio.md
-ms.openlocfilehash: cb7973423106d5c7b2af72b005226722eb07ef5b
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.openlocfilehash: 149cc7c04aad0d070a538ef32aa6b14c015eee56
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53561732"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53947474"
