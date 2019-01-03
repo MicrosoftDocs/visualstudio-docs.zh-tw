@@ -1,5 +1,5 @@
 ---
-title: 如何： 指定 ClickOnce 應用程式的開始功能表名稱 |Microsoft Docs
+title: HOW TO：指定 ClickOnce 應用程式的開始功能表名稱 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -18,19 +18,21 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d6bf265b2e3761ba1fd929e72e29f4c2c47cd449
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
-ms.translationtype: MT
+ms.openlocfilehash: a7cf4f2b30079a76012acfe972ea0de0b9e0ea78
+ms.sourcegitcommit: 34840a954ed3446c789e80ee87da6cbf1203cbb5
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39079552"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53592829"
 ---
-# <a name="how-to-specify-a-start-menu-name-for-a-clickonce-application"></a>如何： 指定 ClickOnce 應用程式的開始功能表名稱
+# <a name="how-to-specify-a-start-menu-name-for-a-clickonce-application"></a>HOW TO：指定 ClickOnce 應用程式的開始功能表名稱
 當[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式已安裝的線上和離線使用，一個項目加入至**開始**功能表和**新增或移除程式**清單。 根據預設，顯示名稱是應用程式組件的名稱相同，但您可以設定來變更顯示名稱**產品名稱**中**發行選項** 對話方塊。  
   
  **產品名稱**將會顯示在*publish.htm*頁面上，安裝的離線應用程式，就會是名稱中的項目**啟動** 功能表中，而且也會在顯示的名稱**新增或移除程式**。  
   
  **發行者名稱**會出現在*publish.htm*頁面上方**產品名稱**，並已安裝的離線應用程式，也會包含應用程式的資料夾名稱中的圖示**啟動**功能表。  
+
+ 在建立開始功能表捷徑或應用程式參考 *%appdata%\Microsoft\Windows\Start Menu\Programs\\< 發行者名稱\>*。 快顯或應用程式參考具有相同的名稱，為產品名稱。
   
  您可以設定**產品名稱**並**發行者名稱**中的屬性**發行選項**對話方塊中，位於**發行**頁面**專案設計工具**。  
   
@@ -38,7 +40,7 @@ ms.locfileid: "39079552"
   
 1.  在方案總管 中選取專案之後，按一下 [專案]  功能表中 [屬性] 。  
   
-2.  按一下 [**發佈**] 索引標籤。  
+2.  按一下 [發佈] 索引標籤。  
   
 3.  按一下 **選項** 按鈕以開啟**發行選項** 對話方塊。  
   
@@ -49,5 +51,5 @@ ms.locfileid: "39079552"
 6.  （選擇性） 您可以在其中輸入中的 「 發行者 」 名稱**發行者名稱**。  
   
 ## <a name="see-also"></a>另請參閱  
- [發行 ClickOnce 應用程式](../deployment/publishing-clickonce-applications.md)   
- [如何： 發行 ClickOnce 應用程式使用發行精靈](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
+ [發佈 ClickOnce 應用程式](../deployment/publishing-clickonce-applications.md)   
+ [如何：使用 [發佈精靈] 發佈 ClickOnce 應用程式](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
