@@ -22,18 +22,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: eba1f156589babb9a3bec38982bd27b7c17a83c8
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
-ms.translationtype: MT
+ms.openlocfilehash: 8d8339d494845b5babe18835647868cad4c3323a
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39180187"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561966"
 ---
 # <a name="debugging-native-code"></a>偵錯機器碼
-本章節內容涵蓋原生應用程式一些常見的偵錯問題和技術。 本章節所涵蓋的技術屬高階技術。 使用 Visual Studio 偵錯工具的機制，請參閱 <<c0> [ 偵錯工具藍圖](../debugger/getting-started-with-the-debugger.md)。  
+本章節內容涵蓋原生應用程式一些常見的偵錯問題和技術。 本章節所涵蓋的技術屬高階技術。 使用 Visual Studio 偵錯工具的機制，請參閱 <<c0> [ 第一次查看偵錯工具](../debugger/debugger-feature-tour.md))。  
   
 ## <a name="in-this-section"></a>本節內容  
- [如何：偵錯最佳化程式碼](../debugger/how-to-debug-optimized-code.md)  
+ [如何：對最佳化程式碼進行偵錯](../debugger/how-to-debug-optimized-code.md)  
  提供偵錯最佳化程式碼的秘訣，特別說明您應該偵錯非最佳化版本程式的理由、偵錯和發行組態的預設最佳化設定，以及找出只出現在最佳化程式碼中之錯誤的秘訣 (係指在偵錯版組建組態中開啟最佳化)。  
   
  [DebugBreak 和 __debugbreak](../debugger/debugbreak-and-debugbreak.md)  
@@ -42,7 +42,7 @@ ms.locfileid: "39180187"
  [C/C++ 判斷提示](../debugger/c-cpp-assertions.md)  
  討論判斷提示陳述式、其作用方式、使用它們的優點 (攔截邏輯錯誤、檢查作業的結果和測試錯誤條件)、與 `_DEBUG` 的互動，以及 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中所支援的判斷提示類型。  
   
- [如何：偵錯內嵌組譯程式碼](../debugger/how-to-debug-inline-assembly-code.md)  
+ [如何：對內嵌組譯碼進行偵錯](../debugger/how-to-debug-inline-assembly-code.md)  
  提供使用 [反組譯碼] 視窗來檢視組譯碼指示，以及使用 [暫存器視窗] 來檢視暫存器內容的簡短指示，並提供關於這些視窗的主題連結。  
   
  [MFC 偵錯技術](../debugger/mfc-debugging-techniques.md)  
@@ -57,11 +57,11 @@ ms.locfileid: "39180187"
  [偵錯 COM 和 ActiveX](../debugger/com-and-activex-debugging.md)  
  提供偵錯 COM 和 ActiveX 應用程式的詳細資訊，包括您可以用來進行 COM 和 ActiveX 偵錯的工具。  
   
- [如何：偵錯插入程式碼](../debugger/how-to-debug-injected-code.md)  
+ [如何：對插入程式碼進行偵錯](../debugger/how-to-debug-injected-code.md)  
  提供使用屬性 (Attribute) 之程式碼的偵錯指引。 包含如何開啟來源附註、如何檢視插入程式碼，以及如何在目前的執行點上檢視反組譯碼程式碼的指示。  
   
- [逐步解說：偵錯平行應用程式](../debugger/walkthrough-debugging-a-parallel-application.md)  
- 描述如何使用**平行工作**並**平行堆疊**工具視窗來偵錯平行應用程式。  
+ [逐步解說：對平行處理應用程式進行偵錯](../debugger/walkthrough-debugging-a-parallel-application.md)  
+ 描述如何使用 [平行工作] 和 [平行堆疊] 工具視窗來偵錯平行應用程式。  
   
 ## <a name="related-sections"></a>相關章節  
  [Visual C++ 專案類型](../debugger/debugging-preparation-visual-cpp-project-types.md)  
@@ -72,6 +72,6 @@ ms.locfileid: "39180187"
  [偵錯工具功能導覽](../debugger/debugger-feature-tour.md)  
  提供偵錯相關文件的主要連結。 這些資訊包括：偵錯工具的新功能、設定和準備、中斷點、例外狀況處理、編輯後繼續、偵錯 Managed 程式碼、偵錯機器碼、偵錯 SQL，以及使用者介面的參考。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [偵錯工具安全性](../debugger/debugger-security.md)  
  [在 Visual Studio 中偵錯](../debugger/index.md)[偵錯工具功能導覽](../debugger/debugger-feature-tour.md)

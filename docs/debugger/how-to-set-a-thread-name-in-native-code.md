@@ -1,13 +1,10 @@
 ---
-title: 如何： 在原生程式碼中設定執行緒名稱 |Microsoft 文件
+title: HOW TO：在機器碼中設定執行緒名稱 |Microsoft Docs
 ms.custom: ''
-ms.date: 04/27/2017
+ms.date: 12/17/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
-- CSharp
-- VB
-- FSharp
 - C++
 helpviewer_keywords:
 - debugging [C++], threads
@@ -21,21 +18,43 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a2b751451f1362c0ba82871b99b0dbb10434282b
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 9226e009936d0a644a5a6fcfcaba57bc3af25d7d
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31480026"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53803094"
 ---
-# <a name="how-to-set-a-thread-name-in-native-code"></a>如何：在機器碼中設定執行緒名稱
-在所有 Visual Studio 版本中，都可以將執行緒命名。 執行緒命名可用於追蹤的執行緒中的**執行緒**視窗。
+# <a name="how-to-set-a-thread-name-in-native-code"></a>HOW TO：在機器碼中設定執行緒名稱
+在所有 Visual Studio 版本中，都可以將執行緒命名。 將執行緒命名後，在 [執行緒] 視窗中追蹤執行緒會很方便。
 
-若要在程式中設定執行緒名稱，請如下列程式碼範例所示，使用 `SetThreadName` 函式。 請注意，執行緒名稱會複製到執行緒，以便釋放 `threadName` 參數的記憶體。  
-  
-## <a name="example"></a>範例  
-  
-```C++  
+## <a name="set-a-thread-name"></a>設定執行緒名稱
+
+`SetThreadName`函式很適合用於設定和檢視執行緒，如果偵錯工具附加至您執行的程式碼。 從 Visual Studio 2017 15.6 版中，您可以使用[SetThreadDescription](https://docs.microsoft.com/windows/desktop/api/processthreadsapi/nf-processthreadsapi-setthreaddescription)函式來設定並檢視執行緒的名稱。
+
+```C++
+#include <windows.h>
+#include <processthreadsapi.h>
+
+int main()
+{
+    HRESULT r;
+    r = SetThreadDescription(
+        GetCurrentThread(),
+        L"ThisIsMyThreadName!"
+    );
+
+    return 0;
+}
+```
+
+## <a name="set-a-thread-name-using-setthreadname"></a>設定使用 SetThreadName 執行緒名稱
+
+若要在程式中設定執行緒名稱，您也可以使用`SetThreadName`函式，如下列程式碼範例所示。 請注意，執行緒名稱會複製到執行緒，以便釋放 `threadName` 參數的記憶體。  這個方法會使用例外狀況為基礎的方法，僅適用於偵錯工具附加至例外狀況為基礎的方法使用的時間。 您使用這個方法來設定執行緒名稱在傾印或效能分析工具將無法使用。
+
+下列程式碼範例示範如何使用`SetThreadName`:
+
+```C++
 //  
 // Usage: SetThreadName ((DWORD)-1, "MainThread");  
 //  
@@ -65,10 +84,9 @@ void SetThreadName(DWORD dwThreadID, const char* threadName) {
     }  
 #pragma warning(pop)  
 }  
-  
 ```  
-  
-## <a name="see-also"></a>另請參閱  
- [偵錯多執行緒應用程式](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
- [在 偵錯工具中檢視資料](../debugger/viewing-data-in-the-debugger.md)   
- [如何：在 Managed 程式碼中設定執行緒名稱](../debugger/how-to-set-a-thread-name-in-managed-code.md)
+
+## <a name="see-also"></a>請參閱  
+ [對多執行緒應用程式進行偵錯](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
+ [在偵錯工具中檢視資料](../debugger/viewing-data-in-the-debugger.md)   
+ [如何：在 Managed 程式碼碼中設定執行緒名稱](../debugger/how-to-set-a-thread-name-in-managed-code.md)

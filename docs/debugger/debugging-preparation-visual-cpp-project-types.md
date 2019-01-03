@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c39acdef217d2b858645073cb96da4952c91df5a
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: f8d31881bed3e40db5080d642c0d3043ef2da704
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53066310"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53562031"
 ---
 # <a name="debugging-preparation-visual-c-project-types"></a>偵錯準備：Visual C++ 專案類型
 本節說明如何對 [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] 專案範本所建立的基本專案類型進行偵錯。  
@@ -73,7 +73,7 @@ ms.locfileid: "53066310"
   
 2.  在 [偵錯] 功能表上選擇 [啟動]。  
   
-3.  使用所述的技巧進行偵錯[偵錯工具基本概念](../debugger/getting-started-with-the-debugger.md)。  
+3.  使用所述的技巧進行偵錯[第一次查看偵錯工具](../debugger/debugger-feature-tour.md)。  
   
 ###  <a name="BKMK_To_manually_set_a_Debug_configuration"></a> 手動設定偵錯組態  
   
@@ -111,7 +111,7 @@ ms.locfileid: "53066310"
  [本主題內容](../debugger/debugging-preparation-visual-cpp-project-types.md#BKMK_In_this_topic)  
   
 ## <a name="see-also"></a>請參閱  
- [偵錯工具基礎](../debugger/getting-started-with-the-debugger.md)   
+ [偵錯工具簡介](../debugger/debugger-feature-tour.md)   
  [C++ 偵錯組態的專案設定](../debugger/project-settings-for-a-cpp-debug-configuration.md)   
  [附加至正在執行的程式或多個程式](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)   
  [偵錯和發行組態](../debugger/how-to-set-debug-and-release-configurations.md)   

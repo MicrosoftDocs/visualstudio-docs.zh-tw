@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c00740b31e5b9d7cc5678bfc248e673a57e59ccf
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
-ms.translationtype: MTE95
+ms.openlocfilehash: f35a04620da94efca70fb33933f3940005996e29
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52305308"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561690"
 ---
 # <a name="debug-dlls-in-visual-studio-c-c-visual-basic-f"></a>偵錯在 Visual Studio 中的 Dll (C#，c + +、 Visual Basic 中， F#)
 
@@ -102,7 +102,7 @@ DLL （動態連結程式庫） 是包含程式碼和資料可供多個應用程
 
 若要偵錯 DLL，您可以[從呼叫端的應用程式開始偵錯](#vxtskdebuggingdllprojectsthecallingapplication)，或[從 DLL 專案進行偵錯](how-to-debug-from-a-dll-project.md)藉由指定其呼叫端的應用程式。 您也可以使用偵錯工具[即時運算視窗](#vxtskdebuggingdllprojectstheimmediatewindow)在設計階段評估的 DLL 函式或方法，而不需使用呼叫端的應用程式。
 
-如需詳細資訊，請參閱 <<c0> [ 開始使用偵錯工具](getting-started-with-the-debugger.md)。
+如需詳細資訊，請參閱 <<c0> [ 第一次查看偵錯工具](../debugger/debugger-feature-tour.md)。
 
 ### <a name="vxtskdebuggingdllprojectsthecallingapplication"></a> 從呼叫端的應用程式開始偵錯
 
@@ -119,11 +119,11 @@ DLL （動態連結程式庫） 是包含程式碼和資料可供多個應用程
 
   或  
 
-- 附加至已部署和執行測試或實際執行電腦上的應用程式。 在網站或 web 應用程式中，請使用這個方法的 Dll。 如需詳細資訊，請參閱[如何：附加至執行中處理序](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)。  
+- 附加至已部署和執行測試或實際執行電腦上的應用程式。 在網站或 web 應用程式中，請使用這個方法的 Dll。 如需詳細資訊，請參閱[＜How to：附加至執行中的處理序](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)。  
   
 在開始偵錯呼叫的應用程式之前，請在 DLL 中設定中斷點。 請參閱[使用中斷點](../debugger/using-breakpoints.md)。 當 DLL 叫用中斷點時，您可以逐步執行程式碼中，觀察每一行程式碼的動作。 如需詳細資訊，請參閱 <<c0> [ 偵錯工具中巡覽程式碼](../debugger/navigating-through-code-with-the-debugger.md)。
   
-偵錯期間，您可以使用**模組**視窗以確認 Dll 和 *.exe*檔案在應用程式載入。 若要開啟 **模組**視窗中的，偵錯時，選取**偵錯** > **Windows** > **模組**。 如需詳細資訊，請參閱[如何：使用模組視窗](../debugger/how-to-use-the-modules-window.md)。 
+偵錯期間，您可以使用**模組**視窗以確認 Dll 和 *.exe*檔案在應用程式載入。 若要開啟 **模組**視窗中的，偵錯時，選取**偵錯** > **Windows** > **模組**。 如需詳細資訊，請參閱[＜How to：使用模組視窗](../debugger/how-to-use-the-modules-window.md)。 
 
 ###  <a name="vxtskdebuggingdllprojectstheimmediatewindow"></a> 使用即時運算視窗  
 
@@ -158,7 +158,7 @@ DLL （動態連結程式庫） 是包含程式碼和資料可供多個應用程
 
 ##  <a name="vxtskdebuggingdllprojectsmixedmodedebugging"></a> 混合模式偵錯  
 
-您可以在 managed 或原生程式碼 dll 撰寫呼叫端的應用程式。 如果原生應用程式呼叫的 managed 的 DLL，而且您想要偵錯，您可以啟用這兩個 managed 和原生偵錯工具在專案屬性中。 確切的程序取決於您是否想要開始偵錯 DLL 專案中或呼叫的應用程式專案。 如需詳細資訊，請參閱[如何：在混合模式中偵錯](../debugger/how-to-debug-in-mixed-mode.md)。 
+您可以在 managed 或原生程式碼 dll 撰寫呼叫端的應用程式。 如果原生應用程式呼叫的 managed 的 DLL，而且您想要偵錯，您可以啟用這兩個 managed 和原生偵錯工具在專案屬性中。 確切的程序取決於您是否想要開始偵錯 DLL 專案中或呼叫的應用程式專案。 如需詳細資訊，請參閱[＜How to：在混合模式中進行偵錯](../debugger/how-to-debug-in-mixed-mode.md)。 
 
 您也可以偵錯原生 DLL 從受控呼叫的專案。 如需詳細資訊，請參閱 <<c0> [ 如何偵錯 managed 和原生程式碼](how-to-debug-managed-and-native-code.md)。 
 
