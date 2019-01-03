@@ -1,0 +1,47 @@
+items:
+- name: Visual Studio 中的 Visual Basic
+  href: index.yml
+  items:
+  - name: 總覽
+    items:
+    - name: Visual Studio 2017 概觀
+      href: visual-studio-ide.md
+    - name: 程式碼編輯器概觀
+      href: tutorial-editor.md
+    - name: 專案與解決方案概觀
+      href: tutorial-projects-solutions.md
+    - name: 更多 Visual Studio 功能
+      href: ../../ide/advanced-feature-overview.md?toc=/visualstudio/visual-basic/toc.json&bc=/visualstudio/visual-basic/breadcrumb/toc.json
+  - name: 教學課程
+    items:
+    - name: 建立主控台應用程式
+      href: tutorial-console.md
+    - name: 建立 UWP 應用程式
+      href: /windows/uwp/get-started/create-a-hello-world-app-xaml-universal?toc=/visualstudio/visual-basic/toc.json&bc=/visualstudio/visual-basic/breadcrumb/toc.json
+    - name: 建立 WPF 應用程式
+      href: tutorial-wpf.md
+    - name: 建立 Web 應用程式
+      href: /aspnet/web-pages/overview/getting-started/introducing-razor-syntax-vb
+    - name: 建立 Windows Forms 應用程式
+      href: ../../ide/create-a-visual-basic-winform-in-visual-studio.md?toc=/visualstudio/visual-basic/toc.json&bc=/visualstudio/visual-basic/breadcrumb/toc.json
+    expanded: true
+  - name: 了解 Visual Studio
+    items:
+    - name: 撰寫和編輯程式碼
+      href: tutorial-editor.md
+    - name: 編譯和建置
+      href: ../../ide/compiling-and-building-in-visual-studio.md
+    - name: 偵錯程式碼
+      href: ../visual-basic/tutorial-debugger.md
+    - name: 單元測試
+      href: ../../test/getting-started-with-unit-testing.md?toc=/visualstudio/visual-basic/toc.json&bc=/visualstudio/visual-basic/breadcrumb/toc.json
+    - name: 部署您的專案
+      href: ../../deployment/index.md
+    - name: 存取資料
+      href: ../../data-tools/create-a-sql-database-by-using-a-designer.md?toc=/visualstudio/visual-basic/toc.json&bc=/visualstudio/visual-basic/breadcrumb/toc.json
+ms.openlocfilehash: 9026d3a8b9ba8463ea126c3d94e45743bd4b2874
+ms.sourcegitcommit: a715de2ba8c703f37aa2102567b1aa2c0f05a117
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 12/15/2018
+ms.locfileid: "53442891"

@@ -1,0 +1,45 @@
+items:
+- name: Visual Studio 中的 C#
+  href: index.yml
+  items:
+  - name: 總覽
+    items:
+    - name: Visual Studio 2017 概觀
+      href: visual-studio-ide.md
+    - name: 程式碼編輯器概觀
+      href: tutorial-editor.md
+    - name: 專案與解決方案概觀
+      href: tutorial-projects-solutions.md
+    - name: 更多 Visual Studio 功能
+      href: ../../ide/advanced-feature-overview.md?toc=/visualstudio/csharp/toc.json&bc=/visualstudio/csharp/breadcrumb/toc.json
+  - name: 教學課程
+    items:
+    - name: 建立您的第一個 C# 應用程式
+      href: tutorial-console.md
+    - name: 建立 Web 應用程式
+      href: tutorial-aspnet-core.md
+    - name: 建立 UWP 應用程式
+      href: tutorial-uwp.md
+    - name: 建立 WPF 應用程式
+      href: tutorial-wpf.md
+    expanded: true
+  - name: 了解 Visual Studio
+    items:
+    - name: 撰寫和編輯程式碼
+      href: tutorial-editor.md
+    - name: 編譯和建置
+      href: ../../ide/compiling-and-building-in-visual-studio.md
+    - name: 偵錯程式碼
+      href: ../csharp/tutorial-debugger.md
+    - name: 單元測試
+      href: ../../test/getting-started-with-unit-testing.md?toc=/visualstudio/csharp/toc.json&bc=/visualstudio/csharp/breadcrumb/toc.json
+    - name: 部署您的專案
+      href: ../../deployment/index.md
+    - name: 存取資料
+      href: ../../data-tools/create-a-sql-database-by-using-a-designer.md?toc=/visualstudio/csharp/toc.json&bc=/visualstudio/csharp/breadcrumb/toc.json
+ms.openlocfilehash: cb9bc5df898e902292b2cf53bcb43f72f4464454
+ms.sourcegitcommit: a715de2ba8c703f37aa2102567b1aa2c0f05a117
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 12/15/2018
+ms.locfileid: "53442933"

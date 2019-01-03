@@ -125,42 +125,42 @@ items:
       href: editor-imports.md
     - name: 支援 EditorConfig
       href: supporting-editorconfig.md
-    - name: 逐步解說︰將內容類型連結至副檔名
+    - name: 逐步解說：將內容類型連結至副檔名
       href: walkthrough-linking-a-content-type-to-a-file-name-extension.md
     - name: 逐步解說：建立邊界字符
       href: walkthrough-creating-a-margin-glyph.md
-    - name: 逐步解說︰自訂文字檢視
+    - name: 逐步解說：自訂文字檢視
       href: walkthrough-customizing-the-text-view.md
-    - name: 逐步解說︰建立檢視裝飾、命令和設定 (分欄輔助線)
+    - name: 逐步解說：建立檢視裝飾、命令和設定 (分欄輔助線)
       href: walkthrough-creating-a-view-adornment-commands-and-settings-column-guides.md
-    - name: 逐步解說︰反白顯示文字
+    - name: 逐步解說：反白顯示文字
       href: walkthrough-highlighting-text.md
-    - name: 逐步解說︰大綱
+    - name: 逐步解說：大綱
       href: walkthrough-outlining.md
-    - name: 逐步解說︰顯示成對括弧
+    - name: 逐步解說：顯示成對大括弧
       href: walkthrough-displaying-matching-braces.md
-    - name: 逐步解說︰顯示 QuickInfo 工具提示
+    - name: 逐步解說：逐步解說︰顯示 QuickInfo 工具提示
       href: walkthrough-displaying-quickinfo-tooltips.md
-    - name: 逐步解說︰顯示簽章說明
+    - name: 逐步解說：顯示簽章說明
       href: walkthrough-displaying-signature-help.md
     - name: 逐步解說：顯示陳述式完成
       href: walkthrough-displaying-statement-completion.md
-    - name: 逐步解說︰實作程式碼片段
+    - name: 逐步解說：實作程式碼片段
       href: walkthrough-implementing-code-snippets.md
-    - name: 逐步解說︰顯示燈泡建議
+    - name: 逐步解說：顯示燈泡建議
       href: walkthrough-displaying-light-bulb-suggestions.md
-    - name: 逐步解說︰搭配編輯器延伸模組使用 Shell 命令
+    - name: 逐步解說：搭配編輯器延伸模組使用 Shell 命令
       href: walkthrough-using-a-shell-command-with-an-editor-extension.md
-    - name: 逐步解說︰搭配編輯器延伸模組使用快速鍵
+    - name: 逐步解說：在編輯器延伸模組中使用快速鍵
       href: walkthrough-using-a-shortcut-key-with-an-editor-extension.md
     - name: 逐步解說：從編輯器延伸模組存取 DTE 物件
       href: walkthrough-accessing-the-dte-object-from-an-editor-extension.md
   - name: 建立自訂編輯器和設計工具
     href: creating-custom-editors-and-designers.md
     items:
-    - name: 逐步解說︰建立自訂編輯器
+    - name: 逐步解說：建立自訂佈景主題
       href: walkthrough-creating-a-custom-editor.md
-    - name: 逐步解說︰將功能新增至自訂編輯器
+    - name: 逐步解說：將功能新增至自訂編輯器
       href: walkthrough-adding-features-to-a-custom-editor.md
     - name: 設計工具初始化和中繼資料組態
       href: designer-initialization-and-metadata-configuration.md
@@ -231,8 +231,10 @@ items:
       href: assembly-element-visual-studio-templates.md
     - name: 組件項目 (Visual Studio 範本精靈擴充)
       href: assembly-element-visual-studio-template-wizard-extension.md
-    - name: BuildProjectOnLoad (Visual Studio 樣板)
-      href: buildprojectonload-visual-studio-templates.md
+    - name: BuildOnLoad 屬性和元素 (Visual Studio 範本)
+      href: buildonload-visual-studio-templates.md
+    - name: BuildProjectOnload 項目 (Visual Studio 樣板)
+      href: buildprojectonload-element-visual-studio-templates.md
     - name: CreateInPlace (Visual Studio 範本)
       href: createinplace-visual-studio-templates.md
     - name: CreateNewFolder 項目 (Visual Studio 範本)
@@ -295,6 +297,10 @@ items:
       href: references-element-visual-studio-templates.md
     - name: RequiredFrameworkVersion 項目 (Visual Studio 範本)
       href: requiredframeworkversion-element-visual-studio-templates.md
+    - name: RequiredPlatformVersion 項目 (Visual Studio 樣板)
+      href: requiredplatformversion-element-visual-studio-templates.md
+    - name: SDKReference 項目 (Visual Studio 樣板)
+      href: sdkreference-element-visual-studio-templates.md
     - name: ShowByDefault (Visual Studio 範本)
       href: showbydefault-visual-studio-templates.md
     - name: SolutionFolder 元素 (Visual Studio 範本)
@@ -307,6 +313,8 @@ items:
       href: supportslanguagedropdown-element-visual-studio-templates.md
     - name: SupportsMasterPage 項目 (Visual Studio 範本)
       href: supportsmasterpage-element-visual-studio-templates.md
+    - name: TargetPlatformName 項目 (Visual Studio 樣板)
+      href: targetplatformname-element-visual-studio-templates.md
     - name: TemplateContent 項目 (Visual Studio 範本)
       href: templatecontent-element-visual-studio-templates.md
     - name: TemplateData 項目 (Visual Studio 範本)
@@ -321,14 +329,6 @@ items:
       href: wizarddata-element-visual-studio-templates.md
     - name: WizardExtension 項目 (Visual Studio 範本)
       href: wizardextension-element-visual-studio-templates.md
-    - name: BuildProjectOnload 項目 (Visual Studio 樣板)
-      href: buildprojectonload-element-visual-studio-templates.md
-    - name: RequiredPlatformVersion 項目 (Visual Studio 樣板)
-      href: requiredplatformversion-element-visual-studio-templates.md
-    - name: SDKReference 項目 (Visual Studio 樣板)
-      href: sdkreference-element-visual-studio-templates.md
-    - name: TargetPlatformName 項目 (Visual Studio 樣板)
-      href: targetplatformname-element-visual-studio-templates.md
   - name: Visual Studio 範本資訊清單結構描述參考
     href: visual-studio-template-manifest-schema-reference.md
 - name: 延伸使用者設定和選項
@@ -365,13 +365,13 @@ items:
   - name: 建立自訂起始頁
     href: creating-a-custom-start-page.md
     items:
-    - name: 逐步解說︰將自訂的 XAML 新增至起始頁
+    - name: 逐步解說：將自訂的 XAML 新增至起始頁
       href: walkthrough-adding-custom-xaml-to-the-start-page.md
     - name: 將使用者控制項新增至起始頁
       href: adding-user-control-to-the-start-page.md
     - name: 將 Visual Studio 命令新增至起始頁
       href: adding-visual-studio-commands-to-a-start-page.md
-    - name: 逐步解說︰將使用者設定儲存於起始頁
+    - name: 逐步解說：在起始頁儲存使用者設定
       href: walkthrough-saving-user-settings-on-a-start-page.md
     - name: 部署自訂起始頁
       href: deploying-custom-start-pages.md
@@ -426,11 +426,11 @@ items:
     href: vsix-project-template.md
   - name: 開始使用 VSIX 專案範本
     href: getting-started-with-the-vsix-project-template.md
-  - name: 逐步解說︰發佈 Visual Studio 延伸模組
+  - name: 逐步解說：發佈 Visual Studio 延伸模組
     href: walkthrough-publishing-a-visual-studio-extension.md
-  - name: 逐步解說︰透過命令列發佈 Visual Studio 延伸模組
+  - name: 逐步解說：透過命令列發佈 Visual Studio 延伸模組
     href: walkthrough-publishing-a-visual-studio-extension-via-command-line.md
-  - name: 逐步解說：建立延伸模組組件
+  - name: 逐步解說：建立延伸模組套件
     href: walkthough-create-extension-pack.md
   - name: 將相依性新增至 VSIX 套件
     href: how-to-add-a-dependency-to-a-vsix-package.md
@@ -728,7 +728,7 @@ items:
 - name: 建立軟體開發套件
   href: creating-a-software-development-kit.md
   items:
-  - name: 逐步解說︰使用 C# 或 Visual Basic 建立 SDK
+  - name: 逐步解說：使用 C# 或 Visual Basic 建立 SDK
     href: walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md
   - name: 逐步解說：使用 C++ 建立 SDK
     href: walkthrough-creating-an-sdk-using-cpp.md
@@ -743,9 +743,9 @@ items:
     href: roslyn-analyzers-and-code-aware-library-for-immutablearrays.md
   - name: Roslyn 套件版本參考
     href: roslyn-version-support.md
-ms.openlocfilehash: 9416d9557265e9a5a84d115badaaa1882228b4f2
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: f16722f3f0b684b3923f2dfa5b30c06e79d0a90b
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50967489"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53562356"

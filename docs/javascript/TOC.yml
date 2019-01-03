@@ -1,5 +1,6 @@
 items:
-- name: Node.js 文件
+- name: Visual Studio 中的 Node.js
+  href: index.yml
 - name: 快速入門
   items:
   - name: 建立 Node.js 專案
@@ -16,25 +17,31 @@ items:
     href: publish-nodejs-app-azure.md
 - name: 作法指南
   items:
-  - name: 建立 Vue.js 應用程式
-    href: create-application-with-vuejs.md
+  - name: 撰寫和編輯程式碼
+    href: write-and-edit-code.md
   - name: 管理 npm 套件
     href: npm-package-management.md
   - name: 不使用專案或解決方案 ([開啟資料夾]) 進行開發
     href: develop-javascript-code-without-solutions-projects.md
+  - name: 使用互動式 REPL
+    href: nodejs-interactive-repl.md
+  - name: 偵錯 Node.js 應用程式
+    href: debug-nodejs.md
   - name: 單元測試 JavaScript 程式碼
     href: unit-testing-javascript-with-visual-studio.md
   - name: JavaScript IntelliSense
     href: /visualstudio/ide/javascript-intellisense?toc=/visualstudio/javascript/toc.json
+  - name: 建立 Vue.js 應用程式
+    href: create-application-with-vuejs.md
 - name: 資源
   items:
   - name: package.json 組態
     href: configure-packages-with-package-json.md
   - name: Node.js 工具的 Wiki 頁面
     href: https://github.com/Microsoft/nodejstools
-ms.openlocfilehash: 934d7cd68dd61dacb5bd60d06e07aef72c34dd04
-ms.sourcegitcommit: aea5cdb76fbc7eb31d1e5cc3c8d6adb0c743220f
+ms.openlocfilehash: 491166ddfbdac44438c8b7c14bfe73cba498af76
+ms.sourcegitcommit: a715de2ba8c703f37aa2102567b1aa2c0f05a117
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44124940"
+ms.lasthandoff: 12/15/2018
+ms.locfileid: "53441453"
