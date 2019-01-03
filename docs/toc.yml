@@ -1,6 +1,6 @@
 items:
 - name: Visual Studio 文件
-  href: ide/index.md
+  href: ide/index.yml
 - name: 總覽
   items:
   - name: Visual Studio 2017 概觀
@@ -38,7 +38,7 @@ items:
   - name: 修改 Visual Studio 2017
     href: install/modify-visual-studio.md
   - name: 安裝說明檢視器
-    href: ide/microsoft-help-viewer-installation.md
+    href: help-viewer/installation.md
   - name: 修復 Visual Studio
     href: install/repair-visual-studio.md
   - name: 解除安裝 Visual Studio
@@ -84,12 +84,12 @@ items:
       - name: Visual Studio 訂用帳戶：系統管理員概觀
         href: /visualstudio/subscriptions/admin-responsibilities
     - name: 說明檢視器系統管理員指南
-      href: ide/help-viewer-administrator-guide.md
+      href: help-viewer/administrator-guide.md
       items:
       - name: Help Content Manager 的命令列引數
-        href: ide/command-line-arguments-for-the-help-content-manager.md
+        href: help-viewer/command-line-arguments.md
       - name: Help Content Manager 覆寫設定
-        href: ide/help-content-manager-overrides.md
+        href: help-viewer/behavior-overrides.md
     - name: 參考資料
       items:
       - name: Visual Studio 工作負載與元件識別碼
@@ -140,32 +140,24 @@ items:
     href: ide/quickstart-fsharp.md
   - name: 'C#: 建立 Web 應用程式'
     href: ide/quickstart-aspnet-core.md
-  - name: 'C#: 建立 UWP 應用程式'
-    href: ide/quickstart-uwp-csharp.md
   - name: 'C#: 建立主控台應用程式'
     href: ide/quickstart-csharp-console.md
   - name: Visual Basic：建立主控台應用程式
     href: ide/quickstart-visual-basic-console.md
 - name: 教學課程
   items:
-  - name: Visual Studio 中的 C++...
-    href: /cpp/build/vscpp-step-0-installation
-  - name: Visual Studio 中的 Python...
-    href: python/tutorial-working-with-python-in-visual-studio-step-01-create-project.md
-  - name: Visual Studio 中的 R...
-    href: rtvs/getting-started-with-r.md
-  - name: Visual Studio 中的 Node.js
-    href: javascript/tutorial-nodejs.md
-  - name: Visual Studio 中的 C#
-    items:
-    - name: 'C#: 建立 Web 應用程式'
-      href: ide/tutorial-csharp-aspnet-core.md
-    - name: 'C#: 建立主控台應用程式'
-      href: ide/tutorial-csharp-console.md
-  - name: Visual Studio 中的 Visual Basic
-    href: ide/tutorial-visual-basic-console.md
-  - name: 在 Visual Studio 中偵錯
-    href: debugger/getting-started-with-the-debugger.md?context=visualstudio/default&contextView=vs-2017
+  - name: C#
+    href: get-started/csharp/
+  - name: F#
+    href: /dotnet/fsharp/
+  - name: Visual Basic
+    href: get-started/visual-basic/
+  - name: C++
+    href: /cpp/get-started/tutorials/
+  - name: Python
+    href: python/
+  - name: Node.js
+    href: javascript/
 - name: 作法指南
   items:
   - name: 開發
@@ -517,7 +509,7 @@ items:
     - name: 其他教學課程
       items:
       - name: 使用 C# 或 Visual Basic 建立 WPF 應用程式
-        href: ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md
+        href: /visualstudio/get-started/csharp/tutorial-wpf
       - name: Windows Forms 應用程式教學課程
         items:
         - name: 教學課程 1：建立圖片檢視器 (C#)
@@ -785,8 +777,8 @@ items:
           href: ide/reference/quick-launch-environment-options-dialog-box.md
         - name: 環境 - 啟動
           href: ide/reference/startup-environment-options-dialog-box.md
-        - name: 環境 - 同步設定
-          href: ide/reference/synchronized-settings-environment-options-dialog-box.md
+        - name: 環境 - 帳戶
+          href: ide/reference/accounts-environment-options-dialog-box.md
         - name: 環境 - 索引標籤和視窗
           href: ide/reference/tabs-and-windows-environment-options-dialog-box.md
         - name: 環境 - 工作清單
@@ -1057,28 +1049,28 @@ items:
     - name: Windows 資訊保護 (WIP)
       href: ide/exempt-visual-studio-from-wip.md
   - name: Microsoft Help Viewer
-    href: ide/microsoft-help-viewer.md
+    href: help-viewer/overview.md
     items:
     - name: 安裝與管理本機內容
-      href: ide/install-and-manage-local-content.md
+      href: help-viewer/install-manage-local-content.md
     - name: 在說明檢視器中尋找主題
       items:
       - name: 在索引中尋找主題
-        href: ide/how-to-find-topics-in-the-index.md
+        href: help-viewer/find-topics-index.md
       - name: 在目錄中尋找主題
-        href: ide/how-to-find-topics-in-the-table-of-contents.md
+        href: help-viewer/find-topics-toc.md
       - name: 搜尋主題
-        href: ide/how-to-search-for-topics.md
+        href: help-viewer/find-topics.md
         items:
         - name: 搜尋運算式中的邏輯與進階運算子
-          href: ide/logical-operators-in-search-expressions.md
+          href: help-viewer/logical-operators-search-expressions.md
     - name: 自訂說明檢視器
-      href: ide/customize-the-help-viewer.md
-    - name: 說明檢視器的協助工具功能
-      href: ide/accessibility-features-of-the-help-viewer.md
+      href: help-viewer/customize.md
+    - name: 協助工具功能
+      href: help-viewer/accessibility-features.md
       items:
-      - name: 快速鍵 (說明檢視器)
-        href: ide/shortcut-keys-help-viewer.md
+      - name: 快速鍵
+        href: help-viewer/shortcut-keys.md
   - name: Dotfuscator Community Edition (CE)
     href: ide/dotfuscator/index.md
     items:
@@ -1120,9 +1112,10 @@ items:
       href: ide/developer-community-privacy.md
   - name: 如何在 Visual Studio 中回報問題
     href: ide/how-to-report-a-problem-with-visual-studio-2017.md
-  - name: 概觀：回報問題
-    href: ide/report-a-problem.md
-  - name: 概觀：建議功能
+    items:
+    - name: 回報問題狀態和常見問題集
+      href: ide/report-a-problem.md
+  - name: 提出 Visual Studio 功能建議
     href: ide/suggest-a-feature.md
   - name: 客戶經驗改進計畫
     href: ide/visual-studio-experience-improvement-program.md
@@ -1133,9 +1126,9 @@ items:
     href: ide/reference/resources-for-troubleshooting-integrated-development-environment-errors.md
   - name: 告訴我們
     href: ide/talk-to-us.md
-ms.openlocfilehash: 26d86461928e5494d4c0d8686cdf279847f29342
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: 65504b4cf7bfd126edceacfdcfd1cc71e725e8ca
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53160071"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53740415"

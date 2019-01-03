@@ -10,12 +10,12 @@ ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 05ffd249be3d7734979f3a131a3a10423b76cb9d
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 343b992520cddce66a4e4930244738d5b56246b1
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35667011"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53804075"
 ---
 # <a name="work-with-r-in-visual-studio"></a>在 Visual Studio 中使用 R
 
@@ -33,7 +33,7 @@ Visual Studio R 工具 (RTVS) 為適用於 Visual Studio 2017 和 Visual Studio 
 
 然後遵循下列連結以深入了解 R 的相關功能，以及 Visual Studio 本身的一般功能。
 
-| 功能 | 描述 | 一般 Visual Studio 文件 |
+| 功能 | 說明 | 一般 Visual Studio 文件 |
 | --- | --- | --- |
 | [Visual Studio 專案系統](r-projects-in-visual-studio.md) | 在便利的結構中組織並管理相關檔案，並利用適用於各種項目 (例如 R 程式碼、R 文件、R Markdown、SQL 查詢及預存程序) 的有用範本。 同時也能運用[套件管理員](r-package-manager-in-visual-studio.md)和 [SQL Server 整合](integrating-sql-server-with-r.md)。  | [Visual Studio 中的方案和專案](../ide/solutions-and-projects-in-visual-studio.md) |
 | [工作區](r-workspaces-in-visual-studio.md) | RTVS 可繫結至本機及遠端工作區，讓您能夠使用更小的資料集於本機開發 R 程式碼，然後輕鬆地利用更大的資料集在更為強大的雲端電腦上執行程式碼。 | N/A |
@@ -43,7 +43,7 @@ Visual Studio R 工具 (RTVS) 為適用於 Visual Studio 2017 和 Visual Studio 
 | [互動式視窗](interactive-repl-for-r-in-visual-studio.md) | 針對 R 提供完整的 REPL 體驗，並能夠輕鬆地在互動式視窗中執行來源檔案中的程式碼。 | N/A |
 | [視覺化資料](visualizing-data-with-r-in-visual-studio.md) | 繪圖是 R 體驗不可或缺的一部分，而 RTVS 支援多種獨立的繪圖視窗，每個視窗都擁有自己的記錄，並可以在視窗之間移動繪圖。 繪圖可以儲存為點陣圖或 PDF 檔案，或是以點陣圖或中繼檔的形式複製到剪貼簿。  | N/A |
 | [變數總管](variable-explorer.md) | 以全域或套件特定的範圍檢視變數，並能夠檢視可排序的資料表，以及匯出為 CSV。 | N/A |
-| [功能完整的偵錯](debugging-r-in-visual-studio.md) | 包含與互動式視窗的整合。 | [Visual Studio 偵錯](../debugger/debugging-in-visual-studio.md) |
+| [功能完整的偵錯](debugging-r-in-visual-studio.md) | 包含與互動式視窗的整合。 | [Visual Studio 偵錯](/visualstudio/debugger/debugger-feature-tour) |
 
 另請參閱[常見問題集](faq.md)。
 
@@ -53,8 +53,8 @@ Visual Studio R 工具 (RTVS) 為適用於 Visual Studio 2017 和 Visual Studio 
 
 ## <a name="send-us-your-feedback"></a>將您的意見反應傳送給我們！
 
-1. **GitHub Issues**：連絡 RTVS 小組的最佳方式，就是[在 GitHub 上提問](https://github.com/Microsoft/RTVS/issues)，或是使用 [R 工具]  >  [意見反應] 功能表。
+1. **GitHub 問題**：連絡 RTVS 小組的最佳方式，就是[在 GitHub 上提問](https://github.com/Microsoft/RTVS/issues)，或是使用 [R 工具]  >  [意見反應] 功能表。
 
-1. **傳送笑臉/苦臉**：[R 工具]  >  [意見反應] 功能表是快速傳送意見反應，以及附加 RTVS 記錄檔，協助診斷問題最快的方式  (若您想要個別傳送記錄檔，其位於 *%temp%/RTVSlogs.zip* 之中)。若透過 [說明]  >  [意見反應]  >  [設定] 功能表命令或在是安裝期間選擇退出 Visual Studio 遙測，將會停用記錄。
+1. **傳送笑臉/苦臉**：[R 工具]  >  [意見反應] 功能表是快速傳送意見反應，以及附加 RTVS 記錄檔，協助診斷問題最快的方式。 (若您想要個別傳送記錄檔，其位於 *%temp%/RTVSlogs.zip* 之中)。若透過 [說明]  >  [意見反應]  >  [設定] 功能表命令或在是安裝期間選擇退出 Visual Studio 遙測，將會停用記錄。
 
 1. **電子郵件**：您可以透過 *rtvsuserfeedback (at) microsoft.com*，將意見反應直接傳送給小組。
