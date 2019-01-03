@@ -6,16 +6,15 @@ ms.date: 01/01/2018
 author: gewarren
 ms.author: gewarren
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.topic: landing-page
 ms.workload:
 - data-storage
-ms.openlocfilehash: 866737bc91615663df59856b8d06b457ad47c15f
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: 854cb5287aef6500e80d34fbccac8b343da73fc9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53159681"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53890546"
 ---
 # <a name="use-data-tools-in-visual-studio-to-develop-data-solutions"></a>使用 Visual Studio 中的資料工具來開發資料解決方案
 
