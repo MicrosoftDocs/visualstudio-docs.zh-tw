@@ -1,9 +1,6 @@
 ---
 title: IDebugGenericFieldInstance::TypeArgumentCount |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - TypeArgumentCount
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 066084853c63f7f824b27b365e9abf0f2d695970
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4d0c980124fdaab07b38273517df3f2cf29f69a3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49822230"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53846908"
 ---
 # <a name="idebuggenericfieldinstancetypeargumentcount"></a>IDebugGenericFieldInstance::TypeArgumentCount
 傳回類型的數目參數引數，這個執行個體。  

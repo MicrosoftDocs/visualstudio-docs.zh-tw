@@ -1,9 +1,6 @@
 ---
-title: 逐步解說： VSTO 增益集專案中的簡單資料繫結
-ms.custom: ''
+title: 逐步解說：在 VSTO 增益集專案中的簡單資料繫結
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,14 +14,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0373bcba5cecbbc47451f3ad050ba0ea44a12246
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: df572f63ec6bb8a77a854144dd2ff4a165148c41
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50672661"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53828416"
 ---
-# <a name="walkthrough-simple-data-binding-in-vsto-add-in-project"></a>逐步解說： VSTO 增益集專案中的簡單資料繫結
+# <a name="walkthrough-simple-data-binding-in-vsto-add-in-project"></a>逐步解說：在 VSTO 增益集專案中的簡單資料繫結
 
 您可以將資料繫結至 VSTO 增益集專案中的主控制項和 Windows Forms 控制項。 本逐步解說示範如何將控制項加入 Microsoft Office Word 文件，並將控制項繫結至在執行階段的資料。
 
@@ -50,9 +47,9 @@ ms.locfileid: "50672661"
 
 -   已附加 `AdventureWorksLT` 範例資料庫之執行中 SQL Server 2005 或 SQL Server 2005 Express 執行個體的存取權。 您可以下載`AdventureWorksLT`從資料庫[CodePlex 網站](http://go.microsoft.com/fwlink/?LinkId=115611)。 如需附加資料庫的詳細資訊，請參閱下列主題：
 
-    -   若要使用 SQL Server Management Studio 或 SQL Server Management Studio Express 附加資料庫，請參閱[如何： 附加資料庫 (SQL Server Management Studio)](/sql/relational-databases/databases/attach-a-database)。
+    -   若要使用 SQL Server Management Studio 或 SQL Server Management Studio Express 附加資料庫，請參閱[How to:附加資料庫 (SQL Server Management Studio)](/sql/relational-databases/databases/attach-a-database)。
 
-    -   若要使用命令列附加資料庫，請參閱[如何： 將資料庫檔案附加至 SQL Server Express](/previous-versions/sql/)。
+    -   若要使用命令列附加資料庫，請參閱[How to:將資料庫檔案附加至 SQL Server Express](/previous-versions/sql/)。
 
 ## <a name="create-a-new-project"></a>建立新專案
 
@@ -62,7 +59,7 @@ ms.locfileid: "50672661"
 
 1.  使用 Visual Basic 或 C#，建立名稱為 [ **從資料庫填入文件**] 的 Word VSTO 增益集專案。
 
-     如需詳細資訊，請參閱 <<c0> [ 如何： 在 Visual Studio 中的建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)。
+     如需詳細資訊，請參閱[＜How to：在 Visual Studio 中建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)。
 
      Visual Studio 會開啟*ThisAddIn.vb*或是*ThisAddIn.cs*檔案，並將**從資料庫填入文件**專案加入**方案總管**.
 
@@ -157,18 +154,18 @@ ms.locfileid: "50672661"
 
 - [在 Office 方案中的資料](../vsto/data-in-office-solutions.md)
 - [資料繫結至 Office 方案中的控制項](../vsto/binding-data-to-controls-in-office-solutions.md)
-- [如何： 從資料庫的資料填入工作表](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)
-- [如何： 的資料庫中的資料填入文件](../vsto/how-to-populate-documents-with-data-from-a-database.md)
-- [如何： 擴展的資料服務文件](../vsto/how-to-populate-documents-with-data-from-services.md)
-- [如何： 的物件的資料填入文件](../vsto/how-to-populate-documents-with-data-from-objects.md)
-- [如何： 捲動工作表中的資料庫記錄](../vsto/how-to-scroll-through-database-records-in-a-worksheet.md)
-- [如何： 從主控制項的資料更新資料來源](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)
-- [逐步解說： 在文件層級專案中的簡單資料繫結](../vsto/walkthrough-simple-data-binding-in-a-document-level-project.md)
-- [逐步解說： 在文件層級專案中的複雜資料繫結](../vsto/walkthrough-complex-data-binding-in-a-document-level-project.md)
+- [如何：從資料庫的資料填入工作表](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)
+- [如何：資料庫中的資料填入文件](../vsto/how-to-populate-documents-with-data-from-a-database.md)
+- [如何：服務中的資料填入文件](../vsto/how-to-populate-documents-with-data-from-services.md)
+- [如何：物件的資料填入文件](../vsto/how-to-populate-documents-with-data-from-objects.md)
+- [如何：捲動工作表中的資料庫記錄](../vsto/how-to-scroll-through-database-records-in-a-worksheet.md)
+- [如何：從主控制項的資料更新資料來源](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)
+- [逐步解說：在文件層級專案中的簡單資料繫結](../vsto/walkthrough-simple-data-binding-in-a-document-level-project.md)
+- [逐步解說：在文件層級專案中的複雜資料繫結](../vsto/walkthrough-complex-data-binding-in-a-document-level-project.md)
 - [使用本機資料庫檔案，在 Office 方案概觀](../vsto/using-local-database-files-in-office-solutions-overview.md)
 - [新增資料來源](../data-tools/add-new-data-sources.md)
 - [將 Windows Forms 控制項繫結至 Visual Studio 中的資料](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
-- [如何： 的物件的資料填入文件](../vsto/how-to-populate-documents-with-data-from-objects.md)
-- [如何： 從主控制項的資料更新資料來源](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)
+- [如何：物件的資料填入文件](../vsto/how-to-populate-documents-with-data-from-objects.md)
+- [如何：從主控制項的資料更新資料來源](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)
 - [使用本機資料庫檔案，在 Office 方案概觀](../vsto/using-local-database-files-in-office-solutions-overview.md)
 - [BindingSource 元件概觀](/dotnet/framework/winforms/controls/bindingsource-component-overview)

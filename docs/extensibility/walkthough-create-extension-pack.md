@@ -1,9 +1,6 @@
 ---
 title: 使用延伸模組組件項目範本建立的延伸模組組件 |Microsoft Docs
-ms.custom: ''
 ms.date: 07/27/2018
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - extensions
@@ -13,14 +10,14 @@ ms.author: chitray
 manager: Meng
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2e0215b22c66d6b555650e05985a674f2ad9aed4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 55ceb788807f5d4fc9de2a96b4d359f290218dda
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49943098"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53866318"
 ---
-# <a name="walkthrough-create-an-extension-pack"></a>逐步解說：建立延伸模組組件
+# <a name="walkthrough-create-an-extension-pack"></a>逐步解說：建立延伸模組套件
 
 延伸模組組件是一組可一起安裝的延伸模組。 延伸模組組件可讓您輕鬆地與其他使用者共用您最愛的擴充功能或套件組合的一組一起應付特定案例的擴充功能。
   

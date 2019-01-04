@@ -1,9 +1,6 @@
 ---
-title: 逐步解說： 將控制項加入工作表，在 VSTO 增益集專案中的執行階段
-ms.custom: ''
+title: 逐步解說：將控制項加入工作表，在 VSTO 增益集專案中的執行階段
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,17 +15,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b3671b00ecad0380dd38e770beeef703fa916fac
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5aa574abb6f0d14d17a9bfb73c28a6c330885bc2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49915694"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53968640"
 ---
-# <a name="walkthrough-add-controls-to-a-worksheet-at-runtime-in-vsto-add-in-project"></a>逐步解說： 將控制項加入工作表，在 VSTO 增益集專案中的執行階段
+# <a name="walkthrough-add-controls-to-a-worksheet-at-runtime-in-vsto-add-in-project"></a>逐步解說：將控制項加入工作表，在 VSTO 增益集專案中的執行階段
   您可以使用 Excel VSTO 增益集，將控制項加入任何開啟的工作表中。 本逐步解說將示範如何使用功能區，讓使用者將 <xref:Microsoft.Office.Tools.Excel.Controls.Button>、<xref:Microsoft.Office.Tools.Excel.NamedRange> 及 <xref:Microsoft.Office.Tools.Excel.ListObject> 加入工作表。 如需資訊，請參閱[將控制項加入 Office 文件，在執行階段](../vsto/adding-controls-to-office-documents-at-run-time.md)。  
   
- **適用於：** 適用於 Excel 本主題資訊適用於 VSTO 增益集專案。 如需詳細資訊，請參閱[依 Office 應用程式和專案類型提供的功能](../vsto/features-available-by-office-application-and-project-type.md)。  
+ **適用於：** 本主題資訊適用於 VSTO 增益集專案中，適用於 Excel。 如需詳細資訊，請參閱[依 Office 應用程式和專案類型提供的功能](../vsto/features-available-by-office-application-and-project-type.md)。  
   
  這個逐步解說將說明下列工作：  
   
@@ -52,7 +49,7 @@ ms.locfileid: "49915694"
   
 ### <a name="to-create-a-new-excel-vsto-add-in-project"></a>若要建立新的 Excel VSTO 增益集專案  
   
-1.  在  [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]，建立具有名稱的 Excel VSTO 增益集專案**為 ExcelDynamicControls**。 如需詳細資訊，請參閱 [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
+1.  在  [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]，建立具有名稱的 Excel VSTO 增益集專案**為 ExcelDynamicControls**。 如需詳細資訊，請參閱[＜How to：在 Visual Studio 中建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
   
 2.  將參考加入**Microsoft.Office.Tools.Excel.v4.0.Utilities.dll**組件。 本逐步解說稍後會需要用到此參考，以透過程式設計的方式將 Windows Form 控制項加入工作表。  
   
@@ -149,7 +146,7 @@ ms.locfileid: "49915694"
      [!code-csharp[Trin_Excel_Dynamic_Controls#6](../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/ThisAddIn.cs#6)]
      [!code-vb[Trin_Excel_Dynamic_Controls#6](../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/ThisAddIn.vb#6)]  
   
-4.  在 C# 中，您必須建立 <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookBeforeSave> 事件的事件處理常式。 您可以將這個程式碼放入 `ThisAddIn_Startup` 方法中。 如需建立事件處理常式的詳細資訊，請參閱[如何： 建立 Office 專案中的事件處理常式](../vsto/how-to-create-event-handlers-in-office-projects.md)。 以下列程式碼取代 `ThisAddIn_Startup` 方法。  
+4.  在 C# 中，您必須建立 <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookBeforeSave> 事件的事件處理常式。 您可以將這個程式碼放入 `ThisAddIn_Startup` 方法中。 如需建立事件處理常式的詳細資訊，請參閱[How to:建立 Office 專案中的事件處理常式](../vsto/how-to-create-event-handlers-in-office-projects.md)。 以下列程式碼取代 `ThisAddIn_Startup` 方法。  
   
      [!code-csharp[Trin_Excel_Dynamic_Controls#5](../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/ThisAddIn.cs#5)]  
   
@@ -195,5 +192,3 @@ ms.locfileid: "49915694"
  [Office 文件上的控制項](../vsto/controls-on-office-documents.md)   
  [NamedRange 控制項](../vsto/namedrange-control.md)   
  [ListObject 控制項](../vsto/listobject-control.md)  
-  
-  

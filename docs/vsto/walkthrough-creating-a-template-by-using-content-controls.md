@@ -1,9 +1,6 @@
 ---
-title: 逐步解說： 使用內容控制項建立範本
-ms.custom: ''
+title: 逐步解說：使用內容控制項建立範本
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,14 +14,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e597f13d2627a8b3e40aa65926d1c990be839c38
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0ad53a4e3e834959cbc37d2063a5dd2d1b0d7f6c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49833183"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53931982"
 ---
-# <a name="walkthrough-create-a-template-by-using-content-controls"></a>逐步解說： 使用內容控制項建立範本
+# <a name="walkthrough-create-a-template-by-using-content-controls"></a>逐步解說：使用內容控制項建立範本
   本逐步解說示範如何建立文件層級自訂，這個自訂會使用內容控制項在 Microsoft Office Word 範本中建立可重複使用的結構化內容。  
   
  [!INCLUDE[appliesto_wdalldoc](../vsto/includes/appliesto-wdalldoc-md.md)]  
@@ -59,7 +56,7 @@ ms.locfileid: "49833183"
   
 ### <a name="to-create-a-new-word-template-project"></a>建立新的 Word 範本專案  
   
-1.  建立 Word 範本專案同名**MyBuildingBlockTemplate**。 在精靈中，於方案中建立新文件。 如需詳細資訊，請參閱 <<c0> [ 如何： 在 Visual Studio 中的建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
+1.  建立 Word 範本專案同名**MyBuildingBlockTemplate**。 在精靈中，於方案中建立新文件。 如需詳細資訊，請參閱[＜How to：在 Visual Studio 中建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
   
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 在設計工具中開啟新的 Word 範本，並將**MyBuildingBlockTemplate**專案加入**方案總管 中**。  
   
@@ -86,7 +83,7 @@ ms.locfileid: "49833183"
 5. 按一下 [功能區] 上的 [開發人員]  索引標籤。  
   
    > [!NOTE]  
-   >  如果 [開發人員]  索引標籤沒有顯示，您必須先使其顯示。 如需詳細資訊，請參閱 <<c0> [ 如何： 在功能區顯示開發人員索引標籤](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)。  
+   >  如果 [開發人員]  索引標籤沒有顯示，您必須先使其顯示。 如需詳細資訊，請參閱[＜How to：在功能區顯示開發人員索引標籤](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)。  
   
 6. 在 [**控制項**群組中，按一下**文字**] 按鈕![PlainTextContentControl](../vsto/media/plaintextcontrol.gif "PlainTextContentControl")新增<xref:Microsoft.Office.Tools.Word.PlainTextContentControl>第一個資料格中。  
   
@@ -235,15 +232,13 @@ ms.locfileid: "49833183"
 ## <a name="next-steps"></a>後續步驟  
  您可以透過下列主題，進一步了解如何使用內容控制項：  
   
--   將內容控制項繫結至內嵌於文件的 XML 片段，也稱為自訂 XML 組件。 如需詳細資訊，請參閱 <<c0> [ 逐步解說： 將內容控制項繫結至自訂 XML 組件](../vsto/walkthrough-binding-content-controls-to-custom-xml-parts.md)。  
+-   將內容控制項繫結至內嵌於文件的 XML 片段，也稱為自訂 XML 組件。 如需詳細資訊，請參閱[逐步解說：內容控制項繫結至自訂 XML 組件](../vsto/walkthrough-binding-content-controls-to-custom-xml-parts.md)。  
   
 ## <a name="see-also"></a>另請參閱  
  [使用擴充的物件自動化 Word](../vsto/automating-word-by-using-extended-objects.md)   
  [內容控制項](../vsto/content-controls.md)   
- [如何： 將內容控制項加入 Word 文件](../vsto/how-to-add-content-controls-to-word-documents.md)   
- [如何： 使用內容控制項保護文件的組件](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md)   
+ [如何：將內容控制項加入 Word 文件](../vsto/how-to-add-content-controls-to-word-documents.md)   
+ [如何：使用內容控制項保護文件的組件](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md)   
  [主項目和主控制項概觀](../vsto/host-items-and-host-controls-overview.md)   
  [主項目和主控制項的程式設計限制](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
  [將控制項加入 Office 文件，在執行階段](../vsto/adding-controls-to-office-documents-at-run-time.md)  
-  
-  

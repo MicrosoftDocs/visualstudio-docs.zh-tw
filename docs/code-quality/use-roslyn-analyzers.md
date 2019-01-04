@@ -2,7 +2,6 @@
 title: 使用，並設定 Roslyn 分析器
 ms.date: 03/26/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 helpviewer_keywords:
 - code analysis, managed code
@@ -13,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 47dc7d38a2ae9b842891d2e36aebd9b009297cbb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 660abf31d764d0dd78b4d83c46d0931fb790f14f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49817037"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53873219"
 ---
 # <a name="configure-and-use-roslyn-analyzer-rules"></a>設定和使用 Roslyn 分析器規則
 
@@ -165,7 +164,7 @@ msbuild myproject.csproj /target:rebuild /verbosity:minimal
 
 下圖顯示建置專案，其中包含分析器規則的違規情況的命令列組建輸出：
 
-![MSBuild 輸出與規則違規](media/command-line-build-analyzers.png)
+![包含違規的 MSBuild 輸出](media/command-line-build-analyzers.png)
 
 ## <a name="see-also"></a>另請參閱
 

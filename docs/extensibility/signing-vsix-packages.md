@@ -1,9 +1,6 @@
 ---
 title: 簽署 VSIX 封裝 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - signature
@@ -17,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6520171619833fe3c74f87634e9e83c24da33d70
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ba9d5ac7d9700d8ff5b047134a53d0147af3a78f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49855933"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53827189"
 ---
 # <a name="signing-vsix-packages"></a>簽署 VSIX 套件
 延伸模組組件不需要經過簽署才能在 Visual Studio 中，可以執行，但最好這麼做。  

@@ -8,13 +8,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 89723d09fdd6362cdc301f1fa551b7c062639df0
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: 81f5d1004d359ce9ac3ab6f56d5a8d84f51273f8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50967320"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53872394"
 ---
 # <a name="get-started-with-domain-specific-languages"></a>特定領域語言的使用者入門
 
@@ -23,7 +22,7 @@ ms.locfileid: "50967320"
 > [!NOTE]
 > 在 Visual Studio 2017 中，文字範本轉換 SDK 和 Visual Studio Modeling SDK 會自動安裝時安裝 Visual Studio 的特定功能。 如需詳細資訊，請參閱 <<c0> [ 此部落格文章](https://blogs.msdn.microsoft.com/devops/2016/12/12/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/)。
 
-如果您不熟悉 dsl，建議您逐步**DSL 工具實驗室**，您可以找到此站台中： [Visualizaton and Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=186128)
+如果您不熟悉 dsl，建議您逐步**DSL 工具實驗室**，您可以找到此站台：[Visualizaton 與模型 SDK](http://go.microsoft.com/fwlink/?LinkID=186128)
 
 ## <a name="what-can-you-do-with-a-domain-specific-language"></a>您可以使用特定領域語言來做什麼？
 
@@ -386,7 +385,7 @@ DSL 定義中可以指定在模型圖上的顯示方式。 您可以選擇各種
 ## <a name="validation-and-commands"></a>驗證和命令
  您可以開發進一步此 DSL 加入驗證條件約束。 這些條件約束是方法，您可以定義，請確認模型處於正確狀態。 例如，您可以定義條件約束，確保孩子的出生日期晚於其父代的。 如果 DSL 使用者嘗試儲存模型，會中斷任何條件約束，驗證的功能就會顯示警告。 如需詳細資訊，請參閱 <<c0> [ 定義域專屬語言中的驗證](../modeling/validation-in-a-domain-specific-language.md)。
 
- 您也可以定義使用者可以叫用的功能表命令。 命令可以修改模型。 搭配 Visual Studio 中的其他模型與外部資源時，它們也可以互動。 如需詳細資訊，請參閱 <<c0> [ 如何： 修改標準功能表命令](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)。
+ 您也可以定義使用者可以叫用的功能表命令。 命令可以修改模型。 搭配 Visual Studio 中的其他模型與外部資源時，它們也可以互動。 如需詳細資訊，請參閱[＜How to：修改標準功能表命令](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)。
 
 ## <a name="deploying-the-dsl"></a>部署 DSL
  若要允許其他使用者使用特定領域語言，您可以將 Visual Studio 擴充功能 (VSIX) 檔案來分配。 建置 DSL 方案時，會建立此項目。
