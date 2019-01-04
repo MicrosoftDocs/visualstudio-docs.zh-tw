@@ -1,9 +1,6 @@
 ---
 title: 功能區物件模型概觀
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 25e34dcb38685a885ae0730740c25e1cb502e15c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e8c0e18146361cfbe89433d79962afcb89de3061
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49910585"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53961305"
 ---
 # <a name="ribbon-object-model-overview"></a>功能區物件模型概觀
   [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]會公開強類型的物件模型，您可以使用它來取得和設定在執行階段的功能區控制項的屬性。 例如，您可以動態填入功能表控制項，或顯示和隱藏控制項內容。 您也可以新增索引標籤、 群組和控制項的功能區中，但只在 Office 應用程式載入功能區之前。 如需資訊，請參閱[設定會變成唯讀的屬性](#SettingReadOnlyProperties)。  
@@ -190,13 +187,12 @@ ms.locfileid: "49910585"
 ## <a name="see-also"></a>另請參閱  
  [在執行階段功能區的存取](../vsto/accessing-the-ribbon-at-run-time.md)   
  [功能區概觀](../vsto/ribbon-overview.md)   
- [如何： 開始自訂功能區](../vsto/how-to-get-started-customizing-the-ribbon.md)   
+ [如何：開始自訂功能區](../vsto/how-to-get-started-customizing-the-ribbon.md)   
  [功能區設計工具](../vsto/ribbon-designer.md)   
- [逐步解說： 使用功能區設計工具建立自訂索引標籤](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)   
- [逐步解說： 更新在執行階段的功能區上的控制項](../vsto/walkthrough-updating-the-controls-on-a-ribbon-at-run-time.md)   
+ [逐步解說：使用功能區設計工具建立自訂的索引標籤](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)   
+ [逐步解說：更新在執行階段的功能區上的控制項](../vsto/walkthrough-updating-the-controls-on-a-ribbon-at-run-time.md)   
  [適用於 Outlook 自訂功能區](../vsto/customizing-a-ribbon-for-outlook.md)   
- [如何： 自訂內建索引標籤](../vsto/how-to-customize-a-built-in-tab.md)   
- [如何： 將控制項加入至 Backstage 檢視](../vsto/how-to-add-controls-to-the-backstage-view.md)   
- [如何： 將功能區設計工具功能區匯出至功能區 XML](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md)   
- [如何： 顯示增益集使用者介面錯誤](../vsto/how-to-show-add-in-user-interface-errors.md)  
- 
+ [如何：自訂內建索引標籤](../vsto/how-to-customize-a-built-in-tab.md)   
+ [如何：將控制項加入至 Backstage 檢視](../vsto/how-to-add-controls-to-the-backstage-view.md)   
+ [如何：將功能區設計工具功能區匯出至功能區 XML](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md)   
+ [如何：顯示增益集使用者介面錯誤](../vsto/how-to-show-add-in-user-interface-errors.md)  

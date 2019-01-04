@@ -1,8 +1,6 @@
 ---
 title: 文件層級自訂的架構
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology: office-development
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 dev_langs:
@@ -22,12 +20,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4e07c8ae29c773a1f50fedd68376a062e2203570
-ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
+ms.openlocfilehash: 26f65905cc4a8175ca39532db9716bdba1f03b10
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53248266"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53917374"
 ---
 # <a name="architecture-of-document-level-customizations"></a>文件層級自訂的架構
   [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] 包含的專案可以建立 Microsoft Office Word 和 Microsoft Office Excel 的文件層級自訂。 本主題描述文件層級自訂的下列各方面：  
@@ -152,5 +150,3 @@ ms.locfileid: "53248266"
  [設計和建立 Office 方案](../vsto/designing-and-creating-office-solutions.md)   
  [自訂文件屬性概觀](../vsto/custom-document-properties-overview.md)   
  [文件層級自訂中的快取的資料](../vsto/cached-data-in-document-level-customizations.md)  
-  
-  
