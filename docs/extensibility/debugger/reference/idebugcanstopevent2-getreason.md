@@ -1,9 +1,6 @@
 ---
 title: IDebugCanStopEvent2::GetReason |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugCanStopEvent2::GetReason
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d32f8be53d88b8268fdbbc82e6d774bffe3d7c3a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b71a8cec89d113e6a4ce0590b95cbe853ddb98ed
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49898410"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53987423"
 ---
 # <a name="idebugcanstopevent2getreason"></a>IDebugCanStopEvent2::GetReason
 取得偵錯引擎 (DE) 為何想要停止的原因。  
@@ -28,13 +25,13 @@ ms.locfileid: "49898410"
 ## <a name="syntax"></a>語法  
   
 ```cpp  
-HRESULT GetReason(   
+HRESULT GetReason(   
    CANSTOP_REASON* pcr  
 );  
 ```  
   
 ```csharp  
-int GetReason(   
+int GetReason(   
    out enum_CANSTOP_REASON pcr  
 );  
 ```  

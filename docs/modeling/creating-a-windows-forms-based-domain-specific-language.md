@@ -8,13 +8,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 01b2b906d514d8fd9042c1046ea2481faee39499
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 75c50780a8ad48fdd4766576e3d6fe94a580b777
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49926679"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53869923"
 ---
 # <a name="creating-a-windows-forms-based-domain-specific-language"></a>建立 Windows Form 架構之網域指定的語言
 您可以使用 Windows Form 顯示定義域專屬語言 (DSL) 模型，而不是使用 DSL 圖表的狀態。 本主題會引導您完成繫結至 DSL 中，使用 Visual Studio Visualization and Modeling SDK 的 Windows Form。
@@ -118,9 +117,9 @@ ms.locfileid: "49926679"
 
 1.  在 **資料**功能表上，選擇**顯示資料來源**。
 
-     **Zdroje dat**視窗隨即開啟。
+     [資料來源] 視窗隨即開啟。
 
-     選擇**加入新的資料來源**。 **資料來源組態精靈**隨即開啟。
+     選擇**加入新的資料來源**。 [資料來源組態精靈] 隨即開啟。
 
 2.  選擇**物件**，**下一步**。
 

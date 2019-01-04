@@ -1,9 +1,6 @@
 ---
 title: LPTEXTOUTPROC |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - LPTEXTOUTPROC
@@ -19,12 +16,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2d8439d706dbe8c84d807fb445eda272b96ad589
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c3bef9a76c12b44345c000a3133fb3edcfed1352
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49822874"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53956838"
 ---
 # <a name="lptextoutproc"></a>LPTEXTOUTPROC
 當使用者執行從原始檔控制作業，在整合式的開發環境 (IDE) 內時，原始檔控制外掛程式可能會想要傳達與作業相關的錯誤或狀態訊息。 此外掛程式可以針對此目的顯示自己的訊息方塊。 不過，進行更多的無縫整合，外掛程式可以傳遞字串給 IDE，然後顯示其原生方法來顯示狀態資訊。 這個機制是`LPTEXTOUTPROC`函式指標。 IDE 會實作此函式 （在下面詳細說明） 來顯示錯誤和狀態。  
@@ -55,7 +52,7 @@ typedef LONG (*LPTEXTOUTPROC) (
 |`SCC_MSG_DOCANCEL`|不傳送任何訊息字串。|  
 |`SCC_MSG_STARTCANCEL`|開始顯示**取消** 按鈕。|  
 |`SCC_MSG_STOPCANCEL`|會停止顯示**取消** 按鈕。|  
-|`SCC_MSG_BACKGROUND_IS_CANCELLED`|要求 IDE 在背景作業是否要取消： 傳回 IDE`SCC_MSG_RTN_CANCEL`作業已取消; 否則會傳回`SCC_MSG_RTN_OK`。 `display_string`參數會轉換為[SccMsgDataIsCancelled](#LinkSccMsgDataIsCancelled)原始檔控制外掛程式所提供的結構。|  
+|`SCC_MSG_BACKGROUND_IS_CANCELLED`|如果背景作業已取消要求 IDE:傳回 IDE`SCC_MSG_RTN_CANCEL`作業已取消; 否則會傳回`SCC_MSG_RTN_OK`。 `display_string`參數會轉換為[SccMsgDataIsCancelled](#LinkSccMsgDataIsCancelled)原始檔控制外掛程式所提供的結構。|  
 |`SCC_MSG_BACKGROUND_ON_BEFORE_GET_FILE`|會指示 IDE 相關檔案，它會從版本控制之前。 `display_string`參數會轉換為[SccMsgDataOnBeforeGetFile](#LinkSccMsgDataOnBeforeGetFile)原始檔控制外掛程式所提供的結構。|  
 |`SCC_MSG_BACKGROUND_ON_AFTER_GET_FILE`|會指示 IDE 相關檔案之後擷取從版本控制。 `display_string`參數會轉換為[SccMsgDataOnAfterGetFile](#LinkSccMsgDataOnAfterGetFile)原始檔控制外掛程式所提供的結構。|  
 |`SCC_MSG_BACKGROUND_ON_MESSAGE`|會告訴 IDE 的背景作業的目前狀態。 `display_string`參數會轉換為[SccMsgDataOnMessage](#LinkSccMsgDataOnMessage)原始檔控制外掛程式所提供的結構。|  

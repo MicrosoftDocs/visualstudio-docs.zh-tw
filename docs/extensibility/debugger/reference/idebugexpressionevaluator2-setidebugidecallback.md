@@ -1,9 +1,6 @@
 ---
 title: IDebugExpressionEvaluator2::SetIDebugIDECallback |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - IDebugExpressionEvaluator2::SetIDebugIDECallback
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 148d18f86ee88190aa1cf2a5a89807eb343c5d94
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4b9183f88ac4fa6627520881d9439a07544dd115
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49903476"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53850637"
 ---
 # <a name="idebugexpressionevaluator2setidebugidecallback"></a>IDebugExpressionEvaluator2::SetIDebugIDECallback
 可讓要傳遞給運算式評估工具的回呼，在初始化期間的偵錯引擎。  

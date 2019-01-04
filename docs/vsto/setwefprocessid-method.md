@@ -1,9 +1,6 @@
 ---
 title: SetWefProcessId 方法
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -13,12 +10,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b426237816bfee53e7c3e50c19e29168b27e16e1
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 3ccce49992073f11245929bf7af0b966537bd079
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34693428"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53886146"
 ---
 # <a name="setwefprocessid-method"></a>SetWefProcessId 方法
   提供將執行 Web 擴充功能架構 (WEF) 內容的處理序識別碼。  
@@ -35,14 +32,12 @@ HRESULT SetWefProcessId(
   
 |參數|描述|  
 |---------------|-----------------|  
-|*dwProcessId*|將用來執行 WEF 內容處理序識別碼。|  
+|*dwProcessId*|將用來執行 WEF 內容的處理序識別碼。|  
   
 ## <a name="return-value"></a>傳回值  
  HRESULT 值，表示此方法是否已順利完成。  
   
 ## <a name="remarks"></a>備註  
- WEF 內容處理程序建立後，但任何 WEF 內容執行之前，必須呼叫這個方法。  
+ 建立 WEF 內容處理程序之後，但任何 WEF 內容執行之前，必須呼叫這個方法。  
   
  如果您想要將偵錯工具附加至 WEF 內容處理程序的開發環境，環境就必須實作這個方法中執行此作業。  
-  
-  

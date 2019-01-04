@@ -1,5 +1,5 @@
 ---
-title: 如何：使用網域指定的語言修改標準功能表命令
+title: HOW TO：使用特定領域語言修改標準功能表命令
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,20 +11,19 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 6aa827781cb8ea78aa5df79f8cb839a6f3548e11
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: bc7eedfbdf725333a5cd6d3cdd3d683437d1979c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50967047"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53870186"
 ---
-# <a name="how-to-modify-a-standard-menu-command-in-a-domain-specific-language"></a>如何：使用網域指定的語言修改標準功能表命令
+# <a name="how-to-modify-a-standard-menu-command-in-a-domain-specific-language"></a>HOW TO：使用特定領域語言修改標準功能表命令
 
 您可以針對 DSL 中自動定義的一些標準命令，修改其行為。 例如，您可以在其中修改**剪下**，以便排除機密資訊。 若要執行這項操作，您可以覆寫命令集類別中的方法。 這些類別是在 DslPackage 專案的 CommandSet.cs 檔中定義，並且衍生自 <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet>。
 
 > [!NOTE]
-> 如果您想要建立您自己的功能表命令，請參閱[如何： 將命令加入至捷徑功能表](../modeling/how-to-add-a-command-to-the-shortcut-menu.md)。
+> 如果您想要建立您自己的功能表命令，請參閱[How to:將命令加入至捷徑功能表](../modeling/how-to-add-a-command-to-the-shortcut-menu.md)。
 
 ## <a name="what-commands-can-you-modify"></a>您可以修改哪些命令？
 
@@ -71,7 +70,7 @@ ms.locfileid: "50967047"
 
 ## <a name="override-the-command-methods"></a>覆寫命令方法
 
-大多數命令具有兩個相關聯的方法： 具有名稱的方法，例如`ProcessOnStatus`...判斷命令是否應為可見且已啟用。 這個方法會在使用者以滑鼠右鍵按一下圖表時呼叫，應該會快速執行並且不進行任何變更。 `ProcessOnMenu`...當使用者按一下命令，並應該執行此命令的函式呼叫。 您可能想覆寫其中一個或兩個方法。
+大多數命令具有兩個相關聯的方法：具有名稱的方法，例如`ProcessOnStatus`...判斷命令是否應為可見且已啟用。 這個方法會在使用者以滑鼠右鍵按一下圖表時呼叫，應該會快速執行並且不進行任何變更。 `ProcessOnMenu`...當使用者按一下命令，並應該執行此命令的函式呼叫。 您可能想覆寫其中一個或兩個方法。
 
 ### <a name="to-change-when-the-command-appears-on-a-menu"></a>變更命令何時顯示在功能表上
 
@@ -148,7 +147,7 @@ protected override void ProcessOnMenuDeleteCommand()
 
 - <xref:System.ComponentModel.Design.MenuCommand>
 - [撰寫程式碼來自訂特定領域語言](../modeling/writing-code-to-customise-a-domain-specific-language.md)
-- [如何：在捷徑功能表中新增命令](../modeling/how-to-add-a-command-to-the-shortcut-menu.md)
+- [如何：將命令加入至捷徑功能表](../modeling/how-to-add-a-command-to-the-shortcut-menu.md)
 - [VSPackage 如何新增使用者介面元素](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 - [Visual Studio 命令表檔案 (.Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
 - [VSCT XML 結構描述參考](../extensibility/vsct-xml-schema-reference.md)

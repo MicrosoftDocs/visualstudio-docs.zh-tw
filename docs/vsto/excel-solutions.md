@@ -1,9 +1,6 @@
 ---
 title: Excel 方案
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -29,12 +26,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 64fac12a47a519496ecba3f31f3fd035ff2d9121
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: 38db6bf4c29694813b41a88b0d5d62a1672cd6b4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53647941"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53856849"
 ---
 # <a name="excel-solutions"></a>Excel 方案
   Visual Studio 提供的專案範本，可用以建立 Microsoft Office Excel 的文件層級自訂和 VSTO 增益集。 您可以使用這些解決方案自動化 Excel、擴充 Excel 功能和自訂 Excel 使用者介面 (UI)。 如需文件層級自訂和 VSTO 增益集之間的差異的詳細資訊，請參閱[Office 方案開發概觀&#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)。  
@@ -122,4 +119,3 @@ ms.locfileid: "53647941"
 | [逐步解說：將控制項加入工作表，在 VSTO 增益集專案中的執行階段](../vsto/walkthrough-adding-controls-to-a-worksheet-at-run-time-in-vsto-add-in-project.md) | 示範如何將 Windows Form 按鈕，加入<xref:Microsoft.Office.Tools.Excel.NamedRange>，和<xref:Microsoft.Office.Tools.Excel.ListObject>加入工作表，在執行階段使用 VSTO 增益集。 |
 | [了解共同撰寫與增益集](./understanding-coauthoring-and-addins.md) | 描述您可能需要對您的解決方案，以容納共同撰寫的調整。 |
 | [Excel 2010 中的 Office 程式開發](http://go.microsoft.com/fwlink/?LinkId=199011) | 提供開發 Excel 方案的相關文章和參考文件連結。 非專屬於使用 Visual Studio 的 Office 程式開發。 |
-

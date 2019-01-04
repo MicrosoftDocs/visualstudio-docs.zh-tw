@@ -1,13 +1,8 @@
 ---
-title: 如何： 定義方法執行個體 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：定義方法執行個體 |Microsoft Docs
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -20,14 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6e6dd6c0d7676c6b3c2071f0fcb07e8073313633
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 84a03fe6066911b12ba0e5a413ea3521033bc283
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118592"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53952559"
 ---
-# <a name="how-to-define-a-method-instance"></a>如何： 定義方法執行個體
+# <a name="how-to-define-a-method-instance"></a>HOW TO：定義方法執行個體
   在模型中，您必須定義至少一個方法執行個體，針對每個方法。  
   
  使用將新增方法執行個體**BDC 方法詳細資料**視窗。 當您新增方法執行個體時，Visual Studio 會加入`<MethodInstance>`模型檔案，在您的專案中的 XML 項目。 如需有關的屬性`<MethodInstance>`項目，請參閱 < [MethodInstance](http://go.microsoft.com/fwlink/?LinkID=169282)。  
@@ -46,8 +41,7 @@ ms.locfileid: "37118592"
   
 ## <a name="see-also"></a>另請參閱
  [BDC 模型設計工具概觀](../sharepoint/bdc-model-design-tools-overview.md)   
- [如何： 將實體新增至模型](../sharepoint/how-to-add-an-entity-to-a-model.md)   
- [如何： 將參數加入至方法](../sharepoint/how-to-add-a-parameter-to-a-method.md)   
- [如何： 定義參數的型別描述元](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)   
+ [如何：將實體新增至模型](../sharepoint/how-to-add-an-entity-to-a-model.md)   
+ [如何：新增參數至方法](../sharepoint/how-to-add-a-parameter-to-a-method.md)   
+ [如何：定義參數的型別描述元](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)   
  [設計商務資料連接模型](../sharepoint/designing-a-business-data-connectivity-model.md)  
-  

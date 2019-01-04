@@ -1,9 +1,6 @@
 ---
 title: 建立原始檔控制 VSPackage |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK], creating source control packages
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0d9513410aa3bb4773629846abbd70159ec6aa77
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 4529011b9e896c2fdbff5595acd5c1a94cbb9e7a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39499734"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53846831"
 ---
 # <a name="create-a-source-control-vspackage"></a>建立原始檔控制 VSPackage
 這份文件包含連結架構的概觀與整合的原始檔控制封裝[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]，定義要實作的介面，並使用，服務的 API，並說明簡單的原始程式碼的範例控制封裝的實作。  

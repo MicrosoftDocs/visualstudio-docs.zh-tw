@@ -1,9 +1,6 @@
 ---
-title: 檢查清單： 建立新的專案類型 |Microsoft Docs
-ms.custom: ''
+title: 檢查清單：建立新的專案類型 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio SDK], creating new types
@@ -14,19 +11,19 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3da952e22515b48f06fdc50b34b2eb49f5709cc2
-ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
+ms.openlocfilehash: edd4c0a1bf4b6cbc76c2bc4bdbc597efd348799c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46370571"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53861581"
 ---
-# <a name="checklist-create-new-project-types"></a>檢查清單： 建立新的專案類型
+# <a name="checklist-create-new-project-types"></a>檢查清單：建立新的專案類型
 您必須完成數個工作，以建立新的專案類型。 下列檢查清單提供這些工作的指引：  
   
 1.  設計新的專案類型的功能。 如需詳細資訊，請參閱 <<c0> [ 專案類型的設計決策](../../extensibility/internals/project-type-design-decisions.md)。  
   
-2.  判斷哪一個編輯器用於程式碼和其他專案項目。 您可以使用核心或標準的編輯器，或您可以建立並使用專案特定的編輯器。 如需詳細資訊，請參閱 <<c0> [ 建立自訂編輯器和設計師](../../extensibility/creating-custom-editors-and-designers.md)並[如何： 開啟專案特定的編輯器](../../extensibility/how-to-open-project-specific-editors.md)。  
+2.  判斷哪一個編輯器用於程式碼和其他專案項目。 您可以使用核心或標準的編輯器，或您可以建立並使用專案特定的編輯器。 如需詳細資訊，請參閱 <<c0> [ 建立自訂編輯器和設計師](../../extensibility/creating-custom-editors-and-designers.md)和[How to:開啟專案特定的編輯器](../../extensibility/how-to-open-project-specific-editors.md)。  
   
 3.  判斷您的專案項目都會在的參與的層級**類別檢視**並**物件瀏覽器**。 如需詳細資訊，請參閱 <<c0> [ 支援符號瀏覽工具](../../extensibility/internals/supporting-symbol-browsing-tools.md)。  
   

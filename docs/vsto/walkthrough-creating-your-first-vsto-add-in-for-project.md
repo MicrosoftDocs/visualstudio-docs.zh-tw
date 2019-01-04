@@ -1,9 +1,6 @@
 ---
-title: 逐步解說： 建立您第一個 VSTO 增益集專案
-ms.custom: ''
+title: 逐步解說：建立您第一個 VSTO 增益集專案
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,14 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7fb6ece309fb0c5e7c67abf039d2b27a9f04236d
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: c0edd7a956f158f87a4f5102ab9ba3bb4bae1ec6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50671413"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53931251"
 ---
-# <a name="walkthrough-create-your-first-vsto-add-in-for-project"></a>逐步解說： 建立您第一個 VSTO 增益集專案
+# <a name="walkthrough-create-your-first-vsto-add-in-for-project"></a>逐步解說：建立您第一個 VSTO 增益集專案
   本逐步解說會示範如何建立 Microsoft Office Project 的 VSTO 增益集。 不論開啟哪一個專案，您在這類方案中建立的功能都可供應用程式本身使用。 如需詳細資訊，請參閱 < [Office 方案開發概觀&#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)。  
   
  [!INCLUDE[appliesto_projallapp](../vsto/includes/appliesto-projallapp-md.md)]  
@@ -123,9 +120,9 @@ ms.locfileid: "50671413"
 ## <a name="next-steps"></a>後續步驟  
  現在您已經建立 Project 的基本 VSTO 增益集，可以從下列主題進一步了解如何開發 VSTO 增益集：  
   
--   您可以在 VSTO 增益集專案中執行的一般程式設計工作：[程式的 VSTO 增益集](../vsto/programming-vsto-add-ins.md)。  
+-   您可以在 VSTO 增益集專案中執行的一般程式設計工作：[程式設計 VSTO 增益集](../vsto/programming-vsto-add-ins.md)。  
   
--   使用 Project 物件模型：[專案的解決方案](../vsto/project-solutions.md)。  
+-   使用 Project 物件模型：[專案解決方案](../vsto/project-solutions.md)。  
   
 -   建置和偵錯 VSTO 增益集專案：[建置 Office 方案](../vsto/building-office-solutions.md)。  
   
@@ -137,5 +134,3 @@ ms.locfileid: "50671413"
  [建置 Office 方案](../vsto/building-office-solutions.md)   
  [部署 Office 方案](../vsto/deploying-an-office-solution.md)   
  [Office 專案範本概觀](../vsto/office-project-templates-overview.md)  
-  
-  

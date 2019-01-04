@@ -1,13 +1,8 @@
 ---
-title: 如何： 新增搜尋方法 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：新增搜尋方法 |Microsoft Docs
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -22,21 +17,21 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 597d1e706ad75ba6ec16b958c94b5ba9d8e97760
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 40a3cb4457f3078e843b89349fd850d83b8a1c67
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49836225"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53963448"
 ---
-# <a name="how-to-add-a-finder-method"></a>如何： 新增搜尋方法
+# <a name="how-to-add-a-finder-method"></a>HOW TO：新增搜尋方法
   若要啟用網頁組件或清單中顯示的實體清單的商務資料連接 (BDC) 服務，您必須建立*Finder*方法。 搜尋方法是特殊的方法可傳回實體執行個體的集合。 如需詳細資訊，請參閱 <<c0> [ 設計 Business Data Connectivity 模型](../sharepoint/designing-a-business-data-connectivity-model.md)。  
   
 ### <a name="to-create-a-finder-method"></a>若要建立搜尋方法  
   
 1. 在  **BDC 設計工具**，選擇實體。  
   
-    如需詳細資訊，請參閱 <<c0> [ 如何： 將實體新增至模型](../sharepoint/how-to-add-an-entity-to-a-model.md)。  
+    如需詳細資訊，請參閱[＜How to：將實體新增至模型](../sharepoint/how-to-add-an-entity-to-a-model.md)。  
   
 2. 在功能表列上選擇 **檢視** > **其他 Windows** > **BDC 方法詳細資料**。  
   
@@ -46,7 +41,7 @@ ms.locfileid: "49836225"
   
     Visual Studio 會新增方法，是傳回參數和型別描述項。  
   
-4. 設定為實體集合類型描述元的型別描述項。 如需如何建立實體集合類型描述元的詳細資訊，請參閱[如何： 定義參數的型別描述元](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)。  
+4. 設定為實體集合類型描述元的型別描述項。 如需如何建立實體集合類型描述元的詳細資訊，請參閱[How to:定義參數的型別描述元](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)。  
   
    > [!NOTE]  
    >  您沒有執行此步驟中，如果您已加入實體中的特定搜尋工具方法。 Visual Studio 會使用您在特定搜尋工具方法中定義的類型描述元。  
@@ -70,11 +65,9 @@ ms.locfileid: "49836225"
 ## <a name="see-also"></a>另請參閱
  [BDC 模型設計工具概觀](../sharepoint/bdc-model-design-tools-overview.md)   
  [設計商務資料連接模型](../sharepoint/designing-a-business-data-connectivity-model.md)   
- [如何： 加入特定搜尋方法](../sharepoint/how-to-add-a-specific-finder-method.md)   
- [如何： 新增建立者方法](../sharepoint/how-to-add-a-creator-method.md)   
- [如何： 加入刪除者方法](../sharepoint/how-to-add-a-deleter-method.md)   
- [如何： 加入更新者方法](../sharepoint/how-to-add-an-updater-method.md)   
- [如何： 將參數加入至方法](../sharepoint/how-to-add-a-parameter-to-a-method.md)   
- [如何： 定義方法執行個體](../sharepoint/how-to-define-a-method-instance.md)  
-  
-  
+ [如何：新增特定搜尋方法](../sharepoint/how-to-add-a-specific-finder-method.md)   
+ [如何：新增建立者方法](../sharepoint/how-to-add-a-creator-method.md)   
+ [如何：新增刪除者方法](../sharepoint/how-to-add-a-deleter-method.md)   
+ [如何：新增更新者方法](../sharepoint/how-to-add-an-updater-method.md)   
+ [如何：新增參數至方法](../sharepoint/how-to-add-a-parameter-to-a-method.md)   
+ [如何：定義方法執行個體](../sharepoint/how-to-define-a-method-instance.md)  

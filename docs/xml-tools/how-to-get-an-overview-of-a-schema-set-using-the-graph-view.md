@@ -1,8 +1,7 @@
 ---
-title: 如何： 取得設計工具的 XML 結構描述中使用圖表檢視的結構描述集概觀
+title: HOW TO：取得設計工具的 XML 結構描述中使用圖表檢視的結構描述集概觀
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: conceptual
 ms.assetid: c0df4b0d-52ef-4a6c-9676-1d8311aad7c7
 author: gewarren
@@ -10,14 +9,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 004d40992e24f0df651d93b43761add1d2efa673
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: ed088de37bba8bfc7d74339d822e5ee0f6c058b4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381416"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53948832"
 ---
-# <a name="how-to-get-an-overview-of-a-schema-set-using-the-graph-view"></a>如何： 取得設定使用圖表檢視的結構描述的概觀
+# <a name="how-to-get-an-overview-of-a-schema-set-using-the-graph-view"></a>HOW TO：取得使用 [圖形] 檢視設定的結構描述的概觀
 
 本主題描述如何使用[圖表檢視](../xml-tools/graph-view.md)若要查看的節點在結構描述集合和節點之間的關聯性的高階檢視。
 

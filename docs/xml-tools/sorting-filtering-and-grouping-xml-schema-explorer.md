@@ -2,7 +2,6 @@
 title: 排序、 篩選和分組在 XML 結構描述總管中
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: conceptual
 ms.assetid: 4a914de0-9ffc-4526-9603-92e460e52513
 author: gewarren
@@ -10,20 +9,20 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a3e281f8e3995cf22100d328089f1993110f756
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: ad0c790ced2d25c63faab8260278b4e02d3015f9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34693665"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53820849"
 ---
-# <a name="sorting-filtering-and-grouping-xml-schema-explorer"></a>排序、 篩檢與群組 （XML 結構描述總管）
+# <a name="sorting-filtering-and-grouping-xml-schema-explorer"></a>排序、 篩選和群組 （XML 結構描述總管）
 
-本主題描述的選項，可透過**排序、 篩選與分組選項**功能表**XML 結構描述總管**工具列。
+本主題描述的選項，都是透過**排序、 篩選與分組選項**上的功能表**XML 結構描述總管**工具列。
 
 ## <a name="filter-options"></a>篩選選項
 
- 以下是可用的篩選選項。 根據預設，**顯示命名空間**和**顯示結構描述檔案**選取選項。
+ 以下是可用的篩選選項。 根據預設，**顯示命名空間**並**顯示結構描述檔案**選取選項。
 
 -   **顯示命名空間**。
 
@@ -33,7 +32,7 @@ ms.locfileid: "34693665"
 
 ## <a name="sorting-options"></a>排序選項
 
- 以下是可用的排序選項。 預設值是**依類型排序**。 **排序依據**選項不會套用到檔案和命名空間。
+ 以下是可用的排序選項。 預設值是**依類型排序**。 **排序依據**選項不適用於檔案與命名空間。
 
 -   **依類型排序**。
 
@@ -77,7 +76,7 @@ ms.locfileid: "34693665"
 
 ### <a name="document-order"></a>文件順序
 
- **文件順序**選項時，才能使用**顯示結構描述檔案**選取選項。 當**文件順序**選取時，全域節點會顯示在結構描述檔中的出現的順序。
+ **文件順序**選項時，可以使用**顯示結構描述檔案**選項。 當**文件順序**選取時，全域節點會顯示在其出現在結構描述檔案中的順序。
 
 ## <a name="persisting-sortfilter-options"></a>持續排序/篩選選項
 

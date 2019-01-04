@@ -1,9 +1,6 @@
 ---
 title: 深入探索 Visual Studio SDK |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - roadmap, Visual Studio integration SDK
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e72c5033554310555005de17872ee83110768687
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: f356fe21f512ae1fabb51df3ab562b067a692665
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36757038"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53821141"
 ---
 # <a name="inside-the-visual-studio-sdk"></a>深入探索 Visual Studio SDK
 本節提供有關 Visual Studio 擴充功能，包括 Visual Studio 架構、 元件、 服務、 結構描述、 公用程式，以及類似的深入資訊。
@@ -31,13 +28,13 @@ ms.locfileid: "36757038"
  ![環境架構圖形](../../extensibility/internals/media/environment.gif "環境")一般化的 Visual Studio 架構檢視
 
 ## <a name="vspackages"></a>VSPackages
- VSPackage 是使用 UI 項目、服務、專案、編輯器和設計工具來構成和擴充 Visual Studio 的軟體模組。 Vspackage 是 Visual Studio 的中央架構單位。 如需詳細資訊，請參閱 < [Vspackage](../../extensibility/internals/vspackages.md)。
+ VSPackage 是使用 UI 項目、服務、專案、編輯器和設計工具來構成和擴充 Visual Studio 的軟體模組。 Vspackage 是 Visual Studio 的中央架構單位。 如需詳細資訊，請參閱 [VSPackages](../../extensibility/internals/vspackages.md)。
 
 ## <a name="visual-studio-shell"></a>Visual Studio Shell
  Visual Studio shell 提供的基本功能，並支援其元件的 Vspackage 和 MEF 擴充功能之間的跨通訊。 如需詳細資訊，請參閱 < [Visual Studio Shell](../../extensibility/internals/visual-studio-shell.md)。
 
 ## <a name="user-experience-guidelines"></a>使用者體驗指南
- 如果您計劃適用於 Visual Studio 中設計的新功能，您應該看看這些指導方針來設計和可用性的祕訣︰ [Visual Studio 使用者經驗指導方針](../../extensibility/ux-guidelines/visual-studio-user-experience-guidelines.md)。
+ 如果您計劃適用於 Visual Studio 中設計的新功能，您應該看看這些指導方針來設計和可用性的秘訣：[Visual Studio 使用者經驗指導方針](../../extensibility/ux-guidelines/visual-studio-user-experience-guidelines.md)。
 
 ## <a name="commands"></a>命令
  命令是完成工作 (例如，列印文件、重新整理檢視，或建立新檔案) 的功能。
@@ -103,7 +100,7 @@ ms.locfileid: "36757038"
  如需詳細資訊，請參閱 <<c0> [ 加入專案和專案項目範本](../../extensibility/internals/adding-project-and-project-item-templates.md)。
 
 ## <a name="properties-and-options"></a>屬性和選項
- **屬性**視窗中顯示的單一或多個選取的項目屬性：[擴充屬性](../../extensibility/internals/extending-properties.md)選項 頁面包含以特定的元件，例如相關的選項集程式設計語言或 VSPackage:[選項和選項頁](../../extensibility/internals/options-and-options-pages.md)。 設定是否通常與 UI 相關的功能，可以匯入和匯出：[支援的使用者設定](../../extensibility/internals/support-for-user-settings.md)。
+ **屬性**視窗會顯示單一或多個選取的項目屬性：[擴充屬性](../../extensibility/internals/extending-properties.md)選項 頁面包含屬於特定的元件，例如程式設計語言或 VSPackage 選項組：[選項和選項頁](../../extensibility/internals/options-and-options-pages.md)。 這是通常與 UI 相關的功能，可以匯入和匯出設定：[支援使用者設定](../../extensibility/internals/support-for-user-settings.md)。
 
 ## <a name="visual-studio-services"></a>Visual Studio 服務
  服務提供一組特定的元件使用的介面。 Visual Studio 提供一組可供任何元件，包括擴充功能的服務。 例如，Visual Studio 服務可讓工具視窗，顯示或隱藏起來，以動態方式啟用 Help、 狀態列或使用者介面事件的存取。 Visual Studio 編輯器也提供服務，可以匯入的編輯器延伸模組。 如需詳細資訊，請參閱 <<c0> [ 使用和提供服務](../../extensibility/using-and-providing-services.md)。

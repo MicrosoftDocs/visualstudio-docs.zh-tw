@@ -1,9 +1,6 @@
 ---
 title: IDebugFunctionObject::CreateObject |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugFunctionObject::CreateObject
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d0af1607d8352b158c28248fc4bd85ed0fbaf7b3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 02aab56a06a86930401611ba347d579be6696b97
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49908635"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53945713"
 ---
 # <a name="idebugfunctionobjectcreateobject"></a>IDebugFunctionObject::CreateObject
 建立使用建構函式的物件。  
@@ -28,7 +25,7 @@ ms.locfileid: "49908635"
 ## <a name="syntax"></a>語法  
   
 ```cpp  
-HRESULT CreateObject(   
+HRESULT CreateObject(   
    IDebugFunctionObject* pConstructor,  
    DWORD                 dwArgs,  
    IDebugObject*         pArgs[],  

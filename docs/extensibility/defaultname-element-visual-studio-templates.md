@@ -1,6 +1,5 @@
 ---
 title: DefaultName 項目 （Visual Studio 範本） |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 29e64b046187b21fec91381e6d4bbb14c3e0f393
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.openlocfilehash: 37c92b6b1fe400e859971a4233daff8d00ddac6d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53562187"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53885352"
 ---
 # <a name="defaultname-element-visual-studio-templates"></a>DefaultName 項目 （Visual Studio 範本）
 建立時，請指定 Visual Studio 專案系統會產生的專案或項目的名稱。  

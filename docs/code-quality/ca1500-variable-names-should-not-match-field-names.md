@@ -1,8 +1,7 @@
 ---
-title: CA1500：變數名稱不應該與欄位名稱相符
+title: CA1500:變數名稱不應該與欄位名稱相符
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - VariableNamesShouldNotMatchFieldNames
@@ -19,20 +18,20 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 74f9cfadc4bc413c3b176d5f37f1017074547435
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 8d82795669bb1d490af3f78c8d1f1d35afe2b3e7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45548254"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53885381"
 ---
-# <a name="ca1500-variable-names-should-not-match-field-names"></a>CA1500：變數名稱不應該與欄位名稱相符
+# <a name="ca1500-variable-names-should-not-match-field-names"></a>CA1500:變數名稱不應該與欄位名稱相符
 
 |||
 |-|-|
 |TypeName|VariableNamesShouldNotMatchFieldNames|
 |CheckId|CA1500|
-|類別|Microsoft.Maintainability|
+|分類|Microsoft.Maintainability|
 |中斷變更|當引發與欄位具有相同名稱的參數：<br /><br /> -不間斷-如果外部組件，不論您所做的變更，則無法看到的欄位 」 和 「 將參數宣告的方法。<br />-中斷-如果您變更欄位的名稱，而且可以看到外部組件。<br />-中斷-如果您變更參數的名稱，並將其宣告的方法可以看到外部組件。<br /><br /> 當引發對做為欄位具有相同名稱的區域變數：<br /><br /> -不間斷-組件，不論您所做的變更之外無法看到的欄位。<br />-不間斷-如果您變更本機變數的名稱，並不會變更欄位的名稱。<br />-中斷-如果您變更欄位的名稱，而且它可被視為外部組件。|
 
 ## <a name="cause"></a>原因

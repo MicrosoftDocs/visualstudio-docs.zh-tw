@@ -1,9 +1,6 @@
 ---
 title: IDebugReference2::Compare |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugReference2::Compare
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b00eb4e64e9dcccf4519f5e799f238ad01773b8a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8ce8420c3ed2703a32e7422e9bee6b4e1815c134
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49860483"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53869874"
 ---
 # <a name="idebugreference2compare"></a>IDebugReference2::Compare
 比較到另一個參考。 保留供未來使用。  
@@ -28,14 +25,14 @@ ms.locfileid: "49860483"
 ## <a name="syntax"></a>語法  
   
 ```cpp  
-HRESULT Compare (   
+HRESULT Compare (   
    REFERENCE_COMPARE dwCompare,  
    IDebugReference2* pReference  
 );  
 ```  
   
 ```csharp  
-int Compare (   
+int Compare (   
    enum_REFERENCE_COMPARE dwCompare,  
    IDebugReference2       pReference  
 );  

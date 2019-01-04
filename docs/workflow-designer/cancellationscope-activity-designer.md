@@ -3,7 +3,6 @@ title: 工作流程設計工具-CancellationScope 活動設計工具
 ms.date: 11/04/2016
 ms.topic: reference
 ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Activities.Statements.CancellationScope.UI
 ms.assetid: 2c85d663-b219-4142-9866-7693ffd46379
@@ -12,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d3b9e565e5579405fa73ea6a3de12d7c27ed7edc
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 124b4d5d1b8e35611d990fd6c169a880a4e13a5c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49926835"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53872248"
 ---
 # <a name="cancellationscope-activity-designer"></a>CancellationScope 活動設計工具
 

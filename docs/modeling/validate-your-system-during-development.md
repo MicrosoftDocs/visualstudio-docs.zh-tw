@@ -2,7 +2,6 @@
 title: 在開發期間驗證您的系統
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
 ms.topic: conceptual
 helpviewer_keywords:
 - dependency diagrams
@@ -11,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e7a8ff8ac2de47e9f4d52e44f61ea4ec99f7d87f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0878291441f6fe5d5237c0317b3df631aefee139
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49907296"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53869316"
 ---
 # <a name="validate-your-system-during-development"></a>在開發期間驗證您的系統
 Visual Studio 可協助您保持軟體與使用者需求和系統架構的一致性。
@@ -35,7 +34,7 @@ Visual Studio 可協助您保持軟體與使用者需求和系統架構的一致
 
 |**分類**|**連結**|
 |-|-|
-|**影片**|![影片連結](../data-tools/media/playvideo.gif) [Channel 9: Doug 七： 程式碼理解和使用 Visual Studio 2010 的系統設計](http://go.microsoft.com/fwlink/?LinkId=216100)<br /><br /> ![影片連結](../data-tools/media/playvideo.gif) [Channel 9： 架構應用程式使用相依性圖表](http://go.microsoft.com/fwlink/?LinkID=201117)<br /><br /> ![影片連結](../data-tools/media/playvideo.gif) [MSDN 「 如何 」 系列： 如何使用相依性圖表驗證程式碼](http://go.microsoft.com/fwlink/?LinkID=214405)|
+|**影片**|![連結至影片](../data-tools/media/playvideo.gif) [Channel 9:Doug Seven:程式碼理解和使用 Visual Studio 2010 的系統設計](http://go.microsoft.com/fwlink/?LinkId=216100)<br /><br /> ![連結至影片](../data-tools/media/playvideo.gif) [Channel 9:架構應用程式使用相依性圖表](http://go.microsoft.com/fwlink/?LinkID=201117)<br /><br /> ![連結至影片](../data-tools/media/playvideo.gif) [MSDN 「 如何 」 系列：如何使用相依性圖表驗證程式碼](http://go.microsoft.com/fwlink/?LinkID=214405)|
 |**論壇**|-   [Visual Studio Visualization & Modeling Tools](http://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Visual Studio Visualization & Modeling SDK (DSL 工具)](http://go.microsoft.com/fwlink/?LinkId=184721)|
 |**部落格**|-   [Microsoft DevOps](https://blogs.msdn.microsoft.com/devops/)|
 |**技術文件和日誌**|[MSDN 架構中心](http://go.microsoft.com/fwlink/?LinkId=201343)|

@@ -1,9 +1,6 @@
 ---
 title: IDebugEngine2::GetEngineID |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugEngine2::GetEngineID
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bd933653613b5819bab229077de0f2f6f6074485
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 050cc5c55daa56bcdbd9b3031e9deecaabd12d8a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49935896"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53882477"
 ---
 # <a name="idebugengine2getengineid"></a>IDebugEngine2::GetEngineID
 取得偵錯引擎 (DE) 的 GUID。  
@@ -28,13 +25,13 @@ ms.locfileid: "49935896"
 ## <a name="syntax"></a>語法  
   
 ```cpp  
-HRESULT GetEngineID(   
+HRESULT GetEngineID(   
    GUID* pguidEngine  
 );  
 ```  
   
 ```csharp  
-int GetEngineID(   
+int GetEngineID(   
    out Guid pguidEngine  
 );  
 ```  

@@ -8,13 +8,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 78dc0907fa717f61b6cf883994a3ac2fd6072ba1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f542a6b1836c49838884371818058bda4f37b279
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49872794"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53841608"
 ---
 # <a name="generate-and-configure-your-app-from-models"></a>透過模型產生和設定應用程式
 您可以透過模型產生或設定應用程式的各部分。
@@ -39,7 +38,7 @@ ms.locfileid: "49872794"
 ## <a name="configuring-your-application-from-a-model"></a>透過模型設定應用程式
  如果您想要改變應用程式在執行階段的行為，則無法使用程式碼產生，而程式碼產生會在編譯應用程式之前產生原始程式碼。 相反地，您可以設計您的應用程式以讀取模型，並會隨之改變其行為。 如需詳細資訊，請參閱:
 
-- [如何：在程式碼中開啟檔案的模型](../modeling/how-to-open-a-model-from-file-in-program-code.md)
+- [如何：從程式碼中的檔案中開啟模型](../modeling/how-to-open-a-model-from-file-in-program-code.md)
 
   這種方法也可以透過累加方式套用，但是開始時還需要進行其他工作。 您需要撰寫可讀取模型的程式碼，以及設定一個允許變動組件存取其值的架構。 將變動組件設為一般的成本高於程式碼產生。
 
@@ -75,5 +74,5 @@ ms.locfileid: "49872794"
 ## <a name="see-also"></a>另請參閱
 
 - [從特定領域語言產生程式碼](../modeling/generating-code-from-a-domain-specific-language.md)
-- [如何：在程式碼中開啟檔案的模型](../modeling/how-to-open-a-model-from-file-in-program-code.md)
+- [如何：從程式碼中的檔案中開啟模型](../modeling/how-to-open-a-model-from-file-in-program-code.md)
 - [使用 T4 文字範本在設計階段產生程式碼](../modeling/design-time-code-generation-by-using-t4-text-templates.md)

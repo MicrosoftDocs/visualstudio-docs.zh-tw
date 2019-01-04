@@ -1,9 +1,6 @@
 ---
-title: 巢狀專案的精靈支援 |Microsoft 文件
-ms.custom: ''
+title: 巢狀專案的精靈支援 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - Add Item wizard
@@ -15,21 +12,21 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 14e8a32db2542ae1729a7fdc87cc2ab32845f8ca
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3231dd48cea43f517a5e59f33c80df655032ec0c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31137491"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53990121"
 ---
 # <a name="wizard-support-for-nested-projects"></a>巢狀專案的精靈支援
-IDE 執行兩個精靈，可實作用於巢狀專案父專案：**新專案**精靈和**加入項目**精靈。  
+IDE 執行兩個可實作巢狀專案的父專案的精靈：**新的專案**精靈並**加入項目**精靈。  
   
- 如果使用者啟動**新專案**精靈選取**加入專案**按一下**新專案**檔案 功能表上，或選取**新增**並以滑鼠右鍵按一下**新專案**在方案總管 中，IDE 會執行**AddProject**命令與父專案實作**AddProject**命令可能會傳回範本專案檔中或具有一組內容參數的精靈 (.vsz) 檔案。  
+ 如果使用者啟動**新的專案**精靈選取**新增專案**，然後按一下**新專案**[檔案] 功能表上，或藉由選取**新增**然後按一下滑鼠右鍵**新的專案**在 [方案總管] 中，IDE 會執行**AddProject**命令和父專案的實作**AddProject**命令會傳回範本專案檔中或具有一組內容參數的精靈 (.vsz) 檔案。  
   
- 同樣地，父專案的實作**AddItem**精靈傳回.vsz 檔案具有一組不同的內容參數。  
+ 同樣地，父專案的實作**AddItem**精靈會傳回具有一組不同的內容參數的.vsz 檔案。  
   
- 如需有關精靈的詳細資訊，請參閱[精靈 (。Vsz) 檔案](../../extensibility/internals/wizard-dot-vsz-file.md)，[內容參數](../../extensibility/internals/context-parameters.md)和[註冊專案和項目範本](../../extensibility/internals/registering-project-and-item-templates.md)。  
+ 如需有關精靈的詳細資訊，請參閱[精靈 (。在 Vsz) 檔案](../../extensibility/internals/wizard-dot-vsz-file.md)，[內容參數](../../extensibility/internals/context-parameters.md)並[註冊專案和項目範本](../../extensibility/internals/registering-project-and-item-templates.md)。  
   
 ## <a name="see-also"></a>另請參閱  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy>   

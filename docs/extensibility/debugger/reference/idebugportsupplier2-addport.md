@@ -1,9 +1,6 @@
 ---
 title: IDebugPortSupplier2::AddPort |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugPortSupplier2::AddPort
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 09303ac64d042df0d563f113e3c181d523719554
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9db20f2034e1c094beb69a3397261c3522589a6c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49820614"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53867848"
 ---
 # <a name="idebugportsupplier2addport"></a>IDebugPortSupplier2::AddPort
 新增連接埠。  
@@ -28,14 +25,14 @@ ms.locfileid: "49820614"
 ## <a name="syntax"></a>語法  
   
 ```cpp  
-HRESULT AddPort(   
+HRESULT AddPort(   
    IDebugPortRequest2* pRequest,  
    IDebugPort2**       ppPort  
 );  
 ```  
   
 ```csharp  
-int AddPort(   
+int AddPort(   
    IDebugPortRequest2 pRequest,  
    out IDebugPort2    ppPort  
 );  

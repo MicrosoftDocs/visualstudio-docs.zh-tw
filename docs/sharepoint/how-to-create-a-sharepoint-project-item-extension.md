@@ -1,9 +1,6 @@
 ---
-title: 如何： 建立 SharePoint 專案項目擴充功能 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：建立 SharePoint 專案項目擴充功能 |Microsoft Docs
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,14 +14,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 93459096e6d88ce3754c32bf7f61a3cf369cbeba
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 0c716301eee70fea704831890dd1e61b12651f7c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118770"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53956188"
 ---
-# <a name="how-to-create-a-sharepoint-project-item-extension"></a>如何： 建立 SharePoint 專案項目擴充功能
+# <a name="how-to-create-a-sharepoint-project-item-extension"></a>HOW TO：建立 SharePoint 專案項目擴充功能
   當您想要將功能新增至已安裝 Visual Studio 中 SharePoint 專案項目，請建立專案項目擴充功能。 如需詳細資訊，請參閱 <<c0> [ 擴充 SharePoint 專案項目](../sharepoint/extending-sharepoint-project-items.md)。  
   
 ### <a name="to-create-a-project-item-extension"></a>若要建立專案項目擴充功能  
@@ -67,6 +64,4 @@ ms.locfileid: "37118770"
   
 ## <a name="see-also"></a>另請參閱
  [擴充 SharePoint 專案項目](../sharepoint/extending-sharepoint-project-items.md)   
- [逐步解說： 擴充 SharePoint 專案項目類型](../sharepoint/walkthrough-extending-a-sharepoint-project-item-type.md)  
-  
-  
+ [逐步解說：擴充 SharePoint 專案項目類型](../sharepoint/walkthrough-extending-a-sharepoint-project-item-type.md)  

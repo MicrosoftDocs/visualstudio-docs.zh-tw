@@ -8,13 +8,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: b0e641ca9eafb0fb78dbe42e2deb936db8fd840b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6df6b3f4677e53fd2105d616a4be42156848504b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49916019"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53842222"
 ---
 # <a name="t4-import-directive"></a>T4 匯入指示詞
 

@@ -1,8 +1,6 @@
 ---
 title: IDE 常數 |Microsoft Docs
 ms.date: 03/22/2018
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - IDE, errors
@@ -18,12 +16,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4f2cf01bcc8b2854eb1e4c3c711af524a8480bdc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 337d5dd0e8a167bd4e49f084d819eb4c1145c6a9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42635128"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53837468"
 ---
 # <a name="ide-constants"></a>IDE 常數
 

@@ -1,9 +1,6 @@
 ---
 title: HOW TO：管理執行窗格控制項配置
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,12 +14,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 38f9e534fe213b766ea74c83604ddf1cafa1ac65
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: ee790707a5c1c74f3227f74874c66bb4438e7ab0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53647045"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53991171"
 ---
 # <a name="how-to-manage-control-layout-on-actions-panes"></a>HOW TO：管理執行窗格控制項配置
   執行窗格停駐文件或工作表的權限預設;不過，它可以停駐 left，top 或 bottom。 如果您使用多個使用者控制項，您可以撰寫程式碼，以適當堆疊使用者控制項，在 [動作] 窗格上。 如需詳細資訊，請參閱 <<c0> [ 執行窗格概觀](../vsto/actions-pane-overview.md)。  
@@ -74,5 +71,3 @@ ms.locfileid: "53647045"
  [如何：動作窗格加入 Word 文件或 Excel 活頁簿](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)   
  [逐步解說：從 [動作] 窗格中的文件中插入文字](../vsto/walkthrough-inserting-text-into-a-document-from-an-actions-pane.md)   
  [逐步解說：從 [動作] 窗格中的文件中插入文字](../vsto/walkthrough-inserting-text-into-a-document-from-an-actions-pane.md)  
-  
-  

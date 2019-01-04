@@ -1,13 +1,8 @@
 ---
-title: 如何： 定義參數的型別描述元 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：定義參數的型別描述元 |Microsoft Docs
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -20,14 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ec2b0173838446c770f3323aacefebabc195c48b
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 15b8a9dff10c88ce46ecfa5565eb9f411ce59798
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51294977"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53953153"
 ---
-# <a name="how-to-define-the-type-descriptor-of-a-parameter"></a>如何： 定義參數的型別描述元
+# <a name="how-to-define-the-type-descriptor-of-a-parameter"></a>HOW TO：定義參數的型別描述元
   類型描述元包含描述參數資料類型的屬性。 類型描述元可以定義欄位、實體或實體集合。 如需詳細資訊，請參閱 < [TypeDescriptor](/previous-versions/office/developer/sharepoint-2007/ms543392\(v\=office.12\))。  
   
 ### <a name="to-define-the-type-descriptor-of-a-parameter"></a>定義參數的類型描述元  
@@ -42,7 +37,7 @@ ms.locfileid: "51294977"
   
 ### <a name="to-define-a-field"></a>定義欄位  
   
-1.  在**屬性**視窗中，將**名稱**屬性的型別描述項，表示實體的型別中的欄位名稱 (例如： **FirstName**)。  
+1.  在**屬性**視窗中，將**名稱**屬性的型別描述項，表示實體的型別中的欄位名稱 (例如：**FirstName**)。  
   
 2.  在清單中下一步**TypeName**屬性，選擇適當的資料類型 (例如**Int32**)。  
   
@@ -50,7 +45,7 @@ ms.locfileid: "51294977"
   
 ### <a name="to-define-an-entity"></a>定義實體  
   
-1.  在 **屬性**視窗中，將**名稱**屬性來描述實體的名稱 (例如：**連絡人**)。  
+1.  在 **屬性**視窗中，將**名稱**屬性來描述實體的名稱 (例如：**連絡**)。  
   
 2.  設定**TypeName**代表實體類型的完整名稱的屬性。 此類型可以是您專案中的類別、您在方案中所參考組件中定義的類型或 BDC 物件模型中定義的類型。  
   
@@ -88,7 +83,7 @@ ms.locfileid: "51294977"
   
 2. 在功能表列上選擇 [**檢視**，**屬性] 視窗**。  
   
-3. 在 **屬性**視窗中，將**名稱**屬性來描述實體的名稱 (例如：**連絡人**)。  
+3. 在 **屬性**視窗中，將**名稱**屬性來描述實體的名稱 (例如：**連絡**)。  
   
 4. 設定**IsCollection**屬性設 **，則為 True**。 這表示此類型描述元是實體的集合。  
   
@@ -124,8 +119,7 @@ ms.locfileid: "51294977"
   
 ## <a name="see-also"></a>另請參閱
  [BDC 模型設計工具概觀](../sharepoint/bdc-model-design-tools-overview.md)   
- [如何： 將實體新增至模型](../sharepoint/how-to-add-an-entity-to-a-model.md)   
- [如何： 將參數加入至方法](../sharepoint/how-to-add-a-parameter-to-a-method.md)   
- [如何： 定義方法執行個體](../sharepoint/how-to-define-a-method-instance.md)   
+ [如何：將實體新增至模型](../sharepoint/how-to-add-an-entity-to-a-model.md)   
+ [如何：新增參數至方法](../sharepoint/how-to-add-a-parameter-to-a-method.md)   
+ [如何：定義方法執行個體](../sharepoint/how-to-define-a-method-instance.md)   
  [設計商務資料連接模型](../sharepoint/designing-a-business-data-connectivity-model.md)  
-  

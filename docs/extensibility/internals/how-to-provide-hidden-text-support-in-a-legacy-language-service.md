@@ -1,9 +1,6 @@
 ---
-title: 如何： 隱藏的文字中提供支援舊版語言服務 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：舊版語言服務中的隱藏的文字支援 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - hidden text, supporting
@@ -15,14 +12,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d368caaa9b65f6f9ab8b12c1f49994e3bfe16670
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 53e7e47f3f38ecca4e68e100dbc24bfaae5aad8b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39511956"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53926342"
 ---
-# <a name="how-to-provide-hidden-text-support-in-a-legacy-language-service"></a>如何： 隱藏的文字提供舊版語言服務中支援
+# <a name="how-to-provide-hidden-text-support-in-a-legacy-language-service"></a>HOW TO：可在舊版語言服務中的隱藏的文字
 您可以建立大綱區域除了隱藏的文字區域。 用戶端控制或編輯器控制，可以是隱藏的文字區域，並用來完全隱藏的文字區域。 編輯器會顯示為水平線的隱藏的區域。 舉例來說，這**僅限指令碼**HTML 編輯器中的檢視。  
   
   

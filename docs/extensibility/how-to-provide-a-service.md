@@ -1,9 +1,6 @@
 ---
-title: 如何： 提供的服務 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：提供服務 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - services, providing
@@ -13,14 +10,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2408eace3ecea447c9b49ff17c729e3f4661b5d6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c42cd3d937cd12ae11d6550fec119ea47c2a6025
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942545"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53857811"
 ---
-# <a name="how-to-provide-a-service"></a>如何： 提供的服務
+# <a name="how-to-provide-a-service"></a>HOW TO：提供服務
 VSPackage 可以提供其他的 Vspackage 可以使用的服務。 若要提供服務，VSPackage 必須向 Visual Studio 中的服務，然後加入服務。  
   
  <xref:Microsoft.VisualStudio.Shell.Package>類別會實作<xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider>和<xref:System.ComponentModel.Design.IServiceContainer>。 <xref:System.ComponentModel.Design.IServiceContainer> 包含隨需提供服務的回呼方法。  
@@ -142,6 +139,6 @@ VSPackage 可以提供其他的 Vspackage 可以使用的服務。 若要提供�
      值`helloString`應該是"Hello"。  
   
 ## <a name="see-also"></a>另請參閱  
- [如何： 取得服務](../extensibility/how-to-get-a-service.md)   
+ [如何：取得服務](../extensibility/how-to-get-a-service.md)   
  [使用，並提供服務](../extensibility/using-and-providing-services.md)   
  [服務的基本資訊](../extensibility/internals/service-essentials.md)

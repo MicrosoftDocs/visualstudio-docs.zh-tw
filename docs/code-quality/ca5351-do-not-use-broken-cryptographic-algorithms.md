@@ -2,7 +2,6 @@
 title: CA5351 不要使用中斷的密碼編譯演算法
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 ms.assetid: 483f51b3-e186-4433-b48e-5ca24a9a9c94
 author: gewarren
@@ -10,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c00d4e8ebb385b987bb49a44af8b241883a566b
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: c87c826cd924db050efb061414c57028b34bb133
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45550969"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53958770"
 ---
 # <a name="ca5351-do-not-use-broken-cryptographic-algorithms"></a>CA5351 不要使用中斷的密碼編譯演算法
 
@@ -23,7 +22,7 @@ ms.locfileid: "45550969"
 |-|-|
 |TypeName|DoNotUseBrokenCryptographicAlgorithms|
 |CheckId|CA5351|
-|類別|Microsoft.Cryptography|
+|分類|Microsoft.Cryptography|
 |中斷變更|非中斷|
 
 > [!NOTE]

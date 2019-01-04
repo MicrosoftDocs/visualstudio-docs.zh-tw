@@ -1,9 +1,6 @@
 ---
-title: 逐步解說： 建立 SharePoint 專案延伸模組 |Microsoft Docs
-ms.custom: ''
+title: 逐步解說：建立 SharePoint 專案擴充功能 |Microsoft Docs
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,14 +14,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8d68347f2b6b9f538555e05c91b15dcb045b46d6
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 39432f20620a3c7e6f374b09943fc73c2d4d2903
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295978"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53885896"
 ---
-# <a name="walkthrough-create-a-sharepoint-project-extension"></a>逐步解說： 建立 SharePoint 專案擴充功能
+# <a name="walkthrough-create-a-sharepoint-project-extension"></a>逐步解說：建立 SharePoint 專案擴充功能
   此逐步解說將說明如何建立 SharePoint 專案延伸模組。 您可以使用專案擴充功能，例如加入、 刪除或重新命名專案時的專案層級事件回應。 您也可以新增自訂屬性，或當屬性值變更時回應。 不同的專案項目擴充功能，於專案延伸模組不能與特定的 SharePoint 專案類型相關聯。 當您建立的專案延伸模組時，擴充功能載入任何種類的 SharePoint 專案中開啟時[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。  
   
  在本逐步解說中，您將建立自訂的布林值屬性中建立任何 SharePoint 專案加入[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。 當設定為 **，則為 True**，新的屬性加入，或將對應至您的專案的映像資源資料夾。 當設定為**False**，移除 [Images] 資料夾時，若有的話。 如需詳細資訊，請參閱 <<c0> [ 如何： 新增與移除對應的資料夾](../sharepoint/how-to-add-and-remove-mapped-folders.md)。  
@@ -205,8 +202,7 @@ ms.locfileid: "51295978"
   
 ## <a name="see-also"></a>另請參閱
  [擴充 SharePoint 專案](../sharepoint/extending-sharepoint-projects.md)   
- [如何： 將屬性加入至 SharePoint 專案](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md)   
+ [如何：將屬性加入至 SharePoint 專案](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md)   
  [SharePoint 專案系統類型與其他 Visual Studio 專案類型之間轉換](../sharepoint/converting-between-sharepoint-project-system-types-and-other-visual-studio-project-types.md)   
  [將資料儲存在 SharePoint 專案系統的擴充功能](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md)   
  [將自訂的資料產生關聯的 SharePoint 工具擴充功能](../sharepoint/associating-custom-data-with-sharepoint-tools-extensions.md)  
-  

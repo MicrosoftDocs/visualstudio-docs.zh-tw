@@ -1,9 +1,6 @@
 ---
 title: 預設命令、 群組及工具列位置 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - commands [Visual Studio], default groups
@@ -18,20 +15,20 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: da5716460c428098b2b6cc3bb78a51c3831201b2
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 8d4292ff0a3760c412d0c12961ad7b34ad18f607
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498226"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53850975"
 ---
 # <a name="default-command-group-and-toolbar-placement"></a>預設命令、 群組及工具列位置
 如需產品的一致性和穩定性，UI 預設會顯示特定命令群組，和[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]提供命令和命令群組的定義。 Vspackage 也可以使用標準命令和命令群組。  
   
- 預設命令群組分成三個類別： IDE 命令、 產品命令和編輯器命令。  
+ 預設命令群組分成三個類別：IDE 命令、 產品命令和編輯器命令。  
   
 ## <a name="default-ide-commands"></a>預設 IDE 命令  
- 預設 IDE 工具列中包含共用的所有產品中包含的命令[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。 其中包括與相關的命令一般專案作業，例如**儲存**命令並**加入項目**命令。 Vspackage 不應該加入或減去此工具列，但有一個例外： 如果 VSPackage 的產品加入新的工具視窗中，則視窗應該新增至可用的工具視窗的清單上**檢視**功能表。 新的產品或 Vspackage 可以新增自己的工具列。  
+ 預設 IDE 工具列中包含共用的所有產品中包含的命令[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。 其中包括與相關的命令一般專案作業，例如**儲存**命令並**加入項目**命令。 Vspackage 不應該加入或減去此工具列，有一個例外狀況：如果 VSPackage 的產品加入新的工具視窗中，則視窗應該新增至可用的工具視窗的清單上**檢視**功能表。 新的產品或 Vspackage 可以新增自己的工具列。  
   
 ## <a name="default-product-commands"></a>預設產品命令  
  每項產品可以提供自己預設工具列包含重要且常用命令的 IDE。 它是最佳方法，不過，若要使用現有的功能表和工具列，可能的話，並補充它們與其他工作特定的工具列，視。  

@@ -1,8 +1,7 @@
 ---
-title: CA2230：必須使用 params 做為變數引數
+title: CA2230:必須使用 params 作為變數引數
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - UseParamsForVariableArguments
@@ -16,14 +15,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e8139153be130ef05c150bd9d96d4298554c1269
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5e0e15f3272f39bc8894950357cb98c0feafd6e9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49866710"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53844258"
 ---
-# <a name="ca2230-use-params-for-variable-arguments"></a>CA2230：必須使用 params 做為變數引數
+# <a name="ca2230-use-params-for-variable-arguments"></a>CA2230:必須使用 params 作為變數引數
 
 |||
 |-|-|

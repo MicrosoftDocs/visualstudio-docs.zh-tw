@@ -1,9 +1,6 @@
 ---
 title: IDebugProgram2::EnumModules |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugProgram2::EnumModules
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2eb92fc8657a69fe6b66762f9052af1294d92a7b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8cd7291a297545bc21f466828f2020d068b1ec00
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49905996"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53987676"
 ---
 # <a name="idebugprogram2enummodules"></a>IDebugProgram2::EnumModules
 擷取此程式已載入，並且正在執行的模組清單。  
@@ -28,13 +25,13 @@ ms.locfileid: "49905996"
 ## <a name="syntax"></a>語法  
   
 ```cpp  
-HRESULT EnumModules(   
+HRESULT EnumModules(   
    IEnumDebugModules2** ppEnum  
 );  
 ```  
   
 ```csharp  
-int EnumModules(   
+int EnumModules(   
    out IEnumDebugModules2 ppEnum  
 );  
 ```  

@@ -1,9 +1,6 @@
 ---
-title: 如何： 開啟標準編輯器 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：開啟標準編輯器 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], opening
@@ -14,14 +11,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2e740cdbb04a9b20ddb5a9d0465434333dd29264
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: fbc4c694dcaa39e61eef484f018204474e67dd7a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39639379"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53820341"
 ---
-# <a name="how-to-open-standard-editors"></a>如何： 開啟標準編輯器
+# <a name="how-to-open-standard-editors"></a>HOW TO：開啟標準編輯器
 當您開啟標準編輯器時，您會讓判斷指定的檔案類型，而不是指定之檔案的專案特定編輯器的標準編輯器在 IDE。  
   
  完成下列程序來實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.OpenItem%2A>方法。 這會在標準編輯器中開啟專案檔。  
@@ -55,6 +52,6 @@ ms.locfileid: "39639379"
 ## <a name="see-also"></a>另請參閱  
  <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider>   
  [開啟和儲存專案項目](../extensibility/internals/opening-and-saving-project-items.md)   
- [如何： 開啟專案特定的編輯器](../extensibility/how-to-open-project-specific-editors.md)   
- [如何： 開啟編輯器開啟的文件](../extensibility/how-to-open-editors-for-open-documents.md)   
+ [如何：開啟專案特定的編輯器](../extensibility/how-to-open-project-specific-editors.md)   
+ [如何：開啟編輯器開啟的文件](../extensibility/how-to-open-editors-for-open-documents.md)   
  [使用 開啟檔案命令顯示檔案](../extensibility/internals/displaying-files-by-using-the-open-file-command.md)

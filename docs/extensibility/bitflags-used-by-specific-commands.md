@@ -1,9 +1,6 @@
 ---
 title: 特定命令所使用的位元旗標 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, bitflags used by specific commands
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 39451e8d404e586d77de31b97db6b8dd81bdc18b
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 403b9649feb24ca06cb24762f1b0cf484bed0612
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39152110"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53875416"
 ---
 # <a name="bitflags-used-by-specific-commands"></a>特定命令所使用的位元旗標
 設定為單一值的一個或多個位元，可以修改多個原始檔控制外掛程式 API 中的函式的行為。 這些值稱為位元旗標。 原始檔控制外掛程式 API 所使用的位元各種的旗標的詳細資訊，依使用這些函式。  
@@ -37,7 +34,7 @@ ms.locfileid: "39152110"
 |----------|-----------|-----------------|  
 |`SCC_FILETYPE_AUTO`|0x00|原始檔控制外掛程式應該會自動偵測檔案是否為文字或二進位檔。|  
 |`SCC_FILETYPE_TEXT`|0x01|檔案類型是文字。|  
-|`SCC_FILETYPE_BINARY`|0x04|檔案類型是二進位檔。 **注意︰** `SCC_FILETYPE_TEXT`和`SCC_FILETYPE_BINARY`旗標互斥。   設定一個或兩者皆非。|  
+|`SCC_FILETYPE_BINARY`|0x04|檔案類型是二進位檔。 **注意︰** `SCC_FILETYPE_TEXT`和`SCC_FILETYPE_BINARY`旗標互斥。 設定一個或兩者皆非。|  
 |`SCC_ADD_STORELATEST`|0x02|會儲存最新版本只 （沒有差異）。|  
   
 ## <a name="diff-flags"></a>差異比對旗標  
@@ -46,7 +43,7 @@ ms.locfileid: "39152110"
 |旗標|值|描述|  
 |----------|-----------|-----------------|  
 |`SCC_DIFF_IGNORECASE`|0x0002|忽略大小寫差異。|  
-|`SCC_DIFF_IGNORESPACE`|0x0004|忽略空白字元的差異。 **注意︰** `SCC_DIFF_IGNORECASE`和`SCC_DIFF_IGNORESPACE`旗標是選擇性的位元旗標。|  
+|`SCC_DIFF_IGNORESPACE`|0x0004|忽略空白字元的差異。 **注意：**`SCC_DIFF_IGNORECASE`和`SCC_DIFF_IGNORESPACE`旗標是選擇性的位元旗標。|  
 |`SCC_DIFF_QD_CONTENTS`|0x0010|QD 藉由比較整個檔案內容。|  
 |`SCC_DIFF_QD_CHECKSUM`|0x0020|QD 透過總和檢查碼。|  
 |`SCC_DIFF_QD_TIME`|0x0040|QD 檔案的日期/時間戳記。|  
@@ -81,8 +78,8 @@ ms.locfileid: "39152110"
   
 |旗標|值|描述|  
 |----------|-----------|-----------------|  
-|`SCC_GET_ALL`|0x00000001L|IDE 傳遞的目錄，而不複製檔案： 取得這些目錄中的所有檔案。|  
-|`SCC_GET_RECURSIVE`|0x00000002L|IDE 傳遞目錄： 取得這些目錄和所有其子目錄。|  
+|`SCC_GET_ALL`|0x00000001L|IDE 傳遞不是檔案的目錄：取得這些目錄中的所有檔案。|  
+|`SCC_GET_RECURSIVE`|0x00000002L|IDE 傳遞目錄：取得這些目錄和所有其子目錄。|  
   
 ## <a name="noption-values"></a>nOption 值  
  這些旗標由[SccSetOption](../extensibility/sccsetoption-function.md)在`nOption`參數。  

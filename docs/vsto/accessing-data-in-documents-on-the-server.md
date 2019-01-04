@@ -1,8 +1,6 @@
 ---
 title: 存取伺服器上的文件中的資料
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology: office-development
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +14,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 85f1183ac4d7d623539c7508f036efd01573e023
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: 9d815178e772e391eb19eb43b5870fbcd9dbdaa6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53802896"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53858100"
 ---
 # <a name="access-data-in-documents-on-the-server"></a>存取伺服器上的文件中的資料
   您可以程式對文件層級自訂中的資料，而不需要使用 Microsoft Office Word 或 Microsoft Office Excel 物件模型。 這表示您可以存取並沒有文字的伺服器上的文件中包含的資料，或安裝 Excel。 例如，程式碼的伺服器上 (例如，在[!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)]頁面) 可以自訂文件中的資料，並將自訂的文件傳送給使用者。 當使用者開啟文件時，方案組件中的資料繫結程式碼將自訂的資料繫結到文件。 這可能是因為文件中的資料分開的使用者介面。 如需詳細資訊，請參閱 <<c0> [ 快取文件層級自訂中的資料](../vsto/cached-data-in-document-level-customizations.md)。

@@ -1,9 +1,6 @@
 ---
-title: 如何： 以程式設計方式開啟 Visio 文件
-ms.custom: ''
+title: HOW TO：以程式設計方式開啟 Visio 文件
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,15 +13,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 28f882510e2370c0fb31645da5023e865afd667e
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 1815b0f336026890c88ec0794ea72911560ecb38
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50672674"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53875718"
 ---
-# <a name="how-to-programmatically-open-visio-documents"></a>如何： 以程式設計方式開啟 Visio 文件
-  有兩種方法來開啟現有的 Microsoft Office Visio 文件： 開啟] 及 [OpenEx。 OpenEx 方法等同於開放式的方法，不同之處在於它會提供在其中呼叫端可以指定如何在文件開啟時的引數。  
+# <a name="how-to-programmatically-open-visio-documents"></a>HOW TO：以程式設計方式開啟 Visio 文件
+  有兩種方法來開啟現有的 Microsoft Office Visio 文件：開啟和 OpenEx。 OpenEx 方法等同於開放式的方法，不同之處在於它會提供在其中呼叫端可以指定如何在文件開啟時的引數。  
   
  如需此物件模型的詳細資訊，請參閱 [Microsoft.Office.Interop.Visio.Documents.Open](/office/vba/api/Visio.Documents.Open) 方法和 [Microsoft.Office.Interop.Visio.Documents.OpenEx](/office/vba/api/Visio.Documents.OpenEx) 方法的 VBA 參考文件。  
   
@@ -54,9 +51,7 @@ ms.locfileid: "50672674"
 ## <a name="see-also"></a>另請參閱  
  [Visio 方案](../vsto/visio-solutions.md)   
  [Visio 物件模型概觀](../vsto/visio-object-model-overview.md)   
- [如何： 以程式設計方式建立新的 Visio 文件](../vsto/how-to-programmatically-create-new-visio-documents.md)   
- [如何： 以程式設計方式關閉 Visio 文件](../vsto/how-to-programmatically-close-visio-documents.md)   
- [如何： 以程式設計方式儲存 Visio 文件](../vsto/how-to-programmatically-save-visio-documents.md)   
- [如何： 以程式設計方式列印 Visio 文件](../vsto/how-to-programmatically-print-visio-documents.md)  
-  
-  
+ [如何：以程式設計方式建立新的 Visio 文件](../vsto/how-to-programmatically-create-new-visio-documents.md)   
+ [如何：以程式設計方式關閉 Visio 文件](../vsto/how-to-programmatically-close-visio-documents.md)   
+ [如何：以程式設計方式儲存 Visio 文件](../vsto/how-to-programmatically-save-visio-documents.md)   
+ [如何：以程式設計方式列印 Visio 文件](../vsto/how-to-programmatically-print-visio-documents.md)  

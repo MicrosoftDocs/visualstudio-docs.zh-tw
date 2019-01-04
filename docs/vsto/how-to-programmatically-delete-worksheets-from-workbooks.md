@@ -1,9 +1,6 @@
 ---
-title: 如何： 以程式設計方式從活頁簿中刪除工作表
-ms.custom: ''
+title: HOW TO：以程式設計方式從活頁簿中刪除工作表
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 73c501d545f76012b63bde291001b38c214c3eb6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7254ba703c0e25d37dd3582d4443a6bdf1653a96
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49950221"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53843381"
 ---
-# <a name="how-to-programmatically-delete-worksheets-from-workbooks"></a>如何： 以程式設計方式從活頁簿中刪除工作表
+# <a name="how-to-programmatically-delete-worksheets-from-workbooks"></a>HOW TO：以程式設計方式從活頁簿中刪除工作表
   您可以刪除活頁簿中的任何工作表。 若要刪除工作表，請使用工作表主項目，或使用活頁簿的工作表集合存取工作表。  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
@@ -39,7 +36,7 @@ ms.locfileid: "49950221"
 > - Excel 2010 活頁簿  
 > - Excel 2010 範本  
 > 
->   如果您想要執行這項工作中任何其他類型的專案，您必須加入參考**Microsoft.Office.Interop.Excel**組件，然後您必須使用該組件中的類別來開啟活頁簿和刪除工作表。 如需詳細資訊，請參閱 <<c0> [ 如何： 透過主要 interop 組件的目標 Office 應用程式](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)並[Excel 2010 主要 interop 組件參考](http://go.microsoft.com/fwlink/?LinkId=189585)。  
+>   如果您想要執行這項工作中任何其他類型的專案，您必須加入參考**Microsoft.Office.Interop.Excel**組件，然後您必須使用該組件中的類別來開啟活頁簿和刪除工作表。 如需詳細資訊，請參閱[＜How to：透過主要 interop 組件的 Office 應用程式為目標](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)並[Excel 2010 主要 interop 組件參考](http://go.microsoft.com/fwlink/?LinkId=189585)。  
   
 ### <a name="to-delete-a-worksheet-by-using-a-worksheet-host-item"></a>使用工作表主項目刪除工作表  
   
@@ -58,7 +55,7 @@ ms.locfileid: "49950221"
   下列程式碼從活頁簿刪除工作表，藉由參考至索引數目的工作表**試算表**集合。 這個程式碼會假設新的工作表是以程式設計方式建立的。  
   
 > [!IMPORTANT]  
->  如果您想要執行這項工作中任何其他類型的專案，您必須加入參考**Microsoft.Office.Interop.Excel**組件，然後您必須使用該組件中的類別來開啟活頁簿和刪除工作表。 如需詳細資訊，請參閱 <<c0> [ 如何： 透過主要 interop 組件的目標 Office 應用程式](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)並[Excel 2010 主要 interop 組件參考](http://go.microsoft.com/fwlink/?LinkId=189585)。  
+>  如果您想要執行這項工作中任何其他類型的專案，您必須加入參考**Microsoft.Office.Interop.Excel**組件，然後您必須使用該組件中的類別來開啟活頁簿和刪除工作表。 如需詳細資訊，請參閱[＜How to：透過主要 interop 組件的 Office 應用程式為目標](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)並[Excel 2010 主要 interop 組件參考](http://go.microsoft.com/fwlink/?LinkId=189585)。  
   
 ### <a name="to-delete-a-worksheet-by-using-the-sheets-collection-of-the-excel-workbook"></a>使用 Excel 活頁簿的工作表集合刪除工作表  
   
@@ -69,12 +66,10 @@ ms.locfileid: "49950221"
   
 ## <a name="see-also"></a>另請參閱  
  [使用工作表](../vsto/working-with-worksheets.md)   
- [如何： 以程式設計方式隱藏工作表](../vsto/how-to-programmatically-hide-worksheets.md)   
- [如何： 以程式設計方式移動工作表在活頁簿內](../vsto/how-to-programmatically-move-worksheets-within-workbooks.md)   
- [如何： 以程式設計方式選取工作表](../vsto/how-to-programmatically-select-worksheets.md)   
- [如何： 以程式設計方式在活頁簿中加入新的工作表](../vsto/how-to-programmatically-add-new-worksheets-to-workbooks.md)   
+ [如何：以程式設計方式隱藏工作表](../vsto/how-to-programmatically-hide-worksheets.md)   
+ [如何：以程式設計方式移動工作表在活頁簿內](../vsto/how-to-programmatically-move-worksheets-within-workbooks.md)   
+ [如何：以程式設計方式選取工作表](../vsto/how-to-programmatically-select-worksheets.md)   
+ [如何：以程式設計方式在活頁簿中加入新的工作表](../vsto/how-to-programmatically-add-new-worksheets-to-workbooks.md)   
  [工作表主項目](../vsto/worksheet-host-item.md)   
  [全域存取 Office 專案中的物件](../vsto/global-access-to-objects-in-office-projects.md)   
  [主項目和主控制項的程式設計限制](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)  
-  
-  

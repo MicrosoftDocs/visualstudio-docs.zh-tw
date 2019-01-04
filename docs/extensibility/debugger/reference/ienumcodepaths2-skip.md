@@ -1,9 +1,6 @@
 ---
 title: IEnumCodePaths2::Skip |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IEnumCodePaths2::Skip
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 37fd0a503519fc3fb1b1ccca1110b04a0332b867
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ca6966c1fc21a2bd3b2c5938137124e0c0a59ec1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49929669"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53985848"
 ---
 # <a name="ienumcodepaths2skip"></a>IEnumCodePaths2::Skip
 略過指定的元素數目。  

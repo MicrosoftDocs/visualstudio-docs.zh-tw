@@ -1,8 +1,6 @@
 ---
 title: 存取表單區域在執行階段
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology: office-development
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +15,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f2c1f3e80f5ca4015a19b5eee7f2f4c673dcc615
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: 82f613711d1d95b271bd0d1ca558b193a1aa90cb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52304476"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53875429"
 ---
 # <a name="access-a-form-region-at-runtime"></a>存取表單區域在執行階段
 
@@ -71,17 +69,17 @@ ms.locfileid: "52304476"
 
  若要啟用區域程式碼檔案之外控制項表單的存取，請在表單區域程式碼檔案中建立屬性以傳回該控制項。  
 
- 如需有關如何建立屬性，在C#，請參閱[如何： 宣告和使用讀取寫入的屬性&#40;C&#35;程式設計指南&#41;](/dotnet/csharp/programming-guide/classes-and-structs/how-to-declare-and-use-read-write-properties)。  
+ 如需有關如何建立屬性，在C#，請參閱[如何：宣告和使用讀取寫入的屬性&#40;C&#35;程式設計指南&#41;](/dotnet/csharp/programming-guide/classes-and-structs/how-to-declare-and-use-read-write-properties)。  
 
- 如需如何在 Visual Basic 中建立屬性的詳細資訊，請參閱[如何： 建立屬性 (Visual Basic)](/dotnet/visual-basic/programming-guide/language-features/procedures/how-to-create-a-property)。  
+ 如需如何在 Visual Basic 中建立屬性的詳細資訊，請參閱[How to:建立屬性 (Visual Basic)](/dotnet/visual-basic/programming-guide/language-features/procedures/how-to-create-a-property)。  
 
 ## <a name="see-also"></a>另請參閱  
  [若要建立 Outlook 表單區域的指導方針](../vsto/guidelines-for-creating-outlook-form-regions.md)   
- [逐步解說： 設計 Outlook 表單區域](../vsto/walkthrough-designing-an-outlook-form-region.md)   
- [如何： 在 Outlook 增益集專案中加入表單區域](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)   
+ [逐步解說：設計 Outlook 表單區域](../vsto/walkthrough-designing-an-outlook-form-region.md)   
+ [如何：將表單區域加入 Outlook 增益集專案](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)   
  [Outlook 表單區域中的自訂動作](../vsto/custom-actions-in-outlook-form-regions.md)   
  [Outlook 訊息類別相關聯的表單區域](../vsto/associating-a-form-region-with-an-outlook-message-class.md)   
- [逐步解說： 匯入在 Outlook 中設計表單區域](../vsto/walkthrough-importing-a-form-region-that-is-designed-in-outlook.md)   
- [如何： 防止 Outlook 顯示表單區域](../vsto/how-to-prevent-outlook-from-displaying-a-form-region.md)   
+ [逐步解說：匯入在 Outlook 中設計的表單區域](../vsto/walkthrough-importing-a-form-region-that-is-designed-in-outlook.md)   
+ [如何：防止 Outlook 顯示表單區域](../vsto/how-to-prevent-outlook-from-displaying-a-form-region.md)   
  [建立 Outlook 表單區域](../vsto/creating-outlook-form-regions.md)   
  [在執行階段功能區的存取](../vsto/accessing-the-ribbon-at-run-time.md)  

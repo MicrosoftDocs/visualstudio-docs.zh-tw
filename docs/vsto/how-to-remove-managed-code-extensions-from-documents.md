@@ -1,9 +1,6 @@
 ---
-title: 如何： 移除文件從 managed 程式碼擴充
-ms.custom: ''
+title: HOW TO：從文件移除 managed 程式碼擴充功能
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,21 +13,21 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a57384fa22e810be27969bb5164e1951dccd1bf2
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 2057fe53a571bccf04373636f83aaedecebfd4ef
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35671491"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53964769"
 ---
-# <a name="how-to-remove-managed-code-extensions-from-documents"></a>如何： 移除文件從 managed 程式碼擴充
+# <a name="how-to-remove-managed-code-extensions-from-documents"></a>HOW TO：從文件移除 managed 程式碼擴充功能
   您可以透過程式設計方式移除自訂組件的文件或 Microsoft Office Word 或 Microsoft Office Excel 文件層級自訂一部分的活頁簿。 使用者可以開啟文件並檢視其內容，但不是會出現您的文件中加入任何自訂使用者介面 (UI)，並不會執行您的程式碼。  
   
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
   
  您可以使用其中一個，以便移除自訂組件`RemoveCustomization`所提供的方法[!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]。 您使用哪一種方法，取決於您是否要移除在執行階段自訂 （亦即，這個字時自訂中執行程式碼文件或 Excel 活頁簿是開啟），或如果您想要移除已關閉的文件或文件的自訂該 i沒有安裝 Microsoft Office 安裝的伺服器上是 s。  
   
- ![影片連結](../vsto/media/playvideo.gif "影片連結")如需相關的影片示範，請參閱[如何執行 do i： 附加或卸離 VSTO 組件從 Word 文件？](http://go.microsoft.com/fwlink/?LinkId=136782)。  
+ ![影片連結](../vsto/media/playvideo.gif "影片連結")如需相關的影片示範，請參閱[How DO i附加或中斷連結的 Word 文件從 VSTO 組件嗎？](http://go.microsoft.com/fwlink/?LinkId=136782).  
   
 ## <a name="to-remove-the-customization-assembly-at-runtime"></a>若要移除自訂組件，在執行階段  
   
@@ -58,6 +55,4 @@ ms.locfileid: "35671491"
   
 ## <a name="see-also"></a>另請參閱  
  [使用 ServerDocument 類別管理伺服器上的文件](../vsto/managing-documents-on-a-server-by-using-the-serverdocument-class.md)   
- [如何： 附加 Managed 程式碼加入文件的延伸模組](../vsto/how-to-attach-managed-code-extensions-to-documents.md)  
-  
-  
+ [如何：將 Managed 程式碼擴充附加至文件](../vsto/how-to-attach-managed-code-extensions-to-documents.md)  
