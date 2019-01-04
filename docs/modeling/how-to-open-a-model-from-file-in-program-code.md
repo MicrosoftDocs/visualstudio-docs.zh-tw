@@ -1,5 +1,5 @@
 ---
-title: 如何：在程式碼中開啟檔案的模型
+title: HOW TO：在程式碼中開啟檔案的模型
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: gewarren
@@ -8,15 +8,14 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 18cad086419be13a666d4eddbf454885c9cf9c36
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 52142da504b6dc2e7533a34f381a1243d44a74a1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49812487"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53938064"
 ---
-# <a name="how-to-open-a-model-from-file-in-program-code"></a>如何：在程式碼中開啟檔案的模型
+# <a name="how-to-open-a-model-from-file-in-program-code"></a>HOW TO：在程式碼中開啟檔案的模型
 您可以在任何應用程式中開啟 DSL 模型。
 
  從 Visual Studio 擴充功能，您可以使用 ModelBus，基於此目的。 ModelBus 提供參考模型或模型中的項目以及尋找模型，如果它已移動的標準機制。 如需詳細資訊，請參閱 <<c0> [ 使用 Visual Studio Modelbus 整合模型](../modeling/integrating-models-by-using-visual-studio-modelbus.md)。
@@ -42,7 +41,7 @@ ms.locfileid: "49812487"
 
     -   如果您沒有看到下 **.NET**索引標籤中**的 加入參考** 對話方塊中，按一下 **瀏覽**索引標籤，然後瀏覽至`%Program Files%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Common\Assemblies\`。
 
--   您 DSL 的組件，您會在 [bin] 資料夾下找到您的 DSL 專案。 格式通常是它的名稱： *YourCompany*。*YourProject*`.Dsl.dll`。
+-   您 DSL 的組件，您會在 [bin] 資料夾下找到您的 DSL 專案。 其名稱通常屬於表單：*YourCompany*。*YourProject*`.Dsl.dll`。
 
 ## <a name="important-classes-in-the-dsl"></a>在 DSL 中的重要類別
  您可以撰寫會讀取您的 DSL 程式碼之前，您應該知道部分 DSL 產生之類別的名稱。 在 DSL 方案中，開啟**Dsl**專案，並查看**GeneratedCode**資料夾。 或者，按兩下 在您的專案中的 DSL 組件**參考**，然後開啟中的 DSL 命名空間**物件瀏覽器**。

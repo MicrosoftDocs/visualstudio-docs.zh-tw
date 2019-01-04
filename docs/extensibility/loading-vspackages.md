@@ -1,9 +1,6 @@
 ---
 title: 載入 Vspackage |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - VSPackages, autoloading
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 26bd199a688b1b47728aac561720224a71f1583b
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 477ac9b0b97a7544402f0f70204b8ecf7b43ba95
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39638143"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53925830"
 ---
 # <a name="load-vspackages"></a>載入 Vspackage
 Vspackage 會載入到 Visual Studio 中，只有需要其功能時，只有。 比方說，Visual Studio 使用專案 factory 或 VSPackage 實作的服務時，會載入 VSPackage。 這項功能稱為延遲的載入，這會盡可能以改善效能。  
@@ -38,7 +35,7 @@ Vspackage 會載入到 Visual Studio 中，只有需要其功能時，只有。 
     [PackageRegistration(UseManagedResourcesOnly = true)]  
     [ProvideAutoLoad(UIContextGuids80.SolutionExists)]  
     [Guid("00000000-0000-0000-0000-000000000000")] // your specific package GUID  
-    public class MyAutoloadedPackage : Package  
+    public class MyAutoloadedPackage : Package  
     {. . .}  
     ```  
   

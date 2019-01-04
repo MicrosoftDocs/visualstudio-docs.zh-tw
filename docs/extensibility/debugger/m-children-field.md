@@ -1,9 +1,6 @@
 ---
 title: m_children 欄位 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - m_children field, ContingentProperties class [.NET Framework debug engines]
@@ -13,17 +10,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e27704484e5cfb320c8b65432fb3efb283054019
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: a5d924e0439be2f8ab615d18a61f1303994b8dde
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39231144"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53923688"
 ---
 # <a name="mchildren-field"></a>m_children 欄位
 使用這項工作中註冊的子工作的清單。  
   
- **命名空間：** <xref:System.Threading.Tasks?displayProperty=fullName>  
+ **命名空間︰** <xref:System.Threading.Tasks?displayProperty=fullName>  
   
  **組件：** mscorlib (在*mscorlib.dll*)  
   

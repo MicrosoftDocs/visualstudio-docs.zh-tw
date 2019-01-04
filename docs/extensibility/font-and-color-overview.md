@@ -1,9 +1,6 @@
 ---
 title: 字型和色彩概觀 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], font and color
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: adf5877ae9b01666491e5d10522ba52b58b2d917
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 84d1d409c86f018cb0c661a6a6bb36ccc1911d11
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49845221"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53966484"
 ---
 # <a name="font-and-color-overview"></a>字型和色彩的概觀
 本主題討論中的文字字型和色彩設定[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]整合式的開發環境 (IDE)。 它也會介紹的概念類別和顯示項目，並說明如何在 Vspackage 和核心編輯器使用文字屬性。  
@@ -74,7 +71,7 @@ ms.locfileid: "49845221"
   
 - 能夠同時使用內建的顯示項目，從**文字 EditorCategory**和延伸。  
   
-   如需詳細資訊，請參閱 <<c0> [ 如何： 使用內建可設定色彩的項目](../extensibility/internals/how-to-use-built-in-colorable-items.md)並[自訂色彩項目](../extensibility/internals/custom-colorable-items.md)。  
+   如需詳細資訊，請參閱[＜How to：使用內建可設定色彩的項目](../extensibility/internals/how-to-use-built-in-colorable-items.md)並[自訂色彩項目](../extensibility/internals/custom-colorable-items.md)。  
   
 - 自動的持續性的目前狀態的兩個內建和自訂顯示的項目**文字編輯器**類別目錄。  
   

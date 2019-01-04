@@ -1,9 +1,6 @@
 ---
 title: 使用 ClickOnce 部署 Office 方案
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,12 +13,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 31e0ccb271c985a4c521762883fead2c0a1d8775
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: 448cd7ccd2c56ab9d7d7117c01f6c7f455aa53f4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53803113"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53946837"
 ---
 # <a name="deploy-an-office-solution-by-using-clickonce"></a>使用 ClickOnce 部署 Office 方案
   使用 ClickOnce 只需要幾個步驟就能部署 Office 方案。 如果您發行更新，方案會自動偵測並安裝更新。 不過，ClickOnce 要求您針對電腦上的每個使用者分別安裝方案。 因此，您應該考慮使用 Windows Installer (*.msi*) 如果一個以上的使用者將同一部電腦上執行您的解決方案。

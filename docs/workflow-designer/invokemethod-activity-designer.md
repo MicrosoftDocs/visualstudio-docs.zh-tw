@@ -3,7 +3,6 @@ title: 工作流程設計工具-InvokeMethod 活動設計工具
 ms.date: 11/04/2016
 ms.topic: reference
 ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Activities.Statements.InvokeMethod.UI
 ms.assetid: 15e6efdc-52ca-46d8-9c5e-063f7c8265a6
@@ -12,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ac82e36d3abc942e0c5492cc4d7acf347eba36c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: cd0b30d3695d13b51b988dfee31829d03e4b661d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49839566"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53946931"
 ---
 # <a name="invokemethod-activity-designer"></a>InvokeMethod 活動設計工具
 
@@ -57,7 +56,7 @@ ms.locfileid: "49839566"
 
 3.  逐一查看 <xref:System.Activities.Statements.InvokeMethod.Parameters%2A> 集合並登錄每個引數。
 
-結果的例外狀況是包含以下訊息的 <xref:System.Activities.InvalidWorkflowException> 類型：'InvokeMethod'：已有名稱為 'TargetObject' 的變數、RuntimeArgument 或 DelegateArgument。 名稱在環境範圍中必須是唯一的。
+產生的例外狀況是型別<xref:System.Activities.InvalidWorkflowException>並出現下列訊息：' InvokeMethod':變數、 RuntimeArgument 或 DelegateArgument 已經存在名稱為 'TargetObject'。 名稱在環境範圍中必須是唯一的。
 
 這項限制不適用於<xref:System.Activities.Statements.InvokeMethod.TargetType%2A>和<xref:System.Activities.Statements.InvokeMethod.RunAsynchronously%2A>。 它們不是工作流程引數，並因此未登錄在<xref:System.Activities.Statements.InvokeMethod.GenericTypeArguments%2A>的集合<xref:System.Activities.Statements.InvokeMethod>中的活動<xref:System.Activities.Activity.CacheMetadata%2A>方法。
 

@@ -1,9 +1,6 @@
 ---
 title: DEBUG_CUSTOM_VIEWER |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - DEBUG_CUSTOM_VIEWER
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e86cae45298b3f137e2ebca65fa8c531c6d86457
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 23e1dc26a3f8d1031357715b39ce6e2d2e485d1f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49908440"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53906835"
 ---
 # <a name="debugcustomviewer"></a>DEBUG_CUSTOM_VIEWER
 識別自訂檢視器的結構，或輸入視覺化檢視。  
@@ -28,24 +25,24 @@ ms.locfileid: "49908440"
 ## <a name="syntax"></a>語法  
   
 ```cpp  
-typedef struct tagDEBUG_CUSTOM_VIEWER {  
-   DWORD dwID;  
-   BSTR  bstrMenuName;  
-   BSTR  bstrDescription;  
-   GUID  guidLang;  
-   GUID  guidVendor;  
-   BSTR  bstrMetric;  
-} DEBUG_CUSTOM_VIEWER;  
+typedef struct tagDEBUG_CUSTOM_VIEWER {  
+   DWORD dwID;  
+   BSTR  bstrMenuName;  
+   BSTR  bstrDescription;  
+   GUID  guidLang;  
+   GUID  guidVendor;  
+   BSTR  bstrMetric;  
+} DEBUG_CUSTOM_VIEWER;  
 ```  
   
 ```csharp  
-public struct DEBUG_CUSTOM_VIEWER {  
-   public uint   dwID;  
-   public string bstrMenuName;  
-   public string bstrDescription;  
-   public Guid   guidLang;  
-   public Guid   guidVendor;  
-   public string bstrMetric;  
+public struct DEBUG_CUSTOM_VIEWER {  
+   public uint   dwID;  
+   public string bstrMenuName;  
+   public string bstrDescription;  
+   public Guid   guidLang;  
+   public Guid   guidVendor;  
+   public string bstrMetric;  
 };  
 ```  
   
@@ -74,9 +71,9 @@ public struct DEBUG_CUSTOM_VIEWER {
 ## <a name="requirements"></a>需求  
  標頭： msdbg.h  
   
- 命名空間： Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間:Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
  [結構和等位](../../../extensibility/debugger/reference/structures-and-unions.md)   

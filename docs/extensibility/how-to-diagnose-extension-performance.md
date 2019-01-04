@@ -1,9 +1,6 @@
 ---
-title: 如何： 診斷延伸模組效能 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：診斷延伸模組效能 |Microsoft Docs
 ms.date: 11/08/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 46b0a1e3-7e69-47c9-9d8d-a1815d6c3896
 author: BertanAygun
@@ -11,12 +8,12 @@ ms.author: bertaygu
 manager: douge
 ms.workload:
 - bertaygu
-ms.openlocfilehash: d1f2942c9f5987a686226c94e9764b8ab6300050
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: fd51728f5e57af1017cb4b280f9ffc9d1c50df98
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49934921"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53943417"
 ---
 # <a name="measuring-extension-impact-in-startup"></a>測量的延伸模組影響啟動
 
@@ -31,7 +28,7 @@ ms.locfileid: "49934921"
 本文件旨在協助延伸模組開發人員透過描述擴充功能影響的計算方式。 本文件也說明如何在本機分析擴充功能的影響。 在本機分析擴充功能的影響，會決定是否擴充功能可能會顯示為效能影響擴充功能。
 
 > [!NOTE]
-> 本文件著重於在啟動和方案載入的擴充功能的影響。 延伸模組也會影響 Visual Studio 效能時，會變得沒有回應 UI。 如需本主題的詳細資訊，請參閱 <<c0> [ 如何： 診斷 UI 擴充功能所造成的延遲](how-to-diagnose-ui-delays-caused-by-extensions.md)。
+> 本文件著重於在啟動和方案載入的擴充功能的影響。 延伸模組也會影響 Visual Studio 效能時，會變得沒有回應 UI。 如需本主題的詳細資訊，請參閱[How to:診斷 UI 延伸模組造成的延遲](how-to-diagnose-ui-delays-caused-by-extensions.md)。
 
 ## <a name="how-extensions-can-impact-startup"></a>延伸模組可以列印文件的影響，請啟動
 
@@ -51,11 +48,11 @@ ms.locfileid: "49934921"
 
 下列文件中，您可以找到有關這些功能的更多詳細資料：
 
-[以規則為基礎的 UI 內容](how-to-use-rule-based-ui-context-for-visual-studio-extensions.md)： 建置 UI 內容更豐富規則式引擎可讓您建立專案類型，類別為基礎的自訂內容和屬性。 自訂內容可用來在較特定案例期間載入的封裝。 這些特定情況下會包含為特定的功能，而不是啟動專案的目前狀態。 自訂的內容也可讓[命令繫結至自訂內容的可見性](visibilityconstraints-element.md)根據專案元件或其他可用的詞彙。 這項功能就不需要載入的封裝，以註冊命令狀態查詢處理常式。
+[以規則為基礎的 UI 內容](how-to-use-rule-based-ui-context-for-visual-studio-extensions.md):建置 UI 內容更豐富規則式引擎，可讓您建立根據專案類型、 類別和屬性的自訂內容。 自訂內容可用來在較特定案例期間載入的封裝。 這些特定情況下會包含為特定的功能，而不是啟動專案的目前狀態。 自訂的內容也可讓[命令繫結至自訂內容的可見性](visibilityconstraints-element.md)根據專案元件或其他可用的詞彙。 這項功能就不需要載入的封裝，以註冊命令狀態查詢處理常式。
 
-[非同步的套件支援](how-to-use-asyncpackage-to-load-vspackages-in-the-background.md): Visual Studio 2015 中新的 AsyncPackage 基底類別可讓 Visual Studio 封裝要載入在背景中以非同步方式如果載入封裝所要求的自動負載屬性或非同步服務查詢. 這個背景載入可讓 IDE 持續回應。 IDE 是回應式，即使延伸模組會在背景中初始化和啟動和解決方案的負載等重大案例不會受到影響。
+[非同步的套件支援](how-to-use-asyncpackage-to-load-vspackages-in-the-background.md):Visual Studio 2015 中新的 AsyncPackage 基底類別可讓 Visual Studio 封裝要載入在背景中以非同步方式載入封裝由自動載入屬性或非同步服務查詢。 這個背景載入可讓 IDE 持續回應。 IDE 是回應式，即使延伸模組會在背景中初始化和啟動和解決方案的負載等重大案例不會受到影響。
 
-[非同步服務](how-to-provide-an-asynchronous-visual-studio-service.md)： 透過非同步的套件支援，我們也已新增支援以非同步方式查詢服務，以及能夠註冊非同步的服務。 更重要的，我們正在轉換至支援非同步查詢，使大部分的非同步查詢中的工作，就會發生在背景執行緒中的核心 Visual Studio 服務。 SComponentModel （Visual Studio 的 MEF 主機） 是其中一個主要服務現在支援 允許延伸模組來支援非同步載入完全非同步查詢。
+[非同步服務](how-to-provide-an-asynchronous-visual-studio-service.md):透過非同步的套件支援，我們也新增支援以非同步方式查詢服務，以及能夠註冊非同步的服務。 更重要的，我們正在轉換至支援非同步查詢，使大部分的非同步查詢中的工作，就會發生在背景執行緒中的核心 Visual Studio 服務。 SComponentModel （Visual Studio 的 MEF 主機） 是其中一個主要服務現在支援 允許延伸模組來支援非同步載入完全非同步查詢。
 
 ## <a name="reducing-impact-of-auto-loaded-extensions"></a>減少影響自動載入擴充功能
 
@@ -167,11 +164,11 @@ PerfView 有詳細的指引如何讀取執行緒在其本身的更詳細的分�
 
 上例一些有趣的呼叫堆疊會是：
 
-1. IO 使用`System.IO`類別： 可能不過於昂貴則表示追蹤中的這些框架 （含） 的成本，而它們是問題的可能原因因為檔案 IO 速度而異電腦之間。
+1. IO 使用`System.IO`類別：雖然這些框架的內含的成本可能不是太高，則表示追蹤中，它們是問題的可能原因，因為檔案 IO 速度而異機器機器也一樣。
 
    ![系統 io 框架](media/perfview-system-io-frames.png)
 
-2. 封鎖等候其他非同步工作的呼叫： 在此情況下，內含時間代表主執行緒遭到封鎖的非同步工作完成時的時間。
+2. 封鎖等候其他非同步工作的呼叫：在此情況下，內含時間代表主執行緒遭到封鎖的非同步工作完成時的時間。
 
    ![封鎖的呼叫框架](media/perfview-blocking-call-frames.png)
 

@@ -15,13 +15,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: c01bea709d551e970ed8c44ec861ff348c7081ad
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3bf8248a7a68b914d6276e3e6f37261fb6137efc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31947842"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53939248"
 ---
 # <a name="t4-text-template-directives"></a>T4 文字範本指示詞
 指示詞會提供指令給文字範本轉換引擎。
@@ -71,4 +70,4 @@ ms.locfileid: "31947842"
 <#@ CleanupBehavior processor="T4VSHost" CleanupAfterProcessingtemplate="true" #>
 ```
 
- 此外，您也可以建立自己的指示詞。 如需詳細資訊，請參閱[建立自訂 T4 文字範本指示詞處理器](../modeling/creating-custom-t4-text-template-directive-processors.md)。 如果使用 Visualization and Modeling SDK 建立特定領域語言 (DSL)，則會產生指示詞處理器做為 DSL 的一部分。
+ 此外，您也可以建立自己的指示詞。 如需詳細資訊，請參閱 <<c0> [ 建立自訂 T4 文字範本指示詞處理器](../modeling/creating-custom-t4-text-template-directive-processors.md)。 如果使用 Visualization and Modeling SDK 建立特定領域語言 (DSL)，則會產生指示詞處理器做為 DSL 的一部分。

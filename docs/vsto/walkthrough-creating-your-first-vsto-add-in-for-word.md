@@ -1,9 +1,6 @@
 ---
-title: 逐步解說： 建立 Word 的第一個 VSTO 增益集
-ms.custom: ''
+title: 逐步解說：Word 建立您第一個 VSTO 增益集
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,14 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: cf20b3f742bfc5ff6de6af080f3651f9d9027234
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f8cd238c64b32501a42900d37723c350e84673f1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49940966"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53948968"
 ---
-# <a name="walkthrough-create-your-first-vsto-add-in-for-word"></a>逐步解說： 建立 Word 的第一個 VSTO 增益集
+# <a name="walkthrough-create-your-first-vsto-add-in-for-word"></a>逐步解說：Word 建立您第一個 VSTO 增益集
   本入門逐步解說將示範如何建立 Microsoft Office Word 的 VSTO 增益集。 不論開啟哪一份文件，您在這類方案中建立的功能都可供應用程式本身使用。  
   
  [!INCLUDE[appliesto_wdallapp](../vsto/includes/appliesto-wdallapp-md.md)]  
@@ -124,15 +121,15 @@ ms.locfileid: "49940966"
 ## <a name="next-steps"></a>後續步驟  
  現在您已經建立 Word 的基本 VSTO 增益集，可以從下列主題進一步了解如何開發 VSTO 增益集：  
   
--   您可以在 VSTO 增益集執行的一般程式設計工作：[程式的 VSTO 增益集](../vsto/programming-vsto-add-ins.md)。  
+-   您可以在 VSTO 增益集執行的一般程式設計工作：[程式設計 VSTO 增益集](../vsto/programming-vsto-add-ins.md)。  
   
--   Word VSTO 增益集特有的程式設計工作： [Word 解決方案](../vsto/word-solutions.md)。  
+-   程式設計特有 Word VSTO 增益集的工作：[Word 解決方案](../vsto/word-solutions.md)。  
   
--   使用 Word 物件模型： [Word 物件模型概觀](../vsto/word-object-model-overview.md)。  
+-   使用 Word 物件模型：[Word 物件模型概觀](../vsto/word-object-model-overview.md)。  
   
--   自訂 Word 的 UI，比方說，藉由在功能區中加入自訂索引標籤或建立您自己的自訂工作窗格： [Office UI 自訂](../vsto/office-ui-customization.md)。  
+-   自訂 Word 的 UI，例如，在功能區中加入自訂索引標籤，或建立您自己的自訂工作窗格：[Office UI 自訂](../vsto/office-ui-customization.md)。  
   
--   建置和偵錯 word 的 VSTO 增益集：[建置 Office 方案](../vsto/building-office-solutions.md)。  
+-   建置和偵錯 Word 的 VSTO 增益集：[建置 Office 方案](../vsto/building-office-solutions.md)。  
   
 -   部署 word 的 VSTO 增益集：[部署 Office 方案](../vsto/deploying-an-office-solution.md)。  
   
@@ -145,5 +142,3 @@ ms.locfileid: "49940966"
  [建置 Office 方案](../vsto/building-office-solutions.md)   
  [部署 Office 方案](../vsto/deploying-an-office-solution.md)   
  [Office 專案範本概觀](../vsto/office-project-templates-overview.md)  
-  
-  

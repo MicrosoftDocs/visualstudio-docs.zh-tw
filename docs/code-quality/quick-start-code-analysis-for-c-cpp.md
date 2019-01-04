@@ -1,8 +1,7 @@
 ---
-title: 快速入門：C/C++ 程式碼分析
+title: 快速入門：C/C++ 的程式碼分析
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 helpviewer_keywords:
 - C/C++ code analysis
@@ -12,12 +11,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3aefc42e77c6ccaf14a426a26e12b81b49bb5632
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 00dedc25185dfc3a9f12ba645205ce47925003df
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49818759"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53825197"
 ---
 # <a name="quickstart-code-analysis-for-cc"></a>快速入門：C/C++ 的程式碼分析
 
@@ -111,9 +110,9 @@ Visual Studio 包含兩組標準的原生程式碼規則：
 
 您可以在多專案方案中搜尋警告訊息的詳細清單，以及篩選警告。
 
-- **若要依標題或警告識別碼篩選警告**： 在搜尋方塊中輸入關鍵字。
+- **若要依標題或警告識別碼篩選警告**:在搜尋方塊中輸入關鍵字。
 
-- **若要依嚴重性篩選警告**： 根據預設，指派給程式碼分析訊息的嚴重性**警告**。 您可以指派一或多個訊息的嚴重性**錯誤**在自訂規則集。 在 **嚴重性**資料行**錯誤清單**，選擇向下箭頭，然後選取的篩選圖示。 選擇**警告**或是**錯誤**顯示只會指派個別嚴重性的訊息。 選擇**全選**顯示所有的訊息。
+- **若要依嚴重性篩選警告**:根據預設，指派給程式碼分析訊息的嚴重性**警告**。 您可以指派一或多個訊息的嚴重性**錯誤**在自訂規則集。 在 **嚴重性**資料行**錯誤清單**，選擇向下箭頭，然後選取的篩選圖示。 選擇**警告**或是**錯誤**顯示只會指派個別嚴重性的訊息。 選擇**全選**顯示所有的訊息。
 
 ## <a name="see-also"></a>另請參閱
 

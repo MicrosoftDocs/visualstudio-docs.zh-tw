@@ -1,9 +1,6 @@
 ---
-title: 如何： 以程式設計方式隱藏 文件中的文字
-ms.custom: ''
+title: HOW TO：以程式設計方式隱藏 文件中的文字
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 83b25c37ee2ce4dd9cb1ffeda21fbda1b5f3f139
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 5e820cd3b4ed9ea97d9fa7268253663e2ef328c9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35671570"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53928431"
 ---
-# <a name="how-to-programmatically-hide-text-in-documents"></a>如何： 以程式設計方式隱藏 文件中的文字
+# <a name="how-to-programmatically-hide-text-in-documents"></a>HOW TO：以程式設計方式隱藏 文件中的文字
   您可以針對文字的特定範圍設定 <xref:Microsoft.Office.Interop.Word._Font.Hidden%2A> 的 <xref:Microsoft.Office.Interop.Word.Range.Font%2A> 屬性，以隱藏文件中的文字。  
   
  例如，您可以暫時隱藏內的文字<xref:Microsoft.Office.Tools.Word.Bookmark>（在文件層級自訂） 或<xref:Microsoft.Office.Interop.Word.Bookmark>（在 VSTO 增益集） 之前傳送至印表機的文件。  
@@ -58,10 +55,8 @@ ms.locfileid: "35671570"
  此程式碼範例假設文件包含<xref:Microsoft.Office.Tools.Word.Bookmark>控制項 （在文件層級自訂） 或<xref:Microsoft.Office.Interop.Word.Bookmark>控制項 （在 VSTO 增益集），名為`bookmark1`。  
   
 ## <a name="see-also"></a>另請參閱  
- [如何： 以程式設計方式列印文件](../vsto/how-to-programmatically-print-documents.md)   
- [如何： 以程式設計方式定義，並在文件中選取範圍](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)   
- [如何： 以程式設計方式重設 Word 文件中的範圍](../vsto/how-to-programmatically-reset-ranges-in-word-documents.md)   
- [如何： 以程式設計方式更新書籤文字](../vsto/how-to-programmatically-update-bookmark-text.md)   
+ [如何：以程式設計方式列印文件](../vsto/how-to-programmatically-print-documents.md)   
+ [如何：以程式設計方式定義，並在文件中選取範圍](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)   
+ [如何：以程式設計方式重設 Word 文件中的範圍](../vsto/how-to-programmatically-reset-ranges-in-word-documents.md)   
+ [如何：以程式設計方式更新書籤文字](../vsto/how-to-programmatically-update-bookmark-text.md)   
  [Office 方案中的選擇性參數](../vsto/optional-parameters-in-office-solutions.md)  
-  
-  

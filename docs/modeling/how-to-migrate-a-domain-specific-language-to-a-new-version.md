@@ -1,5 +1,5 @@
 ---
-title: 如何：將網域指定的語言移轉至新的版本
+title: HOW TO：將特定領域語言移轉至新的版本
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: gewarren
@@ -8,15 +8,14 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: f736a8d5b8e09bbb1c5a894e3f0f450de19fd02f
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: b53d604fdf9c18a2e5552d787f7a69ff4c92df2a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50967021"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53955064"
 ---
-# <a name="how-to-migrate-a-domain-specific-language-to-a-new-version"></a>如何：將網域指定的語言移轉至新的版本
+# <a name="how-to-migrate-a-domain-specific-language-to-a-new-version"></a>HOW TO：將特定領域語言移轉至新的版本
 您可以移轉專案定義及使用特定領域語言[!INCLUDE[vs2010](../misc/includes/vs2010_md.md)]版本中的[!INCLUDE[dsl](../modeling/includes/dsl_md.md)]所散發之[!INCLUDE[vs_orcas_long](../debugger/includes/vs_orcas_long_md.md)]。
 
  移轉工具提供做為一部分[!INCLUDE[vssdk_current_long](../misc/includes/vssdk_current_long_md.md)]。 Visual Studio 專案和方案使用，或定義 DSL 的工具，將轉換的工具。

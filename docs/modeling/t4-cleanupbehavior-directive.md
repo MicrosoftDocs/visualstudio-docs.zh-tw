@@ -8,13 +8,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 44d1dc61b1330b344b333b62c30308fdb65494d1
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f99cece37b37cdbf4906e9af3939fe824aec0a93
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31946035"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53912817"
 ---
 # <a name="t4-cleanupbehavior-directive"></a>T4 CleanUpBehavior 指示詞
 

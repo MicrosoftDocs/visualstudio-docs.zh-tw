@@ -1,9 +1,6 @@
 ---
-title: 如何： 使用內建可設定色彩的項目 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：使用內建可設定色彩的項目 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - colorable items
@@ -14,14 +11,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b537c28f34faff1eff0502642236413f2ade2da1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f0884ecd265522b2b0f2a222e12cb01c34c7e8c3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942155"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53947292"
 ---
-# <a name="how-to-use-built-in-colorable-items"></a>如何： 使用內建可設定色彩的項目
+# <a name="how-to-use-built-in-colorable-items"></a>HOW TO：使用內建可設定色彩的項目
 使用內建可設定色彩的項目之前，您必須先通知整合式的開發環境 (IDE)，您不會提供您自己自訂色彩項目，在此情況下會<xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems>物件。 您可以設定語言服務的登錄項目。  
   
 ## <a name="to-use-built-in-colorable-items"></a>若要使用內建可設定色彩的項目  

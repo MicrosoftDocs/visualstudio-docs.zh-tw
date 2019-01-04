@@ -1,9 +1,6 @@
 ---
-title: 逐步解說： 使用功能區 XML 建立自訂索引標籤
-ms.custom: ''
+title: 逐步解說：使用功能區 XML 建立自訂的索引標籤
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -20,14 +17,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 45e35b7cf97a6b9a1f310149817f8e79956a47aa
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: dda5c2721d9932afd20c0b02f4a82bbbde7116ae
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38808920"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53955223"
 ---
-# <a name="walkthrough-create-a-custom-tab-by-using-ribbon-xml"></a>逐步解說： 使用功能區 XML 建立自訂索引標籤
+# <a name="walkthrough-create-a-custom-tab-by-using-ribbon-xml"></a>逐步解說：使用功能區 XML 建立自訂的索引標籤
   本逐步解說示範如何使用建立自訂的功能區索引標籤**功能區 (XML)** 項目。  
   
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]  
@@ -55,7 +52,7 @@ ms.locfileid: "38808920"
   
 1.  建立**Word 增益集**專案名稱**MyRibbonAddIn**。  
   
-     如需詳細資訊，請參閱 <<c0> [ 如何： 在 Visual Studio 中的建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
+     如需詳細資訊，請參閱[＜How to：在 Visual Studio 中建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
   
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 會開啟**ThisAddIn.cs**或是**ThisAddIn.vb**程式碼檔案並將**MyRibbonAddIn**專案加入**方案總管 中**。  
   
@@ -115,12 +112,12 @@ ms.locfileid: "38808920"
      [!code-csharp[Trin_RibbonButtons#1](../vsto/codesnippet/CSharp/Trin_RibbonButtons/MyRibbon.cs#1)]
      [!code-vb[Trin_RibbonButtons#1](../vsto/codesnippet/VisualBasic/Trin_RibbonButtons/MyRibbon.vb#1)]  
   
-3.  將下列方法加入 `MyRibbon` 類別中。 這是回呼方法，以便**插入文字**將字串新增至使用中文件的資料指標的目前位置的按鈕。  
+3.  將下列方法加入 `MyRibbon` 類別。 這是回呼方法，以便**插入文字**將字串新增至使用中文件的資料指標的目前位置的按鈕。  
   
      [!code-csharp[Trin_Ribbon_Custom_Tab_XML#2](../vsto/codesnippet/CSharp/Trin_Ribbon_Custom_Tab_XML_O12/MyRibbon.cs#2)]
      [!code-vb[Trin_Ribbon_Custom_Tab_XML#2](../vsto/codesnippet/VisualBasic/Trin_Ribbon_Custom_Tab_XML_O12/MyRibbon.vb#2)]  
   
-4.  將下列方法加入 `MyRibbon` 類別中。 這是回呼方法，以便**插入表格**將資料表加入至使用中文件的資料指標的目前位置的按鈕。  
+4.  將下列方法加入 `MyRibbon` 類別。 這是回呼方法，以便**插入表格**將資料表加入至使用中文件的資料指標的目前位置的按鈕。  
   
      [!code-csharp[Trin_Ribbon_Custom_Tab_XML#3](../vsto/codesnippet/CSharp/Trin_Ribbon_Custom_Tab_XML_O12/MyRibbon.cs#3)]
      [!code-vb[Trin_Ribbon_Custom_Tab_XML#3](../vsto/codesnippet/VisualBasic/Trin_Ribbon_Custom_Tab_XML_O12/MyRibbon.vb#3)]  
@@ -155,11 +152,9 @@ ms.locfileid: "38808920"
   
 -   建立自訂執行窗格。 如需詳細資訊，請參閱 <<c0> [ 執行窗格概觀](../vsto/actions-pane-overview.md)。  
   
--   使用 Outlook 表單區域自訂 Microsoft Office Outlook 的 UI。 如需詳細資訊，請參閱 <<c0> [ 逐步解說： 設計 Outlook 表單區域](../vsto/walkthrough-designing-an-outlook-form-region.md)。  
+-   使用 Outlook 表單區域自訂 Microsoft Office Outlook 的 UI。 如需詳細資訊，請參閱[逐步解說：設計 Outlook 表單區域](../vsto/walkthrough-designing-an-outlook-form-region.md)。  
   
 ## <a name="see-also"></a>另請參閱  
  [功能區概觀](../vsto/ribbon-overview.md)   
  [功能區 XML](../vsto/ribbon-xml.md)   
- [逐步解說： 使用功能區設計工具建立自訂索引標籤](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)  
-  
-  
+ [逐步解說：使用功能區設計工具建立自訂的索引標籤](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)  

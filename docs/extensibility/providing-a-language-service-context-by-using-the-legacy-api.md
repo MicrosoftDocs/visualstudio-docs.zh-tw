@@ -1,9 +1,6 @@
 ---
 title: 使用舊版 API 提供的語言服務內容 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - language service context
@@ -13,17 +10,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 67ff7d911ef0cdd3debd920ac85e9e3265a619e3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a75ea45216e49aecaac452c1d92ff5a98dd7015c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49909954"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53940254"
 ---
 # <a name="provide-a-language-service-context-by-using-the-legacy-api"></a>使用舊版 API 提供的語言服務內容
 有兩個選項，以提供使用者內容中使用的語言服務[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]核心編輯器： 提供文字標記的內容，或提供所有的使用者內容。 此處所述的每個之間的差異。  
   
- 如需有關如何提供連接到您自己的編輯器語言服務內容的詳細資訊，請參閱[如何： 為編輯器提供內容](../extensibility/how-to-provide-context-for-editors.md)。  
+ 如需有關如何提供連接到您自己的編輯器語言服務內容的詳細資訊，請參閱[How to:編輯器提供內容](../extensibility/how-to-provide-context-for-editors.md)。  
   
 ## <a name="provide-text-marker-context-to-the-editor"></a>編輯器提供文字標記的內容  
  若要提供的內容中的文字標記所指定的編譯器錯誤[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]核心編輯器，請實作<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerContextProvider>介面。 在此案例中，語言服務會提供內容，僅當游標位於文字標記。 這可讓編輯器提供至游標處關鍵字**動態說明**不含任何屬性 視窗。  

@@ -1,9 +1,6 @@
 ---
 title: 組態選項的概觀 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - project configurations
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fde39c346313dc66d5d94a5beb0e9e3b256ea436
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7ed12330a2acce09a5fb8a9aabc3b434b4c42fd8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49920211"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53956006"
 ---
 # <a name="configuration-options-overview"></a>組態選項概觀
 中的專案[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]可支援多個可以建置、 偵錯、 執行，及/或已部署的組態。 組態是一組具名屬性、 通常編譯器參數和檔案位置的描述組建類型。 根據預設，新的方案包含兩個設定，*偵錯*並*發行*。 使用預設值，或修改以符合您特定的解決方案和/或專案需求，可以套用這些設定。 有些封裝可以建立兩種方式： 做為 ActiveX 編輯器，或為就地元件。 若要支援多個組態，但不需要專案。 如果沒有可用的只有一個組態，該組態會對應到所有的方案組態。  
@@ -32,7 +29,7 @@ ms.locfileid: "49920211"
   
  下表說明專案的一般組態設定。 資料列會標示為 組態名稱與平台名稱的資料行。  
   
-|組態名稱|平台： Win32|平台： Win64|  
+|組態名稱|平台:Win32|平台:Win64|  
 |------------------------|----------------------|----------------------|  
 |*偵錯*|\<偵錯 Win32 設定 >|\<偵錯 Win64 設定 >|  
 |*發行*|\<發行 Win32 設定 >|\<發行 Win64 設定 >|  

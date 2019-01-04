@@ -1,9 +1,6 @@
 ---
 title: MODULE_INFO |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - MODULE_INFO
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b28770482357b7e006793f15438e7880f7efb1ec
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 989b5c24fc3d99c99f8a979ded2994f767a1e1bf
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49897000"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53910840"
 ---
 # <a name="moduleinfo"></a>MODULE_INFO
 描述特定模組 （DLL、 EXE 或組件）。  
@@ -28,7 +25,7 @@ ms.locfileid: "49897000"
 ## <a name="syntax"></a>語法  
   
 ```cpp  
-typedef struct tagMODULE_INFO {   
+typedef struct tagMODULE_INFO {   
    MODULE_INFO_FIELDS dwValidFields;  
    BSTR               m_bstrName;  
    BSTR               m_bstrUrl;  
@@ -45,7 +42,7 @@ typedef struct tagMODULE_INFO {
 ```  
   
 ```csharp  
-public struct MODULE_INFO {   
+public struct MODULE_INFO {   
    public uint     dwValidFields;  
    public string   m_bstrName;  
    public string   m_bstrUrl;  
@@ -106,9 +103,9 @@ public struct MODULE_INFO {
 ## <a name="requirements"></a>需求  
  標頭： msdbg.h  
   
- 命名空間： Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間:Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
  [結構和等位](../../../extensibility/debugger/reference/structures-and-unions.md)   
