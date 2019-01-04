@@ -1,9 +1,6 @@
 ---
 title: 選項和選項頁 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - Tools Options pages [Visual Studio SDK], managed package framework support
@@ -17,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3607b67b34e778e0352cdb1159b16841c5a1211f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 73eb5ab6c139d4ce6bdfb8a5a310ca447ce4267c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49865150"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53872118"
 ---
 # <a name="options-and-options-pages"></a>選項和選項頁
 按一下 **選項**上**工具** 功能表隨即開啟**選項** 對話方塊。 在此對話方塊中的選項會統稱為選項 頁面。 瀏覽窗格中的樹狀控制項包含選項類別，而且每個類別目錄選項頁面。 當您選取的頁面時，它的選項會出現在右窗格中。 這些頁面可讓您變更判斷 VSPackage 的狀態選項的值。  
