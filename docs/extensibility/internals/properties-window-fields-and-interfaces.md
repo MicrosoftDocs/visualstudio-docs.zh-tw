@@ -1,9 +1,6 @@
 ---
 title: 屬性 Window Fields and Interfaces |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - Properties window, fields and interfaces
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 149c02918ec909c03c1102a5fc0f1643b79fb46d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 98b5069a6b3709b467386a5424fded0809367a44
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49883402"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53872223"
 ---
 # <a name="properties-window-fields-and-interfaces"></a>Properties Window Fields and Interfaces
 若要判斷哪些資訊會顯示在選取的模型**屬性**視窗根據在 IDE 中具有焦點的視窗。 每個視窗中，然後選取視窗內的物件可以有其推送至全域範圍內容的選取項目內容物件。 該視窗具有焦點時，環境會更新全域選取範圍內容視窗框架的值。 當焦點變更時，因此會選取範圍內容。  
@@ -105,7 +102,7 @@ STDAPI DLLGetDocumentation
 );  
 ```  
   
- `DLLGetDocumentation` 函式必須是 .def 檔案中為 DLL 定義的匯出。  
+  `DLLGetDocumentation` 函式必須是 .def 檔案中為 DLL 定義的匯出。  
   
  對內建立的 .olb 檔案，其實是個 DLL。 這個 DLL 包含一項資源、類型程式庫 (.tlb) 檔案，以及匯出的函式 `DLLGetDocumentation`。  
   
