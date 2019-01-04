@@ -1,9 +1,6 @@
 ---
-title: IDebugIDECallback |Microsoft 文件
-ms.custom: ''
+title: IDebugIDECallback |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - IDebugIDECallback interface
@@ -13,18 +10,18 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 739c419e7f71b325a74c0a7c6dbbc31b1fd0e37f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2eb504dd34db24b6628619c1adf356aaf7dd8274
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31113415"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53901869"
 ---
 # <a name="idebugidecallback"></a>IDebugIDECallback
 > [!IMPORTANT]
->  在 Visual Studio 2015 中，這種實作運算式評估工具已被取代。 如需實作 CLR 運算式評估工具的資訊，請參閱[CLR 運算式評估工具](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)和[Managed 運算式評估工具範例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。  
+>  在 Visual Studio 2015 中，這種實作運算式評估工具已被取代。 如需實作 CLR 運算式評估工具的資訊，請參閱[CLR 運算式評估工具](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)並[Managed 運算式評估工具範例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。  
   
- 可讓偵錯工具的 [輸出] 視窗中顯示訊息的運算式評估工具 (EE)。  
+ 可讓運算式評估工具 (EE)，才能偵錯工具的 [輸出] 視窗中顯示一則訊息。  
   
 ## <a name="syntax"></a>語法  
   
@@ -32,7 +29,7 @@ ms.locfileid: "31113415"
 IDebugIDECallback : IUnknown  
 ```  
   
-## <a name="notes-for-implementers"></a>實作者注意事項  
+## <a name="notes-for-implementers"></a>實作者的附註  
  此回呼是由 managed 偵錯引擎實作。  
   
 ## <a name="notes-for-callers"></a>呼叫端資訊  
@@ -43,11 +40,11 @@ IDebugIDECallback : IUnknown
   
 |方法|描述|  
 |------------|-----------------|  
-|[DisplayMessage](../../../extensibility/debugger/reference/idebugidecallback-displaymessage.md)|將指定的訊息字串傳送至偵錯工具的 [輸出] 視窗。|  
+|[DisplayMessage](../../../extensibility/debugger/reference/idebugidecallback-displaymessage.md)|將指定的訊息字串傳送至偵錯工具的 [輸出] 視窗中。|  
   
 ## <a name="requirements"></a>需求  
- 標頭： Ee.h  
+ 標頭：Ee.h  
   
- 命名空間： Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間:Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
+ 組件︰Microsoft.VisualStudio.Debugger.Interop.dll

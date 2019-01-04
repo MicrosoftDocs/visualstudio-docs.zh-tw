@@ -1,9 +1,6 @@
 ---
 title: IPropertyProxyEESide::CreateReplacementObject |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IPropertyProxyEESide::CreateReplacementObject
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9aab08d85f91cb56677ddaf354d8f7c316e4b4a6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: be5433457ef533c1ef4dba66bf0b6d0d95546e3e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49870428"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53959872"
 ---
 # <a name="ipropertyproxyeesidecreatereplacementobject"></a>IPropertyProxyEESide::CreateReplacementObject
 建立特定運算式評估工具 (EE) 的資料物件的複本。  
@@ -28,16 +25,16 @@ ms.locfileid: "49870428"
 ## <a name="syntax"></a>語法  
   
 ```cpp  
-HRESULT CreateReplacementObject(  
-   IEEDataStorage*  dataIn,  
-   IEEDataStorage** dataOut  
+HRESULT CreateReplacementObject(  
+   IEEDataStorage*  dataIn,  
+   IEEDataStorage** dataOut  
 );  
 ```  
   
 ```csharp  
-int CreateReplacementObject(  
-   IEEDataStorage     dataIn,  
-   out IEEDataStorage dataOut  
+int CreateReplacementObject(  
+   IEEDataStorage     dataIn,  
+   out IEEDataStorage dataOut  
 );  
 ```  
   

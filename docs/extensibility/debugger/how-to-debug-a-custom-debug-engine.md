@@ -1,9 +1,6 @@
 ---
-title: 如何： 偵錯自訂的偵錯引擎 |Microsoft Docs
-ms.custom: ''
+title: 如何：偵錯自訂的偵錯引擎 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - debug engines, debugging
@@ -14,18 +11,18 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bdc01eec9982f7e3a03cd84424bc56b031846a7d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 26e227af6eb15874e6f79dd890a20a76d62d1a96
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49858858"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53962385"
 ---
-# <a name="how-to-debug-a-custom-debug-engine"></a>如何： 偵錯自訂的偵錯引擎
+# <a name="how-to-debug-a-custom-debug-engine"></a>如何：偵錯自訂的偵錯引擎
 從專案類型會啟動的偵錯引擎 (DE)<xref:Microsoft.VisualStudio.Shell.Interop.IVsDebuggableProjectCfg.DebugLaunch%2A>方法。 這表示控制下的執行個體啟動時 DE[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]控制的專案類型。 不過，該執行個體[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]無法偵錯 DE。 下面是可讓您偵錯您的自訂裝置的步驟。  
   
 > [!NOTE]
->  ： 在 「 偵錯自訂的偵錯引擎 」 的程序中，您必須等到開始之前，您可以附加至這個 DE。 如果您即將開始您 DE DE 啟動時出現的訊息方塊，您可以附加在該點，然後清除 訊息方塊，以繼續。 如此一來，您可以攔截所有 DE 事件。  
+>  :   在 「 偵錯自訂的偵錯引擎 」 的程序，您必須等待開始之前，您可以附加至這個 DE。 如果您即將開始您 DE DE 啟動時出現的訊息方塊，您可以附加在該點，然後清除 訊息方塊，以繼續。 如此一來，您可以攔截所有 DE 事件。  
   
 > [!WARNING]
 >  您必須擁有遠端偵錯安裝才能嘗試進行下列程序。 請參閱[遠端偵錯](../../debugger/remote-debugging.md)如需詳細資訊。  

@@ -11,13 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: e6fa953c294bb355d61126354b0752590e536c40
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 06a34bd09c84c3afc4162c4930fc34963b56b8fb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53059229"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53905448"
 ---
 # <a name="read-models-and-diagrams-in-other-visual-studio-editions"></a>在其他 Visual Studio 版本中讀取模型和圖表
 
@@ -59,5 +58,5 @@ ms.locfileid: "53059229"
 
 ## <a name="see-also"></a>另請參閱
 
-- [相依性圖表︰參考](../modeling/layer-diagrams-reference.md)
+- [相依性圖表中：參考](../modeling/layer-diagrams-reference.md)
 - [建立應用程式模型](../modeling/create-models-for-your-app.md)

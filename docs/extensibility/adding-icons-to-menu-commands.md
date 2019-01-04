@@ -1,9 +1,6 @@
 ---
 title: 將圖示加入至功能表命令 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - icons [Visual Studio], adding to toolbars
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0d01e64915004eb21a92c21a67291dc4f034112d
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 73e49c3ac9586f5287e21e63e4560b7009927f46
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39155007"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53827633"
 ---
 # <a name="add-icons-to-menu-commands"></a>將圖示加入至功能表命令
 命令可以出現在功能表和工具列。 在工具列上很常見的只是圖示 （以節省空間） 時在功能表上顯示命令通常會出現圖示和文字的命令。  

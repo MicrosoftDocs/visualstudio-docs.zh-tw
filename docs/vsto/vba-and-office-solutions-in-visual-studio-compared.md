@@ -1,9 +1,6 @@
 ---
 title: 比較 Visual Studio 中的 VBA 和 Office 方案
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,12 +13,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b5a0031133c6713320a0377098d096fa60748de6
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 09c5fdeb37fa09595cdfda99aba06b9546c5f696
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35671111"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53820079"
 ---
 # <a name="vba-and-office-solutions-in-visual-studio-compared"></a>比較 Visual Studio 中的 VBA 和 Office 方案
   Microsoft Visual Basic for Applications (VBA) 會使用與 Office 應用程式緊密整合的 Unmanaged 程式碼。 使用 Visual Studio 建立的 Microsoft Office 專案可讓您充分利用 .NET Framework 和 Visual Studio 設計工具。  
@@ -53,8 +50,6 @@ ms.locfileid: "35671111"
  [從其他 Office 方案呼叫 VSTO 增益集的程式碼](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md)   
  [合併 VBA 和文件層級自訂](../vsto/combining-vba-and-document-level-customizations.md)   
  [文件層級自訂的架構](../vsto/architecture-of-document-level-customizations.md)   
- [VSTO 增益集的架構](../vsto/architecture-of-vsto-add-ins.md)   
+ [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md)   
  [保護 Office 方案](../vsto/securing-office-solutions.md)   
  [開始使用&#40;在 Visual Studio 中的 Office 程式開發&#41;](../vsto/getting-started-office-development-in-visual-studio.md)  
-  
-  

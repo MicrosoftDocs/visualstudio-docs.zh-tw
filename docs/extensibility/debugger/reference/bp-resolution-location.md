@@ -1,9 +1,6 @@
 ---
 title: BP_RESOLUTION_LOCATION |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - BP_RESOLUTION_LOCATION
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0dda42a65824b8fdb93ec8561f3affb59ee5d166
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 61d58e827ba35dc9ee55ea0c2a96ceb8c0ad966e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49926120"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53954509"
 ---
 # <a name="bpresolutionlocation"></a>BP_RESOLUTION_LOCATION
 指定的中斷點解析位置的結構。  
@@ -62,21 +59,21 @@ public struct BP_RESOLUTION_LOCATION {
  [只有 c + +]預留位置。  
   
  `unionmember1`  
- [僅限 C#]請參閱有關如何解譯的備註。  
+ [C#只]請參閱有關如何解譯的備註。  
   
  `unionmember2`  
- [僅限 C#]請參閱有關如何解譯的備註。  
+ [C#只]請參閱有關如何解譯的備註。  
   
  `unionmember3`  
- [僅限 C#]請參閱有關如何解譯的備註。  
+ [C#只]請參閱有關如何解譯的備註。  
   
  `unionmember4`  
- [僅限 C#]請參閱有關如何解譯的備註。  
+ [C#只]請參閱有關如何解譯的備註。  
   
 ## <a name="remarks"></a>備註  
  此結構是隸屬[BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md)並[BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md)結構。  
   
- [僅限 C#]`unionmemberX`成員會根據下表來解譯。 往下的左側資料行`bpType`來判斷每個值然後跨`unionmemberX`成員表示和封送處理`unionmemberX`據此。 請參閱的方式來解譯此結構在 C# 中的範例。  
+ [C#只]`unionmemberX`成員會根據下表來解譯。 往下的左側資料行`bpType`來判斷每個值然後跨`unionmemberX`成員表示和封送處理`unionmemberX`據此。 請參閱的方式來解譯此結構在 C# 中的範例。  
   
 |`bpLocationType`|`unionmember1`|`unionmember2`|`unionmember3`|`unionmember4`|  
 |----------------------|--------------------|--------------------|--------------------|--------------------|  
@@ -116,9 +113,9 @@ namespace MyPackage
 ## <a name="requirements"></a>需求  
  標頭： msdbg.h  
   
- 命名空間： Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間:Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
  [結構和等位](../../../extensibility/debugger/reference/structures-and-unions.md)   

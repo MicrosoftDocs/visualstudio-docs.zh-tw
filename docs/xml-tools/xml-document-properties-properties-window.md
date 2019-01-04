@@ -2,7 +2,6 @@
 title: XML 文件屬性 (屬性視窗)
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: reference
 ms.assetid: 9dbb34d9-02ea-4201-b445-c98a0eb0d6db
 author: gewarren
@@ -10,16 +9,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e7c29a6e106381e23007f8cb3d899cb3b3c0e387
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: a89e6f12cb3e061abc4ebbe30cfe8d3a92138df6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34693561"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53913306"
 ---
-# <a name="xml-document-properties-properties-window"></a>XML 文件屬性，屬性視窗
+# <a name="xml-document-properties-properties-window"></a>屬性視窗、 XML 文件屬性
 
-**屬性**視窗會提供有關使用 XML 編輯器中的文件的基本資訊。 可用的屬性視目前使用中 XML 文件的型別而定。
+**屬性**視窗提供中文件的 XML 編輯器中的基本資訊。 可用的屬性視目前使用中 XML 文件的型別而定。
 
 > [!NOTE]
 > 所有 XML 文件屬性都儲存在解決方案中。 因此，在下次開啟解決方案時無需重新輸入這些值。
@@ -30,7 +29,7 @@ ms.locfileid: "34693561"
 
  **輸入**
 
- 與 XSLT 樣式表相關聯的輸入文件。 它由**ShowXSLT 輸出**命令。 可以使用瀏覽選取的文件 (**...**) 按鈕。
+ 與 XSLT 樣式表相關聯的輸入文件。 它由**ShowXSLT 輸出**命令。 可以使用 瀏覽 選取文件 (**...**) 按鈕。
 
  僅當 [編輯器] 視窗中有目前使用中的 XSLT 檔案時，才可看到此屬性。
 
@@ -42,15 +41,15 @@ ms.locfileid: "34693561"
 
  **結構描述**
 
- 用於驗證的結構描述。 按鈕會開啟**XSD 結構描述**對話方塊，可用來選取要使用的結構描述。
+ 用於驗證的結構描述。 按鈕會開啟**XSD 結構描述**對話方塊中，可用來選取要使用的結構描述。
 
  亦可輸入結構描述的路徑。 如果指定多個結構描述，則每個結構描述路徑都必須包含在雙引號中。
 
  **樣式表**
 
- 用來轉換文件的 XSLT 檔案時**顯示 XSLT 輸出**命令可用。 如果此欄位為空白時**顯示 XSLT 輸出**命令時，編輯器會使用中提供的值`xml-stylesheet`處理指示的文件，或者它會提示您輸入檔案名稱。
+ 用來轉換文件的 XSLT 檔案時**顯示 XSLT 輸出**命令可用。 如果此欄位為空白時**顯示 XSLT 輸出**命令時，編輯器使用中提供的值`xml-stylesheet`處理指示的文件，它會提示您輸入檔案名稱。
 
- 編輯 XSLT 檔時，這個屬性可用來指定應該在不同的樣式表時使用**顯示 XSLT 輸出**或**偵錯 XSLT**選取命令。 例如，當編輯包含在父樣式表中的樣式表時，您可能想要這樣做。
+ 編輯 XSLT 檔案時，此屬性可用來指定不同的樣式表應使用的時機**顯示 XSLT 輸出**或**偵錯 XSLT**選取命令時。 例如，當編輯包含在父樣式表中的樣式表時，您可能想要這樣做。
 
 ## <a name="see-also"></a>另請參閱
 

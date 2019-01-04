@@ -1,9 +1,6 @@
 ---
 title: 註冊和選取 (原始檔控制 VSPackage) |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - registration, source control packages
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6d601aeca3864e47da77fd6418f4cfd3a5db1623
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d549ab4af45a2571b2d20d47215109f57b3f3384
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49834873"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53930709"
 ---
 # <a name="registration-and-selection-source-control-vspackage"></a>註冊和選取 (原始檔控制 VSPackage)
 原始檔控制 VSPackage 必須註冊要公開至[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。 如果多個原始檔控制 VSPackage 註冊，使用者可以選取要在適當的時間載入的 VSPackage。 請參閱[Vspackage](../../extensibility/internals/vspackages.md)如需詳細資訊的 Vspackage，以及如何加以註冊。  
@@ -34,11 +31,11 @@ ms.locfileid: "49834873"
 ### <a name="registry-entries"></a>登錄項目  
  原始檔控制套件需要三個私用的 Guid:  
   
-- 套件 GUID： 這是包含來源控制項實作 （在這一節中稱為 ID_Package） 封裝的主要 GUID。  
+- 套件 GUID:這是包含來源控制項實作 （在這一節中稱為 ID_Package） 封裝的主要 GUID。  
   
-- 原始檔控制 GUID： 這是原始檔控制 VSPackage 用來向 Visual Studio 原始檔控制虛設常式的 GUID，也會做為命令的 UI 內容的 GUID。 原始檔控制服務的 GUID 會註冊在原始檔控制的 GUID。 在此範例中，原始檔控制 GUID 稱為 ID_SccProvider。  
+- 原始檔控制 GUID:這是原始檔控制 VSPackage 用來向 Visual Studio 原始檔控制虛設常式的 GUID，並也會做為命令的 UI 內容的 GUID。 原始檔控制服務的 GUID 會註冊在原始檔控制的 GUID。 在此範例中，原始檔控制 GUID 稱為 ID_SccProvider。  
   
-- 原始檔控制服務的 GUID： 這是私用的服務 （這一節中稱為 SID_SccPkgService） 的 Visual Studio 所使用的 GUID。 此外，原始檔控制套件需要定義其他的 Guid，適用於 Vspackage，工具視窗等等。  
+- 原始檔控制服務的 GUID:這是私用的服務 （這一節中稱為 SID_SccPkgService） 的 Visual Studio 所使用的 GUID。 此外，原始檔控制套件需要定義其他的 Guid，適用於 Vspackage，工具視窗等等。  
   
   原始檔控制 VSPackage 必須進行下列登錄項目：  
   

@@ -1,8 +1,7 @@
 ---
-title: 如何：為 Managed 程式碼的缺失建立工作項目
+title: HOW TO：為受控碼的缺失建立工作項目
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 helpviewer_keywords:
 - managed code, creating work items for code defects
@@ -12,14 +11,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: b251970bfd57b31842e1573e2e156e11a517c81a
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: ff03686e353fa3df06204c59935ff614bbf7bdfa
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44279469"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53895606"
 ---
-# <a name="how-to-create-a-work-item-for-a-managed-code-defect"></a>如何：為 Managed 程式碼的缺失建立工作項目
+# <a name="how-to-create-a-work-item-for-a-managed-code-defect"></a>HOW TO：為受控碼的缺失建立工作項目
 
 您可以使用記錄檔內工作項目從 Visual Studio 的工作項目追蹤功能。 若要使用這項功能，您的專案必須在 Azure DevOps 專案的一部分[!INCLUDE[esprfound](../code-quality/includes/esprfound_md.md)]。
 

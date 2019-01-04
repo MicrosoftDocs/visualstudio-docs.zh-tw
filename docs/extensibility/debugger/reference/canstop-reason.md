@@ -1,9 +1,6 @@
 ---
 title: CANSTOP_REASON |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - CANSTOP_REASON
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4129839094b7f5cf9907f6b92fa11fe1847f5806
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 409fecf26a33c77cb2e0dabaa52d789b4179451b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49938808"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53914858"
 ---
 # <a name="canstopreason"></a>CANSTOP_REASON
 用來判斷是否程式可能會停止在達到執行中的特定點之後執行。  
@@ -28,7 +25,7 @@ ms.locfileid: "49938808"
 ## <a name="syntax"></a>語法  
   
 ```cpp  
-enum enum_CANSTOP_REASON {   
+enum enum_CANSTOP_REASON {   
    CANSTOP_ENTRYPOINT = 0x0000,  
    CANSTOP_STEPIN     = 0x0001  
 };  
@@ -36,7 +33,7 @@ typedef DWORD CANSTOP_REASON;
 ```  
   
 ```csharp  
-public enum enum_CANSTOP_REASON {   
+public enum enum_CANSTOP_REASON {   
    CANSTOP_ENTRYPOINT = 0x0000,  
    CANSTOP_STEPIN     = 0x0001  
 };  
@@ -55,9 +52,9 @@ public enum enum_CANSTOP_REASON {
 ## <a name="requirements"></a>需求  
  標頭： msdbg.h  
   
- 命名空間： Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間:Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
  [列舉型別](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   

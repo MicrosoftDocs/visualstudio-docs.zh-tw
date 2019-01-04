@@ -1,9 +1,6 @@
 ---
 title: IDebugPortPicker::SetSite |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - IDebugPortPicker::SetSite
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 00730a5338a3355f2397a91bc7a3693b30dca31b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 664b036d22cad95f568f5b86eb17acf72429042a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49930605"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53889276"
 ---
 # <a name="idebugportpickersetsite"></a>IDebugPortPicker::SetSite
 設定服務提供者。  

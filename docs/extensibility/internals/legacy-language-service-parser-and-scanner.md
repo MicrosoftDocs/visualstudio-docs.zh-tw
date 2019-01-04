@@ -1,9 +1,6 @@
 ---
 title: 舊版語言服務剖析器和掃描器 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - parsers, language services [managed package framework]
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d4ca98b5e4f991e795af95e479fa57a38ca2b57a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: daca7b7d49bcd9aa817f26ad485ec35394f50aff
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49912041"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53941845"
 ---
 # <a name="legacy-language-service-parser-and-scanner"></a>舊版語言服務的剖析器和掃描器
 剖析器是語言服務的核心。 Managed Package Framework (MPF) 語言類別需要的語言剖析器，以選取要顯示的程式碼的相關資訊。 剖析器會將文字分隔為語彙基元，並接著識別這些權杖由型別和功能。  
@@ -116,7 +113,7 @@ namespace MyNamespace
 12. 完成此項目。  
   
 ### <a name="summary"></a>總結  
- 比對的大括號作業僅限於通常簡單組的語言項目。 更複雜的項目，例如比對三合一 ("`if(...)`"，"`{`"和"`}`"，或 「`else`"，"`{`"和"`}`」)，可以反白顯示文字自動完成作業的一部分。 例如，"else"word 完成時，比對"`if`」 陳述式可以反白顯示。 如果有一系列`if` / `else if`陳述式中，所有人都可以使用相同的機制，做為對稱的括號反白顯示。 <xref:Microsoft.VisualStudio.Package.Source>基底類別已經支援此做法，，如下所示： 掃描器必須傳回語彙基元的觸發程序的值<xref:Microsoft.VisualStudio.Package.TokenTriggers>結合觸發程序值<xref:Microsoft.VisualStudio.Package.TokenTriggers>游標位置之前的語彙基元。  
+ 比對的大括號作業僅限於通常簡單組的語言項目。 更複雜的項目，例如比對三合一 ("`if(...)`"，"`{`"和"`}`"，或 「`else`"，"`{`"和"`}`」)，可以反白顯示文字自動完成作業的一部分。 例如，"else"word 完成時，比對"`if`」 陳述式可以反白顯示。 如果有一系列`if` / `else if`陳述式中，所有人都可以使用相同的機制，做為對稱的括號反白顯示。 <xref:Microsoft.VisualStudio.Package.Source>基底類別已經支援此做法，，如下所示：掃描器必須傳回的語彙基元的觸發程序值<xref:Microsoft.VisualStudio.Package.TokenTriggers>結合的觸發程序值<xref:Microsoft.VisualStudio.Package.TokenTriggers>游標位置之前的語彙基元。  
   
  如需詳細資訊，請參閱 <<c0> [ 舊版語言服務中的大括號比對](../../extensibility/internals/brace-matching-in-a-legacy-language-service.md)。  
   

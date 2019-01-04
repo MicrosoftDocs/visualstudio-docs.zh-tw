@@ -1,9 +1,6 @@
 ---
 title: IDebugReference2::EnumChildren |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugReference2::EnumChildren
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4515a5834b5ffbad6718a3fec3bd1db48cb45805
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e35c132acb8d6ac9efe6791bc83ae2bc749f4dc5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49840970"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53903678"
 ---
 # <a name="idebugreference2enumchildren"></a>IDebugReference2::EnumChildren
 取得一份所選的子系的參考。 保留供未來使用。  
@@ -28,7 +25,7 @@ ms.locfileid: "49840970"
 ## <a name="syntax"></a>語法  
   
 ```cpp  
-HRESULT EnumChildren (   
+HRESULT EnumChildren (   
    DEBUGREF_INFO_FLAGS        dwFields,  
    DWORD                      dwRadix,  
    DBG_ATTRIB_FLAGS           dwAttribFilter,  
@@ -39,7 +36,7 @@ HRESULT EnumChildren (
 ```  
   
 ```csharp  
-int EnumChildren (   
+int EnumChildren (   
    enum_DEBUGREF_INFO_FLAGS     dwFields,  
    uint                         dwRadix,  
    enum_DBG_ATTRIB_FLAGS        dwAttribFilter,  

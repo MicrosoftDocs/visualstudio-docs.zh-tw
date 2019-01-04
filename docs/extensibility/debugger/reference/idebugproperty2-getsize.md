@@ -1,9 +1,6 @@
 ---
 title: IDebugProperty2::GetSize |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugProperty2::GetSize
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2324fe7057b27e1cbf9394d6cecd70329e500d2e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9371ff0ba43a6d7332649b21363a6b4950097f74
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49951037"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53855586"
 ---
 # <a name="idebugproperty2getsize"></a>IDebugProperty2::GetSize
 取得大小，以位元組為單位的屬性值。  
@@ -28,13 +25,13 @@ ms.locfileid: "49951037"
 ## <a name="syntax"></a>語法  
   
 ```cpp  
-HRESULT GetSize (   
+HRESULT GetSize (   
    DWORD* pdwSize  
 );  
 ```  
   
 ```csharp  
-int GetSize (   
+int GetSize (   
    out uint pdwSize  
 );  
 ```  

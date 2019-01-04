@@ -1,9 +1,6 @@
 ---
 title: IDebugCoreServer2::GetMachineUtilities_V7 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugCoreServer2::GetMachineUtilities_V7
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 265c5b414c53fb6dfe43f63c1016204b8ff02c81
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: fdfeda98122f2b30f9fe1c0bc4f0259ec48a49c7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49908661"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53918837"
 ---
 # <a name="idebugcoreserver2getmachineutilitiesv7"></a>IDebugCoreServer2::GetMachineUtilities_V7
 這個方法會取得伺服器的機器的公用程式。  
@@ -31,14 +28,14 @@ ms.locfileid: "49908661"
 ## <a name="syntax"></a>語法  
   
 ```cpp  
-HRESULT GetMachineUtilities_V7(  
-   IDebugMDMUtil2_V7** ppUtil  
+HRESULT GetMachineUtilities_V7(  
+   IDebugMDMUtil2_V7** ppUtil  
 );  
 ```  
   
 ```csharp  
-int GetMachineUtilities_V7(  
-   out IDebugMDMUtil2_V7 ppUtil  
+int GetMachineUtilities_V7(  
+   out IDebugMDMUtil2_V7 ppUtil  
 );  
 ```  
   

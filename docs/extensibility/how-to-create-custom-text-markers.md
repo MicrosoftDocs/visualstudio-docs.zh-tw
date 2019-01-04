@@ -1,9 +1,6 @@
 ---
-title: 如何： 建立自訂文字標記 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：建立自訂文字標記 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - custom text markers
@@ -13,14 +10,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7ac2ad16c0e6a3e0a6c76e15ff6860838fa349c2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1c8389788504a49bc9a4962c89ed47500a1dc7da
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49893100"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53965213"
 ---
-# <a name="how-to-create-custom-text-markers"></a>如何： 建立自訂文字標記
+# <a name="how-to-create-custom-text-markers"></a>HOW TO：建立自訂文字標記
 如果您想要建立自訂文字標記，以強調或組織程式碼，您必須採取下列步驟：  
   
 - 註冊新文字標記中，讓其他工具可以存取它。  
@@ -29,7 +26,7 @@ ms.locfileid: "49893100"
   
 - 建立可供其他處理序進行的服務使用的文字標記。  
   
-  如需有關如何將文字標記的程式碼區域的詳細資訊，請參閱 <<c0> [ 如何： 使用文字標記](../extensibility/how-to-use-text-markers.md)。  
+  如需有關如何將文字標記的程式碼區域的詳細資訊，請參閱[How to:使用文字標記](../extensibility/how-to-use-text-markers.md)。  
   
 ## <a name="to-register-a-custom-marker"></a>若要註冊自訂標記  
   
@@ -54,7 +51,7 @@ ms.locfileid: "49893100"
   
    -   DisplayName  
   
-   -   Package  
+   -   封裝  
   
    -   `Default` 是選擇性的 REG_SZ 類型項目。 設定時，項目的值是字串，包含一些實用識別資訊，例如 「 自訂文字標記 」。  
   
@@ -92,6 +89,6 @@ ms.locfileid: "49893100"
   
 ## <a name="see-also"></a>另請參閱  
  [在舊版的 API 中使用文字標記](../extensibility/using-text-markers-with-the-legacy-api.md)   
- [如何： 新增標準文字標記](../extensibility/how-to-add-standard-text-markers.md)   
- [如何： 實作錯誤標記](../extensibility/how-to-implement-error-markers.md)   
- [如何： 使用文字標記](../extensibility/how-to-use-text-markers.md)
+ [如何：新增標準文字標記](../extensibility/how-to-add-standard-text-markers.md)   
+ [如何：實作錯誤標記](../extensibility/how-to-implement-error-markers.md)   
+ [如何：使用文字標記](../extensibility/how-to-use-text-markers.md)

@@ -1,9 +1,6 @@
 ---
-title: IDebugErrorBreakpointResolution2 |Microsoft 文件
-ms.custom: ''
+title: IDebugErrorBreakpointResolution2 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugErrorBreakpointResolution2
@@ -15,15 +12,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0c5efc4c60003e2130f277e62cd4927129dd16b0
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: bb3b34f9f701637893a45f3800bb8cbd679b9299
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31112558"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53950721"
 ---
 # <a name="idebugerrorbreakpointresolution2"></a>IDebugErrorBreakpointResolution2
-此介面代表中斷點錯誤的解決方式。  
+這個介面會表示中斷點錯誤的解決方式。  
   
 ## <a name="syntax"></a>語法  
   
@@ -31,7 +28,7 @@ ms.locfileid: "31112558"
 IDebugErrorBreakpointResolution2 : IUnknown  
 ```  
   
-## <a name="notes-for-implementers"></a>實作者注意事項  
+## <a name="notes-for-implementers"></a>實作者的附註  
  偵錯引擎會實作這個介面做為其支援中斷點的一部分。 這個介面用來報告中斷點無法繫結。  
   
 ## <a name="notes-for-callers"></a>呼叫端資訊  
@@ -48,9 +45,9 @@ IDebugErrorBreakpointResolution2 : IUnknown
 ## <a name="requirements"></a>需求  
  標頭： msdbg.h  
   
- 命名空間： Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間:Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md)   

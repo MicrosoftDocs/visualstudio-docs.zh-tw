@@ -1,13 +1,8 @@
 ---
-title: 如何： 使用 MSBuild 工作建立 SharePoint 方案套件 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：使用 MSBuild 工作建立 SharePoint 方案套件 |Microsoft Docs
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -17,14 +12,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5a95eb80b860a1447fe6e958edb9c98b66805a90
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: a9a954c00c616ff156d786386c92d41dcbe85c13
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118594"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53818322"
 ---
-# <a name="how-to-create-a-sharepoint-solution-package-by-using-msbuild-tasks"></a>如何： 使用 MSBuild 工作建立 SharePoint 方案套件
+# <a name="how-to-create-a-sharepoint-solution-package-by-using-msbuild-tasks"></a>HOW TO：使用 MSBuild 工作建立 SharePoint 方案套件
   您可以建置、 清理及驗證 SharePoint 套件 (*.wsp*) 在開發電腦上使用命令列的 MSBuild 工作。 您也可以使用這些命令，來自動化建置程序使用 Team Foundation Server 組建電腦上。  
   
 ## <a name="build-a-sharepoint-package"></a>建置 SharePoint 封裝  
@@ -112,5 +107,5 @@ ms.locfileid: "37118594"
   
 ## <a name="see-also"></a>另請參閱
  [建立 SharePoint 功能](../sharepoint/creating-sharepoint-features.md)   
- [如何： 自訂 SharePoint 功能](../sharepoint/how-to-customize-a-sharepoint-feature.md)   
- [如何： 新增和移除 SharePoint 功能的項目](../sharepoint/how-to-add-and-remove-items-to-sharepoint-features.md)  
+ [如何：自訂 SharePoint 功能](../sharepoint/how-to-customize-a-sharepoint-feature.md)   
+ [如何：新增和移除 SharePoint 功能的項目](../sharepoint/how-to-add-and-remove-items-to-sharepoint-features.md)  

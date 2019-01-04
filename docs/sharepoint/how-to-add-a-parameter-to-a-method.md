@@ -1,13 +1,8 @@
 ---
-title: 如何： 將參數加入至方法 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：新增參數至方法 |Microsoft Docs
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -22,14 +17,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 196ac37cc9bc4f53cfa886b92c62c7a301c3451a
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 5f7d0e0ab164bf30c341ca093908be3661452d19
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36756307"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53866253"
 ---
-# <a name="how-to-add-a-parameter-to-a-method"></a>如何： 將參數加入至方法
+# <a name="how-to-add-a-parameter-to-a-method"></a>HOW TO：新增參數至方法
   若要將資訊傳遞至方法，或從方法傳回的資訊，請使用參數。 所有的方法必須有至少一個參數。 如需如何設計來支援您想要建立的方法的型別參數的詳細資訊，請參閱[設計 Business Data Connectivity 模型](../sharepoint/designing-a-business-data-connectivity-model.md)。  
   
  當您新增參數至方法時，Visual Studio 會將您的專案中的模型檔案的 XML 參數項目。 參數項目之屬性的相關資訊，請參閱[參數](http://go.microsoft.com/fwlink/?LinkId=169284)。  
@@ -56,12 +51,11 @@ ms.locfileid: "36756307"
   
      如需哪一個方向來選擇您要建立之型別方法的詳細資訊，請參閱[設計 business data connectivity 模型](../sharepoint/designing-a-business-data-connectivity-model.md)。  
   
-8.  修改參數的類型描述元。 如需詳細資訊，請參閱 <<c0> [ 如何： 定義參數的型別描述元](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)。  
+8.  修改參數的類型描述元。 如需詳細資訊，請參閱[＜How to：定義參數的型別描述元](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)。  
   
 ## <a name="see-also"></a>另請參閱
  [BDC 模型設計工具概觀](../sharepoint/bdc-model-design-tools-overview.md)   
- [如何： 將實體新增至模型](../sharepoint/how-to-add-an-entity-to-a-model.md)   
- [如何： 定義參數的型別描述元](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)   
- [如何： 定義方法執行個體](../sharepoint/how-to-define-a-method-instance.md)   
+ [如何：將實體新增至模型](../sharepoint/how-to-add-an-entity-to-a-model.md)   
+ [如何：定義參數的型別描述元](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)   
+ [如何：定義方法執行個體](../sharepoint/how-to-define-a-method-instance.md)   
  [設計商務資料連接模型](../sharepoint/designing-a-business-data-connectivity-model.md)  
-  

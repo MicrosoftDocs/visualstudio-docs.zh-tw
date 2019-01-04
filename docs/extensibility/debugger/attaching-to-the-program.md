@@ -1,9 +1,6 @@
 ---
 title: 附加至程式 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - debug engines, attaching to programs
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c87aa879009ef0cd68a83d8ad7affdf0be58f796
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 50c9ce5079f15c945c963f530997d9bbc333bc42
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49903643"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53832605"
 ---
 # <a name="attach-to-the-program"></a>附加至程式
 您已向適當的連接埠中的程式之後，您必須在您想要偵錯的程式附加偵錯工具。  

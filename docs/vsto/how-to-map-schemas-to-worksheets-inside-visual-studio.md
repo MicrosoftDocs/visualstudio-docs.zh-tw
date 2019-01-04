@@ -3,8 +3,6 @@ title: HOW TO：將結構描述對應至 Visual Studio 內的工作表
 titleSuffix: ''
 ms.custom: seodec18
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,12 +17,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 672acf2b33463ee5110dc537f14831a1c034380e
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: 1be044131ab7248e971e5030f0d35467773587e1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53646650"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53849918"
 ---
 # <a name="how-to-map-schemas-to-worksheets-inside-visual-studio"></a>HOW TO：將結構描述對應至 Visual Studio 內的工作表
   Visual Studio 中開啟工作表時，您可以將 XML 結構描述對應至工作表中。 您使用 Visual Studio 外部開啟活頁簿時，您所使用的相同 Microsoft Office Excel 工具。 是否將結構描述對應至工作表之前，或建立您的 Excel 解決方案之後，Office 專案就會建立相同的物件。  
@@ -70,5 +68,3 @@ ms.locfileid: "53646650"
 ## <a name="see-also"></a>另請參閱  
  [如何：將結構描述對應至 Visual Studio 中的 Word 文件](../vsto/how-to-map-schemas-to-word-documents-inside-visual-studio.md)   
  [XML 結構描述和文件層級自訂中的資料](../vsto/xml-schemas-and-data-in-document-level-customizations.md)  
-  
-  

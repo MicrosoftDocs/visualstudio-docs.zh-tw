@@ -1,16 +1,11 @@
 ---
-title: 如何： 新增和移除功能相依性 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：新增和移除功能相依性 |Microsoft Docs
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - MICROSOFT.VISUALSTUDIO.SHAREPOINT.DESIGNERS.CUSTOMDEPENDENCYWINDOW
 - VS.SHAREPOINTTOOLS.RAD.FEATUREDESIGNERDEPENDENCY
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -20,14 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a7a61ff71b5ed8caa8ad50dff71957bee20b955a
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 704973591b1bcdcb849e847e9c5e7cefc78f0202
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36757988"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53924237"
 ---
-# <a name="how-to-add-and-remove-feature-dependencies"></a>如何： 新增和移除功能相依性
+# <a name="how-to-add-and-remove-feature-dependencies"></a>HOW TO：新增和移除功能相依性
   您的 SharePoint 功能可能取決於其他功能的功能或資料。 在這些情況下，您可以針對您的功能將這些其他功能標示為相依性。 如此一來，可確保 SharePoint 伺服器，會啟動相依的功能，才能啟用您的功能。  
   
 ## <a name="add-dependencies"></a>新增相依性  
@@ -71,6 +66,5 @@ ms.locfileid: "36757988"
   
 ## <a name="see-also"></a>另請參閱
  [建立 SharePoint 功能](../sharepoint/creating-sharepoint-features.md)   
- [如何： 自訂 SharePoint 功能](../sharepoint/how-to-customize-a-sharepoint-feature.md)   
- [如何： 新增和移除 SharePoint 功能的項目](../sharepoint/how-to-add-and-remove-items-to-sharepoint-features.md)  
-  
+ [如何：自訂 SharePoint 功能](../sharepoint/how-to-customize-a-sharepoint-feature.md)   
+ [如何：新增和移除 SharePoint 功能的項目](../sharepoint/how-to-add-and-remove-items-to-sharepoint-features.md)  

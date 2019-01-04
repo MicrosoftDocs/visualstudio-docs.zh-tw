@@ -1,9 +1,6 @@
 ---
 title: IDebugExpressionEvaluator::SetLocale |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugExpressionEvaluator::SetLocale
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f9c5e1fc300a150b15acc48f12dc3b8c6c01e277
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 128e00db6f648185c0404de3eddd4387c4067e8a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49882634"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53922347"
 ---
 # <a name="idebugexpressionevaluatorsetlocale"></a>IDebugExpressionEvaluator::SetLocale
 這個方法會設定要用來建立可列印的結果的語言。  
@@ -28,7 +25,7 @@ ms.locfileid: "49882634"
 ## <a name="syntax"></a>語法  
   
 ```cpp  
-HRESULT SetLocale(   
+HRESULT SetLocale(   
    WORD wLangID  
 );  
 ```  

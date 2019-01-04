@@ -1,9 +1,6 @@
 ---
 title: IEnumDebugPrograms2::Next |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IEnumDebugPrograms2::Next
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4b4c835c4d80ede94751bf2265d0ced318748216
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6cf731a9eaa03b3288f19da7493feecb1c9b4bb1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49925223"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53850147"
 ---
 # <a name="ienumdebugprograms2next"></a>IEnumDebugPrograms2::Next
 從列舉中傳回下的一個項目集。  

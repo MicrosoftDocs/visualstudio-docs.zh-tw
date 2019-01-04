@@ -8,26 +8,25 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: bfe0cbdda1b3eaa7d1afc936c7dbba75df6da07b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a741a506338066dddbee2cdbfd701ad3bfb4c922
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31947163"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53929694"
 ---
 # <a name="controlling-color-line-style-and-other-shape-properties"></a>控制色彩、線條樣式和其他圖形屬性
-某些圖形屬性例如色彩可以 '公開'-也就被連結至圖形的網域屬性。 其他人也不必直接控制。
+某些圖形屬性例如色彩可以 '公開'-也就被連結至圖形的網域屬性。 人直接控制的狀態。
 
 ## <a name="exposing-a-property"></a>公開屬性
- 某些圖形屬性，例如色彩可以連結到網域屬性的值。
+ 某些圖形屬性，例如色彩可以連結至網域屬性的值。
 
- DSL 定義中，選取形狀、 連接器或圖表的類別。 其內容功能表上，選擇**新增公開**，然後選擇您要填滿色彩等的屬性。
+ 在 DSL 定義中，選取 圖形、 連接線或圖表類別。 其操作功能表上，選擇**加入已公開**，然後選擇您要填滿色彩等的屬性。
 
- 圖形現在有網域屬性，您可以在程式碼中或以使用者設定。
+ 圖形現在具有程式碼中，或以使用者身分，您可以設定的網域屬性。
 
-## <a name="dynamically-updating-an-exposed-property"></a>以動態方式更新公開的屬性
- 通常您會想要讓公開的屬性相依於另一個屬性。 例如，您可以小於零的圖形以特定的網域屬性時變成紅色。 若要讓此相依性，建立[規則](../modeling/rules-propagate-changes-within-the-model.md)。 例如: 
+## <a name="dynamically-updating-an-exposed-property"></a>動態更新一個公開的屬性
+ 通常您會想要公開的屬性相依於另一個屬性。 例如，您可以小於零的圖形以特定的網域屬性時變成紅色。 若要讓此相依性，建立[規則](../modeling/rules-propagate-changes-within-the-model.md)。 例如: 
 
 ```csharp
 using System;

@@ -1,9 +1,6 @@
 ---
 title: IDebugMethodField::EnumStaticLocals |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugMethodField::EnumStaticLocals
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 35474156ec43fb9e1e44117e44430b27a6e1b383
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1db97097f27b05f576f579feedc18c709900c6c8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49905086"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53821668"
 ---
 # <a name="idebugmethodfieldenumstaticlocals"></a>IDebugMethodField::EnumStaticLocals
 建立方法的靜態區域變數的列舉值。  
@@ -28,7 +25,7 @@ ms.locfileid: "49905086"
 ## <a name="syntax"></a>語法  
   
 ```cpp  
-HRESULT EnumStaticLocals(   
+HRESULT EnumStaticLocals(   
    IEnumDebugFields** ppLocals  
 );  
 ```  

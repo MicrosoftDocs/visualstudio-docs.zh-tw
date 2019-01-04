@@ -1,9 +1,6 @@
 ---
-title: 逐步解說： 建立自訂動作專案項目與項目範本，第 2 部分 |Microsoft Docs
-ms.custom: ''
+title: 逐步解說：建立自訂動作專案項目與項目範本，第 2 部分 |Microsoft Docs
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 helpviewer_keywords:
 - project items [SharePoint development in Visual Studio], creating template wizards
@@ -14,17 +11,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2c37ab6f42be8e363dcba8a3e2aa6ef78816bff0
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 4305fd980252515f126df2c1b3848c0676cd2079
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51296238"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53913932"
 ---
-# <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-2"></a>逐步解說： 建立自訂動作專案項目與項目範本，第 2 部分
+# <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-2"></a>逐步解說：建立自訂動作專案項目與項目範本，第 2 部分
   您定義自訂 SharePoint 專案項目類型，並將它與 Visual Studio 中的項目範本產生關聯之後，您也可以提供範本的精靈。 您可以使用精靈，在使用您的範本將新的執行個體的專案項目加入至專案時，從使用者收集資訊。 您所收集的資訊可以用來初始化專案項目中。  
   
- 在本逐步解說中，您會將精靈加入自訂動作專案項目所示[逐步解說： 建立自訂動作專案項目與項目範本，第 1 部分](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)。 當使用者將自訂動作專案項目新增至 SharePoint 專案中時，精靈就會收集資訊 （例如其位置和使用者選擇時所要巡覽的 URL） 的自訂動作，並將這項資訊來*Elements.xml*新的專案項目中的檔案。  
+ 在本逐步解說中，您會將精靈加入自訂動作專案項目所示[逐步解說：使用項目範本，第 1 部分中建立自訂動作專案項目](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)。 當使用者將自訂動作專案項目新增至 SharePoint 專案中時，精靈就會收集資訊 （例如其位置和使用者選擇時所要巡覽的 URL） 的自訂動作，並將這項資訊來*Elements.xml*新的專案項目中的檔案。  
   
  本逐步解說將示範下列工作：  
   
@@ -40,7 +37,7 @@ ms.locfileid: "51296238"
 >  您可以下載範例，以從[Github](https://github.com/SharePoint/PnP/tree/master/Samples/Workflow.Activities) ，示範如何建立工作流程的自訂活動。  
   
 ## <a name="prerequisites"></a>必要條件  
- 若要執行本逐步解說中，您必須先建立 CustomActionProjectItem 解決方案藉由完成[逐步解說： 建立自訂動作專案項目與項目範本，第 1 部分](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)。  
+ 若要執行本逐步解說中，您必須先建立 CustomActionProjectItem 解決方案藉由完成[逐步解說：使用項目範本，第 1 部分中建立自訂動作專案項目](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)。  
   
  您還需要完成這個逐步解說在開發電腦上的下列元件：  
   
@@ -50,12 +47,12 @@ ms.locfileid: "51296238"
   
   下列概念的知識會很有幫助，但並非必要，若要完成本逐步解說：  
   
-- Visual Studio 中的專案和項目範本的精靈。 如需詳細資訊，請參閱 <<c0> [ 如何： 使用精靈與專案範本](../extensibility/how-to-use-wizards-with-project-templates.md)而<xref:Microsoft.VisualStudio.TemplateWizard.IWizard>介面。  
+- Visual Studio 中的專案和項目範本的精靈。 如需詳細資訊，請參閱[＜How to：使用精靈與專案範本](../extensibility/how-to-use-wizards-with-project-templates.md)而<xref:Microsoft.VisualStudio.TemplateWizard.IWizard>介面。  
   
 - 在 SharePoint 中的自訂動作。 如需詳細資訊，請參閱 <<c0> [ 自訂動作](http://go.microsoft.com/fwlink/?LinkId=177800)。  
   
 ## <a name="create-the-wizard-project"></a>建立精靈專案
- 若要完成此逐步解說中，您必須將專案加入 CustomActionProjectItem 方案中建立[逐步解說： 建立自訂動作專案項目與項目範本，第 1 部分](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)。 您將實作<xref:Microsoft.VisualStudio.TemplateWizard.IWizard>介面，並在此專案中定義的精靈 UI。  
+ 若要完成此逐步解說中，您必須將專案加入 CustomActionProjectItem 建立方案，您[逐步解說：使用項目範本，第 1 部分中建立自訂動作專案項目](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)。 您將實作<xref:Microsoft.VisualStudio.TemplateWizard.IWizard>介面，並在此專案中定義的精靈 UI。  
   
 #### <a name="to-create-the-wizard-project"></a>若要建立精靈專案  
   
@@ -82,7 +79,7 @@ ms.locfileid: "51296238"
   
 2.  在 **專案設計工具**，請確定目標架構設為.NET Framework 4.5。  
   
-     Visual C# 專案，您可以設定此值在**應用程式** 索引標籤。Visual Basic 專案，您可以設定此值在**編譯** 索引標籤。如需詳細資訊，請參閱[如何：以 .NET Framework 版本為目標](../ide/how-to-target-a-version-of-the-dotnet-framework.md)。  
+     Visual C# 專案，您可以設定此值在**應用程式** 索引標籤。Visual Basic 專案，您可以設定此值在**編譯** 索引標籤。如需詳細資訊，請參閱[＜How to：以一個 .NET Framework 版本為目標](../ide/how-to-target-a-version-of-the-dotnet-framework.md)。  
   
 3.  在  **ItemTemplateWizard**專案中，加入**視窗 (WPF)** 加入專案中，項目，然後再將項目命名**WizardWindow**。  
   
@@ -345,10 +342,9 @@ ms.locfileid: "51296238"
 4.  關閉 Visual Studio （實驗性執行個體和 CustomActionProjectItem 方案已開啟的 Visual Studio 執行個體） 的兩個執行個體。  
   
 ## <a name="see-also"></a>另請參閱
- [逐步解說： 建立自訂動作專案項目與項目範本，第 1 部分](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)   
+ [逐步解說：使用項目範本，第 1 部分中建立自訂動作專案項目](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)   
  [定義自訂 SharePoint 專案項目類型](../sharepoint/defining-custom-sharepoint-project-item-types.md)   
  [建立項目範本和專案範本，為 SharePoint 專案項目](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)   
  [Visual Studio 範本結構描述參考](/visualstudio/extensibility/visual-studio-template-schema-reference)   
- [如何： 搭配專案範本使用精靈](../extensibility/how-to-use-wizards-with-project-templates.md)   
+ [如何：使用精靈與專案範本](../extensibility/how-to-use-wizards-with-project-templates.md)   
  [自訂動作的預設位置和識別碼](http://go.microsoft.com/fwlink/?LinkId=181964)  
-  

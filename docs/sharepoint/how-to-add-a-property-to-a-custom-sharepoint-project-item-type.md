@@ -1,9 +1,6 @@
 ---
-title: 如何： 將屬性加入至自訂 SharePoint 專案項目類型 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：將屬性加入至自訂 SharePoint 專案項目類型 |Microsoft Docs
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,17 +14,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8a74fbffd5a1d8e9c5e660961d93f7181e51827a
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 44b791c5855838cc8108902305d016fe7f9900ac
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36757002"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53950481"
 ---
-# <a name="how-to-add-a-property-to-a-custom-sharepoint-project-item-type"></a>如何： 將屬性加入至自訂的 SharePoint 專案項目類型
+# <a name="how-to-add-a-property-to-a-custom-sharepoint-project-item-type"></a>HOW TO：將屬性加入至自訂的 SharePoint 專案項目類型
   當您定義自訂的 SharePoint 專案項目類型時，則可以將屬性加入專案項目。 屬性會出現在**屬性**視窗中選取的專案項目時**方案總管 中**。  
   
- 下列步驟假設您已經定義自己的 SharePoint 專案項目類型。 如需詳細資訊，請參閱 <<c0> [ 如何： 定義 SharePoint 專案項目類型](../sharepoint/how-to-define-a-sharepoint-project-item-type.md)。  
+ 下列步驟假設您已經定義自己的 SharePoint 專案項目類型。 如需詳細資訊，請參閱[＜How to：定義 SharePoint 專案項目類型](../sharepoint/how-to-define-a-sharepoint-project-item-type.md)。  
   
 ### <a name="to-add-a-property-to-a-definition-of-a-project-item-type"></a>若要將屬性加入至專案項目類型定義  
   
@@ -51,15 +48,15 @@ ms.locfileid: "36757002"
 ### <a name="specify-the-behavior-of-custom-properties"></a>指定自訂屬性的行為  
  您可以定義自訂屬性如何顯示和行為**屬性**藉由套用屬性 視窗<xref:System.ComponentModel>屬性定義的命名空間。 下列屬性可用於許多案例：  
   
--   <xref:System.ComponentModel.DisplayNameAttribute>： 指定出現在屬性名稱**屬性**視窗。  
+-   <xref:System.ComponentModel.DisplayNameAttribute>：指定出現在屬性名稱**屬性**視窗。  
   
--   <xref:System.ComponentModel.DescriptionAttribute>： 指定描述字串出現在底部**屬性**時選取屬性 視窗。  
+-   <xref:System.ComponentModel.DescriptionAttribute>：指定描述字串出現在底部**屬性**時選取屬性 視窗。  
   
--   <xref:System.ComponentModel.DefaultValueAttribute>： 指定屬性的預設值。  
+-   <xref:System.ComponentModel.DefaultValueAttribute>：指定屬性的預設值。  
   
--   <xref:System.ComponentModel.TypeConverterAttribute>： 指定之間的字串中所顯示的自訂轉換**屬性**視窗而非字串屬性值。  
+-   <xref:System.ComponentModel.TypeConverterAttribute>：指定會顯示在字串之間的自訂轉換**屬性**視窗而非字串屬性值。  
   
--   <xref:System.ComponentModel.EditorAttribute>： 指定自訂編輯器，以便用來修改屬性。  
+-   <xref:System.ComponentModel.EditorAttribute>：指定自訂編輯器，以便用來修改屬性。  
   
 ## <a name="compile-the-code"></a>編譯程式碼  
  這些程式碼範例需要參考下列組件的類別庫專案：  
@@ -74,8 +71,6 @@ ms.locfileid: "36757002"
  若要部署的專案項目，建立[!include[vsprvs](../sharepoint/includes/vsprvs-md.md)]擴充功能 (VSIX) 封裝組件、 範本和任何其他您想要與專案項目一起散發的檔案。 如需詳細資訊，請參閱 <<c0> [ 部署適用於 Visual Studio 中 SharePoint 工具擴充功能](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)。  
   
 ## <a name="see-also"></a>另請參閱
- [如何： 定義 SharePoint 專案項目類型](../sharepoint/how-to-define-a-sharepoint-project-item-type.md)   
- [如何： 將捷徑功能表項目新增至自訂的 SharePoint 專案項目類型](../sharepoint/how-to-add-a-shortcut-menu-item-to-a-custom-sharepoint-project-item-type.md)   
+ [如何：定義 SharePoint 專案項目類型](../sharepoint/how-to-define-a-sharepoint-project-item-type.md)   
+ [如何：將捷徑功能表項目新增至自訂的 SharePoint 專案項目類型](../sharepoint/how-to-add-a-shortcut-menu-item-to-a-custom-sharepoint-project-item-type.md)   
  [定義自訂 SharePoint 專案項目類型](../sharepoint/defining-custom-sharepoint-project-item-types.md)  
-  
-  

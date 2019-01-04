@@ -2,7 +2,6 @@
 title: XML 結構描述設計工具內容模型檢視
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: reference
 ms.assetid: e8db7c7d-31cf-479e-9dcc-299759891795
 author: gewarren
@@ -10,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a151daa4419c24464aeeafd9a3b58d202a6e82b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9a38ca198c4f5a84b1792142078f92398aeeaa4e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942578"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53951468"
 ---
 # <a name="content-model-view"></a>內容模型檢視
 
@@ -37,7 +36,7 @@ ms.locfileid: "49942578"
 
  節點的內容模型以可展開的圖形樹狀結構表示，項目和屬性則以樹狀目錄節點的形式出現。 依預設，只有一個層級會展開。 合成器、型別名稱、群組和其他容器等其他資訊會置於垂直列中 (展開時)，並加上括號之內的項目和屬性。 當您按兩下垂直列時，垂直列會變成水平，樹狀結構會摺疊。 當您按兩下水平列時，水平列會變成垂直，樹狀會展開。 選取直條選取容器中的所有節點。 如果項目可以展開或摺疊，展開器會顯示在右邊的節點。
 
- 在設計介面是空白的如果 XML 編輯器中， **XML 結構描述總管**，而會顯示浮水印。 *浮水印*是所有 XSD 設計工具檢視連結的清單。 如果結構描述集發生錯誤，清單結尾會顯示以下文字：「使用錯誤清單檢視與修正結構描述集中的錯誤」。
+ 在設計介面是空白的如果 XML 編輯器中， **XML 結構描述總管**，而會顯示浮水印。 *浮水印*是所有 XSD 設計工具檢視連結的清單。 如果結構描述集發生錯誤，將下列文字會顯示在清單結尾處：「 檢視與修正的錯誤集合中使用 錯誤清單 」。
 
 ## <a name="breadcrumb-bar"></a>階層連結列
 
@@ -83,9 +82,9 @@ ms.locfileid: "49942578"
 
 |選項|描述|
 |-|-----------------|
-|**顯示開始檢視**|若要切換[啟動檢視](../xml-tools/start-view.md)。 這個檢視可以使用鍵盤快速鍵存取： **Ctrl**+**1**。|
-|**顯示內容模型檢視**|若要切換[內容模型檢視](../xml-tools/content-model-view.md)。 這個檢視可以使用鍵盤快速鍵存取： **Ctrl**+**2**。|
-|**顯示圖表檢視**|若要切換[圖形檢視](../xml-tools/graph-view.md)。 這個檢視可以使用鍵盤快速鍵存取： **Ctrl**+**3**。|
+|**顯示開始檢視**|若要切換[啟動檢視](../xml-tools/start-view.md)。 這個檢視可以使用鍵盤快速鍵存取：**Ctrl**+**1**。|
+|**顯示內容模型檢視**|若要切換[內容模型檢視](../xml-tools/content-model-view.md)。 這個檢視可以使用鍵盤快速鍵存取：**Ctrl**+**2**。|
+|**顯示圖表檢視**|若要切換[圖形檢視](../xml-tools/graph-view.md)。 這個檢視可以使用鍵盤快速鍵存取：**Ctrl**+**3**。|
 |**清除工作區**|清除工作空間和設計介面。|
 |**移除工作區**|從工作空間和設計介面移除選取的節點。|
 |**全部移除，但從工作區的選取範圍**|從工作空間和設計介面移除未選取的節點。|

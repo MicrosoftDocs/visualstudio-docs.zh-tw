@@ -1,5 +1,5 @@
 ---
-title: 相依性圖表︰方針
+title: 相依性圖表中：方針
 ms.date: 09/28/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,17 +13,16 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: b7e282ed6aa93189ab15e608a5b3abe0c56411b9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f4a044481b1e359b2021b16da1f0b2b5aba8a872
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49863330"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53924419"
 ---
 # <a name="dependency-diagrams-guidelines"></a>相依性圖表： 指導方針
 
-藉由建立描述您的應用程式架構的高階*相依性圖表*Visual Studio 中。 確定您的程式碼保持與這個設計一致，方法是驗證您的程式碼相依性圖表。 您也可以在建置流程中包含圖層驗證。 請參閱[Channel 9 影片： 設計和驗證架構使用相依性圖表](http://go.microsoft.com/fwlink/?LinkID=252073)。
+藉由建立描述您的應用程式架構的高階*相依性圖表*Visual Studio 中。 確定您的程式碼保持與這個設計一致，方法是驗證您的程式碼相依性圖表。 您也可以在建置流程中包含圖層驗證。 請參閱[Channel 9 影片：設計和驗證架構使用相依性圖表](http://go.microsoft.com/fwlink/?LinkID=252073)。
 
 若要查看哪些版本的 Visual Studio 支援此功能，請參閱[architecture and modeling tools 的版本支援](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。
 
@@ -32,7 +31,7 @@ ms.locfileid: "49863330"
 
 ## <a name="what-is-a-dependency-diagram"></a>什麼是相依性圖表？
 
-傳統架構圖表，例如相依性圖表會識別主要元件的設計和及其相依性的功能單位。 在圖表中，每個節點稱為*層*，表示命名空間、 專案或其他成品的邏輯群組。 您可以繪製應該存在於您設計中的相依性。 與傳統架構圖表不同的是，您可以在原始程式碼中驗證實際的相依性是否符合所指定的預期相依性。 在 [!INCLUDE[esprtfs](../code-quality/includes/esprtfs_md.md)] 上製作正常組建的驗證部分，就可以確保程式碼即使日後變更仍然會繼續依照系統架構。 請參閱[相依性圖表： 參考](../modeling/layer-diagrams-reference.md)。
+傳統架構圖表，例如相依性圖表會識別主要元件的設計和及其相依性的功能單位。 在圖表中，每個節點稱為*層*，表示命名空間、 專案或其他成品的邏輯群組。 您可以繪製應該存在於您設計中的相依性。 與傳統架構圖表不同的是，您可以在原始程式碼中驗證實際的相依性是否符合所指定的預期相依性。 在 [!INCLUDE[esprtfs](../code-quality/includes/esprtfs_md.md)] 上製作正常組建的驗證部分，就可以確保程式碼即使日後變更仍然會繼續依照系統架構。 請參閱[相依性圖表：參考](../modeling/layer-diagrams-reference.md)。
 
 ## <a name="how-to-design-or-update-your-app-with-dependency-diagrams"></a>如何設計使用或更新您的應用程式相依性圖表
 
@@ -125,7 +124,7 @@ ms.locfileid: "49863330"
 
 當您著手開發新專案或新專案的新區域時，可以繪製圖層與相依性，以便有助您先識別主要元件，再著手開發程式碼。
 
--   **顯示可識別的架構模式**在相依性圖表，如果可能的話。 例如，描述桌面應用程式相依性圖表可能包括簡報、 網域邏輯和資料存放區等圖層。 相依性圖表，其中涵蓋應用程式內的單一功能可能有例如模型、 檢視和控制器的圖層。 如需有關這種模式的詳細資訊，請參閱[典範與實例： 應用程式架構](http://go.microsoft.com/fwlink/?LinkId=145794)。
+-   **顯示可識別的架構模式**在相依性圖表，如果可能的話。 例如，描述桌面應用程式相依性圖表可能包括簡報、 網域邏輯和資料存放區等圖層。 相依性圖表，其中涵蓋應用程式內的單一功能可能有例如模型、 檢視和控制器的圖層。 如需有關這種模式的詳細資訊，請參閱[典範與實例：應用程式架構](http://go.microsoft.com/fwlink/?LinkId=145794)。
 
 -   **建立每個圖層的程式碼成品**等命名空間、 類別或元件。 這可讓您更容易地遵循程式碼，並將程式碼成品連結至圖層。 一旦建立每個成品後，請將它連結至適當的圖層。
 
@@ -176,5 +175,5 @@ ms.locfileid: "49863330"
 
 ## <a name="see-also"></a>另請參閱
 
-- [相依性圖表︰參考](../modeling/layer-diagrams-reference.md)
+- [相依性圖表中：參考](../modeling/layer-diagrams-reference.md)
 - [從您的程式碼建立相依性圖表](../modeling/create-layer-diagrams-from-your-code.md)

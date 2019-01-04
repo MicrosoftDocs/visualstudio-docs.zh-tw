@@ -1,9 +1,6 @@
 ---
 title: IDebugDocumentText2::GetText |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugDocumentText2::GetText
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fe2b5ef3804c4ccfafbf164a8eb144e7822a6fdc
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 659f034b9c785a44debed5d1c5743267a0e8b51a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49905502"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53838511"
 ---
 # <a name="idebugdocumenttext2gettext"></a>IDebugDocumentText2::GetText
 從指定之位置的文件中擷取的文字。  
@@ -28,7 +25,7 @@ ms.locfileid: "49905502"
 ## <a name="syntax"></a>語法  
   
 ```cpp  
-HRESULT GetText(   
+HRESULT GetText(   
    TEXT_POSITION pos,  
    ULONG         cMaxChars,  
    WCHAR*        pText,  
@@ -37,7 +34,7 @@ HRESULT GetText(
 ```  
   
 ```csharp  
-int GetText(   
+int GetText(   
    eumn_TEXT_POSITION pos,  
    uint               cMaxChars,  
    IntPtr             pText,  

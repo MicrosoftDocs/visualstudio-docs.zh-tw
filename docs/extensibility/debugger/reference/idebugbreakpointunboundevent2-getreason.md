@@ -1,9 +1,6 @@
 ---
 title: IDebugBreakpointUnboundEvent2::GetReason |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugBreakpointUnboundEvent2::GetReason
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c6b2dfa661b6dc21b50dec33afc736e0cc3be90a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c8184e8779cae236233d8b8b5288c955771181ba
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49926315"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53923068"
 ---
 # <a name="idebugbreakpointunboundevent2getreason"></a>IDebugBreakpointUnboundEvent2::GetReason
 取得中斷點已繫結的原因。  
@@ -28,13 +25,13 @@ ms.locfileid: "49926315"
 ## <a name="syntax"></a>語法  
   
 ```cpp  
-HRESULT GetReason(   
+HRESULT GetReason(   
    BP_UNBOUND_REASON* pdwUnboundReason  
 );  
 ```  
   
 ```csharp  
-int GetReason(   
+int GetReason(   
    out enum_ BP_UNBOUND_REASON pdwUnboundReason  
 );  
 ```  

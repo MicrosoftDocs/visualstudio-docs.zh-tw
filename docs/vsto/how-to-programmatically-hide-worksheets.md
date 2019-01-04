@@ -1,9 +1,6 @@
 ---
-title: 如何： 以程式設計方式隱藏工作表
-ms.custom: ''
+title: HOW TO：以程式設計方式隱藏工作表
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a60a0189af5608496e1f0f415a2d668e896af8e3
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: c8e03ce17e41c81a6d3cfda4f66d1ecee1946fa3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35671686"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53821444"
 ---
-# <a name="how-to-programmatically-hide-worksheets"></a>如何： 以程式設計方式隱藏工作表
+# <a name="how-to-programmatically-hide-worksheets"></a>HOW TO：以程式設計方式隱藏工作表
   您可以顯示或隱藏活頁簿中的任何工作表。 若要隱藏工作表，請使用工作表主項目，或使用活頁簿的工作表集合存取工作表。  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
@@ -54,9 +51,8 @@ ms.locfileid: "35671686"
   
 ## <a name="see-also"></a>另請參閱  
  [使用工作表](../vsto/working-with-worksheets.md)   
- [如何： 以程式設計方式從活頁簿中刪除工作表](../vsto/how-to-programmatically-delete-worksheets-from-workbooks.md)   
- [如何： 以程式設計方式移動工作表在活頁簿內](../vsto/how-to-programmatically-move-worksheets-within-workbooks.md)   
- [如何： 以程式設計方式保護工作表](../vsto/how-to-programmatically-protect-worksheets.md)   
+ [如何：以程式設計方式從活頁簿中刪除工作表](../vsto/how-to-programmatically-delete-worksheets-from-workbooks.md)   
+ [如何：以程式設計方式移動工作表在活頁簿內](../vsto/how-to-programmatically-move-worksheets-within-workbooks.md)   
+ [如何：以程式設計方式保護工作表](../vsto/how-to-programmatically-protect-worksheets.md)   
  [主項目和主控制項概觀](../vsto/host-items-and-host-controls-overview.md)   
  [全域存取 Office 專案中的物件](../vsto/global-access-to-objects-in-office-projects.md)  
-  

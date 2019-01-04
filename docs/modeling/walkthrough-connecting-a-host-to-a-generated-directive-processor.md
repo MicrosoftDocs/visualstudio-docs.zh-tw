@@ -11,25 +11,24 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 5b5346f47d3dcb836a0e8eeef7d9b21bd55ccd07
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3340c9e820103cc286915fe50f105d202eb8c8f8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49896233"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53988789"
 ---
 # <a name="walkthrough-connect-a-host-to-a-generated-directive-processor"></a>逐步解說：將主機連線至產生的指示詞處理器
 
-您可以撰寫自己的主機處理文字範本。 基本的自訂主應用程式所示[逐步解說： 建立自訂的文字範本主機](../modeling/walkthrough-creating-a-custom-text-template-host.md)。 您可以擴充該主應用程式加入功能，例如產生多個輸出檔案。
+您可以撰寫自己的主機處理文字範本。 基本的自訂主應用程式所示[逐步解說：建立自訂文字範本主機](../modeling/walkthrough-creating-a-custom-text-template-host.md)。 您可以擴充該主應用程式加入功能，例如產生多個輸出檔案。
 
 在本逐步解說中，您會擴充自訂主機，以支援呼叫指示詞處理器的文字範本。 當您定義特定領域語言時，它會產生*指示詞處理器*的領域模型。 指示詞處理器，可讓使用者更輕鬆地撰寫存取模型，並減少撰寫組件並匯入的範本中的指示詞的範本。
 
 > [!NOTE]
-> 本逐步解說是根據[逐步解說： 建立自訂文字範本主機](../modeling/walkthrough-creating-a-custom-text-template-host.md)。 第一次執行該逐步解說。
+> 本逐步解說是根據[逐步解說：建立自訂文字範本主機](../modeling/walkthrough-creating-a-custom-text-template-host.md)。 第一次執行該逐步解說。
 
 本逐步解說包含下列工作：
 
@@ -52,7 +51,7 @@ ms.locfileid: "49896233"
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
-此外，您必須擁有在中建立自訂文字範本轉換[逐步解說： 建立自訂的文字範本主機](../modeling/walkthrough-creating-a-custom-text-template-host.md)。
+此外，您必須擁有在中建立自訂文字範本轉換[逐步解說：建立自訂文字範本主機](../modeling/walkthrough-creating-a-custom-text-template-host.md)。
 
 ## <a name="use-domain-specific-language-tools-to-generate-a-directive-processor"></a>使用特定領域語言工具來產生指示詞處理器
 
@@ -60,15 +59,15 @@ ms.locfileid: "49896233"
 
 1. 建立特定領域語言解決方案，具有下列特性：
 
-   -   名稱： DSLMinimalTest
+   -   名稱：DSLMinimalTest
 
-   -   解決方案範本： 最小語言
+   -   解決方案範本：最小語言
 
    -   副檔名： 最小值
 
-   -   公司名稱： Fabrikam
+   -   公司名稱：Fabrikam
 
-   如需建立特定領域語言解決方案的詳細資訊，請參閱[如何： 建立特定領域語言方案](../modeling/how-to-create-a-domain-specific-language-solution.md)。
+   如需建立特定領域語言解決方案的詳細資訊，請參閱[How to:建立特定領域語言解決方案](../modeling/how-to-create-a-domain-specific-language-solution.md)。
 
 2. 在 [ **建置** ] 功能表上，按一下 [ **建置方案**]。
 
@@ -89,7 +88,7 @@ ms.locfileid: "49896233"
 
 ## <a name="connect-a-custom-text-template-host-to-a-directive-processor"></a>連線至指示詞處理器的自訂文字範本主機
 
-產生指示詞處理器之後，連線指示詞處理器和您在建立自訂文字範本主機[逐步解說： 建立自訂的文字範本主機](../modeling/walkthrough-creating-a-custom-text-template-host.md)。
+產生指示詞處理器之後，連線指示詞處理器和您在建立自訂文字範本主機[逐步解說：建立自訂文字範本主機](../modeling/walkthrough-creating-a-custom-text-template-host.md)。
 
 1.  開啟 CustomHost 方案。
 
@@ -231,7 +230,7 @@ ms.locfileid: "49896233"
             }
     ```
 
-7.  按一下 [ **檔案** ] 功能表上的 [ **全部儲存**]。
+7.  在 [檔案] 功能表上按一下 [全部儲存]。
 
 8.  在 [ **建置** ] 功能表上，按一下 [ **建置方案**]。
 

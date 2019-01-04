@@ -1,9 +1,6 @@
 ---
 title: 建立 SharePoint 頁面 |Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -20,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ecdbde69735f548b7ab70da132e9e2cc2080bbcb
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 71f0a75678c0123853f128f42bfdbf1c75ac0c74
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36326046"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53859811"
 ---
 # <a name="create-pages-for-sharepoint"></a>建立 SharePoint 頁面
   您可以建立應用程式頁面、 網頁、 主版頁面和頁面配置的 SharePoint 網站。  
@@ -44,7 +41,7 @@ ms.locfileid: "36326046"
 |主版頁面|建立主版頁面，如果您想要定義網頁的通用結構和應用程式頁面。|  
 |頁面配置|頁面版面配置特有[!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)]並可讓您進一步定義網頁和應用程式頁面的一般結構。|  
   
- 如需每種頁面的概觀，請參閱[建置組塊： 頁面和使用者介面](http://go.microsoft.com/fwlink/?LinkID=182095)，並[版面配置和主版頁面](http://go.microsoft.com/fwlink/?LinkID=182096)。  
+ 如需每種頁面的概觀，請參閱[建置組塊：頁面和使用者介面](http://go.microsoft.com/fwlink/?LinkID=182095)，並[頁面上的版面配置和主版頁面](http://go.microsoft.com/fwlink/?LinkID=182096)。  
   
 ## <a name="create-application-pages"></a>建立應用程式頁面
  您可以在 Visual Studio 中建立應用程式頁面，藉由新增**應用程式頁面**至 SharePoint 專案項目。 您可以將控制項加入至頁面上，並加入程式碼，以處理控制項事件。  
@@ -61,13 +58,12 @@ ms.locfileid: "36326046"
   
  您可以直接將這些檔案新增到您的解決方案，或者您可以匯入它們。 在任一情況下，您必須建立每個項目加入適當的對應的資料夾。 如需如何建立對應的資料夾的詳細資訊，請參閱[如何： 新增與移除對應的資料夾](../sharepoint/how-to-add-and-remove-mapped-folders.md)。  
   
- 如需建立階層式樣式表的詳細資訊，請參閱 <<c0> [ 在 SharePoint Foundation 中階層式樣式表類別使用量](http://go.microsoft.com/fwlink/?LinkID=182098)。 如需建立 SharePoint 方案的 JavaScript 和 JScript 檔案的詳細資訊，請參閱[設定註冊的基本 ASPX 頁面的 ECMAScript](http://go.microsoft.com/fwlink/?LinkID=182099)。 如需佈景主題的詳細資訊，請參閱[建置組塊： 頁面和使用者介面](http://go.microsoft.com/fwlink/?LinkID=182095)。  
+ 如需建立階層式樣式表的詳細資訊，請參閱 <<c0> [ 在 SharePoint Foundation 中階層式樣式表類別使用量](http://go.microsoft.com/fwlink/?LinkID=182098)。 如需建立 SharePoint 方案的 JavaScript 和 JScript 檔案的詳細資訊，請參閱[設定註冊的基本 ASPX 頁面的 ECMAScript](http://go.microsoft.com/fwlink/?LinkID=182099)。 如需佈景主題的詳細資訊，請參閱[建置組塊：頁面和使用者介面](http://go.microsoft.com/fwlink/?LinkID=182095)。  
   
 ## <a name="related-topics"></a>相關主題
   
 |標題|描述|  
 |-----------|-----------------|  
 |[建立 SharePoint 相關應用程式頁面](../sharepoint/creating-application-pages-for-sharepoint.md)|描述如何新增應用程式頁面： *.aspx*會與 SharePoint 主版頁面合併的內容。|  
-|[如何： 建立應用程式頁面](../sharepoint/how-to-create-an-application-page.md)|說明如何建立 SharePoint 網站執行的 ASP.NET 網頁。|  
-|[逐步解說： 建立 SharePoint 應用程式頁面](../sharepoint/walkthrough-creating-a-sharepoint-application-page.md)|說明如何設計和偵錯 ASP.NET 網頁中的 SharePoint 網站。|  
-  
+|[如何：建立應用程式頁面](../sharepoint/how-to-create-an-application-page.md)|說明如何建立 SharePoint 網站執行的 ASP.NET 網頁。|  
+|[逐步解說：建立 SharePoint 應用程式頁面](../sharepoint/walkthrough-creating-a-sharepoint-application-page.md)|說明如何設計和偵錯 ASP.NET 網頁中的 SharePoint 網站。|  

@@ -2,7 +2,6 @@
 title: 編輯 XSLT 樣式表
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: conceptual
 ms.assetid: 080bed0f-0ca9-4be7-aecd-6bdaebc04007
 author: gewarren
@@ -10,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 72f224e91f72d2fa751ddc8b170f78b8859c43f4
-ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
+ms.openlocfilehash: d98fbf2a1041260370946a059599a601f57c482c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/25/2018
-ms.locfileid: "34548446"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53867403"
 ---
 # <a name="edit-xslt-style-sheets"></a>編輯 XSLT 樣式表
 
@@ -26,7 +25,7 @@ XML 編輯器還可用於編輯 XSLT 樣式表。 您可利用預設的編輯器
 
  **語法著色**
 
- XSLT 關鍵字，例如`template`， `match`，依此類推，會顯示在指定的 XSLT 關鍵字色彩**字型和色彩**設定。
+ XSLT 關鍵字，例如`template`， `match`，依此類推，會顯示在所指定的 XSLT 關鍵字色彩**字型和色彩**設定。
 
  **波浪底線**
 
@@ -38,11 +37,11 @@ XML 編輯器還可用於編輯 XSLT 樣式表。 您可利用預設的編輯器
 
  **檢視 XSLT 輸出**
 
- 您可以執行 XSL 轉換，並檢閱 XML 編輯器的輸出。 如需詳細資訊，請參閱[How to： 從 XML 編輯器執行 XSLT 轉換](../xml-tools/how-to-execute-an-xslt-transformation-from-the-xml-editor.md)。
+ 您可以執行 XSL 轉換，並檢閱 XML 編輯器的輸出。 如需詳細資訊，請參閱[＜How to：從 XML 編輯器執行 XSLT 轉換](../xml-tools/how-to-execute-an-xslt-transformation-from-the-xml-editor.md)。
 
  **偵錯 XSLT**
 
- 您可以從 XML 編輯器中的 XSLT 檔案，啟動 XSLT 偵錯工具。 偵錯工具支援在 XSLT 檔案中設定中斷點、檢視 XSLT 執行狀態等。 停留在 XSLT 變數上，即會出現具有變數值的工具提示。 偵錯工具可用於偵錯樣式表，或偵錯從另一個應用程式叫用的已編譯 XSL 轉換。 如需詳細資訊，請參閱[偵錯 XSLT](../xml-tools/debugging-xslt.md)。
+ 您可以從 XML 編輯器中的 XSLT 檔案，啟動 XSLT 偵錯工具。 偵錯工具支援在 XSLT 檔案中設定中斷點、檢視 XSLT 執行狀態等。 停留在 XSLT 變數上，即會出現具有變數值的工具提示。 偵錯工具可用於偵錯樣式表，或偵錯從另一個應用程式叫用的已編譯 XSL 轉換。 如需詳細資訊，請參閱 <<c0> [ 偵錯 XSLT](../xml-tools/debugging-xslt.md)。
 
 ## <a name="see-also"></a>另請參閱
 

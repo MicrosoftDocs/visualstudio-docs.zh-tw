@@ -1,6 +1,5 @@
 ---
 title: SupportsCodeSeparation 項目 （Visual Studio 範本） |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -15,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e669cf01f7becde7fa95af602ce4518bbaf6957e
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.openlocfilehash: daf9747ac8918166f08aa087640160805d850629
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53561373"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53959822"
 ---
 # <a name="supportscodeseparation-element-visual-studio-templates"></a>SupportsCodeSeparation 項目 (Visual Studio 範本)
 指定是否**程式碼置於個別的檔案**中已啟用 核取方塊**加入新項目** 對話方塊。  

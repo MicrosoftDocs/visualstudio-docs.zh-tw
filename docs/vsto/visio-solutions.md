@@ -1,9 +1,6 @@
 ---
 title: Visio 方案
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -20,19 +17,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c7fc3f699cd33f2bb45487ca1329d812cfbeb950
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: ce1de2fae3fe9b5543a779bb3cad95ef8e8b38e1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50671543"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53885005"
 ---
 # <a name="visio-solutions"></a>Visio 方案
   Visual Studio 提供的專案範本可用來建立 Microsoft Office Visio 的 VSTO 增益集。 您可以使用 VSTO 增益集來自動化 Visio、擴充 Visio 功能，或自訂 Visio 的使用者介面 (UI)。  
   
  如需 VSTO 增益集的詳細資訊，請參閱[開始 programming VSTO add-ins](../vsto/getting-started-programming-vsto-add-ins.md)並[Architecture of VSTO 增益集](../vsto/architecture-of-vsto-add-ins.md)。如果您是使用 Microsoft Office 程式設計的新手，請參閱[開始&#40;Visual Studio 中的 Office 程式開發&#41;](../vsto/getting-started-office-development-in-visual-studio.md)。  
   
- **適用對象：** 本主題資訊適用於 Visio 2010 的 VSTO 增益集專案。 如需詳細資訊，請參閱[依 Office 應用程式和專案類型提供的功能](../vsto/features-available-by-office-application-and-project-type.md)。  
+ **適用於：** 本主題中的資訊適用於 Visio 2010 的 VSTO 增益集專案。 如需詳細資訊，請參閱[依 Office 應用程式和專案類型提供的功能](../vsto/features-available-by-office-application-and-project-type.md)。  
   
 > [!NOTE]  
 >  想要開發解決方案，擴充的 Office 體驗，跨[多個平台](https://dev.office.com/add-in-availability)嗎？ 查看新[Office 增益集模型](https://dev.office.com/docs/add-ins/overview/office-add-ins)。 Office 增益集較小的使用量，相較於 VSTO 增益集和解決方案，而且您可以使用幾乎任何 web 程式設計技術，例如 HTML5、 JavaScript、 CSS3、 以及 XML 來建置。  
@@ -72,11 +69,10 @@ ms.locfileid: "50671543"
  [開始進行程式設計 VSTO 增益集](../vsto/getting-started-programming-vsto-add-ins.md)   
  [Office 方案開發概觀&#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)   
  [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md)   
- [如何： 在 Visual Studio 中建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)   
+ [如何：在 Visual Studio 中建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)   
  [程式 VSTO 增益集](../vsto/programming-vsto-add-ins.md)   
  [在 Office 方案中撰寫程式碼](../vsto/writing-code-in-office-solutions.md)   
  [Office 主要 interop 組件](../vsto/office-primary-interop-assemblies.md)   
  [Office UI 自訂](../vsto/office-ui-customization.md)   
  [Visio 物件模型概觀](../vsto/visio-object-model-overview.md)   
  [Visio 2010 中的 Office 程式開發](http://go.microsoft.com/fwlink/?LinkId=199017)  
-  

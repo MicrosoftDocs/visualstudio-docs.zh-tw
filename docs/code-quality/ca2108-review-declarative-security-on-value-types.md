@@ -1,8 +1,7 @@
 ---
-title: CA2108：必須檢查實值類型上的宣告式安全性
+title: CA2108:必須檢閱實值類型上的宣告式安全性
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - ReviewDeclarativeSecurityOnValueTypes
@@ -16,20 +15,20 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e2d76a0ecf6a2eeac677475eb25efe495129c213
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: c62704a99e5952c313c4ba11a71fd234070d6df8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45548513"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53882230"
 ---
-# <a name="ca2108-review-declarative-security-on-value-types"></a>CA2108：必須檢查實值類型上的宣告式安全性
+# <a name="ca2108-review-declarative-security-on-value-types"></a>CA2108:必須檢閱實值類型上的宣告式安全性
 
 |||
 |-|-|
 |TypeName|ReviewDeclarativeSecurityOnValueTypes|
 |CheckId|CA2108|
-|類別|Microsoft.Security|
+|分類|Microsoft.Security|
 |中斷變更|非中斷|
 
 ## <a name="cause"></a>原因

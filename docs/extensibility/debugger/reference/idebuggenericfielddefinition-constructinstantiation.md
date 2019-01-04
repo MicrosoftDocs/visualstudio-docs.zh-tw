@@ -1,9 +1,6 @@
 ---
 title: IDebugGenericFieldDefinition::ConstructInstantiation |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - ConstructInstantiation
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: cc2c710e7fbd9a6fef3283f6dc5790707c65d30a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6f72e251f66c196ec36eb68f5a228536658ab89d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49933049"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53823939"
 ---
 # <a name="idebuggenericfielddefinitionconstructinstantiation"></a>IDebugGenericFieldDefinition::ConstructInstantiation
 建構指定型別引數陣列的欄位執行個體。  

@@ -1,9 +1,6 @@
 ---
 title: m_stateFlags 欄位 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - m_stateFlags field, Task class [.NET Framework debug engines]
@@ -13,17 +10,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ee0cdebe00acce67fc9032a4ba9e7e566ecd9786
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: e679594ec72db15c41ab27638d8886ad2d751760
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39232074"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53839079"
 ---
 # <a name="mstateflags-field"></a>m_stateFlags 欄位
 儲存的目前狀態的相關資訊<xref:System.Threading.Tasks.Task>物件。  
   
- **命名空間：** <xref:System.Threading.Tasks?displayProperty=fullName>  
+ **命名空間︰** <xref:System.Threading.Tasks?displayProperty=fullName>  
   
  **組件：** mscorlib (在*mscorlib.dll*)  
   
@@ -51,4 +48,4 @@ ms.locfileid: "39232074"
 -   [TASK_STATE_RAN_TO_COMPLETION](../../extensibility/debugger/task-state-ran-to-completion-field.md)  
   
 ## <a name="see-also"></a>另請參閱  
- [Task 類別](../../extensibility/debugger/task-class-internal-members.md)
+ [工作類別](../../extensibility/debugger/task-class-internal-members.md)

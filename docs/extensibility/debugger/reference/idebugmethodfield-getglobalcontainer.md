@@ -1,9 +1,6 @@
 ---
 title: IDebugMethodField::GetGlobalContainer |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugMethodField::GetGlobalContainer
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: dc7ead16cf796d5ecdd98adfd98bc28b6b2d9fbb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c95e6d6f23a0a7be418d3f9fa0710e45d23f3e12
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49947873"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53905977"
 ---
 # <a name="idebugmethodfieldgetglobalcontainer"></a>IDebugMethodField::GetGlobalContainer
 取得方法的通用的容器。  

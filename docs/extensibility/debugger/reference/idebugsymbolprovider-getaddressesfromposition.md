@@ -1,9 +1,6 @@
 ---
 title: IDebugSymbolProvider::GetAddressesFromPosition |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugSymbolProvider::GetAddressesFromPosition
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 42d82f444e861fe9eaf3b377828c2cce511c3adb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 44da9f9b7585e7523a244f84e8407aa4148bef2f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49838942"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53898917"
 ---
 # <a name="idebugsymbolprovidergetaddressesfromposition"></a>IDebugSymbolProvider::GetAddressesFromPosition
 這個方法會對應到陣列的文件位置的偵錯位址。  
@@ -28,7 +25,7 @@ ms.locfileid: "49838942"
 ## <a name="syntax"></a>語法  
   
 ```cpp  
-HRESULT GetAddressesFromPosition(   
+HRESULT GetAddressesFromPosition(   
    IDebugDocumentPosition2* pDocPos,  
    BOOL                     fStatmentOnly,  
    IEnumDebugAddresses**    ppEnumBegAddresses,  
@@ -37,7 +34,7 @@ HRESULT GetAddressesFromPosition(
 ```  
   
 ```csharp  
-int GetAddressesFromPosition(   
+int GetAddressesFromPosition(   
    IDebugDocumentPosition2  pDocPos,  
    bool                     fStatmentOnly,  
    out IEnumDebugAddresses  ppEnumBegAddresses,  

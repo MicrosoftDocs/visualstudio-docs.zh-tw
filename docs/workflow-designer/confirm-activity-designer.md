@@ -3,7 +3,6 @@ title: 工作流程設計工具-Confirm 活動設計工具
 ms.date: 11/04/2016
 ms.topic: reference
 ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Activities.Statements.Confirm.UI
 ms.assetid: c753b67b-b0e7-462a-bb4e-ba8db04a078d
@@ -12,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f6823b564b7ec3da1585810c27db2f97c1b16ae
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 34f59bc8ad3040c6077d5feeb4f725f367b8dcdc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49906529"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53956454"
 ---
 # <a name="confirm-activity-designer"></a>Confirm 活動設計工具
 

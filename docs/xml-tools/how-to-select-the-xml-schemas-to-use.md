@@ -2,7 +2,6 @@
 title: HOW TO：選取要使用的 XML 結構描述
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: conceptual
 ms.assetid: d6fda3ef-d465-4788-8514-2f2d528d658c
 author: gewarren
@@ -10,14 +9,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a04075c0625eb7b4dc899a4e183588b96eb7eadd
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d49181e598c8ac6c268d1efcece43bd574003f39
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49872235"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53824388"
 ---
-# <a name="how-to-select-the-xml-schemas-to-use"></a>如何： 選取要使用的 XML 結構描述
+# <a name="how-to-select-the-xml-schemas-to-use"></a>HOW TO：選取要使用的 XML 結構描述
 
 XML 編輯器提供位於結構描述快取 *%InstallDir%\Xml\Schemas*目錄。 結構描述快取包括用於 IntelliSense 及 XML 文件驗證的常見 XML 結構描述。
 
@@ -58,7 +57,7 @@ XML 編輯器提供位於結構描述快取 *%InstallDir%\Xml\Schemas*目錄。 
 
 3.  瀏覽並選取要加入到結構描述快取中的結構描述。
 
-4.  按一下 **開啟**。
+4.  按一下 [開啟]。
 
      結構描述會加入至結構描述快取，而且**使用**資料行值設定為**使用這個結構描述**。
 

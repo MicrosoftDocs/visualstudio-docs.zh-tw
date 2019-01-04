@@ -1,9 +1,6 @@
 ---
 title: VSIX 資訊清單設計工具 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - VS.Sdk.VsixManifestEditor
@@ -17,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 93780f0d8c85eaa2736759f3765c34edfb7c9998
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 54ad66452151142b3ad18a97591a5cf774896a14
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49853866"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53852345"
 ---
 # <a name="vsix-manifest-designer"></a>VSIX 資訊清單設計工具
 修改 VSIX 封裝資訊清單檔，它會設定 Visual Studio 擴充功能的安裝行為。  

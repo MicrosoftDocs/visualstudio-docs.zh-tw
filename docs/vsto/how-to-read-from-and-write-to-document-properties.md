@@ -1,9 +1,6 @@
 ---
-title: 如何： 讀取和寫入文件屬性
-ms.custom: ''
+title: HOW TO：讀取和寫入文件屬性
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,17 +15,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: de9ae85156f9d272901893c74c5d2c9729a0a3dd
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 43c74a206ecbe544a6ccb32448104e17a48aaee6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49924222"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53825418"
 ---
-# <a name="how-to-read-from-and-write-to-document-properties"></a>如何： 讀取和寫入文件屬性
+# <a name="how-to-read-from-and-write-to-document-properties"></a>HOW TO：讀取和寫入文件屬性
   文件屬性可與文件一起儲存。 Office 應用程式提供許多內建屬性，例如作者、標題和主旨。 本主題說明如何設定 Microsoft Office Excel 和 Microsoft Office Word 的文件屬性。  
   
- ![影片連結](../vsto/media/playvideo.gif "影片連結")如需相關的影片示範，請參閱[如何： 存取和操作 Microsoft Word 中的自訂文件屬性？](http://go.microsoft.com/fwlink/?LinkId=136772)。  
+ ![影片連結](../vsto/media/playvideo.gif "影片連結")如需相關的影片示範，請參閱[How do i:存取和操作 Microsoft Word 中的自訂文件屬性？](http://go.microsoft.com/fwlink/?LinkId=136772).  
   
  [!INCLUDE[appliesto_docprops](../vsto/includes/appliesto-docprops-md.md)]  
   
@@ -86,6 +83,4 @@ ms.locfileid: "49924222"
 ## <a name="see-also"></a>另請參閱  
  [程式 VSTO 增益集](../vsto/programming-vsto-add-ins.md)   
  [程式文件層級自訂](../vsto/programming-document-level-customizations.md)   
- [如何： 建立和修改自訂文件屬性](../vsto/how-to-create-and-modify-custom-document-properties.md)  
-  
-  
+ [如何：建立和修改自訂文件屬性](../vsto/how-to-create-and-modify-custom-document-properties.md)  

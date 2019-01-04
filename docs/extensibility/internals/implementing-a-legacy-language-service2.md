@@ -1,9 +1,6 @@
 ---
 title: 實作舊版語言服務 2 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - language services [managed package framework], implementing
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: dccbac140aefb952eed97006cbcae6a61f94ac92
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d8158a8eaf4b0ee85858cc81e93fbb7e4fa0b9f8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49855413"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53893769"
 ---
 # <a name="implementing-a-legacy-language-service"></a>實作舊版語言服務
 若要實作使用 managed 的 package framework (MPF) 的語言服務，您必須衍生的類別<xref:Microsoft.VisualStudio.Package.LanguageService>類別並實作下列的抽象方法和屬性：  

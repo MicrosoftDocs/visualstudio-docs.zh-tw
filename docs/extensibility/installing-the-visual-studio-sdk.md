@@ -1,8 +1,6 @@
 ---
 title: 安裝 Visual Studio SDK |Microsoft Docs
-ms.custom: ''
 ms.date: 07/12/2018
-ms.technology: vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: c730edb6-5099-4c16-85a8-08def09f1455
 author: gregvanl
@@ -10,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8dceab38f543c58997092559bf9a840806e9b013
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 33ab695ca8165de97d1be9813ea9ab11449a1527
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498583"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53836266"
 ---
 # <a name="install-the-visual-studio-sdk"></a>安裝 Visual Studio IDE
 
@@ -37,6 +35,6 @@ Visual Studio SDK （軟體開發套件） 是 Visual Studio 安裝程式的選�
   
 ## <a name="install-the-visual-studio-sdk-from-the-command-line"></a>從命令列安裝 Visual Studio SDK
 
-如有任何 Visual Studio 工作負載或元件，您也可以安裝**Visual Studio 延伸模組開發**工作負載 (識別碼： Microsoft.VisualStudio.Workload.VisualStudioExtension) 從命令列。 請參閱[使用命令列參數安裝 Visual Studio](../install/use-command-line-parameters-to-install-visual-studio.md)如需有關適當的命令列參數和判斷工作負載或元件識別碼的一般指示。
+如有任何 Visual Studio 工作負載或元件，您也可以安裝**Visual Studio 延伸模組開發**工作負載 (識別碼：Microsoft.VisualStudio.Workload.VisualStudioExtension) 從命令列。 請參閱[使用命令列參數安裝 Visual Studio](../install/use-command-line-parameters-to-install-visual-studio.md)如需有關適當的命令列參數和判斷工作負載或元件識別碼的一般指示。
   
 請注意，您必須使用符合您已安裝 Visual Studio 版本的 Visual Studio 安裝程式。 例如，如果您有在電腦上安裝的 Visual Studio Enterprise，您必須執行 Visual Studio Enterprise 安裝程式 (*vs_enterprise.exe*)。

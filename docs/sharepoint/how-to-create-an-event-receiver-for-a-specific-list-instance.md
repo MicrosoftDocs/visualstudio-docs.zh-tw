@@ -1,9 +1,6 @@
 ---
-title: 如何： 建立事件接收器的特定清單執行個體 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：建立事件接收器的特定清單執行個體 |Microsoft Docs
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 950eeec82d7b7c49f0bbd76b13114f80f023a6dd
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: a92b86d7e02487ff333fb8517086f9c6221d35ec
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118628"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53818858"
 ---
-# <a name="how-to-create-an-event-receiver-for-a-specific-list-instance"></a>如何： 建立事件接收器的特定清單執行個體
+# <a name="how-to-create-an-event-receiver-for-a-specific-list-instance"></a>HOW TO：建立事件接收器的特定清單執行個體
   清單定義的任何執行個體中發生的事件回應的清單執行個體事件接收器。 雖然事件接收者範本不會啟用特定的清單執行個體的目標，您可以修改事件接收器來回應特定的清單執行個體中的事件清單定義範圍內。  
   
  中要鎖定特定的清單執行個體*Elements.xml*的事件接收器中，取代`ListTemplateId`使用`ListUrl`及新增清單執行個體的 URL。  
@@ -89,6 +86,5 @@ ms.locfileid: "37118628"
      請注意，事件接收器將不會在新的公告因為接收者已設定為只回應中的自訂的公告清單執行個體中，事件才會觸發**TestAnnouncements**。  
   
 ## <a name="see-also"></a>另請參閱
- [如何： 建立事件接收器](../sharepoint/how-to-create-an-event-receiver.md)   
+ [如何：建立事件接收器](../sharepoint/how-to-create-an-event-receiver.md)   
  [開發 SharePoint 方案](../sharepoint/developing-sharepoint-solutions.md)  
-  

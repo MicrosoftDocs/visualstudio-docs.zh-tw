@@ -2,7 +2,6 @@
 title: 內建函式
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 f1_keywords:
 - _String_length_
@@ -17,12 +16,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: 757db51093dcd7e300831287b5da42cd05430e28
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: 7781a1ac48945b2c272d5234ac7f4dcbd923b309
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53804496"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53944518"
 ---
 # <a name="intrinsic-functions"></a>內建函式
 SAL 中的運算式可以是 C/C++ 運算式 (假設該運算式沒有副作用的話)，例如 ++、-- 和函式呼叫在這個內容中全都有副作用。  不過，SAL 提供一些類似的函式物件和一些可以用於 SAL 運算式的保留的符號。 這些指*內建函式*。

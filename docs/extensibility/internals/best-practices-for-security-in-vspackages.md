@@ -1,9 +1,6 @@
 ---
 title: 在 Vspackage 中安全性的最佳作法 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - security [Visual Studio SDK]
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 629e7076335ee3cd9e2260d6242f586579bd8e0d
-ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
+ms.openlocfilehash: 93ff8f6cd9423212a64404b55b38751d095b260f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46370691"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53913382"
 ---
 # <a name="best-practices-for-security-in-vspackages"></a>在 Vspackage 中安全性的最佳做法
 若要安裝[!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]您在電腦上，您必須執行系統管理認證的內容中。 安全性和部署的基本單位[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]應用程式[VSPackage](../../extensibility/internals/vspackages.md)。 必須使用註冊 VSPackage [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]，也需要系統管理認證。  

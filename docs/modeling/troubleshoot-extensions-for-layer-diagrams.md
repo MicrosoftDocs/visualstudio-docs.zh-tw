@@ -11,13 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 8acde589ebf47d4a67609e847a84bd7c7acd8482
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d2a47bfd3b5ca927e64645f97f2923300e33d691
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49899639"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53926913"
 ---
 # <a name="troubleshoot-extensions-for-dependency-diagrams"></a>針對相依性圖表延伸模組進行疑難排解
 

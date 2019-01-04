@@ -1,9 +1,6 @@
 ---
-title: 如何： 以程式設計方式在 Word 中設定搜尋選項
-ms.custom: ''
+title: HOW TO：以程式設計方式在 Word 中設定搜尋選項
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,14 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4e4e6b5471f1d36eab677d8a1d0b65ab39b7dba4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ec5b2f797371d19fea1b4fedc2064ab355ffac10
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49853944"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53853381"
 ---
-# <a name="how-to-programmatically-set-search-options-in-word"></a>如何： 以程式設計方式在 Word 中設定搜尋選項
+# <a name="how-to-programmatically-set-search-options-in-word"></a>HOW TO：以程式設計方式在 Word 中設定搜尋選項
   有兩種方式可在 Microsoft Office Word 文件中設定搜尋選項的選取項目：  
   
 - 設定個別屬性<xref:Microsoft.Office.Interop.Word.Find>物件。  
@@ -56,8 +53,6 @@ ms.locfileid: "49853944"
      [!code-csharp[Trin_VstcoreWordAutomation#77](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#77)]  
   
 ## <a name="see-also"></a>另請參閱  
- [如何： 以程式設計方式搜尋和取代文件中的文字](../vsto/how-to-programmatically-search-for-and-replace-text-in-documents.md)   
- [如何： 以程式設計方式在文件中找到項目執行迴圈](../vsto/how-to-programmatically-loop-through-found-items-in-documents.md)   
- [如何： 以程式設計方式在搜尋後還原選取範圍](../vsto/how-to-programmatically-restore-selections-after-searches.md)  
-  
-  
+ [如何：以程式設計方式搜尋和取代文件中的文字](../vsto/how-to-programmatically-search-for-and-replace-text-in-documents.md)   
+ [如何：以程式設計方式在文件中找到項目執行迴圈](../vsto/how-to-programmatically-loop-through-found-items-in-documents.md)   
+ [如何：以程式設計方式在搜尋後還原選取範圍](../vsto/how-to-programmatically-restore-selections-after-searches.md)  

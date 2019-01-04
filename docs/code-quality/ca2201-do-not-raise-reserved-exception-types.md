@@ -1,8 +1,7 @@
 ---
-title: CA2201：不要引發保留的例外狀況類型
+title: CA2201:不要引發保留的例外狀況類型
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - DoNotRaiseReservedExceptionTypes
@@ -16,20 +15,20 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 763c8656507f8a1d9c1f59bd548469c338aeb012
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 9b8eff3ac514e82e16327bfb873ed5fa2e9ccfba
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45547511"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53911935"
 ---
-# <a name="ca2201-do-not-raise-reserved-exception-types"></a>CA2201：不要引發保留的例外狀況類型
+# <a name="ca2201-do-not-raise-reserved-exception-types"></a>CA2201:不要引發保留的例外狀況類型
 
 |||
 |-|-|
 |TypeName|DoNotRaiseReservedExceptionTypes|
 |CheckId|CA2201|
-|類別|Microsoft.Usage|
+|分類|Microsoft.Usage|
 |中斷變更|中斷|
 
 ## <a name="cause"></a>原因
@@ -66,7 +65,7 @@ ms.locfileid: "45547511"
 
 下表顯示參數和驗證的參數，包括實值參數之屬性的 set 存取子時所擲回的例外狀況：
 
-|參數描述|例外狀況|
+|參數描述|例外|
 |---------------------------|---------------|
 |`null` 參考|<xref:System.ArgumentNullException?displayProperty=fullName>|
 |允許範圍之外的值 （例如集合或清單的索引）|<xref:System.ArgumentOutOfRangeException?displayProperty=fullName>|
@@ -94,4 +93,4 @@ ms.locfileid: "45547511"
 
 ## <a name="related-rules"></a>相關的規則
 
-- [CA1031：不要攔截一般例外狀況類型](../code-quality/ca1031-do-not-catch-general-exception-types.md)
+- [CA1031:不要攔截一般例外狀況類型](../code-quality/ca1031-do-not-catch-general-exception-types.md)

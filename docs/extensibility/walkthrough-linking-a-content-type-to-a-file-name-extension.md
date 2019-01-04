@@ -1,9 +1,6 @@
 ---
-title: 逐步解說： 將內容類型連結至副檔名為 |Microsoft Docs
-ms.custom: ''
+title: 逐步解說：將內容類型連結至副檔名為 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - link content type to file name extension
@@ -13,14 +10,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 54570ec03788f88f58f14249f200ed2028686c37
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 3123624460066a70c35d988a0723c019516502ff
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39566749"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53926183"
 ---
-# <a name="walkthrough-link-a-content-type-to-a-file-name-extension"></a>逐步解說： 將內容類型連結至副檔名
+# <a name="walkthrough-link-a-content-type-to-a-file-name-extension"></a>逐步解說：將內容類型連結至副檔名
 您可以定義您自己的內容類型，並連結到它的副檔名，透過使用編輯器的 Managed Extensibility Framework (MEF) 擴充功能。 在某些情況下，檔案名稱的副檔名已經定義的語言服務。 但是，若要使用它與 MEF，您必須仍將它連結至內容類型。  
   
 ## <a name="prerequisites"></a>必要條件  
@@ -28,13 +25,13 @@ ms.locfileid: "39566749"
   
 ## <a name="create-a-mef-project"></a>建立 MEF 專案  
   
-1.  建立 C# VSIX 專案。 (在**新的專案**對話方塊中，選取**Visual C# / 擴充性**，然後**VSIX 專案**。)將方案命名為`ContentTypeTest`。  
+1.  建立 C# VSIX 專案。 (在**新的專案**對話方塊中，選取**Visual C# / 擴充性**，然後**VSIX 專案**。)將方案命名為 `ContentTypeTest`。  
   
 2.  在  **source.extension.vsixmanifest**檔案中，移至**資產**索引標籤，然後將**型別**欄位設為**Microsoft.VisualStudio.MefComponent**，則**來源**欄位設為**目前方案中的專案**，而**專案**欄位設為專案的名稱。  
   
 ## <a name="define-the-content-type"></a>內容類型定義  
   
-1.  將類別檔案並將它命名`FileAndContentTypes`。  
+1.  加入類別檔案，並將它命名為 `FileAndContentTypes`。  
   
 2.  加入下列組件的參考：  
   
@@ -93,7 +90,7 @@ ms.locfileid: "39566749"
   
 ## <a name="add-the-content-type-to-an-editor-export"></a>將內容類型加入至編輯器匯出  
   
-1.  建立編輯器擴充功能。 例如，您可以使用邊界圖像 （glyph） 擴充功能中所述[逐步解說： 建立邊界字符](../extensibility/walkthrough-creating-a-margin-glyph.md)。  
+1.  建立編輯器擴充功能。 例如，您可以使用邊界圖像 （glyph） 擴充功能中所述[逐步解說：建立邊界字符](../extensibility/walkthrough-creating-a-margin-glyph.md)。  
   
 2.  新增您在此程序中定義的類別。  
   

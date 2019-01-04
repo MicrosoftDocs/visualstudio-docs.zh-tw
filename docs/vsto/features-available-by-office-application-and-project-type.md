@@ -1,9 +1,6 @@
 ---
 title: 依 Office 應用程式和專案類型提供的功能
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -22,12 +19,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c495119dea17fa7d4a848c6e3d6f5b16128af378
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: 679b0456548a675545d81353332ddb70dcce8cdc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53648148"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53986397"
 ---
 # <a name="features-available-by-office-application-and-project-type"></a>依 Office 應用程式和專案類型提供的功能
   Visual Studio 有幾種類型的專案範本，可支援不同的 Microsoft Office 應用程式商務案例，包括下列類型：  
@@ -77,5 +74,3 @@ ms.locfileid: "53648148"
  [主項目和主控制項概觀](../vsto/host-items-and-host-controls-overview.md)   
  [文件層級自訂中的快取的資料](../vsto/cached-data-in-document-level-customizations.md)   
  [部署 Office 方案](../vsto/deploying-an-office-solution.md)  
-  
-  

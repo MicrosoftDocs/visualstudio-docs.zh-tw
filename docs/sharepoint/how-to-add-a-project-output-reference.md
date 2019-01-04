@@ -1,13 +1,8 @@
 ---
-title: 如何： 加入專案輸出參考 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：加入專案輸出參考 |Microsoft Docs
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -19,14 +14,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 47b6a3d164bbe1ddcda6d131275427fb1f815198
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 4e7c93b0c23d14c2b129d165cd3a8d701ace8ea1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36755473"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53897285"
 ---
-# <a name="how-to-add-a-project-output-reference"></a>如何： 加入專案輸出參考
+# <a name="how-to-add-a-project-output-reference"></a>HOW TO：加入專案輸出參考
   若要部署到 SharePoint 的非 SharePoint 專案的組件 （或 Silverlight 專案中的.xap 檔案），請將他們新增為專案輸出參考。  
   
  此程序會建立兩個專案之間的方案組建相依性。 SharePoint 專案是建置和部署之前建置專案輸出參考相關聯的專案。  
@@ -47,7 +42,5 @@ ms.locfileid: "36755473"
   
 ## <a name="see-also"></a>另請參閱
  [提供專案項目中的封裝和部署資訊](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)   
- [如何： 將控制項標記為安全控制項](../sharepoint/how-to-mark-controls-as-safe-controls.md)   
+ [如何：將控制項標記為安全控制項](../sharepoint/how-to-mark-controls-as-safe-controls.md)   
  [封裝和部署 SharePoint 方案](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
-  
-  

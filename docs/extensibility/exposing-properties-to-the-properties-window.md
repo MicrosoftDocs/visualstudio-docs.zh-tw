@@ -1,9 +1,6 @@
 ---
 title: 將屬性公開至 [屬性] 視窗 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - properties [Visual Studio SDK], exposing in Property Browser
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1a37dcac9d75cbd773894b3d708dd4931f77b4ce
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e696e1dc71af4dbcfc408e169c1a6e5ba8984921
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49888407"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53921834"
 ---
 # <a name="expose-properties-to-the-properties-window"></a>公開屬性，以 [屬性] 視窗
 本逐步解說會公開物件的公用屬性**屬性**視窗。 您對這些屬性的變更會反映在**屬性**視窗。  
@@ -114,10 +111,10 @@ ms.locfileid: "49888407"
     ```csharp  
     [Category("My Properties")]  
     [Description("MyToolWindowControl properties")]  
-    public bool IsChecked  
+    public bool IsChecked  
     {  
         get {  
-            if (base.Content == null)  return false;  
+            if (base.Content == null)  return false;  
             return (bool)(( MyToolWindowControl) base.Content).checkBox.IsChecked;   
         }  
         set {  
@@ -188,14 +185,14 @@ ms.locfileid: "49888407"
 1.  開啟*MyToolWindow.cs* ，並加入名為公用類別`Simple`。  
   
     ```csharp  
-    public class Simple  
+    public class Simple  
     {  
-        private string someText = "";  
+        private string someText = "";  
   
         [Category("My Properties")]  
         [Description("Simple Properties")]  
         [DisplayName("My Text")]  
-        public string SomeText  
+        public string SomeText  
         {  
             get { return someText; }  
             set { someText = value; }  

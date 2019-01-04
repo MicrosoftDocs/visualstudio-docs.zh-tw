@@ -1,9 +1,6 @@
 ---
 title: 註冊副檔名，並排顯示部署 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - file extensions, registering for side-by-side
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1aa553b5370f637f5a779bbdff432319ce3e0bf4
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 1c6d867d1ab28cd2cfe3d8c01fe6818d13c6dc74
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39638475"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53907731"
 ---
 # <a name="register-file-name-extensions-for-side-by-side-deployments"></a>註冊並排顯示部署的檔案名稱副檔名
 適用於並排顯示環境中部署的 Vspackage，您必須註冊檔案相關聯的正確版本的檔案名稱副檔名[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。 除非您使用版本特定檔案的副檔名，註冊可讓使用者開啟您的專案和專案項目檔中的適當版本[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。  
@@ -38,4 +35,4 @@ ms.locfileid: "39638475"
   
 ## <a name="related-sections"></a>相關章節  
  [支援多個版本的 Visual Studio](../extensibility/supporting-multiple-versions-of-visual-studio.md)  
- 說明多個版本的相關問題[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]和 VSPackage 開發及部署給使用者時。
+ 說明在開發和部署給使用者期間的多個 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 和 VSPackage 版本的相關問題。

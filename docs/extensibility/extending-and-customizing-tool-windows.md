@@ -1,9 +1,6 @@
 ---
 title: 擴充和自訂工具 Windows |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - user interfaces, essentials
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c11485e830d1b7bcef851a50225e15f351e64f3e
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 4c942076f10aa39994c2a809f994b9725831d67b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637480"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53949832"
 ---
 # <a name="extend-and-customize-tool-windows"></a>擴充和自訂工具視窗
 Visual Studio 提供許多不同類型的 windows，例如工具視窗、 文件視窗和對話方塊視窗。 這類其他視窗**屬性** 視窗中，**輸出**視窗中，而**工作清單** 視窗中，類型的工具視窗。  
@@ -37,9 +34,9 @@ Visual Studio 提供許多不同類型的 windows，例如工具視窗、 文件
   
  在文件框架中，可以停駐、浮動或標籤工具視窗。 工具視窗框架是由 IDE 所提供，並可用來控制大小、位置、停駐狀態和其他持續性屬性。 工具視窗窗格會顯示內容。 只有在第一次開啟工具視窗時，才會套用預設大小和位置；之後，就會持續保存工具視窗狀態。  
   
- 工具視窗窗格可以裝載 WPF 使用者控制項，並支援工具列。 您可以覆寫<xref:Microsoft.VisualStudio.Shell.WindowPane.Window%2A>屬性來傳回裝載之控制項的控制代碼。  
+ 工具視窗窗格可以裝載 WPF 使用者控制項，並支援工具列。 您可以覆寫 <xref:Microsoft.VisualStudio.Shell.WindowPane.Window%2A> 屬性來傳回所裝載控制項的控制代碼。  
   
- 您可以將許多不同的功能加入工具視窗。 比方說，您可以在其中加入工具列：[加入至工具視窗的工具列](../extensibility/adding-a-toolbar-to-a-tool-window.md)或快顯功能表：[工具視窗中加入快顯功能表](../extensibility/adding-a-shortcut-menu-in-a-tool-window.md)。 您可以將搜尋控制項，可讓您搜尋工具視窗內的項目：[加入工具視窗的 新增搜尋](../extensibility/adding-search-to-a-tool-window.md)。  
+ 您可以將許多不同的功能加入工具視窗。 例如，您可以加入工具列：[將工具列加入工具視窗](../extensibility/adding-a-toolbar-to-a-tool-window.md)或快顯功能表：[工具視窗中加入快顯功能表](../extensibility/adding-a-shortcut-menu-in-a-tool-window.md)。 您可以新增搜尋控制項，可讓您搜尋工具視窗內的項目：[將搜尋新增至 工具視窗](../extensibility/adding-search-to-a-tool-window.md)。  
   
  您可以訂閱工具視窗事件：[訂閱事件](../extensibility/subscribing-to-an-event.md)。  
   

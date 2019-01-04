@@ -2,7 +2,6 @@
 title: 使用 XML 資料時的安全性考量
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: conceptual
 ms.assetid: fce2b708-1aef-454f-be59-52b76f359351
 author: gewarren
@@ -10,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6db64424e1b503f4835f268fad9fdc5b8648b150
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 0f53b3182d238b19abd3b03b02544307718377cc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34572601"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53989551"
 ---
 # <a name="security-considerations-when-working-with-xml-data"></a>使用 XML 資料時的安全性考量
 
@@ -25,11 +24,11 @@ ms.locfileid: "34572601"
 
  XML 編輯器以 Visual Studio 文字編輯器為基礎。 它依賴 <xref:System.Xml> 及 <xref:System.Xml.Xsl> 類別來處理許多 XML 處理序。
 
--   會在新的應用程式定義域中執行 XSLT 轉換。 XSLT 轉換是*沙箱化*; 也就是程式碼存取安全性原則，您的電腦用來決定限制的使用權限，根據 XSLT 樣式表的位置。 例如，來自網際網路位置的樣式表具有限制最嚴格的使用權限，但是複製到硬碟的樣式表則可以「完全信任」使用權限執行。
+-   會在新的應用程式定義域中執行 XSLT 轉換。 XSLT 轉換*沙箱*; 也就是您電腦的程式碼存取安全性原則用來判斷根據 XSLT 樣式表的位置限制的使用權限。 例如，來自網際網路位置的樣式表具有限制最嚴格的使用權限，但是複製到硬碟的樣式表則可以「完全信任」使用權限執行。
 
 -   <xref:System.Xml.Xsl.XslCompiledTransform> 類別用於將 XSLT 編譯為 Microsoft Intermediate Language，以在執行期間獲得更快的效能。
 
--   XML 編輯器首次載入時，會自動下載目錄檔案中指向外部位置的結構描述。 <xref:System.Xml.Schema.XmlSchemaSet> 類別用於編譯結構描述。 XML 編輯器隨附的目錄檔案不具有任何外部結構描述的連結。 使用者必須明確加入外部結構描述的參考，XML 編輯器才能下載結構描述檔案。 HTTP 下載可以停用透過**其他工具選項**XML 編輯器的頁面。
+-   XML 編輯器首次載入時，會自動下載目錄檔案中指向外部位置的結構描述。 <xref:System.Xml.Schema.XmlSchemaSet> 類別用於編譯結構描述。 XML 編輯器隨附的目錄檔案不具有任何外部結構描述的連結。 使用者必須明確加入外部結構描述的參考，XML 編輯器才能下載結構描述檔案。 HTTP 下載可透過停用**其他工具選項**頁面 XML 編輯器。
 
 -   XML 編輯器使用 <xref:System.Net> 類別來下載結構描述
 

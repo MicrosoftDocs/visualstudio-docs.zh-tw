@@ -1,9 +1,6 @@
 ---
 title: 評估運算式 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - expressions [Debugging SDK], evaluating
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bfd6248b06b69fa89d1888467a70718cf98b2a9a
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 7df128995c114c724c7a25ebe4949be935a3c496
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39232464"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53929733"
 ---
 # <a name="evaluate-expressions"></a>評估運算式
 運算式會從字串向下傳遞從**自動變數**，**監看式**，**快速監看式**，或**即時運算**windows。 評估運算式時，它會產生可列印的字串，包含名稱和類型的變數或引數，而其值。 此字串會顯示在對應的 IDE 視窗。  

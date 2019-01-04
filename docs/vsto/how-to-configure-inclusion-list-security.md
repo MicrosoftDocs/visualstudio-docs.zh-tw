@@ -1,9 +1,6 @@
 ---
 title: HOW TO：設定內含清單的安全性
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,12 +13,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b13084a0010bef21283dc7890dd5b1064392e1b2
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: 026cdef278f87ec4367dd88a8530a35425452b75
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53647731"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53895568"
 ---
 # <a name="how-to-configure-inclusion-list-security"></a>HOW TO：設定內含清單的安全性
   如果您有系統管理員權限，您可以設定[!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]信任提示來控制使用者是否可以選擇安裝 Office 方案儲存內含清單信任決策。 關於內含清單的資訊，請參閱[使用內含清單信任 Office 方案](../vsto/trusting-office-solutions-by-using-inclusion-lists.md)。  
@@ -213,5 +210,3 @@ ms.locfileid: "53647731"
 ## <a name="see-also"></a>另請參閱  
  [使用內含清單信任 Office 方案](../vsto/trusting-office-solutions-by-using-inclusion-lists.md)   
  [保護 Office 方案](../vsto/securing-office-solutions.md)  
-  
-  

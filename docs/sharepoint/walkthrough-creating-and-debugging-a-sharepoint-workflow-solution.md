@@ -1,16 +1,11 @@
 ---
-title: 逐步解說： 建立和偵錯 SharePoint 工作流程方案 |Microsoft Docs
-ms.custom: ''
+title: 逐步解說：建立和偵錯 SharePoint 工作流程方案 |Microsoft Docs
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.Workflow.WorkflowConditions
 - VS.SharePointTools.Workflow.WorkflowList
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -21,14 +16,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c254f6f3e044f938ed2749567d66ee7a313081e7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bfd1d1e434826a652525fb7e7151ecf0e8e13b75
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42626484"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53912986"
 ---
-# <a name="walkthrough-create-and-debug-a-sharepoint-workflow-solution"></a>逐步解說： 建立和偵錯 SharePoint 工作流程方案
+# <a name="walkthrough-create-and-debug-a-sharepoint-workflow-solution"></a>逐步解說：建立和偵錯 SharePoint 工作流程方案
   本逐步解說示範如何建立基本的循序工作流程範本。 工作流程會檢查共用的文件庫，以判斷是否經過審閱文件的屬性。 如果已檢閱文件，工作流程完成。  
   
  這個逐步解說將說明下列工作：  
@@ -127,7 +122,7 @@ ms.locfileid: "42626484"
      此頁面可讓您指定您的工作流程啟動時執行。 根據預設，工作流程會啟動 當使用者以手動方式啟動它在 SharePoint 或建立的工作流程相關聯的項目時。  
   
 ## <a name="create-workflow-activities"></a>建立工作流程活動
- 工作流程包含一或多個*活動*，代表要執行的動作。 您可以使用工作流程設計工具來排列工作流程的活動。 在此程序中，我們會將兩個活動加入工作流程： HandleExternalEventActivity 和 OnWorkFlowItemChanged。 這些活動監控中的文件的檢閱狀態**Shared Documents**清單  
+ 工作流程包含一或多個*活動*，代表要執行的動作。 您可以使用工作流程設計工具來排列工作流程的活動。 在此程序中，我們會將兩個活動加入至工作流程：HandleExternalEventActivity 和 OnWorkFlowItemChanged。 這些活動監控中的文件的檢閱狀態**Shared Documents**清單  
   
 #### <a name="to-create-workflow-activities"></a>若要建立工作流程活動  
   
@@ -187,7 +182,7 @@ ms.locfileid: "42626484"
     Boolean workflowPending = true;  
     ```  
   
-2.  將下列方法加入 `Workflow1` 類別中。 這個方法會檢查值`Document Status`的文件清單，以判斷是否經過審閱文件的屬性。 如果`Document Status`屬性設定為`Review Complete`，則`checkStatus`方法會設定`workflowPending`欄位**false**表示工作流程已完成。  
+2.  將下列方法加入 `Workflow1` 類別。 這個方法會檢查值`Document Status`的文件清單，以判斷是否經過審閱文件的屬性。 如果`Document Status`屬性設定為`Review Complete`，則`checkStatus`方法會設定`workflowPending`欄位**false**表示工作流程已完成。  
   
     ```vb  
     Private Sub checkStatus()  
@@ -296,4 +291,3 @@ ms.locfileid: "42626484"
  [建立 SharePoint 工作流程方案](../sharepoint/creating-sharepoint-workflow-solutions.md)   
  [SharePoint 專案與專案項目範本](../sharepoint/sharepoint-project-and-project-item-templates.md)   
  [建置和偵錯 SharePoint 方案](../sharepoint/building-and-debugging-sharepoint-solutions.md)  
-  

@@ -1,8 +1,7 @@
 ---
-title: CA2131：安全性關鍵類型可能未參與類型等價
+title: CA2131:安全性關鍵類型可能未參與類型等價
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA2131
@@ -12,14 +11,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d83f005d1f1093e3fd2826a573200194e3babcef
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f91f5be2aad41006dacab059db27e9609a4f84f7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49918281"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53913025"
 ---
-# <a name="ca2131-security-critical-types-may-not-participate-in-type-equivalence"></a>CA2131：安全性關鍵類型可能未參與類型等價
+# <a name="ca2131-security-critical-types-may-not-participate-in-type-equivalence"></a>CA2131:安全性關鍵類型可能未參與類型等價
 
 |||
 |-|-|

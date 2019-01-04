@@ -1,9 +1,6 @@
 ---
 title: 專案模型的核心元件 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - project models, objects and interfaces
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 863aef532e90d749f5c9c93a9d16cb2daf7f6c0b
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: 91a2d4b1a1457938af9c65a91254b44245eb7824
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46495982"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53990356"
 ---
 # <a name="project-model-core-components"></a>專案模型的核心元件
 下表會探討專案模型。 這些表格會顯示在模型中的介面和特定物件相關聯的服務中所識別的服務與介面的簡短描述。 此外，資料表將詳細說明其他在專案建立及維護，根據您的特定專案類型的需求中是選擇性的介面。  
@@ -104,7 +101,7 @@ ms.locfileid: "46495982"
   
 ## <a name="see-also"></a>另請參閱  
  <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>   
- [檢查清單： 建立新的專案類型](../../extensibility/internals/checklist-creating-new-project-types.md)   
- [不在組建中： 使用 HierUtil7 專案類別來實作專案類型 （c + +）](https://msdn.microsoft.com/library/a5c16a09-94a2-46ef-87b5-35b815e2f346)   
+ [檢查清單：建立新的專案類型](../../extensibility/internals/checklist-creating-new-project-types.md)   
+ [不在組建中：使用 HierUtil7 專案類別來實作專案類型 （c + +）](https://msdn.microsoft.com/library/a5c16a09-94a2-46ef-87b5-35b815e2f346)   
  [支援符號瀏覽工具](../../extensibility/internals/supporting-symbol-browsing-tools.md)   
  [專案模型的元素](../../extensibility/internals/elements-of-a-project-model.md)

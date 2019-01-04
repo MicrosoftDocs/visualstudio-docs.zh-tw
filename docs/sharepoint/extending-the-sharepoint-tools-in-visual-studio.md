@@ -1,9 +1,6 @@
 ---
 title: 擴充 Visual Studio 中的 SharePoint 工具 |Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f360982f26cf2eb9ffe26678743bb514d9606ae7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 01a595536b85bac6948cee607af2e0897a7be1c7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49890669"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53890978"
 ---
 # <a name="extend-the-sharepoint-tools-in-visual-studio"></a>擴充 Visual Studio 中的 SharePoint 工具
   Visual Studio 中的 SharePoint 工具符合許多應用程式開發案例的需求。 不過，您可能會發現情況下，它們並不提供您或其他開發人員需要的功能。 在這些情況下，您可以擴充 SharePoint 工具來建立您所需要的功能。

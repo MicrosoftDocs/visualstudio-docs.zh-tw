@@ -1,9 +1,6 @@
 ---
 title: CreateExpInstance 公用程式 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - experimental builds
@@ -17,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a0f7f52f45023106d3e504258a538823c1c8fbb4
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 39aed4f3c02b1467f2fdf975d6443923acd018f0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39500653"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53961098"
 ---
 # <a name="createexpinstance-utility"></a>CreateExpInstance 公用程式
 使用**CreateExpInstance**公用程式來建立、 重設，或刪除 Visual Studio 的實驗執行個體。 您可以使用實驗性執行個體，偵錯及測試 Visual Studio 擴充功能，而不需要變更基礎的產品。  

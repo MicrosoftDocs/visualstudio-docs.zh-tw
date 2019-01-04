@@ -2,21 +2,20 @@
 title: 啟用或停用程式碼分析
 ms.date: 10/25/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 71a1c44ee775060a25946f79d7c23194e19f0ae9
-ms.sourcegitcommit: 1abb9cf4c3ccb90e3481ea8079272c98aad12875
+ms.openlocfilehash: 1620999385eec0862b4ba2aceadba10bb21d239d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/26/2018
-ms.locfileid: "50143394"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53905594"
 ---
-# <a name="how-to-enable-and-disable-automatic-code-analysis-for-managed-code"></a>如何： 啟用和停用 managed 程式碼的自動程式碼分析
+# <a name="how-to-enable-and-disable-automatic-code-analysis-for-managed-code"></a>HOW TO：啟用和停用 managed 程式碼的自動程式碼分析
 
 您可以設定 （靜態） 的程式碼分析，managed 程式碼專案的每次建置之後執行。 您可以設定不同的程式碼分析屬性，每個組建組態，例如，偵錯和發行。
 

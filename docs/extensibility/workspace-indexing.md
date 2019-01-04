@@ -1,9 +1,6 @@
 ---
 title: 在 Visual Studio 中編製索引的工作區 |Microsoft Docs
-ms.custom: ''
 ms.date: 02/21/2018
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 3163e98c-1c79-48a7-813f-7923be894ba1
 author: vukelich
@@ -11,12 +8,12 @@ ms.author: svukel
 manager: viveis
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5004db0d895d1fdc697c18606c346c24cd484527
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 90722b540fd0569ab54ff945f5c1caa43668dccf
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49939146"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53899739"
 ---
 # <a name="workspace-indexing"></a>編製索引的工作區
 
@@ -29,7 +26,7 @@ ms.locfileid: "49939146"
 |資料|掃描器的檔案類型|索引查詢的結果類型|相關的類型|
 |--|--|--|--|
 |參考|<xref:Microsoft.VisualStudio.Workspace.Indexing.FileReferenceInfo>|<xref:Microsoft.VisualStudio.Workspace.Indexing.FileReferenceResult>|<xref:Microsoft.VisualStudio.Workspace.Indexing.FileReferenceInfoType>|
-|Symbol|<xref:Microsoft.VisualStudio.Workspace.Indexing.SymbolDefinition>|<xref:Microsoft.VisualStudio.Workspace.Indexing.SymbolDefinitionSearchResult>|<xref:Microsoft.VisualStudio.Workspace.Indexing.ISymbolService> 應該使用而不是`IIndexWorkspaceService`查詢|
+|符號|<xref:Microsoft.VisualStudio.Workspace.Indexing.SymbolDefinition>|<xref:Microsoft.VisualStudio.Workspace.Indexing.SymbolDefinitionSearchResult>|<xref:Microsoft.VisualStudio.Workspace.Indexing.ISymbolService> 應該使用而不是`IIndexWorkspaceService`查詢|
 |資料值|<xref:Microsoft.VisualStudio.Workspace.Indexing.FileDataValue>|<xref:Microsoft.VisualStudio.Workspace.Indexing.FileDataResult`1>||
 
 ## <a name="querying-for-indexed-data"></a>查詢索引的資料

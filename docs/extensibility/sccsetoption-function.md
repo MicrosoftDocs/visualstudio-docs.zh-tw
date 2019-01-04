@@ -1,9 +1,6 @@
 ---
 title: SccSetOption 函式 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - SccSetOption
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4da2906ad0881ef93f0bddf171a43f3229c3f0c0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b703e220a0eaff175a08c884e309c49982fc795a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49813828"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53827464"
 ---
 # <a name="sccsetoption-function"></a>SccSetOption 函式
 此函式會設定控制行為的原始檔控制外掛程式的選項。  

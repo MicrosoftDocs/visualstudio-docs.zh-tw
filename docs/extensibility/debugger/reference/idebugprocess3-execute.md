@@ -1,9 +1,6 @@
 ---
 title: IDebugProcess3::Execute |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugProcess3::Execute
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a890390e6b3f4e1286a1c2a38fad54058c15696c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2764401081069d89e979998c61bcc189c757b6ab
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49864175"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53934105"
 ---
 # <a name="idebugprocess3execute"></a>IDebugProcess3::Execute
 會繼續執行此程序，從停止的狀態。 在清除任何先前的執行狀態 （例如在步驟），並在處理序啟動重新執行。  
@@ -31,14 +28,14 @@ ms.locfileid: "49864175"
 ## <a name="syntax"></a>語法  
   
 ```cpp  
-HRESULT Execute(  
-   IDebugThread2* pThread  
+HRESULT Execute(  
+   IDebugThread2* pThread  
 );  
 ```  
   
 ```csharp  
-int Execute(  
-   IDebugThread2 pThread  
+int Execute(  
+   IDebugThread2 pThread  
 );  
 ```  
   

@@ -1,9 +1,6 @@
 ---
 title: 判斷哪一個編輯器在專案中開啟檔案 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], determining which editor opens a file
@@ -16,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 655a5a28e3e16a1b07c52c37ef00d89d145a17a1
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: b61aa726a7088d08db6d759a9835816dcaf826a7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498538"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53941056"
 ---
 # <a name="determine-which-editor-opens-a-file-in-a-project"></a>判斷哪一個編輯器在專案中開啟檔案
 當使用者開啟檔案，在專案中時，環境會經歷輪詢的程序，最後會開啟適當的編輯器或設計工具，該檔案。 初始環境所採用的程序也適用於標準和自訂編輯器。 輪詢的編輯器，用以開啟檔案時，環境會使用各種不同的準則，VSPackage 必須協調與環境，在此程序。  

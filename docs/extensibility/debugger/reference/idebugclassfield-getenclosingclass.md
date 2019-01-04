@@ -1,9 +1,6 @@
 ---
 title: IDebugClassField::GetEnclosingClass |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugClassField::GetEnclosingClass
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 31bde98be596cdfca61434ecab3640655a8c7154
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4cf74c5fd53d3ad75c9fc95e8217c849e3ce550c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49877123"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53851478"
 ---
 # <a name="idebugclassfieldgetenclosingclass"></a>IDebugClassField::GetEnclosingClass
 取得包含這個類別的類別。  
@@ -28,7 +25,7 @@ ms.locfileid: "49877123"
 ## <a name="syntax"></a>語法  
   
 ```cpp  
-HRESULT GetEnclosingClass(   
+HRESULT GetEnclosingClass(   
    IDebugClassField** ppClassField  
 );  
 ```  

@@ -1,9 +1,6 @@
 ---
 title: Office 文件上的密碼保護
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 02deaccdd615bae0c948d50abdd41758dc701704
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 4603a6f5722279ccdaf057d30d3bc6e911c4c47e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35670802"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53856997"
 ---
 # <a name="password-protection-on-office-documents"></a>Office 文件上的密碼保護
   您可在您的 Microsoft Office Word 文件和 Microsoft Office Excel 活頁簿設定密碼，以便他們不知道密碼的其他人無法開啟。 此選項稱為**密碼開啟**。  
@@ -43,7 +40,5 @@ ms.locfileid: "35670802"
 ## <a name="see-also"></a>另請參閱  
  [在文件層級方案中的文件保護](../vsto/document-protection-in-document-level-solutions.md)   
  [資訊版權管理和 managed 程式碼延伸模組概觀](../vsto/information-rights-management-and-managed-code-extensions-overview.md)   
- [如何： 允許程式碼的文件背後執行以限制權限](../vsto/how-to-permit-code-to-run-behind-documents-with-restricted-permissions.md)   
+ [如何：允許程式碼的文件背後執行以限制權限](../vsto/how-to-permit-code-to-run-behind-documents-with-restricted-permissions.md)   
  [設計和建立 Office 方案](../vsto/designing-and-creating-office-solutions.md)  
-  
-  

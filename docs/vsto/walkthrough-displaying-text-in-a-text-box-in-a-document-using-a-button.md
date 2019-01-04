@@ -1,9 +1,6 @@
 ---
-title: 逐步解說： 使用按鈕文件中的文字方塊中顯示文字
-ms.custom: ''
+title: 逐步解說：在文字方塊中，使用按鈕文件中的顯示文字
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,14 +12,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 132a94b6e91148d943d998ab7e4aab96d0d74960
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 188fc5d954bb41ced952e48874816bdfd503765b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49822553"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53910135"
 ---
-# <a name="walkthrough-display-text-in-a-text-box-in-a-document-using-a-button"></a>逐步解說： 使用按鈕文件中的文字方塊中顯示文字
+# <a name="walkthrough-display-text-in-a-text-box-in-a-document-using-a-button"></a>逐步解說：在文字方塊中，使用按鈕文件中的顯示文字
   本逐步解說示範如何在 Microsoft Office Word 的文件層級自訂中使用按鈕和文字方塊。  
   
  [!INCLUDE[appliesto_wdalldoc](../vsto/includes/appliesto-wdalldoc-md.md)]  
@@ -49,7 +46,7 @@ ms.locfileid: "49822553"
   
 1.  建立 Word 文件專案名稱**My Word Button**。 在精靈中，選取**建立新的文件**。  
   
-     如需詳細資訊，請參閱 <<c0> [ 如何： 在 Visual Studio 中的建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
+     如需詳細資訊，請參閱[＜How to：在 Visual Studio 中建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
   
      Visual Studio 設計工具中開啟新的 Word 文件，並將**My Word Button**專案加入**方案總管 中**。  
   
@@ -90,7 +87,7 @@ ms.locfileid: "49822553"
      [!code-vb[Trin_VstcoreProgrammingControlsWord#7](../vsto/codesnippet/VisualBasic/my chart options/ThisDocument.vb#7)]
      [!code-csharp[Trin_VstcoreProgrammingControlsWord#7](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ThisDocument.cs#7)]  
   
-3.  在 C# 中，您必須將按鈕的事件處理常式新增至 <xref:Microsoft.Office.Tools.Word.Document.Startup> 事件。 如需建立事件處理常式的資訊，請參閱[如何： 建立 Office 專案中的事件處理常式](../vsto/how-to-create-event-handlers-in-office-projects.md)。  
+3.  在 C# 中，您必須將按鈕的事件處理常式新增至 <xref:Microsoft.Office.Tools.Word.Document.Startup> 事件。 如需建立事件處理常式的資訊，請參閱[How to:建立 Office 專案中的事件處理常式](../vsto/how-to-create-event-handlers-in-office-projects.md)。  
   
      [!code-csharp[Trin_VstcoreProgrammingControlsWord#8](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ThisDocument.cs#8)]  
   
@@ -108,15 +105,13 @@ ms.locfileid: "49822553"
 ## <a name="next-steps"></a>後續步驟  
  本逐步解說示範在 Word 文件上使用按鈕和文字方塊的基本概念。 接著可以執行下列一些工作：  
   
--   使用下拉式方塊變更格式。 如需詳細資訊，請參閱 <<c0> [ 逐步解說： 使用 CheckBox 控制項變更文件格式](../vsto/walkthrough-changing-document-formatting-using-checkbox-controls.md)。  
+-   使用下拉式方塊變更格式。 如需詳細資訊，請參閱[逐步解說：使用 CheckBox 控制項變更文件格式](../vsto/walkthrough-changing-document-formatting-using-checkbox-controls.md)。  
   
--   使用選項按鈕以選取圖表樣式。 如需詳細資訊，請參閱 <<c0> [ 逐步解說： 更新使用選項按鈕的文件中的圖表](../vsto/walkthrough-updating-a-chart-in-a-document-using-radio-buttons.md)。  
+-   使用選項按鈕以選取圖表樣式。 如需詳細資訊，請參閱[逐步解說：更新使用選項按鈕的文件中的圖表](../vsto/walkthrough-updating-a-chart-in-a-document-using-radio-buttons.md)。  
   
 ## <a name="see-also"></a>另請參閱  
  [在 Office 文件概觀上的 Windows Form 控制項](../vsto/windows-forms-controls-on-office-documents-overview.md)   
  [使用 Word 的逐步解說](../vsto/walkthroughs-using-word.md)   
  [Office 程式開發範例和逐步解說](../vsto/office-development-samples-and-walkthroughs.md)   
- [如何： 將 Windows Form 控制項加入 Office 文件](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)   
+ [如何：將 Windows Form 控制項加入 Office 文件](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)   
  [主項目和主控制項概觀](../vsto/host-items-and-host-controls-overview.md)  
-  
-  

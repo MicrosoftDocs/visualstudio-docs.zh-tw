@@ -1,9 +1,6 @@
 ---
 title: Visual Studio 命令的 Guid 和 Id |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - commands
@@ -17,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 35e2c354293679d9cb6044b0c5f21b77aadb7f52
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 1440eb7da0299b79aa063d999d581cc159a88e50
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50220156"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53898290"
 ---
 # <a name="guids-and-ids-of-visual-studio-commands"></a>Visual Studio 識別碼和 Guid 的命令
 已安裝 Visual Studio SDK 的一部分的.vsct 檔案中定義的 Visual Studio 整合式的開發環境 (IDE) 中包含的命令 GUID 和 ID 值。 如需詳細資訊，請參閱 < [IDE 定義的命令、 功能表和群組](../../extensibility/internals/ide-defined-commands-menus-and-groups.md)。  
@@ -34,7 +31,7 @@ ms.locfileid: "50220156"
   
 ### <a name="to-locate-a-command-definition"></a>若要找出命令定義  
   
-1. 在 Visual Studio 中，開啟下列檔案中的 *< Visual Studio SDK 安裝路徑\>\VisualStudioIntegration\Common\Inc\\* 資料夾： *SharedCmdDef.vsct*，*ShellCmdDef.vsct*， *VsDbgCmdUsed.vsct*， *Venusmenu.vsct*。  
+1. 在 Visual Studio 中，開啟下列檔案中的 *< Visual Studio SDK 安裝路徑\>\VisualStudioIntegration\Common\Inc\\* 資料夾：*SharedCmdDef.vsct*， *ShellCmdDef.vsct*， *VsDbgCmdUsed.vsct*， *Venusmenu.vsct*。  
   
     大部分的 Visual Studio 命令定義於*SharedCmdDef.vsct*並*ShellCmdDef.vsct*。 *VsDbgCmdUsed.vsct*定義命令的相關偵錯工具，並*Venusmenu.vsct*定義專屬於 Web 開發的命令。  
   

@@ -1,9 +1,6 @@
 ---
 title: IDebugSymbolSearchEvent2::GetSymbolSearchInfo |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugSymbolSearchEvent2::GetSymbolSearchInfo
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7c38d1f834e9eb7deae62701a17c0d24ea21937c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f02eba47963dc39e7fa1fc426a762ff9f30a664d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49915330"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53888695"
 ---
 # <a name="idebugsymbolsearchevent2getsymbolsearchinfo"></a>IDebugSymbolSearchEvent2::GetSymbolSearchInfo
 呼叫以擷取結果的符號載入處理序相關的事件處理常式。  

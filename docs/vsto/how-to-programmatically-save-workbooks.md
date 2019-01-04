@@ -1,9 +1,6 @@
 ---
-title: 如何： 以程式設計方式儲存活頁簿
-ms.custom: ''
+title: HOW TO：以程式設計方式儲存活頁簿
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,14 +14,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6fc715518f31031c65667a2480d7e14111105202
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: ab05bee8e58ca17d697dc0d3414662fc50ab4234
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35671366"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53829167"
 ---
-# <a name="how-to-programmatically-save-workbooks"></a>如何： 以程式設計方式儲存活頁簿
+# <a name="how-to-programmatically-save-workbooks"></a>HOW TO：以程式設計方式儲存活頁簿
   儲存活頁簿有好幾種方式。 您可以儲存活頁簿，而不變更路徑。 如果活頁簿先前沒有儲存過，則應該指定路徑來儲存活頁簿。 如果沒有明確指定路徑，Microsoft Office Excel 會將這個檔案以建立時指定的名稱儲存在目前的資料夾中。 您也可以儲存活頁簿的複本，而不修改記憶體中的已開啟活頁簿。  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
@@ -33,7 +30,7 @@ ms.locfileid: "35671366"
   
 ### <a name="to-save-a-workbook-associated-with-a-document-level-customization"></a>儲存與文件層級自訂相關聯的活頁簿  
   
-1.  請呼叫 `ThisWorkbook` 類別的 <xref:Microsoft.Office.Tools.Excel.Workbook.Save%2A> 方法。  
+1.  請呼叫 <xref:Microsoft.Office.Tools.Excel.Workbook.Save%2A> 類別的 `ThisWorkbook` 方法。  
   
      [!code-csharp[Trin_VstcoreExcelAutomation#4](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/ThisWorkbook.cs#4)]
      [!code-vb[Trin_VstcoreExcelAutomation#4](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/ThisWorkbook.vb#4)]  
@@ -88,9 +85,7 @@ ms.locfileid: "35671366"
 ## <a name="see-also"></a>另請參閱  
  [使用活頁簿](../vsto/working-with-workbooks.md)   
  [Workbook 主項目](../vsto/workbook-host-item.md)   
- [如何： 以程式設計方式關閉活頁簿](../vsto/how-to-programmatically-close-workbooks.md)   
+ [如何：以程式設計方式關閉活頁簿](../vsto/how-to-programmatically-close-workbooks.md)   
  [主項目和主控制項的程式設計限制](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
  [Office 方案中的選擇性參數](../vsto/optional-parameters-in-office-solutions.md)   
  [主項目和主控制項概觀](../vsto/host-items-and-host-controls-overview.md)  
-  
-  

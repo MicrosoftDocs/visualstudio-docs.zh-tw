@@ -1,9 +1,6 @@
 ---
-title: 如何： 使用累加式變更資料，以程式設計的方式自動填滿範圍
-ms.custom: ''
+title: HOW TO：使用累加式變更資料，以程式設計的方式自動填滿範圍
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,14 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a4fff7eb59ff2fe5e17ddf500bf546502492634d
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: a704fd0cdc18802aff487b5d66b72044303ce2dd
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35256399"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53895573"
 ---
-# <a name="how-to-programmatically-automatically-fill-ranges-with-incrementally-changing-data"></a>如何： 使用累加式變更資料，以程式設計的方式自動填滿範圍
+# <a name="how-to-programmatically-automatically-fill-ranges-with-incrementally-changing-data"></a>HOW TO：使用累加式變更資料，以程式設計的方式自動填滿範圍
   <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A>方法的<xref:Microsoft.Office.Interop.Excel.Range>物件可讓您將會自動填入值的工作表中的範圍。 大多數情況下，<xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A>方法用來儲存以累加方式增加或減少的範圍內的值。 您可以藉由提供選擇性的常數，從指定的行為<xref:Microsoft.Office.Interop.Excel.XlAutoFillType>列舉型別。  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
@@ -56,10 +53,8 @@ ms.locfileid: "35256399"
   
 ## <a name="see-also"></a>另請參閱  
  [使用範圍](../vsto/working-with-ranges.md)   
- [如何： 以程式設計方式參考程式碼中的工作表範圍](../vsto/how-to-programmatically-refer-to-worksheet-ranges-in-code.md)   
- [如何： 以程式設計方式將樣式套用至活頁簿中的範圍](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)   
- [如何： 以程式設計方式執行 Excel 計算](../vsto/how-to-programmatically-run-excel-calculations-programmatically.md)   
+ [如何：以程式設計方式參考程式碼中的工作表範圍](../vsto/how-to-programmatically-refer-to-worksheet-ranges-in-code.md)   
+ [如何：以程式設計方式將樣式套用至活頁簿中的範圍](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)   
+ [如何：以程式設計方式執行 Excel 計算](../vsto/how-to-programmatically-run-excel-calculations-programmatically.md)   
  [主項目和主控制項概觀](../vsto/host-items-and-host-controls-overview.md)   
  [Office 方案中的選擇性參數](../vsto/optional-parameters-in-office-solutions.md)  
-  
-  

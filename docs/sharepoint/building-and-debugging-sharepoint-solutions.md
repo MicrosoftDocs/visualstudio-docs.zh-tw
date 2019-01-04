@@ -1,13 +1,8 @@
 ---
 title: 建置和偵錯 SharePoint 方案 |Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -18,12 +13,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 82733a8d3e908e82ad8f841857aa70374495e556
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 0ab8fe8b7a6a26e855e603a2f2969c894ff7da50
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283531"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53987190"
 ---
 # <a name="build-and-debug-sharepoint-solutions"></a>建置和偵錯 SharePoint 方案
   一般情況下，建置和偵錯 SharePoint 方案等同於建置和偵錯其他類型的專案中[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。 本節主題會說明兩者之間的差異。  
@@ -39,7 +34,7 @@ ms.locfileid: "44283531"
 |中繼套件的檔案。|*\<專案名稱 > \pkgobj\debug*或是*\<專案名稱 > \pkgobj\release*|  
   
 ## <a name="build-sharepoint-solutions"></a>建置 SharePoint 解決方案
- 若要建置 SharePoint 解決方案，在開發電腦必須安裝的 SharePoint 伺服器的正確版本。 否則，建置 SharePoint 解決方案是建置中專案的其他類型相同[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。 如需詳細資訊，請參閱 <<c0> [ 如何： 建置 SharePoint 解決方案](../sharepoint/how-to-build-sharepoint-solutions.md)。  
+ 若要建置 SharePoint 解決方案，在開發電腦必須安裝的 SharePoint 伺服器的正確版本。 否則，建置 SharePoint 解決方案是建置中專案的其他類型相同[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。 如需詳細資訊，請參閱[＜How to：建置 SharePoint 解決方案](../sharepoint/how-to-build-sharepoint-solutions.md)。  
   
 ## <a name="debug-and-test-sharepoint-solutions"></a>偵錯及測試 SharePoint 方案
  偵錯前,[!include[vsprvs](../sharepoint/includes/vsprvs-md.md)]複本 *.wsp*封裝到 SharePoint 伺服器，啟動站台和 Web 範圍的功能，並在某些情況下，會啟動專案。 在某些情況下，您可能需要手動開啟專案。 如需詳細資訊，請參閱 <<c0> [ 疑難排解 SharePoint 解決方案](../sharepoint/troubleshooting-sharepoint-solutions.md)並[偵錯 SharePoint 方案](../sharepoint/debugging-sharepoint-solutions.md)。  
@@ -57,5 +52,3 @@ ms.locfileid: "44283531"
  [開發 SharePoint 方案](../sharepoint/developing-sharepoint-solutions.md)   
  [瀏覽 SharePoint 連線，使用 伺服器總管](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)   
  [封裝和部署 SharePoint 方案](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
-  
- 

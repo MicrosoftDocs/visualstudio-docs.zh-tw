@@ -1,9 +1,6 @@
 ---
 title: m_stateObject 欄位 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - m_stateObject field, Task class [.NET Framework debug engines]
@@ -13,17 +10,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4d33879ca8aaaba08288f9e16d54ab462d92f67b
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 7fbd5404f7138fd2f98d56d63089acdb2afdad9f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39231313"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53850199"
 ---
 # <a name="mstateobject-field"></a>m_stateObject 欄位
 物件，表示該動作將會使用的資料。  
   
- **命名空間：** <xref:System.Threading.Tasks?displayProperty=fullName>  
+ **命名空間︰** <xref:System.Threading.Tasks?displayProperty=fullName>  
   
  **組件：** mscorlib (在*mscorlib.dll*)  
   
@@ -39,4 +36,4 @@ ms.locfileid: "39231313"
  這是`state`中的參數<xref:System.Threading.Tasks.Task.%23ctor%2A>建構函式。 它也是支援欄位<xref:System.Threading.Tasks.Task.AsyncState%2A?displayProperty=fullName>屬性。  
   
 ## <a name="see-also"></a>另請參閱  
- [Task 類別](../../extensibility/debugger/task-class-internal-members.md)
+ [工作類別](../../extensibility/debugger/task-class-internal-members.md)

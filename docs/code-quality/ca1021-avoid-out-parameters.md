@@ -1,8 +1,7 @@
 ---
-title: CA1021：避免使用 out 參數
+title: CA1021:避免使用 out 參數
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA1021
@@ -16,20 +15,20 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1082aaef3422923e0f74e8bd5eb242f3ae8e6023
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 10ee8312a0861e65e0717cc6d9bec3d2530a8c80
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45549491"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53911857"
 ---
-# <a name="ca1021-avoid-out-parameters"></a>CA1021：避免使用 out 參數
+# <a name="ca1021-avoid-out-parameters"></a>CA1021:避免使用 out 參數
 
 |||
 |-|-|
 |TypeName|AvoidOutParameters|
 |CheckId|CA1021|
-|類別|Microsoft.Design|
+|分類|Microsoft.Design|
 |中斷變更|中斷|
 
 ## <a name="cause"></a>原因
@@ -94,4 +93,4 @@ Passing by return value:
  [!code-csharp[FxCop.Design.TryPattern#1](../code-quality/codesnippet/CSharp/ca1021-avoid-out-parameters_5.cs)]
 
 ## <a name="related-rules"></a>相關的規則
- [CA1045：不要以傳址方式傳遞類型](../code-quality/ca1045-do-not-pass-types-by-reference.md)
+ [CA1045:不要參考所傳遞類型](../code-quality/ca1045-do-not-pass-types-by-reference.md)

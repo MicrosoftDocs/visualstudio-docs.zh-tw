@@ -1,9 +1,6 @@
 ---
 title: IEnumDebugPorts2::Reset |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IEnumDebugPorts2::Reset
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6c78f782180ee2cca874e0001711ae9824eafd5b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0120c87df14c3ada1f4d7dd252b3e4c0c34c394a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49858195"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53894820"
 ---
 # <a name="ienumdebugports2reset"></a>IEnumDebugPorts2::Reset
 將列舉重設第一個項目。  

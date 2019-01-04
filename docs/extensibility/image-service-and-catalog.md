@@ -1,6 +1,5 @@
 ---
 title: 影像服務 」 和 「 類別目錄 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 34990c37-ae98-4140-9b1e-a91c192220d9
@@ -9,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c37da890842711b941e61aadc23ed85d60672f3c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: fb493e2ebd590edcf210c5c38010b0168e06fbe3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49823758"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53899700"
 ---
 # <a name="image-service-and-catalog"></a>映像服務和目錄
 此操作手冊包含指導方針和最佳作法採用 Visual Studio 映像服務與 Visual Studio 2015 中導入的映像目錄。  
@@ -47,11 +46,11 @@ ms.locfileid: "49823758"
 ## <a name="how-it-works"></a>它的運作方式
  映像服務可以提供點陣圖影像適用於任何支援的 UI 架構：  
   
-- WPF: BitmapSource  
+- WPF:BitmapSource  
   
-- WinForms: System.Drawing.Bitmap  
+- WinForms:System.Drawing.Bitmap  
   
-- Win32: HBITMAP  
+- Win32:HBITMAP  
   
   影像服務流程圖  
   
@@ -166,7 +165,7 @@ ms.locfileid: "49823758"
 |-|-|  
 |**屬性**|**定義**|  
 |URI|[必要]定義從何處可以載入映像的 URI。 它可以是下列其中一項：<br /><br /> -A [Pack URI](/dotnet/framework/wpf/app-development/pack-uris-in-wpf)使用應用程式: / / 授權單位<br />-絕對元件資源參考<br />-包含原生資源的檔案路徑|  
-|背景|[選用]指出哪些類型的來源要使用的背景。<br /><br /> 它可以是下列其中一項：<br /><br /> *Light:* 淺色背景上可用的來源。<br /><br /> *暗色調：* 來源可以使用深色背景上。<br /><br /> *高對比：* 來源可以使用高對比模式中的任何背景上。<br /><br /> *HighContrastLight:* 來源可以使用高對比模式中是淺色背景。<br /><br /> *HighContrastDark:* 來源可用在高對比模式中使用深色背景上。<br /><br /> 如果省略背景屬性，則來源可用的任何背景。<br /><br /> 如果背景*Light*，*深色*， *HighContrastLight*，或*HighContrastDark*，永遠不會反轉來源的色彩。 如果省略或設為背景*高對比*，反轉的來源的色彩由映像的控制**AllowColorInversion**屬性。|  
+|背景|[選用]指出哪些類型的來源要使用的背景。<br /><br /> 它可以是下列其中一項：<br /><br /> *Light:* 淺色背景上可用的來源。<br /><br /> *深：* 來源可以使用深色背景上。<br /><br /> *高對比：* 高對比模式中的任何背景上可用的來源。<br /><br /> *HighContrastLight:* 高對比模式中的淺色背景上可用的來源。<br /><br /> *HighContrastDark:* 在高對比模式中使用深色背景上可用的來源。<br /><br /> 如果省略背景屬性，則來源可用的任何背景。<br /><br /> 如果背景*Light*，*深色*， *HighContrastLight*，或*HighContrastDark*，永遠不會反轉來源的色彩。 如果省略或設為背景*高對比*，反轉的來源的色彩由映像的控制**AllowColorInversion**屬性。|  
 
 |||  
   

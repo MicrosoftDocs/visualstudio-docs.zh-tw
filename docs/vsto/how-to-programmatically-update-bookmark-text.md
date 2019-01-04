@@ -1,9 +1,6 @@
 ---
-title: 如何： 以程式設計方式更新書籤文字
-ms.custom: ''
+title: HOW TO：以程式設計方式更新書籤文字
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,14 +14,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: efa56c94e211a40e314025ae06d263164de1afd7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: cdbecf7ea507fdf630ebd3cc4bf50092826292dc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49833014"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53864332"
 ---
-# <a name="how-to-programmatically-update-bookmark-text"></a>如何： 以程式設計方式更新書籤文字
+# <a name="how-to-programmatically-update-bookmark-text"></a>HOW TO：以程式設計方式更新書籤文字
   您可以在 Microsoft Office Word 文件的預留位置書籤中插入文字，以便稍後擷取文字，或取代書籤中的文字。 如果開發的是文件層級自訂，您也可以更新繫結至資料的 <xref:Microsoft.Office.Tools.Word.Bookmark> 控制項文字。 如需詳細資訊，請參閱 <<c0> [ 將資料繫結至 Office 方案中的控制項](../vsto/binding-data-to-controls-in-office-solutions.md)。  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
@@ -83,8 +80,6 @@ ms.locfileid: "49833014"
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#66](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#66)]  
   
 ## <a name="see-also"></a>另請參閱  
- [如何： 以程式設計方式將文字插入 Word 文件](../vsto/how-to-programmatically-insert-text-into-word-documents.md)   
+ [如何：以程式設計方式將文字插入 Word 文件](../vsto/how-to-programmatically-insert-text-into-word-documents.md)   
  [Word 物件模型概觀](../vsto/word-object-model-overview.md)   
  [書籤控制項](../vsto/bookmark-control.md)  
-  
-  

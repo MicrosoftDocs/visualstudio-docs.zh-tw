@@ -1,9 +1,6 @@
 ---
 title: IDebugObject::GetManagedDebugObject |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugObject::GetManagedDebugObject
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e1c0b636c88c2c2e23efcc01b01eec1e421317e0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c90f66ec3a26db24d4c69fbf6ee59af3f925bd45
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49831091"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53901291"
 ---
 # <a name="idebugobjectgetmanageddebugobject"></a>IDebugObject::GetManagedDebugObject
 偵錯引擎的位址空間中建立受管理物件的複本。  
@@ -28,7 +25,7 @@ ms.locfileid: "49831091"
 ## <a name="syntax"></a>語法  
   
 ```cpp  
-HRESULT GetManagedDebugObject(   
+HRESULT GetManagedDebugObject(   
    IDebugManagedObject** ppObject  
 );  
 ```  

@@ -1,8 +1,7 @@
 ---
-title: CA3147：使用 ValidateAntiForgeryToken 標示動詞處理常式
+title: CA3147:使用 ValidateAntiForgeryToken 標示動詞處理常式
 ms.date: 08/08/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 author: dotpaul
 ms.author: paulming
@@ -11,14 +10,14 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: da15a441a10f3ad3f3f84ee0cc76eeed8e4127e4
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 96660dfe1de6b4fb2490bd00b7ce408d0548ba67
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "42623740"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53954694"
 ---
-# <a name="ca3147-mark-verb-handlers-with-validateantiforgerytoken"></a>CA3147：使用 ValidateAntiForgeryToken 標示動詞處理常式
+# <a name="ca3147-mark-verb-handlers-with-validateantiforgerytoken"></a>CA3147:使用 ValidateAntiForgeryToken 標示動詞處理常式
 
 |||
 |-|-|

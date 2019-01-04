@@ -2,7 +2,6 @@
 title: 在 XML 編輯器中的 XML 文件驗證
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: conceptual
 ms.assetid: abb353bd-6c4a-4978-b03b-a8c245bbfb55
 author: gewarren
@@ -10,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 04b2e821abbbc7a24ce5b77b7374de617852cf2a
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: eaf0ee4a039586e1f35883a2ce7a16f356f322b5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34693834"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53899726"
 ---
 # <a name="xml-document-validation"></a>XML 文件驗證
 
@@ -23,7 +22,7 @@ XML 編輯器可檢查 XML 1.0 語法，並在您輸入時執行資料驗證。 
 
  藉由將已編譯結構描述的 `targetNamespace` 與該項目的 xmlns 宣告相比對，可找到驗證中所使用的結構描述。 已編譯的結構描述會從下列其中一個位置載入，並以優先順序列出：
 
--   從指定的檔案名稱**結構描述**欄位的文件**屬性**視窗。
+-   從指定的檔名**結構描述**欄位的文件**屬性**視窗。
 
 -   內嵌結構描述或 DTD。
 
@@ -40,10 +39,10 @@ XML 編輯器可檢查 XML 1.0 語法，並在您輸入時執行資料驗證。 
 -   結構描述快取目錄中的結構描述。
 
 ## <a name="xslt-files"></a>XSLT 檔案
- 編輯 XSLT 檔，當*xslt.xsd*位於結構描述快取中的檔案用來驗證。 驗證錯誤以藍色波浪底線顯示。 XSLT 編譯器中的錯誤以紅色波浪底線顯示。
+ 編輯 XSLT 檔案時*xslt.xsd*位於結構描述快取中的檔案用於驗證。 驗證錯誤以藍色波浪底線顯示。 XSLT 編譯器中的錯誤以紅色波浪底線顯示。
 
 ## <a name="xml-schema-xsd-files"></a>XML 結構描述 (XSD) 檔案
- 當編輯 XML 結構描述檔案， *xsdschema.xsd*位於結構描述快取中的檔案用來驗證。 驗證錯誤以藍色波浪底線顯示。 任何編譯錯誤也會以紅色波浪底線顯示。
+ 當編輯 XML 結構描述檔案， *xsdschema.xsd*位於結構描述快取中的檔案用於驗證。 驗證錯誤以藍色波浪底線顯示。 任何編譯錯誤也會以紅色波浪底線顯示。
 
 ## <a name="see-also"></a>另請參閱
 

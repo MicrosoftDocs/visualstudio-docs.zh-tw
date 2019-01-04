@@ -1,5 +1,5 @@
 ---
-title: 自訂網域特定領域語言
+title: 來自訂特定領域語言
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,37 +10,36 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: f7fd63546f7d85ddbcc7661ac600a56bd340e6ec
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f3fea8dded35e00ee42430c8373309ada8a65f61
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31965222"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53991200"
 ---
-# <a name="write-code-to-customize-a-domain-specific-language"></a>撰寫程式碼以自訂特定領域語言
+# <a name="write-code-to-customize-a-domain-specific-language"></a>撰寫程式碼來自訂特定領域語言
 
-本節說明如何使用自訂程式碼存取、 修改或建立特定領域語言的模型。
+本節將說明如何使用自訂程式碼來存取、 修改或建立特定領域語言的模型。
 
-有數種內容中，您可以撰寫可搭配 DSL 的程式碼：
+有數種內容中，您可以撰寫與 DSL 搭配運作的程式碼：
 
--   **自訂命令。** 您可以建立命令，使用者可以叫用，以滑鼠右鍵按一下圖表中，並且它可以修改模型。 如需詳細資訊，請參閱[如何： 新增命令至捷徑功能表](../modeling/how-to-add-a-command-to-the-shortcut-menu.md)。
+-   **自訂命令。** 您可以建立命令的使用者可以用滑鼠右鍵按一下圖表中，叫用，並且它也可以修改模型。 如需詳細資訊，請參閱[＜How to：將命令加入至捷徑功能表](../modeling/how-to-add-a-command-to-the-shortcut-menu.md)。
 
--   **Validation (驗證)，** 您可以撰寫程式碼，用來驗證模型處於正確狀態。 如需詳細資訊，請參閱[中特定領域語言驗證](../modeling/validation-in-a-domain-specific-language.md)。
+-   **Validation (驗證)，** 您可以撰寫程式碼，確認模型處於正確狀態。 如需詳細資訊，請參閱 <<c0> [ 定義域專屬語言中的驗證](../modeling/validation-in-a-domain-specific-language.md)。
 
--   **覆寫預設行為。** 您可以修改 DslDefinition.dsl 從產生的程式碼的許多層面。 如需詳細資訊，請參閱[覆寫，然後將產生的類別擴充](../modeling/overriding-and-extending-the-generated-classes.md)。
+-   **覆寫預設行為。** 您可以修改 DslDefinition.dsl 從產生的程式碼的許多層面。 如需詳細資訊，請參閱 <<c0> [ 覆寫及擴充產生的類別](../modeling/overriding-and-extending-the-generated-classes.md)。
 
--   **文字轉換。** 您可以撰寫文字範本，其中包含存取模型，並產生文字檔案，例如若要產生程式碼的程式碼。 如需詳細資訊，請參閱[特定領域語言產生程式碼](../modeling/generating-code-from-a-domain-specific-language.md)。
+-   **文字轉換。** 您可以撰寫文字範本，其中包含存取模型，並產生文字檔案，例如若要產生程式碼的程式碼。 如需詳細資訊，請參閱 <<c0> [ 特定領域語言產生程式碼](../modeling/generating-code-from-a-domain-specific-language.md)。
 
--   **其他 Visual Studio 擴充功能。** 您可以撰寫個別的 VSIX 擴充功能的讀取和修改模型。 如需詳細資訊，請參閱[How to： 從程式碼中的檔案中開啟模型](../modeling/how-to-open-a-model-from-file-in-program-code.md)
+-   **其他 Visual Studio 擴充功能。** 您可以撰寫個別的 VSIX 擴充功能來讀取和修改模型。 如需詳細資訊，請參閱[＜How to：從程式碼中的檔案中開啟模型](../modeling/how-to-open-a-model-from-file-in-program-code.md)
 
-您在 DslDefinition.dsl 中定義的類別執行個體保留在資料結構，稱為*記憶體中存放區*(IMS) 或*存放區*。 您一律在 DSL 中定義的類別建構函式做為引數需要存放區。 例如，如果 DSL 定義類別，呼叫範例：
+您在 DslDefinition.dsl 中定義之類別執行個體保留在資料結構，稱為*記憶體中存放區*(IMS) 或*存放區*。 您一律在 DSL 中定義的類別建構函式做為引數需要存放區。 例如，如果您的 DSL 定義名為範例的類別：
 
 `Example element = new Example (theStore);`
 
-在保留物件 （而不是只為一般物件） 的存放區中有數個優點。
+保留 （而不是只為一般的物件） 的存放區中的物件提供數個優點。
 
--   **交易**。 您可以分組到某交易內的相關變更的一系列：
+-   **交易**。 您可以分組到某交易相關的變更一系列：
 
      `using (Transaction t = store.TransactionManager.BeginTransaction("updates"))`
 
@@ -52,9 +51,9 @@ ms.locfileid: "31965222"
 
      `}`
 
-     使最終的 commit （） 不會執行變更時，發生例外狀況，如果存放區將會重設為先前的狀態。 這可協助您確認該錯誤不會讓模型處於不一致的狀態。 如需詳細資訊，請參閱[巡覽和更新程式碼中的模型](../modeling/navigating-and-updating-a-model-in-program-code.md)。
+     如此就不會執行最終的 commit （） 進行變更時，發生例外狀況，如果先前的狀態將會重設的存放區。 這可協助您確定該錯誤不會讓模型處於不一致的狀態。 如需詳細資訊，請參閱 <<c0> [ 巡覽及更新程式碼中的模型](../modeling/navigating-and-updating-a-model-in-program-code.md)。
 
--   **二進位關聯性**。 如果您定義兩個類別之間的關聯性，在兩端的執行個體就會有另一端的導覽屬性。 一律會同步處理兩個端點。 例如，如果您使用名為父代和子系的角色定義 parenthood 關聯性，您可以撰寫：
+-   **二進位關聯性**。 如果您定義兩個類別之間的關聯性，在兩端的執行個體就會具有瀏覽至另一端的屬性。 這兩個部分會一律會同步處理。 例如，如果您使用名為父代和子系的角色定義 parenthood 關聯性，您可以撰寫：
 
      `John.Children.Add(Mary)`
 
@@ -68,11 +67,11 @@ ms.locfileid: "31965222"
 
      `Mary.Parents.Add(John)`
 
-     如需詳細資訊，請參閱[巡覽和更新程式碼中的模型](../modeling/navigating-and-updating-a-model-in-program-code.md)。
+     如需詳細資訊，請參閱 <<c0> [ 巡覽及更新程式碼中的模型](../modeling/navigating-and-updating-a-model-in-program-code.md)。
 
--   **規則和事件**。 您可以定義規則，指定變更時就會引發。 規則使用，例如，要保留在圖表上的圖形的最新狀態所呈現的模型項目。 如需詳細資訊，請參閱[回應和傳播變更](../modeling/responding-to-and-propagating-changes.md)。
+-   **規則和事件**。 您可以定義規則，以指定有變更時就會引發。 會使用規則，比方說，保留最新的模型項目呈現在圖表上的圖形。 如需詳細資訊，請參閱 <<c0> [ 回應及傳播變更](../modeling/responding-to-and-propagating-changes.md)。
 
--   **序列化**。 存放區提供的標準方式序列化至檔案包含的物件。 您可以自訂序列化和還原序列化的規則。 如需詳細資訊，請參閱[自訂檔案儲存體和 XML 序列化](../modeling/customizing-file-storage-and-xml-serialization.md)。
+-   **序列化**。 存放區提供標準的方式來序列化至檔案包含的物件。 您可以自訂的規則來序列化和還原序列化。 如需詳細資訊，請參閱 <<c0> [ 自訂檔案儲存體和 XML 序列化](../modeling/customizing-file-storage-and-xml-serialization.md)。
 
 ## <a name="see-also"></a>另請參閱
 

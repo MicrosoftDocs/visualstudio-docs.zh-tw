@@ -1,13 +1,8 @@
 ---
-title: 逐步解說： 部署專案工作清單定義 |Microsoft Docs
-ms.custom: ''
+title: 逐步解說：部署專案工作清單定義 |Microsoft Docs
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -17,14 +12,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0e0a0338f14ecdea36c5a5678a42a76ae234bb6d
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 3df4f161eddc5d10b77887b99d93be2204821c24
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44280359"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53826620"
 ---
-# <a name="walkthrough-deploy-a-project-task-list-definition"></a>逐步解說： 部署專案工作清單定義
+# <a name="walkthrough-deploy-a-project-task-list-definition"></a>逐步解說：部署專案工作清單定義
 
 本逐步解說將示範如何使用 [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)] 建立、自訂、偵錯和部署 SharePoint 清單以追蹤專案工作。
 
@@ -143,7 +138,7 @@ ms.locfileid: "44280359"
 
 在 Visual Studio 功能表列上選擇 **建置** > **部署方案**。
 
-Visual Studio 回收 IIS 應用程式集區、 撤銷方案的任何現有版本，將複製的方案套件 (*.wsp*) 到 SharePoint 的檔案，然後再啟動它的功能。 您現在可以在 SharePoint 中使用的解決方案。 如需有關部署組態步驟的詳細資訊，請參閱 <<c0> [ 如何： 編輯 SharePoint 部署組態](../sharepoint/how-to-edit-a-sharepoint-deployment-configuration.md)。
+Visual Studio 回收 IIS 應用程式集區、 撤銷方案的任何現有版本，將複製的方案套件 (*.wsp*) 到 SharePoint 的檔案，然後再啟動它的功能。 您現在可以在 SharePoint 中使用的解決方案。 如需有關部署組態步驟的詳細資訊，請參閱[How to:編輯 SharePoint 部署組態](../sharepoint/how-to-edit-a-sharepoint-deployment-configuration.md)。
 
 ### <a name="to-deploy-the-project-task-list-to-a-remote-system"></a>若要部署到遠端系統的專案工作清單
 
@@ -161,11 +156,11 @@ Visual Studio 回收 IIS 應用程式集區、 撤銷方案的任何現有版本
 
 5. 使用 PowerShell`Add-SPUserSolution`命令，以將套件安裝在遠端 SharePoint 安裝。 (用於陣列方案`Add-SPSolution`命令。)
 
-     例如，`Add-SPUserSolution C:\MyProjects\ProjectTaskList\ProjectTaskList\bin\Debug\ProjectTaskList.wsp`。
+     例如， `Add-SPUserSolution C:\MyProjects\ProjectTaskList\ProjectTaskList\bin\Debug\ProjectTaskList.wsp` 。
 
 6. 使用 PowerShell`Install-SPUserSolution`命令來部署解決方案。 (用於陣列方案`Install-SPSolution`命令。)
 
-     例如，`Install-SPUserSolution -Identity ProjectTaskList.wsp -Site http://NewSiteName`。
+     例如， `Install-SPUserSolution -Identity ProjectTaskList.wsp -Site http://NewSiteName` 。
 
      如需有關遠端部署的詳細資訊，請參閱[使用的解決方案](http://go.microsoft.com/fwlink/?LinkId=217680)並[加入和部署的方案，在 SharePoint 2010 中使用 PowerShell](http://go.microsoft.com/fwlink/?LinkId=217682)。
 
@@ -173,9 +168,9 @@ Visual Studio 回收 IIS 應用程式集區、 撤銷方案的任何現有版本
 
 您可以深入了解如何自訂和部署 SharePoint 方案，從下列主題：
 
-- [逐步解說： 建立適用於 SharePoint 的網站資料行、 內容類型和清單](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md)
+- [逐步解說：建立 SharePoint 網站資料行、 內容類型和清單](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md)
 
-- [如何： 建立事件接收器](../sharepoint/how-to-create-an-event-receiver.md)
+- [如何：建立事件接收器](../sharepoint/how-to-create-an-event-receiver.md)
 
 - [SharePoint Server 2010 的 Windows PowerShell](http://go.microsoft.com/fwlink/?LinkId=217684)
 

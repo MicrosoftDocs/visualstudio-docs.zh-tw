@@ -1,9 +1,6 @@
 ---
 title: 在 Office 方案中使用 WPF 控制項
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5419a715cbe255b5cfc31a113a00e3525d63d827
-ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
+ms.openlocfilehash: 49b4d2fd4a32b6d73e5fcdfc65850abcb2835856
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40008199"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53822271"
 ---
 # <a name="use-wpf-controls-in-office-solutions"></a>在 Office 方案中使用 WPF 控制項
 
@@ -56,11 +53,11 @@ ms.locfileid: "40008199"
 
 5.  在專案中加入執行窗格、表單區域或自訂工作窗格：
 
-    -   針對表單區域，新增**Outlook 表單區域**項目加入專案。 如需詳細資訊，請參閱 <<c0> [ 如何： 在 Outlook 增益集專案中加入表單區域](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)。
+    -   針對表單區域，新增**Outlook 表單區域**項目加入專案。 如需詳細資訊，請參閱[＜How to：將表單區域加入 Outlook 增益集專案](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)。
 
-    -   針對 [動作] 窗格中，新增**執行窗格控制項**或是**使用者控制**項目加入專案。 如需詳細資訊，請參閱 <<c0> [ 如何： 加入執行窗格加入 Word 文件或 Excel 活頁簿](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)並[如何： 加入執行窗格加入 Word 文件或 Excel 活頁簿](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)。
+    -   針對 [動作] 窗格中，新增**執行窗格控制項**或是**使用者控制**項目加入專案。 如需詳細資訊，請參閱[＜How to：加入執行窗格加入 Word 文件或 Excel 活頁簿](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)和[How to:加入執行窗格加入 Word 文件或 Excel 活頁簿](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)。
 
-    -   對於自訂工作窗格，請新增**使用者控制項**項目加入專案。 如需詳細資訊，請參閱 <<c0> [ 如何： 加入應用程式的自訂工作窗格](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)。
+    -   對於自訂工作窗格，請新增**使用者控制項**項目加入專案。 如需詳細資訊，請參閱[＜How to：應用程式中加入自訂工作窗格](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)。
 
 6.  從*ProjectName* **WPF 使用者控制項**索引標籤**工具箱**，將 WPF 使用者控制項拖曳至 [動作] 窗格、 表單區域或自訂工作窗格的設計工具。
 
@@ -113,11 +110,11 @@ WPF 控制項將 <xref:System.Windows.Forms.Integration.ElementHost> 類別用�
 
 如需在設計階段於 Visual Studio 的 Windows Form 控制項和表單中加入 WPF 控制項的詳細資訊，請參閱下列主題：
 
--   [逐步解說： 在設計階段在 Windows Form 上建立新的 WPF 內容](/dotnet/framework/winforms/advanced/walkthrough-creating-new-wpf-content-on-windows-forms-at-design-time)
+-   [逐步解說：在設計階段建立 Windows Form 上的新 WPF 內容](/dotnet/framework/winforms/advanced/walkthrough-creating-new-wpf-content-on-windows-forms-at-design-time)
 
--   [逐步解說： 在設計階段排列 Windows Form 的 WPF 內容](/dotnet/framework/winforms/advanced/walkthrough-arranging-wpf-content-on-windows-forms-at-design-time)
+-   [逐步解說：在設計階段排列 Windows Form 的 WPF 內容](/dotnet/framework/winforms/advanced/walkthrough-arranging-wpf-content-on-windows-forms-at-design-time)
 
--   [逐步解說： 樣式 WPF 內容](/dotnet/framework/winforms/advanced/walkthrough-styling-wpf-content)
+-   [逐步解說：樣式的 WPF 內容](/dotnet/framework/winforms/advanced/walkthrough-styling-wpf-content)
 
 ## <a name="see-also"></a>另請參閱
 
@@ -126,6 +123,6 @@ WPF 控制項將 <xref:System.Windows.Forms.Integration.ElementHost> 類別用�
 - [執行窗格概觀](../vsto/actions-pane-overview.md)
 - [自訂工作窗格](../vsto/custom-task-panes.md)
 - [建立 Outlook 表單區域](../vsto/creating-outlook-form-regions.md)
-- [如何： 加入執行窗格加入 Word 文件或 Excel 活頁簿](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)
-- [如何： 將自訂工作窗格新增至應用程式](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)
-- [如何： 在 Outlook 增益集專案中加入表單區域](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)
+- [如何：執行窗格加入 Word 文件或 Excel 活頁簿](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)
+- [如何：應用程式中加入自訂工作窗格](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)
+- [如何：將表單區域加入 Outlook 增益集專案](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)

@@ -1,8 +1,7 @@
 ---
-title: CA1415：P/Invokes 必須正確宣告
+title: CA1415:P-Invokes 必須正確宣告。
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA1415
@@ -16,14 +15,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f95c3e68190acbd53c4b75ceb81abf2885d15bce
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 41240738c7c303a04cc3d4251ece3efbead14c4d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49922623"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53840826"
 ---
-# <a name="ca1415-declare-pinvokes-correctly"></a>CA1415：P/Invokes 必須正確宣告
+# <a name="ca1415-declare-pinvokes-correctly"></a>CA1415:P/Invokes 必須正確宣告
 
 |||
 |-|-|

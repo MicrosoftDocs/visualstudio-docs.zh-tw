@@ -10,13 +10,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 538ebb2121c488fa56f693a424f91b8af19a0c3e
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: 255dad6de728fd503f004522a79228546e4a288c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50966839"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53892299"
 ---
 # <a name="overview-of-domain-specific-language-tools"></a>Domain-Specific Language Tools 概觀
 特定領域語言工具 （DSL 工具），其裝載在 Visual Studio 中，可讓您設計的特定領域語言，然後再產生所有使用者必須具備才能建立模型為基礎之語言的項目。
@@ -66,7 +65,7 @@ ms.locfileid: "50966839"
 ## <a name="validation-in-dsl-tools"></a>DSL 工具中的驗證
  Dsl 提供一個層級的驗證，請確定網域模型產生程式碼符合基本需求。 一般而言，當您建立您自己的特定領域語言，您會新增您自己的驗證，以表達您的商務邏輯規則。 如需有關自訂驗證的詳細資訊，請參閱 <<c0> [ 定義域專屬語言中的驗證](../modeling/validation-in-a-domain-specific-language.md)。
 
- 我們建議您先通常驗證您的特定領域語言在設計時。 如果您的特定領域語言有驗證錯誤，您就無法產生原始程式碼。 從範本產生程式碼的程序會依序按一下**轉換所有範本** 工具列中的 方案總管 中。 每當您修改語言定義，也請務必**轉換所有範本**。 如需詳細資訊，請參閱 <<c0> [ 如何： 建立特定領域語言方案](../modeling/how-to-create-a-domain-specific-language-solution.md)。
+ 我們建議您先通常驗證您的特定領域語言在設計時。 如果您的特定領域語言有驗證錯誤，您就無法產生原始程式碼。 從範本產生程式碼的程序會依序按一下**轉換所有範本** 工具列中的 方案總管 中。 每當您修改語言定義，也請務必**轉換所有範本**。 如需詳細資訊，請參閱[＜How to：建立特定領域語言解決方案](../modeling/how-to-create-a-domain-specific-language-solution.md)。
 
 ## <a name="customization-of-dsl-tools"></a>自訂的 DSL 工具
  您可以提供額外的程式碼，來精簡模型的行為，並透過您的語言定義條件約束。 如有需要，您可以藉由修改文字範本中進行重大的變更。

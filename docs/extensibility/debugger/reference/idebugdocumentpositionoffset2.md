@@ -1,9 +1,6 @@
 ---
-title: IDebugDocumentPositionOffset2 |Microsoft 文件
-ms.custom: ''
+title: IDebugDocumentPositionOffset2 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - IDebugDocumentPositionOffset2 interface
@@ -13,15 +10,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f08b278d75068351d6d65511f74209c7208024cf
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: eeedd1038b577be8a0e0cac46359cf0b05f0dc70
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31106873"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53948283"
 ---
 # <a name="idebugdocumentpositionoffset2"></a>IDebugDocumentPositionOffset2
-表示原始程式檔中的字元位移位置。  
+表示原始程式檔中的字元位移的位置。  
   
 ## <a name="syntax"></a>語法  
   
@@ -29,8 +26,8 @@ ms.locfileid: "31106873"
 IDebugDocumentPositionOffset2 : IUnknown  
 ```  
   
-## <a name="notes-for-implementers"></a>實作者注意事項  
- IDE 所實作，且由偵錯引擎。  
+## <a name="notes-for-implementers"></a>實作者的附註  
+ IDE 所實作，而且由偵錯引擎。  
   
 ## <a name="methods"></a>方法  
  下表顯示的方法`IDebugDocumentPositionOffset2`。  
@@ -40,14 +37,14 @@ IDebugDocumentPositionOffset2 : IUnknown
 |[GetRange](../../../extensibility/debugger/reference/idebugdocumentpositionoffset2-getrange.md)|擷取目前的文件位置的範圍。|  
   
 ## <a name="remarks"></a>備註  
- 這會傳回相同的資訊[GetRange](../../../extensibility/debugger/reference/idebugdocumentposition2-getrange.md)但在`char`文件開頭位移。 它會存在於磁碟上，也就是字元，而不是通常傳回行和資料行資訊的一維陣列一樣，這會呈現文件。  
+ 這會傳回相同的資訊[GetRange](../../../extensibility/debugger/reference/idebugdocumentposition2-getrange.md)但在`char`位移的文件的開頭。 例如，它會存在於磁碟上，也就是個字元，而不是正常情況下傳回行和資料行資訊的一維陣列，這會帶來文件。  
   
 ## <a name="requirements"></a>需求  
- 標頭： Msdbg.h  
+ 標頭：Msdbg.h  
   
- 命名空間： Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間:Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md)

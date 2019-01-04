@@ -1,9 +1,6 @@
 ---
-title: 測試區域 6︰ 刪除 |Microsoft Docs
-ms.custom: ''
+title: 測試區域 6︰刪除 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK], deleting items
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0ce67ded280fd87fbcabd72d7ca45f1af8568336
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3fff473dbd4e3bc70f1b6308ed0d6b1129c95e2c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49888212"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53930096"
 ---
 # <a name="test-area-6-delete"></a>測試區域 6︰刪除
 此原始檔控制外掛程式的測試區域涵蓋刪除動作。  

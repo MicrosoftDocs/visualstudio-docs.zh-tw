@@ -1,9 +1,6 @@
 ---
-title: IEnumDebugProcesses2 |Microsoft 文件
-ms.custom: ''
+title: IEnumDebugProcesses2 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IEnumDebugProcesses2
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5fdc8d37700edb2776c905c45ddd97496228faf9
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9b1beb5d6500b533ad713164b7cb4bec7097b255
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31125710"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53955915"
 ---
 # <a name="ienumdebugprocesses2"></a>IEnumDebugProcesses2
 這個介面會列舉在偵錯連接埠上執行的處理程序。  
@@ -31,32 +28,32 @@ ms.locfileid: "31125710"
 IEnumDebugProcesses : IUnknown  
 ```  
   
-## <a name="notes-for-implementers"></a>實作者注意事項  
- 自訂連接埠供應商實作這個介面來提供連接埠上執行的處理序的清單。  
+## <a name="notes-for-implementers"></a>實作者的附註  
+ 自訂的連接埠提供者會實作這個介面來提供連接埠上執行的處理序的清單。  
   
 ## <a name="notes-for-callers"></a>呼叫端資訊  
- Visual Studio 呼叫[EnumProcesses](../../../extensibility/debugger/reference/idebugport2-enumprocesses.md)取得此介面。  
+ Visual Studio 呼叫[EnumProcesses](../../../extensibility/debugger/reference/idebugport2-enumprocesses.md)來取得這個介面。  
   
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法  
  下表顯示的方法`IEnumDebugProcesses2`。  
   
 |方法|描述|  
 |------------|-----------------|  
-|[下一步](../../../extensibility/debugger/reference/ienumdebugprocesses2-next.md)|擷取指定的數目的列舉順序中的程序。|  
-|[Skip](../../../extensibility/debugger/reference/ienumdebugprocesses2-skip.md)|略過指定的數目的列舉順序中的程序。|  
-|[重設](../../../extensibility/debugger/reference/ienumdebugprocesses2-reset.md)|列舉序列重設為開頭。|  
-|[複製](../../../extensibility/debugger/reference/ienumdebugprocesses2-clone.md)|建立列舉值，包含目前的列舉值的列舉型別狀態相同。|  
+|[下一步](../../../extensibility/debugger/reference/ienumdebugprocesses2-next.md)|擷取指定的數目的列舉型別序列中的程序。|  
+|[Skip](../../../extensibility/debugger/reference/ienumdebugprocesses2-skip.md)|略過指定的數目的列舉型別序列中的程序。|  
+|[Reset](../../../extensibility/debugger/reference/ienumdebugprocesses2-reset.md)|將列舉型別序列重設到開頭。|  
+|[Clone](../../../extensibility/debugger/reference/ienumdebugprocesses2-clone.md)|建立列舉值，包含目前的列舉值相同的列舉型別狀態。|  
 |[GetCount](../../../extensibility/debugger/reference/ienumdebugprocesses2-getcount.md)|取得列舉值中的處理序數目。|  
   
 ## <a name="remarks"></a>備註  
- Visual Studio 會使用此介面來填入**處理程序**視窗。  
+ Visual Studio 會使用此介面來填入**處理序**視窗。  
   
 ## <a name="requirements"></a>需求  
  標頭： msdbg.h  
   
- 命名空間： Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間:Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
  [核心介面](../../../extensibility/debugger/reference/core-interfaces.md)   

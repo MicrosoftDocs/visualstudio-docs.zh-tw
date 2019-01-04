@@ -1,9 +1,6 @@
 ---
 title: IEEDataStorage::GetData |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IEEDataStorage::GetData
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 88ca53843c342547a0c0641bcb76f8e1166723ab
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8ed1788804fea7d10734de339d7b5a91d9cd168b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49860588"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53936967"
 ---
 # <a name="ieedatastoragegetdata"></a>IEEDataStorage::GetData
 從物件擷取指定的位元組數目。  

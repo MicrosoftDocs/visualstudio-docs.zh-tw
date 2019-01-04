@@ -1,9 +1,6 @@
 ---
-title: 如何： 調整書籤控制項的大小
-ms.custom: ''
+title: HOW TO：調整書籤控制項的大小
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 57b6d6a089570c52607cf73eeed4fc00978ab251
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1a700164ceea11bf83467048140c79723908b619
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49924833"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53942435"
 ---
-# <a name="how-to-resize-bookmark-controls"></a>如何： 調整書籤控制項的大小
+# <a name="how-to-resize-bookmark-controls"></a>HOW TO：調整書籤控制項的大小
   您可以在將 <xref:Microsoft.Office.Tools.Word.Bookmark> 控制項加入 Microsoft Office Word 文件時，設定控制項的大小； 也可以稍後再調整大小。  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
@@ -42,7 +39,7 @@ ms.locfileid: "49924833"
   
    如果要大幅變更書籤的大小或位置，則適合這種方法。  
   
-  在文件層級的專案中，您可以於設計階段或執行階段，將 <xref:Microsoft.Office.Tools.Word.Bookmark> 控制項加入專案中的文件。 在 VSTO 增益集專案中，您可以新增<xref:Microsoft.Office.Tools.Word.Bookmark>控制項加入任何開啟的文件，在執行階段。 如需詳細資訊，請參閱 <<c0> [ 如何： 加入書籤控制項加入 Word 文件](../vsto/how-to-add-bookmark-controls-to-word-documents.md)。  
+  在文件層級的專案中，您可以於設計階段或執行階段，將 <xref:Microsoft.Office.Tools.Word.Bookmark> 控制項加入專案中的文件。 在 VSTO 增益集專案中，您可以新增<xref:Microsoft.Office.Tools.Word.Bookmark>控制項加入任何開啟的文件，在執行階段。 如需詳細資訊，請參閱[＜How to：將書籤控制項加入 Word 文件](../vsto/how-to-add-bookmark-controls-to-word-documents.md)。  
   
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
@@ -91,11 +88,9 @@ ms.locfileid: "49924833"
 3.  在 [書籤]  對話方塊中，輸入您要調整大小的書籤名稱，然後按一下 [加入] 。  
   
 ## <a name="see-also"></a>另請參閱  
- [如何： 將書籤控制項加入 Word 文件](../vsto/how-to-add-bookmark-controls-to-word-documents.md)   
+ [如何：將書籤控制項加入 Word 文件](../vsto/how-to-add-bookmark-controls-to-word-documents.md)   
  [使用擴充的物件自動化 Word](../vsto/automating-word-by-using-extended-objects.md)   
  [主項目和主控制項概觀](../vsto/host-items-and-host-controls-overview.md)   
- [如何： 調整 NamedRange 控制項的大小](../vsto/how-to-resize-namedrange-controls.md)   
- [如何： 調整 ListObject 控制項的大小](../vsto/how-to-resize-listobject-controls.md)   
+ [如何：調整 NamedRange 控制項的大小](../vsto/how-to-resize-namedrange-controls.md)   
+ [如何：調整 ListObject 控制項的大小](../vsto/how-to-resize-listobject-controls.md)   
  [主項目和主控制項的程式設計限制](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)  
-  
-  

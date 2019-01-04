@@ -1,9 +1,6 @@
 ---
 title: 新增項目加入新項目對話方塊 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - Add New Item dialog box, adding items
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b98e696def519cea6d3644d0ef3a48bc82c19136
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d447090585a2314899bb2d6246c6fb450a9e767d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49812578"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53956045"
 ---
 # <a name="add-items-to-the-add-new-item-dialog-box"></a>將項目新增至 [加入新項目] 對話方塊
 加入項目至的程序**加入新項目**對話方塊開頭的登錄機碼。 下列登錄項目中所示**AddItemTemplates**一節包含可在哪一個項目中的目錄名稱與路徑**加入新項目**放 對話方塊。  

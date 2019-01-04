@@ -1,9 +1,6 @@
 ---
 title: 使用工作表
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,35 +13,35 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 44bc87817453e0d1d11c08b1c8baabb73f590ede
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 9133fbf2e8ede3ec8595ae3a0e22bea3b5b07c6b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35258368"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53857681"
 ---
 # <a name="work-with-worksheets"></a>使用工作表
   <xref:Microsoft.Office.Tools.Excel.Worksheet> 和 <xref:Microsoft.Office.Interop.Excel.Worksheet> 類別包含您用來執行工作表工作的方法和屬性。  
   
 |工作|程序|  
 |----------|---------------|  
-|在活頁簿中加入新的工作表。|[如何： 以程式設計方式在活頁簿中加入新的工作表](../vsto/how-to-programmatically-add-new-worksheets-to-workbooks.md)|  
-|在活頁簿中的指定位置複製工作表。|[如何： 以程式設計方式複製工作表](../vsto/how-to-programmatically-copy-worksheets.md)|  
-|刪除指定的工作表。|[如何： 以程式設計方式從活頁簿中刪除工作表](../vsto/how-to-programmatically-delete-worksheets-from-workbooks.md)|  
-|將使用者的選取範圍移至指定的工作表。|[如何： 以程式設計方式選取工作表](../vsto/how-to-programmatically-select-worksheets.md)|  
-|逐一查看所有工作表集合。|[如何： 以程式設計方式列出活頁簿中的所有工作表](../vsto/how-to-programmatically-list-all-worksheets-in-a-workbook.md)|  
-|預覽並列印工作表。|[如何： 以程式設計方式列印工作表](../vsto/how-to-programmatically-print-worksheets.md)|  
-|將工作表移到活頁簿中的新位置。|[如何： 以程式設計方式移動工作表在活頁簿內](../vsto/how-to-programmatically-move-worksheets-within-workbooks.md)|  
-|變更一或多個工作表的可見性。|[如何： 以程式設計方式隱藏工作表](../vsto/how-to-programmatically-hide-worksheets.md)|  
-|鎖定所有或部分的工作表，使其無法被編輯。|[如何： 以程式設計方式保護工作表](../vsto/how-to-programmatically-protect-worksheets.md)|  
-|移除工作表的鎖定，使其可被編輯。|[如何： 以程式設計方式移除工作表的保護](../vsto/how-to-programmatically-remove-protection-from-worksheets.md)|  
-|加入與刪除註解。|[如何： 以程式設計方式新增和刪除工作表註解](../vsto/how-to-programmatically-add-and-delete-worksheet-comments.md)|  
-|顯示或隱藏所有註解。|[如何： 以程式設計方式顯示工作表註解](../vsto/how-to-programmatically-display-worksheet-comments.md)|  
-|在工作表中建立群組。|[如何： 以程式設計方式分組的工作表中的資料列](../vsto/how-to-programmatically-group-rows-in-a-worksheet.md)|  
-|只有當資料列包含選取的儲存格時才粗體化。|[如何： 以程式設計方式變更包含選取儲存格的工作表列格式](../vsto/how-to-programmatically-change-formatting-in-worksheet-rows-containing-selected-cells.md)|  
-|跨工作表複製資料和格式。|[如何： 以程式設計方式複製資料和格式跨工作表](../vsto/how-to-programmatically-copy-data-and-formatting-across-worksheets.md)|  
-|檢查工作表拼字。|[如何： 以程式設計方式檢查工作表拼字](../vsto/how-to-programmatically-check-spelling-in-worksheets.md)|  
-|排序命名範圍和清單物件的資料。|[如何： 以程式設計方式排序工作表中的資料](../vsto/how-to-programmatically-sort-data-in-worksheets.md)|  
+|在活頁簿中加入新的工作表。|[如何：以程式設計方式在活頁簿中加入新的工作表](../vsto/how-to-programmatically-add-new-worksheets-to-workbooks.md)|  
+|在活頁簿中的指定位置複製工作表。|[如何：以程式設計方式複製工作表](../vsto/how-to-programmatically-copy-worksheets.md)|  
+|刪除指定的工作表。|[如何：以程式設計方式從活頁簿中刪除工作表](../vsto/how-to-programmatically-delete-worksheets-from-workbooks.md)|  
+|將使用者的選取範圍移至指定的工作表。|[如何：以程式設計方式選取工作表](../vsto/how-to-programmatically-select-worksheets.md)|  
+|逐一查看所有工作表集合。|[如何：以程式設計方式列出活頁簿中的所有工作表](../vsto/how-to-programmatically-list-all-worksheets-in-a-workbook.md)|  
+|預覽並列印工作表。|[如何：以程式設計方式列印工作表](../vsto/how-to-programmatically-print-worksheets.md)|  
+|將工作表移到活頁簿中的新位置。|[如何：以程式設計方式移動工作表在活頁簿內](../vsto/how-to-programmatically-move-worksheets-within-workbooks.md)|  
+|變更一或多個工作表的可見性。|[如何：以程式設計方式隱藏工作表](../vsto/how-to-programmatically-hide-worksheets.md)|  
+|鎖定所有或部分的工作表，使其無法被編輯。|[如何：以程式設計方式保護工作表](../vsto/how-to-programmatically-protect-worksheets.md)|  
+|移除工作表的鎖定，使其可被編輯。|[如何：以程式設計方式移除工作表的保護](../vsto/how-to-programmatically-remove-protection-from-worksheets.md)|  
+|加入與刪除註解。|[如何：以程式設計方式新增和刪除工作表註解](../vsto/how-to-programmatically-add-and-delete-worksheet-comments.md)|  
+|顯示或隱藏所有註解。|[如何：以程式設計方式顯示工作表註解](../vsto/how-to-programmatically-display-worksheet-comments.md)|  
+|在工作表中建立群組。|[如何：以程式設計方式在工作表中的群組資料列](../vsto/how-to-programmatically-group-rows-in-a-worksheet.md)|  
+|只有當資料列包含選取的儲存格時才粗體化。|[如何：以程式設計方式變更包含選取儲存格的工作表列格式](../vsto/how-to-programmatically-change-formatting-in-worksheet-rows-containing-selected-cells.md)|  
+|跨工作表複製資料和格式。|[如何：以程式設計方式複製資料和格式跨工作表](../vsto/how-to-programmatically-copy-data-and-formatting-across-worksheets.md)|  
+|檢查工作表拼字。|[如何：以程式設計方式檢查工作表拼字](../vsto/how-to-programmatically-check-spelling-in-worksheets.md)|  
+|排序命名範圍和清單物件的資料。|[如何：以程式設計方式排序工作表中的資料](../vsto/how-to-programmatically-sort-data-in-worksheets.md)|  
   
  如需有關 Excel 工作和 Excel 物件模型的詳細資訊，請參閱 < [Excel 物件模型概觀](../vsto/excel-object-model-overview.md)。  
   
@@ -55,5 +52,3 @@ ms.locfileid: "35258368"
  [使用活頁簿](../vsto/working-with-workbooks.md)   
  [使用範圍](../vsto/working-with-ranges.md)   
  [使用 Excel 工作表上的 Windows Form 控制項](../vsto/using-windows-forms-controls-on-excel-worksheets.md)  
-  
-  
