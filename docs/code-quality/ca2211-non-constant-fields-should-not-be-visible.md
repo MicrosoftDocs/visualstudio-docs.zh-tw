@@ -1,8 +1,7 @@
 ---
-title: CA2211：非常數欄位不應該為可見的
+title: CA2211:非常數欄位不應該為可見的
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA2211
@@ -19,20 +18,20 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 0e40065351342ab49b86b21bb525b45ce78c6028
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 77253de14219c4c1c6737f9bc6e5c61e11fff4ba
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45550542"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53937461"
 ---
-# <a name="ca2211-non-constant-fields-should-not-be-visible"></a>CA2211：非常數欄位不應該為可見的
+# <a name="ca2211-non-constant-fields-should-not-be-visible"></a>CA2211:非常數欄位不應該為可見的
 
 |||
 |-|-|
 |TypeName|NonConstantFieldsShouldNotBeVisible|
 |CheckId|CA2211|
-|類別|Microsoft.Usage|
+|分類|Microsoft.Usage|
 |中斷變更|中斷|
 
 ## <a name="cause"></a>原因

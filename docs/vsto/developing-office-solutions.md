@@ -1,9 +1,6 @@
 ---
 title: 開發 Office 方案
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,12 +14,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ea6054ae0917413a4e862e5c6309492ce84deff2
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: 53f94016eb354b3c3e5255e37b8399b3687352dc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53648848"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53856601"
 ---
 # <a name="develop-office-solutions"></a>開發 Office 方案
   在您使用 Visual Studio 中的 Office Developer Tools 來設計專案並且設定專案檔之後，即可開始專注於實作程式碼和自訂使用者介面 (UI)。  
@@ -73,5 +70,3 @@ ms.locfileid: "53648848"
  [逐步解說：建立您第一個 VSTO 增益集專案](../vsto/walkthrough-creating-your-first-vsto-add-in-for-project.md)   
  [逐步解說：Word 建立您第一個 VSTO 增益集](../vsto/walkthrough-creating-your-first-vsto-add-in-for-word.md)   
  [逐步解說：建立 Word 的第一個文件層級自訂](../vsto/walkthrough-creating-your-first-document-level-customization-for-word.md)  
-  
-  

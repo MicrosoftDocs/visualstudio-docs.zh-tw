@@ -1,9 +1,6 @@
 ---
 title: IDebugProgramProvider2::GetProviderProgramNode |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugProgramProvider2::GetProviderProgramNode
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d26b74928985feefda3acdc8594c35096fc4e0b4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 506616c8c052e85d051e97f429e48f84c7c8e5f0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49821316"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53855413"
 ---
 # <a name="idebugprogramprovider2getproviderprogramnode"></a>IDebugProgramProvider2::GetProviderProgramNode
 擷取針對特定程式的 [程式] 節點。  
@@ -28,24 +25,24 @@ ms.locfileid: "49821316"
 ## <a name="syntax"></a>語法  
   
 ```cpp  
-HRESULT GetProviderProgramNode(  
-   PROVIDER_FLAGS       Flags,  
-   IDebugDefaultPort2*  pPort,  
-   AD_PROCESS_ID        processId,  
-   REFGUID              guidEngine,  
-   UINT64               programId,  
-   IDebugProgramNode2** ppProgramNode  
+HRESULT GetProviderProgramNode(  
+   PROVIDER_FLAGS       Flags,  
+   IDebugDefaultPort2*  pPort,  
+   AD_PROCESS_ID        processId,  
+   REFGUID              guidEngine,  
+   UINT64               programId,  
+   IDebugProgramNode2** ppProgramNode  
 );  
 ```  
   
 ```csharp  
-int GetProviderProgramNode(  
-   enum_PROVIDER_FLAGS    Flags,  
-   IDebugDefaultPort2     pPort,  
-   AD_PROCESS_ID          ProcessId,  
-   ref Guid               guidEngine,  
-   ulong                  programId,  
-   out IDebugProgramNode2 ppProgramNode  
+int GetProviderProgramNode(  
+   enum_PROVIDER_FLAGS    Flags,  
+   IDebugDefaultPort2     pPort,  
+   AD_PROCESS_ID          ProcessId,  
+   ref Guid               guidEngine,  
+   ulong                  programId,  
+   out IDebugProgramNode2 ppProgramNode  
 );  
 ```  
   

@@ -1,9 +1,6 @@
 ---
 title: SccHistory 函式 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - SccHistory
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6ed7cde8d02706e03f98b98251f919cb5e756247
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: adf1cf2c408cf089d559c4c7d8c443470743fbc0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49832793"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53956903"
 ---
 # <a name="scchistory-function"></a>SccHistory 函式
 此函式會顯示指定的檔案歷程記錄。  

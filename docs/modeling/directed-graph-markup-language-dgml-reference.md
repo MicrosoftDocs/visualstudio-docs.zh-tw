@@ -8,13 +8,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 2eb13ad2b7b18b493e3de48d5b385c01e72857a2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 406f92a9d7003f2c0fd36859a56b011e8a8a5f92
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49853840"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53899781"
 ---
 # <a name="directed-graph-markup-language-dgml-reference"></a>有向圖形標記語言 (DGML) 參考
 

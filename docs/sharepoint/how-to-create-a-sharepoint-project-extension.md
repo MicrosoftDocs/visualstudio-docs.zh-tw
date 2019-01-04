@@ -1,9 +1,6 @@
 ---
-title: 如何： 建立 SharePoint 專案延伸模組 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：建立 SharePoint 專案延伸模組 |Microsoft Docs
 ms.date: 04/28/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,14 +14,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 25644a11ddbef3f8d493b64f8ca288dbaa87a14c
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 4e1c790e70ba44df967b33d57ac57951e714e130
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118611"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53836448"
 ---
-# <a name="how-to-create-a-sharepoint-project-extension"></a>如何： 建立 SharePoint 專案擴充功能
+# <a name="how-to-create-a-sharepoint-project-extension"></a>HOW TO：建立 SharePoint 專案擴充功能
   當您想要將功能新增至已在 Visual Studio 中開啟任何 SharePoint 專案，請建立專案擴充功能。 如需詳細資訊，請參閱 <<c0> [ 擴充 SharePoint 專案系統](../sharepoint/extending-the-sharepoint-project-system.md)。  
 
 ### <a name="to-create-a-project-extension"></a>若要建立專案擴充功能  
@@ -190,7 +187,7 @@ ms.locfileid: "37118611"
 
 此範例會使用 SharePoint 專案服務來將訊息寫入**輸出**視窗和**錯誤清單**視窗。 如需詳細資訊，請參閱 <<c0> [ 使用 SharePoint 專案服務](../sharepoint/using-the-sharepoint-project-service.md)。  
 
- 如需範例，示範如何處理<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectMenuItemsRequested>並<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectPropertiesRequested>事件，請參閱[如何： 將捷徑功能表項目新增至 SharePoint 專案](../sharepoint/how-to-add-a-shortcut-menu-item-to-sharepoint-projects.md)和[如何： 將屬性加入至 SharePoint 專案](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md).  
+ 如需範例，示範如何處理<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectMenuItemsRequested>並<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectPropertiesRequested>事件，請參閱[How to:加入 SharePoint 專案的捷徑功能表項目](../sharepoint/how-to-add-a-shortcut-menu-item-to-sharepoint-projects.md)和[How to:將屬性加入至 SharePoint 專案](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md)。  
 
 ## <a name="compile-the-code"></a>編譯程式碼  
  這個範例需要參考下列組件：  
@@ -204,6 +201,6 @@ ms.locfileid: "37118611"
 
 ## <a name="see-also"></a>另請參閱
  [擴充 SharePoint 專案系統](../sharepoint/extending-the-sharepoint-project-system.md)   
- [如何： 將捷徑功能表項目新增至 SharePoint 專案](../sharepoint/how-to-add-a-shortcut-menu-item-to-sharepoint-projects.md)   
- [如何： 將屬性加入至 SharePoint 專案](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md)   
- [逐步解說： 建立 SharePoint 專案擴充功能](../sharepoint/walkthrough-creating-a-sharepoint-project-extension.md)  
+ [如何：加入 SharePoint 專案的捷徑功能表項目](../sharepoint/how-to-add-a-shortcut-menu-item-to-sharepoint-projects.md)   
+ [如何：將屬性加入至 SharePoint 專案](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md)   
+ [逐步解說：建立 SharePoint 專案擴充功能](../sharepoint/walkthrough-creating-a-sharepoint-project-extension.md)  

@@ -1,9 +1,6 @@
 ---
 title: ATTACH_REASON |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - ATTACH_REASON
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6e2e103a345a3a064afb96cc7861bd3394da3a0f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9f40958cabdf1da8aa44cd7e226ed7219429af2b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49861614"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53931222"
 ---
 # <a name="attachreason"></a>ATTACH_REASON
 指定偵錯引擎 (DE) 附加至程式節點的原因。  
@@ -28,7 +25,7 @@ ms.locfileid: "49861614"
 ## <a name="syntax"></a>語法  
   
 ```cpp  
-enum enum_ATTACH_REASON {   
+enum enum_ATTACH_REASON {   
    ATTACH_REASON_LAUNCH = 0x0001,  
    ATTACH_REASON_USER   = 0x0002,  
    ATTACH_REASON_AUTO   = 0x0003  
@@ -37,7 +34,7 @@ typedef DWORD ATTACH_REASON;
 ```  
   
 ```csharp  
-public enum enum_ATTACH_REASON {   
+public enum enum_ATTACH_REASON {   
    ATTACH_REASON_LAUNCH = 0x0001,  
    ATTACH_REASON_USER   = 0x0002,  
    ATTACH_REASON_AUTO   = 0x0003  
@@ -60,9 +57,9 @@ public enum enum_ATTACH_REASON {
 ## <a name="requirements"></a>需求  
  標頭： msdbg.h  
   
- 命名空間： Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間:Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
  [列舉型別](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   

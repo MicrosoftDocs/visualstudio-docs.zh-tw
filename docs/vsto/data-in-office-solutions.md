@@ -1,9 +1,6 @@
 ---
 title: 在 Office 方案中的資料
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,12 +14,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2b53f4b9af7cf262e55935fa5c355a165515bb16
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: dad32dd0412c8cc6ad1ce45160fc06c96e089772
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53801584"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53828900"
 ---
 # <a name="data-in-office-solutions"></a>在 Office 方案中的資料
   許多 Office 方案都可以讓使用者擷取或修改資料。 當您使用 Visual Studio 建立 Office 方案時，可運用數種方式來處理資料。

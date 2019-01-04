@@ -1,5 +1,5 @@
 ---
-title: 如何：加入拖放處理常式
+title: HOW TO：新增拖放處理常式
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: gewarren
@@ -8,15 +8,14 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 260a1fdb78f1a9acf72a9789f12d7024cafe0c93
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 90385b233e859bf1cdd8ea1617b94efe58ec4cbf
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859194"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53876389"
 ---
-# <a name="how-to-add-a-drag-and-drop-handler"></a>如何：加入拖放處理常式
+# <a name="how-to-add-a-drag-and-drop-handler"></a>HOW TO：新增拖放處理常式
 
 讓使用者可以將項目拖曳到圖表從其他圖表或 Visual Studio 的其他部分，您可以拖放事件的處理常式新增至您的 DSL。 您也可以加入按兩下等事件的處理常式。 拖放和按兩下處理常式稱為共同*軌跡處理常式*。
 
@@ -70,7 +69,7 @@ using System.Linq;
 
 -   <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDoubleClick%2A> -當使用者按兩下的圖形或圖表時，會呼叫此方法。
 
-     如需詳細資訊，請參閱 <<c0> [ 如何： 攔截圖案或 Decorator 上](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md)。
+     如需詳細資訊，請參閱[＜How to：攔截圖案或 Decorator 上](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md)。
 
 定義 `IsAcceptableDropItem(e)` 以決定是否可接受拖曳的項目，並定義 ProcessDragDropItem(e) 以在放置項目時更新模型。 這些方法必須先從事件引數擷取項目。 如需如何執行該動作的資訊，請參閱[如何取得拖曳項目的參考](#extracting)。
 

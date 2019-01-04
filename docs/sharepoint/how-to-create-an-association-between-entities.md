@@ -1,15 +1,10 @@
 ---
-title: 如何： 建立實體之間的關聯 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：建立實體之間的關聯 |Microsoft Docs
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - AssociationGroupTool
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -26,14 +21,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 51527092332f1fa82019f1abf9251a8b44aedf06
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: eaaa3f86cc0751b0b80d61555a69aa6bfecda2f0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118616"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53878243"
 ---
-# <a name="how-to-create-an-association-between-entities"></a>如何： 建立實體之間的關聯
+# <a name="how-to-create-an-association-between-entities"></a>HOW TO：建立實體之間的關聯
   您可以定義您藉由建立關聯的商務資料連接 (BDC) 模型中實體之間的關聯性。 Visual Studio 會產生模型的取用者提供每一個關聯的相關資訊的方法。 這些方法可以由 SharePoint Web 組件、清單或自訂應用程式加以使用，以便在使用者介面 (UI) 中顯示資料關聯性。  
   
  您可以在 BDC 設計工具中建立關聯的兩種： 外部索引鍵為基礎的關聯和外部無索引鍵的關聯。 如需詳細資訊，請參閱 <<c0> [ 建立實體之間的關聯](../sharepoint/creating-an-association-between-entities.md)。  
@@ -69,14 +64,13 @@ ms.locfileid: "37118616"
 ## <a name="see-also"></a>另請參閱
  [建立實體之間的關聯](../sharepoint/creating-an-association-between-entities.md)   
  [設計商務資料連接模型](../sharepoint/designing-a-business-data-connectivity-model.md)   
- [如何： 新增搜尋方法](../sharepoint/how-to-add-a-finder-method.md)   
- [如何： 加入特定搜尋方法](../sharepoint/how-to-add-a-specific-finder-method.md)   
- [如何： 新增建立者方法](../sharepoint/how-to-add-a-creator-method.md)   
- [如何： 加入刪除者方法](../sharepoint/how-to-add-a-deleter-method.md)   
- [如何： 加入更新者方法](../sharepoint/how-to-add-an-updater-method.md)   
+ [如何：新增搜尋方法](../sharepoint/how-to-add-a-finder-method.md)   
+ [如何：新增特定搜尋方法](../sharepoint/how-to-add-a-specific-finder-method.md)   
+ [如何：新增建立者方法](../sharepoint/how-to-add-a-creator-method.md)   
+ [如何：新增刪除者方法](../sharepoint/how-to-add-a-deleter-method.md)   
+ [如何：新增更新者方法](../sharepoint/how-to-add-an-updater-method.md)   
  [BDC 模型設計工具概觀](../sharepoint/bdc-model-design-tools-overview.md)   
- [如何： 將參數加入至方法](../sharepoint/how-to-add-a-parameter-to-a-method.md)   
- [如何： 定義方法執行個體](../sharepoint/how-to-define-a-method-instance.md)   
- [如何： 定義參數的型別描述元](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)   
- [逐步解說： 使用商務資料在 SharePoint 中建立外部清單](../sharepoint/walkthrough-creating-an-external-list-in-sharepoint-by-using-business-data.md)  
-  
+ [如何：新增參數至方法](../sharepoint/how-to-add-a-parameter-to-a-method.md)   
+ [如何：定義方法執行個體](../sharepoint/how-to-define-a-method-instance.md)   
+ [如何：定義參數的型別描述元](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)   
+ [逐步解說：使用商務資料在 SharePoint 中建立外部清單](../sharepoint/walkthrough-creating-an-external-list-in-sharepoint-by-using-business-data.md)  

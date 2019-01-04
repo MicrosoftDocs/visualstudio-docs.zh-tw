@@ -1,9 +1,6 @@
 ---
 title: 評估監看式視窗運算式 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - Watch window expressions
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 47e875f4d288c896ace377e2844192aa5c3be275
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: b0f83be579b4be36cc2ed0b702b473c55c2196c9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39232099"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53822699"
 ---
 # <a name="evaluate-a-watch-window-expression"></a>評估監看式視窗運算式
 > [!IMPORTANT]
@@ -45,7 +42,7 @@ ms.locfileid: "39232099"
 7.  Visual Studio 呼叫[GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md)取得運算式，即會顯示在 監看清單的值。  
   
 ## <a name="parse-then-evaluate"></a>剖析，則評估  
- 因為剖析複雜的運算式可能遠超過它評估，評估運算式的程序會分成兩個步驟： 1） 剖析運算式，以及 2） 評估剖析的運算式。 如此一來，評估可能會發生許多次，但必須一次進行剖析的運算式。 中繼剖析的運算式會傳回從中 EE [IDebugParsedExpression](../../extensibility/debugger/reference/idebugparsedexpression.md)物件，接著封裝並傳回做為 DE [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md)物件。 `IDebugExpression`物件會延後所有評估`IDebugParsedExpression`物件。  
+ 因為剖析複雜的運算式可能遠超過它評估，評估運算式的程序會分成兩個步驟：1) 剖析的運算式和 2） 評估剖析的運算式。 如此一來，評估可能會發生許多次，但必須一次進行剖析的運算式。 中繼剖析的運算式會傳回從中 EE [IDebugParsedExpression](../../extensibility/debugger/reference/idebugparsedexpression.md)物件，接著封裝並傳回做為 DE [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md)物件。 `IDebugExpression`物件會延後所有評估`IDebugParsedExpression`物件。  
   
 > [!NOTE]
 >  您不需要遵循此兩步驟程序，即使 Visual Studio 就會認為這方面 EEEE 可以剖析和評估相同的步驟時[EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md)呼叫 （這是 MyCEE 範例運作方式，例如）。 如果您的語言可以構成複雜的運算式，您可能想要剖析步驟分開評估步驟。 許多監看運算式時，這可以增加效能，在 Visual Studio 偵錯工具會顯示。  

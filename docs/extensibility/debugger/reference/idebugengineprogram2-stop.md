@@ -1,9 +1,6 @@
 ---
 title: IDebugEngineProgram2::Stop |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugEngineProgram2::Stop
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 17919b42f97d2255325c1ceae119014521325c7b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 089b8c14db3caa1c9f4b3a2ad0a364bcfbb5a096
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49860821"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53840352"
 ---
 # <a name="idebugengineprogram2stop"></a>IDebugEngineProgram2::Stop
 停止執行此程式中的所有執行緒。  
@@ -28,8 +25,8 @@ ms.locfileid: "49860821"
 ## <a name="syntax"></a>語法  
   
 ```cpp  
-HRESULT Stop(   
-   void   
+HRESULT Stop(   
+   void   
 );  
 ```  
   

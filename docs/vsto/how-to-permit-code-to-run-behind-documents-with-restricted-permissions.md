@@ -1,9 +1,6 @@
 ---
 title: HOW TO：允許程式碼的文件背後執行以限制權限
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -20,12 +17,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: be77ed9aa6ad3c94a41cd9dfab3ec47c5c48931f
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: df2f16a434cd4e2907e3e5d9a6054967b8a6abf9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53648622"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53949332"
 ---
 # <a name="how-to-permit-code-to-run-behind-documents-with-restricted-permissions"></a>HOW TO：允許程式碼的文件背後執行以限制權限
   您可以使用 Microsoft Office 的資訊版權管理 (IRM) 功能的文件或活頁簿限制權限。 根據預設，受限制的 Microsoft Office Word 文件或 Microsoft Office Excel 活頁簿背後的程式碼不允許執行。 您可以變更預設值，以便您的 managed 程式碼擴充功能可以存取物件模型中，而且您的解決方案會正常運作。  
@@ -56,5 +53,3 @@ ms.locfileid: "53648622"
  [設計和建立 Office 方案](../vsto/designing-and-creating-office-solutions.md)   
  [保護 Office 方案](../vsto/securing-office-solutions.md)   
  [部署 Office 方案](../vsto/deploying-an-office-solution.md)  
-  
-  

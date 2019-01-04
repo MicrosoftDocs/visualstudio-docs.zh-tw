@@ -1,9 +1,6 @@
 ---
 title: 命令、 功能表和工具列 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - menus [Visual Studio SDK], commands
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8a8bd6716b40816ae625dcdb32fb62237aa543fd
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ceda4339c02e73f02ebd78094a145f53bc7fbb82
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49928421"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53887733"
 ---
 # <a name="commands-menus-and-toolbars"></a>命令、 功能表和工具列
 功能表和工具列是使用者的方式存取 VSPackage 中的命令。 命令是完成工作 (例如，列印文件、重新整理檢視，或建立新檔案) 的功能。 功能表和工具列是一種圖形方式，方便向使用者呈現您的命令。 通常，相關的命令會一起聚集在相同的功能表或工具列上。  
@@ -31,7 +28,7 @@ ms.locfileid: "49928421"
   
 - 建立命令時，也必須一併建立它的事件處理常式。 事件處理常式可判斷命令的顯示和啟用時間、可讓您修改其文字，並確保在啟動時適當地回應命令 (路由遞送)。 在大部分情況下，IDE 會使用 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> 介面來處理命令。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 中的命令會以階層方式路由遞送，即從最內層命令內容開始 (根據本機選取範圍) 到最外層內容 (根據全域選取範圍)。 加入主功能表的命令可立即用於指令碼編寫。 如需詳細資訊，請參閱[Menucommand 對比。OleMenuCommands](../../extensibility/menucommands-vs-olemenucommands.md)並[選取內容物件](../../extensibility/internals/selection-context-objects.md)。  
   
-  若要定義新的功能表和工具列，您必須描述它們的 Visual Studio 命令資料表 (*.vsct*) 檔案。 Visual Studio package 範本建立，此檔案，以及所需的項目，以支援任何命令、 工具列和您在範本中選取的編輯器。 或者，您可以撰寫您自己 *.vsct*檔案，使用此處描述的 XML 結構描述： [VSCT XML 結構描述參考](../../extensibility/vsct-xml-schema-reference.md)。  
+  若要定義新的功能表和工具列，您必須描述它們的 Visual Studio 命令資料表 (*.vsct*) 檔案。 Visual Studio package 範本建立，此檔案，以及所需的項目，以支援任何命令、 工具列和您在範本中選取的編輯器。 或者，您可以撰寫您自己 *.vsct*檔案，使用此處描述的 XML 結構描述：[VSCT XML 結構描述參考](../../extensibility/vsct-xml-schema-reference.md)。  
   
   如需使用詳細資訊 *.vsct*檔，請參閱[Visual Studio 命令表檔案 (.vsct)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)。  
   

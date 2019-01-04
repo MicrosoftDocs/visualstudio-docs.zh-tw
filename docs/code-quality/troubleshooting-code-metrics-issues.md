@@ -2,7 +2,6 @@
 title: 程式碼度量問題疑難排解
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: troubleshooting
 ms.assetid: f2fdb995-4888-4246-85dc-7bacadd45968
 author: gewarren
@@ -10,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9575020135846edc9cb86bd89ff72682500d8a9d
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: 5c20fc0cd975dba4efcf9384d804e7732afecec0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53739558"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53930891"
 ---
 # <a name="troubleshooting-code-metrics-issues"></a>程式碼度量問題疑難排解
 收集程式碼度量時，可能會遇到下列一些問題：

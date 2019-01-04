@@ -1,9 +1,6 @@
 ---
 title: 顯示區域變數 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], expression evaluation
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1e1a91de0d2a0f4f4e114ccfc77c6a3ce97084d1
-ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
+ms.openlocfilehash: e4fbc85b9b45b668d4c183d5b5068fc190f0a2f6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39203377"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53852595"
 ---
 # <a name="display-locals"></a>顯示 [區域變數]
 > [!IMPORTANT]

@@ -2,7 +2,6 @@
 title: 支援的 Roslyn 封裝版本對應
 ms.date: 11/02/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-sdk
 ms.topic: reference
 helpviewer_keywords:
 - roslyn package versions
@@ -11,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 18938ef7cdf0b1b0f7193c2f795a394837f92abb
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 51ed47364778f29e450597156f82566ec2094ab6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895999"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53869056"
 ---
 # <a name="net-compiler-platform-package-version-reference"></a>.NET 編譯器平台的套件版本參考
 

@@ -12,13 +12,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 2159a7954059eedb0d5100cb41a33b47f7577e93
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: 8b230d9611b52e4f68c399b5b36b2a8c0bfe88ea
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50967255"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53937763"
 ---
 # <a name="properties-of-geometry-shapes"></a>幾何圖案的屬性
 您可以使用幾何圖案，來指定網域類別的執行個體在網域指定語言中的顯示方式。 如需詳細資訊，請參閱 <<c0> [ 如何定義特定領域語言](../modeling/how-to-define-a-domain-specific-language.md)。 如需如何使用這些屬性的詳細資訊，請參閱[自訂及擴充特定領域語言](../modeling/customizing-and-extending-a-domain-specific-language.md)。

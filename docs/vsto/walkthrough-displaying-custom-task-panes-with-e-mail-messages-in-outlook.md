@@ -1,9 +1,6 @@
 ---
-title: 逐步解說： 在 Outlook 中顯示自訂工作窗格與電子郵件訊息
-ms.custom: ''
+title: 逐步解說：在 Outlook 中顯示自訂工作窗格與電子郵件訊息
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,14 +16,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1c25121e96005486450397938aad3c24f89d26cc
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 322cb9b2136adab37a4506b8332d7d6477ab75ea
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49828464"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53926578"
 ---
-# <a name="walkthrough-display-custom-task-panes-with-email-messages-in-outlook"></a>逐步解說： 在 Outlook 中顯示自訂工作窗格與電子郵件訊息
+# <a name="walkthrough-display-custom-task-panes-with-email-messages-in-outlook"></a>逐步解說：在 Outlook 中顯示自訂工作窗格與電子郵件訊息
   本逐步解說示範如何顯示每個已建立或開啟的電子郵件訊息的自訂工作窗格的唯一執行個體。 使用者可以使用每則電子郵件訊息功能區上的按鈕，顯示或隱藏自訂工作窗格。  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
@@ -51,7 +48,7 @@ ms.locfileid: "49828464"
 -   同步處理功能區切換按鈕和自訂工作窗格。  
   
 > [!NOTE]  
->  在下列指示的某些 Visual Studio 使用者介面項目中，您的電腦可能會顯示不同的名稱或位置。 您所擁有的 Visual Studio 版本以及使用的設定會決定這些項目。 如需詳細資訊，請參閱[將 Visual Studio IDE 個人化](../ide/personalizing-the-visual-studio-ide.md)。  
+>  在下列指示的某些 Visual Studio 使用者介面項目中，您的電腦可能會顯示不同的名稱或位置： 您所擁有的 Visual Studio 版本以及使用的設定會決定這些項目。 如需詳細資訊，請參閱[將 Visual Studio IDE 個人化](../ide/personalizing-the-visual-studio-ide.md)。  
   
 ## <a name="prerequisites"></a>必要條件  
  您需要下列元件才能完成此逐步解說：  
@@ -60,14 +57,14 @@ ms.locfileid: "49828464"
   
 - Microsoft [!INCLUDE[Outlook_15_short](../vsto/includes/outlook-15-short-md.md)] 或 Microsoft Outlook 2010。  
   
-  ![影片連結](../vsto/media/playvideo.gif "影片連結")如需相關的影片示範，請參閱[How do i： 使用在 Outlook 中的工作窗格？](http://go.microsoft.com/fwlink/?LinkID=130309)。  
+  ![影片連結](../vsto/media/playvideo.gif "影片連結")如需相關的影片示範，請參閱[How do i:在 Outlook 中使用工作窗格？](http://go.microsoft.com/fwlink/?LinkID=130309).  
   
 ## <a name="create-the-project"></a>建立專案  
  自訂工作窗格會在 VSTO 增益集中實作。開始建立 outlook 的 VSTO 增益集專案。  
   
-### <a name="to-create-a-new-project"></a>建立新的專案  
+### <a name="to-create-a-new-project"></a>若要建立新的專案  
   
-1.  建立名為 **OutlookMailItemTaskPane** 的 [Outlook 增益集] 專案。 使用 [Outlook 增益集]  專案範本。 如需詳細資訊，請參閱 <<c0> [ 如何： 在 Visual Studio 中的建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
+1.  建立名為 **OutlookMailItemTaskPane** 的 [Outlook 增益集] 專案。 使用 [Outlook 增益集]  專案範本。 如需詳細資訊，請參閱[＜How to：在 Visual Studio 中建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
   
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 會開啟 *ThisAddIn.cs* 或 *ThisAddIn.vb* 程式碼檔，並將 [OutlookMailItemTaskPane]  專案加入 [方案總管] 。  
   
@@ -267,17 +264,15 @@ ms.locfileid: "49828464"
   
 -   建立自訂工作窗格中的 VSTO 增益集不同的應用程式。 如需支援自訂工作窗格應用程式的詳細資訊，請參閱[自訂工作窗格](../vsto/custom-task-panes.md)。  
   
--   使用自訂工作窗格自動化 Microsoft Office 應用程式。 如需詳細資訊，請參閱 <<c0> [ 逐步解說： 運用自訂工作窗格應用程式的自動化](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md)。  
+-   使用自訂工作窗格自動化 Microsoft Office 應用程式。 如需詳細資訊，請參閱[逐步解說：自動化運用自訂工作窗格應用程式](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md)。  
   
--   在 Excel 中，建立可用來隱藏或顯示自訂工作窗格的功能區按鈕。 如需詳細資訊，請參閱 <<c0> [ 逐步解說： 與功能區按鈕同步處理自訂工作窗格](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md)。  
+-   在 Excel 中，建立可用來隱藏或顯示自訂工作窗格的功能區按鈕。 如需詳細資訊，請參閱[逐步解說：與功能區按鈕同步處理自訂工作窗格](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md)。  
   
 ## <a name="see-also"></a>另請參閱  
  [自訂工作窗格](../vsto/custom-task-panes.md)   
- [如何： 將自訂工作窗格新增至應用程式](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)   
- [逐步解說： 將自動化的自訂工作窗格應用程式](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md)   
- [逐步解說： 與功能區按鈕同步處理自訂工作窗格](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md)   
+ [如何：應用程式中加入自訂工作窗格](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)   
+ [逐步解說：自動化運用自訂工作窗格應用程式](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md)   
+ [逐步解說：與功能區按鈕同步處理自訂工作窗格](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md)   
  [功能區概觀](../vsto/ribbon-overview.md)   
  [Outlook 物件模型概觀](../vsto/outlook-object-model-overview.md)   
  [在執行階段功能區的存取](../vsto/accessing-the-ribbon-at-run-time.md)  
-  
-  

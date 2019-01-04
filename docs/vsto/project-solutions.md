@@ -1,9 +1,6 @@
 ---
 title: 專案的方案
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -20,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9be194bb2812f46163a6844a9fa038ee79b5f0e7
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 1ac5b8a8f26112a849567777cefb907c95a98656
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35671502"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53909771"
 ---
 # <a name="project-solutions"></a>專案的方案
   [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] 提供的專案範本可用來建立 Microsoft Office Project 的 VSTO 增益集。 您可以使用 VSTO 增益集來自動化 Project、擴充 Project 功能，或自訂 Project 的使用者介面 (UI)。  
@@ -42,7 +39,7 @@ ms.locfileid: "35671502"
   
  若要存取專案物件模型，從 VSTO 增益集，請使用`Application`欄位`ThisAddIn`專案中的類別。 `Application`欄位會傳回`Microsoft.Office.Interop.MsProject.Application`物件，表示專案的目前執行個體。 如需詳細資訊，請參閱 <<c0> [ 程式的 VSTO 增益集](../vsto/programming-vsto-add-ins.md)。  
   
- 呼叫 Project 物件模型時，您使用的類型是由 Project 的主要 Interop 組件所提供。 主要 Interop 組件的作用，如同 VSTO 增益集中 Managed 程式碼與專案中 COM 物件模型之間的橋樑。 Project 主要 interop 組件中的所有類型都定義在`Microsoft.Office.Interop.MSProject`命名空間。 如需有關主要 interop 組件的詳細資訊，請參閱 < [Office 方案開發概觀&#40;VSTO&#41; ](../vsto/office-solutions-development-overview-vsto.md)並[Office 主要 interop 組件](../vsto/office-primary-interop-assemblies.md)。  
+ 呼叫 Project 物件模型時，您使用的類型是由 Project 的主要 Interop 組件所提供。 主要 Interop 組件的作用，如同 VSTO 增益集中 Managed 程式碼與專案中 COM 物件模型之間的橋樑。 Project 主要 Interop 組件中的所有類型都定義在 `Microsoft.Office.Interop.MSProject` 命名空間中。 如需有關主要 interop 組件的詳細資訊，請參閱 < [Office 方案開發概觀&#40;VSTO&#41; ](../vsto/office-solutions-development-overview-vsto.md)並[Office 主要 interop 組件](../vsto/office-primary-interop-assemblies.md)。  
   
 ## <a name="use-the-project-object-model-documentation"></a>使用 project 物件模型文件  
  如需 Project 物件模型的完整資訊，您可以參考 Project VBA 物件模型參考。 VBA 物件模型參考記載公開給 Visual Basic for Applications (VBA) 程式碼時的專案物件模型。 如需詳細資訊，請參閱 < [Project 2010 物件模型參考](http://go.microsoft.com/fwlink/?LinkId=199771)。  
@@ -67,15 +64,13 @@ ms.locfileid: "35671502"
  如需有關如何自訂 UI 的專案範本和其他 Microsoft Office 應用程式的詳細資訊，請參閱 < [Office UI 自訂](../vsto/office-ui-customization.md)。  
   
 ## <a name="see-also"></a>另請參閱  
- [逐步解說： 建立您第一個 VSTO 增益集專案](../vsto/walkthrough-creating-your-first-vsto-add-in-for-project.md)   
+ [逐步解說：建立您第一個 VSTO 增益集專案](../vsto/walkthrough-creating-your-first-vsto-add-in-for-project.md)   
  [開始進行程式設計 VSTO 增益集](../vsto/getting-started-programming-vsto-add-ins.md)   
  [Office 方案開發概觀&#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)   
- [VSTO 增益集的架構](../vsto/architecture-of-vsto-add-ins.md)   
- [如何： 在 Visual Studio 中建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)   
+ [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md)   
+ [如何：在 Visual Studio 中建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)   
  [程式 VSTO 增益集](../vsto/programming-vsto-add-ins.md)   
  [在 Office 方案中撰寫程式碼](../vsto/writing-code-in-office-solutions.md)   
  [Office 主要 interop 組件](../vsto/office-primary-interop-assemblies.md)   
  [Office UI 自訂](../vsto/office-ui-customization.md)   
  [Project 2010 和 Project Server 2010 中的 Office 程式開發](http://go.microsoft.com/fwlink/?LinkId=199016)  
-  
-  

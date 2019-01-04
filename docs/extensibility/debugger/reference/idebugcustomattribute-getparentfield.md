@@ -1,9 +1,6 @@
 ---
 title: IDebugCustomAttribute::GetParentField |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugCustomAttribute::GetParentField
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3a0fe53b32b3aa36ae91f024d4764f4f1419a76e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8f0165c5a60b79ba5a23cb9e14a1d917058ad200
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49927329"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53916688"
 ---
 # <a name="idebugcustomattributegetparentfield"></a>IDebugCustomAttribute::GetParentField
 取得要附加自訂屬性的欄位。  
@@ -28,7 +25,7 @@ ms.locfileid: "49927329"
 ## <a name="syntax"></a>語法  
   
 ```cpp  
-HRESULT GetParentField(   
+HRESULT GetParentField(   
    IDebugField** ppField  
 );  
 ```  

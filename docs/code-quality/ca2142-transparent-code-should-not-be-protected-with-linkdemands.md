@@ -1,8 +1,7 @@
 ---
-title: CA2142：透明程式碼不可以使用 LinkDemand 加以保護
+title: CA2142:透明程式碼不可以使用 LinkDemand 加以保護
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA2142
@@ -12,14 +11,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ce7243630179aede0ce20aba998f6cb5eed0100
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 508d9606b07798a1aaa788d3d7ee87da4797dcad
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49887160"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53899898"
 ---
-# <a name="ca2142-transparent-code-should-not-be-protected-with-linkdemands"></a>CA2142：透明程式碼不可以使用 LinkDemand 加以保護
+# <a name="ca2142-transparent-code-should-not-be-protected-with-linkdemands"></a>CA2142:透明程式碼不可以使用 LinkDemand 加以保護
 
 |||
 |-|-|

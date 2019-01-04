@@ -1,8 +1,7 @@
 ---
-title: CA1812：避免使用未執行個體化的內部類別
+title: CA1812:避免使用未執行個體化的內部類別
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA1812
@@ -16,14 +15,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 45ff6e07abb77623fe1007ef5e13556e26852224
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7f69e3179ffc61faca2706436444a741a238aa73
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49827454"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53836659"
 ---
-# <a name="ca1812-avoid-uninstantiated-internal-classes"></a>CA1812：避免使用未執行個體化的內部類別
+# <a name="ca1812-avoid-uninstantiated-internal-classes"></a>CA1812:避免使用未執行個體化的內部類別
 
 |||
 |-|-|
@@ -99,8 +98,8 @@ ms.locfileid: "49827454"
 
 ## <a name="related-rules"></a>相關的規則
 
-[CA1811：避免使用未呼叫的私用程式碼](../code-quality/ca1811-avoid-uncalled-private-code.md)
+[CA1811:避免使用未呼叫的私用程式碼](../code-quality/ca1811-avoid-uncalled-private-code.md)
 
-[CA1801：必須檢閱未使用的參數](../code-quality/ca1801-review-unused-parameters.md)
+[CA1801： 必須檢閱未使用的參數](../code-quality/ca1801-review-unused-parameters.md)
 
-[CA1804：必須移除未使用的區域變數](../code-quality/ca1804-remove-unused-locals.md)
+[CA1804： 必須移除未使用的區域變數](../code-quality/ca1804-remove-unused-locals.md)

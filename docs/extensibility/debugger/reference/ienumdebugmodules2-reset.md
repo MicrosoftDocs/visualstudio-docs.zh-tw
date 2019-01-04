@@ -1,9 +1,6 @@
 ---
 title: IEnumDebugModules2::Reset |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IEnumDebugModules2::Reset
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3aabe547f880e83acfe1e061386eb57240bd4d8f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b7f33b821a8b9c9c1c47bcdc5da2e6a26b046bd0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49828212"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53937126"
 ---
 # <a name="ienumdebugmodules2reset"></a>IEnumDebugModules2::Reset
 將列舉重設第一個項目。  

@@ -1,9 +1,6 @@
 ---
 title: VSIX 封裝的結構 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - visual studio extension
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1dea0fce75d83678161013baef109364842fcc46
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b9fa23b603f8eb94ebca5256145b7fb7df837d40
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49937729"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53921480"
 ---
 # <a name="anatomy-of-a-vsix-package"></a>VSIX 封裝的結構
 VSIX 封裝 *.vsix*檔案，其中包含一或多個 Visual Studio 擴充功能，以及 Visual Studio 的中繼資料會使用分類，並安裝擴充功能。 該中繼資料會包含在 VSIX 資訊清單中， *[Content_Types].xml*檔案。 VSIX 封裝也包含一或多個*Extension.vsixlangpack*檔，以提供當地語系化設定文字，而且可能包含其他的 VSIX 套件，以安裝相依項目。  
@@ -60,4 +57,4 @@ VSIX 封裝 *.vsix*檔案，其中包含一或多個 Visual Studio 擴充功能�
 ## <a name="contenttypesxml"></a>[Content_Types].xml  
  *[Content_Types].xml*檔會識別在展開的檔案類型 *.vsix*檔案。 Visual Studio 套件的安裝期間會使用這個檔案，但不會安裝檔案本身。 如需有關這個檔案的詳細資訊，請參閱 <<c0> [ 的 [Content_types].xml 檔案結構](the-structure-of-the-content-types-dot-xml-file.md)。  
   
- A *[Content_Types].xml*開放封裝慣例 (OPC) 標準所要求檔案。 如需有關 OPC 的詳細資訊，請參閱 < [OPC： 封裝資料的全新標準](https://blogs.msdn.microsoft.com/msdnmagazine/2007/08/08/opc-a-new-standard-for-packaging-your-data/)MSDN 網站上。
+ A *[Content_Types].xml*開放封裝慣例 (OPC) 標準所要求檔案。 如需有關 OPC 的詳細資訊，請參閱[OPC:封裝資料的全新標準](https://blogs.msdn.microsoft.com/msdnmagazine/2007/08/08/opc-a-new-standard-for-packaging-your-data/)MSDN 網站上。

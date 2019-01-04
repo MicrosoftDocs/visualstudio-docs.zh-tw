@@ -1,9 +1,6 @@
 ---
 title: 全域存取 Office 專案中的物件
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -33,12 +30,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e01519600747a486fd2e719c720329a6423dd002
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: 843eba9cceefb2360ed24284a80f4359d092fd89
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53648942"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53909069"
 ---
 # <a name="global-access-to-objects-in-office-projects"></a>全域存取 Office 專案中的物件
   當您建立 Office 專案時，Visual Studio 會在專案中自動產生名為 `Globals` 的類別。 您可以使用 `Globals` 類別，在執行階段從專案的任何程式碼存取數個不同的專案項目。  
@@ -87,5 +84,3 @@ ms.locfileid: "53648942"
  [Workbook 主項目](../vsto/workbook-host-item.md)   
  [工作表主項目](../vsto/worksheet-host-item.md)   
  [在 Office 方案中撰寫程式碼](../vsto/writing-code-in-office-solutions.md)  
-  
-  

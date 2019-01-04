@@ -3,19 +3,18 @@ title: 工作流程設計工具-狀態機器活動設計工具
 ms.date: 11/04/2016
 ms.topic: reference
 ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 ms.assetid: 97f0bff5-7e48-4914-8f04-8015a1c6bfae
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: d3597a915e5b0ff946539a025a724778d7f6563a
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: f105a583937650fbccf176efdf04faee3993914d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36755498"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53873644"
 ---
 # <a name="state-machine-activity-designers"></a>狀態機器活動設計工具
 
@@ -39,7 +38,7 @@ ms.locfileid: "36755498"
 
  [使用活動設計工具](../workflow-designer/using-the-activity-designers.md)
 
- [傳訊](../workflow-designer/messaging-activity-designers.md)
+ [Messaging](../workflow-designer/messaging-activity-designers.md)
 
  [執行階段](../workflow-designer/runtime-activity-designers.md)
 

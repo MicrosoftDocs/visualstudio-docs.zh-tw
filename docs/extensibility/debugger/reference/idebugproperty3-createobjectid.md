@@ -1,9 +1,6 @@
 ---
 title: IDebugProperty3::CreateObjectID |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugProperty3::CreateObjectID
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1514c21345356bbece6680b9ccd212d15dbfa191
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b6fab6a75885dba8ddfd952ec3680e2c44b87312
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49920972"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53855818"
 ---
 # <a name="idebugproperty3createobjectid"></a>IDebugProperty3::CreateObjectID
 建立此屬性以確保它是唯一的所有其他屬性的唯一識別碼。  
@@ -28,13 +25,13 @@ ms.locfileid: "49920972"
 ## <a name="syntax"></a>語法  
   
 ```cpp  
-HRESULT CreateObjectID(  
+HRESULT CreateObjectID(  
    void  
 );  
 ```  
   
 ```csharp  
-int CreateObjectID();  
+int CreateObjectID();  
 ```  
   
 ## <a name="return-value"></a>傳回值  

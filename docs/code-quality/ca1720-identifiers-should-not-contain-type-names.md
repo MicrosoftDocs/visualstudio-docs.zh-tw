@@ -1,8 +1,7 @@
 ---
-title: CA1720：識別項不應包含類型名稱
+title: CA1720:識別項名稱不應該包含類型名稱
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA1720
@@ -16,14 +15,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 32abf9a2c11a8381b5f204a2388a85f7fd5d8230
-ms.sourcegitcommit: 1abb9cf4c3ccb90e3481ea8079272c98aad12875
+ms.openlocfilehash: 7dd351368ddb66cb389eee12b23dcff91b0653ce
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/26/2018
-ms.locfileid: "50143121"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53912265"
 ---
-# <a name="ca1720-identifiers-should-not-contain-type-names"></a>CA1720：識別項不應包含類型名稱
+# <a name="ca1720-identifiers-should-not-contain-type-names"></a>CA1720:識別項名稱不應該包含類型名稱
 
 |||
 |-|-|
@@ -141,10 +140,10 @@ ms.locfileid: "50143121"
  偶爾使用的類型為基礎的參數和成員的名稱可能是適當的。 不過，對於新的開發，沒有已知您應該在其中隱藏此規則的警告發生的案例。 如先前所提供的程式庫，您可能必須隱藏此規則的警告。
 
 ## <a name="related-rules"></a>相關的規則
- [CA1709：識別項名稱應該使用正確的大小寫](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
+ [CA1709:識別項應該使用正確的大小寫](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
 
- [CA1708：識別項名稱不應該只靠大小寫區別](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
+ [CA1708:識別項應該不僅為大小寫不同](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
 
- [CA1707：識別項名稱不應該包含底線](../code-quality/ca1707-identifiers-should-not-contain-underscores.md)
+ [CA1707:識別項不應該包含底線](../code-quality/ca1707-identifiers-should-not-contain-underscores.md)
 
- [CA1719：參數名稱不應該和成員名稱相符](../code-quality/ca1719-parameter-names-should-not-match-member-names.md)
+ [CA1719:參數名稱不應該和成員名稱相符](../code-quality/ca1719-parameter-names-should-not-match-member-names.md)

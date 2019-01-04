@@ -12,13 +12,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 8a21067eab6e55f3fb031e57fa2257b0d40a7eb6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 443d6ebd98c8e4a5c583658d46663e34769f72de
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49886457"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53858244"
 ---
 # <a name="customize-file-storage-and-xml-serialization"></a>自訂檔案儲存體和 XML 序列化
 
@@ -274,13 +273,13 @@ Moniker 用來代表的模型和圖表檔案的不同部分之間的交互參考
 |具有自訂項目結構描述|如果為 True，表示網域類別具有自訂項目結構描述|
 |為 Custom|將此設為 **，則為 True**如果您想要撰寫自己的這個網域類別的序列化和還原序列化程式碼。<br /><br /> 建置方案，並調查的錯誤，若要探索的詳細的指示。|
 |網域類別|此類別的資料節點所套用的網域類別。 唯讀。|
-|元素名稱|此類別的元素的 Xml 節點名稱。 預設值是網域類別名稱的小寫版本。|
+|項目名稱|此類別的元素的 Xml 節點名稱。 預設值是網域類別名稱的小寫版本。|
 |Moniker 屬性名稱|Moniker 元素中用來包含參考之屬性的名稱。 如果空白，則會使用的索引鍵屬性的識別碼名稱。<br /><br /> 在此範例中，它可以是"name":  `<personMoniker name="/Mike Nash"/>`|
-|Moniker 元素名稱|用於參考項目，這個類別的 moniker 之 xml 項目的名稱。<br /><br /> 預設值是類別名稱加上"Moniker"的小寫版本。 例如，`personMoniker`。|
+|Moniker 元素名稱|用於參考項目，這個類別的 moniker 之 xml 項目的名稱。<br /><br /> 預設值是類別名稱加上"Moniker"的小寫版本。 例如， `personMoniker` 。|
 |Moniker 的型別名稱|產生的項目，這個類別的 moniker 的 xsd 型別名稱。 XSD 處於**Dsl\Generated 程式碼\\\*Schema.xsd**|
 |序列化識別碼|如果為 True，在檔案中包含的項目 GUID。 這必須是 true，如果沒有任何屬性來標示**是 Moniker 索引鍵**和 DSL 定義參考關聯性，這個類別。|
 |類型名稱|在 指定的領域類別從 xsd 產生的 xml 型別的名稱。|
-|注意|這個項目相關聯的非正式附註|
+|備註|這個項目相關聯的非正式附註|
 
 ### <a name="xml-property-data"></a>Xml 屬性資料
 
@@ -294,7 +293,7 @@ Moniker 用來代表的模型和圖表檔案的不同部分之間的交互參考
 |是 Moniker 限定詞|如果為 True，屬性用於建立 moniker 中的限定詞。 如果為 false，而且 SerializeId 不適用於此領域類別，moniker 會限定內嵌樹狀結構中的父元素的 moniker。|
 |表示法|如果屬性，將屬性序列化為 xml 屬性;如果項目，它會序列化為元素;如果略過，它不是序列化。|
 |Xml 名稱|用於 xml 屬性或項目代表之屬性的名稱。 根據預設，這可以是網域屬性名稱的小寫版本。|
-|注意|這個項目相關聯的非正式附註|
+|備註|這個項目相關聯的非正式附註|
 
 ### <a name="xml-role-data"></a>Xml 角色資料
 

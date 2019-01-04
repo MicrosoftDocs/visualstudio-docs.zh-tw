@@ -1,9 +1,6 @@
 ---
 title: 命令處理 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - command handling
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a155927bb69c55c15a06cb058692038c8b309a30
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 4198cf6bbed2d8f6172872e4f98f1edb4749e7d7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39230865"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53926309"
 ---
 # <a name="command-handling"></a>命令處理
 您的編輯器可以定義新的命令。 命令通常會顯示在功能表中，在工具列上，或內容功能表中。  
@@ -28,7 +25,7 @@ ms.locfileid: "39230865"
  語言服務可以控制哪些內容功能表會顯示在編輯器中，攔截<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>列舉型別。 或者，您可以控制每個標記為基礎的內容功能表。 如需詳細資訊，請參閱 <<c0> [ 語言服務篩選器的重要命令](../extensibility/internals/important-commands-for-language-service-filters.md)。  
   
 ## <a name="add-commands-to-the-editor-context-menu"></a>將命令加入至編輯器操作功能表  
- 若要將命令新增至內容功能表中，您必須先定義一組屬於特定群組的功能表命令。 下列範例取自 *.vsct*逐步解說中所產生的檔案[逐步解說： 將功能加入至自訂編輯器](../extensibility/walkthrough-adding-features-to-a-custom-editor.md):  
+ 若要將命令新增至內容功能表中，您必須先定義一組屬於特定群組的功能表命令。 下列範例取自 *.vsct*逐步解說的一部分產生檔案[逐步解說：將功能加入至自訂編輯器](../extensibility/walkthrough-adding-features-to-a-custom-editor.md):  
   
  \<功能表的 guid ="guidCustomEditorCmdSet"id ="IDMX_RTF 」 優先順序 ="0x0000"type = [內容] >  
   

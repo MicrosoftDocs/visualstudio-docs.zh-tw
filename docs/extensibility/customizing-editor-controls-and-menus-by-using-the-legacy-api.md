@@ -1,9 +1,6 @@
 ---
 title: 使用舊版 API 自訂編輯器控制項及功能表 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - controls and menus
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0fb11419e6fccf4ec3ca510e91bf79702a5a4348
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 30e30bd1ce04c6a554aa1ab737e4c8d7c36163da
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498525"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53851257"
 ---
 # <a name="customize-editor-controls-and-mmenus-by-using-the-legacy-api"></a>使用舊版 API 自訂編輯器控制項和 Mmenus
 語言服務或文字檢視，可以控制的操作功能表和編輯器中的控制項。 在本節中的頁面詳細說明如何使用這些功能。  
@@ -33,7 +30,7 @@ ms.locfileid: "39498525"
  [操作功能表](../extensibility/context-menus.md)  
  說明編輯器操作功能表。  
   
- [如何： 更新狀態列](../extensibility/how-to-update-the-status-bar.md)  
+ [如何：更新狀態列](../extensibility/how-to-update-the-status-bar.md)  
  說明如何更新**狀態列**。  
   
 ## <a name="related-sections"></a>相關章節  

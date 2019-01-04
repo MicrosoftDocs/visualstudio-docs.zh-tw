@@ -1,9 +1,6 @@
 ---
-title: IEnumDebugCustomAttributes::Reset |Microsoft 文件
-ms.custom: ''
+title: IEnumDebugCustomAttributes::Reset |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IEnumCustomAttributes::Reset
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 56be764861c63c7f0ca0d7fc94a3841c4483b2cf
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 005791e4e6b21f06d0d3fa761538398ac89db7ce
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31120484"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53888539"
 ---
 # <a name="ienumdebugcustomattributesreset"></a>IEnumDebugCustomAttributes::Reset
 將列舉序列重設為開頭。  
@@ -36,10 +33,10 @@ int Reset();
 ```  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
   
 ## <a name="remarks"></a>備註  
- 呼叫這個方法是下, 一次呼叫之後[下一步](../../../extensibility/debugger/reference/ienumdebugcustomattributes-next.md)方法會傳回第一個元素的列舉型別。  
+ 呼叫這個方法是，下一個呼叫之後[下一步](../../../extensibility/debugger/reference/ienumdebugcustomattributes-next.md)方法會傳回第一個元素的列舉型別。  
   
 ## <a name="see-also"></a>另請參閱  
  [IEnumDebugCustomAttributes](../../../extensibility/debugger/reference/ienumdebugcustomattributes.md)   

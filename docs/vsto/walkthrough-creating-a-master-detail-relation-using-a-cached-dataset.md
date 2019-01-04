@@ -1,9 +1,6 @@
 ---
-title: 逐步解說： 建立使用快取的資料集的主版詳細資料關聯性
-ms.custom: ''
+title: 逐步解說：建立使用快取的資料集的主版詳細資料關聯性
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9d877eae119c922939ea61007a845e5bd7049076
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c75ee922694e80b5ba70e4743d397cdf465169e8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49933153"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53823645"
 ---
-# <a name="walkthrough-create-a-master-detail-relation-using-a-cached-dataset"></a>逐步解說： 建立使用快取的資料集的主版詳細資料關聯性
+# <a name="walkthrough-create-a-master-detail-relation-using-a-cached-dataset"></a>逐步解說：建立使用快取的資料集的主版詳細資料關聯性
   本逐步解說會示範在工作表，來建立主從式關聯和快取資料，以便可以離線使用方案。  
   
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]  
@@ -57,7 +54,7 @@ ms.locfileid: "49933153"
   
 ### <a name="to-create-a-new-project"></a>建立新的專案  
   
-1. 建立 Excel 活頁簿專案同名**我的主版詳細資料**，使用 Visual Basic 或 C#。 請確定**建立新的文件**已選取。 如需詳細資訊，請參閱 [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
+1. 建立 Excel 活頁簿專案同名**我的主版詳細資料**，使用 Visual Basic 或 C#。 請確定**建立新的文件**已選取。 如需詳細資訊，請參閱[＜How to：在 Visual Studio 中建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
   
    Visual Studio 設計工具中開啟新的 Excel 活頁簿，並將**我的主版詳細資料**專案加入**方案總管 中**。  
   
@@ -196,5 +193,3 @@ ms.locfileid: "49933153"
  [在 Office 方案中的資料](../vsto/data-in-office-solutions.md)   
  [快取資料](../vsto/caching-data.md)   
  [主項目和主控制項概觀](../vsto/host-items-and-host-controls-overview.md)  
-  
-  

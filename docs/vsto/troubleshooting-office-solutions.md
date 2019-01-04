@@ -1,9 +1,6 @@
 ---
 title: Office 方案進行疑難排解
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9c2997e199699bbae30e5ea02c9be400eb8250fc
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 8bc018e104ff06671f1012b1e2e1db4eaa62587e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35670835"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53926550"
 ---
 # <a name="troubleshoot-office-solutions"></a>Office 方案進行疑難排解
   本節所包含的秘訣，可解決使用 Visual Studio 中的 Office 開發工具建立方案時可能遇到的常見問題。  
@@ -31,7 +28,7 @@ ms.locfileid: "35670835"
  [針對 Office 方案中的錯誤進行疑難排解](../vsto/troubleshooting-errors-in-office-solutions.md)  
  描述您在 Visual Studio 中設計、執行及測試 Office 方案時可能發生的常見問題。  
   
- [如何： 重新啟用 VSTO 增益集已停用](../vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled.md)  
+ [如何：重新啟用 VSTO 增益集已停用](../vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled.md)  
  描述如何重新啟用 VSTO 增益集已強制或非強制停用。  
   
  [Office 方案錯誤的其他支援](../vsto/additional-support-for-errors-in-office-solutions.md)  
@@ -52,5 +49,3 @@ ms.locfileid: "35670835"
   
  [在 Office 程式設計中的一般工作](../vsto/common-tasks-in-office-programming.md)  
  列出有關 Office 方案程式設計的常見問題集，並提供可協助解決常見問題的主題連結。  
-  
-  

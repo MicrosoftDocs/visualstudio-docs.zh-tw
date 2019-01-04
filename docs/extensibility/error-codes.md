@@ -1,9 +1,6 @@
 ---
 title: 錯誤代碼 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - error codes, source control plug-ins
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 53287b85c74fae205874dce7fdd0ebf274bfda96
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 6d9139ca59394c8d5de69ddf77f51bf57b8b7619
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39636849"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53931969"
 ---
 # <a name="error-codes"></a>錯誤碼
 原始檔控制外掛程式 API 函式會傳回錯誤，它應該是其中一個下列的錯誤代碼。 所有的錯誤是負數，警告或參考用錯誤代碼為正數，並成功則為 0。  

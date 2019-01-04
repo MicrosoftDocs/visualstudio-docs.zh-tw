@@ -158,7 +158,7 @@ items:
     - name: 密碼編譯警告
       href: cryptography-warnings.md
       items:
-      - name: 'CA5350: 請勿使用弱式密碼編譯演算法'
+      - name: CA5350：請勿使用弱式密碼編譯演算法
         href: ca5350-do-not-use-weak-cryptographic-algorithms.md
       - name: CA5351 不要使用中斷的密碼編譯演算法
         href: ca5351-do-not-use-broken-cryptographic-algorithms.md
@@ -167,507 +167,507 @@ items:
       items:
       - name: CA1000：不要在泛型類型上宣告靜態成員
         href: ca1000-do-not-declare-static-members-on-generic-types.md
-      - name: CA1001：具有可處置欄位的類型應該是可處置的
+      - name: CA1001：具有可處置欄位的類型應該為可處置
         href: ca1001-types-that-own-disposable-fields-should-be-disposable.md
       - name: CA1002：不要公開泛型清單
         href: ca1002-do-not-expose-generic-lists.md
-      - name: CA1003：必須使用一般事件處理常式執行個體
+      - name: CA1003：使用一般事件處理常式執行個體
         href: ca1003-use-generic-event-handler-instances.md
-      - name: CA1004：泛型方法應該提供型別參數
+      - name: CA1004：泛型方法應該提供類型參數
         href: ca1004-generic-methods-should-provide-type-parameter.md
       - name: CA1005：避免在泛型類型上包含過多參數
         href: ca1005-avoid-excessive-parameters-on-generic-types.md
-      - name: CA1006：不要在成員簽章中巢狀化泛型類型
+      - name: CA1006：不要在成員簽章中將泛型類型巢狀化
         href: ca1006-do-not-nest-generic-types-in-member-signatures.md
-      - name: CA1007：建議在適當時使用泛型
+      - name: CA1007:建議在適當時使用泛型
         href: ca1007-use-generics-where-appropriate.md
-      - name: CA1008：列舉值中應該要有值為零的成員
+      - name: CA1008:列舉值中應該要有值為零的成員
         href: ca1008-enums-should-have-zero-value.md
-      - name: CA1009：正確宣告事件處理常式
+      - name: CA1009:事件處理常式必須正確宣告
         href: ca1009-declare-event-handlers-correctly.md
-      - name: CA1010：集合應該實作泛型介面
+      - name: CA1010:集合應該實作泛型介面
         href: ca1010-collections-should-implement-generic-interface.md
-      - name: CA1011：建議將基底類型當做參數傳遞
+      - name: CA1011:建議將基底類型當作參數傳遞
         href: ca1011-consider-passing-base-types-as-parameters.md
-      - name: CA1012：抽象類型不應具有建構函式
+      - name: CA1012:抽象類型不應該有建構函式
         href: ca1012-abstract-types-should-not-have-constructors.md
-      - name: CA1013：多載加號和減號運算子時必須一併多載等號比較運算子
+      - name: CA1013:多載加號和減號運算子時必須一併多載等號比較運算子
         href: ca1013-overload-operator-equals-on-overloading-add-and-subtract.md
-      - name: CA1014：以 CLSCompliantAttribute 標記組件
+      - name: CA1014:組件必須標記 CLSCompliantAttribute
         href: ca1014-mark-assemblies-with-clscompliantattribute.md
-      - name: CA1016：以 AssemblyVersionAttribute 標記組件
+      - name: CA1016:組件必須標記 AssemblyVersionAttribute
         href: ca1016-mark-assemblies-with-assemblyversionattribute.md
-      - name: CA1017：以 ComVisibleAttribute 標記組件
+      - name: CA1017:組件必須標記 ComVisibleAttribute
         href: ca1017-mark-assemblies-with-comvisibleattribute.md
-      - name: CA1018：以 AttributeUsageAttribute 標記屬性
+      - name: CA1018:必須以 AttributeUsageAttribute 標記屬性
         href: ca1018-mark-attributes-with-attributeusageattribute.md
-      - name: CA1019：必須定義屬性引數的存取子
+      - name: CA1019:定義屬性引數的存取子
         href: ca1019-define-accessors-for-attribute-arguments.md
-      - name: CA1020：避免在命名空間中包含過少的類型
+      - name: CA1020:避免在命名空間中包含過少的類型
         href: ca1020-avoid-namespaces-with-few-types.md
-      - name: CA1021：避免使用 out 參數
+      - name: CA1021:避免使用 out 參數
         href: ca1021-avoid-out-parameters.md
-      - name: CA1023：不應該使用多維索引子
+      - name: CA1023:不應該使用多維索引子
         href: ca1023-indexers-should-not-be-multidimensional.md
-      - name: CA1024：建議在適當時使用屬性
+      - name: CA1024:建議在適當時使用屬性
         href: ca1024-use-properties-where-appropriate.md
-      - name: CA1025：必須以參數陣列取代重複的引數
+      - name: CA1025:以參數陣列取代重複的引數
         href: ca1025-replace-repetitive-arguments-with-params-array.md
-      - name: CA1026：不應使用預設參數
+      - name: CA1026:不應該使用預設參數
         href: ca1026-default-parameters-should-not-be-used.md
-      - name: CA1027：必須以 FlagsAttribute 標記列舉
+      - name: CA1027:必須以 FlagsAttribute 標記列舉
         href: ca1027-mark-enums-with-flagsattribute.md
-      - name: CA1028：列舉儲存區應該是 Int32
+      - name: CA1028:列舉儲存區應該是 Int32
         href: ca1028-enum-storage-should-be-int32.md
-      - name: CA1030：建議在適當時使用事件
+      - name: CA1030:建議在適當時使用事件
         href: ca1030-use-events-where-appropriate.md
-      - name: CA1031：不要攔截一般例外狀況類型
+      - name: CA1031:不要攔截一般例外狀況類型
         href: ca1031-do-not-catch-general-exception-types.md
-      - name: CA1032：必須實作標準例外狀況建構函式
+      - name: CA1032:必須實作標準例外狀況建構函式
         href: ca1032-implement-standard-exception-constructors.md
-      - name: CA1033：介面方法應該要可以由子類型呼叫
+      - name: CA1033:介面方法應該要可以由子類型呼叫
         href: ca1033-interface-methods-should-be-callable-by-child-types.md
-      - name: CA1034：巢狀類型不應為可見
+      - name: CA1034:巢狀類型不應該為可見的
         href: ca1034-nested-types-should-not-be-visible.md
-      - name: CA1035：ICollection 實作包含強類型成員
+      - name: CA1035:ICollection 的實作有強類型成員
         href: ca1035-icollection-implementations-have-strongly-typed-members.md
-      - name: CA1036：必須在 Comparable 類型中覆寫方法
+      - name: CA1036:必須在 Comparable 類型中覆寫方法
         href: ca1036-override-methods-on-comparable-types.md
-      - name: CA1038：列舉程式應該是強類型
+      - name: CA1038:列舉程式應該是強類型
         href: ca1038-enumerators-should-be-strongly-typed.md
-      - name: CA1039：清單為強類型
+      - name: CA1039:清單為強類型
         href: ca1039-lists-are-strongly-typed.md
-      - name: CA1040：避免空的介面
+      - name: CA1040:避免使用空的介面
         href: ca1040-avoid-empty-interfaces.md
-      - name: CA1041：提供 ObsoleteAttribute 訊息
+      - name: CA1041:必須提供 ObsoleteAttribute 訊息
         href: ca1041-provide-obsoleteattribute-message.md
-      - name: CA1043：必須針對索引子使用整數類或字串引數
+      - name: CA1043:必須針對索引子使用整數或字串引數
         href: ca1043-use-integral-or-string-argument-for-indexers.md
-      - name: CA1044：屬性不應為唯寫
+      - name: CA1044:屬性不應該為唯寫的
         href: ca1044-properties-should-not-be-write-only.md
-      - name: CA1045：不要以傳址方式傳遞類型
+      - name: CA1045:不要以傳址方式傳遞類型
         href: ca1045-do-not-pass-types-by-reference.md
-      - name: CA1046：請勿多載參考類型上的等號比較運算子
+      - name: CA1046:不要多載參考類型上的等號比較運算子
         href: ca1046-do-not-overload-operator-equals-on-reference-types.md
-      - name: CA1047：不要在密封類型中宣告 protected 成員
+      - name: CA1047:不要在密封類型中宣告 protected 成員
         href: ca1047-do-not-declare-protected-members-in-sealed-types.md
-      - name: CA1048：不要在密封類型中宣告 virtual 成員
+      - name: CA1048:不要在密封類型中宣告 virtual 成員
         href: ca1048-do-not-declare-virtual-members-in-sealed-types.md
-      - name: CA1049：擁有原生資源的類型應為可處置
+      - name: CA1049:具有原生資源的類型應該要可呼叫 Dispose 方法明確釋放資源
         href: ca1049-types-that-own-native-resources-should-be-disposable.md
-      - name: CA1050：在命名空間中宣告類型
+      - name: CA1050:類型必須在命名空間中宣告
         href: ca1050-declare-types-in-namespaces.md
-      - name: CA1051：不要宣告可見的執行個體欄位
+      - name: CA1051:不要宣告可見的執行個體欄位
         href: ca1051-do-not-declare-visible-instance-fields.md
-      - name: CA1052：靜態預留位置類型應該為密封的
+      - name: CA1052:靜態預留位置類型應該為密封的
         href: ca1052-static-holder-types-should-be-sealed.md
-      - name: CA1053：靜態預留位置類型不應包含建構函式
+      - name: CA1053:靜態預留位置類型不應該包含建構函式
         href: ca1053-static-holder-types-should-not-have-constructors.md
-      - name: CA1054：URI 參數不應該為字串
+      - name: CA1054:URI 參數不應該為字串
         href: ca1054-uri-parameters-should-not-be-strings.md
-      - name: CA1055：URI 傳回值不應該為字串
+      - name: CA1055:URI 傳回值不應該為字串
         href: ca1055-uri-return-values-should-not-be-strings.md
-      - name: CA1056：URI 屬性不應該為字串
+      - name: CA1056:URI 屬性不應該為字串
         href: ca1056-uri-properties-should-not-be-strings.md
-      - name: CA1057：字串 URI 多載呼叫 System.Uri 多載
+      - name: CA1057:字串 URI 多載呼叫 System.Uri 多載
         href: ca1057-string-uri-overloads-call-system-uri-overloads.md
-      - name: CA1058：類型不應該擴充特定的基底類型
+      - name: CA1058:類型不應該擴充特定基底類型
         href: ca1058-types-should-not-extend-certain-base-types.md
-      - name: CA1059：成員不應該公開特定的具象類型
+      - name: CA1059:成員不應該公開特定的具象類型
         href: ca1059-members-should-not-expose-certain-concrete-types.md
-      - name: CA1060：必須將 P-Invokes 移到 NativeMethods 類別
+      - name: CA1060:必須將 P-Invokes 移到 NativeMethods 類別
         href: ca1060-move-p-invokes-to-nativemethods-class.md
-      - name: CA1061：不要隱藏基底類別方法
+      - name: CA1061:不要隱藏基底類別方法
         href: ca1061-do-not-hide-base-class-methods.md
-      - name: CA1062：驗證公用方法的引數
+      - name: CA1062:必須驗證公用方法的引數
         href: ca1062-validate-arguments-of-public-methods.md
-      - name: CA1063：必須正確實作 IDisposable
+      - name: CA1063:必須正確實作 IDisposable
         href: ca1063-implement-idisposable-correctly.md
-      - name: CA1064：例外狀況必須是公用
+      - name: CA1064:例外狀況必須是公用
         href: ca1064-exceptions-should-be-public.md
-      - name: CA1065：不要在非預期的位置中引發例外狀況
+      - name: CA1065:不要在非預期的位置中引發例外狀況
         href: ca1065-do-not-raise-exceptions-in-unexpected-locations.md
-      - name: CA2210：組件應包含有效的強式名稱
+      - name: CA2210:組件應該具備有效的強式名稱
         href: ca2210-assemblies-should-have-valid-strong-names.md
     - name: 全球化警告
       href: globalization-warnings.md
       items:
-      - name: CA1300：指定 MessageBoxOptions
+      - name: CA1300:必須指定 MessageBoxOptions
         href: ca1300-specify-messageboxoptions.md
-      - name: CA1301：避免使用重複的快速鍵
+      - name: CA1301:避免使用重複的快速鍵
         href: ca1301-avoid-duplicate-accelerators.md
-      - name: CA1302：請勿於程式中定義地區設定專屬的字串
+      - name: CA1302:不要以硬式編碼的方式加入適用於特定地區設定的字串
         href: ca1302-do-not-hardcode-locale-specific-strings.md
-      - name: CA1303：不要將常值當做已當地語系化的參數傳遞
+      - name: CA1303:不要將常值當作已當地語系化的參數傳遞
         href: ca1303-do-not-pass-literals-as-localized-parameters.md
-      - name: CA1304：指定 CultureInfo
+      - name: CA1304:必須指定 CultureInfo
         href: ca1304-specify-cultureinfo.md
-      - name: CA1305：指定 IFormatProvider
+      - name: CA1305:必須指定 IFormatProvider
         href: ca1305-specify-iformatprovider.md
-      - name: CA1306：設定資料類型的地區設定
+      - name: CA1306:必須設定資料類型的地區設定
         href: ca1306-set-locale-for-data-types.md
-      - name: CA1307：指定 StringComparison
+      - name: CA1307:必須指定 StringComparison
         href: ca1307-specify-stringcomparison.md
-      - name: CA1308：必須將字串標準化為大寫字母
+      - name: CA1308:必須將字串標準化為大寫字母
         href: ca1308-normalize-strings-to-uppercase.md
-      - name: CA1309：使用循序的 StringComparison
+      - name: CA1309:使用循序的 StringComparison
         href: ca1309-use-ordinal-stringcomparison.md
-      - name: CA2101：必須指定 P/Invoke 字串引數的封送處理
+      - name: CA2101:必須指定 P-Invoke 字串引數的封送處理
         href: ca2101-specify-marshaling-for-p-invoke-string-arguments.md
     - name: 互通性警告
       href: interoperability-warnings.md
       items:
-      - name: CA1400：P/Invoke 進入點應該存在
+      - name: CA1400:P-Invoke 進入點應該要存在
         href: ca1400-p-invoke-entry-points-should-exist.md
-      - name: CA1401：P/Invokes 不應該為可見
+      - name: CA1401:P-Invokes 不應該為可見的
         href: ca1401-p-invokes-should-not-be-visible.md
-      - name: CA1402：避免在 COM 可見介面中多載
+      - name: CA1402:避免在 COM 可見介面中多載
         href: ca1402-avoid-overloads-in-com-visible-interfaces.md
-      - name: CA1403：自動配置類型不應該是 COM 可見
+      - name: CA1403:自動配置類型不應該是 COM 可見
         href: ca1403-auto-layout-types-should-not-be-com-visible.md
-      - name: CA1404：必須在 P/Invoke 之後立即呼叫 GetLastError
+      - name: CA1404:必須在 P-Invoke 之後立即呼叫 GetLastError
         href: ca1404-call-getlasterror-immediately-after-p-invoke.md
-      - name: CA1405：COM 可見類型的基底類型應該是 COM 可見
+      - name: CA1405:COM 可見類型的基底類型應該是 COM 可見
         href: ca1405-com-visible-type-base-types-should-be-com-visible.md
-      - name: CA1406：避免對 Visual Basic 6 用戶端使用 Int64 引數
+      - name: CA1406:避免對 Visual Basic 6 用戶端使用 int64 引數
         href: ca1406-avoid-int64-arguments-for-visual-basic-6-clients.md
-      - name: CA1407：避免在 COM 可見類型中使用靜態成員
+      - name: CA1407:避免在 COM 可見類型中使用靜態成員
         href: ca1407-avoid-static-members-in-com-visible-types.md
-      - name: CA1408：不要使用 AutoDual ClassInterfaceType
+      - name: CA1408:不要使用 AutoDual ClassInterfaceType
         href: ca1408-do-not-use-autodual-classinterfacetype.md
-      - name: CA1409：COM 可見類型應該是可建立的
+      - name: CA1409:Com 可見類型應該是可建立的
         href: ca1409-com-visible-types-should-be-creatable.md
-      - name: CA1410：應該符合 COM 註冊方法
+      - name: CA1410:應該和 COM 註冊方法對應
         href: ca1410-com-registration-methods-should-be-matched.md
-      - name: CA1411：COM 註冊方法不應該為可見的
+      - name: CA1411:COM 註冊方法不應該為可見的
         href: ca1411-com-registration-methods-should-not-be-visible.md
-      - name: CA1412：將 ComSource 介面標記為 IDispatch
+      - name: CA1412:ComSource 介面必須標記為 IDispatch
         href: ca1412-mark-comsource-interfaces-as-idispatch.md
-      - name: CA1413：避免在 COM 可見的實值類型中使用非公用欄位
+      - name: CA1413:避免在 COM 可見實值類型中使用非公用欄位
         href: ca1413-avoid-non-public-fields-in-com-visible-value-types.md
-      - name: CA1414：以 MarshalAs 標記布林值 P/Invoke 引數
+      - name: CA1414:以 MarshalAs 標記布林 P-Invoke 引數
         href: ca1414-mark-boolean-p-invoke-arguments-with-marshalas.md
-      - name: CA1415：P/Invokes 必須正確宣告
+      - name: CA1415:P-Invokes 必須正確宣告。
         href: ca1415-declare-p-invokes-correctly.md
     - name: 維護性警告
       href: maintainability-warnings.md
       items:
-      - name: CA1500：變數名稱不應該與欄位名稱相符
+      - name: CA1500:變數名稱不應該與欄位名稱相符
         href: ca1500-variable-names-should-not-match-field-names.md
-      - name: CA1501：避免過度繼承
+      - name: CA1501:避免在物件間過度繼承
         href: ca1501-avoid-excessive-inheritance.md
-      - name: CA1502：避免過度複雜
+      - name: CA1502:避免造成過度複雜的方法
         href: ca1502-avoid-excessive-complexity.md
-      - name: CA1504：必須檢視可能造成誤導的欄位名稱
+      - name: CA1504:必須檢閱可能造成誤導的欄位名稱
         href: ca1504-review-misleading-field-names.md
-      - name: CA1505：應避免撰寫無法維護的程式碼
+      - name: CA1505:應避免撰寫無法維護的程式碼
         href: ca1505-avoid-unmaintainable-code.md
-      - name: CA1506：應避免使用結合過度的類別
+      - name: CA1506:應避免使用結合過度的類別
         href: ca1506-avoid-excessive-class-coupling.md
     - name: 行動性警告
       href: mobility-warnings.md
       items:
-      - name: CA1600：不要使用 Idle 處理序優先權
+      - name: CA1600:不要使用 Idle 處理序優先順序
         href: ca1600-do-not-use-idle-process-priority.md
-      - name: CA1601：不要使用會妨礙電源狀態變更的計時器
+      - name: CA1601:不要使用會妨礙電源狀態變更的計時器
         href: ca1601-do-not-use-timers-that-prevent-power-state-changes.md
     - name: 命名警告
       href: naming-warnings.md
       items:
-      - name: CA1700：不要在列舉值名稱中包含 'Reserved'
+      - name: CA1700:不要在列舉值名稱中包含 'Reserved'
         href: ca1700-do-not-name-enum-values-reserved.md
-      - name: CA1701：資源字串複合字應該使用正確的大小寫
+      - name: CA1701:資源字串複合字應該使用正確的大小寫
         href: ca1701-resource-string-compound-words-should-be-cased-correctly.md
-      - name: CA1702：複合字應該使用正確的大小寫
+      - name: CA1702:複合字應該使用正確的大小寫
         href: ca1702-compound-words-should-be-cased-correctly.md
-      - name: CA1703：資源字串應該拼寫正確
+      - name: CA1703:資源字串應該使用正確的拼字
         href: ca1703-resource-strings-should-be-spelled-correctly.md
-      - name: CA1704：識別項應該使用正確的拼字
+      - name: CA1704:識別項應該使用正確的拼字
         href: ca1704-identifiers-should-be-spelled-correctly.md
-      - name: CA1707：識別項不應包含底線
+      - name: CA1707:識別項名稱不應該包含底線
         href: ca1707-identifiers-should-not-contain-underscores.md
-      - name: CA1708：識別項名稱不應該只靠大小寫區別
+      - name: CA1708:識別項名稱不應該只靠大小寫區別
         href: ca1708-identifiers-should-differ-by-more-than-case.md
-      - name: CA1709：識別項名稱應該使用正確的大小寫
+      - name: CA1709:識別項名稱應該使用正確的大小寫
         href: ca1709-identifiers-should-be-cased-correctly.md
-      - name: CA1710：識別項應該使用正確的後置字元
+      - name: CA1710:識別項應該使用正確的後置字元
         href: ca1710-identifiers-should-have-correct-suffix.md
-      - name: CA1711：識別項名稱不應該使用不正確的後置字元
+      - name: CA1711:識別項名稱不應該使用不正確的後置字元
         href: ca1711-identifiers-should-not-have-incorrect-suffix.md
-      - name: CA1712：不要使用類型名稱做為列舉值的前置字元
+      - name: CA1712:不要使用類型名稱作為列舉值的前置字元
         href: ca1712-do-not-prefix-enum-values-with-type-name.md
-      - name: CA1713：事件不應有 before 或 after 前置字元
+      - name: CA1713:事件不應該有 before 或 after 前置字元
         href: ca1713-events-should-not-have-before-or-after-prefix.md
-      - name: CA1714：旗標列舉應該使用複數名稱
+      - name: CA1714:旗標列舉應該使用複數名稱
         href: ca1714-flags-enums-should-have-plural-names.md
-      - name: CA1715：識別項名稱應該使用正確的前置字元
+      - name: CA1715:識別項名稱應該使用正確的前置字元
         href: ca1715-identifiers-should-have-correct-prefix.md
-      - name: CA1716：識別項名稱不應該和關鍵字相符
+      - name: CA1716:識別項名稱不應該和關鍵字相符
         href: ca1716-identifiers-should-not-match-keywords.md
-      - name: CA1717：只有 FlagsAttribute 列舉應該使用複數名稱
+      - name: CA1717:只有 FlagsAttribute 列舉應該使用複數名稱
         href: ca1717-only-flagsattribute-enums-should-have-plural-names.md
-      - name: CA1719：參數名稱不應符合成員名稱
+      - name: CA1719:參數名稱不應該和成員名稱相符
         href: ca1719-parameter-names-should-not-match-member-names.md
-      - name: CA1720：識別項不應包含類型名稱
+      - name: CA1720:識別項名稱不應該包含類型名稱
         href: ca1720-identifiers-should-not-contain-type-names.md
-      - name: CA1721：屬性名稱不能和其中有 get 的方法名稱相符
+      - name: CA1721:屬性名稱不應該和其中有 get 的方法名稱相符
         href: ca1721-property-names-should-not-match-get-methods.md
-      - name: CA1722：識別項不應使用不正確的前置字元
+      - name: CA1722:識別項名稱不應該使用不正確的前置字元
         href: ca1722-identifiers-should-not-have-incorrect-prefix.md
-      - name: CA1725：參數名稱應該符合基底宣告
+      - name: CA1725:參數名稱應該符合基底類型的宣告
         href: ca1725-parameter-names-should-match-base-declaration.md
-      - name: CA1724：類型名稱不應該和命名空間相符
+      - name: CA1724:類型名稱不應該和命名空間相符
         href: ca1724-type-names-should-not-match-namespaces.md
-      - name: CA1726：建議使用慣用詞彙
+      - name: CA1726:建議使用慣用詞彙
         href: ca1726-use-preferred-terms.md
     - name: 效能警告
       href: performance-warnings.md
       items:
-      - name: CA1800：請勿執行不必要的轉型
+      - name: CA1800:不要執行不必要的轉換
         href: ca1800-do-not-cast-unnecessarily.md
-      - name: CA1802：建議在適當時使用常值
+      - name: CA1802:建議在適當時使用常值
         href: ca1802-use-literals-where-appropriate.md
-      - name: CA1804：必須移除未使用的區域變數
+      - name: CA1804:必須移除未使用的區域變數
         href: ca1804-remove-unused-locals.md
-      - name: CA1809：避免使用過多區域變數
+      - name: CA1809:避免在方法中包含過多區域變數
         href: ca1809-avoid-excessive-locals.md
-      - name: CA1810：必須初始化參考類型內部的靜態欄位
+      - name: CA1810:必須將參考類型內部的靜態欄位初始化
         href: ca1810-initialize-reference-type-static-fields-inline.md
-      - name: CA1811：避免使用未呼叫的私用程式碼
+      - name: CA1811:避免使用未呼叫的私用程式碼
         href: ca1811-avoid-uncalled-private-code.md
-      - name: CA1812：避免使用未執行個體化的內部類別
+      - name: CA1812:避免使用未執行個體化的內部類別
         href: ca1812-avoid-uninstantiated-internal-classes.md
-      - name: CA1813：避免使用非密封屬性
+      - name: CA1813:避免使用非密封屬性
         href: ca1813-avoid-unsealed-attributes.md
-      - name: CA1814：建議使用不規則陣列取代多維陣列
+      - name: CA1814:建議使用不規則陣列取代多維陣列
         href: ca1814-prefer-jagged-arrays-over-multidimensional.md
-      - name: CA1815：覆寫實值類型上的等號和等號比較運算子
+      - name: CA1815:必須覆寫實值類型上的 Equals 方法和等號比較運算子
         href: ca1815-override-equals-and-operator-equals-on-value-types.md
-      - name: CA1819：屬性不應傳回陣列
+      - name: CA1819:屬性不應該傳回陣列
         href: ca1819-properties-should-not-return-arrays.md
-      - name: CA1820：應該使用字串長度測試空白字串
+      - name: CA1820:應該使用字串長度測試空白字串
         href: ca1820-test-for-empty-strings-using-string-length.md
-      - name: CA1821：必須移除空的完成項
+      - name: CA1821:必須移除空的完成項
         href: ca1821-remove-empty-finalizers.md
-      - name: CA1822：將成員標記為靜態
+      - name: CA1822:將成員標記為 static
         href: ca1822-mark-members-as-static.md
-      - name: CA1823：避免包含未使用的私用欄位
+      - name: CA1823:避免包含未使用的私用欄位
         href: ca1823-avoid-unused-private-fields.md
-      - name: CA1824：以 NeutralResourcesLanguageAttribute 標記組件
+      - name: CA1824:組件必須標記 NeutralResourcesLanguageAttribute
         href: ca1824-mark-assemblies-with-neutralresourceslanguageattribute.md
     - name: 可攜性警告
       href: portability-warnings.md
       items:
-      - name: CA1900：實值類型欄位應該為可移植的
+      - name: CA1900:實值類型欄位應該為可移植的
         href: ca1900-value-type-fields-should-be-portable.md
-      - name: CA1901：P/Invoke 宣告應該為可移植
+      - name: CA1901:P-Invoke 宣告應該為可移植的
         href: ca1901-p-invoke-declarations-should-be-portable.md
-      - name: CA1903：只使用來自目標架構的 API
+      - name: CA1903:只使用來自目標架構的 API
         href: ca1903-use-only-api-from-targeted-framework.md
     - name: 可靠性警告
       href: reliability-warnings.md
       items:
-      - name: CA2000：必須在超出範圍前處置物件
+      - name: CA2000:必須在超出範圍前處置物件
         href: ca2000-dispose-objects-before-losing-scope.md
-      - name: CA2001：避免呼叫有問題的方法
+      - name: CA2001:避免呼叫有問題的方法
         href: ca2001-avoid-calling-problematic-methods.md
-      - name: CA2002：請勿鎖定具有弱式識別的物件
+      - name: CA2002:不要鎖定具有弱式識別的物件
         href: ca2002-do-not-lock-on-objects-with-weak-identity.md
-      - name: CA2003：不要將 Fiber 視為執行緒
+      - name: CA2003:不要將 Fiber 視為執行緒
         href: ca2003-do-not-treat-fibers-as-threads.md
-      - name: CA2004：必須移除對 GC.KeepAlive 的呼叫
+      - name: CA2004:必須移除對 GC.KeepAlive 的呼叫
         href: ca2004-remove-calls-to-gc-keepalive.md
-      - name: CA2006：使用 SafeHandle 封裝原生資源
+      - name: CA2006:必須使用 SafeHandle 封裝原生資源
         href: ca2006-use-safehandle-to-encapsulate-native-resources.md
     - name: 安全性警告
       href: security-warnings.md
       items:
-      - name: CA2100：必須檢視 SQL 查詢中是否有安全性弱點
+      - name: CA2100:必須檢閱 SQL 查詢中是否有安全性弱點
         href: ca2100-review-sql-queries-for-security-vulnerabilities.md
-      - name: CA2102：在一般處理常式中攔截非 CLSCompliant 的例外狀況
+      - name: CA2102:必須使用一般處理常式攔截非 CLSCompliant 例外狀況
         href: ca2102-catch-non-clscompliant-exceptions-in-general-handlers.md
-      - name: CA2103：必須檢視命令式安全性
+      - name: CA2103:必須檢閱命令式安全性
         href: ca2103-review-imperative-security.md
-      - name: CA2104：不要宣告唯讀的可變動參考類型
+      - name: CA2104:不要宣告唯讀的可變動參考類型
         href: ca2104-do-not-declare-read-only-mutable-reference-types.md
-      - name: CA2105：陣列欄位不應為唯讀
+      - name: CA2105:陣列欄位不應該為唯讀
         href: ca2105-array-fields-should-not-be-read-only.md
-      - name: CA2106：必須保護判斷提示
+      - name: CA2106:必須保護判斷提示
         href: ca2106-secure-asserts.md
-      - name: CA2107：必須檢視 Deny 和 Permit Only 的使用方式
+      - name: CA2107:必須檢閱 Deny 和 Permit Only 的使用方式
         href: ca2107-review-deny-and-permit-only-usage.md
-      - name: CA2108：必須檢查實值類型上的宣告式安全性
+      - name: CA2108:必須檢閱實值類型上的宣告式安全性
         href: ca2108-review-declarative-security-on-value-types.md
-      - name: CA2109：必須檢閱可見的事件處理常式
+      - name: CA2109:必須檢閱可見的事件處理常式
         href: ca2109-review-visible-event-handlers.md
-      - name: CA2111：指標不應該為可見的
+      - name: CA2111:指標不應該為可見的
         href: ca2111-pointers-should-not-be-visible.md
-      - name: CA2112：受保護類型不應公開欄位
+      - name: CA2112:受保護類型不應該公開欄位
         href: ca2112-secured-types-should-not-expose-fields.md
-      - name: CA2114：方法安全性應該是類型的超集
+      - name: CA2114:方法安全性應該是類型的超集
         href: ca2114-method-security-should-be-a-superset-of-type.md
-      - name: CA2115：使用原生資源時必須呼叫 GC.KeepAlive
+      - name: CA2115:使用原生資源時必須呼叫 GC.KeepAlive
         href: ca2115-call-gc-keepalive-when-using-native-resources.md
-      - name: CA2116：APTCA 方法應該只呼叫 APTCA 方法
+      - name: CA2116:APTCA 方法應該只呼叫 APTCA 方法
         href: ca2116-aptca-methods-should-only-call-aptca-methods.md
-      - name: CA2117：APTCA 類型應該只擴充 APTCA 基底類型
+      - name: CA2117:APTCA 類型應該只擴充 APTCA 基底類型
         href: ca2117-aptca-types-should-only-extend-aptca-base-types.md
-      - name: CA2118：必須檢閱 SuppressUnmanagedCodeSecurityAttribute 使用方法
+      - name: CA2118:檢閱 SuppressUnmanagedCodeSecurityAttribute 使用方法
         href: ca2118-review-suppressunmanagedcodesecurityattribute-usage.md
-      - name: CA2119：密封方法以滿足私用介面的要求
+      - name: CA2119:密封方法以滿足私用介面的要求
         href: ca2119-seal-methods-that-satisfy-private-interfaces.md
-      - name: CA2120：必須保護序列化建構函式
+      - name: CA2120:必須保護序列化建構函式
         href: ca2120-secure-serialization-constructors.md
-      - name: CA2121：靜態建構函式應為私用
+      - name: CA2121:靜態建構函式應該為私用的
         href: ca2121-static-constructors-should-be-private.md
-      - name: CA2122：不要間接公開具有連結要求的方法
+      - name: CA2122:不要間接公開具有連結要求的方法
         href: ca2122-do-not-indirectly-expose-methods-with-link-demands.md
-      - name: CA2123：覆寫連結要求應該與基底相同
+      - name: CA2123:覆寫連結要求應該與基底相同
         href: ca2123-override-link-demands-should-be-identical-to-base.md
-      - name: CA2124：必須將有弱點的 finally 子句包裝在外層 try 中
+      - name: CA2124:必須將有弱點的 finally 子句包裝在外層 try 中
         href: ca2124-wrap-vulnerable-finally-clauses-in-outer-try.md
-      - name: CA2126：必須同時具有類型連結要求和繼承要求
+      - name: CA2126:必須同時具有類型連結要求和繼承要求
         href: ca2126-type-link-demands-require-inheritance-demands.md
-      - name: CA2130：安全性關鍵常數應該是透明的
+      - name: CA2130:安全性關鍵常數應該是透明的
         href: ca2130-security-critical-constants-should-be-transparent.md
-      - name: CA2131：安全性關鍵類型可能未參與類型等價
+      - name: CA2131:安全性關鍵類型可能未參與類型等價
         href: ca2131-security-critical-types-may-not-participate-in-type-equivalence.md
-      - name: CA2132：預設建構函式至少必須和基底類型的預設建構函式一樣關鍵
+      - name: CA2132:預設建構函式至少必須和基底類型的預設建構函式一樣關鍵
         href: ca2132-default-constructors-must-be-at-least-as-critical-as-base-type-default-constructors.md
-      - name: CA2133：委派必須繫結至透明度一致的方法
+      - name: CA2133:委派必須繫結至具有一致透明度的方法
         href: ca2133-delegates-must-bind-to-methods-with-consistent-transparency.md
-      - name: CA2134：覆寫基底方法時，方法必須保持一致的透明度
+      - name: CA2134:覆寫基底方法時，方法必須保持一致的透明度
         href: ca2134-methods-must-keep-consistent-transparency-when-overriding-base-methods.md
-      - name: CA2135：層級 2 組件不應該包含 LinkDemand
+      - name: CA2135:層級 2 組件不應該包含 LinkDemand
         href: ca2135-level-2-assemblies-should-not-contain-linkdemands.md
-      - name: CA2136：成員不應該具有衝突的透明度附註
+      - name: CA2136:成員不應該具有衝突的透明度註釋
         href: ca2136-members-should-not-have-conflicting-transparency-annotations.md
-      - name: CA2137：透明方法必須只包含可驗證的 IL
+      - name: CA2137:透明方法必須只包含可驗證的 IL
         href: ca2137-transparent-methods-must-contain-only-verifiable-il.md
-      - name: CA2138：透明方法不可以使用 SuppressUnmanagedCodeSecurity 屬性呼叫方法
+      - name: CA2138:透明方法不可以使用 SuppressUnmanagedCodeSecurity 屬性呼叫方法
         href: ca2138-transparent-methods-must-not-call-methods-with-the-suppressunmanagedcodesecurity-attribute.md
-      - name: CA2139：透明方法不能使用 HandleProcessCorruptingExceptions 屬性
+      - name: CA2139:透明方法不能使用 HandleProcessCorruptingExceptions 屬性
         href: ca2139-transparent-methods-may-not-use-the-handleprocesscorruptingexceptions-attribute.md
-      - name: CA2140：透明程式碼不可以參考安全性關鍵項目
+      - name: CA2140:透明程式碼不可以參考安全性關鍵項目
         href: ca2140-transparent-code-must-not-reference-security-critical-items.md
       - name: CA2141：透明方法不可以滿足 LinkDemand
         href: ca2141-transparent-methods-must-not-satisfy-linkdemands.md
-      - name: CA2142：透明程式碼不可以使用 LinkDemand 加以保護
+      - name: CA2142:透明程式碼不可以使用 LinkDemand 加以保護
         href: ca2142-transparent-code-should-not-be-protected-with-linkdemands.md
-      - name: CA2143：透明方法不可以使用安全性要求
+      - name: CA2143:透明方法不可以使用安全性要求
         href: ca2143-transparent-methods-should-not-use-security-demands.md
-      - name: CA2144：透明程式碼不可以從位元組陣列載入組件
+      - name: CA2144:透明程式碼不可以從位元組陣列載入組件
         href: ca2144-transparent-code-should-not-load-assemblies-from-byte-arrays.md
-      - name: CA2145：透明方法不可以使用 SuppressUnmanagedCodeSecurityAttribute 來裝飾
+      - name: CA2145:透明方法不可以使用 SuppressUnmanagedCodeSecurityAttribute 來裝飾
         href: ca2145-transparent-methods-should-not-be-decorated-with-the-suppressunmanagedcodesecurityattribute.md
-      - name: CA2146：類型至少必須和基底類型與介面一樣關鍵
+      - name: CA2146:類型至少必須和基底類型與介面一樣關鍵
         href: ca2146-types-must-be-at-least-as-critical-as-their-base-types-and-interfaces.md
-      - name: CA2147：透明的方法不可以使用安全性判斷提示
+      - name: CA2147:CA2147：透明方法不可以使用安全性判斷提示
         href: ca2147-transparent-methods-may-not-use-security-asserts.md
-      - name: CA2149：透明方法不可以呼叫機器碼
+      - name: CA2149:透明方法不可以呼叫機器碼
         href: ca2149-transparent-methods-must-not-call-into-native-code.md
-      - name: CA2151：具有關鍵類型的欄位應為安全性關鍵
+      - name: CA2151:具有關鍵類型的欄位應為安全性關鍵
         href: ca2151-fields-with-critical-types-should-be-security-critical.md
       - name: CA5122 P-Invoke 宣告不可為安全關鍵
         href: ca5122-p-invoke-declarations-should-not-be-safe-critical.md
-      - name: CA2153：避免處理損毀狀態例外狀況
+      - name: CA2153:避免處理損毀狀態例外狀況
         href: ca2153-avoid-handling-corrupted-state-exceptions.md
-      - name: CA3075：不安全的 DTD 處理
+      - name: CA3075:不安全的 DTD 處理
         href: ca3075-insecure-dtd-processing.md
-      - name: CA3076：不安全的 XSLT 指令碼執行
+      - name: CA3076:不安全的 XSLT 指令碼執行
         href: ca3076-insecure-xslt-script-execution.md
-      - name: CA3077：API 設計、XML 文件和 XML 文字讀取器中的不安全處理
+      - name: CA3077:API 設計、XML 文件和 XML 文字讀取器中的不安全處理
         href: ca3077-insecure-processing-in-api-design-xml-document-and-xml-text-reader.md
-      - name: CA3147：使用 ValidateAntiForgeryToken 標示動詞處理常式
+      - name: CA3147:使用 ValidateAntiForgeryToken 標示動詞處理常式
         href: ca3147-mark-verb-handlers-with-validateantiforgerytoken.md
     - name: 用法警告
       href: usage-warnings.md
       items:
-      - name: CA1801：必須檢閱未使用的參數
+      - name: CA1801:必須檢閱未使用的參數
         href: ca1801-review-unused-parameters.md
-      - name: CA1806：不要忽略方法的結果
+      - name: CA1806:不要忽略方法的結果
         href: ca1806-do-not-ignore-method-results.md
-      - name: CA1816：正確呼叫 GC.SuppressFinalize
+      - name: CA1816:正確呼叫 GC.SuppressFinalize
         href: ca1816-call-gc-suppressfinalize-correctly.md
-      - name: CA2200：請重新擲回以保存堆疊詳細資料
+      - name: CA2200:必須重新擲回以保存堆疊詳細資料
         href: ca2200-rethrow-to-preserve-stack-details.md
-      - name: CA2201：不要引發保留的例外狀況類型
+      - name: CA2201:不要引發保留的例外狀況類型
         href: ca2201-do-not-raise-reserved-exception-types.md
-      - name: CA2202：不要多次處置物件
+      - name: CA2202:不要多次處置物件的 Dispose 方法
         href: ca2202-do-not-dispose-objects-multiple-times.md
-      - name: CA2204：常值必須使用正確的拼字
+      - name: CA2204:常值必須使用正確的拼字
         href: ca2204-literals-should-be-spelled-correctly.md
-      - name: CA2205：必須使用 Win32 API 的 Managed 對應項
+      - name: CA2205:必須使用 Win32 API 的受控對應項
         href: ca2205-use-managed-equivalents-of-win32-api.md
-      - name: CA2207：必須初始化實值類型的靜態欄位內嵌
+      - name: CA2207:必須將實值類型的靜態欄位內嵌初始化
         href: ca2207-initialize-value-type-static-fields-inline.md
-      - name: CA2208：請正確執行個體化引數例外狀況
+      - name: CA2208:必須正確執行個體化引數例外狀況
         href: ca2208-instantiate-argument-exceptions-correctly.md
-      - name: CA2211：非常數欄位不應該為可見的
+      - name: CA2211:非常數欄位不應該為可見的
         href: ca2211-non-constant-fields-should-not-be-visible.md
-      - name: CA2212：不要以 WebMethod 標記 Serviced 元件
+      - name: CA2212:不要以 WebMethod 標記 Serviced 元件
         href: ca2212-do-not-mark-serviced-components-with-webmethod.md
-      - name: CA2213：可處置的欄位應該受到處置
+      - name: CA2213:可處置的欄位應該受到處置
         href: ca2213-disposable-fields-should-be-disposed.md
-      - name: CA2214：不要呼叫建構函式中的可覆寫方法
+      - name: CA2214:不要呼叫建構函式中的可覆寫方法
         href: ca2214-do-not-call-overridable-methods-in-constructors.md
-      - name: CA2215：Dispose 方法應該呼叫基底類別處置
+      - name: CA2215:Dispose 方法應該呼叫基底類別處置
         href: ca2215-dispose-methods-should-call-base-class-dispose.md
-      - name: CA2216：可處置類型應該宣告完成項
+      - name: CA2216:可處置的類型應該宣告完成項
         href: ca2216-disposable-types-should-declare-finalizer.md
-      - name: CA2217：不要以 FlagsAttribute 標記列舉
+      - name: CA2217:不要以 FlagsAttribute 標記列舉
         href: ca2217-do-not-mark-enums-with-flagsattribute.md
-      - name: CA2218：覆寫 Equals 時必須一併覆寫 GetHashCode
+      - name: CA2218:覆寫 Equals 時必須一併覆寫 GetHashCode
         href: ca2218-override-gethashcode-on-overriding-equals.md
-      - name: CA2219：不要在 exception 子句中引發例外狀況
+      - name: CA2219:不要在 exception 子句中引發例外狀況
         href: ca2219-do-not-raise-exceptions-in-exception-clauses.md
-      - name: CA2220：完成項應該呼叫基底類別完成項
+      - name: CA2220:完成項應該呼叫基底類別完成項
         href: ca2220-finalizers-should-call-base-class-finalizer.md
-      - name: CA2221：完成項應該受到保護
+      - name: CA2221:Finalizer 方法應該為 protected
         href: ca2221-finalizers-should-be-protected.md
-      - name: CA2222：請勿降低繼承成員的可視性
+      - name: CA2222:不要降低繼承成員的可視性
         href: ca2222-do-not-decrease-inherited-member-visibility.md
-      - name: CA2223：成員不應該只有在傳回型別上不同
+      - name: CA2223:成員不應該只有在傳回類型上不同
         href: ca2223-members-should-differ-by-more-than-return-type.md
-      - name: CA2224：多載等號比較運算子時必須一併覆寫 Equals
+      - name: CA2224:多載等號比較運算子時必須一併覆寫 Equals
         href: ca2224-override-equals-on-overloading-operator-equals.md
-      - name: CA2225：運算子多載必須有具名的替代方法
+      - name: CA2225:運算子多載必須有具名的替代方法
         href: ca2225-operator-overloads-have-named-alternates.md
-      - name: CA2226：運算子應該有對稱的多載
+      - name: CA2226:運算子應該有對稱的多載
         href: ca2226-operators-should-have-symmetrical-overloads.md
-      - name: CA2227：集合屬性應該為唯讀
+      - name: CA2227:集合屬性應該為唯讀
         href: ca2227-collection-properties-should-be-read-only.md
-      - name: CA2228：不要使用尚未發行版本所支援的格式建置資源
+      - name: CA2228:不要使用尚未發行版本所支援的格式建置資源
         href: ca2228-do-not-ship-unreleased-resource-formats.md
-      - name: CA2229：請實作序列化建構函式
+      - name: CA2229:必須實作序列化建構函式
         href: ca2229-implement-serialization-constructors.md
-      - name: CA2230：必須使用 params 做為變數引數
+      - name: CA2230:必須使用 params 作為變數引數
         href: ca2230-use-params-for-variable-arguments.md
-      - name: CA2231：覆寫 ValueType.Equals 時必須一併多載等號比較運算子
+      - name: CA2231:在覆寫 ValueType.Equals 上多載等號運算子
         href: ca2231-overload-operator-equals-on-overriding-valuetype-equals.md
-      - name: CA2232：以 STAThread 標記 Windows Form 進入點
+      - name: CA2232:Windows Forms 進入點必須標記 STAThread
         href: ca2232-mark-windows-forms-entry-points-with-stathread.md
-      - name: CA2233：運算不應該發生溢位
+      - name: CA2233:運算不應該發生溢位
         href: ca2233-operations-should-not-overflow.md
-      - name: CA2234：必須傳遞 System.Uri 物件，而不要傳遞字串
+      - name: CA2234:必須傳遞 System.Uri 物件而非字串
         href: ca2234-pass-system-uri-objects-instead-of-strings.md
-      - name: CA2235：必須標記所有不可序列化的欄位
+      - name: CA2235:必須標記所有不可序列化的欄位
         href: ca2235-mark-all-non-serializable-fields.md
-      - name: CA2236：必須呼叫 ISerializable 類型上的基底類別方法
+      - name: CA2236:必須呼叫 ISerializable 類型上的基底類別方法
         href: ca2236-call-base-class-methods-on-iserializable-types.md
-      - name: CA2237：必須以 SerializableAttribute 標記 ISerializable 類型
+      - name: CA2237:ISerializable 類型必須標記 SerializableAttribute
         href: ca2237-mark-iserializable-types-with-serializableattribute.md
-      - name: CA2238：請正確實作序列化方法
+      - name: CA2238:必須正確實作序列化方法
         href: ca2238-implement-serialization-methods-correctly.md
-      - name: CA2239：必須為選擇性欄位提供還原序列化方法
+      - name: CA2239:必須為選擇性欄位提供還原序列化方法
         href: ca2239-provide-deserialization-methods-for-optional-fields.md
-      - name: CA2240：必須正確實作 ISerializable
+      - name: CA2240:必須正確實作 ISerializable
         href: ca2240-implement-iserializable-correctly.md
-      - name: CA2241：必須提供格式化方法的正確引數
+      - name: CA2241:必須提供格式化方法的正確引數
         href: ca2241-provide-correct-arguments-to-formatting-methods.md
-      - name: CA2242：必須正確測試 NaN
+      - name: CA2242:必須正確測試 NaN
         href: ca2242-test-for-nan-correctly.md
-      - name: CA2243：屬性字串常值必須正確剖析
+      - name: CA2243:屬性字串常值必須正確剖析
         href: ca2243-attribute-string-literals-should-parse-correctly.md
     - name: 程式碼分析原則錯誤
       href: code-analysis-policy-errors.md
@@ -708,10 +708,16 @@ items:
       href: C26417.md
     - name: C26418
       href: C26418.md
+    - name: C26426
+      href: C26426.md
+    - name: C26427
+      href: C26427.md
     - name: C26429
       href: C26429.md
     - name: C26430
       href: C26430.md
+    - name: C26431
+      href: C26431.md
     - name: C26432
       href: C26432.md
     - name: C26433
@@ -756,6 +762,10 @@ items:
       href: C26453.md
     - name: C26454
       href: C26454.md
+    - name: C26455
+      href: C26455.md
+    - name: C26456
+      href: C26456.md
     - name: C26460
       href: C26460.md
     - name: C26461
@@ -780,10 +790,26 @@ items:
       href: C26474.md
     - name: C26475
       href: C26475.md
+    - name: C26476
+      href: C26476.md
+    - name: C26477
+      href: C26477.md
+    - name: C26481
+      href: C26481.md
     - name: C26482
       href: C26482.md
     - name: C26483
       href: C26483.md
+    - name: C26485
+      href: C26485.md
+    - name: C26486
+      href: C26486.md
+    - name: C26487
+      href: C26487.md
+    - name: C26488
+      href: C26488.md
+    - name: C26489
+      href: C26489.md
     - name: C26490
       href: C26490.md
     - name: C26491
@@ -1434,9 +1460,9 @@ items:
       href: ca0505.md
     - name: FxCopCmd 錯誤
       href: fxcopcmd-errors.md
-ms.openlocfilehash: ec61163b70d1e76abc4b387eb645eb9b11e36374
-ms.sourcegitcommit: b9a32c3d94b19e7344f4872bc026efd3157cf220
+ms.openlocfilehash: 3b48cf2bd9f292a379eee34e3928698e33145893
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46135668"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648174"

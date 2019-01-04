@@ -1,9 +1,6 @@
 ---
 title: 舊版語言服務 2 中的參數資訊 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - IntelliSense, Parameter Info tool tip
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b562f5dd2c7e4f3851f6ed16e0f0007ef65e14cb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a11f7416f77aa997d6874457cc3af83ebb761bb4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49863252"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53988144"
 ---
 # <a name="parameter-info-in-a-legacy-language-service"></a>舊版語言服務中的參數資訊
 IntelliSense 的 參數資訊就是當使用者輸入的參數清單時，會顯示方法的簽章的工具提示開始字元 （通常是左括號） 的方法參數清單。 在輸入每個參數及參數分隔符號 （通常為逗號） 型別時，工具提示會更新以顯示下一個參數以粗體顯示。  

@@ -1,9 +1,6 @@
 ---
-title: 如何： 隱藏檔案變更通知 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：隱藏檔案變更通知 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - suppress file change notification
@@ -13,14 +10,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 505827d25a7e6016403567c172ad094d072f1ef3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0d2ca702be87722d2d3197d5584811d77c62472b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49885820"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53874276"
 ---
-# <a name="how-to-suppress-file-change-notifications"></a>如何： 隱藏檔案變更通知
+# <a name="how-to-suppress-file-change-notifications"></a>HOW TO：隱藏檔案變更通知
 當已變更之實體的檔案，表示文字緩衝區時，對話方塊會顯示與訊息**您要儲存下列項目的變更嗎？** 這就是檔案變更通知。 如果檔案要許多變更，不過，不斷地顯示此對話方塊中可能很快就會造成困擾。  
   
  您以程式設計的方式可以抑制此對話方塊中，使用下列程序。 藉由隱藏對話方塊中，您可以重新載入檔案立即而不需要提示使用者每次儲存變更。  
@@ -79,7 +76,7 @@ void CSuspendFileChanges::Suspend()
   
     CComPtr<IUnknown> srpDocData;  
     VSCOOKIE vscookie = VSCOOKIE_NIL;  
-    pRDT->FindAndLockDocument(RDT_NoLock, T2COLE(m_strMkDocument),    
+    pRDT->FindAndLockDocument(RDT_NoLock, T2COLE(m_strMkDocument),    
       NULL, NULL, &srpDocData, &vscookie);  
     if ( (vscookie == VSCOOKIE_NIL) || !srpDocData)  
         return;  

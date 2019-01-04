@@ -1,19 +1,17 @@
 ---
 title: 就地啟用 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], custom - in-place view activation
 ms.assetid: 7d316945-06e0-4d8e-ba3a-0ef96fc75399
 manager: douge
-ms.openlocfilehash: 72e6829533b1b314853b8836b8576d0165a87d03
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 5ad55066eb3109d1a553d2496b522d0f18e4ba29
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39500341"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53832485"
 ---
 # <a name="in-place-activation"></a>在就地啟用
 如果您的編輯器檢視主控 ActiveX 或其他主動式控制項，您必須實作編輯器檢視，作為 ActiveX 控制項或是作為使用就地啟用模型的主動式文件資料物件。  

@@ -1,8 +1,7 @@
 ---
-title: CA1814：建議使用不規則陣列取代多維陣列
+title: CA1814:建議使用不規則陣列取代多維陣列
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - PreferJaggedArraysOverMultidimensional
@@ -19,20 +18,20 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 69210ac7957cf66119c059fc34a9eb4e11a4d0cb
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 281f29c82eed9133f1ee89ee7ac369bafdf6603a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45551885"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53860789"
 ---
-# <a name="ca1814-prefer-jagged-arrays-over-multidimensional"></a>CA1814：建議使用不規則陣列取代多維陣列
+# <a name="ca1814-prefer-jagged-arrays-over-multidimensional"></a>CA1814:建議使用不規則陣列取代多維陣列
 
 |||
 |-|-|
 |TypeName|PreferJaggedArraysOverMultidimensional|
 |CheckId|CA1814|
-|類別|Microsoft.Performance|
+|分類|Microsoft.Performance|
 |中斷變更|中斷|
 
 ## <a name="cause"></a>原因

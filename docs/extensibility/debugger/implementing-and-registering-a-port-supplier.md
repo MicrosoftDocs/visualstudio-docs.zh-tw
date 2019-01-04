@@ -1,9 +1,6 @@
 ---
 title: 實作和註冊連接埠提供者 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], registering port suppliers
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 10e68f06cde3cd562b145bd64f94581c65f7d7f6
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 189f524ff96c8ad353425820e9f3931364951774
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39231642"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53990265"
 ---
 # <a name="implement-and-register-a-port-supplier"></a>實作並註冊連接埠提供者
 連接埠提供者的角色是追蹤，並提供連接埠，進而管理程序。 當需要建立一個連接埠時，連接埠提供者會使用具現化 CoCreate （工作階段的偵錯管理員 [SDM] 會使用指定的專案系統在選取的使用者或連接埠提供者的連接埠供應商） 的連接埠提供者的 guid。 然後呼叫 SDM [CanAddPort](../../extensibility/debugger/reference/idebugportsupplier2-canaddport.md)以查看是否可以加入任何連接埠。 如果可以加入一個連接埠，藉由呼叫要求新的連接埠[下列](../../extensibility/debugger/reference/idebugportsupplier2-addport.md)並將其傳遞[IDebugPortRequest2](../../extensibility/debugger/reference/idebugportrequest2.md)描述連接埠。 `AddPort` 傳回新的連接埠，由[IDebugPort2](../../extensibility/debugger/reference/idebugport2.md)介面。  

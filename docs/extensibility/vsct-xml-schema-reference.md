@@ -1,9 +1,6 @@
 ---
 title: VSCT XML 結構描述參考 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio command table configuration files (VSCT), XML schema
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 51be3e86f1f19cc3701dd456b3085d3e8993b7a8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ce5ebac402603a8d26908ea1cd67468bbefea1c8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49915551"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53943073"
 ---
 # <a name="vsct-xml-schema-reference"></a>VSCT XML 結構描述參考
 提供的命令資料表編譯器結構描述項目，允許的子系項目和屬性每個。  

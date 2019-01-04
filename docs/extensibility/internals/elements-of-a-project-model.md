@@ -1,9 +1,6 @@
 ---
 title: 專案模型的項目 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio SDK], implementation considerations
@@ -15,17 +12,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9eab0627184ac887aacfdfb2f275f0e8d9d30df7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ee628d56094026b588c76451c143158000636a5c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49912652"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53962606"
 ---
 # <a name="elements-of-a-project-model"></a>專案模型的項目
 介面和實作中的所有專案的[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]共用基本結構： 您的專案類型的專案模型。 在您專案的模型，也就是您正在開發的 VSPackage，您可以建立符合您的設計決策，且 IDE 所提供的通用功能搭配運作的物件。 雖然您可以控制如何保存專案項目，例如，您無法控制通知檔案必須 persisted。 當使用者將焦點放在開啟的專案項目，並選擇**儲存**上**檔案**功能表[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]功能表列中，您的專案型別程式碼必須攔截從 IDE 命令、 保留檔案，並將通知傳送回 IDE 會不會再變更的檔案。  
   
- VSPackage 會提供 IDE 介面的存取權的服務透過 IDE 與互動。 比方說，透過特定的服務，您監視和路由命令，並提供選取之項目的專案中的內容資訊。 Vspackage 所需所有通用的 IDE 功能是由服務提供。 如需有關服務的詳細資訊，請參閱 <<c0> [ 如何： 取得服務](../../extensibility/how-to-get-a-service.md)。  
+ VSPackage 會提供 IDE 介面的存取權的服務透過 IDE 與互動。 比方說，透過特定的服務，您監視和路由命令，並提供選取之項目的專案中的內容資訊。 Vspackage 所需所有通用的 IDE 功能是由服務提供。 如需有關服務的詳細資訊，請參閱[How to:取得服務](../../extensibility/how-to-get-a-service.md)。  
   
  其他實作考量：  
   
@@ -45,9 +42,9 @@ ms.locfileid: "49912652"
   專案可以支援的命令，並因此必須實作<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>介面來參與命令路由，透過命令內容的 Guid。  
   
 ## <a name="see-also"></a>另請參閱  
- [檢查清單： 建立新的專案類型](../../extensibility/internals/checklist-creating-new-project-types.md)   
+ [檢查清單：建立新的專案類型](../../extensibility/internals/checklist-creating-new-project-types.md)   
  [使用 HierUtil7 專案類別來實作專案類型 （c + +）](https://msdn.microsoft.com/library/a5c16a09-94a2-46ef-87b5-35b815e2f346)   
  [專案模型的核心元件](../../extensibility/internals/project-model-core-components.md)   
  [使用 project factory 建立專案執行個體](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)   
- [如何： 取得服務](../../extensibility/how-to-get-a-service.md)   
+ [如何：取得服務](../../extensibility/how-to-get-a-service.md)   
  [建立專案類型](../../extensibility/internals/creating-project-types.md)

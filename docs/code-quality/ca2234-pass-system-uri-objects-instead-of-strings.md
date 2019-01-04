@@ -1,8 +1,7 @@
 ---
-title: CA2234：必須傳遞 System.Uri 物件，而不要傳遞字串
+title: CA2234:必須傳遞 System.Uri 物件而非字串
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - PassSystemUriObjectsInsteadOfStrings
@@ -20,20 +19,20 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: fcc7994e67e268aff21af925632d2ee9cf102ff4
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: acaed774bbfc797bf5171bfabeb2febbbf37a391
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45547156"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53916584"
 ---
-# <a name="ca2234-pass-systemuri-objects-instead-of-strings"></a>CA2234：必須傳遞 System.Uri 物件，而不要傳遞字串
+# <a name="ca2234-pass-systemuri-objects-instead-of-strings"></a>CA2234:必須傳遞 System.Uri 物件而非字串
 
 |||
 |-|-|
 |TypeName|PassSystemUriObjectsInsteadOfStrings|
 |CheckId|CA2234|
-|類別|Microsoft.Usage|
+|分類|Microsoft.Usage|
 |中斷變更|非中斷|
 
 ## <a name="cause"></a>原因
@@ -56,10 +55,10 @@ ms.locfileid: "45547156"
  [!code-csharp[FxCop.Usage.PassUri#1](../code-quality/codesnippet/CSharp/ca2234-pass-system-uri-objects-instead-of-strings_1.cs)]
 
 ## <a name="related-rules"></a>相關的規則
- [CA1057：字串 URI 多載呼叫 System.Uri 多載](../code-quality/ca1057-string-uri-overloads-call-system-uri-overloads.md)
+ [CA1057:字串 URI 多載呼叫 System.Uri 多載](../code-quality/ca1057-string-uri-overloads-call-system-uri-overloads.md)
 
- [CA1056：URI 屬性不應該為字串](../code-quality/ca1056-uri-properties-should-not-be-strings.md)
+ [CA1056:URI 屬性不應該為字串](../code-quality/ca1056-uri-properties-should-not-be-strings.md)
 
- [CA1054：URI 參數不應該為字串](../code-quality/ca1054-uri-parameters-should-not-be-strings.md)
+ [CA1054:URI 參數不應該為字串](../code-quality/ca1054-uri-parameters-should-not-be-strings.md)
 
- [CA1055：URI 傳回值不應該為字串](../code-quality/ca1055-uri-return-values-should-not-be-strings.md)
+ [CA1055:URI 會傳回值不應該為字串](../code-quality/ca1055-uri-return-values-should-not-be-strings.md)

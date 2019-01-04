@@ -1,9 +1,6 @@
 ---
 title: 自訂工具 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - VSPackages, custom tools
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 306173876d0fd7c4d1da76d1b5432ecd5358c425
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: ce8b18ee5c1c84b8e6480ffa9f91f739796f0991
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39500235"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53834408"
 ---
 # <a name="custom-tools"></a>自訂工具
 *自訂工具*可讓您在專案中的項目相關聯的工具，並執行該工具，每次您儲存檔案。 某些自訂的工具，有時稱為*單一檔案產生器*，常用來實作轉譯器產生程式碼從資料，反之亦然。 比方說，單一檔案產生器建立[!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]和[!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]原始程式碼，共 *.settings*並 *.resx*檔案。 產生的原始程式碼提供強型別中的資料的存取 *.settings*並 *.resx*檔案。 [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]和[!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]專案類型支援的自訂工具;[!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)]專案類型不這麼做。 您自己的專案類型也可以支援自訂的工具。  
@@ -54,4 +51,4 @@ ms.locfileid: "39500235"
   
 ## <a name="related-sections"></a>相關章節  
  [擴充專案](../../extensibility/extending-projects.md)  
- 描述如何使用[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]專案和解決方案組織程式碼檔案和資源檔，以及如何實作原始檔控制。
+ 描述如何使用 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 專案和解決方案組織程式碼檔案和資源檔，以及如何實作原始檔控制。

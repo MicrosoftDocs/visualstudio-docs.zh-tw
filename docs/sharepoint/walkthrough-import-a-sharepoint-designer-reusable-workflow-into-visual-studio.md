@@ -1,15 +1,10 @@
 ---
-title: 逐步解說： 將 SharePoint Designer 可重複使用的工作流程匯入 Visual Studio |Microsoft Docs
-ms.custom: ''
+title: 逐步解說：SharePoint Designer 可重複使用工作流程匯入 Visual Studio |Microsoft Docs
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.WSPImport.ImportWF
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -20,14 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 249799bc9daf13992bd9fe03dff8c86263f91263
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c92a1023f5099c6a6d92df825aebebf35dd678dd
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49851474"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53821342"
 ---
-# <a name="walkthrough-import-a-sharepoint-designer-reusable-workflow-into-visual-studio"></a>逐步解說： 將 SharePoint Designer 可重複使用的工作流程匯入 Visual Studio
+# <a name="walkthrough-import-a-sharepoint-designer-reusable-workflow-into-visual-studio"></a>逐步解說：SharePoint Designer 可重複使用工作流程匯入 Visual Studio
   本逐步解說示範如何匯入 SharePoint Designer 2010 中建立可重複使用工作流程[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]SharePoint 工作流程專案。  
   
  在 SharePoint Designer 中建立的工作流程或*宣告式工作流程*，組成[!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]陳述式，而非程式碼。 SharePoint Designer 2010 引進*可重複使用的工作流程*，這是可由不同的清單，在 SharePoint 網站中的可移植的宣告式工作流程。  
@@ -191,7 +186,7 @@ ms.locfileid: "49851474"
   
      只有在您偵錯專案時，立即，這會顯示清單。  
   
-11. 因為**匯入的可重複使用 SharePoint 2010 工作流程**範本不會匯入匯入的工作流程的關聯屬性值，您必須輸入它們。 若要這樣做：  
+11. 因為**匯入的可重複使用 SharePoint 2010 工作流程**範本不會匯入匯入的工作流程的關聯屬性值，您必須輸入它們。 做法：  
   
     1.  在 **方案總管**，選擇**SPD_Workflow_TestFT**節點。  
   
@@ -269,4 +264,3 @@ ms.locfileid: "49851474"
  [從現有的 SharePoint 網站匯入項目](../sharepoint/importing-items-from-an-existing-sharepoint-site.md)   
  [開發 SharePoint 方案](../sharepoint/developing-sharepoint-solutions.md)   
  [建立可重複使用的控制項，為 web 組件或應用程式頁面](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)  
-  

@@ -12,13 +12,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 39e3cc044913a592d5f49e685d8075cd43803e55
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: 8bbb876ddd8a3615b7e31d0dbf9d005b69f2d03d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50966475"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53937789"
 ---
 # <a name="properties-of-diagrams"></a>圖表的屬性
 您可以設定指定如何圖表會顯示在產生的設計工具中的屬性。 例如，您可以指定文字的預設色彩在圖表中。

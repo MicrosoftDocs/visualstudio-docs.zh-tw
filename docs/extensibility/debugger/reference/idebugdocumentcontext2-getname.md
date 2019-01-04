@@ -1,9 +1,6 @@
 ---
 title: IDebugDocumentContext2::GetName |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugDocumentContext2::GetName
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 83fb1927f6772c9ded79405d13f1d9958f92cc8e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 524debdf1541c71119bfa539da719f33265d3fb9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49903604"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53841482"
 ---
 # <a name="idebugdocumentcontext2getname"></a>IDebugDocumentContext2::GetName
 取得包含這個文件內容的文件可顯示名稱。  
@@ -28,14 +25,14 @@ ms.locfileid: "49903604"
 ## <a name="syntax"></a>語法  
   
 ```cpp  
-HRESULT GetName(   
+HRESULT GetName(   
    GETNAME_TYPE gnType,  
    BSTR*        pbstrFileName  
 );  
 ```  
   
 ```csharp  
-int GetName(   
+int GetName(   
    enum_GETNAME_TYPE  gnType,  
    out string         pbstrFileName  
 );  

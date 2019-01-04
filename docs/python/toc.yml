@@ -1,6 +1,12 @@
 items:
-- name: 概觀
-  href: overview-of-python-tools-for-visual-studio.md
+- name: Visual Studio 中的 Python
+  href: index.yml
+- name: 總覽
+  items:
+  - name: Python 支援的概觀
+    href: overview-of-python-tools-for-visual-studio.md
+  - name: 體驗 Visual Studio IDE
+    href: visual-studio-ide.md
 - name: 安裝
   href: installing-python-support-in-visual-studio.md
   items:
@@ -76,7 +82,7 @@ items:
       href: python-azure-cloud-service-project-template.md
   - name: Azure SDK for Python
     href: azure-sdk-for-python.md
-- name: 操作指南
+- name: 作法指南
   items:
   - name: 管理 Python 環境
     href: managing-python-environments-in-visual-studio.md
@@ -134,9 +140,9 @@ items:
     href: python-item-templates.md
   - name: 選項
     href: python-support-options-and-settings-in-visual-studio.md
-ms.openlocfilehash: 25583cb5cea6c7ef971413b14ec986d08af9dab8
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: e295581bbb60c5febc98cde837f6e498aa93d042
+ms.sourcegitcommit: a715de2ba8c703f37aa2102567b1aa2c0f05a117
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349253"
+ms.lasthandoff: 12/15/2018
+ms.locfileid: "53441583"

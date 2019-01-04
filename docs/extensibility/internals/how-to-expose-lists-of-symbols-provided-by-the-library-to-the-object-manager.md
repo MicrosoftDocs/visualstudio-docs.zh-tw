@@ -1,9 +1,6 @@
 ---
 title: 提供對物件管理員中的符號清單公開 （expose) |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - IVsSimpleLibrary2 interface, lists of symbols
@@ -17,14 +14,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 154ab307a77925bb2862a07310d2b044654bfdb0
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 679a743db707b7354fe104721ea8dd709e151217
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39513142"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53827438"
 ---
-# <a name="how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager"></a>如何： 公開至物件管理員程式庫提供的符號清單
+# <a name="how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager"></a>HOW TO：公開 （expose) 至物件管理員程式庫所提供的符號清單
 符號瀏覽工具，**類別檢視**，**物件瀏覽器**，**呼叫瀏覽器**並**尋找符號結果**，傳遞至新資料的要求[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]物件管理員。 物件管理員尋找適當的程式庫，並要求新的符號清單。 藉由提供要求的資料，以回應的程式庫[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]物件的管理員，透過<xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2>介面。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]物件管理員會呼叫方法<xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2>介面取得的資料，並使用它來填入，或更新的符號瀏覽工具的檢視。  
   
  叫用的工具、 節點已展開，或重新整理檢視時，程式庫可能會收到資料的要求。 第一次叫用的符號瀏覽工具時，物件管理員會要求要提供最上層清單的程式庫。 當使用者展開清單節點時，則程式庫會提供該節點下的子系清單。 每個物件管理員查詢包含感興趣的項目的索引。 若要顯示新的清單，物件管理員必須決定多少項目會在清單中，項目，其名稱、 存取範圍，以及其他屬性的類型。  
@@ -470,6 +467,6 @@ ms.locfileid: "39513142"
   
 ## <a name="see-also"></a>另請參閱  
  [支援符號瀏覽工具](../../extensibility/internals/supporting-symbol-browsing-tools.md)   
- [如何： 使用物件管理員註冊程式庫](../../extensibility/internals/how-to-register-a-library-with-the-object-manager.md)   
- [如何： 識別文件庫中的符號](../../extensibility/internals/how-to-identify-symbols-in-a-library.md)   
+ [如何：使用物件管理員註冊程式庫](../../extensibility/internals/how-to-register-a-library-with-the-object-manager.md)   
+ [如何：識別文件庫中的符號](../../extensibility/internals/how-to-identify-symbols-in-a-library.md)   
  [舊版語言服務擴充性](../../extensibility/internals/legacy-language-service-extensibility.md)

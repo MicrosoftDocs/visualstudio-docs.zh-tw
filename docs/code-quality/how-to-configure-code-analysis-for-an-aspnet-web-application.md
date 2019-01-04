@@ -2,7 +2,6 @@
 title: 設定 ASP.NET Web 應用程式的程式碼分析
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.propertypages.asp
@@ -11,14 +10,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: 8b2776399e776e34126c3c000332aa267682b88f
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: a781e918a925ebd43110339e03d528a4cf6b3c70
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53065309"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53853027"
 ---
-# <a name="how-to-configure-code-analysis-for-an-aspnet-web-application"></a>如何：設定 ASP.NET Web 應用程式的程式碼分析
+# <a name="how-to-configure-code-analysis-for-an-aspnet-web-application"></a>HOW TO：設定 ASP.NET Web 應用程式的程式碼分析
 
 在 Visual Studio 中，您可以從清單中選取的程式碼分析*規則集*要套用至[!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]web 應用程式。 預設規則設為 Microsoft 最小建議規則。 您可以選取要套用至網站所設定的另一個規則。
 

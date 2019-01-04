@@ -1,9 +1,6 @@
 ---
 title: IDebugMemoryBytes2::WriteAt |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugMemoryBytes2::WriteAt
@@ -16,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a2d164f0ef816285e2df4a9e49b09d55feb90d25
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c7d9cbd621b24db26316cc7fca48352a7d97df6e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49864266"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53873180"
 ---
 # <a name="idebugmemorybytes2writeat"></a>IDebugMemoryBytes2::WriteAt
 寫入指定的記憶體，並指定位址開頭的位元組數目。  
@@ -29,7 +26,7 @@ ms.locfileid: "49864266"
 ## <a name="syntax"></a>語法  
   
 ```cpp  
-HRESULT WriteAt(   
+HRESULT WriteAt(   
    IDebugMemoryContext2* pStartContext,  
    DWORD                 dwCount,  
    BYTE*                 rgbMemory  

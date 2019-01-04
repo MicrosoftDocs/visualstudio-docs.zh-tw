@@ -1,9 +1,6 @@
 ---
 title: IEEDataStorage::GetSize |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IEEDataStorage::GetSize
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f9ac01907015a58681ee5cacb5b5ae38d32c2896
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 64f78005e4f3f7027cb6621e67cfbe44be4af3a0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49820638"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53848742"
 ---
 # <a name="ieedatastoragegetsize"></a>IEEDataStorage::GetSize
 傳回此物件包含的位元組數目。  

@@ -1,6 +1,5 @@
 ---
 title: Visual c + + 專案擴充性
-ms.custom: ''
 ms.date: 09/12/2018
 ms.technology: vs-ide-mobile
 ms.topic: conceptual
@@ -11,12 +10,12 @@ ms.author: corob
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 913ad2e785fcdb2067f89d0d4de2b250db40468b
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 0eccf13f38799c1d35b7fe4226fa02ec1a291b0c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349672"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53986982"
 ---
 # <a name="visual-studio-c-project-system-extensibility-and-toolset-integration"></a>Visual Studio c + + 專案系統擴充性和工具組之間的整合
 
@@ -36,19 +35,19 @@ ms.locfileid: "51349672"
 
 - `$(ApplicationType)`
 
-   範例： Windows 市集、 Android、 Linux
+   例如：Windows 市集、 Android、 Linux
 
 - `$(ApplicationTypeRevision)`
 
    這必須是有效的版本字串，表單 major.minor[.build[.revision]]。
 
-   範例： 1.0、 10.0.0.0
+   例如：1.0、 10.0.0.0
 
 - `$(Platform)`
 
    組建架構中，名為 「 平台 」，由於歷史原因。
 
-   範例： Win32，x86、 x64、 ARM   
+   例如：Win32，x86、 x64、 ARM   
 
 - `$(PlatformToolset)`
 
@@ -481,10 +480,10 @@ CPS 支援內容類型，使用其他值，但不會用在 Visual c + + 專案�
 
 | 屬性 | 描述 |
 |------------| - |
-| `generic` | 在類別目錄標題下的單一頁面上會顯示所有的屬性<br/>規則可以是顯示`Project`並`PropertySheet`內容，但不是`File`。<br/><br/> 範例： `$(VCTargetsPath)` \\ *1033年*\\*general.xml* |
-| `tool` | 類別會顯示為子頁面。<br/>規則可以是顯示在所有的內容： `Project`，`PropertySheet`和`File`。<br/>規則內容中會顯示專案的專案已使用的項目時，才`ItemType`中定義`Rule.DataSource`，除非規則名稱會包含在`ProjectTools`項目群組。<br/><br/>範例： `$(VCTargetsPath)` \\ *1033年*\\*clang.xml* |
-| `debugger` | 頁面會顯示為 [偵錯] 頁面的一部分。<br/>類別目前會被忽略。<br/>規則名稱應該符合偵錯啟動器 MEF 物件的`ExportDebugger`屬性。<br/><br/>範例： `$(VCTargetsPath)` \\ *1033年*\\*偵錯工具\_本機\_windows.xml* |
-| *custom* | 自訂範本。 範本的名稱應該符合`ExportPropertyPageUIFactoryProvider`屬性的`PropertyPageUIFactoryProvider`MEF 物件。 請參閱**Microsoft.VisualStudio.ProjectSystem.Designers.Properties.IPropertyPageUIFactoryProvider**。<br/><br/> 範例： `$(VCTargetsPath)` \\ *1033年*\\*userMacros.xml* |
+| `generic` | 在類別目錄標題下的單一頁面上會顯示所有的屬性<br/>規則可以是顯示`Project`並`PropertySheet`內容，但不是`File`。<br/><br/> 範例：`$(VCTargetsPath)`\\*1033*\\*general.xml* |
+| `tool` | 類別會顯示為子頁面。<br/>規則可以是顯示在所有的內容： `Project`，`PropertySheet`和`File`。<br/>規則內容中會顯示專案的專案已使用的項目時，才`ItemType`中定義`Rule.DataSource`，除非規則名稱會包含在`ProjectTools`項目群組。<br/><br/>範例：`$(VCTargetsPath)`\\*1033*\\*clang.xml* |
+| `debugger` | 頁面會顯示為 [偵錯] 頁面的一部分。<br/>類別目前會被忽略。<br/>規則名稱應該符合偵錯啟動器 MEF 物件的`ExportDebugger`屬性。<br/><br/>範例：`$(VCTargetsPath)`\\*1033*\\*偵錯工具\_本機\_windows.xml* |
+| *custom* | 自訂範本。 範本的名稱應該符合`ExportPropertyPageUIFactoryProvider`屬性的`PropertyPageUIFactoryProvider`MEF 物件。 請參閱**Microsoft.VisualStudio.ProjectSystem.Designers.Properties.IPropertyPageUIFactoryProvider**。<br/><br/> 範例：`$(VCTargetsPath)`\\*1033*\\*userMacros.xml* |
 
 如果此規則會使用其中一個屬性方格為基礎的範本，它可以使用這些擴充點的屬性：
 
@@ -530,7 +529,7 @@ CPS 支援內容類型，使用其他值，但不會用在 Visual c + + 專案�
 </ItemGroup>
 ```
 
-範例： `$(VCTargetsPath)` \\ *BuildCustomizations*\\*masm.xml*
+範例：`$(VCTargetsPath)`\\*BuildCustomizations*\\*masm.xml*
 
 ### <a name="debuggers"></a>偵錯工具
 

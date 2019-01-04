@@ -1,9 +1,6 @@
 ---
-title: 逐步解說： 發行 Visual Studio 擴充功能，透過命令列 |Microsoft Docs
-ms.custom: ''
+title: 逐步解說：發行 Visual Studio 擴充功能，透過命令列 |Microsoft Docs
 ms.date: 07/12/2018
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - publishing extensions
@@ -14,14 +11,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8d95e2fbe36a73074b97f47f6714f1fc4aa8228c
-ms.sourcegitcommit: 12d6398c02e818de4fbcb4371bae9e5db6cf9509
+ms.openlocfilehash: cb35365220ade512defc180b06e46b95999dfa7b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50050179"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53857211"
 ---
-# <a name="walkthrough-publishing-a-visual-studio-extension-via-command-line"></a>逐步解說： 發行的 Visual Studio 擴充功能，透過命令列
+# <a name="walkthrough-publishing-a-visual-studio-extension-via-command-line"></a>逐步解說：發行的 Visual Studio 擴充功能，透過命令列
 
 本逐步解說示範如何將 Visual Studio 延伸模組發佈至 Visual Studio Marketplace 使用命令列。 當您新增您的延伸模組至 Marketplace 時，開發人員可以使用[**擴充功能和更新**](../ide/finding-and-using-visual-studio-extensions.md)對話方塊，即可瀏覽是否那里新的和更新的延伸模組。
 
@@ -203,7 +200,7 @@ This is test extension.
 
 在此案例中，我們將使用預設 VSPackage 擴充功能，但相同的步驟都適用於所有類型的延伸模組。
 
-1. 在 C# 中名為"TestPublish 」 具有功能表命令建立 VSPackage。 如需詳細資訊，請參閱 <<c0> [ 建立您的第一個延伸模組： Hello World](../extensibility/extensibility-hello-world.md)。
+1. 在 C# 中名為"TestPublish 」 具有功能表命令建立 VSPackage。 如需詳細資訊，請參閱[建立您的第一個延伸模組：Hello World](../extensibility/extensibility-hello-world.md)。
 
 ### <a name="package-your-extension"></a>封裝您的延伸模組
 

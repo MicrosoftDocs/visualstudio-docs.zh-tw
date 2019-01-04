@@ -1,9 +1,6 @@
 ---
-title: 在 VSTO 增益集專案服務的逐步解說： 繫結至資料
-ms.custom: ''
+title: 逐步解說：從 VSTO 增益集專案中的服務繫結至資料
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,17 +14,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c4ebf998dc7c278fda1e605d18198945958a7fed
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 95b504907d55491ee925ea0824a810314d3c8033
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49933179"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53892286"
 ---
-# <a name="walkthrough-bind-to-data-from-a-service-in-a-vsto-add-in-project"></a>在 VSTO 增益集專案中服務的逐步解說： 繫結至資料
+# <a name="walkthrough-bind-to-data-from-a-service-in-a-vsto-add-in-project"></a>逐步解說：從 VSTO 增益集專案中的服務繫結至資料
   您可以將資料繫結至 VSTO 增益集專案中的主控制項。 本逐步解說示範如何將控制項加入 Microsoft Office Word 文件、將控制項繫結至從 MSDN 內容服務擷取的資料，以及在執行階段回應事件。  
   
- **適用對象：** 本主題資訊適用於 Word 2010 的應用程式層級專案。 如需詳細資訊，請參閱 [](../vsto/features-available-by-office-application-and-project-type.md)。  
+ **適用於：** 本主題資訊適用於 Word 2010 的應用程式層級專案。 如需詳細資訊，請參閱[依 Office 應用程式和專案類型提供的功能](../vsto/features-available-by-office-application-and-project-type.md)。  
   
  這個逐步解說將說明下列工作：  
   
@@ -53,7 +50,7 @@ ms.locfileid: "49933179"
   
 1.  使用 Visual Basic 或 C#，建立名稱為 [MTPS 內容服務] 的 Word VSTO 增益集專案。  
   
-     如需詳細資訊，請參閱 <<c0> [ 如何： 在 Visual Studio 中的建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
+     如需詳細資訊，請參閱[＜How to：在 Visual Studio 中建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
   
      Visual Studio 隨即開啟 `ThisAddIn.vb` 或 `ThisAddIn.cs` 檔案，並將專案加入 **方案總管**。  
   
@@ -119,5 +116,3 @@ ms.locfileid: "49933179"
   
 ## <a name="see-also"></a>另請參閱  
  [資料繫結至 Office 方案中的控制項](../vsto/binding-data-to-controls-in-office-solutions.md)  
-  
-  

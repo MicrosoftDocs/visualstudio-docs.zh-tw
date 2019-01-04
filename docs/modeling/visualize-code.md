@@ -2,7 +2,6 @@
 title: 視覺化程式碼
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
 ms.topic: conceptual
 helpviewer_keywords:
 - code, understanding
@@ -13,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 622655f1ed05ab77b36a3c4756a0176fcad74ac4
-ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
+ms.openlocfilehash: e1866437fae3fb5594e85299f94a075072dd6528
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53684924"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53907835"
 ---
 # <a name="visualize-code"></a>視覺化程式碼
 

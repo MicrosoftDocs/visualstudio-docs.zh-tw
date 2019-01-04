@@ -1,9 +1,6 @@
 ---
 title: IDebugStackFrame2::GetExpressionContext |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugStackFrame2::GetExpressionContext
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3953f02e1795f2b8b4b6fbfc6536ac83c16ce205
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 856d9b8b12388628bde73d15d0af51a86dcf96c9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49934128"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53830913"
 ---
 # <a name="idebugstackframe2getexpressioncontext"></a>IDebugStackFrame2::GetExpressionContext
 取得目前的內容中的運算式評估的堆疊框架和執行緒評估內容。  
@@ -28,13 +25,13 @@ ms.locfileid: "49934128"
 ## <a name="syntax"></a>語法  
   
 ```cpp  
-HRESULT GetExpressionContext (   
+HRESULT GetExpressionContext (   
    IDebugExpressionContext2** ppExprCxt  
 );  
 ```  
   
 ```csharp  
-int GetExpressionContext (   
+int GetExpressionContext (   
    out IDebugExpressionContext2 ppExprCxt  
 );  
 ```  

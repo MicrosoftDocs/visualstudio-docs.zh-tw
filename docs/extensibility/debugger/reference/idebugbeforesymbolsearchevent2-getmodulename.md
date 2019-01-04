@@ -1,9 +1,6 @@
 ---
 title: IDebugBeforeSymbolSearchEvent2::GetModuleName |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - GetModuleName
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 467ba82e53eae2b7aa1f4694fd99f1c2efea8cbb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 005b725e3d03166188fa56342c9609707236c08d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49869245"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53865182"
 ---
 # <a name="idebugbeforesymbolsearchevent2getmodulename"></a>IDebugBeforeSymbolSearchEvent2::GetModuleName
 擷取目前所偵錯的模組名稱。  

@@ -1,9 +1,6 @@
 ---
-title: 逐步解說： 將功能新增至自訂編輯器 |Microsoft Docs
-ms.custom: ''
+title: 逐步解說：將功能加入至自訂編輯器 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], custom - add features
@@ -13,21 +10,21 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7062f44fe119858e579a53325deca0ea04b46475
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ad57ead773e2daa8cc17937156e199cd7dddbbde
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49873015"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53850397"
 ---
-# <a name="walkthrough-add-features-to-a-custom-editor"></a>逐步解說： 將功能加入至自訂編輯器
+# <a name="walkthrough-add-features-to-a-custom-editor"></a>逐步解說：將功能加入至自訂編輯器
 建立自訂編輯器之後，您可以加入更多的功能。  
   
 ## <a name="to-create-an-editor-for-a-vspackage"></a>若要建立 VSPackage 的編輯器  
   
 1.  使用 Visual Studio Package 專案範本，以建立自訂編輯器。  
   
-     如需詳細資訊，請參閱 <<c0> [ 逐步解說： 建立自訂編輯器](../extensibility/walkthrough-creating-a-custom-editor.md)。  
+     如需詳細資訊，請參閱[逐步解說：建立自訂編輯器](../extensibility/walkthrough-creating-a-custom-editor.md)。  
   
 2.  決定是否要讓您支援單一檢視或多個檢視的編輯器。  
   
@@ -118,7 +115,7 @@ ms.locfileid: "49873015"
   
 12. 實作即時線上說明支援。  
   
-     這個步驟可讓您提供 F1 說明 和 動態說明 視窗支援您的編輯器中的項目。 如需詳細資訊，請參閱 <<c0> [ 如何： 為編輯器提供內容](../extensibility/how-to-provide-context-for-editors.md)。  
+     這個步驟可讓您提供 F1 說明 和 動態說明 視窗支援您的編輯器中的項目。 如需詳細資訊，請參閱[＜How to：編輯器提供內容](../extensibility/how-to-provide-context-for-editors.md)。  
   
 13. 藉由實作公開 Automation 物件模型，從您的編輯器`IDispatch`介面。  
   
@@ -157,4 +154,4 @@ ms.locfileid: "49873015"
   
 ## <a name="see-also"></a>另請參閱  
  [參與 automation 模型](../extensibility/internals/contributing-to-the-automation-model.md)   
- [如何： 提供的編輯器內容](../extensibility/how-to-provide-context-for-editors.md)
+ [如何：編輯器提供的內容](../extensibility/how-to-provide-context-for-editors.md)

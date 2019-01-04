@@ -1,8 +1,7 @@
 ---
-title: CA2220：完成項應該呼叫基底類別完成項
+title: CA2220:完成項應該呼叫基底類別完成項
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA2220
@@ -16,20 +15,20 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c814324ac21017acf6a0182f7807b0a0878c8aca
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 4befae0ca3095994c3d48d20647045d4825154e4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45551203"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53825392"
 ---
-# <a name="ca2220-finalizers-should-call-base-class-finalizer"></a>CA2220：完成項應該呼叫基底類別完成項
+# <a name="ca2220-finalizers-should-call-base-class-finalizer"></a>CA2220:完成項應該呼叫基底類別完成項
 
 |||
 |-|-|
 |TypeName|FinalizersShouldCallBaseClassFinalizer|
 |CheckId|CA2220|
-|類別|Microsoft.Usage|
+|分類|Microsoft.Usage|
 |中斷變更|非中斷|
 
 ## <a name="cause"></a>原因

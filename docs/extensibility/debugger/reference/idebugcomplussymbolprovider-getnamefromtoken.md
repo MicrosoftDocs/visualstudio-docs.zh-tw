@@ -1,9 +1,6 @@
 ---
 title: IDebugComPlusSymbolProvider::GetNameFromToken |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - IDebugComPlusSymbolProvider::GetNameFromToken
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8c9fae6967cc9b37938b83f61a10f8a6a85804a1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0fa11df7b1bb3bfab3079593880262c20304be14
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49920426"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53960533"
 ---
 # <a name="idebugcomplussymbolprovidergetnamefromtoken"></a>IDebugComPlusSymbolProvider::GetNameFromToken
 傳回與指定的語彙基元指定它的中繼資料物件相關聯的名稱。  

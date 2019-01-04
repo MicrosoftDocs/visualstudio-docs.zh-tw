@@ -1,9 +1,6 @@
 ---
-title: 在舊版語言服務中的大綱和隱藏文字 |Microsoft 文件
-ms.custom: ''
+title: 舊版語言服務中的大綱和隱藏文字 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - outlining, supporting in native code
@@ -13,22 +10,22 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 509b2a27444847fd5ae20dbf0ecee89e05357456
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e6c63ba54a8dd35f884b07d9d7cf676c5477d6ec
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31129372"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53966923"
 ---
-# <a name="outlining-and-hidden-text-in-a-legacy-language-service"></a>在舊版語言服務中的大綱和隱藏文字
-大綱可以讓單一資料行摺疊的文字行的順序。 例如，c + + 中的所有方法可摺都疊至單一行中顯示方法簽章。 隱藏的文字是的可顯示或隱藏的文字行的順序。  
+# <a name="outlining-and-hidden-text-in-a-legacy-language-service"></a>舊版語言服務中的大綱和隱藏文字
+大綱，讓能夠摺疊成單一行的文字行的順序。 例如，c + + 中的所有方法可以摺都疊成一行，顯示方法簽章。 隱藏的文字是可顯示或隱藏的文字行的順序。  
   
-## <a name="in-this-section"></a>本節內容  
- [如何︰支援在舊版語言服務中製作大綱](../../extensibility/internals/how-to-support-outlining-in-a-legacy-language-service.md)  
+## <a name="in-this-section"></a>本章節內容  
+ [如何：支援舊版語言服務中的大綱](../../extensibility/internals/how-to-support-outlining-in-a-legacy-language-service.md)  
  說明如何實作  
   
- [如何︰在舊版語言服務中提供隱藏文字的支援](../../extensibility/internals/how-to-provide-hidden-text-support-in-a-legacy-language-service.md)  
- 說明隱藏的文字區域的目的，並提供指引來說明如何實作隱藏的文字區域。  
+ [如何：隱藏的文字中提供支援舊版語言服務](../../extensibility/internals/how-to-provide-hidden-text-support-in-a-legacy-language-service.md)  
+ 說明隱藏的文字區域的目的，並提供有關如何實作在隱藏的文字區域的指示。  
   
- [如何︰在舊版語言服務中提供展開大綱的支援](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md)  
- 說明擴充您的語言支援的大綱支援的兩個選項*摺疊至定義*命令。
+ [如何：提供展開大綱的支援，在舊版語言服務](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md)  
+ 說明擴充大綱的支援，您只能支援的語言的兩個選項*摺疊至定義*命令。

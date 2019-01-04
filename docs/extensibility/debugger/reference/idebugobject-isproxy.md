@@ -1,9 +1,6 @@
 ---
 title: IDebugObject::IsProxy |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - IDebugObject::IsProxy
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f807e25a10ccc2b0d940b6f0db6947e404dc55b0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 58978c5c7281e52adc0a417cb4ee3e8682094a48
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49928577"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53959890"
 ---
 # <a name="idebugobjectisproxy"></a>IDebugObject::IsProxy
 判斷物件是否為透明 proxy。  

@@ -1,9 +1,6 @@
 ---
-title: IDebugCustomAttribute |Microsoft 文件
-ms.custom: ''
+title: IDebugCustomAttribute |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugCustomAttribute
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f0d7497f5fcda3b871c5a1ad57cf04767617bdab
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ec02b9077108687b02e76db22f6349253bdbcb1f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31107760"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53841566"
 ---
 # <a name="idebugcustomattribute"></a>IDebugCustomAttribute
 此介面代表自訂屬性，它可以提供名稱、 父節點和屬性的類別類型。  
@@ -28,11 +25,11 @@ ms.locfileid: "31107760"
 ## <a name="syntax"></a>語法  
   
 ```  
-IDebugCustomAttribute : IUnknown  
+IDebugCustomAttribute : IUnknown  
 ```  
   
-## <a name="notes-for-implementers"></a>實作者注意事項  
- 符號提供者會實作這個介面以支援與符號相關聯的自訂屬性。 它通常是在自己的物件上實作。  
+## <a name="notes-for-implementers"></a>實作者的附註  
+ 符號提供者會實作這個介面，以支援與符號相關聯的自訂屬性。 它通常被實作其本身的物件上。  
   
 ## <a name="notes-for-callers"></a>呼叫端資訊  
  呼叫[下一步](../../../extensibility/debugger/reference/ienumdebugcustomattributes-next.md)傳回此介面。 呼叫[EnumCustomAttributes](../../../extensibility/debugger/reference/idebugcustomattributequery2-enumcustomattributes.md)方法會傳回[IEnumDebugCustomAttributes](../../../extensibility/debugger/reference/ienumdebugcustomattributes.md)介面。  
@@ -43,19 +40,19 @@ IDebugCustomAttribute : IUnknown
 |方法|描述|  
 |------------|-----------------|  
 |[GetParentField](../../../extensibility/debugger/reference/idebugcustomattribute-getparentfield.md)|取得要附加之目前屬性的欄位。|  
-|[GetAttributeTypeField](../../../extensibility/debugger/reference/idebugcustomattribute-getattributetypefield.md)|取得自訂屬性的類別類型。|  
+|[GetAttributeTypeField](../../../extensibility/debugger/reference/idebugcustomattribute-getattributetypefield.md)|取得自訂屬性的類別型別。|  
 |[GetName](../../../extensibility/debugger/reference/idebugcustomattribute-getname.md)|取得自訂屬性的名稱。|  
-|[GetAttributeBytes](../../../extensibility/debugger/reference/idebugcustomattribute-getattributebytes.md)|取得 blob （位元組) 的屬性資訊。|  
+|[GetAttributeBytes](../../../extensibility/debugger/reference/idebugcustomattribute-getattributebytes.md)|取得屬性資訊為 blob (位元組）。|  
   
 ## <a name="remarks"></a>備註  
- 自訂屬性是 C#，提供特定類別或方法相關聯的自訂中繼資料結構。  
+ 自訂屬性是 C# 所提供的特定類別或方法相關聯的自訂中繼資料結構。  
   
 ## <a name="requirements"></a>需求  
  標頭： sh.h  
   
- 命名空間： Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間:Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
  [符號提供者介面](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)   

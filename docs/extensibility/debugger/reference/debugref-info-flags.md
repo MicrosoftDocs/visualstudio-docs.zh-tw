@@ -1,9 +1,6 @@
 ---
 title: DEBUGREF_INFO_FLAGS |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - DEBUGREF_INFO_FLAGS
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9957b0aaf81048c5040e3f7ff54f3fa9be742dc1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 25f0f746fbc44453d1b044d3d1ea5e8172411eff
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49858559"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53837650"
 ---
 # <a name="debugrefinfoflags"></a>DEBUGREF_INFO_FLAGS
 指定要擷取偵錯參考物件的相關資訊。  
@@ -28,7 +25,7 @@ ms.locfileid: "49858559"
 ## <a name="syntax"></a>語法  
   
 ```cpp  
-enum enum_DEBUGREF_INFO_FLAGS {   
+enum enum_DEBUGREF_INFO_FLAGS {   
    DEBUGREF_INFO_NAME             = 0x00000001,  
    DEBUGREF_INFO_TYPE             = 0x00000002,  
    DEBUGREF_INFO_VALUE            = 0x00000004,  
@@ -43,7 +40,7 @@ typedef DWORD DEBUGREF_INFO_FLAGS;
 ```  
   
 ```csharp  
-public enum enum_DEBUGREF_INFO_FLAGS {   
+public enum enum_DEBUGREF_INFO_FLAGS {   
    DEBUGREF_INFO_NAME             = 0x00000001,  
    DEBUGREF_INFO_TYPE             = 0x00000002,  
    DEBUGREF_INFO_VALUE            = 0x00000004,  
@@ -94,9 +91,9 @@ public enum enum_DEBUGREF_INFO_FLAGS {
 ## <a name="requirements"></a>需求  
  標頭： msdbg.h  
   
- 命名空間： Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間:Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
  [列舉型別](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   

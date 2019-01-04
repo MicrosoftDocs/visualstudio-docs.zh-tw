@@ -1,22 +1,20 @@
 ---
-title: 如何： 使用 AsyncPackage 載入 Vspackage 在背景中的 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：使用 AsyncPackage 載入 Vspackage 在背景中的 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
-ms.technology: vs-ide-sdk
 ms.assetid: dedf0173-197e-4258-ae5a-807eb3abc952
 author: gregvanl
 ms.author: gregvanl
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1afd0199401159ace6ccc34bf3f32aa564cf195f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 32fb275cc788722df7085e64d25ded88de127381
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49828516"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53922925"
 ---
-# <a name="how-to-use-asyncpackage-to-load-vspackages-in-the-background"></a>如何： 使用 AsyncPackage 載入 Vspackage 在背景中
+# <a name="how-to-use-asyncpackage-to-load-vspackages-in-the-background"></a>HOW TO：使用 AsyncPackage 載入 Vspackage 在背景中
 正在載入和初始化的 VS 套件可能會導致磁碟 I/O。 如果這類的 I/O 會發生在 UI 執行緒上，它可能會導致回應性問題。 為了解決這個問題，Visual Studio 2015 導入了<xref:Microsoft.VisualStudio.Shell.AsyncPackage>類別，可讓背景執行緒上的封裝載入。  
   
 ## <a name="create-an-asyncpackage"></a>建立 AsyncPackage  
@@ -49,7 +47,7 @@ ms.locfileid: "49828516"
   
 4. 如果您有要執行的非同步初始化工作，您應該覆寫<xref:Microsoft.VisualStudio.Shell.AsyncPackage.InitializeAsync%2A>。 移除`Initialize()`VSIX 範本所提供的方法。 (`Initialize()`方法中的**AsyncPackage**密封格式)。 您可以使用任一<xref:Microsoft.VisualStudio.Shell.AsyncPackage.AddService%2A>方法，以非同步的服務加入您的套件。  
   
-    注意： 若要呼叫`base.InitializeAsync()`，您可以變更您的程式碼，以：  
+    附註：若要呼叫`base.InitializeAsync()`，您可以變更您的程式碼，以：  
   
    ```csharp  
    await base.InitializeAsync(cancellationToken, progress);  
@@ -57,9 +55,9 @@ ms.locfileid: "49828516"
   
 5. 您必須小心進行 Rpc （遠端程序呼叫） 從您的非同步初始化程式碼 (在**InitializeAsync**)。 這些可能是當您呼叫<xref:Microsoft.VisualStudio.Shell.Package.GetService%2A>直接或間接。  需要同步處理的負載時，UI 執行緒將會封鎖使用<xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory>。 預設封鎖模式中，會停用 Rpc。 這表示，如果您嘗試使用 RPC 從非同步工作時，您會鎖死 UI 執行緒是否正在等候您要載入的封裝本身。 一般的替代做法是您在 UI 執行緒的程式碼封送處理，如有需要使用類似**可聯結工作 Factory**的<xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory.SwitchToMainThreadAsync%2A>或一些其他不會使用 RPC 的機制。  請勿使用**ThreadHelper.Generic.Invoke**或通常會封鎖呼叫執行緒等候取得至 UI 執行緒。  
   
-    注意： 您應該避免使用**GetService**或是**QueryService**中您`InitializeAsync`方法。 如果您有使用這些，您必須先切換至 UI 執行緒。 替代方法是使用<xref:Microsoft.VisualStudio.Shell.AsyncServiceProvider.GetServiceAsync%2A>從您**AsyncPackage** (藉由將它轉型<xref:Microsoft.VisualStudio.Shell.Interop.IAsyncServiceProvider>。)  
+    附註：您應該避免使用**GetService**或是**QueryService**中您`InitializeAsync`方法。 如果您有使用這些，您必須先切換至 UI 執行緒。 替代方法是使用<xref:Microsoft.VisualStudio.Shell.AsyncServiceProvider.GetServiceAsync%2A>從您**AsyncPackage** (藉由將它轉型<xref:Microsoft.VisualStudio.Shell.Interop.IAsyncServiceProvider>。)  
   
-   C#： 建立 AsyncPackage:  
+   C#: 建立 AsyncPackage:  
   
 ```csharp  
 [PackageRegistration(UseManagedResourcesOnly = true, AllowsBackgroundLoading = true)]       
@@ -79,7 +77,7 @@ public sealed class TestPackage : AsyncPackage
   
 1.  請務必移除`Initialize`覆寫，您必須在您的套件。  
   
-2.  避免死結 （deadlock）： 可能會在您的程式碼中隱藏的 Rpc。 這現在會在背景執行緒上發生。 請確定如果您正在使用 RPC (比方說， **GetService**)，您必須 (1) 切換至主執行緒，或 （2） 使用非同步版本的 API，如果有一個存在 (比方說， **GetServiceAsync**).  
+2.  避免死結 （deadlock）：可能會在您的程式碼中隱藏的 Rpc。 這現在會在背景執行緒上發生。 請確定如果您正在使用 RPC (比方說， **GetService**)，您必須 (1) 切換至主執行緒，或 （2） 使用非同步版本的 API，如果有一個存在 (比方說， **GetServiceAsync**).  
   
 3.  請勿過於頻繁執行緒之間進行切換。 嘗試將當地語系化中的背景執行緒，以縮短載入時間可能會發生的工作。  
   
@@ -96,7 +94,7 @@ public sealed class TestPackage : AsyncPackage
   
   您的套件仍有機會 （在其非同步初始化階段） 要執行的作業關閉 UI 執行緒，但會封鎖 UI 執行緒，該工作完成。 如果呼叫端必須使用**IAsyncServiceProvider**來以非同步方式查詢您的服務，然後您的載入和初始化時，必須以非同步方式假設它們不會立即產生的工作物件上封鎖。  
   
-  C# 中： 如何以非同步方式查詢服務：  
+  C#: 如何以非同步方式查詢服務：  
   
 ```csharp  
 using Microsoft.VisualStudio.Shell;   
@@ -105,4 +103,3 @@ using Microsoft.VisualStudio.Shell.Interop;
 IAsyncServiceProvider asyncServiceProvider = Package.GetService(typeof(SAsyncServiceProvider)) as IAsyncServiceProvider;   
 IMyTestService testService = await asyncServiceProvider.GetServiceAsync(typeof(SMyTestService)) as IMyTestService;  
 ```
-  

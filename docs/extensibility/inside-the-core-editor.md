@@ -1,9 +1,6 @@
 ---
 title: 核心編輯器內 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - core editor
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 37c62ebad5b5f119c9acf5b62b14db6743949c19
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 01756778c7937654339fe0fc41b752ed02659d3c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39500445"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53828520"
 ---
 # <a name="inside-the-core-editor"></a>在核心編輯器
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]核心編輯器是一份數個元件可讓您修改及查詢文字的資訊。 如果您已自訂核心編輯器使用舊版的 API，您可以繼續使用這些自訂項目，將會透過編輯器配接器進行路由。 不過，它會建議您調整您的自訂 API 的新編輯器。  
@@ -47,7 +44,7 @@ ms.locfileid: "39500445"
  [在舊版的 API 中的文字緩衝區事件](../extensibility/text-buffer-events-in-the-legacy-api.md)  
  提供一份用於文字緩衝區事件通知的介面。  
   
- [如何： 使用舊版 API 的文字緩衝區事件註冊](../extensibility/how-to-register-for-text-buffer-events-with-the-legacy-api.md)  
+ [如何：註冊使用舊版 API 的文字緩衝區事件](../extensibility/how-to-register-for-text-buffer-events-with-the-legacy-api.md)  
  描述如何通知文字緩衝區的事件。  
   
  [使用文字管理員監視全域設定](../extensibility/using-the-text-manager-to-monitor-global-settings.md)  
@@ -66,7 +63,7 @@ ms.locfileid: "39500445"
  描述控制項的程式碼裝飾的語言服務的具現化。  
   
 ## <a name="related-sections"></a>相關章節  
- [逐步解說： 建立核心編輯器 」 和 「 登錄編輯程式檔案類型](../extensibility/walkthrough-creating-a-core-editor-and-registering-an-editor-file-type.md)  
+ [逐步解說：建立核心編輯器 」 和 「 登錄編輯程式檔案類型](../extensibility/walkthrough-creating-a-core-editor-and-registering-an-editor-file-type.md)  
  提供有關如何啟動核心編輯器從 managed 程式碼的逐步指示。  
   
  [下拉式清單列](../extensibility/drop-down-bar.md)  
@@ -75,8 +72,8 @@ ms.locfileid: "39500445"
  [在舊版的 API 中使用文字標記](../extensibility/using-text-markers-with-the-legacy-api.md)  
  說明文字標記，以及如何在核心編輯器中，使用它們的概念，並列出用來存取和管理文字標記的介面。  
   
- [如何： 新增標準文字標記](../extensibility/how-to-add-standard-text-markers.md)  
+ [如何：新增標準文字標記](../extensibility/how-to-add-standard-text-markers.md)  
  提供有關如何建立文字標記以及如何將自訂命令新增至快顯功能表的逐步指示。  
   
- [如何： 建立自訂文字標記](../extensibility/how-to-create-custom-text-markers.md)  
+ [如何：建立自訂文字標記](../extensibility/how-to-create-custom-text-markers.md)  
  提供有關如何建立自訂文字標記，以及如何提供標記類型做為服務的逐步指示。

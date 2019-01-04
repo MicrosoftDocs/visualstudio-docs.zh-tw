@@ -1,9 +1,6 @@
 ---
 title: 建立檢視裝飾、 命令和設定 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 4a2df0a3-42da-4f7b-996f-ee16a35ac922
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e937dfe47160959f2c011e53633c4d7b8a36766b
-ms.sourcegitcommit: 75e02ed88a1ace6e8265fd4e3a82a1bc78f3adca
+ms.openlocfilehash: 4de9446afcc7528ba5c27160b4e00ad911b657e9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/13/2018
-ms.locfileid: "53348528"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53958733"
 ---
 # <a name="walkthrough-create-a-view-adornment-commands-and-settings-column-guides"></a>逐步解說：建立檢視裝飾、 命令和設定 （分欄輔助線）
 您可以擴充 Visual Studio 文字/程式碼編輯器與命令和檢視效果。 這篇文章會示範如何開始使用熱門的擴充功能，分欄輔助線。 分欄輔助線是以視覺化方式淺色可協助您管理您的程式碼，以特定的資料行寬度的文字編輯器的檢視上所繪製的線條。 具體來說，格式化程式碼可以是很重要的範例包含在文件，部落格文章，或錯誤報告。

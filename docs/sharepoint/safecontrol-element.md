@@ -1,9 +1,6 @@
 ---
 title: SafeControl 項目 |Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: aded7f246d961bd3f956611ff092dfdcf8b68564
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: a56936ed867cdadfb938b9804fbcaeb2560e6d86
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118606"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53864134"
 ---
 # <a name="safecontrol-element"></a>SafeControl 項目
   代表 ASPX 控制項或指定為安全的任何使用者存取 SharePoint 網站上的任何 ASPX 頁面上的 Web 組件。  
@@ -74,4 +71,3 @@ ms.locfileid: "37118606"
 ## <a name="see-also"></a>另請參閱
  [SharePoint 專案項目結構描述參考](../sharepoint/sharepoint-project-item-schema-reference.md)   
  [提供專案項目中的封裝和部署資訊](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)  
-  

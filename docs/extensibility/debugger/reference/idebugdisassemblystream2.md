@@ -1,9 +1,6 @@
 ---
-title: IDebugDisassemblyStream2 |Microsoft 文件
-ms.custom: ''
+title: IDebugDisassemblyStream2 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugDisassemblyStream2
@@ -15,15 +12,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c1598ec8a6e5fca5275384c00433d74d22ce3505
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c6923d357e362a311678e851abb1fc3b0b68cb8a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31107890"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53963734"
 ---
 # <a name="idebugdisassemblystream2"></a>IDebugDisassemblyStream2
-此介面代表資料流的指示。  
+這個介面會表示指令資料流。  
   
 ## <a name="syntax"></a>語法  
   
@@ -31,8 +28,8 @@ ms.locfileid: "31107890"
 IDebugDisassemblyStream2 : IUnknown  
 ```  
   
-## <a name="notes-for-implementers"></a>實作者注意事項  
- 偵錯引擎會實作這個介面以支援反組譯碼的程式碼。  
+## <a name="notes-for-implementers"></a>實作者的附註  
+ 偵錯引擎會實作這個介面，以支援反組譯碼的程式碼。  
   
 ## <a name="notes-for-callers"></a>呼叫端資訊  
  呼叫[GetDisassemblyStream](../../../extensibility/debugger/reference/idebugprogram2-getdisassemblystream.md)方法會傳回此介面。  
@@ -42,24 +39,24 @@ IDebugDisassemblyStream2 : IUnknown
   
 |方法|描述|  
 |------------|-----------------|  
-|[讀取](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md)|讀取從反組譯碼資料流中目前位置開始的指示。|  
-|[搜尋](../../../extensibility/debugger/reference/idebugdisassemblystream2-seek.md)|讀取的指標在中移動反組譯碼資料流給定的指示，相對於指定的位置數目。|  
-|[GetCodeLocationId](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodelocationid.md)|傳回特定的程式碼內容的程式碼位置識別項。|  
-|[GetCodeContext](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodecontext.md)|傳回指定的程式碼位置識別碼相對應的程式碼內容物件。|  
-|[GetCurrentLocation](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcurrentlocation.md)|傳回表示目前的程式碼位置的程式碼位置識別項。|  
-|[GetDocument](../../../extensibility/debugger/reference/idebugdisassemblystream2-getdocument.md)|取得與此反組譯碼資料流相關聯的來源文件。|  
-|[GetScope](../../../extensibility/debugger/reference/idebugdisassemblystream2-getscope.md)|取得此反組譯碼資料流的範圍。|  
-|[GetSize](../../../extensibility/debugger/reference/idebugdisassemblystream2-getsize.md)|取得此反組譯碼資料流的大小。|  
+|[Read](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md)|讀取從目前的位置，在反組譯碼資料流中的指示。|  
+|[Seek](../../../extensibility/debugger/reference/idebugdisassemblystream2-seek.md)|反組譯碼資料流指定數目的相對於指定位置的指示中移動讀取的指標。|  
+|[GetCodeLocationId](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodelocationid.md)|傳回特定的程式碼內容的程式碼位置識別碼。|  
+|[GetCodeContext](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodecontext.md)|傳回對應至指定的程式碼位置識別碼的程式碼內容物件。|  
+|[GetCurrentLocation](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcurrentlocation.md)|傳回代表目前的程式碼位置的程式碼位置識別碼。|  
+|[GetDocument](../../../extensibility/debugger/reference/idebugdisassemblystream2-getdocument.md)|取得與這個反組譯碼資料流相關聯的來源文件。|  
+|[GetScope](../../../extensibility/debugger/reference/idebugdisassemblystream2-getscope.md)|取得這個反組譯碼資料流的範圍。|  
+|[GetSize](../../../extensibility/debugger/reference/idebugdisassemblystream2-getsize.md)|取得這個反組譯碼資料流的大小。|  
   
 ## <a name="remarks"></a>備註  
- 反組譯碼資料流可以建立可代表在整個位址空間或只函式或模組內的空間。 每個指示由[DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md)呼叫所傳回的結構[讀取](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md)方法。  
+ 反組譯碼資料流可以建立來代表整個位址空間只函式或模組內的空間。 表示每個指令[DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md)呼叫所傳回的結構[讀取](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md)方法。  
   
 ## <a name="requirements"></a>需求  
  標頭： msdbg.h  
   
- 命名空間： Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間:Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
  [核心介面](../../../extensibility/debugger/reference/core-interfaces.md)   

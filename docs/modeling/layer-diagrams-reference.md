@@ -21,13 +21,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 1ef2d68cb0f8e3d6904bdf3f3ebbab321649c3e1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a883b82da76fff2fc4b298de7263320c069a501b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49920922"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53948390"
 ---
 # <a name="dependency-diagrams-reference"></a>相依性圖表： 參考
 
@@ -50,7 +49,7 @@ ms.locfileid: "49920922"
 
 -   在開發和維護您的程式碼期間，藉由在簽入及建置作業包含驗證，強化預期的架構。
 
-本主題說明您可以使用相依性圖表的項目。 如需詳細資訊，有關如何建立和繪製相依性圖表，請參閱[相依性圖表： 指導方針](../modeling/layer-diagrams-guidelines.md)。 如需分層模式的詳細資訊，請瀏覽[典範與實例的站台](http://go.microsoft.com/fwlink/?LinkId=145794)。
+本主題說明您可以使用相依性圖表的項目。 如需詳細資訊，有關如何建立和繪製相依性圖表，請參閱[相依性圖表：指導方針](../modeling/layer-diagrams-guidelines.md)。 如需分層模式的詳細資訊，請瀏覽[典範與實例的站台](http://go.microsoft.com/fwlink/?LinkId=145794)。
 
 ## <a name="reading-dependency-diagrams"></a>讀取相依性圖表
 
@@ -78,7 +77,7 @@ ms.locfileid: "49920922"
 
 如需連結圖層與成品的詳細資訊，請參閱：
 
--   [相依性圖表： 指導方針](../modeling/layer-diagrams-guidelines.md)
+-   [相依性圖表中：指導方針](../modeling/layer-diagrams-guidelines.md)
 
 -   [從您的程式碼建立相依性圖表](../modeling/create-layer-diagrams-from-your-code.md)
 
@@ -95,7 +94,7 @@ ms.locfileid: "49920922"
 |-|-|
 |**類別目錄**|成品的類型，例如類別、命名空間、原始程式檔等等|
 |**圖層**|連結到成品的圖層|
-|**支援驗證**|如果 **，則為 True**，則圖層驗證程序可確認專案符合相依性，或從這個項目。<br /><br /> 如果**False**，則連結不會參與圖層驗證程序。<br /><br /> 如需詳細資訊，請參閱 <<c0> [ 相依性圖表： 指導方針](../modeling/layer-diagrams-guidelines.md)。|
+|**支援驗證**|如果 **，則為 True**，則圖層驗證程序可確認專案符合相依性，或從這個項目。<br /><br /> 如果**False**，則連結不會參與圖層驗證程序。<br /><br /> 如需詳細資訊，請參閱[相依性圖表：指導方針](../modeling/layer-diagrams-guidelines.md)。|
 |**識別碼**|連結成品的參考|
 
 ## <a name="see-also"></a>另請參閱

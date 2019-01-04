@@ -1,9 +1,6 @@
 ---
 title: 註冊專案和項目範本 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio SDK], adding items
@@ -17,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fea06b4e36b35266f39dc07d58a29c1b53310b57
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9bf60283dd56268ff7b47b5f0e81ebb23ee28197
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49934596"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53930618"
 ---
 # <a name="registering-project-and-item-templates"></a>註冊專案和項目範本
 專案類型都必須註冊其專案和專案項目範本的所在位置的目錄。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 使用您的專案類型相關聯的註冊資訊來判斷要顯示在**加入新的專案**並**加入新項目**對話方塊。  
@@ -44,7 +41,7 @@ ms.locfileid: "49934596"
 |----------|----------|-----------------|  
 |@|REG_SZ|這種專案的預設名稱。|  
 |DisplayName|REG_SZ|要從附屬 DLL 擷取的資源識別碼名稱的註冊套件。|  
-|Package|REG_SZ|註冊套件的套件的類別識別碼。|  
+|封裝|REG_SZ|註冊套件的套件的類別識別碼。|  
 |ProjectTemplatesDir|REG_SZ|預設的專案範本檔案的路徑。 專案範本檔案會顯示**新的專案**範本。|  
 
 ### <a name="registering-item-templates"></a>註冊項目範本  

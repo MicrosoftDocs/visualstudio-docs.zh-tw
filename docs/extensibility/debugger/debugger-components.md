@@ -1,9 +1,6 @@
 ---
 title: 偵錯工具元件 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Visual Studio], components
@@ -15,23 +12,23 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d3f79b9f22c2eb26b456e5e45c049a8f8bc04fae
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ea47a75ef943b462b35c06b20b9cd21b2ade7b70
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49818974"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53894255"
 ---
 # <a name="debugger-components"></a>偵錯工具元件
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]偵錯工具會實作為 VSPackage 和管理整個偵錯工作階段。 偵錯工作階段包含下列項目：  
   
-- **偵錯封裝：** [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]偵錯工具會提供相同的使用者介面，不論項目正在進行偵錯。  
+- **偵錯封裝：**[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]偵錯工具會提供相同的使用者介面，不論項目正在進行偵錯。  
   
 - **工作階段偵錯管理員 (SDM):** 提供一致的程式設計介面，以[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]偵錯工具進行偵錯引擎的各種不同的管理。 它由實作[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。  
   
-- **處理序偵錯管理員 (PDM):** 的所有執行的執行個體的管理， [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]，可以是或正在進行偵錯的所有程式的清單。 它由實作[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。  
+- **處理序偵錯管理員 (PDM):** 管理的所有執行的執行個體[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]，可以是或正在進行偵錯的所有程式的清單。 它由實作[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。  
   
-- **偵錯引擎 (DE):** 須負責監視正在偵錯程式進行通訊的 SDM 和 PDM，執行中的程式狀態，並與其互動的運算式評估工具和符號提供者，以提供即時的分析程式的記憶體和變數的狀態。 它由實作[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]（適用於支援的語言） 和第三方廠商想要支援他們自己的執行的階段。 
+- **偵錯引擎 (DE):** 負責監視程式，偵錯，通訊 SDM 和 PDM，執行程式的狀態，並與其互動的運算式評估工具和符號提供者提供的程式的記憶體狀態的即時分析和變數。 它由實作[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]（適用於支援的語言） 和第三方廠商想要支援他們自己的執行的階段。 
   
 - **運算式評估工具 (EE):** 提供支援以動態方式評估變數和使用者所提供的程式已停止在特定時間點時的運算式。 它由實作[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]（適用於支援的語言） 和第三方廠商想要支援他們自己的語言。  
   

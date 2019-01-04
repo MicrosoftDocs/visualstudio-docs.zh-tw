@@ -1,15 +1,10 @@
 ---
-title: 如何： 新增和移除其他組件 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：新增和移除其他組件 |Microsoft Docs
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.RAD.CustomAssembly
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -19,14 +14,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4178f1ca5a437c52754199d26a6d39023193aaf8
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: e9653fe6ab79e3615ecb231d19dd9ee20133faf6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219142"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53887006"
 ---
-# <a name="how-to-add-and-remove-additional-assemblies"></a>如何： 新增和移除其他組件
+# <a name="how-to-add-and-remove-additional-assemblies"></a>HOW TO：新增和移除其他組件
   如果 SharePoint 封裝相依於其他組件的功能或資料，您可以新增組件至您的方案套件 (.wsp)。 如此一來，在 SharePoint 伺服器可確保自訂組件會安裝套件。  
   
  您也可以新增和變更的安全控制項和組件相關聯的類別資源檔案。  
@@ -36,7 +31,7 @@ ms.locfileid: "50219142"
   
 #### <a name="to-add-an-existing-assembly"></a>若要新增現有組件  
   
-1.  開啟**封裝設計工具**。 如需詳細資訊，請參閱 <<c0> [ 如何： 自訂 SharePoint 方案套件](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)。  
+1.  開啟**封裝設計工具**。 如需詳細資訊，請參閱[＜How to：自訂 SharePoint 方案套件](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)。  
   
 2.  選擇**進階** 索引標籤。  
   
@@ -52,7 +47,7 @@ ms.locfileid: "50219142"
   
 1.  開啟**封裝設計工具**。  
   
-     如需詳細資訊，請參閱 <<c0> [ 如何： 自訂 SharePoint 方案套件](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)。  
+     如需詳細資訊，請參閱[＜How to：自訂 SharePoint 方案套件](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)。  
   
 2.  選擇**進階** 索引標籤。  
   
@@ -89,7 +84,7 @@ ms.locfileid: "50219142"
   
 #### <a name="to-delete-an-existing-assembly"></a>若要刪除的現有組件  
   
-1.  開啟**封裝設計工具**。 如需詳細資訊，請參閱 <<c0> [ 如何： 自訂 SharePoint 方案套件](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)。  
+1.  開啟**封裝設計工具**。 如需詳細資訊，請參閱[＜How to：自訂 SharePoint 方案套件](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)。  
   
 2.  選擇**進階** 索引標籤。  
   
@@ -115,6 +110,5 @@ ms.locfileid: "50219142"
   
 ## <a name="see-also"></a>另請參閱
  [建立 SharePoint 功能](../sharepoint/creating-sharepoint-features.md)   
- [如何： 自訂 SharePoint 功能](../sharepoint/how-to-customize-a-sharepoint-feature.md)   
- [如何： 新增和移除 SharePoint 功能的項目](../sharepoint/how-to-add-and-remove-items-to-sharepoint-features.md)   
-  
+ [如何：自訂 SharePoint 功能](../sharepoint/how-to-customize-a-sharepoint-feature.md)   
+ [如何：新增和移除 SharePoint 功能的項目](../sharepoint/how-to-add-and-remove-items-to-sharepoint-features.md)   

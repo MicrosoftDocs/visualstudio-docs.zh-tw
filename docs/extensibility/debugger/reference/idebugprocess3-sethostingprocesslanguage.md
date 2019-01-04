@@ -1,9 +1,6 @@
 ---
 title: IDebugProcess3::SetHostingProcessLanguage |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugProcess3::SetHostingProcessLanguage
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 537b2c2b682db1e1bed8131df6f010e55ef47744
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 170e5a2f315248164cf6af277197f7a9f9da05b5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49900341"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53933673"
 ---
 # <a name="idebugprocess3sethostingprocesslanguage"></a>IDebugProcess3::SetHostingProcessLanguage
 這個方法會設定程序會裝載下的語言。 然後偵錯引擎 (DE) 載入適當的運算式評估工具使用此語言。  
@@ -28,8 +25,8 @@ ms.locfileid: "49900341"
 ## <a name="syntax"></a>語法  
   
 ```cpp  
-HRESULT SetHostingProcessLanguage(  
-   REFGUID guidLang  
+HRESULT SetHostingProcessLanguage(  
+   REFGUID guidLang  
 );  
 ```  
   

@@ -1,9 +1,6 @@
 ---
 title: PENDING_BP_STATE_INFO |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - PENDING_BP_STATE_INFO
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 98c815c5f92930c3877e78ab27934b9abe199cef
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 93b1278c9f0bc11ce4a79e10750f4f7952fba81f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49947819"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53896041"
 ---
 # <a name="pendingbpstateinfo"></a>PENDING_BP_STATE_INFO
 包含已準備好繫結至程式碼位置的中斷點的狀態資訊。  
@@ -28,14 +25,14 @@ ms.locfileid: "49947819"
 ## <a name="syntax"></a>語法  
   
 ```cpp  
-typedef struct _tagPENDING_BP_STATE_INFO {   
+typedef struct _tagPENDING_BP_STATE_INFO {   
    PENDING_BP_STATE       state;  
    PENDING_BP_STATE_FLAGS flags;  
 } PENDING_BP_STATE_INFO;  
 ```  
   
 ```csharp  
-public struct PENDING_BP_STATE_INFO {   
+public struct PENDING_BP_STATE_INFO {   
    public uint state;  
    public uint flags;  
 };  
@@ -54,9 +51,9 @@ public struct PENDING_BP_STATE_INFO {
 ## <a name="requirements"></a>需求  
  標頭： msdbg.h  
   
- 命名空間： Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間:Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
  [結構和等位](../../../extensibility/debugger/reference/structures-and-unions.md)   

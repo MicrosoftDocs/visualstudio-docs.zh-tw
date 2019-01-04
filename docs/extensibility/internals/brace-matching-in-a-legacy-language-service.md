@@ -1,9 +1,6 @@
 ---
 title: 舊版語言服務中的比對的大括號 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - brace matching
@@ -14,19 +11,19 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d7564d76485fc60486a581de71a0497a1dc3e4a7
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 5f1c69a280e84a3c444c371bef5c99c7a3c17506
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512743"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53910031"
 ---
 # <a name="brace-matching-in-a-legacy-language-service"></a>舊版語言服務中的比對的大括號
 大括號比對，可協助開發人員追蹤發生在一起，例如括號和大括號所需要的語言項目。 當開發人員輸入右括號時，左括號會反白顯示。  
   
  您可以比對兩個或三個共同發生的項目，稱為組和三合一。 三合一是共同發生的三個元素的集合。 例如，在 C#`foreach`陳述式構成三重物件： `foreach()`， `{`，和`}`。 輸入右括號時，會反白顯示三個項目。  
   
- 舊版語言服務會實作成 VSPackage 的一部分，但實作語言服務功能的較新的方式是使用 MEF 擴充功能。 若要深入了解實作大括號比對的新方式，請參閱[逐步解說： 顯示相符的大括號](../../extensibility/walkthrough-displaying-matching-braces.md)。  
+ 舊版語言服務會實作成 VSPackage 的一部分，但實作語言服務功能的較新的方式是使用 MEF 擴充功能。 若要深入了解實作大括號比對的新方式，請參閱[逐步解說：顯示相符的大括號](../../extensibility/walkthrough-displaying-matching-braces.md)。  
   
 > [!NOTE]
 >  我們建議您開始使用新的編輯器 API 盡。 這會改善您的語言服務的效能，並可讓您充分利用新編輯器功能。  

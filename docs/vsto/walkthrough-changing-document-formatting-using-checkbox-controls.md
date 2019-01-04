@@ -1,9 +1,6 @@
 ---
-title: 逐步解說： 變更文件格式使用核取方塊控制項
-ms.custom: ''
+title: 逐步解說：變更文件格式使用核取方塊控制項
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,14 +16,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 86cf89f7853308e93c55e30deae17786fdb3e413
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6e33d7b683e55f570961d9f9f8f77ea1491db3f5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49863928"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53913865"
 ---
-# <a name="walkthrough-change-document-formatting-using-checkbox-controls"></a>逐步解說： 變更文件格式使用核取方塊控制項
+# <a name="walkthrough-change-document-formatting-using-checkbox-controls"></a>逐步解說：變更文件格式使用核取方塊控制項
   本逐步解說示範如何使用 Microsoft Office Word 文件層級自訂中的 Windows Form 控制項，來變更文字格式。  
   
  [!INCLUDE[appliesto_wdalldoc](../vsto/includes/appliesto-wdalldoc-md.md)]  
@@ -55,7 +52,7 @@ ms.locfileid: "49863928"
   
 1.  建立 Word 文件專案名稱**My Word 格式設定**。 在精靈中，選取**建立新的文件**。  
   
-     如需詳細資訊，請參閱 <<c0> [ 如何： 在 Visual Studio 中的建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
+     如需詳細資訊，請參閱[＜How to：在 Visual Studio 中建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
   
      Visual Studio 設計工具中開啟新的 Word 文件，並將**My Word 格式設定**專案加入**方案總管 中**。  
   
@@ -137,7 +134,7 @@ ms.locfileid: "49863928"
      [!code-vb[Trin_VstcoreProgrammingControlsWord#5](../vsto/codesnippet/VisualBasic/my chart options/ThisDocument.vb#5)]
      [!code-csharp[Trin_VstcoreProgrammingControlsWord#5](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ThisDocument.cs#5)]  
   
-6.  在C#，您必須新增到文字方塊中的事件處理常式<xref:Microsoft.Office.Tools.Word.Document.Startup>事件。 如需有關如何建立事件處理常式的資訊，請參閱 <<c0> [ 如何： 建立 Office 專案中的事件處理常式](../vsto/how-to-create-event-handlers-in-office-projects.md)。  
+6.  在C#，您必須新增到文字方塊中的事件處理常式<xref:Microsoft.Office.Tools.Word.Document.Startup>事件。 如需有關如何建立事件處理常式的資訊，請參閱[How to:建立 Office 專案中的事件處理常式](../vsto/how-to-create-event-handlers-in-office-projects.md)。  
   
      [!code-csharp[Trin_VstcoreProgrammingControlsWord#6](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ThisDocument.cs#6)]  
   
@@ -155,9 +152,9 @@ ms.locfileid: "49863928"
 ## <a name="next-steps"></a>後續步驟  
  本逐步解說會示範使用核取方塊，並以程式設計方式變更文字格式設定 Word 文件上的基本概念。 接著可以執行下列一些工作：  
   
--   使用按鈕填入文字方塊。 如需詳細資訊，請參閱 <<c0> [ 逐步解說： 使用按鈕文件中的文字方塊中顯示的文字](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-document-using-a-button.md)。  
+-   使用按鈕填入文字方塊。 如需詳細資訊，請參閱[逐步解說：使用按鈕文件中的文字方塊中顯示的文字](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-document-using-a-button.md)。  
   
--   使用選項按鈕以選取圖表樣式。 如需詳細資訊，請參閱 <<c0> [ 逐步解說： 更新使用選項按鈕的文件中的圖表](../vsto/walkthrough-updating-a-chart-in-a-document-using-radio-buttons.md)。  
+-   使用選項按鈕以選取圖表樣式。 如需詳細資訊，請參閱[逐步解說：更新使用選項按鈕的文件中的圖表](../vsto/walkthrough-updating-a-chart-in-a-document-using-radio-buttons.md)。  
   
 
 ## <a name="see-also"></a>另請參閱  
@@ -165,5 +162,3 @@ ms.locfileid: "49863928"
  [Office 程式開發範例和逐步解說](../vsto/office-development-samples-and-walkthroughs.md)   
  [NamedRange 控制項](../vsto/namedrange-control.md)   
  [Office 文件上的 Windows Form 控制項的限制](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)  
-  
-  

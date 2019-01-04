@@ -1,9 +1,6 @@
 ---
 title: 使用舊版 API 存取文字圖層 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - text layers
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1506c035fca0cdaf4916d93daad8ced7550bfe6e
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 47085216c6f20ca1add535a76ce4f5fb4043a6dd
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39078663"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53945934"
 ---
 # <a name="access-text-layers-by-using-the-legacy-api"></a>使用舊版 API 存取文字圖層
 文字層通常會封裝在某種程度的文字版面配置。 比方說，「 函式-一次 「 圖層會隱藏文字之前和之後包含文字插入點 （caret) 的函式。  

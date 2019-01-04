@@ -1,9 +1,6 @@
 ---
 title: 當中斷點繫結或變成未繫結 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], breakpoint unbound events
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5bcefe50752a605a0806dc09125f1cca042dfe88
-ms.sourcegitcommit: 8d38d5d2f2b75fc1563952c0d6de0fe43af12766
+ms.openlocfilehash: 77dfa1c1bd97739035caf2030f45d2088b9cf12e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/26/2018
-ms.locfileid: "39276396"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53943755"
 ---
 # <a name="when-a-breakpoint-binds-or-becomes-unbound"></a>當中斷點繫結或變成未繫結
 當中斷點無法繫結時進行呼叫時[IDebugPendingBreakpoint2::CanBind](../../extensibility/debugger/reference/idebugpendingbreakpoint2-canbind.md)方法中，繫結時間，並建立中斷點的時間不同。  

@@ -3,7 +3,6 @@ title: 工作流程設計工具-RemoveFromCollection&lt;T&gt;活動設計工具
 ms.date: 11/04/2016
 ms.topic: reference
 ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Activities.Statements.RemoveFromCollection`1.UI
 ms.assetid: 6617ba26-c8bc-4aed-b746-112bf490d288
@@ -12,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 415d03ffda6bbd2e839354b4f7cb143337ab08c8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a3cda73243ce84fa49a1c55ff01fdbd43c085ea1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49891358"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53830020"
 ---
 # <a name="removefromcollectiont-activity-designer"></a>RemoveFromCollection\<T > 活動設計工具
 

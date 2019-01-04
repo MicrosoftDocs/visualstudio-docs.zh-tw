@@ -1,13 +1,8 @@
 ---
 title: 封裝和部署 SharePoint 方案 |Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -19,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6c5993f09581faf6e3cedb4c71598ea26b16b699
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c1213d4dd2cdd347fe1d29f594fa7614df50b1e6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49863265"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53849015"
 ---
 # <a name="package-and-deploy-sharepoint-solutions"></a>封裝和部署 SharePoint 方案
   一般而言，SharePoint 解決方案會使用方案套件 (.wsp) 檔案部署到 SharePoint 伺服器。 若要將您的 SharePoint 專案項目組織成功能，並建立要部署您的 SharePoint 功能的套件，您可以使用 Visual Studio。  
@@ -40,9 +35,9 @@ ms.locfileid: "49863265"
 -   [部署 SharePoint 方案中的檔案](#DeployingFiles)  
   
 ## <a name="create-features-and-packages"></a>建立功能和封裝
- 您可以使用 Visual Studio 來分組到相關的 SharePoint 項目*功能*。 比方說，在連絡人清單定義一項功能可能包括清單執行個體和清單定義。 您可以將這兩個元素合併成單一的功能進行部署。 如需有關功能的詳細資訊，請參閱 <<c0> [ 建置組塊： 功能](http://go.microsoft.com/fwlink/?LinkID=169183)。  
+ 您可以使用 Visual Studio 來分組到相關的 SharePoint 項目*功能*。 比方說，在連絡人清單定義一項功能可能包括清單執行個體和清單定義。 您可以將這兩個元素合併成單一的功能進行部署。 如需有關功能的詳細資訊，請參閱[建置組塊：功能](http://go.microsoft.com/fwlink/?LinkID=169183)。  
   
- 接下來，您可以在其中建立 SharePoint 方案套件 (*.wsp*) 套件組合的多項功能，網站定義、 組件和其他檔案至單一套件，將檔案儲存在 SharePoint 部署的檔案所需的格式在伺服器中。 如需詳細資訊，請參閱 <<c0> [ 建置組塊： 方案](http://go.microsoft.com/fwlink/?LinkID=169186)。  
+ 接下來，您可以在其中建立 SharePoint 方案套件 (*.wsp*) 套件組合的多項功能，網站定義、 組件和其他檔案至單一套件，將檔案儲存在 SharePoint 部署的檔案所需的格式在伺服器中。 如需詳細資訊，請參閱[建置組塊：解決方案](http://go.microsoft.com/fwlink/?LinkID=169186)。  
   
 ## <a name="feature-and-packaging-tool-support"></a>功能和封裝工具支援
  您可以使用 Visual Studio 中的 SharePoint 開發工具，快速將您的 SharePoint 檔案組織成功能和更容易部署的方案套件。 若要設定的功能和方案套件，您可以使用下列工具。  
@@ -81,11 +76,11 @@ ms.locfileid: "49863265"
   
   在 Visual Studio 中的 SharePoint 開發工具有驗證規則，以協助確保方案套件正確。 此外，規則確認 *.wsp*方案檔案已成功部署，並將 SharePoint 伺服器上啟動。 如需 XML 結構描述的功能，請參閱[功能結構描述](http://go.microsoft.com/fwlink/?LinkID=169192)。  
   
-  您可以將自訂功能和封裝驗證規則新增至 SharePoint 專案系統。 如需詳細資訊，請參閱 <<c0> [ 如何： 建立自訂的功能和封裝驗證規則，SharePoint 方案的](../sharepoint/how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md)。  
+  您可以將自訂功能和封裝驗證規則新增至 SharePoint 專案系統。 如需詳細資訊，請參閱[＜How to：建立自訂的功能和封裝驗證規則，SharePoint 方案的](../sharepoint/how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md)。  
   
-  如需 [封裝總管] 中的詳細資訊，請參閱[如何： 新增和移除功能和項目加入封裝時，使用 [封裝總管] 中](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer.md)。  
+  如需 [封裝總管] 中的詳細資訊，請參閱[How to:新增和移除功能和項目加入封裝時，使用 [封裝總管] 中](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer.md)。  
   
-### <a name="solution-explorer"></a>底下提供說明，包括方案總管
+### <a name="solution-explorer"></a>方案總管
  您可以使用 [方案總管] 來瀏覽並開啟 SharePoint 專案的檔案。 在 [方案總管] 中使用操作功能表，以加入功能，功能事件接收器，和功能的資源。 此外，您可以開啟功能設計工具與封裝設計工具，來設定部署套件的功能。  
   
 ## <a name="deploy-sharepoint-solutions"></a>部署 SharePoint 方案
@@ -109,4 +104,3 @@ ms.locfileid: "49863265"
 ## <a name="see-also"></a>另請參閱
  [開發 SharePoint 方案](../sharepoint/developing-sharepoint-solutions.md)   
  [建置和偵錯 SharePoint 方案](../sharepoint/building-and-debugging-sharepoint-solutions.md)  
-  

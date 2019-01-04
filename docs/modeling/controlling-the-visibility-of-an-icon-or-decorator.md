@@ -8,13 +8,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: a46509fb55c3d99c3cb2920dd6088497f326ab08
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a8fc55493aab5a19a175b75b7b1d808e9fa156e9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49895492"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53877558"
 ---
 # <a name="controlling-the-visibility-of-an-icon-or-decorator"></a>控制圖示或 Decorator 的可見度
 A*裝飾項目*是圖示或特定領域語言 (DSL) 中的圖形上顯示的文字行。 您可以進行裝飾項目會顯示，並根據模型中屬性的狀態會消失。 例如，代表個人的圖形，您可能有不同的圖示會出現取決於該人員的性別，子系數目等等。
@@ -84,7 +83,7 @@ A*裝飾項目*是圖示或特定領域語言 (DSL) 中的圖形上顯示的文�
 
 4.  按一下 **建置方案**上**建置**功能表。
 
-5.  按兩下錯誤報告，顯示: 「*YourClass*未包含定義 GetDecoratorControlValue...」。
+5.  按兩下出現的錯誤報表：「*YourClass*未包含定義 GetDecoratorControlValue...」。
 
      文字編輯器會開啟 Dsl\GeneratedCode\DomainClasses.cs。 上述反白顯示的錯誤會要求您將方法加入的註解。
 

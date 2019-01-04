@@ -1,9 +1,6 @@
 ---
 title: 使用 ServerDocument 類別管理伺服器上的文件
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e983f4cf1b90150113fcfa33702d85bb41a30924
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: bcaebef3edcdf742bc56915d0209f3f61ee63df8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49939133"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53903239"
 ---
 # <a name="manage-documents-on-a-server-by-using-the-serverdocument-class"></a>使用 ServerDocument 類別管理伺服器上的文件
   您可以使用`ServerDocument`類別中[!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]管理文件層級自訂的數個層面，即使未安裝 Microsoft Office Word 和 Microsoft Office Excel。 您可以執行下列工作：  
@@ -61,13 +58,12 @@ ms.locfileid: "49939133"
 |工作|要使用的成員|  
 |----------|-------------------|  
 |若要判斷是否在文件。 文件層級自訂一部分|<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.GetCustomizationVersion%2A> 方法|  
-|若要以程式設計方式將自訂附加至在執行階段的文件。<br /><br /> 如需詳細資訊，請參閱[如何： 附加 managed 程式碼擴充的文件](../vsto/how-to-attach-managed-code-extensions-to-documents.md)|其中一個<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.AddCustomization%2A>方法。|  
-|若要在執行階段，以程式設計方式從文件移除自訂。<br /><br /> 如需詳細資訊，請參閱 <<c0> [ 如何： 移除文件從 managed 程式碼擴充功能](../vsto/how-to-remove-managed-code-extensions-from-documents.md)。|<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.RemoveCustomization%2A> 方法|  
+|若要以程式設計方式將自訂附加至在執行階段的文件。<br /><br /> 如需詳細資訊，請參閱[＜How to：將 managed 程式碼擴充附加至文件](../vsto/how-to-attach-managed-code-extensions-to-documents.md)|其中一個<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.AddCustomization%2A>方法。|  
+|若要在執行階段，以程式設計方式從文件移除自訂。<br /><br /> 如需詳細資訊，請參閱[＜How to：從文件移除 managed 程式碼擴充功能](../vsto/how-to-remove-managed-code-extensions-from-documents.md)。|<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.RemoveCustomization%2A> 方法|  
 |若要取得部署資訊清單與文件相關聯的 URL。|<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.DeploymentManifestUrl%2A> 屬性。|  
   
 ## <a name="see-also"></a>另請參閱  
- [如何： 附加 managed 程式碼擴充的文件](../vsto/how-to-attach-managed-code-extensions-to-documents.md)   
- [如何： 移除文件從 managed 程式碼擴充](../vsto/how-to-remove-managed-code-extensions-from-documents.md)   
+ [如何：將 managed 程式碼擴充附加至文件](../vsto/how-to-attach-managed-code-extensions-to-documents.md)   
+ [如何：從文件移除 managed 程式碼擴充功能](../vsto/how-to-remove-managed-code-extensions-from-documents.md)   
  [Visual Studio Tools for Office runtime 概觀](../vsto/visual-studio-tools-for-office-runtime-overview.md)   
  [快取資料](../vsto/caching-data.md)  
-  

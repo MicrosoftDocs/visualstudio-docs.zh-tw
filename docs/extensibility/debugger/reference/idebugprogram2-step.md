@@ -1,9 +1,6 @@
 ---
 title: IDebugProgram2::Step |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugProgram2::Step
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 489a641e0f42f6e8e1720929775d8da3df08eeb8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 861c9ba2c6266294f5da9f6cd03ea9e85971e07d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49948339"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53950455"
 ---
 # <a name="idebugprogram2step"></a>IDebugProgram2::Step
 會執行的步驟。  
@@ -31,7 +28,7 @@ ms.locfileid: "49948339"
 ## <a name="syntax"></a>語法  
   
 ```cpp  
-HRESULT Step(   
+HRESULT Step(   
    IDebugThread2*  pThread,  
    STEPKIND        sk,  
    STEPUNIT        step  
@@ -39,7 +36,7 @@ HRESULT Step(
 ```  
   
 ```csharp  
-int Step(   
+int Step(   
    IDebugThread2  pThread,  
    enum_STEPKIND  sk,  
    enum_STEPUNIT  step  

@@ -1,9 +1,6 @@
 ---
-title: 註冊 Vspackage |Microsoft 文件
-ms.custom: ''
+title: 註冊 Vspackage |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - managed VSPackages, registering
@@ -14,15 +11,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a6f7e603fbc023415ad2b8ddc157f239feb53768
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d4b5bedbfdeaab6fa3d7d8efe4479a8b7f3e4de4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31128841"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53842602"
 ---
-# <a name="registering-vspackages"></a>註冊 Vspackage
-[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 依賴.pkgdef 檔案，來描述及尋找 VSPackage。 .Pkgdef 檔包含否則會加入至系統登錄的所有登錄資訊。 將屬性加入至原始程式碼，然後執行登錄 managed 的 Vspackage [CreatePkgDef 公用程式](../../extensibility/internals/createpkgdef-utility.md)上產生的組件，以產生.pkgdef 檔。  
+# <a name="registering-vspackages"></a>註冊 VSPackage
+[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 依賴.pkgdef 檔案，來描述及尋找 VSPackage。 .Pkgdef 檔案包含所有的註冊資訊，否則會新增至系統登錄。 將屬性加入至原始碼，然後執行註冊 managed 的 Vspackage [CreatePkgDef 公用程式](../../extensibility/internals/createpkgdef-utility.md)上產生的組件，以產生.pkgdef 檔。  
   
 ## <a name="in-this-section"></a>本節內容  
  [為 VS Shell 指定 VSPackage 檔案位置](../../extensibility/internals/specifying-vspackage-file-location-to-the-vs-shell.md)  

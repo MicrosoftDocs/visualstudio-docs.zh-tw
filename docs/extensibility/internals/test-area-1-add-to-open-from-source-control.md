@@ -1,9 +1,6 @@
 ---
-title: 測試區域 1： 從原始檔控制新增至開啟 |Microsoft Docs
-ms.custom: ''
+title: 測試區域 1:從原始檔控制新增至開啟 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK], adding and opening solutions
@@ -14,28 +11,28 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e3541fc3a4d4b802e4cd89b14dac6d6caf222152
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3b50ff6c737b75fcdbd9a6fc265928301eeb4467
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49861653"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53842667"
 ---
-# <a name="test-area-1-add-toopen-from-source-control"></a>測試區域 1： 新增 / 開啟從原始檔控制
+# <a name="test-area-1-add-toopen-from-source-control"></a>測試區域 1:從原始檔控制新增至 / Open
 此原始檔控制外掛程式測試區域涵蓋如何將方案或專案原始檔控制之下，並擷取從原始檔控制。  
   
 ## <a name="command-menu-access"></a>命令功能表存取  
  下列[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]與測試案例中使用整合式的開發環境功能表路徑：  
   
-- 針對[!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)]，從原始檔控制開啟：**檔案**，**開啟**，**專案**/**解決方案**; 查看中[!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)]位置。  
+- 針對[!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)]，從原始檔控制開啟：**檔案**，**開放**，**專案**/**解決方案**; 查看在[!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)]位置。  
   
-- 針對其他原始檔控制外掛程式，從原始檔控制開啟：**檔案**，**原始檔控制**，**從原始檔控制開啟**。  
+- 針對其他原始檔控制外掛程式，請從原始檔控制開啟：**檔案**，**原始檔控制**，**從原始檔控制開啟**。  
   
-- 加入原始檔控制：**檔案**，**原始檔控制**，**將方案加入至原始檔控制檔案**，**原始檔控制**，**新增選取專案加入原始檔控制**。  
+- 加入原始檔控制：**檔案**，**原始檔控制**，**將解決方案新增至原始檔控制檔案**，**原始檔控制**，**選取的專案加入原始檔控制**.  
   
 - 快顯功能表 （專案/方案），**將解決方案新增至原始檔控制**。  
   
-- 從原始檔控制新增：**檔案**，**原始檔控制**，**加入的專案，從原始檔控制**。  
+- 從原始檔控制新增：**檔案**，**原始檔控制**，**從原始檔控制加入專案**。  
   
 - 針對[!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)]，加入從原始檔控制也會提供**檔案**，**新增**，**現有專案**; 查看在[!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)]位置。  
   
@@ -57,7 +54,7 @@ ms.locfileid: "49861653"
 ## <a name="test-cases"></a>測試案例  
  以下是新增的特定測試案例 / 開啟從原始檔控制的測試區域。  
   
-### <a name="case-1a-add-solution-to-source-control"></a>案例 1： 將方案加入原始檔控制  
+### <a name="case-1a-add-solution-to-source-control"></a>案例 1a:將方案加入原始檔控制  
  此測試案例著重於將解決方案新增至原始檔控制。  
   
 |動作|測試步驟|若要確認預期的結果|  
@@ -77,7 +74,7 @@ ms.locfileid: "49861653"
 |開啟包含本機或從原始檔控制的 IIS Web 專案的方案|1.建立本機或 IIS Web 專案。<br />2.您可以將方案加入原始檔控制。<br />3.關閉方案。<br />4.從原始檔控制開啟方案，新的位置。|從原始檔控制開啟方案/專案。|  
 |開啟包含原始檔控制中的遠端站台的 Web 專案的方案|1.建立遠端站台的 Web 專案。<br />2.您可以將方案加入原始檔控制。 如果這個步驟成功，則會繼續至下一個步驟。<br />3.關閉方案。<br />4.從原始檔控制開啟方案，新的位置。|`Result from Step 2:`<br /><br /> 遠端網站不在原始檔控制中。<br /><br /> `Result from Step 4:`<br /><br /> 從原始檔控制開啟方案。<br /><br /> 遠端站台會載入專案，但不在原始檔控制之下。|  
   
-### <a name="case-1c-add-solution-from-source-control"></a>案例 1 c： 從原始檔控制新增解決方案  
+### <a name="case-1c-add-solution-from-source-control"></a>案例 1 c:從原始檔控制新增解決方案  
  此測試案例著重於新增解決方案，從原始檔控制。  
   
 |動作|測試步驟|若要確認預期的結果|  

@@ -1,9 +1,6 @@
 ---
-title: 如何： 使用連結的復原管理 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：使用連結的復原管理 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - linked undo management
@@ -13,14 +10,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 255ad8de79b13a74816b2abd28281ac5de6f1932
-ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
+ms.openlocfilehash: 639b95909f5d0cf91721760cac27768cb64e477a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46370558"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53874189"
 ---
-# <a name="how-to-use-linked-undo-management"></a>如何： 使用連結復原管理
+# <a name="how-to-use-linked-undo-management"></a>HOW TO：使用連結的復原管理
 連結的復原可讓使用者同時復原所做的相同編輯多個檔案中。 比方說，跨多個程式檔，例如標頭檔和 Visual c + + 檔案，同時的文字變更為連結的復原交易。 連結的復原功能內建於復原管理員 中，環境的實作和<xref:Microsoft.VisualStudio.TextManager.Interop.IVsLinkedUndoTransactionManager>可讓您管理這項功能。 連結的復原會實作可以連結在一起，以視為單一復原單元的個別復原堆疊為父系復原單位。 使用連結的復原的程序會在下一節中詳細說明。  
   
 ## <a name="to-use-linked-undo"></a>若要使用連結的復原  
@@ -32,10 +29,10 @@ ms.locfileid: "46370558"
 3.  呼叫<xref:Microsoft.VisualStudio.TextManager.Interop.IVsLinkedUndoTransactionManager.CloseLinkedUndo%2A>以向前復原所有做為其中一個連結的復原單位。  
   
     > [!NOTE]
-    >  若要實作連結的復原管理在編輯器中，將復原管理。 如需有關如何實作連結的復原管理的詳細資訊，請參閱[如何： 實作復原管理](../extensibility/how-to-implement-undo-management.md)。  
+    >  若要實作連結的復原管理在編輯器中，將復原管理。 如需有關如何實作連結的復原管理的詳細資訊，請參閱[How to:實作復原管理](../extensibility/how-to-implement-undo-management.md)。  
   
 ## <a name="see-also"></a>另請參閱  
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompoundAction>   
  [IOleParentUndoUnit](/windows/desktop/api/ocidl/nn-ocidl-ioleparentundounit)   
  [IOleUndoUnit](/windows/desktop/api/ocidl/nn-ocidl-ioleundounit)   
- [如何： 實作復原管理](../extensibility/how-to-implement-undo-management.md)
+ [如何：實作復原管理](../extensibility/how-to-implement-undo-management.md)

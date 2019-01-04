@@ -1,13 +1,8 @@
 ---
-title: 逐步解說： 建立適用於 SharePoint 的 Web 組件，使用設計工具 |Microsoft Docs
-ms.custom: ''
+title: 逐步解說：使用設計工具建立 SharePoint Web 組件 |Microsoft Docs
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -19,14 +14,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1b5cfd9afaf0c37dcf267c63641b7917efe4c249
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 146a1722f240895e0f508b0474df72f6f5f84ece
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49831807"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53870903"
 ---
-# <a name="walkthrough-create-a-web-part-for-sharepoint-by-using-a-designer"></a>逐步解說： 建立適用於 SharePoint 的 web 組件，使用設計工具
+# <a name="walkthrough-create-a-web-part-for-sharepoint-by-using-a-designer"></a>逐步解說：使用設計工具建立 SharePoint web 組件
 
 如果您建立 SharePoint 網站的 web 組件時，您的使用者可以直接使用瀏覽器修改內容、 外觀及行為，該網站中的頁數。 本逐步解說會示範如何使用 SharePoint，以視覺化方式建立的 web 組件**視覺化網頁組件**Visual Studio 中的專案範本。
 
@@ -74,7 +69,7 @@ ms.locfileid: "49831807"
 
 1. 在 Visual Web Developer 設計工具中，選擇**設計**索引標籤，切換至 [設計] 檢視。
 
-2. 在功能表列上選擇 **檢視** > **工具箱**。
+2. 在功能表列上，選擇 [檢視] > [工具箱]。
 
 3. 在 **標準**節點**工具箱**，選擇**CheckBoxList**控制項，並執行下列步驟：
 
@@ -193,5 +188,5 @@ ms.locfileid: "49831807"
 ## <a name="see-also"></a>另請參閱
 
 [建立 SharePoint web 組件](../sharepoint/creating-web-parts-for-sharepoint.md)  
-[如何： 建立 SharePoint web 組件](../sharepoint/how-to-create-a-sharepoint-web-part.md)  
-[逐步解說： 建立 SharePoint web 組件](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint.md)
+[如何：建立 SharePoint web 組件](../sharepoint/how-to-create-a-sharepoint-web-part.md)  
+[逐步解說：建立 SharePoint web 組件](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint.md)

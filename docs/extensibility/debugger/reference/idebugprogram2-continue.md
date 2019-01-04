@@ -1,9 +1,6 @@
 ---
 title: IDebugProgram2::Continue |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugProgram2::Continue
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8e776c91e68e4689c1cc6c54f17397eca495b493
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 66e5b607588ff10f94db46b86667acc0ae968a16
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49832651"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53938097"
 ---
 # <a name="idebugprogram2continue"></a>IDebugProgram2::Continue
 會繼續執行此程式從已停止的狀態。 會保留任何先前的執行狀態 （例如在步驟），並在程式啟動重新執行。  
@@ -31,13 +28,13 @@ ms.locfileid: "49832651"
 ## <a name="syntax"></a>語法  
   
 ```cpp  
-HRESULT Continue(   
+HRESULT Continue(   
    IDebugThread2* pThread  
 );  
 ```  
   
 ```csharp  
-int Continue(   
+int Continue(   
    IDebugThread2 pThread  
 );  
 ```  

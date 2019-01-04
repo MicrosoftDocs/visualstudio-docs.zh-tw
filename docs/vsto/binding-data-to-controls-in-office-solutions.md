@@ -1,8 +1,6 @@
 ---
 title: 資料繫結至 Office 方案中的控制項
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology: office-development
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 dev_langs:
@@ -21,12 +19,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5b5d7a52e4f8b9e6c9741d3b62bc18b2d4cb66f7
-ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
+ms.openlocfilehash: bc5136b3e5c5ea09c5574e1fd3ec7ab457181112
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53248016"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53898631"
 ---
 # <a name="bind-data-to-controls-in-office-solutions"></a>資料繫結至 Office 方案中的控制項
   您可以將 Microsoft Office Word 文件或 Microsoft Office Excel 工作表中的 Windows Form 控制項和「主控制項」  (host control) 繫結至資料來源，讓控制項自動顯示資料。 您可以將資料繫結至應用程式層級和文件層級專案中的控制項。  
@@ -111,5 +109,3 @@ ms.locfileid: "53248016"
  [使用 TableAdapter 更新資料](../data-tools/update-data-by-using-a-tableadapter.md)    
  [快取資料](../vsto/caching-data.md)   
  [在 Office 方案中的資料](../vsto/data-in-office-solutions.md)  
-  
-  

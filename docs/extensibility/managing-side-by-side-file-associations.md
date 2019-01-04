@@ -1,9 +1,6 @@
 ---
 title: 管理並排顯示檔案的關聯 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - verbs, setting default
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5bbc06ba777939857876221a2796eef6786ec44c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: fdee9d9b3d96c97ba738d974ff9691417068121e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49928005"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53826938"
 ---
 # <a name="manage-side-by-side-file-associations"></a>管理並排顯示檔案關聯
 如果 VSPackage 提供的檔案關聯，您必須決定如何處理在其中的並排顯示安裝特定版本的[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]應該叫用它來開啟檔案。 不相容的檔案格式複合問題。  

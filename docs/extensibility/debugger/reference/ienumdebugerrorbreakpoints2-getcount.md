@@ -1,9 +1,6 @@
 ---
 title: IEnumDebugErrorBreakpoints2::GetCount |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IEnumDebugErrorBreakpoints2::GetCount
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e9c829b02f74e0ba9f04b9e8772b2ad716cb3fe1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4754e0207f2f46ff9437e4c6204b2e0881960fa1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49937768"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53944732"
 ---
 # <a name="ienumdebugerrorbreakpoints2getcount"></a>IEnumDebugErrorBreakpoints2::GetCount
 列舉中傳回的項目數。  

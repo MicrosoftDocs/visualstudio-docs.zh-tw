@@ -2,7 +2,6 @@
 title: HOW TO：根據 XSD 結構描述建立 XML 文件
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: conceptual
 ms.assetid: 193b195f-e918-4c79-a1a1-8096a1433bde
 author: gewarren
@@ -10,14 +9,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d3da2e6b5b0c9ea2701524c0fb2fde1e1313687
-ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
+ms.openlocfilehash: d675695b3d3e054d14e481c8c41ae06de5af5600
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/25/2018
-ms.locfileid: "34549086"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53820195"
 ---
-# <a name="how-to-create-an-xml-document-based-on-an-xsd-schema"></a>如何： 建立根據 XSD 結構描述的 XML 文件
+# <a name="how-to-create-an-xml-document-based-on-an-xsd-schema"></a>HOW TO：建立根據 XSD 結構描述的 XML 文件
 
 **產生範例 XML**功能會產生範例 XML 檔案，根據 XML 結構描述 (XSD) 檔案。
 
@@ -27,7 +26,7 @@ ms.locfileid: "34549086"
 
 -   確認結構描述進行預期的作業。
 
-**產生範例 XML**功能僅適用於全域項目，而且需要有效的 XML 結構描述設定。
+**產生範例 XML**功能僅可用於全域項目，而且需要有效的 XML 結構描述設定。
 
 這項功能通常會產生有效的 XML 文件。 不過，如果結構描述包含下列其中一個或多個項目，範例可能就會無效：
 
@@ -43,11 +42,11 @@ ms.locfileid: "34549086"
 
 ## <a name="to-generate-an-xml-instance-document-based-on-the-xsd-file"></a>根據 XSD 檔案產生 XML 執行個體文件
 
-1.  請依照[How to： 建立和編輯 XSD 結構描述檔案](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md)。
+1.  請依照下列中的步驟[How to:建立和編輯 XSD 結構描述檔案](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md)。
 
-2.  在[XML 結構描述總管](../xml-tools/xml-schema-explorer.md)，以滑鼠右鍵按一下`PurchaseOrder`全域項目。 選取**產生範例 XML**。
+2.  在  [XML 結構描述總管](../xml-tools/xml-schema-explorer.md)，以滑鼠右鍵按一下`PurchaseOrder`全域項目。 選取 **產生範例 XML**。
 
-     當您選取此選項，PurchaseOrder。*xml*產生並在 XML 編輯器中開啟檔案與下列範例 XML 內容：
+     當您選取此選項時，PurchaseOrder。*xml*使用下列的範例 XML 內容的檔案會產生，並在 XML 編輯器中開啟：
 
     ```xml
     <?xml version="1.0" encoding="utf-8"?>

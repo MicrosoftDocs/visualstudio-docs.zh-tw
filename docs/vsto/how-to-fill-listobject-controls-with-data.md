@@ -1,9 +1,6 @@
 ---
 title: HOW TO：使用資料填入 ListObject 控制項
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -20,12 +17,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: cafaaebeea2a6fd5d4c750e89e90747da28b254d
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: 970e30245840d82efbd7b02bbde0f4d8b202eaa4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53646685"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53925624"
 ---
 # <a name="how-to-fill-listobject-controls-with-data"></a>HOW TO：使用資料填入 ListObject 控制項
   使用資料繫結也可以快速在文件中加入資料。 將資料繫結至清單物件之後，您可以中斷清單物件的連線，讓它顯示資料但不再繫結至資料來源。  
@@ -71,5 +68,3 @@ ms.locfileid: "53646685"
  [資料繫結至 Office 方案中的控制項](../vsto/binding-data-to-controls-in-office-solutions.md)   
  [如何：從資料庫的資料填入工作表](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)   
  [如何：服務中的資料填入文件](../vsto/how-to-populate-documents-with-data-from-services.md)  
-  
-  

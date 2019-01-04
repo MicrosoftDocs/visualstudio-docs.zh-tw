@@ -1,6 +1,5 @@
 ---
-title: VSIX 色彩編譯器 |Microsoft 文件
-ms.custom: ''
+title: VSIX 色彩編譯器 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 99395da7-ec34-491d-9baa-0590d23283ce
@@ -9,15 +8,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 115f3a6c9d01d1e92a5eb7c840dfb17abcfd3c72
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a1fee65200d026200de5196d1396191d759aded8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31144326"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53990853"
 ---
 # <a name="vsix-color-compiler"></a>VSIX 色彩編譯器
-Visual Studio 擴充功能色彩編譯器工具是主控台應用程式會採用代表現有的 Visual Studio 佈景主題色彩.xml 檔，並將它.pkgdef 檔案，所以這些色彩可用於 Visual Studio 中。 所以可以輕鬆地比較.xml 檔案之間的差異，因為此工具是適合用來管理原始檔控制中的自訂色彩。 它也可經由連結至建置環境以便組建輸出，則為有效的.pkgdef 檔。  
+Visual Studio 擴充功能色彩編譯器工具會採用代表現有的 Visual Studio 佈景主題色彩的.xml 檔案的主控台應用程式並將它.pkgdef 檔案，以便可以在 Visual Studio 中使用這些色彩。 就可以輕鬆地比較.xml 檔案之間的差異，因為此工具是可用來管理原始檔控制中的自訂色彩。 它也可以連結至建置環境以便組建的輸出是有效的.pkgdef 檔案。  
   
  **佈景主題的 XML 結構描述**  
   
@@ -43,7 +42,7 @@ Visual Studio 擴充功能色彩編譯器工具是主控台應用程式會採用
   
  **主題**  
   
- \<佈景主題 > 項目會定義整個佈景主題。 佈景主題必須包含至少一個\<類別 > 項目。 佈景主題的項目會定義如下：  
+ \<佈景主題 > 項目會定義整個佈景主題。 主題必須包含至少一個\<類別 > 項目。 佈景主題項目會定義如下：  
   
 ```xml  
 <Theme Name="name" GUID="guid">  
@@ -54,10 +53,10 @@ Visual Studio 擴充功能色彩編譯器工具是主控台應用程式會採用
 |||  
 |-|-|  
 |**屬性**|**定義**|  
-|名稱|[必要]主題的名稱|  
+|名稱|[必要]主題名稱|  
 |GUID|[必要]佈景主題的 GUID （必須符合 GUID 格式）|  
   
- 在 Visual studio 建立自訂色彩，這些色彩必須定義下列主題。 如果特定的佈景主題色彩不存在，Visual Studio 就會嘗試從淺色佈景主題載入遺失的色彩。  
+ 在適用於 Visual Studio 中建立自訂色彩，這些色彩必須定義下列主題。 如果沒有色彩有特定的佈景主題，Visual Studio 會嘗試從淺色佈景主題載入遺失的色彩。  
   
 |||  
 |-|-|  
@@ -69,7 +68,7 @@ Visual Studio 擴充功能色彩編譯器工具是主控台應用程式會採用
   
  **分類**  
   
- \<類別 > 項目定義佈景主題中的色彩集合。 分類的名稱提供邏輯群組，而且應定義為範圍狹窄越好。 類別必須包含至少一個\<色彩 > 項目。 類別目錄項目會定義如下：  
+ \<類別 > 項目佈景主題中定義的色彩集合。 類別目錄名稱提供邏輯分組，並應定義為窄越好。 類別必須包含至少一個\<色彩 > 項目。 類別目錄項目定義如下：  
   
 ```xml  
 <Category Name="name" GUID="guid">  
@@ -81,11 +80,11 @@ Visual Studio 擴充功能色彩編譯器工具是主控台應用程式會採用
 |-|-|  
 |**屬性**|**定義**|  
 |名稱|[必要]分類的名稱|  
-|GUID|[必要]（必須符合 GUID 格式） 的類別目錄的 GUID|  
+|GUID|[必要]類別的 GUID （必須符合 GUID 格式）|  
   
  **色彩**  
   
- \<色彩 > 項目會定義元件或 UI 狀態的色彩。 色彩的慣用命名配置為 [UI 型別] [State]。 因為它是多餘，請務必使用 [色彩]，word。 項目類型和情況下，或 「 州 」，會套用色彩，應該清楚指出色彩。 色彩不得為空的且必須包含一個或兩個\<背景 > 和\<前景 > 項目。 色彩項目會定義如下：  
+ \<色彩 > 項目定義的色彩元件或 UI 狀態。 慣用的命名配置，色彩會是 [UI 型別] [State]。 請勿使用 「 色彩 」 這個字，因為它是多餘。 項目型別和情況下，或 「 狀態 」，色彩會套用，應該清楚指出一種色彩。 色彩不可為空白，並必須包含一個或兩個\<背景 > 和\<前景 > 項目。 色彩的項目定義如下：  
   
 ```xml  
 <Color Name="name">  
@@ -111,14 +110,14 @@ Visual Studio 擴充功能色彩編譯器工具是主控台應用程式會採用
 |||  
 |-|-|  
 |**屬性**|**定義**|  
-|類型|[必要]色彩的類型。 它可以是下列其中一項：<br /><br /> *CT_INVALID:* 的色彩就是無效或未設定。<br /><br /> *CT_RAW:* ARGB 資料列值。<br /><br /> *CT_COLORINDEX:* 請勿使用。<br /><br /> *CT_SYSCOLOR:* SysColor 的 Windows 系統色彩。<br /><br /> *CT_VSCOLOR:* __VSSYSCOLOREX Visual Studio 中的色彩。<br /><br /> *CT_AUTOMATIC:* 自動色彩。<br /><br /> *CT_TRACK_FOREGROUND:* 請勿使用。<br /><br /> *CT_TRACK_BACKGROUND:* 請勿使用。|  
+|類型|[必要]色彩類型。 它可以是下列其中一項：<br /><br /> *CT_INVALID:* 無效或不設定色彩。<br /><br /> *CT_RAW:* 未經處理的 ARGB 值。<br /><br /> *CT_COLORINDEX:* 請勿使用。<br /><br /> *CT_SYSCOLOR:* 從 SysColor Windows 系統色彩。<br /><br /> *CT_VSCOLOR:*__VSSYSCOLOREX 中 Visual Studio 的色彩。<br /><br /> *CT_AUTOMATIC:* 自動的色彩。<br /><br /> *CT_TRACK_FOREGROUND:* 請勿使用。<br /><br /> *CT_TRACK_BACKGROUND:* 請勿使用。|  
 |原始程式檔|[必要]以十六進位表示色彩的值|  
   
- 中的型別屬性的結構描述支援 __VSCOLORTYPE 列舉型別所支援的所有值。 不過，我們建議您在只有 CT_RAW 和 CT_SYSCOLOR 時使用。  
+ 中的型別屬性的結構描述支援 __VSCOLORTYPE 列舉型別所支援的所有值。 不過，我們建議您使用只有 CT_RAW 和 CT_SYSCOLOR。  
   
- **整體而言，**  
+ **全面整合**  
   
- 這是有效的主題.xml 檔案的簡單範例：  
+ 這是有效的佈景主題的.xml 檔案的簡單範例：  
   
 ```xml  
 <Themes>  
@@ -141,12 +140,12 @@ Visual Studio 擴充功能色彩編譯器工具是主控台應用程式會採用
   
 ||||  
 |-|-|-|  
-|**參數名稱**|**備註**|**必要或選用**|  
-|未命名的 （.xml 檔案）|這是第一個未命名的參數，而且是要轉換的 XML 檔的路徑。|必要|  
-|未命名的 （.pkgdef 檔）|這是第二個未命名的參數，而且會產生的.pkgdef 檔的輸出路徑。<br /><br /> 預設值： \<XML 檔案名稱 >.pkgdef|Optional|  
+|**交換器名稱**|**備註**|**必要或選用**|  
+|未命名的 (.xml file)|這是第一個未命名的參數，而且是要轉換的 XML 檔的路徑。|必要|  
+|未命名的 （.pkgdef 檔）|這是第二個未命名的參數，而且會產生的.pkgdef 檔的輸出路徑。<br /><br /> 預設：\<XML 檔案名稱 >.pkgdef|Optional|  
 |/noLogo|設定這個旗標，就會停止列印的產品和著作權資訊。|Optional|  
-|/?|列印說明資訊。|Optional|  
-|/help|列印說明資訊。|Optional|  
+|/?|列印出說明資訊。|Optional|  
+|/help|列印出說明資訊。|Optional|  
   
  **範例**  
   
@@ -161,7 +160,7 @@ Visual Studio 擴充功能色彩編譯器工具是主控台應用程式會採用
 -   支援只有單一檔案。 不支援透過資料夾路徑的大量轉換。  
   
 ## <a name="sample-output"></a>範例輸出  
- 由工具產生.pkgdef 檔將會類似於下列索引鍵：  
+ 工具所產生的.pkgdef 檔將會類似於下列金鑰：  
   
 ```  
 [$RootKey$\Themes\{de3dbbcd-f642-433c-8353-8f1df4370aba}\Environment]  

@@ -1,9 +1,6 @@
 ---
 title: IDebugSymbolProvider::GetContextFromAddress |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugSymbolProvider::GetContextFromAddress
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 88cf623bab8824e6f079a28fe491d001b47735f0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 161dc0ce94ac2b92d85b29e5c83512ffd25fc49e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49870207"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53959452"
 ---
 # <a name="idebugsymbolprovidergetcontextfromaddress"></a>IDebugSymbolProvider::GetContextFromAddress
 這個方法會將偵錯位址對應到文件內容。  
@@ -28,7 +25,7 @@ ms.locfileid: "49870207"
 ## <a name="syntax"></a>語法  
   
 ```cpp  
-HRESULT GetContextFromAddress(   
+HRESULT GetContextFromAddress(   
    IDebugAddress*           pAddress,  
    IDebugDocumentContext2** ppDocContext  
 );  

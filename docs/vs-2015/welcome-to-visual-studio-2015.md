@@ -16,12 +16,12 @@ ms.assetid: ba237712-f8c4-4d13-854b-ab4a16afa309
 caps.latest.revision: 128
 ms.author: gewarren
 manager: crdun
-ms.openlocfilehash: 1898d437cb7d3f439e92b88a45e7b543e8bbd0f5
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: c25afa4447a77c6e8bdeb0abb502235fdba1e203
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53058476"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53805142"
 ---
 # <a name="welcome-to-visual-studio-2015"></a>歡迎使用 Visual Studio 2015
 [!INCLUDE[vs2017banner](includes/vs2017banner.md)]
@@ -57,15 +57,15 @@ ms.locfileid: "53058476"
 
  根據您的應用程式需求和想要使用的語言，來選擇所需的工具。
 
-1.  [Xamarin for Visual Studio](./cross-platform/build-apps-with-native-ui-using-xamarin-in-visual-studio.md)。常見的程式碼中的基底C#適用於所有裝置
+1.  [Visual Studio 的 Xamarin](./cross-platform/build-apps-with-native-ui-using-xamarin-in-visual-studio.md)：所有裝置通用的 C# 程式碼基底
 
 2.  [使用 Visual Studio Apache Cordova](http://msdn.microsoft.com/library/db446f2c-6ba4-4c76-aac5-4c66f43b8c42):常見的程式碼基底 HTML、 CSS 和 JavaScript 或 Typescript
 
-3.  [Visual Studio Tools for Unity](./cross-platform/visual-studio-tools-for-unity.md)以 2D/3D 遊戲開發C#
+3.  [Visual Studio Tools for Unity](./cross-platform/visual-studio-tools-for-unity.md)：以 C# 進行 2D/3D 遊戲開發。
 
 4.  [C + + for Cross-platform Development](./cross-platform/visual-cpp-for-cross-platform-mobile-development.md):共用程式碼程式庫和 c + + 中的應用程式
 
-5.  [Visual Studio Emulator for Android](./cross-platform/visual-studio-emulator-for-android.md) Visual Studio Emulator for Android偵錯及測試 Android 應用程式不分 IDE
+5.  [Visual Studio Emulator for Android](./cross-platform/visual-studio-emulator-for-android.md)：Visual Studio Emulator for Android：不分 IDE，為您的 Android 應用程式執行偵錯及測試
 
 ## <a name="connect-your-apps-to-services"></a>將您的應用程式連接到服務
  您可以連接到下列現成服務 (假設每項服務各有一個帳戶)：
@@ -100,7 +100,7 @@ ms.locfileid: "53058476"
 |||||
 |-|-|-|-|
 |[Visual Studio 2015 中的新功能](./what-s-new-in-visual-studio-2015.md)|[Visual C# 的新功能](http://msdn.microsoft.com/library/9f18dc26-27fa-4603-a639-b573f07a117b)|[.NET Framework 4.6 的新功能](http://msdn.microsoft.com/library/1d971dd7-10fc-4692-8dac-30ca308fc0fa)|[ALM 的新功能](http://msdn.microsoft.com/en-us/54b98a53-6083-4303-869a-8063d8fae938)|
-|[C++ 的新功能](http://msdn.microsoft.com/library/1cc09fad-85a2-43c2-b022-bb99f5fe0ad7)|[Visual Basic 的新功能](http://msdn.microsoft.com/library/d7e97396-7f42-4873-a81c-4ebcc4b6ca02)|[JavaScript 的新功能](~/E:/Repos/visualstudio-docs-pr/scripting-docs/javascript/what-s-new-in-javascript.md)||
+|[C++ 的新功能](http://msdn.microsoft.com/library/1cc09fad-85a2-43c2-b022-bb99f5fe0ad7)|[Visual Basic 的新功能](http://msdn.microsoft.com/library/d7e97396-7f42-4873-a81c-4ebcc4b6ca02)|[JavaScript 的新功能](/visualstudio/scripting-docs/javascript/what-s-new-in-javascript)||
 |[Python](./python/getting-started-with-python.md)||||
 
 ## <a name="in-this-section"></a>本節內容

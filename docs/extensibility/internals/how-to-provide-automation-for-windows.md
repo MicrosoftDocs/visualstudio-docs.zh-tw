@@ -1,9 +1,6 @@
 ---
-title: 如何： 提供的 Windows 自動化 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：提供的 Windows 自動化 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - automation [Visual Studio SDK], tool windows
@@ -14,14 +11,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d9158ac7d133d30ae5fbca0281cbc55138e041f6
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: eb5fe307cd477f1c1a30b402cce05850a1a35ae1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39510734"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53841235"
 ---
-# <a name="how-to-provide-automation-for-windows"></a>如何： 為視窗提供自動化
+# <a name="how-to-provide-automation-for-windows"></a>HOW TO：提供適用於 windows 的自動化
 您可以提供文件和工具視窗的自動化。 提供自動化是建議的每當您想要在視窗中，提供 automation 物件和環境已不提供現成的自動化物件，其方式就如同使用 工作清單。
 
 ## <a name="automation-for-tool-windows"></a>自動化的工具視窗

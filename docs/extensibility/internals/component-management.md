@@ -1,9 +1,6 @@
 ---
 title: 元件管理 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - installation [Visual Studio SDK], components
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 00a6ea41d631c171700db75361b7aa0beed81cc2
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 31508fd720d1bf6695d6f735e57a829b72087ba9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39510864"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53917438"
 ---
 # <a name="component-management"></a>元件管理
 Windows 安裝程式中的工作單位被指 Windows 安裝程式元件 （有時稱為 WICs 或只是元件）。 GUID 會識別每個 WIC，也就是安裝和參考計數來使用 Windows 安裝程式的安裝程式的基本單位。  

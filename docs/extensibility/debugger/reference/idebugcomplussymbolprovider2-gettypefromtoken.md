@@ -1,9 +1,6 @@
 ---
 title: IDebugComPlusSymbolProvider2::GetTypeFromToken |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - IDebugComPlusSymbolProvider2::GetTypeFromToken
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5c514df27914ed0c40239e6d06130ab7df25d07c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8039e3cbbf274fc63aeecd46b336cff53a2c44ad
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49858325"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53855386"
 ---
 # <a name="idebugcomplussymbolprovider2gettypefromtoken"></a>IDebugComPlusSymbolProvider2::GetTypeFromToken
 擷取給定其語彙基元型別。  

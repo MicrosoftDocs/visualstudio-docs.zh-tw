@@ -1,9 +1,6 @@
 ---
-title: 字串做為索引鍵來尋找原始檔控制外掛程式 |Microsoft 文件
-ms.custom: ''
+title: 字串做為索引鍵以尋找原始檔控制外掛程式 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, strings used for finding
@@ -13,17 +10,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a42eebe67ce1f611cf6e48883bc09139f241e658
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 329b5800cac59c82c226bf7e0cf99a9045f88277
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31137670"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53835746"
 ---
-# <a name="strings-used-as-keys-for-finding-a-source-control-plug-in"></a>字串做為索引鍵來尋找原始檔控制外掛程式
+# <a name="strings-used-as-keys-for-finding-a-source-control-plug-in"></a>用作索引鍵以尋找原始檔控制外掛程式的字串
 下列字串是索引鍵來存取此登錄來尋找資訊的原始檔控制外掛程式。  
   
- `STR_SCC_PROVIDER_REG_LOCATION``STR_PROVIDERREGKEY`， `STR_SCCPROVIDERPATH`，和`STR_SCCPROVIDERNAME`登錄機碼或用來做為原始檔控制外掛程式註冊 DLL，適用於 Visual Studio 的值。  
+ `STR_SCC_PROVIDER_REG_LOCATION``STR_PROVIDERREGKEY`， `STR_SCCPROVIDERPATH`，和`STR_SCCPROVIDERNAME`登錄機碼或值，用來註冊為原始檔控制外掛程式的 DLL，適用於 Visual Studio。  
   
  `SCC_PROJECTNAME_KEY``SCC_PROJECTAUX_KEY`， `SCC_KEY, SCC_FILE_SIGNATURE`，和`SCC_STATUS_FILE`用來描述 MSSCCPRJ 的格式。SCC 檔案。  
   
@@ -41,8 +38,8 @@ ms.locfileid: "31137670"
 |`SCC_PROJECTAUX_KEY`|SCC_Aux_Path|  
 |`SCC_STATUS_FILE`|MSSCCPRJ。SCC|  
 |`SCC_KEY`|SCC|  
-|`SCC_FILE_SIGNATURE`|原始程式碼控制檔|  
-|`SCC_NSE`|命名空間擴充功能|  
+|`SCC_FILE_SIGNATURE`|原始程式碼控制檔案|  
+|`SCC_NSE`|命名空間延伸模組|  
 |`SCC_NSE_PREFIX`|Protocal 前置詞|  
 |`SCC_NSE_DisableOpenSCC`|DisableOpenFromSourceControl|  
 |`STR_SCCHELPCOLLECTION`|HelpCollection|  
@@ -51,5 +48,5 @@ ms.locfileid: "31137670"
   
 ## <a name="see-also"></a>另請參閱  
  [原始檔控制外掛程式](../extensibility/source-control-plug-ins.md)   
- [如何： 安裝原始檔控制外掛程式](../extensibility/internals/how-to-install-a-source-control-plug-in.md)   
+ [如何：安裝原始檔控制外掛程式](../extensibility/internals/how-to-install-a-source-control-plug-in.md)   
  [MSSCCPRJ.SCC 檔案](../extensibility/mssccprj-scc-file.md)

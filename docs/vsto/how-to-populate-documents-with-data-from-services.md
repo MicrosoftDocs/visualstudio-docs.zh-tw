@@ -1,9 +1,6 @@
 ---
 title: HOW TO：服務中的資料填入文件
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,12 +14,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: fe69a35fb7f11eb649a45cd2d2238d1fb8e17ad1
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: e935501e2e38c7e6c3abdb1c16e351342cf52a8a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53647032"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53838290"
 ---
 # <a name="how-to-populate-documents-with-data-from-services"></a>HOW TO：服務中的資料填入文件
 

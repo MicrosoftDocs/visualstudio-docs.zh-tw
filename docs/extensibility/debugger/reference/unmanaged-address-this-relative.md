@@ -1,9 +1,6 @@
 ---
 title: UNMANAGED_ADDRESS_THIS_RELATIVE |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - UNMANAGED_ADDRESS_THIS_RELATIVE
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: aa92fb62ba60d1ea1e8907ae66a1353d593d1ab0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 799425acac0a7585940b8571658381b198b40ee4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49813397"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53946902"
 ---
 # <a name="unmanagedaddressthisrelative"></a>UNMANAGED_ADDRESS_THIS_RELATIVE
 此結構表示的位址，是相對於`this`指標 (`Me` Visual Basic 中)。  
@@ -59,9 +56,9 @@ public struct UNMANAGED_THIS_RELATIVE {
 ## <a name="requirements"></a>需求  
  標頭： sh.h  
   
- 命名空間： Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間:Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
  [結構和等位](../../../extensibility/debugger/reference/structures-and-unions.md)   

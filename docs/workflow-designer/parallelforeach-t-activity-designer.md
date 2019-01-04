@@ -3,7 +3,6 @@ title: 工作流程設計工具-ParallelForEach&lt;T&gt;活動設計工具
 ms.date: 11/04/2016
 ms.topic: reference
 ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Activities.Statements.ParallelForEach`1.UI
 ms.assetid: e93a4843-aef2-4d3e-9a0a-a2d3d1411aa7
@@ -12,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c62918811ba91fe9c30f60e930ce77a640959d0f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1e411f5e72566753d66ded4e445868e5ab245bf9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49846339"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53873904"
 ---
 # <a name="parallelforeach-activity-designer"></a>ParallelForEach 活動設計工具
 

@@ -1,9 +1,6 @@
 ---
 title: 群組項目 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - VSCT XML schema elements, Groups
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 816716cb269df331b17c0ef01a26dbae4a389c76
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8a8a7d17161b6d14926232f66905d7556a244e29
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49895427"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53874546"
 ---
 # <a name="groups-element"></a>Groups 元素
 包含定義 VSPackage 的命令群組的項目。  
@@ -40,16 +37,16 @@ ms.locfileid: "49895427"
   
 |屬性|描述|  
 |---------------|-----------------|  
-|條件|選擇性。 請參閱[條件式屬性](../extensibility/vsct-xml-schema-conditional-attributes.md)。|  
+|條件|選擇項。 請參閱[條件式屬性](../extensibility/vsct-xml-schema-conditional-attributes.md)。|  
   
-### <a name="child-elements"></a>子元素  
+### <a name="child-elements"></a>項目子系  
   
 |項目|描述|  
 |-------------|-----------------|  
 |[群組項目](../extensibility/group-element.md)|表示單一命令群組。|  
 |[Groups 元素](../extensibility/groups-element.md)|包含定義 VSPackage 的命令群組的項目。|  
   
-### <a name="parent-elements"></a>父元素  
+### <a name="parent-elements"></a>父項目  
   
 |元素|描述|  
 |-------------|-----------------|  

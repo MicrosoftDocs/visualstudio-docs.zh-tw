@@ -1,6 +1,5 @@
 ---
 title: SupportsMasterPage 項目 （Visual Studio 範本） |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -15,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8c3eb9a421e6a2678405bcedc95d835990c3a7d9
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.openlocfilehash: 84d63feb1c90552c507d2429e903de305fc61c9b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53561300"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53895947"
 ---
 # <a name="supportsmasterpage-element-visual-studio-templates"></a>SupportsMasterPage 項目 (Visual Studio 範本)
 指定是否**選取主版頁面**上已啟用 核取方塊**加入新項目** 對話方塊。  
@@ -56,7 +55,7 @@ ms.locfileid: "53561300"
  文字必須是`true`或是`false`，這表示，zda bude**選取主版頁面**上已啟用 核取方塊**加入新項目**對話方塊。  
   
 ## <a name="remarks"></a>備註  
- `SupportsMasterPage` 是選擇性項目。 預設值是 `false`。  
+ `SupportsMasterPage` 是選擇性項目。 預設值為 `false`。  
   
  `SupportsMasterPage`項目僅適用於 Web 項目範本。  
   

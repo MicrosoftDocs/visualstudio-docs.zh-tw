@@ -3,8 +3,6 @@ title: '&lt;進入點&gt;元素 （在 Visual Studio 中的 Office 程式開發�
 titleSuffix: ''
 ms.custom: seodec18
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,12 +14,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: cc54225172f3d84e5577d65fb4574c5d3fcd6b18
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: 8392fa83899e078050786091fa4a2f462eb40c9b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53804321"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53852929"
 ---
 # <a name="ltentrypointsgt-element-office-development-in-visual-studio"></a>&lt;進入點&gt;元素 （在 Visual Studio 中的 Office 程式開發）
   `entryPoints` 命名空間的 `vstav3` 項目包含與 Office 方案相關聯的所有 `entryPoint` 項目。

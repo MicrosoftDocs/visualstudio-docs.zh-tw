@@ -1,9 +1,6 @@
 ---
 title: XMLNode 控制項
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: cd047814f11b5fddad868bd65b84deba369facd5
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: f83d829ac5067d751cc035ac83c0fb3397178658
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35258885"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53927437"
 ---
 # <a name="xmlnode-control"></a>XMLNode 控制項
   **重要**本主題有關 Microsoft Word 中設定的資訊是提供專門用於權益與使用個人和組織使用者位於外部皒玿璅其領域，或使用，或開發在執行的程式，第 2010 年 1 月 Microsoft 何時移除特定功能的實作之前由 Microsoft 所授權的 Microsoft Word 產品與自訂 XML 從 Microsoft Word。 有關 Microsoft Word 的這項資訊可能不會讀取或使用的個人或組織在美國或其區域使用，或開發在 2010 年 1 月 10 日之後由 Microsoft 所授權的 Microsoft Word 產品執行的程式;這些產品無法運作此日期之前的授權或購買，以在美國以外的使用授權的產品相同。  
@@ -32,7 +29,7 @@ ms.locfileid: "35258885"
  <xref:Microsoft.Office.Tools.Word.XMLNode>可刪除控制項只是藉由在 Word 中移除的項目對應。  
   
 ## <a name="bind-data-to-the-control"></a>將資料繫結至控制項  
- <xref:Microsoft.Office.Tools.Word.XMLNode>控制項支援簡單資料繫結。 XML 節點應該繫結至資料來源使用<xref:System.Windows.Forms.IBindableComponent.DataBindings%2A>屬性。 如果更新繫結資料集中的資料，<xref:Microsoft.Office.Tools.Word.XMLNode>控制項會反映這些變更。  
+ <xref:Microsoft.Office.Tools.Word.XMLNode>控制項支援簡單資料繫結。 XML 節點應該繫結至資料來源使用<xref:System.Windows.Forms.IBindableComponent.DataBindings%2A>屬性。 如果更新繫結資料集中的資料，則 <xref:Microsoft.Office.Tools.Word.XMLNode> 控制項會反映這些變更。  
   
 ## <a name="formatting"></a>格式化  
  格式設定套用至<xref:Microsoft.Office.Interop.Word.XMLNode>物件可以套用至<xref:Microsoft.Office.Tools.Word.XMLNode>控制項。 這包括字型、 底線樣式和字元的樣式。  
@@ -84,8 +81,6 @@ ms.locfileid: "35258885"
  [主項目和主控制項概觀](../vsto/host-items-and-host-controls-overview.md)   
  [使用擴充的物件自動化 Word](../vsto/automating-word-by-using-extended-objects.md)   
  [XMLNodes 控制項](../vsto/xmlnodes-control.md)   
- [如何： 將 XMLNode 控制項加入 Word 文件](../vsto/how-to-add-xmlnode-controls-to-word-documents.md)   
- [如何： 將結構描述對應至 Visual Studio 中的 Word 文件](../vsto/how-to-map-schemas-to-word-documents-inside-visual-studio.md)   
+ [如何：將 XMLNode 控制項加入 Word 文件](../vsto/how-to-add-xmlnode-controls-to-word-documents.md)   
+ [如何：將結構描述對應至 Visual Studio 中的 Word 文件](../vsto/how-to-map-schemas-to-word-documents-inside-visual-studio.md)   
  [主項目和主控制項的程式設計限制](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)  
-  
-  

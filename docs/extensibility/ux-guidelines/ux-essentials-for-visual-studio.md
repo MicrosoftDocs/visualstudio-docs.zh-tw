@@ -1,9 +1,6 @@
 ---
 title: 適用於 Visual Studio 的 UX 基本 |Microsoft Docs
-ms.custom: ''
 ms.date: 04/26/2017
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: a793cf7a-f230-43ce-88d0-fa5d6f1aa9c7
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 37d2942e64a4c964ad696d1eb2c0d4bf3c777b87
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6cd0824d245e835159e3887ce7286b2e55876ba3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49848588"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53874863"
 ---
 # <a name="ux-essentials-for-visual-studio"></a>適用於 Visual Studio 的 UX 基本
 ## <a name="best-practices"></a>最佳作法  
@@ -63,7 +60,7 @@ ms.locfileid: "49848588"
  - 應該是初始對話方塊高度**小於 700 個像素**，因此它能容納的最小解析的 IDE 框架，在 96 dpi。
   
 ### <a name="high-density-displays"></a>高密度的顯示  
- Visual Studio 中的 UI 必須適用於所有的 DPI 縮放比例，Windows 支援現成的因素： 150%、 200%和 250%。  
+ Visual Studio 中的 UI 必須適用於所有 Windows 支援現成的 DPI 縮放比例：150%、 200%和 250%。  
   
 ## <a name="anti-patterns"></a>反向模式  
  Visual Studio 包含許多 UI 的範例，請遵循我們的指導方針和最佳作法。 為了保持一致，開發人員通常借用類似於他們要建置的產品的 UI 設計模式。 雖然這是個不錯的方法，幫助我們磁碟機中使用者互動和視覺效果設計的一致性，那就是執行在某些情況下不符合我們的指導方針，因為排程條件約束或脫離優先處理的一些詳細的功能。 在這些情況下，我們不想複製其中一種 「 反模式 」 小組因為他們不斷增加 Visual Studio 環境內的不正確或不一致的 UI。  
@@ -79,7 +76,7 @@ ms.locfileid: "49848588"
 #### <a name="anti-pattern-solution"></a>反向模式解決方案  
  只要使用者已起始動作，並已完成工作之前，立即將放在重大中斷圖示旁邊需要設定的領域。  
   
-#### <a name="example-manifest-designer-declarations"></a>範例： 資訊清單設計工具的宣告  
+#### <a name="example-manifest-designer-declarations"></a>範例：資訊清單設計工具的宣告  
  立即加入至清單的宣告會處於錯誤狀態，它會保存，直到該使用者需設定必要的屬性。  
   
  在此情況下，沒有其他的考量因為用於警示的圖示會包含"&times;」 圖示，因此無法使用一般的 [移除] 圖示旁邊。 如此一來，UI 會使用移除 按鈕，更笨拙的控制項。  
@@ -120,15 +117,15 @@ ms.locfileid: "49848588"
 ### <a name="using-command-bars-for-settings"></a>使用命令列進行設定  
  **圖 A**代表此反模式： 將設定套用至不只是命令的命令按鈕下方。 此草圖，在中，有除了開始偵錯的命令 — 例如瀏覽器、 啟動但不偵錯，以及逐步執行中的檢視 — 會遵守所選的設定。  
 
-  ![圖 A:JSON 命令列反面模式](../../extensibility/ux-guidelines/media/commandbaranti-pattern-figurea.png "Commandbaranti-模式-FigureA")<br />圖 A:JSON 命令列反面模式
+  ![圖 a:命令列反面模式](../../extensibility/ux-guidelines/media/commandbaranti-pattern-figurea.png "Commandbaranti-模式-FigureA")<br />圖 a:命令列反面模式
   
  稍微更好，但仍不會讓這種設定工具列中，在中所示**圖 B**。分割按鈕花較少的空間，因此改進透過下拉式清單，而這兩個設計仍在使用工具列來升級的不是命令的項目。  
  
- ![圖 b： 更好，但仍命令列反面模式](../../extensibility/ux-guidelines/media/commandbaranti-pattern-figureb.png "Commandbaranti-模式-FigureB")<br />圖 b： 更好，但仍命令列反面模式
+ ![圖 b:好，但仍是命令列反面模式](../../extensibility/ux-guidelines/media/commandbaranti-pattern-figureb.png "Commandbaranti-模式-FigureB")<br />圖 b:好，但仍是命令列反面模式
  
   在正確的方法中所示**圖 C**，此設定會繫結至一系列的命令。 沒有設定任何全域設定，我們只四個命令之間切換。 這是唯一在工具列中的命令可接受的情況。 
 
- ![圖 c： 正確使用 Visual Studio 命令列模式](../../extensibility/ux-guidelines/media/commandbaranti-pattern-figurec.png "Commandbaranti-模式-FigureC")<br />圖 c： 正確使用 Visual Studio 命令列模式
+ ![圖 c:正確使用 Visual Studio 命令列模式](../../extensibility/ux-guidelines/media/commandbaranti-pattern-figurec.png "Commandbaranti-模式-FigureC")<br />圖 c:Visual Studio 命令列模式的正確用法
    
 ### <a name="control-anti-patterns"></a>控制項反向模式  
  某些反向模式只是不正確的使用方式的控制項或控制項群組的呈現方式。  
@@ -156,7 +153,7 @@ ms.locfileid: "49848588"
   
    ![忽略色彩服務，並使用 「 了解更多 」 超連結是 Visual Studio 的反向模式。](../../extensibility/ux-guidelines/media/0102-j_hyperlinkincorrect.png "0102 j_HyperlinkIncorrect")<br />忽略色彩服務，並使用 「 了解更多 」 超連結是 Visual Studio 的反向模式。  
   
-   **更好的解決方案：** 造成按的連結，會詢問使用者問題。  
+   **更好的解決方案：** 會造成按的連結，會詢問使用者問題。  
   
 -   Windows Azure 服務如何運作？  
   
@@ -165,6 +162,6 @@ ms.locfileid: "49848588"
 #### <a name="using-click-here-for-links"></a>使用 「 按一下這裡 」 的連結  
  超連結應該自述性。 它會使用反模式，可使用 「 按一下這裡 」 或任何類似的變體。  
   
- **錯誤：** 「 按一下這裡的指示來建立新的專案。 」
+ **錯誤：**「 按一下這裡的指示來建立新的專案。 」
   
- **良好：** 「 如何建立新的專案？ 」
+ **良好：**「 如何建立新的專案？ 」

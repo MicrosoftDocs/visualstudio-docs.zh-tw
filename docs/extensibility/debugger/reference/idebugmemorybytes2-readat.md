@@ -1,9 +1,6 @@
 ---
 title: IDebugMemoryBytes2::ReadAt |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugMemoryBytes2::ReadAt
@@ -16,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3e3989ef8c79e4304e3bda3e99418da1973e6e0a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 42b159ebf70da6c00e649f1aee139df6aa1283ce
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49912939"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53894164"
 ---
 # <a name="idebugmemorybytes2readat"></a>IDebugMemoryBytes2::ReadAt
 讀取指定的位置開始的位元組序列。  
@@ -29,7 +26,7 @@ ms.locfileid: "49912939"
 ## <a name="syntax"></a>語法  
   
 ```cpp  
-HRESULT ReadAt(   
+HRESULT ReadAt(   
    IDebugMemoryContext2* pStartContext,  
    DWORD                 dwCount,  
    BYTE*                 rgbMemory,  

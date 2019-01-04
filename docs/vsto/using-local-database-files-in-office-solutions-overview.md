@@ -1,9 +1,6 @@
 ---
-title: 使用 Office 方案概觀中的本機資料庫檔案
-ms.custom: ''
+title: 使用本機資料庫檔案，在 Office 方案概觀
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,34 +14,32 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 01e9dc3df93e1f721eba9ce3bcf65d4fb8bb1ca1
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 527b2e2561b89dc38e56c0d9d854034a791edf19
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34767578"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53939189"
 ---
-# <a name="use-local-database-files-in-office-solutions-overview"></a>使用 Office 方案概觀中的本機資料庫檔案
-  您可以包含資料庫檔案，例如 SQL Server Express (*.mdf*) 檔案或 Microsoft Office Access (*.mdb*) 檔案，請在 Office 方案。 這可讓使用者維護的情況下維護集中式的資料庫不必要的例如在使用單一電腦的本機庫存方案中的本機資料庫。  
+# <a name="use-local-database-files-in-office-solutions-overview"></a>使用本機資料庫檔案，在 Office 方案概觀
+  您可以包含資料庫檔案，例如 SQL Server Express (*.mdf*) 檔案或 Microsoft Office Access (*.mdb*) 檔案，請在您的 Office 解決方案。 這可讓使用者在其中維護集中式的資料庫不是必要項，例如在單一電腦使用本機的清查解決方案的情況下本機資料庫的維護。  
   
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
   
 ## <a name="import-the-database-file-into-a-project"></a>資料庫檔案匯入專案  
- 若要將資料庫檔案匯入您的專案，使用**資料來源組態精靈**來建立資料庫檔案為基礎的資料來源。 精靈會將資料庫檔案和具類型資料集加入至您的專案。  
+ 若要匯入專案的資料庫檔案，使用**資料來源組態精靈**來建立資料庫檔案為基礎的資料來源。 精靈會將資料庫檔案和具類型資料集加入至您的專案。  
   
-## <a name="deploy-the-database-file"></a>部署資料庫檔案  
- **資料來源組態精靈**使用相對路徑建立連接至本機資料庫檔案。 這可讓您的方案從某部電腦複製到另一個在您所維護的檔案的相對位置。  
+## <a name="deploy-the-database-file"></a>將資料庫檔案部署  
+ **資料來源組態精靈**建立本機資料庫檔案的連線會使用相對路徑。 這可讓您的解決方案從某部電腦複製到另一個如果要維護的檔案的相對位置。  
   
- 如果您將方案部署至伺服器，然後散發給每位使用者的文件時，必須手動散發資料庫檔案，並將它安裝在相同文件的相對位置。 這表示使用者無法移動到新位置的文件他或她在電腦上，除非他或她也會移動資料庫檔案。  
+ 如果您將方案部署至伺服器，然後散發給每位使用者的文件時，您就必須手動散發資料庫的檔案，並將它安裝在相同的位置，相對於文件。 這表示使用者無法移到新位置的文件他或她在電腦上，除非他或她也會移動資料庫檔案。  
   
 ## <a name="local-database-files-and-caching-the-dataset"></a>本機資料庫檔案和快取資料集  
- 在 Microsoft Office Excel 和 Microsoft Office Word 文件層級方案中，您可以在快取文件中的資料集來標記與屬性的資料集執行個體<xref:Microsoft.VisualStudio.Tools.Applications.Runtime.CachedAttribute>。 當您將資料庫檔案加入您的專案使用**資料來源組態精靈**，自動具類型資料集加入至您的專案。 它是很少會需要套用<xref:Microsoft.VisualStudio.Tools.Applications.Runtime.CachedAttribute>此資料集，因為資料已在本機使用者的電腦上。 如需詳細資訊，請參閱[快取資料](../vsto/caching-data.md)。  
+ 在 Microsoft Office Excel 和 Microsoft Office Word 的文件層級解決方案，您可以由快取文件中的資料集將資料集執行個體，以屬性標示<xref:Microsoft.VisualStudio.Tools.Applications.Runtime.CachedAttribute>。 當您將資料庫檔案加入您的專案使用**資料來源組態精靈**，具類型資料集自動新增至您的專案。 很少需要套用<xref:Microsoft.VisualStudio.Tools.Applications.Runtime.CachedAttribute>到此資料集，因為資料已是本機使用者的電腦上。 如需詳細資訊，請參閱 <<c0> [ 快取資料](../vsto/caching-data.md)。  
   
 ## <a name="see-also"></a>另請參閱  
  [資料繫結至 Office 方案中的控制項](../vsto/binding-data-to-controls-in-office-solutions.md)   
- [如何： 從資料庫的資料填入文件](../vsto/how-to-populate-documents-with-data-from-a-database.md)   
- [如何： 從主控制項的資料更新資料來源](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)   
+ [如何：資料庫中的資料填入文件](../vsto/how-to-populate-documents-with-data-from-a-database.md)   
+ [如何：從主控制項的資料更新資料來源](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)   
  [部署 Office 方案](../vsto/deploying-an-office-solution.md)   
  [快取資料](../vsto/caching-data.md)  
-  
-  

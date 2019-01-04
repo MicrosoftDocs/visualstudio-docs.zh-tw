@@ -1,8 +1,7 @@
 ---
-title: CA2235：必須標記所有不可序列化的欄位
+title: CA2235:必須標記所有不可序列化的欄位
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA2235
@@ -19,20 +18,20 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: ad4328c13403b1bea6a4358661b3347404592c02
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 946e666faae07128378fc8063422446a39bd0791
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45549715"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53986566"
 ---
-# <a name="ca2235-mark-all-non-serializable-fields"></a>CA2235：必須標記所有不可序列化的欄位
+# <a name="ca2235-mark-all-non-serializable-fields"></a>CA2235:必須標記所有不可序列化的欄位
 
 |||
 |-|-|
 |TypeName|MarkAllNonSerializableFields|
 |CheckId|CA2235|
-|類別|Microsoft.Usage|
+|分類|Microsoft.Usage|
 |中斷變更|非中斷|
 
 ## <a name="cause"></a>原因
@@ -54,16 +53,16 @@ ms.locfileid: "45549715"
  [!code-vb[FxCop.Usage.MarkNonSerializable#1](../code-quality/codesnippet/VisualBasic/ca2235-mark-all-non-serializable-fields_1.vb)]
 
 ## <a name="related-rules"></a>相關的規則
- [CA2236：必須呼叫 ISerializable 類型上的基底類別方法](../code-quality/ca2236-call-base-class-methods-on-iserializable-types.md)
+ [CA2236： 必須ISerializable 類型上呼叫基底類別方法](../code-quality/ca2236-call-base-class-methods-on-iserializable-types.md)
 
- [CA2240：必須正確實作 ISerializable](../code-quality/ca2240-implement-iserializable-correctly.md)
+ [CA2240:必須正確實作 ISerializable](../code-quality/ca2240-implement-iserializable-correctly.md)
 
  [CA2229：必須實作序列化建構函式](../code-quality/ca2229-implement-serialization-constructors.md)
 
- [CA2238：必須正確實作序列化方法](../code-quality/ca2238-implement-serialization-methods-correctly.md)
+ [CA2238： 請正確實作序列化方法](../code-quality/ca2238-implement-serialization-methods-correctly.md)
 
- [CA2237：ISerializable 類型必須標記 SerializableAttribute](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md)
+ [CA2237： 必須Serializableattribute 標記 ISerializable 類型](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md)
 
- [CA2239：必須為選擇性欄位提供還原序列化方法](../code-quality/ca2239-provide-deserialization-methods-for-optional-fields.md)
+ [CA2239： 必須提供選擇性欄位的還原序列化方法](../code-quality/ca2239-provide-deserialization-methods-for-optional-fields.md)
 
- [CA2120：必須保護序列化建構函式](../code-quality/ca2120-secure-serialization-constructors.md)
+ [CA2120： 必須保護序列化建構函式](../code-quality/ca2120-secure-serialization-constructors.md)

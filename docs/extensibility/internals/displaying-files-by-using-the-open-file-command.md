@@ -1,9 +1,6 @@
 ---
 title: 使用 開啟檔案命令顯示檔案 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - project types, supporting Open File command
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 425433c3d67e654398fde1609b3f9c4d54e63648
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 59ff5d938c21c6344d1979fbfca94e8acb791db6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498721"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53964659"
 ---
 # <a name="display-files-by-using-the-open-file-command"></a>使用 開啟檔案命令顯示檔案
 下列步驟描述 IDE 如何處理**開啟的檔案**命令，其位於**檔案**功能表中的[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。 步驟也會說明專案應該如何回應來自這個命令的呼叫。  
@@ -52,10 +49,10 @@ ms.locfileid: "39498721"
   
 4.  IDE 判斷哪一個專案開啟的檔案，因為它會呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.OpenItem%2A>該專案的方法。  
   
-5.  專案則會有使用專案特定編輯器] 或 [標準編輯器開啟檔案的選項。 如需詳細資訊，請參閱[如何： 開啟專案特定的編輯器](../../extensibility/how-to-open-project-specific-editors.md)並[如何︰ 開啟標準編輯器](../../extensibility/how-to-open-standard-editors.md)分別。  
+5.  專案則會有使用專案特定編輯器] 或 [標準編輯器開啟檔案的選項。 如需詳細資訊，請參閱[＜How to：開啟專案特定的編輯器](../../extensibility/how-to-open-project-specific-editors.md)和[How to:開啟標準編輯器](../../extensibility/how-to-open-standard-editors.md)分別。  
   
 ## <a name="see-also"></a>另請參閱  
  [使用 [開啟] 命令來顯示檔案](../../extensibility/internals/displaying-files-by-using-the-open-with-command.md)   
  [開啟和儲存專案項目](../../extensibility/internals/opening-and-saving-project-items.md)   
- [如何： 開啟專案特定的編輯器](../../extensibility/how-to-open-project-specific-editors.md)   
- [如何： 開啟標準編輯器](../../extensibility/how-to-open-standard-editors.md)
+ [如何：開啟專案特定的編輯器](../../extensibility/how-to-open-project-specific-editors.md)   
+ [如何：開啟標準編輯器](../../extensibility/how-to-open-standard-editors.md)

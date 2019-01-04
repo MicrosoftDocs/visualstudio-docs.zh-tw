@@ -1,9 +1,6 @@
 ---
-title: 逐步解說： 更新使用選項按鈕的文件中的圖表
-ms.custom: ''
+title: 逐步解說：更新使用選項按鈕的文件中的圖表
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5e82c50c83a8824b4570779034b0480aa0615a30
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a16a9bffef76d904349f36e7cd2705ef89b13832
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49904670"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53943232"
 ---
-# <a name="walkthrough-update-a-chart-in-a-document-using-radio-buttons"></a>逐步解說： 更新使用選項按鈕的文件中的圖表
+# <a name="walkthrough-update-a-chart-in-a-document-using-radio-buttons"></a>逐步解說：更新使用選項按鈕的文件中的圖表
   本逐步解說示範如何在 Microsoft Office Word 的文件層級自訂中使用選項按鈕，讓使用者可以在文件上選取圖表樣式。  
   
  [!INCLUDE[appliesto_wdalldoc](../vsto/includes/appliesto-wdalldoc-md.md)]  
@@ -52,7 +49,7 @@ ms.locfileid: "49904670"
   
 ### <a name="to-create-a-new-project"></a>建立新的專案  
   
-1.  建立 Word 文件專案名稱**My Chart Options**。 在精靈中，選取**建立新的文件**。 如需詳細資訊，請參閱 <<c0> [ 如何： 在 Visual Studio 中的建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
+1.  建立 Word 文件專案名稱**My Chart Options**。 在精靈中，選取**建立新的文件**。 如需詳細資訊，請參閱[＜How to：在 Visual Studio 中建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
   
      Visual Studio 設計工具中開啟新的 Word 文件，並將**My Chart Options**專案加入**方案總管 中**。  
   
@@ -76,7 +73,7 @@ ms.locfileid: "49904670"
   
 6.  上**版面配置**索引標籤**格式化物件**對話方塊中，選取**正方形**，按一下  **確定**。  
   
-## <a name="add-a-user-control-to-the-project"></a>將使用者控制項加入至專案  
+## <a name="add-a-user-control-to-the-project"></a>將使用者控制項新增至專案  
  文件上的選項按鈕預設並不會互斥。 若要讓選項按鈕正常運作，您可以將選項按鈕加入至使用者控制項，再撰寫程式碼以控制選取範圖。  
   
 ### <a name="to-add-a-user-control"></a>若要加入使用者控制項  
@@ -164,7 +161,7 @@ ms.locfileid: "49904670"
      [!code-csharp[Trin_VstcoreProgrammingControlsWord#13](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ChartOptions.cs#13)]
      [!code-vb[Trin_VstcoreProgrammingControlsWord#13](../vsto/codesnippet/VisualBasic/my chart options/ChartOptions.vb#13)]  
   
-5.  在 C# 中，您必須為選項按鈕加入事件處理常式。 您可以將程式碼加入至 `ChartOptions` 建構函式，放在 `InitializeComponent` 的呼叫下方。 如需建立事件處理常式的資訊，請參閱[如何： 建立 Office 專案中的事件處理常式](../vsto/how-to-create-event-handlers-in-office-projects.md)。  
+5.  在 C# 中，您必須為選項按鈕加入事件處理常式。 您可以將程式碼加入至 `ChartOptions` 建構函式，放在 `InitializeComponent` 的呼叫下方。 如需建立事件處理常式的資訊，請參閱[How to:建立 Office 專案中的事件處理常式](../vsto/how-to-create-event-handlers-in-office-projects.md)。  
   
      [!code-csharp[Trin_VstcoreProgrammingControlsWord#14](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ChartOptions.cs#14)]  
   
@@ -211,13 +208,11 @@ ms.locfileid: "49904670"
 ## <a name="next-steps"></a>後續步驟  
  接著可以執行下列一些工作：  
   
--   使用按鈕填入文字方塊。 如需詳細資訊，請參閱 <<c0> [ 逐步解說： 使用按鈕文件中的文字方塊中顯示的文字](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-document-using-a-button.md)。  
+-   使用按鈕填入文字方塊。 如需詳細資訊，請參閱[逐步解說：使用按鈕文件中的文字方塊中顯示的文字](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-document-using-a-button.md)。  
   
--   從下拉式方塊選取樣式，以變更格式。 如需詳細資訊，請參閱 <<c0> [ 逐步解說： 使用 CheckBox 控制項變更文件格式](../vsto/walkthrough-changing-document-formatting-using-checkbox-controls.md)。  
+-   從下拉式方塊選取樣式，以變更格式。 如需詳細資訊，請參閱[逐步解說：使用 CheckBox 控制項變更文件格式](../vsto/walkthrough-changing-document-formatting-using-checkbox-controls.md)。  
   
 ## <a name="see-also"></a>另請參閱  
  [使用 Word 的逐步解說](../vsto/walkthroughs-using-word.md)   
  [Office 程式開發範例和逐步解說](../vsto/office-development-samples-and-walkthroughs.md)   
  [Office 文件上的 Windows Form 控制項的限制](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)  
-  
-  

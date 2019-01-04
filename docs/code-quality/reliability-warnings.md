@@ -2,7 +2,6 @@
 title: 可靠性警告
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - vs.codeanalysis.reliabilityrules
@@ -16,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c690be59758ca17a573d742fc0f75c81b955d5ad
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: e7a93ea20edc4b27b3c0e6f41fef2f45bd7f407a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31916744"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53845411"
 ---
 # <a name="reliability-warnings"></a>可靠性警告
 可靠性警告支援程式庫和應用程式的可靠性，例如記憶體和執行緒的正確用法。
@@ -30,9 +29,9 @@ ms.locfileid: "31916744"
 
 |規則|描述|
 |----------|-----------------|
-|[CA2000：必須在超出範圍前處置物件](../code-quality/ca2000-dispose-objects-before-losing-scope.md)|因為可能會發生例外事件以防止執行物件的完成項，所以應在物件的所有參考都超出範圍之前，明確處置物件。|
-|[CA2001：避免呼叫有問題的方法](../code-quality/ca2001-avoid-calling-problematic-methods.md)|成員呼叫了可能有危險或問題的方法。|
-|[CA2002：不要鎖定具有弱式識別的物件](../code-quality/ca2002-do-not-lock-on-objects-with-weak-identity.md)|可以跨應用程式定義域範圍直接存取的物件，即所謂具有弱式識別的物件。 嘗試取得具有弱式識別之物件鎖定的執行緒，可以被不同應用程式定義域中具有相同物件鎖定的第二個執行緒所封鎖。|
-|[CA2003：不要將 Fiber 視為執行緒](../code-quality/ca2003-do-not-treat-fibers-as-threads.md)|Managed 的執行緒會被視為 Win32 執行緒。|
-|[CA2004：必須移除對 GC.KeepAlive 的呼叫](../code-quality/ca2004-remove-calls-to-gc-keepalive.md)|如果您正在轉換為 SafeHandle 使用方式，移除所有對 GC。KeepAlive （物件）。 在此情況下，類別應該不需要呼叫 GC。KeepAlive，假設它們沒有完成項，但依賴 SafeHandle 最終處理 OS 處理它們。|
-|[CA2006：必須使用 SafeHandle 封裝原生資源](../code-quality/ca2006-use-safehandle-to-encapsulate-native-resources.md)|在 Managed 程式碼中使用 IntPtr，可能會有潛在的安全性和可靠性問題。 必須檢閱所有使用 IntPtr 的情況，判斷是否需要在該處使用 SafeHandle (或類似技術)。|
+|[CA2000： 必須在超出範圍前處置物件](../code-quality/ca2000-dispose-objects-before-losing-scope.md)|因為可能會發生例外事件以防止執行物件的完成項，所以應在物件的所有參考都超出範圍之前，明確處置物件。|
+|[CA2001:避免呼叫有問題的方法](../code-quality/ca2001-avoid-calling-problematic-methods.md)|成員呼叫了可能有危險或問題的方法。|
+|[CA2002:不要鎖定具有弱式識別的物件](../code-quality/ca2002-do-not-lock-on-objects-with-weak-identity.md)|可以跨應用程式定義域範圍直接存取的物件，即所謂具有弱式識別的物件。 嘗試取得具有弱式識別之物件鎖定的執行緒，可以被不同應用程式定義域中具有相同物件鎖定的第二個執行緒所封鎖。|
+|[CA2003:不要將 fiber 視為執行緒](../code-quality/ca2003-do-not-treat-fibers-as-threads.md)|Managed 的執行緒會被視為 Win32 執行緒。|
+|[CA2004： 必須移除對 GC 的呼叫。KeepAlive](../code-quality/ca2004-remove-calls-to-gc-keepalive.md)|如果您正在轉換為 SafeHandle 使用方式，移除所有對 GC。KeepAlive （物件）。 在此情況下，類別應該不需要呼叫 GC。KeepAlive，假設它們沒有完成項但依賴 SafeHandle 最終處理 OS 處理它們。|
+|[CA2006:使用 SafeHandle 封裝原生資源](../code-quality/ca2006-use-safehandle-to-encapsulate-native-resources.md)|在 Managed 程式碼中使用 IntPtr，可能會有潛在的安全性和可靠性問題。 必須檢閱所有使用 IntPtr 的情況，判斷是否需要在該處使用 SafeHandle (或類似技術)。|

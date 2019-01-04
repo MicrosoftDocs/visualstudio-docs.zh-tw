@@ -1,8 +1,7 @@
 ---
-title: CA2133：委派必須繫結至透明度一致的方法
+title: CA2133:委派必須繫結至具有一致透明度的方法
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA2133
@@ -12,20 +11,20 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 11f6738d1f280869d5390b8109e61a6efb9c64b9
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 8053090802c77b310bc04d6e95be8d3c538a4cb9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45545537"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53939780"
 ---
-# <a name="ca2133-delegates-must-bind-to-methods-with-consistent-transparency"></a>CA2133：委派必須繫結至透明度一致的方法
+# <a name="ca2133-delegates-must-bind-to-methods-with-consistent-transparency"></a>CA2133:委派必須繫結至具有一致透明度的方法
 
 |||
 |-|-|
 |TypeName|DelegatesMustBindWithConsistentTransparency|
 |CheckId|CA2133|
-|類別|Microsoft.Security|
+|分類|Microsoft.Security|
 |中斷變更|中斷|
 
 > [!NOTE]

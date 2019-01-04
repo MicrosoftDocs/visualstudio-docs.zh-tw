@@ -1,9 +1,6 @@
 ---
 title: UI 文字和適用於 Visual Studio 的協助 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: e8747d07-6c90-46cc-b425-55b589f7e9e4
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 52260b2cd401f8cdbd3a94704ab29db2f64fdc6d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: bca879905e524e80205878034773349ddff06460
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49842231"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53907161"
 ---
 # <a name="ui-text-and-help-for-visual-studio"></a>UI 文字與說明適用於 Visual Studio
 ##  <a name="BKMK_UITextAndTerminology"></a> UI 文字和術語  
@@ -262,7 +259,7 @@ ms.locfileid: "49842231"
   
 |好|不正確|  
 |----------|---------|  
-|「 您撥接的號碼已不存在於服務。 請檢查號碼和撥號一次 或 0 的運算子。 」|-「 錯誤 (449): 不合法的數字 」<br />-: 這項處理的例外狀況錯誤指出作業已順利完成 」。<br /><br /> ![在 Visual Studio 中的錯誤的錯誤訊息](../../extensibility/ux-guidelines/media/0602-a_errordialog.png "地區 0602 a_ErrorDialog")|  
+|「 您撥接的號碼已不存在於服務。 請檢查號碼和撥號一次 或 0 的運算子。 」|-「 錯誤 (449):不合法的數字 」<br />-: 這項處理的例外狀況錯誤指出作業已順利完成 」。<br /><br /> ![在 Visual Studio 中的錯誤的錯誤訊息](../../extensibility/ux-guidelines/media/0602-a_errordialog.png "地區 0602 a_ErrorDialog")|  
   
 ## <a name="accessing-help"></a>存取說明  
   

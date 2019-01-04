@@ -1,8 +1,7 @@
 ---
-title: CA1012：抽象類型不應具有建構函式
+title: CA1012:抽象類型不應該有建構函式
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - AbstractTypesShouldNotHaveConstructors
@@ -18,20 +17,20 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ec69fc08375bb88287cfb89eb49e52fa45466e6
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 81a9fe50b4141b10e3946e3494ff325d1cc302b5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45550527"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53825093"
 ---
-# <a name="ca1012-abstract-types-should-not-have-constructors"></a>CA1012：抽象類型不應具有建構函式
+# <a name="ca1012-abstract-types-should-not-have-constructors"></a>CA1012:抽象類型不應該有建構函式
 
 |||
 |-|-|
 |TypeName|AbstractTypesShouldNotHaveConstructors|
 |CheckId|CA1012|
-|類別|Microsoft.Design|
+|分類|Microsoft.Design|
 |中斷變更|非重大|
 
 ## <a name="cause"></a>原因

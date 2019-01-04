@@ -1,9 +1,6 @@
 ---
 title: HOW TO：將 NamedRange 控制項加入工作表
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,12 +14,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8a279ab6419807d5010b830453ab0ec92d8c5ca7
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: 1d9515f5a42d37d73a95460fa458090992c488aa
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53648361"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53928655"
 ---
 # <a name="how-to-add-namedrange-controls-to-worksheets"></a>HOW TO：將 NamedRange 控制項加入工作表
   您可以新增<xref:Microsoft.Office.Tools.Excel.NamedRange>Microsoft Office Excel 工作表在設計階段，並在執行階段在文件層級專案中的控制項。  
@@ -104,5 +101,3 @@ ms.locfileid: "53648361"
  [主項目和主控制項概觀](../vsto/host-items-and-host-controls-overview.md)   
  [如何：調整 NamedRange 控制項的大小](../vsto/how-to-resize-namedrange-controls.md)   
  [主項目和主控制項的程式設計限制](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)  
-  
-  

@@ -1,9 +1,6 @@
 ---
 title: Creating a Settings Category |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - profile settings, creating categories
@@ -13,16 +10,16 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 66667b97ef10d6b07bef3e8c1c3b19842a07482e
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 4653883dbb9d82fd23d5188a2a247db0ec6b69cd
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388657"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53935615"
 ---
 # <a name="create-a-settings-category"></a>建立設定類別
 
-在本逐步解說您可以建立 Visual Studio 設定類別目錄，並使用它來儲存值，並還原從設定檔的值。 設定類別是一組顯示為 「 自訂設定點; 」 的相關內容也就是為核取方塊**匯入和匯出設定**精靈。 (您可以上找到**工具**功能表。)設定會儲存或還原為類別，並個別設定不會顯示在精靈中。 如需詳細資訊，請參閱 <<c0> [ 環境設定](../ide/environment-settings.md)。
+在本逐步解說您可以建立 Visual Studio 設定類別目錄，並使用它來儲存值，並還原從設定檔的值。 設定類別是一組顯示為 「 自訂設定點; 」 的相關內容也就是為核取方塊**匯入和匯出設定**精靈。 (您可以上找到**工具**功能表。)設定會儲存或還原為類別，並個別設定不會顯示在精靈中。 如需詳細資訊，請參閱[環境設定](../ide/environment-settings.md)。
 
 您建立設定類別從<xref:Microsoft.VisualStudio.Shell.DialogPage>類別。
 
@@ -101,7 +98,7 @@ ms.locfileid: "52388657"
 
 4.  值變更**OptionFloat** 3.1416 到並**OptionInteger**到 12。 按一下 [確定 **Deploying Office Solutions**]。
 
-5.  在 **工具**功能表上，按一下**匯入和匯出設定**。
+5.  按一下 [工具] 功能表上的 [匯入和匯出設定]。
 
      **匯入和匯出設定** 精靈隨即出現。
 

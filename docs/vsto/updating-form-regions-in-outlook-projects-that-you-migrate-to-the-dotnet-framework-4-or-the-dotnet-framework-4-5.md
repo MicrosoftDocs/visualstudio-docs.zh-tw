@@ -1,9 +1,6 @@
 ---
-title: 更新您要移轉至.NET Framework 4 或.NET Framework 4.5 之 Outlook 專案中的表單區域
-ms.custom: ''
+title: 更新您移轉至.NET Framework 4 或.NET Framework 4.5 之 Outlook 專案中的表單區域
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,18 +12,18 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 97778716ad5be8e110c022048a3d04f4c980f839
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 84005dfa85c637d2ff5677e6ad02b811bd0cb671
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34767971"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53842800"
 ---
-# <a name="update-form-regions-in-outlook-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>更新您要移轉至.NET Framework 4 或.NET Framework 4.5 之 Outlook 專案中的表單區域
+# <a name="update-form-regions-in-outlook-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>更新您移轉至.NET Framework 4 或.NET Framework 4.5 之 Outlook 專案中的表單區域
   如果 Outlook VSTO 增益集專案的目標 Framework 與表單區域的變更為 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 或更新版本，您就必須在執行階段中，針對產生的表單區域程式碼以及可執行個體化特定表單區域類別的任何程式碼，進行一些變更。  
   
 ## <a name="update-the-generated-form-region-code"></a>更新產生的表單區域程式碼  
- 如果專案的目標 Framework 變更為 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 或更新版本，您必須變更產生的表單區域程式碼。 您要針對 Visual Studio 中設計的表單區域所做的變更，與針對從 Outlook 匯入的表單區域所做的變更並不相同。 如需這些表單區域類型之間差異的詳細資訊，請參閱[建立 Outlook 表單區域](../vsto/creating-outlook-form-regions.md)。  
+ 如果專案的目標 Framework 變更為 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 或更新版本，您必須變更產生的表單區域程式碼。 您要針對 Visual Studio 中設計的表單區域所做的變更，與針對從 Outlook 匯入的表單區域所做的變更並不相同。 如需有關這些表單區域類型之間的差異的詳細資訊，請參閱[建立 Outlook 表單區域](../vsto/creating-outlook-form-regions.md)。  
   
 ### <a name="to-update-the-generated-code-for-a-form-region-that-you-designed-in-visual-studio"></a>若要更新您在 Visual Studio 中所設計之表單區域產生的程式碼  
   
@@ -189,7 +186,7 @@ ms.locfileid: "34767971"
 ## <a name="instantiate-form-region-classes"></a>執行個體化表單區域類別  
  您必須修改可動態執行個體化特定表單區域類別的任何程式碼。 在目標為 .NET Framework 3.5 的專案中，您可以直接執行個體化表單區域類別，例如 `Microsoft.Office.Tools.Outlook.FormRegionManifest`。 在目標為 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 或更新版本的專案中，這些類別是您無法直接執行個體化的介面。  
   
- 如果您專案的目標 Framework 變更為 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 或更新版本，您必須使用 `Globals.Factory` 屬性提供的方法，將介面執行個體化。 如需有關`Globals.Factory`屬性，請參閱[全域存取 Office 專案中的物件](../vsto/global-access-to-objects-in-office-projects.md)。  
+ 如果您專案的目標 Framework 變更為 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 或更新版本，您必須使用 `Globals.Factory` 屬性提供的方法，將介面執行個體化。 如需詳細資訊`Globals.Factory`屬性，請參閱 <<c2> [ 全域存取 Office 專案中的物件](../vsto/global-access-to-objects-in-office-projects.md)。  
   
  下表列出的表單區域類型和方法，可用來執行個體化目標為 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 或更新版本專案中的類型。  
   
@@ -202,4 +199,3 @@ ms.locfileid: "34767971"
 ## <a name="see-also"></a>另請參閱  
  [移轉至.NET Framework 4 或更新版本的 Office 方案](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)   
  [建立 Outlook 表單區域](../vsto/creating-outlook-form-regions.md)  
-  

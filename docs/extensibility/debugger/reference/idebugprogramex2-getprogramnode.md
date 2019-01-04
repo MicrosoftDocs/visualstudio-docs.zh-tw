@@ -1,9 +1,6 @@
 ---
 title: IDebugProgramEx2::GetProgramNode |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugProgramEx2::Attach
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f619ff7f893ab760cf75ebd64c2b28cf9f0f249c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2febe6ded99be88bf884e75fbd866f06d216410c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49815116"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53916107"
 ---
 # <a name="idebugprogramex2getprogramnode"></a>IDebugProgramEx2::GetProgramNode
 取得與程式相關聯的方案節點。  
@@ -28,13 +25,13 @@ ms.locfileid: "49815116"
 ## <a name="syntax"></a>語法  
   
 ```cpp  
-HRESULT GetProgramNode(   
+HRESULT GetProgramNode(   
    IDebugProgramNode2** ppProgramNode  
 );  
 ```  
   
 ```csharp  
-int GetProgramNode(   
+int GetProgramNode(   
    out IDebugProgramNode2 ppProgramNode  
 );  
 ```  

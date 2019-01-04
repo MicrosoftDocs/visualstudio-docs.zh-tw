@@ -1,9 +1,6 @@
 ---
 title: BP_LOCATION |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - BP_LOCATION
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5ceb6c85c510269877dfe34e091d50095dc7a50c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 16b45f2f1122b594298ad36d170be7bdbaf37fe8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49821678"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53839639"
 ---
 # <a name="bplocation"></a>BP_LOCATION
 指定用來描述中斷點的位置的結構類型。  
@@ -79,21 +76,21 @@ public struct BP_LOCATION {
  [只有 c + +]包含[BP_LOCATION_RESOLUTION](../../../extensibility/debugger/reference/bp-location-resolution.md)結構，如果`bpLocationType`  =  `BPLT_RESOLUTION`。  
   
  `unionmember1`  
- [僅限 C#]請參閱有關如何解譯的備註。  
+ [C#只]請參閱有關如何解譯的備註。  
   
  `unionmember2`  
- [僅限 C#]請參閱有關如何解譯的備註。  
+ [C#只]請參閱有關如何解譯的備註。  
   
  `unionmember3`  
- [僅限 C#]請參閱有關如何解譯的備註。  
+ [C#只]請參閱有關如何解譯的備註。  
   
  `unionmember4`  
- [僅限 C#]請參閱有關如何解譯的備註。  
+ [C#只]請參閱有關如何解譯的備註。  
   
 ## <a name="remarks"></a>備註  
  此結構是隸屬[BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)並[BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md)結構。  
   
- [僅限 C#]`unionmemberX`成員會根據下表來解譯。 往下的左側資料行`bpLocationType`值，然後尋找其他資料行來判斷每個跨`unionmemberX`成員表示和封送處理`unionmemberX`據此。 請參閱範例的方式來解譯此結構在 C# 中的一部分。  
+ [C#只]`unionmemberX`成員會根據下表來解譯。 往下的左側資料行`bpLocationType`值，然後尋找其他資料行來判斷每個跨`unionmemberX`成員表示和封送處理`unionmemberX`據此。 請參閱範例的方式來解譯此結構在 C# 中的一部分。  
   
 |`bpLocationType`|`unionmember1`|`unionmember2`|`unionmember3`|`unionmember4`|  
 |----------------------|--------------------|--------------------|--------------------|--------------------|  
@@ -134,9 +131,9 @@ namespace MyPackage
 ## <a name="requirements"></a>需求  
  標頭： msdbg.h  
   
- 命名空間： Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間:Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
  [結構和等位](../../../extensibility/debugger/reference/structures-and-unions.md)   

@@ -1,9 +1,6 @@
 ---
 title: IDebugThread2::CanSetNextStatement |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugThread2::CanSetNextStatement
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: af14a59251aecf7e54d156d777db0f1d799348a3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: dcb5ef43f30ca40454cde19a2afde229de6a9ea3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49891319"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53924432"
 ---
 # <a name="idebugthread2cansetnextstatement"></a>IDebugThread2::CanSetNextStatement
 判斷目前指令指標是否可以設定特定的堆疊框架。  
@@ -28,14 +25,14 @@ ms.locfileid: "49891319"
 ## <a name="syntax"></a>語法  
   
 ```cpp  
-HRESULT CanSetNextStatement (   
+HRESULT CanSetNextStatement (   
    IDebugStackFrame2*  pStackFrame,  
    IDebugCodeContext2* pCodeContext  
 );  
 ```  
   
 ```csharp  
-int CanSetNextStatement (   
+int CanSetNextStatement (   
    IDebugStackFrame2  pStackFrame,  
    IDebugCodeContext2 pCodeContext  
 );  

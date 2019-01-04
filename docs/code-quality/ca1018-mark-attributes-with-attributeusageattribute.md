@@ -1,8 +1,7 @@
 ---
-title: CA1018：以 AttributeUsageAttribute 標記屬性
+title: CA1018:必須以 AttributeUsageAttribute 標記屬性
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA1018
@@ -19,20 +18,20 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: a54dd39746364d6908f440ac77d7a2b8bbfdbcf6
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 0f88185882d8cddaf81caf95e2871918553b8eaa
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45547616"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53881980"
 ---
-# <a name="ca1018-mark-attributes-with-attributeusageattribute"></a>CA1018：以 AttributeUsageAttribute 標記屬性
+# <a name="ca1018-mark-attributes-with-attributeusageattribute"></a>CA1018:必須以 AttributeUsageAttribute 標記屬性
 
 |||
 |-|-|
 |TypeName|MarkAttributesWithAttributeUsage|
 |CheckId|CA1018|
-|類別|Microsoft.Design|
+|分類|Microsoft.Design|
 |中斷變更|中斷|
 
 ## <a name="cause"></a>原因
@@ -50,15 +49,15 @@ ms.locfileid: "45547616"
  您應該修正而非訊息但不包括此規則的違規情形。 即使屬性繼承<xref:System.AttributeUsageAttribute>，此屬性應該會出現以簡化程式碼維護。
 
 ## <a name="example"></a>範例
- 下列範例會定義兩個屬性。 `BadCodeMaintainerAttribute` 不正確地省略<xref:System.AttributeUsageAttribute>陳述式，和`GoodCodeMaintainerAttribute`會正確地實作本節稍早說明的屬性。 請注意，屬性`DeveloperName`所設計規則[ca1019 必須： 定義存取子屬性引數](../code-quality/ca1019-define-accessors-for-attribute-arguments.md)，並包含為求完整性。
+ 下列範例會定義兩個屬性。 `BadCodeMaintainerAttribute` 不正確地省略<xref:System.AttributeUsageAttribute>陳述式，和`GoodCodeMaintainerAttribute`會正確地實作本節稍早說明的屬性。 請注意，屬性`DeveloperName`所設計規則[ca1019 必須：定義存取子屬性引數](../code-quality/ca1019-define-accessors-for-attribute-arguments.md)，並包含為求完整性。
 
  [!code-csharp[FxCop.Design.AttributeUsage#1](../code-quality/codesnippet/CSharp/ca1018-mark-attributes-with-attributeusageattribute_1.cs)]
  [!code-vb[FxCop.Design.AttributeUsage#1](../code-quality/codesnippet/VisualBasic/ca1018-mark-attributes-with-attributeusageattribute_1.vb)]
 
 ## <a name="related-rules"></a>相關的規則
- [CA1019：必須定義屬性引數的存取子](../code-quality/ca1019-define-accessors-for-attribute-arguments.md)
+ [CA1019： 必須定義存取子屬性引數](../code-quality/ca1019-define-accessors-for-attribute-arguments.md)
 
- [CA1813：避免使用非密封屬性](../code-quality/ca1813-avoid-unsealed-attributes.md)
+ [CA1813:避免使用非密封的屬性](../code-quality/ca1813-avoid-unsealed-attributes.md)
 
 ## <a name="see-also"></a>另請參閱
 

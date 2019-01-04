@@ -1,9 +1,6 @@
 ---
 title: 使用舊版 API 中的文字標記 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - text markers
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 62b77180858b40bf2620eaed284fa35b9a48288a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d76c440c3c763b93c14ad03d9f48e6c977e9e5fe
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49835926"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53866997"
 ---
 # <a name="using-text-markers-with-the-legacy-api"></a>使用舊版 API 中的文字標記
 文字標記是文字的浮動的一組可能會影響顯示的緩衝區中和文字的區域的行為。 標記包含中斷點、 書籤、 波浪底線和唯讀區域。 文字標記是基本上不同於語法著色。 語法著色是文字的快速的方式進行通訊區域相關聯的語言語法。 當 Windows 在速度都很重要時，會重新繪製畫面中，通常要求語法著色。 語法標色變更文字的色彩。 文字標記可以變更許多其他的文字內容。 文字標記可以 「 浮動 」，並套用特殊的行為和著色。  

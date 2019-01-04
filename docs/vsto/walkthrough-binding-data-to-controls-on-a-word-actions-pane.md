@@ -1,9 +1,6 @@
 ---
-title: 逐步解說： 將資料繫結至 Word 執行窗格上的控制項
-ms.custom: ''
+title: 逐步解說：將資料繫結至 Word 執行窗格上的控制項
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -20,14 +17,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 17daf186920be45a70200cd896a390ab74c4c6d0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a113cbdffffb202a832ce145c4507bf5845ff52d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49873886"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53926446"
 ---
-# <a name="walkthrough-bind-data-to-controls-on-a-word-actions-pane"></a>逐步解說： 將資料繫結至 Word 執行窗格上的控制項
+# <a name="walkthrough-bind-data-to-controls-on-a-word-actions-pane"></a>逐步解說：將資料繫結至 Word 執行窗格上的控制項
   本逐步解說會示範在 Word 執行窗格上的控制項資料繫結。 這些控制項會顯示 SQL Server 資料庫中資料表之間的主要/詳細資料關聯。  
   
  [!INCLUDE[appliesto_wdalldoc](../vsto/includes/appliesto-wdalldoc-md.md)]  
@@ -61,7 +58,7 @@ ms.locfileid: "49873886"
   
 1.  建立 Word 文件專案名稱**My Word 執行窗格**。 在精靈中，選取**建立新的文件**。  
   
-     如需詳細資訊，請參閱 <<c0> [ 如何： 在 Visual Studio 中的建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
+     如需詳細資訊，請參閱[＜How to：在 Visual Studio 中建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
   
      Visual Studio 設計工具中開啟新的 Word 文件，並將**My Word 執行窗格**專案加入**方案總管 中**。  
   
@@ -149,7 +146,7 @@ ms.locfileid: "49873886"
      [!code-vb[Trin_VstcoreActionsPaneWord#1](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ActionsControl.vb#1)]
      [!code-csharp[Trin_VstcoreActionsPaneWord#1](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ActionsControl.cs#1)]  
   
-2.  在 C# 中，您必須將附加事件處理常式來<xref:System.Windows.Forms.UserControl.Load>事件。 您可以將此程式碼中的放`ActionsControl`建構函式，在呼叫之後`InitializeComponent`。 如需如何建立事件處理常式的詳細資訊，請參閱[如何： 建立 Office 專案中的事件處理常式](../vsto/how-to-create-event-handlers-in-office-projects.md)。  
+2.  在 C# 中，您必須將附加事件處理常式來<xref:System.Windows.Forms.UserControl.Load>事件。 您可以將此程式碼中的放`ActionsControl`建構函式，在呼叫之後`InitializeComponent`。 如需如何建立事件處理常式的詳細資訊，請參閱[How to:建立 Office 專案中的事件處理常式](../vsto/how-to-create-event-handlers-in-office-projects.md)。  
   
      [!code-csharp[Trin_VstcoreActionsPaneWord#33](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ActionsControl.cs#33)]  
   
@@ -234,13 +231,11 @@ ms.locfileid: "49873886"
 ## <a name="next-steps"></a>後續步驟  
  本逐步解說示範資料繫結至 word 執行窗格上的控制項基本的概念。 接著可以執行下列一些工作：  
   
--   將資料繫結至 Excel 中的控制項。 如需詳細資訊，請參閱 <<c0> [ 逐步解說： 將資料繫結至 Excel 執行窗格上的控制項](../vsto/walkthrough-binding-data-to-controls-on-an-excel-actions-pane.md)。  
+-   將資料繫結至 Excel 中的控制項。 如需詳細資訊，請參閱[逐步解說：將資料繫結至 Excel 執行窗格上的控制項](../vsto/walkthrough-binding-data-to-controls-on-an-excel-actions-pane.md)。  
   
 -   部署專案。 如需詳細資訊，請參閱 <<c0> [ 藉由使用 ClickOnce 部署 Office 方案](../vsto/deploying-an-office-solution-by-using-clickonce.md)。  
   
 ## <a name="see-also"></a>另請參閱  
  [執行窗格概觀](../vsto/actions-pane-overview.md)   
- [如何： 加入執行窗格加入 Word 文件或 Excel 活頁簿](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)   
+ [如何：執行窗格加入 Word 文件或 Excel 活頁簿](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)   
  [資料繫結至 Office 方案中的控制項](../vsto/binding-data-to-controls-in-office-solutions.md)  
-  
-  

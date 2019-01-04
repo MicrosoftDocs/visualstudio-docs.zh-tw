@@ -1,9 +1,6 @@
 ---
 title: IDebugDocumentContext2::GetSourceRange |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugDocumentContext2::GetSourceRange
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6d2fb0128aef16d236db10918eec215c8e198ae4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: fe2ad435b4b70f2314822414c0cc0eb429c2478e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49951115"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53841551"
 ---
 # <a name="idebugdocumentcontext2getsourcerange"></a>IDebugDocumentContext2::GetSourceRange
 取得此文件內容的來源的程式碼範圍。  
@@ -28,14 +25,14 @@ ms.locfileid: "49951115"
 ## <a name="syntax"></a>語法  
   
 ```cpp  
-HRESULT GetSourceRange(   
+HRESULT GetSourceRange(   
    TEXT_POSITION* pBegPosition,  
    TEXT_POSITION* pEndPosition  
 );  
 ```  
   
 ```csharp  
-int GetSourceRange(   
+int GetSourceRange(   
    TEXT_POSITION[] pBegPosition,  
    TEXT_POSITION[] pEndPosition  
 );  

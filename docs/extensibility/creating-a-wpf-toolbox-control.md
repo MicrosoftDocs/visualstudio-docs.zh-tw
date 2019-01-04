@@ -1,9 +1,6 @@
 ---
 title: 建立 WPF 工具箱控制項 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - toolbox control
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 43734720a4e86f9f1e214285df1873b39b67fa01
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 07ab3bc10bd755a768c80e53c96ad133ecce08a3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39500328"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53847538"
 ---
 # <a name="create-a-wpf-toolbox-control"></a>建立 WPF 工具箱控制項
 (Windows Presentation Framework) 的 WPF 工具箱控制項 範本可讓您建立會自動新增至 WPF 控制項**工具箱**安裝擴充功能時。 本主題說明如何使用範本來建立**工具箱**可以散發給其他使用者的控制項。  
@@ -41,7 +38,7 @@ ms.locfileid: "39500328"
   
 1.  開啟*MyToolboxControl.xaml*設計工具中。  
   
-     設計工具會顯示<xref:System.Windows.Controls.Grid>控制項，其中包含<xref:System.Windows.Controls.Button>控制項。  
+     設計工具會顯示包含了 <xref:System.Windows.Controls.Button> 控制項的 <xref:System.Windows.Controls.Grid> 控制項。  
   
 2.  排列格線版面配置。 當您選取<xref:System.Windows.Controls.Grid>控制，藍色的控制列會出現在方格上方和左邊緣。 您可以按一下橫條圖，來將資料列和資料行新增至方格。  
   

@@ -1,8 +1,7 @@
 ---
-title: CA2227：集合屬性應該為唯讀
+title: CA2227:集合屬性應該為唯讀
 ms.date: 09/28/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA2227
@@ -20,14 +19,14 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: f1bbd3e6ba97d969694e7d2142978c12552b3c50
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 085bf631a444dc3b6dc64dba4ef10d111f6492bb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47860247"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53949059"
 ---
-# <a name="ca2227-collection-properties-should-be-read-only"></a>CA2227：集合屬性應該為唯讀
+# <a name="ca2227-collection-properties-should-be-read-only"></a>CA2227:集合屬性應該為唯讀
 
 |||
 |-|-|
@@ -66,4 +65,4 @@ ms.locfileid: "47860247"
 
 ## <a name="related-rules"></a>相關的規則
 
-- [CA1819：屬性不應該傳回陣列](../code-quality/ca1819-properties-should-not-return-arrays.md)
+- [CA1819:屬性不應該傳回陣列](../code-quality/ca1819-properties-should-not-return-arrays.md)

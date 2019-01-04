@@ -2,7 +2,6 @@
 title: XML 編輯器 IntelliSense 功能
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: conceptual
 ms.assetid: 2b26f214-cc3a-46bf-b260-14eb8e599182
 author: gewarren
@@ -10,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 78a9711a623abe2f7a37cb03be628c2b60723359
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 36350123135142e84adff0c3189ba81e31ebf6b2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49886379"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53986202"
 ---
 # <a name="xml-editor-intellisense-features"></a>XML 編輯器 IntelliSense 功能
 
@@ -45,7 +44,7 @@ XML 編輯器提供完整的 Intellisense 功能，其相當於 Visual Studio �
 
 -   指定具名範本的參數名稱。‏
 
-如需詳細資訊，請參閱 <<c0> [ 逐步解說： 使用 XSLT IntelliSense](../xml-tools/walkthrough-using-xslt-intellisense.md)主題。
+如需詳細資訊，請參閱[逐步解說：使用 XSLT IntelliSense](../xml-tools/walkthrough-using-xslt-intellisense.md)主題。
 
 ## <a name="auto-completion"></a>自動完成
  XML 編輯器還可藉由填入必要的 XML 語法，使編輯 XML 變得更容易。 例如，如果您鍵入下列開始標記：

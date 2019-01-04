@@ -1,9 +1,6 @@
 ---
 title: IDebugProgramPublisher2 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugProgramPublisher2
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e085cc144c35c59a50ec7c46f8087ccbae46fcd7
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 683ea72b7bb40ac4b6ff3a739ff650db2abb260a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283245"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53938351"
 ---
 # <a name="idebugprogrampublisher2"></a>IDebugProgramPublisher2
 此介面可讓偵錯引擎 (DE) 或自訂的連接埠提供者註冊進行偵錯的程式。  
@@ -54,9 +51,9 @@ IDebugProgramPublisher2 : IUnknown
 ## <a name="requirements"></a>需求  
  標頭： msdbg.h  
   
- 命名空間： Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間:Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="example"></a>範例  
  此範例示範如何具現化程式發行者及註冊程式 節點。 這取自教學課程中，[發佈程式節點](https://msdn.microsoft.com/library/d0100e02-4e2b-4e72-9e90-f7bc11777bae)。  

@@ -1,9 +1,6 @@
 ---
-title: 逐步解說： 搭配編輯器擴充功能使用攠摝坫 |Microsoft Docs
-ms.custom: ''
+title: 逐步解說：編輯器擴充功能搭配使用攠摝坫 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - link keystrokes to commands
@@ -13,14 +10,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d009351efdd36e0d415d0e2e457f7974608ab665
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e669b86a84f21dd6187558fc0a853c875d5d2e71
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49886496"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53953007"
 ---
-# <a name="walkthrough-use-a-shortcut-key-with-an-editor-extension"></a>逐步解說︰ 搭配編輯器擴充功能使用攠摝坫
+# <a name="walkthrough-use-a-shortcut-key-with-an-editor-extension"></a>逐步解說：編輯器擴充功能搭配使用攠摝坫
 您可以在您的編輯器延伸模組中回應快速鍵。 下列逐步解說會示範如何使用快速鍵將文字檢視的檢視裝飾。 本逐步解說根據檢視區 adornment 編輯器範本，並可讓您使用新增 adornment + 字元。  
   
 ## <a name="prerequisites"></a>必要條件  
@@ -80,7 +77,7 @@ this.layer = view.GetAdornmentLayer("PurpleCornerBox");
 3.  名為 KeyBindingCommandFilter 的類別應該繼承自<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>。  
   
     ```csharp  
-    internal class KeyBindingCommandFilter : IOleCommandTarget  
+    internal class KeyBindingCommandFilter : IOleCommandTarget  
     ```  
   
 4.  文字檢視的私用欄位下, 一個命令中加入命令鏈結中，以及表示是否已新增命令篩選器旗標。  
@@ -88,8 +85,8 @@ this.layer = view.GetAdornmentLayer("PurpleCornerBox");
     ```csharp  
     private IWpfTextView m_textView;  
     internal IOleCommandTarget m_nextTarget;  
-    internal bool m_added;  
-    internal bool m_adorned;  
+    internal bool m_added;  
+    internal bool m_adorned;  
     ```  
   
 5.  新增設定文字檢視的建構函式。  

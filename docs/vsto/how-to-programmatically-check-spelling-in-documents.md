@@ -1,9 +1,6 @@
 ---
-title: 如何： 以程式設計方式檢查文件中的拼字
-ms.custom: ''
+title: HOW TO：以程式設計方式檢查文件中的拼字
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e916b16caaaa3944fcdf522ffd320198d9972b52
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: d300d51d6c244623ff330c5fa443c6a332d6c3f9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35256714"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53942905"
 ---
-# <a name="how-to-programmatically-check-spelling-in-documents"></a>如何： 以程式設計方式檢查文件中的拼字
+# <a name="how-to-programmatically-check-spelling-in-documents"></a>HOW TO：以程式設計方式檢查文件中的拼字
   若要檢查文件中的拼字錯誤，請使用<xref:Microsoft.Office.Interop.Word._Application.CheckSpelling%2A>方法。 這個方法會傳回布林值，指出所提供的參數的拼字是否正確。  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
@@ -36,7 +33,5 @@ ms.locfileid: "35256714"
      [!code-csharp[Trin_VstcoreWordAutomation#113](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#113)]  
   
 ## <a name="see-also"></a>另請參閱  
- [如何： 以程式設計方式定義，並在文件中選取範圍](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)   
+ [如何：以程式設計方式定義，並在文件中選取範圍](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)   
  [Office 方案中的選擇性參數](../vsto/optional-parameters-in-office-solutions.md)  
-  
-  

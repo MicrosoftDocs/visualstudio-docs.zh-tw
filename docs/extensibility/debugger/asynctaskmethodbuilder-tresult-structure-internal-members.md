@@ -1,9 +1,6 @@
 ---
 title: AsyncTaskMethodBuilder&lt;TResult&gt;結構-內部成員 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - AsyncTaskMethodBuilder<TResult> structure [.NET Framework debug engines]
@@ -14,17 +11,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e5bdde88636b60073399a1df83cd6e1f3f1ff90c
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 038058b93a8261f0f67571061e8e1411231e56dd
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39151043"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53882574"
 ---
 # <a name="asynctaskmethodbuilderlttresultgt-structure---internal-members"></a>AsyncTaskMethodBuilder&lt;TResult&gt;結構-內部成員
 本主題描述的內部成員<xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder%601>類別。 如需此類別的一般資訊，請參閱<xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder%601>參考主題。  
   
- **命名空間：** <xref:System.Runtime.CompilerServices?displayProperty=fullName>  
+ **命名空間︰** <xref:System.Runtime.CompilerServices?displayProperty=fullName>  
   
  **組件：** mscorlib （在 mscorlib.dll 中)  
   

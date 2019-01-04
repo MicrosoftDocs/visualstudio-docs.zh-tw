@@ -1,9 +1,6 @@
 ---
 title: CONNECTION_PROTOCOL |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - CONNECTION_PROTOCOL
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d70aa31e7574e9fcdb0ed4e8d89847e832f3739b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f619bde5d2f81b37f50a5896c13c655aaf9fd80e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49832759"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53907861"
 ---
 # <a name="connectionprotocol"></a>CONNECTION_PROTOCOL
 表示用來偵錯伺服器和偵錯封裝 (DE) 之間進行通訊的通訊協定。  
@@ -28,26 +25,26 @@ ms.locfileid: "49832759"
 ## <a name="syntax"></a>語法  
   
 ```cpp  
-typedef enum tagCONNECTION_PROTOCOL {  
-   CONNECTION_NONE    = 0,  
-   CONNECTION_UNKNOWN = 1,  
-   CONNECTION_LOCAL   = 2,  
-   CONNECTION_PIPE    = 3,  
-   CONNECTION_TCPIP   = 4,  
-   CONNECTION_HTTP    = 5,  
-   CONNECTION_OTHER   = 6  
-} CONNECTION_PROTOCOL;  
+typedef enum tagCONNECTION_PROTOCOL {  
+   CONNECTION_NONE    = 0,  
+   CONNECTION_UNKNOWN = 1,  
+   CONNECTION_LOCAL   = 2,  
+   CONNECTION_PIPE    = 3,  
+   CONNECTION_TCPIP   = 4,  
+   CONNECTION_HTTP    = 5,  
+   CONNECTION_OTHER   = 6  
+} CONNECTION_PROTOCOL;  
 ```  
   
 ```csharp  
-public enum CONNECTION_PROTOCOL {  
-   CONNECTION_NONE    = 0,  
-   CONNECTION_UNKNOWN = 1,  
-   CONNECTION_LOCAL   = 2,  
-   CONNECTION_PIPE    = 3,  
-   CONNECTION_TCPIP   = 4,  
-   CONNECTION_HTTP    = 5,  
-   CONNECTION_OTHER   = 6  
+public enum CONNECTION_PROTOCOL {  
+   CONNECTION_NONE    = 0,  
+   CONNECTION_UNKNOWN = 1,  
+   CONNECTION_LOCAL   = 2,  
+   CONNECTION_PIPE    = 3,  
+   CONNECTION_TCPIP   = 4,  
+   CONNECTION_HTTP    = 5,  
+   CONNECTION_OTHER   = 6  
 };  
 ```  
   
@@ -79,9 +76,9 @@ public enum CONNECTION_PROTOCOL {
 ## <a name="requirements"></a>需求  
  標頭： msdbg.h  
   
- 命名空間： Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間:Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 組件：Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
  [列舉型別](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   

@@ -1,9 +1,6 @@
 ---
 title: Visual Studio SDK 中公開事件 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - events [Visual Studio], exposing
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bc43329070795415962cf18068f8320ae7458604
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7d2eeb155212f7e065febb68b58b31879b5d5a7c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49905411"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53853092"
 ---
 # <a name="expose-events-in-the-visual-studio-sdk"></a>公開 （expose) Visual Studio SDK 中的事件
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 可讓您使用自動化來源事件。 我們建議您來源專案和專案項目的事件。  

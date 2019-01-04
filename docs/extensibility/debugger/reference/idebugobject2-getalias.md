@@ -1,9 +1,6 @@
 ---
 title: IDebugObject2::GetAlias |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugObject2::GetAlias
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0919fe9617231a94f39b08b83c10e3b5ef645792
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 756f1249fc2adad9cdfa217c3f8fdd05eaa945d1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49854334"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53889747"
 ---
 # <a name="idebugobject2getalias"></a>IDebugObject2::GetAlias
 如果有的話，請取得與這個物件相關聯的別名。  
@@ -28,14 +25,14 @@ ms.locfileid: "49854334"
 ## <a name="syntax"></a>語法  
   
 ```cpp  
-HRESULT GetAlias(  
-   IDebugAlias** ppAlias  
+HRESULT GetAlias(  
+   IDebugAlias** ppAlias  
 );  
 ```  
   
 ```csharp  
-int GetAlias(  
-   out IDebugAlias ppAlias  
+int GetAlias(  
+   out IDebugAlias ppAlias  
 );  
 ```  
   

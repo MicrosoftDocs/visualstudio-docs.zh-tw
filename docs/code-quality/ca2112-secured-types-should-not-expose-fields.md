@@ -1,8 +1,7 @@
 ---
-title: CA2112：受保護類型不應公開欄位
+title: CA2112:受保護類型不應該公開欄位
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA2112
@@ -16,20 +15,20 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 538c7ac89643c168086d6bdcb514d88295e482dc
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: d4786b51536d9df7c51c8551b5fbd8d863879875
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45548319"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53920400"
 ---
-# <a name="ca2112-secured-types-should-not-expose-fields"></a>CA2112：受保護類型不應公開欄位
+# <a name="ca2112-secured-types-should-not-expose-fields"></a>CA2112:受保護類型不應該公開欄位
 
 |||
 |-|-|
 |TypeName|SecuredTypesShouldNotExposeFields|
 |CheckId|CA2112|
-|類別|Microsoft.Security|
+|分類|Microsoft.Security|
 |中斷變更|中斷|
 
 ## <a name="cause"></a>原因
@@ -72,7 +71,7 @@ Cached Object fields: 99, 33
 
 ## <a name="related-rules"></a>相關的規則
 
-- [CA1051：不要宣告可見的執行個體欄位](../code-quality/ca1051-do-not-declare-visible-instance-fields.md)
+- [CA1051:不要宣告可見的執行個體欄位](../code-quality/ca1051-do-not-declare-visible-instance-fields.md)
 
 ## <a name="see-also"></a>另請參閱
 

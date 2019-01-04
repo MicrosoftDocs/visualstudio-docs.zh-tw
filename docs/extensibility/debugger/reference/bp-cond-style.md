@@ -1,9 +1,6 @@
 ---
 title: BP_COND_STYLE |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - BP_COND_STYLE
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8ff46d6cae842d258aab8fb03409ff263670c410
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f279981b7a9d6cd8fa269c4781b9be1148c392f4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49939770"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53885883"
 ---
 # <a name="bpcondstyle"></a>BP_COND_STYLE
 指定中斷點條件樣式暫止和繫結中斷點。  
@@ -28,7 +25,7 @@ ms.locfileid: "49939770"
 ## <a name="syntax"></a>語法  
   
 ```cpp  
-enum enum_BP_COND_STYLE {   
+enum enum_BP_COND_STYLE {   
    BP_COND_NONE         = 0x0000,  
    BP_COND_WHEN_TRUE    = 0x0001,  
    BP_COND_WHEN_CHANGED = 0x0002  
@@ -37,7 +34,7 @@ typedef DWORD BP_COND_STYLE;
 ```  
   
 ```csharp  
-public enum enum_BP_COND_STYLE {   
+public enum enum_BP_COND_STYLE {   
    BP_COND_NONE         = 0x0000,  
    BP_COND_WHEN_TRUE    = 0x0001,  
    BP_COND_WHEN_CHANGED = 0x0002  
@@ -60,9 +57,9 @@ public enum enum_BP_COND_STYLE {
 ## <a name="requirements"></a>需求  
  標頭： msdbg.h  
   
- 命名空間： Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間:Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
  [列舉型別](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   

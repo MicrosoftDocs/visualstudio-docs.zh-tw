@@ -1,9 +1,6 @@
 ---
 title: 開始使用偵錯工具擴充性 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - getting started, Debugging SDK
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 642f46e9497e20cd8a8276265fb434c5bd7522bb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8db5e9d42036a7e4b5f1726e2771e143395c5820
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49851169"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53833254"
 ---
 # <a name="get-started-with-debugger-extensibility"></a>開始使用偵錯工具擴充性
 [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]提供的資訊，您需要建立和自訂用於偵錯程式中的偵錯工具元件[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]環境。  

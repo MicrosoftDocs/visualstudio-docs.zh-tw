@@ -2,7 +2,6 @@
 title: 程式碼分析問題疑難排解
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: troubleshooting
 ms.assetid: 61c7e44d-2780-4df5-9bcb-49e40c1152fc
 author: gewarren
@@ -10,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b481a200cfd085cddcd0e8826eef94f7d4e5fbee
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: c11ff3f6df9ba8ca2cd58f89fd3eec89e6a9abb2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53804386"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53876042"
 ---
 # <a name="troubleshooting-code-analysis-issues"></a>程式碼分析問題疑難排解
 本主題包含下列 Visual Studio 程式碼分析問題的疑難排解資訊。

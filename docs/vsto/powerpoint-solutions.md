@@ -1,9 +1,6 @@
 ---
 title: PowerPoint 方案
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -20,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d7a2775526a088129060fc6375958b08cf6b19eb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0f264cd7382ea16a7c4cfa5896241f4359b0cd67
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49906555"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53906042"
 ---
 # <a name="powerpoint-solutions"></a>PowerPoint 方案
   Visual Studio 提供您可用來建立 Microsoft Office PowerPoint VSTO 增益集的專案範本。 您可以使用 VSTO 增益集來自動化 PowerPoint、擴充 PowerPoint 功能，或自訂 PowerPoint 使用者介面 (UI)。  
@@ -37,7 +34,7 @@ ms.locfileid: "49906555"
 > [!NOTE]  
 >  想要開發解決方案，擴充的 Office 體驗，跨[多個平台](https://dev.office.com/add-in-availability)嗎？ 查看新[Office 增益集模型](https://dev.office.com/docs/add-ins/overview/office-add-ins)。 Office 增益集較小的使用量，相較於 VSTO 增益集和解決方案，而且您可以使用幾乎任何 web 程式設計技術，例如 HTML5、 JavaScript、 CSS3、 以及 XML 來建置。  
   
- ![影片連結](../vsto/media/playvideo.gif "影片連結")如需相關的影片示範，請參閱[How do i： 建立增益集的 Microsoft PowerPoint？](http://go.microsoft.com/fwlink/?LinkId=132767)。  
+ ![影片連結](../vsto/media/playvideo.gif "影片連結")如需相關的影片示範，請參閱[How do i:建立 Microsoft PowerPoint 增益集嗎？](http://go.microsoft.com/fwlink/?LinkId=132767).  
   
 ## <a name="automate-powerpoint-by-using-the-powerpoint-object-model"></a>使用 PowerPoint 物件模型自動化 PowerPoint  
  PowerPoint 物件模型會公開您可用來自動化 PowerPoint 的許多類型。 這些類型可讓您撰寫程式碼來完成一般工作：  
@@ -56,7 +53,7 @@ ms.locfileid: "49906555"
  如需 PowerPoint 物件模型的完整資訊，您可以參閱 PowerPoint 主要 Interop 組件 (PIA) 參考和 VBA 物件模型參考。  
   
 ### <a name="primary-interop-assembly-reference"></a>主要 interop 組件參考  
- PowerPoint PIA 參考文件說明 PowerPoint 主要 Interop 組件中的類型。 這份文件可從下列位置： [PowerPoint 2010 主要 interop 組件參考](http://go.microsoft.com/fwlink/?LinkId=189588)。  
+ PowerPoint PIA 參考文件說明 PowerPoint 主要 Interop 組件中的類型。 這份文件可從下列位置：[PowerPoint 2010 主要 interop 組件參考](http://go.microsoft.com/fwlink/?LinkId=189588)。  
   
  如需有關設計的 PowerPoint PIA，例如類別和介面之間的差異以及 PIA 中的事件實作的方式，請參閱[的 Office 主要 interop 組件中類別和介面概觀](http://go.microsoft.com/fwlink/?LinkId=199885).  
   
@@ -72,20 +69,18 @@ ms.locfileid: "49906555"
 |----------|--------------------------|  
 |建立自訂工作窗格。|[自訂工作窗格](../vsto/custom-task-panes.md)|  
 |在功能區中新增自訂索引標籤。|[功能區概觀](../vsto/ribbon-overview.md)|  
-|將自訂群組新增至功能區上的內建索引標籤。|[如何： 自訂內建索引標籤](../vsto/how-to-customize-a-built-in-tab.md)|  
+|將自訂群組新增至功能區上的內建索引標籤。|[如何：自訂內建索引標籤](../vsto/how-to-customize-a-built-in-tab.md)|  
   
  如需自訂 PowerPoint 的 UI 和其他 Microsoft Office 應用程式的詳細資訊，請參閱[Office UI 自訂](../vsto/office-ui-customization.md)。  
   
 ## <a name="see-also"></a>另請參閱  
- [逐步解說： 建立 PowerPoint 的第一個 VSTO 增益集](../vsto/walkthrough-creating-your-first-vsto-add-in-for-powerpoint.md)   
+ [逐步解說：您第一個 VSTO 增益集建立 powerpoint](../vsto/walkthrough-creating-your-first-vsto-add-in-for-powerpoint.md)   
  [開始進行程式設計 VSTO 增益集](../vsto/getting-started-programming-vsto-add-ins.md)   
  [Office 方案開發概觀&#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)   
  [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md)   
- [如何： 在 Visual Studio 中建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)   
+ [如何：在 Visual Studio 中建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)   
  [程式 VSTO 增益集](../vsto/programming-vsto-add-ins.md)   
  [在 Office 方案中撰寫程式碼](../vsto/writing-code-in-office-solutions.md)   
  [Office 主要 interop 組件](../vsto/office-primary-interop-assemblies.md)   
  [Office UI 自訂](../vsto/office-ui-customization.md)   
  [中的 Office 程式開發的 PowerPoint 2010](http://go.microsoft.com/fwlink/?LinkId=199015)  
-  
-  

@@ -12,13 +12,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 6f9abc191bdecce244581e7427116b05427de215
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: f89dd915498d2528a0a40a3e7a0af8b5d65a5b4f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50966735"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53900622"
 ---
 # <a name="properties-of-swimlanes"></a>泳道的屬性
 您可以將泳道加入圖表。 區隔線會將圖表分成垂直或水平區域。 您可以定義其他要顯示在泳道的圖形。 如需詳細資訊，請參閱 <<c0> [ 如何定義特定領域語言](../modeling/how-to-define-a-domain-specific-language.md)。 如需如何使用這些屬性的詳細資訊，請參閱[自訂及擴充特定領域語言](../modeling/customizing-and-extending-a-domain-specific-language.md)。
@@ -37,7 +36,7 @@ ms.locfileid: "50966735"
 |自訂屬性|用來將屬性加入至這個區隔線從產生的程式碼類別。|\<無 >|
 |產生雙衍生|如果`True`，將產生的基底類別和部分類別 （以支援透過覆寫自訂）。 如需詳細資訊，請參閱 <<c0> [ 覆寫及擴充產生的類別](../modeling/overriding-and-extending-the-generated-classes.md)。|False|
 |具有自訂建構函式|如果`True`，以原始碼提供自訂建構函式。 如需詳細資訊，請參閱 <<c0> [ 覆寫及擴充產生的類別](../modeling/overriding-and-extending-the-generated-classes.md)。|False|
-|繼承修飾詞|描述的繼承來源的程式碼類別產生的區隔線的類型 (`none`，`abstract`或`sealed`)。|無|
+|繼承修飾詞|描述的繼承來源的程式碼類別產生的區隔線的類型 (`none`，`abstract`或`sealed`)。|none|
 |基底泳道|此泳道的基底類別。|(無)|
 |名稱|此泳道的名稱。|目前的名稱|
 |命名空間|此泳道附屬於命名空間。|目前的命名空間|

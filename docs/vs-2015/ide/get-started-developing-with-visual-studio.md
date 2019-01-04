@@ -16,12 +16,12 @@ caps.latest.revision: 67
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 160922088eb0d5f517de072649df94479e4d7e31
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 9e43236c32f0ce7e4e260a1d44b1e64600b6dd17
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53062783"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53802247"
 ---
 # <a name="get-started-developing-with-visual-studio"></a>Get Started Developing with Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,7 +60,7 @@ ms.locfileid: "53062783"
 
      [載入範例](https://github.com/microsoft/windows-classic-samples) &#124;                     [進行教學課程](https://msdn.microsoft.com/library/dd492171.aspx) &#124;                               [瀏覽文件](https://dev.windows.com/desktop)
 
--   **[製作 Office 應用程式](https://msdn.microsoft.com/library/fp161347.aspx)** :開始建立 Office 應用程式，擴充並自訂 Word、 Excel、 Outlook 和 Powerpoint 與 Office 365 服務。
+-   **[製作 Office 應用程式](https://msdn.microsoft.com/library/fp161347.aspx)** :開始建立 Office 應用程式，擴充並自訂 Word、 Excel、 Outlook 和 PowerPoint 與 Office 365 服務。
 
      [載入範例](https://code.msdn.microsoft.com/office365/) &#124;                       [進行教學課程](http://dev.office.com/getting-started/office365apis) &#124;                              [瀏覽文件](https://msdn.microsoft.com/office/aa905340.aspx) &#124;                                   [觀看影片](http://dev.office.com/videos)
 

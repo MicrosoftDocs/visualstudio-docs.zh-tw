@@ -1,9 +1,6 @@
 ---
 title: 專案類型的設計決策 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - project types, project file persistence
@@ -16,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3bd6d2188b46093c5bfe18f9cabe985a953c000f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 01bebdb26b4a3b89d9f9814c9428107d2cef6b9e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49869479"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53898592"
 ---
 # <a name="project-type-design-decisions"></a>專案類型的設計決策
 建立新的專案類型之前，您必須對您的專案類型數個設計決策。 您必須決定您將使用哪些類型的項目會包含您的專案、 如何將保存專案檔，以及哪一種承諾用量的模型。  
@@ -60,7 +57,7 @@ ms.locfileid: "49869479"
  當使用交易的模式時，會開啟資料物件時，變更會儲存到記憶體中的暫存位置，和未認可，直到使用者手動選擇要儲存檔案。 此時，所有的變更必須一起出現，或會進行任何變更。  
   
 ## <a name="see-also"></a>另請參閱  
- [檢查清單： 建立新的專案類型](../../extensibility/internals/checklist-creating-new-project-types.md)   
+ [檢查清單：建立新的專案類型](../../extensibility/internals/checklist-creating-new-project-types.md)   
  [開啟和儲存專案項目](../../extensibility/internals/opening-and-saving-project-items.md)   
  [專案持續性](../../extensibility/internals/project-persistence.md)   
  [專案模型的項目](../../extensibility/internals/elements-of-a-project-model.md)   

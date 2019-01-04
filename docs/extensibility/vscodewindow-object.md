@@ -1,9 +1,6 @@
 ---
 title: VSCodeWindow 物件 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - VSCodeWindow
@@ -16,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: dcd2bf5768b26237c5bc9301de9480b549ce01de
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: 118941fe60a589bdacef07de1734f419717b261a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46495358"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53943125"
 ---
 # <a name="vscodewindow-object"></a>VSCodeWindow 物件
 程式碼視窗是一種特殊的文件視窗，通常可以包含一或多個文字檢視，<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView>物件。  

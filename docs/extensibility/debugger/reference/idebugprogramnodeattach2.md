@@ -1,9 +1,6 @@
 ---
-title: IDebugProgramNodeAttach2 |Microsoft 文件
-ms.custom: ''
+title: IDebugProgramNodeAttach2 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugProgramNodeAttach2
@@ -15,15 +12,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a83f5635dfacb638a2e76054dc5ed4e887e2a3cb
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e212c195754fcab8d60beb3a6536606d6ce86054
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31120685"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53851793"
 ---
 # <a name="idebugprogramnodeattach2"></a>IDebugProgramNodeAttach2
-允許的嘗試附加至相關聯的程式通知程式節點。  
+允許程式節點，嘗試附加至相關聯的程式的通知。  
   
 ## <a name="syntax"></a>語法  
   
@@ -31,32 +28,32 @@ ms.locfileid: "31120685"
 IDebugProgramNodeAttach2 : IUnknown  
 ```  
   
-## <a name="notes-for-implementers"></a>實作者注意事項  
- 實作位於同一個類別會實作這個介面[IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)介面以接收通知的附加作業，並提供一個機會，若要取消附加作業。  
+## <a name="notes-for-implementers"></a>實作者的附註  
+ 實作在相同類別上實作這個介面[IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)介面以接收通知的附加作業，並提供機會，以取消在附加作業。  
   
 ## <a name="notes-for-callers"></a>呼叫端資訊  
- 取得此介面，藉由呼叫`QueryInterface`方法中的[IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)物件。 [OnAttach](../../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md)之前，必須呼叫方法[附加](../../../extensibility/debugger/reference/idebugengine2-attach.md)方法，讓程式節點停止 attach 程序。  
+ 取得這個介面，藉由呼叫`QueryInterface`方法中的[IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)物件。 [OnAttach](../../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md)之前，必須呼叫方法[附加](../../../extensibility/debugger/reference/idebugengine2-attach.md)方法，以提供 [程式] 節點停止附加處理序的機會。  
   
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法  
  這個介面會實作下列方法：  
   
 |方法|描述|  
 |------------|-----------------|  
-|[OnAttach](../../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md)|附加至相關聯的程式或延後的附加程序[附加](../../../extensibility/debugger/reference/idebugengine2-attach.md)方法。|  
+|[OnAttach](../../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md)|將附加至相關聯的程式，或是遵照的附加程序[附加](../../../extensibility/debugger/reference/idebugengine2-attach.md)方法。|  
   
 ## <a name="remarks"></a>備註  
- 這個介面是已被取代慣用的替代做法[Attach_V7](../../../extensibility/debugger/reference/idebugprogramnode2-attach-v7.md)方法。 所有的偵錯引擎會一律載入與`CoCreateInstance`函式中，也就是具現化外部程式偵錯時的位址空間。  
+ 這個介面是慣用的替代做法已被取代[Attach_V7](../../../extensibility/debugger/reference/idebugprogramnode2-attach-v7.md)方法。 所有偵錯引擎一律會載入與`CoCreateInstance`函式中，也就是它們正在偵錯之程式的位址空間之外具現化。  
   
- 如果先前的實作`IDebugProgramNode2::Attach_V7`方法只需要已設定`GUID`偵錯程式，然後只[OnAttach](../../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md)必須實作的方法。  
+ 如果先前的實作`IDebugProgramNode2::Attach_V7`方法只需要設定`GUID`偵錯程式，然後只[OnAttach](../../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md)方法需要實作。  
   
- 如果先前的實作`IDebugProgramNode2::Attach_V7`方法使用所提供的回呼介面，則該功能必須移至的實作[附加](../../../extensibility/debugger/reference/idebugengine2-attach.md)方法和`IDebugProgramNodeAttach2`介面並不會會實作。  
+ 如果先前的實作`IDebugProgramNode2::Attach_V7`方法使用所提供的回呼介面，則該功能必須要實作移動[附加](../../../extensibility/debugger/reference/idebugengine2-attach.md)方法和`IDebugProgramNodeAttach2`介面則否必須實作。  
   
 ## <a name="requirements"></a>需求  
- 標頭： Msdbg.h  
+ 標頭：Msdbg.h  
   
- 命名空間： Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間:Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
  [核心介面](../../../extensibility/debugger/reference/core-interfaces.md)   

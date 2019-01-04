@@ -1,9 +1,6 @@
 ---
 title: 字型和格式適用於 Visual Studio |Microsoft Docs
-ms.custom: ''
 ms.date: 04/26/2017
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: c3c3df69-83b4-4fd0-b5b1-e18c33f39376
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1a758c1e44f9f78f7dc2a225e641d91f97db72cc
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 69ce90f8748168608d09584a4ef370fbdfac394a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942825"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53989039"
 ---
 # <a name="fonts-and-formatting-for-visual-studio"></a>字型和格式適用於 Visual Studio
 ##  <a name="BKMK_TheEnvironmentFont"></a> 環境字型
@@ -93,7 +90,7 @@ window.ShowModal()
 ###  <a name="BKMK_Formatting"></a> 格式化 （調整/粗體） 參考  
  有些對話方塊會需要特定的文字是粗體或以外的環境字型的大小。 先前，大於環境字型的字型編碼為 「`environment font +2`"或類似。 使用提供的程式碼片段，可支援高 DPI 監視器，並確保顯示的文字，一律會出現在正確的大小和重量 （像是 Light 或 semilight 做）。  
   
-> **注意： 您套用格式之前，請確定您遵循本指南中找到[文字樣式](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TextStyle)。**  
+> **注意：您套用格式之前，請確定您遵循本指南中找到[文字樣式](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TextStyle)。**  
   
  若要調整環境字型，設定樣式的 TextBlock 或 Label 所示。 每個使用得宜，這些程式碼片段會產生正確的字型，包括適當的尺寸和重量變化。  
   
@@ -107,19 +104,19 @@ xmlns:vsui="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.Visual
  **會顯示為：** 34 pt Segoe UI Light  
  **適用於：** （罕見） 唯一品牌的 UI，例如在 [開始] 頁面
 
- **程序程式碼：** 何處`textBlock`是先前定義的 TextBlock 和`label`是先前定義的標籤：  
+ **程序的程式碼：** 何處`textBlock`是先前定義的 TextBlock 和`label`是先前定義的標籤：  
   
 ```csharp
-textBlock.SetResourceReference(TextBlock.StyleProperty,    
-        VsResourceKeys.TextBlockEnvironment375PercentFontSizeStyleKey);   
-label.SetResourceReference(Label.StyleProperty,    
+textBlock.SetResourceReference(TextBlock.StyleProperty,    
+        VsResourceKeys.TextBlockEnvironment375PercentFontSizeStyleKey);   
+label.SetResourceReference(Label.StyleProperty,    
         VsResourceKeys.LabelEnvironment375PercentFontSizeStyleKey);  
 ```
   
- **XAML:** 設定樣式的 TextBlock 或 Label 所示。  
+ **XAML:** 設定樣式的 TextBlock 或標籤所示。  
   
 ```xaml
-<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment375PercentFontSizeStyleKey}}">TextBlock: 375 Percent Scaling</TextBlock>   
+<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment375PercentFontSizeStyleKey}}">TextBlock: 375 Percent Scaling</TextBlock>   
 <Label Style="{DynamicResource {x:Static vsui:VsResourceKeys.LabelEnvironment375PercentFontSizeStyleKey}}">Label: 375 Percent Scaling</Label>  
 ```
   
@@ -127,19 +124,19 @@ label.SetResourceReference(Label.StyleProperty,
  **會顯示為：** 28 pt Segoe UI Light   
  **適用於：** 大型的簽章對話方塊標題，主報表中的標題  
   
- **程序程式碼：** 何處`textBlock`是先前定義的 TextBlock 和`label`是先前定義的標籤：  
+ **程序的程式碼：** 何處`textBlock`是先前定義的 TextBlock 和`label`是先前定義的標籤：  
   
 ```csharp
-textBlock.SetResourceReference(TextBlock.StyleProperty,    
-        VsResourceKeys.TextBlockEnvironment310PercentFontSizeStyleKey);   
-label.SetResourceReference(Label.StyleProperty,    
+textBlock.SetResourceReference(TextBlock.StyleProperty,    
+        VsResourceKeys.TextBlockEnvironment310PercentFontSizeStyleKey);   
+label.SetResourceReference(Label.StyleProperty,    
         VsResourceKeys.LabelEnvironment310PercentFontSizeStyleKey);    
 ```
   
- **XAML:** 設定樣式的 TextBlock 或 Label 所示。  
+ **XAML:** 設定樣式的 TextBlock 或標籤所示。  
   
 ```xaml
-<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment310PercentFontSizeStyleKey}}">TextBlock: 310 Percent Scaling</TextBlock>   
+<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment310PercentFontSizeStyleKey}}">TextBlock: 310 Percent Scaling</TextBlock>   
 <Label Style="{DynamicResource {x:Static vsui:VsResourceKeys.LabelEnvironment310PercentFontSizeStyleKey}}">Label: 310 Percent Scaling</Label>     
 ```
   
@@ -147,19 +144,19 @@ label.SetResourceReference(Label.StyleProperty,
  **會顯示為：** 18 點 Segoe UI semilight 做    
  **適用於：** 子標題、 小型和中型的對話方塊中的標題  
   
- **程序程式碼：** 何處`textBlock`是先前定義的 TextBlock 和`label`是先前定義的標籤： 
+ **程序的程式碼：** 何處`textBlock`是先前定義的 TextBlock 和`label`是先前定義的標籤： 
   
 ```csharp
-textBlock.SetResourceReference(TextBlock.StyleProperty,    
-        VsResourceKeys.TextBlockEnvironment200PercentFontSizeStyleKey);   
-label.SetResourceReference(Label.StyleProperty,    
+textBlock.SetResourceReference(TextBlock.StyleProperty,    
+        VsResourceKeys.TextBlockEnvironment200PercentFontSizeStyleKey);   
+label.SetResourceReference(Label.StyleProperty,    
         VsResourceKeys.LabelEnvironment200PercentFontSizeStyleKey);    
 ```
   
  **XAML:** 設定樣式的 TextBlock 或 Label 所示：  
   
 ```xaml
-<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment200PercentFontSizeStyleKey}}">TextBlock: 200 Percent Scaling</TextBlock>   
+<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment200PercentFontSizeStyleKey}}">TextBlock: 200 Percent Scaling</TextBlock>   
 <Label Style="{DynamicResource {x:Static vsui:VsResourceKeys.LabelEnvironment200PercentFontSizeStyleKey}}">Label: 200 Percent Scaling</Label>    
 ```
   
@@ -167,19 +164,19 @@ label.SetResourceReference(Label.StyleProperty,
  **會顯示為：** 14 pt Segoe UI    
  **適用於：** 文件中的區段標題以及 UI 或報表  
   
- **程序程式碼：** 何處`textBlock`是先前定義的 TextBlock 和`label`是先前定義的標籤：  
+ **程序的程式碼：** 何處`textBlock`是先前定義的 TextBlock 和`label`是先前定義的標籤：  
   
 ```csharp
-textBlock.SetResourceReference(TextBlock.StyleProperty,    
-        VsResourceKeys.TextBlockEnvironment155PercentFontSizeStyleKey);   
-label.SetResourceReference(Label.StyleProperty,    
+textBlock.SetResourceReference(TextBlock.StyleProperty,    
+        VsResourceKeys.TextBlockEnvironment155PercentFontSizeStyleKey);   
+label.SetResourceReference(Label.StyleProperty,    
         VsResourceKeys.LabelEnvironment155PercentFontSizeStyleKey);    
 ```
   
  **XAML:** 設定樣式的 TextBlock 或 Label 所示：  
   
 ```xaml
-<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment155PercentFontSizeStyleKey}}">TextBlock: 155 Percent Scaling</TextBlock>   
+<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment155PercentFontSizeStyleKey}}">TextBlock: 155 Percent Scaling</TextBlock>   
 <Label Style="{DynamicResource {x:Static vsui:VsResourceKeys.LabelEnvironment155PercentFontSizeStyleKey}}">Label: 155 Percent Scaling</Label>  
 ```
   
@@ -187,19 +184,19 @@ label.SetResourceReference(Label.StyleProperty,
  **會顯示為：** 12 pt Segoe UI    
  **適用於：** 簽章對話方塊和文件中較小的子標題以及 UI  
   
- **程序程式碼：** 何處`textBlock`是先前定義的 TextBlock 和`label`是先前定義的標籤：  
+ **程序的程式碼：** 何處`textBlock`是先前定義的 TextBlock 和`label`是先前定義的標籤：  
   
 ```csharp
-textBlock.SetResourceReference(TextBlock.StyleProperty,    
-        VsResourceKeys.TextBlockEnvironment133PercentFontSizeStyleKey);   
-label.SetResourceReference(Label.StyleProperty,    
+textBlock.SetResourceReference(TextBlock.StyleProperty,    
+        VsResourceKeys.TextBlockEnvironment133PercentFontSizeStyleKey);   
+label.SetResourceReference(Label.StyleProperty,    
         VsResourceKeys.LabelEnvironment133PercentFontSizeStyleKey);    
 ```
   
  **XAML:** 設定樣式的 TextBlock 或 Label 所示：  
   
 ```xaml
-<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment133PercentFontSizeStyleKey}}">TextBlock: 133 Percent Scaling</TextBlock>   
+<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment133PercentFontSizeStyleKey}}">TextBlock: 133 Percent Scaling</TextBlock>   
 <Label Style="{DynamicResource {x:Static vsui:VsResourceKeys.LabelEnvironment133PercentFontSizeStyleKey}}">Label: 133 Percent Scaling</Label>    
 ```
   
@@ -207,19 +204,19 @@ label.SetResourceReference(Label.StyleProperty,
  **會顯示為：** 11 pt Segoe UI    
  **適用於：** 區段簽章對話方塊中的標題中前在樹狀結構檢視中，垂直索引標籤瀏覽的節點,  
   
- **程序程式碼：** 何處`textBlock`是先前定義的 TextBlock 和`label`是先前定義的標籤：  
+ **程序的程式碼：** 何處`textBlock`是先前定義的 TextBlock 和`label`是先前定義的標籤：  
   
 ```csharp
-textBlock.SetResourceReference(TextBlock.StyleProperty,    
-        VsResourceKeys.TextBlockEnvironment122PercentFontSizeStyleKey);   
-label.SetResourceReference(Label.StyleProperty,    
+textBlock.SetResourceReference(TextBlock.StyleProperty,    
+        VsResourceKeys.TextBlockEnvironment122PercentFontSizeStyleKey);   
+label.SetResourceReference(Label.StyleProperty,    
         VsResourceKeys.LabelEnvironment122PercentFontSizeStyleKey);    
 ```
   
  **XAML:** 設定樣式的 TextBlock 或 Label 所示：  
   
 ```xaml
-<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment122PercentFontSizeStyleKey}}">TextBlock: 122 Percent Scaling</TextBlock>   
+<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment122PercentFontSizeStyleKey}}">TextBlock: 122 Percent Scaling</TextBlock>   
 <Label Style="{DynamicResource {x:Static vsui:VsResourceKeys.LabelEnvironment122PercentFontSizeStyleKey}}">Label: 122 Percent Scaling</Label>    
 ```
   
@@ -227,19 +224,19 @@ label.SetResourceReference(Label.StyleProperty,
  **會顯示為：** 粗體 9 pt Segoe UI    
  **適用於：** 標籤和子標頭中的簽章對話方塊、 報表和文件以及 UI  
   
- **程序程式碼：** 何處`textBlock`是先前定義的 TextBlock 和`label`是先前定義的標籤：  
+ **程序的程式碼：** 何處`textBlock`是先前定義的 TextBlock 和`label`是先前定義的標籤：  
   
 ```csharp
-textBlock.SetResourceReference(TextBlock.StyleProperty,    
-        VsResourceKeys.TextBlockEnvironmentBoldStyleKey);   
-label.SetResourceReference(Label.StyleProperty,    
+textBlock.SetResourceReference(TextBlock.StyleProperty,    
+        VsResourceKeys.TextBlockEnvironmentBoldStyleKey);   
+label.SetResourceReference(Label.StyleProperty,    
         VsResourceKeys.LabelEnvironmentBoldStyleKey);    
 ```
   
  **XAML:** 設定樣式的 TextBlock 或 Label 所示：  
   
 ```xaml
-<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironmentBoldStyleKey}}"> Bold TextBlock</TextBlock>   
+<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironmentBoldStyleKey}}"> Bold TextBlock</TextBlock>   
 <Label Style="{DynamicResource {x:Static vsui:VsResourceKeys.LabelEnvironmentBoldStyleKey}}"> Bold Label</Label>    
 ```
   
@@ -325,11 +322,11 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 ##### <a name="title-case"></a>字首大寫  
  字首大寫是的樣式，都大寫的大部分或所有內片語的單字的第一個字母。 在 Visual Studio 中，字首大寫用於許多項目，包括：  
   
-- **工具提示。** 範例: [預覽選取的項目]  
+- **工具提示。** 範例：[預覽選取的項目]  
   
-- **資料行標頭。** 範例: 「 系統回應 」  
+- **資料行標頭。** 範例：「 系統回應 」  
   
-- **功能表項目。** 範例: 「 儲存所有 」  
+- **功能表項目。** 範例：[全部儲存]  
   
   使用 字首大寫，它們何時改成大寫的字，以及何時將它們保留在小寫的方針：  
   
@@ -356,9 +353,9 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 ##### <a name="sentence-case"></a>句首大寫  
  句首大寫是標準大小寫的方法進行寫入中大寫的第一個字的句子，以及所有專有名詞和代名詞"I"。 一般情況下，句子大小寫會更容易閱讀，特別是當內容將會轉譯機器全球讀者。 使用句子大小寫的：  
   
-1.  **狀態列訊息。** 這些簡單地說，很簡單，並只提供狀態資訊。 範例: 「 正在載入專案檔 」  
+1.  **狀態列訊息。** 這些簡單地說，很簡單，並只提供狀態資訊。 範例：「 正在載入專案檔 」  
   
-2.  **所有其他 UI 項目**，包括標籤、 核取方塊、 選項按鈕和清單方塊項目。 範例: [在清單中選取所有項目]  
+2.  **所有其他 UI 項目**，包括標籤、 核取方塊、 選項按鈕和清單方塊項目。 範例：[選取清單中的所有項目]  
   
 ### <a name="text-formatting"></a>文字格式設定  
  Visual Studio 2013 中的格式設定的預設文字會受到[環境字型](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TheEnvironmentFont)。 這項服務可協助確保整個 IDE （整合式的開發環境），具有一致的字型的外觀，您必須使用它來為您的使用者保證一致的體驗。  
@@ -430,19 +427,19 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
   
 |||  
 |-|-|  
-|**使用方式：**<br /><br /> 在文件中的區段標題以及 UI<br />-報表<br /><br /> **Do:** 使用句子大小寫<br /><br /> **沒有此項目：**<br /><br /> -粗體、 斜體或粗體斜體<br />使用的內文<br />-使用標準的 Visual Studio 控制項中<br />-使用中工具視窗|**會顯示為：** 14 pt Segoe UI<br /><br /> **圖示的範例：**<br /><br /> ![155%環境字型標題的範例](../../extensibility/ux-guidelines/media/0202-c_ef155.png "0202 c_EF155")|  
+|**使用方式：**<br /><br /> 在文件中的區段標題以及 UI<br />-報表<br /><br /> **執行動作：** 使用句子大小寫<br /><br /> **沒有此項目：**<br /><br /> -粗體、 斜體或粗體斜體<br />使用的內文<br />-使用標準的 Visual Studio 控制項中<br />-使用中工具視窗|**會顯示為：** 14 pt Segoe UI<br /><br /> **圖示的範例：**<br /><br /> ![155%環境字型標題的範例](../../extensibility/ux-guidelines/media/0202-c_ef155.png "0202 c_EF155")|  
   
 #### <a name="133-environment-font"></a>133%環境字型  
   
 |||  
 |-|-|  
-|**使用方式：**<br /><br /> 簽章對話方塊中的小子標題<br />在文件中的小子標題以及 UI<br /><br /> **Do:** 使用句子大小寫<br /><br /> **沒有此項目：**<br /><br /> -粗體、 斜體或粗體斜體<br />使用的內文<br />-使用標準的 Visual Studio 控制項中<br />-使用中工具視窗|**會顯示為：** 12 pt Segoe UI<br /><br /> **圖示的範例：**<br /><br /> ![133%環境字型標題的範例](../../extensibility/ux-guidelines/media/0202-d_ef133.png "0202 d_EF133")|  
+|**使用方式：**<br /><br /> 簽章對話方塊中的小子標題<br />在文件中的小子標題以及 UI<br /><br /> **執行動作：** 使用句子大小寫<br /><br /> **沒有此項目：**<br /><br /> -粗體、 斜體或粗體斜體<br />使用的內文<br />-使用標準的 Visual Studio 控制項中<br />-使用中工具視窗|**會顯示為：** 12 pt Segoe UI<br /><br /> **圖示的範例：**<br /><br /> ![133%環境字型標題的範例](../../extensibility/ux-guidelines/media/0202-d_ef133.png "0202 d_EF133")|  
   
 #### <a name="122-environment-font"></a>122%環境字型  
   
 |||  
 |-|-|  
-|**使用方式：**<br /><br /> 簽章對話方塊中的區段標題<br />的樹狀檢視中最上層節點<br />-垂直索引標籤瀏覽<br /><br /> **Do:** 使用句子大小寫<br /><br /> **沒有此項目：**<br /><br /> -粗體、 斜體或粗體斜體<br />使用的內文<br />-使用標準的 Visual Studio 控制項中<br />-使用中工具視窗|**會顯示為：** 11 pt Segoe UI<br /><br /> **圖示的範例：**<br /><br /> ![122%環境字型標題的範例](../../extensibility/ux-guidelines/media/0202-e_ef122.png "0202 e_EF122")|  
+|**使用方式：**<br /><br /> 簽章對話方塊中的區段標題<br />的樹狀檢視中最上層節點<br />-垂直索引標籤瀏覽<br /><br /> **執行動作：** 使用句子大小寫<br /><br /> **沒有此項目：**<br /><br /> -粗體、 斜體或粗體斜體<br />使用的內文<br />-使用標準的 Visual Studio 控制項中<br />-使用中工具視窗|**會顯示為：** 11 pt Segoe UI<br /><br /> **圖示的範例：**<br /><br /> ![122%環境字型標題的範例](../../extensibility/ux-guidelines/media/0202-e_ef122.png "0202 e_EF122")|  
   
 #### <a name="environment-font--bold"></a>環境字型 + 粗體  
   
@@ -454,7 +451,7 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
   
 |||  
 |-|-|  
-|**使用方式：** 所有其他的文字<br /><br /> **Do:** 使用句子大小寫<br /><br /> **不：** 斜體或粗體斜體|**會顯示為：** 9 pt Segoe UI<br /><br /> **圖示的範例：**<br /><br /> ![環境字型的範例](../../extensibility/ux-guidelines/media/0202-g_ef.png "0202 g_EF")|  
+|**使用方式：** 所有其他的文字<br /><br /> **執行動作：** 使用句子大小寫<br /><br /> **沒有此項目：** 斜體或粗體斜體|**會顯示為：** 9 pt Segoe UI<br /><br /> **圖示的範例：**<br /><br /> ![環境字型的範例](../../extensibility/ux-guidelines/media/0202-g_ef.png "0202 g_EF")|  
   
 ### <a name="padding-and-spacing"></a>邊框距離和間距  
  標題會需要它們以提供適當的強調周圍的空間。 此空間取決於點大小以及其他即將標題，例如水平尺規 」 或 「 環境字型的文字行。  
@@ -466,5 +463,5 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 -   預設高度行距和填補，應該遵循粗體環境字型的文字。  
   
 ## <a name="see-also"></a>另請參閱  
- [MSDN： 字型 (Windows)](/windows/desktop/uxguide/vis-fonts)   
- [MSDN： 使用者介面文字 (Windows)](/windows/desktop/uxguide/text-ui)
+ [MSDN:字型 (Windows)](/windows/desktop/uxguide/vis-fonts)   
+ [MSDN:使用者介面文字 (Windows)](/windows/desktop/uxguide/text-ui)

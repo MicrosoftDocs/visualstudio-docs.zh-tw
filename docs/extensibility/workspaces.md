@@ -1,9 +1,6 @@
 ---
 title: 在 Visual Studio 中的工作區 |Microsoft Docs
-ms.custom: ''
 ms.date: 02/21/2018
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 3489592a-dc0c-4cd3-9b08-cd367626980a
 author: vukelich
@@ -11,12 +8,12 @@ ms.author: svukel
 manager: viveis
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0230201677fd2422817ca1fbeab6679a424e5c05
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 406d55b773a586d5cb0128599e225dabbadf21d3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49865826"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53876899"
 ---
 # <a name="workspaces"></a>工作區
 

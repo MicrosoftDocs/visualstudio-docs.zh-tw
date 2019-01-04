@@ -1,9 +1,6 @@
 ---
-title: 如何： 以程式設計方式在工作表儲存格中顯示字串
-ms.custom: ''
+title: HOW TO：以程式設計方式在工作表儲存格中顯示字串
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 336ab67cd5c63a912d72b0fce3fa73c9fca5184f
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 021fe02e501fc5a8921ec8f2a50329653ca45401
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35256815"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53849764"
 ---
-# <a name="how-to-programmatically-display-a-string-in-a-worksheet-cell"></a>如何： 以程式設計方式在工作表儲存格中顯示字串
+# <a name="how-to-programmatically-display-a-string-in-a-worksheet-cell"></a>HOW TO：以程式設計方式在工作表儲存格中顯示字串
   此範例示範如何以程式設計方式顯示在資料格中的文字。 若要在儲存格中顯示文字，使用<xref:Microsoft.Office.Tools.Excel.NamedRange>控制項或原生的 Excel 範圍物件。  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
@@ -49,10 +46,8 @@ ms.locfileid: "35256815"
      [!code-vb[Trin_VstcoreExcelAutomation#69](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#69)]  
   
 ## <a name="see-also"></a>另請參閱  
- [逐步解說： 使用收集資料，在 Windows form](../vsto/walkthrough-collecting-data-using-a-windows-form.md)   
+ [逐步解說：使用 Windows form 收集資料](../vsto/walkthrough-collecting-data-using-a-windows-form.md)   
  [Office 方案進行疑難排解](../vsto/troubleshooting-office-solutions.md)   
  [NamedRange 控制項](../vsto/namedrange-control.md)   
  [全域存取 Office 專案中的物件](../vsto/global-access-to-objects-in-office-projects.md)   
  [Office 方案中的選擇性參數](../vsto/optional-parameters-in-office-solutions.md)  
-  
-  

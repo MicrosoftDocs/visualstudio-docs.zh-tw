@@ -1,13 +1,8 @@
 ---
-title: 如何： 建立 BDC 模型 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：建立 BDC 模型 |Microsoft Docs
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -18,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1a0e2bc47c902707ee896c46fa0d9988551fa6fd
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: c01b8c54a762436f7bf76fd8186765a4fe1b9b6a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36757918"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53955616"
 ---
-# <a name="how-to-create-a-bdc-model"></a>如何： 建立 BDC 模型
+# <a name="how-to-create-a-bdc-model"></a>HOW TO：建立 BDC 模型
   您可以使用範本，為該類型的項目，並再將模型加入至任何 SharePoint 專案，以建立商務資料連接 (BDC) 模型。 如需詳細資訊，請參閱 <<c0> [ 建立 business data connectivity 模型](../sharepoint/creating-a-business-data-connectivity-model.md)。 如需如何設計模型的詳細資訊，請參閱[設計 business data connectivity 模型](../sharepoint/designing-a-business-data-connectivity-model.md)。  
   
 ### <a name="to-create-a-bdc-project"></a>若要建立 BDC 專案  
@@ -64,8 +59,7 @@ ms.locfileid: "36757918"
   
 ## <a name="see-also"></a>另請參閱
  [建立 business data connectivity 模型](../sharepoint/creating-a-business-data-connectivity-model.md)   
- [如何： 將現有的 BDC 模型檔案新增至 SharePoint 專案](../sharepoint/how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project.md)   
- [如何： 使用資源檔來指定當地語系化的名稱、 屬性和權限](../sharepoint/how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions.md)   
- [如何： 在 BDC 功能中包含自訂組件](../sharepoint/how-to-include-a-custom-assembly-in-a-bdc-feature.md)   
+ [如何：將現有的 BDC 模型檔案新增至 SharePoint 專案](../sharepoint/how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project.md)   
+ [如何：使用資源檔來指定當地語系化的名稱、 屬性和權限](../sharepoint/how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions.md)   
+ [如何：在 BDC 功能中包含自訂組件](../sharepoint/how-to-include-a-custom-assembly-in-a-bdc-feature.md)   
  [將商務資料整合至 SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)  
-  

@@ -1,9 +1,6 @@
 ---
-title: 在舊版語言服務的程式碼重新格式化 |Microsoft 文件
-ms.custom: ''
+title: 舊版語言服務中的程式碼重新格式化 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - reformatting code, supporting in language services [managed package framework]
@@ -14,34 +11,34 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 392afbafc2ce15dbf7ee347efdf24ce1f7fe2301
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a9631027f980c3722498979411598d4f6b066217
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31133185"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53897290"
 ---
-# <a name="reformatting-code-in-a-legacy-language-service"></a>重新格式化舊版語言服務中的程式碼
+# <a name="reformatting-code-in-a-legacy-language-service"></a>在舊版語言服務中將程式碼重新格式化
 
-在[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]原始程式碼可以重新格式化的正規化使用縮排和空格。 這可能包括插入或移除空格或在每一行開頭的索引標籤、 加入新行之間的行，或使用 tab 鍵或索引標籤，以空格取代空格。  
+在 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]原始程式碼可能被重新格式化的正規化使用縮排和空格。 這可以包括插入或移除空格或在每一行開頭的索引標籤、 新增線條之間的新行或取代空格與定位點或空格的索引標籤。  
   
->**注意：** 插入或刪除新行字元可能會影響標記，例如中斷點和書籤，但加入或移除空格或定位點不會影響標記。  
+>**注意：** 插入或刪除新行字元可能會影響標記，例如中斷點和書籤，但新增或移除空格或定位點不會影響標記。  
   
-使用者可以選取啟動重新格式化作業**格式選取**或**格式化文件**從**進階**功能表**編輯**功能表。 插入程式碼片段或特殊字元時，也會觸發重新格式化作業。 例如，當您輸入右括號在 C# 中，相符的左大括號與右大括弧之間的所有項目是自動縮排至適當的層級。
+使用者可以選取啟動重新格式化作業**格式化選取範圍**或是**格式化文件**從**進階**功能表上的**編輯**功能表。 插入程式碼片段或特定的字元時，也會觸發重新格式化作業。 例如，當您輸入右括號，在 C# 中，相符的左大括號和右大括號之間的所有項目會自動縮排到適當的層級。
   
-當[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]傳送**格式選取**或**格式化文件**命令語言服務，<xref:Microsoft.VisualStudio.Package.ViewFilter>類別會呼叫<xref:Microsoft.VisualStudio.Package.Source.ReformatSpan%2A>方法中的<xref:Microsoft.VisualStudio.Package.Source>類別。 若要支援的格式必須覆寫<xref:Microsoft.VisualStudio.Package.Source.ReformatSpan%2A>方法並提供您自己的格式化程式碼。  
+當[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]傳送**格式化選取範圍**或**格式化文件**命令語言服務中，以<xref:Microsoft.VisualStudio.Package.ViewFilter>類別會呼叫<xref:Microsoft.VisualStudio.Package.Source.ReformatSpan%2A>中的方法<xref:Microsoft.VisualStudio.Package.Source>類別。 若要支援的格式設定，您必須覆寫<xref:Microsoft.VisualStudio.Package.Source.ReformatSpan%2A>方法，並提供您自己的格式化程式碼。  
   
-## <a name="enabling-support-for-reformatting"></a>啟用支援重新格式化  
+## <a name="enabling-support-for-reformatting"></a>啟用重新格式化的支援  
 
-若要支援的格式，`EnableFormatSelection`參數<xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute>必須設為`true`當您註冊您的 VSPackage。 這會設定<xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableFormatSelection%2A>屬性`true`。 <xref:Microsoft.VisualStudio.Package.ViewFilter.CanReformat%2A>方法會傳回這個屬性的值。 如果為 true，傳回<xref:Microsoft.VisualStudio.Package.ViewFilter>類別會呼叫<xref:Microsoft.VisualStudio.Package.Source.ReformatSpan%2A>。  
+若要支援的格式設定，`EnableFormatSelection`的參數<xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute>必須設為`true`當您註冊 VSPackage。 這會設定<xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableFormatSelection%2A>屬性設`true`。 <xref:Microsoft.VisualStudio.Package.ViewFilter.CanReformat%2A>方法會傳回這個屬性的值。 它會傳回 true，如果<xref:Microsoft.VisualStudio.Package.ViewFilter>類別會呼叫<xref:Microsoft.VisualStudio.Package.Source.ReformatSpan%2A>。  
   
 ## <a name="implementing-reformatting"></a>實作重新格式化
 
-若要實作重新格式化，您必須衍生自<xref:Microsoft.VisualStudio.Package.Source>類別並覆寫<xref:Microsoft.VisualStudio.Package.Source.ReformatSpan%2A>方法。 <xref:Microsoft.VisualStudio.TextManager.Interop.TextSpan>物件描述要格式化的範圍和<xref:Microsoft.VisualStudio.Package.EditArray>物件會保存在範圍上進行的編輯。 請注意，此範圍可以是整份文件。 不過，因為有可能會為範圍的多個變更，所有變更都應該可在單一動作中回復。 若要這樣做，換行中的所有變更<xref:Microsoft.VisualStudio.Package.CompoundAction>物件 （請參閱本主題中的 < 使用 CompoundAction 類別 > 一節）。
+若要實作重新格式化，您必須衍生的類別<xref:Microsoft.VisualStudio.Package.Source>類別並覆寫<xref:Microsoft.VisualStudio.Package.Source.ReformatSpan%2A>方法。 <xref:Microsoft.VisualStudio.TextManager.Interop.TextSpan>物件會描述要格式化的範圍和<xref:Microsoft.VisualStudio.Package.EditArray>物件會保存在範圍上所做的編輯。 請注意，此範圍可以是整份文件。 不過，由於有可能是多個範圍所做的變更，所有變更都應該可在單一動作還原。 若要這樣做，換行中的所有變更<xref:Microsoft.VisualStudio.Package.CompoundAction>物件 （請參閱本主題中的 < 使用 CompoundAction 類別 > 一節）。
 
 ### <a name="example"></a>範例  
 
-下列範例會確保單一空格每一個逗號後面中沒有選取項目，除非逗號後面接著一個索引標籤或行結尾。 之後會刪除列中的最後一個逗號後, 端空格。 請參閱 < 若要查看如何呼叫這個方法是從本主題的 < 使用 CompoundAction 類別 > 一節<xref:Microsoft.VisualStudio.Package.Source.ReformatSpan%2A>方法。  
+下列範例會確保單一空格每一個逗號後面中沒有選取範圍，除非逗號後面接著一個索引標籤或行結尾。 在行中的最後一個逗號刪除後後, 端空格。 請參閱 < 使用 CompoundAction 類別 > 一節，以查看如何呼叫這個方法是從本主題中的<xref:Microsoft.VisualStudio.Package.Source.ReformatSpan%2A>方法。  
 
 ```csharp 
 using Microsoft.VisualStudio.Package;  
@@ -157,11 +154,11 @@ namespace MyLanguagePackage
   
 ## <a name="using-the-compoundaction-class"></a>使用 CompoundAction 類別  
  
-所有重新格式化完成的程式碼區段應該可在單一動作中回復。 這可以透過<xref:Microsoft.VisualStudio.Package.CompoundAction>類別。 這個類別會包裝成單一的編輯作業文字的緩衝區上的編輯作業的一組。  
+所有重新格式化在一段程式碼完成應該是以單一動作還原。 這可以使用來完成<xref:Microsoft.VisualStudio.Package.CompoundAction>類別。 這個類別會包裝成單一的編輯作業上的文字緩衝的編輯作業的一組。  
   
 ### <a name="example"></a>範例
 
-以下是如何使用的範例<xref:Microsoft.VisualStudio.Package.CompoundAction>類別。 請參閱本主題的範例 「 實作支援的格式 」 一節中範例`DoFormatting`方法。  
+以下是如何使用的範例<xref:Microsoft.VisualStudio.Package.CompoundAction>類別。 請參閱本主題的範例，"實作支援的格式 」 一節中的範例`DoFormatting`方法。  
   
 ```csharp  
 using Microsoft.VisualStudio.Package;  

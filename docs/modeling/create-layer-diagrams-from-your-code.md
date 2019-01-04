@@ -13,13 +13,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 7a613874a45939d9c9f2546edbb5545d8be31ccb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f10323a1123b795f1fa6b09d52252b8038b1a732
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49951167"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53846161"
 ---
 # <a name="create-dependency-diagrams-from-your-code"></a>從您的程式碼建立相依性圖表
 
@@ -29,7 +28,7 @@ ms.locfileid: "49951167"
 
 相依性圖表可讓您將 Visual Studio 方案項目組織成邏輯的抽象群組，稱為*層*。 您可以使用圖層來說明這些成品所執行的工作，或系統的主要元件。 每個圖層都可以包含其他圖層以描述更詳細的工作。 您也可以指定的預定或現有*相依性*各層之間。 這些表示為箭號的相依性，顯示哪些圖層可以使用或目前使用其他圖層代表的功能。 若要維持程式碼的架構控制，請在圖表上顯示預期的相依性，然後根據圖表驗證程式碼。
 
-[影片： 驗證即時架構相依性](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4)
+[影片：驗證即時架構相依性](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4)
 
 ## <a name="CreateDiagram"></a> 建立相依性圖表
 
@@ -89,9 +88,9 @@ ms.locfileid: "49951167"
 
 |**若要**|**請遵循下列步驟**|
 |-|-|
-|建立單一成品的圖層|<ol><li>從這些來源拖曳至相依性圖表拖曳的項目：<br /><br /> <ul><li>**方案總管**<br /><br />         例如，您可以拖曳檔案或專案。</li><li>Code Map<br /><br />         請參閱[對應方案之間的相依性](../modeling/map-dependencies-across-your-solutions.md)並[使用 code map 偵錯應用程式](../modeling/use-code-maps-to-debug-your-applications.md)。</li><li>**類別檢視**或**物件瀏覽器**</li></ul><br />     圖層會出現在圖表上，並且連結到成品。</li><li>重新命名圖層以反映相關程式碼或成品的責任。</li></ol> **重要事項：** 將二進位檔案拖曳至 相依性圖表不會自動加入至模型專案其參考。 您必須手動加入您要驗證模型專案的二進位檔案。 **若要將二進位檔案加入至模型專案** <ol><li>在 **方案總管**，開啟模型專案的捷徑功能表，然後選擇**加入現有項目**。</li><li>在 [**加入現有項目**] 對話方塊中，瀏覽至二進位檔案並加以選取，然後選擇**確定**。     二進位檔案會出現在模型專案中。</li><li>在**方案總管] 中**，選擇 [二進位檔案，您加入，然後按**F4**以開啟**屬性**視窗。</li><li>在每一個二進位檔案，設定**建置動作**屬性設**Validate**。</li></ol>|
+|建立單一成品的圖層|<ol><li>從這些來源拖曳至相依性圖表拖曳的項目：<br /><br /> <ul><li>**方案總管**<br /><br />         例如，您可以拖曳檔案或專案。</li><li>Code Map<br /><br />         請參閱[對應方案之間的相依性](../modeling/map-dependencies-across-your-solutions.md)並[使用 code map 偵錯應用程式](../modeling/use-code-maps-to-debug-your-applications.md)。</li><li>**類別檢視**或**物件瀏覽器**</li></ul><br />     圖層會出現在圖表上，並且連結到成品。</li><li>重新命名圖層以反映相關程式碼或成品的責任。</li></ol> **重要：** 將二進位檔案拖曳至 相依性圖表，不會自動新增其模型專案的參考。 您必須手動加入您要驗證模型專案的二進位檔案。 **若要將二進位檔案加入至模型專案** <ol><li>在 **方案總管**，開啟模型專案的捷徑功能表，然後選擇**加入現有項目**。</li><li>在 [**加入現有項目**] 對話方塊中，瀏覽至二進位檔案並加以選取，然後選擇**確定**。     二進位檔案會出現在模型專案中。</li><li>在**方案總管] 中**，選擇 [二進位檔案，您加入，然後按**F4**以開啟**屬性**視窗。</li><li>在每一個二進位檔案，設定**建置動作**屬性設**Validate**。</li></ol>|
 |為所有選取的成品建立單一圖層|將所有成品都拖曳至 相依性圖表中，在相同的時間。<br /><br /> 圖層隨即出現在圖表上，並且連結到所有成品。|
-|為每個選取的成品建立圖層|按住不放**SHIFT**鍵不放同時拖曳的所有成品至相依性圖表在同一時間。 **注意︰** 如果您使用**SHIFT**鍵以選取的項目範圍、 在選取成品之後放開該鍵。 將成品至拖曳圖表時，再次按住該鍵不放。 <br /><br /> 每個成品的圖層隨即出現在圖表上，並且連結到個別成品。|
+|為每個選取的成品建立圖層|按住不放**SHIFT**鍵不放同時拖曳的所有成品至相依性圖表在同一時間。 **注意：** 如果您使用**SHIFT**鍵以選取的項目範圍、 在選取成品之後放開該鍵。 將成品至拖曳圖表時，再次按住該鍵不放。 <br /><br /> 每個成品的圖層隨即出現在圖表上，並且連結到個別成品。|
 |將成品加入至圖層|將成品拖曳至圖層。|
 |建立新的未連結圖層|在**工具箱**，展開**相依性圖表**區段，然後再拖曳**層**相依性圖表。<br /><br /> 若要加入多個圖層，請按兩下 [圖層] 工具。 當您完成時，選擇**指標**工具或按**ESC**索引鍵。<br /><br /> -或-<br /><br /> 開啟相依性圖表的捷徑功能表，選擇 **新增**，然後選擇**層**。|
 |建立巢狀圖層|將現有的圖層拖曳至另一個圖層上。<br /><br /> -或-<br /><br /> 開啟圖層的捷徑功能表，選擇 **新增**，然後選擇**層**。|
@@ -160,8 +159,8 @@ ms.locfileid: "49951167"
 
 ## <a name="see-also"></a>另請參閱
 
-- [影片： 驗證即時架構相依性](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4)
-- [相依性圖表︰參考](../modeling/layer-diagrams-reference.md)
-- [相依性圖表︰方針](../modeling/layer-diagrams-guidelines.md)
+- [影片：驗證即時架構相依性](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4)
+- [相依性圖表中：參考](../modeling/layer-diagrams-reference.md)
+- [相依性圖表中：指導方針](../modeling/layer-diagrams-guidelines.md)
 - [使用相依性圖表驗證程式碼](../modeling/validate-code-with-layer-diagrams.md)
 - [視覺化程式碼](../modeling/visualize-code.md)

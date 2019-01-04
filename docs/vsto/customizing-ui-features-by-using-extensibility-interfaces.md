@@ -1,9 +1,6 @@
 ---
 title: 使用擴充性介面自訂 UI 功能
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -23,12 +20,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 94ef77afa51e7cccb8f5aed18b1cf5ad0e1eaf1f
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: 52da4aa630ef5cf6357b38aeb79ac78f882077e0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53648887"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53866656"
 ---
 # <a name="customize-ui-features-by-using-extensibility-interfaces"></a>使用擴充性介面自訂 UI 功能
   當您使用 Visual Studio 中的 Office 開發工具，在 VSTO 增益集中建立自訂工作窗格、功能區自訂和 Outlook 表單區域時，這些工具提供可處理許多實作詳細資料的類別和設計工具。 不過，如果您有特殊需求，也可以針對每項功能自行實作 *「擴充性介面」* (Extensibility Interface)。  
@@ -86,5 +83,3 @@ ms.locfileid: "53648887"
  [從其他 Office 方案呼叫 VSTO 增益集的程式碼](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md)   
  [如何：在 Visual Studio 中建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)   
  [VSTO 增益集的架構](../vsto/architecture-of-vsto-add-ins.md)  
-  
-  

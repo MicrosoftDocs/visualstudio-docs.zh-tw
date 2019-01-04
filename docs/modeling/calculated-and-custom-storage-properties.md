@@ -10,13 +10,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: f54589d70bc7cab3959d7f0a7ad2a84d3b028754
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f86082c1b382904dc721d3caab54bf6d18418096
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49877188"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53938313"
 ---
 # <a name="calculated-and-custom-storage-properties"></a>計算及自訂的儲存區屬性
 特定領域語言 (DSL) 中的所有網域屬性可以顯示使用者在圖表上，並在語言總管中，並可由程式碼存取。 不過，屬性不同，會儲存其值的方式。
@@ -45,7 +44,7 @@ ms.locfileid: "49877188"
 
 4.  在 [ **建置** ] 功能表上，按一下 [ **建置方案**]。
 
-     您會收到下列錯誤訊息: 「*YourClass*不包含定義 get*YourProperty*。 」
+     您會收到下列錯誤訊息：「*YourClass*不包含定義 get*YourProperty*。 」
 
 5.  按兩下錯誤訊息。
 

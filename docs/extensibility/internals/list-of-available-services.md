@@ -1,9 +1,6 @@
 ---
 title: 可用服務清單 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - services, Visual Studio
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8219c3abfe483a358f0c23d0011c2741f2489ddb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7cd076e19a1732309a07feccca899669741b6482
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49876460"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53964633"
 ---
 # <a name="list-of-available-services"></a>可用服務清單
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 和 Visual Studio SDK 支援下列服務。 某些套件提供自己此處未列出的服務 — 例如，語言服務並沒有單一服務的 GUID。 若要在登錄中尋找語言服務的 GUID，您必須使用的語言名稱。  
@@ -31,7 +28,7 @@ ms.locfileid: "49876460"
 | 服務 | 介面 | Visual Studio | Visual Studio 2005 | 描述 |
 | - | - |---------------|--------------------| - |
 | <xref:Microsoft.VisualStudio.OLE.Interop.SBindHost> | <xref:Microsoft.VisualStudio.OLE.Interop.IBindHost> | 是 | 是 | 用來取得 Vspackage<xref:Microsoft.VisualStudio.OLE.Interop.IBindHost>從 ActiveX 控制項來加速非同步資料傳輸的介面。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SDTE> | <xref:EnvDTE.DTE> | 否 | 是 | 取得用來自動化的設計階段擴充性 (DTE) 物件。<br /><br /> C/C + + 識別碼： SID_SDTE |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SDTE> | <xref:EnvDTE.DTE> | 否 | 是 | 取得用來自動化的設計階段擴充性 (DTE) 物件。<br /><br /> C/C + + 識別碼：SID_SDTE |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SCodeNavigate> | <xref:Microsoft.VisualStudio.Shell.Interop.ICodeNavigate> | 是 | 是 | 若要顯示控制項的預設事件處理常式的表單設計工具來實作。 |
 | <xref:Microsoft.VisualStudio.OLE.Interop.SContainerDispatch> | IDispatch | 是 | 是 | 可讓 VSPackage 也可以存取另一個 VSPackage 或控制項的自動化介面。 |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SExtendedTypeLib> | <xref:Microsoft.VisualStudio.Shell.Interop.IExtendedTypeLib> | 是 | 是 | 可讓 VSPackage 也可以加入或建立擴充的型別程式庫。 |

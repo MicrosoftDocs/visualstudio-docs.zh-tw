@@ -1,9 +1,6 @@
 ---
-title: 逐步解說： 建立 SharePoint 專案的自訂部署步驟 |Microsoft Docs
-ms.custom: ''
+title: 逐步解說：建立 SharePoint 專案的自訂部署步驟 |Microsoft Docs
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c74feaed6c108f9dcfb5f2b374a72c34526134b0
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: e12f9d8b93b429b0ecdc433eef59809f2ca4c61d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51296147"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53891572"
 ---
-# <a name="walkthrough-create-a-custom-deployment-step-for-sharepoint-projects"></a>逐步解說： 建立 SharePoint 專案的自訂部署步驟
+# <a name="walkthrough-create-a-custom-deployment-step-for-sharepoint-projects"></a>逐步解說：建立 SharePoint 專案的自訂部署步驟
   當您部署 SharePoint 專案時，Visual Studio 會以特定順序執行一系列的部署步驟。 Visual Studio 包含許多的內建的部署步驟，但您也可以建立您自己。  
   
  在本逐步解說中，您將建立的自訂部署步驟，以升級執行 SharePoint 的伺服器上的解決方案。 Visual Studio 包含許多工作，這類撤銷或新增解決方案，內建的部署步驟，但它不包含升級方案的部署步驟。 根據預設，當您部署 SharePoint 方案，Visual Studio 先撤銷方案 （如果已部署），並再重新部署整個解決方案。 如需有關內建的部署步驟的詳細資訊，請參閱 <<c0> [ 部署、 發行和升級 SharePoint 方案套件](../sharepoint/deploying-publishing-and-upgrading-sharepoint-solution-packages.md)。  
@@ -488,4 +485,3 @@ ms.locfileid: "51296147"
   
 ## <a name="see-also"></a>另請參閱
  [擴充 SharePoint 封裝和部署](../sharepoint/extending-sharepoint-packaging-and-deployment.md)  
-  

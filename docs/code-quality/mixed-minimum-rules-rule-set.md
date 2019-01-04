@@ -2,7 +2,6 @@
 title: 混合最小規則規則集
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 ms.assetid: bc8df61c-19af-40ab-a871-315807e5f4bf
 author: gewarren
@@ -10,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ff0446e81257cfc782fd1c7d34cde2b274ddde5e
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: d4cc4ddb6a8d6ceb7fd6d7f0874f9f0fdfd66981
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388928"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53830384"
 ---
 # <a name="mixed-minimum-rules-rule-set"></a>混合最小規則規則集
 Microsoft 混合最小規則的重點在於支援 Common Language Runtime，包括潛在的安全性漏洞和應用程式損毀的 c + + 專案中最關鍵的問題。 您應該包含您為支援 Common Language Runtime 之 c + + 專案建立此規則設定任何自訂規則集中。
@@ -37,7 +36,7 @@ Microsoft 混合最小規則的重點在於支援 Common Language Runtime，包�
 |[C6270](../code-quality/c6270.md)|遺漏格式函式的浮點引數|
 |[C6271](../code-quality/c6271.md)|格式函式的多餘引數|
 |[C6272](../code-quality/c6272.md)|格式函式的非浮點引數|
-|[C6273](../code-quality/c6273.md)|若要格式函式的非整數引數|
+|[C6273](../code-quality/c6273.md)|格式函式的非整數引數|
 |[C6274](../code-quality/c6274.md)|格式函式的非字元引數|
 |[C6276](../code-quality/c6276.md)|無效的字串轉型|
 |[C6277](../code-quality/c6277.md)|無效的 CreateProcess 呼叫|
@@ -70,7 +69,7 @@ Microsoft 混合最小規則的重點在於支援 Common Language Runtime，包�
 |[C6518](../code-quality/c6518.md)|不能寫入的緩衝區上的可寫入大小|
 |[C6522](../code-quality/c6522.md)|無效的大小字串類型|
 |[C6525](../code-quality/c6525.md)|無效的大小字串不可能執行到的位置|
-|[C6527](../code-quality/c6527.md)|無效的註釋：'NeedsRelease' 屬性不能用於 void 類型的值|
+|[C6527](../code-quality/c6527.md)|無效的附註：'NeedsRelease' 屬性不能用於 void 類型的值|
 |[C6530](../code-quality/c6530.md)|無法辨認的格式字串樣式|
 |[C6540](../code-quality/c6540.md)|在這個函式上使用屬性註釋會使其所有現有的 __declspec 註釋無效。|
 |[C6551](../code-quality/c6551.md)|無效的大小規格: 無法剖析運算式|
@@ -139,20 +138,20 @@ Microsoft 混合最小規則的重點在於支援 Common Language Runtime，包�
 |[C28282](../code-quality/c28282.md)|格式字串必須在前置條件中|
 |[C28285](../code-quality/c28285.md)|對於函式，參數中有語法錯誤|
 |[C28286](../code-quality/c28286.md)|對於函式，結尾附近發生語法錯誤|
-|[C28287](../code-quality/c28287.md)|函式的語法錯誤中\_在\_（） 註釋 （無法辨認的參數名稱）|
-|[C28288](../code-quality/c28288.md)|函式的語法錯誤中\_在\_（） 註釋 （無效的參數名稱）|
-|[C28289](../code-quality/c28289.md)|對於函式：ReadableTo 或 WritableTo 沒有有限的規格做為參數|
+|[C28287](../code-quality/c28287.md)|函式的 \_At\_() 註釋中有語法錯誤 (無法辨認的參數名稱)|
+|[C28288](../code-quality/c28288.md)|函式的 \_At\_() 註釋中有語法錯誤 (無效的參數名稱)|
+|[C28289](../code-quality/c28289.md)|函式：ReadableTo 或 WritableTo 沒有規格做為參數|
 |[C28290](../code-quality/c28290.md)|函式的註釋包含比實際參數數目還多的外部|
 |[C28291](../code-quality/c28291.md)|位於 deref 層級 0 的 post null/notnull 對函式是無意義的。|
 |[C28300](../code-quality/c28300.md)|運算子的運算式運算元類型不相容|
 |[C28301](../code-quality/c28301.md)|函式的第一個宣告沒有註釋。|
-|[C28302](../code-quality/c28302.md)|額外\_Deref\_註釋上找不到運算子。|
-|[C28303](../code-quality/c28303.md)|模稜兩可\_Deref\_註釋上找不到運算子。|
-|[C28304](../code-quality/c28304.md)|不當放置\_Notref\_找不到運算子套用到語彙基元。|
+|[C28302](../code-quality/c28302.md)|在註釋中發現額外的 \_Deref\_ 運算子。|
+|[C28303](../code-quality/c28303.md)|在註釋發現模擬兩可的 \_Deref\_ 運算子。|
+|[C28304](../code-quality/c28304.md)|發現有位置不正確的 \_Notref\_ 運算子套用至語彙基元。|
 |[C28305](../code-quality/c28305.md)|剖析語彙基元時發現錯誤。|
 |[C28350](../code-quality/c28350.md)|註釋描述了條件不適用的狀況。|
 |[C28351](../code-quality/c28351.md)|註釋描述條件中不可以使用動態值 (變數)。|
-|[CA1001](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md)|可處置欄位的類型應該是可處置的|
-|[CA1821](../code-quality/ca1821-remove-empty-finalizers.md)|移除空的完成項|
+|[CA1001](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md)|具有可處置欄位的類型應該為可處置|
+|[CA1821](../code-quality/ca1821-remove-empty-finalizers.md)|必須移除空的完成項|
 |[CA2213](../code-quality/ca2213-disposable-fields-should-be-disposed.md)|可處置的欄位應該受到處置|
-|[CA2231](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md)|多載覆寫 ValueType.Equals 的等號比較運算子|
+|[CA2231](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md)|在覆寫 ValueType.Equals 上多載等號運算子|

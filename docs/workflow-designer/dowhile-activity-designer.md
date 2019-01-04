@@ -3,7 +3,6 @@ title: 工作流程設計工具-DoWhile 活動設計工具
 ms.date: 11/04/2016
 ms.topic: reference
 ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Activities.Statements.DoWhile.UI
 ms.assetid: 948deb35-d72f-462b-bea6-4b119c10a148
@@ -12,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 19817fb23bd8a22532df7d349262b689f632a3a7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: bc96d44a38a0cf8a1865de236b9f7ef473c960a7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49839618"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53960426"
 ---
 # <a name="dowhile-activity-designer"></a>DoWhile 活動設計工具
 

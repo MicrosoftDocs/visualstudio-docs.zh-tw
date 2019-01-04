@@ -1,9 +1,6 @@
 ---
-title: 逐步解說： 設計 Outlook 表單區域
-ms.custom: ''
+title: 逐步解說：設計 Outlook 表單區域
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,14 +12,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 693261bb6894681b613ad0db2f0b3c116109a782
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c7c14b7702acff281ab32483930559b5fe521044
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49813683"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53942368"
 ---
-# <a name="walkthrough-design-an-outlook-form-region"></a>逐步解說： 設計 Outlook 表單區域
+# <a name="walkthrough-design-an-outlook-form-region"></a>逐步解說：設計 Outlook 表單區域
   自訂的表單區域會擴充標準或自訂的 Microsoft Office Outlook 表單。 在此逐步解說中，您要設計自訂的表單區域，它在連絡人項目的 [偵測器] 視窗中會顯示為新頁面。 這個表單區域會將地址資訊傳送至 Windows Live 當地搜尋網站，顯示連絡人清單中每個地址的對應。 如需表單區域的詳細資訊，請參閱[建立 Outlook 表單區域](../vsto/creating-outlook-form-regions.md)。  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
@@ -49,7 +46,7 @@ ms.locfileid: "49813683"
   
 - [!INCLUDE[Outlook_15_short](../vsto/includes/outlook-15-short-md.md)] 或 [!INCLUDE[Outlook_14_short](../vsto/includes/outlook-14-short-md.md)]。  
   
-  ![影片連結](../vsto/media/playvideo.gif "影片連結")如本主題的影片版本，請參閱[影片如何： 設計 Outlook 表單區域](http://go.microsoft.com/fwlink/?LinkID=140824)。  
+  ![影片連結](../vsto/media/playvideo.gif "影片連結")如本主題的影片版本，請參閱[視訊操作說明：設計 Outlook 表單區域](http://go.microsoft.com/fwlink/?LinkID=140824)。  
   
 ## <a name="create-a-new-outlook-vsto-add-in-project"></a>建立新的 Outlook VSTO 增益集專案  
  第一次建立基本的 VSTO 增益集專案。  
@@ -62,7 +59,7 @@ ms.locfileid: "49813683"
   
 3.  將專案儲存至任一目錄。  
   
-     如需詳細資訊，請參閱 <<c0> [ 如何： 在 Visual Studio 中的建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
+     如需詳細資訊，請參閱[＜How to：在 Visual Studio 中建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
   
 ## <a name="add-a-form-region-to-the-outlook-vsto-add-in-project"></a>Outlook VSTO 增益集專案中加入表單區域  
  Outlook VSTO 增益集解決方案可以包含一或多個 Outlook 表單區域項目。 使用將表單區域項目新增至您的專案**新的 Outlook 表單區域**精靈。  
@@ -177,10 +174,8 @@ ms.locfileid: "49813683"
  [存取表單區域在執行階段](../vsto/accessing-a-form-region-at-run-time.md)   
  [建立 Outlook 表單區域](../vsto/creating-outlook-form-regions.md)   
  [若要建立 Outlook 表單區域的指導方針](../vsto/guidelines-for-creating-outlook-form-regions.md)   
- [逐步解說： 匯入在 Outlook 中設計表單區域](../vsto/walkthrough-importing-a-form-region-that-is-designed-in-outlook.md)   
- [如何： 在 Outlook 增益集專案中加入表單區域](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)   
+ [逐步解說：匯入在 Outlook 中設計的表單區域](../vsto/walkthrough-importing-a-form-region-that-is-designed-in-outlook.md)   
+ [如何：將表單區域加入 Outlook 增益集專案](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)   
  [Outlook 訊息類別相關聯的表單區域](../vsto/associating-a-form-region-with-an-outlook-message-class.md)   
  [Outlook 表單區域中的自訂動作](../vsto/custom-actions-in-outlook-form-regions.md)   
- [如何： 防止 Outlook 顯示表單區域](../vsto/how-to-prevent-outlook-from-displaying-a-form-region.md)  
-  
-  
+ [如何：防止 Outlook 顯示表單區域](../vsto/how-to-prevent-outlook-from-displaying-a-form-region.md)  

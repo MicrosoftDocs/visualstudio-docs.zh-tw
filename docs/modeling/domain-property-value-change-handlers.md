@@ -10,13 +10,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 834ee518269c414c8a4ee08b056369813e0a1751
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 8a682563355d37441b093db7c2e1575bf2584464
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53057544"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53941660"
 ---
 # <a name="domain-property-value-change-handlers"></a>網域屬性值變更處理常式
 
@@ -95,7 +94,7 @@ if (newValue > 10)
 }
 ```
 
-### <a name="alternative-technique-calculated-properties"></a>替代方法：計算屬性
+### <a name="alternative-technique-calculated-properties"></a>替代方法：導出的屬性
 
 先前的範例示範如何使用 OnValueChanged() 將某個網域屬性的值傳播至另一個網域屬性。 每個屬性都有自己的儲存值。
 
@@ -105,7 +104,7 @@ if (newValue > 10)
 
 不過，計算屬性的潛在缺點是每次使用值都會評估運算式，因此可能呈現效能問題。 此外，計算屬性沒有 OnValueChanging() 和 OnValueChanged()。
 
-### <a name="alternative-technique-change-rules"></a>替代方法：ChangeRule
+### <a name="alternative-technique-change-rules"></a>替代方法：變更規則
 
 如果您定義了 ChangeRule，則會將其執行的交易，在其中變更屬性值的結尾。  如需詳細資訊，請參閱 <<c0> [ 規則傳播變更內模型](../modeling/rules-propagate-changes-within-the-model.md)。
 

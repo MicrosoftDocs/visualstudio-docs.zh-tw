@@ -1,9 +1,6 @@
 ---
 title: 相關的服務和介面 (原始檔控制 VSPackage) |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - source control packages, interfaces
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7e68c7c0101661ae9afffa7e9e12e8e4faa44fc7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c312b6d89812a76f5fc8135eb18f02f0afedc5ec
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49940485"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53940621"
 ---
 # <a name="related-services-and-interfaces-source-control-vspackage"></a>相關的服務和介面 (原始檔控制 VSPackage)
 此區段會列出所有的原始檔控制 VSPackage 相關的介面，在[!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]。 原始檔控制 VSPackage 實作這些介面部分，並使用其他人來完成原始檔控制工作。  
@@ -33,9 +30,9 @@ ms.locfileid: "49940485"
   
  介面包括：  
   
--   必要： 適當的實體 （原始檔控制 VSPackage，原始檔控制虛設常式，專案） 必須實作介面。  
+-   必要屬性：適當的實體 （原始檔控制 VSPackage，原始檔控制虛設常式，專案） 必須實作介面。  
   
--   建議： 實體應該實作這個介面;否則，原始檔控制功能可能有限。  
+-   建議使用：實體應該實作這個介面中;否則，原始檔控制功能可能有限。  
   
 -   選擇性： 實體可以實作這個介面，以提供更豐富的功能集。  
   

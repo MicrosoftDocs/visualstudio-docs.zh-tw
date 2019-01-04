@@ -1,9 +1,6 @@
 ---
 title: IntelliSense 裝載 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - IntelliSense hosting
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 28fc8ca212574c054add28e69a409fde4f58308a
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 2ba74b54e074a7522783e63c367586a943607857
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39638830"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53838173"
 ---
 # <a name="intellisense-hosting"></a>IntelliSense 裝載
 Visual Studio 可讓 IntelliSense 裝載。 IntellSense 裝載可讓您會提供 IntelliSense for Visual Studio 文字編輯器所未裝載的程式碼。  

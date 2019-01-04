@@ -3,8 +3,6 @@ title: '&lt;自訂&gt;元素 （在 Visual Studio 中的 Office 程式開發）'
 titleSuffix: ''
 ms.custom: seodec18
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,12 +16,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d7546b9b5b2d89747aa8557e1b05dc99d99e6bcb
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: 4810f347301f8e91b1a3a0498021d152eaf20974
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53802091"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53878662"
 ---
 # <a name="ltcustomizationsgt-element-office-development-in-visual-studio"></a>&lt;自訂&gt;元素 （在 Visual Studio 中的 Office 程式開發）
   `customizations` 命名空間的 `vstov4` 項目包含安裝及載入每個 Office 方案的所有資訊。

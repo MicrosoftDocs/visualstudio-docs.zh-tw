@@ -1,9 +1,6 @@
 ---
 title: 使用 SharePoint 專案服務 |Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,17 +13,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a5d4c2950754ebbef2920720cf784084b2968a82
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: a8416d38629c8970e9cc90e0d873138970b16258
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295055"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53875815"
 ---
 # <a name="use-the-sharepoint-project-service"></a>使用 SharePoint 專案服務
   SharePoint 專案系統包含可讓您執行專案系統相關工作的專案服務。 專案服務是 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService> 物件。  
   
- 您可以在任何 SharePoint 工具擴充功能中存取 SharePoint 專案服務。 您也可以在其他類型的 Visual Studio 擴充功能 (例如增益集和 VSPackages) 中存取 SharePoint 專案服務。 如需詳細資訊，請參閱 <<c0> [ 如何： 擷取 SharePoint 專案服務](../sharepoint/how-to-retrieve-the-sharepoint-project-service.md)。  
+ 您可以在任何 SharePoint 工具擴充功能中存取 SharePoint 專案服務。 您也可以在其他類型的 Visual Studio 擴充功能 (例如增益集和 VSPackages) 中存取 SharePoint 專案服務。 如需詳細資訊，請參閱[＜How to：擷取 SharePoint 專案服務](../sharepoint/how-to-retrieve-the-sharepoint-project-service.md)。  
   
 ## <a name="project-service-features"></a>專案服務功能
  下表列出您可以使用 SharePoint 專案服務執行的工作和可使用的 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService> 方法或屬性，以執行每項工作。  
@@ -47,8 +44,7 @@ ms.locfileid: "51295055"
   
 ## <a name="see-also"></a>另請參閱
  [SharePoint 專案系統類型與其他 Visual Studio 專案類型之間轉換](../sharepoint/converting-between-sharepoint-project-system-types-and-other-visual-studio-project-types.md)   
- [如何： 擷取 SharePoint 專案服務](../sharepoint/how-to-retrieve-the-sharepoint-project-service.md)   
+ [如何：擷取 SharePoint 專案服務](../sharepoint/how-to-retrieve-the-sharepoint-project-service.md)   
  [擴充 Visual Studio 中的 SharePoint 工具](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)   
  [概觀的程式設計模型的 SharePoint 工具擴充功能](../sharepoint/overview-of-the-programming-model-of-sharepoint-tools-extensions.md)   
  [如何：從 DTE 物件取得服務](https://msdn.microsoft.com/library/bb166401.aspx)  
-  

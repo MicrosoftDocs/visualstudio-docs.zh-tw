@@ -1,9 +1,6 @@
 ---
 title: 開啟動態工具視窗 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - tool windows, dynamic
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9d37a72629dfb7c10eeb51bcd2317151447e9edd
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 766582650e8c0d97ea585f8d9f34c48983331d7f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39636642"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53926459"
 ---
 # <a name="open-a-dynamic-tool-window"></a>開啟動態工具視窗
 從上一個功能表或對等的鍵盤快速鍵的命令通常開啟的工具視窗。 有些時候，不過，您可能需要特定的 UI 內容套用，而關閉時的 UI 內容不再適用時，便會開啟工具視窗。 工具視窗的這些類型稱為*動態*或是*自動顯示*。  

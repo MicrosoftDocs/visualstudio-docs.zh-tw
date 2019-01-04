@@ -1,9 +1,6 @@
 ---
-title: 如何： 以程式設計方式定義，並在文件中選取範圍
-ms.custom: ''
+title: HOW TO：以程式設計方式定義，並在文件中選取範圍
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,14 +16,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8770871bfdc361e29d7ac7c2fc984477b1ec0ea1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b6922613c7a1493d5b40b807166281ae11eb04d6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49833131"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53835496"
 ---
-# <a name="how-to-programmatically-define-and-select-ranges-in-documents"></a>如何： 以程式設計方式定義，並在文件中選取範圍
+# <a name="how-to-programmatically-define-and-select-ranges-in-documents"></a>HOW TO：以程式設計方式定義，並在文件中選取範圍
   您也可以使用 <xref:Microsoft.Office.Interop.Word.Range> 物件定義 Microsoft Office Word 文件中的範圍。 您可以使用，比方說，選取數種方式，在整份文件<xref:Microsoft.Office.Interop.Word.Range.Select%2A>方法<xref:Microsoft.Office.Interop.Word.Range>物件，或使用之內容屬性的<xref:Microsoft.Office.Tools.Word.Document>類別 （在文件層級自訂） 或<xref:Microsoft.Office.Interop.Word.Document>類別 (在VSTO 增益集）。  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
@@ -130,11 +127,9 @@ ms.locfileid: "49833131"
   
 ## <a name="see-also"></a>另請參閱  
  [Word 物件模型概觀](../vsto/word-object-model-overview.md)   
- [如何： 以程式設計方式擴充文件中的範圍](../vsto/how-to-programmatically-extend-ranges-in-documents.md)   
- [如何： 以程式設計方式擷取範圍中的開頭和結尾字元](../vsto/how-to-programmatically-retrieve-start-and-end-characters-in-ranges.md)   
- [如何： 以程式設計方式擴充文件中的範圍](../vsto/how-to-programmatically-extend-ranges-in-documents.md)   
- [如何： 以程式設計方式重設 Word 文件中的範圍](../vsto/how-to-programmatically-reset-ranges-in-word-documents.md)   
- [如何： 以程式設計方式摺疊範圍或選取的文件](../vsto/how-to-programmatically-collapse-ranges-or-selections-in-documents.md)   
- [如何： 以程式設計方式建立範圍時排除段落標記](../vsto/how-to-programmatically-exclude-paragraph-marks-when-creating-ranges.md)  
-  
-  
+ [如何：以程式設計方式擴充文件中的範圍](../vsto/how-to-programmatically-extend-ranges-in-documents.md)   
+ [如何：以程式設計方式擷取範圍中的開頭和結尾字元](../vsto/how-to-programmatically-retrieve-start-and-end-characters-in-ranges.md)   
+ [如何：以程式設計方式擴充文件中的範圍](../vsto/how-to-programmatically-extend-ranges-in-documents.md)   
+ [如何：以程式設計方式重設 Word 文件中的範圍](../vsto/how-to-programmatically-reset-ranges-in-word-documents.md)   
+ [如何：以程式設計方式摺疊範圍或選取的文件](../vsto/how-to-programmatically-collapse-ranges-or-selections-in-documents.md)   
+ [如何：以程式設計方式排除段落標記建立範圍時](../vsto/how-to-programmatically-exclude-paragraph-marks-when-creating-ranges.md)  

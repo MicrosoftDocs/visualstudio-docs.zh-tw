@@ -1,9 +1,6 @@
 ---
-title: 逐步解說： 呼叫 SharePoint 用戶端物件模型，在 伺服器總管延伸模組 |Microsoft Docs
-ms.custom: ''
+title: 逐步解說：呼叫 SharePoint 用戶端物件模型，在 伺服器總管延伸模組 |Microsoft Docs
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f4510aa820e0f82c2fcd73ccb83ed0f8120a1399
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: bce304bfb9657262fa7aeac43c58280e6992af17
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51296030"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53918884"
 ---
-# <a name="walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension"></a>逐步解說： 呼叫 SharePoint 用戶端物件模型，在 伺服器總管延伸模組
+# <a name="walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension"></a>逐步解說：呼叫 SharePoint 用戶端物件模型，在 伺服器總管延伸模組
   本逐步解說示範如何從的擴充功能呼叫 SharePoint 用戶端物件模型**SharePoint 連線**中的節點**伺服器總管**。 如需如何使用 SharePoint 用戶端物件模型的詳細資訊，請參閱[呼叫 SharePoint 物件模型](../sharepoint/calling-into-the-sharepoint-object-models.md)。  
   
  本逐步解說將示範下列工作：  
@@ -39,7 +36,7 @@ ms.locfileid: "51296030"
 -   偵錯和測試延伸模組。  
   
 > [!NOTE]  
->  您在本逐步解說中建立的延伸模組類似於您在中建立的延伸模組[逐步解說： 擴充伺服器總管以顯示 web 組件](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)。 該逐步解說會使用 SharePoint 伺服器物件模型，但本逐步解說會使用用戶端物件模型來完成相同的工作。  
+>  您在本逐步解說中建立的延伸模組類似您在建立延伸[逐步解說：擴充伺服器總管以顯示 web 組件](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)。 該逐步解說會使用 SharePoint 伺服器物件模型，但本逐步解說會使用用戶端物件模型來完成相同的工作。  
   
 ## <a name="prerequisites"></a>必要條件  
  您需要完成這個逐步解說在開發電腦上的下列元件：  
@@ -285,6 +282,6 @@ ms.locfileid: "51296030"
 ## <a name="see-also"></a>另請參閱
  [呼叫 SharePoint 物件模型](../sharepoint/calling-into-the-sharepoint-object-models.md)   
  [擴充 SharePoint 連線節點，在 伺服器總管](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)   
- [逐步解說： 擴充伺服器總管以顯示 web 組件](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)   
+ [逐步解說：擴充伺服器總管以顯示 web 組件](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)   
  [圖示影像編輯器](/cpp/windows/image-editor-for-icons)   
  [建立圖示或其他影像&#40;圖示影像編輯器&#41;](/cpp/windows/creating-an-icon-or-other-image-image-editor-for-icons)

@@ -1,9 +1,6 @@
 ---
 title: 偵錯工具概念 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK]
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e38c743ce7170e0842a3430c7b2aa190df94782b
-ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
+ms.openlocfilehash: 99ecd5d685592a252a185feaedc75a5566f1c5ea
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39203802"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53857487"
 ---
 # <a name="debugger-concepts"></a>偵錯工具概念
 若要建置 Visual Studio 偵錯封裝，您需要先熟悉中設計封裝所使用的架構概念。  

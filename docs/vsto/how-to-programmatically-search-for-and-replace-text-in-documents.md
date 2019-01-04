@@ -1,9 +1,6 @@
 ---
-title: 如何： 以程式設計方式搜尋和取代文件中的文字
-ms.custom: ''
+title: HOW TO：以程式設計方式搜尋和取代文件中的文字
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,14 +16,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6de96133a810898fe847cce71bb2711dd7c31dd9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ccd9fc41ce0be5aa209098dd574f142b22ad2996
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49822393"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53823671"
 ---
-# <a name="how-to-programmatically-search-for-and-replace-text-in-documents"></a>如何： 以程式設計方式搜尋和取代文件中的文字
+# <a name="how-to-programmatically-search-for-and-replace-text-in-documents"></a>HOW TO：以程式設計方式搜尋和取代文件中的文字
   <xref:Microsoft.Office.Interop.Word.Find> 物件是 <xref:Microsoft.Office.Interop.Word.Selection> 和 <xref:Microsoft.Office.Interop.Word.Range> 物件共有的成員，您可以使用這個成員在 Microsoft Office Word 文件中搜尋文字。 取代命令是尋找命令的擴充功能。  
   
  使用 <xref:Microsoft.Office.Interop.Word.Find> 物件在 Microsoft Office Word 文件中逐一搜尋特定的文字、格式或樣式，並使用 <xref:Microsoft.Office.Interop.Word.Find.Replacement%2A> 屬性取代任何找到的項目。  
@@ -120,9 +117,8 @@ ms.locfileid: "49822393"
     -   <xref:Microsoft.Office.Interop.Word.WdReplace.wdReplaceOne> 會取代第一個找到的項目。  
   
 ## <a name="see-also"></a>另請參閱  
- [如何： 以程式設計方式在 Word 中設定搜尋選項](../vsto/how-to-programmatically-set-search-options-in-word.md)   
- [如何： 以程式設計方式在文件中找到項目執行迴圈](../vsto/how-to-programmatically-loop-through-found-items-in-documents.md)   
- [如何： 以程式設計方式定義，並在文件中選取範圍](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)   
- [如何： 以程式設計方式在搜尋後還原選取範圍](../vsto/how-to-programmatically-restore-selections-after-searches.md)   
+ [如何：以程式設計方式在 Word 中設定搜尋選項](../vsto/how-to-programmatically-set-search-options-in-word.md)   
+ [如何：以程式設計方式在文件中找到項目執行迴圈](../vsto/how-to-programmatically-loop-through-found-items-in-documents.md)   
+ [如何：以程式設計方式定義，並在文件中選取範圍](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)   
+ [如何：以程式設計方式在搜尋後還原選取範圍](../vsto/how-to-programmatically-restore-selections-after-searches.md)   
  [Office 方案中的選擇性參數](../vsto/optional-parameters-in-office-solutions.md)  
-  

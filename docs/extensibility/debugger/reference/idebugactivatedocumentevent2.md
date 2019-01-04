@@ -1,9 +1,6 @@
 ---
-title: IDebugActivateDocumentEvent2 |Microsoft 文件
-ms.custom: ''
+title: IDebugActivateDocumentEvent2 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugActivateDocumentEvent2
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ce8307776a3dda9f086cdb77d2880228f14a62b2
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 190eb405d4c3158a9dd3b131e15a6a999cd862e1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31102544"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53895814"
 ---
 # <a name="idebugactivatedocumentevent2"></a>IDebugActivateDocumentEvent2
 偵錯引擎 (DE) 會使用此介面來要求要載入的文件。  
@@ -31,11 +28,11 @@ ms.locfileid: "31102544"
 IDebugActivateDocumentEvent2 : IUnknown  
 ```  
   
-## <a name="notes-for-implementers"></a>實作者注意事項  
- 需要開啟原始程式檔時，DE 會實作這個介面。 只能由偵錯引擎會處理或屬於指令碼解譯器會實作這個介面。 [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)介面必須實作此介面為相同的物件上 (SDM 使用[QueryInterface](/cpp/atl/queryinterface)存取`IDebugEvent2`介面)。  
+## <a name="notes-for-implementers"></a>實作者的附註  
+ 需要開啟原始程式檔時，DE 會實作這個介面。 只偵錯引擎使用，或屬於指令碼解譯器會實作這個介面。 [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)介面必須實作此介面的相同物件上 (使用 SDM [QueryInterface](/cpp/atl/queryinterface)若要存取`IDebugEvent2`介面)。  
   
 ## <a name="notes-for-callers"></a>呼叫端資訊  
- 建立裝置和需要具有開啟原始程式檔時，會傳送此事件的物件。 事件會使用傳送[IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)它附加到正在偵錯程式時，SDM 所提供的回呼函式。  
+ DE 建立，並需要開啟的原始程式檔時，會傳送這個事件的物件。 事件會使用傳送[IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)它附加到正在偵錯程式時，在 SDM 所提供的回呼函式。  
   
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法  
  下表顯示的方法`IDebugActivateDocumentEvent2`。  
@@ -46,14 +43,14 @@ IDebugActivateDocumentEvent2 : IUnknown
 |[GetDocumentContext](../../../extensibility/debugger/reference/idebugactivatedocumentevent2-getdocumentcontext.md)|取得描述文件中的位置的文件內容。|  
   
 ## <a name="remarks"></a>備註  
- 此介面用的一般案例是剖析錯誤發生在 HTML 網頁上的指令碼中，如果指令碼 DE 會傳送這個介面來 SDM 如此可以顯示文件剖析錯誤。  
+ 此介面用的典型案例就是如果在 HTML 網頁上的指令碼中，就會發生剖析錯誤，指令碼 DE 會傳送這個介面給 SDM，以便可以顯示的文件剖析錯誤。  
   
 ## <a name="requirements"></a>需求  
  標頭： msdbg.h  
   
- 命名空間： Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間:Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)   

@@ -1,9 +1,6 @@
 ---
 title: 將 VSIX 封裝當地語系化 |Microsoft Docs
-ms.custom: ''
 ms.date: 10/26/2017
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - localize package
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 85d32f25e8dd1f2f56af0857f2be0ff24c4d3126
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: 1d554819c8c615dc9f8fcd41bb4b460482e21fde
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53740243"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53956929"
 ---
 # <a name="localizing-vsix-packages"></a>將 VSIX 套件當地語系化
 

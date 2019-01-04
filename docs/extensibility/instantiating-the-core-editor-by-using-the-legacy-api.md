@@ -1,9 +1,6 @@
 ---
 title: 使用舊版 API，核心編輯器具現化 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - instantiating editor
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 59642b934f82990ce50f6dabaa38a97f34575997
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 14583d242c260e4b0f1a754d53faf35b645be666
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49941550"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53838160"
 ---
 # <a name="instantiate-the-core-editor-by-using-the-legacy-api"></a>使用舊版 API 具現化核心編輯器
 編輯器會負責文字編輯功能，例如插入、 刪除、 複製和貼。 它結合了這些函式語言服務，例如文字著色、 縮排，並完成 IntelliSense 陳述式所提供的函數。  
@@ -65,9 +62,9 @@ ms.locfileid: "49941550"
   
  如果<xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A>方法會傳回相同的命令 GUID 做為文字編輯器，核心編輯器的執行個體自動取得預設的快速鍵。  
   
- 如需一般資訊，請參閱 <<c0> [ 逐步解說： 建立核心編輯器，並登錄編輯程式檔案類型](../extensibility/walkthrough-creating-a-core-editor-and-registering-an-editor-file-type.md)。  
+ 如需一般資訊，請參閱[逐步解說：編輯器建立一個核心，並登錄編輯程式檔案類型](../extensibility/walkthrough-creating-a-core-editor-and-registering-an-editor-file-type.md)。  
   
 ## <a name="see-also"></a>另請參閱  
  [在核心編輯器](../extensibility/inside-the-core-editor.md)   
  [開啟和儲存專案項目](../extensibility/internals/opening-and-saving-project-items.md)   
- [逐步解說： 建立核心編輯器 」 和 「 登錄編輯程式檔案類型](../extensibility/walkthrough-creating-a-core-editor-and-registering-an-editor-file-type.md)
+ [逐步解說：建立核心編輯器 」 和 「 登錄編輯程式檔案類型](../extensibility/walkthrough-creating-a-core-editor-and-registering-an-editor-file-type.md)

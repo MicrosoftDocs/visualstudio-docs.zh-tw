@@ -1,9 +1,6 @@
 ---
 title: BP_LOCATION_CODE_STRING |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - BP_LOCATION_CODE_STRING
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 31b7baad0350ef0524aee81e61f9019b8e91a9de
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ee33cff1ba8ee6ce278a9bb11f8967d4dd377173
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49857142"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53925270"
 ---
 # <a name="bplocationcodestring"></a>BP_LOCATION_CODE_STRING
 用於設定使用者可以輸入從整合式的開發環境 (IDE) 的字串為基礎的程式碼中斷點。  
@@ -28,7 +25,7 @@ ms.locfileid: "49857142"
 ## <a name="syntax"></a>語法  
   
 ```cpp  
-typedef struct _BP_LOCATION_CODE_STRING {   
+typedef struct _BP_LOCATION_CODE_STRING {   
    BSTR bstrContext;  
    BSTR bstrCodeExpr;  
 } BP_LOCATION_CODE_STRING;  
@@ -47,9 +44,9 @@ typedef struct _BP_LOCATION_CODE_STRING {
 ## <a name="requirements"></a>需求  
  標頭： msdbg.h  
   
- 命名空間： Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間:Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 組件：Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
  [結構和等位](../../../extensibility/debugger/reference/structures-and-unions.md)   

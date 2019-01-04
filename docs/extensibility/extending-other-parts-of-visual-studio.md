@@ -1,9 +1,6 @@
 ---
 title: 擴充 Visual Studio 的其他部分 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - user interfaces
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8cad30462879240fd6691c3a7a5a15ea69856b7d
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: f49d2e10b61bac39941a12f5617fc313f17c208f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39639522"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53967270"
 ---
 # <a name="extend-other-parts-of-visual-studio"></a>擴充 Visual Studio 的其他部分
 有許多的多個組件，您可以擴充的 Visual Studio 使用者介面。 這裡我們將示範一些。  
@@ -40,4 +37,4 @@ ms.locfileid: "39639522"
  了解如何讓您自己的起始頁，從頭開始或可下載的開始頁面範例：[建立自訂起始頁](../extensibility/creating-a-custom-start-page.md)。  
   
 ## <a name="write-to-the-activity-log"></a>寫入活動記錄檔  
- 了解如何寫入活動記錄檔：[如何： 使用活動記錄](../extensibility/how-to-use-the-activity-log.md)。
+ 了解如何寫入活動記錄檔：[如何：使用活動記錄](../extensibility/how-to-use-the-activity-log.md)。

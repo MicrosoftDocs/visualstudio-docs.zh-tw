@@ -1,9 +1,6 @@
 ---
 title: VisibilityConstraints 元素 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - VisibilityConstraints
@@ -16,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2ade6f2ac15d5b1c46b9b388d13b52d87129a66b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 394da3e3ea7123b9b7208689aef8e032300dfcde
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49930267"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53950286"
 ---
 # <a name="visibilityconstraints-element"></a>VisibilityConstraints 元素
 VisibilityConstraints 元素會決定靜態群組的命令和工具列可見。 可見性會先受到[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]沒有載入 VSPackage 的整合式的開發環境 (IDE)。  
@@ -61,7 +58,7 @@ VisibilityConstraints 元素會決定靜態群組的命令和工具列可見。 
   
 ```xml  
 <VisibilityConstraints>  
-  <VisibilityItem guid="cmdSetGuidMyProductCommands"     id="cmdidAddWidget"  
+  <VisibilityItem guid="cmdSetGuidMyProductCommands"     id="cmdidAddWidget"  
     context="guidNotViewSourceMode"/>  
 </VisibilityConstraints>  
 ```  

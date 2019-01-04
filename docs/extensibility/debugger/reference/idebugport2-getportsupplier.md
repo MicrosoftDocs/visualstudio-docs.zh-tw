@@ -1,9 +1,6 @@
 ---
 title: IDebugPort2::GetPortSupplier |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugPort2::GetPortSupplier
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c6a75c9ebacdfac2c8def4c31493b09197942090
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 82046ce648c5d6e8ea1e97b80366965cb4dc3dc9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49819624"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53900713"
 ---
 # <a name="idebugport2getportsupplier"></a>IDebugPort2::GetPortSupplier
 取得此連接埠的連接埠提供者。  
@@ -28,13 +25,13 @@ ms.locfileid: "49819624"
 ## <a name="syntax"></a>語法  
   
 ```cpp  
-HRESULT GetPortSupplier(   
+HRESULT GetPortSupplier(   
    IDebugPortSupplier2** ppSupplier  
 );  
 ```  
   
 ```csharp  
-int GetPortSupplier(   
+int GetPortSupplier(   
    out IDebugPortSupplier2 ppSupplier  
 );  
 ```  

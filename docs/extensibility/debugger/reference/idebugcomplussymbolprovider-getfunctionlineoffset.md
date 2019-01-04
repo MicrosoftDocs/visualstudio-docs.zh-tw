@@ -1,9 +1,6 @@
 ---
 title: IDebugComPlusSymbolProvider::GetFunctionLineOffset |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - IDebugComPlusSymbolProvider::GetFunctionLineOffset
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8923550b0aa7947a32296d60eb1badace36c30fa
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e3fb64f69c584cc5ae9d96ccc864987b1c1e21b2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49825890"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53854096"
 ---
 # <a name="idebugcomplussymbolprovidergetfunctionlineoffset"></a>IDebugComPlusSymbolProvider::GetFunctionLineOffset
 擷取表示指定的行位移的函式內的位址。  

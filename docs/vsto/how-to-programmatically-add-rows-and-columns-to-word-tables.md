@@ -1,9 +1,6 @@
 ---
 title: HOW TO：以程式設計方式將資料列和資料行加入至 Word 表格
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,12 +14,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 55a755ccdd7f14af5a38fc516cdb9f76e936e10d
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: 539cb8311e59d43325091fd4ff0cd54e5838e854
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53804574"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53909082"
 ---
 # <a name="how-to-programmatically-add-rows-and-columns-to-word-tables"></a>HOW TO：以程式設計方式將資料列和資料行加入至 Word 表格
   在 Microsoft Office Word 表格中，儲存格會組織成資料列和資料行。 您可以使用 <xref:Microsoft.Office.Interop.Word.Rows> 物件的 <xref:Microsoft.Office.Interop.Word.Rows.Add%2A> 方法新增資料表的資料列，以及使用 <xref:Microsoft.Office.Interop.Word.Columns> 物件的 <xref:Microsoft.Office.Interop.Word.Columns.Add%2A> 方法來新增資料行。  
@@ -82,5 +79,3 @@ ms.locfileid: "53804574"
  [如何：以程式設計方式建立 Word 表格](../vsto/how-to-programmatically-create-word-tables.md)   
  [如何：以程式設計方式加入文字和格式在 Word 表格的儲存格](../vsto/how-to-programmatically-add-text-and-formatting-to-cells-in-word-tables.md)   
  [如何：以程式設計方式填入 Word 表格文件屬性](../vsto/how-to-programmatically-populate-word-tables-with-document-properties.md)  
-  
-  

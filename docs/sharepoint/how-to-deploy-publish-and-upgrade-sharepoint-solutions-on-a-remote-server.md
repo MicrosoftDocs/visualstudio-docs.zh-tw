@@ -1,9 +1,6 @@
 ---
-title: 如何： 部署、 發行和升級遠端伺服器上的 SharePoint 方案 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：部署、 發行和升級遠端伺服器上的 SharePoint 方案 |Microsoft Docs
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,14 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: fbd21016d00bdfecfcb606e9fe2b720ab97bf3d0
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 1473d1c9ea9d876eb539e9672c1675ce06d9762d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118617"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53835668"
 ---
-# <a name="how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server"></a>如何： 部署、 發行和升級遠端伺服器上的 SharePoint 方案
+# <a name="how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server"></a>HOW TO：部署、 發行和升級遠端伺服器上的 SharePoint 方案
   除了本機系統中部署 SharePoint 方案，您可以在遠端站台或本機 SharePoint 網站發行沙箱化 SharePoint 方案。 遠端發行的程序副本 *.wsp*檔案至 SharePoint 伺服器，安裝方案，並接著可讓您啟用此解決方案。 對它進行變更之後，您也可以升級遠端 SharePoint 方案安裝。  
   
 ## <a name="to-publish-a-sandboxed-sharepoint-solution-to-a-remote-sharepoint-server"></a>若要將沙箱化 SharePoint 方案發行至遠端 SharePoint 伺服器  
@@ -78,8 +75,7 @@ ms.locfileid: "37118617"
      停用舊版本的解決方案，解決方案的新版本升級舊的解決方案，從保留的資料並在 SharePoint 中啟動新的方案。  
   
 ## <a name="see-also"></a>另請參閱
- [如何： 部署並發佈至本機 SharePoint 網站的 SharePoint 方案](../sharepoint/how-to-deploy-and-publish-a-sharepoint-solution-to-a-local-sharepoint-site.md)   
+ [如何：部署並發佈至本機 SharePoint 網站的 SharePoint 方案](../sharepoint/how-to-deploy-and-publish-a-sharepoint-solution-to-a-local-sharepoint-site.md)   
  [建立 SharePoint 方案套件](../sharepoint/creating-sharepoint-solution-packages.md)   
- [如何： 自訂 SharePoint 方案套件](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)   
- [如何： 新增和移除功能和項目加入封裝時，使用封裝設計工具](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer.md)  
-  
+ [如何：自訂 SharePoint 方案套件](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)   
+ [如何：新增和移除功能和項目加入封裝時，使用封裝設計工具](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer.md)  

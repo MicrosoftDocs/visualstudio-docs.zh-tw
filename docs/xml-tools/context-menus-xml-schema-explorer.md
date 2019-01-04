@@ -2,7 +2,6 @@
 title: 在 XML 結構描述總管中的操作功能表
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: reference
 ms.assetid: 42ab17ca-b8c1-40d7-beda-d033f66fe874
 author: gewarren
@@ -10,18 +9,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e6f13a2dc434602819a423b8122a97675e332cab
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d38dea96b109db9d60014df9bf7d4d420308f195
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49939114"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53898891"
 ---
 # <a name="context-menus-xml-schema-explorer"></a>操作功能表 （XML 結構描述總管）
 
 下列操作功能表項目用於執行結構描述特定搜尋和其他作業。
 
-## <a name="node-type-schema-set"></a>節點型別： 結構描述設定
+## <a name="node-type-schema-set"></a>節點型別：結構描述集合
 
 下表描述結構描述集節點可用的選項。
 
@@ -32,7 +31,7 @@ ms.locfileid: "49939114"
 |**顯示全域項目**|尋找並反白顯示結構描述集中的所有全域項目。|
 |**屬性視窗**|會開啟**屬性**視窗 （如果它尚未開啟）。 這個視窗會顯示與節點有關的資訊。|
 
-## <a name="node-type-namespace"></a>節點型別： 命名空間
+## <a name="node-type-namespace"></a>節點型別：命名空間
  下表描述命名空間節點可用的選項。
 
 |選項|描述|
@@ -43,7 +42,7 @@ ms.locfileid: "49939114"
 |**顯示全域項目**|尋找並反白顯示所選命名空間中的所有全域項目。|
 |**屬性視窗**|會開啟**屬性**視窗 （如果它尚未開啟）。 這個視窗會顯示與節點有關的資訊。|
 
-## <a name="node-type-file"></a>節點類型： 檔案
+## <a name="node-type-file"></a>節點型別：檔案
  下表描述檔案節點可用的選項。
 
 |選項|描述|
@@ -65,7 +64,7 @@ ms.locfileid: "49939114"
 |**檢視程式碼**|在 XML 編輯器中開啟包含所選節點的檔案。 在 XML 結構描述總管中選取的項目也會在 XML 編輯器中選取。|
 |**屬性視窗**|會開啟**屬性**視窗 （如果它尚未開啟）。 這個視窗會顯示與節點有關的資訊。|
 
-## <a name="node-type-element"></a>節點型別： 項目
+## <a name="node-type-element"></a>節點型別：元素
  除了上述的全域節點選項外，項目節點的操作功能表還包含下列選項：
 
 |選項|描述|
@@ -77,7 +76,7 @@ ms.locfileid: "49939114"
 |**顯示替代群組標頭**|針對屬於替代群組之成員的全域項目，尋找並反白顯示選取之項目的所有直接和間接標頭，例如下列項目：<br /><br /> 為選取的項目上指定替代群組標頭。<br />為在其標頭項目上指定替代群組標頭。|
 |**產生範例 XML**|僅適用於全域項目。 針對全域項目產生範例 XML 檔案。|
 
-## <a name="node-type-global-types"></a>節點型別： 全域型別
+## <a name="node-type-global-types"></a>節點型別：全域型別
  除了上述的全域節點選項外，全域型別節點的操作功能表還有下列選項：
 
 |選項|描述|
@@ -87,7 +86,7 @@ ms.locfileid: "49939114"
 |**顯示所有衍生型別**|尋找並反白顯示直接和間接衍生自選取之型別的所有型別。|
 |**顯示所有祖系**|顯示所有父 (基底) 型別。|
 
-## <a name="node-type-attribute"></a>節點型別： 屬性
+## <a name="node-type-attribute"></a>節點型別：屬性
  除了上述的全域節點選項外，屬性節點的操作功能表還有下列選項：
 
 |選項|描述|
@@ -96,7 +95,7 @@ ms.locfileid: "49939114"
 |**請移至原始屬性**|針對屬性參考，瀏覽至此屬性的實際定義。|
 |**顯示所有參考**|針對全域屬性，尋找並反白顯示所選屬性的所有參考 (其他具有 `ref="selectedAttribute"` 的屬性)。|
 
-## <a name="node-type-attribute-group"></a>節點型別： 屬性群組
+## <a name="node-type-attribute-group"></a>節點型別：屬性群組
  除了上述的全域節點選項外，屬性群組節點的操作功能表還包含下列選項：
 
 |選項|描述|
@@ -105,7 +104,7 @@ ms.locfileid: "49939114"
 |**顯示所有成員**|尋找並反白顯示屬性群組的所有成員。|
 |**顯示所有參考**|尋找並反白顯示所選屬性群組的所有參考 (具有 `ref="selectedAttributeGroup"` 的屬性群組)。|
 
-## <a name="node-type-named-group"></a>節點型別： 具名群組
+## <a name="node-type-named-group"></a>節點型別：具名的群組
  除了上述的全域節點選項外，具名群組節點的操作功能表還包含下列選項：
 
 |選項|描述|

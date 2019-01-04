@@ -1,9 +1,6 @@
 ---
 title: 將資料儲存在專案檔 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - data [Visual Studio], saving in project files
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: adc7d06b8479da4aef7042fd64702cff5ca3be60
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 090040f616cdfbc68ecaf8f35c315bf70ccf5bb6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49900653"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53820130"
 ---
 # <a name="save-data-in-project-files"></a>將資料儲存在專案檔
 專案子類型可以儲存並擷取專案檔中的子型別特定資料。 Managed Package Framework (MPF) 提供兩個介面，以完成這項工作：  

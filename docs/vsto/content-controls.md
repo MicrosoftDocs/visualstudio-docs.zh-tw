@@ -1,9 +1,6 @@
 ---
 title: 內容控制項
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VST.Toolbox.DropDownListContentControl
@@ -41,12 +38,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a4cb82609ef8f1a37379c1451e733e8b046313e2
-ms.sourcegitcommit: a715de2ba8c703f37aa2102567b1aa2c0f05a117
+ms.openlocfilehash: b1656f40cd0d75c73f9f1e4b3a74a6f2b7e7ad0e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "53441518"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53956540"
 ---
 # <a name="content-controls"></a>內容控制項
   內容控制項提供一種設計文件和範本的方式，能讓它們具有下列功能：  

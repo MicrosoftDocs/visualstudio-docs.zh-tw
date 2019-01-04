@@ -2,19 +2,18 @@
 title: 混合建議規則規則集
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e155457b250eaa03f56d0009ee434bd1ecb39b63
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: ec485979eb4c8736260acfa5906b8465b5326f38
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37945867"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53988374"
 ---
 # <a name="mixed-recommended-rules-rule-set"></a>混合建議規則規則集
 
@@ -60,7 +59,7 @@ Microsoft 混合建議規則的重點在於支援 Common Language Runtime，包�
 |[C6270](../code-quality/c6270.md)|遺漏格式函式的浮點引數|
 |[C6271](../code-quality/c6271.md)|格式函式的多餘引數|
 |[C6272](../code-quality/c6272.md)|格式函式的非浮點引數|
-|[C6273](../code-quality/c6273.md)|若要格式函式的非整數引數|
+|[C6273](../code-quality/c6273.md)|格式函式的非整數引數|
 |[C6274](../code-quality/c6274.md)|格式函式的非字元引數|
 |[C6276](../code-quality/c6276.md)|無效的字串轉型|
 |[C6277](../code-quality/c6277.md)|無效的 CreateProcess 呼叫|
@@ -127,7 +126,7 @@ Microsoft 混合建議規則的重點在於支援 Common Language Runtime，包�
 |[C6518](../code-quality/c6518.md)|不能寫入的緩衝區上的可寫入大小|
 |[C6522](../code-quality/c6522.md)|無效的大小字串類型|
 |[C6525](../code-quality/c6525.md)|無效的大小字串不可能執行到的位置|
-|[C6527](../code-quality/c6527.md)|無效的註釋：'NeedsRelease' 屬性不能用於 void 類型的值|
+|[C6527](../code-quality/c6527.md)|無效的附註：'NeedsRelease' 屬性不能用於 void 類型的值|
 |[C6530](../code-quality/c6530.md)|無法辨認的格式字串樣式|
 |[C6540](../code-quality/c6540.md)|在這個函式上使用屬性註釋會使其所有現有的 __declspec 註釋無效。|
 |[C6551](../code-quality/c6551.md)|無效的大小規格: 無法剖析運算式|
@@ -225,80 +224,80 @@ Microsoft 混合建議規則的重點在於支援 Common Language Runtime，包�
 |[C28282](../code-quality/c28282.md)|格式字串必須在前置條件中|
 |[C28285](../code-quality/c28285.md)|對於函式，參數中有語法錯誤|
 |[C28286](../code-quality/c28286.md)|對於函式，結尾附近發生語法錯誤|
-|[C28287](../code-quality/c28287.md)|函式的語法錯誤中\_在\_（） 註釋 （無法辨認的參數名稱）|
-|[C28288](../code-quality/c28288.md)|函式的語法錯誤中\_在\_（） 註釋 （無效的參數名稱）|
-|[C28289](../code-quality/c28289.md)|對於函式：ReadableTo 或 WritableTo 沒有有限的規格做為參數|
+|[C28287](../code-quality/c28287.md)|函式的 \_At\_() 註釋中有語法錯誤 (無法辨認的參數名稱)|
+|[C28288](../code-quality/c28288.md)|函式的 \_At\_() 註釋中有語法錯誤 (無效的參數名稱)|
+|[C28289](../code-quality/c28289.md)|函式：ReadableTo 或 WritableTo 沒有規格做為參數|
 |[C28290](../code-quality/c28290.md)|函式的註釋包含比實際參數數目還多的外部|
 |[C28291](../code-quality/c28291.md)|位於 deref 層級 0 的 post null/notnull 對函式是無意義的。|
 |[C28300](../code-quality/c28300.md)|運算子的運算式運算元類型不相容|
 |[C28301](../code-quality/c28301.md)|函式的第一個宣告沒有註釋。|
-|[C28302](../code-quality/c28302.md)|額外\_Deref\_註釋上找不到運算子。|
-|[C28303](../code-quality/c28303.md)|模稜兩可\_Deref\_註釋上找不到運算子。|
-|[C28304](../code-quality/c28304.md)|不當放置\_Notref\_找不到運算子套用到語彙基元。|
+|[C28302](../code-quality/c28302.md)|在註釋中發現額外的 \_Deref\_ 運算子。|
+|[C28303](../code-quality/c28303.md)|在註釋發現模擬兩可的 \_Deref\_ 運算子。|
+|[C28304](../code-quality/c28304.md)|發現有位置不正確的 \_Notref\_ 運算子套用至語彙基元。|
 |[C28305](../code-quality/c28305.md)|剖析語彙基元時發現錯誤。|
 |[C28306](../code-quality/c28306.md)|參數上的註釋已廢棄|
 |[C28307](../code-quality/c28307.md)|參數上的註釋已廢棄|
 |[C28350](../code-quality/c28350.md)|註釋描述了條件不適用的狀況。|
 |[C28351](../code-quality/c28351.md)|註釋描述條件中不可以使用動態值 (變數)。|
-|[CA1001](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md)|可處置欄位的類型應該是可處置的|
-|[CA1009](../code-quality/ca1009-declare-event-handlers-correctly.md)|必須正確宣告事件處理常式|
-|[CA1016](../code-quality/ca1016-mark-assemblies-with-assemblyversionattribute.md)|組件必須標記 assemblyversionattribute|
+|[CA1001](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md)|具有可處置欄位的類型應該為可處置|
+|[CA1009](../code-quality/ca1009-declare-event-handlers-correctly.md)|事件處理常式必須正確宣告|
+|[CA1016](../code-quality/ca1016-mark-assemblies-with-assemblyversionattribute.md)|組件必須標記 AssemblyVersionAttribute|
 |[CA1033](../code-quality/ca1033-interface-methods-should-be-callable-by-child-types.md)|介面方法應該要可以由子類型呼叫|
-|[CA1049](../code-quality/ca1049-types-that-own-native-resources-should-be-disposable.md)|擁有原生資源的類型應該是可處置的|
-|[CA1060](../code-quality/ca1060-move-p-invokes-to-nativemethods-class.md)|將 P/Invokes 移到 NativeMethods 類別|
+|[CA1049](../code-quality/ca1049-types-that-own-native-resources-should-be-disposable.md)|具有原生資源的類型應該要可呼叫 Dispose 方法明確釋放資源|
+|[CA1060](../code-quality/ca1060-move-p-invokes-to-nativemethods-class.md)|必須將 P/Invokes 移到 NativeMethods 類別|
 |[CA1061](../code-quality/ca1061-do-not-hide-base-class-methods.md)|不要隱藏基底類別方法|
 |[CA1063](../code-quality/ca1063-implement-idisposable-correctly.md)|必須正確實作 IDisposable|
-|[CA1065](../code-quality/ca1065-do-not-raise-exceptions-in-unexpected-locations.md)|不會引發非預期的位置中的例外狀況|
-|[CA1301](../code-quality/ca1301-avoid-duplicate-accelerators.md)|避免重複的快速鍵|
+|[CA1065](../code-quality/ca1065-do-not-raise-exceptions-in-unexpected-locations.md)|不要在非預期的位置中引發例外狀況|
+|[CA1301](../code-quality/ca1301-avoid-duplicate-accelerators.md)|避免使用重複的快速鍵|
 |[CA1400](../code-quality/ca1400-p-invoke-entry-points-should-exist.md)|P/Invoke 進入點應該要存在|
-|[CA1401](../code-quality/ca1401-p-invokes-should-not-be-visible.md)|P/Invokes 不應該為可見|
+|[CA1401](../code-quality/ca1401-p-invokes-should-not-be-visible.md)|P/Invokes 不應該為可見的|
 |[CA1403](../code-quality/ca1403-auto-layout-types-should-not-be-com-visible.md)|自動配置類型不應該是 COM 可見|
-|[CA1404](../code-quality/ca1404-call-getlasterror-immediately-after-p-invoke.md)|P/Invoke 之後立即呼叫 GetLastError|
+|[CA1404](../code-quality/ca1404-call-getlasterror-immediately-after-p-invoke.md)|必須在 P/Invoke 之後立即呼叫 GetLastError|
 |[CA1405](../code-quality/ca1405-com-visible-type-base-types-should-be-com-visible.md)|COM 可見類型的基底類型應該是 COM 可見|
 |[CA1410](../code-quality/ca1410-com-registration-methods-should-be-matched.md)|應該和 COM 註冊方法對應|
 |[CA1415](../code-quality/ca1415-declare-p-invokes-correctly.md)|P/Invokes 必須正確宣告|
-|[CA1821](../code-quality/ca1821-remove-empty-finalizers.md)|移除空的完成項|
+|[CA1821](../code-quality/ca1821-remove-empty-finalizers.md)|必須移除空的完成項|
 |[CA1900](../code-quality/ca1900-value-type-fields-should-be-portable.md)|實值類型欄位應該為可移植的|
 |[CA1901](../code-quality/ca1901-p-invoke-declarations-should-be-portable.md)|P/Invoke 宣告應該為可移植的|
 |[CA2002](../code-quality/ca2002-do-not-lock-on-objects-with-weak-identity.md)|不要鎖定具有弱式識別的物件|
-|[CA2100](../code-quality/ca2100-review-sql-queries-for-security-vulnerabilities.md)|檢閱 SQL 查詢中的有安全性弱點|
-|[CA2101](../code-quality/ca2101-specify-marshaling-for-p-invoke-string-arguments.md)|指定的 P/Invoke 字串引數封送處理|
-|[CA2108](../code-quality/ca2108-review-declarative-security-on-value-types.md)|必須檢閱實值型別上的宣告式安全性|
-|[CA2111](../code-quality/ca2111-pointers-should-not-be-visible.md)|指標不應該為可見|
-|[CA2112](../code-quality/ca2112-secured-types-should-not-expose-fields.md)|受保護的類型不應該公開欄位|
+|[CA2100](../code-quality/ca2100-review-sql-queries-for-security-vulnerabilities.md)|必須檢閱 SQL 查詢中是否有安全性弱點|
+|[CA2101](../code-quality/ca2101-specify-marshaling-for-p-invoke-string-arguments.md)|必須指定 P/Invoke 字串引數的封送處理|
+|[CA2108](../code-quality/ca2108-review-declarative-security-on-value-types.md)|必須檢閱實值類型上的宣告式安全性|
+|[CA2111](../code-quality/ca2111-pointers-should-not-be-visible.md)|指標不應該為可見的|
+|[CA2112](../code-quality/ca2112-secured-types-should-not-expose-fields.md)|受保護類型不應該公開欄位|
 |[CA2114](../code-quality/ca2114-method-security-should-be-a-superset-of-type.md)|方法安全性應該是類型的超集|
 |[CA2116](../code-quality/ca2116-aptca-methods-should-only-call-aptca-methods.md)|APTCA 方法應該只呼叫 APTCA 方法|
 |[CA2117](../code-quality/ca2117-aptca-types-should-only-extend-aptca-base-types.md)|APTCA 類型應該只擴充 APTCA 基底類型|
 |[CA2122](../code-quality/ca2122-do-not-indirectly-expose-methods-with-link-demands.md)|不要間接公開具有連結要求的方法|
 |[CA2123](../code-quality/ca2123-override-link-demands-should-be-identical-to-base.md)|覆寫連結要求應該與基底相同|
-|[CA2124](../code-quality/ca2124-wrap-vulnerable-finally-clauses-in-outer-try.md)|易受攻擊的換行 finally 子句在外層 try 中|
-|[CA2126](../code-quality/ca2126-type-link-demands-require-inheritance-demands.md)|類型連結要求需要繼承要求|
+|[CA2124](../code-quality/ca2124-wrap-vulnerable-finally-clauses-in-outer-try.md)|必須將有弱點的 finally 子句包裝在外層 try 中|
+|[CA2126](../code-quality/ca2126-type-link-demands-require-inheritance-demands.md)|必須同時具有類型連結要求和繼承要求|
 |[CA2131](../code-quality/ca2131-security-critical-types-may-not-participate-in-type-equivalence.md)|安全性關鍵類型可能未參與類型等價|
-|[CA2132](../code-quality/ca2132-default-constructors-must-be-at-least-as-critical-as-base-type-default-constructors.md)|預設建構函式必須至少與基底型別的預設建構函式一樣關鍵|
-|[CA2133](../code-quality/ca2133-delegates-must-bind-to-methods-with-consistent-transparency.md)|必須將方法委派繫結具有一致透明度|
+|[CA2132](../code-quality/ca2132-default-constructors-must-be-at-least-as-critical-as-base-type-default-constructors.md)|預設建構函式至少必須和基底類型的預設建構函式一樣關鍵|
+|[CA2133](../code-quality/ca2133-delegates-must-bind-to-methods-with-consistent-transparency.md)|委派必須繫結至具有一致透明度的方法|
 |[CA2134](../code-quality/ca2134-methods-must-keep-consistent-transparency-when-overriding-base-methods.md)|覆寫基底方法時，方法必須保持一致的透明度|
-|[CA2137](../code-quality/ca2137-transparent-methods-must-contain-only-verifiable-il.md)|透明方法必須包含可驗證的 IL|
-|[CA2138](../code-quality/ca2138-transparent-methods-must-not-call-methods-with-the-suppressunmanagedcodesecurity-attribute.md)|透明方法不可以呼叫具有 SuppressUnmanagedCodeSecurity 屬性的方法|
-|[CA2140](../code-quality/ca2140-transparent-code-must-not-reference-security-critical-items.md)|透明程式碼絕不能參考安全性關鍵項目|
+|[CA2137](../code-quality/ca2137-transparent-methods-must-contain-only-verifiable-il.md)|透明方法必須只包含可驗證的 IL|
+|[CA2138](../code-quality/ca2138-transparent-methods-must-not-call-methods-with-the-suppressunmanagedcodesecurity-attribute.md)|透明方法不可以使用 SuppressUnmanagedCodeSecurity 屬性呼叫方法|
+|[CA2140](../code-quality/ca2140-transparent-code-must-not-reference-security-critical-items.md)|透明程式碼不可以參考安全性關鍵項目|
 |[CA2141](../code-quality/ca2141-transparent-methods-must-not-satisfy-linkdemands.md)|透明方法不可以滿足 Linkdemand|
-|[CA2146](../code-quality/ca2146-types-must-be-at-least-as-critical-as-their-base-types-and-interfaces.md)|類型必須至少和基底類型與介面一樣關鍵|
-|[CA2147](../code-quality/ca2147-transparent-methods-may-not-use-security-asserts.md)|透明方法不可以使用安全性判斷提示|
-|[CA2149](../code-quality/ca2149-transparent-methods-must-not-call-into-native-code.md)|透明方法不可以呼叫原生程式碼|
-|[CA2200](../code-quality/ca2200-rethrow-to-preserve-stack-details.md)|重新擲回以保存堆疊詳細資料|
-|[CA2202](../code-quality/ca2202-do-not-dispose-objects-multiple-times.md)|不要多次處置物件|
-|[CA2207](../code-quality/ca2207-initialize-value-type-static-fields-inline.md)|初始化實值類型的靜態欄位內嵌|
-|[CA2212](../code-quality/ca2212-do-not-mark-serviced-components-with-webmethod.md)|不要標記以 WebMethod 的 serviced 的元件|
+|[CA2146](../code-quality/ca2146-types-must-be-at-least-as-critical-as-their-base-types-and-interfaces.md)|類型至少必須和基底類型與介面一樣關鍵|
+|[CA2147](../code-quality/ca2147-transparent-methods-may-not-use-security-asserts.md)|CA2147：透明方法不可以使用安全性判斷提示|
+|[CA2149](../code-quality/ca2149-transparent-methods-must-not-call-into-native-code.md)|透明方法不可以呼叫機器碼|
+|[CA2200](../code-quality/ca2200-rethrow-to-preserve-stack-details.md)|必須重新擲回以保存堆疊詳細資料|
+|[CA2202](../code-quality/ca2202-do-not-dispose-objects-multiple-times.md)|不要多次處置物件的 Dispose 方法|
+|[CA2207](../code-quality/ca2207-initialize-value-type-static-fields-inline.md)|必須將實值類型的靜態欄位內嵌初始化|
+|[CA2212](../code-quality/ca2212-do-not-mark-serviced-components-with-webmethod.md)|不要以 WebMethod 標記 Serviced 元件|
 |[CA2213](../code-quality/ca2213-disposable-fields-should-be-disposed.md)|可處置的欄位應該受到處置|
 |[CA2214](../code-quality/ca2214-do-not-call-overridable-methods-in-constructors.md)|不要呼叫建構函式中的可覆寫方法|
-|[CA2216](../code-quality/ca2216-disposable-types-should-declare-finalizer.md)|可處置類型應該宣告完成項|
+|[CA2216](../code-quality/ca2216-disposable-types-should-declare-finalizer.md)|可處置的類型應該宣告完成項|
 |[CA2220](../code-quality/ca2220-finalizers-should-call-base-class-finalizer.md)|完成項應該呼叫基底類別完成項|
-|[CA2229](../code-quality/ca2229-implement-serialization-constructors.md)|實作序列化建構函式|
-|[CA2231](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md)|多載覆寫 ValueType.Equals 的等號比較運算子|
-|[CA2232](../code-quality/ca2232-mark-windows-forms-entry-points-with-stathread.md)|以 STAThread 標記 Windows Form 進入點|
-|[CA2235](../code-quality/ca2235-mark-all-non-serializable-fields.md)|標記所有不可序列化的欄位|
-|[CA2236](../code-quality/ca2236-call-base-class-methods-on-iserializable-types.md)|ISerializable 類型上呼叫基底類別方法|
-|[CA2237](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md)|Serializableattribute 標記 ISerializable 類型|
-|[CA2238](../code-quality/ca2238-implement-serialization-methods-correctly.md)|正確實作序列化方法|
+|[CA2229](../code-quality/ca2229-implement-serialization-constructors.md)|必須實作序列化建構函式|
+|[CA2231](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md)|在覆寫 ValueType.Equals 上多載等號運算子|
+|[CA2232](../code-quality/ca2232-mark-windows-forms-entry-points-with-stathread.md)|Windows Forms 進入點必須標記 STAThread|
+|[CA2235](../code-quality/ca2235-mark-all-non-serializable-fields.md)|必須標記所有不可序列化的欄位|
+|[CA2236](../code-quality/ca2236-call-base-class-methods-on-iserializable-types.md)|必須呼叫 ISerializable 類型上的基底類別方法|
+|[CA2237](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md)|ISerializable 類型必須標記 SerializableAttribute|
+|[CA2238](../code-quality/ca2238-implement-serialization-methods-correctly.md)|必須正確實作序列化方法|
 |[CA2240](../code-quality/ca2240-implement-iserializable-correctly.md)|必須正確實作 ISerializable|
-|[CA2241](../code-quality/ca2241-provide-correct-arguments-to-formatting-methods.md)|提供格式化方法的正確引數|
-|[CA2242](../code-quality/ca2242-test-for-nan-correctly.md)|正確測試 NaN|
+|[CA2241](../code-quality/ca2241-provide-correct-arguments-to-formatting-methods.md)|必須提供格式化方法的正確引數|
+|[CA2242](../code-quality/ca2242-test-for-nan-correctly.md)|必須正確測試 NaN|

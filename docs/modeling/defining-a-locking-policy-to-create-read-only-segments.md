@@ -8,13 +8,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 7f2a22a39b30d6a1910a95d5c30992bbd14dbc9a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: eb39e9d510d2da8a7e8b7ae9ac08ff655f334f2e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49828672"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53866487"
 ---
 # <a name="defining-a-locking-policy-to-create-read-only-segments"></a>定義鎖定原則來建立唯讀區段
 Visual Studio Visualization and Modeling SDK 的不變性 API 可讓程式鎖定的特定領域語言 (DSL) 模型的部分或全部，如此可以讀取但不是會變更。 無法使用這個唯讀選項，例如，讓使用者可以要求加上註解，並檢閱 DSL 模型的同事，但可以變更原始禁止。

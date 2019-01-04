@@ -1,9 +1,6 @@
 ---
 title: 適用於.NET Framework 進行平行擴充內部資訊 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - debug engines, internals [.NET Framework]
@@ -13,18 +10,18 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 84b4106509f62f1929f20283bc86c7930c22d39b
-ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
+ms.openlocfilehash: 792d2076f834423501b7f3f5ce4687bdb411da06
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39251081"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53820317"
 ---
 # <a name="parallel-extension-internals-for-the-net-framework"></a>適用於.NET Framework 的平行擴充內部資訊
 本章節描述內部型別、 方法和欄位的類別可協助您實作自訂的 parallel extensions 到.NET Framework 偵錯工具。  
   
 ## <a name="in-this-section"></a>本節內容  
- [Task 類別](../../extensibility/debugger/task-class-internal-members.md)  
+ [工作類別](../../extensibility/debugger/task-class-internal-members.md)  
  描述內部的資料成員的<xref:System.Threading.Tasks.Task?displayProperty=fullName>類別。  
   
  [TaskScheduler 類別](../../extensibility/debugger/taskscheduler-class-internal-members.md)  

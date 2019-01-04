@@ -1,9 +1,6 @@
 ---
-title: 如何： 以程式設計方式列印工作表
-ms.custom: ''
+title: HOW TO：以程式設計方式列印工作表
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,14 +14,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c1e473baccd6e4bb4de1c36d8888082baf40034b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2c5061c7b83173088a4031455f27d1332219b6f7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49876635"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53904548"
 ---
-# <a name="how-to-programmatically-print-worksheets"></a>如何： 以程式設計方式列印工作表
+# <a name="how-to-programmatically-print-worksheets"></a>HOW TO：以程式設計方式列印工作表
   您可以列印活頁簿中的任何工作表。  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
@@ -67,9 +64,7 @@ ms.locfileid: "49876635"
   
 ## <a name="see-also"></a>另請參閱  
  [使用工作表](../vsto/working-with-worksheets.md)   
- [如何： 以程式設計方式檢查工作表拼字](../vsto/how-to-programmatically-check-spelling-in-worksheets.md)   
+ [如何：以程式設計方式檢查工作表拼字](../vsto/how-to-programmatically-check-spelling-in-worksheets.md)   
  [工作表主項目](../vsto/worksheet-host-item.md)   
  [全域存取 Office 專案中的物件](../vsto/global-access-to-objects-in-office-projects.md)   
  [Office 方案中的選擇性參數](../vsto/optional-parameters-in-office-solutions.md)  
-  
-  

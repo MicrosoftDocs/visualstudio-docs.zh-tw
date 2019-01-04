@@ -1,9 +1,6 @@
 ---
 title: IDebugArrayObject::GetElements |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugArrayObject::GetElements
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7693c4ed3442cf86a0e310a6e2dd6d75655fcb69
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ec7d2a12360ef41d982fa0f6459ee3533c026358
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49904722"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53849426"
 ---
 # <a name="idebugarrayobjectgetelements"></a>IDebugArrayObject::GetElements
 取得陣列的所有項目的列舉程式。  
@@ -28,7 +25,7 @@ ms.locfileid: "49904722"
 ## <a name="syntax"></a>語法  
   
 ```cpp  
-HRESULT GetElements(   
+HRESULT GetElements(   
    IEnumDebugObjects** ppEnum  
 );  
 ```  

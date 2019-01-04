@@ -1,9 +1,6 @@
 ---
-title: 逐步解說： 在 [開始] 頁面中加入自訂的 XAML |Microsoft Docs
-ms.custom: ''
+title: 逐步解說：[開始] 頁面中加入自訂的 XAML |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - custom start page
@@ -14,14 +11,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b0b6d095ad9fb45d5cc9bd8979a267cb2ccf961f
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: c792f999164c08d3a723a16872df66e69197fe16
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46495618"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53929597"
 ---
-# <a name="walkthrough-add-custom-xaml-to-the-start-page"></a>逐步解說： 將自訂的 XAML 加入至 [開始] 頁面
+# <a name="walkthrough-add-custom-xaml-to-the-start-page"></a>逐步解說：將自訂的 XAML 加入至 [開始] 頁面
 本逐步解說示範如何建立自訂 Visual Studio 起始頁包含網頁瀏覽器。  
   
 ## <a name="adding-custom-xaml"></a>新增自訂的 XAML  
@@ -89,7 +86,7 @@ ms.locfileid: "46495618"
 1.  在 **工具 / 選項 / 環境**，選取**啟動**。 在 **自訂起始頁**清單中，選取您 *.xaml*檔案，然後按一下**確定**。  
   
 ## <a name="next-steps"></a>後續步驟  
- Visual Studio 起始頁現在包含網頁瀏覽器索引標籤和 MyButton 索引標籤會顯示索引標籤。您可以建立自訂啟動使用具有其他功能頁面*程式碼後置*模型中所示，新增自訂.dll[新增至 [入門] 頁面的使用者控制項](../extensibility/adding-user-control-to-the-start-page.md)。 您也可以發行至產生的.vsix 檔案與其他使用者共用自訂起始頁[Visual Studio 元件庫](http://go.microsoft.com/fwlink/?LinkID=123847)網站，或以另一個網站或網路共用。 如需詳細資訊，請參閱 < [Deploying Custom Start Pages](../extensibility/deploying-custom-start-pages.md)。  
+ Visual Studio 起始頁現在包含網頁瀏覽器索引標籤和 MyButton 索引標籤會顯示索引標籤。您可以建立自訂啟動使用具有其他功能頁面*程式碼後置*模型中所示，新增自訂.dll[新增至 [入門] 頁面的使用者控制項](../extensibility/adding-user-control-to-the-start-page.md)。 您也可以發行至產生的.vsix 檔案與其他使用者共用自訂起始頁[Visual Studio 元件庫](http://go.microsoft.com/fwlink/?LinkID=123847)網站，或以另一個網站或網路共用。 如需詳細資訊，請參閱 [Deploying Custom Start Pages](../extensibility/deploying-custom-start-pages.md)。  
   
 ## <a name="see-also"></a>另請參閱  
  [自訂起始頁](../ide/customizing-the-start-page-for-visual-studio.md)   

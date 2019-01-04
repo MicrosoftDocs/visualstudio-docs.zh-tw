@@ -8,13 +8,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 0127bac6ca74be626f9ce22fb60ad5258ae6c3c9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6e6c790677ea49ad784e7ff5d48326a1d5e216ad
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49822121"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53986163"
 ---
 # <a name="extend-your-dsl-by-using-mef"></a>使用 MEF 擴充您的 DSL
 
@@ -249,7 +248,7 @@ namespace MyMefExtension
 
 軌跡處理常式可以處理拖曳至圖表，來源內的任何位置，或在 Visual Studio 外部的物件。 下列範例可讓使用者從 Windows 檔案總管將檔案拖曳到圖表上。 它會建立包含檔案名稱的項目。
 
-您可以撰寫處理常式來處理來自其他 DSL 模型和 UML 模型拖曳的。 如需詳細資訊，請參閱 <<c0> [ 如何： 加入拖放處理常式](../modeling/how-to-add-a-drag-and-drop-handler.md)。
+您可以撰寫處理常式來處理來自其他 DSL 模型和 UML 模型拖曳的。 如需詳細資訊，請參閱[＜How to：新增拖放處理常式](../modeling/how-to-add-a-drag-and-drop-handler.md)。
 
 ```csharp
 using System.ComponentModel.Composition;

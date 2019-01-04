@@ -1,6 +1,5 @@
 ---
 title: ProjectType 項目 （Visual Studio 範本） |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3531eb6ee1c974b0978904572d47ae581d6a9cd0
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.openlocfilehash: 21826a432dbbebb6ae38db4ed5b1ca33d95cf9f6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53561875"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53941514"
 ---
 # <a name="projecttype-element-visual-studio-templates"></a>ProjectType 項目 （Visual Studio 範本）
 將分類的專案範本，使其出現在中指定的群組**新的專案**或**加入新項目** 對話方塊。  

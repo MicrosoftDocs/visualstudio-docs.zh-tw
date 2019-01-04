@@ -1,9 +1,6 @@
 ---
-title: 如何： 設定 Office 方案的組態資訊
-ms.custom: ''
+title: HOW TO：設定 Office 方案的組態資訊
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f0557301c00285a93cc173e872459d812c61fdca
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a97ad1147a109723ffcededf485ed7865e0697f9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49949457"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53916636"
 ---
-# <a name="how-to-set-up-configuration-information-for-an-office-solution"></a>如何： 設定 Office 方案的組態資訊
+# <a name="how-to-set-up-configuration-information-for-an-office-solution"></a>HOW TO：設定 Office 方案的組態資訊
   您可以使用組態檔來設定 Office 方案特有的設定。 您可以指定組件繫結原則、 遠端處理物件、 偵錯和追蹤設定等設定。  
   
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
@@ -50,5 +47,3 @@ ms.locfileid: "49949457"
  [適用於.NET Framework 的組態檔結構描述](/dotnet/framework/configure-apps/file-schema/index)   
  [設計和建立 Office 方案](../vsto/designing-and-creating-office-solutions.md)   
  [部署 Office 方案](../vsto/deploying-an-office-solution.md)  
-  
-  

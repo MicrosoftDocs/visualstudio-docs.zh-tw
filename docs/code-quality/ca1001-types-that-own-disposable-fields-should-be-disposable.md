@@ -1,8 +1,7 @@
 ---
-title: CA1001：具有可處置欄位的類型應該是可處置的
+title: CA1001：具有可處置欄位的類型應該為可處置
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA1001
@@ -19,20 +18,20 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: a73acee1c01aba7a638d27c0e772e4fbf5e19384
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: d935d6310e9160cec222ef71933f23f1abf379cc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45546931"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53908823"
 ---
-# <a name="ca1001-types-that-own-disposable-fields-should-be-disposable"></a>CA1001：具有可處置欄位的類型應該是可處置的
+# <a name="ca1001-types-that-own-disposable-fields-should-be-disposable"></a>CA1001：具有可處置欄位的類型應該為可處置
 
 |||
 |-|-|
 |TypeName|TypesThatOwnDisposableFieldsShouldBeDisposable|
 |CheckId|CA1001|
-|類別|Microsoft.Design|
+|分類|Microsoft.Design|
 |中斷變更|非分行-如果類型不是組件外部可見。<br /><br /> 中斷-如果組件外部可見的型別。|
 
 ## <a name="cause"></a>原因
@@ -56,8 +55,8 @@ ms.locfileid: "45546931"
 ## <a name="related-rules"></a>相關的規則
  [CA2213：可處置的欄位應該受到處置](../code-quality/ca2213-disposable-fields-should-be-disposed.md)
 
- [CA2216：可處置的類型應該宣告完成項](../code-quality/ca2216-disposable-types-should-declare-finalizer.md)
+ [CA2216:可處置類型應該宣告完成項](../code-quality/ca2216-disposable-types-should-declare-finalizer.md)
 
- [CA2215：Dispose 方法應該呼叫基底類別處置](../code-quality/ca2215-dispose-methods-should-call-base-class-dispose.md)
+ [CA2215:方法應該呼叫基底類別處置](../code-quality/ca2215-dispose-methods-should-call-base-class-dispose.md)
 
- [CA1049：具有原生資源的類型應該要可呼叫 Dispose 方法明確釋放資源](../code-quality/ca1049-types-that-own-native-resources-should-be-disposable.md)
+ [CA1049:擁有原生資源的類型應該是可處置的](../code-quality/ca1049-types-that-own-native-resources-should-be-disposable.md)

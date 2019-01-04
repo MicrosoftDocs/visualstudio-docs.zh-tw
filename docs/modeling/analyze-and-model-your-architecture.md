@@ -2,7 +2,6 @@
 title: 分析架構並製作架構模型
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
 ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio Ultimate, exploring code
@@ -32,12 +31,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0e9dd37f3db5bc231a831879d2620ad55a50c3b7
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: 986c32b0994e2b5ed0434e9d9a6b672dc0fbefff
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53740441"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53855045"
 ---
 # <a name="analyze-and-model-your-architecture"></a>分析架構並製作架構模型
 

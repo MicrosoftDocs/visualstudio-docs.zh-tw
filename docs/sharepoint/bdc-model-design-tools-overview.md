@@ -1,17 +1,12 @@
 ---
 title: BDC 模型設計工具概觀 |Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.BDC.Method_Details
 - VS.SharePointTools.BDC.Explorer
 - VS.SharePointTools.BDC.Diagram
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -28,12 +23,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6c5a799a245d2149161809977446d0c005dbe293
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e4b2a094d33088adb9aa3fc2c0fba953030c781b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49914498"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53923331"
 ---
 # <a name="bdc-model-design-tools-overview"></a>BDC 模型設計工具概觀
   您可以使用 [BDC 設計工具中，設計商務資料連接 (BDC) 模型**BDC 方法詳細資料**] 視窗中，而**BDC 總管**。  
@@ -76,20 +71,18 @@ ms.locfileid: "49914498"
 > [!NOTE]  
 >  原始的型別描述項的變更不會影響該型別描述項的複本。  
   
- 如需詳細資訊，請參閱 <<c0> [ 如何： 定義參數的型別描述元](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)。  
+ 如需詳細資訊，請參閱[＜How to：定義參數的型別描述元](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)。  
   
 ## <a name="see-also"></a>另請參閱
- [如何： 建立 BDC 模型](../sharepoint/how-to-create-a-bdc-model.md)   
- [如何： 將實體新增至模型](../sharepoint/how-to-add-an-entity-to-a-model.md)   
- [如何： 新增搜尋方法](../sharepoint/how-to-add-a-finder-method.md)   
- [如何： 加入特定搜尋方法](../sharepoint/how-to-add-a-specific-finder-method.md)   
- [如何： 新增建立者方法](../sharepoint/how-to-add-a-creator-method.md)   
- [如何： 加入刪除者方法](../sharepoint/how-to-add-a-deleter-method.md)   
- [如何： 加入更新者方法](../sharepoint/how-to-add-an-updater-method.md)   
+ [如何：建立 BDC 模型](../sharepoint/how-to-create-a-bdc-model.md)   
+ [如何：將實體新增至模型](../sharepoint/how-to-add-an-entity-to-a-model.md)   
+ [如何：新增搜尋方法](../sharepoint/how-to-add-a-finder-method.md)   
+ [如何：新增特定搜尋方法](../sharepoint/how-to-add-a-specific-finder-method.md)   
+ [如何：新增建立者方法](../sharepoint/how-to-add-a-creator-method.md)   
+ [如何：新增刪除者方法](../sharepoint/how-to-add-a-deleter-method.md)   
+ [如何：新增更新者方法](../sharepoint/how-to-add-an-updater-method.md)   
  [建立實體之間的關聯](../sharepoint/creating-an-association-between-entities.md)   
- [逐步解說： 使用商務資料在 SharePoint 中建立外部清單](../sharepoint/walkthrough-creating-an-external-list-in-sharepoint-by-using-business-data.md)   
+ [逐步解說：使用商務資料在 SharePoint 中建立外部清單](../sharepoint/walkthrough-creating-an-external-list-in-sharepoint-by-using-business-data.md)   
  [將商務資料整合到 SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)   
  [建立 business data connectivity 模型](../sharepoint/creating-a-business-data-connectivity-model.md)   
  [設計商務資料連接模型](../sharepoint/designing-a-business-data-connectivity-model.md)  
-  
- 

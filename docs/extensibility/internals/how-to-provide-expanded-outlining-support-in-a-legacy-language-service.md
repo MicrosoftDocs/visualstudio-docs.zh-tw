@@ -1,9 +1,6 @@
 ---
 title: 提供語言服務中的支援 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], outlining support
@@ -15,14 +12,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 31ae8a6aeba28fbe90e68305f2b48021b4327c26
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: a26d9dbc67f502e30968f3db89834b12e02ae3e5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39511385"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53965547"
 ---
-# <a name="how-to-provide-expanded-outlining-support-in-a-legacy-language-service"></a>如何： 提供展開大綱的支援，在舊版語言服務
+# <a name="how-to-provide-expanded-outlining-support-in-a-legacy-language-service"></a>HOW TO：提供展開大綱的支援，在舊版語言服務
 有兩個選項用於擴充大綱的支援，您只能支援的語言**摺疊至定義**命令。 您可以將控制編輯器的大綱區域，並將用戶端控制的大綱區域。  
   
 ## <a name="adding-editor-controlled-outline-regions"></a>新增控制編輯器的大綱區域  
@@ -56,4 +53,4 @@ ms.locfileid: "39511385"
     > [!NOTE]
     >  當您呼叫<xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextManager.CreateHiddenTextSession%2A>，您可以指定隱藏的文字，用戶端 (也就是<xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextClient>物件)。 此用戶端通知時隱藏的文字，或是大綱區域為展開或摺疊，只要使用者。  
   
-4.  呼叫<xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession.AddHiddenRegions%2A>結構) 參數： 指定的值<xref:Microsoft.VisualStudio.TextManager.Interop.HIDDEN_REGION_TYPE>中`iType`的成員<xref:Microsoft.VisualStudio.TextManager.Interop.NewHiddenRegion>結構，以指出您要建立大綱區域，而不是隱藏的區域。 指定的區域是用戶端控制，或以控制編輯器`dwBehavior`隸屬<xref:Microsoft.VisualStudio.TextManager.Interop.NewHiddenRegion>結構。 智慧型大綱實作可以包含各種編輯器和用戶端控制大綱區域。 指定大綱區域摺疊時，例如 "..."，在顯示的橫幅文字`pszBanner`隸屬<xref:Microsoft.VisualStudio.TextManager.Interop.NewHiddenRegion>結構。 編輯器的預設橫幅文字的隱藏區域為"..."。
+4.  呼叫<xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession.AddHiddenRegions%2A>結構) 參數：指定的值為<xref:Microsoft.VisualStudio.TextManager.Interop.HIDDEN_REGION_TYPE>中`iType`隸屬<xref:Microsoft.VisualStudio.TextManager.Interop.NewHiddenRegion>結構，以指出您要建立大綱區域，而不是隱藏的區域。 指定的區域是用戶端控制，或以控制編輯器`dwBehavior`隸屬<xref:Microsoft.VisualStudio.TextManager.Interop.NewHiddenRegion>結構。 智慧型大綱實作可以包含各種編輯器和用戶端控制大綱區域。 指定大綱區域摺疊時，例如 "..."，在顯示的橫幅文字`pszBanner`隸屬<xref:Microsoft.VisualStudio.TextManager.Interop.NewHiddenRegion>結構。 編輯器的預設橫幅文字的隱藏區域為"..."。

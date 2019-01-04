@@ -1,9 +1,6 @@
 ---
 title: IPropertyProxyEESide::InPlaceUpdateObject |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IPropertyProxyEESide::InPlaceUpdateObject
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ed69657823ac5e3ae821304aa6ffdbee55f39a70
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 940f0b2eb711057cdfbae306028849cf015ed6e2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49847613"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53862883"
 ---
 # <a name="ipropertyproxyeesideinplaceupdateobject"></a>IPropertyProxyEESide::InPlaceUpdateObject
 使用指定的資料物件更新物件的資料，並傳回新的資料物件，表示物件的新資料。  

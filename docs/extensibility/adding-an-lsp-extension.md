@@ -1,9 +1,6 @@
 ---
 title: 新增語言伺服器通訊協定延伸模組 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/14/2017
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 52f12785-1c51-4c2c-8228-c8e10316cd83
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4c583b9af65610340886794c03cb92be945b73d4
-ms.sourcegitcommit: c7b16358a5d6f7ea1dd2f70a6ac2a8266efa9c15
+ms.openlocfilehash: ad112d34c8f23a7738137f148f00a38a27335424
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/14/2018
-ms.locfileid: "53425860"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53966556"
 ---
 # <a name="add-a-language-server-protocol-extension"></a>新增語言伺服器通訊協定延伸模組
 
@@ -313,12 +310,19 @@ namespace MockLanguageExtension
       }
    }
    ```
+
 4. 加入.pkgdef 檔案至專案 （加入新的文字檔，並將副檔名變更為.pkgdef）。 Pkgdef 檔案應該包含這項資訊：
 
    ```xml
     [$RootKey$\OpenFolder\Settings\VSWorkspaceSettings\[settings-name]]
     @="$PackageFolder$\[settings-file-name].json"
    ```
+
+    範例：
+    ```xml
+    [$RootKey$\OpenFolder\Settings\VSWorkspaceSettings\MockLanguageExtension]
+    @="$PackageFolder$\MockLanguageExtensionSettings.json"
+    ```
 
 5. .Pkgdef 檔上按一下滑鼠右鍵，然後選取**屬性**。 變更**建置**動作來**內容**並**Include in VSIX**屬性設為 true。
 

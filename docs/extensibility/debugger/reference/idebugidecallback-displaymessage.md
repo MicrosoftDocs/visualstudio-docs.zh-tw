@@ -1,9 +1,6 @@
 ---
 title: IDebugIDECallback::DisplayMessage |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - IDebugIDECallback::DisplayMessage
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 24fcea3a3fab79d5fc059bbb333eb1449967b3d0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3ae5bdcc1f9d8c2be010fc0e9493edd7b623ba8b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49911365"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53923034"
 ---
 # <a name="idebugidecallbackdisplaymessage"></a>IDebugIDECallback::DisplayMessage
 將指定的訊息字串傳送至偵錯工具的 [輸出] 視窗中。  

@@ -2,7 +2,6 @@
 title: 計算程式碼度量
 ms.date: 11/02/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 helpviewer_keywords:
 - code metrics [Visual Studio]
@@ -11,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b56db0d54e198e0d6d25b19db528ac979a3d44b4
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 4be2b3672741d0bcae64085d1140e5c2ae2bbf63
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53056768"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53855568"
 ---
 # <a name="code-metrics-values"></a>程式碼度量值
 
@@ -24,7 +23,7 @@ ms.locfileid: "53056768"
 
 開發人員可以使用 Visual Studio 來產生程式碼度量資料，用來計算的複雜度和維護的 managed 程式碼。 整個解決方案或單一專案，可以產生程式碼度量資料。
 
-如需有關如何在 Visual Studio 中產生程式碼度量資料的資訊，請參閱 <<c0> [ 如何： 產生程式碼度量資料](../code-quality/how-to-generate-code-metrics-data.md)。
+如需有關如何在 Visual Studio 中產生程式碼度量資料的資訊，請參閱[How to:產生程式碼度量資料](../code-quality/how-to-generate-code-metrics-data.md)。
 
 ## <a name="software-measurements"></a>軟體的度量
 
@@ -57,5 +56,5 @@ Windows Form 的產生程式碼不會進行忽略，因為它是開發人員可�
 
 ## <a name="next-steps"></a>後續步驟
 
-- [如何： 產生程式碼度量資料](../code-quality/how-to-generate-code-metrics-data.md)
+- [如何：產生程式碼度量資料](../code-quality/how-to-generate-code-metrics-data.md)
 - [使用程式碼度量結果視窗](../code-quality/working-with-code-metrics-data.md)

@@ -1,9 +1,6 @@
 ---
 title: InfoPath 方案
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -21,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4ae2882cbf38349eac57f1dfb731cc7d717769a4
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 0d346437d6d520ce3beed564c82895ef9f4d1be4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50670854"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53864943"
 ---
 # <a name="infopath-solutions"></a>InfoPath 方案
   Visual Studio 提供的專案範本，可用來建立 Microsoft Office InfoPath 2013 與 InfoPath 2010 的 VSTO 增益集。 Office 2016 不提供 InfoPath。  
@@ -64,11 +61,9 @@ ms.locfileid: "50670854"
  [開始進行程式設計 VSTO 增益集](../vsto/getting-started-programming-vsto-add-ins.md)   
  [Office 方案開發概觀&#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)   
  [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md)   
- [如何： 在 Visual Studio 中建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)   
+ [如何：在 Visual Studio 中建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)   
  [程式 VSTO 增益集](../vsto/programming-vsto-add-ins.md)   
  [在 Office 方案中撰寫程式碼](../vsto/writing-code-in-office-solutions.md)   
  [Office 主要 interop 組件](../vsto/office-primary-interop-assemblies.md)   
  [Office UI 自訂](../vsto/office-ui-customization.md)   
  [中的 Office 程式開發的 InfoPath 2010](http://go.microsoft.com/fwlink/?LinkId=199012)  
-  
-  

@@ -1,9 +1,6 @@
 ---
 title: 將命令加入至工具列 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 4f8cfba8-0653-4ccc-a2da-acf064c83aa7
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9f6bf8e8dffde406b3c11ebf043246f5b277446d
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: a5c815ebdbe91413df7694fefdff547c2d6c966b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39154280"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53901963"
 ---
 # <a name="add-commands-to-toolbars"></a>將命令加入至工具列
 工具列是水平或垂直的區域，其中包含繫結至命令的按鈕。 您可以將您自己的命令加入 Visual Studio 中許多不同的 windows 上的工具列： Visual Studio 主視窗、 [方案總管] 中和您自己的自訂工具視窗。  

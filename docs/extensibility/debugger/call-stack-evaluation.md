@@ -1,9 +1,6 @@
 ---
 title: 呼叫堆疊評估 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], call stack evaluation
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f59ce938d2b37c5967856dc64c9116fa9a695dbe
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: d4d17c48f98a1f9bb0632df76ff5b04b0bdf5403
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39151430"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53851218"
 ---
 # <a name="call-stack-evaluation"></a>呼叫堆疊評估
 若要檢視呼叫堆疊的堆疊框架處於中斷模式時，您必須實作[EnumFrameInfo](../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md)方法。  

@@ -1,9 +1,6 @@
 ---
 title: Microsoft 說明檢視器 SDK |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 620d7dcd-d462-475e-a449-fbfa06ff12c5
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: af324b141815813aec9eaadfcd9982689fdeb467
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: 0a4ec2f9fa5fbd6e0fbbdd57bf6de6f2c9dfb0fa
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51000343"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53987047"
 ---
 # <a name="microsoft-help-viewer-sdk"></a>Microsoft Help Viewer SDK
 
@@ -142,7 +139,7 @@ Visual Studio 品牌封裝支援的控制項：
 
 4.  加入程式碼片段：  `<CodeSnippet EnableCopyCode="true" Language="CSharp" ContainsMarkup="false" DisplayLanguage="C#" > a block of code </CodeSnippet>`
 
-5.  加入程式碼特定語言的文字：`<LanguageSpecificText devLangcs="CS" devLangvb="VB" devLangcpp="C++" devLangnu="F#" />`請注意，`devLangnu=`可讓您輸入其他語言。 比方說，`devLangnu="Fortran"`顯示 Fortran 時程式碼片段 DisplayLanguage = Fortran
+5.  加入程式碼特定語言的文字：`<LanguageSpecificText devLangcs="CS" devLangvb="VB" devLangcpp="C++" devLangnu="F#" />` 請注意，`devLangnu=`可讓您輸入其他語言。 比方說，`devLangnu="Fortran"`顯示 Fortran 時程式碼片段 DisplayLanguage = Fortran
 
 6.  新增頁面的連結： `<a href="ms-xhelp://?Id=ContosoTopic1">Main Topic</a>`
 
@@ -283,15 +280,15 @@ F1 流程圖表：
 
 當說明檢視器的預設說明內容來源設定為線上 （啟動瀏覽器中）：
 
--   Visual Studio 合作夥伴 (VSP) 功能發出 F1 屬性包 （屬性包 prefix.keyword 和線上 URL 在登錄中找到的前置詞） 的值： F1 傳送 VSP URL + 參數至瀏覽器。
+-   Visual Studio 合作夥伴 (VSP) 功能會發出至 F1 屬性包 （屬性包 prefix.keyword 和線上 URL 在登錄中找到的前置詞） 的值：F1 傳送 VSP URL + 參數給瀏覽器。
 
--   Visual Studio 功能 （語言編輯器，Visual Studio 特定的功能表項目等）： F1 將 Visual Studio URL 傳送給瀏覽器。
+-   Visual Studio 功能 （語言編輯器、 Visual Studio 特定的功能表項目）：F1 會將 Visual Studio URL 傳送給瀏覽器。
 
 當說明檢視器的預設說明內容來源設定為本機說明 （Help Viewer 中啟動）：
 
--   F1 屬性包與本機存放區索引之間的關鍵字相符的 VSP 功能 (也就是屬性包 prefix.keyword = 本機存放區索引中找到的值): F1 呈現說明檢視器中的主題。
+-   F1 屬性包與本機存放區索引之間的關鍵字相符的 VSP 功能 (也就是屬性包 prefix.keyword = 本機存放區索引中找到的值):F1 轉譯說明檢視器中的主題。
 
--   Visual Studio 功能 （沒有的選項來覆寫所發出的 Visual Studio 功能的屬性包 VSP）： F1 呈現 Visual Studio 中的主題說明檢視器。
+-   Visual Studio 功能 （沒有的選項來覆寫所發出的 Visual Studio 功能的屬性包 VSP）：F1 呈現 Visual Studio 中的主題說明檢視器。
 
 設定下列登錄值以啟用 F1 後援廠商說明內容。 F1 後援表示線上說明檢視器設定為尋找 F1 說明內容，而且廠商內容會在本機安裝到使用者的硬碟機。 說明檢視器應該查看本機說明內容，即使預設設定是取得線上說明。
 
@@ -325,7 +322,7 @@ F1 流程圖表：
 
 **剖析的基底原生命名空間**
 
-若要開啟基底的原生命名空間剖析，在登錄中新增 DWORD 的名稱： BaseNativeNamespaces 並設定其值為 1 （下他們想要支援目錄索引鍵）。  例如，如果您想要使用 Visual Studio 類別目錄，您無法將金鑰新增至路徑：
+若要開啟基底剖析的原生命名空間，在登錄中新增 DWORD 的名稱：BaseNativeNamespaces 並設定其值為 1 （下他們想要支援目錄索引鍵）。  例如，如果您想要使用 Visual Studio 類別目錄，您無法將金鑰新增至路徑：
 
 HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Help\v2.3\Catalogs\VisualStudio15
 
@@ -343,7 +340,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Help\v2.3\Catalogs\VisualStudi
 
 新增下列登錄機碼和值：
 
-HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\15.0\Dynamic 說明鍵： 零售值中的 顯示偵錯輸出: 是
+HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\15.0\Dynamic 說明鍵：零售值中顯示偵錯的輸出：[是]
 
 在 IDE 中，[說明] 功能表項目之下，選取 [偵錯協助內容]
 
@@ -374,7 +371,7 @@ Visual Studio 版本包含幾個不同的 Visual Studio 產品，包括適用於
 
 安裝商標套件，其中包含說明檢視器的產品。  適用於 Visual Studio 產品：
 
--   後援的品牌封裝 (Branding_\<地區設定 >.mshc) 安裝說明檢視器 2.3 應用程式根目錄中 (範例： C:\Program Files (x86) \Microsoft Help Viewer\v2.3) 說明檢視器語言組件。  這適用於未安裝任一產品品牌封裝的情況下 （已安裝任何內容） 或已安裝的品牌封裝已損毀的位置。  使用應用程式根後援品牌封裝時，會忽略的 Visual Studio 項目 （標誌和意見反應）。
+-   後援的品牌封裝 (Branding_\<地區設定 >.mshc) 安裝說明檢視器 2.3 應用程式根目錄中 (範例：C:\Program 檔案 (x86) \Microsoft Help Viewer\v2.3) 說明檢視器語言組件。  這適用於未安裝任一產品品牌封裝的情況下 （已安裝任何內容） 或已安裝的品牌封裝已損毀的位置。  使用應用程式根後援品牌封裝時，會忽略的 Visual Studio 項目 （標誌和意見反應）。
 
 -   Visual Studio 內容安裝時從內容套件服務，品牌封裝也會安裝 （適用於第一個時間內容的安裝案例）。  品牌封裝更新時下, 一步 的內容更新或其他封裝安裝動作發生時，就是會安裝的更新。
 
@@ -445,7 +442,7 @@ Branding.xml 檔案包含用於以一致的方式呈現在主題中的特定項�
 | ExpandText | Expand |
 | CollapseText | 摺疊 |
 | 功能： | **CodeSnippet** |
-| 用法: | 程式碼片段控制項文字。  注意: 「 非中斷 」 空間的程式碼片段內容將會變更至空間。 |
+| 用法: | 程式碼片段控制項文字。  注意:「 非中斷 」 空間的程式碼片段內容將會變更至空間。 |
 | **目** | **值** |
 | CopyToClipboard | 複製至剪貼簿 |
 | ViewColorizedText | 檢視彩色樣式 |
@@ -615,7 +612,7 @@ Visual Studio 標誌，以及其他圖形，則會顯示 visual Studio 內容。
 
 注意： 在實作範例中中,，我們都納入商標的套件。 這很重要的包含，以便取得所需的 Visual Studio 內容呈現項目和內容的行為。
 
-範例 [HelpContentSetup.msha] 檔案: (取代 「 內容會設定名稱 1 」 和 「 內容集名稱 2 」 等等，都是與您的檔案名稱。)
+範例 [HelpContentSetup.msha] 檔案：(取代 「 內容會設定名稱 1 」 和 「 內容集名稱 2 」 等等，都是與您的檔案名稱。)
 
 ```html
 <html>
@@ -725,11 +722,11 @@ Visual Studio 標誌，以及其他圖形，則會顯示 visual Studio 內容。
 
 - HKLM\SOFTWARE\Wow6432Node\Microsoft\Help\v2.3\Catalogs\VisualStudio15
 
-   索引鍵： LocationPath 字串值： C:\ProgramData\Microsoft\HelpLibrary2\Catalogs\VisualStudio15\
+   關鍵字：LocationPath 字串值：C:\ProgramData\Microsoft\HelpLibrary2\Catalogs\VisualStudio15\
 
 - HKLM\SOFTWARE\Wow6432Node\Microsoft\Help\v2.3\Catalogs\VisualStudio15\en-US
 
-   索引鍵： CatalogName 字串值：[!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)]文件
+   關鍵字：CatalogName 字串值：[!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)] 文件
 
 **建立專案**
 
@@ -796,7 +793,7 @@ Visual Studio 標誌，以及其他圖形，則會顯示 visual Studio 內容。
 
 7. 新增下列登錄機碼：
 
-    HKLM\SOFTWARE\Wow6432Node\Microsoft\Help\v2.3\Catalogs\VisualStudio15Key: LocationPath 字串值：
+    HKLM\SOFTWARE\Wow6432Node\Microsoft\Help\v2.3\Catalogs\VisualStudio15Key:LocationPath 字串值：
 
     ISO shell:
 
@@ -806,7 +803,7 @@ Visual Studio 標誌，以及其他圖形，則會顯示 visual Studio 內容。
 
     C:ProgramDataMicrosoftHelpLibrary2CatalogsVisualStudio15en-美國
 
-    索引鍵： CatalogName 字串值：[!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)]文件。 ISO 殼層，這是您目錄的名稱。
+    關鍵字：CatalogName 字串值：[!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)] 文件。 ISO 殼層，這是您目錄的名稱。
 
 8. 將您的內容 （cab 或 MSHC 和 MSHA） 複製到本機資料夾。
 

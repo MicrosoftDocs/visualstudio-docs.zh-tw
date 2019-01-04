@@ -1,16 +1,11 @@
 ---
 title: 沙箱化方案考量 |Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.Project.SandboxedSolutions
 - VS.SharePointTools.Security.SandboxedSolutions
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -23,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2f9a5d0c439d619864cc6e9559608e3c3891fc7e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4e26c87d3280ca3cfdd44baa11b09bd007eaca08
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49890032"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53862090"
 ---
 # <a name="sandboxed-solution-considerations"></a>沙箱化方案考量
   *沙箱化方案*是可讓網站集合的使用者上傳他們自己的自訂程式碼解決方案的 Microsoft SharePoint 2010 中的功能。 常見的沙箱化方案是上傳他們自己的 Web 組件的使用者。  
@@ -145,4 +140,3 @@ ms.locfileid: "49890032"
 ## <a name="see-also"></a>另請參閱
  [差異沙箱化方案與伺服器陣列解決方案](../sharepoint/differences-between-sandboxed-and-farm-solutions.md)   
  [開發 SharePoint 方案](../sharepoint/developing-sharepoint-solutions.md)  
-  

@@ -2,7 +2,6 @@
 title: XSLT 預設範本
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: conceptual
 ms.assetid: 773dd34e-67d3-4997-8df9-b71e7f880d88
 author: gewarren
@@ -10,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b50a7457ddbae24f2a00e4c631371cb2aeb1169
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 2eb71cf0a94f02e5de8af9e61bdc947694920929
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34693951"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53908380"
 ---
 # <a name="xslt-default-templates"></a>XSLT 預設範本
 

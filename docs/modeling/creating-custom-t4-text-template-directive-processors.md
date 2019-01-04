@@ -10,13 +10,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 0216fab44ddc52c2d01c27365449377fb899e1a6
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 5db3772b782af666023f39fd833e18ba2092c176
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859649"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53989146"
 ---
 # <a name="creating-custom-t4-text-template-directive-processors"></a>建立自訂 T4 文字範本指示詞處理器
 
@@ -64,9 +63,9 @@ ms.locfileid: "47859649"
 
 -   `string GetClassCodeForProcessingRun()` -傳回方法、 屬性和範本程式碼可以使用其他宣告的程式的碼。 若要這樣做最簡單的方式是建置包含 C# 或 Visual Basic 程式碼的字串。 若要讓您指示詞處理器能夠呼叫使用任何 CLR 語言的範本，您可以為 CodeDom 樹狀結構建構陳述式，然後傳回 序列化範本所使用的語言中的樹狀結構的結果。
 
--   如需詳細資訊，請參閱 <<c0> [ 逐步解說： 建立自訂指示詞處理器](../modeling/walkthrough-creating-a-custom-directive-processor.md)。
+-   如需詳細資訊，請參閱[逐步解說：建立自訂指示詞處理器](../modeling/walkthrough-creating-a-custom-directive-processor.md)。
 
 ## <a name="see-also"></a>另請參閱
 
 - [部署自訂指示詞處理器](../modeling/deploying-a-custom-directive-processor.md)說明如何註冊自訂指示詞處理器。
-- [逐步解說： 建立自訂指示詞處理器](../modeling/walkthrough-creating-a-custom-directive-processor.md)描述如何建立自訂指示詞處理器、 如何進行註冊，並測試指示詞處理器，以及如何格式化為 HTML 輸出檔案。
+- [逐步解說：建立自訂指示詞處理器](../modeling/walkthrough-creating-a-custom-directive-processor.md)描述如何建立自訂指示詞處理器、 如何進行註冊，並測試指示詞處理器，以及如何格式化為 HTML 輸出檔案。

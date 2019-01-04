@@ -2,7 +2,6 @@
 title: 建立應用程式模型
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
 ms.topic: conceptual
 f1_keywords:
 - vs.teamarch.common.commentlink.properties
@@ -23,12 +22,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 098c0f50f24e216a407343ceb446d0073370fed1
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: f608246af6311c03f4ed5ee31d4588ce2aa1a7ea
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53740136"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53942680"
 ---
 # <a name="create-models-for-your-app"></a>建立應用程式模型
 

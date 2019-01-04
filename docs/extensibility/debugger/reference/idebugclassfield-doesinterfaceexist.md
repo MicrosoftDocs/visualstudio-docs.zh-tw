@@ -1,9 +1,6 @@
 ---
 title: IDebugClassField::DoesInterfaceExist |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugClassField::DoesInterfaceExist
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8a4fc4ca6c95d6e4b1b8367f9820ef742b52bdeb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8d54afbe331eaf80fedb2dc102f831fcc616fde7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49833540"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53871352"
 ---
 # <a name="idebugclassfielddoesinterfaceexist"></a>IDebugClassField::DoesInterfaceExist
 決定是否特定介面會定義在類別中。  
@@ -28,7 +25,7 @@ ms.locfileid: "49833540"
 ## <a name="syntax"></a>語法  
   
 ```cpp  
-HRESULT DoesInterfaceExist(   
+HRESULT DoesInterfaceExist(   
    LPCOLESTR pszInterfaceName  
 );  
 ```  

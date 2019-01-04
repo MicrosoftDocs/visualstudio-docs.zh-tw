@@ -1,9 +1,6 @@
 ---
 title: 提升 VSTO 增益集的效能
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -13,12 +10,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 65e61f03893f171bd824132665a47f5e6361391f
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: fc4a65a0b09a706eebad04c90e1779d00c7f3801
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53804613"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53937279"
 ---
 # <a name="improve-the-performance-of-a-vsto-add-in"></a>提升 VSTO 增益集的效能
   最佳化您為 Office 應用程式建立的 VSTO 增益集，您可以提供使用者更好的體驗，讓他們快速地啟動、關閉、開啟項目及執行其他工作。 如果是 Outlook 適用的 VSTO 增益集，您還可以減少 VSTO 增益集因為效能不佳而停用的機率。 實作下列策略可以提升 VSTO 增益集的效能：

@@ -1,9 +1,6 @@
 ---
 title: IDebugOutputStringEvent2::GetString |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugOutputStringEvent2::GetString
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3e1f0878165dc450ed482fa776988e6237db30da
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1930c20f1ffd44b0dfa574b46753d96139caf110
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49880074"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53985546"
 ---
 # <a name="idebugoutputstringevent2getstring"></a>IDebugOutputStringEvent2::GetString
 取得可顯示的訊息。  
@@ -28,13 +25,13 @@ ms.locfileid: "49880074"
 ## <a name="syntax"></a>語法  
   
 ```cpp  
-HRESULT GetString(   
+HRESULT GetString(   
    BSTR* pbstrString  
 );  
 ```  
   
 ```csharp  
-int GetString(   
+int GetString(   
    out string pbstrString  
 );  
 ```  

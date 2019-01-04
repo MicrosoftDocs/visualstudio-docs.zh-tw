@@ -2,7 +2,6 @@
 title: 程式碼分析規則集參考
 ms.date: 04/04/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 helpviewer_keywords:
 - code analysis, rule sets reference
@@ -11,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a712fa284cb9247d5de329b026bb3900878c99a5
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: e4849584e1a772416959f46816ee52e67997851d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53058607"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53948416"
 ---
 # <a name="code-analysis-rule-set-reference"></a>程式碼分析規則集參考
 

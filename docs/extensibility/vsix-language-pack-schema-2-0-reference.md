@@ -1,9 +1,6 @@
 ---
 title: VSIX 語言套件結構描述 2.0 參考 |Microsoft Docs
-ms.custom: ''
 ms.date: 10/26/2017
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - language pack
@@ -16,12 +13,12 @@ author: dgriffen
 manager: douge
 ms.workload:
 - dagriffe
-ms.openlocfilehash: 3c1dfa0e3de06bcd6c61472a085ea3c4cdeeac27
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.openlocfilehash: 73429f0ec41285dbab995a8a09411e5197bd0892
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51780785"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53889172"
 ---
 # <a name="vsix-language-pack-schema-20-reference"></a>VSIX 語言套件結構描述 2.0 參考
 

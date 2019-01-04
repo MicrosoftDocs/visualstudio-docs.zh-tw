@@ -2,7 +2,6 @@
 title: 品質工具疑難排解
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: troubleshooting
 helpviewer_keywords:
 - Visual Studio ALM, developing the application
@@ -12,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c8ba75170f0641ae4d0a436253f694f1af93641
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 9627df92c6accaaf1eb3fd0ab78af2856d835c51
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31921549"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53924835"
 ---
 # <a name="troubleshooting-quality-tools"></a>品質工具疑難排解
 

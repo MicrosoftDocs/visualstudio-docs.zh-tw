@@ -1,9 +1,6 @@
 ---
 title: HOW TO：將功能區設計工具功能區匯出至功能區 XML
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -21,12 +18,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 370c2e1d08c47b8a5068d0227426d2b4083590a5
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: c1f50ec718e1f3a6c9780d956f9b845abd890bb1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53646928"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53894057"
 ---
 # <a name="how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml"></a>HOW TO：將功能區設計工具功能區匯出至功能區 XML
   **功能區 （視覺化設計工具）** 項目不支援所有可能的功能區自訂類型。 若要進階方式自訂功能區，您可以將設計工具功能區匯出至功能區 XML，並直接編輯 XML。  
@@ -73,5 +70,3 @@ ms.locfileid: "53646928"
  [功能區 XML](../vsto/ribbon-xml.md)   
  [逐步解說：使用功能區設計工具建立自訂的索引標籤](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)   
  [逐步解說：使用功能區 XML 建立自訂的索引標籤](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md)  
-  
-  

@@ -14,29 +14,27 @@ caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 99a2da342afa22f18841556de5e7ca290b13d42a
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.openlocfilehash: 8063c9ff07fc3c8159ea897b0120a1b8a538fa4a
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51761674"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53802442"
 ---
 # <a name="profiling-aspnet-load-tests"></a>對 ASP.NET 負載測試進行程式碼剖析
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-您可以從針對 ASP.NET 網站專案執行的自動化 [!INCLUDE[TCMext](../includes/tcmext-md.md)] 網路測試來收集程式碼剖析資料。 您可以收集取樣和階層互動資料。 如需詳細資訊，請參閱下列主題：  
-  
- [(NIB) 如何︰從 Web 效能測試編輯器在 Web 應用程式執行效能工作階段 ((NIB) How to: Run a Performance Session on a Web Application from the Web Performance Test Editor)](http://msdn.microsoft.com/en-us/d14e0a27-33cc-4e4e-8792-fe03e50d51e1)  
-  
- [如何：在 Visual Studio 中使用測試設定來設定 ASP.NET 分析工具以進行負載測試](~/E:/Repos/visualstudio-docs-pr/docs/test/how-to-configure-aspnet-profiler-for-load-tests-using-test-settings.md)  
-  
- [使用 Microsoft Visual Studio 執行系統測試](http://msdn.microsoft.com/library/19fae5c4-5798-4c4c-b531-3e8f901b1130)。  
-  
-## <a name="see-also"></a>另請參閱  
- [了解取樣資料值](../profiling/understanding-sampling-data-values.md)   
- [使用效能規則分析資料](../profiling/using-performance-rules-to-analyze-data.md)   
- [取樣方法資料檢視](../profiling/profiler-sampling-method-data-views.md)   
- [階層互動檢視](../profiling/tier-interactions-view.md)
+您可以從針對 ASP.NET 網站專案執行的自動化 [!INCLUDE[TCMext](../includes/tcmext-md.md)] 網路測試來收集程式碼剖析資料。 您可以收集取樣和階層互動資料。 如需詳細資訊，請參閱下列主題：
 
+ [如何：執行效能工作階段的 Web 應用程式從 Web 效能測試編輯器](/previous-versions/ff356203(v=vs.100))
 
+ [如何：在 Visual Studio 中使用測試設定來設定 ASP.NET 分析工具以進行負載測試](/visualstudio/test/how-to-configure-aspnet-profiler-for-load-tests-using-test-settings?view=vs-2015)
 
+ [使用 Microsoft Visual Studio 執行系統測試](http://msdn.microsoft.com/library/19fae5c4-5798-4c4c-b531-3e8f901b1130)。
+
+## <a name="see-also"></a>請參閱
+
+- [了解取樣資料值](../profiling/understanding-sampling-data-values.md)
+- [使用效能規則分析資料](../profiling/using-performance-rules-to-analyze-data.md)
+- [取樣方法資料檢視](../profiling/profiler-sampling-method-data-views.md)
+- [階層互動檢視](../profiling/tier-interactions-view.md)

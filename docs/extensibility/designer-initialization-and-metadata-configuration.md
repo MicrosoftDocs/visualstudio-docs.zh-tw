@@ -1,9 +1,6 @@
 ---
 title: 設計工具初始化和中繼資料組態 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - designers [Visual Studio SDK], initializing
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 58f103ae1dcf445c5bdfe322eeea7a88a7b25683
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5dae44a2fced40894003d2f739af1147b293494a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49843271"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53885394"
 ---
 # <a name="designer-initialization-and-metadata-configuration"></a>設計工具的初始設定和中繼資料組態
 操作的中繼資料和篩選器相關聯的屬性使用設計工具或設計工具元件提供一個機制，來定義特定的設計工具所使用的工具來處理不同的應用程式<xref:System.Type>物件 （例如資料結構類別或圖形化的實體），當設計工具可用，而且 Visual Studio IDE 的設定以支援設計工具的方式 (如執行個體這**工具箱**分類或索引標籤可供使用)。  

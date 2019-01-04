@@ -1,8 +1,7 @@
 ---
-title: CA2218：覆寫 Equals 時必須一併覆寫 GetHashCode
+title: CA2218:覆寫 Equals 時必須一併覆寫 GetHashCode
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA2218
@@ -16,20 +15,20 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dda8fd453ae36e11a4d8f20780caf60bf3c915f0
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: c57ebb8f808ba98acb673ad3fbbc3ba78bcdc3ac
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45547785"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53860860"
 ---
-# <a name="ca2218-override-gethashcode-on-overriding-equals"></a>CA2218：覆寫 Equals 時必須一併覆寫 GetHashCode
+# <a name="ca2218-override-gethashcode-on-overriding-equals"></a>CA2218:覆寫 Equals 時必須一併覆寫 GetHashCode
 
 |||
 |-|-|
 |TypeName|OverrideGetHashCodeOnOverridingEquals|
 |CheckId|CA2218|
-|類別|Microsoft.Usage|
+|分類|Microsoft.Usage|
 |中斷變更|非中斷|
 
 ## <a name="cause"></a>原因
@@ -91,15 +90,15 @@ ms.locfileid: "45547785"
  [!code-csharp[FxCop.Usage.GetHashCodeFixedStruct#1](../code-quality/codesnippet/CSharp/ca2218-override-gethashcode-on-overriding-equals_4.cs)]
 
 ## <a name="related-rules"></a>相關的規則
- [CA1046：請勿多載參考類型上的等號比較運算子](../code-quality/ca1046-do-not-overload-operator-equals-on-reference-types.md)
+ [CA1046:不要多載參考類型上的等號比較運算子](../code-quality/ca1046-do-not-overload-operator-equals-on-reference-types.md)
 
- [CA2225：運算子多載必須有具名的替代方法](../code-quality/ca2225-operator-overloads-have-named-alternates.md)
+ [CA2225:運算子多載必須有具名的替代項目](../code-quality/ca2225-operator-overloads-have-named-alternates.md)
 
- [CA2226：運算子應該有對稱的多載](../code-quality/ca2226-operators-should-have-symmetrical-overloads.md)
+ [CA2226:運算子應該有對稱的多載](../code-quality/ca2226-operators-should-have-symmetrical-overloads.md)
 
- [CA2224：多載等號比較運算子時必須一併覆寫 Equals](../code-quality/ca2224-override-equals-on-overloading-operator-equals.md)
+ [CA2224:覆寫等於多載等號比較運算子](../code-quality/ca2224-override-equals-on-overloading-operator-equals.md)
 
- [CA2231：覆寫 ValueType.Equals 時必須一併多載等號比較運算子](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md)
+ [CA2231：在覆寫 ValueType.Equals 上多載等號運算子](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md)
 
 ## <a name="see-also"></a>另請參閱
 

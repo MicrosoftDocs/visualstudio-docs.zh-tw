@@ -17,13 +17,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 838bf3cab092106140f3aeeaf33c74a13cd23b35
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 715d64d48a82837aca0c576a1cc95b434244368a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859662"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53895554"
 ---
 # <a name="use-code-maps-to-debug-your-applications"></a>使用 Code Map 偵錯您的應用程式
 

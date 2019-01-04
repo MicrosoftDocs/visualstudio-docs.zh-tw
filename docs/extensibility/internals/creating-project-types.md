@@ -1,9 +1,6 @@
 ---
 title: 建立專案類型 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - project types, new
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1a453e8ed6c59f242e8a3aadbf056f956aedcaca
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: d80dd7fcaa75b5090145821307dfe7def28afbc1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39499912"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53987404"
 ---
 # <a name="create-project-types"></a>建立專案類型
 您可以擴充[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]藉由建立新的專案類型。 若要建立新的專案類型，您必須了解幾個概念，並完成幾個步驟。 下列主題提供如何建立專案類型的概觀。  
@@ -28,7 +25,7 @@ ms.locfileid: "39499912"
  [專案類型的設計決策](../../extensibility/internals/project-type-design-decisions.md)  
  討論項目、 專案檔案持續性，以及您必須先建立新的專案類型之前的承諾用量 mechanic 設計決策。  
   
- [檢查清單： 建立新的專案類型](../../extensibility/internals/checklist-creating-new-project-types.md)  
+ [檢查清單：建立新的專案類型](../../extensibility/internals/checklist-creating-new-project-types.md)  
  提供建立新的專案類型支援這類編輯程式碼和編譯、 建置、 偵錯和部署您的專案中的應用程式的程式設計工作，您必須遵循的步驟概觀。  
   
  [使用 project factory 建立專案執行個體](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)  

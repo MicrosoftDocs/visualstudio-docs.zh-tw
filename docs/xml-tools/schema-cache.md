@@ -2,7 +2,6 @@
 title: XML 編輯器結構描述快取
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: conceptual
 ms.assetid: 35a7fcad-f3bf-4a96-9008-4306e7276223
 author: gewarren
@@ -10,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6bba01c55e6e71a55895b7ebd16bb3063ed5c1f1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 574de335bdc7be6cbef658009645efbd6bc6620d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49904878"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53886263"
 ---
 # <a name="schema-cache"></a>結構描述快取
 

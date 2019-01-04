@@ -1,8 +1,7 @@
 ---
-title: CA1810：必須初始化參考類型內部的靜態欄位
+title: CA1810:必須將參考類型內部的靜態欄位初始化
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - InitializeReferenceTypeStaticFieldsInline
@@ -19,20 +18,20 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a6fdfebe506fb2edb1814e18d3d090025c665fa
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 8a7726ce96eed20e1ce7bb96112703777cb8f582
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45549439"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53944596"
 ---
-# <a name="ca1810-initialize-reference-type-static-fields-inline"></a>CA1810：必須初始化參考類型內部的靜態欄位
+# <a name="ca1810-initialize-reference-type-static-fields-inline"></a>CA1810:必須將參考類型內部的靜態欄位初始化
 
 |||
 |-|-|
 |TypeName|InitializeReferenceTypeStaticFieldsInline|
 |CheckId|CA1810|
-|類別|Microsoft.Performance|
+|分類|Microsoft.Performance|
 |中斷變更|非重大|
 
 ## <a name="cause"></a>原因
@@ -78,4 +77,4 @@ extends [mscorlib]System.Object
 
 ## <a name="related-rules"></a>相關的規則
 
-- [CA2207：必須初始化實值型別的靜態欄位內嵌](../code-quality/ca2207-initialize-value-type-static-fields-inline.md)
+- [CA2207:初始化實值類型的靜態欄位內嵌](../code-quality/ca2207-initialize-value-type-static-fields-inline.md)

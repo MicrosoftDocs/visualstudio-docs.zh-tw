@@ -1,9 +1,6 @@
 ---
 title: Bitmaps 元素 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - VSCT XML schema elements, Bitmaps
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f8812a9dca40a69a4dc23209cdb5f85309a87755
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a01b4fd1a6c855ce43cc332c8e4b4b01c69140fd
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49861549"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53896340"
 ---
 # <a name="bitmaps-element"></a>Bitmaps 元素
 群組[點陣圖項目](../extensibility/bitmap-element.md)項目。  

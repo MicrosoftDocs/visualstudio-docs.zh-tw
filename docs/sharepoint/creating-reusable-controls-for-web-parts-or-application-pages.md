@@ -1,13 +1,8 @@
 ---
 title: 為 Web 組件或應用程式頁面建立可重複使用的控制項 |Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -18,18 +13,18 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a621bb8c0f14cfb2c1869b98bb8bdbdd9c2d30bb
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 7d042c42bae59c6dbf92f0e381444cc011b40db0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36327266"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53842814"
 ---
 # <a name="create-reusable-controls-for-web-parts-or-application-pages"></a>建立可重複使用的控制項，為 web 組件或應用程式頁面
   在 Visual Studio 中，您可以為 SharePoint 中執行的應用程式頁面和 Web 組件，建立可供其利用之自訂、可重複使用的控制項。 這些控制項稱為使用者控制項。 使用者控制項是一種運作方式十分類似 ASP.NET Web 網頁的複合控制項，您可以將現有的 Web 伺服器控制項和標記新增至使用者控制項，並定義控制項的屬性和方法。 您接著可以將它們內嵌在 ASP.NET 網頁，它們可做為一個單位。  
   
 ## <a name="create-a-user-control"></a>建立使用者控制項
- 若要建立使用者控制項，加入**使用者控制項**要**空白的 SharePoint 專案**。 如需詳細資訊，請參閱 <<c0> [ 如何： 建立 SharePoint 應用程式頁面或 web 組件的使用者控制項](../sharepoint/how-to-create-a-user-control-for-a-sharepoint-application-page-or-web-part.md)。  
+ 若要建立使用者控制項，加入**使用者控制項**要**空白的 SharePoint 專案**。 如需詳細資訊，請參閱[＜How to：建立 SharePoint 應用程式頁面或 web 組件的使用者控制項](../sharepoint/how-to-create-a-user-control-for-a-sharepoint-application-page-or-web-part.md)。  
   
  當您將加入**使用者控制項**項目時，Visual Studio 會在您專案中，建立資料夾，然後將數個檔案加入資料夾。 下表描述每個檔案。  
   
@@ -65,5 +60,4 @@ ms.locfileid: "36327266"
   
 |標題|描述|  
 |-----------|-----------------|  
-|[如何： 建立 SharePoint 應用程式頁面或 web 組件的使用者控制項](../sharepoint/how-to-create-a-user-control-for-a-sharepoint-application-page-or-web-part.md)|說明如何建立可由應用程式頁面和 Web 組件，在 SharePoint 中執行的自訂、 可重複使用的控制項。|  
-  
+|[如何：建立 SharePoint 應用程式頁面或 web 組件的使用者控制項](../sharepoint/how-to-create-a-user-control-for-a-sharepoint-application-page-or-web-part.md)|說明如何建立可由應用程式頁面和 Web 組件，在 SharePoint 中執行的自訂、 可重複使用的控制項。|  

@@ -1,9 +1,6 @@
 ---
 title: IDebugDisassemblyStream2::GetSize |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugDisassemblyStream2::GetSize
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 434a53803dcc08a5d4b07b531b56e913d5311d1a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ccdb3a4e02403ec10da814770816ce78feb65f6d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49934791"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53887249"
 ---
 # <a name="idebugdisassemblystream2getsize"></a>IDebugDisassemblyStream2::GetSize
 指示這個反組譯碼資料流中取得的大小。  
@@ -28,13 +25,13 @@ ms.locfileid: "49934791"
 ## <a name="syntax"></a>語法  
   
 ```cpp  
-HRESULT GetSize(   
+HRESULT GetSize(   
    UINT64* pnSize  
 );  
 ```  
   
 ```csharp  
-int GetSize(   
+int GetSize(   
    out ulong pnSize  
 );  
 ```  

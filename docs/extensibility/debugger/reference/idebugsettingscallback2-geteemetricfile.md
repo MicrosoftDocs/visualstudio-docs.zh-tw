@@ -1,9 +1,6 @@
 ---
 title: IDebugSettingsCallback2::GetEEMetricFile |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - IDebugSettingsCallback2::GetEEMetricFile
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 27e023a9b0b1c05f93209e460bc6dbc45bee4f2d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ad7b99f0aa4fc8fef83930155f59f5a268621fc1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49927290"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53932755"
 ---
 # <a name="idebugsettingscallback2geteemetricfile"></a>IDebugSettingsCallback2::GetEEMetricFile
 擷取運算式評估工具計量提供檔案名稱或計量。  

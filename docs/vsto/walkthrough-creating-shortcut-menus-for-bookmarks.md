@@ -1,9 +1,6 @@
 ---
-title: 逐步解說： 建立書籤的捷徑功能表
-ms.custom: ''
+title: 逐步解說：建立書籤的捷徑功能表
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,14 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ff261fd6032f3c666dfa3d745508586ffede6504
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8cf987c458fb3a79c17fc6efedb34fefd8a53179
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49884078"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53940545"
 ---
-# <a name="walkthrough-create-shortcut-menus-for-bookmarks"></a>逐步解說： 建立書籤的捷徑功能表
+# <a name="walkthrough-create-shortcut-menus-for-bookmarks"></a>逐步解說：建立書籤的捷徑功能表
   本逐步解說示範如何建立捷徑功能表<xref:Microsoft.Office.Tools.Word.Bookmark>Word 文件層級自訂中的控制項。 當使用者以滑鼠右鍵按一下書籤中的文字時，快顯功能表會隨即出現，並提供格式化文字的使用者選項。  
   
  [!INCLUDE[appliesto_wdalldoc](../vsto/includes/appliesto-wdalldoc-md.md)]  
@@ -54,7 +51,7 @@ ms.locfileid: "49884078"
   
 ### <a name="to-create-a-new-project"></a>建立新的專案  
   
--   建立具有名稱的 Word 文件專案**我的書籤快顯功能表**。 在精靈中，選取**建立新的文件**。 如需詳細資訊，請參閱 <<c0> [ 如何： 在 Visual Studio 中的建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
+-   建立具有名稱的 Word 文件專案**我的書籤快顯功能表**。 在精靈中，選取**建立新的文件**。 如需詳細資訊，請參閱[＜How to：在 Visual Studio 中建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
   
      Visual Studio 設計工具中開啟新的 Word 文件，並將**我的書籤快顯功能表**專案加入**方案總管 中**。  
   
@@ -91,7 +88,7 @@ ms.locfileid: "49884078"
   
 ### <a name="to-add-commands-to-a-shortcut-menu"></a>若要將命令加入至捷徑功能表  
   
-1.  新增**功能區 XML**項目加入專案。 如需詳細資訊，請參閱 <<c0> [ 如何： 開始自訂功能區](../vsto/how-to-get-started-customizing-the-ribbon.md)。  
+1.  新增**功能區 XML**項目加入專案。 如需詳細資訊，請參閱[＜How to：開始自訂功能區](../vsto/how-to-get-started-customizing-the-ribbon.md)。  
   
 2.  在 **方案總管**，選取**ThisDocument.cs**或是**ThisDocument.vb**。  
   
@@ -169,7 +166,7 @@ ms.locfileid: "49884078"
     > [!NOTE]  
     >  您必須撰寫程式碼，以處理重疊書籤的情況。 如果沒有這樣做，依預設，程式碼就會呼叫選取範圍中的所有書籤。  
   
-5.  在 C# 中，您必須加入書籤控制項的事件處理常式<xref:Microsoft.Office.Tools.Word.Document.Startup>事件。 如需建立事件處理常式的資訊，請參閱[如何： 建立 Office 專案中的事件處理常式](../vsto/how-to-create-event-handlers-in-office-projects.md)。  
+5.  在 C# 中，您必須加入書籤控制項的事件處理常式<xref:Microsoft.Office.Tools.Word.Document.Startup>事件。 如需建立事件處理常式的資訊，請參閱[How to:建立 Office 專案中的事件處理常式](../vsto/how-to-create-event-handlers-in-office-projects.md)。  
   
      [!code-csharp[Trin_Word_Document_Menus#4](../vsto/codesnippet/CSharp/trin_word_document_menus.cs/thisdocument.cs#4)]  
   
@@ -191,9 +188,9 @@ ms.locfileid: "49884078"
 ## <a name="next-steps"></a>後續步驟  
  接著可以執行下列一些工作：  
   
--   撰寫程式碼以回應在 Excel 中的主控制項的事件。 如需詳細資訊，請參閱 <<c0> [ 逐步解說： 針對 NamedRange 控制項的事件的程式](../vsto/walkthrough-programming-against-events-of-a-namedrange-control.md)。  
+-   撰寫程式碼以回應在 Excel 中的主控制項的事件。 如需詳細資訊，請參閱[逐步解說：針對 NamedRange 控制項的事件的程式](../vsto/walkthrough-programming-against-events-of-a-namedrange-control.md)。  
   
--   若要變更書籤中的格式使用核取方塊。 如需詳細資訊，請參閱 <<c0> [ 逐步解說： 使用 CheckBox 控制項變更文件格式](../vsto/walkthrough-changing-document-formatting-using-checkbox-controls.md)。  
+-   若要變更書籤中的格式使用核取方塊。 如需詳細資訊，請參閱[逐步解說：使用 CheckBox 控制項變更文件格式](../vsto/walkthrough-changing-document-formatting-using-checkbox-controls.md)。  
   
 ## <a name="see-also"></a>另請參閱  
  [使用 Word 的逐步解說](../vsto/walkthroughs-using-word.md)   
@@ -201,5 +198,3 @@ ms.locfileid: "49884078"
  [使用擴充的物件自動化 Word](../vsto/automating-word-by-using-extended-objects.md)   
  [書籤控制項](../vsto/bookmark-control.md)   
  [Office 方案中的選擇性參數](../vsto/optional-parameters-in-office-solutions.md)  
-  
-  

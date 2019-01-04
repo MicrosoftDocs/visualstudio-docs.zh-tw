@@ -1,9 +1,6 @@
 ---
-title: 如何： 以程式設計方式顯示工作表註解
-ms.custom: ''
+title: HOW TO：以程式設計方式顯示工作表註解
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e8f4875e75562d9fa1f6d9cd4982ae2148e35a1c
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: c246eae0465c64598aae1191c4053f8ba266b6ff
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35257682"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53831559"
 ---
-# <a name="how-to-programmatically-display-worksheet-comments"></a>如何： 以程式設計方式顯示工作表註解
+# <a name="how-to-programmatically-display-worksheet-comments"></a>HOW TO：以程式設計方式顯示工作表註解
   您可以透過程式設計方式，顯示及隱藏 Microsoft Office Excel 工作表中的註解。  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
@@ -44,7 +41,5 @@ ms.locfileid: "35257682"
   
 ## <a name="see-also"></a>另請參閱  
  [使用工作表](../vsto/working-with-worksheets.md)   
- [如何： 以程式設計方式新增和刪除工作表註解](../vsto/how-to-programmatically-add-and-delete-worksheet-comments.md)   
+ [如何：以程式設計方式新增和刪除工作表註解](../vsto/how-to-programmatically-add-and-delete-worksheet-comments.md)   
  [主項目和主控制項概觀](../vsto/host-items-and-host-controls-overview.md)  
-  
-  

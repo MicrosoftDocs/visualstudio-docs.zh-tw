@@ -1,8 +1,7 @@
 ---
-title: CA2222：請勿降低繼承成員的可視性
+title: CA2222:不要降低繼承成員的可視性
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - DoNotDecreaseInheritedMemberVisibility
@@ -19,20 +18,20 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 9dcf92e2a5cdfb7f83a84c55b222aabf415fcfe0
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 71b4bd27b7c2258e508f02c7c4e88a516c370209
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45545656"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53911954"
 ---
-# <a name="ca2222-do-not-decrease-inherited-member-visibility"></a>CA2222：請勿降低繼承成員的可視性
+# <a name="ca2222-do-not-decrease-inherited-member-visibility"></a>CA2222:不要降低繼承成員的可視性
 
 |||
 |-|-|
 |TypeName|DoNotDecreaseInheritedMemberVisibility|
 |CheckId|CA2222|
-|類別|Microsoft.Usage|
+|分類|Microsoft.Usage|
 |中斷變更|非中斷|
 
 ## <a name="cause"></a>原因

@@ -1,9 +1,6 @@
 ---
-title: IDebugProgramDestroyEventFlags2 |Microsoft 文件
-ms.custom: ''
+title: IDebugProgramDestroyEventFlags2 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - IDebugProgramDestroyEventFlags2 interface
@@ -13,15 +10,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f6b57206159ce00fbb79e9f9af1a6353588df76c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a3d0385af4ec795608672d8d7cbdb4b188246dea
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31116330"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53825850"
 ---
 # <a name="idebugprogramdestroyeventflags2"></a>IDebugProgramDestroyEventFlags2
-可讓偵錯引擎，將覆寫預設行為[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]UI 偵錯工作階段結束時。  
+可讓偵錯引擎覆寫預設行為[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]UI 時結束偵錯工作階段。  
   
 ## <a name="syntax"></a>語法  
   
@@ -29,22 +26,22 @@ ms.locfileid: "31116330"
 IDebugProgramDestroyEventFlags2 : IUnknown  
 ```  
   
-## <a name="notes-for-implementers"></a>實作者注意事項  
- 實作這個介面是由偵錯引擎。 它可用於主機，可能會建立並終結多個程式的處理序存留期。  
+## <a name="notes-for-implementers"></a>實作者的附註  
+ 此介面是由偵錯引擎實作。 它適合的主機，可能會建立處理程序的存留期間終結多個程式。  
   
 ## <a name="methods"></a>方法  
  下表顯示的方法`IDebugProgramDestroyEventFlags2`。  
   
 |方法|描述|  
 |------------|-----------------|  
-|[GetFlags](../../../extensibility/debugger/reference/idebugprogramdestroyeventflags2-getflags.md)|擷取程式旗標會終結。|  
+|[GetFlags](../../../extensibility/debugger/reference/idebugprogramdestroyeventflags2-getflags.md)|擷取程式終結旗標。|  
   
 ## <a name="remarks"></a>備註  
- 預設行為[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]UI 是以返回設計模式之後，所有的程式已送出程式損毀事件。 此介面可讓偵錯引擎變更該行為。  
+ 預設行為[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]UI 是以返回設計模式中所有的程式已送出程式之後終結事件。 此介面可讓偵錯引擎變更該行為。  
   
 ## <a name="requirements"></a>需求  
- 標頭： Msdbg.h  
+ 標頭：Msdbg.h  
   
- 命名空間： Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間:Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
+ 組件︰Microsoft.VisualStudio.Debugger.Interop.dll

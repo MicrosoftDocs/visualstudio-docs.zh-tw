@@ -1,13 +1,8 @@
 ---
-title: 如何： 使用模組中包含的檔案 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：使用模組中包含的檔案 |Microsoft Docs
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -18,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5c5152221e5e58504ba84e0ad0f31511b4d93aa0
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: d0cfe558c21a941ed5cc16eccef2e014acfbcdb7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118596"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53923489"
 ---
-# <a name="how-to-include-files-by-using-a-module"></a>如何： 使用模組中包含的檔案
+# <a name="how-to-include-files-by-using-a-module"></a>HOW TO：使用模組中包含的檔案
   *模組*(不到與混淆[!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)]模組) 是可讓您部署到 SharePoint 的檔案，例如 ASPX 主版頁面、 文字檔案或映像的容器。  
   
  您可以選擇將檔案部署文件庫，或為一般檔案 (例如 default.aspx) 外部的文件庫。 若要將檔案加入至文件庫中，指定`Type="GhostableInLibrary"`做為屬性**檔案**項目。 此設定會指示來建立清單項目加入至程式庫時，與您的檔案移至 SharePoint。 若要部署外部的文件庫的檔案，也可以指定`Type="Ghostable"`或省略**型別**屬性。  
@@ -71,4 +66,3 @@ ms.locfileid: "37118596"
 ## <a name="see-also"></a>另請參閱
  [封裝和部署 SharePoint 方案](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)   
  [開發 SharePoint 方案](../sharepoint/developing-sharepoint-solutions.md)  
-  

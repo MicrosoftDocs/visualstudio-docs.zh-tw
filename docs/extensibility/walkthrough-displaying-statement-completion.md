@@ -1,9 +1,6 @@
 ---
-title: 逐步解說： 顯示陳述式完成 |Microsoft Docs
-ms.custom: ''
+title: 逐步解說：顯示陳述式完成 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - statement completion
@@ -13,14 +10,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bdd96c124dafabf5584dfa13547cdea1e2b843b8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 148640c7522f133c780703df4052ef3235d8493a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49879320"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53986631"
 ---
-# <a name="walkthrough-display-statement-completion"></a>逐步解說： 顯示陳述式完成
+# <a name="walkthrough-display-statement-completion"></a>逐步解說：顯示陳述式完成
 您可以定義您要提供完成的識別碼，並接著觸發完成工作階段，以實作語言為基礎的陳述式完成。 您可以定義的語言服務內容中的陳述式完成、 定義您自己的副檔名和內容類型，然後顯示該型別的完成。 或者，您可以觸發完成針對現有的內容類型 — 比方說，「 純文字 」。 本逐步解說示範如何觸發 「 純文字 」 內容類型，也就是文字檔案的內容類型的陳述式完成。 「 文字 」 內容類型是所有其他內容類型，包括程式碼和 XML 檔案的上階。  
   
  完成陳述式通常會觸發輸入某些字元，例如，藉由輸入的識別碼，例如 「 使用 」 開頭。 它通常會關閉藉由按下**空格鍵**， ** 索引標籤**，或**Enter**認可選取範圍的索引鍵。 您可以實作觸發程序使用的命令處理常式的按鍵動作的輸入字元時的 intellisense (<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>介面) 和實作的處理常式提供者<xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener>介面。 若要建立完成來源時，也就是參與完成識別碼的清單，實作<xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSource>介面和完成來源提供者 (<xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSourceProvider>介面)。 提供者是 Managed Extensibility Framework (MEF) 元件組件。 它們是負責匯出的來源和控制器類別和匯入服務和代理程式 — 例如， <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService>，讓文字緩衝區中，瀏覽和<xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionBroker>，此觸發程序完成的工作階段。  
@@ -205,4 +202,4 @@ ms.locfileid: "49879320"
 4.  當您第一次輸入"a"，然後 「 d 的"，應該會出現包含 「 加法 」 和 「 調整 」 的清單。 請注意已選取 新增。 當您輸入另一個的"d"時，則清單應包含只有 「 加法 」，它現在已選取。 您可以藉由按下認可 「 加法 」**空格鍵**， ** 索引標籤**，或**Enter**鍵或按 esc 鍵或任何其他的索引鍵關閉清單。  
   
 ## <a name="see-also"></a>另請參閱  
- [逐步解說： 將內容類型連結至副檔名](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
+ [逐步解說：將內容類型連結至副檔名](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

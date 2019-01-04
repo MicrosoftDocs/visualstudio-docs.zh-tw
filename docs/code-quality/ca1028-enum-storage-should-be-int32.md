@@ -1,8 +1,7 @@
 ---
-title: CA1028：列舉儲存區應該是 Int32
+title: CA1028:列舉儲存區應該是 Int32
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA1028
@@ -19,20 +18,20 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 51e4177b01dc15177b74394d6967651905da2122
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 2d768c5ee98c5bff62dd58c33eb97396088bf978
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45547824"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53868270"
 ---
-# <a name="ca1028-enum-storage-should-be-int32"></a>CA1028：列舉儲存區應該是 Int32
+# <a name="ca1028-enum-storage-should-be-int32"></a>CA1028:列舉儲存區應該是 Int32
 
 |||
 |-|-|
 |TypeName|EnumStorageShouldBeInt32|
 |CheckId|CA1028|
-|類別|Microsoft.Design|
+|分類|Microsoft.Design|
 |中斷變更|中斷|
 
 ## <a name="cause"></a>原因
@@ -66,15 +65,15 @@ ms.locfileid: "45547824"
  [!code-vb[FxCop.Design.EnumIntegralTypeFixed#1](../code-quality/codesnippet/VisualBasic/ca1028-enum-storage-should-be-int32_2.vb)]
 
 ## <a name="related-rules"></a>相關的規則
- [CA1008：列舉值中應該要有值為零的成員](../code-quality/ca1008-enums-should-have-zero-value.md)
+ [CA1008:列舉應該使用零值](../code-quality/ca1008-enums-should-have-zero-value.md)
 
- [CA1027：必須以 FlagsAttribute 標記列舉](../code-quality/ca1027-mark-enums-with-flagsattribute.md)
+ [CA1027:以 FlagsAttribute 標記列舉](../code-quality/ca1027-mark-enums-with-flagsattribute.md)
 
- [CA2217：不要以 FlagsAttribute 標記列舉](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)
+ [CA2217:不以 FlagsAttribute 標記列舉](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)
 
- [CA1700：不要在列舉值名稱中包含 'Reserved'](../code-quality/ca1700-do-not-name-enum-values-reserved.md)
+ [CA1700:未命名的列舉值 'Reserved'](../code-quality/ca1700-do-not-name-enum-values-reserved.md)
 
- [CA1712：不要使用類型名稱做為列舉值的前置字元](../code-quality/ca1712-do-not-prefix-enum-values-with-type-name.md)
+ [CA1712:不要使用型別名稱的列舉值的前置字元](../code-quality/ca1712-do-not-prefix-enum-values-with-type-name.md)
 
 ## <a name="see-also"></a>另請參閱
 

@@ -1,9 +1,6 @@
 ---
 title: BP_FLAGS |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - BP_FLAGS
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0fba22042f5b12cfb9140e93e9e7efbeb0342328
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9d3739a2edb3f221548f26ee6f03a6f107c01e62
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49904163"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53907679"
 ---
 # <a name="bpflags"></a>BP_FLAGS
 提供可用來設定中斷點時，請指定其他資訊的選擇性旗標。  
@@ -28,7 +25,7 @@ ms.locfileid: "49904163"
 ## <a name="syntax"></a>語法  
   
 ```cpp  
-enum enum_BP_FLAGS {   
+enum enum_BP_FLAGS {   
    BP_FLAG_NONE            = 0x0000,  
    BP_FLAG_MAP_DOCPOSITION = 0x0001,  
    BP_FLAG_DONT_STOP       = 0x0002  
@@ -37,7 +34,7 @@ typedef DWORD BP_FLAGS;
 ```  
   
 ```csharp  
-public enum enum_BP_FLAGS {   
+public enum enum_BP_FLAGS {   
    BP_FLAG_NONE            = 0x0000,  
    BP_FLAG_MAP_DOCPOSITION = 0x0001,  
    BP_FLAG_DONT_STOP       = 0x0002  
@@ -62,9 +59,9 @@ public enum enum_BP_FLAGS {
 ## <a name="requirements"></a>需求  
  標頭： msdbg.h  
   
- 命名空間： Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間:Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
  [列舉型別](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   

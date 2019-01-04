@@ -1,9 +1,6 @@
 ---
-title: 如何： 以程式設計方式將文字插入 Word 文件
-ms.custom: ''
+title: HOW TO：以程式設計方式將文字插入 Word 文件
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,14 +16,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a602f50e9d3c439fc450c286923341dafff1e116
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8d5a0382726e6fc481001f4afc7820875e436594
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49881660"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53828913"
 ---
-# <a name="how-to-programmatically-insert-text-into-word-documents"></a>如何： 以程式設計方式將文字插入 Word 文件
+# <a name="how-to-programmatically-insert-text-into-word-documents"></a>HOW TO：以程式設計方式將文字插入 Word 文件
   在 Microsoft Office Word 文件中插入文字的方式主要有三種：  
   
 -   在範圍中插入文字。  
@@ -129,8 +126,6 @@ ms.locfileid: "49881660"
    [!code-csharp[Trin_VstcoreWordAutomation#56](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#56)]  
   
 ## <a name="see-also"></a>另請參閱  
- [如何： 以程式設計的方式格式化文件中的文字](../vsto/how-to-programmatically-format-text-in-documents.md)   
- [如何： 以程式設計方式定義，並在文件中選取範圍](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)   
- [如何： 以程式設計方式擴充文件中的範圍](../vsto/how-to-programmatically-extend-ranges-in-documents.md)  
-  
-  
+ [如何：以程式設計方式在文件中的文字格式](../vsto/how-to-programmatically-format-text-in-documents.md)   
+ [如何：以程式設計方式定義，並在文件中選取範圍](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)   
+ [如何：以程式設計方式擴充文件中的範圍](../vsto/how-to-programmatically-extend-ranges-in-documents.md)  

@@ -20,13 +20,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 71eebd95db1a616d4f86866ef60fb32251634cc0
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: ac75be41d547905b122284fa09a654be368d73e7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50967281"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53907822"
 ---
 # <a name="validate-code-with-dependency-diagrams"></a>使用相依性圖表驗證程式碼
 
@@ -55,7 +54,7 @@ ms.locfileid: "50967281"
 
 若要查看哪些版本的 Visual Studio 支援此功能，請參閱[architecture and modeling tools 的版本支援](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。
 
-您可以驗證程式碼以手動方式從 Visual Studio 中開啟的相依性圖表，或從命令提示字元。 您也會自動驗證程式碼，執行本機組建或 Azure 管線組建時。 請參閱[Channel 9 影片： 設計和驗證架構使用相依性圖表](http://go.microsoft.com/fwlink/?LinkID=252073)。
+您可以驗證程式碼以手動方式從 Visual Studio 中開啟的相依性圖表，或從命令提示字元。 您也會自動驗證程式碼，執行本機組建或 Azure 管線組建時。 請參閱[Channel 9 影片：設計和驗證架構使用相依性圖表](http://go.microsoft.com/fwlink/?LinkID=252073)。
 
 > [!IMPORTANT]
 > 如果您想要執行使用 Team Foundation Server (TFS) 的圖層驗證，則您也必須在您的組建伺服器上安裝相同版本的 Visual Studio。
@@ -231,7 +230,7 @@ ms.locfileid: "50967281"
 | DV0001:**無效的相依性** | 當程式碼項目 （命名空間、 類型與成員） 對應至圖層參考對應到另一個圖層的程式碼項目，但這些相依性驗證圖表，其中包含此圖層中的圖層之間沒有任何相依性箭號時，會報告此問題。 這是相依性條件約束違規。 |
 | DV1001:**無效的命名空間名稱** | 此問題會回報 「 允許的命名空間名稱 」 屬性不包含此程式碼項目定義所在的命名空間的圖層相關聯的程式碼項目。 這是命名的條件約束違規。 請注意，「 允許的命名空間名稱 」 的語法是以分號分隔的清單其中程式碼與相關聯的項目是圖層的命名空間被允許定義。 |
 | DV1002:**不可參考的命名空間上的相依性** | 此問題會回報與圖層關聯及參考圖層的 「 不可參考命名空間 」 屬性中定義的命名空間中定義的另一個程式碼項目，程式碼項目。 這是命名的條件約束違規。 請注意，「 不可參考命名空間 」 屬性定義為以分號分隔清單，不應在此圖層相關聯的程式碼項目中參考的命名空間。 |
-| DV1003:**不允許命名空間名稱** | 此問題會回報 「 不允許的命名空間名稱 」 屬性包含此程式碼項目定義所在的命名空間的圖層相關聯的程式碼項目。 這是命名的條件約束違規。 請注意，「 不允許命名空間名稱 」 屬性定義為以分號分隔清單在哪一個程式碼中與此圖層相關聯的項目不應定義的命名空間。 |
+| DV1003:**不允許的命名空間名稱** | 此問題會回報 「 不允許的命名空間名稱 」 屬性包含此程式碼項目定義所在的命名空間的圖層相關聯的程式碼項目。 這是命名的條件約束違規。 請注意，「 不允許命名空間名稱 」 屬性定義為以分號分隔清單在哪一個程式碼中與此圖層相關聯的項目不應定義的命名空間。 |
 | DV3001:**遺失的連結** | 圖層 '*LayerName*'連結到'*成品*' 找不到其中。 您是否遺漏了組件參考? |
 | DV9001:**架構分析發現內部錯誤** | 結果可能不完整。 如需詳細資訊，請參閱詳細建置事件記錄檔或輸出視窗。 |
 
@@ -239,4 +238,4 @@ ms.locfileid: "50967281"
 
 - [Visual Studio 2017 中的即時相依性驗證](https://blogs.msdn.microsoft.com/devops/2016/11/30/live-dependency-validation-in-visual-studio-2017/)
 - [在開發期間驗證您的系統](../modeling/validate-your-system-during-development.md)
-- [影片： 驗證即時架構相依性](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4)
+- [影片：驗證即時架構相依性](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4)

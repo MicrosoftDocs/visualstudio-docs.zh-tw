@@ -1,9 +1,6 @@
 ---
 title: Visual Studio Tools for Office runtime 安裝案例
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ebf335291246ac8c3c15d8f04fb064a3bfaa8ef7
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 366863dc9babfd918e3f689420c5e26ec05db6a1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50670893"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53850027"
 ---
 # <a name="visual-studio-tools-for-office-runtime-installation-scenarios"></a>Visual Studio Tools for Office runtime 安裝案例
   您可以透過三種方式安裝 Visual Studio 2010 Tools for Office 執行階段：  
@@ -51,7 +48,7 @@ ms.locfileid: "50670893"
 > [!WARNING]  
 >  您無法使用 [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] 或更新版本建立以 .NET Framework 3.5 為目標的 Office 專案。  
   
- 如需如何安裝 Office developer tools 的詳細資訊，請參閱[如何： 設定電腦以開發 Office 方案](../vsto/how-to-configure-a-computer-to-develop-office-solutions.md)。  
+ 如需如何安裝 Office developer tools 的詳細資訊，請參閱[How to:設定電腦以開發 Office 方案](../vsto/how-to-configure-a-computer-to-develop-office-solutions.md)。  
   
 ### <a name="install-the-runtime-with-office"></a>與 Office 安裝的執行階段  
  當您安裝 Office 時，如果 .NET Framework 3.5 已存在於電腦上，則會安裝適用於 .NET Framework 3.5 的 Office 擴充功能。 如果您在安裝 Office 之後安裝 .NET Framework 3.5，執行階段會在 Office 應用程式第一次嘗試載入以 .NET Framework 3.5 為目標的方案時，自動安裝適用於 .NET Framework 3.5 的 Office 擴充功能。  
@@ -67,10 +64,8 @@ ms.locfileid: "50670893"
   
  當您安裝執行階段使用 Visual Studio 2010 Tools for Office runtime 可轉散發套件、.NET Framework 3.5 的 Office 擴充功能和 Office extensions for[!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]安裝或更新版本是如果對應的.NET 版本Framework 已存在於電腦上。 如果在安裝執行階段時電腦遺漏其中一種版本的 .NET Framework ，遺漏之 .NET Framework 版本的 Office 擴充功能不會在該時間安裝。 如果您稍後安裝遺漏的 .NET Framework 版本，則執行階段會在下一次安裝 (如果執行階段是隨使用 ClickOnce 部署的方案一起安裝) 或載入 (如果執行階段是隨使用 Windows Installer 部署的方案一起安裝) 需要此擴充功能的方案時自動安裝對應的 Office 擴充功能。  
   
- 如需有關必要條件納入 ClickOnce 方案的詳細資訊，請參閱 <<c0> [ 如何： 在執行 Office 方案的終端使用者電腦上安裝必要條件](https://msdn.microsoft.com/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98)。 如需如何手動安裝執行階段從可轉散發套件的詳細資訊，請參閱[如何： 安裝 Visual Studio Tools for Office runtime 可轉散發套件](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md)。  
+ 如需有關必要條件納入 ClickOnce 方案的詳細資訊，請參閱[How to:安裝必要條件來執行 Office 方案的終端使用者電腦上](https://msdn.microsoft.com/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98)。 如需如何手動安裝執行階段從可轉散發套件的詳細資訊，請參閱[How to:安裝 Visual Studio Tools for Office runtime 可轉散發套件](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md)。  
   
 ## <a name="see-also"></a>另請參閱  
  [Visual Studio Tools for Office runtime 概觀](../vsto/visual-studio-tools-for-office-runtime-overview.md)   
  [在 Visual Studio Tools for Office runtime 的組件](../vsto/assemblies-in-the-visual-studio-tools-for-office-runtime.md)  
-  
-  

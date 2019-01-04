@@ -1,9 +1,6 @@
 ---
 title: 建立自訂偵錯引擎 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - debug engines, implementing
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ece2b480890054526552ad3aeea4f3bd1a437f74
-ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
+ms.openlocfilehash: fe3d22bc271366ba307510ea4b61ad6a1093c99d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39203676"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53852699"
 ---
 # <a name="create-a-custom-debug-engine"></a>建立自訂的偵錯引擎
 偵錯引擎 (DE) 是元件，可讓特定的執行階段架構的偵錯。 通常是只有一個 DE 實作每個執行階段環境。  
@@ -61,7 +58,7 @@ ms.locfileid: "39203676"
  [呼叫偵錯工具事件](../../extensibility/debugger/calling-debugger-events.md)  
  文件的偵錯工作階段中發生的事件呼叫的順序。  
   
- [如何： 偵錯自訂的偵錯引擎](../../extensibility/debugger/how-to-debug-a-custom-debug-engine.md)  
+ [如何：偵錯自訂的偵錯引擎](../../extensibility/debugger/how-to-debug-a-custom-debug-engine.md)  
  說明如何偵錯自訂的規定。  
   
 ## <a name="see-also"></a>另請參閱  

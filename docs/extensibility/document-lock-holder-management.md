@@ -1,9 +1,6 @@
 ---
 title: 文件鎖定持有者管理 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], custom - document locking
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b27025418c903de0128a3eddea2aa0fab00aa9ea
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: f2f2da0e351f8444ef9966b00551b941830dda3a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53804454"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53986436"
 ---
 # <a name="document-lock-holder-management"></a>文件鎖定持有者管理
 執行文件資料表 (RDT) 會維持開啟的文件和它們所擁有的任何編輯鎖定計數。 以程式設計方式編輯在背景中沒有看到文件視窗中開啟的文件的使用者時，您可以編輯鎖定放置 RDT 中的文件上。 這項功能常用的設計工具，可修改的圖形化使用者介面的多個檔案。

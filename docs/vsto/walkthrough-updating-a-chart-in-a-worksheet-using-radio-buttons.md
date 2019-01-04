@@ -1,9 +1,6 @@
 ---
 title: 逐步解說：使用選項按鈕更新工作表中的圖表
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5aff631d8c9b6bd65b8ae91c5d936d2669764791
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e165fc0a02f3185c74f4a3eb4b0fe9536f71fb66
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49866437"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53891931"
 ---
 # <a name="walkthrough-updating-a-chart-in-a-worksheet-using-radio-buttons"></a>逐步解說：使用選項按鈕更新工作表中的圖表
   本逐步解說會示範使用 Microsoft Office Excel 工作表上的選項按鈕，以讓使用者快速切換選項之間的基本概念。 在此情況下，選項會變更圖表的樣式。  
@@ -96,7 +93,7 @@ ms.locfileid: "49866437"
 
 1.  建立 Excel 活頁簿專案同名**我的 Excel 圖表**。 在精靈中，選取**複製現有文件**。  
 
-     如需詳細資訊，請參閱 <<c0> [ 如何： 在 Visual Studio 中的建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
+     如需詳細資訊，請參閱[＜How to：在 Visual Studio 中建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
 
 2.  按一下 **瀏覽**按鈕並瀏覽至您稍早在本逐步解說中建立的活頁簿。  
 
@@ -203,7 +200,7 @@ ms.locfileid: "49866437"
      [!code-vb[Trin_VstcoreProgrammingControlsExcel#17](../vsto/codesnippet/VisualBasic/my excel chart/ChartOptions.vb#17)]
      [!code-cs[Trin_VstcoreProgrammingControlsExcel#17](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/ChartOptions.cs#17)]  
 
-5.  在 C# 中，您必須為選項按鈕加入事件處理常式。 您可以將程式碼加入至 `ChartOptions` 建構函式，放在 `InitializeComponent` 的呼叫下方。 如需有關如何建立事件處理常式的資訊，請參閱 <<c0> [ 如何： 建立 Office 專案中的事件處理常式](../vsto/how-to-create-event-handlers-in-office-projects.md)。  
+5.  在 C# 中，您必須為選項按鈕加入事件處理常式。 您可以將程式碼加入至 `ChartOptions` 建構函式，放在 `InitializeComponent` 的呼叫下方。 如需有關如何建立事件處理常式的資訊，請參閱[How to:建立 Office 專案中的事件處理常式](../vsto/how-to-create-event-handlers-in-office-projects.md)。  
 
      [!code-cs[Trin_VstcoreProgrammingControlsExcel#18](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/ChartOptions.cs#18)]  
 
@@ -234,7 +231,7 @@ ms.locfileid: "49866437"
      [!code-vb[Trin_VstcoreProgrammingControlsExcel#19](../vsto/codesnippet/VisualBasic/my excel chart/Sheet1.vb#19)]
      [!code-cs[Trin_VstcoreProgrammingControlsExcel#19](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#19)]  
 
-2.  在 C# 中，您必須將使用者控制項的事件處理常式<xref:Microsoft.Office.Tools.Excel.Worksheet.Startup>事件，如下所示。 如需有關如何建立事件處理常式的資訊，請參閱 <<c0> [ 如何： 建立 Office 專案中的事件處理常式](../vsto/how-to-create-event-handlers-in-office-projects.md)。  
+2.  在 C# 中，您必須將使用者控制項的事件處理常式<xref:Microsoft.Office.Tools.Excel.Worksheet.Startup>事件，如下所示。 如需有關如何建立事件處理常式的資訊，請參閱[How to:建立 Office 專案中的事件處理常式](../vsto/how-to-create-event-handlers-in-office-projects.md)。  
 
      [!code-cs[Trin_VstcoreProgrammingControlsExcel#20](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#20)]  
 
@@ -254,10 +251,9 @@ ms.locfileid: "49866437"
 
 -   部署專案。 如需詳細資訊，請參閱 <<c0> [ 部署 Office 方案](../vsto/deploying-an-office-solution.md)。  
 
--   使用按鈕填入文字方塊。 如需詳細資訊，請參閱 <<c0> [ 逐步解說： 使用按鈕在工作表中的文字方塊中顯示文字](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-worksheet-using-a-button.md)。  
+-   使用按鈕填入文字方塊。 如需詳細資訊，請參閱[逐步解說：使用按鈕在工作表中的文字方塊中顯示文字](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-worksheet-using-a-button.md)。  
 
--   變更格式化工作表上使用核取方塊。 如需詳細資訊，請參閱 <<c0> [ 逐步解說： 使用 CheckBox 控制項格式變更工作表設定](../vsto/walkthrough-changing-worksheet-formatting-using-checkbox-controls.md)。  
+-   變更格式化工作表上使用核取方塊。 如需詳細資訊，請參閱[逐步解說：變更工作表使用核取方塊控制項的格式化](../vsto/walkthrough-changing-worksheet-formatting-using-checkbox-controls.md)。  
 
 ## <a name="see-also"></a>另請參閱  
  [使用 Excel 的逐步解說](../vsto/walkthroughs-using-excel.md)  
-

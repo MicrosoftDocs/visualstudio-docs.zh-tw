@@ -1,9 +1,6 @@
 ---
 title: IDebugFunctionObject::CreatePrimitiveObject |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugFunctionObject::CreatePrimitiveObject
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b397bded186623b09bc868d6b4af97cd0d4d5388
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e3996298f56f6f4bfcb9b7f7a66b692f149cb96e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49854555"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53878256"
 ---
 # <a name="idebugfunctionobjectcreateprimitiveobject"></a>IDebugFunctionObject::CreatePrimitiveObject
 建立基本資料物件，例如簡單的整數。  
@@ -28,7 +25,7 @@ ms.locfileid: "49854555"
 ## <a name="syntax"></a>語法  
   
 ```cpp  
-HRESULT CreatePrimitiveObject(   
+HRESULT CreatePrimitiveObject(   
    OBJECT_TYPE    ot,  
    IDebugObject** ppObject  
 );  

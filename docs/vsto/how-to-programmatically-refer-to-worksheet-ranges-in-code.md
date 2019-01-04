@@ -1,9 +1,6 @@
 ---
-title: 如何： 以程式設計方式參考程式碼中的工作表範圍
-ms.custom: ''
+title: HOW TO：以程式設計方式參考程式碼中的工作表範圍
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,14 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 608ce006ccc34330631da8d4c947405b027f1a1f
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: d1a9904140d08d3ddca63c70bc77f1db4dffb1d8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35671382"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53851244"
 ---
-# <a name="how-to-programmatically-refer-to-worksheet-ranges-in-code"></a>如何： 以程式設計方式參考程式碼中的工作表範圍
+# <a name="how-to-programmatically-refer-to-worksheet-ranges-in-code"></a>HOW TO：以程式設計方式參考程式碼中的工作表範圍
   您可以使用類似的程序來參考的內容<xref:Microsoft.Office.Tools.Excel.NamedRange>控制項或原生的 Excel 範圍物件。  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
@@ -52,13 +49,11 @@ ms.locfileid: "35671382"
   
 ## <a name="see-also"></a>另請參閱  
  [使用範圍](../vsto/working-with-ranges.md)   
- [如何： 以程式設計方式檢查工作表拼字](../vsto/how-to-programmatically-check-spelling-in-worksheets.md)   
- [如何： 以程式設計方式將樣式套用至活頁簿中的範圍](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)   
- [如何： 使用累加式變更資料，以程式設計的方式自動填滿範圍](../vsto/how-to-programmatically-automatically-fill-ranges-with-incrementally-changing-data.md)   
- [如何： 以程式設計方式在工作表範圍中的文字搜尋](../vsto/how-to-programmatically-search-for-text-in-worksheet-ranges.md)   
+ [如何：以程式設計方式檢查工作表拼字](../vsto/how-to-programmatically-check-spelling-in-worksheets.md)   
+ [如何：以程式設計方式將樣式套用至活頁簿中的範圍](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)   
+ [如何：使用累加式變更資料，以程式設計的方式自動填滿範圍](../vsto/how-to-programmatically-automatically-fill-ranges-with-incrementally-changing-data.md)   
+ [如何：以程式設計方式在工作表範圍中的文字搜尋](../vsto/how-to-programmatically-search-for-text-in-worksheet-ranges.md)   
  [NamedRange 控制項](../vsto/namedrange-control.md)   
  [主項目和主控制項概觀](../vsto/host-items-and-host-controls-overview.md)   
  [主項目和主控制項的程式設計限制](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
  [Office 方案中的選擇性參數](../vsto/optional-parameters-in-office-solutions.md)  
-  
-  

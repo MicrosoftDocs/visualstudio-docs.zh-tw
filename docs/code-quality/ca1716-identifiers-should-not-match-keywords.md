@@ -1,8 +1,7 @@
 ---
-title: CA1716：識別項名稱不應該和關鍵字相符
+title: CA1716:識別項名稱不應該和關鍵字相符
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - IdentifiersShouldNotMatchKeywords
@@ -16,14 +15,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cfaef87f8463c43c412c5db3c83a899fb22b4f66
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d27fdd455d019532b47bc531f9f7377bacd6572e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49862433"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53828624"
 ---
-# <a name="ca1716-identifiers-should-not-match-keywords"></a>CA1716：識別項名稱不應該和關鍵字相符
+# <a name="ca1716-identifiers-should-not-match-keywords"></a>CA1716:識別項名稱不應該和關鍵字相符
 
 |||
 |-|-|

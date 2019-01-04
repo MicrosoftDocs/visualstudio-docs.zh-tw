@@ -1,8 +1,7 @@
 ---
-title: CA1409：COM 可見類型應該是可建立的
+title: CA1409:Com 可見類型應該是可建立的
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - ComVisibleTypesShouldBeCreatable
@@ -16,20 +15,20 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 817c2215245412faf0bb30d46aec40a953f239b5
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 5fd168c5174dcc403a38c6eb3e443c3711fce537
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45546846"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53821684"
 ---
-# <a name="ca1409-com-visible-types-should-be-creatable"></a>CA1409：COM 可見類型應該是可建立的
+# <a name="ca1409-com-visible-types-should-be-creatable"></a>CA1409:Com 可見類型應該是可建立的
 
 |||
 |-|-|
 |TypeName|ComVisibleTypesShouldBeCreatable|
 |CheckId|CA1409|
-|類別|Microsoft.Interoperability|
+|分類|Microsoft.Interoperability|
 |中斷變更|非重大|
 
 ## <a name="cause"></a>原因
@@ -49,7 +48,7 @@ ms.locfileid: "45546846"
  它是安全地隱藏此規則的警告，如果提供的其他方式建立，並將物件傳遞給 COM 用戶端。
 
 ## <a name="related-rules"></a>相關的規則
- [CA1017：組件必須標記 ComVisibleAttribute](../code-quality/ca1017-mark-assemblies-with-comvisibleattribute.md)
+ [CA1017:組件必須標記 comvisibleattribute](../code-quality/ca1017-mark-assemblies-with-comvisibleattribute.md)
 
 ## <a name="see-also"></a>另請參閱
 

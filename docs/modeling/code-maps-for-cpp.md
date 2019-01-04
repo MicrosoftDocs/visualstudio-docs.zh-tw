@@ -6,15 +6,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: 6e2925eb3bfaf64a48b36c3c7205dce36538123c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b5fc8e84100d8b7ceb2b529e7b1630e644ebc9f7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49823575"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53968653"
 ---
 # <a name="code-maps-for-c-projects"></a>C + + 專案的 code map
 

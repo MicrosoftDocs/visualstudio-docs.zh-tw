@@ -1,9 +1,6 @@
 ---
 title: 關聯自訂資料與 SharePoint 工具擴充功能 |Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3e174440411e54d0f3960035874bd3b84b392c57
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c4e3cba7d4b05de4d32f31bd39c0e462174695fe
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49939486"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53951036"
 ---
 # <a name="associate-custom-data-with-sharepoint-tools-extensions"></a>將自訂的資料產生關聯的 SharePoint 工具擴充功能
   您可以新增自訂資料中 SharePoint 工具擴充功能的特定物件。 當您需要在您想要從您的延伸模組中的其他程式碼供稍後存取的擴充功能的其中一部分中的資料，這非常有用。 而不是實作自訂的方式來儲存及存取資料，您可以在您的延伸模組相關聯物件的資料，然後稍後再從同一個物件擷取資料。  
@@ -77,16 +74,14 @@ ms.locfileid: "49939486"
   
 - <xref:Microsoft.VisualStudio.SharePoint.IAnnotationDictionary.GetValue%2A>. 這個方法傳回的資料物件，如果結束，或是**null**如果不存在。 您只能使用這個方法來擷取執行個體的參考型別。  
   
-  下列程式碼範例會判斷特定資料物件是否已經與專案項目相關聯。 如果資料物件是未與專案項目相關聯，則程式碼將物件加入<xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A>專案項目的屬性。 若要查看這個內容中的較大範例的範例，請參閱[如何： 將屬性加入至自訂的 SharePoint 專案項目類型](../sharepoint/how-to-add-a-property-to-a-custom-sharepoint-project-item-type.md)。  
+  下列程式碼範例會判斷特定資料物件是否已經與專案項目相關聯。 如果資料物件是未與專案項目相關聯，則程式碼將物件加入<xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A>專案項目的屬性。 若要查看這個內容中的較大範例的範例，請參閱[How to:將屬性加入至自訂的 SharePoint 專案項目類型](../sharepoint/how-to-add-a-property-to-a-custom-sharepoint-project-item-type.md)。  
   
   [!code-vb[SPExtensibility.ProjectItemExtension.MenuAndProperty#13](../sharepoint/codesnippet/VisualBasic/projectitemmenuandproperty/extension/projectitemtypeproperty.vb#13)]
   [!code-csharp[SPExtensibility.ProjectItemExtension.MenuAndProperty#13](../sharepoint/codesnippet/CSharp/projectitemmenuandproperty/extension/projectitemtypeproperty.cs#13)]  
   
 ## <a name="see-also"></a>另請參閱
  [SharePoint 工具擴充功能的程式設計概念和功能](../sharepoint/programming-concepts-and-features-for-sharepoint-tools-extensions.md)   
- [逐步解說： 建立自訂動作專案項目與項目範本，第 1 部分](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)   
- [逐步解說： 擴充伺服器總管以顯示 web 組件](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)   
- [如何： 將屬性加入至 SharePoint 專案](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md)   
- [如何： 將屬性加入至自訂的 SharePoint 專案項目類型](../sharepoint/how-to-add-a-property-to-a-custom-sharepoint-project-item-type.md)
-   
- 
+ [逐步解說：使用項目範本，第 1 部分中建立自訂動作專案項目](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)   
+ [逐步解說：擴充伺服器總管以顯示 web 組件](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)   
+ [如何：將屬性加入至 SharePoint 專案](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md)   
+ [如何：將屬性加入至自訂的 SharePoint 專案項目類型](../sharepoint/how-to-add-a-property-to-a-custom-sharepoint-project-item-type.md)

@@ -1,9 +1,6 @@
 ---
 title: HOW TO：公開給 VBA 的程式碼，在 Visual Basic 專案
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,12 +16,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 43308e73d00f163b27a4dbe20dc9f0cbb656c4ba
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: 7a534d32dc8e9352c10a214fbd70ec361b82aed1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53648635"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53900988"
 ---
 # <a name="how-to-expose-code-to-vba-in-a-visual-basic-project"></a>HOW TO：公開給 VBA 的程式碼，在 Visual Basic 專案
   您的程式碼中的公開[!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)]如果您想要與彼此互動的程式碼的兩個類型，專案加入 Visual Basic for Applications (VBA) 程式碼。  
@@ -126,5 +123,3 @@ ms.locfileid: "53648635"
  [合併 VBA 和文件層級自訂](../vsto/combining-vba-and-document-level-customizations.md)   
  [逐步解說：在 Visual Basic 專案中，從 VBA 呼叫程式碼](../vsto/walkthrough-calling-code-from-vba-in-a-visual-basic-project.md)   
  [如何：公開給 Visual C 中的 VBA 程式碼&#35;專案](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md)  
-  
-  

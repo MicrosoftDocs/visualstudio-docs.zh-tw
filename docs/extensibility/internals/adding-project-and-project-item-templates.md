@@ -1,9 +1,6 @@
 ---
 title: 加入專案和專案項目範本 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio SDK], adding
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: db53ddce3161097347760026aea16a51f8098519
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: c89f38c98047a8fab57317c491c051474995f472
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39499630"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53963653"
 ---
 # <a name="add-project-and-project-item-templates"></a>將專案和專案項目範本
 當您建立您自己的專案類型時，您必須提供支援加入新的專案和專案項目使用標準[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]整合式開發環境 (IDE) 對話方塊。 下列主題討論不同的技術，讓您新增的專案和專案項目。  
@@ -53,10 +50,10 @@ ms.locfileid: "39499630"
  列出可用來擴充的物件 Catid [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)]， [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]，和[!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]專案系統。  
   
 ## <a name="related-sections"></a>相關章節  
- [如何： 開啟專案特定的編輯器](../../extensibility/how-to-open-project-specific-editors.md)  
+ [如何：開啟專案特定的編輯器](../../extensibility/how-to-open-project-specific-editors.md)  
  提供逐步指示，開啟本質繫結至特定的編輯器專案項目。  
   
- [如何： 開啟標準編輯器](../../extensibility/how-to-open-standard-editors.md)  
+ [如何：開啟標準編輯器](../../extensibility/how-to-open-standard-editors.md)  
  提供逐步指示，開啟標準編輯器。  
   
  [專案子類型](../../extensibility/internals/project-subtypes.md)  

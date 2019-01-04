@@ -10,13 +10,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: a49d9998aa319e66c22baa345864bc473f733c87
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 165798341f08afd3b55e8f6b8092457f022a0634
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49816693"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53960016"
 ---
 # <a name="customizing-and-extending-a-domain-specific-language"></a>自訂及擴充網域指定的語言
 Visual Studio 模型和視覺效果 SDK (VMSDK) 提供在中，您可以定義模型化工具的數個層級：
@@ -57,13 +56,13 @@ Visual Studio 模型和視覺效果 SDK (VMSDK) 提供在中，您可以定義�
 |保留圖形版面配置和外觀上複製和拖放。|將圖形和連接器新增至所複製`ElementGroupPrototype`。 若要覆寫最方便的方法是 `ElementOperations.CreateElementGroupPrototype()`<br /><br /> 請參閱[自訂複製行為](../modeling/customizing-copy-behavior.md)。|
 |在選擇的位置貼上圖形，例如目前的游標位置。|覆寫`ClipboardCommandSet.ProcessOnCopy()`若要使用的特定位置的新版`ElementOperations.Merge().`請參閱[自訂複製行為](../modeling/customizing-copy-behavior.md)。|
 |貼上建立其他連結|覆寫 ClipboardCommandSet.ProcessOnPasteCommand()|
-|啟用從拖放此圖中，其他的 Dsl 和 Windows 項目|請參閱[How to： 加入拖放處理常式](../modeling/how-to-add-a-drag-and-drop-handler.md)|
+|啟用從拖放此圖中，其他的 Dsl 和 Windows 項目|請參閱[如何：新增拖放處理常式](../modeling/how-to-add-a-drag-and-drop-handler.md)|
 |讓圖形或工具拖曳至 「 子 」 圖形，例如連接埠，如同它已拖曳至父代。|定義目標物件類別，來卸除的物件轉送給父項目合併指示詞。 請參閱[自訂項目建立和移動](../modeling/customizing-element-creation-and-movement.md)。|
 |讓圖形或將它們拖曳至圖形，並讓其他連結的工具或建立的物件。 例如，若要允許的註解可以放到它為連結的項目。|在目標網域類別，定義項目合併指示詞，並定義要產生的連結。 在複雜的情況下，您可以加入自訂程式碼。 請參閱[自訂項目建立和移動](../modeling/customizing-element-creation-and-movement.md)。|
 |利用單一工具中建立一組項目。 例如，具有一組固定的連接埠的元件。|覆寫 ToolboxHelper.cs 中的 [工具箱] 初始化方法。 建立項目群組原型 (EGP) 包含的項目和其關聯性連結。 請參閱[自訂工具和工具箱](../modeling/customizing-tools-and-the-toolbox.md)。<br /><br /> 包含主體和連接埠圖形中的 EGP，或是定義 BoundsRules EGP 具現化時通訊埠圖案的位置。 請參閱[BoundsRules 限制圖案位置和大小](../modeling/boundsrules-constrain-shape-location-and-size.md)。|
 |您可以使用一個連接工具來產生數種類型的關聯性。|加入連接產生器工具所叫用連結連線指示詞 (LCD)。 Lcd 判斷兩個項目類型的關聯性的類型。 若要讓這項目的狀態而定，您可以加入自訂程式碼。 請參閱[自訂工具和工具箱](../modeling/customizing-tools-and-the-toolbox.md)。|
 |自黏便箋的工具-使用者可以按兩下任何工具來建立連續的許多圖形或連接器。|在 DSL 總管 中，選取 `Editor`節點。 在 [屬性] 視窗中，設定**使用黏性工具箱項目**。|
-|定義功能表命令|請參閱[如何： 修改標準功能表命令](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)|
+|定義功能表命令|請參閱[如何：修改標準功能表命令](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)|
 |限制使用驗證規則的模型|請參閱[定義域專屬語言中的驗證](../modeling/validation-in-a-domain-specific-language.md)|
 |從 DSL 中產生程式碼、 組態檔或文件。|[從特定領域語言產生程式碼](../modeling/generating-code-from-a-domain-specific-language.md)|
 |自訂如何儲存模型檔案。|請參閱[自訂檔案儲存體和 XML 序列化](../modeling/customizing-file-storage-and-xml-serialization.md)|

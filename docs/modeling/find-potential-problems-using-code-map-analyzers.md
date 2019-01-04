@@ -14,13 +14,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: afc2915a5d1bfb6cf361a4b84a0235db296bac67
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f23b00a1ee4ee437214453d221824313883f7435
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49856752"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53938286"
 ---
 # <a name="find-potential-problems-using-code-map-analyzers"></a>使用 Code Map 分析器尋找潛在問題
 
@@ -38,9 +37,9 @@ ms.locfileid: "49856752"
 
 |**分析器**|**若要識別具有下列項目的節點：**|
 |-|-|
-|**循環參考分析器**|對彼此具有循環的相依性。 **注意︰** 循環相依性中**泛型**時展開的群組群組不會在地圖上顯示。|
+|**循環參考分析器**|對彼此具有循環的相依性。 **注意：** 中的循環相依性**泛型**時展開的群組群組不會在地圖上顯示。|
 |**尋找中樞分析器**|為前 25% 的高度連接節點<br /><br /> **隱藏對應上的所有其他節點**<br /><br /> -開啟對應的捷徑功能表，選擇 **進階**，**選取**，**隱藏未選取**。<br />     對應會隱藏未選取的節點，且分析器將識別作為中樞的新節點。|
-|**未參考的節點分析器**|不具有來自其他任何節點的參考。 **注意：** 確認之前所有這些情況下，假設不使用程式碼。 在程式碼中，找不到像是 XAML 相依性和執行階段相依性這樣的靜態特定相依性。|
+|**未參考的節點分析器**|不具有來自其他任何節點的參考。 **注意：** 在假設此程式碼未經使用之前，請驗證每個案例。 在程式碼中，找不到像是 XAML 相依性和執行階段相依性這樣的靜態特定相依性。|
 
 在您套用之後，Code Map 分析器將繼續執行。 如果您變更對應，所套用的任何分析器將自動重新處理已更新的對應。 若要停止執行分析器，在 [對應] 工具列上，選擇**版面配置** > **分析器**。 關閉所選的分析器。
 

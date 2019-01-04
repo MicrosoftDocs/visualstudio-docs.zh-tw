@@ -10,13 +10,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 930d7ededf4a54aaf75516c59001eaccf38c210c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 436b327e090d11d6e0e54f1a908e3e871d2b846a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49896760"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53857117"
 ---
 # <a name="navigate-and-update-a-model-in-program-code"></a>巡覽及更新程式碼中的模型
 
@@ -192,7 +191,7 @@ using (Transaction t =
 
 - 設定新的項目，特別是為其屬性的屬性`IsName`是 DslDefinition 中，則為 true。 這個旗標標記是用來識別在其擁有者的唯一元素的屬性。 在此情況下，[名稱] 屬性會有該旗標。
 
-- 此 DSL 的 DSL 定義必須載入到存放區。 如果您正在撰寫擴充功能，例如功能表命令，這通常會是已經為 true。 在其他情況下，您可以明確地將模型載入存放區，或使用<xref:Microsoft.VisualStudio.Modeling.Integration.ModelBus>載入它。 如需詳細資訊，請參閱 <<c0> [ 如何： 從程式碼中的檔案中開啟模型](../modeling/how-to-open-a-model-from-file-in-program-code.md)。
+- 此 DSL 的 DSL 定義必須載入到存放區。 如果您正在撰寫擴充功能，例如功能表命令，這通常會是已經為 true。 在其他情況下，您可以明確地將模型載入存放區，或使用<xref:Microsoft.VisualStudio.Modeling.Integration.ModelBus>載入它。 如需詳細資訊，請參閱[＜How to：從程式碼中的檔案中開啟模型](../modeling/how-to-open-a-model-from-file-in-program-code.md)。
 
   當您建立的項目，如此一來時，圖形會自動建立 （如果 DSL 圖表）。 它會出現在 自動指派的位置，而預設圖形、 色彩和其他功能。 如果您想要控制相關聯的圖形顯示的位置和方式，請參閱 <<c0> [ 建立項目和其圖形](#merge)。
 
@@ -475,7 +474,7 @@ partial class MyDiagram
  您也可以設定色彩和公開的其他屬性使用此方法的連接器。
 
 ### <a name="use-transactions"></a>使用交易
- 圖形、 連接器和圖表是的子類型<xref:Microsoft.VisualStudio.Modeling.ModelElement>選和即時存放區中。 您因此必須只在交易內，它們進行變更。 如需詳細資訊，請參閱 <<c0> [ 如何： 使用異動更新模型](../modeling/how-to-use-transactions-to-update-the-model.md)。
+ 圖形、 連接器和圖表是的子類型<xref:Microsoft.VisualStudio.Modeling.ModelElement>選和即時存放區中。 您因此必須只在交易內，它們進行變更。 如需詳細資訊，請參閱[＜How to：使用異動更新模型](../modeling/how-to-use-transactions-to-update-the-model.md)。
 
 ##  <a name="docdata"></a> 文件檢視和文件資料
  ![標準圖表類型的類別圖表](../modeling/media/dsldiagramsanddocs.png)

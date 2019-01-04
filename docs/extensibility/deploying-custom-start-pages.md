@@ -1,9 +1,6 @@
 ---
 title: 部署自訂起始頁 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - package start page
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 81b4fb4938c1b87f4a9ca31cdc6035c4c6f124d1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a350cb906d38baf3b82bf688b431718dab75b376
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49926458"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53865990"
 ---
 # <a name="deploy-custom-start-pages"></a>部署自訂起始頁
 

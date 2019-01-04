@@ -1,9 +1,6 @@
 ---
 title: SccAddFromScc 函式 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - SccAddFromScc
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f03b9af3f34fe7d06d2612a036e3ecd6003ee5c5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 717820bdd16daf9c32b32d873035a652d68f6348
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49830726"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53965096"
 ---
 # <a name="sccaddfromscc-function"></a>SccAddFromScc 函式
 此函數可讓使用者瀏覽已在原始檔控制系統中的檔案，並接著讓這些檔案的部分目前的專案。 比方說，此函式可以取得常見的標頭檔到目前的專案而不複製檔案。 傳回陣列的檔案， `lplpFileNames`，包含的使用者想要新增至 IDE 專案的檔案清單。  

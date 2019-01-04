@@ -1,8 +1,7 @@
 ---
-title: CA1815：覆寫實值類型上的等號和等號比較運算子
+title: CA1815:必須覆寫實值類型上的 Equals 方法和等號比較運算子
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA1815
@@ -16,14 +15,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ef3630e692118bad20441cecceedcb7866a10f2f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9d8fc26bca5ecce3b5459890e96e429ef10f3b75
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49948677"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53904045"
 ---
-# <a name="ca1815-override-equals-and-operator-equals-on-value-types"></a>CA1815：覆寫實值類型上的等號和等號比較運算子
+# <a name="ca1815-override-equals-and-operator-equals-on-value-types"></a>CA1815:必須覆寫實值類型上的 Equals 方法和等號比較運算子
 
 |||
 |-|-|
@@ -61,11 +60,11 @@ ms.locfileid: "49948677"
  [!code-csharp[FxCop.Performance.OverrideEqualsFixed#1](../code-quality/codesnippet/CSharp/ca1815-override-equals-and-operator-equals-on-value-types_2.cs)]
 
 ## <a name="related-rules"></a>相關的規則
- [CA2224：多載等號比較運算子時必須一併覆寫 Equals](../code-quality/ca2224-override-equals-on-overloading-operator-equals.md)
+ [CA2224:覆寫等於多載等號比較運算子](../code-quality/ca2224-override-equals-on-overloading-operator-equals.md)
 
- [CA2231：覆寫 ValueType.Equals 時必須一併多載等號比較運算子](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md)
+ [CA2231：在覆寫 ValueType.Equals 上多載等號運算子](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md)
 
- [CA2226：運算子應該有對稱的多載](../code-quality/ca2226-operators-should-have-symmetrical-overloads.md)
+ [CA2226:運算子應該有對稱的多載](../code-quality/ca2226-operators-should-have-symmetrical-overloads.md)
 
 ## <a name="see-also"></a>另請參閱
  <xref:System.Object.Equals%2A?displayProperty=fullName>

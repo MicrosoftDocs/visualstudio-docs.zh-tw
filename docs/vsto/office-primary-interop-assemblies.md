@@ -1,9 +1,6 @@
 ---
 title: Office 主要 Interop 組件
-ms.custom: ''
 ms.date: 09/20/2018
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b44352996c1f6cf343f8100abb4f75814765c22a
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: f83a2b61a80616fdcdb8b48c7501b4fa47f0b99c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50672986"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53926726"
 ---
 # <a name="office-primary-interop-assemblies"></a>Office 主要 Interop 組件
 
@@ -82,7 +79,7 @@ Visual Studio 會將這些 PIA 複本安裝到開發電腦的下列位置：
 
 Visual Studio 中的每一個 Office 專案範本設計成只能搭配一個 Microsoft Office 應用程式使用。 若要使用多個 Microsoft Office 應用程式中的功能，或是要使用未在 Visual Studio 中擁有專案之應用程式或元件中的功能，您必須加入所需 PIA 的參考。  
   
-在大部分情況下，您應該將參考加入至 Visual Studio 的 安裝 Pia`%ProgramFiles%\Microsoft Visual Studio 12.0\Visual Studio Tools for Office\PIA\`目錄。 這些版本的組件出現在**Framework**索引標籤**參考管理員** 對話方塊。 如需詳細資訊，請參閱 <<c0> [ 如何： 透過主要 interop 組件的目標 Office 應用程式](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)。  
+在大部分情況下，您應該將參考加入至 Visual Studio 的 安裝 Pia`%ProgramFiles%\Microsoft Visual Studio 12.0\Visual Studio Tools for Office\PIA\`目錄。 這些版本的組件出現在**Framework**索引標籤**參考管理員** 對話方塊。 如需詳細資訊，請參閱[＜How to：目標 Office 應用程式可以透過主要 interop 組件](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)。  
   
 如果您已在全域組件快取中安裝及註冊 PIA，這些版本的組件會顯示在 [參考管理員]  對話方塊的 [COM]  索引標籤上。 您應該避免加入這些版本的組件參考，因為使用這些版本的組件參考可能會發生一些開發問題。 例如，如果您在全域組件快取中註冊了不同版本的 PIA，您的專案將會自動建置為最後註冊的組件版本 (即使在 [參考管理員]  對話方塊的 [COM]  索引標籤上指定了不同版本的組件亦然)。  
   
@@ -113,7 +110,7 @@ Visual Studio 中的每一個 Office 專案範本設計成只能搭配一個 Mic
 |Microsoft Publisher 14.0 物件程式庫<br /><br /> Microsoft Publisher 15.0 物件程式庫|Microsoft.Office.Interop.Publisher.dll|  
 |Microsoft SharePoint Designer 14.0 Web 物件參考庫|Microsoft.Office.Interop.SharePointDesigner.dll|  
 |Microsoft SharePoint Designer 14.0 Page 物件參考庫|Microsoft.Office.Interop.SharePointDesignerPage.dll|  
-|Microsoft 智慧型標記 2.0 類型程式庫**附註：** 中已被取代的智慧標籤[!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)]和[!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)]。|Microsoft.Office.Interop.SmartTag.dll|  
+|Microsoft Smart Tags 2.0 類型程式庫**附註：** 智慧標籤在 [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)] 和 [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)]中已被取代。|Microsoft.Office.Interop.SmartTag.dll|  
 |Microsoft Visio 14.0 類型程式庫<br /><br /> Microsoft Visio 15.0 類型程式庫|Microsoft.Office.Interop.Visio.dll|  
 |Microsoft Visio 14.0 Save As Web 類型程式庫<br /><br /> Microsoft Visio 15.0 Save As Web 類型程式庫|Microsoft.Office.Interop.Visio.SaveAsWeb.dll|  
 |Microsoft Visio 14.0 Drawing Control 類型程式庫<br /><br /> Microsoft Visio 15.0 Drawing Control 類型程式庫|Microsoft.Office.Interop.VisOcx.dll|  
@@ -126,11 +123,11 @@ Visual Studio 中的每一個 Office 專案範本設計成只能搭配一個 Mic
 
 例如，當參考 [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)] 組件的方案會在具有相同主要 Interop 組件之 [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] 版本的電腦上執行時，繫結重新導向組件會指示 [!INCLUDE[dnprdnshort](../sharepoint/includes/dnprdnshort-md.md)] 執行階段載入 [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] 版本的主要 Interop 組件。 
 
-如需詳細資訊，請參閱 <<c0> [ 如何： 啟用和停用自動繫結重新導向](/dotnet/framework/configure-apps/how-to-enable-and-disable-automatic-binding-redirection)。  
+如需詳細資訊，請參閱[＜How to：啟用和停用自動繫結重新導向](/dotnet/framework/configure-apps/how-to-enable-and-disable-automatic-binding-redirection)。  
   
 ## <a name="see-also"></a>另請參閱  
 
-- [如何： 透過主要 interop 組件的目標 Office 應用程式](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)   
+- [如何：透過主要 interop 組件的目標 Office 應用程式](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)   
 - [Excel 物件模型概觀](../vsto/excel-object-model-overview.md)   
 - [InfoPath 方案](../vsto/infopath-solutions.md)   
 - [Outlook 物件模型概觀](../vsto/outlook-object-model-overview.md)   
@@ -139,5 +136,3 @@ Visual Studio 中的每一個 Office 專案範本設計成只能搭配一個 Mic
 - [Visio 物件模型概觀](../vsto/visio-object-model-overview.md)   
 - [Word 物件模型概觀](../vsto/word-object-model-overview.md)   
 - [一般參考&#40;在 Visual Studio 中的 Office 程式開發&#41;](../vsto/general-reference-office-development-in-visual-studio.md)  
-  
-  

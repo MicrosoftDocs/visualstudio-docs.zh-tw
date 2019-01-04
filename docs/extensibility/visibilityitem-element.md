@@ -1,9 +1,6 @@
 ---
 title: VisibilityItem 元素 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - VisibilityItem element (VSCT XML schema)
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3abf3a93db79ac347931acf9275065eb0d085ca4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8eca5e797fe41c56cfcdbe1b1678c0824f3b93b2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49920176"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53939459"
 ---
 # <a name="visibilityitem-element"></a>VisibilityItem 元素
 `VisibilityItem`元素會決定的命令和工具列靜態的可見性。 命令或功能表上，以及相關聯的命令 UI 內容，就會識別每個項目。 Visual Studio 會偵測命令、 功能表和工具列和其可見性，而不必載入 Vspackage，在定義它們。 IDE 使用<xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.IsCmdUIContextActive%2A>方法，以判斷是否為作用中命令 UI 內容。  
@@ -46,9 +43,9 @@ ms.locfileid: "49920176"
   
 |屬性|描述|  
 |---------------|-----------------|  
-|guid|必要。 GUID/識別碼命令識別碼的 GUID。|  
-|id|必要。 GUID/識別碼的命令識別項的識別碼。|  
-|內容|必要。 此命令會顯示 UI 內容。|  
+|guid|必要項。 GUID/識別碼命令識別碼的 GUID。|  
+|id|必要項。 GUID/識別碼的命令識別項的識別碼。|  
+|內容|必要項。 此命令會顯示 UI 內容。|  
 |條件|選擇性。 請參閱[條件式屬性](../extensibility/vsct-xml-schema-conditional-attributes.md)。|  
   
 ### <a name="child-elements"></a>子元素  
@@ -67,7 +64,7 @@ ms.locfileid: "49920176"
   
 ```xml  
 <VisibilityConstraints>  
-  <VisibilityItem guid="cmdSetGuidMyProductCommands"     id="cmdidAddWidget"  
+  <VisibilityItem guid="cmdSetGuidMyProductCommands"     id="cmdidAddWidget"  
     context="guidNotViewSourceMode"/>  
 </VisibilityConstraints>  
 ```  

@@ -21,13 +21,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 21a32cf13f598c894ebc7841f5ef4a0af3af82ed
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: bb354e3cd9f418b9a4a93d1cb9781a372dc9fa72
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49878969"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53886081"
 ---
 # <a name="customize-code-maps-by-editing-the-dgml-files"></a>Customize code maps by editing the DGML files
 

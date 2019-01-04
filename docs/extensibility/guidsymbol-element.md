@@ -1,9 +1,6 @@
 ---
 title: GuidSymbol 元素 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - VSCT XML schema elements, GuidSymbol
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 16e7a1b84a6baa26b69545b3fa55e4434e5998f3
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: a010a4ea3e135dab9d80cf84edf651df966bf271
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39500065"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53902275"
 ---
 # <a name="guidsymbol-element"></a>GuidSymbol 元素
 `GuidSymbol`項目包含 guid: id 配對，表示功能表、 群組或命令的 GUID。 識別碼是來自`IDSymbol`中的項目`GuidSymbol`項目。 `GuidSymbol`項目具有`name`提供的 GUID，包含此功能的易記名稱的屬性`value`屬性。  
@@ -40,8 +37,8 @@ ms.locfileid: "39500065"
   
 |屬性|描述|  
 |---------------|-----------------|  
-|name|必要。 GUID 符號名稱。|  
-|value|必要。 GUID 符號的 GUID。|  
+|名稱|必要項。 GUID 符號名稱。|  
+|value|必要項。 GUID 符號的 GUID。|  
   
 ### <a name="child-elements"></a>子元素  
   

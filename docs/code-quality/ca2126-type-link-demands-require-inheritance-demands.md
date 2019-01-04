@@ -1,8 +1,7 @@
 ---
-title: CA2126：必須同時具有類型連結要求和繼承要求
+title: CA2126:必須同時具有類型連結要求和繼承要求
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA2126
@@ -20,20 +19,20 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 82fe9045173e65b24204a3b04e12b6a7f655c651
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 834f120994070e055fe5ac417d1fb39830c7bcef
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45548393"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53904136"
 ---
-# <a name="ca2126-type-link-demands-require-inheritance-demands"></a>CA2126：必須同時具有類型連結要求和繼承要求
+# <a name="ca2126-type-link-demands-require-inheritance-demands"></a>CA2126:必須同時具有類型連結要求和繼承要求
 
 |||
 |-|-|
 |TypeName|TypeLinkDemandsRequireInheritanceDemands|
 |CheckId|CA2126|
-|類別|Microsoft.Security|
+|分類|Microsoft.Security|
 |中斷變更|中斷|
 
 ## <a name="cause"></a>原因
@@ -56,13 +55,13 @@ ms.locfileid: "45548393"
  [!code-csharp[FxCop.Security.TypesWithLinkDemands#1](../code-quality/codesnippet/CSharp/ca2126-type-link-demands-require-inheritance-demands_1.cs)]
 
 ## <a name="related-rules"></a>相關的規則
- [CA2108：必須檢查實值型別上的宣告式安全性](../code-quality/ca2108-review-declarative-security-on-value-types.md)
+ [CA2108:必須檢閱實值型別上的宣告式安全性](../code-quality/ca2108-review-declarative-security-on-value-types.md)
 
- [CA2112：受保護類型不應該公開欄位](../code-quality/ca2112-secured-types-should-not-expose-fields.md)
+ [CA2112:受保護的類型不應該公開欄位](../code-quality/ca2112-secured-types-should-not-expose-fields.md)
 
- [CA2122：不要間接公開具有連結要求的方法](../code-quality/ca2122-do-not-indirectly-expose-methods-with-link-demands.md)
+ [CA2122:不要間接公開具有連結要求的方法](../code-quality/ca2122-do-not-indirectly-expose-methods-with-link-demands.md)
 
- [CA2123：覆寫連結要求應該與基底相同](../code-quality/ca2123-override-link-demands-should-be-identical-to-base.md)
+ [CA2123:覆寫連結要求應該與基底相同](../code-quality/ca2123-override-link-demands-should-be-identical-to-base.md)
 
 ## <a name="see-also"></a>另請參閱
 

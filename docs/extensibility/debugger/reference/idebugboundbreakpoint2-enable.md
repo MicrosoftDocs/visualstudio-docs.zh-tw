@@ -1,9 +1,6 @@
 ---
 title: IDebugBoundBreakpoint2::Enable |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugBoundBreakpoint2::Enable
@@ -16,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b3f8589e8e7084853a4db5bb39b79c1abd6ee293
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b0dbebaa812b3ce4f0d7ca9a71d77ea6e39bc5a8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49936635"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53986307"
 ---
 # <a name="idebugboundbreakpoint2enable"></a>IDebugBoundBreakpoint2::Enable
 啟用或停用中斷點。  
@@ -29,13 +26,13 @@ ms.locfileid: "49936635"
 ## <a name="syntax"></a>語法  
   
 ```cpp  
-HRESULT Enable(   
+HRESULT Enable(   
    BOOL fEnable  
 );  
 ```  
   
 ```csharp  
-int Enable(   
+int Enable(   
    int fEnable  
 );  
 ```  

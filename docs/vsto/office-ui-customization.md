@@ -1,9 +1,6 @@
 ---
 title: Office UI 自訂
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 48c7fe1948231f88aba8309d6d06186848d32455
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f776fc7972272804adaf6fe4af8f7e3f3c0edc53
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49836759"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53924822"
 ---
 # <a name="office-ui-customization"></a>Office UI 自訂
   您可以使用 Visual Studio 中的 Office 程式開發人員工具，自訂 Microsoft Office 應用程式的使用者介面 (UI)。 本主題在下列各節中描述您可以自訂的 UI 功能：  
@@ -96,7 +93,7 @@ ms.locfileid: "49836759"
  如需詳細資訊，請參閱 <<c0> [ 主項目和裝載控制項概觀](../vsto/host-items-and-host-controls-overview.md)並[Windows forms 上的控制項 Office 文件概觀](../vsto/windows-forms-controls-on-office-documents-overview.md)。  
   
 ##  <a name="Shortcut"></a> 快顯功能表  
- 在文件或應用程式視窗上按一下滑鼠右鍵時，會出現快顯功能表。 您可以設定快顯功能表在事件發生之後出現，例如使用者以滑鼠右鍵按一下文件、活頁簿或主控制項之後。 您可以將多個不同的功能表命令或控制項加入快顯功能表。 使用 XML 建立快顯功能表。 如果您加入**功能區 (XML)** 項目加入 Office 專案，您可以將 XML 加入功能區 XML 檔案，以建立快顯功能表。 如需使用 XML 來建立快顯功能表的詳細資訊，請參閱[如何： 將命令加入至捷徑功能表](../vsto/how-to-add-commands-to-shortcut-menus.md)。  
+ 在文件或應用程式視窗上按一下滑鼠右鍵時，會出現快顯功能表。 您可以設定快顯功能表在事件發生之後出現，例如使用者以滑鼠右鍵按一下文件、活頁簿或主控制項之後。 您可以將多個不同的功能表命令或控制項加入快顯功能表。 使用 XML 建立快顯功能表。 如果您加入**功能區 (XML)** 項目加入 Office 專案，您可以將 XML 加入功能區 XML 檔案，以建立快顯功能表。 如需使用 XML 來建立快顯功能表的詳細資訊，請參閱[How to:將命令加入至捷徑功能表](../vsto/how-to-add-commands-to-shortcut-menus.md)。  
   
 ## <a name="see-also"></a>另請參閱  
  [功能區概觀](../vsto/ribbon-overview.md)   
@@ -105,8 +102,6 @@ ms.locfileid: "49836759"
  [建立 Outlook 表單區域](../vsto/creating-outlook-form-regions.md)   
  [自訂工作窗格](../vsto/custom-task-panes.md)   
  [在 Office 方案中使用 WPF 控制項](../vsto/using-wpf-controls-in-office-solutions.md)   
- [如何： 在功能區顯示開發人員索引標籤](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)   
- [如何： 顯示增益集使用者介面錯誤](../vsto/how-to-show-add-in-user-interface-errors.md)   
- [逐步解說： 使用收集資料，在 Windows form](../vsto/walkthrough-collecting-data-using-a-windows-form.md)  
-  
-  
+ [如何：在功能區顯示開發人員索引標籤](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)   
+ [如何：顯示增益集使用者介面錯誤](../vsto/how-to-show-add-in-user-interface-errors.md)   
+ [逐步解說：使用 Windows form 收集資料](../vsto/walkthrough-collecting-data-using-a-windows-form.md)  

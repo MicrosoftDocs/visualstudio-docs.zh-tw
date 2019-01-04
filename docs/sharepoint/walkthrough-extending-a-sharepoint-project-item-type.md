@@ -1,9 +1,6 @@
 ---
-title: 逐步解說： 擴充 SharePoint 專案項目類型 |Microsoft Docs
-ms.custom: ''
+title: 逐步解說：擴充 SharePoint 專案項目類型 |Microsoft Docs
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,14 +14,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 756486daa709efd6ce1ff697d6d190bb7f4a2e34
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: a32182b4df4851bb7befb1a95af70d2e4da6666c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295718"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53868663"
 ---
-# <a name="walkthrough-extend-a-sharepoint-project-item-type"></a>逐步解說： 擴充 SharePoint 專案項目類型
+# <a name="walkthrough-extend-a-sharepoint-project-item-type"></a>逐步解說：擴充 SharePoint 專案項目類型
   您可以使用**Business Data Connectivity 模型**專案項目，在 SharePoint 中建立的商務資料連接 (BDC) 服務的模型。 根據預設，當您建立模型時使用這個專案項目中，模型中的資料不是顯示給使用者。 您也必須在 SharePoint 中，讓使用者可以檢視的資料建立外部清單。  
   
  在本逐步解說中，您將建立的擴充功能**Business Data Connectivity 模型**專案項目。 開發人員可以使用擴充功能，其 BDC 模型中會顯示資料的專案中建立外部清單。 本逐步解說將示範下列工作：  
@@ -299,5 +296,3 @@ ms.locfileid: "51295718"
  [擴充 SharePoint 專案系統](../sharepoint/extending-the-sharepoint-project-system.md)   
  [建立 business data connectivity 模型](../sharepoint/creating-a-business-data-connectivity-model.md)   
  [設計商務資料連接模型](../sharepoint/designing-a-business-data-connectivity-model.md)  
-  
-  

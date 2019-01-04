@@ -10,13 +10,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 74172b6e7f03d7e3baef329f053fc4a83ee6ae28
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: 749c75af9056bc50689c47ca9ef8de037dfd71e5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50967385"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53908640"
 ---
 # <a name="understanding-models-classes-and-relationships"></a>了解模型、類別和關聯性
 特定領域語言 (DSL) 是由其 DSL 定義檔案，連同您可能會撰寫任何自訂程式碼定義。 大部分的 DSL 方案中的程式碼會產生這個檔案。
@@ -54,9 +53,9 @@ ms.locfileid: "50967385"
 
  ![內嵌和參考關聯性](../modeling/media/music_classes.png)
 
- 下圖顯示四個網域類別： 音樂、 專輯、 演出者與歌曲。 網域類別定義網域屬性，例如名稱、 標題和等等。 在執行個體模型中，其中部分屬性的值會顯示在圖表上。
+ 下圖顯示四個網域類別：音樂、 專輯、 演出者與歌曲。 網域類別定義網域屬性，例如名稱、 標題和等等。 在執行個體模型中，其中部分屬性的值會顯示在圖表上。
 
- 類別之間是網域關聯性： MusicHasAlbums、 MusicHasArtists、 AlbumbHasSongs 和 ArtistAppearedOnAlbums。 關聯性具有多重性，例如 1..1，0..*。 例如，必須與相關 AlbumHasSongs 關聯性透過一個專輯的所有歌曲。 每個專輯可以有任意數目的歌曲。
+ 類別之間是網域關聯性：MusicHasAlbums、 MusicHasArtists、 AlbumbHasSongs 和 ArtistAppearedOnAlbums。 關聯性具有多重性，例如 1..1，0..*。 例如，必須與相關 AlbumHasSongs 關聯性透過一個專輯的所有歌曲。 每個專輯可以有任意數目的歌曲。
 
 ### <a name="rearranging-the-dsl-definition-diagram"></a>重新排列 DSL 定義圖表
  請注意網域類別可以在 DSL 定義圖表中，會出現許多次專輯未在此圖中。 總是有一個主要檢視，而且不可以有一些*參考*檢視。

@@ -1,9 +1,6 @@
 ---
 title: 色彩和樣式設定適用於 Visual Studio |Microsoft Docs
-ms.custom: ''
 ms.date: 07/31/2017
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 0e384ea1-4d9e-4307-8884-6e183900732c
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5d8285ad08a9ad83ecd137223459a6b29cb7ae69
-ms.sourcegitcommit: a34b7d4fdb3872865fcf98ba24a0fced58532adc
+ms.openlocfilehash: 12555b48550d252ce125ac437c1e30d5ae22fae9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/12/2018
-ms.locfileid: "51561708"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53914604"
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>色彩和樣式設定適用於 Visual Studio
 
@@ -287,7 +284,7 @@ Windows 會使用數個高對比系統層級佈景主題，增加文字、 背�
 
 ### <a name="system-color-set"></a>系統色彩設定
 
-在資料表[WPF 團隊部落格： SystemColors 參考](https://blogs.msdn.microsoft.com/wpf/2010/11/30/systemcolors-reference/)表示一組完整的系統色彩的名稱，以及對應的色調顯示在每個佈景主題。
+在資料表[WPF 團隊部落格：SystemColors 參考](https://blogs.msdn.microsoft.com/wpf/2010/11/30/systemcolors-reference/)表示一組完整的系統色彩的名稱，以及對應的色調顯示在每個佈景主題。
 
 當套用這個有限的一組在 ui 中，色彩*預計將會遺失微妙的細節，原本在 「 標準 」 佈景主題中*。 以下是範例 UI 具有難以察覺的灰色色彩，用於區別的工具視窗內的區域。 與同一個視窗顯示高對比模式中搭配時，您可以看到所有的背景是相同的色調，這些區域的框線會以單獨的框線：
 
@@ -365,7 +362,7 @@ VSPackage 可以控制的字型和色彩，透過自訂分類，和 [字型和�
 | 名稱 | 類型 | 資料 | 描述 |
 | --- | --- | --- | --- |
 | 分類 | REG_SZ | GUID | 若要識別類別目錄建立 GUID |
-| Package | REG_SZ | GUID | 服務的 GUID VSPackage 支援類別 |
+| 封裝 | REG_SZ | GUID | 服務的 GUID VSPackage 支援類別 |
 
  在登錄中指定的服務必須提供實作[IVsFontAndColorDefaults](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolordefaults)對應分類。
 
@@ -378,7 +375,7 @@ VSPackage 可以控制的字型和色彩，透過自訂分類，和 [字型和�
 | 名稱 | 類型 | 資料 | 描述 |
 |--- | --- | --- | --- |
 | 分類 | REG_SZ | GUID | 若要識別類別目錄建立 GUID |
-| Package | REG_SZ | GUID | 服務的 GUID VSPackage 支援類別 |
+| 封裝 | REG_SZ | GUID | 服務的 GUID VSPackage 支援類別 |
 
 在登錄中指定的服務必須提供實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup>對應的群組。
 

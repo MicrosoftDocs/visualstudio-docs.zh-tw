@@ -1,13 +1,8 @@
 ---
-title: 如何： 加入資源檔 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：加入資源檔 |Microsoft Docs
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -18,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0091054c0c0d2cfb7f19f2ca46839cfdcf47832b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1e21aefb95dab4b4a6fdc852159c7a0f226e613f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49861185"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53877623"
 ---
-# <a name="how-to-add-a-resource-file"></a>如何： 加入資源檔
+# <a name="how-to-add-a-resource-file"></a>HOW TO：加入資源檔
   方案節點，然後在 [方案總管] 中的功能節點的捷徑功能表上，是將資源檔的命令。 如需詳細資訊，請參閱 <<c0> [ 當地語系化 SharePoint 方案](../sharepoint/localizing-sharepoint-solutions.md)。  
   
 ### <a name="to-add-a-global-resource-file-to-a-sharepoint-solution"></a>若要將全域資源檔新增至 SharePoint 方案  
@@ -57,5 +52,3 @@ ms.locfileid: "49861185"
   
 ## <a name="see-also"></a>另請參閱
  [開發 SharePoint 方案](../sharepoint/developing-sharepoint-solutions.md)  
-  
- 

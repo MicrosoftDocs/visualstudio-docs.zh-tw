@@ -1,9 +1,6 @@
 ---
 title: IDebugDocumentContext2::EnumCodeContexts |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugDocumentContext2::EnumCodeContexts
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7a56f4b33c8a07437d255ab0d29b6f6b2cb81267
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 05ae1c136997cd6ae564a9bc0526d908bb8016b7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49948001"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53929759"
 ---
 # <a name="idebugdocumentcontext2enumcodecontexts"></a>IDebugDocumentContext2::EnumCodeContexts
 擷取與此文件內容相關聯的所有程式碼內容的清單。  
@@ -28,13 +25,13 @@ ms.locfileid: "49948001"
 ## <a name="syntax"></a>語法  
   
 ```cpp  
-HRESULT EnumCodeContexts(   
+HRESULT EnumCodeContexts(   
    IEnumDebugCodeContexts2** ppEnumCodeCxts  
 );  
 ```  
   
 ```csharp  
-int EnumCodeContexts(   
+int EnumCodeContexts(   
    out IEnumDebugCodeContexts2 ppEnumCodeCxts  
 );  
 ```  

@@ -12,13 +12,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 2181e9f89fc8d859bfda9a29de6af8726ae5aef3
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: cf200620036c41fe4ed975fa6ff60bd1438b7d88
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50967424"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53821033"
 ---
 # <a name="customizing-element-creation-and-movement"></a>自訂項目的建立和移動
 
@@ -75,7 +74,7 @@ EMD 的責任是決定如何在模型中的特定位置合併物件群組。 特
 >
 > 如果您想要確定新的項目或新的關聯性一律處理您的自訂程式碼，請考慮定義`AddRule`上的內嵌關聯性和`DeleteRule`項目的網域類別上。 如需詳細資訊，請參閱 <<c0> [ 規則傳播變更內模型](../modeling/rules-propagate-changes-within-the-model.md)。
 
-## <a name="example-defining-an-emd-without-custom-code"></a>範例： 定義 EMD 不需要自訂程式碼
+## <a name="example-defining-an-emd-without-custom-code"></a>範例：定義 EMD 不需要自訂程式碼
 
 下列範例可讓使用者在同一時間建立項目和連接器，從工具箱拖曳至 「 現有 」 圖形拖曳。 此範例會將 EMD 加入至 DSL 定義中。 之前這項修改，使用者可以將工具拖曳至圖表，但不是到現有的圖形。
 
@@ -145,7 +144,7 @@ EMD 的責任是決定如何在模型中的特定位置合併物件群組。 特
 
      如果您撰寫自訂程式碼，會建立新的項目時，您可以明確地使用叫用 EMD`ElementOperations.Merge`方法。 這可確保，您的程式碼連結新項目到模型中的其他作業相同的方式。 如需詳細資訊，請參閱 <<c0> [ 自訂複製行為](../modeling/customizing-copy-behavior.md)。
 
-## <a name="example-adding-custom-accept-code-to-an-emd"></a>範例： 將自訂接受的程式碼加入至 EMD
+## <a name="example-adding-custom-accept-code-to-an-emd"></a>範例：自訂接受的程式碼加入至 EMD
 
 EMD 中加入自訂程式碼，您可以定義更複雜的合併行為。 這個簡單的範例可防止使用者將在超過固定數目的項目加入至圖表。 下列範例會修改預設 EMD 隨附一個內嵌關聯性。
 
@@ -161,7 +160,7 @@ EMD 中加入自訂程式碼，您可以定義更複雜的合併行為。 這個
 
 4.  重建方案。 這會使比平時更長，因為產生的程式碼將會從模型中更新。
 
-     建置錯誤會報告，類似於: 「 Company.ElementMergeSample.ExampleElement 不會包含定義的 CanMergeExampleElement...」
+     建置錯誤會報告，類似於：「 Company.ElementMergeSample.ExampleElement 不會包含定義的 CanMergeExampleElement...」
 
      您必須實作方法`CanMergeExampleElement`。
 
@@ -208,7 +207,7 @@ EMD 中加入自訂程式碼，您可以定義更複雜的合併行為。 這個
 
     3.  請確認您無法使用任何一種方式，將四個以上的項目新增至模型。 這是因為它們都使用項目合併指示詞。
 
-## <a name="example-adding-custom-merge-code-to-an-emd"></a>範例： 將自訂合併程式碼加入至 EMD
+## <a name="example-adding-custom-merge-code-to-an-emd"></a>範例：合併自訂的程式碼加入至 EMD
 
 在自訂的合併程式碼，您可以定義在使用者拖曳的工具，或貼上到項目時，會發生什麼事。 有兩種方式可定義自訂的合併：
 

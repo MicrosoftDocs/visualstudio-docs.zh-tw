@@ -1,9 +1,6 @@
 ---
-title: 如何： 將屬性加入至 SharePoint 專案項目擴充功能 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：將屬性加入至 SharePoint 專案項目擴充功能 |Microsoft Docs
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,17 +14,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1af848f432183153707b2debfed563f3a00d4156
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 424e6d6295b0a9af1ec5d155353f766d4ba17689
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36758095"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53950182"
 ---
-# <a name="how-to-add-a-property-to-a-sharepoint-project-item-extension"></a>如何： 將屬性加入至 SharePoint 專案項目擴充功能
+# <a name="how-to-add-a-property-to-a-sharepoint-project-item-extension"></a>HOW TO：將屬性加入至 SharePoint 專案項目擴充功能
   您可以使用專案項目擴充功能，將屬性加入至任何已安裝 Visual Studio 中的 SharePoint 專案項目。 屬性會出現在**屬性**視窗中選取的專案項目時**方案總管 中**。  
   
- 下列步驟假設您已建立的專案項目延伸模組。 如需詳細資訊，請參閱 <<c0> [ 如何： 建立 SharePoint 專案項目擴充功能](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md)。  
+ 下列步驟假設您已建立的專案項目延伸模組。 如需詳細資訊，請參閱[＜How to：建立 SharePoint 專案項目擴充功能](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md)。  
   
 ### <a name="to-add-a-property-to-a-project-item-extension"></a>若要將屬性加入至專案項目擴充功能  
   
@@ -51,15 +48,15 @@ ms.locfileid: "36758095"
 ### <a name="specify-the-behavior-of-custom-properties"></a>指定自訂屬性的行為  
  您可以定義自訂屬性如何顯示和行為**屬性**藉由套用屬性 視窗<xref:System.ComponentModel>屬性定義的命名空間。 下列屬性可用於許多案例：  
   
--   <xref:System.ComponentModel.DisplayNameAttribute>： 指定出現在屬性名稱**屬性**視窗。  
+-   <xref:System.ComponentModel.DisplayNameAttribute>：指定出現在屬性名稱**屬性**視窗。  
   
--   <xref:System.ComponentModel.DescriptionAttribute>： 指定描述字串出現在底部**屬性**時選取屬性 視窗。  
+-   <xref:System.ComponentModel.DescriptionAttribute>：指定描述字串出現在底部**屬性**時選取屬性 視窗。  
   
--   <xref:System.ComponentModel.DefaultValueAttribute>： 指定屬性的預設值。  
+-   <xref:System.ComponentModel.DefaultValueAttribute>：指定屬性的預設值。  
   
--   <xref:System.ComponentModel.TypeConverterAttribute>： 指定之間的字串中所顯示的自訂轉換**屬性**視窗而非字串屬性值。  
+-   <xref:System.ComponentModel.TypeConverterAttribute>：指定會顯示在字串之間的自訂轉換**屬性**視窗而非字串屬性值。  
   
--   <xref:System.ComponentModel.EditorAttribute>： 指定自訂編輯器，以便用來修改屬性。  
+-   <xref:System.ComponentModel.EditorAttribute>：指定自訂編輯器，以便用來修改屬性。  
   
 ## <a name="compile-the-code"></a>編譯程式碼  
  這些範例需要參考下列組件的類別庫專案：  
@@ -72,9 +69,7 @@ ms.locfileid: "36758095"
  若要部署的延伸模組，建立[!include[vsprvs](../sharepoint/includes/vsprvs-md.md)]擴充功能 (VSIX) 封裝組件和任何其他您想要將副檔名的檔案。 如需詳細資訊，請參閱 <<c0> [ 部署適用於 Visual Studio 中 SharePoint 工具擴充功能](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)。  
   
 ## <a name="see-also"></a>另請參閱
- [如何： 建立 SharePoint 專案項目擴充功能](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md)   
- [如何： 將捷徑功能表項目新增至 SharePoint 專案項目擴充功能](../sharepoint/how-to-add-a-shortcut-menu-item-to-a-sharepoint-project-item-extension.md)   
+ [如何：建立 SharePoint 專案項目擴充功能](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md)   
+ [如何：將捷徑功能表項目新增至 SharePoint 專案項目擴充功能](../sharepoint/how-to-add-a-shortcut-menu-item-to-a-sharepoint-project-item-extension.md)   
  [擴充 SharePoint 專案項目](../sharepoint/extending-sharepoint-project-items.md)   
- [逐步解說： 擴充 SharePoint 專案項目類型](../sharepoint/walkthrough-extending-a-sharepoint-project-item-type.md)  
-  
-  
+ [逐步解說：擴充 SharePoint 專案項目類型](../sharepoint/walkthrough-extending-a-sharepoint-project-item-type.md)  

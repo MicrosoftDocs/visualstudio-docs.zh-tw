@@ -1,28 +1,27 @@
 ---
-title: CA3076：不安全的 XSLT 指令碼執行
+title: CA3076:不安全的 XSLT 指令碼執行
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 74fe556d775e60dec5dde4528a1924e55ab4c2ed
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: d711aad69dbdf3295ca7b2962a2e2022bd259059
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45546388"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53891043"
 ---
-# <a name="ca3076-insecure-xslt-script-execution"></a>CA3076：不安全的 XSLT 指令碼執行
+# <a name="ca3076-insecure-xslt-script-execution"></a>CA3076:不安全的 XSLT 指令碼執行
 
 |||
 |-|-|
 |TypeName|InsecureXSLTScriptExecution|
 |CheckId|CA3076|
-|類別|Microsoft.Security|
+|分類|Microsoft.Security|
 |中斷變更|非中斷|
 
 ## <a name="cause"></a>原因
@@ -31,7 +30,7 @@ ms.locfileid: "45546388"
 
 ## <a name="rule-description"></a>規則描述
 
-**XSLT**是 World Wide Web Consortium (W3C) 標準，來轉換 XML 資料。 XSLT 通常用來寫入 XML 將資料轉換成其他格式，例如 HTML、 固定長度的文字，以逗號分隔的文字或使用不同的 XML 格式的樣式表。 雖然預設為禁止使用，您仍可以針對專案選擇啟用此項目。
+**XSLT** 是全球資訊網協會 (W3C) 針對 XML 資料轉換的一項標準。 XSLT 通常用來寫入 XML 將資料轉換成其他格式，例如 HTML、 固定長度的文字，以逗號分隔的文字或使用不同的 XML 格式的樣式表。 雖然預設為禁止使用，您仍可以針對專案選擇啟用此項目。
 
 若要確保您不會公開受攻擊面，此規則會觸發每當 XslCompiledTransform。<xref:System.Xml.Xsl.XslCompiledTransform.Load%2A> 接收的不安全組合執行個體<xref:System.Xml.Xsl.XsltSettings>和<xref:System.Xml.XmlResolver>，可讓惡意指令碼處理。
 

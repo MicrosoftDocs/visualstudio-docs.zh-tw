@@ -1,9 +1,6 @@
 ---
 title: Visual Studio 工具列的 Guid 和 Id |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - visual studio groups
@@ -19,12 +16,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6982835b9d3b6259a47439dbe7b1b9252edc3dbe
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 054f4f19d24f2751a560a3d86eae7294aa2bd7dc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39499002"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53850897"
 ---
 # <a name="guids-and-ids-of-visual-studio-toolbars"></a>Visual Studio 識別碼和 Guid 的工具列
 本主題列舉的 GUID 和 ID 值會包含在 Visual Studio 整合式的開發環境 (IDE) 中的工具列，而且包含的群組。 這些值會定義於 *.vsct*安裝為 Visual Studio SDK 的一部分的檔案。 如需詳細資訊，請參閱 < [IDE 定義的命令、 功能表和群組](../../extensibility/internals/ide-defined-commands-menus-and-groups.md)。  

@@ -1,9 +1,6 @@
 ---
-title: 如何： 針對編輯器提供的內容 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：編輯器提供的內容 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - provide context
@@ -13,14 +10,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 848778506bdea1b7bf61b6a94a1fb14908a7b930
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8dec051aae8c5693d18a5cab302714fdf152f8a5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49908908"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53909903"
 ---
-# <a name="how-to-provide-context-for-editors"></a>如何： 提供的編輯器內容
+# <a name="how-to-provide-context-for-editors"></a>HOW TO：編輯器提供的內容
 編輯器，內容為使用中，只有當編輯器具有焦點或之前焦點已移至 工具視窗焦點時。 您可以提供編輯器的內容，執行下列工作：  
   
 1. 建立內容包。  

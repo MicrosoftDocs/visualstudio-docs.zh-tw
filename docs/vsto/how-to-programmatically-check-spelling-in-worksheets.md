@@ -1,9 +1,6 @@
 ---
-title: 如何： 以程式設計方式檢查工作表拼字
-ms.custom: ''
+title: HOW TO：以程式設計方式檢查工作表拼字
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,14 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3d08548d68a413dadd662b89b49e059bdef84a1f
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: ea589f30c026ddf946cb43811818b54d3df9b2e2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35671127"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53899966"
 ---
-# <a name="how-to-programmatically-check-spelling-in-worksheets"></a>如何： 以程式設計方式檢查工作表拼字
+# <a name="how-to-programmatically-check-spelling-in-worksheets"></a>HOW TO：以程式設計方式檢查工作表拼字
   您可以用程式設計方式檢查工作表中的拼字。 如果工作表中有任何拼寫不正確的字，[拼字檢查]  對話方塊就會自動出現。  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
@@ -46,8 +43,6 @@ ms.locfileid: "35671127"
   
 ## <a name="see-also"></a>另請參閱  
  [使用工作表](../vsto/working-with-worksheets.md)   
- [如何： 以程式設計方式執行 Excel 計算](../vsto/how-to-programmatically-run-excel-calculations-programmatically.md)   
+ [如何：以程式設計方式執行 Excel 計算](../vsto/how-to-programmatically-run-excel-calculations-programmatically.md)   
  [NamedRange 控制項](../vsto/namedrange-control.md)   
  [Office 方案中的選擇性參數](../vsto/optional-parameters-in-office-solutions.md)  
-  
-  

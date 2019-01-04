@@ -1,9 +1,6 @@
 ---
 title: 準備 Windows Installer 部署擴充功能 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - vsix msi
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: cc742fecbbe03ff3d3aa0fb3f8d61a9c5f09254b
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: 5ceaa78315c896350f87d216e2cc320b66844999
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46495267"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53931407"
 ---
 # <a name="prepare-extensions-for-windows-installer-deployment"></a>準備 Windows Installer 部署擴充功能
 您無法使用的 Windows Installer 套件 (MSI) 來部署的 VSIX 封裝。 不過，您可以擷取 MSI 部署的 VSIX 套件的內容。 本文件說明如何準備其預設輸出會包含在安裝專案中的 VSIX 套件的專案。  
@@ -59,4 +56,4 @@ ms.locfileid: "46495267"
   
 ## <a name="see-also"></a>另請參閱  
  [Visual Studio installer 部署](https://msdn.microsoft.com/library/121be21b-b916-43e2-8f10-8b080516d2a0)   
- [逐步解說： 建立自訂動作](/previous-versions/visualstudio/visual-studio-2010/d9k65z2d(v=vs.100))
+ [逐步解說：建立自訂動作](/previous-versions/visualstudio/visual-studio-2010/d9k65z2d(v=vs.100))

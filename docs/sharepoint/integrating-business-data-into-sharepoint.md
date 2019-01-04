@@ -1,13 +1,8 @@
 ---
 title: 將商務資料整合至 SharePoint |Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -24,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e75367844a3a62e044a98f9d52c567fcfca3590e
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 194f2e0c88a0cbce9ef34f77246cf7969066833e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118787"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53934436"
 ---
 # <a name="integrate-business-data-into-sharepoint"></a>將商務資料整合到 SharePoint
   您可以將商務資料整合到 SharePoint。 商務資料可來自後端伺服器應用程式，例如[!INCLUDE[TLA#tla_sqlsvr](../sharepoint/includes/tlasharptla-sqlsvr-md.md)]、 Siebel 和 SAP、 或 Web 服務。 使用者可以檢視、 新增、 更新或刪除使用外部清單或在 SharePoint 中的商務資料 Web 組件的商務資料。  使用者也可以存取此資料離線的 Microsoft Office 應用程式，例如 Microsoft Outlook。 如需詳細資訊，請參閱 <<c0> [ 其中可以顯示外部資料的](http://go.microsoft.com/fwlink/?LinkId=169295)。  
@@ -61,4 +56,3 @@ ms.locfileid: "37118787"
 |[建立 business data connectivity 模型](../sharepoint/creating-a-business-data-connectivity-model.md)|示範如何建立新的模型，或匯入您從 SharePoint 匯出模型。|  
 |[設計商務資料連接模型](../sharepoint/designing-a-business-data-connectivity-model.md)|說明如何使用 Visual Studio 設計工具來設計模型的項目。|  
 |[使用 SharePoint Designer vs 的時機。使用 BCS 的 visual Studio 建置方案](http://go.microsoft.com/fwlink/?LinkID=183448)|可協助您決定是否要使用 Visual Studio，或使用 SharePoint Designer 建立 BDC 模型。|  
-  

@@ -1,6 +1,5 @@
 ---
 title: RequiredFrameworkVersion 元素 （Visual Studio 範本） |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -13,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4c219d2f929122163b49d51d5280c25490aaccb1
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: 64faab530e8470ac1efd5ade39f77552371048ef
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53739782"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53872024"
 ---
 # <a name="requiredframeworkversion-element-visual-studio-templates"></a>RequiredFrameworkVersion 元素 （Visual Studio 範本）
 

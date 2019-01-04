@@ -1,9 +1,6 @@
 ---
 title: IDebugProcess2::EnumPrograms |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugProcess2::EnumPrograms
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1d35341309473e3f107649fceb954f77e05640de
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5855f2d861912baf62ac4afcf1db36815e26cb94
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49908645"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53944557"
 ---
 # <a name="idebugprocess2enumprograms"></a>IDebugProcess2::EnumPrograms
 擷取一份此程序所包含的所有程式。  
@@ -28,14 +25,14 @@ ms.locfileid: "49908645"
 ## <a name="syntax"></a>語法  
   
 ```cpp  
-HRESULT EnumPrograms(   
-   IEnumDebugPrograms2** ppEnum  
+HRESULT EnumPrograms(   
+   IEnumDebugPrograms2** ppEnum  
 );  
 ```  
   
 ```csharp  
-int EnumPrograms(   
-   out IEnumDebugPrograms2 ppEnum  
+int EnumPrograms(   
+   out IEnumDebugPrograms2 ppEnum  
 );  
 ```  
   

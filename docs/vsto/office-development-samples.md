@@ -1,9 +1,6 @@
 ---
 title: Office 程式開發範例
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,17 +12,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a082137632399bee10ba2f4f91d00f153e9fe625
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: df2b8cebd7e4d907546b9cdf9aae50b29e5717d6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35671372"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53964529"
 ---
 # <a name="office-development-samples"></a>Office 程式開發範例
   Visual Studio 包含範例應用程式，以示範如何使用 Microsoft Office 開發人員工具建立 Office 方案。 這些範例中的程式碼示範建置 Office 方案時使用的語法、結構和技術。  
   
- 如需最新的範例，請參閱[MSDN 開發人員範例： 透過程式碼認識](http://go.microsoft.com/fwlink/?LinkID=248199)Microsoft 網站上。  
+ 如需最新的範例，請參閱[MSDN 開發人員範例：了解程式碼透過](http://go.microsoft.com/fwlink/?LinkID=248199)Microsoft 網站上。  
   
  [!INCLUDE[note_security_multiplesample](../vsto/includes/note-security-multiplesample-md.md)]  
   
@@ -44,7 +41,5 @@ ms.locfileid: "35671372"
 |VBA 和 VSTO 互通性範例|示範如何從活頁簿中的 Visual Basic for Applications (VBA) 程式碼，呼叫 Excel 文件層級自訂中的方法。<br /><br /> 這個範例僅於線上提供使用。|  
   
 ## <a name="see-also"></a>另請參閱  
- [MSDN 開發人員範例： 透過程式碼範例學習](http://go.microsoft.com/fwlink/?LinkID=248199)   
+ [MSDN 開發人員範例：了解透過程式碼範例](http://go.microsoft.com/fwlink/?LinkID=248199)   
  [在 Office 程式設計中的一般工作](../vsto/common-tasks-in-office-programming.md)  
-  
-  

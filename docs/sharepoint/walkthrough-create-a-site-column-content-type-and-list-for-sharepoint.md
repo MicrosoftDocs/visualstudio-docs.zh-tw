@@ -1,17 +1,12 @@
 ---
-title: 逐步解說： 建立網站資料行、 內容類型，以及適用於 SharePoint 清單 |Microsoft Docs
-ms.custom: ''
+title: 逐步解說：建立網站資料行、 內容類型，以及適用於 SharePoint 清單 |Microsoft Docs
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.ListDesigner.GeneralMessageHelp
 - Microsoft.VisualStudio.SharePoint.Designers.ListDesigner.ViewModels.ListViewModel.SortingAndGrouping
 - VS.SharePointTools.ListDesigner.SortingGrouping
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -24,14 +19,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2fb78f5c40a04bb69d2f95d7f872b05e3d501113
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9bd2673ec63c9476217e13fad40f2316fcdf1886
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49900120"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53852527"
 ---
-# <a name="walkthrough-create-a-site-column-content-type-and-list-for-sharepoint"></a>逐步解說： 建立適用於 SharePoint 的網站資料行、 內容類型和清單
+# <a name="walkthrough-create-a-site-column-content-type-and-list-for-sharepoint"></a>逐步解說：建立 SharePoint 網站資料行、 內容類型和清單
   下列程序示範如何建立自訂的 SharePoint 網站資料行，或*欄位*— 以及使用的網站資料行的內容類型。 它也會示範如何建立會使用新的內容類型的清單。  
   
  本逐步解說包含下列工作：  
@@ -95,7 +90,7 @@ ms.locfileid: "49900120"
     </Field>  
     ```  
   
-4.  使用相同的程序，將兩個站台的資料行新增至專案：**病患識別碼**(類型 ="Integer") 和**醫生名稱**(類型 ="Text")。 將其群組的值設定為**實習課程中的網站欄**。  
+4.  使用相同的程序，會將兩個站台的資料行加入至專案：**病患識別碼**(類型 ="Integer") 和**醫生名稱**(類型 ="Text")。 將其群組的值設定為**實習課程中的網站欄**。  
   
 ## <a name="create-a-custom-content-type"></a>建立自訂的內容類型
  接下來，建立內容類型，根據連絡人內容類型，其中包含您在上一個程序中建立的網站資料行。 藉由現有的內容類型為基礎的內容類型，您可以節省時間，因為基底內容類型提供數個站台的資料行，以用於新的內容類型。  
@@ -229,7 +224,6 @@ ms.locfileid: "49900120"
 ## <a name="see-also"></a>另請參閱
  [建立 SharePoint 網站資料行、 內容類型和清單](../sharepoint/creating-site-columns-content-types-and-lists-for-sharepoint.md)   
  [開發 SharePoint 方案](../sharepoint/developing-sharepoint-solutions.md)   
- [如何： 建立自訂欄位類型](http://go.microsoft.com/fwlink/?LinkId=192079)   
+ [如何：建立自訂欄位類型](http://go.microsoft.com/fwlink/?LinkId=192079)   
  [內容類型](http://go.microsoft.com/fwlink/?LinkId=192080)   
  [資料行](http://go.microsoft.com/fwlink/?LinkId=192081)  
-  

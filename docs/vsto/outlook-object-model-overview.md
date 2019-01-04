@@ -1,9 +1,6 @@
 ---
 title: Outlook 物件模型概觀
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VST.ProjectItem.OutlookAddin
@@ -21,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b6885968385725f4aa7d991309902ca712849c8a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 03bff7f4cd089a635aa2e9eae2391ea0816a1625
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49941187"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53945349"
 ---
 # <a name="outlook-object-model-overview"></a>Outlook 物件模型概觀
   若要開發 Microsoft Office Outlook 的 VSTO 增益集，您可以與 Outlook 物件模型提供的物件進行互動。 Outlook 物件模型會提供表示使用者介面中各種項目的類別和介面。 例如，<xref:Microsoft.Office.Interop.Outlook.Application> 物件表示整個應用程式、<xref:Microsoft.Office.Interop.Outlook.Folder> 物件表示含有電子郵件訊息或其他項目的資料夾，而 <xref:Microsoft.Office.Interop.Outlook.MailItem> 物件則表示電子郵件訊息。  
@@ -35,7 +32,7 @@ ms.locfileid: "49941187"
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
   
- ![影片連結](../vsto/media/playvideo.gif "影片連結")如需相關的影片示範，請參閱[How do i： 使用 Outlook 建立自訂工作報表？](http://go.microsoft.com/fwlink/?LinkID=130315)。  
+ ![影片連結](../vsto/media/playvideo.gif "影片連結")如需相關的影片示範，請參閱[How do i:使用 Outlook 建立自訂工作報表？](http://go.microsoft.com/fwlink/?LinkID=130315).  
   
 ## <a name="access-objects-in-an-outlook-project"></a>存取 Outlook 專案中的物件  
  Outlook 會提供許多您可以與之互動的物件。 若要有效使用物件模型，您應該熟悉下列最上層物件：  
@@ -99,17 +96,17 @@ ms.locfileid: "49941187"
   
  Microsoft.Office.Interop.Outlook.OlDefaultFolders.olFolderInbox 等同**收件匣**在 Outlook 中的資料夾。  
   
- 如需範例，示範如何存取預設值<xref:Microsoft.Office.Interop.Outlook.Folder>並建立新<xref:Microsoft.Office.Interop.Outlook.Folder>，請參閱[如何： 以程式設計方式建立自訂資料夾項目](../vsto/how-to-programmatically-create-custom-folder-items.md)。  
+ 如需範例，示範如何存取預設值<xref:Microsoft.Office.Interop.Outlook.Folder>並建立新<xref:Microsoft.Office.Interop.Outlook.Folder>，請參閱[How to:以程式設計方式建立自訂資料夾項目](../vsto/how-to-programmatically-create-custom-folder-items.md)。  
   
 ### <a name="mailitem-object"></a>MailItem 物件  
  <xref:Microsoft.Office.Interop.Outlook.MailItem> 物件表示電子郵件訊息。 <xref:Microsoft.Office.Interop.Outlook.MailItem> 物件通常是位於 [收件匣] 、[寄件備份] 和 [寄件匣] 這類資料夾中。 <xref:Microsoft.Office.Interop.Outlook.MailItem> 會公開可用來建立和傳送電子郵件訊息的屬性和方法。  
   
- 如需示範如何建立電子郵件訊息的範例，請參閱 <<c0> [ 如何： 以程式設計方式建立電子郵件項目](../vsto/how-to-programmatically-create-an-e-mail-item.md)。  
+ 如需示範如何建立電子郵件訊息的範例，請參閱[How to:以程式設計方式建立電子郵件項目](../vsto/how-to-programmatically-create-an-e-mail-item.md)。  
   
 ### <a name="appointmentitem-object"></a>AppointmentItem 物件  
  <xref:Microsoft.Office.Interop.Outlook.AppointmentItem> 物件表示 [行事曆]  資料夾中的會議、一次性約會或是週期性約會或會議。 <xref:Microsoft.Office.Interop.Outlook.AppointmentItem> 物件含有一些可執行回應或轉寄會議邀請等動作的方法，以及一些可指定地點和時間等會議細節的屬性。  
   
- 如需示範如何建立約會的範例，請參閱 <<c0> [ 如何： 以程式設計方式建立會議邀請](../vsto/how-to-programmatically-create-a-meeting-request.md)。  
+ 如需示範如何建立約會的範例，請參閱[How to:以程式設計方式建立會議邀請](../vsto/how-to-programmatically-create-a-meeting-request.md)。  
   
 ### <a name="taskitem-object"></a>TaskItem 物件  
  <xref:Microsoft.Office.Interop.Outlook.TaskItem> 物件表示要在指定的時間範圍內執行的工作。 <xref:Microsoft.Office.Interop.Outlook.TaskItem> 物件是位在 [工作]  資料夾中。  
@@ -119,7 +116,7 @@ ms.locfileid: "49941187"
 ### <a name="contactitem-object"></a>ContactItem 物件  
  <xref:Microsoft.Office.Interop.Outlook.ContactItem>物件表示中的連絡人**連絡人**資料夾。 <xref:Microsoft.Office.Interop.Outlook.ContactItem> 物件含有它們所表示之人員的各種連絡資訊，例如街道地址、電子郵件地址和電話號碼。  
   
- 如需示範如何建立新的連絡人的範例，請參閱 <<c0> [ 如何： 以程式設計方式將項目新增至 Outlook 連絡人](../vsto/how-to-programmatically-add-an-entry-to-outlook-contacts.md)。 如需示範如何搜尋現有連絡人的範例，請參閱 <<c0> [ 如何： 以程式設計方式搜尋特定連絡人](../vsto/how-to-programmatically-search-for-a-specific-contact.md)。  
+ 如需示範如何建立新的連絡人的範例，請參閱[How to:以程式設計方式將項目新增至 Outlook 連絡人](../vsto/how-to-programmatically-add-an-entry-to-outlook-contacts.md)。 如需示範如何搜尋現有連絡人的範例，請參閱[How to:以程式設計方式搜尋特定連絡人](../vsto/how-to-programmatically-search-for-a-specific-contact.md)。  
   
 ##  <a name="refdoc"></a> 使用 Outlook 物件模型文件  
  如需 Outlook 物件模型的完整資訊，您可以參閱 Outlook 主要 Interop 組件 (PIA) 參考和 VBA 物件模型參考。  
@@ -142,5 +139,4 @@ ms.locfileid: "49941187"
 |[使用郵件項目](../vsto/working-with-mail-items.md)|所提供的主題示範如何使用郵件項目執行工作。|  
 |[使用資料夾](../vsto/working-with-folders.md)|所提供的主題示範如何使用資料夾執行工作。|  
 |[使用行事曆項目](../vsto/working-with-calendar-items.md)|所提供的主題示範如何使用行事曆項目執行工作。|  
-|[如何： 以程式設計方式判斷目前的 Outlook 項目](../vsto/how-to-programmatically-determine-the-current-outlook-item.md)|示範如何顯示目前資料夾的名稱以及已選取項目的某些相關資訊。|  
-  
+|[如何：以程式設計方式判斷目前的 Outlook 項目](../vsto/how-to-programmatically-determine-the-current-outlook-item.md)|示範如何顯示目前資料夾的名稱以及已選取項目的某些相關資訊。|  

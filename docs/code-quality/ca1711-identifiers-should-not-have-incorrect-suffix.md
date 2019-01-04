@@ -1,8 +1,7 @@
 ---
-title: CA1711：識別項名稱不應該使用不正確的後置字元
+title: CA1711:識別項名稱不應該使用不正確的後置字元
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA1711
@@ -16,20 +15,20 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e3c9b23e555d0752ee33f2031fb883bdf50ff897
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 86bcd9373fda82c1f650da88a87d905a7ba1e6a7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45549728"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53920429"
 ---
-# <a name="ca1711-identifiers-should-not-have-incorrect-suffix"></a>CA1711：識別項名稱不應該使用不正確的後置字元
+# <a name="ca1711-identifiers-should-not-have-incorrect-suffix"></a>CA1711:識別項名稱不應該使用不正確的後置字元
 
 |||
 |-|-|
 |TypeName|IdentifiersShouldNotHaveIncorrectSuffix|
 |CheckId|CA1711|
-|類別|Microsoft.Naming|
+|分類|Microsoft.Naming|
 |中斷變更|中斷|
 
 ## <a name="cause"></a>原因
@@ -49,7 +48,7 @@ ms.locfileid: "45549728"
 |字典|<xref:System.Collections.IDictionary?displayProperty=fullName><br /><br /> <xref:System.Collections.Generic.IDictionary%602?displayProperty=fullName>|
 |EventArgs|<xref:System.EventArgs?displayProperty=fullName>|
 |事件處理常式|事件處理常式委派|
-|例外狀況|<xref:System.Exception?displayProperty=fullName>|
+|例外|<xref:System.Exception?displayProperty=fullName>|
 |權限|<xref:System.Security.IPermission?displayProperty=fullName>|
 |Queue|<xref:System.Collections.Queue?displayProperty=fullName>|
 |堆疊|<xref:System.Collections.Stack?displayProperty=fullName>|
@@ -77,7 +76,7 @@ ms.locfileid: "45549728"
 
 ## <a name="related-rules"></a>相關的規則
 
-- [CA1710：識別項應該使用正確的後置字元](../code-quality/ca1710-identifiers-should-have-correct-suffix.md)
+- [CA1710:識別項應該使用正確的後置詞](../code-quality/ca1710-identifiers-should-have-correct-suffix.md)
 
 ## <a name="see-also"></a>另請參閱
 

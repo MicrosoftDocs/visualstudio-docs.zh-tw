@@ -3,7 +3,6 @@ title: 工作流程設計工具-CorrelationInitializers [新增] 對話方塊
 ms.date: 11/04/2016
 ms.topic: reference
 ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 f1_keywords:
 - AddCorrelationInitializers.UI
 ms.assetid: c0517467-d54a-4ee6-aef0-c19b96b6f395
@@ -12,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 724c4e3ac911e5fda62304a08565937f38425368
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 67dea88845ffbfab8350e4a1134e09436c95321b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49948950"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53860346"
 ---
 # <a name="add-correlationinitializers-dialog-box"></a>加入相互關聯初始設定式對話方塊
 

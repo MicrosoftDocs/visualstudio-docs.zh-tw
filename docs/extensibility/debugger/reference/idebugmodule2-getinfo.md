@@ -1,9 +1,6 @@
 ---
 title: IDebugModule2::GetInfo |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugModule2::GetInfo
@@ -16,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 859a85b51e83d438ea4051e2506c2dc0696768b8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0f463da936e84d417fc6f51b79834c24f5a1a7c5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49820677"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53901278"
 ---
 # <a name="idebugmodule2getinfo"></a>IDebugModule2::GetInfo
 取得此模組的相關資訊。  
@@ -29,14 +26,14 @@ ms.locfileid: "49820677"
 ## <a name="syntax"></a>語法  
   
 ```cpp  
-HRESULT GetInfo(   
+HRESULT GetInfo(   
    MODULE_INFO_FIELDS dwFields,  
    MODULE_INFO*       pInfo  
 );  
 ```  
   
 ```cpp  
-int GetInfo(   
+int GetInfo(   
    enum_MODULE_INFO_FIELDS dwFields,  
    MODULE_INFO[]           pInfo  
 );  

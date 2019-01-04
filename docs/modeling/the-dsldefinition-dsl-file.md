@@ -10,13 +10,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 5988876bc1cdc7d186efb60d7d3875f9946bfc7d
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: c0f69d660a1693e42662a82a2a19ce790725fb43
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50967515"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53869251"
 ---
 # <a name="the-dsldefinitiondsl-file"></a>DslDefinition.dsl 檔
 
@@ -97,7 +96,7 @@ ms.locfileid: "50967515"
 
 Moniker 系統要求 XML 樹狀結構中的同層級具有不同名稱。 基於此原因，如果您嘗試儲存具有兩個同名類別 (舉例而言) 的網域指定語言定義，則會發生驗證錯誤。 您應該一律在儲存 DslDefinition.dsl 檔之前更正這類的重複名稱錯誤，以便在稍後正確地重新載入它。
 
-每一種類型都有自己的 Moniker 類型：DomainClassMoniker、DomainRelationshipMoniker 等等。
+每個類型都有它自己的 moniker 類型：DomainClassMoniker、 DomainRelationshipMoniker 等等。
 
 ## <a name="types"></a>型別
 
@@ -228,7 +227,7 @@ Moniker 系統要求 XML 樹狀結構中的同層級具有不同名稱。 基於
 
 每一個關聯性都包含具有下列屬性的來源和目標角色：
 
--   `RolePlayer` 屬性參考連結之執行個體的網域類別：OutPort 適用於來源，InPort 適用於目標。
+-   `RolePlayer`屬性會參考連結的執行個體的網域類別：做為來源，inport 適用於目標 outPort。
 
 -   `Multiplicity` 屬性有四個可能的值 (ZeroMany、ZeroOne、One 和 OneMany)。 此屬性參考可與一個角色扮演者相關聯的關聯性連結數。
 

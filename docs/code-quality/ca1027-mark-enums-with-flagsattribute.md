@@ -1,8 +1,7 @@
 ---
-title: CA1027：必須以 FlagsAttribute 標記列舉
+title: CA1027:必須以 FlagsAttribute 標記列舉
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - MarkEnumsWithFlags
@@ -16,14 +15,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 33dd5d3e4774084ca6b78708a0e617ca87df8ff2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9a559c20cd45ae39210421b647e8efd6c0928ade
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49885638"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53882100"
 ---
-# <a name="ca1027-mark-enums-with-flagsattribute"></a>CA1027：必須以 FlagsAttribute 標記列舉
+# <a name="ca1027-mark-enums-with-flagsattribute"></a>CA1027:必須以 FlagsAttribute 標記列舉
 
 |||
 |-|-|
@@ -47,12 +46,12 @@ ms.locfileid: "49885638"
  如果您不想要組合的列舉值，則隱藏此規則的警告。
 
 ## <a name="example"></a>範例
- 在下列範例中，`DaysEnumNeedsFlags`是一種列舉符合使用需求<xref:System.FlagsAttribute>，但不要讓它。 `ColorEnumShouldNotHaveFlag`列舉型別沒有值的乘冪數，但未正確指定<xref:System.FlagsAttribute>。 這樣會違反規則[CA2217： 不要不以 FlagsAttribute 標記列舉](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)。
+ 在下列範例中，`DaysEnumNeedsFlags`是一種列舉符合使用需求<xref:System.FlagsAttribute>，但不要讓它。 `ColorEnumShouldNotHaveFlag`列舉型別沒有值的乘冪數，但未正確指定<xref:System.FlagsAttribute>。 這樣會違反規則[CA2217:執行不以 FlagsAttribute 標記列舉](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)。
 
  [!code-csharp[FxCop.Design.EnumFlags#1](../code-quality/codesnippet/CSharp/ca1027-mark-enums-with-flagsattribute_1.cs)]
 
 ## <a name="related-rules"></a>相關的規則
- [CA2217：不要以 FlagsAttribute 標記列舉](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)
+ [CA2217:不以 FlagsAttribute 標記列舉](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)
 
 ## <a name="see-also"></a>另請參閱
  <xref:System.FlagsAttribute?displayProperty=fullName>

@@ -1,9 +1,6 @@
 ---
 title: HOW TO：不執行程式碼開啟 Office 方案
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -21,12 +18,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7684fd2d01d0151798c9e59c593e3e0c2acb95b1
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: 59cee99ad603ec1a03f8beffd36b82d4b83ed308
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53646902"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53930094"
 ---
 # <a name="how-to-open-office-solutions-without-running-code"></a>HOW TO：不執行程式碼開啟 Office 方案
   即使使用者的 Office 應用程式中的安全性設定設為 「 高 」，就會執行使用 managed 程式碼擴充功能所建立的 Microsoft Office 方案。 這是因為.NET 組件程式碼安全性由 Microsoft.NET Framework 中，不是由 Microsoft Office。  
@@ -57,5 +54,3 @@ ms.locfileid: "53646902"
  [部署 Office 方案](../vsto/deploying-an-office-solution.md)   
  [設計和建立 Office 方案](../vsto/designing-and-creating-office-solutions.md)   
  [在 Office 方案中的應用程式和部署資訊清單](../vsto/application-and-deployment-manifests-in-office-solutions.md)  
-  
-  

@@ -1,9 +1,6 @@
 ---
-title: 如何： 以程式設計方式複製工作表
-ms.custom: ''
+title: HOW TO：以程式設計方式複製工作表
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: eddecb7bdb087797bc3f9f4abf4841ab4cdf97b5
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: a123191afe2a6aef18e9a4bc64f5bc966db6c479
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35256535"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53871300"
 ---
-# <a name="how-to-programmatically-copy-worksheets"></a>如何： 以程式設計方式複製工作表
+# <a name="how-to-programmatically-copy-worksheets"></a>HOW TO：以程式設計方式複製工作表
   您可以建立一份工作表，並將其插入活頁簿中現有工作表的前面或後面。 如不指定工作表的插入位置，Excel 會建立新的活頁簿以收納新的工作表。  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
@@ -48,12 +45,10 @@ ms.locfileid: "35256535"
 ## <a name="see-also"></a>另請參閱  
  [使用工作表](../vsto/working-with-worksheets.md)   
  [主項目和主控制項概觀](../vsto/host-items-and-host-controls-overview.md)   
- [如何： 以程式設計方式在活頁簿中加入新的工作表](../vsto/how-to-programmatically-add-new-worksheets-to-workbooks.md)   
- [如何： 以程式設計方式從活頁簿中刪除工作表](../vsto/how-to-programmatically-delete-worksheets-from-workbooks.md)   
- [如何： 以程式設計方式選取工作表](../vsto/how-to-programmatically-select-worksheets.md)   
+ [如何：以程式設計方式在活頁簿中加入新的工作表](../vsto/how-to-programmatically-add-new-worksheets-to-workbooks.md)   
+ [如何：以程式設計方式從活頁簿中刪除工作表](../vsto/how-to-programmatically-delete-worksheets-from-workbooks.md)   
+ [如何：以程式設計方式選取工作表](../vsto/how-to-programmatically-select-worksheets.md)   
  [使用擴充的物件自動化 Excel](../vsto/automating-excel-by-using-extended-objects.md)   
  [全域存取 Office 專案中的物件](../vsto/global-access-to-objects-in-office-projects.md)   
  [主項目和主控制項的程式設計限制](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
  [Office 方案中的選擇性參數](../vsto/optional-parameters-in-office-solutions.md)  
-  
-  

@@ -1,9 +1,6 @@
 ---
-title: 如何： 以程式設計方式關閉文件
-ms.custom: ''
+title: HOW TO：以程式設計方式關閉文件
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9a846aded5d24f84fdaeac79a1bad6c61a3f5570
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 7aa33ff010b85d2916c60875297709588534947d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35257770"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53930216"
 ---
-# <a name="how-to-programmatically-close-documents"></a>如何： 以程式設計方式關閉文件
+# <a name="how-to-programmatically-close-documents"></a>HOW TO：以程式設計方式關閉文件
   您可以關閉使用中文件，或者指定要關閉的文件。  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
@@ -65,9 +62,8 @@ ms.locfileid: "35257770"
      [!code-csharp[Trin_VstcoreWordAutomation#4](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#4)]  
   
 ## <a name="see-also"></a>另請參閱  
- [如何： 以程式設計方式開啟現有文件](../vsto/how-to-programmatically-open-existing-documents.md)   
- [如何： 以程式設計方式儲存文件](../vsto/how-to-programmatically-save-documents.md)   
+ [如何：以程式設計方式開啟現有文件](../vsto/how-to-programmatically-open-existing-documents.md)   
+ [如何：以程式設計方式儲存文件](../vsto/how-to-programmatically-save-documents.md)   
  [主項目和主控制項概觀](../vsto/host-items-and-host-controls-overview.md)   
  [主項目和主控制項的程式設計限制](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
  [Office 方案中的選擇性參數](../vsto/optional-parameters-in-office-solutions.md)  
-  

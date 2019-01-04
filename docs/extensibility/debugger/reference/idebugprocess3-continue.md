@@ -1,9 +1,6 @@
 ---
 title: IDebugProcess3::Continue |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugProcess3::Continue
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1e7ec7c63c06cace9f25e19cb552b144e4dc03dc
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4c417998ab9c73ae2b52e297caa9de3dc9874f69
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49931424"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53947695"
 ---
 # <a name="idebugprocess3continue"></a>IDebugProcess3::Continue
 會繼續執行此程序，從停止的狀態。 會保留任何先前的執行狀態 （例如在步驟），並在處理序啟動重新執行。  

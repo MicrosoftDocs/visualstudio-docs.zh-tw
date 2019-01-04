@@ -3,7 +3,6 @@ title: 工作流程設計工具-InitializeCorrelation 活動設計工具
 ms.date: 11/04/2016
 ms.topic: reference
 ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 f1_keywords:
 - System.ServiceModel.Activities.InitializeCorrelation.UI
 ms.assetid: 4c54f34c-ee84-42a6-abb0-ec260c1ccb76
@@ -12,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f72cb538018588ab11335be5a99fe86b5c474c3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 693c0304a8204832c3d3f06eb5587d7274d7d260
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49879879"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53858613"
 ---
 # <a name="initializecorrelation-activity-designer"></a>InitializeCorrelation 活動設計工具
 

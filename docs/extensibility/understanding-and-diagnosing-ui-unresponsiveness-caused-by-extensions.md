@@ -1,21 +1,18 @@
 ---
-title: 了解和診斷 UI 一堆因擴充功能 |Microsoft 文件
-ms.custom: ''
+title: 了解和診斷 UI 無回應延伸模組造成的 |Microsoft Docs
 ms.date: 01/26/2018
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 author: PooyaZv
 ms.author: pozandev
 manager: douge
 ms.workload: multiple
-ms.openlocfilehash: ac962df3bc72d886ffc6d5d495d115abe60d9895
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 461818080afadfde5b378174ecd12775e35c801f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31137472"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53963309"
 ---
-# <a name="understanding-and-diagnosing-ui-unresponsiveness-caused-by-extensions"></a>了解和診斷擴充功能所造成的 UI 沒有回應
+# <a name="understanding-and-diagnosing-ui-unresponsiveness-caused-by-extensions"></a>了解和診斷延伸模組造成 UI 無回應
 
 若要完成。

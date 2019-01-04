@@ -3,7 +3,6 @@ title: 工作流程設計工具-TransactionScope 活動設計工具
 ms.date: 11/04/2016
 ms.topic: reference
 ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Activities.Statements.TransactionScope.UI
 ms.assetid: 8d7ebfc6-7478-4888-b3b0-b14f296096af
@@ -12,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 40adf006b141e930a522a2b80787f8f4dfed0a8e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1e823ea0fa716545dcc2cfba3df3ba93118e65f6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49950561"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53873709"
 ---
 # <a name="transactionscope-activity-designer"></a>TransactionScope 活動設計工具
 

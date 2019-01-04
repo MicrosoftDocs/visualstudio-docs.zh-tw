@@ -1,9 +1,6 @@
 ---
 title: HOW TO：開始自訂功能區
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,12 +15,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e52efc4cfd1252ff908785195df5c06b8bc90baa
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: c393633477debd18857da4296d43b3832e343434
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53647145"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53856822"
 ---
 # <a name="how-to-get-started-customizing-the-ribbon"></a>HOW TO：開始自訂功能區
   若要自訂 Microsoft Office 應用程式的功能區，請新增**功能區 （視覺化設計工具）** 或是**功能區 (XML)** 在 Office 專案的項目。  
@@ -78,5 +75,3 @@ ms.locfileid: "53647145"
  [功能區 XML](../vsto/ribbon-xml.md)   
  [逐步解說：使用功能區設計工具建立自訂的索引標籤](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)   
  [逐步解說：使用功能區 XML 建立自訂的索引標籤](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md)  
-  
-  

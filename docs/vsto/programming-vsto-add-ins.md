@@ -1,9 +1,6 @@
 ---
 title: 程式 VSTO 增益集
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VST.ProjectItem.Addin
@@ -35,12 +32,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 522a3cbac565e217f0b6525fb6288f5b79908a78
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: b3520eb8af160a12de5cb74fa40094004e041c0e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35671186"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53830647"
 ---
 # <a name="program-vsto-add-ins"></a>程式 VSTO 增益集
   當您建立 VSTO 增益集來擴充 Microsoft Office 應用程式時，會直接針對專案中的 `ThisAddIn` 類別撰寫程式碼。 您可以使用這個類別來執行工作，例如存取 Microsoft Office 主應用程式的物件模型、自訂應用程式的使用者介面 (UI)，以及將 VSTO 增益集中的物件公開給其他 Office 解決方案。  
@@ -122,15 +119,15 @@ Excel.Workbook newWorkbook = Globals.ThisAddIn.Application.Workbooks.Add(System.
 |工作|要使用的成員|  
 |----------|-------------------|  
 |載入 VSTO 增益集時，執行程式碼以初始化 VSTO 增益集。|將程式碼加入 `ThisAddIn_Startup` 方法。 這是 <xref:Microsoft.Office.Tools.AddInBase.Startup> 事件的預設事件處理常式。 如需詳細資訊，請參閱 < [Office 專案中的事件](../vsto/events-in-office-projects.md)。|  
-|卸載 VSTO 增益集之前，執行程式碼以清除 VSTO 增益集所使用的資源。|將程式碼加入 `ThisAddIn_Shutdown` 方法。 這是 <xref:Microsoft.Office.Tools.AddInBase.Shutdown> 事件的預設事件處理常式。 如需詳細資訊，請參閱 < [Office 專案中的事件](../vsto/events-in-office-projects.md)。 **注意︰** 在 Outlook 中，依預設`ThisAddIn_Startup`事件處理常式不一定會呼叫 VSTO 增益集卸載時。 如需詳細資訊，請參閱 < [Office 專案中的事件](../vsto/events-in-office-projects.md)。|  
+|卸載 VSTO 增益集之前，執行程式碼以清除 VSTO 增益集所使用的資源。|將程式碼加入 `ThisAddIn_Shutdown` 方法。 這是 <xref:Microsoft.Office.Tools.AddInBase.Shutdown> 事件的預設事件處理常式。 如需詳細資訊，請參閱 < [Office 專案中的事件](../vsto/events-in-office-projects.md)。 **注意：** 在 Outlook 中，當卸載 VSTO 增益集時，預設不一定會呼叫 `ThisAddIn_Startup` 事件處理常式。 如需詳細資訊，請參閱 < [Office 專案中的事件](../vsto/events-in-office-projects.md)。|  
 |顯示自訂工作窗格。|使用 `CustomTaskPanes` 欄位。 如需詳細資訊，請參閱 <<c0> [ 自訂工作窗格](../vsto/custom-task-panes.md)。|  
 |將 VSTO 增益集中的物件公開給其他 Microsoft Office 方案。|覆寫 <xref:Microsoft.Office.Tools.AddInBase.RequestComAddInAutomationService%2A> 方法。 如需詳細資訊，請參閱 <<c0> [ 從其他 Office 方案呼叫 VSTO 增益集的程式碼](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md)。|  
-|實作擴充性介面來自訂 Microsoft Office system 中的功能。|覆寫 <xref:Microsoft.Office.Tools.AddInBase.RequestService%2A> 方法以傳回實作介面的類別執行個體。 如需詳細資訊，請參閱 <<c0> [ 使用擴充性介面自訂 UI 功能](../vsto/customizing-ui-features-by-using-extensibility-interfaces.md)。 **注意︰** 若要自訂功能區 UI，您也可以覆寫<xref:Microsoft.Office.Tools.AddInBase.CreateRibbonExtensibilityObject%2A>方法。|  
+|實作擴充性介面來自訂 Microsoft Office system 中的功能。|覆寫 <xref:Microsoft.Office.Tools.AddInBase.RequestService%2A> 方法以傳回實作介面的類別執行個體。 如需詳細資訊，請參閱 <<c0> [ 使用擴充性介面自訂 UI 功能](../vsto/customizing-ui-features-by-using-extensibility-interfaces.md)。 **注意：** 若要自訂功能區 UI，您也可以覆寫 <xref:Microsoft.Office.Tools.AddInBase.CreateRibbonExtensibilityObject%2A> 方法。|  
   
 ### <a name="understand-the-design-of-the-thisaddin-class"></a>了解 ThisAddIn 類別的設計  
- 在以 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]為目標的專案中， <xref:Microsoft.Office.Tools.AddIn> 是一種介面。 `ThisAddIn` 類別衍生自 <xref:Microsoft.Office.Tools.AddInBase> 類別。 這個基底類別會將其成員的所有呼叫重新導向至 <xref:Microsoft.Office.Tools.AddIn> 中 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]介面的內部實作。  
+ 在以 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]為目標的專案中， <xref:Microsoft.Office.Tools.AddIn> 是一種介面。 `ThisAddIn` 類別衍生自 <xref:Microsoft.Office.Tools.AddInBase> 類別。 這個基底類別會將其成員的所有呼叫重新導向至 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 中 <xref:Microsoft.Office.Tools.AddIn> 介面的內部實作。  
   
- 在 outlook 的 VSTO 增益集專案中`ThisAddIn`類別衍生自`Microsoft.Office.Tools.Outlook.OutlookAddIn`類別在.NET Framework 3.5 為目標的專案，然後從<xref:Microsoft.Office.Tools.Outlook.OutlookAddInBase>專案中的 目標[!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]。 這些基底類別提供了一些額外的功能來支援表單區域。 如需表單區域的詳細資訊，請參閱[建立 Outlook 表單區域](../vsto/creating-outlook-form-regions.md)。  
+ 在 Outlook VSTO 增益集專案中，`ThisAddIn` 類別是衍生自以 .NET Framework 3.5 為目標之專案中的 `Microsoft.Office.Tools.Outlook.OutlookAddIn` 類別，以及以 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 為目標之專案中的 <xref:Microsoft.Office.Tools.Outlook.OutlookAddInBase>。 這些基底類別提供了一些額外的功能來支援表單區域。 如需表單區域的詳細資訊，請參閱[建立 Outlook 表單區域](../vsto/creating-outlook-form-regions.md)。  
   
 ## <a name="customize-the-user-interface-of-microsoft-office-applications"></a>自訂 Microsoft Office 應用程式的使用者介面  
  您可以使用 VSTO 增益集，以程式設計方式自訂 Microsoft Office 應用程式的 UI。 例如，您可以自訂功能區、顯示自訂工作窗格，或建立 Outlook 的自訂表單區域。 如需詳細資訊，請參閱 < [Office UI 自訂](../vsto/office-ui-customization.md)。  
@@ -150,10 +147,8 @@ Excel.Workbook newWorkbook = Globals.ThisAddIn.Application.Workbooks.Add(System.
  [開發 Office 方案](../vsto/developing-office-solutions.md)   
  [擴充 Word 文件和 Excel 活頁簿，VSTO 增益集在執行階段](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)   
  [從其他 Office 方案呼叫 VSTO 增益集的程式碼](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md)   
- [逐步解說： 從 VBA 在 VSTO 增益集中呼叫程式碼](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md)   
+ [逐步解說：從 VBA 呼叫 VSTO 增益集中的程式碼](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md)   
  [使用擴充性介面自訂 UI 功能](../vsto/customizing-ui-features-by-using-extensibility-interfaces.md)   
- [如何： 在 Visual Studio 中建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)   
- [VSTO 增益集的架構](../vsto/architecture-of-vsto-add-ins.md)   
+ [如何：在 Visual Studio 中建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)   
+ [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md)   
  [在 Office 方案中撰寫程式碼](../vsto/writing-code-in-office-solutions.md)  
-  
-  

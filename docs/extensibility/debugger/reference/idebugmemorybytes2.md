@@ -1,9 +1,6 @@
 ---
-title: IDebugMemoryBytes2 |Microsoft 文件
-ms.custom: ''
+title: IDebugMemoryBytes2 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugMemoryBytes2
@@ -15,15 +12,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1a7c7dbc966c6c2747de4c969975ef8455cf6b0e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8a738ecb042fa423cf165a42a9d472e06f23648d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31116854"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53887181"
 ---
 # <a name="idebugmemorybytes2"></a>IDebugMemoryBytes2
-此介面代表位元組的記憶體。  
+此介面代表記憶體位元組。  
   
 ## <a name="syntax"></a>語法  
   
@@ -31,32 +28,32 @@ ms.locfileid: "31116854"
 IDebugMemoryBytes2 : IUnknown  
 ```  
   
-## <a name="notes-for-implementers"></a>實作者注意事項  
+## <a name="notes-for-implementers"></a>實作者的附註  
  偵錯引擎 (DE) 會實作這個介面來代表記憶體中的位元組。  
   
 ## <a name="notes-for-callers"></a>呼叫端資訊  
- [GetMemoryBytes](../../../extensibility/debugger/reference/idebugprogram2-getmemorybytes.md)傳回這個介面可提供存取權的系統記憶體。 [GetMemoryBytes](../../../extensibility/debugger/reference/idebugproperty2-getmemorybytes.md)和[GetMemoryBytes](../../../extensibility/debugger/reference/idebugreference2-getmemorybytes.md)傳回這個介面可提供存取物件的位元組。  
+ [GetMemoryBytes](../../../extensibility/debugger/reference/idebugprogram2-getmemorybytes.md)傳回此介面，以提供系統記憶體的存取權。 [GetMemoryBytes](../../../extensibility/debugger/reference/idebugproperty2-getmemorybytes.md)並[GetMemoryBytes](../../../extensibility/debugger/reference/idebugreference2-getmemorybytes.md)傳回此介面，以提供存取物件的位元組。  
   
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法  
  下表顯示的方法`IDebugMemoryBytes2`。  
   
 |方法|描述|  
 |------------|-----------------|  
-|[ReadAt](../../../extensibility/debugger/reference/idebugmemorybytes2-readat.md)|讀取在指定位置開始的位元組序列。|  
+|[ReadAt](../../../extensibility/debugger/reference/idebugmemorybytes2-readat.md)|讀取指定的位置開始的位元組序列。|  
 |[WriteAt](../../../extensibility/debugger/reference/idebugmemorybytes2-writeat.md)|寫入`dwCount`開始的位元組`pStartContext`。|  
-|[GetSize](../../../extensibility/debugger/reference/idebugmemorybytes2-getsize.md)|取得大小，以位元組為單位，表示此介面的記憶體。|  
+|[GetSize](../../../extensibility/debugger/reference/idebugmemorybytes2-getsize.md)|取得大小，以位元組為單位，此介面所代表的記憶體。|  
   
 ## <a name="remarks"></a>備註  
- 屬性， [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)介面代表陣列提供`IDebugMemoryBytes2`介面，以存取該陣列中的值。  
+ 屬性，如[IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)介面，表示陣列提供`IDebugMemoryBytes2`介面，以存取該陣列中的值。  
   
- Visual Studio**記憶體檢視**呼叫[GetMemoryBytes](../../../extensibility/debugger/reference/idebugprogram2-getmemorybytes.md)擷取`IDebugMemoryBytes2`介面來存取系統記憶體。 取得存取位址由剖析為位址輸入記憶體檢視運算式，並評估剖析的運算式使用[EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md)取得`IDebugProperty2`介面。 呼叫[GetMemoryContext](../../../extensibility/debugger/reference/idebugproperty2-getmemorycontext.md)傳回[IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)描述的記憶體位址。 此記憶體內容會接著傳遞給[ReadAt](../../../extensibility/debugger/reference/idebugmemorybytes2-readat.md)和[WriteAt](../../../extensibility/debugger/reference/idebugmemorybytes2-writeat.md)。  
+ Visual Studio**記憶體檢視**呼叫[GetMemoryBytes](../../../extensibility/debugger/reference/idebugprogram2-getmemorybytes.md)擷取`IDebugMemoryBytes2`介面來存取系統記憶體。 取得要存取位址剖析為位址輸入到記憶體的檢視運算式，然後再評估 剖析的運算式使用[EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md)若要取得`IDebugProperty2`介面。 呼叫[GetMemoryContext](../../../extensibility/debugger/reference/idebugproperty2-getmemorycontext.md)會傳回[IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)描述的記憶體位址。 此記憶體內容會傳遞至[ReadAt](../../../extensibility/debugger/reference/idebugmemorybytes2-readat.md)並[WriteAt](../../../extensibility/debugger/reference/idebugmemorybytes2-writeat.md)。  
   
 ## <a name="requirements"></a>需求  
  標頭： msdbg.h  
   
- 命名空間： Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間:Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
  [核心介面](../../../extensibility/debugger/reference/core-interfaces.md)   

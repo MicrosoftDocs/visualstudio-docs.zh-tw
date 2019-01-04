@@ -3,7 +3,6 @@ title: 工作流程設計工具-CorrelatesOn 定義對話方塊
 ms.date: 11/04/2016
 ms.topic: reference
 ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 f1_keywords:
 - CorrelatesOnDefinition.UI
 ms.assetid: 8b2b627a-f236-4479-aa09-525df65e3413
@@ -12,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3cfd9d43a8152b629635103b399ef0d7566e4867
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4bdc8dd059679c0ba1407585525d30a28dfd8440
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49933114"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53988280"
 ---
 # <a name="correlateson-definition-dialog-box"></a>CorrelatesOn 定義對話方塊
 

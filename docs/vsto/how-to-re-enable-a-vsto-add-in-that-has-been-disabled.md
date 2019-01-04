@@ -1,9 +1,6 @@
 ---
-title: 如何： 重新啟用 VSTO 增益集已停用
-ms.custom: ''
+title: HOW TO：重新啟用 VSTO 增益集已停用
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VST.Warning.DisabledAddIn
@@ -19,14 +16,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c81e44b548f4d1139810780731741a489e624047
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: adcfab22ea9f6acc9c75f59fa17127cab348fc37
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35671493"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53939394"
 ---
-# <a name="how-to-re-enable-a-vsto-add-in-that-has-been-disabled"></a>如何： 重新啟用 VSTO 增益集已停用
+# <a name="how-to-re-enable-a-vsto-add-in-that-has-been-disabled"></a>HOW TO：重新啟用 VSTO 增益集已停用
   Microsoft Office 應用程式可以停用無法如預期般運作的 VSTO 增益集。 如果應用程式在您嘗試進行偵錯時並未載入 VSTO 增益集，表示應用程式可能已經強制停用或非強制停用 VSTO 增益集。  
   
  [!INCLUDE[appliesto_allapp](../vsto/includes/appliesto-allapp-md.md)]  
@@ -80,5 +77,3 @@ ms.locfileid: "35671493"
  [建置 Office 方案](../vsto/building-office-solutions.md)   
  [偵錯 Office 專案](../vsto/debugging-office-projects.md)   
  [程式 VSTO 增益集](../vsto/programming-vsto-add-ins.md)  
-  
-  

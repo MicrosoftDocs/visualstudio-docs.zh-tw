@@ -1,9 +1,6 @@
 ---
-title: 您第一個 VSTO 增益集建立適用於 Excel 的逐步解說：
-ms.custom: ''
+title: 逐步解說：適用於 Excel 建立您第一個 VSTO 增益集
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,14 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6a9b7540a42dbaf7b7079793158d33d761199720
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f803db23d868aa553ef4c1cd898428b64e998c3b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49949899"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53831884"
 ---
-# <a name="walkthrough-create-your-first-vsto-add-in-for-excel"></a>您第一個 VSTO 增益集建立適用於 Excel 的逐步解說：
+# <a name="walkthrough-create-your-first-vsto-add-in-for-excel"></a>逐步解說：適用於 Excel 建立您第一個 VSTO 增益集
   本入門逐步解說將示範如何建立 Microsoft Office Excel 的應用程式層級增益集。 不論開啟哪一份活頁簿，您在這類方案中建立的功能都可供應用程式本身使用。  
   
  [!INCLUDE[appliesto_xlallapp](../vsto/includes/appliesto-xlallapp-md.md)]  
@@ -121,15 +118,15 @@ ms.locfileid: "49949899"
 ## <a name="next-steps"></a>後續步驟  
  現在您已經建立 Excel 的基本 VSTO 增益集，可以從下列主題進一步了解如何開發 VSTO 增益集：  
   
--   您可以在 VSTO 增益集執行的一般程式設計工作：[程式的 VSTO 增益集](../vsto/programming-vsto-add-ins.md)。  
+-   您可以在 VSTO 增益集執行的一般程式設計工作：[程式設計 VSTO 增益集](../vsto/programming-vsto-add-ins.md)。  
   
--   Excel VSTO 增益集特有的程式設計工作： [Excel 方案](../vsto/excel-solutions.md)。  
+-   程式設計特有 Excel VSTO 增益集的工作：[Excel 方案](../vsto/excel-solutions.md)。  
   
--   使用 Excel 物件模型： [Excel 物件模型概觀](../vsto/excel-object-model-overview.md)。  
+-   使用 Excel 物件模型：[Excel 物件模型概觀](../vsto/excel-object-model-overview.md)。  
   
--   自訂 Excel 的使用者介面 (UI)，例如，在功能區中加入自訂索引標籤或建立您自己的自訂工作窗格： [Office UI 自訂](../vsto/office-ui-customization.md)。  
+-   自訂的使用者介面 (UI) 的 Excel，比方說，在功能區中加入自訂索引標籤，或建立您自己的自訂工作窗格：[Office UI 自訂](../vsto/office-ui-customization.md)。  
   
--   建置和偵錯適用於 Excel 的 VSTO 增益集：[建置 Office 方案](../vsto/building-office-solutions.md)。  
+-   建置和偵錯 Excel VSTO 增益集：[建置 Office 方案](../vsto/building-office-solutions.md)。  
   
 -   部署適用於 Excel 的 VSTO 增益集：[部署 Office 方案](../vsto/deploying-an-office-solution.md)。  
   
@@ -142,5 +139,3 @@ ms.locfileid: "49949899"
  [建置 Office 方案](../vsto/building-office-solutions.md)   
  [部署 Office 方案](../vsto/deploying-an-office-solution.md)   
  [Office 專案範本概觀](../vsto/office-project-templates-overview.md)  
-  
-  

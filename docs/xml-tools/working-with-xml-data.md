@@ -2,19 +2,18 @@
 title: 使用 XML 資料
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 579d535348a8f5f2b7c728aa4d8ad5fbb434bdda
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 7ecd138ae1559f75880d343181a4d35b60394b42
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349344"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53834553"
 ---
 # <a name="working-with-xml-data"></a>使用 XML 資料
 

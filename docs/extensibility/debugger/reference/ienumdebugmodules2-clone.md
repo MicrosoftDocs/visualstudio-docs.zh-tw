@@ -1,9 +1,6 @@
 ---
 title: IEnumDebugModules2::Clone |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IEnumDebugModules2::Clone
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1f7c45ca57d3f16e441e60a04f7a9a562258856e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0ac141e5d9c18768b5d8ab4e06aa761c63125a09
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49873912"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53916896"
 ---
 # <a name="ienumdebugmodules2clone"></a>IEnumDebugModules2::Clone
 傳回一份目前的列舉，為個別的物件。  

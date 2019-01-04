@@ -1,9 +1,6 @@
 ---
-title: 如何： 自訂 SharePoint 方案套件 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：自訂 SharePoint 方案套件 |Microsoft Docs
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.RAD.PackageDesignerAdvanced
@@ -13,8 +10,6 @@ f1_keywords:
 dev_langs:
 - VB
 - CSharp
-- VB
-- CSharp
 helpviewer_keywords:
 - SharePoint development in Visual Studio, packages
 author: TerryGLee
@@ -22,14 +17,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: fd1ebe9e49a0b3e26d090fdbbdbbe4dd37c0344a
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 85140f8d85c90d2b58df10a63f50c117e10eb8bd
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118774"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53835392"
 ---
-# <a name="how-to-customize-a-sharepoint-solution-package"></a>如何： 自訂 SharePoint 方案套件
+# <a name="how-to-customize-a-sharepoint-solution-package"></a>HOW TO：自訂 SharePoint 方案套件
   您可以使用 封裝設計工具來建立和自訂套件 (*.wsp*)。 比方說，您可以新增 SharePoint 專案項目及功能，指定是否會重設部署方案時，Web 伺服器，以及設定部署伺服器類型。  
   
 ## <a name="open-the-package-designer"></a>開啟 封裝設計工具  
@@ -47,7 +42,7 @@ ms.locfileid: "37118774"
   
 #### <a name="to-view-the-packaged-manifest-file-by-using-solution-explorer"></a>若要使用方案總管 中檢視封裝的資訊清單檔案  
   
-1.  在 **方案總管**，選擇**顯示所有檔案**。  
+1.  在 [方案總管] 中選擇 [顯示所有檔案]。  
   
 2.  封裝展開，展開 封裝，並開啟*Package.Template.xml*檔案。  
   
@@ -94,4 +89,3 @@ ms.locfileid: "37118774"
   
 ## <a name="see-also"></a>另請參閱
  [封裝和部署 SharePoint 方案](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
-  

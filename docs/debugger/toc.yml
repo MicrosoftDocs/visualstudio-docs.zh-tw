@@ -20,11 +20,11 @@ items:
 - name: 教學課程
   items:
   - name: 了解如何對 C# 偵錯
-    href: getting-started-with-the-debugger.md
+    href: /visualstudio/get-started/csharp/tutorial-debugger?toc=/visualstudio/debugger/toc.json
   - name: 了解如何對 C++ 偵錯
     href: getting-started-with-the-debugger-cpp.md
   - name: 了解如何對 Visual Basic 偵錯
-    href: getting-started-with-the-debugger-vb.md
+    href: /visualstudio/get-started/visual-basic/tutorial-debugger?toc=/visualstudio/debugger/toc.json
   - name: 在偵錯工具中執行 Python 程式碼...
     href: ../python/tutorial-working-with-python-in-visual-studio-step-04-debugging.md
   - name: 對即時 Azure 應用程式進行偵錯
@@ -214,9 +214,9 @@ items:
         items:
         - name: 視覺化檢視架構
           href: visualizer-architecture.md
-        - name: 逐步解說：使用 C# 撰寫視覺化檢視
+        - name: 逐步解說：以 C# 撰寫視覺化檢視
           href: walkthrough-writing-a-visualizer-in-csharp.md
-        - name: 逐步解說：使用 Visual Basic 撰寫視覺化檢視
+        - name: 逐步解說：以 Visual Basic 撰寫視覺化檢視
           href: walkthrough-writing-a-visualizer-in-visual-basic.md
         - name: 安裝視覺化檢視
           href: how-to-install-a-visualizer.md
@@ -265,7 +265,7 @@ items:
       - name: 請確認目標電腦上的 DNS 設定都正確
         href: error-ensure-that-dns-is-correctly-configured-on-the-target-computer.md
       - name: Microsoft Visual Studio 遠端偵錯監視 (MSVSMON.EXE) 似乎沒有在遠端電腦上執行。
-        href: error-the-microsoft-visual-studio-remote-debugging-monitor-msvsmon-exe-does-not-appear-to-be-running-on-the-remote-computer.md
+        href: /visualstudio/debugger/error-remote-debugging-monitor-msvsmon-exe-does-not-appear-to-be-running
       - name: 無法連線至 Microsoft Visual Studio 遠端偵錯監視
         href: unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor.md
       - name: 無法起始 DCOM 通訊
@@ -314,9 +314,9 @@ items:
         href: how-to-use-the-gpu-threads-window.md
     - name: 對多重處理序進行偵錯
       href: debug-multiple-processes.md
-    - name: 逐步解說：使用執行緒視窗進行偵錯
+    - name: 逐步解說：使用 [執行緒] 視窗進行偵錯
       href: how-to-use-the-threads-window.md
-    - name: 逐步解說：對平行應用程式進行偵錯
+    - name: 逐步解說：偵錯平行應用程式
       href: walkthrough-debugging-a-parallel-application.md
     - name: 在偵錯時切換到另一個執行緒
       href: how-to-switch-to-another-thread-while-debugging.md
@@ -413,7 +413,7 @@ items:
         items:
         - name: 受控偵錯：建議的屬性設定
           href: managed-debugging-recommended-property-settings.md
-        - name: 偵錯準備：Windows Forms 應用程式
+        - name: 偵錯準備：Windows Form 應用程式
           href: debugging-preparation-windows-forms-applications.md
         - name: 偵錯準備：Windows 服務
           href: debugging-preparation-windows-services.md
@@ -546,14 +546,14 @@ items:
         href: how-to-find-the-name-of-the-aspnet-process.md
       - name: 對已部署的 Web 應用程式進行偵錯
         href: debugging-deployed-web-applications.md
-      - name: 逐步解說：偵錯 Web Form
+      - name: 逐步解說：偵錯 Web 表單
         href: walkthrough-debugging-a-web-form.md
       - name: 對 ASP.NET 例外狀況進行偵錯
         href: how-to-debug-aspnet-exceptions.md
-      - name: 對 Web 應用程式進行偵錯：錯誤和疑難排解
+      - name: 偵錯 Web 應用程式：錯誤和疑難排解
         href: debugging-web-applications-errors-and-troubleshooting.md
         items:
-        - name: 對 Web 應用程式進行偵錯：疑難排解
+        - name: 偵錯 Web 應用程式：疑難排解
           href: debugging-web-applications-troubleshooting.md
           items:
           - name: 檢查 IIS 屬性設定
@@ -588,7 +588,7 @@ items:
         - name: 附加至指令碼
           href: how-to-attach-to-script.md
           items:
-          - name: 警告：已停用指令碼偵錯
+          - name: 警告:已停用指令碼偵錯
             href: warning-script-debugging-disabled.md
     - name: 對 WCF 服務進行偵錯
       href: debugging-wcf-services.md
@@ -679,7 +679,7 @@ items:
         href: error-user-could-not-execute-stored-procedure-sp-enable-sql-debug.md
       - name: Windows 檔案共用已設定...
         href: error-windows-file-sharing-has-been-configured-dot-dot-dot.md
-      - name: 安全性警告︰附加至未受信任的使用者所擁有的處理序可能會造成危險。 如果下面的資訊看起來有問題，或者您並不確定，請不要附加至此處理序
+      - name: 安全性警告：附加至未受信任的使用者所擁有的處理序可能會造成危險。 如果下面的資訊看起來有問題，或者您並不確定，請不要附加至此處理序
         href: security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md
       - name: 安全性警告：偵錯工具必須執行未受信任的命令
         href: security-warning-debugger-must-execute-untrusted-command.md
@@ -840,9 +840,9 @@ items:
   items:
   - name: Visual Studio 中偵錯工具的新功能
     href: what-s-new-for-the-debugger-in-visual-studio.md
-ms.openlocfilehash: 82809574dbbecf01e26e1677a4bb22ce9a482cf6
-ms.sourcegitcommit: d7f232a7596420e40ff8051d42cdf90203af4a74
+ms.openlocfilehash: 149cc7c04aad0d070a538ef32aa6b14c015eee56
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2018
-ms.locfileid: "52821392"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53947474"

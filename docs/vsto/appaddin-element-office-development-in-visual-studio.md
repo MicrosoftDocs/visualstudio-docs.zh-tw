@@ -1,9 +1,7 @@
 ---
 title: '&lt;appAddin&gt;元素 （在 Visual Studio 中的 Office 程式開發）'
 titleSuffix: ''
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology: office-development
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +14,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c7f6caeafc95541cdc939220d76451c4cf5efdb0
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: fdba74f7022ec73cfd6d52c386e8a4594aa6ca7f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53803029"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53905435"
 ---
 # <a name="ltappaddingt-element-office-development-in-visual-studio"></a>&lt;appAddin&gt;元素 （在 Visual Studio 中的 Office 程式開發）
   **AppAddin**項目`vstov4`命名空間會儲存為 VSTO 增益集的自訂特定資訊。

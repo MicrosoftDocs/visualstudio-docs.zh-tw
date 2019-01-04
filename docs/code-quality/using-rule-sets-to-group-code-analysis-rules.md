@@ -2,7 +2,6 @@
 title: 程式碼分析規則集
 ms.date: 04/02/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.rulesets.learnmore
@@ -13,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ced442c0fafc47b5cdae1568dbbfb6df7c2f2f50
-ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
+ms.openlocfilehash: 8dc70348ef2fe5826339bd58e1db17574449ff6c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "51948384"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53885151"
 ---
 # <a name="use-rule-sets-to-group-code-analysis-rules"></a>使用規則集分組程式碼分析規則
 

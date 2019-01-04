@@ -1,9 +1,6 @@
 ---
 title: 命令實作 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - commands, implementation
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8f002e660b2c3b745e4a7ea67f715b613b96bd0a
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: ea4240ddf84dc1b475adcf81fe80471c9d1bc2b9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39510435"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53965417"
 ---
 # <a name="command-implementation"></a>命令實作
 若要在 VSPackage 中實作的命令，您必須執行下列工作：  
@@ -70,17 +67,17 @@ if ( null != mcs )
   
 -   如果這兩種方法的實作會辨識 GUID 和命令，則方法應該設定的每個命令的命令旗標 欄位 (在`prgCmds`參數) 使用下列<xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF>旗標：  
   
-    -   `OLECMDF_SUPPORTED`： 支援命令。  
+    -   `OLECMDF_SUPPORTED`：支援的命令。  
   
-    -   `OLECMDF_INVISIBLE`： 此命令不應該為可見的。  
+    -   `OLECMDF_INVISIBLE`：此命令不應該為可見的。  
   
-    -   `OLECMDF_LATCHED`： 此命令為開並似乎已檢查。  
+    -   `OLECMDF_LATCHED`：此命令為開並似乎已檢查。  
   
-    -   `OLECMDF_ENABLED`： 此命令會啟用。  
+    -   `OLECMDF_ENABLED`：此命令會啟用。  
   
-    -   `OLECMDF_DEFHIDEONCTXTMENU`： 如果它出現在捷徑功能表上，則應隱藏命令。  
+    -   `OLECMDF_DEFHIDEONCTXTMENU`：如果它出現在捷徑功能表上，則應隱藏命令。  
   
-    -   `OLECMDF_NINCHED`： 在命令功能表控制器，且未啟用，但它的下拉式選單清單不是空的以及仍然可用。 （這個旗標是很少使用）。  
+    -   `OLECMDF_NINCHED`：命令是功能表控制站，而且不會啟用，但它的下拉式選單清單不是空的以及仍然可用。 （這個旗標是很少使用）。  
   
 -   如果命令已定義於 *.vsct*檔案中使用`TextChanges`旗標，請設定下列參數：  
   

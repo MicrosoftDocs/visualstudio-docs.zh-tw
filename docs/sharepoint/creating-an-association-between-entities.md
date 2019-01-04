@@ -1,9 +1,6 @@
 ---
 title: 建立實體之間的關聯 |Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.BDC.Association_Dialog
@@ -24,18 +21,18 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 22ac00ac48f4fe907e4fb4215992b49227f39961
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 134b477cdc199d85c983633a2a5996d113420443
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36325459"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53842975"
 ---
 # <a name="create-an-association-between-entities"></a>建立實體之間的關聯
   您可以定義您藉由建立關聯的商務資料連接 (BDC) 模型中實體之間的關聯性。 Visual Studio 會產生模型的取用者提供每一個關聯的相關資訊的方法。 這些方法可以由 SharePoint Web 組件、清單或自訂應用程式加以使用，以便在使用者介面 (UI) 中顯示資料關聯性。  
   
 ## <a name="create-an-association"></a>建立關聯
- 選擇 建立關聯**關聯**Visual Studio 中的控制**工具箱**，選擇第一個實體 （稱為來源實體），然後選擇 第二個實體 (稱為目的地實體）。 您可以定義中的關聯的詳細資料**關聯編輯器**。 如需詳細資訊，請參閱 <<c0> [ 如何： 建立實體之間的關聯](../sharepoint/how-to-create-an-association-between-entities.md)。  
+ 選擇 建立關聯**關聯**Visual Studio 中的控制**工具箱**，選擇第一個實體 （稱為來源實體），然後選擇 第二個實體 (稱為目的地實體）。 您可以定義中的關聯的詳細資料**關聯編輯器**。 如需詳細資訊，請參閱[＜How to：建立實體之間的關聯](../sharepoint/how-to-create-an-association-between-entities.md)。  
   
 ## <a name="association-methods"></a>關聯方法
  應用程式，例如 SharePoint 商務資料 web 組件會使用關聯實體的服務類別中呼叫方法。 您可以將方法加入至實體的服務類別，請選取圖形中**關聯編輯器**。  
@@ -81,6 +78,4 @@ ms.locfileid: "36325459"
   
 ## <a name="see-also"></a>另請參閱
  [設計商務資料連接模型](../sharepoint/designing-a-business-data-connectivity-model.md)   
- [如何： 建立實體之間的關聯](../sharepoint/how-to-create-an-association-between-entities.md)  
-  
- 
+ [如何：建立實體之間的關聯](../sharepoint/how-to-create-an-association-between-entities.md)  

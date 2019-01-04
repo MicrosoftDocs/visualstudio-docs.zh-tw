@@ -1,9 +1,6 @@
 ---
 title: 註冊副檔名的動詞命令 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - verbs, registering
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: dd42bc89eb853a5d65f8e15eab3fdf2cd054f278
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 55b6e8d450a298b6d35079998863a9394ec7d70d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49927797"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53949728"
 ---
 # <a name="register-verbs-for-file-name-extensions"></a>註冊副檔名的動詞命令
 與應用程式的檔案名稱副檔名關聯通常會有偏好的動作，當使用者按兩下檔案時，就會發生。 此建議動作連結到動詞，例如開啟時，對應至動作。  

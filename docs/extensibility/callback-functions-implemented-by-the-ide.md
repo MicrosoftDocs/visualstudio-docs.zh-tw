@@ -1,9 +1,6 @@
 ---
 title: IDE 所實作的回呼函式 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, callback functions
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c76a9ef3ab81cf764d5f82fdfb9c8d6a86f24bee
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 3dd5196fae42079249f0632a065aacbf504938a8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39232477"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53990775"
 ---
 # <a name="callback-functions-implemented-by-the-ide"></a>IDE 所實作的回呼函式
 若要與整合做越好，並提供統一的使用者體驗，無縫整合式的開發環境 (IDE) 的原始檔控制外掛程式可以使用由 IDE 所實作的回呼函式。 此外掛程式可以呼叫這些函式在適當的時間期間將資訊傳遞給在 IDE 中; 的原始檔控制作業IDE 可以做為內嵌的項目在其原生 UI 中顯示這項資訊。 使用者會有較分散的體驗，在此案例中比若外掛程式採用自己的 UI。  

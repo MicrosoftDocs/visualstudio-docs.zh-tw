@@ -1,13 +1,8 @@
 ---
-title: 如何： 建立應用程式頁面 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：建立應用程式頁面 |Microsoft Docs
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -18,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9f390ddf14925b43f1aa1d9e79db05e2aa64f234
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 659aa277263dab1950309c27e307ddb641bab6b0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51296199"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53820221"
 ---
-# <a name="how-to-create-an-application-page"></a>如何： 建立應用程式頁面
+# <a name="how-to-create-an-application-page"></a>HOW TO：建立應用程式頁面
   您可以為一個或多個 SharePoint 網站建立 ASP.NET 網頁。 在 SharePoint 中，這些頁面會呼叫應用程式頁面。 不同站台 頁面中，於應用程式頁面會包含後置頁面執行的程式碼。 如需詳細資訊，請參閱 <<c0> [ 建立適用於 SharePoint 的應用程式頁面](../sharepoint/creating-application-pages-for-sharepoint.md)。  
   
 ### <a name="to-create-an-application-page"></a>若要建立應用程式頁面  
@@ -50,9 +45,8 @@ ms.locfileid: "51296199"
   
 7.  若要處理控制項事件，請將程式碼加入至應用程式頁面的程式碼檔案。  
   
-     當您展開 ASP.NET 網頁檔案的節點會出現的程式碼檔案，並已 *.cs*或是 *.vb*延伸模組，根據專案的語言。 如何建立應用程式頁面的端對端範例，請參閱[逐步解說： 建立 SharePoint 應用程式頁面](../sharepoint/walkthrough-creating-a-sharepoint-application-page.md)。  
+     當您展開 ASP.NET 網頁檔案的節點會出現的程式碼檔案，並已 *.cs*或是 *.vb*延伸模組，根據專案的語言。 如何建立應用程式頁面的端對端範例，請參閱[逐步解說：建立 SharePoint 應用程式頁面](../sharepoint/walkthrough-creating-a-sharepoint-application-page.md)。  
   
 ## <a name="see-also"></a>另請參閱
  [建立 SharePoint 相關應用程式頁面](../sharepoint/creating-application-pages-for-sharepoint.md)   
- [逐步解說： 建立 SharePoint 應用程式頁面](../sharepoint/walkthrough-creating-a-sharepoint-application-page.md)  
-  
+ [逐步解說：建立 SharePoint 應用程式頁面](../sharepoint/walkthrough-creating-a-sharepoint-application-page.md)  

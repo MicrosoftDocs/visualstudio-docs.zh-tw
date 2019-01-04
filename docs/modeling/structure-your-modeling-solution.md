@@ -8,13 +8,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 2c279da9aed4a11799004a38004f8b82dca65174
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: fba020f27db73c5a96225c777f68e21db449b331
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50966709"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53831533"
 ---
 # <a name="structure-your-modeling-solution"></a>建構模型方案
 
@@ -36,7 +35,7 @@ ms.locfileid: "50966709"
 
 2. 建立 Visual Studio 方案，我們稱之為架構方案。 這個方案會用以建立系統的整體設計。 它包含模型，但不含程式碼。
 
-   加入此解決方案中的相依性圖表。 相依性在圖表上繪製您為您的應用程式所選擇的架構。 例如，圖表可能會顯示這些圖層及其彼此之間的相依性：簡報、商務邏輯和資料。
+   加入此解決方案中的相依性圖表。 相依性在圖表上繪製您為您的應用程式所選擇的架構。 例如，圖表可能會顯示這些圖層與它們之間的相依性：簡報;商務邏輯;和資料。
 
 4. 架構相依性圖表中建立個別的 Visual Studio 方案，每個圖層。
 
@@ -76,7 +75,7 @@ ms.locfileid: "50966709"
 
 1. 在每個圖層的方案中，加入架構模型專案。 在**方案總管**，以滑鼠右鍵按一下方案節點，指向**新增**，然後按一下 **現有專案**。 現在從每個方案都可以存取單一模型專案：架構專案及每個圖層的開發專案。
 
-2. 在共用模型中，建立每個圖層封裝： 在**方案總管 中**，選取模型專案。 在  **UML 模型總管**，以滑鼠右鍵按一下模型根節點，指向**新增**，然後按一下 **封裝**。
+2. 在共用模型，建立一個封裝每個圖層：在 [**方案總管] 中**，選取模型專案。 在  **UML 模型總管**，以滑鼠右鍵按一下模型根節點，指向**新增**，然後按一下 **封裝**。
 
    每個封裝將包含圖表，描述需求和對應圖層的設計。
 

@@ -1,9 +1,6 @@
 ---
 title: 運算式評估工具架構 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - architecture, expression evaluators
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5110b34c13952e359b494352063a2a277fbdcdde
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: e25b1280788486fd35eb0e917c10f75c01be40ca
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39232032"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53989399"
 ---
 # <a name="expression-evaluator-architecture"></a>運算式評估工具架構
 > [!IMPORTANT]

@@ -14,12 +14,12 @@ caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 703887235cc1c9f1be0f63792919e45397a6a68b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.openlocfilehash: 97e5e64947f2d2807e2d3e34d50827e989ea18e2
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51726697"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53804717"
 ---
 # <a name="detach"></a>中斷連結
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -66,7 +66,7 @@ VSPerfCmd.exe /Detach
 VSPerfCmd.exe /Shutdown  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [VSPerfCmd](../profiling/vsperfcmd.md)   
  [對獨立應用程式進行程式碼剖析](../profiling/command-line-profiling-of-stand-alone-applications.md)   
  [對 ASP.NET Web 應用程式進行程式碼剖析](../profiling/command-line-profiling-of-aspnet-web-applications.md)   

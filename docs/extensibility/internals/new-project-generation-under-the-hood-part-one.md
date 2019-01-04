@@ -1,9 +1,6 @@
 ---
-title: 產生新專案︰ 深入來看，第一部 |Microsoft Docs
-ms.custom: ''
+title: 新的專案產生：在幕後，第一部 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio], new project dialog
@@ -14,14 +11,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f678e15a26a85245e22edd323008ab517ea1e39c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8ca4ac8523185f1fe818ffa287ed9083b6618c04
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49907062"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53827646"
 ---
-# <a name="new-project-generation-under-the-hood-part-one"></a>產生新專案︰深入探討，第一部分
+# <a name="new-project-generation-under-the-hood-part-one"></a>新的專案產生：在幕後，第一部
 有人想到要如何建立您自己的專案類型嗎？ 不知道實際發生什麼事時建立新的專案？ 讓我們來看一下在幕後，並請參閱什麼實際狀況。  
   
  有數個 Visual Studio 協調您的工作：  
@@ -124,7 +121,7 @@ devenv /installvstemplates
 -   可以變更排序次序。  
   
 ##### <a name="finding-the-root-node-for-a-project-type"></a>尋找專案類型的根節點  
- 當 Visual Studio 會周遊 ProjectTemplates 資料夾時，它會開啟所有的.zip 檔案，並擷取任何.vstemplate 檔案。 .Vstemplate 檔案使用 XML 來描述應用程式範本。 如需詳細資訊，請參閱 <<c0> [ 產生新專案： Under the Hood、 第二段](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md)。  
+ 當 Visual Studio 會周遊 ProjectTemplates 資料夾時，它會開啟所有的.zip 檔案，並擷取任何.vstemplate 檔案。 .Vstemplate 檔案使用 XML 來描述應用程式範本。 如需詳細資訊，請參閱[產生新專案：在幕後，第二部](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md)。  
   
  \<ProjectType > 標記決定應用程式的專案類型。 比方說，\CSharp\SmartDevice\WindowsCE\1033\WindowsCE-EmptyProject.zip 檔案包含具有此標記的 EmptyProject.vstemplate 檔案：  
   
@@ -216,4 +213,4 @@ devenv /installvstemplates
     **MyProjectNode**做為子節點的 Visual C# 中的 [Windows] 節點下，只會出現。  
   
 ## <a name="see-also"></a>另請參閱  
- [產生新專案︰深入探討，第二部分](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md)
+ [新的專案產生：在幕後，第二部分](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md)

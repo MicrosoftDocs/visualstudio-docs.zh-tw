@@ -1,9 +1,6 @@
 ---
 title: IEnumDebugReferenceInfo2::Skip |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IEnumDebugReferenceInfo2::Skip
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 57ea59dae77d1751f69937e815e49ea740fc39d1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 669105167ceeb1f02901b47929274dee567a251a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49928187"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53888815"
 ---
 # <a name="ienumdebugreferenceinfo2skip"></a>IEnumDebugReferenceInfo2::Skip
 略過指定的元素數目。  

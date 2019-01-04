@@ -1,9 +1,6 @@
 ---
 title: IDebugFunctionObject::Evaluate |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugFunctionObject::Evaluate
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5d8d9c479c1dac638a63ce45d114c4a66e0a213d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ee6f047d7975aec39ecf44ea5c551ebffecda1b3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49908415"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53953720"
 ---
 # <a name="idebugfunctionobjectevaluate"></a>IDebugFunctionObject::Evaluate
 呼叫函式，並傳回產生的值當做物件。  
@@ -28,7 +25,7 @@ ms.locfileid: "49908415"
 ## <a name="syntax"></a>語法  
   
 ```cpp  
-HRESULT Evaluate(   
+HRESULT Evaluate(   
    IDebugObject** ppParams,  
    DWORD          dwParams,  
    DWORD          dwTimeout,  

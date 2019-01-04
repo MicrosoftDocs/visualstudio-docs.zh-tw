@@ -1,8 +1,6 @@
 ---
 title: 在 Office 方案中的應用程式和部署資訊清單
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology: office-development
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 dev_langs:
@@ -18,12 +16,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6e26b0ed3f9f02de223f19789416c8dce50182d3
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: 24650d2cb4cbed3a5b4c4f1ee02e395e7b8c2988
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53804509"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53828552"
 ---
 # <a name="application-and-deployment-manifests-in-office-solutions"></a>在 Office 方案中的應用程式和部署資訊清單
   應用程式資訊清單是提供資訊讓 Office 方案用來尋找及更新其組件的 XML 檔案。 應用程式資訊清單可以搭配部署資訊清單使用，部署資訊清單是伺服器上儲存的 XML 檔案，可提供尋找最新版應用程式資訊清單和組件所需的資訊。

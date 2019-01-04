@@ -2,7 +2,6 @@
 title: XML 工具
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: conceptual
 f1_keywords:
 - vb.xmldesigner
@@ -34,12 +33,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f87c06e2bfc3885c0f52230e927933ff3cb0d87c
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: ecbd93836cdf5b91bb9f7abb93a95499927fa0b1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53054994"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53872956"
 ---
 # <a name="xml-tools-in-visual-studio"></a>Visual Studio 中的 XML 工具
 

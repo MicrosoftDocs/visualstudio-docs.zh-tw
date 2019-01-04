@@ -1,9 +1,6 @@
 ---
 title: 擴充功能表和命令 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - menus, common tasks
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e6f5cd78709c9a4843588188494b4a70f7268742
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 2ef32dd2bbc44f784a2faaf6edcafcba96a8f113
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39639746"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53910486"
 ---
 # <a name="extend-menus-and-commands"></a>擴充功能表和命令
 命令會將動作和程序新增至 Visual Studio 的方式。 在大部分情況下會顯示功能表或工具列上的命令。 VSPackage 專案範本會示範如何實作非常基本的命令。 如需略長，但仍有基本的實作，請參閱[建立具有功能表命令的延伸模組](../extensibility/creating-an-extension-with-a-menu-command.md)。  

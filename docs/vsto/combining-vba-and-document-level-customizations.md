@@ -1,9 +1,6 @@
 ---
 title: 合併 VBA 和文件層級自訂
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VST.VBAInterop.InvalidAssemblyVersion
@@ -27,12 +24,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2dc8a08d7d921c650c8332d3c363d16f5c414b1c
-ms.sourcegitcommit: a715de2ba8c703f37aa2102567b1aa2c0f05a117
+ms.openlocfilehash: 7217665d0d5b9ea594b605739916e017184730fb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "53441713"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53987884"
 ---
 # <a name="combine-vba-and-document-level-customizations"></a>合併 VBA 和文件層級自訂
   您可以在屬於 Microsoft Office Word 或 Microsoft Office Excel 文件層級自訂的文件中使用 Visual Basic for Applications (VBA) 程式碼。 您可以在來自自訂組件的文件中呼叫 VBA 程式碼，或者可以設定專案，讓文件中的 VBA 程式碼可以呼叫自訂組件中的程式碼。  
@@ -260,5 +257,3 @@ GetManagedClass(pdispInteropObject Object) As Object
  [設計和建立 Office 方案](../vsto/designing-and-creating-office-solutions.md)   
  [比較 Visual Studio 中的 VBA 和 Office 方案](../vsto/vba-and-office-solutions-in-visual-studio-compared.md)   
  [程式文件層級自訂](../vsto/programming-document-level-customizations.md)  
-  
-  

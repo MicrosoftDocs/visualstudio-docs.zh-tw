@@ -1,9 +1,6 @@
 ---
 title: IDebugProcessQueryProperties::QueryProperty |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - IDebugProcessQueryProperties::QueryProperty
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a2ff40f850186e97888fd409d2387e15873851b7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7cef004072af51f0e564dcc860ad10c773354aba
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49893945"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53966780"
 ---
 # <a name="idebugprocessquerypropertiesqueryproperty"></a>IDebugProcessQueryProperties::QueryProperty
 這個方法會查詢指定的屬性值的偵錯程序。  

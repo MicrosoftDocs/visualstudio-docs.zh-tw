@@ -1,9 +1,6 @@
 ---
 title: IDebugExpressionEvaluator2::Terminate |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - Terminate
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: edc2368edecea28bbe59635b248bb7c0abc7d7a9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 692165f11b9a43f62fc9d2d84faaba3c83fb5346
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49929344"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53902561"
 ---
 # <a name="idebugexpressionevaluator2terminate"></a>IDebugExpressionEvaluator2::Terminate
 停止和清除運算式評估工具。  

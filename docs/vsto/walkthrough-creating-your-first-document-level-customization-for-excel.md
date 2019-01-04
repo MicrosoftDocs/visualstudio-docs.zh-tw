@@ -1,9 +1,6 @@
 ---
-title: 逐步解說： 建立您第一個適用於 Excel 的文件層級自訂
-ms.custom: ''
+title: 逐步解說：建立您第一個適用於 Excel 的文件層級自訂
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,14 +14,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ce16e3c2aca99acf6de9a7ce74c0c2ff46c0dcbb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 70e82a8b126f5292cd8efe1420c59af90ca59c3d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49849030"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53955314"
 ---
-# <a name="walkthrough-create-your-first-document-level-customization-for-excel"></a>逐步解說： 建立您第一個適用於 Excel 的文件層級自訂
+# <a name="walkthrough-create-your-first-document-level-customization-for-excel"></a>逐步解說：建立您第一個適用於 Excel 的文件層級自訂
   本入門逐步解說將示範如何建立 Microsoft Office Excel 的文件層級自訂。 只有在特定的活頁簿開啟時，才能使用您在這種方案中建立的功能。 您不能使用文件層級自訂來進行應用程式層級的變更，例如在任何活頁簿開啟時顯示新功能區索引標籤。  
   
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]  
@@ -155,15 +152,15 @@ ms.locfileid: "49849030"
 ## <a name="next-steps"></a>後續步驟  
  現在您已經建立 Excel 的基本文件層級自訂，可以從下列主題進一步了解如何開發自訂：  
   
--   您可以在文件層級自訂中執行的一般程式設計工作：[程式的文件層級自訂](../vsto/programming-document-level-customizations.md)。  
+-   您可以在文件層級自訂中執行的一般程式設計工作：[程式文件層級自訂](../vsto/programming-document-level-customizations.md)。  
   
--   適用於 Excel 的文件層級自訂專屬的程式設計工作： [Excel 方案](../vsto/excel-solutions.md)。  
+-   適用於 Excel 的文件層級自訂專屬的程式設計工作：[Excel 方案](../vsto/excel-solutions.md)。  
   
--   使用 Excel 物件模型： [Excel 物件模型概觀](../vsto/excel-object-model-overview.md)。  
+-   使用 Excel 物件模型：[Excel 物件模型概觀](../vsto/excel-object-model-overview.md)。  
   
--   自訂 Excel 的 UI，比方說，藉由在功能區中加入自訂索引標籤或建立您自己的執行窗格： [Office UI 自訂](../vsto/office-ui-customization.md)。  
+-   自訂 Excel 的 UI，例如，在功能區中加入自訂索引標籤，或建立您自己的動作 窗格：[Office UI 自訂](../vsto/office-ui-customization.md)。  
   
--   使用 Visual Studio 中的 Office 開發工具所提供的擴充的 Excel 物件來執行，不能使用 Excel 物件模型 （例如，裝載 managed 的控制項上的文件和資料的 Excel 控制項繫結使用 Windows Form 的工作資料繫結模型）：[使用擴充的物件自動化 Excel](../vsto/automating-excel-by-using-extended-objects.md)。  
+-   使用 Visual Studio 中的 Office 開發工具所提供的擴充的 Excel 物件來執行，不能使用 Excel 物件模型 （例如，裝載 managed 的控制項上的文件和資料的 Excel 控制項繫結使用 Windows Form 的工作資料繫結的模型）：[使用擴充的物件自動化 Excel](../vsto/automating-excel-by-using-extended-objects.md)。  
   
 -   建置和偵錯適用於 Excel 的文件層級自訂：[建置 Office 方案](../vsto/building-office-solutions.md)。  
   
@@ -179,5 +176,3 @@ ms.locfileid: "49849030"
  [建置 Office 方案](../vsto/building-office-solutions.md)   
  [部署 Office 方案](../vsto/deploying-an-office-solution.md)   
  [Office 專案範本概觀](../vsto/office-project-templates-overview.md)  
-  
-  

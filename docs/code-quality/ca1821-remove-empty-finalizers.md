@@ -1,8 +1,7 @@
 ---
-title: CA1821：必須移除空的完成項
+title: CA1821:必須移除空的完成項
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - RemoveEmptyFinalizers
@@ -15,14 +14,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e7f7f4d38e494b53eb2bba11020e9d0f361ef76
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d155d8846828d8806fb4927d39120bfad2b01f33
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49895674"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53937331"
 ---
-# <a name="ca1821-remove-empty-finalizers"></a>CA1821：必須移除空的完成項
+# <a name="ca1821-remove-empty-finalizers"></a>CA1821:必須移除空的完成項
 
 |||
 |-|-|

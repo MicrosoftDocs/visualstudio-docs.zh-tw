@@ -3,8 +3,6 @@ title: 一般參考 （在 Visual Studio 中的 Office 程式開發）
 titleSuffix: ''
 ms.custom: seodec18
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,12 +14,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: bdc279d72f6e088c1adc22a78d9864e1d595b764
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: ec7b021c1eddff17ccc5687ec3d16f765838d062
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53646847"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53933174"
 ---
 # <a name="general-reference-office-development-in-visual-studio"></a>一般參考 （在 Visual Studio 中的 Office 程式開發）
   本章節包含有關在 Visual Studio 中的 Microsoft Office 專案的技術詳細資料。  
@@ -54,5 +52,3 @@ ms.locfileid: "53646847"
   
  [設計和建立 Office 方案](../vsto/designing-and-creating-office-solutions.md)  
  提供有關如何開始建立使用 Visual Studio 的 Office 專案的資訊連結。  
-  
-  

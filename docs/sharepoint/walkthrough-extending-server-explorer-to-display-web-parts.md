@@ -1,9 +1,6 @@
 ---
-title: 逐步解說： 擴充伺服器總管以顯示 Web 組件 |Microsoft Docs
-ms.custom: ''
+title: 逐步解說：擴充伺服器總管以顯示 Web 組件 |Microsoft Docs
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,14 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6d32f76965c0dbef359e54bda114221e460a9bfd
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: acee9055fc250f158e05945f0db30c9ffb0fee14
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51296381"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53957893"
 ---
-# <a name="walkthrough-extend-server-explorer-to-display-web-parts"></a>逐步解說： 擴充伺服器總管以顯示 web 組件
+# <a name="walkthrough-extend-server-explorer-to-display-web-parts"></a>逐步解說：擴充伺服器總管以顯示 web 組件
   在 Visual Studio 中，您可以使用**SharePoint 連線**節點**伺服器總管**檢視 SharePoint 網站上的元件。 不過，**伺服器總管**預設不會顯示某些元件。 在本逐步解說中，您將會延長**伺服器總管**，以顯示 Web 組件庫上每個連線的 SharePoint 網站。  
   
  本逐步解說將示範下列工作：  
@@ -43,7 +40,7 @@ ms.locfileid: "51296381"
 -   偵錯和測試延伸模組。  
   
 > [!NOTE]  
->  使用適用於 SharePoint 的用戶端物件模型，而其伺服器物件模型不是本逐步解說的替代版本，請參閱[逐步解說： 呼叫 SharePoint 用戶端物件模型，在 伺服器總管延伸模組](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md)。  
+>  使用適用於 SharePoint 的用戶端物件模型，而其伺服器物件模型不是本逐步解說的替代版本，請參閱[逐步解說：呼叫 SharePoint 用戶端物件模型，在 伺服器總管延伸模組](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md)。  
   
 ## <a name="prerequisites"></a>必要條件  
  您需要完成這個逐步解說在開發電腦上的下列元件：  
@@ -374,7 +371,6 @@ ms.locfileid: "51296381"
   
 ## <a name="see-also"></a>另請參閱
  [擴充 SharePoint 連線節點，在 伺服器總管](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)   
- [逐步解說： 呼叫 SharePoint 用戶端物件模型，在 伺服器總管延伸模組](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md)   
+ [逐步解說：呼叫 SharePoint 用戶端物件模型，在 伺服器總管延伸模組](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md)   
  [圖示影像編輯器](/cpp/windows/image-editor-for-icons)   
  [建立圖示或其他影像&#40;圖示影像編輯器&#41;](/cpp/windows/creating-an-icon-or-other-image-image-editor-for-icons)  
-  

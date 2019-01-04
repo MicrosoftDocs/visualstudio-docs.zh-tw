@@ -1,9 +1,6 @@
 ---
-title: 如何： 建立事件接收器 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：建立事件接收器 |Microsoft Docs
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.SPE.EventReceiver
@@ -20,24 +17,24 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: dd4528a47215254684be51400329b05c3998bbab
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9a9f18bb4399e52c6afbac9b20a7b16d04a39843
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42635144"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53861568"
 ---
-# <a name="how-to-create-an-event-receiver"></a>如何： 建立事件接收器
+# <a name="how-to-create-an-event-receiver"></a>HOW TO：建立事件接收器
   藉由建立*事件接收器*，您可以回應使用者互動 SharePoint 項目，例如清單或清單項目時。 例如，當使用者將行事曆變更或刪除連絡人清單中的名稱，會觸發事件接收器中的程式碼。 遵循本主題，您可以了解如何將事件接收器加入至清單執行個體。
 
- 若要完成這些步驟，您必須已安裝[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]和支援的 Windows 和 SharePoint 版本。 因為此範例需要 SharePoint 專案，您也必須已經完成本主題中的程序[逐步解說： 建立 SharePoint 網站資料行、 內容類型和清單](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md)。
+ 若要完成這些步驟，您必須已安裝[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]和支援的 Windows 和 SharePoint 版本。 因為此範例需要 SharePoint 專案，您也必須已經完成本主題中的程序[逐步解說：建立 SharePoint 網站資料行、 內容類型和清單](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md)。
 
 ## <a name="adding-an-event-receiver"></a>加入事件接收器
- 您在建立專案[逐步解說： 建立 SharePoint 網站資料行、 內容類型和清單](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md)包含自訂的網站資料行、 自訂清單和內容類型。 在下列程序中，您會藉由新增一個簡單的事件處理常式 （事件接收器） 展開這個專案的清單執行個體，以示範如何處理 SharePoint 項目，例如清單中所發生事件。
+ 您在建立專案[逐步解說：建立 SharePoint 網站資料行、 內容類型和清單](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md)包含自訂的網站資料行、 自訂清單和內容類型。 在下列程序中，您會藉由新增一個簡單的事件處理常式 （事件接收器） 展開這個專案的清單執行個體，以示範如何處理 SharePoint 項目，例如清單中所發生事件。
 
 #### <a name="to-add-an-event-receiver-to-the-list-instance"></a>若要加入的清單執行個體中的事件接收器
 
-1.  開啟您在建立專案[逐步解說： 建立 SharePoint 網站資料行、 內容類型和清單](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md)。
+1.  開啟您在中建立的專案[逐步解說：建立 SharePoint 網站資料行、 內容類型和清單](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md)。
 
 2.  在 [**方案總管] 中**，選擇 SharePoint 專案節點，稱為**Clinic**。
 

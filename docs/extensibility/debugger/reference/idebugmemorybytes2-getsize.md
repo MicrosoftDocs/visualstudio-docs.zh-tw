@@ -1,9 +1,6 @@
 ---
 title: IDebugMemoryBytes2::GetSize |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugMemoryBytes2::GetSize
@@ -16,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7b0d6c40c9b73ce14d06ce59f9506ce13550d851
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8fbfc274b3508cbbd2658a5c352c12fab919996b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49898118"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53837949"
 ---
 # <a name="idebugmemorybytes2getsize"></a>IDebugMemoryBytes2::GetSize
 擷取的大小，以位元組為單位所表示的記憶體[IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md)物件。  
@@ -29,7 +26,7 @@ ms.locfileid: "49898118"
 ## <a name="syntax"></a>語法  
   
 ```cpp  
-HRESULT GetSize(   
+HRESULT GetSize(   
    UINT64* pqwSize  
 );  
 ```  

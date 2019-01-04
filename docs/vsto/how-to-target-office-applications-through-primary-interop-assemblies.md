@@ -1,9 +1,6 @@
 ---
-title: 如何： 透過主要 interop 組件的目標 Office 應用程式
-ms.custom: ''
+title: HOW TO：透過主要 interop 組件的目標 Office 應用程式
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,14 +16,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 576d26f039005dac3d494652f1e5127c39092a00
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: fb5a97475612eb52fa51eadcfbe9eaa613a55bfb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49863746"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53845898"
 ---
-# <a name="how-to-target-office-applications-through-primary-interop-assemblies"></a>如何： 透過主要 interop 組件的目標 Office 應用程式
+# <a name="how-to-target-office-applications-through-primary-interop-assemblies"></a>HOW TO：透過主要 interop 組件的目標 Office 應用程式
   當您建立新的 Office 專案時，Visual Studio 會自動將參考加入建置專案所需的 Microsoft Office 主要 Interop 組件 (PIA)。 在下列情節中，您必須將參考加入其他 PIA：  
   
 - 您想使用專案中其他 Microsoft Office 應用程式的功能。 例如，您想將專案中的 Microsoft Office Excel 功能用於 Microsoft Office Word。  
@@ -58,6 +55,4 @@ ms.locfileid: "49863746"
  [Office 主要 interop 組件](../vsto/office-primary-interop-assemblies.md)   
  [在 Office 方案中撰寫程式碼](../vsto/writing-code-in-office-solutions.md)   
  [開發 Office 方案](../vsto/developing-office-solutions.md)   
- [如何： 安裝 Office 主要 interop 組件](../vsto/how-to-install-office-primary-interop-assemblies.md)  
-  
-  
+ [如何：安裝 Office 主要 interop 組件](../vsto/how-to-install-office-primary-interop-assemblies.md)  

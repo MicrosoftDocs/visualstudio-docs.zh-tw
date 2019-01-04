@@ -1,9 +1,6 @@
 ---
 title: UsedCommands 元素 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - UsedCommands
@@ -16,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e707a8336fb5e324c667ae16eceac2c2e9f55654
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a85d4480aa9c5a10243e09179c92b4aeb91df235
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49934765"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53851192"
 ---
 # <a name="usedcommands-element"></a>UsedCommands 項目
 UsedCommands 元素分組 UsedCommand 元素和其他 UsedCommands 分組。  

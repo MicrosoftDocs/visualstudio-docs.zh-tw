@@ -1,13 +1,8 @@
 ---
-title: 逐步解說： 建立基本網站定義專案 |Microsoft Docs
-ms.custom: ''
+title: 逐步解說：建立基本網站定義專案 |Microsoft Docs
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -18,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8a9a879db7c1d24dbfd8312dbc75d9b0bbaa8803
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7e09124e3204240f188c65e10865bbf221e15358
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49844400"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53958887"
 ---
-# <a name="walkthrough-create-a-basic-site-definition-project"></a>逐步解說： 建立基本網站定義專案
+# <a name="walkthrough-create-a-basic-site-definition-project"></a>逐步解說：建立基本網站定義專案
   本逐步解說會示範如何建立基本網站定義包含在其上的控制項的視覺 Web 組件。 為求清楚起見，您建立視覺 Web 組件會有只有少數的控制項。 不過，您可以建立更複雜的 SharePoint 網站定義包含更多的功能。  
   
  本逐步解說將示範下列工作：  
@@ -187,6 +182,5 @@ ms.locfileid: "49844400"
      文字會出現在 [] 按鈕右邊的標籤。  
   
 ## <a name="see-also"></a>另請參閱
- [如何： 建立事件接收器](../sharepoint/how-to-create-an-event-receiver.md)   
+ [如何：建立事件接收器](../sharepoint/how-to-create-an-event-receiver.md)   
  [開發 SharePoint 方案](../sharepoint/developing-sharepoint-solutions.md)  
-  

@@ -1,9 +1,6 @@
 ---
 title: 開發舊版語言服務 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - vs.vsip.LangServWiz.langtoks
@@ -19,12 +16,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6d92c07742dcc4433aa96071d655f58d938a1f80
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: c6bcf4c6993a37ec58d288d2c31f7c4cc3ecab9b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39497826"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53845783"
 ---
 # <a name="develop-a-legacy-language-service"></a>開發舊版語言服務
 這個區段會連結至主題可協助您建立舊版語言服務。  
@@ -50,7 +47,7 @@ ms.locfileid: "39497826"
  [語言服務支援偵錯](../../extensibility/internals/language-service-support-for-debugging.md)  
  描述如何語言服務可以提供功能，可支援偵錯工具。  
   
- [檢查清單： 建立舊版語言服務](../../extensibility/internals/checklist-creating-a-legacy-language-service.md)  
+ [檢查清單：建立舊版語言服務](../../extensibility/internals/checklist-creating-a-legacy-language-service.md)  
  提供逐步指示來建立及整合核心編輯器 」 的語言服務。  
   
 ## <a name="related-sections"></a>相關章節  
@@ -63,8 +60,8 @@ ms.locfileid: "39497826"
  [舊版語言服務中的參數資訊](../../extensibility/internals/parameter-info-in-a-legacy-language-service1.md)  
  描述如何為多載函式和方法提供方法提示。  
   
- [如何： 隱藏的文字提供舊版語言服務中支援](../../extensibility/internals/how-to-provide-hidden-text-support-in-a-legacy-language-service.md)  
+ [如何：可在舊版語言服務中的隱藏的文字](../../extensibility/internals/how-to-provide-hidden-text-support-in-a-legacy-language-service.md)  
  說明隱藏的文字區域的目的，並提供有關如何實作在隱藏的文字區域的指示。  
   
- [如何： 提供展開大綱的支援，在舊版語言服務](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md)  
+ [如何：提供展開大綱的支援，在舊版語言服務](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md)  
  說明擴充大綱的支援，您只能支援的語言的兩個選項*摺疊至定義*命令。

@@ -1,13 +1,8 @@
 ---
 title: 建立適用於 SharePoint 的站台定義 |Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -18,12 +13,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0e43cfa7c9fa78722639053c572280cbaad912bf
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 66e3566b7bfabb7ec2049632937beaa697246403
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36325338"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53868322"
 ---
 # <a name="create-site-definitions-for-sharepoint"></a>建立適用於 SharePoint 的網站定義
   中的 SharePoint 網站定義專案[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]可讓您建立*站台定義*，做為新的 SharePoint 網站的基礎。 這些定義不只會決定的外觀和行為的 SharePoint 網站，但也其預設內容和功能。 在定義中，您可以輸入預先設定的清單、 內容類型、 事件接收器、 影像和其他項目。 例如，SharePoint 包含了一些網站定義 (例如 BLOG)。 當您建立站台上的部落格網站定義時，此網站包含清單、 Web 組件和部落格網站需要的其他項目。  
@@ -52,7 +47,7 @@ ms.locfileid: "36325338"
 |標題|描述|  
 |-----------|-----------------|  
 |[逐步解說：建立基本網站定義專案](../sharepoint/walkthrough-create-a-basic-site-definition-project.md)|將引導您逐步建立基本網站定義專案中[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。|  
-|[如何： 建立自訂網站定義和組態](http://go.microsoft.com/fwlink/?LinkId=183309)|描述如何透過複製現有的站台定義及修改複本，在 SharePoint 中建立的自訂網站定義。|  
+|[如何：建立自訂網站定義和組態](http://go.microsoft.com/fwlink/?LinkId=183309)|描述如何透過複製現有的站台定義及修改複本，在 SharePoint 中建立的自訂網站定義。|  
 |[*WebTemp.xml*](http://go.microsoft.com/fwlink/?LinkId=183310)|描述指定站台可用的定義中的原始檔**範本選擇**一節**新的 SharePoint 網站**頁面。|  
 |[當地語系化 SharePoint 方案](../sharepoint/localizing-sharepoint-solutions.md)|描述如何準備您的 SharePoint 解決方案供全域使用。|  
 |[建立 SharePoint web 組件](../sharepoint/creating-web-parts-for-sharepoint.md)|描述如何建立的使用者可以修改 SharePoint 網頁組件。|  
@@ -65,5 +60,3 @@ ms.locfileid: "36325338"
   
 ## <a name="see-also"></a>另請參閱
  [開發 SharePoint 方案](../sharepoint/developing-sharepoint-solutions.md)  
-  
- 

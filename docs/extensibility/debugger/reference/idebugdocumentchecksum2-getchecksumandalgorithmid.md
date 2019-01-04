@@ -1,9 +1,6 @@
 ---
 title: IDebugDocumentChecksum2::GetChecksumAndAlgorithmId |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - IDebugDocumentChecksum2::GetChecksumAndAlgorithmI
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fbb12f315bc0e83e14ad4a342443ed3207411dae
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d484b46d6df22b68249873d225571a09f6e1d35d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49846378"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53857552"
 ---
 # <a name="idebugdocumentchecksum2getchecksumandalgorithmid"></a>IDebugDocumentChecksum2::GetChecksumAndAlgorithmId
 擷取指定要使用的位元組數目上限的文件的總和檢查碼和演算法識別項。  

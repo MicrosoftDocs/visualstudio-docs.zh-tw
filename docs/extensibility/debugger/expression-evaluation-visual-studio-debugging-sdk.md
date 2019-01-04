@@ -1,9 +1,6 @@
 ---
 title: 運算式評估 (Visual Studio 偵錯 SDK) |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], expression evaluation
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 52c897e40b825f85e07b4b4f14796655618280a8
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: bdd8937963175ffe0e8cadbfe2f6653b16a1f5a5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39230730"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53888721"
 ---
 # <a name="expression-evaluation-visual-studio-debugging-sdk"></a>運算式評估 (Visual Studio 偵錯 SDK)
 在中斷模式中，IDE 必須評估涉及數個程式變數的簡單運算式。 若要完成其評估，偵錯引擎 (DE) 必須剖析並評估在其中一個 IDE 視窗中輸入的運算式。 
@@ -36,7 +33,7 @@ ms.locfileid: "39230730"
 |方法|描述|  
 |------------|-----------------|  
 |[EvaluateAsync](../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md)|以非同步方式評估運算式。|  
-|[中止](../../extensibility/debugger/reference/idebugexpression2-abort.md)|結束非同步運算式評估。|  
+|[Abort](../../extensibility/debugger/reference/idebugexpression2-abort.md)|結束非同步運算式評估。|  
 |[EvaluateSync](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md)|以同步方式來評估運算式。|  
   
  同步和非同步評估需要實作[IDebugProperty2::GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md)方法。 非同步運算式評估要求實作[IDebugExpressionEvaluationCompleteEvent2](../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2.md)。  

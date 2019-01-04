@@ -1,9 +1,6 @@
 ---
 title: Visual Studio 開啟資料夾擴充性概觀 |Microsoft Docs
-ms.custom: ''
 ms.date: 02/21/2018
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 94c3f8bf-1de3-40ea-aded-7f40c4b314c7
 author: vukelich
@@ -11,12 +8,12 @@ ms.author: svukel
 manager: viveis
 ms.workload:
 - vssdk
-ms.openlocfilehash: dcb2d1d922b4ebd4943c42c478400c5873af9cc4
-ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
+ms.openlocfilehash: 2bb74703f639848d643f536edf620e30b1836310
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36302972"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53986007"
 ---
 # <a name="open-folder-extensibility"></a>開啟資料夾擴充性
 

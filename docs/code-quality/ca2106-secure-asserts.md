@@ -1,8 +1,7 @@
 ---
-title: CA2106：必須保護判斷提示
+title: CA2106:必須保護判斷提示
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA2106
@@ -16,20 +15,20 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ff16cdce4be04bd076c93763fb6a22d2721675f
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 164d2bbe335f4b69892cf069bade5cf0df1e0787
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45551778"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53864669"
 ---
-# <a name="ca2106-secure-asserts"></a>CA2106：必須保護判斷提示
+# <a name="ca2106-secure-asserts"></a>CA2106:必須保護判斷提示
 
 |||
 |-|-|
 |TypeName|SecureAsserts|
 |CheckId|CA2106|
-|類別|Microsoft.Security|
+|分類|Microsoft.Security|
 |中斷變更|中斷|
 
 ## <a name="cause"></a>原因

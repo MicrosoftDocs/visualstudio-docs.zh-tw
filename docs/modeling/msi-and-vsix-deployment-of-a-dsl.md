@@ -8,13 +8,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 2f5b8948d94c64d84b33714a4b432a46bfb73b59
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 55452088ff947cb92888018aa8d3d262483e0fb9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49931541"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53938182"
 ---
 # <a name="msi-and-vsix-deployment-of-a-dsl"></a>DSL 的 MSI 和 VSIX 部署
 您可以安裝特定領域語言，在您自己的電腦或其他電腦上。 在目標電腦上時，必須已安裝 visual Studio。
@@ -24,7 +23,7 @@ ms.locfileid: "49931541"
 
 |方法|優點|
 |-|-|
-|VSX （Visual Studio 擴充功能）|非常容易部署： 複製並執行 **.vsix** DslPackage 專案中的檔案。<br /><br /> 如需詳細資訊，請參閱[安裝和解除安裝 DSL 使用 VSX](#Installing)。|
+|VSX （Visual Studio 擴充功能）|非常容易部署：複製並執行 **.vsix** DslPackage 專案中的檔案。<br /><br /> 如需詳細資訊，請參閱[安裝和解除安裝 DSL 使用 VSX](#Installing)。|
 |MSI （安裝程式檔案）|-允許使用者按兩下 DSL 檔案開啟 Visual Studio。<br />-建立與目標電腦中的 DSL 檔案類型關聯圖示。<br />-將與 DSL 檔案類型關聯的 XSD （XML 結構描述）。 檔案載入到 Visual Studio 時，這可避免警告。<br /><br /> 您必須將安裝專案加入方案以建立 MSI。<br /><br /> 如需詳細資訊，請參閱 <<c0> [ 使用 MSI 檔案部署 DSL](#msi)。|
 
 ## <a name="Installing"></a> 安裝及解除安裝使用 VSX 的 DSL

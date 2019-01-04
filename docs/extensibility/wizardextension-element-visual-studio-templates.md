@@ -1,6 +1,5 @@
 ---
 title: WizardExtension 項目 （Visual Studio 範本） |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -15,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c12a0e0e1bcccee936a0a324d03f0251d6c1a083
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.openlocfilehash: c67d85666cc9dd45186b13d9a95ea37eb86447ad
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53561145"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53963923"
 ---
 # <a name="wizardextension-element-visual-studio-templates"></a>WizardExtension 項目 (Visual Studio 範本)
 包含自訂範本精靈 的註冊項目。  
@@ -44,7 +43,7 @@ ms.locfileid: "53561145"
 ### <a name="attributes"></a>屬性  
  無。  
   
-### <a name="child-elements"></a>子元素  
+### <a name="child-elements"></a>子項目  
   
 |項目|描述|  
 |-------------|-----------------|  

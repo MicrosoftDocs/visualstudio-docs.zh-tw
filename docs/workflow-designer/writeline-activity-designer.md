@@ -3,7 +3,6 @@ title: 工作流程設計工具-WriteLine 活動設計工具
 ms.date: 11/04/2016
 ms.topic: reference
 ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Activities.Statements.WriteLine.UI
 ms.assetid: 1b5f29a8-b7fd-477e-949e-2f689cae3c96
@@ -12,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a512288d141823115361bf8eacfd179a74a1da1b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: baea87d2ab750da3ee0cfef2450ec0ad04d231cc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49876707"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53857539"
 ---
 # <a name="writeline-activity-designer"></a>WriteLine 活動設計工具
 

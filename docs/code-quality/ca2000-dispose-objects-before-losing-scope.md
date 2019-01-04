@@ -1,8 +1,7 @@
 ---
-title: CA2000：必須在超出範圍前處置物件
+title: CA2000:必須在超出範圍前處置物件
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA2000
@@ -20,20 +19,20 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 041cade3d1c65a40826920b94adf012aa9a4b021
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 0d6aa3574e71cf64e01d083171e8bb477da02265
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45549855"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53951127"
 ---
-# <a name="ca2000-dispose-objects-before-losing-scope"></a>CA2000：必須在超出範圍前處置物件
+# <a name="ca2000-dispose-objects-before-losing-scope"></a>CA2000:必須在超出範圍前處置物件
 
 |||
 |-|-|
 |TypeName|DisposeObjectsBeforeLosingScope|
 |CheckId|CA2000|
-|類別|Microsoft.Reliability|
+|分類|Microsoft.Reliability|
 |中斷變更|非重大|
 
 ## <a name="cause"></a>原因
@@ -53,7 +52,7 @@ ms.locfileid: "45549855"
 
 - 初始化可處置物件的成員不應該在執行中的建構函式的 using 陳述式。
 
-- 巢狀只能有一個例外狀況處理常式所保護的建構函式。 例如：
+- 巢狀只能有一個例外狀況處理常式所保護的建構函式。 例如，套用至物件的
 
     ```csharp
     using (StreamReader sr = new StreamReader(new FileStream("C:\myfile.txt", FileMode.Create)))
@@ -70,7 +69,7 @@ ms.locfileid: "45549855"
 ## <a name="related-rules"></a>相關的規則
  [CA2213：可處置的欄位應該受到處置](../code-quality/ca2213-disposable-fields-should-be-disposed.md)
 
- [CA2202：不要多次處置物件](../code-quality/ca2202-do-not-dispose-objects-multiple-times.md)
+ [CA2202:不要多次處置物件](../code-quality/ca2202-do-not-dispose-objects-multiple-times.md)
 
 ## <a name="example"></a>範例
 

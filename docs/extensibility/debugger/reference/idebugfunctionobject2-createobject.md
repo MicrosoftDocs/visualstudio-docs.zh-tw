@@ -1,9 +1,6 @@
 ---
 title: IDebugFunctionObject2::CreateObject |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - IDebugFunctionObject2::CreateObject
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 35dac5f88a755ac0622fcf752f3bcc409341441c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: fd620499616f1dc2710a6a6e792352fad23e27c1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49948976"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53932638"
 ---
 # <a name="idebugfunctionobject2createobject"></a>IDebugFunctionObject2::CreateObject
 建立會使用指定評估旗標設定和逾時值的建構函式的物件。  

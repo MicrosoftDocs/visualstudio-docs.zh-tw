@@ -1,9 +1,6 @@
 ---
 title: IDebugBreakpointRequest2::GetLocationType |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugBreakpointRequest2::GetLocationType
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 70189d61752643d78c545a5d33106a4638961c1b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6049bd43748aa3e791ccd5fa9c8ae2fde9fd5b20
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49936234"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53985783"
 ---
 # <a name="idebugbreakpointrequest2getlocationtype"></a>IDebugBreakpointRequest2::GetLocationType
 取得此中斷點要求的中斷點位置類型。  
@@ -28,13 +25,13 @@ ms.locfileid: "49936234"
 ## <a name="syntax"></a>語法  
   
 ```cpp  
-HRESULT GetLocationType(   
+HRESULT GetLocationType(   
    BP_LOCATION_TYPE* pBPLocationType  
 );  
 ```  
   
 ```csharp  
-int GetLocationType(   
+int GetLocationType(   
    out enum_BP_LOCATION_TYPE pBPLocationType  
 );  
 ```  

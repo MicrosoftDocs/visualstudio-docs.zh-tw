@@ -1,9 +1,6 @@
 ---
 title: IDebugObject2::IsUserData |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugObject2::IsUserData
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7fee6b88b33080221d619d40f797d0a976d5f495
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8022c5e618df682456b81bc716e0964ff2c3a94d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49849173"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53834343"
 ---
 # <a name="idebugobject2isuserdata"></a>IDebugObject2::IsUserData
 判斷物件是否代表使用者資料。  
@@ -28,14 +25,14 @@ ms.locfileid: "49849173"
 ## <a name="syntax"></a>語法  
   
 ```cpp  
-HRESULT IsUserData(  
-   BOOL* pfUser  
+HRESULT IsUserData(  
+   BOOL* pfUser  
 );  
 ```  
   
 ```csharp  
-int IsUserData(  
-   out int pfUser  
+int IsUserData(  
+   out int pfUser  
 );  
 ```  
   

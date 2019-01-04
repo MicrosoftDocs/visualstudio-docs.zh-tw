@@ -1,9 +1,6 @@
 ---
 title: 保存動態控制項中的 Office 文件
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -21,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b77310f797db3eb031bc311f4fc68bc7fd6b4c56
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 570131dfdb3cb582ba6ee6c8a12fff2dfcc01e98
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37059242"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53894791"
 ---
 # <a name="persist-dynamic-controls-in-office-documents"></a>保存動態控制項中的 Office 文件
 
@@ -38,7 +35,7 @@ ms.locfileid: "37059242"
 
 ## <a name="persist-host-controls-in-the-document"></a>保存在文件中的主控制項
 
-在文件儲存後關閉時，所有動態主控制項都會從文件中移除。 只有基礎原生 Office 物件會保留下來。 例如，<xref:Microsoft.Office.Tools.Excel.ListObject?displayProperty=fullName>主控制項會變為<xref:Microsoft.Office.Interop.Excel.ListObject?displayProperty=fullName>。 原生 Office 物件未連接到主控制項事件，且不具有主控制項的資料繫結功能。
+在文件儲存後關閉時，所有動態主控制項都會從文件中移除。 只有基礎原生 Office 物件會保留下來。 例如， <xref:Microsoft.Office.Tools.Excel.ListObject?displayProperty=fullName> 主控制項會變為 <xref:Microsoft.Office.Interop.Excel.ListObject?displayProperty=fullName>。 原生 Office 物件未連接到主控制項事件，且不具有主控制項的資料繫結功能。
 
 下表為各類主控制項列出文件中所遺留的原生 Office 物件。
 
@@ -56,7 +53,7 @@ ms.locfileid: "37059242"
 
 若要重新建立 Word，主控制項或<xref:Microsoft.Office.Tools.Excel.NamedRange>或<xref:Microsoft.Office.Tools.Excel.ListObject>for Excel，使用主控制項`Add` \<*控制項類別*> 方法<xref:Microsoft.Office.Tools.Excel.ControlCollection?displayProperty=fullName>或<xref:Microsoft.Office.Tools.Word.ControlCollection?displayProperty=fullName>物件。 使用具有原生 Office 物件參數的方法。
 
-例如，如果您想要建立<xref:Microsoft.Office.Tools.Excel.ListObject?displayProperty=fullName>主控制項從現有的原生<xref:Microsoft.Office.Interop.Excel.ListObject?displayProperty=fullName>文件開啟時，使用<xref:Microsoft.Office.Tools.Excel.ControlCollection.AddListObject%2A>方法並傳入現有<xref:Microsoft.Office.Interop.Excel.ListObject>。 下列程式碼範例示範如何在 Excel 的文件層級專案中執行這項作業。 此程式碼重新建立動態 <xref:Microsoft.Office.Tools.Excel.ListObject> ，其以 <xref:Microsoft.Office.Interop.Excel.ListObject> 類別中名為 `MyListObject` 的現有 `Sheet1` 為基礎。
+例如，若您想要在文件開啟時從現有的原生 <xref:Microsoft.Office.Tools.Excel.ListObject?displayProperty=fullName> 建立 <xref:Microsoft.Office.Interop.Excel.ListObject?displayProperty=fullName> 主控制項，請使用 <xref:Microsoft.Office.Tools.Excel.ControlCollection.AddListObject%2A> 方法並傳入現有 <xref:Microsoft.Office.Interop.Excel.ListObject>。 下列程式碼範例示範如何在 Excel 的文件層級專案中執行這項作業。 此程式碼重新建立動態 <xref:Microsoft.Office.Tools.Excel.ListObject> ，其以 <xref:Microsoft.Office.Interop.Excel.ListObject> 類別中名為 `MyListObject` 的現有 `Sheet1` 為基礎。
 
 [!code-csharp[Trin_ExcelWorkbookDynamicControls#6](../vsto/codesnippet/CSharp/trin_excelworkbookdynamiccontrols4/Sheet1.cs#6)]
 [!code-vb[Trin_ExcelWorkbookDynamicControls#6](../vsto/codesnippet/VisualBasic/trin_excelworkbookdynamiccontrols4/Sheet1.vb#6)]
@@ -89,18 +86,18 @@ ms.locfileid: "37059242"
 
 #### <a name="remove-activex-wrappers-when-the-document-is-opened"></a>文件開啟時移除 ActiveX 包裝函式
 
-若要移除所有的 ActiveX 包裝函式，呼叫`GetVstoObject`方法來產生的主項目<xref:Microsoft.Office.Interop.Word.Document>或<xref:Microsoft.Office.Interop.Excel.Workbook>表示新開啟的文件。 例如，若要移除的 Word 文件中的所有 ActiveX 包裝函式，您可以呼叫`GetVstoObject`方法來產生的主項目<xref:Microsoft.Office.Interop.Word.Document>物件傳遞至事件處理常式，如<xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentOpen>事件。
+若要移除所有 ActiveX 包裝函式，請呼叫 `GetVstoObject` 方法來產生表示新開啟文件的 <xref:Microsoft.Office.Interop.Word.Document> 或 <xref:Microsoft.Office.Interop.Excel.Workbook> 主項目。 例如，若要移除 Word 文件所有的 ActiveX 包裝函式，您可以呼叫 `GetVstoObject` 方法來產生 <xref:Microsoft.Office.Interop.Word.Document> 物件的主項目，而其傳遞至 <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentOpen> 事件的事件處理常式。
 
 若文件僅會在安裝 VSTO 增益集的電腦上開啟，則此程序會很有用。 如果文件可能會傳遞至未安裝 VSTO 增益集的其他使用者，請考慮改為在關閉文件前移除控制項。
 
-下列程式碼範例示範如何呼叫`GetVstoObject`文件開啟時的方法。
+下列程式碼範例示範如何在文件開啟時呼叫 `GetVstoObject` 方法。
 
 [!code-vb[Trin_WordAddInDynamicControls#11](../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb#11)]
 [!code-csharp[Trin_WordAddInDynamicControls#11](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs#11)]
 
 雖然`GetVstoObject`方法主要用來產生新的主項目，在執行階段，這個方法也會清除文件中的所有 ActiveX 包裝函式呼叫為特定的文件的第一次。 如需有關如何使用`GetVstoObject`方法，請參閱 <<c2> [ 擴充 Word 文件和 VSTO 增益集在執行階段中的 Excel 活頁簿](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)。
 
-如果您 VSTO 增益集建立動態控制項，開啟文件時，您 VSTO 增益集將會已呼叫`GetVstoObject`方法建立控制項的程序的一部分。 您不需要新增個別呼叫`GetVstoObject`方法，在此案例中移除 ActiveX 包裝函式。
+如果您 VSTO 增益集建立動態控制項，開啟文件時，您 VSTO 增益集將會已呼叫`GetVstoObject`方法建立控制項的程序的一部分。 您不需要將個別呼叫加入 `GetVstoObject` 方法中來移除此案例中的 ActiveX 包裝函式。
 
 #### <a name="remove-the-dynamic-controls-before-the-document-is-closed"></a>文件關閉前移除動態控制項
 

@@ -1,9 +1,6 @@
 ---
 title: IDebugPortEx2::CanTerminateProcess |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugPortEx2::CanTerminateProcess
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b5717d5312630c3e9adaac2e1a32fa0d44a3a213
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7ce0e2941c964a578a26328a028d880658e45ea5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49902330"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53900421"
 ---
 # <a name="idebugportex2canterminateprocess"></a>IDebugPortEx2::CanTerminateProcess
 判斷是否可以終止處理程序。  
@@ -28,13 +25,13 @@ ms.locfileid: "49902330"
 ## <a name="syntax"></a>語法  
   
 ```cpp  
-HRESULT CanTerminateProcess(   
+HRESULT CanTerminateProcess(   
    IDebugProcess2* pPortProcess  
 );  
 ```  
   
 ```csharp  
-HRESULT CanTerminateProcess(   
+HRESULT CanTerminateProcess(   
    IDebugProcess2 pPortProcess  
 );  
 ```  

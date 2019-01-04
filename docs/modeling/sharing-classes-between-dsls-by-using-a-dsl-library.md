@@ -8,13 +8,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: ccfb4fa9de6513ecc36cad7156117d70879fca2e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f95cc7fad1b4aaac3da687352cf5561a7d72ff8e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49814911"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53897835"
 ---
 # <a name="sharing-classes-between-dsls-by-using-a-dsl-library"></a>使用 DSL 程式庫共用 DSL 之間的類別
 在 Visual Studio Visualization and Modeling SDK 中，您可以建立不完整的 DSL 定義，您可以匯入至另一個 DSL。 這可讓您建構的類似模型的通用部分。

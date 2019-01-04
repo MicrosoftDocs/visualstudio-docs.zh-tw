@@ -1,8 +1,7 @@
 ---
-title: 將 XML 結構描述集合搜尋節點加入至工作區
+title: XML 結構描述集合搜尋結果節點新增至工作區
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: conceptual
 ms.assetid: ff33b3cc-4db9-4b4e-9378-b45ed5999b18
 author: gewarren
@@ -10,16 +9,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 04e74057bd059c82010678b7de571ff180e7fbfe
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 9e9f004943474f9b1c0fb449c1aec23f70034c3a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751906"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53875030"
 ---
-# <a name="how-to-add-schema-set-search-result-nodes-to-the-workspace"></a>如何： 將結構描述集合搜尋節點加入至工作區
+# <a name="how-to-add-schema-set-search-result-nodes-to-the-workspace"></a>HOW TO：結構描述集合搜尋結果節點新增至工作區
 
-本主題說明如何將以反白顯示的節點加入**XML 結構描述總管**做為工作區中的關鍵字搜尋的結果。
+本主題說明如何將會以反白顯示的節點加入**XML 結構描述總管**做為工作區中的關鍵字搜尋的結果。
 
 > [!NOTE]
 > 只有全域節點可以加入至[工作區](../xml-tools/xml-schema-designer-workspace.md)。
@@ -29,15 +28,15 @@ ms.locfileid: "34751906"
 
 ## <a name="to-add-schema-set-result-nodes"></a>加入結構描述集合結果節點
 
-1.  請依照[How to： 建立和編輯 XSD 結構描述檔案](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md)。
+1.  請依照下列中的步驟[How to:建立和編輯 XSD 結構描述檔案](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md)。
 
-2.  在搜尋文字方塊中輸入"purchaseOrder" [XML 總管](../xml-tools/xml-schema-explorer.md)工具列，並按一下 [搜尋] 按鈕。
+2.  在搜尋文字方塊中輸入"purchaseOrder" [XML 總管](../xml-tools/xml-schema-explorer.md)工具列，然後按一下 [搜尋] 按鈕。
 
      ![XML 結構描述總管關鍵字搜尋](../xml-tools/media/schemaexplorersearch.gif)
 
-     搜尋結果會以反白顯示**XML 結構描述總管**並以刻度標示在垂直捲軸上。
+     搜尋結果會以反白顯示**XML 結構描述總管**和以垂直捲軸的刻度標示。
 
-3.  按一下搜尋結果加入工作區**反白顯示的節點新增到工作區**摘要結果面板上的按鈕。
+3.  新增至工作區的搜尋結果中，依序按一下**反白顯示的節點加入工作區**摘要結果面板上的按鈕。
 
      ![XML 結構描述總管搜尋結果](../xml-tools/media/schemaexplorersearchresult.gif)
 

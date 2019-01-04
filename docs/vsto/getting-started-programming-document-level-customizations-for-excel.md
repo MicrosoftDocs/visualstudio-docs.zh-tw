@@ -1,9 +1,6 @@
 ---
 title: 開始使用適用於 Excel 的文件層級自訂程式設計
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,12 +13,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 808b463445934ecf5cc973b571b4b64d181eb692
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: 4c75b02fa3624ab56539e7ea9fbe7792632c272c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53646941"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53937448"
 ---
 # <a name="get-started-programming-document-level-customizations-for-excel"></a>開始使用適用於 Excel 的文件層級自訂程式設計
   如果您剛開始使用 Visual Studio 建立適用於 Microsoft Office Excel 的文件層級自訂，以下是您需要知道。  
@@ -74,5 +71,3 @@ ms.locfileid: "53646941"
  [使用 Excel 的逐步解說](../vsto/walkthroughs-using-excel.md)   
  [Excel 物件模型概觀](../vsto/excel-object-model-overview.md)   
  [在 Office 方案中撰寫程式碼](../vsto/writing-code-in-office-solutions.md)  
-  
-  

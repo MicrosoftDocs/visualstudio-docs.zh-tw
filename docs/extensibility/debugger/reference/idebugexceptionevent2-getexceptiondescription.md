@@ -1,9 +1,6 @@
 ---
 title: IDebugExceptionEvent2::GetExceptionDescription |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugExceptionEvent2::GetExceptionDescription
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 61dcc2d961281b620d6670c7355f026b6207554b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 90ca211f8d1c4e253de2934e89605508af867a0d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49891601"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53910122"
 ---
 # <a name="idebugexceptionevent2getexceptiondescription"></a>IDebugExceptionEvent2::GetExceptionDescription
 取得可顯示例外狀況的描述。  
@@ -28,13 +25,13 @@ ms.locfileid: "49891601"
 ## <a name="syntax"></a>語法  
   
 ```cpp  
-HRESULT GetExceptionDescription(   
+HRESULT GetExceptionDescription(   
    BSTR* pbstrDescription  
 );  
 ```  
   
 ```csharp  
-int GetExceptionDescription(   
+int GetExceptionDescription(   
    out string pbstrDescription  
 );  
 ```  

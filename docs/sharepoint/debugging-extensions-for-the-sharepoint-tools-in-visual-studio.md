@@ -1,9 +1,6 @@
 ---
 title: 在 Visual Studio 中 SharePoint 工具的偵錯擴充功能 |Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5f878284c6e181956cbd3e708334301963aa25cf
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 8f838363b52a85faff022f49542fcc2fcc7e450d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36326091"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53950812"
 ---
 # <a name="debug-extensions-for-the-sharepoint-tools-in-visual-studio"></a>偵錯在 Visual Studio 中 SharePoint 工具擴充功能
   您可以偵錯的實驗執行個體或一般的執行個體的 Visual Studio 中 SharePoint 工具擴充功能。 如果您需要的行為延伸模組進行疑難排解，您也可以修改登錄值以顯示其他錯誤資訊，並設定 Visual Studio 執行 SharePoint 命令的方式。
@@ -32,15 +29,15 @@ ms.locfileid: "36326091"
 
  如需示範如何偵錯各種類型的 Visual Studio 的實驗執行個體中的延伸模組的範例，請參閱下列逐步解說：
 
--   [逐步解說： 擴充 SharePoint 專案項目類型](../sharepoint/walkthrough-extending-a-sharepoint-project-item-type.md)
+-   [逐步解說：擴充 SharePoint 專案項目類型](../sharepoint/walkthrough-extending-a-sharepoint-project-item-type.md)
 
--   [逐步解說： 建立自訂動作專案項目與項目範本，第 1 部分](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)
+-   [逐步解說：使用項目範本，第 1 部分中建立自訂動作專案項目](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)
 
--   [逐步解說： 建立 SharePoint 專案的自訂部署步驟](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md)
+-   [逐步解說：建立 SharePoint 專案的自訂部署步驟](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md)
 
--   [逐步解說： 擴充伺服器總管以顯示 web 組件](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)
+-   [逐步解說：擴充伺服器總管以顯示 web 組件](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)
 
--   [逐步解說： 呼叫 SharePoint 用戶端物件模型，在 伺服器總管延伸模組](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md)
+-   [逐步解說：呼叫 SharePoint 用戶端物件模型，在 伺服器總管延伸模組](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md)
 
 ## <a name="debug-extensions-in-the-regular-instance-of-visual-studio"></a>偵錯 Visual Studio 的一般執行個體中的延伸模組
  如果您想要偵錯擴充功能專案的 Visual Studio 一般的執行個體中，第一次規則執行個體中安裝擴充功能。 然後，將偵錯工具附加至第二個 Visual Studio 處理序。 完成之後，您就可以移除擴充功能，使它不會再載入在開發電腦上。

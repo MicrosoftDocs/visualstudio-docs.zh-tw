@@ -1,9 +1,6 @@
 ---
 title: 將功能表命令當地語系化 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - localize
@@ -18,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c8eb9e566f4f5916961a95a1c61f8fdcbb689f1e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 27c12228de5a49d0b61cc61e5c1233343430b686
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49876213"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53934053"
 ---
 # <a name="localize-menu-commands"></a>將功能表命令當地語系化
 您也可以建立當地語系化的功能表和工具列命令提供當地語系化的文字 *.vsct*檔案，與當地語系化 *.resx*的 VSPackage，然後更新專案檔以納入的檔案變更。  

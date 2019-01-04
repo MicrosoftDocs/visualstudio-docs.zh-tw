@@ -1,9 +1,6 @@
 ---
-title: IDebugEngineCreateEvent2 |Microsoft 文件
-ms.custom: ''
+title: IDebugEngineCreateEvent2 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugEngineCreateEvent2
@@ -15,15 +12,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c10522a869ff279c81e06aca53c3d06b453cdff6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: accf18a72969d160d9b4469d9f0e6f4d843a5c70
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31111845"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53963158"
 ---
 # <a name="idebugenginecreateevent2"></a>IDebugEngineCreateEvent2
-偵錯引擎 (DE) 建立 DE 的執行個體時，將此介面傳送至工作階段的偵錯管理員 (SDM)。  
+偵錯引擎 (DE) 會將此介面傳送至工作階段的偵錯管理員 (SDM) 中，建立的預設執行個體時。  
   
 ## <a name="syntax"></a>語法  
   
@@ -31,25 +28,25 @@ ms.locfileid: "31111845"
 IDebugEngineCreateEvent2 : IUnknown  
 ```  
   
-## <a name="notes-for-implementers"></a>實作者注意事項  
- DE 實作這個介面做為其正常作業的一部分。 [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)介面必須實作此介面為相同的物件上 (SDM 使用`QueryInterface`方法來存取`IDebugEvent2`介面)。  
+## <a name="notes-for-implementers"></a>實作者的附註  
+ DE 會實作這個介面做為其正常作業的一部分。 [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)介面必須實作此介面的相同物件上 (使用 SDM`QueryInterface`方法來存取`IDebugEvent2`介面)。  
   
 ## <a name="notes-for-callers"></a>呼叫端資訊  
- 建立裝置和 DE 具現化時，會傳送此事件的物件。 事件會使用傳送[IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)它附加到正在偵錯程式時，會將 SDM 所提供的回呼函式。  
+ DE 會建立並 DE 具現化時，會傳送這個事件的物件。 事件會使用傳送[IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)它附加到正在偵錯程式時，會將 SDM 所提供的回呼函式。  
   
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法  
  下表顯示的方法`IDebugEngineCreateEvent2`。  
   
 |方法|描述|  
 |------------|-----------------|  
-|[GetEngine](../../../extensibility/debugger/reference/idebugenginecreateevent2-getengine.md)|擷取新建立的偵錯引擎 (DE) 表示的物件。|  
+|[GetEngine](../../../extensibility/debugger/reference/idebugenginecreateevent2-getengine.md)|擷取物件，表示新建立的偵錯引擎 (DE)。|  
   
 ## <a name="requirements"></a>需求  
  標頭： msdbg.h  
   
- 命名空間： Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間:Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)   

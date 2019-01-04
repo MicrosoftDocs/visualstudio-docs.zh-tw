@@ -1,9 +1,6 @@
 ---
 title: HOW TO：簽署 Office 方案
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 076cfcb6b63d650665e79a1e2d522595d4a82922
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: 3aafdf24a6a2c5c5484291fb30b70a4ef1b7aa7e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53804691"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53829043"
 ---
 # <a name="how-to-sign-office-solutions"></a>HOW TO：簽署 Office 方案
   如果您登入解決方案，您可以授與信任給方案做為辨識項使用的憑證。 您可以使用相同的憑證用於多個方案，並沒有額外的安全性原則更新，所有的解決方案將會信任。

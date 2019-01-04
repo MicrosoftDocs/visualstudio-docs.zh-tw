@@ -8,13 +8,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 82466360fd4f891d28e0218a540d27c803a39662
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 63243df353dc141363a3ebfdd61a5f90a2fe6258
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47858870"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53887863"
 ---
 # <a name="setting-a-background-image-on-a-diagram"></a>設定圖表上的背景影像
 在 Visual Studio Visualization and Modeling SDK，您可以使用自訂程式碼產生的設計工具設定背景影像。
@@ -35,7 +34,7 @@ ms.locfileid: "47858870"
 
 6.  以滑鼠右鍵按一下 Dsl，然後按一下 **屬性**開啟 Dsl 專案的屬性。
 
-7.  在**資源**索引標籤上，按一下 **這個專案未包含預設的資源檔**。
+7.  在**資源**索引標籤上，按一下 **這個專案未包含預設的資源檔若要建立一個，請按一下這裡。**
 
 8.  加入資源檔中的映像檔，藉由拖曳從圖片**方案總管 中**到資源視窗。
 
@@ -45,7 +44,7 @@ ms.locfileid: "47858870"
 
 11. 如果遺漏了 Resources.Designer.cs，按一下 [檔案 Resources.resx 中**方案總管] 中**。
 
-12. 在 **屬性**視窗中，將`Custom Tool`屬性設`ResXFileCodeGenerator`。
+12. 在 [屬性]  視窗中，將 `Custom Tool` 屬性設定為 `ResXFileCodeGenerator`。
 
 13. 中**方案總管**，以滑鼠右鍵按一下 Dsl 專案，指向**新增**，然後按一下**新資料夾**。
 

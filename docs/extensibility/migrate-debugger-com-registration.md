@@ -1,9 +1,6 @@
 ---
 title: 移轉 64 位元偵錯工具 COM 類別登錄 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/10/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 45cfcee6-7a68-4d4f-b3f6-e2d8a0fa066a
 author: gregg-miskelly
@@ -11,12 +8,12 @@ ms.author: greggm
 manager: douge
 ms.workload:
 - greggm
-ms.openlocfilehash: 6c7578ddbdf84a1520a732fb64380bb53e5359f9
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 0b81d0dc38e4fb6c6bb14860634d41d85aa4dee9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637847"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53892114"
 ---
 # <a name="migrate-64-bit-debugger-com-class-registration"></a>移轉 64 位元偵錯工具 COM 類別註冊
 
@@ -28,7 +25,7 @@ ms.locfileid: "39637847"
 
 以下是範例 msvsmon-comclass-def 檔註冊管理和一個原生類別：
 
-檔案名稱： *MyCompany.MyExample.msvsmon-comclass-def.json*
+檔案名稱：*MyCompany.MyExample.msvsmon-comclass-def.json*
 
 ```json
 {

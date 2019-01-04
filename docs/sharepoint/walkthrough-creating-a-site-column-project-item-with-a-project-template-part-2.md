@@ -1,9 +1,6 @@
 ---
-title: 逐步解說： 使用專案範本建立網站資料行專案項目，第 2 部分 |Microsoft Docs
-ms.custom: ''
+title: 逐步解說：使用專案範本建立網站資料行專案項目，第 2 部分 |Microsoft Docs
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 helpviewer_keywords:
 - project items [SharePoint development in Visual Studio], creating template wizards
@@ -14,17 +11,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d4512dc15d394cdf2442d8bfcf440ccb31623a29
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f5f9f2bbad380302d2a13b4352b2c9a7a54797e5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942071"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53829903"
 ---
-# <a name="walkthrough-create-a-site-column-project-item-with-a-project-template-part-2"></a>逐步解說： 使用專案範本，第 2 部分中建立網站資料行專案項目
+# <a name="walkthrough-create-a-site-column-project-item-with-a-project-template-part-2"></a>逐步解說：使用專案範本，第 2 部分建立網站資料行專案項目
   您定義自訂 SharePoint 專案項目類型，並將它與 Visual Studio 中的專案範本產生關聯之後，您也可以提供範本的精靈。 您可以使用精靈，在使用您的範本來建立新的專案，其中包含的專案項目時，從使用者收集資訊。 您所收集的資訊可以用來初始化專案項目中。  
   
- 在此逐步解說中，您會將精靈的網站欄專案範本所示[逐步解說： 使用專案範本，第 1 部分建立網站資料行專案項目](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md)。 當使用者建立的網站欄專案時，精靈會收集站台資料行 （例如其基底類型和群組） 的相關資訊，並將這項資訊才能*Elements.xml*新專案中的檔案。  
+ 在此逐步解說中，您會將精靈的網站欄專案範本所示[逐步解說：使用專案範本建立網站資料行專案項目，第 1 部分](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md)。 當使用者建立的網站欄專案時，精靈會收集站台資料行 （例如其基底類型和群組） 的相關資訊，並將這項資訊才能*Elements.xml*新專案中的檔案。  
   
  本逐步解說將示範下列工作：  
   
@@ -44,7 +41,7 @@ ms.locfileid: "49942071"
 > 針對一系列的範例工作流程中，請參閱[SharePoint 工作流程範例](https://docs.microsoft.com/sharepoint/dev/general-development/sharepoint-workflow-samples)。  
   
 ## <a name="prerequisites"></a>必要條件  
- 若要執行本逐步解說中，您必須先建立 SiteColumnProjectItem 解決方案藉由完成[逐步解說： 使用專案範本，第 1 部分建立網站資料行專案項目](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md)。  
+ 若要執行本逐步解說中，您必須先建立 SiteColumnProjectItem 解決方案藉由完成[逐步解說：使用專案範本建立網站資料行專案項目，第 1 部分](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md)。  
   
  您還需要完成這個逐步解說在開發電腦上的下列元件：  
   
@@ -54,7 +51,7 @@ ms.locfileid: "49942071"
   
   下列概念的知識會很有幫助，但並非必要，若要完成本逐步解說：  
   
-- Visual Studio 中的專案和項目範本的精靈。 如需詳細資訊，請參閱 <<c0> [ 如何： 使用精靈與專案範本](../extensibility/how-to-use-wizards-with-project-templates.md)而<xref:Microsoft.VisualStudio.TemplateWizard.IWizard>介面。  
+- Visual Studio 中的專案和項目範本的精靈。 如需詳細資訊，請參閱[＜How to：使用精靈與專案範本](../extensibility/how-to-use-wizards-with-project-templates.md)而<xref:Microsoft.VisualStudio.TemplateWizard.IWizard>介面。  
   
 - 在 SharePoint 中的網站資料行。 如需詳細資訊，請參閱 <<c0> [ 資料行](http://go.microsoft.com/fwlink/?LinkId=183547)。  
   
@@ -70,7 +67,7 @@ ms.locfileid: "49942071"
 |SharePoint 命令|這些是用來執行精靈時，呼叫本機 SharePoint 網站的精靈資料模型的方法。 因為 SharePoint 命令必須以.NET Framework 3.5 為目標，這些命令會實作不同的組件與其餘的精靈程式碼。|  
   
 ## <a name="create-the-projects"></a>建立專案
- 若要完成此逐步解說中，您需要將數個專案加入至您在建立 SiteColumnProjectItem 方案[逐步解說： 使用專案範本，第 1 部分建立網站資料行專案項目](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md):  
+ 若要完成此逐步解說中，您需要將數個專案加入至您在建立 SiteColumnProjectItem 方案[逐步解說：使用專案範本，第 1 部分建立網站資料行專案項目](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md):  
   
 - WPF 專案。 您將實作<xref:Microsoft.VisualStudio.TemplateWizard.IWizard>介面，並在此專案中定義的精靈 UI。  
   
@@ -119,7 +116,7 @@ ms.locfileid: "49942071"
   
 3.  請確定目標架構設為.NET Framework 4.5 中，而非.NET Framework 4.5 Client Profile。  
   
-     如需詳細資訊，請參閱[如何：以 .NET Framework 版本為目標](../ide/how-to-target-a-version-of-the-dotnet-framework.md)。  
+     如需詳細資訊，請參閱[＜How to：以一個 .NET Framework 版本為目標](../ide/how-to-target-a-version-of-the-dotnet-framework.md)。  
   
 4.  開啟捷徑功能表**ProjectTemplateWizard**專案，選擇**新增**，然後選擇**新項目**。  
   
@@ -163,7 +160,7 @@ ms.locfileid: "49942071"
   
 13. 如果您正在開發 Visual Basic 專案，使用匯入 ProjectTemplateWizard 命名空間到您的專案**專案設計工具**。  
   
-     如需詳細資訊，請參閱 <<c0> [ 如何： 加入或移除已匯入的命名空間&#40;Visual Basic&#41;](../ide/how-to-add-or-remove-imported-namespaces-visual-basic.md)。</c0>  
+     如需詳細資訊，請參閱[＜How to：新增或移除匯入命名空間&#40;Visual Basic&#41;](../ide/how-to-add-or-remove-imported-namespaces-visual-basic.md)。  
   
 #### <a name="to-configure-the-sharepointcommands-project"></a>若要設定 SharePointcommands 專案
   
@@ -323,7 +320,7 @@ ms.locfileid: "49942071"
 1.  在功能表列上選擇 [建置] > [建置解決方案]。  
   
 ## <a name="removing-the-keysnk-file-from-the-project-template"></a>移除專案範本中的 key.snk 檔案
- 在 [逐步解說： 使用專案範本，第 1 部分建立網站資料行專案項目](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md)，您所建立的專案範本包含用來簽署每個網站欄專案執行個體的 key.snk 檔案。 這個 key.snk 檔案不再是必要的因為精靈現在會產生新的 key.snk 檔案，每個專案。 移除專案範本中的 key.snk 檔案，並移除此檔案的參考。  
+ 在 [逐步解說：使用專案範本，第 1 部分建立網站資料行專案項目](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md)，您所建立的專案範本包含用來簽署每個網站欄專案執行個體的 key.snk 檔案。 這個 key.snk 檔案不再是必要的因為精靈現在會產生新的 key.snk 檔案，每個專案。 移除專案範本中的 key.snk 檔案，並移除此檔案的參考。  
   
 #### <a name="to-remove-the-keysnk-file-from-the-project-template"></a>若要移除的專案範本中的 key.snk 檔案  
   
@@ -542,9 +539,8 @@ ms.locfileid: "49942071"
      如需如何部署[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]延伸模組，請參閱[運送 Visual Studio 擴充功能](/visualstudio/extensibility/shipping-visual-studio-extensions)。  
   
 ## <a name="see-also"></a>另請參閱
- [逐步解說： 使用專案範本，第 1 部分中建立網站資料行專案項目](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md)   
+ [逐步解說：使用專案範本，第 1 部分建立網站資料行專案項目](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md)   
  [定義自訂 SharePoint 專案項目類型](../sharepoint/defining-custom-sharepoint-project-item-types.md)   
  [為 SharePoint 專案項目建立項目範本和專案範本](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)   
  [Visual Studio 範本結構描述參考](/visualstudio/extensibility/visual-studio-template-schema-reference)   
- [如何︰搭配專案範本使用精靈](../extensibility/how-to-use-wizards-with-project-templates.md)  
-  
+ [如何：使用精靈與專案範本](../extensibility/how-to-use-wizards-with-project-templates.md)  

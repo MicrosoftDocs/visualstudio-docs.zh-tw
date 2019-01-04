@@ -1,9 +1,6 @@
 ---
 title: 建立 Outlook 表單區域
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - MICROSOFT.OFFICE.TOOLS.OUTLOOK.FORMREGION
@@ -19,12 +16,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 77dcdecc766b253eb0cafb808bec8cb48294d6fa
-ms.sourcegitcommit: a715de2ba8c703f37aa2102567b1aa2c0f05a117
+ms.openlocfilehash: 7b5145701f72bed183dbcff3c3fbe48f757740f0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "53441726"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53842189"
 ---
 # <a name="create-outlook-form-regions"></a>建立 Outlook 表單區域
   您可以使用表單區域自訂 Microsoft Office Outlook 表單。 Visual Studio 提供進階的工具，可讓您更方便地設計、開發和偵錯表單區域。  
@@ -190,4 +187,3 @@ ms.locfileid: "53441726"
 |[如何：防止 Outlook 顯示表單區域](../vsto/how-to-prevent-outlook-from-displaying-a-form-region.md)|示範如何防止 Microsoft Office Outlook 針對特定項目顯示表單區域。|  
 |示範如何存取顯示表單區域的 Outlook 項目。|  
 |[Outlook 表單區域中的自訂動作](../vsto/custom-actions-in-outlook-form-regions.md)|描述如何讓使用者回應 Outlook 項目。|  
-  

@@ -1,8 +1,7 @@
 ---
-title: CA1023：不應該使用多維索引子
+title: CA1023:不應該使用多維索引子
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - IndexersShouldNotBeMultidimensional
@@ -20,20 +19,20 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 96b769aa8cc009f122d4cef4ca8d270c6b3fced5
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 2e1282612da884dfbaff646a3b84f713ada7ed75
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45547693"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53852621"
 ---
-# <a name="ca1023-indexers-should-not-be-multidimensional"></a>CA1023：不應該使用多維索引子
+# <a name="ca1023-indexers-should-not-be-multidimensional"></a>CA1023:不應該使用多維索引子
 
 |||
 |-|-|
 |TypeName|IndexersShouldNotBeMultidimensional|
 |CheckId|CA1023|
-|類別|Microsoft.Design|
+|分類|Microsoft.Design|
 |中斷變更|中斷|
 
 ## <a name="cause"></a>原因
@@ -56,6 +55,6 @@ ms.locfileid: "45547693"
  [!code-csharp[FxCop.Design.OneDimensionForIndexer#1](../code-quality/codesnippet/CSharp/ca1023-indexers-should-not-be-multidimensional_1.cs)]
 
 ## <a name="related-rules"></a>相關的規則
- [CA1043：必須針對索引子使用整數類或字串引數](../code-quality/ca1043-use-integral-or-string-argument-for-indexers.md)
+ [CA1043： 必須使用索引子的整數類或字串引數](../code-quality/ca1043-use-integral-or-string-argument-for-indexers.md)
 
- [CA1024：建議在適當時使用屬性](../code-quality/ca1024-use-properties-where-appropriate.md)
+ [CA1024:在適當時使用屬性](../code-quality/ca1024-use-properties-where-appropriate.md)
