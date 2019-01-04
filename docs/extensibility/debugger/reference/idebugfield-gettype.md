@@ -1,9 +1,6 @@
 ---
 title: IDebugField::GetType |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugField::GetType
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a2475c9b5a24fb00d266ce1ceaae0181c6f010f2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: efcfd4398053b6e95d7780a6f81d571b5a4fd1d8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49939888"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53987436"
 ---
 # <a name="idebugfieldgettype"></a>IDebugField::GetType
 這個方法會取得欄位的型別。  
@@ -28,7 +25,7 @@ ms.locfileid: "49939888"
 ## <a name="syntax"></a>語法  
   
 ```cpp  
-HRESULT GetType(   
+HRESULT GetType(   
    IDebugField** ppType  
 );  
 ```  
