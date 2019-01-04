@@ -1,8 +1,7 @@
 ---
-title: CA1300：指定 MessageBoxOptions
+title: CA1300:必須指定 MessageBoxOptions
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - SpecifyMessageBoxOptions
@@ -19,14 +18,14 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 815fe7b7f839adeb3204e33bb532b70909d92b53
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 6b72d40bbb2f83eeb8a402b2d389a941f64bfef2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37056383"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53845372"
 ---
-# <a name="ca1300-specify-messageboxoptions"></a>CA1300：指定 MessageBoxOptions
+# <a name="ca1300-specify-messageboxoptions"></a>CA1300:必須指定 MessageBoxOptions
 
 |||
 |-|-|

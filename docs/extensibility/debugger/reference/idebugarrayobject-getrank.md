@@ -1,9 +1,6 @@
 ---
 title: IDebugArrayObject::GetRank |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugArrayObject::GetRank
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7660be0b391208fc52b81796c0a980b079e5aaa2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e433b8c50b363347469586d2ecde4bd287a58264
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49875420"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53857280"
 ---
 # <a name="idebugarrayobjectgetrank"></a>IDebugArrayObject::GetRank
 取得陣列，也就是維度數目的順位。  
@@ -28,7 +25,7 @@ ms.locfileid: "49875420"
 ## <a name="syntax"></a>語法  
   
 ```cpp  
-HRESULT GetRank(   
+HRESULT GetRank(   
    DWORD* pdwRank  
 );  
 ```  

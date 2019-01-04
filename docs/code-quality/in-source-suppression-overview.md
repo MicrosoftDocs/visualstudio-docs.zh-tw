@@ -2,7 +2,6 @@
 title: 隱藏程式碼分析警告
 ms.date: 08/03/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 helpviewer_keywords:
 - source suppression, code analysis
@@ -16,12 +15,12 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e90de7acf13ca28a20a35aa3ad3e70f58780279
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: d72697a8969983d83445808b75c63bc8657ecf1f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39513042"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53932868"
 ---
 # <a name="suppress-code-analysis-warnings"></a>隱藏程式碼分析警告
 
@@ -140,7 +139,7 @@ public class Animal
 
 Managed 程式碼編譯器和某些協力廠商工具產生程式碼，以便快速的程式碼開發。 編譯器所產生的程式碼會出現在原始程式檔，通常會標示`GeneratedCodeAttribute`屬性。
 
-您可以選擇是否要隱藏程式碼分析警告與錯誤產生的程式碼。 如需如何隱藏這類警告和錯誤的資訊，請參閱[如何： 隱藏的警告，產生的程式碼](../code-quality/how-to-suppress-code-analysis-warnings-for-generated-code.md)。
+您可以選擇是否要隱藏程式碼分析警告與錯誤產生的程式碼。 如需如何隱藏這類警告和錯誤的資訊，請參閱[How to:隱藏所產生的程式碼的警告](../code-quality/how-to-suppress-code-analysis-warnings-for-generated-code.md)。
 
 > [!NOTE]
 > 程式碼分析忽略`GeneratedCodeAttribute`套用至整個組件或單一參數時。

@@ -1,13 +1,8 @@
 ---
-title: 逐步解說： 建立 SharePoint Web 組件 |Microsoft Docs
-ms.custom: ''
+title: 逐步解說：建立 SharePoint Web 組件 |Microsoft Docs
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -19,14 +14,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 09b9299c6428ef63ccf71220fc3cb599e9e3b5a9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5f2c851659d09cc118f8f54b6e82bb3b806d7e34
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49872404"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53944281"
 ---
-# <a name="walkthrough-create-a-web-part-for-sharepoint"></a>逐步解說： 建立 SharePoint web 組件
+# <a name="walkthrough-create-a-web-part-for-sharepoint"></a>逐步解說：建立 SharePoint web 組件
 
 Web 組件可讓使用者能夠直接使用瀏覽器，以修改內容、 外觀及行為的 SharePoint 網站頁面。 本逐步解說會示範如何使用建立 Web 組件**Web 組件**Visual Studio 2010 中的項目範本。
 
@@ -45,7 +40,7 @@ Web 組件會顯示資料格線中的員工。 使用者指定的檔案，其中
 - 在 SharePoint 中測試 Web 組件。
 
     > [!NOTE]
-    > 在下列指示的某些 Visual Studio 使用者介面項目中，您的電腦可能會顯示不同的名稱或位置。 您所擁有的 Visual Studio 版本以及使用的設定會決定這些項目。 如需詳細資訊，請參閱[將 Visual Studio IDE 個人化](../ide/personalizing-the-visual-studio-ide.md)。
+    > 在下列指示的某些 Visual Studio 使用者介面項目中，您的電腦可能會顯示不同的名稱或位置： 您所擁有的 Visual Studio 版本以及使用的設定會決定這些項目。 如需詳細資訊，請參閱[將 Visual Studio IDE 個人化](../ide/personalizing-the-visual-studio-ide.md)。
 
 ## <a name="prerequisites"></a>必要條件
 
@@ -222,6 +217,6 @@ Web 組件會顯示資料格線中的員工。 使用者指定的檔案，其中
 ## <a name="see-also"></a>另請參閱
 
 [建立 SharePoint web 組件](../sharepoint/creating-web-parts-for-sharepoint.md)  
-[如何： 建立 SharePoint web 組件](../sharepoint/how-to-create-a-sharepoint-web-part.md)  
-[如何： 使用設計工具建立 SharePoint web 組件](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md)  
-[逐步解說： 建立適用於 SharePoint 的 web 組件，使用設計工具](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint-by-using-a-designer.md)
+[如何：建立 SharePoint web 組件](../sharepoint/how-to-create-a-sharepoint-web-part.md)  
+[如何：使用設計工具建立 SharePoint web 組件](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md)  
+[逐步解說：使用設計工具建立 SharePoint web 組件](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint-by-using-a-designer.md)

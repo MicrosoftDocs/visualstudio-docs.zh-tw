@@ -1,9 +1,6 @@
 ---
-title: IDebugProgram3 |Microsoft 文件
-ms.custom: ''
+title: IDebugProgram3 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - IDebugProgram3 interface
@@ -13,15 +10,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 328fe3c863c4233c984db6de8bc992ea91b6a4d7
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5849617b1fb0d1446b847f9eb5137de06b685953
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31121761"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53896603"
 ---
 # <a name="idebugprogram3"></a>IDebugProgram3
-此介面代表正在執行的處理序中，並擴充程式[Execute](../../../extensibility/debugger/reference/idebugprogram2-execute.md)藉由提供執行緒的資訊。  
+此介面代表一個程式正在執行的處理序中，擴充[Execute](../../../extensibility/debugger/reference/idebugprogram2-execute.md)藉由提供執行緒資訊。  
   
 ## <a name="syntax"></a>語法  
   
@@ -29,11 +26,11 @@ ms.locfileid: "31121761"
 IDebugProgram3 : IDebugProgram3  
 ```  
   
-## <a name="notes-for-implementers"></a>實作者注意事項  
- 偵錯引擎 (DE) 和自訂連接埠供應商實作這個介面來代表處理程序中的程式。 工作階段的偵錯管理員 (SDM) 也會實作這個介面可提供資訊給[附加](../../../extensibility/debugger/reference/idebugprogram2-attach.md)。  
+## <a name="notes-for-implementers"></a>實作者的附註  
+ 偵錯引擎 (DE) 和自訂的連接埠提供者實作這個介面來代表處理程序中的程式。 工作階段的偵錯管理員 (SDM) 也會實作這個介面來提供資訊給[附加](../../../extensibility/debugger/reference/idebugprogram2-attach.md)。  
   
 ## <a name="notes-for-callers"></a>呼叫端資訊  
- [IDebugProgramCreateEvent2](../../../extensibility/debugger/reference/idebugprogramcreateevent2.md)事件會傳回此介面的一項新程式。 此介面也用做為參數的多個介面上的許多方法。  
+ [IDebugProgramCreateEvent2](../../../extensibility/debugger/reference/idebugprogramcreateevent2.md)事件會傳回此新的程式的介面。 此介面也做為參數的多個介面上的許多方法。  
   
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法  
  下表顯示的方法`IDebugProgram3`。  
@@ -45,12 +42,12 @@ IDebugProgram3 : IDebugProgram3
 ## <a name="requirements"></a>需求  
  標頭： msdbg.h  
   
- 命名空間： Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間:Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="remarks"></a>備註  
- 程式已經處理程序所組成的一或多個程式時，在特定的執行階段架構中，執行的執行緒容器。  
+ 程式是處理程序組成一或多個程式時，在特定的執行階段架構中，執行的執行緒容器。  
   
 ## <a name="see-also"></a>另請參閱  
  [核心介面](../../../extensibility/debugger/reference/core-interfaces.md)   

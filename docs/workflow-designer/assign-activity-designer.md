@@ -3,7 +3,6 @@ title: 工作流程設計工具-Assign 活動設計工具
 ms.date: 11/04/2016
 ms.topic: reference
 ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Activities.Statements.Assign.UI
 ms.assetid: ba3feb3c-f144-47ea-926d-cf752b804153
@@ -12,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 600f38d7bcd387915ba61fc148805705e8609431
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e5f3080dfcd7afbc999ad478fa3bbdc8470ef54a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49905246"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53905818"
 ---
 # <a name="assign-activity-designer"></a>Assign 活動設計工具
 

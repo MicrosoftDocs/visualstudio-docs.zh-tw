@@ -1,9 +1,6 @@
 ---
-title: 如何： 以程式設計方式變更包含選取儲存格的工作表列格式
-ms.custom: ''
+title: HOW TO：以程式設計方式變更包含選取儲存格的工作表列格式
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,14 +14,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a74f610d596a991512f7f3ba5061da6db862f0c3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1e767b8af84eabe3339000a12ed7639e94ce53b0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49891280"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53891796"
 ---
-# <a name="how-to-programmatically-change-formatting-in-worksheet-rows-containing-selected-cells"></a>如何： 以程式設計方式變更包含選取儲存格的工作表列格式
+# <a name="how-to-programmatically-change-formatting-in-worksheet-rows-containing-selected-cells"></a>HOW TO：以程式設計方式變更包含選取儲存格的工作表列格式
   您可以變更包含選取的儲存格，讓文字是粗體的整個資料列的字型。  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
@@ -74,8 +71,6 @@ ms.locfileid: "49891280"
   
 ## <a name="see-also"></a>另請參閱  
  [使用工作表](../vsto/working-with-worksheets.md)   
- [如何： 以程式設計方式將樣式套用至活頁簿中的範圍](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)   
- [如何： 以程式設計方式複製資料和格式跨工作表](../vsto/how-to-programmatically-copy-data-and-formatting-across-worksheets.md)   
+ [如何：以程式設計方式將樣式套用至活頁簿中的範圍](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)   
+ [如何：以程式設計方式複製資料和格式跨工作表](../vsto/how-to-programmatically-copy-data-and-formatting-across-worksheets.md)   
  [Office 方案中的選擇性參數](../vsto/optional-parameters-in-office-solutions.md)  
-  
-  

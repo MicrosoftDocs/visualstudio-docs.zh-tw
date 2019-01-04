@@ -1,9 +1,6 @@
 ---
 title: Office 專案中的屬性
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -21,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9369a42f1f4a8497df42f940bb8bd23453803a26
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a3e2179d10983bc74c8dd9bb692f1eade44dec47
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49862147"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53932209"
 ---
 # <a name="properties-in-office-projects"></a>Office 專案中的屬性
   在 Visual Studio 中，Office 專案有幾個可用的重要屬性。 這些屬性可於 [屬性]  視窗中取得。  
@@ -58,5 +55,3 @@ ms.locfileid: "49862147"
  [設計和建立 Office 方案](../vsto/designing-and-creating-office-solutions.md)   
  [Office 專案範本概觀](../vsto/office-project-templates-overview.md)   
  [Office 專案中的事件](../vsto/events-in-office-projects.md)  
-  
-  

@@ -1,9 +1,6 @@
 ---
 title: VSTO 增益集的登錄項目
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ceb85bbad90074a7cfb6db053398698a0a333c1a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: HT
+ms.openlocfilehash: 3436ddcdcb8c521985487738d4045e1e1bbd830a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49881777"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53909108"
 ---
 # <a name="registry-entries-for-vsto-add-ins"></a>VSTO 增益集的登錄項目
   部署使用 Visual Studio 建立的 VSTO 增益集時，您必須建立一組特定的登錄項目。 這些登錄項目可提供讓 Microsoft Office 應用程式探索及載入 VSTO 增益集的資訊。  
@@ -76,10 +73,10 @@ ms.locfileid: "49881777"
   
 |進入|類型|值|  
 |-----------|----------|-----------|  
-|**描述**|REG_SZ|必要。 VSTO 增益集的簡短描述。<br /><br /> 當使用者在 Microsoft Office 應用程式之 [選項]  對話方塊的 [增益集]  窗格中選取 VSTO 增益集時，即會顯示這個描述。|  
-|**FriendlyName**|REG_SZ|必要。 這是 Microsoft Office 應用程式的 [COM 增益集]  對話方塊中，所顯示之 VSTO 增益集的描述性名稱。 預設值為 VSTO 增益集 ID。|  
-|**LoadBehavior**|REG_DWORD|必要。 可指定應用程式何時嘗試載入 VSTO 增益集和 VSTO 增益集目前狀態 (載入或卸載) 的值。<br /><br /> 這個項目預設會設定為 3，指定在啟動時載入 VSTO 增益集。 如需詳細資訊，請參閱 < [LoadBehavior 值](#LoadBehavior)。 **注意︰** 如果使用者停用 VSTO 增益集，該動作會修改**LoadBehavior**中的值**HKEY_CURRENT_USER**登錄 hive。 每位使用者的值**LoadBehavior** hkey_current_user 登錄區中的值會覆寫預設**LoadBehavior**中所定義**HKEY_LOCAL_MACHINE** hive。|  
-|**Manifest**|REG_SZ|必要。 VSTO 增益集部署資訊清單的完整路徑。 路徑可以是本機電腦上的位置、網路共用 (UNC) 或 Web 伺服器 (HTTP)。<br /><br /> 如果使用 Windows Installer 來部署解決方案，您必須在 **資訊清單** 路徑前加上前置詞 **file:///** 。 您也必須附加字串 **&#124;vstolocal** (也就是縱線字元 **&#124;** 後面**vstolocal**) 至這個路徑的結尾。 如此可以確保解決方案是從安裝資料夾載入，而不是從 ClickOnce 快取載入。 如需詳細資訊，請參閱 <<c0> [ 使用 Windows Installer 部署 Office 方案](../vsto/deploying-an-office-solution-by-using-windows-installer.md)。 **注意︰** 當您在開發電腦上建置 VSTO 增益集時，Visual Studio 會自動加上 **&#124;vstolocal**字串寫入此登錄項目。|  
+|**描述**|REG_SZ|必要項。 VSTO 增益集的簡短描述。<br /><br /> 當使用者在 Microsoft Office 應用程式之 [選項]  對話方塊的 [增益集]  窗格中選取 VSTO 增益集時，即會顯示這個描述。|  
+|**FriendlyName**|REG_SZ|必要項。 這是 Microsoft Office 應用程式的 [COM 增益集]  對話方塊中，所顯示之 VSTO 增益集的描述性名稱。 預設值為 VSTO 增益集 ID。|  
+|**LoadBehavior**|REG_DWORD|必要項。 可指定應用程式何時嘗試載入 VSTO 增益集和 VSTO 增益集目前狀態 (載入或卸載) 的值。<br /><br /> 這個項目預設會設定為 3，指定在啟動時載入 VSTO 增益集。 如需詳細資訊，請參閱 < [LoadBehavior 值](#LoadBehavior)。 **注意：** 如果使用者停用 VSTO 增益集，該動作會修改**LoadBehavior**中的值**HKEY_CURRENT_USER**登錄 hive。 每位使用者的值**LoadBehavior** hkey_current_user 登錄區中的值會覆寫預設**LoadBehavior**中所定義**HKEY_LOCAL_MACHINE** hive。|  
+|**Manifest**|REG_SZ|必要項。 VSTO 增益集部署資訊清單的完整路徑。 路徑可以是本機電腦上的位置、網路共用 (UNC) 或 Web 伺服器 (HTTP)。<br /><br /> 如果使用 Windows Installer 來部署解決方案，您必須在 **資訊清單** 路徑前加上前置詞 **file:///** 。 您也必須附加字串 **&#124;vstolocal** (也就是縱線字元 **&#124;** 後面**vstolocal**) 至這個路徑的結尾。 如此可以確保解決方案是從安裝資料夾載入，而不是從 ClickOnce 快取載入。 如需詳細資訊，請參閱 <<c0> [ 使用 Windows Installer 部署 Office 方案](../vsto/deploying-an-office-solution-by-using-windows-installer.md)。 **注意：** 當您在開發電腦上建置 VSTO 增益集時，Visual Studio 會自動加上 **&#124;vstolocal**字串寫入此登錄項目。|  
   
 ###  <a name="OutlookEntries"></a> Outlook 表單區域登錄項目  
  如果您在 Outlook 的 VSTO 增益集中建立自訂表單區域，則必須使用額外的登錄項目向 Outlook 註冊這個表單區域。 系統會在表單區域所支援之各個訊息類別的不同登錄機碼下建立這些項目。 這些登錄機碼位於下列位置，其中*根*是**HKEY_CURRENT_USER**或是**HKEY_LOCAL_MACHINE**。  
@@ -88,7 +85,7 @@ ms.locfileid: "49881777"
   
  當您建置專案時，Visual Studio 會在開發電腦上建立表單區域登錄項目，如同所有 VSTO 增益集共用的其他登錄項目一樣。 如果您使用 ClickOnce 部署 VSTO 增益集時，登錄項目會自動建立在使用者電腦上。 如果您使用 Windows Installer 部署 VSTO 增益集時，您必須設定 InstallShield Limited Edition 專案來建立在使用者電腦上的登錄項目。  
   
- 如需表單區域登錄項目詳細資訊，請參閱 <<c0> [ 為自訂的表單中指定的表單區域的位置](http://msdn.microsoft.com/library/office/ff868998.aspx)。 如需 Outlook 表單區域的詳細資訊，請參閱[建立 Outlook 表單區域](../vsto/creating-outlook-form-regions.md)。  
+ 如需表單區域登錄項目詳細資訊，請參閱 <<c0> [ 為自訂的表單中指定的表單區域的位置](/office/vba/outlook/Concepts/Creating-Form-Regions/specify-the-location-of-a-form-region-in-a-custom-form)。 如需 Outlook 表單區域的詳細資訊，請參閱[建立 Outlook 表單區域](../vsto/creating-outlook-form-regions.md)。  
   
 ##  <a name="LoadBehavior"></a> LoadBehavior 值  
  **LoadBehavior**下方的項目*根*\Software\Microsoft\Office\\*應用程式名稱*\Addins\\*增益集識別碼*索引鍵包含的位元組合，這個值指定 VSTO 增益集的執行的階段行為。 最低順序位元 (值 0 和 1) 表示 VSTO 增益集目前處於卸載或載入狀態。 其他位元則表示應用程式嘗試載入 VSTO 增益集的時間。  
@@ -112,5 +109,3 @@ ms.locfileid: "49881777"
  [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md)   
  [建置 Office 方案](../vsto/building-office-solutions.md)   
  [部署 Office 方案](../vsto/deploying-an-office-solution.md)  
-  
-  

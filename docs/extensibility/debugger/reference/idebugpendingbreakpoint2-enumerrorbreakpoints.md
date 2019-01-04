@@ -1,9 +1,6 @@
 ---
 title: IDebugPendingBreakpoint2::EnumErrorBreakpoints |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugPendingBreakpoint2::EnumErrorBreakpoints
@@ -16,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4c43c3bd314ae9db7025448b2632562e9ae947c4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f21aa5d83c12d7c2b5febc8f6d9d819509760721
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942266"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53846369"
 ---
 # <a name="idebugpendingbreakpoint2enumerrorbreakpoints"></a>IDebugPendingBreakpoint2::EnumErrorBreakpoints
 取得產生這個暫止中斷點的所有錯誤中斷點的清單。  
@@ -29,14 +26,14 @@ ms.locfileid: "49942266"
 ## <a name="syntax"></a>語法  
   
 ```cpp  
-HRESULT EnumErrorBreakpoints(   
+HRESULT EnumErrorBreakpoints(   
    BP_ERROR_TYPE                 bpErrorType,  
    IEnumDebugErrorBreakpoints2** ppEnum  
 );  
 ```  
   
 ```csharp  
-int EnumErrorBreakpoints(   
+int EnumErrorBreakpoints(   
    enum_BP_ERROR_TYPE              bpErrorType,  
    out IEnumDebugErrorBreakpoints2 ppEnum  
 );  

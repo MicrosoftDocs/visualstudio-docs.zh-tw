@@ -1,8 +1,7 @@
 ---
-title: CA1305：指定 IFormatProvider
+title: CA1305:必須指定 IFormatProvider
 ms.date: 06/30/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - SpecifyIFormatProvider
@@ -18,20 +17,20 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 05e2efde1be3430f95b00edbe8da8f952efad758
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
+ms.openlocfilehash: fea236a51b8bde5171c91ad1935d4168dfabd94a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37174302"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53954233"
 ---
-# <a name="ca1305-specify-iformatprovider"></a>CA1305：指定 IFormatProvider
+# <a name="ca1305-specify-iformatprovider"></a>CA1305:必須指定 IFormatProvider
 
 |||
 |-|-|
 |TypeName|SpecifyIFormatProvider|
 |CheckId|CA1305|
-|分類|Microsoft.Globalization|
+|類別|Microsoft.Globalization|
 |中斷變更|非重大|
 
 ## <a name="cause"></a>原因
@@ -83,7 +82,7 @@ string example3 = FormattableString.Invariant($"Hello {name}");
 
 ## <a name="related-rules"></a>相關的規則
 
-- [CA1304：必須指定 CultureInfo](../code-quality/ca1304-specify-cultureinfo.md)
+- [CA1304:指定 CultureInfo](../code-quality/ca1304-specify-cultureinfo.md)
 
 ## <a name="see-also"></a>另請參閱
 

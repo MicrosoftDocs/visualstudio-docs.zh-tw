@@ -1,9 +1,6 @@
 ---
 title: HOW TO：建立和修改自訂文件屬性
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,12 +14,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 71ff5c37eee21092e186e50547cf9c0b72f1b20e
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: 0a3dd497bc2c63c58e6072cd48f58cba071ea4f4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53646504"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53891585"
 ---
 # <a name="how-to-create-and-modify-custom-document-properties"></a>HOW TO：建立和修改自訂文件屬性
   上列 Microsoft Office 應用程式提供與文件一起儲存的內建屬性。 此外，如果您有想要與文件一起儲存的其他資訊，則可以建立和修改自訂文件屬性。  
@@ -46,5 +43,3 @@ ms.locfileid: "53646504"
  [程式 VSTO 增益集](../vsto/programming-vsto-add-ins.md)   
  [程式文件層級自訂](../vsto/programming-document-level-customizations.md)   
  [如何：讀取和寫入文件屬性](../vsto/how-to-read-from-and-write-to-document-properties.md)  
-  
-  

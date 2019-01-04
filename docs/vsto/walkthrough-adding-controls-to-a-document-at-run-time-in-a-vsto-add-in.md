@@ -1,9 +1,6 @@
 ---
-title: 逐步解說： 將控制項加入文件在執行階段中的 VSTO 增益集
-ms.custom: ''
+title: 逐步解說：將控制項加入文件在執行階段中的 VSTO 增益集
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,17 +15,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 774e26388f5eb25fb0a16dee05557c6bf34a0ff0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 085860294955e1049d05cf38abea636bc2eb8672
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49951583"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53954892"
 ---
-# <a name="walkthrough-add-controls-to-a-document-at-runtime-in-a-vsto-add-in"></a>逐步解說： 將控制項加入文件在執行階段中的 VSTO 增益集
+# <a name="walkthrough-add-controls-to-a-document-at-runtime-in-a-vsto-add-in"></a>逐步解說：將控制項加入文件在執行階段中的 VSTO 增益集
   您可以使用 VSTO 增益集，將控制項加入任何開啟的 Microsoft Office Word 文件中。 本逐步解說示範如何使用功能區，讓使用者可以加入<xref:Microsoft.Office.Tools.Word.Controls.Button>或<xref:Microsoft.Office.Tools.Word.RichTextContentControl>文件。  
 
- **適用對象：** 本主題資訊適用於 Word 2010 的 VSTO 增益集專案。 如需詳細資訊，請參閱[依 Office 應用程式和專案類型提供的功能](../vsto/features-available-by-office-application-and-project-type.md)。  
+ **適用於：** 本主題中的資訊適用於 Word 2010 的 VSTO 增益集專案。 如需詳細資訊，請參閱[依 Office 應用程式和專案類型提供的功能](../vsto/features-available-by-office-application-and-project-type.md)。  
 
  這個逐步解說將說明下列工作：  
 
@@ -54,7 +51,7 @@ ms.locfileid: "49951583"
 
 ### <a name="to-create-a-new-word-vsto-add-in-project"></a>建立新的 Word VSTO 增益集專案  
 
-1.  建立 word 的 VSTO 增益集專案名稱**WordDynamicControls**。 如需詳細資訊，請參閱 <<c0> [ 如何： 在 Visual Studio 中的建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
+1.  建立 word 的 VSTO 增益集專案名稱**WordDynamicControls**。 如需詳細資訊，請參閱[＜How to：在 Visual Studio 中建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
 
 2.  加入 **Microsoft.Office.Tools.Word.v4.0.Utilities.dll** 組件的參考。 本逐步解說稍後會需要用到此參考，以透過程式設計的方式將 Windows Forms 控制項加入文件。  
 
@@ -187,13 +184,12 @@ ms.locfileid: "49951583"
 
 -   如需示範如何在執行階段的文件中加入許多其他類型的控制項，並重新開啟文件時，重新建立控制項的範例，請參閱 Word 增益集動態控制項範例： [Office 程式開發範例和逐步解說](../vsto/office-development-samples-and-walkthroughs.md).  
 
--   如需示範如何使用適用於 Excel 的 VSTO 增益集，將控制項加入工作表的逐步解說，請參閱 <<c0> [ 逐步解說： 將控制項加入工作表，在 VSTO 增益集專案中的執行階段](../vsto/walkthrough-adding-controls-to-a-worksheet-at-run-time-in-vsto-add-in-project.md)。  
+-   如需示範如何使用適用於 Excel 的 VSTO 增益集，將控制項加入工作表的逐步解說，請參閱[逐步解說：將控制項加入工作表，在 VSTO 增益集專案中的執行階段](../vsto/walkthrough-adding-controls-to-a-worksheet-at-run-time-in-vsto-add-in-project.md)。  
 
 ## <a name="see-also"></a>另請參閱  
  [Word 方案](../vsto/word-solutions.md)   
  [將控制項加入 Office 文件，在執行階段](../vsto/adding-controls-to-office-documents-at-run-time.md)   
  [保存動態控制項中的 Office 文件](../vsto/persisting-dynamic-controls-in-office-documents.md)   
- [如何： 將 Windows Form 控制項加入 Office 文件](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)   
- [如何： 將內容控制項加入 Word 文件](../vsto/how-to-add-content-controls-to-word-documents.md)   
+ [如何：將 Windows Form 控制項加入 Office 文件](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)   
+ [如何：將內容控制項加入 Word 文件](../vsto/how-to-add-content-controls-to-word-documents.md)   
  [擴充 Word 文件和 Excel 活頁簿，VSTO 增益集在執行階段](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)  
-

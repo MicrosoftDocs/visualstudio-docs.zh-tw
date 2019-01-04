@@ -3,23 +3,22 @@ title: 工作流程設計工具中不支援的偵錯情況
 ms.date: 11/04/2016
 ms.topic: reference
 ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 ms.assetid: 6adbe379-41d0-4681-9cd0-b91f187c3c2c
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 2b876df1b7d997f3999c119d02abd593a88e6d5e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 88fa196d5df085249282e595031bbde09ba071a7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31973066"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53858626"
 ---
 # <a name="unsupported-debugging-scenarios-in-the-workflow-designer"></a>工作流程設計工具中不支援的偵錯情況
 
-.NET Framework 4 中的工作流程設計工具加入許多新功能，但仍有一些偵錯情況不受支援。
+在.NET Framework 4 工作流程設計工具加入許多新功能，但仍有某些不支援的偵錯案例。
 
 不支援的工作流程設計工具偵錯案例如下：
 
@@ -41,7 +40,7 @@ ms.locfileid: "31973066"
 
 -   呼叫堆疊視窗中無法設定工作流程中斷點。
 
--   在設計師中，建立中斷點時**列**和**字元**中的設定**新增中斷點**不使用對話方塊。
+-   在設計師中，建立中斷點時**線條**並**字元**中的設定**新中斷點**對話方塊不會使用。
 
 -   中斷點視窗或捷徑功能表不支援以下資料行或工作流程偵錯的選項：
 

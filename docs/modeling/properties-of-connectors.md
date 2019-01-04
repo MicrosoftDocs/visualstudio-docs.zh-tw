@@ -10,13 +10,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: e26401247c2b6cefc3d86dbd5b6e80adfe473937
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: e76766eb3b90dd2a515c7622217febfaffe313c0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50967307"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53865254"
 ---
 # <a name="properties-of-connectors"></a>接點的屬性
 連接器會代表產生的設計工具中的網域關聯性。
@@ -37,7 +36,7 @@ ms.locfileid: "50967307"
 |自訂屬性|用來將屬性加入至來源的程式碼類別，產生來自此連接器。|\<無 >|
 |產生雙衍生|如果`True`，將產生的基底類別和部分類別 （以支援透過覆寫自訂）。 如需詳細資訊，請參閱 <<c0> [ 覆寫及擴充產生的類別](../modeling/overriding-and-extending-the-generated-classes.md)。|False|
 |具有自訂建構函式|如果`True`，以原始碼提供自訂建構函式。 如需詳細資訊，請參閱 <<c0> [ 覆寫及擴充產生的類別](../modeling/overriding-and-extending-the-generated-classes.md)。|False|
-|繼承修飾詞|描述從連接器會產生來源的程式碼類別繼承的類型 (`none`，`abstract`或`sealed`)。|無|
+|繼承修飾詞|描述從連接器會產生來源的程式碼類別繼承的類型 (`none`，`abstract`或`sealed`)。|none|
 |基底接點|此接點的基底類別。|(無)|
 |名稱|此連接器的名稱。|目前的名稱|
 |命名空間|此連接器附屬於命名空間。|目前的命名空間|

@@ -3,19 +3,18 @@ title: 工作流程設計工具-FinalState 活動設計工具
 ms.date: 11/04/2016
 ms.topic: reference
 ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 ms.assetid: aa186893-8775-40dd-981f-8593ead831d0
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 4f49ed7bd2d370f72d8a6be69c28148fbf67e1bf
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 55fc609ffd327d1e3bea8ee52849c92746055410
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49924339"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53950523"
 ---
 # <a name="finalstate-activity-designer"></a>FinalState 活動設計工具
 

@@ -1,9 +1,6 @@
 ---
-title: 如何： 以程式設計方式保護活頁簿
-ms.custom: ''
+title: HOW TO：以程式設計方式保護活頁簿
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -20,19 +17,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8999bb1e30958897f9b7732ab393650320ec77b1
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: b41eed7ee8b20cc807ada75ee0a4c1ccd1519fc6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35670854"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53900767"
 ---
-# <a name="how-to-programmatically-protect-workbooks"></a>如何： 以程式設計方式保護活頁簿
+# <a name="how-to-programmatically-protect-workbooks"></a>HOW TO：以程式設計方式保護活頁簿
   您可以保護 Microsoft Office Excel 活頁簿，以便讓使用者無法加入或刪除工作表，並也以程式設計方式取消保護活頁簿。 或者，您可以指定密碼，指出您是否要保護 （讓使用者無法移動工作表），這個結構，以及表示是否要讓受保護的活頁簿的視窗。  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
   
- 保護活頁簿並不會防止使用者編輯儲存格。 若要保護的資料，您必須保護工作表。 如需詳細資訊，請參閱 <<c0> [ 如何： 以程式設計方式保護工作表](../vsto/how-to-programmatically-protect-worksheets.md)。  
+ 保護活頁簿並不會防止使用者編輯儲存格。 若要保護的資料，您必須保護工作表。 如需詳細資訊，請參閱[＜How to：以程式設計方式保護工作表](../vsto/how-to-programmatically-protect-worksheets.md)。  
   
  下列程式碼範例會使用變數來包含取自於使用者的密碼。  
   
@@ -70,8 +67,6 @@ ms.locfileid: "35670854"
   
 ## <a name="see-also"></a>另請參閱  
  [使用活頁簿](../vsto/working-with-workbooks.md)   
- [如何： 以程式設計方式保護工作表](../vsto/how-to-programmatically-protect-worksheets.md)   
- [如何： 以程式設計方式隱藏工作表](../vsto/how-to-programmatically-hide-worksheets.md)   
+ [如何：以程式設計方式保護工作表](../vsto/how-to-programmatically-protect-worksheets.md)   
+ [如何：以程式設計方式隱藏工作表](../vsto/how-to-programmatically-hide-worksheets.md)   
  [Office 方案中的選擇性參數](../vsto/optional-parameters-in-office-solutions.md)  
-  
-  

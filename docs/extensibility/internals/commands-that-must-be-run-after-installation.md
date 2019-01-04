@@ -1,9 +1,6 @@
 ---
 title: 必須在安裝後執行的命令 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - post-install commands
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 08e1bcf064a8e94af306230e705f686d2d8037c1
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 691cabb67df53faf23c23e2fa3f05f0ca68038a7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39510702"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53915545"
 ---
 # <a name="commands-that-must-be-run-after-installation"></a>必須在安裝後執行的命令
 如果您部署您的延伸模組，透過 *.msi*檔案中，您必須執行**devenv /setup**為了讓探索您的擴充功能的 Visual Studio 安裝的一部分。  

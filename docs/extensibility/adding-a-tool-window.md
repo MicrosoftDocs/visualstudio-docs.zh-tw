@@ -1,9 +1,6 @@
 ---
 title: 加入工具視窗 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - tutorials
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 550e483ec2a8cd4b4126e4c0838dc8d2870af59c
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 6c3e4c896a4460ebdfa7b88e25b24e698b325c84
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39151927"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53967546"
 ---
 # <a name="add-a-tool-window"></a>加入工具視窗
 在本逐步解說，您會學習如何建立工具視窗，並將它整合到 Visual Studio 中，以下列方式：  

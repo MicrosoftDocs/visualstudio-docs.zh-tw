@@ -1,9 +1,6 @@
 ---
 title: 註冊 Interop 組件命令處理常式 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - interop assemblies, command handlers
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2a9bd306f6c43b5facef5c114a99f2ae05e41cce
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 00a616b459194277c5573a2d7c95f2de0cc4e6bb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49893776"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53961656"
 ---
 # <a name="registering-interop-assembly-command-handlers"></a>註冊 Interop 組件命令處理常式
 VSPackage 必須向[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]以便整合式的開發環境 (IDE) 正確地路由傳送它的命令。  
@@ -54,7 +51,7 @@ HKEY_LOCAL_MACHINE\Software\VisualStudio\<Version>\
  下表描述的欄位\<*資源資訊*>。  
 
 
-| 元素 | 描述 |
+| 項目 | 描述 |
 |---------------------------| - |
 | \<*資源 DLL 路徑*> | 這是資源包含的功能表資源 DLL 的完整路徑，或保留為空白，表示 VSPackage 的資源 DLL 使用 （如同在其中自行註冊 VSPackage 的封裝子機碼中指定）。<br /><br /> 它是自訂此欄位空白。 |
 | \<*功能表資源識別碼*> | 這是資源識別碼`CTMENU`資源，其中包含所有 UI 項目的 VSPackage 從編譯[.vsct](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)檔案。 |

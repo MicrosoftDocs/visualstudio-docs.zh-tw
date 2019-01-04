@@ -1,13 +1,8 @@
 ---
 title: 建立 Business Data Connectivity 模型 |Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -20,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 68940d6e48f1f3a3e51017e1cc838976735de104
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2a1feefe5bc338460f359dd6c1a25b50bddf67ba
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49930202"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53957481"
 ---
 # <a name="create-a-business-data-connectivity-model"></a>建立 business data connectivity 模型
   您可以建立商務資料連接 (BDC) 模型，或使用 Visual Studio 中自訂現有的 BDC 模型。 每個 SharePoint 專案可以包含一個模型。 如需詳細資訊，請參閱 <<c0> [ 將商務資料整合到 SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)。  
@@ -45,7 +40,7 @@ ms.locfileid: "49930202"
 |模型定義檔|包含定義實體、 方法、 企業營運 (LOB) 系統物件，以及其他描述模型的中繼資料的 XML。<br /><br /> 使用 BDC 設計工具中，修改這個檔案中的中繼資料**BDC 總管**， **BDC 方法詳細資料**視窗中，並**屬性**視窗。|  
 |實體服務程式碼檔|包含擷取、 更新和刪除預設實體的執行個體的方法。|  
   
- 若要定義實體的屬性，編輯實體的程式碼檔案。 如需詳細資訊，請參閱 <<c0> [ 如何： 將實體新增至模型](../sharepoint/how-to-add-an-entity-to-a-model.md)。  
+ 若要定義實體的屬性，編輯實體的程式碼檔案。 如需詳細資訊，請參閱[＜How to：將實體新增至模型](../sharepoint/how-to-add-an-entity-to-a-model.md)。  
   
  若要擷取、 更新和刪除實體的執行個體，加入實體服務程式碼檔案中的程式碼。 如需詳細資訊，請參閱 <<c0> [ 設計 business data connectivity 模型](../sharepoint/designing-a-business-data-connectivity-model.md)。  
   
@@ -61,7 +56,7 @@ ms.locfileid: "49930202"
   
 - 若要封裝並將現有的模型部署到多個 SharePoint 伺服器陣列。  
   
-  在任一情況下，您匯入模型中定義的 LOB 系統不會受到影響，並將繼續如預期般運作。 若要加入 SharePoint 專案中現有的模型，請使用 [Visual Studio**加入現有項目**] 對話方塊。 如需詳細資訊，請參閱 <<c0> [ 如何： 將現有的 BDC 模型檔案新增至 SharePoint 專案](../sharepoint/how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project.md)。  
+  在任一情況下，您匯入模型中定義的 LOB 系統不會受到影響，並將繼續如預期般運作。 若要加入 SharePoint 專案中現有的模型，請使用 [Visual Studio**加入現有項目**] 對話方塊。 如需詳細資訊，請參閱[＜How to：將現有的 BDC 模型檔案新增至 SharePoint 專案](../sharepoint/how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project.md)。  
   
   您可以加入 LOB 系統的型別.NET Framework 組件匯入模型選取中的選項**新增.NET 組件 LobSystem**。 這可讓您撰寫自訂程式碼，並使用設計工具定義匯入模型中繼資料。  
   
@@ -69,9 +64,7 @@ ms.locfileid: "49930202"
   
 |標題|描述|  
 |-----------|-----------------|  
-|[如何： 建立 BDC 模型](../sharepoint/how-to-create-a-bdc-model.md)|說明如何建立新的 BDC 模型。|  
-|[如何： 將現有的 BDC 模型檔案新增至 SharePoint 專案](../sharepoint/how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project.md)|說明如何將 SharePoint 專案匯入現有的模型。|  
-|[如何： 使用資源檔來指定當地語系化的名稱、 屬性和權限](../sharepoint/how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions.md)|說明如何當模型由 Web 組件或網頁，提供模型中繼資料會合併的字串。|  
-|[如何： 在 BDC 功能中包含自訂組件](../sharepoint/how-to-include-a-custom-assembly-in-a-bdc-feature.md)|說明如何在功能中包含自訂組件。|  
-  
- 
+|[如何：建立 BDC 模型](../sharepoint/how-to-create-a-bdc-model.md)|說明如何建立新的 BDC 模型。|  
+|[如何：將現有的 BDC 模型檔案新增至 SharePoint 專案](../sharepoint/how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project.md)|說明如何將 SharePoint 專案匯入現有的模型。|  
+|[如何：使用資源檔來指定當地語系化的名稱、 屬性和權限](../sharepoint/how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions.md)|說明如何當模型由 Web 組件或網頁，提供模型中繼資料會合併的字串。|  
+|[如何：在 BDC 功能中包含自訂組件](../sharepoint/how-to-include-a-custom-assembly-in-a-bdc-feature.md)|說明如何在功能中包含自訂組件。|  

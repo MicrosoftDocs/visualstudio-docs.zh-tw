@@ -1,9 +1,6 @@
 ---
 title: 實作自訂類別和顯示項目 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - font and color control [Visual Studio SDK], categories
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 850e4396c11cbd83f578304eed78a25042185a25
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 178cd43486a9553f70853c9df0e106ac3ece78f1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49894634"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53908432"
 ---
 # <a name="implement-custom-categories-and-display-items"></a>實作自訂類別和顯示項目
 VSPackage 可以提供控制項的字型和色彩，其文字的[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]整合式的開發環境 (IDE) 透過自訂類別和顯示項目。
@@ -57,7 +54,7 @@ VSPackage 可以提供控制項的字型和色彩，其文字的[!INCLUDE[vsprvs
   |名稱|類型|資料|描述|
   |----------|----------|----------|-----------------|
   |分類|REG_SZ|GUID|若要識別類別，建立 GUID。|
-  |Package|REG_SZ|GUID|VSPackage 服務，可支援分類的 GUID。|
+  |封裝|REG_SZ|GUID|VSPackage 服務，可支援分類的 GUID。|
 
   在登錄中指定的服務必須提供實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults>對應分類。
 
@@ -72,7 +69,7 @@ VSPackage 可以提供控制項的字型和色彩，其文字的[!INCLUDE[vsprvs
   |名稱|類型|資料|描述|
   |----------|----------|----------|-----------------|
   |分類|REG_SZ|GUID|建立識別群組的 GUID。|
-  |Package|REG_SZ|GUID|支援的類別目錄服務的 GUID。|
+  |封裝|REG_SZ|GUID|支援的類別目錄服務的 GUID。|
 
   在登錄中指定的服務必須提供實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup>對應的群組。
 
@@ -135,5 +132,5 @@ VSPackage 可以提供控制項的字型和色彩，其文字的[!INCLUDE[vsprvs
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider>
 - [取得文字顏色標示的字型和色彩資訊](../extensibility/getting-font-and-color-information-for-text-colorization.md)
 - [存取預存的字型和色彩設定](../extensibility/accessing-stored-font-and-color-settings.md)
-- [如何： 存取的內建的字型和色彩配置](../extensibility/how-to-access-the-built-in-fonts-and-color-scheme.md)
+- [如何：存取的內建的字型和色彩配置](../extensibility/how-to-access-the-built-in-fonts-and-color-scheme.md)
 - [字型和色彩的概觀](../extensibility/font-and-color-overview.md)

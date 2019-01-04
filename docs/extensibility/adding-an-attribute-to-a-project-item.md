@@ -1,9 +1,6 @@
 ---
 title: 將屬性加入至專案項目 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - attributes [Visual Studio], adding to a project item
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: cdb911411be2c4398565d05309002b315971b1ff
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f60a47180a95c7609f784a2d0a03b51d0d4a7a6b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49926432"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53874121"
 ---
 # <a name="add-an-attribute-to-a-project-item"></a>將屬性加入專案項目
 方法<xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.GetItemAttribute%2A>和<xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetItemAttribute%2A>取得和設定的專案項目屬性的值。 SetItemAttribute 建立屬性如果已經存在，將它新增至專案項目中繼資料。  
@@ -32,14 +29,14 @@ ms.locfileid: "49926432"
     EnvDTE.Project project = dte.Solution.Projects.Item(1);  
   
     string uniqueName = project.UniqueName;  
-    IVsSolution solution =     (IVsSolution)Package.GetGlobalService(typeof(SVsSolution));  
+    IVsSolution solution =     (IVsSolution)Package.GetGlobalService(typeof(SVsSolution));  
     IVsHierarchy hierarchy;  
     solution.GetProjectOfUniqueName(uniqueName, out hierarchy);  
     IVsBuildPropertyStorage buildPropertyStorage = hierarchy as IVsBuildPropertyStorage;  
     if (buildPropertyStorage != null)  
     {  
         uint itemId;  
-        string fullPath =         (string)project.ProjectItems.Item("Program.cs").Properties.Item("FullPath").Value;  
+        string fullPath =         (string)project.ProjectItems.Item("Program.cs").Properties.Item("FullPath").Value;  
         hierarchy.ParseCanonicalName(fullPath, out itemId);  
         buildPropertyStorage.SetItemAttribute(  
             itemId, "MyAttribute", "MyValue");  

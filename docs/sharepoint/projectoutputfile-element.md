@@ -1,9 +1,6 @@
 ---
 title: ProjectOutputFile 項目 |Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 99f8173da22f631a1be74c18d4312f74958259e9
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: ea476c2d2b73ec9c59f7d3f7cfbc9a0b0cab5bd7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118615"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53948611"
 ---
 # <a name="projectoutputfile-element"></a>ProjectOutputFile 項目
   表示要部署到 SharePoint 時，與專案項目包含的個別專案的輸出。  
@@ -37,7 +34,7 @@ ms.locfileid: "37118615"
 ## <a name="type"></a>類型  
  **ProjectOutputFileType**  
   
-## <a name="attributes-and-elements"></a>屬性和元素
+## <a name="attributes-and-elements"></a>屬性和項目
  下列章節說明屬性、子元素和父元素。  
   
 ### <a name="attributes"></a>屬性  
@@ -47,12 +44,12 @@ ms.locfileid: "37118615"
 |**專案識別碼**|所需**xs: string**屬性。<br /><br /> 您想要包含輸出相依專案的 GUID。 這會對應至**ProjectGuid**相依的專案檔中的項目。|  
 |**ProjectPath**|所需**xs: string**屬性。<br /><br /> 相對路徑，包括專案檔案名稱的相依專案具有您想要包含的輸出。 這個路徑是相對於包含 SharePoint 專案項目之 SharePoint 專案的根資料夾。|  
 |**Target**|選擇性**xs: string**屬性。<br /><br /> 相依專案輸出到部署在 SharePoint 伺服器上，相對於部署根資料夾的所在路徑。 部署根資料夾由所指定之部署類型**型別**屬性。<br /><br /> 如需詳細資訊，請參閱描述**部署路徑**並**Deployment Root**屬性的 SharePoint 專案中的項目[開發 SharePoint 方案](../sharepoint/developing-sharepoint-solutions.md)。|  
-|**Type**|所需**xs: string**屬性。<br /><br /> 若要使用的相依專案輸出的部署類型。 如需可能值的詳細資訊，請參閱的描述**部署類型**屬性中的 SharePoint 專案項目的[開發 SharePoint 方案](../sharepoint/developing-sharepoint-solutions.md)。|  
+|**型別**|所需**xs: string**屬性。<br /><br /> 若要使用的相依專案輸出的部署類型。 如需可能值的詳細資訊，請參閱的描述**部署類型**屬性中的 SharePoint 專案項目的[開發 SharePoint 方案](../sharepoint/developing-sharepoint-solutions.md)。|  
   
-### <a name="child-elements"></a>子元素
+### <a name="child-elements"></a>項目子系
  無。  
   
-### <a name="parent-elements"></a>父元素
+### <a name="parent-elements"></a>父項目
   
 |元素|描述|  
 |-------------|-----------------|  
@@ -74,4 +71,3 @@ ms.locfileid: "37118615"
  [SharePoint 專案項目結構描述參考](../sharepoint/sharepoint-project-item-schema-reference.md)   
  [提供專案項目中的封裝和部署資訊](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)   
  [開發 SharePoint 方案](../sharepoint/developing-sharepoint-solutions.md)  
-  

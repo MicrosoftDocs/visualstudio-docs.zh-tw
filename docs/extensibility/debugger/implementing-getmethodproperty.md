@@ -1,9 +1,6 @@
 ---
 title: 實作 GetMethodProperty |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - GetMethodProperty method
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5638ab3d65280755de405e19a725336e4102ae2b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 94e9f697161a2aab0f922890d8be7506753176e9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49868504"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53912344"
 ---
 # <a name="implement-getmethodproperty"></a>實作 GetMethodProperty
 > [!IMPORTANT]

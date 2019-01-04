@@ -1,9 +1,6 @@
 ---
 title: DEBUG_PROPERTY_INFO |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - DEBUG_PROPERTY_INFO
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 612865d08142a56b2908707839ad66b60ea2de9f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: fbb1a135cfca3e358d740f6c6ef23b2040843ff4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49847093"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53927125"
 ---
 # <a name="debugpropertyinfo"></a>DEBUG_PROPERTY_INFO
 包含偵錯屬性的相關資訊。  
@@ -28,7 +25,7 @@ ms.locfileid: "49847093"
 ## <a name="syntax"></a>語法  
   
 ```cpp  
-typedef struct tagDEBUG_PROPERTY_INFO {   
+typedef struct tagDEBUG_PROPERTY_INFO {   
    DEBUGPROP_INFO_FLAGS dwValidFields;  
    BSTR                 bstrFullName;  
    BSTR                 bstrName;  
@@ -40,7 +37,7 @@ typedef struct tagDEBUG_PROPERTY_INFO {
 ```  
   
 ```csharp  
-public struct DEBUG_PROPERTY_INFO {   
+public struct DEBUG_PROPERTY_INFO {   
    public uint            dwValidFields;  
    public string          bstrFullName;  
    public string          bstrName;  
@@ -81,9 +78,9 @@ public struct DEBUG_PROPERTY_INFO {
 ## <a name="requirements"></a>需求  
  標頭： msdbg.h  
   
- 命名空間： Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間:Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 組件：Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
  [結構和等位](../../../extensibility/debugger/reference/structures-and-unions.md)   

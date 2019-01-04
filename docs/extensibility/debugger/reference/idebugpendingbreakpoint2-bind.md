@@ -1,9 +1,6 @@
 ---
 title: IDebugPendingBreakpoint2::Bind |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugPendingBreakpoint2::Bind
@@ -16,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e822686cf331794ff221c94ccdbd3ddd25e2f6bd
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 916addd046bc804f7ef796b7c1218f7e5d007df2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49933699"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53819456"
 ---
 # <a name="idebugpendingbreakpoint2bind"></a>IDebugPendingBreakpoint2::Bind
 將這個暫止中斷點繫結至一個或多個程式碼位置。  
@@ -29,8 +26,8 @@ ms.locfileid: "49933699"
 ## <a name="syntax"></a>語法  
   
 ```cpp  
-HRESULT Bind(   
-   void   
+HRESULT Bind(   
+   void   
 );  
 ```  
   

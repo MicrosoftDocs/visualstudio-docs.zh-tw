@@ -1,9 +1,6 @@
 ---
 title: 公開專案物件 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - project objects, exposing
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ae7b34df55593f07adeaffe8d654b59629baaae5
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 2b8c655faed880b8e3b8764c8846288f07ef481a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39510906"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53881684"
 ---
 # <a name="expose-project-objects"></a>公開專案物件
 

@@ -2,7 +2,6 @@
 title: 分析器規則集
 ms.date: 07/20/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 helpviewer_keywords:
 - analyzers, rule sets
@@ -12,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7df084a81de2afc522fc3b82141cf8c5c59205ca
-ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
+ms.openlocfilehash: 514f264186047c044e5db1b944cd62d517588e80
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39204508"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53885219"
 ---
 # <a name="rule-sets-for-roslyn-analyzers"></a>Roslyn 分析器的規則集
 
@@ -56,7 +55,7 @@ ms.locfileid: "39204508"
 
 ## <a name="see-also"></a>另請參閱
 
-- [.NET Compiler Platform 分析器的概觀](roslyn-analyzers-overview.md)
+- [.NET Compiler Platform 分析器概觀](roslyn-analyzers-overview.md)
 - [安裝.NET Compiler Platform 分析器](install-roslyn-analyzers.md)
 - [設定和使用 Roslyn 分析器規則](use-roslyn-analyzers.md)
 - [使用規則集分組程式碼分析規則](using-rule-sets-to-group-code-analysis-rules.md)

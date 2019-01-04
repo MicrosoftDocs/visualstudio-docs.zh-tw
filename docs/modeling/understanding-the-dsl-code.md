@@ -10,18 +10,17 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 490c9c3fe5724373072b2857eb0ce3da7905b172
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a0b540eb6f8e8c09845e069275a0a901c2809806
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49813314"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53886367"
 ---
 # <a name="understanding-the-dsl-code"></a>了解 DSL 程式碼
 特定領域語言 (DSL) 方案會產生 API，您可以用來讀取和更新 Visual Studio 中之 DSL 執行個體。 這個應用程式開發介面是以從 DSL 定義產生的程式碼來定義。 本主題說明產生的應用程式開發介面。
 
-## <a name="the-example-solution-component-diagrams"></a>範例方案：元件圖表
+## <a name="the-example-solution-component-diagrams"></a>此範例解決方案：元件圖表
  若要建立方案，其為大部分的範例，本主題中的來源，建立從 DSL**元件模型**解決方案範本。 這是您建立新的 DSL 方案時所顯示的其中一個標準範本。
 
 > [!NOTE]
@@ -66,7 +65,7 @@ ms.locfileid: "49813314"
 
  `ConnectionBuilders.cs`
 
- 連接產生器是建立關聯性的類別。 它是連接工具的後置程式碼。 這個檔案針對每個連接工具各包含一組類別。 其名稱衍生自網域關聯性和連接工具的名稱：*關聯性*產生器中，並*連接工具*ConnectAction。
+ 連接產生器是建立關聯性的類別。 它是連接工具的後置程式碼。 這個檔案針對每個連接工具各包含一組類別。 其名稱被衍生自網域關聯性和連接工具的名稱：*關聯性*產生器中，並*連接工具*ConnectAction。
 
  (在元件方案範例中，其中一個連接產生器稱為 ConnectionBuilder，這是巧合，因為網域關聯性的名稱剛好是 Connection。)
 
@@ -122,7 +121,7 @@ ms.locfileid: "49813314"
 
 - 項目群組原型 (EGP) 處理常式方法。 這些是如果使用者將所需*合併*（加入） 到此類別的執行個體上的另一個項目。 使用者通常會透過從項目工具或另一個圖形拖曳，或透過貼上作業，來執行這項操作。
 
-   在範例 DSL 中，「輸入通訊埠」或「輸出通訊埠」可合併為一個「元件」。 此外，「元件」和「註解」可合併為模型。 必須提供
+   在範例 DSL 中，「輸入通訊埠」或「輸出通訊埠」可合併為一個「元件」。 此外，「元件」和「註解」可合併為模型。 此
 
    「元件」類別中的 EGP 處理常式方法允許「元件」接受「通訊埠」，但不接受「註解」。 根模型類別中的 EGP 處理常式接受「元件」和「註解」，但不接受「通訊埠」。
 

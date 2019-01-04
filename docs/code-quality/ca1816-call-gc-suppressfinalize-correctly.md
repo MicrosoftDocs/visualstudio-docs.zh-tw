@@ -1,8 +1,7 @@
 ---
-title: CA1816：正確呼叫 GC.SuppressFinalize
+title: CA1816:正確呼叫 GC.SuppressFinalize
 ms.date: 06/30/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA1816
@@ -19,14 +18,14 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c874aac5d84d45159ef7d169ab2749269fa0905
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
+ms.openlocfilehash: a3dcfdf8f094d50c5f462ae1a9d0ef4e85a0bb87
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37174227"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53882282"
 ---
-# <a name="ca1816-call-gcsuppressfinalize-correctly"></a>CA1816：正確呼叫 GC.SuppressFinalize
+# <a name="ca1816-call-gcsuppressfinalize-correctly"></a>CA1816:正確呼叫 GC.SuppressFinalize
 
 |||
 |-|-|
@@ -81,8 +80,8 @@ ms.locfileid: "37174227"
 
 ## <a name="related-rules"></a>相關的規則
 
-- [CA2215：Dispose 方法應該呼叫基底類別處置](../code-quality/ca2215-dispose-methods-should-call-base-class-dispose.md)
-- [CA2216：可處置的類型應該宣告完成項](../code-quality/ca2216-disposable-types-should-declare-finalizer.md)
+- [CA2215:方法應該呼叫基底類別處置](../code-quality/ca2215-dispose-methods-should-call-base-class-dispose.md)
+- [CA2216:可處置類型應該宣告完成項](../code-quality/ca2216-disposable-types-should-declare-finalizer.md)
 
 ## <a name="see-also"></a>另請參閱
 

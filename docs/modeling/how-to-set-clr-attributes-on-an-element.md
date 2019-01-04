@@ -1,5 +1,5 @@
 ---
-title: 如何：在項目上設定 CLR 屬性
+title: HOW TO：在項目上設定 CLR 屬性
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,15 +12,14 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 1609b92e631abdaba34a18bd32d4fc6d892f7cd7
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: 5b9a96f70febc6a33d80557a09cc8bc8e1adf2f4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50966787"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53938078"
 ---
-# <a name="how-to-set-clr-attributes-on-an-element"></a>如何：在項目上設定 CLR 屬性
+# <a name="how-to-set-clr-attributes-on-an-element"></a>HOW TO：在項目上設定 CLR 屬性
 自訂屬性是可以加入至定義域項目、 圖形、 連接器和圖表的特殊屬性。 您可以新增任何屬性繼承自`System.Attribute`類別。
 
 ### <a name="to-add-a-custom-attribute"></a>若要新增自訂屬性

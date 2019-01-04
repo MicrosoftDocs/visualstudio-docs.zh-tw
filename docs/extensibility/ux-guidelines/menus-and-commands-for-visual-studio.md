@@ -1,9 +1,6 @@
 ---
 title: 功能表和命令適用於 Visual Studio |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 0a1ed675-2bd1-4603-ba3a-f40dfb5cfb69
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8f5686f96ce0125cac98ca08582e8407c4e1e926
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: bddedab69583c8ec4ff809810e049a4aff2046ee
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49937950"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53933793"
 ---
 # <a name="menus-and-commands-for-visual-studio"></a>功能表和命令適用於 Visual Studio
 ## <a name="command-usage"></a>命令使用方式  
@@ -52,7 +49,7 @@ ms.locfileid: "49937950"
  您最好將命令放在接近使用者的關注區域。 若要這樣做的一個方式是在您的工具視窗或文件頂端編輯器建立內嵌的工具列。 放在工具列上的命令應該是在視窗內的內容區域的特定項目。 不會重複這些工具列上的共用的命令。 例如，永遠不會放置在內嵌工具列的 [儲存] 圖示。  
   
 ### <a name="content-and-command-visibility"></a>內容和命令的可見性  
- 命令位於下列範圍：**環境**，**階層**，並**文件**。 每個範圍需知命令位置中有信心。  
+ 命令會位於下列範圍：**環境**，**階層**，以及**文件**。 每個範圍需知命令位置中有信心。  
   
  中的命令**環境**範圍建立主要的內容，並會在多個內容之間共用。 而是會修改文件和工具視窗的排列方式的可見性。 在環境中的命令範圍，其中包括**新的專案**，**連接到伺服器**，**附加處理序**，**剪下**， **複製**，**貼上**，**尋找**，**選項**，**自訂**，**開新視窗**，並**檢視說明**。  
   
@@ -284,7 +281,7 @@ ms.locfileid: "49937950"
   
 - **遵循 Windows 指導方針來判斷哪些修飾詞的按鍵來運用。** 使用 Ctrl 按鍵組合有大規模的效果，例如，套用至整份文件的命令的命令。 擴充或補充的標準捷徑按鍵動作的命令，請使用 Shift 鍵組合。 請勿使用 Ctrl + alt 鍵組合。  
   
-- **移除多餘的捷徑。** 如果您有舊版的功能，請考慮移除捷徑時，所使用極端 infrequency （少於 10 次從 CEIP 資料） 或中度 infrequency （少於 100 倍的 CEIP 資料從） 的存取金鑰可讓您快速存取相同的命令。 例如： Alt、 H、 C 會開啟說明/內容。  
+- **移除多餘的捷徑。** 如果您有舊版的功能，請考慮移除捷徑時，所使用極端 infrequency （少於 10 次從 CEIP 資料） 或中度 infrequency （少於 100 倍的 CEIP 資料從） 的存取金鑰可讓您快速存取相同的命令。 例如: Alt 鍵，H，C 會開啟說明/內容。  
   
   不是簡單的方式，檢查快顯的可用性。 如果您想要新增的捷徑，請遵循下列步驟：  
   

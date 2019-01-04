@@ -1,9 +1,6 @@
 ---
 title: IDebugBoundBreakpoint2::GetBreakpointResolution |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugBoundBreakpoint2::GetBreakpointResolution
@@ -16,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7d58c58dbbaad6d57518c8f13620029034ae4b76
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 35d300259718c86fdd0806caf60edb9ce594f096
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49920387"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53960624"
 ---
 # <a name="idebugboundbreakpoint2getbreakpointresolution"></a>IDebugBoundBreakpoint2::GetBreakpointResolution
 取得描述此中斷點的中斷點解析。  
@@ -29,13 +26,13 @@ ms.locfileid: "49920387"
 ## <a name="syntax"></a>語法  
   
 ```cpp  
-HRESULT GetBreakpointResolution(   
+HRESULT GetBreakpointResolution(   
    IDebugBreakpointResolution2** ppBPResolution  
 );  
 ```  
   
 ```csharp  
-int GetBreakpointResolution(   
+int GetBreakpointResolution(   
    out IDebugBreakpointResolution2 ppBPResolution  
 );  
 ```  

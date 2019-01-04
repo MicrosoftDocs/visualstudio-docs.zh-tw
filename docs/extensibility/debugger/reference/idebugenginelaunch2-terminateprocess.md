@@ -1,9 +1,6 @@
 ---
 title: IDebugEngineLaunch2::TerminateProcess |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugEngineLaunch2::TerminateProcess
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1426e8d563879fd80b8c39710be453cf0a3d6794
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 919500033ba165d2116a91f9b47612d0615c122a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49930345"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53990957"
 ---
 # <a name="idebugenginelaunch2terminateprocess"></a>IDebugEngineLaunch2::TerminateProcess
 結束處理序。  
@@ -28,13 +25,13 @@ ms.locfileid: "49930345"
 ## <a name="syntax"></a>語法  
   
 ```cpp  
-HRESULT TerminateProcess (   
+HRESULT TerminateProcess (   
    IDebugProcess2* pProcess  
 );  
 ```  
   
 ```csharp  
-int TerminateProcess (   
+int TerminateProcess (   
    IDebugProcess2 pProcess  
 );  
 ```  

@@ -1,9 +1,6 @@
 ---
 title: Unmanaged 的 API 參考 （在 Visual Studio 中的 Office 程式開發）
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,12 +13,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9b0f48ea5997c2c8c2dd7d90eebde8322fad8a7a
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 1ac4dfa9dd697993cffb527be521bd04c4c087ca
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35671087"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53991158"
 ---
 # <a name="unmanaged-api-reference-office-development-in-visual-studio"></a>Unmanaged 的 API 參考 （在 Visual Studio 中的 Office 程式開發）
   從 2007 Microsoft Office system 開始，Office 應用程式使用[IManagedAddin 介面](../vsto/imanagedaddin-interface.md)介面呼叫 VSTO 增益集載入器元件隨附[!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]。 此元件用來載入 managed VSTO 增益集。您可以實作這個介面，來建立自己的 VSTO 增益集載入器元件。  
@@ -32,5 +29,3 @@ ms.locfileid: "35671087"
 ## <a name="in-this-section"></a>本節內容  
  [IManagedAddin 介面](../vsto/imanagedaddin-interface.md)  
  COM 介面，您可以實作這個介面，在 Office 應用程式中載入和卸載 VSTO 增益集。  
-  
-  

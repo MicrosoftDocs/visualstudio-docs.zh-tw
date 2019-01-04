@@ -1,9 +1,6 @@
 ---
-title: 如何： 建立。Vsct 檔案 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：建立。Vsct 檔案 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - VSCT files, creating
@@ -13,14 +10,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 612ad5668ebb1033ef07dcad1fc07030d78e1643
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 51c1f286e23ed192970118d47981a60a2fbd76eb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49921206"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53885326"
 ---
-# <a name="how-to-create-a-vsct-file"></a>如何： 建立.vsct 檔  
+# <a name="how-to-create-a-vsct-file"></a>HOW TO：建立.vsct 檔  
   
 有數種方式可建立以 XML 為基礎的 Visual Studio 命令資料表設定 (*.vsct*) 檔案。  
   
@@ -56,7 +53,7 @@ ms.locfileid: "49921206"
   
 <a name="how-to-create-a-dot-vsct-file-from-an-existing-dot-ctc-file"></a>
 
-## <a name="how-to-create-a-vsct-file-from-an-existing-ctc-file"></a>如何： 從現有的.ctc 檔建立.vsct 檔  
+## <a name="how-to-create-a-vsct-file-from-an-existing-ctc-file"></a>HOW TO：從現有的.ctc 檔建立.vsct 檔  
   
 您可以建立以 XML 為基礎 *.vsct*現有命令資料表中的檔案 *.ctc*原始程式檔。 這樣做，您可以充分利用新的 XML [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 命令資料表 (VSCT) 編譯器格式。  
   
@@ -87,7 +84,7 @@ ms.locfileid: "49921206"
   
 <a name="how-to-create-a-dot-vsct-file-from-an-existing-dot-cto-file"></a>
 
-## <a name="how-to-create-a-vsct-file-from-an-existing-cto-file"></a>如何： 從現有的.cto 檔建立.vsct 檔  
+## <a name="how-to-create-a-vsct-file-from-an-existing-cto-file"></a>HOW TO：從現有的.cto 檔建立.vsct 檔  
   
 您可以建立以 XML 為基礎 *.vsct*從現有的二進位檔的檔案 *.cto*檔案。 這樣做可讓您充分利用新的命令資料表編譯器格式。 此程序的運作，即使 *.cto*檔案已從編譯 *.ctc*檔案。 您可以編輯和編譯 *.vsct*到另一個.cto 檔的檔案。  
   

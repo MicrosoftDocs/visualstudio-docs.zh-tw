@@ -1,9 +1,6 @@
 ---
 title: 將命令加入至 [方案總管] 工具列 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - toolbars [Visual Studio], adding buttons
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ee8ca017cd16b6d56c2e71b474d3f4283aeeb9b6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f83c2c79fe79f2f9c95e14f91244d619cc71149c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49849556"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53964756"
 ---
 # <a name="add-a-command-to-the-solution-explorer-toolbar"></a>將命令加入至 [方案總管] 工具列
 本逐步解說示範如何加入一個按鈕來**方案總管 中**工具列。  

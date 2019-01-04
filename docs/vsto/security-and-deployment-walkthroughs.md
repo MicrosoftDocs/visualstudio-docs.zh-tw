@@ -1,9 +1,6 @@
 ---
 title: 安全性和部署的逐步解說
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,43 +15,43 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 25a306300b1f5bf477a5435be58aca71ba5d70de
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: e0ce327c620531a1ba5f9a21ccbfd3aeef1c1fa8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50671283"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53986241"
 ---
 # <a name="security-and-deployment-walkthroughs"></a>安全性和部署的逐步解說
   下列主題示範如何設定安全性原則，讓您的解決方案，若要執行，以及如何部署 Office 方案。  
   
 ## <a name="security-topics"></a>安全性主題  
- [如何： 簽署 Office 方案](../vsto/how-to-sign-office-solutions.md)  
+ [如何：簽署 Office 方案](../vsto/how-to-sign-office-solutions.md)  
  提供有關如何使用的憑證授與信任給方案資訊。  
   
- [如何： 設定內含清單的安全性](../vsto/how-to-configure-inclusion-list-security.md)  
+ [如何：設定內含清單的安全性](../vsto/how-to-configure-inclusion-list-security.md)  
  說明如何設定[!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]信任提示來控制使用者是否可以安裝 Office 方案的選項。  
   
 ## <a name="deployment-topics"></a>部署主題  
- [如何： 使用 ClickOnce 發行 Office 方案](https://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)  
+ [如何：使用 ClickOnce 發行 Office 方案](https://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)  
  提供有關如何使用資訊**發行精靈**或**發行**發行 Office 方案的 專案設計工具頁面。  
   
- [如何： 使用 ClickOnce 將文件層級 Office 方案發行到 SharePoint 伺服器](https://msdn.microsoft.com/2408e809-fb78-42a1-9152-00afa1522e58)  
+ [如何：使用 ClickOnce 將文件層級 Office 方案發行到 SharePoint 伺服器](https://msdn.microsoft.com/2408e809-fb78-42a1-9152-00afa1522e58)  
  描述部署到 SharePoint 伺服器的步驟。  
   
- [如何： 安裝 ClickOnce Office 方案](https://msdn.microsoft.com/14702f48-9161-4190-994c-78211fe18065)  
+ [如何：安裝 ClickOnce Office 方案](https://msdn.microsoft.com/14702f48-9161-4190-994c-78211fe18065)  
  提供的步驟來執行安裝程式產生在發佈過程中，安裝 Office 方案開啟部署資訊清單檔中;或開啟的自訂文件或活頁簿。  
   
- [如何： 在執行 Office 方案的終端使用者電腦上安裝必要條件](https://msdn.microsoft.com/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98)  
+ [如何：在執行 Office 方案的終端使用者電腦上安裝必要條件](https://msdn.microsoft.com/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98)  
  描述如何建立會在安裝解決方案元件之前先檢查必要條件的安裝程式。  
   
- [如何： 準備 IIS 來部署 Office 方案](https://msdn.microsoft.com/f62bce70-81d4-4f8b-86e6-2f2afec5d9b4)  
+ [如何：準備 IIS 來部署 Office 方案](https://msdn.microsoft.com/f62bce70-81d4-4f8b-86e6-2f2afec5d9b4)  
  描述如何設定 MIME 類型上 Microsoft Internet Information Services (IIS) 的部署資訊清單。  
   
- [如何： 更新部署 Office 方案](https://msdn.microsoft.com/be96db53-b6ea-46ab-b8d9-b76b098b3b13)  
+ [如何：更新已部署的 Office 方案](https://msdn.microsoft.com/be96db53-b6ea-46ab-b8d9-b76b098b3b13)  
  提供如何使用更新 Office 方案的相關資訊**發行精靈**。  
   
- [如何： 變更 Office 方案的安裝路徑](https://msdn.microsoft.com/d0eaa07b-2d72-4902-899f-2f9fb165b8fd)  
+ [如何：變更 Office 方案的安裝路徑](https://msdn.microsoft.com/d0eaa07b-2d72-4902-899f-2f9fb165b8fd)  
  提供有關如何變更 Office 方案的安裝路徑的資訊。  
   
 ## <a name="related-sections"></a>相關章節  
@@ -78,5 +75,3 @@ ms.locfileid: "50671283"
   
 ## <a name="see-also"></a>另請參閱  
  [Office 程式開發範例和逐步解說](../vsto/office-development-samples-and-walkthroughs.md)  
-  
-  

@@ -1,9 +1,6 @@
 ---
-title: 如何： 取得伺服器總管 中的內建 SharePoint 節點的資料 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：取得伺服器總管 中的內建 SharePoint 節點的資料 |Microsoft Docs
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 06965449cd07fb39480eb1974fc1c90e2d126c73
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: e9ef30de63789072f021aaded87dd5e9c8071637
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118747"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53898969"
 ---
-# <a name="how-to-get-data-for-a-built-in-sharepoint-node-in-server-explorer"></a>如何： 取得伺服器總管 中的內建 SharePoint 節點資料
+# <a name="how-to-get-data-for-a-built-in-sharepoint-node-in-server-explorer"></a>HOW TO：取得伺服器總管 中的內建 SharePoint 節點資料
   在每個內建 SharePoint 節點**伺服器總管**，您可以取得資料為基礎的 SharePoint 元件節點所表示。 如需詳細資訊，請參閱 <<c0> [ 擴充 SharePoint 連線節點，在 伺服器總管](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)。  
   
 ## <a name="example"></a>範例  
@@ -34,7 +31,7 @@ ms.locfileid: "37118747"
   
  此範例會使用 SharePoint 專案服務來取得<xref:EnvDTE.DTE>列出在 Visual Studio 中的物件，用來開啟。 如需有關 SharePoint 專案服務的詳細資訊，請參閱 <<c0> [ 使用 SharePoint 專案服務](../sharepoint/using-the-sharepoint-project-service.md)。  
   
- 如需有關建立 SharePoint 節點的擴充功能的基本工作的詳細資訊，請參閱[如何： 擴充 SharePoint 節點在 伺服器總管](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md)。  
+ 如需有關建立 SharePoint 節點的擴充功能的基本工作的詳細資訊，請參閱[How to:擴充 SharePoint 節點在 伺服器總管](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md)。  
   
 ## <a name="compile-the-code"></a>編譯程式碼  
  這個範例需要參考下列組件：  
@@ -52,7 +49,6 @@ ms.locfileid: "37118747"
   
 ## <a name="see-also"></a>另請參閱
  [擴充 SharePoint 連線節點，在 伺服器總管](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)   
- [如何： 擴充 SharePoint 節點在 伺服器總管](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md)   
+ [如何：擴充 SharePoint 節點在 伺服器總管](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md)   
  [使用 SharePoint 專案服務](../sharepoint/using-the-sharepoint-project-service.md)   
  [部署適用於 Visual Studio 中 SharePoint 工具擴充功能](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)  
-  

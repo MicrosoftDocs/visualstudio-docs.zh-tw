@@ -1,9 +1,6 @@
 ---
 title: 中斷點相關的方法 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], breakpoint methods
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e7e823c5fef66077ba03d4cb9eec4367b79038db
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 4da8292d817649c83f26ebce4abe346e32624a93
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39152138"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53947279"
 ---
 # <a name="breakpoint-related-methods"></a>中斷點相關的方法
 偵錯引擎 (DE) 必須支援的設定中斷點。 Visual Studio 偵錯支援下列類型的中斷點：  
@@ -28,7 +25,7 @@ ms.locfileid: "39152138"
   
      透過 UI 要求及成功繫結到指定的程式碼的位置  
   
--   擱置  
+-   暫止  
   
      透過 UI，但無法尚未繫結至實際的指示要求  
   
@@ -42,10 +39,10 @@ ms.locfileid: "39152138"
 |方法|描述|  
 |------------|-----------------|  
 |[CanBind](../../extensibility/debugger/reference/idebugpendingbreakpoint2-canbind.md)|判斷指定暫止的中斷點可以繫結到程式碼的位置。|  
-|[繫結](../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md)|繫結指定暫止的中斷點至一或多個程式碼位置。|  
+|[Bind](../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md)|繫結指定暫止的中斷點至一或多個程式碼位置。|  
 |[GetState](../../extensibility/debugger/reference/idebugpendingbreakpoint2-getstate.md)|取得暫止中斷點的狀態。|  
 |[GetBreakpointRequest](../../extensibility/debugger/reference/idebugpendingbreakpoint2-getbreakpointrequest.md)|取得用來建立暫止中斷點的中斷點要求。|  
-|[啟用](../../extensibility/debugger/reference/idebugpendingbreakpoint2-enable.md)|切換暫止中斷點的啟用的狀態。|  
+|[Enable](../../extensibility/debugger/reference/idebugpendingbreakpoint2-enable.md)|切換暫止中斷點的啟用的狀態。|  
 |[EnumBoundBreakpoints](../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumboundbreakpoints.md)|列舉所有的中斷點暫止中斷點的資料繫結。|  
 |[EnumErrorBreakpoints](../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md)|列舉所有錯誤中斷點所產生的暫止中斷點。|  
 |[刪除](../../extensibility/debugger/reference/idebugpendingbreakpoint2-delete.md)|刪除暫止中斷點和繫結從它的所有中斷點。|  
@@ -59,7 +56,7 @@ ms.locfileid: "39152138"
 |[GetPendingBreakpoint](../../extensibility/debugger/reference/idebugboundbreakpoint2-getpendingbreakpoint.md)|取得包含中斷點暫止中斷點。|  
 |[GetState](../../extensibility/debugger/reference/idebugboundbreakpoint2-getstate.md)|取得繫結中斷點的狀態。|  
 |[GetBreakpointResolution](../../extensibility/debugger/reference/idebugboundbreakpoint2-getbreakpointresolution.md)|取得描述中斷點的中斷點解析。|  
-|[啟用](../../extensibility/debugger/reference/idebugboundbreakpoint2-enable.md)|啟用或停用中斷點。|  
+|[Enable](../../extensibility/debugger/reference/idebugboundbreakpoint2-enable.md)|啟用或停用中斷點。|  
 |[刪除](../../extensibility/debugger/reference/idebugboundbreakpoint2-delete.md)|刪除繫結的中斷點。|  
   
  解析和要求資訊需要實作下列[IDebugBreakpointResolution2](../../extensibility/debugger/reference/idebugbreakpointresolution2.md)方法。  

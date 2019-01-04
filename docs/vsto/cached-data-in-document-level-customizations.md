@@ -1,9 +1,6 @@
 ---
 title: 文件層級自訂中的快取的資料
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -21,12 +18,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c17c24dda11ea210c190a31197b783036357f2de
-ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
+ms.openlocfilehash: 25cfbeba37be0d11e05b4524f5e683cfa798da6e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53248292"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53964646"
 ---
 # <a name="cached-data-in-document-level-customizations"></a>文件層級自訂中的快取的資料
   文件層級自訂的主要目標是將資料從 Office 文件中的檢視。 資料是指儲存在文件，包括數字和文字的資訊。 檢視是指使用者介面和 Microsoft Office Word 和 Microsoft Office Excel 物件模型。  
@@ -66,5 +63,3 @@ ms.locfileid: "53248292"
 ## <a name="see-also"></a>另請參閱  
  [在 Office 方案中的資料](../vsto/data-in-office-solutions.md)   
  [在 Visual Studio 中的 Office 方案的架構](../vsto/architecture-of-office-solutions-in-visual-studio.md)  
-  
-  

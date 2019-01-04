@@ -1,9 +1,6 @@
 ---
-title: 逐步解說： 從 VBA 呼叫程式碼，在 Visual C# 專案
-ms.custom: ''
+title: 逐步解說：從 視覺效果中的 VBA 呼叫程式碼C#專案
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -22,14 +19,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e2803ef31ec1009215d4490ac527c42cbdc90571
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: dcbd55c2c6b8b803eb9591265d512a73f6201771
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38781685"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53989026"
 ---
-# <a name="walkthrough-call-code-from-vba-in-a-visual-c-project"></a>逐步解說： 從 VBA 呼叫程式碼，在 Visual C# 專案
+# <a name="walkthrough-call-code-from-vba-in-a-visual-c-project"></a>逐步解說：從 視覺效果中的 VBA 呼叫程式碼C#專案
   本逐步解說示範如何從活頁簿中的 Visual Basic for Applications (VBA) 程式碼，呼叫 Microsoft Office Excel 文件層級自訂中的方法。 這個程序和三個基本步驟相關：將方法加入 `Sheet1` 主項目類別、將方法公開至活頁簿中的 VBA 程式碼，然後從活頁簿中的 VBA 程式碼呼叫此方法。  
   
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
@@ -74,7 +71,7 @@ ms.locfileid: "38781685"
 3.  按一下 [功能區] 上的 [開發人員]  索引標籤。  
   
     > [!NOTE]  
-    >  如果 [開發人員]  索引標籤沒有顯示，您必須先使其顯示。 如需詳細資訊，請參閱 <<c0> [ 如何： 在功能區顯示開發人員索引標籤](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)。  
+    >  如果 [開發人員]  索引標籤沒有顯示，您必須先使其顯示。 如需詳細資訊，請參閱[＜How to：在功能區顯示開發人員索引標籤](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)。  
   
 4.  在 [程式碼]  群組中，按一下 [Visual Basic] 。  
   
@@ -245,14 +242,13 @@ ms.locfileid: "38781685"
 ## <a name="next-steps"></a>後續步驟  
  您可以在這些主題中，進一步了解如何從 VBA 呼叫 Office 方案中的程式碼：  
   
--   從 VBA 呼叫 Visual Basic 自訂之主項目中的程式碼。 此處理序與 Visual C# 處理序不同。 如需詳細資訊，請參閱 <<c0> [ 逐步解說： 從 VBA 呼叫程式碼，在 Visual Basic 專案中](../vsto/walkthrough-calling-code-from-vba-in-a-visual-basic-project.md)。  
+-   從 VBA 呼叫 Visual Basic 自訂之主項目中的程式碼。 此處理序與 Visual C# 處理序不同。 如需詳細資訊，請參閱[逐步解說：從 VBA 呼叫程式碼，在 Visual Basic 專案中](../vsto/walkthrough-calling-code-from-vba-in-a-visual-basic-project.md)。  
   
--   從 VBA 呼叫 VSTO 增益集中的程式碼。 如需詳細資訊，請參閱 <<c0> [ 逐步解說： 在 VSTO 增益集中呼叫程式碼，從 VBA](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md)。  
+-   從 VBA 呼叫 VSTO 增益集中的程式碼。 如需詳細資訊，請參閱[逐步解說：在 VSTO 增益集中呼叫程式碼，從 VBA](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md)。  
   
 ## <a name="see-also"></a>另請參閱  
  [合併 VBA 和文件層級自訂](../vsto/combining-vba-and-document-level-customizations.md)   
  [程式文件層級自訂](../vsto/programming-document-level-customizations.md)   
- [如何： 公開程式碼給 Visual Basic 專案中的 VBA](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md)   
- [如何： 公開程式碼給 Visual C 中的 VBA&#35;專案](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md)   
- [逐步解說： 從 VBA 呼叫程式碼，在 Visual Basic 專案](../vsto/walkthrough-calling-code-from-vba-in-a-visual-basic-project.md)  
-  
+ [如何：在 Visual Basic 專案中公開給 VBA 的程式碼](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md)   
+ [如何：公開給 Visual C 中的 VBA 程式碼&#35;專案](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md)   
+ [逐步解說：在 Visual Basic 專案中，從 VBA 呼叫程式碼](../vsto/walkthrough-calling-code-from-vba-in-a-visual-basic-project.md)  

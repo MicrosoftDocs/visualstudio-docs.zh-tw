@@ -1,9 +1,6 @@
 ---
-title: 如何： 捲動工作表中的資料庫記錄
-ms.custom: ''
+title: HOW TO：捲動工作表中的資料庫記錄
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,17 +15,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7e9ffaffdefda98e3e074467fcd4df8cacce91b4
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 1459ee941a8cb88d102e14ccfc7f128796c4c333
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35671407"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53897466"
 ---
-# <a name="how-to-scroll-through-database-records-in-a-worksheet"></a>如何： 捲動工作表中的資料庫記錄
+# <a name="how-to-scroll-through-database-records-in-a-worksheet"></a>HOW TO：捲動工作表中的資料庫記錄
   下列程序示範如何使用設計工具來顯示控制項，可讓使用者以捲動所有記錄在 Microsoft Office Excel 工作表，從資料庫資料表的單一欄位。  
   
- 您可以使用設計工具只能在文件層級專案中。 不過，您也可以新增控制項並繫結至資料，以程式設計方式在執行階段。 如需詳細資訊，請參閱 <<c0> [ 逐步解說： VSTO 增益集專案中的簡單資料繫結](../vsto/walkthrough-simple-data-binding-in-vsto-add-in-project.md)。  
+ 您可以使用設計工具只能在文件層級專案中。 不過，您也可以新增控制項並繫結至資料，以程式設計方式在執行階段。 如需詳細資訊，請參閱[逐步解說：在 VSTO 增益集專案中的簡單資料繫結](../vsto/walkthrough-simple-data-binding-in-vsto-add-in-project.md)。  
   
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]  
   
@@ -48,5 +45,3 @@ ms.locfileid: "35671407"
   
 ## <a name="see-also"></a>另請參閱  
  [資料繫結至 Office 方案中的控制項](../vsto/binding-data-to-controls-in-office-solutions.md)  
-  
-  

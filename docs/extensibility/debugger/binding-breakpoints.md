@@ -1,9 +1,6 @@
 ---
 title: 繫結中斷點 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - breakpoints, binding
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e02b3da843f7e4cffe33d660a8a82ab3c4c0dc03
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 263e339fa4ab8001fcd542f7dcedd10b5a24659a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39153442"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53988776"
 ---
 # <a name="bind-breakpoints"></a>繫結中斷點
 如果使用者設定中斷點，也許是藉由按下**F9**，IDE 會構成要求，並提示偵錯工作階段，來建立中斷點。  

@@ -1,9 +1,6 @@
 ---
 title: 指定 Office 方案的安全性考量
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -21,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: dcb2e0a3c381b1dd07c7724c3a64c53307856014
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 33d827efa7dcc4e5590b4bc45fb0d6bd3fbe1432
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49951388"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53955538"
 ---
 # <a name="specific-security-considerations-for-office-solutions"></a>指定 Office 方案的安全性考量
   Microsoft .NET Framework 和 Microsoft Office 所提供的安全性功能，可協助保護您的 Office 解決方案免於可能的安全性威脅。 本主題說明一些這類威脅，並提供建議協助您免於威脅。 本主題也包含 Microsoft Office 安全性設定如何影響 Office 方案的相關資訊。  
@@ -120,5 +117,3 @@ ms.locfileid: "49951388"
   
 ## <a name="see-also"></a>另請參閱  
  [保護 Office 方案](../vsto/securing-office-solutions.md)  
-  
-  

@@ -1,9 +1,6 @@
 ---
 title: Visual Studio 功能表的 Guid 和 Id |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - visual studio menus
@@ -18,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1b7c8af93604a7e8e33d7d21d26b85c59985b878
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 3c2990e7002a75dfb5868a4079d889c08e49c3c3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39499935"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53906939"
 ---
 # <a name="guids-and-ids-of-visual-studio-menus"></a>Visual Studio 識別碼和 Guid 功能表
 這篇文章會列舉的 GUID 和 ID 值的功能表和 Visual Studio 功能表列上的群組。 這些值會定義於 *.vsct*安裝為 Visual Studio SDK 的一部分的檔案。 如需詳細資訊，請參閱 < [IDE 定義的命令、 功能表和群組](../../extensibility/internals/ide-defined-commands-menus-and-groups.md)。  
@@ -52,7 +49,7 @@ ms.locfileid: "39499935"
 |功能表|識別碼|  
 |----------|--------|  
 |檔案|IDM_VS_MENU_FILE|  
-|Edit|IDM_VS_MENU_EDIT|  
+|編輯|IDM_VS_MENU_EDIT|  
 |檢視|IDM_VS_MENU_VIEW|  
 |重構|IDM_VS_MENU_REFACTORING|  
 |專案|IDM_VS_MENU_PROJECT|  
@@ -116,7 +113,7 @@ ms.locfileid: "39499935"
 |程式碼的瀏覽器|IDG_VS_VIEW_CODEBROWSENAV_WINDOWS|  
 |開發 Windows|IDG_VS_VIEW_DEV_WINDOWS|  
 |工具列|IDG_VS_VIEW_TOOLBARS|  
-|Symbol|IDG_VS_VIEW_SYMBOLNAVIGATE|  
+|符號|IDG_VS_VIEW_SYMBOLNAVIGATE|  
 |瀏覽|IDG_VS_VIEW_NAVIGATE|  
 |小型瀏覽|IDG_VS_VIEW_SMALLNAVIGATE|  
 |物件瀏覽器|IDG_VS_VIEW_OBJBRWSR|  
@@ -181,7 +178,7 @@ ms.locfileid: "39499935"
  下列階層會顯示在 Visual Studio 功能表列上的功能表與相關聯的子功能表。 只有一組可以有一個功能表做為其父系，因為每一個子功能表必須下降從群組在功能表上，而不是直接從功能表。 如需功能表、 群組和子功能表之間的關聯性的詳細資訊，請參閱[子功能表加入至功能表](../../extensibility/adding-a-submenu-to-a-menu.md)。  
   
 > [!NOTE]
->  在 Visual Studio 功能表列上的功能表名稱不分別會顯示此階層因為他們可以從推斷在 IDE 中，群組的命名慣例，如下所示： *IDG_VS_\<功能表名稱\>_\<群組名稱\>*。  
+>  Visual Studio 功能表列上的功能表名稱不會個別顯示此階層中上，因為他們可以從推斷在 IDE 中，群組的命名慣例，如下所示：*IDG_VS_\<功能表名稱\>_\<群組名稱\>*。  
   
 |父群組|子功能表|子群組|  
 |------------------|-------------|------------------|  

@@ -16,13 +16,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: dde7b368297979e53d4ee09b75961652749d3321
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: bfbb0affe6c159f27a2568d5da35bcb98e80cdeb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380739"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53939923"
 ---
 # <a name="run-time-text-generation-with-t4-text-templates"></a>使用 T4 文字範本在執行階段產生文字
 
@@ -300,7 +299,7 @@ Include 指示詞可以使用文字範本檔案或包含的檔案中的任何位
 
 您可以共用執行階段範本，藉由撰寫一個可為抽象的基底類別範本之間的內容。 使用`inherits`參數`<@#template#>`指示詞可參考另一個執行階段範本類別。
 
-#### <a name="inheritance-pattern-fragments-in-base-methods"></a>繼承模式： 基底方法中的片段
+#### <a name="inheritance-pattern-fragments-in-base-methods"></a>繼承模式：基底方法中的片段
 
 在接下來的範例所使用的模式，請注意下列幾點：
 
@@ -355,7 +354,7 @@ begin 1
 end 1
 ```
 
-#### <a name="inheritance-pattern-text-in-base-body"></a>基底的主體中的繼承模式： 文字
+#### <a name="inheritance-pattern-text-in-base-body"></a>繼承模式：基底的主體中的文字
 
 使用範本繼承此替代方法，在大量的文字是基底範本中定義。 在衍生的範本會提供資料和文字片段放入基底的內容。
 
@@ -431,7 +430,7 @@ End material for DerivedTemplate1.
 
 ## <a name="related-topics"></a>相關主題
 
-設計階段範本： 如果您想要使用範本來產生程式碼，會成為您的應用程式的一部分，請參閱 <<c0> [ 使用 T4 文字範本在設計階段的程式碼產生](../modeling/design-time-code-generation-by-using-t4-text-templates.md)。
+設計階段範本：如果您想要使用範本來產生程式碼，會成為您的應用程式的一部分，請參閱 <<c0> [ 使用 T4 文字範本在設計階段的程式碼產生](../modeling/design-time-code-generation-by-using-t4-text-templates.md)。
 
 執行階段範本可用在任何應用程式範本和其內容在編譯時期決定位置。 如果您想要撰寫產生的文字範本，可在執行階段變更從 Visual Studio 延伸模組，但請參閱[叫用 VS 擴充功能中的文字轉換](../modeling/invoking-text-transformation-in-a-vs-extension.md)。
 

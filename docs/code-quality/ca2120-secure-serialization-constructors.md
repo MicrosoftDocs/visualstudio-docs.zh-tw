@@ -1,8 +1,7 @@
 ---
-title: CA2120：必須保護序列化建構函式
+title: CA2120:必須保護序列化建構函式
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA2120
@@ -16,20 +15,20 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 123bff32b847342f4081a73abb1d8b899cc0efec
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 1dbb6f74b138b0ec555af06ece4b6cb11ad8b678
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45548500"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53899676"
 ---
-# <a name="ca2120-secure-serialization-constructors"></a>CA2120：必須保護序列化建構函式
+# <a name="ca2120-secure-serialization-constructors"></a>CA2120:必須保護序列化建構函式
 
 |||
 |-|-|
 |TypeName|SecureSerializationConstructors|
 |CheckId|CA2120|
-|類別|Microsoft.Security|
+|分類|Microsoft.Security|
 |中斷變更|中斷|
 
 ## <a name="cause"></a>原因
@@ -52,7 +51,7 @@ ms.locfileid: "45548500"
 ## <a name="related-rules"></a>相關的規則
  [CA2229：必須實作序列化建構函式](../code-quality/ca2229-implement-serialization-constructors.md)
 
- [CA2237：ISerializable 類型必須標記 SerializableAttribute](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md)
+ [CA2237： 必須Serializableattribute 標記 ISerializable 類型](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md)
 
 ## <a name="see-also"></a>另請參閱
 

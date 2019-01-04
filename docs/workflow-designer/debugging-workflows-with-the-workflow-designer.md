@@ -3,7 +3,6 @@ title: 使用工作流程設計工具偵錯工作流程
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 helpviewer_keywords:
 - Visual Studio Workflow Designer [WFD], debugging workflows
 - Workflow Designer [WFD], debugging workflows
@@ -13,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 482e13a91513151d7c4595e0a622f223751ae553
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 64574156bb1645a3d1f4e84f50a8e322751fd370
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36755310"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53923422"
 ---
 # <a name="debug-workflows-with-the-workflow-designer"></a>偵錯工作流程與工作流程設計工具
 
@@ -32,18 +31,18 @@ ms.locfileid: "36755310"
 
 - 按下**F5**開始執行的工作流程執行個體，或叫用中斷點後繼續執行。
 
-- 使用遠端偵錯。 如需使用遠端偵錯資訊，請參閱 <<c0> [ 如何： 啟用遠端偵錯](/previous-versions/visualstudio/visual-studio-2010/febz73k0(v=vs.100))。
+- 使用遠端偵錯。 如需使用遠端偵錯資訊，請參閱[How to:啟用遠端偵錯](/previous-versions/visualstudio/visual-studio-2010/febz73k0(v=vs.100))。
 
    > [!NOTE]
    > 如果工作流程應用程式目標設為 x86 架構，而您的電腦執行 64 位元作業系統上裝載，則遠端偵錯將不會運作，除非在遠端電腦上安裝 Visual Studio 或工作流程應用程式的目標變更為**任何 CPU**。
 
 ## <a name="step-through-code"></a>逐步執行程式碼
 
-- **逐步**： 活動會藉由按下逐步**F11**。 偵錯工具會逐步執行任何已定義的處理常式。 如果沒有定義處理常式，則不進入該活動；若為包含其他活動的複合活動，則逐步執行第一個執行中活動。
+- **中的步驟**:活動會藉由按下逐步**F11**。 偵錯工具會逐步執行任何已定義的處理常式。 如果沒有定義處理常式，則不進入該活動；若為包含其他活動的複合活動，則逐步執行第一個執行中活動。
 
-- **步驟時逾時：** 逐步跳出活動中，按下**Shift**+**F11**。 逐步跳出活動會將目前活動及其同層級活動執行到完成。 接著偵錯工具會在目前活動的父代上中斷。 從程式碼處理常式逐步跳出時，偵錯工具會在處理常式所關聯的活動上中斷。
+- **跳離函式：** 逐步跳出活動中，按下**Shift**+**F11**。 逐步跳出活動會將目前活動及其同層級活動執行到完成。 接著偵錯工具會在目前活動的父代上中斷。 從程式碼處理常式逐步跳出時，偵錯工具會在處理常式所關聯的活動上中斷。
 
-- **不進入函式**： 不進入函式的活動藉由按下**F10**。 跳出複合活動時，偵錯工具在複合活動的第一個可執行子系上中斷。 不進入非複合活動 (例如，<xref:System.Activities.Statements.Assign> 活動) 時，偵錯工具會執行活動及其相關聯的處理常式，並在下一個活動上中斷。 如果執行的活動是複合活動中最後一個子活動，則在執行後，偵錯工具會在父活動上中斷。
+- **不進入函式**:不進入函式的活動藉由按下**F10**。 跳出複合活動時，偵錯工具在複合活動的第一個可執行子系上中斷。 不進入非複合活動 (例如，<xref:System.Activities.Statements.Assign> 活動) 時，偵錯工具會執行活動及其相關聯的處理常式，並在下一個活動上中斷。 如果執行的活動是複合活動中最後一個子活動，則在執行後，偵錯工具會在父活動上中斷。
 
 ## <a name="debug-with-f5"></a>使用 F5 進行偵錯
 

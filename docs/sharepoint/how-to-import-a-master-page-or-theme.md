@@ -1,9 +1,6 @@
 ---
-title: 如何： 匯入主版頁面或佈景主題 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：匯入的主版頁面或佈景主題 |Microsoft Docs
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,15 +13,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 116ab878d8591fb15bfbb319b2c1d79952fbd0e7
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 7341d12571143d2725b3dd05e5d8e9f03c7d9125
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118782"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53952872"
 ---
-# <a name="how-to-import-a-master-page-or-theme"></a>如何： 匯入的主版頁面或佈景主題
-  您可以讓頁面在您的 SharePoint 網站上一致的外觀建立並使用主版頁面和主題。 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 未提供範本，針對這些項目，但是您可以在 SharePoint Designer 中建立它們，並再將其匯入[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。 如需詳細資訊，請參閱 <<c0> [ 建置組塊： 頁面和使用者介面](http://go.microsoft.com/fwlink/?LinkID=182095)Microsoft 網站上。  
+# <a name="how-to-import-a-master-page-or-theme"></a>HOW TO：匯入的主版頁面或佈景主題
+  您可以讓頁面在您的 SharePoint 網站上一致的外觀建立並使用主版頁面和主題。 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 未提供範本，針對這些項目，但是您可以在 SharePoint Designer 中建立它們，並再將其匯入[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。 如需詳細資訊，請參閱[建置組塊：頁面和使用者介面](http://go.microsoft.com/fwlink/?LinkID=182095)Microsoft 網站上。  
   
 ### <a name="to-import-a-master-page-or-theme"></a>若要匯入的主版頁面或佈景主題  
   
@@ -51,7 +48,7 @@ ms.locfileid: "37118782"
 8.  如果您加入主版頁面，變更其**部署衝突解決**設為**自動**中模組的屬性。  
   
     > [!NOTE]  
-    >  主版頁面的名稱是否與現有的主版頁面標示為預設主版頁面或自訂主版頁面的名稱相同，則可能會發生錯誤。 如需有關如何解決此問題的資訊，請參閱 <<c0> [ 逐步解說： 匯入自訂主版頁面和網站頁面的映像](../sharepoint/walkthrough-import-a-custom-master-page-and-site-page-with-an-image.md)。  
+    >  主版頁面的名稱是否與現有的主版頁面標示為預設主版頁面或自訂主版頁面的名稱相同，則可能會發生錯誤。 如需有關如何解決此問題的資訊，請參閱[逐步解說：匯入自訂主版頁面和網站頁面的映像](../sharepoint/walkthrough-import-a-custom-master-page-and-site-page-with-an-image.md)。  
   
 9. 在模組中，開啟*Elements.xml*。  
   
@@ -97,4 +94,3 @@ ms.locfileid: "37118782"
  [從現有的 SharePoint 網站匯入項目](../sharepoint/importing-items-from-an-existing-sharepoint-site.md)   
  [建立 SharePoint 頁面](../sharepoint/creating-pages-for-sharepoint.md)   
  [使用模組來包含方案中的檔案](../sharepoint/using-modules-to-include-files-in-the-solution.md)  
-  

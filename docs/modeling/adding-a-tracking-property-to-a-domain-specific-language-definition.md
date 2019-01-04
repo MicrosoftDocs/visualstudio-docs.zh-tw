@@ -12,13 +12,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 0417507323a627753bc62e50b424c37b547d4dad
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: 21899be482e47152e8ca60d78535f49613f52ede
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50967476"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53946038"
 ---
 # <a name="add-a-tracking-property-to-a-domain-specific-language-definition"></a>在特定領域語言定義中新增追蹤屬性
 
@@ -719,7 +718,7 @@ HelperClasses.cs 檔案中，新增`TrackingHelper`和`CriticalException`類別�
 
 下一個步驟是以建置並執行 DSL 設計工具中的新執行個體[!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]，讓您可以驗證是否正常運作的追蹤屬性。
 
-1. 在 **建置**功能表上，按一下**重建方案**。
+1. 在 [建置] 功能表上，按一下 [重建方案]。
 
 2. 按一下 [偵錯] 功能表上的 [開始偵錯]。
 

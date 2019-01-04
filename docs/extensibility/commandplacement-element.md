@@ -1,9 +1,6 @@
 ---
 title: CommandPlacement 元素 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - CommandPlacements element (VSCT XML schema)
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4d7288de9b0724d8ff4ef7b6174f59e747a9879d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c5d694f6ed12d3fd7d531ec6a0a01ec70a826561
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49870259"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53941348"
 ---
 # <a name="commandplacement-element"></a>CommandPlacement 元素
 CommandPlacement 元素可讓按鈕、 群組和包含在一個以上的群組或功能表的功能表。 藉由使用 CommandPlacement 元素，您不必完全重新定義這些項目，若要修改的使用者介面外觀。  
@@ -41,16 +38,16 @@ CommandPlacement 元素可讓按鈕、 群組和包含在一個以上的群組�
   
 |屬性|描述|  
 |---------------|-----------------|  
-|guid|必要。 中所定義的命令集的 guid [Symbols 元素](../extensibility/symbols-element.md)。|  
-|id|必要。 功能表、 群組或放置時，如中所定義的命令識別碼`Symbols Element`。|  
-|priority|必要。 判斷項目在其父項目中的視覺位置。|  
-|條件|選擇性。 請參閱[條件式 Aattributes](../extensibility/vsct-xml-schema-conditional-attributes.md)。|  
+|guid|必要項。 中所定義的命令集的 guid [Symbols 元素](../extensibility/symbols-element.md)。|  
+|id|必要項。 功能表、 群組或放置時，如中所定義的命令識別碼`Symbols Element`。|  
+|priority|必要項。 判斷項目在其父項目中的視覺位置。|  
+|條件|選擇項。 請參閱[條件式 Aattributes](../extensibility/vsct-xml-schema-conditional-attributes.md)。|  
   
-### <a name="child-elements"></a>子元素  
+### <a name="child-elements"></a>項目子系  
   
 |項目|描述|  
 |-------------|-----------------|  
-|父代|必要。 功能表或裝載要放置的項目群組中。|  
+|父代|必要項。 功能表或裝載要放置的項目群組中。|  
   
 ### <a name="parent-elements"></a>父項目  
   

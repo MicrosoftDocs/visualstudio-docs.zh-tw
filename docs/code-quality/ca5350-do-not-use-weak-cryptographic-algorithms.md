@@ -1,8 +1,7 @@
 ---
-title: 'CA5350: 請勿使用弱式密碼編譯演算法'
+title: CA5350：請勿使用弱式密碼編譯演算法
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 ms.assetid: 4c51bb8a-fcfa-46aa-ab61-634be84c4a7a
 author: gewarren
@@ -10,20 +9,20 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ba5e70505db86b1497e625b216da955bba677245
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 11c13b44c2f09075550dc5872ccf76d00aae4f6f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45547850"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53987281"
 ---
-# <a name="ca5350-do-not-use-weak-cryptographic-algorithms"></a>CA5350: 請勿使用弱式密碼編譯演算法
+# <a name="ca5350-do-not-use-weak-cryptographic-algorithms"></a>CA5350：請勿使用弱式密碼編譯演算法
 
 |||
 |-|-|
 |TypeName|DoNotUseWeakCryptographicAlgorithms|
 |CheckId|CA5350|
-|類別|Microsoft.Cryptography|
+|分類|Microsoft.Cryptography|
 |中斷變更|非中斷|
 
 > [!NOTE]
@@ -47,7 +46,7 @@ ms.locfileid: "45547850"
 
 - 若為 TripleDES 加密，請使用 <xref:System.Security.Cryptography.Aes> 加密。
 
-- SHA1 或 RIPEMD160 雜湊函式，使用中[sha-2](/windows/desktop/SecCrypto/hash-and-signature-algorithms)系列 (例如<xref:System.Security.Cryptography.SHA512>， <xref:System.Security.Cryptography.SHA384>， <xref:System.Security.Cryptography.SHA256>)。
+- 若為 SHA1 或 RIPEMD160 雜湊函式，請使用 [SHA-2](/windows/desktop/SecCrypto/hash-and-signature-algorithms) 系列 (例如 <xref:System.Security.Cryptography.SHA512>、 <xref:System.Security.Cryptography.SHA384>、 <xref:System.Security.Cryptography.SHA256>)。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
 

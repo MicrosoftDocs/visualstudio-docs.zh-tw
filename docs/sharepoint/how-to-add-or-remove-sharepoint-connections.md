@@ -1,13 +1,8 @@
 ---
-title: 如何： 新增或移除 SharePoint 連線 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：新增或移除 SharePoint 連線 |Microsoft Docs
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -19,14 +14,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 17f1b1ccdee75a379dfc7bce42df2b5a117bdd2e
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 02c0aa0f6b2af5123939a396f9b0ac9dc6febd17
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36755411"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53941949"
 ---
-# <a name="how-to-add-or-remove-sharepoint-connections"></a>如何： 新增或移除 SharePoint 連線
+# <a name="how-to-add-or-remove-sharepoint-connections"></a>HOW TO：新增或移除 SharePoint 連線
   伺服器總管 可讓您瀏覽 SharePoint 網站，以及資料連接。 不過，您可以瀏覽 SharePoint 網站的內容之前您必須將它加入**SharePoint 連線**節點。  
   
 ### <a name="to-add-a-sharepoint-site-to-the-sharepoint-connections-node"></a>若要將 SharePoint 網站新增至 SharePoint 連線節點
@@ -50,4 +45,3 @@ ms.locfileid: "36755411"
   
 ## <a name="see-also"></a>另請參閱
  [瀏覽 SharePoint 連線，使用 伺服器總管](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)  
-  

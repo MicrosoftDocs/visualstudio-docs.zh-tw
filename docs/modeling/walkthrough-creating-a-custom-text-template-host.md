@@ -1,5 +1,5 @@
 ---
-title: 逐步解說：建立自訂文字範本主機
+title: 逐步解說：建立自訂文字範本主應用程式
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,16 +11,15 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 21ef658d3eebe23fba228517700b3804f89a7842
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1a94819b23b404634434ca3d9cdb210dc8e1dce7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49878839"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53840761"
 ---
 # <a name="walkthrough-create-a-custom-text-template-host"></a>逐步解說：建立自訂文字範本主機
 
@@ -718,7 +717,7 @@ A*文字範本*<em>主機</em>提供的環境，可讓*文字範本轉換引擎*
 
 4. 針對[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]，開啟**專案**功能表，然後按一下**CustomHost 屬性**。 在 **啟始物件**清單中，按一下**CustomHost.Program**。
 
-5. 按一下 [ **檔案** ] 功能表上的 [ **全部儲存**]。
+5. 在 [檔案] 功能表上按一下 [全部儲存]。
 
 6. 在 [ **建置** ] 功能表上，按一下 [ **建置方案**]。
 
@@ -821,7 +820,7 @@ A*文字範本*<em>主機</em>提供的環境，可讓*文字範本轉換引擎*
 
 ## <a name="next-steps"></a>後續步驟
 
-在本逐步解說中，您已經建立支援基本轉換功能的文字範本轉換主應用程式。 您可以擴充這個主應用程式，支援呼叫自訂或產生之指示詞處理器的文字範本。 如需詳細資訊，請參閱 <<c0> [ 逐步解說： 將主機連接至產生的指示詞處理器](../modeling/walkthrough-connecting-a-host-to-a-generated-directive-processor.md)。
+在本逐步解說中，您已經建立支援基本轉換功能的文字範本轉換主應用程式。 您可以擴充這個主應用程式，支援呼叫自訂或產生之指示詞處理器的文字範本。 如需詳細資訊，請參閱[逐步解說：將主機連接至產生的指示詞處理器](../modeling/walkthrough-connecting-a-host-to-a-generated-directive-processor.md)。
 
 ## <a name="see-also"></a>另請參閱
 

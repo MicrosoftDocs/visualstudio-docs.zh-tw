@@ -1,9 +1,6 @@
 ---
 title: IDebugPointerObject::GetBytes |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugPointerObject::GetBytes
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 106472037873045b0b30381e6ce901c89b342bae
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 25e18c189d40234773d9a9c2e219290d5fe9ba96
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49916542"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53890809"
 ---
 # <a name="idebugpointerobjectgetbytes"></a>IDebugPointerObject::GetBytes
 取得指向為一系列的連續位元組的值。  
@@ -28,7 +25,7 @@ ms.locfileid: "49916542"
 ## <a name="syntax"></a>語法  
   
 ```cpp  
-HRESULT GetBytes(   
+HRESULT GetBytes(   
    DWORD  dwStart,  
    DWORD  dwCount,  
    BYTE*  pBytes,  

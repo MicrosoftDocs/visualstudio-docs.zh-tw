@@ -1,9 +1,6 @@
 ---
 title: 通知連接埠 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - ports, notification
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3a45882b1410391843b9e98dcce6e963774c15dd
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9997a9013ef48820d8f2dc4846f787e4042431ec
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49868296"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53964714"
 ---
 # <a name="notify-the-port"></a>通知連接埠
 啟動程式之後, 的連接埠必須會收到通知，，如下所示：  

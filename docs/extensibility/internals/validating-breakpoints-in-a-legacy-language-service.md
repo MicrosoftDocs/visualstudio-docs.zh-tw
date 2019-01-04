@@ -1,9 +1,6 @@
 ---
-title: 驗證舊版語言服務中的中斷點 |Microsoft 文件
-ms.custom: ''
+title: 舊版語言服務中驗證中斷點 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - breakpoint validation
@@ -14,32 +11,32 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 03bf1534789ba24e1bbf597874ea427057073b61
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 37ff40861352759ea01c8ad3cb4cb623ca32a754
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31139366"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53827792"
 ---
-# <a name="validating-breakpoints-in-a-legacy-language-service"></a>驗證舊版語言服務中的中斷點
-中斷點會指出偵錯工具中正在執行時，應該在特定時間點停止執行程式。 使用者可以在原始程式檔中的任一行上放置中斷點，因為編輯器並不知道何者構成中斷點的有效位置。 啟動偵錯工具時，所有標記 （稱為暫止中斷點） 的中斷點繫結至執行中的程式中的適當位置。 在同一時間中斷點驗證，以確保它們標示的有效的程式碼位置。 例如，註解上的中斷點無效，因為在原始程式碼中該位置沒有程式碼。 偵錯工具會停用無效的中斷點。  
+# <a name="validating-breakpoints-in-a-legacy-language-service"></a>在舊版語言服務中驗證中斷點
+中斷點會指出以偵錯工具正在執行時，應該在特定時間點停止程式執行。 使用者可以將中斷點放在原始程式檔，任何行，因為編輯器並不知道什麼可替代中斷點的有效位置。 啟動偵錯工具時，所有標記的中斷點 （稱為暫止中斷點） 繫結至執行中的程式中的適當位置。 在相同的時間驗證中斷點，以確保它們可以將有效的程式碼位置來標示。 例如，註解上的中斷點無效，因為在原始程式碼中該位置沒有程式碼。 偵錯工具會停用無效的中斷點。  
   
- 由於語言服務知道要顯示的原始程式碼，它可以驗證中斷點後，才會啟動偵錯工具。 您可以覆寫<xref:Microsoft.VisualStudio.Package.LanguageService.ValidateBreakpointLocation%2A>方法以傳回指定有效的位置，中斷點的範圍。 仍在啟動偵錯工具時，但不會等待載入偵錯工具通知使用者的無效的中斷點時，會驗證中斷點的位置。  
+ 語言服務知道所顯示的原始程式碼，因為它可以在偵錯工具啟動前驗證中斷點。 您可以覆寫<xref:Microsoft.VisualStudio.Package.LanguageService.ValidateBreakpointLocation%2A>方法來傳回指定中斷點的有效位置的範圍。 仍在啟動偵錯工具時，但是無效的中斷點會通知使用者而不需等待偵錯工具載入時，會驗證中斷點位置。  
   
-## <a name="implementing-support-for-validating-breakpoints"></a>實作支援驗證的中斷點  
+## <a name="implementing-support-for-validating-breakpoints"></a>實作支援的驗證中斷點  
   
--   <xref:Microsoft.VisualStudio.Package.LanguageService.ValidateBreakpointLocation%2A>方法指定之中斷點的位置。 您的實作必須決定位置有效，以及指出這是傳回的程式碼識別的文字範圍相關聯的行位置中斷點。  
+-   <xref:Microsoft.VisualStudio.Package.LanguageService.ValidateBreakpointLocation%2A>方法指定之中斷點的位置。 您的實作必須決定位置有效，以及指出這是傳回識別的程式碼的文字範圍相關聯的行位置中斷點。  
   
--   傳回<xref:Microsoft.VisualStudio.VSConstants.S_OK>位置是否有效，或<xref:Microsoft.VisualStudio.VSConstants.S_FALSE>如果不正確。  
+-   傳回<xref:Microsoft.VisualStudio.VSConstants.S_OK>位置是否有效，或<xref:Microsoft.VisualStudio.VSConstants.S_FALSE>如果不是有效。  
   
 -   如果中斷點是有效的文字範圍會反白顯示中斷點以及。  
   
--   如果中斷點是無效的則會在 [狀態] 列中出現錯誤訊息。  
+-   如果中斷點是無效的則會在狀態列中出現錯誤訊息。  
   
 ### <a name="example"></a>範例  
- 這個範例會示範實作<xref:Microsoft.VisualStudio.Package.LanguageService.ValidateBreakpointLocation%2A>呼叫以取得程式碼的範圍 （如果有的話） 剖析器的指定位置的方法。  
+ 此範例示範如何實作<xref:Microsoft.VisualStudio.Package.LanguageService.ValidateBreakpointLocation%2A>方法呼叫的剖析器來取得程式碼的範圍 （如果有的話），在指定的位置。  
   
- 這個範例假設您已經加入`GetCodeSpan`方法<xref:Microsoft.VisualStudio.Package.AuthoringSink>類別，會驗證文字範圍，並傳回`true`如果它是有效的中斷點位置。  
+ 這個範例假設您已新增`GetCodeSpan`方法，以<xref:Microsoft.VisualStudio.Package.AuthoringSink>類別，會驗證文字範圍，並傳回`true`如果它是有效的中斷點位置。  
   
 ```csharp  
 using Microsoft VisualStudio;  

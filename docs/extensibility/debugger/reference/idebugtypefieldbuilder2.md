@@ -1,9 +1,6 @@
 ---
-title: IDebugTypeFieldBuilder2 |Microsoft 文件
-ms.custom: ''
+title: IDebugTypeFieldBuilder2 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - IDebugTypeFieldBuilder2 interface
@@ -13,15 +10,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4500f8e44a3008655d9a4068b96ce2cfcdbc2ac5
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ed8304203b7145861797732be98c7ba9e22ef6af
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31119412"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53898605"
 ---
 # <a name="idebugtypefieldbuilder2"></a>IDebugTypeFieldBuilder2
-擴充**IDebugTypeFieldBuilder**能夠建立陣列類型。  
+擴充**IDebugTypeFieldBuilder**能夠建立陣列的型別。  
   
 ## <a name="syntax"></a>語法  
   
@@ -33,15 +30,15 @@ IDebugTypeFieldBuilder2 : IDebugTypeFieldBuilder
  這個介面可以取自符號提供者。  
   
 ## <a name="methods"></a>方法  
- 除了上[IDebugTypeFieldBuilder](../../../extensibility/debugger/reference/idebugtypefieldbuilder.md)介面，這個介面會實作下列方法：  
+ 上的方法除了[IDebugTypeFieldBuilder](../../../extensibility/debugger/reference/idebugtypefieldbuilder.md)介面，這個介面會實作下列方法：  
   
 |方法|描述|  
 |------------|-----------------|  
 |[CreateArrayOfType](../../../extensibility/debugger/reference/idebugtypefieldbuilder2-createarrayoftype.md)|建立指定的類型和大小的陣列。|  
   
 ## <a name="requirements"></a>需求  
- 標頭： Sh.h  
+ Header:Sh.h  
   
- 命名空間： Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間:Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
+ 組件：Microsoft.VisualStudio.Debugger.Interop.dll

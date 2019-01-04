@@ -1,9 +1,6 @@
 ---
-title: SccGetVersion 函式 |Microsoft 文件
-ms.custom: ''
+title: SccGetVersion 函式 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - SccGetVersion
@@ -15,15 +12,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 70beb89f13d2f752f3adb0f25e2b370fa272171a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b997f3724dc3d1bb0f9155f3b575fef3ce9f2802
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31136441"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53879623"
 ---
 # <a name="sccgetversion-function"></a>SccGetVersion 函式
-此函式可取得原始檔控制外掛程式 API 支援原始檔控制外掛程式的版本號碼。  
+此函式取得支援原始檔控制外掛程式的原始檔控制外掛程式 API 的版本號碼。  
   
 ## <a name="syntax"></a>語法  
   
@@ -35,7 +32,7 @@ LONG SccGetVersion(void);
  無。  
   
 ## <a name="return-value"></a>傳回值  
- A`LONG`包含支援的原始檔控制外掛程式 API 的版本號碼的資料類型：  
+ A`LONG`資料類型，包含支援的原始檔控制外掛程式 API 的版本號碼：  
   
 |WORD|描述|  
 |----------|-----------------|  
@@ -43,7 +40,7 @@ LONG SccGetVersion(void);
 |取代 LOWORD|次要版本|  
   
 ## <a name="remarks"></a>備註  
- 例如，如果原始檔控制外掛程式支援 1.3 版的原始檔控制外掛程式 API，此函式會傳回 0x0103。  
+ 例如，如果原始檔控制外掛程式支援版本 1.3 的原始檔控制外掛程式 API，此函式會傳回 0x0103。  
   
 ## <a name="see-also"></a>另請參閱  
  [原始檔控制外掛程式 API 函式](../extensibility/source-control-plug-in-api-functions.md)

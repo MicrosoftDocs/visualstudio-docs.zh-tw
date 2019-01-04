@@ -1,21 +1,20 @@
 ---
-title: 工作流程設計工具-如何： 定義並取用活動委派
+title: 工作流程設計工具-如何：定義並取用活動委派
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 ms.assetid: c68e42ad-3ec0-4c2d-b104-fe36c6d83b5e
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 32546f551972cf97779e0828d8c47c9c892d39bf
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 95aede6217bca263be7edd7440cc5e9bb23e25ab
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49916352"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53908458"
 ---
 # <a name="how-to-define-and-consume-activity-delegates-in-the-workflow-designer"></a>HOW TO：定義並取用工作流程設計工具中的活動委派
 
@@ -23,7 +22,7 @@ ms.locfileid: "49916352"
 
 ## <a name="define-an-activity-delegate"></a>定義活動委派
 
-1. 在 Visual Studio 中，選取**檔案** > **新增** > **專案**。
+1. 在 Visual Studio 中，選取 [檔案] > [新增] > [專案]。
 
 2. 在**新的專案**對話方塊中，選取**工作流程**左側的類別目錄，然後選取**工作流程主控台應用程式**專案範本。 （如有需要） 的專案命名，然後按一下**Ok**。
 

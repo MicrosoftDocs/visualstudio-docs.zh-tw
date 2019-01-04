@@ -1,9 +1,6 @@
 ---
 title: IDebugEngineProgram2::WatchForThreadStep |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugEngineProgram2::WatchForThreadStep
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 17be4d47db15a80b2560d71f747e5b93b7e17474
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 865cc4ad42bc030592e8b06c7ebcf3147cc8c93d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49868335"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53925767"
 ---
 # <a name="idebugengineprogram2watchforthreadstep"></a>IDebugEngineProgram2::WatchForThreadStep
 監看的執行 （或停止執行監看） 指定的執行緒上發生。  
@@ -28,7 +25,7 @@ ms.locfileid: "49868335"
 ## <a name="syntax"></a>語法  
   
 ```cpp  
-HRESULT WatchForThreadStep(   
+HRESULT WatchForThreadStep(   
    IDebugProgram2* pOriginatingProgram,  
    DWORD           dwTid,  
    BOOL            fWatch,  
@@ -37,7 +34,7 @@ HRESULT WatchForThreadStep(
 ```  
   
 ```csharp  
-int WatchForThreadStep(   
+int WatchForThreadStep(   
    IDebugProgram2 pOriginatingProgram,  
    uint           dwTid,  
    int            fWatch,  

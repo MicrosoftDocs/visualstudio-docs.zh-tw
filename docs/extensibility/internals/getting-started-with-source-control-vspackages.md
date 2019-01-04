@@ -1,9 +1,6 @@
 ---
 title: 開始使用原始檔控制 Vspackage |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - source control packages, getting started
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a98edacd71132e9290cb339f3b3741a0afc25888
-ms.sourcegitcommit: e7b3fc8c788fb49d6ba4215abf27139f2a08e1a1
+ms.openlocfilehash: ca665aa59f7e7595be08084d0a1073416dbd9954
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48120432"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53849722"
 ---
 # <a name="get-started-with-source-control-vspackages"></a>開始使用原始檔控制 Vspackage
 原始檔控制 VSPackage 是更進階的替代方案，以原始檔控制外掛程式。 如需原始檔控制外掛程式的詳細資訊，請參閱[建立原始檔控制外掛程式](../../extensibility/internals/creating-a-source-control-plug-in.md)。 原始檔控制 VSPackage 可讓原始檔控制模型、 功能和使用者介面 (UI) 的完整控制權，且它整合至[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]為 VSPackage 的環境。  

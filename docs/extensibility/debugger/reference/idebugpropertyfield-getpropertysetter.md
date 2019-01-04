@@ -1,9 +1,6 @@
 ---
 title: IDebugPropertyField::GetPropertySetter |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugPropertyField::GetPropertySetter
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e193ae70de88606d68861ccb9eb20d6926d18241
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7bf68cd07a2952d421010a75255b1e6261a2220e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49905788"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53907744"
 ---
 # <a name="idebugpropertyfieldgetpropertysetter"></a>IDebugPropertyField::GetPropertySetter
 取得設定屬性的方法。  
@@ -28,7 +25,7 @@ ms.locfileid: "49905788"
 ## <a name="syntax"></a>語法  
   
 ```cpp  
-HRESULT GetPropertySetter(   
+HRESULT GetPropertySetter(   
    IDebugMethodField** ppField  
 );  
 ```  

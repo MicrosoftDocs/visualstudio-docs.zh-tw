@@ -1,9 +1,6 @@
 ---
 title: 適用於 Visual Studio 的通用控制項模式 |Microsoft Docs
-ms.custom: ''
 ms.date: 04/26/2017
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 3e893949-6398-42f1-9eab-a8d8c2b7f02d
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e10fdcea9819c34735f285c78a0e2ebb0650f64a
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 5c281aa989abc32e4287e49d05af03b198adc013
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512313"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53832631"
 ---
 # <a name="common-control-patterns-for-visual-studio"></a>適用於 Visual Studio 的通用控制項模式
 ##  <a name="BKMK_CommonControls"></a> 通用控制項  
@@ -69,7 +66,7 @@ ms.locfileid: "39512313"
   
 -   所需欄位應有**\<需要 >** 做為其中的標準。 您不應該變更除了在少數情況下的背景色彩。  
   
--   驗證錯誤： 請參閱[通知和適用於 Visual Studio 的進度](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md)  
+-   錯誤驗證：請參閱[通知和適用於 Visual Studio 的進度](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md)  
   
 -   輸入的欄位都應該調整大小以符合內容，不以符合在其中，它們會顯示，視窗的寬度，也不能以任意符合長的欄位，例如路徑的長度。 長度可能是向使用者表示的欄位中允許多少個字元的限制。  
   
@@ -255,7 +252,7 @@ ms.locfileid: "39512313"
   
 ### <a name="common-buttons"></a>一般按鈕  
   
-#### <a name="text"></a>Text  
+#### <a name="text"></a>文字  
 請依照下列中的撰寫指導方針[UI 文字和術語](../../extensibility/ux-guidelines/ui-text-and-help-for-visual-studio.md#BKMK_UITextAndTerminology)。  
   
 #### <a name="visual-style"></a>視覺化樣式  
@@ -301,9 +298,9 @@ ms.locfileid: "39512313"
   
 > **注意：** 使用者需要這些按鈕 （沒有存取金鑰） 索引標籤，因此將它們放在合理的順序。 對應`name`花費，讓螢幕助讀程式正確地解譯按鈕動作的動作按鈕的屬性。  
   
-| 功能 | 按鈕 |  
+| 函式 | 按鈕 |  
 | --- | --- |  
-| 新增 | ![圖形的 [新增] 按鈕](../../extensibility/ux-guidelines/media/070703-08_buttonadd.png "070703 08_ButtonAdd") |
+| 加入 | ![圖形的 [新增] 按鈕](../../extensibility/ux-guidelines/media/070703-08_buttonadd.png "070703 08_ButtonAdd") |
 | 移除 | ![圖形的 [移除] 按鈕](../../extensibility/ux-guidelines/media/070703-09_buttonremove.png "070703 09_ButtonRemove") |
 | 全部加入 | ![圖形 [全部加入] 按鈕](../../extensibility/ux-guidelines/media/070703-10_buttonaddall.png "070703 10_ButtonAddAll") |
 | 全部移除 | ![圖形 [全部移除] 按鈕](../../extensibility/ux-guidelines/media/070703-11_buttonremoveall.png "070703 11_ButtonRemoveAll") |
@@ -373,21 +370,21 @@ Visual Studio 樹狀目錄控制項應該遵循一般的鍵盤瀏覽：
   
 -   **向上箭號：** 樹狀結構中向上移動選取項目  
   
--   **向下箭號：** 樹狀結構下移動選取項目  
+-   **向下箭號：** 藉由移動樹狀結構下的選取項目  
   
--   **向右箭號：** 展開樹狀結構中的節點  
+-   **向右箭頭：** 展開樹狀結構中的節點  
   
 -   **向左箭號：** 摺疊樹狀結構中的節點  
   
--   **輸入金鑰：** 啟始、 載入、 執行選取的項目  
+-   **輸入金鑰：** 起始、 載入、 執行選取的項目  
   
 ##### <a name="trid-tree-view-and-grid-view"></a>Trid （樹狀檢視和格線檢視）  
 Trid 控制項是複雜的控制項，其中包含 grid 內的樹狀檢視。 展開、 摺疊，並瀏覽樹狀目錄中應該遵守相同的鍵盤命令，以樹狀檢視，具有下列功能：  
   
--   **向右箭號：** 展開節點。 節點已展開之後，則應繼續瀏覽至最接近的資料行右側。 瀏覽應該停止的資料列結尾。  
+-   **向右箭頭：** 展開節點。 節點已展開之後，則應繼續瀏覽至最接近的資料行右側。 瀏覽應該停止的資料列結尾。  
   
--   **索引標籤：** Navigates 到最接近的儲存格右邊。  在資料列的結束時，瀏覽會繼續下一個資料列。  
+-   **索引標籤：** 瀏覽至最接近的儲存格右邊。  在資料列的結束時，瀏覽會繼續下一個資料列。  
   
--   **Shift + Tab:** Navigates 到最接近的資料格左邊。  開頭的資料列時，瀏覽會繼續在先前的資料列中最右邊的儲存格。  
+-   **Shift + 索引標籤：** 瀏覽至最接近的資料格左邊。  開頭的資料列時，瀏覽會繼續在先前的資料列中最右邊的儲存格。  
   
 ![在 Visual Studio 中的 trid 控制項](../../extensibility/ux-guidelines/media/070705-6_trid.png "070705 6_Trid")<br />在 Visual Studio 中的 trid 控制項

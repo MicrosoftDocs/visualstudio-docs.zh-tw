@@ -1,9 +1,6 @@
 ---
-title: 如何： 擷取 SharePoint 專案服務 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：擷取 SharePoint 專案服務 |Microsoft Docs
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,14 +12,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e8f9faa0ca539c3b5381aca4159cc4653543087a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: dfd18de91848c8aabbdabc91fd37763418bb938a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49880594"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53891598"
 ---
-# <a name="how-to-retrieve-the-sharepoint-project-service"></a>如何： 擷取 SharePoint 專案服務
+# <a name="how-to-retrieve-the-sharepoint-project-service"></a>HOW TO：擷取 SharePoint 專案服務
   您可以存取 SharePoint 專案服務，在下列幾種解決方案：  
   
 -   SharePoint 專案系統，例如專案延伸模組、 專案項目擴充功能或專案項目類型定義的延伸模組。 如需這些類型的擴充功能的詳細資訊，請參閱[擴充 SharePoint 專案系統](../sharepoint/extending-the-sharepoint-project-system.md)。  
@@ -47,7 +44,7 @@ ms.locfileid: "49880594"
      [!code-vb[SPExtensibility.ProjectService.FromProjectSystemExtensions#1](../sharepoint/codesnippet/VisualBasic/spextensibility.projectservice.fromprojectsystemextensions.getprojectservice/extension/extension.vb#1)]
      [!code-csharp[SPExtensibility.ProjectService.FromProjectSystemExtensions#1](../sharepoint/codesnippet/CSharp/spextensibility.projectservice.fromprojectsystemextensions.getprojectservice/extension/extension.cs#1)]  
   
-     如需建立專案擴充功能的詳細資訊，請參閱[如何： 建立 SharePoint 專案擴充功能](../sharepoint/how-to-create-a-sharepoint-project-extension.md)。  
+     如需建立專案擴充功能的詳細資訊，請參閱[How to:建立 SharePoint 專案擴充功能](../sharepoint/how-to-create-a-sharepoint-project-extension.md)。  
   
 #### <a name="to-retrieve-the-service-in-a-project-item-extension"></a>若要擷取的專案項目延伸模組中的服務  
   
@@ -60,7 +57,7 @@ ms.locfileid: "49880594"
      [!code-vb[SPExtensibility.ProjectService.FromProjectSystemExtensions#2](../sharepoint/codesnippet/VisualBasic/spextensibility.projectservice.fromprojectsystemextensions.getprojectservice/extension/extension.vb#2)]
      [!code-csharp[SPExtensibility.ProjectService.FromProjectSystemExtensions#2](../sharepoint/codesnippet/CSharp/spextensibility.projectservice.fromprojectsystemextensions.getprojectservice/extension/extension.cs#2)]  
   
-     如需建立專案項目擴充功能的詳細資訊，請參閱 <<c0> [ 如何： 建立 SharePoint 專案項目擴充功能](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md)。  
+     如需建立專案項目擴充功能的詳細資訊，請參閱[How to:建立 SharePoint 專案項目擴充功能](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md)。  
   
 #### <a name="to-retrieve-the-service-in-a-project-item-type-definition"></a>若要擷取的專案項目類型定義中的服務  
   
@@ -73,7 +70,7 @@ ms.locfileid: "49880594"
      [!code-vb[SPExtensibility.ProjectService.FromProjectSystemExtensions#3](../sharepoint/codesnippet/VisualBasic/spextensibility.projectservice.fromprojectsystemextensions.getprojectservice/extension/extension.vb#3)]
      [!code-csharp[SPExtensibility.ProjectService.FromProjectSystemExtensions#3](../sharepoint/codesnippet/CSharp/spextensibility.projectservice.fromprojectsystemextensions.getprojectservice/extension/extension.cs#3)]  
   
-     如需有關如何定義專案項目類型的詳細資訊，請參閱 <<c0> [ 如何： 定義 SharePoint 專案項目類型](../sharepoint/how-to-define-a-sharepoint-project-item-type.md)。  
+     如需有關如何定義專案項目類型的詳細資訊，請參閱[How to:定義 SharePoint 專案項目類型](../sharepoint/how-to-define-a-sharepoint-project-item-type.md)。  
   
 ## <a name="retrieve-the-service-in-server-explorer-extensions"></a>擷取在伺服器總管延伸模組中的服務  
  中的延伸模組**SharePoint 連線**中的節點**伺服器總管**，您可以使用，以存取專案服務<xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNode.ServiceProvider%2A>屬性<xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNode>物件。  
@@ -89,14 +86,14 @@ ms.locfileid: "49880594"
      [!code-vb[SPExtensibility.ProjectService.FromSPExplorerExtensions#1](../sharepoint/codesnippet/VisualBasic/spextensibility.projectservice.fromspexplorerextensions.getprojectservice/extension/extension.vb#1)]
      [!code-csharp[SPExtensibility.ProjectService.FromSPExplorerExtensions#1](../sharepoint/codesnippet/CSharp/spextensibility.projectservice.fromspexplorerextensions.getprojectservice/extension/extension.cs#1)]  
   
-     如需有關擴充**SharePoint 連線**中的節點**伺服器總管**，請參閱[如何： 擴充 SharePoint 節點在 伺服器總管](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md)。  
+     如需有關擴充**SharePoint 連線**中的節點**伺服器總管**，請參閱[How to:擴充 SharePoint 節點在 伺服器總管](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md)。  
   
 ## <a name="retrieve-the-service-in-other-visual-studio-extensions"></a>擷取其他 Visual Studio 擴充功能中的服務  
  您可以擷取專案服務在 VSPackage 中，或可存取任何 Visual Studio 擴充功能<xref:EnvDTE80.DTE2>自動化物件模型，例如實作專案範本精靈 中的物件<xref:Microsoft.VisualStudio.TemplateWizard.IWizard>介面。  
   
  在 VSPackage 中，您可以要求<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService>物件使用下列方法之一：  
   
-- <xref:System.IServiceProvider.GetService%2A>方法的 managed VSPackage，衍生自<xref:Microsoft.VisualStudio.Shell.Package>類別。 如需詳細資訊，請參閱 <<c0> [ 如何： 取得服務](../extensibility/how-to-get-a-service.md)。  
+- <xref:System.IServiceProvider.GetService%2A>方法的 managed VSPackage，衍生自<xref:Microsoft.VisualStudio.Shell.Package>類別。 如需詳細資訊，請參閱[＜How to：取得服務](../extensibility/how-to-get-a-service.md)。  
   
 - 靜態<xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A>方法。 如需詳細資訊，請參閱 <<c0> [ 使用 GetGlobalService](../extensibility/internals/service-essentials.md#how-to-use-getglobalservice)。  
   
@@ -104,6 +101,5 @@ ms.locfileid: "49880594"
   
 ## <a name="see-also"></a>另請參閱
  [使用 SharePoint 專案服務](../sharepoint/using-the-sharepoint-project-service.md)   
- [如何： 取得服務](../extensibility/how-to-get-a-service.md)   
- [如何： 搭配專案範本使用精靈](../extensibility/how-to-use-wizards-with-project-templates.md)  
-  
+ [如何：取得服務](../extensibility/how-to-get-a-service.md)   
+ [如何：使用精靈與專案範本](../extensibility/how-to-use-wizards-with-project-templates.md)  

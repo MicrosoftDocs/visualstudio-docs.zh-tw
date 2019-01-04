@@ -1,9 +1,6 @@
 ---
-title: IDebugOutputStringEvent2 |Microsoft 文件
-ms.custom: ''
+title: IDebugOutputStringEvent2 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugOutputStringEvent2
@@ -15,15 +12,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ac8a2072d801936d8035d5479c7d234082639818
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a5257cea7ffd23a36460bfcab5bba72ff6835402
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31117117"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53889802"
 ---
 # <a name="idebugoutputstringevent2"></a>IDebugOutputStringEvent2
-這個介面是由傳送偵錯引擎 (DE) 工作階段的偵錯管理員 (SDM) 來輸出字串。  
+這個介面是由偵錯引擎 (DE) 中，工作階段的偵錯管理員 (SDM) 傳送至輸出字串。  
   
 ## <a name="syntax"></a>語法  
   
@@ -31,11 +28,11 @@ ms.locfileid: "31117117"
 IDebugOutputStringEvent2 : IUnknown  
 ```  
   
-## <a name="notes-for-implementers"></a>實作者注意事項  
- DE 實作這個介面來傳送字串至**輸出**在 IDE 的視窗。 [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)介面必須實作此介面為相同的物件。 SDM 使用[QueryInterface](/cpp/atl/queryinterface)存取`IDebugEvent2`介面。  
+## <a name="notes-for-implementers"></a>實作者的附註  
+ DE 實作此介面傳送字串至**輸出**在 IDE 的視窗。 [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)介面必須實作此介面的相同物件上。 使用 SDM [QueryInterface](/cpp/atl/queryinterface)若要存取`IDebugEvent2`介面。  
   
 ## <a name="notes-for-callers"></a>呼叫端資訊  
- DE 建立，並將此事件的物件傳送至字串傳送**輸出**視窗。 事件會使用傳送[IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)附加至正在進行偵錯程式時，會將 SDM 所提供的回呼函式。  
+ DE 會建立並傳送這個事件来傳送物件的字串**輸出**視窗。 事件會使用傳送[IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)附加至正在進行偵錯程式時，會將 SDM 所提供的回呼函式。  
   
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法  
  下表顯示的方法`IDebugOutputStringEvent2`。  
@@ -45,18 +42,18 @@ IDebugOutputStringEvent2 : IUnknown
 |[GetString](../../../extensibility/debugger/reference/idebugoutputstringevent2-getstring.md)|取得可顯示的訊息。|  
   
 ## <a name="remarks"></a>備註  
- 比方說，在 unmanaged 程式碼，來輸出字串就可能產生當程式偵錯時將字串傳送至 Win32`OutputDebugString`函式。 這個字串是 DE 遭到攔截，傳送至為 SDM`IDebugOutputStringEvent2`事件。  
+ 比方說，在 unmanaged 程式碼，來輸出字串產生時進行偵錯的程式會傳送字串至 Win32`OutputDebugString`函式。 此字串是 DE 遭到攔截，傳送至為 SDM`IDebugOutputStringEvent2`事件。  
   
- 使用[IDebugMessageEvent2](../../../extensibility/debugger/reference/idebugmessageevent2.md)需要使用者回應將訊息傳送。  
+ 使用[IDebugMessageEvent2](../../../extensibility/debugger/reference/idebugmessageevent2.md)傳送需要使用者回應的訊息。  
   
  使用[IDebugErrorEvent2](../../../extensibility/debugger/reference/idebugerrorevent2.md)傳送錯誤訊息，不需要回應。  
   
 ## <a name="requirements"></a>需求  
  標頭： msdbg.h  
   
- 命名空間： Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間:Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugMessageEvent2](../../../extensibility/debugger/reference/idebugmessageevent2.md)   

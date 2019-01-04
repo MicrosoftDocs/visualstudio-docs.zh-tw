@@ -8,13 +8,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: c5770cc071e8d981b3410db6165b5bf1ed6ef350
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ca8c5bf20b7559a6dabd1b17e0f3b6256d5e5a98
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49834002"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53884467"
 ---
 # <a name="api-reference-for-t4-text-templates"></a>T4 文字範本 API 參考
 

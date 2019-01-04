@@ -1,13 +1,8 @@
 ---
 title: 設計商務資料連接模型 |Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -18,18 +13,18 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 27b83cefdaa24e5a439352318aa149ec4e24d09d
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 97172f0b3a03d015c087a58077696ceff2b4369d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36327238"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53858379"
 ---
 # <a name="design-a-business-data-connectivity-model"></a>設計商務資料連接模型
   您可以藉由將模型檔案中的實體和方法來開發商務資料連接 (BDC) 服務的模型。 實體描述資料欄位的集合。 例如，實體可以代表資料庫中的資料表。 方法會執行的工作，例如加入、 刪除或更新實體將代表的資料。 如需詳細資訊，請參閱 <<c0> [ 將商務資料整合到 SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)。  
   
 ## <a name="add-entities"></a>新增實體
- 您可以將實體拖曳或複製**實體**從 Visual Studio**工具箱**在 BDC 設計工具上。 如需詳細資訊，請參閱 <<c0> [ 如何： 將實體新增至模型](../sharepoint/how-to-add-an-entity-to-a-model.md)。  
+ 您可以將實體拖曳或複製**實體**從 Visual Studio**工具箱**在 BDC 設計工具上。 如需詳細資訊，請參閱[＜How to：將實體新增至模型](../sharepoint/how-to-add-an-entity-to-a-model.md)。  
   
  在類別中定義之實體的欄位。 例如，您可以在其中加入名為的欄位`Address`至`Customer`類別。 您可以將新類別加入專案，或使用現有的類別使用物件關聯式設計工具 （O/R 設計工具） 等其他工具所建立。 實體的名稱和類別表示實體的名稱不必符合。 您在模型中定義的方法類別相關的實體。  
   
@@ -38,28 +33,28 @@ ms.locfileid: "36327238"
   
 |方法|描述|  
 |------------|-----------------|  
-|搜尋工具|傳回實體執行個體的集合。 當使用者開啟清單或 Web 組件時呼叫。 如需詳細資訊，請參閱 <<c0> [ 如何： 新增搜尋方法](../sharepoint/how-to-add-a-finder-method.md)。|  
-|特定搜尋|傳回特定實體的執行個體。 當使用者在清單中檢視特定項目的詳細資料時呼叫。 如需詳細資訊，請參閱 <<c0> [ 如何： 加入特定搜尋方法](../sharepoint/how-to-add-a-specific-finder-method.md)。|  
-|建立者|將新資料加入至資料來源的實體。 當使用者選擇時，呼叫**新的項目**清單是以模型為基礎的功能區上的按鈕。 如需詳細資訊，請參閱 <<c0> [ 如何： 新增建立者方法](../sharepoint/how-to-add-a-creator-method.md)。|  
-|更新者|修改清單中的資料。 當使用者更新清單中的資訊時呼叫。 如需詳細資訊，請參閱 <<c0> [ 如何： 加入更新者方法](../sharepoint/how-to-add-an-updater-method.md)。|  
-|刪除者|移除資料。 當使用者從清單中刪除項目時呼叫。 如需詳細資訊，請參閱 <<c0> [ 如何： 加入刪除者方法](../sharepoint/how-to-add-a-deleter-method.md)。|  
+|搜尋工具|傳回實體執行個體的集合。 當使用者開啟清單或 Web 組件時呼叫。 如需詳細資訊，請參閱[＜How to：新增搜尋方法](../sharepoint/how-to-add-a-finder-method.md)。|  
+|特定搜尋|傳回特定實體的執行個體。 當使用者在清單中檢視特定項目的詳細資料時呼叫。 如需詳細資訊，請參閱[＜How to：新增特定搜尋方法](../sharepoint/how-to-add-a-specific-finder-method.md)。|  
+|建立者|將新資料加入至資料來源的實體。 當使用者選擇時，呼叫**新的項目**清單是以模型為基礎的功能區上的按鈕。 如需詳細資訊，請參閱[＜How to：新增建立者方法](../sharepoint/how-to-add-a-creator-method.md)。|  
+|更新者|修改清單中的資料。 當使用者更新清單中的資訊時呼叫。 如需詳細資訊，請參閱[＜How to：新增更新者方法](../sharepoint/how-to-add-an-updater-method.md)。|  
+|刪除者|移除資料。 當使用者從清單中刪除項目時呼叫。 如需詳細資訊，請參閱[＜How to：新增刪除者方法](../sharepoint/how-to-add-a-deleter-method.md)。|  
   
 ## <a name="define-method-parameters"></a>定義方法的參數
- 當您建立一種方法時，Visual Studio 會新增適用於方法類型的輸入和輸出參數。 這些參數會只是預留位置。 在大部分情況下，您必須修改參數，讓它們在傳遞或傳回正確的資料類型。 例如，根據預設，搜尋工具方法會傳回字串。 在大部分情況下，您會想要修改搜尋方法的傳回參數，使它傳回之實體的集合。 您可以藉由修改參數的型別描述項來達到此目的。 型別描述項是描述參數的資料類型的屬性集合。 如需詳細資訊，請參閱 <<c0> [ 如何： 定義參數的型別描述元](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)。  
+ 當您建立一種方法時，Visual Studio 會新增適用於方法類型的輸入和輸出參數。 這些參數會只是預留位置。 在大部分情況下，您必須修改參數，讓它們在傳遞或傳回正確的資料類型。 例如，根據預設，搜尋工具方法會傳回字串。 在大部分情況下，您會想要修改搜尋方法的傳回參數，使它傳回之實體的集合。 您可以藉由修改參數的型別描述項來達到此目的。 型別描述項是描述參數的資料類型的屬性集合。 如需詳細資訊，請參閱[＜How to：定義參數的型別描述元](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)。  
   
  Visual Studio 可讓您複製模型中的參數之間的型別描述項。 例如，您可能會定義名為的型別描述元`CustomerTD`的傳回參數`GetCustomer`方法。 您可以複製`CustomerTD`型別描述項中的**BDC 總管**，然後貼上的輸入參數的類型描述元`CreateCustomer`方法。 這會防止您不必一次以上定義相同的型別描述項。  
   
 ## <a name="method-instances"></a>方法執行個體
- 當您建立一種方法時，Visual Studio 會新增預設方法執行個體。 方法執行個體是方法，再加上參數的預設值的參考。 單一方法可以有多個方法的執行個體。 方法簽章的組合和一組預設值的每個執行個體。 如需詳細資訊，請參閱 <<c0> [ 如何： 定義參數的型別描述元](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)。  
+ 當您建立一種方法時，Visual Studio 會新增預設方法執行個體。 方法執行個體是方法，再加上參數的預設值的參考。 單一方法可以有多個方法的執行個體。 方法簽章的組合和一組預設值的每個執行個體。 如需詳細資訊，請參閱[＜How to：定義參數的型別描述元](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)。  
   
  當您執行專案時，方法執行個體出現在 SharePoint 清單上方的下拉式清單。 使用者可以選擇以檢視資料的方法執行個體。  
   
  若要加入方法執行個體的預設值，您不必直接修改模型的 XML。 如需詳細資訊，請參閱 < [DefaultValue](http://go.microsoft.com/fwlink/?LinkID=169279)。  
   
 ## <a name="add-filter-descriptors"></a>加入篩選描述元
- 模型的取用者可能會想要擷取符合某些準則之實體的執行個體。 若要啟用這項功能，您可以將篩選描述元新增至方法。 篩選描述元，讓模型以篩選方法的結果集之前執行，將值傳遞至方法的取用者。 如需詳細資訊，請參閱 <<c0> [ 如何： 將篩選參數加入至作業，以限制的執行個體從外部系統](http://go.microsoft.com/fwlink/?LinkID=169267)。  
+ 模型的取用者可能會想要擷取符合某些準則之實體的執行個體。 若要啟用這項功能，您可以將篩選描述元新增至方法。 篩選描述元，讓模型以篩選方法的結果集之前執行，將值傳遞至方法的取用者。 如需詳細資訊，請參閱[＜How to：將篩選參數新增至作業，以限制從外部系統的執行個體](http://go.microsoft.com/fwlink/?LinkID=169267)。  
   
- SharePoint 提供數個功能，讓使用者能夠提供篩選值。 例如，商務資料 Web 組件會提供 [篩選] 文字方塊。 使用者可以在文字方塊中輸入值來限制清單中的資料。 如需如何將篩選描述元加入至方法的詳細資訊，請參閱[如何： 將篩選描述元加入至搜尋方法](../sharepoint/how-to-add-a-filter-descriptor-to-a-finder-method.md)。  
+ SharePoint 提供數個功能，讓使用者能夠提供篩選值。 例如，商務資料 Web 組件會提供 [篩選] 文字方塊。 使用者可以在文字方塊中輸入值來限制清單中的資料。 如需如何將篩選描述元加入至方法的詳細資訊，請參閱[How to:將篩選描述元加入至搜尋方法](../sharepoint/how-to-add-a-filter-descriptor-to-a-finder-method.md)。  
   
 ### <a name="filter-descriptor-properties"></a>篩選描述元屬性
  您必須設定的值**相關聯的型別描述項**，**名稱**，並**型別**篩選描述元的屬性。 所有其他屬性是選擇性的。  
@@ -71,7 +66,7 @@ ms.locfileid: "36327238"
  如需有關的篩選描述元屬性的詳細資訊，請參閱[FilterDescriptor](http://go.microsoft.com/fwlink/?LinkID=169280)。  
   
 ### <a name="provide-default-values"></a>提供預設值
- 在某些情況下，使用者可能不會提供篩選值。 加入方法執行個體的預設值或方法的程式碼中設定的預設值，您可以提供預設值。 如需如何將預設值新增至方法的執行個體的詳細資訊，請參閱[MethodInstance](http://go.microsoft.com/fwlink/?LinkID=169282)。 如需如何設定您的方法的程式碼中的輸入參數的預設值的範例，請參閱 <<c0> [ 如何： 將篩選描述元加入至搜尋方法](../sharepoint/how-to-add-a-filter-descriptor-to-a-finder-method.md)。  
+ 在某些情況下，使用者可能不會提供篩選值。 加入方法執行個體的預設值或方法的程式碼中設定的預設值，您可以提供預設值。 如需如何將預設值新增至方法的執行個體的詳細資訊，請參閱[MethodInstance](http://go.microsoft.com/fwlink/?LinkID=169282)。 如需如何設定您的方法的程式碼中的輸入參數的預設值的範例，請參閱[How to:將篩選描述元加入至搜尋方法](../sharepoint/how-to-add-a-filter-descriptor-to-a-finder-method.md)。  
   
 ## <a name="validate-the-model"></a>驗證模型
  您可以在開發期間驗證您的模型。 Visual Studio 識別問題會妨礙您的模型如預期般運作。 這些問題出現在 Visual Studio**錯誤清單**。  
@@ -83,16 +78,16 @@ ms.locfileid: "36327238"
 ## <a name="debug-the-solution-that-contains-the-model"></a>包含模型的方案進行偵錯
  當您將偵錯在 Visual Studio 中的任何程式碼，您可以偵錯您的程式碼。 若要偵錯程式碼，程式碼中的任何位置設定中斷點，然後啟動偵錯工具。 Visual Studio 會開啟 SharePoint 網站。 在 SharePoint 中，以建立清單或使用您的商務資料的 Web 組件。 然後，您可以逐步執行程式碼。 如需有關偵錯 SharePoint 專案的詳細資訊，請參閱 <<c0> [ 疑難排解 SharePoint 方案](../sharepoint/troubleshooting-sharepoint-solutions.md)。  
   
- 您也可以偵錯自訂組件加入至專案中的程式碼。 不過，偵錯自訂組件中的程式碼，您必須將組件新增至方案套件。 如需詳細資訊，請參閱 <<c0> [ 如何： 新增和移除其他組件](../sharepoint/how-to-add-and-remove-additional-assemblies.md)。  
+ 您也可以偵錯自訂組件加入至專案中的程式碼。 不過，偵錯自訂組件中的程式碼，您必須將組件新增至方案套件。 如需詳細資訊，請參閱[＜How to：新增和移除其他組件](../sharepoint/how-to-add-and-remove-additional-assemblies.md)。  
   
- 如需有關如何將自訂組件新增至您專案的詳細資訊，請參閱 <<c0> [ 如何： 在 BDC 功能中包含自訂組件](../sharepoint/how-to-include-a-custom-assembly-in-a-bdc-feature.md)。  
+ 如需有關如何將自訂組件新增至您專案的詳細資訊，請參閱[How to:在 BDC 功能中包含自訂組件](../sharepoint/how-to-include-a-custom-assembly-in-a-bdc-feature.md)。  
   
 ### <a name="configure-bdc-security"></a>設定 BDC 安全性
  您可能必須修改您在 SharePoint 中的安全性設定，您可以偵錯您的解決方案之前。 若要修改這些設定，請開啟商務資料連接的服務應用程式在 SharePoint 2010 管理中心網站。 在 [**設定的中繼資料存放區使用權限**] 對話方塊中，新增您的使用者帳戶，然後選取下列任何選項：  
   
 |工作|選項|  
 |----------|------------|  
-|將模型部署到 BDC 服務。|Edit|  
+|將模型部署到 BDC 服務。|編輯|  
 |若要建立清單和使用的 Web 組件外部內容類型 （實體），在模型中。|在用戶端中，您可選取|  
 |若要建立、 讀取、 更新和刪除實體的資料。|執行|  
   
@@ -119,18 +114,17 @@ ms.locfileid: "36327238"
 |標題|描述|  
 |-----------|-----------------|  
 |[BDC 模型設計工具概觀](../sharepoint/bdc-model-design-tools-overview.md)|描述您可用來以視覺化方式設計 BDC 模型的工具。|  
-|[如何： 將實體新增至模型](../sharepoint/how-to-add-an-entity-to-a-model.md)|說明如何將外部內容類型或實體加入至模型。|  
-|[如何： 新增搜尋方法](../sharepoint/how-to-add-a-finder-method.md)|說明如何新增可讓使用者檢視的實體清單，清單或 Web 組件中的方法。|  
-|[如何： 加入特定搜尋方法](../sharepoint/how-to-add-a-specific-finder-method.md)|示範如何加入的方法，可讓使用者檢視在特定實體的詳細資料。|  
-|[如何： 新增建立者方法](../sharepoint/how-to-add-a-creator-method.md)|示範如何加入的方法，可讓使用者直接從清單或 Web 組件時，將記錄新增至資料來源。|  
-|[如何： 加入刪除者方法](../sharepoint/how-to-add-a-deleter-method.md)|示範如何加入的方法，可讓使用者以移除資料來源中的資料，利用使用者介面 (UI) 的清單或 Web 組件中的選項。|  
-|[如何： 加入更新者方法](../sharepoint/how-to-add-an-updater-method.md)|示範如何加入的方法，可讓使用者直接從清單或 Web 組件中變更資料來源中的資料記錄。|  
-|[如何： 將參數加入至方法](../sharepoint/how-to-add-a-parameter-to-a-method.md)|說明如何使用 Visual Studio 中的 [方法詳細資料] 視窗新增至方法的輸入和傳回參數。|  
-|[如何： 定義參數的型別描述元](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)|說明如何在模型中定義的參數資料類型。|  
-|[如何： 定義方法執行個體](../sharepoint/how-to-define-a-method-instance.md)|說明如何建立 BDC 執行的方法的執行個體。|  
-|[如何： 將篩選描述元加入至搜尋方法](../sharepoint/how-to-add-a-filter-descriptor-to-a-finder-method.md)|說明如何讓使用者以限制傳回的搜尋方法的執行個體數目。|  
+|[如何：將實體新增至模型](../sharepoint/how-to-add-an-entity-to-a-model.md)|說明如何將外部內容類型或實體加入至模型。|  
+|[如何：新增搜尋方法](../sharepoint/how-to-add-a-finder-method.md)|說明如何新增可讓使用者檢視的實體清單，清單或 Web 組件中的方法。|  
+|[如何：新增特定搜尋方法](../sharepoint/how-to-add-a-specific-finder-method.md)|示範如何加入的方法，可讓使用者檢視在特定實體的詳細資料。|  
+|[如何：新增建立者方法](../sharepoint/how-to-add-a-creator-method.md)|示範如何加入的方法，可讓使用者直接從清單或 Web 組件時，將記錄新增至資料來源。|  
+|[如何：新增刪除者方法](../sharepoint/how-to-add-a-deleter-method.md)|示範如何加入的方法，可讓使用者以移除資料來源中的資料，利用使用者介面 (UI) 的清單或 Web 組件中的選項。|  
+|[如何：新增更新者方法](../sharepoint/how-to-add-an-updater-method.md)|示範如何加入的方法，可讓使用者直接從清單或 Web 組件中變更資料來源中的資料記錄。|  
+|[如何：新增參數至方法](../sharepoint/how-to-add-a-parameter-to-a-method.md)|說明如何使用 Visual Studio 中的 [方法詳細資料] 視窗新增至方法的輸入和傳回參數。|  
+|[如何：定義參數的型別描述元](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)|說明如何在模型中定義的參數資料類型。|  
+|[如何：定義方法執行個體](../sharepoint/how-to-define-a-method-instance.md)|說明如何建立 BDC 執行的方法的執行個體。|  
+|[如何：將篩選描述元加入至搜尋方法](../sharepoint/how-to-add-a-filter-descriptor-to-a-finder-method.md)|說明如何讓使用者以限制傳回的搜尋方法的執行個體數目。|  
 |[建立實體之間的關聯](../sharepoint/creating-an-association-between-entities.md)|描述如何定義模型中實體之間的關聯性。 商務資料 Web 組件、 外部清單，與自訂應用程式可以顯示使用者介面 (UI) 中的這些資料關聯性。|  
-|[如何： 建立實體之間的關聯](../sharepoint/how-to-create-an-association-between-entities.md)|說明如何定義模型中實體之間的關聯性。|  
-|[逐步解說： 建立外部清單在 SharePoint 中使用商務資料](../sharepoint/walkthrough-creating-an-external-list-in-sharepoint-by-using-business-data.md)|提供逐步指示，說明如何建立和測試的模型，在 SharePoint 外部的清單中顯示的連絡人。|  
+|[如何：建立實體之間的關聯](../sharepoint/how-to-create-an-association-between-entities.md)|說明如何定義模型中實體之間的關聯性。|  
+|[逐步解說：建立外部清單在 SharePoint 中使用商務資料](../sharepoint/walkthrough-creating-an-external-list-in-sharepoint-by-using-business-data.md)|提供逐步指示，說明如何建立和測試的模型，在 SharePoint 外部的清單中顯示的連絡人。|  
 |[將商務資料整合到 SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)|提供建立和設計的 BDC 服務模型的概觀。|  
-  

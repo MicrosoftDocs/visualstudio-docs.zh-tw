@@ -1,15 +1,10 @@
 ---
-title: 如何： 新增和移除功能和項目加入封裝時，使用 [封裝總管] |Microsoft Docs
-ms.custom: ''
+title: HOW TO：新增和移除功能和項目加入封裝時，使用 [封裝總管] |Microsoft Docs
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.RAD.PackagingExplorer
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -19,17 +14,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7875401dee07961d63de6c7b71a97e647c21a0b7
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: b1211b0bdc3625b915221cfafaa5377d371aaa25
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36755608"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53880857"
 ---
-# <a name="how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer"></a>如何： 新增和移除功能和項目加入封裝時，使用 [封裝總管]
+# <a name="how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer"></a>HOW TO：新增和移除功能和項目加入封裝時，使用 [封裝總管]
   若要設定要部署的 SharePoint 項目和功能的套件，您可以使用 [封裝總管] 中。 您的.wsp 檔內，您可以調整的 SharePoint 專案項目和功能。  
   
- 或者，您可以使用 封裝設計工具來檢視和重新排列的功能變更的啟動順序。 如需詳細資訊，請參閱 <<c0> [ 如何： 新增與移除功能和封裝的項目使用 Package Designer](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer.md)。  
+ 或者，您可以使用 封裝設計工具來檢視和重新排列的功能變更的啟動順序。 如需詳細資訊，請參閱[＜How to：新增與移除功能和封裝的項目使用 Package Designer](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer.md)。  
   
 ## <a name="open-the-packaging-explorer"></a>開啟 [封裝總管]  
  您可以使用下列程序以開啟 [封裝總管] 中，如果 Visual Studio 方案中有至少一個 SharePoint 專案中。 或者，[封裝總管] 會自動開啟功能或封裝的設計工具的檢視時。 在您關閉所有的功能和封裝設計工具之後，[封裝總管] 中也會關閉。  
@@ -69,4 +64,3 @@ ms.locfileid: "36755608"
   
 ## <a name="see-also"></a>另請參閱
  [封裝和部署 SharePoint 方案](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
-  

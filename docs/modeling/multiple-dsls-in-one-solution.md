@@ -8,24 +8,23 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: f73fd8170c91fe51692c9ec5b5b39e7c36570dd2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: fce705b4f36c8c3bf0e6d44feaff353853652cb3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49949366"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53940650"
 ---
 # <a name="multiple-dsls-in-one-solution"></a>一個方案中有多個 DSL
 您可以將數個 DSL 封裝成單一方案的一部分，以便能夠一起安裝。
 
- 用來整合多個 DSL 的方法有幾種。 如需詳細資訊，請參閱[使用 Visual Studio Modelbus 整合模型](../modeling/integrating-models-by-using-visual-studio-modelbus.md)並[如何： 加入拖放處理常式](../modeling/how-to-add-a-drag-and-drop-handler.md)並[自訂複製行為](../modeling/customizing-copy-behavior.md)。
+ 用來整合多個 DSL 的方法有幾種。 如需詳細資訊，請參閱 <<c0> [ 使用 Visual Studio Modelbus 整合模型](../modeling/integrating-models-by-using-visual-studio-modelbus.md)和[How to:新增拖放處理常式](../modeling/how-to-add-a-drag-and-drop-handler.md)並[自訂複製行為](../modeling/customizing-copy-behavior.md)。
 
 ### <a name="to-build-more-than-one-dsl-in-the-same-solution"></a>在同一個方案中建置多個 DSL
 
 1. 建立兩個或多個 DSL 方案和一個 VSIX 專案，然後將所有專案加入至一個方案。
 
-   -   若要建立新的 VSIX 專案： 在**新的專案**對話方塊中，選取**Visual C#**，**擴充性**， **VSIX 專案**。
+   -   若要建立新的 VSIX 專案：在 **新的專案**對話方塊中，選取**視覺化C#** ，**擴充性**， **VSIX 專案**。
 
    -   在 VSIX 方案目錄中建立兩個或多個 DSL 方案。
 

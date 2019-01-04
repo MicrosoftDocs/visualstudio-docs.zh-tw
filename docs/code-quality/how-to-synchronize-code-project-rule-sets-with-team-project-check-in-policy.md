@@ -1,8 +1,7 @@
 ---
-title: 如何：同步處理具有 Team 專案簽入原則的程式碼專案規則集
+title: HOW TO：將程式碼專案規則集與 Team 專案簽入原則進行同步處理
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.selecttfsruleset
@@ -12,14 +11,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3769962829f5d0511b684f03ad8682071b48c07b
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: e8c63e7b54f1303f62fca938cb5dc44147af88dd
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44281152"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53883239"
 ---
-# <a name="how-to-synchronize-code-project-rule-sets-with-an-azure-devops-project-check-in-policy"></a>如何： 同步處理使用 Azure DevOps 專案簽入原則的程式碼專案規則集
+# <a name="how-to-synchronize-code-project-rule-sets-with-an-azure-devops-project-check-in-policy"></a>HOW TO：Azure DevOps 專案簽入原則與同步處理程式碼專案規則集
 
 您可以同步至 Azure 的 DevOps 專案的簽入原則的程式碼專案的程式碼分析設定藉由指定規則集，其中包含最少的規則集簽入原則中指定的規則。 您的名稱和位置的規則集簽入原則，就會通知您的開發人員潛在客戶。 您可以使用下列選項之一，確保專案的程式碼分析會使用一組正確的規則：
 
@@ -55,7 +54,7 @@ ms.locfileid: "44281152"
 
 1.  請遵循下列其中一個稍早在本主題來選取 Azure DevOps 專案在專案的 [設定] 對話方塊的 [程式碼分析] 頁面上的簽入原則中的程序。
 
-2.  按一下 **開啟**。
+2.  按一下 [開啟]。
 
 3.  新增或移除規則，使用[規則集編輯器](../code-quality/working-in-the-code-analysis-rule-set-editor.md)。
 

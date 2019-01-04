@@ -1,9 +1,6 @@
 ---
 title: IDebugComPlusSymbolProvider::GetArrayTypeFromAddress |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - GetArrayTypeFromAddress
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 189bae80873e100be3371813add133982926edab
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0ca47cd494c4d1ab1d57f0273a1374702472d76b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49915226"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53896444"
 ---
 # <a name="idebugcomplussymbolprovidergetarraytypefromaddress"></a>IDebugComPlusSymbolProvider::GetArrayTypeFromAddress
 擷取的型別指定的陣列，指定其偵錯位址的相關資訊。  

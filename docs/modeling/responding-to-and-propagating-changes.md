@@ -10,13 +10,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 696a874df8050d9a79f7cd07b9fc168acdc6b717
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ace1873c45ba8437ba929ec10ef75db3d0d50bf2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49897975"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53905198"
 ---
 # <a name="responding-to-and-propagating-changes"></a>回應及傳播變更
 當建立、 刪除或更新項目時，您可以撰寫會傳播變更的其他部分的模型或外部的資源，例如檔案、 資料庫或其他元件的程式碼。
@@ -31,7 +30,7 @@ ms.locfileid: "49897975"
 |覆寫 OnValueChanging 等 OnDeleting 變更處理常式|保留不同的項目進行同步處理，並讓外部值與模型保持同步。<br /><br /> 限制值來定義的範圍。<br /><br /> 呼叫前後立即屬性值和其他變更。 您可以藉由擲回例外狀況終止變更。|[網域屬性值變更處理常式](../modeling/domain-property-value-change-handlers.md)|
 |規則|您可以定義佇列中等待執行的變更發生在交易結束之前的規則。 它們不會在復原或重做上執行。 您可以使用它們來持續存放區的一組件與另一個的同步處理。|[規則傳播模型內的變更](../modeling/rules-propagate-changes-within-the-model.md)|
 |存放區事件|模型存放區提供通知的事件，例如加入或刪除項目或連結，或變更屬性的值。 事件也會在復原與取消復原上執行。 您可以使用存放區事件更新不在存放區中的值。|[事件處理常式傳播模型外的變更](../modeling/event-handlers-propagate-changes-outside-the-model.md)|
-|.NET 事件|圖形會有回應滑鼠點按和其他筆勢的事件處理常式。 您必須註冊這些事件的每個物件。 註冊通常是 InitializeInstanceResources，覆寫，且必須以每個項目。<br /><br /> 這些事件通常發生於交易外部的。|[如何：攔截圖案或 Decorator 上的點選](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md)|
+|.NET 事件|圖形會有回應滑鼠點按和其他筆勢的事件處理常式。 您必須註冊這些事件的每個物件。 註冊通常是 InitializeInstanceResources，覆寫，且必須以每個項目。<br /><br /> 這些事件通常發生於交易外部的。|[如何：攔截圖案或 Decorator 上的](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md)|
 |範圍規則|繫結規則，特別用於限制圖形的界限。|[BoundsRules 限制圖案位置和大小](../modeling/boundsrules-constrain-shape-location-and-size.md)|
 |選取規則|選取規則特別限制使用者可以選取。|[如何：存取及限制目前的選取範圍](../modeling/how-to-access-and-constrain-the-current-selection.md)|
 |OnAssocatedPropertyChanged|表示使用的圖案和接點陰影、 線條、 色彩和線條寬度和樣式等功能的模型項目的狀態。|[更新圖案和接點來反映模型](../modeling/updating-shapes-and-connectors-to-reflect-the-model.md)|
@@ -47,11 +46,11 @@ ms.locfileid: "49897975"
 
 -   **訂閱事件**可以訂閱事件之前，請建立事件處理常式和委派。 然後使用<xref:Microsoft.VisualStudio.Modeling.Store.EventManagerDirectory%2A>訂閱事件的屬性。 如需詳細資訊，請參閱 <<c0> [ 事件處理常式傳播變更外部模型](../modeling/event-handlers-propagate-changes-outside-the-model.md)。
 
--   **正在恢復變更**時將交易復原，會引發事件，但不是會套用規則。 如果規則變更的值，而且復原這項變更，值會重設為原始值期間復原動作。 當引發事件時，您必須手動變更此值設回其原始值。 若要深入了解 transactons 和復原，請參閱[如何： 使用異動更新模型](../modeling/how-to-use-transactions-to-update-the-model.md)。
+-   **正在恢復變更**時將交易復原，會引發事件，但不是會套用規則。 如果規則變更的值，而且復原這項變更，值會重設為原始值期間復原動作。 當引發事件時，您必須手動變更此值設回其原始值。 若要深入了解 transactons 和復原，請參閱[How to:使用異動更新模型](../modeling/how-to-use-transactions-to-update-the-model.md)。
 
 -   **傳遞規則和事件的事件引數**這兩個事件和傳遞規則`EventArgs`參數，其資訊的模型變更。
 
 ## <a name="see-also"></a>另請參閱
 
-- [如何：攔截圖案或 Decorator 上的點選](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md)
+- [如何：攔截圖案或 Decorator 上的](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md)
 - [撰寫程式碼來自訂特定領域語言](../modeling/writing-code-to-customise-a-domain-specific-language.md)

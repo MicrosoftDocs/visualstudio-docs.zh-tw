@@ -1,9 +1,6 @@
 ---
-title: 逐步解說： 在文件層級專案中的複雜資料繫結
-ms.custom: ''
+title: 逐步解說：在文件層級專案中的複雜資料繫結
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,14 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6886908f01ceaeb36ed83ba0970ef250873d69c2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5030db198ab253a417e770ec7dc022a99cfafbd8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49841880"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53964048"
 ---
-# <a name="walkthrough-complex-data-binding-in-a-document-level-project"></a>逐步解說： 在文件層級專案中的複雜資料繫結
+# <a name="walkthrough-complex-data-binding-in-a-document-level-project"></a>逐步解說：在文件層級專案中的複雜資料繫結
   本逐步解說會示範在文件層級專案中的複雜資料繫結的基本概念。 您可以將 Microsoft Office Excel 工作表中的多個資料格繫結至 Northwind SQL Server 資料庫中的欄位。  
   
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]  
@@ -58,7 +55,7 @@ ms.locfileid: "49841880"
   
 1.  建立 Excel 活頁簿專案同名**My 複雜資料繫結**。 在精靈中，選取**建立新的文件**。  
   
-     如需詳細資訊，請參閱 [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
+     如需詳細資訊，請參閱[＜How to：在 Visual Studio 中建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
   
      Visual Studio 設計工具中開啟新的 Excel 活頁簿，並將**My 複雜資料繫結**專案加入**方案總管 中**。  
   
@@ -220,15 +217,13 @@ ms.locfileid: "49841880"
 ## <a name="next-steps"></a>後續步驟  
  本逐步解說會示範在資料庫中的資料表繫結到清單物件的基本概念。 接著可以執行下列一些工作：  
   
--   快取的資料，以便可以離線使用。 如需詳細資訊，請參閱 <<c0> [ 如何： 快取資料以供使用，離線或在伺服器上](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md)。  
+-   快取的資料，以便可以離線使用。 如需詳細資訊，請參閱[＜How to：離線或在伺服器上快取資料以用於](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md)。  
   
 -   部署方案。 如需詳細資訊，請參閱 <<c0> [ 部署 Office 方案](../vsto/deploying-an-office-solution.md)。  
   
--   建立主從式關聯欄位與資料表之間。 如需詳細資訊，請參閱 <<c0> [ 逐步解說： 建立使用快取的資料集的主版詳細資料關聯性](../vsto/walkthrough-creating-a-master-detail-relation-using-a-cached-dataset.md)。  
+-   建立主從式關聯欄位與資料表之間。 如需詳細資訊，請參閱[逐步解說：建立使用快取的資料集的主版詳細資料關聯性](../vsto/walkthrough-creating-a-master-detail-relation-using-a-cached-dataset.md)。  
   
 ## <a name="see-also"></a>另請參閱  
  [資料繫結至 Office 方案中的控制項](../vsto/binding-data-to-controls-in-office-solutions.md)   
  [在 Office 方案中的資料](../vsto/data-in-office-solutions.md)   
- [逐步解說： 在文件層級專案中的簡單資料繫結](../vsto/walkthrough-simple-data-binding-in-a-document-level-project.md)  
-  
-  
+ [逐步解說：在文件層級專案中的簡單資料繫結](../vsto/walkthrough-simple-data-binding-in-a-document-level-project.md)  
