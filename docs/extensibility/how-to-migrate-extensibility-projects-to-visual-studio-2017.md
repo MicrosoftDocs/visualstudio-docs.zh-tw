@@ -1,9 +1,6 @@
 ---
-title: 如何： 將擴充性專案移轉至 Visual Studio 2017 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：將擴充性專案移轉至 Visual Studio 2017 |Microsoft Docs
 ms.date: 11/09/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 8ca07b00-a3ff-40ab-b647-c0a93b55e86a
 author: gregvanl
@@ -11,14 +8,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 195d63e5ddb8b8536c1d0c1c4197270f5b3aa508
-ms.sourcegitcommit: 331dbb12e11fcd7f5d15fab05f3c861e48126e43
+ms.openlocfilehash: 22fdb969112278fafb636e0162db4ebc93b9a657
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51826813"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53820406"
 ---
-# <a name="how-to-migrate-extensibility-projects-to-visual-studio-2017"></a>如何： 將擴充性專案移轉至 Visual Studio 2017
+# <a name="how-to-migrate-extensibility-projects-to-visual-studio-2017"></a>HOW TO：將擴充性專案移轉至 Visual Studio 2017
 
 本文件說明如何將擴充性專案升級至 Visual Studio 2017。 除了說明如何更新專案檔，它也會說明如何從延伸模組資訊清單版本 2 (VSIX v2) 升級至新第 3 版 VSIX 資訊清單的格式 (VSIX v3)。
 
@@ -57,7 +54,7 @@ ms.locfileid: "51826813"
 
 若要確保使用者的 Visual Studio 安裝有執行擴充功能所需的所有組件，請指定所有必要的元件或套件延伸模組資訊清單檔案中。 當使用者嘗試安裝擴充功能時，VSIXInstaller 會檢查是否已安裝所有必要條件。 如果某些遺漏時，就會提示使用者安裝遺漏的元件延伸模組的安裝程序的一部分。
 
->**注意：** 至少所有的延伸模組應該指定 Visual Studio 核心編輯器元件為必要條件。
+>**注意：** 最小值，所有延伸模組應該指定 Visual Studio 核心編輯器元件為必要條件。
 
 * 編輯擴充功能資訊清單檔 (通常稱為*source.extension.vsixmanifest*)。
 * 請確定`InstallationTarget`包含 15.0。
@@ -79,11 +76,11 @@ ms.locfileid: "51826813"
 </PackageManifest>
 ```
 
-### <a name="option-use-the-designer-to-make-changes-to-the-vsix-extension-manifest"></a>選項： 使用設計工具對 VSIX 延伸模組資訊清單中的變更
+### <a name="option-use-the-designer-to-make-changes-to-the-vsix-extension-manifest"></a>選項：使用設計工具對 VSIX 延伸模組資訊清單中的變更
 
 而不是直接編輯資訊清單 XML，您可以使用新**必要條件**選取必要條件的資訊清單設計工具 和 XML 索引標籤將會更新為您。
 
->**注意：** 資訊清單設計工具只允許您選取目前的 Visual Studio 執行個體所安裝的元件 （沒有工作負載或封裝）。 如果您需要將工作負載、 封裝或目前未安裝的元件的必要條件，請直接編輯資訊清單 XML。
+>**注意：** 資訊清單設計工具將只允許您選取目前的 Visual Studio 執行個體所安裝的元件 （沒有工作負載或封裝）。 如果您需要將工作負載、 封裝或目前未安裝的元件的必要條件，請直接編輯資訊清單 XML。
 
 * 開啟*source.extension.vsixmanifest [設計]* 檔案。
 * 選取 [**必要條件**索引標籤，然後按**新增**] 按鈕。
@@ -97,7 +94,7 @@ ms.locfileid: "51826813"
 * 下拉式清單中按一下**名稱**，然後選取所需的必要條件。
 * 如有必要，請更新的版本。
 
-  >注意: [版本] 欄位會預先填入目前已安裝的元件，與範圍最多可跨越 （但不是包括） 的版本元件的下一個主要版本。
+  >注意:[版本] 欄位會預先填入目前已安裝的元件，與範圍最多可跨越 （但不是包括） 的版本元件的下一個主要版本。
 
   ![新增 roslyn 必要條件](media/add-roslyn-prerequisite.png)
 
@@ -107,11 +104,11 @@ ms.locfileid: "51826813"
 
 如果您想要偵錯您的 Visual Studio 的實驗執行個體的延伸模組，請確定專案設定，如**偵錯** > **起始動作**具有**啟動外部程式：** 值設定為*devenv.exe* Visual Studio 2017 安裝的檔案。
 
-它看起來像： *C:\Program Files (x86) \Microsoft Visual Studio\2017\Enterprise\Common7\IDE\devenv.exe*
+它可能如下：*C:\Program 檔案 (x86) \Microsoft Visual Studio\2017\Enterprise\Common7\IDE\devenv.exe*
 
 ![啟動外部程式](media/start-external-program.png)
 
->**注意︰** 偵錯起始動作通常會儲存於 *.csproj.user*檔案。 這個檔案通常包含在 *.gitignore*檔案，並因此，不通常會儲存與認可至原始檔控制時的其他專案檔案。 因此，如果您已預先採用了您的解決方案從原始檔控制全新很可能專案會有任何啟動動作設定的值。 使用 Visual Studio 2017 中建立新的 VSIX 專案會有 *.csproj.user*以指向目前的 Visual Studio 安裝目錄的預設值建立的檔案。 不過如果您要移轉 v2 VSIX 擴充功能，它可能是所 *.csproj.user*檔案會包含先前的 Visual Studio 版本的安裝目錄的參考。 設定的值**偵錯** > **起始動作**可正確 Visual Studio 實驗執行個體啟動時您嘗試偵錯您的延伸模組。
+>**注意：** 偵錯起始動作通常會儲存於 *.csproj.user*檔案。 這個檔案通常包含在 *.gitignore*檔案，並因此，不通常會儲存與認可至原始檔控制時的其他專案檔案。 因此，如果您已預先採用了您的解決方案從原始檔控制全新很可能專案會有任何啟動動作設定的值。 使用 Visual Studio 2017 中建立新的 VSIX 專案會有 *.csproj.user*以指向目前的 Visual Studio 安裝目錄的預設值建立的檔案。 不過如果您要移轉 v2 VSIX 擴充功能，它可能是所 *.csproj.user*檔案會包含先前的 Visual Studio 版本的安裝目錄的參考。 設定的值**偵錯** > **起始動作**可正確 Visual Studio 實驗執行個體啟動時您嘗試偵錯您的延伸模組。
 
 ## <a name="check-that-the-extension-builds-correctly-as-a-vsix-v3"></a>請檢查延伸模組建置正確 （如 VSIX v3)
 
@@ -128,7 +125,7 @@ ms.locfileid: "51826813"
 
 VSIX 成功安裝在電腦安裝所有必要先決條件的測試。
 
->**注意：** 之前安裝任何延伸模組，請關閉所有 Visual Studio 執行個體。
+>**注意：** 在安裝之前任何延伸模組，請關閉所有 Visual Studio 執行個體。
 
 嘗試安裝擴充功能：
 
@@ -136,10 +133,10 @@ VSIX 成功安裝在電腦安裝所有必要先決條件的測試。
 
 ![在 Visual Studio 2017 的 VSIX 安裝程式](media/vsixinstaller-vs-2017.png)
 
-* 選擇性： 檢查有舊版的 Visual Studio。
+* 選擇項：請檢查先前的 Visual Studio 版本。
   * 證明回溯相容性。
   * 應該適用於 Visual Studio 2012、 Visual Studio 2013，Visual Studio 2015。
-* 選擇性︰ 檢查 VSIX 安裝程式版本檢查程式所提供選擇一種版本。
+* 選擇項：VSIX 安裝程式版本檢查程式，提供各種版本檢查。
   * （如果已安裝），包括舊版的 Visual Studio。
   * 包含 Visual Studio 2017。
 
@@ -155,7 +152,7 @@ VSIX 成功安裝在電腦安裝所有必要先決條件的測試。
 
 * 嘗試安裝擴充功能的電腦上使用 Visual Studio 2017 並不會包含的必要條件 （請見上方） 中定義的所有元件。
 * 安裝識別遺漏的元件/秒，並列為 VSIXInstaller 在必要條件檢查。
-* 注意： 提高權限都必須如果需要安裝擴充功能的任何必要條件。
+* 注意:如果需要安裝擴充功能的任何必要條件，將會需要提高權限。
 
 ![vsixinstaller 遺漏的必要條件](media/vsixinstaller-missing-prerequisite.png)
 
@@ -180,7 +177,7 @@ WPF | Managed 桌面工作負載核心 | Microsoft.VisualStudio.Component.Manage
 
 ### <a name="vs2017-componentbinarymappingxlsx"></a>vs2017 ComponentBinaryMapping.xlsx
 
-Excel 工作表中有四個資料行：**元件名稱**， **ComponentId**，**版本**，以及**二進位 / 檔案名稱**。  您可以使用篩選來搜尋及尋找特定元件和二進位檔。
+在 Excel 工作表中有四個資料行：**元件名稱**， **ComponentId**，**版本**，和**二進位檔名 /**。  您可以使用篩選來搜尋及尋找特定元件和二進位檔。
 
 針對您所有的參考，請先判斷哪些是在核心編輯器 (Microsoft.VisualStudio.Component.CoreEditor) 元件。  最小值，我們會要求必須指定為所有擴充功能的必要元件的核心編輯器元件。 參考會保留不在核心編輯器中，將篩選條件中的加入**二進位檔 / 檔案名稱**一節，以尋找具有任何這些參考子集的元件。
 

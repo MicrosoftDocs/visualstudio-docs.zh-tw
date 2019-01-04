@@ -1,9 +1,7 @@
 ---
 title: 在 Visual Studio 中的 Office 方案的架構
 titleSuffix: ''
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology: office-development
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 dev_langs:
@@ -18,12 +16,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0b5916ca091d7479b76c21aff914811d090f6667
-ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
+ms.openlocfilehash: c5fd58f487aa7323450f1236f9ac39ef11769bdc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53247896"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53837978"
 ---
 # <a name="architecture-of-office-solutions-in-visual-studio"></a>在 Visual Studio 中的 Office 方案的架構
   本節中的主題提供有關使用 Visual Studio 中之 Office Developer Tools 建立方案之運作方式的資訊。  
@@ -59,5 +57,3 @@ ms.locfileid: "53247896"
   
  [一般參考&#40;在 Visual Studio 中的 Office 程式開發&#41;](../vsto/general-reference-office-development-in-visual-studio.md)  
  提供有關 Office 專案中的使用者介面項目、Office 專案的應用程式和部署資訊清單，以及 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]中的應用程式開發介面的資訊連結。  
-  
-  
