@@ -1,9 +1,6 @@
 ---
 title: Office 方案的共同開發
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,12 +15,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9b4d22c92bd180eb27f8ebb50e65b24d17a92e47
-ms.sourcegitcommit: a715de2ba8c703f37aa2102567b1aa2c0f05a117
+ms.openlocfilehash: 2d8c6d19442a1735ee90db52e4c5f1a98e1fe860
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "53441544"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53876493"
 ---
 # <a name="collaborative-development-of-office-solutions"></a>Office 方案的共同開發
   多位開發人員可以使用 Office 專案中相同的方式，他們在其他 Visual Studio 專案上共同作業。 Visual Studio 正確找出每一部做為 Microsoft Office 安裝，即使 Office 會安裝在不同的位置。 不過，有一些重要的考量来留意。  
@@ -49,5 +46,3 @@ ms.locfileid: "53441544"
  [保護 Office 方案](../vsto/securing-office-solutions.md)   
  [設計和建立 Office 方案](../vsto/designing-and-creating-office-solutions.md)   
  [建置 Office 方案](../vsto/building-office-solutions.md)  
-  
-  

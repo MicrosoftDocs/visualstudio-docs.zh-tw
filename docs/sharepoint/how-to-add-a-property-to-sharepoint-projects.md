@@ -1,9 +1,6 @@
 ---
-title: 如何： 將屬性加入至 SharePoint 專案 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：將屬性加入至 SharePoint 專案 |Microsoft Docs
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,17 +14,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c956da1df5507d2efecb3ff72f034d54fb377eb5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b1b8b56fde8c3d84f887dd90dc50574c60c297cb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49898406"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53950468"
 ---
-# <a name="how-to-add-a-property-to-sharepoint-projects"></a>如何： 將屬性加入至 SharePoint 專案
+# <a name="how-to-add-a-property-to-sharepoint-projects"></a>HOW TO：將屬性加入至 SharePoint 專案
   若要將屬性加入至任何 SharePoint 專案，您可以使用專案擴充功能。 屬性會出現在**屬性**視窗中選取專案時**方案總管 中**。  
   
- 下列步驟假設您已建立的專案擴充功能。 如需詳細資訊，請參閱 <<c0> [ 如何： 建立 SharePoint 專案擴充功能](../sharepoint/how-to-create-a-sharepoint-project-extension.md)。  
+ 下列步驟假設您已建立的專案擴充功能。 如需詳細資訊，請參閱[＜How to：建立 SharePoint 專案擴充功能](../sharepoint/how-to-create-a-sharepoint-project-extension.md)。  
   
 ### <a name="to-add-a-property-to-a-sharepoint-project"></a>若要將屬性加入至 SharePoint 專案  
   
@@ -57,15 +54,15 @@ ms.locfileid: "49898406"
 ### <a name="specify-the-behavior-of-custom-properties"></a>指定自訂屬性的行為  
  您可以定義自訂屬性如何顯示和行為**屬性**藉由套用屬性 視窗<xref:System.ComponentModel>屬性定義的命名空間。 下列屬性可用於許多案例：  
   
--   <xref:System.ComponentModel.DisplayNameAttribute>： 指定出現在屬性名稱**屬性**視窗。  
+-   <xref:System.ComponentModel.DisplayNameAttribute>：指定出現在屬性名稱**屬性**視窗。  
   
--   <xref:System.ComponentModel.DescriptionAttribute>： 指定描述字串出現在底部**屬性**時選取屬性 視窗。  
+-   <xref:System.ComponentModel.DescriptionAttribute>：指定描述字串出現在底部**屬性**時選取屬性 視窗。  
   
--   <xref:System.ComponentModel.DefaultValueAttribute>： 指定屬性的預設值。  
+-   <xref:System.ComponentModel.DefaultValueAttribute>：指定屬性的預設值。  
   
--   <xref:System.ComponentModel.TypeConverterAttribute>： 指定之間的字串中所顯示的自訂轉換**屬性**視窗而非字串屬性值。  
+-   <xref:System.ComponentModel.TypeConverterAttribute>：指定會顯示在字串之間的自訂轉換**屬性**視窗而非字串屬性值。  
   
--   <xref:System.ComponentModel.EditorAttribute>： 指定自訂編輯器，以便用來修改屬性。  
+-   <xref:System.ComponentModel.EditorAttribute>：指定自訂編輯器，以便用來修改屬性。  
   
 ## <a name="compile-the-code"></a>編譯程式碼  
  這個範例需要參考下列組件：  
@@ -85,8 +82,6 @@ ms.locfileid: "49898406"
   
 ## <a name="see-also"></a>另請參閱
  [擴充 SharePoint 專案](../sharepoint/extending-sharepoint-projects.md)   
- [如何： 建立 SharePoint 專案擴充功能](../sharepoint/how-to-create-a-sharepoint-project-extension.md)   
- [如何： 將捷徑功能表項目新增至 SharePoint 專案](../sharepoint/how-to-add-a-shortcut-menu-item-to-sharepoint-projects.md)   
+ [如何：建立 SharePoint 專案擴充功能](../sharepoint/how-to-create-a-sharepoint-project-extension.md)   
+ [如何：加入 SharePoint 專案的捷徑功能表項目](../sharepoint/how-to-add-a-shortcut-menu-item-to-sharepoint-projects.md)   
  [擴充 SharePoint 專案系統](../sharepoint/extending-the-sharepoint-project-system.md)  
-  
-  
