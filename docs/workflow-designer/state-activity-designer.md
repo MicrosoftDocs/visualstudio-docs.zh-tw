@@ -3,7 +3,6 @@ title: 工作流程設計工具-State 活動設計工具
 ms.date: 11/04/2016
 ms.topic: reference
 ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Activities.Statements.State.UI
 ms.assetid: 9455ab37-93a0-4c46-9eb8-b6611ca23167
@@ -12,12 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: dee095f83d09ecf1425fa1117cafd629eb1a1add
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: bbecce45ddaa883dc53a9b5b105959aa8be7e33f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49906776"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53868101"
 ---
 # <a name="state-activity-designer"></a>狀態活動設計工具
 

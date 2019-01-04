@@ -1,9 +1,6 @@
 ---
 title: HOW TO：在功能區群組中新增對話方塊啟動器
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,12 +13,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f6ec94b8fc170f195b00a6c093605860c97048ed
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: 8b7cc0f9cc789f7cccb49dc2c5b827f7cf604813
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53648693"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53846200"
 ---
 # <a name="how-to-add-a-dialog-box-launcher-to-a-ribbon-group"></a>HOW TO：在功能區群組中新增對話方塊啟動器
   您可以加入功能區上的任何群組的對話方塊啟動器。 對話方塊啟動器是群組中顯示的小圖示。 使用者按一下此圖示以開啟相關的對話方塊或提供更多的選項與群組相關的工作窗格。  
@@ -55,5 +52,3 @@ ms.locfileid: "53648693"
  [逐步解說：使用功能區設計工具建立自訂的索引標籤](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)   
  [逐步解說：更新在執行階段的功能區上的控制項](../vsto/walkthrough-updating-the-controls-on-a-ribbon-at-run-time.md)   
  [逐步解說：使用功能區 XML 建立自訂的索引標籤](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md)  
-  
-  

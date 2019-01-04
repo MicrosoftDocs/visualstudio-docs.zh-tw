@@ -1,9 +1,6 @@
 ---
-title: IDebugWindowsComputerPort2 |Microsoft 文件
-ms.custom: ''
+title: IDebugWindowsComputerPort2 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - IDebugWindowsComputerPort2 interface
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9d7482adf6405d04522cbc3137be25c7a5e18b2a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 1e2a037ad0477be258e33879d1dc336fa67cc915
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31118095"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53965284"
 ---
 # <a name="idebugwindowscomputerport2"></a>IDebugWindowsComputerPort2
 可讓目標電腦的相關資訊的查詢。  
@@ -29,8 +26,8 @@ ms.locfileid: "31118095"
 IDebugWindowsComputerPort2 : IUnknown  
 ```  
   
-## <a name="notes-for-implementers"></a>實作者注意事項  
- 實作這個介面是由偵錯工作階段管理員的連接埠物件。  
+## <a name="notes-for-implementers"></a>實作者的附註  
+ 實作這個介面是由工作階段的偵錯管理員的連接埠物件。  
   
 ## <a name="methods"></a>方法  
  下表顯示的方法`IDebugWindowsComputerPort2`。  
@@ -40,8 +37,8 @@ IDebugWindowsComputerPort2 : IUnknown
 |[GetComputerInfo](../../../extensibility/debugger/reference/idebugwindowscomputerport2-getcomputerinfo.md)|擷取電腦的相關資訊的偵錯工具中執行。|  
   
 ## <a name="requirements"></a>需求  
- 標頭： Msdbg.h  
+ 標頭：Msdbg.h  
   
- 命名空間： Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間:Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
+ 組件︰Microsoft.VisualStudio.Debugger.Interop.dll

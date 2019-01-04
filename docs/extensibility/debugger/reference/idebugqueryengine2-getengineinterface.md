@@ -1,9 +1,6 @@
 ---
 title: IDebugQueryEngine2::GetEngineInterface |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugQueryEngine2::GetEngineInterface
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 735bf7a7d5dfe0ea1c9f4f347e9461cb48ce1e7e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 06d3608ea330e67ef96c4c4414473a208806ee3b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49909967"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53854824"
 ---
 # <a name="idebugqueryengine2getengineinterface"></a>IDebugQueryEngine2::GetEngineInterface
 取得自訂的偵錯引擎 (DE) 介面。  
@@ -28,13 +25,13 @@ ms.locfileid: "49909967"
 ## <a name="syntax"></a>語法  
   
 ```cpp  
-HRESULT GetEngineInterface(   
+HRESULT GetEngineInterface(   
    IUnknown** ppUnk  
 );  
 ```  
   
 ```csharp  
-int GetEngineInterface(   
+int GetEngineInterface(   
    out object ppUnk  
 );  
 ```  

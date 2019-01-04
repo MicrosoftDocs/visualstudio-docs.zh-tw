@@ -11,15 +11,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.workload:
 - multiple
-ms.openlocfilehash: b97a58a7f5ba3808c658b838de942e94c12b9b79
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 46df354cf860aa1aa08fd8d738711dad41fd6741
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53049090"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53861299"
 ---
 # <a name="automatic-feature-suspension"></a>自動功能暫停
 
@@ -43,7 +42,7 @@ ms.locfileid: "53049090"
 
 ## <a name="full-solution-analysis-suspended"></a>暫止的完整解決方案分析
 
-根據預設，是針對 Visual Basic 啟用完整解決方案分析，並將其停用 Visual C# 中。 不過，在記憶體不足情況下，完整解決方案分析會自動停用 Visual Basic 和 Visual C# 中，不論其在 [選項] 對話方塊中的設定為何。 不過，您可以重新啟用完整解決方案分析選擇**重新啟用**中的資訊列出現時，藉由選取按鈕**啟用完整解決方案分析**核取方塊，在 [選項] 對話方塊中，或重新啟動 Visual Studio。 [選項] 對話方塊中一律會顯示目前的完整解決方案分析設定。 如需詳細資訊，請參閱 <<c0> [ 如何： 啟用和停用完整解決方案分析](../code-quality/how-to-enable-and-disable-full-solution-analysis-for-managed-code.md)。
+根據預設，是針對 Visual Basic 啟用完整解決方案分析，並將其停用 Visual C# 中。 不過，在記憶體不足情況下，完整解決方案分析會自動停用 Visual Basic 和 Visual C# 中，不論其在 [選項] 對話方塊中的設定為何。 不過，您可以重新啟用完整解決方案分析選擇**重新啟用**中的資訊列出現時，藉由選取按鈕**啟用完整解決方案分析**核取方塊，在 [選項] 對話方塊中，或重新啟動 Visual Studio。 [選項] 對話方塊中一律會顯示目前的完整解決方案分析設定。 如需詳細資訊，請參閱[＜How to：啟用和停用完整解決方案分析](../code-quality/how-to-enable-and-disable-full-solution-analysis-for-managed-code.md)。
 
 ## <a name="gc-low-latency-disabled"></a>GC 低度延遲停用
 

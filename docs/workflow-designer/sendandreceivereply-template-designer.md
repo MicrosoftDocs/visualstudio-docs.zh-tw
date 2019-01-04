@@ -3,7 +3,6 @@ title: 工作流程設計工具-SendAndReceiveReply 範本設計工具
 ms.date: 11/04/2016
 ms.topic: reference
 ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 f1_keywords:
 - System.ServiceModel.Activities.SendAndReceiveReply.UI
 - System.ServiceModel.Activities.ReceiveReply.UI
@@ -13,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 22cdd114a11ff9d1b3b162009cc77d83aec1fd83
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e1bd37924a818fce26e3f3263aec691be66aee29
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49858962"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53960481"
 ---
 # <a name="sendandreceivereply-template-designer"></a>SendAndReceiveReply 樣本設計工具
 

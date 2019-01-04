@@ -8,13 +8,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 48000bbf05fd15163c0c6f61ff4a13838aaf75b6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2627fcb19933d21021c97323982e03ff361bd36f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49881738"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53834278"
 ---
 # <a name="defining-shapes-and-connectors"></a>定義圖案和連接器
 您可以使用數種基本圖形類型，來顯示網域指定的語言 (DSL) 圖表上的資訊。

@@ -1,9 +1,6 @@
 ---
 title: HOW TO：以程式設計方式存取 Outlook 連絡人
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,12 +12,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 662190d3db9c3d384d60f4953ea3809cb726f76c
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: 3b02ecc421c2e6c5876061821c8d87e180a4d9a3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53801719"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53965378"
 ---
 # <a name="how-to-programmatically-access-outlook-contacts"></a>HOW TO：以程式設計方式存取 Outlook 連絡人
   此範例會尋找其最後一個的名稱包含指定之搜尋字串的所有連絡人。  
@@ -43,5 +40,3 @@ ms.locfileid: "53801719"
  [如何：以程式設計方式搜尋特定的連絡人](../vsto/how-to-programmatically-search-for-a-specific-contact.md)   
  [如何：以程式設計方式在連絡人電子郵件地址搜尋](../vsto/how-to-programmatically-search-for-an-e-mail-address-in-contacts.md)   
  [如何：以程式設計方式刪除 Outlook 連絡人](../vsto/how-to-programmatically-delete-outlook-contacts.md)  
-  
-  

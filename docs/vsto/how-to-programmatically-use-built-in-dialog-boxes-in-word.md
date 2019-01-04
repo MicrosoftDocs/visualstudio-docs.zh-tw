@@ -1,9 +1,6 @@
 ---
-title: 如何： 以程式設計方式使用 Word 中的內建對話方塊
-ms.custom: ''
+title: HOW TO：以程式設計方式使用 Word 中的內建對話方塊
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f5ee28b0296037b9b5490ca691a27d613c793228
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 38e9fd10171bcc5be20f061217ff85b85ae3b52d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35671199"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53829059"
 ---
-# <a name="how-to-programmatically-use-built-in-dialog-boxes-in-word"></a>如何： 以程式設計方式使用 Word 中的內建對話方塊
+# <a name="how-to-programmatically-use-built-in-dialog-boxes-in-word"></a>HOW TO：以程式設計方式使用 Word 中的內建對話方塊
   當使用 Microsoft Office Word 時，有當您需要顯示對話方塊，供使用者輸入的時間。 雖然您可以建立您自己，您也可以採取的方法使用的內建對話方塊在 Word 中，其公開於<xref:Microsoft.Office.Interop.Word.Dialogs>的集合<xref:Microsoft.Office.Interop.Word.Application>物件。 這可讓您存取超過 200 個內建的對話方塊，以列舉型別表示。  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
@@ -49,11 +46,9 @@ ms.locfileid: "35671199"
  [!code-vb[Trin_VstcoreWordAutomation#102](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#102)]  
   
 ## <a name="see-also"></a>另請參閱  
- [如何： 以程式設計方式使用 Word 對話方塊，在隱藏模式中](../vsto/how-to-programmatically-use-word-dialog-boxes-in-hidden-mode.md)   
+ [如何：以程式設計方式使用 Word 對話方塊，在隱藏模式中](../vsto/how-to-programmatically-use-word-dialog-boxes-in-hidden-mode.md)   
  [Word 物件模型概觀](../vsto/word-object-model-overview.md)   
  [Office 方案中的選擇性參數](../vsto/optional-parameters-in-office-solutions.md)   
  [Option strict 陳述式](/dotnet/visual-basic/language-reference/statements/option-strict-statement)   
  [反映 (C#)](/dotnet/csharp/programming-guide/concepts/reflection)  
  [反映 (Visual Basic)](/dotnet/visual-basic/programming-guide/concepts/reflection)  
-  
-  

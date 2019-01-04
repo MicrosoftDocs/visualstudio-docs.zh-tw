@@ -1,9 +1,6 @@
 ---
 title: IDebugProcess3::GetEngineFilter |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - GetEngineFilter
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 487ac0f77307a58aab36fdfd55fad67d4bc9ce51
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 50f3fcb908196936bfeaac39dc43f27362e1097f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49948534"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53966686"
 ---
 # <a name="idebugprocess3getenginefilter"></a>IDebugProcess3::GetEngineFilter
 擷取可用的偵錯引擎的唯一識別碼的陣列。  

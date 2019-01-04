@@ -1,9 +1,6 @@
 ---
 title: 適用於 Visual Studio 的複合模式 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: e48ecfb2-f4b5-4d3a-b4a2-7a4d62fa4ec0
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 14d9f233d41638092d1a722094cb0c86f368a748
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 07a2e38f38ca5e9414f5ab6b416eb0ca888131f2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49951596"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53866903"
 ---
 # <a name="composite-patterns-for-visual-studio"></a>適用於 Visual Studio 的複合模式
 複合模式結合不同組態中的互動與設計元素。 在 Visual Studio 中的一致性方面的最重要複合模式包括：  
@@ -242,7 +239,7 @@ ms.locfileid: "49951596"
 
     -   **明確的命令：** 內嵌展示者  
 
-    -   **連按兩下環境標記：** CodeLens 快顯視窗  
+    -   **按兩下環境的指標：** CodeLens 快顯視窗  
 
 -   **一律**使用者按下 Esc 鍵關閉詳細資料內容。  
 

@@ -1,15 +1,10 @@
 ---
-title: 如何： 將實體新增至模型 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：將實體新增至模型 |Microsoft Docs
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - EntityTool
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -22,14 +17,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 72dbebd8ff9b2e7bf7b001d540158656271c0556
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 347728ac4f096359f06ca7823adfcd1b25ff527a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36757703"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53964029"
 ---
-# <a name="how-to-add-an-entity-to-a-model"></a>如何： 將實體新增至模型
+# <a name="how-to-add-an-entity-to-a-model"></a>HOW TO：將實體新增至模型
   若要建立實體，請從 Visual Studio 中新增實體控制項**工具箱**商務資料連接 (BDC) 設計工具上。  
   
 ### <a name="to-add-an-entity-to-the-model"></a>若要將實體新增至模型  
@@ -53,10 +48,8 @@ ms.locfileid: "36757703"
      [!code-vb[SP_BDC_Entity_Data_Class#1](../sharepoint/codesnippet/VisualBasic/sp_bdc_entity_data_class/bdcmodel1/contact.vb#1)]  
   
 ## <a name="see-also"></a>另請參閱
- [如何： 新增建立者方法](../sharepoint/how-to-add-a-creator-method.md)   
- [如何： 加入刪除者方法](../sharepoint/how-to-add-a-deleter-method.md)   
- [如何： 加入更新者方法](../sharepoint/how-to-add-an-updater-method.md)   
- [如何： 新增搜尋方法](../sharepoint/how-to-add-a-finder-method.md)   
- [如何： 加入特定搜尋方法](../sharepoint/how-to-add-a-specific-finder-method.md)  
-  
- 
+ [如何：新增建立者方法](../sharepoint/how-to-add-a-creator-method.md)   
+ [如何：新增刪除者方法](../sharepoint/how-to-add-a-deleter-method.md)   
+ [如何：新增更新者方法](../sharepoint/how-to-add-an-updater-method.md)   
+ [如何：新增搜尋方法](../sharepoint/how-to-add-a-finder-method.md)   
+ [如何：新增特定搜尋方法](../sharepoint/how-to-add-a-specific-finder-method.md)  

@@ -1,9 +1,6 @@
 ---
-title: 逐步解說： 建立 Word 的第一個文件層級自訂
-ms.custom: ''
+title: 逐步解說：建立 Word 的第一個文件層級自訂
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,14 +14,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1c5c25163a49e51b0759e57318d6119edec97983
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8aff32bbbbc396651079d16449e9746760c4541e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49928811"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53856421"
 ---
-# <a name="walkthrough-create-your-first-document-level-customization-for-word"></a>逐步解說： 建立 Word 的第一個文件層級自訂
+# <a name="walkthrough-create-your-first-document-level-customization-for-word"></a>逐步解說：建立 Word 的第一個文件層級自訂
   本入門逐步解說將示範如何建立 Microsoft Office Word 的文件層級自訂。 只有在特定的文件開啟時，才能使用您在這種解決方案中建立的功能。 您不能使用文件層級自訂來進行應用程式層級的變更，例如在任何文件開啟時顯示新功能區索引標籤。  
   
  [!INCLUDE[appliesto_wdalldoc](../vsto/includes/appliesto-wdalldoc-md.md)]  
@@ -143,13 +140,13 @@ ms.locfileid: "49928811"
 ## <a name="next-steps"></a>後續步驟  
  現在您已經建立 Word 的基本文件層級自訂，可以從下列主題進一步了解如何開發自訂：  
   
--   您可以在文件層級自訂中執行的一般程式設計工作：[程式的文件層級自訂](../vsto/programming-document-level-customizations.md)。  
+-   您可以在文件層級自訂中執行的一般程式設計工作：[程式文件層級自訂](../vsto/programming-document-level-customizations.md)。  
   
--   Word 的文件層級自訂專屬的程式設計工作： [Word 解決方案](../vsto/word-solutions.md)。  
+-   Word 的文件層級自訂專屬的程式設計工作：[Word 解決方案](../vsto/word-solutions.md)。  
   
--   使用 Word 物件模型： [Word 物件模型概觀](../vsto/word-object-model-overview.md)。  
+-   使用 Word 物件模型：[Word 物件模型概觀](../vsto/word-object-model-overview.md)。  
   
--   自訂 Word 的 UI，比方說，藉由在功能區中加入自訂索引標籤或建立您自己的執行窗格： [Office UI 自訂](../vsto/office-ui-customization.md)。  
+-   自訂 Word 的 UI，例如，在功能區中加入自訂索引標籤，或建立您自己的動作 窗格：[Office UI 自訂](../vsto/office-ui-customization.md)。  
   
 -   使用 Visual Studio 中的 Office 方案所提供的擴充的 Word 物件來執行，不能使用 Word 物件模型 （例如，裝載 managed 的控制項上的文件和資料的 Word 控制項繫結使用的 Windows Form 資料的工作繫結模型）：[使用擴充的物件自動化 Word](../vsto/automating-word-by-using-extended-objects.md)。  
   
@@ -167,5 +164,3 @@ ms.locfileid: "49928811"
  [建置 Office 方案](../vsto/building-office-solutions.md)   
  [部署 Office 方案](../vsto/deploying-an-office-solution.md)   
  [Office 專案範本概觀](../vsto/office-project-templates-overview.md)  
-  
-  

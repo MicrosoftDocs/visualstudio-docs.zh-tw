@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f66d3fdcd400be9356776647b0ead118e83d7108
-ms.sourcegitcommit: c5e72875206b8c5737c29d5b1ec7b86eec747303
-ms.translationtype: MT
+ms.openlocfilehash: c6bd9685a5ea9bc2e6e0dc94f7fbff395fab523e
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "49382739"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53562057"
 ---
 # <a name="debug-using-the-just-in-time-debugger-in-visual-studio"></a>在 Visual Studio 中使用 Just-In-Time 偵錯工具進行偵錯
 
@@ -36,7 +36,7 @@ ms.locfileid: "49382739"
 
 您可以設定只需的時間從 Visual Studio 偵錯**工具** > **選項**(或**偵錯** > **選項**) 對話方塊。 
 
-**若要啟用或停用 Just In Time 偵錯：**
+**啟用或停用 Just-In-Time 偵錯：**
 
 1. 在 **工具**或是**偵錯**功能表上，選取**選項** > **偵錯** >  **在 Just-in-time**。
 
@@ -52,7 +52,7 @@ ms.locfileid: "49382739"
 
 即使電腦上已沒有安裝 Visual Studio，Just-In-Time 偵錯可能仍然為啟用狀態。 如果不會再安裝 Visual Studio，您可以停用 Just 時間透過編輯 Windows 登錄偵錯。
 
-**若要停用 Just In Time 偵錯，藉由編輯登錄：**
+**藉由編輯登錄來停用 Just-In-Time 偵錯：**
 
 1.  從 Windows**開始**功能表中，執行**登錄編輯器**(*regedit.exe*)。
 
@@ -82,7 +82,7 @@ ms.locfileid: "49382739"
 
 若要啟用 Just-in-time 時間偵錯，而不標準的 Windows 表單錯誤處理，請新增這些設定：
 
--  在 `system.windows.forms`一節*machine.config*或*\<應用程式名稱 >.exe.config*檔案中，設定`jitDebugging`值`true`:
+-  在 `system.windows.forms`一節*machine.config*或*\<應用程式名稱 >。 .exe.config*檔案中，設定`jitDebugging`值`true`:
     
     ```xml
     <configuration>
@@ -90,7 +90,7 @@ ms.locfileid: "49382739"
     </configuration>
     ```
     
--  在 c + + Windows Form 應用程式中，也設定`DebuggableAttribute`要`true`中 *.config*檔案或程式碼中。 如果您使用編譯[/Zi](/cpp/build/reference/z7-zi-zi-debug-information-format) ，而不[/Og](/cpp/build/reference/og-global-optimizations)，編譯器會將這個屬性設為您。 如果您想要偵錯非最佳化的發行組建，不過，您必須設定`DebuggableAttribute`藉由在您的應用程式中加入下列這一行*AssemblyInfo.cpp*檔案：
+-  在 c + + Windows Form 應用程式中，也設定`DebuggableAttribute`要`true`中 *.config*檔案或程式碼中。 如果您使用 [/Zi](/cpp/build/reference/z7-zi-zi-debug-information-format) 而且未使用 [/Og](/cpp/build/reference/og-global-optimizations) 進行編譯，則編譯器將會設定這個屬性 (Attribute)。 如果您想要偵錯非最佳化的發行組建，不過，您必須設定`DebuggableAttribute`藉由在您的應用程式中加入下列這一行*AssemblyInfo.cpp*檔案：
 
    ```cpp
    [assembly:System::Diagnostics::DebuggableAttribute(true, true)];
@@ -107,7 +107,7 @@ ms.locfileid: "49382739"
 
 針對此範例中，您將建立C#會擲回的 Visual Studio 中的主控台應用程式[NullReferenceException](/dotnet/api/system.nullreferenceexception)。
 
-1. 在 Visual Studio 中建立C#主控台應用程式 (**檔案** > **新增** > **專案** > **Visual C#**   > **主控台應用程式**) 名為*ThrowsNullException*。 如需在 Visual Studio 中建立專案的詳細資訊，請參閱[逐步解說： 建立簡單的應用程式](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)。
+1. 在 Visual Studio 中建立C#主控台應用程式 (**檔案** > **新增** > **專案** > **Visual C#**   > **主控台應用程式**) 名為*ThrowsNullException*。 如需在 Visual Studio 中建立專案的詳細資訊，請參閱[逐步解說：建立簡單的應用程式](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)
    
 1. 當專案開啟時 Visual Studio 中時，開啟*Program.cs*檔案。 取代為下列程式碼，這會列印到主控台一行，然後擲回 NullReferenceException 的 main （） 方法：
    
@@ -161,7 +161,7 @@ ms.locfileid: "49382739"
 
   - **HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\Windows 錯誤報告**
     
-  - （適用於 64 位元電腦）： **HKEY_LOCAL_MACHINE\Software\WOW6432Node\Microsoft\Windows\Windows 錯誤報告**
+  - （適用於 64 位元電腦）：**HKEY_LOCAL_MACHINE\Software\WOW6432Node\Microsoft\Windows\Windows 錯誤報告**
   
   如需詳細資訊，請參閱[。WER 設定](https://docs.microsoft.com/windows/desktop/wer/wer-settings)。
   
@@ -172,23 +172,23 @@ ms.locfileid: "49382739"
   
   - **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\AeDebug**
     
-  - （適用於 64 位元電腦）： **HKEY_LOCAL_MACHINE\Software\WOW6432Node\Microsoft\Windows NT\CurrentVersion\AeDebug**
+  - （適用於 64 位元電腦）：**HKEY_LOCAL_MACHINE\Software\WOW6432Node\Microsoft\Windows NT\CurrentVersion\AeDebug**
 
 您可能會看到下列錯誤訊息在 Just In Time 期間偵錯：
 
-- **無法附加到損毀處理序。指定的程式不是 Windows 或 MS-DOS 程式。**
+- **無法附加至沒有回應的處理序。所指定的程式不是 Windows 或 MS-DOS 程式。**
 
     偵錯工具會嘗試將附加至在另一位使用者執行的程序。
 
     若要解決這個問題，請在 Visual Studio 中，開啟**偵錯** > **připojit k procesu**，並尋找您要在偵錯的處理序**可用的處理序**清單。 如果您不知道處理序的名稱，找到處理序識別碼中**Visual Studio Just-In-Time 偵錯工具**對話方塊。 選取中的程序**可用的處理序**清單，然後選取**附加**。 選取 [ **No**關閉的時間只需偵錯工具] 對話方塊。
 
-- **無法啟動偵錯工具，因為沒有使用者登入。**
+- **由於沒有使用者登入，無法啟動偵錯工具。**
 
     沒有登入主控台，因此沒有要顯示的時間就沒有任何使用者工作階段的使用者偵錯 對話方塊。
 
     若要修正這個問題，請登入該電腦。
 
-- **未註冊的類別。**
+- **類別未登錄。**
 
     偵錯工具會嘗試建立的 COM 類別未註冊，可能因為未安裝的問題。
 
@@ -196,6 +196,6 @@ ms.locfileid: "49382739"
 
 ## <a name="see-also"></a>另請參閱
 - [偵錯工具安全性](../debugger/debugger-security.md)
-- [偵錯工具基礎](../debugger/getting-started-with-the-debugger.md)
+- [偵錯工具簡介](../debugger/debugger-feature-tour.md)
 - [選項、 偵錯，Just In Time 對話方塊](../debugger/just-in-time-debugging-options-dialog-box.md)
-- [安全性警告︰附加至未受信任的使用者所擁有的處理序可能會造成危險。如果下面的資訊看起來有問題，或者您並不確定，請不要附加至此處理序](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md)
+- [安全性警告附加至不受信任的使用者所擁有的處理序可能會造成危險。如果下面的資訊看起來有問題，或者您並不確定，請不要附加至此處理序](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md)

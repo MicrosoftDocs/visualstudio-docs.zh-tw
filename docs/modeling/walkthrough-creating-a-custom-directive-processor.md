@@ -11,16 +11,15 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: c430dad62686e49d9ce07fdff9a3665b0ea519a4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 44eb71a4bbb209453ee7deef6adf3b10c561e8af
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49930319"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53951822"
 ---
 # <a name="walkthrough-create-a-custom-directive-processor"></a>逐步解說：建立自訂指示詞處理器
 
@@ -603,7 +602,7 @@ End Property
 
 4. 針對僅限 Visual Basic，開啟**專案**功能表，然後按一下**CustomDP 屬性**。 在 **應用程式**索引標籤中，於**根命名空間**，刪除預設值， `CustomDP`。
 
-5. 按一下 [ **檔案** ] 功能表上的 [ **全部儲存**]。
+5. 在 [檔案] 功能表上按一下 [全部儲存]。
 
 6. 在 [ **建置** ] 功能表上，按一下 [ **建置方案**]。
 

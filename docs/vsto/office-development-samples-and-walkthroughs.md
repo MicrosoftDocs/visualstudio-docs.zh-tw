@@ -1,9 +1,6 @@
 ---
 title: Office 程式開發範例和逐步解說
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -23,12 +20,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 925886683b274ddff704771d4939c2112003bb58
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 989536860500e092a36addc74eedc4759c959160
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35671403"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53909784"
 ---
 # <a name="office-development-samples-and-walkthroughs"></a>Office 程式開發範例和逐步解說
   本章節包含範例應用程式、 程式碼範例和逐步解說，說明語法、 結構和用來建置 Microsoft Office 方案的技術。  
@@ -60,5 +57,3 @@ ms.locfileid: "35671403"
 |[在 Office 程式設計中的一般工作](../vsto/common-tasks-in-office-programming.md)|列出在 Visual Studio 中的 Office 程式開發與程式設計的相關常見問題的解答，並提供可協助解決常見問題的主題連結。|  
 |[設計和建立 Office 方案](../vsto/designing-and-creating-office-solutions.md)|提供有關如何建立 Microsoft Office 方案部署和角色的方案中的組件的相關資訊的連結。|  
 |[執行窗格概觀](../vsto/actions-pane-overview.md)|提供文件層級工作窗格稱為 [動作] 窗格的概觀。|  
-  
-  

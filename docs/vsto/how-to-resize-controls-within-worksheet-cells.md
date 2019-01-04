@@ -1,9 +1,6 @@
 ---
-title: 如何： 在工作表儲存格內的控制項重新調整大小
-ms.custom: ''
+title: HOW TO：調整工作表儲存格內的控制項的大小
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,14 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 91a7e66e085408b35f0ce1d8f7d4783e0c4715a8
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 67ec290959263282c9a6f924ca9d6ba2c67b5930
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35671410"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53927346"
 ---
-# <a name="how-to-resize-controls-within-worksheet-cells"></a>如何： 在工作表儲存格內的控制項重新調整大小
+# <a name="how-to-resize-controls-within-worksheet-cells"></a>HOW TO：調整工作表儲存格內的控制項的大小
   當您調整資料行或工作表上的資料列時，資料格內的任何主控制項自動調整大小的高度或寬度已調整大小之儲存格。 Windows Form 控制項不調整大小會自動預設。  
   
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]  
@@ -78,8 +75,7 @@ ms.locfileid: "35671410"
   
 ## <a name="see-also"></a>另請參閱  
  [Office 文件上的控制項](../vsto/controls-on-office-documents.md)   
- [如何： 將 Windows Form 控制項加入 Office 文件](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)   
- [如何： 列印時隱藏工作表的控制項](../vsto/how-to-hide-controls-on-worksheets-when-printing.md)   
+ [如何：將 Windows Form 控制項加入 Office 文件](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)   
+ [如何：列印時隱藏工作表的控制項](../vsto/how-to-hide-controls-on-worksheets-when-printing.md)   
  [將控制項加入 Office 文件，在執行階段](../vsto/adding-controls-to-office-documents-at-run-time.md)   
  [Office 文件上的 Windows Form 控制項的限制](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)  
-  

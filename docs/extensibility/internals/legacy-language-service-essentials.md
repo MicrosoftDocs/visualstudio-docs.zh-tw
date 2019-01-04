@@ -1,9 +1,6 @@
 ---
 title: 舊版語言服務的基本資訊 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - languages, integrating into Visual Studio
@@ -16,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 344a7949c5058237d8599d69ea3b234e9a6e8e72
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 79ecbd971315c004a9be40221a6950afb5856823
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49850165"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53847200"
 ---
 # <a name="legacy-language-service-essentials"></a>舊版語言服務的基本資訊
 您必須提供語言服務以整合到 Visual Studio 的程式設計語言。 本主題說明在舊版語言服務中可用的功能。  
@@ -50,4 +47,3 @@ ms.locfileid: "49850165"
 |-----------------------| - |
 | 運算式評估工具 | 支援[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]透過驗證中斷點，並提供一份運算式的偵錯工具，顯示在 **[自動變數]** 偵錯視窗。<br /><br /> 如需詳細資訊，請參閱 <<c0> [ 偵錯的語言服務支援](../../extensibility/internals/language-service-support-for-debugging.md)。 |
 | 符號瀏覽工具 | 支援**物件瀏覽器**，**類別檢視**，**呼叫瀏覽器**，以及**尋找符號結果**。 |
-

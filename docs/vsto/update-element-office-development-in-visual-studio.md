@@ -1,9 +1,6 @@
 ---
 title: '&lt;更新&gt;元素 （在 Visual Studio 中的 Office 程式開發）'
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ec520c140dedf3a5bb93ebd5f17f8751687abcac
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: 661aa9c0c1a590e78d20e52b6321294d59e70c63
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53805006"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53988984"
 ---
 # <a name="ltupdategt-element-office-development-in-visual-studio"></a>&lt;更新&gt;元素 （在 Visual Studio 中的 Office 程式開發）
   `update`項目指定的方案將會檢查更新的間隔。

@@ -1,5 +1,5 @@
 ---
-title: 使用 c + + Core Guidelines 檢查工具
+title: 使用 C++ Core Guidelines 檢查工具
 ms.date: 08/14/2018
 ms.topic: conceptual
 author: mikeblome
@@ -8,15 +8,14 @@ manager: wpickett
 dev_langs:
 - CPP
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
-ms.openlocfilehash: 6595e8990dece15e88e07a6c8eefabd3f543bbb7
-ms.sourcegitcommit: 1abb9cf4c3ccb90e3481ea8079272c98aad12875
+ms.openlocfilehash: 2ed89e5210a3b8201f612887f2346b57e03cef20
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/26/2018
-ms.locfileid: "50143459"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53820234"
 ---
-# <a name="using-the-c-core-guidelines-checkers"></a>使用 c + + Core Guidelines 檢查工具
+# <a name="using-the-c-core-guidelines-checkers"></a>使用 C++ Core Guidelines 檢查工具
 C + + Core Guidelines 是可攜性的集合的指導方針、 規則和關於 c + + 專家和設計工具所建立的 c + + 中撰寫程式碼的最佳作法。 Visual Studio 目前支援 c + + 做為其程式碼分析工具的一部分，這些規則的子集。 在 Visual Studio 2017 中，預設會安裝核心指南檢查工具，並會[以 Visual Studio 2015 的 NuGet 套件形式提供](#vs2015_corecheck)。
 
 ## <a name="the-c-core-guidelines-project"></a>C + + Core Guidelines 的專案
@@ -55,11 +54,11 @@ int main()
 
 此範例會示範幾個可以找到的 c + + Core Check 規則的警告：
 
-- C26494 是規則 Type.5： 一律初始化物件。
+- C26494 是規則 Type.5:一律初始化物件。
 
-- C26485 是規則 Bounds.3： 沒有陣列到指標 」 衰減。
+- C26485 是規則 Bounds.3:任何陣列到指標 」 衰減。
 
-- C26481 是規則 Bounds.1： 不使用指標算術。 請改用 `span`。
+- C26481 是規則 Bounds.1:請勿使用指標算術。 請改用 `span`。
 
 如果安裝和啟用，當您編譯此程式碼時前, 兩個警告皆為輸出，但會隱藏第三個 c + + Core Check 的程式碼分析規則集。 以下是範例程式碼的組建輸出：
 

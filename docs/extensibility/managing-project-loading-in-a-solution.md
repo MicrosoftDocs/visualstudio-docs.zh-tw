@@ -1,9 +1,6 @@
 ---
 title: 管理方案中的專案載入 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - solutions, managing project loading
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2ead4834f1d29baff099eedbf464c1ba6344ca6c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1f861f765305dc0ea4bdfd83326a5a4888239033
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49950195"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53870147"
 ---
 # <a name="manage-project-loading-in-a-solution"></a>管理方案中的專案載入
 Visual Studio 方案可以包含大量的專案。 Visual Studio 預設會在開啟解決方案時，階段中載入方案中的所有專案，而且不允許使用者存取的任何專案，直到它們全部完成載入。 當專案載入的程序會持續超過兩分鐘時，會顯示進度列，顯示載入的專案數目及專案的總數。 使用者可以同時使用多個專案的方案中工作卸載的專案，但此程序有一些缺點： 已卸載的專案並不是建置為重建方案 命令的一部分，並關閉 IntelliSense 描述的型別和成員專案不會顯示。  
@@ -62,17 +59,17 @@ pSolution.SetProperty((int)__VSPROPID4.VSPROPID_ActiveSolutionLoadManager, objLo
 ## <a name="handle-solution-load-events"></a>處理方案負載事件  
  若要訂閱的方案載入事件，請呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.AdviseSolutionEvents%2A>當您啟用您的方案負載管理員。 如果您實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents>，您可以回應不同的專案載入屬性與相關的事件。  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnBeforeOpenSolution%2A>： 開啟方案之前，會引發此事件。
+-   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnBeforeOpenSolution%2A>：開啟方案之前，會引發此事件。
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnBeforeBackgroundSolutionLoadBegins%2A>： 此事件引發之後，方案已完全載入，但在背景之前載入的專案重新開始。
+-   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnBeforeBackgroundSolutionLoadBegins%2A>：之後，方案已完全載入，但在背景之前載入的專案重新開始，將引發此事件。
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnAfterBackgroundSolutionLoadComplete%2A>： 此事件引發之後一開始會完全載入方案時，有解決方案負載管理員。 它也會引發之後背景負載或隨選載入解決方案會變得完全載入時。 在此同時，<xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionExistsAndFullyLoaded_guid>就會重新啟動。  
+-   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnAfterBackgroundSolutionLoadComplete%2A>：有解決方案負載管理員之後一開始會完全載入方案時，, 會引發此事件。 它也會引發之後背景負載或隨選載入解決方案會變得完全載入時。 在此同時，<xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionExistsAndFullyLoaded_guid>就會重新啟動。  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnQueryBackgroundLoadProjectBatch%2A>： 此事件引發之前載入的專案 （或專案）。 若要確保載入專案之前，完成其他背景處理程序，將`pfShouldDelayLoadToNextIdle`要 **，則為 true**。  
+-   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnQueryBackgroundLoadProjectBatch%2A>：載入專案 （或專案） 之前，會引發此事件。 若要確保載入專案之前，完成其他背景處理程序，將`pfShouldDelayLoadToNextIdle`要 **，則為 true**。  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnBeforeLoadProjectBatch%2A>： 即將載入專案的批次時，會引發此事件。 如果`fIsBackgroundIdleBatch`為 true，如果專案是在背景; 載入`fIsBackgroundIdleBatch`為 false，是要載入以同步方式要求的結果使用者，例如使用者如果展開方案總管 中的擱置專案的專案。 您可以處理這個事件來執行耗費資源的工作，否則會需要在<xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnAfterOpenProject%2A>。  
+-   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnBeforeLoadProjectBatch%2A>：即將載入專案的批次時，會引發此事件。 如果`fIsBackgroundIdleBatch`為 true，如果專案是在背景; 載入`fIsBackgroundIdleBatch`為 false，是要載入以同步方式要求的結果使用者，例如使用者如果展開方案總管 中的擱置專案的專案。 您可以處理這個事件來執行耗費資源的工作，否則會需要在<xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnAfterOpenProject%2A>。  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnAfterLoadProjectBatch%2A>： 已載入專案的批次後，會引發此事件。  
+-   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnAfterLoadProjectBatch%2A>：已載入專案的批次後，會引發此事件。  
   
 ## <a name="detect-and-manage-solution-and-project-loading"></a>偵測及管理方案和專案載入  
  若要偵測的專案和方案載入狀態，請呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.GetProperty%2A>具有下列值：  
