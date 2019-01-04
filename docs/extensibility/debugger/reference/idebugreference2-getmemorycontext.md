@@ -1,9 +1,6 @@
 ---
 title: IDebugReference2::GetMemoryContext |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugReference2::GetMemoryContext
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2cbec8192f896fffa61a9df6a80493dd65087f59
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ffc97a36cc8d2ebbae5f8c37b85612a2b078d82f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49905153"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53902986"
 ---
 # <a name="idebugreference2getmemorycontext"></a>IDebugReference2::GetMemoryContext
 取得參考的記憶體內容。 保留供未來使用。  
@@ -28,13 +25,13 @@ ms.locfileid: "49905153"
 ## <a name="syntax"></a>語法  
   
 ```cpp  
-HRESULT GetMemoryContext (   
+HRESULT GetMemoryContext (   
    IDebugMemoryContext2** ppMemory  
 );  
 ```  
   
 ```csharp  
-int GetMemoryContext (   
+int GetMemoryContext (   
    out IDebugMemoryContext2 ppMemory  
 );  
 ```  

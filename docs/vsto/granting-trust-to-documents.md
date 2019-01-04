@@ -1,9 +1,6 @@
 ---
 title: 將信任授與文件
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,12 +15,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e1fb856897f4db39fb41875f3230603237f0cc0b
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: a60470d43842384103462fe69c4beba72bdc452d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53648830"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53912335"
 ---
 # <a name="grant-trust-to-documents"></a>將信任授與文件
   文件層級專案和應用程式層級專案具有相同的安全性需求：您需使用憑證簽署資訊清單，或按一下信任提示。 此外，文件或活頁簿所在的目錄，必須指定為信任位置。  
@@ -50,5 +47,3 @@ ms.locfileid: "53648830"
  [授與信任給 Office 方案](../vsto/granting-trust-to-office-solutions.md)   
  [針對 Office 方案安全性進行疑難排解](../vsto/troubleshooting-office-solution-security.md)   
  [保護 Office 方案](../vsto/securing-office-solutions.md)  
-  
-  

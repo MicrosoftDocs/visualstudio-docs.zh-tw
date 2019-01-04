@@ -1,9 +1,6 @@
 ---
-title: IDebugCodeContext3 |Microsoft 文件
-ms.custom: ''
+title: IDebugCodeContext3 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - IDebugCodeContext3 interface
@@ -13,15 +10,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 451e61ab7d6f74c83898987cdbecad2a9e13b06c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c4632e2a616bbc5c93cd6fb6ed2375217d4fd2b6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31108504"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53927398"
 ---
 # <a name="idebugcodecontext3"></a>IDebugCodeContext3
-擴充[IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)介面，以擷取模組和處理序的介面。  
+擴充[IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)介面，可讓模組和處理程序介面擷取。  
   
 ## <a name="syntax"></a>語法  
   
@@ -29,11 +26,11 @@ ms.locfileid: "31108504"
 IDebugCodeContext3 : IDebugCodeContext2  
 ```  
   
-## <a name="notes-for-implementers"></a>實作者注意事項  
- 偵錯引擎所實作且由[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]偵錯封裝。  
+## <a name="notes-for-implementers"></a>實作者的附註  
+ 藉由將偵錯引擎，而且由[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]偵錯封裝。  
   
 ## <a name="methods"></a>方法  
- 除了上`IDebugCodeContext2`介面，這個介面會實作下列方法：  
+ 上的方法除了`IDebugCodeContext2`介面，這個介面會實作下列方法：  
   
 |方法|描述|  
 |------------|-----------------|  
@@ -41,11 +38,11 @@ IDebugCodeContext3 : IDebugCodeContext2
 |[GetProcess](../../../extensibility/debugger/reference/idebugcodecontext3-getprocess.md)|擷取偵錯處理序的介面的參考。|  
   
 ## <a name="remarks"></a>備註  
- 這是選擇性但通常不需要實作的介面。  
+ 這是選擇性的介面，但通常不需要實作。  
   
 ## <a name="requirements"></a>需求  
- 標頭： Msdbg.h  
+ 標頭：Msdbg.h  
   
- 命名空間： Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間:Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
+ 組件︰Microsoft.VisualStudio.Debugger.Interop.dll

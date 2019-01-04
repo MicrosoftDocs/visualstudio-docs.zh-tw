@@ -1,8 +1,7 @@
 ---
-title: CA2124：必須將有弱點的 finally 子句包裝在外層 try 中
+title: CA2124:必須將有弱點的 finally 子句包裝在外層 try 中
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA2124
@@ -16,14 +15,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 50c03a16af9562df40dc04a431fac157c1321fbb
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 4a15c5019dd5f3084ff250015e8a9725f4dbf971
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47860078"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53829286"
 ---
-# <a name="ca2124-wrap-vulnerable-finally-clauses-in-outer-try"></a>CA2124：必須將有弱點的 finally 子句包裝在外層 try 中
+# <a name="ca2124-wrap-vulnerable-finally-clauses-in-outer-try"></a>CA2124:必須將有弱點的 finally 子句包裝在外層 try 中
 
 |||
 |-|-|

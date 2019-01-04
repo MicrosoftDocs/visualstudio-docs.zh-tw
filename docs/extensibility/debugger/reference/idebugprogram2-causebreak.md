@@ -1,9 +1,6 @@
 ---
 title: IDebugProgram2::CauseBreak |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugProgram2::CauseBreak
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b1abd2e5c3681a63d918763b99ebc09a43fe5988
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c0e30e90aa1778904bc6c6349427c567ea3bb160
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49864526"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53829666"
 ---
 # <a name="idebugprogram2causebreak"></a>IDebugProgram2::CauseBreak
 程式停止執行下一個要求的時間執行其執行緒嘗試的其中一個。  
@@ -28,8 +25,8 @@ ms.locfileid: "49864526"
 ## <a name="syntax"></a>語法  
   
 ```cpp  
-HRESULT CauseBreak(   
-   void   
+HRESULT CauseBreak(   
+   void   
 );  
 ```  
   

@@ -1,9 +1,6 @@
 ---
-title: 逐步解說： 將內容控制項繫結至自訂 XML 組件
-ms.custom: ''
+title: 逐步解說：內容控制項繫結至自訂 XML 組件
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -20,14 +17,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 05d7c3cc2c391eee6ceeba492cd083efd3c00015
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: HT
+ms.openlocfilehash: 5989100376dd04d1fcfa57efff11042f2e2c8454
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49916747"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53899648"
 ---
-# <a name="walkthrough-bind-content-controls-to-custom-xml-parts"></a>逐步解說： 將內容控制項繫結至自訂 XML 組件
+# <a name="walkthrough-bind-content-controls-to-custom-xml-parts"></a>逐步解說：內容控制項繫結至自訂 XML 組件
   本逐步解說示範如何將 Word 之文件層級自訂中的內容控制項繫結至文件中所儲存的 XML 資料。  
   
  [!INCLUDE[appliesto_wdalldoc](../vsto/includes/appliesto-wdalldoc-md.md)]  
@@ -62,7 +59,7 @@ ms.locfileid: "49916747"
   
 ### <a name="to-create-a-new-word-document-project"></a>建立新的 Word 文件專案  
   
-1.  建立 Word 文件專案名稱**EmployeeControls**。 建立方案的新文件。 如需詳細資訊，請參閱 <<c0> [ 如何： 在 Visual Studio 中的建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
+1.  建立 Word 文件專案名稱**EmployeeControls**。 建立方案的新文件。 如需詳細資訊，請參閱[＜How to：在 Visual Studio 中建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
   
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 在設計工具中開啟新的 Word 文件，並將**EmployeeControls**專案加入**方案總管 中**。  
   
@@ -88,7 +85,7 @@ ms.locfileid: "49916747"
 5. 在功能區中，選擇**開發人員** 索引標籤。  
   
    > [!NOTE]  
-   >  如果 [開發人員]  索引標籤沒有顯示，您必須先使其顯示。 如需詳細資訊，請參閱 <<c0> [ 如何： 在功能區顯示開發人員索引標籤](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)。  
+   >  如果 [開發人員]  索引標籤沒有顯示，您必須先使其顯示。 如需詳細資訊，請參閱[＜How to：在功能區顯示開發人員索引標籤](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)。  
   
 6. 在 [**控制項**群組中，選擇**文字**] 按鈕![PlainTextContentControl](../vsto/media/plaintextcontrol.gif "PlainTextContentControl")新增<xref:Microsoft.Office.Tools.Word.PlainTextContentControl>第一個資料格中。  
   
@@ -296,7 +293,7 @@ ms.locfileid: "49916747"
   
 9. 將檔案命名**EmployeeControls.docx.zip**。  
   
-     **EmployeeControls.docx** Open XML 格式儲存文件。 重新命名此文件，藉以 *.zip*副檔名，您可以檢查文件的內容。 如需有關 Open XML 的詳細資訊，請參閱技術文件[簡介 Office (2007) Open XML 檔案格式](http://msdn.microsoft.com/96018532-f62c-4da7-bbff-16b96a483fbf)。  
+     **EmployeeControls.docx** Open XML 格式儲存文件。 重新命名此文件，藉以 *.zip*副檔名，您可以檢查文件的內容。 如需有關 Open XML 的詳細資訊，請參閱技術文件[簡介 Office (2007) Open XML 檔案格式](/previous-versions/office/developer/office-2007/aa338205(v=office.12))。  
   
 10. 開啟**EmployeeControls.docx.zip**檔案。  
   
@@ -313,19 +310,17 @@ ms.locfileid: "49916747"
 ## <a name="next-steps"></a>後續步驟  
  您可以透過下列主題，進一步了解如何使用內容控制項：  
   
--   使用所有可用的內容控制項來建立範本。 如需詳細資訊，請參閱 <<c0> [ 逐步解說： 使用內容控制項建立範本](../vsto/walkthrough-creating-a-template-by-using-content-controls.md)。  
+-   使用所有可用的內容控制項來建立範本。 如需詳細資訊，請參閱[逐步解說：使用內容控制項建立範本](../vsto/walkthrough-creating-a-template-by-using-content-controls.md)。  
   
 -   在關閉文件時，修改自訂 XML 組件中的資料。 下次使用者開啟文件時，繫結至 XML 項目的內容控制項會顯示新的資料。  
   
--   使用內容控制項保護文件的組件。 如需詳細資訊，請參閱 <<c0> [ 如何： 使用內容控制項保護文件的部分](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md)。  
+-   使用內容控制項保護文件的組件。 如需詳細資訊，請參閱[＜How to：使用內容控制項保護文件的部分](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md)。  
   
 ## <a name="see-also"></a>另請參閱  
  [使用擴充的物件自動化 Word](../vsto/automating-word-by-using-extended-objects.md)   
  [內容控制項](../vsto/content-controls.md)   
- [如何： 將內容控制項加入 Word 文件](../vsto/how-to-add-content-controls-to-word-documents.md)   
- [如何： 使用內容控制項保護文件的組件](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md)   
+ [如何：將內容控制項加入 Word 文件](../vsto/how-to-add-content-controls-to-word-documents.md)   
+ [如何：使用內容控制項保護文件的組件](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md)   
  [主項目和主控制項概觀](../vsto/host-items-and-host-controls-overview.md)   
  [主項目和主控制項的程式設計限制](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
  [將控制項加入 Office 文件，在執行階段](../vsto/adding-controls-to-office-documents-at-run-time.md)  
-  
-  

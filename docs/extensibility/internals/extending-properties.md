@@ -1,9 +1,6 @@
 ---
 title: 擴充屬性 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - Properties window, providing support
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 77b5861dd084098e561f3642b5738dd0279d4b52
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: d03533679e367afb1f50ee55196c5d96e03ae580
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512105"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53846581"
 ---
 # <a name="extend-properties"></a>擴充屬性
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] **屬性** 視窗是 COM 和 COM + 元件的通用屬性瀏覽器，並支援所有[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]產品。 **屬性** 視窗的運作方式與`ITypeInfo`類型資訊和 COM + 來列出目前選取的物件，在整合式的開發環境 (IDE) 中的任何其他視窗的設計階段屬性的中繼資料。  
@@ -66,4 +63,4 @@ ms.locfileid: "39512105"
  說明如何[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]有效率地管理參考、 資料連接、 資料夾和您透過方案和專案的開發工作所需的檔案等項目。  
   
  [擴充 Visual Studio 的其他部分](../../extensibility/extending-other-parts-of-visual-studio.md)  
- 說明如何使用[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]服務，以建立比對的其餘的 UI 項目[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。
+ 說明如何使用 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 服務建立 UI 項目，比對其餘的 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。

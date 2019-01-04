@@ -1,9 +1,6 @@
 ---
-title: 如何： 針對服務進行疑難排解 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：針對服務進行疑難排解 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - services, troubleshooting
@@ -13,14 +10,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3d2e1e59b5d2bd1210511b355676407a1368143f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ce33e86714c68d8eac39dca236e67b156187448d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49834210"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53877938"
 ---
-# <a name="how-to-troubleshoot-services"></a>如何： 針對服務進行疑難排解
+# <a name="how-to-troubleshoot-services"></a>HOW TO：針對服務進行疑難排解
 有數個常見的問題，當您嘗試取得服務時，可能會發生：  
   
 - 服務未向[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。  
@@ -41,7 +38,7 @@ if (log == null) return;
   
 ## <a name="to-troubleshoot-a-service"></a>若要疑難排解服務  
   
-1. 檢查系統登錄，以查看是否已正確註冊該服務。 如需詳細資訊，請參閱 <<c0> [ 如何： 提供服務](../extensibility/how-to-provide-a-service.md)。  
+1. 檢查系統登錄，以查看是否已正確註冊該服務。 如需詳細資訊，請參閱[＜How to：提供服務](../extensibility/how-to-provide-a-service.md)。  
   
     下列 *.reg*檔案片段顯示可能會如何登錄 SVsTextManager 服務：  
   

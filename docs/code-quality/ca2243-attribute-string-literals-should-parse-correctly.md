@@ -1,8 +1,7 @@
 ---
-title: CA2243：屬性字串常值必須正確剖析
+title: CA2243:屬性字串常值必須正確剖析
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA2243
@@ -16,20 +15,20 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c6808520f3b28a2da8421394619550166d88d52d
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: b6c7aa4638a1a0a863bf53c85a5e182f57a366d8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45551934"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53939988"
 ---
-# <a name="ca2243-attribute-string-literals-should-parse-correctly"></a>CA2243：屬性字串常值必須正確剖析
+# <a name="ca2243-attribute-string-literals-should-parse-correctly"></a>CA2243:屬性字串常值必須正確剖析
 
 |||
 |-|-|
 |TypeName|AttributeStringLiteralsShouldParseCorrectly|
 |CheckId|CA2243|
-|類別|Microsoft.Usage|
+|分類|Microsoft.Usage|
 |中斷變更|非中斷|
 
 ## <a name="cause"></a>原因
@@ -63,4 +62,4 @@ ms.locfileid: "45551934"
 
 ## <a name="see-also"></a>另請參閱
 
-- [CA1054：URI 參數不應該為字串](../code-quality/ca1054-uri-parameters-should-not-be-strings.md)
+- [CA1054:URI 參數不應該為字串](../code-quality/ca1054-uri-parameters-should-not-be-strings.md)

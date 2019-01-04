@@ -1,9 +1,6 @@
 ---
 title: SccGetCommandOptions 函式 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - SccGetCommandOptions
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 846d1667e1f990a5580520353be46ede76644145
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4237b967e63e89890bba5bed157ff98e7898a115
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49923741"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53823496"
 ---
 # <a name="sccgetcommandoptions-function"></a>SccGetCommandOptions 函式
 此函數會提示使用者提供針對特定命令的進階選項。  

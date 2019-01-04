@@ -1,9 +1,6 @@
 ---
 title: 設計和建立 Office 方案
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,12 +15,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4803cbb515c680ce0d004cb2f9c1f5ee730bc588
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: b1911feec92e802fb8534623c903bb6461832bf2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53648803"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53935973"
 ---
 # <a name="design-and-create-office-solutions"></a>設計和建立 Office 方案
   Visual Studio 提供您可用來建立幾種不同類型之 Office 方案的專案範本。 文件的本節描述此專案範本，並提供有關建立 Office 專案的指引。 如需如何實作自訂程式碼和使用者介面，在您建立專案之後，請參閱[開發 Office 方案](../vsto/developing-office-solutions.md)。  
@@ -108,5 +105,3 @@ ms.locfileid: "53648803"
  [在 Office 程式設計中的一般工作](../vsto/common-tasks-in-office-programming.md)   
  [開發 Office 方案](../vsto/developing-office-solutions.md)   
  [在 Visual Studio 中的 Office 方案的架構](../vsto/architecture-of-office-solutions-in-visual-studio.md)  
-  
-  

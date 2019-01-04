@@ -11,13 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 7755444781bb0205e7483e2365d80cac909c62c6
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: f88e7dbd95d62a17c048bf5fb01785799c3a6ce0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380099"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53845716"
 ---
 # <a name="customize-t4-text-transformation"></a>自訂 T4 文字轉換
 

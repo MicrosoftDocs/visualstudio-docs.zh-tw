@@ -1,9 +1,6 @@
 ---
 title: SccRunScc 函式 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - SccRunScc
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 40c9ced01c16315840194e770a05ba34df4a9321
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1f9798f280d271299037c001e71f9c9f5ed1940f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49920790"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53956455"
 ---
 # <a name="sccrunscc-function"></a>SccRunScc 函式
 此函式會叫用原始檔控制系統管理工具。  
@@ -67,10 +64,10 @@ SCCRTN SccRunScc(
   
  此函式呼叫計數與目前所選檔案的檔案名稱的陣列。 如果系統管理工具支援的檔案清單可出現在管理介面中的檔案否則，您可以忽略清單。  
   
- 當使用者選取此函式通常叫用**啟動\<原始檔控制伺服器 >** 從**檔案** -> **原始檔控制**功能表。 這**啟動**可以一律停用或甚至是藉由設定登錄項目隱藏功能表選項。 請參閱[如何： 安裝原始檔控制外掛程式](../extensibility/internals/how-to-install-a-source-control-plug-in.md)如需詳細資訊。 只有當呼叫此函式[SccInitialize](../extensibility/sccinitialize-function.md)會傳回`SCC_CAP_RUNSCC`功能位元 (請參閱[功能旗標](../extensibility/capability-flags.md)如需有關這個和其他功能位元為單位)。  
+ 當使用者選取此函式通常叫用**啟動\<原始檔控制伺服器 >** 從**檔案** -> **原始檔控制**功能表。 這**啟動**可以一律停用或甚至是藉由設定登錄項目隱藏功能表選項。 請參閱[如何：安裝原始檔控制外掛程式](../extensibility/internals/how-to-install-a-source-control-plug-in.md)如需詳細資訊。 只有當呼叫此函式[SccInitialize](../extensibility/sccinitialize-function.md)會傳回`SCC_CAP_RUNSCC`功能位元 (請參閱[功能旗標](../extensibility/capability-flags.md)如需有關這個和其他功能位元為單位)。  
   
 ## <a name="see-also"></a>另請參閱  
  [原始檔控制外掛程式 API 函式](../extensibility/source-control-plug-in-api-functions.md)   
- [如何： 安裝原始檔控制外掛程式](../extensibility/internals/how-to-install-a-source-control-plug-in.md)   
+ [如何：安裝原始檔控制外掛程式](../extensibility/internals/how-to-install-a-source-control-plug-in.md)   
  [功能旗標](../extensibility/capability-flags.md)   
  [SccInitialize](../extensibility/sccinitialize-function.md)

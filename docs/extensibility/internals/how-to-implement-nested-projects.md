@@ -1,9 +1,6 @@
 ---
-title: 如何： 實作巢狀的專案 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：實作巢狀的專案 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - nested projects, implementing
@@ -14,14 +11,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bee3b5bebb8067ecc4bd1115f46d4b668b114c50
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: d22d67d81776f83683e11d1ca613a9138137e75c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512896"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53945804"
 ---
-# <a name="how-to-implement-nested-projects"></a>如何： 實作巢狀的專案
+# <a name="how-to-implement-nested-projects"></a>HOW TO：實作巢狀的專案
 
 當您建立的巢狀的專案類型時，有幾個必須實作的其他步驟。 父專案會採用一些相同的方案具有及其巢狀 （子系） 專案的責任。 父專案是類似於方案的專案的容器。 特別是，有數個必須在解決方案，以及若要建立巢狀專案的階層的父專案所引發的事件。 這些事件是以建立巢狀的專案的下列程序所述。
 
@@ -91,6 +88,6 @@ ms.locfileid: "39512896"
 
 - [將項目新增至 [加入新項目] 對話方塊](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md)
 - [註冊專案和項目範本](../../extensibility/internals/registering-project-and-item-templates.md)
-- [檢查清單： 建立新的專案類型](../../extensibility/internals/checklist-creating-new-project-types.md)
+- [檢查清單：建立新的專案類型](../../extensibility/internals/checklist-creating-new-project-types.md)
 - [內容參數](../../extensibility/internals/context-parameters.md)
 - [精靈 (.vsz) 檔案](../../extensibility/internals/wizard-dot-vsz-file.md)

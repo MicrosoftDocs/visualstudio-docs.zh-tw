@@ -1,9 +1,6 @@
 ---
 title: 針對 Office 方案中的錯誤進行疑難排解
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VST.Project.DesignerDisabled
@@ -23,12 +20,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: bcc5600f38e2d53244d972e4c4c7094182bfa48c
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: d99c3ba5c393638f965fa32f03a6c534d583a166
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50672947"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53919016"
 ---
 # <a name="troubleshoot-errors-in-office-solutions"></a>針對 Office 方案中的錯誤進行疑難排解
   當您使用 Visual Studio 開發 Office 方案時，如果於過程中執行下列工作，則可能會遇到一些問題：  
@@ -57,9 +54,9 @@ ms.locfileid: "50672947"
 ### <a name="errors-when-you-create-an-excel-workbook-project-based-on-an-existing-workbook"></a>建立根據現有的活頁簿的 Excel 活頁簿專案時發生錯誤  
  如果您建立新的 Excel 活頁簿專案，根據現有的活頁簿時，您可能會看到下列錯誤的組合。  
   
- 來自 Excel：「隱私權警告：此文件包含巨集、ActiveX 控制項、XML 擴充套件資訊或 Web 元件。 這些可能包含無法經由 [文件檢查] 移除的私人資訊。」  
+ 從 Excel:「 隱私權警告：本文件包含巨集、 ActiveX 控制項、 XML 擴充套件資訊或 Web 元件。 這些可能包含無法經由 [文件檢查] 移除的私人資訊。」  
   
- 來自 Visual Studio：「無法正確載入設計工具。」  
+ 從 Visual Studio:「 設計工具無法正確載入 」。  
   
  當您嘗試建立的專案是以已使用 [文件檢查] 移除其個人資訊的活頁簿為基礎時，可能會發生這些錯誤。 若要避免這個錯誤，請在建立專案前先執行下列步驟。  
   
@@ -139,9 +136,9 @@ Word.DocumentClass document = (Word.DocumentClass) Globals.ThisAddIn.Application
   
  這段程式碼會導致下列編譯錯誤：  
   
-- Visual Basic: 「 類別 'DocumentClass' 的參考不允許使用非 PIA 模式連結它的組件時。 」  
+- Visual Basic：「 類別 'DocumentClass' 的參考不允許使用非 PIA 模式連結它的組件時。 」  
   
-- Visual C#:"Interop 類型 'Microsoft.Office.Interop.Word.DocumentClass' 無法內嵌。 請改用適當的介面。」  
+- 視覺化C#:「 'Microsoft.Office.Interop.Word.DocumentClass' 無法內嵌 interop 類型。 請改用適當的介面。」  
   
   若要解決這個錯誤，請修改程式碼以參考對應的介面。 例如，不要參考 <xref:Microsoft.Office.Interop.Word.DocumentClass> 物件，改為參考 <xref:Microsoft.Office.Interop.Word.Document> 介面的執行個體。  
   
@@ -220,5 +217,3 @@ Word.Document document = Globals.ThisAddIn.Application.ActiveDocument;
  [Office 方案進行疑難排解](../vsto/troubleshooting-office-solutions.md)   
  [針對 Office 方案安全性進行疑難排解](../vsto/troubleshooting-office-solution-security.md)   
  [針對 Office 方案部署進行疑難排解](../vsto/troubleshooting-office-solution-deployment.md)  
-  
-  

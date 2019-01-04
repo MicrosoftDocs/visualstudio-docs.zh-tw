@@ -1,9 +1,6 @@
 ---
-title: 逐步解說： 針對 NamedRange 控制項的事件進行程式設計
-ms.custom: ''
+title: 逐步解說：針對 NamedRange 控制項的事件進行程式設計
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,14 +16,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3f8b55cda9576a0203857b3fdaeccbb205b42168
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 020d10aec83cd9249378c326f02ba37c3721b126
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49812514"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53910814"
 ---
-# <a name="walkthrough-program-against-events-of-a-namedrange-control"></a>逐步解說： 針對 NamedRange 控制項的事件進行程式設計
+# <a name="walkthrough-program-against-events-of-a-namedrange-control"></a>逐步解說：針對 NamedRange 控制項的事件進行程式設計
   本逐步解說示範如何新增<xref:Microsoft.Office.Tools.Excel.NamedRange>控制項，Microsoft Office Excel 工作表並對其事件，藉由使用 Visual Studio 中 Office 開發工具的程式。  
   
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]  
@@ -54,7 +51,7 @@ ms.locfileid: "49812514"
   
 ### <a name="to-create-a-new-project"></a>建立新的專案  
   
-1.  建立 Excel 活頁簿專案同名**我的具名範圍事件**。 請確定**建立新的文件**已選取。 如需詳細資訊，請參閱 <<c0> [ 如何： 在 Visual Studio 中的建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
+1.  建立 Excel 活頁簿專案同名**我的具名範圍事件**。 請確定**建立新的文件**已選取。 如需詳細資訊，請參閱[＜How to：在 Visual Studio 中建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
   
      Visual Studio 設計工具中開啟新的 Excel 活頁簿，並將**My 名為範圍的事件**專案加入**方案總管 中**。  
   
@@ -108,7 +105,7 @@ ms.locfileid: "49812514"
      [!code-csharp[Trin_VstcoreHostControlsExcel#24](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#24)]
      [!code-vb[Trin_VstcoreHostControlsExcel#24](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#24)]  
   
-3.  在 C# 中，您必須新增事件處理常式命名的範圍中所示<xref:Microsoft.Office.Tools.Excel.Worksheet.Startup>以下事件。 如需建立事件處理常式的詳細資訊，請參閱[如何： 建立 Office 專案中的事件處理常式](../vsto/how-to-create-event-handlers-in-office-projects.md)。  
+3.  在 C# 中，您必須新增事件處理常式命名的範圍中所示<xref:Microsoft.Office.Tools.Excel.Worksheet.Startup>以下事件。 如需建立事件處理常式的詳細資訊，請參閱[How to:建立 Office 專案中的事件處理常式](../vsto/how-to-create-event-handlers-in-office-projects.md)。  
   
      [!code-csharp[Trin_VstcoreHostControlsExcel#25](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#25)]  
   
@@ -162,9 +159,7 @@ ms.locfileid: "49812514"
  [主項目和主控制項概觀](../vsto/host-items-and-host-controls-overview.md)   
  [使用擴充的物件自動化 Excel](../vsto/automating-excel-by-using-extended-objects.md)   
  [NamedRange 控制項](../vsto/namedrange-control.md)   
- [如何： 調整 NamedRange 控制項的大小](../vsto/how-to-resize-namedrange-controls.md)   
- [如何： 將 NamedRange 控制項加入工作表](../vsto/how-to-add-namedrange-controls-to-worksheets.md)   
+ [如何：調整 NamedRange 控制項的大小](../vsto/how-to-resize-namedrange-controls.md)   
+ [如何：將 NamedRange 控制項加入工作表](../vsto/how-to-add-namedrange-controls-to-worksheets.md)   
  [主項目和主控制項的程式設計限制](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
- [如何： 建立 Office 專案中的事件處理常式](../vsto/how-to-create-event-handlers-in-office-projects.md)  
-  
-  
+ [如何：建立 Office 專案中的事件處理常式](../vsto/how-to-create-event-handlers-in-office-projects.md)  

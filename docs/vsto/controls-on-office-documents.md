@@ -1,9 +1,6 @@
 ---
 title: Office 文件上的控制項
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,12 +16,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0c166ef848f3c9de321bf3451cccdf9c16cfb472
-ms.sourcegitcommit: a715de2ba8c703f37aa2102567b1aa2c0f05a117
+ms.openlocfilehash: 0645c7cd3d030b553457abace8d7cdee07984011
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "53441466"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53930592"
 ---
 # <a name="controls-on-office-documents"></a>Office 文件上的控制項
   您也可以在 Visual Studio 中使用 Office 開發工具，將 Windows Forms 控制項和「主控制項」 *appliesto_controls* (Host Control) 加入 Word 文件和 Excel 工作表。 主控制項是一種物件，在 Word 和 Excel 物件模型中擴充各種使用者介面 (UI) 物件。  
@@ -54,5 +51,3 @@ ms.locfileid: "53441466"
   
  [資料繫結至 Office 方案中的控制項](../vsto/binding-data-to-controls-in-office-solutions.md)  
  描述如何將資料繫結至文件中的主控制項，藉此在 Word 和 Excel 文件中顯示資料。  
-  
-  

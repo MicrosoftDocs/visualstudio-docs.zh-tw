@@ -2,7 +2,6 @@
 title: 進行偵錯時對應呼叫堆疊上的方法
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
 ms.topic: conceptual
 f1_keywords:
 - vs.progression.debugwithcodemaps
@@ -30,12 +29,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c4597f1352e02033c55fcdced126e184f854b463
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: a238da745821da5c93cf953817305703786df805
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53067394"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53889237"
 ---
 # <a name="map-methods-on-the-call-stack-while-debugging-in-visual-studio"></a>在 Visual Studio 中進行偵錯時對應呼叫堆疊上的方法
 在您偵錯時建立 Code Map 以視覺方式追蹤呼叫堆疊。 您可以在對應圖上做筆記，追蹤程式碼的執行狀況，以便專注於尋找 Bug。
@@ -50,7 +49,7 @@ ms.locfileid: "53067394"
 
   請參閱：
 
-- [影片： 可以使用 Code Map 偵錯工具整合 (Channel 9) 以視覺化方式偵錯](http://go.microsoft.com/fwlink/?LinkId=293418)
+- [影片：使用 Code Map 偵錯工具整合 (Channel 9) 以視覺化方式進行偵錯](http://go.microsoft.com/fwlink/?LinkId=293418)
 
 - [對應呼叫堆疊](#MapStack)
 
@@ -68,9 +67,9 @@ ms.locfileid: "53067394"
 
 ## <a name="MapStack"></a> 對應呼叫堆疊
 
-1.  開始偵錯。 (鍵盤： **F5**)
+1.  開始偵錯。 (鍵盤：**F5**)
 
-2.  您的應用程式進入中斷模式或是您逐步執行函式之後，請選擇**Code Map**。 (鍵盤： **Ctrl** + **Shift** + **`**)
+2.  您的應用程式進入中斷模式或是您逐步執行函式之後，請選擇**Code Map**。 (鍵盤：**Ctrl** + **Shift** + **`**)
 
      ![選擇 [Code Map] 開始對應堆疊呼叫](../debugger/media/debuggermap_choosecodemap.png)
 
@@ -93,7 +92,7 @@ ms.locfileid: "53067394"
 ## <a name="AddRelatedCode"></a> 將相關程式碼新增至地圖
  現在您已經有對應-什麼接下來？ 如果您正在使用 C# 或 Visual Basic 中，新增項目，例如欄位、 屬性和其他方法，來追蹤程式碼中的情況。
 
- 按兩下某個方法以查看它的程式碼定義，或使用方法的捷徑功能表 (鍵盤： 選取的方法，在地圖，然後按**F12**)
+ 按兩下某個方法以查看它的程式碼定義，或使用方法的捷徑功能表 (鍵盤：選取的方法，在地圖，然後按**F12**)
 
  ![移至 Code Map 上方法的程式碼定義](../debugger/media/debuggermap_gotocodedefinition.png)
 
@@ -143,7 +142,7 @@ ms.locfileid: "53067394"
 
    變更對應圖不會影響以任何方式的程式碼。 請放心地重新命名、移動或移除對應圖上的任何項目。
 
-- **此訊息表示什麼: 「 圖表可能根據舊版程式碼 」？**
+- **此訊息是什麼意思：「 圖表可能根據舊版程式碼 」？**
 
    從您上次更新對應圖之後，程式碼可能已經變更。 例如，對應圖上的某個呼叫可能已經不再存在於程式碼中。 關閉訊息，然後先嘗試重建方案後再更新對應圖。
 

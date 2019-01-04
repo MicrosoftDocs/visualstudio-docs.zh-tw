@@ -1,9 +1,6 @@
 ---
 title: FIELD_KIND |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - FIELD_KIND
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: df29c9bd876a437dbcf8d797f1dcc51fb05a296f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b4f21a9abfff5d05ccf87eac55c4a39757cea8e7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49868192"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53946392"
 ---
 # <a name="fieldkind"></a>FIELD_KIND
 指定之欄位中所包含的種類[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)物件。  
@@ -28,7 +25,7 @@ ms.locfileid: "49868192"
 ## <a name="syntax"></a>語法  
   
 ```cpp  
-enum enum_FIELD_KIND {   
+enum enum_FIELD_KIND {   
    FIELD_KIND_NONE       = 0x00000000,  
   
    // Type of field  
@@ -58,7 +55,7 @@ enum enum_FIELD_KIND {
    FIELD_TYPE_EXTENDED   = 0x00800000,  
   
    // Specific information about symbols  
-   FIELD_SYM_MEMBER      = 0x01000000,  
+   FIELD_SYM_MEMBER      = 0x01000000,  
    FIELD_SYM_LOCAL       = 0x02000000,  
    FIELD_SYM_PARAM       = 0x04000000,  
    FIELD_SYM_THIS        = 0x08000000,  
@@ -107,7 +104,7 @@ public enum enum_FIELD_KIND {
    FIELD_TYPE_EXTENDED   = 0x00800000,  
   
    // Specific information about symbols  
-   FIELD_SYM_MEMBER      = 0x01000000,  
+   FIELD_SYM_MEMBER      = 0x01000000,  
    FIELD_SYM_LOCAL       = 0x02000000,  
    FIELD_SYM_PARAM       = 0x04000000,  
    FIELD_SYM_THIS        = 0x08000000,  
@@ -232,9 +229,9 @@ public enum enum_FIELD_KIND {
 ## <a name="requirements"></a>需求  
  標頭： sh.h  
   
- 命名空間： Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間:Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
  [列舉型別](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   

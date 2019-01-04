@@ -1,8 +1,7 @@
 ---
-title: CA2151：具有關鍵類型的欄位應為安全性關鍵
+title: CA2151:具有關鍵類型的欄位應為安全性關鍵
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 ms.assetid: 09db9d25-7d58-4725-a252-4a07baadf046
 author: gewarren
@@ -10,25 +9,25 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 14df76b363f4df5d09b06436765b5f0c66ad2c5d
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 279e3d134af967467f195f155373bba725b031e0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45551884"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53895216"
 ---
-# <a name="ca2151-fields-with-critical-types-should-be-security-critical"></a>CA2151：具有關鍵類型的欄位應為安全性關鍵
+# <a name="ca2151-fields-with-critical-types-should-be-security-critical"></a>CA2151:具有關鍵類型的欄位應為安全性關鍵
 
 |||
 |-|-|
 |TypeName||
 |CheckId|CA2151|
-|類別|Microsoft.Security|
+|分類|Microsoft.Security|
 |中斷變更|中斷|
 
 ## <a name="cause"></a>原因
 
-已宣告安全性透明欄位或安全性關鍵欄位。 它的指定類型為安全性關鍵類型。 例如：
+已宣告安全性透明欄位或安全性關鍵欄位。 它的指定類型為安全性關鍵類型。 例如: 
 
 ```csharp
 [assembly: AllowPartiallyTrustedCallers]

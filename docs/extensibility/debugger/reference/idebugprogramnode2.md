@@ -1,9 +1,6 @@
 ---
-title: IDebugProgramNode2 |Microsoft 文件
-ms.custom: ''
+title: IDebugProgramNode2 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugProgramNode2
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a1fd14fb79d410aa20392af42e43004f46dfec73
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 15d811cb01f7d5201f8cc1d7f64795c0197cf99c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31121010"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53848057"
 ---
 # <a name="idebugprogramnode2"></a>IDebugProgramNode2
 此介面代表可進行偵錯的程式。  
@@ -31,11 +28,11 @@ ms.locfileid: "31121010"
 IDebugProgramNode2 : IUnknown  
 ```  
   
-## <a name="notes-for-implementers"></a>實作者注意事項  
- 偵錯引擎 (DE) 或自訂連接埠供應商實作此介面代表可進行偵錯的程式。 通常會實作這個介面會實作在相同物件上[IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)介面。 此介面已向[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]藉由呼叫[PublishProgramNode](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogramnode.md)。  
+## <a name="notes-for-implementers"></a>實作者的附註  
+ 偵錯引擎 (DE) 或自訂的連接埠提供者會實作這個介面來代表可進行偵錯的程式。 通常會實作這個介面上相同的物件會實作[IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)介面。 此介面已向[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]藉由呼叫[PublishProgramNode](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogramnode.md)。  
   
 ## <a name="notes-for-callers"></a>呼叫端資訊  
- 呼叫[GetProviderProgramNode](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprogramnode.md)傳回此介面。 自訂連接埠供應商收到透過呼叫這個介面[AddProgramNode](../../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md)。 透過呼叫這個介面會接收 DE[附加](../../../extensibility/debugger/reference/idebugengine2-attach.md)。  
+ 呼叫[GetProviderProgramNode](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprogramnode.md)返回這個介面。 自訂連接埠供應商收到此介面，透過呼叫[AddProgramNode](../../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md)。 DE 接收此介面，透過呼叫[附加](../../../extensibility/debugger/reference/idebugengine2-attach.md)。  
   
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法  
  下表顯示的方法`IDebugProgramNode2`。  
@@ -51,14 +48,14 @@ IDebugProgramNode2 : IUnknown
 |[DetachDebugger_V7](../../../extensibility/debugger/reference/idebugprogramnode2-detachdebugger-v7.md)|已被取代。 請勿使用。|  
   
 ## <a name="remarks"></a>備註  
- 工作階段的偵錯管理員 (SDM) 通常會呼叫[GetProviderProgramNode](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprogramnode.md)取得此介面。  
+ 工作階段的偵錯管理員 (SDM) 通常會呼叫[GetProviderProgramNode](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprogramnode.md)來取得這個介面。  
   
 ## <a name="requirements"></a>需求  
- 標頭： Msdbg.h  
+ 標頭：Msdbg.h  
   
- 命名空間： Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間:Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
  [核心介面](../../../extensibility/debugger/reference/core-interfaces.md)   

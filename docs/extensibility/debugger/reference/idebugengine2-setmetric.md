@@ -1,9 +1,6 @@
 ---
 title: IDebugEngine2::SetMetric |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugEngine2:::SetMetric
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 02f7d533cfc64ad7a1e3bfd342a2be56a5c6cd7a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 90d53f8ab2ba01eaab075fb2d95d0cf4a60ccd26
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49935948"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53849803"
 ---
 # <a name="idebugengine2setmetric"></a>IDebugEngine2::SetMetric
 這個方法會設定登錄值，稱為度量。  
@@ -28,9 +25,9 @@ ms.locfileid: "49935948"
 ## <a name="syntax"></a>語法  
   
 ```cpp  
-HRESULT SetMetric(  
-   LPCOLESTR pszMetric,  
-   VARIANT   varValue  
+HRESULT SetMetric(  
+   LPCOLESTR pszMetric,  
+   VARIANT   varValue  
 );  
 ```  
   

@@ -1,9 +1,6 @@
 ---
-title: 如何： 在功能區顯示開發人員索引標籤
-ms.custom: ''
+title: HOW TO：在功能區顯示開發人員索引標籤
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,18 +13,18 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: edcbcb969e45403d9ca138b259073e3cf4d73be0
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: c8346a1f23cc9aa02291aa994a0cea51b7810345
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349620"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53906796"
 ---
-# <a name="how-to-show-the-developer-tab-on-the-ribbon"></a>如何： 在功能區顯示開發人員索引標籤
+# <a name="how-to-show-the-developer-tab-on-the-ribbon"></a>HOW TO：在功能區顯示開發人員索引標籤
   若要存取**開發人員** 索引標籤上的 Office 應用程式功能區中，您必須將它設定為顯示該索引標籤上，因為它不會出現預設。 例如，如果您要將 <xref:Microsoft.Office.Tools.Word.GroupContentControl> 加入至 Word 文件層級自訂中，您必須顯示此索引標籤。  
   
 > [!NOTE]  
->  本指導僅適用於 Office 2010 或更新版應用程式。 如果您想要在 2007 Microsoft Office System 顯示這個索引標籤，請參閱本主題的下列版本[如何： 在功能區顯示開發人員索引標籤](https://web.archive.org/web/20140303033431/msdn.microsoft.com/library/bb608625(v=vs.90).aspx
+>  本指導僅適用於 Office 2010 或更新版應用程式。 如果您想要在 2007 Microsoft Office System 顯示這個索引標籤，請參閱本主題的下列版本[How to:在功能區顯示開發人員索引標籤](https://web.archive.org/web/20140303033431/msdn.microsoft.com/library/bb608625(v=vs.90).aspx
 )。  
   
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]  
@@ -69,5 +66,3 @@ ms.locfileid: "51349620"
   
 ## <a name="see-also"></a>另請參閱  
  [Office UI 自訂](../vsto/office-ui-customization.md)  
-  
-  

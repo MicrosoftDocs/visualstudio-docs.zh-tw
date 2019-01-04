@@ -1,9 +1,6 @@
 ---
 title: IDebugArrayObject2::HasBaseIndices |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - HasBaseIndices
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 381ca6922891e00469bb52cb13f0ad5890b8b3b3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3cb53ba84d73348f110154a478c772b07cefd329
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49863512"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53857315"
 ---
 # <a name="idebugarrayobject2hasbaseindices"></a>IDebugArrayObject2::HasBaseIndices
 判斷陣列是否具有定義的基底索引 （下限）。  

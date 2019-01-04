@@ -1,13 +1,8 @@
 ---
-title: 如何： 將篩選描述元加入至搜尋方法 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：將篩選描述元加入至搜尋方法 |Microsoft Docs
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -20,21 +15,21 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 63374f4d96c86ea3eafbd4c6fa3fbe3d1f5a5899
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: bf1909f6c57ed82ba5afcfd30f6586e9bd4d6d14
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36755595"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53877766"
 ---
-# <a name="how-to-add-a-filter-descriptor-to-a-finder-method"></a>如何： 將篩選描述元加入至搜尋方法
+# <a name="how-to-add-a-filter-descriptor-to-a-finder-method"></a>HOW TO：將篩選描述元加入至搜尋方法
   篩選描述元，讓取用者模型的執行之前，將值傳遞給方法。 如需詳細資訊，請參閱 <<c0> [ 設計 business data connectivity 模型](../sharepoint/designing-a-business-data-connectivity-model.md)。  
   
  一個常見的案例是在 SharePoint 中的使用者想要擷取的外部內容類型符合某些準則的執行個體。 您可以將篩選描述元加入至搜尋方法，以支援此案例。  
   
 ### <a name="to-add-a-filter-descriptor-to-a-finder-method"></a>若要將篩選描述元加入至搜尋方法  
   
-1.  在**BDC 方法詳細資料**視窗中，展開搜尋方法的節點，展開**參數** 節點，然後新增一個輸入的參數。 如需詳細資訊，請參閱 <<c0> [ 如何： 將參數加入至方法](../sharepoint/how-to-add-a-parameter-to-a-method.md)。  
+1.  在**BDC 方法詳細資料**視窗中，展開搜尋方法的節點，展開**參數** 節點，然後新增一個輸入的參數。 如需詳細資訊，請參閱[＜How to：新增參數至方法](../sharepoint/how-to-add-a-parameter-to-a-method.md)。  
   
 2.  在 [**方法的詳細資料**] 視窗中，選擇該參數的類型描述元。  
   
@@ -73,11 +68,9 @@ ms.locfileid: "36755595"
      [!code-vb[SP_BDC#11](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/salesorderservice.vb#11)]  
   
 ## <a name="see-also"></a>另請參閱
- [如何： 新增搜尋方法](../sharepoint/how-to-add-a-finder-method.md)   
- [如何： 加入特定搜尋方法](../sharepoint/how-to-add-a-specific-finder-method.md)   
- [如何： 將參數加入至方法](../sharepoint/how-to-add-a-parameter-to-a-method.md)   
- [如何： 定義參數的型別描述元](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)   
+ [如何：新增搜尋方法](../sharepoint/how-to-add-a-finder-method.md)   
+ [如何：新增特定搜尋方法](../sharepoint/how-to-add-a-specific-finder-method.md)   
+ [如何：新增參數至方法](../sharepoint/how-to-add-a-parameter-to-a-method.md)   
+ [如何：定義參數的型別描述元](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)   
  [設計商務資料連接模型](../sharepoint/designing-a-business-data-connectivity-model.md)   
  [將商務資料整合至 SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)  
-  
-  

@@ -1,9 +1,6 @@
 ---
-title: 如何： 使用登錄設定管理私人組件庫 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：使用登錄設定管理私人組件庫 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - VSIX private galleries, managing
@@ -14,14 +11,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2351c048576d6cf0e93515df8bdce34eef09bfc8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d81594265f19eed0530aaeb06aebc777630bfbf7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49854659"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53986969"
 ---
-# <a name="how-to-manage-a-private-gallery-by-using-registry-settings"></a>如何： 使用登錄設定管理私用組件庫
+# <a name="how-to-manage-a-private-gallery-by-using-registry-settings"></a>HOW TO：使用登錄設定管理私用組件庫
 如果您是系統管理員或獨立模式 Shell 擴充功能的開發人員，您可以控制存取權的控制項、 範本和 Visual Studio 組件庫、 範例庫或私用組件庫中的工具。 若要讓資源庫，可以或無法使用，建立 *.pkgdef*描述的已修改的登錄機碼和其值的檔案。  
   
 ## <a name="manage-private-galleries"></a>管理私人組件庫  
@@ -29,7 +26,7 @@ ms.locfileid: "49854659"
   
 ```  
 [$RootKey$\ExtensionManager\Repositories\{UniqueGUID}]  
-@={URI}  (REG_SZ)  
+@={URI}  (REG_SZ)  
 Disabled=0 | 1 (DWORD)  
 Priority=0 (highest priority) ... MaxInt (lowest priority) (DWORD) (uint)  
 Protocol=Atom Feed|Sharepoint (REG_SZ)  
@@ -41,9 +38,9 @@ DisplayNamePackageGuid={GUID} (REG_SZ)
   
  `Repositories`索引鍵參考來啟用或停用資源庫。 Visual Studio 組件庫和範例資源庫使用下列存放庫的 Guid:  
   
-- Visual Studio 組件庫： 0F45E408-7995-4375-9485-86B8DB553DC9  
+- Visual Studio 組件庫：0F45E408-7995-4375-9485-86B8DB553DC9  
   
-- 範例庫： AEB9CB40-D8E6-4615-B52C-27E307F8506C  
+- 範例庫：AEB9CB40-D8E6-4615-B52C-27E307F8506C  
   
   `Disabled`值是選擇性的。 根據預設，會啟用資源庫。  
   

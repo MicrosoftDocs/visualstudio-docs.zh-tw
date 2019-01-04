@@ -1,9 +1,6 @@
 ---
 title: 服務 Essentials |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - services, essentials
@@ -13,17 +10,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 26bfa7ce51249adc883415d09689ed390b7dfabc
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3428deeaf0e9cdc2aa926f5b1ff17b5030540f2b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49934401"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53867273"
 ---
 # <a name="service-essentials"></a>服務的基本資訊
 服務是兩個的 Vspackage 之間的合約。 一個 VSPackage 提供一組特定的介面使用的另一個 VSPackage。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 本身是提供服務給其他 Vspackage 的 Vspackage 集合。  
   
- 例如，您可以使用 SVsActivityLog 服務取得 IVsActivityLog 介面，可用來寫入活動記錄檔。 如需詳細資訊，請參閱 <<c0> [ 如何： 使用活動記錄](../../extensibility/how-to-use-the-activity-log.md)。  
+ 例如，您可以使用 SVsActivityLog 服務取得 IVsActivityLog 介面，可用來寫入活動記錄檔。 如需詳細資訊，請參閱[＜How to：使用活動記錄](../../extensibility/how-to-use-the-activity-log.md)。  
   
  [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 也提供一些內建的服務未註冊的。 Vspackage 可以藉由提供服務的覆寫來取代內建或其他服務。 只有一個服務覆寫所允許的任何服務。  
   
@@ -39,7 +36,7 @@ ms.locfileid: "49934401"
   
 - 視需要載入服務或服務的覆寫，另一個 VSPackage 要求它所提供的服務時，也就是載入服務提供者。  
   
-- 若要支援依需求載入，服務提供者註冊其全域服務與[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。 如需詳細資訊，請參閱 <<c0> [ 如何： 提供服務](../../extensibility/how-to-provide-a-service.md)。  
+- 若要支援依需求載入，服務提供者註冊其全域服務與[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。 如需詳細資訊，請參閱[＜How to：提供服務](../../extensibility/how-to-provide-a-service.md)。  
   
 - 取得服務之後，請使用[QueryInterface](/cpp/atl/queryinterface) (unmanaged 程式碼) 或轉型 （managed 程式碼） 來取得所需的介面，例如：  
   
@@ -63,7 +60,7 @@ ms.locfileid: "49934401"
   
 ## <a name="use-getglobalservice"></a>使用 GetGlobalService  
   
-有時候您可能需要從 工具視窗取得服務或控制未設置，否則就不知道您想要的服務的服務提供者已決定位置的容器。 比方說，您可能要從控制項內的活動記錄檔寫入。 如需有關這些和其他案例的詳細資訊，請參閱 <<c0> [ 如何： 疑難排解服務](../../extensibility/how-to-troubleshoot-services.md)。  
+有時候您可能需要從 工具視窗取得服務或控制未設置，否則就不知道您想要的服務的服務提供者已決定位置的容器。 比方說，您可能要從控制項內的活動記錄檔寫入。 如需有關這些和其他案例的詳細資訊，請參閱[How to:疑難排解服務](../../extensibility/how-to-troubleshoot-services.md)。  
   
 您可以取得大部分的 Visual Studio 服務藉由呼叫靜態<xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A>方法。  
   
@@ -92,7 +89,7 @@ ms.locfileid: "49934401"
     End If
     ```  
     
-    此程式碼會取得 SVsActivityLog 服務，並將它轉換成 IVsActivityLog 介面，可用來寫入活動記錄檔。 如需範例，請參閱[如何： 使用活動記錄](../../extensibility/how-to-use-the-activity-log.md)。  
+    此程式碼會取得 SVsActivityLog 服務，並將它轉換成 IVsActivityLog 介面，可用來寫入活動記錄檔。 如需範例，請參閱[How to:使用活動記錄](../../extensibility/how-to-use-the-activity-log.md)。  
   
 ## <a name="see-also"></a>另請參閱  
  [可用服務清單](../../extensibility/internals/list-of-available-services.md)   

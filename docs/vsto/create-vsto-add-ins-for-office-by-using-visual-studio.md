@@ -3,8 +3,6 @@ title: 使用 Visual Studio 建立適用於 Office 的 VSTO 增益集
 titleSuffix: ''
 ms.custom: seodec18
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -14,12 +12,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ae35f11066ccb0bbd5e9fa36f137c8a77281463c
-ms.sourcegitcommit: a715de2ba8c703f37aa2102567b1aa2c0f05a117
+ms.openlocfilehash: 7708bc32e240f5976f1a7b6b9f9a1afb4c950743
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "53441492"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53942654"
 ---
 # <a name="create-vsto-add-ins-for-office-by-using-visual-studio"></a>使用 Visual Studio 建立適用於 Office 的 VSTO 增益集
   您可以使用 Visual Studio 中的 Microsoft Office Developer Tools 來建立 .NET Framework 應用程式，以擴充 Office 功能。 這些應用程式也稱為 *「Office 方案」*(Office Solution)。  
@@ -114,5 +112,3 @@ ms.locfileid: "53441492"
   
  [Visual Studio 中的.NET framework 程式設計](/previous-versions/visualstudio/visual-studio-2010/k1s94fta(v=vs.100))  
  討論在 Visual Basic 和 Visual C# 中使用 .NET Framework 進行的應用程式開發。  
-  
-  

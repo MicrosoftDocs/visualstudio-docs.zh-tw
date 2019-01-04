@@ -1,9 +1,6 @@
 ---
 title: 包含項目 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - Include
@@ -16,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7ed632610f0d6bcbf8da6e7788add001740ea446
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 16941cad9ef34f93fd443f0b9bf0192cb46c0a04
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498924"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53830332"
 ---
 # <a name="include-element"></a>包含項目
 Include 項目指定可找到的檔案上提供包含可插入至目前檔案的路徑。  所有符號和定義型別都會編譯結果的一部分。  
@@ -39,7 +36,7 @@ Include 項目指定可找到的檔案上提供包含可插入至目前檔案的
   
 |屬性|描述|  
 |---------------|-----------------|  
-|href|必要。 標頭檔路徑：<br /><br /> href="stdidcmd.h"|  
+|href|必要項。 標頭檔路徑：<br /><br /> href="stdidcmd.h"|  
 |條件|選擇性。 請參閱[條件式屬性](../extensibility/vsct-xml-schema-conditional-attributes.md)。|  
   
 ### <a name="child-elements"></a>子元素  

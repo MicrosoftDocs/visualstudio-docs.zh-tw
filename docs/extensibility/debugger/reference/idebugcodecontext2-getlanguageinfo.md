@@ -1,9 +1,6 @@
 ---
 title: IDebugCodeContext2::GetLanguageInfo |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugCodeContext2::GetLanguageInfo
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3c2638a072c3cf7c234adc88c26bace3348533f2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f6ed38b05e7e7453a5a3d622e0d5746964a41e6a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49931021"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53889053"
 ---
 # <a name="idebugcodecontext2getlanguageinfo"></a>IDebugCodeContext2::GetLanguageInfo
 取得此程式碼內容的語言資訊。  
@@ -28,14 +25,14 @@ ms.locfileid: "49931021"
 ## <a name="syntax"></a>語法  
   
 ```cpp  
-HRESULT GetLanguageInfo(   
+HRESULT GetLanguageInfo(   
    BSTR* pbstrLanguage,  
    GUID* pguidLanguage  
 );  
 ```  
   
 ```csharp  
-int GetLanguageInfo(   
+int GetLanguageInfo(   
    ref string pbstrLanguage,  
    ref Guid pguidLanguage  
 );  

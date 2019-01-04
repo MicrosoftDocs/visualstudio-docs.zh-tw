@@ -1,6 +1,5 @@
 ---
 title: Visual Studio 範本結構描述參考 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0774cdbba791c62a5794c7f837d6ce6b32c49432
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.openlocfilehash: 25c8af779c8c943e7145c44d8e64f814977f88aa
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53561823"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53966936"
 ---
 # <a name="visual-studio-template-schema-reference"></a>Visual Studio 範本結構描述參考
 此章節包含的 XML 項目中的相關資訊 *.vstemplate*檔，亦即儲存專案範本、 項目範本和入門套件的中繼資料的檔案。

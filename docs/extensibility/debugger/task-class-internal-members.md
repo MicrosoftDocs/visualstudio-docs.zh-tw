@@ -1,9 +1,6 @@
 ---
 title: Task 類別-內部成員 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - debug engines, Task class [.NET Framework]
@@ -14,17 +11,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d9e9bbf6bbf42b8008850b540a59fa2b5d75b199
-ms.sourcegitcommit: 8d38d5d2f2b75fc1563952c0d6de0fe43af12766
+ms.openlocfilehash: 34c8da8d661dcb0a8096576617403209a0a70c56
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/26/2018
-ms.locfileid: "39276760"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53872787"
 ---
 # <a name="task-class---internal-members"></a>Task 類別-內部成員
 這篇文章描述的內部成員<xref:System.Threading.Tasks.Task?displayProperty=fullName>類別可協助您實作自訂的偵錯工具。 如需此類別的一般資訊，請參閱<xref:System.Threading.Tasks.Task>參考文章。  
   
- **命名空間：** <xref:System.Threading.Tasks?displayProperty=fullName>  
+ **命名空間︰** <xref:System.Threading.Tasks?displayProperty=fullName>  
   
  **組件：** mscorlib (在*mscorlib.dll*)  
   

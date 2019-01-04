@@ -1,9 +1,6 @@
 ---
 title: 新增和移除屬性頁 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - property pages, adding
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c487eb6bafdc66c715bc9466ea6aafed2e78d6fe
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: e88154f2ea979f69ad8fd2f578282a0b24667a2d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39077876"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53885313"
 ---
 # <a name="add-and-remove-property-pages"></a>新增和移除屬性頁
 專案設計工具提供管理專案屬性、 設定和中的資源的集中式的位置[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。 它會顯示為單一視窗中[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]整合式開發環境 (IDE)，並包含在右側窗格，並可透過左側索引標籤的數目。 專案設計工具窗格 （通常稱為屬性頁） 會因專案類型和語言。 專案設計工具可以使用來存取**屬性**命令**專案**功能表。  

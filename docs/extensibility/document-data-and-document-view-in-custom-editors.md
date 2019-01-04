@@ -1,9 +1,6 @@
 ---
 title: 在自訂編輯器中檢視的文件資料和文件 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], custom - document data and document view
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2076f1a6c96aea717470fa1e955e5b9786f7fcc5
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: d2af41600ed809259cd7512a7fc0a146047a37ad
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39639811"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53818871"
 ---
 # <a name="document-data-and-document-view-in-custom-editors"></a>文件資料和自訂編輯器中的文件檢視
 自訂編輯器是由兩個部分所組成： 文件資料物件和文件檢視物件。 如名稱所示，文件資料物件會表示要顯示的文字資料。 同樣地，文件檢視物件 （或 「 檢視 」） 表示要在其中顯示文件資料物件的一或多個 windows。  
@@ -42,7 +39,7 @@ ms.locfileid: "39639811"
 ## <a name="see-also"></a>另請參閱  
  [支援多個文件檢視](../extensibility/supporting-multiple-document-views.md)   
  [簡化嵌入](../extensibility/simplified-embedding.md)   
- [如何： 將檢視附加至文件資料](../extensibility/how-to-attach-views-to-document-data.md)   
+ [如何：將檢視附加至文件資料](../extensibility/how-to-attach-views-to-document-data.md)   
  [文件鎖定持有者管理](../extensibility/document-lock-holder-management.md)   
  [單一和多重索引標籤的檢視](../extensibility/single-and-multi-tab-views.md)   
  [儲存標準文件](../extensibility/internals/saving-a-standard-document.md)   

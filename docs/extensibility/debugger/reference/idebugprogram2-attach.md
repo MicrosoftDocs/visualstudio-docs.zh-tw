@@ -1,9 +1,6 @@
 ---
 title: IDebugProgram2::Attach |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugProgram2::Attach
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5de330bc800e4f967fdc1f3c08af18f6bf46fecd
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5415a79b3c371f89b215f65c54f371eeb0319ead
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49935103"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53947617"
 ---
 # <a name="idebugprogram2attach"></a>IDebugProgram2::Attach
 將附加至程式。  
@@ -28,13 +25,13 @@ ms.locfileid: "49935103"
 ## <a name="syntax"></a>語法  
   
 ```cpp  
-HRESULT Attach(   
+HRESULT Attach(   
    IDebugEventCallback2* pCallback  
 );  
 ```  
   
 ```csharp  
-int Attach(   
+int Attach(   
    IDebugEventCallback2 pCallback  
 );  
 ```  

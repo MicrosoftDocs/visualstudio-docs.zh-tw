@@ -8,13 +8,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 77d26595bd97a98ef9a4cd1f72c14739695bb755
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: e9165d5ff6a38dd0dbf214321132f2da0a60b15d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859844"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53883155"
 ---
 # <a name="generating-code-from-a-domain-specific-language"></a>從網域指定的語言產生程式碼
 Microsoft[!INCLUDE[dsl](../modeling/includes/dsl_md.md)]提供功能強大的方式，從模型中表示的資料產生程式碼、 文件、 組態檔和其他成品。 使用[!INCLUDE[dsl](../modeling/includes/dsl_md.md)]，您可以建立一組類別，代表您的資料，您可以撰寫文字範本中的類別名稱和屬性會反映該資料。
@@ -40,7 +39,7 @@ Microsoft[!INCLUDE[dsl](../modeling/includes/dsl_md.md)]提供功能強大的方
 
  提供有關指的文字範本中的特定領域語言的基本資訊。
 
- [逐步解說：偵錯存取模型的文字範本](../modeling/walkthrough-debugging-a-text-template-that-accesses-a-model.md)
+ [逐步解說：偵錯文字範本存取模型](../modeling/walkthrough-debugging-a-text-template-that-accesses-a-model.md)
 
  描述如何進行疑難排解和偵錯是指特定領域語言的文字範本。
 

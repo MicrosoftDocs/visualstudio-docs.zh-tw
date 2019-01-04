@@ -12,13 +12,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 32ee70edb27ff68d7e2ee4c83a600a8725e6c08e
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: f3b9df35c4dd69b52c6c4562f3e634dd9a2bdb56
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50966647"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53986813"
 ---
 # <a name="customizing-the-model-explorer"></a>自訂模型總管
 您可以針對您的特定領域語言設計工具中，如下所示變更的外觀和行為的 [總管] 中：

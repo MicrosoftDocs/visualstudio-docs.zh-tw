@@ -10,13 +10,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: e1fd3b1cd19efa9032b7b92576a489e3b17373db
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 01aee6de65f1ddc0db16b0ebe527fb3d4d5480ad
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49919327"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53958809"
 ---
 # <a name="develop-tests-from-a-model"></a>透過模型開發測試
 您可以使用需求和架構模型來協助您組織整理系統及其元件的測試。 這種做法有助於確保測試使用者和其他利害關係人的重要需求，並且可協助您在需求變更時快速更新測試。 如果您使用 [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)]，則也可以維護模型與測試之間的連結。
@@ -52,7 +51,7 @@ ms.locfileid: "49919327"
 
     -   如果開發計劃先實作使用案例的其中一個層面，再實作另一個層面，則可以在進行開發時個別啟用測試。
 
--   設計測試時，請分開選擇測試資料與判斷是否達到後置條件的程式碼或指令碼。 例如，簡單算術函式的測試可能是：輸入 4；驗證輸出是 2。 而是將指令碼設計為：選擇輸入；將輸出乘上它自己，並驗證結果是原始輸入。 這個樣式可讓您有不同的測試輸入，而不變更測試的主體。
+-   設計測試時，請分開選擇測試資料與判斷是否達到後置條件的程式碼或指令碼。 例如，簡單算術函式的測試可能是：輸入 4;確認輸出會是 2。 相反地，設計為指令碼：選擇輸入;乘以本身的輸出，並確認結果是原始的輸入。 這個樣式可讓您有不同的測試輸入，而不變更測試的主體。
 
 #### <a name="linking-tests-to-use-cases"></a>將測試連結至使用案例
  如果您使用[!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)]來設計和執行測試，您可以組織您的測試需求、 使用案例或使用者劇本工作項目底下。 您可以將這些工作項目連結至模型中的使用案例。 這可讓您快速追蹤測試的需求變更，並協助您追蹤每個使用案例的進度。

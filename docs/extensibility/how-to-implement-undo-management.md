@@ -1,9 +1,6 @@
 ---
-title: 如何： 實作復原管理 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：實作復原管理 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - undo management
@@ -13,14 +10,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 227a002b5bd1b333da177944056eef7aca2cc393
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 005b321921003e11f9204616727e0b06b85e5c3f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49830011"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53915645"
 ---
-# <a name="how-to-implement-undo-management"></a>如何： 實作復原管理
+# <a name="how-to-implement-undo-management"></a>HOW TO：實作復原管理
 用於復原管理的主要介面是<xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoManager>，這由環境實作。 若要支援復原管理，請實作不同的復原單位 (也就是<xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoUnit>，其中可以包含多個個別的步驟。  
   
  實作復原管理的方式，需視您的編輯器是否支援多個檢視的方法而有所不同。 下列各節會詳細說明每個實作的程序。  
@@ -83,4 +80,4 @@ ms.locfileid: "49830011"
 ## <a name="see-also"></a>另請參閱  
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsChangeTrackingUndoManager>   
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLifetimeControlledObject>   
- [如何： 清除復原堆疊](../extensibility/how-to-clear-the-undo-stack.md)
+ [如何：清除復原堆疊](../extensibility/how-to-clear-the-undo-stack.md)

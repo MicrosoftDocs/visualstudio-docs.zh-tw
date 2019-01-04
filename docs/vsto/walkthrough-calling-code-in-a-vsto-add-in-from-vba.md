@@ -1,9 +1,6 @@
 ---
-title: 逐步解說： 從 VBA 在 VSTO 增益集中呼叫程式碼
-ms.custom: ''
+title: 逐步解說：從 VBA 呼叫 VSTO 增益集中的程式碼
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -21,14 +18,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9e46cf9032cae7d6400822be7d72394a7845314f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 89b03298d1a0bb180e3eab706383e48ecd75cd7f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49843817"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53915899"
 ---
-# <a name="walkthrough-call-code-in-a-vsto-add-in-from-vba"></a>逐步解說： 從 VBA 在 VSTO 增益集中呼叫程式碼
+# <a name="walkthrough-call-code-in-a-vsto-add-in-from-vba"></a>逐步解說：從 VBA 呼叫 VSTO 增益集中的程式碼
   本逐步解說示範如何將 VSTO 增益集中的物件公開給其他 Microsoft Office 方案，包含 Visual Basic for Applications (VBA) 和 COM VSTO 增益集。  
   
  [!INCLUDE[appliesto_allapp](../vsto/includes/appliesto-allapp-md.md)]  
@@ -55,9 +52,9 @@ ms.locfileid: "49843817"
 ## <a name="create-the-vsto-add-in-project"></a>建立 VSTO 增益集專案  
  第一步是建立 Excel 的 VSTO 增益集專案。  
   
-### <a name="to-create-a-new-project"></a>建立新的專案  
+### <a name="to-create-a-new-project"></a>若要建立新的專案  
   
-1.  使用 Excel VSTO 增益集專案範本建立名為 **ExcelImportData**的 Excel VSTO 增益集專案。 如需詳細資訊，請參閱 [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
+1.  使用 Excel VSTO 增益集專案範本建立名為 **ExcelImportData**的 Excel VSTO 增益集專案。 如需詳細資訊，請參閱[＜How to：在 Visual Studio 中建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
   
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 會開啟 **ThisAddIn.cs** 或 **ThisAddIn.vb** 程式碼檔，並將 [ExcelImportData]  專案加入 [方案總管] 。  
   
@@ -116,7 +113,7 @@ ms.locfileid: "49843817"
 3.  按一下 [功能區] 上的 [開發人員]  索引標籤。  
   
     > [!NOTE]  
-    >  如果 [開發人員]  索引標籤沒有顯示，您必須先使其顯示。 如需詳細資訊，請參閱 <<c0> [ 如何： 在功能區顯示開發人員索引標籤](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)。  
+    >  如果 [開發人員]  索引標籤沒有顯示，您必須先使其顯示。 如需詳細資訊，請參閱[＜How to：在功能區顯示開發人員索引標籤](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)。  
   
 4.  在 [程式碼]  群組中，按一下 [Visual Basic] 。  
   
@@ -149,16 +146,14 @@ ms.locfileid: "49843817"
   
 -   使用 `ThisAddIn` 類別來自動化主應用程式，並執行 VSTO 增益集專案中的其他工作。 如需詳細資訊，請參閱 <<c0> [ 程式的 VSTO 增益集](../vsto/programming-vsto-add-ins.md)。  
   
--   在 VSTO 增益集中建立自訂工作窗格。 如需詳細資訊，請參閱 <<c0> [ 自訂工作窗格](../vsto/custom-task-panes.md)並[如何： 加入應用程式的自訂工作窗格](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)。  
+-   在 VSTO 增益集中建立自訂工作窗格。 如需詳細資訊，請參閱 <<c0> [ 自訂工作窗格](../vsto/custom-task-panes.md)和[How to:應用程式中加入自訂工作窗格](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)。  
   
--   自訂功能區中的 VSTO 增益集。 如需詳細資訊，請參閱 <<c0> [ 功能區概觀](../vsto/ribbon-overview.md)並[如何： 開始自訂功能區](../vsto/how-to-get-started-customizing-the-ribbon.md)。  
+-   自訂功能區中的 VSTO 增益集。 如需詳細資訊，請參閱 <<c0> [ 功能區概觀](../vsto/ribbon-overview.md)和[How to:開始自訂功能區](../vsto/how-to-get-started-customizing-the-ribbon.md)。  
   
 ## <a name="see-also"></a>另請參閱  
  [程式 VSTO 增益集](../vsto/programming-vsto-add-ins.md)   
  [從其他 Office 方案呼叫 VSTO 增益集的程式碼](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md)   
  [開發 Office 方案](../vsto/developing-office-solutions.md)   
- [如何： 在 Visual Studio 中建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)   
+ [如何：在 Visual Studio 中建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)   
  [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md)   
  [使用擴充性介面自訂 UI 功能](../vsto/customizing-ui-features-by-using-extensibility-interfaces.md)  
-  
-  

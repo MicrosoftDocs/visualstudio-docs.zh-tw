@@ -1,9 +1,6 @@
 ---
 title: HOW TO：將圖表控制項加入工作表
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,12 +13,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4f1c5cd15710e3886e3e8b0ed7483ba3776cef15
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: 577c0531e73ad5586386c478611e57daa7e651d5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53648929"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53967462"
 ---
 # <a name="how-to-add-chart-controls-to-worksheets"></a>HOW TO：將圖表控制項加入工作表
   您可以新增<xref:Microsoft.Office.Tools.Excel.Chart>Microsoft Office Excel 工作表在設計階段，並在執行階段在文件層級自訂中的控制項。 您也可以新增<xref:Microsoft.Office.Tools.Excel.Chart>在 VSTO 增益集的執行階段的控制項。  
@@ -93,5 +90,3 @@ ms.locfileid: "53648929"
  [主項目和主控制項概觀](../vsto/host-items-and-host-controls-overview.md)   
  [資料繫結至 Office 方案中的控制項](../vsto/binding-data-to-controls-in-office-solutions.md)   
  [主項目和主控制項的程式設計限制](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)  
-  
-  

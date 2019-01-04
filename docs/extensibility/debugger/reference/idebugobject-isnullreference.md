@@ -1,9 +1,6 @@
 ---
 title: IDebugObject::IsNullReference |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugObject::IsNullReference
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d6b5108d9fd830c047c020d4b3adab2526854e6c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 027d6364ad3d6277b716d6716d9d02d1390cde6a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49939692"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53962937"
 ---
 # <a name="idebugobjectisnullreference"></a>IDebugObject::IsNullReference
 測試這個物件是否為 null 參考。  
@@ -28,7 +25,7 @@ ms.locfileid: "49939692"
 ## <a name="syntax"></a>語法  
   
 ```cpp  
-HRESULT IsNullReference(   
+HRESULT IsNullReference(   
    BOOL* pfIsNull  
 );  
 ```  

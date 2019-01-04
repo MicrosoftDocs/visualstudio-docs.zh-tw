@@ -1,9 +1,6 @@
 ---
 title: IDebugField::GetInfo |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugField::GetInfo
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ed9a83d11f180467938ba2f9a1e783c73866837e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d853d63c71e6cc2edb58ec858503f11061ee427b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49899444"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53823976"
 ---
 # <a name="idebugfieldgetinfo"></a>IDebugField::GetInfo
 這個方法會取得可顯示的欄位資訊。  
@@ -28,7 +25,7 @@ ms.locfileid: "49899444"
 ## <a name="syntax"></a>語法  
   
 ```cpp  
-HRESULT GetInfo(   
+HRESULT GetInfo(   
    FIELD_INFO_FIELDS dwFields,  
    FIELD_INFO* pFieldInfo  
 );  

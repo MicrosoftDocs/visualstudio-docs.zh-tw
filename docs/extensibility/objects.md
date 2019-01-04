@@ -1,9 +1,6 @@
 ---
 title: 物件 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - objects, interfaces
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5b7448ec69af35b1fac864ef0151d37f91d15bd7
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 7671b25d38ccd075beb56ff28152efbbccca18a8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39639945"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53823467"
 ---
 # <a name="objects"></a>物件
 下列參考資訊會說明用來建立核心文字編輯器的執行個體的物件。  

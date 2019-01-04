@@ -1,9 +1,6 @@
 ---
 title: IDebugSymbolProviderDirect::GetMethodFromAddress |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - IDebugSymbolProviderDirect::GetMethodFromAddress
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b8a4f9e99dc1eb0c1cedc6d82690330eb6420098
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f1a72e455092243ba4188121f5b671096d430517
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49880139"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53832072"
 ---
 # <a name="idebugsymbolproviderdirectgetmethodfromaddress"></a>IDebugSymbolProviderDirect::GetMethodFromAddress
 擷取在指定的偵錯位址之方法的相關資訊。  

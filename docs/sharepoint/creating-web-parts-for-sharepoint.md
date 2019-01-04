@@ -1,9 +1,6 @@
 ---
 title: 建立 SharePoint Web 組件 |Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - Microsoft.SharePoint.WebControls.DateTimeControl
@@ -18,8 +15,6 @@ f1_keywords:
 dev_langs:
 - VB
 - CSharp
-- VB
-- CSharp
 helpviewer_keywords:
 - SharePoint development in Visual Studio, Web Parts
 - Web Parts [SharePoint development in Visual Studio], designing
@@ -28,15 +23,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0cbc26a198cace58a957f3d3aaf25457cf457256
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1efe8524521be590e920818f919a7a52d8fba7e5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49906037"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53879130"
 ---
 # <a name="create-web-parts-for-sharepoint"></a>建立 SharePoint web 組件
-  藉由使用 web 組件，您可以使用瀏覽器修改內容、 外觀及行為的 SharePoint 網站頁面。 Web 組件是在網頁組件內執行的伺服器端控制項： 它們是在 SharePoint 網站上顯示之網頁的建置組塊。 請參閱[建置組塊： Web 組件](http://go.microsoft.com/fwlink/?LinkID=182097)。  
+  藉由使用 web 組件，您可以使用瀏覽器修改內容、 外觀及行為的 SharePoint 網站頁面。 Web 組件是在網頁組件內執行的伺服器端控制項： 它們是在 SharePoint 網站上顯示之網頁的建置組塊。 請參閱[建置組塊：Web 組件](http://go.microsoft.com/fwlink/?LinkID=182097)。  
   
  您可以建立並使用範本從 Visual Studio 偵錯 SharePoint 網站上的 web 組件。  
   
@@ -54,10 +49,10 @@ ms.locfileid: "49906037"
 |.webpart 檔|提供 SharePoint web 組件庫中顯示您的 web 組件所需的資訊。|  
 |程式碼檔案|包含的方法，將控制項加入至網頁組件，並可產生網頁組件內的自訂內容。|  
   
- 如需詳細資訊，請參閱 <<c0> [ 如何： 建立 SharePoint web 組件](../sharepoint/how-to-create-a-sharepoint-web-part.md)。  
+ 如需詳細資訊，請參閱[＜How to：建立 SharePoint web 組件](../sharepoint/how-to-create-a-sharepoint-web-part.md)。  
   
 ### <a name="visual-web-part-item"></a>視覺 web 組件項目
- 視覺 web 組件是您在 Visual Studio 中使用 Visual Web Developer 設計工具建立的 web 組件。 視覺 web 組件的功能與任何其他 web 組件相同。 若要加入的 web 組件控制項，例如按鈕和文字方塊中，您可以加入程式碼至 XML 檔案。 不過，您將控制項加入至視覺 web 組件拖曳，或將它們複製到 web 組件中，從 Visual Studio**工具箱**。 設計工具接著會產生 XML 檔案中的所需的程式碼。 請參閱[如何： 使用設計工具建立 SharePoint web 組件](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md)。  
+ 視覺 web 組件是您在 Visual Studio 中使用 Visual Web Developer 設計工具建立的 web 組件。 視覺 web 組件的功能與任何其他 web 組件相同。 若要加入的 web 組件控制項，例如按鈕和文字方塊中，您可以加入程式碼至 XML 檔案。 不過，您將控制項加入至視覺 web 組件拖曳，或將它們複製到 web 組件中，從 Visual Studio**工具箱**。 設計工具接著會產生 XML 檔案中的所需的程式碼。 請參閱[如何：使用設計工具建立 SharePoint web 組件](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md)。  
   
 ## <a name="sharepoint-controls"></a>SharePoint 控制項
  Visual Studio 會提供一些控制項，用於建立 SharePoint 頁面，例如應用程式頁面。 這些控制項會出現在**工具箱**下方**SharePoint 控制項**。 這些控制項的功能衍生自[Microsoft.SharePoint.WebControls](http://go.microsoft.com/fwlink/?LinkId=235315)命名空間，其中包含 SharePoint 網站和清單頁面所使用的 ASP.NET 伺服器控制項。  
@@ -115,10 +110,9 @@ ms.locfileid: "49906037"
   
 |標題|描述|  
 |-----------|-----------------|  
-|[如何： 建立 SharePoint web 組件](../sharepoint/how-to-create-a-sharepoint-web-part.md)|說明如何建立 SharePoint 頁面的 web 組件。|  
-|[如何： 使用設計工具建立 SharePoint web 組件](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md)|說明如何使用視覺化設計介面建立 SharePoint web 組件。|  
-|[如何： 建立 SharePoint 應用程式頁面或 web 組件的使用者控制項](../sharepoint/how-to-create-a-user-control-for-a-sharepoint-application-page-or-web-part.md)|說明如何建立可由應用程式頁面和 web 組件，在 SharePoint 中執行的自訂、 可重複使用的控制項。|  
-|[逐步解說： 建立 SharePoint web 組件](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint.md)|描述如何設計 SharePoint web 組件。|  
-|[逐步解說： 建立適用於 SharePoint 的 web 組件，使用設計工具](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint-by-using-a-designer.md)|描述如何設計適用於 SharePoint 的 web 組件，將控制項拖曳至視覺化設計介面。|  
-|[逐步解說： 建立顯示 SharePoint 之 OData 的 Silverlight web 組件](../sharepoint/walkthrough-creating-a-silverlight-web-part-that-displays-odata-for-sharepoint.md)|描述如何設計裝載 Silverlight 應用程式，並顯示從 SharePoint 清單資料的 SharePoint web 組件。|  
-  
+|[如何：建立 SharePoint web 組件](../sharepoint/how-to-create-a-sharepoint-web-part.md)|說明如何建立 SharePoint 頁面的 web 組件。|  
+|[如何：使用設計工具建立 SharePoint web 組件](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md)|說明如何使用視覺化設計介面建立 SharePoint web 組件。|  
+|[如何：建立 SharePoint 應用程式頁面或 web 組件的使用者控制項](../sharepoint/how-to-create-a-user-control-for-a-sharepoint-application-page-or-web-part.md)|說明如何建立可由應用程式頁面和 web 組件，在 SharePoint 中執行的自訂、 可重複使用的控制項。|  
+|[逐步解說：建立 SharePoint web 組件](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint.md)|描述如何設計 SharePoint web 組件。|  
+|[逐步解說：使用設計工具建立 SharePoint web 組件](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint-by-using-a-designer.md)|描述如何設計適用於 SharePoint 的 web 組件，將控制項拖曳至視覺化設計介面。|  
+|[逐步解說：建立顯示 SharePoint 之 OData 的 Silverlight web 組件](../sharepoint/walkthrough-creating-a-silverlight-web-part-that-displays-odata-for-sharepoint.md)|描述如何設計裝載 Silverlight 應用程式，並顯示從 SharePoint 清單資料的 SharePoint web 組件。|  

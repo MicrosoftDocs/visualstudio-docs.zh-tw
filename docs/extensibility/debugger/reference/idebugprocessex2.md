@@ -1,9 +1,6 @@
 ---
 title: IDebugProcessEx2 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugProcessEx2
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7fa10fb5ebe2f9a78d44997c29ae51bc02e2c842
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e331702c98656fd0bee31c1b6e1a130fe2c30f77
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49934934"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53962830"
 ---
 # <a name="idebugprocessex2"></a>IDebugProcessEx2
 此介面可讓偵錯管理員 (SDM) 通知的程序，它會附加至或從處理序中斷連結的工作階段。  
@@ -57,11 +54,11 @@ IDebugProcessEx2 : IUnknown
  這個介面是 SDM 和處理序之間的私用。  
   
 ## <a name="requirements"></a>需求  
- 標頭： Portpriv.h  
+ 標頭：Portpriv.h  
   
- 命名空間： Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間:Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
  [核心介面](../../../extensibility/debugger/reference/core-interfaces.md)   

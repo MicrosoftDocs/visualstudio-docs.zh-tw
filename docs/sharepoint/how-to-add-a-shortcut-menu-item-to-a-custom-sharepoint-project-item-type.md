@@ -1,9 +1,6 @@
 ---
-title: 如何： 將捷徑功能表項目新增至自訂 SharePoint 專案項目類型 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：將捷徑功能表項目新增至自訂 SharePoint 專案項目類型 |Microsoft Docs
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,17 +14,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 580839936cfa42b4e76999809cd8917f3eb4f041
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: dc3acaf90f646529da00a89aec6db860c3711fc8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36755494"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53959893"
 ---
-# <a name="how-to-add-a-shortcut-menu-item-to-a-custom-sharepoint-project-item-type"></a>如何： 將捷徑功能表項目新增至自訂的 SharePoint 專案項目類型
+# <a name="how-to-add-a-shortcut-menu-item-to-a-custom-sharepoint-project-item-type"></a>HOW TO：將捷徑功能表項目新增至自訂的 SharePoint 專案項目類型
   當您定義自訂的 SharePoint 專案項目類型時，您可以快顯功能表項目加入專案項目。 使用者以滑鼠右鍵按一下專案項目中的時，會出現的功能表項目**方案總管 中**。  
   
- 下列步驟假設您已經定義自己的 SharePoint 專案項目類型。 如需詳細資訊，請參閱 <<c0> [ 如何： 定義 SharePoint 專案項目類型](../sharepoint/how-to-define-a-sharepoint-project-item-type.md)。  
+ 下列步驟假設您已經定義自己的 SharePoint 專案項目類型。 如需詳細資訊，請參閱[＜How to：定義 SharePoint 專案項目類型](../sharepoint/how-to-define-a-sharepoint-project-item-type.md)。  
   
 ### <a name="to-add-a-shortcut-menu-item-to-a-custom-project-item-type"></a>若要將捷徑功能表項目新增至自訂專案項目類型  
   
@@ -58,8 +55,6 @@ ms.locfileid: "36755494"
  若要部署的專案項目，建立[!include[vsprvs](../sharepoint/includes/vsprvs-md.md)]擴充功能 (VSIX) 封裝組件、 範本和任何其他您想要與專案項目一起散發的檔案。 如需詳細資訊，請參閱 <<c0> [ 部署適用於 Visual Studio 中 SharePoint 工具擴充功能](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)。  
   
 ## <a name="see-also"></a>另請參閱
- [如何： 定義 SharePoint 專案項目類型](../sharepoint/how-to-define-a-sharepoint-project-item-type.md)   
- [如何： 將屬性加入至自訂的 SharePoint 專案項目類型](../sharepoint/how-to-add-a-property-to-a-custom-sharepoint-project-item-type.md)   
+ [如何：定義 SharePoint 專案項目類型](../sharepoint/how-to-define-a-sharepoint-project-item-type.md)   
+ [如何：將屬性加入至自訂的 SharePoint 專案項目類型](../sharepoint/how-to-add-a-property-to-a-custom-sharepoint-project-item-type.md)   
  [定義自訂 SharePoint 專案項目類型](../sharepoint/defining-custom-sharepoint-project-item-types.md)  
-  
- 

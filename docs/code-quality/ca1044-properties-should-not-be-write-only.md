@@ -1,8 +1,7 @@
 ---
-title: CA1044：屬性不應為唯寫
+title: CA1044:屬性不應該為唯寫的
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - PropertiesShouldNotBeWriteOnly
@@ -19,20 +18,20 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 6018957bc6de32668cbaf0a719f2a603dc7f496f
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: e9d543c915cecbaa4f37a694786e80876bdf06cd
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45550982"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53959088"
 ---
-# <a name="ca1044-properties-should-not-be-write-only"></a>CA1044：屬性不應為唯寫
+# <a name="ca1044-properties-should-not-be-write-only"></a>CA1044:屬性不應該為唯寫的
 
 |||
 |-|-|
 |TypeName|PropertiesShouldNotBeWriteOnly|
 |CheckId|CA1044|
-|類別|Microsoft.Design|
+|分類|Microsoft.Design|
 |中斷變更|中斷|
 
 ## <a name="cause"></a>原因

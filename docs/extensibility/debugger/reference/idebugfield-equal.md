@@ -1,9 +1,6 @@
 ---
 title: IDebugField::Equal |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugField::Equal
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1ae30cd36d2a3f51b697afa3cb5f4615a5f322da
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0157a09390bd6e8380e97cef8e4c4158c75ac3ab
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49830778"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53918819"
 ---
 # <a name="idebugfieldequal"></a>IDebugField::Equal
 這個方法會比較此欄位與指定欄位相等。  
@@ -28,7 +25,7 @@ ms.locfileid: "49830778"
 ## <a name="syntax"></a>語法  
   
 ```cpp  
-HRESULT Equal(   
+HRESULT Equal(   
    IDebugField* pField  
 );  
 ```  

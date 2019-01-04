@@ -1,8 +1,7 @@
 ---
-title: CA1819：屬性不應傳回陣列
+title: CA1819:屬性不應該傳回陣列
 ms.date: 09/28/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - PropertiesShouldNotReturnArrays
@@ -19,14 +18,14 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 99fd9627c06b11dae9348a85f417cf152ac1c8c9
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 6159d6b9a2d8d3dc02cd5f0690f3b1360b4461fd
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859029"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53949452"
 ---
-# <a name="ca1819-properties-should-not-return-arrays"></a>CA1819：屬性不應傳回陣列
+# <a name="ca1819-properties-should-not-return-arrays"></a>CA1819:屬性不應該傳回陣列
 
 |||
 |-|-|
@@ -92,4 +91,4 @@ ms.locfileid: "47859029"
 
 ## <a name="related-rules"></a>相關的規則
 
-- [CA1024：建議在適當時使用屬性](../code-quality/ca1024-use-properties-where-appropriate.md)
+- [CA1024:在適當時使用屬性](../code-quality/ca1024-use-properties-where-appropriate.md)

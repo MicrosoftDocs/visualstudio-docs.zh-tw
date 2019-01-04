@@ -1,9 +1,6 @@
 ---
 title: IDebugSymbolProviderDirect::GetSymUnmanagedReader |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - GetSymUnmanagedReader
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 705c5d1184f159309d289d70c7a787dc3fce03b9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 167b06d9d33512f5ae68cff6342729e67716dd9b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49872716"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53920348"
 ---
 # <a name="idebugsymbolproviderdirectgetsymunmanagedreader"></a>IDebugSymbolProviderDirect::GetSymUnmanagedReader
 擷取未受管理的程式碼的符號讀取器。  

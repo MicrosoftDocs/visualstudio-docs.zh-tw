@@ -1,9 +1,6 @@
 ---
 title: IDebugStackFrame2::GetThread |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugStackFrame2::GetThread
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: db6652696631d9ff6cb993c8691ad9af3f689094
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7fe4a7f5ef0ad06777983a1760f933e78d963838
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942150"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53990577"
 ---
 # <a name="idebugstackframe2getthread"></a>IDebugStackFrame2::GetThread
 取得與堆疊框架相關聯的執行緒。  
@@ -28,13 +25,13 @@ ms.locfileid: "49942150"
 ## <a name="syntax"></a>語法  
   
 ```cpp  
-HRESULT GetThread (   
+HRESULT GetThread (   
    IDebugThread2** ppThread  
 );  
 ```  
   
 ```csharp  
-int GetThread (   
+int GetThread (   
    out IDebugThread2 ppThread  
 );  
 ```  

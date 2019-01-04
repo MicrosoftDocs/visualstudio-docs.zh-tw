@@ -1,9 +1,6 @@
 ---
 title: IDebugProgram2::GetDebugProperty |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugProgram2::GetDebugProperty
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7296698f3caf7fd189505c68e1c8b7d6261b1e93
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1d19761f833472e24b07e836d08c1d9635c09b00
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49888160"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53878178"
 ---
 # <a name="idebugprogram2getdebugproperty"></a>IDebugProgram2::GetDebugProperty
 取得程式的屬性。  
@@ -28,13 +25,13 @@ ms.locfileid: "49888160"
 ## <a name="syntax"></a>語法  
   
 ```cpp  
-HRESULT GetDebugProperty(   
+HRESULT GetDebugProperty(   
    IDebugProperty2** ppProperty  
 );  
 ```  
   
 ```csharp  
-int GetDebugProperty(   
+int GetDebugProperty(   
    out IDebugProperty2 ppProperty  
 );  
 ```  

@@ -1,9 +1,6 @@
 ---
 title: 叫用中斷點 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], hitting breakpoints
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8a9b110abdaf0ebfaed720dd5d09c0e215a6b2e7
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 728258dc363f906e005c654909cb86fd782824a9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39231551"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53935628"
 ---
 # <a name="hit-a-breakpoint"></a>叫用中斷點
 當偵錯引擎 (DE) 執行，或逐步執行時叫用中斷點時下, 一節會說明的程序：  

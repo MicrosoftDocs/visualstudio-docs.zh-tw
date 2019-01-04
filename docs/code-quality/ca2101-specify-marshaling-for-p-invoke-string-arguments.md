@@ -1,8 +1,7 @@
 ---
-title: CA2101：必須指定 P/Invoke 字串引數的封送處理
+title: CA2101:必須指定 P-Invoke 字串引數的封送處理
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - SpecifyMarshalingForPInvokeStringArguments
@@ -16,14 +15,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 21b3ab30ff6672149fe05359f33ad932706a8a91
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 778668f799f325aee98334e243a0501a185a9ceb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49867308"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53915641"
 ---
-# <a name="ca2101-specify-marshaling-for-pinvoke-string-arguments"></a>CA2101：必須指定 P/Invoke 字串引數的封送處理
+# <a name="ca2101-specify-marshaling-for-pinvoke-string-arguments"></a>CA2101:必須指定 P/Invoke 字串引數的封送處理
 
 |||
 |-|-|

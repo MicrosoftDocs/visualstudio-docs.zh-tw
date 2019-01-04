@@ -1,9 +1,6 @@
 ---
 title: IDebugProgramPublisher2::PublishProgram |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugProgramPublisher2::PublishProgram
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b0ac385eaff1344d21b47e902e7c76d7f4c39343
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: eeaa86ae2a740a1a31147f7294fd91bdbf5872d2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49869752"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53991041"
 ---
 # <a name="idebugprogrampublisher2publishprogram"></a>IDebugProgramPublisher2::PublishProgram
 這個方法可供偵錯引擎 (DEs) 的程式和工作階段的偵錯管理員。  
@@ -28,18 +25,18 @@ ms.locfileid: "49869752"
 ## <a name="syntax"></a>語法  
   
 ```cpp  
-HRESULT PublishProgram(  
-   CONST_GUID_ARRAY Engines,  
-   LPCOLESTR        szFriendlyName,  
-   IUnknown*        pDebuggeeInterface  
+HRESULT PublishProgram(  
+   CONST_GUID_ARRAY Engines,  
+   LPCOLESTR        szFriendlyName,  
+   IUnknown*        pDebuggeeInterface  
 );  
 ```  
   
 ```csharp  
-int PublishProgram(  
-   CONST_GUID_ARRAY Engines,  
-   string           szFriendlyName,  
-   object           pDebuggeeInterface  
+int PublishProgram(  
+   CONST_GUID_ARRAY Engines,  
+   string           szFriendlyName,  
+   object           pDebuggeeInterface  
 );  
 ```  
   

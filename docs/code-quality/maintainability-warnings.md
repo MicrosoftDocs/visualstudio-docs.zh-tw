@@ -2,7 +2,6 @@
 title: 維護性警告
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - vs.codeanalysis.maintainabilityrules
@@ -16,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c1169ee28b461367a28c7095758290c2a95e1517
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: 5fc9b8be565cb7b8bad25b8bddbcb35158dcc0bd
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53739769"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53938658"
 ---
 # <a name="maintainability-warnings"></a>維護性警告
 

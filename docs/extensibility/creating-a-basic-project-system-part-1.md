@@ -1,9 +1,6 @@
 ---
 title: 建立基本的專案系統，第 1 部分 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - writing a project system
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9d7d48a7aae98da574747da2df32c9368ab930aa
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 43ba49107c1f3b2ab72db024b8dbfd01d8eab857
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49887549"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53832550"
 ---
 # <a name="create-a-basic-project-system-part-1"></a>建立基本專案系統，第 1 部分
 在 Visual Studio 中，專案會是開發人員用來組織原始程式碼檔和其他資產的容器。 專案會顯示為子系中的解決方案**方案總管 中**。 專案可讓您組織、 建置、 偵錯和部署來源的程式碼及建立 Web 服務、 資料庫和其他資源的參考。  
@@ -71,7 +68,7 @@ ms.locfileid: "49887549"
   
 ### <a name="to-create-a-basic-project-template"></a>若要建立基本專案範本  
   
-1. 將三個資料夾新增至專案，其中一個 [其他]: *Templates\Projects\SimpleProject*。 (在**方案總管**，以滑鼠右鍵按一下**SimpleProject**專案節點，指向**新增**，然後按一下 **新資料夾**。 將資料夾命名*範本*。 在 *範本*資料夾中，新增名為的資料夾*專案*。 在*專案*資料夾中，新增名為的資料夾*SimpleProject*。)  
+1. 加入專案，其中一個 [其他] 中的三個資料夾：*Templates\Projects\SimpleProject*。 (在**方案總管**，以滑鼠右鍵按一下**SimpleProject**專案節點，指向**新增**，然後按一下 **新資料夾**。 將資料夾命名*範本*。 在 *範本*資料夾中，新增名為的資料夾*專案*。 在*專案*資料夾中，新增名為的資料夾*SimpleProject*。)  
   
 2. 在  *Templates\Projects\SimpleProject*資料夾中，新增的點陣圖影像檔案，作為名為圖示*SimpleProject.ico*。 當您按一下 **新增**，圖示編輯器隨即開啟。  
   
@@ -559,7 +556,7 @@ Templates
      請注意，範本參數 $nameSpace$ 和 $ $className$ 不需要新的值。 您將學習如何實作在下一節中的範本參數替代。  
   
 ## <a name="substitute-template-parameters"></a>取代範本參數  
- 在先前章節中，您的專案範本使用 Visual Studio 註冊使用`ProvideProjectFactory`屬性。 註冊範本資料夾的路徑，以這種方式可讓您覆寫，並展開，以啟用基本的範本參數替代`ProjectNode.AddFileFromTemplate`類別。 如需詳細資訊，請參閱 <<c0> [ 產生新專案： 在幕後，第二部](../extensibility/internals/new-project-generation-under-the-hood-part-two.md)。  
+ 在先前章節中，您的專案範本使用 Visual Studio 註冊使用`ProvideProjectFactory`屬性。 註冊範本資料夾的路徑，以這種方式可讓您覆寫，並展開，以啟用基本的範本參數替代`ProjectNode.AddFileFromTemplate`類別。 如需詳細資訊，請參閱[產生新專案：在幕後，第二部](../extensibility/internals/new-project-generation-under-the-hood-part-two.md)。  
   
  現在將 取代程式碼加入`AddFileFromTemplate`類別。  
   

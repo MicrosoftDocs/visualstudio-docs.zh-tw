@@ -1,8 +1,7 @@
 ---
-title: CA1051：不要宣告可見的執行個體欄位
+title: CA1051:不要宣告可見的執行個體欄位
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA1051
@@ -16,14 +15,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f907b1d8626e8babc88137ed70cf6330386ab92a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b85fe5458dc4395ab7f1e119c3da90b685c96410
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49832195"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53944466"
 ---
-# <a name="ca1051-do-not-declare-visible-instance-fields"></a>CA1051：不要宣告可見的執行個體欄位
+# <a name="ca1051-do-not-declare-visible-instance-fields"></a>CA1051:不要宣告可見的執行個體欄位
 
 |||
 |-|-|
@@ -44,7 +43,7 @@ ms.locfileid: "49832195"
  若要修正此規則的違規情形，將欄位設`private`或`internal`並將它公開使用的外部可見的屬性。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
- 請勿隱藏此規則的警告。 外部可見的欄位不會提供屬性無法使用的任何權益。 此外，公用欄位不能受到[連結要求](/dotnet/framework/misc/link-demands)。 請參閱[CA2112： 受保護的類型不應該公開欄位](../code-quality/ca2112-secured-types-should-not-expose-fields.md)。
+ 請勿隱藏此規則的警告。 外部可見的欄位不會提供屬性無法使用的任何權益。 此外，公用欄位不能受到[連結要求](/dotnet/framework/misc/link-demands)。 請參閱[CA2112:受保護的類型不應該公開欄位](../code-quality/ca2112-secured-types-should-not-expose-fields.md)。
 
 ## <a name="example"></a>範例
  下列範例顯示型別 (`BadPublicInstanceFields`)，違反這項規則。 `GoodPublicInstanceFields` 顯示更正的程式碼。
@@ -52,7 +51,7 @@ ms.locfileid: "49832195"
  [!code-csharp[FxCop.Design.TypesPublicInstanceFields#1](../code-quality/codesnippet/CSharp/ca1051-do-not-declare-visible-instance-fields_1.cs)]
 
 ## <a name="related-rules"></a>相關的規則
- [CA2112：受保護類型不應該公開欄位](../code-quality/ca2112-secured-types-should-not-expose-fields.md)
+ [CA2112:受保護的類型不應該公開欄位](../code-quality/ca2112-secured-types-should-not-expose-fields.md)
 
 ## <a name="see-also"></a>另請參閱
  [連結要求](/dotnet/framework/misc/link-demands)

@@ -2,7 +2,6 @@
 title: 逐步解說分析 Managed 程式碼的程式碼缺失 |Microsoft Docs
 ms.date: 01/29/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 helpviewer_keywords:
 - code analysis [Visual Studio]
@@ -12,14 +11,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 49c122e5cf22e9290f6dab1d45539887c68c01bd
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: fd24485d02d20bf4ab1b5def30e34b8d14a71cb3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37117715"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53955249"
 ---
-# <a name="walkthrough-analyzing-managed-code-for-code-defects"></a>逐步解說： 分析 managed 程式碼，程式碼的缺失
+# <a name="walkthrough-analyzing-managed-code-for-code-defects"></a>逐步解說：分析 managed 程式碼的程式碼缺失
 
 在本逐步解說中，您會使用程式碼分析工具來分析 managed 的專案的程式碼缺失。
 
@@ -87,53 +86,53 @@ ms.locfileid: "37117715"
 
     根據您選擇的開發人員設定檔，您可能必須以指向**其他的 Windows**上**檢視**功能表，然後選擇**錯誤清單**。
 
-1. 在 **方案總管**，選擇**顯示所有檔案**。
+1. 在 [方案總管] 中選擇 [顯示所有檔案]。
 
 1. 展開 [屬性] 節點，然後開啟*AssemblyInfo.cs*檔案。
 
 1. 若要修正警告，使用下列秘訣：
 
-   [CA1014： 以標記組件 CLSCompliantAttribute](../code-quality/ca1014-mark-assemblies-with-clscompliantattribute.md): Microsoft.Design: 「 示範 」 應該 clscompliantattribute 標記和其值應為 true。
+   [CA1014:組件必須標記 clscompliantattribute](../code-quality/ca1014-mark-assemblies-with-clscompliantattribute.md):Microsoft.Design： 應該 clscompliantattribute 標記 「 示範 」，其值應為 true。
 
    1. 加入程式碼`using System;`AssemblyInfo.cs 檔案。
 
    1. 接下來，加入程式碼`[assembly: CLSCompliant(true)]`AssemblyInfo.cs 檔案的結尾。
 
-   [Ca1032： 必須實作標準例外狀況建構函式](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft.Design： 此類別中加入下列建構函式： 公用 demo(String)
+   [CA1032： 必須實作標準例外狀況建構函式](../code-quality/ca1032-implement-standard-exception-constructors.md):Microsoft.Design:將下列建構函式加入至這個類別： 公用 demo(String)
 
    1. 加入建構函式`public demo (String s) : base(s) { }`類別`demo`。
 
-   [Ca1032： 必須實作標準例外狀況建構函式](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft.Design： 此類別中加入下列建構函式： 公用示範 （String，例外狀況）
+   [CA1032： 必須實作標準例外狀況建構函式](../code-quality/ca1032-implement-standard-exception-constructors.md):Microsoft.Design:將下列建構函式加入至這個類別： 公用示範 （String，例外狀況）
 
    1. 加入建構函式`public demo (String s, Exception e) : base(s, e) { }`類別`demo`。
 
-   [Ca1032： 必須實作標準例外狀況建構函式](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft.Design： 此類別中加入下列建構函式： 受保護的示範 （SerializationInfo，StreamingContext）
+   [CA1032： 必須實作標準例外狀況建構函式](../code-quality/ca1032-implement-standard-exception-constructors.md):Microsoft.Design:將下列建構函式加入至這個類別： 受保護的示範 （SerializationInfo，StreamingContext）
 
    1. 加入程式碼`using System.Runtime.Serialization;`Class1.cs 檔案的開頭。
 
    1. 接下來，新增 建構函式 `protected demo (SerializationInfo info, StreamingContext context) : base(info, context) { } to the class demo.`
 
-   [Ca1032： 必須實作標準例外狀況建構函式](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft.Design： 此類別中加入下列建構函式： 公用 demo
+   [CA1032： 必須實作標準例外狀況建構函式](../code-quality/ca1032-implement-standard-exception-constructors.md):Microsoft.Design:將下列建構函式加入至這個類別： 公用 demo
 
    1. 加入建構函式`public demo () : base() { }`類別`demo` **。**
 
-   [CA1709： 識別項應該使用的大小寫正確](../code-quality/ca1709-identifiers-should-be-cased-correctly.md): Microsoft.Naming： 藉由將它變更為 'TestCode' 更正命名空間名稱 'testCode' 的大小寫。
+   [CA1709:識別項應該使用正確的大小寫](../code-quality/ca1709-identifiers-should-be-cased-correctly.md):Microsoft.Naming:將它變更為 'TestCode'，以修正命名空間名稱 'testCode' 的大小寫。
 
    1. 變更命名空間的大小寫`testCode`至`TestCode`。
 
-   [CA1709： 識別項應該使用的大小寫正確](../code-quality/ca1709-identifiers-should-be-cased-correctly.md): Microsoft.Naming： 更正大小寫的型別名稱 「 示範 」 將它變更為 「 示範 」。
+   [CA1709:識別項應該使用正確的大小寫](../code-quality/ca1709-identifiers-should-be-cased-correctly.md):Microsoft.Naming:將它變更為 「 示範 」，以更正大小寫的型別名稱 「 示範 」。
 
    1. 變更之成員的名稱`Demo`。
 
-   [CA1709： 識別項應該使用的大小寫正確](../code-quality/ca1709-identifiers-should-be-cased-correctly.md): Microsoft.Naming： 更正大小寫的成員名稱 'item'，藉由將它變更為 'Item'。
+   [CA1709:識別項應該使用正確的大小寫](../code-quality/ca1709-identifiers-should-be-cased-correctly.md):Microsoft.Naming:將它變更為 'Item'，以修正成員名稱 'item' 的大小寫。
 
    1. 變更之成員的名稱`Item`。
 
-   [： Ca1710 識別項應該正確的後置詞](../code-quality/ca1710-identifiers-should-have-correct-suffix.md): Microsoft.Naming： 重新命名 'testCode.demo' 中 'Exception' 結束。
+   [CA1710:識別項應該使用正確的後置詞](../code-quality/ca1710-identifiers-should-have-correct-suffix.md):Microsoft.Naming:將 'testCode.demo' 的重新命名為 'Exception' 結尾。
 
    1. 變更類別和其建構函式的名稱`DemoException`。
 
-   [CA2210： 組件應該具備有效的強式名稱](../code-quality/ca2210-assemblies-should-have-valid-strong-names.md)： 使用強式名稱金鑰簽署 'CodeAnalysisManagedDemo'。
+   [CA2210:組件應該具備有效的強式名稱](../code-quality/ca2210-assemblies-should-have-valid-strong-names.md):使用強式名稱金鑰簽署 'CodeAnalysisManagedDemo'。
 
    1. 在 **專案**功能表上，選擇**CodeAnalysisManagedDemo 屬性**。
 
@@ -153,7 +152,7 @@ ms.locfileid: "37117715"
 
    1. 在 **檔案**功能表上，選擇**儲存選取項目**，然後關閉 屬性頁。
 
-   [Ca2237： 必須以 SerializableAttribute 標記 ISerializable 類型](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md): Microsoft.Usage： 加入 [Serializable] 屬性中，輸入 'demo' 因為此類型會實作 ISerializable。
+   [CA2237： 必須Serializableattribute 標記 ISerializable 類型](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md):Microsoft.Usage:加入輸入 'demo' 因為此類型會實作 ISerializable [Serializable] 屬性。
 
    1. 新增`[Serializable ()]`屬性加入該類別`demo`。
 

@@ -1,9 +1,6 @@
 ---
 title: Word 物件模型概觀
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -20,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 75a5f8e79bbd6dd34b046cbff6d59844a977efb3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f4d550389e6659388c39fc6a2953eeb816c8eb01
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49878007"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53922255"
 ---
 # <a name="word-object-model-overview"></a>Word 物件模型概觀
   當您在 Visual Studio 中開發 Word 解決方案時，會與 Word 物件模型互動。 組成這個物件模型的類別和介面，是由 Word 的主要 Interop 組件所提供，並在 <xref:Microsoft.Office.Interop.Word> 命名空間中定義。  
@@ -122,7 +119,7 @@ ms.locfileid: "49878007"
  如需 Word 物件模型的完整資訊，您可以參閱 Word 主要 Interop 組件 (PIA) 參考和 Visual Basic for Applications (VBA) 物件模型參考。  
   
 ### <a name="primary-interop-assembly-reference"></a>主要 interop 組件參考  
- Word PIA 參考文件說明 Word 主要 Interop 組件中的類型。 這份文件可從下列位置： [Word 2010 主要 interop 組件參考](http://go.microsoft.com/fwlink/?LinkId=189588)。  
+ Word PIA 參考文件說明 Word 主要 Interop 組件中的類型。 這份文件可從下列位置：[Word 2010 主要 interop 組件參考](http://go.microsoft.com/fwlink/?LinkId=189588)。  
   
  如需有關設計的 Word PIA，例如類別和介面之間的差異以及 PIA 中的事件實作的方式，請參閱[的 Office 主要 interop 組件中類別和介面概觀](http://go.microsoft.com/fwlink/?LinkId=189592).  
   
@@ -140,5 +137,3 @@ ms.locfileid: "49878007"
  [主項目和主控制項概觀](../vsto/host-items-and-host-controls-overview.md)   
  [主項目和主控制項的程式設計限制](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
  [Office 方案中的選擇性參數](../vsto/optional-parameters-in-office-solutions.md)  
-  
-  

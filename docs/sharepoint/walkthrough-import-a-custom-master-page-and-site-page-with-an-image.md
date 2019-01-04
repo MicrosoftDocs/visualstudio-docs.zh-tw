@@ -1,9 +1,6 @@
 ---
-title: 逐步解說： 匯入自訂主版頁面和網站的映像上 |Microsoft Docs
-ms.custom: ''
+title: 逐步解說：匯入自訂主版頁面和網站的映像上 |Microsoft Docs
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 45f1ded9cf6eca3715c5050f93aa24630a1bc4e1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f7901bfea334ff3d9ad6d197bf64b3f1a87961a9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49890983"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53904149"
 ---
-# <a name="walkthrough-import-a-custom-master-page-and-site-page-with-an-image"></a>逐步解說： 匯入自訂主版頁面和網站頁面的映像
+# <a name="walkthrough-import-a-custom-master-page-and-site-page-with-an-image"></a>逐步解說：匯入自訂主版頁面和網站頁面的映像
   本逐步解說示範如何匯入 SharePoint 自訂主版頁面及擁有影像的網站頁面[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]SharePoint 專案。  
 
  本逐步解說示範如何完成下列工作：  
@@ -179,10 +176,9 @@ ms.locfileid: "49890983"
 
 7. 開啟 SharePoint 網站檢視已部署的項目。  
 
-   檔案匯入的替代方法[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]並將其部署到 SharePoint 會將檔案新增至模組中[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。 [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)] [如何： 匯入的主版頁面或佈景主題](../sharepoint/how-to-import-a-master-page-or-theme.md)並[使用模組來包含方案中的檔案](../sharepoint/using-modules-to-include-files-in-the-solution.md)。  
+   檔案匯入的替代方法[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]並將其部署到 SharePoint 會將檔案新增至模組中[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。 [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)] [操作說明：匯入的主版頁面或佈景主題](../sharepoint/how-to-import-a-master-page-or-theme.md)並[使用模組來包含方案中的檔案](../sharepoint/using-modules-to-include-files-in-the-solution.md)。  
 
 ## <a name="see-also"></a>另請參閱
  [從現有的 SharePoint 網站匯入項目](../sharepoint/importing-items-from-an-existing-sharepoint-site.md)   
  [開發 SharePoint 方案](../sharepoint/developing-sharepoint-solutions.md)   
  [建立可重複使用的控制項，為 web 組件或應用程式頁面](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)  
-

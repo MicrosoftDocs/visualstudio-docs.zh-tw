@@ -1,9 +1,6 @@
 ---
 title: 將功能表加入至 Visual Studio 功能表列 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - menus, creating top level
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 42c1a9cd2d1c9d1349b07e06d65a8da6a41b4245
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d058f9b82918f74d8e43e56f9814e0d3451376cb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49938213"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53959530"
 ---
 # <a name="add-a-menu-to-the-visual-studio-menu-bar"></a>將功能表加入 Visual Studio 功能表列
 本逐步解說示範如何將 Visual Studio 整合式的開發環境 (IDE) 的功能表列中的功能表。 IDE 的功能表列包含功能表分類，例如**檔案**，**編輯**，**檢視**，**視窗**，以及**協助**.  

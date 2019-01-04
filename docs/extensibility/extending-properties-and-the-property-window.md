@@ -1,9 +1,6 @@
 ---
 title: 擴充屬性和屬性視窗 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - STrackSelection interface, supporting Property Browser
@@ -17,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8f599c31e674a93ef44d83763a238575bff459e2
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: ce0a3f760f3ac34b602b236064dee80923d65845
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39639974"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53880334"
 ---
 # <a name="extend-properties-and-the-property-window"></a>擴充屬性和 [屬性] 視窗
 **屬性**視窗用來檢視和編輯的設計階段屬性和所選物件的事件。  

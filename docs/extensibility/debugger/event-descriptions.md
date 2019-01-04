@@ -1,9 +1,6 @@
 ---
 title: 事件描述 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], events
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: afcad096b9f2991939b1378e44524c9cd83a9baf
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 4349a1f994612406110f2cefdb0b80358895d269
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39231030"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53989853"
 ---
 # <a name="event-descriptions"></a>事件描述
 事件的每個類型都有特定的用途。  

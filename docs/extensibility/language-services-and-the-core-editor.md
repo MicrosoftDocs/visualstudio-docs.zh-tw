@@ -1,9 +1,6 @@
 ---
 title: 語言服務及核心編輯器 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - language services
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e7f439cf1564e14857b3a609191cc0bea05e0e04
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 9f3380545ce78defb57be8944881309ea2ab2990
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39636235"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53929893"
 ---
 # <a name="language-services-and-the-core-editor"></a>語言服務及核心編輯器
 在 Visual Studio 中的編輯器的常見問題與服務相關聯的語言。 除此之外，語言服務會提供語法著色、 陳述式完成、 IntelliSense 和文字格式設定。  

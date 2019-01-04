@@ -1,9 +1,6 @@
 ---
 title: 針對 SharePoint 方案進行疑難排解 |Microsoft Docs
-ms.custom: ''
 ms.date: 02/22/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - Microsoft.VisualStudio.Tools.SharePoint.Errors.Debugging
@@ -19,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 103595772c5597eadb251e1d21befba88df2c9d2
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: 0e72b1f8a7ca76aa2b3afd68041c500b24efd8db
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53803197"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53957958"
 ---
 # <a name="troubleshoot-sharepoint-solutions"></a>SharePoint 方案進行疑難排解
   當您使用偵錯 SharePoint 方案時，則可能會發生下列問題或警示[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]偵錯工具。 如需詳細資訊，請參閱 <<c0> [ 偵錯 SharePoint 2007 工作流程方案](https://msdn.microsoft.com/3a5392f3-66f3-48be-956e-02de23fa6247)。

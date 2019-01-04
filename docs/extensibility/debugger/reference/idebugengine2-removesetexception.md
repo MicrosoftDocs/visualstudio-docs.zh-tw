@@ -1,9 +1,6 @@
 ---
 title: IDebugEngine2::RemoveSetException |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugEngine2::RemoveSetException
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4880bfc80f27c362deb056b176492eb62ec6f975
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3e8b4fd1d185cd5be3af3815e7c5520583231c06
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49941542"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53866016"
 ---
 # <a name="idebugengine2removesetexception"></a>IDebugEngine2::RemoveSetException
 移除指定的例外狀況，讓它不再由偵錯引擎。  
@@ -28,13 +25,13 @@ ms.locfileid: "49941542"
 ## <a name="syntax"></a>語法  
   
 ```cpp  
-HRESULT RemoveSetException(   
+HRESULT RemoveSetException(   
    EXCEPTION_INFO* pException  
 );  
 ```  
   
 ```csharp  
-int RemoveSetException(   
+int RemoveSetException(   
    EXCEPTION_INFO[] pException  
 );  
 ```  

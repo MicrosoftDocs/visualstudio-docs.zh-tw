@@ -1,37 +1,36 @@
 ---
-title: CA2153：避免處理損毀狀態例外狀況
+title: CA2153:避免處理損毀狀態例外狀況
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5043c8cb9cefb8ffdb600083ba2dc4bb49d5e3f5
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: e6b789a4580c3787a4504d730e694308341657eb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45547515"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53821856"
 ---
-# <a name="ca2153-avoid-handling-corrupted-state-exceptions"></a>CA2153：避免處理損毀狀態例外狀況
+# <a name="ca2153-avoid-handling-corrupted-state-exceptions"></a>CA2153:避免處理損毀狀態例外狀況
 
 |||
 |-|-|
 |TypeName|AvoidHandlingCorruptedStateExceptions|
 |CheckId|CA2153|
-|類別|Microsoft.Security|
+|分類|Microsoft.Security|
 |中斷變更|非中斷|
 
 ## <a name="cause"></a>原因
 
-[損毀狀態例外狀況 (CSE)](https://msdn.microsoft.com/magazine/dd419661.aspx)指出記憶體損毀存在於您的程序。 如果攻擊者將攻擊放入損毀的記憶體區域，則攔截這些處理序而非讓它們損毀，會導致安全性弱點。
+[損毀狀態例外狀況 (CSE)](https://msdn.microsoft.com/magazine/dd419661.aspx) 指出您的處理序中有記憶體損毀的狀況。 如果攻擊者將攻擊放入損毀的記憶體區域，則攔截這些處理序而非讓它們損毀，會導致安全性弱點。
 
 ## <a name="rule-description"></a>規則描述
 
-CSE 指出處理序的狀態已損毀且系統不予攔截。 在損毀狀態的案例中，如果以適當的 `HandleProcessCorruptedStateExceptions` 屬性標示方法，一般的處理常式只會攔截例外狀況。 根據預設， [Common Language Runtime (CLR)](/dotnet/standard/clr)將 Cse 不叫用 catch 處理常式。
+CSE 指出處理序的狀態已損毀且系統不予攔截。 在損毀狀態的案例中，如果以適當的 `HandleProcessCorruptedStateExceptions` 屬性標示方法，一般的處理常式只會攔截例外狀況。 [通用語言執行平台 (CLR)](/dotnet/standard/clr) 預設 CSE 不叫用 catch 處理常式。
 
 允許處理序損毀卻不攔截這類例外狀況，是最安全的選項，因為就算是記錄程式碼都會允許攻擊者攻擊記憶體損毀錯誤。
 
@@ -41,7 +40,7 @@ CSE 指出處理序的狀態已損毀且系統不予攔截。 在損毀狀態的
 
 若要解決這個警告，請執行下列其中一項：
 
-- 移除`HandleProcessCorruptedStateExceptions`屬性。 這會還原到預設的執行階段行為，不將 CSE 傳遞至 catch 處理常式。
+- 移除 `HandleProcessCorruptedStateExceptions` 屬性。 這會還原到預設的執行階段行為，不將 CSE 傳遞至 catch 處理常式。
 
 - 移除一般 catch 處理常式，而非移除攔截特定例外狀況類型的處理常式。 這可能包括假設處理常式程式碼能夠安全地處理它們 （罕見） 的 Cse。
 

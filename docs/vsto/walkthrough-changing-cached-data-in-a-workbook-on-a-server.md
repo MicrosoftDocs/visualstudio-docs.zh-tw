@@ -1,9 +1,6 @@
 ---
 title: 逐步解說：變更伺服器的活頁簿中的快取的資料
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 30f2c8576aaf26d2cb643327fb989d90a8964552
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: 8977267ba8acadf1105fc0f1608339301b737476
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53804373"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53881324"
 ---
 # <a name="walkthrough-change-cached-data-in-a-workbook-on-a-server"></a>逐步解說：變更伺服器的活頁簿中的快取的資料
   本逐步解說示範如何修改 Microsoft Office Excel 活頁簿中快取不會啟動 Excel 所使用的資料集<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument>類別。

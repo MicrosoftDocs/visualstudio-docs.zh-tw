@@ -10,13 +10,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 806e0984ce0309ff071e595725615034a7d42f09
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 364e39744f403e83847d983e02843bf538bf5c57
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49882518"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53856856"
 ---
 # <a name="accessing-models-from-text-templates"></a>從文字範本存取模型
 使用文字範本，您可以建立報表檔案、 原始程式碼檔案和其他以特定領域語言模型為基礎的文字檔。 如需文字範本的基本資訊，請參閱[程式碼產生和 T4 文字範本](../modeling/code-generation-and-t4-text-templates.md)。 文字範本進行偵錯時您的 DSL 中，以實驗模式運作，並已部署的 DSL 所在的電腦上也能運作。
@@ -143,7 +142,7 @@ For Each element As ExampleElement In Me.WorkModel.Elements
 
  若要載入檔案，最有效的方法是使用 Visual Studio ModelBus。 在典型的案例中，文字範本會以一般方式載入的第一個模型使用 DSL 特定指示詞。 該模型會包含對另一個模型的 ModelBus 參考。 您可以使用 ModelBus 開啟參考的模型，並存取特定的項目。 如需詳細資訊，請參閱 <<c0> [ 文字範本中使用 Visual Studio ModelBus](../modeling/using-visual-studio-modelbus-in-a-text-template.md)。
 
- 在較不一般的案例中，您可能想要開啟模型檔就只是檔名，且其中可能無法在目前的 Visual Studio 專案。 在此情況下，您可以使用開啟檔案中所述的技巧[如何： 從程式碼中的檔案中開啟模型](../modeling/how-to-open-a-model-from-file-in-program-code.md)。
+ 在較不一般的案例中，您可能想要開啟模型檔就只是檔名，且其中可能無法在目前的 Visual Studio 專案。 在此情況下，您可以使用開啟檔案中所述的技巧[How to:從程式碼中的檔案中開啟模型](../modeling/how-to-open-a-model-from-file-in-program-code.md)。
 
 ## <a name="generating-multiple-files-from-a-template"></a>從範本產生多個檔案
  如果您想要產生的數個檔案-例如，來產生個別的檔案，每個項目在模型中，有數種可行方法。 根據預設，只有一個檔案會產生從每個範本檔案。

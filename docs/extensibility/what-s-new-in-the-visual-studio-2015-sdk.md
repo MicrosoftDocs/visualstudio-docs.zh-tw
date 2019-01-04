@@ -1,9 +1,6 @@
 ---
 title: 什麼&#39;Visual Studio 2015 SDK 的新功能 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: c64aac80-a411-463f-b7bd-8b7607a52ece
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4926ed9fafb64664d3ac0426466d90611cae4450
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 4c5a84da9fef0bee2a4701337ea62864f5fd34b3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39566689"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53952838"
 ---
 # <a name="what39s-new-in-the-visual-studio-2015-sdk"></a>什麼&#39;的新功能 Visual Studio 2015 SDK
 Visual Studio SDK for Visual Studio 2015 中，更新，Visual Studio 2015 和 Visual Studio 2017 具有下列全新和更新功能。  
@@ -62,12 +59,12 @@ Visual Studio SDK for Visual Studio 2015 中，更新，Visual Studio 2015 和 V
 > [!NOTE]
 >  您可以繼續使用您的專案中安裝 VS SDK 參考組件 (位於\<Visual Studio 安裝位置 > \ VSSDK\VisualStudioIntegration\Common\Assemblies)，不是需要現有的擴充性專案若要使用 NuGet 套件升級。  專案**參考] / [加入參考**對話方塊會繼續使用已安裝的 VS SDK 參考組件。  
 >   
->  如果您想要修改您現有的專案，以使用 NuGet，請參閱[如何： 將 VSPackages 移轉至 Visual Studio 2015](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2015.md)具有擴充性專案更新至 NuGet 套件的區段。  
+>  如果您想要修改您現有的專案，以使用 NuGet，請參閱[How to:將 VSPackages 移轉至 Visual Studio 2015](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2015.md)具有擴充性專案更新至 NuGet 套件的區段。  
   
 ## <a name="light-bulbs"></a>燈泡  
  其中一種最令人興奮的新方式撰寫延伸模組程式碼是由 Roslyn 專案中提供。 如需詳細資訊，請參閱 < [Roslyn](https://github.com/dotnet/Roslyn)。  
   
- 燈泡是隨附於 VSSDK 的新功能。 也就是使用 Visual Studio 編輯器中的圖示展開以顯示一組程式碼重構動作或修正的內建的程式碼分析器所識別的問題。 如需詳細資訊，請參閱 <<c0> [ 逐步解說︰ 顯示燈泡建議](../extensibility/walkthrough-displaying-light-bulb-suggestions.md)。  
+ 燈泡是隨附於 VSSDK 的新功能。 也就是使用 Visual Studio 編輯器中的圖示展開以顯示一組程式碼重構動作或修正的內建的程式碼分析器所識別的問題。 如需詳細資訊，請參閱[逐步解說：Displaying Light Bulb Suggestions](../extensibility/walkthrough-displaying-light-bulb-suggestions.md)。  
   
 ## <a name="updated-user-experience-guidelines"></a>更新的使用者經驗指導方針  
  適用於 Visual Studio 中設計新的擴充功能？ 查看已更新及擴充[Visual Studio 使用者經驗指導方針](../extensibility/ux-guidelines/visual-studio-user-experience-guidelines.md)。  您會發現[色彩語彙基元](../extensibility/ux-guidelines/shared-colors-for-visual-studio.md)，[字型大小](../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md)，[對話方塊版面配置規格](../extensibility/ux-guidelines/layout-for-visual-studio.md)，和其他指南，您需要與 Visual Studio 完美整合，您的新 UI。

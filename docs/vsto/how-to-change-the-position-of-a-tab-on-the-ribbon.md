@@ -1,9 +1,6 @@
 ---
 title: HOW TO：變更功能區上的索引標籤的位置
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,12 +12,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c00fa747ee3c74592d491796e1281207d0c5a83f
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: f1b324ec6e43639b55ba308aab7028592c8671d1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53647107"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53956505"
 ---
 # <a name="how-to-change-the-position-of-a-tab-on-the-ribbon"></a>HOW TO：變更功能區上的索引標籤的位置
   您可以使用，以變更功能區上的自訂索引標籤的順序**索引標籤集合編輯器**。 之前或之後在功能區上的內建索引標籤，您可以將自訂索引標籤。 內建索引標籤是已經在 Microsoft Office 應用程式的功能區的索引標籤。 例如，**資料** 索引標籤是在 Excel 中的內建索引標籤。  
@@ -65,5 +62,3 @@ ms.locfileid: "53647107"
  [功能區 XML](../vsto/ribbon-xml.md)   
  [逐步解說：使用功能區設計工具建立自訂的索引標籤](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)   
  [逐步解說：使用功能區 XML 建立自訂的索引標籤](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md)  
-  
-  

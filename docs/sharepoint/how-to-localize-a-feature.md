@@ -1,13 +1,8 @@
 ---
-title: 如何： 當地語系化功能 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：當地語系化功能 |Microsoft Docs
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -18,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c143016aaec81c65c118923ff9513bb4607353dc
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 165eee357c001720af132236a8577f259efa4f24
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118625"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53887670"
 ---
-# <a name="how-to-localize-a-feature"></a>如何： 當地語系化功能
+# <a name="how-to-localize-a-feature"></a>HOW TO：當地語系化功能
   根據預設，功能標題和描述使用硬式編碼的字串值。 若要當地語系化的功能標題和描述，請將字串取代運算式參考當地語系化的資源。  
   
 ## <a name="localize-a-feature"></a>當地語系化功能  
@@ -64,7 +59,6 @@ ms.locfileid: "37118625"
   
 ## <a name="see-also"></a>另請參閱
  [當地語系化 SharePoint 方案](../sharepoint/localizing-sharepoint-solutions.md)   
- [如何： 加入資源檔](../sharepoint/how-to-add-a-resource-file.md)   
- [如何： 當地語系化 ASPX 標記](../sharepoint/how-to-localize-aspx-markup.md)   
- [如何： 當地語系化程式碼](../sharepoint/how-to-localize-code.md)  
-  
+ [如何：加入資源檔](../sharepoint/how-to-add-a-resource-file.md)   
+ [如何：當地語系化 ASPX 標記](../sharepoint/how-to-localize-aspx-markup.md)   
+ [如何：當地語系化程式碼](../sharepoint/how-to-localize-code.md)  

@@ -1,9 +1,6 @@
 ---
 title: 建立和管理強制回應對話方塊 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - dialog boxes, managing in Visual Studio
@@ -13,15 +10,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b6c5a4bdcb6496bae9bf718c38bcf512fbf69756
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: f6d7366fe2cce030f47d4bbd78b4baf6e5fff81d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498745"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53847658"
 ---
 # <a name="create-and-manage-modal-dialog-boxes"></a>建立和管理強制回應對話方塊
-當您建立強制回應對話方塊，在 Visual Studio 內時，您必須確定當對話方塊出現時，停用 [] 對話方塊中的父視窗，然後在關閉對話方塊之後，重新啟用父視窗。 如果不這麼做，您可能會收到錯誤： *Microsoft Visual Studio 由於強制回應對話方塊正在使用，所以無法關閉。請關閉使用中的對話方塊，然後重試。*  
+當您建立強制回應對話方塊，在 Visual Studio 內時，您必須確定當對話方塊出現時，停用 [] 對話方塊中的父視窗，然後在關閉對話方塊之後，重新啟用父視窗。 如果不這麼做，您可能會收到錯誤：*由於強制回應對話方塊正在使用 Microsoft Visual Studio 無法關閉。請關閉使用中的對話方塊，然後重試。*  
   
  有兩種執行此動作。 建議的方式，如果您有 [WPF] 對話方塊中，是從它衍生出來<xref:Microsoft.VisualStudio.PlatformUI.DialogWindow>，然後呼叫<xref:Microsoft.VisualStudio.PlatformUI.DialogWindow.ShowModal%2A>顯示對話方塊。 如果您這麼做，您不需要管理父視窗的強制回應狀態。  
   

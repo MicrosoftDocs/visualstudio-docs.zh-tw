@@ -1,9 +1,6 @@
 ---
-title: 如何： 取得服務 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：取得服務 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - services, consuming
@@ -13,14 +10,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b7b28f018ba92ad2ab8a266311ac2e71fd910440
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 635a02daf6f6501679cc2a38cd252b1e1ebec7a1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49951375"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53990025"
 ---
-# <a name="how-to-get-a-service"></a>如何： 取得服務
+# <a name="how-to-get-a-service"></a>HOW TO：取得服務
 您通常需要取得 Visual Studio 服務，以存取不同的功能。 一般情況下，Visual Studio 服務提供您可以使用的一或多個介面。 您可以從 VSPackage 取得大部分的服務。  
   
  衍生自任何 VSPackage <xref:Microsoft.VisualStudio.Shell.Package> ，具有已正確地設置和可尋求任何全域服務。 因為`Package`類別會實作<xref:System.IServiceProvider>，衍生自任何 VSPackage`Package`也是服務提供者。  
@@ -42,7 +39,7 @@ ms.locfileid: "49951375"
   
    ```  
   
-    此程式碼取得 SVsActivityLog 服務，並將它轉換成<xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog>介面，可用來寫入活動記錄檔。 如需範例，請參閱[如何： 使用活動記錄](../extensibility/how-to-use-the-activity-log.md)。  
+    此程式碼取得 SVsActivityLog 服務，並將它轉換成<xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog>介面，可用來寫入活動記錄檔。 如需範例，請參閱[How to:使用活動記錄](../extensibility/how-to-use-the-activity-log.md)。  
   
 4. 建置此專案並開始偵錯。 實驗執行個體隨即出現。  
   
@@ -53,7 +50,7 @@ ms.locfileid: "49951375"
   
  靜態<xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A>方法會初始化任何 VSPackage 衍生自第一次的快取的服務提供者需仰賴<xref:Microsoft.VisualStudio.Shell.Package>設置。  
   
- 之前設置 VSPackage 呼叫 VSPackage 建構函式，因為全域服務都無法從 VSPackage 的建構函式通常使用。 請參閱[如何： 疑難排解服務](../extensibility/how-to-troubleshoot-services.md)的因應措施。  
+ 之前設置 VSPackage 呼叫 VSPackage 建構函式，因為全域服務都無法從 VSPackage 的建構函式通常使用。 請參閱[如何：疑難排解服務](../extensibility/how-to-troubleshoot-services.md)的因應措施。  
   
  以下是最好的工具視窗或其他非 VSPackage 項目中取得服務的範例。  
   
@@ -70,7 +67,7 @@ if (log == null) return;
  以下是如何從 DTE 物件取得服務。  
   
 ```csharp  
-// Start with the DTE object, for example:   
+// Start with the DTE object, for example:   
 // using EnvDTE;  
 // DTE dte = (DTE)GetService(typeof(DTE));  
   
@@ -86,6 +83,6 @@ if (sp != null)
 ```  
   
 ## <a name="see-also"></a>另請參閱  
- [如何： 提供的服務](../extensibility/how-to-provide-a-service.md)   
+ [如何：提供服務](../extensibility/how-to-provide-a-service.md)   
  [使用，並提供服務](../extensibility/using-and-providing-services.md)   
  [服務的基本資訊](../extensibility/internals/service-essentials.md)

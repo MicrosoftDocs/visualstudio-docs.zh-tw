@@ -2,19 +2,18 @@
 title: XML 編輯器
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e120d65c9336acaa509e74c79d9e538673cd256
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: c5c1c81abbbc2f252744c465adf1cb99b3396d54
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349318"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53873762"
 ---
 # <a name="xml-editor"></a>XML 編輯器
 

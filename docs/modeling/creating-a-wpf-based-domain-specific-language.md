@@ -8,19 +8,18 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: e2a4e569102623f711bd08e896a39f020de14d04
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 9eaae58d9b805888215ccd9e69753061be7695fa
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31946815"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53877597"
 ---
-# <a name="create-a-wpf-based-domain-specific-language"></a>建立以 WPF 為基礎的特定領域語言
+# <a name="create-a-wpf-based-domain-specific-language"></a>建立 WPF 架構的特定領域語言
 
-您可以建立有 WPF 設計工具，而不是圖形化設計工具的特定領域語言。
+您可以建立特定領域語言具有的 WPF 設計工具，而不是圖形化設計工具。
 
-資訊和範例，這項功能可以找到 Visual Studio 視覺效果和模型工具網站，位於 [http://go.microsoft.com/fwlink/?LinkId=186128](http://go.microsoft.com/fwlink/?LinkId=186128)
+資訊和範例，這項功能可於 Visual Studio Visualization and Modeling Tools 的網站，位於 [http://go.microsoft.com/fwlink/?LinkId=186128](http://go.microsoft.com/fwlink/?LinkId=186128)
 
 ## <a name="see-also"></a>另請參閱
 

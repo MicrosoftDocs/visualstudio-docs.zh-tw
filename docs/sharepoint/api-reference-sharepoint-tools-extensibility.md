@@ -1,9 +1,6 @@
 ---
 title: API 參考 （SharePoint 工具擴充性） |Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 39b324d2eda0544482c1f2f5ca9f54941ea8d8d4
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 202ddd802978c54c7ba773919ed3fd66a406cc05
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36325790"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53987242"
 ---
 # <a name="api-reference-sharepoint-tools-extensibility"></a>API 參考 （SharePoint 工具擴充性）
   本章節包含擴充 Visual Studio 中的 SharePoint 工具的 API 參考文件。  
@@ -66,4 +63,3 @@ ms.locfileid: "36325790"
  [擴充 SharePoint 連線節點，在 伺服器總管](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)   
  [擴充 SharePoint 封裝和部署](../sharepoint/extending-sharepoint-packaging-and-deployment.md)   
  [呼叫 SharePoint 物件模型](../sharepoint/calling-into-the-sharepoint-object-models.md)  
-  

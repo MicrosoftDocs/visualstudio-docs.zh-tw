@@ -1,6 +1,5 @@
 ---
 title: Hello World 擴充功能教學課程 |Microsoft Docs
-ms.custom: ''
 ms.date: 07/10/2017
 ms.topic: conceptual
 ms.assetid: f74e1ad1-1ee5-4360-9bd5-d82467b884ca
@@ -9,14 +8,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e2122a98778372690990a75269be2f3087653678
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 1e7d221526a0fc0214b57eff0c122e526fc09029
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349461"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53827081"
 ---
-# <a name="create-your-first-extension-hello-world"></a>建立您的第一個延伸模組： Hello World
+# <a name="create-your-first-extension-hello-world"></a>建立您的第一個延伸模組：Hello World
 
 這個 Hello World 範例會引導您完成適用於 Visual Studio 建立您的第一個延伸模組。 本教學課程會示範如何將新的命令新增至 Visual Studio。
 

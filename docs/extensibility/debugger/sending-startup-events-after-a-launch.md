@@ -1,9 +1,6 @@
 ---
 title: 在啟動後傳送啟動事件 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], startup events
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 64a2423e3e6900d992ba1a2fafe13f72ab329520
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: caa9f615c6ed6f314695b195a6095d238382a4c2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49927069"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53967493"
 ---
 # <a name="send-startup-events-after-a-launch"></a>在啟動後傳送啟動事件
 在偵錯引擎 (DE) 附加至程式中，它會將一系列的啟動事件送回偵錯工作階段中。  

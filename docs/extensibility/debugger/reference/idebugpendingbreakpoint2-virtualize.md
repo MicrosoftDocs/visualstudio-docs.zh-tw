@@ -1,9 +1,6 @@
 ---
 title: IDebugPendingBreakpoint2::Virtualize |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugPendingBreakpoint2::Virtualize
@@ -16,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: eb2e66378b2a7b906b6bf9e0efe4e718316ade54
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 99b046d67e3f7edc48fa90d0fadac2ad63a05545
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49948287"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53846213"
 ---
 # <a name="idebugpendingbreakpoint2virtualize"></a>IDebugPendingBreakpoint2::Virtualize
 切換虛擬化的狀態這暫止的中斷點。 當虛擬化暫止中斷點時，偵錯引擎會嘗試將它繫結，每次新的程式碼載入程式。  
@@ -29,13 +26,13 @@ ms.locfileid: "49948287"
 ## <a name="syntax"></a>語法  
   
 ```cpp  
-HRESULT Virtualize(   
+HRESULT Virtualize(   
    BOOL fVirtualize  
 );  
 ```  
   
 ```cpp  
-int Virtualize(   
+int Virtualize(   
    int fVirtualize  
 );  
 ```  

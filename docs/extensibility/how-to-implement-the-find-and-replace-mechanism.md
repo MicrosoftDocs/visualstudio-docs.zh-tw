@@ -1,7 +1,6 @@
 ---
-title: 如何： 實作 尋找和取代機制 |Microsoft Docs
+title: HOW TO：實作 尋找和取代機制 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - find and replace
@@ -11,14 +10,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fbd41f8f1a86a0b6177b4a1d1498075d6de77030
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: e3847b9125109cd48b458d06cbfc41fa91b7139f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39636248"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53943021"
 ---
-# <a name="how-to-implement-the-find-and-replace-mechanism"></a>如何： 實作尋找和取代機制
+# <a name="how-to-implement-the-find-and-replace-mechanism"></a>HOW TO：實作尋找和取代機制
 
 Visual Studio 提供兩種方式來實作尋找/取代。 其中一個方法是傳遞到殼層的文字影像，並讓它處理搜尋、 反白顯示，並取代文字。 這可讓使用者指定多個文字範圍。 或者，您的 VSPackage 可以控制這項功能本身。 在這兩種情況下，您必須通知有關目前的目標和所有開啟的文件的目標殼層。
 

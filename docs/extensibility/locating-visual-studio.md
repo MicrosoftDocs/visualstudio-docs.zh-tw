@@ -1,9 +1,6 @@
 ---
 title: 尋找 Visual Studio |Microsoft Docs
-ms.custom: ''
 ms.date: 08/21/2017
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - deployment, VSIX
@@ -12,12 +9,12 @@ ms.author: heaths
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 65b0b8dfcc42cfcf80fc24f0c844469b77734e9c
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: f9d74c0a899139046cab1d73b59086e4ab9e2276
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46495384"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53955129"
 ---
 # <a name="locate-visual-studio"></a>尋找 Visual Studio
 
@@ -25,7 +22,7 @@ ms.locfileid: "46495384"
 
 這是快速、 唯讀 API，使用適用於原生和 managed 程式碼的 NuGet 套件。
 
-| 程式碼 | Package |
+| 程式碼 | 封裝 |
 | ---- | --- |
 | 原生 | https://nuget.org/packages/Microsoft.VisualStudio.Setup.Configuration.Native |
 | Managed | https://nuget.org/packages/Microsoft.VisualStudio.Setup.Configuration.Interop |

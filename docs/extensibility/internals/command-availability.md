@@ -1,8 +1,6 @@
 ---
 title: 命令可用性 |Microsoft Docs
 ms.date: 03/22/2018
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - commands, context
@@ -13,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 98250763f504bc7d142f15e559334f296a2e026b
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 7ac9a172ee2cb7a117a1d9b63c4f1fef9f631952
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39511130"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53915862"
 ---
 # <a name="command-availability"></a>命令可用性
 
@@ -28,19 +26,19 @@ Visual Studio 內容會決定哪些命令可供使用。 根據目前的專案�
 
 下列的命令內容是最常見的：
 
-- IDE: IDE 所提供的命令都可用。
+- IDE:IDE 所提供的命令一律可用。
 
-- VSPackage: Vspackage 可以定義命令時要顯示或隱藏。
+- VSPackage:Vspackage 可以定義命令時要顯示或隱藏。
 
-- 專案： 專案命令只會針對目前選取的專案顯示。
+- 專案:只會針對目前選取的專案，顯示專案命令。
 
-- 編輯器： 只有一個編輯器可以作用一次。 提供從作用中的編輯器命令。 與語言服務密切合作的編輯器。 語言服務必須處理其編輯器相關聯的內容中的命令。
+- 編輯器：只有一個編輯器可以作用一次。 提供從作用中的編輯器命令。 與語言服務密切合作的編輯器。 語言服務必須處理其編輯器相關聯的內容中的命令。
 
-- 檔案類型： 編輯器可以載入多個檔案類型。 可用的命令可以根據檔案類型變更。
+- 檔案類型：編輯器可以載入多個檔案類型。 可用的命令可以根據檔案類型變更。
 
-- 使用中視窗： 最後一個使用中的文件視窗設定按鍵繫結的使用者介面 (UI) 內容。 不過，有一個索引鍵繫結資料表類似於內部網頁瀏覽器工具視窗也可以設定的 UI 內容。 針對多個索引標籤的文件視窗，例如 HTML 編輯器，每個索引標籤會有不同的命令內容的 GUID。 註冊工具視窗之後，其上都搭載**檢視**功能表。
+- 使用中視窗：最後一個使用中的文件視窗設定按鍵繫結的使用者介面 (UI) 內容。 不過，有一個索引鍵繫結資料表類似於內部網頁瀏覽器工具視窗也可以設定的 UI 內容。 針對多個索引標籤的文件視窗，例如 HTML 編輯器，每個索引標籤會有不同的命令內容的 GUID。 註冊工具視窗之後，其上都搭載**檢視**功能表。
 
-- UI 內容： UI 內容的值來識別<xref:Microsoft.VisualStudio.VSConstants.UICONTEXT>類別，例如<xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionBuilding_guid>建置解決方案時，或<xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.Debugging_guid>當偵錯工具在作用中。 多個 UI 內容可同時處於作用中。
+- UI 內容：值來識別 UI 內容<xref:Microsoft.VisualStudio.VSConstants.UICONTEXT>類別，例如<xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionBuilding_guid>建置解決方案時，或<xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.Debugging_guid>當偵錯工具在作用中。 多個 UI 內容可同時處於作用中。
 
 ## <a name="define-custom-context-guids"></a>定義自訂內容的 Guid
 

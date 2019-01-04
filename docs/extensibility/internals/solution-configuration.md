@@ -1,9 +1,6 @@
 ---
 title: 方案組態 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - solution configurations
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: caf55b341cc34bb4101f27d2468f0da8e5cf6c96
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ec88e383c7ad0a74699f984691d337da7d6a2cac
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49875316"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53835024"
 ---
 # <a name="solution-configuration"></a>方案組態
 方案組態儲存方案層級屬性。 這些指示的行為**開始**(F5) 索引鍵和**建置**命令。 根據預設，這些命令會建置，並開始偵錯組態。 這兩個命令的方案組態的內容中執行。 這表示使用者可以預期 F5 來啟動和任何使用中方案已透過設定的組建。 環境被設計來建置和執行時，最佳化解決方案，而不是專案中。  

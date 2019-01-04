@@ -1,15 +1,10 @@
 ---
-title: 如何： 新增與移除對應的資料夾 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：新增與移除對應的資料夾 |Microsoft Docs
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.Project.MappedFolder
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -20,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: fe9868a9909dbb78bf510f18584472520948d6f9
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 302b161620961b3b89a616bf4dc998c7a5745456
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36757644"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53823917"
 ---
 # <a name="how-to-add-and-remove-mapped-folders"></a>如何： 新增與移除對應的資料夾
   一些常用於在 SharePoint 中的資料夾，例如影像和配置、 深度內嵌中的檔案階層。 您可以將這些資料夾對應至 SharePoint 專案，可以更輕鬆地存取它們。 對應的資料夾是 SharePoint 專案中對應的實體位置中的 SharePoint Server 安裝檔案的資料夾。  
@@ -40,7 +35,7 @@ ms.locfileid: "36757644"
   
 1.  在功能表列上，選擇 [檔案] > [新增] > [專案]。  
   
-2.  中**新的專案**對話方塊方塊中，展開**Visual Basic**或**Visual C#**  節點，展開**Office/SharePoint**  節點，然後選擇**SharePoint 方案**節點。  
+2.  在 **新的專案**對話方塊方塊中，展開  **Visual Basic**或**Visual C#**   節點，展開**Office/SharePoint**節點，然後選擇**SharePoint 方案**節點。  
   
 3.  在專案範本清單中，選擇**SharePoint 2013 視覺 Web 組件**範本。  
   
@@ -85,4 +80,3 @@ ms.locfileid: "36757644"
   
 ## <a name="see-also"></a>另請參閱
  [開發 SharePoint 方案](../sharepoint/developing-sharepoint-solutions.md)  
-  

@@ -1,9 +1,6 @@
 ---
 title: HOW TO：將自訂 XML 組件新增至文件層級自訂
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -20,12 +17,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3f3e817e91c4a99f5a3aae6decdc500469c10b8f
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: 80d8b809464cd9209b8125595fef8793fc052943
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53647553"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53846382"
 ---
 # <a name="how-to-add-custom-xml-parts-to-document-level-customizations"></a>HOW TO：將自訂 XML 組件新增至文件層級自訂
   您可以在文件層級自訂中建立自訂 XML 組件，將 XML 資料儲存在 Microsoft Office Excel 活頁簿或 Microsoft Office Word 文件中。 如需詳細資訊，請參閱 <<c0> [ 自訂 XML 組件概觀](../vsto/custom-xml-parts-overview.md)。  
@@ -63,4 +60,3 @@ ms.locfileid: "53647553"
 ## <a name="see-also"></a>另請參閱  
  [自訂 XML 組件概觀](../vsto/custom-xml-parts-overview.md)   
  [如何：使用 VSTO 增益集將自訂 XML 組件新增至文件](../vsto/how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins.md)  
-  

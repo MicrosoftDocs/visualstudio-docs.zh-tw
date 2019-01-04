@@ -1,8 +1,7 @@
 ---
-title: CA2107：必須檢視 Deny 和 Permit Only 的使用方式
+title: CA2107:必須檢閱 Deny 和 Permit Only 的使用方式
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA2107
@@ -16,14 +15,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4324805c90c3a0f1b8dbfddcdfe277c5c8a2fd05
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7c8f4e108d8443816bf43dec9deb629a3a231822
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49868036"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53826097"
 ---
-# <a name="ca2107-review-deny-and-permit-only-usage"></a>CA2107：必須檢視 Deny 和 Permit Only 的使用方式
+# <a name="ca2107-review-deny-and-permit-only-usage"></a>CA2107:必須檢閱 Deny 和 Permit Only 的使用方式
 
 |||
 |-|-|

@@ -1,13 +1,8 @@
 ---
-title: 逐步解說： 使用關聯與初始化表單建立工作流程 |Microsoft Docs
-ms.custom: ''
+title: 逐步解說：使用關聯與初始化表單建立工作流程 |Microsoft Docs
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -22,14 +17,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b6aafde6fed0a1f1722c2d355499523114aaaa00
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c9878da7c1384dec8d0c8aa863b0eff4252e9efe
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49873873"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53824732"
 ---
-# <a name="walkthrough-create-a-workflow-with-association-and-initiation-forms"></a>逐步解說： 使用關聯與初始表單建立工作流程
+# <a name="walkthrough-create-a-workflow-with-association-and-initiation-forms"></a>逐步解說：使用關聯與初始表單建立工作流程
   本逐步解說示範如何建立基本的循序工作流程，其中包含使用關聯與初始表單。 這是啟用參數加入至工作流程，以及使用者 （初始表單） 來啟動工作流程時先到 SharePoint 系統管理員 （關聯表單），相關聯的 ASPX 形式。  
   
  此逐步解說將概述使用者想要建立具有下列需求的核准工作流程的經費支出報表的其中一個的案例：  
@@ -452,5 +447,4 @@ ms.locfileid: "49873873"
   
 ## <a name="see-also"></a>另請參閱
  [建立 SharePoint 工作流程方案](../sharepoint/creating-sharepoint-workflow-solutions.md)   
- [逐步解說： 將應用程式頁面加入至工作流程](../sharepoint/walkthrough-add-an-application-page-to-a-workflow.md)  
-  
+ [逐步解說：將應用程式頁面加入至工作流程](../sharepoint/walkthrough-add-an-application-page-to-a-workflow.md)  

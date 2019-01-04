@@ -1,9 +1,6 @@
 ---
 title: 註冊舊版語言服務 2 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - registration, language services
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f247a510b6fb52903970e408f930b13a8faba08e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 689a612ad277291f72af5527300b4d49f76f173f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49879000"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53828637"
 ---
 # <a name="registering-a-legacy-language-service"></a>註冊舊版語言服務
 下列各節提供的登錄項目清單的各種語言中可用的服務選項[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。  
@@ -34,7 +31,7 @@ ms.locfileid: "49879000"
 |----------|----------|-----------|-----------------|  
 |(預設值)|REG_SZ|*\<GUID &GT;*|語言服務的 GUID。|  
 |LangResID|REG_DWORD|0x0-0xffff|字串資源識別項 (ResID) 語言的當地語系化的文字名稱。|  
-|Package|REG_SZ|*\<GUID &GT;*|VSPackage 的 GUID。|  
+|封裝|REG_SZ|*\<GUID &GT;*|VSPackage 的 GUID。|  
 |ShowCompletion|REG_DWORD|0-1|指定是否**陳述式完成**中的選項**選項**對話方塊會啟用。|  
 |ShowSmartIndent|REG_DWORD|0-1|指定是否可以選取**智慧型**中的縮排**選項** 對話方塊中已啟用。|  
 |RequestStockColors|REG_DWORD|0-1|指定是否為自訂或預設的色彩來將色彩關鍵字。|  
@@ -89,7 +86,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 |名稱|類型|範圍|描述|  
 |----------|----------|-----------|-----------------|  
 |(預設值)|REG_SZ|resID|此選項 頁面的當地語系化的顯示名稱。 名稱可以是常值文字或 #`nnn`，其中`nnn`附屬 DLL 的指定 VSPackage 中的字串資源 id。|  
-|Package|REG_SZ|*GUID*|實作此選項頁面的 VSPackage 的 GUID。|  
+|封裝|REG_SZ|*GUID*|實作此選項頁面的 VSPackage 的 GUID。|  
 |頁面|REG_SZ|*GUID*|屬性頁的 GUID，藉由呼叫要求從 VSPackage<xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetPropertyPage%2A>方法。 如果此登錄項目不存在，將登錄機碼描述的節點，不是頁面。|  
   
 ### <a name="example"></a>範例  
@@ -144,7 +141,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 |DisplayName|REG_SZ|resID|要在 [顯示名稱**開啟**] 對話方塊。 名稱為標準格式字串資源識別碼或名稱。|  
 |ExcludeDefTextEditor|REG_DWORD|0-1|用於**開啟**功能表命令。 如果您不要在清單中可用的編輯器清單的特定檔案類型的預設文字編輯器，設定此值為 1。|  
 |LinkedEditorGUID|REG_SZ|*\<GUID &GT;*|用於可以使用字碼頁支援開啟檔案的任何語言服務。 例如，當您開啟.txt 檔案使用**開啟**命令時，會提供使用原始程式碼編輯器，包含或不含編碼的選項。<br /><br /> 指定名稱之子機碼的 GUID 是字碼頁編輯器 factory;這個特定的登錄項目中指定的連結的 GUID 是一般編輯器 factory。 這個項目的是，如果在 IDE 不會使用預設的編輯器開啟檔案，IDE 會嘗試使用清單中的下一個編輯器。 這個下一步 的編輯器應該不會是字碼頁編輯器 factory，因為此編輯器 factory 基本上是編輯器 factory 失敗的相同。|  
-|Package|REG_SZ|*\<GUID &GT;*|顯示名稱的 ResID VSPackage 的 GUID。|  
+|封裝|REG_SZ|*\<GUID &GT;*|顯示名稱的 ResID VSPackage 的 GUID。|  
   
 ### <a name="example"></a>範例  
   

@@ -1,9 +1,6 @@
 ---
-title: 如何： 以程式設計方式保護文件和文件的部分
-ms.custom: ''
+title: HOW TO：以程式設計方式保護文件和文件的部分
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,14 +14,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9acef141944b106a9bace38fef8ede7041bfecc5
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 030cc69a2a89f81f728afc4e6367ddd6c2d81990
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35670803"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53991106"
 ---
-# <a name="how-to-programmatically-protect-documents-and-parts-of-documents"></a>如何： 以程式設計方式保護文件和文件的部分
+# <a name="how-to-programmatically-protect-documents-and-parts-of-documents"></a>HOW TO：以程式設計方式保護文件和文件的部分
   您可以在 Microsoft Office Word 文件加入保護，以防止使用者對文件進行任何編輯。  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
@@ -34,7 +31,7 @@ ms.locfileid: "35670803"
 > [!NOTE]  
 >  下列範例不會使用密碼保護。不過，您可以考慮在加入文件保護時使用密碼。 如需詳細資訊，請參閱文件保護裝置範例[Office 程式開發範例和逐步解說](../vsto/office-development-samples-and-walkthroughs.md)。  
   
- 您也可以使用內容控制項保護文件的部分。 如需詳細資訊，請參閱 <<c0> [ 如何： 使用內容控制項保護文件的部分](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md)。  
+ 您也可以使用內容控制項保護文件的部分。 如需詳細資訊，請參閱[＜How to：使用內容控制項保護文件的部分](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md)。  
   
 ## <a name="protect-a-document-that-is-part-of-a-document-level-customization"></a>保護文件層級自訂一部分的文件  
   
@@ -74,8 +71,6 @@ ms.locfileid: "35670803"
 ## <a name="see-also"></a>另請參閱  
  [在文件層級方案中的文件保護](../vsto/document-protection-in-document-level-solutions.md)   
  [Office 文件上的密碼保護](../vsto/password-protection-on-office-documents.md)   
- [如何： 允許程式碼的文件背後執行以限制權限](../vsto/how-to-permit-code-to-run-behind-documents-with-restricted-permissions.md)   
- [如何： 將書籤控制項加入 Word 文件](../vsto/how-to-add-bookmark-controls-to-word-documents.md)   
+ [如何：允許程式碼的文件背後執行以限制權限](../vsto/how-to-permit-code-to-run-behind-documents-with-restricted-permissions.md)   
+ [如何：將書籤控制項加入 Word 文件](../vsto/how-to-add-bookmark-controls-to-word-documents.md)   
  [設計和建立 Office 方案](../vsto/designing-and-creating-office-solutions.md)  
-  
-  

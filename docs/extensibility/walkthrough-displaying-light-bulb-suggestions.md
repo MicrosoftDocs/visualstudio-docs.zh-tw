@@ -1,9 +1,6 @@
 ---
-title: 逐步解說： Displaying Light Bulb Suggestions |Microsoft Docs
-ms.custom: ''
+title: 逐步解說：Displaying Light Bulb Suggestions |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 99e5566d-450e-4660-9bca-454e1c056a02
 author: gregvanl
@@ -11,21 +8,21 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 16b9d56daab6eda1ef1cd9c31d8cc4d720f9a08e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1ce64b3fe8d41d1ceb865555d93e6e464b25fb42
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49875888"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53935004"
 ---
-# <a name="walkthrough-display-light-bulb-suggestions"></a>逐步解說： 顯示燈泡建議
+# <a name="walkthrough-display-light-bulb-suggestions"></a>逐步解說：顯示燈泡建議
 燈泡是 Visual Studio 編輯器中，展開以顯示一組動作，例如，內建的程式碼分析器或重構程式碼所識別的問題的修正程式的圖示。  
   
  在 Visual C# 和 Visual Basic 編輯器中，您也可以撰寫和封裝您自己的程式碼分析器會自動顯示燈泡動作，以使用.NET 編譯器平台 ("Roslyn")。 如需詳細資訊，請參閱:  
   
-- [如何： 撰寫 C# 診斷和程式碼修正](https://github.com/dotnet/roslyn/wiki/How-To-Write-a-C%23-Analyzer-and-Code-Fix)  
+- [如何：寫入C#診斷和程式碼修正](https://github.com/dotnet/roslyn/wiki/How-To-Write-a-C%23-Analyzer-and-Code-Fix)  
   
-- [如何： 撰寫 Visual Basic 診斷和程式碼修正](https://github.com/dotnet/roslyn/wiki/How-To-Write-a-Visual-Basic-Analyzer-and-Code-Fix)  
+- [如何：撰寫 Visual Basic 診斷和程式碼修正](https://github.com/dotnet/roslyn/wiki/How-To-Write-a-Visual-Basic-Analyzer-and-Code-Fix)  
   
   C + + 等其他語言也會提供一些快速動作，例如，若要建立該函式的虛設常式實作建議的燈泡。  
   
@@ -225,8 +222,8 @@ ms.locfileid: "49875888"
 2.  建立兩個類別：第一個命名為 `UpperCaseSuggestedAction` ，第二個則命名為 `LowerCaseSuggestedAction`。 這兩個類別都會實作 <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedAction>。  
   
     ```csharp  
-    internal class UpperCaseSuggestedAction : ISuggestedAction   
-    internal class LowerCaseSuggestedAction : ISuggestedAction  
+    internal class UpperCaseSuggestedAction : ISuggestedAction   
+    internal class LowerCaseSuggestedAction : ISuggestedAction  
     ```  
   
      這兩個類別相同，差別在於其中一個會呼叫 <xref:System.String.ToUpper%2A>，另一個會呼叫 <xref:System.String.ToLower%2A>。 下列步驟僅涵蓋大寫動作類別，但您必須實作這兩個類別。 使用實作大寫動作的步驟，作為實作小寫動作的模式。  
@@ -246,8 +243,8 @@ ms.locfileid: "49875888"
   
     ```csharp  
     private ITrackingSpan m_span;  
-    private string m_upper;  
-    private string m_display;  
+    private string m_upper;  
+    private string m_display;  
     private ITextSnapshot m_snapshot;  
     ```  
   
@@ -291,7 +288,7 @@ ms.locfileid: "49875888"
     {  
         get { return false; }  
     }  
-    public string DisplayText  
+    public string DisplayText  
     {  
         get { return m_display; }  
     }  
@@ -322,7 +319,7 @@ ms.locfileid: "49875888"
 9. 將範圍中的文字取代為其大寫對等項目，以實作 <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedAction.Invoke%2A> 方法。  
   
     ```csharp  
-    public void Invoke(CancellationToken cancellationToken)  
+    public void Invoke(CancellationToken cancellationToken)  
     {  
         m_span.TextBuffer.Replace(m_span.GetSpan(m_snapshot), m_upper);  
     }  
@@ -366,4 +363,3 @@ ms.locfileid: "49875888"
      ![測試燈泡，已展開](../extensibility/media/testlightbulbexpanded.gif "TestLIghtBulbExpanded")  
   
 6.  如果您按一下第一個動作，將目前的文字中的所有文字應該都轉換成大寫。 如果您按一下第二個動作時，所有的文字應該轉換成小寫。  
-  

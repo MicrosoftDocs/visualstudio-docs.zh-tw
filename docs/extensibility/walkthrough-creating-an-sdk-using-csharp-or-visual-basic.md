@@ -1,9 +1,6 @@
 ---
-title: 逐步解說： 建立使用 C# 或 Visual Basic SDK |Microsoft Docs
-ms.custom: ''
+title: 逐步解說：使用 SDK 建立C#或 Visual Basic |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: ef96a249-5eef-402a-a8d5-d74cb49239bd
 author: gregvanl
@@ -11,14 +8,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3c65f827af864a32bb13a90a0ba9818467298527
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 13e95988ee67431686472b2bdb0e548c03201b7d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49835148"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53921649"
 ---
-# <a name="walkthrough-create-an-sdk-using-c-or-visual-basic"></a>逐步解說： 建立使用 C# 或 Visual Basic SDK
+# <a name="walkthrough-create-an-sdk-using-c-or-visual-basic"></a>逐步解說：使用 SDK 建立C#或 Visual Basic
 在本逐步解說中，您將了解如何使用 Visual C# 來建立簡單的數學程式庫 SDK，然後再封裝 SDK 作為 Visual Studio 擴充功能 (VSIX)。 您會完成下列程序：  
   
 -   [若要建立 SimpleMath Windows 執行階段元件](../extensibility/walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md#createClassLibrary)  
@@ -136,7 +133,7 @@ ms.locfileid: "49835148"
   
 22. 在 **方案總管**，選擇**SimpleMath.winmd**。  
   
-23. 在功能表列上選擇 **檢視** > **屬性**(鍵盤： 選擇**F4**索引鍵)。  
+23. 在功能表列上選擇 **檢視** > **屬性**(鍵盤：選擇**F4**索引鍵)。  
   
 24. 在**屬性**視窗中，變更**建置動作**屬性設**內容**，然後變更**Include in VSIX** 屬性**True**。  
   
@@ -242,6 +239,6 @@ ms.locfileid: "49835148"
     您已成功建立和使用擴充功能 SDK。  
   
 ## <a name="see-also"></a>另請參閱  
- [逐步解說： 建立使用 c + + SDK](../extensibility/walkthrough-creating-an-sdk-using-cpp.md)   
- [逐步解說： 建立使用 JavaScript SDK](../extensibility/walkthrough-creating-an-sdk-using-javascript.md)   
+ [逐步解說：建立使用 c + + SDK](../extensibility/walkthrough-creating-an-sdk-using-cpp.md)   
+ [逐步解說：建立使用 JavaScript SDK](../extensibility/walkthrough-creating-an-sdk-using-javascript.md)   
  [建立軟體開發套件](../extensibility/creating-a-software-development-kit.md)

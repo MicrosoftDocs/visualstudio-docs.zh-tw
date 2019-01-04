@@ -3,7 +3,6 @@ title: 工作流程設計工具-PickBranch 活動設計工具
 ms.date: 11/04/2016
 ms.topic: reference
 ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Activities.Statements.PickBranch.UI
 ms.assetid: f523ad47-bbc0-4cda-a35c-41e67c4ba081
@@ -12,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e45c8ec2d7af5f1bfde5e145607728d3ff0bc85d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a3a692d08a8117eca4bbd4765cc9d21ba7b8c770
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49831779"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53860253"
 ---
 # <a name="pickbranch-activity-designer"></a>PickBranch 活動設計工具
 

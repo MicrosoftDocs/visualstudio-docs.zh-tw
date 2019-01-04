@@ -1,9 +1,6 @@
 ---
 title: HOW TO：資料庫中的資料填入文件
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,12 +13,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 71c2494a4c1b70e6bcf40b23062f70e91587f2e3
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: 27dc08cc5d63368cecaa54ce59ed6831e7647240
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53647387"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53883991"
 ---
 # <a name="how-to-populate-documents-with-data-from-a-database"></a>HOW TO：資料庫中的資料填入文件
 

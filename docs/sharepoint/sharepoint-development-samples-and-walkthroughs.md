@@ -1,13 +1,8 @@
 ---
 title: SharePoint 程式開發範例和逐步解說 |Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -18,12 +13,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 80724e21a1c004bd99f194e76179d9c08d6b570a
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 2624f40c93e470651f5c285abd51de9dbcfd4b8d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118599"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53892516"
 ---
 # <a name="sharepoint-development-samples-and-walkthroughs"></a>SharePoint 程式開發範例和逐步解說
   本章節包含範例應用程式、 程式碼範例和逐步解說，說明語法、 結構和用來建置 SharePoint 解決方案的技術。  
@@ -39,4 +34,3 @@ ms.locfileid: "37118599"
   
 ## <a name="see-also"></a>另請參閱
  [建立 SharePoint 方案](../sharepoint/create-sharepoint-solutions.md)  
-  

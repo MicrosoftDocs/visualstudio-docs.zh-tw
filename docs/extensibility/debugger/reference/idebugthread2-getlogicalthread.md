@@ -1,9 +1,6 @@
 ---
 title: IDebugThread2::GetLogicalThread |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugThread2::GetLogicalThread
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b7acf0cbb99fc9541088a339931110e56363213b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 228e9a4a890ccd8b3198739ffa02cad65338bf4d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49920140"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53965164"
 ---
 # <a name="idebugthread2getlogicalthread"></a>IDebugThread2::GetLogicalThread
 偵錯引擎不會實作這個方法。  
@@ -28,14 +25,14 @@ ms.locfileid: "49920140"
 ## <a name="syntax"></a>語法  
   
 ```cpp  
-HRESULT GetLogicalThread(   
+HRESULT GetLogicalThread(   
    IDebugStackFrame2*     pStackFrame,  
    IDebugLogicalThread2** ppLogicalThread  
 );  
 ```  
   
 ```csharp  
-int GetLogicalThread(   
+int GetLogicalThread(   
    IDebugStackFrame2        pStackFrame,  
    out IDebugLogicalThread2 ppLogicalThread  
 );  

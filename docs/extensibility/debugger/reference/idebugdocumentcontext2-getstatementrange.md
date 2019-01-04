@@ -1,9 +1,6 @@
 ---
 title: IDebugDocumentContext2::GetStatementRange |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugDocumentContext2::GetStatementRange
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c82954980602d9ab9e2fdd67f12abd2a7439309f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5474dd2acaf8d07f3e3307184f06b60c3cbfc2e7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49903591"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53892208"
 ---
 # <a name="idebugdocumentcontext2getstatementrange"></a>IDebugDocumentContext2::GetStatementRange
 取得檔案陳述式的範圍的文件內容。  
@@ -28,14 +25,14 @@ ms.locfileid: "49903591"
 ## <a name="syntax"></a>語法  
   
 ```cpp  
-HRESULT GetStatementRange(   
+HRESULT GetStatementRange(   
    TEXT_POSITION* pBegPosition,  
    TEXT_POSITION* pEndPosition  
 );  
 ```  
   
 ```csharp  
-int GetStatementRange(   
+int GetStatementRange(   
    TEXT_POSITION[] pBegPosition,  
    TEXT_POSITION[] pEndPosition  
 );  

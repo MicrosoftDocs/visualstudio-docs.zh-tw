@@ -1,9 +1,6 @@
 ---
 title: Excel 物件模型概觀
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -22,12 +19,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: eb5b930df90f36395a22461ad0f26e82548afb6f
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: 45ac85d47ace9c4ce1d954dff51ca4545d2cab35
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53647521"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53821765"
 ---
 # <a name="excel-object-model-overview"></a>Excel 物件模型概觀
   若要開發使用 Microsoft Office Excel 的方案，您可以與 Excel 物件模型提供的物件進行互動。 本主題將介紹最重要的物件：  
@@ -123,5 +120,3 @@ ms.locfileid: "53647521"
 |[使用範圍](../vsto/working-with-ranges.md)|提供示範如何使用範圍執行常見工作的範例。|  
 |[使用工作表](../vsto/working-with-worksheets.md)|提供示範如何使用工作表執行常見工作的範例。|  
 |[使用活頁簿](../vsto/working-with-workbooks.md)|提供示範如何使用活頁簿執行常見工作的範例。|  
-  
-  

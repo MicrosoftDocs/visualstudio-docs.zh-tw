@@ -1,9 +1,6 @@
 ---
 title: IDebugProcess2::Detach |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugProcess2::Detach
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: de18df907c8a30235fcfc3391fe6879afdcaa1f9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 747430b837cf682e35f5973ea35d36e72484fb3a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49854295"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53988056"
 ---
 # <a name="idebugprocess2detach"></a>IDebugProcess2::Detach
 會從這個處理序偵錯工具中斷連結所有處理序中的程式中斷連結。  
@@ -28,8 +25,8 @@ ms.locfileid: "49854295"
 ## <a name="syntax"></a>語法  
   
 ```cpp  
-HRESULT Detach(   
-   void   
+HRESULT Detach(   
+   void   
 );  
 ```  
   

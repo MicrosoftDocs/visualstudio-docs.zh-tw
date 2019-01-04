@@ -1,9 +1,6 @@
 ---
 title: IDebugProperty2::EnumChildren |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugProperty2::EnumChildren
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 79ac095f5e988b98d55b2837e70a1c0d3832b855
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e2c24e0cb7363f3edede4893b786cc919491120f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49847028"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53842014"
 ---
 # <a name="idebugproperty2enumchildren"></a>IDebugProperty2::EnumChildren
 擷取屬性的子系清單。  
@@ -28,7 +25,7 @@ ms.locfileid: "49847028"
 ## <a name="syntax"></a>語法  
   
 ```cpp  
-HRESULT EnumChildren (   
+HRESULT EnumChildren (   
    DEBUGPROP_INFO_FLAGS      dwFields,  
    DWORD                     dwRadix,  
    REFGUID                   guidFilter,  
@@ -40,7 +37,7 @@ HRESULT EnumChildren (
 ```  
   
 ```csharp  
-int EnumChildren (   
+int EnumChildren (   
    enum_DEBUGPROP_INFO_FLAGS   dwFields,  
    uint                        dwRadix,  
    ref Guid                    guidFilter,  

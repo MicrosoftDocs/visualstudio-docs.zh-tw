@@ -1,9 +1,6 @@
 ---
-title: DBG_ATTRIB_FLAGS |Microsoft 文件
-ms.custom: ''
+title: DBG_ATTRIB_FLAGS |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - DBG_ATTRIB_FLAGS
@@ -15,15 +12,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 774bef7a3f28c973c9569544556d3033ede0093d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2df250545963ad29a609ebe9202c554f646eef74
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31107734"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53840040"
 ---
 # <a name="dbgattribflags"></a>DBG_ATTRIB_FLAGS
-描述各種屬性[IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)或[IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)介面。 成員的[DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md)結構。  
+描述各種屬性，如[IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)該[IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)介面。 成員[DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md)結構。  
   
 ## <a name="syntax"></a>語法  
   
@@ -191,31 +188,31 @@ public const int DBG_ATTRIB_MULTI_CUSTOM_VIEWERS = 0x0001000000000000
  表示評估有副作用。  
   
  DBG_ATTRIB_OVERLOADED_CONTAINER  
- 表示這個屬性是真正的多載的容器。  
+ 表示此屬性實際上是多載的容器。  
   
  DBG_ATTRIB_VALUE_BOOLEAN  
- 表示中的值`DEBUG_PROPERTY_INFO::bstrValue`為布林值。  
+ 表示中的值`DEBUG_PROPERTY_INFO::bstrValue`是布林值。  
   
  DBG_ATTRIB_VALUE_BOOLEAN_TRUE  
- 表示中的值`DEBUG_PROPERTY_INFO::bstrValue`為布林值和`TRUE`。  
+ 表示中的值`DEBUG_PROPERTY_INFO::bstrValue`是布林值和`TRUE`。  
   
  DBG_ATTRIB_VALUE_INVALID  
  表示 `DEBUG_PROPERTY_INFO::bstrValue` 中的值無效。  
   
  DBG_ATTRIB_VALUE_NAT  
- 表示中的值`DEBUG_PROPERTY_INFO::bstrValue`是"*不件事*」 (NAT)。 NAT 描述 Intel 64 位元處理器暫存器旗標，表示延遲推測性例外狀況。  
+ 表示中的值`DEBUG_PROPERTY_INFO::bstrValue`是 「*不是一個東西*」 (NAT)。 NAT 描述 Intel 64 位元處理器暫存器旗標，指出延後的推測性例外狀況。  
   
  DBG_ATTRIB_VALUE_AUTOEXPANDED  
  表示中的值`DEBUG_PROPERTY_INFO::bstrValue`可能已自動展開。  
   
  DBG_ATTRIB_VALUE_TIMEOUT  
- 指出，評估已經逾時。  
+ 表示，評估已逾時。  
   
  DBG_ATTRIB_VALUE_RAW_STRING  
- 表示中的值`DEBUG_PROPERTY_INFO::bstrValue`可由未經處理的字串表示。  
+ 表示中的值`DEBUG_PROPERTY_INFO::bstrValue`可以由原始字串。  
   
  DBG_ATTRIB_VALUE_CUSTOM_VIEWER  
- 指出此屬性有與其相關聯的至少一個自訂檢視器。  
+ 表示此屬性具有至少一個與其相關聯的自訂檢視器。  
   
  DBG_ATTRIB_ACCESS_NONE  
  表示物件沒有`public`， `private`，也不`protected`輸入存取。  
@@ -233,10 +230,10 @@ public const int DBG_ATTRIB_MULTI_CUSTOM_VIEWERS = 0x0001000000000000
  表示具有最終存取的物件。  
   
  DBG_ATTRIB_ACCESS_ALL  
- 擷取存取屬性，從遮罩`DBG_ATTRIB_FLAGS`。  
+ 若要擷取的存取屬性的遮罩`DBG_ATTRIB_FLAGS`。  
   
  DBG_ATTRIB_STORAGE_NONE  
- 表示未指定的儲存體類型。  
+ 表示沒有指定的儲存體類型。  
   
  DBG_ATTRIB_STORAGE_GLOBAL  
  表示全域儲存體。  
@@ -245,16 +242,16 @@ public const int DBG_ATTRIB_MULTI_CUSTOM_VIEWERS = 0x0001000000000000
  表示靜態儲存體。  
   
  DBG_ATTRIB_STORAGE_REGISTER  
- 表示在登錄中的儲存體。  
+ 表示在暫存器中的儲存體。  
   
  DBG_ATTRIB_STORAGE_ALL  
- 遮罩，以擷取儲存體屬性從`DBG_ATTRIB_FLAGS`。  
+ 遮罩，以擷取儲存體屬性，從`DBG_ATTRIB_FLAGS`。  
   
  DBG_ATTRIB_TYPE_NONE  
- 表示沒有型別修飾詞。  
+ 表示沒有任何型別修飾詞。  
   
  DBG_ATTRIB_TYPE_VIRTUAL  
- 表示物件的型別是虛擬的。  
+ 表示物件的型別是虛擬。  
   
  DBG_ATTRIB_TYPE_CONSTANT  
  表示物件類型是常數。  
@@ -263,16 +260,16 @@ public const int DBG_ATTRIB_MULTI_CUSTOM_VIEWERS = 0x0001000000000000
  表示物件的型別同步處理。  
   
  DBG_ATTRIB_TYPE_VOLATILE  
- 表示物件的類型是暫時性。  
+ 表示物件的型別為 volatile。  
   
  DBG_ATTRIB_TYPE_ALL  
- 要擷取的類型屬性，從遮罩`DBG_ATTRIB_FLAGS`。  
+ 若要擷取的型別屬性的遮罩`DBG_ATTRIB_FLAGS`。  
   
  DBG_ATTRIB_DATA  
- 指出這個物件是資料欄位。  
+ 此物件表示資料欄位。  
   
  DBG_ATTRIB_METHOD  
- 表示此物件是一種方法。  
+ 表示這個物件是一種方法。  
   
  DBG_ATTRIB_PROPERTY  
  表示此物件的屬性。  
@@ -281,38 +278,38 @@ public const int DBG_ATTRIB_MULTI_CUSTOM_VIEWERS = 0x0001000000000000
  表示此物件的類別。  
   
  DBG_ATTRIB_BASECLASS  
- 指出這個物件是基底類別。  
+ 表示這個物件是基底類別。  
   
  DBG_ATTRIB_INTERFACE  
- 表示此物件是一種介面。  
+ 表示這個物件是一種介面。  
   
  DBG_ATTRIB_INNERCLASS  
- 指出這個物件是內部的類別。  
+ 表示這個物件是內部的類別。  
   
  DBG_ATTRIB_MOSTDERIVED  
- 表示此物件是 '*最具衍生性*'。 詞彙 「*最具衍生性*"表示的實際型別物件，而不是其參考的類型。  
+ 表示此物件是 '*最高衍生性*'。 詞彙 」*最高衍生性*"表示的實際類型的物件，而不是其參考的類型。  
   
  DBG_ATTRIB_CHILD_ALL  
  表示遮罩`DBG_ATTRIB_DATA`透過`DBG_ATTRIB_MOSTDERIVED`。  
   
  DBG_ATTRIB_MULTI_CUSTOM_VIEWERS  
- 表示物件有多個與其相關聯的自訂檢視器。  
+ 指出物件具有與它相關聯的多個自訂檢視器。  
   
 ## <a name="remarks"></a>備註  
   
 > [!NOTE]
->  這個列舉型別中的值不為 C# 組件中實際定義。 相反地，您必須將定義複製到原始程式檔中。  
+>  適用於 C# 組件中未實際定義這個列舉型別中的值。 相反地，您必須將定義複製到原始程式檔中。  
   
- 這些旗標也可用來做為引數傳遞時，篩選的物件，例如，子系[EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md)。 值可能會合併使用位元`OR`。  
+ 這些旗標也可用來做為引數傳遞時，篩選的物件，例如，子系[EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md)。 值可能會結合的位元`OR`。  
   
- `DBG_ATTRIB_VALUE_CUSTOM_VIEWER`旗標是指示[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]取得[IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)介面從[IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)介面並呼叫[GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md)自訂檢視器的清單。  
+ `DBG_ATTRIB_VALUE_CUSTOM_VIEWER`旗標會指示[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]若要取得[IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)從介面[IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)介面及呼叫[GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md)如需自訂檢視器的清單。  
   
 ## <a name="requirements"></a>需求  
  標頭： msdbg.h  
   
- 命名空間： Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間:Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
  [列舉型別](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   

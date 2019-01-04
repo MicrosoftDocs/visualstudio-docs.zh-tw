@@ -1,9 +1,6 @@
 ---
-title: 逐步解說： 更新在執行階段的功能區上的控制項
-ms.custom: ''
+title: 逐步解說：更新在執行階段的功能區上的控制項
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -20,14 +17,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 40072b1dcd6b24f552a3c87c8241ea4498229053
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: cd318be64bb15f72a0bd0147e2b14e79301fb7d6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389146"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53926920"
 ---
-# <a name="walkthrough-update-the-controls-on-a-ribbon-at-runtime"></a>逐步解說： 更新在執行階段的功能區上的控制項
+# <a name="walkthrough-update-the-controls-on-a-ribbon-at-runtime"></a>逐步解說：更新在執行階段的功能區上的控制項
 
 本逐步解說示範如何使用功能區載入至 Office 應用程式之後，更新功能區上的控制項的功能區物件模型。
 
@@ -68,7 +65,7 @@ ms.locfileid: "52389146"
 
 3.  將專案儲存至預設的專案目錄。
 
-     如需詳細資訊，請參閱 <<c0> [ 如何： 在 Visual Studio 中的建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)。
+     如需詳細資訊，請參閱[＜How to：在 Visual Studio 中建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)。
 
 ## <a name="design-a-custom-ribbon-group"></a>設計自訂的功能區群組
 
@@ -294,7 +291,7 @@ ms.locfileid: "52389146"
 
 -   將內容為主的 UI 加入至任何文件層級的自訂。 如需詳細資訊，請參閱 <<c0> [ 執行窗格概觀](../vsto/actions-pane-overview.md)。
 
--   展開標準或自訂的 Microsoft Office Outlook 表單。 如需詳細資訊，請參閱 <<c0> [ 逐步解說： 設計 Outlook 表單區域](../vsto/walkthrough-designing-an-outlook-form-region.md)。
+-   展開標準或自訂的 Microsoft Office Outlook 表單。 如需詳細資訊，請參閱[逐步解說：設計 Outlook 表單區域](../vsto/walkthrough-designing-an-outlook-form-region.md)。
 
 -   將自訂工作窗格加入 Outlook。 如需詳細資訊，請參閱 <<c0> [ 自訂工作窗格](../vsto/custom-task-panes.md)。
 
@@ -303,13 +300,13 @@ ms.locfileid: "52389146"
 - [在執行階段功能區的存取](../vsto/accessing-the-ribbon-at-run-time.md)
 - [功能區概觀](../vsto/ribbon-overview.md)
 - [Language-Integrated Query (LINQ)](/dotnet/csharp/linq/index)
-- [如何： 開始自訂功能區](../vsto/how-to-get-started-customizing-the-ribbon.md)
+- [如何：開始自訂功能區](../vsto/how-to-get-started-customizing-the-ribbon.md)
 - [功能區設計工具](../vsto/ribbon-designer.md)
-- [逐步解說： 使用功能區設計工具建立自訂索引標籤](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)
+- [逐步解說：使用功能區設計工具建立自訂的索引標籤](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)
 - [功能區物件模型概觀](../vsto/ribbon-object-model-overview.md)
 - [適用於 Outlook 自訂功能區](../vsto/customizing-a-ribbon-for-outlook.md)
-- [如何： 變更功能區上的索引標籤的位置](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md)
-- [如何： 自訂內建索引標籤](../vsto/how-to-customize-a-built-in-tab.md)
-- [如何： 將控制項加入至 Backstage 檢視](../vsto/how-to-add-controls-to-the-backstage-view.md)
-- [如何： 將功能區設計工具功能區匯出至功能區 XML](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md)
-- [如何： 顯示增益集使用者介面錯誤](../vsto/how-to-show-add-in-user-interface-errors.md)
+- [如何：變更功能區上的索引標籤的位置](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md)
+- [如何：自訂內建索引標籤](../vsto/how-to-customize-a-built-in-tab.md)
+- [如何：將控制項加入至 Backstage 檢視](../vsto/how-to-add-controls-to-the-backstage-view.md)
+- [如何：將功能區設計工具功能區匯出至功能區 XML](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md)
+- [如何：顯示增益集使用者介面錯誤](../vsto/how-to-show-add-in-user-interface-errors.md)

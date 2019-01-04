@@ -1,8 +1,7 @@
 ---
-title: CA1059：成員不應該公開特定的具象類型
+title: CA1059:成員不應該公開特定的具象類型
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA1059
@@ -16,14 +15,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9440a00b0b1aceb520b1f23abc8ad92f60213855
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0462317ff273b2cb7a967c7e093b16a695e547e2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49899652"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53825275"
 ---
-# <a name="ca1059-members-should-not-expose-certain-concrete-types"></a>CA1059：成員不應該公開特定的具象類型
+# <a name="ca1059-members-should-not-expose-certain-concrete-types"></a>CA1059:成員不應該公開特定的具象類型
 
 |||
 |-|-|
@@ -53,4 +52,4 @@ ms.locfileid: "49899652"
  它會安全地隱藏此規則的訊息，如果需要特定的具象類型所提供的功能。
 
 ## <a name="related-rules"></a>相關的規則
- [CA1011：建議將基底類型當做參數傳遞](../code-quality/ca1011-consider-passing-base-types-as-parameters.md)
+ [CA1011:請考慮將基底類型當做參數傳遞](../code-quality/ca1011-consider-passing-base-types-as-parameters.md)

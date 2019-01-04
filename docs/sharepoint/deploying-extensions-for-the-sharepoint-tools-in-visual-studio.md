@@ -1,9 +1,6 @@
 ---
 title: 部署 Visual Studio 中 SharePoint 工具擴充功能 |Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c3bf20f945c40dd963820b1bf3f4032a2dd517ca
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 02e72a2991b5061459533cab9a3fbf213baa6b94
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295965"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53880818"
 ---
 # <a name="deploy-extensions-for-the-sharepoint-tools-in-visual-studio"></a>部署適用於 Visual Studio 中 SharePoint 工具擴充功能
 
@@ -52,11 +49,11 @@ ms.locfileid: "51295965"
 
 您可能也使用其他專案針對特定類型的延伸模組：
 
--   實作您的延伸模組所使用的任何 SharePoint 命令的類別庫專案。 如需示範此案例的逐步解說，請參閱 <<c0> [ 逐步解說： 擴充伺服器總管以顯示 web 組件](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)。
+-   實作您的延伸模組所使用的任何 SharePoint 命令的類別庫專案。 如需示範此案例的逐步解說，請參閱[逐步解說：擴充伺服器總管以顯示 web 組件](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)。
 
--   如果您的延伸模組會定義新類型的 SharePoint 專案項目建立項目範本或專案範本的項目範本或專案範本專案。 如需示範此案例的逐步解說，請參閱 <<c0> [ 逐步解說： 建立自訂動作專案項目與項目範本，第 1 部分](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)。
+-   如果您的延伸模組會定義新類型的 SharePoint 專案項目建立項目範本或專案範本的項目範本或專案範本專案。 如需示範此案例的逐步解說，請參閱[逐步解說：使用項目範本，第 1 部分中建立自訂動作專案項目](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)。
 
--   如果您的延伸模組包含的範本實作的項目範本或專案範本的自訂精靈類別庫專案。 如需示範此案例的逐步解說，請參閱 <<c0> [ 逐步解說： 建立自訂動作專案項目與項目範本，第 2 部分](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md)。
+-   如果您的延伸模組包含的範本實作的項目範本或專案範本的自訂精靈類別庫專案。 如需示範此案例的逐步解說，請參閱[逐步解說：建立自訂動作專案項目與項目範本，第 2 部分](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md)。
 
 如果您在相同的 Visual Studio 方案中包含的所有專案，您可以修改 source.extension.vsixmanifest 檔案中，在 VSIX 專案，以包含的類別庫專案的組建輸出。
 
@@ -218,10 +215,10 @@ ms.locfileid: "51295965"
 
 |擴充功能類型|相關的逐步解說|
 |--------------------|--------------------------|
-|延伸模組，其中包含延伸模組組件|[逐步解說： 擴充 SharePoint 專案項目類型](../sharepoint/walkthrough-extending-a-sharepoint-project-item-type.md)<br /><br /> [逐步解說： 建立 SharePoint 專案延伸模組](../sharepoint/walkthrough-creating-a-sharepoint-project-extension.md)<br /><br /> [逐步解說： 呼叫 SharePoint 用戶端物件模型，在 伺服器總管延伸模組](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md)|
-|擴充功能，包括 SharePoint 命令|[逐步解說： 建立 SharePoint 專案的自訂部署步驟](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md)<br /><br /> [逐步解說： 擴充伺服器總管以顯示 web 組件](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)<br /><br /> [逐步解說： 使用專案範本，第 2 部分中建立網站資料行專案項目](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md)|
-|擴充功能，包括 Visual Studio 範本|[逐步解說： 建立自訂動作專案項目與項目範本，第 1 部分](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)<br /><br /> [逐步解說： 使用專案範本，第 1 部分中建立網站資料行專案項目](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md)|
-|包含在範本精靈擴充功能|[逐步解說： 建立自訂動作專案項目與項目範本，第 2 部分](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md)<br /><br /> [逐步解說： 使用專案範本，第 2 部分中建立網站資料行專案項目](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md)|
+|延伸模組，其中包含延伸模組組件|[逐步解說：擴充 SharePoint 專案項目類型](../sharepoint/walkthrough-extending-a-sharepoint-project-item-type.md)<br /><br /> [逐步解說：建立 SharePoint 專案延伸模組](../sharepoint/walkthrough-creating-a-sharepoint-project-extension.md)<br /><br /> [逐步解說：呼叫 SharePoint 用戶端物件模型，在 伺服器總管延伸模組](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md)|
+|擴充功能，包括 SharePoint 命令|[逐步解說：建立 SharePoint 專案的自訂部署步驟](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md)<br /><br /> [逐步解說：擴充伺服器總管以顯示 web 組件](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)<br /><br /> [逐步解說：使用專案範本，第 2 部分建立網站資料行專案項目](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md)|
+|擴充功能，包括 Visual Studio 範本|[逐步解說：使用項目範本，第 1 部分中建立自訂動作專案項目](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)<br /><br /> [逐步解說：使用專案範本，第 1 部分建立網站資料行專案項目](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md)|
+|包含在範本精靈擴充功能|[逐步解說：建立自訂動作專案項目與項目範本，第 2 部分](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md)<br /><br /> [逐步解說：使用專案範本，第 2 部分建立網站資料行專案項目](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md)|
 
 ## <a name="create-vsix-packages-manually"></a>手動建立 VSIX 封裝
 

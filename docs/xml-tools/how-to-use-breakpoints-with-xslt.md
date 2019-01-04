@@ -2,25 +2,24 @@
 title: HOW TO：搭配使用中斷點與 XSLT
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 430b7f14f35506b45fe73be47d056cdd7b6a9c95
-ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
+ms.openlocfilehash: 72a22937792cc06bcac18f70a2bd4c53be98f7fe
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/25/2018
-ms.locfileid: "34548355"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53894885"
 ---
-# <a name="how-to-use-breakpoints-with-xslt"></a>如何： 使用中斷點與 XSLT
+# <a name="how-to-use-breakpoints-with-xslt"></a>HOW TO：使用中斷點與 XSLT
 
 您可在 XSLT 樣式表或 XML 來源文件中設定中斷點。 如果您在標記上設定了中斷點，則在開始執行時，中斷點會移至下一個具有原始程式行資訊的陳述式 (Statement)。
 
-如需詳細資訊，請參閱[偵錯基本概念： 中斷點](../debugger/using-breakpoints.md)。
+如需詳細資訊，請參閱[偵錯基本概念：中斷點](../debugger/using-breakpoints.md)。
 
 ## <a name="set-a-breakpoint-in-a-style-sheet"></a>樣式表中設定中斷點
 
@@ -32,13 +31,13 @@ ms.locfileid: "34548355"
 
 2.  將游標放在中斷點的位置，請以滑鼠右鍵按一下，指向**中斷點**，然後按一下**插入中斷點**。
 
-3.  按一下瀏覽按鈕 (**...**) 上**輸入**文件屬性 視窗的欄位。
+3.  按一下 瀏覽按鈕 (**...**) 上**輸入**文件的 屬性 視窗的欄位。
 
 4.  找出 XML 來源文件並按一下**開啟**。
 
      這會設定用於 XSLT 轉換的來源文件檔案。
 
-5.  按一下**偵錯 XSL** XML 編輯器工具列上的按鈕。
+5.  按一下 **偵錯 XSL** XML 編輯器工具列上的按鈕。
 
 ## <a name="set-a-breakpoint-in-an-xml-source-document"></a>XML 來源文件中設定中斷點
 
@@ -50,14 +49,14 @@ ms.locfileid: "34548355"
 
 2.  將游標放在中斷點的位置，請以滑鼠右鍵按一下，指向**中斷點**，然後按一下**插入中斷點**。
 
-3.  按一下瀏覽按鈕 (**...**) 上**樣式表**文件屬性 視窗的欄位。
+3.  按一下 瀏覽按鈕 (**...**) 上**樣式表**文件的 屬性 視窗的欄位。
 
 4.  找出 XML 來源文件並按一下**開啟**。
 
      這會設定用於 XSLT 轉換的來源文件檔案。
 
-5.  按一下**偵錯 XSL** XML 編輯器工具列上的按鈕。
+5.  按一下 **偵錯 XSL** XML 編輯器工具列上的按鈕。
 
 ## <a name="see-also"></a>另請參閱
 
-- [逐步解說： 偵錯 XSLT 樣式表](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md)
+- [逐步解說：偵錯 XSLT 樣式表](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md)

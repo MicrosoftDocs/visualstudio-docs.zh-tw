@@ -1,8 +1,7 @@
 ---
-title: CA2105：陣列欄位不應為唯讀
+title: CA2105:陣列欄位不應該為唯讀
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA2105
@@ -16,14 +15,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a033c23a323a94dcbda0a98f9ec57de529d3c308
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0969147ce4f454f7720f26f72b46cab6e91c37bf
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49883286"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53937964"
 ---
-# <a name="ca2105-array-fields-should-not-be-read-only"></a>CA2105：陣列欄位不應為唯讀
+# <a name="ca2105-array-fields-should-not-be-read-only"></a>CA2105:陣列欄位不應該為唯讀
 
 |||
 |-|-|
@@ -40,7 +39,7 @@ ms.locfileid: "49883286"
 
 當您套用`readonly`(`ReadOnly`在[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) 修飾詞，以包含陣列之欄位的欄位不能變更為指向不同的陣列。 但是，儲存在唯讀欄位的陣列元素則可以變更。 做出決策，或執行作業的可公開存取的唯讀陣列項目為基礎的程式碼可能會包含可利用來攻擊的安全性弱點。
 
-請注意，有一個公用的欄位也違反設計規則[CA1051： 不要宣告可見的執行個體欄位](../code-quality/ca1051-do-not-declare-visible-instance-fields.md)。
+請注意，有一個公用的欄位也違反設計規則[CA1051:不要宣告可見的執行個體欄位](../code-quality/ca1051-do-not-declare-visible-instance-fields.md)。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
 
@@ -50,7 +49,7 @@ ms.locfileid: "49883286"
 
 - 公用欄位取代為傳回的私用陣列複製品的方法。 因為您的程式碼不需要複製，不是可能如果修改的項目。
 
-如果您選擇第二種方法，並不會取代欄位與屬性;負面傳回陣列的屬性會影響效能。 如需詳細資訊，請參閱 < [CA1819： 屬性不應該傳回陣列](../code-quality/ca1819-properties-should-not-return-arrays.md)。
+如果您選擇第二種方法，並不會取代欄位與屬性;負面傳回陣列的屬性會影響效能。 如需詳細資訊，請參閱[CA1819:屬性不應該傳回陣列](../code-quality/ca1819-properties-should-not-return-arrays.md)。
 
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機
 

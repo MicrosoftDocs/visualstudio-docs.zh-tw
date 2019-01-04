@@ -8,13 +8,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 7afd12aa6277983f8b50eb1d7adfdd8396f8f960
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 41279e483e2ea752fd6cb573d7632f61a206003d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39567265"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53841751"
 ---
 # <a name="embed-a-diagram-in-a-windows-form"></a>在 Windows Form 中內嵌圖表
 

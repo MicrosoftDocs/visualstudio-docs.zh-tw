@@ -1,6 +1,5 @@
 ---
 title: Description 項目 （Visual Studio 範本） |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -12,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 897f1576fa029aa38d8f0d0b021d93bc7a81c692
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.openlocfilehash: 88b01dfad315d003840bb2eb5f97c7f0022f85e7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53561927"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53906731"
 ---
 # <a name="description-element-visual-studio-templates"></a>Description 項目 （Visual Studio 範本）
 指定範本的描述中所顯示的樣子**新的專案**或是**加入新項目** 對話方塊。  
@@ -48,10 +47,10 @@ ms.locfileid: "53561927"
 |`Package`|選擇性屬性，為進階的使用者案例。<br /><br /> 指定 Visual Studio 套件的 GUID 識別碼。|  
 |`ID`|選擇性屬性，為進階的使用者案例。<br /><br /> 指定 Visual Studio 資源識別碼。|  
   
-### <a name="child-elements"></a>子元素  
+### <a name="child-elements"></a>項目子系  
  無。  
   
-### <a name="parent-elements"></a>父元素  
+### <a name="parent-elements"></a>父項目  
   
 |元素|描述|  
 |-------------|-----------------|  

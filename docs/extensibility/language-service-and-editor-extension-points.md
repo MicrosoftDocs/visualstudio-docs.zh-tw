@@ -1,9 +1,6 @@
 ---
 title: 語言服務及編輯器擴充點 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - extension points
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2df3de4bfba0510cf3c8a5474a363a5ec579a79f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d99916c31e35f7494a402ff4c5d1a7b182a0c52d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49927745"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53907958"
 ---
 # <a name="language-service-and-editor-extension-points"></a>語言服務及編輯器擴充點
 編輯器會提供您可以擴充為 Managed Extensibility Framework (MEF) 元件組件，其中包括大部分的語言服務功能的擴充點。 這些是主要擴充點類別：  
@@ -273,7 +270,7 @@ internal IEditorFormatMapService FormatMapService { get; set; }
 - <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>： 與透過裝飾相關聯。  
   
   > [!NOTE]
-  >  如需範例<xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>，請參閱 HighlightWordTag 定義[逐步解說： 反白顯示的文字](../extensibility/walkthrough-highlighting-text.md)。  
+  >  如需<xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>，請參閱 HighlightWordTag 定義[逐步解說：反白顯示文字](../extensibility/walkthrough-highlighting-text.md)。  
   
 - <xref:Microsoft.VisualStudio.Text.Tagging.OutliningRegionTag>： 可以展開或摺疊大綱區域相關聯。  
   
@@ -319,7 +316,7 @@ internal class HighlightWordFormatDefinition : MarkerFormatDefinition
  若要將此格式定義套用至標記中，參考您設定的名稱屬性中的類別 （而不是顯示名稱） 的名稱。  
   
 > [!NOTE]
->  如需<xref:Microsoft.VisualStudio.Text.Classification.MarkerFormatDefinition>，請參閱中的 HighlightWordFormatDefinition 類別[逐步解說： 反白顯示的文字](../extensibility/walkthrough-highlighting-text.md)。  
+>  如需<xref:Microsoft.VisualStudio.Text.Classification.MarkerFormatDefinition>，請參閱中的 HighlightWordFormatDefinition 類別[逐步解說：反白顯示文字](../extensibility/walkthrough-highlighting-text.md)。  
   
 ## <a name="extend-adornments"></a>擴充裝飾  
  裝飾定義視覺效果，可以新增在文字檢視中顯示的文字或文字檢視本身。 您可以為任何類型的定義您自己的裝飾<xref:System.Windows.UIElement>。  
@@ -328,7 +325,7 @@ internal class HighlightWordFormatDefinition : MarkerFormatDefinition
   
 - <xref:Microsoft.VisualStudio.Utilities.NameAttribute>: 裝飾的名稱。  
   
-- <xref:Microsoft.VisualStudio.Utilities.OrderAttribute>： 相對於其他 adornment 層級裝飾的順序。 此類別<xref:Microsoft.VisualStudio.Text.Editor.PredefinedAdornmentLayers>定義四個預設層級： 選取範圍、 大綱、 插入號和文字。  
+- <xref:Microsoft.VisualStudio.Utilities.OrderAttribute>： 相對於其他 adornment 層級裝飾的順序。 此類別<xref:Microsoft.VisualStudio.Text.Editor.PredefinedAdornmentLayers>定義四個預設層級：選取、 大綱、 插入號及文字。  
   
   下列範例會顯示匯出屬性裝飾層定義。  
   
@@ -546,9 +543,9 @@ internal class TestCompletionSourceProvider : ICompletionSourceProvider
   
  如需有關如何實作 IntelliSense 的來源的詳細資訊，請參閱下列逐步解說：  
   
- [逐步解說︰ 顯示 QuickInfo 工具提示](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)  
+ [逐步解說：顯示 QuickInfo 工具提示](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)  
   
- [逐步解說： 顯示簽章說明](../extensibility/walkthrough-displaying-signature-help.md)  
+ [逐步解說：顯示簽章說明](../extensibility/walkthrough-displaying-signature-help.md)  
   
  [逐步解說：顯示陳述式完成](../extensibility/walkthrough-displaying-statement-completion.md)  
   
@@ -573,4 +570,4 @@ internal class TestIntellisenseControllerProvider : IIntellisenseControllerProvi
   
  如需使用 IntelliSense 控制器的詳細資訊，請參閱下列逐步解說：  
   
- [逐步解說︰ 顯示 QuickInfo 工具提示](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)
+ [逐步解說：顯示 QuickInfo 工具提示](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)

@@ -11,13 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 98697642135627173c5a6f31e90bf1dd1d0caeaf
-ms.sourcegitcommit: 8cdc6e2ad2341f34bd6b02859a7c975daa0c9320
+ms.openlocfilehash: 8614df4c8e7b3a640f7ba488ad18384886b56afe
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2018
-ms.locfileid: "53307748"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53834304"
 ---
 # <a name="deploy-a-layer-model-extension"></a>部署圖層模型擴充功能
 

@@ -1,9 +1,6 @@
 ---
-title: 逐步解說： 顯示成對大括弧 |Microsoft Docs
-ms.custom: ''
+title: 逐步解說：顯示成對大括弧 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - brace matching
@@ -13,14 +10,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1f29596c95646db78145725f1f0cead424e1de5e
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: a048ce1e89de65e805d01971de5c4221b13be826
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39500432"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53956572"
 ---
-# <a name="walkthrough-display-matching-braces"></a>逐步解說： 顯示對稱的括號
+# <a name="walkthrough-display-matching-braces"></a>逐步解說：顯示對稱的括號
 實作語言為基礎的功能，例如，定義您想要比對，請在大括的號，並插入號是其中一個大括號時，將文字標記標記新增至對稱的括號比對的大括號。 您可以定義一種語言的內容中的大括號、 定義您自己的副檔名和內容類型，和套用的標籤為輸入，或將標記套用至現有的內容類型 （例如 「 文字 」）。 下列逐步解說示範如何套用至"text"的內容類型的標籤進行比對的大括號。  
   
 ## <a name="prerequisites"></a>必要條件  
@@ -30,7 +27,7 @@ ms.locfileid: "39500432"
   
 #### <a name="to-create-a-mef-project"></a>建立 MEF 專案  
   
-1.  建立編輯器分類器專案。 將方案命名為`BraceMatchingTest`。  
+1.  建立編輯器分類器專案。 將方案命名為 `BraceMatchingTest`。  
   
 2.  將編輯器分類器項目範本加入專案。 如需詳細資訊，請參閱 <<c0> [ 使用編輯器項目範本建立擴充功能](../extensibility/creating-an-extension-with-an-editor-item-template.md)。  
   
@@ -126,4 +123,4 @@ ms.locfileid: "39500432"
 4.  當您插入號左大括號之前時，該括號和關閉對稱的大括號應該會反白顯示。 當您將游標右大括號之後時，該括號和相符的左大括號應該會反白顯示。  
   
 ## <a name="see-also"></a>另請參閱  
- [逐步解說： 將內容類型連結至副檔名](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
+ [逐步解說：將內容類型連結至副檔名](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

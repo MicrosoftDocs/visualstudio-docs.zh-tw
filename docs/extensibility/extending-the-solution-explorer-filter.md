@@ -1,9 +1,6 @@
 ---
 title: 擴充方案總管篩選 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - Solution Explorer, extending
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bf43243abc361df6c5b32b0e71e966c61a501b52
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 3a5702a5ab42de90363328f0118b89cdc94d67f4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498784"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53830293"
 ---
 # <a name="extend-the-solution-explorer-filter"></a>擴充方案總管 中的篩選
 您可以延伸**方案總管 中**篩選功能，以顯示或隱藏不同的檔案。 例如，您可以建立篩選會顯示只有 C# 類別處理站中的檔案**方案總管 中**，如本逐步解說示範。  

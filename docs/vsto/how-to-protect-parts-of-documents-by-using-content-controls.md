@@ -1,9 +1,6 @@
 ---
-title: 如何： 使用內容控制項保護文件的組件
-ms.custom: ''
+title: HOW TO：使用內容控制項保護文件的組件
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -21,14 +18,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: beee4dd4a67b03f278a296d4b5f129100212fd25
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8498eac9c34c9876c22eb9f04723b62e40f70ca4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49850356"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53989253"
 ---
-# <a name="how-to-protect-parts-of-documents-by-using-content-controls"></a>如何： 使用內容控制項保護文件的組件
+# <a name="how-to-protect-parts-of-documents-by-using-content-controls"></a>HOW TO：使用內容控制項保護文件的組件
   當您保護文件的某個部分時，使用者即無法變更或刪除文件中該部分的內容。 您可使用多種方法，透過內容控制項來保護 Microsoft Office Word 文件的下列部分：  
   
 - 您可以保護內容控制項。  
@@ -40,7 +37,7 @@ ms.locfileid: "49850356"
 ##  <a name="EditDeleteControl"></a> 保護內容控制項  
  您可以防止使用者編輯或刪除內容控制項在文件層級專案中設定控制項的屬性，在設計階段或執行階段。  
   
- 此外，您也可以使用 VSTO 增益集專案，保護於執行階段加入文件的內容控制項。 如需詳細資訊，請參閱 <<c0> [ 如何： 將內容控制項加入 Word 文件](../vsto/how-to-add-content-controls-to-word-documents.md)。  
+ 此外，您也可以使用 VSTO 增益集專案，保護於執行階段加入文件的內容控制項。 如需詳細資訊，請參閱[＜How to：將內容控制項加入 Word 文件](../vsto/how-to-add-content-controls-to-word-documents.md)。  
   
 ### <a name="to-protect-a-content-control-at-design-time"></a>若要在設計階段保護內容控制項  
   
@@ -85,7 +82,7 @@ ms.locfileid: "49850356"
 2.  按一下 [功能區] 上的 [開發人員]  索引標籤。  
   
     > [!NOTE]  
-    >  如果 [開發人員]  索引標籤沒有顯示，您必須先使其顯示。 如需詳細資訊，請參閱 <<c0> [ 如何： 在功能區顯示開發人員索引標籤](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)。  
+    >  如果 [開發人員]  索引標籤沒有顯示，您必須先使其顯示。 如需詳細資訊，請參閱[＜How to：在功能區顯示開發人員索引標籤](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)。  
   
 3.  在 **控制項**群組中，按一下**群組**下拉式按鈕，然後按一下**群組**。  
   
@@ -108,8 +105,7 @@ ms.locfileid: "49850356"
 ## <a name="see-also"></a>另請參閱  
  [使用擴充的物件自動化 Word](../vsto/automating-word-by-using-extended-objects.md)   
  [內容控制項](../vsto/content-controls.md)   
- [如何： 將內容控制項加入 Word 文件](../vsto/how-to-add-content-controls-to-word-documents.md)   
+ [如何：將內容控制項加入 Word 文件](../vsto/how-to-add-content-controls-to-word-documents.md)   
  [主項目和主控制項概觀](../vsto/host-items-and-host-controls-overview.md)   
  [主項目和主控制項的程式設計限制](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
  [將控制項加入 Office 文件，在執行階段](../vsto/adding-controls-to-office-documents-at-run-time.md)  
-   

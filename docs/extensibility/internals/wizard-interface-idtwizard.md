@@ -1,9 +1,6 @@
 ---
 title: 精靈介面 (IDTWizard) |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - IDTWizard interface
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8f1bc71239ff7923676c35496e103223a6b6e56e
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 16ce767c70e532da5991b99a5a77f65b7adc12e0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219857"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53869712"
 ---
 # <a name="wizard-interface-idtwizard"></a>精靈介面 (IDTWizard)
 整合式的開發環境 (IDE) 使用<xref:EnvDTE.IDTWizard>與精靈通訊的介面。 精靈必須實作這個介面，才能安裝在 IDE 中。  

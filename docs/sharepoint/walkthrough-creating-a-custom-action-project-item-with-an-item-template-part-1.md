@@ -1,9 +1,6 @@
 ---
 title: 逐步解說：建立自訂動作專案項目與項目範本，第 1 部分 |Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4b07cfe78c7139d754e199a1f96974924b55531a
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: e3cae6558bdce8206340f10d570a620ba0fb1972
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53803450"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53932320"
 ---
 # <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-1"></a>逐步解說：使用項目範本，第 1 部分中建立自訂動作專案項目
   您可以擴充 Visual Studio 中的 SharePoint 專案系統，藉由建立您自己的專案項目類型。 在本逐步解說中，您將建立可新增至 SharePoint 專案，以在 SharePoint 網站上建立的自訂動作專案項目。 自訂動作會將功能表項目**站台動作**的 SharePoint 網站的功能表。

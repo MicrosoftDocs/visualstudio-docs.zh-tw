@@ -1,8 +1,7 @@
 ---
-title: CA1822：將成員標記為靜態
+title: CA1822:將成員標記為 static
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - MarkMembersAsStatic
@@ -16,20 +15,20 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b90b3dedfb76d222a8d9344c81410327de09e153
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7a566518d41a37e12ce20188bfe84c02a6cabcf9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49894530"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53890189"
 ---
-# <a name="ca1822-mark-members-as-static"></a>CA1822：將成員標記為靜態
+# <a name="ca1822-mark-members-as-static"></a>CA1822:將成員標記為 static
 
 |||
 |-|-|
 |TypeName|MarkMembersAsStatic|
 |CheckId|CA1822|
-|分類|Microsoft.Performance|
+|類別|Microsoft.Performance|
 |中斷變更|非中斷-成員不是組件外部可見不論有變更您進行。 非中斷-如果您只要變更成員的執行個體成員為`this`關鍵字。<br /><br /> 中斷-如果您將成員從執行個體成員變更為靜態成員，而且它是組件外部可見。|
 
 ## <a name="cause"></a>原因
@@ -45,8 +44,8 @@ ms.locfileid: "49894530"
  它可安全地隱藏此規則，先前隨附的程式碼修正會是一項重大變更的警告。
 
 ## <a name="related-rules"></a>相關的規則
- [CA1811：避免使用未呼叫的私用程式碼](../code-quality/ca1811-avoid-uncalled-private-code.md)
+ [CA1811:避免使用未呼叫的私用程式碼](../code-quality/ca1811-avoid-uncalled-private-code.md)
 
- [CA1812：避免使用未執行個體化的內部類別](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md)
+ [CA1812:避免使用未執行個體化的內部類別](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md)
 
- [CA1804：必須移除未使用的區域變數](../code-quality/ca1804-remove-unused-locals.md)
+ [CA1804： 必須移除未使用的區域變數](../code-quality/ca1804-remove-unused-locals.md)

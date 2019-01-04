@@ -1,8 +1,6 @@
 ---
 title: 將控制項加入 Office 文件，在執行階段
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology: office-development
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 dev_langs:
@@ -25,12 +23,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2ad16bc414e6d67b563240bcd2bceb15e9c34e97
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: be96a6967657a79d1e3bed9336ebb530accba2a0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52305633"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53842784"
 ---
 # <a name="add-controls-to-office-documents-at-runtime"></a>將控制項加入 Office 文件，在執行階段
   您可以將控制項新增至 Microsoft Office Word 文件和 Microsoft Office Excel 活頁簿，在執行階段。 您也可以在執行階段移除它們。 您新增或移除在執行階段的控制項稱為*動態控制項*。  
@@ -45,7 +43,7 @@ ms.locfileid: "52305633"
 
 - [將 Windows Form 控制項加入文件](#WindowsForms)。  
 
-  ![影片連結](../vsto/media/playvideo.gif "影片連結")如需相關的影片示範，請參閱[如何執行 do i： 將控制項加入文件介面在執行階段？](http://go.microsoft.com/fwlink/?LinkId=132782)。  
+  ![影片連結](../vsto/media/playvideo.gif "影片連結")如需相關的影片示範，請參閱[How do i:您可以將控制項加入文件介面在執行階段？](http://go.microsoft.com/fwlink/?LinkId=132782).  
 
 ##  <a name="ControlsCollection"></a> 使用控制項集合來管理控制項在執行階段  
  若要新增、 取得，或移除在執行階段的控制項，使用協助程式方法<xref:Microsoft.Office.Tools.Excel.ControlCollection>和<xref:Microsoft.Office.Tools.Word.ControlCollection>物件。  
@@ -82,15 +80,15 @@ ms.locfileid: "52305633"
 ##  <a name="HostControls"></a> 將主控制項加入文件  
  在您以程式設計方式將主控制項加入文件中時，您必須提供控制項的唯一識別名稱，且必須指定要將控制項加入文件的所在位置。 如需特定的相關指示，請參閱下列主題：  
 
-- [如何： 將 ListObject 控制項加入工作表](../vsto/how-to-add-listobject-controls-to-worksheets.md)  
+- [如何：將 ListObject 控制項加入工作表](../vsto/how-to-add-listobject-controls-to-worksheets.md)  
 
-- [如何： 將 NamedRange 控制項加入工作表](../vsto/how-to-add-namedrange-controls-to-worksheets.md)  
+- [如何：將 NamedRange 控制項加入工作表](../vsto/how-to-add-namedrange-controls-to-worksheets.md)  
 
-- [如何： 將圖表控制項加入工作表](../vsto/how-to-add-chart-controls-to-worksheets.md)  
+- [如何：將圖表控制項加入工作表](../vsto/how-to-add-chart-controls-to-worksheets.md)  
 
-- [如何： 將內容控制項加入 Word 文件](../vsto/how-to-add-content-controls-to-word-documents.md)  
+- [如何：加入內容控制項加入 Word 文件](../vsto/how-to-add-content-controls-to-word-documents.md)  
 
-- [如何： 將書籤控制項加入 Word 文件](../vsto/how-to-add-bookmark-controls-to-word-documents.md)  
+- [如何：將書籤控制項加入 Word 文件](../vsto/how-to-add-bookmark-controls-to-word-documents.md)  
 
   如需主控制項的詳細資訊，請參閱[主項目和裝載控制項概觀](../vsto/host-items-and-host-controls-overview.md)。  
 
@@ -144,10 +142,10 @@ ms.locfileid: "52305633"
 ## <a name="see-also"></a>另請參閱  
  [Office 文件上的控制項](../vsto/controls-on-office-documents.md)   
  [保存動態控制項中的 Office 文件](../vsto/persisting-dynamic-controls-in-office-documents.md)   
- [如何： 將 ListObject 控制項加入工作表](../vsto/how-to-add-listobject-controls-to-worksheets.md)   
- [如何： 將 NamedRange 控制項加入工作表](../vsto/how-to-add-namedrange-controls-to-worksheets.md)   
- [如何： 將圖表控制項加入工作表](../vsto/how-to-add-chart-controls-to-worksheets.md)   
- [如何： 將內容控制項加入 Word 文件](../vsto/how-to-add-content-controls-to-word-documents.md)   
- [如何： 將書籤控制項加入 Word 文件](../vsto/how-to-add-bookmark-controls-to-word-documents.md)   
+ [如何：將 ListObject 控制項加入工作表](../vsto/how-to-add-listobject-controls-to-worksheets.md)   
+ [如何：將 NamedRange 控制項加入工作表](../vsto/how-to-add-namedrange-controls-to-worksheets.md)   
+ [如何：將圖表控制項加入工作表](../vsto/how-to-add-chart-controls-to-worksheets.md)   
+ [如何：將內容控制項加入 Word 文件](../vsto/how-to-add-content-controls-to-word-documents.md)   
+ [如何：將書籤控制項加入 Word 文件](../vsto/how-to-add-bookmark-controls-to-word-documents.md)   
  [在 Office 文件概觀上的 Windows Form 控制項](../vsto/windows-forms-controls-on-office-documents-overview.md)   
- [如何： 將 Windows Form 控制項加入 Office 文件](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)   
+ [如何：將 Windows Form 控制項加入 Office 文件](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)   

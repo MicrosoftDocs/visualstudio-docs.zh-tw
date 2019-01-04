@@ -1,9 +1,6 @@
 ---
-title: 逐步解說： 從編輯器擴充功能存取 DTE 物件 |Microsoft Docs
-ms.custom: ''
+title: 逐步解說：從編輯器擴充功能存取 DTE 物件 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - getting the DTE object
@@ -13,14 +10,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8ed4343139b3e59dfba7adc71b1c91cdf01c13db
-ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
+ms.openlocfilehash: d178732376fa01c0b204e8d6b2acc27e39a82cb4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39586244"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53930176"
 ---
-# <a name="walkthrough-accessing-the-dte-object-from-an-editor-extension"></a>逐步解說： 從編輯器擴充功能存取 DTE 物件
+# <a name="walkthrough-accessing-the-dte-object-from-an-editor-extension"></a>逐步解說：從編輯器擴充功能存取 DTE 物件
 在 Vspackage 中，您可以取得 DTE 物件呼叫<xref:Microsoft.VisualStudio.Shell.Package.GetService%2A>DTE 物件的型別方法。 在 Managed Extensibility Framework (MEF) 擴充功能，您可以匯入<xref:Microsoft.VisualStudio.Shell.SVsServiceProvider>，然後呼叫<xref:Microsoft.VisualStudio.Shell.ServiceProvider.GetService%2A>具有一種方法<xref:EnvDTE.DTE>。  
   
 ## <a name="prerequisites"></a>必要條件  
@@ -36,7 +33,7 @@ ms.locfileid: "39586244"
   
     -   EnvDTE  
   
-    -   [Envdte80]  
+    -   EnvDTE80  
   
     -   Microsoft.VisualStudio.Shell.Immutable.10.0  
   

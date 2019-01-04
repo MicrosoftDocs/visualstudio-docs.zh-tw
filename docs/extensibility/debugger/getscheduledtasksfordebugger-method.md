@@ -1,9 +1,6 @@
 ---
 title: GetScheduledTasksForDebugger 方法 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - GetScheduledTasksForDebugger method, TaskScheduler class [.NET Framework debug engines]
@@ -13,17 +10,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 648d48f34681865a34654ed9f82bd790d77b2395
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: d3e9b090ded89247cb69cac3d08b73fa93fc019f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39231160"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53863887"
 ---
 # <a name="getscheduledtasksfordebugger-method"></a>GetScheduledTasksForDebugger 方法
 擷取所有排定工作的陣列。  
   
- **命名空間：** <xref:System.Threading.Tasks?displayProperty=fullName>  
+ **命名空間︰** <xref:System.Threading.Tasks?displayProperty=fullName>  
   
  **組件：** mscorlib (在*mscorlib.dll*)  
   

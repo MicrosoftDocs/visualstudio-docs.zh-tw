@@ -1,9 +1,6 @@
 ---
 title: 父項目 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - VSCT XML schema elements, Parent
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9a66f9fff773fb9a9542de13ceb97ad8732c319b
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: c025957bd0d3cf06bf73e1b35b5faa661386a0a5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39635852"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53902433"
 ---
 # <a name="parent-element"></a>父項目
 按鈕或下拉式方塊的父代可能只是群組。 功能表或群組的父系可能是功能表或群組。 在  [CommandPlacement 元素](../extensibility/commandplacement-element.md)，則需要這個元素; 所有其他執行個體中是選擇性的。 如果省略這個項目，則父代`Group_Undefined:0`會隱含。  
@@ -37,8 +34,8 @@ ms.locfileid: "39635852"
   
 |屬性|描述|  
 |---------------|-----------------|  
-|guid|必要。 GUID/識別碼 GUID 命令識別項。|  
-|id|必要。 識別碼的 GUID/識別碼命令識別項。|  
+|guid|必要項。 GUID/識別碼 GUID 命令識別項。|  
+|id|必要項。 識別碼的 GUID/識別碼命令識別項。|  
   
 ### <a name="child-elements"></a>子元素  
  無  

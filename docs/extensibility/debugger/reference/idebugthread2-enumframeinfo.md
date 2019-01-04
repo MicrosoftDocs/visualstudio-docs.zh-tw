@@ -1,9 +1,6 @@
 ---
 title: IDebugThread2::EnumFrameInfo |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugThread2::EnumFrameInfo
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 98cd9db7785d7d7867e48f0bd56a2f5ab657a344
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 981b3e55b14d7c7cdb8a496f98e12684a88f8465
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942726"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53831189"
 ---
 # <a name="idebugthread2enumframeinfo"></a>IDebugThread2::EnumFrameInfo
 擷取一份此執行緒的堆疊框架。  
@@ -28,7 +25,7 @@ ms.locfileid: "49942726"
 ## <a name="syntax"></a>語法  
   
 ```cpp  
-HRESULT EnumFrameInfo (   
+HRESULT EnumFrameInfo (   
    FRAMEINFO_FLAGS        dwFieldSpec,  
    UINT                   nRadix,  
    IEnumDebugFrameInfo2** ppEnum  
@@ -36,7 +33,7 @@ HRESULT EnumFrameInfo (
 ```  
   
 ```csharp  
-int EnumFrameInfo (   
+int EnumFrameInfo (   
    enum_FRAMEINFO_FLAGS     dwFieldSpec,  
    uint                     nRadix,  
    out IEnumDebugFrameInfo2 ppEnum  

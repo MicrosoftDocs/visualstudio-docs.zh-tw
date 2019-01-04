@@ -1,9 +1,6 @@
 ---
 title: 映像和適用於 Visual Studio 的圖示 |Microsoft Docs
-ms.custom: ''
 ms.date: 04/26/2017
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: f410325e-9cf2-4f39-b6d7-b672121c2691
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 901e6612cec87df0d43c20d34a139b8a578f4f0a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 512b2fe20e1c057c2bac73975a29eff0cc3df8d4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49949392"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53880698"
 ---
 # <a name="images-and-icons-for-visual-studio"></a>映像和適用於 Visual Studio 的圖示
 ##  <a name="BKMK_ImageUseInVisualStudio"></a> 在 Visual Studio 中的映像使用  
@@ -26,7 +23,7 @@ ms.locfileid: "49949392"
   
 -   **圖示**。 會出現在命令、 階層、 範本和等等的小型影像。 在 Visual Studio 中使用的預設圖示大小是 16 x 16 PNG。 自動產生的映像服務的圖示會產生 XAML 格式的 HDPI 支援。  
   
-     **注意：** 功能表系統會使用映像，而您不應建立為每個命令的圖示。 請參閱[功能表和命令適用於 Visual Studio](../../extensibility/ux-guidelines/menus-and-commands-for-visual-studio.md) ，了解您的命令是否應該取得圖示。  
+     **注意：** 雖然映像會用於功能表系統，您不應建立為每個命令的圖示。 請參閱[功能表和命令適用於 Visual Studio](../../extensibility/ux-guidelines/menus-and-commands-for-visual-studio.md) ，了解您的命令是否應該取得圖示。  
   
 -   **縮圖。** 在對話方塊中，例如 [新增專案] 對話方塊的 [預覽] 區域中使用的映像。  
   

@@ -1,9 +1,6 @@
 ---
 title: Visual Studio Tools for Office runtime 概觀
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -29,15 +26,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b169242b9828f47f1ecfb87ebf02a9f86234699f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: bdae6b7f08ec442d7bca0b0aa3b46b8825385767
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49836992"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53878779"
 ---
 # <a name="visual-studio-tools-for-office-runtime-overview"></a>Visual Studio Tools for Office runtime 概觀
-  若要執行使用 Visual Studio 中的 Microsoft Office developer tools 所建立的解決方案，必須在使用者電腦上安裝 Visual Studio 2010 Tools for Office 執行階段。 如需詳細資訊，請參閱 <<c0> [ 如何： 安裝 Visual Studio Tools for Office runtime 可轉散發套件](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md)。 Visual Studio 2010 Tools for Office 執行階段是由兩個主要元件所組成：  
+  若要執行使用 Visual Studio 中的 Microsoft Office developer tools 所建立的解決方案，必須在使用者電腦上安裝 Visual Studio 2010 Tools for Office 執行階段。 如需詳細資訊，請參閱[＜How to：安裝 Visual Studio Tools for Office runtime 可轉散發套件](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md)。 Visual Studio 2010 Tools for Office 執行階段是由兩個主要元件所組成：  
   
 - Office Extensions for .NET Framework。 這些元件是 Managed 組件，可提供您的方案與 Microsoft Office 應用程式之間的通訊層。 如需詳細資訊，請參閱 <<c0> [ 了解適用於.NET Framework 的 Office 擴充功能](#officeextensions)。  
   
@@ -82,7 +79,7 @@ ms.locfileid: "49836992"
   
  如需如何在載入過程中使用這些元件的資訊，請參閱[文件層級自訂的架構](../vsto/architecture-of-document-level-customizations.md)並[Architecture of VSTO 增益集](../vsto/architecture-of-vsto-add-ins.md)。  
   
-### <a name="vstoeedll"></a>vstoee.dll  
+### <a name="vstoeedll"></a>VSTOEE.dll  
  當使用者開啟文件層級自訂或 VSTO 增益集啟動時，Office 應用程式呼叫*VSTOEE.dll*來執行工作負載所需[!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]。  
   
  *VSTOEE.dll*可確保正確的版本[!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]載入解決方案和安裝的 Office 版本。 雖然多個版本的[!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]可以安裝在同一部電腦，也就是只有一個執行個體*VSTOEE.dll*安裝一次。 這是*VSTOEE.dll* ，已包含最新版本的電腦上安裝的執行階段。 如需不同版本的詳細資訊[!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]，可以用於其他方案，請參閱 <<c2> [ 執行不同版本的 Microsoft Office 中的方案](../vsto/running-solutions-in-different-versions-of-microsoft-office.md)。  
@@ -124,7 +121,5 @@ ms.locfileid: "49836992"
  [在 Visual Studio 中的 Office 方案的架構](../vsto/architecture-of-office-solutions-in-visual-studio.md)   
  [文件層級自訂的架構](../vsto/architecture-of-document-level-customizations.md)   
  [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md)   
- [如何： 在 Visual Studio 中建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)   
+ [如何：在 Visual Studio 中建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)   
  [升級和移轉 Office 方案](../vsto/upgrading-and-migrating-office-solutions.md)  
-  
-  

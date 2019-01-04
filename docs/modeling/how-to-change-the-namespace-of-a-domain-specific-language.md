@@ -1,5 +1,5 @@
 ---
-title: 如何： 變更特定領域語言命名空間
+title: HOW TO：變更定義域專屬語言命名空間
 ms.date: 10/31/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,15 +10,14 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 47e13e8399cba7762ff7443e4fc4cbf3a89375a6
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: 3209f1942e95e8cfd883f938722ccfbc713e64db
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50966826"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53889994"
 ---
-# <a name="how-to-change-the-namespace-of-a-domain-specific-language"></a>如何： 變更特定領域語言命名空間
+# <a name="how-to-change-the-namespace-of-a-domain-specific-language"></a>HOW TO：變更定義域專屬語言命名空間
 
 您可以變更特定領域語言的命名空間。 進行中的變更**DSL explorer**、 Dsl 封裝專案屬性，以及組件資訊。
 

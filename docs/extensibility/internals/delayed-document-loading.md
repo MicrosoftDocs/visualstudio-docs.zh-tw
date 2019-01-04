@@ -1,9 +1,6 @@
 ---
 title: 延遲載入文件 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: fb07b8e2-a4e3-4cb0-b04f-8eb11c491f35
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 03ca02010586711fa1a9af463f2fde5d0f4963a5
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 27edc56516293ff6502f0708a02faa7bae1e3719
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39500364"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53940358"
 ---
 # <a name="delayed-document-loading"></a>延遲載入文件
 當使用者重新開啟 Visual Studio 方案時，大部分的相關聯的文件並不會立即載入。 文件視窗框架會建立處於暫止的初始化狀態，並放置於執行中的文件資料表 (RDT) 中預留位置文件 （稱為虛設常式框架）。  
@@ -59,7 +56,7 @@ ms.locfileid: "39500364"
 - 否則，您可以訂閱<xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents.OnAfterAttributeChange%2A>。  
   
 
- 下列範例是假設的文件存取案例： 想要顯示開啟的文件的一些資訊的 Visual Studio 擴充功能]、 [編輯執行個體鎖定計數和相關文件資料的項目。 它會列舉在 RDT 中使用的文件<xref:Microsoft.VisualStudio.Shell.Interop.IEnumRunningDocuments>，然後呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.GetDocumentInfo%2A>擷取編輯鎖定計數和文件資料的每份文件。 如果文件處於暫止的初始化狀態，要求的文件資料會導致不必要地初始化。  
+ 下列範例是假設的文件存取案例：Visual Studio 中想要顯示開啟的文件的一些資訊的擴充功能，例如編輯鎖定計數和相關文件資料的項目。 它會列舉在 RDT 中使用的文件<xref:Microsoft.VisualStudio.Shell.Interop.IEnumRunningDocuments>，然後呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.GetDocumentInfo%2A>擷取編輯鎖定計數和文件資料的每份文件。 如果文件處於暫止的初始化狀態，要求的文件資料會導致不必要地初始化。  
   
  存取文件的更有效率的方式是使用<xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable4.GetDocumentEditLockCount%2A>來取得編輯鎖定計數，然後使用<xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable4.GetDocumentFlags%2A>來判斷是否已初始化文件。 如果未包含旗標<xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS4>，文件已經初始化，並要求使用的文件資料<xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable4.GetDocumentData%2A>不會造成任何不必要的初始化。 如果包含旗標<xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS4>，擴充功能應該避免要求文件資料，直到初始化文件。 可以在中偵測到這項初始化`OnAfterAttributeChange(Ex)`事件處理常式。  
   

@@ -1,9 +1,6 @@
 ---
 title: IEnumCodePaths2::Next |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IEnumCodePaths2::Next
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7a58df90249cd1c4a5b41120aebefe8fc1fda6a1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d9fcd04e32d5b586271cc1dfaa66d96c974abeb8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49898261"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53853979"
 ---
 # <a name="ienumcodepaths2next"></a>IEnumCodePaths2::Next
 從列舉中傳回下的一個項目集。  

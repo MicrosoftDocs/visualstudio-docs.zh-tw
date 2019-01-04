@@ -1,9 +1,6 @@
 ---
 title: 偵錯 SharePoint 方案 |Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.Project.WebConfigModificationDialog
@@ -18,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6f53ca7f1a5e449d47a30a32967072f7220c159a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 04c80b0986d9a5bfa85a69994f96b56db337634f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49903149"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53892883"
 ---
 # <a name="debug-sharepoint-solutions"></a>偵錯 SharePoint 方案
   您可以使用偵錯 SharePoint 方案[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]偵錯工具。 當您啟動偵錯，[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]專案會將檔案部署到 SharePoint 伺服器，然後開啟 網頁瀏覽器中的 SharePoint 網站的執行個體。 下列各節將說明如何偵錯 SharePoint 應用程式[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。  
@@ -153,4 +150,3 @@ ms.locfileid: "49903149"
   
 ## <a name="see-also"></a>另請參閱
  [SharePoint 方案進行疑難排解](../sharepoint/troubleshooting-sharepoint-solutions.md)  
-  

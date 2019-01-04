@@ -1,9 +1,6 @@
 ---
 title: Creating an Extension with 工具視窗 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 585b0a3a-f85b-4f92-81bb-9ca499bb8a89
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6170c5d418f1778af242bb4eb08cccffe0c031be
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 7e21c49971660f32abef3a47e436d01e5af05543
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39499799"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53838988"
 ---
 # <a name="create-an-extension-with-a-tool-window"></a>建立工具視窗的延伸模組
 在此程序中，了解如何使用 VSIX 專案範本並**自訂工具視窗**建立工具視窗的延伸模組的項目範本。  

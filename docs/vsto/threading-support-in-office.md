@@ -1,9 +1,6 @@
 ---
 title: Office 中的執行緒支援
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5aafdad425d611d7d57c2ae8e53e505d3522ba38
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 48a7ab96b26dc9410eef6977c53af7a3cf4a9841
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49871104"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53857889"
 ---
 # <a name="threading-support-in-office"></a>Office 中的執行緒支援
   本文提供 Microsoft Office 物件模型中的執行緒支援方式的相關資訊。 Office 物件模型不是安全執行緒，但是仍可以使用 Office 方案中的多個執行緒。 Office 應用程式都是元件物件模型 (COM) 伺服器。 COM 可讓用戶端在任意的執行緒上呼叫 COM 伺服器。 不是安全執行緒的 COM 伺服器，COM 會提供一個機制來序列化，以便在任何時間只能有一個邏輯執行緒會執行伺服器上的並行呼叫。 這項機制稱為單一執行緒 apartment (STA) 模型。 因為呼叫已序列化，則呼叫端可能會封鎖，有一段時間伺服器忙碌中或正在處理其他背景執行緒上的呼叫時。  
@@ -79,5 +76,3 @@ ms.locfileid: "49871104"
  [執行緒 (C#)](/dotnet/csharp/programming-guide/concepts/threading/index) [執行緒處理 (Visual Basic)](/dotnet/visual-basic/programming-guide/concepts/threading/index)   
  [使用執行緒和執行緒處理](/dotnet/standard/threading/using-threads-and-threading)   
  [設計和建立 Office 方案](../vsto/designing-and-creating-office-solutions.md)  
-  
-  

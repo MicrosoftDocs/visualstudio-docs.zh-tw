@@ -3,7 +3,6 @@ title: 工作流程設計工具-Send 活動設計工具
 ms.date: 11/04/2016
 ms.topic: reference
 ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 f1_keywords:
 - System.ServiceModel.Activities.Send.UI
 ms.assetid: b514f2e4-767c-4b94-ac61-dd3a54d4b96d
@@ -12,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7cbbcc01001d663e927431b99915bf69d9a223ce
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 788884590054b29ae31df9c5ba2ca31ac0ea5c49
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49836420"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53954017"
 ---
 # <a name="send-activity-designer"></a>Send 活動設計工具
 
@@ -46,7 +45,7 @@ ms.locfileid: "49836420"
 | <xref:System.ServiceModel.Activities.Send.OperationName%2A> | True | 這個 <xref:System.ServiceModel.Activities.Send> 活動呼叫之服務作業的名稱。 這個屬性用來建構的預設值**動作**屬性若**動作**未明確設定屬性。 |
 | <xref:System.ServiceModel.Activities.Send.ServiceContractName%2A> | True | 要呼叫之服務所實作的服務合約名稱。 |
 | <xref:System.ServiceModel.Activities.Send.Content%2A> | False | 指定要接收的訊息或參數內容。 這可以是 <xref:System.ServiceModel.Activities.ReceiveMessageContent> 活動或 <xref:System.ServiceModel.Activities.ReceiveParametersContent> 活動。 編輯此屬性，選取旁邊的省略符號按鈕**內容**欄位中屬性方格，或按一下**定義...** 按鈕旁邊**內容**標籤上**接收**活動設計工具介面。 兩者都顯示**內容定義**對話方塊。 如需如何使用這個方塊的詳細資訊，請參閱[內容定義對話方塊](../workflow-designer/content-definition-dialog-box.md)主題。 |
-| <xref:System.ServiceModel.Activities.Send.CorrelatesWith%2A> | False | 指定用來路由訊息到適當工作流程執行個體的 <xref:System.ServiceModel.Activities.CorrelationHandle>。<br /><br /> 按一下省略符號按鈕旁<xref:System.ServiceModel.Activities.Send.CorrelatesWith%2A>以開啟 屬性 方格中的屬性**運算式編輯器** 對話方塊。 如需有關使用此對話方塊，請參閱[如何： 使用 「 運算式編輯器](../workflow-designer/how-to-use-the-expression-editor.md)主題。 |
+| <xref:System.ServiceModel.Activities.Send.CorrelatesWith%2A> | False | 指定用來路由訊息到適當工作流程執行個體的 <xref:System.ServiceModel.Activities.CorrelationHandle>。<br /><br /> 按一下省略符號按鈕旁<xref:System.ServiceModel.Activities.Send.CorrelatesWith%2A>以開啟 屬性 方格中的屬性**運算式編輯器** 對話方塊。 如需有關使用此對話方塊，請參閱[How to:使用 「 運算式編輯器](../workflow-designer/how-to-use-the-expression-editor.md)主題。 |
 | <xref:System.ServiceModel.Activities.Send.CorrelationInitializers%2A> | False | 指定 <xref:System.ServiceModel.Activities.CorrelationInitializer> 物件的集合，這些物件會初始化多個 <xref:System.ServiceModel.Activities.CorrelationHandle> 物件，用來設定工作流程內的這個 <xref:System.ServiceModel.Activities.Send> 活動。 按一下省略符號按鈕旁<xref:System.ServiceModel.Activities.Send.CorrelationInitializers%2A>以開啟 屬性 方格中的屬性**加入相互關聯初始設定式** 對話方塊。 如需使用此方塊的詳細資訊，請參閱[加入 CorrelationInitializers 對話方塊](../workflow-designer/add-correlationinitializers-dialog-box.md)主題。 |
 | <xref:System.ServiceModel.Activities.Send.KnownTypes%2A> | False | 這個 <xref:System.ServiceModel.Activities.Send> 活動要呼叫之服務作業之已知型別的集合。 這個屬性應該搭配 <xref:System.ServiceModel.Activities.Receive.SerializerOption%2A> 屬性 (設定為 <xref:System.Runtime.Serialization.DataContractSerializer>) 使用。 如果使用 <xref:System.Xml.Serialization.XmlSerializer>，則會忽略此項。<br /><br /> 選取旁邊的省略符號按鈕**KnownTypes**欄位中顯示的屬性方格**型別集合編輯器**對話方塊中，您可以加入相關型別。<br /><br /> 選取旁邊的省略符號按鈕**KnownTypes**欄位中顯示的屬性方格**型別集合編輯器**對話方塊中，您可以加入相關型別。 如需使用此方塊的詳細資訊，請參閱[型別集合編輯器對話方塊](../workflow-designer/type-collection-editor-dialog-box.md)主題。 |
 | <xref:System.ServiceModel.Activities.Send.ProtectionLevel%2A> | True | 指定訊息的 <xref:System.Net.Security.ProtectionLevel>。<br /><br /> 1。<xref:System.Net.Security.ProtectionLevel>表示僅有驗證。<br />2。<xref:System.Net.Security.ProtectionLevel>表示簽署資料以協助確保傳輸之資料的完整性。<br />3。<xref:System.Net.Security.ProtectionLevel>表示加密並簽署資料以協助確保傳輸之資料的完整性與機密性。 |

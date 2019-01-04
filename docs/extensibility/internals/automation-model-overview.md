@@ -1,9 +1,6 @@
 ---
 title: Automation 模型概觀 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - automation [Visual Studio SDK], about automation
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 661c870b19760b8a91c0e9e9e162076c641864a3
-ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
+ms.openlocfilehash: cb9176ce0341ff50bb59a9666d18ae5054dad872
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46370690"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53821843"
 ---
 # <a name="automation-model-overview"></a>Automation 模型概觀
 Automation 模型包含一組您可以對其撰寫的 Visual Studio 增益集或延伸的物件。 增益集是應用程式可以在 Visual Studio 環境的操作和自動化一般工作。 Visual Studio 擴充功能可以建立自訂的 Visual Studio 元件，或新增功能的標準元件，例如文字編輯器。  
@@ -47,4 +44,4 @@ Automation 模型包含一組您可以對其撰寫的 Visual Studio 增益集或
 如需有關自動化的詳細資訊，請參閱[Automation 和擴充性 Visual Studio](../extensibility-in-visual-studio.md)。 這份文件和文件它會提供連結，幫助您做出有關您應該提供 vspackage 的自動化的方式。  
   
 ## <a name="see-also"></a>另請參閱  
- [如何： 建立增益集](https://msdn.microsoft.com/Library/50be56d2-e3a5-4cd2-8569-2a0666b268ce)
+ [如何：建立增益集](https://msdn.microsoft.com/Library/50be56d2-e3a5-4cd2-8569-2a0666b268ce)

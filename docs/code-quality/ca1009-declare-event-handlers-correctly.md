@@ -1,8 +1,7 @@
 ---
-title: CA1009：正確宣告事件處理常式
+title: CA1009:事件處理常式必須正確宣告
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA1009
@@ -20,20 +19,20 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 7697b394396f729133b7cb6a7f3c0501c5c45202
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: b56f93a1ea4afbe3c9fd590df937fe56a155b044
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45547392"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53987650"
 ---
-# <a name="ca1009-declare-event-handlers-correctly"></a>CA1009：正確宣告事件處理常式
+# <a name="ca1009-declare-event-handlers-correctly"></a>CA1009:事件處理常式必須正確宣告
 
 |||
 |-|-|
 |TypeName|DeclareEventHandlersCorrectly|
 |CheckId|CA1009|
-|類別|Microsoft.Design|
+|分類|Microsoft.Design|
 |中斷變更|中斷|
 
 ## <a name="cause"></a>原因
@@ -58,7 +57,7 @@ ms.locfileid: "45547392"
  [!code-vb[FxCop.Design.EventsTwoParams#1](../code-quality/codesnippet/VisualBasic/ca1009-declare-event-handlers-correctly_1.vb)]
 
 ## <a name="related-rules"></a>相關的規則
- [CA2109：必須檢閱可見的事件處理常式](../code-quality/ca2109-review-visible-event-handlers.md)
+ [CA2109： 必須檢閱顯示的事件處理常式](../code-quality/ca2109-review-visible-event-handlers.md)
 
 ## <a name="see-also"></a>另請參閱
 

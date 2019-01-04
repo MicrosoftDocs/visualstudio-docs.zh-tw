@@ -1,9 +1,7 @@
 ---
 title: '&lt;增益集&gt;元素 （在 Visual Studio 中的 Office 程式開發）'
 titleSuffix: ''
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology: office-development
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 dev_langs:
@@ -18,12 +16,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7e3e5b2c8b123d7dc33693bb3e63326e3e99a776
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: 6ab185a1341192542d4e35ad01aa2d5ce5fba748
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53802546"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53867721"
 ---
 # <a name="ltaddingt-element-office-development-in-visual-studio"></a>&lt;增益集&gt;元素 （在 Visual Studio 中的 Office 程式開發）
   **Addin**項目`vstav3`命名空間包含的是 Microsoft Office VSTO 增益集和使用 Visual Studio 開發的文件層級自訂專屬的資訊。

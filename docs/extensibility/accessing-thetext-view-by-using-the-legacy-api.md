@@ -1,9 +1,6 @@
 ---
 title: 使用舊版 API 存取 theText 檢視 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - text view
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3fe57ab7ef5ac113f1248f89cd62ef5b9ec33ca3
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: f1878c1e3769ffaa8aedd4c4d0f26349d6f097d2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39081819"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53943833"
 ---
 # <a name="access-the-text-view-by-using-the-legacy-api"></a>使用舊版的 API 來存取 [文字] 檢視
 文字檢視是儲存在文字緩衝區中的文字呈現。 您可以存取 [文字] 檢視下一節中所示，使用舊版 API。

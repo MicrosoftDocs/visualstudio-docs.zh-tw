@@ -1,9 +1,6 @@
 ---
 title: IDebugPort2::EnumProcesses |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugPort2::EnumProcesses
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6302bcff27184713af94330a2795fd8f7867a3f9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d28b3f25b8e122c9a79267dfc049717e049f149a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49935207"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53876860"
 ---
 # <a name="idebugport2enumprocesses"></a>IDebugPort2::EnumProcesses
 傳回一份連接埠上執行的所有處理程序。  
@@ -28,13 +25,13 @@ ms.locfileid: "49935207"
 ## <a name="syntax"></a>語法  
   
 ```cpp  
-HRESULT EnumProcesses(   
+HRESULT EnumProcesses(   
    IEnumDebugProcesses2** ppEnum  
 );  
 ```  
   
 ```csharp  
-int EnumProcesses(   
+int EnumProcesses(   
    out IEnumDebugProcesses2 ppEnum  
 );  
 ```  

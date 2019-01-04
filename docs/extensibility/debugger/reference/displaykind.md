@@ -1,9 +1,6 @@
 ---
-title: DisplayKind |Microsoft 文件
-ms.custom: ''
+title: DisplayKind |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - DisplayKind enumeration
@@ -13,15 +10,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8890d8a949e59827b45d3a2933116294562023e1
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: fd75220c202d65c11ac695e4fa27e736595cbc86
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31109908"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53828874"
 ---
 # <a name="displaykind"></a>DisplayKind
-列舉有效的值，代表要從取得的資訊種類[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)物件，並向使用者顯示。  
+列舉有效的值，代表要從需要的資訊種類[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)物件，並向使用者顯示。  
   
 ## <a name="syntax"></a>語法  
   
@@ -52,14 +49,14 @@ public enum enum_DisplayKind
  欄位的名稱。  
   
  DisplayKind_Type  
- 欄位的類型。  
+ 欄位型別。  
   
 ## <a name="requirements"></a>需求  
- 標頭： Ee.h  
+ 標頭：Ee.h  
   
- 命名空間： Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間:Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
  [列舉型別](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   

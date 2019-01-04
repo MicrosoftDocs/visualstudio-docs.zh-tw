@@ -1,9 +1,6 @@
 ---
 title: 註冊及取消註冊 Vspackage |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - registration, VSPackages
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2075bec37e29359fb9c403f9cb149b70c01845b6
-ms.sourcegitcommit: 9571742f4a808c75b1034aa72fc24b54bc50692e
+ms.openlocfilehash: 21745b0e8a17d580e916f33246093e763811b69a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/18/2018
-ms.locfileid: "49410984"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53960997"
 ---
 # <a name="register-and-unregister-vspackages"></a>註冊和取消註冊 Vspackage
 您可以使用屬性來註冊 VSPackage，但  
@@ -32,7 +29,7 @@ ms.locfileid: "49410984"
 ```csharp  
 [PackageRegistration(UseManagedResourcesOnly = true)]  
 [Guid("0B81D86C-0A85-4f30-9B26-DD2616447F95")]  
-public sealed class BasicPackage : Package  
+public sealed class BasicPackage : Package  
 {
     // ...
 }  

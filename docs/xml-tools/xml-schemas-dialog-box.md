@@ -2,7 +2,6 @@
 title: XML 結構描述對話方塊
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: reference
 ms.assetid: 0271fa26-2205-49bd-96e0-ae1441571808
 author: gewarren
@@ -10,18 +9,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5357f762d2a7027db92ad1916acb279abdf23157
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: b1f8f4824d18618b40ad4073dc6be0c81d9aba37
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34693636"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53835200"
 ---
 # <a name="xml-schemas-dialog-box"></a>XML 結構描述 對話方塊
 
-**XML 結構描述**對話方塊用於選取哪個 XML 結構描述定義語言 (XSD) 結構描述與 XML 文件產生關聯。 您可以從結構描述快取中選取結構描述，或指定快取中沒有的結構描述。 選取的結構描述會被視為結構描述集的一部分。 結構描述集用於 IntelliSense 以及 XML 文件驗證。
+**XML 結構描述**對話方塊用來選取哪一個 XML 結構描述定義語言 (XSD) 結構描述與 XML 文件產生關聯。 您可以從結構描述快取中選取結構描述，或指定快取中沒有的結構描述。 選取的結構描述會被視為結構描述集的一部分。 結構描述集用於 IntelliSense 以及 XML 文件驗證。
 
-您可以存取**XML 結構描述**對話方塊中，按一下**結構描述**按鈕在文件屬性 視窗中，或選取**結構描述**從**XML**功能表。
+您可以存取**XML 結構描述**對話方塊中，按一下**結構描述**按鈕，在 [文件屬性] 視窗中，或選取**結構描述**從**XML**功能表。
 
 ## <a name="uielement-list"></a>UIElement 清單
  **使用**
@@ -44,7 +43,7 @@ ms.locfileid: "34693636"
 
 **[新增]**
 
-開啟**開啟 XSD 結構描述**對話方塊，可讓您選取要加入至結構描述集的其他結構描述。 當您將結構描述加入結構描述設定**使用**資料行值設定為**使用此結構描述**。
+會開啟**開啟 XSD 結構描述**對話方塊，可讓您選取要加入至結構描述集合的其他結構描述。 當您將結構描述加入結構描述設定，請**使用**資料行值設定為**使用這個結構描述**。
 
 **移除**
 
@@ -53,5 +52,5 @@ ms.locfileid: "34693636"
 ## <a name="see-also"></a>另請參閱
 
 - [XML 編輯器元件](../xml-tools/xml-editor-components.md)
-- [如何： 選取要使用的 XML 結構描述](../xml-tools/how-to-select-the-xml-schemas-to-use.md)
+- [如何：選取要使用的 XML 結構描述](../xml-tools/how-to-select-the-xml-schemas-to-use.md)
 - [結構描述快取](../xml-tools/schema-cache.md)

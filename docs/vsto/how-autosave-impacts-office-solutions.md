@@ -1,9 +1,6 @@
 ---
 title: 自動儲存如何影響 Office 方案
-ms.custom: ''
 ms.date: 10/26/2018
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,12 +12,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: dfd040f6aab19cb42189ea137e5f4cd1898f5be4
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: e0529876ab7a055e455fbe53b379afc4db43e0fc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53646980"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53932966"
 ---
 # <a name="how-autosave-impacts-office-solutions"></a>自動儲存如何影響 Office 方案
 

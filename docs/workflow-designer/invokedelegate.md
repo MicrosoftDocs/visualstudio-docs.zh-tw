@@ -3,7 +3,6 @@ title: 工作流程設計工具-InvokeDelegate
 ms.date: 11/04/2016
 ms.topic: reference
 ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 f1_keywords:
 - InvokeDelegate Designer
 - System.Activities.Statements.InvokeDelegate.UI
@@ -13,12 +12,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 1e1f91b88d686f3e9a6ddee9573824eb4191e2bf
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: fd490d15d5dc1760222446a1ae507d0e764c73f4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49927927"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53870530"
 ---
 # <a name="invokedelegate"></a>InvokeDelegate
 
@@ -44,4 +43,4 @@ ms.locfileid: "49927927"
 
 ## <a name="see-also"></a>另請參閱
 
-- [如何：定義並取用工作流程設計工具中的活動委派](../workflow-designer/how-to-define-and-consume-activity-delegates-in-the-workflow-designer.md)
+- [如何：定義和使用工作流程設計工具中的活動委派](../workflow-designer/how-to-define-and-consume-activity-delegates-in-the-workflow-designer.md)

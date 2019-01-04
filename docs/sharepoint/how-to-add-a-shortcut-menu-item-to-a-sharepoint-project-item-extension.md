@@ -1,9 +1,6 @@
 ---
-title: 如何： 將捷徑功能表項目新增至 SharePoint 專案項目擴充功能 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：將捷徑功能表項目新增至 SharePoint 專案項目擴充功能 |Microsoft Docs
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,17 +14,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1a3e92d3131fb52342eb2d5ee10abd13a9dd005e
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 82f1d7e73683fe60052093d1c5434e1298d73261
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36756041"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53886678"
 ---
-# <a name="how-to-add-a-shortcut-menu-item-to-a-sharepoint-project-item-extension"></a>如何： 將捷徑功能表項目新增至 SharePoint 專案項目擴充功能
+# <a name="how-to-add-a-shortcut-menu-item-to-a-sharepoint-project-item-extension"></a>HOW TO：將捷徑功能表項目新增至 SharePoint 專案項目擴充功能
   您可以透過專案項目擴充功能，將快顯功能表項目新增至現有的 SharePoint 專案項目中。 使用者以滑鼠右鍵按一下專案項目中的時，會出現的功能表項目**方案總管 中**。  
   
- 下列步驟假設您已建立的專案項目延伸模組。 如需詳細資訊，請參閱 <<c0> [ 如何： 建立 SharePoint 專案項目擴充功能](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md)。  
+ 下列步驟假設您已建立的專案項目延伸模組。 如需詳細資訊，請參閱[＜How to：建立 SharePoint 專案項目擴充功能](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md)。  
   
 ### <a name="to-add-a-shortcut-menu-item-in-a-project-item-extension"></a>若要加入專案項目擴充功能中的捷徑功能表項目  
   
@@ -56,8 +53,7 @@ ms.locfileid: "36756041"
  若要部署的延伸模組，建立[!include[vsprvs](../sharepoint/includes/vsprvs-md.md)]擴充功能 (VSIX) 封裝組件和任何其他您想要將副檔名的檔案。 如需詳細資訊，請參閱 <<c0> [ 部署適用於 Visual Studio 中 SharePoint 工具擴充功能](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)。  
   
 ## <a name="see-also"></a>另請參閱
- [如何： 建立 SharePoint 專案項目擴充功能](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md)   
- [如何： 將屬性加入至 SharePoint 專案項目擴充功能](../sharepoint/how-to-add-a-property-to-a-sharepoint-project-item-extension.md)   
+ [如何：建立 SharePoint 專案項目擴充功能](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md)   
+ [如何：將屬性加入至 SharePoint 專案項目擴充功能](../sharepoint/how-to-add-a-property-to-a-sharepoint-project-item-extension.md)   
  [擴充 SharePoint 專案項目](../sharepoint/extending-sharepoint-project-items.md)   
- [逐步解說： 擴充 SharePoint 專案項目類型](../sharepoint/walkthrough-extending-a-sharepoint-project-item-type.md)  
-  
+ [逐步解說：擴充 SharePoint 專案項目類型](../sharepoint/walkthrough-extending-a-sharepoint-project-item-type.md)  

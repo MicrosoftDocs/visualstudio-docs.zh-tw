@@ -1,9 +1,6 @@
 ---
 title: IDebugArrayObject::GetElement |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugArrayObject::GetElement
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: cff3d3894ae23e7751ac7e7ccd7e62a7cb4d5374
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 54ebe6e0400ba35c50f67a6fb2574df12dce276b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49866099"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53821882"
 ---
 # <a name="idebugarrayobjectgetelement"></a>IDebugArrayObject::GetElement
 取得陣列的項目。  
@@ -28,7 +25,7 @@ ms.locfileid: "49866099"
 ## <a name="syntax"></a>語法  
   
 ```cpp  
-HRESULT GetElement(   
+HRESULT GetElement(   
    DWORD          dwIndex,  
    IDebugObject** ppElement  
 );  

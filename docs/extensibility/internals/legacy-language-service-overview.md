@@ -1,9 +1,6 @@
 ---
-title: 舊版語言服務概觀 |Microsoft 文件
-ms.custom: ''
+title: 舊版語言服務概觀 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - language services [managed package framework], about language services
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e8641a3e009cb5a7b61d8334b6dcb2440d186f4f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 29d98bd0e474a503b84cb21a1bca25cb2836a433
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31131733"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53989580"
 ---
 # <a name="legacy-language-service-overview"></a>舊版語言服務概觀
 語言服務提供可讓您實作特定的編輯器支援[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]功能。 Managed Package Framework (MPF) 語言服務類別提供常用的功能和部分支援其他功能的完整支援。  
@@ -38,27 +35,27 @@ ms.locfileid: "31131733"
   
 -   自訂文件屬性  
   
--   IntelliSense 參數資訊  
+-   IntelliSense 的參數資訊  
   
 -   IntelliSense 快速諮詢  
   
--   IntelliSense 成員完成  
+-   IntelliSense 成員自動完成  
   
 -   IntelliSense 文字自動完成  
   
-## <a name="partially-supported-features-in-the-mpf"></a>MPF 部分支援的功能  
- MPF 提供下列功能僅部分支援。 這表示您必須實作 MPF 所呼叫的方法。  
+## <a name="partially-supported-features-in-the-mpf"></a>MPF 中部分支援的功能  
+ MPF 會提供下列功能的僅部分支援。 這表示您必須實作 MPF 所呼叫的方法。  
   
 -   重新格式化程式碼。 您提供實作重新格式化的程式碼。  
   
--   驗證識別有效的程式碼範圍的中斷點。 您提供識別程式碼範圍的程式碼。  
+-   藉由識別有效的程式碼中驗證中斷點跨越。 您提供識別的程式碼範圍的程式碼。  
   
--   支援偵錯工具**自動變數**顯示變數視窗。 您提供的程式碼，決定要顯示在視窗中。  
+-   支援偵錯工具**自動變數**用於顯示變數視窗。 您提供的程式碼，決定要顯示在視窗中。  
   
--   支援**導覽列**的快速瀏覽不同的型別和成員。 實作，並傳回填入的清單中的協助程式類別**導覽列**下拉式方塊。  
+-   支援**瀏覽列**型別和成員之間的快速導覽。 您實作，並傳回填入的清單中的協助程式類別**瀏覽列**下拉式方塊。  
   
 ## <a name="implementation"></a>實作  
- 您必須完成數個步驟來實作語言服務本身和您想要支援您的語言的語言服務功能。 下列主題討論這些步驟：  
+ 您必須完成數個步驟來實作語言服務本身和您想要針對您的語言支援的語言服務功能。 下列主題中討論這些步驟：  
   
 -   [實作舊版語言服務](../../extensibility/internals/implementing-a-legacy-language-service2.md)  
   
@@ -84,7 +81,7 @@ ms.locfileid: "31131733"
   
 -   [舊版語言服務中的成員完成](../../extensibility/internals/member-completion-in-a-legacy-language-service.md)  
   
--   [在舊版語言服務中的參數資訊](../../extensibility/internals/parameter-info-in-a-legacy-language-service2.md)  
+-   [舊版語言服務中的參數資訊](../../extensibility/internals/parameter-info-in-a-legacy-language-service2.md)  
   
 -   [舊版語言服務中的快速諮詢](../../extensibility/internals/quick-info-in-a-legacy-language-service.md)  
   

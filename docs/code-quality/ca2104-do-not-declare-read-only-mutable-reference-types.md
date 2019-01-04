@@ -1,8 +1,7 @@
 ---
-title: CA2104：不要宣告唯讀的可變動參考類型
+title: CA2104:不要宣告唯讀的可變動參考類型
 ms.date: 11/01/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - DoNotDeclareReadOnlyMutableReferenceTypes
@@ -20,14 +19,14 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 13f1c4f19349d94cb7dedfd22a82dc86b6f33b5b
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: 3dd84a9830f5c717595f9a2b0f25ac652e931b69
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50967076"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53844206"
 ---
-# <a name="ca2104-do-not-declare-read-only-mutable-reference-types"></a>CA2104：不要宣告唯讀的可變動參考類型
+# <a name="ca2104-do-not-declare-read-only-mutable-reference-types"></a>CA2104:不要宣告唯讀的可變動參考類型
 
 |||
 |-|-|
@@ -51,7 +50,7 @@ ms.locfileid: "50967076"
 
 此規則可能會不小心顯示類型的違規，事實上是，不可變。 在此情況下，它可安全地隱藏警告。
 
-唯讀陣列欄位免套用此規則，但改為導致違反[CA2105： 陣列欄位不應該為唯讀](../code-quality/ca2105-array-fields-should-not-be-read-only.md)規則。
+唯讀陣列欄位免套用此規則，但改為導致違反[CA2105:陣列欄位不應該為唯讀](../code-quality/ca2105-array-fields-should-not-be-read-only.md)規則。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
 

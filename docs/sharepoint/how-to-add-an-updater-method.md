@@ -1,13 +1,8 @@
 ---
-title: 如何： 加入更新者方法 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：新增更新者方法 |Microsoft Docs
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -22,14 +17,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a4d50180173673b4999c18b8980c682d79637bd3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8a68ed8809b30444829dc09bb5c1fcb2386c4a92
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49951414"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53872514"
 ---
-# <a name="how-to-add-an-updater-method"></a>如何： 加入更新者方法
+# <a name="how-to-add-an-updater-method"></a>HOW TO：新增更新者方法
   您可以讓使用者藉由更新 SharePoint 外部清單中的商務資料*Updater*方法。 如需詳細資訊，請參閱 <<c0> [ 設計 business data connectivity 模型](../sharepoint/designing-a-business-data-connectivity-model.md)。  
   
 ### <a name="to-create-an-updater-method"></a>若要建立 Updater 方法  
@@ -48,7 +43,7 @@ ms.locfileid: "49951414"
   
    - 方法的輸入的參數。  
   
-   - 參數型別描述項。 根據預設，Visual Studio 會使用您所定義的實體型別描述元的搜尋工具方法 (例如： 連絡人)。  
+   - 參數型別描述項。 根據預設，Visual Studio 會使用您所定義的實體型別描述元的搜尋工具方法 (例如：請連絡）。  
   
    - 方法執行個體方法。  
   
@@ -71,13 +66,11 @@ ms.locfileid: "49951414"
   
 ## <a name="see-also"></a>另請參閱
  [設計商務資料連接模型](../sharepoint/designing-a-business-data-connectivity-model.md)   
- [如何： 新增搜尋方法](../sharepoint/how-to-add-a-finder-method.md)   
- [如何： 加入特定搜尋方法](../sharepoint/how-to-add-a-specific-finder-method.md)   
- [如何： 新增建立者方法](../sharepoint/how-to-add-a-creator-method.md)   
- [如何： 加入更新者方法](../sharepoint/how-to-add-an-updater-method.md)   
- [如何： 加入刪除者方法](../sharepoint/how-to-add-a-deleter-method.md)   
+ [如何：新增搜尋方法](../sharepoint/how-to-add-a-finder-method.md)   
+ [如何：新增特定搜尋方法](../sharepoint/how-to-add-a-specific-finder-method.md)   
+ [如何：新增建立者方法](../sharepoint/how-to-add-a-creator-method.md)   
+ [如何：新增更新者方法](../sharepoint/how-to-add-an-updater-method.md)   
+ [如何：新增刪除者方法](../sharepoint/how-to-add-a-deleter-method.md)   
  [BDC 模型設計工具概觀](../sharepoint/bdc-model-design-tools-overview.md)   
- [如何： 將參數加入至方法](../sharepoint/how-to-add-a-parameter-to-a-method.md)   
- [如何： 定義方法執行個體](../sharepoint/how-to-define-a-method-instance.md)  
-  
- 
+ [如何：新增參數至方法](../sharepoint/how-to-add-a-parameter-to-a-method.md)   
+ [如何：定義方法執行個體](../sharepoint/how-to-define-a-method-instance.md)  

@@ -1,9 +1,6 @@
 ---
-title: 如何： 安裝原始檔控制外掛程式 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：安裝原始檔控制外掛程式 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - installation [Visual Studio SDK], source control plug-ins
@@ -14,14 +11,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3487c796661a8194b9c920f43bae9df87f1ba57d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b1e7e60819b9ac10308be26a1f3ea3243cc71c34
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49950260"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53990499"
 ---
-# <a name="how-to-install-a-source-control-plug-in"></a>如何： 安裝原始檔控制外掛程式
+# <a name="how-to-install-a-source-control-plug-in"></a>HOW TO：安裝原始檔控制外掛程式
 建立原始檔控制外掛程式包含三個步驟：  
 
 1. 使用這份文件原始檔控制外掛程式 API 參考 > 一節中所定義的函式中建立 DLL。  

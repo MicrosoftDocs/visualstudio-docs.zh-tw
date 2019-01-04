@@ -1,9 +1,6 @@
 ---
 title: 按鈕項目 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - Buttons element (VSCT XML schema)
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f6ce3deedd14707943a93387dcec0a73b8471339
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6ba0bb8b36996e48830e6a79f2101197fd3c4fc3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49904890"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53896353"
 ---
 # <a name="buttons-element"></a>Buttons 元素
 群組[ 按鈕](../extensibility/button-element.md)項目，表示個別的命令。  
@@ -59,7 +56,7 @@ ms.locfileid: "49904890"
   
 ```  
 <Buttons>  
-  <Button guid="guidMenuAndCommandsCmdSet" id="cmdidMyCommand"     priority="0x100" type="Button">  
+  <Button guid="guidMenuAndCommandsCmdSet" id="cmdidMyCommand"     priority="0x100" type="Button">  
     <Parent guid="guidMenuAndCommandsCmdSet" id="MyMenuGroup"/>  
     <Icon guid="guidGenericCmdBmp" id="bmpArrow"/>  
     <Strings>  

@@ -1,9 +1,6 @@
 ---
 title: 編輯器匯入 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - services
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8ede17217dbac62bcc0086e6f4e5afca0cf9e0a0
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: cffc59c0bcaed2797b5f2548a47c067d04da56ba
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637209"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53893927"
 ---
 # <a name="editor-imports"></a>編輯器匯入
 您可以匯入幾個的編輯器服務、 處理站和代理程式，為您的擴充功能提供核心編輯器的不同類型的存取。 例如，您可以匯入<xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService>提供您<xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigator>指定的內容類型。 （這個巡覽可讓您執行不同種類的搜尋文字的緩衝區上）。  
@@ -45,19 +42,19 @@ internal IEditorOptionsFactoryService m_editorOptions = null;
   
  如需使用 匯入的範例，請參閱下列逐步解說：  
   
- [逐步解說： 建立邊界字符](../extensibility/walkthrough-creating-a-margin-glyph.md)  
+ [逐步解說：建立邊界字符](../extensibility/walkthrough-creating-a-margin-glyph.md)  
   
- [逐步解說： 自訂文字檢視](../extensibility/walkthrough-customizing-the-text-view.md)  
+ [逐步解說：自訂文字檢視](../extensibility/walkthrough-customizing-the-text-view.md)  
   
- [逐步解說： 反白顯示文字](../extensibility/walkthrough-highlighting-text.md)  
+ [逐步解說：反白顯示文字](../extensibility/walkthrough-highlighting-text.md)  
   
- [逐步解說︰ 顯示 QuickInfo 工具提示](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)  
+ [逐步解說：顯示 QuickInfo 工具提示](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)  
   
- [逐步解說： 顯示簽章說明](../extensibility/walkthrough-displaying-signature-help.md)  
+ [逐步解說：顯示簽章說明](../extensibility/walkthrough-displaying-signature-help.md)  
   
  [逐步解說：顯示陳述式完成](../extensibility/walkthrough-displaying-statement-completion.md)  
   
- [逐步解說： 顯示燈泡建議](../extensibility/walkthrough-displaying-light-bulb-suggestions.md)  
+ [逐步解說：顯示燈泡建議](../extensibility/walkthrough-displaying-light-bulb-suggestions.md)  
   
 ## <a name="import-the-service-provider"></a>匯入服務提供者  
  您也可以匯入<xref:Microsoft.VisualStudio.Shell.SVsServiceProvider>（Microsoft.VisualStudio.Shell.Immutable.10.0 的組件中找到） 相同的方式，以取得 Visual Studio 服務的存取權：  
@@ -67,7 +64,7 @@ internal IEditorOptionsFactoryService m_editorOptions = null;
 internal SVsServiceProvider ServiceProvider = null;   
 ```  
   
- 請參閱[逐步解說： 從編輯器擴充功能存取 DTE 物件](../extensibility/walkthrough-accessing-the-dte-object-from-an-editor-extension.md)如需詳細資訊。  
+ 請參閱[逐步解說：從編輯器擴充功能存取 DTE 物件](../extensibility/walkthrough-accessing-the-dte-object-from-an-editor-extension.md)如需詳細資訊。  
   
 ## <a name="services"></a>服務  
  編輯器服務是提供服務和多個元件之間共用的通常單一實體。  

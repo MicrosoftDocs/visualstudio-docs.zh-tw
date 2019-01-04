@@ -1,9 +1,6 @@
 ---
 title: IDebugProgramNode2::DetachDebugger_V7 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugProgramNode2::DetachDebugger
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 20981c744408e8d25e6e851c39532db939c71b2b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 603c459d39f8141789b22955e916e3e8520214fb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49939953"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53924146"
 ---
 # <a name="idebugprogramnode2detachdebuggerv7"></a>IDebugProgramNode2::DetachDebugger_V7
 
@@ -31,7 +28,7 @@ ms.locfileid: "49939953"
 
 ```cpp
 HRESULT DetachDebugger_V7 (
-   void 
+   void 
 );
 ```
 

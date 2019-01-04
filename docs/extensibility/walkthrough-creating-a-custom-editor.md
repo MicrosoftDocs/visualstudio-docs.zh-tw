@@ -1,9 +1,6 @@
 ---
-title: 逐步解說： 建立自訂編輯器 |Microsoft Docs
-ms.custom: ''
+title: 逐步解說：建立自訂編輯器 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], custom - create
@@ -13,14 +10,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f9110e1c2ac6c39898f7dbbd6f9f4412ebcba278
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 8656f14f3a6c9cd52b73ac0fdd3573d008c7aa0e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39497433"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53847149"
 ---
-# <a name="walkthrough-create-a-custom-editor"></a>逐步解說： 建立自訂編輯器
+# <a name="walkthrough-create-a-custom-editor"></a>逐步解說：建立自訂編輯器
 VSPackage 專案範本可以在 c + + 建立簡單的自訂編輯器。 VSPackage 專案範本不再支援 C# 或 Visual Basic 專案。 如需詳細資訊，請參閱 < [Visual Studio SDK](../extensibility/visual-studio-sdk.md)。  
   
 ## <a name="prerequisites"></a>必要條件  

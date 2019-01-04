@@ -1,9 +1,6 @@
 ---
 title: HOW TO：在受密碼保護的文件中的快取資料
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,12 +14,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 21e2b0501b96a1c04cee72487678b3e909440fb4
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: c47f76c2371737b10c5eb58566cef388aff5fcd7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53647287"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53968413"
 ---
 # <a name="how-to-cache-data-in-a-password-protected-document"></a>HOW TO：在受密碼保護的文件中的快取資料
   如果您將資料加入文件或密碼保護的活頁簿中的資料快取時，會不會自動儲存變更快取的資料。 您可以藉由覆寫專案中的兩個方法，來快取的資料儲存變更。  
@@ -80,5 +77,3 @@ ms.locfileid: "53647287"
  [快取資料](../vsto/caching-data.md)   
  [如何：離線或在伺服器上快取資料以供使用](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md)   
  [如何：以程式設計方式快取 Office 文件中的資料來源](../vsto/how-to-programmatically-cache-a-data-source-in-an-office-document.md)  
-  
-  

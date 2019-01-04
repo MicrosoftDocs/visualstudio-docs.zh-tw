@@ -1,9 +1,6 @@
 ---
 title: IDebugObject2::IsEncOutdated |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugObject2::IsEncOutdated
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e6ec1e09628b2bd1da23bda6baaa1fa157dfbf08
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a7f8344896c0ad262a8db09cb4caa0e00414431b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49928096"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53838881"
 ---
 # <a name="idebugobject2isencoutdated"></a>IDebugObject2::IsEncOutdated
 這個方法會決定 編輯後繼續狀態，這個物件或父容器是否已過期。 自訂運算式評估工具不會實作這個方法，一律會傳回`E_NOTIMPL`。  
@@ -28,14 +25,14 @@ ms.locfileid: "49928096"
 ## <a name="syntax"></a>語法  
   
 ```cpp  
-HRESULT IsEncOutdated(  
-   BOOL* pfEncOutdated  
+HRESULT IsEncOutdated(  
+   BOOL* pfEncOutdated  
 );  
 ```  
   
 ```csharp  
-int IsEncOutdated(  
-   out int pfEncOutdated  
+int IsEncOutdated(  
+   out int pfEncOutdated  
 );  
 ```  
   

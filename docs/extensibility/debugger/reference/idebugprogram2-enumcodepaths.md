@@ -1,9 +1,6 @@
 ---
 title: IDebugProgram2::EnumCodePaths |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugProgram2::EnumCodePaths
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f9ccfd7ceeaf63ca385c9c4b1e6ac4d734ade0f7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e0aef8d28fcbe0a416d70d9ddbac0157f246e83c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49912860"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53884746"
 ---
 # <a name="idebugprogram2enumcodepaths"></a>IDebugProgram2::EnumCodePaths
 擷取一份原始程式檔中的指定位置的程式碼路徑。  
@@ -28,7 +25,7 @@ ms.locfileid: "49912860"
 ## <a name="syntax"></a>語法  
   
 ```cpp  
-HRESULT EnumCodePaths(   
+HRESULT EnumCodePaths(   
    LPCOLESTR            pszHint,  
    IDebugCodeContext2*  pStart,  
    IDebugStackFrame2*   pFrame,  
@@ -39,7 +36,7 @@ HRESULT EnumCodePaths(
 ```  
   
 ```csharp  
-int EnumCodePaths(   
+int EnumCodePaths(   
    string                 pszHint,  
    IDebugCodeContext2     pStart,  
    IDebugStackFrame2      pFrame,  

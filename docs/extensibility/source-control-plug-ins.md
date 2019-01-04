@@ -1,9 +1,6 @@
 ---
 title: 原始檔控制外掛程式 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, reference
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4be7a1d0739b6a0c8431d588b05de58a296b809c
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: f45ffeb57db79edd6305c3195a87012dc7de26b7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46495696"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53923636"
 ---
 # <a name="source-control-plug-ins"></a>原始檔控制外掛程式
 原始檔控制外掛程式 SDK 參考章節包含可讓與整合的原始檔控制系統的完整介面規格[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。 語法和語意的原始檔控制外掛程式必須實作介面以各種函式和資料類型，它會指定[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]整合式的開發環境 (IDE)。  
@@ -57,7 +54,7 @@ ms.locfileid: "46495696"
  [字彙](../extensibility/source-control-plug-in-glossary.md)  
  提供很有幫助的詞彙和定義其讀取的原始檔控制外掛程式 SDK 文件。  
   
- [如何︰關閉原始檔控制外掛程式的相容性警告](../extensibility/how-to-turn-off-compatibility-warnings-for-source-control-plug-ins.md)  
+ [如何：關閉原始檔控制外掛程式的相容性警告](../extensibility/how-to-turn-off-compatibility-warnings-for-source-control-plug-ins.md)  
  描述如何停用警告。  
   
 ## <a name="related-sections"></a>相關章節  

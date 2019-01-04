@@ -1,9 +1,6 @@
 ---
 title: IDebugCoreServer2::GetMachineInfo |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugCoreServer2::GetInfo
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0c7a824a3ffe319d0134b59db95afe8296ef7575
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9fce36740558c5aca064d82d9819192b5b82efad
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49926900"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53949228"
 ---
 # <a name="idebugcoreserver2getmachineinfo"></a>IDebugCoreServer2::GetMachineInfo
 擷取的機器執行的核心伺服器的描述。  
@@ -28,16 +25,16 @@ ms.locfileid: "49926900"
 ## <a name="syntax"></a>語法  
   
 ```cpp  
-HRESULT GetMachineInfo(   
-   MACHINE_INFO_FIELDS Fields,  
-   MACHINE_INFO*       pMachineInfo  
+HRESULT GetMachineInfo(   
+   MACHINE_INFO_FIELDS Fields,  
+   MACHINE_INFO*       pMachineInfo  
 );  
 ```  
   
 ```csharp  
-int GetMachineInfo(   
-   enum_ MACHINE_INFO_FIELDS  Fields,  
-   MACHINE_INFO[]             pMachineInfo  
+int GetMachineInfo(   
+   enum_ MACHINE_INFO_FIELDS  Fields,  
+   MACHINE_INFO[]             pMachineInfo  
 );  
 ```  
   

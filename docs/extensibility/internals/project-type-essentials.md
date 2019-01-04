@@ -1,9 +1,6 @@
 ---
 title: 專案類型的基本資訊 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - project types [Visual Studio SDK]
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b7daf114bb31019a499bc17e287df923107ee1a1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 630557cbc4bd9720337bf8e5f2988ffcf3d7c6eb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49891566"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53952773"
 ---
 # <a name="project-type-essentials"></a>專案類型的基本資訊
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 包含語言的數種專案類型，例如[!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]或[!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 也可讓您建立您自己的專案類型。  
@@ -55,7 +52,7 @@ ms.locfileid: "49891566"
   
 - 專案類型是在 VSPackage 中實作的介面集合的物件[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]預期。 如果您使用 C# 來開發專案類型，Managed Package Framework 專案類別會為您實作必要的介面，並可讓您繼承該實作。 如需詳細資訊，請參閱 <<c0> [ 使用 Managed Package Framework 實作專案類型 (C#)](../../extensibility/internals/using-the-managed-package-framework-to-implement-a-project-type-csharp.md)。  
   
-- 適用於 c + + 開發人員，HierUtil 文件庫中的類別會以類似的方式運作。 如需詳細資訊，請參閱 <<c0> [ 不在組建中： 使用 HierUtil7 專案類別以實作專案類型 （c + +）](https://msdn.microsoft.com/library/a5c16a09-94a2-46ef-87b5-35b815e2f346)。  
+- 適用於 c + + 開發人員，HierUtil 文件庫中的類別會以類似的方式運作。 如需詳細資訊，請參閱[不在組建中：使用 HierUtil7 專案類別來實作專案類型 （c + +）](https://msdn.microsoft.com/library/a5c16a09-94a2-46ef-87b5-35b815e2f346)。  
   
 - 專案類型可支援典型的原始檔建置為.exe 或.dll 的組件的程式碼檔案以外的資料。 例如，[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]資料庫專案包含指令碼，並查詢儲存在磁碟上的檔案的參考，並將命令加入至**方案總管 中**執行指令碼和查詢資料庫，但專案不支援建置行為。 如需詳細資訊，請參閱 <<c0> [ 開啟和儲存專案項目](../../extensibility/internals/opening-and-saving-project-items.md)。  
   

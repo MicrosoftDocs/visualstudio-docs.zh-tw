@@ -1,9 +1,6 @@
 ---
 title: 消除 ~ SAK 檔案 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - temporary files
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9d840ea26757ca56ee58b5ac4941f7f3c1065562
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 37d2d8fbbd98e75b398caec9e4c2f36a5853ba4a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39497946"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53862810"
 ---
 # <a name="elimination-of-sak-files"></a>消除 ~ SAK 檔案
 在 原始檔控制外掛程式 API 1.2 *~ SAK*功能旗標已取代檔案和新函式來偵測是否原始檔控制外掛程式支援*MSSCCPRJ*檔案和共用簽出。  

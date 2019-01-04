@@ -1,9 +1,6 @@
 ---
 title: REFERENCE_COMPARE |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - REFERENCE_COMPARE
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b7765255583b7160c1cdd19b11889f5de1b35594
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e8bec2d34abd463ef196b957c1d19f38954bd998
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49926653"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53944969"
 ---
 # <a name="referencecompare"></a>REFERENCE_COMPARE
 指定參考的比較類型。  
@@ -28,7 +25,7 @@ ms.locfileid: "49926653"
 ## <a name="syntax"></a>語法  
   
 ```cpp  
-enum enum_REFERENCE_COMPARE {   
+enum enum_REFERENCE_COMPARE {   
    REF_COMPARE_EQUAL        = 0x0001,  
    REF_COMPARE_LESS_THAN    = 0x0002,  
    REF_COMPARE_GREATER_THAN = 0x0003  
@@ -37,7 +34,7 @@ typedef DWORD REFERENCE_COMPARE;
 ```  
   
 ```csharp  
-public enum enum_REFERENCE_COMPARE {   
+public enum enum_REFERENCE_COMPARE {   
    REF_COMPARE_EQUAL        = 0x0001,  
    REF_COMPARE_LESS_THAN    = 0x0002,  
    REF_COMPARE_GREATER_THAN = 0x0003  
@@ -60,9 +57,9 @@ public enum enum_REFERENCE_COMPARE {
 ## <a name="requirements"></a>需求  
  標頭： msdbg.h  
   
- 命名空間： Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間:Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
  [列舉型別](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   

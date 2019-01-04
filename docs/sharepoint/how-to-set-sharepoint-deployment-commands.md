@@ -1,13 +1,8 @@
 ---
-title: 如何： 設定 SharePoint 部署命令 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：設定 SharePoint 部署命令 |Microsoft Docs
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -17,14 +12,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 060acd0164ff7819d2abfb8d92f2394b4bcc0672
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 98aedc0c7fa557a45b43ab8344a49587b8febec1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118807"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53920361"
 ---
-# <a name="how-to-set-sharepoint-deployment-commands"></a>如何： 設定 SharePoint 部署命令
+# <a name="how-to-set-sharepoint-deployment-commands"></a>HOW TO：設定 SharePoint 部署命令
   您可以自訂部署程序，藉由設定預先部署和部署後命令。 當您偵錯 SharePoint 方案，從 Visual Studio 時，這些命令會執行之前和之後的其他部署動作。  
   
 ### <a name="to-add-a-pre-deployment-command"></a>若要將預先部署命令  
@@ -49,4 +44,3 @@ ms.locfileid: "37118807"
   
 ## <a name="see-also"></a>另請參閱
  [封裝和部署 SharePoint 方案](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
-  

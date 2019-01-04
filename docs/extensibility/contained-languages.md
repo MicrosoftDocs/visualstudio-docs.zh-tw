@@ -1,8 +1,6 @@
 ---
 title: 包含語言 |Microsoft Docs
 ms.date: 03/22/2018
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - contained languages
@@ -12,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9edaed1eef81d493bdd29311893caef93447e6f7
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: ce2079ce16ac339ae536430d02d546ea39ffae0a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39231740"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53873998"
 ---
 # <a name="contained-languages"></a>包含的語言
 

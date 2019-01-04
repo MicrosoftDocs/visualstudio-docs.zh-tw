@@ -1,9 +1,6 @@
 ---
 title: 原始檔控制整合的基本資訊 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - Source Control Integration, essentials
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4533cac0ba6cbbcf5cf4354afdb29eefc5b2b726
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f73ac76c8b6b8cf96e447d072b7d8b73611bb6e1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49879164"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53828364"
 ---
 # <a name="source-control-integration-essentials"></a>原始檔控制整合的基本資訊
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 支援兩種類型的原始檔控制整合： 原始檔控制外掛程式提供基本功能，使用原始檔控制外掛程式 API （前身為 MSSCCI API） 和 VSPackage 型原始檔控制整合解決方案建置，提供更強大的功能。  
@@ -32,7 +29,7 @@ ms.locfileid: "49879164"
   
 1. 建立一個實作中指定的函式的 DLL[原始檔控制外掛程式](../../extensibility/source-control-plug-ins.md)。  
   
-2. 將 DLL 註冊藉由適當的登錄項目，如中所述[如何： 安裝原始檔控制外掛程式](../../extensibility/internals/how-to-install-a-source-control-plug-in.md)。  
+2. 中所述，藉由適當的登錄項目中，登錄 DLL [How to:安裝原始檔控制外掛程式](../../extensibility/internals/how-to-install-a-source-control-plug-in.md)。  
   
 3. 建立協助程式 UI，並顯示原始檔控制配接器套件出現提示時 ([!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]會處理透過原始檔控制外掛程式的原始檔控制功能的元件)。  
   

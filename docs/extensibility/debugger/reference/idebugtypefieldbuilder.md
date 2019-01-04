@@ -1,9 +1,6 @@
 ---
-title: IDebugTypeFieldBuilder |Microsoft 文件
-ms.custom: ''
+title: IDebugTypeFieldBuilder |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - IDebugTypeFieldBuilder interface
@@ -13,15 +10,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f3c14959e0b14b74b31732a7d8611c0ae2d2c699
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 90ed594ff8b6c8f3811b61fe68b2d2ab16a9a017
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31121787"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53962071"
 ---
 # <a name="idebugtypefieldbuilder"></a>IDebugTypeFieldBuilder
-表示能夠建立代表類型的欄位。  
+表示建立的欄位，表示類型的能力。  
   
 ## <a name="syntax"></a>語法  
   
@@ -41,8 +38,8 @@ IDebugTypeFieldBuilder : IUnknown
 |[CreatePointerToType](../../../extensibility/debugger/reference/idebugtypefieldbuilder-createpointertotype.md)|建立指定類型的指標。|  
   
 ## <a name="requirements"></a>需求  
- 標頭： Sh.h  
+ 標頭：Sh.h  
   
- 命名空間： Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間:Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
+ 組件︰Microsoft.VisualStudio.Debugger.Interop.dll

@@ -1,9 +1,6 @@
 ---
 title: IDebugMessageEvent2::GetMessage |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugMessageEvent2::GetMessage
@@ -16,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 74a89fafd8d163bfb03be8d29f58eb036be68f82
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d3acce7d8ee50983f24430dca8e1974732b79ad6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49838565"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53945674"
 ---
 # <a name="idebugmessageevent2getmessage"></a>IDebugMessageEvent2::GetMessage
 取得要顯示的訊息。  
@@ -29,7 +26,7 @@ ms.locfileid: "49838565"
 ## <a name="syntax"></a>語法  
   
 ```cpp  
-HRESULT GetMessage(   
+HRESULT GetMessage(   
    MESSAGETYPE* pMessageType,  
    BSTR*        pbstrMessage,  
    DWORD*       pdwType,  
@@ -39,7 +36,7 @@ HRESULT GetMessage(
 ```  
   
 ```csharp  
-int GetMessage(   
+int GetMessage(   
    out enum_MESSAGETYPE pMessageType,  
    out string           pbstrMessage,  
    out uint             pdwType,  

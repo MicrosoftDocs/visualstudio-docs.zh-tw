@@ -1,9 +1,6 @@
 ---
 title: IDebugDisassemblyStream2::GetCurrentLocation |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugDisassemblyStream2::GetCurrentLocation
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5888acf00ee611ac219ef66af4faf0e5ffc464ac
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8aae59c142cdcfd9da984832af8def98edcceda3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942357"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53854434"
 ---
 # <a name="idebugdisassemblystream2getcurrentlocation"></a>IDebugDisassemblyStream2::GetCurrentLocation
 傳回代表目前的程式碼位置的程式碼位置識別碼。  
@@ -28,13 +25,13 @@ ms.locfileid: "49942357"
 ## <a name="syntax"></a>語法  
   
 ```cpp  
-HRESULT GetCurrentLocation(   
+HRESULT GetCurrentLocation(   
    UINT64* puCodeLocationId  
 );  
 ```  
   
 ```csharp  
-int GetCurrentLocation(   
+int GetCurrentLocation(   
    out ulong puCodeLocationId  
 );  
 ```  

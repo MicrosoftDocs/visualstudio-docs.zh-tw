@@ -1,16 +1,11 @@
 ---
 title: 當地語系化 SharePoint 方案 |Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.Project.GlobalAndFeatureResource
 - VS.SharePoint.Project.AddResourceDialog
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -22,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3897efa937991b598f6aae1cf24781ab2ce26c37
-ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
+ms.openlocfilehash: b653efc0cce8d8fb2b3e28b8e6c61e6371b4f6e9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53684739"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53837352"
 ---
 # <a name="localize-sharepoint-solutions"></a>當地語系化 SharePoint 方案
 

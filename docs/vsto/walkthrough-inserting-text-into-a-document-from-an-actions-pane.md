@@ -1,9 +1,6 @@
 ---
-title: 逐步解說： 從 [動作] 窗格中的文件中插入文字
-ms.custom: ''
+title: 逐步解說：從 [動作] 窗格中的文件中插入文字
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,14 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b3b9683c5f41b81d529ad6f3347b54131f32f011
-ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
+ms.openlocfilehash: 4e868f8639aa8803e1ba9631bf46929bc917be3f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "51948721"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53943086"
 ---
-# <a name="walkthrough-insert-text-into-a-document-from-an-actions-pane"></a>逐步解說： 從 [動作] 窗格中的文件中插入文字
+# <a name="walkthrough-insert-text-into-a-document-from-an-actions-pane"></a>逐步解說：從 [動作] 窗格中的文件中插入文字
   本逐步解說示範如何建立 Microsoft Office Word 文件中的 [動作] 窗格。 [動作] 窗格包含兩個控制項收集輸入，然後將文字傳送到文件。  
   
  [!INCLUDE[appliesto_wdalldoc](../vsto/includes/appliesto-wdalldoc-md.md)]  
@@ -51,7 +48,7 @@ ms.locfileid: "51948721"
   
 ### <a name="to-create-a-new-project"></a>建立新的專案  
   
-1.  建立 Word 文件專案名稱**My 基本的 [動作] 窗格**。 在精靈中，選取**建立新的文件**。 如需詳細資訊，請參閱 <<c0> [ 如何： 在 Visual Studio 中的建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
+1.  建立 Word 文件專案名稱**My 基本的 [動作] 窗格**。 在精靈中，選取**建立新的文件**。 如需詳細資訊，請參閱[＜How to：在 Visual Studio 中建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
   
      Visual Studio 設計工具中開啟新的 Word 文件，並將**My 基本的 動作 窗格**專案加入**方案總管 中**。  
   
@@ -66,7 +63,7 @@ ms.locfileid: "51948721"
   
     **名稱**  
   
-    **地址**  
+    **位址**  
   
     **這是基本的動作 窗格，在 Word 中的範例。**  
   
@@ -145,7 +142,7 @@ ms.locfileid: "51948721"
      [!code-csharp[Trin_VstcoreActionsPaneWord#8](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/InsertTextControl.cs#8)]
      [!code-vb[Trin_VstcoreActionsPaneWord#8](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/InsertTextControl.vb#8)]  
   
-2.  在 C# 中，您必須加入用於按鈕 click 事件處理常式。 您可以將此程式碼中的放`InsertTextControl`建構函式呼叫之後`InitializeComponent`。 如需建立事件處理常式的資訊，請參閱[如何： 建立 Office 專案中的事件處理常式](../vsto/how-to-create-event-handlers-in-office-projects.md)。  
+2.  在 C# 中，您必須加入用於按鈕 click 事件處理常式。 您可以將此程式碼中的放`InsertTextControl`建構函式呼叫之後`InitializeComponent`。 如需建立事件處理常式的資訊，請參閱[How to:建立 Office 專案中的事件處理常式](../vsto/how-to-create-event-handlers-in-office-projects.md)。  
   
      [!code-csharp[Trin_VstcoreActionsPaneWord#9](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/InsertTextControl.cs#9)]  
   
@@ -178,15 +175,13 @@ ms.locfileid: "51948721"
 ## <a name="next-steps"></a>後續步驟  
  接著可以執行下列一些工作：  
   
--   在 Excel 中建立執行窗格。 如需詳細資訊，請參閱 <<c0> [ 如何： 執行窗格加入 Excel 活頁簿](/previous-versions/visualstudio/visual-studio-2010/e3zbk0hz(v=vs.100))。  
+-   在 Excel 中建立執行窗格。 如需詳細資訊，請參閱[＜How to：執行窗格加入 Excel 活頁簿](/previous-versions/visualstudio/visual-studio-2010/e3zbk0hz(v=vs.100))。  
   
--   將資料繫結至執行窗格上的控制項。 如需詳細資訊，請參閱 <<c0> [ 逐步解說： 將資料繫結至 Word 執行窗格上的控制項](../vsto/walkthrough-binding-data-to-controls-on-a-word-actions-pane.md)。  
+-   將資料繫結至執行窗格上的控制項。 如需詳細資訊，請參閱[逐步解說：將資料繫結至 Word 執行窗格上的控制項](../vsto/walkthrough-binding-data-to-controls-on-a-word-actions-pane.md)。  
   
 ## <a name="see-also"></a>另請參閱  
  [執行窗格概觀](../vsto/actions-pane-overview.md)   
- [如何： 加入執行窗格加入 Word 文件或 Excel 活頁簿](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)   
- [如何： 執行窗格加入 Excel 活頁簿](/previous-versions/visualstudio/visual-studio-2010/e3zbk0hz(v=vs.100))   
- [如何： 管理執行窗格控制項配置](../vsto/how-to-manage-control-layout-on-actions-panes.md)   
+ [如何：執行窗格加入 Word 文件或 Excel 活頁簿](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)   
+ [如何：執行窗格加入 Excel 活頁簿](/previous-versions/visualstudio/visual-studio-2010/e3zbk0hz(v=vs.100))   
+ [如何：管理執行窗格控制項配置](../vsto/how-to-manage-control-layout-on-actions-panes.md)   
  [書籤控制項](../vsto/bookmark-control.md)  
-  
-  

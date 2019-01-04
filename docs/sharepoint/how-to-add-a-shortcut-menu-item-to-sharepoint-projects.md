@@ -1,9 +1,6 @@
 ---
-title: 如何： 將捷徑功能表項目新增至 SharePoint 專案 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：加入 SharePoint 專案的捷徑功能表項目 |Microsoft Docs
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,17 +14,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9a2fbc9d71684bc44e01a1d53f5d53f35c8d7311
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: ba38984b5c49dbf834286414e61734fe46069876
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36757568"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53964133"
 ---
-# <a name="how-to-add-a-shortcut-menu-item-to-sharepoint-projects"></a>如何： 將捷徑功能表項目新增至 SharePoint 專案
+# <a name="how-to-add-a-shortcut-menu-item-to-sharepoint-projects"></a>HOW TO：加入 SharePoint 專案的捷徑功能表項目
   您可以加入任何 SharePoint 專案的捷徑功能表項目。 當使用者以滑鼠右鍵按一下專案節點中的，會出現的功能表項目**方案總管 中**。  
   
- 下列步驟假設您已建立的專案擴充功能。 如需詳細資訊，請參閱 <<c0> [ 如何： 建立 SharePoint 專案擴充功能](../sharepoint/how-to-create-a-sharepoint-project-extension.md)。  
+ 下列步驟假設您已建立的專案擴充功能。 如需詳細資訊，請參閱[＜How to：建立 SharePoint 專案擴充功能](../sharepoint/how-to-create-a-sharepoint-project-extension.md)。  
   
 ### <a name="to-add-a-shortcut-menu-item-to-sharepoint-projects"></a>若要新增至 SharePoint 專案的捷徑功能表項目  
   
@@ -55,6 +52,5 @@ ms.locfileid: "36757568"
   
 ## <a name="see-also"></a>另請參閱
  [擴充 SharePoint 專案](../sharepoint/extending-sharepoint-projects.md)   
- [如何： 建立 SharePoint 專案擴充功能](../sharepoint/how-to-create-a-sharepoint-project-extension.md)   
- [如何： 將屬性加入至 SharePoint 專案](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md)  
-  
+ [如何：建立 SharePoint 專案擴充功能](../sharepoint/how-to-create-a-sharepoint-project-extension.md)   
+ [如何：將屬性加入至 SharePoint 專案](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md)  

@@ -1,9 +1,6 @@
 ---
 title: IDebugObject::SetReferenceValue |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugObject::SetReferenceValue
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1b597d7a62880e00a570a1971a6fec2becaaddca
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4e107408b27ffcbb057452030172a49d8027b422
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49908622"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53958406"
 ---
 # <a name="idebugobjectsetreferencevalue"></a>IDebugObject::SetReferenceValue
 設定參考值，這個物件。  
@@ -28,7 +25,7 @@ ms.locfileid: "49908622"
 ## <a name="syntax"></a>語法  
   
 ```cpp  
-HRESULT SetReferenceValue(   
+HRESULT SetReferenceValue(   
    IDebugObject* pObject  
 );  
 ```  

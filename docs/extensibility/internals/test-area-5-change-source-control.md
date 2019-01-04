@@ -1,9 +1,6 @@
 ---
-title: 測試區域 5︰ 變更原始檔控制 |Microsoft Docs
-ms.custom: ''
+title: 測試區域 5:變更原始檔控制 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK], changing
@@ -14,14 +11,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ed7093d50290c4c0612faf6c7691f90e62a08267
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 83928a2b28b32d7e1ee11475a7693f8f11483cad
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49847353"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53942628"
 ---
-# <a name="test-area-5-change-source-control"></a>測試區域 5︰變更原始檔控制
+# <a name="test-area-5-change-source-control"></a>測試區域 5:變更原始檔控制
 此原始檔控制外掛程式的測試區域涵蓋變更原始檔控制，透過**變更原始檔控制**命令。  
 
  **變更原始檔控制**命令為使用者提供四個基本的函式：  
@@ -36,7 +33,7 @@ ms.locfileid: "49847353"
 
 - **連接/中斷連線：**  
 
-  切換連線或離線狀態的受控制的解決方案，區域 3 中所含。 如需詳細資訊，請參閱 <<c0> [ 測試區域 3： 簽出 / 復原簽出](../../extensibility/internals/test-area-3-check-out-undo-checkout.md)。  
+  切換連線或離線狀態的受控制的解決方案，區域 3 中所含。 如需詳細資訊，請參閱[測試區域 3:簽出 / 復原簽出](../../extensibility/internals/test-area-3-check-out-undo-checkout.md)。  
 
 ## <a name="command-menu-access"></a>命令功能表存取  
  下列[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]與測試案例中會使用整合式的開發環境功能表路徑。  
@@ -46,7 +43,7 @@ ms.locfileid: "49847353"
 ## <a name="test-cases"></a>測試案例  
  以下是針對特定測試案例**變更原始檔控制**命令測試區域。  
 
-### <a name="case-5a-bind"></a>案例 5a： 繫結  
+### <a name="case-5a-bind"></a>案例 5a:繫結  
  繫結可讓使用者選取的專案和方案中新增來源的程式碼控制資訊。 若要識別這些是要加入原始檔控制中的專案通常提示使用者。 使用者不可能的這項作業 （與加入原始檔控制的高對比） 一部分的原始檔控制中建立新的專案。  
 
 
@@ -58,7 +55,7 @@ ms.locfileid: "49847353"
 | 繫結是永遠不會在原始檔控制下的方案 | 1.原始檔控制中建立空的資料夾。<br />2.建立用戶端專案。<br />3.開啟**變更原始檔控制** 對話方塊 (**檔案**，**原始檔控制**，**變更原始檔控制**)。<br />4.將方案繫結至原始檔控制中的空白位置。<br />5.按一下 [ **[確定]** 以關閉**變更原始檔控制**] 對話方塊。<br />6.按一下 **繼續使用這些繫結**確認對話方塊中。<br />7.按一下 **確定**在警告對話方塊中，如果有出現。 | 方案會隨即加入至原始檔控制中。<br /><br /> 方案和專案簽出。 |
 | 取消繫結 | 1.建立專案。<br />2.您可以將方案加入原始檔控制。<br />3.開啟 [變更原始檔控制] 對話方塊。<br />4.解除所有繫結。<br />5.按一下 **確定**按鈕以關閉對話方塊。 如果這個步驟成功，則會繼續至下一個步驟。<br />6.重新開啟**變更原始檔控制** 對話方塊。<br />7.繫結至不相關的位置。<br />8.按一下 **取消**。 | `Result from Step 5:`<br /><br /> 解決方案不會再受到原始檔控制<br /><br /> `Result from Step 8:`<br /><br /> 解決方案是仍不會在原始檔控制。 |
 
-### <a name="case-5b-unbind"></a>案例 5b： 解除繫結  
+### <a name="case-5b-unbind"></a>案例 5b:解除繫結  
  解除繫結移除來源的程式碼從專案和其解決方案的控制項資訊。 受影響的專案和方案都根據使用者選取和方式的項目已加入至原始檔控制的混合。  
 
 |動作|測試步驟|若要確認預期的結果|  
@@ -66,7 +63,7 @@ ms.locfileid: "49847353"
 |解除繫結包含一個檔案系統或本機 IIS Web 專案和一個用戶端專案的方案|1.建立檔案系統或本機 IIS Web 專案。<br />2.您可以將方案加入原始檔控制。<br />3.將新的用戶端專案加入方案。<br />4.如果出現提示時，請接受簽出的解決方案。<br />5.開啟**變更原始檔控制** 對話方塊。<br />6.按一下 **解除繫結**。<br />7.按一下 [確定]  關閉對話方塊。<br />8.嘗試簽出方案、 專案、 方案項目、 專案項目。|方案和專案不是原始檔控制之下。<br /><br /> 看不到原始檔控制 功能表命令。|  
 |取消解除繫結|1.建立專案。<br />2.您可以將方案加入原始檔控制。<br />3.開啟**變更原始檔控制** 對話方塊。<br />4.按一下 **解除繫結所有**。<br />5.按一下 **取消**。|解決方案是在原始檔控制。|  
 
-### <a name="case-5c-rebind"></a>案例 5 c： 重新繫結  
+### <a name="case-5c-rebind"></a>案例 5 c:重新繫結  
  重新繫結是只要解除繫結和繫結的組合 — 的重新繫結專案/方案先前已在原始檔控制，而且已解除繫結程序。  
 
 |動作|測試步驟|若要確認預期的結果|  

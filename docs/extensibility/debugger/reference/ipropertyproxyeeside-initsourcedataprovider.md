@@ -1,9 +1,6 @@
 ---
 title: IPropertyProxyEESide::InitSourceDataProvider |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IPropertyProxyEESide::InitSourceDataProvider
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 41add9a334dd6e78a476134845db7d31664755c9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 652eaf5525de404fe3107449f56ad714b1b827cf
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49871078"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53937409"
 ---
 # <a name="ipropertyproxyeesideinitsourcedataprovider"></a>IPropertyProxyEESide::InitSourceDataProvider
 初始化此物件的來源資料，並傳回物件，其中包含初始資料。  

@@ -1,6 +1,5 @@
 ---
 title: 影像庫檢視器 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 9d9c7fbb-ebae-4b20-9dd8-3c9070c0d0d1
@@ -9,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7808c4485a00c080a8a5b260a6472d81bfb7fd44
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b0ec0995068cafe277c95bd125f91d2d1d3df16b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49816821"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53968666"
 ---
 # <a name="image-library-viewer"></a>影像庫檢視器
 Visual Studio 影像庫檢視器工具可以載入，並搜尋映像資訊清單，讓使用者能夠操作這些 Visual Studio 會的方式相同。 使用者可以改變背景、 大小、 DPI、 高對比和其他設定。 此工具也會顯示每個映像資訊清單的載入資訊，並會顯示映像資訊清單中的每個映像的來源資訊。 這項工具可用於：  
@@ -132,7 +131,7 @@ Visual Studio 影像庫檢視器工具可以載入，並搜尋映像資訊清單
 |-|-|  
 |**屬性**|**定義**|  
 |URI|[必要]定義從何處可以載入映像的 URI。 它可以是下列其中一項：<br /><br /> -A [Pack URI](/dotnet/framework/wpf/app-development/pack-uris-in-wpf)使用應用程式: / / 授權單位<br /><br /> -絕對元件資源參考<br /><br /> -包含原生資源的檔案路徑|  
-|背景|[選用]指出哪些類型的來源要使用的背景。<br /><br /> 它可以是下列其中一項：<br /><br /> - *Light*： 淺色背景上可用的來源。<br /><br /> - *深色*: 來源可以使用深色背景上。<br /><br /> - *高對比*: 來源可以使用高對比模式中的任何背景上。<br /><br /> - *HighContrastLight*： 淺色背景高對比模式中使用的來源。<br /><br /> -*HighContrastDark*： 來源可用在高對比模式中使用深色背景上。<br /><br /> 如果**背景**省略屬性、 來源可以使用任何背景上。<br /><br /> 如果**背景**是*Light*，*深色*， *HighContrastLight*，或*HighContrastDark*，永遠不會反轉來源的色彩。 如果**背景**被省略或設為*高對比*，反轉的來源的色彩由映像的控制**AllowColorInversion**屬性。|  
+|背景|[選用]指出哪些類型的來源要使用的背景。<br /><br /> 它可以是下列其中一項：<br /><br /> - *Light*:淺色背景上可用的來源。<br /><br /> - *深色*:來源可以使用深色背景上。<br /><br /> - *高對比*:高對比模式中的任何背景上可用的來源。<br /><br /> - *HighContrastLight*:高對比模式中的淺色背景上可用的來源。<br /><br /> -*HighContrastDark*:在高對比模式中使用深色背景上可用的來源。<br /><br /> 如果**背景**省略屬性、 來源可以使用任何背景上。<br /><br /> 如果**背景**是*Light*，*深色*， *HighContrastLight*，或*HighContrastDark*，永遠不會反轉來源的色彩。 如果**背景**被省略或設為*高對比*，反轉的來源的色彩由映像的控制**AllowColorInversion**屬性。|  
   
  A\<來源 > 項目可以有一個下列的選擇性子項目：  
   
@@ -225,7 +224,7 @@ Visual Studio 影像庫檢視器工具可以載入，並搜尋映像資訊清單
   
 ## <a name="notes"></a>注意  
   
--   根據預設，此工具會在數個 Visual Studio 安裝目錄中的映像資訊清單中提取。 只有一種具有公開可取用的 moniker 是**Microsoft.VisualStudio.ImageCatalog**資訊清單。 GUID: ae27a6b0-e345-4288-96df-5eaf394ee369 (請勿**不**覆寫此自訂資訊清單中的 GUID) 型別： KnownMonikers  
+-   根據預設，此工具會在數個 Visual Studio 安裝目錄中的映像資訊清單中提取。 只有一種具有公開可取用的 moniker 是**Microsoft.VisualStudio.ImageCatalog**資訊清單。 GUID: ae27a6b0-e345-4288-96df-5eaf394ee369 (請勿**不**覆寫此自訂資訊清單中的 GUID) 類型：KnownMonikers  
   
 -   此工具會嘗試啟動時載入所有影像資訊清單，找到，因此它可能需要花費數秒鐘的時間來實際顯示應用程式。 載入資訊清單時，它可能也會變慢或無回應。  
   

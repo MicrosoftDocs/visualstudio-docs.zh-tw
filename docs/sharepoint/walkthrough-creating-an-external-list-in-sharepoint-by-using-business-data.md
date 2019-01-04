@@ -1,13 +1,8 @@
 ---
-title: 逐步解說： 使用商務資料在 SharePoint 中建立外部清單 |Microsoft Docs
-ms.custom: ''
+title: 逐步解說：使用商務資料在 SharePoint 中建立外部清單 |Microsoft Docs
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -24,14 +19,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 18848f0ebd6ffa289ea09553de82f5b9eb893181
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 96c52d1d30444aa557465ce2022a3ef1db4c3de0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295835"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53918780"
 ---
-# <a name="walkthrough-create-an-external-list-in-sharepoint-by-using-business-data"></a>逐步解說： 使用商務資料在 SharePoint 中建立外部清單
+# <a name="walkthrough-create-an-external-list-in-sharepoint-by-using-business-data"></a>逐步解說：使用商務資料在 SharePoint 中建立外部清單
 
 商務資料連接 (BDC) 服務可讓 SharePoint，以顯示來自後端伺服器應用程式、 Web 服務和資料庫的商務資料。
 
@@ -125,7 +120,7 @@ ms.locfileid: "51295835"
 
 將實體新增至模型。 您可以從 Visual Studio 中新增實體**工具箱**在 BDC 設計工具上。
 
-1. 在功能表列上選擇 **檢視** > **工具箱**。
+1. 在功能表列上，選擇 [檢視] > [工具箱]。
 
 2. 在上**BusinessDataConnectivity**索引標籤**工具箱**，加入**實體**在 BDC 設計工具上。
 
@@ -275,9 +270,9 @@ ms.locfileid: "51295835"
 
 您可以深入了解如何設計模型在 SharePoint 中的 BDC 服務從下列主題：
 
-- [如何： 新增建立者方法](../sharepoint/how-to-add-a-creator-method.md)。
-- [如何： 加入更新者方法](../sharepoint/how-to-add-an-updater-method.md)。
-- [如何： 加入刪除者方法](../sharepoint/how-to-add-a-deleter-method.md)。
+- [如何：新增建立者方法](../sharepoint/how-to-add-a-creator-method.md)。
+- [如何：新增更新者方法](../sharepoint/how-to-add-an-updater-method.md)。
+- [如何：新增刪除者方法](../sharepoint/how-to-add-a-deleter-method.md)。
 
 ## <a name="see-also"></a>另請參閱
 

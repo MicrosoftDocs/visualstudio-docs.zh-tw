@@ -1,9 +1,6 @@
 ---
-title: IDebugSettingsCallback2 |Microsoft 文件
-ms.custom: ''
+title: IDebugSettingsCallback2 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - IDebugSettingsCallback2 interface
@@ -13,15 +10,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 54724d3e7652df6f7b5b61099136286257fca954
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3d0fad5ddb45c1e57cc18a089b1a0c5ca05a094b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31122401"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53947175"
 ---
 # <a name="idebugsettingscallback2"></a>IDebugSettingsCallback2
-啟用偵錯引擎讀取度量設定從遠端。  
+啟用偵錯引擎讀取計量設定從遠端。  
   
 ## <a name="syntax"></a>語法  
   
@@ -29,8 +26,8 @@ ms.locfileid: "31122401"
 IDebugSettingsCallback2D : IUnknown  
 ```  
   
-## <a name="notes-for-implementers"></a>實作者注意事項  
- 這個介面是由偵錯工作階段管理員的事件回呼所實作，且由偵錯引擎。 它也可以使用本機而不是.lib Dbgmetric [d]。  
+## <a name="notes-for-implementers"></a>實作者的附註  
+ 此介面是藉由將工作階段的偵錯管理員事件回呼，並供偵錯引擎。 它也可以使用在本機而不是.lib Dbgmetric [d]。  
   
 ## <a name="methods"></a>方法  
  下表顯示的方法`IDebugSettingsCallback2`。  
@@ -38,24 +35,24 @@ IDebugSettingsCallback2D : IUnknown
 |方法|描述|  
 |------------|-----------------|  
 |[EnumEEs](../../../extensibility/debugger/reference/idebugsettingscallback2-enumees.md)|列舉可用的運算式評估工具提供的語言和廠商識別碼。|  
-|[GetEELocalObject](../../../extensibility/debugger/reference/idebugsettingscallback2-geteelocalobject.md)|擷取運算式評估工具本機物件指定度量。|  
-|[GetEEMetricDword](../../../extensibility/debugger/reference/idebugsettingscallback2-geteemetricdword.md)|擷取值，對應至指定的運算式評估工具度量。|  
-|[GetEEMetricFile](../../../extensibility/debugger/reference/idebugsettingscallback2-geteemetricfile.md)|擷取運算式評估工具度量提供檔案的名稱或度量。|  
-|[GetEEMetricGuid](../../../extensibility/debugger/reference/idebugsettingscallback2-geteemetricguid.md)|擷取指定之名稱的運算式評估工具度量的唯一識別碼。|  
-|[GetEEMetricString](../../../extensibility/debugger/reference/idebugsettingscallback2-geteemetricstring.md)|擷取指定之名稱的運算式評估工具公制值字串。|  
+|[GetEELocalObject](../../../extensibility/debugger/reference/idebugsettingscallback2-geteelocalobject.md)|擷取指定度量的運算式的評估工具本機物件。|  
+|[GetEEMetricDword](../../../extensibility/debugger/reference/idebugsettingscallback2-geteemetricdword.md)|擷取對應至的運算式評估工具的指定計量的值。|  
+|[GetEEMetricFile](../../../extensibility/debugger/reference/idebugsettingscallback2-geteemetricfile.md)|擷取運算式評估工具計量提供檔案名稱或計量。|  
+|[GetEEMetricGuid](../../../extensibility/debugger/reference/idebugsettingscallback2-geteemetricguid.md)|擷取指定其名稱的運算式評估工具計量的唯一識別碼。|  
+|[GetEEMetricString](../../../extensibility/debugger/reference/idebugsettingscallback2-geteemetricstring.md)|擷取指定其名稱的運算式評估工具度量的值字串。|  
 |[GetMetricDword](../../../extensibility/debugger/reference/idebugsettingscallback2-getmetricdword.md)|擷取值，指定其名稱的度量資訊。|  
-|[GetMetricGuid](../../../extensibility/debugger/reference/idebugsettingscallback2-getmetricguid.md)|擷取指定之名稱的度量資訊的唯一識別碼。|  
-|[GetMetricString](../../../extensibility/debugger/reference/idebugsettingscallback2-getmetricstring.md)|擷取指定之名稱的度量值字串。|  
+|[GetMetricGuid](../../../extensibility/debugger/reference/idebugsettingscallback2-getmetricguid.md)|擷取指定其名稱的度量的唯一識別碼。|  
+|[GetMetricString](../../../extensibility/debugger/reference/idebugsettingscallback2-getmetricstring.md)|擷取值字串，指定其名稱的度量。|  
   
 ## <a name="requirements"></a>需求  
- 標頭： Msdbg.h  
+ 標頭：Msdbg.h  
   
- 命名空間： Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間:Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="example"></a>範例  
- 下列範例顯示使用的函式**IDebugSettingsCallback2**物件做為參數。  
+ 下列範例示範使用的函式**IDebugSettingsCallback2**物件做為參數。  
   
 ```cpp  
 HRESULT GetDebugSettingsCallback (IDebugSettingsCallback2 **ppCallback)  

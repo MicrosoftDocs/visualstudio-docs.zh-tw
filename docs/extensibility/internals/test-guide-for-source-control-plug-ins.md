@@ -1,9 +1,6 @@
 ---
 title: 測試原始檔控制外掛程式的指南 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - plug-ins, source control
@@ -17,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8df70ef5fcaffb7fe2e06df5b6d47e526ff5162f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 03ddcde26ffeb50db045295a39fa444059cf59bb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49828256"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53827896"
 ---
 # <a name="test-guide-for-source-control-plug-ins"></a>原始檔控制外掛程式測試指南
 本節提供指引來測試您的原始檔控制外掛程式與[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。 會提供廣泛的最常見的測試區域，以及一些更複雜的區域可能會造成問題的概觀。 本概觀旨在沒有測試案例的詳盡清單。  
@@ -40,7 +37,7 @@ ms.locfileid: "49828256"
  任何專案類型提供[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]支援原始檔控制整合 (例如[!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]， [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]，或[!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)])。  
   
  Web 專案  
- 有四種類型的 Web 專案： 檔案系統、 本機 IIS，遠端站台和 FTP。  
+ 有四種類型的 Web 專案：檔案系統、 本機 IIS，遠端站台和 FTP。  
   
 - 本機路徑上建立檔案系統的專案，但它們不需要的 「 網際網路資訊服務 (IIS) 」，因為它們透過 UNC 路徑，在內部存取，而且可以放在 IDE 中，非常類似用戶端專案的原始檔控制下進行安裝。  
   
@@ -58,45 +55,45 @@ ms.locfileid: "49828256"
   
 ## <a name="test-areas-covered-in-this-section"></a>本章節涵蓋的測試區域  
   
--   [測試區域 1︰新增至原始檔控制或從中開啟](../../extensibility/internals/test-area-1-add-to-open-from-source-control.md)  
+-   [測試區域 1:從原始檔控制新增至 / Open](../../extensibility/internals/test-area-1-add-to-open-from-source-control.md)  
   
-    -   案例 1： 將方案加入原始檔控制  
+    -   案例 1a:將方案加入原始檔控制  
   
-    -   案例 1b： 從原始檔控制開啟方案  
+    -   案例 1b:從原始檔控制開啟方案  
   
-    -   案例 1 c： 從原始檔控制新增解決方案  
+    -   案例 1 c:從原始檔控制新增解決方案  
   
--   [測試區域 2︰從原始檔控制中取得](../../extensibility/internals/test-area-2-get-from-source-control.md)  
+-   [測試區域 2:取得從原始檔控制](../../extensibility/internals/test-area-2-get-from-source-control.md)  
   
--   [測試區域 3︰簽出/復原簽出](../../extensibility/internals/test-area-3-check-out-undo-checkout.md)  
+-   [測試區域 3:簽出/復原簽出](../../extensibility/internals/test-area-3-check-out-undo-checkout.md)  
   
-    -   案例 3： 簽出/復原簽出  
+    -   案例 3:簽出/復原簽出  
   
-    -   案例 3a： 簽出  
+    -   案例 3a:簽出  
   
-    -   案例 3b： 已中斷連線簽出  
+    -   案例 3b:已中斷連線簽出  
   
-    -   案例 3 c： 查詢編輯查詢儲存 (QEQS)  
+    -   案例 3 c:查詢編輯/查詢儲存 (QEQS)  
   
-    -   案例 3d： 無訊息的簽出  
+    -   案例 3d:無訊息的簽出  
   
-    -   案例 3e： 恢復簽出  
+    -   案例 3e:復原簽出  
   
--   [測試區域 4︰簽入](../../extensibility/internals/test-area-4-check-in.md)  
+-   [測試區域 4:簽入](../../extensibility/internals/test-area-4-check-in.md)  
   
-    -   案例 4a： 修改項目  
+    -   案例 4a:修改過的項目  
   
-    -   案例 4b： 新增檔案  
+    -   案例 4b:新增檔案  
   
-    -   案例 4c： 新增專案  
+    -   案例 4 c:新增專案  
   
--   [測試區域 5︰變更原始檔控制](../../extensibility/internals/test-area-5-change-source-control.md)  
+-   [測試區域 5:變更原始檔控制](../../extensibility/internals/test-area-5-change-source-control.md)  
   
-    -   案例 5a： 繫結  
+    -   案例 5a:繫結  
   
-    -   案例 5b： 解除繫結  
+    -   案例 5b:解除繫結  
   
-    -   案例 5 c： 重新繫結  
+    -   案例 5 c:重新繫結  
   
 -   [測試區域 6︰刪除](../../extensibility/internals/test-area-6-delete.md)  
   
@@ -104,9 +101,9 @@ ms.locfileid: "49828256"
   
 -   [測試區域 8︰外掛程式切換](../../extensibility/internals/test-area-8-plug-in-switching.md)  
   
-    -   案例 8a： 自動變更  
+    -   案例 8a:自動變更  
   
-    -   案例 8b： 方案為基礎的變更  
+    -   案例 8b:解決方案為基礎的變更  
   
 ## <a name="see-also"></a>另請參閱  
  [原始檔控制外掛程式](../../extensibility/source-control-plug-ins.md)

@@ -1,9 +1,6 @@
 ---
 title: 快取資料
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,12 +14,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b46fa8b0138eff03757a7bd7828053cee039090f
-ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
+ms.openlocfilehash: 66113dae824397f46829a539a016f452cedc0383
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53248114"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53967251"
 ---
 # <a name="cache-data"></a>快取資料
   您可以快取文件層級自訂中的資料物件，所以離線狀態或無需開啟 Microsoft Office Word 或 Microsoft Office Excel，就可以存取的資料。 若要快取物件，該物件必須符合特定需求的資料類型。 許多常見的資料型別，.NET Framework 中符合這些需求，包括<xref:System.String>， <xref:System.Data.DataSet>，和<xref:System.Data.DataTable>。  
@@ -91,5 +88,3 @@ ms.locfileid: "53248114"
  [如何：以程式設計方式快取 Office 文件中的資料來源](../vsto/how-to-programmatically-cache-a-data-source-in-an-office-document.md)   
  [如何：在受密碼保護的文件中的快取資料](../vsto/how-to-cache-data-in-a-password-protected-document.md)   
  [逐步解說：建立使用快取的資料集的主版詳細資料關聯性](../vsto/walkthrough-creating-a-master-detail-relation-using-a-cached-dataset.md)  
-  
-  

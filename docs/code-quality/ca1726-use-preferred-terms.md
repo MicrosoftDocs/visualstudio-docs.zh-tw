@@ -1,8 +1,7 @@
 ---
-title: CA1726：建議使用慣用詞彙
+title: CA1726:建議使用慣用詞彙
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - UsePreferredTerms
@@ -15,20 +14,20 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c81bd543a6695adcea37db5ab8570ff7749c0160
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 9c31838f8dcfdcb8c98d7cfdd94eb2743f6e7d90
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45551450"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53909006"
 ---
-# <a name="ca1726-use-preferred-terms"></a>CA1726：建議使用慣用詞彙
+# <a name="ca1726-use-preferred-terms"></a>CA1726:建議使用慣用詞彙
 
 |||
 |-|-|
 |TypeName|UsePreferredTerms|
 |CheckId|CA1726|
-|類別|Microsoft.Naming|
+|分類|Microsoft.Naming|
 |中斷變更|中斷-時引發的組件<br /><br /> 非中斷-時引發的類型參數|
 
 ## <a name="cause"></a>原因

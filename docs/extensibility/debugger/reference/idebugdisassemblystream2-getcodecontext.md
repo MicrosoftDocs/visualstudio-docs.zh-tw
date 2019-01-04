@@ -1,9 +1,6 @@
 ---
 title: IDebugDisassemblyStream2::GetCodeContext |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugDisassemblyStream2::GetCodeContext
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 858463e3506919d68d9aa0b353f2988f801dc1d3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0910490ee6e75aeffe1e07f54b5b106440296efa
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49916372"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53850121"
 ---
 # <a name="idebugdisassemblystream2getcodecontext"></a>IDebugDisassemblyStream2::GetCodeContext
 傳回對應至指定的程式碼位置識別碼的程式碼內容物件。  
@@ -28,14 +25,14 @@ ms.locfileid: "49916372"
 ## <a name="syntax"></a>語法  
   
 ```cpp  
-HRESULT GetCodeContext(   
+HRESULT GetCodeContext(   
    UINT64               uCodeLocationId,  
    IDebugCodeContext2** ppCodeContext  
 );  
 ```  
   
 ```csharp  
-int GetCodeContext(   
+int GetCodeContext(   
    ulong                  uCodeLocationId,  
    out IDebugCodeContext2 ppCodeContext  
 );  

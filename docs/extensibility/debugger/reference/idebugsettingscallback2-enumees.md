@@ -1,9 +1,6 @@
 ---
 title: IDebugSettingsCallback2::EnumEEs |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - IDebugSettingsCallback2::EnumEEs
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fe4d3d2f2a3d76bbaec8c92c8053bac07e352389
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a8b5bc6202de734e7133f5bea40812246a59e7cf
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49812084"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53990840"
 ---
 # <a name="idebugsettingscallback2enumees"></a>IDebugSettingsCallback2::EnumEEs
 列舉可用的運算式評估工具提供的語言和廠商識別碼。  

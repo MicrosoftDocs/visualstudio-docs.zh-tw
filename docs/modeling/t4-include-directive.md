@@ -8,13 +8,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: b5a05629773334648239a8656577fbe0ae347625
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4a4b4f111776dc083e4c29ae7944b1f61762fe07
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49830700"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53963747"
 ---
 # <a name="t4-include-directive"></a>T4 包含指示詞
 

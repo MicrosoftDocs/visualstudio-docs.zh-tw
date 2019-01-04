@@ -1,9 +1,6 @@
 ---
 title: 檔案項目 |Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 37fc7bb582482f645fe5699196ca33d79304a5c3
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: e27e3192ec0d9a312c3cfc0a3521daf534c68e9a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36327290"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53922298"
 ---
 # <a name="files-element"></a>Files 項目
   指定要部署使用 SharePoint 專案項目，例如功能項目檔和相依的非 SharePoint 專案的輸出檔案。  
@@ -37,7 +34,7 @@ ms.locfileid: "36327290"
 ## <a name="type"></a>類型  
  **FileCollectionType**  
   
-## <a name="attributes-and-elements"></a>屬性和元素
+## <a name="attributes-and-elements"></a>屬性和項目
  下列章節說明屬性、子元素和父元素。  
   
 ### <a name="attributes"></a>屬性  
@@ -50,7 +47,7 @@ ms.locfileid: "36327290"
 |[ProjectItemFile](../sharepoint/projectitemfile-element.md)|選擇性**ProjectItemFileType**項目。<br /><br /> 代表功能項目檔案，以包含與專案項目時將它部署至 SharePoint 的 SharePoint 檔案。|  
 |[ProjectOutputFile](../sharepoint/projectoutputfile-element.md)|選擇性**ProjectOutputFileType**項目。<br /><br /> 表示要加入的專案項目時將它部署至 SharePoint 專案的輸出。|  
   
-### <a name="parent-elements"></a>父元素
+### <a name="parent-elements"></a>父項目
   
 |元素|描述|  
 |-------------|-----------------|  
@@ -67,5 +64,3 @@ ms.locfileid: "36327290"
   
 ## <a name="see-also"></a>另請參閱
  [SharePoint 專案項目結構描述參考](../sharepoint/sharepoint-project-item-schema-reference.md)  
-  
-  

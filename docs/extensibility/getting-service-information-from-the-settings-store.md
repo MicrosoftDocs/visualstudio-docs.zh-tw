@@ -1,9 +1,6 @@
 ---
 title: 從設定存放區取得服務資訊 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 7028d440-d16d-4b08-9b94-eb8cc93b25fc
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 947eb0fd25e57e00f355afac8dc993071859189c
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: decb5edb3e0cc243bacd3be0beda8aba621e8af2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39500484"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53874468"
 ---
 # <a name="get-service-information-from-the-settings-store"></a>從設定存放區取得服務資訊
 若要尋找所有可用的服務，或判斷是否已安裝特定的服務，您可以使用設定存放區。 您必須知道服務類別的型別。  

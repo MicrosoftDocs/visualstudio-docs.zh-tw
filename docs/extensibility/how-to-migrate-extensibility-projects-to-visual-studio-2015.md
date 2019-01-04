@@ -1,9 +1,6 @@
 ---
-title: 如何： 將擴充性專案移轉至 Visual Studio 2015 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：將擴充性專案移轉至 Visual Studio 2015 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio SDK, upgrading
@@ -13,14 +10,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 09b8950a05c4e4181209190af17eb0d6ccdb35ba
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 456661c06934063041f06c36c20eee72d52c5b4a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39639704"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53915331"
 ---
-# <a name="how-to-migrate-extensibility-projects-to-visual-studio-2015"></a>如何： 將擴充性專案移轉至 Visual Studio 2015
+# <a name="how-to-migrate-extensibility-projects-to-visual-studio-2015"></a>HOW TO：將擴充性專案移轉至 Visual Studio 2015
 以下是如何升級您的延伸模組。  
   
 > [!IMPORTANT]
@@ -42,13 +39,13 @@ ms.locfileid: "39639704"
   
 ### <a name="to-update-an-extensibility-project-to-nuget-vs-sdk-reference-assemblies"></a>更新 NuGet VS SDK 參考組件的擴充性專案  
   
-1.  判斷您的專案需要的 VS SDK 參考組件。  在 [**方案總管] 中**，展開專案的**參考**節點和檢閱專案參考的清單。  VS SDK 參考的組件會具有前置詞**Microsoft.VisualStudio**名稱中 (例如： Microsoft.VisualStudio.Shell.14.0)。  
+1.  判斷您的專案需要的 VS SDK 參考組件。  在 [**方案總管] 中**，展開專案的**參考**節點和檢閱專案參考的清單。  VS SDK 參考的組件會具有前置詞**Microsoft.VisualStudio**名稱中 (例如：Microsoft.VisualStudio.Shell.14.0)。  
   
 2.  從專案移除 VS SDK 參考組件，方法是選取它們，以滑鼠右鍵按一下並選取**移除**。  
   
 3.  加入 VS SDK 參考組件的 NuGet 版本。  當您依然在**方案總管參考**節點，開啟**管理 NuGet 套件**對話方塊。  如果您想要深入了解此對話方塊，請參閱[套件管理員 UI](/NuGet/Tools/Package-Manager-UI)。 VS SDK 參考組件上發佈[nuget.org](http://www.nuget.org)依[VisualStudioExtensibility](http://www.nuget.org/profiles/VisualStudioExtensibility)。  
   
-4.  使用**nuget.org**做為您**套件來源**，搜尋符合所需的參考組件的 NuGet 套件名稱 (例如： Microsoft.VisualStudio.Shell.14.0) 並將它安裝在您專案。  NuGet 可以新增多個參考組件，以滿足初始的組件相依性。  
+4.  使用**nuget.org**做為您**套件來源**，搜尋符合所需的參考組件的 NuGet 套件名稱 (例如：Microsoft.VisualStudio.Shell.14.0) 並將它安裝在您的專案。  NuGet 可以新增多個參考組件，以滿足初始的組件相依性。  
   
      如果您喜歡，您可以加入所有 VS SDK 參考組件一次安裝 VS SDK[中繼套件](http://www.nuget.org/packages/VSSDK_Reference_Assemblies)。  
   

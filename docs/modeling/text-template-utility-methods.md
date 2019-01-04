@@ -10,13 +10,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 8d8101b3cd88b4cfa81e6d32327581de5336dcd1
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: 571f6b95b15af7e71167a12aca581a14c938981e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50966502"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53864238"
 ---
 # <a name="text-template-utility-methods"></a>文字範本公用程式方法
 

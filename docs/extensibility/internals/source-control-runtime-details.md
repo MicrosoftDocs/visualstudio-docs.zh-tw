@@ -1,9 +1,6 @@
 ---
-title: 原始檔控制執行階段詳細資料 |Microsoft 文件
-ms.custom: ''
+title: 原始檔控制執行階段詳細資料 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK], runtime details
@@ -13,18 +10,18 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b972218258ded1ebf2f9f606927ba351e77afa01
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 800d659130354a5dfb7089c3f881c6dd87e48228
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31130308"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53932281"
 ---
-# <a name="source-control-runtime-details"></a>原始檔控制執行階段詳細資料
-專案加入至原始檔控制中，當使用者將檔案加入專案中加入原始檔控制，或透過 automation 控制器，如精靈。 專案未指定本身是在原始檔控制。它支援原始檔控制，但必須手動新增它。  
+# <a name="source-control-runtime-details"></a>原始檔控制的執行階段詳細資料
+當使用者將檔案加入專案中加入原始檔控制，或透過自動化控制站，例如精靈時，專案會加入原始檔控制。 專案未指定為其本身，是在原始檔控制它支援原始檔控制，但必須以手動方式新增至它。  
   
-## <a name="registering-with-a-source-control-package"></a>登錄至原始檔控制封裝  
- 當您的專案中的檔案加入原始檔控制中時，環境會呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProject2.SetSccLocation%2A>為您提供四種不透明的字串，可用做為 cookie 的原始檔控制系統。 這些字串儲存在專案檔。 這些字串應該傳遞至原始檔控制虛設常式 （管理原始檔控制套件的 Visual Studio 元件） 在啟動時的專案類型呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2.RegisterSccProject%2A>。 這又會載入適當的原始檔控制封裝和轉送它的實作呼叫`IVsSccManager2::RegisterSccProject`。  
+## <a name="registering-with-a-source-control-package"></a>使用原始檔控制套件註冊  
+ 當您的專案中的檔案新增至原始檔控制時，環境會呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProject2.SetSccLocation%2A>為您提供四個為 cookie 由原始檔控制系統的不透明字串。 將這些字串儲存在您的專案檔中。 這些字串應該傳遞至原始檔控制虛設常式 （管理原始檔控制套件的 Visual Studio 元件） 在啟動時的專案類型呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2.RegisterSccProject%2A>。 這接著會載入適當的原始檔控制封裝，並會轉送它的實作呼叫`IVsSccManager2::RegisterSccProject`。  
   
 ## <a name="see-also"></a>另請參閱  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2.RegisterSccProject%2A>   

@@ -1,9 +1,6 @@
 ---
-title: 如何： 處理部署衝突 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：處理部署衝突 |Microsoft Docs
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 helpviewer_keywords:
 - SharePoint development in Visual Studio, extending deployment
@@ -12,25 +9,25 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d7c30a7c634c30c9fe3e92ef988d7d8fc043cf6b
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: d55c260618eb7edcf68e91b521f2ace203ddbf01
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118767"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53898878"
 ---
-# <a name="how-to-handle-deployment-conflicts"></a>如何： 處理部署衝突
+# <a name="how-to-handle-deployment-conflicts"></a>HOW TO：處理部署衝突
   您可以提供您自己的程式碼來處理部署衝突的 SharePoint 專案項目。 例如，您可能會判斷目前的專案項目中的任何檔案是否存在於部署位置，和之前部署目前的專案項目，然後刪除已部署的檔案。 如需有關部署衝突的詳細資訊，請參閱 <<c0> [ 擴充 SharePoint 封裝和部署](../sharepoint/extending-sharepoint-packaging-and-deployment.md)。  
   
 ### <a name="to-handle-a-deployment-conflict"></a>若要處理部署衝突  
   
 1.  建立專案項目延伸模組、 專案擴充功能或新的專案項目類型定義。 如需詳細資訊，請參閱下列主題：  
   
-    -   [如何： 建立 SharePoint 專案項目擴充功能](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md)  
+    -   [如何：建立 SharePoint 專案項目擴充功能](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md)  
   
-    -   [如何： 建立 SharePoint 專案擴充功能](../sharepoint/how-to-create-a-sharepoint-project-extension.md)  
+    -   [如何：建立 SharePoint 專案擴充功能](../sharepoint/how-to-create-a-sharepoint-project-extension.md)  
   
-    -   [如何： 定義 SharePoint 專案項目類型](../sharepoint/how-to-define-a-sharepoint-project-item-type.md)  
+    -   [如何：定義 SharePoint 專案項目類型](../sharepoint/how-to-define-a-sharepoint-project-item-type.md)  
   
 2.  在 擴充功能，處理<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.DeploymentStepStarted>事件的<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemType>（在專案項目擴充功能或專案擴充功能） 的物件或<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeDefinition>物件 （在新的專案項目類型定義）。  
   
@@ -43,7 +40,7 @@ ms.locfileid: "37118767"
 ## <a name="example"></a>範例  
  下列程式碼範例示範如何處理部署衝突清單定義專案項目的專案項目擴充功能中的 basic 程序。 若要處理不同類型的專案項目的部署衝突，傳遞到不同的字串<xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemTypeAttribute>。 如需詳細資訊，請參閱 <<c0> [ 擴充 SharePoint 專案項目](../sharepoint/extending-sharepoint-project-items.md)。  
   
- 為了簡單起見，<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.DeploymentStepStarted>事件處理常式，在此範例假設部署衝突存在 (亦即，它一律會將新<xref:Microsoft.VisualStudio.SharePoint.Deployment.IDeploymentConflict>物件)，而`Resolve`方法只會傳回 **，則為 true**表示衝突解決的時間。 在真實的案例中，您<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.DeploymentStepStarted>事件處理常式會先判斷目前的專案項目中的檔案和部署位置的檔案之間有衝突，然後新增<xref:Microsoft.VisualStudio.SharePoint.Deployment.IDeploymentConflict>物件衝突是否存在。 例如，您可以使用`e.ProjectItem.Files`分析中的檔案的專案項目，以及您的事件處理常式的屬性可能會呼叫 SharePoint 命令，以分析在部署位置的檔案。 同樣地，在真實案例`Resolve`方法可能會呼叫 SharePoint 命令，以解決在 SharePoint 網站上的衝突。 如需建立 SharePoint 命令的詳細資訊，請參閱 <<c0> [ 如何： 建立 SharePoint 命令](../sharepoint/how-to-create-a-sharepoint-command.md)。  
+ 為了簡單起見，<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.DeploymentStepStarted>事件處理常式，在此範例假設部署衝突存在 (亦即，它一律會將新<xref:Microsoft.VisualStudio.SharePoint.Deployment.IDeploymentConflict>物件)，而`Resolve`方法只會傳回 **，則為 true**表示衝突解決的時間。 在真實的案例中，您<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.DeploymentStepStarted>事件處理常式會先判斷目前的專案項目中的檔案和部署位置的檔案之間有衝突，然後新增<xref:Microsoft.VisualStudio.SharePoint.Deployment.IDeploymentConflict>物件衝突是否存在。 例如，您可以使用`e.ProjectItem.Files`分析中的檔案的專案項目，以及您的事件處理常式的屬性可能會呼叫 SharePoint 命令，以分析在部署位置的檔案。 同樣地，在真實案例`Resolve`方法可能會呼叫 SharePoint 命令，以解決在 SharePoint 網站上的衝突。 如需建立 SharePoint 命令的詳細資訊，請參閱[How to:建立 SharePoint 命令](../sharepoint/how-to-create-a-sharepoint-command.md)。  
   
  [!code-vb[SPExtensibility.ProjectItemExtension.DeploymentConflict#1](../sharepoint/codesnippet/VisualBasic/deploymentconflict/extension/deploymentconflictextension.vb#1)]
  [!code-csharp[SPExtensibility.ProjectItemExtension.DeploymentConflict#1](../sharepoint/codesnippet/CSharp/deploymentconflict/extension/deploymentconflictextension.cs#1)]  
@@ -61,6 +58,5 @@ ms.locfileid: "37118767"
 ## <a name="see-also"></a>另請參閱
  [擴充 SharePoint 封裝和部署](../sharepoint/extending-sharepoint-packaging-and-deployment.md)   
  [擴充 SharePoint 專案項目](../sharepoint/extending-sharepoint-project-items.md)   
- [如何： 執行部署步驟時執行程式碼](../sharepoint/how-to-run-code-when-deployment-steps-are-executed.md)   
- [如何： 建立 SharePoint 命令](../sharepoint/how-to-create-a-sharepoint-command.md)  
-  
+ [如何：執行部署步驟時執行程式碼](../sharepoint/how-to-run-code-when-deployment-steps-are-executed.md)   
+ [如何：建立 SharePoint 命令](../sharepoint/how-to-create-a-sharepoint-command.md)  

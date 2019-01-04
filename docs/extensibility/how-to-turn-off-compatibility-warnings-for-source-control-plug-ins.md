@@ -1,9 +1,6 @@
 ---
 title: 關閉原始檔控制外掛程式的相容性警告 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, turning off compatibility warnings
@@ -14,17 +11,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b1dca06ca82e467080f4bcd88a3b10c691345344
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9f94c340e7c5af45d9aeb8cc9f39ea6480029b7b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49888342"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53930093"
 ---
-# <a name="how-to-turn-off-compatibility-warnings-for-source-control-plug-ins"></a>如何： 關閉的原始檔控制外掛程式的相容性警告
+# <a name="how-to-turn-off-compatibility-warnings-for-source-control-plug-ins"></a>HOW TO：關閉原始檔控制外掛程式的相容性警告
 使用者可能會採用原始檔控制中的看到數個相容性警告[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。 顯示警告取決於原始檔控制外掛程式的功能，並且可以停用，如此處所示詳細。  
   
-### <a name="to-disable-the-warning-to-ensure-optimal-source-control-integration-with-visual-studio"></a>若要停用警告: 「 若要確保最佳的原始檔控制整合，使用 Visual Studio"  
+### <a name="to-disable-the-warning-to-ensure-optimal-source-control-integration-with-visual-studio"></a>若要停用警告：「 若要確保最佳的原始檔控制整合，使用 Visual Studio"  
   
 - 設定下列登錄項目 （如有必要，請新增此值）：  
   
@@ -32,7 +29,7 @@ ms.locfileid: "49888342"
   
    這個警告會顯示所有非[!INCLUDE[vsvss](../extensibility/includes/vsvss_md.md)]外掛程式。  
   
-### <a name="to-disable-the-warning-the-installed-source-control-provider-does-not-support-all-the-capabilities"></a>若要停用警告: 「 已安裝的原始檔控制提供者不支援所有功能 」  
+### <a name="to-disable-the-warning-the-installed-source-control-provider-does-not-support-all-the-capabilities"></a>若要停用警告：「 已安裝的原始檔控制提供者不支援所有功能 」  
   
 -   設定下列兩個登錄值 （如有必要，請加入的值）：  
   

@@ -1,9 +1,6 @@
 ---
 title: IDebugSettingsCallback2::GetEELocalObject |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - IDebugSettingsCallback2::GetEELocalObject
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d13cb943d2ef00b746e8e93d71c1d1576dc5e739
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: cc53ec59b509d3cb731ba6dccd5e062e30f0b963
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49813411"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53991054"
 ---
 # <a name="idebugsettingscallback2geteelocalobject"></a>IDebugSettingsCallback2::GetEELocalObject
 擷取給定的計量名稱的運算式的評估工具本機物件。  

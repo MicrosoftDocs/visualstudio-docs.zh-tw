@@ -1,9 +1,6 @@
 ---
-title: 如何： 以程式設計方式開啟活頁簿的文字檔案
-ms.custom: ''
+title: HOW TO：以程式設計方式將文字檔開啟為活頁簿
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,14 +14,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b7bc7caa5dbceb727394b8543b7659cc43e64a36
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: f45eef21448ecbc0ee4e866d15ea746f098f2aba
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35257643"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53964185"
 ---
-# <a name="how-to-programmatically-open-text-files-as-workbooks"></a>如何： 以程式設計方式開啟活頁簿的文字檔案
+# <a name="how-to-programmatically-open-text-files-as-workbooks"></a>HOW TO：以程式設計方式將文字檔開啟為活頁簿
   您可以開啟文字檔案，為活頁簿。 您必須傳遞您想要開啟的文字檔案的名稱。 您可以指定數個選擇性參數的詳細資訊，例如若要開始剖析，以及檔案中資料的資料行格式的資料列編號。  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
@@ -42,10 +39,8 @@ ms.locfileid: "35257643"
   
 ## <a name="see-also"></a>另請參閱  
  [使用活頁簿](../vsto/working-with-workbooks.md)   
- [如何： 以程式設計方式開啟活頁簿](../vsto/how-to-programmatically-open-workbooks.md)   
- [如何： 以程式設計方式建立新的活頁簿](../vsto/how-to-programmatically-create-new-workbooks.md)   
- [如何： 以程式設計方式儲存活頁簿](../vsto/how-to-programmatically-save-workbooks.md)   
- [如何： 以程式設計方式關閉活頁簿](../vsto/how-to-programmatically-close-workbooks.md)   
+ [如何：以程式設計方式開啟活頁簿](../vsto/how-to-programmatically-open-workbooks.md)   
+ [如何：以程式設計方式建立新的活頁簿](../vsto/how-to-programmatically-create-new-workbooks.md)   
+ [如何：以程式設計方式儲存活頁簿](../vsto/how-to-programmatically-save-workbooks.md)   
+ [如何：以程式設計方式關閉活頁簿](../vsto/how-to-programmatically-close-workbooks.md)   
  [Office 方案中的選擇性參數](../vsto/optional-parameters-in-office-solutions.md)  
-  
-  

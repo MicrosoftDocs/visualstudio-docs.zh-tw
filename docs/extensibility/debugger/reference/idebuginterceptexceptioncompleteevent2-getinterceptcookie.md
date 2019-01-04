@@ -1,9 +1,6 @@
 ---
 title: IDebugInterceptExceptionCompleteEvent2::GetInterceptCookie |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugInterceptExceptionCompleteEvent2::GetInterceptCookie
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1f6c59c6fbca8b18e93e890264fbdf1ae8d050fd
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e384858fea9a7c82cf60500905f596ebe17e77bc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49846417"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53893311"
 ---
 # <a name="idebuginterceptexceptioncompleteevent2getinterceptcookie"></a>IDebugInterceptExceptionCompleteEvent2::GetInterceptCookie
 攔截到例外狀況處理完成時呼叫。  

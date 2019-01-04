@@ -1,9 +1,6 @@
 ---
-title: 逐步解說： 在文件層級專案中的簡單資料繫結
-ms.custom: ''
+title: 逐步解說：在文件層級專案中的簡單資料繫結
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,14 +16,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 25173e5c4d4aeb02045cf858ae1e093b7a04d2bb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a9967d830d72355f23173a7dfc6f1a95be073959
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49824371"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53895489"
 ---
-# <a name="walkthrough-simple-data-binding-in-a-document-level-project"></a>逐步解說： 在文件層級專案中的簡單資料繫結
+# <a name="walkthrough-simple-data-binding-in-a-document-level-project"></a>逐步解說：在文件層級專案中的簡單資料繫結
   本逐步解說會示範在文件層級專案中的資料繫結的基本概念。 SQL Server 資料庫中的單一資料欄位繫結至 Microsoft Office Excel 中的具名範圍。 本逐步解說也示範如何新增控制項，可讓您捲動瀏覽資料表中的所有記錄。  
   
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]  
@@ -57,7 +54,7 @@ ms.locfileid: "49824371"
   
 ### <a name="to-create-a-new-project"></a>建立新的專案  
   
-1. 建立 Excel 活頁簿專案同名**我的簡單資料繫結**，使用 Visual Basic 或 C#。 請確定**建立新的文件**已選取。 如需詳細資訊，請參閱 <<c0> [ 如何： 在 Visual Studio 中的建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
+1. 建立 Excel 活頁簿專案同名**我的簡單資料繫結**，使用 Visual Basic 或 C#。 請確定**建立新的文件**已選取。 如需詳細資訊，請參閱[＜How to：在 Visual Studio 中建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
   
    Visual Studio 設計工具中開啟新的 Excel 活頁簿，並將**我的簡單資料繫結**專案加入**方案總管 中**。  
   
@@ -188,15 +185,13 @@ ms.locfileid: "49824371"
 ## <a name="next-steps"></a>後續步驟  
  本逐步解說會示範繫結至資料庫中的欄位的已命名的範圍的基本概念。 接著可以執行下列一些工作：  
   
--   快取的資料，以便可以離線使用。 如需詳細資訊，請參閱 <<c0> [ 如何： 快取資料以供使用，離線或在伺服器上](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md)。  
+-   快取的資料，以便可以離線使用。 如需詳細資訊，請參閱[＜How to：離線或在伺服器上快取資料以用於](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md)。  
   
--   繫結至資料表中的多個資料行的資料格而不是至一個欄位。 如需詳細資訊，請參閱 <<c0> [ 逐步解說： 在文件層級專案中的複雜資料繫結](../vsto/walkthrough-complex-data-binding-in-a-document-level-project.md)。  
+-   繫結至資料表中的多個資料行的資料格而不是至一個欄位。 如需詳細資訊，請參閱[逐步解說：在文件層級專案中的複雜資料繫結](../vsto/walkthrough-complex-data-binding-in-a-document-level-project.md)。  
   
--   使用<xref:System.Windows.Forms.BindingNavigator>捲動記錄的控制項。 如需詳細資訊，請參閱 <<c0> [ 如何： 使用 Windows Form BindingNavigator 控制項巡覽資料](/dotnet/framework/winforms/controls/bindingnavigator-control-overview-windows-forms)。  
+-   使用<xref:System.Windows.Forms.BindingNavigator>捲動記錄的控制項。 如需詳細資訊，請參閱[＜How to：使用 Windows Form BindingNavigator 控制項巡覽資料](/dotnet/framework/winforms/controls/bindingnavigator-control-overview-windows-forms)。  
   
 ## <a name="see-also"></a>另請參閱  
  [資料繫結至 Office 方案中的控制項](../vsto/binding-data-to-controls-in-office-solutions.md)   
  [在 Office 方案中的資料](../vsto/data-in-office-solutions.md)   
- [逐步解說： 在文件層級專案中的複雜資料繫結](../vsto/walkthrough-complex-data-binding-in-a-document-level-project.md)  
-  
-  
+ [逐步解說：在文件層級專案中的複雜資料繫結](../vsto/walkthrough-complex-data-binding-in-a-document-level-project.md)  

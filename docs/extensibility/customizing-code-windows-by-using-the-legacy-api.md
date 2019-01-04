@@ -1,9 +1,6 @@
 ---
 title: 使用舊版 API 來自訂程式碼的 Windows |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - code windows
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 454d58a48abafe9b23f8a812e5d40b9fc6477b50
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 07627ddbc8cf8e6f030418956931ad2e4af544af
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39499350"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53883035"
 ---
 # <a name="customize-code-windows-by-using-the-legacy-api"></a>使用舊版 API 來自訂程式碼視窗
 程式碼視窗會支援一或多個文字檢視的文件視窗物件。 程式碼視窗的確切的功能取決於相關聯的語言服務。 在多重文件介面 (MDI) 模式中，程式碼視窗會是 MDI 子框架。  
@@ -36,10 +33,10 @@ ms.locfileid: "39499350"
  `Customizing Code Windows by Using the Legacy API`  
  說明如何自訂使用舊版 API 的程式碼視窗。  
   
- [如何： 裝載在其他編輯器中的編輯器](../extensibility/how-to-host-an-editor-in-another-editor.md)  
+ [如何：裝載在其他編輯器中的編輯器](../extensibility/how-to-host-an-editor-in-another-editor.md)  
  說明如何裝載在編輯器視窗內的第二個編輯器。  
   
- [如何： 引發事件當編輯器失去焦點時](../extensibility/how-to-fire-events-when-the-editor-loses-focus.md)  
+ [如何：引發事件當編輯器失去焦點時](../extensibility/how-to-fire-events-when-the-editor-loses-focus.md)  
  說明如何將文件檢視附加至文件資料物件。  
   
 ## <a name="see-also"></a>另請參閱  

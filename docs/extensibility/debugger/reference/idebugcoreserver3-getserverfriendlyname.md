@@ -1,9 +1,6 @@
 ---
 title: IDebugCoreServer3::GetServerFriendlyName |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugCoreServer3::GetServerFriendlyName
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4bfc596bd1b77c77ea5b54a66ca349a66e50915c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 06abe4d0259e06a42aa30465db661f220e40a286
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49875784"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53892815"
 ---
 # <a name="idebugcoreserver3getserverfriendlyname"></a>IDebugCoreServer3::GetServerFriendlyName
 擷取伺服器的易記名稱。  
@@ -28,14 +25,14 @@ ms.locfileid: "49875784"
 ## <a name="syntax"></a>語法  
   
 ```cpp  
-HRESULT GetServerFriendlyName(  
-   BSTR* pbstrName  
+HRESULT GetServerFriendlyName(  
+   BSTR* pbstrName  
 );  
 ```  
   
 ```csharp  
-int GetServerFriendlyName(  
-   out string pbstrName  
+int GetServerFriendlyName(  
+   out string pbstrName  
 );  
 ```  
   

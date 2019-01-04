@@ -1,9 +1,7 @@
 ---
 title: ProjectItem 項目 （Visual Studio 專案範本） |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#ProjectItem
@@ -16,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 585615c07d9f11f75468bccde1bae05a355bf98f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2290b8a95bbb2e53ae14f410f77109394528b138
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49899951"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53927359"
 ---
 # <a name="projectitem-element-visual-studio-project-templates"></a>ProjectItem 項目 （Visual Studio 專案範本）
 指定專案範本中所包含的檔案。  
@@ -57,9 +55,9 @@ ms.locfileid: "49899951"
 |---------------------| - |
 | `TargetFileName` | 選擇性屬性。<br /><br /> 從範本建立專案時，請指定專案項目的路徑與名稱。 這個屬性可用於在範本中建立的目錄結構不同的目錄結構 *.zip*檔案，或用來建立項目名稱的參數取代。 |
 | `ReplaceParameters` | 選擇性屬性。<br /><br /> 布林值，指定的項目是否有從範本建立專案時，必須被取代的參數值。 預設值為 `false`。 |
-| `OpenInEditor` | 選擇性屬性。<br /><br /> 布林值，指定是否應該在其各自的編輯器中開啟項目[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]從範本建立專案時。<br /><br /> `OpenInWebBrowser`並`OpenInHelpBrowser`屬性會被忽略的項目上`OpenInEditor`的值`true`。<br /><br /> 預設值是 `false`。 |
-| `OpenInWebBrowser` | 選擇性屬性。<br /><br /> 布林值，指定項目是否應該會開啟網頁瀏覽器從範本建立專案。<br /><br /> 僅 HTML 檔案和文字檔的本機專案可以在 Web 瀏覽器中開啟。 無法開啟外部 Url，以這個屬性。<br /><br /> 預設值是 `false`。 |
-| `OpenInHelpBrowser` | 選擇性屬性。<br /><br /> 布林值，指定項目應該會開啟說明檢視器中從範本建立專案時。<br /><br /> 僅 HTML 檔案和文字檔的本機專案可以在說明瀏覽器中開啟。 無法開啟外部 Url，以這個屬性。<br /><br /> 預設值是 `false`。 |
+| `OpenInEditor` | 選擇性屬性。<br /><br /> 布林值，指定是否應該在其各自的編輯器中開啟項目[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]從範本建立專案時。<br /><br /> `OpenInWebBrowser`並`OpenInHelpBrowser`屬性會被忽略的項目上`OpenInEditor`的值`true`。<br /><br /> 預設值為 `false`。 |
+| `OpenInWebBrowser` | 選擇性屬性。<br /><br /> 布林值，指定項目是否應該會開啟網頁瀏覽器從範本建立專案。<br /><br /> 僅 HTML 檔案和文字檔的本機專案可以在 Web 瀏覽器中開啟。 無法開啟外部 Url，以這個屬性。<br /><br /> 預設值為 `false`。 |
+| `OpenInHelpBrowser` | 選擇性屬性。<br /><br /> 布林值，指定項目應該會開啟說明檢視器中從範本建立專案時。<br /><br /> 僅 HTML 檔案和文字檔的本機專案可以在說明瀏覽器中開啟。 無法開啟外部 Url，以這個屬性。<br /><br /> 預設值為 `false`。 |
 | `OpenOrder` | 選擇性屬性。<br /><br /> 指定數值，表示項目將會開啟在其各自的編輯器中的順序。 所有的值必須是 10 的倍數。 使用更高項目`OpenOrder`值第一次開啟。 |
   
 ### <a name="child-elements"></a>子元素  

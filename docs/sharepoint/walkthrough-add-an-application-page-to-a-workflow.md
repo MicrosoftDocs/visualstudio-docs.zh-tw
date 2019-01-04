@@ -1,9 +1,6 @@
 ---
-title: 逐步解說： 將應用程式頁面加入至工作流程 |Microsoft Docs
-ms.custom: ''
+title: 逐步解說：將應用程式頁面加入至工作流程 |Microsoft Docs
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,15 +15,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4bdb01e5cbb45b9986e61a99e18b5984e92d37dd
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: cb0dfa7212cae1dd4e7c62f71f423c0f8fd275d9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49866892"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53938195"
 ---
-# <a name="walkthrough-add-an-application-page-to-a-workflow"></a>逐步解說： 將應用程式頁面加入至工作流程
-  本逐步解說示範如何新增應用程式頁面，以顯示衍生自工作流程在工作流程專案的資料。 本文是根據本主題中所述的專案[逐步解說： 建立工作流程關聯與初始表單](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md)。
+# <a name="walkthrough-add-an-application-page-to-a-workflow"></a>逐步解說：將應用程式頁面加入至工作流程
+  本逐步解說示範如何新增應用程式頁面，以顯示衍生自工作流程在工作流程專案的資料。 本文是根據本主題所述之專案[逐步解說：建立工作流程關聯與初始表單](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md)。
 
  本逐步解說將示範下列工作：
 
@@ -45,14 +42,14 @@ ms.locfileid: "49866892"
 
 -   Visual Studio。
 
--   您也必須完成主題中的專案[逐步解說： 建立工作流程關聯與初始表單](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md)。
+-   您也必須完成主題中的專案[逐步解說：建立工作流程關聯與初始表單](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md)。
 
 ## <a name="ammend-the-workflow-code"></a>Ammend 工作流程程式碼
  首先，新增一行程式碼來設定結果資料行值的經費支出報表數量的工作流程。 此值稍後用於經費支出報表摘要計算。
 
 #### <a name="to-set-the-value-of-the-outcome-column-in-the-workflow"></a>若要設定工作流程中的結果資料行的值
 
-1.  載入已完成的專案從主題[逐步解說： 使用關聯與初始化表單建立工作流程](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md)到[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。
+1.  載入已完成的專案從主題[逐步解說：使用關聯與初始化表單建立工作流程](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md)成[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。
 
 2.  開啟的程式碼*Workflow1.cs*或是*workflow1.cs* （取決於您的程式語言）。
 
@@ -134,7 +131,7 @@ ms.locfileid: "49866892"
     using Microsoft.SharePoint.Navigation;
     ```
 
-3.  將下列程式碼加入 `Page_Load` 方法：
+3.  將下列程式碼加入至 `Page_Load` 方法中：
 
     ```vb
     Try
@@ -352,7 +349,7 @@ ms.locfileid: "49866892"
 
 ## <a name="see-also"></a>另請參閱
 
-- [逐步解說： 使用關聯與初始表單建立工作流程](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md)
-- [如何： 建立應用程式頁面](../sharepoint/how-to-create-an-application-page.md)
+- [逐步解說：使用關聯與初始表單建立工作流程](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md)
+- [如何：建立應用程式頁面](../sharepoint/how-to-create-an-application-page.md)
 - [建立 SharePoint 相關應用程式頁面](../sharepoint/creating-application-pages-for-sharepoint.md)
 - [開發 SharePoint 方案](../sharepoint/developing-sharepoint-solutions.md)

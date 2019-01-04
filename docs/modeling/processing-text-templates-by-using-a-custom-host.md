@@ -11,13 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 87d9f5f489bffcc624ff758c89e5d3a230a68d01
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 12c443879ebbe142dde69a713d214c3b79b254ea
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859337"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53865436"
 ---
 # <a name="process-text-templates-by-using-a-custom-host"></a>使用自訂主機處理文字範本
 
@@ -52,8 +51,8 @@ string output = engine.ProcessTemplate(templateString, host);
 
  <xref:Microsoft.VisualStudio.TextTemplating.Engine?displayProperty=fullName> 定義於**Microsoft.VisualStudio.TextTemplating。\*。0.log dll**，並<xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>中定義**Microsoft.VisualStudio.TextTemplating.Interfaces。\*。0.log dll**。
 
-## <a name="in-this-section"></a>本節內容
- [逐步解說： 建立自訂文字範本主機](../modeling/walkthrough-creating-a-custom-text-template-host.md)示範如何建立自訂文字範本主機，讓 Visual Studio 之外，您可以使用文字範本功能。
+## <a name="in-this-section"></a>本章節內容
+ [逐步解說：建立自訂的文字範本主機](../modeling/walkthrough-creating-a-custom-text-template-host.md)示範如何建立自訂文字範本主機，讓 Visual Studio 之外，您可以使用文字範本功能。
 
 ## <a name="reference"></a>參考資料
  <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>

@@ -1,9 +1,6 @@
 ---
 title: 使用者入門 （Visual Studio 中的 SharePoint 程式開發） |Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a8078ff645227e07d7facbaf773c310546afdf2a
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 2159bbec0d89b43d37bcdd3c30a60ad9b329531c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295211"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53847410"
 ---
 # <a name="get-started-sharepoint-development-in-visual-studio"></a>取得已啟動 （中的 SharePoint 開發 Visual Studio）
   本節可協助您開始使用利用 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 和 [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] 的 [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)]開發 SharePoint 解決方案。

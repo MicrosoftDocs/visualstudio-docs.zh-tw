@@ -1,9 +1,6 @@
 ---
 title: 變更檢視設定，以使用舊版 API |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - changing view settings
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f92c4146cc40aff6cf4c73ab3652f68f33a27b51
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 08c23aa1705880b444fdf036ee269bcc8ae32dfa
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39077964"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53902420"
 ---
 # <a name="change-view-settings-by-using-the-legacy-api"></a>使用舊版的 API 來變更檢視設定
 設定核心編輯器功能，例如自動換行、 選取範圍邊界和虛擬空間，可以藉由使用者變更**選項** 對話方塊。 不過，您也可變更這些設定以程式設計的方式。  

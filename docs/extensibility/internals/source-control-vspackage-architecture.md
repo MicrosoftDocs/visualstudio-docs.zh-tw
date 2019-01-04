@@ -1,9 +1,6 @@
 ---
 title: 原始檔控制 VSPackage 架構 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - source control packages, architecture
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e8a6b4c1e36f092bce89c57a2ead07a9e1a96a0f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c2d20b2f36bded3affde266422308bf3cd60db8e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49884130"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53837910"
 ---
 # <a name="source-control-vspackage-architecture"></a>原始檔控制 VSPackage 架構
 原始檔控制封裝是使用 VSPackage 的服務會[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]IDE 所提供。 原始檔控制套件提供原始檔控制服務的功能。 此外，原始檔控制封裝是一個更靈活的替代方式，比原始檔控制整合到原始檔控制外掛程式[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。  

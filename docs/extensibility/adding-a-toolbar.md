@@ -1,9 +1,6 @@
 ---
 title: 新增工具列 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - toolbars [Visual Studio], adding to IDE
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a2888ab6fade4893389af23ff456a63ffc5fbc40
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 6fa301a146dec9e7ee9b2f7edcaa6480e6bf5fef
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39151975"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53934738"
 ---
 # <a name="add-a-toolbar"></a>新增工具列
 本逐步解說示範如何將工具列新增至 Visual Studio IDE。  

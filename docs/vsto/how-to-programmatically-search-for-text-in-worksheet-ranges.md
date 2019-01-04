@@ -1,9 +1,6 @@
 ---
-title: 如何： 以程式設計方式在工作表範圍中的文字搜尋
-ms.custom: ''
+title: HOW TO：以程式設計方式在工作表範圍中的文字搜尋
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,14 +14,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a323336979e16be376cfcd3da44cbc9b12bd73ea
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: dba0ce5928b61b1ec6b5777e1922cc68f8ed57ee
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50671959"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53826123"
 ---
-# <a name="how-to-programmatically-search-for-text-in-worksheet-ranges"></a>如何： 以程式設計方式在工作表範圍中搜尋的文字
+# <a name="how-to-programmatically-search-for-text-in-worksheet-ranges"></a>HOW TO：以程式設計方式在工作表範圍中搜尋的文字
   <xref:Microsoft.Office.Interop.Excel.Range.Find%2A>方法的<xref:Microsoft.Office.Interop.Excel.Range>物件可讓您搜尋的範圍內的文字。 這段文字也可以是任何錯誤字串，例如可以出現在工作表儲存格中`#NULL!`或`#VALUE!`。 如需詳細的錯誤字串的詳細資訊，請參閱[儲存格的錯誤值](/office/vba/excel/Concepts/Cells-and-Ranges/cell-error-values)。  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
@@ -34,7 +31,7 @@ ms.locfileid: "50671959"
 > [!NOTE]  
 >  <xref:Microsoft.Office.Interop.Excel.Range.FindNext%2A>它達到範圍的結尾後方法的搜尋會繞回搜尋範圍的開頭。 您的程式碼必須確定，搜尋不會環繞在無限迴圈。 此範例程序示範一種方式處理這種使用<xref:Microsoft.Office.Interop.Excel.Range.Address%2A>屬性。  
   
- ![影片連結](../vsto/media/playvideo.gif "影片連結")如需相關的影片示範，請參閱[How do i： 使用 Excel 增益集中的 Find 方法？](http://go.microsoft.com/fwlink/?LinkID=130294)。  
+ ![影片連結](../vsto/media/playvideo.gif "影片連結")如需相關的影片示範，請參閱[How do i:Excel 增益集中使用 Find 方法嗎？](http://go.microsoft.com/fwlink/?LinkID=130294).  
   
 ## <a name="to-search-for-text-in-a-worksheet-range"></a>若要在工作表範圍中搜尋文字  
   
@@ -81,8 +78,6 @@ ms.locfileid: "50671959"
   
 ## <a name="see-also"></a>另請參閱  
  [使用範圍](../vsto/working-with-ranges.md)   
- [如何： 以程式設計方式將樣式套用至活頁簿中的範圍](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)   
- [如何： 以程式設計方式參考程式碼中的工作表範圍](../vsto/how-to-programmatically-refer-to-worksheet-ranges-in-code.md)   
+ [如何：以程式設計方式將樣式套用至活頁簿中的範圍](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)   
+ [如何：以程式設計方式參考程式碼中的工作表範圍](../vsto/how-to-programmatically-refer-to-worksheet-ranges-in-code.md)   
  [Office 方案中的選擇性參數](../vsto/optional-parameters-in-office-solutions.md)  
-  
-  

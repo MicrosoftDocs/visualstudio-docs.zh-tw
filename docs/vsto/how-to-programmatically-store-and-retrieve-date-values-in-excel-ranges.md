@@ -1,9 +1,6 @@
 ---
-title: 如何： 以程式設計方式儲存和擷取日期值在 Excel 範圍中
-ms.custom: ''
+title: HOW TO：以程式設計方式儲存和擷取日期值在 Excel 範圍中
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -22,14 +19,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0f1abe0e797a65886f595913f8e6495ec084b7e2
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: a28a357aa6a01615d269c6fba41c690f41c7b93d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35671399"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53863900"
 ---
-# <a name="how-to-programmatically-store-and-retrieve-date-values-in-excel-ranges"></a>如何： 以程式設計方式儲存和擷取日期值在 Excel 範圍中
+# <a name="how-to-programmatically-store-and-retrieve-date-values-in-excel-ranges"></a>HOW TO：以程式設計方式儲存和擷取日期值在 Excel 範圍中
   您可以儲存和擷取中的值<xref:Microsoft.Office.Tools.Excel.NamedRange>控制項或原生的 Excel 範圍物件。  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
@@ -87,8 +84,6 @@ ms.locfileid: "35671399"
  [使用範圍](../vsto/working-with-ranges.md)   
  [Excel 物件模型概觀](../vsto/excel-object-model-overview.md)   
  [NamedRange 控制項](../vsto/namedrange-control.md)   
- [如何： 以程式設計方式參考程式碼中的工作表範圍](../vsto/how-to-programmatically-refer-to-worksheet-ranges-in-code.md)   
- [如何： 將 NamedRange 控制項加入工作表](../vsto/how-to-add-namedrange-controls-to-worksheets.md)   
+ [如何：以程式設計方式參考程式碼中的工作表範圍](../vsto/how-to-programmatically-refer-to-worksheet-ranges-in-code.md)   
+ [如何：將 NamedRange 控制項加入工作表](../vsto/how-to-add-namedrange-controls-to-worksheets.md)   
  [Office 方案中的選擇性參數](../vsto/optional-parameters-in-office-solutions.md)  
-  
-  

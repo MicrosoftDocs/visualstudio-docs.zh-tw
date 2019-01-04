@@ -1,9 +1,6 @@
 ---
-title: 逐步解說： 使用功能區設計工具建立自訂索引標籤
-ms.custom: ''
+title: 逐步解說：使用功能區設計工具建立自訂的索引標籤
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -20,14 +17,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a0089880e143c3db8f260141d9936058bf35b1ce
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 4eda44b274a9720ac067f486706c7404853b0ffc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38808868"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53917588"
 ---
-# <a name="walkthrough-create-a-custom-tab-by-using-the-ribbon-designer"></a>逐步解說： 使用功能區設計工具建立自訂索引標籤
+# <a name="walkthrough-create-a-custom-tab-by-using-the-ribbon-designer"></a>逐步解說：使用功能區設計工具建立自訂的索引標籤
   您可以使用功能區設計工具，建立自訂索引標籤，然後在其上加入和放置控制項。  
   
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]  
@@ -55,7 +52,7 @@ ms.locfileid: "38808868"
   
 ### <a name="to-create-an-excel-workbook-project"></a>建立 Excel 活頁簿專案  
   
--   建立 Excel 活頁簿專案同名**MyExcelRibbon**。 如需詳細資訊，請參閱 [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
+-   建立 Excel 活頁簿專案同名**MyExcelRibbon**。 如需詳細資訊，請參閱[＜How to：在 Visual Studio 中建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
   
      Visual Studio 設計工具中開啟新的活頁簿，並將**MyExcelRibbon**專案加入**方案總管 中**。  
   
@@ -159,17 +156,15 @@ ms.locfileid: "38808868"
   
 -   將內容為主的 UI 加入至任何文件層級的自訂。 如需詳細資訊，請參閱 <<c0> [ 執行窗格概觀](../vsto/actions-pane-overview.md)。  
   
--   展開標準或自訂的 Microsoft Office Outlook 表單。 如需詳細資訊，請參閱 <<c0> [ 逐步解說： 設計 Outlook 表單區域](../vsto/walkthrough-designing-an-outlook-form-region.md)。  
+-   展開標準或自訂的 Microsoft Office Outlook 表單。 如需詳細資訊，請參閱[逐步解說：設計 Outlook 表單區域](../vsto/walkthrough-designing-an-outlook-form-region.md)。  
   
 ## <a name="see-also"></a>另請參閱  
  [在執行階段功能區的存取](../vsto/accessing-the-ribbon-at-run-time.md)   
  [功能區概觀](../vsto/ribbon-overview.md)   
  [功能區設計工具](../vsto/ribbon-designer.md)   
  [適用於 Outlook 自訂功能區](../vsto/customizing-a-ribbon-for-outlook.md)   
- [如何： 開始自訂功能區](../vsto/how-to-get-started-customizing-the-ribbon.md)   
- [如何： 變更功能區上的索引標籤的位置](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md)   
- [如何： 自訂內建索引標籤](../vsto/how-to-customize-a-built-in-tab.md)   
- [如何： 將控制項加入至 backstage 檢視](../vsto/how-to-add-controls-to-the-backstage-view.md)   
+ [如何：開始自訂功能區](../vsto/how-to-get-started-customizing-the-ribbon.md)   
+ [如何：變更功能區上的索引標籤的位置](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md)   
+ [如何：自訂內建索引標籤](../vsto/how-to-customize-a-built-in-tab.md)   
+ [如何：將控制項加入至 backstage 檢視](../vsto/how-to-add-controls-to-the-backstage-view.md)   
  [功能區物件模型概觀](../vsto/ribbon-object-model-overview.md)  
-  
-  

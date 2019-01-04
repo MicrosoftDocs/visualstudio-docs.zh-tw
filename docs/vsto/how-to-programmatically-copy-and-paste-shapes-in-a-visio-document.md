@@ -1,9 +1,6 @@
 ---
-title: 如何： 以程式設計方式複製並貼上 Visio 文件中的圖形
-ms.custom: ''
+title: HOW TO：以程式設計方式複製並貼上 Visio 文件中的圖形
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e0028b11899e05adde1dd1b5483b71d2c48101db
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: a7994d605d22b38b64219a384e5afb0b002ff755
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50671491"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53856484"
 ---
-# <a name="how-to-programmatically-copy-and-paste-shapes-in-a-visio-document"></a>如何： 以程式設計方式複製並貼上 Visio 文件中的圖形
+# <a name="how-to-programmatically-copy-and-paste-shapes-in-a-visio-document"></a>HOW TO：以程式設計方式複製並貼上 Visio 文件中的圖形
   您可以程式設計方式，將文件頁面上的圖形複製貼到同一份文件的另一個新頁面上。 您可以選擇將圖形貼到預設位置 (使用中視窗的中央)，或是貼到與原始頁面一樣的座標位置。  
   
 ## <a name="copy-and-paste-shapes"></a>複製並貼上圖形  
@@ -52,6 +49,4 @@ ms.locfileid: "50671491"
  [Visio 方案](../vsto/visio-solutions.md)   
  [Visio 物件模型概觀](../vsto/visio-object-model-overview.md)   
  [使用 Visio 圖案](../vsto/working-with-visio-shapes.md)   
- [如何： 以程式設計方式在 Visio 文件中加入圖形](../vsto/how-to-programmatically-add-shapes-to-a-visio-document.md)  
-  
-  
+ [如何：以程式設計方式在 Visio 文件中加入圖形](../vsto/how-to-programmatically-add-shapes-to-a-visio-document.md)  

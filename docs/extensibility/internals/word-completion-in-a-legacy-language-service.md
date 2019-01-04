@@ -1,9 +1,6 @@
 ---
 title: 舊版語言服務中字完成 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - language services [managed package framework], IntelliSense Complete Word
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 55fbe636c77d77b3b4f61f9f56a4fa91fe49a090
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6cd60db1a18280d616d06a5f37bc5a7fc446bc7e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49879073"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53929328"
 ---
 # <a name="word-completion-in-a-legacy-language-service"></a>舊版語言服務中的文字自動完成
 文字自動完成會填入遺漏的字元，在部分輸入的字組。 如果只有一個可能的完成，這個字被完成時完成輸入的字元是。 如果部分文字比對一個以上的可能性，會顯示可能的完成清單。 完成字元可以是任何字元，不會用於識別項。  

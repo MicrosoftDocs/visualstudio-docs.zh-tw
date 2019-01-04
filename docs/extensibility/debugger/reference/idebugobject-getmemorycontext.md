@@ -1,9 +1,6 @@
 ---
 title: IDebugObject::GetMemoryContext |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugObject::GetMemoryContext
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 657b3b214cd099cf6359b7466c58a1311a8b1677
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0d4b8929b9ed341bfa1666463349f0ab55f4bbbd
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49869882"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53938208"
 ---
 # <a name="idebugobjectgetmemorycontext"></a>IDebugObject::GetMemoryContext
 取得代表物件的值的位址的記憶體內容。  
@@ -28,7 +25,7 @@ ms.locfileid: "49869882"
 ## <a name="syntax"></a>語法  
   
 ```cpp  
-HRESULT GetMemoryContext(   
+HRESULT GetMemoryContext(   
    IDebugMemoryContext2** pContext  
 );  
 ```  

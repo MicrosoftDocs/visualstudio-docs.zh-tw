@@ -1,9 +1,6 @@
 ---
 title: IDebugStackFrame2::GetInfo |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugStackFrame2::GetInfo
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 31c63db74410e6a742b5076a8ddda25b562f86f6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: fb1acd489d057173fccd40a2d5f861469dafd325
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49853892"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53937893"
 ---
 # <a name="idebugstackframe2getinfo"></a>IDebugStackFrame2::GetInfo
 取得堆疊框架的描述。  
@@ -28,7 +25,7 @@ ms.locfileid: "49853892"
 ## <a name="syntax"></a>語法  
   
 ```cpp  
-HRESULT GetInfo (   
+HRESULT GetInfo (   
    FRAMEINFO_FLAGS dwFieldSpec,  
    UINT            nRadix,  
    FRAMEINFO*      pFrameInfo  
@@ -36,7 +33,7 @@ HRESULT GetInfo (
 ```  
   
 ```csharp  
-int GetInfo (   
+int GetInfo (   
    enum_FRAMEINFO_FLAGS dwFieldSpec,  
    uint                 nRadix,  
    FRAMEINFO[]          pFrameInfo  

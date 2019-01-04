@@ -1,9 +1,6 @@
 ---
 title: QUERYCHANGESFUNC |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - QUERYCHANGESFUNC
@@ -16,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 74b5241a14ebaecb05db36a9ab4e1b808917afa5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1a50de0f08f5e31404a6dbe2cbf3a268ee53cc69
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49879177"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53855006"
 ---
 # <a name="querychangesfunc"></a>QUERYCHANGESFUNC
 這是所使用的回呼函式[SccQueryChanges](../extensibility/sccquerychanges-function.md)操作列舉的檔案名稱集合，並判斷每個檔案的狀態。  

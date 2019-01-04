@@ -1,9 +1,6 @@
 ---
 title: IDebugProcess3::Step |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugProcess3::Step
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8b48fd74c3edc3f200ef05d143464b3e5ce79bd8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 14b06aa06ed4b007c17fa88ecffccc27a0563127
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49872248"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53921376"
 ---
 # <a name="idebugprocess3step"></a>IDebugProcess3::Step
 讓逐步一指令或陳述式的處理序。  

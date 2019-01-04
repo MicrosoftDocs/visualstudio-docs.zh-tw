@@ -1,9 +1,6 @@
 ---
 title: 使用 Interop 組件的命令和功能表 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - menus, using interop assemblies
@@ -16,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2212d9eb38487bf824fd8df3c497d9f256379c10
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a1d87d761d27e9b77034eb5c36a71b4b5283de59
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49907803"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53831059"
 ---
 # <a name="commands-and-menus-that-use-interop-assemblies"></a>使用 Interop 組件的命令和功能表
 使用 Interop 組件中實作功能表和工具列命令的 VSPackage 必須：  

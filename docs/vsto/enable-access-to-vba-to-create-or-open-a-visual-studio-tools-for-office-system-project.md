@@ -4,7 +4,6 @@ decsprition: You must explicitly enable access to the Office VBA project system 
 titleSuffix: ''
 ms.custom: seodec18
 ms.date: 02/02/2017
-ms.technology: office-development
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
@@ -21,12 +20,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1b1a7be701c9bec45011980ced63051150579ca7
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: 0404498490569d3c9edee5b9e190535eafcb105b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53647566"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53933485"
 ---
 # <a name="enable-access-to-vba-to-create-or-open-a-visual-studio-tools-for-the-microsoft-office-system-project"></a>啟用存取權建立或開啟 Visual Studio Tools for the Microsoft Office system 專案的 VBA
 

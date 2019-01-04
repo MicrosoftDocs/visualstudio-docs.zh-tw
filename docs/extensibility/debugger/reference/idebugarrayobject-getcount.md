@@ -1,9 +1,6 @@
 ---
 title: IDebugArrayObject::GetCount |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugArrayObject::GetCount
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4edfaf7b9ef655473244bdcd18bf6b2c31b8210d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1ab25e2dacce444ad8b72bb86dc2e07bf7ae8c34
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49891397"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53908601"
 ---
 # <a name="idebugarrayobjectgetcount"></a>IDebugArrayObject::GetCount
 取得陣列中的項目數目。  
@@ -29,7 +26,7 @@ ms.locfileid: "49891397"
   
 ```  
 [C++]  
-HRESULT GetCount(   
+HRESULT GetCount(   
    DWORD* pdwElements  
 );  
 ```  

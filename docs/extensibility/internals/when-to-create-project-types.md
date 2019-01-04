@@ -1,9 +1,6 @@
 ---
 title: 建立專案類型的時機 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - project types, conditions for creating
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5bfa51dfbed4fb0c78892b06e9377e36a1be38ea
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: 2f2c95b2275389bf02755440745ad3b788956722
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46495215"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53827711"
 ---
 # <a name="when-to-create-project-types"></a>建立專案類型的時機
 建立新的專案類型提供基礎自訂[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]為您的使用者。 不過，建立新的專案類型不需要所有[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]自訂項目。 下列指導方針可協助您判斷新的專案類型是否需要針對您的案例。  
@@ -62,5 +59,5 @@ ms.locfileid: "46495215"
   
 ## <a name="see-also"></a>另請參閱  
  [文件的 Windows 和編輯器](https://msdn.microsoft.com/library/603625e1-62b6-413a-bc44-089346e166bc)   
- [檢查清單： 建立新的專案類型](../../extensibility/internals/checklist-creating-new-project-types.md)   
+ [檢查清單：建立新的專案類型](../../extensibility/internals/checklist-creating-new-project-types.md)   
  [Visual Studio 中的階層](../../extensibility/internals/hierarchies-in-visual-studio.md)

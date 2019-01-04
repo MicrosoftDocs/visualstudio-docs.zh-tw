@@ -1,8 +1,6 @@
 ---
 title: 如何往返擴充功能
 ms.date: 06/25/2017
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 2d6cf53c-011e-4c9e-9935-417edca8c486
 author: willbrown
@@ -10,14 +8,14 @@ ms.author: gregvanl
 manager: justinclareburt
 ms.workload:
 - willbrown
-ms.openlocfilehash: 826089f1018bc6156cd49bab3afb19e7bb34a47d
-ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
+ms.openlocfilehash: 809ca83d164b4cb589f19438b1fc5672cc1b4b8e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50750728"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53880948"
 ---
-# <a name="how-to-make-extensions-compatible-with-visual-studio-2017-and-visual-studio-2015"></a>如何： 讓延伸模組與 Visual Studio 2017 和 Visual Studio 2015 相容
+# <a name="how-to-make-extensions-compatible-with-visual-studio-2017-and-visual-studio-2015"></a>HOW TO：讓擴充功能與 Visual Studio 2017 和 Visual Studio 2015 相容
 
 本文件說明如何讓 Visual Studio 2015 和 Visual Studio 2017 之間反覆存取的擴充性專案。 完成這項升級之後, 的專案就可以開啟、 建置、 安裝及 Visual Studio 2015 和 Visual Studio 2017 中執行。 做為參考，可以反覆存取 Visual Studio 2015 和 Visual Studio 2017 之間的某些延伸模組可在[VS SDK 擴充性範例](https://github.com/Microsoft/VSSDK-Extensibility-Samples)。
 

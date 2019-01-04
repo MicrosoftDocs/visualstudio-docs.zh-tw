@@ -1,9 +1,6 @@
 ---
 title: IDebugMemoryContext2::Compare |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugMemoryContext2::Compare
@@ -16,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5be5c6dccecc8191030482c282033aa6159f2022
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 86ba475aa9eab6b6cd878f9051e5851611955cf1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49873899"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53851173"
 ---
 # <a name="idebugmemorycontext2compare"></a>IDebugMemoryContext2::Compare
 比較每個內容中的比較旗標，傳回的第一個符合之內容的索引所指示的方式在給定陣列中的記憶體內容。  
@@ -29,7 +26,7 @@ ms.locfileid: "49873899"
 ## <a name="syntax"></a>語法  
   
 ```cpp  
-HRESULT Compare(   
+HRESULT Compare(   
    CONTEXT_COMPARE        compare,  
    IDebugMemoryContext2** rgpMemoryContextSet,  
    DWORD                  dwMemoryContextSetLen,  

@@ -1,8 +1,6 @@
 ---
 title: Office 方案的應用程式資訊清單
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology: office-development
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +13,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1d60ffdc82e6465a81e1d96b89a39abf66c20e37
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: bd88f7978e7c848d925f21bae6a0a3ad27792e67
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53802961"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53950630"
 ---
 # <a name="application-manifests-for-office-solutions"></a>Office 方案的應用程式資訊清單
   應用程式資訊清單是描述載入至 Microsoft Office 方案之組件的 XML 檔案。 Microsoft Office 開發工具，在 Visual Studio 中的使用[!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]應用程式資訊清單結構描述中定義[ClickOnce 應用程式資訊清單](../deployment/clickonce-application-manifest.md)參考。

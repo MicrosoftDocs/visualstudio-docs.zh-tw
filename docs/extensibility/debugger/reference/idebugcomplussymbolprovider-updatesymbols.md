@@ -1,9 +1,6 @@
 ---
 title: IDebugComPlusSymbolProvider::UpdateSymbols |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - UpdateSymbols
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 56a93435ac4b7cfa6741a106a025b20f11d1b6e2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: bad7f7d4d8127e814f4b89a8309ee59ca670553c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49928538"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53897783"
 ---
 # <a name="idebugcomplussymbolproviderupdatesymbols"></a>IDebugComPlusSymbolProvider::UpdateSymbols
 取代為指定的資料流，更新記憶體中的偵錯符號。  

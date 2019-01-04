@@ -1,9 +1,6 @@
 ---
-title: 如何： 執行程式碼時在 SharePoint 專案是部署或撤銷 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：執行程式碼時在 SharePoint 專案是部署或撤銷 |Microsoft Docs
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,27 +12,27 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: da1b6dd4ff71bcc78043ea88c8f833b9c0f32a38
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: bb5ba251df3271e704ea4b455c5cc47003ab8e2e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49832442"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53933618"
 ---
-# <a name="how-to-run-code-when-a-sharepoint-project-is-deployed-or-retracted"></a>如何： 部署或撤回 SharePoint 專案時執行程式碼
+# <a name="how-to-run-code-when-a-sharepoint-project-is-deployed-or-retracted"></a>HOW TO：SharePoint 專案部署或撤銷時執行程式碼
   如果您想要部署或撤回 SharePoint 專案時執行其他工作，您可以處理由 Visual Studio 所引發的事件。 如需詳細資訊，請參閱 <<c0> [ 擴充 SharePoint 封裝和部署](../sharepoint/extending-sharepoint-packaging-and-deployment.md)。  
   
 ### <a name="to-run-code-when-a-sharepoint-project-is-deployed-or-retracted"></a>若要執行的程式碼時的 SharePoint 專案部署或撤銷  
   
 1. 建立專案項目延伸模組、 專案擴充功能或新的專案項目類型定義。 如需詳細資訊，請參閱下列主題：  
   
-   -   [如何： 建立 SharePoint 專案項目擴充功能](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md)  
+   -   [如何：建立 SharePoint 專案項目擴充功能](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md)  
   
-   -   [如何： 建立 SharePoint 專案擴充功能](../sharepoint/how-to-create-a-sharepoint-project-extension.md)  
+   -   [如何：建立 SharePoint 專案擴充功能](../sharepoint/how-to-create-a-sharepoint-project-extension.md)  
   
-   -   [如何： 定義 SharePoint 專案項目類型](../sharepoint/how-to-define-a-sharepoint-project-item-type.md)  
+   -   [如何：定義 SharePoint 專案項目類型](../sharepoint/how-to-define-a-sharepoint-project-item-type.md)  
   
-2. 在 擴充功能，存取<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService>物件。 如需詳細資訊，請參閱 <<c0> [ 如何： 擷取 SharePoint 專案服務](../sharepoint/how-to-retrieve-the-sharepoint-project-service.md)。  
+2. 在 擴充功能，存取<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService>物件。 如需詳細資訊，請參閱[＜How to：擷取 SharePoint 專案服務](../sharepoint/how-to-retrieve-the-sharepoint-project-service.md)。  
   
 3. 處理<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.DeploymentStarted>和<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.DeploymentCompleted>專案服務的事件。  
   
@@ -58,5 +55,4 @@ ms.locfileid: "49832442"
   
 ## <a name="see-also"></a>另請參閱
  [擴充 SharePoint 封裝和部署](../sharepoint/extending-sharepoint-packaging-and-deployment.md)   
- [如何： 執行部署步驟時執行程式碼](../sharepoint/how-to-run-code-when-deployment-steps-are-executed.md)  
-  
+ [如何：執行部署步驟時執行程式碼](../sharepoint/how-to-run-code-when-deployment-steps-are-executed.md)  

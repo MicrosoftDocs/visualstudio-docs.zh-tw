@@ -1,9 +1,6 @@
 ---
-title: IDebugPortSupplierDescription2 |Microsoft 文件
-ms.custom: ''
+title: IDebugPortSupplierDescription2 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - IDebugPortSupplierDescription2 interface
@@ -13,15 +10,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c15facb38037272dcf2cef4f06d84d835b874012
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f6387708232c97a25ea11fc554d250e14e6b66e8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31112831"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53818335"
 ---
 # <a name="idebugportsupplierdescription2"></a>IDebugPortSupplierDescription2
-可讓[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]顯示文字內的 UI**傳輸資訊**區段**附加至處理序** 對話方塊。  
+可讓[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]UI，以顯示內部文字**傳輸資訊**一節**附加至處理序** 對話方塊。  
   
 ## <a name="syntax"></a>語法  
   
@@ -29,19 +26,19 @@ ms.locfileid: "31112831"
 IDebugPortSupplierDescription2 : IUnknown  
 ```  
   
-## <a name="notes-for-implementers"></a>實作者注意事項  
- 實作這個介面是由連接埠供應商。  
+## <a name="notes-for-implementers"></a>實作者的附註  
+ 連接埠提供者會實作這個介面。  
   
 ## <a name="methods"></a>方法  
  下表顯示的方法`IDebugPortSupplierDescription2`。  
   
 |方法|描述|  
 |------------|-----------------|  
-|[GetDescription](../../../extensibility/debugger/reference/idebugportsupplierdescription2-getdescription.md)|擷取連接埠供應商的描述和描述中繼資料。|  
+|[GetDescription](../../../extensibility/debugger/reference/idebugportsupplierdescription2-getdescription.md)|擷取連接埠提供者的描述和描述中繼資料。|  
   
 ## <a name="requirements"></a>需求  
- 標頭： Msdbg.h  
+ 標頭：Msdbg.h  
   
- 命名空間： Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間:Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
+ 組件︰Microsoft.VisualStudio.Debugger.Interop.dll

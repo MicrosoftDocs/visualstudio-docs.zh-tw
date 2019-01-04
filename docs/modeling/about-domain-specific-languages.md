@@ -10,13 +10,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 501b85579460038d6d20ca38b17ab22be7825f5c
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: bef799b564c4d7bc7eada541bf0c88067403738e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176989"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53940810"
 ---
 # <a name="about-domain-specific-languages"></a>關於網域指定的語言
 

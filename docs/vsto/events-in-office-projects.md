@@ -1,9 +1,6 @@
 ---
 title: Office 專案中的事件
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -35,12 +32,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5ed18bdcf0f4a7ef6dbb8a358cbf11fd7b49e628
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: 070c386434e6f63c06b9049985986fbae3f92f8d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53647644"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53929874"
 ---
 # <a name="events-in-office-projects"></a>Office 專案中的事件
   每個 Office 專案範本會自動產生數個事件處理常式。 文件層級自訂的事件處理常式與 VSTO 增益集的事件處理常式有些許不同。  
@@ -161,5 +158,3 @@ ms.locfileid: "53647644"
  [程式文件層級自訂](../vsto/programming-document-level-customizations.md)   
  [程式 VSTO 增益集](../vsto/programming-vsto-add-ins.md)   
  [Office 專案範本概觀](../vsto/office-project-templates-overview.md)  
-  
-  

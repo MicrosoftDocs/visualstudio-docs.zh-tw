@@ -1,9 +1,6 @@
 ---
 title: UsedCommand 元素 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - UsedCommands element (VSCT XML schema)
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4f7df36c05de0d8dc2f68ab8e41afa11366276b9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 697685ea3cf39cf1aede3d2a475d3d3bb39c587f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49856297"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53886042"
 ---
 # <a name="usedcommand-element"></a>UsedCommand 項目
 可讓 VSPackage 也可以存取另一個.vsct 檔案中定義的命令。 例如，如果您的 VSPackage 會使用標準**複製**命令，可定義[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]shell 中，您可以將命令加入功能表或工具列而不需要重新實作它。  
@@ -37,8 +34,8 @@ ms.locfileid: "49856297"
   
 |屬性|描述|  
 |---------------|-----------------|  
-|guid|必要。 識別命令的 GUID 識別碼組的 GUID。|  
-|id|必要。 識別命令的 GUID 識別碼組識別碼。|  
+|guid|必要項。 識別命令的 GUID 識別碼組的 GUID。|  
+|id|必要項。 識別命令的 GUID 識別碼組識別碼。|  
 |條件|選擇性。 請參閱[條件式屬性](../extensibility/vsct-xml-schema-conditional-attributes.md)。|  
   
 ### <a name="child-elements"></a>子元素  

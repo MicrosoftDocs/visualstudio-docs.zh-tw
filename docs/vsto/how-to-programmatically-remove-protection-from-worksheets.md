@@ -1,9 +1,6 @@
 ---
-title: 如何： 以程式設計方式移除工作表的保護
-ms.custom: ''
+title: HOW TO：以程式設計方式移除工作表的保護
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,14 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e15fd2f2d4a025155bbaa1d39dc5c38155b452e2
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: cd0aacdd168c65cda9f7ac57880e3216b3fb3daa
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35671606"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53956136"
 ---
-# <a name="how-to-programmatically-remove-protection-from-worksheets"></a>如何： 以程式設計方式移除工作表的保護
+# <a name="how-to-programmatically-remove-protection-from-worksheets"></a>HOW TO：以程式設計方式移除工作表的保護
   您可以程式設計的方式，移除 Microsoft Office Excel 工作表保護。  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
@@ -48,9 +45,7 @@ ms.locfileid: "35671606"
   
 ## <a name="see-also"></a>另請參閱  
  [使用工作表](../vsto/working-with-worksheets.md)   
- [如何： 以程式設計方式保護工作表](../vsto/how-to-programmatically-protect-worksheets.md)   
- [如何： 以程式設計方式保護活頁簿](../vsto/how-to-programmatically-protect-workbooks.md)   
- [如何： 以程式設計方式隱藏工作表](../vsto/how-to-programmatically-hide-worksheets.md)   
+ [如何：以程式設計方式保護工作表](../vsto/how-to-programmatically-protect-worksheets.md)   
+ [如何：以程式設計方式保護活頁簿](../vsto/how-to-programmatically-protect-workbooks.md)   
+ [如何：以程式設計方式隱藏工作表](../vsto/how-to-programmatically-hide-worksheets.md)   
  [全域存取 Office 專案中的物件](../vsto/global-access-to-objects-in-office-projects.md)  
-  
-  

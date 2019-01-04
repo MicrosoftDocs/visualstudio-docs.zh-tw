@@ -2,7 +2,6 @@
 title: 從 IDE 或命令列產生程式碼度量
 ms.date: 11/02/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 helpviewer_keywords:
 - code metrics data
@@ -13,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 83ec85855e17f8798f55b01f043d47d7140278e7
-ms.sourcegitcommit: c7b16358a5d6f7ea1dd2f70a6ac2a8266efa9c15
+ms.openlocfilehash: 96b74421d638a99823399a0049b712bc6c54c8a9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/14/2018
-ms.locfileid: "53425769"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53849054"
 ---
 # <a name="how-to-generate-code-metrics-data"></a>HOW TO：產生程式碼度量資料
 

@@ -1,8 +1,6 @@
 ---
 title: 在執行階段功能區的存取
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology: office-development
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +15,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9a20297ee0d60173cbd0513f3d34e12f12388bdb
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: 85002184620d9ca76890a98eeb8ef522772c5879
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52304619"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53989486"
 ---
 # <a name="access-the-ribbon-at-runtime"></a>在執行階段功能區的存取
   您可以撰寫程式碼以顯示、隱藏和修改功能區，並且讓使用者從自訂工作窗格、執行窗格或 Outlook 表單區域中的控制項執行程式碼。  
@@ -62,7 +60,7 @@ ms.locfileid: "52304619"
  [功能區設計工具](../vsto/ribbon-designer.md)   
  [功能區 XML](../vsto/ribbon-xml.md)   
  [功能區物件模型概觀](../vsto/ribbon-object-model-overview.md)   
- [逐步解說： 使用功能區設計工具建立自訂索引標籤](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)   
- [逐步解說： 更新在執行階段的功能區上的控制項](../vsto/walkthrough-updating-the-controls-on-a-ribbon-at-run-time.md)   
+ [逐步解說：使用功能區設計工具建立自訂的索引標籤](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)   
+ [逐步解說：更新在執行階段的功能區上的控制項](../vsto/walkthrough-updating-the-controls-on-a-ribbon-at-run-time.md)   
  [適用於 Outlook 自訂功能區](../vsto/customizing-a-ribbon-for-outlook.md)   
  [存取表單區域在執行階段](../vsto/accessing-a-form-region-at-run-time.md)  

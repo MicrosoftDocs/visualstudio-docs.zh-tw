@@ -1,9 +1,6 @@
 ---
 title: 自訂參數 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - wizards, custom parameters
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 101076eb863294fe84ffed26d308f67110b90a33
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: c8c243490a88010031bad91d6b45fe5645d21e6e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39499448"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53826357"
 ---
 # <a name="custom-parameters"></a>自訂參數
 啟動精靈之後自訂參數可控制精靈的作業。 相關 *.vsz*檔案提供整合式的開發環境 (IDE) 封裝並啟動精靈時，傳遞給精靈的字串陣列作為使用者定義的參數陣列。 精靈接著會剖析的字串陣列，並使用的資訊，來控制精靈 的實際作業。 如此一來，精靈可以自訂功能，視內容而定 *.vsz*檔案。  

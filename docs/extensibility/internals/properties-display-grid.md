@@ -1,9 +1,6 @@
 ---
 title: 屬性會顯示格線 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - properties [Visual Studio SDK], grid
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 52bda19b6b4acf02b70963ab52431334d2f1f1fc
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 26dfbf505229ef3994f91e6f4af5eaf56b4d0d2a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49836667"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53949559"
 ---
 # <a name="properties-display-grid"></a>屬性顯示格線
 **屬性**視窗會顯示在方格內的欄位。 左側的資料行包含的屬性名稱;右邊的資料行包含的屬性值。  

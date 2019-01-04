@@ -1,9 +1,6 @@
 ---
 title: 在 Office 文件概觀上的 Windows Form 控制項
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -30,17 +27,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 51c671a583e4e96b51ae6627de1fce738696fe22
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 48778074587e5cf6e4a51ff2386a437e9c3922d7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49892775"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53902489"
 ---
 # <a name="windows-forms-controls-on-office-documents-overview"></a>在 Office 文件概觀上的 Windows Form 控制項
   Windows Forms 控制項是使用者可以互動，輸入或操作資料的物件。 在 Microsoft Office Excel 和 Microsoft Office Word 的文件層級專案，您可以將 Windows Form 控制項加入文件或活頁簿專案中在設計階段，或您可以在執行階段以程式設計方式加入這些控制項。 您可以程式設計方式加入這些控制項加入任何開啟的文件或 VSTO 增益集在執行階段的工作表的 Excel 或 Word。  
   
- 如需詳細資訊，請參閱 <<c0> [ 如何： 加入 Windows Form 控制項加入 Office 文件](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)。  
+ 如需詳細資訊，請參閱[＜How to：將 Windows Form 控制項加入 Office 文件](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)。  
   
  [!INCLUDE[appliesto_controls](../vsto/includes/appliesto-controls-md.md)]  
   
@@ -121,7 +118,7 @@ ms.locfileid: "49892775"
  在某些情況下，程式碼不會載入，並且只會顯示點陣圖，例如當使用者在設計模式中開啟活頁簿。 此外，如果使用者在沒有安裝 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 的電腦上開啟活頁簿，自訂無法執行以載入控制項，因此只能看到控制項的點陣圖。 您在儲存活頁簿並將它傳送給另一位使用者之前，應該務必從活頁簿上的控制項移除個人資訊，以確保您的個人資訊不會意外洩漏。  
   
 ### <a name="match-control-size-to-cell-size-on-an-excel-worksheet"></a>在 Excel 工作表上的儲存格大小的相符項目控制項大小  
- 您可以設定在父儲存格的大小變更時自動調整控制項的大小。 如需詳細資訊，請參閱 <<c0> [ 如何： 在工作表儲存格內的控制項重新調整大小](../vsto/how-to-resize-controls-within-worksheet-cells.md)。  
+ 您可以設定在父儲存格的大小變更時自動調整控制項的大小。 如需詳細資訊，請參閱[＜How to：調整工作表儲存格內的控制項大小](../vsto/how-to-resize-controls-within-worksheet-cells.md)。  
   
 ### <a name="add-components-that-are-shared-by-all-worksheets"></a>新增共用的所有工作表的元件  
  您可以將想要在所有工作表之間共用的元件，例如 <xref:System.Data.DataSet>，加入活頁簿設計工具，而不是加入工作表。 元件會出現在元件匣中。  
@@ -155,15 +152,13 @@ ms.locfileid: "49892775"
  [執行窗格概觀](../vsto/actions-pane-overview.md)   
  [Windows Form 控制項](/dotnet/framework/winforms/controls/index)   
  [Office 文件上的 Windows Form 控制項的限制](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)   
- [如何： 將 Windows Form 控制項加入 Office 文件](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)   
- [如何： 在工作表儲存格內的控制項重新調整大小](../vsto/how-to-resize-controls-within-worksheet-cells.md)   
- [如何： 列印時隱藏工作表的控制項](../vsto/how-to-hide-controls-on-worksheets-when-printing.md)   
- [逐步解說： 變更工作表的格式使用核取方塊控制項](../vsto/walkthrough-changing-worksheet-formatting-using-checkbox-controls.md)   
- [逐步解說： 變更文件格式使用核取方塊控制項](../vsto/walkthrough-changing-document-formatting-using-checkbox-controls.md)   
- [逐步解說： 使用按鈕在工作表中的文字方塊中顯示文字](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-worksheet-using-a-button.md)   
- [逐步解說： 使用按鈕文件中的文字方塊中顯示文字](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-document-using-a-button.md)   
+ [如何：將 Windows Form 控制項加入 Office 文件](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)   
+ [如何：調整工作表儲存格內的控制項的大小](../vsto/how-to-resize-controls-within-worksheet-cells.md)   
+ [如何：列印時隱藏工作表的控制項](../vsto/how-to-hide-controls-on-worksheets-when-printing.md)   
+ [逐步解說：變更工作表的格式使用核取方塊控制項](../vsto/walkthrough-changing-worksheet-formatting-using-checkbox-controls.md)   
+ [逐步解說：變更文件格式使用核取方塊控制項](../vsto/walkthrough-changing-document-formatting-using-checkbox-controls.md)   
+ [逐步解說：在文字方塊中，使用按鈕在工作表中的顯示文字](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-worksheet-using-a-button.md)   
+ [逐步解說：在文字方塊中，使用按鈕文件中的顯示文字](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-document-using-a-button.md)   
  [Office 文件上的 Windows Form 控制項的限制](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)   
- [逐步解說： 更新使用選項按鈕的文件中的圖表](../vsto/walkthrough-updating-a-chart-in-a-document-using-radio-buttons.md)   
- [逐步解說： 更新工作表使用選項按鈕中的圖表](../vsto/walkthrough-updating-a-chart-in-a-worksheet-using-radio-buttons.md)  
-  
-  
+ [逐步解說：更新使用選項按鈕的文件中的圖表](../vsto/walkthrough-updating-a-chart-in-a-document-using-radio-buttons.md)   
+ [逐步解說：更新使用選項按鈕在工作表中的圖表](../vsto/walkthrough-updating-a-chart-in-a-worksheet-using-radio-buttons.md)  

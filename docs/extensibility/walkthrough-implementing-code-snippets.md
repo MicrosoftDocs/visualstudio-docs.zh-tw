@@ -1,9 +1,6 @@
 ---
-title: 逐步解說： 實作程式碼片段 |Microsoft Docs
-ms.custom: ''
+title: 逐步解說：實作程式碼片段 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: adbc5382-d170-441c-9fd0-80faa1816478
 author: gregvanl
@@ -11,14 +8,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bd4a22dc63f0304cc8afa98e35c5f7afd6cac011
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4866f028851fadbee9f8ab5dbd6d4dc50015a728
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49921979"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53902184"
 ---
-# <a name="walkthrough-implement-code-snippets"></a>逐步解說： 實作程式碼片段
+# <a name="walkthrough-implement-code-snippets"></a>逐步解說：實作程式碼片段
 您可以建立程式碼片段，並將它們包含在編輯器擴充功能，以便延伸模組的使用者可以將它們加入自己的程式碼。  
   
  程式碼片段是程式碼或其他可以納入檔案中的文字片段。 若要檢視所有已註冊的特定程式設計語言，在程式碼片段**工具**功能表上，按一下**程式碼片段管理員**。 若要在檔案中，以滑鼠右鍵按一下您想要的程式碼片段中，插入程式碼片段中，按一下 插入程式碼片段，或**環繞**，找出您想，程式碼的片段，，然後按兩下它。 按下** 索引標籤**或是**Shift**+**索引標籤**修改程式碼片段的相關部分，然後按下**Enter**或**Esc**接受它。 如需詳細資訊，請參閱 <<c0> [ 程式碼片段](../ide/code-snippets.md)。  
@@ -33,7 +30,7 @@ ms.locfileid: "49921979"
   
 3. 實作程式碼片段展開。  
   
-   本逐步解說根據[逐步解說： 顯示陳述式完成](../extensibility/walkthrough-displaying-statement-completion.md)。  
+   本逐步解說根據[逐步解說：顯示陳述式完成](../extensibility/walkthrough-displaying-statement-completion.md)。  
   
 ## <a name="prerequisites"></a>必要條件  
  從 Visual Studio 2015 中，您未安裝 Visual Studio SDK 從下載中心取得。 它包含為 Visual Studio 安裝程式的選用功能。 您也可以在稍後安裝 VS SDK。 如需詳細資訊，請參閱 <<c0> [ 安裝 Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md)。  
@@ -112,7 +109,7 @@ ms.locfileid: "49921979"
   
 ### <a name="to-register-code-snippets-for-a-specific-guid"></a>若要針對特定的 GUID 註冊程式碼片段  
   
-1.  開啟**CompletionTest**專案。 如需有關如何建立此專案的資訊，請參閱 <<c0> [ 逐步解說： 顯示陳述式完成](../extensibility/walkthrough-displaying-statement-completion.md)。  
+1.  開啟**CompletionTest**專案。 如需有關如何建立此專案的資訊，請參閱[逐步解說：顯示陳述式完成](../extensibility/walkthrough-displaying-statement-completion.md)。  
   
 2.  在專案中，新增下列組件的參考：  
   

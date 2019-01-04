@@ -17,18 +17,17 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: ed1259ef04f59d37752d89f922623b963bcbbc22
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: 7e99e37f99d067356d24e2808754696dc233e50f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50967528"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53959491"
 ---
 # <a name="how-to-define-a-domain-specific-language"></a>如何定義網域指定的語言
 若要定義特定領域語言 (DSL)，您可以從範本建立 Visual Studio 方案。 該方案的關鍵部分是儲存在 DslDefinition.dsl 中的 DSL 定義圖。 [DSL 定義] 可定義 DSL 的類別和圖形。 在修改並加入這些項目之後，您可以加入程式碼，即可以更詳細的方式自訂 DSL。
 
-如果您不熟悉 dsl，建議您逐步**DSL 工具實驗室**，您可以找到此站台中： [Visualizaton and Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=186128)
+如果您不熟悉 dsl，建議您逐步**DSL 工具實驗室**，您可以找到此站台：[Visualizaton 與模型 SDK](http://go.microsoft.com/fwlink/?LinkID=186128)
 
 ## <a name="templates"></a> 選取範本方案
  若要定義 DSL，您必須已安裝下列元件：
@@ -169,9 +168,9 @@ ms.locfileid: "50967528"
 
 |項目的顯示方式|父 (內嵌) 類別|DSL 方案範本中的範例|
 |-|-|-|
-|圖表上的圖形。<br /><br /> 泳道。|DSL 的根類別。|最小語言。<br /><br /> 工作流程：行動類別。|
+|圖表上的圖形。<br /><br /> 泳道。|DSL 的根類別。|最小語言。<br /><br /> 工作流程：動作項目類別。|
 |泳道中的圖形。|顯示為泳道的項目網域類別。|工作流程：工作類別。|
-|圖形中的清單項目，其中刪除容器時會刪除項目。<br /><br /> 圖形邊緣的連接埠。|對應到容器圖形的網域類別。|類別圖：屬性類別。<br /><br /> 元件圖：連接埠類別。|
+|圖形中的清單項目，其中刪除容器時會刪除項目。<br /><br /> 圖形邊緣的連接埠。|對應到容器圖形的網域類別。|類別圖表：屬性類別。<br /><br /> 元件圖：連接埠類別。|
 |清單中的項目，刪除容器時並不會刪除。|DSL 的根類別。<br /><br /> 此清單顯示參考連結。||
 |不直接顯示。|其形成部分所屬的類別。||
 
@@ -187,7 +186,7 @@ ms.locfileid: "50967528"
 >  內嵌與繼承不同。 內嵌關聯性中的子系並不從其父系繼承功能。
 
 ### <a name="add-domain-properties-to-each-domain-class"></a>將網域屬性加入每一個網域類別
- 網域屬性會儲存值。 範例為：「名稱」、「標題」、「發佈日期」。
+ 網域屬性會儲存值。 範例如下：名稱、 標題、 發行集的日期。
 
  按一下 **定義域屬性**在類別中，按下 ENTER 鍵，然後輸入名稱的屬性。 網域屬性的預設類型為字串。 如果您想要變更的類型，選取網域屬性，並設定**型別**中**屬性**視窗。 如果您想要的類型不在下拉式清單中，請參閱[加入屬性類型](#addTypes)。
 
@@ -409,7 +408,7 @@ ms.locfileid: "50967528"
 
    先測試連接器之後，您可能想要調整其部分屬性以及加入一些其他的進階功能。 如需詳細資訊，請參閱 <<c0> [ 自訂及擴充特定領域語言](../modeling/customizing-and-extending-a-domain-specific-language.md)。
 
-## <a name="compartments"></a> 定義包含清單的圖形： 區間圖形
+## <a name="compartments"></a> 定義包含清單的圖形：區間圖形
  區間圖形包含一或多個項目清單。 例如，在音樂庫 DSL 中，您可以使用區間圖形來代表音樂 Album。 在每一個 Album 中都有一份 Song 清單。
 
  ![區間圖案](../modeling/media/compartmentshape.png)
@@ -605,7 +604,7 @@ ms.locfileid: "50967528"
 
  因此，您應了解當您在 DSL 定義中變更某些關聯性時，儲存定義或轉換所有範本時，回報錯誤的情形並非不尋常。 其中大部分的錯誤都很容易修正。 按兩下錯誤報告可查看錯誤的位置。
 
- 另請參閱[如何： 變更特定領域語言命名空間](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md)。
+ 另請參閱[如何：變更定義域專屬語言命名空間](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md)。
 
 ## <a name="trouble"></a> 疑難排解
  下表列出在設計 DSL 時會遇到的一些最常見的問題，以及對其方案的建議事項。 更多建議位於[視覺效果工具可擴充性論壇](http://go.microsoft.com/fwlink/?LinkId=186074)。
@@ -619,8 +618,8 @@ ms.locfileid: "50967528"
 | 我建立了網域類別，但是無法在語言總管中建立執行個體。 | 每個網域類別 (根類別除外) 都必須是一個內嵌關聯性的目標。 |
 | 在我的 DSL 總管中，項目只會與其類型名稱一起顯示。 | 在 DSL 定義中，選取 網域屬性的類別，並在 屬性 視窗中，將**Is Element Name**設為 true。 |
 | My DSL 一律在 XML 編輯器中開啟。 | 這種情況的發生原因是在讀取檔案時所發生的錯誤。 然而，即使在修正該錯誤之後，您都必須明確地將編輯器重設為 DSL 設計工具。<br /><br /> 以滑鼠右鍵按一下專案項目，請按一下**開啟**，然後選取 * YourLanguage ***設計工具 （預設值）**。 |
-| 變更組件名稱之後未出現 DSL 的工具箱。 | 檢查並更新**DslPackage\GeneratedCode\Package.tt**如需詳細資訊，請參閱[如何： 變更特定領域語言命名空間](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md)。 |
-| DSL 的工具箱未出現，但是我未變更組件名稱。<br /><br /> 或者，出現一個訊息方塊，回報載入擴充功能失敗。 | 重設實驗執行個體，然後重建方案。<br /><br /> 1.在 Windows 啟動 功能表底下**所有程式**，展開[!INCLUDE[vssdk_current_long](../misc/includes/vssdk_current_long_md.md)]，然後**工具**，然後按一下**重設 Microsoft Visual Studio 實驗執行個體**。<br />2.在 **建置**功能表上，按一下**重建方案**。 |
+| 變更組件名稱之後未出現 DSL 的工具箱。 | 檢查並更新**DslPackage\GeneratedCode\Package.tt**如需詳細資訊，請參閱[How to:變更定義域專屬語言命名空間](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md)。 |
+| DSL 的工具箱未出現，但是我未變更組件名稱。<br /><br /> 或者，出現一個訊息方塊，回報載入擴充功能失敗。 | 重設實驗執行個體，然後重建方案。<br /><br /> 1.在 Windows 啟動 功能表底下**所有程式**，展開[!INCLUDE[vssdk_current_long](../misc/includes/vssdk_current_long_md.md)]，然後**工具**，然後按一下**重設 Microsoft Visual Studio 實驗執行個體**。<br />2.在 [建置] 功能表上，按一下 [重建方案]。 |
 
 ## <a name="see-also"></a>另請參閱
 

@@ -1,9 +1,6 @@
 ---
 title: 方案概觀 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - solutions, about solutions
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 97070a3c47f5e102ce974e0d7eeeea0380beff57
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1d3117aa61658fe056e6ac48fe8ab4eb4831882b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49921232"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53874585"
 ---
 # <a name="solutions-overview"></a>方案概觀
 解決方案是建立應用程式一起運作的一或多個專案的群組。 屬於方案的專案和狀態資訊會儲存在兩個不同的方案檔。 方案 (.sln) 檔案是以文字為基礎和可放置在原始程式碼控制之下，並讓使用者彼此共用。 方案使用者選項 (.suo) 檔案是二進位。 如此一來，.suo 檔案不能放在原始檔控制之下，並包含使用者特定資訊。  

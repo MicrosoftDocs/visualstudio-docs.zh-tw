@@ -1,9 +1,6 @@
 ---
-title: 如何： 調整 NamedRange 控制項的大小
-ms.custom: ''
+title: HOW TO：調整 NamedRange 控制項的大小
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,14 +14,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6d785aba9d08f71aa8530bc2edd015f497caafef
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: ac274e6e7e9a7e263e17dc03fa1c5c857f02864f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35670839"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53989759"
 ---
-# <a name="how-to-resize-namedrange-controls"></a>如何： 調整 NamedRange 控制項的大小
+# <a name="how-to-resize-namedrange-controls"></a>HOW TO：調整 NamedRange 控制項的大小
   您可以在將 <xref:Microsoft.Office.Tools.Excel.NamedRange> 控制項加入 Microsoft Office Excel 文件時，設定該控制項的大小，也可以稍後再進行調整。  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
@@ -77,7 +74,7 @@ ms.locfileid: "35670839"
      [!code-vb[Trin_VstcoreHostControlsExcel#5](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#5)]  
   
 ##  <a name="runtimeaddin"></a> 調整 NamedRange 控制項，在 VSTO 增益集專案中的執行階段的大小  
- 您可以調整大小<xref:Microsoft.Office.Tools.Excel.NamedRange>控制項上任何開啟的工作表，在執行階段。 如需有關如何新增<xref:Microsoft.Office.Tools.Excel.NamedRange>控制項加入工作表使用 VSTO 增益集，請參閱 <<c2> [ 如何： 將 NamedRange 控制項加入工作表](../vsto/how-to-add-namedrange-controls-to-worksheets.md)。  
+ 您可以調整大小<xref:Microsoft.Office.Tools.Excel.NamedRange>控制項上任何開啟的工作表，在執行階段。 如需有關如何新增<xref:Microsoft.Office.Tools.Excel.NamedRange>控制項加入工作表使用 VSTO 增益集，請參閱[How to:將 NamedRange 控制項加入工作表](../vsto/how-to-add-namedrange-controls-to-worksheets.md)。  
   
 ### <a name="to-resize-a-named-range-programmatically"></a>若要以程式的方式調整已命名範圍的大小  
   
@@ -98,8 +95,6 @@ ms.locfileid: "35670839"
  [主項目和主控制項概觀](../vsto/host-items-and-host-controls-overview.md)   
  [使用擴充的物件自動化 Excel](../vsto/automating-excel-by-using-extended-objects.md)   
  [NamedRange 控制項](../vsto/namedrange-control.md)   
- [如何： 將 NamedRange 控制項加入工作表](../vsto/how-to-add-namedrange-controls-to-worksheets.md)   
- [如何： 調整書籤控制項的大小](../vsto/how-to-resize-bookmark-controls.md)   
- [如何： 調整 ListObject 控制項的大小](../vsto/how-to-resize-listobject-controls.md)  
-  
-  
+ [如何：將 NamedRange 控制項加入工作表](../vsto/how-to-add-namedrange-controls-to-worksheets.md)   
+ [如何：調整書籤控制項的大小](../vsto/how-to-resize-bookmark-controls.md)   
+ [如何：調整 ListObject 控制項的大小](../vsto/how-to-resize-listobject-controls.md)  

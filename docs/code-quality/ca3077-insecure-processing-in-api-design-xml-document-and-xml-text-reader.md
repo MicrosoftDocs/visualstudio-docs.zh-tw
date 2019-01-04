@@ -1,8 +1,7 @@
 ---
-title: CA3077：API 設計、XML 文件和 XML 文字讀取器中的不安全處理
+title: CA3077:API 設計、XML 文件和 XML 文字讀取器中的不安全處理
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 ms.assetid: 7f33771b-f3c8-4c02-bef6-f581b623c303
 author: gewarren
@@ -10,14 +9,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c8d90883f2aac5389ec0787fee08749da363e747
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 33c6aaea4cdc7de1c81338eb4861d56d73cb5909
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49821951"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53841274"
 ---
-# <a name="ca3077-insecure-processing-in-api-design-xml-document-and-xml-text-reader"></a>CA3077：API 設計、XML 文件和 XML 文字讀取器中的不安全處理
+# <a name="ca3077-insecure-processing-in-api-design-xml-document-and-xml-text-reader"></a>CA3077:API 設計、XML 文件和 XML 文字讀取器中的不安全處理
 
 |||
 |-|-|

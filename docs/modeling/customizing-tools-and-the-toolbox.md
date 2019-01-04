@@ -14,13 +14,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 3b0acab24dbb7ff1313e62e91b17bf87190dbb99
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: 705b70fd0ee71f7ea0670f64aadcbff7bc686721
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50967437"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53919595"
 ---
 # <a name="customizing-tools-and-the-toolbox"></a>自訂工具和工具箱
 
@@ -71,7 +70,7 @@ Editor
 
 3.  設定**工具箱圖示**屬性參考 16x16 點陣圖。
 
-     如果您想要定義新的圖示，請在 [方案總管] 中建立點陣圖檔案**Dsl\Resources**資料夾。 檔案應具有下列屬性值：**建置動作** = **內容**;**複製到輸出目錄** = **請勿複製**。
+     如果您想要定義新的圖示，請在 [方案總管] 中建立點陣圖檔案**Dsl\Resources**資料夾。 檔案應該具有下列屬性值：**建置動作** = **內容**;**複製到輸出目錄** = **請勿複製**。
 
 4.  **為項目工具：** 設定**類別**要參考對應至某個圖形的具象網域類別之工具的屬性。
 
@@ -79,7 +78,7 @@ Editor
 
 5.  若要測試 DSL，請按下 F5 或 CTRL + f5 鍵，並在 Visual Studio 的實驗性執行個體，開啟範例模型檔案。 新工具應顯示在工具箱上。 將工具拖曳至圖表上，驗證工具是否會建立新項目。
 
-     如果此工具不會出現，請停止實驗性 Visual Studio。 在 Windows**開始**功能表中，執行**重設 Microsoft Visual Studio 2010 實驗執行個體**。 在 **建置**功能表上，按一下**重建方案**。 然後再測試一次 DSL。
+     如果此工具不會出現，請停止實驗性 Visual Studio。 在 Windows**開始**功能表中，執行**重設 Microsoft Visual Studio 2010 實驗執行個體**。 在 [建置] 功能表上，按一下 [重建方案]。 然後再測試一次 DSL。
 
 ## <a name="customizing"></a> 自訂項目工具
  根據預設，此工具會建立指定類別的單一執行個體，但是您可以透過下列兩個方式來改變：

@@ -1,9 +1,6 @@
 ---
 title: 私用組件庫 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - VSIX galleries, private
@@ -14,17 +11,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e91b3ecec969ab6a717598d8dfb77e674890216a
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: f1be2f2327ac48f46894f66d35f6a392608b6177
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39638579"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53897770"
 ---
 # <a name="private-galleries"></a>私用組件庫
 您可以共用控制項、 範本和工具，您藉由公佈到開發*私用組件庫*內部為您的組織，如下所示：  
   
--   建立 Atom (RSS) 摘要您的內部網路上的適當設定中央位置 （儲存機制）。 如需詳細資訊，請參閱 <<c0> [ 如何： 建立私用組件庫摘要的 Atom](../extensibility/how-to-create-an-atom-feed-for-a-private-gallery.md)。  
+-   建立 Atom (RSS) 摘要您的內部網路上的適當設定中央位置 （儲存機制）。 如需詳細資訊，請參閱[＜How to：建立私用組件庫摘要的 Atom](../extensibility/how-to-create-an-atom-feed-for-a-private-gallery.md)。  
   
 -   散發 *.pkgdef*描述私用組件庫的檔案。 我們建議此組態的系統管理員想要連線到多部電腦的私用組件庫，在相同的時間。  
   
@@ -54,7 +51,7 @@ ms.locfileid: "39638579"
   
 ```  
 [$RootKey$\ExtensionManager\Repositories\{UniqueGUID}]  
-@={URI}  (REG_SZ)  
+@={URI}  (REG_SZ)  
 Disabled=0 | 1 (DWORD)  
 Priority=0 (highest priority) ... MaxInt (lowest priority) (DWORD) (uint)  
 Protocol=Atom|Sharepoint (REG_SZ)  
@@ -64,7 +61,7 @@ DisplayNamePackageGuid={GUID} (REG_SZ)
   
 ```  
   
- 如需詳細資訊，請參閱 <<c0> [ 如何： 使用登錄設定管理私用組件庫](../extensibility/how-to-manage-a-private-gallery-by-using-registry-settings.md)。  
+ 如需詳細資訊，請參閱[＜How to：使用登錄設定管理私用組件庫](../extensibility/how-to-manage-a-private-gallery-by-using-registry-settings.md)。  
   
 ## <a name="install-extensions-from-a-private-gallery"></a>從私用組件庫中安裝擴充功能  
  您可以搜尋並安裝 Visual Studio 擴充功能私用資源庫中從**擴充功能和更新**。 下列步驟會使用名為私用組件庫`My Gallery`。  

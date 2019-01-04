@@ -1,9 +1,6 @@
 ---
 title: IDebugProgram2::GetProgramId |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugProgram2::GetProgramId
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 17101ce15fba12a066005dfdb51c7162a6df60d2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9f97354bc708d12ab741a60159ac3ce61ad0b1eb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49910032"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53857146"
 ---
 # <a name="idebugprogram2getprogramid"></a>IDebugProgram2::GetProgramId
 取得此程式的 GUID。  
@@ -28,13 +25,13 @@ ms.locfileid: "49910032"
 ## <a name="syntax"></a>語法  
   
 ```cpp  
-HRESULT GetProgramId(   
+HRESULT GetProgramId(   
    GUID* pguidProgramId  
 );  
 ```  
   
 ```csharp  
-int GetProgramId(   
+int GetProgramId(   
    out Guid pguidProgramId  
 );  
 ```  

@@ -1,9 +1,6 @@
 ---
 title: IDebugProcess2::EnumThreads |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugProcess2::EnumThreads
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c916e8b176444a8af81cb874c394e9eb832a01b4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9b6a1f7ab44666d88dd0ca5edc0aa55f418fdf4c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49939705"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53900280"
 ---
 # <a name="idebugprocess2enumthreads"></a>IDebugProcess2::EnumThreads
 擷取處理序中執行的所有執行緒的清單。  
@@ -28,14 +25,14 @@ ms.locfileid: "49939705"
 ## <a name="syntax"></a>語法  
   
 ```cpp  
-HRESULT EnumThreads(  
-   IEnumDebugThreads2** ppEnum  
+HRESULT EnumThreads(  
+   IEnumDebugThreads2** ppEnum  
 );  
 ```  
   
 ```csharp  
-int EnumThreads(  
-   out IEnumDebugThreads2 ppEnum  
+int EnumThreads(  
+   out IEnumDebugThreads2 ppEnum  
 );  
 ```  
   

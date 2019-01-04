@@ -1,8 +1,7 @@
 ---
-title: CA1302：請勿於程式中定義地區設定專屬的字串
+title: CA1302:不要以硬式編碼的方式加入適用於特定地區設定的字串
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - DoNotHardcodeLocaleSpecificStrings
@@ -19,20 +18,20 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: e56c57343ae61709b6d5875c865857a7475363fd
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: b05f1aa31a38ff4f8e707d53d062abe3d10617fd
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45550488"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53827724"
 ---
-# <a name="ca1302-do-not-hardcode-locale-specific-strings"></a>CA1302：請勿於程式中定義地區設定專屬的字串
+# <a name="ca1302-do-not-hardcode-locale-specific-strings"></a>CA1302:不要以硬式編碼的方式加入適用於特定地區設定的字串
 
 |||
 |-|-|
 |TypeName|DoNotHardcodeLocaleSpecificStrings|
 |CheckId|CA1302|
-|類別|Microsoft.Globalization|
+|分類|Microsoft.Globalization|
 |中斷變更|非重大|
 
 ## <a name="cause"></a>原因
@@ -56,4 +55,4 @@ ms.locfileid: "45550488"
  [!code-vb[FxCop.Globalization.HardcodedLocaleStrings#1](../code-quality/codesnippet/VisualBasic/ca1302-do-not-hardcode-locale-specific-strings_1.vb)]
 
 ## <a name="related-rules"></a>相關的規則
- [CA1303：不要將常值當做已當地語系化的參數傳遞](../code-quality/ca1303-do-not-pass-literals-as-localized-parameters.md)
+ [CA1303:不要將常值傳遞做為當地語系化的參數](../code-quality/ca1303-do-not-pass-literals-as-localized-parameters.md)

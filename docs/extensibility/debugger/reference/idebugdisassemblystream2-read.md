@@ -1,9 +1,6 @@
 ---
 title: IDebugDisassemblyStream2::Read |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugDisassemblyStream2::Read
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a5e59ea6c5ab01485b3c022f0504aeae55c3882a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6ce82bc81ef54cff9dbfb0a6282411e03775ebc9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49902628"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53892010"
 ---
 # <a name="idebugdisassemblystream2read"></a>IDebugDisassemblyStream2::Read
 讀取從目前的位置，在反組譯碼資料流中的指示。  
@@ -28,7 +25,7 @@ ms.locfileid: "49902628"
 ## <a name="syntax"></a>語法  
   
 ```cpp  
-HRESULT Read(   
+HRESULT Read(   
    DWORD                     dwInstructions,  
    DISASSEMBLY_STREAM_FIELDS dwFields,  
    DWORD*                    pdwInstructionsRead,  
@@ -37,7 +34,7 @@ HRESULT Read(
 ```  
   
 ```csharp  
-int Read(   
+int Read(   
    uint                           dwInstructions,  
    enum_DISASSEMBLY_STREAM_FIELDS dwFields,  
    out uint                       pdwInstructionsRead,  

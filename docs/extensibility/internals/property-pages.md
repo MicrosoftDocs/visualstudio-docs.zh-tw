@@ -1,9 +1,6 @@
 ---
 title: 屬性頁 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - configuration options, changing properties
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a547f5d3b075f5489caca2567ca1f1679f145073
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4f7aa506e806cc83876475a2fea0a3a949a7198f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49878878"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53837884"
 ---
 # <a name="property-pages"></a>屬性頁
 使用者可以檢視和變更使用屬性頁的專案組態相關和-獨立屬性。 A**屬性頁**中已啟用 按鈕**屬性**視窗或 方案總管 工具列上的物件可提供所選物件的屬性頁面檢視。 屬性頁所建立的環境，並可供方案和專案。 它們，不過，也可以是可進行的專案項目使用的組態相關的屬性。 當專案中的檔案需要不同的編譯器參數設定，才能正確建置時，可能會使用這項功能。  

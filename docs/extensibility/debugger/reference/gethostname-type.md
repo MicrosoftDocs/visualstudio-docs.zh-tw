@@ -1,9 +1,6 @@
 ---
 title: GETHOSTNAME_TYPE |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - GETHOSTNAME_TYPE
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 97e252f9f7b3d3177b099e98984ee459b85f0c82
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 82705ad50d5dca6c3c20758663163832b5da8179
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49823056"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53862909"
 ---
 # <a name="gethostnametype"></a>GETHOSTNAME_TYPE
 指定主機名稱的類型。  
@@ -28,7 +25,7 @@ ms.locfileid: "49823056"
 ## <a name="syntax"></a>語法  
   
 ```cpp  
-enum enum_GETHOSTNAME_TYPE {   
+enum enum_GETHOSTNAME_TYPE {   
    GHN_FRIENDLY_NAME = 0,  
    GHN_FILE_NAME     = 1  
 };  
@@ -36,7 +33,7 @@ typedef DWORD GETHOSTNAME_TYPE;
 ```  
   
 ```csharp  
-public enum enum_GETHOSTNAME_TYPE {   
+public enum enum_GETHOSTNAME_TYPE {   
    GHN_FRIENDLY_NAME = 0,  
    GHN_FILE_NAME     = 1  
 };  
@@ -55,9 +52,9 @@ public enum enum_GETHOSTNAME_TYPE {
 ## <a name="requirements"></a>需求  
  標頭： msdbg.h  
   
- 命名空間： Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間:Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
  [列舉型別](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   

@@ -1,9 +1,6 @@
 ---
 title: IDebugProgram2::Execute |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugProgram2::Execute
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 35a3845911bf9a1ebfd90165b1c6fde45d797696
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e119224ac628f26f2f1b23eb5c4d65db13b73b2c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49842582"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53873486"
 ---
 # <a name="idebugprogram2execute"></a>IDebugProgram2::Execute
 會繼續執行此程式從已停止的狀態。 在清除任何先前的執行狀態 （例如在步驟），並在程式啟動重新執行。  

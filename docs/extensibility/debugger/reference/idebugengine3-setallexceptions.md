@@ -1,9 +1,6 @@
 ---
 title: IDebugEngine3::SetAllExceptions |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugEngine3::SetAllExceptions
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: af66ca2fda6a3e190e6b98cf09962890beb3b5a0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6f153d87c5d2659bcf19b292528c1dcb778b919e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49875810"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53954944"
 ---
 # <a name="idebugengine3setallexceptions"></a>IDebugEngine3::SetAllExceptions
 這個方法會設定所有未處理的例外狀況的狀態。  
@@ -28,8 +25,8 @@ ms.locfileid: "49875810"
 ## <a name="syntax"></a>語法  
   
 ```cpp  
-HRESULT SetAllExceptions(  
-   EXCEPTION_STATE dwState  
+HRESULT SetAllExceptions(  
+   EXCEPTION_STATE dwState  
 );  
 ```  
   

@@ -1,9 +1,6 @@
 ---
 title: BPREQI_FIELDS90 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - BPREQI_FIELDS90 enumeration
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3412b0a27704ec0ddd3d77f296b3fa73976bf359
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0b1fd893440e4659815a4915edef5a36c9c14aa2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49903162"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53851952"
 ---
 # <a name="bpreqifields90"></a>BPREQI_FIELDS90
 列舉有效的值，指定要擷取有關中斷點要求的資訊。 這個列舉型別會擴充[BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md)列舉型別。  
@@ -123,11 +120,11 @@ public enum enum_BPREQI_FIELDS90
  指定的所有欄位`BP_REQUEST_INFO2`結構。  
   
 ## <a name="requirements"></a>需求  
- 標頭： Msdbg90.h  
+ 標頭：Msdbg90.h  
   
- 命名空間： Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間:Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
  [列舉](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

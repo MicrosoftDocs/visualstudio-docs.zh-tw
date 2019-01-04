@@ -1,9 +1,6 @@
 ---
 title: 匯入可重複使用的工作流程的指導方針 |Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,15 +15,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ededaae56e9d09072e236036c15a2ccd662a952e
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 05ef3a0a4b1fe95396966b083b457e0970ebda48
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36326461"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53916610"
 ---
 # <a name="guidelines-for-importing-reusable-workflows"></a>匯入可重複使用的工作流程的指導方針
-  若要匯入以 SharePoint Designer 所建立可重複使用的工作流程，請使用 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 中的 [匯入可重複使用的 SharePoint 2010 工作流程] 專案範本。 此範本會匯入*宣告**工作流程*([!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]-只)，並將它轉換*程式碼工作流程*，這是您可以使用增強的工作流程[!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)]或[!INCLUDE[csprcs](../sharepoint/includes/csprcs-md.md)]程式碼。 [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)] [逐步解說： 將 SharePoint Designer 可重複使用的工作流程匯入 Visual Studio](../sharepoint/walkthrough-import-a-sharepoint-designer-reusable-workflow-into-visual-studio.md)。  
+  若要匯入以 SharePoint Designer 所建立可重複使用的工作流程，請使用 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 中的 [匯入可重複使用的 SharePoint 2010 工作流程] 專案範本。 此範本會匯入*宣告**工作流程*([!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]-只)，並將它轉換*程式碼工作流程*，這是您可以使用增強的工作流程[!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)]或[!INCLUDE[csprcs](../sharepoint/includes/csprcs-md.md)]程式碼。 [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)] [逐步解說：SharePoint Designer 可重複使用工作流程匯入 Visual Studio](../sharepoint/walkthrough-import-a-sharepoint-designer-reusable-workflow-into-visual-studio.md)。  
   
  不過，[匯入可重複使用的 SharePoint 2010 工作流程] 範本只能匯入陣列方案。 如果您要部署工作流程做為沙箱化方案，請使用 [匯入 SharePoint 2010 方案套件] 範本匯入工作流程。 但採用這種方式將無法將其轉換成程式碼工作流程，因而無法加以修改。  
   
@@ -56,6 +53,4 @@ ms.locfileid: "36326461"
   
 ## <a name="see-also"></a>另請參閱
  [從現有的 SharePoint 網站匯入項目](../sharepoint/importing-items-from-an-existing-sharepoint-site.md)   
- [逐步解說： 將 SharePoint Designer 可重複使用的工作流程匯入 Visual Studio](../sharepoint/walkthrough-import-a-sharepoint-designer-reusable-workflow-into-visual-studio.md)  
-  
-  
+ [逐步解說：SharePoint Designer 可重複使用工作流程匯入 Visual Studio](../sharepoint/walkthrough-import-a-sharepoint-designer-reusable-workflow-into-visual-studio.md)  

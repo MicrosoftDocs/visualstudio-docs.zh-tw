@@ -1,9 +1,6 @@
 ---
 title: IDebugDocument2::GetDocumentClassID |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugDocument2::GetDocumentClassID
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ab5fd153706e1f28da1931165179f479c7052e82
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 69c9b5d351f3989bf7a9855274634ededa52f08a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49836446"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53825713"
 ---
 # <a name="idebugdocument2getdocumentclassid"></a>IDebugDocument2::GetDocumentClassID
 取得文件的類別識別項。  
@@ -28,13 +25,13 @@ ms.locfileid: "49836446"
 ## <a name="syntax"></a>語法  
   
 ```cpp  
-HRESULT GetDocumentClassID(   
+HRESULT GetDocumentClassID(   
    CLSID* pclsid  
 );  
 ```  
   
 ```csharp  
-int GetDocumentClassID(   
+int GetDocumentClassID(   
    out Guid pclsid  
 );  
 ```  

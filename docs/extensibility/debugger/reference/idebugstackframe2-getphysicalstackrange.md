@@ -1,9 +1,6 @@
 ---
 title: IDebugStackFrame2::GetPhysicalStackRange |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugStackFrame2::GetPhysicalStackRange
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a1b46dd9993eb8a7611b4d84211016168d609101
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 56121c7a0e58d90fd3ab0384a39916c102056c50
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49950377"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53958692"
 ---
 # <a name="idebugstackframe2getphysicalstackrange"></a>IDebugStackFrame2::GetPhysicalStackRange
 取得的堆疊框架相關聯的實體位址範圍的電腦相關表示法。  
@@ -28,14 +25,14 @@ ms.locfileid: "49950377"
 ## <a name="syntax"></a>語法  
   
 ```cpp  
-HRESULT GetPhysicalStackRange (   
+HRESULT GetPhysicalStackRange (   
    UINT64* paddrMin,  
    UINT64* paddrMax  
 );  
 ```  
   
 ```csharp  
-int GetPhysicalStackRange (   
+int GetPhysicalStackRange (   
    out ulong paddrMin,  
    out ulong paddrMax  
 );  

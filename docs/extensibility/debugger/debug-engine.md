@@ -1,9 +1,6 @@
 ---
 title: 偵錯引擎 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - debug engines
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 78bd5b732d7ea1714bb1c5627b570976e33a82c4
-ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
+ms.openlocfilehash: db4874c842775c02fdf50d827aea7daaac008587
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39203884"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53836229"
 ---
 # <a name="debug-engine"></a>偵錯引擎
 偵錯引擎 (DE) 適用於解譯器或作業系統，來提供偵錯的服務，例如執行控制、 中斷點、 和運算式評估。 DE 負責監視正在偵錯程式的狀態。 若要執行達到此目的，DE 會使用任何方法會為它提供的支援的執行階段，是否執行階段所提供的 cpu，或從 Api。  

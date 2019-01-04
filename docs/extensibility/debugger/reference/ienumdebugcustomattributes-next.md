@@ -1,9 +1,6 @@
 ---
 title: IEnumDebugCustomAttributes::Next |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IEnumCustomAttributes::Next
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 107ab2c7ad882705d67924528ac16893a26451e9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b97fb2ff4d0f8babcb3616f48fb04aab67143c91
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49927576"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53919968"
 ---
 # <a name="ienumdebugcustomattributesnext"></a>IEnumDebugCustomAttributes::Next
 擷取列舉型別序列中的自訂屬性指定的數目。  
@@ -28,7 +25,7 @@ ms.locfileid: "49927576"
 ## <a name="syntax"></a>語法  
   
 ```cpp  
-HRESULT Next (   
+HRESULT Next (   
    ULONG      celt,  
    CODE_PATH* rgelt,  
    ULONG*     pceltFetched  

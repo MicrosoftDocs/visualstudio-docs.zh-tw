@@ -1,13 +1,8 @@
 ---
-title: 逐步解說： 建立自訂網站工作流程活動 |Microsoft Docs
-ms.custom: ''
+title: 逐步解說：建立自訂網站工作流程活動 |Microsoft Docs
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -21,14 +16,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2adb6dd8788027d89a743518adee4425e424ce60
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e828926b5ddfc70f64f729849aaec99dbdade103
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49894166"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53951809"
 ---
-# <a name="walkthrough-create-a-custom-site-workflow-activity"></a>逐步解說： 建立自訂網站工作流程活動
+# <a name="walkthrough-create-a-custom-site-workflow-activity"></a>逐步解說：建立自訂網站工作流程活動
   本逐步解說示範如何建立站台層級工作流程使用自訂活動[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。 （網站層級的工作流程套用至整個網站，而不只是在站台上的清單）。自訂活動建立備份的公告清單中，並再將 [公告] 清單的內容複製到其中。  
   
  本逐步解說將示範下列工作：  
@@ -128,6 +123,5 @@ ms.locfileid: "49894166"
 5.  在 [快速啟動] 列中，選擇**宣布備份**連結。 請注意，宣告中所包含的所有**宣布**清單已複製到這個新的清單。  
   
 ## <a name="see-also"></a>另請參閱
- [如何： 建立事件接收器](../sharepoint/how-to-create-an-event-receiver.md)   
+ [如何：建立事件接收器](../sharepoint/how-to-create-an-event-receiver.md)   
  [開發 SharePoint 方案](../sharepoint/developing-sharepoint-solutions.md)  
-  

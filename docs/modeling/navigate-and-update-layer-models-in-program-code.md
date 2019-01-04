@@ -11,17 +11,16 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 8ca10b8504dc4383ad6251e3819c14b7102d32d3
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: eea76a607490bda244597e22e25246b39c2c537d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39566735"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53948650"
 ---
 # <a name="navigate-and-update-layer-models-in-program-code"></a>巡覽及更新程式碼中的圖層模型
 
-這篇文章描述的項目和關聯性，在圖層模型中，您可以瀏覽和使用程式碼更新。 如需有關從使用者的觀點來看的相依性圖表的詳細資訊，請參閱 <<c0> [ 相依性圖表： 參考](../modeling/layer-diagrams-reference.md)並[相依性圖表： 指導方針](../modeling/layer-diagrams-guidelines.md)。
+這篇文章描述的項目和關聯性，在圖層模型中，您可以瀏覽和使用程式碼更新。 如需有關從使用者的觀點來看的相依性圖表的詳細資訊，請參閱[相依性圖表：參考](../modeling/layer-diagrams-reference.md)和[相依性圖表：指導方針](../modeling/layer-diagrams-guidelines.md)。
 
 <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer>本主題中所述的模型是一個外觀，一般<xref:Microsoft.VisualStudio.GraphModel>模型。 如果您正在撰寫[功能表命令或軌跡擴充功能](../modeling/add-commands-and-gestures-to-layer-diagrams.md)，使用`Layer`模型。 如果您正在撰寫[圖層驗證擴充功能](../modeling/add-custom-architecture-validation-to-layer-diagrams.md)，更輕鬆地使用`GraphModel`。
 
@@ -136,5 +135,5 @@ public void ... (...)
 - [將命令和軌跡加入至相依性圖表](../modeling/add-commands-and-gestures-to-layer-diagrams.md)
 - [將自訂架構驗證加入至相依性圖表](../modeling/add-custom-architecture-validation-to-layer-diagrams.md)
 - [將自訂屬性加入至相依性圖表](../modeling/add-custom-properties-to-layer-diagrams.md)
-- [相依性圖表︰參考](../modeling/layer-diagrams-reference.md)
-- [相依性圖表︰方針](../modeling/layer-diagrams-guidelines.md)
+- [相依性圖表中：參考](../modeling/layer-diagrams-reference.md)
+- [相依性圖表中：指導方針](../modeling/layer-diagrams-guidelines.md)

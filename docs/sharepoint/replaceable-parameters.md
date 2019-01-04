@@ -1,12 +1,8 @@
 ---
 title: 可置換的參數 |Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology: office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -18,12 +14,12 @@ author: TerryGLee
 ms.author: tglee
 manager: douge
 ms.workload: office
-ms.openlocfilehash: 1d1b606d4416da10c329a7421378ea979a2fa4cf
-ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
+ms.openlocfilehash: 762ef5ca27fade9a8ec58f6e0b7f5b60e4baaccb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53684687"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53989159"
 ---
 # <a name="replaceable-parameters"></a>可置換的參數
   可置換的參數，或*語彙基元*，可以使用專案檔內，以提供其實際的值不在設計階段已知的 SharePoint 方案項目中的值。 它們是類似的函式中的標準[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]範本語彙基元。 如需詳細資訊，請參閱 <<c0> [ 範本參數](../ide/template-parameters.md)。  

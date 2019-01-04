@@ -1,9 +1,6 @@
 ---
-title: 如何： 以程式設計方式將樣式套用至活頁簿中的範圍
-ms.custom: ''
+title: HOW TO：以程式設計方式將樣式套用至活頁簿中的範圍
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,14 +14,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d19c886a7b3ae1a1976ab2a47fe139ba830a4ea5
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 4c0129319e1d979efd924d9d2bef57f0ef5dbf1a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35671190"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53876415"
 ---
-# <a name="how-to-programmatically-apply-styles-to-ranges-in-workbooks"></a>如何： 以程式設計方式將樣式套用至活頁簿中的範圍
+# <a name="how-to-programmatically-apply-styles-to-ranges-in-workbooks"></a>HOW TO：以程式設計方式將樣式套用至活頁簿中的範圍
   您可以將具名樣式套用至活頁簿中的區域。 Excel 提供多個預先定義的樣式。  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
@@ -74,5 +71,3 @@ ms.locfileid: "35671190"
  [NamedRange 控制項](../vsto/namedrange-control.md)   
  [全域存取 Office 專案中的物件](../vsto/global-access-to-objects-in-office-projects.md)   
  [Office 方案中的選擇性參數](../vsto/optional-parameters-in-office-solutions.md)  
-  
-  

@@ -1,9 +1,6 @@
 ---
 title: 在 Managed 程式碼的 COM 常數 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - managed VSPackages, COM constants and macros
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d8a273c5e53f9f7086e8dc96bcb4c36e0b0223d0
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 9280ff451b6a03150184b9d64eb5cb78cad6fdbc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39231531"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53987268"
 ---
 # <a name="com-constants-in-managed-code"></a>在 managed 程式碼的 COM 常數
 Managed Package Framework (MPF) 提供一些標準的 COM 常數給 managed 程式碼。 這些常數如下所列供您參考。  

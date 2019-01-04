@@ -1,9 +1,6 @@
 ---
 title: 針對 Vspackage 進行疑難排解 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - VSPackages, troubleshooting
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ad5ab8a337d790af8cd6d800c7bf36ea6ff01286
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 5ba413fa4b5a77c8c4f7fc9dfc9aa3c4ab87d31d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51348671"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53835967"
 ---
 # <a name="troubleshooting-vspackages"></a>針對 VSPackage 進行疑難排解
 以下是常見的問題，您可能會有的 VSPackage，並解決問題的提示。  
@@ -53,7 +50,7 @@ ms.locfileid: "51348671"
   
 5. 檢查活動記錄檔。  
   
-    如需詳細資訊，請參閱 <<c0> [ 如何： 使用活動記錄](../extensibility/how-to-use-the-activity-log.md)。  
+    如需詳細資訊，請參閱[＜How to：使用活動記錄](../extensibility/how-to-use-the-activity-log.md)。  
   
 6. 如需有關由 IDE 所擲回的例外狀況的詳細資訊，請按一下**例外狀況**上**偵錯**功能表以讓例外狀況。 在 [**例外狀況**] 對話方塊中選取您想通知的詳細資訊的例外狀況的類型。  
   
@@ -92,7 +89,7 @@ ms.locfileid: "51348671"
   
 2.  使用活動記錄檔。  
   
-     藉由將資訊寫入活動記錄檔的關鍵點追蹤 VSPackage 的行為。 當您在零售環境中執行 VSPackage 時，這項技術會特別有用。 如需詳細資訊，請參閱 <<c0> [ 如何： 使用活動記錄](../extensibility/how-to-use-the-activity-log.md)。  
+     藉由將資訊寫入活動記錄檔的關鍵點追蹤 VSPackage 的行為。 當您在零售環境中執行 VSPackage 時，這項技術會特別有用。 如需詳細資訊，請參閱[＜How to：使用活動記錄](../extensibility/how-to-use-the-activity-log.md)。  
   
 3.  使用公用符號。  
   

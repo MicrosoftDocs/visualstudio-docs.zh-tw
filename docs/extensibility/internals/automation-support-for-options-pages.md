@@ -1,9 +1,6 @@
 ---
 title: 選項頁的自動化支援 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - Tools Options pages [Visual Studio SDK], automation support
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b18f8df30dc9f3385c2c5f154d66c598b423968e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 36783227ceed5d1b074937684d42c4486ec58dda
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49929643"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53926014"
 ---
 # <a name="automation-support-for-options-pages"></a>自動化支援的選項頁面
 Vspackage 可以提供自訂**選項**對話方塊來**工具**功能表 (**工具選項**頁面) 中[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]並可供自動化模型。  

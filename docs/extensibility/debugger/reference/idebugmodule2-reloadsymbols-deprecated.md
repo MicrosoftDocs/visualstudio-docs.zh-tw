@@ -1,9 +1,6 @@
 ---
 title: IDebugModule2::ReloadSymbols_Deprecated |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugModule2::ReloadSymbols
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 09f2e81699683ec49155faceb375da3d636ed4c4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: cc64425bbbdcb2a11eb8a2b27d346bf34ebedf30
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49934037"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53927086"
 ---
 # <a name="idebugmodule2reloadsymbolsdeprecated"></a>IDebugModule2::ReloadSymbols_Deprecated
 已過時。 請勿使用。 重新載入此模組的符號。  
@@ -28,14 +25,14 @@ ms.locfileid: "49934037"
 ## <a name="syntax"></a>語法  
   
 ```cpp  
-HRESULT ReloadSymbols(   
+HRESULT ReloadSymbols(   
    LPCOLESTR pszUrlToSymbols,  
    BSTR*     pbstrDebugMessage  
 );  
 ```  
   
 ```csharp  
-int ReloadSymbols(   
+int ReloadSymbols(   
    string     pszUrlToSymbols,  
    out string pbstrDebugMessage  
 );  

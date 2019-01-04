@@ -1,13 +1,8 @@
 ---
-title: 如何： 新增建立者方法 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：新增建立者方法 |Microsoft Docs
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -22,14 +17,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a8aa49416a826e5100932b4741d3e536a9d2f37d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 01ad692065a51d51fc1f6b72acc563688da3a217
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49897338"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53925416"
 ---
-# <a name="how-to-add-a-creator-method"></a>如何： 新增建立者方法
+# <a name="how-to-add-a-creator-method"></a>HOW TO：新增建立者方法
   建立者方法會將新資料加入至實體的資料來源。 商務資料連接 (BDC) 服務會呼叫這個方法，當使用者選擇**新的項目**按鈕**功能區**的模型為基礎的清單。 如需詳細資訊，請參閱 <<c0> [ 設計 business data connectivity 模型](../sharepoint/designing-a-business-data-connectivity-model.md)。  
   
 ### <a name="to-add-a-creator-method"></a>若要加入建立者方法  
@@ -70,12 +65,10 @@ ms.locfileid: "49897338"
   
 ## <a name="see-also"></a>另請參閱
  [設計商務資料連接模型](../sharepoint/designing-a-business-data-connectivity-model.md)   
- [如何： 新增搜尋方法](../sharepoint/how-to-add-a-finder-method.md)   
- [如何： 加入特定搜尋方法](../sharepoint/how-to-add-a-specific-finder-method.md)   
- [如何： 加入刪除者方法](../sharepoint/how-to-add-a-deleter-method.md)   
- [如何： 加入更新者方法](../sharepoint/how-to-add-an-updater-method.md)   
+ [如何：新增搜尋方法](../sharepoint/how-to-add-a-finder-method.md)   
+ [如何：新增特定搜尋方法](../sharepoint/how-to-add-a-specific-finder-method.md)   
+ [如何：新增刪除者方法](../sharepoint/how-to-add-a-deleter-method.md)   
+ [如何：新增更新者方法](../sharepoint/how-to-add-an-updater-method.md)   
  [BDC 模型設計工具概觀](../sharepoint/bdc-model-design-tools-overview.md)   
- [如何： 將參數加入至方法](../sharepoint/how-to-add-a-parameter-to-a-method.md)   
- [如何： 定義方法執行個體](../sharepoint/how-to-define-a-method-instance.md)  
-  
-  
+ [如何：新增參數至方法](../sharepoint/how-to-add-a-parameter-to-a-method.md)   
+ [如何：定義方法執行個體](../sharepoint/how-to-define-a-method-instance.md)  

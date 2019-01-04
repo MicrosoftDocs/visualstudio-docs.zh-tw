@@ -2,7 +2,6 @@
 title: XML 結構描述總管
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: conceptual
 ms.assetid: 2fc39e98-b194-456b-a452-cfafb0a52d66
 author: gewarren
@@ -10,16 +9,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 110cad9883cbb129368dac4d481443a9f5d9813c
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: eb49560074b3a4c43efe13ea568207b52536e562
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751585"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53918975"
 ---
 # <a name="xml-schema-explorer"></a>XML 結構描述總管
 
-**XML 結構描述總管**整合於 Microsoft Visual Studio 和 XML 編輯器可讓您使用 XML 結構描述定義語言 (XSD) 結構描述。 當您開啟 XML 結構描述檔案，**結構描述集**節點會出現在**XML 結構描述總管**。 所有包含、 匯入，或重新定義結構描述的目標檔案，以及透過參照的任何檔案`include`或`import`陳述式，也會出現在**XML 結構描述總管**。
+**XML 結構描述總管**整合於 Microsoft Visual Studio 和 XML 編輯器可讓您使用 XML 結構描述定義語言 (XSD) 結構描述。 當您開啟 XML 結構描述檔案，**結構描述集**節點會出現在**XML 結構描述總管**。 所有包含、 匯入，或重新定義結構描述的目標檔案，以及任何會透過參考的檔案`include`或是`import`陳述式，也會出現在**XML 結構描述總管**。
 
  **XML 結構描述總管**可讓您執行下列動作：
 
@@ -27,25 +26,25 @@ ms.locfileid: "34751585"
 
 -   瀏覽和巡覽樹狀結構。
 
--   執行關鍵字和結構描述特有的搜尋。 如需詳細資訊，請參閱[搜尋結構描述集](../xml-tools/searching-the-schema-set.md)。
+-   執行關鍵字和結構描述特有的搜尋。 如需詳細資訊，請參閱 <<c0> [ 搜尋結構描述集](../xml-tools/searching-the-schema-set.md)。
 
 -   將搜尋結果加入至圖表檢視或內容模型檢視
 
--   依據文件順序、類型或名稱排序樹狀。 如需詳細資訊，請參閱[排序、 篩選和群組](../xml-tools/sorting-filtering-and-grouping-xml-schema-explorer.md)。
+-   依據文件順序、類型或名稱排序樹狀。 如需詳細資訊，請參閱 <<c0> [ 排序、 篩選和群組](../xml-tools/sorting-filtering-and-grouping-xml-schema-explorer.md)。
 
--   開啟 XML 編輯器並跳到 XSD 檔中的程式碼位置。 如需詳細資訊，請參閱[使用 XML 編輯器整合](../xml-tools/integration-with-xml-editor.md)。
+-   開啟 XML 編輯器並跳到 XSD 檔中的程式碼位置。 如需詳細資訊，請參閱 <<c0> [ 使用 XML 編輯器整合](../xml-tools/integration-with-xml-editor.md)。
 
 -   針對全域項目產生範例 XML。
 
-**XML 結構描述總管**提供透過樹狀檢視設定的結構描述的階層式檢視。 **XML 結構描述總管**也會提供搜尋、 篩選、 導覽和排序。 若要存取**XML 結構描述總管**，執行下列其中一項：
+**XML 結構描述總管**提供透過樹狀檢視中設定的結構描述的階層式檢視。 **XML 結構描述總管**也會提供搜尋、 篩選、 導覽和排序。 若要存取**XML 結構描述總管**，執行下列其中一項：
 
--   如果您在[開始檢視](../xml-tools/start-view.md)，按一下  **XML 結構描述總管**連結。
+-   如果您是在[開始檢視](../xml-tools/start-view.md)，按一下**XML 結構描述總管**連結。
 
--   如果您在[圖表檢視](../xml-tools/graph-view.md)或[內容模型檢視](../xml-tools/content-model-view.md)和工作空間中具有節點，請使用操作功能表選取**XML 結構描述總管**。
+-   如果您是在[圖表檢視](../xml-tools/graph-view.md)或[內容模型檢視](../xml-tools/content-model-view.md)和在您的工作區中的節點，請使用操作功能表選取**XML 結構描述總管**。
 
 -   您也可以選取**XML 結構描述總管**從**檢視**功能表。
 
--   您可以存取**XML 結構描述總管**從 *.vb*檔案具有相關聯的 Visual Basic XML 常值 *.xsd*檔案。 若要檢視的結構描述中設定**XML 結構描述總管**，以滑鼠右鍵按一下 XML 常值或 XML 命名空間匯入中的 XML 節點，然後選取**在結構描述總管中顯示**命令。 如需詳細資訊，請參閱[整合的 XML 常值與 XML 結構描述總管](../xml-tools/integration-of-xml-literals-with-xml-schema-explorer.md)。
+-   您可以存取**XML 結構描述總管**從 *.vb*具有相關聯的 Visual Basic XML 常值的檔案 *.xsd*檔案。 若要查看結構描述中設定**XML 結構描述總管**，以滑鼠右鍵按一下 XML 常值或 XML 命名空間匯入中的 XML 節點，然後選取**在結構描述總管中顯示**命令。 如需詳細資訊，請參閱 <<c0> [ 整合的 XML 常值與 XML 結構描述總管](../xml-tools/integration-of-xml-literals-with-xml-schema-explorer.md)。
 
 ## <a name="tree-view"></a>樹狀檢閱
  **XML 結構描述總管**顯示預先編譯的結構描述樹狀結構中設定資訊。 此樹狀會依照下列方式組織：
@@ -65,7 +64,7 @@ ms.locfileid: "34751585"
 ## <a name="selection-and-activation"></a>選取和啟動
  若要反白顯示並選取節點，請在結構描述總管中按一下。
 
- 若要啟動節點，連按兩下，或按**Enter**選取節點之後。
+ 若要啟動節點，按兩下或按**Enter**選取節點時。
 
 -   啟動節點會開啟定義該節點的檔案 (如果該檔案尚未開啟)，並且在該檔案中選取此節點。
 
@@ -73,8 +72,8 @@ ms.locfileid: "34751585"
 
 -   啟動 SchemaSet 或命名空間節點不會有任何反應。
 
-## <a name="drag-and-drop-nodes"></a>拖放節點
- 您可以將全域節點、檔案節點以及命名空間節點拖放至 XSD 設計工具檢視中。 如果目前的檢視是[開始檢視](../xml-tools/start-view.md)，拖曳到檢視的節點會開啟[圖表檢視](../xml-tools/graph-view.md)。 如果目前的檢視是[內容模型檢視](../xml-tools/content-model-view.md)或圖表檢視，檢視不會變更當您卸除至其本身的節點。
+## <a name="drag-and-drop-nodes"></a>將拖放節點
+ 您可以將全域節點、檔案節點以及命名空間節點拖放至 XSD 設計工具檢視中。 如果目前的檢視[開始檢視](../xml-tools/start-view.md)，拖曳到檢視的節點會開啟[圖表檢視](../xml-tools/graph-view.md)。 如果目前的檢視[內容模型檢視](../xml-tools/content-model-view.md)或圖表檢視，檢視不會變更當您卸除將節點拖曳到它。
 
  卸除檢視上的檔案會在檔案中新增所有全域節點[XSD 設計工具工作空間](../xml-tools/xml-schema-designer-workspace.md)。 將命名空間置於檢視上則會將命名空間中的所有全域節點加入至該工作空間。 工作空間在所有檢視之間共用。
 
@@ -82,4 +81,4 @@ ms.locfileid: "34751585"
 
 ## <a name="see-also"></a>另請參閱
 
-- [如何： 將節點加入至工作區中，從 XML 結構描述總管](../xml-tools/how-to-add-nodes-to-the-workspace-from-the-xml-schema-explorer.md)
+- [如何：將節點從 XML 結構描述總管加入至工作區](../xml-tools/how-to-add-nodes-to-the-workspace-from-the-xml-schema-explorer.md)

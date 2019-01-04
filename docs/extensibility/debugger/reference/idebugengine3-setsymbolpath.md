@@ -1,9 +1,6 @@
 ---
 title: IDebugEngine3::SetSymbolPath |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugEngine3::SetSymbolPath
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 00f493c0c64dc8bc6bef6adff59fff4ce1bcb8c3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a307f0ad2493db88c94f3578afa171db3e47a5ae
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49854568"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53882438"
 ---
 # <a name="idebugengine3setsymbolpath"></a>IDebugEngine3::SetSymbolPath
 設定要搜尋偵錯符號的路徑。  

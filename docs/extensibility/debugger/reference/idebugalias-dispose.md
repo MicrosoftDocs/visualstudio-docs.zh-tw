@@ -1,9 +1,6 @@
 ---
-title: IDebugAlias::Dispose |Microsoft 文件
-ms.custom: ''
+title: IDebugAlias::Dispose |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugAlias::Dispose
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8aba4558602ea9aa4fecf6d4fa1ca7564cd3885c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 871041c69fafef2154db2794e20212705eaea3c9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31099320"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53943992"
 ---
 # <a name="idebugaliasdispose"></a>IDebugAlias::Dispose
 將標示為移除此別名。  
@@ -28,21 +25,21 @@ ms.locfileid: "31099320"
 ## <a name="syntax"></a>語法  
   
 ```cpp  
-HRESULT Dispose();  
+HRESULT Dispose();  
 ```  
   
 ```csharp  
-int Dispose();  
+int Dispose();  
 ```  
   
 #### <a name="parameters"></a>參數  
  無。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，會傳回 S_OK;反之則傳回錯誤碼。  
+ 如果成功，會傳回 S_OK;否則，傳回錯誤碼。  
   
 ## <a name="remarks"></a>備註  
- 一旦呼叫此方法時，別名已無法再使用。  
+ 一旦呼叫這個方法時，已無法再使用別名。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md)

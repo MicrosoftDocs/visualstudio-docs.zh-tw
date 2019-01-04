@@ -1,9 +1,6 @@
 ---
 title: DEBUG_ADDRESS_UNION |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - DEBUG_ADDRESS_UNION
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 37b22b6a67df981920b2288e6f917d57a67dd762
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6a6a9ddc8806bdbba5a583e16657c3c5126a8992
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49872079"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53947201"
 ---
 # <a name="debugaddressunion"></a>DEBUG_ADDRESS_UNION
 說明不同類型的位址。  
@@ -90,12 +87,12 @@ public struct DEBUG_ADDRESS_UNION {
  [只有 c + +]聯集的名稱。  
   
  unionmember  
- [僅限 C#]此值必須根據適當的結構類型封送處理`dwKind`。 如之間的關聯，請參閱 < 備註 > 一`dwKind`和等位的解譯。  
+ [C#只]此值必須根據適當的結構類型封送處理`dwKind`。 如之間的關聯，請參閱 < 備註 > 一`dwKind`和等位的解譯。  
   
 ## <a name="remarks"></a>備註  
  此結構是的一部分[DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md)結構，並代表不同種類的位址數的其中一個 (`DEBUG_ADDRESS`結構的呼叫會填入[GetAddress](../../../extensibility/debugger/reference/idebugaddress-getaddress.md)方法)。  
   
- [僅限 C#]下表顯示如何解譯`unionmember`位址的每種類型的成員。 此範例會示範如何做到這點一種地址。  
+ [C#只]下表顯示如何解譯`unionmember`位址的每種類型的成員。 此範例會示範如何做到這點一種地址。  
   
 |`dwKind`|`unionmember` 解譯為|  
 |--------------|----------------------------------|  
@@ -137,9 +134,9 @@ namespace MyPackage
 ## <a name="requirements"></a>需求  
  標頭： sh.h  
   
- 命名空間： Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間:Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
  [結構和等位](../../../extensibility/debugger/reference/structures-and-unions.md)   

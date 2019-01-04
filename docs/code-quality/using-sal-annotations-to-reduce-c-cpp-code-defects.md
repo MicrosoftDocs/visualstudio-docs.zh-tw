@@ -2,7 +2,6 @@
 title: 使用 SAL 註釋減少 C/C++ 程式碼的缺失
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 helpviewer_keywords:
 - annotations
@@ -14,17 +13,17 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 92a48bca7afb59fa83e489c6f5cd96d115d8c872
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 973fcaf1a5c49332223f169cdb668526552cfe12
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31921707"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53954327"
 ---
 # <a name="using-sal-annotations-to-reduce-cc-code-defects"></a>使用 SAL 註釋減少 C/C++ 程式碼的缺失
-SAL 是 Microsoft 原始程式碼註釋語言。 藉由使用原始程式碼註釋，您可以進行意圖背後程式碼明確。 這些註解也會啟用自動化的靜態分析工具使用少了許多誤判和誤否定更精確地分析您的程式碼。
+SAL 是 Microsoft 原始程式碼註釋語言。 藉由使用來源的程式碼註解，您可以讓其目的後置您的程式碼明確。 這些註解也會啟用透過來分析您的程式碼更精確地說，少了許多誤判和誤否定的自動化的靜態分析工具。
 
- 文件的本節文章討論的 SAL 層面，提供 SAL 語法的參考，並提供及其使用範例。
+ 文件的本節文章討論 SAL 的層面，提供 SAL 的語法，參考並提供其用法範例。
 
 -   [了解 SAL](../code-quality/understanding-sal.md)
 
@@ -48,18 +47,18 @@ SAL 是 Microsoft 原始程式碼註釋語言。 藉由使用原始程式碼註�
 
 -   [指定套用註釋的時機和位置](../code-quality/specifying-when-and-where-an-annotation-applies.md)
 
-     列出指定的條件或範圍 （放置） 其他 SAL 註釋的 SAL 註釋。
+     列出指定的條件或其他的 SAL 註釋的範圍 （放置） 的 SAL 註釋。
 
 -   [內建函式](../code-quality/intrinsic-functions.md)
 
      列出的內建函式的 SAL 註釋。
 
--   [最佳作法和範例](../code-quality/best-practices-and-examples-sal.md)
+-   [最佳做法和範例](../code-quality/best-practices-and-examples-sal.md)
 
-     提供範例示範如何使用 SAL 註釋。 也會說明常見的問題。
+     提供示範如何使用 SAL 註釋的範例。 也會說明常見的錯誤。
 
 ## <a name="related-resources"></a>相關資源
  [程式碼分析小組部落格](http://go.microsoft.com/fwlink/?LinkId=251197)
 
 ## <a name="see-also"></a>另請參閱
- [2.0 SAL 註釋的 Windows 驅動程式](http://go.microsoft.com/fwlink/?LinkId=250979)
+ [SAL 2.0 的 Windows 驅動程式的註解](http://go.microsoft.com/fwlink/?LinkId=250979)

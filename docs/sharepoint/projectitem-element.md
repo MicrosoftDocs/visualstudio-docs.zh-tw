@@ -1,9 +1,6 @@
 ---
 title: ProjectItem 項目 |Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ca0c295410caffb476d6c1e796864c47520a2f56
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: e7c9a32a7fa84d8adc064aa3a3ac035999295791
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118791"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53890098"
 ---
 # <a name="projectitem-element"></a>ProjectItem 項目
   代表 SharePoint 專案項目。 這個項目必要的根元素的 *.spdata*檔案。  
@@ -52,9 +49,9 @@ ms.locfileid: "37118791"
 |**DefaultFile**|選擇性**xs： 字串**屬性。<br /><br /> 相對路徑，包括檔案名稱，當您開啟中的 SharePoint 專案項目時，Visual Studio 編輯器中開啟的檔案**方案總管 中**。 路徑是相對於資料夾，其中包含 *.spdata*檔案。|  
 |**FeatureReceiverClass**|選擇性**xs: string**屬性。<br /><br /> 這個 SharePoint 專案項目的功能接收器類別完整的名稱。 如需有關功能接收器的詳細資訊，請參閱[提供專案項目中的封裝和部署資訊](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)。|  
 |**FeatureReceiverAssembly**|選擇性**xs: string**屬性。<br /><br /> 指定定義此 SharePoint 專案項目的功能接收器的組件完整格式的名稱。 如需有關功能接收器的詳細資訊，請參閱[提供專案項目中的封裝和部署資訊](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)。 如需完整的組件名稱的詳細資訊，請參閱[組件名稱](/dotnet/framework/app-domains/assembly-names)。|  
-|**SupportedTrustLevels**|選擇性**xs: string**屬性。<br /><br /> 指定此 SharePoint 專案項目支援的信任層級。 這個值可以是下列字串之一： 沙箱化，FullTrust，或全部。 值，所有指定 Sandboxed 和完全信任。<br /><br /> 自訂 SharePoint 專案項目類型中，此屬性的值會對應至值指派給<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeDefinition.SupportedTrustLevels%2A>屬性的實作中<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider.InitializeType%2A>方法。 如果您指定不同的值，這個屬性時，Visual Studio 會覆寫值，使它指定您在中指定的相同信任層級<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeDefinition.SupportedTrustLevels%2A>屬性。|  
-|**SupportedDeploymentScopes**|選擇性**xs: string**屬性。<br /><br /> 指定此 SharePoint 專案項目支援的部署範圍。 這個值是以逗號分隔的字串，包含一或多個下列字串： 伺服器陣列、 網站、 Web、 WebApplication 或封裝。 例如：`Web, Site`<br /><br /> 自訂 SharePoint 專案項目類型中，此屬性的值會對應至值指派給<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeDefinition.SupportedDeploymentScopes%2A>屬性的實作中<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider.InitializeType%2A>方法。 如果您指定不同的值，這個屬性時，Visual Studio 會覆寫值，使它指定您在中指定的相同信任層級<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeDefinition.SupportedDeploymentScopes%2A>屬性。|  
-|**Type**|所需**xs: string**屬性。<br /><br /> SharePoint 專案項目識別碼。 自訂 SharePoint 專案項目類型中，識別碼就是您傳遞給字串<xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemTypeAttribute>。 如需詳細資訊，請參閱 <<c0> [ 如何： 定義 SharePoint 專案項目類型](../sharepoint/how-to-define-a-sharepoint-project-item-type.md)。<br /><br /> 如需 Visual Studio 隨附的內建 SharePoint 專案項目識別碼的清單，請參閱[擴充 SharePoint 專案項目](../sharepoint/extending-sharepoint-project-items.md)。|  
+|**SupportedTrustLevels**|選擇性**xs: string**屬性。<br /><br /> 指定此 SharePoint 專案項目支援的信任層級。 這個值可以是下列字串之一：沙箱化，FullTrust，或全部。 值，所有指定 Sandboxed 和完全信任。<br /><br /> 自訂 SharePoint 專案項目類型中，此屬性的值會對應至值指派給<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeDefinition.SupportedTrustLevels%2A>屬性的實作中<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider.InitializeType%2A>方法。 如果您指定不同的值，這個屬性時，Visual Studio 會覆寫值，使它指定您在中指定的相同信任層級<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeDefinition.SupportedTrustLevels%2A>屬性。|  
+|**SupportedDeploymentScopes**|選擇性**xs: string**屬性。<br /><br /> 指定此 SharePoint 專案項目支援的部署範圍。 這個值是逗號分隔的字串，其中包含一或多個下列字串：伺服器陣列、 網站、 Web、 WebApplication 或封裝。 例如： `Web, Site`<br /><br /> 自訂 SharePoint 專案項目類型中，此屬性的值會對應至值指派給<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeDefinition.SupportedDeploymentScopes%2A>屬性的實作中<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider.InitializeType%2A>方法。 如果您指定不同的值，這個屬性時，Visual Studio 會覆寫值，使它指定您在中指定的相同信任層級<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeDefinition.SupportedDeploymentScopes%2A>屬性。|  
+|**Type**|所需**xs: string**屬性。<br /><br /> SharePoint 專案項目識別碼。 自訂 SharePoint 專案項目類型中，識別碼就是您傳遞給字串<xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemTypeAttribute>。 如需詳細資訊，請參閱[＜How to：定義 SharePoint 專案項目類型](../sharepoint/how-to-define-a-sharepoint-project-item-type.md)。<br /><br /> 如需 Visual Studio 隨附的內建 SharePoint 專案項目識別碼的清單，請參閱[擴充 SharePoint 專案項目](../sharepoint/extending-sharepoint-project-items.md)。|  
   
 ### <a name="child-elements"></a>子元素
   
@@ -80,4 +77,3 @@ ms.locfileid: "37118791"
   
 ## <a name="see-also"></a>另請參閱
 [SharePoint 專案項目結構描述 rseference](../sharepoint/sharepoint-project-item-schema-reference.md)  
-  

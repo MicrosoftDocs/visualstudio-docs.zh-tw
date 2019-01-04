@@ -10,19 +10,18 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 104a74a38099286675a742ce9eea367d9eeabe84
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 449fb0c12b11163ba0ceca981e66a7da0c399e1c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31944384"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53950195"
 ---
 # <a name="boundsrules-constrain-shape-location-and-size"></a>BoundsRules 限制圖案位置和大小
 
-A*範圍規則*是類別，定義限制的大小和圖形的位置。 它提供時的使用者正在拖曳圖形或角落或四周的圖形會重複呼叫的方法。
+A*繫結規則，* 是一個類別來定義的大小和形狀的位置上的限制。 它提供時的使用者正在拖曳圖形或角落或四周的圖形會重複呼叫的方法。
 
-下列範例限制矩形是固定的大小，水平或垂直列。 當使用者拖曳的角落或四周時，大綱翻轉之間允許的兩個設定的高度和寬度。
+下列範例會限制為固定大小的水平或垂直列 「 矩形 」 圖形。 當使用者拖曳的角落或四周時外, 框會在兩個允許的設定的高度與寬度之間翻轉。
 
 範圍規則的類別衍生自<xref:Microsoft.VisualStudio.Modeling.Diagrams.BoundsRules>。 在圖形中建立規則的執行個體：
 
@@ -66,7 +65,7 @@ public class BarBoundsRule: BoundsRules
 } } }
 ```
 
-請注意，位置和大小可以限制是否您想要。
+請注意，位置和大小可以限制是否您想要的。
 
 ## <a name="see-also"></a>另請參閱
 

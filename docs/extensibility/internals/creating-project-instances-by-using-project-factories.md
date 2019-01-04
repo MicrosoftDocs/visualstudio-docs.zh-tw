@@ -1,9 +1,6 @@
 ---
 title: 使用 Project Factory 建立專案執行個體 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - project factories
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4a02d6dd09ec019ad05404c033889f89ed140dd1
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 1eefd53b82ef12c0ee2b374a320e049e620dcf5a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219493"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53938117"
 ---
 # <a name="create-project-instances-by-using-project-factories"></a>使用 project factory 建立專案執行個體
 專案中的型別[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]使用*project factory*建立專案物件的執行個體。 專案的處理站是類似於標準的 class factory cocreatable COM 物件。 不過，不 cocreatable; 專案物件它們只能使用 project factory 建立。  
@@ -51,4 +48,4 @@ ms.locfileid: "50219493"
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsOwnedProjectFactory>   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory>   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterProjectTypes>   
- [檢查清單： 建立新的專案類型](../../extensibility/internals/checklist-creating-new-project-types.md)
+ [檢查清單：建立新的專案類型](../../extensibility/internals/checklist-creating-new-project-types.md)

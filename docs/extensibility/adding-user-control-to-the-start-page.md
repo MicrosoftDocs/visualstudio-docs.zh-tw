@@ -1,9 +1,6 @@
 ---
 title: 將使用者控制項加入至起始頁 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - start page dll
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 96b280221ba7efdefd3023f015bd4075b8c03aaa
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8218910c50c63e3cef8f8ad402967bd21fb0da5d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49910484"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53874689"
 ---
 # <a name="add-user-control-to-the-start-page"></a>將使用者控制項加入至 [入門] 頁面
 本逐步解說示範如何加入自訂的 [入門] 頁面的 DLL 參考。 此範例會將使用者控制項新增至方案、 建置使用者控制項，並再參考從 開始 頁面的 建置的組件 *.xaml*檔案。 新的索引標籤裝載使用者控制項，可當做基本網頁瀏覽器。  
@@ -110,7 +107,7 @@ ms.locfileid: "49910484"
 2.  填入 SetButton_Click 事件處理常式，如下所示。  
   
     ```csharp  
-    private void SetButton_Click(object sender, RoutedEventArgs e)  
+    private void SetButton_Click(object sender, RoutedEventArgs e)  
     {  
         try  
         {  
@@ -189,4 +186,4 @@ ms.locfileid: "49910484"
   
 ## <a name="see-also"></a>另請參閱  
  [WPF 控制項](https://msdn.microsoft.com/library/a0177167-d7db-4205-9607-8ae316952566)   
- [逐步解說： 將自訂的 XAML 加入至 [入門] 頁面](../extensibility/walkthrough-adding-custom-xaml-to-the-start-page.md)
+ [逐步解說：將自訂的 XAML 加入至 [入門] 頁面](../extensibility/walkthrough-adding-custom-xaml-to-the-start-page.md)
