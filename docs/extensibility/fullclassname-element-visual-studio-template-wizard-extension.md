@@ -1,9 +1,7 @@
 ---
 title: FullClassName 項目 （Visual Studio 範本精靈擴充） |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#FullClassName
@@ -15,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 05b23039540ed520e2298222e92131248fef0e3b
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: f185d791010c545dd56326505d871fb964a71b66
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498363"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53943731"
 ---
 # <a name="fullclassname-element-visual-studio-template-wizard-extension"></a>FullClassName 項目 （Visual Studio 範本精靈擴充）
 實作的類別完整的名稱`IWizard`介面。  
@@ -93,4 +91,4 @@ ms.locfileid: "39498363"
 ## <a name="see-also"></a>另請參閱  
  [Visual Studio 範本結構描述參考](../extensibility/visual-studio-template-schema-reference.md)   
  [建立專案和項目範本](../ide/creating-project-and-item-templates.md)   
- [如何： 搭配專案範本使用精靈](../extensibility/how-to-use-wizards-with-project-templates.md)
+ [如何：使用精靈與專案範本](../extensibility/how-to-use-wizards-with-project-templates.md)

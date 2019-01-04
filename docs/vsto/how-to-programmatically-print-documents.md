@@ -1,9 +1,6 @@
 ---
-title: 如何： 以程式設計方式列印文件
-ms.custom: ''
+title: HOW TO：以程式設計方式列印文件
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6c1e34e723618d24870d76dd961e7f4c484bc6fd
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: da618b4b972c8f49d98118d26b5f0a4aa47cfde0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35670831"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53917351"
 ---
-# <a name="how-to-programmatically-print-documents"></a>如何： 以程式設計方式列印文件
+# <a name="how-to-programmatically-print-documents"></a>HOW TO：以程式設計方式列印文件
   您可以將整個 Microsoft Office Word 文件，或文件的一部分，列印到預設印表機。  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
@@ -62,5 +59,3 @@ ms.locfileid: "35670831"
   
 ## <a name="see-also"></a>另請參閱  
  [Office 方案中的選擇性參數](../vsto/optional-parameters-in-office-solutions.md)  
-  
-  

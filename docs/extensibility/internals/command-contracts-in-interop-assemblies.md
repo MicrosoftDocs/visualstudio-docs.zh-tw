@@ -1,9 +1,6 @@
 ---
 title: 命令 Interop 組件中的合約 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - command handling with interop assemblies, command contracts
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c2ac80125111ebfe3d8a7e5dc89d1f2597f8d3a4
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: e3c6aea16308c39679c9e31043998b0c6c5558cd
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39510851"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53892987"
 ---
 # <a name="command-contracts-in-interop-assemblies"></a>Interop 組件中的命令合約
 處理命令，透過的基本合約<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>介面是環境呼叫<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A>方法以判斷是否支援該命令，如果支援，以判斷其狀態和文字。 接著，環境會呼叫<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A>方法來執行命令。  

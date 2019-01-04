@@ -1,9 +1,6 @@
 ---
 title: HOW TO：以程式設計方式加入文字和格式在 Word 表格的儲存格
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,12 +15,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 44f80b6eb2144b5cf831566c47d77aa1c3bc0c7b
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: 50c6c1fc0b2aa06771999e512d05821099b362c3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53802299"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53865592"
 ---
 # <a name="how-to-programmatically-add-text-and-formatting-to-cells-in-word-tables"></a>HOW TO：以程式設計方式加入文字和格式在 Word 表格的儲存格
   每個資料表都是由一組儲存格組成。 每個個別的 <xref:Microsoft.Office.Interop.Word.Cell> 物件各代表資料表中的一個儲存格。 您可以依據儲存格在資料表中的位置來參考每一個儲存格。 這個範例會參考位於資料表中第一列和第一欄的儲存格、將文字加入儲存格，並套用格式。  
@@ -48,5 +45,3 @@ ms.locfileid: "53802299"
  [如何：以程式設計方式建立 Word 表格](../vsto/how-to-programmatically-create-word-tables.md)   
  [如何：以程式設計方式將資料列和資料行加入至 Word 表格](../vsto/how-to-programmatically-add-rows-and-columns-to-word-tables.md)   
  [如何：以程式設計方式填入 Word 表格文件屬性](../vsto/how-to-programmatically-populate-word-tables-with-document-properties.md)  
-  
-  

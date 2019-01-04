@@ -1,9 +1,6 @@
 ---
 title: 偵錯工作 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], tasks
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8a1d2ae4b05398daa7c42be441cebecb304bf956
-ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
+ms.openlocfilehash: aa719871e075a5448fa2d351c5bd7950a833601a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39204163"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53900148"
 ---
 # <a name="debug-tasks"></a>偵錯工作
 偵錯程式，就必須啟動並偵錯引擎 (DE) 必須連接到它，否則 DE 必須附加至先前啟動的程式。 附加後，裝置必須產生特定啟動事件。 在回應中，偵錯封裝會嘗試繫結在 IDE 中設定的中斷點。 當程式叫用繫結的中斷點時，它會中止，並等待使用者輸入。  

@@ -1,5 +1,5 @@
 ---
-title: 如何：攔截圖案或 Decorator 上的點選
+title: HOW TO：攔截圖形或裝飾項目上的點選
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,15 +10,14 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 0a8af35d9edbb28c6b357149586fe7015858f4f0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d71cb172929fd9d213c0f09be21c1a844acf4462
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49876525"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53892738"
 ---
-# <a name="how-to-intercept-a-click-on-a-shape-or-decorator"></a>如何：攔截圖案或 Decorator 上的點選
+# <a name="how-to-intercept-a-click-on-a-shape-or-decorator"></a>HOW TO：攔截圖形或裝飾項目上的點選
 下列程序示範如何攔截圖案或 decorator 上的圖示。 您可以攔截按一下、 按兩下、 拖曳，及其他筆勢，並讓回應項目。
 
 ## <a name="to-intercept-clicks-on-shapes"></a>若要攔截在圖形上的點選

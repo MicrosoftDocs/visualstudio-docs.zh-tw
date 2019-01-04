@@ -1,13 +1,8 @@
 ---
-title: 如何： 將控制項標記為安全控制項 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：將控制項標記為安全控制項 |Microsoft Docs
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -19,14 +14,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 04470034f1fa1531a1677b4acd6b36f0b99c8a62
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 87e99937239ad080d24bf997d6c2de2a5d8f73ac
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118746"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53989370"
 ---
-# <a name="how-to-mark-controls-as-safe-controls"></a>如何： 將控制項標記為安全控制項
+# <a name="how-to-mark-controls-as-safe-controls"></a>HOW TO：將控制項標記為安全控制項
   為了安全性，SharePoint 會區別指令碼資料隱碼攻擊時受到保護的 Web 控制項和 Web 控制項不是。 受保護的控制項，或是*安全控制項*，可以由不受信任的使用者存取。 您可以將標記為安全的 SharePoint 專案項目，或在 安全控制項項目屬性中的控制項**封裝設計工具**將組件加入封裝。 如需詳細資訊，請參閱  
   
  [web.config 檔案設定變更](http://go.microsoft.com/fwlink/?LinkId=178965)並[Web 組件註冊為安全控制項](http://go.microsoft.com/fwlink/?LinkId=171013)。  
@@ -94,7 +89,7 @@ ms.locfileid: "37118746"
     |-------------------|-----------|  
     |命名空間|控制項的完整命名空間這類**BdcModelProject1.VisualWebPart1**。|  
     |類型名稱|Button1|  
-    |組件名稱|強式的組件名稱，例如： Microsoft.Office.SharePoint.ClientExtensions，version=14.0.0.0，Culture = neutral，PublicKeyToken = 71e9bce111e9429c。|  
+    |組件名稱|強式的組件名稱，例如：Microsoft.Office.SharePoint.ClientExtensions，version=14.0.0.0，Culture = neutral，PublicKeyToken = 71e9bce111e9429c。|  
     |安全|清除**安全**核取方塊。|  
     |針對指令碼的安全|離開**防止指令碼**清除核取方塊。|  
   
@@ -111,7 +106,7 @@ ms.locfileid: "37118746"
     |-------------------|-----------|  
     |命名空間|控制項的完整命名空間這類**BdcModelProject1.VisualWebPart1**。|  
     |類型名稱|TextBox1|  
-    |組件名稱|強式的組件名稱，例如： Microsoft.Office.SharePoint.ClientExtensions，version=14.0.0.0，Culture = neutral，PublicKeyToken = 71e9bce111e9429c。|  
+    |組件名稱|強式的組件名稱，例如：Microsoft.Office.SharePoint.ClientExtensions，version=14.0.0.0，Culture = neutral，PublicKeyToken = 71e9bce111e9429c。|  
     |安全|選取 **安全**核取方塊。|  
     |針對指令碼的安全|選取 **防止指令碼**核取方塊。|  
   
@@ -120,4 +115,3 @@ ms.locfileid: "37118746"
 ## <a name="see-also"></a>另請參閱
  [提供專案項目中的封裝和部署資訊](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)   
  [封裝和部署 SharePoint 方案](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
-  

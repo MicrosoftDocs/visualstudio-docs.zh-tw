@@ -8,13 +8,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 558d0143343d04bdfadf530aca10466991b3f2f1
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 0b0e85beaa03984be854577728afbb5915af579b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53057505"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53891822"
 ---
 # <a name="visual-studio-architecture-tooling-guidance"></a>Visual Studio 架構工具指南
 

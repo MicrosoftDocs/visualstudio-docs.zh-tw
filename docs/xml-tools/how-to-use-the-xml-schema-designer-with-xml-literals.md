@@ -2,7 +2,6 @@
 title: HOW TO：搭配使用 XML 結構描述設計工具和 XML 常值
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: conceptual
 ms.assetid: d11803e7-f81a-41a2-a145-ba494a45cc93
 author: gewarren
@@ -12,14 +11,14 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 9858768da0096c98ffb3014f0a52936adbf39019
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1483077142d1c60d3309458aedbe1abd7e2e2b00
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49931112"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53863390"
 ---
-# <a name="how-to-use-the-xml-schema-designer-with-xml-literals"></a>如何： 使用 XML 常值中的 XML 結構描述設計工具
+# <a name="how-to-use-the-xml-schema-designer-with-xml-literals"></a>HOW TO：使用 XML 常值中的 XML 結構描述設計工具
 
 本主題描述如何在 Visual Studio 專案中檢視與 XML 常值相關的結構描述。
 
@@ -39,7 +38,7 @@ ms.locfileid: "49931112"
 
 3.  在**方案總管**，以滑鼠右鍵按一下專案名稱，然後選取**新增**，然後選取**現有項目**。 **加入現有項目** 對話方塊隨即出現。 瀏覽至*PurchaseOrderSchema.xsd*檔案，加以選取，然後按一下 **新增**。
 
-     XMLLiterals 專案現在會包含兩個檔案： *Module1.vb*並*PurchaseOrderSchema.xsd*。
+     XMLLiterals 專案現在會包含兩個檔案：*Module1.vb*並*PurchaseOrderSchema.xsd*。
 
 ## <a name="to-add-visual-basic-code-with-an-xml-literal-based-on-the-xsd-file-included-in-the-project"></a>根據專案中包含的 XSD 檔案，加入含有 XML 常值的 Visual Basic 程式碼
 

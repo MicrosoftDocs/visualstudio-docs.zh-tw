@@ -1,9 +1,6 @@
 ---
-title: 逐步解說： 建立使用 c + + SDK |Microsoft Docs
-ms.custom: ''
+title: 逐步解說：使用 c + + 建立 SDK |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 36ea793b-3832-41a1-b906-69e680ad5e1d
 author: gregvanl
@@ -11,14 +8,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6311526df299da860c829520a2087ecc8d786600
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2a0db4f34315f9e0eb4a5627cdc286a43a904a34
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49930634"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53917601"
 ---
-# <a name="walkthrough-create-an-sdk-using-c"></a>逐步解說： 建立使用 c + + SDK
+# <a name="walkthrough-create-an-sdk-using-c"></a>逐步解說：建立使用 c + + SDK
 本逐步解說示範如何建立原生 c + + 數學程式庫 SDK，封裝 SDK 作為 Visual Studio 擴充功能 (VSIX)，並接著使用它來建立應用程式。 本逐步解說分為下列步驟：  
   
 -   [若要建立原生和 Windows 執行階段程式庫](../extensibility/walkthrough-creating-an-sdk-using-cpp.md#createClassLibrary)  
@@ -112,7 +109,7 @@ ms.locfileid: "49930634"
   
     [!code-xml[CreatingAnSDKUsingCpp#7](../extensibility/codesnippet/XML/walkthrough-creating-an-sdk-using-cpp_7.xml)]  
   
-12. 在功能表列上選擇 [**檢視** > **其他 Windows** > **屬性] 視窗**(鍵盤： 選擇**F4**索引鍵)。  
+12. 在功能表列上選擇 [**檢視** > **其他 Windows** > **屬性] 視窗**(鍵盤：選擇**F4**索引鍵)。  
   
 13. 在 **方案總管**，選取**NativeMathWRT.winmd**檔案。 在**屬性**視窗中，變更**建置動作**屬性設**內容**，然後變更**Include in VSIX** 屬性**True**。  
   
@@ -177,5 +174,5 @@ ms.locfileid: "49930634"
 ## <a name="next-steps"></a>後續步驟  
   
 ## <a name="see-also"></a>另請參閱  
- [逐步解說： 建立使用 C# 或 Visual Basic SDK](../extensibility/walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md)   
+ [逐步解說：使用 SDK 建立C#或 Visual Basic](../extensibility/walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md)   
  [建立軟體開發套件](../extensibility/creating-a-software-development-kit.md)

@@ -1,9 +1,6 @@
 ---
 title: IDebugPort2::GetPortName |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugPort2::GetPortName
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 791205381bb4d04a85debbe0d5e1596490eb0209
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3c450042f1bd2ef9199c8752f231b638487625ab
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49873756"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53914510"
 ---
 # <a name="idebugport2getportname"></a>IDebugPort2::GetPortName
 取得的連接埠名稱。  
@@ -28,13 +25,13 @@ ms.locfileid: "49873756"
 ## <a name="syntax"></a>語法  
   
 ```cpp  
-HRESULT GetPortName(   
+HRESULT GetPortName(   
    BSTR* pbstrName  
 );  
 ```  
   
 ```csharp  
-int GetPortName(   
+int GetPortName(   
    out string pbstrName  
 );  
 ```  

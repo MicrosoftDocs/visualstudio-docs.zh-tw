@@ -1,9 +1,6 @@
 ---
 title: 參與 Automation 模型 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - automation [Visual Studio SDK]
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5d56b446914ae7345ccb0d393db8f17fc7f82c47
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 6db9cd21b56fb4d31a97fea9f16541377a8de1f3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39513181"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53952598"
 ---
 # <a name="contribute-to-the-automation-model"></a>參與 automation 模型
 Visual Studio 會提供一組自動化介面的自訂環境。 Automation 模型是可讓使用者建立 Visual Studio 增益集和擴充功能的物件模型。  
@@ -49,7 +46,7 @@ Visual Studio 會提供一組自動化介面的自訂環境。 Automation 模型
  [提供自動化的程式碼](../../extensibility/internals/providing-automation-for-code.md)  
  說明，建立的自動化模型，讓您的程式碼並不需要。 不過，就會提供具洞察力的資訊，程式碼模型到本主題中提供的連結。  
   
- [如何： 提供的 Windows 自動化](../../extensibility/internals/how-to-provide-automation-for-windows.md)  
+ [如何：提供 Windows 的自動化](../../extensibility/internals/how-to-provide-automation-for-windows.md)  
  說明提供自動化是個不錯的主意每當您想要在視窗中，提供 automation 物件和環境已不提供現成的自動化物件。 討論自動化工具視窗和文件視窗。  
   
  [使用 automation 模型](../../extensibility/internals/using-the-automation-model.md)  
@@ -61,4 +58,3 @@ Visual Studio 會提供一組自動化介面的自訂環境。 Automation 模型
 ## <a name="reference"></a>參考資料  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A>  
  提供 VSPackage 如何參與 DTE 自動化物件模型會顯示的程式碼範例。 列出參數、 傳回值，以及所選的 < 備註 >。  
-  

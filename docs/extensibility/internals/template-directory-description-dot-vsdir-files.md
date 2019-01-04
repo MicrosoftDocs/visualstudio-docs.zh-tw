@@ -1,9 +1,6 @@
 ---
 title: 範本目錄描述 (。Vsdir) 檔案 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - .vsdir files
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 67e2cf5dcb898614750aecd7e4fe997fbde0b5cc
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4ff1c9d1557722b31a4375c3189b788968c2b198
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49938431"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53925205"
 ---
 # <a name="template-directory-description-vsdir-files"></a>範本目錄描述檔 (.Vsdir)
 範本目錄描述檔 (.vsdir) 是文字檔案，可讓整合式的開發環境 (IDE)，以顯示資料夾、 精靈.vsz 檔案，以及您在對話方塊中的專案相關聯的範本檔案。 內容包括每個檔案或資料夾的一筆記錄。 參考的位置中的所有.vsdir 檔案會都合併，雖然只有一個.vsdir 檔案通常提供來描述多個資料夾、 精靈、 或範本檔案。  
@@ -43,14 +40,14 @@ SourceFile.cpp|{E59935A1-6156-11d1-87A6-00A0C91E2A46}|#122|110|#123|0|0|0|#124
 | 欄位 | 描述 |
 | - | - |
 | 相對路徑名稱 (RelPathName) | 資料夾、 範本或.vsz 檔案，例如 HeaderFile.h 或 MyWizard.vsz 的名稱。 這個欄位也可以用來表示資料夾的名稱。 |
-| {clsidPackage} | VSPackage 可讓您存取中的當地語系化字串，例如 LocalizedName、 描述、 IconResourceId 和 SuggestedBaseName，VSPackage 的附屬動態連結程式庫 (DLL) 資源的 GUID。 如果未提供 DLLPath，適用於 IconResourceId。 **注意：** 這個欄位是選擇性的除非一或多個先前的欄位是資源識別碼。 此欄位是未當地語系化文字的第三方精靈與對應的.vsdir 檔案通常是空白的。 |
-| LocalizedName | 精靈之範本檔案的當地語系化的名稱。 這個欄位可以是字串或表單"#ResID 」 的資源識別碼。 此名稱會顯示在**加入新項目** 對話方塊。 **注意：** 如果 LocalizedName 是資源識別碼，則 {clsidPackage} 不需要。 |
+| {clsidPackage} | VSPackage 可讓您存取中的當地語系化字串，例如 LocalizedName、 描述、 IconResourceId 和 SuggestedBaseName，VSPackage 的附屬動態連結程式庫 (DLL) 資源的 GUID。 如果未提供 DLLPath，適用於 IconResourceId。 **注意：** 此欄位是選擇性的除非一或多個先前的欄位是資源識別碼。 此欄位是未當地語系化文字的第三方精靈與對應的.vsdir 檔案通常是空白的。 |
+| LocalizedName | 精靈之範本檔案的當地語系化的名稱。 這個欄位可以是字串或表單"#ResID 」 的資源識別碼。 此名稱會顯示在**加入新項目** 對話方塊。 **注意：** 如果 LocalizedName 資源識別項，那麼就需要 {clsidPackage}。 |
 | SortPriority | 整數，表示此範本檔案或精靈的相對優先權。 比方說，如果此項目有值為 1，則此項目會顯示其他項目旁的值為 1 和 2 個或更大的在排序值的所有項目之前。<br /><br /> 排序優先順序是相對於相同的目錄中的項目。 在相同的目錄中可能有一個以上的.vsdir 檔案。 在此情況下，從所有的項目<em>。</em>在該目錄中的 vsdir 檔案會合併。 具有相同優先順序的項目所示的顯示名稱不區分大小寫的詞典編纂順序。 `_wcsicmp`函數用來排序的項目。<br /><br /> .Vsdir 檔案中未說明的項目包含大於最高的優先順序號碼.vsdir 檔案中列出的優先順序數字。 結果是清單的這些項目是清單的在顯示，不論其名稱結尾處。 |
 | 描述 | 精靈之範本檔案的當地語系化的描述。 這個欄位可以是字串或表單"#ResID 」 的資源識別碼。 此字串會出現在**新的專案**或是**加入新項目**對話方塊中選取的項目時。 |
 | DLLPath 或者 {clsidPackage} | 用來載入範本檔案或精靈的圖示。 圖示會 IconResourceId 載入為從.dll 或.exe 檔案資源。 使用完整路徑，或使用 VSPackage 的 GUID，可以識別此.dll 或.exe 檔案。 實作 VSPackage 的 DLL 用來載入圖示 （不附屬 DLL）。 |
 | IconResourceId | 中的資源識別碼的 DLL 或 VSPackage 的實作會決定要顯示的圖示的 DLL。 |
 | 旗標 (<xref:Microsoft.VisualStudio.Shell.Interop.__VSDIRFLAGS>) | 用來停用或啟用**名稱**並**位置**欄位上**加入新項目** 對話方塊。 值**旗標**欄位是十進位對等項目，必要的位元旗標的組合。<br /><br /> 當使用者選取項目上**的新**索引標籤上，專案會決定是否 [名稱] 欄位和 [位置] 欄位會顯示何時**加入新項目**第一次顯示對話方塊。 項目，透過.vsdir 檔案，可以控制只選取項目時是否將欄位已啟用與停用。 |
-| SuggestedBaseName | 代表檔案、 精靈 」 或範本的預設名稱。 這個欄位是字串或表單"#ResID 」 的資源識別碼。 IDE 會使用此值，以提供項目的預設名稱。 此基底值會附加至讓名稱成為唯一的例如 MyFile21.asp 整數值。<br /><br /> 在先前的清單中，描述、 DLLPath、 IconResourceId、 旗標和 SuggestedBaseNumber 僅適用於範本和精靈檔案。 這些欄位不適用於資料夾中。 中的 BscPrjProjectItems 檔案中的程式碼說明這項事實\<EnvSDK > \BscPrj\BscPrj\BscPrjProjectItems 登錄機碼。 此檔案包含三筆記錄 （一個用於每個資料夾） 與每一筆記錄的四個欄位： RelPathName，{clsidPackage}，LocalizedName 和 SortPriority。<br /><br /> `General&#124;{E59935A1-6156-11d1-87A6-00A0C91E2A46}&#124;#110&#124;100`<br /><br /> `Source_Files&#124;{E59935A1-6156-11d1-87A6-00A0C91E2A46}&#124;#111&#124;110`<br /><br /> `Env&#124;{E59935A1-6156-11d1-87A6-00A0C91E2A46}&#124;#112&#124;120` |
+| SuggestedBaseName | 代表檔案、 精靈 」 或範本的預設名稱。 這個欄位是字串或表單"#ResID 」 的資源識別碼。 IDE 會使用此值，以提供項目的預設名稱。 此基底值會附加至讓名稱成為唯一的例如 MyFile21.asp 整數值。<br /><br /> 在先前的清單中，描述、 DLLPath、 IconResourceId、 旗標和 SuggestedBaseNumber 僅適用於範本和精靈檔案。 這些欄位不適用於資料夾中。 中的 BscPrjProjectItems 檔案中的程式碼說明這項事實\<EnvSDK > \BscPrj\BscPrj\BscPrjProjectItems 登錄機碼。 此檔案包含三筆記錄 （一個用於每個資料夾） 與每一筆記錄的四個欄位：RelPathName，{clsidPackage}，LocalizedName 和 SortPriority。<br /><br /> `General&#124;{E59935A1-6156-11d1-87A6-00A0C91E2A46}&#124;#110&#124;100`<br /><br /> `Source_Files&#124;{E59935A1-6156-11d1-87A6-00A0C91E2A46}&#124;#111&#124;110`<br /><br /> `Env&#124;{E59935A1-6156-11d1-87A6-00A0C91E2A46}&#124;#112&#124;120` |
 
  當您建立精靈檔案時，您也應該考慮下列問題。  
 

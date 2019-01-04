@@ -3,7 +3,6 @@ title: 使用工作流程設計工具開發應用程式
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 f1_keywords:
 - DefaultWorkflowDesigner
 - DefaultWorkflowDesigner.UI
@@ -18,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f6fa987303ccbc3c6dc9122fb03daef02896a327
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 8ef3b7e9bfc18407023e6a84a25eb32d453823ce
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36756417"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53903627"
 ---
 # <a name="develop-apps-with-the-workflow-designer"></a>使用工作流程設計工具開發應用程式
 

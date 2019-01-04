@@ -13,13 +13,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 20da1fc95160be69c1388f9d2986c7dc254eefa2
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: 506792f6a6be550377a4cd711ffc7f04e1b9091f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50967125"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53822249"
 ---
 # <a name="properties-of-image-shapes"></a>影像圖案的屬性
 
@@ -58,11 +57,11 @@ ms.locfileid: "50967125"
 |自訂屬性|用來將屬性加入至來源的程式碼類別從這個圖形產生。|\<無 >|
 |產生雙衍生|如果`True`，將產生的基底類別和部分類別 （以支援透過覆寫自訂）。 如需詳細資訊，請參閱 <<c0> [ 覆寫及擴充產生的類別](../modeling/overriding-and-extending-the-generated-classes.md)。|False|
 |具有自訂建構函式|如果`True`，以原始碼提供自訂建構函式。 如需詳細資訊，請參閱 <<c0> [ 覆寫及擴充產生的類別](../modeling/overriding-and-extending-the-generated-classes.md)。|False|
-|繼承修飾詞|描述的繼承來源的程式碼類別產生的影像圖形的類型 (`none`，`abstract`或`sealed`)。|無|
+|繼承修飾詞|描述的繼承來源的程式碼類別產生的影像圖形的類型 (`none`，`abstract`或`sealed`)。|none|
 |基底影像圖形|此圖形的基底類別。|(無)|
 |名稱|此圖形的名稱。|目前的名稱|
 |命名空間|此圖形附屬於命名空間。|目前的命名空間|
-|工具提示類型|（固定、 變數或 none） 定義工具提示所在位置。 如果固定，則值`Fixed Tooltip Text`屬性做為工具提示; 若變數，然後工具提示中定義的自訂程式碼。|無|
+|工具提示類型|（固定、 變數或 none） 定義工具提示所在位置。 如果固定，則值`Fixed Tooltip Text`屬性做為工具提示; 若變數，然後工具提示中定義的自訂程式碼。|none|
 |注意|此圖形相關聯的非正式附註。|\<無 >|
 |初始的高度|此圖形，以英吋的初始高度。|1|
 |初始寬度|此圖形，以英吋的初始寬度。|1.5|

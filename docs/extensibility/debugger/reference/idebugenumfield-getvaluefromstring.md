@@ -1,9 +1,6 @@
 ---
 title: IDebugEnumField::GetValueFromString |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugEnumField::GetValueFromString
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 86cf8b1421769ac9a4b302e0da3676d826b9bea6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9710d3bb30d838ed1fc90543e25c0892ea1d7bca
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942227"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53878961"
 ---
 # <a name="idebugenumfieldgetvaluefromstring"></a>IDebugEnumField::GetValueFromString
 這個方法傳回的列舉常數名稱相關聯的值。  

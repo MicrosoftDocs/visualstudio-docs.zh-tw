@@ -1,9 +1,6 @@
 ---
 title: 通知和適用於 Visual Studio 的進度 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: f0ef65e9-0f1f-45f4-9f25-6e2398691168
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: aee6e5656142d0597ff6101da5e2e5f690f8fcc5
-ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
+ms.openlocfilehash: 1c0241a16caec1fd25b3ccd177042af3be90a6b9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48863944"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53942667"
 ---
 # <a name="notifications-and-progress-for-visual-studio"></a>通知和適用於 Visual Studio 的進度
 ##  <a name="BKMK_NotificationSystems"></a> 通知系統  
@@ -50,8 +47,8 @@ ms.locfileid: "48863944"
 |[進度指標](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_NotSysProgressIndicators)|當您要報告進度 （確定或未定） 時使用。 有各種不同的進度指標類型和每個特定的使用方式。 請參閱[進度指標](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_ProgressIndicators)。||  
 |[Visual Studio 通知視窗](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_VSNotificationsToolWindow)|[通知] 視窗不是可公開可擴充的。 不過，它用來通訊的 Visual Studio 中，包括重大的問題，您的授權和資訊性通知更新至 Visual Studio 或套件的相關訊息的範圍。|請勿用於其他類型的通知。|  
 |[錯誤清單](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_ErrorList)|當問題直接與使用者的目前開啟的方案，有問題 （錯誤/警告/資訊） 時，他們可能需要採取動作的程式碼。<br /><br /> 這包括，例如：<br /><br /> 編譯器訊息 （錯誤/警告/資訊）<br /><br /> 關於程式碼的程式碼分析/診斷訊息<br /><br /> -組建訊息<br /><br /> 可能很適合使用與專案或方案檔案的相關問題，但是先考慮的方案總管 中的指示。|請勿用於沒有任何關聯的使用者開啟的方案程式碼的項目。|  
-|編輯器通知： 燈泡|當您有可供解決中開啟的檔案有問題的修正時使用。<br /><br /> 請注意燈泡也應該用來裝載快速動作會建立依需求，例如重構，使用者程式碼，但在此情況下不會出現 「 通知樣式 」。|請勿使用開啟的檔案沒有任何關聯的項目。|  
-|編輯器通知： 波浪線|使用此選項，來提醒使用者其開啟的程式碼 （例如，紅色曲線的錯誤） 的特定範圍的相關問題。|請勿用於其開啟的程式碼的特定範圍無關的項目。|  
+|編輯器通知：燈泡|當您有可供解決中開啟的檔案有問題的修正時使用。<br /><br /> 請注意燈泡也應該用來裝載快速動作會建立依需求，例如重構，使用者程式碼，但在此情況下不會出現 「 通知樣式 」。|請勿使用開啟的檔案沒有任何關聯的項目。|  
+|編輯器通知：波浪線|使用此選項，來提醒使用者其開啟的程式碼 （例如，紅色曲線的錯誤） 的特定範圍的相關問題。|請勿用於其開啟的程式碼的特定範圍無關的項目。|  
 |[內嵌的狀態列](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_EmbeddedStatusBars)|將提供相關內容或內容的特定工具視窗、 文件視窗或對話方塊視窗中的程序的狀態。|請勿用於一般產品通知、 處理序或特定範圍內沒有任何關聯性內容的項目。|  
 |[Windows 系統匣通知](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_WindowsTray)|用來呈現通知跨處理序的處理程序或附屬應用程式。|請勿使用與 IDE 的通知。|  
 |[通知泡泡](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_NotificationBubbles)|使用遠端程序的通知，或變更**外部**的 IDE。|請勿用於做為通知使用者的處理程序**內**IDE。|  
@@ -250,7 +247,7 @@ ms.locfileid: "48863944"
   
  ![內嵌進度傳訊](../../extensibility/ux-guidelines/media/0903-09_inlinetext.png "0903年 09_InlineText")  
   
- **伺服器總管內嵌文字： 重新整理...**  
+ **伺服器總管內嵌文字：正在重新整理...**  
   
 ##### <a name="tool-windows"></a>工具視窗  
  位於工具列的正下方的不確定的進度列表示全域進度指示。  
@@ -329,13 +326,13 @@ ms.locfileid: "48863944"
 ### <a name="creating-an-infobar"></a>建立資訊列  
  資訊列已從左到右的四個區段：  
   
--   **圖示︰** 這是您可以在其中加入的任何圖示要顯示的資訊列，例如警告圖示。  
+-   **圖示：** 這是您可以在其中加入的任何圖示要顯示的資訊列，例如警告圖示。  
   
--   **文字：** 您可以新增的文字描述的案例/情況使用者是，以及連結的文字中如有必要。 請務必保持簡潔的文字。  
+-   **文字：** 如有需要，您可以新增的文字描述的案例/情況使用者是，以及在的文字中的連結。 請務必保持簡潔的文字。  
   
 -   **動作：** 此區段應該包含連結和按鈕，使用者可以在您的資訊列中採取的動作。  
   
--   **[關閉] 按鈕：** 右邊最後一個區段都可以擁有 [關閉] 按鈕。  
+-   **[關閉] 按鈕：** 右邊的最後一節中可以有 [關閉] 按鈕。  
   
 #### <a name="creating-a-standard-infobar-in-managed-code"></a>在 managed 程式碼中建立標準的資訊列  
  InfoBarModel 類別可用來建立資料來源的資訊列。 使用其中一個這些四個建構函式：  

@@ -1,9 +1,6 @@
 ---
 title: Visual Studio 2017 擴充性的重大變更 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/09/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 54d5af60-0b44-4ae1-aa57-45aa03f89f3d
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1a7ed5322c131bd9f3b758b31169676865880fd7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5305a5fd5dea53554e4ac9c0015e8181d5906788
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49826488"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53841946"
 ---
 # <a name="changes-in-visual-studio-2017-extensibility"></a>在 Visual Studio 2017 擴充性的變更
 
@@ -43,15 +40,15 @@ VSIX 格式所做變更包括：
 
 ## <a name="building-an-extension-for-visual-studio-2017"></a>Visual Studio 2017 建置延伸模組
 
-設計工具的工具來撰寫新的 VSIX v3 中的資訊清單格式現在可使用。 在 Visual Studio 2017 請參閱隨附的文件[如何： 將擴充性專案移轉至 Visual Studio 2017](how-to-migrate-extensibility-projects-to-visual-studio-2017.md)如需有關使用設計工具，或對專案進行手動更新及開發 VSIX v3 擴充功能的資訊清單。
+設計工具的工具來撰寫新的 VSIX v3 中的資訊清單格式現在可使用。 在 Visual Studio 2017 請參閱隨附的文件[How to:將擴充性專案移轉至 Visual Studio 2017](how-to-migrate-extensibility-projects-to-visual-studio-2017.md)如需有關使用設計工具，或對專案進行手動更新及開發 VSIX v3 擴充功能的資訊清單。
 
-## <a name="change-visual-studio-user-data-path"></a>變更： Visual Studio 使用者資料路徑
+## <a name="change-visual-studio-user-data-path"></a>變更：Visual Studio 使用者資料路徑
 
 先前，只有一個安裝的每個主要版本的 Visual Studio 可能存在的每部機器上。 若要支援的 Visual Studio 2017 的並存安裝，使用者電腦上可能存在的 Visual Studio 的多個使用者資料路徑。
 
 在 Visual Studio 處理序內執行的程式碼應該更新為使用 Visual Studio 設定管理員中。 在 Visual Studio 處理序外執行的程式碼可以找到特定的 Visual Studio 安裝的使用者路徑[只要遵循這裡的指引](locating-visual-studio.md)。
 
-## <a name="change-global-assembly-cache-gac"></a>變更： 全域組件快取 (GAC)
+## <a name="change-global-assembly-cache-gac"></a>變更：全域組件快取 (GAC)
 
 大部分的 Visual Studio 核心組件不會再安裝到 GAC。 已進行下列變更，以便在 Visual Studio 處理序中執行的程式碼仍在執行階段尋找必要的組件。
 
@@ -84,7 +81,7 @@ VSIX 格式所做變更包括：
 * 如果您的延伸模組在 Visual Studio 處理序之外執行：
   * 尋找在 Visual Studio 核心組件，請考慮<em>[INSTALLDIR] \Common7\IDE\*，* [INSTALLDIR] \Common7\IDE\PublicAssemblies</em>或 *[INSTALLDIR] \Common7\IDE\PrivateAssemblies*使用組態檔案或組件解析程式。
 
-## <a name="change-reduce-registry-impact"></a>變更： 減少登錄的影響
+## <a name="change-reduce-registry-impact"></a>變更：減少登錄的影響
 
 ### <a name="global-com-registration"></a>全域 COM 註冊
 
@@ -95,9 +92,9 @@ VSIX 格式所做變更包括：
 ### <a name="visual-studio-registry"></a>Visual Studio 登錄
 
 * 之前，Visual Studio 安裝到系統的許多的登錄機碼**HKEY_LOCAL_MACHINE**並**HKEY_CURRENT_USER** hive Visual Studio 特定機碼下：
-  * **HKLM\Software\Microsoft\VisualStudio\{版本}**: MSI 安裝程式和每個機器擴充功能所建立的登錄機碼。
-  * **HKCU\Software\Microsoft\VisualStudio\{版本}**： 來儲存使用者專屬設定 Visual Studio 所建立的登錄機碼。
-  * **HKCU\Software\Microsoft\VisualStudio\{版本} _Config**： 從一份 Visual Studio HKLM 索引鍵，再加上的登錄機碼合併 *.pkgdef*延伸模組的檔案。
+  * **HKLM\Software\Microsoft\VisualStudio\{版本}**:MSI 安裝程式和每個機器擴充功能所建立的登錄機碼。
+  * **HKCU\Software\Microsoft\VisualStudio\{版本}**:Visual Studio 來儲存使用者專屬設定所建立的登錄機碼。
+  * **HKCU\Software\Microsoft\VisualStudio\{版本} _Config**:從一份 Visual Studio HKLM 索引鍵，再加上的登錄機碼合併 *.pkgdef*延伸模組的檔案。
 * 若要減少對登錄的影響，Visual Studio 現在會使用[RegLoadAppKey](/windows/desktop/api/winreg/nf-winreg-regloadappkeya)將登錄機碼下的私用二進位檔案中的函式 *[VSAPPDATA]\privateregistry.bin*。 只有非常少數的 Visual Studio 特定索引鍵會保留在系統登錄中。
 
 * 在 Visual Studio 處理序內執行的現有程式碼不會受到影響。 Visual Studio 會在 HKCU Visual Studio 特定機碼下的所有登錄作業重新都導向的私人登錄。 讀取和寫入登錄中的其他位置將會繼續使用系統登錄。

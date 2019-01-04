@@ -1,6 +1,5 @@
 ---
 title: 定址 DPI Issues2 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 359184aa-f5b6-4b6c-99fe-104655b3a494
@@ -9,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2c4ca03c932b86ad6f9907020b037abb1308a6f7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4c85d867d042ea51023fc20259814a27b108e150
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49918528"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53875163"
 ---
 # <a name="address-dpi-issues"></a>處理 DPI 問題
 越來越多的裝置都隨附 「 高解析度 」 畫面。 這些畫面通常會有超過 200 個像素為單位，每英吋 (ppi)。 使用這些電腦上的應用程式需要相應增加以符合檢視裝置的一般檢視距離內容需求的內容。 自 2014年起，高密度顯示的主要目標是行動運算裝置 （平板電腦、 蛤殼膝上型電腦和手機）。  
@@ -174,7 +173,7 @@ xmlns:vsui="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.V
   
  若要讓 UI，以用於這個雙精度浮點數調整，XAML 標記，顯示每個影像項目將會需要修改。 下列範例示範如何使用 使用 DpiHelper 程式庫和 Shell.12/14 的 Visual Studio 中的 在 WPF 中調整雙精度浮點數。  
   
- 步驟 1: 300 %prescale 為 200%的映像等等使用 NearestNeighbor。  
+ 步驟 1：Prescale 200%、 300%，並使用 NearestNeighbor 等等的映像。  
   
  Prescale 使用任一個套用的繫結，或使用 XAML 標記延伸的轉換子的映像。 例如:   
   
@@ -204,7 +203,7 @@ xmlns:vsui="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.V
 </Image>  
 ```  
   
- 步驟 2： 確定最終的大小是正確的目前 DPI。  
+ 步驟 2：請確定最終的大小是正確的目前 DPI。  
   
  因為 WPF 會針對目前使用 BitmapScalingMode 屬性集的 UIElement 上的 DPI 縮放 UI，使用 prescaled 映像，因為其來源會尋找兩個或三倍大比影像控制項應該。 以下是幾種方式來應付這種效果：  
   

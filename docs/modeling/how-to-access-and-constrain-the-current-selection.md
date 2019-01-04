@@ -1,5 +1,5 @@
 ---
-title: 如何：存取及限制目前的選取範圍
+title: HOW TO：存取及限制目前的選取範圍
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,15 +10,14 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 4fdcdbead361a189d6b99a32ba09063e784aa5e2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 799e6fdc50cad91ebd5ee5081b1d80fa296f5a7c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49892918"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53947935"
 ---
-# <a name="how-to-access-and-constrain-the-current-selection"></a>如何：存取及限制目前的選取範圍
+# <a name="how-to-access-and-constrain-the-current-selection"></a>HOW TO：存取及限制目前的選取範圍
 
 當您撰寫您的網域特定語言的命令或軌跡處理常式時，您可以判斷哪些使用者以滑鼠右鍵按一下的項目。 您也可以防止某些圖形或欄位被選取。 例如，您可以排列，當使用者按一下圖示裝飾項目，包含它的形狀會改為選取。 限制這種方式中的選取範圍減少，您必須撰寫處理常式。 它也會讓您更輕鬆的使用者，可以按一下任何位置中的圖形而不需要避免裝飾項目。
 

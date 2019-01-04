@@ -1,9 +1,6 @@
 ---
 title: 原始檔控制整合概觀 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK], about source control
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: edd2e04f4e1102d66cc04cd1365dc7abd1488c9c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f0a354ebafe81b707fa6b0560e473a753a36685d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49931833"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53902982"
 ---
 # <a name="source-control-integration-overview"></a>原始檔控制整合概觀
 本節將比較兩種方式，將整合到 Visual Studio 原始檔控制原始檔控制外掛程式和 VSPackage 所提供的原始檔控制解決方案，並反白顯示新的原始檔控制功能。 Visual Studio 可讓手動切換原始檔控制 Vspackage 和原始檔控制外掛程式，以及自動以解決方案為基礎的切換。  
@@ -35,7 +32,7 @@ ms.locfileid: "49931833"
   
 1. 建立一個實作中指定的函式的 DLL[原始檔控制外掛程式](../../extensibility/source-control-plug-ins.md)。  
   
-2. 藉由適當的登錄項目註冊的 DLL (中所述[如何： 安裝原始檔控制外掛程式](../../extensibility/internals/how-to-install-a-source-control-plug-in.md))。  
+2. 藉由適當的登錄項目註冊的 DLL (中所述[How to:安裝原始檔控制外掛程式](../../extensibility/internals/how-to-install-a-source-control-plug-in.md))。  
   
 3. UI 和顯示原始檔控制配接器套件 （會處理透過原始檔控制外掛程式的原始檔控制功能的 Visual Studio 元件） 出現提示時，建立協助程式  
   

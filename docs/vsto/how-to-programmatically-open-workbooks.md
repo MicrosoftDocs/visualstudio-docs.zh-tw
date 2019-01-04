@@ -1,9 +1,6 @@
 ---
-title: 如何： 以程式設計方式開啟活頁簿
-ms.custom: ''
+title: HOW TO：以程式設計方式開啟活頁簿
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: cd8f6786bd2f7b54ce6b50f2493ebd5d45bba51e
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: ab91a1e9a89edee013b559f1653c1607e7b8c884
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35257354"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53860945"
 ---
-# <a name="how-to-programmatically-open-workbooks"></a>如何： 以程式設計方式開啟活頁簿
+# <a name="how-to-programmatically-open-workbooks"></a>HOW TO：以程式設計方式開啟活頁簿
   <xref:Microsoft.Office.Interop.Excel.Workbooks> Microsoft Office Excel 中的集合就可以使用 所有開啟的活頁簿，並開啟活頁簿。  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
@@ -42,12 +39,10 @@ ms.locfileid: "35257354"
   
 ## <a name="see-also"></a>另請參閱  
  [使用活頁簿](../vsto/working-with-workbooks.md)   
- [如何： 以程式設計方式開啟活頁簿的文字檔案](../vsto/how-to-programmatically-open-text-files-as-workbooks.md)   
- [如何： 以程式設計方式建立新的活頁簿](../vsto/how-to-programmatically-create-new-workbooks.md)   
- [如何： 以程式設計方式儲存活頁簿](../vsto/how-to-programmatically-save-workbooks.md)   
- [如何： 以程式設計方式關閉活頁簿](../vsto/how-to-programmatically-close-workbooks.md)   
+ [如何：以程式設計方式將文字檔開啟為活頁簿](../vsto/how-to-programmatically-open-text-files-as-workbooks.md)   
+ [如何：以程式設計方式建立新的活頁簿](../vsto/how-to-programmatically-create-new-workbooks.md)   
+ [如何：以程式設計方式儲存活頁簿](../vsto/how-to-programmatically-save-workbooks.md)   
+ [如何：以程式設計方式關閉活頁簿](../vsto/how-to-programmatically-close-workbooks.md)   
  [主項目和主控制項的程式設計限制](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
  [Office 方案中的選擇性參數](../vsto/optional-parameters-in-office-solutions.md)   
  [主項目和主控制項概觀](../vsto/host-items-and-host-controls-overview.md)  
-  
-  

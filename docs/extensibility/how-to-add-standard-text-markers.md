@@ -1,9 +1,6 @@
 ---
-title: 如何： 新增標準文字標記 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：新增標準文字標記 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - standard text markers
@@ -13,14 +10,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4dd34b14b89c78d01f1d4acab57f33014860d7ba
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 711822c81e81df451ff7e548eb701613efedde85
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39638816"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53874624"
 ---
-# <a name="how-to-add-standard-text-markers"></a>如何： 新增標準文字標記
+# <a name="how-to-add-standard-text-markers"></a>HOW TO：新增標準文字標記
 使用下列程序建立隨附的預設文字標記類型的其中一個[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]核心編輯器。  
   
 ## <a name="to-create-a-text-marker"></a>若要建立文字標記  
@@ -51,6 +48,6 @@ ms.locfileid: "39638816"
   
 ## <a name="see-also"></a>另請參閱  
  [在舊版的 API 中使用文字標記](../extensibility/using-text-markers-with-the-legacy-api.md)   
- [如何： 實作錯誤標記](../extensibility/how-to-implement-error-markers.md)   
- [如何： 建立自訂文字標記](../extensibility/how-to-create-custom-text-markers.md)   
- [如何： 使用文字標記](../extensibility/how-to-use-text-markers.md)
+ [如何：實作錯誤標記](../extensibility/how-to-implement-error-markers.md)   
+ [如何：建立自訂文字標記](../extensibility/how-to-create-custom-text-markers.md)   
+ [如何：使用文字標記](../extensibility/how-to-use-text-markers.md)

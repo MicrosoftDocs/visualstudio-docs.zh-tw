@@ -1,9 +1,6 @@
 ---
-title: 如何： 以程式設計方式儲存 Visio 文件
-ms.custom: ''
+title: HOW TO：以程式設計方式儲存 Visio 文件
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a9f065a32fc26d372b97a31eb70836451b31fa00
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: cd49be6f7ab4e87f0592470e1c5af6039a5f56aa
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50670724"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53865618"
 ---
-# <a name="how-to-programmatically-save-visio-documents"></a>如何： 以程式設計方式儲存 Visio 文件
+# <a name="how-to-programmatically-save-visio-documents"></a>HOW TO：以程式設計方式儲存 Visio 文件
   儲存 Microsoft Office Visio 文件的方式有很多種：  
   
 - 在現有的文件中儲存變更。  
@@ -80,9 +77,7 @@ ms.locfileid: "50670724"
 ## <a name="see-also"></a>另請參閱  
  [Visio 方案](../vsto/visio-solutions.md)   
  [Visio 物件模型概觀](../vsto/visio-object-model-overview.md)   
- [如何： 以程式設計方式建立新的 Visio 文件](../vsto/how-to-programmatically-create-new-visio-documents.md)   
- [如何： 以程式設計方式開啟 Visio 文件](../vsto/how-to-programmatically-open-visio-documents.md)   
- [如何： 以程式設計方式關閉 Visio 文件](../vsto/how-to-programmatically-close-visio-documents.md)   
- [如何： 以程式設計方式列印 Visio 文件](../vsto/how-to-programmatically-print-visio-documents.md)  
-  
-  
+ [如何：以程式設計方式建立新的 Visio 文件](../vsto/how-to-programmatically-create-new-visio-documents.md)   
+ [如何：以程式設計方式開啟 Visio 文件](../vsto/how-to-programmatically-open-visio-documents.md)   
+ [如何：以程式設計方式關閉 Visio 文件](../vsto/how-to-programmatically-close-visio-documents.md)   
+ [如何：以程式設計方式列印 Visio 文件](../vsto/how-to-programmatically-print-visio-documents.md)  

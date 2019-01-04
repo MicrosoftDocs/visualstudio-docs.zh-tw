@@ -8,13 +8,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 01a2b4863736b22e08cf2075e6402d836e9cc671
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ca540b8ada32eac3afb6fcc4cb8d8da7204052b4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49926796"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53915422"
 ---
 # <a name="invoking-text-transformation-in-a-vs-extension"></a>叫用 VS 擴充功能中的文字轉換
 如果您要撰寫的 Visual Studio 擴充功能，例如功能表命令或[定義域專屬語言](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)，您可以使用文字範本化服務來轉換文字範本。 取得 <xref:Microsoft.VisualStudio.TextTemplating.VSHost.STextTemplating> 服務並將它轉換成  <xref:Microsoft.VisualStudio.TextTemplating.VSHost.ITextTemplating>。
@@ -135,8 +134,8 @@ Sample text.
  您可以使用衍生自 <xref:System.MarshalByRefObject> 的參數類別，將值傳出文字範本。
 
 ## <a name="related-topics"></a>相關主題
- 若要從前置處理過的文字範本產生文字： 呼叫`TransformText()`產生之類別的方法。 如需詳細資訊，請參閱 <<c0> [ 執行階段使用 T4 文字範本產生文字](../modeling/run-time-text-generation-with-t4-text-templates.md)。
+ 若要從前置處理過的文字範本產生文字：呼叫產生的類別其 `TransformText()` 方法。 如需詳細資訊，請參閱 <<c0> [ 執行階段使用 T4 文字範本產生文字](../modeling/run-time-text-generation-with-t4-text-templates.md)。
 
- 若要在 Visual Studio 擴充功能外部產生文字： 定義自訂主機。 如需詳細資訊，請參閱 <<c0> [ 藉由使用自訂主機處理文字範本](../modeling/processing-text-templates-by-using-a-custom-host.md)。
+ 若要產生的 Visual Studio 擴充功能之外的文字：定義自訂主應用程式。 如需詳細資訊，請參閱 <<c0> [ 藉由使用自訂主機處理文字範本](../modeling/processing-text-templates-by-using-a-custom-host.md)。
 
- 若要產生原始程式碼，稍後可以編譯並執行： 呼叫`t4.PreprocessTemplate()`方法的<xref:Microsoft.VisualStudio.TextTemplating.VSHost.ITextTemplating>。
+ 若要產生可在之後編譯及執行的原始程式碼：呼叫 `t4.PreprocessTemplate()` 的 <xref:Microsoft.VisualStudio.TextTemplating.VSHost.ITextTemplating> 方法。

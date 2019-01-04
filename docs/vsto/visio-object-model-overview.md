@@ -1,9 +1,6 @@
 ---
 title: Visio 物件模型概觀
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -20,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 872665a9af220e1b86a3d053254880e3ababa6cd
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 040144b1e18e216ef8ceadbd218cd42ccf7c40f1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50671400"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53848463"
 ---
 # <a name="visio-object-model-overview"></a>Visio 物件模型概觀
   若要開發 Microsoft Office Visio 的 Office 方案，您可以與 Visio 物件模型互動。 組成這個物件模型的類別和介面，是由 Visio 的主要 Interop 組件所提供，並在 `Microsoft.Office.Interop.Visio` 命名空間中定義。  
@@ -83,5 +80,3 @@ ms.locfileid: "50671400"
  [Visio 方案](../vsto/visio-solutions.md)   
  [使用 Visio 文件](../vsto/working-with-visio-documents.md)   
  [使用 Visio 圖案](../vsto/working-with-visio-shapes.md)  
-  
-  

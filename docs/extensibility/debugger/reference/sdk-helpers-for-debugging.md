@@ -1,9 +1,6 @@
 ---
 title: SDK 協助程式進行偵錯 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - dbgmetric.lib
@@ -17,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d352e22b95540cfc1901eb214c2d5180b6024f27
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6655b96ed51cd7cce5e94ce96cedf97517f1872a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49821522"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53942407"
 ---
 # <a name="sdk-helpers-for-debugging"></a>適用於偵錯的 SDK 協助程式
 這些函式和宣告是實作 c + + 中的 偵錯引擎、 運算式評估工具和符號提供者的全域 helper 函式。  
@@ -160,7 +157,7 @@ HRESULT EnumMetricSections(
 ## <a name="metric-definitions"></a>計量定義  
  這些定義可以用於預先定義的計量名稱。 名稱對應至各種登錄機碼和值名稱都是定義為寬字元字串： 例如， `extern LPCWSTR metrictypeEngine`。  
   
-|預先定義的計量類型|描述： 基底機碼...|  
+|預先定義的計量類型|描述：基底機碼...|  
 |-----------------------------|---------------------------------------|  
 |metrictypeEngine|所有偵錯引擎的計量。|  
 |metrictypePortSupplier|所有連接埠供應商的計量。|  
@@ -266,13 +263,13 @@ HRESULT EnumMetricSections(
 |-----------------|-----------------|  
 |*[登錄機碼]*|`HKEY_CURRENT_USER` 或 `HKEY_LOCAL_MACHINE`。|  
 |*[版本 root]*|Visual Studio 的版本 (例如`7.0`， `7.1`，或`8.0`)。 不過，這個根目錄也可以修改使用 **/rootsuffix**切換至**devenv.exe**。 VSIP，對於這個修飾詞通常是**Exp**，因此版本根是，比方說，8.0Exp。|  
-|*[計量 root]*|這是`AD7Metrics`或`AD7Metrics(Debug)`，取決於是否使用 dbgmetric.lib 的偵錯版本。 **注意：** 至應遵守是否使用 dbgmetric.lib 時，此命名慣例，如果您有偵錯和發行之間的差異必須在登錄中反映出來的版本。|  
+|*[計量 root]*|這是`AD7Metrics`或`AD7Metrics(Debug)`，取決於是否使用 dbgmetric.lib 的偵錯版本。 **注意：** 若要應遵守是否使用 dbgmetric.lib 時，此命名慣例，如果您有偵錯和發行之間的差異必須在登錄中反映出來的版本。|  
 |*[計量類型]*|要寫入的度量類型： `Engine`， `ExpressionEvaluator`，`SymbolProvider`等等。這些全都定義如所示為 dbgmetric.h `metricTypeXXXX`，其中`XXXX`是特定型別名稱。|  
 |*[計量]*|若要將度量指派值的項目名稱。 實際組織的度量取決於計量的類型。|  
 |*[計量值]*|指派給計量的值。 此值應該有 （字串、 數字等） 的類型取決於計量。|  
   
 > [!NOTE]
->  所有的 Guid 會儲存在格式`{GUID}`。 例如，`{123D150B-FA18-461C-B218-45B3E4589F9B}`。  
+>  所有的 Guid 會儲存在格式`{GUID}`。 例如， `{123D150B-FA18-461C-B218-45B3E4589F9B}` 。  
   
 ### <a name="debug-engines"></a>偵錯引擎  
  以下是在登錄中的偵錯引擎度量資訊的組織。 `Engine` 是偵錯引擎的計量類型名稱，以及對應至 *[計量類型]* 上述的登錄樹狀子目錄中。  

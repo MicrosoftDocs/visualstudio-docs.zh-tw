@@ -1,17 +1,12 @@
 ---
 title: 從現有的 SharePoint 網站匯入項目 |Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.WSPImport.SelectionDependency
 - VS.SharepointTools.WSPImport.SpecifyProjectSource
 - VS.SharePointTools.WSPImport.SelectionItemsToImport
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -23,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7435d6c7ad210554031994f4a366812f9799ffb2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6345e6650c815242db661cef52b78db31d447b06
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49832098"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53918150"
 ---
 # <a name="import-items-from-an-existing-sharepoint-site"></a>從現有的 SharePoint 網站匯入項目
   匯入 SharePoint 方案套件專案範本可讓您在新的 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint 方案中，重複使用來自現有 SharePoint 網站的項目，例如內容類型和欄位。 雖然您可以執行大部分匯入的方案而不需修改，仍有特定限制和問題需要考量，特別是您在匯入後修改任何項目的話。  
@@ -96,20 +91,20 @@ ms.locfileid: "49832098"
   
  比方說，如果您匯入清單定義 ExpenseForms，則具有該名稱的清單定義會出現在**列出定義**中的資料夾**方案總管**連同其*Elements.xml*並*Schema.xml*檔案。 不過，其相關聯的 ASPX 和 HTML 表單，可能會放置於  [其他匯入檔案] 資料夾下，稱為 **ExpenseForms** 的資料夾。 若要完成匯入，請在 **方案總管** 中，移動 ExpenseForms 清單定義底下的這些檔案，並將每個檔案的 **DeploymentType** 屬性從 **NoDeployment** 變更為 **ElementFile**。  
   
- 當匯入事件接收器*Elements.xml*檔案複製到正確的位置，但您必須手動將組件中的方案套件部署解決方案。 [!INCLUDE[crabout](../sharepoint/includes/crabout-md.md)] 如何執行這項操作，請參閱[如何： 新增和移除其他組件](../sharepoint/how-to-add-and-remove-additional-assemblies.md)。  
+ 當匯入事件接收器*Elements.xml*檔案複製到正確的位置，但您必須手動將組件中的方案套件部署解決方案。 [!INCLUDE[crabout](../sharepoint/includes/crabout-md.md)] 如何執行這項操作，請參閱[How to:新增和移除其他組件](../sharepoint/how-to-add-and-remove-additional-assemblies.md)。  
   
  匯入工作流程時，InfoPath 表單會複製到  [其他匯入檔案] 資料夾。 如果 *.wsp*檔案包含 Web 範本，它會設定為 啟動 頁面中**方案總管 中**。  
   
 ## <a name="import-fields-and-property-bags"></a>匯入欄位和屬性包
  當您匯入的方案含有多個欄位時，所有個別欄位定義會合併成單一*Elements.xml*中的節點下的檔案**方案總管**呼叫**欄位**. 同樣地，所有的屬性包項目會合併成*Elements.xml*呼叫的節點下的檔案**PropertyBags**。  
   
- 在 SharePoint 中的欄位是指定資料類型例如文字、布林或查閱的資料行。 如需詳細資訊，請參閱 [建置組塊：資料行和欄位類型](http://go.microsoft.com/fwlink/?LinkId=182304)。 屬性包可讓您將屬性加入至 SharePoint 中的物件，從伺服器陣列到 SharePoint 網站上清單的所有項目。 屬性包會實作為屬性名稱和值的雜湊資料表。 如需詳細資訊，請參閱 [管理 SharePoint 組態](http://go.microsoft.com/fwlink/?LinkId=182296) 或 [SharePoint 屬性包設定](http://go.microsoft.com/fwlink/?LinkId=182297)。  
+ 在 SharePoint 中的欄位是指定資料類型例如文字、布林或查閱的資料行。 如需詳細資訊，請參閱[建置組塊：資料行和欄位類型](http://go.microsoft.com/fwlink/?LinkId=182304)。 屬性包可讓您將屬性加入至 SharePoint 中的物件，從伺服器陣列到 SharePoint 網站上清單的所有項目。 屬性包會實作為屬性名稱和值的雜湊資料表。 如需詳細資訊，請參閱 [管理 SharePoint 組態](http://go.microsoft.com/fwlink/?LinkId=182296) 或 [SharePoint 屬性包設定](http://go.microsoft.com/fwlink/?LinkId=182297)。  
   
 ## <a name="delete-items-in-the-project"></a>刪除專案中的項目
  SharePoint 方案中的大部分項目有一個或多個相依項目。 例如，清單執行個體取決於內容類型，而內容類型相依於欄位。 匯入 SharePoint 方案之後，如果您刪除方案中的項目但未刪除其相依項目， [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 不會通知您任何參考問題，直到您嘗試部署方案。 例如，如果匯入的方案中有取決於內容類型的清單執行個體，而您刪除了該內容類型，部署時可能會發生錯誤。 如果相依項目不存在於 SharePoint 伺服器上，即會發生錯誤。 同樣地，如果刪除的項目也有相關的屬性包，然後刪除這些屬性包項目，從**PropertyBags** *Elements.xml*檔案。 因此，如果您從匯入的方案中刪除任何項目，但發生部署錯誤，請檢查是否有任何相依項目也需要刪除。  
   
 ## <a name="restore-missing-feature-attributes"></a>還原遺失的功能屬性
- 匯入方案時，匯入的功能資訊清單中會省略一些選用功能的屬性。 如果您想要還原這些屬性在新的功能檔案，藉由比較原始功能檔案與新的功能資訊清單識別遺漏的屬性，並遵循本主題中的指示[How to： 自訂 SharePoint 功能](../sharepoint/how-to-customize-a-sharepoint-feature.md).  
+ 匯入方案時，匯入的功能資訊清單中會省略一些選用功能的屬性。 如果您想要還原這些屬性在新的功能檔案，藉由比較原始功能檔案與新的功能資訊清單識別遺漏的屬性，並遵循本主題中的指示[How to:自訂 SharePoint 功能](../sharepoint/how-to-customize-a-sharepoint-feature.md)。  
   
 ## <a name="deployment-conflict-detection-is-not-performed-on-built-in-list-instances"></a>內建清單執行個體上不會執行部署衝突偵測
  [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] 不會在內建清單執行個體 (也就是 SharePoint 隨附的預設清單執行個體) 上執行部署衝突偵測。 不會執行衝突偵測，以避免覆寫 SharePoint 上的內建清單執行個體。 內建清單執行個體仍會部署或更新，但絕不會被刪除或覆寫。 [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)] [疑難排解 SharePoint 封裝和部署](../sharepoint/troubleshooting-sharepoint-packaging-and-deployment.md)。  
@@ -139,7 +134,7 @@ ms.locfileid: "49832098"
  當您將 [!INCLUDE[winshare3](../sharepoint/includes/winshare3-md.md)] 或 [!INCLUDE[offshare7](../sharepoint/includes/offshare7-md.md)] 專案匯入至 [!INCLUDE[vs_dev10_long](../sharepoint/includes/vs-dev10-long-md.md)]時，缺少指令碼管理員控制項可能會是一個問題，因為所有新專案的 SharePointProductVersion 屬性都設定為 14.0。 如果您部署的已升級專案中，具有沒有指令碼管理員的 Web 表單，表單將不會顯示在 SharePoint 中。  
   
 ## <a name="see-also"></a>另請參閱
- [逐步解說： 從現有的 SharePoint 網站匯入項目](../sharepoint/walkthrough-import-items-from-an-existing-sharepoint-site.md)   
+ [逐步解說：從現有的 SharePoint 網站匯入項目](../sharepoint/walkthrough-import-items-from-an-existing-sharepoint-site.md)   
  [匯入可重複使用的工作流程的指導方針](../sharepoint/guidelines-for-importing-reusable-workflows.md)   
- [逐步解說： 將 SharePoint Designer 可重複使用的工作流程匯入 Visual Studio](../sharepoint/walkthrough-import-a-sharepoint-designer-reusable-workflow-into-visual-studio.md)   
- [如何： 將現有的 BDC 模型檔案新增至 SharePoint 專案](../sharepoint/how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project.md)  
+ [逐步解說：SharePoint Designer 可重複使用工作流程匯入 Visual Studio](../sharepoint/walkthrough-import-a-sharepoint-designer-reusable-workflow-into-visual-studio.md)   
+ [如何：將現有的 BDC 模型檔案新增至 SharePoint 專案](../sharepoint/how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project.md)  

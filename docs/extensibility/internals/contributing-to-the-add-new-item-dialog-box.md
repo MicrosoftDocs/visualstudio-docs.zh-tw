@@ -1,9 +1,6 @@
 ---
 title: 提供給加入新項目對話方塊 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - Add New Item dialog box, contributing to
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 41947e3078eb3cd344774afe533a4fa0a9d8324a
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 0b9e86b002c212f63076c065d7aca3b7649513b1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39511940"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53865657"
 ---
 # <a name="contribute-to-the-add-new-item-dialog-box"></a>參與加入新項目 對話方塊
 專案子類型可以提供完整的新目錄的項目**加入新項目**對話方塊中，藉由註冊**加入項目**下的 範本**專案**登錄子機碼。  

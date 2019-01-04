@@ -1,9 +1,6 @@
 ---
 title: IDebugExpression2::EvaluateAsync |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugExpression2::EvaluateAsync
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e7906e1f1daa0b473473abd28417a2db1c9b7f98
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 221e3f04bf8f2a14c6dde165d3c01d2e90459776
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49912821"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53934488"
 ---
 # <a name="idebugexpression2evaluateasync"></a>IDebugExpression2::EvaluateAsync
 這個方法會以非同步方式評估的運算式。  
@@ -28,7 +25,7 @@ ms.locfileid: "49912821"
 ## <a name="syntax"></a>語法  
   
 ```cpp  
-HRESULT EvaluateAsync (   
+HRESULT EvaluateAsync (   
    EVALFLAGS             dwFlags,  
    IDebugEventCallback2* pExprCallback  
 );  

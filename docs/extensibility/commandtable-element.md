@@ -1,9 +1,6 @@
 ---
 title: CommandTable 元素 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - CommandTable
@@ -16,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8c2adca249ba245825f9b664b46e1b4674d0ea50
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 893c55f00d2067eb481efdf9482ab4e8f47aaaf2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49879905"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53886290"
 ---
 # <a name="commandtable-element"></a>CommandTable 元素
 CommandTable 是根項目 *.vsct*檔案。 這是定義 VSPackage 提供給 IDE 命令的類型與實際配置的檔案。 命令可能會包含功能表項目、 功能表、 工具列和下拉式方塊。 如需詳細資訊，請參閱 < [Visual Studio 命令表檔案 (.vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)。  
@@ -49,7 +46,7 @@ CommandTable 是根項目 *.vsct*檔案。 這是定義 VSPackage 提供給 IDE 
   
 | 屬性 | 描述 |
 |-----------| - |
-| xmlns | 必要。 XML 命名空間：<br /><br /> xmlns ="<http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable>」<br /><br /> xmlns:xs ="<http://www.w3.org/2001/XMLSchema>」 |
+| xmlns | 必要項。 XML 命名空間：<br /><br /> xmlns ="<http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable>」<br /><br /> xmlns:xs ="<http://www.w3.org/2001/XMLSchema>」 |
 | 語言 | 選擇性。 [語言] 屬性可以用來指定所有的預設語言\<字串 > 命令表中的項目。  如果未指定語言，就會使用目前的處理序的語言：<br /><br /> language ="en-我們" |
   
 ### <a name="child-elements"></a>子元素  

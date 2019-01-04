@@ -1,9 +1,6 @@
 ---
 title: SccWillCreateSccFile 函式 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - SccWillCreateSccFile
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6723eed8d29df62b2016a851bd69ae0e53a6453c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e2c30219eead54d44139925bd3e87400242516f4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49927628"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53905659"
 ---
 # <a name="sccwillcreatesccfile-function"></a>SccWillCreateSccFile 函式
 此函式會判斷原始檔控制外掛程式是否支援 MSSCCPRJ 建立。SCC 檔案，每個指定的檔案。  

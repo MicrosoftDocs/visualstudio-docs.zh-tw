@@ -1,9 +1,6 @@
 ---
 title: IEEVisualizerDataProvider::SetObjectForVisualizer |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IEEVisualizerDataProvider::SetObjectForVisualizer
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f02f90ce8325a0ba75c31904a689e84705a5273a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a8a5b1742372b8fee4227c7d2bca5efa93b42f2c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49866164"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53915503"
 ---
 # <a name="ieevisualizerdataprovidersetobjectforvisualizer"></a>IEEVisualizerDataProvider::SetObjectForVisualizer
 這個方法會變更視覺化檢視表示的物件。  
@@ -28,18 +25,18 @@ ms.locfileid: "49866164"
 ## <a name="syntax"></a>語法  
   
 ```cpp  
-HRESULT SetObjectForVisualizer(  
-   IDebugObject*  pNewObject,  
-   BSTR*          error,  
-   IDebugObject** pException  
+HRESULT SetObjectForVisualizer(  
+   IDebugObject*  pNewObject,  
+   BSTR*          error,  
+   IDebugObject** pException  
 );  
 ```  
   
 ```csharp  
-int SetObjectForVisualizer(  
-   IDebugObject     pNewObject,  
-   out string       error,  
-   out IDebugObject pException  
+int SetObjectForVisualizer(  
+   IDebugObject     pNewObject,  
+   out string       error,  
+   out IDebugObject pException  
 );  
 ```  
   

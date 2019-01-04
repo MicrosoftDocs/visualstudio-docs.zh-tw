@@ -1,9 +1,6 @@
 ---
 title: Icon 元素 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - VSCT XML schema elements, Icon
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2494e75c312385a1a0c86709eb417d4b124a97de
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 475bca35ca1bdc1879301912c7ddd271f369a6ef
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39497689"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53870004"
 ---
 # <a name="icon-element"></a>Icon 元素
 Guid 屬性的圖示標記會定義點陣圖的 guid。 `id`屬性選取點陣圖區中的位置。 這是選擇性的項目。 如果這個項目不包含值**guidOfficeIcon:msotcidNoIcon**會隱含。  
@@ -37,8 +34,8 @@ Guid 屬性的圖示標記會定義點陣圖的 guid。 `id`屬性選取點陣�
   
 |屬性|描述|  
 |---------------|-----------------|  
-|guid|必要。 定義點陣圖的 guid。|  
-|id|必要。 選取的位置中的點陣圖區。|  
+|guid|必要項。 定義點陣圖的 guid。|  
+|id|必要項。 選取的位置中的點陣圖區。|  
   
 ### <a name="child-elements"></a>子元素  
   

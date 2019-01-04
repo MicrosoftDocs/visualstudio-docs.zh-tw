@@ -1,9 +1,6 @@
 ---
 title: HOW TO：加入內容控制項加入 Word 文件
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -29,12 +26,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8a7f99768236c8945fe82645c70c586361edcdde
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: 10ca0276eb6ddd392fc1ac4e584f5d9caf12fde8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53648042"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53905276"
 ---
 # <a name="how-to-add-content-controls-to-word-documents"></a>HOW TO：加入內容控制項加入 Word 文件
   在文件層級 Word 專案中，您可以將內容控制項加入文件在您的專案在設計階段或執行階段。 在 Word VSTO 增益集專案中，您可以將內容控制項加入任何開啟的文件，在執行階段。  
@@ -192,4 +189,3 @@ ms.locfileid: "53648042"
  [主項目和主控制項的程式設計限制](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
  [程式 VSTO 增益集](../vsto/programming-vsto-add-ins.md)   
  [程式文件層級自訂](../vsto/programming-document-level-customizations.md)  
-  

@@ -1,9 +1,6 @@
 ---
 title: COMPUTER_INFO |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - COMPUTER_INFO structure
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9a52247f36f3628d91e83a89ded88a35c6ee8e68
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2e5908e3e5c2f490571ad88b2ff67a3e81af278b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49864214"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53925114"
 ---
 # <a name="computerinfo"></a>COMPUTER_INFO
 描述偵錯工具執行所在的電腦。  
@@ -57,11 +54,11 @@ public struct COMPUTER_INFO
  此結構由[GetComputerInfo](../../../extensibility/debugger/reference/idebugwindowscomputerport2-getcomputerinfo.md)方法。  
   
 ## <a name="requirements"></a>需求  
- 標頭： Msdbg.h  
+ 標頭：Msdbg.h  
   
- 命名空間： Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間:Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
  [結構和等位](../../../extensibility/debugger/reference/structures-and-unions.md)   

@@ -1,8 +1,7 @@
 ---
-title: CA1017：以 ComVisibleAttribute 標記組件
+title: CA1017:組件必須標記 ComVisibleAttribute
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA1017
@@ -20,20 +19,20 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: d2e720bf4e0bd613b5f31b82e7c50084b1b6d3c1
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 2c6d5f2356f6174739cc4a19e49265f0b163d035
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45548552"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53864734"
 ---
-# <a name="ca1017-mark-assemblies-with-comvisibleattribute"></a>CA1017：以 ComVisibleAttribute 標記組件
+# <a name="ca1017-mark-assemblies-with-comvisibleattribute"></a>CA1017:組件必須標記 ComVisibleAttribute
 
 |||
 |-|-|
 |TypeName|MarkAssembliesWithComVisible|
 |CheckId|CA1017|
-|類別|Microsoft.Design|
+|分類|Microsoft.Design|
 |中斷變更|非重大|
 
 ## <a name="cause"></a>原因

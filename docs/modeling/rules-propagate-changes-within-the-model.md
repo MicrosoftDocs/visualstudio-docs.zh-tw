@@ -11,13 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 8f506b71240024206523821080cdf958660aa963
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 70bacc7e181c27efd14b613c20af29e850db321a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49865962"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53925546"
 ---
 # <a name="rules-propagate-changes-within-the-model"></a>規則傳播模型內的變更
 您可以建立存放區的規則，以將變更傳播從一個項目到另一個在 Visualization and Modeling SDK (VMSDK)。 存放區中的任何項目變更時發生，來執行，只有認可的最外層的交易時，通常被排定規則。 有不同類型的不同類型的事件，例如加入項目，或刪除它的規則。 您可以將規則附加至特定類型的項目、 圖形或圖表。 許多內建功能由規則定義： 例如，規則可確保當模型變更時，會更新圖表。 您可以自訂特定領域語言，藉由新增您自己的規則。

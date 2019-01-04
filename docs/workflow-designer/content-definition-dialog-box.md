@@ -3,7 +3,6 @@ title: 工作流程設計工具-內容定義對話方塊
 ms.date: 11/04/2016
 ms.topic: reference
 ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 f1_keywords:
 - MessageContent.UI
 ms.assetid: 7e4237c3-90a1-4149-bd8a-3643d1dde0df
@@ -12,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f8307db1858ba50d209e456dc17ddd36dcaab722
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: cae5fc2c8da95a803dba915c3fa4b2a63820ee93
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49870768"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53952968"
 ---
 # <a name="content-definition-dialog-box"></a>內容定義對話方塊
 

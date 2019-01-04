@@ -1,8 +1,6 @@
 ---
 title: Office 專案中的協助工具
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology: office-development
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 dev_langs:
@@ -18,19 +16,20 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 97f96e5a79a6e98bb6367d9c00975e3e6288385a
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: 32d44c33192d9d4e4fdcf1b8db8cb47102a1df61
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53803807"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53833322"
 ---
 # <a name="accessibility-in-office-projects"></a>Office 專案中的協助工具
-  Microsoft Visual Studio 和 Microsoft Office 包含許多協助工具功能可讓您建置符合標準的協助工具需求的自訂解決方案。 Microsoft 會發佈在網站上的協助工具的指導方針。 如需詳細資訊，請參閱 <<c0> [ 協助工具網站](http://go.microsoft.com/fwlink/?LinkID=37113)。
 
- 在大部分情況下，Visual Studio 中的 Office 專案會符合您可以將它設定為讓您的解決方案可存取的協助工具標準或公開屬性。 不過，有一些具有有限的協助工具的功能。
+Microsoft Visual Studio 和 Microsoft Office 包含許多協助工具功能可讓您建置符合標準的協助工具需求的自訂解決方案。 Microsoft 會發佈在網站上的協助工具的指導方針。 如需詳細資訊，請參閱 <<c0> [ 協助工具網站](http://go.microsoft.com/fwlink/?LinkID=37113)。
 
- [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
+在大部分情況下，Visual Studio 中的 Office 專案會符合您可以將它設定為讓您的解決方案可存取的協助工具標準或公開屬性。 不過，有一些具有有限的協助工具的功能。
+
+[!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
 
 ## <a name="accessibility-at-design-time"></a>在設計階段的協助工具
 

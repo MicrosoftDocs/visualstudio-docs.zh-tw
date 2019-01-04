@@ -1,9 +1,6 @@
 ---
 title: XmlMappedRange 控制項
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,19 +14,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9cf21ceda64fe79996e05426a3379972c3c4be33
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: f19bf36b145a5f2c1b4e841a96cdd485a0fb6ac1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35671449"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53946695"
 ---
 # <a name="xmlmappedrange-control"></a>XmlMappedRange 控制項
   <xref:Microsoft.Office.Tools.Excel.XmlMappedRange>控制項是只有非重複的結構描述元素對應到 Microsoft Office Excel 中的資料格時，才會建立一個範圍。 例如，當`maxOccurs`屬性結構描述元素等於 1。 Visual Studio 會建立 XML 對應範圍之後，您可以針對它進行程式設計直接而不必周遊 Excel 物件模型。 您只能刪除<xref:Microsoft.Office.Tools.Excel.XmlMappedRange>時就會移除項目對應，請在 Excel 內的控制項。  
   
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]  
   
- ![影片連結](../vsto/media/playvideo.gif "影片連結")如需相關的影片示範，請參閱[How do i： 使用 XML 對應在 Excel 中的？](http://go.microsoft.com/fwlink/?LinkID=130288)。  
+ ![影片連結](../vsto/media/playvideo.gif "影片連結")如需相關的影片示範，請參閱[How do i:在 Excel 中使用 XML 的對應嗎？](http://go.microsoft.com/fwlink/?LinkID=130288).  
   
 ## <a name="bind-data-to-the-control"></a>將資料繫結至控制項  
  <xref:Microsoft.Office.Tools.Excel.XmlMappedRange>控制項支援繫結至單一資料欄位 （簡單資料繫結）。 <xref:Microsoft.Office.Tools.Excel.ListObject>控制項可以支援複雜資料繫結，而且重複的結構描述項目會對應至儲存格時，自動建立。 如需詳細資訊，請參閱 < [ListObject 控制項](../vsto/listobject-control.md)。  
@@ -62,9 +59,7 @@ ms.locfileid: "35671449"
   
 ## <a name="see-also"></a>另請參閱  
  [使用擴充的物件自動化 Excel](../vsto/automating-excel-by-using-extended-objects.md)   
- [如何： 將 XMLMappedRange 控制項加入工作表](../vsto/how-to-add-xmlmappedrange-controls-to-worksheets.md)   
+ [如何：將 XMLMappedRange 控制項加入工作表](../vsto/how-to-add-xmlmappedrange-controls-to-worksheets.md)   
  [資料繫結至 Office 方案中的控制項](../vsto/binding-data-to-controls-in-office-solutions.md)   
- [如何： 將結構描述對應至 Visual Studio 內的工作表](../vsto/how-to-map-schemas-to-worksheets-inside-visual-studio.md)   
+ [如何：將結構描述對應至 Visual Studio 內的工作表](../vsto/how-to-map-schemas-to-worksheets-inside-visual-studio.md)   
  [主項目和主控制項的程式設計限制](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)  
-  
-  

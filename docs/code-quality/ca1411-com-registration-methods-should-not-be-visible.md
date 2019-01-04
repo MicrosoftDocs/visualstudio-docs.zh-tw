@@ -1,8 +1,7 @@
 ---
-title: CA1411：COM 註冊方法不應該為可見的
+title: CA1411:COM 註冊方法不應該為可見的
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA1411
@@ -19,20 +18,20 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 0cd599ee67182084e7f2fb663d343281b0a8b079
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: da83faf5c2ca1a60d4f931cd498caf3717c21e2b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45551703"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53926992"
 ---
-# <a name="ca1411-com-registration-methods-should-not-be-visible"></a>CA1411：COM 註冊方法不應該為可見的
+# <a name="ca1411-com-registration-methods-should-not-be-visible"></a>CA1411:COM 註冊方法不應該為可見的
 
 |||
 |-|-|
 |TypeName|ComRegistrationMethodsShouldNotBeVisible|
 |CheckId|CA1411|
-|類別|Microsoft.Interoperability|
+|分類|Microsoft.Interoperability|
 |中斷變更|中斷|
 
 ## <a name="cause"></a>原因
@@ -55,7 +54,7 @@ ms.locfileid: "45551703"
  [!code-vb[FxCop.Interoperability.ComRegistration2#1](../code-quality/codesnippet/VisualBasic/ca1411-com-registration-methods-should-not-be-visible_1.vb)]
 
 ## <a name="related-rules"></a>相關的規則
- [CA1410：應該和 COM 註冊方法對應](../code-quality/ca1410-com-registration-methods-should-be-matched.md)
+ [CA1410:應該和 COM 註冊方法對應](../code-quality/ca1410-com-registration-methods-should-be-matched.md)
 
 ## <a name="see-also"></a>另請參閱
 

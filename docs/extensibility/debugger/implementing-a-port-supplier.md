@@ -1,9 +1,6 @@
 ---
 title: 實作連接埠提供者 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], implementing port suppliers
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: cdde98a85175692ed4717c8a9af0b26799c35214
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: cd068f9c669b898ac3d29dadccffb6edd1e0c783
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39233031"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53985520"
 ---
 # <a name="implement-a-port-supplier"></a>實作連接埠提供者
 連接埠提供者會提供工作階段的偵錯管理員 (SDM) 的要求上的連接埠。 對非 DCOM 機器或新的裝置時需要支援偵錯時，就必須實作連接埠提供者。 比方說，若要提供對手機偵錯，您可能會設定連接埠提供者，提供連接埠，連接到行動電話 （也許是透過 IR 或儲存格連接），並列舉的處理程序和手機上執行的程式。  

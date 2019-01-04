@@ -1,9 +1,6 @@
 ---
-title: 測試區域 8︰ 外掛程式切換 |Microsoft Docs
-ms.custom: ''
+title: 測試區域 8︰外掛程式切換 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK], switching plug-ins
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: cec4bc16cea19a1d2eeea68d7d38797d8ea5b312
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7e62885b117e8b5fe42b1078c6fb8fbb4b68bf03
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49920153"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53986228"
 ---
 # <a name="test-area-8-plug-in-switching"></a>測試區域 8︰外掛程式切換
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]整合式的開發環境 (IDE) 有使用者介面 (UI) 來變更目前的原始檔控制外掛程式。 此測試區域會提供挑選的外掛程式用於原始檔控制方案的程序中的測試案例。  
@@ -27,7 +24,7 @@ ms.locfileid: "49920153"
 ## <a name="command-menu-access"></a>命令功能表存取  
  下列[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]與測試案例中使用整合式的開發環境功能表路徑。  
 
--   目前的原始檔控制外掛程式：**工具** -> **選項** -> **原始檔控制** -> **外掛程式選取範圍**.  
+-   目前的原始檔控制外掛程式：**工具** -> **選項** -> **原始檔控制** -> **外掛程式選擇**。  
 
 -   變更原始檔控制繫結：**檔案** -> **原始檔控制** -> **變更原始檔控制**...  
 
@@ -37,7 +34,7 @@ ms.locfileid: "49920153"
 ## <a name="test-cases"></a>測試案例  
  以下是外掛程式切換的測試區域的特定測試案例。  
 
-### <a name="case-8a-automatic-change"></a>案例 8a： 自動變更  
+### <a name="case-8a-automatic-change"></a>案例 8a:自動變更  
 
 #### <a name="expected-behavior"></a>預期的行為  
  當使用者載入原始檔控制下的解決方案時，自動載入方案時，為目前選取適當的原始檔控制外掛程式。  
@@ -47,7 +44,7 @@ ms.locfileid: "49920153"
 | - | - | - |
 | 自動的原始檔控制外掛程式的變更 | 1.選取外掛程式下測試一樣新 (**工具** -> **選項** -> **原始檔控制** -> **外掛程式選取項目**。)<br />2.建立新的專案。<br />3.您可以將方案加入原始檔控制。<br />4.選取另一個外掛程式 (例如[!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)])。<br />5.接受卸載方案提示。<br />6.重新開啟方案，從磁碟。 | 開啟的方案。<br /><br /> 受測試的外掛程式是目前的原始檔控制外掛程式。 |
 
-### <a name="case-8b-solution-based-change"></a>案例 8b： 方案為基礎的變更  
+### <a name="case-8b-solution-based-change"></a>案例 8b:解決方案為基礎的變更  
 
 #### <a name="expected-behavior"></a>預期的行為  
  方案可以有與其關聯的原始檔控制外掛程式已變更。  

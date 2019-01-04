@@ -1,9 +1,6 @@
 ---
-title: 專案持續性 |Microsoft 文件
-ms.custom: ''
+title: 專案持續性 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - persistence, projects
@@ -14,37 +11,37 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b85bb6155ca25abec67b582dc4d877dbd8290501
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 475120f72962d0ab1c5c0dd6e8441349dfc8086c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31131120"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53890046"
 ---
 # <a name="project-persistence"></a>專案持續性
-持續性是您的專案的重要設計考量。 大部分的專案使用專案項目代表檔案。[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]也支援其資料為非檔案型的專案。 這兩個檔案的擁有者專案和專案檔必須保存。 IDE 會指示專案以儲存本身或專案項目。  
+持續性是重要的設計考量，為您的專案。 大部分的專案使用的專案項目代表檔案;[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]也支援其中的資料為非檔案型的專案。 這兩個專案和專案檔案所擁有的檔案必須被 persisted。 IDE 會指示專案，以儲存本身或專案項目。  
   
- 專案範本會傳遞至 project factory。 範本應該支援根據需求的特定專案類型的所有專案項目的初始設定。 這些範本可在之後儲存為專案檔及受解決方案透過 IDE。 如需詳細資訊，請參閱[建立專案執行個體所使用的專案 Factory](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)和[解決方案](../../extensibility/internals/solutions.md)。  
+ 專案範本會傳遞至 project factory。 範本應該支援所有的專案項目，根據特定專案類型的需求的初始化。 這些範本稍後會儲存為專案檔，IDE 中透過此解決方案所管理。 如需詳細資訊，請參閱 <<c0> [ 建立專案執行個體所使用 Project Factory](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)並[解決方案](../../extensibility/internals/solutions.md)。  
   
- 專案項目可以是以檔案為基礎或非檔案為基礎：  
+ 專案項目可以是檔案為基礎，或非檔案型：  
   
--   以檔案為基礎的項目可以是本機或遠端。 在 C# 中的 Web 專案，例如，連線到遠端系統上的檔案保留在本機，而遠端系統上保存檔案本身。  
+-   檔案為基礎的項目可以是本機或遠端。 在 C# 中的 Web 專案，比方說，連線到遠端系統上的檔案保存在本機，而檔案本身會保存在遠端系統上。  
   
--   以檔案為基礎的項目可以將項目儲存至資料庫或儲存機制。  
+-   非檔案型的項目可以將項目儲存到資料庫或儲存機制。  
   
 ## <a name="commit-models"></a>認可模型  
- 決定專案項目位於何處，您必須選擇適當的認可模式。 例如，在具有本機檔案的檔案為基礎的模型，每個專案可以儲存自主。 在儲存機制模型中，您可以儲存在單一交易中的數個項目。 如需詳細資訊，請參閱[專案類型的設計決策](../../extensibility/internals/project-type-design-decisions.md)。  
+ 決定專案項目位於何處之後, 您必須選擇適當的認可模型。 例如，在具有本機檔案的檔案為基礎的模型，每個專案可以儲存自主。 在儲存機制模型中，您可以儲存在單一交易中的數個項目。 如需詳細資訊，請參閱 <<c0> [ 專案類型的設計決策](../../extensibility/internals/project-type-design-decisions.md)。  
   
- 若要判斷檔案名稱副檔名，請實作專案<xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat>介面，可提供資訊讓物件的用戶端實作**存**對話方塊 — 也就是以填滿**檔案類型**下拉式清單列出並管理初始檔案名稱的副檔名。  
+ 若要判斷副檔名的檔案，請實作專案<xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat>介面，可提供資訊讓用戶端的物件，實作**另存新檔** 對話方塊中，也就是以填滿**檔案類型**下拉式清單列出並管理的初始檔案名稱副檔名。  
   
- IDE 呼叫`IPersistFileFormat`介面上，表示專案應保存其專案的專案項目依適當情況。 因此，物件會擁有其檔案和格式的所有層面。 這包括物件的格式名稱。  
+ IDE 呼叫`IPersistFileFormat`介面來表示專案應該保存其專案的專案項目適當地。 因此，物件會擁有其檔案和格式的所有層面。 這包括物件的格式的名稱。  
   
- 在其中的項目不是檔案的情況下`IPersistFileFormat`仍然是如何非以檔案為基礎的項目會保存。 專案檔，例如.vbp 檔案[!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]專案或.vcproj 檔案[!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)]專案，也必須 persisted。  
+ 其中的項目不是檔案，萬一`IPersistFileFormat`仍然是如何非檔案型的項目會保存。 專案檔，例如.vbp 檔案[!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]專案或.vcproj 檔案[!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)]專案，也必須 persisted。  
   
- 用於儲存動作，IDE 會檢查執行中文件資料表 (RDT) 和階層會傳遞至命令<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem>和<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2>介面。 <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem.IsItemDirty%2A>實作方法來判斷是否已修改的項目。 如果此項目，<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem.SaveItem%2A>方法實作以儲存修改過的項目。  
+ 針對儲存動作，IDE 會檢查執行的文件資料表 (RDT) 和階層會傳遞到命令<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem>而<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2>介面。 <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem.IsItemDirty%2A>實作方法，以判斷是否已修改的項目。 如果此項目，<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem.SaveItem%2A>實作方法，以儲存修改過的項目。  
   
- 上的方法`IVsPersistHierarchyItem2`介面用來判斷是否可以重新載入項目，如果項目可以是，將它重新載入。 此外，<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2.IgnoreItemFileChanges%2A>方法可以實作以造成變更的項目而不會儲存被捨棄。  
+ 上的方法`IVsPersistHierarchyItem2`介面用來判斷是否可以重新載入項目，如果項目可以是的將它重新載入。 此外，<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2.IgnoreItemFileChanges%2A>可以實作方法，以造成變更的項目，而不會儲存遭到捨棄。  
   
 ## <a name="see-also"></a>另請參閱  
- [檢查清單： 建立新的專案類型](../../extensibility/internals/checklist-creating-new-project-types.md)   
+ [檢查清單：建立新的專案類型](../../extensibility/internals/checklist-creating-new-project-types.md)   
  [使用 Project Factory 建立專案執行個體](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)

@@ -1,9 +1,6 @@
 ---
-title: IDebugProcessSecurity::QueryCanSafelyAttach |Microsoft 文件
-ms.custom: ''
+title: IDebugProcessSecurity::QueryCanSafelyAttach |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - IDebugProcessSecurity::QueryCanSafelyAttach
@@ -13,15 +10,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fe132ddbd154e04e3cef1a20e826c3634c65bdb2
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a9ecc1d7970fe8be98d199130db6e87847de3aee
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31114225"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53839001"
 ---
 # <a name="idebugprocesssecurityquerycansafelyattach"></a>IDebugProcessSecurity::QueryCanSafelyAttach
-這個方法可讓使用者附加至不安全的程序之前，顯示警告的連接埠供應商。  
+這個方法可讓使用者附加至不安全的程序之前，顯示警告的連接埠提供者。  
   
 ## <a name="syntax"></a>語法  
   
@@ -34,13 +31,13 @@ int QueryCanSafelyAttach();
 ```  
   
 ## <a name="return-value"></a>傳回值  
- 傳回值如下所示：  
+ 傳回的值如下所示：  
   
--   `S_OK`： 附加至處理序是安全，而且沒有警告 對話方塊會顯示。  
+-   `S_OK`：附加至處理序是安全且沒有警告 對話方塊中會顯示。  
   
--   `S_FALSE`： 附加可能有安全性問題，而且會顯示警告對話方塊。  
+-   `S_FALSE`：附加可能有安全性問題，但有警告的對話方塊隨即顯示。  
   
--   `FAILURE`： 附加至處理序會失敗。  
+-   `FAILURE`：附加至處理序就會失敗。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugProcessSecurity](../../../extensibility/debugger/reference/idebugprocesssecurity.md)

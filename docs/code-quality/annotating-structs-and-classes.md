@@ -2,7 +2,6 @@
 title: 註釋結構和類別
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 f1_keywords:
 - _Field_size_bytes_part_
@@ -26,12 +25,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: a4fb171ec575fdcf85879ed62252c9d373283f62
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: 25d3a964020cf9b5c885e52a948ad1fc229d44db
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53802627"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53948929"
 ---
 # <a name="annotating-structs-and-classes"></a>註釋結構和類別
 您可以使用作用類似非變異項目的註釋來標註結構和類別，在包含封入結構做為參數或結果值的任何函式呼叫或函式進入/結束點，會假定這些註釋為真。

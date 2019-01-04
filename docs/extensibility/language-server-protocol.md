@@ -1,9 +1,6 @@
 ---
 title: 語言伺服器通訊協定概觀 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/14/2017
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 6a7d93c2-31ea-4bae-8b29-6988a567ddf2
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ad0e802bd63a9d489a98eb9f216e6739e378d590
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1b2329b54ba90a37e0d6d5e782e66c4af923a646
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49894855"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53828221"
 ---
 # <a name="language-server-protocol"></a>語言伺服器通訊協定
 
@@ -52,13 +49,13 @@ LSP 已發展一段時間，目前已在 3.0 版。 它啟動時的語言伺服�
 
 ![lsp 流程圖](media/lsp-flow-diagram.png)
 
-* **使用者在工具中開啟檔案 （稱為文件）**： 此工具會告知語言伺服器已開啟的文件 (' textDocument/didOpen ')。 從現在起，文件內容的真相不再位於檔案系統，但保留在記憶體中的工具。
+* **使用者在工具中開啟檔案 （稱為文件）**:此工具會告知語言伺服器已開啟的文件 (' textDocument/didOpen ')。 從現在起，文件內容的真相不再位於檔案系統，但保留在記憶體中的工具。
 
-* **使用者可編輯**： 此工具會通知伺服器與變更相關的文件 (' textDocument/didChange ') 和程式的語意資訊會由語言伺服器更新。 發生這種情況，語言伺服器會分析這項資訊，並通知使用偵測到的錯誤和警告 (' textDocument/publishDiagnostics ') 的工具。
+* **使用者可編輯**:此工具會通知伺服器與變更相關的文件 (' textDocument/didChange ') 和程式的語意資訊會由語言伺服器更新。 發生這種情況，語言伺服器會分析這項資訊，並通知使用偵測到的錯誤和警告 (' textDocument/publishDiagnostics ') 的工具。
 
-* **使用者在編輯器中的符號上執行 移至定義 」**： 此工具會傳送 'textDocument/定義' 要求具有兩個參數: (1) 文件 URI 和 移至定義要求起始伺服器所在 （2） 的文字位置。 伺服器會回應文件 URI 和內文件的符號定義的位置。
+* **如果使用者在執行 移至定義 」 編輯器中的符號**:此工具會傳送兩個參數的 'textDocument/定義' 要求：（1） 的文件 URI，其中 移至定義要求已起始到伺服器 （2） 的文字位置。 伺服器會回應文件 URI 和內文件的符號定義的位置。
 
-* **在使用者關閉文件 （檔案）**： 從工具，通知文件是現在不再記憶體，且目前的內容是現在最新的檔案系統上的語言伺服器會傳送 'textDocument/didClose' 通知。
+* **在使用者關閉文件 （檔案）**:從工具，通知文件是現在不再記憶體，且目前的內容是現在最新的檔案系統上的語言伺服器會傳送 'textDocument/didClose' 通知。
 
 此範例說明通訊協定與層級的編輯器功能，例如 [移至定義]，[尋找所有參考] 的語言伺服器通訊的方式。 通訊協定所使用的資料類型是編輯器或 IDE '資料類型' 目前開啟的文字文件等資料指標的位置。 資料類型不是層級的程式設計語言領域模型通常提供抽象語法樹狀結構和編譯器符號 （例如，解析型別，命名空間，...）。這可大幅簡化的通訊協定。
 

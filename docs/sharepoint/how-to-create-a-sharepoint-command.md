@@ -1,9 +1,6 @@
 ---
-title: 如何： 建立 SharePoint 命令 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：建立 SharePoint 命令 |Microsoft Docs
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,14 +12,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 89384a1bf095b27f97be46ae303148ab5f8c7d1f
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 7f83447bcceb010f5a479d61c250e703daa1aab1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37117133"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53894846"
 ---
-# <a name="how-to-create-a-sharepoint-command"></a>如何： 建立 SharePoint 命令
+# <a name="how-to-create-a-sharepoint-command"></a>HOW TO：建立 SharePoint 命令
   如果您想要使用 SharePoint 工具擴充功能中的伺服器物件模型，您必須建立自訂*SharePoint 命令*來呼叫 API。 您可以直接呼叫伺服器物件模型的組件中定義之 SharePoint 命令。  
   
  如需有關 SharePoint 命令的用途的詳細資訊，請參閱[呼叫 SharePoint 物件模型](../sharepoint/calling-into-the-sharepoint-object-models.md)。  
@@ -31,9 +28,9 @@ ms.locfileid: "37117133"
   
 1.  建立具有下列組態的類別庫專案：  
   
-    -   .NET Framework 3.5 為目標。 如需有關如何選取目標 framework 的詳細資訊，請參閱[如何： 以.NET framework 版本為目標](../ide/how-to-target-a-version-of-the-dotnet-framework.md)。  
+    -   .NET Framework 3.5 為目標。 如需有關如何選取目標 framework 的詳細資訊，請參閱[How to:以一個 .NET Framework 版本為目標](../ide/how-to-target-a-version-of-the-dotnet-framework.md)。  
   
-    -   目標 AnyCPU 或 x64 平台。 根據預設，類別庫專案的目標平台會為 AnyCPU。 如需有關如何選取目標平台的詳細資訊，請參閱[How to: Configure Projects to 目標平台](../ide/how-to-configure-projects-to-target-platforms.md)。  
+    -   目標 AnyCPU 或 x64 平台。 根據預設，類別庫專案的目標平台會為 AnyCPU。 如需有關如何選取目標平台的詳細資訊，請參閱[How to:專案設定為目標平台](../ide/how-to-configure-projects-to-target-platforms.md)。  
   
     > [!NOTE]  
     >  您無法在相同的專案定義的 SharePoint 工具延伸模組中，實作 SharePoint 命令，因為 SharePoint 命令的目標.NET Framework 3.5 和 SharePoint 工具擴充功能目標[!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]。 您必須定義任何您在個別的專案中的延伸模組所使用的 SharePoint 命令。 如需詳細資訊，請參閱 <<c0> [ 部署適用於 Visual Studio 中 SharePoint 工具擴充功能](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)。  
@@ -60,7 +57,7 @@ ms.locfileid: "37117133"
   
 4.  套用<xref:Microsoft.VisualStudio.SharePoint.Commands.SharePointCommandAttribute>方法。 這個屬性會指定命令的唯一識別碼這個識別項並沒有符合的方法名稱。  
   
-     從您的 SharePoint 工具擴充功能呼叫命令時，您必須指定相同的唯一識別碼。 如需詳細資訊，請參閱 <<c0> [ 如何： 執行 SharePoint 命令](../sharepoint/how-to-execute-a-sharepoint-command.md)。  
+     從您的 SharePoint 工具擴充功能呼叫命令時，您必須指定相同的唯一識別碼。 如需詳細資訊，請參閱[＜How to：執行 SharePoint 命令](../sharepoint/how-to-execute-a-sharepoint-command.md)。  
   
 ## <a name="example"></a>範例  
  下列程式碼範例示範具有識別碼的 SharePoint 命令`Contoso.Commands.UpgradeSolution`。 若要升級至已部署的解決方案，此命令會使用 Api 伺服器物件模型中。  
@@ -68,7 +65,7 @@ ms.locfileid: "37117133"
  [!code-csharp[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#5](../sharepoint/codesnippet/CSharp/UpgradeDeploymentStep/SharePointCommands/Commands.cs#5)]
  [!code-vb[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#5](../sharepoint/codesnippet/VisualBasic/upgradedeploymentstep/sharepointcommands/commands.vb#5)]  
   
- 除了隱含的第一個<xref:Microsoft.VisualStudio.SharePoint.Commands.ISharePointCommandContext>參數，此命令也有自訂的字串參數，其中包含正在升級至 SharePoint 網站的.wsp 檔案的完整路徑。 若要查看較大範例的內容中此程式碼，請參閱[逐步解說： 建立 SharePoint 專案的自訂部署步驟](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md)。  
+ 除了隱含的第一個<xref:Microsoft.VisualStudio.SharePoint.Commands.ISharePointCommandContext>參數，此命令也有自訂的字串參數，其中包含正在升級至 SharePoint 網站的.wsp 檔案的完整路徑。 若要查看較大範例的內容中此程式碼，請參閱[逐步解說：建立 SharePoint 專案的自訂部署步驟](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md)。  
   
 ## <a name="compiling-the-code"></a>編譯程式碼  
  這個範例需要參考下列組件：  
@@ -82,6 +79,5 @@ ms.locfileid: "37117133"
   
 ## <a name="see-also"></a>另請參閱
  [呼叫 SharePoint 物件模型](../sharepoint/calling-into-the-sharepoint-object-models.md)   
- [如何： 執行 SharePoint 命令](../sharepoint/how-to-execute-a-sharepoint-command.md)   
- [逐步解說： 擴充伺服器總管以顯示 web 組件](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)  
-  
+ [如何：執行 SharePoint 命令](../sharepoint/how-to-execute-a-sharepoint-command.md)   
+ [逐步解說：擴充伺服器總管以顯示 web 組件](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)  

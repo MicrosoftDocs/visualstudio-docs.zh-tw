@@ -1,9 +1,6 @@
 ---
 title: Creating an Extension with VSPackage |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: c0cc5e08-4897-44f2-8309-e3478f1f999e
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 50af15e1c15b5d0b6318c498923229778e8c0169
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 1060dda64fc402e69f7f87601a1643fbabed5507
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39500770"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53838407"
 ---
 # <a name="create-an-extension-with-a-vspackage"></a>使用 VSPackage 建立擴充功能
 本逐步解說會示範如何建立 VSIX 專案，並加入 VSPackage 專案項目。 我們將使用 VSPackage 來取得，UI Shell 服務以顯示訊息方塊。  
@@ -49,7 +46,7 @@ ms.locfileid: "39500770"
     public sealed class FirstPackage : Package  
     ```  
   
-2.  讓我們加入訊息，讓我們知道已載入 VSPackage。 我們使用 VSPackage 的`Initialize()`方法來這樣做，因為您可以取得 Visual Studio 服務已設置 VSPackage 時，才。 (如需有關如何取得服務的詳細資訊，請參閱 <<c0> [ 如何： 取得服務](../extensibility/how-to-get-a-service.md)。)取代`Initialize()`方法`FirstPackage`取得的程式碼<xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell>服務，取得<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell>介面，並呼叫其<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.ShowMessageBox%2A>方法。  
+2.  讓我們加入訊息，讓我們知道已載入 VSPackage。 我們使用 VSPackage 的`Initialize()`方法來這樣做，因為您可以取得 Visual Studio 服務已設置 VSPackage 時，才。 (如需有關如何取得服務的詳細資訊，請參閱[How to:取得服務](../extensibility/how-to-get-a-service.md)。)取代`Initialize()`方法`FirstPackage`取得的程式碼<xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell>服務，取得<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell>介面，並呼叫其<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.ShowMessageBox%2A>方法。  
   
     ```csharp  
     protected override void Initialize()  

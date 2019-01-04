@@ -1,9 +1,6 @@
 ---
 title: IDebugBinder3::GetTypeArgumentCount |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugBinder3::GetTypeArgumentCount
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 01578661017d76907263cddecf770a6cc0b8c033
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3ffe64b5977ce57130d2c97720442a4b030c1ac4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49842829"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53986176"
 ---
 # <a name="idebugbinder3gettypeargumentcount"></a>IDebugBinder3::GetTypeArgumentCount
 這個方法會傳回與這個物件相關聯的引數類型的數目。  
@@ -28,14 +25,14 @@ ms.locfileid: "49842829"
 ## <a name="syntax"></a>語法  
   
 ```cpp  
-HRESULT GetTypeArgumentCount(  
-   UINT* uCount  
+HRESULT GetTypeArgumentCount(  
+   UINT* uCount  
 );  
 ```  
   
 ```csharp  
-int GetTypeArgumentCount(  
-   out uint uCount  
+int GetTypeArgumentCount(  
+   out uint uCount  
 );  
 ```  
   

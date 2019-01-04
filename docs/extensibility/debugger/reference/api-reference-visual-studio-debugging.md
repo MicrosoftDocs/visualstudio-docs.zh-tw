@@ -1,9 +1,6 @@
 ---
 title: API 參考 （Visual Studio 偵錯） |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], API reference
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 97d5aa6fc92457557493005389d129993d38e099
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0172f9412bff791ae2446d6cffcd9d302c7c3ef8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49839436"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53923623"
 ---
 # <a name="api-reference-visual-studio-debugging"></a>API 參考 (Visual Studio 偵錯)
 參考章節包含的 API，顯示的語法和所有的 API 元素的使用方式指南的概念性概觀和各種程式碼範例。 所有參考會依分類依字母順序都列出。  
