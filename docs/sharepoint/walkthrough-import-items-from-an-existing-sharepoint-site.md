@@ -1,13 +1,8 @@
 ---
-title: 逐步解說： 從現有的 SharePoint 網站匯入項目 |Microsoft Docs
-ms.custom: ''
+title: 逐步解說：從現有的 SharePoint 網站匯入項目 |Microsoft Docs
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -18,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 86256cdecd878c78c34d7128a05eb7b795067701
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 93e475a82ab862627c957a53ed2b3e2acae88b2d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49909753"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53834031"
 ---
-# <a name="walkthrough-import-items-from-an-existing-sharepoint-site"></a>逐步解說： 從現有的 SharePoint 網站匯入項目
+# <a name="walkthrough-import-items-from-an-existing-sharepoint-site"></a>逐步解說：從現有的 SharePoint 網站匯入項目
   本逐步解說示範如何從現有的 SharePoint 網站將匯入項目[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]SharePoint 專案。  
   
  本逐步解說將示範下列工作：  
@@ -107,7 +102,7 @@ ms.locfileid: "49909753"
   
 #### <a name="to-import-a-wsp-file"></a>若要匯入.wsp 檔案  
   
-1. 在  [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]，在功能表列上選擇 **檔案** > **新增** > **專案**顯示**新專案** 對話方塊。 如果您的 IDE 設定為使用 Visual Basic 開發設定，在功能表列上，選擇**檔案** > **新專案**。  
+1. 在 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]，在功能表列上選擇 [**檔案** > **新增** > **專案**顯示**新專案**] 對話方塊。 如果您的 IDE 設定為使用 Visual Basic 開發設定，在功能表列上，選擇**檔案** > **新專案**。  
   
 2. 依序展開**SharePoint**節點之下**Visual C#** 或**Visual Basic**，然後選擇**2010年**節點。  
   
@@ -149,4 +144,3 @@ ms.locfileid: "49909753"
  [從現有的 SharePoint 網站匯入項目](../sharepoint/importing-items-from-an-existing-sharepoint-site.md)   
  [開發 SharePoint 方案](../sharepoint/developing-sharepoint-solutions.md)   
  [建立可重複使用的控制項，為 web 組件或應用程式頁面](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)  
-  
