@@ -1,9 +1,6 @@
 ---
 title: 適用於 Visual Studio 的版面配置 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: c19e3022-047c-43b6-a046-a82717efed4f
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 638cfc29ed2aa05a8576a2244b81f0625453076d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e82ed0f65a8546cc16decce84c3cca01237694d0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49816674"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53898748"
 ---
 # <a name="layout-for-visual-studio"></a>適用於 Visual Studio 的版面配置
 就大部分的 Visual Studio 對話方塊[公用程式對話方塊版面配置](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_UtilityDialogLayout)，這是 unthemed 對話方塊該遵循標準[Windows Desktop 對話方塊版面配置原則](/windows/desktop/uxguide/win-dialog-box)。 如 Visual Studio 會移到重新整理其 UI 中，一些更重要的對話方塊會有新的設計可建立它們，產品定義的體驗。 這些[佈景主題對話方塊版面配置](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_ThemedDialogLayout)具有佈景主題的外觀。  
@@ -38,11 +35,11 @@ ms.locfileid: "49816674"
   
  ![控制項上方之標籤的對話方塊間距](../../extensibility/ux-guidelines/media/0801-a_utilityspacingabove.png "0801 a_UtilitySpacingAbove")  
   
- **圖 08.01 附錄間距的指導方針與上方控制項標籤的公用程式對話方塊**  
+ **圖 08.01 a:間距的指導方針與上方控制項標籤的公用程式對話方塊**  
   
  ![控制項左側之標籤的對話方塊間距](../../extensibility/ux-guidelines/media/0801-b_utilityspacingleft.png "0801 b_UtilitySpacingLeft")  
   
- **圖 08.01 b 間距的指導方針與控制項的左邊的標籤的公用程式對話方塊**  
+ **圖 08.01 b:間距的指導方針與控制項的左邊的標籤的公用程式對話方塊**  
   
 ### <a name="layout-details"></a>版面配置詳細資料  
   
@@ -68,7 +65,7 @@ ms.locfileid: "49816674"
   
   ![基本按鈕對齊](../../extensibility/ux-guidelines/media/0801-c_buttonalign.png "0801 c_ButtonAlign")  
   
-  **圖 08.01 c： 基本按鈕對齊方式**  
+  **圖 08.01 c:基本按鈕對齊方式**  
   
 #### <a name="labels"></a>標籤  
   
@@ -85,14 +82,14 @@ ms.locfileid: "49816674"
   
  ![建議的控制項之間的距離](../../extensibility/ux-guidelines/media/0801-d_controldistance.png "0801 d_ControlDistance")  
   
- **圖 08.01-d： 建議控制項之間的距離**  
+ **圖 08.01-d:控制項之間的距離的建議**  
   
 #### <a name="control-indentation"></a>控制縮排  
  時為巢狀控制項，將內部的控制項，與上述，控制項通常標籤左邊緣的水平對齊。  
   
  ![巢狀控制項對齊](../../extensibility/ux-guidelines/media/0801-e_controlalign.png "0801 e_ControlAlign")  
   
- **圖 08.01-e： 巢狀控制項對齊方式**  
+ **圖 08.01-e:巢狀的控制項對齊方式**  
   
 #### <a name="control-width"></a>控制項寬度  
  應該不超過欄位的平均輸入文字方塊或其他類似的控制項的寬度。 平均的英文斷是五個字元。 例如，需要長路徑名稱的文字方塊中應該只要允許水平版面配置，而下拉式清單中，平台名稱應該只被允許的最長的項目長度。  
@@ -114,14 +111,14 @@ ms.locfileid: "49816674"
   
   ![水平的 [確定] 和 [取消] 按鈕](../../extensibility/ux-guidelines/media/0801-f_horizokcan.png "0801 f_HorizOKCan")  
   
-  **圖 08.01-f： 垂直內部水平的 [確定] / [取消] 按鈕**  
+  **圖 08.01-f:垂直內部水平的 確定 / 取消 按鈕**  
   
   ![垂直的 [確定] 和 [取消] 按鈕](../../extensibility/ux-guidelines/media/0801-g_vertokcan.png "0801 g_VertOKCan")  
   
-  **圖 08.01-g： 水平內部的按鈕與垂直確定/取消**  
+  **圖 08.01-g:水平與垂直確定/取消的內部按鈕**  
   
 #### <a name="browse-button"></a>[瀏覽...]按鈕  
- **[瀏覽...]** 遵循文字方塊中的按鈕時，應該拼出 [瀏覽...] 上，完整，包括省略符號。 如果有緊密的空間，或有多個 **[瀏覽...]** 在畫面上，按鈕的按鈕可縮減為的省略符號。  
+ **[瀏覽...]** 遵循文字方塊中的按鈕時，應該拼出 [瀏覽...] 上，完整，包括 省略符號。 如果有緊密的空間，或有多個 **[瀏覽...]** 在畫面上，按鈕的按鈕可縮減為的省略符號。  
   
 ##  <a name="BKMK_ThemedDialogLayout"></a> 佈景主題對話方塊版面配置  
  在 Visual Studio 中的佈景主題對話方塊具有較淺的外觀，並提供更多的泛空白字元。 印刷樣式會提供更多的強調和感興趣，提供更開放的行距和各式各樣的字型大小和權數。 可能的話，chrome 和標題列已降低或移除。 這些對話方塊的配置都應該遵循這個基本模式：  
@@ -143,19 +140,19 @@ ms.locfileid: "49816674"
 ### <a name="themed-dialog-layout-examples"></a>佈景主題對話方塊版面配置範例  
  ![佈景主題對話方塊版面配置](../../extensibility/ux-guidelines/media/0801-h_themeddialog.png "0801 h_ThemedDialog")  
   
- **圖 08.01 h:%m 佈景主題對話方塊**  
+ **圖 08.01-h:佈景主題對話方塊**  
   
  ![佈景主題對話方塊維度](../../extensibility/ux-guidelines/media/0801-i_themeddialogdimensions.png "0801 i_ThemedDialogDimensions")  
   
- **圖 08.01-i： 佈景主題對話方塊維度**  
+ **圖 08.01-i:佈景主題對話方塊-維度**  
   
  ![佈景主題對話方塊字型](../../extensibility/ux-guidelines/media/0801-j_themeddialogfonts.png "0801 j_ThemedDialogFonts")  
   
- **圖 08.01 j： 佈景主題對話方塊字型**  
+ **圖 08.01 j:佈景主題對話方塊-字型**  
   
  ![佈景主題對話方塊色彩](../../extensibility/ux-guidelines/media/0801-k_themeddialogcolors.png "0801 k_ThemedDialogColors")  
   
- **圖 08.01-k： 佈景主題對話方塊色彩**  
+ **圖 08.01-k:佈景主題對話方塊-色彩**  
   
 ## <a name="see-also"></a>另請參閱  
  [適用於 Visual Studio 的應用程式模式](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md)   

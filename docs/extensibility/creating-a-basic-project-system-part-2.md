@@ -1,9 +1,6 @@
 ---
 title: 建立基本的專案系統，第 2 部分 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - writing a project system
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4f5a059562db2409dca8eca1fb53c007059456b9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d54e8833389d110efdcefd8d437645ef5824d8f6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49928109"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53967770"
 ---
 # <a name="create-a-basic-project-system-part-2"></a>建立基本專案系統，第 2 部分
 在此系列中，第一個逐步解說[建立基本專案系統，第 1 部分](../extensibility/creating-a-basic-project-system-part-1.md)，示範如何建立基本的專案系統。 本逐步解說建立基本專案系統上加上 Visual Studio 範本、 屬性頁和其他功能。 您必須先完成第一個逐步解說，才能啟動它。  
@@ -187,9 +184,9 @@ ZipProjects:
   
 1. 重設 Visual Studio SDK experimental 執行個體。  
   
-    在上[!INCLUDE[win7](../debugger/includes/win7_md.md)]： 上**開始**功能表上，尋找**Microsoft Visual Studio/Microsoft Visual Studio SDK/工具**資料夾，然後再選取**重設 Microsoft Visual Studio Experimental執行個體**。  
+    在 [!INCLUDE[win7](../debugger/includes/win7_md.md)]:在 [**開始**] 功能表中，尋找**Microsoft Visual Studio/Microsoft Visual Studio SDK/工具**資料夾，然後再選取**重設 Microsoft Visual Studio 實驗執行個體**.  
   
-    Windows 的更新版本上： 在**開始**畫面上，輸入**重設 Microsoft Visual Studio\<版本 > 實驗性執行個體**。  
+    在較新版 Windows 的詳細資訊：在 **開始**畫面上，輸入**重設 Microsoft Visual Studio\<版本 > 實驗性執行個體**。  
   
 2. 命令提示字元 視窗隨即出現。 您會看到字樣**按下任意鍵繼續**，按一下**ENTER**。 在視窗關閉後，開啟 Visual Studio。  
   
