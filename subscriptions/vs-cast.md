@@ -3,18 +3,18 @@ title: Visual Studio 訂用帳戶的 CAST Highlight 權益 | Microsoft Docs
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 12/04/2018
+ms.date: 12/19/2018
 ms.topic: conceptual
 description: 了解所選 Visual Studio 訂用帳戶中所含的 CAST Highlight 權益
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 74ed8a20195936c5ba7ef9c7ce7591838b620d5d
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 7ee8059a8e80834b6b35f93be888d7fd90e4a3a3
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52897019"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53739993"
 ---
 # <a name="the-cast-highlight-benefit-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶中的 CAST Highlight 權益
 
@@ -74,7 +74,7 @@ Visual Studio Enterprise 訂閱者可以取得免費一個月的 CAST Highlight 
 
    - [CAST Highlight - CloudReadiness 示範](https://www.youtube.com/watch?v=wFUpAzn1Iu8&feature=youtu.be)
     -   [快速入門指南 (PDF)](https://casthighlight.com/Getting-Started-Guide.pdf)
-    -   影片教學課程-[設定您的組合](https://www.youtube.com/watch?v=MDm8ln4vuGE)
+    -   影片教學課程 - [配置您的投資組合](https://www.youtube.com/watch?v=MDm8ln4vuGE)
     -   影片教學課程 - [應用程式上架](https://www.youtube.com/watch?v=x-7Dsn3Rmw4)
     
    *敬祝商祺，*
@@ -89,8 +89,8 @@ Visual Studio Enterprise 訂閱者可以取得免費一個月的 CAST Highlight 
 
 | 訂用帳戶層級                                                 |     通道                                            | 優勢                                                          | 可續約？    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (標準、年度雲端)   | VL, Azure, 零售, | 30 天評估 5 個應用程式|  否。  僅提供給新訂閱者使用          |
-| Visual Studio Professional (標準、年度雲端) | VL, Azure, 零售                                       | 無法使用                                                             |  N/A          |
+| Visual Studio Enterprise (Standard)   | VL, Azure, 零售, | 30 天評估 5 個應用程式|  否。  僅提供給新訂閱者使用          |
+| Visual Studio Professional (Standard) | VL, Azure, 零售                                       | 無法使用                                                             |  N/A          |
 | Visual Studio Test Professional (標準訂用帳戶)                         | VL, 零售                                              | 無法使用                                             |  N/A           |
 | MSDN 平台 (標準)                                          | VL, 零售                                              | 無法使用                                              |  N/A          |
 | Visual Studio Dev Essentials | N/A  | 無法使用 | N/A |
@@ -99,8 +99,11 @@ Visual Studio Enterprise 訂閱者可以取得免費一個月的 CAST Highlight 
 
 
 
-<sup>1</sup>  *包含：「禁止轉售 (NFR)」、FTE、Microsoft Valued Professional (MVP)、Region Director (RD)、Microsoft 合作夥伴網路 (MPN)、Visual Studio Industry Partner (VSIP)、Microsoft Certified Trainer、BizSpark、Imagine*
+<sup>1</sup>  *包含：禁止轉售 (NFR)、FTE、Microsoft Valued Professional (MVP)、Region Director (RD)、Microsoft 合作夥伴網路 (MPN)、Visual Studio 產業夥伴 (VSIP)、Microsoft Certified Trainer、BizSpark、Imagine*
 
+
+> [!NOTE]
+> Microsoft 不再於雲端訂用帳戶中提供 Visual Studio Professional 年度訂用帳戶和 Visual Studio Enterprise 年度訂用帳戶。 現有的客戶體驗，以及更新、增加、減少或取消其訂用帳戶的能力將不會改變。 我們鼓勵新的客戶移至 [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) 來探索 Visual Studio 的不同購買選項。
 
 
 不確定您使用哪一個訂用帳戶？  連線到 [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) 以查看指派給您的電子郵件地址的所有訂用帳戶。 若沒有看到您的所有訂用帳戶，可能有一或多個訂用帳戶是指派到不同的電子郵件地址。  您必須以該電子郵件地址登入才能查看對應的訂用帳戶。
