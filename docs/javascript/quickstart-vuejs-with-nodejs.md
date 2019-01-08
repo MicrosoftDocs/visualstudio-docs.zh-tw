@@ -15,12 +15,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: a48de4bc48f24cc55914ccdb5fdeed0b4ad1d9a8
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 4f346f75078ff513dbbb91230d564686d6a1e023
+ms.sourcegitcommit: a715de2ba8c703f37aa2102567b1aa2c0f05a117
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53058947"
+ms.lasthandoff: 12/15/2018
+ms.locfileid: "53441479"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-vuejs-app"></a>快速入門：使用 Visual Studio 建立您的第一個 Vue.js 應用程式
 
@@ -35,13 +35,13 @@ ms.locfileid: "53058947"
 
 1. 如果您尚未安裝 Node.js 執行階段，請從 [Node.js](https://nodejs.org/en/download/) 網站安裝 LTS 版本。
 
-    一般而言，Visual Studio 會自動偵測已安裝的 Node.js 執行階段。 如果偵測不到已安裝的執行階段，您可以在屬性頁面中將專案設定為參考已安裝的執行階段 (建立專案之後，以滑鼠右鍵按一下專案節點，然後選擇 [屬性])。
+    一般而言，Visual Studio 會自動偵測已安裝的 Node.js 執行階段。 如果偵測不到已安裝的執行階段，您可以在屬性頁面中將專案設定為參考已安裝的執行階段 (建立專案後，以滑鼠右鍵按一下專案節點，然後選擇 [屬性])。
 
 1. 開啟 Visual Studio 2017。
 
 1. 從頂端功能表列中，選擇 [檔案] > [新增] > [專案]。
 
-1. 在 [新增專案] 對話方塊的 [JavaScript] > [Node.js] 或 [TypeScript]  > [Node.js] 下，選擇 [基本的 Vue.js Web 應用程式]，然後輸入專案名稱，再按一下 [確定]。
+1. 在 [新增專案] 對話方塊的 [JavaScript] > [Node.js] 或 [TypeScript] > [Node.js] 下，選擇 [基本 Vue.js Web 應用程式]。 輸入專案名稱，然後按一下 [確定]。
 
      ![Vue.js 範本](../javascript/media/vuejs-template.png)
 
@@ -75,7 +75,7 @@ ms.locfileid: "53058947"
 
 ## <a name="add-a-vue-file-to-the-project"></a>將 .vue 檔案新增至專案
 
-1. 在 [方案總管] 中，以滑鼠右鍵按一下任何資料夾 (例如 *src* 資料夾)，然後選擇 [新增] > [新增項目]。
+1. 在 [方案總管] 中，以滑鼠右鍵按一下任何資料夾 (例如 *src/components* 資料夾)，然後選擇 [新增] > [新增項目]。
 
 1. 選取 [JavaScript Vue 單一檔案元件] 或 [TypeScript Vue 單一檔案元件]，然後按一下 [新增]。
 
@@ -85,7 +85,7 @@ ms.locfileid: "53058947"
 
 1. (僅限 TypeScript 專案) 從 Visual Studio 中，選擇 [建置] > [清除方案]。
 
-1. 接著，選擇 [建置] > [建置方案] 來建置專案。 檢查 [輸出] 視窗以查看建置結果。
+1. 接著，選擇 [建置] > [建置方案] 來建置專案。 請檢查 [輸出] 視窗查看建置結果，然後從 [顯示輸出來源] 清單選擇 [建置]。
 
     Vue.js 專案範本會設定建置後事件來使用 `build` npm 指令碼。 如果您想要修改此設定，請從 Windows 檔案總管中開啟專案檔 (\<專案名稱\>.njsproj*)，並找出這行程式碼：
 
