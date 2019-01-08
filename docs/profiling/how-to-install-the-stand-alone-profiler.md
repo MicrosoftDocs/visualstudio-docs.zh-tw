@@ -1,5 +1,5 @@
 ---
-title: 如何：安裝獨立分析工具 | Microsoft Docs
+title: HOW TO：安裝獨立分析工具 | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -13,27 +13,29 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 55c9e7c6ec4a34d59c45b2a56abedaa6d3fd2974
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b0f8f4204a48a9846a6193c6b8b60c3ef321816e
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942436"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648664"
 ---
-# <a name="how-to-install-the-stand-alone-profiler"></a>如何：安裝獨立分析工具
+# <a name="how-to-install-the-stand-alone-profiler"></a>HOW TO：安裝獨立分析工具
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 提供命令列型獨立分析工具，不用安裝 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE 即可執行。 當電腦未安裝或無法安裝開發環境時，就會發生這種情況。 例如，您不應該在生產環境的網頁伺服器上安裝開發環境。  
   
 > [!NOTE]
 >  當您要使用獨立的分析工具收集 ASP.NET 網站的效能資料時，建議您使用 [VSPerfASPNetCmd](../profiling/vsperfaspnetcmd.md) 命令列工具，不要用 [VSPerfCmd](../profiling/vsperfcmd.md) 工具。  
   
 ### <a name="to-install-the-stand-alone-profiler"></a>安裝獨立分析工具  
-  
-1. 在包含 *\Standalone Profiler* 路徑的目錄中，找到 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 安裝媒體的獨立分析工具安裝程式 (*vs_profiler.exe*)，並執行它。  
+
+1. 下載 [Visual Studio 效能工具](https://visualstudio.microsoft.com/downloads/?q=performance+tools#performance-tools-for-visual-studio-2017)。
+
+1. 在您下載效能工具處找到獨立分析工具安裝程式 (*vs_standaloneprofiler.exe*) 並執行它。
   
 2. 將 *vsintr.exe* 和 *msdis150.dll* 的路徑新增至系統路徑。  
   
    > [!NOTE]
-   >  在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 的預設安裝中，*vsinstr.exe* 和 *msdis150.dll* 位於 *\Program Files\Visual Studio 10\Team Tools\Performance Tools*。  
+   >  若要取得分析工具的路徑，請參閱[指定命令列工具的路徑](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)。 在 64 位元電腦上，64 位元和 32 位元版本的工具都可以使用。 若要使用程式碼剖析工具命令列工具，必須將工具路徑加入至命令提示字元視窗的 PATH 環境變數，或將它加入至命令本身。 
   
 3. 在命令提示字元處，鍵入 **VSInstr**。  
   

@@ -12,12 +12,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 15020111702d68c8c35fb09655018215e3a11d3b
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 4f364f3e8fecbe93dad92e008c178d7eb26ff3e2
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53062812"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53803503"
 ---
 # <a name="edit-python-code"></a>編輯 Python 程式碼
 
@@ -196,7 +196,7 @@ Visual Studio 中的 Python 支援提供幾種快速巡覽程式碼 (以及有�
 
 導覽列會顯示在每個編輯器視窗頂端，並包含兩個層級的定義清單。 左邊的下拉式清單包含目前檔案中最上層的類別和函式定義；右邊的下拉式清單會在左邊的範圍內顯示定義清單。 當您在編輯器中移動時，這些清單會更新以顯示您目前的內容，您也可以從這些清單中選取一個項目以直接跳至該處。
 
-![導覽列] 位於 Visual Studio 編輯器中(media/code-editing-navigation-bar.png)
+![Visual Studio 編輯器中的導覽列](media/code-editing-navigation-bar.png)
 
 > [!Tip]
 > 若要隱藏導覽列，請移至 [工具] > [選項] > [文字編輯器] > [Python] > [一般]，然後清除 [設定] > [導覽列]。

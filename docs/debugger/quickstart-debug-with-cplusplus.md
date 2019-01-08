@@ -13,14 +13,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 036774134f705d95fbc526a9e6a336ac43005820
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 33d96729507e0e85318ee357240580d3f3a1c328
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39639772"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561758"
 ---
-# <a name="quickstart-debug-with-c-using-the-visual-studio-debugger"></a>快速入門：使用 Visual Studio 偵錯工具來偵錯 C++
+# <a name="quickstart-debug-with-c-using-the-visual-studio-debugger"></a>快速入門：使用 Visual Studio 偵錯工具對 C++ 進行偵錯
 
 Visual Studio 偵錯工具提供許多強大的功能，可協助您偵錯應用程式。 本主題提供了解一些基本功能的快速方法。
 
@@ -103,7 +103,7 @@ Visual Studio 偵錯工具提供許多強大的功能，可協助您偵錯應用
 
 應用程式會繼續執行，並呼叫 `doWork`，然後在您按下按鈕所在的程式碼行暫停。
 
-用來逐步執行程式碼的常用鍵盤命令包括 **F10** 和 **F11**。 如需更深入的指示，請參閱[初學者指南](../debugger/getting-started-with-the-debugger.md)。
+用來逐步執行程式碼的常用鍵盤命令包括 **F10** 和 **F11**。 如需詳細指示，請參閱[偵錯工具簡介](../debugger/debugger-feature-tour.md)。
 
 ## <a name="inspect-variables-in-a-datatip"></a>在資料提示中檢查變數
 

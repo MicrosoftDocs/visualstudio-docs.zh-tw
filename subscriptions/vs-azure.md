@@ -3,18 +3,18 @@ title: Microsoft Azure 權益 | Microsoft Docs
 author: evanwindom
 ms.author: jaunger
 manager: evelynp
-ms.date: 10/3/2017
+ms.date: 12/19/2018
 ms.topic: Get-Started-Article
 description: 了解如何啟用 Visual Studio 訂用帳戶所含的 Azure 權益。
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: a97dbd638c4840266f22c46610f78ec5b2d527d6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 15bfbd9439b19599b7453e8df49024a0f91f2cf4
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49862335"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53739808"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>在 Visual Studio 訂用帳戶中使用 Microsoft Azure
 
@@ -26,11 +26,9 @@ ms.locfileid: "49862335"
 
 |                 訂用帳戶等級/方案                 |           優勢           |                         可續約？                          |
 |--------------------------------------------------------------|-----------------------------|-------------------------------------------------------------|
-|              Visual Studio Enterprise Standard               |     每月信用點數 $150 美元     |                             是                             |
-|               Visual Studio Enterprise 年度                |     每月信用點數 $150 美元     |                             是                             |
+|              Visual Studio Enterprise Standard               |     每月信用點數 $150 美元     |                             是                             ||
 |               Visual Studio Enterprise 每月               |        無法使用        |                                                             |
-|             Visual Studio Professional Standard              |     每月信用點數 $50 美元      |                             是                             |
-|              Visual Studio Professional 年度               |     每月信用點數 $50 美元      |                             是                             |
+|             Visual Studio Professional Standard              |     每月信用點數 $50 美元      |                             是                            
 |              Visual Studio Professional 每月              |        無法使用        |                                                             |
 |                    Visual Studio Test Pro                    |     每月信用點數 $50 美元      |                             是                             |
 |                        MSDN 平台                        |     每月信用點數 $100 美元     |                             是                             |
@@ -46,6 +44,11 @@ ms.locfileid: "49862335"
 | Visual Studio Enterprise – MCT 軟體與服務開發人員 |     每月信用點數 $150 美元     |                             是                             |
 
 *包括「禁止轉售」(NFR)、Microsoft Valued Professional (MVP)、Region Director (RD)、Visual Studio 產業夥伴 (VSIP)
+
+
+> [!NOTE]
+> Microsoft 不再於雲端訂用帳戶中提供 Visual Studio Professional 年度訂用帳戶和 Visual Studio Enterprise 年度訂用帳戶。 現有的客戶體驗，以及更新、增加、減少或取消其訂用帳戶的能力將不會改變。 我們鼓勵新的客戶移至 [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) 來探索 Visual Studio 的不同購買選項。
+
 
 不確定您使用哪一個訂用帳戶？  連線到 [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) 以查看指派給您的電子郵件地址的所有訂用帳戶。 若沒有看到您的所有訂用帳戶，可能有一或多個訂用帳戶是指派到不同的電子郵件地址。  您必須以該電子郵件地址登入才能查看對應的訂用帳戶。
 
@@ -74,7 +77,7 @@ ms.locfileid: "49862335"
 ## <a name="faq"></a>常見問題集
 
 ### <a name="q-how-do-i-submit-a-technical-support-incident-from-within-the-azure-portal"></a>問：如何在 Azure 入口網站內提交技術支援事件？
-答：從 Azure 入口網站內提交支援事件包含三個步驟。
+A:從 Azure 入口網站提交支援事件包含三個步驟。
 1. 啟用您的技術支援權益，然後取得您的合約識別碼存取識別碼。
 2. 將您的支援合約連結到您的 Azure 訂用帳戶。
 3. 提交支援事件。
@@ -83,7 +86,7 @@ ms.locfileid: "49862335"
 
 ### <a name="q-ive-received-a-message-stating-that-my-access-to-azure-will-end-soon--what-can-i-do-to-continue-using-azure"></a>問：我收到一則訊息，指出我的 Azure 存取權很快將會結束。  我要怎麼做才能繼續使用 Azure？
 
-答：您收到這封電子郵件的原因，是因為您使用與您的 Visual Studio 訂用帳戶相關聯的 Azure 權益，而該訂用帳戶已過期或已被移除。  若要繼續使用 Azure，您有數個選項：
+A:您收到這封電子郵件的原因，是因為您使用與您的 Visual Studio 訂用帳戶建立關聯的 Azure 權益，而該訂用帳戶已過期或已被移除。  若要繼續使用 Azure，您有數個選項：
 
 **建議的動作：**
 

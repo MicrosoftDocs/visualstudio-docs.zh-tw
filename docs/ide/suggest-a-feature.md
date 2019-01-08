@@ -1,43 +1,49 @@
 ---
 title: 建議功能
-description: 說明開發人員社群上有哪些建議、提出建議的方式，以及 Microsoft 會如何將這些建議用於 Visual Studio 的藍圖
-ms.date: 11/15/2018
+description: 描述開發人員社群上有哪些建議、提出建議的方式，以及 Microsoft 會如何將這些建議用於 Visual Studio 的藍圖。
+ms.date: 12/17/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
+ms.technology: vs-ide-general
 ms.topic: conceptual
 author: seaniyer
 ms.author: seiyer
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 541d8968ea71844d89903b9e4f146e86a15737e2
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: 6c92c2d67419b82b11dfb65898d44e0da7901818
+ms.sourcegitcommit: 34840a954ed3446c789e80ee87da6cbf1203cbb5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53160032"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53592452"
 ---
 # <a name="overview-suggest-a-feature"></a>概觀：建議功能
 
-除了 [Visual Studio 開發人員社群](https://developercommunity.visualstudio.com) \(英文\) 目前回報問題的功能之外，我們也推出了建議功能的全新體驗。 這是可讓您直接參與 Visual Studio 工程工作流程的新方式。
+除了 [Visual Studio Developer Community](https://developercommunity.visualstudio.com) (Visual Studio 開發人員社群) 目前回報問題的功能之外，我們也推出了建議功能的新體驗。 這是可讓您直接參與 Visual Studio 工程工作流程的新方式。
 
-在此之前，Visual Studio 使用者都是使用 User Voice 論壇來針對新功能提出想法。 開發人員社群中的 [建議功能] 體驗，可讓您從 User Voice 論壇轉換至能與 Visual Studio 產品小組直接互動，並可提出各種意見反應的單一平台。
+![開發人員社群上的 [Suggest a Feature] \(建議功能\) 按鈕](media/suggest-a-feature/suggest-feature-button.png)
 
-我們已從 User Voice 論壇先將數個想法移轉至開發人員社群。 我們選擇要移轉哪些想法的方式，是根據該意見反應對社群所產生的影響，以及我們的產品藍圖的優先順序。 如果您認為我們忽略了某個您期望看見的建議，歡迎您將它新增至開發人員社群。
+您也可以直接從 Visual Studio 開始建議功能，方法是從 Visual Studio 主視窗右上方附近的**提供意見反應**圖示選擇 [提供建議]：
 
-## <a name="votes"></a>投票
+![Visual Studio 中的 [提供建議] 功能表](media/suggest-a-feature/provide-suggestion.png)
 
-User Voice 與開發人員社群中的投票系統，在運作上有著顯著差異。 為了維持開發人員社群投票計數的完整性，並避免不公正的投票結果，我們會在每個功能建議旁邊以標記的形式清楚地顯示 User Voice 投票計數。 現在，如果您在改良後的開發人員社群中重複為某個建議投票，您的新投票計數將會有別於 User Voice 投票計數個別顯示。
+選擇 [提供建議] 會帶您前往 [Developer Community](https://developercommunity.visualstudio.com) (開發人員社群)，您可以在此輸入您的建議。
 
 ## <a name="user-voice"></a>User Voice
 
-User Voice 網站現在是唯讀狀態，可讓您回去查看所需的內容。 所有新的功能建議都應該提交到開發人員社群上。
+到目前為止，Visual Studio 使用者在 User Voice 上建議了新功能構想。 藉由新增「建議功能」功能給開發人員社群，您對於 Visual Studio 產品小組的所有意見反應現在全都在同一個地方。
+
+User Voice 網站已經成為唯讀狀態。 您可以在需要時回頭查看內容，但所有的新功能建議都應該在開發人員社群上提交。
+
+我們已從 User Voice 論壇將數個初步想法移轉至開發人員社群。 我們選擇要移轉哪些想法的方式，是根據該意見反應對社群所產生的影響，以及我們的產品藍圖的優先順序。 如果您認為我們忽略了某個您期望看見的建議，歡迎您將它新增至開發人員社群。
+
+## <a name="votes"></a>投票
+
+開發人員社群中的投票系統與 User Voice 不同。 為了維持開發人員社群投票計數的完整性，並避免不公正的投票結果，我們會在每個功能建議旁邊以標記的形式清楚地顯示 User Voice 投票計數。 現在，如果您在改良後的開發人員社群中重複為某個建議投票，您的新投票計數將會有別於 User Voice 投票計數個別顯示。
 
 ## <a name="suggestion-status"></a>建議狀態
 
-在您提交功能建議之後，其狀態會指出該功能提交目前處於其生命週期的哪一個階段。 隨著我們將您的意見反應納入考量並將它沿著工作流程移動，我們也會將它標計為相對應的狀態。
-
-下面會列出與功能建議相關的各種狀態，以及其意思和色彩指示的描述。
+在您提交功能建議之後，其狀態會指出該功能提交目前處於其生命週期的哪一個階段。 隨著我們將您的意見反應納入考量並將它沿著工作流程移動，我們也會將它標計為相對應的狀態。 這裡會列出與功能建議建立關聯的各種狀態，以及其意思和色彩指示器的描述。
 
 ![適用於開發人員社群上建議的 [New] \(新增\) 狀態](../ide/media/SuggestStates/New.jpg)
 
@@ -122,3 +128,7 @@ User Voice 與開發人員社群中的投票系統，在運作上有著顯著差
 我們非常樂於聆聽您的功能建議並採取行動，以為客戶提供寶貴的體驗。 我們會根據建議對廣大社群所產生的影響，來排定對其採取動作的優先順序。 即使我們無法為每一個建議作出個人回應，我們也會確定您的意見反應都一定會被送到正確小組的手中，並由他們進行仔細的評估。
 
 回應時間會取決於您的意見反應當時所處的狀態。 請檢閱本文件中的狀態說明以了解回應時間。
+
+## <a name="see-also"></a>另請參閱
+
+- [Introducing 'Suggest a Feature' in Developer Community (Visual Studio blog)](https://blogs.msdn.microsoft.com/visualstudio/2018/10/09/introducing-suggest-a-feature-in-developer-community/?utm_source=vs_developer_news&utm_medium=referral) (開發人員社群中的「建議功能」簡介 (Visual Studio 部落格))

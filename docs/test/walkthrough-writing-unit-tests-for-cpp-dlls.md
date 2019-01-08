@@ -1,5 +1,5 @@
 ---
-title: 如何：撰寫 C++ DLL 的單元測試
+title: HOW TO：撰寫 C++ DLL 的單元測試
 ms.date: 11/04/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -9,14 +9,14 @@ manager: douge
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 9458fd6886243102f6479166fb9df21f9e4869fd
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a596281d156882dffbef6e1c0993f2c91015e960
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49877253"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53740162"
 ---
-# <a name="how-to-write-unit-tests-for-c-dlls"></a>如何：撰寫 C++ DLL 的單元測試
+# <a name="how-to-write-unit-tests-for-c-dlls"></a>HOW TO：撰寫 C++ DLL 的單元測試
 
 本逐步解說描述如何使用測試先行方法來開發原生 C++ DLL。 基本步驟如下：
 
@@ -329,7 +329,7 @@ ms.locfileid: "49877253"
 
 ## <a name="see-also"></a>另請參閱
 
-- [將單元測試新增至現有的 C++ 應用程式](../test/unit-testing-existing-cpp-applications-with-test-explorer.md)
+- [將單元測試新增至現有的 C++ 應用程式](../test/how-to-use-microsoft-test-framework-for-cpp.md)
 - [使用 Microsoft.VisualStudio.TestTools.CppUnitTestFramework](how-to-use-microsoft-test-framework-for-cpp.md)
 - [對機器碼進行偵錯](../debugger/debugging-native-code.md)
 - [逐步解說：建立和使用動態連結程式庫 (C++)](/cpp/build/walkthrough-creating-and-using-a-dynamic-link-library-cpp)

@@ -3,18 +3,18 @@ title: Visual Studio 訂用帳戶中的 Visual Studio App Center 權益 | Micros
 author: evanwindom
 ms.author: jaunger
 manager: evelynp
-ms.date: 01/15/2018
+ms.date: 12/19/2018
 ms.topic: Get-Started-Article
 description: 了解 Visual Studio 訂用帳戶中所含的 Visual Studio App Center 權益。
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 112597455bbabe9f42cc2834bd06bf5c52d7cc9f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0a1a50888666f1597da008cec5a13c86a23a805e
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49940979"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53738634"
 ---
 # <a name="visual-studio-app-center-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶中的 Visual Studio App Center
 
@@ -44,21 +44,26 @@ App Center 是應用程式的任務控制機制。
 
 | 訂用帳戶層級                                                 |     通道                                            | 優勢                                                          | 可續約？    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (標準、年度雲端、每月雲端訂用帳戶)   | VL、Azure、零售、NFR<sup>1</sup> | 包含       |  是          |
-| Visual Studio Professional (標準、年度雲端、每月雲端訂用帳戶) | VL、Azure、零售                                       | 包含                                                            |是 |
-| Visual Studio Test Professional (標準訂用帳戶)                         | VL、零售                                              | 包含                                                            |是 |
-| MSDN 平台 (標準)                                          | VL、零售                                              | 包含                                                            |是 |
+| Visual Studio Enterprise (標準、每月雲端)   | VL, Azure, 零售, NFR<sup>1</sup> | 包含       |  是          |
+| Visual Studio Professional (標準、每月雲端) | VL, Azure, 零售                                       | 包含                                                            |是 |
+| Visual Studio Test Professional (標準訂用帳戶)                         | VL, 零售                                              | 包含                                                            |是 |
+| MSDN 平台 (標準)                                          | VL, 零售                                              | 包含                                                            |是 |
 | Visual Studio Dev Essentials | NA  | 包含                                                            |是 |
 
 
-<sup>1</sup>  *包含：「禁止轉售 (NFR)」、FTE、Visual Studio Industry Partner (VSIP)、Imagine、Microsoft 合作夥伴網路 (MPN)、MCT Software & Services、MCT Software & Services Developer、BizSpark、Microsoft Valued Professional (MVP)、Region Director (RD)。*
+<sup>1</sup>  *包含：禁止轉售 (NFR)、FTE、Visual Studio 產業夥伴 (VSIP)、Imagine、Microsoft 合作夥伴網路 (MPN)、MCT Software & Services、MCT Software & Services Developer、BizSpark、Microsoft Valued Professional (MVP)、Region Director (RD)。*
+
+
+> [!NOTE]
+> Microsoft 不再於雲端訂用帳戶中提供 Visual Studio Professional 年度訂用帳戶和 Visual Studio Enterprise 年度訂用帳戶。 現有的客戶體驗，以及更新、增加、減少或取消其訂用帳戶的能力將不會改變。 我們鼓勵新的客戶移至 [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) 來探索 Visual Studio 的不同購買選項。
+
 
 不確定您使用哪一個訂用帳戶？  連線到 [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) 以查看指派給您的電子郵件地址的所有訂用帳戶。 若沒有看到您的所有訂用帳戶，可能有一或多個訂用帳戶是指派到不同的電子郵件地址。  您必須以該電子郵件地址登入才能查看對應的訂用帳戶。
 
 ## <a name="frequently-asked-questions"></a>常見問題集
 
 ### <a name="q--i-get-an-error-that-my-browser-is-unsupported--whats-wrong"></a>問：我收到不支援瀏覽器的錯誤。  出了什麼問題？
-答：App Center 需要一些較舊瀏覽器不提供的較新功能。  若不支援您的瀏覽器，請依照這些步驟執行：
+A:App Center 需要一些較舊瀏覽器不提供的較新功能。  若不支援您的瀏覽器，請依照這些步驟執行：
 1.  開啟不同的瀏覽器，例如 Microsoft Edge 或最新版本的 Google Chrome 或 Firefox，或 Safari。
 2.  連線至 Visual Studio [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) 並登入。
 3.  現在按一下 Visual Studio App Center 圖格上的 [開始使用] 連結。

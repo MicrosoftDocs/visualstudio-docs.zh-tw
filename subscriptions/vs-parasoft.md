@@ -3,18 +3,18 @@ title: Parasoft Virtualize/SOAtest Professional Desktop 權益 | Microsoft Docs
 author: evanwindom
 ms.author: jaunger
 manager: evelynp
-ms.date: 10/03/2017
+ms.date: 12/19/2018
 ms.topic: Get-Started-Article
 description: 了解如何啟用 Visual Studio 訂用帳戶中所含的 Parasoft Virtualize/SOA Test Professional 訂用帳戶。
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: f9e9c617ba64ca0502e50619c107f000b4f6ad5c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: cb6b04358febf47d3f3332d4b8d10dd96b20ba6b
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49830181"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53739665"
 ---
 # <a name="parasoft-virtualizesoatest-professional-desktop-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶中的 Parasoft Virtualize/SOAtest Professional Desktop
 
@@ -76,15 +76,18 @@ ms.locfileid: "49830181"
 
 | 訂用帳戶層級                                                 |     通道                                            | 優勢                                                          | 可續約？    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (標準、年度雲端)   | VL、Azure、零售、選取的 NFR<sup>1</sup> | 6 個月       |  是       |
-| Visual Studio Professional (標準、年度雲端) | VL、Azure、零售                                       | 無法使用                                                           |NA         |
-| Visual Studio Test Professional (標準訂用帳戶)                         | VL、零售                                              | 無法使用                                                           |NA         |
-| MSDN 平台 (標準)                                          | VL、、零售                                              | 無法使用                                                           |NA         |
+| Visual Studio Enterprise (Standard)   | VL, Azure, 零售, 選取的 NFR<sup>1</sup> | 6 個月       |  是       |
+| Visual Studio Professional (Standard) | VL, Azure, 零售                                       | 無法使用                                                           |NA         |
+| Visual Studio Test Professional (標準訂用帳戶)                         | VL, 零售                                              | 無法使用                                                           |NA         |
+| MSDN 平台 (標準)                                          | VL, 零售                                              | 無法使用                                                           |NA         |
 | Visual Studio Dev Essentials | NA  | 無法使用|NA |
 | Visual Studio Enterprise、Visual Studio Professional (每月雲端) | Azure                                       | 無法使用                                                           |NA|
 
-<sup>1</sup>  *包含：Microsoft Partner Network (Enterprise)。排除：「禁止轉售 (NFR)」、Visual Studio Industry Partner (VSIP)、FTE、MCT Software & Services Developer、BizSpark、Imagine、Microsoft Valued Professional (MVP)、Region Director (RD)。MCT Software & Services。*
+<sup>1</sup>  *包含：Microsoft 合作夥伴網路 (Enterprise)。排除：禁止轉售 (NFR)、Visual Studio 產業夥伴 (VSIP)、FTE、MCT Software & Services Developer、BizSpark、Imagine、Microsoft Valued Professional (MVP)、Region Director (RD)。MCT Software & Services。*
 
+
+> [!NOTE]
+> Microsoft 不再於雲端訂用帳戶中提供 Visual Studio Professional 年度訂用帳戶和 Visual Studio Enterprise 年度訂用帳戶。 現有的客戶體驗，以及更新、增加、減少或取消其訂用帳戶的能力將不會改變。 我們鼓勵新的客戶移至 [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) 來探索 Visual Studio 的不同購買選項。
 
 
 ## <a name="support-resources"></a>支援資源

@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fc3ceb0caa8e5b8e135c2fad3bbab28c51773ae6
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: fdebcfcab1907c6e91b2d4926b86038c560d040e
+ms.sourcegitcommit: c7b16358a5d6f7ea1dd2f70a6ac2a8266efa9c15
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53159967"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "53425808"
 ---
 # <a id="top"> </a> Azure 上的 Visual Studio 映像
 
@@ -32,13 +32,13 @@ ms.locfileid: "53159967"
 
 ## <a name="what-configurations-and-versions-are-available"></a>哪些設定和版本可供使用？
 
-您可以在 Azure Marketplace 中找到最新主要版本 (Visual Studio 2017 和 Visual Studio 2015) 的映像。 針對每個主要版本，您都會看見原始發行 (RTW) 版本及最新更新的版本。 這些版本每個都會提供 Visual Studio Enterprise 和 Visual Studio Community 版本。 這些映像每個月至少都會更新一次，以包含最新的 Visual Studio 和 Windows 更新。 雖然映像名稱保持相同，但每個映像的描述都包含安裝的產品版本和映像的「起自」日期。
+您可以在 Azure Marketplace 中找到最新主要版本 (Visual Studio 2017 和 Visual Studio 2015) 的映像。  我們最近新增了即將推出的主要版本：Visual Studio 2019 預覽版支援。  針對每個已發行的主要版本，您都會看見原始發行 (RTW) 版本及最新更新的版本。  這些版本每個都會提供 Visual Studio Enterprise 和 Visual Studio Community 版本。  這些映像每個月至少都會更新一次，以包含最新的 Visual Studio 和 Windows 更新。  雖然映像名稱保持相同，但每個映像的描述都包含安裝的產品版本和映像的「起自」日期。
 
 | 發行版本                                              | 版本                     |     產品版本      |
 |:------------------------------------------------------------:|:----------------------------:|:------------------------:|
-|   Visual Studio 2019：Preview (Preview 1 )                   |           企業         | 16.0.0 版 Preview 1 |
-| Visual Studio 2017：最新版本 (版本 15.9)                    |    Enterprise、Community     |      15.9.0 版      |
-|         Visual Studio 2017：RTW                              |    Enterprise、Community     |      15.0.18 版     |
+|    Visual Studio 2019：Preview (Preview 1 )                   |           企業         | 16.0.0 版 Preview 1 |
+| Visual Studio 2017：最新版本 (版本 15.9)                    |    Enterprise、Community     |      15.9.4 版      |
+|         Visual Studio 2017：RTW                              |    Enterprise、Community     |      15.0.20 版     |
 |   Visual Studio 2015：最新版本 (Update 3)                      |    Enterprise、Community     |  14.0.25431.01 版   |
 |         Visual Studio 2015：RTW                              |             無             | (維護已過期)  |
 

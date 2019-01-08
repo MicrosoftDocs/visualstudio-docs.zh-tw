@@ -13,14 +13,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 31856366712da0a2287f73906c6e3a5f81f63a00
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 85ae5d93d5bb05aa8511b17a5b2d5b775dcc0aae
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49857584"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684661"
 ---
-# <a name="customize-your-build"></a>自訂組建
+# <a name="customize-your-build-c-visual-basic"></a>自訂組建 (C#、Visual Basic)
 
 使用標準建置程序 (匯入 Microsoft.Common.props 和 Microsoft.Common.targets) 的 MSBuild 專案有幾個擴充性攔截程序，可以用來自訂您的建置程序。
 

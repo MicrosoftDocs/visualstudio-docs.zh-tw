@@ -12,12 +12,12 @@ ms.service: multiple
 ms.technology: vs-ai-tools
 ms.workload:
 - azure
-ms.openlocfilehash: 6cf5c2529d54637e1e6ad4a111c3d3c456e6fae1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6fd6f8befce66a117f5f2dcb598a7359ba9c15c0
+ms.sourcegitcommit: 8cdc6e2ad2341f34bd6b02859a7c975daa0c9320
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49882388"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53307641"
 ---
 # <a name="train-ai-models-in-azure-batch-ai"></a>在 Azure Batch AI 中定型 AI 模型
 
@@ -50,11 +50,11 @@ Batch AI 是受管理的服務，可讓資料科學家和 AI 研究員定型 AI 
 
     ![範例庫](media/train-model/tensorflowexamples.png)
 
-7. 將 MNIST 專案設定為 **啟始專案 **
+7. 將 MNIST 專案設定為**啟始專案**
 
     ![範例庫](media/train-model/mnist-startup.png)
 
-8. <strong>以滑鼠右鍵按一下 **MNIST 專案、**[提交工作]</strong>
+8. <strong>以滑鼠右鍵按一下 [MNIST 專案]、[提交作業]</strong>
 
     ![範例庫](media/train-model/submit-job.png)
 9. 選取您的 **Azure Batch AI** 叢集，然後按一下 [匯入]。 選取 `AzureBatchAI_TF_MNIST.json` 檔案，以快速填入一些預設值，例如要使用哪一個 Docker 映像。 然後按一下 [提交]

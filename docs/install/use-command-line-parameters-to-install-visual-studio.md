@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ba270b4d7240d30db5b20388d6c75782dba6a256
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: e5b3a43862b840c323abd3d96ce0784f69b5db4b
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53159720"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561901"
 ---
 # <a name="use-command-line-parameters-to-install-visual-studio-2017"></a>使用命令列參數來安裝 Visual Studio 2017
 
@@ -56,7 +56,7 @@ ms.locfileid: "53159720"
 | `update` | 更新所安裝的產品。 |
 | `repair` | 修復所安裝的產品。 |
 | `uninstall` | 解除安裝所安裝的產品。 |
-| `export` | **15.9 中的新功能**：將安裝選取項目匯出至安裝組態檔。 |
+| `export` | **15.9 中的新功能**：將安裝選取項目匯出至安裝組態檔。 **注意**：僅能透過 vs_installer.exe 使用。 |
 
 | **安裝選項** | **描述** |
 | ----------------------- | --------------- |

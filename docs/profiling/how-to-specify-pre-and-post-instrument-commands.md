@@ -1,5 +1,5 @@
 ---
-title: 如何：指定檢測前置和檢測後續命令 | Microsoft Docs
+title: HOW TO：指定檢測前置和檢測後續命令 | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -16,36 +16,22 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d8ce82bea823307e02b719fbfae43fe0697aca65
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: 94c27fe4616ffcf541602cc8ab61bbaa26ddbb18
+ms.sourcegitcommit: 34840a954ed3446c789e80ee87da6cbf1203cbb5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34844634"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53592998"
 ---
-# <a name="how-to-specify-pre--and-post-instrument-commands"></a>如何：指定檢測前置和檢測後續命令
+# <a name="how-to-specify-pre--and-post-instrument-commands"></a>HOW TO：指定檢測前置和檢測後續命令
 
 您可以指定要在檢測效能工作階段中的二進位檔之前或之後執行的命令。 任何可從命令列發出的命令都可以指定為檢測前置或檢測後續事件。 例如，您可以在檢測二進位檔之後執行的批次檔中，指定使用強式名稱金鑰自動重新簽署組件的命令。
 
 您可以針對程式碼剖析執行中所有已檢測的二進位檔或針對個別二進位檔指定命令。 不過，您只能指定一個要在檢測程序之前執行的檢測前置命令，以及一個要在之後執行的檢測後續命令。 但無法同時針對所有二進位檔及個別二進位檔指定命令。 針對所有二進位檔指定命令時，會在檢測工作階段中的每個二進位檔之前或之後執行命令。
 
-執行命令的工作目錄取決於您執行 [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] 的作業系統以及已進行過程式碼剖析之應用程式的目標平台。
+執行命令的工作目錄取決於您執行 [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] 的作業系統以及已進行分析之應用程式的目標平台。
 
- **32 位元電腦**
-
-在 32 位元電腦上，預設的分析工具目錄是 <磁碟機>\Program Files\Microsoft Visual Studio 10.0\Team Tools\Performance Tools。
-
-**64 位元電腦**
-
-在 64 位元電腦上，則會根據已進行程式碼剖析之應用程式的目標平台指定路徑：
-
-- 若是 32 位元應用程式，預設程式碼剖析工具目錄是：
-
-     <磁碟機>\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Performance Tools
-
-- 若是 64 位元應用程式，預設程式碼剖析工具目錄是：
-
-     <磁碟機>\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Performance Tools\x64
+若要取得分析工具的路徑，請參閱[指定命令列工具的路徑](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)。
 
 ## <a name="to-specify-pre-instrument-commands"></a>指定檢測前置命令
 

@@ -9,16 +9,16 @@ manager: douge
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 7a4475cba023f792c2ff96895eb4dd7e0b4ebcf5
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: d14db3c10fb9e656596e89a43e75b765b67aa7c5
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53050209"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53804522"
 ---
 # <a name="how-to-use-ctest-for-c-in-visual-studio"></a>如何在 Visual Studio 中使用 C++ 的 CTest
 
-根據預設，CMake (包括 CTest) 已整合到 Visual Studio IDE 作為 [使用 C++ 的桌面開發] 工作負載的元件。 如果您需要將它安裝在您的電腦上，請開啟 Visual Studio 安裝程式，按一下 [修改] 按鈕，並在工作負載元件清單下查看 [Visual C++ CMake 工具](/cpp/ide/cmake-tools-for-visual-cpp)。
+根據預設，CMake (包括 CTest) 已整合到 Visual Studio IDE 中，作為 **「使用 C++ 的桌面開發」** 工作負載的元件。 如果您需要將它安裝在您的電腦上，請開啟 Visual Studio 安裝程式，按一下 [修改] 按鈕，並在工作負載元件清單下查看 [Visual C++ CMake 工具](/cpp/ide/cmake-tools-for-visual-cpp)。
 
 ## <a name="to-write-tests"></a>撰寫測試
 
@@ -26,7 +26,7 @@ Visual Studio 中的 CMake 支援不包括 Visual Studio 專案系統。 因此�
 
 ## <a name="to-run-tests-visual-studio-2017-version-156"></a>執行測試 (Visual Studio 2017 15.6 版)
 
-在 Visual Studio 2017 15.6 版中，CTest 已與 [測試總管] 完全整合，並同時支援 Google 和 Boost 單元測試架構。 根據預設，那些架構會以元件的形式包含在 [使用 C++ 的桌面開發] 工作負載中。 不過，如果您是從舊版的 Visual Studio 升級專案，則可能需要使用 Visual Studio 安裝程式來安裝這些架構。
+在 Visual Studio 2017 15.6 版中，CTest 已與 [測試總管] 完全整合，並同時支援 Google 和 Boost 單元測試架構。 根據預設，那些架構會以元件的形式包含在 **「使用 C++ 的桌面開發」** 工作負載中。 不過，如果您是從舊版的 Visual Studio 升級專案，則可能需要使用 Visual Studio 安裝程式來安裝這些架構。
 
 下圖顯示使用 Google 測試架構的 CTest 執行結果：
 

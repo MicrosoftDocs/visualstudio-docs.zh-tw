@@ -13,12 +13,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 37ce2fc60ac2a57baddf62e68a900349ed072f4d
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: cdb7148560dfca966b82d8d9cef617075752a58b
+ms.sourcegitcommit: 8cdc6e2ad2341f34bd6b02859a7c975daa0c9320
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53160084"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53307698"
 ---
 # <a name="install-build-tools-into-a-container"></a>將 Build Tools 安裝至容器
 
@@ -118,7 +118,7 @@ Visual Studio Build Tools (及更大範圍的 Visual Studio) 需要許多磁碟�
 
 將下列範例 Dockerfile 儲存至磁碟上的新檔案。 如果檔案直接以 "Dockerfile" 命名，預設會辨識此名稱。
 
-> [!NOTE]
+> [!WARNING]
 > 此範例 Dockerfile 只會排除無法安裝至容器的舊版 Windows SDK。 較舊版本會造成建置命令失敗。
 
 1. 開啟命令提示字元。
@@ -165,8 +165,12 @@ Visual Studio Build Tools (及更大範圍的 Visual Studio) 需要許多磁碟�
    CMD ["powershell.exe", "-NoLogo", "-ExecutionPolicy", "Bypass"]
    ```
 
-   > [!NOTE]
-   > 如果您讓映像直接以 microsoft/windowsservercore 為基礎，.NET Framework 可能無法正確安裝，且不會指出任何安裝錯誤。 安裝完成之後，可能無法執行受控碼。 相反地，讓您的映像以 [microsoft/dotnet-framework:4.7.1](https://hub.docker.com/r/microsoft/dotnet-framework) 或更新版本為基礎。 另請注意，較新的映像可能會使用 PowerShell 作為預設 `SHELL`，導致 `RUN` 和 `ENTRYPOINT` 指令失敗。
+   > [!WARNING]
+   > 如果您讓映像直接以 microsoft/windowsservercore 為基礎，.NET Framework 可能無法正確安裝，且不會指出任何安裝錯誤。 安裝完成之後，可能無法執行受控碼。 相反地，讓您的映像以 [microsoft/dotnet-framework:4.7.1](https://hub.docker.com/r/microsoft/dotnet-framework) 或更新版本為基礎。 另請注意，標記為 4.7.1 版的映像可能會使用 PowerShell 作為預設 `SHELL`，導致 `RUN` 和 `ENTRYPOINT` 指令失敗。
+   >
+   > Visual Studio 2017 15.8 或更早版本 (任何產品) 無法在 mcr<span></span>.microsoft\.com\/windows\/servercore:1809 (或更新版本) 上正確安裝。 不會顯示錯誤。
+   >
+   > 請參閱[容器的已知問題](build-tools-container-issues.md)以取得詳細資訊。
 
 4. 從該目錄內執行下列命令。
 

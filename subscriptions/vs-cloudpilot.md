@@ -3,22 +3,22 @@ title: Visual Studio 訂用帳戶的 CloudPilot 權益 | Microsoft Docs
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 12/04/2018
+ms.date: 12/19/2018
 ms.topic: conceptual
 description: 了解所選 Visual Studio 訂用帳戶中所含的 CloudPilot 權益
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 4b7f7730eef2372ecdb19cbb8d87548705a96042
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: a5e3f4b3026afd528f8eeec42de157265b18013a
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52897020"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53740032"
 ---
 # <a name="the-cloudpilot-benefit-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶的 CloudPilot 權益
 
-將您的應用程式移至 Microsoft Azure 只需幾個簡單的步驟。 在幾分鐘內即可找出需進行程式碼變更 (細至程式碼行)，以成功遷移至：容器、VM、App Services、SQL Azure 和 (或) SQL MI。 然後，透過使用 ASR、DMA 和 DMS 的精靈，將應用程式遷移至 Azure。 
+將您的應用程式移至 Microsoft Azure 只需幾個簡單的步驟。 在幾分鐘內即可找出需進行程式碼變更 (細至程式碼行)，以成功移轉至：容器、VM、App Services、SQL Azure 及/或 SQL MI。 然後，透過使用 ASR、DMA 和 DMS 的精靈，將應用程式遷移至 Azure。 
 
 由 UnifyCloud 開發的 CloudPilot，旨在協助開發人員快速且輕鬆地將應用程式移至 Azure。  只需花費手動評估時間的一小部分，CloudPilot 即可以準確判斷 Azure PaaS 和 IaaS 的移轉成本，並提供細至程式碼行、在雲端中執行應用程式需要進行哪些程式碼變更的詳細建議。 藉由針對雲端提供詳細的程式碼層級變更，以及針對企業技術控制和原則的最終測試，CloudPilot 可協助於初始評估雲端遷移工作和重新建構程序中的開發計劃。
 
@@ -63,8 +63,8 @@ ms.locfileid: "52897020"
 
 | 訂用帳戶層級                                                 |     通道                                            | 優勢                                                          | 可續約？    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (標準、年度雲端)   | VL, Azure, 零售, | 2 個授權、90 天、無限次數掃描       |  否。  僅提供給新訂閱者使用          |
-| Visual Studio Professional (標準、年度雲端) | VL, Azure, 零售                                       | 1 個授權、30 天、一次掃描                                                            |  否。  僅提供給新訂閱者使用           |
+| Visual Studio Enterprise (Standard)   | VL, Azure, 零售, | 2 個授權、90 天、無限次數掃描       |  否。  僅提供給新訂閱者使用          |
+| Visual Studio Professional (Standard) | VL, Azure, 零售                                       | 1 個授權、30 天、一次掃描                                                            |  否。  僅提供給新訂閱者使用           |
 | Visual Studio Test Professional (標準訂用帳戶)                         | VL, 零售                                              | 無法使用                                             |  N/A           |
 | MSDN 平台 (標準)                                          | VL, 零售                                              | 無法使用                                              |  N/A          |
 | Visual Studio Dev Essentials | N/A  | 無法使用 | N/A |
@@ -73,8 +73,11 @@ ms.locfileid: "52897020"
 
 
 
-<sup>1</sup>  *包含：「禁止轉售 (NFR)」、FTE、Microsoft Valued Professional (MVP)、Region Director (RD)、Microsoft 合作夥伴網路 (MPN)、Visual Studio Industry Partner (VSIP)、Microsoft Certified Trainer、BizSpark、Imagine*
+<sup>1</sup>  *包含：禁止轉售 (NFR)、FTE、Microsoft Valued Professional (MVP)、Region Director (RD)、Microsoft 合作夥伴網路 (MPN)、Visual Studio 產業夥伴 (VSIP)、Microsoft Certified Trainer、BizSpark、Imagine*
 
+
+> [!NOTE]
+> Microsoft 不再於雲端訂用帳戶中提供 Visual Studio Professional 年度訂用帳戶和 Visual Studio Enterprise 年度訂用帳戶。 現有的客戶體驗，以及更新、增加、減少或取消其訂用帳戶的能力將不會改變。 我們鼓勵新的客戶移至 [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) 來探索 Visual Studio 的不同購買選項。
 
 
 不確定您使用哪一個訂用帳戶？  連線到 [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) 以查看指派給您的電子郵件地址的所有訂用帳戶。 若沒有看到您的所有訂用帳戶，可能有一或多個訂用帳戶是指派到不同的電子郵件地址。  您必須以該電子郵件地址登入才能查看對應的訂用帳戶。

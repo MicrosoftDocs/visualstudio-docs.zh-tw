@@ -10,12 +10,12 @@ ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 832d581a4147b8b050da16b1a1f72d8a3909fc35
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: 29634d63cf8e898203ff4d72a23296bdb14019e0
+ms.sourcegitcommit: 75e02ed88a1ace6e8265fd4e3a82a1bc78f3adca
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36235240"
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "53348488"
 ---
 # <a name="frequently-asked-questions"></a>常見問題集
 
@@ -81,7 +81,7 @@ ms.locfileid: "36235240"
 
 **問：針對 RTVS 專案所建議的 *.gitignore* 設定為何？**
 
-答： GitHub 會維護建議之 *.gitignore* 檔案的主要存放庫。 您可以在此查看它：[R .gitignore (英文)](https://github.com/github/gitignore/blob/master/R.gitignore)
+答： GitHub 會維護建議之 *.gitignore* 檔案的主要存放庫。 您可以在此查看它：[R .gitignore](https://github.com/github/gitignore/blob/master/R.gitignore)
 
 ## <a name="remote-services"></a>遠端服務
 

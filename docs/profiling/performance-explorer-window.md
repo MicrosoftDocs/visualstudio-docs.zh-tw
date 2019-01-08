@@ -14,16 +14,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f27d1436aaeb0ec75876edf9119dff93f7539483
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: d6077b17aa89754b3334bd6906a47e422bbd28ab
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31582107"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684301"
 ---
 # <a name="performance-explorer-window"></a>效能總管視窗
 
-Visual Studio IDE 中的 [效能總管] 視窗可讓您使用 Visual Studio 分析工具來設定和啟動效能工作階段。
+Visual Studio IDE 中的 [效能總管] 視窗可讓您使用 Visual Studio 分析工具來設定和啟動效能工作階段。 如果您需要開啟視窗，請遵循[效能分析的初級開發人員指南](../profiling/beginners-guide-to-cpu-sampling.md)中的指示。
 
 ## <a name="performance-explorer-toolbar"></a>效能總管工具列
 

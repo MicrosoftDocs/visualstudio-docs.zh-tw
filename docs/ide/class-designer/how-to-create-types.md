@@ -1,5 +1,5 @@
 ---
-title: 如何：使用類別設計工具建立類型
+title: HOW TO：使用 [類別設計工具] 建立類型
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -19,14 +19,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 769bcfa202961c5a492e4fcb5af8e522b9052059
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f1d7ba3fff5bc075f7113ad2a1f2a14e6fa6b91a
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49842257"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53685688"
 ---
-# <a name="how-to-create-types-by-using-class-designer"></a>如何：使用類別設計工具建立類型
+# <a name="how-to-create-types-by-using-class-designer"></a>HOW TO：使用 [類別設計工具] 建立類型
 
 若要為 C# 和 Visual Basic 專案設計新的類型，請在類別圖上建立這些類型。 若要查看現有的類型，請參閱[如何：檢視現有類型](how-to-view-existing-types.md)。
 
@@ -94,5 +94,4 @@ ms.locfileid: "49842257"
 - [如何：建立類型之間的繼承](how-to-create-inheritance-between-types.md)
 - [如何：建立類型之間的關聯](how-to-create-associations-between-types.md)
 - [建立及設定類型成員](creating-and-configuring-type-members.md)
-- [使用類別圖表](working-with-class-diagrams.md)
 - [設計類別和類型](designing-and-viewing-classes-and-types.md)

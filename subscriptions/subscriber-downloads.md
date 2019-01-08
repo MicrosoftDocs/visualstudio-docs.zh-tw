@@ -9,12 +9,12 @@ description: 了解如何尋找及下載隨附於 Visual Studio 訂用帳戶的 
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: ec2dd900e0cfae3b150bba52e31834efb53628e6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f8bfc394c2c40ee18df8a741f5101105cc2e189e
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49831428"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53803210"
 ---
 # <a name="using-subscriber-downloads-in-visual-studio-subscriptions"></a>使用 Visual Studio 訂用帳戶的訂閱者下載
 您可以存取各種下載軟體，這是訂閱者權益的一部分。
@@ -30,7 +30,7 @@ ms.locfileid: "49831428"
 - **此產品可公開取得。** 某些工具、SDK、DDK 與 Service Pack 則可從 [Microsoft 下載中心](https://www.microsoft.com/download)公開取得。 這類產品可能就不會發佈至下載。
 - **產品尚未發行。**  許多發行前 (搶鮮版 (Beta)) 版本與候選版可從下載取得。 然而，並不是所有搶鮮版 (Beta) 皆會包含其中，例如某些搶鮮版 (Beta) 需要特殊的註冊或資格。 如需公開技術搶鮮版 (Beta) 計畫的詳細資訊，請瀏覽 [Microsoft Connect](http://connect.microsoft.com/)。
 - **您的國家/地區不提供此產品。** 有些 Microsoft 產品會因為區域限制而無法取得。
-- **重複的軟體。** 包含 Office 的訂用帳戶中不再提供選定的 Office 套件和獨立的 Office 下載及產品金鑰。 提供對應的同版最高 Office 套件的下載和產品金鑰。  例如，如果您搜尋 Powerpoint 2010，搜尋不會產生任何結果。  不過，您可以搜尋 Office 2010 (包含 Powerpoint 2010 的 Office 套件)，並下載套件。
+- **重複的軟體。** 包含 Office 的訂用帳戶中不再提供選定的 Office 套件和獨立的 Office 下載及產品金鑰。 提供對應的同版最高 Office 套件的下載和產品金鑰。  例如，如果您搜尋 PowerPoint 2010，則搜尋不會產生任何結果。  不過，您可以搜尋 Office 2010 (包含 PowerPoint 2010 的 Office 套件)，並下載套件。
 
 ## <a name="what-do-i-get"></a>該怎麼做？
 下載的數量及類型取決於您的訂用帳戶層級和方案成員資格。  例如，使用 Visual Studio Enterprise 標準訂用帳戶的訂閱者，和透過 Microsoft 合作夥伴網路或 BizSpark 方案訂用帳戶的訂閱者，兩者能取得的下載不同。  若要深入了解各訂用帳戶層級有哪些下載可用，請下載[依權益層級排序的產品](https://download.microsoft.com/download/1/5/4/15454442-CF17-47B9-A65D-DF84EF88511B/Products_by_Benefit_Level.xlsx)清單。

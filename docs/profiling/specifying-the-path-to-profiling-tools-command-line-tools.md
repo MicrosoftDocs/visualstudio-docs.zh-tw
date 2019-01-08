@@ -10,26 +10,28 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1afb0b00a7e121c611dedbc235684a67cc9cec53
-ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
+ms.openlocfilehash: 7ef2434cdea3183fc55ad72fafb36175a726c58e
+ms.sourcegitcommit: 34840a954ed3446c789e80ee87da6cbf1203cbb5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34814491"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53592894"
 ---
 # <a name="specify-the-path-to-profiling-tools-command-line-tools"></a>指定分析工具命令列工具的路徑
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 程式碼分析工具命令列工具的路徑不會加入 PATH 環境變數中。 在 32 位元電腦上，這些工具會在一個目錄中。 在 64 位元電腦上，程式碼分析工具有 32 位元和 64 位元兩種版本。  
   
 ## <a name="32-bit-computers"></a>32 位元電腦  
- 在 32 位元電腦上，預設的分析工具目錄是 *drive\Program Files\Microsoft Visual Studio 11.0\Team Tools\Performance Tools*。  
+ 針對機器碼，Visual Studio 分析工具 API 位在 *VSPerf.dll* 中。 標頭檔 (*VSPerf.h*) 和匯入程式庫 (*VSPerf.lib*) 位在 *Microsoft Visual Studio\2017\Team Tools\Performance Tools\PerfSDK* 目錄中。
+  
+ 針對受控碼，分析工具 API 位在 *Microsoft.VisualStudio.Profiler.dll* 中。 這個 DLL 位於 *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools* 目錄。
   
 ## <a name="64-bit-computers"></a>64 位元電腦  
  在 64 位元電腦上，則會根據已進行程式碼剖析之應用程式的目標平台指定路徑。  
   
 -   若是 32 位元應用程式，預設程式碼剖析工具目錄是：  
   
-     *drive\Program Files (x86)\Microsoft Visual Studio 11.0\Team Tools\Performance Tools*  
+     (原生) *Microsoft Visual Studio\2017\Team Tools\Performance Tools\PerfSDK* (受控) *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools*  
   
 -   若是 64 位元應用程式，預設程式碼剖析工具目錄是：  
   
-     *drive\Program Files (x86)\Microsoft Visual Studio 11.0\Team Tools\Performance Tools\x64*
+     (原生) *Microsoft Visual Studio\2017\Team Tools\Performance Tools\x64\PerfSDK* (受控) *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools\x64*

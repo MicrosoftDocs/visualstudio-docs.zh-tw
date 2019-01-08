@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b3d4d6a352d2ff1b71796d64c34992af493867a
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 65cf3b0d716251b41f144f523f12e1284357ed3a
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53063259"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647828"
 ---
 # <a name="analyze-cpu-usage"></a>分析 CPU 使用量 
 
@@ -84,7 +84,7 @@ ms.locfileid: "53063259"
 
  您程式碼所執行的系統和架構函式稱為「外部程式碼」。 外部程式碼函式會啟動和停止應用程式、繪製 UI、控制執行緒，以及將其他低階服務提供給應用程式。 在大多數情況下，您對外部程式碼並不感興趣，因此 [CPU 使用量] 呼叫樹狀結構會將使用者方法的外部函式，收集成一個 [外部程式碼] 節點。  
   
- 若要檢視外部程式碼的呼叫路徑，在主要診斷報表頁面上，從 [篩選條件] 下拉式清單中選取 [顯示外部程式碼]，然後選取 [套用]。 [CPU 使用量] 頁面的 [呼叫樹狀結構] 檢視會展開外部程式碼呼叫。  
+ 若要檢視外部程式碼的呼叫路徑，在主要診斷報表頁面上 (右窗格)，從 [篩選條件] 下拉式清單中選取 [顯示外部程式碼]，然後選取 [套用]。 [CPU 使用量] 頁面的 [呼叫樹狀結構] 檢視會展開外部程式碼呼叫。 ([篩選條件] 下拉式清單提供於主要診斷頁面而非詳細檢視上。)
   
  ![顯示外部程式碼](../profiling/media/cpu_use_wt_filterview.png "顯示外部程式碼")  
   
