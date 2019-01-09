@@ -2,7 +2,6 @@
 title: 參數資訊、列出成員和快速諮詢
 ms.date: 05/25/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - vc.tools.intellisense
@@ -17,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e28c3a09197fd3fe0b45d40a3402f484ab867d7
-ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
+ms.openlocfilehash: 2adb067377ac417073785df63d68e51040752218
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53684897"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53953072"
 ---
 # <a name="intellisense-in-visual-studio"></a>Visual Studio 中的 Intellisense
 

@@ -3,19 +3,18 @@ title: Visual Studio 2017 的進階功能
 titleSuffix: ''
 ms.date: 06/01/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bd351ef1bf6b1e5eee16451e554d6cae94c60127
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: 739426d5d93628c90638fef32526484f27eef3e8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53159395"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53828494"
 ---
 # <a name="features-of-visual-studio-2017"></a>Visual Studio 2017 的功能
 

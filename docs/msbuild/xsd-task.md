@@ -1,8 +1,6 @@
 ---
 title: XSD 工作 | Microsoft Docs
-ms.custom: ''
 ms.date: 06/27/2018
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - vc.task.xsd
@@ -22,18 +20,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3eb81e05a16eb504b14e94de2c1270057311b85a
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 44113f00f56ca471b0d8a922fc68b0003645b329
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39231593"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53991015"
 ---
 # <a name="xsd-task"></a>XSD 工作
-包裝 XML 結構描述定義工具 (*xsd.exe*)，其會從來源產生結構描述或類別檔案。  
+包裝 XML 結構描述定義工具 (*xsd.exe*)，它會從來源產生結構描述或類別檔案。  
 
 > [!NOTE]
-> 在 Visual Studio 2017 中，即將淘汰 *xsd.exe* 的 C++ 專案支援。 您仍然可以將 *CppCodeProvider.dll* 手動新增至 GAC 來使用**Microsoft.VisualC.CppCodeProvider** API。 
+> 在 Visual Studio 2017 中，*xsd.exe* 的 C++ 專案支援已過時。 您仍然可以將 *CppCodeProvider.dll* 手動新增至 GAC 來使用**Microsoft.VisualC.CppCodeProvider** API。 
   
 ## <a name="parameters"></a>參數  
  下表說明 **XSD** 工作的參數。  

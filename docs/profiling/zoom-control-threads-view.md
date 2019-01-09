@@ -1,8 +1,6 @@
 ---
 title: 縮放控制 (執行緒檢視) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.cv.threads.tools.zoom
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 85297c32274eb3b6573f536be15d621a60b95921
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 87959310b0c34a801ade0ae5ffdb00c75ff9dcc1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34447878"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53938130"
 ---
 # <a name="zoom-control-threads-view"></a>縮放控制 (執行緒檢視)
 縮放控制是可以放大和縮小時間軸的滑桿，讓您能專注在特別感興趣的區域。 此控制項會從時間軸檢視的中央放大，因此請先將感興趣的區域置中再放大。  

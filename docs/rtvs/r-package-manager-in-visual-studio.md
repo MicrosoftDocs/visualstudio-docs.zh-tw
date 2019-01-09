@@ -3,19 +3,18 @@ title: R 的套件管理員
 description: 如何在 Visual Studio 中使用 R 套件管理員來安裝和管理 R 套件。
 ms.date: 01/24/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-rtvs
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 4063787711ae825cd587f72d735710444906d99b
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 495ee638e954c2f99f0ac3273edf67dc48991451
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35666510"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53846648"
 ---
 # <a name="package-manager"></a>套件管理員
 

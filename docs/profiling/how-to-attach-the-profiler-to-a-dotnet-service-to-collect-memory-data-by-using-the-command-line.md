@@ -2,7 +2,6 @@
 title: 將分析工具附加至 .NET 服務以收集記憶體資料
 ms.custom: seodec18
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: aeac39af-ad99-479f-aa36-4104356ca512
 author: mikejo5000
@@ -10,12 +9,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: d2ee1889fabe5a6c9d003688f3090836fb68a1c0
-ms.sourcegitcommit: 34840a954ed3446c789e80ee87da6cbf1203cbb5
+ms.openlocfilehash: e8a70bca0d7a98ad897a8cd0bf0fc980f1d8032a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53592676"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53821332"
 ---
 # <a name="how-to-attach-the-profiler-to-a-net-service-to-collect-memory-data-by-using-the-command-line"></a>HOW TO：使用命令列將分析工具附加至 .NET 服務以收集記憶體資料
 本文描述如何使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具命令列工具將分析工具附加至 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 服務，並收集記憶體資料。 您可以收集記憶體配置數目和大小的相關資料，也可以收集記憶體物件存留期的相關資料。  

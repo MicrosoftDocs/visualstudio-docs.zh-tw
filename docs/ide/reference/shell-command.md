@@ -2,7 +2,6 @@
 title: Shell 命令
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - tools.shell
@@ -20,12 +19,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 04ec2719b57f387633a7244d7089be963d3ba87c
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: c62eb3f5fa27a11779cbb2aabf2067a35c0fe5e3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704099"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53821603"
 ---
 # <a name="shell-command"></a>Shell 命令
 在 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 內啟動可執行程式。
@@ -39,7 +38,7 @@ Tools.Shell [/command] [/output] [/dir:folder] path [args]
 ## <a name="arguments"></a>引數
  `path`
 
- 必要。 要執行之檔案或要開啟之文件的路徑和檔案名稱。 如果指定的檔案不在 PATH 環境變數的其中一個目錄中，則需要完整路徑。
+ 必要項。 要執行之檔案或要開啟之文件的路徑和檔案名稱。 如果指定的檔案不在 PATH 環境變數的其中一個目錄中，則需要完整路徑。
 
  `args`
 
@@ -94,4 +93,4 @@ Tools.Shell """C:\Program Files\SomeFile.exe"""
 - [命令視窗](../../ide/reference/command-window.md)
 - [輸出視窗](../../ide/reference/output-window.md)
 - [尋找/命令方塊](../../ide/find-command-box.md)
-- [Visual Studio 命令別名](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)

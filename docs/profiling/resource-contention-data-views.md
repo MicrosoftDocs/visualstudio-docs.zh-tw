@@ -1,8 +1,6 @@
 ---
 title: 資源爭用資料檢視 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - profilng tools,concurrency profiling method view
@@ -13,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 320ccc34840cb56646a52f82dc2eb8985fdb5da6
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: ea7cbe0ff412e7955a4a255018e335e1ae6336da
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31581028"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53990603"
 ---
 # <a name="resource-contention-data-views"></a>資源爭用資料檢視
 本節包含程式碼剖析工具資料檔案的檢視與報告，而此檔案含有執行緒爭用分析資料。  

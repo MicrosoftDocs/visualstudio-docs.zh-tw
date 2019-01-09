@@ -1,8 +1,6 @@
 ---
 title: HOW TO：安裝獨立分析工具 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - performance tools, installing stand-alone profiler
@@ -13,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b0f8f4204a48a9846a6193c6b8b60c3ef321816e
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: 2f5068ff6b167e9cfda14799f799a397a322ff3a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53648664"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53987112"
 ---
 # <a name="how-to-install-the-stand-alone-profiler"></a>HOW TO：安裝獨立分析工具
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 提供命令列型獨立分析工具，不用安裝 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE 即可執行。 當電腦未安裝或無法安裝開發環境時，就會發生這種情況。 例如，您不應該在生產環境的網頁伺服器上安裝開發環境。  
@@ -56,6 +54,6 @@ ms.locfileid: "53648664"
 ## <a name="see-also"></a>另請參閱  
  [從命令列進行分析](../profiling/using-the-profiling-tools-from-the-command-line.md)   
  [逐步解說：使用取樣進行命令列分析](../profiling/walkthrough-command-line-profiling-using-sampling.md)   
- [逐步解說：使用檢測進行命令列分析](../profiling/walkthrough-command-line-profiling-using-instrumentation.md)   
+ [逐步解說：使用檢測進行命令列分析](/visualstudio/profiling/command-line-profiling-of-stand-alone-applications)   
  [如何：參考 Windows 符號資訊](../profiling/how-to-reference-windows-symbol-information.md)   
  [VSPerfReport](../profiling/vsperfreport.md)

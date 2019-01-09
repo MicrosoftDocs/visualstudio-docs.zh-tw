@@ -1,8 +1,6 @@
 ---
 title: ResolveNonMSBuildProjectOutput 工作 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 dev_langs:
 - VB
@@ -18,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 404aca8b6c400cd3001f663cda593b30db8e6e2c
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 5ca7fe0b9ed987896749319e3c14f2a926450782
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39153572"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53990918"
 ---
 # <a name="resolvenonmsbuildprojectoutput-task"></a>ResolveNonMSBuildProjectOutput 工作
 決定非 MSBuild 專案參考的輸出檔。  
@@ -31,7 +29,7 @@ ms.locfileid: "39153572"
 ## <a name="parameters"></a>參數  
  下表說明 `ResolveNonMSBuildProjectOutput` 工作的參數。  
   
-|參數|描述|  
+|參數|說明|  
 |---------------|-----------------|  
 |`PreresolvedProjectOutputs`|選擇性的 `String` 參數。<br /><br /> 指定 XML 字串，其中包含已解析的專案輸出。|  
 |`ProjectReferences`|必要的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 指定專案參考。|  
