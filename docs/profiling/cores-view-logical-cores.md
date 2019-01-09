@@ -1,8 +1,6 @@
 ---
 title: 核心檢視邏輯核心 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.cv.cores.timeline.logicalcores
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cb50f0a1a16a8b6a72862a3441cf1e72697042ec
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: e2409f7be9913f74d71e0d4d2c63dac947ac0b6a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34690763"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53876467"
 ---
 # <a name="cores-view-logical-cores"></a>核心檢視邏輯核心
 每個通道名稱都代表存在於已分析系統的其中一個邏輯核心。 命名計數會從 0 到邏輯核心總數。 例如，四核心系統將從邏輯核心 0 計算到邏輯核心 3。  

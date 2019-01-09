@@ -10,13 +10,12 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: eacdcf65619909c052f786a8b22b61b4d48292d9
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: c3eaf93b6e39d773884ecfde97e18daef2bedbe0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53064494"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53893535"
 ---
 # <a name="how-to-use-the-web-performance-test-api"></a>HOW TO：使用 Web 效能測試 API
 

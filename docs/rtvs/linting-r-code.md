@@ -3,7 +3,6 @@ title: 對 R 程式碼進行 Lint 檢查
 description: 如何使用 Visual Studio 的內建 R Linting 支援 (包括 Linter 選項)。
 ms.date: 07/02/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-rtvs
 ms.topic: conceptual
 f1_keywords:
 - vs.toolsoptionspages.text_editor.r.lint
@@ -12,12 +11,12 @@ ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 4eaeb0165c049b035555fa63130746baa5fa208f
-ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
+ms.openlocfilehash: 7cbbf0e727269baa0a9e199574afcfee1d8ee687
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38978293"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53886674"
 ---
 # <a name="lint-r-code-in-visual-studio"></a>在 Visual Studio 中對 R 程式碼進行 Lint 處理
 

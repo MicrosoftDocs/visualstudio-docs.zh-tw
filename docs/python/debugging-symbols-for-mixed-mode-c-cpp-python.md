@@ -3,7 +3,6 @@ title: Python/C++ 混和模式符號偵錯
 description: Visual Studio 如何針對完全混合模式的 C++ 和 Python 偵錯提供載入符號的功能。
 ms.date: 11/12/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -11,12 +10,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 62e3727b36e6ba3231ee12388e1be5bde40d080a
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 909b3ab71a4e204372c291ec6ca5421b500a056a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53062686"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53885964"
 ---
 # <a name="install-debugging-symbols-for-python-interpreters"></a>安裝 Python 解譯器的偵錯符號
 

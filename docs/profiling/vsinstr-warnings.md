@@ -1,8 +1,6 @@
 ---
 title: VSInstr 警告 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - instrumentation, VSInstr tool
@@ -16,17 +14,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a306276e015d06fe3becf297d0bb5834f640a1a7
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 716cf80a9b93f5a018c31af0d36d3212a858f3b2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34571642"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53888591"
 ---
 # <a name="vsinstr-warnings"></a>VSInstr 警告
 下表列出 *VSInstr.exe* 工具所發出的警告。 若要隱藏警告訊息使其不出現，您可以使用 NOWARN 選項以及警告編號。  
   
-|警告編號|描述|  
+|警告編號|說明|  
 |--------------------|-----------------|  
 |**VSP2000**|內部錯誤。 無法取得這個可執行檔的模組檔案名稱。|  
 |**VSP2001**|\<組件名稱> 是具備強式名稱的組件。 必須重新簽署後才能執行。<br /><br /> 檢測簽署的組件之後，就會發生這個警告。 您可以使用 *sn.exe* 工具來重新簽署二進位檔，或暫時關閉強式名稱需求。 如需詳細資訊，請參閱 [Sn.exe (強式名稱工具)](/dotnet/framework/tools/sn-exe-strong-name-tool)。|  

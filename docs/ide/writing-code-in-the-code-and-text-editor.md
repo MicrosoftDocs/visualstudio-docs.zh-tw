@@ -2,7 +2,6 @@
 title: 程式碼編輯器功能
 ms.date: 02/23/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - code, editing [Visual Studio]
@@ -12,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 127e858b913f49810eae166681b313622e6840ea
-ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
+ms.openlocfilehash: 2e92749c7e18913685fdedac3a9404ace0705ac3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53684874"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53891744"
 ---
 # <a name="features-of-the-code-editor"></a>程式碼編輯器的功能
 

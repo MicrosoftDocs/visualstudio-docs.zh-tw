@@ -2,21 +2,20 @@
 title: 捲軸地圖模式和捲軸模式
 ms.date: 09/25/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f60d7f573ed275ff4d827e0a4209f21444ee64c
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: c5fc435f2fe350c177cbff0e526d2f0221a93b89
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219948"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53965067"
 ---
-# <a name="how-to-customize-the-scroll-bar"></a>如何：自訂捲軸
+# <a name="how-to-customize-the-scroll-bar"></a>HOW TO：自訂捲軸
 
 當您遇到長的程式碼檔案時，可能很難追蹤所有項目在檔案中的位置。 您可以自訂程式碼編輯器的捲軸，以獲得程式碼目前狀況的概觀。
 

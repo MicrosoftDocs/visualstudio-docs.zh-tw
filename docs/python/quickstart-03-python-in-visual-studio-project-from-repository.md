@@ -3,7 +3,6 @@ title: 快速入門 - 複製 Python 程式碼存放庫
 description: 在此快速入門中，您可以使用 Visual Studio Team Explorer 複製 Python Koans 存放庫，以在 Visual Studio 中建立 Python 專案。
 ms.date: 12/06/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-python
 ms.topic: quickstart
 author: kraigb
 ms.author: kraigb
@@ -12,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 871a5f620cc90db5064562461336fdeac38ba757
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: a98b236d12954d5707df7fa4933c1f31150c7a0c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53068389"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53922834"
 ---
 # <a name="quickstart-clone-a-repository-of-python-code-in-visual-studio"></a>快速入門：在 Visual Studio 中複製 Python 程式碼存放庫
 

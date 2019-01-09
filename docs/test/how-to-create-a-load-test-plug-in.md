@@ -13,13 +13,12 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: c106eeda8ad3fd1f9293d6f7c3c7df1a8b48767b
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 1805efbe676273ceac2f0e264e53946eea1be79f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53064714"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53878558"
 ---
 # <a name="how-to-create-a-load-test-plug-in"></a>HOW TO：建立負載測試外掛程式
 
@@ -94,7 +93,7 @@ ms.locfileid: "53064714"
     > [!WARNING]
     > 當您執行使用外掛程式的 Web 效能測試或負載測試時，可能會收到如下錯誤：
     >
-    > **要求失敗：\<外掛程式> 事件中發生例外狀況：無法載入檔案或組件 '\<外掛程式名稱.dll 檔案>, Version=\<n.n.n.n>, Culture=neutral, PublicKeyToken=null' 或其相依性的其中之一。系統找不到指定的檔案。**
+    > **要求失敗：\<外掛程式> 事件中發生例外狀況：無法載入檔案或組件 \<"外掛程式名稱".dll file>, Version=\<n.n.n.n>, Culture=neutral, PublicKeyToken=null' 或其相依性的其中之一。系統找不到指定的檔案。**
     >
     > 如果您對任何外掛程式進行程式碼變更並建立新的 DLL 版本 **(Version=0.0.0.0)**，但是外掛程式仍然參考原始的外掛程式版本，就會導致此錯誤發生。 若要更正此問題，請依照下列步驟執行：
     >

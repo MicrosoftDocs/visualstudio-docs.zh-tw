@@ -1,8 +1,6 @@
 ---
 title: 複製選取項目 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.cv.threads.selection.copy
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9fc4281042b34113a17dfde2c94990642f2f98b7
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: f0f9e7f7a2d4a11c6f3394cb83be95306a2849c1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34690909"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53876636"
 ---
 # <a name="copy-selection"></a>複製選取項目
 若要從 [報表] 索引標籤中複製整個呼叫堆疊，請按一下 [複製]。 然後，您就可以在任何支援該動作的程式中貼上呼叫堆疊。  

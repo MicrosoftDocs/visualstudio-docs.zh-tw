@@ -4,7 +4,6 @@ description: 了解如何在 Visual Studio 中使用 C# 與 ASP.NET Core 逐步�
 ms.custom: mvc
 ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
 ms.topic: quickstart
 author: TerryGLee
 ms.author: tglee
@@ -14,12 +13,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 8487d09c75ff8880fd6c3fe4af59fa2b494b315e
-ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
+ms.openlocfilehash: 52f728573480816ca56aae6d05fc74ad196f5087
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53684963"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53925533"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-app"></a>快速入門：使用 Visual Studio 建立您的第一個 ASP.NET Core Web 應用程式
 

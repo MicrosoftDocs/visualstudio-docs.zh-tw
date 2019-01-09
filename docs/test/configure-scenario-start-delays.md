@@ -9,13 +9,12 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: e3c090fbcbc1a322574a5b0eca06ce917594348b
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: b9cd7790bb121e5b3942767a6ac372b5f10ca914
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52896545"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53911197"
 ---
 # <a name="configure-scenario-start-delays-in-load-tests"></a>在負載測試中設定情節啟動延遲
 
