@@ -2,7 +2,6 @@
 title: 分析 CPU 使用量 | Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/04/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 7501a20d-04a1-480f-a69c-201524aa709d
 author: mikejo5000
@@ -10,12 +9,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 65cf3b0d716251b41f144f523f12e1284357ed3a
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: a82c47c6815d4bf792a09a0b44dc21edbad68479
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53647828"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53988442"
 ---
 # <a name="analyze-cpu-usage"></a>分析 CPU 使用量 
 
