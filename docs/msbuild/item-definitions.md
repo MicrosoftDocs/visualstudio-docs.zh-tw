@@ -1,8 +1,6 @@
 ---
 title: 項目定義 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - msbuild, item definitions
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0c267c8a0d76fdda08112e428c0fc7403daa1f30
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 2cc550d91c1cccbbc5417300da3618aa52afa69b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178558"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53990801"
 ---
 # <a name="item-definitions"></a>項目定義
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 2.0 可讓您使用 [ItemGroup](../msbuild/itemgroup-element-msbuild.md) 元素來靜態宣告專案檔中的項目。 不過，您只能在項目層級新增中繼資料，即使所有項目的中繼資料都相同也是如此。 從 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 3.5 開始，名為 [ItemDefinitionGroup](../msbuild/itemdefinitiongroup-element-msbuild.md) 的專案元素可克服這項限制。 *ItemDefinitionGroup* 可讓您定義一組項目定義，這些項目定義會將預設的中繼資料值，新增到具名項目類型中的所有項目。  
@@ -40,7 +38,7 @@ ms.locfileid: "39178558"
 > [!NOTE]
 >  在本主題的許多範例中都有顯示 ItemDefinitionGroup 元素，但為了清楚起見，已省略其對應的 ItemGroup 定義。  
   
- 在 ItemGroup 中明確定義之中繼資料的優先順序會高於 ItemDefinitionGroup 中的中繼資料。 ItemDefinitionGroup 中的中繼資料只會套用至 ItemGroup 中未定義的中繼資料。 例如:   
+ 在 ItemGroup 中明確定義之中繼資料的優先順序會高於 ItemDefinitionGroup 中的中繼資料。 ItemDefinitionGroup 中的中繼資料只會套用至 ItemGroup 中未定義的中繼資料。 例如：  
   
 ```xml  
 <ItemDefinitionGroup>  
@@ -91,7 +89,7 @@ ms.locfileid: "39178558"
   
 -   最後一個規格會具有最高的優先順序。  
   
-當您具有多個 ItemDefinitionGroups 時，每個後續的規格都會將其中繼資料新增到先前的定義。 例如:   
+當您具有多個 ItemDefinitionGroups 時，每個後續的規格都會將其中繼資料新增到先前的定義。 例如：  
   
 ```xml  
 <ItemDefinitionGroup>  
@@ -109,7 +107,7 @@ ms.locfileid: "39178558"
   
 在此範例中，中繼資料 "o" 會新增到 "m" 和 "n"。  
   
-此外，也可以新增先前定義的中繼資料值。 例如:   
+此外，也可以新增先前定義的中繼資料值。 例如：  
   
 ```xml  
 <ItemDefinitionGroup>  
@@ -145,7 +143,7 @@ ms.locfileid: "39178558"
 ```  
   
 ## <a name="use-conditions-in-an-itemdefinitiongroup"></a>在 ItemDefinitionGroup 中使用條件  
- 您可以在 ItemDefinitionGroup 中使用條件來控制是否要包含中繼資料。 例如:   
+ 您可以在 ItemDefinitionGroup 中使用條件來控制是否要包含中繼資料。 例如：  
   
 ```xml  
 <ItemDefinitionGroup Condition="'$(Configuration)'=='Debug'">  
@@ -160,7 +158,7 @@ ms.locfileid: "39178558"
 > [!NOTE]
 >  條件中僅支援本機中繼資料參考。  
   
-對先前 ItemDefinitionGroup 中所定義之中繼資料的參考是項目 (而非定義群組) 的本機中繼資料參考。 亦即，參考的範圍為項目專用。 例如:   
+對先前 ItemDefinitionGroup 中所定義之中繼資料的參考是項目 (而非定義群組) 的本機中繼資料參考。 亦即，參考的範圍為項目專用。 例如：  
   
 ```xml  
 <ItemDefinitionGroup>  
@@ -191,7 +189,7 @@ ms.locfileid: "39178558"
 在上述範例中，"m" 會設定為 "m1" 值，因為 Condition 針對項目 "yes" 參考了項目 "i" 的中繼資料值。 
   
 ## <a name="override-and-delete-metadata"></a>覆寫及刪除中繼資料  
- ItemDefinitionGroup 元素中所定義的中繼資料可被稍後的 ItemDefinitionGroup 元素覆寫，方法是將中繼資料值設定為空白。 您也可以藉由將中繼資料項目設定為空值，來有效地刪除中繼資料項目。 例如:   
+ ItemDefinitionGroup 元素中所定義的中繼資料可被稍後的 ItemDefinitionGroup 元素覆寫，方法是將中繼資料值設定為空白。 您也可以藉由將中繼資料項目設定為空值，來有效地刪除中繼資料項目。 例如：  
   
 ```xml  
 <ItemDefinitionGroup>  
@@ -242,7 +240,7 @@ ms.locfileid: "39178558"
 </ItemDefinitionGroup>  
 ```  
   
-從 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 3.5 開始，ItemGroups 也可以自我參考。 例如:   
+從 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 3.5 開始，ItemGroups 也可以自我參考。 例如：  
   
 ```xml  
 <ItemGroup>  

@@ -2,7 +2,6 @@
 title: 使用 Visual C++ 程式碼 (類別設計工具)
 ms.date: 06/21/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - vs.classdesigner.cpplimitation
@@ -20,12 +19,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 109c2408e16c5ca4943855889191733234778761
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: e81a267b1a80036a0e000d7336f6b50b0e5f29d2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33958447"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53947513"
 ---
 # <a name="work-with-visual-c-code-in-class-designer"></a>在類別設計工具中使用 Visual C++ 程式碼
 
@@ -48,7 +47,7 @@ ms.locfileid: "33958447"
 - Typedef
 
 > [!NOTE]
-> 這與 UML 類別圖不同，後者可在「模型專案」中建立。 如需詳細資訊，請參閱 [UML 類別圖表：參考](../../modeling/uml-class-diagrams-reference.md)。
+> 這與 UML 類別圖不同，後者可在「模型專案」中建立。 如需詳細資訊，請參閱 [UML 類別圖表：參考資料](../../modeling/create-uml-modeling-projects-and-diagrams.md)。
 
 ## <a name="troubleshoot-type-resolution-and-display-issues"></a>針對類型解析與顯示問題進行疑難排解
 
@@ -112,8 +111,6 @@ ms.locfileid: "33958447"
 
 ## <a name="see-also"></a>另請參閱
 
-- [設計和檢視類別與類型](designing-and-viewing-classes-and-types.md)
-- [使用類別圖表](working-with-class-diagrams.md)
 - [設計和檢視類別與類型](designing-and-viewing-classes-and-types.md)
 - [類別設計工具錯誤的其他相關資訊](additional-information-about-errors.md)
 - [類別設計工具中的 Visual C++ 類別](visual-cpp-classes.md)

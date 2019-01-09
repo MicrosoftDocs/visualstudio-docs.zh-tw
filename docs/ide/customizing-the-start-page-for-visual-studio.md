@@ -2,7 +2,6 @@
 title: 安裝自訂起始頁或變更啟動項目
 ms.date: 02/01/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - vs.ToolsOptionsPages.Startup
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e8f09302a459e31406d69596d43b5c39a67c8268
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: d3514effbe9b8affd870e46746b308216a80de33
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53064043"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53864786"
 ---
 # <a name="customize-the-start-page-for-visual-studio"></a>自訂 Visual Studio 的起始頁
 

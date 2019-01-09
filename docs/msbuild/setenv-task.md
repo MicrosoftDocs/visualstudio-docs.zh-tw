@@ -1,8 +1,6 @@
 ---
 title: SetEnv 工作 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/05/2018
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - vc.task.setenv
@@ -21,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3024a0477193647a6949eeaa4d8d40d4d965f940
-ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
+ms.openlocfilehash: a6e0a0e4feaaa3aca4a1f6bfb367644bbfabac5e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "51220397"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53844141"
 ---
 # <a name="setenv-task"></a>SetEnv 工作
 設定或刪除指定環境變數的值。  
@@ -34,7 +32,7 @@ ms.locfileid: "51220397"
 ## <a name="parameters"></a>參數  
  下表說明 **SetEnv** 工作的參數。  
   
-|參數|描述|  
+|參數|說明|  
 |---------------|-----------------|  
 |**名稱**|必要的 **String** 參數。<br /><br /> 環境變數的名稱。|  
 |**OutputEnvironmentVariable**|選擇性的 **String** 輸出參數。<br /><br /> 包含指派給環境變數 (由 **Name** 參數所指定) 的值。|  

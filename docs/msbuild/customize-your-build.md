@@ -1,8 +1,6 @@
 ---
 title: 自訂組建 | Microsoft Docs
-ms.custom: ''
 ms.date: 06/14/2017
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, transforms
@@ -13,14 +11,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 31856366712da0a2287f73906c6e3a5f81f63a00
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 858d28ac2fdc6cab32e537e86f84771e0fb53f90
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49857584"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53919556"
 ---
-# <a name="customize-your-build"></a>自訂組建
+# <a name="customize-your-build-c-visual-basic"></a>自訂組建 (C#、Visual Basic)
 
 使用標準建置程序 (匯入 Microsoft.Common.props 和 Microsoft.Common.targets) 的 MSBuild 專案有幾個擴充性攔截程序，可以用來自訂您的建置程序。
 

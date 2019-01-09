@@ -10,13 +10,12 @@ manager: douge
 author: gewarren
 ms.author: gewarren
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
-ms.openlocfilehash: 5c87831c468ce105bccaaad26e826aae6f0b46bc
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: 1be890236efcfdb62c0fa6b4f9ad24d54d81b20f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53160045"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53865449"
 ---
 # <a name="f1-help"></a>F1 說明
 

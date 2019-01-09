@@ -2,7 +2,6 @@
 title: 建立和設定類型成員 (類別設計工具)
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - vs.classdetails.method
@@ -31,12 +30,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b93fa4720a6f0de9e2d7a64eb2c820811610297
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7063b536c50cff39bfeb3adabe989b3cd9a56ddf
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49938795"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53828133"
 ---
 # <a name="create-and-configure-type-members-in-class-designer"></a>在類別設計工具中建立及設定類型成員
 
@@ -209,7 +208,7 @@ ms.locfileid: "49938795"
 
      成員的最後一個參數列包含 [名稱] 儲存格中的 **<add parameter>** 文字。 按一下這個儲存格即可建立新參數。 如需詳細資訊，請參閱[將參數新增至方法](creating-and-configuring-type-members.md#add-parameters-to-methods)。
 
-[屬性] 視窗顯示的參數屬性與 [類別細節] 視窗所顯示的參數屬性相同：[名稱]、[類型]、[修飾詞]、[摘要] 以及 [選擇性預設值] 屬性。 在其中一個位置變更屬性將會全域更新屬性值，包括在另一個位置的顯示值。
+[屬性] 視窗會顯示 [類別細節] 視窗中顯示的相同參數屬性：[名稱]、[類型]、[修飾詞]、[摘要] 及 [選擇性預設] 屬性。 在其中一個位置變更屬性將會全域更新屬性值，包括在另一個位置的顯示值。
 
 > [!NOTE]
 > 若要將參數新增至委派，請參閱[建立成員](creating-and-configuring-type-members.md#create-members)。
@@ -320,5 +319,5 @@ ms.locfileid: "49938795"
 
 ## <a name="see-also"></a>另請參閱
 
-- [檢視類型與關聯性](viewing-types-and-relationships.md)
+- [檢視類型與關聯性](designing-and-viewing-classes-and-types.md)
 - [重構類別與類型](refactoring-classes-and-types.md)

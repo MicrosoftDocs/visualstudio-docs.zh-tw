@@ -1,8 +1,6 @@
 ---
 title: CvLeaveSpan 函式 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - cvmarkers/CvLeaveSpan
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fe234d60e8cd86279d3dcc01da95e6d2e6202213
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 4de86d390b03eb38a449ada23f4189b9baca6152
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34749154"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53967718"
 ---
 # <a name="cvleavespan-function"></a>CvLeaveSpan 函式
 標記範圍的結尾。  

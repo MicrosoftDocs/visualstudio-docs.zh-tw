@@ -2,7 +2,6 @@
 title: 檔案中取代命令
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - edit.replaceinfiles
@@ -16,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8bf54892d17a877cd8e2c3ffd21ebd513e303d6c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f24005473780591a89afcf97eae234976ff81a85
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31946659"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53959998"
 ---
 # <a name="replace-in-files-command"></a>檔案中取代命令
 使用在 [尋找和取代] 視窗 [檔案中取代] 索引標籤提供的選項子集，取代檔案中的文字。
@@ -37,11 +36,11 @@ Edit.ReplaceinFiles findwhat replacewith [/all] [/case]
 ## <a name="arguments"></a>引數
  `findwhat`
 
- 必要。 要比對的文字。
+ 必要項。 要比對的文字。
 
  `replacewith`
 
- 必要。 要用來取代相符文字的文字。
+ 必要項。 要用來取代相符文字的文字。
 
 ## <a name="switches"></a>參數
  /all 或 /a
@@ -114,4 +113,4 @@ Edit.ReplaceinFiles findwhat replacewith [/all] [/case]
 - [命令視窗](../../ide/reference/command-window.md)
 - [尋找/命令方塊](../../ide/find-command-box.md)
 - [Visual Studio 命令](../../ide/reference/visual-studio-commands.md)
-- [Visual Studio 命令別名](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)

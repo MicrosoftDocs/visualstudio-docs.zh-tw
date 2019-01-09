@@ -2,19 +2,18 @@
 title: 用於測量效能的工具概觀 | Microsoft Docs
 ms.custom: seodec18
 ms.date: 03/27/2018
-ms.technology: vs-ide-debug
 ms.topic: overview
 author: mikejo5000
 ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 46b10f62f54306ddcbe8ab566f4e60d77526b0d2
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 60a37a7c970fdbf2ed428741cb21221429d4026d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53059531"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53921797"
 ---
 # <a name="overview-of-tools-for-measuring-performance-in-visual-studio"></a>Visual Studio 中用於測量效能的工具概觀
 

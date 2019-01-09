@@ -3,7 +3,6 @@ title: 部署功能導覽
 description: 了解從 Visual Studio 部署應用程式的選項。
 ms.custom: mvc
 ms.date: 06/22/2018
-ms.technology: vs-ide-deployment
 ms.topic: quickstart
 dev_langs:
 - FSharp
@@ -24,14 +23,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 682010bc4235948918b3bffce70d04d5db0781af
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d0db2a9dcd19b2100239a99ec8fc08850432aa80
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49861627"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53860032"
 ---
-# <a name="quickstart-first-look-at-deployment-in-visual-studio"></a>快速入門：Visual Studio 部署初探
+# <a name="quickstart-first-look-at-deployment-in-visual-studio"></a>快速入門：Visual Studio 中的部署簡介
 
 透過部署應用程式、服務或元件，就可以將它散發到其他電腦、裝置、伺服器或雲端上進行安裝。 請在 Visual Studio 中針對您需要的部署類型選擇適當的方法。 (許多應用程式類型支援此處未描述的其他部署工具，例如命令列部署或 NuGet 等)。
 
@@ -41,7 +40,7 @@ ms.locfileid: "49861627"
 
 部署至本機資料夾通常用於測試，或是用來開始使用另一個工具進行最終部署的分段部署。
 
-- **ASP.NET**、**ASP.NET Core**、**Node.js**、**Python** 及 .**NET Core**：使用發行工具以部署至本機資料夾。 確切的可用選項取決於您的應用程式類型。 在 [方案總管] 中，以滑鼠右鍵按一下專案，然後選擇 [發行] (如果您之前已設定任何發行設定檔，則必須按一下 [建立新設定檔])。接下來，選擇 [資料夾]。 如需詳細資訊，請參閱[部署至本機資料夾](quickstart-deploy-to-local-folder.md)。
+- **ASP.NET**、**ASP.NET Core**、**Node.js**、**Python** 及 .**NET Core**：使用發行工具部署至本機資料夾。 確切的可用選項取決於您的應用程式類型。 在 [方案總管] 中，以滑鼠右鍵按一下專案，然後選擇 [發行] (如果您之前已設定任何發行設定檔，則必須按一下 [建立新設定檔])。接下來，選擇 [資料夾]。 如需詳細資訊，請參閱[部署至本機資料夾](quickstart-deploy-to-local-folder.md)。
 
     ![選擇 [發行]](../deployment/media/quickstart-publish.png)
 
@@ -49,13 +48,13 @@ ms.locfileid: "49861627"
 
 ## <a name="publish-to-azure"></a>發佈至 Azure
 
-- **ASP.NET**、**ASP.NET Core**、**Python** 及 **Node.js**：您可以使用發行工具，將應用程式快速部署至 Azure App Service 或 Azure 虛擬機器。 在方案總管中，以滑鼠右鍵按一下專案，然後選擇 [發行]。 (如果您之前已設定任何發行設定檔，則必須按一下 [建立新設定檔])。在 [發行] 對話方塊中，選擇 [App Service] 或 [Azure 虛擬機器]，然後遵循設定步驟。
+- **ASP.NET**、**ASP.NET Core**、**Python** 及 **Node.js**：您可以使用發行工具將應用程式快速部署至 Azure App Service 或 Azure 虛擬機器。 在方案總管中，以滑鼠右鍵按一下專案，然後選擇 [發行]。 (如果您之前已設定任何發行設定檔，則必須按一下 [建立新設定檔])。在 [發行] 對話方塊中，選擇 [App Service] 或 [Azure 虛擬機器]，然後遵循設定步驟。
 
     ![選擇 [Azure App Service]](../deployment/media/quickstart-publish-azure.png "選擇 [Azure App Service]")
 
     在 Visual Studio 2017 15.7 版及更新版本中，您可以將 ASP.NET Core 應用程式部署至**適用於 Linux 的 App Service**。
 
-    針對 Python 應用程式，另請參閱 [Python - 發行至 Azure App Service](/visualstudio/python/publishing-python-web-applications-to-azure-from-visual-studio?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)。
+    針對 Python 應用程式，另請參閱 [Python - 發行至 Azure App Service](../python/publishing-python-web-applications-to-azure-from-visual-studio.md?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)。
 
     如需快速簡介，請參閱[發行至 Azure](quickstart-deploy-to-azure.md)及[發行至 Linux](quickstart-deploy-to-linux.md)。 此外，請參閱[將 ASP.NET Core 應用程式發行至 Azure](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs)。 如需使用 Git 進行部署，請參閱[使用 Git 將 ASP.NET Core 持續部署至 Azure](/aspnet/core/publishing/azure-continuous-deployment)。
 
@@ -66,7 +65,7 @@ ms.locfileid: "49861627"
 
 ## <a name="publish-to-web-or-deploy-to-network-share"></a>發行至 Web 或部署至網路共用
 
-- **ASP.NET**、**ASP.NET Core**、**Node.js** 及 **Python**：您可以使用發行工具，利用 FTP 或 Web Deploy 部署至網站。 如需詳細資訊，請參閱[部署至網站](quickstart-deploy-to-a-web-site.md)。
+- **ASP.NET**、**ASP.NET Core**、**Node.js** 及 **Python**：您可以使用發行工具，來利用 FTP 或 Web Deploy 部署至網站。 如需詳細資訊，請參閱[部署至網站](quickstart-deploy-to-a-web-site.md)。
 
     在方案總管中，以滑鼠右鍵按一下專案，然後選擇 [發行]。 (如果您之前已設定任何發行設定檔，則必須按一下 [建立新設定檔])。在發行工具中，選擇您想要的選項並遵循設定步驟。
 
@@ -84,11 +83,11 @@ ms.locfileid: "49861627"
 
 您可以從 Visual Studio 中建立應用程式套件，以部署至 Microsoft Store。
 
-- **UWP**：您可以封裝您的應用程式，並使用功能表項目加以部署。 如需詳細資訊，請參閱[使用 Visual Studio 封裝 UWP 應用程式](/windows/uwp/packaging/packaging-uwp-apps)。
+- **UWP**：您可以封裝應用程式，並使用功能表項目加以部署。 如需詳細資訊，請參閱[使用 Visual Studio 封裝 UWP 應用程式](/windows/uwp/packaging/packaging-uwp-apps)。
 
     ![建立應用程式套件](../deployment/media/feature-tour-create-app-package.jpg)
 
-- **Windows 傳統型**：從 Visual Studio 2017 15.4 版開始，您可以使用傳統型橋接器部署至 Microsoft Store。 若要這樣做，請先建立 Windows 應用程式封裝專案。 如需詳細資訊，請參閱[為 Microsoft Store 封裝傳統型應用程式 (傳統型橋接器)](/windows/uwp/porting/desktop-to-uwp-packaging-dot-net)。
+- **Windows 桌面**：從 Visual Studio 2017 15.4 版開始，您可以使用傳統型橋接器部署至 Microsoft Store。 若要這樣做，請先建立 Windows 應用程式封裝專案。 如需詳細資訊，請參閱[為 Microsoft Store 封裝傳統型應用程式 (傳統型橋接器)](/windows/uwp/porting/desktop-to-uwp-packaging-dot-net)。
 
     ![傳統型橋接器](../deployment/media/feature-tour-desktop-bridge.png)
 

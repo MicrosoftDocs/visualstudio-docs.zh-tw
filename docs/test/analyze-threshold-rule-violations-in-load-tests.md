@@ -16,13 +16,12 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: be0784197c03aa3117d559cd4aa99797027c8170
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: badeb0d01347bf4410b645dc901f3ec518178574
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53061807"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53989240"
 ---
 # <a name="analyzing-threshold-rule-violations-in-load-tests-using-the-load-test-analyzer"></a>使用負載測試分析器來分析負載測試中的臨界值規則違規
 
@@ -42,8 +41,8 @@ ms.locfileid: "53061807"
 |電腦|發生違規之測試中的電腦名稱。 **注意：** 當您在 Rig 上執行負載測試時，這很重要。|是|
 |分類|發生違規之效能計數器的分類。|是|
 |計數器|發生違規之效能計數器的名稱。|是|
-|執行個體|發生違規的效能計數器執行個體。|[是]|
-|訊息|描述臨界值違規的訊息。 例如，**值 5 超過 0 的關鍵臨界值**。|[是]|
+|執行個體|發生違規的效能計數器執行個體。|是|
+|訊息|描述臨界值違規的訊息。 例如，**值 5 超過 0 的關鍵臨界值**。|是|
 
 > [!NOTE]
 > 選擇資料行標頭即可排序資料表。

@@ -1,8 +1,6 @@
 ---
 title: 並行視覺化檢視命令列公用程式 (CVCollectionCmd) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.cv.performance.cvcollectioncmd
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a24bea13687d58d4d9b9d9dc8ecf0bec86595759
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a5c2dfa42df5ce7dd5d9bf421df4ad4b001fdb57
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49951233"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53986839"
 ---
 # <a name="concurrency-visualizer-command-line-utility-cvcollectioncmd"></a>並行視覺化檢視命令列公用程式 (CVCollectionCmd)
 您可以使用並行視覺化檢視命令列公用程式 (*CVCollectionCmd.exe*) 從命令列收集追蹤，以便在 Visual Studio 的並行視覺化檢視中進行檢視。 此工具可在未安裝 Visual Studio 的電腦上使用。  
@@ -40,7 +38,7 @@ ms.locfileid: "49951233"
 
  **CvCollectionCmd /?**  
 
-|選項|描述|參數|傳回值|  
+|選項|說明|參數|傳回值|  
 |------------|-----------------|----------------|-------------------|  
 |查詢|傳回是否可以開始收集。|無|0，表示準備開始收集。<br /><br /> 1，表示收集已在進行中。<br /><br /> 2，表示收集不在進行中，但已啟用一或多個所需的 [ETW](/dotnet/framework/wcf/samples/etw-tracing) 工作階段。|  
 |啟動|在並行視覺化檢視下執行指定的處理序。|可執行檔的路徑。|0，表示執行成功。<br /><br /> 1，表示執行失敗，因為無法啟動目標應用程式。<br /><br /> 13，表示執行失敗，因為 CVCollectionCmd 沒有足夠的權限可寫入指定的輸出目錄。|  
@@ -64,7 +62,7 @@ ms.locfileid: "49951233"
  組態檔採用 XML 格式。 以下是有效的標記和值：  
 
 
-| 標記 | 描述 | 值 |
+| 標記 | 說明 | 值 |
 |-------------------------| - | - |
 | 組態 | 標示整個組態檔。 | 必須包含下列項目：<br /><br /> -   MinorVersion<br />-   MajorVersion |
 | MajorVersion | 指定組態檔的主要版本。 | [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] 專案必須是 1。 如果不是 1，公用程式將無法運作。 |

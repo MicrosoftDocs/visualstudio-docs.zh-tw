@@ -1,8 +1,6 @@
 ---
 title: 目前索引標籤 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.cv.threads.reportnav.current
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9964da1521852d942490c09b83135c62f6be3ed9
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 04700ebac239be6c72038b30c67d66cfb0e3ec7f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34749495"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53964730"
 ---
 # <a name="current-tab"></a>目前索引標籤
 按一下 [目前] 索引標籤，如果選取 CPU 執行緒區段，您可以查看時間軸中最接近目前選取點的呼叫堆疊 (如果有)。  此時，選取點會以黑色箭號或插入號顯示在時間軸上方。 選取封鎖的區段之後，因為沒有任何執行，所以不會顯示插入號。 不過，仍然會反白顯示區段，而且會顯示呼叫堆疊。  

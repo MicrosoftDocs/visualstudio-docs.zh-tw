@@ -1,8 +1,7 @@
 ---
-title: 如何：將註解加入至類別圖表 (類別設計工具)
+title: HOW TO：將註解新增至類別圖表 (類別設計工具)
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - vs.classdesigner.comment
@@ -16,14 +15,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a3b850741793f1b0f1d358aca9ea3161e12a46b9
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: cff9069392fe3c5a3505128788458916ed78c01f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33957102"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53916370"
 ---
-# <a name="how-to-add-comments-to-class-diagrams"></a>如何：將註解新增至類別圖表
+# <a name="how-to-add-comments-to-class-diagrams"></a>HOW TO：將註解新增至類別圖表
 
 您可以使用註解圖形來標註類別圖表。 註解圖形有一個屬性 **Text**，您可在其中鍵入文字。 註解圖形只存在於圖表介面，而不在程式碼中。
 
@@ -39,5 +38,5 @@ ms.locfileid: "33957102"
 
 ## <a name="see-also"></a>另請參閱
 
-- [使用類別圖表](working-with-class-diagrams.md)
+- [使用類別圖表](designing-and-viewing-classes-and-types.md)
 - [如何：自訂類別圖表](how-to-customize-class-diagrams.md)

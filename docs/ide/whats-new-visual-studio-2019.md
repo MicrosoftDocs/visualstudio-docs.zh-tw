@@ -2,9 +2,8 @@
 title: Visual Studio 2019 Preview 的新功能
 titleSuffix: ''
 description: 深入了解 Visual Studio 2019 預覽版本中的新功能。
-ms.date: 12/04/2018
+ms.date: 12/19/2018
 ms.prod: visual-studio-dev16
-ms.technology: vs-acquisition
 ms.custom: seodec18
 ms.topic: conceptual
 f1_keywords:
@@ -17,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 06e3966703d95f897706eec8c46c2cd78fda859f
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: e387485d2a11867944e980a9bad26261fd4a707c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53159746"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53848544"
 ---
 # <a name="what39s-new-in-visual-studio-2019-preview"></a>Visual Studio 2019 Preview 的新功能
 
@@ -50,6 +49,8 @@ Visual Studio 2019 Preview 包含許多一般性改良，以及將開發人員�
    ![Visual Studio 2019 中新的開始視窗](../ide/media/start-window.png)
 
 這個新的開始視窗會顯示可供您複製或簽出程式碼、開啟專案或方案、開啟本機資料夾或建立新專案的選項。 在簡單的對話方塊中顯示這些選項，可協助初學者或熟悉 Visual Studio 的使用者快速編寫程式碼。
+
+如需詳細資訊，請參閱 [Get to code:How we designed the new Visual Studio start window](https://blogs.msdn.microsoft.com/visualstudio/2018/12/13/get-to-code-how-we-designed-the-new-visual-studio-start-window/) (開始撰寫程式碼：我們如何設計新的 Visual Studio 啟動視窗) 部落格文章。
 
 ### <a name="better-search"></a>更佳的搜尋
 
@@ -82,6 +83,8 @@ Visual Studio 2019 Preview 包含許多一般性改良，以及將開發人員�
 [Visual Studio Live Share](https://visualstudio.microsoft.com/services/live-share/) 這項開發人員服務可讓您與組員共用程式碼庫和其中的內容，並直接從 Visual Stuido 中進行即時雙向共同作業。 組員可透過 Live Share 來閱讀、瀏覽、編輯和偵錯您與其共用的專案，過程相當自然且安全。
 
 這項服務預設會安裝於 Visual Studio 2019 Preview。
+
+如需詳細資訊，請參閱 [Visual Studio Live Share for real-time code reviews and interactive education](https://blogs.msdn.microsoft.com/visualstudio/2018/12/06/visual-studio-live-share-for-real-time-code-reviews-and-interactive-education/) (Visual Studio Live Share 提供即時程式碼檢閱與互動式教學) 部落格文章。
 
 ## <a name="modern-development-support"></a>新式開發支援
 
@@ -122,7 +125,7 @@ Visual Studio 2019 的預覽版本支援為任何平台建置 [.NET Core 3](http
 
 如果您使用 C#，我們也新增了以您的程式碼訓練自訂模型的能力。
 
-如需延伸模組及下載的詳細資訊，請參閱 Microsoft DevLabs 上的 [Visual Studio IntelliCode - 預覽](https://go.microsoft.com/fwlink/?linkid=872707)頁面。
+如需最新更新的詳細資訊，請參閱 [Visual Studio IntelliCode supports more languages and learns from your code](https://blogs.msdn.microsoft.com/visualstudio/2018/12/05/visual-studio-intellicode-supports-more-languages-and-learns-from-your-code/) (Visual Studio IntelliCode 支援更多語言並從您的程式碼學習) 部落格文章。 此外，如需延伸模組及如何下載的詳細資訊，請參閱 Microsoft DevLabs 上的 [Visual Studio IntelliCode - 預覽](https://go.microsoft.com/fwlink/?linkid=872707)頁面。
 
 ## <a name="give-us-feedback"></a>提供意見反應
 
@@ -135,4 +138,5 @@ Visual Studio 2019 的預覽版本支援為任何平台建置 [.NET Core 3](http
 ## <a name="see-also"></a>另請參閱
 
 * [Visual Studio 2019 版本資訊](/visualstudio/releases/2019/release-notes-preview?context=visualstudio/default&contextView=vs-2017)
+* [Microsoft Connect(); 2018 會議](https://www.microsoft.com/connectevent)
 * [Visual Studio 2017 的新功能](whats-new-in-visual-studio.md)

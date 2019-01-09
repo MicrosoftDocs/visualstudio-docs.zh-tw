@@ -2,7 +2,6 @@
 title: C# 編輯器格式化選項
 ms.date: 08/14/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Formatting.Spacing
@@ -20,12 +19,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 542d14e5913b1537d5e5e6aabb7264cd15add793
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: b3c4aa17e31797c9c8bbfa1a931369f371977e26
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50220517"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53946405"
 ---
 # <a name="options-text-editor-c-code-style-formatting"></a>選項、文字編輯器、C#、程式碼樣式、格式化
 
@@ -37,7 +36,7 @@ ms.locfileid: "50220517"
 
 這些設定「會在」程式碼編輯器將格式化選項套用至程式碼時有影響。
 
-|標籤|描述|
+|標籤|說明|
 |-----------|-----------------|
 |**於輸入時自動格式化**|當取消選取時，會停用 [輸入 ; 時將陳述式格式化] 及 [輸入 } 時將區塊格式化] 選項。|
 |**於 ; 處將陳述式自動格式化**|選取時，系統會在陳述式完成時，根據編輯器選取的格式化選項來將陳述式格式化。|
@@ -49,7 +48,7 @@ ms.locfileid: "50220517"
 
 這些設定會設定**將文件格式化**的命令，以在檔案執行額外的程式碼清理。 如需這些設定的套用方式詳細資訊，請參閱[將文件格式化的命令](../code-styles-and-quick-actions.md#format-document-command)。
 
-|標籤|描述|對應的 EditorConfig 與 [工具] > [選項] 規則|
+|標籤|說明|對應的 EditorConfig 與 [工具] > [選項] 規則|
 |-----------|-----------------|-----------------|-----------------|
 |**套用所有 C# 格式化規則 (縮排、換行、間距)**|**將文件格式化**的命令一律會修正格式化問題。 這項設定無法變更。| [Core EditorConfig 選項](../../ide/create-portable-custom-editor-options.md)<br/>[.NET EditorConfig 格式化選項](../../ide/editorconfig-code-style-settings-reference.md#formatting-conventions)<br/><br/>[工具] > [選項] > [文字編輯器] > [C#] > [格式化] > [縮排] 或 [新行] 或 [間距] 或 [換行]|
 |**在格式化期間執行其他程式碼清理**|如有選取，會對 **Edit.FormatDocument** 命令下指定的規則套用修正。| N/A |

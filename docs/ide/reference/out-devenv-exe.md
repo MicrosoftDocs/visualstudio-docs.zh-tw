@@ -2,7 +2,6 @@
 title: -Out (devenv.exe)
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 helpviewer_keywords:
 - errors [Visual Studio], builds
@@ -20,12 +19,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a5778cb281ca6edcf8045620aee049b0f115a50a
-ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
+ms.openlocfilehash: f240b464ddba4e0549e3faff432685201e4560f6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "51948240"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53985637"
 ---
 # <a name="out-devenvexe"></a>/Out (devenv.exe)
 指定檔案以在您執行、建置、重建或部署解決方案時儲存及顯示錯誤。
@@ -39,7 +38,7 @@ devenv /out FileName
 ## <a name="arguments"></a>引數
  `FileName`
 
- 必要。 當您建置可執行檔時要接收錯誤的檔案路徑和名稱。
+ 必要項。 當您建置可執行檔時要接收錯誤的檔案路徑和名稱。
 
 ## <a name="remarks"></a>備註
  如果指定不存在的檔名，會自動建立該檔案。 如果檔案已經存在，則結果會附加至檔案的現有內容。

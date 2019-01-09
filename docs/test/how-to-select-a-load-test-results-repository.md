@@ -16,13 +16,12 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 169020d61cee1ae109a302eede0a9beb133fe82f
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: fcbe7979765fe921ccc42f7adfa556bc0b52b7d1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53059969"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53950429"
 ---
 # <a name="how-to-select-a-load-test-results-repository"></a>HOW TO：選取負載測試結果存放庫
 

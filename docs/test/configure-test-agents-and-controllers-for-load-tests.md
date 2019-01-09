@@ -8,13 +8,12 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 1f33859522ff42fc85c31261527f17ea0f765199
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: c4462c97febc7f1075080bf659a679647bc7bbe5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53068013"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53899833"
 ---
 # <a name="configure-test-agents-and-test-controllers-for-running-load-tests"></a>設定用於執行負載測試的測試代理程式和測試控制器
 
@@ -39,7 +38,7 @@ Visual Studio 可以使用實體或虛擬機器產生應用程式適用的模擬
 
 - 藉由新增其他測試代理程式至測試控制器來產生更多負載的能力。
 
-- 在同一部電腦或不同電腦上安裝用戶端、測試控制器和測試代理程式軟體的彈性。 例如: 
+- 在同一部電腦或不同電腦上安裝用戶端、測試控制器和測試代理程式軟體的彈性。 例如：
 
    **本機組態：**
 

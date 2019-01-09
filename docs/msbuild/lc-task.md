@@ -1,8 +1,6 @@
 ---
 title: LC 工作 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#LC
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 870661c8c28a164b2156009e1327e03cabfcfa48
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 2fee34977f790589194ec120ea88515bcf884a9e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39077632"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53921769"
 ---
 # <a name="lc-task"></a>LC 工作
 包裝 *LC.exe* (會從 *.licx* 檔案產生 *.license* 檔案)。 如需有關 *LC.exe* 的詳細資訊，請參閱 [Lc.exe (授權編譯器)](/dotnet/framework/tools/lc-exe-license-compiler)。  
@@ -33,7 +31,7 @@ ms.locfileid: "39077632"
 ## <a name="parameters"></a>參數  
  下表說明 `LC` 工作的參數。  
   
-|參數|描述|  
+|參數|說明|  
 |---------------|-----------------|  
 |`LicenseTarget`|必要的 <xref:Microsoft.Build.Framework.ITaskItem> 參數。<br /><br /> 指定要產生 *.licenses* 檔案的可執行檔。|  
 |`NoLogo`|選擇性的 `Boolean` 參數。<br /><br /> 隱藏 Microsoft 程式啟始資訊顯示。|  

@@ -1,8 +1,7 @@
 ---
-title: 如何：將類別圖表加入至專案 (類別設計工具)
+title: HOW TO：將類別圖表新增至專案 (類別設計工具)
 ms.date: 05/08/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - class diagrams, creating
@@ -13,14 +12,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 133f15f6c160e9ec48b1db4ab8713023e492cbae
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: 4df2047109ebd89b7dee621373bf30b9f55747a1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42901294"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53866448"
 ---
-# <a name="how-to-add-class-diagrams-to-projects"></a>如何：將類別圖表新增到專案
+# <a name="how-to-add-class-diagrams-to-projects"></a>HOW TO：將類別圖表新增至專案
 
 若要設計、編輯和重構類別及其他類型，請將類別圖加入至 C#、Visual Basic 或 C++ 專案。 若要在專案中視覺化程式碼的不同部分，請將多個類別圖加入至專案。
 
@@ -76,8 +75,6 @@ ms.locfileid: "42901294"
 
 ## <a name="see-also"></a>另請參閱
 
-- [如何：使用類別設計工具建立類型](how-to-create-types.md)
+- [如何：使用 [類別設計工具] 建立類型](how-to-create-types.md)
 - [如何：檢視現有類型](how-to-view-existing-types.md)
 - [設計和檢視類別及類型](designing-and-viewing-classes-and-types.md)
-- [檢視類型與關聯性](viewing-types-and-relationships.md)
-- [使用類別圖表](working-with-class-diagrams.md)

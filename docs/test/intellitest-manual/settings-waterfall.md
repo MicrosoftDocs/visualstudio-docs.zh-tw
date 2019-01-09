@@ -2,7 +2,6 @@
 title: 設定瀑布圖 | Microsoft IntelliTest 開發人員測試工具
 ms.date: 05/02/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 helpviewer_keywords:
 - IntelliTest, Settings waterfall
@@ -11,12 +10,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 27eb9b7e3cda7c05515f5a7413b067dce2b8567e
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: c15b440845f918c194bad334e118e25dee676431
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51000396"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53936161"
 ---
 # <a name="settings-waterfall"></a>設定瀑布圖
 

@@ -1,8 +1,6 @@
 ---
 title: CreateProperty 工作 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#CreateProperty
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c5b281a33856e1db2b45ccade79f7490cfd808ad
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 71c36b19b0fd44d6668cb497dccafaf12843a492
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49948820"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53884733"
 ---
 # <a name="createproperty-task"></a>CreateProperty 工作
 將傳入的值填入屬性中。 這允許將值從某個屬性或字串複製至另一個屬性或字串。  
@@ -34,7 +32,7 @@ ms.locfileid: "49948820"
  下表說明 `CreateProperty` 工作的參數。  
 
 
-| 參數 | 描述 |
+| 參數 | 說明 |
 |------------------| - |
 | `Value` | 選擇性的 `String` 輸出參數。<br /><br /> 指定要複製至新屬性的值。 |
 | `ValueSetByTask` | 選擇性的 `String` 輸出參數。<br /><br /> 包含與 `Value` 參數相同的值。 因輸出具有最新資訊而略過封入目標時，只有在您想要避免具有 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 所設定的輸出屬性時，才使用此參數。 |

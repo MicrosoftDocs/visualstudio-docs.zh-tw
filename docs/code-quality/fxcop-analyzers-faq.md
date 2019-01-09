@@ -2,7 +2,6 @@
 title: FxCop 程式碼分析和 FxCop 分析器
 ms.date: 09/06/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: overview
 helpviewer_keywords:
 - code analysis FAQ
@@ -11,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: e05dd0e01254bf1222a8a7de497b11ec2a808bfb
-ms.sourcegitcommit: b9a32c3d94b19e7344f4872bc026efd3157cf220
+ms.openlocfilehash: 83b9fb827ea413952713284073b712594fd26d52
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46136364"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53904951"
 ---
 # <a name="frequently-asked-questions-about-fxcop-and-fxcop-analyzers"></a>FxCop 和 FxCop 分析器的相關常見問題
 

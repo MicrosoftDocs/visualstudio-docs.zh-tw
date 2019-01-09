@@ -2,19 +2,18 @@
 title: 對 Visual C# 程式碼進行單元測試
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
 author: gewarren
-ms.openlocfilehash: 76c20fb987bb1380cb4d3f00e078aac81f26e89f
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 40aa7393b4b4bc03f978c2ab2fa27d660dd5f9db
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53064850"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53891023"
 ---
 # <a name="unit-testing-visual-c-code"></a>對 Visual C# 程式碼進行單元測試
 

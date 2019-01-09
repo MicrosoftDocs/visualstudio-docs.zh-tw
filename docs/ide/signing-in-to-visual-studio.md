@@ -1,9 +1,9 @@
 ---
 title: 登入 Visual Studio
-ms.custom: ''
-ms.date: 11/16/2017
+titleSuffix: ''
+ms.custom: seodec18
+ms.date: 12/10/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
 ms.topic: conceptual
 ms.assetid: b9531c25-e4cf-43ae-b331-a9f31a8cd171
 author: TerryGLee
@@ -11,23 +11,23 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c7568583ac9239e168760000f0712ca7dcc4c33f
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: dccb2fb9c4fce456055b136dace7e95d02647a94
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53159850"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53840787"
 ---
 # <a name="sign-in-to-visual-studio"></a>登入 Visual Studio
 
-只要透過登入此 IDE 來設定個人化帳戶，您就可以個人化和最佳化 Visual Studio 中的開發經驗。
+只要透過登入此 IDE 來設定個人化帳戶，您就可以將 Visual Studio 中的開發體驗進行個人化與最佳化。
 
 > [!NOTE]
 > 本主題適用於 Windows 上的 Visual Studio。 針對 Visual Studio for Mac，請參閱[登入 Visual Studio for Mac](/visualstudio/mac/signing-in)。
 
 ## <a name="why-should-i-sign-in-to-visual-studio"></a>我為何應該登入 Visual Studio？
 
-當您登入時，您可以擴充 Visual Studio 體驗。 例如，您可以在登入之後，跨裝置同步處理您的設定、延長試用期及自動連接到 Azure 服務等等。
+當您登入時，您可以擴充 Visual Studio 體驗。 例如，您可以在登入之後跨裝置[同步處理您的設定](synchronized-settings-in-visual-studio.md)、延長試用期及自動連接到 Azure 服務等等。
 
 以下是您在登入後預期及可執行事項的完整清單：
 

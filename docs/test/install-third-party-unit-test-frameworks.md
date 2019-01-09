@@ -2,19 +2,18 @@
 title: 安裝協力廠商單元測試架構
 ms.date: 06/07/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 8acdeb17c9c45613d6a987d503deeaf63beecdaa
-ms.sourcegitcommit: 150fa6ec89ea2d086c0af9ababbaf6103a12eff1
+ms.openlocfilehash: f8cdfa96e41e72531cb3f2cdc164af4ed57546e5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/06/2018
-ms.locfileid: "52954080"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53955236"
 ---
 # <a name="install-unit-test-frameworks"></a>安裝單元測試架構
 

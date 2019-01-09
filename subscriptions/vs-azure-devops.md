@@ -3,18 +3,18 @@ title: Visual Studio 訂閱者的 Azure DevOps 權益 | Microsoft Docs
 author: evanwindom
 ms.author: jaunger
 manager: evelynp
-ms.date: 03/15/2018
+ms.date: 09/19/2018
 ms.topic: Get-Started-Article
 description: 了解如何以 Visual Studio 訂閱者的身分使用 Azure DevOps。
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 1b536a303b2eba848c6b1cf41bcf73d6cf10975d
-ms.sourcegitcommit: 50b19010b2e2b4736835350710e2edf93b980b56
+ms.openlocfilehash: 17210efba6e4505bbf4dc46fcd779be407f0c27e
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "49073645"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53740201"
 ---
 # <a name="azure-devops-benefits-for-visual-studio-subscribers"></a>Visual Studio 訂閱者的 Azure DevOps 權益
 
@@ -28,12 +28,18 @@ ms.locfileid: "49073645"
 
 | 訂用帳戶層級                                                 |     通道                                            | 優勢                                                          | 可續約？    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (標準、年度雲端、每月雲端訂用帳戶)   | VL、Azure、零售、選取的 NFR<sup>1</sup>, FTE  | Azure Boards & Repos (Basic)、Azure Test Plans、Azure Artifacts、Azure Pipelines (自我裝載)       |  是          |
-| Visual Studio Professional (標準、年度雲端、每月雲端訂用帳戶) | VL、Azure、零售、                                        | Azure Boards & Repos (基本)                                                            |  是          |
-| Visual Studio Test Professional (標準訂用帳戶)                         | VL、零售                                              | Azure Boards & Repos (基本)、Azure Test Plans                                              |  是          |
-| MSDN 平台 (標準)                                          | VL、零售                                              | Azure Boards & Repos (基本)、Azure Test Plans                                              |  是          |
+| Visual Studio Enterprise (標準、每月雲端)   | VL, Azure, 零售, 選取的 NFR<sup>1</sup>, FTE  | Azure Boards & Repos (Basic)、Azure Test Plans、Azure Artifacts、Azure Pipelines (自我裝載)       |  是          |
+| Visual Studio Professional (標準、每月雲端) | VL, Azure, 零售,                                        | Azure Boards & Repos (基本)                                                            |  是          |
+| Visual Studio Test Professional (標準訂用帳戶)                         | VL, 零售                                              | Azure Boards & Repos (基本)、Azure Test Plans                                              |  是          |
+| MSDN 平台 (標準)                                          | VL, 零售                                              | Azure Boards & Repos (基本)、Azure Test Plans                                              |  是          |
 
-<sup>1</sup>  *包含：「禁止轉售 (NFR)」、Microsoft Valued Professional (MVP)、Region Director (RD)、Visual Studio Industry Partner (VSIP)、Microsoft 合作夥伴網路 (Enterprise)、BizSpark、MCT Software & Services Developer。排除：MCT Software & Services、Imagine。*
+<sup>1</sup>  *包含：禁止轉售 (NFR)、Microsoft Valued Professional (MVP)、Region Director (RD)、Visual Studio 產業夥伴 (VSIP)、Microsoft 合作夥伴網路 (Enterprise)、BizSpark、MCT Software & Services Developer。排除：MCT Software & Services、Imagine。*
+
+> [!NOTE]
+> Microsoft 不再於雲端訂用帳戶中提供 Visual Studio Professional 年度訂用帳戶和 Visual Studio Enterprise 年度訂用帳戶。 現有的客戶體驗，以及更新、增加、減少或取消其訂用帳戶的能力將不會改變。 我們鼓勵新的客戶移至 [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) 來探索 Visual Studio 的不同購買選項。
+
+不確定您使用哪一個訂用帳戶？  連線到 [https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) 以查看指派給您的所有訂用帳戶。
+若沒有看到您的所有訂用帳戶，可能有一或多個訂用帳戶是指派到不同的電子郵件地址。  您必須以該電子郵件地址登入才能查看對應的訂用帳戶。
 
 深入了解 Azure DevOps 功能：
 
@@ -41,8 +47,7 @@ ms.locfileid: "49073645"
 - [Azure Test Plans](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web)
 - [Azure Artifacts](https://marketplace.visualstudio.com/items?itemName=ms.feed)
 
-不確定您使用哪一個訂用帳戶？  連線到 [https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) 以查看指派給您的所有訂用帳戶。
-若沒有看到您的所有訂用帳戶，可能有一或多個訂用帳戶是指派到不同的電子郵件地址。  您必須以該電子郵件地址登入才能查看對應的訂用帳戶。
+
 
 ## <a name="support-resources"></a>支援資源
 

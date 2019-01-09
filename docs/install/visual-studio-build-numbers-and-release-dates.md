@@ -11,15 +11,14 @@ ms.topic: reference
 helpviewer_keywords: ''
 ms.prod: visual-studio-dev15
 ms.custom: seodec18
-ms.technology: vs-acquisition
 ms.workload:
 - multiple
-ms.openlocfilehash: 47c51b1f4f5ce168e679027a704ffb2b23482817
-ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
+ms.openlocfilehash: f730655d1bfdab1f7cdf03be99faafeb7f2fcb65
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53248253"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53989811"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Visual Studio 組建編號和發行日期
 

@@ -2,7 +2,6 @@
 title: 如何：使用範圍陳述式程式碼片段 | Microsoft Docs
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - surround-with snippets
@@ -12,14 +11,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e2c5211291fbfe3bb7c8ab3fe1eaa371a2dd8e2c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d3d306d9399ee9454d1967c24a734c5d9b9b2eb9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31943185"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53908799"
 ---
-# <a name="how-to-use-surround-with-code-snippets"></a>如何：使用範圍陳述式程式碼片段
+# <a name="how-to-use-surround-with-code-snippets"></a>HOW TO：使用範圍陳述式程式碼片段
 
 下列程序說明如何使用範圍陳述式程式碼片段。 有三種方式可取得範圍陳述式程式碼片段︰透過鍵盤快速鍵、透過 [編輯] 功能表，以及透過操作功能表。
 

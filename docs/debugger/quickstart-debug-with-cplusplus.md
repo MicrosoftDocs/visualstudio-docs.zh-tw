@@ -3,7 +3,6 @@ title: 偵錯 C++
 description: 使用 Visual Studio 偵錯工具來偵錯機器碼
 ms.custom: mvc
 ms.date: 08/06/2018
-ms.technology: vs-ide-debug
 ms.topic: quickstart
 helpviewer_keywords:
 - debugger
@@ -13,14 +12,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 036774134f705d95fbc526a9e6a336ac43005820
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 015dc86890c6d60cf7326a554aa419ac0fe1645c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39639772"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53986475"
 ---
-# <a name="quickstart-debug-with-c-using-the-visual-studio-debugger"></a>快速入門：使用 Visual Studio 偵錯工具來偵錯 C++
+# <a name="quickstart-debug-with-c-using-the-visual-studio-debugger"></a>快速入門：使用 Visual Studio 偵錯工具對 C++ 進行偵錯
 
 Visual Studio 偵錯工具提供許多強大的功能，可協助您偵錯應用程式。 本主題提供了解一些基本功能的快速方法。
 
@@ -103,7 +102,7 @@ Visual Studio 偵錯工具提供許多強大的功能，可協助您偵錯應用
 
 應用程式會繼續執行，並呼叫 `doWork`，然後在您按下按鈕所在的程式碼行暫停。
 
-用來逐步執行程式碼的常用鍵盤命令包括 **F10** 和 **F11**。 如需更深入的指示，請參閱[初學者指南](../debugger/getting-started-with-the-debugger.md)。
+用來逐步執行程式碼的常用鍵盤命令包括 **F10** 和 **F11**。 如需詳細指示，請參閱[偵錯工具簡介](../debugger/debugger-feature-tour.md)。
 
 ## <a name="inspect-variables-in-a-datatip"></a>在資料提示中檢查變數
 

@@ -9,13 +9,12 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 9aa2defb458fba0d7962813743fa603fe71081e2
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: d244d7139e8dfd7aca6e8e85702a1c2fc6ea7657
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53053314"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53933753"
 ---
 # <a name="configure-load-test-run-settings"></a>設定負載測試回合設定
 

@@ -1,8 +1,6 @@
 ---
 title: 效能報告檢視篩選條件 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - profiling tools, Profiler Report view filter
@@ -13,19 +11,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 17fc42eab94d98ceb636e53e3ed6efd39a08f920
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: be48c6d0879a257e17be2d92dc00829097d11c15
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35254266"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53939877"
 ---
 # <a name="performance-report-view-filter"></a>效能報告檢視篩選條件
 [分析工具報表檢視篩選條件] 視窗位於 [效能報表] 視窗頂端。 如果您看不到這個視窗，請按一下 [顯示篩選條件] 按鈕。  
   
  您可以修改每個篩選條件子句來限定結果。 篩選條件產生器中包含下列資料行。  
   
-|篩選條件項目|描述|  
+|篩選條件項目|說明|  
 |-----------------|-----------------|  
 |和/或|如果這個子句和下一個子句必須同時為 true，請選擇**和**以進行結果比對。 如果這個子句或下一個子句可以為 true，請選擇**或**以進行結果比對。|  
 |欄位|從目前報告檔中可用的資料欄位清單中，選取要在篩選條件子句中使用的欄位。|  

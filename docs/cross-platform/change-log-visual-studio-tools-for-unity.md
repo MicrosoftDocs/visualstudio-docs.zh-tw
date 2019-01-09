@@ -10,12 +10,12 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 4db1d1d5340465b2e977a651eea2e6ad592c22e0
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: a7cd8da81fef0d3b4af8e61be979c8bea904072f
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53068376"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53803736"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-windows"></a>變更記錄檔 (Visual Studio Tools for Unity，Windows)
 Visual Studio Tools for Unity 變更記錄。
@@ -27,7 +27,7 @@ Visual Studio Tools for Unity 變更記錄。
 
 -   **整合：**
 
-    -   修正新增或移除位於第一個專案中的指令碼時，所發生的專案重新載入與 intellisense 問題。
+    -   修正新增或移除位於第一個專案中的指令碼時，所發生的專案重新載入與 IntelliSense 問題。
 
 ## <a name="3902"></a>3.9.0.2
  發行時間：2018 年 11 月 19 日

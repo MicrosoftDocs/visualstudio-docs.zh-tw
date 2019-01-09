@@ -1,8 +1,6 @@
 ---
-title: 如何︰設定權限 | Microsoft Docs
-ms.custom: ''
+title: HOW TO：設定權限 | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - profiling, setting permissions
@@ -15,14 +13,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a6acd54a140d3281f4fd539cc12d07adb11cfd6d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1bfe3773032ff29fce831f675921289ed7a825ea
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49897377"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53828104"
 ---
-# <a name="how-to-set-permissions"></a>如何：設定權限
+# <a name="how-to-set-permissions"></a>HOW TO：設定權限
 
 本文說明電腦的系統管理員如何將分析所需的安全性權限，授與在該電腦上沒有系統管理員權限的使用者或群組。
 
@@ -84,7 +82,7 @@ Users 群組的成員會需要存取磁碟上，與這個小組中之其他成�
 2. 變更目錄至以下路徑：
 
     ```cmd
-    <drive>:\Program Files\Microsoft Visual Studio 10\Team Tools\Performance Tools
+    <drive>:\Program Files\Microsoft Visual Studio 14\Team Tools\Performance Tools
     ```
 
 3. 執行下列命令：

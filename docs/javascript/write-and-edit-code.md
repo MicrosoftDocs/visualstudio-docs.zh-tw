@@ -1,0 +1,130 @@
+---
+title: JavaScript 開發人員編輯簡介
+description: 這個 Visual Studio 程式碼編輯器簡介，說明 Visual Studio 可讓撰寫、巡覽和了解 JavaScript 程式碼更加輕鬆的一些方式。
+ms.date: 12/13/2018
+ms.prod: visual-studio-dev15
+ms.topic: conceptual
+author: mikejo5000
+ms.author: mikejo
+manager: douge
+dev_langs:
+- JavaScript
+ms.workload:
+- nodejs
+ms.openlocfilehash: ebc5666ca037276d5b148151e2b41756b105dc2d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53967423"
+---
+# <a name="learn-to-use-the-code-editor"></a>了解如何使用程式碼編輯器
+
+在這個 Visual Studio 程式碼編輯器簡介中，我們將探討 Visual Studio 讓撰寫、巡覽和了解程式碼更加輕鬆的一些方式。
+
+> [!TIP]
+> 如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)頁面免費進行安裝。 根據您執行的應用程式開發類型，您可能需要安裝 Visual Studio 隨附的 **Node.js 開發工作負載**。
+
+本文假設您已熟悉 JavaScript 開發。 如果您不熟悉，建議您先瀏覽教學課程 (例如[建立 Node.js 和 Express 應用程式](../javascript/tutorial-nodejs.md))。
+
+> [!TIP]
+> 若要繼續遵循這篇文章，請確定您已為 Visual Studio 選取 JavaScript 設定。 如需選取整合式開發環境 (IDE) 的設定資訊，請參閱[環境設定](../ide/environment-settings.md)。 當您匯入設定時，請匯入 **JavaScript** 設定。
+
+## <a name="add-a-new-project-file"></a>新增專案檔
+
+您可以使用 IDE 將新檔案新增至您的專案。
+
+1. 當您的專案在 Visual Studio 中開啟時，以滑鼠右鍵按一下 [方案總管] (右窗格) 中的資料夾或專案節點，然後選擇 [新增] > [新增項目]。
+
+1. 在 [新增檔案] 對話方塊的 [一般] 類別下，選擇您要新增的檔案類型 (例如 [JavaScript 檔案])，然後選擇 [開啟]。
+
+    這會將新檔案新增至您的專案，並在編輯器中開啟該檔案。
+
+## <a name="use-intellisense-to-complete-words"></a>使用 IntelliSense 自動完成文字
+
+IntelliSense 是您撰寫程式碼時的重要資源。 它可以顯示類型可用成員的相關資訊，或方法之不同多載的參數詳細資料。 在下列程式碼中，當您鍵入 `Router()` 時，您會看到可傳遞的引數類型。 這稱為簽章說明。
+
+![使用 IntelliSense](../javascript/media/write-code-signature-checking.png)
+
+在您鍵入足夠的字元來釐清文字之後，也可以使用 IntelliSense 自動完成文字。 如果您將游標放在下列程式碼中的 `data` 字串後面並鍵入 `get`，IntelliSense 將會顯示稍早在程式碼中定義或在協力廠商程式庫中定義並已新增至專案的函式。
+
+![使用 IntelliSense](../javascript/media/write-code-intellisense.png)
+
+當您將滑鼠停留在程式設計項目時，IntelliSense 也會顯示類型的相關資訊。
+
+語言服務可以使用 TypeScript *d.ts* 檔案和 JSDoc 註解來提供 IntelliSense 資訊。 若是最常見的 JavaScript 程式庫，則會自動取得 *d.ts* 檔案。 如需如何取得 IntelliSense 資訊的詳細資料，請參閱 [JavaScript IntelliSense](../ide/javascript-intellisense.md?toc=/visualstudio/javascript/toc.json)
+
+## <a name="check-syntax"></a>檢查語法
+
+語言服務使用 ESLint 提供語法檢查和 Lint 檢查。 如果您需要設定編輯器中的語法檢查選項，請選取 [工具] > [選項] > [JavaScript/TypeScript] > [Linting]。 [Linting] 選項會將您導向至全域 ESLint 組態檔。
+
+在下列程式碼中，您會看到運算式上的綠色語法醒目提示 (綠色波浪線)。 將滑鼠停留在語法醒目提示上方。
+
+![檢視語法錯誤](../javascript/media/write-code-syntax-checking.png)
+
+此訊息的最後一行告訴您：語言服務必須要有逗號 (`,`)。 綠色波浪線表示警告。 紅色波浪線表示錯誤。
+
+在下方窗格中，您可以按一下 [錯誤清單] 索引標籤來查看警告和描述，以及檔案名稱和行號。
+
+![檢視錯誤清單](../javascript/media/write-code-error-list.png)
+
+您可以在 `"data"` 前面新增逗號 (`,`) 來修正此程式碼。
+
+## <a name="comment-out-code"></a>註解化程式碼
+
+工具列是 Visual Studio 功能表列下的按鈕列，有助您提高撰寫程式碼的效率。 例如，您可以切換 IntelliSense 完成模式 ([IntelliSense](../ide/using-intellisense.md) 是程式碼撰寫的輔助工具，可顯示其他項目中符合的方法清單)，增加或減少行的縮排，也可以為不要編譯的程式碼加上註解。 在本節中，我們會為一些程式碼加上註解。
+
+在編輯器中選取一或多行程式碼，然後選擇工具列上的 [註解選取行] 按鈕 ![加上註解按鈕](../javascript/media/write-code-comment-out.png)。 如果您習慣使用鍵盤，請按 **Ctrl**+**K**、**Ctrl**+**C**。
+
+JavaScript 註解字元 `//` 會新增至每個選取行的開頭，為程式碼加上註解。
+
+## <a name="collapse-code-blocks"></a>摺疊程式碼區塊
+
+如果您需要整理某些區域的程式碼檢視，您可以將它摺疊。 選擇函式第一行邊緣中其內有減號的小型灰色方塊。 或者，如果您是鍵盤使用者，請將游標放在建構函式程式碼中的任何位置，然後按 **Ctrl**+**M**、**Ctrl**+**M**。
+
+![大綱摺疊按鈕](../javascript/media/write-code-collapse-code.png)
+
+程式碼區塊只會摺疊到第一行，並且後面接著省略符號 (`...`)。 若要再次展開程式碼區塊，請按一下現在其內有加號的相同灰色方塊，或再次按 **Ctrl**+**M**、**Ctrl**+**M**。 這項功能稱為[大綱](../ide/outlining.md)，而且特別適用於摺疊較長的函式或整個類別。
+
+## <a name="view-definitions"></a>檢視定義
+
+Visual Studio 編輯器讓檢查類型、函式等定義變得十分輕鬆。其中一種方式是巡覽至包含定義的檔案，例如在參考程式設計項目的任何位置選擇 [移至定義]。 不會將焦點移離所處理檔案的較快速方式是使用[查看定義](../ide/go-to-and-peek-definition.md#peek-definition)。 讓我們查看下列範例中 `render` 方法的定義。
+
+以滑鼠右鍵按一下 `render`，然後從操作功能表選擇 [查看定義]。 或者，您也可以按 **Alt**+**F12**。
+
+   快顯視窗隨即出現，並內含 `render` 方法的定義。 您可以在快顯視窗內捲動，或甚至查看已查看程式碼中另一種類型的定義。
+
+   ![查看定義視窗](../javascript/media/write-code-peek-definition.png)
+
+1. 選擇快顯視窗右上方含 "x" 的小型方塊，以關閉查看的定義視窗。
+
+## <a name="use-code-snippets"></a>使用程式碼片段
+
+Visual Studio 提供實用的「程式碼片段」，讓您可以用來快速且輕鬆地產生常用的程式碼區塊。 [程式碼片段](../ide/code-snippets.md)適用於不同的程式設計語言 (包括 JavaScript)。 請在程式碼檔案中新增 `for` 迴圈。
+
+將游標放在您想要插入程式碼片段的位置，然後按一下右鍵並選擇 [程式碼片段] > [插入程式碼片段]。
+
+![Visual Studio 中的程式碼片段](../javascript/media/write-code-insert-snippet.png)
+
+[插入程式碼片段] 方塊隨即出現在編輯器中。 選擇 [一般]，然後按兩下清單中的 [for] 項目。
+
+![Visual Studio 中的 for 迴圈程式碼片段](../javascript/media/write-code-insert-snippet-for-loop.png)
+
+這會將 `for` 迴圈程式碼片段新增至您的程式碼：
+
+```javascript
+for (var i = 0; i < length; i++) {
+
+}
+```
+
+您可以選擇 [編輯] > [IntelliSense] > [插入程式碼片段]，然後選擇您語言的資料夾，以查看程式設計語言的可用程式碼片段。
+
+## <a name="see-also"></a>另請參閱
+
+- [程式碼片段](../ide/code-snippets.md)
+- [巡覽程式碼](../ide/navigating-code.md)
+- [大綱](../ide/outlining.md)
+- [移至定義和查看定義](../ide/go-to-and-peek-definition.md)
+- [重構](../ide/refactoring-in-visual-studio.md)
+- [使用 IntelliSense](../ide/using-intellisense.md)

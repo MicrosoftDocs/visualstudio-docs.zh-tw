@@ -3,7 +3,6 @@ title: 分析 CPU 使用量資料 (ASP.NET)
 description: 在 ASP.NET 中使用 CPU 使用量診斷工具測量應用程式效能
 ms.custom: mvc
 ms.date: 08/06/2018
-ms.technology: vs-ide-debug
 ms.topic: quickstart
 helpviewer_keywords:
 - Profiling Tools, quick start
@@ -13,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: 4d4f2382814cabbd26f93db27301ffa9b8d1c658
-ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
+ms.openlocfilehash: 594c6660c306faef635d14f60f1d717a04678db5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42627096"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53837390"
 ---
 # <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-aspnet"></a>快速入門：在 Visual Studio 中分析 CPU 使用量資料 (ASP.NET)
 
@@ -154,7 +153,7 @@ Windows 8 及更新版本必須執行附有偵錯工具的分析工具 ([診斷�
     }
     ```
 
-##  <a name="step-1-collect-profiling-data"></a>步驟 1︰收集分析資料 
+##  <a name="step-1-collect-profiling-data"></a>步驟 1：收集分析資料 
   
 1.  首先，在 `Simple` 建構函式的這行程式碼上，於應用程式中設定中斷點：
 

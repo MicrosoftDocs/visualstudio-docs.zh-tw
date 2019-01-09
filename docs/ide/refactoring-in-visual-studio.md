@@ -2,7 +2,6 @@
 title: 重構
 ms.date: 01/10/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - refactoring [Visual Studio]
@@ -11,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3275e03139b9befff0ec0e1f817bc8b54532bb72
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: 0518935b2d77f0d9348864e4094aae2dcf5c481d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53159428"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53866279"
 ---
 # <a name="refactor-code"></a>重構程式碼
 

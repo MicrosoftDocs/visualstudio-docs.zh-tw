@@ -13,17 +13,16 @@ helpviewer_keywords:
 - component ID, Visual Studio
 - install Visual Studio, administrator guide
 ms.service: ''
-ms.technology: vs-acquisition
 ms.prod: visual-studio-dev15
 ms.assetid: be73e3af-d87b-4d14-bd08-2e4bda074fb3
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d0496b9559e5e3fbd8984de97d98ea2e075db1a
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: e84aaad94916687a34179677cb569595746d86e3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53063162"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53964568"
 ---
 # <a name="visual-studio-enterprise-2017-component-directory"></a>Visual Studio Enterprise 2017 元件目錄
 
@@ -261,7 +260,7 @@ Microsoft.VisualStudio.Component.Windows81SDK | Windows 8.1 SDK | 15.6.27406.0 |
 
 **識別碼：** Microsoft.VisualStudio.Workload.ManagedDesktop
 
-**描述：** 使用 C#、Visual Basic 及 F# 建置 WPF、Windows Forms 與主控台應用程式。
+**描述：** 使用 C#、Visual Basic 及 F# 來建置 WPF、Windows Forms 與主控台應用程式。
 
 ### <a name="components-included-by-this-workload"></a>此工作負載所包含的元件
 
@@ -384,7 +383,7 @@ Component.MDD.Linux.GCC.arm | 內嵌及 IoT 開發 | 15.6.27309.0 | Optional
 
 **識別碼：** Microsoft.VisualStudio.Workload.NativeDesktop
 
-**描述：** 使用 Microsoft C++ 工具組、ATL 或 MFC 建置 Windows 傳統型應用程式。
+**描述：** 使用 Microsoft C++ 工具組、ATL 或 MFC 來建置 Windows 傳統型應用程式。
 
 ### <a name="components-included-by-this-workload"></a>此工作負載所包含的元件
 

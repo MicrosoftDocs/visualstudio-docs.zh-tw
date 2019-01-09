@@ -1,8 +1,6 @@
 ---
 title: WPF MSBuild 參考 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 dev_langs:
 - VB
@@ -18,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 460ba44e7e8734e294c6da3628b8f142b241c471
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 6cecba9106fc08e198d819567c10f3b96ef92fb7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39155013"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53819883"
 ---
 # <a name="wpf-msbuild-reference"></a>WPF MSBuild 參考
 Windows Presentation Foundation (WPF) 擴充 Microsoft Build Engine (MSBuild) 增加建置支援，本節會加以說明。  
@@ -51,4 +49,4 @@ Windows Presentation Foundation (WPF) 擴充 Microsoft Build Engine (MSBuild) �
  建置工作視窗組件。  
   
 ## <a name="see-also"></a>另請參閱  
- [ MSBuild](../msbuild/msbuild.md)
+ [MSBuild](../msbuild/msbuild.md)

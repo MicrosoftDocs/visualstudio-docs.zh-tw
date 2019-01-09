@@ -1,8 +1,6 @@
 ---
 title: 了解取樣資料值 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - sampling profiling method
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a6eb52273633e0b65aa4a7a7049198c49c20633d
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: d98a34abcd0e17f7b453ab3bd6e706665a9379bb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34476998"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53863468"
 ---
 # <a name="understand-sampling-data-values"></a>了解取樣資料值
 
@@ -53,5 +51,5 @@ Visual Studio 分析工具的「取樣」分析方法會依設定的間隔來中
 
 ## <a name="see-also"></a>另請參閱
 
-[操作說明：選擇收集方法](../profiling/how-to-choose-collection-methods.md)  
+[如何：選擇收集方法](../profiling/how-to-choose-collection-methods.md)  
 [分析效能工具資料](../profiling/analyzing-performance-tools-data.md)

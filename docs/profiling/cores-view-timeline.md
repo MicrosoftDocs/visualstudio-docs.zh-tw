@@ -1,8 +1,6 @@
 ---
 title: 核心檢視時間軸 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.cv.cores.timeline.threads
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 14bf030ce1adb1dede9ad2a377d8fb435d75e0c6
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 64dc3965c94a8427c0a5112d7b08715991cf8cb5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34690529"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53949598"
 ---
 # <a name="cores-view-timeline"></a>核心檢視時間表
 時間軸中的每個資料列都代表已分析系統上的邏輯處理器核心。 針對每個資料列，水平軸會顯示哪一個執行緒在指定時間點的邏輯核心上執行。 您可以將滑鼠指標停留在時間軸中感興趣的色彩上方，以傳回可識別執行緒的工具提示。 為了協助執行緒識別，視窗底部的圖例會顯示每個色彩所代表的內容。 使用 [縮放] 工具來放大和縮小，方法是按一下並拖曳，或按 CTRL 鍵並移動滑鼠滾輪。 切換 [核心檢視] 與 [執行緒檢視] 時，會維護縮放一致性。  

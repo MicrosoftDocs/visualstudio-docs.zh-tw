@@ -1,5 +1,5 @@
 ---
-title: 如何：自訂類別圖表 (類別設計工具)
+title: HOW TO：自訂類別圖表 (類別設計工具)
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -15,14 +15,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4546324a5789c408c22ac610d7a878ad990af2a1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 79279c4450e8dbf325ce8b64879ad2cb9569455e
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49913211"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684427"
 ---
-# <a name="how-to-customize-class-diagrams"></a>如何：自訂類別圖表
+# <a name="how-to-customize-class-diagrams"></a>HOW TO：自訂類別圖表
 
 您可以變更類別圖顯示資訊的方式， 也可以在設計介面上自訂整個圖表或個別類型。
 
@@ -129,7 +129,6 @@ ms.locfileid: "49913211"
 
 ## <a name="see-also"></a>另請參閱
 
-- [使用類別圖表](working-with-class-diagrams.md)
 - [如何：在成員標記法和關聯標記法之間變更](how-to-change-between-member-notation-and-association-notation.md)
 - [如何：檢視現有類型](how-to-view-existing-types.md)
-- [檢視類型與關聯性](viewing-types-and-relationships.md)
+- [檢視類型與關聯性](designing-and-viewing-classes-and-types.md)

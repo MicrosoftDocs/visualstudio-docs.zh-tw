@@ -2,7 +2,6 @@
 title: 匯入發行設定以發行至 Azure
 description: 建立和匯入發佈設定檔，以將應用程式從 Visual Studio 部署到 Azure App Service
 ms.date: 05/07/2018
-ms.technology: vs-ide-deployment
 ms.topic: tutorial
 helpviewer_keywords:
 - deployment, publish settings
@@ -11,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 804965df5142ddb18c1857a2540c5c69c08c4f9a
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: b0af5732e80098cabeda8f11901e968ebb3d4a9a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53058490"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53853940"
 ---
 # <a name="publish-an-application-to-azure-app-service-by-importing-publish-settings-in-visual-studio"></a>在 Visual Studio 中匯入發行設定，即可將應用程式發行至 Azure App Service
 

@@ -2,7 +2,6 @@
 title: 摺疊和展開程式碼的區域
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - outlining
@@ -17,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b39e9613e36b45f812738ab4eab6b945727b196b
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: ee657cdf0c7046021a3589378926b086caf504ac
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53064701"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53832881"
 ---
 # <a name="outlining"></a>大綱
 

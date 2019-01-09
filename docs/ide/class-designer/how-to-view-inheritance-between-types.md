@@ -1,5 +1,5 @@
 ---
-title: 如何：檢視類型之間的繼承 (類別設計工具)
+title: HOW TO：檢視類型之間的繼承 (類別設計工具)
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -16,16 +16,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3398a5096934397556ae1b20845153bd45a78528
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 9c7a9700996244d653f7a5ce32b78f4edd145d3f
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "34000490"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684479"
 ---
-# <a name="how-to-view-inheritance-between-types-in-class-designer"></a>如何：在類別設計工具中檢視類型之間的繼承
+# <a name="how-to-view-inheritance-between-types-in-class-designer"></a>HOW TO：在 [類別設計工具] 中檢視類型之間的繼承
 
-您可以在 [類別設計工具] 中，尋找類別圖表上基底類型及其衍生類型之間的繼承關聯性 (如果存在的話)。 若要建立繼承關聯性，但兩個類型之間沒有任何關聯性存在，請參閱[如何：建立類型之間的繼承](how-to-create-inheritance-between-types.md)。
+您可以在 [類別設計工具] 中，尋找類別圖表上基底類型及其衍生類型之間的繼承關聯性 (如果存在的話)。 若要建立兩個類型之間不存在的繼承關係，請參閱[如何：建立類型之間的繼承](how-to-create-inheritance-between-types.md)。
 
 ## <a name="to-find-the-base-type"></a>尋找基底類型
 
@@ -50,4 +50,4 @@ ms.locfileid: "34000490"
 ## <a name="see-also"></a>另請參閱
 
 - [如何：建立類型之間的關聯](how-to-create-associations-between-types.md)
-- [檢視類型與關聯性](viewing-types-and-relationships.md)
+- [檢視類型與關聯性](designing-and-viewing-classes-and-types.md)

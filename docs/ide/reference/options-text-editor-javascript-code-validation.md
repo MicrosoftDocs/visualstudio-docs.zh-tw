@@ -2,7 +2,6 @@
 title: 選項、文字編輯器、JavaScript、程式碼驗證
 ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.TypeScript.Code_Validation.JavaScript_Errors
@@ -11,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e06c0a82a70cf3764df4937ed7d42b2c87f8aa46
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: c70906430ecc7175e4ceae1bfd55b308b2487be9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50673203"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53905607"
 ---
 # <a name="options-text-editor-javascript-code-validation"></a>選項、文字編輯器、JavaScript、程式碼驗證
 使用 [選項] 對話方塊的 [程式碼驗證] 頁面，修改會影響 JavaScript 處理錯誤方式的設定。 您可以透過選擇功能表列上的 [工具] > [選項]，並展開 [文字編輯器] > [JavaScript] > [程式碼驗證] 來存取 [程式碼驗證] 頁面。

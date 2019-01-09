@@ -1,8 +1,7 @@
 ---
-title: 如何：將類別圖表匯出為影像 (類別設計工具)
+title: HOW TO：將類別圖表匯出為影像 (類別設計工具)
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - vs.classdesigner.exportdialog
@@ -14,14 +13,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c18fa28d52115d2666e2098a56a78658bebdc8f
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 5fe46216957f6104869e9cad7e95ce46769fb2a5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33956841"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53873826"
 ---
-# <a name="how-to-export-class-diagrams-as-images"></a>如何：將類別圖表匯出為影像
+# <a name="how-to-export-class-diagrams-as-images"></a>HOW TO：將類別圖表匯出為影像
 
 若要匯出從專案程式碼所建立的類別圖，請將該圖儲存為影像。 若要改為匯出 UML 類別圖表，請參閱[將圖表匯出為影像](../../modeling/export-diagrams-as-images.md)。
 
@@ -42,4 +41,4 @@ ms.locfileid: "33956841"
 ## <a name="see-also"></a>另請參閱
 
 - [如何：列印類別圖表](how-to-print-class-diagrams.md)
-- [使用類別圖表](working-with-class-diagrams.md)
+- [使用類別圖表](designing-and-viewing-classes-and-types.md)

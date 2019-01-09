@@ -14,12 +14,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 016e2a0641772992c9c3e6f423e105c42ae20ff1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2aff2d43d36fd543eea12d7fc60d3c56271af641
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49909818"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54088344"
 ---
 # <a name="implementing-smart-host-helper-interfaces"></a>實作智慧主機協助程式介面
 [IDebugDocumentHelper 介面](../winscript/reference/idebugdocumenthelper-interface.md)介面可大幅簡化建立智慧主機以進行主動式偵錯的工作，因為它提供智慧裝載所需的許多介面的實作。  
@@ -53,7 +53,7 @@ ms.locfileid: "49909818"
   
      下列程式碼會概述此處理序，但未包含錯誤檢查或其他強固的程式設計技術。  
   
-    ```  
+    ```cpp
     CoCreateInstance(CLSID_ProcessDebugManager, NULL,  
           CLSCTX_INPROC_SERVER | CLSCTX_INPROC_HANDLER  
           | CLSCTX_LOCAL_SERVER,  
@@ -80,13 +80,13 @@ ms.locfileid: "49909818"
 ## <a name="implementing-iactivescriptsitedebug"></a>實作 IActiveScriptSiteDebug  
  若要實作 [IActiveScriptSiteDebug::GetDocumentContextFromPosition](../winscript/reference/iactivescriptsitedebug-getdocumentcontextfromposition.md)，請取得對應至所指定網站的協助程式，然後取得所指定來源內容的起始文件位移，如下所示：  
   
-```  
+```cpp
 pddh->GetScriptBlockInfo(dwSourceContext, NULL, &ulStartPos, NULL);  
 ```  
   
  接下來，使用協助程式來建立指定字元位移的新文件內容：  
   
-```  
+```cpp
 pddh->CreateDebugDocumentContext(ulStartPos + uCharacterOffset, cChars, &pddcNew);  
 ```  
   

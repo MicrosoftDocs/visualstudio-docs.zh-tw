@@ -2,19 +2,18 @@
 title: 產生方法
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1e5cf156c6c17e8a9bf1fb9f40f75c1e72b7be94
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: c0b84ac126bd7a7bb14a90f03e2d2dd10f881b01
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53057174"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53836343"
 ---
 # <a name="generate-a-method-in-visual-studio"></a>在 Visual Studio 中產生方法
 

@@ -2,7 +2,6 @@
 title: 建立網站範本
 ms.date: 01/02/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio templates, Web
@@ -12,12 +11,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: cff4fda5113cdbacba2d9389e360707f49ba595b
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 052e9daa7911051138e831436cad23de7ae7ee8b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53063664"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53921847"
 ---
 # <a name="how-to-manually-create-web-templates"></a>HOW TO：手動建立網站範本
 

@@ -1,8 +1,6 @@
 ---
 title: AssignProjectConfiguration 工作 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 dev_langs:
 - VB
@@ -15,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d5fefc8098d94967b06bbe60f398a8a734d55202
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: f9e758fe7128c9ae9562c400008ab8573d7d8df6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37946598"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53850884"
 ---
 # <a name="assignprojectconfiguration-task"></a>AssignProjectConfiguration 工作
 此工作會接受組態字串清單，並將它們指派給指定的專案。  
@@ -28,11 +26,11 @@ ms.locfileid: "37946598"
 ## <a name="task-parameters"></a>工作參數  
  下表說明 `AssignProjectConfiguration` 工作的參數。  
   
-|參數|描述|  
+|參數|說明|  
 |---------------|-----------------|  
 |`SolutionConfigurationContents`|選擇性的 `string` 輸出參數。<br /><br /> 包含 XML 字串，其中含有每個專案的專案組態。 工作會將組態指派給具名的專案。|  
-|`DefaultToVcxPlatformMapping`|選擇性的 `string` 輸出參數。<br /><br /> 包含以分號分隔的對應清單，這些對應是從大部分類型所使用之平台名稱到 *.vcxproj* 檔案所使用之平台名稱的對應。<br /><br /> 例如: <br /><br /> `"AnyCPU=Win32;X86=Win32;X64=X64"`|  
-|`VcxToDefaultPlatformMapping`|Optional<br /><br /> `string` 輸出參數。<br /><br /> 包含 *.vcxproj* 平台名稱與大部分類型所使用之平台名稱的對應清單 (以分號分隔)。<br /><br /> 例如: <br /><br /> `"Win32=AnyCPU;X64=X64"`|  
+|`DefaultToVcxPlatformMapping`|選擇性的 `string` 輸出參數。<br /><br /> 包含以分號分隔的對應清單，這些對應是從大部分類型所使用之平台名稱到 *.vcxproj* 檔案所使用之平台名稱的對應。<br /><br /> 例如：<br /><br /> `"AnyCPU=Win32;X86=Win32;X64=X64"`|  
+|`VcxToDefaultPlatformMapping`|Optional<br /><br /> `string` 輸出參數。<br /><br /> 包含 *.vcxproj* 平台名稱與大部分類型所使用之平台名稱的對應清單 (以分號分隔)。<br /><br /> 例如：<br /><br /> `"Win32=AnyCPU;X64=X64"`|  
 |`CurrentProjectConfiguration`|選擇性的 `string` 輸出參數。<br /><br /> 包含目前專案的組態。|  
 |`CurrentProjectPlatform`|選擇性的 `string` 輸出參數。<br /><br /> 包含目前專案的平台。|  
 |`OnlyReferenceAndBuildProjectsEnabledInSolutionConfiguration`|選擇性的 `bool` 輸出參數。<br /><br /> 包含旗標，指出即使已在專案組態中停用參考，還是應該建置它們。|  

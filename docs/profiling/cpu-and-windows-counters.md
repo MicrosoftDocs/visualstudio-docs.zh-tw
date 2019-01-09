@@ -1,8 +1,6 @@
 ---
 title: CPU 和 Windows 計數器 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.property.counters
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 585fb2fa8d2662d1a2bec7915bf1f08a4dc771e4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ddf173f39accb0bb9d2907349c82accdd4f21b40
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49865917"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53912632"
 ---
 # <a name="cpu-and-windows-counters"></a>CPU 和 Windows 計數器
 
@@ -127,13 +125,11 @@ Visual Studio 分析工具會繼續支援特定平台的特定事件。 例如�
 
      **\<Visual Studio 效能工具目錄>\VSPerfCmd /querycounters**
 
-     其中 *\<Visual Studio 效能工具目錄>* 是您通常安裝 Visual Studio 之效能工具目錄的路徑
-
-     *C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Performance Tools*
+     其中 \<Visual Studio 效能工具目錄> 是您 Visual Studio 安裝的效能工具目錄路徑。 若要取得效能工具的路徑，請參閱[指定命令列工具的路徑](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)。
 
 ## <a name="see-also"></a>另請參閱
 
 [概觀](../profiling/overviews-performance-tools.md)  
-[操作說明：選擇取樣事件](../profiling/how-to-choose-sampling-events.md)  
-[操作說明：收集 CPU 計數器資料](../profiling/how-to-collect-cpu-counter-data.md)  
+[如何：選擇取樣事件](../profiling/how-to-choose-sampling-events.md)  
+[如何：收集 CPU 計數器資料](../profiling/how-to-collect-cpu-counter-data.md)  
 [如何：收集 Windows 計數器資料](../profiling/how-to-collect-windows-counter-data.md)

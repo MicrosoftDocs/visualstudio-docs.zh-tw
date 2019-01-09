@@ -1,8 +1,6 @@
 ---
 title: 函式詳細資料檢視 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.view.functiondetails
@@ -15,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7bfc700f0757d99686e28942ff796cf117b1456f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6ba470b4ec9ef3bc52f9c7250649fc098c999149
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49951219"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53945336"
 ---
 # <a name="function-details-view"></a>函式詳細資料檢視
 [函式詳細資料檢視] 視窗會顯示下列資訊︰  
@@ -72,7 +70,7 @@ ms.locfileid: "49951219"
 ## <a name="function-performance-details"></a>函式效能詳細資料  
  [函式效能詳細資料] 資料表會提供所選取函式效能度量的摘要資料。 數值和百分比都會顯示。 您可以指定出現在 [效能度量] 清單中圖表和詳細資料表內的程式碼剖析資料。  
   
-|資料行|描述|  
+|資料行|說明|  
 |------------|-----------------|  
 |**專有**|- 執行函式主體時發生的效能度量數目。|  
 |**對內呼叫**|- 在所選取函式呼叫的函式中發生的效能度量數目。|  

@@ -9,12 +9,12 @@ description: 了解如何取得及管理您的 Visual Studio 訂用帳戶產品�
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 88fb704df9858572581d205a8c5d457203488ee3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: cdd37aae3e0a3e3caebafa026fd5dcf3922c0998
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49900848"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53803820"
 ---
 # <a name="using-product-keys-in-visual-studio-subscriptions"></a>使用 Visual Studio 訂用帳戶的產品金鑰
 
@@ -32,14 +32,14 @@ Visual Studio 訂用帳戶能讓您存取各種用於設計、開發、測試以
 ## <a name="retail-and-volume-licensing-versions-of-products"></a>產品的零售和大量授權版本
 Visual Studio 訂用帳戶提供精選 Microsoft 產品的零售和大量授權版本。 下載提供的某些產品只在零售版本或大量授權版本有提供；有些則兩種版本都有提供。 一般而言，需要啟用的產品，例如 Windows、Windows Server 和 Office 用戶端產品，都只透過下載在零售版本中提供。
 
-大量授權客戶也可以從大量授權服務中心 (VSLC) 下載軟體，取得大量授權版本的產品 (及其產品金鑰)。  VLSC 的存取是由客戶公司內部的指定系統管理員負責管理。
+大量授權客戶也可以從大量授權服務中心 (VLSC) 下載軟體，以取得大量授權版本的產品 (及其產品金鑰)。  VLSC 的存取是由客戶公司內部的指定系統管理員負責管理。
 
 ## <a name="daily-product-key-claim-limits"></a>每日產品金鑰索取限額
 Microsoft 承諾保護 Visual Studio 訂用帳戶方案的完整性，以及該方案正當訂閱者就其投資所享的軟體和權益價值。 為了支持此一承諾，Microsoft 實施了 Visual Studio 訂用帳戶的每日金鑰索取限額。 每日金鑰索取限額限制每個訂用帳戶每天可以索取的金鑰數目。
 
 所有 Visual Studio 訂用帳戶每日可取用的金鑰數限制為 10 組，包括經由 MPN、BizSpark、MCT 軟體與服務及 MCT 所提供的金鑰，但 Visual Studio Professional (MPN) 除外，其每日只可取用 7 組金鑰。
 
-注意：金鑰索取限額日後有可能變更。 請到這裡查看最新限額。
+注意:金鑰索取限額日後有可能變更。 請到這裡查看最新限額。
 
 如果您領取的金鑰數目已達您的訂用帳戶 24 小時內所容許的上限，您將會看到錯誤，告知您已達限額。 限額每 24 小時重設一次，自太平洋時間上午 12:01 開始。
 
@@ -58,7 +58,7 @@ Microsoft 承諾保護 Visual Studio 訂用帳戶方案的完整性，以及該�
 
 ### <a name="product-key-types"></a>產品金鑰類型
 
-|    金鑰類型           |    描述                                                                                                                                                                                                           |
+|    金鑰類型           |    說明                                                                                                                                                                                                           |
 |-------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |    不適用                    |    安裝這個產品並不需要任何金鑰。                                                       |
 |    零售                     |    零售金鑰允許多次啟用，並且用於產品的零售版本。 在許多情況下，每一個金鑰可允許啟用產品 10 次，不過通常同一部機器可以允許啟用更多次。                                                       |

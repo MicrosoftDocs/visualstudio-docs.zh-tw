@@ -2,7 +2,6 @@
 title: 選項對話方塊、環境、一般
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VS.Message.0x800a002e
@@ -27,12 +26,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b52a6815fe9eb9333d6a87b25c1b8dd33ff7eb08
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 15af9d627e425df57443cbf663b2b231b74f9a7e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389159"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53945531"
 ---
 # <a name="general-environment-options-dialog-box"></a>選項對話方塊、環境、一般
 
