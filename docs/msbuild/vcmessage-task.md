@@ -1,8 +1,6 @@
 ---
 title: VCMessage 工作 | Microsoft Docs
-ms.custom: ''
 ms.date: 06/27/2018
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - vc.task.vcmessage
@@ -21,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 66c245f78c27521e9db53327f8dfdc567ed0e995
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: f51abd957f5a39cdc3af1f34bf3af28999ab80fe
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39154135"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53928957"
 ---
 # <a name="vcmessage-task"></a>VCMessage 工作
 在組建期間記錄警告和錯誤訊息。  
@@ -37,7 +35,7 @@ ms.locfileid: "39154135"
 ## <a name="parameters"></a>參數  
  下表描述 **VCMessage** 工作的參數。  
   
-|參數|描述|  
+|參數|說明|  
 |---------------|-----------------|  
 |**引數**|選擇性的 **String** 參數。<br /><br /> 要顯示的訊息清單 (以分號分隔)。|  
 |**程式碼**|必要的 **String** 參數。<br /><br /> 限定訊息的錯誤號碼。|  
