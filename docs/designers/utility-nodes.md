@@ -2,7 +2,6 @@
 title: 公用程式節點
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: reference
 ms.assetid: ff732221-b731-424c-ad5b-82ef5f21dff5
 author: gewarren
@@ -10,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b4d3371001c3df3b5233562ce7b30e711ed12d4c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 7d6bab6f3ce689903003b055e89389bb73e48b7c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31918201"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53883103"
 ---
 # <a name="utility-nodes"></a>公用程式節點
 

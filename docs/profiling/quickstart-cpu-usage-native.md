@@ -1,9 +1,7 @@
 ---
 title: 分析 CPU 使用量資料 (C++)
 description: 使用 CPU 使用量診斷工具在 C++ 中測量應用程式效能
-ms.custom: ''
 ms.date: 08/06/2018
-ms.technology: vs-ide-debug
 ms.topic: quickstart
 f1_keywords:
 - ''
@@ -15,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c4cf51a4961d6b9139d4f8fdbfd6c5df2ab0052c
-ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
+ms.openlocfilehash: 38bacd51727ea2091e23adb606ff65de901f479a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42627000"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53883168"
 ---
 # <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-c"></a>快速入門：在 Visual Studio 中分析 CPU 使用量資料 (C++)
 
@@ -115,7 +113,7 @@ Windows 8 及更新版本必須執行附有偵錯工具的分析工具 ([診斷�
     }
     ```
   
-## <a name="step-1-collect-profiling-data"></a>步驟 1︰收集分析資料 
+## <a name="step-1-collect-profiling-data"></a>步驟 1：收集分析資料 
   
 1.  首先，在 `main` 函式的這行程式碼上，於應用程式中設定中斷點：
 

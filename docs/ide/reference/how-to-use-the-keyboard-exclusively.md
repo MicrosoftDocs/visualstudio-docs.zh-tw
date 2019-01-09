@@ -1,9 +1,8 @@
 ---
-title: 如何：完全只使用鍵盤
+title: HOW TO：以獨佔模式使用鍵盤
 description: 了解如何使用預設的鍵盤快速鍵組合，在 Visual Studio 整合式開發環境 (IDE) 中輕鬆巡覽和撰寫程式碼。
 ms.date: 08/22/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - Toolbox, shortcut keys
@@ -18,14 +17,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b76e34ba77335c242c752c055e2560cc73141d2
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 7c32eadc67d0b36440d30f8fee75a5444a31eb60
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388396"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53874455"
 ---
-# <a name="how-to-use-the-keyboard-exclusively"></a>如何：完全只使用鍵盤
+# <a name="how-to-use-the-keyboard-exclusively"></a>HOW TO：以獨佔模式使用鍵盤
 
 > [!TIP]
 > 若要深入了解最新的協助工具更新，請參閱 [Visual Studio 2017 15.3 版中的協助工具改善](https://blogs.msdn.microsoft.com/visualstudio/2017/08/14/accessibility-improvements-in-visual-studio-2017-version-15-3/) \(英文\) 部落格文章。
