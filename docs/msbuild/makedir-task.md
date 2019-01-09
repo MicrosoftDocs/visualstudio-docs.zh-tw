@@ -1,8 +1,6 @@
 ---
 title: MakeDir 工作 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#MakeDir
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b90ad8ca887c0868f568dee3ed0264f56f122a49
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: d56801821a0c041e5de0785a39146a0e8f5a747b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39080892"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53960926"
 ---
 # <a name="makedir-task"></a>MakeDir 工作
 建立目錄，以及任何父目錄 (如有必要)。  
@@ -33,7 +31,7 @@ ms.locfileid: "39080892"
 ## <a name="parameters"></a>參數  
  下表說明 `MakeDir` 工作的參數。  
   
-|參數|描述|  
+|參數|說明|  
 |---------------|-----------------|  
 |`Directories`|必要的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 要建立的目錄集合。|  
 |`DirectoriesCreated`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 輸出參數。<br /><br /> 這項工作所建立的目錄。 如果無法建立某些目錄，就可能未包含所有已傳入 `Directories` 參數的項目。|  

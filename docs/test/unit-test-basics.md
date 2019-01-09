@@ -2,7 +2,6 @@
 title: 單元測試基本概念
 ms.date: 2016-01-07
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 f1_keywords:
 - vs.UnitTest.CreateUnitTest
@@ -11,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b56608a0d81be17fbd68ad7ccd0d5626a818376
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: ce1689f6780f88dd57d41090969082de7ac5685d
+ms.sourcegitcommit: a7e6675185fd34ac8084f09627b2038046cdd2b1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53740347"
+ms.lasthandoff: 01/07/2019
+ms.locfileid: "54060799"
 ---
 # <a name="unit-test-basics"></a>單元測試基本概念
 
@@ -26,7 +25,7 @@ ms.locfileid: "53740347"
 
 您可以從您的程式碼快速產生測試專案和測試方法，或在您需要的時候以手動方式建立此測試。 當您使用 IntelliTest 來探索 .NET 程式碼時，可以產生測試資料和單元測試套件。 其會為程式碼中的每一個陳述式產生一個用以執行該陳述式的測試輸入。 了解如何 [產生程式碼的單元測試](generate-unit-tests-for-your-code-with-intellitest.md)。
 
-[測試總管] 也可以執行在其中已實作 [測試總管] 附加元件介面的協力廠商和開放原始碼的單元測試架構。 您可以透過 Visual Studio 擴充功能管理員和 Visual Studio 組件庫加入多個這些架構。 請參閱[安裝協力廠商單元測試架構](../test/install-third-party-unit-test-frameworks.md)。
+[測試總管] 也可以執行在其中已實作 [測試總管] 附加元件介面的協力廠商和開放原始碼的單元測試架構。 您可以透過 Visual Studio 擴充功能管理員和 Visual Studio 組件庫加入多個這些架構。 如需詳細資訊，請參閱[安裝協力廠商單元測試架構](../test/install-third-party-unit-test-frameworks.md)。
 
 ## <a name="get-started"></a>開始使用
 

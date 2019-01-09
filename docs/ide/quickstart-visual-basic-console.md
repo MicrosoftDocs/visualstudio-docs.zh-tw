@@ -4,7 +4,6 @@ description: 了解如何使用 Visual Basic 在 Visual Studio 中逐步建立�
 ms.date: 12/10/2017
 ms.prod: visual-studio-dev15
 ms.custom: seodec18
-ms.technology: vs-acquisition
 ms.topic: quickstart
 ms.devlang: vb
 author: TerryGLee
@@ -14,12 +13,12 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 9e93ea0c5f9d12b1a5a395b153bf3edbc5d26b9c
-ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
+ms.openlocfilehash: 136a3b00b689bfcdac50464a0b0091a476b5b434
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53684463"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53917026"
 ---
 # <a name="quickstart-create-your-first-console-app-in-visual-studio-with-visual-basic"></a>快速入門：使用 Visual Basic 在 Visual Studio 中建立您的第一個主控台應用程式
 

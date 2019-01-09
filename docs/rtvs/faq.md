@@ -3,19 +3,18 @@ title: Visual Studio R 工具常見問題集
 description: 在 Visual Studio 中有關 R 的常見問題。
 ms.date: 12/04/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-rtvs
 ms.topic: reference
 author: kraigb
 ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 29634d63cf8e898203ff4d72a23296bdb14019e0
-ms.sourcegitcommit: 75e02ed88a1ace6e8265fd4e3a82a1bc78f3adca
+ms.openlocfilehash: 1da67a213ed1add0ce670ca133163538e2cde1b4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/13/2018
-ms.locfileid: "53348488"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53913852"
 ---
 # <a name="frequently-asked-questions"></a>常見問題集
 

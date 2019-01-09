@@ -2,7 +2,6 @@
 title: 使用 tasks.vs.json launch.vs.json 來自訂組建偵錯工作
 ms.date: 02/21/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - NMAKE [Visual Studio]
@@ -16,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1a5249c1b60c1a3a08e37386bcfbd3d06706bae8
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 434ba3e01313e79c734b67b65c7cff0530f4d41d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53063175"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53836320"
 ---
 # <a name="customize-build-and-debug-tasks-for-open-folder-development"></a>針對「開啟資料夾」自訂建置及對工作進行偵錯
 

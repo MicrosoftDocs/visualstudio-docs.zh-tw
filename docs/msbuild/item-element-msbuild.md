@@ -1,8 +1,6 @@
 ---
 title: Item 項目 (MSBuild) | Microsoft Docs
-ms.custom: ''
 ms.date: 03/13/2017
-ms.technology: msbuild
 ms.topic: reference
 dev_langs:
 - VB
@@ -18,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6e33f057f3184a9a9bb19311f7206c6ab273dab8
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: eab46fa67230ef4a42c6025d99a689ef37d213b0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39081016"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53908276"
 ---
 # <a name="item-element-msbuild"></a>Item 項目 (MSBuild)
 包含使用者定義的項目及其中繼資料。 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 專案中使用的每個項目，都必須指定為 `ItemGroup` 項目的子系。  
@@ -70,7 +68,7 @@ ms.locfileid: "39081016"
 
 ### <a name="attributes"></a>屬性  
 
-|屬性|描述|  
+|屬性|說明|  
 |---------------|-----------------|  
 |`Include`|選擇性屬性。<br /><br /> 要包含在項目清單中的檔案或萬用字元。|  
 |`Exclude`|選擇性屬性。<br /><br /> 要從項目清單中排除的檔案或萬用字元。|  
@@ -83,13 +81,13 @@ ms.locfileid: "39081016"
 
 ### <a name="child-elements"></a>子元素  
 
-|元素|描述|  
+|元素|說明|  
 |-------------|-----------------|  
 |[ItemMetadata](../msbuild/itemmetadata-element-msbuild.md)|使用者定義的項目中繼資料索引鍵，其中含有項目中繼資料值。 項目中可能有零個或多個 `ItemMetadata` 項目。|  
 
 ### <a name="parent-elements"></a>父元素  
 
-|元素|描述|  
+|元素|說明|  
 |-------------|-----------------|  
 |[ItemGroup](../msbuild/itemgroup-element-msbuild.md)|項目的群組項目。|  
 

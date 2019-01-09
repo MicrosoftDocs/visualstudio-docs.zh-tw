@@ -2,7 +2,6 @@
 title: 格式、XAML、文字編輯器、選項
 ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.XAML.Formatting.General
@@ -31,12 +30,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 4686760625062fea7984cdc05386284f8f98c4ee
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: b5eaddd1170fa1f6f076e79de2038e0089fd4f39
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388984"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53950234"
 ---
 # <a name="options-text-editor-xaml-formatting"></a>格式、XAML、文字編輯器、選項
 

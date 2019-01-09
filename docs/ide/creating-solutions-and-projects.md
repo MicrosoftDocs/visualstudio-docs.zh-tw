@@ -2,7 +2,6 @@
 title: 建立方案和專案
 ms.date: 02/06/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - vs.openprojectfromweb
@@ -17,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 06696ca975fb80eaa97cd265c9d45e6174d3b053
-ms.sourcegitcommit: 75e02ed88a1ace6e8265fd4e3a82a1bc78f3adca
+ms.openlocfilehash: d9c3477926161da09d0b669d32316933d967ee98
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/13/2018
-ms.locfileid: "53348538"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53908888"
 ---
 # <a name="create-solutions-and-projects"></a>建立方案和專案
 

@@ -2,7 +2,6 @@
 title: 選項對話方塊、環境、擴充功能和更新
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Environment.ExtensionManager
@@ -12,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f2ff9cc6ea88aa7a8e7c7e69c2fd51c8f7997a98
-ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
+ms.openlocfilehash: 47784d19dee5ff911432f9849ebe4545ecee761f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53684271"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53831033"
 ---
 # <a name="extensions-and-updates-environment-options-dialog-box"></a>選項對話方塊、環境、擴充功能和更新
 

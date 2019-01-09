@@ -2,7 +2,6 @@
 title: 重構方法簽章
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
@@ -15,12 +14,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 81f907ae1f7def1ce401990dc505f423aac5a4c1
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 68c814fca9d5e1df2c01e803b13cd5b03e8935e4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53062331"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53968400"
 ---
 # <a name="change-a-method-signature-refactoring"></a>變更方法特徵標記重構
 

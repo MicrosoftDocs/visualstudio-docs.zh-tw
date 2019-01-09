@@ -10,13 +10,12 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: a2bc06ed17522eef36841b72859554163068afa6
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: a060d6fd038d3dfaf0c869aba2c660efba4c9ecd
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53048629"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53933200"
 ---
 # <a name="edit-load-tests"></a>編輯負載測試
 

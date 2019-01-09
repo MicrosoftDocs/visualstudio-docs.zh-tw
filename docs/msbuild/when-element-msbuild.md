@@ -1,8 +1,6 @@
 ---
 title: When 元素 (MSBuild) | Microsoft Docs
-ms.custom: ''
 ms.date: 03/13/2017
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#When
@@ -20,15 +18,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a4a9a68b00d4eed998a5ba742e640cd27db74cc
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 6b6ab2d9520e915993fce877d9c3055972c5ab8c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39152420"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53932297"
 ---
 # <a name="when-element-msbuild"></a>When 元素 (MSBuild)
-指定 `Choose` 元素可能要選取的程式碼區塊。  
+指定 `Choose` 項目可能要選取的程式碼區塊。  
   
  \<Project>  
  \<Choose>  
@@ -50,27 +48,27 @@ ms.locfileid: "39152420"
 ```  
 
 ## <a name="attributes-and-elements"></a>屬性和元素  
- 以下各節說明屬性、子元素和父元素。  
+ 下列章節說明屬性、子元素和父元素。  
 
 ### <a name="attributes"></a>屬性  
 
-|屬性|描述|  
+|屬性|說明|  
 |---------------|-----------------|  
 |條件|必要屬性。<br /><br /> 要評估的條件。 如需詳細資訊，請參閱[條件](../msbuild/msbuild-conditions.md)。|  
 
 ### <a name="child-elements"></a>子元素  
 
-|元素|描述|  
+|元素|說明|  
 |-------------|-----------------|  
-|[Choose](../msbuild/choose-element-msbuild.md)|選擇性元素。<br /><br /> 評估子元素，以選取要執行的一個程式碼區段。 `Choose` 元素中可能有零個或多個 `When` 元素。|  
-|[ItemGroup](../msbuild/itemgroup-element-msbuild.md)|選擇性元素。<br /><br /> 包含一組使用者定義的 [Item](../msbuild/item-element-msbuild.md) 元素。 `ItemGroup` 元素中可能有零個或多個 `When` 元素。|  
-|[PropertyGroup](../msbuild/propertygroup-element-msbuild.md)|選擇性元素。<br /><br /> 包含一組使用者定義的 [Property](../msbuild/property-element-msbuild.md) 元素。 `When` 元素中可能有零個或多個 `PropertyGroup` 元素。|  
+|[Choose](../msbuild/choose-element-msbuild.md)|選擇性項目。<br /><br /> 評估子元素，以選取要執行的一個程式碼區段。 `Choose` 項目中可能有零個或多個 `When` 項目。|  
+|[ItemGroup](../msbuild/itemgroup-element-msbuild.md)|選擇性項目。<br /><br /> 包含一組使用者定義的 [Item](../msbuild/item-element-msbuild.md) 元素。 `ItemGroup` 元素中可能有零個或多個 `When` 元素。|  
+|[PropertyGroup](../msbuild/propertygroup-element-msbuild.md)|選擇性項目。<br /><br /> 包含一組使用者定義的 [Property](../msbuild/property-element-msbuild.md) 項目。 `When` 元素中可能有零個或多個 `PropertyGroup` 元素。|  
 
 ### <a name="parent-elements"></a>父元素  
 
-|元素|描述|  
+|元素|說明|  
 |-------------|-----------------|  
-|[Choose 元素 (MSBuild)](../msbuild/choose-element-msbuild.md)|評估子元素，以選取要執行的一個程式碼區段。|  
+|[Choose 項目 (MSBuild)](../msbuild/choose-element-msbuild.md)|評估子元素，以選取要執行的一個程式碼區段。|  
 
 ## <a name="remarks"></a>備註  
  如果 `Condition` 屬性評估為 true，則會執行 `When` 元素的子元素 `ItemGroup` 和 `PropertyGroup`，且略過所有後續的 `When` 元素。  

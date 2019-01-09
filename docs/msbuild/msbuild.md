@@ -1,8 +1,6 @@
 ---
 title: MSBuild | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, about MSBuild
@@ -13,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ea1db2c465c362fee0f3e06074b1cea3562d21fd
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: a3ea25520428783aaedc12e1666475feb104b583
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53739941"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53928798"
 ---
 # <a name="msbuild"></a>MSBuild
 [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] 是用於建置應用程式的平台。 這個引擎也稱為 MSBuild，提供了專案檔的 XML 結構描述，以控制組建平台處理和建置軟體的方式。 Visual Studio 會使用 MSBuild，但 MSBuild 並不倚賴 Visual Studio。 藉由在專案或方案檔上叫用 *msbuild.exe*，就可以在未安裝 Visual Studio 的環境中組織及建置產品。

@@ -1,8 +1,6 @@
 ---
 title: HOW TO：使用分析工具命令列以檢測原生服務並收集詳細計時資料 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: dfe58b39-63f8-4a87-ab3a-2b5b14faa8d0
 author: mikejo5000
@@ -10,12 +8,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7b561e7d3be7bcbd3f71c81043e352482f0a04f6
-ms.sourcegitcommit: 34840a954ed3446c789e80ee87da6cbf1203cbb5
+ms.openlocfilehash: 9a4b01cb5543da45733be05c24b8b09209107b68
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53592465"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53966621"
 ---
 # <a name="how-to-instrument-a-native-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line"></a>HOW TO：使用分析工具命令列以檢測原生服務並收集詳細計時資料
 本文描述如何使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具命令列工具來檢測原生 (C/C++) 服務，並收集詳細的計時資料。  

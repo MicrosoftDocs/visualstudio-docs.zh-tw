@@ -1,8 +1,6 @@
 ---
 title: MSBuild 保留和已知屬性 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 dev_langs:
 - VB
@@ -17,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8ac2305b11702e7e8364cc2eedd8446c987def3a
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: 82ab1ec887fd6a0c881f2d1e4b0c1295e1c67716
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53648861"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53967731"
 ---
 # <a name="msbuild-reserved-and-well-known-properties"></a>MSBuild 保留和已知屬性
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 提供一組預先定義的屬性，用來儲存專案檔和 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 二進位檔的相關資訊。 這些屬性的評估方式與其他 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 屬性相同。 例如，若要使用 `MSBuildProjectFile` 屬性，請輸入 `$(MSBuildProjectFile)`。  

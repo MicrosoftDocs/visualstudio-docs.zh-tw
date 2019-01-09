@@ -1,8 +1,6 @@
 ---
 title: UpdateManifest 工作 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 dev_langs:
 - VB
@@ -18,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 03d93e8cb6d57a0f114a7f4fa1d45342437587f2
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 3fc6b89034815f0eb1ee5762e911c42075d115cc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39153698"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53985559"
 ---
 # <a name="updatemanifest-task"></a>UpdateManifest 工作
 更新資訊清單中選取的屬性，並重新簽署。  
@@ -31,7 +29,7 @@ ms.locfileid: "39153698"
 ## <a name="parameters"></a>參數  
  下表說明 `UpdateManifest` 工作的參數。  
   
-|參數|描述|  
+|參數|說明|  
 |---------------|-----------------|  
 |`ApplicationManifest`|必要的 <xref:Microsoft.Build.Framework.ITaskItem> 參數。<br /><br /> 指定應用程式資訊清單。|  
 |`ApplicationPath`|必要的 `String` 參數。<br /><br /> 指定應用程式資訊清單的路徑。|  
@@ -39,7 +37,7 @@ ms.locfileid: "39153698"
 |`OutputManifest`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem> 輸出參數。<br /><br /> 指定包含更新過之屬性的資訊清單。|  
   
 ## <a name="remarks"></a>備註  
- 除了具有表格中所列的參數之外，此工作會繼承 <xref:Microsoft.Build.Utilities.Task> 類別中的參數。 如需這些其他參數的清單及其說明，請參閱 [Task 基底類別](../msbuild/task-base-class.md)。  
+ 除了具有表格中所列的參數之外，此工作會繼承 <xref:Microsoft.Build.Utilities.Task> 類別中的參數。 如需這些額外參數及其說明的清單，請參閱 [Task 基底類別](../msbuild/task-base-class.md)。  
   
 ## <a name="see-also"></a>另請參閱  
  [工作](../msbuild/msbuild-tasks.md)   

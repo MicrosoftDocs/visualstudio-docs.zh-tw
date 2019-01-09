@@ -2,19 +2,18 @@
 title: 設定色彩佈景主題和字型
 ms.date: 11/20/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: quickstart
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 511c9d44e9aac49c0150be5a13651e5368e10eaf
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: b0f81c04c06d8e016ef62a41d2e3083a1daafb3a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53159408"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53919715"
 ---
 # <a name="quickstart-personalize-the-visual-studio-ide-and-editor"></a>快速入門：個人化 Visual Studio 整合式開發環境 (IDE) 及編輯器
 

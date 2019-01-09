@@ -1,9 +1,7 @@
 ---
 title: 偵錯 Node.js 應用程式
 description: Visual Studio 提供在 Visual Studio 中偵錯 Node.js 應用程式的支援
-ms.custom: ''
 ms.date: 12/03/2018
-ms.technology: vs-nodejs
 ms.topic: conceptual
 ms.devlang: javascript
 author: mikejo5000
@@ -13,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 57054d8ba804a653b11b05fc229fa162d677bcae
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: 6e0ba454a00fb2cebdfaa8ba5fdba63ef3ed2748
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53803775"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53955889"
 ---
 # <a name="debug-a-nodejs-app-in-visual-studio"></a>在 Visual Studio 中偵錯 Node.js 應用程式
 

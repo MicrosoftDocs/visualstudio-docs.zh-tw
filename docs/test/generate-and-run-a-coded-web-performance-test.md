@@ -15,13 +15,12 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 8a4e1ea45b8fe3ae0e33064973fcf1bc3517598e
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: c23d2571b021532b1a78a8207844561cc0c659b1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53067838"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53837169"
 ---
 # <a name="generate-and-run-a-coded-web-performance-test"></a>產生和執行 Web 效能測試程式碼
 

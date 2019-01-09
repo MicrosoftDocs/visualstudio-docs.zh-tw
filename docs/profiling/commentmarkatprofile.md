@@ -1,8 +1,6 @@
 ---
 title: CommentMarkAtProfile | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - CommentMarkAtProfile
@@ -13,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4eb29336b401b020df52d1ccaa743bb7240e1d2b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 14cb0572124f5b832ac0b98326bdf5e0c3d89af4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49854814"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53946080"
 ---
 # <a name="commentmarkatprofile"></a>CommentMarkAtProfile
 `CommentMarkAtProfile` 方法會在 .*vsp* 檔案中插入時間戳記值、數字標記和註解字串。 時間戳記值可以用來同步處理外部事件。 針對要插入的標記和註解，包含 CommentMarkAtProfile 函式之執行緒的分析必須是 ON。  
@@ -26,7 +24,7 @@ ms.locfileid: "49854814"
 ## <a name="syntax"></a>語法  
   
 ```cpp  
-PROFILE_COMMAND_STATUS PROFILERAPI CommentMarkAtProfile (  
+PROFILE_COMMAND_STATUS PROFILERAPI CommentMarkAtProfile (  
                                    __int64 dnTimestamp,  
                                    long lMarker,  
                                    LPCTSTR szComment);  
@@ -48,7 +46,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI CommentMarkAtProfile (
 ## <a name="property-valuereturn-value"></a>屬性值/傳回值  
  此函式會使用 **PROFILE_COMMAND_STATUS** 列舉來指出成功或失敗。 傳回值可以是下列其中一個：  
   
-|列舉值|描述|  
+|列舉值|說明|  
 |----------------|-----------------|  
 |MARK_ERROR_MARKER_RESERVED|參數小於或等於 0。 會保留這些值。 不會記錄標記和註解。|  
 |MARK_ERROR_MODE_NEVER|呼叫函式時，分析模式設定為 NEVER。 不會記錄標記和註解。|  

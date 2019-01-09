@@ -2,7 +2,6 @@
 title: 選項對話方塊、環境、通知
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Environment.Notifications
@@ -12,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 21dfbd69cc3c222ab3a9862578bdbe61e9bcfca6
-ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
+ms.openlocfilehash: 66ab05c4b1d9fb4dcc806f2acb2d1d64ac8a6d68
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53684494"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53946213"
 ---
 # <a name="notifications-environment-options-dialog-box"></a>選項對話方塊、環境、通知
 

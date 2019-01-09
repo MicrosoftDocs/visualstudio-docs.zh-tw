@@ -2,7 +2,6 @@
 title: 程式碼片段函式
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 helpviewer_keywords:
 - code snippets [Visual Studio], functions
@@ -14,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f3362bae41b540ee097e1109848680a11d37a272
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 7cf31fed530447af986d96418d06cf46f02b14b1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512131"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53907809"
 ---
 # <a name="code-snippet-functions"></a>程式碼片段函式
 
@@ -29,7 +28,7 @@ ms.locfileid: "39512131"
 
 下表描述可用於與程式碼片段中的 `Function` 項目搭配使用的函式。
 
-|功能|描述|語言|
+|功能|說明|語言|
 |--------------|-----------------|--------------|
 |`GenerateSwitchCases(` `EnumerationLiteral` `)`|針對 `EnumerationLiteral` 參數所指定列舉的成員，產生 switch 陳述式和一組 case 陳述式。 `EnumerationLiteral` 參數必須是列舉常值或列舉類型的參考。|C#|
 |`ClassName()`|傳回包含已插入程式碼片段的類別名稱。|C#|

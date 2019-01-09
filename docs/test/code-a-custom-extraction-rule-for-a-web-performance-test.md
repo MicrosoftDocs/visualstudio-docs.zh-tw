@@ -14,13 +14,12 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 41e9a025db4ec9c8425e0de6ba4ecad25f775d50
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 311a1ff5b9f5587d04c90484f21a323161c9c18a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53066674"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53835707"
 ---
 # <a name="code-a-custom-extraction-rule-for-a-web-performance-test"></a>為 Web 效能測試撰寫自訂擷取規則程式碼
 

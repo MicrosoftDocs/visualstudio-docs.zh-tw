@@ -2,7 +2,6 @@
 title: 針對安裝或升級問題進行疑難排解
 description: 有時可能會發生一些問題。 如果您的 Visual Studio 安裝或升級失敗，則這個頁面會有所幫助。
 ms.date: 08/01/2018
-ms.technology: vs-acquisition
 ms.custom: seodec18
 ms.prod: visual-studio-dev15
 ms.topic: troubleshooting
@@ -15,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 39accaa3b8ee6a5ac2979b7e93b02a1ce00716be
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: 413c8a9874669e180a6436bf817704919da48049
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53159930"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53910109"
 ---
 # <a name="troubleshoot-visual-studio-2017-installation-and-upgrade-issues"></a>針對 Visual Studio 2017 安裝和升級問題進行疑難排解
 

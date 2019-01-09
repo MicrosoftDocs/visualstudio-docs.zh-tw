@@ -4,7 +4,6 @@ titleSuffix: ''
 description: 在 Visual Studio 中 Python 功能核心逐步解說的步驟 5，示範 Visual Studio 在 Python 環境中管理套件的功能。
 ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-python
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
@@ -13,12 +12,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 81dccdb276596e96e1a7064f796afa43de79f032
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 666b780506784d7c252d37bc018817101bcfede8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53067284"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53964963"
 ---
 # <a name="step-5-install-packages-in-your-python-environment"></a>步驟 5：在您的 Python 環境中安裝套件
 

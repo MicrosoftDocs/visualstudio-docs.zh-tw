@@ -2,7 +2,6 @@
 title: 如何將 app.config 檔案新增至專案
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -13,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5c1a35622ba23558d33966ba918aa457c0f49d24
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 11bc55316414298cf61a27854182f4831feb1ded
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53065160"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53910096"
 ---
 # <a name="how-to-add-an-application-configuration-file-to-a-c-project"></a>HOW TO：將應用程式組態檔新增至 C# 專案
 

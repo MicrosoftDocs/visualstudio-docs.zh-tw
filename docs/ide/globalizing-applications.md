@@ -2,7 +2,6 @@
 title: 全球化應用程式
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - Visual Basic code, international applications
@@ -14,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f1ab77b58047c92cfbf692e014f041e34456a01e
-ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
+ms.openlocfilehash: 6fe4cd1488c30a68042829101a1e09c89ce848f6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48863578"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53937318"
 ---
 # <a name="globalize-applications"></a>全球化應用程式
 

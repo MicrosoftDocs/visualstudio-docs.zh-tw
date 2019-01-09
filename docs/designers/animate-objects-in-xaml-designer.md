@@ -2,7 +2,6 @@
 title: 在 XAML 設計工具中製作物件動畫
 ms.date: 04/11/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: fb88fa26-e835-47f5-9771-2f279441c83c
 author: gewarren
@@ -10,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: c8f8b1b62634c9da86a6aa152bd48cbd8c712198
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 312721cb47858d3c5462fcbee99289dbad526180
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31921400"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53941488"
 ---
 # <a name="animate-objects-in-xaml-designer"></a>在 XAML 設計工具中製作物件動畫
 

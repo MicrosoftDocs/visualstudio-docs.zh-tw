@@ -3,19 +3,18 @@ title: 開始使用 R 教學課程
 description: 在 Visual Studio 中使用 R 的逐步解說，包括專案建立、互動式視窗、程式碼編輯和偵錯。
 ms.date: 06/29/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-rtvs
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 88387485b952bf201a222741a6b3d02861df186c
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: c156993bf2fe425368a2cfebcaca8ac18ea790f2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36235288"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53944622"
 ---
 # <a name="get-started-with-r-tools-for-visual-studio"></a>Visual Studio R 工具使用者入門
 

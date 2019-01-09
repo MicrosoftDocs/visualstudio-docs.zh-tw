@@ -2,7 +2,6 @@
 title: 預設鍵盤快速鍵
 ms.date: 06/26/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 helpviewer_keywords:
 - shortcut keys [Visual Studio], keyboard binding schemes
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c8e4e44409b45762eb6c43f16e93017ae0db3750
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: dbde2e26ac576758d45ee908e30d9bef3341a3ec
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53061509"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53849586"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Visual Studio 中的預設鍵盤快速鍵
 

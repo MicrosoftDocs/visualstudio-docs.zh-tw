@@ -2,7 +2,6 @@
 title: HOW TO：檢視現有類型 (類別設計工具)
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - vs.classdesigner.CannotShowBaseType
@@ -16,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 16e1c31585296913647b5c3d641126c3abca22a8
-ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
+ms.openlocfilehash: e78e92e5d6f8b21dde2660491a944620ac19069b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53684440"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53916662"
 ---
 # <a name="how-to-view-existing-types-in-class-designer"></a>HOW TO：在 [類別設計工具] 中檢視現有類型
 

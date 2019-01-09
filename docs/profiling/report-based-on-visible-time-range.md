@@ -1,8 +1,6 @@
 ---
 title: 以可見時間範圍為基礎的報表 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.cv.threads.reportnav.profile
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e9de75488c297eef426fb5a93c71f0ff3bad148d
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: c46404eba23c2e80a18232d01ff7a58fb92070c8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35255602"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53938318"
 ---
 # <a name="report-based-on-visible-time-range"></a>以可見時間範圍為基礎的報表
 [設定檔] 檢視顯示的報表是以目前可見的時間範圍和通道為基礎。 若要查看資料不同子集的詳細資訊，請按一下圖例中的項目。  

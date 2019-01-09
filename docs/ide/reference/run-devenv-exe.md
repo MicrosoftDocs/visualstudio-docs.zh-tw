@@ -2,7 +2,6 @@
 title: -Run (devenv.exe)
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 helpviewer_keywords:
 - /run Devenv
@@ -17,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2efa616bab79f4d41ddf53a08c5a3628f47e3524
-ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
+ms.openlocfilehash: 9f46afb431b998b5fd937d24178a602f6aea81eb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "51948409"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53921740"
 ---
 # <a name="run-devenvexe"></a>/Run (devenv.exe)
 編譯並執行指定的專案或方案。
@@ -36,11 +35,11 @@ devenv {/run|/r} {SolutionName|ProjectName}
 ## <a name="arguments"></a>引數
  `SolutionName`
 
- 必要。 方案檔的完整路徑和名稱。
+ 必要項。 方案檔的完整路徑和名稱。
 
  `ProjectName`
 
- 必要。 專案檔的完整路徑和名稱。
+ 必要項。 專案檔的完整路徑和名稱。
 
 ## <a name="remarks"></a>備註
  根據為使用中方案組態所指定的設定，編譯並執行指定的專案或方案。 此參數會啟動整合式開發環境 (IDE)，並在專案或方案完成執行之後讓它保持使用中。

@@ -9,13 +9,12 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: f280911be68616a1c2632195769547023832b061
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 88819e8858a57a16e327e8e7b04f69c74fe5045a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53060034"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53900771"
 ---
 # <a name="modify-load-test-logging-settings"></a>修改負載測試記錄設定
 

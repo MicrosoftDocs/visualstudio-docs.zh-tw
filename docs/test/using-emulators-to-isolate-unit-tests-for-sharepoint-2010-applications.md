@@ -2,19 +2,18 @@
 title: 使用模擬器來隔離 Sharepoint 2010 應用程式的單元測試
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: baa1ebbc63f0e9649e1601bbcb6220ef8bc5f5b5
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 8101b8a183cda69c2a59a0ae1142a91557b4a02f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51296056"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53949611"
 ---
 # <a name="using-emulators-to-isolate-unit-tests-for-sharepoint-2010-applications"></a>使用模擬器來隔離 Sharepoint 2010 應用程式的單元測試
 
@@ -127,7 +126,7 @@ Microsoft SharePoint 模擬器提供一組物件和方法 "doubles"，模仿最�
 
 安裝此套件會將參考加入您的專案之必要程式庫中。 若要在現有的測試類別中輕鬆使用模擬器，請加入命名空間 `Microsoft.SharePoint.Emulators` 和 `Microsoft.QualityTools.Testing.Emulators`。
 
-若要在測試方法中啟用模擬，請將方法主體包裝在建立 `SharePointEmulationScope` 物件的 `using` 陳述式中。 例如: 
+若要在測試方法中啟用模擬，請將方法主體包裝在建立 `SharePointEmulationScope` 物件的 `using` 陳述式中。 例如：
 
 ```csharp
 [TestMethod]

@@ -13,17 +13,16 @@ helpviewer_keywords:
 - component ID, Visual Studio
 - install Visual Studio, administrator guide
 ms.service: ''
-ms.technology: vs-acquisition
 ms.prod: visual-studio-dev15
 ms.assetid: b99298df-0280-47fc-af73-44cd7a8ac553
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e47eca638e81cf1b99a451e3017614be45d2c59
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: f1e5ab69491af3add542e30bb4cdd44047ca094e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53063042"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53942170"
 ---
 # <a name="visual-studio-build-tools-2017-component-directory"></a>Visual Studio Build Tools 2017 元件目錄
 
@@ -268,7 +267,7 @@ Microsoft.VisualStudio.ComponentGroup.Windows10SDK.16299 | Windows 10 SDK (10.0.
 
 **識別碼：** Microsoft.VisualStudio.Workload.VCTools
 
-**描述：** 使用 Microsoft C++ 工具組、ATL 或 MFC 建置 Windows 傳統型應用程式。
+**描述：** 使用 Microsoft C++ 工具組、ATL 或 MFC 來建置 Windows 傳統型應用程式。
 
 ### <a name="components-included-by-this-workload"></a>此工作負載所包含的元件
 

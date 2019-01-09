@@ -1,8 +1,6 @@
 ---
 title: HOW TO：使用命令列以分析工具啟動獨立的 .NET Framework 應用程式並收集並行資料 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 17a48848-bd3e-44ef-9971-e39836ff1df2
 author: mikejo5000
@@ -10,12 +8,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: fde9b67cd3cdc1fbd0f411325e639664a9ae2106
-ms.sourcegitcommit: 34840a954ed3446c789e80ee87da6cbf1203cbb5
+ms.openlocfilehash: 1525b7f1c8a69c7bf50aa1cf7caefa52f955a748
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53592517"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53953129"
 ---
 # <a name="how-to-launch-a-stand-alone-net-framework-application-with-the-profiler-to-collect-concurrency-data-by-using-the-command-line"></a>HOW TO：使用命令列以分析工具啟動獨立的 .NET Framework 應用程式來收集並行資料
 本主題描述如何使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具命令列工具啟動 .NET Framework stand-alone 獨立 (用戶端) 應用程式，並收集處理序和執行緒並行資料  

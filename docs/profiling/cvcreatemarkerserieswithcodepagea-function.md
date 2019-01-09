@@ -1,8 +1,6 @@
 ---
 title: CvCreateMarkerSeriesWithCodePageA 函式 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - cvmakers/CvCreateMarkerSeriesWithCodePageA
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 63fe3de8c4322e378f110813ac93fa523f3453ba
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 55466cc96e4969f05bc34edfaf4a28564dba17ea
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750372"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53822485"
 ---
 # <a name="cvcreatemarkerserieswithcodepagea-function"></a>CvCreateMarkerSeriesWithCodePageA 函式
 為特定提供者與指定字碼頁建立標記系列。 此函式可以用來明確指定標記 API ANSI 函式所寫出文字的字碼頁。 如果要擷取追蹤並使用不同的地區設定/語言在不同電腦上進行分析，設定字碼頁會很有用。 預設會使用 GetACP() 函式所傳回的字碼頁。  

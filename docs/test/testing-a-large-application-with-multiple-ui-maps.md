@@ -2,7 +2,6 @@
 title: 測試含有多個 UI 對應的大型應用程式
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 helpviewer_keywords:
 - coded UI tests, multiple UI maps
@@ -12,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dfc1cf44cb92ab58b50284f0398178c8f96f2a2e
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: f1677ac36222b3d7efddc22bc1c0a69394eaf564
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895128"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53931678"
 ---
 # <a name="test-a-large-application-with-multiple-ui-maps"></a>測試含有多個 UI 對應的大型應用程式
 

@@ -1,8 +1,6 @@
 ---
 title: PropertyGroup 項目 (MSBuild) | Microsoft Docs
-ms.custom: ''
 ms.date: 03/13/2017
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#PropertyGroup
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dc849f0b3f66c7e2bdd85ff20023c9755ce5c985
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: da16e2042ebd74684f7775fb41bc62242592e71a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49853346"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53852371"
 ---
 # <a name="propertygroup-element-msbuild"></a>PropertyGroup 元素 (MSBuild)
 包含一組使用者定義的 [Property](../msbuild/property-element-msbuild.md) 項目。 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 專案中使用的每個 `Property` 項目都必須是 `PropertyGroup` 項目的子系。  
@@ -47,19 +45,19 @@ ms.locfileid: "49853346"
 
 ### <a name="attributes"></a>屬性  
 
-|屬性|描述|  
+|屬性|說明|  
 |---------------|-----------------|  
 |條件|選擇性屬性。<br /><br /> 要評估的條件。 如需詳細資訊，請參閱[條件](../msbuild/msbuild-conditions.md)。|  
 
 ### <a name="child-elements"></a>子元素  
 
-|元素|描述|  
+|元素|說明|  
 |-------------|-----------------|  
 |[Property](../msbuild/property-element-msbuild.md)|選擇性項目。<br /><br /> 使用者定義的屬性名稱，其中包含屬性值。 `PropertyGroup` 項目中可能有零或多個 *Property* 項目。|  
 
 ### <a name="parent-elements"></a>父元素  
 
-| 元素 | 描述 |
+| 元素 | 說明 |
 | - | - |
 | [專案](../msbuild/project-element-msbuild.md) | [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 專案檔案的必要根項目。 |
 

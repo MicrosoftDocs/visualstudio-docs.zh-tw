@@ -4,18 +4,17 @@ description: 了解如何使用 Visual Studio 中的程式碼編輯器和其他�
 ms.date: 01/01/2018
 layout: LandingPage
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: landing-page
 author: gewarren
 ms.author: gewarren
 ms.workload:
 - multiple
-ms.openlocfilehash: fc1b75a41e7c321686d0107982eb9969c7a1e2bc
-ms.sourcegitcommit: c7b16358a5d6f7ea1dd2f70a6ac2a8266efa9c15
+ms.openlocfilehash: 06ce24ab0e0d668f4eef524826f2bf46a6fb29a5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/14/2018
-ms.locfileid: "53425782"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53855426"
 ---
 # <a name="write-and-manage-code-using-visual-studio"></a>使用 Visual Studio 來撰寫和管理程式碼
 

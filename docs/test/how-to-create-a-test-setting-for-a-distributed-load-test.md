@@ -9,13 +9,12 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 69ce0f2504741c0bc48df0245202cdf0eefee20f
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 4e145834210ea3c9aa2addd0673befe497592cda
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53063312"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53967183"
 ---
 # <a name="how-to-create-a-test-setting-for-a-distributed-load-test"></a>HOW TO：建立分散式負載測試的測試設定
 

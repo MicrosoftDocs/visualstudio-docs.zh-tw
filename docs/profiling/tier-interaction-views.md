@@ -1,8 +1,6 @@
 ---
 title: 階層互動檢視 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - profiling tools, tier interaction method views
@@ -11,12 +9,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f2752ae770fa5926839dc9bd5ab097564e02843
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: f83cd5fc4b7f15fe98f39f24d9deea3dfbb9c6e6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31584551"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53961854"
 ---
 # <a name="tier-interaction-views"></a>階層互動檢視
 

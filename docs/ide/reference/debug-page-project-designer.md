@@ -2,7 +2,6 @@
 title: 專案設計工具、偵錯頁
 ms.date: 06/27/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - vb.ProjectPropertiesDebug
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c7b79b5aa5054781813d561089dab204bd1763bf
-ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
+ms.openlocfilehash: f383701017e9fb830333f7a9869aac99684333a6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53684754"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53848255"
 ---
 # <a name="debug-page-project-designer"></a>專案設計工具、偵錯頁
 

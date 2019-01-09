@@ -2,19 +2,18 @@
 title: 診斷資料和系統產生的記錄檔
 ms.date: 05/24/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 author: gewarren
 ms.author: michma
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f55d8a0f32886ed477026e298ed2c8c5d6e26f16
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 873d0be0e1efee220e0a702fc537beace1d7aa32
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34478290"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53824508"
 ---
 # <a name="system-generated-logs-collected-by-visual-studio"></a>Visual Studio 所收集的系統產生記錄檔
 

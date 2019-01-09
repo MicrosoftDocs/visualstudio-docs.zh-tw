@@ -2,7 +2,6 @@
 title: JavaScript IntelliSense
 ms.date: 06/28/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - IntelliSense [JavaScript]
@@ -26,12 +25,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 666ce7d65269992af486e59c6b5ce11e94da736b
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: de5470f0c48e76d972cd78fd84b7629b8f2426d2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51348111"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53849670"
 ---
 # <a name="javascript-intellisense"></a>JavaScript IntelliSense
 

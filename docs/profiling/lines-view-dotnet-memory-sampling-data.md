@@ -1,8 +1,6 @@
 ---
 title: 程式行檢視 - .NET 記憶體取樣資料 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Lines view
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 67148180fab5c712ee15551cf60a8874f427dc0a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: fe56df4f2984d5d354924b3e897b01f71b43e76d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49854841"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53925884"
 ---
 # <a name="lines-view---net-memory-sampling-data"></a>程式行檢視 - .NET 記憶體取樣資料
 使用取樣方法之 .NET 記憶體配置分析資料的 [程式行] 檢視，會列出在執行分析期間配置記憶體的陳述式。 資料行也包含配置的大小和數量。  
@@ -42,7 +40,7 @@ ms.locfileid: "49854841"
   
   根據定義，陳述式不會呼叫其他函式。 因此只會列出互斥值。  
   
-|資料行|描述|  
+|資料行|說明|  
 |------------|-----------------|  
 |**處理序 ID**|分析執行的處理序 ID (PID)。|  
 |**處理序名稱**|處理序的名稱。|  

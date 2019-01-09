@@ -1,8 +1,6 @@
 ---
 title: 資源監視效能規則 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: f0f77faf-0a05-4718-a2c5-47934be40868
 author: mikejo5000
@@ -10,12 +8,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 433a89ae2a7cf8c9e20ec3711dcebe1514ae021b
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 7e4071820aece2f58f0a1345e1110a80c9f76f0f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31584577"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53947916"
 ---
 # <a name="resource-monitoring-performance-rules"></a>資源監視效能規則
 [資源監視] 分類中的效能訊息提供應用程式效能的其他資料。 您可以使用這項資料來分析效能問題。 這些規則是參考性的，並針對每個分析回合進行報告。  

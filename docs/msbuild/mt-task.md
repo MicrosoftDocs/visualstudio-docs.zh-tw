@@ -1,8 +1,6 @@
 ---
 title: MT 工作 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - VC.Project.VCManifestTool.ResourceOutputFileName
@@ -26,12 +24,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c6e4298fa9482674232dea2cae98bb25ba51be30
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 6a436423bd55fbcf1a519e56b27c2449c5b3bc9a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219870"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53848820"
 ---
 # <a name="mt-task"></a>MT 工作
 包裝 Microsoft 資訊清單工具 *mt.exe*。 如需詳細資訊，請參閱 [Mt.exe](https://docs.microsoft.com/windows/desktop/SbsCs/mt-exe)。  
@@ -42,7 +40,7 @@ ms.locfileid: "50219870"
 > [!NOTE]
 >  *mt.exe* 文件使用連字號 (**-**) 作為命令列選項的前置詞，但本主題使用斜線 (**/**)。 任一前置詞都可接受。  
   
-|參數|描述|  
+|參數|說明|  
 |---------------|-----------------|  
 |**AdditionalManifestFiles**|選擇性的 **String[]** 參數。<br /><br /> 指定一或多個資訊清單檔案的名稱。<br /><br /> 如需詳細資訊，請參閱 [Mt.exe](https://docs.microsoft.com/windows/desktop/SbsCs/mt-exe) 中的 **/manifest** 選項。|  
 |**AdditionalOptions**|選擇性的 **String** 參數。<br /><br /> 命令列選項清單。 例如，/\<option1> /\<option2> /\<option#>。 使用此參數，來指定任何其他 **MT** 工作參數未表示的命令列選項。<br /><br /> 如需詳細資訊，請參閱 [Mt.exe](https://docs.microsoft.com/windows/desktop/SbsCs/mt-exe)。|  

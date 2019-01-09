@@ -1,8 +1,6 @@
 ---
 title: 組建記錄器 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, writing loggers
@@ -14,15 +12,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e1faf28c05dec58117e5d34e21e7c8020ad3a4d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a1df3eea826f2b439d2dfb9d6607c1afded80421
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49894283"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53913997"
 ---
 # <a name="build-loggers"></a>組建記錄器
-記錄器提供一種方式，讓您能夠自訂組建的輸出，並顯示訊息、錯誤或警告來回應特定的建置事件。 每個記錄器都會實作為 .NET 類別，此類別會實作 <xref:Microsoft.Build.Framework.ILogger> 介面，此介面定義於 Microsoft.Build.Framework.dll** 組件中。  
+記錄器提供一種方式，讓您能夠自訂組建的輸出，並顯示訊息、錯誤或警告來回應特定的建置事件。 每個記錄器都會實作為 .NET 類別，此類別會實作 <xref:Microsoft.Build.Framework.ILogger> 介面，此介面定義於 Microsoft.Build.Framework.dll 組件中。  
   
  實作記錄器時有兩種方法可供使用：  
   
@@ -64,7 +62,7 @@ MSBuild -nologo -noconsolelogger -logger:SimpleLogger.dll -verbosity:Detailed
 
 ## <a name="example"></a>範例  
   
-### <a name="description"></a>描述  
+### <a name="description"></a>說明  
  下列範例包含記錄器的完整程式碼。  
   
 ### <a name="code"></a>程式碼  
@@ -72,7 +70,7 @@ MSBuild -nologo -noconsolelogger -logger:SimpleLogger.dll -verbosity:Detailed
   
 ## <a name="example"></a>範例  
   
-### <a name="description"></a>描述  
+### <a name="description"></a>說明  
  下列範例示範如何實作要將記錄寫入檔案的記錄器，而不是將它顯示在主控台視窗中。  
   
 ### <a name="code"></a>程式碼  

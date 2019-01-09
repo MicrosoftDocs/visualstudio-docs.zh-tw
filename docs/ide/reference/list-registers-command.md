@@ -2,7 +2,6 @@
 title: 列出暫存器命令
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - debug.listregisters
@@ -16,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ce91abde91edf989b33c476b042abaf16c685df0
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 942ab10a1d660ea5e33ca2cb679e4655bd6b3fbc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704898"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53959958"
 ---
 # <a name="list-registers-command"></a>列出暫存器命令
 顯示所選暫存器的值，並讓您修改要顯示的暫存器清單。
@@ -37,7 +36,7 @@ Debug.ListRegisters [/Display [{register|registerGroup}...]] [/List]
 ## <a name="switches"></a>參數
  /Display [{`register`&#124;`registerGroup`}...]
 
- 顯示所指定 `register` 或 `registerGroup` 的值。 如果未指定 `register` 或 `registerGroup`，則會顯示暫存器的預設清單。 如果未指定參數，則行為是相同的。 例如: 
+ 顯示所指定 `register` 或 `registerGroup` 的值。 如果未指定 `register` 或 `registerGroup`，則會顯示暫存器的預設清單。 如果未指定參數，則行為是相同的。 例如：
 
  `Debug.ListRegisters /Display eax`
 

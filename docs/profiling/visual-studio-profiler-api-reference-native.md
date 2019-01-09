@@ -3,7 +3,6 @@ title: Visual Studio 分析工具 API 參考 (原生)
 titleSuffix: ''
 ms.custom: seodec18
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - performance tools, API
@@ -14,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: debb3c0d2fcbb9f1568acd7ae0f09fc6d1d099fb
-ms.sourcegitcommit: 34840a954ed3446c789e80ee87da6cbf1203cbb5
+ms.openlocfilehash: e0926c80954c83dd1c0c1a72e7c693e8ea266713
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53592764"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53945021"
 ---
 # <a name="visual-studio-profiler-api-reference-native"></a>Visual Studio 分析工具 API 參考 (原生)
 Visual Studio 分析工具 API 可讓您以程式設計方式控制收集的資料量，並在分析期間插入時間戳記和設定檔標記。 若要使用原生 API，您可以在您的專案中包含 *VSPerf.h* 標頭檔，並新增 *VSPerf.lib*。  

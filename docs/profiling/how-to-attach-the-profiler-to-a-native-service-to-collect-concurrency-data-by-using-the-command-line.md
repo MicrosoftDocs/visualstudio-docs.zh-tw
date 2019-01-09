@@ -1,8 +1,6 @@
 ---
 title: HOW TO：使用命令列將分析工具附加至原生服務以收集並行資料 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 283a1ee1-b43e-4daf-95ae-1311925a42a8
 author: mikejo5000
@@ -10,12 +8,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 712587b88593760c254090890ebf986860020333
-ms.sourcegitcommit: 34840a954ed3446c789e80ee87da6cbf1203cbb5
+ms.openlocfilehash: b0c68e51da34d45db38f31864bfd35a192d5d919
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53592349"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53901265"
 ---
 # <a name="how-to-attach-the-profiler-to-a-native-service-to-collect-concurrency-data-by-using-the-command-line"></a>HOW TO：使用命令列將分析工具附加至原生服務以收集並行資料
 本文描述如何使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具命令列工具將分析工具附加至原生 (C/C++) 服務，並使用取樣方法收集處理序和執行緒並行資料。  

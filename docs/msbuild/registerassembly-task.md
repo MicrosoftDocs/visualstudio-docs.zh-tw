@@ -1,8 +1,6 @@
 ---
 title: RegisterAssembly 工作 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#RegisterAssembly
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c1e3eb6108ac96716895ff996b043bc486c16e38
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 4b4242ed9b1e18879c724b996baa393e0371e115
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39155434"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53988593"
 ---
 # <a name="registerassembly-task"></a>RegisterAssembly 工作
 讀取所指定組件內的中繼資料，並將必要的項目加入至登錄，這樣可讓 COM 用戶端順利地建立 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 類別。 此工作的行為和 [Regasm.exe (組件登錄工具)](/dotnet/framework/tools/regasm-exe-assembly-registration-tool) 很類似，但不是完全相同。  
@@ -33,7 +31,7 @@ ms.locfileid: "39155434"
 ## <a name="parameters"></a>參數  
  下表說明 `RegisterAssembly` 工作的參數。  
   
-|參數|描述|  
+|參數|說明|  
 |---------------|-----------------|  
 |`Assemblies`|必要的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 指定要向 COM 註冊的組件。|  
 |`AssemblyListFile`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem> 參數。<br /><br /> 包含 `RegisterAssembly` 工作與 [UnregisterAssembly](../msbuild/unregisterassembly-task.md) 工作之間狀態的相關資訊。 此資訊可防止 `UnregisterAssembly` 工作嘗試取消註冊無法在 `RegisterAssembly` 工作中註冊的組件。|  
