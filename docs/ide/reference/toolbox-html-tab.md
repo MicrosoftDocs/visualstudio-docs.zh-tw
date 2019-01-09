@@ -2,7 +2,6 @@
 title: HTML 索引標籤、工具箱
 ms.date: 06/21/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - vs.toolbox.html
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 90dfae7e891c805a785db8bba00d3c75d2a84bf3
-ms.sourcegitcommit: 4708f0ba09b540424efcc344f8438f25432e3d51
+ms.openlocfilehash: e2f51ce6b1aee945bb368f3206d136bf7f4d1565
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/11/2018
-ms.locfileid: "44384158"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53862922"
 ---
 # <a name="toolbox-html-tab"></a>HTML 索引標籤、工具箱
 

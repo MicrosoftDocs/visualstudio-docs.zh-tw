@@ -1,8 +1,6 @@
 ---
 title: 工作基底類別 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 dev_langs:
 - VB
@@ -15,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e0f11f797955dd2b909b75c0bc758209e1a0a028
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 1f2f32273ff00121ea764add262f16635d52de77
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39152147"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53910278"
 ---
 # <a name="task-base-class"></a>Task 基底類別
 許多工作最終繼承自 <xref:Microsoft.Build.Utilities.Task> 類別。 此類別會將數個參數新增至從中衍生它們的工作。 本文件會列出這些參數。  
@@ -28,7 +26,7 @@ ms.locfileid: "39152147"
 ## <a name="parameters"></a>參數  
  下表描述此基底類別的參數。  
   
-|參數|描述|  
+|參數|說明|  
 |---------------|-----------------|  
 |<xref:Microsoft.Build.Utilities.Task.BuildEngine%2A>|選擇性的 <xref:Microsoft.Build.Framework.IBuildEngine> 參數。<br /><br /> 指定工作可以使用的建置引擎介面。 建置引擎會自動設定這個參數，以允許工作回呼至它。|  
 |<xref:Microsoft.Build.Utilities.Task.BuildEngine2%2A>|選擇性的 <xref:Microsoft.Build.Framework.IBuildEngine2> 參數。<br /><br /> 指定工作可以使用的建置引擎介面。 建置引擎會自動設定這個參數，以允許工作回呼至它。<br /><br /> 這是方便的屬性，讓工作作者繼承自這個類別，不需要將值從 `IBuildEngine` 轉型到 `IBuildEngine2`。|  
