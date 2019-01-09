@@ -2,7 +2,6 @@
 title: 類別設計工具錯誤
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: troubleshooting
 f1_keywords:
 - vs.classdesigner.CPlusPlusViewInDiagramNoTypeFound
@@ -30,12 +29,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 014497d0b32df61412820468a8f3f7e0b177c14f
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: cfafcedae225522ec71e0bc35854d827047af2fe
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33963629"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53901684"
 ---
 # <a name="class-designer-errors"></a>類別設計工具錯誤
 
