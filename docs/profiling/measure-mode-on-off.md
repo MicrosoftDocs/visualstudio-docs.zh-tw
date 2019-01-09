@@ -1,8 +1,6 @@
 ---
 title: 開關測量模式 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.cv.threads.tools.measure
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 73f995fa0aa87d434f9cd7f19d751045c4081a95
-ms.sourcegitcommit: 269b55b413d2c82e6aa56c6ab8e53da7926fb2e8
+ms.openlocfilehash: be23f8bd454790065f7d30bc283c52089e964692
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/08/2018
-ms.locfileid: "35237415"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53912606"
 ---
 # <a name="measure-mode-onoff"></a>開啟/關閉測量模式
 您可以使用此工具精確地測量時間軸中的時間長度。 若要啟用測量模式，請按一下 [量值] 按鈕 (有尺規圖示)，然後拖曳到時間軸中。 拖曳時請注意，指標下方的區域會以黃色反白顯示，而測量的時間會出現在工具列按鈕的右邊。 您拖曳時會動態計算此值，讓您立即看到特定事件所花的時間長短。 當您放開滑鼠按鈕時，時間值仍保持可見狀態。  

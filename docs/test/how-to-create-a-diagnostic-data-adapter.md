@@ -9,13 +9,12 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: f16f9356f40aade9f0de3ade8f74606ce89be12e
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: 72bac83cf3f71397d0950521c4252045eeaa2822
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53802575"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53886750"
 ---
 # <a name="how-to-create-a-diagnostic-data-adapter"></a>HOW TO：建立診斷資料配接器
 

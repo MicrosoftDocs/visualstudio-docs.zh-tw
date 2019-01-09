@@ -14,13 +14,12 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 3cbdd30022b521803662f18b8d3438c6b1ddb37c
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 23c4997f6079a2b5f27a380afb4ef07b84c4fa61
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53057414"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53887061"
 ---
 # <a name="specify-counter-sets-and-threshold-rules-for-computers-in-a-load-test"></a>在負載測試中指定電腦的計數器集合與臨界值規則
 

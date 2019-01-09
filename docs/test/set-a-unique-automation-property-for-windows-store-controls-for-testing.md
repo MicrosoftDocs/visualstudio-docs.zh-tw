@@ -2,19 +2,18 @@
 title: 為 UWP 控制項設定唯一自動化屬性以進行測試
 ms.date: 05/31/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
 author: gewarren
-ms.openlocfilehash: 1cc8986c3101bb2048e0cd4ace739974031344ed
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 1498da202cb6964ced513c6fa42804ac6841c0ef
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52894777"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53863731"
 ---
 # <a name="set-a-unique-automation-property-for-uwp-controls-for-testing"></a>為 UWP 控制項設定唯一自動化屬性以進行測試
 

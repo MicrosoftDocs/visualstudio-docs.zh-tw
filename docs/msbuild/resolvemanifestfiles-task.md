@@ -1,8 +1,6 @@
 ---
 title: ResolveManifestFiles 工作 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 dev_langs:
 - VB
@@ -18,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 82b265bc46e4d8edac666b4f73d5256e524f5b08
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 319d1e5003cf6a46bc7590b3dfcb5d68a1cda767
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39151546"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53910710"
 ---
 # <a name="resolvemanifestfiles-task"></a>ResolveManifestFiles 工作
 將建置流程中的下列項目解析為檔案，以產生資訊清單：建置的項目、相依性、附屬項目、內容、偵錯符號和文件。  
@@ -31,7 +29,7 @@ ms.locfileid: "39151546"
 ## <a name="parameters"></a>參數  
  下表說明 `ResolveManifestFiles` 工作的參數。  
   
-|參數|描述|  
+|參數|說明|  
 |---------------|-----------------|  
 |`DeploymentManifestEntryPoint`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem> 參數。<br /><br /> 指定部署資訊清單的名稱。|  
 |`EntryPoint`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem> 參數。<br /><br /> 指定 Managed 組件或 ClickOnce 資訊清單參考，此為資訊清單的進入點。|  

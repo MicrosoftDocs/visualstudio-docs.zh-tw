@@ -2,19 +2,18 @@
 title: 如何使用 C++ 的 CTest
 ms.date: 11/07/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.author: mblome
 manager: douge
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: d14db3c10fb9e656596e89a43e75b765b67aa7c5
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: d02c4546b98e2a7551f4454088acfc6a54637e4f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53804522"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53925455"
 ---
 # <a name="how-to-use-ctest-for-c-in-visual-studio"></a>如何在 Visual Studio 中使用 C++ 的 CTest
 

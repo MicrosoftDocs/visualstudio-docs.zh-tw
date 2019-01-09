@@ -1,8 +1,6 @@
 ---
 title: 使用 MSBuild 取得組建記錄檔 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, logging
@@ -13,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a241412eecd0596bdf5d7579a52e2a01c2403a56
-ms.sourcegitcommit: 34840a954ed3446c789e80ee87da6cbf1203cbb5
+ms.openlocfilehash: 37c2c9b1ff1380fc8a8f4a96f64a45a0a7fbd1b6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53592491"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53925858"
 ---
 # <a name="obtain-build-logs-with-msbuild"></a>使用 MSBuild 取得組建記錄檔
 
