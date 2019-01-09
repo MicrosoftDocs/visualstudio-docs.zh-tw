@@ -1,5 +1,5 @@
 ---
-title: IRemoteDebugApplication::ConnectDebugger |Microsoft 文件
+title: IRemoteDebugApplication::ConnectDebugger |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 538b7a3f76e6026297839e4a7a37e6c21a72d7d0
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 2e6db85ab30d04ebaf24ec0e955aab529ff8799d
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24729328"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54088851"
 ---
 # <a name="iremotedebugapplicationconnectdebugger"></a>IRemoteDebugApplication::ConnectDebugger
-會在偵錯工具連接到此應用程式。  
+連接到這個應用程式的偵錯工具。  
   
 ## <a name="syntax"></a>語法  
   
-```  
+```cpp
 HRESULT ConnectDebugger(  
    IApplicationDebugger*  pad  
 );  
@@ -43,13 +43,13 @@ HRESULT ConnectDebugger(
 ## <a name="return-value"></a>傳回值  
  方法會傳回 `HRESULT`。 可能的值包括 (但不限於) 下表中的這些值。  
   
-|值|說明|  
+|值|描述|  
 |-----------|-----------------|  
 |`S_OK`|方法成功。|  
-|`E_FAIL`|偵錯工具已連接到這個應用程式。|  
+|`E_FAIL`|偵錯工具已經連接到此應用程式。|  
   
 ## <a name="remarks"></a>備註  
- 應用程式可以有只有一個偵錯工具一次連接。 如果偵錯工具已連接，這個方法將會失敗。  
+ 應用程式可以有一次連接的只有一個偵錯工具。 如果偵錯工具已連接，這個方法將會失敗。  
   
 ## <a name="see-also"></a>另請參閱  
  [IRemoteDebugApplication::GetDebugger](../../winscript/reference/iremotedebugapplication-getdebugger.md)   

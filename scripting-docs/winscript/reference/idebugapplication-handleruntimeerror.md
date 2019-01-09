@@ -1,5 +1,5 @@
 ---
-title: IDebugApplication::HandleRuntimeError |Microsoft 文件
+title: IDebugApplication::HandleRuntimeError |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: eead4780ff061ff9c7280aeee0936c8f64741981
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 2a64bc0b3543af322ec092340026e4abdc7380f9
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725788"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097314"
 ---
 # <a name="idebugapplicationhandleruntimeerror"></a>IDebugApplication::HandleRuntimeError
-會導致目前的執行緒可封鎖，並將錯誤的通知傳送至 IDE 偵錯工具。  
+讓目前的執行緒封鎖，並將錯誤的通知傳送至偵錯工具 IDE。  
   
 ## <a name="syntax"></a>語法  
   
-```  
+```cpp
 HRESULT HandleRuntimeError(  
    IActiveScriptErrorDebug*  pErrorDebug,  
    IActiveScriptSite*        pScriptSite,  
@@ -42,13 +42,13 @@ HRESULT HandleRuntimeError(
   
 #### <a name="parameters"></a>參數  
  `pErrorDebug`  
- [in]發生的錯誤。  
+ [in]發生錯誤。  
   
  `pScriptSite`  
- [in]執行緒的指令碼站台。  
+ [in]執行緒的指令碼網站。  
   
  `pbra`  
- [out]偵錯工具會繼續執行應用程式時要採取的動作。  
+ [out]偵錯工具繼續執行應用程式時要採取的動作。  
   
  `perra`  
  [out]偵錯工具繼續應用程式，如果發生錯誤時要採取的動作。  
@@ -59,15 +59,15 @@ HRESULT HandleRuntimeError(
 ## <a name="return-value"></a>傳回值  
  方法會傳回 `HRESULT`。 可能的值包括 (但不限於) 下表中的這些值。  
   
-|值|說明|  
+|值|描述|  
 |-----------|-----------------|  
 |`S_OK`|方法成功。|  
   
 ## <a name="remarks"></a>備註  
- 語言引擎會呼叫這個方法會導致執行階段錯誤的執行緒內容中。 這個方法會導致目前的執行緒可封鎖，並將傳送至偵錯工具 IDE 錯誤通知。 當 IDE 偵錯工具會繼續執行應用程式時，這個方法會傳回與所要採取的動作。  
+ 語言引擎會呼叫這個方法會導致執行階段錯誤的執行緒內容中。 這個方法會導致目前的執行緒可封鎖，並傳送錯誤通知傳送至偵錯工具 IDE。 當偵錯工具 IDE 恢復應用程式時，這個方法會傳回與所要採取的動作。  
   
 > [!NOTE]
->  執行階段錯誤中, 語言引擎可能會被呼叫執行緒來執行這類工作，因為列舉堆疊框架，或評估的運算式。  
+>  在 執行階段錯誤，語言引擎可能呼叫的執行緒來執行這類工作，因為列舉堆疊框架，或評估運算式。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugApplication 介面](../../winscript/reference/idebugapplication-interface.md)   

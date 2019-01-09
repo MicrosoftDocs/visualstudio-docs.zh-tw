@@ -1,5 +1,5 @@
 ---
-title: SCRIPTTRACEINFO 列舉 |Microsoft 文件
+title: SCRIPTTRACEINFO 列舉 |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -12,19 +12,19 @@ caps.latest.revision: 3
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cc1902b290a8024679cef12d503e94de4923defb
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 866f507b4d107c8f395be6588a85f67ea6bb45c9
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24733988"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54086745"
 ---
 # <a name="scripttraceinfo-enumeration"></a>SCRIPTTRACEINFO 列舉
 表示所追蹤的指令碼事件。 用於[iactivescriptsitetraceinfo:: Sendscripttraceinfo 方法](../../winscript/reference/iactivescriptsitetraceinfo-sendscripttraceinfo-method.md)。  
   
 ## <a name="syntax"></a>語法  
   
-```  
+```cpp
 typedef enum tagSCRIPTTRACEINFO {      SCRIPTTRACEINFO_SCRIPTSTART = 0,      SCRIPTTRACEINFO_SCRIPTEND   = 1,      SCRIPTTRACEINFO_COMCALLSTART    = 2,      SCRIPTTRACEINFO_COMCALLEND  = 3,      SCRIPTTRACEINFO_CREATEOBJSTART  = 4,      SCRIPTTRACEINFO_CREATEOBJEND    = 5,      SCRIPTTRACEINFO_GETOBJSTART = 6,      SCRIPTTRACEINFO_GETOBJEND   = 7,  } SCRIPTTRACEINFO ;  
 ```  
   
@@ -32,11 +32,11 @@ typedef enum tagSCRIPTTRACEINFO {      SCRIPTTRACEINFO_SCRIPTSTART = 0,      SCR
   
 |||  
 |-|-|  
-|SCRIPTTRACEINFO_SCRIPTSTART|指令碼的起點。|  
+|SCRIPTTRACEINFO_SCRIPTSTART|指令碼開頭。|  
 |SCRIPTTRACEINFO_SCRIPTEND|指令碼結尾。|  
 |SCRIPTTRACEINFO_COMCALLSTART|COM 呼叫的開始。|  
-|SCRIPTTRACEINFO_COMCALLEND|COM 呼叫的結尾。|  
-|SCRIPTTRACEINFO_CREATEOBJSTART|建立物件開始。|  
-|SCRIPTTRACEINFO_CREATEOBJEND|建立物件的結尾。|  
+|SCRIPTTRACEINFO_COMCALLEND|COM 呼叫端。|  
+|SCRIPTTRACEINFO_CREATEOBJSTART|建立的開始物件。|  
+|SCRIPTTRACEINFO_CREATEOBJEND|建立物件結尾。|  
 |SCRIPTTRACEINFO_GETOBJSTART|GetObject 呼叫的開始。|  
-|SCRIPTTRACEINFO_GETOBJEND|GetObject 呼叫的結尾。|
+|SCRIPTTRACEINFO_GETOBJEND|GetObject 呼叫端。|

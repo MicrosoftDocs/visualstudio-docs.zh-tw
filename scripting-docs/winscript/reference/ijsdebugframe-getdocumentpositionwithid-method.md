@@ -1,5 +1,5 @@
 ---
-title: 'Ijsdebugframe:: Getdocumentpositionwithid 方法 |Microsoft 文件'
+title: 'Ijsdebugframe:: Getdocumentpositionwithid 方法 |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -16,19 +16,19 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f11e9ad51094522adec99ef82681f42ac500a251
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 4c37f31ca6b75ca826dbdab93847a1e70ff054c1
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727728"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54090008"
 ---
 # <a name="ijsdebugframegetdocumentpositionwithid-method"></a>IJsDebugFrame::GetDocumentPositionWithId 方法
 傳回此堆疊框架，在使用者層級文件中的目前位置。  
   
 ## <a name="syntax"></a>語法  
   
-```  
+```cpp
 HRESULT GetDocumentPositionWithId(  
    UINT64 *pDocumentId,  
    DWORD *pCharacterOffset,  
@@ -38,13 +38,13 @@ HRESULT GetDocumentPositionWithId(
   
 #### <a name="parameters"></a>參數  
  `pDocumentId`  
- [out]來源文件 （IDebugDocumentText 指標） 的唯一 ID。  
+ [out]來源文件 （IDebugDocumentText 的指標） 的唯一識別碼。  
   
  `pCharacterOffset`  
- [out]從指令碼開頭的以零為起始的字元位移。  
+ [out]從指令碼開頭以零為起始的字元位移。  
   
  `pStatementCharCount`  
- [out]目前的陳述式，就會開始在長度 * pCharacterOffset，以字元為單位。  
+ [out]開始的目前陳述式的長度 * pCharacterOffset，以字元為單位。  
   
 ## <a name="return-value"></a>傳回值  
   

@@ -1,5 +1,5 @@
 ---
-title: 'Ijsdebugframe:: Getdebugproperty 方法 |Microsoft 文件'
+title: 'Ijsdebugframe:: Getdebugproperty 方法 |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -16,19 +16,19 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f1e47a7097c302532ec06b8985b9e9318c0ad4cc
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: b8640eb2bad9633e77797a5ce2348833dbee80d6
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728218"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54089904"
 ---
 # <a name="ijsdebugframegetdebugproperty-method"></a>IJsDebugFrame::GetDebugProperty 方法
-傳回此堆疊框架屬性瀏覽器。  
+傳回此堆疊框架的屬性瀏覽器。  
   
 ## <a name="syntax"></a>語法  
   
-```  
+```cpp
 HRESULT GetDebugProperty(  
    IJsDebugProperty **ppDebugProperty  
 );  
@@ -36,7 +36,7 @@ HRESULT GetDebugProperty(
   
 #### <a name="parameters"></a>參數  
  `ppDebugProperty`  
- [out]物件，表示屬性瀏覽器。  
+ [out]物件，代表屬性瀏覽器。  
   
 ## <a name="return-value"></a>傳回值  
   

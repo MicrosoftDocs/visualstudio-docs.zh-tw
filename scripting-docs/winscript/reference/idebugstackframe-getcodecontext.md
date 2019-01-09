@@ -1,5 +1,5 @@
 ---
-title: IDebugStackFrame::GetCodeContext |Microsoft 文件
+title: IDebugStackFrame::GetCodeContext |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8b872e63169f6c2d70cd3476324b3d0071718350
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 14c7acc9070edb0e63dee8c71cb0b16c5f85e4cd
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726908"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54095611"
 ---
 # <a name="idebugstackframegetcodecontext"></a>IDebugStackFrame::GetCodeContext
 傳回目前的堆疊框架相關聯的程式碼內容。  
   
 ## <a name="syntax"></a>語法  
   
-```  
+```cpp
 HRESULT GetCodeContext(  
    IDebugCodeContext**  ppcc  
 );  
@@ -43,7 +43,7 @@ HRESULT GetCodeContext(
 ## <a name="return-value"></a>傳回值  
  方法會傳回 `HRESULT`。 可能的值包括 (但不限於) 下表中的這些值。  
   
-|值|說明|  
+|值|描述|  
 |-----------|-----------------|  
 |`S_OK`|方法成功。|  
   

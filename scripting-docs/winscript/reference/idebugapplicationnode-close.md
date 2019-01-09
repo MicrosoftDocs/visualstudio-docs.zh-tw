@@ -1,5 +1,5 @@
 ---
-title: IDebugApplicationNode::Close |Microsoft 文件
+title: IDebugApplicationNode::Close |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,29 +18,29 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6d50d1e9a22c3d64d65847922090dfab0c33ab32
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: f14069f839cf279fcbb997046e34928e59dbfb9a
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725488"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54094883"
 ---
 # <a name="idebugapplicationnodeclose"></a>IDebugApplicationNode::Close
-造成此應用程式以釋放所有參考，並輸入非作用中狀態。  
+造成此應用程式以發行所有參考，然後輸入 非作用中狀態。  
   
 ## <a name="syntax"></a>語法  
   
-```  
+```cpp
 HRESULT Close();  
 ```  
   
 #### <a name="parameters"></a>參數  
- 這個方法會採用任何參數。  
+ 這個方法會接受任何參數。  
   
 ## <a name="return-value"></a>傳回值  
  方法會傳回 `HRESULT`。 可能的值包括 (但不限於) 下表中的這些值。  
   
-|值|說明|  
+|值|描述|  
 |-----------|-----------------|  
 |`S_OK`|方法成功。|  
   

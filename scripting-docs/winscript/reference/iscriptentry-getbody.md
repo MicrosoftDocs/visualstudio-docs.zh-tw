@@ -1,5 +1,5 @@
 ---
-title: IScriptEntry::GetBody |Microsoft 文件
+title: IScriptEntry::GetBody |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9daa04009cf7088cbd21a2d3dfa185f581c157a3
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 3b5eb878bccaa8ed415fd813095e31064bc7e245
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24729018"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54094808"
 ---
 # <a name="iscriptentrygetbody"></a>IScriptEntry::GetBody
-傳回的本文對應`IScriptEntry`指令碼區塊、 函式區塊或程式碼片段。  
+傳回對應的文字本文`IScriptEntry`指令碼區塊、 函式區塊或程式碼片段。  
   
 ## <a name="syntax"></a>語法  
   
-```  
+```cpp
 HRESULT GetBody(  
    BSTR               *pbstr  
 );  
@@ -38,18 +38,18 @@ HRESULT GetBody(
   
 #### <a name="parameters"></a>參數  
  `pbstr`  
- [out]下列其中一個的主體中的文字：  
+ [out]本文的下列其中一種文字：  
   
 -   `IScriptEntry`指令碼區塊  
   
 -   `IScriptEntry`函式區塊中的函式  
   
--   `IScriptEntry`程式碼片段的事件處理常式  
+-   `IScriptEntry` Scriptlet 事件處理常式  
   
 ## <a name="return-value"></a>傳回值  
  `HRESULT`。 可能的值包括 (但不限於) 下表中的這些值。  
   
-|值|說明|  
+|值|描述|  
 |-----------|-----------------|  
 |`S_OK`|方法成功。|  
   

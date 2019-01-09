@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptSite::GetLCID |Microsoft 文件
+title: IActiveScriptSite::GetLCID |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a6e128f5ac5de11b45af59c83750411c35e6efa7
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 959989d14d2a71f9c9eab4c78ef1b1bd9078362f
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24724808"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54095000"
 ---
 # <a name="iactivescriptsitegetlcid"></a>IActiveScriptSite::GetLCID
-擷取主機的使用者介面相關聯的地區設定識別項。 指令碼引擎會使用識別碼，以確保錯誤字串及其他由引擎所產生的使用者介面項目會出現適當的語言。  
+擷取主機的使用者介面相關聯的地區設定識別碼。 指令碼引擎會使用識別碼，以確保錯誤字串及其他引擎所產生的使用者介面項目會出現在適當的語言。  
   
 ## <a name="syntax"></a>語法  
   
-```  
+```cpp
 HRESULT GetLCID(  
     LCID *plcid  // address of variable for language identifier  
 );  
@@ -38,7 +38,7 @@ HRESULT GetLCID(
   
 #### <a name="parameters"></a>參數  
  `plcid`  
- [out]接收指令碼引擎所顯示的使用者介面元素的地區設定識別碼的變數的位址。  
+ [out]接收指令碼引擎所顯示的使用者介面元素的地區設定識別碼的變數位址。  
   
 ## <a name="return-value"></a>傳回值  
  會傳回下列值之一：  
@@ -50,7 +50,7 @@ HRESULT GetLCID(
 |`E_POINTER`|指定了無效的指標。|  
   
 ## <a name="remarks"></a>備註  
- 如果此方法傳回`E_NOTIMPL`，應使用系統定義的地區設定識別碼。  
+ 如果此方法傳回`E_NOTIMPL`，應該使用系統定義的地區設定識別碼。  
   
 ## <a name="see-also"></a>另請參閱  
  [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md)

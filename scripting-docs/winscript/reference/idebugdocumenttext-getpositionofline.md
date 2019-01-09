@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentText::GetPositionOfLine |Microsoft 文件
+title: IDebugDocumentText::GetPositionOfLine |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0098a78938c745931c529bbc02823d32b8180cde
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: ca3a1df414f954dce4398eb8a2e0b7ea68a04a49
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726708"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54092285"
 ---
 # <a name="idebugdocumenttextgetpositionofline"></a>IDebugDocumentText::GetPositionOfLine
-傳回對應至該行的第一個字元的字元位置。  
+傳回對應到一行的第一個字元的字元位置。  
   
 ## <a name="syntax"></a>語法  
   
-```  
+```cpp
 HRESULT GetPositionOfLine(  
    ULONG   cLineNumber,  
    ULONG*  pcCharacterPosition  
@@ -42,17 +42,17 @@ HRESULT GetPositionOfLine(
  [in]行號。  
   
  `pcCharacterPosition`  
- [out]這一行開頭的文件中的字元位置`cLineNumber`。  
+ [out]文件中的字元位置開始的行`cLineNumber`。  
   
 ## <a name="return-value"></a>傳回值  
  方法會傳回 `HRESULT`。 可能的值包括 (但不限於) 下表中的這些值。  
   
-|值|說明|  
+|值|描述|  
 |-----------|-----------------|  
 |`S_OK`|方法成功。|  
   
 ## <a name="remarks"></a>備註  
- 這個方法會傳回對應至該行的第一個字元的字元位置。  
+ 這個方法會傳回對應到一行的第一個字元的字元位置。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugDocumentText 介面](../../winscript/reference/idebugdocumenttext-interface.md)

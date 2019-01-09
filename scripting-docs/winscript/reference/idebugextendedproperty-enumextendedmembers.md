@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 400145cf3981b7266a796f66576eb12f979d2750
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b0c1a0d4f5d7b89da023fe9faeacc9b5b9381f50
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49949834"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097639"
 ---
 # <a name="idebugextendedpropertyenumextendedmembers"></a>IDebugExtendedProperty::EnumExtendedMembers
 列舉擴充屬性的成員。  
   
 ## <a name="syntax"></a>語法  
   
-```  
+```cpp
 HRESULT EnumExtendedMembers(  
    EX_DBGPROP_INFO_FLAGS  dwFieldSpec,  
    UINT  nRadix,  

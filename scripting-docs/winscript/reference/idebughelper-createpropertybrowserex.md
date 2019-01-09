@@ -1,5 +1,5 @@
 ---
-title: IDebugHelper::CreatePropertyBrowserEx |Microsoft 文件
+title: IDebugHelper::CreatePropertyBrowserEx |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f9bc219ea5c2ff9ff2860d36cd475985d825ae59
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: c3590fe05ef82f094dd5706f9f527b247d95eda8
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727568"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097730"
 ---
 # <a name="idebughelpercreatepropertybrowserex"></a>IDebugHelper::CreatePropertyBrowserEx
-傳回屬性瀏覽器，包裝 VARIANT，並允許 VARIANT 值或 VARTYPE 類型的自訂轉換成字串。  
+傳回屬性瀏覽器會包裝變體，並允許 VARIANT 值或 VARTYPE 類型為字串的自訂轉換。  
   
 ## <a name="syntax"></a>語法  
   
-```  
+```cpp
 HRESULT CreatePropertyBrowserEx(  
    VARIANT*                  pvar,  
    LPCOLESTR                 bstrName,  
@@ -42,16 +42,16 @@ HRESULT CreatePropertyBrowserEx(
   
 #### <a name="parameters"></a>參數  
  `pvar`  
- [in]若要瀏覽的根 variant。  
+ [in]若要瀏覽的根變數。  
   
  `bstrName`  
- [in]提供根名稱。  
+ [in]要提供根目錄的名稱。  
   
  `pdat`  
- [in]執行緒的要求內容。 如果這個參數是 NULL，會執行任何的封送處理。  
+ [in]執行緒的要求內容。 如果此參數為 NULL，會執行任何封送處理。  
   
  `pdf`  
- [in]物件，提供自訂格式的變異。  
+ [in]提供自訂格式的變體的物件。  
   
  `ppdob`  
  [out]屬性瀏覽器中。  
@@ -59,12 +59,12 @@ HRESULT CreatePropertyBrowserEx(
 ## <a name="return-value"></a>傳回值  
  方法會傳回 `HRESULT`。 可能的值包括 (但不限於) 下表中的這些值。  
   
-|值|說明|  
+|值|描述|  
 |-----------|-----------------|  
 |`S_OK`|方法成功。|  
   
 ## <a name="remarks"></a>備註  
- 這個方法會傳回屬性瀏覽器，包裝 VARIANT，並允許 VARIANT 值或 VARTYPE 類型的自訂轉換成字串。  
+ 這個方法會傳回屬性瀏覽器會包裝變體，並允許 VARIANT 值或 VARTYPE 類型為字串的自訂轉換。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugHelper::CreatePropertyBrowser](../../winscript/reference/idebughelper-createpropertybrowser.md)   

@@ -9,17 +9,17 @@ helpviewer_keywords:
 - rows [Office development in Visual Studio]
 - formatting [Office development in Visual Studio]
 - worksheets, changing formatting
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1e767b8af84eabe3339000a12ed7639e94ce53b0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8bd959c595cd9caa7921c84b87194ee20ddd1291
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53891796"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54088305"
 ---
 # <a name="how-to-programmatically-change-formatting-in-worksheet-rows-containing-selected-cells"></a>HOW TO：以程式設計方式變更包含選取儲存格的工作表列格式
   您可以變更包含選取的儲存格，讓文字是粗體的整個資料列的字型。  

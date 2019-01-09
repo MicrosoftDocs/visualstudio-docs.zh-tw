@@ -1,5 +1,5 @@
 ---
-title: IRemoteDebugApplicationThread::Suspend |Microsoft 文件
+title: IRemoteDebugApplicationThread::Suspend |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 995fa9e16fa9e1d712caff578c29b9aa3e14123b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: c4b7a1491c9e41cfddd0414c47cdf06d4efd3361
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728648"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54096846"
 ---
 # <a name="iremotedebugapplicationthreadsuspend"></a>IRemoteDebugApplicationThread::Suspend
-將執行緒暫止。  
+暫止的執行緒。  
   
 ## <a name="syntax"></a>語法  
   
-```  
+```cpp
 HRESULT Suspend(  
    DWORD*  pdwCount  
 );  
@@ -38,17 +38,17 @@ HRESULT Suspend(
   
 #### <a name="parameters"></a>參數  
  `pdwCount`  
- [out]執行緒的暫停計數。  
+ [out]暫止的執行緒計數。  
   
 ## <a name="return-value"></a>傳回值  
  方法會傳回 `HRESULT`。 可能的值包括 (但不限於) 下表中的這些值。  
   
-|值|說明|  
+|值|描述|  
 |-----------|-----------------|  
 |`S_OK`|方法成功。|  
   
 ## <a name="remarks"></a>備註  
- 當這個方法會將執行緒暫止時，它就會遞增暫停計數。  
+ 當這個方法會暫止的執行緒時，它就會遞增暫停計數。  
   
 ## <a name="see-also"></a>另請參閱  
  [IRemoteDebugApplicationThread 介面](../../winscript/reference/iremotedebugapplicationthread-interface.md)

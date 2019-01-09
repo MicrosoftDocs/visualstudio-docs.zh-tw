@@ -22,15 +22,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 22a2580809394ba1b41e7923f4f2df458d995a93
-ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
-ms.translationtype: MT
+ms.openlocfilehash: 31019f696c54ad0933a0adc458c9b257768605e9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50750958"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53880282"
 ---
 # <a name="directly-access-the-database-with-a-tableadapter"></a>以 TableAdapter 直接存取資料庫
 
