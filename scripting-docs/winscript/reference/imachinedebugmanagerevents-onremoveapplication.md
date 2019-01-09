@@ -1,5 +1,5 @@
 ---
-title: IMachineDebugManagerEvents::onRemoveApplication |Microsoft 文件
+title: IMachineDebugManagerEvents::onRemoveApplication |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fe727b65c8a74962cf6a88ce4ab36ad975b26231
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: b4cc2412f88eb4a4224dc96ebc1b993729169071
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728678"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54088942"
 ---
 # <a name="imachinedebugmanagereventsonremoveapplication"></a>IMachineDebugManagerEvents::onRemoveApplication
-在移除應用程式執行時處理事件的應用程式清單。  
+移除應用程式執行時處理事件的應用程式清單。  
   
 ## <a name="syntax"></a>語法  
   
-```  
+```cpp
 HRESULT onRemoveApplication(  
    IRemoteDebugApplication*  pda,  
    DWORD                     dwAppCookie  
@@ -42,17 +42,17 @@ HRESULT onRemoveApplication(
  [in]已從執行的應用程式的應用程式清單。  
   
  `dwAppCookie`  
- [in]從應用程式清單中加入應用程式時提供 cookie。  
+ [in]所提供的應用程式清單中新增應用程式時的 cookie。  
   
 ## <a name="return-value"></a>傳回值  
  方法會傳回 `HRESULT`。 可能的值包括 (但不限於) 下表中的這些值。  
   
-|值|說明|  
+|值|描述|  
 |-----------|-----------------|  
 |`S_OK`|方法成功。|  
   
 ## <a name="remarks"></a>備註  
- 這個方法會指示應用程式已從執行的應用程式清單。  
+ 這個方法會指示已從執行中移除應用程式的應用程式清單。  
   
 ## <a name="see-also"></a>另請參閱  
  [IMachineDebugManagerEvents 介面](../../winscript/reference/imachinedebugmanagerevents-interface.md)   

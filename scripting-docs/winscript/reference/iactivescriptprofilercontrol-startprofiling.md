@@ -16,19 +16,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5540573991be11230acb33b088174bbb5c39f7f7
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 3a64bbb790933513d29ee1a534472ac92c2072cf
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44281711"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54088292"
 ---
 # <a name="iactivescriptprofilercontrolstartprofiling"></a>IActiveScriptProfilerControl::StartProfiling
 啟動指令碼引擎上進行分析。 指令碼引擎會建立分析工具物件的執行個體呼叫[CoCreateInstance](https://docs.microsoft.com/windows/desktop/api/combaseapi/nf-combaseapi-cocreateinstance)。  
   
 ## <a name="syntax"></a>語法  
   
-```  
+```cpp
 HRESULT StartProfiling(  
     [in] REFCLSID clsidProfilerObject,  
     [in] DWORD dwEventMask,  

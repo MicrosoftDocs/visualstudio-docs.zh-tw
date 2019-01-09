@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptError::GetExceptionInfo |Microsoft 文件
+title: IActiveScriptError::GetExceptionInfo |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8719d1a169c89d7b6cf712a125b6962b9c7a8839
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: bf48362686a05a958a067cffa1015ffe2d58cecc
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24645718"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54096222"
 ---
 # <a name="iactivescripterrorgetexceptioninfo"></a>IActiveScriptError::GetExceptionInfo
-擷取之指令碼引擎執行指令碼時發生錯誤的相關資訊。  
+擷取指令碼引擎執行的指令碼時發生之錯誤的相關資訊。  
   
 ## <a name="syntax"></a>語法  
   
-```  
+```cpp
 HRESULT GetExceptionInfo(  
     EXCEPINFO *pexcepinfo  // structure for exception information  
 );  
@@ -38,7 +38,7 @@ HRESULT GetExceptionInfo(
   
 #### <a name="parameters"></a>參數  
  `pexcepinfo`  
- [out]位址`EXCEPINFO`收到錯誤訊息的結構。  
+ [out]解決的`EXCEPINFO`收到錯誤訊息的結構。  
   
 ## <a name="return-value"></a>傳回值  
  傳回`S_OK`如果成功，或`E_FAIL`如果發生錯誤。  

@@ -20,19 +20,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 377815adc7751841e2a2a3bb2f4dc8b51beecdea
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 517999bce9c85475bd91ad2e54e7ed49cda23aab
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49941278"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54095754"
 ---
 # <a name="dbgpropinfoflags"></a>DBGPROP_INFO_FLAGS
 用來指定`DebugPropertyInfo`欄位  
   
 ## <a name="syntax"></a>語法  
   
-```  
+```cpp
 enum {  
    DBGPROP_INFO_NAME  =0x001,  
    DBGPROP_INFO_TYPE  =0x002,  

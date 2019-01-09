@@ -2,7 +2,6 @@
 title: 在設計階段偵錯 |Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/21/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 86e6aa0da41a16445b3e3328a1ee0bc84063dd52
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.openlocfilehash: c367176a6e05b394449fbd78dabc0e863b43c2b5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53561719"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53960006"
 ---
 # <a name="debug-at-design-time-in-visual-studio-c-c-visual-basic-f"></a>在 Visual Studio 中的設計階段偵錯 (C#，c + +、 Visual Basic 中， F#)
 

@@ -1,8 +1,6 @@
 ---
 title: HOW TO：在機器碼中設定執行緒名稱 |Microsoft Docs
-ms.custom: ''
 ms.date: 12/17/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -18,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9226e009936d0a644a5a6fcfcaba57bc3af25d7d
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
-ms.translationtype: HT
+ms.openlocfilehash: acddd39df0c91aeef5c425ffa67cb234d76d0473
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53803094"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53961344"
 ---
 # <a name="how-to-set-a-thread-name-in-native-code"></a>HOW TO：在機器碼中設定執行緒名稱
 在所有 Visual Studio 版本中，都可以將執行緒命名。 將執行緒命名後，在 [執行緒] 視窗中追蹤執行緒會很方便。

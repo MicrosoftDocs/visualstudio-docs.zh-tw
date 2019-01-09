@@ -1,5 +1,5 @@
 ---
-title: ISetNextStatement::SetNextStatement |Microsoft 文件
+title: ISetNextStatement::SetNextStatement |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -16,19 +16,19 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d21dafcd8cdb762e39f0cfcbde1162dd66c275ec
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 2f21814d0739b304921108fcfdb3c3da80bee9b6
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24733878"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54093115"
 ---
 # <a name="isetnextstatementsetnextstatement"></a>ISetNextStatement::SetNextStatement
-這個方法會更新指令碼解譯器可以執行的下一個程式碼內容。  
+這個方法會更新下一步 可以執行的指令碼解譯器的程式碼內容。  
   
 ## <a name="syntax"></a>語法  
   
-```  
+```cpp
 HRESULT SetNextStatement(  
    IDebugStackFrame*  pStackFrame,  
    IDebugCodeContext*  pCodeContext  
@@ -37,15 +37,15 @@ HRESULT SetNextStatement(
   
 #### <a name="parameters"></a>參數  
  `pStackFrame`  
- [in]堆疊框架物件指標。  
+ [in]堆疊框架物件的指標。  
   
  `pCodeContext`  
- [in]程式碼的內容物件指標。  
+ [in]程式碼內容物件的指標。  
   
 ## <a name="return-value"></a>傳回值  
  方法會傳回 `HRESULT`。 可能的值包括 (但不限於) 下表中的這些值。  
   
-|值|說明|  
+|值|描述|  
 |-----------|-----------------|  
 |`S_OK`|方法成功。|  
   

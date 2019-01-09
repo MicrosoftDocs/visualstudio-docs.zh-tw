@@ -1,5 +1,5 @@
 ---
-title: IScriptScriptlet::SetSubItemName |Microsoft 文件
+title: IScriptScriptlet::SetSubItemName |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a0d038330d502dd9a230fdb82c14d36732fed7e8
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 777a69e47ed7f88851cae0d20f2eb23ee6978296
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24733868"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097707"
 ---
 # <a name="iscriptscriptletsetsubitemname"></a>IScriptScriptlet::SetSubItemName
-設定中的程式碼片段物件主機的完整限定名稱的最後一個識別項。  
+設定程式碼片段物件主機的完整名稱的最後一個識別項。  
   
 ## <a name="syntax"></a>語法  
   
-```  
+```cpp
 HRESULT SetSubItemName(  
    LPCOLESTR          psz  
 );  
@@ -38,14 +38,14 @@ HRESULT SetSubItemName(
   
 #### <a name="parameters"></a>參數  
  `psz`  
- 如果主機的完整程式碼片段名稱有一個以上的層級，`psz`是在第二個層級的識別項的緩衝區位址。  
+ 如果主應用程式的完整程式碼片段名稱有一個以上的層級，`psz`是在第二個層級的識別項的緩衝區位址。  
   
- 如果主機的完整程式碼片段名稱有一個層級，`psz`是在第一個層級的識別項的緩衝區位址。  
+ 如果主應用程式的完整程式碼片段名稱有一個層級，`psz`是第一個層級的識別項的緩衝區位址。  
   
 ## <a name="return-value"></a>傳回值  
  `HRESULT`。 可能的值包括 (但不限於) 下表中的這些值。  
   
-|值|說明|  
+|值|描述|  
 |-----------|-----------------|  
 |`S_OK`|方法成功。|  
   

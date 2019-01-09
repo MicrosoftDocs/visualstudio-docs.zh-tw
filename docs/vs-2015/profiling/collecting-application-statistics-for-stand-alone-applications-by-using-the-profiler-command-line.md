@@ -17,12 +17,12 @@ caps.latest.revision: 24
 author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9841911dbb1fc9bb97eb995534af3eaec73d10e9
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.openlocfilehash: da0fb80c6787d13b1c30fc13081264736030add0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51756964"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53867692"
 ---
 # <a name="collecting-application-statistics-for-stand-alone-applications-by-using-the-profiler-command-line"></a>使用分析工具命令列以收集獨立應用程式的應用程式統計資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +55,7 @@ ms.locfileid: "51756964"
   
 |工作|相關內容|  
 |----------|---------------------|  
-|**分析 ASP.NET Web 應用程式**|-   [使用取樣收集應用程式統計資料](../profiling/collecting-application-statistics-for-aspnet-web-applications-using-the-profiler-sampling-method-from-the-command-line.md)|  
+|**分析 ASP.NET Web 應用程式**|-   [使用取樣收集應用程式統計資料](/visualstudio/profiling/collecting-concurrency-data-for-an-aspnet-web-application?view=vs-2015)|  
 |**分析服務**|-   [使用取樣收集應用程式統計資料](../profiling/collecting-application-statistics-for-services-by-using-the-profiler-sampling-method.md)。 說明如何使用取樣方法收集 Windows 服務的效能統計資料。|  
   
 ### <a name="analyzing-sampling-data-views-and-reports"></a>分析取樣資料檢視和報表  

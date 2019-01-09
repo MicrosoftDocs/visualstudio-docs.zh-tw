@@ -1,5 +1,5 @@
 ---
-title: IScriptScriptlet::SetEventName |Microsoft 文件
+title: IScriptScriptlet::SetEventName |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 244888d49e1e9a84b8865e9c86a845617af6a5d9
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 10accabb3ca4e070173530cba3c60da9d7e5bb04
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24733728"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54092049"
 ---
 # <a name="iscriptscriptletseteventname"></a>IScriptScriptlet::SetEventName
-設定與程式碼片段相關聯之事件的名稱。  
+設定與 scriptlet 相關聯之事件的名稱。  
   
 ## <a name="syntax"></a>語法  
   
-```  
+```cpp
 HRESULT SetEventName(  
    LPCOLESTR          psz  
 );  
@@ -38,12 +38,12 @@ HRESULT SetEventName(
   
 #### <a name="parameters"></a>參數  
  `psz`  
- [in]包含相關聯的事件名稱的緩衝區`IScriptScriptlet`物件。  
+ [in]此緩衝區包含相關聯的事件名稱`IScriptScriptlet`物件。  
   
 ## <a name="return-value"></a>傳回值  
  `HRESULT`。 可能的值包括 (但不限於) 下表中的這些值。  
   
-|值|說明|  
+|值|描述|  
 |-----------|-----------------|  
 |`S_OK`|方法成功。|  
   

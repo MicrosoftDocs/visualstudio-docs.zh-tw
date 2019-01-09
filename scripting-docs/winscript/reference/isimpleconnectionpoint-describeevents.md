@@ -1,5 +1,5 @@
 ---
-title: ISimpleConnectionPoint::DescribeEvents |Microsoft 文件
+title: ISimpleConnectionPoint::DescribeEvents |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 42dab9558d46eae0fbb640c60264a79877708321
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 43a20a2d9580c80bc6aea5d22c6a0713f4843634
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24734018"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54088500"
 ---
 # <a name="isimpleconnectionpointdescribeevents"></a>ISimpleConnectionPoint::DescribeEvents
 在指定範圍的事件中傳回的 DISPID 和每個事件的名稱。  
   
 ## <a name="syntax"></a>語法  
   
-```  
+```cpp
 HRESULT DescribeEvents(  
    ULONG    iEvent,  
    ULONG    cEvents,  
@@ -54,19 +54,19 @@ HRESULT DescribeEvents(
  [out]事件名稱的陣列。  
   
  `pcEventsFetched`  
- [out]實際讀取的事件數目。  
+ [out]實際擷取的事件數目。  
   
 ## <a name="return-value"></a>傳回值  
  方法會傳回 `HRESULT`。 可能的值包括 (但不限於) 下表中的這些值。  
   
-|值|說明|  
+|值|描述|  
 |-----------|-----------------|  
 |`S_OK`|方法成功。|  
-|`S_FALSE`|要求比可用的其他事件。 無法使用的事件會表示 DISPID_NULL 與 null 的 BSTR。|  
+|`S_FALSE`|提供比要求更多的事件。 無法使用的事件會表示 DISPID_NULL 與 null 的 BSTR。|  
 |`E_INVALIDARG`|無法擷取任何項目。|  
   
 ## <a name="remarks"></a>備註  
- 這個方法傳回的 DISPID 和每個事件的名稱在指定範圍的事件。  
+ 這個方法會傳回的 DISPID 和每個事件的名稱在指定範圍的事件。  
   
 ## <a name="see-also"></a>另請參閱  
  [ISimpleConnectionPoint 介面](../../winscript/reference/isimpleconnectionpoint-interface.md)

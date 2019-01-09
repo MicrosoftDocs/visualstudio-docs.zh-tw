@@ -2,7 +2,6 @@
 title: 疑難排解 快照集偵錯 |Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/07/2017
-ms.technology: vs-ide-debug
 ms.topic: troubleshooting
 helpviewer_keywords:
 - debugger
@@ -12,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 82d8a310b86d5dc3c776243293a91f176025f897
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 3f16206b4c537c141bd90615580934c4481ddf06
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53059823"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53880659"
 ---
 # <a name="troubleshooting-and-known-issues-for-snapshot-debugging-in-visual-studio"></a>針對快照集偵錯在 Visual Studio 中的疑難排解和已知問題
 

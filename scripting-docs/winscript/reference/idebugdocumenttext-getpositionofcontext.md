@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentText::GetPositionOfContext |Microsoft 文件
+title: IDebugDocumentText::GetPositionOfContext |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0f843d71096dea4c22eda757a4d6975dfda94180
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: adc921ab461cd0cafb144c9d54061947e160c392
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726768"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54092751"
 ---
 # <a name="idebugdocumenttextgetpositionofcontext"></a>IDebugDocumentText::GetPositionOfContext
 傳回對應至文件內容的字元位置範圍。  
   
 ## <a name="syntax"></a>語法  
   
-```  
+```cpp
 HRESULT GetPositionOfContext(  
    IDebugDocumentContext*  psc,  
    ULONG*                  pcCharacterPosition,  
@@ -46,12 +46,12 @@ HRESULT GetPositionOfContext(
  [out]開始位置的字元位置範圍。  
   
  `cNumChars`  
- [out]在範圍內的字元數。  
+ [out]範圍中的字元數。  
   
 ## <a name="return-value"></a>傳回值  
  方法會傳回 `HRESULT`。 可能的值包括 (但不限於) 下表中的這些值。  
   
-|值|說明|  
+|值|描述|  
 |-----------|-----------------|  
 |`S_OK`|方法成功。|  
   

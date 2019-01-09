@@ -1,8 +1,6 @@
 ---
 title: 'Idiasymbol:: Get_typeids |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bacd3547c1aadfc99b66437acbd73599ec2191f6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: d038c0be6f023206c6a96ec59389ec4063d975fd
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942589"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53880084"
 ---
 # <a name="idiasymbolgettypeids"></a>IDiaSymbol::get_typeIds
 擷取這個符號的編譯器特定的型別識別項值的陣列。  
@@ -27,7 +25,7 @@ ms.locfileid: "49942589"
 ## <a name="syntax"></a>語法  
   
 ```C++  
-HRESULT get_typeIds (   
+HRESULT get_typeIds (   
    DWORD  cTypeIds,  
    DWORD* pcTypeIds,  
    DWORD  typeIds[]  
@@ -50,5 +48,5 @@ HRESULT get_typeIds (
 > [!NOTE]
 >  傳回值為`S_FALSE`表示此屬性不適用於符號。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptAuthor::GetScriptTextAttributes |Microsoft 文件
+title: IActiveScriptAuthor::GetScriptTextAttributes |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6aa96623b4356f0a3d17c8b2631840953dac2d51
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 57513e51248e26e39f95871e0dad329e8cc2f82c
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24645518"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54094701"
 ---
 # <a name="iactivescriptauthorgetscripttextattributes"></a>IActiveScriptAuthor::GetScriptTextAttributes
-傳回指令碼區塊的文字屬性。  
+傳回的指令碼區塊的文字屬性。  
   
 ## <a name="syntax"></a>語法  
   
-```  
+```cpp
 HRESULT GetScriptTextAttributes(  
     LPCOLESTR        pszCode,  
     ULONG            cch,  
@@ -42,21 +42,21 @@ HRESULT GetScriptTextAttributes(
   
 #### <a name="parameters"></a>參數  
  `pszCode`  
- [在 size_is (`cch`)] 的指令碼區塊的文字。 這個字串並沒有以 null 結尾。  
+ [在 size_is (`cch`)] 指令碼區塊的文字。 以 null 結尾沒有這個字串。  
   
  `cch`  
  [in]所使用的大小`pszCode`和`pattr`參數。  
   
  `pszDelimiter`  
- [in]指令碼結束分隔符號的位址。 當`pszCode`剖析文字資料流，從主應用程式通常使用分隔符號 （例如兩個單引號），來偵測程式碼片段的結尾。 如果沒有任何分隔符號來識別指令碼區塊的結尾，請設定此參數為 NULL。  
+ [in]指令碼結束分隔符號的位址。 當`pszCode`剖析文字資料流，從主應用程式通常會使用分隔符號 （例如兩個單引號），偵測 scriptlet 結尾。 如果沒有任何分隔符號來識別指令碼區塊的結尾，請設定此參數為 NULL。  
   
  `dwFlags`  
  [in]相關聯的指令碼區塊的文字屬性的旗標。 可以是下列值的組合：  
   
 |常數|值|描述|  
 |--------------|-----------|-----------------|  
-|GETATTRTYPE_DEPSCAN|0x0001|識別具有 SOURCETEXT_ATTR_IDENTIFIER 屬性的識別項，並找出有 SOURCETEXT_ATTR_MEMBERLOOKUP 屬性的點運算子。|  
-|GETATTRFLAG_THIS|0x0100|識別具有 SOURCETEXT_ATTR_THIS 屬性的目前物件。|  
+|GETATTRTYPE_DEPSCAN|0x0001|識別具有 SOURCETEXT_ATTR_IDENTIFIER 屬性的識別項，並找出具有 SOURCETEXT_ATTR_MEMBERLOOKUP 屬性的點運算子。|  
+|GETATTRFLAG_THIS|0x0100|識別目前具有 SOURCETEXT_ATTR_THIS 屬性的物件。|  
 |GETATTRFLAG_HUMANTEXT|0x8000|識別具有 SOURCETEXT_ATTR_HUMANTEXT 屬性的字串內容和註解文字。|  
   
  `pattr`  
@@ -65,7 +65,7 @@ HRESULT GetScriptTextAttributes(
 ## <a name="return-value"></a>傳回值  
  `HRESULT`。 可能的值包括 (但不限於) 下表中的這些值。  
   
-|值|說明|  
+|值|描述|  
 |-----------|-----------------|  
 |`S_OK`|方法成功。|  
   

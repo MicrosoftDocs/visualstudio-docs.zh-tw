@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptProfilerControl2::CompleteProfilerStart |Microsoft 文件
+title: IActiveScriptProfilerControl2::CompleteProfilerStart |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,19 +14,19 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5abd4ee4237991714bfe3d8ba21b083f1a1920cd
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: b307352a3ba6d10ec3ae434536dee82d22504d33
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24724498"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54091282"
 ---
 # <a name="iactivescriptprofilercontrol2completeprofilerstart"></a>IActiveScriptProfilerControl2::CompleteProfilerStart
-您已經啟動上所有適用的指令碼引擎的分析通知分析工具。 使用此方法，您可以取得完整的呼叫堆疊如果[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]啟動程式碼剖析時執行。  
+通知分析工具，您已開始分析在所有適用的指令碼引擎。 這個方法，您可以使用取得的完整呼叫堆疊如果[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]啟動程式碼剖析時執行。  
   
 ## <a name="syntax"></a>語法  
   
-```  
+```cpp
 HRESULT CompleteProfilerStart();  
 ```  
   
@@ -42,10 +42,10 @@ HRESULT CompleteProfilerStart();
 |`E_FAIL`|無法啟動程式碼剖析。|  
 |`S_FALSE`|程式碼剖析已啟動時不執行的指令碼。|  
 |`ACTIVPROF_E_PROFILER_ABSENT`|未啟用程式碼剖析。 尚未設定任何回呼。|  
-|`E_OUTOFMEMORY`|因為記憶體不足狀況，無法取得呼叫堆疊。|  
+|`E_OUTOFMEMORY`|無法取得呼叫堆疊，因為記憶體不足的狀況。|  
   
 ## <a name="remarks"></a>備註  
- 呼叫`IActiveScriptProfilerControl2::CompleteProfilerStart`可確保已在呼叫堆疊中的函式的事件會傳送。 這個方法沒有任何目前的索引標籤上的指令碼引擎上啟動程式碼剖析後呼叫。方法可以呼叫的任何指令碼引擎。  
+ 呼叫`IActiveScriptProfilerControl2::CompleteProfilerStart`可確保已在呼叫堆疊中的函式的事件會傳送。 這個方法有分析上目前的索引標籤上的任何指令碼引擎啟動後呼叫。針對任何指令碼引擎，可以呼叫這個方法。  
   
 ## <a name="see-also"></a>另請參閱  
  [IActiveScriptProfilerControl2::PrepareProfilerStop](../../winscript/reference/iactivescriptprofilercontrol2-prepareprofilerstop.md)   

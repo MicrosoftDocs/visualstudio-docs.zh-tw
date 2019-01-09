@@ -1,5 +1,5 @@
 ---
-title: IDispatchEx::GetMemberName |Microsoft 文件
+title: IDispatchEx::GetMemberName |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 63489dad447ece245e14e483127cb67327d55fe5
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 4f042fa0f8fb087b796e306074152f11afd7fed4
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727918"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54091477"
 ---
 # <a name="idispatchexgetmembername"></a>IDispatchEx::GetMemberName
 擷取成員的名稱。  
   
 ## <a name="syntax"></a>語法  
   
-```  
+```cpp
 HRESULT GetMemberName(  
    DISPID id,  
    BSTR *pbstrName  
@@ -39,10 +39,10 @@ HRESULT GetMemberName(
   
 #### <a name="parameters"></a>參數  
  `id`  
- 辨識成員。 使用`GetDispID`或`GetNextDispID`取得的分派識別項。  
+ 辨識成員。 會使用`GetDispID`或`GetNextDispID`取得的分派識別項。  
   
  `pbstrName`  
- 位址`BSTR`接收成員的名稱。 呼叫的應用程式會負責釋出這個值。  
+ 解決的`BSTR`接收成員的名稱。 呼叫的應用程式會負責釋放此值。  
   
 ## <a name="return-value"></a>傳回值  
  會傳回下列值之一：  
@@ -54,7 +54,7 @@ HRESULT GetMemberName(
   
 ## <a name="example"></a>範例  
   
-```  
+```cpp
 HRESULT hr;  
    BSTR bstrName;  
    DISPID dispid;  

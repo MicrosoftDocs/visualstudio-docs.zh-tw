@@ -1,5 +1,5 @@
 ---
-title: IDebugExpression::Start |Microsoft 文件
+title: IDebugExpression::Start |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 14d293649e3a6a87c7f594e244378dc2a7e15ac6
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 2c0d7b809f18407bfeb3de59c9cbb6e6e26911ad
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727598"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54093336"
 ---
 # <a name="idebugexpressionstart"></a>IDebugExpression::Start
-開始評估的運算式。  
+開始評估運算式。  
   
 ## <a name="syntax"></a>語法  
   
-```  
+```cpp
 HRESULT Start(  
    IDebugExpressionCallBack*  pdecb  
 );  
@@ -38,17 +38,17 @@ HRESULT Start(
   
 #### <a name="parameters"></a>參數  
  `pdecb`  
- [in]指出當運算式評估完成時的回呼。 如果這個參數是`NULL`，會引發任何事件，且用戶端都必須使用輪詢運算式狀態`QueryIsComplete`。  
+ [in]用來指出當運算式評估完成時回呼。 如果這個參數是`NULL`，會引發任何事件，且用戶端都必須使用輪詢運算式狀態`QueryIsComplete`。  
   
 ## <a name="return-value"></a>傳回值  
  方法會傳回 `HRESULT`。 可能的值包括 (但不限於) 下表中的這些值。  
   
-|值|說明|  
+|值|描述|  
 |-----------|-----------------|  
 |`S_OK`|方法成功。|  
   
 ## <a name="remarks"></a>備註  
- 這個方法會開始在運算式評估。  
+ 這個方法會評估運算式。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugExpression::Abort](../../winscript/reference/idebugexpression-abort.md)   

@@ -1,5 +1,5 @@
 ---
-title: IDebugSessionProvider::StartDebugSession |Microsoft 文件
+title: IDebugSessionProvider::StartDebugSession |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4e93d3bd48a544d5bb446e1bff102268a7624e85
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: fe0ce2d55a945c5c35dc82700aa45e1849d6a2c0
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727388"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54096329"
 ---
 # <a name="idebugsessionproviderstartdebugsession"></a>IDebugSessionProvider::StartDebugSession
-初始化具有指定的應用程式偵錯工作階段。  
+初始化具有指定的應用程式的偵錯工作階段。  
   
 ## <a name="syntax"></a>語法  
   
-```  
+```cpp
 HRESULT StartDebugSession(  
    IRemoteDebugApplication*  pda  
 );  
@@ -43,12 +43,12 @@ HRESULT StartDebugSession(
 ## <a name="return-value"></a>傳回值  
  方法會傳回 `HRESULT`。 可能的值包括 (但不限於) 下表中的這些值。  
   
-|值|說明|  
+|值|描述|  
 |-----------|-----------------|  
 |`S_OK`|方法成功。|  
   
 ## <a name="remarks"></a>備註  
- 這個方法會起始與指定的應用程式的偵錯工作階段。 偵錯工具應該呼叫`IRemoteDebugApplication::ConnectDebugger`傳回從這個呼叫之前。  
+ 此方法會起始指定的應用程式的偵錯工作階段。 偵錯工具應該呼叫`IRemoteDebugApplication::ConnectDebugger`返回這個呼叫之前。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugSessionProvider 介面](../../winscript/reference/idebugsessionprovider-interface.md)   

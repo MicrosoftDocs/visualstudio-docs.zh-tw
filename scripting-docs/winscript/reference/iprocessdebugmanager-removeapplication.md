@@ -1,5 +1,5 @@
 ---
-title: IProcessDebugManager::RemoveApplication |Microsoft 文件
+title: IProcessDebugManager::RemoveApplication |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b8d95be6227f192596e174095744a4e0247e0c37
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: c163f756e426cab9ce36c1c8343b142bf76aafd6
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24729178"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54086511"
 ---
 # <a name="iprocessdebugmanagerremoveapplication"></a>IProcessDebugManager::RemoveApplication
 移除應用程式從執行的應用程式清單。  
   
 ## <a name="syntax"></a>語法  
   
-```  
+```cpp
 HRESULT RemoveApplication(  
    DWORD  dwAppCookie  
 );  
@@ -43,7 +43,7 @@ HRESULT RemoveApplication(
 ## <a name="return-value"></a>傳回值  
  方法會傳回 `HRESULT`。 可能的值包括 (但不限於) 下表中的這些值。  
   
-|值|說明|  
+|值|描述|  
 |-----------|-----------------|  
 |`S_OK`|方法成功。|  
   
@@ -51,5 +51,5 @@ HRESULT RemoveApplication(
  這個方法會移除應用程式從執行的應用程式清單。  
   
 ## <a name="see-also"></a>另請參閱  
- [IProcessDebugManager::AddApplication](../../winscript/reference/iprocessdebugmanager-addapplication.md)   
+ [Iprocessdebugmanager:: Addapplication](../../winscript/reference/iprocessdebugmanager-addapplication.md)   
  [IProcessDebugManager 介面](../../winscript/reference/iprocessdebugmanager-interface.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentHelper::GetDebugApplicationNode |Microsoft 文件
+title: 'Idebugdocumenthelper:: Getdebugapplicationnode |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 27d1fb09698cffa4826ab35b36e3ae315a12ba74
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 5af0326d4e77e6bb70e05be2609beea86cc294b7
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726038"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54093596"
 ---
 # <a name="idebugdocumenthelpergetdebugapplicationnode"></a>IDebugDocumentHelper::GetDebugApplicationNode
-傳回對應到此文件的偵錯應用程式節點。  
+傳回對應至這份文件的偵錯應用程式節點。  
   
 ## <a name="syntax"></a>語法  
   
-```  
+```cpp
 HRESULT GetDebugApplicationNode(  
    IDebugApplicationNode**  ppdan  
 );  
@@ -38,17 +38,17 @@ HRESULT GetDebugApplicationNode(
   
 #### <a name="parameters"></a>參數  
  `ppdan`  
- [out]本文件對應的偵錯應用程式節點。  
+ [out]對應至這份文件的偵錯應用程式節點。  
   
 ## <a name="return-value"></a>傳回值  
  方法會傳回 `HRESULT`。 可能的值包括 (但不限於) 下表中的這些值。  
   
-|值|說明|  
+|值|描述|  
 |-----------|-----------------|  
 |`S_OK`|方法成功。|  
   
 ## <a name="remarks"></a>備註  
- 傳回對應到此文件的偵錯應用程式節點。  
+ 傳回對應至這份文件的偵錯應用程式節點。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugDocumentHelper 介面](../../winscript/reference/idebugdocumenthelper-interface.md)
