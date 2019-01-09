@@ -2,7 +2,6 @@
 title: 程式碼樣式喜好設定
 ms.date: 03/10/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
@@ -12,12 +11,12 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.Basic.Code_Style.General
 ms.workload:
 - multiple
-ms.openlocfilehash: 718110b3339628052d8a4a2e3ebbcdd163707a97
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: e1875099fa73fc994643b137807d1b0e1ed485c9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53065257"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53949942"
 ---
 # <a name="code-style-preferences"></a>程式碼樣式喜好設定
 

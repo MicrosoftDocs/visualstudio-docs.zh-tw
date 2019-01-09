@@ -4,7 +4,6 @@ titleSuffix: ''
 description: 逐步解說 Visual Studio 專案環境中的 Django 基本知識，特別示範如何提供靜態檔案、將頁面加入應用程式，以及使用範本繼承
 ms.date: 11/19/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-python
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
@@ -13,14 +12,14 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: cfde21f356e35366cfb80b029f918eed0364a7b5
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 5c53001d31e6ef4ee32aaef2093e04be6fcaac29
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53066076"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53829585"
 ---
-# <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>步驟 3：提供靜態檔案、新增頁面，以及使用範本繼承
+# <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>步驟 3：提供靜態檔案、新增頁面，然後使用範本繼承
 
 **先前步驟：[使用檢視與頁面範本建立 Django 應用程式](learn-django-in-visual-studio-step-02-create-an-app.md)**
 
@@ -46,7 +45,7 @@ ms.locfileid: "53066076"
 
 ### <a name="question-how-does-visual-studio-know-which-item-templates-to-offer"></a>問題：Visual Studio 如何知道應提供哪些項目範本？
 
-答：Visual Studio 專案檔 (*.pyproj*) 包含將它標示為 Python 專案的專案類型識別碼。 Visual Studio 會使用此類型的識別碼，以便只顯示適用於專案類型的項目範本。 如此一來，Visual Studio 便可為許多專案類型提供豐富的項目範本，而無須要求您每次都要查看整理範本。
+回答：Visual Studio 專案檔 (*.pyproj*) 包含將它標示為 Python 專案的專案類型識別碼。 Visual Studio 會使用此類型的識別碼，以便只顯示適用於專案類型的項目範本。 如此一來，Visual Studio 便可為許多專案類型提供豐富的項目範本，而無須要求您每次都要查看整理範本。
 
 ## <a name="step-3-2-serve-static-files-from-your-app"></a>步驟 3-2：從您的應用程式提供靜態檔案
 
@@ -103,9 +102,9 @@ STATIC_ROOT = posixpath.join(*(BASE_DIR.split(os.path.sep) + ['static']))
 
 ### <a name="question-are-there-any-conventions-for-organizing-static-files"></a>問題：整理靜態檔案有任何慣例嗎？
 
-答：您可以視需要將其他 CSS、JavaScript 和 HTML 檔案新增至您的 *static* 資料夾。 組織靜態檔案的一般方式是建立名為 *fonts*、*scripts* 和 *content* 的子資料夾 (針對樣式表和任何其他檔案)。 在各種情況中，請記得要將那些資料夾包含在 `{% static %}` 參考中的檔案相對路徑。
+回答：您可以視需要將其他 CSS、JavaScript 和 HTML 檔案新增至您的 *static* 資料夾。 組織靜態檔案的一般方式是建立名為 *fonts*、*scripts* 和 *content* 的子資料夾 (針對樣式表和任何其他檔案)。 在各種情況中，請記得要將那些資料夾包含在 `{% static %}` 參考中的檔案相對路徑。
 
-## <a name="step-3-3-add-a-page-to-the-app"></a>步驟 3-3：將頁面新增到應用程式
+## <a name="step-3-3-add-a-page-to-the-app"></a>步驟 3-3：將頁面新增至應用程式
 
 將其他頁面加入應用程式意義如下：
 

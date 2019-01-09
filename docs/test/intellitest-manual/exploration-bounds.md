@@ -2,7 +2,6 @@
 title: 探索界限 | Microsoft IntelliTest 開發人員測試工具
 ms.date: 05/02/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: reference
 helpviewer_keywords:
 - IntelliTest, Exploration bounds
@@ -11,12 +10,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 9d1ac08a2314119c924417191ca509a4bcd18021
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: 718c8cfdf7b4d03ea0c1c3b5f9f4a120a5997a8e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51000648"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53935459"
 ---
 # <a name="exploration-bounds"></a>探索界限
 

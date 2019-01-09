@@ -1,8 +1,6 @@
 ---
 title: 部署到本機資料夾
-ms.custom: ''
 ms.date: 06/22/2018
-ms.technology: vs-ide-deployment
 ms.topic: quickstart
 helpviewer_keywords:
 - deployment, local folder
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 517698aa2e042d74138579dae3633930b338cd61
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: b4dff7adb3942fce20b7b6cb5b09c29965320399
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38781909"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53854031"
 ---
 # <a name="deploy-an-app-to-a-local-folder-using-visual-studio"></a>使用 Visual Studio 將應用程式部署到本機資料夾
 
@@ -31,7 +29,7 @@ ms.locfileid: "38781909"
 
     ![[方案總管] 中專案操作功能表上的 [發行] 命令](../deployment/media/quickstart-publish.png "選擇 [發行]")
 
-1. 如果您之前已設定任何發行設定檔，[發行] 窗格隨即出現。 選取 [建立新設定檔]。
+1. 如果您之前已設定任何發行設定檔，[發行] 窗格會隨即出現。 選取 [建立新設定檔]。
 
 1. 在 [挑選發行目標] 對話方塊中，選擇 [資料夾]。
 

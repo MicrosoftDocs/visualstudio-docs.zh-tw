@@ -9,13 +9,12 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 2195b99658d05e9e73a86cf723fcb8e9d4f36bd4
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: c9cf6ea3b5bf82d26ab838b75cb0c0092aafc182
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53060235"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53958757"
 ---
 # <a name="how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data"></a>HOW TO：指定使用 Web 快取資料的虛擬使用者百分比
 

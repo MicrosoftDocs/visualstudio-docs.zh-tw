@@ -2,7 +2,6 @@
 title: -Runexit (devenv.exe)
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 helpviewer_keywords:
 - runexit Devenv switch
@@ -14,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dff2f028c94013df4f69e9aca244f98c307d2782
-ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
+ms.openlocfilehash: 6fa715c97310edc447610b0c0ae61226ab5334f9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "51948227"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53955116"
 ---
 # <a name="runexit-devenvexe"></a>/Runexit (devenv.exe)
 編譯並執行指定的專案或解決方案，然後關閉整合式開發環境 (IDE)。
@@ -33,11 +32,11 @@ devenv /runexit {SolutionName|ProjectName}
 ## <a name="arguments"></a>引數
  `SolutionName`
 
- 必要。 方案檔的完整路徑和名稱。
+ 必要項。 方案檔的完整路徑和名稱。
 
  `ProjectName`
 
- 必要。 專案檔的完整路徑和名稱。
+ 必要項。 專案檔的完整路徑和名稱。
 
 ## <a name="remarks"></a>備註
  根據為使用中方案組態所指定的設定，編譯並執行指定的專案或方案。 這個參數在專案或解決方案執行時會將 IDE 最小化，並在專案或解決方案完成執行之後關閉 IDE。

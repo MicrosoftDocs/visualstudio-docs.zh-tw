@@ -2,7 +2,6 @@
 title: JavaScript、屬性頁
 ms.date: 06/21/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - javascript.project.property.debugging.debuggertype
@@ -18,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: eabc82926c821fb5a8d83637fb9118bc25df82bc
-ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
+ms.openlocfilehash: 83c7a2b0d0004b1f96a1c46ab120814179f77d26
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53684989"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53956527"
 ---
 # <a name="property-pages-javascript"></a>JavaScript、屬性頁
 [屬性頁] 提供對專案設定的存取。 您可以使用 [屬性頁] 中所顯示的頁面來變更專案屬性。

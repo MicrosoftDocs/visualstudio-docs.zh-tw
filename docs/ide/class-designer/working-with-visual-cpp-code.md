@@ -2,7 +2,6 @@
 title: 使用 Visual C++ 程式碼 (類別設計工具)
 ms.date: 06/21/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - vs.classdesigner.cpplimitation
@@ -20,12 +19,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 19c3e72dd6f02d97dcb083cd61d7102a6926eb2e
-ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
+ms.openlocfilehash: e81a267b1a80036a0e000d7336f6b50b0e5f29d2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53684583"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53947513"
 ---
 # <a name="work-with-visual-c-code-in-class-designer"></a>在類別設計工具中使用 Visual C++ 程式碼
 

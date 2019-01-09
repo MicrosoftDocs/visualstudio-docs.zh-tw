@@ -10,13 +10,12 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 5f276702aef4bf062d7da3e921965e674d5ec738
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 95f184628af5b56845f76d1c7279608b6826c151
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53064992"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53826783"
 ---
 # <a name="how-to-create-load-test-performance-reports-using-microsoft-excel"></a>HOW TO：使用 Microsoft Excel 建立負載測試效能報表
 

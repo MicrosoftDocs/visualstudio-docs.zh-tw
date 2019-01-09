@@ -2,7 +2,6 @@
 title: 測試產生 | Microsoft IntelliTest 開發人員測試工具
 ms.date: 05/02/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 helpviewer_keywords:
 - IntelliTest, Test generation
@@ -11,12 +10,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 20bacca2343cb2689ed52096c1a9b0d9c3d74703
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 5f2a63c21a1d2f25f34bda3f27163783d9c96bcd
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295861"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53936642"
 ---
 # <a name="test-generation"></a>測試產生
 

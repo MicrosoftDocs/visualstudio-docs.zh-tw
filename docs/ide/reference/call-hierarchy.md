@@ -2,7 +2,6 @@
 title: 尋找對方法的呼叫
 ms.date: 05/18/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VS.CallHierarchy
@@ -13,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f386d3d73de45c539752207fb55200e8e8ee715
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e1ca479a335cc46e199a107ec38d937dc5774d2f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49905950"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53915691"
 ---
 # <a name="view-call-hierarchy"></a>檢視呼叫階層
 
@@ -65,7 +64,7 @@ ms.locfileid: "49905950"
 
 下表描述幾個當您以滑鼠右鍵按一下樹狀檢視窗格中的節點時，可以使用的捷徑功能表選項。
 
-|操作功能表項目|描述|
+|操作功能表項目|說明|
 | - |-----------------|
 |**增為新根目錄**|將選取的節點新增至樹狀檢視窗格作為新的根節點。 這可讓您將注意力放在特定樹狀子目錄。|
 |**移除根目錄**|從樹狀檢閱窗格移除所選根節點。 這個選項只能從根節點使用。<br /><br /> 您也可以使用 [移除根目錄] 工具列按鈕來移除選取的根節點。|

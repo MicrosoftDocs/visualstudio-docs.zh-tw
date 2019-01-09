@@ -2,7 +2,6 @@
 title: 類別設計工具的鍵盤和滑鼠快速鍵
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - vs.classdetails.window
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 87b447c3cf2fbba77584675edf3d34f44a98cb64
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4a5cce869c2dacb0b6b4bc3e4031860b6772a9a2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49848497"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53826730"
 ---
 # <a name="keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window"></a>類別圖表和類別細節視窗中的鍵盤和滑鼠快速鍵
 
@@ -30,7 +29,7 @@ ms.locfileid: "49848497"
 
 類別圖表中可支援下列滑鼠動作：
 
-|滑鼠組合|內容|描述|
+|滑鼠組合|內容|說明|
 | - |-------------|-----------------|
 |按兩下|圖案項目|開啟程式碼編輯器。|
 |按兩下|棒棒糖符號連接器|展開/摺疊棒棒糖符號。|
@@ -58,7 +57,7 @@ ms.locfileid: "49848497"
 
 類別圖表中可支援下列鍵盤動作：
 
-|Key|內容|描述|
+|Key|內容|說明|
 |---------|-------------|-----------------|
 |**方向鍵**|在類型圖形內|圖形內容的樹狀樣式瀏覽 (支援圖案循環)。 如果可展開目前的項目，則向左和向右鍵可展開/摺疊該項目；如果不可展開目前的項目，則向左和向右鍵會瀏覽至父系 (請參閱樹狀檢視瀏覽，以了解詳細的行為)。|
 |**方向鍵**|最上層的圖形|移動圖表上的圖形。|

@@ -2,9 +2,8 @@
 title: 安裝 Visual Studio
 titleSuffix: ''
 description: 了解如何逐步安裝 Visual Studio。
-ms.custom: seodec18
 ms.date: 05/07/2018
-ms.technology: vs-acquisition
+ms.custom: seodec18
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
@@ -20,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dd600348e9e0cbb5281437b9ad5542c865ef6575
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: b4ab9fb30a1268778f47a0190d1b16b1cd48d974
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53739967"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53958432"
 ---
 # <a name="install-visual-studio-2017"></a>安裝 Visual Studio 2017
 
