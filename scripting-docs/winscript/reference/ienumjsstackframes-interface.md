@@ -1,5 +1,5 @@
 ---
-title: IEnumJsStackFrames 介面 |Microsoft 文件
+title: IEnumJsStackFrames 介面 |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -12,30 +12,30 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 12583f73c9f3977371ebd193716f2513fc0befc4
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: c26470e02f6c7e5d8911df7e743bce0cb0e560bb
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727318"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54087876"
 ---
 # <a name="ienumjsstackframes-interface"></a>IEnumJsStackFrames 介面
-藉由偵錯工具提供堆疊回溯 jscript9diag.dll javascript。  
+藉由將偵錯工具提供堆疊回溯適用於 JavaScript 的 jscript9diag.dll。  
   
 ## <a name="syntax"></a>語法  
   
-```  
+```cpp
 IEnumJsStackFrames : public IUnknown;  
 ```  
   
-## <a name="members"></a>Members  
+## <a name="members"></a>成員  
   
 ### <a name="public-methods"></a>公用方法  
   
-|名稱|說明|  
+|名稱|描述|  
 |----------|-----------------|  
 |[IEnumJsStackFrames::Next 方法](../../winscript/reference/ienumjsstackframes-next-method.md)|取得指定的框架數。|  
-|[IEnumJsStackFrames::Reset 方法](../../winscript/reference/ienumjsstackframes-reset-method.md)|將堆疊框架重設前的第一個元素的位置。|  
+|[IEnumJsStackFrames::Reset 方法](../../winscript/reference/ienumjsstackframes-reset-method.md)|將堆疊框架重設之前的第一個元素的位置。|  
   
 ## <a name="requirements"></a>需求  
  **標頭：** jscript9diag.h  

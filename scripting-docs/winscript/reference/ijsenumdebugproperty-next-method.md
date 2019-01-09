@@ -1,5 +1,5 @@
 ---
-title: 'Ijsenumdebugproperty:: Next 方法 |Microsoft 文件'
+title: 'Ijsenumdebugproperty:: Next 方法 |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -16,19 +16,19 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b8c85601709bb727549152ffdb01e15dbd84e510
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 9e6b0e3499f9420d42660880f616d2d0873d7a0f
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728818"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54086771"
 ---
 # <a name="ijsenumdebugpropertynext-method"></a>IJsEnumDebugProperty::Next 方法
-讀取此物件屬性。  
+會讀取這個物件的屬性。  
   
 ## <a name="syntax"></a>語法  
   
-```  
+```cpp
 HRESULT Next(  
    ULONG count,  
    IJsDebugProperty **ppDebugProperty,  
@@ -41,10 +41,10 @@ HRESULT Next(
  [in]要讀取的屬性數目。  
   
  `ppDebugProperty`  
- [out]物件，表示屬性瀏覽器。  
+ [out]物件，代表屬性瀏覽器。  
   
  `pActualCount`  
- [out]物件的屬性的實際數目。  
+ [out]實際物件的屬性數目。  
   
 ## <a name="return-value"></a>傳回值  
   

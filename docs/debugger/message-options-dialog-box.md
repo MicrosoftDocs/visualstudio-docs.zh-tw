@@ -1,8 +1,6 @@
 ---
-title: 訊息選項對話方塊 |Microsoft 文件
-ms.custom: ''
+title: 訊息選項對話方塊 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: reference
 helpviewer_keywords:
 - message options, Spy++
@@ -13,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 76ced120b9545adb21a4fcfe73df6f69961568b7
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: d3f71e33bbb52506760d5b83f50e459473df8077
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31474917"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53861743"
 ---
 # <a name="message-options-dialog-box"></a>訊息選項對話方塊
 使用此對話方塊來選取哪一個訊息會列在[訊息檢視](../debugger/messages-view.md)。 若要顯示此對話方塊中，選擇**記錄檔訊息**從**Spy**功能表。  
@@ -38,16 +36,16 @@ ms.locfileid: "31474917"
  用來尋找訊息 檢視中的特定訊息的節點。  
   
  [訊息屬性對話方塊](../debugger/message-properties-dialog-box.md)  
- 用來顯示訊息，訊息 檢視中選取的屬性。  
+ 用來顯示訊息，在 [訊息] 檢視中選取的屬性。  
   
  [Spy++ 參考](../debugger/spy-increment-reference.md)  
- 包含各節描述每個 Spy + + 功能表和對話方塊方塊。  
+ 包含描述每個 Spy + + 功能表和對話方塊方塊中的區段。  
   
  [搜尋訊息檢視中的訊息](../debugger/how-to-search-for-a-message-in-messages-view.md)  
  說明如何在訊息檢視中找到特定的訊息。  
   
  [從尋找視窗開啟訊息檢視](../debugger/how-to-open-messages-view-from-find-window.md)  
- 說明如何從尋找視窗對話方塊開啟訊息檢視。  
+ 說明如何從尋找視窗對話方塊中開啟訊息檢視。  
   
  [訊息檢視](../debugger/messages-view.md)  
  顯示視窗、 處理序或執行緒相關聯的訊息資料流。  

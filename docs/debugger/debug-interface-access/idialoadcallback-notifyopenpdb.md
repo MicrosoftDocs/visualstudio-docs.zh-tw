@@ -1,8 +1,6 @@
 ---
 title: 'Idialoadcallback:: Notifyopenpdb |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1367d444a498c1c066cbdfb38ee4f2cec12c9a2b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 47585a3c9b0b4f918fd7522f71ee9bc95f31836a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49915317"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53895015"
 ---
 # <a name="idialoadcallbacknotifyopenpdb"></a>IDiaLoadCallback::NotifyOpenPDB
 候選.pdb 檔案開啟時呼叫。  
@@ -27,7 +25,7 @@ ms.locfileid: "49915317"
 ## <a name="syntax"></a>語法  
   
 ```C++  
-HRESULT NotifyOpenPDB (   
+HRESULT NotifyOpenPDB (   
    LPCOLESTR pdbPath,  
    HRESULT   resultCode  
 );  
@@ -43,5 +41,5 @@ HRESULT NotifyOpenPDB (
 ## <a name="return-value"></a>傳回值  
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。 傳回碼通常會被忽略。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md)

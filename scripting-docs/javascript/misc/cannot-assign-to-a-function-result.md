@@ -1,5 +1,5 @@
 ---
-title: 無法指派給函式結果 |Microsoft 文件
+title: 無法指派給函式結果 |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -20,23 +20,23 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f7e7ea718aa97ab7b2eb0924458826cd1eac5672
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 1a29c3f20392dc216c0306137c0dec6b22aaa58a
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24632978"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54093856"
 ---
 # <a name="cannot-assign-to-a-function-result"></a>無法指派給函式結果
-您嘗試指派值給函式的結果。 函式的結果可以指派給變數，但它不能做為變數。 如果您想要將新值指派給函式本身，省略括號 （函式呼叫運算子）。 下列範例示範如何產生這個錯誤的情況。  
+您嘗試指派值給函式的結果。 函式的結果可以指派給變數，但它不能做為變數。 如果您想要將新的值指派給函式本身，省略括號 （函式呼叫運算子）。 下列範例示範用來產生這個錯誤的情況。  
   
-```  
+```js
 myFunction() = 42;  // Attempting to assign the value 42 to the result of the function call.  
 ```  
   
 ### <a name="to-correct-this-error"></a>更正這個錯誤  
   
--   請勿使用函式呼叫結果的值為項目可以*指派給*。 您可以指派函式呼叫的結果*變數*雖然。  
+-   請勿使用函式呼叫結果的值作為項目即可*指派給*。 您可以指派函式呼叫的結果*變數*雖然。  
   
     ```JavaScript  
     myVar = myFunction(42);  

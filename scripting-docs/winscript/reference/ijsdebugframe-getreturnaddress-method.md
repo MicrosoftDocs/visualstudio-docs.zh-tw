@@ -1,5 +1,5 @@
 ---
-title: 'Ijsdebugframe:: Getreturnaddress 方法 |Microsoft 文件'
+title: 'Ijsdebugframe:: Getreturnaddress 方法 |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -16,19 +16,19 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b9d2b78f049a080f70b30edb82af1066817f6adb
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 78384fc4e65dcd5e1f41f3f83b98c3fab5b12cfd
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727698"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54093895"
 ---
 # <a name="ijsdebugframegetreturnaddress-method"></a>IJsDebugFrame::GetReturnAddress 方法
-取得在 'start' 推入的傳回位址 （請參閱 GetStackRange） 的框架。  
+取得 'start' 位置推入的傳回位址 （請參閱 GetStackRange） 的框架。  
   
 ## <a name="syntax"></a>語法  
   
-```  
+```cpp
 HRESULT GetReturnAddress(  
    UINT64 *pReturnAddress  
 );  

@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptError::GetSourcePosition |Microsoft 文件
+title: IActiveScriptError::GetSourcePosition |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d63310a8ba5cfda39d48a482eaf7c345cd492adc
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: fb5adfe508b7b5d3de0cf7f508d8c801a36adf1f
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24645838"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097366"
 ---
 # <a name="iactivescripterrorgetsourceposition"></a>IActiveScriptError::GetSourcePosition
-擷取原始碼中發生錯誤時，指令碼引擎已執行的指令碼的位置。  
+擷取在原始程式碼中發生錯誤時，指令碼引擎所執行的指令碼的位置。  
   
 ## <a name="syntax"></a>語法  
   
-```  
+```cpp
 HRESULT GetSourcePosition(  
     DWORD *pdwSourceContext,  // context cookie  
     ULONG *pulLineNumber,     // line number of error  
@@ -40,16 +40,16 @@ HRESULT GetSourcePosition(
   
 #### <a name="parameters"></a>參數  
  `pdwSourceContext`  
- [out]此變數會接收的 cookie，識別內容的位址。 這個參數的解譯取決於主應用程式。  
+ [out]會接收 cookie 來識別的內容變數的位址。 此參數的解譯取決於主應用程式。  
   
  `pulLineNumber`  
- [out]接收發生錯誤的原始程式檔中的行號的變數的位址。  
+ [out]接收發生錯誤的原始程式檔中的行號的變數位址。  
   
  `pichCharPosition`  
  [out]此變數會接收發生錯誤的字元位置的行中的位址。  
   
 ## <a name="return-value"></a>傳回值  
- 傳回`S_OK`如果成功，或`E_FAIL`如果不所擷取的位置。  
+ 傳回`S_OK`如果成功，或`E_FAIL`如果位置，所以無法擷取。  
   
 ## <a name="see-also"></a>另請參閱  
  [IActiveScriptError](../../winscript/reference/iactivescripterror.md)

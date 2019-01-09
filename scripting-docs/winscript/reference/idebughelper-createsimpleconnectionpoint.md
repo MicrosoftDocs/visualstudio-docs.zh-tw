@@ -1,5 +1,5 @@
 ---
-title: IDebugHelper::CreateSimpleConnectionPoint |Microsoft 文件
+title: IDebugHelper::CreateSimpleConnectionPoint |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fcc598fa97d47a564ddb12aaa0480e42b6601118
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 6b478f425b1aaf284bc7af744f5ac99f9be7fe8c
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727808"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097067"
 ---
 # <a name="idebughelpercreatesimpleconnectionpoint"></a>IDebugHelper::CreateSimpleConnectionPoint
 傳回包裝的事件介面指定`IDispatch`物件。  
   
 ## <a name="syntax"></a>語法  
   
-```  
+```cpp
 HRESULT CreateSimpleConnectionPoint(  
    IDispatch*                pdisp  
    ISimpleConnectionPoint**  ppscp  
@@ -39,7 +39,7 @@ HRESULT CreateSimpleConnectionPoint(
   
 #### <a name="parameters"></a>參數  
  `pdisp`  
- [in]`IDispatch`包裝的物件。  
+ [in]`IDispatch`来包裝的物件。  
   
  `ppscp`  
  [out]事件介面包裝`pdisp`。  
@@ -47,12 +47,12 @@ HRESULT CreateSimpleConnectionPoint(
 ## <a name="return-value"></a>傳回值  
  方法會傳回 `HRESULT`。 可能的值包括 (但不限於) 下表中的這些值。  
   
-|值|說明|  
+|值|描述|  
 |-----------|-----------------|  
 |`S_OK`|方法成功。|  
   
 ## <a name="remarks"></a>備註  
- 傳回包裝的事件介面指定`IDispatch`(請參閱[ISimpleConnectionPoint 介面](../../winscript/reference/isimpleconnectionpoint-interface.md))。  
+ 傳回事件介面包裝給定`IDispatch`(請參閱 < [ISimpleConnectionPoint 介面](../../winscript/reference/isimpleconnectionpoint-interface.md))。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugHelper 介面](../../winscript/reference/idebughelper-interface.md)   

@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugApplicationNodes::Clone |Microsoft 文件
+title: IEnumDebugApplicationNodes::Clone |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dab58a36110c0f0321bbf490a105bff9cddad009
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 4fb547e1032be03a6b1e79894dafda7442796592
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726858"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54090827"
 ---
 # <a name="ienumdebugapplicationnodesclone"></a>IEnumDebugApplicationNodes::Clone
-建立列舉值，包含目前的列舉值的狀態相同。  
+建立列舉值，包含目前的列舉值相同的狀態。  
   
 ## <a name="syntax"></a>語法  
   
-```  
+```cpp
 HRESULT Clone(  
    IEnumDebugApplicationNodes**  pperddp  
 );  
@@ -38,17 +38,17 @@ HRESULT Clone(
   
 #### <a name="parameters"></a>參數  
  `pperddp`  
- [out]傳回`IEnumDebugApplicationNodes`列舉值的複製品的介面。  
+ [out]傳回`IEnumDebugApplicationNodes`複製品的列舉值的介面。  
   
 ## <a name="return-value"></a>傳回值  
  方法會傳回 `HRESULT`。 可能的值包括 (但不限於) 下表中的這些值。  
   
-|值|說明|  
+|值|描述|  
 |-----------|-----------------|  
 |`S_OK`|方法成功。|  
   
 ## <a name="remarks"></a>備註  
- 這個方法會建立包含目前的列舉值的狀態相同的列舉值。  
+ 這個方法會建立包含相同的狀態，為目前的列舉值的列舉值。  
   
 ## <a name="see-also"></a>另請參閱  
  [IEnumDebugApplicationNodes 介面](../../winscript/reference/ienumdebugapplicationnodes-interface.md)

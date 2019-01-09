@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptErrorDebug::GetStackFrame |Microsoft 文件
+title: IActiveScriptErrorDebug::GetStackFrame |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: affb385f2c057b7ac69b56d1e8b8c22d7391e43f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: b9331738c52453f4ef80b70ab7eebd79907d1f54
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24645738"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54094129"
 ---
 # <a name="iactivescripterrordebuggetstackframe"></a>IActiveScriptErrorDebug::GetStackFrame
-提供適用於執行階段錯誤的作用中堆疊框架。  
+提供適用於執行階段錯誤的堆疊框架。  
   
 ## <a name="syntax"></a>語法  
   
-```  
+```cpp
 HRESULT GetStackFrame(  
    IDebugStackFrame**  ppdsf  
 );  
@@ -38,17 +38,17 @@ HRESULT GetStackFrame(
   
 #### <a name="parameters"></a>參數  
  `ppdsf`  
- [out]錯誤堆疊框架。  
+ [out]錯誤的堆疊框架。  
   
 ## <a name="return-value"></a>傳回值  
  方法會傳回 `HRESULT`。 可能的值包括 (但不限於) 下表中的這些值。  
   
-|值|說明|  
+|值|描述|  
 |-----------|-----------------|  
 |`S_OK`|方法成功。|  
   
 ## <a name="remarks"></a>備註  
- 這個方法會提供執行階段錯誤就是作用中堆疊框架。  
+ 這個方法會提供適用於執行階段錯誤的堆疊框架。  
   
 ## <a name="see-also"></a>另請參閱  
  [IActiveScriptErrorDebug 介面](../../winscript/reference/iactivescripterrordebug-interface.md)

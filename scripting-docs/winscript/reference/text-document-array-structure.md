@@ -1,5 +1,5 @@
 ---
-title: TEXT_DOCUMENT_ARRAY 結構 |Microsoft 文件
+title: TEXT_DOCUMENT_ARRAY 結構 |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,19 +14,19 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 03ed7f13b4e57f9e44ca147810614f980b24b9a5
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 8ff283b52d15310304fb60c322bdb51c33ed33ac
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24734098"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54096937"
 ---
 # <a name="textdocumentarray-structure"></a>TEXT_DOCUMENT_ARRAY 結構
-陣列[IDebugDocumentText 介面](../../winscript/reference/idebugdocumenttext-interface.md)物件。 成員被 CoTaskMemAlloc 配置。  
+陣列[IDebugDocumentText 介面](../../winscript/reference/idebugdocumenttext-interface.md)物件。 成員會以 CoTaskMemAlloc 來配置。  
   
 ## <a name="syntax"></a>語法  
   
-```  
+```cpp
 typedef struct tagTEXT_DOCUMENT_ARRAY{    DWORD dwCount;    [size_is(dwCount)] IDebugDocumentText **Members;} TEXT_DOCUMENT_ARRAY;  
 ```  
   

@@ -1,5 +1,5 @@
 ---
-title: IDebugApplicationNodeEvents::onDetach |Microsoft 文件
+title: IDebugApplicationNodeEvents::onDetach |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,34 +18,34 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6b5f1ccc35e83f4fa016b5ff3dae8fac867bb8d1
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 86a19a0c8ff2ce64cf524ae9b5f0ad258409f2df
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726068"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54094467"
 ---
 # <a name="idebugapplicationnodeeventsondetach"></a>IDebugApplicationNodeEvents::onDetach
-處理表示偵錯應用程式節點物件已卸離，從父節點的事件。  
+處理表示偵錯應用程式節點物件已中斷連結，從父節點的事件。  
   
 ## <a name="syntax"></a>語法  
   
-```  
+```cpp
 HRESULT onDetach();  
 ```  
   
 #### <a name="parameters"></a>參數  
- 這個方法會採用任何參數。  
+ 這個方法會接受任何參數。  
   
 ## <a name="return-value"></a>傳回值  
  方法會傳回 `HRESULT`。 可能的值包括 (但不限於) 下表中的這些值。  
   
-|值|說明|  
+|值|描述|  
 |-----------|-----------------|  
 |`S_OK`|方法成功。|  
   
 ## <a name="remarks"></a>備註  
- 這個方法會處理事件，表示偵錯應用程式節點物件已卸離，從父節點。  
+ 這個方法會處理表示偵錯應用程式節點物件已中斷連結，從父節點的事件。  
   
  實作器`IDebugApplicationNode`介面會引發這個事件。  
   

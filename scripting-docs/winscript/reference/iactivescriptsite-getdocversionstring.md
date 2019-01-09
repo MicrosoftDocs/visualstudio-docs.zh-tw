@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptSite::GetDocVersionString |Microsoft 文件
+title: IActiveScriptSite::GetDocVersionString |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b4b009c9eb40b2935a5b1aeca0d551819462bafc
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: a451f4883373978772643e11fe22feb9122be30e
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24724538"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097210"
 ---
 # <a name="iactivescriptsitegetdocversionstring"></a>IActiveScriptSite::GetDocVersionString
-擷取主應用程式定義的字串可唯一識別目前的文件版本。 如果相關文件已經變更 Windows 指令碼 （如同正在使用 「 記事本 」 編輯 HTML 網頁的情況下） 的範圍外，指令碼引擎可以儲存此以及其永續性狀態，強制重新編譯載入指令碼會在下一次。  
+擷取主應用程式定義的字串可唯一識別目前的文件版本。 如果相關的文件已變更的 Windows 指令碼 （如同使用 「 記事本 」 編輯 HTML 網頁的大小寫） 範圍外，指令碼引擎可以儲存此以及其保存的狀態，強制重新編譯指令碼會載入在下一次。  
   
 ## <a name="syntax"></a>語法  
   
-```  
+```cpp
 HRESULT GetDocVersionString(  
     BSTR *pbstrVersionString  // address of document version string  
 );  
@@ -38,13 +38,13 @@ HRESULT GetDocVersionString(
   
 #### <a name="parameters"></a>參數  
  `pstrVersionString`  
- [out]主機定義文件的版本字串的位址。  
+ [out]主應用程式定義的文件的版本字串的位址。  
   
 ## <a name="return-value"></a>傳回值  
- 傳回`S_OK`如果成功，或`E_NOTIMPL`如果不支援這個方法。  
+ 傳回`S_OK`如果成功，或`E_NOTIMPL`不支援此方法。  
   
 ## <a name="remarks"></a>備註  
- 如果`E_NOTIMPL`傳回，則指令碼引擎應該假設指令碼是與文件的同步處理。  
+ 如果`E_NOTIMPL`傳回時，指令碼引擎應該假設指令碼與文件的同步處理。  
   
 ## <a name="see-also"></a>另請參閱  
  [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md)

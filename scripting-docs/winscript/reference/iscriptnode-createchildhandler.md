@@ -1,5 +1,5 @@
 ---
-title: IScriptNode::CreateChildHandler |Microsoft 文件
+title: IScriptNode::CreateChildHandler |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ff2ba40d1570e23f0256bd34ca8aff0f8d77ce5c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 2ef4c9318cb13459ab787878218bf7ca68052f29
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24729558"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54094181"
 ---
 # <a name="iscriptnodecreatechildhandler"></a>IScriptNode::CreateChildHandler
-將程式碼片段加入作為子執行個體`IScriptNode`。  
+將程式碼片段新增為子執行個體`IScriptNode`。  
   
 ## <a name="syntax"></a>語法  
   
-```  
+```cpp
 HRESULT CreateChildHandler(  
    LPCOLESTR          pszDefaultName,  
    LPCOLESTR          *prgpszNames,  
@@ -47,7 +47,7 @@ HRESULT CreateChildHandler(
   
 #### <a name="parameters"></a>參數  
  `pszDefaultName`  
- [in]使用程式碼片段相關聯的預設名稱的位址。  
+ [in]與 scriptlet 相關聯的預設名稱的位址。  
   
  `prgpszNames`  
  [在 size_is (`cpszNames`)] 的主機上的完整限定名稱的識別項清單。  
@@ -56,26 +56,26 @@ HRESULT CreateChildHandler(
  [in]中的識別項的數目`prgpszNames`參數。  
   
  `pszEvent`  
- [in]識別程式碼片段相關聯的事件名稱的緩衝區位址。  
+ [in]識別與 scriptlet 相關的事件名稱的緩衝區位址。  
   
  `pszDelimiter`  
- [in]結束的指令碼區塊分隔符號的位址。 進行剖析，主應用程式通常使用的分隔符號 （例如兩個單引號），來偵測指令碼區塊的結尾。  
+ [in]End 的指令碼區塊分隔符號的位址。 進行剖析，主應用程式通常會使用分隔符號 （例如兩個單引號），偵測到指令碼區塊的結尾。  
   
- 分隔符號，可讓前置處理指令碼撰寫引擎。 比方說，引擎可能會取代一個單引號兩個單引號做為分隔符號使用。 引擎會決定如何使用分隔符號。  
+ 分隔符號會讓前置處理指令碼撰寫引擎。 比方說，引擎可能會取代一個單引號兩個單引號以做為分隔符號。 引擎會決定如何使用分隔符號。  
   
  如果沒有分隔符號用來識別指令碼區塊的結尾，則設為 NULL。  
   
  `ptiSignature`  
- [in]函式物件類型資訊。  
+ [in]函式物件型別資訊。  
   
  `iMethodSignature`  
- [in]索引中的函式`ITypeInfo``ptiSignature`參數。  
+ [in]中的函式索引`ITypeInfo``ptiSignature`參數。  
   
  `isn`  
- [in]與父系的子系的索引。  
+ [in]與父系之子系的索引。  
   
  `dwCookie`  
- [in]應用程式定義值，用來將項目與主應用程式物件產生關聯。  
+ [in]應用程式定義值，用來與主機物件關聯的項目。  
   
  `ppse`  
  [out]收到的指標變數的位址`IScriptEntry`子執行個體的介面。  
@@ -83,12 +83,12 @@ HRESULT CreateChildHandler(
 ## <a name="return-value"></a>傳回值  
  `HRESULT`。 可能的值包括 (但不限於) 下表中的這些值。  
   
-|值|說明|  
+|值|描述|  
 |-----------|-----------------|  
 |`S_OK`|方法成功。|  
   
 ## <a name="remarks"></a>備註  
- 程式碼片段會指定事件處理常式。 如果它由呼叫這個方法會建立程式碼片段`IScriptNode`物件，代表網頁。 如果其他介面呼叫此方法不會成功。  
+ 程式碼片段會指定事件處理常式。 如果它由呼叫這個方法會建立程式碼片段`IScriptNode`物件，表示 Web 網頁。 如果它由其他介面呼叫這個方法會失敗。  
   
 ## <a name="see-also"></a>另請參閱  
  [IScriptNode 介面](../../winscript/reference/iscriptnode-interface.md)   

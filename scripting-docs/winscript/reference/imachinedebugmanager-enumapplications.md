@@ -1,5 +1,5 @@
 ---
-title: IMachineDebugManager::EnumApplications |Microsoft 文件
+title: IMachineDebugManager::EnumApplications |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1fd7ddd263aab6742e5e6a23c86f7c4480c6561a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: be79bbd30a5ec7e177cab9fc7c49161a74b20a46
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728028"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54089033"
 ---
 # <a name="imachinedebugmanagerenumapplications"></a>IMachineDebugManager::EnumApplications
-傳回目前執行的應用程式清單的列舉值。  
+傳回目前執行中應用程式清單的列舉值。  
   
 ## <a name="syntax"></a>語法  
   
-```  
+```cpp
 HRESULT EnumApplications(  
    IEnumRemoteDebugApplications**  ppeda  
 );  
@@ -38,17 +38,17 @@ HRESULT EnumApplications(
   
 #### <a name="parameters"></a>參數  
  `ppeda`  
- [out]包含目前執行的應用程式清單的列舉值。  
+ [out]包含目前執行中應用程式清單的列舉值。  
   
 ## <a name="return-value"></a>傳回值  
  方法會傳回 `HRESULT`。 可能的值包括 (但不限於) 下表中的這些值。  
   
-|值|說明|  
+|值|描述|  
 |-----------|-----------------|  
 |`S_OK`|方法成功。|  
   
 ## <a name="remarks"></a>備註  
- 這個方法會傳回目前執行的應用程式清單的列舉值。 IDE 偵錯工具會顯示，並將連接以進行偵錯的應用程式使用這個方法。  
+ 這個方法會傳回目前執行中應用程式清單的列舉值。 偵錯工具 IDE 會顯示，並附加偵錯之用的應用程式中使用這個方法。  
   
 ## <a name="see-also"></a>另請參閱  
  [IMachineDebugManager 介面](../../winscript/reference/imachinedebugmanager-interface.md)

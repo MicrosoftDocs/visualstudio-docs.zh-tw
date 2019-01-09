@@ -1,5 +1,5 @@
 ---
-title: IScriptNode::GetParent |Microsoft 文件
+title: IScriptNode::GetParent |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1da2f68de40a66b98b97ab7c7eb1d63748f1e07a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: b45fc7be1a5178e952fefcd794171410d149a1f4
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24733638"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54090021"
 ---
 # <a name="iscriptnodegetparent"></a>IScriptNode::GetParent
-傳回`IScriptNode`物件，該物件的父系物件。  
+傳回`IScriptNode`物件的父系的物件。  
   
 ## <a name="syntax"></a>語法  
   
-```  
+```cpp
 HRESULT GetParent(  
    IScriptNode       **ppsnParent  
 );  
@@ -40,14 +40,14 @@ HRESULT GetParent(
  `ppsnParent`  
  [out]收到的指標變數的位址`IScriptNode`父執行個體的介面。  
   
- 如果類別實作`IScriptEntry`或`IScriptScriptlet`、`IScriptNode`物件傳回。  
+ 如果類別實作`IScriptEntry`或是`IScriptScriptlet`、`IScriptNode`會傳回物件。  
   
- 如果類別實作`IScriptNode`（代表網頁上），則傳回 NULL。  
+ 如果類別實作`IScriptNode`（代表網頁，） 會傳回 NULL。  
   
 ## <a name="return-value"></a>傳回值  
  `HRESULT`。 可能的值包括 (但不限於) 下表中的這些值。  
   
-|值|說明|  
+|值|描述|  
 |-----------|-----------------|  
 |`S_OK`|方法成功。|  
   

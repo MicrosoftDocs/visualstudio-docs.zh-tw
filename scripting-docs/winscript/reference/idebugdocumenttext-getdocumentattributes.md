@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentText::GetDocumentAttributes |Microsoft 文件
+title: IDebugDocumentText::GetDocumentAttributes |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e3121538612be48628b24965e118130875c51a0b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: f689aa6f930a596239483176e1aa9f2fcc8cdd3e
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726298"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54086602"
 ---
 # <a name="idebugdocumenttextgetdocumentattributes"></a>IDebugDocumentText::GetDocumentAttributes
 傳回文件的屬性。  
   
 ## <a name="syntax"></a>語法  
   
-```  
+```cpp
 HRESULT GetDocumentAttributes(  
    TEXT_DOC_ATTR*  ptextdocattr  
 );  
@@ -43,12 +43,12 @@ HRESULT GetDocumentAttributes(
 ## <a name="return-value"></a>傳回值  
  方法會傳回 `HRESULT`。 可能的值包括 (但不限於) 下表中的這些值。  
   
-|值|說明|  
+|值|描述|  
 |-----------|-----------------|  
 |`S_OK`|方法成功。|  
   
 ## <a name="remarks"></a>備註  
- 這個方法會傳回文件的屬性。  
+ 這個方法傳回的文件的屬性。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugDocumentText 介面](../../winscript/reference/idebugdocumenttext-interface.md)   

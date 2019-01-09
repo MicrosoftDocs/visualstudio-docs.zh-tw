@@ -13,15 +13,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: e31eeaf3061968cfa916d2ec5a0d0e522b9f6ebb
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: 9a13efa2335cd0721b71dd61e270e5331d78dede
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53159525"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53936382"
 ---
 # <a name="access-data-in-visual-studio"></a>使用 Visual Studio 存取資料
 

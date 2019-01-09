@@ -1,5 +1,5 @@
 ---
-title: 'Ijsdebugdatatarget:: Readnullterminatedstring 方法 |Microsoft 文件'
+title: 'Ijsdebugdatatarget:: Readnullterminatedstring 方法 |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -16,19 +16,19 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 94cb90b8b44aa5dab13a2e916dec22ae950e77ef
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: a681dcedf873f0cb96f47b14278f47271cd43ec8
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24729498"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54093323"
 ---
 # <a name="ijsdebugdatatargetreadnullterminatedstring-method"></a>IJsDebugDataTarget::ReadNullTerminatedString 方法
-從目標中讀取指定的字元數。  
+從目標讀取指定的字元數。  
   
 ## <a name="syntax"></a>語法  
   
-```  
+```cpp
 HRESULT ReadNullTerminatedString(  
    UINT64 address,  
    UINT16 characterSize,  
@@ -45,7 +45,7 @@ HRESULT ReadNullTerminatedString(
  [in] 字串中的每個字元的大小  
   
  `maxCharacters`  
- [in]要讀取的字元數目上限。 maxCharacters 應該是合理的。 任何大於 128 MB 記憶體的要求將會失敗。  如果字串為大於 maxCharacters，結果字串會截斷 maxCharacters 之後。  
+ [in]要讀取的字元數目上限。 maxCharacters 應是合理的。 大於 128 MB 的記憶體的所有要求都會都失敗。  如果字串大於 maxCharacters，則結果字串會截斷 maxCharacters 之後遭截斷。  
   
  `pString`  
  [out]從目標讀取 BSTR。  
@@ -53,7 +53,7 @@ HRESULT ReadNullTerminatedString(
 ## <a name="return-value"></a>傳回值  
   
 ## <a name="remarks"></a>備註  
- 如果截斷，傳回 S_FALSE。  
+ 如果截斷，則傳回 S_FALSE。  
   
 ## <a name="requirements"></a>需求  
  **標頭：** jscript9diag.h  

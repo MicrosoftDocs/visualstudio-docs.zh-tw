@@ -14,15 +14,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 07c9cf40952eabcafe9d1587d3e2ae4aa02de3a0
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: bcdfb4640e88289b02f2f8813c39b66eaad3827d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52305075"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53889419"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-lookup-data-binding"></a>建立支援查閱資料繫結的 Windows Forms 使用者控制項
 
@@ -44,7 +43,7 @@ ms.locfileid: "52305075"
 
 -   建立新的 **Windows Forms 應用程式**。
 
--   將新的 [使用者控制項] 新增至您的專案。
+-   將新 [使用者控制項] 新增至您的專案。
 
 -   透過視覺化方式設計使用者控制項。
 

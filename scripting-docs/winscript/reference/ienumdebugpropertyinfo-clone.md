@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b0d172200719a1fe2d95d657fc559f69f7b2ded8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: cfdd584f607638a5a8e91ff069e0f5a87329533e
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49937222"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54095416"
 ---
 # <a name="ienumdebugpropertyinfoclone"></a>IEnumDebugPropertyInfo::Clone
 建立列舉值，包含目前的列舉值相同的列舉型別狀態。  
   
 ## <a name="syntax"></a>語法  
   
-```  
+```cpp
 HRESULT Clone (  
    IEnumDebugPropertyInfo** ppEnum  
 );  

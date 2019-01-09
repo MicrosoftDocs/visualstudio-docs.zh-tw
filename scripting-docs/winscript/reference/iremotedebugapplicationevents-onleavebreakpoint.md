@@ -1,5 +1,5 @@
 ---
-title: IRemoteDebugApplicationEvents::OnLeaveBreakPoint |Microsoft 文件
+title: IRemoteDebugApplicationEvents::OnLeaveBreakPoint |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9afb48ceca742ef736dd8f79ba8c3d96e3a56a82
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: c53f19de5fcff4160ed1255435b91c9ad320ad0f
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728708"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54092244"
 ---
 # <a name="iremotedebugapplicationeventsonleavebreakpoint"></a>IRemoteDebugApplicationEvents::OnLeaveBreakPoint
-處理保留中斷點的事件。  
+處理離開中斷點的事件。  
   
 ## <a name="syntax"></a>語法  
   
-```  
+```cpp
 HRESULT OnLeaveBreakPoint(  
    IRemoteDebugApplicationThread*  prdat  
 );  
@@ -38,17 +38,17 @@ HRESULT OnLeaveBreakPoint(
   
 #### <a name="parameters"></a>參數  
  `prdat`  
- [in]應用程式執行緒保留中斷點。  
+ [in]應用程式執行緒處於中斷點。  
   
 ## <a name="return-value"></a>傳回值  
  方法會傳回 `HRESULT`。 可能的值包括 (但不限於) 下表中的這些值。  
   
-|值|說明|  
+|值|描述|  
 |-----------|-----------------|  
 |`S_OK`|方法成功。|  
   
 ## <a name="remarks"></a>備註  
- 這個方法會處理保留中斷點的事件。  
+ 這個方法會處理離開中斷點的事件。  
   
 ## <a name="see-also"></a>另請參閱  
  [IRemoteDebugApplicationEvents 介面](../../winscript/reference/iremotedebugapplicationevents-interface.md)

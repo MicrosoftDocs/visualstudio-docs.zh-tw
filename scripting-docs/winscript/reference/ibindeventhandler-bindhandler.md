@@ -1,5 +1,5 @@
 ---
-title: IBindEventHandler::BindHandler |Microsoft 文件
+title: IBindEventHandler::BindHandler |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 66de7cba8181ce9f3d683a90e4d7dd51e63d4779
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 62ac6de8342f0a436d984f4194351507fdcd5edd
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725188"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54090710"
 ---
 # <a name="ibindeventhandlerbindhandler"></a>IBindEventHandler::BindHandler
 將事件繫結至物件。  
   
 ## <a name="syntax"></a>語法  
   
-```  
+```cpp
 HRESULT BindHandler(  
    LPCOLESTR   pstrEvent,  
    IDispatch*  pdisp  
@@ -47,12 +47,12 @@ HRESULT BindHandler(
 ## <a name="return-value"></a>傳回值  
  方法會傳回 `HRESULT`。 可能的值包括 (但不限於) 下表中的這些值。  
   
-|值|說明|  
+|值|描述|  
 |-----------|-----------------|  
 |`S_OK`|方法成功。|  
   
 ## <a name="remarks"></a>備註  
- 這個方法會將事件繫結的物件。  
+ 這個方法會將事件繫結至物件。  
   
 ## <a name="see-also"></a>另請參閱  
  [IBindEventHandler 介面](../../winscript/reference/ibindeventhandler-interface.md)

@@ -1,5 +1,5 @@
 ---
-title: IActiveScript::GetScriptThreadState |Microsoft 文件
+title: IActiveScript::GetScriptThreadState |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1b11b8566857bc70aaeac5bdf8e8e357fa5d9c2e
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 2b191f1b70aa522cba0a04e0781ada69a8fe5ca5
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24641258"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097522"
 ---
 # <a name="iactivescriptgetscriptthreadstate"></a>IActiveScript::GetScriptThreadState
-擷取目前執行緒狀態的指令碼。  
+擷取的指令碼執行緒的目前狀態。  
   
 ## <a name="syntax"></a>語法  
   
-```  
+```cpp
 HRESULT GetScriptThreadState(  
     SCRIPTTHREADID stidThread,    // identifier of script thread  
     SCRIPTTHREADSTATE *pstsState  // receives state flag  
@@ -39,15 +39,15 @@ HRESULT GetScriptThreadState(
   
 #### <a name="parameters"></a>參數  
  `stidThread`  
- [in]其想要的狀態，執行緒的識別項或其中一個下列特殊執行緒識別項：  
+ [in]想要的狀態，執行緒的識別項或其中一個下列特殊的執行緒識別碼：  
   
 |值|意義|  
 |-----------|-------------|  
-|SCRIPTTHREADID_BASE|基底的執行緒，也就是未具現化所在的指令碼引擎的執行緒。|  
-|SCRIPTTHREADID_CURRENT|目前執行中執行緒。|  
+|SCRIPTTHREADID_BASE|基底執行緒中;也就是已經具現化所在的指令碼引擎的執行緒。|  
+|SCRIPTTHREADID_CURRENT|目前正在執行的執行緒。|  
   
  `pstsState`  
- [out]接收指定的執行緒狀態的變數的位址。 狀態會表示具名常數所定義的值的其中一個[SCRIPTTHREADSTATE 列舉](../../winscript/reference/scriptthreadstate-enumeration.md)列舉型別。 如果這個參數不會識別目前的執行緒，可能會隨時變更狀態。  
+ [out]接收指定執行緒的狀態變數的位址。 狀態會表示所定義之具名常值的其中一個[SCRIPTTHREADSTATE 列舉](../../winscript/reference/scriptthreadstate-enumeration.md)列舉型別。 如果這個參數不會識別目前的執行緒，可能會隨時變更狀態。  
   
 ## <a name="return-value"></a>傳回值  
  會傳回下列值之一：  
@@ -56,10 +56,10 @@ HRESULT GetScriptThreadState(
 |------------------|-------------|  
 |`S_OK`|成功。|  
 |`E_POINTER`|指定了無效的指標。|  
-|`E_UNEXPECTED`|不應該呼叫 （例如，指令碼引擎有尚未載入或初始化）。|  
+|`E_UNEXPECTED`|不需要呼叫 （例如，指令碼引擎有尚未載入或初始化）。|  
   
 ## <a name="remarks"></a>備註  
- 可以從非基底執行緒呼叫這個方法，不會導致非基本圖說文字主機物件或[IActiveScriptSite](../../winscript/reference/iactivescriptsite.md)介面。  
+ 可以從非基底執行緒呼叫這個方法，不會導致主機物件或非基底圖說[IActiveScriptSite](../../winscript/reference/iactivescriptsite.md)介面。  
   
 ## <a name="see-also"></a>另請參閱  
  [IActiveScript](../../winscript/reference/iactivescript.md)

@@ -18,19 +18,19 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 186608bc56cf8b3649f5beeb1e3a301580ce44bb
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 683041b50002cb926a36e4f10d6758246af91726
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44279280"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54090764"
 ---
 # <a name="iactivescriptpropertysetproperty"></a>IActiveScriptProperty::SetProperty
 設定參數所指定的屬性。  
   
 ## <a name="syntax"></a>語法  
   
-```  
+```cpp
 HRESULT SetProperty(  
 // The property value:  
     uint dwProperty,    
@@ -55,7 +55,7 @@ HRESULT SetProperty(
   
 |常數|值|意義|  
 |--------------|-----------|-------------|  
-|SCRIPTPROP_INTEGERMODE|0x00003000|會強制將整數模式，而不是浮動點模式中的指令碼引擎。 預設值是 `False`。|  
+|SCRIPTPROP_INTEGERMODE|0x00003000|會強制將整數模式，而不是浮動點模式中的指令碼引擎。 預設值為 `False`。|  
 |SCRIPTPROP_STRINGCOMPAREINSTANCE|0x00003001|可讓指令碼引擎要被取代的字串比較函式。|  
 |SCRIPTPROP_ABBREVIATE_GLOBALNAME_RESOLUTION|0x70000002|會通知任何其他指令碼引擎有貢獻到全域物件的指令碼引擎。|  
 |SCRIPTPROP_INVOKEVERSIONING|0x00004000|強制[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]來選取一組都必須支援的語言功能的指令碼引擎。 所支援的語言功能的預設集合[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]指令碼引擎就相當於出現在 5.7 版的語言功能集[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]指令碼引擎。|  

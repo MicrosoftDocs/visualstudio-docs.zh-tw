@@ -2,7 +2,6 @@
 title: 開始 UWP 應用程式的偵錯工作階段 |Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/20/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - VC.Project.IVCAppHostRemoteDebugPageObject.MachineName
@@ -36,12 +35,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 181dec6bfa6ebe96528c39b74d68375b8eb7fcb8
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 3c2ef4e92cddb302e67f99c921750d4e9e83d98e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53062405"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53901978"
 ---
 # <a name="start-a-debugging-session-for-a-uwp-app"></a>啟動 UWP 應用程式 的偵錯工作階段
   
@@ -209,4 +208,4 @@ ms.locfileid: "53062405"
 > 附加至您的 JavaScript 應用程式的最簡單方式是關閉所有其他 JavaScript 應用程式。 或者，您可以記下執行的 Pid *wwahost.exe* Windows 工作管理員 中才啟動應用程式的程序。 當您啟動您的應用程式，其*wwahost.exe* PID 會是不同於您先前記下的一個。  
 
 ## <a name="see-also"></a>另請參閱  
- [在 Visual Studio 中偵錯應用程式](../debugger/debug-store-apps-in-visual-studio.md)   
+ [在 Visual Studio 中偵錯應用程式](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps)   

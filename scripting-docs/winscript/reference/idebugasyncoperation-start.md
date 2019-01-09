@@ -1,5 +1,5 @@
 ---
-title: IDebugAsyncOperation::Start |Microsoft 文件
+title: IDebugAsyncOperation::Start |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bd39053e86dce95fa52ba8576814962d13d8b050
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 099e256496278a33ccae77351641cfdd23447b1f
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725938"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54094779"
 ---
 # <a name="idebugasyncoperationstart"></a>IDebugAsyncOperation::Start
 會導致開始非同步作業。  
   
 ## <a name="syntax"></a>語法  
   
-```  
+```cpp
 HRESULT Start(  
    IDebugAsyncOperationCallBack*  padocb  
 );  
@@ -38,18 +38,18 @@ HRESULT Start(
   
 #### <a name="parameters"></a>參數  
  `padocb`  
- 接收這項作業的狀態事件的回呼介面。  
+ 收到這項作業的狀態事件的回呼介面。  
   
 ## <a name="return-value"></a>傳回值  
  方法會傳回 `HRESULT`。 可能的值包括 (但不限於) 下表中的這些值。  
   
-|值|說明|  
+|值|描述|  
 |-----------|-----------------|  
 |`S_OK`|方法成功。|  
 |`E_UNEXPECTED`|作業已暫止。|  
   
 ## <a name="remarks"></a>備註  
- 這個方法會導致`IDebugSyncOperation::Execute`取自執行緒中以非同步方式呼叫`IDebugSyncOperation::GetTargetThread`。 應該只會從呼叫這個方法，在偵錯工具執行緒; 內否則，它不會傳回直到作業完成為止。  
+ 這個方法會導致`IDebugSyncOperation::Execute`取自執行緒中以非同步方式呼叫`IDebugSyncOperation::GetTargetThread`。 這個方法應該只會從執行緒內呼叫偵錯工具;否則，它不會傳回直到作業完成為止。  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugAsyncOperation::Abort](../../winscript/reference/idebugasyncoperation-abort.md)   

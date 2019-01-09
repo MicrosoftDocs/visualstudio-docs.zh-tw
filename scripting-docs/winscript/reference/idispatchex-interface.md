@@ -15,12 +15,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 22ccc54dee335fd8c81343557d2f32c48eb30560
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3a59f30c5b42301d29b73a4a079837423614da49
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49837915"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54087577"
 ---
 # <a name="idispatchex-interface"></a>IDispatchEx 介面
 `IDispatchEx`延伸模組的`IDispatch`介面，適用於動態語言，例如指令碼語言的支援功能。 本章節描述`IDispatchEx`介面本身之間的差異`IDispatch`和`IDispatchEx`，延伸模組的原理。 預期讀者都熟悉`IDispatch`而且具有存取權`IDispatch`文件。  
@@ -71,7 +71,7 @@ ms.locfileid: "49837915"
   
   完整的 HTML 程式碼是：  
   
-```  
+```html
 <html>  
 <body>  
 <script type="text/javascript">  
@@ -102,7 +102,7 @@ test();
   
  放在這個相同的 Web 網頁上的控制項可以從瀏覽器，以取得對指令碼引擎分派指標。 控制項可以再實作函式 test （）：  
   
-```  
+```html
 <html>  
 <body>  
 <script type="text/javascript">  
@@ -138,7 +138,7 @@ function cat()
   
   測試控制項的程式碼：  
   
-```  
+```cpp
    BOOL test(IDispatchEx *pdexScript)  
    {  
       HRESULT hr;  

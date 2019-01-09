@@ -1,5 +1,5 @@
 ---
-title: IJsDebugProcess 介面 |Microsoft 文件
+title: IJsDebugProcess 介面 |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -12,31 +12,31 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f2a81104f51ca1a66c493779146b7eaa102ea300
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: ecdec77a8bcb3c1fb8a1dc64c63b363b4f001fde
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728568"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54086654"
 ---
 # <a name="ijsdebugprocess-interface"></a>IJsDebugProcess 介面
-提供檢查和控制目標處理序的常式。  
+提供一些常式來檢查和控制目標處理序。  
   
 ## <a name="syntax"></a>語法  
   
-```  
+```cpp
 IJsDebugProcess : public IUnknown;  
 ```  
   
-## <a name="members"></a>Members  
+## <a name="members"></a>成員  
   
 ### <a name="public-methods"></a>公用方法  
   
-|名稱|說明|  
+|名稱|描述|  
 |----------|-----------------|  
 |[IJsDebugProcess::CreateBreakPoint 方法](../../winscript/reference/ijsdebugprocess-createbreakpoint-method.md)|在指定的文件的位置設定中斷點。|  
 |[IJsDebugProcess::CreateStackWalker 方法](../../winscript/reference/ijsdebugprocess-createstackwalker-method.md)|堆疊查核器的 factory 方法。|  
-|[IJsDebugProcess::PerformAsyncBreak 方法](../../winscript/reference/ijsdebugprocess-performasyncbreak-method.md)|在下一個指令碼指令中斷而造成中斷模式中將指令碼引擎。|  
+|[IJsDebugProcess::PerformAsyncBreak 方法](../../winscript/reference/ijsdebugprocess-performasyncbreak-method.md)|指令碼引擎置於中斷模式，使其在下一個指令碼指令上中斷。|  
   
 ## <a name="requirements"></a>需求  
  **標頭：** jscript9diag.h  

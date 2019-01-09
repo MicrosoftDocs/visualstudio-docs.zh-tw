@@ -1,5 +1,5 @@
 ---
-title: IApplicationDebugger::onHandleBreakPoint |Microsoft 文件
+title: IApplicationDebugger::onHandleBreakPoint |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a3be067d3b8c3e3268ac2caf1614b70efff6f665
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: ebcb24b437b2c77f0dc76f5e753974c8dd299d17
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725298"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54090567"
 ---
 # <a name="iapplicationdebuggeronhandlebreakpoint"></a>IApplicationDebugger::onHandleBreakPoint
 處理中斷點事件。  
   
 ## <a name="syntax"></a>語法  
   
-```  
+```cpp
 HRESULT onHandleBreakPoint(  
    IRemoteDebugApplicationThread*  prpt,  
    BREAKREASON                     br,  
@@ -40,7 +40,7 @@ HRESULT onHandleBreakPoint(
   
 #### <a name="parameters"></a>參數  
  `prpt`  
- [in]中斷點的發生位置的執行緒。  
+ [in]執行緒發生中斷點的位置。  
   
  `br`  
  [in]中斷點的原因。  
@@ -51,14 +51,14 @@ HRESULT onHandleBreakPoint(
 ## <a name="return-value"></a>傳回值  
  方法會傳回 `HRESULT`。 可能的值包括 (但不限於) 下表中的這些值。  
   
-|值|說明|  
+|值|描述|  
 |-----------|-----------------|  
 |`S_OK`|方法成功。|  
   
 ## <a name="remarks"></a>備註  
- 叫用中斷點時，會呼叫這個方法和`IDebugApplication::HandleBreakPoint`呼叫。  
+ 在觸及中斷點時，會呼叫這個方法和`IDebugApplication::HandleBreakPoint`呼叫。  
   
- 偵錯工具 IDE 呼叫之前，應用程式將會維持暫停`IRemoteDebugApplication::ResumeFromBreakPoint`。  
+ 應用程式會保持暫停，直到呼叫偵錯工具 IDE `IRemoteDebugApplication::ResumeFromBreakPoint`。  
   
 ## <a name="see-also"></a>另請參閱  
  [IApplicationDebugger 介面](../../winscript/reference/iapplicationdebugger-interface.md)   

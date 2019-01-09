@@ -1,5 +1,5 @@
 ---
-title: 'Ijsdebugframe:: Getstackrange 方法 |Microsoft 文件'
+title: 'Ijsdebugframe:: Getstackrange 方法 |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -16,19 +16,19 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cce4d4542f4f76657475636ad6d8e430e1909181
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 049be8a665dae396d4e92fe847e757b266dc6025
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727868"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54090281"
 ---
 # <a name="ijsdebugframegetstackrange-method"></a>IJsDebugFrame::GetStackRange 方法
 傳回邏輯 JavaScript 堆疊框架的絕對位址範圍。  
   
 ## <a name="syntax"></a>語法  
   
-```  
+```cpp
 HRESULT GetStackRange(  
    UINT64 *pStart,  
    UINT64 *pEnd  
@@ -37,15 +37,15 @@ HRESULT GetStackRange(
   
 #### <a name="parameters"></a>參數  
  `pStart`  
- [out]下方大部分的框架的堆疊指標。  
+ [out]Bottom 圖文框的多數堆疊指標。  
   
  `pEnd`  
- [out]排名最前面的畫面格的大部分堆疊器指標。  
+ [out]最上層大部分圖文的多數堆疊指標。  
   
 ## <a name="return-value"></a>傳回值  
   
 ## <a name="remarks"></a>備註  
- 這個方法可用於拼湊交錯的堆疊追蹤所蒐集的多個執行階段。 開始時，結束堆疊指標可以包含多個實體機器堆疊框架 （適用於解譯的 JavaScript 執行階段框架）。 開始 > 結束隨著堆疊從高到低的位址。  
+ 此方法相當實用，對於拼湊從多個執行階段收集的交錯的堆疊追蹤。 開始、 結束堆疊指標可能包含多個實體機器堆疊框架 （解譯的 JavaScript 執行階段架構）。 開始 > 結束隨著堆疊從高位址向低位址。  
   
 ## <a name="requirements"></a>需求  
  **標頭：** jscript9diag.h  

@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptSiteDebug32::GetDocumentContextFromPosition |Microsoft 文件
+title: IActiveScriptSiteDebug32::GetDocumentContextFromPosition |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -10,19 +10,19 @@ ms.assetid: 53348dff-35a6-4303-b263-90c10af06bf3
 caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
-ms.openlocfilehash: 71136a1b3cb136cbc0a97cf39f59f1f4e950048b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 9a52abcfa4defb49526f944469c95a2247f5d85c
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725078"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54094480"
 ---
 # <a name="iactivescriptsitedebug32getdocumentcontextfromposition"></a>IActiveScriptSiteDebug32::GetDocumentContextFromPosition
-語言引擎用於委派`IDebugCodeContext::GetSourceContext`。  
+語言引擎用來委派`IDebugCodeContext::GetSourceContext`。  
   
 ## <a name="syntax"></a>語法  
   
-```  
+```cpp
 HRESULT GetDocumentContextFromPosition(  
    DWORD_PTR                dwSourceContext,  
    ULONG                    uCharacterOffset,  
@@ -36,23 +36,23 @@ HRESULT GetDocumentContextFromPosition(
  [in]來源內容提供給`ParseScriptText`或`AddScriptlet`。  
   
  `uCharacterOffset`  
- [in]字元相對於指令碼區塊或程式碼片段的開始位移。  
+ [in]相對於指令碼區塊的程式碼片段的開頭位移的字元。  
   
  `uNumChars`  
  [in]在此內容中的字元數。  
   
  `ppsc`  
- [out]對應至這個字元位置範圍的文件內容。  
+ [out]文件內容對應至這個字元位置範圍。  
   
 ## <a name="return-value"></a>傳回值  
  方法會傳回 `HRESULT`。 可能的值包括 (但不限於) 下表中的這些值。  
   
-|值|說明|  
+|值|描述|  
 |-----------|-----------------|  
 |`S_OK`|方法成功。|  
   
 ## <a name="remarks"></a>備註  
- 語言引擎使用這個方法來委派`IDebugCodeContext::GetSourceContext`。  
+ 語言引擎會使用這個方法來委派`IDebugCodeContext::GetSourceContext`。  
   
 ## <a name="see-also"></a>另請參閱  
  [IActiveScriptSiteDebug32 介面](../../winscript/reference/iactivescriptsitedebug32-interface.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugStackFrame::GetDebugProperty |Microsoft 文件
+title: IDebugStackFrame::GetDebugProperty |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 898c80dc4f5ef9010db6396a78c1b17b50603dc2
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 8d3f50029be8489d05c204c57f50c3f7f1326400
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726888"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54096120"
 ---
 # <a name="idebugstackframegetdebugproperty"></a>IDebugStackFrame::GetDebugProperty
 傳回目前的框架屬性瀏覽器。  
   
 ## <a name="syntax"></a>語法  
   
-```  
+```cpp
 HRESULT GetDebugProperty(  
    IDebugProperty**  ppDebugProp  
 );  
@@ -43,7 +43,7 @@ HRESULT GetDebugProperty(
 ## <a name="return-value"></a>傳回值  
  方法會傳回 `HRESULT`。 可能的值包括 (但不限於) 下表中的這些值。  
   
-|值|說明|  
+|值|描述|  
 |-----------|-----------------|  
 |`S_OK`|方法成功。|  
   

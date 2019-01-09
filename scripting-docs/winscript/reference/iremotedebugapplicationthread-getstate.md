@@ -1,5 +1,5 @@
 ---
-title: IRemoteDebugApplicationThread::GetState |Microsoft 文件
+title: IRemoteDebugApplicationThread::GetState |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ce34fa73f97b92d08193c697e991c9e922ac17ee
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 481beb69d2c4729bb2a030d257e802598131ea00
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24729778"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54088877"
 ---
 # <a name="iremotedebugapplicationthreadgetstate"></a>IRemoteDebugApplicationThread::GetState
 取得這個執行緒的狀態。  
   
 ## <a name="syntax"></a>語法  
   
-```  
+```cpp
 HRESULT GetState(  
    DWORD*  pState  
 );  
@@ -38,19 +38,19 @@ HRESULT GetState(
   
 #### <a name="parameters"></a>參數  
  `pState`  
- [out]下列的執行緒狀態旗標的組合：  
+ [out]下列執行緒狀態旗標的組合：  
   
 |常數|值|描述|  
 |--------------|-----------|-----------------|  
 |THREAD_STATE_RUNNING|0x00000001|執行緒正在執行。|  
-|THREAD_STATE_SUSPENDED|0x00000002|執行緒已經暫停。|  
-|THREAD_BLOCKED|0x00000004|執行緒會封鎖。|  
-|THREAD_OUT_OF_CONTEXT|0x00000008|執行緒目前的內容之外。|  
+|THREAD_STATE_SUSPENDED|0x00000002|暫止的執行緒。|  
+|THREAD_BLOCKED|0x00000004|執行緒已封鎖。|  
+|THREAD_OUT_OF_CONTEXT|0x00000008|執行緒是內容之外。|  
   
 ## <a name="return-value"></a>傳回值  
  方法會傳回 `HRESULT`。 可能的值包括 (但不限於) 下表中的這些值。  
   
-|值|說明|  
+|值|描述|  
 |-----------|-----------------|  
 |`S_OK`|方法成功。|  
   

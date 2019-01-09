@@ -1,5 +1,5 @@
 ---
-title: IMachineDebugManagerCookie::AddApplication |Microsoft 文件
+title: IMachineDebugManagerCookie::AddApplication |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2c452c4fe2826c7c5372c7598a14731e14077925
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: ef3dc3bddd0259eb4dd3a1fc874cbadbc16195d9
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728628"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54090658"
 ---
 # <a name="imachinedebugmanagercookieaddapplication"></a>IMachineDebugManagerCookie::AddApplication
-新增應用程式來執行應用程式清單。  
+新增應用程式執行的應用程式清單。  
   
 ## <a name="syntax"></a>語法  
   
-```  
+```cpp
 HRESULT AddApplication(  
    IRemoteDebugApplication*  pda,  
    DWORD                     dwDebugAppCookie,  
@@ -40,23 +40,23 @@ HRESULT AddApplication(
   
 #### <a name="parameters"></a>參數  
  `pda`  
- [in]應用程式執行應用程式清單。  
+ [in]若要執行的應用程式的應用程式清單。  
   
  `dwDebugAppCookie`  
  [in]Cookie 可識別偵錯應用程式。  
   
  `pdwAppCookie`  
- [out]用來從電腦偵錯管理員移除應用程式的 cookie。  
+ [out]用來移除機器偵錯管理員的應用程式的 cookie。  
   
 ## <a name="return-value"></a>傳回值  
  方法會傳回 `HRESULT`。 可能的值包括 (但不限於) 下表中的這些值。  
   
-|值|說明|  
+|值|描述|  
 |-----------|-----------------|  
 |`S_OK`|方法成功。|  
   
 ## <a name="remarks"></a>備註  
- 這個方法會呼叫處理序偵錯管理員每當`IProcessDebugManager::AddApplication`呼叫。  
+ 這個方法會呼叫處理序偵錯管理員只要`IProcessDebugManager::AddApplication`呼叫。  
   
 ## <a name="see-also"></a>另請參閱  
  [IMachineDebugManagerCookie 介面](../../winscript/reference/imachinedebugmanagercookie-interface.md)   

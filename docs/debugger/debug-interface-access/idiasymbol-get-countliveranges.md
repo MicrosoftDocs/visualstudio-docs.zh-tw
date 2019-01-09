@@ -1,8 +1,6 @@
 ---
 title: IDiaSymbol::get_countLiveRanges |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 422025e61987a80b365b8db69dde11ee61e38472
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 5d33a87225345137a303284387c93dcec06d07f9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49875329"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53933949"
 ---
 # <a name="idiasymbolgetcountliveranges"></a>IDiaSymbol::get_countLiveRanges
 擷取有效的位址範圍相關聯的本機符號數目。  
@@ -27,7 +25,7 @@ ms.locfileid: "49875329"
 ## <a name="syntax"></a>語法  
   
 ```C++  
-HRESULT get_countLiveRanges (   
+HRESULT get_countLiveRanges (   
    DWORD* count  
 );  
 ```  
@@ -40,11 +38,11 @@ HRESULT get_countLiveRanges (
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
   
 ## <a name="requirements"></a>需求  
- 標頭： Dia2.h  
+ 標頭：dia2.h  
   
  程式庫： diaguids.lib  
   
  DLL: msdia100.dll  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
