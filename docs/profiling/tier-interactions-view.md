@@ -1,8 +1,6 @@
 ---
 title: 階層互動檢視 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.view.tierinteraction
@@ -13,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d92144a6b9bd94e23397a033fbbee45bd5aeed4a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: bf907b11a715f9e108c71daeb6bebd35be9f1212
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49917762"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53967092"
 ---
 # <a name="tier-interactions-view"></a>階層互動檢視
 
@@ -38,7 +36,7 @@ ms.locfileid: "49917762"
 
 ## <a name="master-pane"></a>主要窗格
 
-|資料行|描述|
+|資料行|說明|
 |------------|-----------------|
 |**名稱**|- 對於最上層資料列，為已進行分析的處理序或網頁名稱。<br />- 對於資料庫連接資料列，為裝載資料庫的伺服器名稱。|
 |**資料庫**|資料庫的名稱 (僅資料庫連接資料列)。|
@@ -50,7 +48,7 @@ ms.locfileid: "49917762"
 
 ## <a name="database-connection-details-pane"></a>資料庫連接詳細資料窗格
 
-|資料行|描述|
+|資料行|說明|
 |------------|-----------------|
 |**命令文字**|要求的 SQL 查詢。|
 |**查詢計數**|執行該查詢的次數。|

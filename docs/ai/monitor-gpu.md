@@ -1,11 +1,4 @@
 ---
-ms.technology: vs-ai-tools
-ms.openlocfilehash: 01097a738c24c44f3dd2800ce852d3e79a60ba44
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: HT
-ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49909077"
 ---
 # <a name="monitoring-gpu-utilization"></a>監視 GPU 使用率
 

@@ -3,7 +3,6 @@ title: 使用 [測試總管] 執行、建置和偵錯單元測試
 description: 了解如何在 Visual Studio 中使用 [測試總管] 執行測試。 本主題涵蓋如何在建置後啟用自動測試回合、檢視測試結果、群組和篩選測試清單、建立播放清單、偵錯測試，以及使用測試捷徑。
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 f1_keywords:
 - vs.unittesting.testexplorer.overview
@@ -12,12 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: dc918adb6a66f64cdcda46ea535cd0ab017c0676
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 65ba6a0528dee5a0b430787ee4332ca3dab5bdec
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49939509"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53858065"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>使用測試總管執行單元測試
 
@@ -55,7 +54,7 @@ Visual Studio 2015 包含 Managed 程式碼和機器碼皆適用的 Microsoft �
 
 ### <a name="run-tests-after-every-build"></a>每次建置後執行測試
 
-|按鈕|描述|
+|按鈕|說明|
 |-|-|
 |![建置後執行](../test/media/ute_runafterbuild_btn.png)|若要在每次本機建置之後執行單元測試，請在標準功能表中選擇 [測試]，然後選擇 [測試總管] 工具列上的 [建置之後執行測試]。|
 
@@ -85,7 +84,7 @@ Visual Studio 2015 包含 Managed 程式碼和機器碼皆適用的 Microsoft �
 
 ### <a name="view-the-source-code-of-a-test-method"></a>檢視測試方法的原始程式碼
 
- 若要在 Visual Studio 編輯器顯示測試方法的原始程式碼，請選取測試，然後選擇操作功能表上的 [開啟測試] (鍵盤：按 **F12**)。
+ 若要在 Visual Studio 編輯器顯示測試方法的原始程式碼，請選取測試，然後選擇操作功能表上的 [開啟測試] (鍵盤：**F12**)。
 
 ## <a name="group-and-filter-the-test-list"></a>群組和篩選測試清單
 
@@ -99,10 +98,10 @@ Visual Studio 2015 包含 Managed 程式碼和機器碼皆適用的 Microsoft �
 
 ### <a name="test-explorer-groups"></a>測試總管群組
 
-|群組|描述|
+|群組|說明|
 |-|-----------------|
-|**持續期間**|依據執行時間群組測試：[快] 、[中] 和 [慢] 。|
-|**結果**|依據執行結果群組測試：[失敗的測試] 、[略過的測試] 、[成功的測試] 。|
+|**持續期間**|依據執行時間群組測試：[快]、[中] 和 [慢]。|
+|**結果**|依據執行結果群組測試：[失敗的測試]、[略過的測試]、[成功的測試]。|
 |**特性**|依據您定義的分類/值組群組測試。 指定特性分類和值的語法是由單元測試架構所定義。|
 |**專案**|依據名稱專案群組測試。|
 
@@ -114,7 +113,7 @@ Visual Studio 2015 包含 Managed 程式碼和機器碼皆適用的 Microsoft �
 
  Microsoft Managed 程式碼單元測試架構中，您可在  <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute> 屬性中定義特性名稱/值組。 測試架構也包含下列預先定義的特性：
 
-|特性|描述|
+|特性|說明|
 |-|-----------------|
 |<xref:Microsoft.VisualStudio.TestTools.UnitTesting.OwnerAttribute>|擁有者分類是由單元測試架構所定義，會要求您提供擁有者的字串值。|
 |<xref:Microsoft.VisualStudio.TestTools.UnitTesting.PriorityAttribute>|優先權分類是由單元測試架構所定義，會要求您提供優先權的整數值。|
@@ -142,7 +141,7 @@ Visual Studio 2015 包含 Managed 程式碼和機器碼皆適用的 Microsoft �
 > [!NOTE]
 > 搜尋是區分大小寫且比對指定字串與準則值的任何部分。
 
-|限定詞|描述|
+|限定詞|說明|
 |-|-----------------|
 |**特性**|在特性分類和值中搜尋相符項目。 指定特性分類和值的語法是由單元測試架構所定義。|
 |**Project**|在測試專案名稱中搜尋相符項目。|
@@ -150,7 +149,7 @@ Visual Studio 2015 包含 Managed 程式碼和機器碼皆適用的 Microsoft �
 |**檔案路徑**|在測試來源檔的完整檔案名稱中搜尋相符項目。|
 |**完整名稱**|在測試命名空間、類別和方法的完整檔案名稱中搜尋相符項目。|
 |**輸出**|搜尋寫入標準輸出 (stdout) 或標準錯誤 (stderr) 的使用者定義錯誤訊息。 指定輸出訊息的語法是由單元測試架構所定義。|
-|**結果**|在測試總管分類名稱中搜尋相符項目：[失敗的測試] 、[略過的測試] 、[成功的測試] 。|
+|**結果**|在 [測試總管] 分類名稱中搜尋相符項目：[失敗的測試]、[略過的測試]、[成功的測試]。|
 
 若要排除篩部分選條件的結果，請使用下列語法：
 
@@ -187,7 +186,7 @@ FilterName:"Criteria" -FilterName:"SubsetCriteria"
 
 2. 在測試總管中，選取測試方法，然後選擇內容功能表上的 [偵測選取的測試]  。
 
-   如需偵錯工具的詳細資訊，請參閱[在 Visual Studio 中偵錯](../debugger/debugging-in-visual-studio.md)。
+   如需偵錯工具的詳細資訊，請參閱[在 Visual Studio 中偵錯](../debugger/debugger-feature-tour.md)。
 
 ### <a name="diagnose-test-method-performance-issues"></a>診斷測試方法效能問題
 

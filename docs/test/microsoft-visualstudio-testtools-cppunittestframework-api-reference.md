@@ -2,19 +2,18 @@
 title: Microsoft.VisualStudio.TestTools.CppUnitTestFramework API 參考
 ms.date: 11/04/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: reference
 ms.author: mblome
 manager: douge
 ms.workload:
 - multiple
 author: mikeblome
-ms.openlocfilehash: b2225ec5db308b290e932cb9d29d1c50e32d4608
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 33cfa33e28bc8bf76122bafd6de3fe1d5e48f6cb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49820261"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53849949"
 ---
 # <a name="microsoftvisualstudiotesttoolscppunittestframework-api-reference"></a>Microsoft.VisualStudio.TestTools.CppUnitTestFramework API 參考
 
@@ -644,4 +643,3 @@ public:
 
 - [對程式碼進行單元測試](../test/unit-test-your-code.md)
 - [撰寫 C/C++ 的單元測試](writing-unit-tests-for-c-cpp.md)
-

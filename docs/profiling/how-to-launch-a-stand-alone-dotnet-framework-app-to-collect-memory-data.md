@@ -1,8 +1,6 @@
 ---
-title: 如何：使用命令列以程式碼剖析工具啟動獨立的 .NET Framework 應用程式以收集記憶體資料 | Microsoft Docs
-ms.custom: ''
+title: HOW TO：使用命令列以分析工具啟動獨立的 .NET Framework 應用程式以收集記憶體資料 | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 3bc53041-91b7-4ad0-8413-f8bf2c4b3f5e
 author: mikejo5000
@@ -10,14 +8,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: ae6711ae49de037fd04039f1e07b09264fdce1b0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 42e6a7d0ddd00fefa071f18ef4d7ee0d508a06da
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49876681"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53857837"
 ---
-# <a name="how-to-launch-a-stand-alone-net-framework-application-with-the-profiler-to-collect-memory-data-by-using-the-command-line"></a>如何：使用命令列以分析工具啟動獨立的 .NET Framework 應用程式來收集記憶體資料
+# <a name="how-to-launch-a-stand-alone-net-framework-application-with-the-profiler-to-collect-memory-data-by-using-the-command-line"></a>HOW TO：使用命令列以分析工具啟動獨立的 .NET Framework 應用程式以收集記憶體資料
 本主題描述如何使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 程式碼剖析工具命令列工具啟動 .NET Framework 獨立 (用戶端) 應用程式，並收集記憶體資料。  
 
  程式碼剖析工作階段有三個部分︰  
@@ -29,7 +27,7 @@ ms.locfileid: "49876681"
 -   結束程式碼剖析工作階段。  
 
 > [!NOTE]
->  分析工具的命令列工具位於 [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] 安裝目錄的 *\Team Tools\Performance Tools* 子目錄中。 在 64 位元電腦上，64 位元和 32 位元版本的工具都可以使用。 若要使用程式碼剖析工具命令列工具，必須將工具路徑加入至命令提示字元視窗的 PATH 環境變數，或將它加入至命令本身。 如需詳細資訊，請參閱[指定命令列工具的路徑](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)。  
+>  若要取得分析工具的路徑，請參閱[指定命令列工具的路徑](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)。 在 64 位元電腦上，64 位元和 32 位元版本的工具都可以使用。 若要使用程式碼剖析工具命令列工具，必須將工具路徑加入至命令提示字元視窗的 PATH 環境變數，或將它加入至命令本身。
 
 ## <a name="start-the-application-with-the-profiler"></a>使用分析工具啟動應用程式  
  若要使用程式碼剖析工具啟動目標應用程式，請使用 **VSPerfCmd.exe/start** 和 **/launch**選項初始化程式碼剖析工具，並啟動應用程式。 您可以在單一命令列上指定 **/start** 和 **/launch** 及其個別選項。  
@@ -50,7 +48,7 @@ ms.locfileid: "49876681"
 
      您可以使用下列任一選項搭配 **/start:sample** 選項。  
 
-   | 選項 | 描述 |
+   | 選項 | 說明 |
    | - | - |
    | [/wincounter](../profiling/wincounter.md) **:** `WinCounterPath` | 指定程式碼剖析期間要收集的 Windows 效能計數器。 |
    | [/automark](../profiling/automark.md) **:** `Interval` | 只能搭配 **/wincounter** 使用。 指定 Windows 效能計數器收集事件間隔的毫秒數。 預設值為 500 毫秒。 |
@@ -62,14 +60,14 @@ ms.locfileid: "49876681"
 
    - 要收集 .NET Framework 記憶體資料，必須使用 [/gc](../profiling/gc-vsperfcmd.md)**:**`Keyword`選項。 關鍵字參數指定要收集記憶體配置資料，或收集記憶體配置和物件存留期資料。  
 
-     |關鍵字|描述|  
+     |關鍵字|說明|  
      |-------------|-----------------|  
      |**allocation**|僅收集記憶體配置資料。|  
      |**lifetime**|收集記憶體配置和物件存留期資料。|  
 
      您可以使用下列任一選項搭配 **/launch** 選項。  
 
-   |選項|描述|  
+   |選項|說明|  
    |------------|-----------------|  
    |[/args](../profiling/args.md) **:** `Arguments`|指定包含要傳遞至目標應用程式的命令列引數的字串。|  
    |[/console](../profiling/console.md)|在個別的視窗中啟動目標命令列應用程式。|  
@@ -83,7 +81,7 @@ ms.locfileid: "49876681"
 
 -   下列成對的選項會開始和停止資料收集。 請在個別的命令列上指定各個選項。 您可以多次開始和停止資料收集。  
 
-    |選項|描述|  
+    |選項|說明|  
     |------------|-----------------|  
     |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|開始 (**/globalon**) 或停止 (**/globaloff**) 所有處理序的資料收集。|  
     |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [processoff](../profiling/processon-and-processoff.md) **:** `PID`|開始 (**/processon**) 或停止 (**/processoff**) 處理序 ID (`PID`) 指定的處理序資料收集。|  

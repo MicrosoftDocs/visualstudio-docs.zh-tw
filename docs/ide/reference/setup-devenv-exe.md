@@ -2,7 +2,6 @@
 title: devenv.exe setup 參數
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 helpviewer_keywords:
 - setup Devenv switch
@@ -11,12 +10,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: eca577c0e4646821262c953cf48256937eed386c
-ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
+ms.openlocfilehash: 3f1f801d4da451d9357082359a1cf001915e1041
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "51948370"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53829270"
 ---
 # <a name="setup-devenvexe"></a>/Setup (devenv.exe)
 

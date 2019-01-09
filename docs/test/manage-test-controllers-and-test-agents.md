@@ -2,19 +2,18 @@
 title: 管理測試控制器和測試代理程式
 ms.date: 09/18/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ccc3a6342857d1f228118ef7b26601f3787908e4
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: b687504ae69d7b133aba107c7705eeb50f6f8953
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53059492"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53891397"
 ---
 # <a name="manage-test-controllers-and-test-agents"></a>管理測試控制器和測試代理程式
 
@@ -118,7 +117,7 @@ ms.locfileid: "53059492"
 
 |狀態|說明|
 |-|-----------------|
-|正在執行測試|正在執行測試|
+|正在執行測試|執行測試|
 |就緒|可執行測試或收集資料與診斷資訊|
 |離線|無法執行測試或收集資料與診斷資訊|
 |已中斷連接|測試代理程式未啟動|

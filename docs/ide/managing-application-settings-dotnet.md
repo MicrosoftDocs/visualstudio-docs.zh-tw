@@ -2,7 +2,6 @@
 title: 管理應用程式設定 (.NET)
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - msvse_settingsdesigner.err.nameblank
@@ -13,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e4ea61199159e68f3707b6dac4d3a6c1f5ea7635
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: e6f4340f87782573f7330705786d0e4f923eb914
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50671783"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53865501"
 ---
 # <a name="manage-application-settings-net"></a>管理應用程式設定 (.NET)
 

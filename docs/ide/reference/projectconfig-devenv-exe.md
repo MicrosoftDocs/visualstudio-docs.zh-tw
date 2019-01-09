@@ -2,7 +2,6 @@
 title: DevEnv ProjectConfig 參數
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 helpviewer_keywords:
 - /projectconfig Devenv switch
@@ -22,12 +21,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 44f5d4479658b450074ba35f2759a273bb584e0a
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 7ca481d23757cc9022042db42a6d4be477880367
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34764650"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53967913"
 ---
 # <a name="projectconfig-devenvexe"></a>/ProjectConfig (devenv.exe)
 
@@ -47,8 +46,8 @@ devenv SolutionName {/build|/clean|/rebuild|/deploy} SolnConfigName [/project Pr
 |/clean|清除在建置期間建立的所有中繼檔案和輸出目錄。|
 |/rebuild|清除後建置 **/project** 引數所指定的專案。|
 |/deploy|指定在建置或重建之後部署專案。|
-|*SolnConfigName*|必要。 將套用至 *SolutionName* 中所指定方案的方案組態名稱。 如果有多個方案平台，您也必須指定平台，例如 **"Debug\|Win32"**。|
-|*SolutionName*|必要。 方案檔的完整路徑和名稱。|
+|*SolnConfigName*|必要項。 將套用至 *SolutionName* 中所指定方案的方案組態名稱。 如果有多個方案平台，您也必須指定平台，例如 **"Debug\|Win32"**。|
+|*SolutionName*|必要項。 方案檔的完整路徑和名稱。|
 |/project *ProjName*|選擇性。 方案中專案檔的路徑和名稱。 您可以輸入從 *SolutionName* 資料夾到專案檔的相對路徑、專案的顯示名稱，或專案檔的完整路徑和名稱。|
 |/projectconfig *ProjConfigName*|選擇性。 要套用至 **/project** 引數所指定專案的專案組建組態名稱。 如果有多個方案平台，您也必須指定平台，例如 **"Debug\|Win32"**。|
 

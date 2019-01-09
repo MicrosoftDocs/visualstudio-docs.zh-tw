@@ -3,7 +3,6 @@ title: 格式化 Python 程式碼
 description: Visual Studio 可以自動重新設定 Python 程式碼格式，包括間距、陳述式、換行和註解。
 ms.date: 10/28/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -12,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 452dc1104147e5b29dd38790cbfa726ad0de7b1f
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: b830640284fe5b44a76b5f7d2424e2c1ccd24ea0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53052189"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53850212"
 ---
 # <a name="format-python-code"></a>格式化 Python 程式碼
 

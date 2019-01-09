@@ -3,7 +3,6 @@ title: 回報問題
 description: 提供 [回報問題] 工具的概觀，並包括問題狀態和定義
 ms.date: 11/15/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
 ms.custom: seodec18
 ms.topic: conceptual
 author: seaniyer
@@ -11,12 +10,12 @@ ms.author: seiyer
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b6d7605cffeca2797d47aa90c6f64a1aab0a6cb2
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: 06f7f3cc2d39a28052a0f34eed8ab36d224d4b8e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53159824"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53934355"
 ---
 # <a name="overview-report-a-problem"></a>概觀：回報問題
 

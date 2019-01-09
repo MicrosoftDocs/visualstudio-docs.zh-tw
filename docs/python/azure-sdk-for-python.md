@@ -3,7 +3,6 @@ title: Azure SDK for Python
 description: 適用於 Python 的 Azure SDK 可讓您更輕鬆地從在任何平台上執行的 Python 應用程式取用 Microsoft Azure 服務。
 ms.date: 12/06/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -12,12 +11,12 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: b9c8f5193e55d86ea4ff5e4d68fb7a66a1044d2e
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: db391b30305e3fad8384dcbeea611379f0061054
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53062880"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53854213"
 ---
 # <a name="consume-azure-services-using-the-azure-sdk-for-python"></a>使用 Azure SDK for Python 自訂 Azure 服務
 

@@ -1,23 +1,20 @@
 ---
 title: 撰寫並管理程式碼
 description: 了解如何使用 Visual Studio 中的程式碼編輯器和其他工具來撰寫、瀏覽、管理及改善您的程式碼。
-layout: LandingPage
 ms.date: 01/01/2018
+layout: LandingPage
+ms.prod: visual-studio-dev15
+ms.topic: landing-page
 author: gewarren
 ms.author: gewarren
-ms.topic: landing-page
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
-f1_keywords:
-- vs.newproject
 ms.workload:
 - multiple
-ms.openlocfilehash: 929ee8c5618c08431c27754327c9466a54a68b85
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: 06ce24ab0e0d668f4eef524826f2bf46a6fb29a5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53159373"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53855426"
 ---
 # <a name="write-and-manage-code-using-visual-studio"></a>使用 Visual Studio 來撰寫和管理程式碼
 

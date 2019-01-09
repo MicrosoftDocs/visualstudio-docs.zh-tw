@@ -4,7 +4,6 @@ titleSuffix: ''
 description: Visual Studio 提供建立程式碼的支援，而無需依賴專案檔或方案檔
 ms.custom: seodec18
 ms.date: 09/24/2018
-ms.technology: vs-nodejs
 ms.topic: conceptual
 ms.devlang: javascript
 author: mikejo5000
@@ -14,12 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: a68174fd9cc1efcdde068448445adcf68fe36f63
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: e8c42bd40528dfe8567219bdc2bc4a8d216e7c6b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53058450"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53899752"
 ---
 # <a name="develop-javascript-and-typescript-code-in-visual-studio-without-solutions-or-projects"></a>不使用方案或專案在 Visual Studio 中開發 JavaScript 和 TypeScript 程式碼
 

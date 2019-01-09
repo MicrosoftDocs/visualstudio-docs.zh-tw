@@ -2,7 +2,6 @@
 title: 選項對話方塊、環境、字型和色彩
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.FontsAndColors
@@ -27,12 +26,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f15ac427d3e6fd6ddf7988c82ad46ffe537d299
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 55f402eaaa1ee11feb115e38ae5e7759bbbb93f2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389253"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53966008"
 ---
 # <a name="fonts-and-colors-environment-options-dialog-box"></a>選項對話方塊、環境、字型和色彩
 
@@ -95,7 +94,7 @@ ms.locfileid: "52389253"
 
 部分顯示項目包括：
 
-|顯示項目|描述|
+|顯示項目|說明|
 |------------------|-----------------|
 |**純文字**|編輯器中的文字。|
 |**選取的文字**|當編輯器具有焦點時，目前的選取範圍中所包含的文字。|
@@ -128,7 +127,7 @@ ms.locfileid: "52389253"
 |**涵蓋範圍未觸及的區域**|尚未被單元測試涵蓋的程式碼。|
 |**涵蓋範圍部分觸及的區域**|已被單元測試部分涵蓋的程式碼。|
 |**涵蓋範圍觸及的區域**|已被單元測試完全涵蓋的程式碼。|
-|**CSS 註解**|階層式樣式表中的註解。 例如: <br /><br /> /* comment \*/|
+|**CSS 註解**|階層式樣式表中的註解。 例如：<br /><br /> /* comment \*/|
 |**CSS 關鍵字**|階層式樣式表中的關鍵字。|
 |**CSS 屬性名稱**|屬性 (例如背景) 的名稱。|
 |**CSS 屬性值**|指派給屬性 (例如藍色) 的值。|
@@ -164,7 +163,7 @@ ms.locfileid: "52389253"
 |**SQL DML 資料標記**|適用於 Transact-SQL 編輯器。 在此編輯器中的 DML 陳述式預設會以藍色週框方塊標示。|
 |**過時程式碼**|等待更新的被取代的程式碼。 在某些情況下，[編輯後繼續] 無法立即套用程式碼變更，但它們會在稍後繼續偵錯時套用。 如果您編輯必須呼叫目前執行的函式的函式，或將 64 位元組以上的新變數加入等候呼叫堆疊的某個函式時，就會發生這種情況。 當發生這種情況時，偵錯工具會顯示「過時程式碼警告」對話方塊，並且已被取代的程式碼會繼續執行直到有問題的函式完成，並再次呼叫。 [編輯後繼續] 會在該時間套用程式碼變更。|
 |**String**|字串常值。|
-|**字串 (C# @ 逐字翻譯)**|C# 中逐字解譯的字串常值。 例如: <br /><br /> @"x"|
+|**字串 (C# @ 逐字翻譯)**|C# 中逐字解譯的字串常值。 例如：<br /><br /> @"x"|
 |**語法錯誤**|剖析錯誤。|
 |**工作清單捷徑**|如果已將 [工作清單] 捷徑新增至一行，並且停用指示區邊界，就會將該行反白顯示。|
 |**追蹤點 (停用)**|未使用。|
@@ -251,4 +250,4 @@ ms.locfileid: "52389253"
 
 - [環境選項對話方塊](../../ide/reference/environment-options-dialog-box.md)
 - [選項對話方塊](../../ide/reference/options-dialog-box-visual-studio.md)
-- [如何：變更字型和色彩](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
+- [如何：變更字型與色彩](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)

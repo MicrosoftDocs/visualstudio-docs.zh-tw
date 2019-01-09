@@ -10,13 +10,12 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 51c9971d35eb5b7a369041eeaefd32fa00aa3571
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 47caaa39a1783588994277ba079e64e353a167a6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53051833"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53925099"
 ---
 # <a name="how-to-select-a-load-test-run-setting-to-use-from-the-command-line"></a>HOW TO：從命令列中選取要使用的負載測試回合設定
 

@@ -1,6 +1,6 @@
 ---
 title: 匯入發行設定以發行至 IIS
-ms.custom: Create and import a publishing profile to deploy an application from Visual Studio to IIS
+description: 建立和匯入發佈設定檔，以將應用程式從 Visual Studio 部署到 IIS
 ms.date: 05/07/2018
 ms.technology: vs-ide-deployment
 ms.topic: tutorial
@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e6df935578955d3c72b6f4fa61efdf614229bca0
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 4da4a45566fc6d773f185a6a34f7e02cb093fff5
+ms.sourcegitcommit: 75e02ed88a1ace6e8265fd4e3a82a1bc78f3adca
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38808461"
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "53348505"
 ---
 # <a name="publish-an-application-to-iis-by-importing-publish-settings-in-visual-studio"></a>在 Visual Studio 中匯入發行設定，即可將應用程式發行至 IIS
 
@@ -41,7 +41,7 @@ ms.locfileid: "38808461"
 
 * 您必須安裝 Visual Studio 2017，以及 **ASP.NET** 和 **NET Framework** 開發工作負載。 針對 .NET Core 應用程式，您還需要 .**NET Core** 工作負載。
 
-    如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)頁面免費進行安裝。
+    如果您尚未安裝 Visual Studio，請前往  [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) 頁面免費進行安裝。
 
 * 若要從 IIS 產生發行設定檔案，您必須具備執行 Windows Server 2012 或 Windows Server 2016 的電腦，並且必須正確設定 IIS 網頁伺服器角色。 另外還必須安裝 ASP.NET 4.5 或 ASP.NET Core。 針對 ASP.NET Core，請參閱[發行至 IIS](/aspnet/core/publishing/iis?tabs=aspnetcore2x#iis-configuration)。 針對 ASP.NET 4.5，請參閱[使用 ASP.NET 3.5 和 ASP.NET 4.5 的 IIS 8.0](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45)。
 

@@ -1,9 +1,6 @@
 ---
 title: 撰寫。Vsct 檔案 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - VSCT files, manual authoring
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 26a5353531d997ad40b913b5ee223614d6517c55
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3b39cd97bca9ee88628d064f917686d2a7f45aaa
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49917806"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53945258"
 ---
 # <a name="author-vsct-files"></a>撰寫.vsct 檔案
 本文件說明如何撰寫 *.vsct*將功能表項目、 工具列和其他使用者介面 (UI) 項目新增至 Visual Studio 整合式的開發環境 (IDE) 的檔案。 當您將 UI 項目新增到還沒有 Visual Studio 封裝 (VSPackage) 使用這些步驟 *.vsct*檔案。  
@@ -26,14 +23,14 @@ ms.locfileid: "49917806"
  對於新專案，我們建議您使用 Visual Studio package 範本，因為它會產生 *.vsct*檔案，根據您的選擇，已經有必要的項目，功能表命令、 工具視窗，或自訂編輯器. 您可以修改這 *.vsct*檔案，以符合需求的 VSPackage。 如需有關如何修改 *.vsct*檔案，請參閱中的範例[擴充功能表和命令](../../extensibility/extending-menus-and-commands.md)。  
   
 ## <a name="author-the-file"></a>製作檔案  
- 作者 *.vsct*檔案，以下列階段： 建立檔案和資源的結構、 宣告的 UI 項目，將 UI 項目放在 IDE 中，並加入任何特殊的行為。  
+ 作者 *.vsct*這些階段中的檔案：建立檔案和資源的結構、 宣告的 UI 項目，將 UI 項目放在 IDE 中，並加入任何特殊的行為。  
   
 ### <a name="file-structure"></a>檔案結構  
  基本結構 *.vsct*檔案[CommandTable](../../extensibility/commandtable-element.md)包含的根項目[命令](../../extensibility/commands-element.md)元素和[符號](../../extensibility/symbols-element.md)項目。  
   
 #### <a name="to-create-the-file-structure"></a>若要建立的檔案結構  
   
-1.  新增 *.vsct*檔案，以您的專案中的步驟[如何： 建立.vsct 檔](../../extensibility/internals/how-to-create-a-dot-vsct-file.md)。  
+1.  新增 *.vsct*檔案，以您的專案中的步驟[How to:建立.vsct 檔](../../extensibility/internals/how-to-create-a-dot-vsct-file.md)。  
   
 2. 新增必要的命名空間，以`CommandTable`項目，如下列範例所示：  
   
@@ -54,9 +51,9 @@ ms.locfileid: "49917806"
   
 1. 在頂端`CommandTable`項目，加入一個`Extern`參考，並設定每個外部檔案的項目`href`屬性加入檔案的名稱。 您可以參考下列標頭檔來存取 Visual Studio 資源：  
   
-   -   *Stdidcmd.h*： 定義 Visual Studio 所公開的所有命令的識別碼。  
+   -   *Stdidcmd.h*:定義識別碼針對 Visual Studio 所公開的所有命令。  
   
-   -   *Vsshlids.h*： 包含 Visual Studio 功能表的命令 Id。  
+   -   *Vsshlids.h*:包含 Visual Studio 功能表的命令識別碼。  
   
 2. 如果您的封裝呼叫由 Visual Studio 或其他套件會定義任何命令，新增`UsedCommands`之後的項目`Commands`項目。 填入此項目[UsedCommand](../../extensibility/usedcommand-element.md)每個命令呼叫也就是不屬於您套件的一部分。 設定`guid`並`id`屬性的`UsedCommand`呼叫命令的 GUID 和 ID 值的項目。 
 

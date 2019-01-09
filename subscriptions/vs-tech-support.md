@@ -3,38 +3,38 @@ title: 技術支援權益
 author: evanwindom
 ms.author: jaunger
 manager: evelynp
-ms.date: 10/03/2017
+ms.date: 12/19/2018
 ms.topic: Get-Started-Article
 description: 了解如何啟用 Visual Studio 訂用帳戶所包含的技術支援權益。
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 072a0c7dc7679f965c84de06c969034db02766a2
-ms.sourcegitcommit: 12e2f963dac76d53f87569c01198f6d0396d64cf
+ms.openlocfilehash: 635280cf52ca82af67ec1b3fc321f5ea6955128a
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44701763"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53740422"
 ---
 # <a name="activate-the-technical-support-benefit-in-visual-studio-subscriptions"></a>啟用 Visual Studio 訂用帳戶中的技術支援權益
 
 解決非生產環境中的協助修正問題。 (必須先啟用權益，才能提交支援要求。)Visual Studio Enterprise 標準和年度雲端訂用帳戶會收到四個事件，而 Visual Studio Professional 標準和年度雲端訂用帳戶會收到兩個事件。
 
-   > [!NOTE]
-   > 指定層級的訂用帳戶不一定全部符合接收支援事件的資格。 透過 FTE、NFR、MPN、MCT 和其他方案取得的訂用帳戶無法接收支援事件。 如果您的訂用帳戶不符合接收技術支援事件的資格，[技術支援] 磚將不會出現在您的可用權益中。
-
+> [!NOTE]
+> 指定層級的訂用帳戶不一定全部符合接收支援事件的資格。 透過 FTE、NFR、MPN、MCT 和其他方案取得的訂用帳戶無法接收支援事件。 如果您的訂用帳戶不符合接收技術支援事件的資格，[技術支援] 磚將不會出現在您的可用權益中。
+> 
 > [!div class="mx-imgBorder"]
-> ![技術支援權益磚](_img\vs-tech-support\vs-tech-support-tile.png)
+> ![技術支援權益磚](_img/vs-tech-support/vs-tech-support-tile.png)
 
 
-1.  若要開始使用您的技術支援權益，請按一下 [技術支援] 磚的 [Chat to activate] \(要啟動的聊天\)。 
-2.  這會起始與代表的聊天工作階段，該代表可建立您的合約識別碼和存取識別碼，並將這些識別碼提供給您。 
-3.  若要完成此程序，您必須提供代表：
-    - 您用於登入訂用帳戶的電子郵件地址
-    - 可在 [[訂閱](https://my.visualstudio.com/subscriptions)] 索引標籤上找到的訂用帳戶識別碼。
+1. 若要開始使用您的技術支援權益，請按一下 [技術支援] 磚的 [Chat to activate] \(要啟動的聊天\)。 
+2. 這會起始與代表的聊天工作階段，該代表可建立您的合約識別碼和存取識別碼，並將這些識別碼提供給您。 
+3. 若要完成此程序，您必須提供代表：
+   - 您用於登入訂用帳戶的電子郵件地址
+   - 可在 [[訂閱](https://my.visualstudio.com/subscriptions)] 索引標籤上找到的訂用帳戶識別碼。
 
-    > [!div class="mx-imgBorder"]
-    > ![技術支援權益尋找訂用帳戶識別碼](_img\vs-tech-support\vs-tech-support-subID-cropped.png)
+   > [!div class="mx-imgBorder"]
+   > ![技術支援權益尋找訂用帳戶識別碼](_img/vs-tech-support/vs-tech-support-subID-cropped.png)
 
 
 > [!NOTE]
@@ -47,28 +47,28 @@ ms.locfileid: "44701763"
 
 ### <a name="submit-an-incident-online"></a>線上提交事件
 
-1.  若要[線上提交事件](http://support.microsoft.com/oas/)，請指定需要協助的產品。 您可以從各種不同的清單中選取，或按名稱搜尋。 例如，若要提交 Visual Studio Enterprise 2017 事件，請按一下**開發人員工具**群組中的 [Visual Studio]。
-    > [!div class="mx-imgBorder"]    
-    > ![技術支援權益選取事件產品](_img\vs-tech-support\vs-tech-support-select-product.png)
+1. 若要[線上提交事件](http://support.microsoft.com/oas/)，請指定需要協助的產品。 您可以從各種不同的清單中選取，或按名稱搜尋。 例如，若要提交 Visual Studio Enterprise 2017 事件，請按一下**開發人員工具**群組中的 [Visual Studio]。
+   > [!div class="mx-imgBorder"]    
+   > ![技術支援權益選取事件產品](_img/vs-tech-support/vs-tech-support-select-product.png)
 
-2.  選擇您需要支援的產品 (例如，按一下 Visual Studio 產品清單中的 [Visual Studio Enterprise 2017])。
-3.  在 [建立事件] 頁面上，從下拉式清單中選取適用的問題類型。 我們在範例中會選擇 [整合式開發環境 (IDE)]。
-    > [!div class="mx-imgBorder"]    
-    > ![技術支援權益建立事件](_img\vs-tech-support\vs-tech-support-create-incident.png)
+2. 選擇您需要支援的產品 (例如，按一下 Visual Studio 產品清單中的 [Visual Studio Enterprise 2017])。
+3. 在 [建立事件] 頁面上，從下拉式清單中選取適用的問題類型。 我們在範例中會選擇 [整合式開發環境 (IDE)]。
+   > [!div class="mx-imgBorder"]    
+   > ![技術支援權益建立事件](_img/vs-tech-support/vs-tech-support-create-incident.png)
 
-4.  然後選擇最符合您問題的 [類別目錄]。 我們在範例中會選擇 [Architect tools] (架構設計師工具)。
-5.  按一下 [Start Request] (啟動要求)。
-6.  在下一個頁面上，系統會要求您選擇付款選項。
-    - 選擇 [Use my Visual Studio Subscription (使用我的 Visual Studio 訂用帳戶)]。
-    - 按一下 [Use another contract] (使用另一份合約)
-    - 輸入您的存取識別碼和合約識別碼
-    - 按一下 [新增]
-7.  一旦新增支援合約，它就會出現在 Professional 支援合約清單中。 選擇它並按一下 [繼續]。
-    > [!div class="mx-imgBorder"]     
-    > ![技術支援權益付款](_img\vs-tech-support\vs-tech-support-payment.png)
+4. 然後選擇最符合您問題的 [類別目錄]。 我們在範例中會選擇 [Architect tools] (架構設計師工具)。
+5. 按一下 [Start Request] (啟動要求)。
+6. 在下一個頁面上，系統會要求您選擇付款選項。
+   - 選擇 [Use my Visual Studio Subscription (使用我的 Visual Studio 訂用帳戶)]。
+   - 按一下 [Use another contract] (使用另一份合約)
+   - 輸入您的存取識別碼和合約識別碼
+   - 按一下 [新增]
+7. 一旦新增支援合約，它就會出現在 Professional 支援合約清單中。 選擇它並按一下 [繼續]。
+   > [!div class="mx-imgBorder"]     
+   > ![技術支援權益付款](_img/vs-tech-support/vs-tech-support-payment.png)
 
-8.  提供您的連絡資訊和偏好的連絡方法，然後按一下 [繼續]。
-9.  提供您的支援事件標題，然後描述您的問題。
+8. 提供您的連絡資訊和偏好的連絡方法，然後按一下 [繼續]。
+9. 提供您的支援事件標題，然後描述您的問題。
 10. 回答一連串的簡短問題，以判定問題的嚴重性。
 11. 按一下核取方塊接受服務條款。
 12. 按一下 [提交] 送出您的問題。
@@ -95,13 +95,18 @@ ms.locfileid: "44701763"
 
 | 訂用帳戶層級                                                 |     通道                                            | 優勢                                                          | 可續約？    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (標準、年度雲端)   | VL, Azure, 零售, 選取的 NFR<sup>1</sup> | 4 個事件       |  [是]|
-| Visual Studio Professional (標準、年度雲端) | VL、Azure、零售、挑選過的 NFR<sup>2</sup>                                        | 2 個事件                                                          |[是]         |
-| Visual Studio Test Professional (標準訂用帳戶)                         | VL, 零售                                              | 2 個事件                                             |  [是]         |
-| MSDN 平台 (標準)                                          | VL, 零售                                              | 2 個事件                                               | [是]         |
+| Visual Studio Enterprise (Standard)   | VL, Azure, 零售, 選取的 NFR<sup>1</sup> | 4 個事件       |  是|
+| Visual Studio Professional (Standard) | VL、Azure、零售、挑選過的 NFR<sup>2</sup>                                        | 2 個事件                                                          |是         |
+| Visual Studio Test Professional (標準訂用帳戶)                         | VL, 零售                                              | 2 個事件                                             |  是         |
+| MSDN 平台 (標準)                                          | VL, 零售                                              | 2 個事件                                               | 是         |
 | Visual Studio Dev Essentials | NA | 無法使用 |NA|
 | Visual Studio Enterprise、Visual Studio Professional (每月雲端) | Azure                                       | 無法使用                                                           |NA|
 
-<sup>1</sup> *包括：Imagine Premium。不包括：不得轉售 (NFR)、Visual Studio 產業夥伴 (VSIP)、Microsoft 合作夥伴網路 (MPN)、FTE、MCT Software & Services Developer、BizSpark、Imagine、Microsoft Valued Partner (MVP)、Region Director (RD)、MCT Software & Services。*
+<sup>1</sup> *包含：Imagine Premium。排除：禁止轉售 (NFR)、Visual Studio 產業夥伴 (VSIP)、Microsoft 合作夥伴網路 (MPN)、FTE、MCT Software & Services Developer、BizSpark、Imagine、Microsoft Valued Professional (MVP)、Region Director (RD)、MCT Software & Services。*
 
-<sup>2</sup> *包括：Imagine Standard。*
+<sup>2</sup> *包含：Imagine Standard。*
+
+> [!NOTE]
+> Microsoft 不再於雲端訂用帳戶中提供 Visual Studio Professional 年度訂用帳戶和 Visual Studio Enterprise 年度訂用帳戶。 現有的客戶體驗，以及更新、增加、減少或取消其訂用帳戶的能力將不會改變。 我們鼓勵新的客戶移至 [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) 來探索 Visual Studio 的不同購買選項。
+
+不確定您使用哪一個訂用帳戶？  連線到 [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) 以查看指派給您的電子郵件地址的所有訂用帳戶。 若沒有看到您的所有訂用帳戶，可能有一或多個訂用帳戶是指派到不同的電子郵件地址。  您必須以該電子郵件地址登入才能查看對應的訂用帳戶。

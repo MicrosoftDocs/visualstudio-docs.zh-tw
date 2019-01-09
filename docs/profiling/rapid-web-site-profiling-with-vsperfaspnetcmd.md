@@ -1,8 +1,6 @@
 ---
 title: 使用 VSPerfASPNETCmd 快速進行網站程式碼剖析 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - proflilng tools,VSPerfASPNETCmd
@@ -12,16 +10,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f0ad2c1411a47acd0219223fe928e4150368c80a
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: ac8ec48f7e860d4588a1d133792ceeb1c26add45
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43780683"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53849641"
 ---
 # <a name="rapid-web-site-profiling-with-vsperfaspnetcmd"></a>使用 VSPerfASPNETCmd 快速進行網站分析
 
-**VSPerfASPNETCmd** 命令列工具可讓您輕鬆地分析 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web 應用程式。 與 [VSPerfCmd](../profiling/vsperfcmd.md) 命令列工具相較之下，選項變少，無須設定任何環境變數，也不需要重新啟動電腦。 使用獨立分析工具進行程式碼剖析慣用的方法是使用 **VSPerfASPNETCmd**。 如需詳細資訊，請參閱[如何：安裝獨立分析工具](../profiling/how-to-install-the-stand-alone-profiler.md)。
+**VSPerfASPNETCmd** 命令列工具可讓您輕鬆地分析 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web 應用程式。 與 [VSPerfCmd](../profiling/vsperfcmd.md) 命令列工具相較之下，選項變少，無須設定任何環境變數，也不需要重新啟動電腦。 使用獨立分析工具進行程式碼剖析慣用的方法是使用 **VSPerfASPNETCmd**。 如需詳細資訊，請參閱[＜How to：安裝獨立分析工具](../profiling/how-to-install-the-stand-alone-profiler.md)。
 
 > [!NOTE]
 > Windows 8 和 Windows Server 2012 增強式安全性功能需要的重大變更，會以 Visual Studio 分析工具在這些平台收集資料的方式表現。 UWP App 也需要新的收集技術。 請參閱 [Windows 8 和 Windows Server 2012 應用程式的效能工具](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)。
@@ -29,7 +27,7 @@ ms.locfileid: "43780683"
  在某些情況下，像是收集並行資料或暫停和繼續程式碼剖析時，慣用的程式碼剖析方法是使用 **VSPerfCmd**。
 
 > [!NOTE]
-> 分析工具的命令列工具位於 Visual Studio 安裝目錄的 *\Team Tools\Performance Tools* 子目錄中。 在 64 位元電腦上，請使用 VSPerfASPNETCmd 工具，其位於 32 位元的 *\Team Tools\Performance Tools* 目錄中。 若要使用分析工具命令列工具，您必須將工具路徑加入至命令提示字元視窗的 PATH 環境變數，或將它加入至命令本身。 如需詳細資訊，請參閱[指定命令列工具的路徑](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)。
+>  若要取得分析工具的路徑，請參閱[指定命令列工具的路徑](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)。 在 64 位元電腦上，64 位元和 32 位元版本的工具都可以使用。 若要使用程式碼剖析工具命令列工具，必須將工具路徑加入至命令提示字元視窗的 PATH 環境變數，或將它加入至命令本身。  
 
 ## <a name="profile-an-aspnet-application"></a>為 ASP.NET 應用程式進行分析
 
@@ -100,7 +98,7 @@ ms.locfileid: "43780683"
 
 您可以將本節中的任何下列選項加入至稍早所列的命令，但 **vsperfaspnetcmd /shutdown** 命令除外。
 
-|選項|描述|
+|選項|說明|
 |------------|-----------------|
 |**/Output:** `VspFile`|根據預設，會使用檔案名稱 **PerformanceReport.vsp** 在目前目錄中建立程式碼剖析資料 (.*vsp*) 檔案。 您可以使用 /output 選項指定不同的位置、 檔案名稱，或兩者。|
 |**/PackSymbols:Off**|根據預設，VsPerfASPNETCmd 會將符號 (函式和參數名稱等等) 嵌入 .*vsp* 檔。 內嵌符號會讓程式碼剖析資料檔案變得非常大。 如果當您分析資料時，可以存取含有符號的 .*pdb* 檔案，請使用 /packsymbols:off 選項以停用內嵌符號。|

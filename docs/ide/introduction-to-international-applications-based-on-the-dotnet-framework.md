@@ -2,7 +2,6 @@
 title: 以 .NET Framework 為基礎的國際應用程式簡介
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - strings [Visual Studio], localizing
@@ -27,12 +26,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: cd2a749bc96271e4ed16872f1d5c4a485c55900e
-ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
+ms.openlocfilehash: f6d254da3a6ee4aae307868fe90b8025242e2ba2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48863945"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53952218"
 ---
 # <a name="introduction-to-international-applications-based-on-the-net-framework"></a>以 .NET Framework 為基礎的國際應用程式簡介
 

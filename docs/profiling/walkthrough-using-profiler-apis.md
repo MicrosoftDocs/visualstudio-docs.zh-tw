@@ -1,8 +1,6 @@
 ---
 title: 逐步解說：使用分析工具 API | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - profiling tools, walkthroughs
@@ -13,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6e5baebb527c09d833e405a98bd701ad02b7fe86
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 09368aceed6828e63c0e5c9d20a77d1787bc2c57
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49928057"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53891264"
 ---
 # <a name="walkthrough-using-profiler-apis"></a>逐步解說：使用分析工具 API
 
@@ -32,16 +30,18 @@ ms.locfileid: "49928057"
   
  Visual Studio 分析工具可讓您限制資料收集。 本逐步解說所提供的範例說明如何使用分析工具 API 來限制資料收集。 Visual Studio 分析工具提供用於控制應用程式內資料收集的 API。  
   
- 針對機器碼，Visual Studio 分析工具 API 位在 *VSPerf.dll* 中。 標頭檔 (*VSPerf.h*) 和匯入程式庫 (*VSPerf.lib*) 位在 *Microsoft Visual Studio 9\Team Tools\Performance Tools* 目錄中。  
+ 針對機器碼，Visual Studio 分析工具 API 位在 *VSPerf.dll* 中。 標頭檔 (*VSPerf.h*) 和匯入程式庫 (*VSPerf.lib*) 位在 *Microsoft Visual Studio\2017\Team Tools\Performance Tools\PerfSDK* 目錄中。  針對 64 位元應用程式，資料夾為 *Microsoft Visual Studio\2017\Team Tools\Performance Tools\x64\PerfSDK*
   
- 針對受控碼，分析工具 API 位在 *Microsoft.VisualStudio.Profiler.dll* 中。 此 DLL 位在 *Microsoft Visual Studio 9\Team Tools\Performance Tools* 目錄中。 如需詳細資訊，請參閱<xref:Microsoft.VisualStudio.Profiler>。  
+ 針對受控碼，分析工具 API 位在 *Microsoft.VisualStudio.Profiler.dll* 中。 這個 DLL 位於 *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools* 目錄。 針對 64 位元應用程式，資料夾為 *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools\x64*。 如需詳細資訊，請參閱<xref:Microsoft.VisualStudio.Profiler>。 
+ 
+  
   
 ## <a name="prerequisites"></a>必要條件  
  本逐步解說假設您所選擇的開發環境設定成支援偵錯和取樣。 下列主題概述這些必要條件：  
   
- [操作說明：選擇收集方法](../profiling/how-to-choose-collection-methods.md)  
+ [如何：選擇收集方法](../profiling/how-to-choose-collection-methods.md)  
   
- [操作說明：參考 Windows 符號資訊](../profiling/how-to-reference-windows-symbol-information.md)  
+ [如何：參考 Windows 符號資訊](../profiling/how-to-reference-windows-symbol-information.md)  
   
  根據預設，啟動分析工具時，分析工具會收集全域層級的資料。 程式開頭的下列程式碼會關閉全域分析。  
   
@@ -60,7 +60,7 @@ DataCollection.CurrentId);
 1.  根據您的喜好設定，在 Visual Studio 中建立新的 C# 專案，或使用命令列組建。  
   
     > [!NOTE]
-    >  您的組建必須參考 *Microsoft Visual Studio 9\Team Tools\Performance Tools* 目錄中的 *Microsoft.VisualStudio.Profiler.dll* 程式庫。  
+    >  您的組建必須參考 *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools* 目錄中的 *Microsoft.VisualStudio.Profiler.dll* 程式庫。  
   
 2.  複製下列程式碼，並將其貼入專案中：  
   
@@ -151,11 +151,11 @@ DataCollection.CurrentId);
   
      **VsPerfCLREnv /traceon**  
   
-3.  輸入下列命令：**VSInstr \<檔案名稱>.exe**  
+3.  輸入下列命令：**VSInstr \<>.exe**  
   
 4.  輸入下列命令：**VSPerfCmd /start:trace /output:\<檔案名稱>.vsp**  
   
-5.  輸入下列命令： **VSPerfCmd /globaloff**  
+5.  輸入下列命令：**VSPerfCmd /globaloff**  
   
 6.  執行程式。  
   

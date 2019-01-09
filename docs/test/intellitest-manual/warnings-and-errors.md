@@ -2,7 +2,6 @@
 title: 警告與錯誤 | Microsoft IntelliTest 開發人員測試工具
 ms.date: 05/02/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: reference
 helpviewer_keywords:
 - IntelliTest, Warnings and errors
@@ -11,12 +10,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: efb82a7419ba58c27ccab864d2360538075a1089
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: fe52e31c7401acd6bc10d469d98eabf2916f84be
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51000610"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53899021"
 ---
 # <a name="warnings-and-errors"></a>警告和錯誤
 
@@ -116,7 +115,7 @@ void ParameterizedTest(int n) {
 }
 ```
 
-您可以編輯 **PexSettingsAttributeBase** 所衍生屬性的 **MaxConditions** 選項，例如 [PexClass](attribute-glossary.md#pexclass) 或 [PexMethod](attribute-glossary.md#pexmethod)。 例如: 
+您可以編輯 **PexSettingsAttributeBase** 所衍生屬性的 **MaxConditions** 選項，例如 [PexClass](attribute-glossary.md#pexclass) 或 [PexMethod](attribute-glossary.md#pexmethod)。 例如：
 
 ```csharp
 [PexMethod(MaxConditions=10000)]

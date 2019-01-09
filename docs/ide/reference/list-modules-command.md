@@ -2,7 +2,6 @@
 title: 列出模組命令
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - debug.listmodules
@@ -16,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 54e975cf886f0bb8392bd3679a28bae6bb6bfe00
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 1d13fe40866f8c3baf7d47e17a98515ea8197dfe
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31944657"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53962645"
 ---
 # <a name="list-modules-command"></a>列出模組命令
 列出目前處理序的模組。

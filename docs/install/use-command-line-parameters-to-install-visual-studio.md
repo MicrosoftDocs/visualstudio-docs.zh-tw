@@ -2,9 +2,8 @@
 title: 使用命令列參數來安裝 Visual Studio
 titleSuffix: ''
 description: 了解如何使用命令列參數來控制或自訂您的 Visual Studio 安裝。
-ms.custom: seodec18
 ms.date: 11/14/2018
-ms.technology: vs-acquisition
+ms.custom: seodec18
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
@@ -17,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ba270b4d7240d30db5b20388d6c75782dba6a256
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: f2955a9efae219cf992936a8b64cac672a0cd680
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53159720"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53869657"
 ---
 # <a name="use-command-line-parameters-to-install-visual-studio-2017"></a>使用命令列參數來安裝 Visual Studio 2017
 
@@ -56,7 +55,7 @@ ms.locfileid: "53159720"
 | `update` | 更新所安裝的產品。 |
 | `repair` | 修復所安裝的產品。 |
 | `uninstall` | 解除安裝所安裝的產品。 |
-| `export` | **15.9 中的新功能**：將安裝選取項目匯出至安裝組態檔。 |
+| `export` | **15.9 中的新功能**：將安裝選取項目匯出至安裝組態檔。 **注意**：僅能透過 vs_installer.exe 使用。 |
 
 | **安裝選項** | **描述** |
 | ----------------------- | --------------- |

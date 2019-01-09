@@ -2,7 +2,6 @@
 title: 更新現有的專案項目範本
 ms.date: 01/02/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - item templates, updating
@@ -12,12 +11,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 52f24f76ff217b694a1e5d2b510d16b0911d2fda
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: db5b9c3f601ae11b704e54ae2ebcd58f10c4c724
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53061464"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53835824"
 ---
 # <a name="how-to-update-existing-templates"></a>HOW TO：更新現有範本
 

@@ -1,8 +1,7 @@
 ---
-title: 如何：建立和移除專案相依性
+title: HOW TO：建立及移除專案相依性
 ms.date: 06/21/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - VS.ProjectDependenciesDlg
@@ -19,14 +18,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c7075f21f7927a87968dd573863402a71a40c3c4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 24f44545ebc591a8e3b1a8359e0d7db8dddbb5d5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49856011"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53925690"
 ---
-# <a name="how-to-create-and-remove-project-dependencies"></a>如何：建立和移除專案相依性
+# <a name="how-to-create-and-remove-project-dependencies"></a>HOW TO：建立及移除專案相依性
 
 在建置包含多個專案的方案時，您可能需要先建置特定專案，以產生其他專案使用的程式碼。 當某個專案使用其他專案所產生的可執行程式碼時，產生程式碼的專案和使用程式碼的專案之間即具有專案相依性。 您可以在 [專案相依性] 對話方塊中定義這類相依性關聯。
 

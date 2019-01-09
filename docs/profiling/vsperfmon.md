@@ -1,8 +1,6 @@
 ---
 title: VSPerfMon | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - VSPerfMon tool
@@ -18,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e9754d4f324c178c117e14ff5949bd6c8ef352e9
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 6be37dc46b603d8193e45b8aa11d9b0cd78d9891
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35254806"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53841056"
 ---
 # <a name="vsperfmon"></a>VSPerfMon
 您可以使用 VSPerfMon 工具來收集應用程式的效能資料，而這項工具通常是由 *VSPerfCmd.exe* 啟動。 VSPerfMon 會顯示有關附加或中斷連結處理序的其他資訊，其在使用 VSPerfCmd 工具時無法使用。 若要檢視這項資訊，請以個別的視窗來啟動 VSPerfMon。 若要叫用 VSPerfMon，請使用下列語法︰  
@@ -34,7 +32,7 @@ VSPerfMon [/U] </TRACE [/COUNTER:cfg] | /SAMPLE | /COVERAGE> /CROSSSESSION /OUTP
   
  下表說明 VSPerfMon 工具選項：  
   
-|選項|描述|  
+|選項|說明|  
 |-------------|-----------------|  
 |**U**|以 Unicode 撰寫重新導向的主控台輸出。  務必要優先指定此選項。|  
 |**OUTPUT:** `<` *檔案名稱* `>`|將輸出重新導向至指定的檔案名稱。|  
@@ -45,7 +43,7 @@ VSPerfMon [/U] </TRACE [/COUNTER:cfg] | /SAMPLE | /COVERAGE> /CROSSSESSION /OUTP
 |**USER:** `[` *網域* `\]` *使用者名稱*|允許用戶端透過指定的帳戶存取監視器。|  
 |**CROSSSESSION**|啟用跨工作階段進行程式碼剖析。|  
 |**COUNTER** `:cfg`|使用檢測 (TRACE) 分析方法時，指定要在每個檢測點收集 CPU 計數器。 您可以指定多個計數器選項，以收集多項計數器資料。<br /><br /> 使用下列語法指定計數器 (*cfg*) 資料：<br /><br /> **CounterName** [**,Reload**[,**FriendlyName**]]<br /><br /> -   **CounterName** 是 VSPerfCmd /QueryCounters 命令傳回的計數器名稱。<br />-   **Reload** 是計數器事件取樣間隔。 請勿搭配檢測方法使用 *Reload*。<br />-   指定之後，**FriendlyName** 會以程式碼剖析工具報表欄名取代 **CounterName**。|  
-|**WINCOUNTER** `:path`|指定要加入標記資料的 Windows 效能計數器。 `path` 是 PDH 計數器路徑格式的 Windows 效能計數器字串。 例如: <br /><br /> \Processor(0)\\% Processor Time<br /><br /> \System\Context Switches/sec|  
+|**WINCOUNTER** `:path`|指定要加入標記資料的 Windows 效能計數器。 `path` 是 PDH 計數器路徑格式的 Windows 效能計數器字串。 例如：<br /><br /> \Processor(0)\\% Processor Time<br /><br /> \System\Context Switches/sec|  
 |**AUTOMARK** `:n`|指定使用 /WINCOUNTER 時自動標記之間的時間間隔 (以毫秒為單位)。 捨入為最接近的 500ms。<br /><br /> 使用 0 即可停用自動標記。 (如果未指定則為預設的 500ms)|  
   
 ## <a name="see-also"></a>另請參閱  

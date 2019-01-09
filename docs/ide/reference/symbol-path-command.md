@@ -2,7 +2,6 @@
 title: 符號路徑命令
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - debug.symbolpath
@@ -16,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 22a27d795e5491081dca98a395c788cf8407e43e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 56e274c103d9bc8d4f80606476c8c6fd4793a8a5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31942766"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53903938"
 ---
 # <a name="symbol-path-command"></a>符號路徑命令
 設定目錄清單，以讓偵錯工具搜尋符號。

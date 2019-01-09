@@ -1,8 +1,6 @@
 ---
 title: Parameter 元素 | Microsoft Docs
-ms.custom: ''
 ms.date: 03/13/2017
-ms.technology: msbuild
 ms.topic: reference
 dev_langs:
 - VB
@@ -19,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d4778923bf6c9e521a7ee26546510466fcfefc83
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8e932b5a49559e77b9d7231d969f8ee78e2b4ec6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49894250"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53820276"
 ---
 # <a name="parameter-element"></a>Parameter 元素
 包含 `UsingTask` `TaskFactory` 所產生之工作的特定參數相關資訊。  元素的名稱是參數的名稱。  如需詳細資訊，請參閱 [UsingTask 元素 (MSBuild)](../msbuild/usingtask-element-msbuild.md)。  
@@ -47,7 +45,7 @@ ms.locfileid: "49894250"
 
 ### <a name="attributes"></a>屬性  
 
-|屬性|描述|  
+|屬性|說明|  
 |---------------|-----------------|  
 |`ParameterType`|選擇性屬性。<br /><br /> 參數的 .NET 型別，例如 `System.String`。|  
 |`Output`|選擇性的 Boolean 屬性。<br /><br /> 如果為 `true`，則此參數是工作的輸出參數。 預設值為 `false`。|  
@@ -58,7 +56,7 @@ ms.locfileid: "49894250"
 
 ### <a name="parent-elements"></a>父元素  
 
-|元素|描述|  
+|元素|說明|  
 |-------------|-----------------|  
 |[ParameterGroup](../msbuild/parametergroup-element.md)|包含選擇性參數清單，將出現在 `UsingTask` `TaskFactory` 所產生的工作中。|  
 

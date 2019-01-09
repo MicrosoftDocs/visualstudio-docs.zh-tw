@@ -1,8 +1,6 @@
 ---
 title: .NET 記憶體資料檢視 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - .NET memory profiling method views
@@ -13,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 516f9addb9dc5ca5f7cc8eac87ec1ce97b0e8415
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 95577c4d346ee635fb44e36c88965d322efee308
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34262253"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53820156"
 ---
 # <a name="net-memory-data-views"></a>.NET 記憶體資料檢視
 本節包含程式碼剖析工具資料檔案的檢視與報告，而此檔案含有 .NET 記憶體程式碼剖析資料。  

@@ -1,8 +1,6 @@
 ---
 title: XDCMake 工作 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - vc.task.xdcmake
@@ -21,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 460d5f68242f232048fec294156f90f49331a21d
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: a830639d8e69a331c2d81c6012d0ea7e6fcfb848
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39231176"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53990186"
 ---
 # <a name="xdcmake-task"></a>XDCMake 工作
 包裝 XML 文件工具 (*xdcmake.exe*)，此工具可將 XML 文件註解 (*.xdc*) 檔案合併至 *.xml* 檔案。  
@@ -39,7 +37,7 @@ ms.locfileid: "39231176"
 ## <a name="parameters"></a>參數  
  下表說明 **XDCMake** 工作的參數。  
   
-|參數|描述|  
+|參數|說明|  
 |---------------|-----------------|  
 |**AdditionalDocumentFile**|選擇性的 **String[]** 參數。<br /><br /> 指定其他一或多個要合併的 *.xdc* 檔案。<br /><br /> 如需詳細資訊，請參閱 [XML 文件產生器工具屬性頁](/cpp/ide/xml-document-generator-tool-property-pages)中的**其他文件檔**描述。 另請參閱 *xdcmake.exe* 的 **/old** 和 **/Fs** 命令列選項。|  
 |**AdditionalOptions**|選擇性的 **String** 參數。<br /><br /> 選項的清單，如命令列上所指定。 例如，/\<option1> /\<option2> /\<option#>。 使用這個參數來指定任何其他 **XDCMake** 工作參數未表示的選項。<br /><br /> 如需詳細資訊，請參閱 [XDCMake 參考](/cpp/ide/xdcmake-reference)、[XML 文件產生器工具屬性頁](/cpp/ide/xml-document-generator-tool-property-pages)，以及 *xdcmake.exe* 的命令列說明 (**/?**)。|  

@@ -1,8 +1,6 @@
 ---
 title: ResolveKeySource 工作 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#ResolveKeySource
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 548fd2182292d9e7fdeac59d09dab2977c351d0b
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 0902bb891d044ab5ad2c657a73f363d8df9e601e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39155525"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53986930"
 ---
 # <a name="resolvekeysource-task"></a>ResolveKeySource 工作
 決定強式名稱金鑰來源。  
@@ -33,7 +31,7 @@ ms.locfileid: "39155525"
 ## <a name="task-parameters"></a>工作參數  
  下表說明 `ResolveKeySource` 工作的參數。  
   
-|參數|描述|  
+|參數|說明|  
 |---------------|-----------------|  
 |`AutoClosePasswordPromptShow`|選擇性的 `Int32` 參數。<br /><br /> 取得或設定顯示倒數計時訊息的時間 (以秒為單位)。|  
 |`AutoClosePasswordPromptTimeout`|選擇性的 `Int32` 參數。<br /><br /> 取得或設定關閉密碼提示對話方塊前的等候時間，以秒為單位。|  

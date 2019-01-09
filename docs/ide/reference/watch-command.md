@@ -2,7 +2,6 @@
 title: Watch 命令
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - debug.watch
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f3226a81e748581cc96b62cb40600864fb9ac805
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: ccc9c6af2a87502c2b651e91f7d935ffc7ae3474
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704456"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53964477"
 ---
 # <a name="watch-command"></a>Watch 命令
 建立並開啟 [監看式]  視窗的指定執行個體。 您可以使用 [監看式] 視窗來計算變數、運算式和暫存器的值，以編輯這些值，以及儲存結果。
@@ -34,7 +33,7 @@ Debug.Watch[index]
 ## <a name="arguments"></a>引數
  `index`
 
- 必要。 監看式視窗的執行個體數目。
+ 必要項。 監看式視窗的執行個體數目。
 
 ## <a name="remarks"></a>備註
  `index` 必須是整數。 有效值為 1、2、3 或 4。
@@ -52,4 +51,4 @@ Debug.Watch[index]
 - [Visual Studio 命令](../../ide/reference/visual-studio-commands.md)
 - [命令視窗](../../ide/reference/command-window.md)
 - [尋找/命令方塊](../../ide/find-command-box.md)
-- [Visual Studio 命令別名](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)

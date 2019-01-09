@@ -2,7 +2,6 @@
 title: -Deploy (devenv.exe)
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 helpviewer_keywords:
 - Devenv, /deploy switch
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0297058fea98568551f54d8960e62f80bb35ccd7
-ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
+ms.openlocfilehash: 9af9d2b51a2421141892c1988cc67b63d1b15e26
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "51948877"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53920640"
 ---
 # <a name="deploy-devenvexe"></a>/Deploy (devenv.exe)
 在建置或重建之後部署方案。 只適用於 受控碼專案。
@@ -34,11 +33,11 @@ devenv SolutionName /deploy SolnConfigName [/project ProjName] [/projectconfig P
 ## <a name="arguments"></a>引數
  `SolnConfigName`
 
- 必要。 將用來建置在 `SolutionName` 中命名之方案的方案組態名稱。
+ 必要項。 將用來建置在 `SolutionName` 中命名之方案的方案組態名稱。
 
  `SolutionName`
 
- 必要。 方案檔的完整路徑和名稱。
+ 必要項。 方案檔的完整路徑和名稱。
 
  /project `ProjName`
 

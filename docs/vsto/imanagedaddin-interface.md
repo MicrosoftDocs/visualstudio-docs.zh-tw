@@ -1,9 +1,6 @@
 ---
 title: IManagedAddin 介面
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ddede8542cda7499a9781c19a6baf1c58acfd125
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b0e754502e3bee2a1e35dda7feb19bc4906f42e6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49839540"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53859051"
 ---
 # <a name="imanagedaddin-interface"></a>IManagedAddin 介面
   實作 IManagedAddin 介面以建立元件，可將 managed VSTO 增益集。2007 Microsoft Office system 中已新增這個介面。  
@@ -73,7 +70,7 @@ interface IManagedAddin : IUnknown
   
 4. 應用程式會呼叫 [IManagedAddin::Load](../vsto/imanagedaddin-load.md) 方法，並傳入 `Manifest` 項目的值。  
   
-5. [IManagedAddin::Load](../vsto/imanagedaddin-load.md) 方法會執行載入 VSTO 增益集所需的工作，例如設定要載入之 VSTO 增益集的應用程式定義域和安全性原則。  
+5.  [IManagedAddin::Load](../vsto/imanagedaddin-load.md) 方法會執行載入 VSTO 增益集所需的工作，例如設定要載入之 VSTO 增益集的應用程式定義域和安全性原則。  
   
    如需有關登錄 Microsoft Office 應用程式用來探索及載入的金鑰管理 VSTO 增益集，請參閱 < [VSTO 增益集的登錄項目](../vsto/registry-entries-for-vsto-add-ins.md)。  
   
@@ -89,5 +86,3 @@ interface IManagedAddin : IUnknown
   
 ## <a name="see-also"></a>另請參閱  
  [Unmanaged API 參考&#40;在 Visual Studio 中的 Office 程式開發&#41;](../vsto/unmanaged-api-reference-office-development-in-visual-studio.md)  
-  
-  

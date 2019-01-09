@@ -2,7 +2,6 @@
 title: 選項對話方塊、環境、索引標籤和視窗
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Environment.TabsAndWindows
@@ -12,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 49230a20bf8279548687d38e1ff3811e0b1730d7
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c729ac6738eb8a09712ee87b64e1bb6f4eee2b1b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31944277"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53903665"
 ---
 # <a name="tabs-and-windows-environment-options-dialog-box"></a>選項對話方塊、環境、索引標籤和視窗
 

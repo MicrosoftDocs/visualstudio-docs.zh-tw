@@ -1,9 +1,7 @@
 ---
 title: 告訴我們
-ms.custom: ''
 ms.date: 10/09/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
 ms.topic: conceptual
 helpviewer_keywords:
 - product support [Visual Studio]
@@ -14,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4c38a74a48dbac190b5f557641e10f54a0413703
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 97063980f22d96a88f0083912e75ca4aa5a33b4f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50671985"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53896602"
 ---
 # <a name="visual-studio-product-feedback"></a>Visual Studio 產品意見反應
 

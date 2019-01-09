@@ -3,19 +3,18 @@ title: 編輯 R 程式碼
 description: Visual Studio 提供針對 R 量身打造的編輯體驗，同時保留所有功能和使用延伸模組的能力。
 ms.date: 11/05/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-rtvs
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: c1d44e6d316db2ddce799784169a11a06578fe7f
-ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
+ms.openlocfilehash: b3191df6ead3454bb138efae2aaf7183cc556d12
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "51220875"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53968361"
 ---
 # <a name="edit-r-code-in-visual-studio"></a>在 Visual Studio 中編輯 R 程式碼
 
@@ -115,7 +114,7 @@ RTVS 提供使用函式參數名稱產生 [Roxygen](http://roxygen.org/) 註解�
 
 [R] > [進階] 索引標籤上的選項為專屬於 RTVS:
 
-| 群組 | 選項 | 預設 | 描述 |
+| 群組 | 選項 | 預設 | 說明 |
 | --- | --- | --- | --- |
 | 格式化 | 自動格式化 | 開啟 | 會在您鍵入時重新格式化程式碼。 不會影響 [格式化選取範圍] 或 [格式化文件] 命令。 |
 | | 展開的大括弧 | Off | 在新的一行放置開始的 {。 |

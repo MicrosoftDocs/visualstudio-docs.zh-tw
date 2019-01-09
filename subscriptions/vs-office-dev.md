@@ -3,18 +3,18 @@ title: Visual Studio 訂用帳戶中的 Office 365 開發人員權益 | Microsof
 author: evanwindom
 ms.author: jaunger
 manager: evelynp
-ms.date: 11/12/2017
+ms.date: 12/19/2018
 ms.topic: Get-Started-Article
 description: 了解 Visual Studio 訂用帳戶中所含的 Office 365 開發人員權益。
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: ae195f8e132ab7d92c48a1bbc6ce04f684abe616
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.openlocfilehash: 4fde2da9c3d03b436614fdf58f3477c33091d1d8
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51758384"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53739717"
 ---
 # <a name="the-office-365-developer-subscription-benefit-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶的 Office 365 開發人員訂用帳戶權益
 
@@ -68,14 +68,19 @@ ms.locfileid: "51758384"
 
 | 訂用帳戶層級                                                 |     通道                                            | 優勢                                                          | 可續約？    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (標準、年度雲端)   | VL, Azure, 零售, 選取的 NFR<sup>1</sup> | 包含      |  [是]          |
-| Visual Studio Professional (標準、年度雲端) | VL, Azure, 零售                                       | 無法使用                                                            |NA         |
+| Visual Studio Enterprise (Standard)   | VL, Azure, 零售, 選取的 NFR<sup>1</sup> | 包含      |  是          |
+| Visual Studio Professional (Standard) | VL, Azure, 零售                                       | 無法使用                                                            |NA         |
 | Visual Studio Test Professional (標準訂用帳戶)                         | VL, 零售                                              | 無法使用                                             |  NA         |
 | MSDN 平台 (標準)                                          | VL, 零售                                              | 無法使用                                              | NA         |
 | Visual Studio Dev Essentials | NA  | 無法使用 |NA |
 | Visual Studio Enterprise、Visual Studio Professional (每月雲端) | Azure                                       | 無法使用                                                           |NA|
 
-<sup>1</sup>  *包含：「禁止轉售 (NFR)」、Visual Studio Industry Partner (VSIP)、FTE、BizSpark、MCT Software & Services Developer、MCT Software & Services。排除：Microsoft 合作夥伴網路 (MPN)、Imagine、Microsoft Valued Professional (MVP)、Region Director (RD)。*
+<sup>1</sup>  *包含：禁止轉售 (NFR)、Visual Studio 產業夥伴 (VSIP)、FTE、BizSpark、MCT Software & Services Developer、MCT Software & Services。排除：Microsoft 合作夥伴網路 (MPN)、Imagine、Microsoft Valued Professional (MVP)、Region Director (RD)。*
+
+
+> [!NOTE]
+> Microsoft 不再於雲端訂用帳戶中提供 Visual Studio Professional 年度訂用帳戶和 Visual Studio Enterprise 年度訂用帳戶。 現有的客戶體驗，以及更新、增加、減少或取消其訂用帳戶的能力將不會改變。 我們鼓勵新的客戶移至 [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) 來探索 Visual Studio 的不同購買選項。
+
 
 不確定您使用哪一個訂用帳戶？  連線到 [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) 以查看指派給您的電子郵件地址的所有訂用帳戶。 若沒有看到您的所有訂用帳戶，可能有一或多個訂用帳戶是指派到不同的電子郵件地址。  您必須以該電子郵件地址登入才能查看對應的訂用帳戶。
 

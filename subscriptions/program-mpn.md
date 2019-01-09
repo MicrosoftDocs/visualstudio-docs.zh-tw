@@ -3,24 +3,24 @@ title: Microsoft 合作夥伴網路 (MPN) 中提供的 Visual Studio 訂用帳�
 author: evanwindom
 ms.author: jaunger
 manager: evelynp
-ms.date: 03/16/2018
+ms.date: 12/19/2018
 ms.topic: Get-Started-Article
 description: 有關提供哪些訂用帳戶、套用哪些規則，以及 MPN 中提供多少訂用帳戶的詳細資料。
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 7175dd503c2e91091b5bb6499fa54c0e5f2586ec
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 72889ca5d206a8f04562b3a91e5d116339279417
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49876761"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53739448"
 ---
 # <a name="visual-studio-subscriptions-offered-to-partners-in-the-microsoft-partner-network-mpn"></a>Microsoft 合作夥伴網路 (MPN) 中提供的 Visual Studio 訂用帳戶
 擁有專長認證或購買 MPN 行動套件的合作夥伴，有資格使用 Visual Studio 訂用帳戶。 這些訂用帳戶是依每位使用者授權，而且只有在指派給為合作夥伴工作的特定具名使用者時才有效。
 
 ## <a name="subscriptions-for-partners-with-an-mpn-competency"></a>具 MPN 專長認證的合作夥伴訂用帳戶
-當合作夥伴獲得專長認證時，無論是銀級或金級，合作夥伴都會獲得 Visual Studio Enterprise 訂用帳戶的核心編號。 如果合作夥伴獲得至少一項金級專長認證，此核心權益即會變更。 Visual Studio Enterprise 訂用帳戶是自訂的供應項目，大致相當於 [Visual Studio Enterprise 年度雲端訂閱](https://visualstudio.microsoft.com/vs/pricing/)，但移除某些權益 (其中有許多是分別提供給合作夥伴當作一般的 MPN 權益，而不是提供 MPN 提供的 Visual Studio Enterprise 訂用帳戶之一部分)。
+當合作夥伴獲得專長認證時，無論是銀級或金級，合作夥伴都會獲得 Visual Studio Enterprise 訂用帳戶的核心編號。 如果合作夥伴獲得至少一項金級專長認證，此核心權益即會變更。 Visual Studio Enterprise 訂用帳戶是自訂的供應項目，大致相當於 [Visual Studio Enterprise 標準訂用帳戶](https://visualstudio.microsoft.com/vs/pricing/)，但移除了某些權益 (其中有許多是分別提供給合作夥伴當作一般的 MPN 權益，而不是作為 MPN 提供之 Visual Studio Enterprise 訂用帳戶的一部分)。
 
 ### <a name="core-visual-studio-benefit-for-earning-at-least-one-competency-of-any-kind"></a>獲得至少一項任何種類專長認證的核心 Visual Studio 權益
 

@@ -1,8 +1,6 @@
 ---
 title: XslTransformation 工作 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 dev_langs:
 - VB
@@ -18,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a18dff58b38dc80eade3ef030b4156b040cc8ce
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: fc005efd13acfa3ea50d3e2cd0d04fc40f89de8c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39233070"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53966086"
 ---
 # <a name="xsltransformation-task"></a>XslTransformation 工作
 使用 XSLT 或已編譯的 XSLT 來轉換 XML 輸入，並輸出到輸出裝置或檔案。  
@@ -31,7 +29,7 @@ ms.locfileid: "39233070"
 ## <a name="parameters"></a>參數  
  下表說明 `XslTransformation` 工作的參數。  
   
-|參數|描述|  
+|參數|說明|  
 |---------------|-----------------|  
 |`OutputPaths`|必要的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 指定 XML 轉換的輸出檔案。|  
 |`Parameters`|選擇性的 `String` 參數。<br /><br /> 指定「XSLT 輸入」文件的參數。|  

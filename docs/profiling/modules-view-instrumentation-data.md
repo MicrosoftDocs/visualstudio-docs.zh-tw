@@ -1,8 +1,6 @@
 ---
 title: 模組檢視 - 檢測資料 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Modules view
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c849971da7681322b15365bc0d59ce8b3529f508
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: a2c5b1d7db173a932de186f67b0f0eb96a6350f5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35256106"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53965982"
 ---
 # <a name="modules-view---instrumentation-data"></a>模組檢視 - 檢測資料
 模組檢視顯示依據分析資料中模組來分組的效能資料。 模組的函式列在模組節點之下。  
@@ -25,7 +23,7 @@ ms.locfileid: "35256106"
 ## <a name="general"></a>一般  
  一般資料行會識別檢視列中的函式。  
   
-|資料行|描述|  
+|資料行|說明|  
 |------------|-----------------|  
 |**名稱**|函式或模組的名稱。|  
 |**函式行號**|原始程式檔中這個函式的開頭行號。|  
@@ -41,7 +39,7 @@ ms.locfileid: "35256106"
 ## <a name="elapsed-inclusive-values"></a>功能內含耗用值  
  功能內含耗用值表示函式在呼叫堆疊上的時間。 該時間包含在子函式中及呼叫作業系統所花費的時間，例如內容切換和輸入/輸出作業。  
   
-|資料行|描述|  
+|資料行|說明|  
 |------------|-----------------|  
 |**功能內含耗用 (Elapsed Inclusive) 時間**|-   對於函式，這是在函式中花費的時間。 此時間包含在子函式中及呼叫作業系統所花費的時間，例如內容切換和輸入/輸出作業。<br />-   對於模組，這是模組中至少有一個函式在呼叫堆疊上的時間。|  
 |**功能內含耗用 (Elapsed Inclusive) 時間 %**|在此模組或函式的總功能內含耗用時間內，花費在分析執行的總功能內含耗用時間百分比。|  
@@ -52,7 +50,7 @@ ms.locfileid: "35256106"
 ## <a name="elapsed-exclusive-values"></a>功能專屬耗用值  
  功能專屬耗用值表示函式直接在呼叫堆疊最上方執行的時間。 該時間包含呼叫作業系統所花費的時間，例如內容切換和輸入/輸出作業，但不包含在子函式中花費的時間。  
   
-|資料行|描述|  
+|資料行|說明|  
 |------------|-----------------|  
 |**功能專屬耗用 (Elapsed Exclusive) 時間**|-   對於函式，這是在模組或函式中花費的時間。 這包含呼叫作業系統 (例如內容切換和輸入/輸出作業) 所花費的時間，但排除在子函式中花費的時間。<br />-   對於模組，這是模組中函式功能專屬耗用時間的總和。|  
 |**功能專屬耗用 (Elapsed Exclusive) 時間 %**|在此模組或函式的總功能專屬耗用時間內，花費在分析執行的總功能專屬耗用時間百分比。|  
@@ -63,7 +61,7 @@ ms.locfileid: "35256106"
 ## <a name="application-inclusive-values"></a>應用程式內含值  
  應用程式內含值表示函數在呼叫堆疊上的時間。 該時間不包含呼叫作業系統所花費的時間，例如內容切換和輸入/輸出作業，但包含在子函式中花費的時間。  
   
-|資料行|描述|  
+|資料行|說明|  
 |------------|-----------------|  
 |**應用程式內含 (Application Inclusive) 時間**|-   對於函式，這是呼叫函式所花費的時間。 這包含在子函式中花費的時間，但排除呼叫作業系統 (例如內容切換和輸入/輸出作業) 的時間。<br />-   對於模組，這是模組中至少有一個函式在呼叫堆疊上的時間。 此時間排除呼叫作業系統所花費的時間。|  
 |**應用程式內含 (Application Inclusive) 時間 %**|在此模組或函式的應用程式內含時間內，花費在分析執行的總功能內含耗用時間百分比。|  
@@ -74,7 +72,7 @@ ms.locfileid: "35256106"
 ## <a name="application-exclusive-values"></a>應用程式專屬值  
  應用程式專屬值表示花費在模組或函式中的時間。 這排除在子函式中花費的時間，同時也排除呼叫作業系統的時間，例如內容切換和輸入/輸出作業。  
   
-|Column|描述|  
+|Column|說明|  
 |------------|-----------------|  
 |**應用程式專屬 (Application Exclusive) 時間**|所有呼叫此模組或函式的總應用程式專屬時間。|  
 |**應用程式專屬 (Application Exclusive) 時間 %**|在此模組或函式的應用程式專屬時間內，花費在分析執行的總功能專屬耗用時間百分比。|  

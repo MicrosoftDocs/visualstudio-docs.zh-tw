@@ -2,7 +2,6 @@
 title: 自訂專案範本和項目範本
 ms.date: 01/02/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - customizing templates [Visual Studio]
@@ -10,12 +9,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 451885aca46addf663d0e3a3ae9768f7d0f0cdba
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 8f52a948158ec4a48ee3c521c04c65f875156823
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53051752"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53864526"
 ---
 # <a name="customize-project-and-item-templates"></a>自訂專案和項目範本
 

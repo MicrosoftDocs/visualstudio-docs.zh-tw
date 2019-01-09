@@ -1,8 +1,6 @@
 ---
 title: 封鎖時間分析報表 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.cv.threads.report.blocking
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 93288759ebcea6fd88777feeb1764ac41c57acc4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4621170ba1ab37ef22bf8a2a974d01d36ddfb705
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49865780"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53946418"
 ---
 # <a name="blocking-time-profile-report"></a>封鎖時間分析報表
 分析報表提供每個封鎖類別 (例如 "I/O" 或「同步處理」) 特定之呼叫堆疊的彙總封鎖時間資料 。 先佔報表列出先佔用目前處理序的處理序，以及先佔執行個體的數目。 為建置封鎖分析報表，此工具會收集封鎖的 API 呼叫，並將它們累積成呼叫堆疊的樹狀目錄。 這些報表中所顯示的資料會依據目前的時間範圍、隱藏的執行緒以及下列兩個可套用的篩選而不同︰  
@@ -33,7 +31,7 @@ ms.locfileid: "49865780"
 ## <a name="blocking-time-report-columns"></a>封鎖時間報表資料行  
  下表顯示每個封鎖時間報表的資料行。  
   
-|資料行名稱|描述|  
+|資料行名稱|說明|  
 |-----------------|-----------------|  
 |**名稱**|每個層級的呼叫堆疊的函式名稱。|  
 |**執行個體**|顯示的時間週期內封鎖呼叫的執行個體數目。|  

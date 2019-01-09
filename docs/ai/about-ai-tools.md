@@ -9,15 +9,14 @@ ms.date: 11/13/2017
 ms.topic: conceptual
 ms.devlang: multiple
 ms.service: multiple
-ms.technology: vs-ai-tools
 ms.workload:
 - multiple
-ms.openlocfilehash: e0377417da5859e38c46f99b3b335ba627261cb5
-ms.sourcegitcommit: 551f13774e8bb0eb47cbd973745628a956e866aa
+ms.openlocfilehash: bb68e1b7b109b762f11410194076ab2b2eb30bb5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2018
-ms.locfileid: "49459688"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53908549"
 ---
 # <a name="visual-studio-tools-for-ai"></a>Visual Studio Tools for AI
 

@@ -2,7 +2,6 @@
 title: 尋找命令方塊
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - vs.findcommandbox
@@ -13,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c5e11d83ea0c87bae058f5421c424922fa389a9c
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 91546caa5136fbcd31dabcaa9294ccd8056e6750
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34752407"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53866786"
 ---
 # <a name="findcommand-box"></a>尋找/命令方塊
 
@@ -36,7 +35,7 @@ ms.locfileid: "34752407"
 
 ## <a name="entering-commands"></a>輸入命令
 
-若要使用 [尋找/命令] 方塊來發出單一 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 命令或別名，而不是搜尋文字，請在命令前面加上大於 (**>**) 符號。 例如: 
+若要使用 [尋找/命令] 方塊來發出單一 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 命令或別名，而不是搜尋文字，請在命令前面加上大於 (**>**) 符號。 例如：
 
 ```
 >File.NewFile c:\temp\MyFile /t:"General\Text File"
@@ -46,7 +45,7 @@ ms.locfileid: "34752407"
 
 ## <a name="escape-characters"></a>逸出字元
 
-命令中的插入號 (**^**) 字元表示緊接著的字元會解譯為常值字元，而不是控制字元。 這可用來在參數或參數的值中嵌入一般引號 (**"**)、空格、前置斜線、插入號或任何其他常值字元，但參數名稱除外。 例如: 
+命令中的插入號 (**^**) 字元表示緊接著的字元會解譯為常值字元，而不是控制字元。 這可用來在參數或參數的值中嵌入一般引號 (**"**)、空格、前置斜線、插入號或任何其他常值字元，但參數名稱除外。 例如：
 
 ```
 >Edit.Find ^^t /regex

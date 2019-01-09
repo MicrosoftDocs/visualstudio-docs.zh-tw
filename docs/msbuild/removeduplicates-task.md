@@ -1,8 +1,6 @@
 ---
 title: RemoveDuplicates 工作 | Microsoft Docs
-ms.custom: ''
 ms.date: 03/01/2018
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#RemoveDuplicates
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b121090196b5b9222799cdcce4e4f9af096e483f
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: b11ac8c615bce56e4dc1a0299076ef36e1b6b373
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39153068"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53831871"
 ---
 # <a name="removeduplicates-task"></a>RemoveDuplicates 工作
 從指定的項目集合中移除重複項目。  
@@ -33,7 +31,7 @@ ms.locfileid: "39153068"
 ## <a name="parameters"></a>參數  
  下表說明 `RemoveDuplicates` 工作的參數。  
   
-|參數|描述|  
+|參數|說明|  
 |---------------|-----------------|  
 |`Filtered`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 輸出參數。<br /><br /> 包含已移除所有重複項目的項目集合。 系統會保存輸入項目的順序，保留每個重複項目的第一個執行個體。|  
 |`Inputs`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 要從中移除重複項目的項目集合。|  

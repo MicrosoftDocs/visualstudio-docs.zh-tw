@@ -2,7 +2,6 @@
 title: 快速動作、燈泡及螺絲起子
 ms.date: 03/28/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
@@ -12,12 +11,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 7089a9a654d1c346fefcca119f74a87d89f323b8
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: cad90eeea8f4fccb3a331fc3c41d072e03dca80c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349370"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53904665"
 ---
 # <a name="quick-actions"></a>快速動作
 

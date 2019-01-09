@@ -2,19 +2,18 @@
 title: 使用自動程式化 UI 測試來測試 SharePoint 應用程式
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 91d17857f1d20508041ad6c5daa90a962d6d30e6
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 32b408743a2017b6fe83c28659496844b204444f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895440"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53910176"
 ---
 # <a name="test-sharepoint-applications-with-coded-ui-tests"></a>使用自動程式化 UI 測試來測試 SharePoint 應用程式
 
@@ -51,7 +50,7 @@ ms.locfileid: "52895440"
 > [!WARNING]
 > 若在任何 Excel 儲存格中輸入文字，後面接著方向鍵動作，則這類動作無法正確錄製。 使用滑鼠選取儲存格。
 
-如果您錄製空儲存格上的動作，則必須按兩下儲存格然後執行一組文字作業，藉此修改程式碼。 由於在儲存格中按一下，然後接著任何鍵盤動作都會啟動儲存格內的 `textarea`，因此必須這樣做。 僅錄製空儲存格上的 `setvalue` 會搜尋 `editbox` ，但是在按下儲存格之前它並不存在。 例如: 
+如果您錄製空儲存格上的動作，則必須按兩下儲存格然後執行一組文字作業，藉此修改程式碼。 由於在儲存格中按一下，然後接著任何鍵盤動作都會啟動儲存格內的 `textarea`，因此必須這樣做。 僅錄製空儲存格上的 `setvalue` 會搜尋 `editbox` ，但是在按下儲存格之前它並不存在。 例如：
 
 ```csharp
 Mouse.DoubliClick(uiItemCell,new Point(31,14));

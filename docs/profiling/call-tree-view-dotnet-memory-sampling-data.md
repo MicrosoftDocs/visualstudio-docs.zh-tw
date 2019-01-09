@@ -1,8 +1,6 @@
 ---
 title: 呼叫樹狀圖檢視 - .NET 記憶體取樣資料 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Call Tree view
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: c3c7c70057380289272e86cf7187680746dafdd2
-ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
+ms.openlocfilehash: 7f8e2e6e480bb082c0f60bd94a06b28ea12c268b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2018
-ms.locfileid: "34336041"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53988267"
 ---
 # <a name="call-tree-view---net-memory-sampling-data"></a>呼叫樹狀圖檢視 - .NET 記憶體取樣資料
 [呼叫樹狀圖] 檢視顯示在分析的應用程式中周遊的函式執行路徑。 樹狀圖的根是應用程式或元件的進入點。 每個函式節點都會列出它所呼叫的所有函式，以及這些函式呼叫的 .NET 記憶體配置資料。  
@@ -32,7 +30,7 @@ ms.locfileid: "34336041"
   
  設定根節點時，除了所選取節點的樹狀子目錄以外，請從檢視中排除所有其他的項目。 您可以將根節點重設回所檢視的節點，並以滑鼠右鍵按一下 [呼叫樹狀圖檢視] 視窗，然後選取 [重設根目錄]。  
   
-|資料行|描述|  
+|資料行|說明|  
 |------------|-----------------|  
 |**處理序 ID**|分析執行的處理序 ID (PID)。|  
 |**處理序名稱**|處理序的名稱。|  

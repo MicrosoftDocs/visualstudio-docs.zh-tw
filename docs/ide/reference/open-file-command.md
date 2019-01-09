@@ -2,7 +2,6 @@
 title: 開啟檔案命令
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - file.openfile
@@ -16,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4be55cb2108b24c7a8f912844b719e6aa3135a06
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: b5ade09e52db37b64f2bbd36af6f7f9dd67f3c89
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37923992"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53902626"
 ---
 # <a name="open-file-command"></a>開啟檔案命令
 
@@ -37,7 +36,7 @@ File.OpenFile filename [/e:editorname]
 
 `filename`
 
-必要。 要開啟之檔案的完整或部分路徑和檔名。 包含空格的路徑必須包含在引號中。
+必要項。 要開啟之檔案的完整或部分路徑和檔名。 包含空格的路徑必須包含在引號中。
 
 ## <a name="switches"></a>參數
 

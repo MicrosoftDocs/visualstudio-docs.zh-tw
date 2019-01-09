@@ -2,7 +2,6 @@
 title: 參數資訊、列出成員和快速諮詢
 ms.date: 05/25/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - vc.tools.intellisense
@@ -17,16 +16,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e00b43f1705079a86d511239d7b38119868d8f4
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 2adb067377ac417073785df63d68e51040752218
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34748471"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53953072"
 ---
 # <a name="intellisense-in-visual-studio"></a>Visual Studio 中的 Intellisense
 
-IntelliSense 是包含一些功能的程式碼完成輔助工具：列出成員、參數資訊、快速諮詢和自動完成文字。 這些功能有助於深入了解您使用的程式碼、追蹤所鍵入的參數，以及幾個按鍵即可新增屬性和方法呼叫。
+IntelliSense 是包含數項功能的程式碼完成功能輔助工具：列出成員、參數資訊、快速諮詢和自動完成文字。 這些功能有助於深入了解您使用的程式碼、追蹤所鍵入的參數，以及幾個按鍵即可新增屬性和方法呼叫。
 
 IntelliSense 的許多方面是特定語言專屬的。 如需不同語言之 IntelliSense 的詳細資訊，請參閱[另請參閱](#see-also)小節中所列的主題。
 
@@ -54,7 +53,7 @@ IntelliSense 的許多方面是特定語言專屬的。 如需不同語言之 In
 
 ![參數資訊](../ide/media/vs2015_param_info.png)
 
-當您以 XML 文件註解來標註函式和參數時，這些註解將會顯示成 [參數資訊]。 如需詳細資訊，請參閱[提供 XML 程式碼註解](../ide/supplying-xml-code-comments.md)。
+當您以 XML 文件註解來標註函式和參數時，這些註解將會顯示成 [參數資訊]。 如需詳細資訊，請參閱[提供 XML 程式碼註解](reference/generate-xml-documentation-comments.md)。
 
 您可以選擇 [編輯] > [IntelliSense] > [參數資訊]、按 **Ctrl**+**Shift**+**空格鍵**，或選擇編輯器工具列上的 [參數資訊] 按鈕，手動叫用 [參數資訊]。
 
@@ -104,4 +103,4 @@ MessageBox( hWnd, "String literal|")
 - [C# IntelliSense](../ide/visual-csharp-intellisense.md)
 - [JavaScript IntelliSense](../ide/javascript-intellisense.md)
 - [撰寫和重構程式碼 (C++)](/cpp/ide/writing-and-refactoring-code-cpp)
-- [提供 XML 程式碼註解](../ide/supplying-xml-code-comments.md)
+- [提供 XML 程式碼註解](reference/generate-xml-documentation-comments.md)

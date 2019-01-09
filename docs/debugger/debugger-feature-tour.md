@@ -3,7 +3,6 @@ title: VS 2017 偵錯使用者入門
 description: 使用 Visual Studio 偵錯工具開始偵錯應用程式
 ms.custom: mvc
 ms.date: 06/15/2018
-ms.technology: vs-ide-debug
 ms.topic: quickstart
 helpviewer_keywords:
 - debugger
@@ -13,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d5c479251b7002e506f1dff5e64a028875aa8f80
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: cf7bcba0ceaa71b933d4875cd5eee28d7cea0028
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49882662"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53904964"
 ---
 # <a name="first-look-at-the-visual-studio-debugger"></a>Visual Studio 偵錯工具初探
 
@@ -215,7 +214,7 @@ F10 鍵會推進偵錯工具，而不需要逐步執行應用程式程式碼中�
 
 ## <a name="next-steps"></a>後續步驟
 
-在本教學課程中，您已快速瀏覽過許多偵錯工具功能。 建議您使用應用程式範例來更深入了解這些功能
+在本教學課程中，您已快速瀏覽過許多偵錯工具功能。 建議您深入了解這些功能，例如中斷點。
 
 > [!div class="nextstepaction"]
-> [了解使用 Visual Studio 進行偵錯](../debugger/getting-started-with-the-debugger.md)
+> [了解如何使用中斷點](../debugger/using-breakpoints.md)

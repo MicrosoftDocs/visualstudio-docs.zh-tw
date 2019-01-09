@@ -1,9 +1,7 @@
 ---
 title: 使用 IntelliTrace 檢視快照集
 description: 使用 IntelliTrace 回溯檢查歷程記錄應用程式狀態
-ms.custom: ''
 ms.date: 09/20/2018
-ms.technology: vs-ide-debug
 ms.topic: quickstart
 helpviewer_keywords:
 - IntelliTrace step-back
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e262dc4b5b141bb5e02ed58854f55e879f39a07e
-ms.sourcegitcommit: a749c287ec7d54148505978e8ca55ccd406b71ee
+ms.openlocfilehash: ebaacc2b3d90821605c804bec390c887a27cec0b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46542596"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53915571"
 ---
 # <a name="view-snapshots-with-intellitrace-step-back-visual-studio-enterprise"></a>使用 IntelliTrace 回溯檢視快照集 (Visual Studio Enterprise)
 
@@ -25,6 +23,6 @@ ms.locfileid: "46542596"
 
 您可以使用[偵錯] 工具列的 [逐步返回] 和 [逐步前進] 按鈕，來巡覽及檢視快照集。 這些按鈕可巡覽出現在 [診斷工具] 視窗之 [事件] 索引標籤中的事件。
 
-![逐步返回和逐步前進按鈕](../debugger/media/intellitrace-step-back-icons-description.png  "逐步返回和逐步前進按鈕")
+![[逐步返回] 和 [逐步前進] 按鈕](../debugger/media/intellitrace-step-back-icons-description.png  "[逐步返回] 和 [逐步前進] 按鈕")
 
 如需詳細資訊，請參閱[使用 IntelliTrace 回溯檢查先前的應用程式狀態](../debugger/view-historical-application-state.md)。

@@ -3,7 +3,6 @@ title: 建立 UI - Blend for Visual Studio
 titleSuffix: ''
 ms.date: 07/17/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 f1_keywords:
 - Blend.Start.Dev12
@@ -12,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 76743674ef4e92f2ad52be108c1dafb8d942676c
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: b44f49c08be44ec16cbd90d06cef96cb091e67f6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53059856"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53934501"
 ---
 # <a name="creating-a-ui-by-using-blend-for-visual-studio"></a>使用 Blend for Visual Studio 建立 UI
 

@@ -1,8 +1,6 @@
 ---
 title: 空白時間表區段 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.cv.threads.timeline.empty
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ad8d87c0574ac2c7671012fff6a81a568d6bff5f
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: a3411de6fbc4d30f3b8dcb3dbe7a8eeba12e8ad9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34764526"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53959363"
 ---
 # <a name="empty-timeline-segment"></a>空白時間表區段
 在並行視覺化檢視中，時間表區段空白 (具有白色背景) 的原因取決於通道的類型。  

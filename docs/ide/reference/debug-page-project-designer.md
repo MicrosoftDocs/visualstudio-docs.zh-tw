@@ -2,7 +2,6 @@
 title: 專案設計工具、偵錯頁
 ms.date: 06/27/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - vb.ProjectPropertiesDebug
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e7bc849a48161fdf1763517f90514dfb464b74e
-ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
+ms.openlocfilehash: f383701017e9fb830333f7a9869aac99684333a6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37090019"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53848255"
 ---
 # <a name="debug-page-project-designer"></a>專案設計工具、偵錯頁
 
@@ -85,8 +84,8 @@ ms.locfileid: "37090019"
 
 ## <a name="see-also"></a>另請參閱
 
-- [Visual Studio 偵錯](../../debugger/debugging-in-visual-studio.md)
+- [Visual Studio 偵錯](../../debugger/debugger-feature-tour.md)
 - [C# 偵錯組態的專案設定](../../debugger/project-settings-for-csharp-debug-configurations.md)
 - [Visual Basic 偵錯組態的專案設定](../../debugger/project-settings-for-a-visual-basic-debug-configuration.md)
-- [如何：以限制使用權限偵錯 ClickOnce 應用程式](../../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)
-- [如何：建立和編輯組態](../../ide/how-to-create-and-edit-configurations.md)
+- [如何：以受限制的權限針對 ClickOnce 應用程式進行偵錯](../../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)
+- [如何：建立及編輯組態](../../ide/how-to-create-and-edit-configurations.md)

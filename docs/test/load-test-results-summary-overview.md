@@ -15,13 +15,12 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 3f5187aabeb0c8e2ef81b0c6b6883b96590d7005
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 70447148922382cef3e5c3fb9b7ba24613033c35
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53062605"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53834291"
 ---
 # <a name="load-test-results-summary-overview"></a>負載測試結果摘要概觀
 

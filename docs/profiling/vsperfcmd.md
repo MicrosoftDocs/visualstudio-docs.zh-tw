@@ -1,8 +1,6 @@
 ---
 title: VSPerfCmd | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - performance tools, VSPerfCmd tool
@@ -16,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 23abc362b3c91579585272e4ebf1b190cab55dde
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: ab432c5dfe316dc540fdfe6937263bc12abc967c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44320978"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53990421"
 ---
 # <a name="vsperfcmd"></a>VSPerfCmd
 *VSPerfCmd.exe* 工具的用途是啟動及停止效能資料收集。 其使用下列語法：  
@@ -32,7 +30,7 @@ VSPerfCmd [/U] [/options]
   
  下表說明 *VSPerfCmd.exe* 工具選項。  
   
-|選項|描述|  
+|選項|說明|  
 |------------|-----------------|  
 |**U**|以 Unicode 撰寫重新導向的主控台輸出。 務必優先指定此選項。|  
 |[Start](../profiling/start.md) **:** `mode`|以指定的模式啟動分析服務。|  
@@ -53,24 +51,24 @@ VSPerfCmd [/U] [/options]
 |[ProcessOff](../profiling/processon-and-processoff.md) **:** `pid`|停止指定處理序的資料收集。|  
 |[ThreadOn 與 ThreadOff](../profiling/threadon-and-threadoff.md) **:** *tid*|在對 **VSPerfCmdThreadOff** 的呼叫暫停分析後，恢復指定處理序的分析。 請只在使用檢測方法進行分析時使用 **ThreadOn**。|  
 |[ThreadOn 與 ThreadOff](../profiling/threadon-and-threadoff.md) **:** *tid*|暫停指定執行緒的分析。 請只在使用檢測方法進行分析時使用 **ThreadOff**。|  
-|[Mark](../profiling/mark.md) **:** _MarkNum_[**,**_MarkText_**]**|在分析資料檔案中插入標記，以及選擇性文字。|  
+|[Mark](../profiling/mark.md) **:**_MarkNum_[**,**_MarkText_**]**|在分析資料檔案中插入標記，以及選擇性文字。|  
   
 ## <a name="sample-method-options"></a>取樣方法選項  
  只有在使用取樣分析方法時，才能使用下列選項。  
   
-|選項|描述|  
+|選項|說明|  
 |------------|-----------------|  
-|[Launch](../profiling/launch.md) **:** *Executable*|啟動指定的應用程式並開始分析。|  
-|[Args](../profiling/args.md) **:** *Arguments*|指定要傳遞給啟動應用程式的命令列引數。|  
+|[Launch](../profiling/launch.md) **:***可執行檔*|啟動指定的應用程式並開始分析。|  
+|[Args](../profiling/args.md) **:***引數*|指定要傳遞給啟動應用程式的命令列引數。|  
 |[Console](../profiling/console.md)|在新的命令提示字元視窗啟動指定的命令。|  
-|[Attach](../profiling/attach.md) **:** *PID*[**,**_PID_]|開始分析指定的處理序。 處理序可依處理序識別碼或處理序名稱識別。|  
+|[Attach](../profiling/attach.md) **:***PID*[**,**_PID_]|開始分析指定的處理序。 處理序可依處理序識別碼或處理序名稱識別。|  
 |[Detach](../profiling/detach.md)[**:**_PID_[,_PID_]]|停止分析指定的處理序。 處理序可依處理序識別碼或處理序名稱識別。 如果未指定任何處理序，所有處理序的分析都會停止。|  
 |[GC](../profiling/gc-vsperfcmd.md)[**:**{**Allocation**`&#124;`**Lifetime**}]|收集 .NET 記憶體配置和物件存留期資料。 只能搭配 **VSPerfCmdLaunch** 選項使用。|  
   
 ### <a name="sample-interval-options"></a>取樣間隔選項  
  下列選項會指定取樣間隔的類型和持續時間。 預設為 **Timer**。 您也可以使用 **Counter** 選項，將 CPU 計數器指定為間隔。 這些選項只能搭配 **Launch** 或分析工作階段的第一個 **Attach** 指定。  
   
-|選項|描述|  
+|選項|說明|  
 |------------|-----------------|  
 |[PF](../profiling/pf.md)[**:**_n_]|在遇到每第 n 個分頁錯誤時取樣 (預設=10)。|  
 |[Sys](../profiling/sys-vsperfcmd.md)[**:**_n_]|在遇到每第 n 個系統呼叫時取樣 (預設=10)。|  
@@ -81,15 +79,15 @@ VSPerfCmd [/U] [/options]
   
  Admin 選項必須在使用系統管理認證執行的命令提示字元執行。  
   
-|選項|描述|  
+|選項|說明|  
 |------------|-----------------|  
 |**Admin:Security**, \<**ALLOW&#124;DENY**>, *Right*[ *Right*], \<*User*&#124;*Group*>|允許或拒絕指定的使用者或群組存取分析服務。<br /><br /> `Right` 可以是：<br /><br /> CrossSession - 將服務存取權提供給使用者，以進行交叉工作階段分析。<br /><br /> SampleProfiling - 將驅動程式存取權提供給使用者，以進行取樣分析。 也可用來在追蹤分析期間存取核心轉換資訊。<br /><br /> FullAccess - 將 CrossSession 和 SampleProfiling 存取權都提供給使用者。|  
 |**Admin:Security, List**|列出分析服務的目前狀態，並列出使用者權限。|  
-|**Admin:** \<*Service*&#124;*Driver*>\<**START**&#124;**STOP**&#124;**INSTALL**&#124;**UNINSTALL**>|啟動、停止、安裝或解除安裝分析服務元件 (service) 或核心模式裝置驅動程式 (driver)。|  
-|**Admin:** \<*Service*&#124;*Driver*>**AutoStart**\<**ON**&#124;**OFF**>|啟用或停用在重新開機後自動啟動分析服務 (service) 或核心模式裝置驅動程式 (driver)。|  
+|**Admin:**\<*Service*&#124;*Driver*>\<**START**&#124;**STOP**&#124;**INSTALL**&#124;**UNINSTALL**>|啟動、停止、安裝或解除安裝分析服務元件 (service) 或核心模式裝置驅動程式 (driver)。|  
+|**Admin:**\<*Service*&#124;*Driver*>**AutoStart**\<**ON**&#124;**OFF**>|啟用或停用在重新開機後自動啟動分析服務 (service) 或核心模式裝置驅動程式 (driver)。|  
   
 ## <a name="vsperfcmd-driver"></a>VSPerfCmd /Driver  
- **VSPerfCmd /Driver** 選項現已淘汰。 請對這個功能使用 **VsPerfCmdAdmin** 選項。  
+ **VSPerfCmd /Driver** 選項現已淘汰。 請針對這個功能用 **VsPerfCmd Admin** 選項。  
   
 ## <a name="see-also"></a>另請參閱  
  [VSInstr](../profiling/vsinstr.md)   

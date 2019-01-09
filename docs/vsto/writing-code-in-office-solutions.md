@@ -91,7 +91,7 @@ ms.locfileid: "53942969"
  若要變更 Visual C# Office 專案中的主項目命名空間，請使用 [主項目命名空間]  屬性。 如需詳細資訊，請參閱 < [Office 專案中的屬性](../vsto/properties-in-office-projects.md)。
 
 ## <a name="supported-programming-languages-in-office-projects"></a>Office 專案中支援的程式設計語言
- Visual Studio 中的 Office 專案範本只支援 Visual Basic 和 Visual C# 程式設計語言。 因此，這些專案範本只位於 **中，[新增專案]****對話方塊的 [Visual Basic]****和 [Visual C#]**[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]節點。 如需詳細資訊，請參閱[＜How to：在 Visual Studio 中建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)。
+ Visual Studio 中的 Office 專案範本只支援 Visual Basic 和 Visual C# 程式設計語言。 因此，這些專案範本只位於 **中，[新增專案]** **對話方塊的 [Visual Basic]** **和 [Visual C#]** [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]節點。 如需詳細資訊，請參閱[＜How to：在 Visual Studio 中建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)。
 
 ## <a name="language-choice-and-office-programming"></a>語言選擇與 Office 程式設計
  Microsoft Office 和 Visual Basic for Applications (VBA) 是開發來協同運作以最佳化應用程式自訂的工作流程。 Visual Basic 繼承了一些開發。 例如，Visual Basic 支援選擇性參數，這表示在呼叫 Microsoft Office 主要 Interop 組件中的一些方法時，您可以比使用 Visual C# 撰寫較少程式碼。

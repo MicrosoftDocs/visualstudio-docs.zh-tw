@@ -2,7 +2,6 @@
 title: XAML 設計工具選項頁面
 ms.date: 03/02/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.XAMLDesigner
@@ -11,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 52691c0b49c74bd39fa97ec8d297ffb823ba705c
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: d8dc2ff0f0bc010dd225372c0c96badd9251eae8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388357"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53964295"
 ---
 # <a name="xaml-designer-options-page"></a>XAML 設計工具選項頁面
 

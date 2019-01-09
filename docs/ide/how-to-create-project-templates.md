@@ -2,7 +2,6 @@
 title: 建立專案範本
 ms.date: 01/02/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - VS.ExportTemplateWizard
@@ -11,12 +10,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 5cb90ea6f1e404d65ac3c375f49e77dd02c6711c
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: d0d15d4f3836ca1ccfdc800ad4805ed7691e4454
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53066911"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53990223"
 ---
 # <a name="how-to-create-project-templates"></a>HOW TO：建立專案範本
 

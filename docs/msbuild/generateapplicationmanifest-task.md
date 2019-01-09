@@ -1,8 +1,6 @@
 ---
 title: GenerateApplicationManifest 工作 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#GenerateApplicationManifest
@@ -21,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9526c2c62d9ace81127c61ef313cf55971fc1692
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 54f3739795b5fb3257ba82c52bf9f9df7edaa62b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49888875"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53900687"
 ---
 # <a name="generateapplicationmanifest-task"></a>GenerateApplicationManifest 工作
 產生 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式資訊清單或原生資訊清單。 原生資訊清單在描述元件時，會定義元件的唯一身分識別，並識別組成元件的所有組件和檔案。 透過指出應用程式的進入點並指定應用程式的安全性層級之後，[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式資訊清單就可以擴充原生資訊清單。  
@@ -35,7 +33,7 @@ ms.locfileid: "49888875"
  下表說明 `GenerateApplicationManifest` 工作的參數。  
 
 
-| 參數 | 描述 |
+| 參數 | 說明 |
 |---------------------------------| - |
 | `AssemblyName` | 選擇性的 `String` 參數。<br /><br /> 針對產生的資訊清單指定組件識別的 `Name` 欄位。 如果未指定此參數，會從 `EntryPoint` 或 `InputManifest` 參數來推斷名稱。 如果無法建立名稱，工作便會擲回錯誤。 |
 | `AssemblyVersion` | 選擇性的 `String` 參數。<br /><br /> 針對產生的資訊清單指定組件識別的 `Version` 欄位。 如果未指定此參數，就會使用 "1.0.0.0" 的預設值。 |
@@ -76,7 +74,7 @@ ms.locfileid: "49888875"
 
 ## <a name="item-metadata"></a>項目中繼資料  
 
-|中繼資料名稱|描述|  
+|中繼資料名稱|說明|  
 |-------------------|-----------------|  
 |`DependencyType`|指出相依性是以應用程式或必要條件進行發行和安裝。 這項中繼資料可用於所有相依性，但不能用於檔案。 此中繼資料可用的值如下：<br /><br /> -   `Install`<br />-   `Prerequisite`<br /><br /> Install 是預設值。|  
 |`AssemblyType`|指出相依性為 Managed 或原生組件。 這項中繼資料可用於所有相依性，但不能用於檔案。 此中繼資料可用的值如下：<br /><br /> -   `Managed`<br />-   `Native`<br />-   `Unspecified`<br /><br /> `Unspecified` 是預設值，表示資訊清單產生器將會自動決定組件類型。|  

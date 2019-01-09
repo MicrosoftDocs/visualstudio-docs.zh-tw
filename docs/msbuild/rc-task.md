@@ -1,8 +1,6 @@
 ---
 title: RC 工作 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - VC.Project.VCResourceCompilerTool.UndefineProcessorDefinitions
@@ -24,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0db327943dcaf9b14a921cf4437b6c23874b4380
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 156de08e8bd0ed2a8cadd0653facfa99d352cb20
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219428"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53915584"
 ---
 # <a name="rc-task"></a>RC 工作
 包裝 Microsoft Windows 資源編譯器工具 (*rc.exe*)。 **RC** 工作會將游標、圖示、點陣圖、對話方塊和字型等資源編譯為資源 (*.res*) 檔案。 如需詳細資訊，請參閱[資源編譯器](https://docs.microsoft.com/windows/desktop/menurc/resource-compiler) \(英文\)。
@@ -37,7 +35,7 @@ ms.locfileid: "50219428"
 ## <a name="parameters"></a>參數  
  下表說明 RC 工作的參數。 大部分的工作參數以及數組參數會對應到命令列選項。  
   
-|參數|描述|  
+|參數|說明|  
 |---------------|-----------------|  
 |**AdditionalIncludeDirectories**|選擇性的 **String[]** 參數。<br /><br /> 將目錄加入至要搜尋 include 檔案的目錄清單。<br /><br /> 如需詳細資訊，請參閱[使用 RC (RC 命令列)](http://go.microsoft.com/fwlink/?LinkId=155730) \(英文\) 中的 **/I** 選項。|  
 |**AdditionalOptions**|選擇性的 **String** 參數。<br /><br /> 命令列選項清單，例如 /\<option1> /\<option2> /\<option#>。 使用此參數，來指定任何其他 **RC** 工作參數未表示的命令列選項。<br /><br /> 如需詳細資訊，請參閱[使用 RC (RC 命令列)](http://go.microsoft.com/fwlink/?LinkId=155730) \(英文\) 中的選項。|  

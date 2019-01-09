@@ -1,8 +1,6 @@
 ---
 title: 資源爭用檢視 - 爭用資料 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.view.resourcecontention
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e33a27d5f2b14effc9d8a90e903b34822d81edfb
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 662ae2c4b96320dda0d3f9f4efb350ed0e61be0f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31584135"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53870504"
 ---
 # <a name="resource-contentions-view---contention-data"></a>資源爭用檢視 - 爭用資料
 資源爭用檢視列出爭用事件來源的資源爭用資料。 因為另一個執行緒中的函式已取得資源的獨佔存取權，所以會強制執行緒中的函式等候存取資源，而發生爭用事件。 每項資源都是呼叫樹狀圖的根節點，會顯示導致爭用事件的函式執行路徑。  
@@ -41,7 +39,7 @@ ms.locfileid: "31584135"
   
 ## <a name="navigating-the-resource-allocation-view"></a>巡覽資源分派檢視  
   
-|資料行|描述|  
+|資料行|說明|  
 |------------|-----------------|  
 |**名稱**|資源或函式的名稱。|  
 |**專有封鎖時間**|-   對於資源，是指遭到封鎖而無法存取資源並導致執行緒等候的總時間。<br />-   對於函式，是指當函式在執行函式主體中的程式碼時，這些函式執行個體遭到封鎖而無法存取父資源的時間。 不包括由該函式所呼叫函式的封鎖時間。|  

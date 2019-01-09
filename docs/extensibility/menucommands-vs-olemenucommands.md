@@ -1,8 +1,6 @@
 ---
 title: MenuCommand 對比OleMenuCommands |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - commands, creating in VSPackages
@@ -10,12 +8,12 @@ helpviewer_keywords:
 - menus, creating commands
 ms.assetid: 553d5e07-3e19-4aba-b490-6c7dd05fd82e
 manager: douge
-ms.openlocfilehash: 0fbe8ea2a78eae02cb7e0d390da49eafe55e75ee
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3b33d84f62db9cfe1371ffc540830f63d93e67d1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49888953"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53926235"
 ---
 # <a name="menucommands-vs-olemenucommands"></a>MenuCommand 對比OleMenuCommand
 您可以藉由衍生自建立功能表命令<xref:System.ComponentModel.Design.MenuCommand>或從<xref:Microsoft.VisualStudio.Shell.OleMenuCommand>物件，並實作適當的事件處理常式。 在大多數情況下，您可以使用 <xref:System.ComponentModel.Design.MenuCommand>，就如同 VSPackage 專案範本一樣，但有時候您可能需要使用 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand>。  
@@ -183,7 +181,7 @@ ms.locfileid: "49888953"
   
     `EventHandler` 物件會得到在查詢功能表命令的狀態時所呼叫之方法的名稱。  
   
-2. 實作命令的查詢狀態處理常式方法。 `object` `sender` 參數可以轉換成 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> 物件，用來設定功能表命令的各種屬性，包括文字。 下表顯示 <xref:System.ComponentModel.Design.MenuCommand> 類別上的屬性 (MPF 類別 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> 衍生自此類別)，這些屬性對應至 <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> 旗標。  
+2. 實作命令的查詢狀態處理常式方法。  `object` `sender` 參數可以轉換成 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> 物件，用來設定功能表命令的各種屬性，包括文字。 下表顯示 <xref:System.ComponentModel.Design.MenuCommand> 類別上的屬性 (MPF 類別 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> 衍生自此類別)，這些屬性對應至 <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> 旗標。  
   
    |MenuCommand 屬性|OLECMDF 旗標|  
    |--------------------------|------------------|  

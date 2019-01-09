@@ -1,8 +1,6 @@
 ---
 title: 覆寫 ToolsVersion 設定 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, overriding ToolsVersion setting
@@ -13,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f0abe9db7178678c4ffda7f4179117817b3add6
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: ffb58fdbf35d2fc070fbf2463ee02fa154f84f94
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48879293"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53867970"
 ---
 # <a name="override-toolsversion-settings"></a>覆寫 ToolsVersion 設定
 您可以使用三種方式中的其中一種來變更專案和方案的工具組︰  
@@ -30,7 +28,7 @@ ms.locfileid: "48879293"
 3.  在方案的專案上設定 `$(ProjectToolsVersion)` 屬性。 這可讓您使用與其他專案不同的工具組版本，以在方案中建置專案。  
   
 ## <a name="override-the-toolsversion-settings-of-projects-and-solutions-on-command-line-builds"></a>覆寫命令列組建上專案和方案的 ToolsVersion 設定  
- 雖然一般會使用專案檔中所指定的 ToolsVersion 來建置 Visual Studio 專案，但是您可以在命令列上使用 `-ToolsVersion` (或 `-tv`) 切換參數來覆寫該值，並使用不同的工具組來建置所有專案和其專案間相依性。 例如:   
+ 雖然一般會使用專案檔中所指定的 ToolsVersion 來建置 Visual Studio 專案，但是您可以在命令列上使用 `-ToolsVersion` (或 `-tv`) 切換參數來覆寫該值，並使用不同的工具組來建置所有專案和其專案間相依性。 例如：  
   
 ```cmd  
 msbuild.exe someproj.proj -tv:12.0 -p:Configuration=Debug  

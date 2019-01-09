@@ -10,15 +10,14 @@ author: mikeblome
 ms.author: mblome
 manager: wpickett
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c4ffef0b1b76f453048ff20e3cbada0b8a591c65
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: c27673b8e6a5e0acce8f37fe20d675f56a62bbc6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388828"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53846564"
 ---
 # <a name="options-text-editor-cc-view"></a>選項、文字編輯器、C/C++、檢視
 

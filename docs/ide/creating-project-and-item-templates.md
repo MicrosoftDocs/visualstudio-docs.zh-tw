@@ -2,7 +2,6 @@
 title: 適用於專案和檔案的範本
 ms.date: 01/02/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - templates [Visual Studio], project
@@ -12,12 +11,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 04aa647d378e956c7a2394b7c3fc2a187a7c5963
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 276a670356acafcb17d644aa8b524a0138232158
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53049274"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53849777"
 ---
 # <a name="project-and-item-templates"></a>專案範本與項目範本
 

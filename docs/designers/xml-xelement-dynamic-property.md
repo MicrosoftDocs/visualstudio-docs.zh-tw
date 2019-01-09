@@ -2,7 +2,6 @@
 title: Xml (XElement 動態屬性)
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: reference
 apiname:
 - XElement.Xml
@@ -12,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a69245a875d0c1df1942af12afaacc5a9ffc34b
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 87796afcc06190a54a3670581be7700fa8d49061
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39080833"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53940546"
 ---
 # <a name="xml-xelement-dynamic-property"></a>Xml (XElement 動態屬性)
 

@@ -1,8 +1,6 @@
 ---
 title: Vbc 工作 | Microsoft Docs
-ms.custom: ''
 ms.date: 04/12/2018
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#Vbc
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bf2ab82b16d3cdaf493afc15f506dc237e6a91d4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7b186f5be27bb1457b7d9beb1a056bec90821f45
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49937872"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53956149"
 ---
 # <a name="vbc-task"></a>Vbc 工作
 包裝 *vbc.exe*，這會產生可執行檔 (*.exe*)、動態連結程式庫 (*.dll*) 或程式碼模組 (*.netmodule*)。 如需 *vbc.exe* 的詳細資訊，請參閱 [Visual Basic 命令列編譯器](/dotnet/visual-basic/reference/command-line-compiler/index)。  
@@ -34,7 +32,7 @@ ms.locfileid: "49937872"
  下表說明 `Vbc` 工作的參數。  
 
 
-| 參數 | 描述 |
+| 參數 | 說明 |
 |------------------------------| - |
 | `AdditionalLibPaths` | 選擇性的 `String[]` 參數。<br /><br /> 指定其他資料夾，在其中尋找參考屬性中指定的組件。 |
 | `AddModules` | 選擇性的 `String[]` 參數。<br /><br /> 讓編譯器將所指定檔案的類型資訊全部提供給您目前編譯的專案。 此參數對應至 *vbc.exe* 編譯器的 [-addmodule](/dotnet/visual-basic/reference/command-line-compiler/addmodule) 參數。 |
@@ -71,7 +69,7 @@ ms.locfileid: "49937872"
 | `OutputAssembly` | 選擇性的 `String` 輸出參數。<br /><br /> 指定輸出檔案的名稱。 這個參數對應於 *vbc.exe* 編譯器的 [-out](/dotnet/visual-basic/reference/command-line-compiler/out) 參數。 |
 | `Platform` | 選擇性的 `String` 參數。<br /><br /> 指定輸出檔設為目標的處理器平台。 這個參數可以具有 `x86`、`x64`、`Itanium` 或 `anycpu` 的值。 預設為 `anycpu`。 這個參數對應於 *vbc.exe* 編譯器的 [-platform](/dotnet/visual-basic/reference/command-line-compiler/platform) 參數。 |
 | `References` | 選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 導致工作將公用類型資訊從指定的項目匯入目前的專案。 這個參數對應於 *vbc.exe* 編譯器的 [-reference](/dotnet/visual-basic/reference/command-line-compiler/reference) 參數。 |
-| `RemoveIntegerChecks` | 選擇性的 `Boolean` 參數。<br /><br /> 如為 `true`，停用整數的溢位錯誤檢查。 預設值是 `false`。 這個參數對應於 *vbc.exe* 編譯器的 [-removeintchecks](/dotnet/visual-basic/reference/command-line-compiler/removeintchecks) 參數。 |
+| `RemoveIntegerChecks` | 選擇性的 `Boolean` 參數。<br /><br /> 如為 `true`，停用整數的溢位錯誤檢查。 預設值為 `false`。 這個參數對應於 *vbc.exe* 編譯器的 [-removeintchecks](/dotnet/visual-basic/reference/command-line-compiler/removeintchecks) 參數。 |
 | `Resources` | 選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 將 .NET Framework 資源內嵌到輸出檔中。 這個參數對應於 *vbc.exe* 編譯器的 [-resource](/dotnet/visual-basic/reference/command-line-compiler/resource) 參數。 |
 | `ResponseFiles` | 選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 指定包含適用於此工作之命令的回應檔。 此參數對應至 *vbc.exe* 編譯器的 [@ (指定回應檔)](/dotnet/visual-basic/reference/command-line-compiler/specify-response-file) 選項。 |
 | `RootNamespace` | 選擇性的 `String` 參數。<br /><br /> 指定所有類型宣告的根命名空間。 這個參數對應於 *vbc.exe* 編譯器的 [-rootnamespace](/dotnet/visual-basic/reference/command-line-compiler/rootnamespace) 參數。 |
