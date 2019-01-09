@@ -9,15 +9,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: b6d69aa899ffea95c8da7c3513c6f7b0fa6002ee
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: c235a55cbb5648eec0c2e1ee0632b56b1ea537ad
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895154"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53860958"
 ---
 # <a name="visual-studio-unrecoverable-process-error"></a>Visual Studio 無法復原的程序錯誤
 

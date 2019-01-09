@@ -9,15 +9,14 @@ ms.date: 11/13/2017
 ms.topic: quickstart
 ms.devlang: python
 ms.service: multiple
-ms.technology: vs-ai-tools
 ms.workload:
 - multiple
-ms.openlocfilehash: 4bca48113349607de2f5ada53356f1d24eb82088
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c6585eed1cfc6c4d9b57d6f6c66a8e4e2e93c5a3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49933985"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53920374"
 ---
 # <a name="train-a-tensorflow-model-locally"></a>在本機定型 TensorFlow 模型
 

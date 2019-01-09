@@ -1,8 +1,6 @@
 ---
 title: MSBuild 進階概念 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, advanced concepts
@@ -12,19 +10,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d521dbe0f72ccc5622da37495641349a9ec24a8a
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: d799443722a70db9e0d3816cf0551538e028bc0f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39077451"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53917434"
 ---
 # <a name="msbuild-advanced-concepts"></a>MSBuild 進階概念
 本節中的文件說明如何使用進階技術以 MSBuild 改善組建。  
   
 ## <a name="related-topics"></a>相關主題  
   
-|標題|描述|  
+|標題|說明|  
 |-----------|-----------------|  
 |[批次處理](../msbuild/msbuild-batching.md)|描述如何根據項目中繼資料，批次處理組建目標和工作。|  
 |[轉換](../msbuild/msbuild-transforms.md)|說明如何使用轉換啟用相依性分析。|  

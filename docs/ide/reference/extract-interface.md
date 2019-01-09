@@ -2,7 +2,6 @@
 title: 擷取介面重構
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
@@ -14,12 +13,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 62d79251d0ec93c92ec13450e9110e08143d7966
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: bc315ed49e31e78bc549e446858a30979d7135b2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53061652"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53838212"
 ---
 # <a name="extract-an-interface-refactoring"></a>擷取介面重構
 

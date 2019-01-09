@@ -1,8 +1,6 @@
 ---
 title: MSBuild 工作 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - tasks
@@ -13,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6a380917f3a4eaba71a00ff32f1bc627f47f5d4d
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 09377ec49f3bc2fea8037b593c5643a078f169af
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39153198"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53860059"
 ---
 # <a name="msbuild-tasks"></a>MSBuild 工作
 組建平台必須能夠在建置程序期間執行任意數目的動作。 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 會使用「工作」來執行這些動作。 工作是 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 用來執行不可部分完成之建置作業的可執行程式碼單元。  
@@ -28,14 +26,14 @@ ms.locfileid: "39153198"
   
  工作的執行邏輯會實作為 .NET 類別，此類別會實作 <xref:Microsoft.Build.Framework> 命名空間中所定義的 <xref:Microsoft.Build.Framework.ITask> 介面。  
   
- 工作類別也會定義可供專案檔中的工作使用的輸入和輸出參數。 由工作類別公開的所有公用、可設定、非靜態且非抽象的屬性都可在專案檔中加以存取，方法是在 [Task](../msbuild/task-element-msbuild.md) 元素上放置具有相同名稱的對應屬性。  
+ 工作類別也會定義可供專案檔中的工作使用的輸入和輸出參數。 由工作類別公開的所有公用、可設定、非靜態且非抽象的屬性都可在專案檔中加以存取，方法是在 [Task](../msbuild/task-element-msbuild.md) 項目上放置具有相同名稱的對應屬性。  
   
  若要撰寫自己的工作，請編寫可實作 <xref:Microsoft.Build.Framework.ITask> 介面的 Managed 類別。 如需詳細資訊，請參閱[工作撰寫](../msbuild/task-writing.md)。  
   
 ## <a name="execute-a-task-from-a-project-file"></a>從專案檔執行工作  
- 在執行專案檔中的工作之前，您必須先使用 [UsingTask](../msbuild/usingtask-element-msbuild.md) 元素，將實作工作之組件中的類型對應到工作名稱。 這讓 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 知道，如果它在您的專案檔中找到工作，應該到何處尋找該工作的執行邏輯。  
+ 在執行專案檔中的工作之前，您必須先使用 [UsingTask](../msbuild/usingtask-element-msbuild.md) 項目，將實作工作之組件中的類型對應到工作名稱。 這讓 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 知道，如果它在您的專案檔中找到工作，應該到何處尋找該工作的執行邏輯。  
   
- 若要執行 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 專案檔中的工作，請使用工作名稱建立元素以做為 `Target` 元素的子系。 如果工作接受參數，則會傳遞這些參數以做為元素的屬性。  
+ 若要執行 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 專案檔中的工作，請使用工作名稱建立項目以做為 `Target` 項目的子系。 如果工作接受參數，則會傳遞這些參數以做為項目的屬性。  
   
  [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 項目清單和屬性都可用來做為參數。 例如，下列程式碼會呼叫 `MakeDir` 工作，並設定 `MakeDir` 物件的 `Directories` 屬性值等於前一個範例中所宣告的 `BuildDir` 屬性值。  
   

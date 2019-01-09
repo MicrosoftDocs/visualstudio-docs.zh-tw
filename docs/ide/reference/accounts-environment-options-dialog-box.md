@@ -2,7 +2,6 @@
 title: 帳戶選項參考
 ms.date: 12/10/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Environment.RoamingSettings
@@ -12,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a77a7ee6c9f9cdb545c5cbfb1c4fb7336ab19b70
-ms.sourcegitcommit: 75e02ed88a1ace6e8265fd4e3a82a1bc78f3adca
+ms.openlocfilehash: db54590e6fa53caab56844947e5a699326dd99d2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/13/2018
-ms.locfileid: "53377938"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53846869"
 ---
 # <a name="accounts-environment-options-dialog-box"></a>選項對話方塊、環境、帳戶
 

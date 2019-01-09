@@ -2,7 +2,6 @@
 title: -Diff
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 ms.assetid: 5377fedb-632a-4e86-a947-7c11c86451e7
 author: gewarren
@@ -10,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6cbf0f8f9fa2e97908e2ae13e3961382a7250a91
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: cf58c25611fd52c6e8db8e8210101e1c80153275
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704911"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53844534"
 ---
 # <a name="diff"></a>/Diff
 比較兩個檔案。 這些差異會顯示在特殊 Visual Studio 視窗中。
@@ -29,11 +28,11 @@ devenv /Diff SourceFile, TargetFile, [SourceDisplayName],[TargetDisplayName]
 ## <a name="arguments"></a>引數
  `SourceFile`
 
- 必要。 要比較之第一個檔案的完整路徑和名稱。
+ 必要項。 要比較之第一個檔案的完整路徑和名稱。
 
  `TargetFile`
 
- 必要。 要比較之第二個檔案的完整路徑和名稱
+ 必要項。 要比較之第二個檔案的完整路徑和名稱
 
  `SourceDisplayName`
 

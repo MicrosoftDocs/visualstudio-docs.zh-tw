@@ -2,7 +2,6 @@
 title: 選項對話方塊、環境、文件
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VS.Environment.Documents
@@ -33,12 +32,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3009f32adeb70dd376d7116280de6e3e1b557e7a
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 21abb3d10f3cf80e46e86aa5e5141df32d6e804a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388919"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53855870"
 ---
 # <a name="documents-environment-options-dialog-box"></a>選項對話方塊、環境、文件
 

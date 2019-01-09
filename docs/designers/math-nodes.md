@@ -2,7 +2,6 @@
 title: 數學節點
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: reference
 ms.assetid: adc225cc-1cf5-4f7c-9b00-e7ac8450b6b9
 author: gewarren
@@ -10,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 793f8ed4538568d588b4980226606d6cd1a6545a
-ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
+ms.openlocfilehash: 820853d92507cf650ea7988ef2405e3948f7ed13
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38978199"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53866812"
 ---
 # <a name="math-nodes"></a>數學節點
 

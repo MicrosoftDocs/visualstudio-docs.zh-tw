@@ -1,8 +1,6 @@
 ---
 title: HOW TO：使用分析工具命令列檢測靜態編譯的 ASP.NET Web 應用程式並收集記憶體資料 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: ea1dcb7c-1dc3-49ff-9418-8795b5b3d3bc
 author: mikejo5000
@@ -10,12 +8,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3a2036e37e0a43389e4776a496299aae236ae256
-ms.sourcegitcommit: 34840a954ed3446c789e80ee87da6cbf1203cbb5
+ms.openlocfilehash: d37df1d22f42e3046960c81b1cd75d6c6ae0898f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53592675"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53850592"
 ---
 # <a name="how-to-instrument-a-statically-compiled-aspnet-web-application-and-collect-memory-data-by-using-the-profiler-command-line"></a>HOW TO：使用分析工具命令列檢測靜態編譯的 ASP.NET Web 應用程式並收集記憶體資料
 本文描述如何使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具命令列工具來檢測先行編譯的 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web 元件或網站，並收集 .NET 記憶體配置、物件存留期和詳細的計時資料。  

@@ -3,7 +3,6 @@ title: 偵錯 ASP.NET
 description: 使用 Visual Studio 偵錯工具來偵錯 ASP.NET
 ms.custom: mvc
 ms.date: 08/06/2018
-ms.technology: vs-ide-debug
 ms.topic: quickstart
 helpviewer_keywords:
 - debugger
@@ -13,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: 82288b67916255914d352e4f0f6f2fd75aa9571d
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.openlocfilehash: 6ac201b124f460a3918034095cd3f86e49141a7b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53561953"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53900596"
 ---
 # <a name="quickstart-debug-aspnet-with-the-visual-studio-debugger"></a>快速入門：使用 Visual Studio 偵錯工具對 ASP.NET 進行偵錯
 

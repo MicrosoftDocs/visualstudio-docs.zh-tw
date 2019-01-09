@@ -2,7 +2,6 @@
 title: 列出執行緒命令
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - debug.listthreads
@@ -16,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: aa44556be7c20c52d44ec83da1ba9d4972b4542d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f1a914ffcd242626b0f519ab541c4c381a4597da
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31947426"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53846135"
 ---
 # <a name="list-threads-command"></a>列出執行緒命令
 顯示目前程式中的執行緒清單。
@@ -53,4 +52,4 @@ Debug.ListThreads [index]
 - [Visual Studio 命令](../../ide/reference/visual-studio-commands.md)
 - [命令視窗](../../ide/reference/command-window.md)
 - [尋找/命令方塊](../../ide/find-command-box.md)
-- [Visual Studio 命令別名](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)

@@ -4,7 +4,6 @@ titleSuffix: ''
 ms.custom: seodec18
 ms.date: 12/10/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.assetid: b9531c25-e4cf-43ae-b331-a9f31a8cd171
 author: TerryGLee
@@ -12,12 +11,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e72205708ca5114c5757e9d122230af7af13d94
-ms.sourcegitcommit: 75e02ed88a1ace6e8265fd4e3a82a1bc78f3adca
+ms.openlocfilehash: dccb2fb9c4fce456055b136dace7e95d02647a94
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/13/2018
-ms.locfileid: "53348390"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53840787"
 ---
 # <a name="sign-in-to-visual-studio"></a>登入 Visual Studio
 
