@@ -4,8 +4,7 @@ titleSuffix: ''
 ms.custom: seodec18, get-started
 ms.date: 04/04/2018
 ms.prod: visual-studio-dev15
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.topic: tutorial
 ms.devlang: CSharp
 author: TerryGLee
@@ -15,12 +14,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e18e1e65d0fa21431814bf0e6abede0aa255768
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.openlocfilehash: e28ed348d0c994d38ef0614a12430f419b66ba71
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53562516"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53871378"
 ---
 # <a name="tutorial-create-your-first-universal-windows-platform-application-in-visual-studio-with-xaml-and-c35"></a>教學課程：在 Visual Studio 中使用 XAML 和 C&#35; 來建立您的第一個通用 Windows 平台應用程式
 

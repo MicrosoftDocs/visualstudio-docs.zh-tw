@@ -2,7 +2,6 @@
 title: 一般、文字編輯器、選項
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VS.TOOLSOPTIONSPAGES.TEXT_EDITOR.SQL_SERVER_TOOLS.GENERAL
@@ -49,12 +48,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 75051013e38d4acf5339193cf9f80e6da6758284
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: fdd4e366451dd81738305893727554e8b07ffb04
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388789"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53871326"
 ---
 # <a name="options-text-editor-general"></a>一般、文字編輯器、選項
 

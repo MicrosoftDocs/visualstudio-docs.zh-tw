@@ -1,8 +1,6 @@
 ---
 title: FindInList 工作 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 dev_langs:
 - VB
@@ -18,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 54562e26e0da5568ba74d40425cf377260d41000
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: f083d44578a4fe61029c707b3798191c5b8b3665
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37945116"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53865631"
 ---
 # <a name="findinlist-task"></a>FindInList 工作
 在指定的清單中，尋找擁有相符 itemspec 的項目。  
@@ -31,7 +29,7 @@ ms.locfileid: "37945116"
 ## <a name="parameters"></a>參數  
  下表描述 [FindInList 工作](../msbuild/findinlist-task.md)的參數。  
   
-|參數|描述|  
+|參數|說明|  
 |---------------|-----------------|  
 |`CaseSensitive`|選擇性的 `Boolean` 參數。<br /><br /> 如果為 `true`，搜尋會區分大小寫；否則不區分大小寫。 預設值為 `true`。|  
 |`FindLastMatch`|選擇性的 `Boolean` 參數。<br /><br /> 如果為 `true`，則傳回最後一個相符項目；否則傳回第一個相符項目。 預設值為 `false`。|  

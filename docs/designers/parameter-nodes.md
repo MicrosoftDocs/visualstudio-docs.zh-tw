@@ -2,7 +2,6 @@
 title: 參數節點
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: reference
 ms.assetid: da54db0b-3a3d-48dc-858c-7ac43aa04b13
 author: gewarren
@@ -10,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 52e7002deeba9d2d61eb860b2f5814375f2a18e6
-ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
+ms.openlocfilehash: e8e2de3ee7038b6bcba20dfe3a5565a1f8585e82
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38977696"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53878753"
 ---
 # <a name="parameter-nodes"></a>參數節點
 

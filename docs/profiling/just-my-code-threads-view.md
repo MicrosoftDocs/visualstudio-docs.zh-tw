@@ -1,8 +1,6 @@
 ---
 title: Just My Code (執行緒檢視) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.cv.threads.jmc
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b194dbddcd4a0b89c05944de9160bb2e39d43c6
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: 825bf6e16aa0420a24b80dbfaaeb869325b3e68b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34844322"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53877415"
 ---
 # <a name="just-my-code-threads-view"></a>Just My Code (執行緒檢視)
 如果選取此選項，即會篩選呼叫堆疊只顯示您的程式碼，加上一個層級的已呼叫函式。  

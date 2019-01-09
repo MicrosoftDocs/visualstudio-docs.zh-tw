@@ -2,7 +2,6 @@
 title: 命令
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 helpviewer_keywords:
 - Visual Studio, commands
@@ -14,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: da258aab0a9c4e100591bf33abff710b1cf54f53
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 7d4b2c4a3f7995fd00b9997e68a6bd7f64114d4a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53063457"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53909758"
 ---
 # <a name="visual-studio-commands"></a>Visual Studio 命令
 
