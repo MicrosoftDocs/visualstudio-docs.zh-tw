@@ -1,8 +1,6 @@
 ---
 title: LIB 工作 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - VC.Project.VCLibrarianTool.Name
@@ -27,12 +25,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: df6011cb1c706069135a133dd37a34e54203b22b
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 54a9fc4a75d49699087f7fb2ca80c3b8c17ddc8f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39079620"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53922016"
 ---
 # <a name="lib-task"></a>LIB 工作
 包裝 Microsoft 32 位元程式庫管理員工具 *lib.exe*。 程式庫管理員會建立並管理通用物件檔案格式 (COFF) 物件檔的程式庫。 程式庫管理員也可以建立匯出檔和匯入程式庫，以參考匯出的定義。 如需詳細資訊，請參閱 [LIB 參考](/cpp/build/reference/lib-reference)和[執行 LIB](/cpp/build/reference/running-lib)。  
@@ -40,7 +38,7 @@ ms.locfileid: "39079620"
 ## <a name="parameters"></a>參數  
  下表描述 **LIB** 工作的參數。 大部分的工作參數會對應至命令列選項。  
   
-|參數|描述|  
+|參數|說明|  
 |---------------|-----------------|  
 |**AdditionalDependencies**|選擇性的 **String[]** 參數。<br /><br /> 指定要加入至命令列的其他項目。|  
 |**AdditionalLibraryDirectories**|選擇性的 **String[]** 參數。<br /><br /> 覆寫環境程式庫路徑。 指定目錄名稱。<br /><br /> 如需詳細資訊，請參閱 [/LIBPATH (其他 Libpath)](/cpp/build/reference/libpath-additional-libpath)。|  

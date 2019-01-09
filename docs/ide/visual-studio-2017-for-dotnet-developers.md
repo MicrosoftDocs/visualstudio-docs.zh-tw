@@ -5,19 +5,18 @@ author: kuhlenh
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.date: 06/14/2018
 ms.topic: conceptual
 helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: 731097ac74a4c1dfd5db74d55549b8a2b9c33176
-ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
+ms.openlocfilehash: 300754cd975f16419d3e6faebc2074ed3eacb727
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53684976"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53926027"
 ---
 # <a name="visual-studio-2017-c-productivity-guide"></a>Visual Studio 2017 C# 生產力指南
 

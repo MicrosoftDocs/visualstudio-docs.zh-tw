@@ -2,7 +2,6 @@
 title: 開發人員測試工具
 ms.date: 05/02/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 helpviewer_keywords:
 - unit testing, create unit tests
@@ -11,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 396bbfdb915d0e3ecc31f516d60eab80cca6a421
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 46d2d41cd337ec2cbdd1fe44bde97db39b1b764e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295146"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53930159"
 ---
 # <a name="developer-testing-tools-scenarios-and-capabilities"></a>開發人員測試工具、案例和功能
 

@@ -2,7 +2,6 @@
 title: 延伸建置流程
 ms.custom: seodec18
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, overriding predefined targets
@@ -15,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 380933a07636cddd2bc32fb45f14f9b2a65830df
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: ce38985a5fc0b74326648557e22eb17bfdfb4f48
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53058268"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53863676"
 ---
 # <a name="how-to-extend-the-visual-studio-build-process"></a>HOW TO：延伸 Visual Studio 建置流程
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 建置處理序是由匯入至您專案檔的一系列 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] .targets 檔案所定義。 可以擴充其中一個已匯入的檔案 (Microsoft.Common.targets)，以讓您在建置處理序的數個點執行自訂工作。 本文說明您可以使用兩種方法來擴充 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 建置處理序：  
@@ -85,7 +84,7 @@ ms.locfileid: "53058268"
 </PropertyGroup>  
 ```  
   
- 您可以在專案檔結尾宣告名為 `BuildDependsOn` 的另一個屬性，來覆寫此屬性值。 在新屬性中包含先前的 `BuildDependsOn` 屬性，即可將新目標新增至目標清單開頭和結尾。 例如:   
+ 您可以在專案檔結尾宣告名為 `BuildDependsOn` 的另一個屬性，來覆寫此屬性值。 在新屬性中包含先前的 `BuildDependsOn` 屬性，即可將新目標新增至目標清單開頭和結尾。 例如：  
   
 ```xml  
 <PropertyGroup>  

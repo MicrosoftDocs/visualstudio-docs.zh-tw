@@ -2,9 +2,8 @@
 title: 使用命令列參數來安裝 Visual Studio
 titleSuffix: ''
 description: 了解如何使用命令列參數來控制或自訂您的 Visual Studio 安裝。
-ms.custom: seodec18
 ms.date: 11/14/2018
-ms.technology: vs-acquisition
+ms.custom: seodec18
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
@@ -17,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e5b3a43862b840c323abd3d96ce0784f69b5db4b
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.openlocfilehash: f2955a9efae219cf992936a8b64cac672a0cd680
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53561901"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53869657"
 ---
 # <a name="use-command-line-parameters-to-install-visual-studio-2017"></a>使用命令列參數來安裝 Visual Studio 2017
 

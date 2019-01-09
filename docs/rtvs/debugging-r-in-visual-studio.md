@@ -3,19 +3,18 @@ title: R 程式碼偵錯
 description: Visual Studio 提供 R 的完整偵錯體驗，包括中斷點、附加、呼叫堆疊和檢查變數。
 ms.date: 01/24/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-rtvs
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 1f0f37be96603ed5d1e53c5ef36ea011d636dcaa
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: 93e2887b15ff3f53634d68774ab31d3b4bfb7aaa
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53804847"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53925494"
 ---
 # <a name="debug-r-in-visual-studio"></a>在 Visual Studio 中偵錯 R
 

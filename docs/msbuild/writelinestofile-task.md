@@ -1,8 +1,6 @@
 ---
 title: WriteLinesToFile 工作 | Microsoft Docs
-ms.custom: ''
 ms.date: 09/20/2018
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#WriteLinesToFile
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 909c35ca889295385cae98d51a81b22b4f7eb5d8
-ms.sourcegitcommit: 95aedf723c6be5272c3c5a2911cb2bdec50e2148
+ms.openlocfilehash: 6e41cc7e7be90497995bbadaced4a002ad0bd42d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47228834"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53908784"
 ---
 # <a name="writelinestofile-task"></a>WriteLinesToFile 工作
 將所指定項目的路徑寫入至指定的文字檔。  
@@ -33,7 +31,7 @@ ms.locfileid: "47228834"
 ## <a name="task-parameters"></a>工作參數  
  下表說明 `WriteLinestoFile` 工作的參數。  
   
-|參數|描述|  
+|參數|說明|  
 |---------------|-----------------|  
 |`File`|必要的 <xref:Microsoft.Build.Framework.ITaskItem> 參數。<br /><br /> 指定要寫入項目的檔案。|  
 |`Lines`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 指定要寫入至檔案的項目。|  

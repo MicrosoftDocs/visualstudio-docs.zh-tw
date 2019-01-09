@@ -1,8 +1,6 @@
 ---
 title: ResourcesGenerator 工作 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 dev_langs:
 - VB
@@ -19,19 +17,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7b72ce231b514250a40e9f3a4bf5ceb5aa2c69f8
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: c28327ec391bbed7062d5957739f21d27655b048
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178887"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53882704"
 ---
 # <a name="resourcesgenerator-task"></a>ResourcesGenerator 工作
 <xref:Microsoft.Build.Tasks.Windows.ResourcesGenerator> 工作會將一或多種資源 (*.jpg*、*.ico*、*.bmp*、二進位格式的 [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] 以及其他副檔名類型) 內嵌到 *.resources* 檔案。  
   
 ## <a name="task-parameters"></a>工作參數  
   
-|參數|描述|  
+|參數|說明|  
 |---------------|-----------------|  
 |`OutputPath`|必要的 **String** 參數。<br /><br /> 指定輸出目錄的路徑。 如果路徑不是絕對路徑，會將它視為相對於專案根目錄的路徑。|  
 |`OutputResourcesFile`|必要的 **ITaskItem[]** 輸出參數。<br /><br /> 指定所產生 *.resources* 檔案的路徑和名稱。 如果路徑不是絕對路徑，會相對於專案根目錄產生 *.resources* 檔案。|  

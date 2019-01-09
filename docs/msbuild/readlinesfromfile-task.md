@@ -1,8 +1,6 @@
 ---
 title: ReadLinesFromFile 工作 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#ReadLinesFromFile
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9b545efb397e2dcd5052605db1d14e113ea9fc76
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: ee4062f8bb2620dfcd3d8cf8c3406bcd10f16578
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39152044"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53885662"
 ---
 # <a name="readlinesfromfile-task"></a>ReadLinesFromFile 工作
 從文字檔讀取項目清單。  
@@ -33,7 +31,7 @@ ms.locfileid: "39152044"
 ## <a name="parameters"></a>參數  
  下表說明 `ReadLinesFromFile` 工作的參數。  
   
-|參數|描述|  
+|參數|說明|  
 |---------------|-----------------|  
 |`File`|必要的 <xref:Microsoft.Build.Framework.ITaskItem> 參數。<br /><br /> 指定要讀取的檔案。 檔案的每一行都必須有一個項目。|  
 |`Lines`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 輸出參數。<br /><br /> 包含從檔案讀取的行。|  

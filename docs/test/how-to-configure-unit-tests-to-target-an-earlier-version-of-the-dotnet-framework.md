@@ -2,19 +2,18 @@
 title: 單元測試以舊版.NET Framework 為目標
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
 author: gewarren
-ms.openlocfilehash: 7b9032e8a1b6ee796bbea6ce7f7e3f5db7bcd205
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: df8489decc50c863bdfaec65c6de6ddc4d2dd229
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53064727"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53869886"
 ---
 # <a name="how-to-configure-unit-tests-to-target-an-earlier-version-of-the-net-framework"></a>HOW TO：設定以舊版 .NET Framework 為目標的單元測試
 
