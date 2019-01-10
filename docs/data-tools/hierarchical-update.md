@@ -20,15 +20,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 52225ba4801fcee92b3f68fd6ec1cf7cc6c63086
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: 95aa29fc9856777912afa2efac2551ec4a703506
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52305711"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53892698"
 ---
 # <a name="hierarchical-update"></a>階層式更新
 
@@ -120,7 +119,7 @@ ms.locfileid: "52305711"
 
 以下是常用的方法和屬性`TableAdapterManager`類別：
 
-|成員|描述|
+|成員|說明|
 |------------|-----------------|
 |`UpdateAll` 方法|所有資料表的資料會儲存所有資料。|
 |`BackUpDataSetBeforeUpdate` 屬性|決定是否要建立資料集的備份副本，然後再執行`TableAdapterManager.UpdateAll`方法。布林值。|

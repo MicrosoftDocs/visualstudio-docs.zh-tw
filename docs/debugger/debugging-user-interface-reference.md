@@ -1,8 +1,6 @@
 ---
-title: 偵錯使用者介面參考 |Microsoft 文件
-ms.custom: ''
+title: 偵錯使用者介面參考 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: reference
 f1_keywords:
 - vs.debug.uiref
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 83021f492eeb712f489641e3019fe9c8ecc47bdd
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 8719ffaae1b1a5b7d8e432fb223d0f75d6b6dcf1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31472522"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53988018"
 ---
 # <a name="debugging-user-interface-reference"></a>偵錯使用者介面參考
 偵錯應用程式時，可能發現下列對話方塊。  
@@ -44,7 +42,7 @@ ms.locfileid: "31472522"
   
 -   [偵錯錯誤和警告對話方塊](../debugger/debugging-errors-and-warning-dialog-boxes.md)  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Visual Studio 偵錯](../debugger/index.md)  
  [偵錯工具功能導覽](../debugger/debugger-feature-tour.md)   
  [命令視窗](../ide/reference/command-window.md)

@@ -12,15 +12,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: fe32424632d06ed637b41dcd3d4b614afde369bd
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: d203fc6c0ecb61310a31ae172fe68bcdf77f66a8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52304606"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53863848"
 ---
 # <a name="add-new-data-sources"></a>新增新資料來源
 

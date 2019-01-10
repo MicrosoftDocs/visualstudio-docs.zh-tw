@@ -2,7 +2,6 @@
 title: 在變數設定監看式 |Microsoft Docs
 ms.custom: seodec18
 ms.date: 10/11/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.watch
@@ -18,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 898c79f3985e24f52620f12dc25ad6044d05ac64
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: b01c0a80c9e45aa56f2a627b73659e7558257e35
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53059479"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53936501"
 ---
 # <a name="watch-variables-with-watch-windows-and-quickwatch"></a>監看式變數使用監看式視窗和快速監看式 
 

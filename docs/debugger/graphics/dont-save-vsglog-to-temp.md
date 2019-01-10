@@ -1,8 +1,6 @@
 ---
 title: DONT_SAVE_VSGLOG_TO_TEMP |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: f27ab0e6-9575-4ca0-9901-37d3e5c3a2f5
 author: mikejo5000
@@ -10,12 +8,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e899bc22c64fb3f1ae7fe77f7fa49871ceecf3a2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: d945f3ef7fe2c5aa2abb0bd2263bae693d517f7c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49903227"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53859151"
 ---
 # <a name="dontsavevsglogtotemp"></a>DONT_SAVE_VSGLOG_TO_TEMP
 出現時，定義圖形記錄檔是否儲存到使用者的暫存檔目錄。  
@@ -45,5 +43,5 @@ ms.locfileid: "49903227"
 #include <vsgcapture.h>  
 ```  
 
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [VSG_DEFAULT_RUN_FILENAME](vsg-default-run-filename.md)

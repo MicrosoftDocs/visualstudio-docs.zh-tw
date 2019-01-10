@@ -2,7 +2,6 @@
 title: 偵錯前景應用程式時使用偵錯工具視窗 |Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.background
@@ -23,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6497a2a21c85e7889b3b6538dace0f8c22f24944
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 60bd259dd5acb542211fe57b0741c2e28d0baaca
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53063764"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53910311"
 ---
 # <a name="how-can-i-use-debugger-windows-while-debugging-a-foreground-program"></a>偵錯前景程式時，如何使用偵錯工具視窗？
 ## <a name="problem-description"></a>問題說明  

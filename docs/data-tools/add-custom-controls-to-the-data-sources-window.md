@@ -16,15 +16,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: ae05111b1a075515d8011daaf8626e5da7f506e1
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: b4cd6004519573064683d87a35d1b3c49711edb6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389078"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53867929"
 ---
 # <a name="add-custom-controls-to-the-data-sources-window"></a>將自訂控制項加入 [資料來源] 視窗
 
@@ -80,7 +79,7 @@ ms.locfileid: "52389078"
 
      控制項必須具有下列屬性的其中之一。
 
-    |屬性|描述|
+    |屬性|說明|
     |---------------|-----------------|
     |<xref:System.ComponentModel.DefaultBindingPropertyAttribute>|實作簡單的控制項顯示資料，單一資料行 （或屬性） 的這個屬性，例如<xref:System.Windows.Forms.TextBox>。|
     |<xref:System.ComponentModel.ComplexBindingPropertiesAttribute>|實作這個屬性的控制項上，顯示清單 （或資料表） 的資料，例如<xref:System.Windows.Forms.DataGridView>。|

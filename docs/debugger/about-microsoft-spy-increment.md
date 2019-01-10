@@ -1,8 +1,6 @@
 ---
-title: 關於 Microsoft Spy + + |Microsoft 文件
-ms.custom: ''
+title: 關於 Microsoft Spy + + |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Microsoft Spy++
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cb7c99a5475fe4b533bbe8c7e03b8a7e3603cb61
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: d736fb0060c33e7439e37698bf66cd0dde8a5201
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31457354"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53898839"
 ---
 # <a name="about-microsoft-spy"></a>關於 Microsoft Spy++
-若要顯示著作權、 版本、 擁有權，以及其他相關資訊 Spy + + 中使用此對話方塊。
+使用此對話方塊以顯示著作權、 版本、 擁有權，以及關於 Spy + + 的其他資訊。

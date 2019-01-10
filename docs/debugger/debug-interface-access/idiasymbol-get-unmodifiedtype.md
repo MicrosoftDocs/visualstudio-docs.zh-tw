@@ -1,8 +1,6 @@
 ---
 title: 'Idiasymbol:: Get_unmodifiedtype |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 32e636a35d1cfed085ddf1bc44d60249a71d0b69
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: fe76a3155941c9f7a3c6cc02d02291e61c8e4e89
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49935746"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53898553"
 ---
 # <a name="idiasymbolgetunmodifiedtype"></a>IDiaSymbol::get_unmodifiedType
 擷取這個符號的原始類型。 使用時機[SymTagEnum 列舉](../../debugger/debug-interface-access/symtagenum.md)設為型別。  
@@ -27,7 +25,7 @@ ms.locfileid: "49935746"
 ## <a name="syntax"></a>語法  
   
 ```C++  
-HRESULT get_unmodifiedType(   
+HRESULT get_unmodifiedType(   
    IDiaSymbol** pRetVal  
 );  
 ```  
@@ -46,11 +44,11 @@ HRESULT get_unmodifiedType(
  目前的類型是傳回的原始型別所做的修改。 符號的原始型別可以先取得符號的類型，和接著詢問所傳回的原始類型的類型來判斷。 請注意一些符號可能不會有原始類型的修改的類型。  
   
 ## <a name="requirements"></a>需求  
- 標頭： Dia2.h  
+ 標頭：dia2.h  
   
  程式庫： diaguids.lib  
   
  DLL: msdia100.dll  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -1,8 +1,6 @@
 ---
 title: 使用 Just-In-Time 偵錯工具進行偵錯 |Microsoft Docs
-ms.custom: ''
 ms.date: 09/24/18
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Visual Studio], Just-In-Time
@@ -13,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c6bd9685a5ea9bc2e6e0dc94f7fbff395fab523e
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
-ms.translationtype: HT
+ms.openlocfilehash: fbdf32377db26cdb3696187248bd9b8becb8de24
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53562057"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53831546"
 ---
 # <a name="debug-using-the-just-in-time-debugger-in-visual-studio"></a>在 Visual Studio 中使用 Just-In-Time 偵錯工具進行偵錯
 
@@ -107,7 +105,7 @@ ms.locfileid: "53562057"
 
 針對此範例中，您將建立C#會擲回的 Visual Studio 中的主控台應用程式[NullReferenceException](/dotnet/api/system.nullreferenceexception)。
 
-1. 在 Visual Studio 中建立C#主控台應用程式 (**檔案** > **新增** > **專案** > **Visual C#**   > **主控台應用程式**) 名為*ThrowsNullException*。 如需在 Visual Studio 中建立專案的詳細資訊，請參閱[逐步解說：建立簡單的應用程式](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)
+1. 在 Visual Studio 中建立C#主控台應用程式 (**檔案** > **新增** > **專案** > **Visual C#**   > **主控台應用程式**) 名為*ThrowsNullException*。 如需在 Visual Studio 中建立專案的詳細資訊，請參閱[逐步解說：建立簡單的應用程式](/visualstudio/get-started/csharp/tutorial-wpf)
    
 1. 當專案開啟時 Visual Studio 中時，開啟*Program.cs*檔案。 取代為下列程式碼，這會列印到主控台一行，然後擲回 NullReferenceException 的 main （） 方法：
    
@@ -198,4 +196,4 @@ ms.locfileid: "53562057"
 - [偵錯工具安全性](../debugger/debugger-security.md)
 - [偵錯工具簡介](../debugger/debugger-feature-tour.md)
 - [選項、 偵錯，Just In Time 對話方塊](../debugger/just-in-time-debugging-options-dialog-box.md)
-- [安全性警告附加至不受信任的使用者所擁有的處理序可能會造成危險。如果下面的資訊看起來有問題，或者您並不確定，請不要附加至此處理序](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md)
+- [安全性警告：附加至未受信任的使用者所擁有的處理序可能會造成危險。如果下面的資訊看起來有問題，或者您並不確定，請不要附加至此處理序](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md)

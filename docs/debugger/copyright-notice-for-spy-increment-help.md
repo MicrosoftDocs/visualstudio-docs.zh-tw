@@ -1,8 +1,6 @@
 ---
-title: Spy + + 說明的著作權注意事項 |Microsoft 文件
-ms.custom: ''
+title: Spy + + 說明的著作權注意事項 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - coyright, Spy++
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f1779c1aba6d8c15056145994ef4f009ca2b4057
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 7ce4f7a9569f68591c6c1251a8d3780a9a4ab690
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31457760"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53851939"
 ---
 # <a name="copyright-notice-for-spy-help"></a>Spy++ 說明的著作權注意事項
 本文中的資訊可能不經通知即予以變更。 除非另有說明，否則本文範例中所使用的公司、名稱和資料均為虛構。 非經 Microsoft Corporation 的書面許可，不得將本文的任何部分以任何形式或任何方式 (電子或機械式) 重製或傳輸以用於任何用途。  

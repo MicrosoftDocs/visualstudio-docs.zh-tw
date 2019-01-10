@@ -1,8 +1,6 @@
 ---
 title: 錯誤：使用者無法執行預存程序 sp_enable_sql_debug |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: troubleshooting
 dev_langs:
 - CSharp
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7b121b863237a3b12b5131be348581ea3fd043d2
-ms.sourcegitcommit: 75e02ed88a1ace6e8265fd4e3a82a1bc78f3adca
-ms.translationtype: HT
+ms.openlocfilehash: 9c80a4055b899f155b4be8e7832df9f3aa22db20
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/13/2018
-ms.locfileid: "53348575"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53903574"
 ---
 # <a name="error-user-could-not-execute-stored-procedure-spenablesqldebug"></a>錯誤：使用者無法執行預存程序 sp_enable_sql_debug
 

@@ -1,8 +1,6 @@
 ---
 title: 'Idiaenumtables:: Skip |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 604d562168b4d4e9109eb4e48a477b9ee4493a80
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 4791553e15754ec24ad949dcd0abb9fb30190ce7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49860795"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53989425"
 ---
 # <a name="idiaenumtablesskip"></a>IDiaEnumTables::Skip
 略過指定的數目的列舉型別序列中的資料表。  
@@ -27,7 +25,7 @@ ms.locfileid: "49860795"
 ## <a name="syntax"></a>語法  
   
 ```C++  
-HRESULT Skip (   
+HRESULT Skip (   
    ULONG celt  
 );  
 ```  
@@ -39,5 +37,5 @@ HRESULT Skip (
 ## <a name="return-value"></a>傳回值  
  如果成功，則傳回`S_OK`; 否則傳回`S_FALSE`有沒有更多的資料表，以略過。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDiaEnumTables](../../debugger/debug-interface-access/idiaenumtables.md)
