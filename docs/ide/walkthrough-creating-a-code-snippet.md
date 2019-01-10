@@ -2,7 +2,6 @@
 title: 逐步解說：建立程式碼片段
 ms.date: 10/27/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - code snippets, creating
@@ -19,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 517eb98e7ca5b32d07a4501823ca092c366e4639
-ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
+ms.openlocfilehash: 3c1336d5bba93fa12010dadce2a47504fa84995f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39469148"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53890705"
 ---
 # <a name="walkthrough-create-a-code-snippet"></a>逐步解說：建立程式碼片段
 只需要幾個步驟就能建立程式碼片段。 您只需要建立 XML 檔案、填入適當的項目，並在其中新增您的程式碼。 您也可以將參考和取代參數新增至程式碼。 您可以使用 [程式碼片段管理員] ([工具] > [程式碼片段管理員]) 上的 [匯入] 按鈕，將程式碼片段新增至 Visual Studio 安裝。
@@ -52,7 +51,7 @@ ms.locfileid: "39469148"
 
 1.  在 Visual Studio 中建立新的 XML 檔案，並新增上面所示的範本。
 
-2.  在 Title 項目中，填入程式碼片段標題，例如 "Hello World VB"。
+2.  在 **Title** 項目中，填入程式碼片段標題，例如 "Hello World VB"。
 
 3.  在 **Code** 元素的 **Languages** 屬性中，填入程式碼片段的語言。 在此範例中，使用 "VB"。
 

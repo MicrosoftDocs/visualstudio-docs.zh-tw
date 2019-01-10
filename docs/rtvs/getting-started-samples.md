@@ -3,19 +3,18 @@ title: 範例 R 專案
 description: 可讓您開始搭配使用 R 和 Visual Studio 的範例集合索引。
 ms.date: 01/24/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-rtvs
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: adb26b3cf6097d830c899ef4ef251d2066b81a38
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: 80553e54489b5c887facca57f3491fd81fd8d24b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36235248"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53837455"
 ---
 # <a name="r-tools-for-visual-studio-sample-projects"></a>Visual Studio R 工具範例專案
 
@@ -83,7 +82,7 @@ ms.locfileid: "36235248"
 
 ![比較 MLS 和使用 MKL 的 MRO，以及 R 和沒有 MKL 的 MRO](media/samples-speed-comparison.png)
 
-如需 R 與 MRO 和 MLS 的技術比較，請參閱 [Lixun Zhang 關於這主題的詳細討論](http://htmlpreview.github.io/?https://github.com/lixzhang/R-MRO-MRS/blob/master/Introduction_to_MRO_and_MRS.html)。
+如需 R 與 MRO 和 MLS 的技術比較，請參閱 [Lixun Zhang 關於這主題的詳細討論](http://htmlpreview.github.io/? https://github.com/lixzhang/R-MRO-MRS/blob/master/Introduction_to_MRO_and_MRS.html)。
 
 然後，下圖比較建立使用羅吉斯迴歸模型來預測航班延遲超過 15 分鐘時，耗用的時間 (以秒為單位)。  當增加少量的資料列時，CRAN R 中使用的已耗用時間會大幅增加，而 MLS 則只增加大約兩倍。 如需此基準測試的詳細資料，請參閱 *Benchmarks/rxGlm_benchmark.R* 範例。
 

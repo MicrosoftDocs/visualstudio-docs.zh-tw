@@ -3,7 +3,6 @@ title: 祕訣和訣竅，偵錯工具
 description: 了解一些 Visual Studio 偵錯工具支援鮮為人知的功能
 ms.custom: seodec18
 ms.date: 06/15/2017
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - stepping
@@ -15,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 238236df48adab491cd8a1f9282a8f6a440c5321
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 87d74eb960d4e445e457744fd0325e7beb15262e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53055221"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53927151"
 ---
 # <a name="learn-productivity-tips-and-tricks-for-the-debugger-in-visual-studio"></a>了解 Visual Studio 中偵錯工具的產能的秘訣和訣竅
 
@@ -149,7 +148,7 @@ ms.locfileid: "53055221"
 
 若要附加至您執行的應用程式，偵錯工具會載入針對您嘗試偵錯的應用程式的完全相同的組建產生的符號 (.pdb) 檔。 在某些情況下，符號檔的一些知識可以很有幫助。 您可以檢查 Visual Studio 會使用的符號檔的載入**模組**視窗。
 
-開啟**模組**視窗中的選取偵錯時**偵錯 > Windows > 模組**。 **模組**視窗可以告訴您哪些模組偵錯工具會視為使用者程式碼，或[ *My Code*](../debugger/just-my-code.md)，和符號載入模組的狀態。 在大部分情況下，偵錯工具會自動尋找符號檔的使用者程式碼，但如果您想要逐步執行 （或偵錯）.NET framework 程式碼、 系統程式碼或協力廠商程式庫程式碼，需要額外的步驟，以取得正確的符號檔。
+開啟**模組**視窗中的選取偵錯時**偵錯 > Windows > 模組**。 **模組** 視窗可以告訴您哪些模組偵錯工具會視為使用者程式碼，或[ *My Code*](../debugger/just-my-code.md)，和符號載入模組的狀態。 在大部分情況下，偵錯工具會自動尋找符號檔的使用者程式碼，但如果您想要逐步執行 （或偵錯）.NET framework 程式碼、 系統程式碼或協力廠商程式庫程式碼，需要額外的步驟，以取得正確的符號檔。
 
 ![在 [模組] 視窗中檢視符號資訊](../debugger/media/dbg-tips-modules-window.png "ViewSymbolInformation")
 
