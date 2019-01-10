@@ -8,17 +8,17 @@ dev_langs:
 helpviewer_keywords:
 - workbooks, deleting worksheets
 - worksheets, deleting
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7254ba703c0e25d37dd3582d4443a6bdf1653a96
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6b857a84560fe5f8745458154c85494791b579db
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53843381"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154240"
 ---
 # <a name="how-to-programmatically-delete-worksheets-from-workbooks"></a>HOW TO：以程式設計方式從活頁簿中刪除工作表
   您可以刪除活頁簿中的任何工作表。 若要刪除工作表，請使用工作表主項目，或使用活頁簿的工作表集合存取工作表。  

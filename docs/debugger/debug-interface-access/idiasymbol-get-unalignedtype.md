@@ -1,8 +1,6 @@
 ---
 title: 'Idiasymbol:: Get_unalignedtype |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b005ce077aa8cd94efc06c42673609adacaa4abc
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 63094fff1a513b9de0e21fc29ad8aa10fb3746ca
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49906763"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53966793"
 ---
 # <a name="idiasymbolgetunalignedtype"></a>IDiaSymbol::get_unalignedType
 擷取指定使用者定義資料類型是否未對齊的旗標。  
@@ -27,7 +25,7 @@ ms.locfileid: "49906763"
 ## <a name="syntax"></a>語法  
   
 ```C++  
-HRESULT get_unalignedType (   
+HRESULT get_unalignedType (   
    BOOL* pRetVal  
 );  
 ```  
@@ -42,5 +40,5 @@ HRESULT get_unalignedType (
 > [!NOTE]
 >  傳回值為`S_FALSE`表示此屬性不適用於符號。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

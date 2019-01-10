@@ -1,9 +1,7 @@
 ---
 title: 偵錯多執行緒應用程式
 description: 偵錯使用 Visual Studio 中的 [執行緒] 視窗和偵錯位置工具列
-ms.custom: ''
 ms.date: 11/21/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -19,14 +17,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cd66d7f9d8f214e8e7166a77162553b694e20cc5
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: f86e85fd7f5d8c767b64d55efd0837de9f99b340
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389399"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53893703"
 ---
-# <a name="walkthrough-debug-a-multithreaded-app-using-the-threads-window"></a>逐步解說： 偵錯多執行緒的應用程式，使用 [執行緒] 視窗
+# <a name="walkthrough-debug-a-multithreaded-app-using-the-threads-window"></a>逐步解說：使用 [執行緒] 視窗的多執行緒應用程式進行偵錯
 
 數個 Visual Studio 使用者介面項目可協助您偵錯多執行緒應用程式。 這篇文章介紹在程式碼編輯器 視窗中，多執行緒偵錯功能**偵錯位置**工具列上，並**執行緒**視窗。 如需其他工具進行偵錯多執行緒應用程式的資訊，請參閱[開始偵錯多執行緒應用程式](../debugger/get-started-debugging-multithreaded-apps.md)。 
   
@@ -99,7 +97,7 @@ ms.locfileid: "52389399"
 
 1. 開啟**偵錯位置**藉由選取工具列**檢視** > **工具列** > **偵錯位置**。 您也可以在工具列區域中以滑鼠右鍵按一下並選取**偵錯位置**。 
    
-1. **偵錯位置**工具列上有三個欄位：**程序**，**執行緒**，以及**堆疊框架**。 下拉式清單**執行緒**清單，並記下有多少執行緒。 在 [**執行緒**] 清單中，目前執行中執行緒由標記**>** 符號。 
+1. **偵錯位置**工具列有三個欄位：**處理程序**，**執行緒**，以及**堆疊框架**。 下拉式清單**執行緒**清單，並記下有多少執行緒。 在 [**執行緒**] 清單中，目前執行中執行緒由標記**>** 符號。 
    
 1. 在來源的程式碼視窗中，將滑鼠停留在裝訂邊中的執行緒標記圖示，並在資料提示方塊中選取的旗標圖示 （或空的旗標圖示的其中一個）。 旗標圖示會變成紅色。 
    

@@ -1,8 +1,6 @@
 ---
 title: 在 偵錯工具中檢視的往來文章 |Microsoft Docs
-ms.custom: ''
 ms.date: 10/29/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.threads
@@ -25,12 +23,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 764eb46fb387e1a007362b02a0f62cf478c771fe
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: e3b2ed9001d1096dca82a30dab29a67b9e962354
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53066219"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53946158"
 ---
 # <a name="view-threads-in-the-visual-studio-debugger-by-using-the-threads-window"></a>在 Visual Studio 偵錯工具中使用 [執行緒] 視窗中檢視往來文章
 在 [**執行緒**] 視窗中，您可以檢查及使用您要偵錯應用程式中的執行緒。 如需如何使用的逐步指引**執行緒** 視窗中，請參閱[逐步解說：使用 [執行緒] 視窗進行偵錯](../debugger/how-to-use-the-threads-window.md)。
@@ -38,11 +36,11 @@ ms.locfileid: "53066219"
 ## <a name="use-the-threads-window"></a>使用執行緒視窗 
  **執行緒**視窗包含的資料表，其中每個資料列描述您的應用程式中的個別執行緒。 這份表格預設會列出應用程式中的所有執行緒，但是您可以篩選清單，只顯示您感興趣的執行緒。 每個資料行描述不同類型的資訊。 您也可以隱藏部分資料行。 如果您顯示所有資料行時，下列資料行出現，請從左到右：  
   
-- **旗標**在此未標記的專欄中，您可以將標記您要特別注意的執行緒。 如需如何在執行緒的旗標的資訊，請參閱[How to:將執行緒加上旗標和取消旗標](../debugger/how-to-flag-and-unflag-threads.md)。  
+- **旗標**在此未標記的專欄中，您可以將標記您要特別注意的執行緒。 如需如何在執行緒的旗標的資訊，請參閱[How to:將執行緒加上旗標和取消旗標](../debugger/how-to-flag-and-unflag-threads.md)  
   
 - 目前的執行緒此未加上標籤的資料行中的黃色箭號表示目前的執行緒。 箭號外框表示非目前執行緒的目前偵錯工具內容。
   
-- ID顯示每個執行緒的識別碼。  
+- **ID**顯示每個執行緒的識別碼。  
   
 - Managed ID會顯示 managed 執行緒的 managed 的識別碼。  
   
@@ -50,7 +48,7 @@ ms.locfileid: "53066219"
   
 - **name**)。依名稱識別每個執行緒，如果有的話，或為\<無名稱 >。  
   
-- **位置**顯示執行緒正在執行。 您可以展開這個位置，以顯示執行緒的整個呼叫堆疊。  
+- **location**：顯示執行緒正在執行。 您可以展開這個位置，以顯示執行緒的整個呼叫堆疊。  
   
 - 優先權（預設為隱藏） 的進階資料行，顯示 優先順序 或 系統指派給每個執行緒的優先順序。  
   

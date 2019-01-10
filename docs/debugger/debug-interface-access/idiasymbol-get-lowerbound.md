@@ -1,8 +1,6 @@
 ---
 title: 'Idiasymbol:: Get_lowerbound |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bc793f3cc66a822dd661c0e23cf98a3734a5695f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 86348cd58b8f5195b39c64dd337deddc65e32089
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49912561"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53920228"
 ---
 # <a name="idiasymbolgetlowerbound"></a>IDiaSymbol::get_lowerBound
 擷取 FORTRAN 陣列維度的下限。  
@@ -27,7 +25,7 @@ ms.locfileid: "49912561"
 ## <a name="syntax"></a>語法  
   
 ```C++  
-HRESULT get_lowerBound (   
+HRESULT get_lowerBound (   
    IDiaSymbol** pRetVal  
 );  
 ```  
@@ -42,5 +40,5 @@ HRESULT get_lowerBound (
 > [!NOTE]
 >  傳回值為`S_FALSE`表示此屬性不適用於符號。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

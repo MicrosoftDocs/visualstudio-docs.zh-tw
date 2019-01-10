@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
@@ -24,12 +23,12 @@ caps.latest.revision: 56
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 90639e9f3f24a7985255e0a7ea42e303b9917739
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 5ca54797fe9a8aa4adac7883aaeda761ba08509d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53059427"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53959582"
 ---
 # <a name="use-regular-expressions-in-visual-studio"></a>在 Visual Studio 中使用規則運算式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +40,7 @@ Visual Studio 使用 .NET Framework 規則運算式來尋找和取代文字。 �
 > 在 Windows 作業系統中，大部分的程式行都是以 "\r\n" 結尾 (歸位字元後面接著新行)。 這些字元並不可見，但是會顯示在編輯器中，並傳遞至 .NET 規則運算式服務。
 
 > [!TIP]
-> 如需取代模式中所用規則運算式的資訊，請參閱[替代](http://msdn.microsoft.com/library/d1f52431-1c7d-4dc6-8792-6b988256892e)。 若要使用已編號的擷取群組，指定編號的群組之語法為 `$1`，以及使用 `(x)` 指定考慮中的此群組。 例如，群組的規則運算式`(\d)([a-z])`下列字串中找到四個的相符項目：**1a 2b 3c 4d**。 取代字串 `z$1` 會將該字串轉換為 **z1 z2 z3 z4**。
+> 如需取代模式中所用規則運算式的資訊，請參閱[替代](http://msdn.microsoft.com/library/d1f52431-1c7d-4dc6-8792-6b988256892e)。 若要使用已編號的擷取群組，指定編號的群組之語法為 `$1`，以及使用 `(x)` 指定考慮中的此群組。 例如，群組的規則運算式`(\d)([a-z])`下列字串中找到四個的相符項目：1a 2b 3c 4d**。 取代字串 `z$1` 會將該字串轉換為 **z1 z2 z3 z4**。
 
 ## <a name="regular-expression-examples"></a>規則運算式範例
 

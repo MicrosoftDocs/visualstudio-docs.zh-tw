@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-install
+ms.technology: vs-ide-install
 ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
@@ -17,12 +16,12 @@ caps.latest.revision: 44
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: bc1a6ba1a36dd7514257fcbb8ba4c26ca1ee6116
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 0045ff701947f834bd38dfff7c90b7388e9353b7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53065515"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53951926"
 ---
 # <a name="how-to-create-and-run-an-unattended-installation-of-visual-studio"></a>HOW TO：建立和執行自動的安裝的 Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -178,7 +177,7 @@ ms.locfileid: "53065515"
 
 2.  輸入產品金鑰。
 
-     如需詳細資訊[，請參閱Microsoft 知識庫中的 How to找出 Visual Studio 產品金鑰](../install/how-to-locate-the-visual-studio-product-key.md)而[How to:部署 Visual Studio 時會自動套用產品金鑰](../install/how-to-automatically-apply-product-keys-when-deploying-visual-studio.md)主題。)
+     如需詳細資訊，請參閱[如何：找出 Visual Studio 產品金鑰](../install/how-to-locate-the-visual-studio-product-key.md)而[How to:部署 Visual Studio 時會自動套用產品金鑰](../install/how-to-automatically-apply-product-keys-when-deploying-visual-studio.md)主題。)
 
 ## <a name="see-also"></a>請參閱
  [安裝 Visual Studio](../install/install-visual-studio-2015.md)

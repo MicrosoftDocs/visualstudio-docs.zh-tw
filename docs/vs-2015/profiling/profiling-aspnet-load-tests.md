@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: c3f5c363-be79-40b5-bfa7-db8d21378d8d
@@ -14,12 +13,12 @@ caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8063c9ff07fc3c8159ea897b0120a1b8a538fa4a
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
-ms.translationtype: HT
+ms.openlocfilehash: ec89f50fb809b379f3c1c2f0aaac49bd02ee1b15
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53802442"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53932864"
 ---
 # <a name="profiling-aspnet-load-tests"></a>對 ASP.NET 負載測試進行程式碼剖析
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

@@ -2,7 +2,6 @@
 title: 偵錯 UWP 應用程式 |Microsoft Docs
 ms.custom: seodec18
 ms.date: 01/17/2017
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -14,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 14761da614ddcd36e8ca9bcec2a686f125ab53bd
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 58f271bd1d4e0a7a15d1f08fe89b1ef252bdefd4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53064017"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53902197"
 ---
 # <a name="debug-universal-windows-apps-uwp-in-visual-studio"></a>偵錯在 Visual Studio 中的通用 Windows App (UWP)
 
@@ -34,4 +33,4 @@ Visual Studio 偵錯工具進行偵錯 UWP 應用程式提供完整的支援。 
 
   
 ## <a name="see-also"></a>請參閱  
- [使用靜態程式碼分析來分析程式碼品質](../test/analyze-the-code-quality-of-store-apps-using-visual-studio-static-code-analysis.md)
+ [使用靜態程式碼分析來分析程式碼品質](/visualstudio/code-quality/code-analysis-for-managed-code-overview)

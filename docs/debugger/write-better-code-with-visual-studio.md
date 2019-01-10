@@ -2,10 +2,9 @@
 title: 透過撰寫更好的 C# 程式碼來修正錯誤 (Bug)
 description: 了解如何撰寫更好的程式碼較少的 bug
 ms.custom:
-- debug-experiments
+- debug-experiment
 - seodec18
 ms.date: 11/20/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - debugger
@@ -14,16 +13,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a2e3aaebd02754556f028f53a190160f502ef9ca
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: a6be1f46c8a529eb7f2e7d21e34fb1a58458a3de
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53051671"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53967572"
 ---
 # <a name="fix-bugs-by-writing-better-c-code-using-visual-studio"></a>藉由撰寫更好修正 bugC#使用 Visual Studio 程式碼
 
-偵錯程式碼時，可能很耗時-，而且有時候挫折-工作。 需要一段時間，以了解如何有效地偵錯，但功能強大的 IDE，例如 Visual Studio 可讓您的工作輕鬆許多。 IDE 可協助您更快速地偵錯您的程式碼並不只是的但它也可以幫助您撰寫更好的程式碼且錯誤更少。 我們在本文中的目標是為您提供的偵錯的程序的整體檢視，讓您將了解何時使用程式碼分析工具，以使用偵錯工具，以及何時使用其他工具時。  
+偵錯程式碼時，可能很耗時-，而且有時候挫折-工作。 需要一段時間，以了解如何有效地偵錯，但功能強大的 IDE，例如 Visual Studio 可讓您的工作輕鬆許多。 IDE 可協助您更快速地偵錯您的程式碼並不只是的但它也可以幫助您撰寫更好的程式碼且錯誤更少。 我們在本文中的目標是為您提供的偵錯的程序的整體檢視，讓您將了解何時使用程式碼分析工具，以使用偵錯工具，以及何時使用其他工具時。
 
 在本文中，我們會討論利用 IDE，可讓您偵錯工作階段更具生產力。 我們介紹數個工作，例如：
 
@@ -305,7 +304,7 @@ namespace Console_Parse_JSON_DotNetCore
 
             for (int i = 0; i < users.Length; i++)
             {
-                List<User> result = localDB.FindAll(delegate (User u) { 
+                List<User> result = localDB.FindAll(delegate (User u) {
                     return u.lastname == users[i].lastname;
                     });
                 foreach (var item in result)
@@ -317,7 +316,7 @@ namespace Console_Parse_JSON_DotNetCore
             Console.ReadKey();
         }
 
-        // Deserialize a JSON stream to a User object.  
+        // Deserialize a JSON stream to a User object.
         public static User[] ReadToObject(string json)
         {
             User deserializedUser = new User();

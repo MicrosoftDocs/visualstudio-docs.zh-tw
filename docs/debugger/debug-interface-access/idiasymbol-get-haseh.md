@@ -1,8 +1,6 @@
 ---
 title: 'Idiasymbol:: Get_haseh |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: de561482d0d6d98006fa8cda2299125be666f073
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 254fbd73f740daeb4f8fe8087b76111985e3e43e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49917228"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53919290"
 ---
 # <a name="idiasymbolgethaseh"></a>IDiaSymbol::get_hasEH
 擷取指定的函式是否包含任何非受控 c + + 樣式例外狀況處理 （例如 try/catch 區塊） 的旗標。  
@@ -44,10 +42,10 @@ HRESULT get_hasEH(
   
 ## <a name="requirements"></a>需求  
   
-|需求|描述|  
+|需求|說明|  
 |-----------------|-----------------|  
 |標頭：|dia2.h|  
 |版本:|DIA SDK 8.0 版|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
