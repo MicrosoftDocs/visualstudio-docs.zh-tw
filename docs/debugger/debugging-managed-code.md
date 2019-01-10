@@ -1,8 +1,6 @@
 ---
 title: 偵錯 Managed 程式碼 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -18,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 92d8da8c03cb2b76e0b47043085af66731958b4b
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
-ms.translationtype: HT
+ms.openlocfilehash: 3ffb9361e06218d3625bfd5d220c38f86a8b70f7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53561888"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53867036"
 ---
 # <a name="debugging-managed-code"></a>偵錯 Managed 程式碼
 
@@ -77,7 +75,7 @@ ms.locfileid: "53561888"
 [偵錯和分析](/dotnet/framework/debug-trace-profile/index)  
 討論偵錯 .NET Framework 應用程式，及其組態需求。
 
-[對指令碼和 Web 應用程式進行偵錯](../debugger/debugging-web-applications-and-script.md)  
+[對指令碼和 Web 應用程式進行偵錯](/visualstudio/debugger/how-to-enable-debugging-for-aspnet-applications)  
 描述您在偵錯指令碼和 Web 應用程式時會遇到的一般偵錯問題和技術。
 
 [Visual Studio 2015 中偵錯工具的新功能](../debugger/what-s-new-for-the-debugger-in-visual-studio.md)  

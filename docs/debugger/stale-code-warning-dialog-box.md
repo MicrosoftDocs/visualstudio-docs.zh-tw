@@ -1,8 +1,6 @@
 ---
 title: 過時的程式碼警告對話方塊 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.ENC.stalecode
@@ -22,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3a2f7f1817b562b555a8ac026e165712bb81f912
-ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
-ms.translationtype: HT
+ms.openlocfilehash: 82731ba2c22c18b880e8a035712280eb5e5afe68
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53684726"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53877454"
 ---
 # <a name="stale-code-warning-dialog-box"></a>過時程式碼警告對話方塊
 

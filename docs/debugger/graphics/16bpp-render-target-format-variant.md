@@ -1,8 +1,6 @@
 ---
 title: 16bpp 呈現目標格式變異 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 24b22ad9-5ad0-4161-809a-9b518eb924bf
 author: mikejo5000
@@ -10,12 +8,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f9c72abaaf1a799316686c77b127952f1fe4f689
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: ab58cbcd6644d540b7db2efb1cad59e5d80f8530
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49832884"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53986657"
 ---
 # <a name="16-bpp-render-target-format-variant"></a>16 bpp 轉譯目標格式變異
 將所有呈現目標和背景緩衝區的像素格式設定為 DXGI_FORMAT_B5G6R5_UNORM。  

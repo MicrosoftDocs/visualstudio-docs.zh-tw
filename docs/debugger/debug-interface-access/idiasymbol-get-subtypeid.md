@@ -1,8 +1,6 @@
 ---
-title: IDiaSymbol::get_subTypeId |Microsoft 文件
-ms.custom: ''
+title: IDiaSymbol::get_subTypeId |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c8fc4036ac0c5f148ca067a00b635ae7023232ed
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 858c4a5040b1823392d8a572a008f629c64745d7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31469707"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53919303"
 ---
 # <a name="idiasymbolgetsubtypeid"></a>IDiaSymbol::get_subTypeId
 擷取子類型識別碼。  
@@ -34,7 +32,7 @@ HRESULT get_subTypeId(
  [out]指標`DWORD`保存子類型識別碼。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。  
+ 如果成功，則傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

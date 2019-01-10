@@ -2,7 +2,6 @@
 title: 偵錯工具巡覽程式碼 |Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/12/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.execution
@@ -16,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f951732704b178c2726d60f20fc4fedcbd4cde90
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 66478505fe59ef65eb703fef6be8941deebe3d49
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53068269"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53931420"
 ---
 # <a name="navigate-through-code-with-the-visual-studio-debugger"></a>Visual Studio 偵錯工具巡覽程式碼
 

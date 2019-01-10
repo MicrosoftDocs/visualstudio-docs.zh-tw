@@ -1,8 +1,6 @@
 ---
 title: IDiaPropertyStorage::ReadLONG |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ee4ff1b6553968ad64f2fba5b005478bbba54e3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: aefa38870d3639b2277dd4af2c38d04b8fbb7c00
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49937924"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53889962"
 ---
 # <a name="idiapropertystoragereadlong"></a>IDiaPropertyStorage::ReadLONG
 讀取`LONG`屬性集合中的值。  
@@ -27,7 +25,7 @@ ms.locfileid: "49937924"
 ## <a name="syntax"></a>語法  
   
 ```C++  
-HRESULT ReadDLONG (   
+HRESULT ReadDLONG (   
    PROPID id,  
    LONG*  pValue  
 );  
@@ -46,5 +44,5 @@ HRESULT ReadDLONG (
 ## <a name="remarks"></a>備註  
  A`LONG`由 Windows 與 32 位元帶正負號的整數所定義。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)

@@ -2,7 +2,6 @@
 title: 圖形診斷 |Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.graphics
@@ -12,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e40a8ce0f2785aa606922d3f9c49f3aad48f7591
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
-ms.translationtype: MTE95
+ms.openlocfilehash: fb7289759499c4715fba712ed52f1664b3dc3c3b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53058613"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53890926"
 ---
 # <a name="visual-studio-graphics-diagnostics"></a>Visual Studio 圖形診斷
 Visual Studio*圖形診斷*是一份記錄並分析 Direct3D 應用程式中的轉譯和效能問題的工具。 圖形診斷可以用於在 Windows 電腦、Windows 裝置模擬器或者遠端電腦或裝置上本機執行的應用程式。  
@@ -82,6 +81,5 @@ Visual Studio*圖形診斷*是一份記錄並分析 Direct3D 應用程式中的�
 
 | 標題 | 說明 |
 | - | - |
-| [偵錯工具功能導覽](../debugging-in-visual-studio.md) | 介紹 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 中的偵錯功能。 |
+| [偵錯工具功能導覽](/visualstudio/debugger/debugger-feature-tour) | 介紹 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 中的偵錯功能。 |
 | [DirectX 圖形和遊戲](http://go.microsoft.com/fwlink/?LinkId=256498) | 提供討論 DirectX 圖形技術的文章。 |
-

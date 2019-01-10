@@ -1,8 +1,6 @@
 ---
-title: 錯誤： 混合的模式偵錯 IA64 處理序不支援 |Microsoft 文件
-ms.custom: ''
+title: 錯誤：不支援混合的模式偵錯，如 IA64 處理 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: troubleshooting
 f1_keywords:
 - vs.debug.error.interop_unsupported_ia64
@@ -16,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0446463142447dc05dc8ef50fb489585db21b381
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 56df416b7142e0ff9f7e96b8c1b2cba6e73b65a9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31471355"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53916770"
 ---
 # <a name="error-mixed-mode-debugging-for-ia64-processes-is-unsupported"></a>錯誤：不支援 IA64 處理序的混合模式偵錯
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 偵錯工具不支援對 Itanium 處理序中混合的原生和 Managed 程式碼進行偵錯。  
@@ -30,5 +28,5 @@ ms.locfileid: "31471355"
   
 -   建置 32 位元版本的應用程式以進行偵錯。  
   
-## <a name="see-also"></a>另請參閱  
- [遠端偵錯](../debugger/remote-debugging.md)
+## <a name="see-also"></a>請參閱  
+ [Remote Debugging](../debugger/remote-debugging.md)

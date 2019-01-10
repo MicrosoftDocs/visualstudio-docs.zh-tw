@@ -1,8 +1,6 @@
 ---
 title: 'Idiaenumsegments:: Skip |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 595623b93bbca7d5818d242f1c1818d24ff48e77
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 3e8fb7de90f43b6f8c4992366993c0c3d8409aba
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49938886"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53917575"
 ---
 # <a name="idiaenumsegmentsskip"></a>IDiaEnumSegments::Skip
 略過指定的數目的列舉型別序列中的區段。  
@@ -27,7 +25,7 @@ ms.locfileid: "49938886"
 ## <a name="syntax"></a>語法  
   
 ```C++  
-HRESULT Skip (   
+HRESULT Skip (   
    ULONG celt  
 );  
 ```  
@@ -39,5 +37,5 @@ HRESULT Skip (
 ## <a name="return-value"></a>傳回值  
  如果成功，則傳回`S_OK`; 否則傳回`S_FALSE`如果有沒有更多的區段，以略過。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDiaEnumSegments](../../debugger/debug-interface-access/idiaenumsegments.md)

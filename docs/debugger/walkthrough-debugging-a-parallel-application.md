@@ -1,9 +1,7 @@
 ---
 title: 偵錯平行應用程式 |Microsoft Docs
 description: 使用 Visual Studio 中的平行工作 和 平行堆疊視窗進行偵錯
-ms.custom: ''
 ms.date: 03/22/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -24,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0623c3e0fdd0db0315e5fe719c9a81ec97e6a2c6
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.openlocfilehash: 2ff1876ba76421818f3a59616cfdf26aae41adb9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53562096"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53867143"
 ---
 # <a name="walkthrough-debugging-a-parallel-application-in-visual-studio"></a>逐步解說：偵錯在 Visual Studio 中的平行應用程式
 本逐步解說顯示如何使用 [平行工作] 和 [平行堆疊] 視窗來偵錯平行應用程式。 這些視窗可協助您了解，並確認使用的程式碼的執行階段行為[Task Parallel Library (TPL)](/dotnet/standard/parallel-programming/task-parallel-library-tpl)或[並行執行階段](/cpp/parallel/concrt/concurrency-runtime)。 本逐步解說提供具有內建中斷點的範例程式碼。 在程式碼中斷之後，本逐步解說會顯示如何使用 [平行工作] 和 [平行堆疊] 視窗來檢查程式碼。  

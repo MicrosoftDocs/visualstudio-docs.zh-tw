@@ -1,8 +1,6 @@
 ---
 title: 使用工作視窗 |Microsoft Docs
-ms.custom: ''
 ms.date: 03/18/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.paralleltasks
@@ -19,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bddcb7b36cd119f20fe8e03ed1152662284ac8c0
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
-ms.translationtype: HT
+ms.openlocfilehash: dfb95e3bc1a2a1aaf94db229d951773e97d4ef2d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53561573"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53942836"
 ---
 # <a name="using-the-tasks-window"></a>使用工作視窗
 

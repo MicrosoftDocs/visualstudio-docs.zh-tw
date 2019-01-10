@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
@@ -19,12 +18,12 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e552b75ea5ba34004d0c53850f1af77a120b20cb
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: a3a530f74e1cf90012f9724d68493b1602b0e6dc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53050253"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53938717"
 ---
 # <a name="how-to-extend-the-visual-studio-build-process"></a>HOW TO：延伸 Visual Studio 建置流程
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

@@ -2,7 +2,6 @@
 title: 檢查變數-[自動變數] 和 [區域變數] 視窗 |Microsoft Docs
 ms.custom: seodec18
 ms.date: 10/18/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.autos
@@ -16,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 584704471f9346611f240a3a24e0d45cf2eec364
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: e23f61f7de4b2723e7be18b6beb76b17fd278cf2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53068350"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53947409"
 ---
 # <a name="inspect-variables-in-the-autos-and-locals-windows"></a>檢查 [自動變數] 和 [區域變數] 視窗中的變數
 
