@@ -1,8 +1,6 @@
 ---
-title: Custom （偵錯介面存取 SDK） |Microsoft 文件
-ms.custom: ''
+title: Custom （偵錯介面存取 SDK） |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,24 +12,24 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 11d6cff8865fa0e19611399b4c2f4bf7e60f6bf1
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: aaa6934fbed6780fb9a8a3be6685dbb7bcf0fbc8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31458449"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53834356"
 ---
 # <a name="custom-debug-interface-access-sdk"></a>Custom (偵錯介面存取 SDK)
-某些編譯器引入不會識別任何標準語彙符號類型的符號。 這些符號所識別的`SymTagCustom`標記。  
+某些編譯器導入不會識別任何標準語彙符號類型的符號。 這些符號由識別`SymTagCustom`標記。  
   
 ## <a name="properties"></a>屬性  
  下表顯示適用於此符號類型的屬性。  
   
-|屬性|資料類型|描述|  
+|屬性|資料類型|說明|  
 |--------------|---------------|-----------------|  
-|[IDiaSymbol::get_dataBytes](../../debugger/debug-interface-access/idiasymbol-get-databytes.md)|`BYTE`|與符號關聯的資料陣列。|  
+|[IDiaSymbol::get_dataBytes](../../debugger/debug-interface-access/idiasymbol-get-databytes.md)|`BYTE`|與符號相關聯的資料陣列。|  
 |[IDiaSymbol::get_symIndexId](../../debugger/debug-interface-access/idiasymbol-get-symindexid.md)|`DWORD`|符號的索引識別碼。|  
 |[IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)|`DWORD`|傳回`SymTagCustom`(其中[SymTagEnum 列舉](../../debugger/debug-interface-access/symtagenum.md)值)。|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [符號類型的語彙階層架構](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md)

@@ -1,8 +1,6 @@
 ---
-title: 功能表命令 |Microsoft 文件
-ms.custom: ''
+title: 功能表命令 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Spy++, menu commands
@@ -13,37 +11,37 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d494fa3f5aa50cc761152e015df34e76341ed074
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 59afcb8db6fbfa8aa2e6891b954b486eb4ec197e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31476032"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53830673"
 ---
 # <a name="menu-commands"></a>功能表命令
-本節中的說明主題清單 Spy + + 功能表上可用的命令。  
+在本節中的 [說明] 主題會列出可以使用 Spy + + 功能表上的命令。  
   
 ## <a name="in-this-section"></a>本節內容  
  [Spy 功能表命令](../debugger/spy-menu-commands.md)  
- 描述可從每個命令**Spy**功能表。  
+ 描述每個命令可從**Spy**功能表。  
   
  [樹狀結構功能表命令](../debugger/tree-menu-commands.md)  
- 描述可從每個命令**樹狀**功能表。  
+ 描述每個命令可從**樹狀結構**功能表。  
   
  [搜尋功能表命令](../debugger/search-menu-commands.md)  
- 描述可從每個命令**搜尋**功能表。  
+ 描述每個命令可從**搜尋**功能表。  
   
  [檢視功能表命令](../debugger/view-menu-commands.md)  
- 描述可從每個命令**檢視**功能表。  
+ 描述每個命令可從**檢視**功能表。  
   
  [訊息功能表命令](../debugger/messages-menu-commands.md)  
- 描述可從每個命令**訊息**功能表。  
+ 描述每個命令可從**訊息**功能表。  
   
  [視窗功能表命令](../debugger/window-menu-commands.md)  
- 描述可從每個命令**視窗**功能表。  
+ 描述每個命令可從**視窗**功能表。  
   
  [說明功能表命令](../debugger/help-menu-commands.md)  
- 描述可從每個命令**協助**功能表。  
+ 描述每個命令可從**協助**功能表。  
   
 ## <a name="related-sections"></a>相關章節  
  [使用 Spy++](../debugger/using-spy-increment.md)  
@@ -53,4 +51,4 @@ ms.locfileid: "31476032"
  說明 windows、 訊息、 處理程序和執行緒的 Spy + + 樹狀結構檢視。  
   
  [Spy++ 參考](../debugger/spy-increment-reference.md)  
- 包含本節中，而且各節描述每個 Spy + + 對話方塊。
+ 包含本節中，並各節描述每個 Spy + + 對話方塊。

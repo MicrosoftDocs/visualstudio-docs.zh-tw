@@ -1,8 +1,6 @@
 ---
 title: 使用者程式碼，Just My code 偵錯 |Microsoft Docs
-ms.custom: ''
 ms.date: 10/22/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 0f0df097-bbaf-46ad-9ad1-ef5f40435079
 author: mikejo5000
@@ -10,12 +8,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 01e36c528b71bb49b29265890ca6c48863f01be9
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 99c31291e31821f79e23f507e37003c571a8ab7c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389023"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53952043"
 ---
 # <a name="debug-only-user-code-with-just-my-code"></a>只有使用 Just My Code 的使用者程式碼進行偵錯 
 
@@ -137,12 +135,12 @@ A *.natstepfilter*檔案是 XML 檔案使用此語法：
   
 ```  
   
-|元素|描述|  
+|元素|說明|  
 |-------------|-----------------|  
-|`Function`|必要。 指定一個或多個函式做為非使用者函式。|  
-|`Name`|必要。 指定要比對的完整函式名稱之 ECMA-262 格式化規則運算式。 例如: <br /><br /> `<Name>MyNS::MyClass.*</Name>`<br /><br /> 告知偵錯工具在 `MyNS::MyClass` 中的所有方法要視為非使用者程式碼。 該比對會區分大小寫。|  
+|`Function`|必要項。 指定一個或多個函式做為非使用者函式。|  
+|`Name`|必要項。 指定要比對的完整函式名稱之 ECMA-262 格式化規則運算式。 例如：<br /><br /> `<Name>MyNS::MyClass.*</Name>`<br /><br /> 告知偵錯工具在 `MyNS::MyClass` 中的所有方法要視為非使用者程式碼。 該比對會區分大小寫。|  
 |`Module`|選擇性。 指定包含此函式的模組之完整路徑的 ECMA-262 格式化規則運算式。 該比對不區分大小寫。|  
-|`Action`|必要。 區分大小寫值的其中之一：<br /><br /> `NoStepInto`  -會告知偵錯工具不進入函式。<br /> `StepInto`  -會告知偵錯工具逐步執行函式中，覆寫任何其他`NoStepInto`相符的函式。|  
+|`Action`|必要項。 區分大小寫值的其中之一：<br /><br /> `NoStepInto`  -會告知偵錯工具不進入函式。<br /> `StepInto`  -會告知偵錯工具逐步執行函式中，覆寫任何其他`NoStepInto`相符的函式。|  
   
 ###  <a name="BKMK_CPP_Customize_call_stack_behavior"></a> 自訂 c + + 呼叫堆疊行為  
 
@@ -175,22 +173,22 @@ A *.natjmc*檔案是 XML 檔案使用此語法：
   
  **模組項目屬性**  
   
-|屬性|描述|  
+|屬性|說明|  
 |---------------|-----------------|  
-|`Name`|必要。 該模組的完整路徑。 您可以使用 Windows 萬用字元`?`（零或一個字元） 和`*`（零或多個字元）。 例如，套用至物件的<br /><br /> `<Module Name="?:\3rdParty\UtilLibs\*" />`<br /><br /> 會告知偵錯工具中的所有模組都視為*\3rdParty\UtilLibs*為外部程式碼的任何磁碟機上。|  
+|`Name`|必要項。 該模組的完整路徑。 您可以使用 Windows 萬用字元`?`（零或一個字元） 和`*`（零或多個字元）。 例如，套用至物件的<br /><br /> `<Module Name="?:\3rdParty\UtilLibs\*" />`<br /><br /> 會告知偵錯工具中的所有模組都視為*\3rdParty\UtilLibs*為外部程式碼的任何磁碟機上。|  
 |`Company`|選擇性。 發行內嵌於可執行檔之模組的公司名稱。 您可以使用這個屬性使模組意義清楚。|  
   
  **檔案項目屬性**  
   
-|屬性|描述|  
+|屬性|說明|  
 |---------------|-----------------|  
-|`Name`|必要。 要視為外部程式碼的原始程式檔之完整路徑。 在指定路徑時，您可以使用 Windows 萬用字元 `?` 和 `*`。|  
+|`Name`|必要項。 要視為外部程式碼的原始程式檔之完整路徑。 在指定路徑時，您可以使用 Windows 萬用字元 `?` 和 `*`。|  
   
  **Function 項目屬性**  
   
-|屬性|描述|  
+|屬性|說明|  
 |---------------|-----------------|  
-|`Name`|必要。 要視為外部程式碼的函式之完整名稱。|  
+|`Name`|必要項。 要視為外部程式碼的函式之完整名稱。|  
 |`Module`|選擇性。 包含此函式的模組名稱或完整路徑。 您可以使用這個屬性使具有相同名稱的函式意義清楚。|  
 |`ExceptionImplementation`|當設定為 `true` 時，此呼叫堆疊會顯示擲回例外狀況的函式，而不是這個函式。|  
   

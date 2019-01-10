@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-install
+ms.technology: vs-ide-install
 ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
@@ -17,12 +16,12 @@ caps.latest.revision: 14
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 4dff5f290461ee3863a533adb79f2af0b32202b2
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 0cc19558303a07c3bcd8e134096d311d36f29f34
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53052980"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53823944"
 ---
 # <a name="install-multiple-language-versions-of-visual-studio"></a>安裝多個語言版本的 Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

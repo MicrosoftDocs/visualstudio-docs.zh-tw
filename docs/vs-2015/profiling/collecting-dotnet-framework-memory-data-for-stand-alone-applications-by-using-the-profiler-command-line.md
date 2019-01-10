@@ -14,12 +14,12 @@ caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7cf9277b7ef80997fc4300ca7e96569048231c94
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.openlocfilehash: fc3a109f66a7f761cf31dc6892207a00cc484148
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51766516"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53866357"
 ---
 # <a name="collecting-net-framework-memory-data-for-stand-alone-applications-by-using-the-profiler-command-line"></a>使用程式碼剖析工具命令列收集獨立應用程式的 .NET Framework 記憶體資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "51766516"
 |----------|---------------------|  
 |**啟動應用程式並分析 .NET 記憶體**|-   [如何：使用分析工具啟動 .NET Framework 應用程式以收集記憶體資料](../profiling/how-to-launch-a-stand-alone-dotnet-framework-application-with-the-profiler-to-collect-memory-data-by-using-the-command-line.md)|  
 |**將分析工具附加至 .NET 應用程式**|-   [如何：將分析工具附加至 .NET Framework 應用程式以收集記憶體資料](../profiling/how-to-attach-the-profiler-to-a-dotnet-framework-stand-alone-application-to-collect-memory-data-by-using-the-command-line.md)|  
-|**檢測應用程式以收集 .NET 記憶體資料**|-   [如何：使用分析工具檢測獨立的 .NET Framework 元件並收集記憶體資料](../profiling/how-to-instrument-a-stand-alone-dotnet-framework-component-and-collect-memory-data-with-the-profiler-by-using-the-command-line.md)|  
+|**檢測應用程式以收集 .NET 記憶體資料**|-   [如何：使用分析工具檢測獨立的 .NET Framework 元件並收集記憶體資料](/visualstudio/profiling/how-to-instrument-a-dotnet-framework-component-and-collect-memory-data?view=vs-2015)|  
   
 ## <a name="related-tasks"></a>相關工作  
   

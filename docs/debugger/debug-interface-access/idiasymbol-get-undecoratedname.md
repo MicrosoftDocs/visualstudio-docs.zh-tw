@@ -1,8 +1,6 @@
 ---
 title: 'Idiasymbol:: Get_undecoratedname |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a44a69fef0f77bcdbc07efb283aebd0ae95baa3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 5f0259a99d292f5852af36a9503d94d6f2eddb1c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49832689"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53867874"
 ---
 # <a name="idiasymbolgetundecoratedname"></a>IDiaSymbol::get_undecoratedName
 擷取為 c + + 裝飾，或連結，名稱的未裝飾的名稱。  
@@ -27,7 +25,7 @@ ms.locfileid: "49832689"
 ## <a name="syntax"></a>語法  
   
 ```C++  
-HRESULT get_undecoratedName (   
+HRESULT get_undecoratedName (   
    BSTR* pRetVal  
 );  
 ```  
@@ -42,5 +40,5 @@ HRESULT get_undecoratedName (
 > [!NOTE]
 >  傳回值為`S_FALSE`表示此屬性不適用於符號。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

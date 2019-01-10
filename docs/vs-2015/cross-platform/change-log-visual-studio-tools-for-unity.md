@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- tgt-pltfrm-cross-plat
+ms.technology: tgt-pltfrm-cross-plat
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ea490b7e-fc0d-44b1-858a-a725ce20e396
@@ -14,12 +13,12 @@ caps.latest.revision: 14
 author: conceptdev
 ms.author: crdun
 manager: ghogen
-ms.openlocfilehash: f21a5491d1b0e23bff90ce0105b81eb6291ac7e5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.openlocfilehash: e23608f3fbbb14bd6d8f8c0494cb1ae2784358fa
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51807188"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53837965"
 ---
 # <a name="change-log-visual-studio-tools-for-unity"></a>變更記錄 (Visual Studio Tools for Unity)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -126,7 +125,7 @@ Visual Studio Tools for Unity 變更記錄。
 
 -   已修正 Windows 市集 App 之 UnityEngine 和 UnityEditor 組件的參考。
 
--   已修正當偵錯工具逐步執行時的錯誤：無法逐步執行，一般例外狀況。
+-   修正在偵錯工具中逐步執行時的錯誤：無法逐步執行，發生一般例外狀況。
 
 -   已修正在 Visual Studio 2015 的叫用次數中斷點。
 
@@ -206,13 +205,13 @@ Visual Studio Tools for Unity 變更記錄。
 
     -   安裝 Unity 5 的 Visual Studio Tools for Unity 套件。
 
--   **文件：** 提升文件產生的效能。
+-   **文件：** 改善文件產生的效能。
 
 -   **精靈：** 支援 Unity 4.6 和 Unity 5 的新 MonoBehavior 方法。
 
 -   **Unity：** 在專案檔產生期間，查閱 .rsp 檔中的不安全旗標和自訂定義。
 
--   **UI：** 在 Visual Studio 中新增 Visual Studio Tools for Unity [選項]  對話方塊。
+-   **UI：** 在 Visual Studio 中新增 Visual Studio Tools for Unity [選項] 對話方塊。
 
 ### <a name="bug-fixes"></a>Bug 修正
 
@@ -252,7 +251,7 @@ Visual Studio Tools for Unity 變更記錄。
 
 -   **精靈：** 更正產生程式碼時的 MonoBehavior 方法參數順序。
 
--   **UI：** 內容功能表和圖示支援 Visual Studio 佈景主題。
+-   **UI：** 支援操作功能表和圖示的 Visual Studio 佈景主題。
 
 ## <a name="20-preview"></a>2.0 Preview
  發行日期：2014 年 11 月 12 日
@@ -597,21 +596,21 @@ Visual Studio Tools for Unity 變更記錄。
 
 -   修正 Bug UVS-48：輸入雙引號有時會產生錯誤並中斷所有函式 (程式碼完成、語法反白顯示等)。
 
--   已修正 Bug UVS-46：按一下 Visual Studio 的 [錯誤清單] 時，重複開啟指令碼檔案 (UnityScript)。
+-   修正 Bug UVS-46：按一下 Visual Studio 的 [錯誤清單] 時，重複開啟指令碼檔案 (UnityScript)。
 
--   已修正 Bug UVS-42：狀態列中的 Unity 連線標誌不會處理 VS 2012 中的滑鼠事件。
+-   修正 Bug UVS-42：VS 2012 中狀態列的 Unity 連線能力標誌不會處理滑鼠事件。
 
--   已修正 Bug UVS-44：VS 2012 中未提供代表 Quick MonoBehaviours 的 CTRL+SHIFT+Q。
+-   修正 Bug UVS-44：VS 2012 中未提供代表 Quick MonoBehaviours 的 CTRL+SHIFT+Q。
 
--   已修正 Bug UVS-40：當視窗在 VS2012 的「暗色調」佈景主題中沒有作用時，無法讀取 Unity Project Explorer 中的選取項目。
+-   修正 Bug UVS-40：當視窗在 VS2012 的「深色」佈景主題中沒有作用時，無法讀取 Unity Project Explorer 中的選取項目。
 
--   已修正 Bug UVS-39：Token 化逸出字串的問題。
+-   修正 Bug UVS-39：Token 化逸出字串的問題。
 
--   已修正 Bug UVS-35：檢查變數時會對物件叫 ToString。
+-   修正 Bug UVS-35：檢查變數時會對物件叫用 ToString。
 
--   已修正 Bug UVS-27：Goto 符號視窗與 VS2012 的「暗色調」佈景主題不一致。
+-   修正 Bug UVS-27：Goto Symbol 視窗與 VS2012 的「深色」佈景主題不一致。
 
--   已修正 Bug UVS-11：協同程式中的區域變數。
+-   修正 Bug UVS-11：協同程式中的區域變數。
 
 ## <a name="11--beta-release"></a>1.1 - Beta 版
  發行日期：2014 年 10 月 9 日
@@ -717,9 +716,9 @@ Visual Studio Tools for Unity 變更記錄。
 
 -   修正針對運算式評估在載入組件中搜尋類型的方式。
 
--   已修正 Bug UVS-21：指派 Unity 物件的評估沒有任何作用。
+-   修正 Bug UVS-21：指派 Unity 物件的評估沒有任何作用。
 
--   已修正 Bug UVS-21：評估 Unity Math API 的方法引動過程時，指標無效。
+-   修正 Bug UVS-21：評估 Unity Math API 的方法引動過程時，指標無效。
 
 ## <a name="108"></a>1.0.8
  發行日期：2012 年 9 月 26 日
@@ -818,4 +817,3 @@ Visual Studio Tools for Unity 變更記錄。
 
 ## <a name="10--initial-release"></a>1.0 - 初始版本
  發行日期：2012 年 8 月 22 日
-

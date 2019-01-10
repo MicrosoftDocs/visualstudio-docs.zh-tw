@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-install
+ms.technology: vs-ide-install
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 717f11fe-be6c-4d6e-9006-e7e5220c02bb
@@ -14,12 +13,12 @@ caps.latest.revision: 28
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: eeb70f917d750965fec07f5d3d1174489800ec4e
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 415f60116e3120f9690d20d20dfd37c560d5ad9f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53055275"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53867783"
 ---
 # <a name="how-to-upgrade-from-a-trial-edition-of-visual-studio"></a>HOW TO：從 Visual Studio 試用版升級
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
