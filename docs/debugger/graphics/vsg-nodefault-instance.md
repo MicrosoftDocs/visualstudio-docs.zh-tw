@@ -1,8 +1,6 @@
 ---
 title: VSG_NODEFAULT_INSTANCE |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 19c95b0d-9a4d-441f-9ed7-3acb39e67521
 author: mikejo5000
@@ -10,12 +8,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4655b6105a940b7f2c742ba8bcd0812d0be5ab95
-ms.sourcegitcommit: 80f9daba96ff76ad7e228eb8716df3abfd115bc3
-ms.translationtype: MT
+ms.openlocfilehash: a5422cf4899e68a913e6cf15e4923da564859653
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37433179"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53922569"
 ---
 # <a name="vsgnodefaultinstance"></a>VSG_NODEFAULT_INSTANCE
 預設執行個體是否定義出現[VsgDbg 類別](vsgdbg-class.md)類別，以提供的程式設計擷取介面 — 提供。  

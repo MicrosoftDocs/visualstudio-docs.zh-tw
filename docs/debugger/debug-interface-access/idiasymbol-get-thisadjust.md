@@ -1,8 +1,6 @@
 ---
 title: 'Idiasymbol:: Get_thisadjust |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0c9ff814968077b32c4ed0ddb8d951808ebffea4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 7d7cb0b57b56a7c73de599ebdbd252f1366857af
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49851845"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53848505"
 ---
 # <a name="idiasymbolgetthisadjust"></a>IDiaSymbol::get_thisAdjust
 擷取邏輯`this`adjustor 方法。  
@@ -27,7 +25,7 @@ ms.locfileid: "49851845"
 ## <a name="syntax"></a>語法  
   
 ```C++  
-HRESULT get_thisAdjust (   
+HRESULT get_thisAdjust (   
    LONG* pRetVal  
 );  
 ```  
@@ -45,5 +43,5 @@ HRESULT get_thisAdjust (
 ## <a name="remarks"></a>備註  
  在某些多重繼承的情況下，方法本身必須計算真正`this`加上位移值`this`。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

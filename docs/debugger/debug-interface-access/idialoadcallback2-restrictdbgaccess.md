@@ -1,8 +1,6 @@
 ---
-title: 'Idialoadcallback2:: Restrictdbgaccess |Microsoft 文件'
-ms.custom: ''
+title: IDiaLoadCallback2::RestrictDBGAccess |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,15 +12,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b75db393822dc6c5d65bbbab4c9ccc64eed9f630
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 8238469232656d4fa32b71fbfb7704afd6870b54
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31459041"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53843852"
 ---
 # <a name="idialoadcallback2restrictdbgaccess"></a>IDiaLoadCallback2::RestrictDBGAccess
-決定尋找偵錯資訊是否允許從.dbg 檔案。  
+會決定是否從.dbg 檔案中允許尋找偵錯資訊。  
   
 ## <a name="syntax"></a>語法  
   
@@ -31,10 +29,10 @@ HRESULT RestrictDBGAccess();
 ```  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
+ 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
   
 ## <a name="remarks"></a>備註  
- 任何傳回值非`S_OK`防止尋找.dbg 檔案從偵錯資訊。  
+ 任何傳回值，而非`S_OK`以避免需要從.dbg 檔案的偵錯資訊。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md)

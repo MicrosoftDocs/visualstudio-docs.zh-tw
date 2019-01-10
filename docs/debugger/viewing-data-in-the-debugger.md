@@ -1,8 +1,6 @@
 ---
 title: 在 偵錯工具中建立資料的自訂檢視 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/20/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug
@@ -21,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c750e9e3152ae5efdf2e2ecf09034b6928fe9fa7
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.openlocfilehash: 234c00bcfd1b46adc260597b5ad438854c45de98
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53561849"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53836552"
 ---
 # <a name="create-custom-views-of-data-in-the-visual-studio-debugger"></a>在 Visual Studio 偵錯工具中建立資料的自訂檢視
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]偵錯工具會提供許多工具，可檢查及修改程式狀態。 這些工具大多數只能在中斷模式下運作。

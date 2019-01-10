@@ -1,8 +1,6 @@
 ---
 title: 停用-Just-in-time 偵錯工具 |Microsoft Docs
-ms.custom: ''
 ms.date: 05/23/18
-ms.technology: vs-ide-debug
 ms.topic: troubleshooting
 helpviewer_keywords:
 - debugging [Visual Studio], Just-In-Time
@@ -13,14 +11,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 147e16bab14a6a038622804cf9c57e5fdc92bf02
-ms.sourcegitcommit: c5e72875206b8c5737c29d5b1ec7b86eec747303
+ms.openlocfilehash: f946c44039407ac413fb0b49234a8590025e12d3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "49382775"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53959783"
 ---
-# <a name="disable-the-just-in-time-debugger"></a>停用-Just-in-time 偵錯工具 
+# <a name="disable-the-just-in-time-debugger"></a>停用 Just-In-Time 偵錯工具 
 
 [Just-In-Time 偵錯工具] 對話方塊中可能會開啟執行中應用程式，發生錯誤時，並阻止應用程式繼續執行。 
 
@@ -46,4 +44,3 @@ Just-In-Time 偵錯工具可讓您啟動 Visual Studio 偵錯錯誤的選項。 
 停用 Just 時間偵錯之後，應用程式可以處理錯誤並正常執行。 
 
 如果應用程式仍有未處理的錯誤，您可能會看到錯誤訊息，或應用程式可能會當機或停止回應。 錯誤修正之前，不會正常執行的應用程式。 您可以嘗試連絡應用程式的擁有者，並要求他們要修正此問題。
-

@@ -2,7 +2,6 @@
 title: 偵錯 c + + 存取違規 |Microsoft Docs
 ms.custom: seodec18
 ms.date: 05/23/2017
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.access
@@ -20,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6f463f4e14e5be90422f73b299cb927a54fcfcef
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: fe15813489fbdc0f3a9506468f56773fb3f35deb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53067257"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53850371"
 ---
 # <a name="how-can-i-debug-a-c-access-violation"></a>如何偵錯 c + + 存取違規？
 ## <a name="problem-description"></a>問題說明  

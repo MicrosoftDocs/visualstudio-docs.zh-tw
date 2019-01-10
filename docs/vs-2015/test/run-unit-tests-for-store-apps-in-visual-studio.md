@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 5a6f5b32-bfce-4a63-81e9-02d54c592539
@@ -14,12 +13,12 @@ caps.latest.revision: 14
 author: alexhomer1
 ms.author: gewarren
 manager: robinr
-ms.openlocfilehash: 9496a41d3eadd91112579b54250a6022bd6484e5
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: a5bc69e640db87f48c0e170450e52fe0560092b9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53050917"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53835353"
 ---
 # <a name="run-unit-tests-for-store-apps-in-visual-studio"></a>在 Visual Studio 中對市集應用程式執行單元測試
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

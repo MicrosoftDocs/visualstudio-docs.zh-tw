@@ -1,8 +1,6 @@
 ---
 title: HOW TO：.NET Framework 原始檔進行偵錯 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/19/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - debugging, .NET Framework source
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: a627c2f0880aee9906e3478b268d688c59b7d090
-ms.sourcegitcommit: 6efb9378a82924cb133912d207c6da4bd5a0b9c2
+ms.openlocfilehash: fb0990eb977a3fae11e478ff9bb798e3b1ea1356
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "53443908"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53836474"
 ---
 # <a name="how-to-debug-net-framework-source"></a>HOW TO：對 .NET Framework 原始檔進行偵錯
 

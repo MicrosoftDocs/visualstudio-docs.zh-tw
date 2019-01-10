@@ -1,8 +1,6 @@
 ---
 title: 更多偵錯功能 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -15,17 +13,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 38783f5ec228965010dbe8054373803185fe2e7c
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
-ms.translationtype: MT
+ms.openlocfilehash: 793cbfdc1e56a8dfdc986c08d4aaad1c5f208218
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44282699"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53822674"
 ---
 # <a name="more-debugging-features"></a>更多偵錯功能
 本節包含您可與 Visual Studio 偵錯工具並用的其他功能。  
   
- 如需祕訣和訣竅，可讓偵錯更快且更容易的清單，請參閱[偵錯的祕訣和訣竅](https://blogs.msdn.microsoft.com/visualstudio/2015/05/22/debugging-tips-and-tricks/)。  
+ 如需讓偵錯更快更簡單的秘訣和訣竅清單，請參閱 [偵錯秘訣和訣竅](https://blogs.msdn.microsoft.com/visualstudio/2015/05/22/debugging-tips-and-tricks/)。  
   
 ## <a name="additional-features"></a>其他功能  
  [在偵錯時檢查 XAML 屬性](../debugger/inspect-xaml-properties-while-debugging.md)  

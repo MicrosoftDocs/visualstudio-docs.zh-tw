@@ -1,8 +1,6 @@
 ---
 title: HOW TO：啟動 Spy + + |Microsoft Docs
-ms.custom: ''
 ms.date: 12/16/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Spy++, starting
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5143c34f0c344fecec82a5d08b2e7fb9b95ac1bc
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
-ms.translationtype: HT
+ms.openlocfilehash: 1f121bf823a65999b3c43f14f8e3e10d274a78c3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53646863"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53896379"
 ---
 # <a name="how-to-start-spy"></a>HOW TO：啟動 Spy++
 
