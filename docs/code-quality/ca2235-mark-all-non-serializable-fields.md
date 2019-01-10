@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 946e666faae07128378fc8063422446a39bd0791
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 484755feac873be04648cfef936b2faa701bba2c
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53986566"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154146"
 ---
 # <a name="ca2235-mark-all-non-serializable-fields"></a>CA2235:必須標記所有不可序列化的欄位
 
@@ -38,7 +38,9 @@ ms.locfileid: "53986566"
  可序列化之類型中所宣告之類型的執行個體 (Instance) 欄位是不可序列化的。
 
 ## <a name="rule-description"></a>規則描述
- 可序列化的型別是標示為<xref:System.SerializableAttribute?displayProperty=fullName>屬性。 當型別會序列化時，<xref:System.Runtime.Serialization.SerializationException?displayProperty=fullName>如果某個類型包含不是可序列化型別的執行個體欄位，會擲回例外狀況。
+ 可序列化的型別是標示為<xref:System.SerializableAttribute?displayProperty=fullName>屬性。 當型別會序列化時，<xref:System.Runtime.Serialization.SerializationException?displayProperty=fullName>如果類型包含不是可序列化型別的執行個體欄位，會擲回例外狀況。
+ 
+ 使用透過自訂序列化的類型時，此例外狀況<xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName>介面。 實作這個介面的型別提供它們自己的序列化邏輯，並因此 ca2235 必須不會引發這種類型的非可序列化的執行個體欄位。
 
 ## <a name="how-to-fix-violations"></a>如何修正違規
  若要修正此規則的違規情形，套用<xref:System.NonSerializedAttribute?displayProperty=fullName>屬性不是可序列化的欄位。

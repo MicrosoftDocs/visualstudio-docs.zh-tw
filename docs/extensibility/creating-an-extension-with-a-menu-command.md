@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bd25b7ed02cb8d45ae693eacdb397a250d2456e2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 80d68a254cf2d1a896be86072d50a13be2f7a44f
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53847820"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154417"
 ---
 # <a name="create-an-extension-with-a-menu-command"></a>建立具有功能表命令的擴充功能
 本逐步解說示範如何建立擴充功能會啟動 [記事本] 的功能表命令。  
@@ -121,6 +121,6 @@ ms.locfileid: "53847820"
   
 4. 加入現有的程式碼編輯器的 IntelliSense、 程式碼的建議，以及其他功能：[編輯器和語言服務延伸](../extensibility/extending-the-editor-and-language-services.md)  
   
-5. 加入您的延伸模組的選項和 [屬性] 頁面和使用者設定：[擴充屬性和屬性視窗](../extensibility/extending-properties-and-the-property-window.md)和[擴充使用者設定和 Ooptions](../extensibility/extending-user-settings-and-options.md)  
+5. 加入您的延伸模組的選項和 [屬性] 頁面和使用者設定：[擴充屬性和屬性視窗](../extensibility/extending-properties-and-the-property-window.md)和[擴充使用者設定和選項](../extensibility/extending-user-settings-and-options.md)  
   
    其他類型的延伸模組需要多一點的工作，例如建立新的專案類型 ([擴充專案](../extensibility/extending-projects.md))，建立新類型的編輯器 ([建立自訂編輯器和設計工具](../extensibility/creating-custom-editors-and-designers.md))，或實作您在獨立的 shell 中的延伸模組：[Visual Studio 獨立模式 shell](/visualstudio/extensibility/shell/visual-studio-isolated-shell)

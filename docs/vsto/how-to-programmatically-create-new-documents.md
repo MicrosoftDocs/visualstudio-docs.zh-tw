@@ -9,17 +9,17 @@ helpviewer_keywords:
 - templates [Office development in Visual Studio], custom document
 - Word [Office development in Visual Studio], creating documents
 - documents [Office development in Visual Studio], creating
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3b5b7766e58cf420d171c1390546957eba1817c1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 882183d1e23168e1a3a833cd7cc723f28ce1a139
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53918806"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154118"
 ---
 # <a name="how-to-programmatically-create-new-documents"></a>HOW TO：以程式設計方式建立新文件
   當您以程式設計方式建立文件時，新的文件就是原生的 <xref:Microsoft.Office.Interop.Word.Document> 物件。 這個物件沒有 <xref:Microsoft.Office.Tools.Word.Document> 主項目的其他事件和資料繫結功能。 如需詳細資訊，請參閱 <<c0> [ 主項目和主控制項的程式設計限制](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)。  
