@@ -51,13 +51,13 @@ ms.locfileid: "53937279"
 
 ### <a name="to-configure-a-windows-installer-solution-to-load-vsto-add-ins-on-demand"></a>設定 Windows Installer 方案視需要載入 VSTO 增益集
 
-1.  在登錄中，設定`LoadBehavior`項目**_根_\Software\Microsoft\Office\\_ApplicationName_\Addins\\ _增益集 ID_** 機碼**0x10**。
+1.  在登錄中，設定`LoadBehavior`項目 **_根_\Software\Microsoft\Office\\_ApplicationName_\Addins\\ _增益集 ID_** 機碼**0x10**。
 
      如需詳細資訊，請參閱 < [VSTO 增益集的登錄項目](../vsto/registry-entries-for-vsto-add-ins.md)。
 
 ### <a name="to-configure-a-solution-to-load-vsto-add-ins-on-demand-while-you-debug-the-solution"></a>設定方案，在偵錯方案時視需要載入 VSTO 增益集
 
-1.  建立設定的指令碼`LoadBehavior`項目**_根_\Software\Microsoft\Office\\_ApplicationName_\Addins\\ _增益集 ID_** 機碼**0x10**。
+1.  建立設定的指令碼`LoadBehavior`項目 **_根_\Software\Microsoft\Office\\_ApplicationName_\Addins\\ _增益集 ID_** 機碼**0x10**。
 
      下列程式碼顯示此指令碼範例。
 
