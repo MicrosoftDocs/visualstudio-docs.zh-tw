@@ -111,7 +111,7 @@ ms.locfileid: "51817434"
 
 在訂用帳戶指派給訂閱者之後，他們將會收到要求其瀏覽 [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) 以發揮其訂用帳戶優點的電子郵件。  當嘗試登入時，Visual Studio 訂用帳戶登入會失敗，並傳回說明無法識別帳戶的錯誤。  請要求您的訂閱者先遵循這些指示執行，再登入 [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs)。  如果有需要，您可以在指派訂閱之後使用此[範本](#notifying-your-subscribers-using-personal-accounts)來通知您的訂閱者。
 
-1. 瀏覽 https://my.visualstudio.com，然後按一下 [建立新的 Microsoft 帳戶]。
+1. 瀏覽 https://my.visualstudio.com ，然後按一下 [建立新的 Microsoft 帳戶]。
 
 2. 完成欄位：
    - 在 Someone@example.com 方塊中輸入收到歡迎電子郵件的電子郵件地址
@@ -133,7 +133,7 @@ ms.locfileid: "51817434"
 
 %SUBSCRIBER NAME%，您好
 
-您已被指派 Visual Studio 訂用帳戶，而且可能會根據歡迎電子郵件來導向以登入 https://my.visualstudio.com。  雖然這是取用權益的正確網站，但我們的組織要求您執行一些額外步驟以存取網站。  請依照下面的指示執行，以建立與我們的公司電子郵件地址繫結的「Microsoft 帳戶」。  一旦完成這些步驟，您就可以使用您的電子郵件地址來存取訂用帳戶權益。
+您已被指派 Visual Studio 訂用帳戶，而且可能會根據歡迎電子郵件來導向以登入 https://my.visualstudio.com 。  雖然這是取用權益的正確網站，但我們的組織要求您執行一些額外步驟以存取網站。  請依照下面的指示執行，以建立與我們的公司電子郵件地址繫結的「Microsoft 帳戶」。  一旦完成這些步驟，您就可以使用您的電子郵件地址來存取訂用帳戶權益。
 1. 瀏覽 https://my.visualstudio.com
 
 2. 按一下右邊的 [建立新的 Microsoft 帳戶]
