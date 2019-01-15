@@ -42,7 +42,7 @@ HRESULT CvCreateDefaultMarkerSeriesOfDefaultProvider(
  成功建立提供者和標記系列兩者時傳回 S_OK，有任何錯誤時則傳回錯誤碼。 您可以使用 SUCCEEDED/FAILED 巨集檢查是否有錯誤狀況。  
   
 ## <a name="requirements"></a>需求  
- **標頭︰***cvmarkers.h*  
+ **標頭︰** *cvmarkers.h*  
   
 ## <a name="see-also"></a>另請參閱  
  [C++ 程式庫參考](../profiling/cpp-library-reference.md)

@@ -51,7 +51,7 @@ HRESULT CvIsEnabledEx(
  如果提供者目前已啟用，傳回 S_OK。 如果提供者目前已停用，傳回 S_FALSE。 發生任何錯誤時傳回錯誤碼。 使用 FAILED 巨集可檢查是否有錯誤狀況，然後檢查是 S_OK/S_FALSE。  
   
 ## <a name="requirements"></a>需求  
- **標頭︰***cvmarkers.h*  
+ **標頭︰** *cvmarkers.h*  
   
 ## <a name="see-also"></a>另請參閱  
  [C++ 程式庫參考](../profiling/cpp-library-reference.md)

@@ -124,7 +124,7 @@ HRESULT CvEnterSpanExVA(
  當訊息成功寫入時傳回 S_OK。 發生任何錯誤時傳回錯誤碼。 您可以使用 SUCCEEDED/FAILED 巨集檢查是否有錯誤狀況。  
   
 ## <a name="requirements"></a>需求  
- **標頭︰***cvmarkers.h*  
+ **標頭︰** *cvmarkers.h*  
   
  **Unicode：** CvEnterSpanW、CvEnterSpanVW、CvEnterSpanExW、CvEnterSpanExVW  
   

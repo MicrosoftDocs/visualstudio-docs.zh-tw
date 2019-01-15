@@ -170,11 +170,11 @@ Windows Forms 工具箱控制項項目範本包含在 Visual Studio 擴充性工
   
 9. 在 click 處理常式呼叫`counter1.Increment()`。  
   
-10. 在建構函式，呼叫後面`InitializeComponent`，型別`counter1``.``Incremented +=`，然後按** 索引標籤**兩次。  
+10. 在建構函式，呼叫後面`InitializeComponent`，型別`counter1``.``Incremented +=`，然後按 **索引標籤** 兩次。  
   
      Visual Studio 產生的表單層次處理常式`counter1.Incremented`事件。  
   
-11. 反白顯示`Throw`陳述式中的事件處理常式，型別`mbox`，然後按** 索引標籤**兩次，以從 mbox 程式碼片段中產生一個訊息方塊。  
+11. 反白顯示`Throw`陳述式中的事件處理常式，型別`mbox`，然後按 **索引標籤** 兩次，以從 mbox 程式碼片段中產生一個訊息方塊。  
   
 12. 在下一行中，新增下列`if` / `else`區塊來設定的可見性**重設** 按鈕。  
   

@@ -47,7 +47,7 @@ VSPackage 和其支援的檔案必須是使用者的檔案系統上。 位置取
   
  [管理 Vspackage](../../extensibility/managing-vspackages.md)文章指出登錄項目控制 where[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]實際上會尋找 VSPackage 的附屬 DLL。 不過，[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]嘗試載入附屬 DLL 中命名的 LCID 值，以下列順序：  
   
-1.  預設 LCID (Visual Studio LCID，例如*\1033*英文)  
+1.  預設 LCID (Visual Studio LCID，例如 *\1033* 英文)  
   
 2.  使用預設的子語言的預設 LCID。  
   

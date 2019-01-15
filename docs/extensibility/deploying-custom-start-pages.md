@@ -47,7 +47,7 @@ ms.locfileid: "53865990"
 
   2.  在 Windows 檔案總管中，以滑鼠右鍵按一下包含兩個 XML 檔案的資料夾中，按一下**傳送到**，然後按一下 壓縮的 (zipped) 資料夾。 重新命名產生 *.zip*的檔案*Filename.vsix*，其中的檔案名稱是可轉散發檔案安裝封裝的名稱。
 
-  Visual Studio 能夠辨識 [入門] 頁面中，如`Content Element`VSIX 資訊清單必須包含`CustomExtension Element`具有`Type`屬性設為`"StartPage"`。 使用 VSIX 部署已安裝的起始頁延伸模組會出現在**自訂起始頁**上列出**啟動**選項頁面中以 **[安裝延伸模組]***延伸模組名稱*。
+  Visual Studio 能夠辨識 [入門] 頁面中，如`Content Element`VSIX 資訊清單必須包含`CustomExtension Element`具有`Type`屬性設為`"StartPage"`。 使用 VSIX 部署已安裝的起始頁延伸模組會出現在**自訂起始頁**上列出**啟動**選項頁面中以 **[安裝延伸模組]** *延伸模組名稱*。
 
   如果您的起始頁套件包含組件，您必須先新增繫結路徑註冊，以便 Visual Studio 啟動時可供使用。 若要這樣做，請確定您的套件，包含 *.pkgdef*具有下列資訊的檔案。
 
@@ -69,7 +69,7 @@ ms.locfileid: "53865990"
     <AllUsers>true</AllUsers>
     ```
 
-     這會造成 vsix 安裝程式提示您輸入系統管理員權限，然後再安裝 檔案*\Common7\IDE\Extensions*。
+     這會造成 vsix 安裝程式提示您輸入系統管理員權限，然後再安裝 檔案 *\Common7\IDE\Extensions* 。
 
 3.  開啟 *.pkgdef*檔案。
 
