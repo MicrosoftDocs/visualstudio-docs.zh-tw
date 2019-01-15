@@ -1,8 +1,6 @@
 ---
 title: 解除封鎖遠端工具下載
-ms.custom: ''
 ms.date: 07/19/2018
-ms.technology: vs-ide-debug
 ms.topic: troubleshooting
 helpviewer_keywords:
 - remote debugging, unblock download
@@ -11,14 +9,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e0586b8f0699ec2eca5843d59df1b6ddd7cecbd3
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
-ms.translationtype: MT
+ms.openlocfilehash: bfc212dff46cea4de494f46a439026c7d5a851bb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39180657"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53905341"
 ---
-# <a name="how-to-unblock-the-download-of-the-remote-tools-on-windows-server"></a>如何： 解除封鎖 Windows Server 上的遠端工具下載
+# <a name="how-to-unblock-the-download-of-the-remote-tools-on-windows-server"></a>HOW TO：解除封鎖 Windows Server 上的遠端工具下載
 
 在 Windows Server 上的 Internet Explorer 中的預設安全性設定可以讓它更耗時下載元件，例如遠端工具。
 

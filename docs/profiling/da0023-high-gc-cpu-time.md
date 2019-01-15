@@ -1,8 +1,6 @@
 ---
-title: DA0023：高 GC CPU 時間 | Microsoft Docs
-ms.custom: ''
+title: DA0023：高記憶體回收 CPU 時間 | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.DA0023
@@ -14,14 +12,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d13f1c0bc2a024d35611d81f4aba3694f3bc39e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e340c7a46b469eda296b09da96a01249bc860e2e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49836264"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53839108"
 ---
-# <a name="da0023-high-gc-cpu-time"></a>DA0023：高 GC CPU 時間
+# <a name="da0023-high-gc-cpu-time"></a>DA0023：高記憶體回收 CPU 時間
 
 |||  
 |-|-|  
@@ -44,7 +42,7 @@ ms.locfileid: "49836264"
  相較於應用程式總處理時間，當花費在記憶體回收的時間量極高時，就會引發此規則。  
 
 > [!NOTE]
->  相較於應用程式總處理時間，當有過高比例的時間花費在記憶體回收時，則會引發 [DA0024︰過多 GC CPU 時間](../profiling/da0024-excessive-gc-cpu-time.md)警告而不是此規則。  
+>  相較於應用程式總處理時間，當有過高比例的時間花費在記憶體回收時，則會引發 [DA0024：過度的記憶體回收 CPU 時間](../profiling/da0024-excessive-gc-cpu-time.md)警告而不是此規則。  
 
 ## <a name="how-to-investigate-a-warning"></a>如何調查警告  
  按兩下 [錯誤清單] 視窗中的訊息，瀏覽至分析資料的[標記檢視](../profiling/marks-view.md)。 尋找 **.NET CLR Memory\\% Time in GC** 欄。 判斷是否有特定的程式執行階段，當中的 Managed 記憶體回收負荷比其他階段還繁重。 比較 % Time in GC 的值與在 **# of Gen 0 Collections**、**# of Gen 1 Collections**、**# of Gen 2 Collections** 值中報告的記憶體回收速率。  

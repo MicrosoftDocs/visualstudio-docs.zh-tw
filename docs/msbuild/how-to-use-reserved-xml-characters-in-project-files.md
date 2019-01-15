@@ -1,8 +1,6 @@
 ---
-title: 如何：在專案檔中使用保留的 XML 字元 | Microsoft Docs
-ms.custom: ''
+title: HOW TO：在專案檔中使用保留的 XML 字元 | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, using reserved XML characters
@@ -13,14 +11,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 647dba94840383410d06f6e5bf96ec3b0146c394
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 2f97a4bb00b15e31cc03b853de45b7a35d77b29c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39077655"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53905500"
 ---
-# <a name="how-to-use-reserved-xml-characters-in-project-files"></a>如何：在專案檔中使用保留的 XML 字元
+# <a name="how-to-use-reserved-xml-characters-in-project-files"></a>HOW TO：在專案檔中使用保留的 XML 字元
 當您撰寫專案檔時，您可能需要使用保留的 XML 字元，例如，在屬性值或工作參數值中。 不過，您必須使用具名實體來取代某些保留字元，如此才能剖析專案檔。  
   
 ## <a name="use-reserved-characters"></a>使用保留字元  
@@ -74,4 +72,4 @@ ms.locfileid: "39077655"
   
 ## <a name="see-also"></a>另請參閱  
  [MSBuild 參考](../msbuild/msbuild-reference.md)    
- [ MSBuild](../msbuild/msbuild.md)    
+ [MSBuild](../msbuild/msbuild.md)    

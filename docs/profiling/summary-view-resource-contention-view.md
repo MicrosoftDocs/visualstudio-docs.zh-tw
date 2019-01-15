@@ -1,8 +1,6 @@
 ---
 title: 摘要檢視 - 資源爭用檢視 | Microsoft Docs | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Summary view
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ed1db5bd560c32cdb40ddc728b3ede63c70dbc88
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 58df3c16de6fd7a4eba95fabb0d67e900ba8152d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31581171"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53917419"
 ---
 # <a name="summary-view---resource-contention-view"></a>摘要檢視 - 資源爭用檢視
 [摘要] 檢視顯示因在等候資源存取權而暫停應用程式中執行緒或處理序的事件相關資訊。  
@@ -25,14 +23,14 @@ ms.locfileid: "31581171"
  如需包括通知連結和報表清單描述在內的詳細資訊，請參閱[摘要檢視](../profiling/summary-view.md)。  
   
 ## <a name="timeline-graph"></a>時間軸圖形  
- [摘要] 檢視的時間軸圖形會顯示已進行程式碼剖析的應用程式在程式碼剖析期間的爭用事件數目。 您可以使用時間軸圖形，將檢視篩選為選取的時間範圍。 如需詳細資訊，請參閱[如何：從摘要時間軸篩選報表檢視](../profiling/how-to-filter-report-views-from-the-summary-timeline.md)。  
+ [摘要] 檢視的時間軸圖形會顯示已進行程式碼剖析的應用程式在程式碼剖析期間的爭用事件數目。 您可以使用時間軸圖形，將檢視篩選為選取的時間範圍。 如需詳細資訊，請參閱[＜How to：從摘要時間軸篩選報表檢視](../profiling/how-to-filter-report-views-from-the-summary-timeline.md)。  
   
 ## <a name="most-contended-resources"></a>最多爭用的資源  
  [最多爭用的資源] 列出應用程式中造成最多爭用事件的資源。 您可以按一下資源名稱來顯示 [爭用] 檢視。 [爭用] 檢視會根據執行緒提供詳細的資源爭用時間軸。  
   
  [最多爭用的資源] 的每個資源都包含下列資料。  
   
-|資料行|描述|  
+|資料行|說明|  
 |------------|-----------------|  
 |**名稱**|資源名稱。|  
 |**爭用 %**|就程式碼剖析資料中的所有爭用事件，爭用此資源所佔的百分比。|  
@@ -42,7 +40,7 @@ ms.locfileid: "31581171"
   
  [最多爭用的執行緒] 的每個執行緒都包含下列資料。  
   
-|資料行|描述|  
+|資料行|說明|  
 |------------|-----------------|  
 |**ID**|執行緒識別碼。|  
 |**名稱**|擁有該執行緒的處理序名稱。|  

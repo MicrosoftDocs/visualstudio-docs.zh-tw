@@ -2,7 +2,6 @@
 title: 工具箱, 資料索引標籤
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 helpviewer_keywords:
 - Toolbox, Data tab
@@ -14,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1af6ac0f9a382a91d2c87e5cb84053b8b51bf961
-ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
+ms.openlocfilehash: d9e23cd79510d789c8c8f8b426fb3196f1845745
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37089668"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53952947"
 ---
 # <a name="toolbox-data-tab"></a>工具箱, 資料索引標籤
 
@@ -32,9 +31,9 @@ ms.locfileid: "37089668"
 
 若要直接前往元件的 .NET Framework 參考頁面，請在 [工具箱] 的項目或是設計工具匣的元件項目上按 **F1**。
 
-|名稱|描述|
+|名稱|說明|
 |----------|-----------------|
-|<xref:System.Data.DataSet>|將具類型或不具類型資料集的執行個體新增至表單或元件。 當您將此物件拖曳至設計工具時，會顯示一個對話方塊，讓您選取現有具類型資料集類別，或指定您想要建立的不具類型的空白新資料集。 **注意：** 您不要使用 [工具箱] 上的 <xref:System.Data.DataSet> 物件來建立新的具類型資料集結構描述和類別。 如需詳細資訊，請參閱[建立和設定資料集](../../data-tools/create-and-configure-datasets-in-visual-studio.md)。|
+|<xref:System.Data.DataSet>|將具類型或不具類型資料集的執行個體新增至表單或元件。 當您將此物件拖曳至設計工具時，會顯示一個對話方塊，讓您選取現有具類型資料集類別，或指定您想要建立的不具類型的空白新資料集。 **注意：** 您不要使用 [工具箱] 上的 <xref:System.Data.DataSet> 物件來建立新的具型別資料集結構描述和類別。 如需詳細資訊，請參閱[建立和設定資料集](../../data-tools/create-and-configure-datasets-in-visual-studio.md)。|
 |<xref:System.Windows.Forms.DataGridView>|以表格形式顯示資料，是一項功能強大並具彈性的方式。|
 |<xref:System.Windows.Forms.BindingSource>|簡化將控制項繫結至基礎資料來源的程序。|
 |<xref:System.Windows.Forms.BindingNavigator>|表示在表單上繫結至資料的控制項之巡覽及管理使用者介面 (UI)。|

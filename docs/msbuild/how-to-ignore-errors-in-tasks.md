@@ -1,8 +1,6 @@
 ---
-title: 如何：忽略工作中的錯誤 | Microsoft Docs
-ms.custom: ''
+title: HOW TO：忽略工作中的錯誤 | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: msbuild - "vs-ide-sdk"
 ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, ignoring errors
@@ -11,14 +9,14 @@ ms.assetid: e2f1ca4f-787b-44bd-bc64-81a036025e96
 author: mikejo5000
 ms.author: mikejo
 manager: douge
-ms.openlocfilehash: 3df3a3b40dd67f12bac19f4e69f5293c85bb85f3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f271c2d6dae3857818505829cf2da8a109613e9a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49940030"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53852686"
 ---
-# <a name="how-to-ignore-errors-in-tasks"></a>如何：忽略工作中的錯誤
+# <a name="how-to-ignore-errors-in-tasks"></a>HOW TO：忽略工作中的錯誤
 有時您會希望組建能夠容忍某些工作中的錯誤。 如果這些非關鍵性的工作失敗，您會想要讓組建繼續執行，因為它仍然可以產生所需的輸出。 例如，如果專案使用 `SendMail` 工作，在建置每個元件之後傳送電子郵件訊息，您可能會考慮，即使郵件伺服器無法使用且無法傳送狀態訊息，還是能夠接受組建繼續完成。 或者，例如，如果通常會在建置期間刪除中繼資料檔案，您可能會考慮，即使無法刪除這些檔案，還是能夠接受組建繼續完成。  
   
 ## <a name="use-the-continueonerror-attribute"></a>使用 ContinueOnError 屬性  
@@ -38,7 +36,7 @@ ms.locfileid: "49940030"
   
 #### <a name="to-ignore-an-error-in-a-task"></a>忽略工作中的錯誤  
   
--   使用工作的 `ContinueOnError` 屬性。 例如:   
+-   使用工作的 `ContinueOnError` 屬性。 例如：  
   
      `<Delete Files="@(Files)" ContinueOnError="WarnAndContinue"/>`  
   

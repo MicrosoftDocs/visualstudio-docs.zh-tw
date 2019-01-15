@@ -1,9 +1,7 @@
 ---
-title: 步驟 6：命名您的按鈕控制項
-ms.custom: ''
+title: 步驟 6：命名按鈕控制項
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
 ms.topic: conceptual
 ms.assetid: 56b3baa3-651e-4ad4-8942-e334c5c57158
 author: TerryGLee
@@ -11,14 +9,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b11bace93efc253ffcb0f8d2b97ecc57c7462bb8
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 39ded8694e5ec4b071193f74aa5fded5ddb54560
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34748393"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53820354"
 ---
-# <a name="step-6-name-your-button-controls"></a>步驟 6：命名您的按鈕控制項
+# <a name="step-6-name-your-button-controls"></a>步驟 6：命名按鈕控制項
 表單上只有一個 <xref:System.Windows.Forms.PictureBox>。 加入它時，IDE 會自動將它命名為 **pictureBox1**。 只有一個 <xref:System.Windows.Forms.CheckBox>，名稱為 **checkBox1**。 接著，您將撰寫一些程式碼，該程式碼會參考 CheckBox 和 PictureBox。 因為這些控制項都只有一個，所以您在程式碼中看到 **pictureBox1** 或 **checkBox1** 時就知道它們代表的意義。
 
 > [!NOTE]
@@ -26,7 +24,7 @@ ms.locfileid: "34748393"
 
  表單上有四個按鈕，IDE 將它們分別命名為 **button1**、 **button2**、 **button3**及 **button4**。 只從目前的名稱來看，並無法得知哪一個按鈕才是 [關閉]  按鈕，以及哪一個是 [顯示圖片]  按鈕。 這就是為按鈕控制項指定更具資訊性名稱會很有用的原因。
 
- ![影片連結](../data-tools/media/playvideo.gif)如需觀看本主題的影片版本，請參閱[教學課程 1：使用 Visual Basic 建立圖片檢視器 - 影片 3](http://go.microsoft.com/fwlink/?LinkId=205213) 或[教學課程 1：使用 C# 建立圖片檢視器 - 影片 3](http://go.microsoft.com/fwlink/?LinkId=205202)。 這些影片使用舊版 Visual Studio，因此有一些功能表命令以及某些使用者介面項目會有些微差異。 不過，概念和程序在目前 Visual Studio 版本中的運作方式雷同。
+ ![影片連結](../data-tools/media/playvideo.gif)如需本主題的影片版本，請參閱[教學課程 1：在 Visual Basic 中建立圖片檢視器 - 影片 3](http://go.microsoft.com/fwlink/?LinkId=205213) 或[教學課程 1：在 C# 中建立圖片檢視器 - 影片 3](http://go.microsoft.com/fwlink/?LinkId=205202)。 這些影片使用舊版 Visual Studio，因此有一些功能表命令以及某些使用者介面項目會有些微差異。 不過，概念和程序在目前 Visual Studio 版本中的運作方式雷同。
 
 ## <a name="to-name-your-button-controls"></a>命名您的按鈕控制項
 
@@ -36,7 +34,7 @@ ms.locfileid: "34748393"
 包含 **closeButton** 名稱的 [屬性]**** 視窗
 
     > [!NOTE]
-    >  如果您嘗試將按鈕的名稱變更為 **closeButton**，即 close 和 Button 兩字中間加上空格，IDE 會顯示錯誤訊息：[無效的屬性值]。 控制項名稱中不允許空格 (和其他一些字元)。
+    >  如果您嘗試將按鈕的名稱變更為 **closeButton**，並在 close 和 Button 兩字中間加上空格，則 IDE 會顯示錯誤訊息：「屬性值無效」。 控制項名稱中不允許空格 (和其他一些字元)。
 
 2.  將其他三個按鈕分別重新命名為 **backgroundButton**、 **clearButton**和 **showButton**。 您可以選擇 [屬性]  視窗中的控制項選取器下拉式清單，以驗證這些名稱。 新按鈕名稱隨即出現。
 
@@ -77,6 +75,6 @@ ms.locfileid: "34748393"
 
 ## <a name="to-continue-or-review"></a>若要繼續或檢視
 
--   若要移到下一個教學課程步驟，請參閱[步驟 7：將對話方塊元件新增至您的表單](../ide/step-7-add-dialog-components-to-your-form.md)。
+-   若要前往下一個教學課程步驟，請參閱[步驟 7：將對話方塊元件新增至表單](../ide/step-7-add-dialog-components-to-your-form.md)。
 
--   若要回到上一個教學課程步驟，請參閱[步驟 5：將控制項新增至您的表單](../ide/step-5-add-controls-to-your-form.md)。
+-   若要回到上一個教學課程步驟，請參閱[步驟 5：將控制項新增至表單](../ide/step-5-add-controls-to-your-form.md)。

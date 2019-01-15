@@ -1,8 +1,6 @@
 ---
-title: 如何：參考專案檔的名稱或位置 | Microsoft Docs
-ms.custom: ''
+title: HOW TO：參考專案檔的名稱或位置 | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - locations, referencing
@@ -18,14 +16,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dceca1e518783f405490d3f2527156bd20bf81aa
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0ce03be9eb9d1fa4926eb1100f9a2aad5612a61d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49911521"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53906029"
 ---
-# <a name="how-to-reference-the-name-or-location-of-the-project-file"></a>如何：參考專案檔的名稱或位置
+# <a name="how-to-reference-the-name-or-location-of-the-project-file"></a>HOW TO：參考專案檔的名稱或位置
 您可以在專案檔中使用專案的名稱或位置，而不需建立自己的屬性。 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 提供保留的屬性，來參考專案檔的名稱和其他專案相關的屬性。 如需保留屬性的詳細資訊，請參閱 [MSBuild 保留和已知屬性](../msbuild/msbuild-reserved-and-well-known-properties.md)。  
   
 ## <a name="use-the-project-properties"></a>使用專案屬性
@@ -33,7 +31,7 @@ ms.locfileid: "49911521"
   
 #### <a name="to-use-the-project-properties"></a>使用專案屬性
   
-- 使用 $() 標記法來參考專案檔中的屬性，就像您使用其他屬性一樣。 例如:   
+- 使用 $() 標記法來參考專案檔中的屬性，就像您使用其他屬性一樣。 例如：  
   
   ```xml  
   <CSC Sources = "@(CSFile)"   

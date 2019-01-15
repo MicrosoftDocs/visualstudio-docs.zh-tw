@@ -1,8 +1,7 @@
 ---
-title: 範例 XSD 檔案：採購單結構描述
+title: XSD 範例檔：採購單結構描述
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: sample
 ms.assetid: f92b63b5-ec61-43b5-ae1e-63432a7a7e30
 author: gewarren
@@ -10,14 +9,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c26272b2e30fa505a196828ecddc9fc8385fe4c
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: f7b26fdef946d37824c0595821541b3cb2adce20
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34571809"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53941475"
 ---
-# <a name="sample-xsd-file-purchase-order-schema"></a>範例 XSD 檔案：採購單結構描述
+# <a name="sample-xsd-file-purchase-order-schema"></a>XSD 範例檔案：訂購單結構描述
 
 XSD 結構描述設計工具文件中的數個範例使用下列 XSD 檔案。 這個檔案是採購單結構描述。
 

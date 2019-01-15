@@ -2,7 +2,6 @@
 title: 在 XAML 設計工具中插入控制項並修改其行為
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: a80fff74-bf01-41c9-ab85-ada7a873c3a9
 author: gewarren
@@ -10,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 739c43b0ed6665684f0a38b35dfd6eccdf8f5b2c
-ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
+ms.openlocfilehash: c50e0dd1884a588c95cd4baa4c544d67a85989b8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38977800"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53911477"
 ---
 # <a name="insert-controls-and-modify-their-behavior-in-xaml-designer"></a>在 XAML 設計工具中插入控制項並修改其行為
 
@@ -57,7 +56,7 @@ ms.locfileid: "38977800"
 
 ![[屬性] 面板中的 FluidMoveBehavior](../designers/media/b4_fluidmovebehaviorproperties_sample.png)
 
-**觀看影片︰**![播放圖示](../designers/media/bldadminconsoleinitialconfigicon.PNG) [Blend 祕訣︰使用行為簡介第 1 部分](http://www.bing.com/videos/search?q=Expression%20blend%20behaviors&qs=n&form=QBVR&pq=expression%20blend%20behavior&sc=4-25&sp=-1&sk=#view=detail&mid=CF0DD797ED84DE740904CF0DD797ED84DE740904)。
+**觀看影片：**![播放圖示](../designers/media/bldadminconsoleinitialconfigicon.PNG) [Blend tips:Intro to using behaviors Part 1](http://www.bing.com/videos/search?q=Expression%20blend%20behaviors&qs=n&form=QBVR&pq=expression%20blend%20behavior&sc=4-25&sp=-1&sk=#view=detail&mid=CF0DD797ED84DE740904CF0DD797ED84DE740904) (Blend 祕訣：使用行為簡介第 1 部分)。
 
 ### <a name="events"></a>事件
 

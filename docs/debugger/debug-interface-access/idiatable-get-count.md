@@ -1,8 +1,6 @@
 ---
 title: 'Idiatable:: Get_count |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 93a5d2002a68c7b11a6a4e81b6dbd04114aa8c2c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: bd0964077c158940298d5a99535a12054b79c57e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49816570"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53906822"
 ---
 # <a name="idiatablegetcount"></a>IDiaTable::get_Count
 擷取資料表中的項目數。  
@@ -27,7 +25,7 @@ ms.locfileid: "49816570"
 ## <a name="syntax"></a>語法  
   
 ```C++  
-HRESULT get_Count (   
+HRESULT get_Count (   
    LONG* pRetVal  
 );  
 ```  
@@ -39,6 +37,6 @@ HRESULT get_Count (
 ## <a name="return-value"></a>傳回值  
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDiaTable](../../debugger/debug-interface-access/idiatable.md)   
  [IDiaTable::Item](../../debugger/debug-interface-access/idiatable-item.md)

@@ -1,9 +1,7 @@
 ---
 title: 步驟 11：執行您的程式並嘗試其他功能
-ms.custom: ''
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
 ms.topic: conceptual
 ms.assetid: 656614d0-4fe7-4a67-8edc-c10919377d09
 author: TerryGLee
@@ -11,19 +9,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 87992bb8ab2557dbca4c8e7e3a94dd99e5de7682
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: b0a00b328c85758c2be824377d04a0b3cfe122f3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50671920"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53968241"
 ---
 # <a name="step-11-run-your-program-and-try-other-features"></a>步驟 11：執行您的程式並嘗試其他功能
 您的程式已完成，可以開始執行。 您可以執行程式並設定 <xref:System.Windows.Forms.PictureBox> 的背景色彩。 若要進一步了解，請試著變更表單的色彩、自訂按鈕和核取方塊並變更表單的屬性，以改善程式。
 
  若要下載這個範例的完整版，請參閱[完整的圖片檢視器教學課程範例](https://code.msdn.microsoft.com/Complete-Picture-Viewer-7d91d3a8) \(英文\)。
 
- ![影片連結](../data-tools/media/playvideo.gif)如需觀看本主題的影片版本，請參閱[教學課程 1：使用 Visual Basic 建立圖片檢視器 - 影片 5](http://go.microsoft.com/fwlink/?LinkId=205216) 或[教學課程 1：使用 C# 建立圖片檢視器 - 影片 5](http://go.microsoft.com/fwlink/?LinkId=205206)。 這些影片使用舊版 Visual Studio，因此有一些功能表命令以及某些使用者介面項目會有些微差異。 不過，概念和程序在目前 Visual Studio 版本中的運作方式雷同。
+ ![影片連結](../data-tools/media/playvideo.gif)如需本主題的影片版本，請參閱[教學課程 1：Create a picture viewer in Visual Basic - Video 5](http://go.microsoft.com/fwlink/?LinkId=205216) (教學課程 1：在 Visual Basic 中建立圖片檢視器 - 影片 5) 或 [Tutorial 1:Create a picture viewer in C# - Video 5](http://go.microsoft.com/fwlink/?LinkId=205206) (教學課程 1：在 C# 中建立圖片檢視器 - 影片 5)。 這些影片使用舊版 Visual Studio，因此有一些功能表命令以及某些使用者介面項目會有些微差異。 不過，概念和程序在目前 Visual Studio 版本中的運作方式雷同。
 
 ## <a name="to-run-your-program-and-set-the-background-color"></a>若要執行程式並設定背景色彩
 
@@ -59,6 +57,6 @@ ms.locfileid: "50671920"
 
 -   若要深入了解 Visual C#，請參閱 [C# 語言和 .NET Framework 簡介](/dotnet/csharp/getting-started/introduction-to-the-csharp-language-and-the-net-framework)。
 
--   若要移到下一個教學課程，請參閱[教學課程 2：建立計時的數學測驗](../ide/tutorial-2-create-a-timed-math-quiz.md)。
+-   若要前往下一個教學課程，請參閱[教學課程 2：建立計時的數學測驗](../ide/tutorial-2-create-a-timed-math-quiz.md)。
 
--   若要回到上一個教學課程步驟，請參閱[步驟 10：撰寫其他按鈕和核取方塊的程式碼](../ide/step-10-write-code-for-additional-buttons-and-a-check-box.md)。
+-   若要回到上一個教學課程步驟，請參閱[步驟 10：為其他按鈕及核取方塊撰寫程式碼](../ide/step-10-write-code-for-additional-buttons-and-a-check-box.md)。

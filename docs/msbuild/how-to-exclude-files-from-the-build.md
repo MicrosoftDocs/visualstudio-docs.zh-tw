@@ -1,8 +1,6 @@
 ---
-title: 如何：從組建中排除檔案 | Microsoft Docs
-ms.custom: ''
+title: HOW TO：從組建中排除檔案 | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, wildcards
@@ -14,18 +12,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b2adfd3d571fe16fcbfe273e5513ebea724403cd
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 9ed8eeca4655761e0696184fdfc0d146ece06117
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39080684"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53833273"
 ---
-# <a name="how-to-exclude-files-from-the-build"></a>如何：從組建中排除檔案
+# <a name="how-to-exclude-files-from-the-build"></a>HOW TO：從組建中排除檔案
 在專案檔中，您可以使用萬用字元，來包含一個目錄中的所有檔案或巢狀目錄集合做為組建的輸入。 不過，目錄中可能有一個您不想包含來建置輸入的檔案，或者巢狀目錄集合中可能有一個您不想包含的目錄。 您可以明確地從輸入清單中排除該檔案或目錄。 專案中也可能有一個您只想在符合特定條件的情況下包含的檔案。 您可以明確地宣告要在組建中包含檔案的條件。  
   
 ## <a name="exclude-a-file-or-directory-from-the-inputs-for-a-build"></a>從組建的輸入中排除檔案或目錄  
- 項目清單是組建的輸入檔。 您可以使用 `Include` 屬性，個別宣告或以群組方式宣告想要包含的項目。 例如:   
+ 項目清單是組建的輸入檔。 您可以使用 `Include` 屬性，個別宣告或以群組方式宣告想要包含的項目。 例如：  
   
 ```xml  
 <CSFile Include="Form1.cs"/>  

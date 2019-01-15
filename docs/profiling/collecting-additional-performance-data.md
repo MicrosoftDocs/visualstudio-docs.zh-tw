@@ -1,20 +1,18 @@
 ---
 title: 收集其他效能資料 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 author: mikejo5000
 ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 562f1cf090ffe169ead30b3bd7c4bdce515d3b22
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: baf48f1e5f8f0370bbabb64bc6b28ef0fd4fcb63
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34266322"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53892724"
 ---
 # <a name="collect-additional-performance-data"></a>收集其他效能資料
 

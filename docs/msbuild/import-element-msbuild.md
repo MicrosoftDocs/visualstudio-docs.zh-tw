@@ -1,8 +1,6 @@
 ---
 title: Import 元素 (MSBuild) | Microsoft Docs
-ms.custom: ''
 ms.date: 03/13/2017
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#Import
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7dd5b0aa6f0ed56aaa3315c03aeef6ed1b77ad62
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e6318674d82ffb10839d801df4fc89da94545981
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49839605"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53900869"
 ---
 # <a name="import-element-msbuild"></a>Import 項目 (MSBuild)
 將某個專案檔的內容匯入至另一個專案檔。  
@@ -45,7 +43,7 @@ ms.locfileid: "49839605"
 
 ### <a name="attributes"></a>屬性  
 
-|屬性|描述|  
+|屬性|說明|  
 |---------------|-----------------|  
 |`Project`|必要屬性。<br /><br /> 要匯入之專案檔的路徑。 路徑可以包含萬用字元。 相符的檔案會依排序的順序進行匯入。 使用這項功能，只要將程式碼檔案新增至目錄，就可以將程式碼新增至專案。|  
 |`Condition`|選擇性屬性。<br /><br /> 要評估的條件。 如需詳細資訊，請參閱[條件](../msbuild/msbuild-conditions.md)。|  
@@ -55,7 +53,7 @@ ms.locfileid: "49839605"
 
 ### <a name="parent-elements"></a>父元素  
 
-| 元素 | 描述 |
+| 元素 | 說明 |
 | - | - |
 | [專案](../msbuild/project-element-msbuild.md) | [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 專案檔案的必要根項目。 |
 | [ImportGroup](../msbuild/importgroup-element.md) | 包含群組在選擇性條件下方的 `Import` 項目集合。 |
@@ -115,4 +113,4 @@ ms.locfileid: "49839605"
 
 ## <a name="see-also"></a>另請參閱  
  [專案檔結構描述參考](../msbuild/msbuild-project-file-schema-reference.md)   
- [如何：使用多個專案檔內相同的目標](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md)
+ [如何：在多個專案檔中使用相同的目標](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md)

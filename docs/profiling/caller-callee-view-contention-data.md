@@ -1,8 +1,6 @@
 ---
 title: 呼叫端 - 被呼叫端檢視 - 爭用資料 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Caller/Callee view
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f919bd6b3fdad1a9c7412960e14d8c9f4cf5af67
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: db4b0bf6e29be1607fcf05557c8089074efa9f78
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34263146"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53902902"
 ---
 # <a name="callercallee-view----contention-data"></a>呼叫端/被呼叫端檢視 - 爭用資料
 [呼叫端/被呼叫端] 檢視會顯示所選取函式及其父函式和子函式的爭用資訊。 [呼叫端/被呼叫端] 檢視包含三個方格。  
@@ -28,7 +26,7 @@ ms.locfileid: "34263146"
   
  **目前的函式所呼叫的函式**會顯示在下方方格中，並顯示所選取函式之被呼叫端 (子) 函式 (由目前函式所呼叫) 的爭用資訊。  
   
-|資料行|描述|  
+|資料行|說明|  
 |------------|-----------------|  
 |**Type**|函式的內容︰<br /><br /> -   **0** - 目前的函式<br />-   **1** - 呼叫目前函式的函式<br />-   **2** - 目前的函式所呼叫的函式<br /><br /> 只存在於 [VSPerfReport](../profiling/vsperfreport.md) 命令列報表中。|  
 |**專有封鎖時間**|- 如果是目前的函式，即為此函式已遭封鎖而無法執行函式主體中之程式碼的時間。 不包括函式所呼叫之函式的封鎖時間。<br />- 如果是呼叫端函式，即為目前函式專有封鎖時間的部分，這會發生在此函式呼叫目前的函式時。<br />- 如果是被呼叫端函式，即為此函式已遭封鎖，而無法在目前函式呼叫此函式時執行本身程式碼的時間。 不包括被呼叫端函式所呼叫之子函式的封鎖時間。|  

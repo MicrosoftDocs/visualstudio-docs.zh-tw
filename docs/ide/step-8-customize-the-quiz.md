@@ -1,9 +1,7 @@
 ---
 title: 步驟 8：自訂測驗
-ms.custom: ''
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
 ms.topic: conceptual
 ms.assetid: dc8edb13-1b23-47d7-b859-8c6f7888c1a9
 author: TerryGLee
@@ -11,12 +9,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 09d020e2d83e7e631fefcb1503eb8f1938894986
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: f2b2f9d46b623f63d216ce530cd283bf799a3a73
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50672115"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53842352"
 ---
 # <a name="step-8-customize-the-quiz"></a>步驟 8：自訂測驗
 在本教學課程的最後一部分，您將探索一些方法來自訂測驗，以及延伸您已經學習過的內容。 例如，請了解程式如何建立答案絕不是分數的隨機除法問題。 若要深入了解，請將 `timeLabel` 控制項轉換為不同的色彩，並提供受測者的提示。  
@@ -31,6 +29,6 @@ ms.locfileid: "50672115"
   
 -   若要下載完整版的測驗，請參閱[完整的數學測驗教學課程範例](https://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c) \(英文\)。  
   
--   若要移到下一個教學課程，請參閱[教學課程 3：建立配對遊戲](../ide/tutorial-3-create-a-matching-game.md)。  
+-   若要前往下一個教學課程，請參閱[教學課程 3：建立配對遊戲](../ide/tutorial-3-create-a-matching-game.md)。  
   
--   若要回到上一個教學課程步驟，請參閱[步驟 7：新增乘法和除法問題](../ide/step-7-add-multiplication-and-division-problems.md)。
+-   若要回到上一個教學課程步驟，請參閱[步驟 7：新增乘法及除法問題](../ide/step-7-add-multiplication-and-division-problems.md)。

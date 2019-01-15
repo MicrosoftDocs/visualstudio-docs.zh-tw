@@ -3,7 +3,6 @@ title: 設計無障礙應用程式的資源
 description: 了解如何建立無障礙應用程式，使它們更易於身心障礙人士使用。
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - accessibility, Windows applications
@@ -16,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 19642d5a327982454c9eaf4e5233451d5dba499e
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 10b63de96ce56005abeb59de35b533693edcff53
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50671712"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53959621"
 ---
 # <a name="resources-for-designing-accessible-applications"></a>設計無障礙應用程式的資源
 
@@ -37,7 +36,7 @@ ms.locfileid: "50671712"
 
 ## <a name="windows-applications"></a>Windows 應用程式
 
-* **[逐步解說：建立 Windows 型無障礙應用程式](/dotnet/framework/winforms/advanced/walkthrough-creating-an-accessible-windows-based-application)**：本文提供逐步指示，說明如何將 "Certified for Windows" 標誌的五個協助工具要求納入 Windows 應用程式中範例。
+* **[逐步解說：建立 Windows 型無障礙應用程式](/dotnet/framework/winforms/advanced/walkthrough-creating-an-accessible-windows-based-application)**：本文提供逐步指示，說明如何將 "Certified for Windows" 標誌的五個協助工具需求納入 Windows 範例應用程式中。
 
 * **鍵盤使用者介面設計指導方針**：本技術文章描述如何設計可讓使用者從鍵盤巡覽的 Windows 應用程式。 如需詳細資訊，請參閱[鍵盤使用者介面設計指導方針](/previous-versions/windows/desktop/dnacc/guidelines-for-keyboard-user-interface-design)。
 
@@ -45,7 +44,7 @@ ms.locfileid: "50671712"
 
 ## <a name="websites"></a>網站
 
--   [逐步解說：使用影像控制項、功能表控制項和 AutoPostBack 的可及性方針](https://msdn.microsoft.com/Library/ff7b5021-48b3-46bf-921f-9fe1e0e32202)：本文提供在網頁範例中包含可存取控制項的逐步指示。 其亦提供 Web 的一些協助工具設計祕訣。
+-   [逐步解說：Accessibility Guidelines for Using Image Controls, Menu Controls, and AutoPostBack](https://msdn.microsoft.com/Library/ff7b5021-48b3-46bf-921f-9fe1e0e32202) (使用影像控制項、功能表控制項和 AutoPostBack 的協助工具方針)：本文提供在網頁範例中包含可存取控制項的逐步指示。 其亦提供 Web 的一些協助工具設計祕訣。
 
 -   **Creating Accessible Web Pages with DHTML** (建立含有 DHTML 的可存取網頁)：此技術文章列出可存取的 HTML 4.0 元素以及可存取的 Web 設計祕訣。 如需詳細資訊，請參閱 [Create accessible web pages with DHTML](https://msdn.microsoft.com/library/ms528445.aspx) (建立具有 DHTML 的可存取網頁)。
 

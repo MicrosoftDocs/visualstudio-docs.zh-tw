@@ -1,8 +1,6 @@
 ---
 title: 模組檢視 - 爭用資料 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Modules view
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f9ad65a81820e37c01d55a0ddba441dd30977b4
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: edd882b00c5bdaf62ae280cb0e4986662b05ad83
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35256054"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53926395"
 ---
 # <a name="modules-view---contention-data"></a>模組檢視 - 爭用資料
 爭用資料的 [模組檢視] 會顯示根據分析資料中取樣的模組所分組的效能資料。 每個模組都是階層式樹狀結構的根。 爭用事件發生所在模組的函式會列在模組節點之下。  
@@ -26,7 +24,7 @@ ms.locfileid: "35256054"
   
  下表描述爭用資料之 [模組檢視] 中資料行的值。  
   
-|資料行|描述|  
+|資料行|說明|  
 |------------|-----------------|  
 |**專有封鎖時間**|-   針對函式，即為此函式已遭封鎖而無法執行函式主體中程式碼的時間。 不包括由該函式所呼叫函式的封鎖時間。<br />-   針對模組，即為模組中函式的專有封鎖時間總和。<br />-   針對程式行或指令，即為封鎖執行此程式行或指令的時間。|  
 |**專有封鎖時間 %**|-   針對函式或模組，即為在分析回合的所有封鎖時間中，屬於此函式或模組的專有封鎖時間百分比。<br />-   針對程式行或指令，即為分析回合中封鎖執行此程式行或指令之所有封鎖時間的百分比。|  

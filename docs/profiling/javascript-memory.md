@@ -2,7 +2,6 @@
 title: 分析 UWP App 中的 JavaScript 記憶體使用量 | Microsoft Docs
 ms.custom: H1Hack27Feb2017
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - JavaScript
@@ -20,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: af0871e428d57d9bb4da85a16963f539ecd08d96
-ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
+ms.openlocfilehash: fca1abfe267d877dbe5eec45ecf29c9f73781ce8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "51221031"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53962372"
 ---
 # <a name="analyze-javascript-memory-usage-in-uwp-apps"></a>分析 UWP App 中的 JavaScript 記憶體使用量
 您可以使用 Visual Studio 中提供的 JavaScript 記憶體分析器，在使用 JavaScript 針對 Windows 建置的 UWP App 中了解記憶體使用量並找出記憶體流失的問題。 支援的應用程式包括通用 Windows App。
@@ -99,7 +98,7 @@ ms.locfileid: "51221031"
 -   [檢視快照差異](#view-a-snapshot-diff).顯示快照之間的差異值。 這些檢視會顯示物件大小和物件計數的差異。  
   
 ## <a name="isolate-a-memory-leak"></a>Isolate a memory leak  
- 下列步驟提供的工作流程，有助於您更有效地使用 JavaScript 記憶體分析器。 如果您懷疑應用程式有記憶體流失，這些步驟可能會很有用。 如需能協助您找出運作中應用程式發生記憶體流失問題的教學課程，請參閱[逐步解說：找出記憶體流失 (JavaScript)](../profiling/walkthrough-find-a-memory-leak-javascript.md)。  
+ 下列步驟提供的工作流程，有助於您更有效地使用 JavaScript 記憶體分析器。 如果您懷疑應用程式有記憶體流失，這些步驟可能會很有用。 如需能協助您找出運作中應用程式發生記憶體流失問題的教學課程，請參閱[逐步解說：尋找記憶體流失 (JavaScript)](../profiling/walkthrough-find-a-memory-leak-javascript.md)。  
   
 1. 在 Visual Studio 中開啟應用程式。  
   
@@ -141,7 +140,7 @@ ms.locfileid: "51221031"
   
     - 差異堆積大小 (在堆積大小下方的左邊連結)。 此連結文字會顯示目前快照與上一個快照之間的堆積大小差異。  
   
-    - 差異物件計數 (在物件計數下方的右邊連結)。 此連結文字會顯示兩個值 (例如，+1858 / -1765)：第一個值是自上一個快照以來加入新物件的數目，而第二個值是自上一個快照以來移除的物件數目。  
+    - 差異物件計數 (在物件計數下方的右邊連結)。 此連結文字會顯示兩個值 (例如 +1858/-1765)：第一個值是自上一個快照以來新增新物件的數目，而第二個值是自上一個快照以來移除的物件數目。  
   
       這些連結會開啟堆積中類型的差異快照詳細資料檢視，並依保留大小或物件計數排序 (視您開啟哪一個連結而定)。  
   
@@ -197,7 +196,7 @@ ms.locfileid: "51221031"
   
 -   物件計數。 這個計數只代表在應用程式中建立的物件，其中也已經篩選掉了 JavaScript 執行階段建立的內建物件。 這個物件計數可以連結到快照詳細資料的 [型別] 檢視。  
   
--   差異物件計數。 這會顯示兩個值：第一個值是從上一個快照以來加入新物件的數目，而第二個值是從上一個快照以來移除的物件數目。 例如，上圖顯示與快照 #1 相比，已加入了 1,859 個物件而且移除了 1,733 物件。 如果物件總計數增加，這項資訊後面就會顯示紅色向上箭頭，反之如果物件總計數減少，就會顯示綠色向下箭頭。 如果物件計數沒有變更，您就會看到 [ **沒有變更** ] 這個文字而非數字。 如果是第一個快照，您會看到 [ **基準**] 這個文字。 差異物件計數可以連結到快照差異的 [型別] 檢視。  
+-   差異物件計數。 這會顯示兩個值：第一個值是自上一個快照以來新增新物件的數目，而第二個值是自上一個快照以來移除的物件數目。 例如，上圖顯示與快照 #1 相比，已加入了 1,859 個物件而且移除了 1,733 物件。 如果物件總計數增加，這項資訊後面就會顯示紅色向上箭頭，反之如果物件總計數減少，就會顯示綠色向下箭頭。 如果物件計數沒有變更，您就會看到 [ **沒有變更** ] 這個文字而非數字。 如果是第一個快照，您會看到 [ **基準**] 這個文字。 差異物件計數可以連結到快照差異的 [型別] 檢視。  
   
 -   在擷取快照當時的螢幕擷取畫面。  
   
@@ -353,13 +352,13 @@ if (performance && performance.mark) {
   
 -   如果難以識別造成記憶體問題的原因，請使用各種檢視 (例如主導者和類型) 尋找其共同特徵，特別是幫助識別一個 (或幾個) 物件，且這些物件可能包含顯示在檢視中許多其他物件的參考。  
   
--   尋找使用者巡覽至新頁面之後在記憶體中不慎保留的物件，這些物件是造成記憶體問題的常見原因。 例如:   
+-   尋找使用者巡覽至新頁面之後在記憶體中不慎保留的物件，這些物件是造成記憶體問題的常見原因。 例如：  
   
     -   使用 [URL.CreateObjectUrl](https://developer.mozilla.org/docs/Web/API/URL/createObjectURL) 函式不正確，可能會造成此問題。  
   
     -   部分物件可能會提供 `dispose` 方法和建議以供使用。 例如，當您呼叫清單的 `dispose` 方法時，應在 [WinJS.Binding.List](/previous-versions/windows/apps/hh700774\(v\=win.10\)) 上呼叫 `createFiltered` ，然後離開頁面。  
   
-    -   您可能需要移除一個或多個事件接聽程式。 如需詳細資訊，請參閱 [View DOM event listeners](../debugger/view-dom-event-listeners.md)。  
+    -   您可能需要移除一個或多個事件接聽程式。 如需詳細資訊，請參閱 [View DOM event listeners](/visualstudio/debugger/quickstart-debug-html-and-css)。  
   
 -   請觀賞 Build 2013 大會中關於 JavaScript 記憶體分析器的 [影片](https://channel9.msdn.com/Events/Build/2013/3-316) 。  
   

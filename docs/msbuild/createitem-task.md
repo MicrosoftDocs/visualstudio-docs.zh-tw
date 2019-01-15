@@ -1,8 +1,6 @@
 ---
 title: CreateItem 工作 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#CreateItem
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a53bbac8f1d4549b49183d0e90b2f33c925654d6
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: e50b1f56be7b32bd21b9b5785caac003b7ee86d7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37945296"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53860880"
 ---
 # <a name="createitem-task"></a>CreateItem 工作
 使用輸入項目填入項目集合。 這可將項目從一個清單複製到另一個。  
@@ -36,10 +34,10 @@ ms.locfileid: "37945296"
 ## <a name="attributes"></a>屬性  
  下表說明 `CreateItem` 工作的參數。  
   
-|參數|描述|  
+|參數|說明|  
 |---------------|-----------------|  
-|`AdditionalMetadata`|選擇性 `String` 陣列參數。<br /><br /> 指定要附加至輸出項目的其他中繼資料。  使用下列語法來指定項目的中繼資料名稱和值：<br /><br /> *MetadataName* `=` *MetadataValue*<br /><br /> 您應該使用分號來分隔多個中繼資料名稱/值組。 如果名稱或值包含分號或其他任何特殊字元，則必須逸出它們。 如需詳細資訊，請參閱[如何：在 MSBuild 中逸出特殊字元](../msbuild/how-to-escape-special-characters-in-msbuild.md)。|  
-|`Exclude`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 輸出參數。<br /><br /> 指定要從輸出項目集合中排除的項目。 此參數可以包含萬用字元規格。 如需詳細資訊，請參閱[項目](../msbuild/msbuild-items.md)和[如何︰從組建中排除檔案](../msbuild/how-to-exclude-files-from-the-build.md)。|  
+|`AdditionalMetadata`|選擇性 `String` 陣列參數。<br /><br /> 指定要附加至輸出項目的其他中繼資料。  使用下列語法來指定項目的中繼資料名稱和值：<br /><br /> *MetadataName* `=` *MetadataValue*<br /><br /> 您應該使用分號來分隔多個中繼資料名稱/值組。 如果名稱或值包含分號或其他任何特殊字元，則必須逸出它們。 如需詳細資訊，請參閱[＜How to：在 MSBuild 中逸出特殊字元](../msbuild/how-to-escape-special-characters-in-msbuild.md)。|  
+|`Exclude`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 輸出參數。<br /><br /> 指定要從輸出項目集合中排除的項目。 此參數可以包含萬用字元規格。 如需詳細資訊，請參閱[項目](../msbuild/msbuild-items.md)和[如何：從組建中排除檔案](../msbuild/how-to-exclude-files-from-the-build.md)。|  
 |`Include`|必要的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 指定要包含在輸出項目集合中的項目。 此參數可以包含萬用字元規格。|  
 |`PreserveExistingMetadata`|選擇性的 `Boolean` 參數。<br /><br /> 如果是 `True`，僅會套用其他中繼資料 (如果它們還不存在)。|  
   

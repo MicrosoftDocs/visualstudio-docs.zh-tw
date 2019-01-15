@@ -1,8 +1,6 @@
 ---
 title: VSInstr | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - performance tools, instrumentation
@@ -19,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2526938274299cc5a90319749531f80e8bd3a90d
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 1e1c5d548ae8e197523fb92ed130ebeebb04af3f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50220543"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53945765"
 ---
 # <a name="vsinstr"></a>VSInstr
 VSInstr 工具是用來檢測二進位檔。 使用下列語法叫用：  
@@ -35,7 +33,7 @@ VSInstr [/U] filename [/options]
   
  下表說明 VSInstr 工具選項：  
   
-|選項|描述|  
+|選項|說明|  
 |-------------|-----------------|  
 |**Help** 或 **?**|顯示說明。|  
 |**U**|將重新導向的主控台輸出以 Unicode 寫入。 務必要優先指定此選項。|  
@@ -52,7 +50,7 @@ VSInstr [/U] filename [/options]
 |**Control** `:{` **Thread** `&#124;` **Process** `&#124;` **Global** `}`|指定下列 VSInstr 資料收集控制選項的程式碼剖析層級︰<br /><br /> **Start**<br /><br /> **StartOnly**<br /><br /> **Suspend**<br /><br /> **StopOnly**<br /><br /> **SuspendOnly**<br /><br /> **ResumeOnly**<br /><br /> **Thread** - 指定執行緒層級的資料收集控制函式。 只會針對目前的執行緒啟動或停止程式碼剖析。 不會影響其他執行緒的程式碼剖析狀態。 預設值為 Thread。<br /><br /> **Process** - 指定處理序層級的程式碼剖析資料收集控制函式。 可針對目前處理序中的所有執行緒啟動或停止程式碼剖析。 不會影響其他處理序的程式碼剖析狀態。<br /><br /> **Global** - 指定全域層級 (跨處理序) 的資料收集控制函式。<br /><br /> 如果您沒有指定程式碼剖析層級，就會發生錯誤。|  
 |**Start** `:{` **Inside** `&#124;` **Outside** `},funcname`|限制只對目標函式和該函式呼叫的子函式收集資料。<br /><br /> **Inside** - 在目標函式進入之後，立即插入 StartProfile 函式。 在目標函式中的每個傳回之前，立即插入 StopProfile 函式。<br /><br /> **Outside** - 在每次呼叫目標函式之前，立即插入 StartProfile 函式。 在每次呼叫目標函式之後，立即插入 StopProfile 函式。<br /><br /> `funcname` - 目標函式的名稱。|  
 |**Suspend** `:{` **Inside** `&#124;` **Outside** `},funcname`|排除對目標函式和該函式呼叫的子函式收集資料。<br /><br /> **Inside** - 在目標函式進入之後，立即插入 SuspendProfile 函式。 在目標函式中的每個傳回之前，立即插入 ResumeProfile 函式。<br /><br /> **Outside** - 在目標函式進入之前，立即插入 SuspendProfile 函式。 在從目標函式離開之後，立即插入 ResumeProfile 函式。<br /><br /> `funcname` - 目標函式的名稱。<br /><br /> 如果目標函式包含 StartProfile 函式，請在它之前插入 SuspendProfile 函式。 如果目標函式包含 StopProfile 函式，請在它之後插入 ResumeProfile 函式。|  
-|**StartOnly:** `{` **Before** `&#124;` **After** `&#124;` **Top** `&#124;` **Bottom** `},funcname`|在執行程式碼剖析期間開始資料收集。 在指定位置插入 StartProfile API 函式。<br /><br /> **Before** - 緊接在目標函式進入之前。<br /><br /> **After** - 緊跟在目標函式結束之後。<br /><br /> **Top** - 緊跟在目標函式進入之後。<br /><br /> **Bottom** - 緊接在目標函式中的每個傳回之前。<br /><br /> `funcname` - 目標函式的名稱。|  
+|**StartOnly:**`{` **Before** `&#124;` **After** `&#124;` **Top** `&#124;` **Bottom** `},funcname`|在執行程式碼剖析期間開始資料收集。 在指定位置插入 StartProfile API 函式。<br /><br /> **Before** - 緊接在目標函式進入之前。<br /><br /> **After** - 緊跟在目標函式結束之後。<br /><br /> **Top** - 緊跟在目標函式進入之後。<br /><br /> **Bottom** - 緊接在目標函式中的每個傳回之前。<br /><br /> `funcname` - 目標函式的名稱。|  
 |**StopOnly:**{**Before**`&#124;`**After**`&#124;`**Top**`&#124;`**Bottom**}`,funcname`|在執行程式碼剖析期間暫止資料收集。 在指定位置插入 StopProfile API 函式。<br /><br /> **Before** - 緊接在目標函式進入之前。<br /><br /> **After** - 緊跟在目標函式結束之後。<br /><br /> **Top** - 緊跟在目標函式進入之後。<br /><br /> **Bottom** - 緊接在目標函式中的每個傳回之前。<br /><br /> `funcname` - 目標函式的名稱。|  
 |**SuspendOnly:**{**Before**`&#124;`**After**`&#124;`**Top**`&#124;`**Bottom**}`,funcname`|在執行程式碼剖析期間暫止資料收集。 在指定位置插入 SuspendProfile API。<br /><br /> **Before** - 緊接在目標函式進入之前。<br /><br /> **After** - 緊跟在目標函式結束之後。<br /><br /> **Top** - 緊跟在目標函式進入之後。<br /><br /> **Bottom** - 緊接在目標函式中的每個傳回之前。<br /><br /> `funcname` - 目標函式的名稱。<br /><br /> 如果目標函式包含 StartProfile 函式，請在它之前插入 SuspendProfile 函式。|  
 |**ResumeOnly:**{**Before**`&#124;`**After**`&#124;`**Top**`&#124;`**Bottom**}`,funcname`|在執行程式碼剖析期間開始或繼續資料收集。<br /><br /> 其通常是在 **SuspendOnly** 選項已停止程式碼剖析之後，用來啟動程式碼剖析。 在指定位置插入 ResumeProfile API。<br /><br /> **Before** - 緊接在目標函式進入之前。<br /><br /> **After** - 緊跟在目標函式結束之後。<br /><br /> **Top** - 緊跟在目標函式進入之後。<br /><br /> **Bottom** - 緊接在目標函式中的每個傳回之前。<br /><br /> `funcname` - 目標函式的名稱。<br /><br /> 如果目標函式包含 StopProfile 函式，請在它之後插入 ResumeProfile 函式。|  

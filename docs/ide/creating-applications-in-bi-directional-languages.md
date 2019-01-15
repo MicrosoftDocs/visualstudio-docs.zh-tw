@@ -2,7 +2,6 @@
 title: 使用雙向語言建立應用程式
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - Hebrew character display, creating applications
@@ -14,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f93dea099d9223347c727f3e7a838fcb78d3742
-ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
+ms.openlocfilehash: 26c3ea5073d4b53c0a9d75c18722f1569aff8646
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48863630"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53891611"
 ---
 # <a name="creating-applications-in-bi-directional-languages"></a>使用雙向語言建立應用程式
 
@@ -43,7 +42,7 @@ ms.locfileid: "48863630"
 
 -   **物件名稱**：您可以使用雙向語言，將名稱指派給方案、專案、檔案、資料夾等等。 在程式碼中，您可以針對變數、類別、物件、屬性、中繼資料以及其他項目的名稱使用雙向語言。
 
--   **檔案編碼方式**：您可以使用特定語言或 Unicode 編碼方式，儲存及開啟檔案。 如需詳細資訊，請參閱[如何：使用編碼來儲存及開啟檔案](../ide/how-to-save-and-open-files-with-encoding.md)。
+-   **檔案編碼方式**：您可以使用特定語言或 Unicode 編碼方式，儲存及開啟檔案。 如需詳細資訊，請參閱[＜How to：以編碼來儲存及開啟檔案](../ide/how-to-save-and-open-files-with-encoding.md)。
 
 ## <a name="features-with-limited-or-no-support"></a>有限支援或不支援的功能
  Visual Studio 並非全數支援雙向語言應用程式通用的其他功能；在某些情況下，甚至完全不支援。 它們包括：

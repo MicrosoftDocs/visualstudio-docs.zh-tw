@@ -2,7 +2,6 @@
 title: 建置前事件/建置後事件命令列對話方塊
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - cs.ProjectPropertiesBuildEventsBuilder
@@ -35,12 +34,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e27a7e624607009e986d301fa802fdbe1597a3c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 7cc93b398791d01cc29025772a6cd086f0d0c740
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31947969"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53877899"
 ---
 # <a name="pre-build-eventpost-build-event-command-line-dialog-box"></a>建置前事件/建置後事件命令列對話方塊
 您可以直接在編輯方塊中鍵入[專案設計工具、建置事件頁面 (C#)](../../ide/reference/build-events-page-project-designer-csharp.md)的建置前或建置後事件，或者可以從可用的巨集清單選取建置前或建置後巨集。
@@ -73,7 +72,7 @@ ms.locfileid: "31947969"
 ### <a name="macros"></a>巨集
  您可以使用任何這些巨集指定檔案位置，或是在複選的情況下取得輸入檔的實際名稱。 這些巨集不區分大小寫。
 
-|巨集|描述|
+|巨集|說明|
 |-----------|-----------------|
 |`$(ConfigurationName)`|目前的專案設定名稱，例如 "Debug"。|
 |`$(OutDir)`|相對於專案目錄的輸出檔目錄路徑。 這會解析為 Output Directory 屬性的值。 它包含尾端的反斜線 '\\'。|

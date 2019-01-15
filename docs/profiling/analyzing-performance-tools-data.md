@@ -1,8 +1,6 @@
 ---
 title: 分析效能工具資料 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - performance, viewing data
@@ -18,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 628c7149a4f79a208ee9258ab2158cf8808a7fb5
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 521be9d9d0d4e6ecd34547219ef0d7aa81b402f8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50744829"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53944758"
 ---
 # <a name="analyze-performance-tools-data"></a>分析效能工具資料
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 程式碼剖析工具的效能報表可讓您檢視並分析應用程式效能問題。 本節提供可用來檢查效能資料的效能報告和檢視概觀。  
@@ -32,9 +30,9 @@ ms.locfileid: "50744829"
   
 |工作|相關內容|  
 |----------|---------------------|  
-|**使用效能規則快速找出問題︰** 程式碼剖析工具效能規則會找出常見問題，並協助您輕鬆地瀏覽至有問題的原始程式碼。 詳細的說明主題通常會建議解決方案。|-   [使用效能規則分析資料](../profiling/using-performance-rules-to-analyze-data.md)|  
-|**了解報告檢視詳細資料︰** 程式碼剖析工具報告檢視提供處理序、執行緒、模組及分析執行的函式等的彙總效能資料。 所顯示的資料取決於用來收集資料的程式碼剖析方法。|-   [效能報告檢視](../profiling/performance-report-views.md)|  
-|**設定、排序和篩選報告檢視︰** 您可以指定和排序在報告中顯示的資料欄、排序報告資料列，或是篩選資料，使報告中只包含您指定的時間區段。|-   [自訂效能工具報表檢視](../profiling/customizing-performance-tools-report-views.md)|  
+|**使用效能規則快速找出問題：** 分析工具效能規則會找出常見問題，並協助您輕鬆地巡覽至有問題的原始程式碼。 詳細的說明主題通常會建議解決方案。|-   [使用效能規則分析資料](../profiling/using-performance-rules-to-analyze-data.md)|  
+|**了解報告檢視詳細資料：** 分析工具報告檢視提供分析執行所在處理序、執行緒、模組和函式的彙總效能資料。 所顯示的資料取決於用來收集資料的程式碼剖析方法。|-   [效能報告檢視](../profiling/performance-report-views.md)|  
+|**設定、排序和篩選報告檢視：** 您可以指定和排序在報告中顯示的資料行、排序報告資料列，或是篩選資料，使報告中只包含您指定的時間區段。|-   [自訂效能工具報表檢視](../profiling/customizing-performance-tools-report-views.md)|  
   
 ## <a name="related-sections"></a>相關章節  
  [比較效能資料檔案](../profiling/comparing-performance-data-files.md)  

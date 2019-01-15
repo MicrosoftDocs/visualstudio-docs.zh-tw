@@ -1,8 +1,6 @@
 ---
 title: 使用檢測收集詳細計時資料 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Profiling Tools,instrumentation method
@@ -13,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ab2777675df16df47b69d024be3f2d9458d0ba8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f8812db301b4e58b89ac8ab879625b7cf101ad94
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49916838"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53913950"
 ---
 # <a name="collect-detailed-timing-data-by-using-instrumentation"></a>使用檢測設備收集詳細計時資料
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 程式碼剖析工具檢測方法會將程式碼剖析的程式碼插入模組的複本。 執行剖析期間，程式碼會記錄在模組中函式的每個項目、結束和函式呼叫。 此檢測方法適合用來收集程式碼區段的詳細計時資訊，以及了解輸入和輸出作業對應用程式效能的影響。  
@@ -44,7 +42,7 @@ ms.locfileid: "49916838"
 |在 [啟動]  頁面上，如果在您的方案中有多個 .exe 專案，請指定要啟動的應用程式和其啟動順序。|-   [如何：指定要啟動的二進位檔](../profiling/how-to-specify-the-binary-to-start.md)|  
 |在 [二進位檔]  頁面上，請指定此模組已檢測複本的位置。 根據預設，會將原始二進位碼檔案移到備份資料夾中。|-   [如何：重新配置所檢測的二進位檔](../profiling/how-to-relocate-instrumented-binaries.md)|  
 |在 [階層互動]  頁面上，將 ADO.NET 呼叫資料加入程式碼剖析執行。|-   [收集階層互動資料](../profiling/collecting-tier-interaction-data.md)|  
-|在 [檢測]  頁面上，從程式碼剖析排除小型函式，以減少程式碼剖析額外負荷，而且排除在 ASP.NET 網頁的設定檔 JavaScript 程式碼，並指定要在檢測程序之前和之後於命令提示字元執行的命令。|-   [如何：從檢測排除或包含精簡函式](../profiling/how-to-exclude-or-include-short-functions-from-instrumentation.md)<br />-   [如何：分析網頁中的 JavaScript 程式碼](../profiling/how-to-profile-javascript-code-in-web-pages.md)<br />-   [如何：指定檢測前置和檢測後續命令](../profiling/how-to-specify-pre-and-post-instrument-commands.md)|  
+|在 [檢測]  頁面上，從程式碼剖析排除小型函式，以減少程式碼剖析額外負荷，而且排除在 ASP.NET 網頁的設定檔 JavaScript 程式碼，並指定要在檢測程序之前和之後於命令提示字元執行的命令。|-   [如何：從檢測排除或包含精簡函式](../profiling/how-to-exclude-or-include-short-functions-from-instrumentation.md)<br />-   [如何：分析網頁中的 JavaScript 程式碼](../profiling/how-to-profile-javascript-code-in-web-pages.md)<br />-   [如何：指定檢測前和檢測後命令](../profiling/how-to-specify-pre-and-post-instrument-commands.md)|  
 |在 [CPU 計數器]  頁面上，指定將加入程式碼剖析資料的一或多個處理器效能計數器。|-   [如何：收集 CPU 計數器資料](../profiling/how-to-collect-cpu-counter-data.md)|  
 |在 [Windows 事件]  頁面上，選取 Windows (ETW) 事件的一或多個事件追蹤，以收集取樣資料。|-   [如何：收集 Windows 事件追蹤 (ETW) 資料](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md)|  
 |在 [Windows 計數器]  頁面上，指定將加入程式碼剖析資料為標記的一或多個作業系統效能計數器。|-   [如何：收集 Windows 計數器資料](../profiling/how-to-collect-windows-counter-data.md)|  

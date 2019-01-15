@@ -1,9 +1,7 @@
 ---
-title: 步驟 3：將隨機圖示指派給每個標籤
-ms.custom: ''
+title: 步驟 3：將隨機圖示指派給每一個標籤
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
 ms.topic: conceptual
 ms.assetid: 0ba5ed7a-9aaa-41f4-95d2-e3c2d567bc79
 author: TerryGLee
@@ -11,14 +9,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 593d778247e3c1e6b9a09358c82b5fd7139cfbb9
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: efcb151fd7ecba4db5d7b911c22c8fea9b86d16b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50672908"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53905146"
 ---
-# <a name="step-3-assign-a-random-icon-to-each-label"></a>步驟 3：將隨機圖示指派給每個標籤
+# <a name="step-3-assign-a-random-icon-to-each-label"></a>步驟 3：將隨機圖示指派給每一個標籤
 如果讓圖示在每個遊戲的相同儲存格中顯示，這樣就不夠有挑戰性。 若要避免此情形，請使用 `AssignIconsToSquares()` 方法，在表單上將圖示隨機指派給 Label 控制項。
 
 ## <a name="to-assign-a-random-icon-to-each-label"></a>若要將隨機圖示指派給每一個標籤
@@ -28,7 +26,7 @@ ms.locfileid: "50672908"
      [!code-csharp[VbExpressTutorial4Step2_3_4#2](../ide/codesnippet/CSharp/step-3-assign-a-random-icon-to-each-label_1.cs)]
      [!code-vb[VbExpressTutorial4Step2_3_4#2](../ide/codesnippet/VisualBasic/step-3-assign-a-random-icon-to-each-label_1.vb)]
 
-2.  如上一個步驟所示，加入 `AssignIconsToSquares()` 方法。 您可以將它放在您於[步驟 2：新增隨機物件和圖示清單](../ide/step-2-add-a-random-object-and-a-list-of-icons.md)中新增的程式碼正下方。
+2.  如上一個步驟所示，加入 `AssignIconsToSquares()` 方法。 您可以將它放在您於[步驟 2：新增隨機物件和圖示清單](../ide/step-2-add-a-random-object-and-a-list-of-icons.md)。
 
      如先前所述，您的 `AssignIconsToSquares()` 方法中有一些新項目：在 Visual C# 中為 `foreach`，而在 Visual Basic 中為 `For Each`。 您隨時要多次執行相同的動作時，可以使用 `For Each` 迴圈。 在這種情況下，您要對 <xref:System.Windows.Forms.TableLayoutPanel> 上的每一個標籤執行相同的陳述式，如下列程式碼所示。 第一行建立名稱為 `control` 的變數，會在控制項上執行迴圈中的陳述式時，儲存該控制項 (一次儲存一個控制項)。
 
@@ -38,7 +36,7 @@ ms.locfileid: "50672908"
     > [!NOTE]
     >  因為 "iconLabel" 和 "control" 這兩個名稱都屬描述性，所以會加以使用。 您可以使用任何名稱來取代這些名稱，程式碼的作用完全相同 (只要您變更迴圈內每一個陳述式中的名稱即可)。
 
-     `AssignIconsToSquares()` 方法會反覆通過 TableLayoutPanel 中的每一個 Label 控制項，並為每一個控制項執行相同的陳述式。 這些陳述式會從您在[步驟 2：新增隨機物件和圖示清單](../ide/step-2-add-a-random-object-and-a-list-of-icons.md)中新增的清單提取一個隨機圖示。 (這就是您為何將兩個圖示都包含在清單中的緣故，所以會有一對圖示指派給隨機 Label 控制項)。
+     `AssignIconsToSquares()` 方法會反覆通過 TableLayoutPanel 中的每一個 Label 控制項，並為每一個控制項執行相同的陳述式。 這些陳述式會從您在[步驟 2：新增隨機物件和圖示清單](../ide/step-2-add-a-random-object-and-a-list-of-icons.md)。 (這就是您為何將兩個圖示都包含在清單中的緣故，所以會有一對圖示指派給隨機 Label 控制項)。
 
      仔細留意在 `foreach` 或 `For Each` 迴圈內部執行的程式碼。 這個程式碼在此處重現。
 
@@ -47,7 +45,7 @@ ms.locfileid: "50672908"
 
      第一行將 **control** 變數轉換為名為 **iconLabel** 的 Label。 下一行為 `if` 陳述式，會檢查以確定轉換是否成功。 如果轉換成功，則會執行 `if` 陳述式中的陳述式。 (您可以回想一下上一個教學課程中，其中 `if` 陳述式是用來評估您所指定的任何條件)。`if` 陳述式中的第一行會建立名稱為 **randomNumber** 的變數，其中包含亂數並對應到圖示清單中的其中一個項目。 若要這樣做，該行使用您先前建立之 <xref:System.Random.Next> 物件的 <xref:System.Random> 方法。 `Next` 方法會傳回亂數。 這一行也使用 **icons** 清單的 <xref:System.Collections.Generic.List%601.Count> 屬性，決定從中選擇亂數的範圍。 下一行將圖示清單的其中一個項目指定至標籤的 <xref:System.Windows.Forms.Label.Text> 屬性。 註解行在本主題稍後加以說明。 最後，`if` 陳述式中的最後一行從清單中移除已加入至表單的圖示。
 
-     請記住，如果您不確定程式碼某些部分所執行的動作，可以將滑鼠指標放在程式碼項目上並檢閱顯示的工具提示。 使用 Visual Studio 偵錯工具時，您也可以在程式執行時對每一行程式碼進行逐步執行。 如需詳細資訊，請參閱[如何：在 Visual Studio 中逐步執行偵錯工具？](https://msdn.microsoft.com/vstudio/ee672313.aspx)\(英文\) 或[使用偵錯工具巡覽程式碼](../debugger/navigating-through-code-with-the-debugger.md)。
+     請記住，如果您不確定程式碼某些部分所執行的動作，可以將滑鼠指標放在程式碼項目上並檢閱顯示的工具提示。 使用 Visual Studio 偵錯工具時，您也可以在程式執行時對每一行程式碼進行逐步執行。 如需詳細資訊，請參閱[如何：在 Visual Studio 中逐步執行偵錯工具](https://msdn.microsoft.com/vstudio/ee672313.aspx)或[使用偵錯工具巡覽程式碼](../debugger/navigating-through-code-with-the-debugger.md)。
 
 3.  若要在程式啟動時使用圖示填滿遊戲面板，您必須呼叫 `AssignIconsToSquares()` 方法。 如果您使用的是 Visual C#，請在 **Form1**「建構函式」中，將陳述式新增至 `InitializeComponent()` 方法的呼叫正下方，如此您的表單會呼叫新方法，在表單顯示之前自行設定。 當您建立新的物件 (例如類別或結構) 時會呼叫建構函式。 如需詳細資訊，請參閱[建構函式 (C# 程式設計手冊)](/dotnet/csharp/programming-guide/classes-and-structs/constructors)，若是在 Visual Basic 中，則請參閱[使用建構函式和解構函式](/previous-versions/visualstudio/visual-studio-2008/2z08e49e\(v\=vs.90\))。
 
@@ -81,6 +79,6 @@ ms.locfileid: "50672908"
 
 ## <a name="to-continue-or-review"></a>若要繼續或檢視
 
--   若要移至下一個教學課程步驟，請參閱[步驟 4：將 Click 事件處理常式新增至每個標籤](../ide/step-4-add-a-click-event-handler-to-each-label.md)。
+-   若要前往下一個教學課程步驟，請參閱[步驟 4：將 Click 事件處理常式新增至每個標籤](../ide/step-4-add-a-click-event-handler-to-each-label.md)。
 
--   若要返回上一個教學課程步驟，請參閱[步驟 2：新增隨機物件和圖示清單](../ide/step-2-add-a-random-object-and-a-list-of-icons.md)。
+-   若要回到上一個教學課程步驟，請參閱[步驟 2：新增隨機物件和圖示清單](../ide/step-2-add-a-random-object-and-a-list-of-icons.md)。

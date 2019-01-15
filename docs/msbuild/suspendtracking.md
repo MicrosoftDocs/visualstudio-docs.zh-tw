@@ -1,8 +1,6 @@
 ---
 title: SuspendTracking | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 apiname:
 - SuspendTracking
@@ -17,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b0d52fb5d50a75207a0aad49f7b29cfc66b8e889
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 70411d7279dd3f8023971546fd1d228298ce1634
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39154192"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53911750"
 ---
 # <a name="suspendtracking"></a>SuspendTracking
 在目前的內容中暫停追蹤。  

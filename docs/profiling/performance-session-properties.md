@@ -1,8 +1,6 @@
 ---
 title: 效能工作階段屬性 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Profiling Tools,properties
@@ -13,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2ce4fb6b9a57db78e3dbb7f3082a87df9ffb7360
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 8a6cf897d0181717439f7ae3ac6afccb469b06f0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35254689"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53961909"
 ---
 # <a name="performance-session-properties"></a>效能工作階段屬性
 
@@ -36,17 +34,17 @@ ms.locfileid: "35254689"
 
 如需詳細資訊，請參閱:
 
-[操作說明：選擇收集方法](../profiling/how-to-choose-collection-methods.md)
+[如何：選擇收集方法](../profiling/how-to-choose-collection-methods.md)
 
 [收集 .NET 記憶體配置和存留期資料](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md)
 
- [操作說明：設定效能資料檔案名稱選項](../profiling/how-to-set-performance-data-file-name-options.md)
+ [如何：設定效能資料檔案名稱選項](../profiling/how-to-set-performance-data-file-name-options.md)
 
 ## <a name="launch"></a>啟動
 
 這些設定可以讓您從二進位檔的清單中選擇，並指定二進位檔啟動的順序。
 
-如需詳細資訊，請參閱[如何：指定要啟動的二進位檔](../profiling/how-to-specify-the-binary-to-start.md)
+如需詳細資訊，請參閱[＜How to：指定要啟動的二進位檔](../profiling/how-to-specify-the-binary-to-start.md)
 
 ## <a name="sampling"></a>取樣
 
@@ -58,12 +56,12 @@ ms.locfileid: "35254689"
 - 效能計數器 - 針對低階效能問題
 - 您可以根據可用的效能計數器來指定其他取樣事件
 
-如需詳細資訊，請參閱[如何：選擇取樣事件](../profiling/how-to-choose-sampling-events.md)
+如需詳細資訊，請參閱[＜How to：選擇取樣事件](../profiling/how-to-choose-sampling-events.md)
 
 ## <a name="binary"></a>二元
 這些設定可以讓您指定是否要將已檢測的二進位檔重新配置到另一個位置。 例如，如果您正在分析 *My.DLL* 並選擇不要重新配置已檢測的二進位檔，則會建立名為 *My.Orig.DLL* 的 *My.DLL* 備份複本。 接著會插入探查來修改 *My.DLL* 以收集資料。 如果您決定要重新配置已檢測的二進位檔，則不會重新命名原始二進位檔，而且會將已檢測的二進位檔複製到指定的位置供檢測期間使用。
 
-如需詳細資訊，請參閱[如何：指定要啟動的二進位檔](../profiling/how-to-specify-the-binary-to-start.md)
+如需詳細資訊，請參閱[＜How to：指定要啟動的二進位檔](../profiling/how-to-specify-the-binary-to-start.md)
 
 ## <a name="tier-interactions"></a>階層互動
 
@@ -77,13 +75,13 @@ ms.locfileid: "35254689"
 
 [如何：分析網頁中的 JavaScript 程式碼](../profiling/how-to-profile-javascript-code-in-web-pages.md)
 
-[操作說明：指定檢測前置和檢測後續命令](../profiling/how-to-specify-pre-and-post-instrument-commands.md)
+[如何：指定檢測前和檢測後命令](../profiling/how-to-specify-pre-and-post-instrument-commands.md)
 
 ## <a name="cpu-counters"></a>CPU 計數器
 
 這些設定可讓您收集在使用檢測程式碼剖析方法時，有關 CPU 效能計數器的資料。 不論 CPU 設計或製造商為何，您都可以使用可移植的效能計數器。 平台事件需視 CPU 設計和製造商而定。 如需晶片上之效能計數器的詳細資訊，請參閱特定處理器的說明文件。
 
-如需詳細資訊，請參閱[如何：收集 CPU 計數器資料](../profiling/how-to-collect-cpu-counter-data.md)
+如需詳細資訊，請參閱[＜How to：收集 CPU 計數器資料](../profiling/how-to-collect-cpu-counter-data.md)
 
 ## <a name="windows-events"></a>Windows 事件
 
@@ -91,7 +89,7 @@ ms.locfileid: "35254689"
 
 如需詳細資訊，請參閱:
 
-[操作說明：收集 Windows 事件追蹤 (ETW) 資料](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md)
+[如何：收集 Windows 事件追蹤 (ETW) 資料](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md)
 
 [VSPerfReport](../profiling/vsperfreport.md)。
 
@@ -99,7 +97,7 @@ ms.locfileid: "35254689"
 
 這個選項可以讓您從 Windows 效能監視器計數器收集資料。 若要收集此資料，請選取標記為 [收集 Windows 效能計數器] 的核取方塊。 收集的間隔時間可以在 [收集間隔] 方塊中設定。 另外，您可能也可以指定 [計數器分類] 和 [執行個體]。 部分預設 Windows 效能監視器計數器可供使用。
 
- 如需詳細資訊，請參閱[如何：收集 Windows 計數器資料](../profiling/how-to-collect-windows-counter-data.md)。
+ 如需詳細資訊，請參閱[＜How to：收集 Windows 計數器資料](../profiling/how-to-collect-windows-counter-data.md)。
 
 ## <a name="advanced"></a>進階
 
@@ -107,9 +105,9 @@ ms.locfileid: "35254689"
 
 如需詳細資訊，請參閱:
 
-[操作說明︰指定 .NET Framework 執行階段](../profiling/how-to-specify-the-dotnet-framework-runtime.md)
+[如何：指定 .NET Framework 執行階段](../profiling/how-to-specify-the-dotnet-framework-runtime.md)
 
-[操作說明：指定其他的檢測選項](../profiling/how-to-specify-additional-instrumentation-options.md)
+[如何：指定其他的檢測選項](../profiling/how-to-specify-additional-instrumentation-options.md)
 
 ## <a name="see-also"></a>另請參閱
 

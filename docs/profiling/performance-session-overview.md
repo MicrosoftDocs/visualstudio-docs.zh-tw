@@ -1,8 +1,6 @@
 ---
 title: 效能工作階段概觀 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Profiling Tools, performance session
@@ -13,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a385b425ee8dead7df0faad302e6cf270b739034
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b673bad7bbcd552140cca25cc5a3fe90404c0716
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49828529"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53867169"
 ---
 # <a name="performance-session-overview"></a>效能工作階段概觀
 這個概觀說明程式碼剖析的基本概念。 接觸效能工作不久的開發人員將可見識 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 如何加速提升他們的生產力，並增進其程式碼的效能。 擁有豐富的程式碼剖析經驗的開發人員，則可獲得具體的程式碼剖析工具功能和處理程序的概觀。  
@@ -77,4 +75,4 @@ ms.locfileid: "49828529"
   
 ## <a name="see-also"></a>另請參閱  
  [概觀](../profiling/overviews-performance-tools.md)   
- [逐步解說：找出效能問題](../profiling/walkthrough-identifying-performance-problems.md)
+ [逐步解說：找出效能問題](/visualstudio/profiling/beginners-guide-to-cpu-sampling)

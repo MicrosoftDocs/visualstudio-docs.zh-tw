@@ -1,8 +1,6 @@
 ---
 title: 使用分析工具取樣方法收集服務的應用程式統計資料 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 07840ab2-3a92-4744-ac87-48b19e0ceecd
 author: mikejo5000
@@ -10,12 +8,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f30131debe9dd4e35f115531a0e00afeb38a492
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: e2e5e45edc7e47cc50df2abc40b0cec0917b60c7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34690698"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53954788"
 ---
 # <a name="collect-application-statistics-for-services-by-using-the-profiler-sampling-method"></a>使用分析工具取樣方法收集服務的應用程式統計資料
 本節說明從命令列使用取樣方法收集 Windows 服務之效能統計資料的程序和選項。  
@@ -51,5 +49,3 @@ ms.locfileid: "34690698"
   
 ### <a name="analyze-sampling-data-views-and-reports"></a>分析取樣資料檢視和報表  
  [取樣方法資料檢視](../profiling/profiler-sampling-method-data-views.md)
-
-  

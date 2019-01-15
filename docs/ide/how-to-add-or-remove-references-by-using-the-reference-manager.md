@@ -2,7 +2,6 @@
 title: 在參考管理員中新增參考
 ms.date: 04/11/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - VS.ReferenceManager
@@ -23,14 +22,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3668b5e4275071513deb31e2e479adcd91d11589
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4e3e21f38f8b4f60678aa4bb767368393c666cab
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49839267"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53856276"
 ---
-# <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>如何：使用參考管理員新增或移除參考
+# <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>HOW TO：使用參考管理員新增或移除參考
 
 針對由您本身、Microsoft 或其他公司所開發的元件，您可以使用 [參考管理員] 對話方塊新增並管理這些元件的參考。 如果您正在開發通用 Windows app，您的專案會自動參考所有正確的 Windows SDK DLL。 如果您正在開發 .NET 應用程式，您的專案會自動參考 *mscorlib.dll*。 某些 .NET API 是在您手動加入的元件中公開。 您必須手動加入對 COM 元件或自訂元件的參考。
 
@@ -94,7 +93,7 @@ ms.locfileid: "49839267"
 
 - 使用最近版本 .NET Framework 的元件，與目標針對舊版 .NET Framework 的專案並不相容。
 
-    如需如何變更專案目標 .NET Framework 版本的資訊，請參閱[如何：以 .NET Framework 版本為目標](../ide/how-to-target-a-version-of-the-dotnet-framework.md)。
+    如需如何為專案變更目標 .NET Framework 版本的資訊，請參閱[如何：以一個 .NET Framework 版本為目標](../ide/how-to-target-a-version-of-the-dotnet-framework.md)。
 
 - 使用 [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)] 的元件與目標針對 [!INCLUDE[net_v45](../ide/includes/net_v45_md.md)] 的專案不相容。
 
@@ -155,9 +154,9 @@ ms.locfileid: "49839267"
 
 您可以在 Visual Studio 中透過兩種方式產生 WinMD 檔案：
 
-- **Windows 8.x 市集應用程式受管專案**：Windows 8.x 市集應用程式專案可以透過設定 [專案屬性] > [輸出類型 = WinMD 檔案] 的方式輸出 WinMD 二進位檔。 WinMD 檔案名稱必須是本身包含之所有命名空間的超集命名空間。 例如，如果專案包括命名空間 `A.B` 和 `A.B.C`，則其輸出的 WinMD 可能名稱為 *A.winmd* 和 *A.B.winmd*。 如果使用者輸入的 [專案屬性] > [組件名稱] 或 [專案屬性] > [命名空間] 值與專案中的命名空間集合不相鄰，或是專案內沒有超集命名空間，則會產生建置警告：「'A.winmd' 不是這個組件的有效 .winmd 檔案名稱」。 Windows 中繼資料檔中的所有類型都必須存在檔案名稱的子命名空間內。 在執行階段將找不到不存在檔案名稱之子命名空間中的類型。 在這個組件中，最小通用命名空間為 `CSWSClassLibrary1`。 傳統型 Visual Basic 或 C# 專案只能使用以 Windows 8 SDK 產生的 WinMD，它稱為第一方 WinMD，而且無法產生 WinMD。
+- **Windows 8.x Store 應用程式受控專案**：Windows 8.x Store 應用程式專案可以透過設定 [專案屬性] > [輸出類型 = WinMD 檔案] 的方式輸出 WinMD 二進位檔。 WinMD 檔案名稱必須是本身包含之所有命名空間的超集命名空間。 例如，如果專案包括命名空間 `A.B` 和 `A.B.C`，則其輸出的 WinMD 可能名稱為 *A.winmd* 和 *A.B.winmd*。 如果使用者輸入的 [專案屬性] > [組件名稱] 或 [專案屬性] > [命名空間] 值與專案中的命名空間集合不相鄰，或是專案內沒有超集命名空間，則會產生建置警告：「'A.winmd' 不是這個組件的有效 .winmd 檔案名稱」。 Windows 中繼資料檔中的所有類型都必須存在檔案名稱的子命名空間內。 在執行階段將找不到不存在檔案名稱之子命名空間中的類型。 在這個組件中，最小通用命名空間為 `CSWSClassLibrary1`。 傳統型 Visual Basic 或 C# 專案只能使用以 Windows 8 SDK 產生的 WinMD，它稱為第一方 WinMD，而且無法產生 WinMD。
 
-- **Windows 8.x 市集應用程式原生專案**：原生 WinMD 檔案只包含中繼資料。 它的實作會出現在個別 DLL 中。 在 [新增專案] 對話方塊中選擇 Windows 執行階段元件專案範本，或是從空白專案開始並修改專案屬性來產生 WinMD 檔案，就可以產生原生二進位檔。 如果專案包含不相鄰的命名空間，則會產生建置錯誤，告訴使用者將其命名空間結合或執行 MSMerge 工具。
+- **Windows 8.x Store 應用程式原生專案**：原生 WinMD 檔案只包含中繼資料。 它的實作會出現在個別 DLL 中。 在 [新增專案] 對話方塊中選擇 Windows 執行階段元件專案範本，或是從空白專案開始並修改專案屬性來產生 WinMD 檔案，就可以產生原生二進位檔。 如果專案包含不相鄰的命名空間，則會產生建置錯誤，告訴使用者將其命名空間結合或執行 MSMerge 工具。
 
 [Windows] 索引標籤包括兩個子群組。
 
@@ -165,7 +164,7 @@ ms.locfileid: "49839267"
 
 [核心] 子群組會列出目標版本 Windows 的 SDK 中所有的 WinMD (針對 Windows 執行階段項目)。
 
-Windows 8.x 市集應用程式專案預設包含專案建立時，Windows 8 SDK 中的所有 WinMD 參考。 在受管專案中，**方案總管**之 [參考] 資料夾下的唯讀節點表示整個 Windows 8 SDK 的參考。 因此，[參考管理員] 中的 [核心] 子群組不會列舉 Windows 8 SDK 中的任何組件，而是會顯示訊息：「Windows SDK 已經被參考了。 請使用物件瀏覽器瀏覽 Windows SDK 中的參考」。
+Windows 8.x 市集應用程式專案預設包含專案建立時，Windows 8 SDK 中的所有 WinMD 參考。 在受管專案中，**方案總管**之 [參考] 資料夾下的唯讀節點表示整個 Windows 8 SDK 的參考。 因此，[參考管理員] 中的 [核心] 子群組不會列舉 Windows 8 SDK 中的任何組件，並改為顯示下列訊息：「Windows SDK 已經被參考了。 請使用物件瀏覽器瀏覽 Windows SDK 中的參考」。
 
 根據預設，在傳統型專案中，[核心] 子群組不會出現。 您可以開啟專案節點的捷徑功能表、選擇 [卸載專案]、加入下列程式碼片段，然後重新開啟專案 (在專案節點上選擇 [重新載入專案])，即可新增 Windows 執行階段。 當您叫用 [參考管理員] 對話方塊時，[核心] 子群組隨即出現。
 

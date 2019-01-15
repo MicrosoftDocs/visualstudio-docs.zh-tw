@@ -1,8 +1,6 @@
 ---
 title: GenerateBootstrapper 工作 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#GenerateBootstrapper
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 53ad85f77d014d534d625b8d08e36b7eb8c01f7f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 65e8980df4d98e4d7c76df43f32d7ca0a224e699
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49895719"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53891838"
 ---
 # <a name="generatebootstrapper-task"></a>GenerateBootstrapper 工作
 提供自動化方式來偵測、下載及安裝應用程式及其必要條件。 它可用來做為單一安裝程式，針對組成應用程式的所有元件整合個別的安裝程式。  
@@ -94,11 +92,11 @@ ms.locfileid: "49895719"
   
    指定啟動載入器用來尋找要安裝之安裝必要條件的位置。 此參數的值如下：  
   
-  - `HomeSite`︰表示必要條件已由元件廠商所裝載。  
+  - `HomeSite`：表示必要條件已由元件廠商所裝載。  
   
-  - `Relative`︰表示必要條件位於應用程式的相同位置。  
+  - `Relative`：表示必要條件位於應用程式的相同位置。  
   
-  - `Absolute`︰表示可在集中式 URL 中找到所有元件。 此值應該與 `ComponentsUrl` 輸入參數搭配使用。  
+  - `Absolute`：表示可在集中式 URL 中找到所有元件。 此值應該與 `ComponentsUrl` 輸入參數搭配使用。  
   
     如果未指定 `ComponentsLocation`，預設會使用 `HomeSite`。  
   

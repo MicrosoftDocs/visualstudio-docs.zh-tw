@@ -1,8 +1,6 @@
 ---
 title: 'Idialoadcallback:: Notifydebugdir |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cdceb0f1f07a3ef9d22dbd30a02b2558c4d81603
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 7fe328d9f77871692f04d13fba533517c3cc12f3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49950871"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53958913"
 ---
 # <a name="idialoadcallbacknotifydebugdir"></a>IDiaLoadCallback::NotifyDebugDir
 當偵錯已找到的目錄中的.exe 檔案時呼叫。  
@@ -27,7 +25,7 @@ ms.locfileid: "49950871"
 ## <a name="syntax"></a>語法  
   
 ```C++  
-HRESULT NotifyDebugDir (   
+HRESULT NotifyDebugDir (   
    BOOL  fExecutable,  
    DWORD cbData,  
    BYTE  data[]  
@@ -54,6 +52,6 @@ HRESULT NotifyDebugDir (
   
  大部分的用戶端將不需要此回撥，因為`IDiaDataSource::loadDataForExe`方法明確地開啟.pdb 和.dbg 檔案時需要符號。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md)   
  [IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)

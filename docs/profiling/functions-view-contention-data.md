@@ -1,8 +1,6 @@
 ---
 title: 函式檢視 - 爭用資料 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Functions view
@@ -12,19 +10,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b7444a4d3e8ad6e3f5fdd91d34058e20e13caf38
-ms.sourcegitcommit: 269b55b413d2c82e6aa56c6ab8e53da7926fb2e8
+ms.openlocfilehash: b92d19c48f91d6094136d0ac8d2d6b276b59707d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/08/2018
-ms.locfileid: "35237538"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53920020"
 ---
 # <a name="functions-view---contention-data"></a>函式檢視 - 爭用資料
 爭用資料的函式報告檢視會列出執行的分析中，於分析執行期間被封鎖執行的函式。  
   
  下表說明分析資料檔 [函式] 檢視顯示的值，此檔案是使用並行方法收集。  
   
-|資料行|描述|  
+|資料行|說明|  
 |------------|-----------------|  
 |**專有封鎖時間**|此函式遭封鎖而無法執行函式主體程式碼的時間。 不包括由該函式所呼叫函式的封鎖時間。|  
 |**專有封鎖時間 %**|在分析執行的所有封鎖時間中，屬於此函式的專屬封鎖時間百分比。|  

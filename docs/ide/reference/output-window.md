@@ -2,7 +2,6 @@
 title: 輸出視窗
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - vs.build.output
@@ -18,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 51fcd9ece62afca8c5369c813d5ca8e5314dafe6
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: f5121053ebb88d3c6c5bcbedbb2798daff3ad07f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50670876"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53836487"
 ---
 # <a name="output-window"></a>輸出視窗
 

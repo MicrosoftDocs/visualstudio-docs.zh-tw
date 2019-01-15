@@ -1,8 +1,6 @@
 ---
 title: SuspendProfile | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - SuspendProfile
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ae610539ded12c626fb69bffcc973d0424ca2f08
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 27c52c3821bb545efb8fe16365b11c9820db9214
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35668469"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53952121"
 ---
 # <a name="suspendprofile"></a>SuspendProfile
 `SuspendProfile` 方法會遞增所指定分析層級的暫止/繼續計數器。  
@@ -35,7 +33,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI SuspendProfile(
   
  指出可套用效能資料收集的分析層級。 下列 **PROFILE_CONTROL_LEVEL** 列舉程式可以用來指出可套用效能資料收集的三種層級的其中一種：  
   
-|列舉值|描述|  
+|列舉值|說明|  
 |----------------|-----------------|  
 |PROFILE_GLOBALLEVEL|全域層級設定會影響分析執行中的所有處理序和執行緒。|  
 |PROFILE_PROCESSLEVEL|處理序層級設定會影響屬於所指定處理序的所有執行緒。|  
@@ -48,7 +46,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI SuspendProfile(
 ## <a name="property-valuereturn-value"></a>屬性值/傳回值  
  此函式會使用 **PROFILE_COMMAND_STATUS** 列舉來指出成功或失敗。 傳回值可以是下列其中一個：  
   
-|列舉值|描述|  
+|列舉值|說明|  
 |----------------|-----------------|  
 |PROFILE_ERROR_ID_NOEXIST|分析項目識別碼不存在。|  
 |PROFILE_ERROR_LEVEL_NOEXIST|指定的分析層級不存在。|  

@@ -3,7 +3,6 @@ title: Visual Studio 協助工具祕訣和訣竅
 description: 深入了解可讓 Visual Studio 整合式開發環境 (IDE) 更便於每個人 (包括行動不便人士) 使用的祕訣和訣竅。
 ms.date: 09/15/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - accessibility [Visual Studio]
@@ -13,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 473f46e87ded78e134ab021b68c57248f8ac1a33
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 76ceb25180b8c0e15603251901f1c9281ce6893c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349201"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53929584"
 ---
 # <a name="accessibility-tips-and-tricks-for-visual-studio"></a>Visual Studio 協助工具祕訣和訣竅
 
@@ -50,17 +49,17 @@ Visual Studio 編輯器包含許多文字「裝飾」，讓您知道程式碼特
 
 Visual Studio IDE 工具列的作用與許多工具視窗相同。 下列快速鍵組合可協助您進行存取。
 
-|功能|描述|按鍵組合|
+|功能|說明|按鍵組合|
 |-------------|-----------------| - |
 |IDE 工具列|選取 [標準] 工具列上的第一個按鈕。|**ALT**、**CTRL** + **TAB**|
-|工作視窗工具列|將焦點移至工具視窗中的工具列。 <br> <br> **注意：** 這適用於大部分的工具視窗，但只限焦點在工具視窗中時。 此外，您必須先選擇 SHIFT 鍵再選擇 ALT 鍵。 在部分工具視窗 (例如 Team Explorer) 中，您必須先按住 SHIFT 鍵再選擇 ALT 鍵。|**SHIFT** + **ALT**|
+|工作視窗工具列|將焦點移至工具視窗中的工具列。 <br> <br> **注意：** 這適用於大部分的工具視窗，但只限焦點位於在工具視窗中時。 此外，您必須先選擇 SHIFT 鍵再選擇 ALT 鍵。 在部分工具視窗 (例如 Team Explorer) 中，您必須先按住 SHIFT 鍵再選擇 ALT 鍵。|**SHIFT** + **ALT**|
 |工具列|移至下一個工具列中的第一個項目 (當工具列有焦點時)。|**CTRL** + **TAB**|
 
 ### <a name="other-useful-shortcut-key-combinations"></a>其他實用快速鍵組合
 
 有些其他實用快速鍵組合包括下列項目。
 
-|功能|描述|按鍵組合|
+|功能|說明|按鍵組合|
 |-------------|-----------------| - |
 |IDE|開啟或關閉高對比。 <br> <br> **注意：** 標準 Windows 捷徑|**左 ALT + 左 SHIFT + PRINT SCREEN**|
 |對話方塊|選取或清除對話方塊中的核取方塊選項。 <br> <br> **注意：** 標準 Windows 捷徑|**空格鍵**|

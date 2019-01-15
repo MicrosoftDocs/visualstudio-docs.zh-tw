@@ -1,8 +1,6 @@
 ---
-title: 如何：比較效能資料檔案 | Microsoft Docs
-ms.custom: ''
+title: HOW TO：比較效能資料檔案 | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vsperf.choosediffbinaries
@@ -15,14 +13,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: eeb9f26091deaf995ef1221d39aa7264553f5c70
-ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
+ms.openlocfilehash: 743184a0f28df90e703ce355ecf5c2642036d2ed
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34815375"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53961695"
 ---
-# <a name="how-to-compare-performance-data-files"></a>如何：比較效能資料檔案
+# <a name="how-to-compare-performance-data-files"></a>HOW TO：比較效能資料檔案
 您可以透過建立比較 (「差異」) 報表或檢視，來比較兩個不同的分析工具資料檔案 (.*vsp* 或 .*vsps*) 的結果。 比較會顯示相較於另一個程式碼剖析工作階段所發生的差異、效能衰退和改進。  
   
  差異報告提供資料的資料表檢視。 資料表提供差異或相對於基準的變更。 這是透過判斷舊值、基準值和新分析中的結果值之間的差異計算而來。  

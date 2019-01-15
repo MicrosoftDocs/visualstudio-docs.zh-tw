@@ -1,8 +1,6 @@
 ---
 title: ResolveComReference 工作 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#ResolveComReference
@@ -20,20 +18,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f13efe45547b657f9e07c12d8eee4160ec7b95e
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 565b69de16768175e520e06333d714865bbcc0a0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39152395"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53893337"
 ---
 # <a name="resolvecomreference-task"></a>ResolveComReference 工作
-取得一或多個類型程式庫名稱的清單或 *.tlb* 檔案，並將那些類型程式庫解析至磁碟上的位置。  
+取得一或多個類型程式庫名稱或 *.tlb* 檔案的清單，並將那些類型程式庫解析至磁碟上的位置。  
   
 ## <a name="parameters"></a>參數  
  下表說明 `ResolveCOMReference` 工作的參數。  
   
-|參數|描述|  
+|參數|說明|  
 |---------------|-----------------|  
 |`DelaySign`|選擇性的 `Boolean` 參數。<br /><br /> 如為 `true`，則將公開金鑰放在組件中。 如為 `false`，則完整簽署組件。|  
 |`EnvironmentVariables`|選擇性的 `String[]` 參數。<br /><br /> 環境變數組陣列，以等號分隔。 這些變數是在規則環境區塊以外傳遞至繁衍的 *tlbimp.exe* 和 *aximp.exe*，或選擇性地覆寫。|  
@@ -56,7 +54,7 @@ ms.locfileid: "39152395"
 ## <a name="typelibnames-item-metadata"></a>TypeLibNames 項目中繼資料  
  下表描述將項目傳遞給 `TypeLibNames` 參數的可用項目中繼資料。  
   
-|中繼資料|描述|  
+|中繼資料|說明|  
 |--------------|-----------------|  
 |`GUID`|必要的項目中繼資料。<br /><br /> 類型程式庫的 GUID。 如未指定此項目中繼資料，則工作會失敗。|  
 |`VersionMajor`|必要的項目中繼資料。<br /><br /> 類型程式庫的主要版本。 如未指定此項目中繼資料，則工作會失敗。|  
@@ -67,7 +65,7 @@ ms.locfileid: "39152395"
 ## <a name="typelibfiles-item-metadata"></a>TypeLibFiles 項目中繼資料  
  下表描述將項目傳遞給 `TypeLibFiles` 參數的可用項目中繼資料。  
   
-|中繼資料|描述|  
+|中繼資料|說明|  
 |--------------|-----------------|  
 |`WrapperTool`|選擇性項目中繼資料。<br /><br /> 指定為此類型程式庫產生組件包裝函式使用的包裝函式工具。 如未指定此項目中繼資料，工作會使用預設的包裝函式工具 "tlbimp"。 可用且不區分大小寫的 TypeLib 選項有：<br /><br /> -   `Primary`：當您想要使用 COM 元件已產生的主要 Interop 組件時，請使用此包裝函式工具。 當您使用此包裝函式工具時，請勿指定包裝函式的輸出目錄，因為這會造成工作失敗。<br />-   `TLBImp`：當您想要產生 COM 元件的 Interop 組件時，請使用此包裝函式工具。<br />-   `AXImp`：當您想要產生 ActiveX 控制項的 Interop 組件時，請使用此包裝函式工具。|  
   
@@ -75,7 +73,7 @@ ms.locfileid: "39152395"
 >  您為唯一識別類型程式庫所提供的資訊愈詳細，工作解析至正確磁碟檔案的可能性就愈大。  
   
 ## <a name="remarks"></a>備註  
- 除了上述所列的參數，這項工作也會從 <xref:Microsoft.Build.Utilities.Task> 類別繼承參數。 如需這些其他參數的清單及其說明，請參閱 [Task 基底類別](../msbuild/task-base-class.md)。  
+ 除了上述所列的參數，這項工作也會從 <xref:Microsoft.Build.Utilities.Task> 類別繼承參數。 如需這些額外參數及其說明的清單，請參閱 [Task 基底類別](../msbuild/task-base-class.md)。  
   
 ## <a name="see-also"></a>另請參閱  
  [工作](../msbuild/msbuild-tasks.md)   

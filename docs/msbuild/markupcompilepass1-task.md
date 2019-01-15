@@ -1,8 +1,6 @@
 ---
 title: MarkupCompilePass1 工作 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 dev_langs:
 - VB
@@ -19,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9db623dd06db06a1dfee3e22345564f888431d1c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 52b6e36e06ee74f974d2d774af806a234835cff0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49855324"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53906874"
 ---
 # <a name="markupcompilepass1-task"></a>MarkupCompilePass1 工作
 
@@ -32,12 +30,12 @@ ms.locfileid: "49855324"
 
 ## <a name="task-parameters"></a>工作參數
 
-| 參數 | 描述 |
+| 參數 | 說明 |
 | - | - |
 | `AllGeneratedFiles` | 選擇性的 **ITaskItem[]** 輸出參數。<br /><br /> 包含 <xref:Microsoft.Build.Tasks.Windows.MarkupCompilePass1> 工作產生的完整檔案清單。 |
 | `AlwaysCompileMarkupFilesInSeparateDomain` | 選擇性的 **Boolean** 參數。<br /><br /> 指定是否在不同的 <xref:System.AppDomain> 中執行工作。 如果此參數傳回 **false**，工作就會在與 [!INCLUDE[TLA#tla_msbuild](../msbuild/includes/tlasharptla_msbuild_md.md)] 相同的 <xref:System.AppDomain> 中執行，且執行速度會較快。 如果此參數傳回 **true**，工作就會在與 [!INCLUDE[TLA2#tla_msbuild](../msbuild/includes/tla2sharptla_msbuild_md.md)] 隔離的第二個 <xref:System.AppDomain> 中執行，且執行速度會較慢。 |
 | `ApplicationMarkup` | 選擇性的 **ITaskItem[]** 參數。<br /><br /> 指定應用程式定義 [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] 檔案的名稱。 |
-| `AssembliesGeneratedDuringBuild` | 選擇性的 **String[]** 參數。<br /><br /> 指定對在建置程序中變更之組件的參考。 例如，Visual Studio 解決方案可能包含一個專案，此專案參考另一個專案的已編譯輸出。 在此情況下，可以將第二個專案的已編譯輸出新增到 **AssembliesGeneratedDuringBuild** 參數。<br /><br /> 注意：**AssembliesGeneratedDuringBuild** 參數必須包含對組建方案所產生之一組完整組件的參考。 |
+| `AssembliesGeneratedDuringBuild` | 選擇性的 **String[]** 參數。<br /><br /> 指定對在建置程序中變更之組件的參考。 例如，Visual Studio 解決方案可能包含一個專案，此專案參考另一個專案的已編譯輸出。 在此情況下，可以將第二個專案的已編譯輸出新增到 **AssembliesGeneratedDuringBuild** 參數。<br /><br /> 注意:**AssembliesGeneratedDuringBuild** 參數必須包含對組建方案所產生之一組完整組件的參考。 |
 | `AssemblyName` | 必要的 **string** 參數。<br /><br /> 指定為專案產生之組件的簡短名稱。 例如，如果專案要產生名稱為 *WinExeAssembly.exe* 的 [!INCLUDE[TLA#tla_mswin](../code-quality/includes/tlasharptla_mswin_md.md)] 可執行檔，則 **AssemblyName** 參數的值會是 **WinExeAssembly**。 |
 | `AssemblyPublicKeyToken` | 選擇性的 **String** 參數。<br /><br /> 指定組件的公開金鑰語彙基元。 |
 | `AssemblyVersion` | 選擇性的 **String** 參數。<br /><br /> 指定組件的版本號碼。 |

@@ -3,19 +3,18 @@ title: 使用 R 視覺化資料
 description: 如何使用繪圖視窗在 Visual Studio 中從 R 程式繪製資料。
 ms.date: 06/29/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-rtvs
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: f44ba213defef153acd2f5d1ef247bb093448263
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: 8b0c633e3236f537e9f631df12a5af597e67475c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36235252"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53859077"
 ---
 # <a name="create-visual-data-plots-with-r"></a>以 R 建立視覺化資料繪圖
 
@@ -47,7 +46,7 @@ ms.locfileid: "36235252"
 
 繪圖視窗工具列保留適用的命令，其中大部分也都可透過 [R 工具] > [繪圖] 功能表取得。
 
-| 按鈕 | 命令 | 描述 | 
+| 按鈕 | 命令 | 說明 | 
 | --- | --- | --- |
 | ![新增繪圖視窗按鈕](media/plotting-toolbar-01-new-plot-window.png) | 新增繪圖視窗 | 建立有專屬歷程記錄的個別繪圖視窗。 請參閱[多個繪圖視窗](#multiple-plot-windows)。 |
 | ![啟動繪圖視窗按鈕](media/plotting-toolbar-02-activate-plot-window.png) | 啟動繪圖視窗 | 將目前的繪圖視窗設為使用中視窗，以便後續的 `plot` 命令呈現在該視窗中。 請參閱[多個繪圖視窗](#multiple-plot-windows)。 請參閱[多個繪圖視窗](#multiple-plot-windows)。 |
@@ -87,7 +86,7 @@ ms.locfileid: "36235252"
 
 您可利用裝置編號識別特定的繪圖視窗，使用 R 程式碼以程式設計方式操作繪圖視窗。 
 
-- `dev.list()`︰列出目前 R 工作階段內所有的圖形裝置。
-- `dev.new()`︰建立新的圖形裝置 (新的繪圖視窗)。
-- `dev.set(<device number>)`︰設定使用中的圖形裝置。
-- `dev.off()`︰刪除使用中的裝置。
+- `dev.list()`：列出目前 R 工作階段內所有的圖形裝置。
+- `dev.new()`：建立新的圖形裝置 (新的繪圖視窗)。
+- `dev.set(<device number>)`：設定使用中的圖形裝置。
+- `dev.off()`：刪除使用中的裝置。

@@ -1,8 +1,6 @@
 ---
 title: 處理序檢視 - 爭用資料 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Process view
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c8772bd6426632093bb23cc3094fe42ad433a8d
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: c5eb2a476dd093bf661e40f88795598e4878c313
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35257809"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53943885"
 ---
 # <a name="process-view---contention-data"></a>處理序檢視 - 爭用資料
 處理序檢視顯示程式碼剖析執行期間所執行處理序和執行緒的爭用資料。  
@@ -26,7 +24,7 @@ ms.locfileid: "35257809"
   
  下表說明處理序檢視資料表中資料行的值。  
   
-|資料行|描述|  
+|資料行|說明|  
 |------------|-----------------|  
 |**開始時間**|從程式碼剖析開始到處理序或執行緒開始的毫秒數或處理器週期數。|  
 |**封鎖時間**|處理序或執行緒的函式遭到封鎖而無法執行期間的時間總計。|  

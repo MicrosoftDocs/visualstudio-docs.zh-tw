@@ -1,8 +1,6 @@
 ---
-title: 如何：重新配置所檢測的二進位檔 | Microsoft Docs
-ms.custom: ''
+title: HOW TO：重新配置所檢測的二進位檔 | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.property.binaries
@@ -16,14 +14,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a060506f818ac000611fc0c29988ed324ae89226
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: f8b50c5b76ea5b22bc9d734d32e433db1c7594d9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34843649"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53893074"
 ---
-# <a name="how-to-relocate-instrumented-binaries"></a>如何：重新配置所檢測的二進位檔
+# <a name="how-to-relocate-instrumented-binaries"></a>HOW TO：重新配置所檢測的二進位檔
 
 在檢測期間，會將探查插入二進位檔，以便測量應用程式效能。 藉由選擇重新配置所檢測的二進位檔，可以檢測原始二進位檔的複本，並將此複本放在指定的位置。 如果您不想讓分析工具重新命名原始的二進位檔，這個選項會很有用。 如果未重新配置二進位檔，則會覆寫二進位檔的原始版本。
 

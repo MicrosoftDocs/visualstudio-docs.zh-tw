@@ -3,7 +3,6 @@ title: 利用分析工具測量效能
 description: 查看 Visual Studio 中可用的各種診斷工具。
 ms.custom: mvc
 ms.date: 05/18/2017
-ms.technology: vs-ide-debug
 ms.topic: quickstart
 helpviewer_keywords:
 - diagnostic tools
@@ -13,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f884b92d03027782eed27f4583e06b1141341db
-ms.sourcegitcommit: e680e8ac675f003ebcc8f8c86e27f54ff38da662
+ms.openlocfilehash: 9cfa2bcb98e686c04af359900a3c925686659df5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49356791"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53880308"
 ---
 # <a name="quickstart-first-look-at-profiling-tools"></a>快速入門：初步認識分析工具
 
@@ -168,4 +167,4 @@ JavaScript 記憶體工具和其他應用程式類型提供的記憶體使用量
 |[JavaScript 記憶體](../profiling/javascript-memory.md)|否|對 HTML 為是，對 XAML 為否|否|
 
 ## <a name="see-also"></a>另請參閱  
- [Visual Studio 偵錯](../debugger/debugging-in-visual-studio.md)
+ [Visual Studio 偵錯](/visualstudio/debugger/debugger-feature-tour)

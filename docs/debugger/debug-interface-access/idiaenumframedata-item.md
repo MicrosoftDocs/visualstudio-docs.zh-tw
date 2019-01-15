@@ -1,8 +1,6 @@
 ---
 title: 'Idiaenumframedata:: Item |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c15d0dec0ccaa20e2fcf59f88d68d5febc63eb04
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 38655a9dc55f16cf7c1ccddd65ae0793d7a04640
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49887399"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53894203"
 ---
 # <a name="idiaenumframedataitem"></a>IDiaEnumFrameData::Item
 透過索引中擷取的畫面格的資料元素。  
@@ -27,7 +25,7 @@ ms.locfileid: "49887399"
 ## <a name="syntax"></a>語法  
   
 ```C++  
-HRESULT Item (   
+HRESULT Item (   
    DWORD           index,  
    IDiaFrameData** section  
 );  
@@ -43,6 +41,6 @@ HRESULT Item (
 ## <a name="return-value"></a>傳回值  
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md)   
  [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

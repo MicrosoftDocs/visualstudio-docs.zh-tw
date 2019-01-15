@@ -1,8 +1,6 @@
 ---
-title: 如何：設定目標和工作 | Microsoft Docs
-ms.custom: ''
+title: HOW TO：設定目標和工作 | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 ms.assetid: 92814100-392a-471d-96fd-e26f637d6cc2
 author: mikejo5000
@@ -10,14 +8,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ceb9415648d4ad5bcfa4c16ca7f10b3a88a6db4
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: a5df9d2961a802718b3f46315d9c479217d9a41b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39078110"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53854551"
 ---
-# <a name="how-to-configure-targets-and-tasks"></a>如何：設定目標和工作
+# <a name="how-to-configure-targets-and-tasks"></a>HOW TO：設定目標和工作
 不論開發電腦的環境是哪一種，您都可以將選取的 MSBuild 工作設定為在所針對的環境中執行。 例如，當您使用 64 位元電腦來建置以 32 位元架構為目標的應用程式時，就會在 32 位元處理程序中執行選取的工作。  
   
 > [!NOTE]

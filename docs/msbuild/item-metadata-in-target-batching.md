@@ -1,8 +1,6 @@
 ---
 title: 目標批次處理中的項目中繼資料 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - batching [MSBuild]
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 486169788ad4533f5d45bf48c979ce3d0f5f7920
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: f46f71303dead8c44881098a89fa7518d05e7d4b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39081055"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53856393"
 ---
 # <a name="item-metadata-in-target-batching"></a>目標批次處理中的項目中繼資料
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 可針對建置目標的輸入和輸出執行相依性分析作業。 如果判斷目標的輸入或輸出已是最新，即會略過目標繼續建置。 `Target` 項目會使用 `Inputs` 和 `Outputs` 屬性，來指定要在相依性分析期間檢查的項目。  
@@ -68,7 +66,7 @@ ms.locfileid: "39081055"
 ```  
   
 ## <a name="see-also"></a>另請參閱  
- [如何：累加建置](../msbuild/how-to-build-incrementally.md)   
+ [如何：以累加方式建置](../msbuild/how-to-build-incrementally.md)   
  [批次處理](../msbuild/msbuild-batching.md)   
  [Target 項目 (MSBuild)](../msbuild/target-element-msbuild.md)   
  [工作批次處理中的項目中繼資料](../msbuild/item-metadata-in-task-batching.md)

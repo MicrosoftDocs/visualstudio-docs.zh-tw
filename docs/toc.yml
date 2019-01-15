@@ -963,6 +963,8 @@ items:
       href: ide/reference/safemode-devenv-exe.md
     - name: -Upgrade (devenv.exe)
       href: ide/reference/upgrade-devenv-exe.md
+    - name: -UseEnv (devenv.exe)
+      href: ide/reference/useenv-devenv-exe.md
   - name: Visual Studio 命令
     href: ide/reference/visual-studio-commands.md
     items:
@@ -1122,9 +1124,9 @@ items:
     href: ide/reference/resources-for-troubleshooting-integrated-development-environment-errors.md
   - name: 告訴我們
     href: ide/talk-to-us.md
-ms.openlocfilehash: 4a192577d5a1bf16ffe0e8204854672f7246920c
-ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
+ms.openlocfilehash: e3003812bf0485082690feb08bc08373d8e03977
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "54227820"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54270277"

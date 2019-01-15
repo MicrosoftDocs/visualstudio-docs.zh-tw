@@ -1,8 +1,6 @@
 ---
 title: 從分析工具命令列使用檢測方法收集服務的詳細計時資料 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 6116e1df-ed3e-4b0d-ac7f-22f7d7ac00ea
 author: mikejo5000
@@ -10,12 +8,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c0dd9fef26538ef6f7208fc32ea00591eb5c608
-ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
+ms.openlocfilehash: 693bd44fe9945d5f86ea405fbc8c2ccbd3e15560
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2018
-ms.locfileid: "34335823"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53946340"
 ---
 # <a name="collect-detailed-timing-data-for-services-by-using-the-instrumentation-method-from-the-profiler-command-line"></a>從分析工具命令列使用檢測方法收集服務的詳細計時資料
 本節描述從命令列使用檢測方法收集 Windows 服務之詳細效能資料的程序和選項。  
@@ -47,4 +45,3 @@ ms.locfileid: "34335823"
   
 ### <a name="analyze-instrumentation-data-views-and-reports"></a>分析檢測資料檢視和報表  
  [檢測方法資料檢視](../profiling/instrumentation-method-data-views.md)
-

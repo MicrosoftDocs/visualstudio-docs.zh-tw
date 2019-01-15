@@ -2,7 +2,6 @@
 title: 進階編譯器設定對話方塊 (Visual Basic)
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - vb.ProjectPropertiesAdvancedCompile
@@ -14,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 593bb95e45ecdbda14eba49425ce5db08369e6cf
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 34880d96effb9c1c77c1d88c22f61967741b693e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38783684"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53878269"
 ---
 # <a name="advanced-compiler-settings-dialog-box-visual-basic"></a>進階編譯器設定對話方塊 (Visual Basic)
 
@@ -31,7 +30,7 @@ ms.locfileid: "38783684"
 
 2.  在 [專案] 功能表上，按一下 [屬性]。 [專案設計工具] 出現時，請按一下 [編譯] 索引標籤。
 
-3.  在[專案設計工具、編譯頁 (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md)，選取 [設定] 和 [平台]。 在簡化的組建設定中，不會顯示 [設定] 和 [平台] 清單。 如需詳細資訊，請參閱[如何：設定偵錯和發行組態](../../debugger/how-to-set-debug-and-release-configurations.md)。
+3.  在[專案設計工具、編譯頁 (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md)，選取 [設定] 和 [平台]。 在簡化的組建設定中，不會顯示 [設定] 和 [平台] 清單。 如需詳細資訊，請參閱[＜How to：設定偵錯和版本組態](../../debugger/how-to-set-debug-and-release-configurations.md)。
 
 4.  按一下 [進階編譯選項]。
 

@@ -1,8 +1,6 @@
 ---
 title: 'Idiasession:: Symsareequiv |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bdaa1ab070b6d95af0f28f5bdaa005b9ac808766
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: bfde8fec8ce399df765c911aa1ffaf292be1e50f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49850980"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53893467"
 ---
 # <a name="idiasessionsymsareequiv"></a>IDiaSession::symsAreEquiv
 檢查兩個符號是否相等。  
@@ -27,7 +25,7 @@ ms.locfileid: "49850980"
 ## <a name="syntax"></a>語法  
   
 ```C++  
-HRESULT symsAreEquiv (   
+HRESULT symsAreEquiv (   
    IDiaSymbol* symbolA,  
    IDiaSymbol* symbolB  
 );  
@@ -43,6 +41,6 @@ HRESULT symsAreEquiv (
 ## <a name="return-value"></a>傳回值  
  如果符號相等，則會傳回`S_OK`; 否則傳回`S_FALSE`，符號不相等。 否則，傳回錯誤碼。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

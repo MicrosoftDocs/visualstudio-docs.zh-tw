@@ -1,8 +1,6 @@
 ---
-title: 如何：檢視效能警告 | Microsoft Docs
-ms.custom: ''
+title: HOW TO：檢視效能警告 | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: c6ce4e9c-4677-40cc-b1af-d68e9f3249f2
 author: mikejo5000
@@ -10,14 +8,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 12cbf2abc6c91a35439748ea3ee44a8ef23a98fa
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: b926403efb968a111bd535da75e3a269bb9bb63f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34845050"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53914471"
 ---
-# <a name="how-to-view-performance-warnings"></a>如何：檢視效能警告
+# <a name="how-to-view-performance-warnings"></a>HOW TO：檢視效能警告
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具的效能警告指出，已分析應用程式中發現的問題可能會降低程式執行速度。 警告也可能表示您可能想要變更收集方法，以收集更有用的資料。 在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE 中開啟分析資料檔案時，效能警告會於分析工作階段中自動產生，並出現在 [錯誤清單] 視窗中。  
   
  如果 [錯誤清單] 視窗沒有出現，當您開啟的分析資料檔案時，請按一下 [檢視] 功能表，再按一下 [錯誤清單]。

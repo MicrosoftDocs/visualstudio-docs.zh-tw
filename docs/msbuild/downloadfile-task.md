@@ -1,10 +1,8 @@
 ---
 title: DownloadFile 工作 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
 ms.reviewer: ''
 ms.suite: ''
-ms.technology: msbuild
 ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
@@ -24,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 14b5daafbc4c11547515b9d77be2877eb07bcb8b
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: cb7b67c4ad567587278c805485e0b8e65ca44e94
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37945340"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53832920"
 ---
 # <a name="downloadfile-task"></a>DownloadFile 工作
 使用超文字傳輸通訊協定 (HTTP)，下載指定的檔案。
@@ -40,14 +38,14 @@ ms.locfileid: "37945340"
 ## <a name="parameters"></a>參數  
  下表說明 `DownloadFile` 工作的參數。  
   
-|參數|描述|  
+|參數|說明|  
 |---------------|-----------------|  
 |`DestinationFileName`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem> 參數<br /><br /> 要用於已下載檔案的名稱。  根據預設，檔案名稱衍生自 `SourceUrl` 或遠端伺服器。|
 |`DestinationFolder`|必要的 <xref:Microsoft.Build.Framework.ITaskItem> 參數。<br /><br /> 指定檔案下載的目的地資料夾。  如果資料夾不存在，則會予以建立。|
 |`DownloadedFile`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem> 輸出參數。<br /><br /> 指定已下載的檔案。|
 |`Retries`|選擇性的 `Int32` 參數。<br /><br /> 指定如果所有先前的嘗試均失敗，要嘗試下載多少次。 預設值為零。|  
 |`RetryDelayMilliseconds`|選擇性的 `Int32` 參數。<br /><br /> 指定任何必要重試之間的延遲 (毫秒)。 預設值為 5000。|  
-|`SkipUnchangedFiles`|選擇性的 `Boolean` 參數。<br /><br /> 如果 `true`，則會略過下載未變更的檔案。 預設值為 `true`。 如果檔案根據遠端伺服器而具有相同的大小和相同的上次修改時間，`DownloadFile` 工作即會將檔案視為未變更。 <br /><br />**注意：** 並非所有 HTTP 伺服器都指出檔案的上次修改日期會再次下載檔案。|
+|`SkipUnchangedFiles`|選擇性的 `Boolean` 參數。<br /><br /> 如果 `true`，則會略過下載未變更的檔案。 預設值為 `true`。 如果檔案根據遠端伺服器而具有相同的大小和相同的上次修改時間，`DownloadFile` 工作即會將檔案視為未變更。 <br /><br />**注意：** 並非所有 HTTP 伺服器都指出檔案的上次修改日期會造成再次下載檔案。|
 |`SourceUrl`|必要的 `String` 參數。<br /><br /> 指定要下載的 URL。|
   
 ## <a name="remarks"></a>備註  

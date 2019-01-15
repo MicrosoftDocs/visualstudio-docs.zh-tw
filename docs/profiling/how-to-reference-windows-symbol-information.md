@@ -1,8 +1,6 @@
 ---
-title: 如何：參考 Windows 符號資訊 | Microsoft Docs
-ms.custom: ''
+title: HOW TO：參考 Windows 符號資訊 | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - performance tools, symbol servers
@@ -15,14 +13,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ace6b0eaf71b4bfb992d0ff0ccdb09351eac2c19
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: ee80d19dea5956c85c844863ffd41ec94c486486
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34844166"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53841673"
 ---
-# <a name="how-to-reference-windows-symbol-information"></a>如何：參考 Windows 符號資訊
+# <a name="how-to-reference-windows-symbol-information"></a>HOW TO：參考 Windows 符號資訊
 Visual Studio 程式碼剖析工具會使用符號 (.*pdb*) 檔案來解析符號名稱，例如程式二進位檔案中的函式名稱。 您可以遵循下列步驟來自動下載並更新本機電腦上之 Windows 版本的正確 .*pdb* 檔案。  
   
 > [!NOTE]
@@ -50,4 +48,4 @@ Visual Studio 程式碼剖析工具會使用符號 (.*pdb*) 檔案來解析符�
   
 ## <a name="see-also"></a>另請參閱  
  [設定效能工作階段](../profiling/configuring-performance-sessions.md)   
- [操作說明：序列化符號資訊](../profiling/how-to-serialize-symbol-information.md)
+ [如何：序列化符號資訊](../profiling/how-to-serialize-symbol-information.md)

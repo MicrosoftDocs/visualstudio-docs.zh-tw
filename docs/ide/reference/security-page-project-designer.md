@@ -2,7 +2,6 @@
 title: 專案設計工具、安全性頁
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - vb.ProjectPropertiesSecurity
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 75877dfd8620af9d3fdfecb5cfcb10761a739515
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 30b09fee21dd7f028615612c27c3aab468a22055
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31949575"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53987949"
 ---
 # <a name="security-page-project-designer"></a>專案設計工具、安全性頁
 
@@ -38,7 +37,7 @@ ms.locfileid: "31949575"
 > 當您使用 [發行精靈] 發佈應用程式時，會自動啟用此選項。
 
 
- 選取此選項後，就可以選取兩個選項按鈕的其中之一：[這是完全信任的應用程式] 或 [這是部分信任的應用程式]。
+ 當選取此選項時，可以選擇從兩個選項按鈕中選取其中一個：[這是完全信任的應用程式] 或 [這是部分信任的應用程式]。
 
  WPF 網頁瀏覽器應用程式專案預設選取此選項。
 
@@ -80,9 +79,9 @@ ms.locfileid: "31949575"
 - <xref:System.Security.Permissions.MediaPermission>
 - [ClickOnce 應用程式的程式碼存取安全性](../../deployment/code-access-security-for-clickonce-applications.md)
 - [如何：啟用 ClickOnce 安全性設定](../../deployment/how-to-enable-clickonce-security-settings.md)
-- [如何：設定 ClickOnce 應用程式的安全性區域](../../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)
-- [如何：設定 ClickOnce 應用程式的自訂使用權限](../../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)
-- [如何：以限制使用權限偵錯 ClickOnce 應用程式](../../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)
+- [如何：為 ClickOnce 應用程式設定安全性區域](../../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)
+- [如何：為 ClickOnce 應用程式設定自訂權限](../../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)
+- [如何：以受限制的權限針對 ClickOnce 應用程式進行偵錯](../../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)
 - [ClickOnce 安全性和部署](../../deployment/clickonce-security-and-deployment.md)
 - [專案屬性參考](../../ide/reference/project-properties-reference.md)
 - [進階安全性設定對話方塊](../../ide/reference/advanced-security-settings-dialog-box.md)

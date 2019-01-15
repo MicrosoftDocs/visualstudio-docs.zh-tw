@@ -1,8 +1,7 @@
 ---
-title: 如何：建立可為 Null 的類型 (類別設計工具)
+title: HOW TO：建立可為 Null 的型別 (類別設計工具)
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - nullable types, Class Designer
@@ -16,14 +15,14 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ef167e83bc8f27a53405ef6ab7a3f9271863b4d
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 461bcef015169cfd9506d301111859b53fdce600
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38785833"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53953033"
 ---
-# <a name="how-to-create-a-nullable-type-in-class-designer"></a>如何：在類別設計工具中建立可為 Null 的型別
+# <a name="how-to-create-a-nullable-type-in-class-designer"></a>HOW TO：在類別設計工具中建立可為 Null 的型別
 
 特定實值型別不一定具有 (或需要) 定義的值。 這種情況在資料庫中為常見做法，其中的部分欄位不會指派任何值。 比方說，您可能將 null 值指派給資料庫欄位，以表示該欄位尚未指派值。
 

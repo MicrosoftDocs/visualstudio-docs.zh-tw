@@ -1,8 +1,6 @@
 ---
 title: CvWriteAlert 函式 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - cvmarkers/CvWriteAlertVA
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d9def71b21fc68b7347ce9fb0596fd73bd44393
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 743cec7c632bbfca7faf3659ffba5b337553ecee
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34749316"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53921981"
 ---
 # <a name="cvwritealert-function"></a>CvWriteAlert 函式
 將警示寫入並行視覺化檢視追蹤檔。  

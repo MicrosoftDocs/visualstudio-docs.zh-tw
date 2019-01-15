@@ -2,7 +2,6 @@
 title: 程式碼巡覽命令
 ms.date: 08/14/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - code editor, navigation
@@ -20,12 +19,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ac6fb3ae1f8c4e7fb48c9cd9a0d2b77cb875094
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 467dec8039a50b225bda53de9b19b8539f6604be
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49894465"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53877428"
 ---
 # <a name="navigate-code"></a>巡覽程式碼
 
@@ -111,7 +110,7 @@ Visual Studio 提供許多方式在編輯器中巡覽程式碼。 本主題會�
 
 ## <a name="peek-definition"></a>查看定義
 
-[查看定義] 會在視窗中顯示所選項目的定義，您不用離開目前所在程式碼編輯器的位置。 如需詳細資訊，請參閱[如何：使用查看定義來檢視及編輯程式碼](../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)以及[移至定義和查看定義](../ide/go-to-and-peek-definition.md)。
+[查看定義] 會在視窗中顯示所選項目的定義，您不用離開目前所在程式碼編輯器的位置。 如需詳細資訊，請參閱[＜How to：使用查看定義來檢視及編輯程式碼](../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)以及[移至定義和查看定義](../ide/go-to-and-peek-definition.md)。
 
 輸入 | 功能
 ------------ | ---
@@ -150,7 +149,7 @@ Visual Studio 提供許多方式在編輯器中巡覽程式碼。 本主題會�
 
 ## <a name="enhanced-scroll-bar"></a>增強型捲軸
 
-您可以使用程式碼視窗中的進階捲軸，以取得程式碼的鳥瞰檢視。 在地圖模式中，當您在捲軸上向上及向下移動游標時，可以預覽程式碼。 如需詳細資訊，請參閱[如何：自訂捲軸以追蹤程式碼](../ide/how-to-track-your-code-by-customizing-the-scrollbar.md)。
+您可以使用程式碼視窗中的進階捲軸，以取得程式碼的鳥瞰檢視。 在地圖模式中，當您在捲軸上向上及向下移動游標時，可以預覽程式碼。 如需詳細資訊，請參閱[＜How to：透過自訂捲軸的方式追蹤程式碼](../ide/how-to-track-your-code-by-customizing-the-scrollbar.md)。
 
 ## <a name="codelens-information"></a>CodeLens 資訊
 

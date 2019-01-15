@@ -2,7 +2,6 @@
 title: 格式、C/C++、文字編輯器、選項
 ms.date: 04/30/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.C/C++.Formatting.General
@@ -18,12 +17,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ee7fab1564b39b29ae288e96c7aa77e0da21e88c
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: 6aa4c543d19c43bd397d7d18a185a73a4bf161a6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36235137"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53960744"
 ---
 # <a name="options-text-editor-cc-formatting"></a>格式、C/C++、文字編輯器、選項
 
@@ -40,11 +39,11 @@ ms.locfileid: "36235137"
 
 此頁面包含在您鍵入時格式化陳述式和區塊的選項。
 
-**Visual Studio 2017 15.7 版及更新版本**：頁面也有設定 [ClangFormat](https://clang.llvm.org/docs/ClangFormat.html) 5.0 版支援的選項。 ClangFormat 是一個公用程式，可讓您更輕鬆地根據一組可以在 .clang-format 或 _clang-format 檔案中設定的規則，設定程式碼的樣式和格式化。
+**Visual Studio 2017 15.7 版和更新版本**：頁面也有設定 [ClangFormat](https://clang.llvm.org/docs/ClangFormat.html) 5.0 版支援的選項。 ClangFormat 是一個公用程式，可讓您更輕鬆地根據一組可以在 .clang-format 或 _clang-format 檔案中設定的規則，設定程式碼的樣式和格式化。
 
 ### <a name="configuring-clangformat-options"></a>設定 ClangFormat 選項
 
-在 Visual Studio 2017 15.7 版及更新版本，預設會啟用 ClangFormat 支援。 您可以選擇要將這些常見格式設定慣例的哪一項，套用至所有專案：LLVM、Google、Chrome、Mozilla 或 WebKit。 您也可以建立自訂的格式定義 .clang-format 或 _clang-format 檔案。 如果這樣的檔案存在於專案資料夾，則 Visual Studio 會使用它來格式化該資料夾及其子資料夾中的所有原始程式碼檔。 
+在 Visual Studio 2017 15.7 版及更新版本，預設會啟用 ClangFormat 支援。 您可以選擇要將這些常見格式設定慣例的哪些項目，套用至所有專案：LLVM、Google、Chrome、Mozilla 或 WebKit。 您也可以建立自訂的格式定義 .clang-format 或 _clang-format 檔案。 如果這樣的檔案存在於專案資料夾，則 Visual Studio 會使用它來格式化該資料夾及其子資料夾中的所有原始程式碼檔。 
 
 根據預設，Visual Studio 在背景中執行 clangformat.exe，並在您鍵入時套用格式。 您也可以指定只針對以手動方式叫用的格式化命令**格式化文件 (Ctrl+K、Ctrl+D)** 或**格式化選取範圍 (Ctrl+K、Ctrl+F)** 來執行它。
 

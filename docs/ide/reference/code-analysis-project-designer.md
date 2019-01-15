@@ -2,7 +2,6 @@
 title: 專案設計工具、程式碼分析
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - vs29106
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 09b711ecd6d12e424afed00296d8d95bd93cbb10
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 7bc06740c56beac2dc092fb421a92f9d59d044d2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31944670"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53860125"
 ---
 # <a name="code-analysis-project-designer"></a>專案設計工具、程式碼分析
 包含您可以選擇在您的程式碼上執行的程式碼分析工具。 此工具會報告您組件的相關資訊，例如違反 Microsoft .NET Framework 設計方針所制定的程式設計和設計規則。
@@ -78,4 +77,4 @@ ms.locfileid: "31944670"
 
 - [Managed 程式碼的程式碼分析警告](../../code-quality/code-analysis-for-managed-code-warnings.md)
 - [Managed 程式碼的程式碼分析概觀](../../code-quality/code-analysis-for-managed-code-overview.md)
-- [逐步解說：分析 Managed 程式碼中的程式碼缺失](../../code-quality/walkthrough-analyzing-managed-code-for-code-defects.md)
+- [逐步解說：分析受控碼的程式碼缺失](../../code-quality/walkthrough-analyzing-managed-code-for-code-defects.md)

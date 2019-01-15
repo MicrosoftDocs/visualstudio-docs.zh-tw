@@ -3,19 +3,18 @@ title: R 程式碼片段
 description: 在 Visual Studio 中的 R 程式碼片段提供了捷徑，以便快速插入任意長度的程式碼區塊，協助您避免一再重新輸入類似的程式碼。
 ms.date: 01/24/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-rtvs
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 0c9db243b3903ddcbaa310bbf5ba3fd911eee7fc
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 0b9a06a747fb0169c22f251c1beb22dad3b86c9e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35667726"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53860893"
 ---
 # <a name="code-snippets"></a>程式碼片段
 
@@ -38,7 +37,7 @@ ms.locfileid: "35667726"
 
 ![R 的 [程式碼片段] 對話方塊](media/code-snippet-dialog.png)
 
-若要建立自訂程式碼片段，並遵循[逐步解說︰建立程式碼片段](../ide/walkthrough-creating-a-code-snippet.md)上的指示。 最後，程式碼片段只是一個 XML 檔案。 例如，以下程式碼是管道作業的程式碼片段 (捷徑 `>`)：
+若要建立自訂程式碼片段，請遵循下列文章上的相關指示：[逐步解說：建立程式碼片段](../ide/walkthrough-creating-a-code-snippet.md)。 最後，程式碼片段只是一個 XML 檔案。 例如，以下程式碼是管道作業的程式碼片段 (捷徑 `>`)：
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>

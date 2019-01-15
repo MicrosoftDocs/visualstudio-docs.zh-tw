@@ -1,8 +1,6 @@
 ---
 title: 效能工具問題疑難排解 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 0b61cdf7-75b7-4abd-aff2-7bd997717626
 author: mikejo5000
@@ -10,12 +8,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 531080945413bbc0959d2cdf91e2096c1e51f61d
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 432afd3051d7deb04fe32c02d163e59e324f6b60
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35668365"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53870832"
 ---
 # <a name="troubleshoot-performance-tools-issues"></a>針對效能工具問題進行疑難排解
 當您使用程式碼剖析工具時，可能會遇到下列其中一個問題：  
@@ -27,13 +25,13 @@ ms.locfileid: "35668365"
 ## <a name="no-data-is-collected-by-the-profiling-tools"></a>程式碼剖析工具沒有收集到任何資料  
  在您分析應用程式之後，並未建立程式碼剖析資料 (.*vsp*) 檔案，而且您在 [輸出] 視窗或命令視窗中收到下列警告：  
   
- PRF0025: 未收集任何資料。  
+ PRF0025：未收集任何資料。  
   
  有幾個問題會造成這個問題︰  
   
 -   使用取樣或 .NET 記憶體方法分析的處理序，啟動的子處理序會成為執行應用程式工作的處理序。 例如，一些應用程式會讀取該命令列，判斷其要啟動為 Windows 應用程式或命令列應用程式。 如果要求 Windows 應用程式時，原始的處理序會啟動設定為 Windows 應用程式的新處理序，然後結束原始的處理序。 因為程式碼剖析工具不會自動收集子處理序的資料，所以不會收集到任何資料。  
   
-     若要在這種情況下收集程式碼剖析資料，請將分析工具附加至子處理序，而不是使用分析工具來啟動應用程式。 如需詳細資訊，請參閱[如何：為執行中的處理序附加和中斷連結效能工具](../profiling/how-to-attach-and-detach-performance-tools-to-running-processes.md)和[附加 (VSPerfCmd)](../profiling/attach.md)  
+     若要在這種情況下收集程式碼剖析資料，請將分析工具附加至子處理序，而不是使用分析工具來啟動應用程式。 如需詳細資訊，請參閱[＜How to：為執行中的處理序附加和中斷連結效能工具](../profiling/how-to-attach-and-detach-performance-tools-to-running-processes.md)和[附加 (VSPerfCmd)](../profiling/attach.md)  
   
 ## <a name="performance-views-and-reports-display-numbers-for-function-names"></a>效能檢視和報表將函式名稱顯示為數字  
  在您分析應用程式之後，您在報表和檢視中看到數字，而不是函式名稱。  

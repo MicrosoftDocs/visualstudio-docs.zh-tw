@@ -9,15 +9,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 19634186e13574c322c2e9bcc636dda3a823b158
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 0c39eecadee0cad44c0e448051869b77022282e6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52896184"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53911896"
 ---
-# <a name="how-to-apply-distribution-to-pacing-delay-for-a-user-pace-test-mix-model"></a>做法：將分佈套用到步調延遲以進行使用者步調測試混合模型
+# <a name="how-to-apply-distribution-to-pacing-delay-for-a-user-pace-test-mix-model"></a>HOW TO：將分佈套用到步調延遲以進行使用者步調測試混合模型
 
 使用 [新增負載測試精靈] 來建立負載測試之後，就可以使用 [負載測試編輯器] 來變更情節屬性，以符合您的測試需求和目標。
 
@@ -30,11 +29,11 @@ ms.locfileid: "52896184"
 
 [將分佈套用到步調延遲] 的值可以設定為 true 或 false：
 
-- **True**：情節會套用 [編輯測試混合] 對話方塊中 [按每使用者每小時測試] 資料行的值所指定的正常統計分佈延遲。 如需詳細資訊，請參閱[編輯測試混合模型以指定虛擬使用者執行測試的可能性](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md)。
+- **True**：情節會套用 [編輯測試混合] 對話方塊中 [按每使用者每小時測試] 欄位值指定的常態統計分佈延遲。 如需詳細資訊，請參閱[編輯測試混合模型以指定虛擬使用者執行測試的可能性](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md)。
 
      例如，假設您在 [編輯測試混合] 對話方塊中將測試的 [按每使用者每小時測試] 值設定為每小時兩位使用者。 如果 [將分佈套用到步調延遲] 屬性設定為 [True]，則正常統計散發會套用至測試之間的等待時間。 測試仍然會每小時執行兩項測試，但是兩項測試之間不一定會有 30 分鐘延遲。 第一項測試可能在四分鐘後執行，而第二項測試在 45 分鐘後執行。
 
-- **False**：測試會依照您為 [編輯測試混合] 對話方塊中 [按每使用者每小時測試] 資料行的值指定的步調執行。 如需詳細資訊，請參閱[編輯測試混合模型以指定虛擬使用者執行測試的可能性](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md)。
+- **False**：測試會依照您為 [編輯測試混合] 對話方塊中 [按每使用者每小時測試] 欄位值指定的步調來執行。 如需詳細資訊，請參閱[編輯測試混合模型以指定虛擬使用者執行測試的可能性](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md)。
 
      例如，假設您在 [編輯測試混合] 對話方塊中將測試的 [按每使用者每小時測試] 值設定為每小時兩位使用者。 如果 [將分佈套用到步調延遲] 屬性設定為 [False]，則測試執行時不會有任何延遲。 測試將會每 30 分鐘執行。 這樣可確保每小時執行兩項測試。
 
