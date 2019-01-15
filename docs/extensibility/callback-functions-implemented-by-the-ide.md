@@ -21,7 +21,7 @@ ms.locfileid: "53990775"
 # <a name="callback-functions-implemented-by-the-ide"></a>IDE 所實作的回呼函式
 若要與整合做越好，並提供統一的使用者體驗，無縫整合式的開發環境 (IDE) 的原始檔控制外掛程式可以使用由 IDE 所實作的回呼函式。 此外掛程式可以呼叫這些函式在適當的時間期間將資訊傳遞給在 IDE 中; 的原始檔控制作業IDE 可以做為內嵌的項目在其原生 UI 中顯示這項資訊。 使用者會有較分散的體驗，在此案例中比若外掛程式採用自己的 UI。  
   
- 必要標頭檔*scc.h*。 預設位置是*\Program Files\VSIP 8.0\EnvSDK\common\inc\\*。 它也會有的原始檔控制外掛程式範例的 VSIP 資料夾處於*\Program Files\VSIP 8.0\MSSCCI\\*。  
+ 必要標頭檔*scc.h*。 預設位置是 *\Program Files\VSIP 8.0\EnvSDK\common\inc\\*。 它也會有的原始檔控制外掛程式範例的 VSIP 資料夾處於 *\Program Files\VSIP 8.0\MSSCCI\\*。  
   
 ## <a name="in-this-section"></a>本節內容  
  [LPTEXTOUTPROC](../extensibility/lptextoutproc.md)  
