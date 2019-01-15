@@ -29,7 +29,7 @@ ms.locfileid: "53879513"
 
 * **[安裝 Visual Studio](#install-visual-studio)**：這些表格包含需加入白名單的網域 URL，使您可以存取所有所需的元件和工作負載。
 
-* **[使用 Visual Studio 和 Azure 服務](#use-visual-studio-and-azure-services)**：此表格包含需加入白名單的網域 URL，以及需開啟的連接埠和通訊協定，使您可以存取所需的所有功能和服務。
+* **[使用 Visual Studio 和 Azure 服務](#use-visual-studio-and-azure-services)**：此表格包含需加入允許清單的網域 URL，以及需開啟的連接埠和通訊協定，使您可以存取所需的所有功能和服務。
 
 > [!NOTE]
 > 本文針對 Windows 上的 Visual Studio 撰寫，但特定資訊也適用於在防火牆或 Proxy 伺服器後方[安裝 Visual Studio for Mac](/visualstudio/mac/install-behind-a-firewall-or-proxy-server)。
