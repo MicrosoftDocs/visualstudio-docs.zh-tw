@@ -2,7 +2,6 @@
 title: 專案設計工具、建置事件 (C#)
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - cs.ProjectPropertiesBuildEvents
@@ -17,15 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: fe83d3a387d2066965fe83145ddbda4e9648d36b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 1745fefc5b1d2065f209e9396794cac5a5cc782d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31944839"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53943911"
 ---
 # <a name="build-events-page-project-designer-c"></a>專案設計工具、建置事件 (C#)
-使用 [專案設計工具] 的 [建置事件] 頁面，以指定組建組態指示。 您也可以指定執行任何建置後事件的條件。 如需詳細資訊，請參閱[如何：指定建置事件 (C#)](../../ide/how-to-specify-build-events-csharp.md) 和[如何：指定建置事件 (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md)。
+使用 [專案設計工具] 的 [建置事件] 頁面，以指定組建組態指示。 您也可以指定執行任何建置後事件的條件。 如需詳細資訊，請參閱[＜How to：指定建置事件 (C#)](../../ide/how-to-specify-build-events-csharp.md) 和[如何：指定建置事件 (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md)。
 
 ## <a name="uielement-list"></a>UIElement 清單
  **組態**：無法在此頁面中編輯這個控制項。 如需此控制項的描述，請參閱[專案設計工具、建置頁面 (C#)](../../ide/reference/build-page-project-designer-csharp.md)。

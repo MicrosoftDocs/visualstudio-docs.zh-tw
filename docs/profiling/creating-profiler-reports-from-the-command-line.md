@@ -1,8 +1,6 @@
 ---
 title: 從命令列建立分析工具報表 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: c886f8af-2014-4fec-9b24-d98b68ecafb7
 author: mikejo5000
@@ -10,12 +8,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3433bef9b30c9b912d721b526ab11692a8de78af
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 45a28d0a7f621315926b04b359527b1d072cc040
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34749267"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53922168"
 ---
 # <a name="create-profiler-reports-from-the-command-line"></a>從命令列建立分析工具報告
 **VSPerfReport** 命令列工具可讓您從分析資料 (.*vsp*) 檔案建立 .*xml* 或逗號分隔值 (.*csv*) 報表。 VSPerfReport 報表類型極符合 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 之介面的資料表檢視。 您可以篩選報表只顯示您的程式碼，以及只顯示分析資料檔案的區段。 如需詳細資訊，請參閱 [VSPerfReport](../profiling/vsperfreport.md)。  

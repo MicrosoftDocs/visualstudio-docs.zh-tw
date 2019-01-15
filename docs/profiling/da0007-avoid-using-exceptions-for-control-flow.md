@@ -1,8 +1,6 @@
 ---
-title: DA0007：避免使用例外狀況控制流程 | Microsoft Docs
-ms.custom: ''
+title: DA0007：避免使用例外狀況進行控制流程 | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.rules.DAExceptionsThrown
@@ -15,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 55c101f62ac7c376c9af3be8a2865cb3ebf7a7f9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7ae7b890e12d56e61571ecbf72dc1b0cd39567a4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49834236"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53898199"
 ---
 # <a name="da0007-avoid-using-exceptions-for-control-flow"></a>DA0007：避免使用例外狀況進行控制流程
 

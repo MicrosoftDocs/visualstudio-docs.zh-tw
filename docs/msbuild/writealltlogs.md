@@ -1,8 +1,6 @@
 ---
 title: WriteAllTLogs | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 apiname:
 - WriteAllTLogs
@@ -17,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ceec441f6f0110ea514225ed0fab4c4dc2d575bb
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 4ca5bfbdae319aff8d90686deb32a5c7348fa74e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39153081"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53985533"
 ---
 # <a name="writealltlogs"></a>WriteAllTLogs
 寫入所有執行緒和內容的追蹤記錄檔。  
@@ -34,17 +32,17 @@ HRESULT WINAPI WriteAllTLogs(LPCTSTR intermediateDirectory, LPCTSTR tlogRootName
 ```  
   
 #### <a name="parameters"></a>參數  
- [輸入] `intermediateDirectory`  
+ [in] `intermediateDirectory`  
  儲存追蹤記錄的目錄。  
   
- [輸入] `tlogRootName`  
+ [in] `tlogRootName`  
  記錄檔名稱的根名稱。  
   
 ## <a name="return-value"></a>傳回值  
  如已建立追蹤內容，則為 **HRESULT** 和已設定的 **SUCCEEDED** 位元。  
   
 ## <a name="requirements"></a>需求  
- **標頭：** *FileTracker.h*  
+ **標頭：***FileTracker.h*  
   
 ## <a name="see-also"></a>另請參閱  
  [WriteContextTLogs](../msbuild/writecontexttlogs.md)

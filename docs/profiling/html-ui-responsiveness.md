@@ -2,7 +2,6 @@
 title: 分析 UWP App 中 HTML UI 的回應性 | Microsoft Docs
 ms.custom: H1Hack27Feb2017
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - JavaScript
@@ -17,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: ec3f3be069e92d52071a6b40857f7fac46e8d3e5
-ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
+ms.openlocfilehash: b3b9cbbeaf94c231de518b6129a11327b69767f4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "51221044"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53843524"
 ---
 # <a name="analyze-html-ui-responsiveness-in-universal-windows-apps"></a>分析通用 Windows App 中 HTML UI 的回應性
 本主題描述如何使用 UI 回應性分析工具隔離應用程式中的效能問題；該效能工具可供通用 Windows App 使用。  
@@ -69,9 +68,9 @@ ms.locfileid: "51221044"
 6.  若要停止分析應用程式並檢視分析工具蒐集的資料，請選擇 [ **停止收集**]。  
   
 ## <a name="isolate-an-issue"></a>找出問題  
- 下列章節提供可協助您找出效能問題的建議。 如需如何利用範例效能測試應用程式來找出效能問題並加以修正的逐步說明，請參閱[逐步解說：改善 UI 回應性 (HTML)](../profiling/walkthrough-improving-ui-responsiveness-html.md)。  
+ 下列章節提供可協助您找出效能問題的建議。 如需使用效能測試應用程式範例以找出及修正效能問題的逐步說明，請參閱[逐步解說：改善 UI 回應性 (HTML)](/visualstudio/profiling/html-ui-responsiveness)。  
   
-###  <a name="Workflow"></a> 隔絕 UI 回應性問題  
+###  <a name="Workflow"></a> 找出 UI 回應性問題  
  下列步驟提供的建議工作流程，有助於您更有效地使用 UI 回應性分析工具：  
   
 1.  在 Visual Studio 中開啟應用程式。  
@@ -188,7 +187,7 @@ if (performance.mark && performance.measure) {
 -   巡覽事件，當巡覽至其他頁面時發生。 事件的工具提示會顯示目的頁面 URL。  
   
 ###  <a name="CPUUtilization"></a> 檢視 CPU 使用率  
- CPU 使用率圖表可讓您識別有過多 CPU 活動的時段。 其中提供應用程式在一段時間的平均 CPU 消耗資訊。 資訊會以色彩標示，代表下列特定分類：[ **正在載入**]、[ **正在處理指令碼**]、記憶體回收 ([**GC**])、[ **樣式**]、[ **正在轉譯**] 和 [ **影像解碼中**]。 如需這些分類的詳細資訊，請參閱本主題稍後的 [Profiler event reference](#profiler-event-reference) 。  
+ CPU 使用率圖表可讓您識別有過多 CPU 活動的時段。 其中提供應用程式在一段時間的平均 CPU 消耗資訊。 資訊會以色彩標示，代表下列特定分類：[正在載入]、[正在處理指令碼]、記憶體回收 ([GC])、[樣式]、[正在轉譯] 和 [影像解碼中]。 如需這些分類的詳細資訊，請參閱本主題稍後的 [Profiler event reference](#profiler-event-reference) 。  
   
  CPU 使用率圖形顯示花在所有應用程式執行緒的時間，將一個或多個 CPU 的 CPU 使用率值合併為單一的百分比值。 當多個 CPU 正在使用中時，CPU 使用率值可能會超過 100%。  
   
@@ -328,7 +327,7 @@ if (performance.mark && performance.measure) {
 |Event - 事件|事件分類|發生於|  
 |-----------|--------------------|-----------------|  
 |CSS 剖析中|正在載入|遇到新的 CSS 內容，而且嘗試剖析 CSS 內容。|  
-|HTML 剖析中|載入中|遇到新的 HTML 內容，而且嘗試將內容剖析成節點和將內容插入至 DOM 樹狀目錄。|  
+|HTML 剖析中|正在載入|遇到新的 HTML 內容，而且嘗試將內容剖析成節點和將內容插入至 DOM 樹狀目錄。|  
 |HTTP 要求|正在載入|在 DOM 中找到遠端資源，或因建立 XMLHttpRequest 而產生 HTTP 要求。|  
 |理論式下載|正在載入|在頁面的 HTML 內容中搜尋所需的資源，以便資源的後續 HTTP 要求可以迅速排程。|  
 |動畫畫面格回呼函式|正在處理指令碼|瀏覽器即將要呈現另一個畫面格，因此觸發應用程式提供的回呼函式。|  
@@ -338,7 +337,7 @@ if (performance.mark && performance.measure) {
 |變動觀察者|正在處理指令碼|一或多個受觀察的 DOM 項目已修改，因而會執行 MutationObserver 的關聯回呼。|  
 |指令碼評估|正在處理指令碼|在 DOM 中找到新的 SCRIPT 項目，而且嘗試剖析和執行指令碼。|  
 |計時器|正在處理指令碼|排程計時器已過，這會導致執行其關聯的回呼函式。|  
-|Windows 執行階段非同步回呼函式|指令碼|觸發 `Promise` 回呼函式的非同步作業，已經由 Windows 執行階段物件完成。|  
+|Windows 執行階段非同步回呼函式|正在處理指令碼|觸發 `Promise` 回呼函式的非同步作業，已經由 Windows 執行階段物件完成。|  
 |Windows 執行階段錯誤|正在處理指令碼|在 Windows 執行階段物件中發生的事件，觸發已註冊的接聽程式。|  
 |記憶體回收|GC|花費時間收集不再使用之物件的記憶體。|  
 |CSS 計算|樣式|對 DOM 進行變更，導致必須重新計算所有受影響項目的樣式屬性。|  

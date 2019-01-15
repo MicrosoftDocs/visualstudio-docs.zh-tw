@@ -2,19 +2,18 @@
 title: 在 Blend 中修改物件的樣式
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ae494a82e92086cfa0e8e2a69b7f7eee022807a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3cd8b8d9b3f9a12fa69cf708b0f7a3b16bae83d1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31917198"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53906783"
 ---
 # <a name="modify-the-style-of-objects-in-blend"></a>在 Blend 中修改物件的樣式
 
@@ -94,9 +93,9 @@ ms.locfileid: "31917198"
 
 ![滑鼠移至上方狀態](../designers/media/a95c671a-5639-40b9-83db-1e6b214330d5.png)
 
-**觀看短片：**![播放按鈕](../designers/media/bldadminconsoleinitialconfigicon.PNG) [管理 WPF 控制項的狀態](https://www.youtube.com/watch?v=m0PlkF5i6uw) \(英文\)。
+**觀看短片：**![播放按鈕](../designers/media/bldadminconsoleinitialconfigicon.PNG) [Manage the state of your WPF controls](https://www.youtube.com/watch?v=m0PlkF5i6uw) (管理 WPF 控制項的狀態)。
 
-## <a name="resources-create-colors-styles-and-templates-and-reuse-them-later"></a>資源：建立色彩、樣式和範本，之後重複使用這些項目
+## <a name="resources-create-colors-styles-and-templates-and-reuse-them-later"></a>資源：建立色彩、樣式和範本，並重複使用這些項目
 
 您可以將專案中幾乎任何項目轉換為資源。 資源只是一個可在應用程式中不同地方重複使用的物件。 例如，您可以建立色彩一次、使它變成資源，然後在數個物件上使用該色彩。 若要變更所有這些物件的色彩，只須變更色彩資源即可。
 

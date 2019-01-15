@@ -2,7 +2,6 @@
 title: 自動化 UI 測試
 ms.date: 12/04/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 f1_keywords:
 - vs.codedUITest
@@ -18,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ce10c81265ecfd95f43d62c73d69c902eda1a6c6
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: ddf9e610236cc50ccd809413bbe80e2eaad31a87
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52896636"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53840638"
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>使用 UI 自動化來測試您的程式碼
 
@@ -146,7 +145,7 @@ ms.locfileid: "52896636"
 
 本主題中的其餘各節提供此程序中各步驟的更多詳細資料。
 
-如需更詳細的範例，請參閱[逐步解說：建立、編輯和維護自動程式化 UI 測試](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)。 在這個逐步解說中，您將建立簡單的 Windows Presentation Foundation (WPF) 應用程式，以示範如何建立、編輯和維護自動程式化 UI 測試。 本逐步解說提供解決方案用來修正各種因時間問題和控制項重構而中斷的測試。
+如需更詳細的範例，請參閱[逐步解說：建立、編輯及維護自動程式化 UI 測試](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)。 在這個逐步解說中，您將建立簡單的 Windows Presentation Foundation (WPF) 應用程式，以示範如何建立、編輯和維護自動程式化 UI 測試。 本逐步解說提供解決方案用來修正各種因時間問題和控制項重構而中斷的測試。
 
 ## <a name="start-and-stop-the-application-under-test"></a>啟動和停止受測試的應用程式
 
@@ -293,7 +292,7 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 
     - 在您建立自動程式化 UI 測試之後，就可以將它修改為透過資料驅動。 如需詳細資訊，請參閱[建立資料驅動自動程式化 UI 測試](../test/creating-a-data-driven-coded-ui-test.md)。
 
-    - 在自動程式化 UI 測試播放中，您可以指示測試等待發生特定事件 (例如出現視窗、進度列消失等)。 若要這樣做，請加入適當的 UITestControl.WaitForControlXXX() 方法。 如需可用方法的完整清單，請參閱[讓自動程式化 UI 測試在播放期間等候特定事件](../test/making-coded-ui-tests-wait-for-specific-events-during-playback.md)。 如需使用 WaitForControlEnabled 方法等候啟用控制項的自動程式化 UI 測試範例，請參閱[逐步解說：建立、編輯和維護自動程式化 UI 測試](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)。
+    - 在自動程式化 UI 測試播放中，您可以指示測試等待發生特定事件 (例如出現視窗、進度列消失等)。 若要這樣做，請加入適當的 UITestControl.WaitForControlXXX() 方法。 如需可用方法的完整清單，請參閱[讓自動程式化 UI 測試在播放期間等候特定事件](../test/making-coded-ui-tests-wait-for-specific-events-during-playback.md)。 如需使用 WaitForControlEnabled 方法等待啟用控制項的自動程式化 UI 測試範例，請參閱[逐步解說：建立、編輯及維護自動程式化 UI 測試](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)。
 
     - 自動程式化 UI 測試支援 Internet Explorer 9 和 Internet Explorer 10 所含的一些 HTML5 控制項。 如需詳細資訊，請參閱[在自動程式化 UI 測試中使用 HTML5 控制項](../test/using-html5-controls-in-coded-ui-tests.md)。
 
@@ -447,7 +446,7 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 
 - [如何：將您的測試代理程式設定為執行與桌面互動的測試](https://msdn.microsoft.com/Library/3a94dd07-6d17-402c-ae8f-7947143755c9)
 
-**加入自訂控制項的支援：** 自動程式化 UI 測試架構不支援每個可能的 UI，而且可能不支援您要測試的 UI。 例如，您無法立即為 Microsoft Excel 的 UI 建立自動程式化 UI 測試。 不過，您可以建立自動程式化 UI 測試架構的擴充功能，以支援自訂控制項。
+**新增自訂控制項的支援：** 自動程式化 UI 測試架構不支援每個可能的 UI，而且可能不支援您要測試的 UI。 例如，您無法立即為 Microsoft Excel 的 UI 建立自動程式化 UI 測試。 不過，您可以建立自動程式化 UI 測試架構的擴充功能，以支援自訂控制項。
 
 - [啟用控制項的自動程式化 UI 測試功能](../test/enable-coded-ui-testing-of-your-controls.md)
 

@@ -2,19 +2,18 @@
 title: 在自動程式化 UI 測試中使用 HTML5 控制項
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: a603a662c9007ab3ee0e66df0b23959bfdce83fb
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 9470027e84e33bb3acdd64756db86c951c845d3d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52896183"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53883022"
 ---
 # <a name="using-html5-controls-in-coded-ui-tests"></a>在自動程式化 UI 測試中使用 HTML5 控制項
 
@@ -34,7 +33,7 @@ ms.locfileid: "52896183"
 
 ## <a name="audio-control"></a>音訊控制項
 
-**音訊控制項：** 正確記錄和播放 HTML5 Audio 控制項上的動作。
+**音訊控制項：** 正確錄製和播放 HTML5 音訊控制項上的動作。
 
 ![HTML5 Audio 控制項](../test/media/codedui_html5_audio.png)
 
@@ -49,16 +48,16 @@ ms.locfileid: "52896183"
 
 請參閱 [HTMLAudioElement](https://developer.mozilla.org/docs/Web/API/HTMLAudioElement)，以取得您可以在其上新增判斷提示的屬性清單。
 
- **搜尋屬性：**`HtmlAudio` 的搜尋屬性是 `Id`、`Name` 和 `Title`。
+ **搜尋屬性：**`HtmlAudio` 的搜尋屬性為 `Id`、`Name` 和 `Title`。
 
- **篩選屬性：**`HtmlAudio` 的篩選屬性是 `Src`、`Class`、`ControlDefinition` 和 `TagInstance`。
+ **篩選屬性：**`HtmlAudio` 的篩選屬性為 `Src`、`Class`、`ControlDefinition` 和 `TagInstance`。
 
 > [!NOTE]
 > 搜尋和暫停的時間量可以很大。 在播放時，自動程式碼 UI 測試會等到 `(TimeSpan)` 中指定的時間才暫停音訊。 如果因為某些特殊情況，已經過所指定的時間才按下 [暫停] 命令，就會擲回例外狀況。
 
 
 ## <a name="video-control"></a>視訊控制項
- **視訊控制項：** 正確記錄和播放 HTML5 Video 控制項上的動作。
+ **視訊控制項：** 正確錄製和播放 HTML5 視訊控制項上的動作。
 
  ![HTML5 視訊控制項](../test/media/codedui_html5_video.png)
 
@@ -73,9 +72,9 @@ ms.locfileid: "52896183"
 
 請參閱 [HTMLVideoElement](https://developer.mozilla.org/docs/Web/HTML/Element/video)，以取得您可以在其上新增判斷提示的屬性清單。
 
- **搜尋屬性：**`HtmlVideo` 的搜尋屬性是 `Id`、`Name` 和 `Title`。
+ **搜尋屬性：**`HtmlVideo` 的搜尋屬性為 `Id`、`Name` 和 `Title`。
 
- **篩選屬性：**`HtmlVideo` 的篩選屬性是 `Src`、`Poster`、`Class`、`ControlDefinition` 和 `TagInstance`。
+ **篩選屬性：**`HtmlVideo` 的篩選屬性為 `Src`、`Poster`、`Class`、`ControlDefinition` 和 `TagInstance`。
 
 > [!NOTE]
 > 如果您使用 -30s 或 +30s 標籤倒轉或向前快轉視訊時，會彙總以搜尋至適當的時間。

@@ -1,8 +1,6 @@
 ---
 title: 呼叫樹狀圖檢視 - 爭用資料 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Call Tree view
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 40e28eb246b2c4611a15dc4ce2cf6b1b02dd0100
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 86a4e29425e710818dee68e28dcc306c3c14ab85
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34263177"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53927502"
 ---
 # <a name="call-tree-view---contention-data"></a>呼叫樹狀圖檢視 - 爭用資料
 [呼叫樹狀圖] 檢視顯示在分析的應用程式中周遊的函式執行路徑。 樹狀圖的根是應用程式或元件的進入點。 每個函式節點都會列出它呼叫的所有函式，以及因函式與其他執行緒或處理序爭用資源而遭封鎖的次數和時間長度。  
@@ -34,7 +32,7 @@ ms.locfileid: "34263177"
   
  設定根節點時，除了所選取節點的樹狀子目錄以外，會從檢視中排除所有其他的項目。 若要將根節點重設回原始節點，在 [呼叫樹狀圖] 檢視上按一下滑鼠右鍵，然後按一下 [重設根目錄]。  
   
-|資料行|描述|  
+|資料行|說明|  
 |------------|-----------------|  
 |**專有封鎖時間**|在此執行路徑中，此函式的執行個體遭到封鎖而無法在執行程式碼剖析期間執行的時間。 此時間不包括函式所呼叫的子函式封鎖時間。|  
 |**專有封鎖時間 %**|執行程式碼剖析期間，屬於此執行路徑中此函式的專有封鎖時間佔所有封鎖時間的百分比。|  

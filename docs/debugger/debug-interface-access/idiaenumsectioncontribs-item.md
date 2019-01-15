@@ -1,8 +1,6 @@
 ---
 title: 'Idiaenumsectioncontribs:: Item |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: adbba44ed860c825d1e0baac417bc91e0b33e703
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 0a9d627aeb14b8844ba5c67e1d2c158f9e65c8cd
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49901927"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53896572"
 ---
 # <a name="idiaenumsectioncontribsitem"></a>IDiaEnumSectionContribs::Item
 透過索引中擷取一節的貢獻。  
@@ -27,7 +25,7 @@ ms.locfileid: "49901927"
 ## <a name="syntax"></a>語法  
   
 ```C++  
-HRESULT Item (   
+HRESULT Item (   
    DWORD                index,  
    IDiaSectionContrib** section  
 );  
@@ -43,6 +41,6 @@ HRESULT Item (
 ## <a name="return-value"></a>傳回值  
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
   
-## <a name="see-also"></a>另請參閱  
- [Idiaenumsectioncontribs:: Get_count](../../debugger/debug-interface-access/idiaenumsectioncontribs-get-count.md)   
+## <a name="see-also"></a>請參閱  
+ [IDiaEnumSectionContribs::get_Count](../../debugger/debug-interface-access/idiaenumsectioncontribs-get-count.md)   
  [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

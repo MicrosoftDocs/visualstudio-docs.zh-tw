@@ -2,7 +2,6 @@
 title: Live Unit Testing 常見問題集
 ms.date: 2017-10-03
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio ALM
@@ -11,12 +10,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2c0c81bc8413b9d1698e2ad7c21d0d9f397834ea
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e6e6cf314ed477ade4093f90737e2e1a9c949c8c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49849069"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53935589"
 ---
 # <a name="live-unit-testing-frequently-asked-questions"></a>Live Unit Testing 常見問題集
 
@@ -97,7 +96,7 @@ Live Unit Testing 適用於下表所列的三種熱門單元測試架構。 其�
 
 如果您的解決方案需要非「一般」非檢測組建所需的自訂步驟，以針對檢測設備 (Live Unit Testing) 進行建置，您可以將程式碼新增至專案或 *.targets* 檔案來檢查 `BuildingForLiveUnitTesting` 屬性，並執行自訂的建置前/後步驟。 您也可以根據這個專案屬性，選擇針對 Live Unit Testing 組建移除特定的建置步驟 (例如發佈或產生封裝)，或新增建置步驟 (例如複製必要條件)。 根據這個屬性自訂您的組建不會以任何方式更改您的一般組建，且只會影響 Live Unit Testing 組建。
 
-例如，可能有一個目標會在一般建置期間產生 NuGet 封裝。 您可能不想讓 NuGet 封裝在每次進行編輯之後產生。 因此您可以執行類似下列的內容，在 Live Unit Testing 組建中停用該目標：  
+例如，可能有一個目標會在一般建置期間產生 NuGet 封裝。 您可能不想讓 NuGet 封裝在每次進行編輯之後產生。 因此您可以執行類似下列的內容，在 Live Unit Testing 組建中停用該目標：  
 
 ```xml
 <Target Name="GenerateNuGetPackages" BeforeTargets="AfterBuild" Condition="'$(BuildingForLiveUnitTesting)' != 'true'">
@@ -112,7 +111,7 @@ Live Unit Testing 適用於下表所列的三種熱門單元測試架構。 其�
 
 例如，如果您的組建會覆寫 `<OutputPath>`，如下所示：
 
-```xml 
+```xml 
 <Project>
   <PropertyGroup>
     <OutputPath>$(SolutionDir)Artifacts\$(Configuration)\bin\$(MSBuildProjectName)</OutputPath>
@@ -122,7 +121,7 @@ Live Unit Testing 適用於下表所列的三種熱門單元測試架構。 其�
 
 則您可以使用下列 XML 來取代它：
 
-```xml 
+```xml 
 <Project>
   <PropertyGroup>
     <BaseOutputPath Condition="'$(BaseOutputPath)' == ''">$(SolutionDir)Artifacts\$(Configuration)\bin\$(MSBuildProjectName)\</BaseOutputPath>
@@ -138,14 +137,14 @@ Live Unit Testing 適用於下表所列的三種熱門單元測試架構。 其�
 ## <a name="set-the-location-of-build-artifacts"></a>設定組建成品的位置
 **我想要使 Live Unit Testing 組建的成品移到特定位置，而不是 *.vs* 資料夾下方的預設位置。如何變更該位置？**
 
-將 `LiveUnitTesting_BuildRoot` 使用者層級環境變數設為您想要卸除 Live Unit Testing 組建成品的路徑。 
+將 `LiveUnitTesting_BuildRoot` 使用者層級環境變數設為您想要卸除 Live Unit Testing 組建成品的路徑。 
 
 ## <a name="test-explorer-vs-live-unit-testing-test-runs"></a>測試總管與Live Unit Testing 測試回合的比較 
 **從 [測試總管] 視窗執行測試，與在 Live Unit Testing 中執行測試有何不同？**
 
 差異如下：
 
-- 從 [測試總管] 視窗針對測試進行執行或偵錯會執行一般的二進位檔，而 Live Unit Testing 會執行已檢測的二進位檔。 如果您想要偵錯已檢測的二進位檔，在您的測試方法中新增 [Debugger.Launch](xref:System.Diagnostics.Debugger.Launch) 方法呼叫會導致偵錯工具在每次執行該方法時 (包括 Live Unit Testing 執行該方法時) 啟動，您接著便可以附加已檢測的二進位檔，並對它進行偵錯。 不過，我們希望檢測設備在大部分的使用者案例中對您而言是透明的，且您不會需要對已檢測的二進位檔進行偵錯。
+- 從 [測試總管] 視窗針對測試進行執行或偵錯會執行一般的二進位檔，而 Live Unit Testing 會執行已檢測的二進位檔。 如果您想要偵錯已檢測的二進位檔，在您的測試方法中新增 [Debugger.Launch](xref:System.Diagnostics.Debugger.Launch) 方法呼叫會導致偵錯工具在每次執行該方法時 (包括 Live Unit Testing 執行該方法時) 啟動，您接著便可以附加已檢測的二進位檔，並對它進行偵錯。 不過，我們希望檢測設備在大部分的使用者案例中對您而言是透明的，且您不會需要對已檢測的二進位檔進行偵錯。
 
 - Live Unit Testing 不會建立新的應用程式定義域來執行測試，但從 [測試總管] 視窗中執行的測試會建立新的應用程式定義域。
 
@@ -203,7 +202,7 @@ public class Class1
 
 如果您解決方案的建置流程會產生屬於解決方案本身的原始程式碼，而您的建置目標檔案並未指定適當的輸入和輸出，即使您未進行編輯，您也可以建置解決方案。 您應該為目標提供輸入和輸出清單，讓 MSBuild 可以執行適當的更新狀態檢查，並判斷是否需要新的組建。
 
-每當 Live Unit Testing 偵測到原始程式檔已變更時，即會開始建置。 由於您方案的組建會產生原始程式檔，Live Unit Testing 將陷入無限的建置迴圈。 不過，如果在 Live Unit Testing 開始第二個組建時 (從上一個組建中偵測到新產生的原始程式檔之後) 檢查目標的輸入和輸出，它就會脫離該建置迴圈，因為輸入和輸出檢查將指出一切均為最新狀態。  
+每當 Live Unit Testing 偵測到原始程式檔已變更時，即會開始建置。 由於您方案的組建會產生原始程式檔，Live Unit Testing 將陷入無限的建置迴圈。 不過，如果在 Live Unit Testing 開始第二個組建時 (從上一個組建中偵測到新產生的原始程式檔之後) 檢查目標的輸入和輸出，它就會脫離該建置迴圈，因為輸入和輸出檢查將指出一切均為最新狀態。  
 
 ## <a name="lightweight-solution-load"></a>輕量型解決方案載入
 **Live Unit Testing 如何與輕量型解決方案載入功能搭配運作？**
@@ -223,12 +222,12 @@ Live Unit Testing 目前無法與輕量型解決方案載入功能良好搭配�
 
 此問題已修正，且已不存在於 Visual Studio 2017 15.3 版中。 請升級至此版本的 Visual Studio。
 
-在舊版 Visual Studio 2017 中，這是已知問題。 此問題的因應措施為在包含或排除測試之後，對任意檔案進行編輯。 
+在舊版 Visual Studio 2017 中，這是已知問題。 此問題的因應措施為在包含或排除測試之後，對任意檔案進行編輯。 
 
 ## <a name="editor-icons"></a>編輯器圖示
 **儘管根據輸出視窗中的訊息，Live Unit Testing 似乎正在執行測試，但為什麼我在編輯器中看不到任何圖示？**
 
-如果 Live Unit Testing 正在運作的組件基於任何原因而未進行檢測，您可能在編輯器中看不到圖示。 例如，Live Unit Testing 與設定 `<UseHostCompilerIfAvailable>false</UseHostCompilerIfAvailable>` 的專案不相容。 在此情況下，您的建置流程需要更新以移除此設定，或將該設定變更為 `true`，Live Unit Testing 才能夠運作。 
+如果 Live Unit Testing 正在運作的組件基於任何原因而未進行檢測，您可能在編輯器中看不到圖示。 例如，Live Unit Testing 與設定 `<UseHostCompilerIfAvailable>false</UseHostCompilerIfAvailable>` 的專案不相容。 在此情況下，您的建置流程需要更新以移除此設定，或將該設定變更為 `true`，Live Unit Testing 才能夠運作。 
 
 ## <a name="capture-logs"></a>擷取記錄
 **如何收集更詳細的記錄以提出錯誤報告？**

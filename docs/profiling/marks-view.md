@@ -1,8 +1,6 @@
 ---
 title: 標記檢視 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.view.marks
@@ -15,19 +13,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 93dbaf0d8c3d1f3542683a05b175c43c0c43b948
-ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
+ms.openlocfilehash: e162e234a5f0596073df12f7791cdb3e3126cf9c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "51220706"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53873878"
 ---
 # <a name="marks-view"></a>標記檢視
 [標記] 檢視會顯示插入應用程式中的取樣和 ETW 事件。  
   
  在報告中預先填入的預設標記會標示程式的開始和結束。  
   
- 此檢視也會顯示來自自動產生之標記的 Windows 計數器資料。 如需詳細資訊，請參閱[如何：收集 Windows 計數器資料](../profiling/how-to-collect-windows-counter-data.md)。  
+ 此檢視也會顯示來自自動產生之標記的 Windows 計數器資料。 如需詳細資訊，請參閱[＜How to：收集 Windows 計數器資料](../profiling/how-to-collect-windows-counter-data.md)。  
   
  若要在兩個標記之間建立篩選，請選取標記，按一下滑鼠右鍵，然後按一下 [依標記加入篩選條件] 或 [依時間戳記加入篩選條件]。  
   

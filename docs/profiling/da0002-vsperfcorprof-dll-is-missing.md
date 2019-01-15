@@ -1,8 +1,6 @@
 ---
 title: DA0002：遺漏 VSPerfCorProf.dll | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.DA0002
@@ -15,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 79d2352891f040f0824719d7a8f0f0b6164e2a69
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9bb499a1c41bfd6744f18b1bf67424b6e3c4835e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49919204"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53967676"
 ---
 # <a name="da0002-vsperfcorprofdll-is-missing"></a>DA0002：遺漏 VSPerfCorProf.dll
 

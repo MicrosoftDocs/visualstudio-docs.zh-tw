@@ -1,8 +1,6 @@
 ---
 title: StopProfile | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - StopProfile
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e03abc331d59504b1b08136c8c81fe12c8ba2af
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: b44726b2ce1f7a0b699898edfc3a53371163168e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34264191"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53952231"
 ---
 # <a name="stopprofile"></a>StopProfile
 `StopProfile` 函式會將所指定分析層級的計數器設定為 0 (關閉)。  
@@ -35,7 +33,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI StopProfile(
   
  指出可套用效能資料收集的分析層級。 下列 **PROFILE_CONTROL_LEVEL** 列舉程式可以用來指出可套用效能資料收集的三種層級的其中一種：  
   
-|列舉值|描述|  
+|列舉值|說明|  
 |----------------|-----------------|  
 |PROFILE_GLOBALLEVEL|全域層級設定會影響分析執行中的所有處理序和執行緒。|  
 |PROFILE_PROCESSLEVEL|處理序層級設定會影響屬於所指定處理序的所有執行緒。|  
@@ -48,7 +46,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI StopProfile(
 ## <a name="property-valuereturn-value"></a>屬性值/傳回值  
  此函式會使用 **PROFILE_COMMAND_STATUS** 列舉來指出成功或失敗。 傳回值可以是下列其中一個：  
   
-|列舉值|描述|  
+|列舉值|說明|  
 |----------------|-----------------|  
 |PROFILE_ERROR_ID_NOEXIST|分析項目識別碼不存在。|  
 |PROFILE_ERROR_LEVEL_NOEXIST|指定的分析層級不存在。|  

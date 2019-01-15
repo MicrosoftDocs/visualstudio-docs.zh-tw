@@ -10,13 +10,12 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 65508c3a7594c0943b80fbbb898c62b0fc013557
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 1887f1e5eb2ac77520f54c50d0f4ab16772f5e17
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52894595"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53843615"
 ---
 # <a name="load-test-scenario-properties"></a>負載測試情節屬性
 
@@ -43,11 +42,11 @@ ms.locfileid: "52894595"
 
 |屬性|定義|
 |-|----------------|
-|**要使用的代理程式**|如果要從遠端執行負載測試，請指定情節要使用的代理程式。 例如，您可以指定特定一組代理程式，以便在分析效能趨勢時維持一致性。 另外，代理程式也可以分散在不同的地理位置，讓代理程式執行的指令碼更親近於代理程式所在地。<br /><br />多個代理程式必須以逗號分隔，例如 "**Agent1, Agent2, Agent3**"。 將這個屬性保留空白，即指定情節應該使用所有可用的代理程式。<br /><br />如需詳細資訊，請參閱[如何：指定要使用的測試代理程式](../test/how-to-specify-test-agents-to-use-in-load-test-scenarios.md)。|
-|**將分佈套用到步調延遲**|布林值，用來指定是否要在使用者步調測試混合模型中套用一般分佈延遲。 這個屬性只有在 [測試混合類型] 屬性設定為 [按使用者步調] 時才適用。<br /><br />如需詳細資訊，請參閱[如何：將分佈套用到步調延遲](../test/how-to-apply-distribution-to-pacing-delay-when-using-a-user-pace-test-mix-model.md)|
+|**要使用的代理程式**|如果要從遠端執行負載測試，請指定情節要使用的代理程式。 例如，您可以指定特定一組代理程式，以便在分析效能趨勢時維持一致性。 另外，代理程式也可以分散在不同的地理位置，讓代理程式執行的指令碼更親近於代理程式所在地。<br /><br />多個代理程式必須以逗號分隔，例如 "**Agent1, Agent2, Agent3**"。 將這個屬性保留空白，即指定情節應該使用所有可用的代理程式。<br /><br />如需詳細資訊，請參閱[＜How to：指定要使用的測試代理程式](../test/how-to-specify-test-agents-to-use-in-load-test-scenarios.md)。|
+|**將分佈套用到步調延遲**|布林值，用來指定是否要在使用者步調測試混合模型中套用一般分佈延遲。 這個屬性只有在 [測試混合類型] 屬性設定為 [按使用者步調] 時才適用。<br /><br />如需詳細資訊，請參閱[＜How to：將分佈套用到步調延遲](../test/how-to-apply-distribution-to-pacing-delay-when-using-a-user-pace-test-mix-model.md)|
 |**IP 切換**|布林值，用來指定是否要使用 IP 切換。<br /><br />IP 切換可讓測試代理程式利用某個不同 IP 位址的範圍，將要求傳送至伺服器。 這會模擬來自不同用戶端電腦的呼叫。 當您對負載平衡 Web 伺服陣列進行測試時，IP 切換很重要。 大多數的負載平衡器會使用用戶端的 IP 位址，將用戶端導引到特定的 Web 伺服器。 如果所有的要求似乎都來自單一用戶端，負載平衡器將不會平衡負載。 若要在 Web 伺服陣列中獲得較佳的負載平衡，讓要求都來自某一範圍的 IP 位址非常重要。<br /><br />IP 切換僅適用於測試代理程式。|
 |**測試反覆項目數目上限**|數值，用來指定情節中要執行的測試數目上限。 0 值指定沒有上限。<br /><br />如需詳細資訊，請參閱[設定情節的測試反覆項目](../test/configure-test-iterations-in-a-load-test-scenario.md)。|
-|**新使用者的百分比**|數值，指定情節中新使用者或初次造訪者的百分比。<br /><br />如需詳細資訊，請參閱[如何：指定使用 Web 快取資料之虛擬使用者的百分比](../test/how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data.md)。|
+|**新使用者的百分比**|數值，指定情節中新使用者或初次造訪者的百分比。<br /><br />如需詳細資訊，請參閱[＜How to：指定使用 Web 快取資料的虛擬使用者百分比](../test/how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data.md)。|
 |**考慮特性**|指定情節是否會使用 [常態分佈]，或考慮特性是 [開啟] 或 [關閉]。<br /><br />如需詳細資訊，請參閱[編輯考慮時間以模擬網站人類互動延遲](../test/edit-think-times-in-load-test-scenarios.md)。|
 
 ## <a name="timing"></a>計時

@@ -1,8 +1,6 @@
 ---
 title: DA0003：許多核心樣本 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.rules.DA0003
@@ -15,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: aec22a1312ec4b3ee404b9f701f1f34264d79dff
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 627db454148a9abe1d9bdc8c3a9764ed014d7f39
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49894738"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53911568"
 ---
 # <a name="da0003-many-kernel-samples"></a>DA0003：許多核心樣本
 

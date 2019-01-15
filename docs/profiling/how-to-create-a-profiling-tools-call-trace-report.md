@@ -1,8 +1,6 @@
 ---
-title: 如何：建立分析工具呼叫追蹤報表 | Microsoft Docs
-ms.custom: ''
+title: HOW TO：建立分析工具呼叫追蹤報表 | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - performance tools, viewing ETW data
@@ -13,14 +11,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a363554dfab8463ed91a82ffae9dea4f52d435d4
-ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
+ms.openlocfilehash: c2d48b266108a053fa24da517d2367fe85b2b6a6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34815720"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53985861"
 ---
-# <a name="how-to-create-a-profiling-tools-call-trace-report"></a>如何：建立分析工具呼叫追蹤報表
+# <a name="how-to-create-a-profiling-tools-call-trace-report"></a>HOW TO：建立程式碼剖析工具呼叫追蹤報表
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具的「呼叫追蹤報表」會列出您應用程式函式每個進入點和結束點的計時資訊，以及您的函式對其他函式的每次呼叫。 只有使用檢測方法收集分析資料時，呼叫追蹤報表才能用於資料分析。  
   
 > [!NOTE]

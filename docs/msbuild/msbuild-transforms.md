@@ -1,8 +1,6 @@
 ---
 title: MSBuild 轉換 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, transforms
@@ -13,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b1a3ff7cbd2025a909ab0c5fb044bb61b24388ff
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: f2f4dfeb57ab26e985625bd1b62154b9e6924eb8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39151196"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53942875"
 ---
 # <a name="msbuild-transforms"></a>MSBuild 轉換
 轉換是指某個項目清單和另一個項目清單的一對一轉換作業。 轉換作業除了可讓專案轉換項目清單，還能讓目標識別其輸入和輸出之間的直接對應。 本主題說明轉換作業，以及 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 如何使用轉換作業以更有效建置專案。  
@@ -50,7 +48,7 @@ ms.locfileid: "39151196"
 ## <a name="dependency-analysis"></a>相依性分析  
  轉換作業可保證轉換後的項目清單與原始項目清單之間的一對一對應。 因此，如果目標所建立的輸出是輸入的轉換項目，[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 即會分析輸入和輸出的時間戳記，並決定是否略過、建置或部分重建目標。  
   
- 在下列範例的 [Copy 工作](../msbuild/copy-task.md)中，`BuiltAssemblies` 項目清單中的每個檔案都會對應至工作目的地資料夾中的檔案 (透過在 `Outputs` 屬性中使用轉換來指定)。 如果 `BuiltAssemblies` 項目清單中的檔案有所變更，系統就只會針對已變更的檔案執行 `Copy` 工作，並略過所有其他檔案。 如需相依性分析以及如何使用轉換的詳細資訊，請參閱[如何：累加建置](../msbuild/how-to-build-incrementally.md)。  
+ 在下列範例的 [Copy 工作](../msbuild/copy-task.md)中，`BuiltAssemblies` 項目清單中的每個檔案都會對應至工作目的地資料夾中的檔案 (透過在 `Outputs` 屬性中使用轉換來指定)。 如果 `BuiltAssemblies` 項目清單中的檔案有所變更，系統就只會針對已變更的檔案執行 `Copy` 工作，並略過所有其他檔案。 如需相依性分析及如何使用轉換的詳細資訊，請參閱[如何：以累加方式建置](../msbuild/how-to-build-incrementally.md)。  
   
 ```xml  
 <Target Name="CopyOutputs"  
@@ -66,7 +64,7 @@ ms.locfileid: "39151196"
   
 ## <a name="example"></a>範例  
   
-### <a name="description"></a>描述  
+### <a name="description"></a>說明  
  下列範例示範使用轉換的 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 專案檔。 這個範例假設 *c:\sub0\sub1\sub2\sub3* 目錄中只有一個 *.xsd* 檔案，而工作目錄是 *c:\sub0*。  
   
 ### <a name="code"></a>程式碼  
@@ -107,4 +105,4 @@ extension: .xsd
 ## <a name="see-also"></a>另請參閱  
  [MSBuild 概念](../msbuild/msbuild-concepts.md)   
  [MSBuild 參考](../msbuild/msbuild-reference.md)   
- [如何：累加建置](../msbuild/how-to-build-incrementally.md)
+ [如何：以累加方式建置](../msbuild/how-to-build-incrementally.md)

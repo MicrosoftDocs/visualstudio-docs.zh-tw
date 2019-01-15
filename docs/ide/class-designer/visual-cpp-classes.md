@@ -2,7 +2,6 @@
 title: 類別設計工具中的 Visual C++ 類別
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - vs.classdesigner.inheritancelinelabel
@@ -14,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6d2ff2b6660b7ef7530d3a37d251904fa54b5ce0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b768fa059d3933ef75c5ff58e050c8c1521f770a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49856193"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53895229"
 ---
 # <a name="visual-c-classes-in-class-designer"></a>類別設計工具中的 Visual C++ 類別
 
@@ -37,7 +36,7 @@ class A {};
 class B : A {};
 ```
 
-您也可以只將類別 B 拖曳至類別圖表，並以滑鼠右鍵按一下 B 的類別圖形，然後按一下 [顯示基底類別]。 這會顯示其基底類別：A。
+您也可以只將類別 B 拖曳至類別圖表，並以滑鼠右鍵按一下 B 的類別圖形，然後按一下 [顯示基底類別]。 這會顯示其基底類別：答：
 
 ## <a name="multiple-inheritance"></a>多重繼承
 

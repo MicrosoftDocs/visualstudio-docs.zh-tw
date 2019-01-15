@@ -1,8 +1,6 @@
 ---
 title: MSBuild 命令列參考 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 dev_langs:
 - VB
@@ -19,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c4a692f203a0a120c2ab0da5c745aee8803badc
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: 56e37053e92ca009ecdd5ba1f72ce02f1932ee2b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50967268"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53935030"
 ---
 # <a name="msbuild-command-line-reference"></a>MSBuild 命令列參考
 在使用 *MSBuild.exe* 來建置專案或方案檔時，您可以包含數個參數來指定程序的各個層面。  
@@ -39,13 +37,13 @@ MSBuild.exe [Switches] [ProjectFile]
   
 ## <a name="arguments"></a>引數  
   
-|引數|描述|  
+|引數|說明|  
 |--------------|-----------------|  
 |`ProjectFile`|在所指定的專案檔中建置目標。 如果您未指定專案檔，MSBuild 會搜尋目前工作目錄中結尾為 *proj* 的檔案名稱副檔名，並使用該檔案。 您也可以為這個引數指定 Visual Studio 方案檔。|  
   
 ## <a name="switches"></a>參數  
   
-|參數|簡短形式|描述|  
+|參數|簡短形式|說明|  
 |------------|----------------|-----------------|  
 |-help|/? 或 -h|顯示使用資訊。 下列命令是範例：<br /><br /> `msbuild.exe -?`|  
 |-detailedsummary|-ds|在組建記錄檔結尾顯示關於所建置組態及其如何排程至節點的詳細資訊。|  
@@ -54,11 +52,11 @@ MSBuild.exe [Switches] [ProjectFile]
 |-noautoresponse|-noautorsp|不要自動包含任何 *MSBuild.rsp* 檔案。|  
 |-nodeReuse:`value`|-nr:`value`|啟用或停用 MSBuild 節點的重複使用功能。 您可以指定下列值：<br /><br /> -   **True**。 組建完成後保留節點，以便後續組建可以加以使用 (預設值)。<br />-   **False**。 在組建完成後不保留節點。<br /><br /> 節點對應至執行中專案。 如果您包含 **-maxcpucount** 參數，就能同時執行多個節點。|  
 |-nologo||不要顯示程式啟始資訊或著作權訊息。|  
-|<a name="preprocess"></a> -preprocess[:`filepath`]|-pp[:`filepath`]|由內嵌在組建期間匯入的所有檔案，並標上其界限標記，藉此建立單一彙總的專案檔。 您可以使用此參數更輕鬆地判斷正在匯入哪些檔案、從哪裡匯入檔案，以及哪些檔案形成組建。 使用這個參數時，並不會建置專案。<br /><br /> 如果您指定 `filepath`，則彙總的專案檔會是檔案的輸出。 否則，輸出會顯示在主控台視窗中。<br /><br /> 如需如何使用 `Import` 項目來將專案檔插入另一個專案檔的資訊，請參閱 [Import 項目 (MSBuild)](../msbuild/import-element-msbuild.md) 和[如何：在多個專案檔中使用相同的目標](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md)。|  
+|<a name="preprocess"></a> -preprocess[:`filepath`]|-pp[:`filepath`]|由內嵌在組建期間匯入的所有檔案，並標上其界限標記，藉此建立單一彙總的專案檔。 您可以使用此參數更輕鬆地判斷正在匯入哪些檔案、從哪裡匯入檔案，以及哪些檔案形成組建。 使用這個參數時，並不會建置專案。<br /><br /> 如果您指定 `filepath`，則彙總的專案檔會是檔案的輸出。 否則，輸出會顯示在主控台視窗中。<br /><br /> 如需如何使用 `Import` 項目將專案檔插入另一個專案檔的資訊，請參閱 [Import 項目 (MSBuild)](../msbuild/import-element-msbuild.md) 和[如何：在多個專案檔中使用相同的目標](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md)。|  
 |-property:`name`=`value`|/p:`name`=`value`|設定或覆寫所指定的專案層級屬性，其中 `name` 是屬性名稱，而 `value` 是屬性值。 分別指定每個屬性，或使用分號或逗號分隔多個屬性，如下列範例所示：<br /><br /> `-property:WarningLevel=2;OutDir=bin\Debug`|  
 |-restore|-r|在建置實際目標前執行 `Restore` 目標。|
 |-target:`targets`|-t:`targets`|在專案中建置指定的目標。 分別指定每個目標，或使用分號或逗號分隔多個目標，如下列範例所示：<br /><br /> `-target:Resources;Compile`<br /><br /> 如果您使用這個參數指定任何目標，便會執行這些目標，而不是專案檔中 `DefaultTargets` 屬性的任何目標。 如需詳細資訊，請參閱[目標建置順序](../msbuild/target-build-order.md)和[如何：指定要優先建置的目標](../msbuild/how-to-specify-which-target-to-build-first.md)。<br /><br /> 目標是一組工作。 如需詳細資訊，請參閱[目標](../msbuild/msbuild-targets.md)。|  
-|-toolsversion:`version`|-tv:`version`|指定用來建置專案的工具組版本，如下列範例所示：`-toolsversion:3.5`<br /><br /> 使用此參數，即可建置專案，並指定有別於 [Project 項目 (MSBuild)](../msbuild/project-element-msbuild.md) 中所指定的版本。 如需詳細資訊，請參閱[覆寫 ToolsVersion 設定](../msbuild/overriding-toolsversion-settings.md)。<br /><br /> 若是 MSBuild 4.5，您可以為 `version` 指定下列值：2.0、3.5 和 4.0。 如果您指定 4.0，則 `VisualStudioVersion` 組建屬性會指定要使用哪個子工具組。 如需詳細資訊，請參閱[工具組 (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md) 的＜子工具組＞一節。<br /><br /> 工具組包含用於建置應用程式的工作、目標和工具。 工具包括編譯器，例如 *csc.exe* 和 vbc.exe。 如需工具組的詳細資訊，請參閱[工具組 (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md)、[標準和自訂工具組的組態](../msbuild/standard-and-custom-toolset-configurations.md)及[多目標](../msbuild/msbuild-multitargeting-overview.md)。 **注意：** 工具組版本與目標 Framework 的版本不同，目標 Framework 版本是建置專案以在其上方執行的目標 .NET Framework 版本。 如需詳細資訊，請參閱[目標架構和目標平台](../msbuild/msbuild-target-framework-and-target-platform.md)。|  
+|-toolsversion:`version`|-tv:`version`|指定用來建置專案的工具組版本，如下列範例所示：`-toolsversion:3.5`<br /><br /> 使用此參數，即可建置專案，並指定有別於 [Project 項目 (MSBuild)](../msbuild/project-element-msbuild.md) 中所指定的版本。 如需詳細資訊，請參閱[覆寫 ToolsVersion 設定](../msbuild/overriding-toolsversion-settings.md)。<br /><br /> 針對 MSBuild 4.5，您可以為 `version` 指定下列值：2.0、3.5 和 4.0。 如果您指定 4.0，則 `VisualStudioVersion` 組建屬性會指定要使用哪個子工具組。 如需詳細資訊，請參閱[工具組 (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md) 的＜子工具組＞一節。<br /><br /> 工具組包含用於建置應用程式的工作、目標和工具。 工具包括編譯器，例如 *csc.exe* 和 vbc.exe。 如需工具組的詳細資訊，請參閱[工具組 (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md)、[標準和自訂工具組的組態](../msbuild/standard-and-custom-toolset-configurations.md)及[多目標](../msbuild/msbuild-multitargeting-overview.md)。 **注意：** 工具組版本與目標架構的版本不同，它是在其上建置專案來執行的 .NET Framework 版本。 如需詳細資訊，請參閱[目標架構和目標平台](../msbuild/msbuild-target-framework-and-target-platform.md)。|  
 |-validate:[`schema`]|-val[`schema`]|驗證專案檔，如果驗證成功，則會建置專案。<br /><br /> 如果您沒有指定 `schema`，專案會針對預設結構描述進行驗證。<br /><br /> 如果您指定 `schema`，專案會針對您指定的結構描述進行驗證。<br /><br /> 下列設定為範例：`-validate:MyExtendedBuildSchema.xsd`|  
 |-verbosity:`level`|-v:`level`|指定要在組建記錄檔中顯示的資訊量。 每個記錄器都會顯示根據您為該記錄器所設詳細資訊層級的事件。<br /><br /> 您可以指定下列詳細資訊層級：`q[uiet]`、`m[inimal]`、`n[ormal]`、`d[etailed]` 及 `diag[nostic]`。<br /><br /> 下列設定為範例：`-verbosity:quiet`|  
 |-version|-ver|只顯示版本資訊。 不會建置專案。|  
@@ -66,7 +64,7 @@ MSBuild.exe [Switches] [ProjectFile]
   
 ### <a name="switches-for-loggers"></a>記錄器的參數  
   
-|參數|簡短形式|描述|  
+|參數|簡短形式|說明|  
 |------------|----------------|-----------------|  
 |-consoleloggerparameters:<br /><br /> `parameters`|-clp:`parameters`|將您所指定的參數傳遞至主控台記錄器，其會在主控台視窗中顯示組建資訊。 您可以指定下列參數：<br /><br /> -   **PerformanceSummary**。 顯示工作、目標及專案所花費的時間。<br />-   **Summary**。 在結尾顯示錯誤和警告摘要。<br />-   **NoSummary**。 不要在結尾顯示錯誤和警告摘要。<br />-   **ErrorsOnly**。 僅顯示錯誤。<br />-   **WarningsOnly**。 僅顯示警告。<br />-   **NoItemAndPropertyList**。 如果詳細資訊層級設為 `diagnostic`，不要在每個專案組件開頭顯示項目和屬性的清單。<br />-   **ShowCommandLine**。 顯示 `TaskCommandLineEvent` 訊息。<br />-   **ShowTimestamp**。 顯示時間戳記做為任何訊息的前置詞。<br />-   **ShowEventId**。 顯示每個已啟動事件、已完成事件及訊息的事件識別碼。<br />-   **ForceNoAlign**。 不要讓文字對齊主控台緩衝區的大小。<br />-   **DisableConsoleColor**。 對所有記錄訊息使用預設的主控台色彩。<br />-   **DisableMPLogging**。 在非多處理器模式中執行時，停用多處理器的輸出記錄樣式。<br />-   **EnableMPLogging**。 即使在非多處理器模式中執行時也啟用多記錄器記錄樣式。 這個記錄樣式預設為開啟。<br />-   **Verbosity**。 覆寫此記錄器的 **-verbosity** 設定。<br /><br /> 使用分號或逗號分隔多個參數，如下列範例所示：<br /><br /> `-consoleloggerparameters:PerformanceSummary;NoSummary -verbosity:minimal`|  
 |-distributedFileLogger|-dfl|將每個 MSBuild 節點的組建輸出記錄到自己的檔案。 這些檔案的初始位置是目前的目錄。 根據預設，系統會將檔案命名為 *MSBuild\<NodeId>.log*。 您可以使用 **-fileLoggerParameters** 參數，指定檔案位置及 fileLogger 的其他參數。<br /><br /> 如果您使用 **-fileLoggerParameters** 參數為記錄檔命名，分散式記錄器便會使用該名稱作為範本，並在為每個節點建立記錄檔時，將節點識別碼附加至該名稱。|  

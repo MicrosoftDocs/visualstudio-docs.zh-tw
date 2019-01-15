@@ -1,9 +1,8 @@
 ---
-title: 如何：設定 IDE 協助工具選項
+title: HOW TO：設定 IDE 協助工具選項
 description: 了解如何在 Visual Studio 中設定協助工具選項，使其整合式開發環境 (IDE) 更便於每個人使用，包括視力不佳而無法閱讀，以及靈活度有限而難以書寫的人士。
 ms.date: 08/22/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - accessibility [Visual Studio]
@@ -13,14 +12,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: df94a57358edd9619b43bbcddb26d4e3485a1ab1
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 3c8fa92644221149d3405eea25b1c85e229861e4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388422"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53906770"
 ---
-# <a name="how-to-set-ide-accessibility-options"></a>如何：設定 IDE 協助工具選項
+# <a name="how-to-set-ide-accessibility-options"></a>HOW TO：設定 IDE 協助工具選項
 
 > [!TIP]
 > 若要深入了解最新的協助工具更新，請參閱 [Visual Studio 2017 15.3 版中的協助工具改善](https://blogs.msdn.microsoft.com/visualstudio/2017/08/14/accessibility-improvements-in-visual-studio-2017-version-15-3/) \(英文\) 部落格文章。

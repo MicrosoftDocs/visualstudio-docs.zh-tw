@@ -1,8 +1,6 @@
 ---
-title: 如何：顯示以逗號分隔的項目清單 | Microsoft Docs
-ms.custom: ''
+title: HOW TO：顯示以逗號分隔的項目清單 | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, separating items with semicolons
@@ -13,14 +11,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f1507a297c1baf7f410bde1c6d32e48b43a9cdc2
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: cb9645ffef5c6b9208a6d3b940b145068a6bd12d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48880224"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53854148"
 ---
-# <a name="how-to-display-an-item-list-separated-with-commas"></a>如何：顯示以逗號分隔的項目清單
+# <a name="how-to-display-an-item-list-separated-with-commas"></a>HOW TO：顯示以逗號分隔的項目清單
 在使用 [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]) 中列出的項目時，建議您以易於閱讀的方式顯示這些項目清單中的內容。 否則，您可能必須進行以特殊分隔符號字串分隔項目清單的工作。 在這兩種情況下，您都可以為項目清單指定分隔符號字串。  
   
 ## <a name="separate-items-in-a-list-with-commas"></a>以逗號分隔清單中的項目  

@@ -1,8 +1,6 @@
 ---
 title: StartTrackingContextWithRoot | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 apiname:
 - StartTrackingContextWithRoot
@@ -17,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: df0fc520d1d3f37800f08198e6dc08deac5c6a6f
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 721d50b4e710e19c759bb418197d82c4828e6961
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39155551"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53989996"
 ---
 # <a name="starttrackingcontextwithroot"></a>StartTrackingContextWithRoot
 使用指定根標記的回應檔啟動追蹤內容。  
@@ -34,13 +32,13 @@ HRESULT WINAPI StartTrackingContextWithRoot(LPCTSTR intermediateDirectory, LPCTS
 ```  
   
 #### <a name="parameters"></a>參數  
- [輸入] `intermediateDirectory`  
+ [in] `intermediateDirectory`  
  儲存追蹤記錄的目錄。  
   
- [輸入] `taskName`  
+ [in] `taskName`  
  找到追蹤內容。 這個名稱是用來建立記錄檔的名稱。  
   
- [輸入] `rootMarkerResponseFile`  
+ [in] `rootMarkerResponseFile`  
  包含根標記的回應檔路徑名稱。 根名稱是用來將內容所有的追蹤集合在一起。  
   
 ## <a name="return-value"></a>傳回值  

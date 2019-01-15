@@ -1,9 +1,7 @@
 ---
 title: 步驟 1：建立 Windows Forms 應用程式專案
-ms.custom: ''
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
 ms.topic: conceptual
 ms.assetid: 16ac2422-e720-4e3a-b511-bc2a54201a86
 author: TerryGLee
@@ -11,17 +9,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d9bcb82622a7ea303a632865b0c3f964de4b4dc3
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 86942dda1990fe8a681ec2832b2474d42d418a63
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34747651"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53842053"
 ---
 # <a name="step-1-create-a-windows-forms-application-project"></a>步驟 1：建立 Windows Forms 應用程式專案
 建立圖片檢視器的第一個步驟是建立 Windows Forms 應用程式專案。
 
- ![影片連結](../data-tools/media/playvideo.gif)如需觀看本主題的影片版本，請參閱[教學課程 1：使用 Visual Basic 建立圖片檢視器 - 影片 1](http://go.microsoft.com/fwlink/?LinkId=205209) 或[教學課程 1：使用 C# 建立圖片檢視器 - 影片 1](http://go.microsoft.com/fwlink/?LinkId=205199)。 這些影片使用舊版 Visual Studio，因此有一些功能表命令以及某些使用者介面項目會有些微差異。 不過，概念和程序在目前 Visual Studio 版本中的運作方式雷同。
+ ![影片連結](../data-tools/media/playvideo.gif)如需本主題的影片版本，請參閱[教學課程 1：在 Visual Basic 中建立圖片檢視器 - 影片 1](http://go.microsoft.com/fwlink/?LinkId=205209) 或[教學課程 1：在 C# 中建立圖片檢視器 - 影片 1](http://go.microsoft.com/fwlink/?LinkId=205199)。 這些影片使用舊版 Visual Studio，因此有一些功能表命令以及某些使用者介面項目會有些微差異。 不過，概念和程序在目前 Visual Studio 版本中的運作方式雷同。
 
 ## <a name="to-create-a-windows-forms-application-project"></a>若要建立 Windows Forms 應用程式專案
 
@@ -70,6 +68,6 @@ ms.locfileid: "34747651"
 
 ## <a name="to-continue-or-review"></a>若要繼續或檢視
 
--   若要移到下一個教學課程步驟，請參閱[步驟 2：執行您的程式](../ide/step-2-run-your-program.md)。
+-   若要前往下一個教學課程步驟，請參閱[步驟 2：執行程式](../ide/step-2-run-your-program.md)。
 
 -   若要回到概觀主題，請參閱[教學課程 1：建立圖片檢視器](../ide/tutorial-1-create-a-picture-viewer.md)。

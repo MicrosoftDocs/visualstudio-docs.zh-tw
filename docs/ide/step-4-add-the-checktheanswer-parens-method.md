@@ -1,9 +1,7 @@
 ---
-title: 步驟 4：加入 CheckTheAnswer() 方法
-ms.custom: ''
+title: 步驟 4：新增 CheckTheAnswer() 方法
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
 ms.topic: conceptual
 ms.assetid: c66f3831-b4a0-40bc-a109-8f46f4db35ed
 author: TerryGLee
@@ -11,14 +9,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ff11913b854ede1c20c0670b89c4ea2f50fd326e
-ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
+ms.openlocfilehash: 694336b0012a8f67e732744cfd34cebf9c6f411a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32064515"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53892556"
 ---
-# <a name="step-4-add-the-checktheanswer-method"></a>步驟 4：加入 CheckTheAnswer() 方法
+# <a name="step-4-add-the-checktheanswer-method"></a>步驟 4：新增 CheckTheAnswer() 方法
 在本教學課程的第四個部分中，您將撰寫 `CheckTheAnswer()` 這個方法，用於判斷數學問題的答案是否正確。 這個主題是有關基本程式碼撰寫概念的教學課程系列的一部分。 如需教學課程的概觀，請參閱[教學課程 2：建立計時的數學測驗](../ide/tutorial-2-create-a-timed-math-quiz.md)。  
   
 > [!NOTE]
@@ -51,6 +49,6 @@ ms.locfileid: "32064515"
 
 ## <a name="to-continue-or-review"></a>若要繼續或檢視  
   
--   若要移到下一個教學課程步驟，請參閱[步驟 5：新增 NumericUpDown 控制項的 Enter 事件處理常式](../ide/step-5-add-enter-event-handlers-for-the-numericupdown-controls.md)。  
+-   若要前往下一個教學課程步驟，請參閱[步驟 5：新增 NumericUpDown 控制項的 Enter 事件處理常式](../ide/step-5-add-enter-event-handlers-for-the-numericupdown-controls.md)。  
   
 -   若要回到上一個教學課程步驟，請參閱[步驟 3：新增倒數計時器](../ide/step-3-add-a-countdown-timer.md)。

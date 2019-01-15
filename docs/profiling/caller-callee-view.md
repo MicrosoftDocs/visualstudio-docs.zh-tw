@@ -1,8 +1,6 @@
 ---
 title: 呼叫端-被呼叫端檢視 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.view.callercallee
@@ -17,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 973c65927e3732cff44ab8eecb684f3c75af8614
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: f3e349437ddf785ae8ec57b4625cb97f4427b57f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34264290"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53830033"
 ---
 # <a name="callercallee-view"></a>呼叫端/被呼叫端檢視
 [呼叫端/被呼叫端] 檢視會顯示所選取函式及其父函式和子函式的分析資訊。 [呼叫端/被呼叫端] 檢視包含三個方格：  
@@ -37,7 +35,7 @@ ms.locfileid: "34264290"
   
  您可以選取不同的函式，讓函式成為 [報表] 檢視中間[目前的函式]，只要連按兩下檢視其他兩個部分中所列出的其中一個函式即可。 [報表] 檢視會自動更新以反映變更。  
   
- 您可以按一下資料行名稱來排序資料。 [呼叫端/被呼叫端] 檢視可以加入其他資料行。 如需詳細資訊，請參閱[如何：自訂報表檢視資料行](../profiling/how-to-customize-report-view-columns.md)。  
+ 您可以按一下資料行名稱來排序資料。 [呼叫端/被呼叫端] 檢視可以加入其他資料行。 如需詳細資訊，請參閱[＜How to：自訂報表檢視資料行](../profiling/how-to-customize-report-view-columns.md)。  
   
 ## <a name="see-also"></a>另請參閱  
  [呼叫端/被呼叫端檢視 - 取樣資料](../profiling/caller-callee-view-sampling-data.md)   

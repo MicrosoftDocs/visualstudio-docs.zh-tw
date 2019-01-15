@@ -1,9 +1,7 @@
 ---
-title: 步驟 5：將控制項加入至您的表單
-ms.custom: ''
+title: 步驟 5：將控制項新增至表單
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
 ms.topic: conceptual
 ms.assetid: dc2746f4-0b5c-4674-9ef7-f40f94150f52
 author: TerryGLee
@@ -11,17 +9,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a7a0167d4d5af125e706350002ccf8a17e459414
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: bd07924f98c969340fbe2c7ccb88f4227a61026b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34748552"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53968426"
 ---
-# <a name="step-5-add-controls-to-your-form"></a>步驟 5：將控制項加入至您的表單
+# <a name="step-5-add-controls-to-your-form"></a>步驟 5：將控制項新增至表單
 在這個步驟中，您要將控制項 (例如 <xref:System.Windows.Forms.PictureBox> 控制項和 <xref:System.Windows.Forms.CheckBox> 控制項) 新增至表單。 然後將 <xref:System.Windows.Forms.Button> 控制項加入至表單。
 
- ![影片連結](../data-tools/media/playvideo.gif)如需觀看本主題的影片版本，請參閱[教學課程 1：使用 Visual Basic 建立圖片檢視器 - 影片 2](http://go.microsoft.com/fwlink/?LinkId=205211) 或[教學課程 1：使用 C# 建立圖片檢視器 - 影片 2](http://go.microsoft.com/fwlink/?LinkId=205200)。 這些影片使用舊版 Visual Studio，因此有一些功能表命令以及某些使用者介面項目會有些微差異。 不過，概念和程序在目前 Visual Studio 版本中的運作方式雷同。
+ ![影片連結](../data-tools/media/playvideo.gif)如需本主題的影片版本，請參閱[教學課程 1：Create a picture viewer in Visual Basic - Video 2](http://go.microsoft.com/fwlink/?LinkId=205211) (教學課程 1：在 Visual Basic 中建立圖片檢視器 - 影片 2) 或 [Tutorial 1:Create a picture viewer in C# - Video 2](http://go.microsoft.com/fwlink/?LinkId=205200) (教學課程 1：在 C# 中建立圖片檢視器 - 影片 2)。 這些影片使用舊版 Visual Studio，因此有一些功能表命令以及某些使用者介面項目會有些微差異。 不過，概念和程序在目前 Visual Studio 版本中的運作方式雷同。
 
 ## <a name="to-add-controls-to-your-form"></a>若要將控制項加入至表單
 
@@ -81,6 +79,6 @@ ms.locfileid: "34748552"
 
 ## <a name="to-continue-or-review"></a>若要繼續或檢視
 
--   若要移到下一個教學課程步驟，請參閱[步驟 6：命名您的按鈕控制項](../ide/step-6-name-your-button-controls.md)。
+-   若要前往下一個教學課程步驟，請參閱[步驟 6：命名按鈕控制項](../ide/step-6-name-your-button-controls.md)。
 
--   若要回到上一個教學課程步驟，請參閱[步驟 4：使用 TableLayoutPanel 控制項來配置您的表單](../ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md)。
+-   若要回到上一個教學課程步驟，請參閱[步驟 4：使用 TableLayoutPanel 控制項來配置表單](../ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md)。

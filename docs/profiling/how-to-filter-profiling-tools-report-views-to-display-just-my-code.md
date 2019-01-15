@@ -1,22 +1,20 @@
 ---
-title: 如何：篩選程式碼剖析工具報表檢視以顯示 Just My Code | Microsoft Docs
-ms.custom: ''
+title: HOW TO：篩選分析工具報表檢視以顯示 Just My Code | Microsoft Docs
 ms.date: 02/15/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 author: mikejo5000
 ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b1e2291ff5c4b7ff072e45df9e2d32768011bca
-ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
+ms.openlocfilehash: c04132dde3f668c007c8fc0bf750c434baa81bbf
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34815778"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53925020"
 ---
-# <a name="how-to-filter-profiling-tools-report-views-to-display-just-my-code"></a>如何：篩選分析工具報表檢視以顯示 Just My Code
+# <a name="how-to-filter-profiling-tools-report-views-to-display-just-my-code"></a>HOW TO：篩選分析工具報表檢視以顯示 Just My Code
 
 Visual Studio 可提供效能報告篩選，以便只顯示您已實作的程式碼。 此功能 (名為 Just My Code) 預設為啟用。 它是透過 [選項] 對話方塊中的 [Just My Code] 選項設定。
 

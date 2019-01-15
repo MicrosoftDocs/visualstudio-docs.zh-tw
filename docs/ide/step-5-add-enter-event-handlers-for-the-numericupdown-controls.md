@@ -1,9 +1,7 @@
 ---
-title: 步驟 5：加入 NumericUpDown 控制項的事件處理常式
-ms.custom: ''
+title: 步驟 5：新增 NumericUpDown 控制項的 Enter 事件處理常式
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
 ms.topic: conceptual
 ms.assetid: 45a99a5d-c881-4298-b74d-adb481dec5ee
 author: TerryGLee
@@ -11,14 +9,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e05d6cc201819d37e77587529ffd79a740003a10
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 393e43a44045f4551fbf567f1de037e77dbae00e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34747915"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53846895"
 ---
-# <a name="step-5-add-enter-event-handlers-for-the-numericupdown-controls"></a>步驟 5：加入 NumericUpDown 控制項的事件處理常式
+# <a name="step-5-add-enter-event-handlers-for-the-numericupdown-controls"></a>步驟 5：新增 NumericUpDown 控制項的 Enter 事件處理常式
 在本教學課程的第五個部分中，您將加入 <xref:System.Windows.Forms.Control.Enter> 事件處理常式，讓輸入測驗問題的答案時更加容易。 只要受測者選擇並開始輸入不同的值，這個程式碼就會選取並清除每個 <xref:System.Windows.Forms.NumericUpDown> 控制項中的目前值。
 
 > [!NOTE]
@@ -72,6 +70,6 @@ ms.locfileid: "34747915"
 
 ## <a name="to-continue-or-review"></a>若要繼續或檢視
 
--   若要移到下一個教學課程步驟，請參閱[步驟 6：新增減法問題](../ide/step-6-add-a-subtraction-problem.md)。
+-   若要前往下一個教學課程步驟，請參閱[步驟 6：新增減法問題](../ide/step-6-add-a-subtraction-problem.md)。
 
--   若要回到上一個教學課程步驟，請參閱[步驟 4︰新增 CheckTheAnswer() 方法](../ide/step-4-add-the-checktheanswer-parens-method.md)。
+-   若要回到上一個教學課程步驟，請參閱[步驟 4：新增 CheckTheAnswer() 方法](../ide/step-4-add-the-checktheanswer-parens-method.md)。

@@ -1,8 +1,6 @@
 ---
-title: 如何：限制檢測特定 DLL | Microsoft Docs
-ms.custom: ''
+title: HOW TO：限制檢測特定 DLL | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - performance tools, runtime profiling control window
@@ -11,14 +9,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: aefa0d5953d1e8d61615ac5bfe0af136082c96f3
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: c20dde749f95a24c6d83c7b6693220a5552f89fe
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34843945"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53885164"
 ---
-# <a name="how-to-limit-instrumentation-to-specific-dlls"></a>如何：限制檢測特定 DLL
+# <a name="how-to-limit-instrumentation-to-specific-dlls"></a>HOW TO：限制檢測特定 DLL
 
 您可以藉由使用檢測程式碼剖析方法，將程式碼剖析資料的收集限制在應用程式中的一或多個 DLL。 若要對應用程式中的一或多個 DLL 進行分析，請建立包含 .*dll* 檔案作為目標的效能工作階段。 您可以將要進行分析的 DLL 指定成 Visual Studio 方案中的專案，或是指定成獨立的二進位檔案。
 
@@ -72,4 +70,4 @@ ms.locfileid: "34843945"
 ## <a name="see-also"></a>另請參閱
 
 [控制資料收集](../profiling/controlling-data-collection.md)  
-[操作說明：限制檢測特定函式](../profiling/how-to-limit-instrumentation-to-specific-functions.md)
+[如何：限制檢測特定函式](../profiling/how-to-limit-instrumentation-to-specific-functions.md)

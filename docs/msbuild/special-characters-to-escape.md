@@ -1,8 +1,6 @@
 ---
 title: 要逸出的特殊字元 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 dev_langs:
 - VB
@@ -18,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a57316904aa1075484a4d33c6e2259586c88fe78
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: dc3c69553912a8881e56c5b33d5d5afa3ef5e4fc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39151376"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53847109"
 ---
 # <a name="special-characters-to-escape"></a>要逸出的特殊字元
 只有正在使用特殊字元的內容中，特殊字元具有特殊意義時，才必須逸出。 例如，星號 (*) 只有在項目定義的 "Include" 和 "Exclude" 屬性中，或是呼叫  <xref:Microsoft.Build.Tasks.CreateItem> 時，才是特殊字元。 在其他情況下，星號會視為星號常值。 雖然您不需要逸出專案檔中的所有星號，但要這麼做也無妨。  
@@ -32,7 +30,7 @@ ms.locfileid: "39151376"
   
  要逸出的特殊字元完整清單如下：  
   
-|字元|描述|  
+|字元|說明|  
 |---------------|-----------------|  
 |%|百分比符號，用以參考中繼資料。|  
 |$|錢幣符號，用以參考屬性。|  

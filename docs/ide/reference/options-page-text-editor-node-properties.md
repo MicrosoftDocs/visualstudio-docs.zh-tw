@@ -2,7 +2,6 @@
 title: 文字編輯器節點屬性、選項頁
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 helpviewer_keywords:
 - Tools Options settings, Text Editor node properties
@@ -13,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e16bdece503babe9a50bc83d64da582d390843b6
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 3339884fe14b0dbc40fe9297f06b0462696b8040
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50670815"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53935667"
 ---
 # <a name="options-page-text-editor-node-properties"></a>文字編輯器節點屬性、選項頁
 本文件描述與 [選項] 對話方塊的 [文字編輯器] 分類 `DTE.Properties("TextEditor", <Property Page>)` 相關聯的一些頁面 (或屬性集合)。 每一小節的標題就是用來存取 `Properties` 集合的呼叫，而每一小節中的表格會列出集合中的屬性。
@@ -28,7 +27,7 @@ ms.locfileid: "50670815"
 ## <a name="general"></a>一般
  `DTE.Properties("TextEditor", "General")`
 
-|屬性項目名稱|值|描述|
+|屬性項目名稱|值|說明|
 | - |-----------|-----------------|
 |GoToAnchorAfterEscape|Get/Set (布林值)|如果為 `True`，在有選取範圍時按 Escape 鍵會將插入點移至建立選取範圍這個動作的起始位置。 如果為 `False`，則會將插入點移至選取範圍的結束位置。|
 |DragNDropTextEditing|Get/Set (布林值)|決定您能否在文件中拖曳選取的文字區域，執行複製或剪貼作業。|
@@ -47,7 +46,7 @@ ms.locfileid: "50670815"
 
  `PlainText` 編輯器選項會影響編輯文字檔時的編輯器設定。 每個程式語言和 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 套件都有各自特定的 [文字編輯器] 設定。 例如，若要檢視或變更 [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] 的編輯器設定，請使用 `DTE.Properties("TextEditor", "CSharp") or DTE.Properties("TextEditor", "CSharp-Specific")`。 [SQL 指令碼] 編輯器設定請使用 `DTE.Properties("TextEditor", "SQL ")`。
 
-|屬性項目名稱|值|描述|
+|屬性項目名稱|值|說明|
 | - |-----------|-----------------|
 |AutoListMembers|Get/Set (布林值)|決定當使用者在變數參考後面輸入句號時，是否自動顯示可用的成員清單|
 |AutoListParams|Get/Set (布林值)|決定當使用者在函式名稱後面輸入 "(" 時，是否自動顯示引數清單描述|
@@ -56,7 +55,7 @@ ms.locfileid: "50670815"
 |WordWrap|Get/Set (布林值)|決定檢視表是否在字組界限處自動為長行換行。 如果將此屬性項目設定為 `true`，則會將此清單中的 `VirtualSpace` 屬性項目設定為 `false`|
 |WordWrapGlyphs|Get/Set (布林值)|在一行的結尾顯示圖像；這表示該行會換行至下一行。|
 |EnableLeftClickForURLs|Get/Set (布林值)|決定編輯器是否為 URL 加底線，以及是否只要按一下滑鼠左鍵即可跳至系統登錄之網頁瀏覽器中的 URL。|
-|IndentStyle|Get/Set (<xref:EnvDTE.vsIndentStyle>)|判斷縮排樣式：預設、智慧或無。|
+|IndentStyle|Get/Set (<xref:EnvDTE.vsIndentStyle>)|決定縮排樣式：[預設]、[智慧] 或 [無]。|
 |TabSize|Get/Set (長整數)|表示一個定位點相當於幾個空格。如果設定的整數超出 1 到 60 (含) 的範圍就會失敗|
 |InsertTabs|Get/Set (布林值)|如果為 `True`，則縮排時會使用定位字元|
 |IndentSize|Get/Set (長整數)|表示一個縮排層次相當於幾個空格。 如果設定的整數值超出 1 到 60 (含) 的範圍就會失敗|

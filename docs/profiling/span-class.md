@@ -1,8 +1,6 @@
 ---
 title: span 類別 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - cvmarkersobj/Concurrency::diagnostic::span
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c1a33a99b129cd4a0fa1969553d55c81af310295
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: b1a430ebba3435673c90f85c6270c308c58612d9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35668303"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53893914"
 ---
 # <a name="span-class"></a>span 類別
 定義應用程式階段。  
@@ -34,7 +32,7 @@ class span;
   
 ### <a name="public-constructors"></a>公用建構函式  
   
-|名稱|描述|  
+|名稱|說明|  
 |----------|-----------------|  
 |[span::span 建構函式](../profiling/span-span-constructor.md)|初始化 `span` 類別的新執行個體。|  
 |[span::~span 解構函式](../profiling/span-tilde-span-destructor.md)|終結 `span` 物件，並釋放其資源。|  

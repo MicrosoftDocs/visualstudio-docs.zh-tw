@@ -1,8 +1,6 @@
 ---
-title: 如何︰指定 .NET Framework 執行階段 | Microsoft Docs
-ms.custom: ''
+title: HOW TO：指定 .NET Framework 執行階段 | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Profiling Tools, .NET Framework versions
@@ -13,14 +11,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: e85e1c571ecb900d5ce7ffdecf8e85b8c367de5c
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: 6baa0e37acb4ba24d0622ad27fe84c47e84da59d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34844130"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53911009"
 ---
-# <a name="how-to-specify-the-net-framework-runtime"></a>如何：指定 .NET Framework 執行階段
+# <a name="how-to-specify-the-net-framework-runtime"></a>HOW TO：指定 .NET Framework 執行階段
 
 使用 [!INCLUDE[net_v40_long](../code-quality/includes/net_v40_long_md.md)] 版本，應用程式就可以由使用不同版本的 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 執行階段所建置的模組組成。 根據預設，Visual Studio 分析工具預設會對應用程式所載入的第一個執行階段進行分析。 當您以程式碼剖析工具啟動應用程式時，以及當您將程式碼剖析工具附加至已在執行的應用程式時，都可以指定要進行程式碼剖析的執行階段。
 

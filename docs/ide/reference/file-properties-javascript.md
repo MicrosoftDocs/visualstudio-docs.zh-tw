@@ -2,7 +2,6 @@
 title: JavaScript、檔案屬性
 ms.date: 06/21/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - javascript.project.property.expandedsdknode.fileversion
@@ -27,17 +26,17 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: db9809c48b9226e05b7617c860af524b1ac6daf6
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 8706264733faf147c2f53ffceff401ca42432d6b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31947920"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53910226"
 ---
 # <a name="file-properties-javascript"></a>JavaScript、檔案屬性
 您可以使用檔案屬性，指出專案系統應該對檔案執行哪些動作。 例如，您可以設定檔案屬性，指出是否應該將檔案新增至套件以作為資源檔。
 
- 您可以在方案總管中選取任何檔案，然後在 [屬性] 視窗中檢查其屬性。 JavaScript 檔案有四個屬性：[複製到輸出目錄]、[套件動作]、[檔案名稱] 和 [檔案路徑]。
+ 您可以在方案總管中選取任何檔案，然後在 [屬性] 視窗中檢查其屬性。 JavaScript 檔案具有四個屬性：[複製到輸出目錄]、[套件動作]、[檔案名稱] 和 [檔案路徑]。
 
 ## <a name="file-properties"></a>檔案內容
  此區段描述 JavaScript 檔案的共用屬性。

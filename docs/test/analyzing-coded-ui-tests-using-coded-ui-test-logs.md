@@ -2,19 +2,18 @@
 title: 使用自動程式化 UI 測試記錄分析自動程式化 UI 測試
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 9c31dd90981cf39f1de296b2c96d6064afc730b4
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 7a0913159b59e12c4491331a123045074cbea35f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52896675"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53944956"
 ---
 # <a name="analyzing-coded-ui-tests-using-coded-ui-test-logs"></a>使用自動程式化 UI 測試記錄分析自動程式化 UI 測試
 
@@ -90,4 +89,4 @@ ms.locfileid: "52896675"
 ## <a name="see-also"></a>另請參閱
 
 - [使用 UI 自動化來測試您的程式碼](../test/use-ui-automation-to-test-your-code.md)
-- [如何：從 Microsoft Visual Studio 執行測試](https://msdn.microsoft.com/Library/1a1207a9-2a33-4a1e-a1e3-ddf0181b1046)
+- [如何：Run tests from Microsoft Visual Studio](https://msdn.microsoft.com/Library/1a1207a9-2a33-4a1e-a1e3-ddf0181b1046) (如何：從 Microsoft Visual Studio 執行測試)

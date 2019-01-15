@@ -1,8 +1,6 @@
 ---
 title: 儲存和匯出效能工具資料 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - performance tools, saving and exporting reports
@@ -12,17 +10,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8136369a09145c46c7989bebe12796642851a7b0
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 9bb2020ff396eef3dd9dad4c0ed2e2fd015e0fd6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35668348"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53838368"
 ---
 # <a name="save-and-export-performance-tools-data"></a>儲存和匯出效能工具資料
 本文描述如何儲存和匯出效能資料檔案。  
   
-## <a name="how-to-save-performance-data-files-as-analyzed-report-files"></a>如何︰將效能資料檔案儲存為分析的報告檔案  
+## <a name="how-to-save-performance-data-files-as-analyzed-report-files"></a>HOW TO：將效能資料檔案儲存為分析的報表檔案  
  您可以將分析資料 (.*vsp*) 檔案的已篩選或未篩選檢視儲存為分析的報告 (.*vsps*) 檔案。 分析的報告檔案可以在 [報表] 檢視視窗中檢視，且比原始 .*vsp* 檔案小得多。 不過，您無法將篩選套用至 .*vsps* 檔案的資料。 您可以從 [效能總管] 建立分析的報告檔案，而不須在整合式的開發環境 (IDE) 中開啟檔案，或者您可以開啟並篩選 .*vsp* 檔案，然後儲存結果。  
   
 #### <a name="to-save-an-analyzed-performance-report-from-the-performance-explorer"></a>從 [效能總管] 儲存分析的效能報告  
@@ -45,7 +43,7 @@ ms.locfileid: "35668348"
   
 5.  按一下 [儲存]   
   
-## <a name="how-to-export-profiling-tools-reports-to-an-xml-or-csv-file"></a>如何︰將分析工具報告匯出至 .xml 或 .csv 檔案  
+## <a name="how-to-export-profiling-tools-reports-to-an-xml-or-csv-file"></a>HOW TO：將分析工具報表匯出為 .xml 或 .csv 檔案  
  您可以從 .*vsp* 檔案或 .*vsps* 分析資料檔案將一或多個報告檢視匯出為逗點分隔的檔案或 XML 檔案。 您可於匯出前，在 [報告] 檢視視窗中篩選資料，或是從 [效能總管]  視窗匯出整個資料檔案的報告檢視。  
   
 > [!NOTE]

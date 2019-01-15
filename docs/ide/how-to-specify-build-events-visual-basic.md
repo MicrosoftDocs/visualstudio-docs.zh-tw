@@ -1,8 +1,7 @@
 ---
-title: 如何：指定建置事件 (Visual Basic)
+title: HOW TO：指定建置事件 (Visual Basic)
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - pre-build events
@@ -16,14 +15,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 24eb6d7637f949abf60eeb2d0659fac1bfa1cae7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 60f1ab9444c38514646a5ef1147b3f1b0473289e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49831729"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53828861"
 ---
-# <a name="how-to-specify-build-events-visual-basic"></a>如何：指定建置事件 (Visual Basic)
+# <a name="how-to-specify-build-events-visual-basic"></a>HOW TO：指定建置事件 (Visual Basic)
 
 在 Visual Basic 中的建置事件可以用來執行指令碼、巨集或編譯處理程序當中的其他動作。 編譯之前發生的是建置前事件；編譯之後發生的則是建置後事件。
 
@@ -50,7 +49,7 @@ ms.locfileid: "49831729"
     > [!NOTE]
     > 如果您的建置前或建置後事件未順利完成，您可以將代碼不為零 (0) 的事件動作結束 (若為 0 表示動作成功)，以終止建置。
 
-## <a name="example-how-to-change-manifest-information-using-a-post-build-event"></a>範例：如何使用建置後事件變更資訊清單
+## <a name="example-how-to-change-manifest-information-using-a-post-build-event"></a>範例：如何使用建置後事件變更資訊清單資訊
 
 下列程序示範如何使用從建置後事件呼叫的 *.exe* 命令 (專案目錄中的 *.exe.manifest* 檔案)，設定應用程式資訊清單中的最低作業系統版本。 最低作業系統版本是由四組號碼來表示，例如 4.10.0.0。 若要進行上述作業，請使用命令來變更資訊清單的 `<dependentOS>` 區段：
 

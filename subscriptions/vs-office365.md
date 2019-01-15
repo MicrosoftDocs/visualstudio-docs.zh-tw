@@ -9,20 +9,20 @@ description: 了解某些 Visual Studio 訂用帳戶中所含的 Office 365 權�
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: eef2adf189650da528c2f76df88ff8b648ad7ba4
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: d68c8847dc9ab6f4daeaceb07dbd4023ca2148f5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53802104"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53968387"
 ---
-# <a name="office-365-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶中的 Office 365
+# <a name="office-365-pro-plus-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶中的 Office 365 Pro Plus
 
-建立您最好的作品。 使用永遠都會更新的應用程式在任何地方工作。 Office 365 是一個進階應用程式 (例如 Word、Excel、PowerPoint、OneNote、Outlook、Publisher 及 Access) 隨附的訂用帳戶 (Publisher 與 Access 只能在 PC 上使用)。 應用程式可以安裝在多部裝置上，包括電腦、Mac、iPad、iPhone、Android 平板電腦與 Android 手機。 Office 365 也隨附許多服務 (例如 1TB 的 OneDrive 儲存空間、每個月 60 分鐘 Skype，以及 Microsoft 聊天和電話支援)。 擁有訂用帳戶，您就可以取得最新版的應用程式，並且在有更新時自動收到更新。
+建立您最好的作品。 使用永遠都會更新的應用程式在任何地方工作。 Office 365 Pro Plus 是一個進階應用程式 (例如 Word、Excel、PowerPoint、OneNote、Outlook、Publisher 及 Access) 隨附的訂用帳戶 (Publisher 與 Access 只能在 PC 上使用)。 應用程式可以安裝在多部裝置上，包括電腦、Mac、iPad、iPhone、Android 平板電腦與 Android 手機。 Office 365 也隨附許多服務 (例如 1TB 的 OneDrive 儲存空間、每個月 60 分鐘 Skype，以及 Microsoft 聊天和電話支援)。 擁有訂用帳戶，您就可以取得最新版的應用程式，並且在有更新時自動收到更新。
 
-## <a name="getting-started-with-office-365"></a>開始使用 Office 365
+## <a name="getting-started-with-office-365-pro-plus"></a>開始使用 Office 365 Pro Plus
 
-遵循下列步驟下載並啟用 Office 365：
+遵循下列步驟下載並啟用 Office 365 Pro Plus：
 1. 登入您的 Visual Studio Enterprise 訂用帳戶。  
 2. 按一下 [下載] 索引標籤。
 3. 您會看到一份精選下載的清單。 在 Office 清單中，選擇 **Office 365**。 

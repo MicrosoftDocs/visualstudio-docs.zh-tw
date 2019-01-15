@@ -3,19 +3,18 @@ title: R 的遠端工作區
 description: 如何設定遠端 R 工作區並從 Visual Studio 連線到工作區。
 ms.date: 12/04/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-rtvs
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 207e4c2d6e7db9dd40288306b3a87086c4568f76
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6a5dfb136c975634bd4f8915d1f5eb1c9d023e98
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49827710"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53837780"
 ---
 # <a name="set-up-remote-workspaces"></a>設定遠端工作區
 
@@ -171,13 +170,13 @@ RTVS 需要所有與遠端伺服器通訊均透過 HTTP，而這需要伺服器�
 
 在遠端電腦上執行 R 服務，也需要建立使用者帳戶、設定防火牆規則、設定 Azure 網路功能，以及設定 SSL 憑證。
 
-1. 使用者帳戶︰為每位存取遠端電腦的使用者建立帳戶。 您可以建立標準的 (不具權限) 本機使用者帳戶，或者將 R 伺服器電腦加入您的網域，並將適當的安全性群組新增至 `Users` 安全性群組。
+1. 使用者帳戶：為每位存取遠端電腦的使用者建立帳戶。 您可以建立標準的 (不具權限) 本機使用者帳戶，或者將 R 伺服器電腦加入您的網域，並將適當的安全性群組新增至 `Users` 安全性群組。
 
-1. 防火牆規則︰根據預設，`R Host Broker` 會接聽 TCP 通訊埠 5444。 因此，請確定傳入和傳出流量皆已啟用 Windows 防火牆規則 (安裝套件和類似案例需要傳出)。  R 服務安裝程式會為內建的 Windows 防火牆自動設定這些規則。 不過，如果您使用協力廠商防火牆，請手動開啟連接埠 5444 供 `R Host Broker` 使用。
+1. 防火牆規則：根據預設，`R Host Broker` 會接聽 TCP 通訊埠 5444。 因此，請確定傳入和傳出流量皆已啟用 Windows 防火牆規則 (安裝套件和類似案例需要傳出)。  R 服務安裝程式會為內建的 Windows 防火牆自動設定這些規則。 不過，如果您使用協力廠商防火牆，請手動開啟連接埠 5444 供 `R Host Broker` 使用。
 
-1. Azure 組態︰如果您的遠端電腦是 Azure 的虛擬機器，請也開啟連接埠 5444 供 Azure 網路的連入流量使用，它不受 Windows 防火牆影響。 如需詳細資訊，請參閱 Azure 文件的[使用網路安全性群組來篩選網路流量](https://docs.microsoft.com/azure/virtual-network/virtual-networks-nsg)。
+1. Azure 組態：如果您的遠端電腦是 Azure 虛擬機器，請也開啟連接埠 5444 供 Azure 網路的連入流量使用，它不受 Windows 防火牆影響。 如需詳細資訊，請參閱 Azure 文件的[使用網路安全性群組來篩選網路流量](https://docs.microsoft.com/azure/virtual-network/virtual-networks-nsg)。
 
-1. 通知 R 主機訊息代理程式要載入的 SSL 憑證︰如果您要在內部網路伺服器上安裝憑證，則您伺服器的完整網域名稱很可能與其 NETBIOS 名稱相同。 在此情況下，您不需要做任何事，因為這是載入的預設憑證。
+1. 通知 R 主機訊息代理程式要載入的 SSL 憑證：如果您要在內部網路伺服器上安裝憑證，則您伺服器的完整網域名稱很可能與其 NETBIOS 名稱相同。 在此情況下，您不需要做任何事，因為這是載入的預設憑證。
 
     不過，如果您要在網際網路伺服器 (例如 Azure VM) 上安裝憑證，請使用伺服器的完整網域名稱 (FQDN)，因為網際網路伺服器的 FQDN 與其 NETBIOS 名稱絕不會相同。
 

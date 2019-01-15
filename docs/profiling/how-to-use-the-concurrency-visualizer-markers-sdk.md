@@ -1,8 +1,6 @@
 ---
 title: 如何：使用並行視覺化檢視標記 SDK | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 19a45032-f8a7-4137-890e-2ceeec938b8d
 author: mikejo5000
@@ -10,12 +8,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a608c5539e905ba7836f4dcfb5e785dc9630c28a
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: 82815ea756d7f7ae72f15d46c5418adb8eb72c80
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34844536"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53933589"
 ---
 # <a name="how-to-use-the-concurrency-visualizer-markers-sdk"></a>如何：使用並行視覺化檢視標記 SDK
 本主題說明如何使用並行視覺化檢視 SDK 建立範圍和寫入旗標、訊息和警示。  

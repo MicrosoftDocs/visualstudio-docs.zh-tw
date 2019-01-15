@@ -2,7 +2,6 @@
 title: 服務對話方塊的進階設定
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - vb.ProjectPropertiesAdvancedServices
@@ -14,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 78cc44d71b1f9cb2f449d4aafdff22271b1c63ab
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 251a78ebe56a9ba2c88444da879970c590ece029
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31946594"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53917221"
 ---
 # <a name="advanced-settings-for-services-dialog-box"></a>服務對話方塊的進階設定
 用戶端應用程式服務簡化了從 Windows Forms 和 Windows Presentation Foundation (WPF) 應用程式對 [!INCLUDE[ajax_current_short](../../ide/reference/includes/ajax_current_short_md.md)] 登入、角色和設定檔服務的存取。 您可以使用 [專案設計工具] 的 [服務] 頁面來設定用戶端應用程式服務。 如需 [服務] 頁面的詳細資訊，請參閱[專案設計工具、服務頁](../../ide/reference/services-page-project-designer.md)。
@@ -42,7 +41,7 @@ ms.locfileid: "31946594"
 
  當您呼叫 <xref:System.Web.Security.RolePrincipal.IsInRole%2A> 方法時，角色提供者會存取已快取的角色值或角色服務。 若要以程式設計方式清除快取，並強制執行這個方法以存取遠端服務，請呼叫 <xref:System.Web.ClientServices.Providers.ClientRoleProvider.ResetCache%2A> 方法。
 
- **使用自訂連接字串** 指定用戶端服務提供者是否將使用自訂資料存放區來進行本機快取。 根據預設，服務提供者將使用本機檔案系統來進行快取。 選取此選項將自動以預設連接字串填入文字方塊。 您可以讓預設連接字串繼續自動產生及使用 SQL Server Compact Edition 資料庫，也可以指定現有 SQL Server 資料庫的連接字串。 如需詳細資訊，請參閱[如何：設定用戶端應用程式服務](/dotnet/framework/common-client-technologies/how-to-configure-client-application-services)。 預設會清除這個選項。
+ **使用自訂連接字串** 指定用戶端服務提供者是否將使用自訂資料存放區來進行本機快取。 根據預設，服務提供者將使用本機檔案系統來進行快取。 選取此選項將自動以預設連接字串填入文字方塊。 您可以讓預設連接字串繼續自動產生及使用 SQL Server Compact Edition 資料庫，也可以指定現有 SQL Server 資料庫的連接字串。 如需詳細資訊，請參閱[＜How to：設定用戶端應用程式服務](/dotnet/framework/common-client-technologies/how-to-configure-client-application-services)。 預設會清除這個選項。
 
 ## <a name="see-also"></a>另請參閱
 

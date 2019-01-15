@@ -1,8 +1,6 @@
 ---
-title: 如何：指定要優先建置的目標 | Microsoft Docs
-ms.custom: ''
+title: HOW TO：指定要優先建置的目標 | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - DefaultTargets attribute [MSBuild]
@@ -14,14 +12,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d73ef1935f01a48d756ce39df934f3afa83c2d30
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e1ba67ee5a4ea6831d21163b467f5d638a6f16c5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49864838"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53967027"
 ---
-# <a name="how-to-specify-which-target-to-build-first"></a>如何：指定要優先建置的目標
+# <a name="how-to-specify-which-target-to-build-first"></a>HOW TO：指定要優先建置的目標
 專案檔可以包含一或多個 `Target` 項目來定義專案的建置方式。 除非專案檔內含 `DefaultTargets` 屬性、`InitialTargets` 屬性，或在命令列中使用 **-target** 參數來指定目標，否則 [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]) 引擎會建置它找到的第一個專案以及任何相依性。  
   
 ## <a name="use-the-initialtargets-attribute"></a>使用 InitialTargets 屬性  
@@ -29,7 +27,7 @@ ms.locfileid: "49864838"
   
 #### <a name="to-specify-one-initial-target"></a>指定一個初始目標  
   
-- 在 `Project` 項目的 `InitialTargets` 屬性中，指定預設的目標。 例如:   
+- 在 `Project` 項目的 `InitialTargets` 屬性中，指定預設的目標。 例如：  
   
    `<Project InitialTargets="Clean">`  
   
@@ -46,7 +44,7 @@ ms.locfileid: "49864838"
   
 #### <a name="to-specify-one-default-target"></a>指定一個預設目標  
   
-- 在 `Project` 項目的 `DefaultTargets` 屬性中，指定預設的目標。 例如:   
+- 在 `Project` 項目的 `DefaultTargets` 屬性中，指定預設的目標。 例如：  
   
    `<Project DefaultTargets="Compile">`  
   
@@ -64,13 +62,13 @@ ms.locfileid: "49864838"
  
 #### <a name="to-use-a-target-other-than-the-default-target-first"></a>優先使用非預設的目標  
   
--   使用 **-target** 命令列參數，將目標指定為第一個目標。 例如:   
+-   使用 **-target** 命令列參數，將目標指定為第一個目標。 例如：  
   
      `msbuild file.proj -target:Clean`  
   
 #### <a name="to-use-several-targets-other-than-the-default-targets-first"></a>優先使用預設目標以外的數個目標  
   
--   使用 **-target** 命令列參數，列出以分號或逗號分隔的目標。 例如:   
+-   使用 **-target** 命令列參數，列出以分號或逗號分隔的目標。 例如：  
   
      `msbuild <file name>.proj -t:Clean;Compile`  
   

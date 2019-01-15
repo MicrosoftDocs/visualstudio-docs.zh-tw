@@ -2,7 +2,6 @@
 title: C# 專案屬性應用程式頁面
 ms.date: 10/30/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - cs.ProjectPropertiesApplicationWPF
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6ac755bfab72a2e87b652bfb92d3343b46ff45dc
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: cd8b2de9d4e878a524ee5c1e012e26c8d2224957
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50672817"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53850923"
 ---
 # <a name="application-page-project-designer-c"></a>專案設計工具，應用程式頁 (C#)
 
@@ -59,7 +58,7 @@ ms.locfileid: "50672817"
 > [!NOTE]
 > 第一次開啟該對話方塊時，會自動設定[必要條件對話方塊](../../ide/reference/prerequisites-dialog-box.md)中所列的必要條件套件。 如果您接著變更專案的目標架構，就必須手動選取必要條件以符合新的目標架構。
 
-如需詳細資訊，請參閱[如何：以 .NET Framework 版本為目標](../../ide/how-to-target-a-version-of-the-dotnet-framework.md)和 [Visual Studio 多目標概觀](../../ide/visual-studio-multi-targeting-overview.md)。
+如需詳細資訊，請參閱[＜How to：以 .NET Framework 版本為目標](../../ide/how-to-target-a-version-of-the-dotnet-framework.md)和 [Visual Studio 多目標概觀](../../ide/visual-studio-multi-targeting-overview.md)。
 
 **輸出類型**
 

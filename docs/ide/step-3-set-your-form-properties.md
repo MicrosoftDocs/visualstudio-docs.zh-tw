@@ -1,9 +1,7 @@
 ---
-title: 步驟 3：設定您的表單屬性
-ms.custom: ''
+title: 步驟 3：設定表單屬性
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
 ms.topic: conceptual
 ms.assetid: 634ef037-1525-48c8-ac7f-abf04be69376
 author: TerryGLee
@@ -11,17 +9,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c0cde54cb95c9e9d9cb237e8241425c70766e669
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c891a8aa535b9e2bc000f3d115b580f3a220a44b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49821263"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53968507"
 ---
-# <a name="step-3-set-your-form-properties"></a>步驟 3：設定您的表單屬性
+# <a name="step-3-set-your-form-properties"></a>步驟 3：設定表單屬性
 接下來，您要使用 [屬性] 視窗變更表單的外觀。
 
- ![影片連結](../data-tools/media/playvideo.gif)如需觀看本主題的影片版本，請參閱[教學課程 1：使用 Visual Basic 建立圖片檢視器 - 影片 1](http://go.microsoft.com/fwlink/?LinkId=205209) 或[教學課程 1：使用 C# 建立圖片檢視器 - 影片 1](http://go.microsoft.com/fwlink/?LinkId=205199)。 這些影片使用舊版 Visual Studio，因此有一些功能表命令以及某些使用者介面項目會有些微差異。 不過，概念和程序在目前 Visual Studio 版本中的運作方式雷同。
+ ![影片連結](../data-tools/media/playvideo.gif)如需本主題的影片版本，請參閱[教學課程 1：在 Visual Basic 中建立圖片檢視器 - 影片 1](http://go.microsoft.com/fwlink/?LinkId=205209) 或[教學課程 1：在 C# 中建立圖片檢視器 - 影片 1](http://go.microsoft.com/fwlink/?LinkId=205199)。 這些影片使用舊版 Visual Studio，因此有一些功能表命令以及某些使用者介面項目會有些微差異。 不過，概念和程序在目前 Visual Studio 版本中的運作方式雷同。
 
 ## <a name="to-set-your-form-properties"></a>若要設定您的表單屬性
 
@@ -71,6 +69,6 @@ ms.locfileid: "49821263"
 
 ## <a name="to-continue-or-review"></a>若要繼續或檢視
 
--   若要移至下一個教學課程步驟，請參閱[步驟 4：使用 TableLayoutPanel 控制項來配置您的表單](../ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md)。
+-   若要前往下一個教學課程步驟，請參閱[步驟 4：使用 TableLayoutPanel 控制項來配置表單](../ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md)。
 
--   若要返回上一個教學課程步驟，請參閱[步驟 2：執行您的程式](../ide/step-2-run-your-program.md)。
+-   若要回到上一個教學課程步驟，請參閱[步驟 2：執行程式](../ide/step-2-run-your-program.md)。

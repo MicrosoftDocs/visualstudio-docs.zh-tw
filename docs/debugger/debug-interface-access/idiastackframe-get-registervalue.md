@@ -1,8 +1,6 @@
 ---
 title: 'Idiastackframe:: Get_registervalue |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7799316a933e5f021df78699e41e6e9483746575
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: b0bb8f3a10bebbdaff489b2b628af2e1228fdf40
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49845949"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53985796"
 ---
 # <a name="idiastackframegetregistervalue"></a>IDiaStackFrame::get_registerValue
 擷取的值指定的暫存器儲存在堆疊框架中。  
@@ -43,6 +41,6 @@ HRESULT get_registerValue(
 ## <a name="return-value"></a>傳回值  
  如果成功，則傳回`S_OK`，否則會傳回錯誤碼。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)   
  [CV_HREG_e 列舉](../../debugger/debug-interface-access/cv-hreg-e.md)

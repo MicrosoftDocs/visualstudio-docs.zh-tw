@@ -2,7 +2,6 @@
 title: 如何建立和套用資源
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 f1_keywords:
 - VS.XamlDesigner.CreateResource
@@ -13,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 405b208df0aedffe69c9e476a5a31745faeb84f1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: df8c3a225b4e8f4e65826c1db0c806c716d8fb0f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49872560"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53903860"
 ---
 # <a name="how-to-create-and-apply-a-resource"></a>如何建立和套用資源
 XAML 設計工具中的項目樣式和樣板會儲存在可重複使用的實體中 (稱為資源)。 樣式可讓您設定項目屬性，並重複使用這些設定，以確保多個項目有一致的外觀。 [ControlTemplate](/uwp/api/Windows.UI.Xaml.Controls.ControlTemplate) 可以定義控制項的外觀，也可以當作資源來套用。 如需詳細資訊，請參閱[快速入門：設定控制項的樣式](http://go.microsoft.com/fwlink/?LinkID=248239)和[快速入門：控制項範本](http://go.microsoft.com/fwlink/?LinkID=247982)。

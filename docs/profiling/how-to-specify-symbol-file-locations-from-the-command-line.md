@@ -1,8 +1,6 @@
 ---
-title: 如何：從命令列指定符號檔位置 | Microsoft Docs
-ms.custom: ''
+title: HOW TO：從命令列指定符號檔位置 | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 8aa067bb-e8bf-4081-aff0-cfbcf65934a0
 author: mikejo5000
@@ -10,14 +8,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 498720ff5b76ce2c3229c9c7a493023318213ae4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0791019ce71a7d0fe6276ef9345284662ca31e00
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49941928"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53917143"
 ---
-# <a name="how-to-specify-symbol-file-locations-from-the-command-line"></a>如何：從命令列指定符號檔位置
+# <a name="how-to-specify-symbol-file-locations-from-the-command-line"></a>HOW TO：從命令列指定符號檔位置
 若要顯示符號資訊 (例如函式名稱和行號)，VSPerfReport 命令列工具需要存取已進行程式碼剖析之元件的符號 (.*pdb*) 檔案和 Windows 系統檔。 符號檔是在元件編譯時建立。 如需詳細資訊，請參閱 [VSPerfReport](../profiling/vsperfreport.md)。 VSPerfReport 會自動搜尋下列位置中是否有符號檔：  
   
 - **/SymbolPath** 選項或 **_NT_SYMBOL_PATH** 環境變數中指定的路徑。  
@@ -37,7 +35,7 @@ ms.locfileid: "49941928"
   您也可以同時使用這兩種方法。  
   
 > [!NOTE]
->  如果 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 安裝在本機電腦上，則可能已指定 Windows 符號檔的位置。 如需詳細資訊，請參閱[如何：參考 Windows 符號資訊](../profiling/how-to-reference-windows-symbol-information.md)。 您仍然必須遵循本主題稍後所述的方式來設定 VSPerfReport 使用位置和伺服器。  
+>  如果 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 安裝在本機電腦上，則可能已指定 Windows 符號檔的位置。 如需詳細資訊，請參閱[＜How to：參考 Windows 符號資訊](../profiling/how-to-reference-windows-symbol-information.md)。 您仍然必須遵循本主題稍後所述的方式來設定 VSPerfReport 使用位置和伺服器。  
   
 ## <a name="specify-windows-symbol-files"></a>指定 Windows 符號檔案  
   

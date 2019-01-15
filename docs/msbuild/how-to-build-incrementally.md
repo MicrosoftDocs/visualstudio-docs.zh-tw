@@ -1,8 +1,6 @@
 ---
-title: 如何：累加建置 | Microsoft Docs
-ms.custom: ''
+title: HOW TO：以累加方式建置 | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, incremental builds
@@ -14,14 +12,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f9e0251d41feb5bd9c61a719d932c6fd954be947
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d1fc2b076bffd843c4882e40f1c3c18dbf161e8b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49932425"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53883210"
 ---
-# <a name="how-to-build-incrementally"></a>如何：累加建置
+# <a name="how-to-build-incrementally"></a>HOW TO：以累加方式建置
 當您建置大型專案時，很重要的一點是，如果先前建置的元件仍是最新，就不會重建。 如果每次都建置所有目標，每次建置會花很長的時間才能完成。 若要啟用累加建置 (在這些建置中，只會重建先前尚未建置過的目標，或是已過期的目標)，[!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]) 可以比較輸入檔案的時間戳記，與輸出檔案的的時間戳記，然後判斷是要跳過、建置還是部分重建目標。 不過，在輸入和輸出之間必須有一對一的對應。 您可以使用轉換，讓目標可以找出這種直接對應。 如需轉換的詳細資訊，請參閱[轉換](../msbuild/msbuild-transforms.md)。  
   
 ## <a name="specify-inputs-and-outputs"></a>指定輸入和輸出  
@@ -29,7 +27,7 @@ ms.locfileid: "49932425"
   
 #### <a name="to-specify-inputs-and-outputs-for-a-target"></a>指定目標的輸入和輸出  
   
-- 使用 `Target` 項目的 `Inputs` 和 `Outputs` 屬性。 例如:   
+- 使用 `Target` 項目的 `Inputs` 和 `Outputs` 屬性。 例如：  
   
   ```xml  
   <Target Name="Build"  
@@ -60,9 +58,9 @@ ms.locfileid: "49932425"
 ## <a name="example"></a>範例  
  下列範例使用為假定說明系統建置說明檔的專案。 專案的運作方式是將來源的 *.txt* 檔案轉換成中繼 *.content* 檔案，然後與 XML 中繼資料檔案結合以產生說明系統所使用的最終 *.help* 檔案。 專案會使用下列假定的工作︰  
   
--   `GenerateContentFiles`︰將 *.txt* 檔案轉換為 *.content* 檔案。  
+-   `GenerateContentFiles`：將 *.txt* 檔案轉換為 *.content* 檔案。  
   
--   `BuildHelp`︰結合 *.content* 檔案和 XML 中繼資料檔案，建置最終的 *.help* 檔案。  
+-   `BuildHelp`：結合 *.content* 檔案和 XML 中繼資料檔案，建置最終的 *.help* 檔案。  
   
 
  專案會使用轉換來為 `GenerateContentFiles` 工作建立輸入與輸出之間的一對一對應。 如需詳細資訊，請參閱[轉換](../msbuild/msbuild-transforms.md)。 此外，`Output` 項目設定為自動使用來自 `GenerateContentFiles` 工作的輸出，作為 `BuildHelp` 工作的輸入。  

@@ -1,8 +1,6 @@
 ---
 title: 使用或不使用偵錯工具來執行分析工具 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 3fcdccad-c1bd-4c67-bcec-bf33a8fb5d63
 author: mikejo5000
@@ -10,12 +8,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e8d088978e166f24f624b8ae05cdeb04137d8135
-ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
+ms.openlocfilehash: f80f6018583194e352210057f31b741ae1b6ac2c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "51948708"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53941410"
 ---
 # <a name="run-profiling-tools-with-or-without-the-debugger"></a>使用或不使用偵錯工具來執行分析工具
 
@@ -55,7 +53,7 @@ Visual Studio 提供各種效能測量和分析工具的選擇。 其中有些�
 
 ### <a name="the-events-tab"></a>[事件] 索引標籤
 
-在偵錯工作階段期間，[診斷工具] 視窗的 [事件] 索引標籤會列出所發生診斷事件。 類別前置詞 (**中斷點**、**檔案**和其他項目) 可讓您快速掃描清單中的類別，或略過不在意的類別。  
+在偵錯工作階段期間，[診斷工具] 視窗的 [事件] 索引標籤會列出所發生診斷事件。 類別前置詞：**中斷點**、**檔案**和其他項目可讓您快速掃描清單中的類別，或略過不在意的類別。  
   
 請使用 [篩選] 下拉式清單，選取或取消選取事件的特定類別來篩選傳入和傳出檢視事件。 
 
@@ -116,17 +114,17 @@ Visual Studio 提供各種效能測量和分析工具的選擇。 其中有些�
 ## <a name="see-also"></a>另請參閱
 
 下列為診斷開發小組的部落格文章和 MSDN 文章：  
- [MSDN Magazine：在 Visual Studio 2015 偵錯同時分析效能 (英文)](https://msdn.microsoft.com/magazine/dn973013.aspx)
+ [MSDN Magazine：在 Visual Studio 2015 中進行偵錯時分析效能](https://msdn.microsoft.com/magazine/dn973013.aspx)
   
- [MSDN Magazine：使用 IntelliTrace 更快速地診斷問題 (英文)](https://msdn.microsoft.com/magazine/dn973014.aspx)
+ [MSDN Magazine：使用 IntelliTrace 更快速地診斷問題](https://msdn.microsoft.com/magazine/dn973014.aspx)
   
- [部落格文章：在 Visual Studio 2015 中使用記憶體使用量工具診斷事件處理常式流失 (英文)](https://blogs.msdn.microsoft.com/devops/2015/04/29/diagnosing-event-handler-leaks-with-the-memory-usage-tool-in-visual-studio-2015/)
+ [部落格文章：Diagnosing Event Handler Leaks with the Memory Usage Tool in Visual Studio 2015](https://blogs.msdn.microsoft.com/devops/2015/04/29/diagnosing-event-handler-leaks-with-the-memory-usage-tool-in-visual-studio-2015/) (在 Visual Studio 2015 中使用記憶體使用量工具診斷事件處理常式流失)
   
- [影片：Microsoft Visual Studio Ultimate 2015 中的 IntelliTrace 歷程偵錯 (英文)](https://channel9.msdn.com/Events/Ignite/2015/BRK3716)
+ [影片：Historical Debugging with IntelliTrace in Microsoft Visual Studio Ultimate 2015](https://channel9.msdn.com/Events/Ignite/2015/BRK3716) (在 Microsoft Visual Studio Ultimate 2015 中使用 IntelliTrace 進行歷程偵錯)
   
- [影片：使用 Visual Studio 2015 對效能問題偵錯 (英文)](https://channel9.msdn.com/Events/Build/2015/3-731)
+ [影片：Debugging Performance Issues Using Visual Studio 2015](https://channel9.msdn.com/Events/Build/2015/3-731) (使用 Visual Studio 2015 對效能問題偵錯)
   
- [效能提示：使用 Visual Studio 偵錯，效能資訊一目了然 (英文)](https://blogs.msdn.microsoft.com/devops/2014/08/18/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio/)
+ [PerfTips:Performance Information at-a-glance while Debugging with Visual Studio](https://blogs.msdn.microsoft.com/devops/2014/08/18/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio/) (效能提示：使用 Visual Studio 偵錯時的效能資訊一覽)
   
  [Visual Studio 2015 中的診斷工具偵錯工具視窗 (英文)](https://blogs.msdn.microsoft.com/devops/2015/01/16/diagnostic-tools-debugger-window-in-visual-studio-2015/)
   

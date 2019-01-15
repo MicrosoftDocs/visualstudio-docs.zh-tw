@@ -2,7 +2,6 @@
 title: 專案設計工具、編譯頁 (Visual Basic)
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - vb.ProjectPropertiesCompile
@@ -20,12 +19,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d1b5c55c3bc1732d0b394473f25c0b103c917f4
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 890754002c6b3d911b26fe7b1d6aa97b339880c1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38808370"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53874887"
 ---
 # <a name="compile-page-project-designer-visual-basic"></a>專案設計工具、編譯頁 (Visual Basic)
 
@@ -44,7 +43,7 @@ ms.locfileid: "38808370"
 
  **組態**
 
- 指定要顯示或修改的組態設定。 設定是 [偵錯] (預設值)、[發行] 或 [所有組態]。 如需詳細資訊，請參閱[了解建置組態](../../ide/understanding-build-configurations.md)與[如何：建立和編輯組態](../../ide/how-to-create-and-edit-configurations.md)。
+ 指定要顯示或修改的組態設定。 設定是 [偵錯] (預設值)、[發行] 或 [所有組態]。 如需詳細資訊，請參閱[了解組建組態](../../ide/understanding-build-configurations.md)和[如何：建立及編輯組態](../../ide/how-to-create-and-edit-configurations.md)。
 
  **平台**
 
@@ -178,4 +177,4 @@ ms.locfileid: "38808370"
 
 - [如何：指定建置事件 (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md)
 - [Visual Basic 命令列編譯器](/dotnet/visual-basic/reference/command-line-compiler/index)
-- [如何：建立和編輯組態](../../ide/how-to-create-and-edit-configurations.md)
+- [如何：建立及編輯組態](../../ide/how-to-create-and-edit-configurations.md)

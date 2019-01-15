@@ -1,8 +1,6 @@
 ---
-title: 如何：設定效能規則 | Microsoft Docs
-ms.custom: ''
+title: HOW TO：設定效能規則 | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.ruleseditor
@@ -12,14 +10,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bfe6e10c42188cab23c75262d947c7deb9c28ea5
-ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
+ms.openlocfilehash: 2e3df3b6573bb82303e0412fe50665c86d082481
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34816025"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53879607"
 ---
-# <a name="how-to-configure-performance-rules"></a>如何：設定效能規則
+# <a name="how-to-configure-performance-rules"></a>HOW TO：設定效能規則
 Visual Studio 程式碼剖析工具的效能警告指出，正在進行程式碼剖析的應用程式中發生問題，可能會降低程式執行速度。 警告也可能表示您可能需要變更收集方法，以收集更有用的資料。 在 [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]中開啟程式碼剖析資料檔案時，效能警告會於程式碼剖析工作階段中自動產生，並出現在 [錯誤清單] 視窗。 某些警告可能不適用於您感興趣的案例，有些則可能是不正確引發的警告。 您可以設定效能警告以顯示或隱藏特定警告。  
   
 ### <a name="to-configure-profiler-performance-warnings"></a>設定程式碼剖析工具效能警告  

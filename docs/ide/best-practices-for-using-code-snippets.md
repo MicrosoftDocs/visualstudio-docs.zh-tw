@@ -2,7 +2,6 @@
 title: 使用程式碼片段的最佳作法
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - code snippets, best practices
@@ -12,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b8c7a04f2a2fb2ef59a41953c82da4254f213084
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: d95b1b95d1859d29f82f7de45aa6ddb9cde7554f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179527"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53908914"
 ---
 # <a name="best-practices-for-using-code-snippets"></a>使用程式碼片段的最佳做法
 

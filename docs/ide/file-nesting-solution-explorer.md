@@ -3,19 +3,18 @@ title: '[方案總管] 中的檔案巢狀規則'
 ms.date: 05/25/2018
 ms.topic: conceptual
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 helpviewer_keywords:
 - file nesting
 - Solution Explorer, file nesting
 author: angelosp
 ms.author: angelpe
 manager: douge
-ms.openlocfilehash: d50d16d23c2f12ac5ac9feaaa37ee3797802c97e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3ba20e0df156cf2bba77bb919e55016692630ce7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49928694"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53831150"
 ---
 # <a name="customize-file-nesting-in-solution-explorer"></a>自訂 [方案總管] 中的檔案巢狀
 
@@ -50,17 +49,17 @@ ms.locfileid: "49928694"
 
 讓我們重點討論節點 **dependentFileProviders** 及其子節點。 每一個子節點都是 Visual Studio 可以用來巢狀化檔案的一種規則。 例如，**具有相同的檔名，但副檔名不同**是一種規則類型。 可用的規則如下：
 
-* **extensionToExtension**：使用這種規則類型，將 *file.js* 巢狀放在 *file.ts* 下
+* **extensionToExtension**：使用這種類型的規則，將 *file.js* 巢狀放在 *file.ts* 下
 
-* **fileSuffixToExtension**：使用這種規則類型，將 *file-vsdoc.js* 巢狀放在 *file.js* 下
+* **fileSuffixToExtension**：使用這種類型的規則，將 *file-vsdoc.js* 巢狀放在 *file.js* 下
 
-* **addedExtension**：使用這種規則類型，將 *file.html.css* 巢狀放在 *file.html* 下
+* **addedExtension**：使用這種類型的規則，將 *file.html.css* 巢狀放在 *file.html* 下
 
-* **pathSegment**：使用這種規則類型，將 *jquery.min.js* 巢狀放在 *jquery.js* 下
+* **pathSegment**：使用這種類型的規則，將 *jquery.min.js* 巢狀放在 *jquery.js* 下
 
 * **allExtensions**：使用這種類型的規則，將 *file.** 巢狀放在 *file.js* 下
 
-* **fileToFile**：使用這種規則類型，將 *bower.json* 巢狀放在 *.bowerrc* 下
+* **fileToFile**：使用這種類型的規則，將 *bower.json* 巢狀放在 *.bowerrc* 下
 
 ### <a name="the-extensiontoextension-provider"></a>extensionToExtension 提供者
 
@@ -136,7 +135,7 @@ ms.locfileid: "49928694"
 
 ![解決方案與專案特定的巢狀規則](media/filenesting_solutionprojectspecific.png)
 
-解決方案與專案特定的設定會與目前使用的 Visual Studio 設定結合。 例如，您可能有空白的專案特定設定檔，但 [方案總管] 仍會巢狀放置檔案。 巢狀行為來自解決方案特定的設定或 Visual Studio 設定。 合併檔案巢狀設定的優先順序：Visual Studio > 解決方案 > 專案。
+解決方案與專案特定的設定會與目前使用的 Visual Studio 設定結合。 例如，您可能有空白的專案特定設定檔，但 [方案總管] 仍會巢狀放置檔案。 巢狀行為來自解決方案特定的設定或 Visual Studio 設定。 合併檔案巢狀設定的優先順序如下：Visual Studio > 解決方案 > 專案。
 
 即使檔案存在於磁碟上，您仍可以告訴 Visual Studio 忽略解決方案與專案特定的設定，方法是啟用 [工具] > [選項] > [ASP.NET Core] > [檔案巢狀] 下的 [忽略解決方案和專案設定] 選項。
 

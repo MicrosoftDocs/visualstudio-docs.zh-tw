@@ -2,7 +2,6 @@
 title: 使用 XAML 設計工具建立 UI
 ms.date: 11/05/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 f1_keywords:
 - VS.XamlDesigner
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: b991b50ab2ee329adaaff7a31c2dbb4f2d5bb806
-ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
+ms.openlocfilehash: a47c0f9718f43c86375f9ff8668d2dfa1efa9785
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "51220992"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53880401"
 ---
 # <a name="create-a-ui-by-using-xaml-designer-in-visual-studio"></a>在 Visual Studio 中使用 XAML 設計工具建立 UI
 
@@ -123,11 +122,11 @@ XAML 設計工具中的 [裝置] 視窗，可讓您在設計階段模擬專案�
 
 **方向**
 
-為應用程式指定不同的方向：[橫向]  或 [直向] 。
+為應用程式指定不同的方向：[橫向] 或 [直向]。
 
 **邊緣**
 
-為應用程式指定不同的邊緣對齊方式：[兩者] 、[靠左] 、[靠右] 或 [無] 。
+為應用程式指定不同的邊緣對齊方式：[兩者]、[靠左]、[靠右] 或 [無]。
 
 **高對比**
 

@@ -1,8 +1,6 @@
 ---
-title: 如何：指定其他的檢測選項 | Microsoft Docs
-ms.custom: ''
+title: HOW TO：指定其他的檢測選項 | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.property.advanced
@@ -15,14 +13,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f97bc28277adfe1e181e0f6a5be210e45b250717
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: a4e7d75724d6980be5d3a51947e3dd3e4eeeca08
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34845245"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53858665"
 ---
-# <a name="how-to-specify-additional-instrumentation-options"></a>如何：指定其他的檢測選項
+# <a name="how-to-specify-additional-instrumentation-options"></a>HOW TO：指定其他的檢測選項
 
 您可以使用 Visual Studio IDE 或使用命令列工具來檢測二進位檔。 如果是從 IDE 中檢測二進位檔，您可以為 [VSInstr](../profiling/vsinstr.md) 工具指定其他的檢測選項，藉以控制檢測期間所收集的資料量。 這些選項可以在工作階段或目標層級中使用。 例如，若要在檢測程序期間包含或排除特定函式，請在目標層級使用其他的檢測選項。
 

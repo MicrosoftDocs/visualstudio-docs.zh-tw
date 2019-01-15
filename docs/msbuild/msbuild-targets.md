@@ -1,8 +1,6 @@
 ---
 title: MSBuild 目標 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, targets
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3700074a1d087c0626a86559ff1342698d8a4628
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: c383af855c849636f780e5c333bd1937e5e90955
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176108"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53877636"
 ---
 # <a name="msbuild-targets"></a>MSBuild 目標
 依特定順序將目標設為群組工作，並允許將建置處理序分成較小的單位。 例如，一個目標可能會刪除輸出目錄中的所有檔案來準備進行建置，而另一個目標會編譯專案的輸入，並將它們放在空目錄中。 如需工作的詳細資訊，請參閱[工作](../msbuild/msbuild-tasks.md)。  
@@ -99,4 +97,4 @@ Reference: 4.0
   
 ## <a name="see-also"></a>另請參閱  
  [MSBuild 概念](../msbuild/msbuild-concepts.md)   
- [如何：在多個專案檔中使用相同目標](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md)
+ [如何：在多個專案檔中使用相同的目標](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md)

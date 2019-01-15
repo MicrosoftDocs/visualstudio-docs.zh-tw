@@ -2,7 +2,6 @@
 title: 管理組件和資訊清單簽署
 ms.date: 02/17/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - manifests [Visual Studio]
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fb2113ed091d99ed66b13955ea468c376bba9490
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 1c3795c2887e9d7516f3e9f781e42a2629e2a0b5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39379562"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53927567"
 ---
 # <a name="manage-assembly-and-manifest-signing"></a>管理組件和資訊清單簽署
 
@@ -70,7 +69,7 @@ ms.locfileid: "39379562"
 
 如果您只能存取公開金鑰，您可以使用延遲簽署，稍後再指派金鑰。 選取 [僅延遲簽署] 核取方塊以啟用延遲簽署。 延遲簽署的專案不會執行，且無法進行偵錯。 不過，您可以搭配使用 [Sn.exe 強式名稱工具](/dotnet/framework/tools/sn-exe-strong-name-tool)與 `-Vr` 選項，在開發期間略過驗證。
 
-如需簽署資訊清單的資訊，請參閱[如何：簽署應用程式和部署資訊清單](../ide/how-to-sign-application-and-deployment-manifests.md)。
+如需簽署資訊清單的資訊，請參閱[如何：重新簽署應用程式和部署資訊清單](../ide/how-to-sign-application-and-deployment-manifests.md)。
 
 ## <a name="see-also"></a>另請參閱
 

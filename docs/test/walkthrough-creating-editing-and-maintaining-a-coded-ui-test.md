@@ -2,21 +2,20 @@
 title: 建立自動程式化 UI 測試
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: fe8bed9c1f1f8aee9ae8e6d1ba460bf226d7b818
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 9bb64cae648f8ad747100fb0e27f83617603c804
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895518"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53878230"
 ---
-# <a name="walkthrough-create-edit-and-maintain-a-coded-ui-test"></a>逐步解說：建立、編輯和維護自動程式化 UI 測試
+# <a name="walkthrough-create-edit-and-maintain-a-coded-ui-test"></a>逐步解說：建立、編輯及維護自動程式化 UI 測試
 
 在本逐步解說中，您將了解如何建立、編輯和維護自動程式化 UI 測試來測試 Windows Presentation Framework (WPF) 應用程式。 本逐步解說提供解決方案用來修正各種因時間問題和控制項重構而中斷的測試。
 

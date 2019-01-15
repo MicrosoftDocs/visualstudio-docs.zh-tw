@@ -1,8 +1,7 @@
 ---
-title: 如何：匯出包含預乘 Alpha 的材質
+title: HOW TO：匯出包含預乘 Alpha 的紋理
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: 05348afa-f079-4f53-a05b-ecd91d13adab
 author: gewarren
@@ -10,14 +9,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c39d7ae466f48bed8bd6fe4c53662c0c8b3c801e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8a05235b2212e64baea3caf2d7dc3977c3e9d6dc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49855517"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53988001"
 ---
-# <a name="how-to-export-a-texture-that-has-premultiplied-alpha"></a>如何：匯出包含預乘 Alpha 的材質
+# <a name="how-to-export-a-texture-that-has-premultiplied-alpha"></a>HOW TO：匯出包含預乘 Alpha 的紋理
 
 影像內容管線可以從來源影像產生預乘 Alpha 的材質。 這些使用起來可以更簡單，且比起不包含預乘 Alpha 的材質更穩固。
 
@@ -40,7 +39,7 @@ ms.locfileid: "49855517"
 
 #### <a name="to-create-a-texture-that-uses-premultiplied-alpha"></a>建立使用預乘 Alpha 的材質
 
-1. 從基本材質著手。 載入現有的影像檔案，或遵循[如何：建立基本材質](../designers/how-to-create-a-basic-texture.md)中所述，建立影像檔案。
+1. 從基本材質著手。 載入現有的影像檔，或依[如何：建立基本紋理](../designers/how-to-create-a-basic-texture.md)中所述，建立一個影像檔。
 
 2. 設定材質檔案，以便供「影像內容管線」處理。 在方案總管中，開啟材質檔案的捷徑功能表，然後選擇 [屬性]。 在 [組態屬性] > [一般] 頁面上，將 [項目類型] 屬性設定為 [影像內容管線]。 確定 [內容] 屬性是設定為 [是]，且 [從組建中排除] 是設定為 [否]，然後選擇 [套用] 按鈕。 此時會顯示 [影像內容管線] 組態屬性頁面。
 

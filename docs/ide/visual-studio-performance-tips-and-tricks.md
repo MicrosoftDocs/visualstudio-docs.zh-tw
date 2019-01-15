@@ -2,19 +2,18 @@
 title: 改善效能的祕訣
 ms.date: 08/14/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e1c4e55fe6275d750d3bc3b03fb8f0ac5eec2751
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: bdc20f22fc535028cb67939fed9c9472ed081428
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50672921"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53956890"
 ---
 # <a name="visual-studio-performance-tips-and-tricks"></a>Visual Studio 效能祕訣和訣竅
 

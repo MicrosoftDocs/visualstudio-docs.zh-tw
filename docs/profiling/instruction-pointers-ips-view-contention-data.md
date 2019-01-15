@@ -1,8 +1,6 @@
 ---
 title: 指令指標 (IP) 檢視 - 爭用資料 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Instruction Pointers view
@@ -12,19 +10,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b1157183bcb7cd13f2683d6d6dac32cfb81d8974
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: cb7e4712c47376c6e7389085b78e2e01c58f6d88
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34845073"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53853472"
 ---
 # <a name="instruction-pointers-ips-view---contention-data"></a>指令指標 (IP) 檢視 - 爭用資料
 爭用資料的 IP檢視會列出遭到封鎖而不可在程式碼剖析執行時執行的組件指令。  
   
  下表說明指令指標檢視中各資料行的值。  
   
-|資料行|描述|  
+|資料行|說明|  
 |------------|-----------------|  
 |**專有封鎖時間**|這個函式中的封鎖時間。|  
 |**專有封鎖時間 %**|指令執行時的封鎖時間百分比。|  

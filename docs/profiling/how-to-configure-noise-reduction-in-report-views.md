@@ -1,8 +1,6 @@
 ---
-title: 如何：在報表檢視中設定減少雜訊 | Microsoft Docs
-ms.custom: ''
+title: HOW TO：在報表檢視中設定減少雜訊 | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.noisereduction.dialog
@@ -16,14 +14,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 460251aaa89c22d7bb1320d19882af4f68736cc0
-ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
+ms.openlocfilehash: 1fa84eecc96c836b3430b691b5d8f8b1cd3d0926
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34815180"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53875241"
 ---
-# <a name="how-to-configure-noise-reduction-in-report-views"></a>如何：在報表檢視中設定減少雜訊
+# <a name="how-to-configure-noise-reduction-in-report-views"></a>HOW TO：在報表檢視中設定減少雜訊
 效能報告可透過限制 [呼叫樹狀圖] 檢視和 [配置] 檢視中呈現的資料量來減少雜訊。 藉由減少雜訊，效能問題將更為顯著。 在分析效能報告時，這一點非常有用。  
   
  減少雜訊組態選項包括下列設定︰  
