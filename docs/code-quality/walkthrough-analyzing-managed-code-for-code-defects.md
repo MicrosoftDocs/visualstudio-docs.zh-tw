@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: fd24485d02d20bf4ab1b5def30e34b8d14a71cb3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d9b4631b320138d045e910c612c1fa4558a07e56
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53955249"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269220"
 ---
 # <a name="walkthrough-analyzing-managed-code-for-code-defects"></a>逐步解說：分析 managed 程式碼的程式碼缺失
 
@@ -183,13 +183,11 @@ ms.locfileid: "53955249"
 
 ## <a name="exclude-code-analysis-warnings"></a>排除程式碼分析警告
 
-### <a name="to-exclude-code-defect-warnings"></a>若要排除程式碼缺失警告
-
 1. 針對每個剩餘的警告中，執行下列作業：
 
     1. 選取中的警告**錯誤清單**。
 
-    1. 以滑鼠右鍵按一下功能表或操作功能表，選擇**抑制** > **檔案中的隱藏項目**。
+    1. 從快顯功能表 （操作功能表），選擇**抑制** > **檔案中的隱藏項目**。
 
 1. 重建專案。
 

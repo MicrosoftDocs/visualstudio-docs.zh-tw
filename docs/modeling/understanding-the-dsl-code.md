@@ -10,12 +10,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: a0b540eb6f8e8c09845e069275a0a901c2809806
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b47fe1e80f2441c729dd2d971bfadffb80dfbd04
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53886367"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54270290"
 ---
 # <a name="understanding-the-dsl-code"></a>了解 DSL 程式碼
 特定領域語言 (DSL) 方案會產生 API，您可以用來讀取和更新 Visual Studio 中之 DSL 執行個體。 這個應用程式開發介面是以從 DSL 定義產生的程式碼來定義。 本主題說明產生的應用程式開發介面。
@@ -121,7 +121,7 @@ ms.locfileid: "53886367"
 
 - 項目群組原型 (EGP) 處理常式方法。 這些是如果使用者將所需*合併*（加入） 到此類別的執行個體上的另一個項目。 使用者通常會透過從項目工具或另一個圖形拖曳，或透過貼上作業，來執行這項操作。
 
-   在範例 DSL 中，「輸入通訊埠」或「輸出通訊埠」可合併為一個「元件」。 此外，「元件」和「註解」可合併為模型。 此
+   在範例 DSL 中，「輸入通訊埠」或「輸出通訊埠」可合併為一個「元件」。 此外，「元件」和「註解」可合併為模型。 必須提供
 
    「元件」類別中的 EGP 處理常式方法允許「元件」接受「通訊埠」，但不接受「註解」。 根模型類別中的 EGP 處理常式接受「元件」和「註解」，但不接受「通訊埠」。
 
@@ -191,7 +191,7 @@ ms.locfileid: "53886367"
 
  `CommandSet.cs`
 
- 圖表上顯示的內容功能表命令。 您可以調整這個組合或將命令加入至這個組合。 這個檔案包含命令的程式碼。 功能表上的命令位置是由 Commands.vsct 檔所決定。 如需詳細資訊，請參閱 <<c0> [ 撰寫使用者命令和動作](../modeling/writing-user-commands-and-actions.md)。
+ 會顯示在圖表上按一下滑鼠右鍵功能表命令。 您可以調整這個組合或將命令加入至這個組合。 這個檔案包含命令的程式碼。 功能表上的命令位置是由 Commands.vsct 檔所決定。 如需詳細資訊，請參閱 <<c0> [ 撰寫使用者命令和動作](../modeling/writing-user-commands-and-actions.md)。
 
  `Constants.cs`
 
@@ -281,7 +281,7 @@ namespace Company.EmbedInForm
 
  `GeneratedVSCT.vsct`
 
- 在功能表中，例如圖表內容功能表中，找到的標準功能表命令**編輯** 功能表中，依此類推。 命令的程式碼位於 CommandSet.cs 中。 您可以重新配置或修改標準命令，也可以加入自己的命令。 如需詳細資訊，請參閱 <<c0> [ 撰寫使用者命令和動作](../modeling/writing-user-commands-and-actions.md)。
+ 功能表，例如 圖表 上按一下滑鼠右鍵 （內容） 功能表上找到的標準功能表命令**編輯** 功能表中，依此類推。 命令的程式碼位於 CommandSet.cs 中。 您可以重新配置或修改標準命令，也可以加入自己的命令。 如需詳細資訊，請參閱 <<c0> [ 撰寫使用者命令和動作](../modeling/writing-user-commands-and-actions.md)。
 
  `ModelExplorer.cs`
 
@@ -291,7 +291,7 @@ namespace Company.EmbedInForm
 
  如果您需要使模型總管中的選取與圖表選取保持同步，您可以使用下列程式碼：
 
-```
+```csharp
 protected override void OnSelectionChanged(global::System.EventArgs e)
 {
 base.OnSelectionChanged(e);

@@ -11,17 +11,18 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 284a789a7ba4e7fec1a87723c51a32f650f6d843
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a415657c86f6f4a6f54ce4273e49ad6302ae77b4
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53987962"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54270031"
 ---
 # <a name="how-to-add-a-command-to-the-shortcut-menu"></a>HOW TO：在捷徑功能表中新增命令
+
 您可以將功能表命令加入網域指定的語言 (DSL)，以便您的使用者可以執行專屬 DSL 的工作。 當使用者以滑鼠右鍵按一下圖表時，命令會出現在內容 (捷徑) 功能表上。 您可以定義命令，使它只在特定的情況下出現在功能表中。 例如，您可以使命令只在使用者按一下特定類型的項目或處於特定狀態的項目時才可見。
 
- 總結而言，這些步驟在 DslPackage 專案中執行，步驟如下所示：
+在 [摘要] 執行步驟在 DslPackage 專案中，如下所示：
 
 1. [宣告在 Commands.vsct 中命令](#VSCT)
 
@@ -32,12 +33,13 @@ ms.locfileid: "53987962"
    如需範例，請參閱[Visualization and Modeling SDK 網站](http://go.microsoft.com/fwlink/?LinkID=185579)。
 
 > [!NOTE]
->  您也可以覆寫 CommandSet.cs 中的方法，即可修改部分現有命令 (例如剪下、貼上、全選和列印) 的行為。 如需詳細資訊，請參閱[＜How to：修改標準功能表命令](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)。
+> 您也可以覆寫 CommandSet.cs 中的方法，即可修改部分現有命令 (例如剪下、貼上、全選和列印) 的行為。 如需詳細資訊，請參閱[＜How to：修改標準功能表命令](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)。
 
-## <a name="defining-a-command-using-mef"></a>使用 MEF 定義命令
- Managed Extension Framework (MEF) 提供在圖表功能表上定義功能表命令的替代方法。 它的主要用途是讓您或其他方可以擴充 DSL。 使用者可以選擇僅安裝 DSL，也可以安裝 DSL 和擴充功能。 然而，在 DSL 上啟用 MEF 的初始工作之後，MEF 也會減少定義捷徑功能表命令的工作。
+## <a name="define-a-command-using-mef"></a>定義命令，使用 MEF
 
- 在下列情況下，請使用本主題中的方法：
+Managed Extension Framework (MEF) 提供在圖表功能表上定義功能表命令的替代方法。 它的主要用途是讓您或其他方可以擴充 DSL。 使用者可以選擇僅安裝 DSL，也可以安裝 DSL 和擴充功能。 然而，在 DSL 上啟用 MEF 的初始工作之後，MEF 也會減少定義捷徑功能表命令的工作。
+
+在下列情況下，請使用本主題中的方法：
 
 1. 您想要在功能表上定義功能表命令，而不是以滑鼠右鍵按一下捷徑功能表。
 
@@ -56,7 +58,7 @@ ms.locfileid: "53987962"
 
  如需.vsct 檔的詳細資訊，請參閱[Visual Studio Command Table (。Vsct) 檔案](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)。
 
-#### <a name="to-add-the-command"></a>加入命令
+### <a name="to-add-the-command"></a>加入命令
 
 1.  在 **方案總管**下方**DslPackage**專案中，開啟 Commands.vsct。
 
@@ -87,7 +89,7 @@ ms.locfileid: "53987962"
     ```
 
     > [!NOTE]
-    >  每一個按鈕或群組都是以 GUID 和整數 ID 識別。 您可以使用相同的 GUID 建立數個群組和按鈕。 不過，它們必須具有不同的 ID。 GUID 名稱和 ID 名稱會轉譯成的實際 Guid 和數字 Id 在`<Symbols>`節點。
+    > 每一個按鈕或群組都是以 GUID 和整數 ID 識別。 您可以使用相同的 GUID 建立數個群組和按鈕。 不過，它們必須具有不同的 ID。 GUID 名稱和 ID 名稱會轉譯成的實際 Guid 和數字 Id 在`<Symbols>`節點。
 
 3.  為命令加入可見度限制，令其只在網域指定的語言之內容中載入。 如需詳細資訊，請參閱 < [VisibilityConstraints 元素](../extensibility/visibilityconstraints-element.md)。
 
@@ -134,7 +136,7 @@ ms.locfileid: "53987962"
 
  由於套件類別定義於產生的檔案，因此請更新文字範本檔案中產生 Package.cs 檔的屬性。
 
-#### <a name="to-update-the-packagett-file"></a>更新 Package.tt 檔
+### <a name="to-update-the-packagett-file"></a>更新 Package.tt 檔
 
 1.  在 [**方案總管] 中**，請在**DslPackage**專案，在**GeneratedCode**資料夾中，開啟 Package.tt 檔。
 
@@ -145,13 +147,14 @@ ms.locfileid: "53987962"
      `[VSShell::ProvideMenuResource("1000.ctmenu", version: 2 )]`
 
 ##  <a name="CommandSet"></a> 定義命令的行為
- 您的 DSL 已經有一些命令，這些命令實作於 DslPackage\GeneratedCode\CommandSet.cs 中宣告的部分類別。 若要加入新的命令，您必須建立含有相同類別之部分宣告的新檔案，以擴充此類別。 類別的名稱通常是 *\<YourDslName >*`CommandSet`。 以驗證類別的名稱並檢查其內容開頭非常有用。
 
- 命令集類別衍生自 <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet>。
+您的 DSL 已經有一些命令，這些命令實作於 DslPackage\GeneratedCode\CommandSet.cs 中宣告的部分類別。 若要加入新的命令，您必須建立含有相同類別之部分宣告的新檔案，以擴充此類別。 類別的名稱通常是 *\<YourDslName >*`CommandSet`。 您最好先確認類別名稱，並檢查其內容。
 
-#### <a name="to-extend-the-commandset-class"></a>擴充 CommandSet 類別
+命令集類別衍生自 <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet>。
 
-1.  在 [方案總管] 的 DslPackage 專案中，開啟 [GeneratedCode] 資料夾，然後查看 CommandSet.tt 下方並開啟其產生的檔案 CommandSet.cs。 記下檔案中定義的命名空間和第一個類別的名稱。 例如，您可能會看到：
+### <a name="extend-the-commandset-class"></a>擴充 CommandSet 類別
+
+1.  在 [方案總管] 中，開啟 DslPackage 專案中的 GeneratedCode 資料夾，然後在 CommandSet.tt 下尋找並開啟它的產生檔案 CommandSet.cs。 記下檔案中定義的命名空間和第一個類別的名稱。 例如，您可能會看到：
 
      `namespace Company.Language1`
 
@@ -167,8 +170,7 @@ ms.locfileid: "53987962"
 
      **請注意**如果您使用 [類別] 範本來建立新的檔案時，您必須更正命名空間和類別名稱。
 
-### <a name="extend-the-command-set-class"></a>擴充命令集類別
- 您的命令集程式碼通常需要匯入下列命名空間：
+您的命令集程式碼通常需要匯入下列命名空間：
 
 ```csharp
 using System;
@@ -180,7 +182,7 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 using Microsoft.VisualStudio.Modeling.Shell;
 ```
 
- 調整命名空間和類別名稱，以符合產生的 CommandSet.cs 中的命名空間和類別名稱：
+調整命名空間和類別名稱，以符合產生的 CommandSet.cs 中的命名空間和類別名稱：
 
 ```csharp
 namespace Company.Language1 /* Make sure this is correct */
@@ -190,7 +192,7 @@ namespace Company.Language1 /* Make sure this is correct */
   {
 ```
 
- 您必須定義兩個方法，一個用來決定內容功能表上何時會顯示命令，另一個用來執行命令。 這些方法不是覆寫；您須另行在命令清單中註冊方法。
+您必須定義兩個方法： 一個用來判斷當此命令將會顯示上按一下滑鼠右鍵 （內容） 功能表中，而另一個則執行的命令。 這些方法不是覆寫；您須另行在命令清單中註冊方法。
 
 ### <a name="define-when-the-command-will-be-visible"></a>定義命令何時可見
  對每一個命令定義 `OnStatus...` 方法，決定命令是否將出現在功能表上，以及它是否將被啟用或呈現為灰色。設定 `MenuCommand` 的 `Visible` 和 `Enabled` 屬性，如下列範例所示。 呼叫此方法是為了在每次使用者以滑鼠右鍵按一下圖表時都建構捷徑功能表，因此它必須快速運作。
@@ -218,7 +220,7 @@ private void OnStatusMyContextMenuCommand(object sender, EventArgs e)
 } } } }
 ```
 
- 以下片段在 OnStatus 方法中通常很有用：
+以下片段在 OnStatus 方法中通常很有用：
 
 - `this.CurrentSelection`. 此清單中一律包含使用者以滑鼠右鍵按一下的圖形。 如果使用者按一下圖表的空白部分，圖表會成為清單的唯一成員。
 
@@ -232,9 +234,9 @@ private void OnStatusMyContextMenuCommand(object sender, EventArgs e)
 
 - `shape.ModelElement as MyLanguageElement` - 以圖形表示的模型項目。
 
-  如同一般方針，使 `Visible` 屬性相依於選取的項目，並使 `Enabled` 屬性相依於所選項目的狀態。
+如同一般方針，使 `Visible` 屬性相依於選取的項目，並使 `Enabled` 屬性相依於所選項目的狀態。
 
-  OnStatus 方法不應變更市集的狀態。
+OnStatus 方法不應變更市集的狀態。
 
 ### <a name="define-what-the-command-does"></a>定義命令執行的動作
  對每一個命令定義 `OnMenu...` 方法，執行使用者按一下功能表命令時的必要動作。
@@ -319,7 +321,7 @@ protected override IList<MenuCommand> GetMenuCommands()
 ## <a name="test-the-command"></a>測試命令
  在 Visual Studio 的實驗執行個體中建置和執行 DSL。 在您指定的情況下，命令應會出現在捷徑功能表中。
 
-#### <a name="to-exercise-the-command"></a>執行命令
+### <a name="to-exercise-the-command"></a>執行命令
 
 1.  在 **方案總管**工具列上，按一下**轉換所有範本**。
 
@@ -329,8 +331,9 @@ protected override IList<MenuCommand> GetMenuCommands()
 
 4.  以滑鼠右鍵按一下圖表中的各種項目，以驗證命令是否已正確啟用或停用，以及是否適當顯示或隱藏，視選取的項目而定。
 
-## <a name="troubleshooting"></a>疑難排解
- **命令未出現在功能表中：**
+## <a name="troubleshoot"></a>疑難排解
+
+**命令未出現在功能表中：**
 
 - 命令只會出現在 Visual Studio 的偵錯執行個體中，直到安裝 DSL 套件為止。 如需詳細資訊，請參閱 <<c0> [ 部署特定領域語言方案](../modeling/deploying-domain-specific-language-solutions.md)。
 
@@ -340,17 +343,17 @@ protected override IList<MenuCommand> GetMenuCommands()
 
 - 在 OnStatus 方法的開頭設定中斷點。 在圖表的任何部分上按一下滑鼠右鍵時，它應該會中斷。
 
-   **未呼叫 OnStatus 方法**:
+**未呼叫 OnStatus 方法**:
 
-  -   請確定您的 CommandSet 程式碼中的 GUID 和 ID 符合 Commands.vsct 的 Symbols 區段中的 GUID 和 ID。
+-   請確定您的 CommandSet 程式碼中的 GUID 和 ID 符合 Commands.vsct 的 Symbols 區段中的 GUID 和 ID。
 
-  -   在 Commands.vsct 中，確定每個父節點中的 GUID 和 ID 識別正確的父群組。
+-   在 Commands.vsct 中，確定每個父節點中的 GUID 和 ID 識別正確的父群組。
 
-  -   在 Visual Studio 命令提示字元中，輸入 devenv /rootsuffix exp /setup。 然後重新啟動 Visual Studio 的偵錯執行個體。
+-   在 Visual Studio 命令提示字元中，輸入 devenv /rootsuffix exp /setup。 然後重新啟動 Visual Studio 的偵錯執行個體。
 
 - 逐步執行 OnStatus 方法，以確認 command.Visible 和 command.Enabled 設為 true。
 
-  **此時會出現錯誤的功能表文字，或是命令出現在錯誤的位置**:
+**此時會出現錯誤的功能表文字，或是命令出現在錯誤的位置**:
 
 - 請確定 GUID 和 ID 的組合對此命令是唯一的。
 

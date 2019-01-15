@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 525766d69e892bd6560cd9d9cd280d8ed061c56c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 710c7728069a7166d67ab39239b360634fb80509
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53946603"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269497"
 ---
 # <a name="pick-activity-designer"></a>Pick 活動設計工具
 
@@ -30,7 +30,7 @@ ms.locfileid: "53946603"
 
 存取權**挑選**中的活動設計工具**控制流程**分類**工具箱**。 **挑選**活動設計工具可以從拖曳**工具箱**並放到工作流程設計工具介面，只要通常放置活動設計工具，例如在**序列**活動設計工具。 後放入工作流程設計工具，它會建立<xref:System.Activities.Statements.Pick>活動，其中預設包含兩個空<xref:System.Activities.Statements.PickBranch>活動為具有項目會顯示 Branch1 和 Branch2 名稱。 各自<xref:System.Activities.Statements.PickBranch.DisplayName%2A>屬性值可以在中編輯**PickBranch**活動設計工具的標頭或內**屬性**針對每個分支的視窗。
 
-有兩種方式，以新增<xref:System.Activities.Statements.PickBranch>活動的集合<xref:System.Activities.Statements.Pick>物件： 拖曳和卸除**PickBranch**設計工具**工具箱**或使用中的內容功能表內**挑選**設計介面。 如需詳細資訊，請參閱 < [PickBranch](../workflow-designer/pickbranch-activity-designer.md)主題。 請注意，唯一項目可以置於**挑選**活動設計工具**PickBranch**活動設計工具。
+有兩種方式，以新增<xref:System.Activities.Statements.PickBranch>活動的集合<xref:System.Activities.Statements.Pick>物件： 拖曳和卸除**PickBranch**設計工具**工具箱**或透過右鍵操作功能表內在**挑選**設計介面。 如需詳細資訊，請參閱 < [PickBranch](../workflow-designer/pickbranch-activity-designer.md)主題。 請注意，唯一項目可以置於**挑選**活動設計工具**PickBranch**活動設計工具。
 
 ### <a name="pick-activity-properties-in-the-workflow-designer"></a>工作流程設計工具中的 Pick 活動屬性
 

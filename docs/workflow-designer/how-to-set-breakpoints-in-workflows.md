@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3bd6e10732c0248206810c9690910a8bd2f09ccf
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 570e7c5b4ec64c4e21b53cef38b89a5846cc1bb7
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53849628"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269692"
 ---
 # <a name="how-to-set-breakpoints-in-workflows"></a>HOW TO：在工作流程中設定中斷點
 
@@ -37,7 +37,7 @@ ms.locfileid: "53849628"
 
 2. 在 **偵錯**功能表上，選取**切換中斷點**。 活動左邊的最上方會出現紅色圖示。
 
-   或者，您可以按**F9**選取活動，或者您可以在活動上按一下滑鼠右鍵並選取之後**中斷點** > **插入中斷點**從內容功能表。
+   或者，您可以按**F9**選取活動，或者您可以在活動上按一下滑鼠右鍵並選取之後**中斷點** > **插入中斷點**從快顯功能表。
 
 ## <a name="see-also"></a>另請參閱
 

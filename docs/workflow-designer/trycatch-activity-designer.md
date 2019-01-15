@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 280f844ec08ea5e75a78d2e9ea1596b0fb7162eb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a4a62b660f2deb2b3ab3a092cdfd586a56b2bcb8
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53858992"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269809"
 ---
 # <a name="trycatch-activity-designer"></a>TryCatch 活動設計工具
 
@@ -34,7 +34,7 @@ ms.locfileid: "53858992"
 
 按一下右上角的展開按鈕**TryCatch**設計工具，請參閱**嘗試**，**攔截**，以及**最後**中展開的檢視。 若要加入 catch，按一下**Přidat novou aktivitu catch**按鈕**TryCatch**設計工具。 按鈕會變更為型別下拉式方塊。 請選取例外狀況型別，並按 ENTER 鍵來加入 Catch。 在新增之後**攔截**catch 區域會展開，可以將活動置放於 catch 以定義 catch 的執行邏輯。 請注意，展開的 Catch 區域右側有一個文字方塊 您可以使用這個文字方塊來命名例外狀況變數。 例外狀況變數僅能在相同的活動**攔截**。
 
-**TryCatch**設計工具不支援編輯**攔截**。 如果您想要變更的例外狀況類型，您必須刪除**攔截**並加入新的。 A**攔截**可以在選取它，然後刪除它，或使用刪除**刪除**功能表以滑鼠右鍵按一下，即可存取操作功能表上的。
+**TryCatch**設計工具不支援編輯**攔截**。 如果您想要變更的例外狀況類型，您必須刪除**攔截**並加入新的。 A**攔截**選取它，然後刪除它，或選取可以刪除**刪除**存取以滑鼠右鍵按一下 [內容] 功能表上。
 
 ### <a name="the-trycatch-properties"></a>TryCatch 屬性
 

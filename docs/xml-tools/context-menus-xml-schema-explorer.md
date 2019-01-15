@@ -9,16 +9,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d38dea96b109db9d60014df9bf7d4d420308f195
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6a5a02169a76718d5abfd5f08bd6c03c7f7dda26
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53898891"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54270160"
 ---
 # <a name="context-menus-xml-schema-explorer"></a>操作功能表 （XML 結構描述總管）
 
-下列操作功能表項目用於執行結構描述特定搜尋和其他作業。
+內容功能表會出現的項目上按一下滑鼠右鍵功能表。 下列操作功能表項目用於執行結構描述特定搜尋和其他作業。
 
 ## <a name="node-type-schema-set"></a>節點型別：結構描述集合
 
