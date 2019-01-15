@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ab8d2a0e8e3a243828db3f39e95801eafeee5efb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: cbedf6454ae97ee97d29d836dd8f8012fb6ca222
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53825251"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269146"
 ---
 # <a name="xml-schema-designer-workspace"></a>XML 結構描述設計工具工作區
 
@@ -30,7 +30,7 @@ XML 結構描述設計工具 (XSD 設計工具) 是一種圖形化工具，可�
 
 -   將，全域節點、 檔案節點，以及從命名空間節點拖放**XML 結構描述總管**到任何三個檢視。 如需詳細資訊，請參閱 「 拖放節點 」 一節[XML 結構描述總管](../xml-tools/xml-schema-explorer.md)。
 
--   使用中的內容功能表**XML 結構描述總管**。 如需詳細資訊，請參閱 <<c0> [ 快顯功能表](../xml-tools/context-menus-xml-schema-explorer.md)。
+-   使用中的操作 （右鍵） 功能表**XML 結構描述總管**。 如需詳細資訊，請參閱 <<c0> [ 快顯功能表](../xml-tools/context-menus-xml-schema-explorer.md)。
 
 -   在 XSD 總管中執行搜尋，然後按一下**反白顯示的節點加入工作區**摘要結果面板上的按鈕。 如需詳細資訊，請參閱 <<c0> [ 搜尋結構描述集](../xml-tools/searching-the-schema-set.md)。
 
@@ -40,7 +40,7 @@ XML 結構描述設計工具 (XSD 設計工具) 是一種圖形化工具，可�
 
 -   XSD 設計工具工具列。
 
--   內容模型檢視和圖表檢視的內容功能表。
+-   內容模型檢視和 [圖表] 檢視的操作 （右鍵） 功能表。
 
 -   開始檢視頁上的浮水印，或空白內容模型檢視或圖表檢視上的浮水印。
 

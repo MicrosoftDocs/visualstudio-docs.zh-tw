@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: eb49560074b3a4c43efe13ea568207b52536e562
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 37733ddb09fb726c5407888af91db2bc32713799
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53918975"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54268496"
 ---
 # <a name="xml-schema-explorer"></a>XML 結構描述總管
 
@@ -40,7 +40,7 @@ ms.locfileid: "53918975"
 
 -   如果您是在[開始檢視](../xml-tools/start-view.md)，按一下**XML 結構描述總管**連結。
 
--   如果您是在[圖表檢視](../xml-tools/graph-view.md)或[內容模型檢視](../xml-tools/content-model-view.md)和在您的工作區中的節點，請使用操作功能表選取**XML 結構描述總管**。
+-   如果您是在[圖表檢視](../xml-tools/graph-view.md)或[內容模型檢視](../xml-tools/content-model-view.md)並在您的工作區中的節點，請使用操作 （右鍵） 功能表選取**XML 結構描述總管**。
 
 -   您也可以選取**XML 結構描述總管**從**檢視**功能表。
 

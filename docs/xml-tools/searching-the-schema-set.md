@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 26be8121c679cc2614440f8e28f52b383dbe944c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fdb4a680fc2bbfc9a55d93d17f9ef95d45fc6186
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53836565"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54270069"
 ---
 # <a name="search-the-schema-set"></a>搜尋結構描述集合
 
@@ -40,7 +40,7 @@ ms.locfileid: "53836565"
 
 ## <a name="schema-specific-search"></a>結構描述特定搜尋
 
- **XML 結構描述總管**也包含內建的搜尋，您可以使用操作功能表存取**XML 結構描述總管**。 如需可用的內容功能表的詳細資訊，請參閱[快顯功能表](../xml-tools/context-menus-xml-schema-explorer.md)。 您也可以從 [啟動] 檢視中，執行結構描述特有的搜尋如需詳細資訊，請參閱中的 < 結構描述設定的詳細資料 > 一節[開始檢視](../xml-tools/start-view.md)主題。
+ **XML 結構描述總管**也包含內建的搜尋，您可以存取使用的操作 （右鍵） 功能表**XML 結構描述總管**。 如需可用的內容功能表的詳細資訊，請參閱[快顯功能表](../xml-tools/context-menus-xml-schema-explorer.md)。 您也可以從 [啟動] 檢視中，執行結構描述特有的搜尋如需詳細資訊，請參閱中的 < 結構描述設定的詳細資料 > 一節[開始檢視](../xml-tools/start-view.md)主題。
 
 ## <a name="display-and-navigate-search-results"></a>顯示和瀏覽搜尋結果
 

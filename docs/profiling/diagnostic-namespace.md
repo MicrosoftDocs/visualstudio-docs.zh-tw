@@ -44,7 +44,7 @@ namespace diagnostic;
 |[marker_importance 列舉](../profiling/marker-importance-enumeration.md)|表示並行視覺化檢視標記的重要性層級。|  
   
 ## <a name="requirements"></a>需求  
- **標頭：***cvmarkersobj.h*  
+ **標頭：** *cvmarkersobj.h*  
   
  **命名空間：** 並行  
   

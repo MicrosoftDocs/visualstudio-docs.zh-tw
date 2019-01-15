@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 326a377cd93e15c52a699dfb83c7ec111866cc0c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4c092a4bcb419039b145bccf3f6c0cd952f0ff85
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53858652"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269575"
 ---
 # <a name="keyboard-shortcuts-in-the-workflow-designer"></a>工作流程設計中的鍵盤快速鍵
 
@@ -54,7 +54,7 @@ ms.locfileid: "53858652"
 
 - 若要調整流程圖的大小，請使用方向鍵將活動移出流程圖目前的框線外。 流程圖會自動調整大小。
 
-- 若要將活動設為 [啟動] 節點中，使用**Set as StartNode**的內容功能表命令。
+- 若要將活動設為 [啟動] 節點中，使用**Set as StartNode**中以滑鼠右鍵按一下功能表命令。
 
 - 若要連接活動：
 

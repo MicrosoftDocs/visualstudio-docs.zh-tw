@@ -8,20 +8,21 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: a741a506338066dddbee2cdbfd701ad3bfb4c922
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ea0b73470bc9f3bed76328c55d823cef3c5b8e9e
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53929694"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269315"
 ---
 # <a name="controlling-color-line-style-and-other-shape-properties"></a>控制色彩、線條樣式和其他圖形屬性
-某些圖形屬性例如色彩可以 '公開'-也就被連結至圖形的網域屬性。 人直接控制的狀態。
+
+某些圖形屬性，例如色彩可以 ' 公開 '。 亦即，屬性可以連結至圖形的網域屬性。 人直接控制的狀態。
 
 ## <a name="exposing-a-property"></a>公開屬性
  某些圖形屬性，例如色彩可以連結至網域屬性的值。
 
- 在 DSL 定義中，選取 圖形、 連接線或圖表類別。 其操作功能表上，選擇**加入已公開**，然後選擇您要填滿色彩等的屬性。
+ 在 DSL 定義中，選取 圖形、 連接線或圖表類別。 其以滑鼠右鍵按一下功能表上，選擇**加入已公開**，然後選擇您要填滿色彩等的屬性。
 
  圖形現在具有程式碼中，或以使用者身分，您可以設定的網域屬性。
 
