@@ -27,10 +27,10 @@ manager: douge
 ms.workload:
 - multiple
 ms.openlocfilehash: 804249700ff813de5a45e44787af4f39d4a82ad2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "53856679"
 ---
 # <a name="error-unable-to-start-debugging-on-the-web-server"></a>錯誤：無法在網頁伺服器上開始偵錯
@@ -51,7 +51,7 @@ ms.locfileid: "53856679"
 - [遠端伺服器傳回錯誤](#server_error)
 - [無法啟動 ASP.NET 偵錯](#aspnet)
 - [偵錯工具無法連接到遠端電腦](#cannot_connect)
-- [請參閱常見組態錯誤的說明。執行偵錯工具外部網頁即可提供詳細資訊。](#see_help)
+- [參閱常見組態錯誤的說明。執行偵錯工具外部網頁即可提供詳細資訊。](#see_help)
 
 ## <a name="IISlist"></a> IIS 沒有列出符合啟動的網站 url
 
@@ -61,7 +61,7 @@ ms.locfileid: "53856679"
 
 ## <a name="web_server_config"></a> 未正確設定網頁伺服器
 
-- 請參閱[錯誤：未正確設定網頁伺服器](../debugger/error-the-web-server-is-not-configured-correctly.md)
+- 請參閱[錯誤：](../debugger/error-the-web-server-is-not-configured-correctly.md) 未正確設定網頁伺服器
 
 ## <a name="unabletoconnect"></a> 無法連接到 web 伺服器
 

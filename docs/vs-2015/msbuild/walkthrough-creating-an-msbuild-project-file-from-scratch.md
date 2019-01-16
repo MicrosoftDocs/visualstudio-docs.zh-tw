@@ -1,5 +1,5 @@
 ---
-title: 逐步解說：從頭開始建立 MSBuild 專案檔案 | Microsoft Docs
+title: 逐步解說：從頭開始建立 MSBuild 專案檔 | Microsoft Docs
 ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -17,13 +17,13 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: ad32edc94bea49010dfb7073cacbd84419513783
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "49913887"
 ---
-# <a name="walkthrough-creating-an-msbuild-project-file-from-scratch"></a>逐步解說：從頭開始建立 MSBuild 專案檔案
+# <a name="walkthrough-creating-an-msbuild-project-file-from-scratch"></a>逐步解說：從頭建立 MSBuild 專案檔案
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
@@ -51,7 +51,7 @@ ms.locfileid: "49913887"
   
 - 以累加方式建置。  
   
-  此逐步解說會顯示如何在命令提示字元處建置專案，並檢查結果。 如需 MSBuild 的詳細資訊，以及如何在命令提示字元中執行 MSBuild，請參閱[逐步解說：使用 MSBuild](../msbuild/walkthrough-using-msbuild.md)。  
+  此逐步解說會顯示如何在命令提示字元處建置專案，並檢查結果。 如需 MSBuild，以及如何在命令提示字元中執行 MSBuild 的詳細資訊，請參閱[逐步解說：使用 MSBuild](../msbuild/walkthrough-using-msbuild.md)。  
   
   若要完成逐步解說，您必須已安裝 .NET Framework (2.0、3.5、4.0 或 4.5 版)，因為它包含此逐步解說所需的 MSBuild 和 Visual C# 編譯器。  
   
@@ -146,10 +146,10 @@ ms.locfileid: "49913887"
 ```  
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
   <ItemGroup>  
-    <Compile Include="helloworld.cs" />  
+    <Compile Include="helloworld.cs" />  
   </ItemGroup>  
   <Target Name="Build">  
-    <Csc Sources="@(Compile)"/>    
+    <Csc Sources="@(Compile)"/>    
   </Target>  
 </Project>  
 ```  
@@ -239,7 +239,7 @@ ms.locfileid: "49913887"
     <OutputPath>Bin\</OutputPath>  
   </PropertyGroup>  
   <ItemGroup>  
-    <Compile Include="helloworld.cs" />  
+    <Compile Include="helloworld.cs" />  
   </ItemGroup>  
   <Target Name="Build">  
     <MakeDir Directories="$(OutputPath)" Condition="!Exists('$(OutputPath)')" />  
@@ -315,7 +315,7 @@ ms.locfileid: "49913887"
     <OutputPath>Bin\</OutputPath>  
   </PropertyGroup>  
   <ItemGroup>  
-    <Compile Include="helloworld.cs" />  
+    <Compile Include="helloworld.cs" />  
   </ItemGroup>  
   <Target Name="Build">  
     <MakeDir Directories="$(OutputPath)" Condition="!Exists('$(OutputPath)')" />  
@@ -407,7 +407,7 @@ ms.locfileid: "49913887"
   
 ## <a name="example"></a>範例  
   
-### <a name="description"></a>描述  
+### <a name="description"></a>說明  
  下列範例顯示的專案檔會編譯 [!INCLUDE[csprcs](../includes/csprcs-md.md)] 應用程式，並記錄包含輸出檔名稱的訊息。  
   
 ### <a name="code"></a>程式碼  
@@ -447,7 +447,7 @@ ms.locfileid: "49913887"
   
 ## <a name="example"></a>範例  
   
-### <a name="description"></a>描述  
+### <a name="description"></a>說明  
  下列範例顯示的專案檔會編譯 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 應用程式，並記錄包含輸出檔名稱的訊息。  
   
 ### <a name="code"></a>程式碼  
@@ -486,7 +486,7 @@ ms.locfileid: "49913887"
 ## <a name="whats-next"></a>後續步驟？  
  Visual Studio 可以自動執行本逐步解說中提及的大量工作。 若要了解如何使用 Visual Studio 建立、編輯、建置及測試 MSBuild 專案檔，請參閱[逐步解說：使用 MSBuild](../msbuild/walkthrough-using-msbuild.md)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
 [MSBuild 概觀](msbuild.md)  
  [MSBuild 參考](../msbuild/msbuild-reference.md)
 

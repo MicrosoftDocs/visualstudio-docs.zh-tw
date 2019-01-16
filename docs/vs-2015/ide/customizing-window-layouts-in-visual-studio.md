@@ -29,10 +29,10 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.openlocfilehash: 7a0f6b087f512750ae729d52c0855e3d4981d330
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "53934371"
 ---
 # <a name="customizing-window-layouts-in-visual-studio"></a>在 Visual Studio 中自訂視窗版面配置
@@ -57,7 +57,7 @@ ms.locfileid: "53934371"
  若您必須在文件中一次檢視或編輯兩個位置，則可分割視窗。 若要將文件分割成兩個獨立的捲動區段，請按一下 [視窗]  功能表上的 [分割]  。 按一下 [視窗]  功能表上的 [移除分割]  ，以還原單一檢視。
 
 ### <a name="toolbars"></a>工具列
- 您可透過拖曳或使用 [自訂]  對話方塊，以排列工具列。 如需如何定位及自訂工具列的詳細資訊，請參閱[How to:自訂功能表與工具列](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md)。
+ 您可透過拖曳或使用 [自訂]  對話方塊，以排列工具列。 如需如何定位及自訂工具列的詳細資訊，請參閱[如何：自訂功能表與工具列](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md)。
 
 ## <a name="arranging-and-docking-windows"></a>排列和固定視窗
  您可 *固定*文件視窗和工具視窗，以將其在 IDE 視窗框架內定位和調整大小，或是做為獨立於 IDE 的個別浮動視窗。 工具視窗可固定於 IDE 框架內的任一處；某些工具視窗可在編輯器框架中固定為索引視窗。 文件視窗可固定於編輯器框架內，且可依定位順序鎖定至目前的位置。 您可固定多個視窗，以將這些視窗一次「浮動定位」於 IDE 上方或外部。 您亦可隱藏或最小化工具視窗。
