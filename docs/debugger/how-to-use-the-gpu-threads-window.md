@@ -18,14 +18,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e3124f98855f5f7f303aff0d9e8b2608abbbeba
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: f2ee235f5daf0c18bd30fcf804c0672427dc9624
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53871313"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227339"
 ---
-# <a name="how-to-use-the-gpu-threads-window"></a>HOW TO：使用 GPU 執行緒視窗
+# <a name="how-to-use-the-gpu-threads-window-c"></a>HOW TO：使用 [GPU 執行緒] 視窗 （c + +）
 在 [GPU 執行緒] 視窗中，您可以檢查和處理正在偵錯的應用程式中，於 GPU 上執行的執行緒。 如需有關在 GPU 執行的應用程式的詳細資訊，請參閱[c + + AMP 概觀](/cpp/parallel/amp/cpp-amp-overview)。  
   
  [GPU 執行緒] 視窗包含一個資料表，其中每一個資料列代表一組在所有資料行中具有相同值的 GPU 執行緒。 您可以將資料行中的項目排序、重新排列、移除和設為群組。 您可以從 [GPU 執行緒] 視窗將執行緒加上旗標、取消旗標、凍結 (暫止) 和解除凍結 (繼續)。 下列各資料行會在 [GPU 執行緒] 視窗中顯示：  
@@ -68,7 +68,7 @@ ms.locfileid: "53871313"
   
 ### <a name="to-switch-to-a-different-thread"></a>若要切換至不同的執行緒  
   
--   按兩下資料行  鍵盤選取資料列，然後選擇 enter 鍵。）  
+-   按兩下資料行  (鍵盤：選取資料列，然後選擇 enter 鍵。）  
   
 ### <a name="to-display-a-particular-tile-and-thread"></a>若要顯示特定 Tile 和執行緒  
   

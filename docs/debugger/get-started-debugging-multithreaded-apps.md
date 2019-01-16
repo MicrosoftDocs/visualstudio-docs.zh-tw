@@ -3,7 +3,6 @@ title: 了解如何偵錯多執行緒應用程式
 description: 使用 平行堆疊 和 平行監看式的視窗，在 Visual Studio 中偵錯
 ms.custom: H1HackMay2017
 ms.date: 11/16/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -19,14 +18,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a6ded522a917dd7207da7731850303535e19fdb
-ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
-ms.translationtype: MT
+ms.openlocfilehash: 95a198213daa90a1370cba056a8c522495e06c94
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "51948981"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227976"
 ---
-# <a name="get-started-debugging-multithreaded-applications"></a>開始偵錯多執行緒應用程式
+# <a name="get-started-debugging-multithreaded-applications-c-visual-basic-c"></a>開始偵錯多執行緒應用程式 (C#，Visual Basic、 c + +)
 Visual Studio 提供數個工具和可協助您偵錯多執行緒應用程式的使用者介面項目。 本教學課程示範如何使用執行緒標記**平行堆疊** 視窗中，**平行監看式**視窗、 條件式中斷點和篩選中斷點。 完成本教學課程將讓您熟悉 Visual Studio 進行偵錯多執行緒應用程式的功能。
 
 | | |
@@ -35,9 +34,9 @@ Visual Studio 提供數個工具和可協助您偵錯多執行緒應用程式的
 
 下列兩個主題提供有關使用其他的多執行緒偵錯工具的其他資訊：
 
-- 若要使用**偵錯位置**工具列並**執行緒**視窗中，請參閱[逐步解說： 偵錯多執行緒應用程式](../debugger/how-to-use-the-threads-window.md)。
+- 若要使用**偵錯位置**工具列並**執行緒**視窗中，請參閱[逐步解說：偵錯多執行緒應用程式](../debugger/how-to-use-the-threads-window.md)。
 
-- 如需範例，會使用<xref:System.Threading.Tasks.Task>(managed 程式碼) 和並行執行階段 （c + +），請參閱[逐步解說： 偵錯平行應用程式](../debugger/walkthrough-debugging-a-parallel-application.md)。 如需適用於最多執行緒應用程式類型的一般偵錯秘訣，閱讀該主題，並如下。
+- 如需範例，會使用<xref:System.Threading.Tasks.Task>(managed 程式碼) 和並行執行階段 （c + +），請參閱[逐步解說：對平行應用程式進行偵錯](../debugger/walkthrough-debugging-a-parallel-application.md) 如需適用於最多執行緒應用程式類型的一般偵錯秘訣，閱讀該主題，並如下。
   
 您必須先在多執行緒應用程式專案。 範例如下。  
   
@@ -47,7 +46,7 @@ Visual Studio 提供數個工具和可協助您偵錯多執行緒應用程式的
   
      [ **新增專案** ] 對話方塊隨即出現。  
   
-2.  選取的語言： **Visual C#** ， **Visual c + +**，或**Visual Basic**。  
+2.  選擇語言**視覺化C#** ， **Visual c + +**，或**Visual Basic**。  
   
 3.  底下**Windows 桌面**，選擇**主控台應用程式**。  
   
@@ -194,7 +193,7 @@ Visual Studio 提供數個工具和可協助您偵錯多執行緒應用程式的
     End Class
     ```
   
-7.  在 **檔案**功能表上，選取**全部儲存**。  
+7.  在 [檔案] 功能表中，選取 [全部儲存]。  
   
 ## <a name="debug-the-multithreaded-app"></a>偵錯多執行緒應用程式  
   
@@ -258,7 +257,7 @@ Visual Studio 提供數個工具和可協助您偵錯多執行緒應用程式的
     您可以採取各種動作，從這些以滑鼠右鍵按一下功能表中，但本教學課程中我們將會顯示更多中的這些詳細資料**平行監看式**視窗 （下一節）。
 
     > [!NOTE]
-    > 若要查看清單檢視，每個執行緒的相關資訊，請使用**執行緒**視窗改。 請參閱[逐步解說： 偵錯多執行緒應用程式](../debugger/how-to-use-the-threads-window.md)。
+    > 若要查看清單檢視，每個執行緒的相關資訊，請使用**執行緒**視窗改。 請參閱[逐步解說：偵錯多執行緒應用程式](../debugger/how-to-use-the-threads-window.md)。
 
 ### <a name="set-a-watch-on-a-variable"></a>設定變數的監看式
 
@@ -346,5 +345,5 @@ Visual Studio 提供數個工具和可協助您偵錯多執行緒應用程式的
 ## <a name="see-also"></a>另請參閱  
 [偵錯多執行緒應用程式](../debugger/debug-multithreaded-applications-in-visual-studio.md)  
 [如何：在偵錯時切換到另一個執行緒](../debugger/how-to-switch-to-another-thread-while-debugging.md)  
-[如何： 使用平行堆疊視窗](../debugger/using-the-parallel-stacks-window.md)  
+[如何：使用 [平行堆疊] 視窗](../debugger/using-the-parallel-stacks-window.md)  
 [如何：使用平行監看式視窗](../debugger/how-to-use-the-parallel-watch-window.md)  

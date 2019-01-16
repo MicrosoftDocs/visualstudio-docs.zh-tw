@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6343366478e360631b5a50c8c6d36ca4b31c27cf
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: cc8cbf7e087e2198071aef9f77c109f3a7c71640
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53853927"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54268564"
 ---
 # <a name="how-to-debug-com-servers"></a>HOW TO：針對 COM 伺服器進行偵錯
 偵錯 COM 伺服器應用程式會有一組特有難以解決的問題。  
@@ -47,4 +47,4 @@ ms.locfileid: "53853927"
  [如何：使用 RPC 偵錯對 COM 用戶端和伺服器進行偵錯](../debugger/how-to-debug-com-clients-and-servers-using-rpc-debugging.md)   
  [COM 伺服器和容器偵錯](../debugger/com-server-and-container-debugging.md)   
  [Visual Studio 偵錯](../debugger/index.md)  
- [偵錯工具功能導覽](../debugger/debugger-feature-tour.md)
+ [偵錯工具簡介](../debugger/debugger-feature-tour.md)

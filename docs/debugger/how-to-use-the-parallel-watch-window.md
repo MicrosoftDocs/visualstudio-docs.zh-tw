@@ -17,14 +17,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 60df60db40124e6b0bda03c3a87626a4398135a3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: 75ffa4075c58750834558f38dcd2e2fcacc0d358
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53946980"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227313"
 ---
-# <a name="set-a-watch-on-variables-in-parallel-threads-in-visual-studio"></a>在 Visual Studio 中的平行執行緒中的變數設定監看式
+# <a name="set-a-watch-on-variables-in-parallel-threads-in-visual-studio-c-visual-basic-c"></a>在 Visual Studio 中的平行執行緒中的變數設定監看式 (C#，Visual Basic、 c + +)
 在 [平行監看式] 視窗中，您可以同時在多個執行緒上顯示某個運算式保存的值。 每一列代表應用程式中執行的一個執行緒，不過一個執行緒可能在多列上表示。 更精確的說，每一列代表一個函式呼叫，該函式呼叫的簽章與目前堆疊框架上的函式相符。 您可以將資料行中的項目排序、重新排列、移除和設為群組。 您可以將執行緒加上旗標、取消旗標、凍結 (暫止) 和解除凍結 (繼續)。 下列資料行會在 [平行監看式] 視窗中顯示：  
   
 - 旗標資料行，您可以在該資料行中標示想要特別注意的執行緒。  
@@ -34,7 +34,7 @@ ms.locfileid: "53946980"
 - 可以顯示電腦、處理序、Tile、工作和執行緒的可設定資料行。  
   
   > [!TIP]
-  >  顯示工作中的資訊**平行監看式** 視窗中，您必須先開啟**工作**視窗。  
+  >  若要顯示在 [工作資訊**平行監看式**] 視窗中，您必須先開啟**工作**視窗。  
   
 - 空白*新增監看式*資料行，您可以在其中輸入要監看的運算式。  
   
@@ -62,7 +62,7 @@ ms.locfileid: "53946980"
   
 ### <a name="to-switch-to-another-thread"></a>若要切換至另一個執行緒  
   
--   按兩下目前的執行緒資料行 （第二個資料行）。 鍵盤選取資料列，然後按 Enter 鍵。）  
+-   按兩下目前的執行緒資料行 （第二個資料行）。 (鍵盤：選取資料列，然後按 Enter 鍵。）  
   
 ### <a name="to-sort-a-column"></a>若要排序資料行  
   

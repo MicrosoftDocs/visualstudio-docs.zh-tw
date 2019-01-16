@@ -7,16 +7,15 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
 - dotnet
-ms.openlocfilehash: bf28747e8bd111767fbe314cbb658a38ef059ae2
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 24da256ac835e477465845714cc844ac5bb305d7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53066336"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53872748"
 ---
 # <a name="visual-studio-data-tools-for-net"></a>適用於 .NET 的 Visual Studio Data Tools
 

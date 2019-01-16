@@ -26,12 +26,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d9df8a9dfeef620ba7afab517bc00e16717e7096
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 42ac7749052fdec3ef9f6cb318af4dc0302e1465
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53874215"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269256"
 ---
 # <a name="how-to-debug-com-clients-and-servers-using-rpc-debugging"></a>HOW TO：使用 RPC 偵錯對 COM 用戶端和伺服器進行偵錯
 您可使用遠端程序呼叫 (Remote Procedure Call，RPC) 偵錯功能，對 COM 用戶端/伺服器應用程式偵錯。 您必須啟用 RPC 偵錯才能使用它。 啟用 RPC 偵錯後，當您從用戶端逐步執行伺服器呼叫時，偵錯工具會附加至伺服器，讓您偵錯其程式碼。 附加偵錯工具後，您就能夠對用戶端和伺服器處理序，使用偵錯工具的所有功能。  
@@ -54,4 +54,5 @@ ms.locfileid: "53874215"
   
 ## <a name="see-also"></a>請參閱  
  [COM 伺服器和容器偵錯](../debugger/com-server-and-container-debugging.md)  
- [在 Visual Studio 中偵錯](../debugger/index.md)[偵錯工具功能導覽](../debugger/debugger-feature-tour.md)
+ [Visual Studio 偵錯](../debugger/index.md)  
+ [偵錯工具簡介](../debugger/debugger-feature-tour.md)

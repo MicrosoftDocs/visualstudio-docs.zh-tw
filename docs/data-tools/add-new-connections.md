@@ -8,12 +8,12 @@ manager: douge
 ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 927edacf968ed92eddea96f93cc4f67cbd137fcc
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: 73b09384bd57fd4ea0890d107ce641e4b615559f
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53880594"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154214"
 ---
 # <a name="add-new-connections"></a>新增連線
 
@@ -25,7 +25,7 @@ ms.locfileid: "53880594"
 
 - Cloud Explorer
 
-   選取此視窗手動安裝為 Visual Studio 延伸模組**工具** > **擴充功能和更新** > **線上** >  **Visual Studio Markeplace**。 提供探索及連接到 Azure 服務的特製化的功能。
+   選取此視窗手動安裝為 Visual Studio 延伸模組**工具** > **擴充功能和更新** > **線上** >  **Visual Studio Marketplace**。 提供探索及連接到 Azure 服務的特製化的功能。
 
 - SQL Server 物件總管
 

@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
@@ -16,12 +15,12 @@ caps.latest.revision: 67
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9e43236c32f0ce7e4e260a1d44b1e64600b6dd17
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: b9e2f3bf3525977689bcc5bbf917722da76ea9e9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53802247"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53910460"
 ---
 # <a name="get-started-developing-with-visual-studio"></a>Get Started Developing with Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

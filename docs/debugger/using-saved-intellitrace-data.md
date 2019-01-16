@@ -15,14 +15,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ffcb30827906438a848051226d59794a7d5641a5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c348bc105d997e07dcbc6ee373c2952e16c572cf
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53836906"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227781"
 ---
-# <a name="using-saved-intellitrace-data"></a>使用儲存的 IntelliTrace 資料
+# <a name="using-saved-intellitrace-data-c-visual-basic-c"></a>使用儲存的 IntelliTrace 資料 (C#，Visual Basic、 c + +)
+
 當您從 IntelliTrace (.iTrace) 記錄檔開始進行偵錯時，請移至您的應用程式執行中的特定點。 這個檔案可能會包含 IntelliTrace 在 App 執行時所記錄的效能事件、例外狀況、執行緒、測試步驟、模組及其他系統資訊。
 
  請確定您已符合下列條件：
@@ -108,7 +109,7 @@ ms.locfileid: "53836906"
 
 3.  展開該呼叫，以檢閱該時間點所記錄的所有巢狀呼叫和參數值。
 
-     鍵盤若要顯示或隱藏巢狀的呼叫，請按**向右箭號**或是**向左鍵**分別。 若要顯示和隱藏巢狀呼叫的參數值，請按 **空格鍵** )
+     (鍵盤：若要顯示或隱藏巢狀的呼叫，請按**向右箭號**或是**向左鍵**分別。 若要顯示和隱藏巢狀呼叫的參數值，請按 **空格鍵** )
 
      從該呼叫開始偵錯。
 

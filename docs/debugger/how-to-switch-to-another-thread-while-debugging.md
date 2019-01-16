@@ -16,14 +16,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 202c153108558d1bf74a10b41b34c5b164ec1587
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5a8fd2106d4982f8e840974bc659d2296cf8c592
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53990697"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227521"
 ---
-# <a name="how-to-switch-to-another-thread-while-debugging-in-visual-studio"></a>HOW TO：在 Visual Studio 中偵錯時切換到另一個執行緒
+# <a name="how-to-switch-to-another-thread-while-debugging-in-visual-studio-c-visual-basic-c"></a>HOW TO：在 Visual Studio 中偵錯時切換到另一個執行緒 (C#，Visual Basic、 c + +)
 當您偵錯多執行緒應用程式時，您可以使用其中幾種方法，從您已使用另一個執行緒的執行緒切換。
 
 > [!NOTE]

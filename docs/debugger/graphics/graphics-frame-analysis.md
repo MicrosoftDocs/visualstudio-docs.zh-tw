@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 92273fab869c076dbf0949ef636dc669f892ec0a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: 4aced0df16791e44c7fd8be67ccc22343b1272fa
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53875637"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154372"
 ---
 # <a name="graphics-frame-analysis"></a>圖形畫面格分析
 使用 Visual Studio 圖形分析器中的圖形畫面格分析，分析和最佳化 Direct3D 遊戲或應用程式的轉譯效能。  
@@ -91,7 +91,7 @@ ms.locfileid: "53875637"
 #### <a name="statistical-significance"></a>統計顯著性  
  為了使人注意到具有最高關聯性的呈現變異，畫面格分析會判斷每個呈現變異的統計顯著性，並將最顯著的呈現變異顯示為粗體。 它會將可改善效能的呈現變異顯示為綠色，並將可讓效能下降的呈現變異顯示為紅色。 它會將沒有統計顯著性的結果顯示為標準類型。  
   
- ![繪製呼叫變數的統計相關](media/pix_frame_analysis_summary_stats.png "pix_frame_analysis_summary_stats")  
+ ![繪製呼叫變數的統計相關性](media/pix_frame_analysis_summary_stats.png "pix_frame_analysis_summary_stats")  
   
  若要判斷統計關聯性，畫面格分析會使用[學生的 t 檢定](http://www.wikipedia.org/wiki/Student%27s_t-test)。  
   

@@ -2,7 +2,6 @@
 title: 附加至執行中處理序偵錯工具 |Microsoft Docs
 ms.custom: seodec18
 ms.date: 09/27/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.processes.attach
@@ -29,12 +28,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 499e1200f858530db0caad69d93bd4416f756405
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.openlocfilehash: 0d2609c76c39924794e2a9623e9e70c037c20415
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53561638"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53899609"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>使用 Visual Studio 偵錯工具附加至執行中處理序
 您可以將 Visual Studio 偵錯工具附加至本機或遠端電腦上執行的處理序。 此程序執行之後，請選取**偵錯** > **připojit k procesu**或按**Ctrl**+**Alt** +**P**在 Visual Studio 中，並使用**附加至處理序**對話方塊，即可將偵錯工具附加至處理程序。
@@ -210,4 +209,3 @@ ms.locfileid: "53561638"
  [針對多重處理序進行偵錯](../debugger/debug-multiple-processes.md)   
  [Just-In-Time 偵錯](../debugger/just-in-time-debugging-in-visual-studio.md)   
  [遠端偵錯](../debugger/remote-debugging.md)
- 

@@ -17,14 +17,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b75f8ddff8aa210ef09423dc4ba12589c479f3f5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: f868041449e622ddbd5cf177a0aa22771fd48498
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53889152"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227534"
 ---
-# <a name="using-debuggertypeproxy-attribute"></a>使用 DebuggerTypeProxy 屬性
+# <a name="using-debuggertypeproxy-attribute-c-visual-basic-ccli"></a>使用 DebuggerTypeProxy 屬性 (C#，Visual Basic、 C + + /cli CLI)
 
 <xref:System.Diagnostics.DebuggerTypeProxyAttribute> 會指定類型的 Proxy (或替代)，並且變更在偵錯工具視窗中顯示類型的方式。 當您檢視有 Proxy 的變數時，Proxy 會替代 [顯示] 中的原始類型。 偵錯工具變數視窗只會顯示 proxy 型別的 Public 成員。 私用成員不會顯示。
 
@@ -33,6 +33,9 @@ ms.locfileid: "53889152"
 - 結構
 - 類別
 - 組件
+
+> [!NOTE]
+> 原生程式碼，這個屬性只支援 C + + /cli 程式碼。
 
 類型 Proxy 類別必須具有建構函式，才能接受 Proxy 將取代之類型的引數。 每次需要顯示目標類型的變數時，偵錯工具都會建立類型 Proxy 類別的新執行個體。 這種行為可能會影響效能。 因此，除非絕對必要，否則不要在建構函式中再執行任何作業。
 

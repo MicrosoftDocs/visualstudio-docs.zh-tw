@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
@@ -17,19 +16,19 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ae06d11e1bdd193ebda5223c7c638c3132984147
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 3d94289baf5cd7b3e4724f205dbfcb5e0ff227eb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53052646"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53931053"
 ---
 # <a name="compiling-and-building-in-visual-studio"></a>在 Visual Studio 中編譯與建置
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 您可以在開發週期期間，經常地使用 Visual Studio 來建置應用程式，並建立組件和可執行程式。 藉由經常建置程式碼，您可以更早識別編譯時期錯誤，例如錯誤的語法、拼錯的關鍵字和類型不相符。 您也可以藉由經常建置和執行程式碼的偵錯版本，偵測並修正執行階段錯誤，例如邏輯錯誤和語意錯誤。
 
- 當您完整地開發並充分偵錯專案或方案時，就可以將其元件編譯在發行組建中。 根據預設，發行組建已最佳化，並設計成更小且執行速度比偵錯版本快。 如需詳細資訊，請參閱[逐步解說：建立應用程式 ](../ide/walkthrough-building-an-application.md)
+ 當您完整地開發並充分偵錯專案或方案時，就可以將其元件編譯在發行組建中。 根據預設，發行組建已最佳化，並設計成更小且執行速度比偵錯版本快。 如需詳細資訊，請參閱[逐步解說：建置應用程式](../ide/walkthrough-building-an-application.md)。
 
 ## <a name="choosing-a-build-method"></a>選擇建置方法
  您可以在 IDE 中使用預設組建選項、在命令提示字元，或使用 Team Foundation Build 來建置應用程式。 每個選項都使用 MSBuild 作為基礎的技術，且每一種方法都具有特定的優點，如下表所示。

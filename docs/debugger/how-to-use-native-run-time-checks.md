@@ -37,12 +37,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c5f71d6b201213b86caaf9d6e9761975493550a6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: ae7b736a3273a9b20af0ee0be035a3059c473d67
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53830952"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269640"
 ---
 # <a name="how-to-use-native-run-time-checks"></a>HOW TO：使用原生執行階段檢查
 您可以在 Visual C++ 中使用原生 [runtime_checks](/cpp/preprocessor/runtime-checks) 來攔截最常見的執行階段錯誤，例如：  
@@ -79,6 +79,6 @@ ms.locfileid: "53830952"
   
 ## <a name="see-also"></a>請參閱  
  [Visual Studio 偵錯](../debugger/index.md)  
- [偵錯工具功能導覽](../debugger/debugger-feature-tour.md)   
+ [偵錯工具簡介](../debugger/debugger-feature-tour.md)   
  [runtime_checks](/cpp/preprocessor/runtime-checks)   
  [執行階段錯誤檢查](/cpp/c-runtime-library/run-time-error-checking)

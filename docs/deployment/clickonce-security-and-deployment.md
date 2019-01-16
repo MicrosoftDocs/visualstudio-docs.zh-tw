@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: db3239dcb3f4068f41ebd21ad06db09756cbad51
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: c2f0ba5d49e0c8a02755bfc9d23d486dcf7f2943
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53923110"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154346"
 ---
 # <a name="clickonce-security-and-deployment"></a>ClickOnce 安全性和部署
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 是一種部署技術，可讓您建立自行更新以 Windows 為基礎的應用程式可以安裝並執行最少使用者介入。 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 提供完整的支援發佈及更新應用程式部署與 ClickOnce 技術，如果您在開發您的專案與 Visual Basic 和 Visual C#。 部署 Visual c + + 應用程式的相關資訊，請參閱[Visual c + + 應用程式的 ClickOnce 部署](/cpp/ide/clickonce-deployment-for-visual-cpp-applications)。  
@@ -51,7 +51,7 @@ ms.locfileid: "53923110"
  Authenticode 憑證用來驗證的應用程式發行者真偽。 藉由使用 Authenticode 部署應用程式，ClickOnce 會有助於防止有害的程式本身公家來自於已建立、 可信任來源的合法程式。 或者，也可以使用憑證簽署應用程式和部署資訊清單，以證明檔案未已遭竄改。 如需詳細資訊，請參閱 < [ClickOnce 和 Authenticode](../deployment/clickonce-and-authenticode.md)。 憑證也可用來設定用戶端電腦有一份受信任的發行者。 如果應用程式來自受信任的發行者，則它可以安裝沒有任何使用者互動。 如需詳細資訊，請參閱[受信任的應用程式部署概觀](../deployment/trusted-application-deployment-overview.md)。  
   
 ### <a name="code-access-security"></a>程式碼存取安全性  
- 程式碼存取 secrity 有助於限制程式碼對受保護資源的存取權。 在大部分情況下，您可以選擇的網際網路或近端內部網路區域，以限制權限。 使用**安全性**頁面**ProjectDesigner**要求適用於應用程式的區域。 您也可以偵錯應用程式，以限制權限來模擬的使用者體驗。 如需詳細資訊，請參閱 [ClickOnce 應用程式的程式碼存取安全性](../deployment/code-access-security-for-clickonce-applications.md)。  
+ 程式碼存取安全性有助於限制程式碼對受保護資源的存取權。 在大部分情況下，您可以選擇的網際網路或近端內部網路區域，以限制權限。 使用**安全性**頁面**ProjectDesigner**要求適用於應用程式的區域。 您也可以偵錯應用程式，以限制權限來模擬的使用者體驗。 如需詳細資訊，請參閱 [ClickOnce 應用程式的程式碼存取安全性](../deployment/code-access-security-for-clickonce-applications.md)。  
   
 ### <a name="clickonce-trust-prompt"></a>ClickOnce 信任提示  
  如果應用程式要求更多的權限超過允許的區域，您就可以提示使用者進行信任決策。 使用者可以決定是否受信任而得以執行 ClickOnce 應用程式，例如 Windows Forms 應用程式、 Windows Presentation Foundation 應用程式、 主控台應用程式、 XAML 瀏覽器應用程式，以及 Office 方案。 如需詳細資訊，請參閱[＜How to：設定 ClickOnce 信任提示行為](../deployment/how-to-configure-the-clickonce-trust-prompt-behavior.md)。  

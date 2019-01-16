@@ -1,8 +1,6 @@
 ---
 title: 建立呼叫堆疊的視覺導覽圖 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/26/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.progression.debugwithcodemaps
@@ -31,18 +29,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ede973d96ffe21fb9406bb471400ffa8e2b69251
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: b8a00ca75135c2c2f29ef04d428e028e31054480
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389574"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53960835"
 ---
 # <a name="create-a-visual-map-of-the-call-stack-while-debugging"></a>偵錯時建立的視覺效果的對應呼叫堆疊 
 
 在您偵錯時建立 Code Map 以視覺方式追蹤呼叫堆疊。 您可以在地圖上做筆記來追蹤程式碼的執行狀況，以便專注於尋找 Bug。
 
-如需逐步解說，觀看此影片：[視訊： 使用 Code Map 偵錯工具整合 (Channel 9) 以視覺化方式進行偵錯](http://go.microsoft.com/fwlink/?LinkId=293418)
+如需逐步解說中，觀看此影片：[影片：使用 Code Map 偵錯工具整合 (Channel 9) 以視覺化方式進行偵錯](http://go.microsoft.com/fwlink/?LinkId=293418)
 
 如需命令和動作，您可以使用 code map 的詳細資訊，請參閱 <<c0> [ 瀏覽和重新整理 code map](../modeling/browse-and-rearrange-code-maps.md)。
 

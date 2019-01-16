@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1dca4e8c0dd9317406603dcf4cd1bc93190fede3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: 6d75b045e16ce6435568b5bb6993a74f3123f779
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53820853"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269601"
 ---
 # <a name="com-and-activex-debugging"></a>偵錯 COM 和 ActiveX
 本章節提供有關偵錯 COM 應用程式和 ActiveX 控制項的秘訣。  
@@ -42,7 +42,7 @@ ms.locfileid: "53820853"
  列出可能在偵錯 COM 應用程式時有所幫助的檢視器和範例應用程式。  
   
 ## <a name="related-sections"></a>相關章節  
- [偵錯工具功能導覽](../debugger/debugger-feature-tour.md)  
+ [偵錯工具簡介](../debugger/debugger-feature-tour.md)  
  提供偵錯相關文件的主要連結。 這些資訊包括：偵錯工具的新功能、設定和準備、中斷點、例外狀況處理、編輯後繼續、Managed 程式碼的偵錯、Visual C++ 專案的偵錯、COM 和 ActiveX 的偵錯、DLL 偵錯、SQL 偵錯，以及使用者介面的參考。  
   
 ## <a name="see-also"></a>請參閱  

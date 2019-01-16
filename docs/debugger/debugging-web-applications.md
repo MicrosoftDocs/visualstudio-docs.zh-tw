@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f494e365de28603d2231323fa1ab501b826c28e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9f8827bea4ad3819c7915c34793dfe3b2164d5bb
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53923031"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269627"
 ---
 # <a name="debugging-web-applications"></a>偵錯 Web 應用程式
 本節將說明如何偵錯數種類型的 Web 應用程式。  
@@ -37,7 +37,7 @@ ms.locfileid: "53923031"
  說明啟用 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 應用程式偵錯的必要步驟。  
   
 ## <a name="see-also"></a>請參閱  
- [偵錯 Web 應用程式和指令碼](/visualstudio/debugger/how-to-enable-debugging-for-aspnet-applications)   
- [偵錯設定和準備](../debugger/debugger-settings-and-preparation.md)   
- [第一次查看偵錯工具](../debugger/debugger-feature-tour.md) [Visual Studio 偵錯](../debugger/index.md)  
- [偵錯工具功能導覽](../debugger/debugger-feature-tour.md)
+ [偵錯 Web 應用程式和指令碼](/visualstudio/debugger/how-to-enable-debugging-for-aspnet-applications)  
+ [偵錯設定和準備](../debugger/debugger-settings-and-preparation.md)  
+ [偵錯工具簡介](../debugger/debugger-feature-tour.md)  
+ [Visual Studio 偵錯](../debugger/index.md)
