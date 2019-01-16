@@ -1,8 +1,6 @@
 ---
 title: 建立 ClickOnce 應用程式供其他人部署 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -26,12 +24,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b74e8a988505c5386b444df27f7726a8ceb51a62
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 8e5b0d5abde8ae58628f05765c170b9979738275
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49870769"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53878766"
 ---
 # <a name="create-clickonce-applications-for-others-to-deploy"></a>建立 ClickOnce 應用程式供其他人部署
 並非所有的開發人員會建立 ClickOnce 部署計劃部署應用程式本身。 多個封裝使用 ClickOnce 應用程式，然後遞交檔案給客戶，例如大型公司。 客戶會變成負責裝載其網路上的應用程式。 本主題討論某些這類部署中的.NET Framework 3.5 版之前版本的問題。 然後，它會描述.NET Framework 3.5 中使用新的 [使用信任的資訊清單] 功能來提供新的方案。 最後，最後建立的客戶仍在使用舊版.NET Framework 的 ClickOnce 部署的建議策略。  
@@ -58,14 +56,14 @@ ms.locfileid: "49870769"
   
  使用自我簽署的憑證的部署資訊清單有幾個優點。 取得或建立自己的 Authenticode 憑證，客戶無須`<useManifestForTrust>`可簡化部署的客戶，同時讓開發人員維護自己的應用程式的商標身分識別。 結果是一組的帶正負號的部署更安全且具有唯一的應用程式身分識別。 這樣就不可能從同一個應用程式部署至多個客戶可能會發生的衝突。  
   
- 如需如何建立與 ClickOnce 部署的逐步資訊`<useManifestForTrust>`啟用，請參閱[逐步解說： 手動部署 ClickOnce 應用程式不需要重新簽署而且會保留商標資訊](../deployment/walkthrough-manually-deploying-a-clickonce-app-no-re-signing-required.md).  
+ 如需如何建立與 ClickOnce 部署的逐步資訊`<useManifestForTrust>`啟用，請參閱[逐步解說：手動部署 ClickOnce 應用程式不需要重新簽署而且會保留商標資訊](../deployment/walkthrough-manually-deploying-a-clickonce-app-no-re-signing-required.md)。  
   
 ### <a name="how-application-manifest-for-trust-works-at-runtime"></a>在執行階段信任的應用程式資訊清單的運作方式  
  若要進一步了解使用信任的應用程式資訊清單的運作方式在執行階段，請考慮下列的範例。 .NET Framework 3.5 為目標的 ClickOnce 應用程式是由 Microsoft 建立的。 應用程式資訊清單使用`<useManifestForTrust>`項目和經過 Microsoft 簽署。 Adventure Works 使用自我簽署的憑證簽署部署資訊清單。 Adventure Works 用戶端會設定為信任由 Microsoft 所簽署的任何應用程式。  
   
  當使用者按一下部署資訊清單的連結時，ClickOnce 會在使用者的電腦上安裝應用程式。 憑證和部署資訊會識別唯一用戶端電腦上的 ClickOnce 應用程式。 如果使用者嘗試從不同的位置重新安裝相同的應用程式，ClickOnce 可以使用這個身分識別，以判斷應用程式已存在於用戶端。  
   
- 接下來，ClickOnce 會檢查用來簽署判斷的 ClickOnce 會授與的信任層級的應用程式資訊清單的 Authenticode 憑證。 Adventure Works 已設定它的用戶端信任由 Microsoft 所簽署的任何應用程式，因為這個 ClickOnce 應用程式會授與完全信任。 如需詳細資訊，請參閱 <<c0> [ 信任的應用程式部署概觀](../deployment/trusted-application-deployment-overview.md)。  
+ 接下來，ClickOnce 會檢查用來簽署判斷的 ClickOnce 會授與的信任層級的應用程式資訊清單的 Authenticode 憑證。 Adventure Works 已設定它的用戶端信任由 Microsoft 所簽署的任何應用程式，因為這個 ClickOnce 應用程式會授與完全信任。 如需詳細資訊，請參閱[受信任的應用程式部署概觀](../deployment/trusted-application-deployment-overview.md)。  
   
 ## <a name="create-customer-deployments-for-earlier-versions"></a>建立適用於舊版的客戶部署  
  如果開發人員部署 ClickOnce 應用程式會使用舊版.NET Framework 的客戶嗎？ 下列各節摘要說明數個建議的解決方案，以及每個的優缺點。  
@@ -101,5 +99,5 @@ ms.locfileid: "49870769"
   
 ## <a name="see-also"></a>另請參閱  
  [不重新簽署部署 ClickOnce 應用程式測試和生產環境的伺服器](../deployment/deploying-clickonce-applications-for-testing-and-production-without-resigning.md)   
- [逐步解說： 手動部署 ClickOnce 應用程式](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)   
- [逐步解說： 手動部署 ClickOnce 應用程式不需要重新簽署而且會保留商標資訊](../deployment/walkthrough-manually-deploying-a-clickonce-app-no-re-signing-required.md)
+ [逐步解說：手動部署 ClickOnce 應用程式](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)   
+ [逐步解說：手動部署不需要重新簽署而且會保留商標資訊的 ClickOnce 應用程式](../deployment/walkthrough-manually-deploying-a-clickonce-app-no-re-signing-required.md)

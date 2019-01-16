@@ -1,8 +1,6 @@
 ---
 title: 點、 雙線性、 三線性和非等向性紋理篩選變異 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 57d14fc9-b5f7-45ee-9717-48086886742d
 author: mikejo5000
@@ -10,12 +8,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4958436e7b67872648c94c8aa65137a1297461c3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 7185d9246eb66b1e6773caea8cf20441d463c1ce
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49863109"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53858406"
 ---
 # <a name="point-bilinear-trilinear-and-anisotropic-texture-filtering-variants"></a>點、雙線性、三線性和各向異性紋理篩選變異
 覆寫適當的紋理取樣器上的篩選模式。  
@@ -56,15 +54,15 @@ ms.locfileid: "49863109"
   
 - `D3D11_FILTER_ANISOTROPIC`  
   
-  在 **點紋理篩選**變異中，應用程式所提供的篩選模式會取代為`D3D11_FILTER_MIN_MAG_MIP_POINT`; 在**雙線性紋理篩選**變異，它會取代為`D3D11_FILTER_MIN_MAG_LINEAR_MIP_POINT`;然後在**三線性紋理篩選**變異中，它會取代`D3D11_FILTER_MIN_MAG_MIP_LINEAR`。  
+  在**點紋理篩選**變異中，應用程式所提供的篩選模式會取代為 `D3D11_FILTER_MIN_MAG_MIP_POINT`；在**雙線性紋理篩選**變異中，則會取代為 `D3D11_FILTER_MIN_MAG_LINEAR_MIP_POINT`；而在**三線性紋理篩選**變異中，則會取代為 `D3D11_FILTER_MIN_MAG_MIP_LINEAR`。  
   
-  在 **非等向性紋理篩選**變異中，應用程式所提供的篩選模式會取代為`D3D11_FILTER_ANISOTROPIC`，而最大非等向性會設定為 16。  
+  在**非等向性紋理篩選**變異中，應用程式所提供的篩選模式會取代為 `D3D11_FILTER_ANISOTROPIC`，而且「最大非等向性」會設定為 16。  
   
 ## <a name="restrictions-and-limitations"></a>限制  
- 在 Direct3D 中，功能層級 9.1 會指定最大非等向性為 2x。 因為**非等向性紋理篩選**變異嘗試以獨佔模式使用 16 x 非等向性，畫面格分析的功能層級 9.1 裝置上執行時，播放會失敗。 受此限制影響的現代裝置包括 ARM Surface RT 和 Surface 2 Windows 平板電腦。 還是可以在一些電腦上發現的較舊型 GPU 也是會受到影響，但是它們已被廣泛地視為過時，且漸漸地不常見。  
+ 在 Direct3D 中，功能層級 9.1 會指定最大非等向性為 2x。 因為**非等向性紋理篩選**變異嘗試以獨佔方式使用 16x 非等向性，所以在功能層級 9.1 裝置上執行畫面格分析時，播放會失敗。 受此限制影響的現代裝置包括 ARM Surface RT 和 Surface 2 Windows 平板電腦。 還是可以在一些電腦上發現的較舊型 GPU 也是會受到影響，但是它們已被廣泛地視為過時，且漸漸地不常見。  
   
 ## <a name="example"></a>範例  
- **點紋理篩選**即可重現變體，請使用如下的程式碼：  
+ 使用與下列類似的程式碼，即可重現**點紋理篩選**變異：  
   
 ```cpp
 D3D11_SAMPLER_DESC sampler_description;  
@@ -78,7 +76,7 @@ d3d_context->PSSetSamplers(0, 1, &sampler
 ```  
   
 ## <a name="example"></a>範例  
- **雙線性紋理篩選**即可重現變體，請使用如下的程式碼：  
+ 使用與下列類似的程式碼，即可重現**雙線性紋理篩選**變異：  
   
 ```cpp
 D3D11_SAMPLER_DESC sampler_description;   
@@ -92,7 +90,7 @@ d3d_context->PSSetSamplers(0, 1, &sampler
 ```  
   
 ## <a name="example"></a>範例  
- **三線性紋理篩選**即可重現變體，請使用如下的程式碼：  
+ 使用與下列類似的程式碼，即可重現**三線性紋理篩選**變異：  
   
 ```cpp
 D3D11_SAMPLER_DESC sampler_description;   
@@ -106,7 +104,7 @@ d3d_context->PSSetSamplers(0, 1, &sampler
 ```  
   
 ## <a name="example"></a>範例  
- **非等向性紋理篩選**即可重現變體，請使用如下的程式碼：  
+ 使用與下列類似的程式碼，即可重現**非等向性紋理篩選**變異：  
   
 ```cpp
 D3D11_SAMPLER_DESC sampler_description;   

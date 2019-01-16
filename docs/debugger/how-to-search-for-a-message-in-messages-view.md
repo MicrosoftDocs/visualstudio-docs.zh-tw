@@ -1,8 +1,6 @@
 ---
-title: 如何： 在訊息檢視中的訊息搜尋 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：在訊息檢視中的訊息搜尋 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Message Search dialog box
@@ -14,14 +12,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f9c00eea2034651298ff62bc50741971fc0369a8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 1b92cee00b93541ddc75a4c3210d77c61a82f640
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49844909"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53863377"
 ---
-# <a name="how-to-search-for-a-message-in-messages-view"></a>如何：在訊息檢視中搜尋訊息
+# <a name="how-to-search-for-a-message-in-messages-view"></a>HOW TO：在訊息檢視中搜尋訊息
 您可以使用其控制代碼、 類型或訊息識別碼，做為搜尋準則來搜尋特定訊息在訊息檢視中。 其中任何一個，或組合，會是有效的搜尋準則。 也可以指定搜尋的初始方向。 在對話方塊中的欄位會預先載入的目前選取的訊息屬性。  
   
 ### <a name="to-search-for-a-message-in-messages-view"></a>若要搜尋在訊息檢視中的訊息  

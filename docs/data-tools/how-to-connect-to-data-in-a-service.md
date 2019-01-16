@@ -1,5 +1,5 @@
 ---
-title: 如何：連接至服務中的資料
+title: HOW TO：連線至服務中的資料
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,24 +15,23 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: f8f7371418df19ec8452334641c7c9414328e557
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: 66a13ac6f23caa3e6ccf28d5d68c03b3fe7fdb4f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52305009"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53923870"
 ---
-# <a name="how-to-connect-to-data-in-a-service"></a>如何：連接至服務中的資料
+# <a name="how-to-connect-to-data-in-a-service"></a>HOW TO：連線至服務中的資料
 
 連接您的應用程式，執行從服務傳回的資料[資料來源組態精靈](../data-tools/media/data-source-configuration-wizard.png)，然後選取**服務**上**選擇資料來源類型**頁面。
 
 完成精靈的詳細資訊，服務參考加入至專案並立即提供[資料來源 視窗](add-new-data-sources.md#data-sources-window)。
 
 > [!NOTE]
-> [資料來源] **視窗中所顯示的項目取決於服務所傳回的資訊。 部分服務所提供的資訊可能不足，無法供 [資料來源組態精靈] **建立可繫結的物件。 例如，如果服務傳回不具類型的資料集，顯示任何項目中**Zdroje dat**時完成精靈 的視窗。 這是因為不具類型資料集不會提供結構描述，所以精靈沒有足夠的資訊來建立資料來源。
+> [資料來源] 視窗中所顯示的項目，取決於服務所傳回的資訊。 部分服務所提供的資訊可能不足，無法供 [資料來源組態精靈] 建立可繫結的物件。 例如，如果服務傳回不具類型的資料集，顯示任何項目中**Zdroje dat**時完成精靈 的視窗。 這是因為不具類型資料集不會提供結構描述，所以精靈沒有足夠的資訊來建立資料來源。
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 
@@ -53,7 +52,7 @@ ms.locfileid: "52305009"
 
 6.  按一下 [ **完成**]。
 
-     ** 資料來源就會加入到 [{2&gt;資料來源&lt;2}] 視窗。
+     資料來源隨即新增至 [資料來源] 視窗。
 
 ## <a name="next-steps"></a>後續步驟
 

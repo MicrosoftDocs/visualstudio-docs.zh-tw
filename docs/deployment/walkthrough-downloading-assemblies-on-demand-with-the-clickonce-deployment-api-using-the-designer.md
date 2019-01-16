@@ -1,8 +1,6 @@
 ---
-title: 逐步解說： 下載組件隨選與 ClickOnce 部署 API 使用設計工具 |Microsoft Docs
-ms.custom: ''
+title: 逐步解說：依需求使用設計工具以 ClickOnce 部署 API 下載組件 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,21 +17,21 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 20df3172b2745a50f697b09ffe0bf95eaad4f39f
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 067591347a89b8a56d6e271614500c7d3880be80
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388997"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53878597"
 ---
-# <a name="walkthrough-download-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer"></a>逐步解說： 下載組件隨選與 ClickOnce 部署 API 使用設計工具
+# <a name="walkthrough-download-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer"></a>逐步解說：下載組件隨選與 ClickOnce 部署 API 使用設計工具
 第一次執行 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式時，預設會下載應用程式中包含的所有組件。 不過，可能是小部分使用者所使用之應用程式的組件。 在此情況下，只有在建立組件的其中一種類型時，才會想要下載組件。 下列逐步解說示範如何將應用程式中的特定組件標示為「選擇性」，以及在 Common Language Runtime 需要時，使用 <xref:System.Deployment.Application> 中的類別來如何下載它們。
 
 > [!NOTE]
 > 您的應用程式必須以完全信任執行，才能使用此程序。
 
 > [!NOTE]
-> 根據您目前使用的設定或版本，您所看到的對話方塊與功能表命令可能會與 [說明] 中描述的不同。 若要變更設定，請在 [工具]  功能表上按一下 [匯入和匯出設定]  。 如需詳細資訊，請參閱 <<c0> [ 重設設定](../ide/environment-settings.md#reset-settings)。
+> 根據您目前使用的設定或版本，您所看到的對話方塊與功能表命令可能會與 [說明] 中描述的不同。 若要變更設定，請在 [工具]  功能表上按一下 [匯入和匯出設定]  。 如需詳細資訊，請參閱[重設設定](../ide/environment-settings.md#reset-settings)。
 
 ## <a name="create-the-projects"></a>建立專案
 
@@ -77,15 +75,15 @@ ms.locfileid: "52388997"
 
 2.  按一下 [應用程式檔案]  按鈕。
 
-3.  尋找 ClickOnceLibrary.dll 的清單。 將 [發行狀態]  下拉式方塊設定成 [包含] 。
+3.  尋找 *ClickOnceLibrary.dll* 的清單。 將 [發行狀態]  下拉式方塊設定成 [包含] 。
 
 4.  展開 [群組]  下拉式方塊，然後選取 [新增] 。 輸入名稱 `ClickOnceLibrary` 作為新的群組名稱。
 
-5.  繼續發行您的應用程式中所述[如何： 發行 ClickOnce 應用程式使用發行精靈](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)。
+5.  繼續發行您的應用程式中所述[How to:使用 [發佈精靈] 發佈 ClickOnce 應用程式](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
 
 ### <a name="to-mark-assemblies-as-optional-in-your-clickonce-application-by-using-manifest-generation-and-editing-tool--graphical-client-mageuiexe"></a>使用資訊清單產生和編輯工具 (圖形化用戶端 (MageUI.exe)) 將組件標示為 ClickOnce 應用程式中的選用項目
 
-1. 建立您[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]資訊清單中所述[逐步解說： 手動部署 ClickOnce 應用程式](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)。
+1. 建立您[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]資訊清單中所述[逐步解說：手動部署 ClickOnce 應用程式](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)。
 
 2. 關閉 MageUI.exe 之前，請選取包含您部署之應用程式資訊清單的索引標籤，然後在該索引標籤內選取 [檔案]  索引標籤。
 
@@ -93,7 +91,7 @@ ms.locfileid: "52388997"
 
 ## <a name="test-the-new-assembly"></a>測試新的組件
 
-測試隨選組件
+測試隨選組件：
 
 1. 啟動使用 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]所部署的應用程式。
 

@@ -1,8 +1,6 @@
 ---
 title: 'Idiasegment:: Get_read |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 43690f17e1e034896865a3c51d0cb22b87b2e500
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 54326c915acbbdc33c44b52efd19fd0f6edd1f66
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49900224"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53911321"
 ---
 # <a name="idiasegmentgetread"></a>IDiaSegment::get_read
 擷取旗標，指出是否可以讀取區段。  
@@ -27,7 +25,7 @@ ms.locfileid: "49900224"
 ## <a name="syntax"></a>語法  
   
 ```C++  
-HRESULT get_read (   
+HRESULT get_read (   
    BOOL* pRetVal  
 );  
 ```  
@@ -37,7 +35,7 @@ HRESULT get_read (
  [out]會傳回`TRUE`可以讀取區段; 否則會傳回`FALSE`。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`。 傳回`S_FALSE`不支援這個屬性，則為。 反之則傳回錯誤碼。  
+ 如果成功，則傳回 `S_OK`。 傳回`S_FALSE`不支援這個屬性，則為。 反之則傳回錯誤碼。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md)

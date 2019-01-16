@@ -2,7 +2,6 @@
 title: 在 偵錯工具中檢視變數的記憶體 |Microsoft Docs
 ms.custom: H1Hack27Feb2017
 ms.date: 10/04/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.memory
@@ -25,12 +24,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cdf8e5fc5ee0ac34b4c295f6cc593e0a93b548ae
-ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
+ms.openlocfilehash: 3e56ad2c36e4b7a22cfb74e020c31e93f4846872
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52257256"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53837221"
 ---
 # <a name="use-the-memory-windows-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>使用 Visual Studio 偵錯工具中的 [記憶體] 視窗 (C#，c + +、 Visual Basic 中， F#)
 
@@ -49,7 +48,7 @@ ms.locfileid: "52257256"
 >[!IMPORTANT]
 >若要啟用**記憶體**windows**啟用位址層級偵錯**必須在中選取**工具** > **選項**（或**偵錯** > **選項**) >**偵錯** > **一般**。 
 
-**若要開啟記憶體視窗**
+**開啟記憶體視窗**
   
 1. 請確定**啟用位址層級偵錯**中選取**工具** > **選項**(或**偵錯** > **選項**) >**偵錯** > **一般**。 
    
@@ -81,26 +80,26 @@ ms.locfileid: "52257256"
   
 ## <a name="customize-the-memory-window"></a>自訂 [記憶體] 視窗 
 
-根據預設，記憶體內容會顯示為 1 個位元組的整數以十六進位格式，而且視窗寬度決定顯示資料行的數目。 您可以自訂的方式**記憶體**視窗會顯示記憶體內容。  
+根據預設，記憶體內容會顯示為 1 個位元組的整數以十六進位格式，而且視窗寬度決定顯示資料行的數目。 您可以自訂 [記憶體] 視窗顯示記憶體內容的方式。  
   
-**若要變更記憶體內容的格式：**  
+**變更記憶體內容格式：**  
   
 -  以滑鼠右鍵按一下**記憶體** 視窗中，並從操作功能表中選擇您想要的格式。  
   
-**若要變更記憶體視窗中的資料行數目：**
+**變更記憶體視窗中的欄位數目：**
   
 - 選取下拉式箭號旁**資料行**欄位，然後選取要顯示此項目，或選取資料行數目**自動**根據視窗寬度自動調整。  
   
 如果您不想要的內容**記憶體**視窗變更為您的應用程式會執行，您可以關閉實況運算式評估。 
 
-**若要切換實況評估：**  
+**切換實況評估：**  
   
 - 以滑鼠右鍵按一下**記憶體** 視窗中，然後選取**自動重新評估**操作功能表中。 
 
   >[!NOTE]
   >Live 運算式評估為切換，且根據預設，因此選取**自動重新評估**會關閉。 選取**自動重新評估**再次重新開啟。 
   
-您可以隱藏或顯示在頂端的工具列**記憶體**視窗。 您將沒有存取權**地址**欄位或隱藏工具列時的其他工具。  
+您可以在 [記憶體] 視窗的頂端隱藏或顯示工具列。 您將沒有存取權**地址**欄位或隱藏工具列時的其他工具。  
   
 **若要切換的工具列顯示：**  
   
@@ -110,7 +109,7 @@ ms.locfileid: "52257256"
 
 在原生程式碼應用程式，您可以使用暫存器名稱當成機動性的運算式。 例如，您可使用堆疊指標隨著堆疊而變動位置。  
   
-**若要遵循記憶體變動指標：**
+**隨著記憶體變動指標：**
   
 1. 在 **記憶體**視窗**地址**欄位中，輸入指標運算式，在目前的範圍內。 有時您可能會需要取值 (Dereference)，視語言而定。  
   
@@ -119,4 +118,4 @@ ms.locfileid: "52257256"
    當您使用偵錯命令這類**步驟**，在顯示的記憶體位址**地址**欄位，並在頂端**記憶體**視窗會自動變更為指標變更。  
   
 ## <a name="see-also"></a>另請參閱  
- [在 偵錯工具中檢視資料](../debugger/viewing-data-in-the-debugger.md)
+ [在偵錯工具中檢視資料](../debugger/viewing-data-in-the-debugger.md)

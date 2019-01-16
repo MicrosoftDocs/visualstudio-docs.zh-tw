@@ -1,8 +1,6 @@
 ---
-title: 訊息搜尋對話方塊 |Microsoft 文件
-ms.custom: ''
+title: 訊息搜尋對話方塊 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: reference
 helpviewer_keywords:
 - message options, Search
@@ -12,25 +10,25 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c125e2659e586d728a18293b9811a4e69743558
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 3c1313820ff946499757f8a4240a49d93081e9e9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31481797"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53853511"
 ---
 # <a name="message-search-dialog-box"></a>訊息搜尋對話方塊
-使用此對話方塊，即可尋找並選取的節點中的特定訊息[訊息檢視](../debugger/messages-view.md)。 若要顯示此對話方塊中，將焦點移至 [訊息] 檢視視窗。 然後選擇 **尋找訊息**從**搜尋**功能表。  
+使用此對話方塊，即可尋找並選取特定的訊息中的節點[訊息檢視](../debugger/messages-view.md)。 若要顯示此對話方塊中，將焦點移至 [訊息] 檢視視窗。 然後選擇**尋找訊息**從**搜尋**功能表。  
   
  可用的設定如下：  
   
- **搜尋工具**  
+ [搜尋工具]  
  用來選取視窗拖放工具。  
   
  **隱藏 Spy + +**  
- 移除主要 Spy + + 視窗，並將保留**MessageSearch**對話方塊在其他應用程式的上層。  
+ 移除主要的 Spy + + 視窗，並將留**MessageSearch**對話方塊顯示在其他應用程式之上。  
   
- **控制代碼**  
+ [控制代碼]  
  要搜尋之訊息的唯一識別碼。  
   
  **Type**  
@@ -39,7 +37,7 @@ ms.locfileid: "31481797"
  **訊息**  
  要搜尋的訊息識別碼。  
   
- **向上或向下搜尋方向**  
+ **搜尋方向，增加或相應減少**  
  搜尋開始的方向。  
   
 ## <a name="related-sections"></a>相關章節  
@@ -47,7 +45,7 @@ ms.locfileid: "31481797"
  說明如何在訊息檢視中找到特定的訊息。  
   
  [從尋找視窗開啟訊息檢視](../debugger/how-to-open-messages-view-from-find-window.md)  
- 說明如何從尋找視窗對話方塊開啟訊息檢視。  
+ 說明如何從尋找視窗對話方塊中開啟訊息檢視。  
   
  [訊息檢視](../debugger/messages-view.md)  
  顯示視窗、 處理序或執行緒相關聯的訊息資料流。  
@@ -65,4 +63,4 @@ ms.locfileid: "31481797"
  用來顯示訊息，訊息檢視中選取的屬性。  
   
  [Spy++ 參考](../debugger/spy-increment-reference.md)  
- 包含各節描述每個 Spy + + 功能表和對話方塊方塊。
+ 包含描述每個 Spy + + 功能表和對話方塊方塊中的區段。

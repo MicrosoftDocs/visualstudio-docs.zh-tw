@@ -1,8 +1,6 @@
 ---
 title: 嘗試聯繫遠端電腦時，發生 DCOM 錯誤。 存取被拒絕。 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: reference
 f1_keywords:
 - vs.debug.remote.dcom_access_denied
@@ -22,21 +20,21 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 193c93e7c29d3ea9fa13c08c9d77e4e88026d814
-ms.sourcegitcommit: 97204b85caadbcf14baeb6738710e287a196673e
-ms.translationtype: MT
+ms.openlocfilehash: c329704ee7f2ea19f56d3bd9201783a04d967de7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "49900510"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53938654"
 ---
 # <a name="a-dcom-error-occurred-trying-to-contact-the-remote-computer-access-is-denied"></a>嘗試聯繫遠端電腦時，發生 DCOM 錯誤。 存取被拒絕。
 在下列情況下，遠端偵錯會使用 DCOM 在本機與遠端電腦之間進行通訊：  
   
-- 偵錯工具設為**原生相容性模式**或是**Managed 相容性模式**簽入**工具 > 選項 > 偵錯**頁面  
+- 偵錯工具已設定為 [原生相容性模式]，或是在 [工具] > [選項] > [偵錯] 頁面中選取了 [受控相容性模式]  
   
 - 您正在偵錯 Managed C++ (C++/CLI) 程式碼。  
   
-- 在 Visual Studio 2013 中，當**啟用原生編輯後繼續**簽入**工具 > 選項 > 偵錯**頁面  
+- 在 Visual Studio 2013 中，於 [工具] > [選項] > [偵錯] 頁面中選取了 [啟用原生編輯後繼續] 時  
   
 - 某些協力廠商偵錯情節  
   
@@ -50,6 +48,6 @@ ms.locfileid: "49900510"
   
 - 如果遠端偵錯要求輸入認證，請核取這個選項儲存認證。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [遠端偵錯錯誤和疑難排解](../debugger/remote-debugging-errors-and-troubleshooting.md)   
  [Remote Debugging](../debugger/remote-debugging.md)

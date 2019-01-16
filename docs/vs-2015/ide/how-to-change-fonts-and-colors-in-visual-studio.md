@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
@@ -17,20 +16,20 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: eee3b8a72ab530e4f480fb4927736e809488cb84
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: db98360ecf13ddeec8af7be0b546553b81a7dc72
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53062505"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53915357"
 ---
-# <a name="how-to-change-fonts-and-colors-in-visual-studio"></a>HOW TO：變更字型和色彩，在 Visual Studio 中
+# <a name="how-to-change-fonts-and-colors-in-visual-studio"></a>HOW TO：變更 Visual Studio 中的字型和色彩
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 您可以在 Visual Studio 中透過數種方式，自訂 IDE 框架和工具視窗的色彩。
 
 > [!TIP]
->  如需如何變更程式碼編輯器色彩的詳細資訊，請參閱[How to:變更字型和色彩編輯器中的](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)。
+>  如需如何變更程式碼編輯器色彩的資訊，請參閱[如何：在編輯器中變更字型和色彩](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)。
 
 ### <a name="change-the-color-theme-of-the-ide"></a>變更 IDE 的色彩佈景主題
 
@@ -71,4 +70,4 @@ ms.locfileid: "53062505"
 5.  在 [大小] 清單中，選擇文字大小，然後選擇 [確定] 按鈕。
 
 ## <a name="see-also"></a>請參閱
- [Visual Studio 的協助工具功能](../ide/reference/accessibility-features-of-visual-studio.md) [How to:變更字型和色彩編輯器中](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)
+ [Visual Studio 的協助工具功能](../ide/reference/accessibility-features-of-visual-studio.md) [How to:在編輯器中變更字型和色彩](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)。

@@ -15,15 +15,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: b7790f5205aa24a68505a1b34e97283aff05e13c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: b29e244213876b8b6a093d8fca2af02ca8319909
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49950132"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53955392"
 ---
 # <a name="bind-objects-as-data-sources-in-visual-studio"></a>將物件繫結做為 Visual Studio 中的資料來源
 
@@ -136,7 +135,7 @@ Visual Studio 會提供設計階段工具，為您的應用程式中的資料來
 
 Visual Studio 會建立可直接對資料庫執行的 DBDirect 方法。 這些方法不需要 DataSet 或 DataTable 物件。
 
-|TableAdapter DBDirect 方法|描述|
+|TableAdapter DBDirect 方法|說明|
 | - |-----------------|
 |`TableAdapter.Insert`|將新的記錄加入至資料庫，可讓您在個別的資料行值做為方法參數傳遞。|
 |`TableAdapter.Update`|更新現有的資料庫中的記錄。 更新方法會接受原始及新的資料行值作為方法參數。 原始的值用來找出原始記錄中，與新的值來更新該記錄。<br /><br /> `TableAdapter.Update`方法也會用來協調回資料庫，資料集內的變更，藉由採取<xref:System.Data.DataSet>， <xref:System.Data.DataTable>， <xref:System.Data.DataRow>，或陣列<xref:System.Data.DataRow>做為方法參數。|

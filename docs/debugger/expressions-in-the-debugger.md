@@ -1,8 +1,6 @@
 ---
 title: 偵錯工具中的運算式 |Microsoft Docs
-ms.custom: ''
 ms.date: 02/07/2017
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.expressions
@@ -21,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 035d66590c6b6087c56887a4eaa2b0538406f87b
-ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
-ms.translationtype: MT
+ms.openlocfilehash: 7b6d4461768490d67d4d1226ae7c7877dc3c9010
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52257247"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53837234"
 ---
 # <a name="expressions-in-the-visual-studio-debugger"></a>Visual Studio 偵錯工具中的運算式
 當您在 [ **快速監看式** ] 對話方塊、[ **監看式** ] 視窗或 [ **即時運算** ] 視窗中輸入運算式時，都能使用 Visual Studio 偵錯工具所包含的運算式評估工具。 在 [ **中斷點** ] 視窗和偵錯工具中的其他許多地方，也都可以使用運算式評估工具。
@@ -206,8 +204,8 @@ int main()
   
 -   命名空間或模組層級關鍵字，例如 `End Sub` 或 `Module`。  
   
-## <a name="see-also"></a>另請參閱  
- [C + + 中的格式規範](../debugger/format-specifiers-in-cpp.md)   
+## <a name="see-also"></a>請參閱  
+ [C++ 中的格式規範](../debugger/format-specifiers-in-cpp.md)   
  [Context Operator (C++)](../debugger/context-operator-cpp.md)   
  [C# 中的格式規範](../debugger/format-specifiers-in-csharp.md)   
  [虛擬變數](../debugger/pseudovariables.md)

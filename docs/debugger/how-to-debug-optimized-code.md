@@ -1,8 +1,6 @@
 ---
-title: 如何： 偵錯最佳化程式碼 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：偵錯最佳化程式碼 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug
@@ -23,14 +21,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c6e212129c17ec7b4fe6cb9a6808c91cb302deb3
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
-ms.translationtype: MTE95
+ms.openlocfilehash: 8407f360ee35b0210a5ca6411af8720b0191a080
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52387853"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53843472"
 ---
-# <a name="how-to-debug-optimized-code"></a>如何：偵錯最佳化程式碼
+# <a name="how-to-debug-optimized-code"></a>HOW TO：對最佳化程式碼進行偵錯
 
 > [!NOTE]
 > 根據您目前使用的設定或版本，您所看到的對話方塊與功能表命令可能會與 [說明] 中描述的不同。 若要變更設定，請從 [工具] 功能表中選擇 [匯入和匯出設定]。 如需詳細資訊，請參閱[重設設定](../ide/environment-settings.md#reset-settings)。

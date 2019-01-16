@@ -1,8 +1,6 @@
 ---
 title: 'Idiasymbol:: Get_bitposition |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bba39752470cf9f282245cbece7f260558b8b21d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 82940d50d82945ab8ef4efcbf63801339536f8f7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49838471"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53956618"
 ---
 # <a name="idiasymbolgetbitposition"></a>IDiaSymbol::get_bitPosition
 擷取位置的位元位置。 使用的時機[LocationType 列舉](../../debugger/debug-interface-access/locationtype.md)是`LocIsBitField`。  
@@ -27,7 +25,7 @@ ms.locfileid: "49838471"
 ## <a name="syntax"></a>語法  
   
 ```C++  
-HRESULT get_bitPosition (   
+HRESULT get_bitPosition (   
    DWORD* pRetVal  
 );  
 ```  
@@ -44,11 +42,11 @@ HRESULT get_bitPosition (
   
 ## <a name="requirements"></a>需求  
   
-|需求|描述|  
+|需求|說明|  
 |-----------------|-----------------|  
 |標頭：|dia2.h|  
 |版本:|DIA SDK v7.0|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [LocationType 列舉](../../debugger/debug-interface-access/locationtype.md)

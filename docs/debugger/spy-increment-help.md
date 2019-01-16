@@ -1,8 +1,6 @@
 ---
-title: Spy + + 說明 |Microsoft 文件
-ms.custom: ''
+title: Spy + + 說明 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Spy++ Help contents
@@ -12,15 +10,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 528d52e4f32371eaf32f4c4e07c111c9b87f17cf
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 156629fdce19dfe4e503f4af67ca31f99041e231
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31476601"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53855583"
 ---
 # <a name="spy-help"></a>Spy++ 說明
-Spy + + 公用程式的文件包含兩個一般主題上使用 Spy + + 和 Spy + + 檢視上的群組。 這些被後面接著 Spy + + 參考，即在每個可用的功能表命令和對話方塊中提供更多詳細資料。  
+Spy + + 公用程式的文件包含兩個群組的一般主題，在使用 Spy + +，以及在 Spy + + 檢視。 這些被後面接著 Spy + + 參考，可在每個可用的功能表命令和對話方塊中提供進一步的詳細資料。  
   
 ## <a name="using-spy"></a>使用 Spy++  
  [使用 Spy++](../debugger/using-spy-increment.md)  
@@ -31,16 +29,16 @@ Spy + + 公用程式的文件包含兩個一般主題上使用 Spy + + 和 Spy +
   
 ## <a name="spy-reference"></a>Spy++ 參考  
  [功能表命令](../debugger/menu-commands.md)  
- 每個 Spy + + 功能表描述可用的命令。  
+ 每個 Spy + + 功能表說明可用的命令。  
   
  [字型對話方塊](../debugger/font-dialog-box-microsoft-spy-increment-help.md)  
- 用來設定在 Spy + + 檢視視窗中所使用的字元字型。  
+ 用來設定使用 Spy + + 檢視視窗中的字元字型。  
   
  [Spy++ 檢視的搜尋工具](../debugger/search-tools-for-spy-increment-views.md)  
  用來在 Spy + + 檢視視窗中尋找特定節點的對話方塊。  
   
  [視窗屬性對話方塊](../debugger/window-properties-dialog-box.md)  
- 用來顯示視窗，在視窗檢視中選取的屬性。  
+ 用來顯示視窗，在 [Windows] 檢視中選取的屬性。  
   
  [訊息選項對話方塊](../debugger/message-options-dialog-box.md)  
  用來選取哪一個訊息會列在 [訊息] 檢視。  
@@ -49,10 +47,10 @@ Spy + + 公用程式的文件包含兩個一般主題上使用 Spy + + 和 Spy +
  用來顯示訊息，訊息檢視中選取的屬性。  
   
  [處理序屬性對話方塊](../debugger/process-properties-dialog-box.md)  
- 用來顯示處理程序中處理序檢視所選取的屬性。  
+ 用來顯示處理程序檢視中選取處理序的屬性。  
   
  [執行緒屬性對話方塊](../debugger/thread-properties-dialog-box.md)  
- 用來顯示執行緒的執行緒 檢視中選取的屬性。  
+ 用來顯示 [執行緒] 檢視中選取的執行緒屬性。  
   
  [其他對話方塊](../debugger/other-dialog-boxes.md)  
  用來顯示 Spy + + 程式的相關資訊。

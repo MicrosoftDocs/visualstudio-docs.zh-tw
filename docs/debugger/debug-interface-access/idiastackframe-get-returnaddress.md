@@ -1,8 +1,6 @@
 ---
 title: 'Idiastackframe:: Get_returnaddress |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fdc3e14560dd53bb4de170c9d87e6fc17ea64523
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: a94a37d9879560e02bf1ed5b22e1dda06b3046de
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49900107"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53859486"
 ---
 # <a name="idiastackframegetreturnaddress"></a>IDiaStackFrame::get_returnAddress
 擷取框架的傳回位址。  
@@ -27,7 +25,7 @@ ms.locfileid: "49900107"
 ## <a name="syntax"></a>語法  
   
 ```C++  
-HRESULT get_returnAddress (   
+HRESULT get_returnAddress (   
    ULONGLONG* pRetVal  
 );  
 ```  
@@ -37,7 +35,7 @@ HRESULT get_returnAddress (
  [out]傳回框架的傳回位址。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`。 傳回`S_FALSE`不支援的屬性。 反之則傳回錯誤碼。  
+ 如果成功，則傳回 `S_OK`。 傳回`S_FALSE`不支援的屬性。 反之則傳回錯誤碼。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)

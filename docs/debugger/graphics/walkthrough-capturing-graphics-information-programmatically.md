@@ -1,20 +1,18 @@
 ---
-title: 逐步解說： 以程式設計方式擷取圖形資訊 |Microsoft Docs
-ms.custom: ''
+title: 逐步解說：以程式設計方式擷取圖形資訊 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 author: mikejo5000
 ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 659e370d664b3db2c3624d73164b4489cc2680a3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 18ea39346689d2a9a68d34e1e9189f2cab300b02
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49933283"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53850683"
 ---
 # <a name="walkthrough-capturing-graphics-information-programmatically"></a>逐步解說：以程式設計方式擷取圖形資訊
 您可以使用 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 圖形診斷，透過程式設計方式從 Direct3D 應用程式擷取圖形資訊。  
@@ -27,8 +25,8 @@ ms.locfileid: "49933283"
   
 -   如果呈現問題很難預期以及在手動測試中擷取，但是可以在執行階段使用應用程式狀態資訊，透過程式設計方式進行預測，請呼叫 `CaptureCurrentFrame`。  
   
-##  <a name="CaptureDX11_2"></a> Windows 10 中進行程式設計擷取  
- 這部分的逐步解說示範如何使用穩固擷取方法的 Windows 10 使用 DirectX 11.2 API 的應用程式中的程式設計擷取。
+##  <a name="CaptureDX11_2"></a> Windows 10 中的程式設計擷取  
+ 這部分的逐步解說示範如何在 Windows 10 上使用 DirectX 11.2 API 的應用程式中進行程式設計擷取 (使用穩固擷取方法)。
   
  本節顯示如何執行這些工作：  
   
@@ -56,7 +54,7 @@ ms.locfileid: "49933283"
     ```  
   
     > [!IMPORTANT]
-    >  不包含標頭檔 vsgcapture.h—which 支援程式設計擷取 Windows 8.0 上及更早版本，若要在 Windows 10 應用程式中執行程式設計擷取。 此標頭與 DirectX 11.2 不相容。 如果此檔案包含之後會包含 d3d11_2.h 標頭，則編譯器會發出警告。 如果包含 vsgcapture.h d3d11_2.h 之前，將不會啟動應用程式。  
+    >  請勿包括標頭檔 vsgcapture.h (其支援 Windows 8.0 (含) 以前版本上的程式設計擷取)，以在 Windows 10 應用程式中執行程式設計擷取。 此標頭與 DirectX 11.2 不相容。 如果此檔案包含之後會包含 d3d11_2.h 標頭，則編譯器會發出警告。 如果包含 vsgcapture.h d3d11_2.h 之前，將不會啟動應用程式。  
   
     > [!NOTE]
     >  如果在電腦上安裝 2010 年 6 月 DirectX SDK，而且專案的 Include 路徑包含 `%DXSDK_DIR%includex86`，請將它移至 Include 路徑結尾。 請對程式庫路徑執行相同的處理。  
@@ -116,7 +114,7 @@ ms.locfileid: "49933283"
   
 -   了解如何使用圖形診斷工具分析擷取到的圖形資訊。 請參閱[概觀](overview-of-visual-studio-graphics-diagnostics.md)。  
   
-## <a name="see-also"></a>另請參閱  
- [逐步解說： 擷取圖形資訊](walkthrough-capturing-graphics-information.md)   
+## <a name="see-also"></a>請參閱  
+ [逐步解說：擷取圖形資訊](walkthrough-capturing-graphics-information.md)   
  [Capturing Graphics Information](capturing-graphics-information.md)   
  [命令列擷取工具](command-line-capture-tool.md)

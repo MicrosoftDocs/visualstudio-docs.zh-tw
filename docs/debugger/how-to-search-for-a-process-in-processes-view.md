@@ -1,8 +1,6 @@
 ---
-title: 如何： 搜尋處理序中處理序檢視 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：搜尋處理序中處理序檢視 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Processes view
@@ -13,14 +11,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8129516476977e526cde9c3eb3dbe546bdbe3876
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 4ba4d0f6aee4b81e5be4c9ff896043bd8a164abb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49822913"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53988750"
 ---
-# <a name="how-to-search-for-a-process-in-processes-view"></a>如何：在處理序檢視中搜尋處理序
+# <a name="how-to-search-for-a-process-in-processes-view"></a>HOW TO：在處理序檢視中搜尋處理序
 您可以使用它的處理序識別碼或模組字串做為搜尋準則來搜尋特定處理序中處理序檢視。 您也可以指定搜尋的初始方向。 在對話方塊中的欄位會顯示選取的處理序的屬性，在處理序樹狀目錄中。  
   
 ### <a name="to-search-for-a-process-in-processes-view"></a>搜尋處理序檢視中的處理序  

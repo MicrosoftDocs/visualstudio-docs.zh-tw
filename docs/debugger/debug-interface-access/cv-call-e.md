@@ -1,8 +1,6 @@
 ---
 title: CV_call_e |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ca4be9d62ee9e0261e5c08a50b53df013ad6ffcf
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 8a243bd873e323cb3a58668c36dc1327b7927141
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49851105"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53923990"
 ---
 # <a name="cvcalle"></a>CV_call_e
 指定函式的呼叫慣例。  
@@ -30,7 +28,7 @@ ms.locfileid: "49851105"
 ## <a name="syntax"></a>語法  
   
 ```C++  
-typedef enum CV_call_e {   
+typedef enum CV_call_e {   
    CV_CALL_NEAR_C    = 0x00,  
    CV_CALL_NEAR_FAST = 0x04,  
    CV_CALL_NEAR_STD  = 0x07,  
@@ -65,6 +63,6 @@ typedef enum CV_call_e {
 ## <a name="requirements"></a>需求  
  標頭： cvconst.h  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [列舉和結構](../../debugger/debug-interface-access/enumerations-and-structures.md)   
  [IDiaSymbol::get_callingConvention](../../debugger/debug-interface-access/idiasymbol-get-callingconvention.md)

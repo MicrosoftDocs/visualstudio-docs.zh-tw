@@ -1,8 +1,6 @@
 ---
-title: 如何： 安裝視覺化檢視 |Microsoft 文件
-ms.custom: ''
+title: HOW TO：安裝視覺化檢視 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -19,18 +17,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 87feaebf16168744467137fdf4af54538a316cdf
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: e62637581fbb65eb8efd20e048cc364895cfbcdc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31473773"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53914567"
 ---
-# <a name="how-to-install-a-visualizer"></a>如何：安裝視覺化檢視
+# <a name="how-to-install-a-visualizer"></a>HOW TO：安裝視覺化檢視
 建立視覺化檢視後，您必須安裝該視覺化檢視，使 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中可以使用它。 安裝視覺化檢視的程序很簡單。  
   
 > [!NOTE]
->  在 UWP 應用程式，僅標準文字、 HTML、 XML 及 JSON 視覺化檢視支援。 不支援自訂 (使用者建立的) 視覺化檢視。  
+>  在 UWP 應用程式，僅限標準的文字，支援 HTML、 XML 及 JSON 視覺化檢視。 不支援自訂 (使用者建立的) 視覺化檢視。  
   
 ### <a name="to-install-a-visualizer"></a>安裝視覺化檢視  
   
@@ -46,6 +44,6 @@ ms.locfileid: "31473773"
   
 4.  重新啟動偵錯工作階段。  
   
-## <a name="see-also"></a>另請參閱  
- [建立自訂的視覺化檢視](../debugger/create-custom-visualizers-of-data.md)   
- [如何：撰寫視覺化檢視](../debugger/how-to-write-a-visualizer.md)
+## <a name="see-also"></a>請參閱  
+ [建立自訂視覺化檢視](../debugger/create-custom-visualizers-of-data.md)   
+ [如何：撰寫視覺化檢視](/visualstudio/debugger/create-custom-visualizers-of-data)

@@ -1,5 +1,5 @@
 ---
-title: 逐步解說：以 DataSet 設計工具建立 DataTable
+title: 逐步解說：以 Dataset 設計工具建立 DataTable
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,17 +11,16 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 2cff383b6e06d8793a7730c36df01e2538b02c36
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
-ms.translationtype: MT
+ms.openlocfilehash: 505c27787b033a6ccee9f89a19962d5fc81b9912
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37174485"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53824830"
 ---
-# <a name="walkthrough-create-a-datatable-in-the-dataset-designer"></a>逐步解說： 以 Dataset 設計工具建立 DataTable
+# <a name="walkthrough-create-a-datatable-in-the-dataset-designer"></a>逐步解說：以 Dataset 設計工具建立 DataTable
 
 本逐步解說說明如何建立<xref:System.Data.DataTable>（不含 TableAdapter) 使用**Dataset 設計工具**。 如需建立包含 Tableadapter 的資料表資訊，請參閱[建立和設定 Tableadapter](../data-tools/create-and-configure-tableadapters.md)。
 
@@ -29,7 +28,7 @@ ms.locfileid: "37174485"
 
 1. 在 Visual Studio 中，在**檔案**功能表上，選取**新增** > **專案**。
 
-2. 展開  **Visual C#** 或是**Visual Basic**的左側窗格中，然後選取**Windows Desktop**。
+2. 展開  **Visual C#** 或是**Visual Basic**左窗格中，然後選取**Windows Desktop**。
 
 3. 在中間窗格中，選取**Windows Forms 應用程式**專案類型。
 
@@ -39,7 +38,7 @@ ms.locfileid: "37174485"
 
 ## <a name="add-a-new-dataset-to-the-application"></a>將新的資料集新增至應用程式
 
-1.  在 **專案**功能表上，選取**加入新項目**。
+1.  在 [專案] 功能表中，選取 [新增新項目]。
 
      [新增項目] 對話方塊隨即出現。
 
@@ -63,7 +62,7 @@ ms.locfileid: "37174485"
 
 2.  命名的資料行`SongID`。
 
-3.  在 **屬性**視窗中，將<xref:System.Data.DataColumn.DataType%2A>屬性設<xref:System.Int16?displayProperty=fullName>。
+3.  在 [屬性]  視窗中，將 <xref:System.Data.DataColumn.DataType%2A> 屬性設定為 <xref:System.Int16?displayProperty=fullName>。
 
 4.  重複此程序，並新增下列資料行：
 

@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ccc5e543-7dcf-465c-97dd-e133e869800c
@@ -14,12 +13,12 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: db89bda465d1a4fc4da1b3066858b270ce50c5bb
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: c56b2a2cd49d164fa55eae472eaa11942bead262
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53051026"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53928850"
 ---
 # <a name="productivity-tips-for-visual-studio"></a>使用 Visual Studio 提高產能的秘訣
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -84,7 +83,7 @@ ms.locfileid: "53051026"
 
      藍色方塊提供修正程式碼錯誤的建議。
 
-     圖 1錯誤智慧標籤
+     圖 1：錯誤智慧標籤
 
      ![錯誤智慧標籤建議](../ide/media/productivity-bluesmarttags.png "Productivity_BlueSmartTags")
 
@@ -160,7 +159,7 @@ ms.locfileid: "53051026"
 
      您也可以建立另一個方案總管執行個體並移至其他監視器，更輕鬆地管理檔案。 若要建立另一個方案總管執行個體，請開啟方案總管中的捷徑功能表，然後選擇 [新增方案總管檢視]。
 
--   **自訂出現在 Visual Studio 中的字型**。 您可以為 IDE 中使用的文字變更字體、大小和色彩。 例如，您可以為編輯器裏的某一種程式碼項目自訂色彩，以及變更工具視窗或整個 IDE 的字體。 如需詳細資訊，請參閱[＜How to：變更字型和色彩](../ide/how-to-change-fonts-and-colors-in-visual-studio.md)和[How to:變更字型和色彩編輯器中的](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)。
+-   **自訂出現在 Visual Studio 中的字型**。 您可以為 IDE 中使用的文字變更字體、大小和色彩。 例如，您可以為編輯器裏的某一種程式碼項目自訂色彩，以及變更工具視窗或整個 IDE 的字體。 如需詳細資訊，請參閱[＜How to：變更字型和色彩](../ide/how-to-change-fonts-and-colors-in-visual-studio.md)及[如何：在編輯器中變更字型和色彩](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)。
 
 ## <a name="see-also"></a>請參閱
  [常用命令的預設鍵盤快速鍵](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md) [How to:自訂功能表和工具列](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md)[逐步解說：建立簡單的應用程式](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)[協助工具祕訣和訣竅](../ide/reference/accessibility-tips-and-tricks.md)

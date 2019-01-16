@@ -1,8 +1,6 @@
 ---
 title: 'Idiasession:: Symbolbyid |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8ca800c4409c9c3c1b72b625aa8cedac31e5b194
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 54bf8c4457ed8a9808ebdbcf96f2a835e6fe8e54
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49911626"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53832121"
 ---
 # <a name="idiasessionsymbolbyid"></a>IDiaSession::symbolById
 擷取符號依其唯一識別碼。  
@@ -27,7 +25,7 @@ ms.locfileid: "49911626"
 ## <a name="syntax"></a>語法  
   
 ```C++  
-HRESULT symbolById (   
+HRESULT symbolById (   
    DWORD        id,  
    IDiaSymbol** ppSymbol  
 );  
@@ -65,7 +63,7 @@ IDiaSymbol *GetSymbolType(IDiaSymbol *pSymbol, IDiaSession *pSession)
 }  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [IDiaSymbol::get_type](../../debugger/debug-interface-access/idiasymbol-get-type.md)

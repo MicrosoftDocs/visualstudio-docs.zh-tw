@@ -14,15 +14,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 812b464fe3e9742309a1ce6918d8d6b383101bf8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 38ed283a70716f0f282bdcdf60c18f0f38fc8bb2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49864118"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53822154"
 ---
 # <a name="create-relationships-between-datasets"></a>建立資料集之間的關聯性
 包含相關的資料的資料集資料表會使用<xref:System.Data.DataRelation>物件代表資料表之間的父子式關聯性，以及從另一個傳回相關的記錄。 相關的資料表加入資料集，使用**資料來源組態精靈**，或有**Dataset 設計工具**，建立以及設定<xref:System.Data.DataRelation>為您的物件。
@@ -60,7 +59,7 @@ A<xref:System.Data.DataRelation>物件也可用來建立和強制執行下列條
 |外部索引鍵條件約束規則|動作|
 | - |------------|
 |<xref:System.Data.Rule.Cascade>|父記錄所做的變更 （更新或刪除） 也會在子資料表中的相關記錄。|
-|<xref:System.Data.Rule.SetNull>|不會刪除子記錄，但是子記錄的外部索引鍵設定為<xref:System.DBNull>。 使用此設定，子記錄可保持為 「 孤立 」 — 也就是它們有沒有父資料錄的關聯性。 **注意：** 使用這項規則時，可能導致子資料表中有無效的資料。|
+|<xref:System.Data.Rule.SetNull>|不會刪除子記錄，但是子記錄的外部索引鍵設定為<xref:System.DBNull>。 使用此設定，子記錄可保持為 「 孤立 」 — 也就是它們有沒有父資料錄的關聯性。 **注意：** 使用這項規則，可能會導致子資料表中有無效的資料。|
 |<xref:System.Data.Rule.SetDefault>|相關的子記錄的外部索引鍵設為其預設值 (由資料行建立<xref:System.Data.DataColumn.DefaultValue%2A>屬性)。|
 |<xref:System.Data.Rule.None>|不會變更相關的子記錄。 使用此設定，子記錄可包含無效的父記錄的參考。|
 
@@ -78,7 +77,7 @@ A<xref:System.Data.DataRelation>物件也可用來建立和強制執行下列條
 
 #### <a name="to-create-a-relationship-between-two-data-tables"></a>若要建立兩個資料表之間的關聯性
 
-1.  開啟您的資料集，在**Dataset 設計工具**。 如需詳細資訊，請參閱 <<c0> [ 逐步解說： 以 Dataset 設計工具建立資料集](walkthrough-creating-a-dataset-with-the-dataset-designer.md)。
+1.  在 [DataSet 設計工具] 中開啟資料集。 如需詳細資訊，請參閱[逐步解說：在 Dataset 設計工具中建立資料集](walkthrough-creating-a-dataset-with-the-dataset-designer.md)。
 
 2.  拖曳**關聯**物件**DataSet**工具箱拖曳到關聯性中的子資料表。
 
@@ -102,7 +101,7 @@ A<xref:System.Data.DataRelation>物件也可用來建立和強制執行下列條
 
 #### <a name="to-display-a-relation-name-in-the-dataset-designer"></a>若要在 Dataset 設計工具中顯示關聯性名稱
 
-1.  開啟您的資料集，在**Dataset 設計工具**。 如需詳細資訊，請參閱 <<c0> [ 逐步解說： 以 Dataset 設計工具建立資料集](walkthrough-creating-a-dataset-with-the-dataset-designer.md)。
+1.  在 [DataSet 設計工具] 中開啟資料集。 如需詳細資訊，請參閱[逐步解說：在 Dataset 設計工具中建立資料集](walkthrough-creating-a-dataset-with-the-dataset-designer.md)。
 
 2.  從**資料**功能表上，選取**顯示關聯性標籤**命令，以顯示關聯性名稱。 清除該命令可以隱藏的關聯性名稱。
 

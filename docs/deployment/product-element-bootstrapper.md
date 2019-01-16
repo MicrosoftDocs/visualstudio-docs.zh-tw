@@ -1,8 +1,6 @@
 ---
 title: '&lt;產品&gt;項目 （啟動載入器） |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - FSharp
@@ -17,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 90179df4595ea58a771dd941ea388555b52c7374
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
-ms.translationtype: MT
+ms.openlocfilehash: 32e1689331ff41cec007c98be5410b518f1e44e9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39080401"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53821227"
 ---
 # <a name="ltproductgt-element-bootstrapper"></a>&lt;產品&gt;項目 （啟動載入器）
 `Product`項目是最上層 XML 元素內的產品檔案。  
@@ -139,10 +137,10 @@ ProductCode
 </Package>  
 ```  
   
-## <a name="elements-and-attributes"></a>項目和屬性  
+## <a name="elements-and-attributes"></a>元素和屬性  
  `Product`項目必要的產品檔案中。 它具有下列屬性。  
   
-|屬性|描述|  
+|屬性|說明|  
 |---------------|-----------------|  
 |`ProductCode`|產品的唯一識別碼。|  
   
@@ -252,4 +250,4 @@ ProductCode
 ```  
   
 ## <a name="see-also"></a>另請參閱  
- [產品和封裝結構描述參考](../deployment/product-and-package-schema-reference.md)
+ [產品和套件結構描述參考](../deployment/product-and-package-schema-reference.md)

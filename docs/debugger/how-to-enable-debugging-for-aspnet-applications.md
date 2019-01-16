@@ -2,7 +2,6 @@
 title: 啟用 ASP.NET 應用程式的偵錯 |Microsoft Docs
 ms.custom: H1HackMay2017
 ms.date: 09/21/18
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -19,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: 41da2eb360bac4c50f85bd908f980f5ee3c1d141
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: c8723a97f5751b790c946055693064c3b7d12237
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49813416"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53881097"
 ---
 # <a name="debug-aspnet-or-aspnet-core-apps-in-visual-studio"></a>偵錯在 Visual Studio 中的 ASP.NET 或 ASP.NET Core 應用程式
 
@@ -139,7 +138,7 @@ ASP.NET 專案具有*web.config*檔案依預設，其中包含這兩個應用程
    </configuration>  
    ```
 
-[!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 自動偵測到的任何變更*web.config*檔案，並套用新的組態設定。 您不需要重新啟動電腦或 IIS 伺服器，才能讓變更生效。  
+[!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 會自動偵測任何 *Web.config* 檔案變更，並套用新的組態設定。 您不需要重新啟動電腦或 IIS 伺服器，才能讓變更生效。  
   
 網站可以使用包含數個虛擬目錄和子目錄*web.config*中每個檔案。 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 應用程式會繼承組態設定的來源*web.config* URL 路徑中較高層級的檔案。 階層*web.config*檔案設定會套用到所有[!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]其下方階層中的應用程式。 在中設定不同的組態*web.config*階層中較低的檔案會覆寫較高的檔案中的設定。  
   
@@ -184,11 +183,10 @@ ASP.NET 專案具有*web.config*檔案依預設，其中包含這兩個應用程
 > 偵錯模式，可大幅減少您的應用程式的效能。 為了達到最佳效能，設定`debug="false"`中*web.config*和指定的發行組建，當您部署生產應用程式或進行效能度量。  
 
 ## <a name="see-also"></a>另請參閱  
-[ASP.NET 偵錯： 系統需求](aspnet-debugging-system-requirements.md)   
-[如何： 執行背景工作處理序，使用者帳戶](how-to-run-the-worker-process-under-a-user-account.md)   
-[如何： 尋找 ASP.NET 處理序的名稱](how-to-find-the-name-of-the-aspnet-process.md)   
-[偵錯已部署的 web 應用程式](debugging-deployed-web-applications.md)   
-[逐步解說： 偵錯 web form](walkthrough-debugging-a-web-form.md)   
-[如何： 偵錯 ASP.NET 例外狀況](how-to-debug-aspnet-exceptions.md)   
-[偵錯 web 應用程式： 錯誤和疑難排解](debugging-web-applications-errors-and-troubleshooting.md)
-  
+[ASP.NET 偵錯：系統需求](aspnet-debugging-system-requirements.md)   
+[如何：在使用者帳戶下執行背景工作處理序](how-to-run-the-worker-process-under-a-user-account.md)   
+[如何：尋找 ASP.NET 處理序的名稱](how-to-find-the-name-of-the-aspnet-process.md)   
+[對已部署的 Web 應用程式進行偵錯](debugging-deployed-web-applications.md)   
+[逐步解說：對 Web 表單進行偵錯](walkthrough-debugging-a-web-form.md)   
+[如何：對 ASP.NET 例外狀況進行偵錯](how-to-debug-aspnet-exceptions.md)   
+[對 Web 應用程式進行偵錯：錯誤和疑難排解](debugging-web-applications-errors-and-troubleshooting.md)

@@ -1,8 +1,6 @@
 ---
-title: 中斷點時叫用的對話方塊 |Microsoft 文件
-ms.custom: ''
+title: 中斷點時叫用的對話方塊 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: reference
 f1_keywords:
 - vs.debug.whenbreakpointishit
@@ -19,25 +17,25 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2d2d0940764e64f9179eb8346c271afa6136b72f
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 560a79892ee50f3d151971f46bcc2c2b7f205d3f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31475034"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53845612"
 ---
 # <a name="when-breakpoint-is-hit-dialog-box"></a>叫用中斷點時對話方塊
-使用此對話方塊中，您可以自訂中斷點叫用時所發生的動作。  
+使用此對話方塊中，您可以自訂在觸及中斷點時，就會發生的動作。  
   
 ## <a name="uielement-list"></a>UIElement 清單  
  **列印訊息**  
- 列印訊息，使用 DebuggerDisplay 語法。 如需詳細資訊，請參閱[使用 DebuggerDisplay 屬性](../debugger/using-the-debuggerdisplay-attribute.md)。  
+ 列印訊息，使用 DebuggerDisplay 語法。 如需詳細資訊，請參閱 <<c0> [ 使用 DebuggerDisplay 屬性](../debugger/using-the-debuggerdisplay-attribute.md)。  
   
- 此文字方塊也支援 （例如 $ADDRESS) 可以單獨使用或使用 DebuggerDisplay 運算式的括號內的特殊關鍵字。 在對話方塊中，會列出可用的關鍵字。  
+ 在此文字方塊也支援 （例如 $ADDRESS) 可單獨或 DebuggerDisplay 運算式的括號內的特殊關鍵字。 可用的關鍵字會列在對話方塊中。  
   
  **繼續執行**  
- 啟用此控制項時，才**列印訊息**已選取。 選取這個控制項，您可以使用中斷點當做追蹤點追蹤程式執行，而不是重大時叫用的位置。  
+ 啟用此控制項時，才**列印訊息**已選取。 選取此控制項，您可以使用中斷點與追蹤點來追蹤程式執行，而不是重大時叫用位置。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [使用中斷點](../debugger/using-breakpoints.md)   
  [使用 DebuggerDisplay 屬性](../debugger/using-the-debuggerdisplay-attribute.md)

@@ -1,8 +1,6 @@
 ---
 title: 伺服器和 ClickOnce 部署中的用戶端組態問題 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 444cfa375fd4e2059ddf6458224836cdec6ff18f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 7bbc55e5502364c3ca3eb8ca11dec1848490eaf9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49849429"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53955551"
 ---
 # <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>ClickOnce 部署中的伺服器和用戶端組態問題
 如果您在 Windows Server 上使用 Internet Information Services (IIS)，而且您的部署包含 Windows 無法辨識的檔案類型，例如 Microsoft Word 檔案，IIS 將會拒絕傳送該檔案中，與您的部署將不會成功。  
@@ -39,7 +37,7 @@ ms.locfileid: "49849429"
 
 - *.manifest*  
 
-- *使用.deploy* 
+- *.deploy* 
 
   不過，您可以停用此選項藉由清除**使用".deploy"副檔名**選項[發行選項 對話方塊中](/previous-versions/visualstudio/visual-studio-2010/7z83t16a(v=vs.100))，在此情況下，您必須設定網頁伺服器，以解除封鎖所有的檔案副檔名在應用程式中使用。  
 
@@ -97,22 +95,22 @@ ms.locfileid: "49849429"
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 從任何 HTTP 1.1 Web 伺服器或檔案伺服器安裝應用程式的支援。 FTP 檔案傳輸通訊協定不支援如安裝應用程式。 您可以使用 FTP 發行應用程式。 下表摘要說明這些差異：  
 
 
-| URL 類型 | 描述 |
+| URL 類型 | 說明 |
 |----------| - |
-| ftp: / / | 您可以發佈[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式使用此通訊協定。 |
+| ftp:// | 您可以發佈[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式使用此通訊協定。 |
 | http:// | 您可以安裝[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式使用此通訊協定。 |
 | https:// | 您可以安裝[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式使用此通訊協定。 |
 | file:// | 您可以安裝[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式使用此通訊協定。 |
 
-## <a name="windows-xp-sp2-windows-firewall"></a>Windows XP SP2: Windows 防火牆  
+## <a name="windows-xp-sp2-windows-firewall"></a>Windows XP SP2：Windows 防火牆  
  根據預設，Windows XP SP2 會啟用 Windows 防火牆。 如果您正在開發您的應用程式已安裝的 Windows XP 的電腦上，您就仍然能夠發行和執行[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]從本機伺服器執行 IIS 的應用程式。 不過，您無法存取該伺服器是從另一部電腦執行 IIS，除非您開啟 Windows 防火牆。 如需管理 Windows 防火牆的指示，請參閱 Windows 說明。  
 
-## <a name="windows-server-enable-frontpage-server-extensions"></a>Windows Server： 啟用 FrontPage server extensions  
+## <a name="windows-server-enable-frontpage-server-extensions"></a>Windows Server啟用 FrontPage server extensions  
  應用程式發佈到使用 HTTP 的 Windows Web 伺服器需要 Microsoft 的 FrontPage Server Extensions。  
 
  根據預設，Windows Server 並沒有安裝的 FrontPage Server Extensions。 如果您想要使用[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]来發行至 Windows Server 網頁伺服器會使用 FrontPage Server Extensions 中的 HTTP，您必須先安裝 FrontPage Server Extensions。 您可以使用 Windows Server 中的 管理您的伺服器管理工具來執行安裝。  
 
-## <a name="windows-server-locked-down-content-types"></a>Windows Server： 鎖定的內容類型  
+## <a name="windows-server-locked-down-content-types"></a>Windows Server鎖定的內容類型  
  上的 IIS[!INCLUDE[WinXPSvr](../debugger/includes/winxpsvr_md.md)]鎖定特定已知的內容類型以外的所有檔案類型 (例如 *.htm*， *.html*， *.txt*等等)。 若要啟用的部署[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]使用此伺服器應用程式，您需要變更 IIS 設定，以允許下載類型的檔案 *.application*， *.manifest*，以及任何其他自訂的檔案類型使用您的應用程式。  
 
  如果您使用 IIS 伺服器部署，執行*inetmgr.exe*並加入新的檔案類型，預設 Web 網頁：  
@@ -136,6 +134,6 @@ ms.locfileid: "49849429"
  如需 iis 的詳細指示，請參閱[如何指定其他的文件類型的 HTTP 壓縮](http://go.microsoft.com/fwlink/?LinkId=178459)。  
 
 ## <a name="see-also"></a>另請參閱  
- [疑難排解 ClickOnce 部署](../deployment/troubleshooting-clickonce-deployments.md)   
+ [針對 ClickOnce 部署進行疑難排解](../deployment/troubleshooting-clickonce-deployments.md)   
  [選擇 ClickOnce 部署策略](../deployment/choosing-a-clickonce-deployment-strategy.md)   
  [應用程式部署必要條件](../deployment/application-deployment-prerequisites.md)

@@ -1,8 +1,6 @@
 ---
 title: DataKind |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f2b46e420db8addf19ef8694112058bdb8b2f91
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: f87fea09976128f57e8c7dca77dcaea839aab4c3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49867620"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53879497"
 ---
 # <a name="datakind"></a>DataKind
 指出特定資料值的範圍。  
@@ -27,7 +25,7 @@ ms.locfileid: "49867620"
 ## <a name="syntax"></a>語法  
   
 ```C++  
-enum DataKind {   
+enum DataKind {   
    DataIsUnknown,  
    DataIsLocal,  
    DataIsStaticLocal,  
@@ -78,6 +76,6 @@ enum DataKind {
 ## <a name="requirements"></a>需求  
  標頭： cvconst.h  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [列舉和結構](../../debugger/debug-interface-access/enumerations-and-structures.md)   
  [IDiaSymbol::get_dataKind](../../debugger/debug-interface-access/idiasymbol-get-datakind.md)

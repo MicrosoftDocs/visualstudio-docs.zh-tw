@@ -1,8 +1,6 @@
 ---
 title: 'Idiasymbol:: Get_type |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b4c80a04d41df9548fafa2da869f2e6443c599c2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: ba944bd2871e23c44806caf291334743813c16d0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49896467"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53898108"
 ---
 # <a name="idiasymbolgettype"></a>IDiaSymbol::get_type
 擷取代表這個符號的類型的符號。  
@@ -27,7 +25,7 @@ ms.locfileid: "49896467"
 ## <a name="syntax"></a>語法  
   
 ```C++  
-HRESULT get_type (   
+HRESULT get_type (   
    IDiaSymbol** pRetVal  
 );  
 ```  
@@ -58,7 +56,7 @@ if (SUCCEEDED(pType->get_type( &pBaseType ))) {
 }  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [Idiasymbol:: Get_basetype](../../debugger/debug-interface-access/idiasymbol-get-basetype.md)   
+ [IDiaSymbol::get_baseType](../../debugger/debug-interface-access/idiasymbol-get-basetype.md)   
  [IDiaSymbol::findChildren](../../debugger/debug-interface-access/idiasymbol-findchildren.md)

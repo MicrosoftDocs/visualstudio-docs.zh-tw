@@ -1,8 +1,6 @@
 ---
-title: 錯誤： 網頁伺服器已經鎖定，並且封鎖 DEBUG 動詞命令 |Microsoft 文件
-ms.custom: ''
+title: 錯誤：Web 伺服器已經鎖定，並會封鎖 DEBUG 動詞命令 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: troubleshooting
 f1_keywords:
 - vs.debug.error.webdbg_debug_verb_blocked
@@ -18,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c2537868da6c72df9a68c492b650c72d8a980fcb
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 3d36221eb65c1f2302877993b7dc494411290ae3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31473994"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53941553"
 ---
 # <a name="error-the-web-server-has-been-locked-down-and-is-blocking-the-debug-verb"></a>錯誤：Web 伺服器已經鎖定，並會封鎖 DEBUG 動詞命令
 逐步執行 Web 應用程式或 XML Web Service 失敗，因為已執行 IIS 鎖定工具，並已安裝啟動 URLScan。 這種情況會鎖定 IIS 而無法接收 DEBUG 動詞命令。  
@@ -38,7 +36,7 @@ ms.locfileid: "31473994"
   
      C:\WINNT\System32\Inetsrv\urlscan  
   
-2.  建立一份檔案，並將其命名**為 Urlscan.old**。  
+2.  建立該檔案的複本，並命名為 **Urlscan.old**。  
   
 3.  使用 [記事本] 或您選擇的文字編輯器開啟 Urlscan.ini 檔的原始複本。  
   
@@ -50,6 +48,6 @@ ms.locfileid: "31473994"
   
 7.  重新啟動伺服器或重新啟動 IIS。  
   
-## <a name="see-also"></a>另請參閱  
- [偵錯 Web 應用程式： 錯誤和疑難排解](../debugger/debugging-web-applications-errors-and-troubleshooting.md)   
+## <a name="see-also"></a>請參閱  
+ [偵錯 Web 應用程式：錯誤和疑難排解](../debugger/debugging-web-applications-errors-and-troubleshooting.md)   
  [錯誤：Web 伺服器找不到要求的資源](../debugger/error-the-web-server-could-not-find-the-requested-resource.md)

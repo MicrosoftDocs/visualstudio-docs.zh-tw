@@ -1,6 +1,5 @@
 ---
 title: ClickOnce Unmanaged API 參考 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
 api_name:
 - CleanOnlineAppCache
@@ -12,7 +11,6 @@ api_type:
 - COM
 topic_type:
 - apiref
-ms.technology: vs-ide-deployment
 ms.topic: reference
 dev_langs:
 - VB
@@ -30,14 +28,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 121b9b3be3c7f942f3ed1d5f7f2600f24d684e2d
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
-ms.translationtype: MT
+ms.openlocfilehash: 584dc441e54e89fea77667cac98cdad78bac5b2d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39082126"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53968137"
 ---
-# <a name="clickonce-unmanaged-api-reference"></a>ClickOnce unmanaged API 參考
+# <a name="clickonce-unmanaged-api-reference"></a>ClickOnce 非受控 API 參考
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 從 dfshim.dll 未受管理的公用 Api。  
   
 ## <a name="cleanonlineappcache"></a>CleanOnlineAppCache  
@@ -54,10 +52,10 @@ ms.locfileid: "39082126"
   
 ### <a name="parameters"></a>參數  
   
-|參數|描述|類型|  
+|參數|說明|類型|  
 |---------------|-----------------|----------|  
-|`pcwzActivationUrl`|指標`ActivationURL`。|LPCWSTR|  
-|`pcwzPathToDeploymentManifest`|指標`PathToDeploymentManifest`。|LPCWSTR|  
+|`pcwzActivationUrl`|`ActivationURL` 的指標。|LPCWSTR|  
+|`pcwzPathToDeploymentManifest`|`PathToDeploymentManifest` 的指標。|LPCWSTR|  
 |`pwzApplicationIdentity`|收到 NULL 終止的字串，指定傳回完整的應用程式身分識別之緩衝區的指標。|LPWSTR|  
 |`pdwIdentityBufferLength`|長度為 DWORD 的指標`pwzApplicationIdentity`WCHARs 中的緩衝區。 這包括 NULL 結束字元的空間。|LPDWORD|  
 |`pwzProcessorArchitecture`|收到 NULL 終止的字串，指定處理器架構的應用程式部署，從資訊清單之緩衝區的指標。|LPWSTR|  
@@ -82,10 +80,10 @@ ms.locfileid: "39082126"
   
 ### <a name="parameters"></a>參數  
   
-|參數|描述|類型|  
+|參數|說明|類型|  
 |---------------|-----------------|----------|  
 |`deploymentUrl`|以 NULL 終止的字串，其中包含部署資訊清單 URL 的指標。|LPCWSTR|  
-|`data`|保留供未來使用。 必須是 NULL。|LPVOID|  
+|`data`|保留供未來使用。 必須是 Null。|LPVOID|  
 |`flags`|保留供未來使用。 必須是 0。|DWORD|  
   
 ### <a name="return-value"></a>傳回值  

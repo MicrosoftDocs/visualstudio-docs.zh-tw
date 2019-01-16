@@ -1,8 +1,6 @@
 ---
 title: 'Idiadatasource:: Opensession |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8266102e8bc2c347ed8a554a3c64d9504f1e863b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: bea16f7ff0f723979ded9962a8ff9e620227f8ea
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49933504"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53843108"
 ---
 # <a name="idiadatasourceopensession"></a>IDiaDataSource::openSession
 開啟查詢符號的工作階段。  
@@ -27,7 +25,7 @@ ms.locfileid: "49933504"
 ## <a name="syntax"></a>語法  
   
 ```C++  
-HRESULT openSession (   
+HRESULT openSession (   
    IDiaSession** ppSession  
 );  
 ```  
@@ -39,10 +37,10 @@ HRESULT openSession (
 ## <a name="return-value"></a>傳回值  
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。 下表顯示可能的傳回值，這個方法。  
   
-|值|描述|  
+|值|說明|  
 |-----------|-----------------|  
 |E_UNEXPECTED|[IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md)物件先前尚未初始化符號的來源。|  
-|E_INVALIDARG|無效`ppSession`參數。|  
+|E_INVALIDARG|無效的 `ppSession` 參數。|  
 |E_OUTOFMEMORY|若要開啟 工作階段的記憶體不足。|  
   
 ## <a name="remarks"></a>備註  
@@ -61,7 +59,7 @@ if (FAILED(hr))
 }  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md)   
  [概觀](../../debugger/debug-interface-access/overview-debug-interface-access-sdk.md)   
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   

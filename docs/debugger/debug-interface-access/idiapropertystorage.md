@@ -1,8 +1,6 @@
 ---
-title: IDiaPropertyStorage |Microsoft 文件
-ms.custom: ''
+title: IDiaPropertyStorage |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,41 +12,41 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8cf35e0d753e41794f3924e119c2d7ad2d497f0f
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 8b896cf54f06e84316f67a32c10f66dda21c2cd9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31465651"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53910723"
 ---
 # <a name="idiapropertystorage"></a>IDiaPropertyStorage
-可讓您讀取 DIA 屬性集的持續性屬性。  
+可讓您讀取 DIA 屬性集的持續性的屬性。  
   
 ## <a name="syntax"></a>語法  
   
 ```  
-IDiaPropertyStorage : IUnknown  
+IDiaPropertyStorage : IUnknown  
 ```  
   
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法  
  下表顯示的方法`IDiaPropertyStorage`。  
   
-|方法|描述|  
+|方法|說明|  
 |------------|-----------------|  
-|[IDiaPropertyStorage::Enum](../../debugger/debug-interface-access/idiapropertystorage-enum.md)|取得列舉值的指標集內的屬性。|  
+|[IDiaPropertyStorage::Enum](../../debugger/debug-interface-access/idiapropertystorage-enum.md)|取得列舉值的指標，在這個集合中的屬性。|  
 |[IDiaPropertyStorage::ReadBOOL](../../debugger/debug-interface-access/idiapropertystorage-readbool.md)|讀取`BOOL`屬性集合中的值。|  
 |[IDiaPropertyStorage::ReadBSTR](../../debugger/debug-interface-access/idiapropertystorage-readbstr.md)|讀取`BSTR`屬性集合中的值。|  
 |[IDiaPropertyStorage::ReadDWORD](../../debugger/debug-interface-access/idiapropertystorage-readdword.md)|讀取`DWORD`屬性集合中的值。|  
 |[IDiaPropertyStorage::ReadLONG](../../debugger/debug-interface-access/idiapropertystorage-readlong.md)|讀取`LONG`屬性集合中的值。|  
-|[IDiaPropertyStorage::ReadMultiple](../../debugger/debug-interface-access/idiapropertystorage-readmultiple.md)|讀取屬性集合中的屬性值。|  
-|[IDiaPropertyStorage::ReadPropertyNames](../../debugger/debug-interface-access/idiapropertystorage-readpropertynames.md)|取得對應的字串名稱指定屬性的識別項。|  
+|[IDiaPropertyStorage::ReadMultiple](../../debugger/debug-interface-access/idiapropertystorage-readmultiple.md)|讀取屬性值在屬性集。|  
+|[IDiaPropertyStorage::ReadPropertyNames](../../debugger/debug-interface-access/idiapropertystorage-readpropertynames.md)|取得對應的字串名稱指定屬性識別碼。|  
 |[IDiaPropertyStorage::ReadULONGLONG](../../debugger/debug-interface-access/idiapropertystorage-readulonglong.md)|讀取`ULONGLONG`屬性集合中的值。|  
   
 ## <a name="remarks"></a>備註  
- 屬性集內的每一個屬性由屬性的識別項 (ID)，四個位元組`ULONG`到該集合的唯一值。 透過公開的屬性`IDiaPropertyStorage`介面對應至父介面中可用的屬性。 比方說，屬性[IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)介面可以透過名稱存取`IDiaPropertyStorage`介面 (請注意，即使屬性可能是可存取，並不表示內容無效特定`IDiaSymbol`物件)。  
+ 屬性集內的每一個屬性由屬性識別碼 (ID)，四個位元組`ULONG`特有該組的值。 透過公開的屬性`IDiaPropertyStorage`介面對應至父介面中可用的屬性。 比方說的屬性[IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)介面可以透過名稱存取`IDiaPropertyStorage`介面 (請注意，即使屬性可能是可存取，並不表示該屬性無效，特定`IDiaSymbol`物件)。  
   
 ## <a name="notes-for-callers"></a>呼叫端資訊  
- 取得此介面，藉由呼叫`QueryInterface`上另一個介面的方法。 可以查詢下列介面`IDiaPropertyStorage`介面：  
+ 取得這個介面，藉由呼叫`QueryInterface`上另一個介面的方法。 可以查詢下列介面`IDiaPropertyStorage`介面：  
   
 -   [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)  
   
@@ -65,7 +63,7 @@ IDiaPropertyStorage : IUnknown
 -   [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)  
   
 ## <a name="example"></a>範例  
- 此範例顯示會顯示所公開的所有屬性的函式`IDiaPropertyStorage`物件。 請參閱[IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md)介面，如需如何的範例`IDiaPropertyStorage`介面取自[IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)介面。  
+ 此範例示範會顯示所公開的所有屬性的函式`IDiaPropertyStorage`物件。 請參閱[IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md)介面，如需如何的範例`IDiaPropertyStorage`介面取自[IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)介面。  
   
 ```C++  
 void PrintPropertyStorage(IDiaPropertyStorage* pPropertyStorage)  
@@ -122,15 +120,15 @@ void PrintPropertyStorage(IDiaPropertyStorage* pPropertyStorage)
 ```  
   
 ## <a name="requirements"></a>需求  
- 標頭： Dia2.h  
+ 標頭：dia2.h  
   
  程式庫： diaguids.lib  
   
  DLL: msdia80.dll  
   
-## <a name="see-also"></a>另請參閱  
- [介面 （偵錯介面存取 SDK）](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
- [Idiasession:: Getenumtables](../../debugger/debug-interface-access/idiasession-getenumtables.md)   
+## <a name="see-also"></a>請參閱  
+ [介面 (偵錯介面存取 SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
+ [IDiaSession::getEnumTables](../../debugger/debug-interface-access/idiasession-getenumtables.md)   
  [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)   
  [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md)   
  [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)   

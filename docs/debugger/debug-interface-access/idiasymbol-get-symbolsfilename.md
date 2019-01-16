@@ -1,8 +1,6 @@
 ---
 title: 'Idiasymbol:: Get_symbolsfilename |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 46b468144e0d8275b121d9fe29e59d4789f06042
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: ce511aa7766f55151bfce489cf2acba24f85ccdd
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49840437"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53907199"
 ---
 # <a name="idiasymbolgetsymbolsfilename"></a>IDiaSymbol::get_symbolsFileName
 擷取已載入符號來源檔案的名稱。  
@@ -27,7 +25,7 @@ ms.locfileid: "49840437"
 ## <a name="syntax"></a>語法  
   
 ```C++  
-HRESULT get_symbolsFileName (   
+HRESULT get_symbolsFileName (   
    BSTR* pRetVal  
 );  
 ```  
@@ -45,6 +43,6 @@ HRESULT get_symbolsFileName (
 ## <a name="remarks"></a>備註  
  這個屬性是僅適用於具有符號[SymTagEnum 列舉](../../debugger/debug-interface-access/symtagenum.md)的值`SymTagExe`也具有全域範圍。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [SymTagEnum 列舉](../../debugger/debug-interface-access/symtagenum.md)

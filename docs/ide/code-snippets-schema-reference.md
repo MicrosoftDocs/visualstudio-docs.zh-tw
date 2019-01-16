@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e16df68ef36ee38b20be4da0150ca6550cd3644
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 55780d7e1990a9d10e504c781953cf3f95dd3dc1
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53864710"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54315588"
 ---
 # <a name="code-snippets-schema-reference"></a>程式碼片段結構描述參考
 
@@ -547,7 +547,7 @@ $selected$ is a great color. I love $selected$.
 |[Code 項目](../ide/code-snippets-schema-reference.md#code-element)|必要項目。 指定您要插入文件檔的程式碼。 `Code` 項目中只能有一個 `Snippet` 項目。|
 |[Declarations 項目](../ide/code-snippets-schema-reference.md#declarations-element)|選擇性項目。 指定構成您可以編輯的程式碼片段部分的常值和物件。 `Declarations` 項目中可能有零個或一個 `Snippet` 項目。|
 |[Imports 項目](../ide/code-snippets-schema-reference.md#imports-element)|選擇性項目。 將個別 `Import` 項目設為群組。 `Imports` 項目中可能有零個或一個 `Snippet` 項目。|
-||選擇性項目。 將個別 `Reference` 項目設為群組。 `References` 項目中可能有零個或一個 `Snippet` 項目。|
+|[References 項目](../ide/code-snippets-schema-reference.md#references-element)|選擇性項目。 將個別 `Reference` 項目設為群組。 `References` 項目中可能有零個或一個 `Snippet` 項目。|
 
 |父項目|說明|
 | - |-----------------|

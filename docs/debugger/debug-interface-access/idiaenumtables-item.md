@@ -1,8 +1,6 @@
 ---
 title: 'Idiaenumtables:: Item |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dc95fe0f57eabbd933f8de842d842914948f3e4c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 6321b6bc651778e9d3aff7257a251eff6493f397
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49819950"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53966138"
 ---
 # <a name="idiaenumtablesitem"></a>IDiaEnumTables::Item
 擷取透過索引或名稱的資料表。  
@@ -27,7 +25,7 @@ ms.locfileid: "49819950"
 ## <a name="syntax"></a>語法  
   
 ```C++  
-HRESULT Item (   
+HRESULT Item (   
    VARIANT     index,  
    IDiaTable** table  
 );  
@@ -56,8 +54,8 @@ IDiaTable* pTable;
 pEnumTables->Item( var, &pTable );  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDiaEnumTables](../../debugger/debug-interface-access/idiaenumtables.md)   
  [IDiaTable](../../debugger/debug-interface-access/idiatable.md)   
- [Idiaenumtables:: Get_count](../../debugger/debug-interface-access/idiaenumtables-get-count.md)   
+ [IDiaEnumTables::get_Count](../../debugger/debug-interface-access/idiaenumtables-get-count.md)   
  [常數 (偵錯介面存取 SDK)](../../debugger/debug-interface-access/constants-debug-interface-access-sdk.md)

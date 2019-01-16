@@ -10,15 +10,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: c52e5f157dcbc6dcfeacf72df465bd3d8d9d172e
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: 617d3afece5fbf5da2b347d097df65b5659263f5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52304910"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53900109"
 ---
 # <a name="create-lookup-tables-in-windows-forms-applications"></a>在 Windows Forms 應用程式中建立查閱資料表
 
@@ -54,10 +53,10 @@ ms.locfileid: "52304910"
 
     |屬性|設定說明|
     |--------------| - |
-    |DataSource|Visual Studio 會將此屬性設定為針對您拖曳至控制項之資料表所建立的 <xref:System.Windows.Forms.BindingSource> (與建立控制項時所建立的 <xref:System.Windows.Forms.BindingSource> 相反)。<br /><br /> 如果您需要進行調整時，會將此設為<xref:System.Windows.Forms.BindingSource>具有您想要顯示的資料行的資料表。|
-    |DisplayMember|Visual Studio 會將此屬性設定為主索引鍵後面具有字串資料類型的第一個資料行 (針對您拖曳至控制項的資料表)。<br /><br /> 如果您需要進行調整，請將這設為您想要顯示的資料行名稱。|
-    |ValueMember|Visual Studio 會將此屬性設定為參與主索引鍵的第一個資料行，或者，如果未定義索引鍵，則為資料表中的第一個資料行。<br /><br /> 如果您需要進行調整，請將此設在含有您想要顯示的資料行的資料表中的主索引鍵。|
-    |SelectedValue|Visual Studio 會將此屬性設定為從卸除原始的資料行**Zdroje dat**視窗。<br /><br /> 如果您需要進行調整，請將此設為關聯資料表中的外部索引鍵資料行中。|
+    |**DataSource**|Visual Studio 會將此屬性設定為針對您拖曳至控制項之資料表所建立的 <xref:System.Windows.Forms.BindingSource> (與建立控制項時所建立的 <xref:System.Windows.Forms.BindingSource> 相反)。<br /><br /> 如果您需要進行調整時，會將此設為<xref:System.Windows.Forms.BindingSource>具有您想要顯示的資料行的資料表。|
+    |**DisplayMember**|Visual Studio 會將此屬性設定為主索引鍵後面具有字串資料類型的第一個資料行 (針對您拖曳至控制項的資料表)。<br /><br /> 如果您需要進行調整，請將這設為您想要顯示的資料行名稱。|
+    |**ValueMember**|Visual Studio 會將此屬性設定為參與主索引鍵的第一個資料行，或者，如果未定義索引鍵，則為資料表中的第一個資料行。<br /><br /> 如果您需要進行調整，請將此設在含有您想要顯示的資料行的資料表中的主索引鍵。|
+    |**SelectedValue**|Visual Studio 會將此屬性設定為從卸除原始的資料行**Zdroje dat**視窗。<br /><br /> 如果您需要進行調整，請將此設為關聯資料表中的外部索引鍵資料行中。|
 
 ## <a name="see-also"></a>另請參閱
 

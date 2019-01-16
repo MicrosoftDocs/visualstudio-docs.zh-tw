@@ -1,8 +1,6 @@
 ---
 title: IDiaSymbol::findChildrenExByRVA |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d1a77ba8527698271356fdc324ccefac2dc0f650
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 83711ca61a1bd9a27a7ebed2262bd5ca3f3487e1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49938860"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53903061"
 ---
 # <a name="idiasymbolfindchildrenexbyrva"></a>IDiaSymbol::findChildrenExByRVA
 擷取在指定的相對虛擬位址 (RVA) 的有效符號的子系。  
@@ -27,7 +25,7 @@ ms.locfileid: "49938860"
 ## <a name="syntax"></a>語法  
   
 ```C++  
-HRESULT findChildrenExByRVA (   
+HRESULT findChildrenExByRVA (   
    enum SymTagEnum   symtag,  
    LPCOLESTR         name,  
    DWORD             compareFlags,  
@@ -59,15 +57,15 @@ HRESULT findChildrenExByRVA (
  會傳回本機符號包括即時範圍資訊。  
   
 ## <a name="requirements"></a>需求  
- 標頭： Dia2.h  
+ 標頭：dia2.h  
   
  程式庫： diaguids.lib  
   
  DLL: msdia100.dll  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [SymTagEnum 列舉](../../debugger/debug-interface-access/symtagenum.md)   
  [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)   
- [Idiasession:: Findchildren](../../debugger/debug-interface-access/idiasession-findchildren.md)   
+ [IDiaSession::findChildren](../../debugger/debug-interface-access/idiasession-findchildren.md)   
  [NameSearchOptions 列舉](../../debugger/debug-interface-access/namesearchoptions.md)

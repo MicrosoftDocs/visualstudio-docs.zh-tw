@@ -16,15 +16,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: f9b4fad02b6b0d8324e13d4465f4602c16ce85ba
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: eddd0252bca5cea3f683f0e00133b8e6e66392f7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52305048"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53952176"
 ---
 # <a name="walkthrough-save-data-in-a-transaction"></a>逐步解說：儲存異動中的資料
 

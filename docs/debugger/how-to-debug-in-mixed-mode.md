@@ -1,8 +1,6 @@
 ---
-title: 如何： 在混合模式偵錯 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：在混合模式偵錯 |Microsoft Docs
 ms.date: 11/05/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -19,14 +17,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1439dce6930b71e29141031e93175e0a6aaa519c
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: db26a3a68b15dcd6252f6bd02a540e105c993b54
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389469"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53896054"
 ---
-# <a name="how-to-debug-in-mixed-mode-c-c-visual-basic"></a>如何： 在混合模式偵錯 (C#，c + +、 Visual Basic)
+# <a name="how-to-debug-in-mixed-mode-c-c-visual-basic"></a>HOW TO：在混合模式偵錯 (C#，c + +、 Visual Basic)
 
 下列程序說明如何啟用 managed 和原生程式碼在一起，也就是會在混合模式偵錯的偵錯。 有兩種的混合模式偵錯的案例：
 
@@ -36,10 +34,10 @@ ms.locfileid: "52389469"
 
 您可以讓呼叫的應用程式專案中的 managed 和原生偵錯工具**屬性**頁面。 原生和 managed 應用程式之間的不同設定。
 
-如果您沒有存取呼叫端應用程式專案，您可以偵錯 DLL 專案的 DLL。 您不需要混合的模式偵錯 DLL 專案。 如需詳細資訊，請參閱 [How to: Debug from a DLL Project](../debugger/how-to-debug-from-a-dll-project.md)。
+如果您沒有存取呼叫端應用程式專案，您可以偵錯 DLL 專案的 DLL。 您不需要混合的模式偵錯 DLL 專案。 如需詳細資訊，請參閱[＜How to：從 DLL 專案進行偵錯](../debugger/how-to-debug-from-a-dll-project.md)。
 
 > [!NOTE]
-> 在本文中，根據您的 Visual Studio 設定或版本中的可能會與不同的對話方塊和命令，您會看到。 若要變更您的設定，請選擇**工具** > **匯入和匯出設定**。 如需詳細資訊，請參閱 <<c0> [ 重設設定](../ide/environment-settings.md#reset-settings)。
+> 在本文中，根據您的 Visual Studio 設定或版本中的可能會與不同的對話方塊和命令，您會看到。 若要變更您的設定，請選擇**工具** > **匯入和匯出設定**。 如需詳細資訊，請參閱[重設設定](../ide/environment-settings.md#reset-settings)。
 
 ## <a name="enable-mixed-mode-debugging-for-a-native-calling-app"></a>啟用混合模式偵錯原生的呼叫端應用程式
 
@@ -47,7 +45,7 @@ ms.locfileid: "52389469"
 
 1. 在  **\<專案 > 屬性頁**對話方塊方塊中，展開**組態屬性**，然後選取**偵錯**。
 
-1. 將 [偵錯工具類型 **] 設定為 [混合**] 或 [自動 **]。
+1. 將**偵錯工具類型**設定為**混合**或**自動**。
 
 1. 選取 [確定]。
 

@@ -6,15 +6,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 14df0183076125e487873bbb9865b2481e277a5b
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
-ms.translationtype: MT
+ms.openlocfilehash: 927edacf968ed92eddea96f93cc4f67cbd137fcc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34845011"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53880594"
 ---
 # <a name="add-new-connections"></a>新增連線
 
@@ -40,7 +39,7 @@ ms.locfileid: "34845011"
 
 這會帶來**加入連接** 對話方塊。 我們在這裡，輸入 SQL Server LocalDB 執行個體的名稱。
 
-![加入新的連接](../data-tools/media/raddata-add-new-connection-dialog.png)
+![新增連線](../data-tools/media/raddata-add-new-connection-dialog.png)
 
 ## <a name="change-the-provider"></a>變更提供者
 
@@ -48,7 +47,7 @@ ms.locfileid: "34845011"
 
 ![變更 AD0.NET 資料提供者](../data-tools/media/raddata-change-ad0.net-data-provider.png)
 
-## <a name="test-the-connection"></a>測試連接
+## <a name="test-the-connection"></a>測試連線
 
 您已選擇資料來源之後，請按一下**測試連接**。 如果不成功，您必須疑難排解根據廠商的文件。
 

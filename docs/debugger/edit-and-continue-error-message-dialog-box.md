@@ -1,8 +1,6 @@
 ---
 title: 編輯後繼續錯誤訊息對話方塊 |Microsoft Docs
-ms.custom: ''
 ms.date: 10/15/2018
-ms.technology: vs-ide-debug
 ms.topic: reference
 f1_keywords:
 - vs.debug.ENC.SupportedButNotAvaiable
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ba573a6b6bffdfeebf37c5f46f1f774d699a1131
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
-ms.translationtype: MTE95
+ms.openlocfilehash: 9eddfbcc709048469b06702d9a685d43a7188758
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388698"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53828666"
 ---
 # <a name="edit-and-continue-error-message"></a>編輯後繼續錯誤訊息 
 
@@ -37,7 +35,7 @@ ms.locfileid: "52388698"
 -   嘗試編輯最佳化程式碼。 您可能需要從發行組建切換至偵錯組建。
 -   嘗試編輯的程式碼，當它執行時，而不是偵錯工具中暫停時。 請嘗試[設定中斷點](../debugger/using-breakpoints.md)，和編輯程式碼時暫停。
 -   嘗試啟用只有 unmanaged 偵錯時編輯 managed 程式碼。 編輯後繼續不適用於[混合模式偵錯](../debugger/how-to-debug-in-mixed-mode.md)。
--   讓程式碼變更，不支援編輯後繼續在您的程式語言。 如需詳細資訊，請參閱文件的相關[支援中的程式碼變更C# ](supported-code-changes-csharp.md)，[不支援的 Visual Basic 編輯後繼續 中的編輯](unsupported-edits-in-visual-basic-edit-and-continue.md)，和[支援 c + + 程式碼變更](supported-code-changes-cpp.md).
+-   讓程式碼變更，不支援編輯後繼續在您的程式語言。 如需詳細資訊，請參閱文件的相關[支援中的程式碼變更C# ](supported-code-changes-csharp.md)，[不支援的 Visual Basic 編輯後繼續 中的編輯](/visualstudio/debugger/supported-code-changes-csharp)，和[支援 c + + 程式碼變更](supported-code-changes-cpp.md).
 -   您會附加到，比起從偵錯的應用程式中編輯程式碼嘗試**偵錯**功能表。  
 -   嘗試將偵錯 Dr 時編輯程式碼。Watson 傾印。  
 -   嘗試編輯的程式碼之後發生未處理的例外狀況, 和選項**回溯呼叫堆疊上未處理例外狀況**未選取。  

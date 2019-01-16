@@ -1,8 +1,6 @@
 ---
 title: 在 [平行堆疊] 視窗中檢視的往來文章 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/20/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.parallelstacks
@@ -19,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ee9d52f63f3158979f2f018ea44d5b68d6612c1
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
-ms.translationtype: MTE95
+ms.openlocfilehash: ad685fc33c831d37cee955fda7e965ecd65e9bf7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53562330"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53902055"
 ---
 # <a name="view-threads-and-tasks-in-the-parallel-stacks-window"></a>在 [平行堆疊] 視窗中檢視執行緒和工作
 
@@ -139,7 +137,7 @@ ms.locfileid: "53562330"
   
 ## <a name="see-also"></a>另請參閱  
  [開始偵錯多執行緒應用程式](../debugger/get-started-debugging-multithreaded-apps.md)   
- [逐步解說：偵錯平行應用程式](../debugger/walkthrough-debugging-a-parallel-application.md)   
+ [逐步解說：對平行應用程式進行偵錯](../debugger/walkthrough-debugging-a-parallel-application.md)   
  [第一次查看偵錯工具](../debugger/debugger-feature-tour.md)[偵錯 managed 程式碼](../debugger/debugging-managed-code.md)   
  [平行程式設計](/dotnet/standard/parallel-programming/index)   
  [使用工作視窗](../debugger/using-the-tasks-window.md)   

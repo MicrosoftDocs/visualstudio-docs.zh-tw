@@ -1,8 +1,6 @@
 ---
-title: 編譯模組 |Microsoft 文件
-ms.custom: ''
+title: 編譯模組 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -15,31 +13,31 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6236a585c635ed62f8316191940899dc60a89c03
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: d4dc9e8ef259c67abe0b972584153c7eba8e80b4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31457835"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53956656"
 ---
 # <a name="compiland"></a>編譯模組
-有一個`SymTagCompiland`符號連結的.exe 檔案的每個編譯單位。 編譯模組的資訊分割成具有符號`SymTagCompiland`標記，可以擷取而不載入其他的編譯模組符號和符號與`SymTagCompilandDetails`標記，這可能需要載入其他符號。  
+有一個`SymTagCompiland`符號針對每個編譯模組的已連結至.exe 檔案。 編譯模組的資訊分割成具有符號`SymTagCompiland`標記，可以擷取而不需要載入其他的編譯模組符號和符號與`SymTagCompilandDetails`標記，這可能需要載入其他符號。  
   
 ## <a name="properties"></a>屬性  
  下表顯示適用於此符號類型的屬性。  
   
-|屬性|資料類型|描述|  
+|屬性|資料類型|說明|  
 |--------------|---------------|-----------------|  
-|[IDiaSymbol::get_editAndContinueEnabled](../../debugger/debug-interface-access/idiasymbol-get-editandcontinueenabled.md)|`BOOL`|`TRUE` 如果 編輯後繼續已在編譯時啟用。|  
+|[IDiaSymbol::get_editAndContinueEnabled](../../debugger/debug-interface-access/idiasymbol-get-editandcontinueenabled.md)|`BOOL`|`TRUE` 如果在編譯時啟用編輯後繼續。|  
 |[IDiaSymbol::get_lexicalParent](../../debugger/debug-interface-access/idiasymbol-get-lexicalparent.md)|`IDiaSymbol*`|.Exe 檔案的符號。|  
 |[IDiaSymbol::get_lexicalParentId](../../debugger/debug-interface-access/idiasymbol-get-lexicalparentid.md)|`DWORD`|語彙父符號的識別碼。|  
-|[IDiaSymbol::get_libraryName](../../debugger/debug-interface-access/idiasymbol-get-libraryname.md)|`BSTR`|物件已從載入的文件庫或物件的檔案名稱。|  
+|[IDiaSymbol::get_libraryName](../../debugger/debug-interface-access/idiasymbol-get-libraryname.md)|`BSTR`|物件已從載入的文件庫或物件檔案名稱。|  
 |[IDiaSymbol::get_name](../../debugger/debug-interface-access/idiasymbol-get-name.md)|`BSTR`|編譯模組的物件檔案的檔案名稱。|  
 |[IDiaSymbol::get_sourceFileName](../../debugger/debug-interface-access/idiasymbol-get-sourcefilename.md)|`BSTR`|原始程式檔的名稱。|  
 |[IDiaSymbol::get_symIndexId](../../debugger/debug-interface-access/idiasymbol-get-symindexid.md)|`DWORD`|符號的索引識別碼。|  
 |[IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)|`DWORD`|傳回`SymTagCompiland`(其中[SymTagEnum 列舉](../../debugger/debug-interface-access/symtagenum.md)值)。|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [CompilandDetails](../../debugger/debug-interface-access/compilanddetails.md)   
  [CompilandEnv](../../debugger/debug-interface-access/compilandenv.md)   
  [符號類型的語彙階層架構](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md)

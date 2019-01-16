@@ -1,8 +1,6 @@
 ---
 title: 在遠端電腦上的 UWP 應用程式進行偵錯 |Microsoft Docs
-ms.custom: ''
 ms.date: 10/05/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -15,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 0350358c2225851619a84216c929b8d7435dc4e3
-ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
-ms.translationtype: MT
+ms.openlocfilehash: 8fec6295fce7f100b0dc8c602a41f95e1af7d64f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50750703"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53892247"
 ---
 # <a name="debug-uwp-apps-on-remote-machines-from-visual-studio"></a>從 Visual Studio 的遠端電腦上的 UWP 應用程式進行偵錯
   
@@ -110,5 +108,5 @@ ms.locfileid: "50750703"
   
 ## <a name="see-also"></a>另請參閱  
  [進階遠端部署選項](/windows/uwp/debug-test-perf/deploying-and-debugging-uwp-apps#advanced-remote-deployment-options)  
- [使用 Visual Studio 測試 UWP 應用程式](../test/testing-store-apps-with-visual-studio.md)   
+ [使用 Visual Studio 測試 UWP 應用程式](/visualstudio/test/create-and-run-unit-tests-for-a-store-app-in-visual-studio/)   
  [在 Visual Studio 中對 UWP App 進行偵錯](debugging-windows-store-and-windows-universal-apps.md)

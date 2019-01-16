@@ -1,8 +1,6 @@
 ---
 title: BasicType |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 61d63f20bb086190f6409d3eb4cd08c80689d10f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 0ed85ba87aaa8d78f6c9ad3470e454f60346e2ae
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49874016"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53958601"
 ---
 # <a name="basictype"></a>BasicType
 指定符號的基本類型。  
@@ -27,7 +25,7 @@ ms.locfileid: "49874016"
 ## <a name="syntax"></a>語法  
   
 ```C++  
-enum BasicType {   
+enum BasicType {   
    btNoType   = 0,  
    btVoid     = 1,  
    btChar     = 2,  
@@ -112,7 +110,7 @@ enum BasicType {
 ## <a name="requirements"></a>需求  
  標頭： cvconst.h  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [列舉和結構](../../debugger/debug-interface-access/enumerations-and-structures.md)   
- [Idiasymbol:: Get_basetype](../../debugger/debug-interface-access/idiasymbol-get-basetype.md)   
+ [IDiaSymbol::get_baseType](../../debugger/debug-interface-access/idiasymbol-get-basetype.md)   
  [IDiaSymbol::get_length](../../debugger/debug-interface-access/idiasymbol-get-length.md)

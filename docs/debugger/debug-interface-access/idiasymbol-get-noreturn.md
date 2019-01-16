@@ -1,8 +1,6 @@
 ---
 title: 'Idiasymbol:: Get_noreturn |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8fc0410c045a42412866d1c85f84b13aa6acd796
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 817d515d9ab744ec7be146e6ee39373cb7d2d2ee
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49846105"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53863863"
 ---
 # <a name="idiasymbolgetnoreturn"></a>IDiaSymbol::get_noReturn
 擷取指定的函式是否已標示為永遠不會使用傳回的旗標[noreturn](/cpp/cpp/noreturn)屬性。  
@@ -44,11 +42,11 @@ HRESULT get_noReturn(
   
 ## <a name="requirements"></a>需求  
   
-|需求|描述|  
+|需求|說明|  
 |-----------------|-----------------|  
 |標頭：|dia2.h|  
 |版本:|DIA SDK 8.0 版|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [noreturn](/cpp/cpp/noreturn)

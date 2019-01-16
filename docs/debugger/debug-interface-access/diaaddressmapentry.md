@@ -1,8 +1,6 @@
 ---
 title: DiaAddressMapEntry |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 501defcd2274ab32624a97b9a1463e8f4a515c1e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 6cadfe96bc0bf0ac0395d93c2ef0b156b9965ed2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49819052"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53964081"
 ---
 # <a name="diaaddressmapentry"></a>DiaAddressMapEntry
 描述中對應的位址的項目。  
@@ -27,7 +25,7 @@ ms.locfileid: "49819052"
 ## <a name="syntax"></a>語法  
   
 ```C++  
-struct DiaAddressMapEntry {   
+struct DiaAddressMapEntry {   
    DWORD rva,  
    DWORD rvaTo  
 };  
@@ -47,15 +45,15 @@ struct DiaAddressMapEntry {
   
 1. 搜尋的項目，對應`e`，具有最大`rva`小於或等於`addrA`。  
   
-2. 設定`delta = addrA - e.rva`。  
+2. 設定 `delta = addrA - e.rva`。  
   
-3. 設定`addrB = e.rvaTo + delta`。  
+3. 設定 `addrB = e.rvaTo + delta`。  
   
    陣列`DiaAddressMapEntry`結構傳遞給[idiaaddressmap:: Set_addressmap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md)方法。  
   
 ## <a name="requirements"></a>需求  
  標頭： dia2.h  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [列舉和結構](../../debugger/debug-interface-access/enumerations-and-structures.md)   
  [IDiaAddressMap::set_addressMap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md)
