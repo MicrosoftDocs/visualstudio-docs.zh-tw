@@ -17,12 +17,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5436da548acaf16169437fdc98b51d182891d2d9
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.openlocfilehash: bf3727447d17d941f477dfb71373a8c90e518dd0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51759157"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53861691"
 ---
 # <a name="command-line-profiling-of-aspnet-web-applications"></a>ASP.NET Web 應用程式的命令列分析
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,12 +36,12 @@ ms.locfileid: "51759157"
   
 |工作|相關內容|  
 |----------|---------------------|  
-|**輕鬆收集基本的 ASP.NET 分析資料：** 使用 **VSPerfASPNETCmd** 工具可收集取樣、檢測、.NET 記憶體、爭用或階層互動資料，不需要進行設定，也不需要像使用 **VSPerfCmd** 時必須重新啟動 Internet Information Services (IIS)。 **VSPerfASPNETCmd** 不允許您收集其他資料，或控制資料收集。 **注意︰****VSPerfASPNETCmd** 是您使用獨立分析工具分析 ASP.NET 網站時偏好的工具。|-   [使用 VSPerfASPNETCmd 快速進行網站分析](../profiling/rapid-web-site-profiling-with-vsperfaspnetcmd.md)|  
-|**收集應用程式統計資料：** 使用取樣方法收集效能統計資料。 取樣資料可用來分析 CPU 使用量的問題，以及了解應用程式的一般效能特性。|-   [使用取樣收集應用程式統計資料](../profiling/collecting-application-statistics-for-aspnet-web-applications-using-the-profiler-sampling-method-from-the-command-line.md)|  
-|**收集詳細計時資料：** 使用檢測方法收集詳細的計時資訊。 檢測資料可用來分析 IO 問題，並且適用於更細緻的應用程式案例分析。|-   [使用檢測收集詳細計時資料](../profiling/collecting-detailed-timing-data-for-an-aspnet-web-application-using-the-profiler-instrumentation-method-from-the-command-line.md)|  
-|**收集 .NET 記憶體資料︰** 使用取樣或檢測收集 .NET 記憶體配置資料，顯示配置物件的大小和數目。 您也可以收集物件存留期資料，顯示每個記憶體回收層代中回收的物件大小和數目。|-   [收集記憶體資料](../profiling/collecting-memory-data-from-an-aspnet-web-application-by-using-the-profiler-command-line.md)|  
-|**收集並行資料：** 使用並行方法收集資源爭用資料。 **注意︰** Web 應用程式不支援收集執行緒活動和視覺化資料。|-   [收集並行資料](../profiling/collecting-concurrency-data-for-an-aspnet-web-application-using-the-profiler-command-line.md)|  
-|**加入階層互動資料︰** 您可以新增 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Web 應用程式 對 Microsoft [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] 資料庫之同步 [!INCLUDE[vstecado](../includes/vstecado-md.md)] 呼叫的相關效能資料。|-   [收集階層互動資料](../profiling/adding-tier-interaction-data-from-the-command-line.md)|  
+|**收集基本的 ASP.NET，輕鬆地分析資料：** 使用**VSPerfASPNETCmd**工具來收集取樣、 檢測、.NET 記憶體、 爭用或階層互動資料，而不需要的組態需求和所需的 Internet Information Services (IIS) 重新啟動針對**VSPerfCmd**。 **VSPerfASPNETCmd** 不允許您收集其他資料，或控制資料收集。 **注意：** 建議您使用 **VSPerfASPNETCmd** 這項獨立分析工具分析 ASP.NET 網站。|-   [使用 VSPerfASPNETCmd 快速進行網站分析](../profiling/rapid-web-site-profiling-with-vsperfaspnetcmd.md)|  
+|**收集應用程式統計資料：** 使用取樣方法收集效能統計資料 取樣資料可用來分析 CPU 使用量的問題，以及了解應用程式的一般效能特性。|-   [使用取樣收集應用程式統計資料](../profiling/collecting-application-statistics-for-aspnet-web-applications-using-the-profiler-sampling-method-from-the-command-line.md)|  
+|**收集詳細的計時資料：** 使用檢測方法收集詳細的計時資訊。 檢測資料可用來分析 IO 問題，並且適用於更細緻的應用程式案例分析。|-   [使用檢測收集詳細計時資料](/visualstudio/profiling/collecting-detailed-timing-data-aspnet-profiler-instrumentation-method?view=vs-2015)|  
+|收集 .NET 記憶體資料使用取樣或檢測收集.NET 記憶體配置資料，顯示大小和配置的物件數目。 您也可以收集物件存留期資料，顯示每個記憶體回收層代中回收的物件大小和數目。|-   [收集記憶體資料](../profiling/collecting-memory-data-from-an-aspnet-web-application-by-using-the-profiler-command-line.md)|  
+|**收集並行資料**使用並行方法收集資源爭用資料。 **注意：** Web 應用程式不支援收集執行緒活動和視覺化資料。|-   [收集並行資料](../profiling/collecting-concurrency-data-for-an-aspnet-web-application-using-the-profiler-command-line.md)|  
+|**新增階層互動資料：** 您可以將效能資料同步的相關[!INCLUDE[vstecado](../includes/vstecado-md.md)]呼叫[!INCLUDE[vstecasp](../includes/vstecasp-md.md)]Web 應用程式對 Microsoft[!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)]資料庫。|-   [收集階層互動資料](../profiling/adding-tier-interaction-data-from-the-command-line.md)|  
   
 ## <a name="related-tasks"></a>相關工作  
   

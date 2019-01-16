@@ -1,8 +1,6 @@
 ---
 title: 'Idiasymbol:: Get_undecoratednameex |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: de8eb57e8b1e31be835163e67fa12e3cd6556892
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 715ab90837441974c05176c69c53366199e3543c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49930657"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53932177"
 ---
 # <a name="idiasymbolgetundecoratednameex"></a>IDiaSymbol::get_undecoratedNameEx
 擷取部分或全部的 c + + 未裝飾名稱裝飾 （連結） 的名稱。  
@@ -27,7 +25,7 @@ ms.locfileid: "49930657"
 ## <a name="syntax"></a>語法  
   
 ```C++  
-HRESULT get_undecoratedNameEx(   
+HRESULT get_undecoratedNameEx(   
    DWORD undecorateOptions,  
    BSTR* pRetval  
 );  
@@ -52,12 +50,12 @@ HRESULT get_undecoratedNameEx(
 > [!NOTE]
 >  旗標名稱未定義在 DIA SDK 中，因此您需要將宣告新增至您的程式碼，或使用原始值。  
   
-|旗標|值|描述|  
+|旗標|值|說明|  
 |----------|-----------|-----------------|  
 |UNDNAME_COMPLETE|0x0000|啟用完整 undecoration。|  
 |UNDNAME_NO_LEADING_UNDERSCORES|0x0001|移除 Microsoft 擴充關鍵字前置底線。|  
 |UNDNAME_NO_MS_KEYWORDS|0x0002|停用 Microsoft 擴充關鍵字的擴充。|  
-|UNDNAME_NO_FUNCTION_RETURNS|0x0004|停用擴充的主要宣告的傳回型別。|  
+|UNDNAME_NO_FUNCTION_RETURNS|是 0x0004|停用擴充的主要宣告的傳回型別。|  
 |UNDNAME_NO_ALLOCATION_MODEL|0x0008|停用擴充的宣告模型。|  
 |UNDNAME_NO_ALLOCATION_LANGUAGE|0x0010|停用擴充的宣告語言規範。|  
 |UNDNAME_RESERVED1|0x0020|保留。|  
@@ -75,5 +73,5 @@ HRESULT get_undecoratedNameEx(
 |UNDNAME_NO_IDENT_CHAR_CHECK|0x10000|隱藏有效的識別項字元檢查。|  
 |UNDNAME_NO_PTR64|0x20000|不包含 ptr64 輸出中。|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

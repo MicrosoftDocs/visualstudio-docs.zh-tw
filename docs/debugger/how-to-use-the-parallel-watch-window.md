@@ -1,8 +1,6 @@
 ---
 title: 在平行執行緒中的變數設定監 |Microsoft Docs
-ms.custom: ''
 ms.date: 04/25/2017
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.parallelwatch
@@ -19,15 +17,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e9381479fdfa3d64f3504e947f49411b99d53e2d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 60df60db40124e6b0bda03c3a87626a4398135a3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49857948"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53946980"
 ---
 # <a name="set-a-watch-on-variables-in-parallel-threads-in-visual-studio"></a>在 Visual Studio 中的平行執行緒中的變數設定監看式
-在 [平行監看式] 視窗中，您可以同時在多個執行緒上顯示某個運算式保存的值。 每一列代表應用程式中執行的一個執行緒，不過一個執行緒可能在多列上表示。 更精確的說，每一列代表一個函式呼叫，該函式呼叫的簽章與目前堆疊框架上的函式相符。 您可以將資料行中的項目排序、重新排列、移除和設為群組。 您可以將執行緒加上旗標、取消旗標、凍結 (暫止) 和解除凍結 (繼續)。 下列資料行所示**平行監看式**視窗：  
+在 [平行監看式] 視窗中，您可以同時在多個執行緒上顯示某個運算式保存的值。 每一列代表應用程式中執行的一個執行緒，不過一個執行緒可能在多列上表示。 更精確的說，每一列代表一個函式呼叫，該函式呼叫的簽章與目前堆疊框架上的函式相符。 您可以將資料行中的項目排序、重新排列、移除和設為群組。 您可以將執行緒加上旗標、取消旗標、凍結 (暫止) 和解除凍結 (繼續)。 下列資料行會在 [平行監看式] 視窗中顯示：  
   
 - 旗標資料行，您可以在該資料行中標示想要特別注意的執行緒。  
   
@@ -48,7 +46,7 @@ ms.locfileid: "49857948"
   
 2.  在功能表列上，選擇 [偵錯]、[開始偵錯]。 等候應用程式到達中斷點。  
   
-3.  在功能表列上選擇 **偵錯**， **Windows**，**平行監看式**，然後選擇 監看式視窗。 您最多可以開啟四個視窗。  
+3.  在功能表列上依序選擇 [偵錯]、[視窗]、[平行監看式]，然後選擇監看式視窗。 您最多可以開啟四個視窗。  
   
 ### <a name="to-add-a-watch-expression"></a>若要加入監看運算式  
   
@@ -64,7 +62,7 @@ ms.locfileid: "49857948"
   
 ### <a name="to-switch-to-another-thread"></a>若要切換至另一個執行緒  
   
--   按兩下目前的執行緒資料行 （第二個資料行）。 (鍵盤：選取資料列並按 Enter)。  
+-   按兩下目前的執行緒資料行 （第二個資料行）。 鍵盤選取資料列，然後按 Enter 鍵。）  
   
 ### <a name="to-sort-a-column"></a>若要排序資料行  
   
@@ -72,21 +70,21 @@ ms.locfileid: "49857948"
   
 ### <a name="to-group-threads"></a>若要群組執行緒  
   
--   開啟 平行監看式 視窗的捷徑功能表，選擇  **Group By**，然後選擇適當的子功能表項目。  
+-   開啟 [平行監看式] 視窗的捷徑功能表，選擇 [分組依據]，然後選擇適當的子功能表項目。  
   
 ### <a name="to-freeze-or-thaw-threads"></a>若要凍結或解除凍結執行緒  
   
--   開啟資料列的捷徑功能表，然後選擇**凍結**或是**解除凍結**。  
+-   開啟該列的捷徑功能表，然後選擇 [凍結] 或 [解除凍結]。  
   
 ### <a name="to-export-the-data-in-the-parallel-watch-window"></a>若要匯出 [平行監看式] 視窗中的資料  
   
--   選擇**在 Excel 中開啟**按鈕，然後選擇**在 Excel 中開啟**或是**匯出至 CSV**。  
+-   選擇 [在 Excel 中開啟] 按鈕，然後選擇 [在 Excel 中開啟] 或 [匯出至 CSV]。  
   
 ### <a name="to-filter-by-a-boolean-expression"></a>若要依布林運算式篩選  
   
--   輸入中的布林運算式**依布林運算式篩選** 方塊中。 偵錯工具會針對每個執行緒內容評估運算式。 只有值為 `true` 的列才會顯示。  
+-   在 [依布林運算式篩選] 方塊中輸入布林運算式。 偵錯工具會針對每個執行緒內容評估運算式。 只有值為 `true` 的列才會顯示。  
   
-## <a name="see-also"></a>另請參閱  
- [偵錯多執行緒應用程式](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
- [如何： 使用 GPU 執行緒視窗](../debugger/how-to-use-the-gpu-threads-window.md)   
- [逐步解說：偵錯 C++ AMP 應用程式](/cpp/parallel/amp/walkthrough-debugging-a-cpp-amp-application)
+## <a name="see-also"></a>請參閱  
+ [對多執行緒應用程式進行偵錯](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
+ [如何：使用 [GPU 執行緒] 視窗](../debugger/how-to-use-the-gpu-threads-window.md)   
+ [逐步解說：偵錯 c + + AMP 應用程式](/cpp/parallel/amp/walkthrough-debugging-a-cpp-amp-application)

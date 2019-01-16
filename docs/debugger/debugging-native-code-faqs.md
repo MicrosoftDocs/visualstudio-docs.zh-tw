@@ -1,8 +1,6 @@
 ---
-title: 偵錯原生程式碼的常見問題集 |Microsoft 文件
-ms.custom: ''
+title: 偵錯機器碼常見問題集 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.faq
@@ -22,25 +20,25 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4de62bc77003d22398e826f388489e57a372ebea
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: a38feec1e95dd474623924aca896a24753c8ae17
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31482057"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53866929"
 ---
 # <a name="debugging-native-code-faqs"></a>機器碼偵錯 FAQ
 下列主題包含一些常見問題集的解答：  
   
--   [我的程式獨立的執行時，如何偵錯存取違規？](../debugger/how-can-i-debug-access-violations-when-running-my-program-outside-the-debugger-q.md)  
+-   [獨立執行我的程式時，如何對存取違規進行偵錯？](../debugger/how-can-i-debug-access-violations-when-running-my-program-outside-the-debugger-q.md)  
   
 -   [如何偵錯存取違規？](../debugger/how-can-i-debug-an-access-violation-q.md)  
   
--   [如何得知我的指標是否損毀記憶體位址？](../debugger/how-can-i-find-out-if-my-pointers-corrupt-a-memory-address-q.md)  
+-   [如何發現我的指標是否損毀記憶體位址？](../debugger/how-can-i-find-out-if-my-pointers-corrupt-a-memory-address-q.md)  
   
 -   [如何發現誰傳錯參數值？](../debugger/how-can-i-find-out-who-is-passing-a-wrong-parameter-value-q.md)  
   
--   [當呼叫函式好幾百次，呼叫失敗？](../debugger/when-calling-a-function-hundreds-of-times-how-do-i-know-which-call-failed-q.md)  
+-   [呼叫函式好幾百次時，哪一個呼叫失敗？](../debugger/when-calling-a-function-hundreds-of-times-how-do-i-know-which-call-failed-q.md)  
   
 -   [哪裡可以查看 Win32 錯誤碼？](../debugger/where-can-i-look-up-win32-error-codes-q.md)  
   
@@ -48,8 +46,8 @@ ms.locfileid: "31482057"
   
 -   [偵錯前景程式時，如何使用偵錯工具視窗？](../debugger/how-can-i-use-debugger-windows-while-debugging-a-foreground-program-q.md)  
   
--   [如果暫止於 MFC，如何可以回到呼叫 MFC 的函式？](../debugger/how-to-get-back-to-the-function-that-called-mfc-if-halted.md)  
+-   [如果暫止於 MFC，要如何回到呼叫 MFC 的函式？](../debugger/how-to-get-back-to-the-function-that-called-mfc-if-halted.md)  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [偵錯工具安全性](../debugger/debugger-security.md)   
  [偵錯機器碼](../debugger/debugging-native-code.md)

@@ -1,8 +1,6 @@
 ---
 title: IDiaSession::findSymbolsByRVAForAcceleratorPointerTag |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d936e8110443cc42e77ea523a5b3df288e28d8c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: ad2a0656b03fb057b631319e922a83605fa62a6e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49887263"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53859460"
 ---
 # <a name="idiasessionfindsymbolsbyrvaforacceleratorpointertag"></a>IDiaSession::findSymbolsByRVAForAcceleratorPointerTag
 指定對應的標記值，這個方法會傳回包含符號的列舉型別函式中指定的父加速器虛設常式在指定的相對虛擬位址。  
@@ -25,7 +23,7 @@ ms.locfileid: "49887263"
 ## <a name="syntax"></a>語法  
   
 ```C++  
-HRESULT findSymbolsByRVAForAcceleratorPointerTag (   
+HRESULT findSymbolsByRVAForAcceleratorPointerTag (   
    IDiaSymbol*           parent,  
    DWORD                 tagValue,  
    DWORD                 rva,  
@@ -52,7 +50,7 @@ HRESULT findSymbolsByRVAForAcceleratorPointerTag (
 ## <a name="remarks"></a>備註  
  只有在呼叫這個方法`IDiaSymbol`加速器虛設常式函式對應的介面。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
  [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)   
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

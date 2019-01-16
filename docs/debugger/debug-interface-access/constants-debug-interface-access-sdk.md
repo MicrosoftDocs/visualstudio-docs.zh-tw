@@ -1,8 +1,6 @@
 ---
 title: 常數 （偵錯介面存取 SDK） |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -15,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dd6908a8a0b49f5078e4c0d448ba2dedbe8f720a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: bdc54e15014e05f539c115675a97690e685cb5f1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49872040"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53852056"
 ---
 # <a name="constants-debug-interface-access-sdk"></a>常數 (偵錯介面存取 SDK)
 這些字串常數可用來識別不同的區段，透過 DIA SDK 的程式偵錯資料庫 (PDB) 檔。  
@@ -57,8 +55,8 @@ HRESULT GetSymbolTable(IDiaEnumTables *pEnumTables, IDiaTable **pTable)
 ## <a name="requirements"></a>需求  
  標頭： dia2.h  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [參考](../../debugger/debug-interface-access/debug-interface-access-sdk-reference.md)   
  [列舉和結構](../../debugger/debug-interface-access/enumerations-and-structures.md)   
- [介面 （偵錯介面存取 SDK）](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
+ [介面 (偵錯介面存取 SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
  [IDiaEnumTables::Item](../../debugger/debug-interface-access/idiaenumtables-item.md)

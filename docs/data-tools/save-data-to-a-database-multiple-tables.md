@@ -15,15 +15,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: c4e5ca1e9903089cbcc9daf99e8c8d49d170b1c8
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 2a9cde551796d43cf94c20a9e54768ea9df3ddb5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388811"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53924796"
 ---
 # <a name="save-data-to-a-database-multiple-tables"></a>將資料儲存至資料庫 (多個資料表)
 
@@ -39,7 +38,7 @@ ms.locfileid: "52388811"
 
 -   設定控制項中項目的[資料來源 視窗](add-new-data-sources.md#data-sources-window)。 如需詳細資訊，請參閱 <<c0> [ 設定要從資料來源視窗拖曳時要建立的控制項](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)。
 
--   從 [資料來源]** 視窗將項目拖曳至表單，以建立資料繫結控制項。
+-   從 [資料來源] 視窗將項目拖曳至表單，以建立資料繫結控制項。
 
 -   修改資料集中的每個資料表中的一些記錄。
 
@@ -75,17 +74,17 @@ ms.locfileid: "52388811"
 
 4. 將專案命名為**UpdateMultipleTablesWalkthrough**，然後選擇**確定**。
 
-     隨即建立 UpdateMultipleTablesWalkthrough **專案，並將其加入至方案總管**。
+     隨即建立 **UpdateMultipleTablesWalkthrough** 專案，並將其新增至 [方案總管]。
 
 ## <a name="create-the-data-source"></a>建立資料來源
 
-此步驟會使用 [資料來源組態精靈]** 從 Northwind 資料庫建立資料來源。 您必須具有 Northwind 範例資料庫的存取權，才能建立連接。 如需設定 Northwind 範例資料庫的詳細資訊，請參閱[如何： 安裝範例資料庫](../data-tools/installing-database-systems-tools-and-samples.md)。
+此步驟會使用 [資料來源組態精靈] 從 Northwind 資料庫建立資料來源。 您必須具有 Northwind 範例資料庫的存取權，才能建立連接。 如需設定 Northwind 範例資料庫的詳細資訊，請參閱[How to:安裝範例資料庫](../data-tools/installing-database-systems-tools-and-samples.md)。
 
 1. 在 **資料**功能表上，選取**顯示資料來源**。
 
-   [資料來源]** 視窗隨即開啟。
+   [資料來源] 視窗隨即開啟。
 
-2. 在 [資料來源] **視窗中，選取 [加入新資料來源]**，以啟動 [資料來源組態精靈]**。
+2. 在 [資料來源] 視窗中，選取 [新增新資料來源]，以啟動 [資料來源組態精靈]。
 
 3. 在 [**選擇資料來源類型**畫面上，選取**資料庫**，然後選取**下一步]**。
 
@@ -95,7 +94,7 @@ ms.locfileid: "52388811"
 
          -或-
 
-    -   選取 [新增連接]**，以開啟 [加入/修改連接]** 對話方塊。
+    -   選取 [新增連線]，以開啟 [新增/修改連線] 對話方塊。
 
 5. 如果您的資料庫需要密碼，請選取選項來加入敏感性資料，然後選取**下一步**。
 
@@ -105,7 +104,7 @@ ms.locfileid: "52388811"
 
 8. 選取 **客戶**並**訂單**資料表，然後選取**完成**。
 
-     NorthwindDataSet **會加入專案中，且資料表會出現在 [資料來源]** 視窗中。
+     **NorthwindDataSet** 會新增專案中，且資料表會出現在 [資料來源] 視窗中。
 
 ## <a name="set-the-controls-to-be-created"></a>設定要建立的控制項
 
@@ -119,22 +118,22 @@ ms.locfileid: "52388811"
 
 ## <a name="create-the-data-bound-form"></a>建立資料繫結表單
 
-您可以從 [資料來源]** 視窗將項目拖曳至表單，以建立資料繫結控制項。
+您可以從 [資料來源] 視窗將項目拖曳至表單，以建立資料繫結控制項。
 
-1. 從 [資料來源 **] 視窗，將 [Customers**] 主節點拖曳至 [Form1]。
+1. 從 [資料來源] 視窗，將 [客戶] 主節點拖曳至 **Form1**。
 
      會在表單上顯示具有描述性標籤的資料繫結控制項，以及巡覽記錄的工具區域 (<xref:System.Windows.Forms.BindingNavigator>)。 A [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md)， `CustomersTableAdapter`， <xref:System.Windows.Forms.BindingSource>，和<xref:System.Windows.Forms.BindingNavigator>會出現在元件匣。
 
-2. 從 [資料來源] **視窗將關聯的 [Orders]** 節點拖曳至 Form1 **。
+2. 從 [資料來源] 視窗將關聯的 [Orders] 節點拖曳至 [Form1]。
 
     > [!NOTE]
-    > 關聯的 [Orders] **節點位於 [Fax]** 節點之下，而且是 [Customers]** 節點的子節點。
+    > 關聯的 [Orders] 節點位於 [Fax] 節點之下，而且是 [Customers] 節點的子節點。
 
      <xref:System.Windows.Forms.DataGridView> 控制項以及用於巡覽記錄的工具區域 (<xref:System.Windows.Forms.BindingNavigator>) 會出現在表單上。 `OrdersTableAdapter`和<xref:System.Windows.Forms.BindingSource>會出現在元件匣。
 
 ## <a name="add-code-to-update-the-database"></a>加入程式碼以更新資料庫
 
-您可以藉由呼叫 Customers`Update` 和 Orders**TableAdapters 的** 方法以更新資料庫。 根據預設，事件處理常式**儲存**按鈕<xref:System.Windows.Forms.BindingNavigator>新增至表單的程式碼，以將更新傳送至資料庫。 此程序修改程式碼，以將更新傳送正確的順序。這會排除參考完整性錯誤提高的可能性。 程式碼也會藉由將 try-catch 區塊中的更新呼叫換行，以實作錯誤處理。 您可以修改程式碼，使其符合應用程式的需求。
+您可以藉由呼叫 [Customers] 和 [Orders] TableAdapters 的 `Update` 方法以更新資料庫。 根據預設，事件處理常式**儲存**按鈕<xref:System.Windows.Forms.BindingNavigator>新增至表單的程式碼，以將更新傳送至資料庫。 此程序修改程式碼，以將更新傳送正確的順序。這會排除參考完整性錯誤提高的可能性。 程式碼也會藉由將 try-catch 區塊中的更新呼叫換行，以實作錯誤處理。 您可以修改程式碼，使其符合應用程式的需求。
 
 > [!NOTE]
 > 為了清楚起見，本逐步解說中所使用的交易。 不過，如果您正在更新兩個或多個相關資料表，包含在交易內的所有更新邏輯。 交易是確保對資料庫的所有相關的變更都成功，認可任何變更之前的程序。 如需詳細資訊，請參閱 <<c0> [ 異動和並行存取](/dotnet/framework/data/adonet/transactions-and-concurrency)。

@@ -1,8 +1,6 @@
 ---
-title: 如何： 偵錯 COM 伺服器 |Microsoft 文件
-ms.custom: ''
+title: HOW TO：偵錯 COM 伺服器 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.com
@@ -24,14 +22,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 87d5bedd98aed5ab7bddc7027eaac9e7678d533c
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 6343366478e360631b5a50c8c6d36ca4b31c27cf
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31481680"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53853927"
 ---
-# <a name="how-to-debug-com-servers"></a>如何：偵錯 COM 伺服器
+# <a name="how-to-debug-com-servers"></a>HOW TO：針對 COM 伺服器進行偵錯
 偵錯 COM 伺服器應用程式會有一組特有難以解決的問題。  
   
  如果您沒有或不想使用容器應用程式的偵錯資訊，即可採用三步驟的處理方式，開始偵錯伺服器應用程式。  
@@ -44,9 +42,9 @@ ms.locfileid: "31481680"
   
 3.  啟動容器應用程式 (Container Application)。  
   
-## <a name="see-also"></a>另請參閱  
- [COM 和 ActiveX 的偵錯](../debugger/com-and-activex-debugging.md)   
- [如何： 偵錯 COM 用戶端和伺服器使用 RPC 偵錯](../debugger/how-to-debug-com-clients-and-servers-using-rpc-debugging.md)   
+## <a name="see-also"></a>請參閱  
+ [對 COM 和 ActiveX 進行偵錯](../debugger/com-and-activex-debugging.md)   
+ [如何：使用 RPC 偵錯對 COM 用戶端和伺服器進行偵錯](../debugger/how-to-debug-com-clients-and-servers-using-rpc-debugging.md)   
  [COM 伺服器和容器偵錯](../debugger/com-server-and-container-debugging.md)   
  [Visual Studio 偵錯](../debugger/index.md)  
  [偵錯工具功能導覽](../debugger/debugger-feature-tour.md)

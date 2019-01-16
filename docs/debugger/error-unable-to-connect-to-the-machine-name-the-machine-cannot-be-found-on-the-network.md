@@ -1,8 +1,6 @@
 ---
-title: 錯誤： 無法連接至電腦&lt;名稱&gt;。 在網路上找不到電腦。 | Microsoft Docs
-ms.custom: ''
+title: 錯誤：無法連線到機器&lt;名稱&gt;。 網路上找不到這部電腦。 | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: troubleshooting
 f1_keywords:
 - vs.debug.remote.dcom_disabled
@@ -18,14 +16,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3e0654148823d40277bdd9c6b6d8ec5b881fdb80
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: e4c9bc3c72a2ff97fc67f31f44041feed2185551
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31480055"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53847369"
 ---
-# <a name="error-unable-to-connect-to-the-machine-ltnamegt-the-machine-cannot-be-found-on-the-network"></a>錯誤： 無法連接至電腦&lt;名稱&gt;。 在網路上找不到電腦。
+# <a name="error-unable-to-connect-to-the-machine-ltnamegt-the-machine-cannot-be-found-on-the-network"></a>錯誤：無法連線到機器&lt;名稱&gt;。 網路上找不到這部電腦。
 如果下列其中一種情況為 true 時，就會發生這個行為：  
   
 -   與遠端電腦的連線中斷。  
@@ -46,6 +44,6 @@ ms.locfileid: "31480055"
   
 -   請確定您用以連接遠端電腦的密碼是有效的，而且尚未到期。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [遠端偵錯](../debugger/remote-debugging.md)   
  [偵錯設定和準備](../debugger/debugger-settings-and-preparation.md)

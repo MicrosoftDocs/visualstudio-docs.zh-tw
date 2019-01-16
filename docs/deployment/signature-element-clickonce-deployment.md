@@ -1,8 +1,6 @@
 ---
 title: '&lt;簽章&gt;項目 （ClickOnce 部署） |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: reference
 dev_langs:
 - VB
@@ -16,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 60349c8337d41a03d488b7d14a3fb7bcaa24dbcd
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
-ms.translationtype: MT
+ms.openlocfilehash: ab91a8dea24c37c58fceddce32eadabca4e11e7d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39081510"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53858035"
 ---
 # <a name="ltsignaturegt-element-clickonce-deployment"></a>&lt;簽章&gt;項目 （ClickOnce 部署）
 包含對此部署資訊清單進行數位簽章時所需的資訊。  
@@ -30,8 +28,8 @@ ms.locfileid: "39081510"
   
 ```xml  
   
-      <Signature>   
-   XML signature information   
+      <Signature>   
+   XML signature information   
 </Signature>  
 ```  
   

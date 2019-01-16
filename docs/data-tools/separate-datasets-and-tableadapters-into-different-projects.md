@@ -10,15 +10,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 01e572a2ac20d1cfb103e1600307b51bdf58a0b8
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
-ms.translationtype: MT
+ms.openlocfilehash: 87d4e11ffcb485ac96d2ecdb53951532a2c1305a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37174315"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53932034"
 ---
 # <a name="separate-datasets-and-tableadapters-into-different-projects"></a>將資料集和 TableAdapter 分成不同的專案
 具類型資料集已經過加強，以便[TableAdapters](create-and-configure-tableadapters.md)和資料集類別產生為不同的專案。 這可讓您快速分隔應用程式層，並產生多層式架構資料應用程式。
@@ -61,8 +60,8 @@ ms.locfileid: "37174315"
 
 ## <a name="see-also"></a>另請參閱
 
-- [多層式架構資料應用程式概觀](../data-tools/n-tier-data-applications-overview.md)
-- [逐步解說： 建立多層式架構資料應用程式](../data-tools/walkthrough-creating-an-n-tier-data-application.md)
+- [多層式架構 (N-Tier) 資料應用程式概觀](../data-tools/n-tier-data-applications-overview.md)
+- [逐步解說：建立多層式架構 (N-Tier) 資料應用程式](../data-tools/walkthrough-creating-an-n-tier-data-application.md)
 - [階層式更新](../data-tools/hierarchical-update.md)
 - [存取 Visual Studio 中的資料](../data-tools/accessing-data-in-visual-studio.md)
 - [ADO.NET](/dotnet/framework/data/adonet/index)

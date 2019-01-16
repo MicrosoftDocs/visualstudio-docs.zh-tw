@@ -1,8 +1,6 @@
 ---
 title: '&lt;描述&gt;項目 （ClickOnce 部署） |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: reference
 f1_keywords:
 - urn:schemas-microsoft-com:asm.v2#description
@@ -18,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b8985bc83299f55cec3c5f41fd3d76c8801fdf34
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
-ms.translationtype: MT
+ms.openlocfilehash: d0ad2399cf43b8e86bd45e9c33dd421eeb55416f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39079806"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53828809"
 ---
 # <a name="ltdescriptiongt-element-clickonce-deployment"></a>&lt;描述&gt;項目 （ClickOnce 部署）
 識別用來建立 shell 的存在的應用程式資訊和**新增或移除程式**控制台 中的項目。  
@@ -32,21 +30,21 @@ ms.locfileid: "39079806"
   
 ```xml  
   
-      <description   
-   publisher   
+      <description   
+   publisher   
    product  
    suiteName  
    supportUrl  
 />  
 ```  
   
-## <a name="elements-and-attributes"></a>項目和屬性  
- `description` 為必要元素，位於 `urn:schemas-microsoft-com:asm.v1` 命名空間。 它包含沒有子項目，並具有下列屬性。  
+## <a name="elements-and-attributes"></a>元素和屬性  
+ `description` 項目是必要的，且位於 `urn:schemas-microsoft-com:asm.v1` 命名空間。 它包含沒有子項目，並具有下列屬性。  
   
-|屬性|描述|  
+|屬性|說明|  
 |---------------|-----------------|  
-|`publisher`|必要。 識別在 Windows 中的圖示位置所使用的公司名稱**開始** 功能表並**新增或移除程式**在控制台中，當部署已安裝的項目。|  
-|`product`|必要。 識別完整的產品名稱。 用來做為安裝在 Windows 中的圖示的標題**啟動**功能表。|  
+|`publisher`|必要項。 識別在 Windows 中的圖示位置所使用的公司名稱**開始** 功能表並**新增或移除程式**在控制台中，當部署已安裝的項目。|  
+|`product`|必要項。 識別完整的產品名稱。 用來做為安裝在 Windows 中的圖示的標題**啟動**功能表。|  
 |`suiteName`|選擇性。 識別的子資料夾中`publisher`在 Windows 中的資料夾**啟動**功能表。|  
 |`supportUrl`|選擇性。 指定支援 URL 所示**新增或移除程式**控制台 中的項目。 此 URL 的捷徑也會建立在 Windows 中的應用程式支援**啟動**功能表上，當將部署設定進行安裝。|  
   

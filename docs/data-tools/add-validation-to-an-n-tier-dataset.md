@@ -14,15 +14,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 20a1cd033763e7aa98eb2798357109e300deaff1
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
-ms.translationtype: HT
+ms.openlocfilehash: 5aa324321630d172ddf8fb7938e1bab34a02b8e0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53739464"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53868205"
 ---
 # <a name="add-validation-to-an-n-tier-dataset"></a>將驗證新增至多層式架構 (N-Tier) 資料集
 將驗證新增至資料集分割為多層式架構方案基本上是將驗證新增至單一檔案的資料集 （必須在單一專案中的資料集） 相同。 在資料上執行驗證的建議的位置是期間<xref:System.Data.DataTable.ColumnChanging>及/或<xref:System.Data.DataTable.RowChanging>事件資料表的資料。
@@ -169,5 +168,5 @@ End Sub
 ## <a name="see-also"></a>另請參閱
 
 - [多層式架構 (N-Tier) 資料應用程式概觀](../data-tools/n-tier-data-applications-overview.md)
-- [逐步解說：建立多層式架構資料應用程式](../data-tools/walkthrough-creating-an-n-tier-data-application.md)
+- [逐步解說：建立多層式架構 (N-Tier) 資料應用程式](../data-tools/walkthrough-creating-an-n-tier-data-application.md)
 - [驗證資料集中的資料](../data-tools/validate-data-in-datasets.md)

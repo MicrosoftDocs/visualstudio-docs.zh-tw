@@ -1,8 +1,6 @@
 ---
 title: 'Idiastackwalkframe:: Put_registervalue |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 554be793ba1e41a5a8540d67c1b3f0585ad8664e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 5b5c4719c3b63e2150a8740670b944e10c3d3338
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49916377"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53854642"
 ---
 # <a name="idiastackwalkframeputregistervalue"></a>IDiaStackWalkFrame::put_registerValue
 設定暫存器值。  
@@ -27,7 +25,7 @@ ms.locfileid: "49916377"
 ## <a name="syntax"></a>語法  
   
 ```C++  
-HRESULT put_registerValue (   
+HRESULT put_registerValue (   
    DWORD     index,  
    ULONGLONG NewVal  
 );  
@@ -43,6 +41,6 @@ HRESULT put_registerValue (
 ## <a name="return-value"></a>傳回值  
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDiaStackWalkFrame](../../debugger/debug-interface-access/idiastackwalkframe.md)   
  [CV_HREG_e 列舉](../../debugger/debug-interface-access/cv-hreg-e.md)

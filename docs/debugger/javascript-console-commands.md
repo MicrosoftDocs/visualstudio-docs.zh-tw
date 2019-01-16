@@ -2,7 +2,6 @@
 title: JavaScript 主控台命令 |Microsoft Docs
 ms.custom: seodec18
 ms.date: 07/17/2017
-ms.technology: vs-ide-debug
 ms.topic: reference
 helpviewer_keywords:
 - JavaScript Console commands [UWP apps]
@@ -14,16 +13,16 @@ manager: douge
 ms.workload:
 - uwp
 - cordova
-ms.openlocfilehash: c546e3f1938a7dddc3dd48fa9d941b9f7d2e7048
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: bf978f336070e9bd90f90f399f4b6c3d8598877e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53052218"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53990931"
 ---
 # <a name="javascript-console-commands-in-visual-studio"></a>Visual Studio 中的 JavaScript 主控台命令
   
- 您可以在 Visual Studio [JavaScript 主控台] 視窗中，使用命令傳送訊息及執行其他工作。 如需示範如何使用該視窗的範例，請參閱[快速入門：偵錯 JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)。 本主題資訊適用於 UWP 應用程式和使用 Visual Studio Tools for Apache Cordova 建立的應用程式。 如需 Cordova 應用程式支援的主控台命令相關資訊，請參閱 [Debug Your App](https://taco.visualstudio.com/en-us/docs/debug-using-visual-studio/)。 如需在 Internet Explorer F12 工具中使用主控台的詳細資訊，請參閱 [本主題](/previous-versions/windows/internet-explorer/ie-developer/samples/dn255006(v=vs.85))。  
+ 您可以在 Visual Studio [JavaScript 主控台] 視窗中，使用命令傳送訊息及執行其他工作。 如需示範如何使用該視窗的範例，請參閱[快速入門：針對 JavaScript 進行偵錯](../debugger/quickstart-debug-javascript-using-the-console.md) 本主題資訊適用於 UWP 應用程式和使用 Visual Studio Tools for Apache Cordova 建立的應用程式。 如需 Cordova 應用程式支援的主控台命令相關資訊，請參閱 [Debug Your App](https://taco.visualstudio.com/en-us/docs/debug-using-visual-studio/)。 如需在 Internet Explorer F12 工具中使用主控台的詳細資訊，請參閱 [本主題](/previous-versions/windows/internet-explorer/ie-developer/samples/dn255006(v=vs.85))。  
   
  如果 [JavaScript 主控台] 視窗已關閉，您可以開啟偵錯時在 Visual Studio 中選擇**偵錯** > **Windows** > **JavaScript主控台**。  
   
@@ -48,7 +47,7 @@ ms.locfileid: "53052218"
 |`dirxml(object)`|將指定的 XML 節點 `object` 傳送至主控台視窗，並將它顯示為 XML 節點樹狀結構。|`console.dirxaml(xmlNode);`|  
 |`error(message)`|將 `message` 傳送至主控台視窗。 訊息文字是紅色的，且開頭處會有錯誤符號。<br /><br /> 使用這個命令傳遞的物件，會轉換為字串值。|`console.error("error message");`|  
 |`group(title)`|開始群組傳送至主控台視窗的訊息，並傳送選擇性 `title` 當做群組標籤。 群組可以是巢狀並且顯示在主控台視窗的樹狀檢視。<br /><br /> 在某些情況下 group* 命令可讓您更方便檢視主控台視窗輸出，例如當元件模型正在使用中時。|`console.group("Level 2 Header");` <br /> `console.log("Level 2");` <br /> `console.group();` <br /> `console.log("Level 3");` <br /> `console.warn("More of level 3");` <br /> `console.groupEnd();` <br /> `console.log("Back to level 2");` <br /> `console.groupEnd();` <br /> `console.debug("Back to the outer level");`|  
-|`groupCollapsed(title)`|開始傳送至主控台視窗的訊息群組，並傳送選擇性 `title` 當做群組標籤。 使用 `groupCollapsed` 傳送的群組，預設會出現在摺疊的檢視中。 群組可以是巢狀並且顯示在主控台視窗的樹狀檢視。|用法與 `group` 命令相同。<br /><br /> 請參閱 `group` 命令的範例。|  
+|`groupCollapsed(title)`|開始群組傳送至主控台視窗的訊息，並傳送選擇性 `title` 當做群組標籤。 使用 `groupCollapsed` 傳送的群組，預設會出現在摺疊的檢視中。 群組可以是巢狀並且顯示在主控台視窗的樹狀檢視。|用法與 `group` 命令相同。<br /><br /> 請參閱 `group` 命令的範例。|  
 |`groupEnd()`|結束目前的群組。<br /><br /> 需求：<br /><br /> Visual Studio 2013|請參閱 `group` 命令的範例。|  
 |`info(message)`|將 `message` 傳送至主控台視窗。 訊息開頭處會有資訊符號。|`console.info("info message");`<br /><br /> 如需更多範例，請參閱本主題稍後的 [Formatting console.log output](#ConsoleLog) 。|  
 |`log(message)`|將 `message` 傳送至主控台視窗。<br /><br /> 如果您傳遞物件，這個命令會將該物件傳送至主控台視窗，並在視覺化檢視中顯示物件。 您可以使用視覺化檢視在主控台視窗中檢查屬性。|`console.log("logging message");`|  
@@ -66,7 +65,7 @@ ms.locfileid: "53052218"
   
 |命令|說明|範例|  
 |-------------|-----------------|-------------|  
-|`$0`、`$1`、`$2`、`$3`、`$4`|將指定的項目傳回主控台視窗。 `$0` 會傳回目前在 [DOM 總管] 中選取的項目，`$1` 則會傳回前次在 [DOM 總管] 中選取的項目，依此類推，最多可回推至前四次選取的項目。|$3|  
+|`$0`, `$1`, `$2`, `$3`, `$4`|將指定的項目傳回主控台視窗。 `$0` 會傳回目前在 [DOM 總管] 中選取的項目，`$1` 則會傳回前次在 [DOM 總管] 中選取的項目，依此類推，最多可回推至前四次選取的項目。|$3|  
 |`$(id)`|依 ID 傳回項目。 這是 `document.getElementById(id)`的捷徑命令，其中 `id` 是代表項目 ID 的字串。|`$("contenthost")`|  
 |`$$(selector)`|傳回項目陣列，其符合使用 CSS 選取器語法的指定選取器。 這是 `document.querySelectorAll()`的捷徑命令。|`$$(".itemlist")`|  
 |`cd()`<br /><br /> `cd(window)`|可讓您將運算式評估的內容，從頁面的預設最上層視窗變更為指定框架的視窗。 呼叫不帶參數的 `cd()` ，會將內容傳回至最上層視窗。|`cd();`<br /><br /> `cd(myframe);`|  
@@ -131,5 +130,5 @@ console.log("%s is %f years old!", user.first, user.age);
 ```  
   
 ## <a name="see-also"></a>請參閱  
- [快速入門：偵錯 JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)   
+ [快速入門：對 JavaScript 進行偵錯](../debugger/quickstart-debug-javascript-using-the-console.md)   
  [快速入門：對 HTML 和 CSS 進行偵錯](../debugger/quickstart-debug-html-and-css.md)

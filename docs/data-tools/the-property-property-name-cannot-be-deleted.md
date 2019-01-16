@@ -7,33 +7,32 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 7e85860de7494ae7d93ad37bd0a115fa786f0a87
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
-ms.translationtype: MT
+ms.openlocfilehash: 73e3443c5af145934de15f674213ea5bd01384d1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37174009"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53951663"
 ---
-# <a name="the-property-property-name-cannot-be-deleted"></a>屬性\<屬性名稱 > 不能刪除
+# <a name="the-property-property-name-cannot-be-deleted"></a>無法刪除屬性 \<屬性名稱>
 
-屬性\<屬性名稱 > 不能刪除，因為它設定為**鑑別子屬性**間之繼承\<類別名稱 > 和\<類別名稱 >
+無法刪除屬性 \<屬性名稱>，因為它設定為 \<類別名稱> 與 \<類別名稱> 間之繼承的**鑑別子屬性**
 
-選取的屬性設定為**鑑別子屬性**類別間之繼承所示的錯誤訊息。 如果屬性已參與資料類別之間的繼承組態，就無法刪除屬性。
+選取的屬性已為在錯誤訊息指出的類別 (Class) 之間的繼承設定為**鑑別子屬性**。 如果屬性已參與資料類別之間的繼承組態，就無法刪除屬性。
 
-設定**鑑別子屬性**不同的屬性，可以成功刪除要刪的屬性資料類別。
+將**鑑別子屬性**設定為資料類別的不同屬性，就可以成功刪除要刪的屬性。
 
 ## <a name="to-correct-this-error"></a>更正這個錯誤
 
-1. 在  **O/R Designer**，選取連接的資料類別的繼承關聯線所示的錯誤訊息。
+1. 在 **O/R 設計工具** 中，選取在錯誤訊息指出的資料類別之間連線的繼承線。
 
-2. 設定**鑑別子**的不同屬性的屬性。
+2. 將 [鑑別子屬性] 設定為不同屬性。
 
 3. 試著再次刪除屬性。
 
 ## <a name="see-also"></a>另請參閱
 
 - [O/R 設計工具訊息](../data-tools/o-r-designer-messages.md)
-- [LINQ to SQL 工具，在 Visual Studio 中](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
+- [Visual Studio 中的 LINQ to SQL 工具](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

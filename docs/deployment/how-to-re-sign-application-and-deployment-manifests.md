@@ -1,8 +1,6 @@
 ---
-title: 如何： 重新簽署應用程式和部署資訊清單 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：重新簽署應用程式和部署資訊清單 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -20,20 +18,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cce175f487d24e528d7527c424a1f76fa2a82824
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
-ms.translationtype: MT
+ms.openlocfilehash: d5276f77226930b7ad49aea3253321ed3c8082be
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44280671"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53937979"
 ---
-# <a name="how-to-re-sign-application-and-deployment-manifests"></a>如何： 重新簽署應用程式和部署資訊清單
-您對 Windows Forms 應用程式、 Windows Presentation Foundation 應用程式 (xbap) 或 Office 方案的應用程式資訊清單中的部署屬性變更之後，您必須重新簽署應用程式和部署資訊清單與憑證。 此程序有助於確保終端使用者電腦上未安裝檔案遭竄改。  
+# <a name="how-to-re-sign-application-and-deployment-manifests"></a>HOW TO：重新簽署應用程式和部署資訊清單
+您對 Windows Forms 應用程式、 Windows Presentation Foundation 應用程式 (xbap) 或 Office 方案的應用程式資訊清單中的部署屬性變更之後，您必須重新簽署應用程式和部署資訊清單與憑證。 這項程序有助於確保不會在終端使用者電腦上安裝遭到竄改的檔案。  
   
  可能會重新簽署資訊清單的另一個案例是當您的客戶想要簽署應用程式和部署資訊清單與他們自己的憑證。  
   
 ## <a name="re-sign-the-application-and-deployment-manifests"></a>重新簽署應用程式和部署資訊清單  
- 此程序假設您已經有進行變更您的應用程式資訊清單檔案 (*.manifest*)。 如需詳細資訊，請參閱 <<c0> [ 如何： 變更部署屬性](https://msdn.microsoft.com/library/66052a3a-8127-4964-8147-2477ef5d1472)。  
+ 此程序假設您已經有進行變更您的應用程式資訊清單檔案 (*.manifest*)。 如需詳細資訊，請參閱[＜How to：變更部署屬性](https://msdn.microsoft.com/library/66052a3a-8127-4964-8147-2477ef5d1472)。  
   
 #### <a name="to-re-sign-the-application-and-deployment-manifests-with-mageexe"></a>若要重新簽署應用程式和部署資訊清單使用 Mage.exe  
   
@@ -118,10 +116,10 @@ ms.locfileid: "44280671"
  [保護 ClickOnce 應用程式](../deployment/securing-clickonce-applications.md)   
  [ClickOnce 應用程式的程式碼存取安全性](../deployment/code-access-security-for-clickonce-applications.md)   
  [ClickOnce 和 Authenticode](../deployment/clickonce-and-authenticode.md)   
- [受信任的應用程式部署概觀](../deployment/trusted-application-deployment-overview.md)   
- [如何： 啟用 ClickOnce 安全性設定](../deployment/how-to-enable-clickonce-security-settings.md)   
- [如何： 設定 ClickOnce 應用程式的安全性區域](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)   
- [如何： 設定 ClickOnce 應用程式的自訂權限](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)   
- [如何： 偵錯 ClickOnce 應用程式，以限制權限](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)   
- [如何： 新增信任的發行者至 ClickOnce 應用程式的用戶端電腦](../deployment/how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications.md)   
- [如何： 設定 ClickOnce 信任提示行為](../deployment/how-to-configure-the-clickonce-trust-prompt-behavior.md)
+ [信任的應用程式部署概觀](../deployment/trusted-application-deployment-overview.md)   
+ [如何：啟用 ClickOnce 安全性設定](../deployment/how-to-enable-clickonce-security-settings.md)   
+ [如何：為 ClickOnce 應用程式設定安全性區域](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)   
+ [如何：為 ClickOnce 應用程式設定自訂權限](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)   
+ [如何：以限制的權限對 ClickOnce 應用程式進行偵錯](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)   
+ [如何：將信任的發行者新增至 ClickOnce 應用程式的用戶端電腦](../deployment/how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications.md)   
+ [如何：設定 ClickOnce 信任提示行為](../deployment/how-to-configure-the-clickonce-trust-prompt-behavior.md)

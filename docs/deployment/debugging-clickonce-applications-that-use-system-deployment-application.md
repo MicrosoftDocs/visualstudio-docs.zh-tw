@@ -1,8 +1,6 @@
 ---
 title: 偵錯使用 System.Deployment.Application 的 ClickOnce 應用程式 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,14 +17,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c877c3373f7d028291b521558a04fafd56e022c6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: d6addfb72ae1e67b846433c9762163138523df68
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49836355"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53872407"
 ---
-# <a name="debug-clickonce-applications-that-use-systemdeploymentapplication"></a>偵錯使用 System.Deployment.Application 的 ClickOnce 應用程式
+# <a name="debug-clickonce-applications-that-use-systemdeploymentapplication"></a>對使用 System.Deployment.Application 的 ClickOnce 應用程式進行偵錯
 在  [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]，[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]部署可讓您設定應用程式的更新方式。 不過，如果您要使用和自訂進階[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]部署功能，您將需要存取所提供的部署物件模型<xref:System.Deployment.Application>。 您可以使用<xref:System.Deployment.Application>Api 適用於這類進階工作：  
   
 - 建立應用程式中的 [立即更新] 選項  

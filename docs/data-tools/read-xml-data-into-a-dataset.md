@@ -19,15 +19,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 1e43d118a5fcfe00a8eb6eaa7f34a17ff1f6a4be
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 2f1eb51286ae2d64738b91d997a21596fa2a7c35
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389211"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53921467"
 ---
 # <a name="read-xml-data-into-a-dataset"></a>將 XML 資料讀入資料集
 
@@ -51,7 +50,7 @@ ADO.NET 提供簡單的方法來處理 XML 資料。 在此逐步解說中，您
 
 本逐步解說著重於 XML 資料讀入資料集，因為提供的 XML 檔案的內容。
 
-1. 在 [專案] **功能表中，選取 [加入新項目]**。
+1. 在 [專案] 功能表中，選取 [新增新項目]。
 
 2. 選取  **XML 檔案**，將檔案命名**authors.xml**，然後選取**新增**。
 
@@ -152,7 +151,7 @@ ADO.NET 提供簡單的方法來處理 XML 資料。 在此逐步解說中，您
     |控制項|屬性|設定|
     |-------------|--------------|-------------|
     |`TextBox1`|**多行**|`true`|
-    ||ScrollBars|**垂直**|
+    ||[ScrollBars]|**垂直**|
     |`Button1`|**名稱**|`ReadXmlButton`|
     ||**Text**|`Read XML`|
     |`Button2`|**名稱**|`ShowSchemaButton`|
@@ -199,7 +198,7 @@ ADO.NET 提供簡單的方法來處理 XML 資料。 在此逐步解說中，您
 
      **程式碼編輯器**會在開啟`ShowSchemaButton_Click`事件處理常式。
 
-3.  將下列程式碼貼至 `ShowSchemaButton_Click` 事件處理常式：
+3.  將下列程式碼貼至 `ShowSchemaButton_Click` 事件處理常式。
 
      [!code-csharp[VbRaddataFillingAndExecuting#3](../data-tools/codesnippet/CSharp/read-xml-data-into-a-dataset_2.cs)]
      [!code-vb[VbRaddataFillingAndExecuting#3](../data-tools/codesnippet/VisualBasic/read-xml-data-into-a-dataset_2.vb)]

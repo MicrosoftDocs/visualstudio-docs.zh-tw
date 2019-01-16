@@ -1,8 +1,6 @@
 ---
-title: 來源檔案、 通用屬性、 方案屬性頁對話方塊偵錯 |Microsoft 文件
-ms.custom: ''
+title: 偵錯來源檔案、 通用屬性、 方案屬性頁對話方塊 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: reference
 f1_keywords:
 - vs.debug.options.FindSource
@@ -24,24 +22,24 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 844d189b9dd11945f4257b1fc9dfbd3117ac5199
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: a722422306a16ee7e2dc340448f0e082f8a1f014
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31470760"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53931904"
 ---
 # <a name="debug-source-files-common-properties-solution-property-pages-dialog-box"></a>方案屬性頁對話方塊、通用屬性、偵錯原始程式檔
 此屬性頁可指定對方案進行偵錯時，偵錯工具將於何處尋找原始程式檔。  
   
- 若要存取**偵錯原始程式檔**屬性頁上，以滑鼠右鍵按一下方案中**方案總管 中**選取**屬性**從捷徑功能表。 展開**通用屬性**資料夾，然後按一下**偵錯原始程式檔**頁面。  
+ 若要存取 [偵錯來源檔案] 屬性頁，請以滑鼠右鍵按一下您在 [方案總管] 中的方案，然後從捷徑功能表選取 [屬性]。 展開 [通用屬性] 資料夾，然後按一下 [偵錯來源檔案] 頁面。  
   
  **包含原始程式碼的目錄**  
  包含目錄清單，偵錯工具對方案進行偵錯時，會在這個清單中搜尋原始程式檔。 另外也會搜尋所指定目錄的子目錄。  
   
- **不要尋找這些原始程式檔**  
- 輸入要讓偵錯工具讀取時排除的任何檔案名稱。 如果偵錯工具在上面其中一個指定的目錄中找到這些檔案中的某一個，就會忽略該檔案。 如果**尋找原始碼**時進行偵錯，而您按一下對話方塊中出現**取消**，您要搜尋的檔案會加入到此清單，如此偵錯工具將不會繼續搜尋該檔案。  
+ **不要尋找這些來源檔案**  
+ 輸入要讓偵錯工具讀取時排除的任何檔案名稱。 如果偵錯工具在上面其中一個指定的目錄中找到這些檔案中的某一個，就會忽略該檔案。 如果在進行偵錯時出現 [尋找原始碼] 對話方塊，而您按一下 [取消]，您之前搜尋的檔案就會新增至這個清單，如此偵錯工具就不會繼續搜尋該檔案。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [偵錯工具安全性](../debugger/debugger-security.md)   
  [偵錯設定和準備](../debugger/debugger-settings-and-preparation.md)

@@ -2,7 +2,6 @@
 title: 準備偵錯 Windows 服務 |Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -18,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 86a80c6c24fdba594a5bfb5c11650b69eb2de693
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 9769b3d1238f1ec62e315b18798851b938d003e5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53065008"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53854252"
 ---
 # <a name="debugging-preparation-windows-services"></a>偵錯準備：Windows 服務
 Windows 服務是在 Microsoft Windows 背景中執行的程式。 參考範例包括 Telnet 服務和 Windows 時間服務 (這會更新您電腦上的時鐘)。 Windows 服務不能在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 內執行；它必須在服務控制管理員的內容中執行。 如需詳細資訊，請參閱[建立 Windows 服務](/dotnet/framework/windows-services/how-to-create-windows-services)、[偵錯 Windows 服務應用程式](/dotnet/framework/windows-services/how-to-debug-windows-service-applications)和 [Windows 服務應用程式](/dotnet/framework/windows-services/index)。  

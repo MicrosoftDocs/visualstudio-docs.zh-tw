@@ -1,8 +1,6 @@
 ---
 title: 偵錯 x64 處理序，才支援使用 Microsoft.NET Framework 4 或更新版本的混合的模式 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.error.interop_unsupported_x64
@@ -17,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a6d58713da9a4c809d5f9c3db6f7157a699a467f
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
-ms.translationtype: MT
+ms.openlocfilehash: f472f8756a0599102a0da99b6db1cc3496b41f42
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44284090"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53830634"
 ---
 # <a name="mixed-mode-debugging-for-x64-processes-is-only-supported-when-using-microsoftnet-framework-4-or-greater"></a>只有使用 Microsoft.NET Framework 4 或更新版本時才支援 x64 處理序的混合模式偵錯
 在第 4 版之前的 .NET Framework 版本沒有提供 x64 處理序的混合模式偵錯支援。 這表示在偵錯時，您無法從 Managed 程式碼逐步執行到機器碼，或從機器碼逐步執行到 Managed 程式碼。  
@@ -41,23 +39,23 @@ ms.locfileid: "44284090"
   
 ### <a name="to-change-the-platform-to-32-bit-visual-basic-or-c"></a>若要將平台變更為 32 位元 (Visual Basic 或 C#)  
   
-1.  在 **方案總管**，以滑鼠右鍵按一下您的專案，然後按一下**屬性**。  
+1.  在 [方案總管] 中，以滑鼠右鍵按一下專案，然後按一下 [屬性]。  
   
-2.  在 [屬性頁中，按一下**編譯**或**偵錯**] 索引標籤。  
+2.  在屬性頁中，按一下 [編譯] 或 [偵錯] 索引標籤。  
   
-3.  按一下 **平台**然後從平台清單中選取 x86。  
+3.  按一下 [平台]，然後從平台清單中選取 [x86]。  
   
-     根據預設，Visual Basic 和 C# 編譯器會產生可在任何 CPU 上執行的程式碼。 在 64 位元電腦上，這些二進位檔會當做 64 位元處理序執行。 若要在 32 位元處理程序上執行，您必須選擇**Win32**，而非**AnyCPU**。  
+     根據預設，Visual Basic 和 C# 編譯器會產生可在任何 CPU 上執行的程式碼。 在 64 位元電腦上，這些二進位檔會當做 64 位元處理序執行。 若要在 32 位元處理序上執行，您必須選擇 [Win32]，而非 [AnyCPU]。  
   
 ### <a name="to-change-the-platform-to-32-bit-cc"></a>若要將平台變更為 32 位元 (C/C++)  
   
-1.  在 **方案總管**，以滑鼠右鍵按一下您的專案，然後按一下**屬性**。  
+1.  在 [方案總管] 中，以滑鼠右鍵按一下專案，然後按一下 [屬性]。  
   
-2.  在 屬性頁中，按一下**平台**然後從平台清單中選取 Win32。  
+2.  在屬性頁中，按一下 [平台]，然後從平台清單中選取 [Win32]。  
   
 ### <a name="to-correct-this-error"></a>更正這個錯誤  
   
 -   請參閱[設定 SQL 偵錯](/previous-versions/visualstudio/visual-studio-2010/s4sszxst(v=vs.100))。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [偵錯 64 位元應用程式](../debugger/debug-64-bit-applications.md)

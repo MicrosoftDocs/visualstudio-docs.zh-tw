@@ -1,5 +1,5 @@
 ---
-title: 如何：加入、更新或移除 WCF 資料服務參考
+title: HOW TO：新增、更新或移除 WCF 資料服務參考
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,17 +13,16 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 9099c1ee0b1ed3af108c11792f7629453dfbf7c6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 4553dda8efd4d176312839bdc4eda449a6aa70b4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49819038"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53948244"
 ---
-# <a name="how-to-add-update-or-remove-a-wcf-data-service-reference"></a>如何： 加入、 更新或移除 WCF 資料服務參考
+# <a name="how-to-add-update-or-remove-a-wcf-data-service-reference"></a>HOW TO：新增、更新或移除 WCF 資料服務參考
 A*服務參考*允許存取一或多個專案[!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)]。 使用**加入服務參考**對話方塊，即可搜尋[!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)]在目前方案中，區域網路上，在本機，或在網際網路上。
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
@@ -94,4 +93,4 @@ A*服務參考*允許存取一或多個專案[!INCLUDE[ssAstoria](../data-tools/
 
 ## <a name="see-also"></a>另請參閱
 
-- [在 Visual Studio 中的 Windows Communication Foundation 服務和 WCF 資料服務](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)
+- [Windows Communication Foundation 服務及 Visual Studio 中的 WCF 資料服務](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)

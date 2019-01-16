@@ -1,8 +1,6 @@
 ---
-title: 偵錯 HTML 和 CSS 程式碼範例 |Microsoft 文件
-ms.custom: ''
+title: 偵錯 HTML 和 CSS 的範例程式碼 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -15,19 +13,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 182cda17cdd8a9b08a6e0d8b0130efa887be6368
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 1ffb41dc978598264cfff165602c9c9a8e4cce71
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31456789"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53947552"
 ---
-# <a name="debug-html-and-css-sample-code"></a>偵錯 HTML 和 CSS 程式碼範例
+# <a name="debug-html-and-css-sample-code"></a>對 HTML 和 CSS 範例程式碼進行偵錯
   
- 本主題中的程式碼是範例檔案[快速入門： 偵錯 HTML 和 CSS](../debugger/quickstart-debug-html-and-css.md)。 快速入門在設計上出現的錯誤，會在此版本的程式碼中修正。  
+ 本主題中的程式碼是範例檔案[快速入門：對 HTML 和 CSS 進行偵錯](../debugger/quickstart-debug-html-and-css.md) 快速入門在設計上出現的錯誤，會在此版本的程式碼中修正。  
   
 ## <a name="sample-code"></a>程式碼範例  
- 下列 HTML 程式碼用於\<主體 > 快速入門中的標記。  
+ 下列 HTML 程式碼用於快速入門的 \<body> 標籤中。  
   
 ```html  
 <div id="flipTemplate" data-win-control="WinJS.Binding.Template"  
@@ -51,7 +49,7 @@ ms.locfileid: "31456789"
 }  
 ```  
   
- 下列程式碼範例會顯示 default.js 中的完整 JavaScript 程式碼。 此程式碼之 WinJS 命名空間的參考位於範本的 default.html 檔案中。  
+ 下列程式碼範例會顯示 default.js 中的完整 JavaScript 程式碼。 此程式碼對 WinJS 命名空間的參考位於範本的 default.html 檔案中。  
   
 ```javascript  
 (function () {  
@@ -102,5 +100,5 @@ ms.locfileid: "31456789"
 })();  
 ```  
   
-## <a name="see-also"></a>另請參閱  
- [快速入門：偵錯 HTML 和 CSS](../debugger/quickstart-debug-html-and-css.md)
+## <a name="see-also"></a>請參閱  
+ [快速入門：對 HTML 和 CSS 進行偵錯](../debugger/quickstart-debug-html-and-css.md)

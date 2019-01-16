@@ -12,15 +12,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 11f7249f30b1866ca7c4aea4bbefa850a5353c0f
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: 396afaf7b2cd5821db05ee4a6291d976fc852878
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52305581"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53847954"
 ---
 # <a name="customize-how-visual-studio-creates-captions-for-data-bound-controls"></a>自訂 Visual Studio 為資料繫結的控制項建立標題的方式
 
@@ -33,7 +32,7 @@ ms.locfileid: "52305581"
 
 下表描述控制項標題標籤的登錄值。
 
-|登錄項目|描述|
+|登錄項目|說明|
 |-------------------|-----------------|
 |**SmartCaptionExpression**|您用來比對模式的規則運算式。|
 |**SmartCaptionReplacement**|若要顯示在比對任何群組的格式**SmartCaptionExpression**。|
@@ -44,13 +43,13 @@ ms.locfileid: "52305581"
 |登錄項目|預設值|說明|
 |-------------------|-------------------|-----------------|
 |**SmartCaptionExpression**|**(\\\p{Ll}) (\\\p{Lu})&#124;_ +**|比對後面接著大寫的字元或底線為小寫字元。|
-|**SmartCaptionReplacement**|"$103"|**$1**代表第一個運算式的括號中比對任何字元， **$2**表示相符的第二個括號中的任何字元。 取代為第一個相符項目、 一個空格，然後第二個相符項目。|
+|**SmartCaptionReplacement**|**$1 $2**|**$1**代表第一個運算式的括號中比對任何字元， **$2**表示相符的第二個括號中的任何字元。 取代為第一個相符項目、 一個空格，然後第二個相符項目。|
 |**SmartCaptionSuffix**|**:**|表示附加至傳回字串的字元。 例如，如果標題是`Company Name`後, 置詞可讓 `Company Name:`|
 
 > [!CAUTION]
 > 您必須非常小心進行任何項目在 登錄編輯時。 編輯前先備份登錄。 如果您不當使用登錄編輯程式，您可以會造成嚴重的問題，可能會要求您重新安裝作業系統。 Microsoft 不保證您不當使用登錄編輯程式而造成的問題，可以解決。 您必須自行承擔使用登錄編輯器的風險。
 >
-> 下列知識庫文件包含針對備份、 編輯和還原登錄的指示： [Microsoft Windows 登錄說明](http://support.microsoft.com/default.aspx?scid=kb;en-us;256986)(http://support.microsoft.com/default.aspx?scid=kb; en-us-我們; 256986)
+> 下列知識庫文件包含針對備份、 編輯和還原登錄的指示：[Microsoft Windows 登錄說明](http://support.microsoft.com/default.aspx?scid=kb;en-us;256986)(http://support.microsoft.com/default.aspx?scid=kb; en-us-我們; 256986)
 
 ## <a name="modify-the-smart-captioning-behavior-of-the-data-sources-window"></a>修改資料來源 視窗的智慧型隱藏式輔助字幕行為
 

@@ -1,8 +1,6 @@
 ---
 title: 'Idiasourcefile:: Get_checksum |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f0484fce6f5355361c0c5156cd3c7ad827775c2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 463720503440771dcbdfbef39703a53cdc875e66
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49919425"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53843342"
 ---
 # <a name="idiasourcefilegetchecksum"></a>IDiaSourceFile::get_checksum
 擷取的總和檢查碼位元組。  
@@ -27,7 +25,7 @@ ms.locfileid: "49919425"
 ## <a name="syntax"></a>語法  
   
 ```C++  
-HRESULT get_checksum (   
+HRESULT get_checksum (   
    DWORD  cbData,  
    DWORD* pcbData,  
    BYTE   data[]  
@@ -39,7 +37,7 @@ HRESULT get_checksum (
  [in]資料緩衝區，以位元組為單位的大小。  
   
  `pcbData`  
- [out]傳回總和檢查碼位元組數目。 此參數不得為`NULL`。  
+ [out]傳回總和檢查碼位元組數目。 這個參數不可以是 `NULL`。  
   
  `data`  
  [in、 out]緩衝區填滿的總和檢查碼位元組。 如果這個參數是`NULL`，然後`pcbData`傳回所需的位元組數目。  
@@ -54,6 +52,6 @@ HRESULT get_checksum (
   
  典型的總和檢查碼不能超過 32 個位元組的大小，但不是假設這是最大大小的總和檢查碼。 設定`data`參數來`NULL`取得擷取總和檢查碼時所需的位元組數目。 然後配置適當大小的緩衝區，並呼叫這個方法一次使用新的緩衝區。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)   
  [IDiaSourceFile::get_checksumType](../../debugger/debug-interface-access/idiasourcefile-get-checksumtype.md)

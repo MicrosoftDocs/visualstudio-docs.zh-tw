@@ -1,8 +1,6 @@
 ---
 title: 'Idiasymbol:: Get_issplitted |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 15c30577900a2d2e192bdc2dea45fc89846b102b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 9d02c67f9cd7e8c82e08cc3490f546c103cfb7a4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49919323"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53927372"
 ---
 # <a name="idiasymbolgetissplitted"></a>IDiaSymbol::get_isSplitted
 擷取指定資料符號是否已分割成彙總或其他符號; 集合的旗標編譯器會將符號視為個別的實體，即使它們實際上是較大的符號的一部分。  
@@ -47,11 +45,11 @@ HRESULT get_isSplitted(
   
 ## <a name="requirements"></a>需求  
   
-|需求|描述|  
+|需求|說明|  
 |-----------------|-----------------|  
 |標頭：|dia2.h|  
 |版本:|DIA SDK 8.0 版|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [IDiaSymbol::get_isAggregated](../../debugger/debug-interface-access/idiasymbol-get-isaggregated.md)

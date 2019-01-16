@@ -1,8 +1,6 @@
 ---
-title: 如何： 建立 ClickOnce 應用程式的檔案關聯 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：建立 ClickOnce 應用程式的檔案關聯 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,14 +15,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 25d8d12b8ad49b40309845def60964c13a3da708
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 956aa3e87863ca39127c1f8579128f7cb408977c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49919386"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53842819"
 ---
-# <a name="how-to-create-file-associations-for-a-clickonce-application"></a>如何： 建立 ClickOnce 應用程式的檔案關聯
+# <a name="how-to-create-file-associations-for-a-clickonce-application"></a>HOW TO：建立 ClickOnce 應用程式的檔案關聯
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式可以與一或多個檔案名稱副檔名，相關聯，以便在使用者開啟這些類型的檔案時應用程式也會自動啟動。 新增檔案副檔名支援以[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式很簡單。  
   
 ### <a name="to-create-file-associations-for-a-clickonce-application"></a>若要建立 ClickOnce 應用程式的檔案關聯  
@@ -33,17 +31,17 @@ ms.locfileid: "49919386"
   
 2. 使用文字編輯器或 XML 編輯器，例如 [記事本] 中開啟應用程式資訊清單。  
   
-3. 尋找 `assembly` 項目。 如需詳細資訊，請參閱 < [ndptecclick](../deployment/clickonce-application-manifest.md)。  
+3. 尋找 `assembly` 項目。 如需詳細資訊，請參閱 [ClickOnce 應用程式資訊清單](../deployment/clickonce-application-manifest.md)。  
   
 4. 為子系`assembly`項目，新增`fileAssociation`項目。 `fileAssociation`項目有四個屬性：  
   
-   - `extension`： 您想要關聯到應用程式檔案名稱副檔名。  
+   - `extension`：您想要關聯到應用程式檔案名稱的副檔名。  
   
-   - `description`： 描述的檔案類型，將會出現在 Windows shell 中。  
+   - `description`：檔案類型，將會出現在 Windows shell 中的描述。  
   
-   - `progid`： 用來唯一識別檔案類型，將它標記在登錄中一個字串。  
+   - `progid`：字串，用來唯一識別檔案類型，將它標記在登錄中。  
   
-   - `defaultIcon`： 若要使用此檔案類型一個圖示。 圖示必須新增為應用程式資訊清單中的檔案資源。 如需詳細資訊，請參閱 [如何：在 ClickOnce 應用程式中納入資料檔案](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md)。  
+   - `defaultIcon`：若要使用此檔案類型圖示。 圖示必須新增為應用程式資訊清單中的檔案資源。 如需詳細資訊，請參閱[＜How to：在 ClickOnce 應用程式中納入資料檔案](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md)。  
   
      如需`file`並`fileAssociation`項目，請參閱[ \<fileAssociation > 項目](../deployment/fileassociation-element-clickonce-application.md)。  
   
@@ -53,7 +51,7 @@ ms.locfileid: "49919386"
   
     `mage -Sign WindowsFormsApp1.exe.manifest -CertFile mycert.pfx`  
   
-    如需詳細資訊，請參閱[Mage.exe （資訊清單產生和編輯工具）](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)  
+    如需詳細資訊，請參閱 [Mage.exe (資訊清單產生和編輯工具)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)  
   
 ## <a name="see-also"></a>另請參閱  
  [\<fileAssociation > 項目](../deployment/fileassociation-element-clickonce-application.md)   

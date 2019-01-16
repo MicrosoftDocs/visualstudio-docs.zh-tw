@@ -1,8 +1,6 @@
 ---
-title: 資料集視覺化檢視對話方塊 |Microsoft 文件
-ms.custom: ''
+title: 資料集視覺化檢視對話方塊 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.dataviewer
@@ -23,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: caa7e79ed33871cbcd816cd09edfe84b167e1702
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 29cbefaa2993b894b9868b6719ecf5fde1d832e1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31457263"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53985299"
 ---
 # <a name="dataset-visualizer-dialog-box"></a>資料集視覺化檢視對話方塊
 [資料集視覺化檢視] 可讓您檢視 DataSet、DataTable、DataView 或 DataViewManager 物件的內容。 在偵錯工具變數視窗或 DataTip 中，按一下每一個物件的 [值] 旁邊出現的放大鏡圖示，就可以存取這個視覺化檢視。  
@@ -39,8 +37,8 @@ ms.locfileid: "31457263"
  資料表  
  使用這個下拉式清單方塊可以選取您要以視覺化方式檢視之資料集內的資料表。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [偵錯工具安全性](../debugger/debugger-security.md)   
- [建立自訂的視覺化檢視](../debugger/create-custom-visualizers-of-data.md)   
+ [建立自訂視覺化檢視](../debugger/create-custom-visualizers-of-data.md)   
  [偵錯工具視窗](../debugger/debugger-windows.md)   
- [檢視資料提示中的資料值。](../debugger/view-data-values-in-data-tips-in-the-code-editor.md)
+ [在資料提示中檢視資料值](../debugger/view-data-values-in-data-tips-in-the-code-editor.md)

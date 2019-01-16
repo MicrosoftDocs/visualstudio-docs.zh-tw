@@ -1,8 +1,6 @@
 ---
-title: 逐步解說： 偵錯因著色而產生的錯誤 |Microsoft Docs
-ms.custom: ''
+title: 逐步解說：偵錯因著色而產生的錯誤 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 01875b05-cc7b-4add-afba-f2b776f86974
 author: mikejo5000
@@ -10,14 +8,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 202f2fb0cdbfec6e52a2938365105f3d15327445
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: c90143ae45fba3299cf3eccbcd412d768fcc3738
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49920531"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53828403"
 ---
-# <a name="walkthrough-debugging-rendering-errors-due-to-shading"></a>逐步解說：偵錯因著色而產生的顯示錯誤
+# <a name="walkthrough-debugging-rendering-errors-due-to-shading"></a>逐步解說：對因著色而產生的顯示錯誤進行偵錯
 本逐步解說示範如何使用[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]圖形診斷來調查因為著色器錯誤而著色不正確的物件。  
   
  本逐步解說示範如何：  
@@ -52,7 +50,7 @@ ms.locfileid: "49920531"
   
 1. 開啟 [圖形像素歷史記錄]  視窗。 在 [圖形診斷]  工具列上，選擇 [像素歷史記錄] 。  
   
-2. 選取要檢查的像素。 在圖形記錄文件視窗中，選取其中一個像素著色不正確的物件：  
+2. 選取要檢查的像素。 在圖形記錄文件視窗中，從著色不正確的物件選取其中一個像素：  
   
     ![選取一個像素會顯示關於其歷史記錄資訊。](media/gfx_diag_demo_render_error_shader_step_2.png "gfx_diag_demo_render_error_shader_step_2")  
   
@@ -62,7 +60,7 @@ ms.locfileid: "49920531"
   
     請注意，像素著色器的結果是完全不透明的黑色 （0，0，0，1），而**輸出合併**結合使用這個像素著色器**Previous**的像素色彩的方式， **結果**也是完全不透明的黑色。  
   
-   您檢查著色不正確的像素，而發現像素著色器輸出不是預期的色彩之後，您可以使用 HLSL 偵錯工具來檢查像素著色器，並查明物件的色彩發生什麼狀況。 您可以使用 HLSL 偵錯工具在執行時檢查 HLSL 變數狀態、逐步執行 HLSL 程式碼，以及設定能協助您診斷問題的中斷點。  
+   在您檢查著色不正確的像素，而發現像素著色器輸出不是所需的色彩之後，您可以使用 HLSL 偵錯工具來檢查像素著色器，並查明物件的色彩發生什麼狀況。 您可以使用 HLSL 偵錯工具在執行時檢查 HLSL 變數狀態、逐步執行 HLSL 程式碼，以及設定能協助您診斷問題的中斷點。  
   
 #### <a name="to-examine-the-pixel-shader"></a>檢查像素著色器  
   
@@ -84,7 +82,7 @@ ms.locfileid: "49920531"
   
 2. 找出端點著色器的輸出結構，這是像素著色器的輸入。 在此情節中，此結構的名稱是 `output`。 檢查端點著色器程式碼並發現 `color` 結構的 `output` 成員已明確設定為完全不透明的黑色，這可能是因為某人的偵錯工作所造成。  
   
-3. 確認絕不會從輸入結構複製 color 成員。 因為值`output.color`之前設定為完全不透明的黑色`output`會傳回結構，它是個不錯的主意，請確定值`output`在上一行未正確初始化。 查看 `output.color` 的值時，逐步執行端點著色器程式碼，直到您到達將 `output.color`設定為黑色的程式碼行。 請注意， `output.color` 的值在設定為黑色之前尚未初始化。 這會確認應修改將 `output.color` 設定為黑色的程式碼行，而不是予以刪除。  
+3. 確認絕不會從輸入結構複製 color 成員。 由於在傳回 `output` 結構之前，`output.color` 的值已設定為完全不透明的黑色，因此建議您確定 `output` 的值在上一行未正確初始化。 查看 `output.color` 的值時，逐步執行端點著色器程式碼，直到您到達將 `output.color`設定為黑色的程式碼行。 請注意， `output.color` 的值在設定為黑色之前尚未初始化。 這會確認應修改將 `output.color` 設定為黑色的程式碼行，而不是予以刪除。  
   
     !["Output.color"的值為黑色。](media/gfx_diag_demo_render_error_shader_step_7.png "gfx_diag_demo_render_error_shader_step_7")  
   

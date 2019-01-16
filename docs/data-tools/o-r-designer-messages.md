@@ -7,15 +7,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: b9b9b52cd09801d7b9435a354249e5d2d6296d35
-ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
-ms.translationtype: MT
+ms.openlocfilehash: 243eb5a9d10ec824cc2c17ff1692e58fa3738ca8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37089049"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53859863"
 ---
 # <a name="or-designer-messages"></a>O/R 設計工具訊息
 
@@ -23,13 +22,13 @@ ms.locfileid: "37089049"
 
 ## <a name="in-this-section"></a>本節內容
 
- [無法建立關聯\<關聯名稱 >-屬性列出兩次](../data-tools/cannot-create-an-association-association-name-property-listed-twice.md)
+ [無法建立關聯 \<關聯名稱> - 屬性已列出兩次](../data-tools/cannot-create-an-association-association-name-property-listed-twice.md)
 
- [無法建立關聯\<關聯名稱 >-屬性類型不符](../data-tools/cannot-create-an-association-association-name-property-types-do-not-match.md)
+ [無法建立關聯 \<關聯名稱> - 屬性類型不符](../data-tools/cannot-create-an-association-association-name-property-types-do-not-match.md)
 
  [變更 DataContext 方法的傳回型別將無法復原](../data-tools/changing-the-return-type-of-a-datacontext-method-cannot-be-undone.md)
 
- [無法擷取資料庫物件的結構描述資訊\<物件名稱 >](../data-tools/could-not-retrieve-schema-information-for-database-object-object-name.md)
+ [無法擷取資料庫物件 \<物件名稱> 的結構描述資訊](../data-tools/could-not-retrieve-schema-information-for-database-object-object-name.md)
 
  [一個或多個選取的資料庫物件傳回的結構描述與目標類別的結構描述不相符](../data-tools/one-or-more-selected-database-objects-return-a-schema-that-does-not-match-the-schema-of-the-target-class.md)
 
@@ -41,9 +40,9 @@ ms.locfileid: "37089049"
 
  [您要新增至此設計工具的物件使用了不同於設計工具目前所使用的資料連線](../data-tools/the-objects-you-are-adding-to-the-designer-use-a-different-data-connection-than-the-designer-is-currently-using.md)
 
- [屬性\<屬性名稱 > 不能刪除](../data-tools/the-property-property-name-cannot-be-deleted.md)
+ [無法刪除屬性 \<屬性名稱>](../data-tools/the-property-property-name-cannot-be-deleted.md)
 
- [屬性\<屬性名稱 > 不能刪除，因為它正參與關聯\<關聯名稱 >](../data-tools/the-property-property-name-cannot-be-deleted-because-it-is-participating-in-the-association-association-name.md)
+ [無法刪除屬性 \<屬性名稱>，因為它正參與關聯 \<關聯名稱>](../data-tools/the-property-property-name-cannot-be-deleted-because-it-is-participating-in-the-association-association-name.md)
 
  [無法刪除所選取的類別，因為它是用來當做一或多個 DataContext 方法的傳回型別](../data-tools/the-selected-class-cannot-be-deleted-because-it-is-used-as-a-return-type-for-one-or-more-datacontext-methods.md)
 
@@ -61,5 +60,5 @@ ms.locfileid: "37089049"
 
 ## <a name="see-also"></a>另請參閱
 
-- [LINQ to SQL 工具，在 Visual Studio 中](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
+- [Visual Studio 中的 LINQ to SQL 工具](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)

@@ -1,8 +1,6 @@
 ---
 title: 產品和封裝結構描述參考 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 f1_keywords:
 - MSBuild.GenerateBootstrapper.CircularIncludes
@@ -27,19 +25,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4fae53ad5143df91d74ad9c5e3cd19c1bdafd0da
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
-ms.translationtype: MT
+ms.openlocfilehash: 4fe8a7e30c61105cc78d0e23ac35683e72e82ffc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39080645"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53844665"
 ---
 # <a name="product-and-package-schema-reference"></a>產品和封裝結構描述參考
 A*產品檔案*會描述所有所需的外部相依性的 XML 資訊清單[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式。 外部相依性的範例包括[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]和 Microsoft Data Access Components (MDAC)。 封裝檔案與產品檔案類似，但用來安裝相依性，例如當地語系化組件、 授權合約，以及文件的文化特性相依元件。  
   
  產品和套件檔案包含的其中一個最上層`Product`或`Package`項目，每個均包含下列項目。  
   
-|元素|描述|屬性|  
+|元素|說明|屬性|  
 |-------------|-----------------|----------------|  
 |[\<產品 > 項目](../deployment/product-element-bootstrapper.md)|產品檔案的必要項最上層項目。|無|  
 |[\<封裝 > 項目](../deployment/package-element-bootstrapper.md)|必要的封裝檔案的最上層項目。|`Culture`<br /><br /> `Name`<br /><br /> `EULA`|  

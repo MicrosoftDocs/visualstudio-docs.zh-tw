@@ -9,15 +9,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: d8671c46cf2e88ab5d5797dd7a009ff29b953c4e
-ms.sourcegitcommit: c9a01c599ce19a5845605b3b28c0229fd0abb93f
-ms.translationtype: MT
+ms.openlocfilehash: ad784e0438e0b1f02607c3cb748c759b9266dbe6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2018
-ms.locfileid: "52281728"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53824570"
 ---
 # <a name="database-projects-and-data-tier-applications"></a>資料庫專案和資料層應用程式
 
@@ -29,7 +28,7 @@ ms.locfileid: "52281728"
 
 | 高層級的工作 | 支援內容 |
 | - | - |
-| **開始的資料層應用程式的開發工作：** 與 SQL Server 2008 引進了資料層應用程式 (DAC) 的概念。 DAC 包含 SQL Server 資料庫和支援所使用的用戶端-伺服器或 3 層式架構應用程式的執行個體物件的定義。 DAC 包含資料庫物件，例如資料表和檢視表，以及執行個體的實體，例如登入。 您可以使用 Visual Studio 建立 DAC 專案，建置 DAC 封裝檔案，並傳送給資料庫管理員的 SQL Server database engine 的執行個體上部署的 DAC 封裝檔案。 | - [資料層應用程式](/sql/relational-databases/data-tier-applications/data-tier-applications)<br />- [SQL Server Management Studio](/sql/ssms/sql-server-management-studio-ssms) |
+| **開始資料層應用程式的開發的工作：** 使用 SQL Server 2008 引進了資料層應用程式 (DAC) 的概念。 DAC 包含 SQL Server 資料庫和支援所使用的用戶端-伺服器或 3 層式架構應用程式的執行個體物件的定義。 DAC 包含資料庫物件，例如資料表和檢視表，以及執行個體的實體，例如登入。 您可以使用 Visual Studio 建立 DAC 專案，建置 DAC 封裝檔案，並傳送給資料庫管理員的 SQL Server database engine 的執行個體上部署的 DAC 封裝檔案。 | - [資料層應用程式](/sql/relational-databases/data-tier-applications/data-tier-applications)<br />- [SQL Server Management Studio](/sql/ssms/sql-server-management-studio-ssms) |
 | **執行反覆的資料庫開發：** 開發人員可以簽出專案的組件，並加以更新隔離式的開發環境中。 透過這種環境，您可以測試您的變更，而不會影響小組的其他成員。 完成變更之後，您會檢查回版本控制，讓其他小組成員可以取得您的變更和建構並將其部署至測試伺服器的檔案。 | - [專案導向的離線資料庫開發 (SQL Server Data Tools)](/sql/ssdt/project-oriented-offline-database-development)<br />- [TRANSACT-SQL 偵錯工具 (SQL Server Management Studio)](/sql/ssms/scripting/transact-sql-debugger) |
 | **建立原型，正在驗證測試結果，並修改資料庫指令碼和物件：** 您可以使用 TRANSACT-SQL 編輯器來執行這些常見工作的任何一個。 | - [查詢與文字編輯器 (SQL Server Management Studio)](/sql/ssms/scripting/query-and-text-editors-sql-server-management-studio) |
 

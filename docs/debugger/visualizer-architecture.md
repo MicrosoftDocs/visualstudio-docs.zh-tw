@@ -1,8 +1,6 @@
 ---
 title: 視覺化檢視架構 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -15,29 +13,29 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0e9c9f9012cc2811e0462586abe062e25a5478c5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: a7a4ac05283b010ca7a549c9bc6829061e420e30
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49836602"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53822945"
 ---
 # <a name="visualizer-architecture"></a>視覺化檢視架構
 偵錯工具視覺化檢視的架構分為兩部分：  
   
-- *偵錯工具端*Visual Studio 偵錯工具內執行。 偵錯工具端的程式碼會建立並顯示視覺化檢視的使用者介面。  
+- 「偵錯工具端」(*debugger side*) 會在 Visual Studio 偵錯工具中執行。 偵錯工具端的程式碼會建立並顯示視覺化檢視的使用者介面。  
   
-- *偵錯項目端*Visual Studio 偵錯處理序內執行 (*偵錯項目*)。  
+- 「偵錯項目端」會在 Visual Studio 正在偵錯的處理序 (亦即「偵錯項目」) 中執行。  
   
-  視覺化檢視是可讓偵錯工具顯示的偵錯工具元件 (*視覺化*) 中有意義、 容易了解表單的資料物件的內容。 有些視覺化檢視也支援編輯資料物件。 您可以撰寫自訂的視覺化檢視，來將偵錯工具擴充成可以處理自己的自訂資料型別。  
+  視覺化檢視是偵錯工具的一個元件，它讓偵錯工具可以用有意義、容易了解的形式，顯示 (「視覺化」(*visualize*)) 資料物件的內容。 有些視覺化檢視也支援編輯資料物件。 您可以撰寫自訂的視覺化檢視，來將偵錯工具擴充成可以處理自己的自訂資料型別。  
   
-  要視覺化的資料物件位於您正在偵錯的程序 (*偵錯項目*程序)。 即將顯示資料的使用者介面則在 Visual Studio 偵錯工具處理序內建立：  
+  要視覺化的資料物件位於所偵錯的處理序 (「偵錯項目」處理序) 內。 即將顯示資料的使用者介面則在 Visual Studio 偵錯工具處理序內建立：  
   
 |偵錯工具處理序|偵錯項目處理序|  
 |----------------------|----------------------|  
 |偵錯工具使用者介面 (資料提示方塊、監看式視窗、快速監看式)|要視覺化的資料物件|  
   
- 若要在偵錯工具介面中將資料物件視覺化，您必須編寫兩個處理序之間的通訊程式碼。 因此，視覺化檢視架構是由兩個部分所組成：*偵錯工具端*程式碼並*偵錯項目端*程式碼。  
+ 若要在偵錯工具介面中將資料物件視覺化，您必須編寫兩個處理序之間的通訊程式碼。 因此，視覺化檢視架構分為兩部分：「偵錯工具端」程式碼和「偵錯項目端」程式碼。  
   
  偵錯工具端程式碼會建立自己的使用者介面，供您從偵錯工具介面 (例如，資料提示方塊、監看式視窗或快速監看式) 中叫用。 建立視覺化檢視介面是使用 <xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer> 類別和 <xref:Microsoft.VisualStudio.DebuggerVisualizers.IDialogVisualizerService> 介面。 DialogDebuggerVisualizer 和 IDialogVisualizerService 跟所有視覺化檢視 API 一樣位於 <xref:Microsoft.VisualStudio.DebuggerVisualizers> 命名空間中。  
   
@@ -87,9 +85,9 @@ ms.locfileid: "49836602"
 |---------------------|-------------------|  
 |<xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.TransferData%2A><br /><br /> -或-<br /><br /> <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.TransferObject%2A>|<xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource.TransferData%2A>|  
   
-## <a name="see-also"></a>另請參閱  
- [如何： 撰寫視覺化檢視](../debugger/how-to-write-a-visualizer.md)   
- [逐步解說： 在 C# 中撰寫視覺化檢視](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)   
- [逐步解說： 在 Visual Basic 中撰寫視覺化檢視](../debugger/walkthrough-writing-a-visualizer-in-visual-basic.md)   
- [逐步解說： 在 Visual Basic 中撰寫視覺化檢視](../debugger/walkthrough-writing-a-visualizer-in-visual-basic.md)   
+## <a name="see-also"></a>請參閱  
+ [如何：撰寫視覺化檢視](/visualstudio/debugger/create-custom-visualizers-of-data)   
+ [逐步解說：以 C# 撰寫視覺化檢視](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)   
+ [逐步解說：以 Visual Basic 撰寫視覺化檢視](../debugger/walkthrough-writing-a-visualizer-in-visual-basic.md)   
+ [逐步解說：以 Visual Basic 撰寫視覺化檢視](../debugger/walkthrough-writing-a-visualizer-in-visual-basic.md)   
  [視覺化檢視安全性考量](../debugger/visualizer-security-considerations.md)

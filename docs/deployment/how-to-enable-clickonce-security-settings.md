@@ -1,8 +1,6 @@
 ---
-title: 如何： 啟用 ClickOnce 安全性設定 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：啟用 ClickOnce 安全性設定 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,14 +16,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f21b58a0ec9e8fe26cb02f72912fd23424cdfc7a
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
-ms.translationtype: MT
+ms.openlocfilehash: d736ca95b9095aa1db19445762d4734dc49677a1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39150933"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53967265"
 ---
-# <a name="how-to-enable-clickonce-security-settings"></a>如何： 啟用 ClickOnce 安全性設定
+# <a name="how-to-enable-clickonce-security-settings"></a>HOW TO：啟用 ClickOnce 安全性設定
 為了發佈應用程式，就必須啟用程式碼存取安全性，ClickOnce 應用程式。 當您發行應用程式使用發佈精靈時，這會自動完成。  
   
  在某些情況下，啟用程式碼存取安全性可能會影響效能時建置或偵錯您的應用程式;在這些情況下，您可能想要暫時停用的安全性設定。  
@@ -61,4 +59,3 @@ ms.locfileid: "39150933"
 ## <a name="see-also"></a>另請參閱  
  [保護 ClickOnce 應用程式](../deployment/securing-clickonce-applications.md)   
  [ClickOnce 應用程式的程式碼存取安全性](../deployment/code-access-security-for-clickonce-applications.md)   
- 

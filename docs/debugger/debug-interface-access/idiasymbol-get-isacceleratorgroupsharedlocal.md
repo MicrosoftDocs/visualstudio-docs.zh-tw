@@ -1,8 +1,6 @@
 ---
-title: IDiaSymbol::get_isAcceleratorGroupSharedLocal |Microsoft 文件
-ms.custom: ''
+title: IDiaSymbol::get_isAcceleratorGroupSharedLocal |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -12,15 +10,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c1d1ccb6643973dc61e169930f57b4f279ad4c1d
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: a6bf469433a4356c86aba36478f8a07e3437c9f5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31466805"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53828286"
 ---
 # <a name="idiasymbolgetisacceleratorgroupsharedlocal"></a>IDiaSymbol::get_isAcceleratorGroupSharedLocal
-擷取表示符號是否與共用本機群組的變數在編譯 c + + AMP 加速器的程式碼對應的旗標。  
+擷取表示符號是否對應至共用本機群組的變數在編譯 c + + AMP 加速器的程式碼的旗標。  
   
 ## <a name="syntax"></a>語法  
   
@@ -31,12 +29,12 @@ HRESULT get_isAcceleratorGroupSharedLocal(
   
 #### <a name="parameters"></a>參數  
  `pFlag`  
- [out]指標`BOOL`表示符號是否與對應共用本機群組的變數在程式碼編譯為 c + + AMP 加速器。 如果`TRUE`、`get_baseDataSlot`和`get_baseDataOffset`方法可以用來取得變數的儲存體位置資訊。  
+ [out]指標`BOOL`表示符號是否對應至共用本機群組的變數在編譯 c + + AMP 加速器的程式碼。 如果`TRUE`，則`get_baseDataSlot`和`get_baseDataOffset`方法可用來取得變數的儲存體位置資訊。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。  
+ 如果成功，則傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [IDiaSymbol::get_baseDataSlot](../../debugger/debug-interface-access/idiasymbol-get-basedataslot.md)   
  [IDiaSymbol::get_baseDataOffset](../../debugger/debug-interface-access/idiasymbol-get-basedataoffset.md)

@@ -1,8 +1,6 @@
 ---
-title: 訊息屬性 對話方塊 |Microsoft 文件
-ms.custom: ''
+title: 訊息屬性對話方塊 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: reference
 helpviewer_keywords:
 - message options
@@ -13,23 +11,23 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b241550d2bb9c72240b68c7b6e338cd9f56043c
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 132f00ccca207a854832568585c4d2594c79a337
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31481537"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53853758"
 ---
 # <a name="message-properties-dialog-box"></a>訊息屬性對話方塊
-使用此對話方塊來找出有關特定訊息的詳細資訊。 若要顯示此對話方塊中，焦點移至[訊息檢視](../debugger/messages-view.md)視窗。 在樹狀目錄中，選取訊息的任何節點，然後選擇 **屬性**從**檢視**功能表。  
+使用此對話方塊中，若要深入了解特定的訊息。 若要顯示此對話方塊中，焦點移至[訊息檢視](../debugger/messages-view.md)視窗。 在樹狀目錄中，選取訊息中的任何節點，然後選擇**屬性**從**檢視**功能表。  
   
  **一般** 索引標籤會顯示 唯一 索引標籤。 可用的設定如下：  
   
  **視窗控制代碼**  
- 此視窗的唯一識別碼。 視窗控制代碼數字會重複使用。這些識別視窗只會針對該視窗的存留期。 按一下此值，以檢視此視窗的內容。  
+ 此視窗的唯一識別碼。 視窗控制代碼數字會重複使用;它們可以識別視窗只會針對該視窗的存留期。 按一下此值，若要檢視此視窗的屬性。  
   
  **巢狀層級**  
- 此訊息，其中 0 表示無巢狀的巢狀深度。  
+ 此訊息，其中 0 是無巢狀的巢狀深度。  
   
  **訊息**  
  數字、 狀態，以及選取的 windows 訊息的名稱。  
@@ -41,20 +39,20 @@ ms.locfileid: "31481537"
  值*wParam*參數，如果有的話。  
   
  **lParam**  
- 值*lParam*參數，如果有的話。 如果這是字串或結構的指標，這個值會解碼。  
+ 值*lParam*參數，如果有的話。 如果它是字串或結構的指標，這個值會解碼。  
   
 ## <a name="related-sections"></a>相關章節  
  [訊息選項對話方塊](../debugger/message-options-dialog-box.md)  
- 用來選取哪一個訊息會列在作用中的訊息檢視。  
+ 用來選取哪一個訊息會列在作用中的 [訊息] 檢視。  
   
  [訊息搜尋對話方塊](../debugger/message-search-dialog-box.md)  
- 用來尋找特定訊息在訊息檢視中的節點。  
+ 用來尋找特定的訊息在訊息檢視中的節點。  
   
  [Spy++ 參考](../debugger/spy-increment-reference.md)  
- 包含各節描述每個 Spy + + 功能表和對話方塊方塊。  
+ 包含描述每個 Spy + + 功能表和對話方塊方塊中的區段。  
   
  [從尋找視窗開啟訊息檢視](../debugger/how-to-open-messages-view-from-find-window.md)  
- 說明如何從尋找視窗對話方塊開啟訊息檢視。  
+ 說明如何從尋找視窗對話方塊中開啟訊息檢視。  
   
  [搜尋訊息檢視中的訊息](../debugger/how-to-search-for-a-message-in-messages-view.md)  
  說明如何在訊息檢視中找到特定的訊息。  

@@ -1,8 +1,6 @@
 ---
-title: 訊息功能表命令 |Microsoft 文件
-ms.custom: ''
+title: 訊息功能表命令 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Messages menu commands
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 08ba5fc9fa71e71d7b840f31ae9cc17206ac7b6b
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 5d2ff50180a0818f3ef9399747d69d75a55198c1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31481719"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53861938"
 ---
 # <a name="messages-menu-commands"></a>訊息功能表命令
 **訊息**功能表提供控制訊息檢視命令。  
@@ -25,8 +23,8 @@ ms.locfileid: "31481719"
  **啟動/停止記錄**  
  啟動或停止 [訊息] 檢視。  
   
- **記錄選項**  
- 開啟**MessageOptions**對話方塊中，您可以在其中指定訊息搜尋準則。  
+ [記錄選項]  
+ 會開啟**MessageOptions**對話方塊中，您可以在其中指定訊息的搜尋準則。  
   
- **清除記錄檔**  
- 清除使用中的訊息檢視的內容。
+ [清除記錄檔]  
+ 清除 使用中的 訊息 檢視的內容。

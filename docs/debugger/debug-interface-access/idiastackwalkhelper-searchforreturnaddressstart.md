@@ -1,8 +1,6 @@
 ---
 title: 'Idiastackwalkhelper:: Searchforreturnaddressstart |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 016f2e3ab816b7def9aa0ef1e40ef5727063eb25
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 63f2bae0dee2b30c1d07532e65da971a89f42dbb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49895765"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53874757"
 ---
 # <a name="idiastackwalkhelpersearchforreturnaddressstart"></a>IDiaStackWalkHelper::searchForReturnAddressStart
 搜尋指定的堆疊框架的地址，位於或接近指定的堆疊位址。  
@@ -27,7 +25,7 @@ ms.locfileid: "49895765"
 ## <a name="syntax"></a>語法  
   
 ```C++  
-HRESULT searchForReturnAddressStart(   
+HRESULT searchForReturnAddressStart(   
    IDiaFrameData*  frame,  
    ULONGLONG       startAddress,  
    ULONGLONG*      returnAddress  
@@ -47,6 +45,6 @@ HRESULT searchForReturnAddressStart(
 ## <a name="return-value"></a>傳回值  
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)   
  [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

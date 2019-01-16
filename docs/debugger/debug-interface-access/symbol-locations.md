@@ -1,8 +1,6 @@
 ---
-title: 符號位置 |Microsoft 文件
-ms.custom: ''
+title: 符號位置 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -15,22 +13,22 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 021911c01a7cd98e157f6c216ae28feffcaf7096
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 892c9f3b200466b22d847063ce2a60cf63301e5a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31480263"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53915071"
 ---
 # <a name="symbol-locations"></a>符號位置
-大部分的符號的影像檔中有定義的位置。 符號的位置指定其值介於[LocationType 列舉](../../debugger/debug-interface-access/locationtype.md)列舉型別。 符號可能支援其他的屬性，根據它的位置。  
+大部分的符號的影像檔中有定義的位置。 符號的位置指定其值介於[LocationType 列舉](../../debugger/debug-interface-access/locationtype.md)列舉型別。 符號可能支援其他的屬性，根據其位置。  
   
- 下表顯示最常使用的位置類型與其他內容。  
+ 下表顯示最常使用的位置類型和其額外的屬性。  
   
 |位置類型|其他屬性|  
 |-------------------|---------------------------|  
-|`LocIsNull`|無|  
-|`LocIsStatic`|[IDiaSymbol::get_addressOffset](../../debugger/debug-interface-access/idiasymbol-get-addressoffset.md)<br /><br /> [IDiaSymbol::get_addressSection](../../debugger/debug-interface-access/idiasymbol-get-addresssection.md)<br /><br /> [Idiasymbol:: Get_relativevirtualaddress](../../debugger/debug-interface-access/idiasymbol-get-relativevirtualaddress.md) （如果已啟用的相對虛擬位址）<br /><br /> [Idiasymbol:: Get_virtualaddress](../../debugger/debug-interface-access/idiasymbol-get-virtualaddress.md) （如果映像基底設定為非零）|  
+|`LocIsNull`|none|  
+|`LocIsStatic`|[IDiaSymbol::get_addressOffset](../../debugger/debug-interface-access/idiasymbol-get-addressoffset.md)<br /><br /> [IDiaSymbol::get_addressSection](../../debugger/debug-interface-access/idiasymbol-get-addresssection.md)<br /><br /> [Idiasymbol:: Get_relativevirtualaddress](../../debugger/debug-interface-access/idiasymbol-get-relativevirtualaddress.md) （如果已啟用的相對虛擬位址）<br /><br /> [Idiasymbol:: Get_virtualaddress](../../debugger/debug-interface-access/idiasymbol-get-virtualaddress.md) （如映像基底設定為非零）|  
 |`LocIsTLS`|[IDiaSymbol::get_addressSection](../../debugger/debug-interface-access/idiasymbol-get-addresssection.md)<br /><br /> [IDiaSymbol::get_addressOffset](../../debugger/debug-interface-access/idiasymbol-get-addressoffset.md)|  
 |`LocIsRegRel`|[IDiaSymbol::get_registerId](../../debugger/debug-interface-access/idiasymbol-get-registerid.md)<br /><br /> [IDiaSymbol::get_offset](../../debugger/debug-interface-access/idiasymbol-get-offset.md)|  
 |`LocIsThisRel`|[IDiaSymbol::get_offset](../../debugger/debug-interface-access/idiasymbol-get-offset.md)|  
@@ -41,18 +39,18 @@ ms.locfileid: "31480263"
 |`LocInMetaData`|[IDiaSymbol::get_token](../../debugger/debug-interface-access/idiasymbol-get-token.md)|  
 |`LocIsConstant`|[IDiaSymbol::get_value](../../debugger/debug-interface-access/idiasymbol-get-value.md)|  
   
-## <a name="see-also"></a>另請參閱  
- [Idiasymbol:: Get_addressoffset](../../debugger/debug-interface-access/idiasymbol-get-addressoffset.md)   
- [Idiasymbol:: Get_addresssection](../../debugger/debug-interface-access/idiasymbol-get-addresssection.md)   
- [Idiasymbol:: Get_bitposition](../../debugger/debug-interface-access/idiasymbol-get-bitposition.md)   
- [Idiasymbol:: Get_length](../../debugger/debug-interface-access/idiasymbol-get-length.md)   
- [Idiasymbol:: Get_locationtype](../../debugger/debug-interface-access/idiasymbol-get-locationtype.md)   
- [Idiasymbol:: Get_offset](../../debugger/debug-interface-access/idiasymbol-get-offset.md)   
- [Idiasymbol:: Get_registerid](../../debugger/debug-interface-access/idiasymbol-get-registerid.md)   
- [Idiasymbol:: Get_relativevirtualaddress](../../debugger/debug-interface-access/idiasymbol-get-relativevirtualaddress.md)   
- [Idiasymbol:: Get_slot](../../debugger/debug-interface-access/idiasymbol-get-slot.md)   
- [Idiasymbol:: Get_token](../../debugger/debug-interface-access/idiasymbol-get-token.md)   
- [Idiasymbol:: Get_value](../../debugger/debug-interface-access/idiasymbol-get-value.md)   
- [Idiasymbol:: Get_virtualaddress](../../debugger/debug-interface-access/idiasymbol-get-virtualaddress.md)   
+## <a name="see-also"></a>請參閱  
+ [IDiaSymbol::get_addressOffset](../../debugger/debug-interface-access/idiasymbol-get-addressoffset.md)   
+ [IDiaSymbol::get_addressSection](../../debugger/debug-interface-access/idiasymbol-get-addresssection.md)   
+ [IDiaSymbol::get_bitPosition](../../debugger/debug-interface-access/idiasymbol-get-bitposition.md)   
+ [IDiaSymbol::get_length](../../debugger/debug-interface-access/idiasymbol-get-length.md)   
+ [IDiaSymbol::get_locationType](../../debugger/debug-interface-access/idiasymbol-get-locationtype.md)   
+ [IDiaSymbol::get_offset](../../debugger/debug-interface-access/idiasymbol-get-offset.md)   
+ [IDiaSymbol::get_registerId](../../debugger/debug-interface-access/idiasymbol-get-registerid.md)   
+ [IDiaSymbol::get_relativeVirtualAddress](../../debugger/debug-interface-access/idiasymbol-get-relativevirtualaddress.md)   
+ [IDiaSymbol::get_slot](../../debugger/debug-interface-access/idiasymbol-get-slot.md)   
+ [IDiaSymbol::get_token](../../debugger/debug-interface-access/idiasymbol-get-token.md)   
+ [IDiaSymbol::get_value](../../debugger/debug-interface-access/idiasymbol-get-value.md)   
+ [IDiaSymbol::get_virtualAddress](../../debugger/debug-interface-access/idiasymbol-get-virtualaddress.md)   
  [LocationType 列舉](../../debugger/debug-interface-access/locationtype.md)   
  [符號和符號標記](../../debugger/debug-interface-access/symbols-and-symbol-tags.md)

@@ -1,8 +1,6 @@
 ---
 title: 'Idiasymbol:: Get_editandcontinueenabled |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 14ae4932652d7ee8cdf33a5928fa5e725cdebbf7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: e918c13002fc6ae171122a4ebcc642e9cb9c5824
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49844688"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53863941"
 ---
 # <a name="idiasymbolgeteditandcontinueenabled"></a>IDiaSymbol::get_editAndContinueEnabled
 旗標，指出是否已編譯的模組會擷取[/z7，/Zi，/ZI （偵錯資訊格式）](/cpp/build/reference/z7-zi-zi-debug-information-format)編譯器參數。  
@@ -27,7 +25,7 @@ ms.locfileid: "49844688"
 ## <a name="syntax"></a>語法  
   
 ```C++  
-HRESULT get_editAndContinueEnabled (   
+HRESULT get_editAndContinueEnabled (   
    BOOL* pRetVal  
 );  
 ```  
@@ -44,11 +42,11 @@ HRESULT get_editAndContinueEnabled (
   
 ## <a name="requirements"></a>需求  
   
-|需求|描述|  
+|需求|說明|  
 |-----------------|-----------------|  
 |標頭：|dia2.h|  
 |版本:|DIA SDK v7.0|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [/Z7、/Zi、/ZI (偵錯資訊格式)](/cpp/build/reference/z7-zi-zi-debug-information-format)

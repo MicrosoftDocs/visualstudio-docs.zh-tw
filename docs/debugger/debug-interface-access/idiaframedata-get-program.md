@@ -1,8 +1,6 @@
 ---
 title: 'Idiaframedata:: Get_program |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 125c809f32b34b077fae0bb661ef9c2f010a4b8b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 1e5552f242e2c53791fd4afc7831a2c5b3cadcdf
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49849459"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53989918"
 ---
 # <a name="idiaframedatagetprogram"></a>IDiaFrameData::get_program
 擷取用來計算目前的函式的呼叫之前設定的暫存器的程式字串。  
@@ -27,7 +25,7 @@ ms.locfileid: "49849459"
 ## <a name="syntax"></a>語法  
   
 ```C++  
-HRESULT get_program (   
+HRESULT get_program (   
    BSTR* pRetVal  
 );  
 ```  
@@ -37,7 +35,7 @@ HRESULT get_program (
  [out]傳回程式字串。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`。 傳回`S_FALSE`不支援這個屬性，則為。 反之則傳回錯誤碼。  
+ 如果成功，會傳回 `S_OK`。 傳回`S_FALSE`不支援這個屬性，則為。 反之則傳回錯誤碼。  
   
 ## <a name="remarks"></a>備註  
  程式字串是一串巨集，以便建立序言解譯。 例如，典型的堆疊框架可能會使用程式字串`"$T0 $ebp = $eip $T0 4 + ^ = $ebp $T0 ^ = $esp $T0 8 + ="`。 格式為反向波蘭文標記法，其中運算子後面接著運算元。 `T0` 表示在堆疊上的暫存變數。 此範例會執行下列步驟：  
@@ -52,5 +50,5 @@ HRESULT get_program (
   
    請注意，程式字串是特定的 CPU，並設定由目前的堆疊框架的函式的呼叫慣例。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

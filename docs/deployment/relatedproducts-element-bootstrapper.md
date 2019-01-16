@@ -1,8 +1,6 @@
 ---
 title: '&lt;RelatedProducts&gt;項目 （啟動載入器） |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 f1_keywords:
 - MSBuild.GenerateBootstrapper.MissingDependency
@@ -23,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c541a9775025183a3b3ffbf21ef5b72c3f00cc87
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
-ms.translationtype: MT
+ms.openlocfilehash: 2ad76eb01e17f76bff0f1f81941675ad670a24ff
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39077799"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53967381"
 ---
 # <a name="ltrelatedproductsgt-element-bootstrapper"></a>&lt;RelatedProducts&gt;項目 （啟動載入器）
 `RelatedProducts`項目定義，或是相依於目前的產品中包含其他產品。  
@@ -51,7 +49,7 @@ ms.locfileid: "39077799"
 </RelatedProducts>  
 ```  
   
-## <a name="elements-and-attributes"></a>項目和屬性  
+## <a name="elements-and-attributes"></a>元素和屬性  
  `RelatedProducts`項目是子系`Product`項目。 它沒有任何屬性。  
   
 ## <a name="dependsonproduct"></a>DependsOnProduct  
@@ -59,7 +57,7 @@ ms.locfileid: "39077799"
   
  `DependsOnProduct` 具有下列屬性。  
   
-|屬性|描述|  
+|屬性|說明|  
 |---------------|-----------------|  
 |`Code`|包含的產品，為所指定的程式碼名稱`ProductCode`屬性的`Product`項目。 如需詳細資訊，請參閱 < [\<產品 > 項目](../deployment/product-element-bootstrapper.md)。|  
   
@@ -71,7 +69,7 @@ ms.locfileid: "39077799"
   
  `IncludesProduct` 具有下列屬性。  
   
-|屬性|描述|  
+|屬性|說明|  
 |---------------|-----------------|  
 |`Code`|包含的產品，為所指定的程式碼名稱`ProductCode`屬性的`Product`項目。 如需詳細資訊，請參閱 < [\<產品 > 項目](../deployment/product-element-bootstrapper.md)。|  
   

@@ -1,8 +1,6 @@
 ---
 title: 'Idiaenumsourcefiles:: Get_count |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 89ed0e7f8f6d1ce2f19e6060a2646339642a6716
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 4820f9db70c44d5c4aa1a1703f67262d41328283
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49850850"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53963906"
 ---
 # <a name="idiaenumsourcefilesgetcount"></a>IDiaEnumSourceFiles::get_Count
 擷取來源檔案的數目。  
@@ -27,7 +25,7 @@ ms.locfileid: "49850850"
 ## <a name="syntax"></a>語法  
   
 ```C++  
-HRESULT get_Count (   
+HRESULT get_Count (   
    LONG* pRetVal  
 );  
 ```  
@@ -39,6 +37,6 @@ HRESULT get_Count (
 ## <a name="return-value"></a>傳回值  
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDiaEnumSourceFiles](../../debugger/debug-interface-access/idiaenumsourcefiles.md)   
  [IDiaEnumSourceFiles::Item](../../debugger/debug-interface-access/idiaenumsourcefiles-item.md)

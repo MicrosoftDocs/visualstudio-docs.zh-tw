@@ -15,15 +15,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 471b62c35cbe7098d52e9cbeb08be29cd39c7d58
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
-ms.translationtype: MT
+ms.openlocfilehash: ecedfce45ab30d70138511ab0c87206bb35a2148
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39180421"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53919465"
 ---
 # <a name="troubleshoot-service-references"></a>針對服務參考進行疑難排解
 
@@ -49,7 +48,7 @@ ms.locfileid: "39180421"
 
 ## <a name="error-accessing-a-service-over-a-remote-desktop"></a>透過遠端桌面存取的服務時發生錯誤
 
-當使用者存取 Web 裝載的 WCF 服務，透過遠端桌面連線和使用者沒有系統管理權限，會使用 NTLM 驗證。 如果使用者沒有系統管理權限，使用者可能會收到下列錯誤訊息: 「 HTTP 要求是未經授權的用戶端驗證配置 'Anonymous'。 從伺服器收到的驗證標頭是 'NTLM'。 」
+當使用者存取 Web 裝載的 WCF 服務，透過遠端桌面連線和使用者沒有系統管理權限，會使用 NTLM 驗證。 如果使用者沒有系統管理權限，使用者可能會收到下列錯誤訊息：「 HTTP 要求是未經授權的用戶端驗證配置 'Anonymous'。 從伺服器收到的驗證標頭是 'NTLM'。 」
 
 修正這個錯誤：
 
@@ -84,7 +83,7 @@ ms.locfileid: "39180421"
 
 4.  載入 WCF 服務專案。
 
-5.  在 [ **Configuration Manager** ] 對話方塊中，將**現用方案組態**來**偵錯**。 如需詳細資訊，請參閱[如何：建立和編輯組態](../ide/how-to-create-and-edit-configurations.md)。
+5.  在 [ **Configuration Manager** ] 對話方塊中，將**現用方案組態**來**偵錯**。 如需詳細資訊，請參閱[＜How to：建立及編輯組態](../ide/how-to-create-and-edit-configurations.md)。
 
 6.  在 **方案總管 中**，選取 WCF 服務專案。
 
@@ -96,13 +95,13 @@ ms.locfileid: "39180421"
 
 若要修正這個錯誤，請停用 RSS 摘要：
 
-1.  在 Internet Explorer 上**工具**功能表上，按一下**網際網路選項**。
+1.  在 Internet Explorer 的 [工具] 功能表中，按一下 [網際網路選項]。
 
 2.  在 **內容**索引標籤中，於**摘要**區段中，按一下**設定**。
 
 3.  在 **摘要的設定**對話方塊中，清除**開啟摘要讀取檢視**核取方塊，然後按一下**確定**。
 
-4.  按一下 [ **[確定]** 以關閉**網際網路選項**] 對話方塊。
+4.  按一下 [確定] 以關閉 [網際網路選項] 對話方塊。
 
 ## <a name="see-also"></a>另請參閱
 

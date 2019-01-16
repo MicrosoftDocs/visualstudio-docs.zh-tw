@@ -1,8 +1,6 @@
 ---
 title: CV_CPU_TYPE_e |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f5dc2c5f053d14a42bac59f56f58d4aa6227980c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 16203b08284c0248742b42daa5b847310e1d3278
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49925718"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53843160"
 ---
 # <a name="cvcputypee"></a>CV_CPU_TYPE_e
 指定目標處理器。  
@@ -30,7 +28,7 @@ ms.locfileid: "49925718"
 ## <a name="syntax"></a>語法  
   
 ```C++  
-typedef enum CV_CPU_TYPE_e {   
+typedef enum CV_CPU_TYPE_e {   
    CV_CFL_8080         = 0x00,  
    CV_CFL_8086         = 0x01,  
    CV_CFL_80286        = 0x02,  
@@ -102,6 +100,6 @@ typedef enum CV_CPU_TYPE_e {
 ## <a name="requirements"></a>需求  
  標頭： cvconst.h  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [列舉和結構](../../debugger/debug-interface-access/enumerations-and-structures.md)   
  [IDiaSymbol::get_platform](../../debugger/debug-interface-access/idiasymbol-get-platform.md)

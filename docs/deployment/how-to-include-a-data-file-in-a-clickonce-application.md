@@ -1,8 +1,6 @@
 ---
-title: 'How to: Include a Data File in a ClickOnce Application |Microsoft Docs'
-ms.custom: ''
+title: HOW TO：Include a Data File in a ClickOnce Application |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,14 +16,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cfba7612ec0e019b8c8dfa7c7406435b6e43e6cc
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 0ea6f111aea8d5008ad5d9f933ded37c6df0c465
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49917917"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53990210"
 ---
-# <a name="how-to-include-a-data-file-in-a-clickonce-application"></a>如何： 在 ClickOnce 應用程式中納入資料檔案
+# <a name="how-to-include-a-data-file-in-a-clickonce-application"></a>HOW TO：在 ClickOnce 應用程式中納入資料檔案
 每個[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]您安裝的應用程式已指派應用程式可在其中管理它自己的資料的目的地電腦的本機磁碟上的資料目錄。 資料檔案可以包含任何類型的檔案： 文字檔、 XML 檔案或甚至是 Microsoft Access 資料庫 (*.mdb*) 檔案。 下列程序會示範如何新增到任何類型的資料檔案您[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式。  
   
 ### <a name="to-include-a-data-file-by-using-mageexe"></a>若要使用 Mage.exe 納入資料檔案  
@@ -85,4 +83,4 @@ ms.locfileid: "49917917"
      您必須重新簽署部署資訊清單，因為它的應用程式資訊清單的雜湊已變更。  
   
 ## <a name="see-also"></a>另請參閱  
- [ClickOnce 應用程式中存取本機和遠端資料](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md)
+ [在 ClickOnce 應用程式中存取本機和遠端資料](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md)

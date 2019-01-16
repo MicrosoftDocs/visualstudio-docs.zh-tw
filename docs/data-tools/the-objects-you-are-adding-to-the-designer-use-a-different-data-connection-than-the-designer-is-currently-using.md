@@ -7,21 +7,20 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: a2fb26fa8960c652feefa157fb04c31b9ed7abb9
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
-ms.translationtype: MT
+ms.openlocfilehash: 23abfbdc1b0bf922e3d15f0181afd7d01aa7ee2f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37174186"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53935654"
 ---
 # <a name="the-objects-you-are-adding-to-the-designer-use-a-different-data-connection-than-the-designer"></a>您要加入至設計工具的物件使用不同的資料連接與設計工具
 
 您要加入此設計工具的物件使用了不同於目前所使用設計工具的資料連接。 是否要取代此設計工具所使用的連接?
 
-當您將項目加入**物件關聯式設計工具**(**O/R Designer**)，所有的項目會使用一個共用的資料連接。 (設計介面即代表一個 <xref:System.Data.Linq.DataContext>，這讓介面上的所有物件都會使用單一連接)。如果加入至設計工具的物件所使用的資料連接與設計工具目前使用的資料連接不同，就會顯示這則訊息。 若要解決這個錯誤，您可以選擇維持現有的連接。 如果選擇這個選項，就不會加入選取的物件。 或者，您可以選擇將物件加入及重設<xref:System.Data.Linq.DataContext>連接至新的連接。
+當您將項目加入**物件關聯式設計工具**(**O/R Designer**)，所有的項目會使用一個共用的資料連接。 (設計介面即代表一個 <xref:System.Data.Linq.DataContext>，這讓介面上的所有物件都會使用單一連接)。如果加入至設計工具的物件所使用的資料連接與設計工具目前使用的資料連接不同，就會顯示這則訊息。 若要解決這個錯誤，您可以選擇維持現有的連接。 如果選擇這個選項，就不會加入選取的物件。 您也可以選擇加入物件，並將 <xref:System.Data.Linq.DataContext> 連線重設為新連線。
 
 > [!NOTE]
 > 如果您按一下 **[是]**，所有的實體類別上**O/R Designer**會對應至新的連接。
@@ -36,9 +35,9 @@ ms.locfileid: "37174186"
 
 - 按一下 [否] 。
 
-    會取消動作。 *DataContext.Connection*會維持設定為現有的連接。
+    會取消動作。 *DataContext.Connection* 仍然會設定為現有的連線。
 
 ## <a name="see-also"></a>另請參閱
 
 - [O/R 設計工具訊息](../data-tools/o-r-designer-messages.md)
-- [LINQ to SQL 工具，在 Visual Studio 中](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
+- [Visual Studio 中的 LINQ to SQL 工具](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

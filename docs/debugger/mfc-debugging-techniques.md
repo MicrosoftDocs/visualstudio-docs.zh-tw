@@ -1,8 +1,6 @@
 ---
 title: MFC 偵錯技術 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - AfxEnableMemoryTracking
@@ -27,12 +25,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1bb41fbf0fc4a41a5cf45d68f6453f2ef6ebdd6c
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: a2bfc9e9c45e7bf3413c1733dd57534f3675a2f4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219935"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53832213"
 ---
 # <a name="mfc-debugging-techniques"></a>MFC 偵錯技術
 如果您正在偵錯 MFC 程式，這些偵錯技術可能很有幫助。  
@@ -99,7 +97,7 @@ TRACE( "x = %d and y = %d\n", x, y );
 TRACE( "x = %d and y = %x and z = %f\n", x, y, z );  
 ```  
 
- TRACE 巨集適當處理 char * 和 wchar_t\*參數。 下列範例示範搭配不同類型的字串參數來使用 TRACE 巨集。  
+ TRACE 巨集會適當處理 char* 和 wchar_t\* 這兩種參數。 下列範例示範搭配不同類型的字串參數來使用 TRACE 巨集。  
 
 ```cpp
 TRACE( "This is a test of the TRACE macro that uses an ANSI string: %s %d\n", "The number is:", 2);  
@@ -142,7 +140,7 @@ TRACE( _T("This is a test of the TRACE macro that uses a TCHAR string: %s %d\n")
 
 - 如果您要更準確地控制記憶體診斷功能，您可以設定 MFC 全域變數 [afxMemDF](https://msdn.microsoft.com/Library/cf117501-5446-4fce-81b3-f7194bc95086)值，選擇性地開啟和關閉各個記憶體診斷功能。 這個變數可以有下列的值，如同列舉類型 **afxMemDF**所指定。  
 
-  |值|描述|  
+  |值|說明|  
   |-----------|-----------------|  
   |**allocMemDF**|開啟診斷記憶體配置器 (預設)。|  
   |**delayFreeMemDF**|呼叫 `delete` 或 `free` 時會延遲釋放記憶體，直到程式結束。 這會造成程式配置可能的最大記憶體量。|  
@@ -337,7 +335,7 @@ Phone #: 581-0215
 
  **非物件配置**  
 
- 請注意，有些配置是物件 (例如 `CPerson`)，而有些則是非物件配置。 「 非物件配置 」 是配置的物件不是衍生自`CObject`或基本 C 類型，例如配置`char`， `int`，或`long`。 如果 **CObject**衍生類別配置額外空間 (例如為內部緩衝區)，則該類物件便會顯示物件和非物件配置。  
+ 請注意，有些配置是物件 (例如 `CPerson`)，而有些則是非物件配置。 「非物件配置」為不是衍生自 `CObject` 的物件配置，或基本 C 類型 (例如 `char`、`int` 或 `long`) 的配置。 如果 **CObject**衍生類別配置額外空間 (例如為內部緩衝區)，則該類物件便會顯示物件和非物件配置。  
 
  **防止記憶體流失**  
 
@@ -432,9 +430,9 @@ pMyPerson->Dump( afxDump );
 
 3. 首先，您要建立新專案組態。  
 
-   1.  在 [ **\<專案 > 屬性頁**] 對話方塊中，按一下 [ **Configuration Manager** ] 按鈕。  
+   1.  在 [\<專案> 屬性頁] 對話方塊中，按一下 [組態管理員] 按鈕。  
 
-   2.  在 [組態管理員對話方塊](/previous-versions/visualstudio/visual-studio-2010/t1hy4dhz(v=vs.100))裡，在方格中尋找專案。 在 **組態**欄中，選取**\<新增...>**。  
+   2.  在 [組態管理員對話方塊](/previous-versions/visualstudio/visual-studio-2010/t1hy4dhz(v=vs.100))裡，在方格中尋找專案。 在 [組態] 一欄中，選取 [\<新增...>]。  
 
    3.  在 [新增專案組態對話方塊](/previous-versions/visualstudio/visual-studio-2010/0eh8w4cf(v=vs.100))裡，於 [ **專案組態名稱** ] 方塊內輸入新組態的名稱，例如「部分偵錯」。  
 
@@ -470,11 +468,11 @@ pMyPerson->Dump( afxDump );
 
    4.  在 [ **屬性頁** ] 對話方塊的 [ **組態設定** ] 資料夾底下，開啟 [ **C/C++** ] 資料夾，然後選取 [ **一般** ] 分類。  
 
-   5.  在 [屬性] 方格中，尋找**偵錯資訊格式。**  
+   5.  在屬性方格中，尋找 [偵錯資訊格式]。  
 
    6.  按一下 [ **偵錯資訊格式** ] 設定並且選取偵錯資訊需要的選項 (通常是 [ **/ZI**])。  
 
-   7.  如果您要使用應用程式精靈所產生的應用程式，或者您有先行編譯的標頭，則必須關閉先行編譯的標頭，或在編譯其他模組之前重新編譯這些標頭。 否則，您會收到警告 C4650 和錯誤訊息 C2855。 您可以藉由變更關閉先行編譯標頭**建立/使用先行編譯標頭**中設定**\<專案 > 屬性**對話方塊中 (**組態屬性**資料夾中， **C/c + +** 子資料夾，**先行編譯標頭**類別)。  
+   7.  如果您要使用應用程式精靈所產生的應用程式，或者您有先行編譯的標頭，則必須關閉先行編譯的標頭，或在編譯其他模組之前重新編譯這些標頭。 否則，您會收到警告 C4650 和錯誤訊息 C2855。 若要關閉先行編譯標頭檔，可以變更 [\<專案> 屬性] 對話方塊中的 [建立/使用先行編譯標頭檔] 設定 (依序選取 [組態屬性] 資料夾、[C/C++] 子資料夾、[先行編譯標頭檔] 分類)。  
 
 7. 從 [ **建置** ] 功能表，選取 [ **建置** ] 來重建過期的專案檔案。  
 
@@ -482,5 +480,5 @@ pMyPerson->Dump( afxDump );
 
    [本主題內容](#BKMK_In_this_topic)  
 
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [偵錯 Visual C++](../debugger/debugging-native-code.md)

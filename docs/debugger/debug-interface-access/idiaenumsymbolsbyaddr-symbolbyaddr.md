@@ -1,8 +1,6 @@
 ---
 title: 'Idiaenumsymbolsbyaddr:: Symbolbyaddr |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d15901ac321a1a5d60db6e989b24c314bcd211b5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 7c672beced050b4b393476d16120ab5a26a7e6d3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49844818"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53987255"
 ---
 # <a name="idiaenumsymbolsbyaddrsymbolbyaddr"></a>IDiaEnumSymbolsByAddr::symbolByAddr
 將列舉值所執行的映像區段編號和位移查閱。  
@@ -27,7 +25,7 @@ ms.locfileid: "49844818"
 ## <a name="syntax"></a>語法  
   
 ```C++  
-HRESULT symbolByAddr (   
+HRESULT symbolByAddr (   
    DWORD**      isect,  
    DWORD**      offsect,  
    IDiaSymbol** ppsymbol  
@@ -45,8 +43,8 @@ HRESULT symbolByAddr (
  [out]傳回[IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)物件，表示找到的符號。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`。 傳回`S_FALSE`如果找不到符號。 反之則傳回錯誤碼。  
+ 如果成功，會傳回 `S_OK`。 傳回`S_FALSE`如果找不到符號。 反之則傳回錯誤碼。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDiaEnumSymbolsByAddr](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr.md)   
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

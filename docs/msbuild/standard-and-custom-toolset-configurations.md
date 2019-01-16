@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6a834a5b4b1a380b23ad9edfda9ea42f40e20469
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c7bff89e5166dc57b481fc917dc3655b1cbb62ff
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53839517"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54315614"
 ---
 # <a name="standard-and-custom-toolset-configurations"></a>標準和自訂工具組的設定
 MSBuild 工具組包含工作、目標和工具的參考，可用以組建應用程式專案。 MSBuild 包含標準的工具組，但您也可以建立自訂工具組。 如需如何指定工具組的相關資訊，請參閱[工具組 (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md)  
@@ -73,7 +73,7 @@ MSBuild 工具組包含工作、目標和工具的參考，可用以組建應用
 <configSections>  
    <section name="msbuildToolsets"         
        Type="Microsoft.Build.BuildEngine.ToolsetConfigurationSection,   
-       Microsoft.Build.Engine, Version=15.1.0.0, Culture=neutral,   
+       Microsoft.Build, Version=15.1.0.0, Culture=neutral,   
        PublicKeyToken=b03f5f7f11d50a3a"  
    </section>  
 </configSections>  

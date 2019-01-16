@@ -1,8 +1,6 @@
 ---
-title: 偵錯攔截函式撰寫 |Microsoft 文件
-ms.custom: ''
+title: 撰寫偵錯攔截函式 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vc.hooks
@@ -23,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 365196a01ba9e62ef0b26eb3a99278d4d77a4dd4
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 9218c36f550c61484054d180ecb4dccb1ca53f3d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31457338"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53947500"
 ---
 # <a name="debug-hook-function-writing"></a>撰寫偵錯攔截函式
 本節將說明一些您可以撰寫的自訂偵錯攔截函式，這些函式可讓您將程式碼插入偵錯工具正常處理中的某些預先定義點。  
@@ -41,7 +39,7 @@ ms.locfileid: "31457338"
  定義配置攔截函式、瀏覽其不同用法、指出限制並提供原型。  
   
  [配置攔截和 CRT 記憶體配置](../debugger/allocation-hooks-and-c-run-time-memory-allocations.md)  
- 描述如果它們呼叫任何配置內部記憶體的 C 執行階段程式庫函式時，明確忽略 `_CRT_BLOCK` 區塊的配置攔截函式所受到的限制。 本主題也列出後果，否則，如果配置攔截沒有忽略`_CRT_BLOCK`（附範例） 的區塊，以及如何變更預設配置攔截函式， **CrtDefaultAllocHook**。  
+ 描述如果它們呼叫任何配置內部記憶體的 C 執行階段程式庫函式時，明確忽略 `_CRT_BLOCK` 區塊的配置攔截函式所受到的限制。 這個主題也列出如果配置攔截沒有忽略 `_CRT_BLOCK` 區塊的後果 (附範例)，以及如何變更預設配置攔截函式 **CrtDefaultAllocHook**。  
   
  [報告攔截函式](../debugger/report-hook-functions.md)  
  討論 `_CrtSetReportHook`，您可以使用這個函式來篩選報告，以著重在特定類型的配置。 這個主題也提供原型。  

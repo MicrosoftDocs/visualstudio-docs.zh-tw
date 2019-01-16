@@ -1,8 +1,6 @@
 ---
-title: 錯誤： Windows 檔案共用已設定...|Microsoft 文件
-ms.custom: ''
+title: 錯誤：Windows 檔案共用已設定...|Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: troubleshooting
 f1_keywords:
 - vs.debug.error.remote_credentials_prohibited
@@ -16,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 591b051cb6164f4c8d260be3de29833154c96255
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 3bc3388bcf80d471c8dc6d45b0035f74d57abc93
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31472785"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53942209"
 ---
 # <a name="error-windows-file-sharing-has-been-configured"></a>錯誤：Windows 檔案共用已設定...
 已設定 Windows 檔案共用，這樣您將使用不同的使用者名稱連接到遠端電腦。 這與遠端偵錯不相容  
@@ -40,7 +38,7 @@ ms.locfileid: "31472785"
   
      。 中斷與遠端電腦的連線，然後將檔案共用重新設定成使用您的帳戶名稱連接至另一台電腦：  
   
-    1.  在**啟動**功能表上，指向**附屬應用程式**，然後按一下 **命令提示字元**。  
+    1.  在 [開始] 功能表中，指向 [附屬應用程式]，然後按一下 [命令提示字元]。  
   
     2.  在 Windows 命令提示字元中輸入：  
   

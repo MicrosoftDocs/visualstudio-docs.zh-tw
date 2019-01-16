@@ -223,29 +223,28 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 677374404de8469c8a99a906638f326ae7a9ff3c
-ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
-ms.translationtype: MT
+ms.openlocfilehash: a02b82fbd3f32c2174d571ff923b8a219a66c9b6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37089072"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53932716"
 ---
 # <a name="troubleshoot-data-access-errors-on-the-forums"></a>在論壇上的資料存取錯誤進行疑難排解
 
 您可以在 Microsoft Developer Network (MSDN) 公共論壇中尋求有關疑難排解錯誤和警告的協助。 以下是一些資料相關的論壇可用在 MSDN 上：
 
-- [Windows Form 資料控制項與資料繫結](https://social.msdn.microsoft.com/Forums/windows/en-US/home?forum=winformsdatacontrols)
+- [Windows Forms data controls and databinding](https://social.msdn.microsoft.com/Forums/windows/en-US/home?forum=winformsdatacontrols) (Windows Forms 資料控制項與資料繫結)
 
 - [ADO.NET 資料集論壇](https://social.msdn.microsoft.com/Forums/en-US/home?forum=adodotnetdataset)
 
-- [ADO.NET Entity Framework 與 LINQ to Entities](https://social.msdn.microsoft.com/Forums/en-US/home?forum=adodotnetentityframework)
+- [ADO.NET Entity Framework and LINQ to Entities](https://social.msdn.microsoft.com/Forums/en-US/home?forum=adodotnetentityframework) (ADO.NET Entity Framework 與 LINQ to Entities)
 
-- [WCF data services 論壇](https://social.msdn.microsoft.com/Forums/en-US/home?forum=adodotnetdataservices)
+- [WCF data services forum](https://social.msdn.microsoft.com/Forums/en-US/home?forum=adodotnetdataservices) (WCF 資料服務論壇)
 
-- [SQL Server 資料存取論壇](https://social.msdn.microsoft.com/Forums/sqlserver/en-US/home?forum=sqldataaccess)
+- [SQL Server data access forum](https://social.msdn.microsoft.com/Forums/sqlserver/en-US/home?forum=sqldataaccess) (SQL Server 資料存取論壇)
 
 - [LINQ to SQL 論壇](https://social.msdn.microsoft.com/Forums/en-US/home?forum=linqtosql)
 

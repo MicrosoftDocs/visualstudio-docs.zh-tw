@@ -1,8 +1,6 @@
 ---
-title: 如何： 偵錯 OnStart 方法 |Microsoft 文件
-ms.custom: ''
+title: HOW TO：偵錯 OnStart 方法 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -21,15 +19,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d438a8d6dcd80ec8d9dcce2fb4943e8b5614442c
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 53106b0d933c25d69ecd0b455b89f68c09b9a169
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31481849"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53822940"
 ---
-# <a name="how-to-debug-the-onstart-method"></a>如何：偵錯 OnStart 方法
-您可以藉由啟動服務並將偵錯工具附加到服務處理序，對 Windows 服務進行偵錯。 如需詳細資訊，請參閱 [How to: Debug Windows Service Applications](/dotnet/framework/windows-services/how-to-debug-windows-service-applications)。 但是若要對 Windows 服務的 <xref:System.ServiceProcess.ServiceBase.OnStart%2A?displayProperty=fullName> 方法進行偵錯，您必須從方法內啟動偵錯工具。  
+# <a name="how-to-debug-the-onstart-method"></a>HOW TO：對 OnStart 方法進行偵錯
+您可以藉由啟動服務並將偵錯工具附加到服務處理序，對 Windows 服務進行偵錯。 如需詳細資訊，請參閱[＜How to：偵錯 Windows 服務應用程式](/dotnet/framework/windows-services/how-to-debug-windows-service-applications)。 但是若要對 Windows 服務的 <xref:System.ServiceProcess.ServiceBase.OnStart%2A?displayProperty=fullName> 方法進行偵錯，您必須從方法內啟動偵錯工具。  
   
 1.  在 <xref:System.Diagnostics.Debugger.Launch%2A> 方法的開頭加入對 `OnStart()`的呼叫。  
   
@@ -46,7 +44,7 @@ ms.locfileid: "31481849"
   
      ![OnStartDebug](../debugger/media/onstartdebug.png "OnStartDebug")  
   
-3.  選取 **[是]，偵錯\<服務名稱 >。**  
+3.  選取 [是，對 \<服務名稱> 進行偵錯]。  
   
 4.  在 [Just-In-Time 偵錯工具] 視窗中，選取您要用來偵錯的 Visual Studio 版本。  
   
@@ -54,6 +52,6 @@ ms.locfileid: "31481849"
   
 5.  Visual Studio 的新執行個體隨即啟動，並在 `Debugger.Launch()` 方法停止執行。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [偵錯工具安全性](../debugger/debugger-security.md)   
  [偵錯 Managed 程式碼](../debugger/debugging-managed-code.md)

@@ -1,8 +1,6 @@
 ---
 title: '&lt;字串&gt;項目 （啟動載入器） |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 f1_keywords:
 - MSBuild.GenerateBootstrapper.NoStringsForCulture
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fc1cab2fdb0a175fc9365b2a8b4b17dca46a30a2
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
-ms.translationtype: MT
+ms.openlocfilehash: 5b1cc6f4341f1a4ffdc01ec22b559fb1fa72cb66
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39077668"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53886860"
 ---
 # <a name="ltstringsgt-element-bootstrapper"></a>&lt;字串&gt;項目 （啟動載入器）
 定義產品名稱、 封裝名稱，以及安裝錯誤訊息的當地語系化的字串。  
@@ -41,7 +39,7 @@ ms.locfileid: "39077668"
 </Strings>  
 ```  
   
-## <a name="elements-and-attributes"></a>項目和屬性  
+## <a name="elements-and-attributes"></a>元素和屬性  
  `Strings`項目是子系`Package`項目。 它沒有任何屬性。  
   
 ## <a name="string"></a>String  
@@ -49,9 +47,9 @@ ms.locfileid: "39077668"
   
  `String` 具有下列屬性。  
   
-|屬性|描述|  
+|屬性|說明|  
 |---------------|-----------------|  
-|`Name`|必要。 字串的名稱。|  
+|`Name`|必要項。 字串的名稱。|  
   
 ## <a name="example"></a>範例  
  下列程式碼範例會指定英文字串的所有[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]安裝程式。  

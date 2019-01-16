@@ -1,8 +1,6 @@
 ---
 title: 尋找執行的 ASP.NET 處理序 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -18,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: 6bbb2aed6f7218170e26b736d82ba0f3d88b2fae
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.openlocfilehash: 4a65269f9fd99b31ee797be0d5e27559daa1f25a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51751776"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53836162"
 ---
 # <a name="find-the-name-of-the-aspnet-process"></a>尋找 ASP.NET 處理序的名稱
 
@@ -47,6 +45,6 @@ ms.locfileid: "51751776"
 **另請參閱：**
 
  [附加至執行中的處理序](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)  
- [遠端偵錯的 web 應用程式的必要條件](../debugger/prerequistes-for-remote-debugging-web-applications.md)   
+ [遠端偵錯的 web 應用程式的必要條件](/visualstudio/debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer)   
  [系統需求](../debugger/aspnet-debugging-system-requirements.md)   
  [對 ASP.NET 應用程式進行偵錯](../debugger/how-to-enable-debugging-for-aspnet-applications.md)

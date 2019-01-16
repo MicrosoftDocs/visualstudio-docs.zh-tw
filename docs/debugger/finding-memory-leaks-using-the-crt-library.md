@@ -1,8 +1,6 @@
 ---
 title: 尋找記憶體流失的 CRT 程式庫 |Microsoft Docs
-ms.custom: ''
 ms.date: 10/04/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -31,14 +29,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b797e8c8068523b4c782c4d7f02a3853c1d37d1
-ms.sourcegitcommit: 12d6398c02e818de4fbcb4371bae9e5db6cf9509
-ms.translationtype: MT
+ms.openlocfilehash: e29ef610fdfe114525e7da22b58635e0f3e4a3af
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50050102"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53931023"
 ---
-# <a name="find-memory-leaks-with-the-crt-library"></a>尋找記憶體流失的 CRT 程式庫
+# <a name="find-memory-leaks-with-the-crt-library"></a>尋找 CRT 程式庫的記憶體流失問題
 
 記憶體流失是最細微和硬偵測錯誤 C/c + + 應用程式中。 記憶體流失結果失敗，無法正確解除配置先前配置的記憶體。 只有少許記憶體流失可能不會在一開始，注意到，但經過一段時間可能會導致舉凡損毀時記憶體不足所執行的應用程式的效能不佳的徵狀。 負責建立有關哪一個應用程式的混淆到遺漏的應用程式，會用完所有可用的記憶體可能會造成其他應用程式當機。 即使是無害的記憶體流失可能表示應該解決其他問題。  
 
@@ -183,7 +181,7 @@ Object dump complete.
 
 您可以使用配置編號在記憶體配置上設定中斷點。  
 
-**若要設定記憶體配置中斷點使用監看式視窗：**  
+**使用監看式視窗設定記憶體配置中斷點：**  
 
 1. 靠近您的應用程式的開頭設定中斷點並開始偵錯。  
    
@@ -195,13 +193,13 @@ Object dump complete.
    
 1. 按 **Enter** 鍵。  
    
-   偵錯工具會評估呼叫，並將結果放在 [值]  欄中。 這個值會 **-1**如果您還沒有設定任何中斷點上的記憶體配置。  
+   偵錯工具會評估呼叫，並將結果放在 [值]  欄中。 如果您尚未在記憶體配置上設定任何中斷點，此值將會是 **-1**。  
    
 1. 在 **值**資料行值取代為您想要偵錯工具中斷的記憶體配置的配置編號。  
 
 記憶體配置編號上設定中斷點之後，繼續進行偵錯。 請務必在相同的情況下執行，因此不會變更的記憶體配置編號。 當程式在特定的記憶體配置中斷時，使用**呼叫堆疊**視窗和其他偵錯工具視窗，判斷記憶體配置的條件。 然後，您可以繼續執行，觀察物件會發生什麼事，並判斷為什麼它不正確解除配置。  
 
-在物件上設定資料中斷點可能也很有用。 如需詳細資訊，請參閱 <<c0> [ 使用中斷點](../debugger/using-breakpoints.md)。  
+在物件上設定資料中斷點可能也很有用。 如需詳細資訊，請參閱[使用中斷點](../debugger/using-breakpoints.md)。  
 
 您也可以在程式碼中設定記憶體配置中斷點。 您可以設定：  
 
@@ -264,4 +262,4 @@ if ( _CrtMemDifference( &s3, &s1, &s2) )
 ## <a name="see-also"></a>另請參閱  
  [CRT 偵錯堆積詳細資料](../debugger/crt-debug-heap-details.md)   
  [偵錯工具安全性](../debugger/debugger-security.md)   
- [偵錯原生程式碼](../debugger/debugging-native-code.md)
+ [對機器碼進行偵錯](../debugger/debugging-native-code.md)

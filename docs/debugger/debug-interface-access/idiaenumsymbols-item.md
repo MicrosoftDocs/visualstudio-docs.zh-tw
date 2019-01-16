@@ -1,8 +1,6 @@
 ---
 title: 'Idiaenumsymbols:: Item |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c8786d53e1ba3001bc882580c03005377d476a47
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: f4be73de8540d89a4c45737aa6bdc2e24c704cd1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49918970"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53898995"
 ---
 # <a name="idiaenumsymbolsitem"></a>IDiaEnumSymbols::Item
 透過索引中擷取的符號。  
@@ -27,7 +25,7 @@ ms.locfileid: "49918970"
 ## <a name="syntax"></a>語法  
   
 ```C++  
-HRESULT Item (   
+HRESULT Item (   
    DWORD        index,  
    IDiaSymbol** symbol  
 );  
@@ -43,6 +41,6 @@ HRESULT Item (
 ## <a name="return-value"></a>傳回值  
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)   
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

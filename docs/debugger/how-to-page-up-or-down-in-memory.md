@@ -1,8 +1,6 @@
 ---
-title: 如何： Page Up 或在記憶體中的向下 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：Page Up 或在記憶體中的向下 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -21,16 +19,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f981dafc6c014080960f2a0652420a00ea6ac6f
-ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
-ms.translationtype: MT
+ms.openlocfilehash: ab81dcdda3f7e3a5818d0351c26c0002ea75eb3d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52257121"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53902223"
 ---
-# <a name="how-to-page-up-or-down-in-memory"></a>如何：在記憶體中向上或向下翻頁
+# <a name="how-to-page-up-or-down-in-memory"></a>HOW TO：在記憶體中向上或向下翻頁
 
-當您檢視中的記憶體內容**記憶體** 視窗或**反組譯碼** 視窗中，您可以使用垂直捲軸上移或下移的記憶體空間中。  
+當您在 [記憶體] 視窗或 [反組譯碼] 視窗中檢視記憶體內容時，可以使用垂直捲軸在記憶體空間中上下移動。  
   
 ### <a name="to-page-up-or-down-in-memory"></a>若要在記憶體中向上或向下翻頁  
   
@@ -48,7 +46,7 @@ ms.locfileid: "52257121"
   
 -   請按一下垂直捲軸頂端或底端的箭頭。  
   
-## <a name="see-also"></a>另請參閱  
- [記憶體 Windows](../debugger/memory-windows.md)   
- [如何： 使用反組譯碼視窗](../debugger/how-to-use-the-disassembly-window.md)   
+## <a name="see-also"></a>請參閱  
+ [記憶體視窗](../debugger/memory-windows.md)   
+ [如何：使用反組譯碼視窗](../debugger/how-to-use-the-disassembly-window.md)   
  [在偵錯工具中檢視資料](../debugger/viewing-data-in-the-debugger.md)

@@ -1,8 +1,6 @@
 ---
 title: 'Idiaenumdebugstreamdata:: Next |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 00ccf7edbe7eb985c83d56aa8b1e851d6ca21374
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 781fd79611e8de323085ed73dc7682808d69b6ff
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49895245"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53958380"
 ---
 # <a name="idiaenumdebugstreamdatanext"></a>IDiaEnumDebugStreamData::Next
 擷取指定的列舉順序中的記錄數。  
@@ -27,7 +25,7 @@ ms.locfileid: "49895245"
 ## <a name="syntax"></a>語法  
   
 ```C++  
-HRESULT Next (   
+HRESULT Next (   
    ULONG  celt,  
    DWORD  cbData,  
    DWORD* pcbData,  
@@ -46,15 +44,15 @@ HRESULT Next (
  pcbData  
  [out]傳回動作傳回的位元組的數目。 如果`data`是 NULL，則`pcbData`所有要求的記錄包含的可用資料的位元組總數。  
   
- [資料]  
+ data[]  
  [out]要填滿偵錯資料流記錄資料的緩衝區。  
   
  pceltFetched  
  [in、 out]傳回的記錄數目`data`。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`。 傳回`S_FALSE`如果沒有更多的記錄。 反之則傳回錯誤碼。  
+ 如果成功，會傳回 `S_OK`。 傳回`S_FALSE`如果沒有更多的記錄。 反之則傳回錯誤碼。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md)   
  [IDiaEnumDebugStreams::Next](../../debugger/debug-interface-access/idiaenumdebugstreams-next.md)

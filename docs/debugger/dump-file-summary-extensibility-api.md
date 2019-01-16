@@ -1,8 +1,6 @@
 ---
-title: 傾印檔案摘要擴充性 API |Microsoft 文件
-ms.custom: ''
+title: 傾印檔案摘要擴充性 API |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -15,20 +13,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c4bd5b5102219af530d7159b5481447b9c4e7ea
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: ade8a24e8371fe78286b794ad0437b9f50ae30cc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31471017"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53938915"
 ---
 # <a name="dump-file-summary-extensibility-api"></a>傾印檔案摘要擴充性 API
-使用本節中的擴充性 Api，您可以擴充。Exe 專案系統和**傾印摘要**頁面供您自己的自訂偵錯引擎。  
+您可以使用本節的擴充性 API 擴充 [.Exe 專案系統] 和 [傾印摘要] 頁面，以供您搭配自訂偵錯引擎使用。  
   
 ## <a name="in-this-section"></a>本節內容  
- 用於擴充 Api**傾印摘要**頁面和。Exe 專案系統會提供下列命名空間：  
+ 下列命名空間提供用於擴充 [傾印摘要] 頁面和 [.Exe 專案系統] 的 API：  
   
  <xref:Microsoft.VisualStudio.Debugger.VsDebugPresentationExtension>  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [使用傾印檔案](../debugger/using-dump-files.md)

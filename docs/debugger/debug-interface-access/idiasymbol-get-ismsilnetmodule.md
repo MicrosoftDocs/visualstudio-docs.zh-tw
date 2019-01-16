@@ -1,8 +1,6 @@
 ---
 title: 'Idiasymbol:: Get_ismsilnetmodule |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 65399d8afde22a4856c43d3de0e7d2dc555d32fe
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: a66b8d64849f5c05efa8cc7922ba738ebc43097f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49904684"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53919741"
 ---
 # <a name="idiasymbolgetismsilnetmodule"></a>IDiaSymbol::get_isMSILNetmodule
 擷取旗標，指出模組是否.netmodule （Microsoft Intermediate Language (MSIL) 模組只包含中繼資料和任何原生的符號）。  
@@ -47,11 +45,11 @@ HRESULT get_isMSILNetmodule(
   
 ## <a name="requirements"></a>需求  
   
-|需求|描述|  
+|需求|說明|  
 |-----------------|-----------------|  
 |標頭：|dia2.h|  
 |版本:|DIA SDK 8.0 版|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [CompilandDetails](../../debugger/debug-interface-access/compilanddetails.md)

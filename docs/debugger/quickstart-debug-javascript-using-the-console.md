@@ -1,8 +1,6 @@
 ---
 title: 使用主控台偵錯 JavaScript |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - VS.WebClient.JavaScriptConsole
@@ -17,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c76f9c533fd83584c12f03b4e0c0f1d44e281c8e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: d97b7d8a4143ba48e0b5c411539deeb85a0cd70f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49861822"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53840378"
 ---
 # <a name="debug-javascript-using-the-console-in-visual-studio"></a>在 Visual Studio 中使用主控台偵錯 JavaScript
   
@@ -45,7 +43,7 @@ ms.locfileid: "49861822"
 > [!TIP]
 >  如果 [JavaScript 主控台] 視窗已關閉，請選擇 [偵錯] >  >  以重新開啟。 只有在指令碼偵錯工作階段期間，才會出現此視窗。  
   
- 使用 [JavaScript 主控台] 視窗，您可以與 App 互動，而不需要停止和重新啟動偵錯工具。 如需詳細資訊，請參閱 <<c0> [ 重新整理應用程式 (JavaScript)](../debugger/refresh-an-app-javascript.md)。 如需其他 JavaScript 偵錯功能，例如使用 [DOM 總管] 中，以及設定中斷點，詳細資訊，請參閱[快速入門： 偵錯 HTML 和 CSS](../debugger/quickstart-debug-html-and-css.md)並[偵錯在 Visual Studio 中的應用程式](../debugger/debug-store-apps-in-visual-studio.md)。  
+ 使用 [JavaScript 主控台] 視窗，您可以與 App 互動，而不需要停止和重新啟動偵錯工具。 如需詳細資訊，請參閱 <<c0> [ 重新整理應用程式 (JavaScript)](../debugger/refresh-an-app-javascript.md)。 如需其他 JavaScript 偵錯功能，例如使用 [DOM 總管] 中，以及設定中斷點，詳細資訊，請參閱[快速入門：偵錯 HTML 和 CSS](../debugger/quickstart-debug-html-and-css.md)並[偵錯在 Visual Studio 中的應用程式](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps)。  
   
 ##  <a name="InteractiveConsole"></a> 使用 JavaScript 主控台視窗進行偵錯  
  下列步驟會建立 `FlipView` App，並顯示如何以互動方式為 JavaScript 程式碼錯誤偵錯。  
@@ -181,7 +179,7 @@ ms.locfileid: "49861822"
   
 13. 選擇綠色箭頭符號以執行指令碼。  
   
-14. 按 Ctrl + Alt + M，主控台輸入提示字元切換至單行模式，然後選擇**清除輸入**（紅色"X"） 刪除輸入提示中的程式碼。  
+14. 按 Ctrl+Alt+M，將主控台輸入提示字元切換至單行模式，然後選擇 [清除輸入] (紅色 "X") 以刪除輸入提示字元中的程式碼。  
   
 15. 在提示字元中輸入 `Data.items.length = 3` ，然後按 Enter。 這會從資料中移除多餘的項目。  
   
@@ -191,7 +189,7 @@ ms.locfileid: "49861822"
   
 18. 依序選擇 [偵錯]  > **Stop ging** 或按 Shift+F5 停止偵錯，接著修正原始程式碼。  
   
-     完整 default.html 頁面包含更正的範例程式碼，請參閱[偵錯 HTML、 CSS 和 JavaScript 範例程式碼](../debugger/debug-html-css-and-javascript-sample-code.md)。  
+     如需包含已更正範例程式碼的完整 default.html 頁面，請參閱[對 HTML、CSS 和 JavaScript 範例程式碼進行偵錯](../debugger/debug-html-css-and-javascript-sample-code.md)。  
   
 ##  <a name="InteractiveDebuggingBreakMode"></a> 互動式偵錯和中斷模式  
  您可以在使用 JavaScript 偵錯工具 (如 [JavaScript 主控台] 視窗) 的同時，使用中斷點並逐步執行程式碼。 在偵錯工具中執行的程式遇到中斷點時，偵錯工具會暫時停止執行程式。 當執行暫停時，您的程式會從執行模式切換到中斷模式。 您可以隨時繼續執行。  
@@ -239,7 +237,7 @@ ms.locfileid: "49861822"
   
  單行模式提供輸入歷程記錄。 您可以使用向上鍵和向下鍵巡覽輸入歷程記錄。 當您執行指令碼時，單行模式會清除輸入提示。 若要在單行模式下執行指令碼，請按 Enter。  
   
- 當您執行指令碼時，多行模式不會清除輸入提示。 當您從多行模式切換至單行模式時，您可以藉由按下清除輸入的行**清除輸入**（紅色"X"）。 若要在多行模式下執行指令碼，請按 Ctrl+Enter 或選擇視窗右下角的箭頭符號。  
+ 當您執行指令碼時，多行模式不會清除輸入提示。 當您從多行模式切換至單行模式時，可以按下 [清除輸入] (紅色的 "X") 以清除輸入行。 若要在多行模式下執行指令碼，請按 Ctrl+Enter 或選擇視窗右下角的箭頭符號。  
   
 ##  <a name="Switching"></a> 切換指令碼執行內容  
  [JavaScript 主控台] 視窗可讓您一次與一個單一執行內容 (表示 Web 平台主機 (WWAHost.exe) 的單一執行個體) 互動。 在某些情況下，您的 App 可能會啟動主機的另一個執行個體，例如當您使用 `iframe`、共用合約、Web 背景工作或 `WebView` 控制項時。 如果主機的另一個執行個體正在執行，您可以在 [目標]  清單中選取執行內容，以便在執行 App 的同時，選取不同的執行內容。  
@@ -250,12 +248,12 @@ ms.locfileid: "49861822"
   
  您也可以使用 `cd` 命令來切換執行內容，但是必須知道另一個執行內容的名稱，而且您使用的參考必須在範圍內。 [目標]  清單提供更好的方式讓您存取其他執行內容。   
   
-## <a name="see-also"></a>另請參閱  
- [Debug apps in Visual Studio](../debugger/debug-store-apps-in-visual-studio.md)   
+## <a name="see-also"></a>請參閱  
+ [Debug apps in Visual Studio](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps)   
  [JavaScript Console commands](../debugger/javascript-console-commands.md)   
  [重新整理應用程式 (JavaScript)](../debugger/refresh-an-app-javascript.md)   
  [鍵盤快速鍵](../debugger/keyboard-shortcuts-html-and-javascript.md)   
- [偵錯 HTML、 CSS 和 JavaScript 範例程式碼](../debugger/debug-html-css-and-javascript-sample-code.md)   
- [快速入門： 偵錯 HTML 和 CSS](../debugger/quickstart-debug-html-and-css.md)   
- [偵錯 WebView 控制項](../debugger/debug-a-webview-control.md)   
+ [對 HTML、CSS 和 JavaScript 範例程式碼進行偵錯](../debugger/debug-html-css-and-javascript-sample-code.md)   
+ [快速入門：對 HTML 和 CSS 進行偵錯](../debugger/quickstart-debug-html-and-css.md)   
+ [對 WebView 控制項進行偵錯](../debugger/debug-a-webview-control.md)   
  [產品支援和協助工具](https://visualstudio.microsoft.com/vs/support/)

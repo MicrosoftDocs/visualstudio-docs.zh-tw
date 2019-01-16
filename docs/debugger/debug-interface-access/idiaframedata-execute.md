@@ -1,8 +1,6 @@
 ---
 title: 'Idiaframedata:: Execute |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 66b8f904ac8add69db0c6d1760b5427cb8c802ae
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 6be6c631f9ea0db47829f305f90bd1c296de2f28
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49918341"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53958734"
 ---
 # <a name="idiaframedataexecute"></a>IDiaFrameData::execute
 執行堆疊回溯，並傳回結果的堆疊查核行程框架介面中。  
@@ -27,7 +25,7 @@ ms.locfileid: "49918341"
 ## <a name="syntax"></a>語法  
   
 ```C++  
-HRESULT execute (   
+HRESULT execute (   
    IDiaStackWalkFrame* frame  
 );  
 ```  
@@ -39,7 +37,7 @@ HRESULT execute (
 ## <a name="return-value"></a>傳回值  
  如果成功，則傳回`S_OK`; 否則傳回錯誤碼。 下表顯示可能的傳回值，這個方法。  
   
-|值|描述|  
+|值|說明|  
 |-----------|-----------------|  
 |E_DIA_INPROLOG|無法執行序言程式碼中的堆疊框架。|  
 |E_DIA_SYNTAX|剖析 畫面格程式中發生錯誤。|  
@@ -49,6 +47,6 @@ HRESULT execute (
 ## <a name="remarks"></a>備註  
  回溯堆疊偵錯期間，會呼叫這個方法。 [IDiaStackWalkFrame](../../debugger/debug-interface-access/idiastackwalkframe.md)用戶端應用程式接收到暫存器的更新，並提供所使用的方法實作物件`execute`方法。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)   
  [IDiaStackWalkFrame](../../debugger/debug-interface-access/idiastackwalkframe.md)

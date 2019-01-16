@@ -1,8 +1,6 @@
 ---
 title: 使用 DebuggerDisplay 屬性 |Microsoft Docs
-ms.custom: ''
 ms.date: 08/09/2017
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - attributes [C#], debugger
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d3adb481ba06c086db3a272c026543464018b542
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 922e9eea80344d5a02e4f54f173b374ca7faa78e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49926198"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53951676"
 ---
 # <a name="using-the-debuggerdisplay-attribute"></a>使用 DebuggerDisplay 屬性
 <xref:System.Diagnostics.DebuggerDisplayAttribute> 控制物件、屬性或欄位在偵錯工具變數視窗中顯示的方式。 這個屬性可以適用於類型、委派、屬性、欄位和組件。  
@@ -35,7 +33,7 @@ ms.locfileid: "49926198"
   
  下表說明 `DebuggerDisplay` 屬性的一些可能用法和範例輸出。  
   
-|屬性|不會出現在 [值] 資料行的輸出|  
+|屬性|出現在值資料行中的輸出|  
 |---------------| - |  
 |`[DebuggerDisplay("x = {x} y = {y}")]`<br /><br /> 用於具有 `x` 和 `y`欄位的類型。|`x = 5 y = 18`|  
 |`[DebuggerDisplay("String value is {getString()}")]`參數語法會因語言而有所不同。 因此，請小心使用。|`String value is [5, 6, 6]`|  
@@ -76,15 +74,15 @@ csc /t:library autoexp.cs
 ```csharp  
 [DebuggerDisplay("{DebuggerDisplay,nq}")]  
 public sealed class MyClass   
-{      
-    public int count { get; set; }      
-    public bool flag { get; set; }      
+{      
+    public int count { get; set; }      
+    public bool flag { get; set; }      
     private string DebuggerDisplay  
-   {         
+   {         
         get  
         {  
              return string.Format("Object {0}", count - 2);  
-        }      
+        }      
     }  
 }  
 ```  
@@ -176,8 +174,8 @@ class MyHashtable
 }  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [使用 DebuggerTypeProxy 屬性](../debugger/using-debuggertypeproxy-attribute.md)   
- [建立受管理物件的自訂檢視](../debugger/create-custom-views-of-dot-managed-objects.md)   
+ [建立受控物件的自訂檢視](../debugger/create-custom-views-of-dot-managed-objects.md)   
  [C# 中的格式規範](../debugger/format-specifiers-in-csharp.md)   
  [使用偵錯工具顯示屬性增強偵錯功能](/dotnet/framework/debug-trace-profile/enhancing-debugging-with-the-debugger-display-attributes)

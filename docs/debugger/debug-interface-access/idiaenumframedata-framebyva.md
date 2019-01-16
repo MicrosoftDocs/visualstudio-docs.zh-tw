@@ -1,8 +1,6 @@
 ---
 title: 'Idiaenumframedata:: Framebyva |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fa12d481811538430385aeda08c1ea01a156d924
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 9f905c3aa380c6decd6687ff2332af2f196d0b68
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49854009"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53851585"
 ---
 # <a name="idiaenumframedataframebyva"></a>IDiaEnumFrameData::frameByVA
 傳回在範圍內的虛擬位址 (VA)。  
@@ -27,7 +25,7 @@ ms.locfileid: "49854009"
 ## <a name="syntax"></a>語法  
   
 ```C++  
-HRESULT frameByVA(   
+HRESULT frameByVA(   
    ULONGLONG       virtualAddress,  
    IDiaFrameData** frame  
 );  
@@ -41,8 +39,8 @@ HRESULT frameByVA(
  [out]傳回[IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)物件，表示框架，其中包含提供的地址。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`。 傳回`S_FALSE`如果沒有框架的資料符合指定的位址。 反之則傳回錯誤碼。  
+ 如果成功，則傳回 `S_OK`。 傳回`S_FALSE`如果沒有框架的資料符合指定的位址。 反之則傳回錯誤碼。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md)   
  [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)
