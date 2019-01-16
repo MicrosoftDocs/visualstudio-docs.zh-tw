@@ -1,8 +1,6 @@
 ---
-title: 如何： 發行 ClickOnce 應用程式使用發行精靈 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：發行 ClickOnce 應用程式使用發行精靈 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,14 +17,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 890a61290d7606fb2a03ea7aed2c4782e5b69b67
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 1a6b916e8050bd68f4ccd601e92725768a01c4c7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388859"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53935043"
 ---
-# <a name="how-to-publish-a-clickonce-application-using-the-publish-wizard"></a>如何：使用發佈精靈發佈 ClickOnce 應用程式
+# <a name="how-to-publish-a-clickonce-application-using-the-publish-wizard"></a>HOW TO：使用 [發行精靈] 發行 ClickOnce 應用程式
 若要讓使用者可以使用 ClickOnce 應用程式，您必須將它發行至檔案共用或路徑、FTP 伺服器或卸除式媒體。 您可以使用 [發佈精靈] 發佈應用程式；[專案設計工具] 的 [發佈] 頁面上也有提供與發佈相關的其他屬性。 如需詳細資訊，請參閱[發佈 ClickOnce 應用程式](../deployment/publishing-clickonce-applications.md)。
 
 在執行 [發行精靈] 之前，您應該適當設定發行屬性。 例如，如果您要指定用於簽署 ClickOnce 應用程式的金鑰，您可以在 [專案設計工具] 的 [簽署] 頁面上執行這項操作。 如需詳細資訊，請參閱 <<c0> [ 保護 ClickOnce 應用程式](../deployment/securing-clickonce-applications.md)。
