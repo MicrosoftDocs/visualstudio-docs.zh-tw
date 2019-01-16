@@ -20,15 +20,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5a0a8846719c6ad57e65e1e308e9884e81e1997d
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
-ms.translationtype: MT
+ms.openlocfilehash: e485223f73a74a97dd388a9c78dd4cf543a92350
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37174718"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53936187"
 ---
 # <a name="validate-data-in-datasets"></a>驗證資料集中的資料
 驗證資料是資料物件中所輸入的值符合的條件約束的資料集結構描述中的確認程序。 驗證程序也會確認這些值會遵循您的應用程式所建立的規則。 它是個不錯的做法，驗證資料，再將更新傳送至基礎資料庫。 這會減少錯誤，以及可能的應用程式與資料庫之間的往返次數。
@@ -40,9 +39,9 @@ ms.locfileid: "37174718"
 ## <a name="validate-data"></a>驗證資料
  在資料集內的驗證是透過下列方式來完成：
 
--   藉由建立您自己的應用程式特定驗證中個別資料行的值變更期間檢查。 如需詳細資訊，請參閱 <<c0> [ 如何： 在資料行變更期間驗證資料](validate-data-in-datasets.md)。
+-   藉由建立您自己的應用程式特定驗證中個別資料行的值變更期間檢查。 如需詳細資訊，請參閱[＜How to：在資料行變更期間驗證資料](validate-data-in-datasets.md)。
 
--   藉由建立您自己應用程式特定的驗證，可以檢查在整個資料值的資料會變更資料列。 如需詳細資訊，請參閱 <<c0> [ 如何： 在資料列變更期間驗證資料](validate-data-in-datasets.md)。
+-   藉由建立您自己應用程式特定的驗證，可以檢查在整個資料值的資料會變更資料列。 如需詳細資訊，請參閱[＜How to：在資料列變更期間驗證資料](validate-data-in-datasets.md)。
 
 -   建立金鑰，unique 條件約束等做為實際的結構描述定義的資料集的一部分。
 
@@ -66,7 +65,7 @@ ms.locfileid: "37174718"
 
 ## <a name="data-update-events"></a>資料更新事件
 
-|Event - 事件|描述|
+|Event - 事件|說明|
 |-----------|-----------------|
 |<xref:System.Data.DataTable.ColumnChanging>|正在變更的資料行中的值。 事件傳遞的資料列和資料行，以及建議的新值。|
 |<xref:System.Data.DataTable.ColumnChanged>|已變更資料行中的值。 事件傳遞的資料列和資料行，以及建議的值。|
@@ -90,7 +89,7 @@ ms.locfileid: "37174718"
 
 -   藉由設定資料行錯誤拒絕建議的值 (<xref:System.Data.DataRow.SetColumnError%2A>) 從在資料行變更的事件處理常式。
 
--   選擇性地使用<xref:System.Windows.Forms.ErrorProvider>控制項來顯示錯誤訊息給使用者。 如需詳細資訊，請參閱 < [ErrorProvider 元件](/dotnet/framework/winforms/controls/errorprovider-component-windows-forms)。
+-   選擇性地使用<xref:System.Windows.Forms.ErrorProvider>控制項來顯示錯誤訊息給使用者。 如需詳細資訊，請參閱 [ErrorProvider 元件](/dotnet/framework/winforms/controls/errorprovider-component-windows-forms)。
 
 您也可以驗證執行期間<xref:System.Data.DataTable.RowChanging>事件。
 
@@ -99,7 +98,7 @@ ms.locfileid: "37174718"
 
 ### <a name="to-validate-data-when-a-row-changes-visual-basic"></a>若要驗證資料的資料列時變更 (Visual Basic)
 
-1.  開啟您的資料集，在**Dataset 設計工具**。 如需詳細資訊，請參閱 <<c0> [ 逐步解說： 以 Dataset 設計工具建立資料集](walkthrough-creating-a-dataset-with-the-dataset-designer.md)。
+1.  在 **DataSet 設計工具**中開啟資料集。 如需詳細資訊，請參閱[逐步解說：在 Dataset 設計工具中建立資料集](walkthrough-creating-a-dataset-with-the-dataset-designer.md)。
 
 2.  按兩下您想要驗證之資料表標題列。 此動作會自動建立<xref:System.Data.DataTable.RowChanging>事件處理常式<xref:System.Data.DataTable>資料集的部分類別檔案中。
 
@@ -108,9 +107,9 @@ ms.locfileid: "37174718"
 
      [!code-vb[VbRaddataValidating#3](../data-tools/codesnippet/VisualBasic/validate-data-in-datasets_1.vb)]
 
-### <a name="to-validate-data-when-a-row-changes-c"></a>若要驗證資料的資料列時變更 (C#)
+### <a name="to-validate-data-when-a-row-changes-c"></a>若要驗證資料列變更時 (C#)
 
-1.  開啟您的資料集，在**Dataset 設計工具**。 如需詳細資訊，請參閱 <<c0> [ 逐步解說： 以 Dataset 設計工具建立資料集](walkthrough-creating-a-dataset-with-the-dataset-designer.md)。
+1.  在 **DataSet 設計工具**中開啟資料集。 如需詳細資訊，請參閱[逐步解說：在 Dataset 設計工具中建立資料集](walkthrough-creating-a-dataset-with-the-dataset-designer.md)。
 
 2.  按兩下您想要驗證之資料表標題列。 此動作會建立部分類別檔案<xref:System.Data.DataTable>。
 
@@ -212,5 +211,5 @@ ms.locfileid: "37174718"
 ## <a name="see-also"></a>另請參閱
 
 - [Visual Studio 中的資料集工具](../data-tools/dataset-tools-in-visual-studio.md)
-- [如何： 驗證 Windows Form DataGridView 控制項中的資料](/dotnet/framework/winforms/controls/how-to-validate-data-in-the-windows-forms-datagridview-control)
-- [如何： 顯示 Windows Form ErrorProvider 元件使用的表單驗證的錯誤圖示](/dotnet/framework/winforms/controls/display-error-icons-for-form-validation-with-wf-errorprovider)
+- [如何：驗證 Windows Form DataGridView 控制項中的資料](/dotnet/framework/winforms/controls/how-to-validate-data-in-the-windows-forms-datagridview-control)
+- [如何：顯示 Windows Form ErrorProvider 元件使用的表單驗證的錯誤圖示](/dotnet/framework/winforms/controls/display-error-icons-for-form-validation-with-wf-errorprovider)
