@@ -1,8 +1,6 @@
 ---
 title: IntelliTrace 功能 |Microsoft Docs
-ms.custom: ''
 ms.date: 09/19/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - IntelliTrace, debugging with events
@@ -22,41 +20,41 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 59ff5fa898aa808c99dd5f52df1605336edd1694
-ms.sourcegitcommit: a749c287ec7d54148505978e8ca55ccd406b71ee
-ms.translationtype: MT
+ms.openlocfilehash: 353be65ceb87827bcce56c7fb6a07b6af8919c58
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46542464"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54227833"
 ---
-# <a name="intellitrace-features"></a>IntelliTrace 功能
+# <a name="intellitrace-features-c-visual-basic-c"></a>IntelliTrace 功能 (C#，Visual Basic、 c + +)
 
-您可以使用 IntelliTrace 記錄您應用程式的事件和方法呼叫，以讓您檢查它在執行之不同時間點的狀態 (呼叫堆疊和區域變數值)。 只要照常開始偵錯-根據預設，已開啟 IntelliTrace 和 IntelliTrace 所記錄在新的資訊請參閱 <<c0>  **診斷工具**下方視窗**事件** 索引標籤。選取事件，然後按一下**啟用歷程偵錯**以查看呼叫堆疊和區域變數記錄此事件。
+您可以使用 IntelliTrace 記錄您應用程式的事件和方法呼叫，以讓您檢查它在執行之不同時間點的狀態 (呼叫堆疊和區域變數值)。 只要如常開始偵錯，預設會開啟 IntelliTrace，而您可以在新 [診斷工具] 視窗的 [事件] 索引標籤中查看 IntelliTrace 所記錄的資訊。選取事件，然後按一下 [啟用歷程偵錯]，以查看針對此事件記錄的呼叫堆疊和區域變數。
 
-如需逐步說明，請參閱 <<c0> [ 逐步解說： 使用 IntelliTrace](../debugger/walkthrough-using-intellitrace.md)。
+如需逐步說明，請參閱[逐步解說：使用 IntelliTrace
 
 Visual Studio Enterprise 版本 (而非 Visual Studio Professional 或 Community 版本) 中提供 IntelliTrace。
 
-若要確認 IntelliTrace 已開啟，請開啟**工具 > 選項 > IntelliTrace**選項頁面。 **啟用 IntelliTrace**預設應該核取。
+若要確認已開啟 IntelliTrace，請開啟 [工具] > [選項] > [IntelliTrace] 選項頁面。 預設應該會選取 [啟用 IntelliTrace]。
 
 > [!NOTE]
-> 上的所有設定的範圍**IntelliTrace**選項 頁面是 Visual Studio 為整個、 不是個別專案或解決方案。 這些設定的變更會套用至所有 Visual Studio 執行個體、所有偵錯工作階段，以及所有專案或方案。
+> [IntelliTrace] 選項頁面上所有設定的範圍是整個 Visual Studio，而不是個別專案或方案。 這些設定的變更會套用至所有 Visual Studio 執行個體、所有偵錯工作階段，以及所有專案或方案。
 
-## <a name="ChooseEvents"></a> 選擇的事件，IntelliTrace 記錄 （僅限 managed 程式碼）
+## <a name="ChooseEvents"></a> 選擇 IntelliTrace 所記錄的事件 (C#，Visual Basic)
 
 您可以開啟或關閉特定 IntelliTrace 事件的記錄。
 
 如果您正在偵錯，請停止偵錯。 移至**工具 > 選項 > IntelliTrace > IntelliTrace 事件**。 選擇您要 IntelliTrace 記錄的事件。
 
-## <a name="Snapshots"></a> 收集的快照集
+## <a name="Snapshots"></a> 收集快照集 (C#，Visual Basic、 c + +)
 
-這不預設啟用，但 IntelliTrace 可以擷取您的應用程式，在每個中斷點和偵錯工具步驟事件的快照集，您可以在歷程記錄偵錯工作階段中檢視這些快照集。 快照集可讓您完整的應用程式的狀態檢視。 若要啟用擷取的快照集，請前往**工具 > 選項 > IntelliTrace > 一般**，然後選取**IntelliTrace 快照集 （managed 與原生）**。 如需詳細資訊，請參閱[檢查先前使用 IntelliTrace 的應用程式狀態](../debugger/view-historical-application-state.md)
+這不預設啟用，但 IntelliTrace 可以擷取您的應用程式，在每個中斷點和偵錯工具步驟事件的快照集，您可以在歷程記錄偵錯工作階段中檢視這些快照集。 快照集可讓您完整的應用程式的狀態檢視。 若要啟用擷取的快照集，請前往**工具 > 選項 > IntelliTrace > 一般**，然後選取**IntelliTrace 快照集 （managed 與原生）**。 如需詳細資訊，請參閱[使用 IntelliTrace 檢查先前的應用程式狀態](../debugger/view-historical-application-state.md)
 
 快照集可用於 Visual Studio Enterprise 2017 15.5 版和更高版本，而且需要 Windows 10 年度更新版或更新版本。  針對.NET Core 和 ASP.NET Core 應用程式，Visual Studio Enterprise 2017 15.7 版則是必要項目。 原生應用程式目標設為 Windows，Visual Studio Enterprise 2017 版本 15.9 Preview 2 是必要。
 
-## <a name="GoingFurther"></a> 收集 IntelliTrace 事件和呼叫資訊 （僅限 managed 程式碼）
+## <a name="GoingFurther"></a> 收集 IntelliTrace 事件和呼叫資訊 (C#，Visual Basic)
 
-這不預設啟用，但 IntelliTrace 可以記錄方法呼叫和事件。 若要啟用的方法呼叫，請移至集合**工具 > 選項 > IntelliTrace > 一般**，然後選取**IntelliTrace 事件和呼叫資訊 (僅限 managed)**。
+這預設不會予以啟用，但 IntelliTrace 可以記錄方法呼叫和事件。 若要啟用的方法呼叫，請移至集合**工具 > 選項 > IntelliTrace > 一般**，然後選取**IntelliTrace 事件和呼叫資訊 (僅限 managed)**。
 
 呼叫資訊不是目前適用於.NET Core 和 ASP.NET Core 應用程式。 
 
@@ -65,11 +63,11 @@ Visual Studio Enterprise 版本 (而非 Visual Studio Professional 或 Community
 > [!TIP]
 > 預設不會啟用此選項，因為這樣會增加可觀的額外負荷。 IntelliTrace 不只需要攔截您應用程式所進行的每個方法呼叫，還需要在將它顯示在螢幕上或將它保存到磁碟時處理更大的資料集。
 >
-> 限制 IntelliTrace 所記錄的事件清單，以及將所收集的模組數目保持為最小值，即可減少效能額外負荷。 如需詳細資訊，請參閱 <<c0> [ 控制多少呼叫資訊 IntelliTrace 記錄](../debugger/intellitrace-features.md#ControlCallData)。
+> 限制 IntelliTrace 所記錄的事件清單，以及將所收集的模組數目保持為最小值，即可減少效能額外負荷。 如需詳細資訊，請參閱[控制 IntelliTrace 記錄多少呼叫資訊](../debugger/intellitrace-features.md#ControlCallData)。
 
 ### <a name="use-the-navigation-gutter"></a>使用巡覽邊
 
-您可以使用出現在程式碼視窗左邊的巡覽邊。 如果您沒有看到巡覽邊，請移至**工具 > 選項 > IntelliTrace > 進階**，然後選取**顯示在偵錯模式中的巡覽邊**。
+您可以使用出現在程式碼視窗左邊的巡覽邊。 如果您看不到巡覽邊，請移至 [工具] > [選項] > [IntelliTrace] > [進階]，然後選取 [在偵錯模式中顯示巡覽邊]。
 
 巡覽邊可讓您以歷程偵錯模式向前及向後移動方法呼叫和事件。 如需歷程偵錯的詳細資訊，請參閱[歷程偵錯](../debugger/historical-debugging.md)。 它有一些命令：
 
@@ -78,32 +76,32 @@ Visual Studio Enterprise 版本 (而非 Visual Studio Professional 或 Community
 |**在此設定偵錯工具內容**|將偵錯內容設定為它所在的呼叫時間範圍。<br /><br /> 這個圖示只會出現在目前呼叫堆疊上。|
 |**返回呼叫位置**|將游標和偵錯內容向後移至呼叫目前函式的位置。<br /><br /> 如果您使用 [即時偵錯] 模式，此命令會開啟 [歷程偵錯]。 如果您導覽回到原始執行中斷，則會關閉 [歷程偵錯] 並開啟 [即時偵錯]。|
 |**移至上一個呼叫或 IntelliTrace 事件**|將游標和偵錯內容向後移至上一個呼叫或事件。<br /><br /> 如果您使用 [即時偵錯] 模式，此命令會開啟 [歷程偵錯]。|
-|**中的步驟**|逐步執行目前選取的函式。<br /><br /> 只有在您使用 [歷程偵錯] 模式時，才能使用這個命令。|
-|**請移至下一個呼叫或 IntelliTrace 事件**|將指標和偵錯內容向前移至存在 IntelliTrace 資料的下一個呼叫或事件。<br /><br /> 只有在您使用 [歷程偵錯] 模式時，才能使用這個命令。|
+|**逐步執行**|逐步執行目前選取的函式。<br /><br /> 只有在您使用 [歷程偵錯] 模式時，才能使用這個命令。|
+|**移至下一個呼叫或 IntelliTrace 事件**|將指標和偵錯內容向前移至存在 IntelliTrace 資料的下一個呼叫或事件。<br /><br /> 只有在您使用 [歷程偵錯] 模式時，才能使用這個命令。|
 |**移至即時模式**|返回 [即時偵錯] 模式。|
 
 ### <a name="search-for-a-line-or-method-in-intellitrace"></a>在 IntelliTrace 中搜尋某行或方法
 
-只有在已啟用方法呼叫資訊時，才能搜尋方法。 您可以搜尋特定行或方法的 IntelliTrace 歷程。 雖然偵錯工具執行停止時，若要查看內容功能表中，函式主體內按一下滑鼠右鍵，然後按一下**搜尋的這一行中 IntelliTrace**或**搜尋為此方法在 IntelliTrace**。
+只有在已啟用方法呼叫資訊時，才能搜尋方法。 您可以搜尋特定行或方法的 IntelliTrace 歷程。 偵錯工具執行停止時，以滑鼠右鍵按一下函式主體來查看操作功能表，然後按一下 [在 IntelliTrace 中搜尋這一行] 或 [在 IntelliTrace 中搜尋這個方法]。
 
-### <a name="ControlCallData"></a> 控制多少呼叫資訊的 IntelliTrace 記錄
+### <a name="ControlCallData"></a> 控制 IntelliTrace 記錄多少呼叫資訊
 
-IntelliTrace 預設會記錄您方案所使用之所有模組的資訊。 您可以設定 IntelliTrace 只記錄您感興趣之模組的呼叫資訊。 在 **工具 > 選項 > IntelliTrace > 模組**，您可以指定要包含的模組或要從 IntelliTrace 排除的模組。 IntelliTrace 只會收集源自所指定模組的事件，以及在您感興趣的模組內發生的方法呼叫。
+IntelliTrace 預設會記錄您方案所使用之所有模組的資訊。 您可以設定 IntelliTrace 只記錄您感興趣之模組的呼叫資訊。 在 [工具] > [選項] > [IntelliTrace] > [模組] 中，您可以指定要包括的模組或要從 IntelliTrace 排除的模組。 IntelliTrace 只會收集源自所指定模組的事件，以及在您感興趣的模組內發生的方法呼叫。
 
 若要加入多個模組，請在字串開頭或結尾使用萬用字元 *。 模組名稱必須使用檔案名稱，而非組件名稱。 不接受檔案路徑。
 
 嘗試將模組數目保持為最小值。 因為要收集的資料比較少，所以效能會更好。 因為通過的資料較少，所以 UI 中的雜訊也會較少。
 
-## <a name="SaveSession"></a> 將 IntelliTrace 資料儲存至檔案
+## <a name="SaveSession"></a> 將 IntelliTrace 資料儲存至檔案 (C#，Visual Basic、 c + +)
 
-您可以將儲存 IntelliTrace 已收集的資料移至**偵錯 > IntelliTrace > 儲存 IntelliTrace 工作階段**時進行偵錯，並在應用程式處於中斷狀態。 已停用此功能表項目，因此，如果應用程式仍在執行，或您已停止偵錯，則無法儲存 IntelliTrace 已收集的資料。
+如果您正在進行偵錯，而且應用程式處於中斷狀態，則可以移至 [偵錯] > [IntelliTrace] > [儲存 IntelliTrace 工作階段] 來儲存 IntelliTrace 已收集的資料。 已停用此功能表項目，因此，如果應用程式仍在執行，或您已停止偵錯，則無法儲存 IntelliTrace 已收集的資料。
 
-您可以設定 IntelliTrace 自動儲存至檔案，方法是前往**工具 > 選項 > IntelliTrace > 進階**，然後選取**存放區的 IntelliTrace 記錄儲存在此目錄**。 您也可以設定為產生的檔案所設定的大小，而這樣會讓 IntelliTrace 在空間不足時覆寫較舊的資料。 自動儲存 IntelliTrace 工作階段時，以及 Visual Studio 裝載處理序 (vshost.exe) 開啟時，Visual Studio 會針對每個工作階段建立兩個檔案。
+移至 [工具] > [選項] > [IntelliTrace] > [進階]，然後選取 [將 IntelliTrace 記錄儲存在這個目錄]，即可設定 IntelliTrace 自動儲存至檔案。 您也可以設定為產生的檔案所設定的大小，而這樣會讓 IntelliTrace 在空間不足時覆寫較舊的資料。 自動儲存 IntelliTrace 工作階段時，以及 Visual Studio 裝載處理序 (vshost.exe) 開啟時，Visual Studio 會針對每個工作階段建立兩個檔案。
 
 > [!TIP]
-> 若要節省磁碟空間，請關閉自動儲存檔案，當您不再需要它們。 系統不會刪除所有現有檔案。 您一律可以從內容功能表依需要儲存至檔案。
+> 為了節省磁碟空間，當您不再需要它們時，請關閉自動儲存檔案。 系統不會刪除所有現有檔案。 您一律可以從內容功能表依需要儲存至檔案。
 
-將 IntelliTrace 資料儲存至檔案時，IntelliTrace 從中收集的每個處理序都會有一個 .itrace 檔案。 您接著可以開啟 Visual Studio 中.itrace 檔案，方法是前往**檔案 > 開啟 > 檔案**並從 [開啟檔案] 對話方塊中選取.itrace 檔案。 如需詳細資訊，請參閱 <<c0> [ 儲存的 IntelliTrace 資料的使用](../debugger/using-saved-intellitrace-data.md)。
+將 IntelliTrace 資料儲存至檔案時，IntelliTrace 從中收集的每個處理序都會有一個 .itrace 檔案。 之後，移至 [檔案] > [開啟] > [檔案]，然後從 [開啟檔案] 對話方塊中選取 .itrace 檔案，即可在 Visual Studio 中開啟 .itrace 檔案。 如需詳細資訊，請參閱[使用儲存的 IntelliTrace 資料](../debugger/using-saved-intellitrace-data.md)。
 
 ## <a name="blogs"></a>部落格
 
@@ -131,4 +129,4 @@ IntelliTrace 預設會記錄您方案所使用之所有模組的資訊。 您可
 
 [IntelliTrace 經驗](https://channel9.msdn.com/Series/Visual-Studio-2015-Enterprise-Videos/IntelliTrace-Experience)
 
-[Microsoft Visual Studio 中的 IntelliTrace 歷程偵錯 Ultimate 2015](https://channel9.msdn.com/events/Ignite/2015/BRK3716)
+[Historical Debugging with IntelliTrace in Microsoft Visual Studio Ultimate 2015](https://channel9.msdn.com/events/Ignite/2015/BRK3716) (在 Microsoft Visual Studio Ultimate 2015 中使用 IntelliTrace 進行歷程偵錯)

@@ -14,15 +14,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 3330c86c84318be68619a8d031a034b33faa7fd1
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: 1b30675b126f6ed50022f4996cbad9de9226eb59
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52305659"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54269913"
 ---
 # <a name="bind-wpf-controls-to-a-wcf-data-service"></a>將 WPF 控制項繫結至 WCF 資料服務
 
@@ -80,7 +79,7 @@ WCF 資料服務中建立專案，以開始此逐步解說：
 
 ## <a name="create-an-entity-data-model-for-the-service"></a>建立實體資料模型服務
 
-若要使用 WCF 資料服務公開至應用程式的資料，您必須定義服務的資料模型。 WCF 資料服務支援兩種類型的資料模型： 實體資料模型，並使用實作的 common language runtime (CLR) 物件所定義的自訂資料模型<xref:System.Linq.IQueryable%601>介面。 在此逐步解說中，您要建立資料模型的實體資料模型。
+若要使用 WCF 資料服務公開至應用程式的資料，您必須定義服務的資料模型。 WCF 資料服務支援兩種類型的資料模型：實體資料模型，並使用實作的 common language runtime (CLR) 物件所定義的自訂資料模型<xref:System.Linq.IQueryable%601>介面。 在此逐步解說中，您要建立資料模型的實體資料模型。
 
 1. 在 [專案]  功能表中，按一下 [加入新項目] 。
 
@@ -231,7 +230,7 @@ WCF 資料服務中建立專案，以開始此逐步解說：
 
 您可以使用服務 proxy 物件來從服務載入銷售資料。 然後將傳回的資料指派給資料來源<xref:System.Windows.Data.CollectionViewSource>WPF 視窗中。
 
-1. 在設計師中，建立`Window_Loaded`事件處理常式，按兩下所讀取的文字： **MainWindow**。
+1. 在設計師中，若要建立`Window_Loaded`事件處理常式，按兩下所讀取的文字：**MainWindow**。
 
 2. 以下列程式碼取代事件處理常式。 確認您是使用開發電腦的本機主機位址，取代此程式碼中的 *localhost* 位址。
 
@@ -285,7 +284,7 @@ WCF 資料服務中建立專案，以開始此逐步解說：
 
 3. 在 [方案總管] 中，以滑鼠右鍵按一下 **AdventureWorksSalesEditor**。
 
-4. 在操作功能表的 [偵錯] 下方，按一下 [啟動新執行個體]。
+4. （操作功能表），以滑鼠右鍵按一下功能表底下**偵錯**，按一下**開始新執行個體**。
 
      應用程式隨即執行。 驗證下列各項：
 
@@ -305,9 +304,9 @@ WCF 資料服務中建立專案，以開始此逐步解說：
 
 完成此逐步解說後，您可以執行下列相關的工作：
 
-- 了解如何使用 Visual Studio 中的 [資料來源] 視窗，將 WPF 控制項繫結程序至其他資料來源類型。 如需詳細資訊，請參閱 <<c0> [ 繫結 WPF 控制項新增至資料集](../data-tools/bind-wpf-controls-to-a-dataset.md)。
+- 了解如何使用 Visual Studio 中的 [資料來源] 視窗，將 WPF 控制項繫結至其他資料來源類型。 如需詳細資訊，請參閱 <<c0> [ 繫結 WPF 控制項新增至資料集](../data-tools/bind-wpf-controls-to-a-dataset.md)。
 
-- 了解如何使用 Visual Studio 中的 [資料來源] 視窗，顯示 WPF 控制項中的相關資料 (也就是具有父子關聯性中的資料)。 如需詳細資訊，請參閱 <<c0> [ 逐步解說： 在 WPF 應用程式中顯示相關的資料](../data-tools/display-related-data-in-wpf-applications.md)。
+- 了解如何使用 Visual Studio 中的 [資料來源] 視窗，顯示 WPF 控制項中的相關資料 (也就是父子關聯性中的資料)。 如需詳細資訊，請參閱[逐步解說：在 WPF 應用程式中顯示相關資料](../data-tools/display-related-data-in-wpf-applications.md)。
 
 ## <a name="see-also"></a>另請參閱
 
