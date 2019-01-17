@@ -1,5 +1,5 @@
 ---
-title: False (Windows Scrip 技術) |Microsoft 文件
+title: False (Windows Script 技術) |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -24,14 +24,14 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 8ddf7ae6d3328f00ea3d143251f7fa44e364560a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24632848"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54344495"
 ---
 # <a name="false-windows-script-technologies"></a>False (Windows Script 技術)
-**False**關鍵字的值等於 0。  
+**False**關鍵字有等於 0 的值。  
   
 ## <a name="see-also"></a>另請參閱  
  [True 關鍵字](../../javascript/misc/true-keyword.md)

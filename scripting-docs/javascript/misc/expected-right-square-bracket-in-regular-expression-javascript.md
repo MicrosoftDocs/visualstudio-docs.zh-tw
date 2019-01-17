@@ -21,11 +21,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: e0b34ae4bdf04d261647b9096cda13eec75617c5
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53804412"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349422"
 ---
 # <a name="expected--in-regular-expression-javascript"></a>在規則運算式中必須是 ']' (JavaScript)
 您嘗試建立的規則運算式比對的字元類別，但並未包含右方括號。 個別的常值字元的組合可以組成的字元類別，藉由將它們放在方括號內。 字元類別符合其中任何一個字元。 例如，/ [abc] / 符合任何一個字母"a"、"b"或"c"。  

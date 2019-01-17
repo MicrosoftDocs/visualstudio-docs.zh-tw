@@ -1,5 +1,5 @@
 ---
-title: 動態指令碼介面 |Microsoft 文件
+title: 動態指令碼介面 |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -15,17 +15,17 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fc3bc5ed2b78f2577fdd5a9a715a210240e91e96
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 7607616b2cba72010cc25bcfccc5a373de606302
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24641468"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54344326"
 ---
 # <a name="active-script-interfaces"></a>動態指令碼的介面
-ActivScp.h 標頭檔提供介面、 列舉和此章節中列出的錯誤碼。  
+ActivScp.h 標頭檔會提供介面、 列舉和這一節所列的錯誤碼。  
   
-## <a name="in-this-section"></a>本章節內容  
+## <a name="in-this-section"></a>本節內容  
   
 -   [動態指令碼的常數、列舉和錯誤碼](../../winscript/reference/active-script-constants-enumerations-and-error-codes.md)  
   
@@ -37,11 +37,11 @@ ActivScp.h 標頭檔提供介面、 列舉和此章節中列出的錯誤碼。
   
 -   [IActiveScriptParse 介面](../../winscript/reference/iactivescriptparse.md)  
   
--   [IActiveScriptParse32 介面](../../winscript/reference/iactivescriptparse32.md)  
+-   [IActiveScriptParse32 Interface](../../winscript/reference/iactivescriptparse32.md)  
   
 -   [IActiveScriptParseProcedure 介面](../../winscript/reference/iactivescriptparseprocedure.md)  
   
--   [IActiveScriptParseProcedure32 介面](../../winscript/reference/iactivescriptparseprocedure32.md)  
+-   [IActiveScriptParseProcedure32 Interface](../../winscript/reference/iactivescriptparseprocedure32.md)  
   
 -   [IActiveScriptParseProcedureOld 介面](../../winscript/reference/iactivescriptparseprocedureold-interface.md)  
   

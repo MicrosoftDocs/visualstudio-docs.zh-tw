@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptStats 介面 |Microsoft 文件
+title: IActiveScriptStats 介面 |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,21 +14,21 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d459b89bde609dfdf5963d4b6b10b24db4706a7e
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: da69920ca78ad47e283fa8f99a28d037edbbe44d
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725048"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54350137"
 ---
 # <a name="iactivescriptstats-interface"></a>IActiveScriptStats 介面
-可讓主應用程式查詢執行的指令碼的統計資料。 主機可以使用這項資訊來判斷是否指令碼已花費太長時間完成。  
+可讓主應用程式能夠查詢執行的指令碼的統計資料。 主應用程式可以使用這項資訊來判斷是否指令碼已花費太多時間才能完成。  
   
- 除了繼承自`IUnknown`、`IActiveScriptStats`介面會公開下列方法。  
+ 除了繼承自方法`IUnknown`，則`IActiveScriptStats`介面會公開下列方法。  
   
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法  
   
-|方法|說明|  
+|方法|描述|  
 |------------|-----------------|  
 |[IActiveScriptStats::GetStat](../../winscript/reference/iactivescriptstats-getstat.md)|傳回其中一個標準的指令碼統計資料。|  
 |[IActiveScriptStats::GetStatEx](../../winscript/reference/iactivescriptstats-getstatex.md)|傳回自訂指令碼統計資料。|  

@@ -21,11 +21,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: eabe34fdcb4551fc8bc794b84875a10a32e5ec33
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53804334"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54347199"
 ---
 # <a name="expected-"></a>必須是 ';'
 您嘗試將一個以上的陳述式放在一行中，但沒有不以分號隔開。 分號用來終止陳述式。 雖然您可以將多個陳述式放在一行上，每個必須以分號分隔。  

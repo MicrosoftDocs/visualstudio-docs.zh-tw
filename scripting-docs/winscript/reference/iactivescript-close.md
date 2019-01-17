@@ -1,5 +1,5 @@
 ---
-title: IActiveScript::Close |Microsoft Docs
+title: IActiveScript::Close | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -19,11 +19,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 886ab1c4c39cf7c64571862bfd28f2fbd1062694
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54097041"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54348799"
 ---
 # <a name="iactivescriptclose"></a>IActiveScript::Close
 使指令碼引擎放棄任何目前載入的指令碼，其狀態，並釋放任何它對其他物件，因此輸入 已關閉的狀態的介面指標。 事件接收器、 立即執行的指令碼的文字，並已在進行中的巨集引動過程完成之前的狀態變更 (使用[iactivescript:: Interruptscriptthread](../../winscript/reference/iactivescript-interruptscriptthread.md)取消執行中指令碼的執行緒)。 介面會發行以避免循環參考問題之前，必須呼叫這個方法所建立的主機。  

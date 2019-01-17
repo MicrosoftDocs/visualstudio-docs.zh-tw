@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptAuthorProcedure 介面 |Microsoft 文件
+title: IActiveScriptAuthorProcedure Interface | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,21 +14,21 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5676044e9adb17e0c477c40f9045c4a2bb656b89
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: bec6696a40868ad3cc64cf41efe5ab6bfc9d95ec
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24645628"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349617"
 ---
 # <a name="iactivescriptauthorprocedure-interface"></a>IActiveScriptAuthorProcedure 介面
-除了繼承自`IUnknown`、`IScriptAuthorProcedure`介面會公開下列方法。  
+除了繼承自方法`IUnknown`，則`IScriptAuthorProcedure`介面會公開下列方法。  
   
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法  
   
-|方法|說明|  
+|方法|描述|  
 |------------|-----------------|  
-|[IActiveScriptAuthorProcedure::ParseProcedureText](../../winscript/reference/iactivescriptauthorprocedure-parseproceduretext.md)|剖析程式碼的程序，將程式碼程序的文字加入指令碼撰寫引擎，並建立`IScriptEntry`對應至程式碼的程序的物件。|  
+|[IActiveScriptAuthorProcedure::ParseProcedureText](../../winscript/reference/iactivescriptauthorprocedure-parseproceduretext.md)|剖析的程式碼程序，將程式碼程序的文字加入指令碼撰寫引擎，並建立`IScriptEntry`對應至程式碼程序的物件。|  
   
 ## <a name="see-also"></a>另請參閱  
  [動態指令碼撰寫的介面](../../winscript/reference/active-script-authoring-interfaces.md)

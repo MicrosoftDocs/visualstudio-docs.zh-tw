@@ -1,5 +1,5 @@
 ---
-title: IDebugApplicationThreadEvents110::OnSuspendForBreakPoint |Microsoft 文件
+title: IDebugApplicationThreadEvents110::OnSuspendForBreakPoint |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,18 +14,18 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 435ea678133755d02ab9a3f757f0947a83278e45
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: a3ce1510ad9e7b4560a7aaafb8d65d5b0e6143cf
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725688"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349630"
 ---
 # <a name="idebugapplicationthreadevents110onsuspendforbreakpoint"></a>IDebugApplicationThreadEvents110::OnSuspendForBreakPoint
-判斷執行緒有完全的停用中斷點，且還未有恢復正常執行。  
+判斷執行緒是否具有完整的停用中斷點，並還沒有已恢復正常執行。  
   
 > [!IMPORTANT]
->  [IDebugApplicationThreadEvents110 介面](../../winscript/reference/idebugapplicationthreadevents110-interface.md)會實作由 PDM v11.0 和更新版本。 可在 activdbg100.h 中找到。  
+>  [IDebugApplicationThreadEvents110 介面](../../winscript/reference/idebugapplicationthreadevents110-interface.md)是實作由 PDM v11.0 和更新版本。 可在 activdbg100.h 中找到。  
   
 ## <a name="syntax"></a>語法  
   

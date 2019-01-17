@@ -1,5 +1,5 @@
 ---
-title: 必須是物件 |Microsoft 文件
+title: 必須是物件 |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -20,12 +20,12 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6add25325653627d23eb699ab53c0f2799c8322f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 49d66c82081af06bf23a43922629a579a6d6f590
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24632808"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54345782"
 ---
 # <a name="object-expected"></a>必須是物件
 您嘗試對非 `Object` 類型的物件叫用方法或屬性，或在需要 `Object` 時傳遞非 `Object` 類型的引數。  

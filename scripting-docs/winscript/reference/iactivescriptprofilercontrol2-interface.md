@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptProfilerControl2 介面 |Microsoft 文件
+title: IActiveScriptProfilerControl2 Interface | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,22 +14,22 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9bc0dfa31b37a6bf99427c8eddfe2bd038da9b9d
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 9dad5d4a90eecdc6c93d86df9f9b18273bc471a4
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24724748"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349760"
 ---
 # <a name="iactivescriptprofilercontrol2-interface"></a>IActiveScriptProfilerControl2 介面
-提供方法，新增啟動或停止執行指令碼時，程式碼剖析的能力。  
+提供新增的功能，來啟動或停止執行指令碼時，程式碼剖析的方法。  
   
 ## <a name="methods"></a>方法  
   
-|方法|說明|  
+|方法|描述|  
 |------------|-----------------|  
-|[IActiveScriptProfilerControl2::CompleteProfilerStart](../../winscript/reference/iactivescriptprofilercontrol2-completeprofilerstart.md)|您已經啟動上所有適用的指令碼引擎的分析通知分析工具。 這可讓您取得完整的呼叫堆疊，如果[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]啟動程式碼剖析時執行。|  
-|[IActiveScriptProfilerControl2::PrepareProfilerStop](../../winscript/reference/iactivescriptprofilercontrol2-prepareprofilerstop.md)|通知分析工具，您要停止分析上所有適用的指令碼引擎。 這可讓您取得完整的呼叫堆疊，如果[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]停止程式碼剖析時執行。|  
+|[IActiveScriptProfilerControl2::CompleteProfilerStart](../../winscript/reference/iactivescriptprofilercontrol2-completeprofilerstart.md)|通知分析工具，您已開始分析在所有適用的指令碼引擎。 這可讓您取得的完整呼叫堆疊，如果[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]啟動程式碼剖析時執行。|  
+|[IActiveScriptProfilerControl2::PrepareProfilerStop](../../winscript/reference/iactivescriptprofilercontrol2-prepareprofilerstop.md)|您要停止分析在所有適用的指令碼引擎通知分析工具。 這可讓您取得的完整呼叫堆疊，如果[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]停止程式碼剖析時執行。|  
   
 ## <a name="see-also"></a>另請參閱  
  [IActiveScriptProfilerControl 介面](../../winscript/reference/iactivescriptprofilercontrol-interface.md)   

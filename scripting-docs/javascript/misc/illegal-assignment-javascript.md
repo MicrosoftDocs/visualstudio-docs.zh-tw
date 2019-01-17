@@ -1,5 +1,5 @@
 ---
-title: 無效的指派 (JavaScript) |Microsoft 文件
+title: 無效的指派 (JavaScript) |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -21,18 +21,18 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: ed35b2751ff9dfbde62845caaf874cccfbc05805
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24632888"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54350150"
 ---
 # <a name="illegal-assignment-javascript"></a>無效的指派 (JavaScript)
-您嘗試指派值給唯讀的識別項。 您無法將值指派至唯讀的識別項。 例如，主機所定義的物件與外部 COM 物件。  
+您嘗試指派值給唯讀模式的識別項。 您無法將值指派為唯寫的識別項。 例如，主應用程式所定義的物件與外部 COM 物件。  
   
 ### <a name="to-correct-this-error"></a>更正這個錯誤  
   
--   請勿指派值給唯讀識別項。  
+-   不要指派值給唯讀識別項。  
   
 ## <a name="see-also"></a>另請參閱  
  [設定運算子 (=)](../../javascript/reference/assignment-operator-decrement-equal-javascript.md)

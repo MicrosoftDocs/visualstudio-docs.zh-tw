@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptWinRTErrorDebug::GetRestrictedErrorReference |Microsoft 文件
+title: IActiveScriptWinRTErrorDebug::GetRestrictedErrorReference |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,18 +14,18 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 36d1fecfa1069836a3a1eb41adc8fb58a16e1dbc
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: f801171848537a564ec30e2677a716e6ee7f6cc9
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24724978"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54344131"
 ---
 # <a name="iactivescriptwinrterrordebuggetrestrictederrorreference"></a>IActiveScriptWinRTErrorDebug::GetRestrictedErrorReference
-如果有的話，Windows 執行階段傳回限制參考錯誤。  
+如果有的話，會傳回 Windows 執行階段會限制參考錯誤。  
   
 > [!IMPORTANT]
->  [IActiveScriptWinRTErrorDebug 介面](../../winscript/reference/iactivescriptwinrterrordebug-interface.md)會實作由 PDM v11.0 和更新版本。 可在 activdbg100.h 中找到。  
+>  [IActiveScriptWinRTErrorDebug 介面](../../winscript/reference/iactivescriptwinrterrordebug-interface.md)是實作由 PDM v11.0 和更新版本。 可在 activdbg100.h 中找到。  
   
 ## <a name="syntax"></a>語法  
   
