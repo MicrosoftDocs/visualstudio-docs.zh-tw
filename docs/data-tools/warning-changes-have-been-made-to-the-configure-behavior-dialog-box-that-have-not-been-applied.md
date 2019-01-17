@@ -9,12 +9,12 @@ manager: douge
 ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: f53164bd4ffe74be2715d89215e6c9c1b526f2bb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: 8e0d7c00cf902baa41586301ff338ebfef78c5aa
+ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53847833"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54204053"
 ---
 # <a name="warning-changes-have-been-made-to-the-configure-behavior-dialog-box-that-have-not-been-applied"></a>警告:尚未套用的設定行為對話方塊已經變更了
 
@@ -22,13 +22,11 @@ ms.locfileid: "53847833"
 
 **設定行為** 對話方塊可讓您設定`Insert`， `Update`，和`Delete`可用的所有類別的行為。 當選取新的 [類別] 和 [行為] 組合，並且尚未套用先前的變更時，就會出現這則訊息。
 
-## <a name="to-apply-the-change-and-continue"></a>若要套用變更再繼續
+## <a name="change-options"></a>變更選項
 
-- 按一下 [是]，將變更套用至選取的 [類別] 和 [行為]。
+- 若要套用變更並繼續，請按一下**是**。 在變更套用至所選**類別**並**行為**。
 
-## <a name="to-cancel-the-previous-change-and-continue"></a>若要取消先前的變更再繼續
-
-- 按一下 [否] 取消所選取 [類別] 和 [行為] 的變更。
+- 若要取消先前的變更，並繼續，請按一下**No**。
 
 ## <a name="see-also"></a>另請參閱
 

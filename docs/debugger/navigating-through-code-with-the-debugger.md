@@ -15,22 +15,22 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 66478505fe59ef65eb703fef6be8941deebe3d49
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6e983137b4d66ff568ba706353d950470787e3a2
+ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53931420"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54204481"
 ---
 # <a name="navigate-through-code-with-the-visual-studio-debugger"></a>Visual Studio 偵錯工具巡覽程式碼
 
-Visual Studio 偵錯工具可協助您瀏覽程式碼來檢查應用程式的狀態，並顯示其執行流程。 若要快速取得您想要檢查的程式碼，您可以使用鍵盤快速鍵、 偵錯 命令、 中斷點及其他功能。 熟悉偵錯工具巡覽命令和快速鍵可以更快速且輕易地尋找和解決應用程式的問題。  如果這是您第一次您嘗試偵錯程式碼時，您可能想要讀取[修正 bug，藉由撰寫更好C#程式碼](../debugger/write-better-code-with-visual-studio.md)並[偵錯適用於徹底初學者](../debugger/debugging-absolute-beginners.md)再通過這篇文章。
+Visual Studio 偵錯工具可協助您瀏覽程式碼來檢查應用程式的狀態，並顯示其執行流程。 若要快速取得您想要檢查的程式碼，您可以使用鍵盤快速鍵、 偵錯 命令、 中斷點及其他功能。 熟悉偵錯工具巡覽命令和快速鍵可以更快速且輕易地尋找和解決應用程式的問題。  如果這是您第一次嘗試對程式碼進行偵錯，建議您先閱讀[適用於完全初學者的偵錯](../debugger/debugging-absolute-beginners.md)和[透過撰寫更好的 C# 程式碼來修正 Bug](../debugger/write-better-code-with-visual-studio.md)，再瀏覽本文。
   
 ## <a name="basic-debugging"></a>基本偵錯  
 
 若要附加偵錯工具啟動應用程式，請按**F5**，選取**偵錯** > **開始偵錯**，或在 Visual Studio 工具列中選取的綠色箭頭。  
   
- ![DBG&#95;基本概念&#95;啟動&#95;偵錯](../debugger/media/dbg_basics_start_debugging.png "DBG_Basics_Start_Debugging")  
+ ![DBG&#95;Basics&#95;Start&#95;Debugging](../debugger/media/dbg_basics_start_debugging.png "DBG_Basics_Start_Debugging")  
   
 當您偵錯時，黃色反白顯示就會顯示的一行程式碼會執行下一步。  
   

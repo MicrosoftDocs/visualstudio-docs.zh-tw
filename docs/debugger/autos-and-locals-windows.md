@@ -15,16 +15,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e23f61f7de4b2723e7be18b6beb76b17fd278cf2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f84b18cd3d4bfbae949ba4dd3199bace6604148f
+ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53947409"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54204480"
 ---
 # <a name="inspect-variables-in-the-autos-and-locals-windows"></a>檢查 [自動變數] 和 [區域變數] 視窗中的變數
 
-**自動變數**並**區域變數**在偵錯時，windows 會顯示變數的值。 在偵錯工作階段期間，才可以使用 windows。 **自動變數**視窗會顯示目前中斷點周圍使用的變數。 **區域變數**視窗會顯示在本機的範圍中，通常是目前函式或方法定義的變數。 如果這是您第一次您嘗試偵錯程式碼時，您可能想要讀取[修正 bug，藉由撰寫更好C#程式碼](../debugger/write-better-code-with-visual-studio.md)並[偵錯適用於徹底初學者](../debugger/debugging-absolute-beginners.md)再通過這篇文章。
+**自動變數**並**區域變數**在偵錯時，windows 會顯示變數的值。 在偵錯工作階段期間，才可以使用 windows。 **自動變數**視窗會顯示目前中斷點周圍使用的變數。 **區域變數**視窗會顯示在本機的範圍中，通常是目前函式或方法定義的變數。 如果這是您第一次嘗試對程式碼進行偵錯，建議您先閱讀[適用於完全初學者的偵錯](../debugger/debugging-absolute-beginners.md)和[透過撰寫更好的 C# 程式碼來修正 Bug](../debugger/write-better-code-with-visual-studio.md)，再瀏覽本文。
 
  **自動變數**視窗可供C#，Visual Basic、 c + + 和 Python 程式碼，但不適用於 JavaScript 或F#。
   
@@ -39,7 +39,7 @@ ms.locfileid: "53947409"
 
 陣列和物件會顯示在**自動變數**並**區域變數**windows 以樹狀結構控制項。 選取的可展開檢視來顯示欄位和屬性的變數名稱左邊的箭號。 以下是範例<xref:System.IO.FileStream?displayProperty=fullName>中的物件**區域變數**視窗：
 
-![[區域變數] FileStream](../debugger/media/locals-filestream.png "區域變數 FileStream")
+![Locals-FileStream](../debugger/media/locals-filestream.png "Locals-FileStream")
 
 中的紅色值**區域變數**或是**自動變數**視窗表示值已在上次評估以後。 變更可能是從先前的偵錯工作階段，或因為您已變更 視窗中的值。
 
@@ -89,7 +89,7 @@ ms.locfileid: "53947409"
 
    在該行設定中斷點`c = 3;`，並開始偵錯工具。 當執行暫停**自動變數**視窗會顯示：
 
-   ![[自動變數] CSharp](../debugger/media/autos-csharp.png "自動變數 CSharp")
+   ![Autos-CSharp](../debugger/media/autos-csharp.png "Autos-CSharp")
 
    值`c`為 0，因為列`c = 3`尚未執行。
 
@@ -109,7 +109,7 @@ ms.locfileid: "53947409"
 
     在該行設定中斷點`e = 5;`並執行偵錯工具。 當執行停止時，**自動變數**視窗會顯示：
 
-    ![[自動變數] c + +](../debugger/media/autos-cplus.png "自動變數-c + +")
+    ![Autos-C++](../debugger/media/autos-cplus.png "Autos-C++")
 
     變數`e`未初始化，因為列`e = 5`尚未執行。
 

@@ -12,14 +12,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bda05f23963db7729e8684eed9a65cfc8b0a3bd6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 882d357b606ec5bb0419c88dc9c996ccd4a749a6
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53820912"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227716"
 ---
-# <a name="using-the-intellitrace-stand-alone-collector"></a>使用 IntelliTrace 獨立收集器
+# <a name="using-the-intellitrace-stand-alone-collector-c-visual-basic"></a>使用 IntelliTrace 獨立收集器 (C#，Visual Basic)
+
 **IntelliTrace 獨立收集器** 可讓您收集生產伺服器或其他環境上 App 的 IntelliTrace 診斷資料，而不需要在目標電腦上安裝 Visual Studio，而且不需要變更目標系統的環境。 IntelliTrace 獨立收集器適用於 Web、Sharepoint、WPF 和 Windows Forms App。 完成資料收集時，只要刪除收集器，就可以將其解除安裝。
 
  觀看 IntelliTrace 動作：[收集和分析生產環境偵錯 （Channel 9 影片） 中的 IntelliTrace 資料](http://go.microsoft.com/fwlink/?LinkID=251851)
@@ -77,7 +78,7 @@ ms.locfileid: "53820912"
 
 ##  <a name="BKMK_Install_the_IntelliTrace_Stand_Alone_Collector"></a> 安裝收集器
 
-1. 在 App 伺服器上，建立收集器目錄，例如：**C:\IntelliTraceCollector**
+1. 在您的應用程式伺服器上，建立收集器目錄，例如：**C:\IntelliTraceCollector**
 
 2. 從 Microsoft 下載中心或從 Visual Studio 2013 Update 3 安裝資料夾取得收集器。 [IntelliTrace Collector for Visual Studio 2013 Update 4](https://www.microsoft.com/en-us/download/details.aspx?id=44909)::
 
@@ -95,7 +96,7 @@ ms.locfileid: "53820912"
 
      1.  從下列資料夾複製 IntelliTraceCollection.cab：
 
-          **..\Microsoft visual Studio 12.0\Common7\IDE\CommonExtensions\Microsoft\IntelliTrace\12.0.0**
+          **..\Microsoft Visual Studio 12.0\Common7\IDE\CommonExtensions\Microsoft\IntelliTrace\12.0.0**
 
      2.  將 IntelliTraceCollection.cab 放入收集器目錄，例如：**C:\IntelliTraceCollector**
 
@@ -118,7 +119,7 @@ ms.locfileid: "53820912"
 
 2.  使用 Windows **icacls** 命令，授與伺服器管理員收集器目錄的完整權限。 例如：
 
-     `icacls "C:\IntelliTraceCollector" /grant "` *\<Domain\AdministratorID >* `":F`
+     `icacls "C:\IntelliTraceCollector" /grant "` *\<Domain\AdministratorID>* `":F`
 
 3.  收集 Web App 或 SharePoint 應用程式的資料：
 
@@ -126,7 +127,7 @@ ms.locfileid: "53820912"
 
          例如：
 
-         `icacls "C:\IntelliTraceCollector" /grant "` *\<Domain\UserID >* `":F`
+         `icacls "C:\IntelliTraceCollector" /grant "` *\<Domain\UserID>* `":F`
 
     2.  將收集器目錄的讀取和執行權限授與 Web App 或 SharePoint 應用程式的應用程式集區。
 
@@ -166,7 +167,7 @@ ms.locfileid: "53820912"
 
 ##  <a name="BKMK_Create_and_Configure_a_Log_File_Directory"></a> 設定 .iTrace 檔案目錄的權限
 
-1. 在 App 伺服器上，建立 .iTrace 檔案目錄，例如：**C:\IntelliTraceLogFiles**
+1. 在您的應用程式伺服器上，建立 .iTrace 檔案目錄，例如：**C:\IntelliTraceLogFiles**
 
    > [!NOTE]
    > - 若要避免讓應用程式變慢，請選擇本機高速磁碟上不是非常活躍的位置。
@@ -212,7 +213,7 @@ ms.locfileid: "53820912"
 
 1.  若要開始收集資料，請以系統管理員身分開啟 PowerShell 命令視窗，然後執行此命令：
 
-     `Start-IntelliTraceCollection` `"` *\<ApplicationPool >* `"`  *\<PathToCollectionPlan >*  *\<FullPathToITraceFileDirectory >*
+     `Start-IntelliTraceCollection` `"` *\<ApplicationPool>* `"` *\<PathToCollectionPlan>* *\<FullPathToITraceFileDirectory>*
 
     > [!IMPORTANT]
     >  執行這個命令之後，請輸入 **Y** ，確認您想要開始收集資料。
@@ -254,7 +255,7 @@ ms.locfileid: "53820912"
 
 1.  若要同時啟動 App 並收集資料，請使用此語法：
 
-     *\<FullPathToIntelliTraceCollectorExecutable >* `\IntelliTraceSC.exe launch /cp:`  *\<PathToCollectionPlan >* `/f:`  *\<FullPathToITraceFileDirectoryAndFileName >*  *\<PathToAppExecutableFileAndFileName >*
+     *\<FullPathToIntelliTraceCollectorExecutable>* `\IntelliTraceSC.exe launch /cp:` *\<PathToCollectionPlan>* `/f:` *\<FullPathToITraceFileDirectoryAndFileName>* *\<PathToAppExecutableFileAndFileName>*
 
      例如，從名稱為 **MyApp**的 App 收集資料：
 
