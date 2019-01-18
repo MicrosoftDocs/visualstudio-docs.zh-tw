@@ -21,11 +21,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 0562fba98055cdb38757a4b638caa34b3bc21456
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53803464"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349305"
 ---
 # <a name="expected-var"></a>必須是 'var'
 必須是 ' var' (ERRnoVar 1034))  

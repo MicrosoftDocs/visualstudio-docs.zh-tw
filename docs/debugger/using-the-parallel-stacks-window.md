@@ -17,14 +17,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ad685fc33c831d37cee955fda7e965ecd65e9bf7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: 4e08171c02288f89e706c80ab6dfd5ef9538318c
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53902055"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227937"
 ---
-# <a name="view-threads-and-tasks-in-the-parallel-stacks-window"></a>在 [平行堆疊] 視窗中檢視執行緒和工作
+# <a name="view-threads-and-tasks-in-the-parallel-stacks-window-c-visual-basic-c"></a>在 [平行堆疊] 視窗中檢視執行緒和工作 (C#，Visual Basic、 c + +)
 
 **平行堆疊**視窗是用於偵錯多執行緒應用程式。 它有幾種檢視：
 

@@ -19,10 +19,10 @@ manager: douge
 ms.workload:
 - multiple
 ms.openlocfilehash: 73dbb479c7f579739d04a2c378fb984fbba1f72b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "53934892"
 ---
 # <a name="how-to-attach-to-script"></a>HOW TO：附加至指令碼
@@ -42,7 +42,7 @@ ms.locfileid: "53934892"
   
 3. 按一下您要附加的處理序。  
   
-4. 在 **附加至**方塊中，您應該會看到**指令碼**或**自動：指令碼**。 如果看到其他項目，請遵照以下步驟：  
+4. 在 **附加至**方塊中，您應該會看到**指令碼**或**自動：指令碼 如果看到其他項目，請遵照以下步驟：  
   
    1.  按一下 [選取] 。  
   
@@ -52,7 +52,7 @@ ms.locfileid: "53934892"
   
 5. 按一下 [附加] 。  
   
-    此時，您可能會看到警告，指出 Internet Explorer 中已停用指令碼偵錯功能。 如果發生此情況，請參閱[警告：已停用指令碼偵錯](../debugger/warning-script-debugging-disabled.md)  
+    此時，您可能會看到警告，指出 Internet Explorer 中已停用指令碼偵錯功能。 如果發生此情況，請參閱[警告：已停用指令碼偵錯  
   
    [可使用的處理序]  清單會在您開啟 [處理序]  對話方塊時自動顯示。 當對話方塊開啟時，處理序可以在背景中啟動和停止。 所以，內容不一定是最新的。 您可以隨時按 [重新整理] 按鈕重新整理該清單，以查看目前的處理序清單。  
   
@@ -61,7 +61,7 @@ ms.locfileid: "53934892"
    所有 [偵錯] 功能表的執行命令都會影響使用中的程式。 您可以從處理序 對話方塊中斷任何偵錯的程式。請參閱[使用中斷點](../debugger/using-breakpoints.md)。  
   
 > [!NOTE]
->  如果您嘗試附加至未受信任的使用者帳戶所擁有的處理序，會出現安全性警告對話方塊確認訊息。 如需詳細資訊，請參閱[安全性警告： 附加至不受信任的使用者所擁有的處理序可能會造成危險。如果下列資訊看起來有問題，或您不確定，不會附加至這個處理序](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md)。  
+>  如果您嘗試附加至未受信任的使用者帳戶所擁有的處理序，會出現安全性警告對話方塊確認訊息。 如需詳細資訊，請參閱[安全性警告：附加至未受信任的使用者所擁有的處理序可能會造成危險。如果下面的資訊看起來有問題，或者您並不確定，請不要附加至此處理序](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md)  
   
  在某些情況下，在終端機服務 (遠端桌面) 工作階段中進行偵錯時，[可使用的處理序] 清單並不會顯示所有可使用的處理序。 在 [!INCLUDE[WinXPSvr](../debugger/includes/winxpsvr_md.md)] (含) 以後版本中，如果您是以受限制的使用者身分執行 Visual Studio，則 [可使用的處理序] 清單不會顯示在工作階段 0 中執行的處理序，因為工作階段 0 是用於服務以及其他包括 w3wp.exe 的伺服器處理序。 可藉由使用系統管理員帳戶來執行 Visual Studio，或是從伺服器主控台 (而非終端機服務工作階段) 執行 Visual Studio，來解決這個問題。 如果這些因應措施都沒有效，第三個方法就是在 Windows 命令列鍵入 vsjitdebugger.exe -p ProcessId 來附加至處理序。 您可以使用 tlist.exe 來判斷處理序 ID。 若要取得 tlist.exe，您可以從 [Windows 硬體開發人員中心](/windows-hardware/drivers/dashboard/)下載並安裝 Debugging Tools for Windows (適用於 Windows 的偵錯工具)。  
   

@@ -17,12 +17,12 @@ manager: douge
 ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 6b1f884018be97e49dfa9c300a2ad126fa185cf4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: 3c3737174843a8b9ff77ecdfb592e1275b88c84c
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53932781"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154391"
 ---
 # <a name="bind-wpf-controls-to-data-in-visual-studio"></a>將 WPF 控制項繫結至 Visual Studio 中的資料
 
@@ -99,7 +99,7 @@ Visual Studio 會產生執行下列工作的 XAML：
 當您將物件或屬性從**資料來源**視窗，以設計工具中，Visual Studio 會產生[!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)]建立資料繫結控制項 （或將現有控制項繫結至物件或屬性）。 不過，Visual Studio 不會產生程式碼，以填入資料的物件。 您必須自行撰寫此程式碼。
 
 > [!NOTE]
-> 自訂類別必須是公用的和，根據預設，具有不含參數的建構函式。 它們 can'tbe 巢狀類別，其語法中有 「 點 」。 如需詳細資訊，請參閱 < [XAML 的 WPF 和自訂類別](/dotnet/framework/wpf/advanced/xaml-and-custom-classes-for-wpf)。
+> 自訂類別必須是公用的和，根據預設，具有不含參數的建構函式。 它們不能有 「 點 」，其語法中的巢狀的類別。 如需詳細資訊，請參閱 < [XAML 的 WPF 和自訂類別](/dotnet/framework/wpf/advanced/xaml-and-custom-classes-for-wpf)。
 
 Visual Studio 會產生[!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)]，會進行下列作業：
 

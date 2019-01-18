@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptProperty |Microsoft 文件
+title: IActiveScriptProperty | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,19 +14,19 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 13603bf00d758a99ba421c4ed2ef23ed30f3c25b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: d0ddf54fe19ec2b9fd682aab939380411e008d1f
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24724568"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349266"
 ---
 # <a name="iactivescriptproperty"></a>IActiveScriptProperty
 `IActiveScriptProperty`介面用來取得和設定組態屬性。  
   
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法  
   
-|方法|說明|  
+|方法|描述|  
 |------------|-----------------|  
 |[GetProperty](../../winscript/reference/iactivescriptproperty-getproperty.md)|取得參數所指定的屬性。|  
 |[SetProperty](../../winscript/reference/iactivescriptproperty-setproperty.md)|設定參數所指定的屬性。|  

@@ -22,14 +22,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2ff1876ba76421818f3a59616cfdf26aae41adb9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 87c1aad4374ca41a9ba89eea4eb7f7cc790a1613
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53867143"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227807"
 ---
-# <a name="walkthrough-debugging-a-parallel-application-in-visual-studio"></a>逐步解說：偵錯在 Visual Studio 中的平行應用程式
+# <a name="walkthrough-debugging-a-parallel-application-in-visual-studio-c-visual-basic-c"></a>逐步解說：偵錯在 Visual Studio 中的平行應用程式 (C#，Visual Basic、 c + +)
+
 本逐步解說顯示如何使用 [平行工作] 和 [平行堆疊] 視窗來偵錯平行應用程式。 這些視窗可協助您了解，並確認使用的程式碼的執行階段行為[Task Parallel Library (TPL)](/dotnet/standard/parallel-programming/task-parallel-library-tpl)或[並行執行階段](/cpp/parallel/concrt/concurrency-runtime)。 本逐步解說提供具有內建中斷點的範例程式碼。 在程式碼中斷之後，本逐步解說會顯示如何使用 [平行工作] 和 [平行堆疊] 視窗來檢查程式碼。  
   
  本逐步解說教導下列工作：  

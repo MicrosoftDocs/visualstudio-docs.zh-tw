@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3ffb9361e06218d3625bfd5d220c38f86a8b70f7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e34d138ec65d2508244c6802ccee67d931e87257
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53867036"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54270202"
 ---
 # <a name="debugging-managed-code"></a>偵錯 Managed 程式碼
 
@@ -86,7 +86,7 @@ ms.locfileid: "53867036"
 
 ## <a name="see-also"></a>另請參閱
 
-[逐步解說：在設計階段偵錯自訂的 Windows Forms 控制項](/dotnet/framework/winforms/controls/walkthrough-debugging-custom-windows-forms-controls-at-design-time)
-[偵錯工具安全性](../debugger/debugger-security.md)
-[Visual Studio 偵錯](../debugger/index.md)
- [偵錯工具功能導覽](../debugger/debugger-feature-tour.md)
+[逐步解說：在設計階段針對自訂 Windows Forms 控制項進行偵錯](/dotnet/framework/winforms/controls/walkthrough-debugging-custom-windows-forms-controls-at-design-time)  
+[偵錯工具安全性](../debugger/debugger-security.md)  
+[Visual Studio 偵錯](../debugger/index.md)  
+[偵錯工具簡介](../debugger/debugger-feature-tour.md)

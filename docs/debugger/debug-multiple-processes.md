@@ -19,14 +19,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e5fbd6c503ef526b1b82736c22e36534bb09a8c7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: ffe28dbf30b1b4f40c69f565cc1e97524ce382b4
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53968575"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227378"
 ---
-# <a name="debug-multiple-processes"></a>對多重處理序進行偵錯
+# <a name="debug-multiple-processes-c-visual-basic-c"></a>偵錯多個處理序 (C#，Visual Basic、 c + +)
 
 Visual Studio 可以有數個程序的方案進行偵錯。 您可以啟動和處理序之間切換、 中斷、 繼續，並逐步執行來源、 停止偵錯，和 end 或從個別的處理序中斷連結。  
 

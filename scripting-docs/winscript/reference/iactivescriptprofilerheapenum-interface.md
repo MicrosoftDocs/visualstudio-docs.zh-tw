@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptProfilerHeapEnum 介面 |Microsoft 文件
+title: IActiveScriptProfilerHeapEnum 介面 |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -12,15 +12,15 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4761e8c7d4cc9c3372c7906e1503b8dbd059ca33
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 14562654e0fd3f3567d6f598f84cf2c966b1b8cb
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24724708"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54344885"
 ---
 # <a name="iactivescriptprofilerheapenum-interface"></a>IActiveScriptProfilerHeapEnum 介面
-迭代器，堆積上的物件的指令碼引擎，蒐集相關聯[iactivescriptprofilercontrol3:: Enumheap 方法](../../winscript/reference/iactivescriptprofilercontrol3-enumheap-method.md)。  
+迭代器，堆積上的物件的指令碼引擎，所蒐集相關聯[IActiveScriptProfilerControl3::EnumHeap 方法](../../winscript/reference/iactivescriptprofilercontrol3-enumheap-method.md)。  
   
 ## <a name="syntax"></a>語法  
   
@@ -30,13 +30,13 @@ interface IActiveScriptProfilerHeapEnum : IUnknown
   
 ## <a name="methods"></a>方法  
  [IActiveScriptProfilerHeapEnum::Next 方法](../../winscript/reference/iactivescriptprofilerheapenum-next-method.md)  
- 取得一組所收集的堆積物件中的下一個或多個物件[iactivescriptprofilercontrol3:: Enumheap 方法](../../winscript/reference/iactivescriptprofilercontrol3-enumheap-method.md)。  
+ 取得下一個或多個物件中的一組所收集的堆積物件[IActiveScriptProfilerControl3::EnumHeap 方法](../../winscript/reference/iactivescriptprofilercontrol3-enumheap-method.md)。  
   
  [IActiveScriptProfilerHeapEnum::GetOptionalInfo 方法](../../winscript/reference/iactivescriptprofilerheapenum-getoptionalinfo-method.md)  
- 取得一組所收集的堆積物件中指定的物件上的選擇性資訊[iactivescriptprofilercontrol3:: Enumheap 方法](../../winscript/reference/iactivescriptprofilercontrol3-enumheap-method.md)。  
+ 取得指定的物件上的選擇性資訊中的一組所收集的堆積物件[IActiveScriptProfilerControl3::EnumHeap 方法](../../winscript/reference/iactivescriptprofilercontrol3-enumheap-method.md)。  
   
  [IActiveScriptProfilerHeapEnum::FreeObjectAndOptionalInfo 方法](../../winscript/reference/iactivescriptprofilerheapenum-freeobjectandoptionalinfo-method.md)  
  釋放指定[PROFILER_HEAP_OBJECT 結構](../../winscript/reference/profiler-heap-object-structure.md)結構和其相關聯[PROFILER_HEAP_OBJECT_OPTIONAL_INFO 結構](../../winscript/reference/profiler-heap-object-optional-info-structure.md)項目。  
   
  [IActiveScriptProfilerHeapEnum::GetNameIdMap](../../winscript/reference/iactivescriptprofilerheapenum-getnameidmap.md)  
- 傳回對應的字串名稱[PROFILER_HEAP_OBJECT_NAME_ID 類型](../../winscript/reference/profiler-heap-object-name-id-type.md)值...
+ 傳回字串的名稱對應至[PROFILER_HEAP_OBJECT_NAME_ID 類型](../../winscript/reference/profiler-heap-object-name-id-type.md)值...

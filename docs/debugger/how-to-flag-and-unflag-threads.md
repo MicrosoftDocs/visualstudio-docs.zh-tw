@@ -15,19 +15,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 52103870207ae93731cc82969abdd377aff2d381
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: 8d6f50827e81d9aecce4878df00f99e155edb04f
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53851400"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227287"
 ---
-# <a name="how-to-flag-and-unflag-threads"></a>HOW TO：將執行緒加上旗標和取消旗標
+# <a name="how-to-flag-and-unflag-threads-c-visual-basic-c"></a>HOW TO：旗標，並將執行緒取消標幟 (C#，Visual Basic、 c + +)
+
 您可以加上旗標的執行緒，您想要特別注意的標記中的圖示**執行緒**，**平行堆疊**（執行緒檢視），**平行監看式**，和**GPU 執行緒**windows。 這個圖示可以協助您和其他人區分已加上旗標的執行緒和其他執行緒。  
   
 已標幟的執行緒也會收到中的特殊待遇**執行緒**清單**偵錯位置**工具列和其他多執行緒偵錯視窗中。 您可以顯示所有執行緒，也只有已標幟的執行緒中**執行緒**清單或在其他視窗。
   
-### <a name="to-flag-or-unflag-a-thread"></a>若要將執行緒加上旗標或取消旗標 
+### <a name="to-flag-or-unflag-a-thread"></a>若要將執行緒加上旗標或取消旗標
   
 - 在 [**執行緒**或是**平行監看式**] 視窗中，尋找您感興趣的執行緒，並按一下旗標圖示，以選取或清除旗標。 
 - 在 [**平行堆疊**] 視窗中，以滑鼠右鍵按一下執行緒或執行緒與選取的群組**旗標 / <thread>** 或是**取消旗標 / <thread>** 。

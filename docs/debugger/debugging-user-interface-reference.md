@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8719ffaae1b1a5b7d8e432fb223d0f75d6b6dcf1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1f68fdea35b8b6291ddb53e604510caf7ffc0ba1
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53988018"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269484"
 ---
 # <a name="debugging-user-interface-reference"></a>偵錯使用者介面參考
 偵錯應用程式時，可能發現下列對話方塊。  
@@ -44,5 +44,5 @@ ms.locfileid: "53988018"
   
 ## <a name="see-also"></a>請參閱  
  [Visual Studio 偵錯](../debugger/index.md)  
- [偵錯工具功能導覽](../debugger/debugger-feature-tour.md)   
+ [偵錯工具簡介](../debugger/debugger-feature-tour.md)   
  [命令視窗](../ide/reference/command-window.md)

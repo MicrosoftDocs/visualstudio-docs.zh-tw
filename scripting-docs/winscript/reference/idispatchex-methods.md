@@ -1,5 +1,5 @@
 ---
-title: IDispatchEx 方法 |Microsoft 文件
+title: IDispatchEx 方法 |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,22 +14,22 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7a57a983acb2d63cfe5f5b2d9b66e1cace7d98d2
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 7abe9f1b7832706040fabb7f65754c518f2b1742
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727638"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54347797"
 ---
 # <a name="idispatchex-methods"></a>IDispatchEx 方法
-以下是 IDispatchEx 方法。  
+IDispatchEx 方法如下。  
   
-## <a name="in-this-section"></a>本章節內容  
+## <a name="in-this-section"></a>本節內容  
  [IDispatchEx::DeleteMemberByDispID](../../winscript/reference/idispatchex-deletememberbydispid.md)  
  刪除成員的 DISPID。  
   
  [IDispatchEx::DeleteMemberByName](../../winscript/reference/idispatchex-deletememberbyname.md)  
- 依名稱刪除成員。  
+ 依名稱刪除的成員。  
   
  [IDispatchEx::GetDispID](../../winscript/reference/idispatchex-getdispid.md)  
  單一成員名稱對應到其對應的 DISPID，則可在後續呼叫 IDispatchEx::InvokeEx。  
@@ -41,13 +41,13 @@ ms.locfileid: "24727638"
  擷取成員的屬性。  
   
  [IDispatchEx::GetNameSpaceParent](../../winscript/reference/idispatchex-getnamespaceparent.md)  
- 擷取命名空間的父物件的介面。  
+ 擷取命名空間物件之父系的介面。  
   
  [IDispatchEx::GetNextDispID](../../winscript/reference/idispatchex-getnextdispid.md)  
  列舉物件的成員。  
   
  [IDispatchEx::InvokeEx](../../winscript/reference/idispatchex-invokeex.md)  
- 提供屬性和 IDispatchEx 物件所公開的方法存取權。  
+ 提供屬性和方法 IDispatchEx 物件所公開的存取。  
   
 ## <a name="related-sections"></a>相關章節  
  [IDispatchEx 介面](../../winscript/reference/idispatchex-interface.md)

@@ -21,11 +21,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 244635605abafc5c0bd22c5203b105aa6e7dc669
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53801972"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54344105"
 ---
 # <a name="expected-catch"></a>必須是 'catch'
 使用例外狀況處理**嘗試**封鎖，但不是撰寫相關聯**攔截**陳述式。 例外狀況處理機制需要的程式碼，可能會失敗，發生例外狀況時，不應執行的程式碼會包裝在內**嘗試**區塊。 內擲回例外狀況**嘗試**封鎖使用**擲回**陳述式，並已攔截外部**嘗試**具有一或多個區塊**攔截**陳述式。  

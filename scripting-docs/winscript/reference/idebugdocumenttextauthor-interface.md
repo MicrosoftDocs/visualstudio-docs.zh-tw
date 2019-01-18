@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentTextAuthor 介面 |Microsoft 文件
+title: IDebugDocumentTextAuthor 介面 |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,22 +14,22 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d29bfa1b3f23ce206e2fe63fd669548a074e3dd6
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: bf84b0b839e1a4a9e29b0de5382776946ecf5b1e
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726548"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54344066"
 ---
 # <a name="idebugdocumenttextauthor-interface"></a>IDebugDocumentTextAuthor 介面
-提供支援編輯文字文件。  
+文字文件所提供的支援編輯。  
   
- 除了繼承自`IDebugDocumentText`、`IDebugDocumentTextAuthor`介面會公開下列方法。  
+ 除了繼承自方法`IDebugDocumentText`，則`IDebugDocumentTextAuthor`介面會公開下列方法。  
   
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法  
   
-|方法|說明|  
+|方法|描述|  
 |------------|-----------------|  
-|[IDebugDocumentTextAuthor::InsertText](../../winscript/reference/idebugdocumenttextauthor-inserttext.md)|將新的文字插入文件。|  
+|[IDebugDocumentTextAuthor::InsertText](../../winscript/reference/idebugdocumenttextauthor-inserttext.md)|文件中插入新的文字。|  
 |[IDebugDocumentTextAuthor::RemoveText](../../winscript/reference/idebugdocumenttextauthor-removetext.md)|移除文件中的文字。|  
 |[IDebugDocumentTextAuthor::ReplaceText](../../winscript/reference/idebugdocumenttextauthor-replacetext.md)|取代文件中的文字。|

@@ -1,8 +1,6 @@
 ---
-title: CRT 偵錯技術 |Microsoft 文件
-ms.custom: ''
+title: CRT 偵錯技術 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - c.runtime.debugging
@@ -21,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 890dec4a47a4dd49fa75521aaad068d331652a92
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 99edc41e86d492e8a38341917de1a5d7543dc93d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31458423"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53889107"
 ---
 # <a name="crt-debugging-techniques"></a>CRT 偵錯技術
 如果您要偵錯的程式使用 C 執行階段程式庫，可以使用這些偵錯技術。  
@@ -36,7 +34,7 @@ ms.locfileid: "31458423"
  描述由 C 執行階段程式庫提供的偵錯支援，並提供存取這些工具的指示。  
   
  [報告巨集](../debugger/macros-for-reporting.md)  
- 相關資訊提供 **_RPTn**和 **_RPTFn**巨集 （定義於 CRTDBG。H)，取代使用`printf`陳述式中的偵錯。  
+ 提供 **_RPTn** 和 **_RPTFn** 巨集 (定義於 CRTDBG.H) 的相關資訊，這些巨集取代偵錯時使用的 `printf` 陳述式。  
   
  [堆積配置函式的偵錯版本](../debugger/debug-versions-of-heap-allocation-functions.md)  
  討論堆積配置函式的特殊偵錯版本，包括：CRT 對應呼叫的方式、明確呼叫他們的優點、如何避免轉換、追蹤用戶端區塊中不同的配置類型，以及未定義 _DEBUG 的結果。  

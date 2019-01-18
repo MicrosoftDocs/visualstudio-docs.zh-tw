@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ef5bdbd070d7be6898fa89a24af2208c2acf1ccb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: 0ced7def09c9a5ba95c149f5f8507e3571d120ad
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53880685"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154159"
 ---
 # <a name="idiadatasourceloaddatafromistream"></a>IDiaDataSource::loadDataFromIStream
 準備透過記憶體中資料流存取程式資料庫 (.pdb) 檔案中儲存的偵錯資料。  
@@ -40,7 +40,7 @@ HRESULT loadDataFromIStream ( 
 |值|說明|  
 |-----------|-----------------|  
 |E_PDB_FORMAT|嘗試存取已過時的格式的檔案。|  
-|E_INVALIDARG|Invalidparameter。|  
+|E_INVALIDARG|無效的參數。|  
 |E_UNEXPECTED|資料來源已準備好了。|  
   
 ## <a name="remarks"></a>備註  

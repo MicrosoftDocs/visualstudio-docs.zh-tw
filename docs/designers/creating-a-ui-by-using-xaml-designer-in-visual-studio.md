@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: a47c0f9718f43c86375f9ff8668d2dfa1efa9785
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 83dc9bd74615c60a5a39d7b095b4466f332eb60e
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53880401"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54270017"
 ---
 # <a name="create-a-ui-by-using-xaml-designer-in-visual-studio"></a>在 Visual Studio 中使用 XAML 設計工具建立 UI
 
@@ -162,7 +162,7 @@ XAML 設計工具中的 [文件大綱] 視窗可協助您執行下列工作：
 
 - 為控制項項目建立及修改樣板。
 
-- 使用所選項目的內容功能表。 畫板中選取的項目也可以使用相同的功能表。
+- 使用所選元素的右鍵功能表 (操作功能表)。 畫板中選取的項目也可以使用相同的功能表。
 
 若要檢視 [文件大綱] 視窗，請在功能表列上依序選擇 [檢視] > [其他視窗] > [文件大綱]。
 

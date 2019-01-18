@@ -1,6 +1,6 @@
 ---
 title: HOW TO：檢視指令碼文件 |Microsoft Docs
-ms.date: 11/04/2016
+ms.date: 01/08/2019
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -15,21 +15,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3592056fdde7756f3fbe63d0dc5d86782fdf9a8b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: ca9eff00f76bd62abce3c3dae061958af546e483
+ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53867720"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54204131"
 ---
-# <a name="how-to-view-script-documents"></a>HOW TO：檢視指令碼文件
-在舊版的 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中，從伺服器端指令碼產生的用戶端指令碼檔會出現在 [指令碼總管] 視窗中。 [指令碼總管] 視窗通常會隱藏起來，因此用戶端指令碼的存在不一定那麼明顯。  
+# <a name="how-to-view-script-documents-javascript"></a>HOW TO：檢視指令碼文件 (JavaScript)
+
+伺服器端指令碼檔案會顯示在 [方案總管] 中的。 只有在您處於偵錯模式或中斷模式時，才會看得見用戶端指令碼檔。 用戶端指令碼檔案會出現在**指令碼文件**節點。  
   
- 在 [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] 中，從伺服器端指令碼產生的用戶端指令碼檔會出現在 [指令碼總管] 視窗中，而 [方案總管] 預設為可見狀態。 今後將不再有 [指令碼總管] 視窗。  
-  
- 只有在您處於偵錯模式或中斷模式時，才會看得見用戶端指令碼檔。 這些檔案會出現在 [指令碼文件] 節點中。  
-  
- 伺服器端指令碼檔一律可見。 這些檔案會出現在 [\<網站路徑名稱>] 節點中。 節點的名稱會類似以下範例： `c:\...\Website2\`  
+> [!NOTE]
+> 於[!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)]，從伺服器端指令碼產生的用戶端指令碼檔案出現在 [指令碼總管] 視窗。
   
 ### <a name="to-view-a-server-side-script-document"></a>若要檢視伺服器端指令碼文件  
   

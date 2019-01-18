@@ -19,11 +19,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: d78852a05226f5112447dd142c06a2ba55ddba5a
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54090931"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54347225"
 ---
 # <a name="errorresumeaction-enumeration"></a>ERRORRESUMEACTION 列舉
 描述如何從執行階段錯誤繼續執行。  

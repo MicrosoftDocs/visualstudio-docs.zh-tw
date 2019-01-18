@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 84ba15ddbfdb6e3bbcf7a9f7c3ee3dd7e0f89c9c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6053c240fbdfb12840e162f70c88356918eca238
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53866331"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269952"
 ---
 # <a name="remote-debugging"></a>Remote Debugging
 您可以偵錯已部署在不同電腦的 Visual Studio 應用程式。 若要這樣做，您可以使用 Visual Studio 遠端偵錯工具。
@@ -59,9 +59,9 @@ ms.locfileid: "53866331"
 
 1. 尋找*msvsmon.exe*比對您的 Visual Studio 版本的目錄中。 Visual Studio enterprise 2017:
 
-      *程式檔案 (x86) \Microsoft Visual Studio\2017\Enterprise\Common7\IDE\Remote Debugger\x86\msvsmon.exe*
+      *Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\Remote Debugger\x86\msvsmon.exe*
 
-      *程式檔案 (x86) \Microsoft Visual Studio\2017\Enterprise\Common7\IDE\Remote Debugger\x64\msvsmon.exe*
+      *Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\Remote Debugger\x64\msvsmon.exe*
 
 2. 共用**遠端偵錯工具**Visual Studio 電腦上的資料夾。
 
@@ -122,7 +122,7 @@ ms.locfileid: "53866331"
 
 ## <a name="see-also"></a>另請參閱
 
-- [偵錯工具功能導覽](../debugger/debugger-feature-tour.md)
+- [偵錯工具簡介](../debugger/debugger-feature-tour.md)
 - [設定 Windows 防火牆進行遠端偵錯](../debugger/configure-the-windows-firewall-for-remote-debugging.md)
 - [遠端偵錯工具連接埠指派](../debugger/remote-debugger-port-assignments.md)
 - [遠端偵錯 IIS 的遠端電腦上的 ASP.NET Core](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md)

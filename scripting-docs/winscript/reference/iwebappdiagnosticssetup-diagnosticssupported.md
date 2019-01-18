@@ -1,5 +1,5 @@
 ---
-title: IWebAppDiagnosticsSetup::DiagnosticsSupported |Microsoft 文件
+title: IWebAppDiagnosticsSetup::DiagnosticsSupported |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,18 +14,18 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5706d868f0096d486629c18c3d700349af92cc92
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: df9296ac251d93105229fc0af365f6797a413f2b
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24733978"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349682"
 ---
 # <a name="iwebappdiagnosticssetupdiagnosticssupported"></a>IWebAppDiagnosticsSetup::DiagnosticsSupported
-判斷此應用程式是否支援診斷。 如果[SetSite](http://go.microsoft.com/fwlink/?LinkId=232439)已經實作具有非 NULL 值，這個介面的物件上呼叫[DiagnosticsSupported](../../winscript/reference/iwebappdiagnosticssetup-diagnosticssupported.md)傳回`true`。 如果沒有，它會傳回`false`和呼叫[IWebAppDiagnosticsSetup::CreateObjectWithSiteAtWebApp](../../winscript/reference/iwebappdiagnosticssetup-createobjectwithsiteatwebapp.md)失敗。  
+判斷此應用程式是否支援診斷。 如果[SetSite](http://go.microsoft.com/fwlink/?LinkId=232439)已經實作了非 NULL 值，這個介面的物件上呼叫[DiagnosticsSupported](../../winscript/reference/iwebappdiagnosticssetup-diagnosticssupported.md)傳回`true`。 如果沒有，它會傳回`false`並呼叫[IWebAppDiagnosticsSetup::CreateObjectWithSiteAtWebApp](../../winscript/reference/iwebappdiagnosticssetup-createobjectwithsiteatwebapp.md)失敗。  
   
 > [!IMPORTANT]
->  [IWebAppDiagnosticsSetup 介面](../../winscript/reference/iwebappdiagnosticssetup-interface.md)會實作由 PDM v11.0 和更新版本。 Activdbg100 中找到。  
+>  [IWebAppDiagnosticsSetup 介面](../../winscript/reference/iwebappdiagnosticssetup-interface.md)是實作由 PDM v11.0 和更新版本。 在 activdbg100 中找到。  
   
 ## <a name="syntax"></a>語法  
   
@@ -35,4 +35,4 @@ HRESULT DiagnosticsSupported(        [out, retval] VARIANT_BOOL* pRetVal        
   
 #### <a name="parameters"></a>參數  
  `pRetVal`  
- 如果[SetSite](http://go.microsoft.com/fwlink/?LinkId=232439)已經實作具有非 NULL 值，這個介面的物件上呼叫[DiagnosticsSupported](../../winscript/reference/iwebappdiagnosticssetup-diagnosticssupported.md)傳回`true`。 如果沒有，它會傳回`false`，和呼叫[IWebAppDiagnosticsSetup::CreateObjectWithSiteAtWebApp](../../winscript/reference/iwebappdiagnosticssetup-createobjectwithsiteatwebapp.md)失敗。
+ 如果[SetSite](http://go.microsoft.com/fwlink/?LinkId=232439)已經實作了非 NULL 值，這個介面的物件上呼叫[DiagnosticsSupported](../../winscript/reference/iwebappdiagnosticssetup-diagnosticssupported.md)傳回`true`。 如果沒有，它會傳回`false`，並呼叫[IWebAppDiagnosticsSetup::CreateObjectWithSiteAtWebApp](../../winscript/reference/iwebappdiagnosticssetup-createobjectwithsiteatwebapp.md)失敗。

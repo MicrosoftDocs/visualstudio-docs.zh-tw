@@ -33,18 +33,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 647749b2993b41180852aca43f99ce15844c6d71
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: 8f31fa49916bf9b6d13865cd5d427670ceb33cb0
+ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54094807"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54204414"
 ---
 # <a name="manage-exceptions-with-the-debugger-in-visual-studio"></a>使用 Visual Studio 中偵錯工具管理例外狀況
 
-例外狀況是程式執行時發生之錯誤狀態的指示。 哪些例外狀況或中斷，例外狀況的集合，您可以告知偵錯工具，此時您想要中斷偵錯工具。 當偵錯工具中斷時，它會顯示您已在擲回例外狀況。 您也可以新增或刪除的例外狀況。 使用 Visual Studio 中開啟的方案，使用**偵錯 > Windows > 例外狀況設定**來開啟**例外狀況設定**視窗。
+例外狀況是程式執行時發生之錯誤狀態的指示。 哪些例外狀況或中斷，例外狀況的集合，您可以告知偵錯工具和您想在此時偵錯工具中斷 （亦即，在偵錯工具中暫停）。 當偵錯工具中斷時，它會顯示您已在擲回例外狀況。 您也可以新增或刪除的例外狀況。 使用 Visual Studio 中開啟的方案，使用**偵錯 > Windows > 例外狀況設定**來開啟**例外狀況設定**視窗。
 
-提供回應最重要的例外狀況的處理常式。 也了解如何設定偵錯工具一定中斷執行，某些例外狀況。
+提供回應最重要的例外狀況的處理常式。 如果您需要了解如何新增例外狀況處理常式，請參閱[修正 bug，藉由撰寫更好C#程式碼](../debugger/write-better-code-with-visual-studio.md)。 此外，了解如何設定偵錯工具一定中斷執行，某些例外狀況。
 
 發生例外狀況時，偵錯工具都會將例外狀況訊息寫入至 [輸出] 視窗。 它可能會中斷執行，在下列情況下，當：
 

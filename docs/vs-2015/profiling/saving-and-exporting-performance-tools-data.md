@@ -17,10 +17,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: a9b96ae54c91e80fe34c817f710cb400e61f9876
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "51768499"
 ---
 # <a name="saving-and-exporting-performance-tools-data"></a>儲存和匯出報告效能工具資料
@@ -28,7 +28,7 @@ ms.locfileid: "51768499"
 
 本主題描述如何儲存和匯出效能資料檔案。  
   
-##  <a name="BKMK_Save_Profiler_Data_Files_As_Analyzed_Report_Files"></a> 如何︰將效能資料檔案儲存為分析的報告檔案  
+##  <a name="BKMK_Save_Profiler_Data_Files_As_Analyzed_Report_Files"></a>如何：將效能資料檔案儲存為分析的報表檔案  
  您可以將分析資料 (.vsp) 檔案的已篩選或未篩選檢視儲存為分析的報告 (.vsps) 檔案。 分析的報告檔案可以在 [報表] 檢視視窗中檢視，且比原始 .vsp 檔案小得多。 不過，您無法將篩選套用至 .vsps 檔案的資料。 您可以從 [效能總管] 建立分析的報告檔案，而不須在整合式的開發環境 (IDE) 中開啟檔案，或者您可以開啟並篩選 .vsp 檔案，然後儲存結果。  
   
 #### <a name="to-save-an-analyzed-performance-report-from-the-performance-explorer"></a>從 [效能總管] 儲存分析的效能報告  
@@ -51,7 +51,7 @@ ms.locfileid: "51768499"
   
 5.  按一下 [儲存]   
   
-## <a name="how-to-export-profiling-tools-reports-to-an-xml-or-csv-file"></a>如何︰將分析工具報告匯出至 .Xml 或 .Csv 檔案  
+## <a name="how-to-export-profiling-tools-reports-to-an-xml-or-csv-file"></a>HOW TO：將分析工具報表匯出為 .Xml 或 .Csv 檔案  
  您可以從 .vsp 檔案或 .vsps 分析資料檔案將一或多個報告檢視匯出為逗點分隔的檔案或 XML 檔案。 您可於匯出前，在 [報告] 檢視視窗中篩選資料，或是從 [效能總管]  視窗匯出整個資料檔案的報告檢視。  
   
 > [!NOTE]
@@ -69,7 +69,7 @@ ms.locfileid: "51768499"
   
 4.  在 [匯出的報告位置] 下，指定目錄。  
   
-5.  底下**匯出的報告格式**，選取 （以逗號分隔） (*.csv) 或 XML 資料 (\*.xml)。  
+5.  在 [匯出的報告格式] 下，選取 [逗點分隔] (*.csv) 或 [XML 資料] (\*.xml)。  
   
 6.  按一下 [匯出] 。  
   
@@ -89,9 +89,9 @@ ms.locfileid: "51768499"
   
 6.  在 [匯出的報告位置] 下，指定目錄。  
   
-7.  底下**匯出的報告格式**，選取 （以逗號分隔） (*.csv) 或 XML 資料 (\*.xml)。  
+7.  在 [匯出的報告格式] 下，選取 [逗點分隔] (*.csv) 或 [XML 資料] (\*.xml)。  
   
-8.  按一下 [匯出] 。  
+8.  按一下 [匯出]。  
   
      每個報告檢視都會儲存到個別的檔案，稱為 \<前置詞>_\<報告檢視名稱>.\<csv&#124;xml>。  
   

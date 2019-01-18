@@ -1,5 +1,5 @@
 ---
-title: SCRIPTUICITEM 列舉 |Microsoft 文件
+title: SCRIPTUICITEM 列舉 |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -12,15 +12,15 @@ caps.latest.revision: 3
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6620553bce810abcf1a51ac8592061ef017dd9bf
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: cf880ed8b0295e841026e884f6cec71a9f52d4ae
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24734038"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54347485"
 ---
 # <a name="scriptuicitem-enumeration"></a>SCRIPTUICITEM 列舉
-代表 UI 項目類型。 用於[iactivescriptsiteuicontrol:: Getuibehavior 方法](../../winscript/reference/iactivescriptsiteuicontrol-getuibehavior-method.md)。  
+表示 UI 項目類型。 用於[iactivescriptsiteuicontrol:: Getuibehavior 方法](../../winscript/reference/iactivescriptsiteuicontrol-getuibehavior-method.md)。  
   
 ## <a name="syntax"></a>語法  
   

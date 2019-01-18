@@ -1,5 +1,5 @@
 ---
-title: IDebugApplicationNode100::GetExcludedDocuments |Microsoft 文件
+title: IDebugApplicationNode100::GetExcludedDocuments |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,15 +14,15 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9ad8e8e2bbe8c643385bb4a989367d58d7c38725
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 9de24002733ddd2918e59c908502a7daf4dd8e5a
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725608"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54346718"
 ---
 # <a name="idebugapplicationnode100getexcludeddocuments"></a>IDebugApplicationNode100::GetExcludedDocuments
-取得所指定的篩選條件會隱藏文字文件。  
+取得指定的篩選條件會隱藏文字文件。  
   
 > [!IMPORTANT]
 >  [IDebugApplicationNode100 介面](../../winscript/reference/idebugapplicationnode100-interface.md)是由 PDM v10.0 實作和更新版本。 可在 activdbg100.h 中找到。  

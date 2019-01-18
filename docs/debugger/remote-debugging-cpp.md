@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2778148c8762c74d1c836a6f5a1b1fd8c9387e12
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: bdbcefe1e0878ef6bf2520edb90ce904e414f211
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53884580"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269757"
 ---
 # <a name="remote-debugging-a-visual-c-project-in-visual-studio"></a>遠端偵錯 Visual Studio 中的 Visual c + + 專案
 若要偵錯在不同電腦上的 Visual Studio 應用程式安裝，您將在其中部署您的應用程式的電腦上執行遠端工具，設定您的專案從 Visual Studio 中，連接到遠端電腦，然後部署並執行您的應用程式。
@@ -106,7 +106,7 @@ ms.locfileid: "53884580"
   
 ## <a name="see-also"></a>請參閱  
  [Visual Studio 偵錯](../debugger/index.md)  
- [偵錯工具功能導覽](../debugger/debugger-feature-tour.md)   
+ [偵錯工具簡介](../debugger/debugger-feature-tour.md)   
  [設定 Windows 防火牆以進行遠端偵錯](../debugger/configure-the-windows-firewall-for-remote-debugging.md)   
  [Remote Debugger Port Assignments](../debugger/remote-debugger-port-assignments.md)   
  [在執行 IIS 的遠端電腦上對 ASP.NET 進行遠端偵錯](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md)  

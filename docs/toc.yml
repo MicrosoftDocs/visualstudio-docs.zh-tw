@@ -153,7 +153,7 @@ items:
   - name: Visual Basic
     href: get-started/visual-basic/
   - name: C++
-    href: /cpp/get-started/tutorials/
+    href: /cpp/get-started/
   - name: Python
     href: python/
   - name: Node.js
@@ -820,12 +820,22 @@ items:
           href: ide/reference/options-text-editor-csharp-advanced.md
         - name: 文字編輯器 - IntelliSense、C#
           href: ide/reference/options-text-editor-csharp-intellisense.md
+        - name: 文字編輯器 - HTML (Web Forms)、格式
+          href: ide/reference/options-text-editor-html-formatting.md
+        - name: 文字編輯器 - HTML (Web Forms)、雜項
+          href: ide/reference/options-text-editor-html-miscellaneous.md
+        - name: 文字編輯器 - HTML (Web Forms)、驗證
+          href: ide/reference/options-text-editor-html-validation.md
         - name: 文字編輯器 - JavaScript、程式碼驗證
           href: ide/reference/options-text-editor-javascript-code-validation.md
         - name: 文字編輯器 - 格式、JavaScript
           href: ide/reference/options-text-editor-javascript-formatting.md
         - name: 文字編輯器 - IntelliSense、JavaScript
           href: ide/reference/options-text-editor-javascript-intellisense.md
+        - name: 文字編輯器 - JavaScript、Linting
+          href: ide/reference/options-text-editor-javascript-linting.md
+        - name: 文字編輯器 - JavaScript、專案
+          href: ide/reference/options-text-editor-javascript-project.md
         - name: 文字編輯器 - 格式、XAML
           href: ide/reference/options-text-editor-xaml-formatting.md
         - name: 文字編輯器 - XAML、雜項
@@ -1124,9 +1134,9 @@ items:
     href: ide/reference/resources-for-troubleshooting-integrated-development-environment-errors.md
   - name: 告訴我們
     href: ide/talk-to-us.md
-ms.openlocfilehash: e3003812bf0485082690feb08bc08373d8e03977
-ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
+ms.openlocfilehash: 7d78ac25b7b12af01409d26f6906788f4c9bcb44
+ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/14/2019
-ms.locfileid: "54270277"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54380347"

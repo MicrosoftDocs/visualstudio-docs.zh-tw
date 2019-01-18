@@ -17,14 +17,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f86e85fd7f5d8c767b64d55efd0837de9f99b340
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2d320c4cc2a224dd17ea85337e38fb43ae8aa5bd
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53893703"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227664"
 ---
-# <a name="walkthrough-debug-a-multithreaded-app-using-the-threads-window"></a>逐步解說：使用 [執行緒] 視窗的多執行緒應用程式進行偵錯
+# <a name="walkthrough-debug-a-multithreaded-app-using-the-threads-window-c-visual-basic-c"></a>逐步解說：偵錯多執行緒的應用程式，使用 [執行緒] 視窗 (C#，Visual Basic、 c + +)
 
 數個 Visual Studio 使用者介面項目可協助您偵錯多執行緒應用程式。 這篇文章介紹在程式碼編輯器 視窗中，多執行緒偵錯功能**偵錯位置**工具列上，並**執行緒**視窗。 如需其他工具進行偵錯多執行緒應用程式的資訊，請參閱[開始偵錯多執行緒應用程式](../debugger/get-started-debugging-multithreaded-apps.md)。 
   

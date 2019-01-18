@@ -1,5 +1,5 @@
 ---
-title: IWebAppDiagnosticsObjectInitialization::Initialize |Microsoft 文件
+title: IWebAppDiagnosticsObjectInitialization::Initialize | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,18 +14,18 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 32dab78619635f9603fa33794810deef9685a7d7
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 067d690b463d80c5aa76394be8dabe08ad39baad
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24733798"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54344079"
 ---
 # <a name="iwebappdiagnosticsobjectinitializationinitialize"></a>IWebAppDiagnosticsObjectInitialization::Initialize
-初始化物件以建立[IWebAppDiagnosticsSetup::CreateObjectWithSiteAtWebApp](../../winscript/reference/iwebappdiagnosticssetup-createobjectwithsiteatwebapp.md)。  
+初始化使用所建立的物件[IWebAppDiagnosticsSetup::CreateObjectWithSiteAtWebApp](../../winscript/reference/iwebappdiagnosticssetup-createobjectwithsiteatwebapp.md)。  
   
 > [!IMPORTANT]
->  [IWebAppDiagnosticsObjectInitialization 介面](../../winscript/reference/iwebappdiagnosticsobjectinitialization-interface.md)可在 activdbg100.h 中找到。  
+>  [IWebAppDiagnosticsObjectInitialization 介面](../../winscript/reference/iwebappdiagnosticsobjectinitialization-interface.md)activdbg100.h 中找到。  
   
 ## <a name="syntax"></a>語法  
   
@@ -38,4 +38,4 @@ HRESULT Initialize(        [in, annotation("__in")] HANDLE_PTR hPassedHandle,   
  控制代碼傳遞給[IWebAppDiagnosticsSetup::CreateObjectWithSiteAtWebApp](../../winscript/reference/iwebappdiagnosticssetup-createobjectwithsiteatwebapp.md)方法中的`hPassToObject`參數。  
   
  `pDebugApplication`  
- 建立物件所使用的 PDM 應用程式。
+ PDM 應用程式建立物件所使用。

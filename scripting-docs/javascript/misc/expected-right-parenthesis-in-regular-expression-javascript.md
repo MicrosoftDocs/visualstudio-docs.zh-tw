@@ -21,11 +21,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 6c344105010e406ef4936fdcca58baffbd610088
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53802338"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54347420"
 ---
 # <a name="expected--in-regular-expression-javascript"></a>在規則運算式中必須是 ')' (JavaScript)
 您嘗試建立規則運算式的擷取、 判斷提示或群組，但並未包含的右括號。 括號內會有多種用途，規則運算式中。 它們主要是用來擷取子運算式，指定判斷提示，或將群組模式在一起，讓項目可以視為單一單位的 *，+，？，依此類推。  

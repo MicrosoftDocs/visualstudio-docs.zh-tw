@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f586cf8761d993d9478775e82ec02d8665bf09b6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ed68060210cd14eb8dd48315fb6b3e36b92e96f1
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53923912"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269445"
 ---
 # <a name="debugging-wcf-services"></a>偵錯 WCF 服務
 ## <a name="in-this-section"></a>本節內容  
@@ -36,4 +36,4 @@ ms.locfileid: "53923912"
   
 ## <a name="see-also"></a>請參閱  
  [偵錯工具安全性](../debugger/debugger-security.md)   
- [偵錯工具功能導覽](../debugger/debugger-feature-tour.md)
+ [偵錯工具簡介](../debugger/debugger-feature-tour.md)

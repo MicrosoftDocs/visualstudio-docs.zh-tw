@@ -1,5 +1,5 @@
 ---
-title: 必須是數字 |Microsoft 文件
+title: 必須是數字 |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -21,18 +21,18 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 46e6525a79ed866b9c714913f11fcbbe13066208
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24633048"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54346120"
 ---
 # <a name="number-expected"></a>必須是數字
-您嘗試叫用**Number.prototype.toString**或**Number.prototype.valueOf**方法以外的類型的物件上**數目**。 這種類型的引動過程的物件必須屬於型別**數目**。  
+您嘗試叫用**Number.prototype.toString**或是**Number.prototype.valueOf**以外的類型的物件上的方法**數目**。 這種類型的引動過程的物件必須是型別**數字**。  
   
 ### <a name="to-correct-this-error"></a>更正這個錯誤  
   
--   只能叫用**Number.prototype.toString**或**Number.prototype.valueOf**類型的物件上的方法**數目**。  
+-   只能叫用**Number.prototype.toString**或是**Number.prototype.valueOf**類型的物件上的方法**數目**。  
   
 ## <a name="see-also"></a>另請參閱  
  [Number 物件](../../javascript/reference/number-object-javascript.md)   

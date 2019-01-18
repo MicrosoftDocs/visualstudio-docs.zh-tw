@@ -19,11 +19,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: a451f4883373978772643e11fe22feb9122be30e
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54097210"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349747"
 ---
 # <a name="iactivescriptsitegetdocversionstring"></a>IActiveScriptSite::GetDocVersionString
 擷取主應用程式定義的字串可唯一識別目前的文件版本。 如果相關的文件已變更的 Windows 指令碼 （如同使用 「 記事本 」 編輯 HTML 網頁的大小寫） 範圍外，指令碼引擎可以儲存此以及其保存的狀態，強制重新編譯指令碼會載入在下一次。  

@@ -14,15 +14,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: a5b34bcb9c1532190f730e26c691289d489a2f3c
-ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
-ms.translationtype: MT
+ms.openlocfilehash: 4a99ff0c28eac785e7e0e52958abcc4c94799685
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50751072"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53900187"
 ---
 # <a name="extend-the-functionality-of-a-tableadapter"></a>擴充 TableAdapter 的功能
 

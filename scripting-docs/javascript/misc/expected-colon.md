@@ -21,11 +21,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 23b1bcc42db9daace5a57b56346f5abe58232173
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53802390"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349815"
 ---
 # <a name="expected-"></a>必須是 ':'
 您嘗試建立使用三元條件式運算子的運算式，但不是包括第二個和第三個運算元之間的冒號。 三元 （三個運算元） 條件式運算子要求第二個 (true) 與第三個 (false) 之間的分號運算元。  

@@ -9,10 +9,10 @@ ms.workload:
 - multiple
 author: gewarren
 ms.openlocfilehash: 13fb1fb6b0b78ffbb2e89b80180260f14b695282
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "53902785"
 ---
 # <a name="use-the-mstest-framework-in-unit-tests"></a>在單元測試中使用 MSTest 架構

@@ -1,5 +1,5 @@
 ---
-title: IPerPropertyBrowsing2 介面 1 |Microsoft 文件
+title: IPerPropertyBrowsing2 介面 1 |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,24 +18,24 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 75a0a7ef30bca2205789a63ea577808c11582791
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: bded7159b72fc8c1ae8408611ce858105e6734da
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728388"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54344019"
 ---
 # <a name="iperpropertybrowsing2-interface-1"></a>IPerPropertyBrowsing2 介面 1
 存取物件所提供的屬性頁中的資訊。  
   
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法  
   
-|方法|說明|  
+|方法|描述|  
 |------------|-----------------|  
 |`GetDisplayString`|傳回文字字串描述指定的屬性。|  
 |`MapPropertyToPage`|傳回允許管理指定之屬性的屬性頁 CLSID。|  
-|`GetPredefinedStrings`|會傳回計數的字串陣列 (`LPOLESTR`指標) 列出可以接受指定之屬性的允許值的描述。|  
-|`SetPredefinedValue`|將屬性的值設定為預先定義的語彙基元所識別的值`dwCookie.`|  
+|`GetPredefinedStrings`|會傳回計數的字串陣列 (`LPOLESTR`指標) 列出允許的值可以接受指定之的屬性的描述。|  
+|`SetPredefinedValue`|將屬性的值設定為預先定義的語彙基元所識別的值 `dwCookie.`|  
   
 ## <a name="requirements"></a>需求  
  標頭： dbgprop.h

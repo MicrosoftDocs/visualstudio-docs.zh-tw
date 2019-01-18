@@ -9,12 +9,12 @@ manager: douge
 ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 23abfbdc1b0bf922e3d15f0181afd7d01aa7ee2f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: b61507087a3a4d9ac69c7a0f7fd602dcf7f5cc06
+ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53935654"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54204303"
 ---
 # <a name="the-objects-you-are-adding-to-the-designer-use-a-different-data-connection-than-the-designer"></a>您要加入至設計工具的物件使用不同的資料連接與設計工具
 
@@ -22,20 +22,18 @@ ms.locfileid: "53935654"
 
 當您將項目加入**物件關聯式設計工具**(**O/R Designer**)，所有的項目會使用一個共用的資料連接。 (設計介面即代表一個 <xref:System.Data.Linq.DataContext>，這讓介面上的所有物件都會使用單一連接)。如果加入至設計工具的物件所使用的資料連接與設計工具目前使用的資料連接不同，就會顯示這則訊息。 若要解決這個錯誤，您可以選擇維持現有的連接。 如果選擇這個選項，就不會加入選取的物件。 您也可以選擇加入物件，並將 <xref:System.Data.Linq.DataContext> 連線重設為新連線。
 
-> [!NOTE]
-> 如果您按一下 **[是]**，所有的實體類別上**O/R Designer**會對應至新的連接。
+## <a name="connection-options"></a>連線選項
 
-## <a name="to-replace-the-existing-connection-with-the-connection-used-by-the-selected-object"></a>若要將現有的連接取代為所選取物件使用的連接
+- 若要取代現有的連接與所選取的物件使用的連接，請按一下**是**。
 
-- 按一下 [ **是**]。
+   選取的物件加入至**O/R Designer**，而*DataContext.Connection*設為新的連接。
 
-    選取的物件加入至**O/R Designer**，而*DataContext.Connection*設為新的連接。
+   > [!NOTE]
+   > 如果您按一下 **[是]**，所有的實體類別上**O/R Designer**會對應至新的連接。
 
-## <a name="to-continue-to-use-the-existing-connection-and-cancel-adding-the-selected-object"></a>若要繼續使用現有的連接並取消加入選取的物件
+- 若要繼續使用現有的連線，取消加入選取的物件，按一下**No**。
 
-- 按一下 [否] 。
-
-    會取消動作。 *DataContext.Connection* 仍然會設定為現有的連線。
+   會取消動作。 *DataContext.Connection* 仍然會設定為現有的連線。
 
 ## <a name="see-also"></a>另請參閱
 

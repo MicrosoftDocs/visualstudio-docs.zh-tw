@@ -1,5 +1,5 @@
 ---
-title: IDebugSessionProviderEx 介面 |Microsoft 文件
+title: IDebugSessionProviderEx 介面 |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -12,21 +12,21 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 545b60f13e86e59143ce0e57f454b13f61041f11
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: fae1cf673f47d3be586f83320b2d2c38c817e2cf
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726928"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349214"
 ---
 # <a name="idebugsessionproviderex-interface"></a>IDebugSessionProviderEx 介面
-提供 IDE，可啟用主控件和語言初始化偵錯的偵錯工具的主要介面。 它會建立執行的應用程式的偵錯工作階段。 這個介面是由電腦偵錯管理員實作的。  
+提供偵錯工具 IDE，以啟用主控件和語言初始化偵錯的主要介面。 它會建立執行中應用程式的偵錯工作階段。 機器偵錯管理員會實作這個介面。  
   
- 除了繼承自`IUnknown`、`IDebugSessionProviderEx`介面會公開下列方法。  
+ 除了繼承自方法`IUnknown`，則`IDebugSessionProviderEx`介面會公開下列方法。  
   
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法  
   
-|方法|說明|  
+|方法|描述|  
 |------------|-----------------|  
-|[IDebugSessionProviderEx:CanJITDebug](../../winscript/reference/idebugsessionproviderex-canjitdebug.md)|判斷是否與指定的應用程式可能只在階段偵錯。|  
-|[IDebugSessionProviderEx:StartDebugSession](../../winscript/reference/idebugsessionproviderex-startdebugsession.md)|初始化具有指定的應用程式偵錯工作階段。|
+|[IDebugSessionProviderEx:CanJITDebug](../../winscript/reference/idebugsessionproviderex-canjitdebug.md)|判斷是否可用於指定的應用程式進行偵錯的 Just In Time。|  
+|[IDebugSessionProviderEx:StartDebugSession](../../winscript/reference/idebugsessionproviderex-startdebugsession.md)|初始化具有指定的應用程式的偵錯工作階段。|

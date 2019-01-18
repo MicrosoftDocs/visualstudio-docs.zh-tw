@@ -15,11 +15,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 8ff283b52d15310304fb60c322bdb51c33ed33ac
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54096937"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54344191"
 ---
 # <a name="textdocumentarray-structure"></a>TEXT_DOCUMENT_ARRAY 結構
 陣列[IDebugDocumentText 介面](../../winscript/reference/idebugdocumenttext-interface.md)物件。 成員會以 CoTaskMemAlloc 來配置。  

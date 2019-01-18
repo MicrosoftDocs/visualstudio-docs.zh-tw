@@ -15,10 +15,10 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.openlocfilehash: f0ec7d97ace8f61f209e4664c0de42b883a6a5d0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "49896946"
 ---
 # <a name="working-with-elements-in-xaml-designer"></a>Working with elements in XAML Designer
@@ -126,7 +126,7 @@ ms.locfileid: "49896946"
   
 -   在 [文件大綱] 視窗或畫板中，以滑鼠右鍵按一下項目，然後依序選擇 [版面配置] 和 [重設*屬性名稱*]，其中*屬性名稱* 是您要重設的屬性 (或者依序選擇 [版面配置] 和 [全部重設]，以重設項目的所有版面配置屬性)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [使用 XAML 設計工具建立 UI](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)
 
 
