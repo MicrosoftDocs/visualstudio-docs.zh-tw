@@ -153,7 +153,7 @@ items:
   - name: Visual Basic
     href: get-started/visual-basic/
   - name: C++
-    href: /cpp/get-started/tutorials/
+    href: /cpp/get-started/
   - name: Python
     href: python/
   - name: Node.js
@@ -1134,9 +1134,9 @@ items:
     href: ide/reference/resources-for-troubleshooting-integrated-development-environment-errors.md
   - name: 告訴我們
     href: ide/talk-to-us.md
-ms.openlocfilehash: 12a48d26a0bacf0151a9f30ac32f9d2b680d704c
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.openlocfilehash: 7d78ac25b7b12af01409d26f6906788f4c9bcb44
+ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54349903"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54380347"
