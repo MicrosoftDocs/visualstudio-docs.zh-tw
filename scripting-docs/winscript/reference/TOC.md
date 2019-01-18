@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: a4e7ebc12419567fb5a5fe8499fb33cbb0d63d9e
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54348681"
+---
 # [Windows 指令碼介面參考](windows-script-interfaces-reference.md)
 ## [動態指令碼介面](active-script-interfaces.md)
 ### [動態指令碼的常數、列舉和錯誤碼](active-script-constants-enumerations-and-error-codes.md)
@@ -111,7 +119,7 @@
 #### [IScriptEntry::SetText](iscriptentry-settext.md)
 ### [IScriptNode 介面](iscriptnode-interface.md)
 #### [IScriptNode::Alive](iscriptnode-alive.md)
-#### [IScriptNode:: CreateChildEntry](iscriptnode-createchildentry.md)
+#### [IScriptNode::CreateChildEntry](iscriptnode-createchildentry.md)
 #### [IScriptNode::CreateChildHandler](iscriptnode-createchildhandler.md)
 #### [IScriptNode::Delete](iscriptnode-delete.md)
 #### [IScriptNode::GetChild](iscriptnode-getchild.md)
@@ -122,7 +130,7 @@
 #### [IScriptNode::GetParent](iscriptnode-getparent.md)
 ### [IScriptScriptlet 介面](iscriptscriptlet-interface.md)
 #### [IScriptScriptlet::GetEventName](iscriptscriptlet-geteventname.md)
-#### [IScriptScriptlet:: GetSimpleEventName](iscriptscriptlet-getsimpleeventname.md)
+#### [IScriptScriptlet::GetSimpleEventName](iscriptscriptlet-getsimpleeventname.md)
 #### [IScriptScriptlet::GetSubItemName](iscriptscriptlet-getsubitemname.md)
 #### [IScriptScriptlet::SetEventName](iscriptscriptlet-seteventname.md)
 #### [IScriptScriptlet::SetSimpleEventName](iscriptscriptlet-setsimpleeventname.md)
