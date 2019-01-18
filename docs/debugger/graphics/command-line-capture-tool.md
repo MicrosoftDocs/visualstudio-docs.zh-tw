@@ -1,8 +1,6 @@
 ---
 title: 命令列擷取工具 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: db75b3a7-80b2-4a74-91d2-fd6e0f73b45d
 author: mikejo5000
@@ -10,12 +8,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7b5de323a14bd005e10db4c17281a3b947381f26
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
-ms.translationtype: MT
+ms.openlocfilehash: 12aa697bff0a60ce6ab9a24351514c96ce107d02
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43775545"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "53960650"
 ---
 # <a name="command-line-capture-tool"></a>命令列擷取工具
 DXCap.exe 是圖形診斷擷取及播放的命令列工具。 它支援 Direct3D 10 到 Direct3D 12 的所有功能層級。  
@@ -136,10 +134,10 @@ DXCap.exe -file regression_test_12.vsglog -c BasicHLSL11.exe
 DXCap.exe -c "C:\Program Files\Internet Explorer\iexplorer.exe" "www.fishgl.com"  
 ```  
   
- 在上述範例中的命令會擷取桌面版本的 Internet Explorer 檢視網頁位於 www.fishgl.com 使用 WebGL API 來呈現 3d 內容時的圖形資訊。  
+ 在上述範例中的命令會在檢視位於 www.fishgl.com 的網頁時，擷取 Internet Explorer 桌上型電腦版本的圖形資訊；該網頁使用 WebGL API 來呈現 3D 內容。  
   
 > [!NOTE]
->  因為應用程式之後，會出現的命令列引數會傳遞給它，您必須指定使用之前用於 DXCap.exe 的引數`-c`選項。  
+>  因為應用程式之後出現的命令列引數會傳遞給它，所以您必須指定適用於 DXCap.exe 的引數，然後才能使用 `-c` 選項。  
   
 ### <a name="capture-graphics-information-from-a-uwp-app"></a>擷取圖形資訊從 UWP 應用程式。  
  您可以擷取從 UWP 應用程式的圖形資訊。  
@@ -162,18 +160,18 @@ DXCap.exe -e map
   
  上述命令會列舉符合"map"的 UWP 應用程式輸出如下：  
   
- **封裝"Microsoft.BingMaps 」:**  
- **Installdirectory 出現： C:\Program Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe**  
- **FullName: Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe**  
- **UserSID: S-1-5-21-2127521184-1604012920-1887927527-5603533**  
- **名稱： Microsoft.BingMaps**  
- **發行者： CN = Microsoft Corporation，O = Microsoft Corporation，L = Redmond，S = Washington，C = US**  
- **版本： 2.1.2914.1734**  
- **可啟動的應用程式：**  
- **識別碼： AppexMaps**  
- **Exe: C:\Program Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe\Map.exe**  
- **IsWWA： 否**  
- **AppSpec （以啟動）： DXCap.exe-c Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe,AppexMaps**每個列舉的應用程式的輸出的最後一行會顯示您可用來從其擷取圖形資訊的命令。  
+ **Package "Microsoft.BingMaps":**  
+ **Installdirectory 出現：C:\Program Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe**  
+ **完整名稱         :Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe**  
+ **UserSID:S-1-5-21-2127521184-1604012920-1887927527-5603533**  
+ **名稱             :Microsoft.BingMaps**  
+ **發行者           :CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US**  
+ **Version          :2.1.2914.1734**  
+ **Launchable Applications:**  
+ **識別碼：AppexMaps**  
+ **可執行檔：C:\Program Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe\Map.exe**  
+ **IsWWA:否**  
+ **AppSpec （以啟動）：DXCap.exe-c Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe,AppexMaps**每個列舉的應用程式的輸出的最後一行會顯示您可用來從其擷取圖形資訊的命令。  
   
 ### <a name="capture-specific-frames-or-frames-between-specific-times"></a>擷取特定框架或特定時間之間的框架。  
  使用`-frame`來指定您想要使用逗號和範圍擷取的框架：  
@@ -229,13 +227,13 @@ DXCap.exe -p regression_test_12.vsglog -hw
 ```  
   
 ### <a name="validate-a-graphics-log-file-against-warp"></a>針對 WARP 驗證圖形記錄檔  
- 在驗證模式中，圖形記錄檔會在硬體和 WARP 上播放，並比較其結果。 這可以協助您識別驅動程式所造成的轉譯錯誤。 您可以使用 hyper-v 來驗證針對 WARP 的圖形硬體的正確行為。  
+ 在驗證模式中，圖形記錄檔會在硬體和 WARP 上播放，並比較其結果。 這可以協助您識別驅動程式所造成的轉譯錯誤。 使用 -v 來針對 WARP 驗證圖形硬體的正確行為。  
   
 ```cmd  
 DXCap.exe -v regression_test_12.vsglog  
 ```  
   
- 若要減少比較次數，您可以指定驗證要比較的命令子集，將會忽略其他命令。 使用-examine 指定您想要比較其結果的命令。  
+ 若要減少比較次數，您可以指定驗證要比較的命令子集，將會忽略其他命令。 使用 -examine 指定您想要比較其結果的命令。  
   
 ```cmd  
 DXCap.exe -v regression_test_12.vsglog -examine present,draw,copy,clear  
