@@ -8,19 +8,21 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d5416becdf4315b3b7d631675ef52cbe6f509fdc
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: 86410567a194753db2001fbd5fba870bb89d7930
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53929386"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227989"
 ---
-# <a name="view-events-with-intellitrace-in-visual-studio"></a>在 Visual Studio 中使用 IntelliTrace 檢視事件
+# <a name="view-events-with-intellitrace-in-visual-studio-enterprise-c-visual-basic"></a>在 Visual Studio Enterprise 中檢視使用 IntelliTrace 的事件 (C#，Visual Basic)
+
 您可以使用 IntelliTrace 收集特定事件或事件分類的相關資訊，或是事件及個別函式呼叫的相關資訊。 下列程序說明如何執行此作業。  
   
- 您可以在 Visual Studio Enterprise 版本 (而非 Professional 或 Community 版本) 中使用 IntelliTrace。  
+您可以在 Visual Studio Enterprise 版本 (而非 Professional 或 Community 版本) 中使用 IntelliTrace。  
   
-##  <a name="GettingStarted"></a> 設定 Intellitrace  
+##  <a name="GettingStarted"></a> 設定 IntelliTrace  
+
  您可以嘗試只針對 IntelliTrace 事件進行偵錯。 IntelliTrace 事件是偵錯工具事件、例外狀況、.NET Framework 事件，以及其他系統事件。 您應在開始偵錯之前，先開啟或關閉特定事件，以控制 IntelliTrace 所記錄的事件。 如需詳細資訊，請參閱 < [IntelliTrace 功能](../debugger/intellitrace-features.md)。  
   
  - 開啟檔案存取的 IntelliTrace 事件。 前往 [工具] > [選項] > [IntelliTrace] > [IntelliTrace 事件] 頁面，然後展開 [檔案] 分類。 核取 [檔案]  事件分類。 這會核取所有的檔案事件 (存取、關閉、刪除)。
@@ -62,7 +64,7 @@ ms.locfileid: "53929386"
   
      下列螢幕擷取畫面來自 Visual Studio 2015 Update 1。  
   
-     ![IntelliTrace&#45;Update1](../debugger/media/intellitrace-update1.png "IntelliTrace Update1")  
+     ![IntelliTrace&#45;Update1](../debugger/media/intellitrace-update1.png "IntelliTrace-Update1")  
   
 3.  選取該事件，然後展開其詳細資料。  
   

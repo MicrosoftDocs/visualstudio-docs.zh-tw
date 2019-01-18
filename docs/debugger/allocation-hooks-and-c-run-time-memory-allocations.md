@@ -20,15 +20,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f20c71ad12a64e6d8d14b91310c870477cfc6d4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: a654c2d86ed0eb598a963b56cd6e3ef16ad91f19
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53899622"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154091"
 ---
 # <a name="allocation-hooks-and-c-run-time-memory-allocations"></a>配置攔截和 C 執行階段記憶體配置
-配置攔截函式非常重要的限制是，必須明確地忽略`_CRT_BLOCK`區塊。 這些區塊是由 C 執行階段程式庫函式內部做，如果它們呼叫任何配置內部記憶體的 C 執行階段程式庫函式的記憶體配置。 您可以忽略`_CRT_BLOCK`區塊包含 folloiwng 程式碼，在開始您的配置攔截函式：  
+配置攔截函式非常重要的限制是，必須明確地忽略`_CRT_BLOCK`區塊。 這些區塊是由 C 執行階段程式庫函式內部做，如果它們呼叫任何配置內部記憶體的 C 執行階段程式庫函式的記憶體配置。 您可以忽略`_CRT_BLOCK`所配置的開頭將下列程式碼區塊攔截函式：  
   
 ```cpp
 if ( nBlockUse == _CRT_BLOCK )  

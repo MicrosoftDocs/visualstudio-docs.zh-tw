@@ -19,11 +19,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: cfdd584f607638a5a8e91ff069e0f5a87329533e
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54095416"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54344729"
 ---
 # <a name="ienumdebugpropertyinfoclone"></a>IEnumDebugPropertyInfo::Clone
 建立列舉值，包含目前的列舉值相同的列舉型別狀態。  

@@ -9,18 +9,16 @@ manager: douge
 ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4236085ffa0cacade86acfd4ca68caf38e54f165
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: 915475b9f20b57871a8228ebde022d0b6ce8f3b6
+ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53885586"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54204264"
 ---
 # <a name="could-not-retrieve-schema-information-for-database-object-object-name"></a>無法擷取資料庫物件 \<物件名稱> 的結構描述資訊
 
 通常在將物件從 [伺服器總管] 或 [資料庫總管] 中複製至剪貼簿，然後從資料庫中刪除，再貼上至設計工具時，就會顯示這則訊息。 因為資料庫物件不再存在，所以會出現這則訊息。
-
-若要更正這個錯誤，請選取**確定**關閉對話方塊。
 
 ## <a name="see-also"></a>另請參閱
 

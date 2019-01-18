@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ddf9e610236cc50ccd809413bbe80e2eaad31a87
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8dc3e25b55f5f30ebfeb9f790baba0bb5ad8797c
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53840638"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54270189"
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>使用 UI 自動化來測試您的程式碼
 
@@ -216,7 +216,7 @@ ms.locfileid: "53840638"
 
 如果您從 [自動程式碼 UI 測試產生器] 中選取 [加入判斷提示] 工具時，想要選取的控制項失去焦點並消失：
 
-有時，新增控制項並驗證其屬性時，您可能需要使用鍵盤。 例如，如果您嘗試錄製使用操作功能表控制項的自動程式化 UI 測試，則在嘗試從 [自動程式化 UI 測試產生器] 中選取 [加入判斷提示] 工具時，控制項中的功能表項目清單會失去焦點並消失。 這示範於下圖中，其中，如果您嘗試使用 [加入判斷提示] 工具選取 Internet Explorer 中的操作功能表，則該操作功能表會失去焦點並消失。
+有時，新增控制項並驗證其屬性時，您可能需要使用鍵盤。 例如，如果您嘗試錄製使用右鍵功能表控制項的自動程式化 UI 測試，則在嘗試從 [自動程式化 UI 測試產生器] 中選取 [加入判斷提示] 工具時，控制項中的功能表項目清單將會失去焦點並消失。 下圖示範了這一點，如果您嘗試使用 [加入判斷提示] 工具選取 Internet Explorer 中的右鍵功能表，則該右鍵功能表會失去焦點並消失。
 
 ![CodedUITest&#95;SelectControlKeyboard](../test/media/codeduitest_selectcontrolkeyboard.png)
 

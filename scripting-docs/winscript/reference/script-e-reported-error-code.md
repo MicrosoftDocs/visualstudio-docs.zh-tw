@@ -1,5 +1,5 @@
 ---
-title: SCRIPT_E_REPORTED 錯誤碼 |Microsoft 文件
+title: SCRIPT_E_REPORTED 錯誤碼 |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -12,15 +12,15 @@ caps.latest.revision: 3
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 018cdb5c5fef4e12dc62cf4a06ef0e2b52a98216
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 3a4ced10b24d80b30ddacd2b2d7c4c04312d576a
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24734048"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349201"
 ---
 # <a name="scriptereported-error-code"></a>SCRIPT_E_REPORTED 錯誤碼
-指令碼引擎發生了未處理的例外狀況，主機可透過[IActiveScriptSite::OnScriptError](../../winscript/reference/iactivescriptsite-onscripterror.md)。 主機可以忽略此錯誤。  
+指令碼引擎已報告未處理的例外狀況，以透過主機[IActiveScriptSite::OnScriptError](../../winscript/reference/iactivescriptsite-onscripterror.md)。 主應用程式可以忽略此錯誤。  
   
 ## <a name="syntax"></a>語法  
   

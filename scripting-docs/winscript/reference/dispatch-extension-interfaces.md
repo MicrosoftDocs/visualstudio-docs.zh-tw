@@ -16,11 +16,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: b7b77f096d70b15272e0cce1b985f3c32f89e495
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49940927"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54347251"
 ---
 # <a name="dispatch-extension-interfaces"></a>分派擴充功能的介面
 DispEx.h 標頭檔提供本節所列的介面。  

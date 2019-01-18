@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 86e94b083300558df271091f5a28990b8e3d3d74
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 872b0e55bb34d7fe0bfa27335ca71165985af1ae
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53870764"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269511"
 ---
 # <a name="debugging-native-code"></a>偵錯機器碼
 本章節內容涵蓋原生應用程式一些常見的偵錯問題和技術。 本章節所涵蓋的技術屬高階技術。 使用 Visual Studio 偵錯工具的機制，請參閱 <<c0> [ 第一次查看偵錯工具](../debugger/debugger-feature-tour.md))。  
@@ -67,9 +67,9 @@ ms.locfileid: "53870764"
 
  [偵錯 DLL 專案](../debugger/debugging-dll-projects.md)提供有關如何偵錯原生和 managed Dll 的資訊。
   
- [偵錯工具功能導覽](../debugger/debugger-feature-tour.md)  
+ [偵錯工具簡介](../debugger/debugger-feature-tour.md)  
  提供偵錯相關文件的主要連結。 這些資訊包括：偵錯工具的新功能、設定和準備、中斷點、例外狀況處理、編輯後繼續、偵錯 Managed 程式碼、偵錯機器碼、偵錯 SQL，以及使用者介面的參考。  
   
 ## <a name="see-also"></a>請參閱  
  [偵錯工具安全性](../debugger/debugger-security.md)  
- [在 Visual Studio 中偵錯](../debugger/index.md)[偵錯工具功能導覽](../debugger/debugger-feature-tour.md)
+ [Visual Studio 偵錯](../debugger/index.md) 

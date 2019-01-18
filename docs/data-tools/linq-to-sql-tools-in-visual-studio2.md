@@ -7,15 +7,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 68b19993448ed68520f267177ca760975cd4d4aa
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 0c4b3c752a2ca28c4cfb4b08b2f51f8b8fc6ac23
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53066799"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53894151"
 ---
 # <a name="linq-to-sql-tools-in-visual-studio"></a>Visual Studio 中的 LINQ to SQL 工具
 
@@ -50,7 +49,7 @@ Visual Studio 會建立 *.dbml*檔案，並將它新增至您的解決方案。 
 
 ## <a name="create-entity-classes-that-map-to-database-tables-and-views"></a>建立實體類別對應至資料庫資料表和檢視表
 
-您可以建立實體類別對應到資料表和檢視表的資料庫資料表和檢視表從拖曳**伺服器總管**或**資料庫總管**拖曳至**O/R Designer**。 如先前章節所示，第一個拖曳至設計介面之項目所提供的連接資訊會用於設定 <xref:System.Data.Linq.DataContext>。 如果使用不同連接的後續項目會新增至**O/R Designer**，您可以變更連接<xref:System.Data.Linq.DataContext>。 如需詳細資訊，請參閱[＜How to：建立 LINQ to SQL 類別對應至資料表和檢視 （O/R 設計工具）](../data-tools/how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)。
+您可以建立實體類別對應到資料表和檢視表的資料庫資料表和檢視表從拖曳**伺服器總管**或**資料庫總管**拖曳至**O/R Designer**。 如先前章節所示，第一個拖曳至設計介面之項目所提供的連接資訊會用於設定 <xref:System.Data.Linq.DataContext>。 如果使用不同連接的後續項目會新增至**O/R Designer**，您可以變更連接<xref:System.Data.Linq.DataContext>。 如需詳細資訊，請參閱[＜How to：建立對應至資料表和檢視的 LINQ to SQL 類別 (O/R 設計工具)](../data-tools/how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)。
 
 ## <a name="create-datacontext-methods-that-call-stored-procedures-and-functions"></a>建立呼叫預存程序和函式的 DataContext 方法
 
@@ -61,7 +60,7 @@ Visual Studio 會建立 *.dbml*檔案，並將它新增至您的解決方案。 
 
 ## <a name="configure-a-datacontext-to-use-stored-procedures-to-save-data-between-entity-classes-and-a-database"></a>設定 DataContext 使用預存程序，將實體類別與資料庫之間的資料儲存
 
-如前所述，您可以建立會呼叫預存程序和函式的 <xref:System.Data.Linq.DataContext> 方法。 此外，您也可以指派用於的預設 LINQ to SQL 的執行階段行為，以執行插入、 更新和刪除的預存程序。 如需詳細資訊，請參閱[＜How to：指定用來執行更新、 插入和刪除 （O/R 設計工具） 的預存程序](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)。
+如前所述，您可以建立會呼叫預存程序和函式的 <xref:System.Data.Linq.DataContext> 方法。 此外，您也可以指派用於的預設 LINQ to SQL 的執行階段行為，以執行插入、 更新和刪除的預存程序。 如需詳細資訊，請參閱[＜How to：指派用來執行更新、插入和刪除的預存程序 (O/R 設計工具)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)。
 
 ## <a name="inheritance-and-the-or-designer"></a>繼承和 O/R 設計工具
 

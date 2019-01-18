@@ -21,11 +21,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 0ea67835a0c60d45d9e79f552183e0a4d6b677ac
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49855127"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54345236"
 ---
 # <a name="expected-identifier-string-or-number"></a>必須是識別項、字串或數字
 您用來宣告物件常值的常值語法不正確。 物件常值的屬性必須是識別項、 字串或數字。 物件常值 （也稱為 「 物件初始設定 」） 是由逗號分隔的清單括號括住所有被封入的屬性： 值配對所組成。 例如:   

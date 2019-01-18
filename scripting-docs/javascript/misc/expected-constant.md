@@ -1,5 +1,5 @@
 ---
-title: 必須是的常數 |Microsoft 文件
+title: 必須是的常數 |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -21,18 +21,18 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: a7cd9907da27ac07ff9e1c41157c2b2e08ef82ab
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24632938"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54344313"
 ---
 # <a name="expected-constant"></a>必須是常數
 您嘗試使用條件式編譯測試陳述式中的 （非條件式編譯） 變數。 條件式編譯測試陳述式必須評估為常數。  
   
 ### <a name="to-correct-this-error"></a>更正這個錯誤  
   
--   取代變數具有常值。  
+-   將變數取代常值。  
   
 -   取代的條件式編譯變數中的變數。  
   

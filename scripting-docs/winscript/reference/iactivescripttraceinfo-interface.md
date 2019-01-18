@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptTraceInfo 介面 |Microsoft 文件
+title: IActiveScriptTraceInfo Interface | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -12,19 +12,19 @@ caps.latest.revision: 2
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: eb286b60bb3c883ae0809882a04b8be96fd9a560
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 6ec8ef67220a70e8eb38ca8f66f7397337fb87a9
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24724908"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349188"
 ---
 # <a name="iactivescripttraceinfo-interface"></a>IActiveScriptTraceInfo 介面
 提供方法來啟動和停止追蹤。  
   
 ## <a name="methods"></a>方法  
   
-|方法|說明|  
+|方法|描述|  
 |------------|-----------------|  
 |[IActiveScriptTraceInfo::StartScriptTracing 方法](../../winscript/reference/iactivescripttraceinfo-startscripttracing-method.md)|啟動指令碼追蹤。|  
 |[IActiveScriptTraceInfo::StopScriptTracing 方法](../../winscript/reference/iactivescripttraceinfo-stopscripttracing-method.md)|停止追蹤。|

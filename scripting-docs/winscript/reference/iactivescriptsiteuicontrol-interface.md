@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptSiteUIControl 介面 |Microsoft 文件
+title: IActiveScriptSiteUIControl 介面 |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -12,18 +12,18 @@ caps.latest.revision: 2
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8563137c855a9c602b817967e610be6a7e4f5e27
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 39f763a4153671628dbdcf9867629309f7458b33
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24724918"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54348330"
 ---
 # <a name="iactivescriptsiteuicontrol-interface"></a>IActiveScriptSiteUIControl 介面
 提供方法來取得 UI 控制項的行為。  
   
 ## <a name="methods"></a>方法  
   
-|方法|說明|  
+|方法|描述|  
 |------------|-----------------|  
 |[IActiveScriptSiteUIControl::GetUIBehavior 方法](../../winscript/reference/iactivescriptsiteuicontrol-getuibehavior-method.md)|取得[SCRIPTUICHANDLING 列舉](../../winscript/reference/scriptuichandling-enumeration.md)表示應該處理 UI 控制項的方式。|

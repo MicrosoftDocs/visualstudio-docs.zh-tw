@@ -19,10 +19,10 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.openlocfilehash: 3bd82bd99901ba0b8df400e3780b17d1baadab0c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "53837286"
 ---
 # <a name="creating-a-ui-by-using-xaml-designer-in-visual-studio"></a>在 Visual Studio 中使用 XAML 設計工具建立 UI
@@ -91,9 +91,9 @@ Visual Studio 中的 XAML 設計工具提供視覺化介面，協助您設計以
 
  **顯示**：為應用程式指定不同的顯示大小和解析度。
 
- **方向**指定不同的方向，應用程式：**橫向**或是**直向**。
+ **方向**指定不同的方向，應用程式：[橫向] 或 [直向]。
 
- **Edge**指定不同的邊緣對齊方式，您的應用程式：**兩者**，**左**，**右邊**，或**無**。
+ **Edge**指定不同的邊緣對齊方式，您的應用程式：[兩者]、[靠左]、[靠右] 或 [無]。
 
  **高對比**：根據選取的對比設定，預覽應用程式。 當您將這個設定設為 [ **預設**] 以外的值，就會覆寫 App.xaml 中設定的 `RequestedTheme` 屬性。
 
@@ -142,4 +142,4 @@ Visual Studio 中的 XAML 設計工具提供視覺化介面，協助您設計以
  每個屬性值的右邊是顯示為方塊符號的 *「屬性標記」* (Property Marker)。 屬性標記的有無表示屬性是否已套用資料繫結或資源。 例如，白色方塊符號表示預設值，黑色方塊符號通常表示已套用本機資源，而橙色方塊通常表示已套用資料繫結。 當您按一下屬性標記時，您可以巡覽至樣式定義、開啟資料繫結產生器，或開啟資源選擇器。
 
 ## <a name="see-also"></a>請參閱
- [使用 XAML 設計工具中的項目](../designers/working-with-elements-in-xaml-designer.md)[如何建立和套用資源](../designers/how-to-create-and-apply-a-resource.md)[逐步解說：繫結至 XAML 設計工具中的資料](../designers/walkthrough-binding-to-data-in-xaml-designer.md)
+ [使用 XAML 設計工具中的項目](../designers/working-with-elements-in-xaml-designer.md)[如何建立和套用資源](../designers/how-to-create-and-apply-a-resource.md)[逐步解說：在 XAML 設計工具中繫結至資料](../designers/walkthrough-binding-to-data-in-xaml-designer.md)

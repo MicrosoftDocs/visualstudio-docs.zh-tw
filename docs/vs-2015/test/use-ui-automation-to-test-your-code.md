@@ -22,10 +22,10 @@ caps.latest.revision: 87
 ms.author: gewarren
 manager: douge
 ms.openlocfilehash: 31d11e16eba87efd19ae07afde64e27e9905636c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "53899596"
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>使用 UI 自動化來測試您的程式碼
@@ -158,7 +158,7 @@ ms.locfileid: "53899596"
 
    本主題中的其餘各節提供此程序中各步驟的更多詳細資料。
 
-   如需更詳細的範例，請參閱[逐步解說：建立、 編輯和維護自動程式化的 UI 測試](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)。 在這個逐步解說中，您將建立簡單的 Windows Presentation Foundation (WPF) 應用程式，以示範如何建立、編輯和維護自動程式化 UI 測試。 本逐步解說提供解決方案用來修正各種因時間問題和控制項重構而中斷的測試。
+   如需更詳細的範例，請參閱[逐步解說：建立、編輯及維護自動程式化 UI 測試](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)。 在這個逐步解說中，您將建立簡單的 Windows Presentation Foundation (WPF) 應用程式，以示範如何建立、編輯和維護自動程式化 UI 測試。 本逐步解說提供解決方案用來修正各種因時間問題和控制項重構而中斷的測試。
 
 ###  <a name="starting"></a> 啟動和停止受測試的應用程式
  *我不想要分別針對每個測試啟動和停止應用程式、瀏覽器或資料庫。我要如何避免這麼做？*
@@ -295,7 +295,7 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 ##  <a name="VerifyingCodeCUITModify"></a> 自訂您的自動程式化 UI 測試
  在您建立自動程式化 UI 測試之後，就可以在 Visual Studio 中使用下列任何工具對其進行編輯：
 
--   自動程式化 UI 測試產生器若要將其他控制項和驗證加入至您的測試中使用自動程式化 UI 測試產生器。 請參閱本主題中的[加入控制項並驗證其屬性](#VerifyingCodeUsingCUITGenerateAssertions)小節。
+-   **自動程式化 UI 測試產生器：** 使用自動程式化 UI 測試產生器，將其他控制項和驗證加入至您的測試。 請參閱本主題中的[加入控制項並驗證其屬性](#VerifyingCodeUsingCUITGenerateAssertions)小節。
 
 -   **自動程式化 UI 測試編輯器：** 自動程式碼 UI 測試編輯器可讓您輕鬆地修改自動程式碼 UI 測試。 您可以使用自動程式碼 UI 測試編輯器，尋找、檢視和編輯您的測試方法。 您也可以在 UI 控制項對應中編輯 UI 動作和其相關聯控制項。 如需詳細資訊，請參閱[使用自動程式化 UI 測試編輯器來編輯自動程式化 UI 測試](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md)。
 
@@ -305,7 +305,7 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 
     -   在您建立自動程式化 UI 測試之後，就可以將它修改為透過資料驅動。 如需詳細資訊，請參閱[建立資料驅動自動程式化 UI 測試](../test/creating-a-data-driven-coded-ui-test.md)。
 
-    -   在自動程式化 UI 測試播放中，您可以指示測試等待發生特定事件 (例如出現視窗、進度列消失等)。 若要這樣做，請加入適當的 UITestControl.WaitForControlXXX() 方法。 如需可用方法的完整清單，請參閱[讓自動程式化 UI 測試在播放期間等候特定事件](../test/making-coded-ui-tests-wait-for-specific-events-during-playback.md)。 如需等待需使用 WaitForControlEnabled 方法啟用控制項的自動程式化 UI 測試的範例，請參閱[逐步解說：建立、 編輯和維護自動程式化的 UI 測試](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)。
+    -   在自動程式化 UI 測試播放中，您可以指示測試等待發生特定事件 (例如出現視窗、進度列消失等)。 若要這樣做，請加入適當的 UITestControl.WaitForControlXXX() 方法。 如需可用方法的完整清單，請參閱[讓自動程式化 UI 測試在播放期間等候特定事件](../test/making-coded-ui-tests-wait-for-specific-events-during-playback.md)。 如需使用 WaitForControlEnabled 方法等待啟用控制項的自動程式化 UI 測試範例，請參閱[逐步解說：建立、編輯及維護自動程式化 UI 測試](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)。
 
     -   自動程式化 UI 測試支援 Internet Explorer 9 和 Internet Explorer 10 所含的一些 HTML5 控制項。 如需詳細資訊，請參閱[在自動程式化 UI 測試中使用 HTML5 控制項](../test/using-html5-controls-in-coded-ui-tests.md)。
 
@@ -447,9 +447,9 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
  您可以使用自動程式化 UI 測試記錄來分析自動程式化 UI 測試。 自動程式碼 UI 測試記錄會篩選和錄製您自動程式碼 UI 測試執行的重要資訊。 記錄的格式可讓您快速偵錯問題。 如需詳細資訊，請參閱[使用自動程式化 UI 測試記錄分析自動程式化 UI 測試](../test/analyzing-coded-ui-tests-using-coded-ui-test-logs.md)。
 
 ##  <a name="VerifyCodeUsingCUITWhatsNext"></a> 後續步驟
- **其他選項來執行自動程式化 UI 測試：** 本主題稍早所述，您可以直接從 Visual Studio 中，執行自動程式化的 UI 測試。 此外，您可以從 [!INCLUDE[TCMext](../includes/tcmext-md.md)] 或 [!INCLUDE[esprbuild](../includes/esprbuild-md.md)] 執行自動化 UI 測試。 與其他自動化測試不同，如果自動化自動程式化 UI 測試，則在您執行程式碼 UI 測試時，其必須與桌面進行互動。
+ **執行自動程式化 UI 測試的其他選項：** 您可以直接從 Visual Studio 執行自動程式化 UI 測試 (如本主題前面所述)。 此外，您可以從 [!INCLUDE[TCMext](../includes/tcmext-md.md)] 或 [!INCLUDE[esprbuild](../includes/esprbuild-md.md)] 執行自動化 UI 測試。 與其他自動化測試不同，如果自動化自動程式化 UI 測試，則在您執行程式碼 UI 測試時，其必須與桌面進行互動。
 
-- [如何：從 Microsoft Visual Studio 執行測試](http://msdn.microsoft.com/library/1a1207a9-2a33-4a1e-a1e3-ddf0181b1046)
+- [如何：從 Microsoft Visual Studio 執行測試](http://msdn.microsoft.com/library/1a1207a9-2a33-4a1e-a1e3-ddf0181b1046) \(英文\)
 
 - [在 Microsoft Test Manager 中執行自動化測試](http://msdn.microsoft.com/en-us/0632f265-63fe-4859-a413-9bb934c66835)
 
@@ -459,11 +459,11 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 
 - [從命令列執行自動化測試](http://msdn.microsoft.com/library/f18179c6-b688-4e41-9898-8aca130c4fc3)
 
-- [如何：若要執行與桌面互動的測試設定測試代理程式](/visualstudio/test/how-to-set-up-your-test-agent-to-run-tests-that-interact-with-the-desktop?view=vs-2015)
+- [如何：將測試代理程式設定為執行與桌面互動的測試](/visualstudio/test/how-to-set-up-your-test-agent-to-run-tests-that-interact-with-the-desktop?view=vs-2015)
 
 - [&#91;已停用&#93;在負載測試中使用自動程式化 UI 測試](http://msdn.microsoft.com/library/704339ff-7da7-4d5f-acb3-c3b23f4acb43)
 
-  **加入自訂控制項的支援：** 自動程式化的 UI 測試架構不支援每個可能的 UI，而且可能不支援您想要測試的 UI。 例如，您無法立即為 [!INCLUDE[ofprexcel](../includes/ofprexcel-md.md)] 的 UI 建立自動程式碼 UI 測試。 不過，您可以建立自動程式化 UI 測試架構的擴充功能，以支援自訂控制項。
+  **新增自訂控制項的支援：** 自動程式化 UI 測試架構不支援每個可能的 UI，而且可能不支援您要測試的 UI。 例如，您無法立即為 [!INCLUDE[ofprexcel](../includes/ofprexcel-md.md)] 的 UI 建立自動程式碼 UI 測試。 不過，您可以建立自動程式化 UI 測試架構的擴充功能，以支援自訂控制項。
 
 - [啟用控制項的自動程式化 UI 測試](../test/enable-coded-ui-testing-of-your-controls.md)
 
@@ -486,12 +486,12 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 ### <a name="forum"></a>論壇
 - [Visual Studio 使用者介面自動化測試 (包括 CodedUI)](http://go.microsoft.com/fwlink/?LinkID=224497)
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap>
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert>
 - [改善程式碼品質](http://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)
-- [逐步解說：建立、 編輯和維護自動程式化的 UI 測試](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)
+- [逐步解說：建立、編輯及維護自動程式化 UI 測試](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)
 - [自動程式化 UI 測試的結構](../test/anatomy-of-a-coded-ui-test.md)
 - [自動程式化 UI 測試的最佳做法](../test/best-practices-for-coded-ui-tests.md)
 - [測試含有多個 UI 對應的大型應用程式](../test/testing-a-large-application-with-multiple-ui-maps.md)

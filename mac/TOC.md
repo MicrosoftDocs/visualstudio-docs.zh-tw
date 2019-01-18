@@ -1,7 +1,8 @@
-# [Visual Studio for Mac 簡介](index.md)
-# [IDE 導覽](ide-tour.md)
+---
+# [Visual Studio for Mac](index.md)
+# [IDE 導覽](/visualstudio/mac/ide-tour/)
 
-# [安裝](installation.md)
+# [安裝](/visualstudio/mac/installation/)
 ## [在防火牆或 Proxy 後方安裝及使用](install-behind-a-firewall-or-proxy-server.md)
 ## [安裝預覽版本](install-preview.md)
 ## [更新](update.md)
@@ -41,9 +42,9 @@
 # [編譯和建置](compiling-and-building.md)
 ## [建置和清除專案與方案](building-and-cleaning-projects-and-solutions.md)
 ## [建置動作](build-actions.md)
-## [自訂建置系統](customizing-build-system.md)
-## [設定](configurations.md)
-### [建立及編輯設定](create-and-edit-configurations.md)
+## [自訂組建系統](customizing-build-system.md)
+## [組態](configurations.md)
+### [建立和編輯組態](create-and-edit-configurations.md)
 
 # [版本控制](version-control.md)
 ## [TF 版本控制](tf-version-control.md)
@@ -65,6 +66,7 @@
 ### [使用 Unity 工具](using-vsmac-tools-unity.md)
 ### [在 Unity 中使用 .NET 4.x](/visualstudio/cross-platform/unity-scripting-upgrade/?context=visualstudio/mac/context)
 ### [變更記錄](/visualstudio/cross-platform/change-log-visual-studio-tools-for-unity-mac/?context=visualstudio/mac/context)
+## [使用 Xamarin 開發行動裝置應用程式](/xamarin/)
 
 # [協助工具選項](accessibility.md)
 

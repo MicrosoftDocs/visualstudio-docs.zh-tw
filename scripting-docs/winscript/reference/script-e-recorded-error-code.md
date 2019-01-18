@@ -1,5 +1,5 @@
 ---
-title: SCRIPT_E_RECORDED 錯誤碼 |Microsoft 文件
+title: SCRIPT_E_RECORDED 錯誤碼 |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -12,15 +12,15 @@ caps.latest.revision: 3
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fcefd3ff7ca2f084366f1317b47d1718b5e71fc1
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 8473c905f7524c72449d96c32bec4260e2502e34
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24733948"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349084"
 ---
 # <a name="scripterecorded-error-code"></a>SCRIPT_E_RECORDED 錯誤碼
-已將指令碼引擎與主機之間傳遞錯誤。 主機必須傳遞給呼叫者的錯誤碼。  
+指令碼引擎和主機之間已傳遞錯誤。 主機必須傳遞給呼叫者的錯誤程式碼。  
   
 ## <a name="syntax"></a>語法  
   

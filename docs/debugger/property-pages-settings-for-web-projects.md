@@ -21,17 +21,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 09aeb8d97c1caf3eca067cd7992eb96c9d7ef7c1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 717e57a4c4ba739236fa3b66a444dd854d357dcc
+ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53892659"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54204290"
 ---
 # <a name="property-pages-settings-for-web-projects"></a>Web 專案的屬性頁設定
 您可以在 [屬性頁] 對話方塊中使用[偵錯和發行組態](../debugger/how-to-set-debug-and-release-configurations.md)中所討論的方法，變更網站偵錯組態的屬性設定。 下表顯示 [屬性頁] 對話方塊中與偵錯工具相關的設定位置。  
   
-### <a name="configuration-properties-folder-start-options-category"></a>組態屬性資料夾 (起始選項分類)  
+### <a name="start-options-category"></a>啟動選項類別
   
 | **設定** | **描述** |
 | - | - |

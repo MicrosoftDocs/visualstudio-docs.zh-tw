@@ -8,14 +8,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 21ebc3e81852abb11a8c48c426d56eb837a19005
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: 2196d90dbd82f7aee6cca2945621025722497cbd
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53821037"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227573"
 ---
-# <a name="using-the-microsoft-monitoring-agent"></a>使用 Microsoft Monitoring Agent
+# <a name="using-the-microsoft-monitoring-agent-c-visual-basic"></a>使用 Microsoft Monitoring Agent (C#，Visual Basic)
+
 您可以使用 **Microsoft Monitoring Agent**，在本機監視裝載 IIS 的 ASP.NET Web 應用程式和 SharePoint 2010 或 2013 應用程式是否發生錯誤、效能問題或其他問題。 您可以將來自代理程式的診斷事件儲存至 IntelliTrace 記錄檔 (.iTrace)。 接著，您可以在 Visual Studio Enterprise (但不能在 Professional 或 Community 版本) 中開啟記錄檔，以偵錯所有 Visual Studio 診斷工具的問題。 您也可以透過 **Trace** 模式執行代理程式，即可收集 IntelliTrace 診斷資料和方法資料。 Microsoft Monitoring Agent 可以與 [Application Insights](/azure/application-insights/) 和 [System Center Operation Manager](/previous-versions/system-center/system-center-2012-R2/hh205987(v=sc.12))整合。 Microsoft Monitoring Agent 在安裝時確實會變更目標系統的環境。  
   
 > [!NOTE]
@@ -31,7 +32,8 @@ ms.locfileid: "53821037"
   
 3.  [步驟 3：儲存記錄的事件](#SaveEvents)  
   
-##  <a name="SetUpMonitoring"></a> 步驟 1：設定 Microsoft Monitoring Agent  
+##  <a name="SetUpMonitoring"></a> 步驟 1：設定 Microsoft Monitoring Agent
+
  在網頁伺服器上設定獨立代理程式，以執行本機監視，而不需要變更應用程式。 如果您使用 System Center 2012，請參閱 [安裝 Microsoft Monitoring Agent](/previous-versions/system-center/system-center-2012-R2/dn465156(v=sc.12))。  
   
 ###  <a name="SetUpStandaloneMMA"></a> 設定獨立代理程式  
@@ -70,7 +72,7 @@ ms.locfileid: "53821037"
   
 2.  從預設安裝位置匯入 Microsoft Monitoring Agent PowerShell 模組：  
   
-     **PS C: > 匯入模組"C:\Program Files\Microsoft Monitoring Agent\Agent\PowerShell\Microsoft.MonitoringAgent.PowerShell\Microsoft.MonitoringAgent.PowerShell.dll"**  
+     **PS C:>Import-Module "C:\Program Files\Microsoft Monitoring Agent\Agent\PowerShell\Microsoft.MonitoringAgent.PowerShell\Microsoft.MonitoringAgent.PowerShell.dll"**  
   
 3.  [造訪 TechNet](http://technet.microsoft.com/systemcenter/default) 以取得最新的說明內容。  
   
@@ -116,15 +118,15 @@ ms.locfileid: "53821037"
   
      以下是簡短的語法：  
   
-     **Start-webapplicationmonitoring** *"\<appName > 」*  *\<monitoringMode >* *"\<outputPath >"* *\<UInt32 >* *"\<collectionPlanPathAndFileName > 」*  
+     **Start-WebApplicationMonitoring** *"\<appName>"* *\<monitoringMode>* *"\<outputPath>"* *\<UInt32>* *"\<collectionPlanPathAndFileName>"*  
   
      以下是僅使用 Web 應用程式名稱和輕量型 **Monitor** 模式的範例：  
   
-     **PS C: > Start-webapplicationmonitoring"FabrikamFabrikamFiber.Web 「 監視 」 C:IntelliTraceLogs"**  
+     **PS C:>Start-WebApplicationMonitoring "FabrikamFabrikamFiber.Web" Monitor "C:IntelliTraceLogs"**  
   
      以下是使用 IIS 路徑和輕量型 **Monitor** 模式的範例：  
   
-     **PS C: > Start-webapplicationmonitoring"IIS:sitesFabrikamFabrikamFiber.Web 「 監視 」 C:IntelliTraceLogs"**  
+     **PS C:>Start-WebApplicationMonitoring "IIS:sitesFabrikamFabrikamFiber.Web" Monitor "C:IntelliTraceLogs"**  
   
      開始監視之後，您可能會在應用程式重新啟動時看到 Microsoft Monitoring Agent 暫停。  
   
@@ -132,11 +134,11 @@ ms.locfileid: "53821037"
   
     |||  
     |-|-|  
-    |*「\<appName > 」*|在 IIS 中指定網站和 Web 應用程式名稱的路徑。 如果您想要的話，也可以包括 IIS 路徑。<br /><br /> *「\<IISWebsiteName >\\< IISWebAppName\>"*<br /><br /> -或-<br /><br /> **「 IIS:\sites**  *\\< IISWebsiteName\>\\< IISWebAppName\>"*<br /><br /> 您可以在 IIS 管理員中尋找這個路徑。 例如：<br /><br /> ![IIS 網站和 web 應用程式路徑](../debugger/media/ffr_iismanager.png "FFR_IISManager")<br /><br /> 您也可以使用 [Get-WebSite](http://technet.microsoft.com/library/ee807832.aspx) 和 [Get WebApplication](http://technet.microsoft.com/library/ee790554.aspx) 命令。|  
-    |*\<monitoringMode >*|指定監視模式：<br /><br /> <ul><li>**監視**：記錄例外狀況事件和效能事件的最少詳細資料。 這個模式使用預設收集計劃。</li><li>**追蹤**：記錄函式層級詳細資料，或使用指定的收集計劃監視 SharePoint 2010 和 SharePoint 2013 應用程式。 這個模式可能會讓應用程式執行速度變慢。<br /><br /> <ul><li>[問：如何設定應用程式集區的權限？](#FullPermissionsITLog)</li><li>[問：如何取得大部分的資料，而不會讓應用程式變慢？](#Minimizing)</li></ul><br />     這個範例會記錄 SharePoint 網站上所裝載 SharePoint 應用程式的事件：<br /><br />     **Start-webapplicationmonitoring"FabrikamSharePointSite\FabrikamSharePointApp 」 追蹤"C:\Program Files\Microsoft Monitoring Agent\Agent\IntelliTraceCollector\collection_plan.ASP.NET.default.xml 」 的 「 C:\IntelliTraceLogs"**</li><li>**自訂**：使用指定的自訂收集計劃來記錄自訂詳細資料。 如果您在啟動監視之後編輯收集計劃，則必須重新啟動監視。</li></ul>|  
-    |*「\<outputPath > 」*|指定儲存 IntelliTrace 記錄檔的完整目錄路徑。 請務必在開始監視之前建立這個目錄。|  
-    |*\<UInt32 >*|指定 IntelliTrace 記錄檔的大小上限。 IntelliTrace 記錄檔的預設大小上限為 250 MB。<br /><br /> 記錄檔達到這個限制時，代理程式會覆寫最早的項目，以挪出空間供更多項目使用。 若要變更這個限制，請使用 **-MaximumFileSizeInMegabytes** 選項，或編輯收集計劃中的 `MaximumLogFileSize` 屬性。|  
-    |*「\<collectionPlanPathAndFileName > 」*|指定收集計劃的完整路徑或相對路徑和檔案名稱。 這個計劃是一個可進行代理程式設定的 .xml 檔案。<br /><br /> 這些計劃隨附於代理程式，並使用 Web 應用程式和 SharePoint 應用程式：<br /><br /> -   **collection_plan.ASP.NET.default.xml**<br />     僅收集事件，例如例外狀況、效能事件、資料庫呼叫和網頁伺服器要求。<br />-   **collection_plan.ASP.NET.trace.xml**<br />     收集函式層級呼叫以及預設收集計劃中的所有資料。 這個計劃適用於詳細分析，但可能會讓應用程式變慢。<br /><br /> 您可以在代理程式的子資料夾中找到這些計劃的當地語系化版本。 您也可以 [自訂這些計劃，或建立自己的計劃](http://go.microsoft.com/fwlink/?LinkId=227871) ，即可避免應用程式變慢。 請將任何自訂計劃與代理程式放在相同的安全位置。<br /><br /> [問：如何取得大部分的資料，而不讓應用程式變慢？](#Minimizing)|  
+    |*"\<appName>"*|在 IIS 中指定網站和 Web 應用程式名稱的路徑。 如果您想要的話，也可以包括 IIS 路徑。<br /><br /> *"\<IISWebsiteName>\\<IISWebAppName\>"*<br /><br /> -或-<br /><br /> **"IIS:\sites** *\\<IISWebsiteName\>\\<IISWebAppName\>"*<br /><br /> 您可以在 IIS 管理員中尋找這個路徑。 例如：<br /><br /> ![IIS 網站和 web 應用程式路徑](../debugger/media/ffr_iismanager.png "FFR_IISManager")<br /><br /> 您也可以使用 [Get-WebSite](http://technet.microsoft.com/library/ee807832.aspx) 和 [Get WebApplication](http://technet.microsoft.com/library/ee790554.aspx) 命令。|  
+    |*\<monitoringMode>*|指定監視模式：<br /><br /> <ul><li>**監視**：記錄例外狀況事件和效能事件的最少詳細資料。 這個模式使用預設收集計劃。</li><li>**追蹤**：記錄函式層級詳細資料，或使用指定的收集計劃監視 SharePoint 2010 和 SharePoint 2013 應用程式。 這個模式可能會讓應用程式執行速度變慢。<br /><br /> <ul><li>[問：如何設定應用程式集區的權限？](#FullPermissionsITLog)</li><li>[問：如何取得大部分的資料，而不會讓應用程式變慢？](#Minimizing)</li></ul><br />     這個範例會記錄 SharePoint 網站上所裝載 SharePoint 應用程式的事件：<br /><br />     **Start-webapplicationmonitoring"FabrikamSharePointSite\FabrikamSharePointApp 」 追蹤"C:\Program Files\Microsoft Monitoring Agent\Agent\IntelliTraceCollector\collection_plan.ASP.NET.default.xml 」 的 「 C:\IntelliTraceLogs"**</li><li>**自訂**：使用指定的自訂收集計劃來記錄自訂詳細資料。 如果您在啟動監視之後編輯收集計劃，則必須重新啟動監視。</li></ul>|  
+    |*"\<outputPath>"*|指定儲存 IntelliTrace 記錄檔的完整目錄路徑。 請務必在開始監視之前建立這個目錄。|  
+    |*\<UInt32>*|指定 IntelliTrace 記錄檔的大小上限。 IntelliTrace 記錄檔的預設大小上限為 250 MB。<br /><br /> 記錄檔達到這個限制時，代理程式會覆寫最早的項目，以挪出空間供更多項目使用。 若要變更這個限制，請使用 **-MaximumFileSizeInMegabytes** 選項，或編輯收集計劃中的 `MaximumLogFileSize` 屬性。|  
+    |*"\<collectionPlanPathAndFileName>"*|指定收集計劃的完整路徑或相對路徑和檔案名稱。 這個計劃是一個可進行代理程式設定的 .xml 檔案。<br /><br /> 這些計劃隨附於代理程式，並使用 Web 應用程式和 SharePoint 應用程式：<br /><br /> -   **collection_plan.ASP.NET.default.xml**<br />     僅收集事件，例如例外狀況、效能事件、資料庫呼叫和網頁伺服器要求。<br />-   **collection_plan.ASP.NET.trace.xml**<br />     收集函式層級呼叫以及預設收集計劃中的所有資料。 這個計劃適用於詳細分析，但可能會讓應用程式變慢。<br /><br /> 您可以在代理程式的子資料夾中找到這些計劃的當地語系化版本。 您也可以 [自訂這些計劃，或建立自己的計劃](http://go.microsoft.com/fwlink/?LinkId=227871) ，即可避免應用程式變慢。 請將任何自訂計劃與代理程式放在相同的安全位置。<br /><br /> [問：如何取得大部分的資料，而不讓應用程式變慢？](#Minimizing)|  
   
      如需完整語法和其他範例的詳細資訊，請執行 **get-help Start-WebApplicationMonitoring –detailed** 命令或 **get-help Start-WebApplicationMonitoring -examples** 命令。  
   
@@ -235,19 +237,19 @@ ms.locfileid: "53821037"
   
 2. 執行 [Checkpoint-WebApplicationMonitoring](http://go.microsoft.com/fwlink/?LinkID=313684) 命令，以儲存 IntelliTrace 記錄檔的快照：  
   
-    **Checkpoint-webapplicationmonitoring** *"\<IISWebsiteName >\\< IISWebAppName\>"*  
+    **Checkpoint-WebApplicationMonitoring** *"\<IISWebsiteName>\\<IISWebAppName\>"*  
   
     \-或-  
   
-    **Checkpoint-webapplicationmonitoring"IIS:\sites**  *\\< IISWebsiteName\>\\< IISWebAppName\>"*  
+    **Checkpoint-WebApplicationMonitoring "IIS:\sites** *\\<IISWebsiteName\>\\<IISWebAppName\>"*  
   
     例如：  
   
-    **PS C:\\> Checkpoint-webapplicationmonitoring"Fabrikam\FabrikamFiber.Web 」**  
+    **PS C:\\>Checkpoint-WebApplicationMonitoring "Fabrikam\FabrikamFiber.Web"**  
   
     -或-  
   
-    **PS C: > Checkpoint-webapplicationmonitoring"IIS:sitesFabrikamFabrikamFiber.Web 」**  
+    **PS C:>Checkpoint-WebApplicationMonitoring "IIS:sitesFabrikamFabrikamFiber.Web"**  
   
     如需詳細資訊，請執行 **get-help Checkpoint-WebApplicationMonitoring -detailed** 命令或 **get-help Checkpoint-WebApplicationMonitoring -examples** 命令。  
   
@@ -265,23 +267,23 @@ ms.locfileid: "53821037"
   
 2. 執行 [Stop-WebApplicationMonitoring](http://go.microsoft.com/fwlink/?LinkID=313687) 命令，即可建立 IntelliTrace 記錄檔，並停止監視特定的 Web 應用程式：  
   
-    **Stop-webapplicationmonitoring** *"\<IISWebsiteName >\\< IISWebAppName\>"*  
+    **Stop-WebApplicationMonitoring** *"\<IISWebsiteName>\\<IISWebAppName\>"*  
   
     \-或-  
   
-    **Stop-webapplicationmonitoring"IIS:\sites**  *\\< IISWebsiteName\>\\< IISWebAppName\>"*  
+    **Stop-WebApplicationMonitoring "IIS:\sites** *\\<IISWebsiteName\>\\<IISWebAppName\>"*  
   
     或者，停止監視所有 Web 應用程式：  
   
-    **Stop-webapplicationmonitoring-所有**  
+    **Stop-WebApplicationMonitoring -All**  
   
     例如：  
   
-    **PS C:\\> Stop-webapplicationmonitoring"Fabrikam\iFabrikamFiber.Web 」**  
+    **PS C:\\>Stop-WebApplicationMonitoring "Fabrikam\iFabrikamFiber.Web"**  
   
     \-或-  
   
-    **PS C:\\> Stop-webapplicationmonitoring"IIS:\sites\Fabrikam\FabrikamFiber.Web 」**  
+    **PS C:\\>Stop-WebApplicationMonitoring "IIS:\sites\Fabrikam\FabrikamFiber.Web"**  
   
     如需詳細資訊，請執行 **get-help Stop-WebApplicationMonitoring -detailed** 命令或 **get-help Stop-WebApplicationMonitoring -examples** 命令。  
   

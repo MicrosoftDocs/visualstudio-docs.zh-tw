@@ -1,6 +1,6 @@
 ---
-title: 建立受管理物件的自訂檢視 |Microsoft Docs
-ms.date: 11/04/2016
+title: 建立物件的自訂檢視 |Microsoft Docs
+ms.date: 01/08/2019
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.data.elements
@@ -10,7 +10,7 @@ dev_langs:
 - FSharp
 - C++
 helpviewer_keywords:
-- data types [C#], custom
+- data types, custom
 - custom data types
 - managed code, custom data types
 - autoexp.dat file
@@ -23,31 +23,29 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 389deb0b6504ca5c7a3716399429f176e5dc7870
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: c2e4b2d34df1a1e870247112892d4cd00ff887f3
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53861432"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227638"
 ---
-# <a name="create-custom-views-of-managed-objects"></a>建立受控物件的自訂檢視
+# <a name="create-custom-views-of-objects-c-visual-basic-c"></a>建立自訂檢視的物件 (C#，Visual Basic、 c + +)
 您可以自訂 Visual Studio 在偵錯工具變數視窗中顯示資料型別的方式。  
+
+## <a name="native-code"></a>機器碼
+
+針對 c + + 程式碼，您可以新增自訂資料型別擴充，使用 Natvis 架構，如中所述[偵錯工具中建立原生物件的自訂檢視](/visualstudio/debugger/create-custom-views-of-native-objects)。 C + /cli 程式碼，您也可以使用此處所述，在這篇文章中的屬性。
+
+## <a name="attributes"></a>屬性
+
+在C#，Visual Basic 和 c + + (C + + /cli 僅限 CLI 程式碼)，您可以新增自訂資料使用的擴充功能<xref:System.Diagnostics.DebuggerTypeProxyAttribute>， <xref:System.Diagnostics.DebuggerDisplayAttribute>，和<xref:System.Diagnostics.DebuggerBrowsableAttribute>。  
   
-## <a name="attributes"></a>屬性  
- 在 C# 和 Visual Basic 中，您可以使用 <xref:System.Diagnostics.DebuggerTypeProxyAttribute>、<xref:System.Diagnostics.DebuggerDisplayAttribute> 和 <xref:System.Diagnostics.DebuggerBrowsableAttribute> 加入自訂資料的擴充功能。  
-  
- 在 [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] 程式碼中，Visual Basic 不支援 DebuggerBrowsable 屬性。 最新版的 .NET Framework 中已移除此限制。  
-  
-## <a name="visualizers"></a>視覺化工具  
- 您可以撰寫視覺化檢視以顯示任何 Managed 資料型別。 如需詳細資訊，請參閱[＜How to：撰寫視覺化檢視](/visualstudio/debugger/create-custom-visualizers-of-data)。  
-  
-## <a name="native-code"></a>機器碼  
- 針對機器碼，您可以將自訂資料型別擴充功能加入至 autoexp.dat 檔，其位於 Program Files\Microsoft Visual Studio 11.0\Common7\Packages\Debugger 目錄中。 如何撰寫 `autoexp` 規則的指令位於檔案本身中。  
-  
-> [!CAUTION]
->  這個檔案的結構和 autoexp 規則語法可能因 Visual Studio 發行版本不同而有所差異。  
-  
- 您也可以透過撰寫運算式評估工具增益集來自訂原生型別檢視。 如需詳細資訊，請參閱[EEAddIn 範例：偵錯運算式評估工具增益集](https://msdn.microsoft.com/library/d4f6b068-c812-45bc-9ec0-7e0363c4bb9e)。  
+在 [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] 程式碼中，Visual Basic 不支援 DebuggerBrowsable 屬性。 最新版的 .NET Framework 中已移除此限制。    
+
+## <a name="visualizers"></a>視覺化工具
+
+您可以撰寫視覺化檢視以顯示任何 Managed 資料型別。 如需詳細資訊，請參閱[＜How to：撰寫視覺化檢視](/visualstudio/debugger/create-custom-visualizers-of-data)。
   
 ## <a name="see-also"></a>請參閱  
  [使用 DebuggerTypeProxy 屬性](../debugger/using-debuggertypeproxy-attribute.md)   

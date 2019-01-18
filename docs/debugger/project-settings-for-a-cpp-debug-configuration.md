@@ -2,7 +2,6 @@
 title: C + + 偵錯組態的專案設定
 ms.custom: seodec18
 ms.date: 11/26/2018
-ms.technology: vs-ide-debug
 ms.topic: reference
 f1_keywords:
 - VC.Project.VCDebugSettings.WebBrowser.DebuggerType
@@ -113,20 +112,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 951b46bfc6ef0910731dfe76cc9913f2c4a423ad
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 4351553d5df55dd5dceeffe542ff542a9487d6e5
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53066893"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "53957906"
 ---
 # <a name="project-settings-for-a-c-debug-configuration"></a>C++ 偵錯組態的專案設定
-您可以變更專案設定中的 C 或 Visual c + + 偵錯組態**屬性頁** 對話方塊中所述[How to:設定偵錯和發行組態](../debugger/how-to-set-debug-and-release-configurations.md)。 下表顯示 **[屬性頁]** 對話方塊中與偵錯工具相關的設定位置。  
+您可以變更專案設定中的 C 或 Visual c + + 偵錯組態**屬性頁** 對話方塊中所述[How to:設定偵錯和版本組態](../debugger/how-to-set-debug-and-release-configurations.md)。 下表顯示 [屬性頁] 對話方塊中與偵錯工具相關的設定位置。  
   
 > [!NOTE]
 >  中的偵錯專案設定**組態屬性/偵錯**類別是不同的 UWP 應用程式，並且以 c + + 撰寫的元件。 請參閱[啟動偵錯工作階段 (VB、 C#，c + + 和 XAML)](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)。  
   
- 每個偵錯 屬性設定會自動寫入並儲存在 「 每位使用者 」 檔案 (.vcxproj.user) 為您的方案，當您儲存您的解決方案。  
+ 每個偵錯 屬性設定會自動寫入並儲存在 「 每位使用者 」 檔案 (。.vcxproj.user) 為您的方案，當您儲存您的解決方案。  
 
  指定哪些偵錯工具中使用**偵錯工具啟動**清單方塊中下, 表中所述。 您的選擇將影響屬性的可見性。  
     

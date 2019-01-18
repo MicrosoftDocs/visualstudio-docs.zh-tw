@@ -6,7 +6,7 @@ helpviewer_keywords:
 - data, displaying
 - data sources, displaying data
 - Data Sources window
-- dislaying data
+- displaying data
 ms.assetid: be8b6623-86a6-493e-ab7a-050de4661fd6
 author: gewarren
 ms.author: gewarren
@@ -14,12 +14,12 @@ manager: douge
 ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: a84fb954d0d632c217e9a4282f7c33fd6226d677
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: f6e40e5353fb33462459a6d4d4a97b34af800524
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53987216"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154443"
 ---
 # <a name="bind-controls-to-data-in-visual-studio"></a>將控制項繫結至 Visual Studio 中的資料
 

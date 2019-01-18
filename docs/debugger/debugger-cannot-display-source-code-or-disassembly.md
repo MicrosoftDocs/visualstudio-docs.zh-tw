@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2aee62651d6517444eb33aef272a212e5a12f55e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6b68da672fdd0986d0a0bce5c56a13683325d737
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53944372"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54268886"
 ---
 # <a name="debugger-cannot-display-source-code-or-disassembly"></a>偵錯工具無法顯示原始程式碼或反組譯碼
 這個錯誤為：  
@@ -36,6 +36,7 @@ ms.locfileid: "53944372"
   
 -   安全性考量可能會禁止偵錯工具從您正在偵錯的程式中讀取堆疊、執行緒、暫存器和其他的內容資訊。 您正在偵錯 Web 應用程式，但沒有正確的使用權限來存取虛擬目錄時，最常發生這種情形。 請將虛擬目錄的安全性設成 [匿名]，然後再試一次。  
   
-## <a name="see-also"></a>請參閱  
- [在 Visual Studio 中偵錯](../debugger/index.md)[偵錯工具功能導覽](../debugger/debugger-feature-tour.md)   
+## <a name="see-also"></a>請參閱
+ [Visual Studio 偵錯](../debugger/index.md)  
+ [偵錯工具簡介](../debugger/debugger-feature-tour.md)  
  [在偵錯工具中檢視資料](../debugger/viewing-data-in-the-debugger.md)

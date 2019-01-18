@@ -19,11 +19,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 8bb0a1fabc90eea86f440ebca97a9adb1328c401
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54097275"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54348629"
 ---
 # <a name="breakpointstate-enumeration"></a>BREAKPOINT_STATE 列舉
 指出中斷點的狀態。  

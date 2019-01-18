@@ -1,5 +1,5 @@
 ---
-title: IDebugSessionProvider 介面 |Microsoft 文件
+title: IDebugSessionProvider 介面 |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,20 +14,20 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4e61b1e5e794c68e34250f958cdda0f50b68334c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: d6d17546d5461a1ad76b144bf2652672ab4aa675
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727138"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54345143"
 ---
 # <a name="idebugsessionprovider-interface"></a>IDebugSessionProvider 介面
-偵錯工具若要啟用主機和語言的 IDE 所提供的主要介面起始偵錯。 它會建立執行的應用程式的偵錯工作階段。 這個介面是由電腦偵錯管理員實作的。  
+偵錯工具來啟用主機和語言的 IDE 所提供的主要介面啟動偵錯。 它會建立執行中應用程式的偵錯工作階段。 機器偵錯管理員會實作這個介面。  
   
- 除了繼承自`IUnknown`、`IDebugSessionProvider`介面會公開下列方法。  
+ 除了繼承自方法`IUnknown`，則`IDebugSessionProvider`介面會公開下列方法。  
   
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法  
   
-|方法|說明|  
+|方法|描述|  
 |------------|-----------------|  
-|[IDebugSessionProvider::StartDebugSession](../../winscript/reference/idebugsessionprovider-startdebugsession.md)|初始化具有指定的應用程式偵錯工作階段。|
+|[IDebugSessionProvider::StartDebugSession](../../winscript/reference/idebugsessionprovider-startdebugsession.md)|初始化具有指定的應用程式的偵錯工作階段。|

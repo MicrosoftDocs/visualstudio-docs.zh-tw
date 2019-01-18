@@ -29,10 +29,10 @@ manager: douge
 ms.workload:
 - multiple
 ms.openlocfilehash: d970d2b761b2987bc74e94eb5bfefa8f0ffc78ec
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "53892442"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>在 Visual Studio debugger 中指定符號 (.pdb) 和原始程式檔 (C#，c + +、 Visual Basic 中， F#)
@@ -155,7 +155,7 @@ ms.locfileid: "53892442"
   您可以限制命令的*srcsrv.dll*可以從應用程式的執行 *.pdb*列出允許的命令，在名為的檔案*srcsrv.ini*。 地方*srcsrv.ini*相同的資料夾中的檔案*srcsrv.dll*並*devenv.exe*。  
   
   >[!IMPORTANT]
-  >在應用程式的可內嵌任意命令 *.pdb*檔案中，因此請務必將只有您想要執行的命令*srcsrv.ini*檔案。 嘗試執行 *srcsvr.ini* 檔案中未包含的任何命令，會讓確認對話方塊出現。 如需詳細資訊，請參閱[安全性警告：偵錯工具必須執行未受信任的命令](../debugger/security-warning-debugger-must-execute-untrusted-command.md) 
+  >在應用程式的可內嵌任意命令 *.pdb*檔案中，因此請務必將只有您想要執行的命令*srcsrv.ini*檔案。 嘗試執行 *srcsvr.ini* 檔案中未包含的任何命令，會讓確認對話方塊出現。 如需詳細資訊，請參閱[安全性警告：偵錯工具必須執行未受信任的命令](../debugger/security-warning-debugger-must-execute-untrusted-command.md)。 
   >
   >由於不會對命令參數進行任何驗證，因此請謹慎使用受信任的命令。 例如，如果您列出*cmd.exe*中您*srcsrv.ini*，惡意使用者可能在上指定參數*cmd.exe*這會讓它危險。  
   
@@ -179,7 +179,7 @@ ms.locfileid: "53892442"
     
     *VC\<x >.pdb*檔案會儲存個別物件檔案的所有偵錯資訊，並且位在與專案 makefile 相同的目錄中。 每次建立物件檔時，C/c + + 編譯器會將合併到偵錯資訊*VC\<x >.pdb*。 因此，即使每個原始程式檔包含了常見的標頭檔這類 *\<windows.h >*，這些標頭檔的 typedef 也會儲存一次，而非每個目的檔中。 插入的資訊包括類型資訊，但是不包括符號資訊 (例如函式定義)。  
   
-  - *\<專案 >.pdb* 
+  - *\<project>.pdb* 
     
     *\<專案 >.pdb*檔案會儲存專案的所有偵錯資訊 *.exe*檔案，並位於*\debug*子目錄。 這個 *\<project>.pdb* 包含完整的偵錯資訊，包括函式原型，而不僅是在 *VC\<x>.pdb* 找到的類型資訊。 
   

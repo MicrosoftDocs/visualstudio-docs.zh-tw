@@ -1,5 +1,5 @@
 ---
-title: 小數位數超出範圍 |Microsoft 文件
+title: 小數位數超出範圍 |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -21,11 +21,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 17ffec5e6b4cfff85b49f61e7105ca8ce3d75c78
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24633178"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54348460"
 ---
 # <a name="the-number-of-fractional-digits-is-out-of-range"></a>小數點後數字的數目超過範圍
 您嘗試將無效的引數傳遞至函式**Number.prototype.toExponential**。 此函式的引數**toExponential()** 必須介於 0 到 20 （含） 之間。  

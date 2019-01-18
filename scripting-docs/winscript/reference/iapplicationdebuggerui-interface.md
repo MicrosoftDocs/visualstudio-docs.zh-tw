@@ -1,5 +1,5 @@
 ---
-title: IApplicationDebuggerUI 介面 |Microsoft 文件
+title: IApplicationDebuggerUI 介面 |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,21 +14,21 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dbaa04f6790ffc4d80447a6745ca82cc8dba6802
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: e3c5f9e4cabeb4fba31bb039a7cf673ca1759860
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725138"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54348902"
 ---
 # <a name="iapplicationdebuggerui-interface"></a>IApplicationDebuggerUI 介面
-藉由偵錯工具整合式的開發環境 (IDE) (除了`IApplicationDebugger`) 若要讓外部元件更充分掌控偵錯工具的使用者介面 (UI)。  
+藉由將偵錯工具整合式的開發環境 (IDE) (除了`IApplicationDebugger`) 提供給外部元件進一步控制偵錯工具的使用者介面 (UI)。  
   
- 除了繼承自`IUnknown`、`IApplicationDebuggerUI`介面會公開下列方法。  
+ 除了繼承自方法`IUnknown`，則`IApplicationDebuggerUI`介面會公開下列方法。  
   
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法  
   
-|方法|說明|  
+|方法|描述|  
 |------------|-----------------|  
-|[IApplicationDebuggerUI::BringDocumentToTop](../../winscript/reference/iapplicationdebuggerui-bringdocumenttotop.md)|將包含偵錯工具中的第一個指定的偵錯文件視窗顯示使用者介面。|  
-|[IApplicationDebuggerUI::BringDocumentContextToTop](../../winscript/reference/iapplicationdebuggerui-bringdocumentcontexttotop.md)|包含偵錯工具使用者介面中最上層的給定文件內容的視窗，且捲動視窗至內容。|
+|[IApplicationDebuggerUI::BringDocumentToTop](../../winscript/reference/iapplicationdebuggerui-bringdocumenttotop.md)|使用者介面將包含偵錯工具中的第一個指定的偵錯文件的視窗。|  
+|[IApplicationDebuggerUI::BringDocumentContextToTop](../../winscript/reference/iapplicationdebuggerui-bringdocumentcontexttotop.md)|會包含偵錯工具使用者介面中的第一個指定的文件內容的視窗，以及捲動視窗至內容。|

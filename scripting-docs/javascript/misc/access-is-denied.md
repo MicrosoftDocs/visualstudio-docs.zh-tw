@@ -20,11 +20,11 @@ caps.latest.revision: 2
 author: mikejo5000
 ms.author: mikejo
 ms.openlocfilehash: 9b49f60395a853d7dfda91738ccccaba9d585b46
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295159"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349474"
 ---
 # <a name="access-is-denied"></a>存取遭拒。
 指令碼嘗試從來源而不是目前頁面的主機存取資料。 Internet Explorer 及其他瀏覽器所遵循的相同來源原則，只允許程式碼從具有相同配置、主機和目前頁面之 URL 連接埠的來源存取資料。  

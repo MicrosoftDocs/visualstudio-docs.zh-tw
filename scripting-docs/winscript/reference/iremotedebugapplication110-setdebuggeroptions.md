@@ -1,5 +1,5 @@
 ---
-title: IRemoteDebugApplication110::SetDebuggerOptions |Microsoft 文件
+title: IRemoteDebugApplication110::SetDebuggerOptions | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,18 +14,18 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 16782329de6268b309710e60e707d629fd9929a1
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 74662b6cfcfb641a59ac93c862bd38c6fa16a900
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24729378"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54346770"
 ---
 # <a name="iremotedebugapplication110setdebuggeroptions"></a>IRemoteDebugApplication110::SetDebuggerOptions
-呼叫以更新偵錯工具選項。 這個方法應該呼叫之後[IRemoteDebugApplication::ConnectDebugger](../../winscript/reference/iremotedebugapplication-connectdebugger.md)。 [IRemoteDebugApplication::DisconnectDebugger](../../winscript/reference/iremotedebugapplication-disconnectdebugger.md)方法會自動重設為預設選項。 選項預設值為 0 (SDO_NONE)。  
+呼叫以更新 偵錯工具選項。 這個方法應該呼叫之後[IRemoteDebugApplication::ConnectDebugger](../../winscript/reference/iremotedebugapplication-connectdebugger.md)。 [IRemoteDebugApplication::DisconnectDebugger](../../winscript/reference/iremotedebugapplication-disconnectdebugger.md)方法會自動重設為預設選項。 選項預設值為 0 (SDO_NONE)。  
   
 > [!IMPORTANT]
->  [IRemoteDebugApplication 介面](../../winscript/reference/iremotedebugapplication-interface.md)會實作由 PDM v11.0 和更新版本。 可在 activdbg100.h 中找到。  
+>  [IRemoteDebugApplication 介面](../../winscript/reference/iremotedebugapplication-interface.md)是實作由 PDM v11.0 和更新版本。 可在 activdbg100.h 中找到。  
   
 ## <a name="syntax"></a>語法  
   

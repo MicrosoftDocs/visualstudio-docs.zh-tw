@@ -1,3 +1,4 @@
+---
 # [必須是 '{'](expected-left-curly-brace.md)
 # [必須是識別項、字串或數字](expected-identifier-string-or-number.md)
 # [必須是函式](function-expected.md)

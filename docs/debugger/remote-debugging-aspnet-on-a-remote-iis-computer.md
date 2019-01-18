@@ -1,8 +1,7 @@
 ---
-title: 遠端偵錯遠端 IIS 電腦上的 ASP.NET Core |Microsoft 文件
+title: 遠端偵錯 IIS 的遠端電腦上的 ASP.NET Core |Microsoft Docs
 ms.custom: remotedebugging
 ms.date: 05/21/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 573a3fc5-6901-41f1-bc87-557aa45d8858
 author: mikejo5000
@@ -11,19 +10,19 @@ manager: douge
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: bcb0db3a6eab91c517ce731ddf6e201d5a73f1f8
-ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
-ms.translationtype: MT
+ms.openlocfilehash: 683e0cae09144777cbb27ef294676cc44dc0a1a1
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49101065"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "53830829"
 ---
-# <a name="remote-debug-aspnet-core-on-a-remote-iis-computer-in-visual-studio-2017"></a>在 Visual Studio 2017 遠端 IIS 電腦上的遠端偵錯 ASP.NET Core
+# <a name="remote-debug-aspnet-core-on-a-remote-iis-computer-in-visual-studio-2017"></a>在 Visual Studio 2017 中的遠端執行 IIS 的電腦上的遠端偵錯 ASP.NET Core
 偵錯已部署至 IIS 的 ASP.NET 應用程式，安裝並部署您的應用程式的所在的電腦上執行遠端工具，然後連結至您執行的應用程式從 Visual Studio。
 
 ![遠端偵錯工具元件](../debugger/media/remote-debugger-aspnet.png "Remote_debugger_components")
 
-本指南說明如何安裝和設定 Visual Studio 2017 ASP.NET Core、 將它部署到 IIS，並附加從 Visual Studio 遠端偵錯工具。 若要遠端偵錯 ASP.NET 4.5.2，請參閱[在 IIS 電腦上的遠端偵錯 ASP.NET](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)。 您也可以部署，並使用 Azure 的 IIS 上進行偵錯。 針對 Azure App Service，您可以輕鬆地部署和偵錯 IIS 和遠端偵錯工具，並使用預先設定的執行個體上[快照集偵錯工具](../debugger/debug-live-azure-applications.md)或是[從 伺服器總管附加偵錯工具](../debugger/remote-debugging-azure.md)。
+本指南說明如何安裝和設定 Visual Studio 2017 ASP.NET Core、 將它部署至 IIS，並從 Visual Studio 附加遠端偵錯工具。 若要遠端偵錯 ASP.NET 4.5.2，請參閱[在 IIS 電腦上的遠端偵錯 ASP.NET](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)。 您也可以部署，並使用 Azure 的 IIS 上進行偵錯。 針對 Azure App Service，您可以輕鬆地部署和偵錯 IIS 和遠端偵錯工具，並使用預先設定的執行個體上[快照集偵錯工具](../debugger/debug-live-azure-applications.md)或是[從 伺服器總管附加偵錯工具](../debugger/remote-debugging-azure.md)。
 
 這些伺服器設定過這些程序：
 * Windows Server 2012 R2 和 IIS 8
@@ -41,13 +40,13 @@ ms.locfileid: "49101065"
 
 * 如果您需要協助，請確定您的應用程式呈現設定而無法選取，部署，並在 IIS 中正確執行，以便您可以偵錯，請遵循本主題中的所有步驟。
 
-## <a name="create-the-aspnet-core-application-on-the-visual-studio-2017-computer"></a>在 Visual Studio 2017 電腦上建立 ASP.NET Core 應用程式 
+## <a name="create-the-aspnet-core-application-on-the-visual-studio-2017-computer"></a>在 Visual Studio 2017 的電腦上建立 ASP.NET Core 應用程式 
 
-1. 建立新的 ASP.NET Core 應用程式。 (**檔案 > 新增 > 專案**，然後選取**Visual C# > 網路 > ASP.NET Core Web 應用程式**)。
+1. 建立新的 ASP.NET Core 應用程式。 (**檔案 > 新增 > 專案**，然後選取**視覺化C#> Web > ASP.NET Core Web 應用程式**)。
 
-    在**ASP.NET Core**範本區段中，選取**Web 應用程式**。
+    在  **ASP.NET Core**範本區段中，選取**Web 應用程式**。
 
-2. 請確定**ASP.NET Core 2.0**已選取，**啟用 Docker 支援**是**不**選取且**驗證**設為**不驗證**。
+2. 請確定**ASP.NET Core 2.0**選取時，所**啟用 Docker 支援**是**不**選取且**驗證**設為**沒有驗證**。
 
 3. 將專案命名為**MyASPApp** ，按一下 **確定**建立新的方案。
 
@@ -68,14 +67,14 @@ ms.locfileid: "49101065"
 
 當您下載軟體時，您可能會收到負載各種 web 站台指令碼和資源的權限授與的要求。 其中一些資源並不需要，但若要簡化程序中，按一下**新增**出現提示時。
 
-## <a name="install-aspnet-core-on-windows-server"></a>Windows 伺服器上安裝 ASP.NET Core
+## <a name="install-aspnet-core-on-windows-server"></a>在 Windows Server 上安裝 ASP.NET Core
 
-1. 安裝[.NET Core Windows Server 裝載](https://aka.ms/dotnetcore-2-windowshosting)主機系統上的套件組合。 配套在安裝.NET Core 執行階段、.NET Core 程式庫和 ASP.NET Core 模組。 如需詳細的深入指示，請參閱[Publishing to IIS](/aspnet/core/publishing/iis?tabs=aspnetcore2x#iis-configuration)。
+1. 在主控系統上安裝 [.NET Core Windows Server 裝載套件組合](https://aka.ms/dotnetcore-2-windowshosting)。 套件組合會安裝 .NET Core 執行階段、.NET Core 程式庫和 ASP.NET Core 模組。 如需詳細的深入指示，請參閱[Publishing to IIS](/aspnet/core/publishing/iis?tabs=aspnetcore2x#iis-configuration)。
 
     > [!NOTE]
-    > 如果系統沒有網際網路連線，取得並安裝 *[Microsoft Visual c + + 2015年可轉散發](https://www.microsoft.com/download/details.aspx?id=53840)* 之前安裝的.NET Core Windows Server 主控的組合。
+    > 如果系統沒有網際網路連線，請先取得並安裝 [Microsoft Visual C++ 2015 可轉散發套件](https://www.microsoft.com/download/details.aspx?id=53840)，再安裝 .NET Core Windows Server 裝載套件組合。
 
-3. 重新啟動系統 (或執行**net stop was /y**後面**net start w3svc**挑選系統 PATH 的變更在命令提示字元)。
+3. 重新啟動系統 (或從命令提示字元依序執行 **net stop was /y** 和 **net start w3svc**，讓系統 PATH 的變更生效)。
 
 ## <a name="choose-a-deployment-option"></a>選擇部署選項
 
@@ -96,15 +95,15 @@ ms.locfileid: "49101065"
 
 [!INCLUDE [install-web-deploy-with-hosting-server](../deployment/includes/install-web-deploy-with-hosting-server.md)]
 
-### <a name="create-the-publish-settings-file-in-iis-on-windows-server"></a>在 Windows Server 上的 IIS 中建立發行設定檔
+### <a name="create-the-publish-settings-file-in-iis-on-windows-server"></a>在 Windows Server 上的 IIS 中建立發行設定檔案
 
 [!INCLUDE [install-web-deploy-with-hosting-server](../deployment/includes/create-publish-settings-iis.md)]
 
-### <a name="import-the-publish-settings-in-visual-studio-and-deploy"></a>匯入 Visual Studio 中的發佈設定和部署
+### <a name="import-the-publish-settings-in-visual-studio-and-deploy"></a>在 Visual Studio 中匯入發行設定並進行部署
 
 [!INCLUDE [install-web-deploy-with-hosting-server](../deployment/includes/import-publish-settings-vs.md)]
 
-應用程式部署成功之後，它應該會自動啟動。 如果應用程式從 Visual Studio 不會啟動，請在 IIS 中啟動應用程式。 您需要確定應用程式集區欄位的 ASP.NET Core **DefaultAppPool**設**沒有 Managed 程式碼**。
+應用程式部署成功之後，它應該會自動啟動。 如果應用程式從 Visual Studio 不會啟動，請在 IIS 中啟動應用程式。 針對 ASP.NET Core，您必須先確定**DefaultAppPool** 的 [應用程式集區] 欄位設定為 [沒有受控程式碼]。
 
 1. 在**設定**對話方塊中，按一下 偵錯的啟用**下一步**，選擇**偵錯**組態，然後選擇 **移除其他檔案目的地**底下**檔案發行**選項。
 
@@ -121,7 +120,7 @@ ms.locfileid: "49101065"
 
 1. 開啟 Windows 檔案總管，並建立新的資料夾中， **C:\Publish**將稍後部署 ASP.NET 專案。
 
-2. 如果它尚未開啟，開啟**Internet Information Services (IIS) 管理員**。 (在左窗格的 伺服器管理員中，選取**IIS**。 以滑鼠右鍵按一下伺服器，然後選取**Internet Information Services (IIS) 管理員**。)
+2. 如果它尚未開啟，開啟**Internet Information Services (IIS) 管理員**。 (在左窗格的 伺服器管理員中，選取**IIS**。 以滑鼠右鍵按一下伺服器，然後選取 [Internet Information Services (IIS) 管理員]。)
 
 3. 底下**連線**在左窗格中，移至**站台**。
 
@@ -166,8 +165,8 @@ ms.locfileid: "49101065"
     > [!TIP]
     > 在 Visual Studio 2017 中，您可以重新附加至您先前附加到使用相同的程序**偵錯 > 重新附加至處理序...**（shift + Alt + P）。 
 
-3. [限定詞] 欄位設定為**\<遠端電腦名稱 >: 4022**。
-4. 按一下 **重新整理**。
+3. 將 [限定詞] 欄位設定為 **\<遠端電腦名稱>:4022**。
+4. 按一下 [重新整理]。
     您應該會看到有些處理程序會出現在 [可使用的處理序]  視窗。
 
     如果您沒有看到任何處理程序，請嘗試使用的 IP 位址，而不 （連接埠是必要的） 遠端電腦名稱。 您可以使用`ipconfig`取得 IPv4 位址的命令列。
@@ -181,7 +180,7 @@ ms.locfileid: "49101065"
 
 7. 按一下 [附加] 。
 
-8. 開啟遠端電腦的網站。 在瀏覽器中，移至**http://\<遠端電腦名稱 >**。
+8. 開啟遠端電腦的網站。 在瀏覽器中，移至 **http://\<遠端電腦名稱>**。
     
     您應該會看到 ASP.NET 網頁。
 
@@ -189,7 +188,7 @@ ms.locfileid: "49101065"
 
     應該在 Visual Studio 中叫用中斷點。
 
-## <a name="bkmk_openports"></a> 疑難排解： 開啟 Windows Server 上的必要連接埠
+## <a name="bkmk_openports"></a> 疑難排解在 Windows Server 上開啟必要的連接埠
 
 在大部分的配置，所需的連接埠已開啟 ASP.NET 和遠端偵錯工具的安裝。 不過，您可能需要確認已開啟連接埠。
 
@@ -216,7 +215,7 @@ ms.locfileid: "49101065"
     您選取的類型必須包括遠端電腦連線的網路。
 6. 新增名稱 (例如**IIS**， **Web Deploy**，或**msvsmon**) 的輸入規則，然後按一下 **完成**。
 
-    您應該會看到您在 [輸入規則] 或 [輸出規則] 清單中的新規則。
+    您應該會在 [輸入規則] 或 [輸出規則] 清單中看到您的新規則。
 
     如果您想在 Windows 防火牆設定的更多詳細資料，請參閱[設定 Windows 防火牆進行遠端偵錯](../debugger/configure-the-windows-firewall-for-remote-debugging.md)。
 

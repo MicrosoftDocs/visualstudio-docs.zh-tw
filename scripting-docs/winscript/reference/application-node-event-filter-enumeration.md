@@ -1,5 +1,5 @@
 ---
-title: APPLICATION_NODE_EVENT_FILTER 列舉 |Microsoft 文件
+title: APPLICATION_NODE_EVENT_FILTER Enumeration | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,15 +14,15 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0446265d40fb6277fd155f3ed5822c506ae30bc7
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: c6974a179ae3f694d1e355969f9abe0ce9163fc4
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24641118"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54344547"
 ---
 # <a name="applicationnodeeventfilter-enumeration"></a>APPLICATION_NODE_EVENT_FILTER 列舉
-指定的篩選程式碼文件時所要排除的節點類型。 用於[IDebugApplicationNode100::GetExcludedDocuments](../../winscript/reference/idebugapplicationnode100-getexcludeddocuments.md)和[IDebugApplicationNode100::SetFilterForEventSink](../../winscript/reference/idebugapplicationnode100-setfilterforeventsink.md)  
+指定篩選程式碼文件時所要排除的節點的類型。 用於[IDebugApplicationNode100::GetExcludedDocuments](../../winscript/reference/idebugapplicationnode100-getexcludeddocuments.md)和[IDebugApplicationNode100::SetFilterForEventSink](../../winscript/reference/idebugapplicationnode100-setfilterforeventsink.md)  
   
 > [!IMPORTANT]
 >  這些常數會實作由 PDM v10.0 和更新版本。 可在 activdbg100.h 中找到。  
@@ -37,9 +37,9 @@ typedef enum tagAPPLICATION_NODE_EVENT_FILTER {    FILTER_EXCLUDE_NOTHING = 0,  
   
 |成員|值|描述|  
 |------------|-----------|-----------------|  
-|FILTER_EXCLUDE_NOTHING|0x00000000|傳送的所有事件。|  
-|FILTER_EXCLUDE_ANONYMOUS_CODE|0x00000001|排除匿名的程式碼的節點。 這些節點由 JScript 執行階段針對`new Function([args,] <code>)'`。|  
-|FILTER_EXCLUDE_EVAL_CODE|0x00000002|排除評估版的程式碼的節點。 這些節點是由 JScript 執行階段用於評估版的支援。|  
+|FILTER_EXCLUDE_NOTHING|0x00000000|將所有事件的都傳送。|  
+|FILTER_EXCLUDE_ANONYMOUS_CODE|0x00000001|排除匿名的程式碼的節點。 這些節點所使用的 JScript runtime `new Function([args,] <code>)'`。|  
+|FILTER_EXCLUDE_EVAL_CODE|0x00000002|排除評估程式碼的節點。 JScript runtime 會使用這些節點為評估版的支援。|  
   
 ## <a name="see-also"></a>另請參閱  
  [動態指令碼偵錯工具的常數、列舉和結構](../../winscript/reference/active-script-debugger-constants-enumerations-and-structures.md)

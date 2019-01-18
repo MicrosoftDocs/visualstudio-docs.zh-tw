@@ -1,8 +1,6 @@
 ---
 title: 在 UWP 應用程式中偵錯 HTML 和 CSS |Microsoft Docs
-ms.custom: ''
 ms.date: 07/17/2017
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - VS.WebClient.DomExplorer
@@ -18,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 6e812d60daf7e084835c0de9549cd58ff2711fea
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 0ea34ba58ec882121b40ca7e7585fa0cb0419356
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49916682"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53892711"
 ---
 # <a name="debug-html-and-css-in-uwp-apps-in-visual-studio"></a>在 Visual Studio 中的 UWP 應用程式中偵錯 HTML 和 CSS
   
@@ -31,7 +29,7 @@ ms.locfileid: "49916682"
   
  使用 DOM 檢查工具所提供的互動式偵錯模型，您可以檢視和修改呈現的 HTML 和 CSS 程式碼。 您可以這麼做，而不需要停止並重新開始偵錯工具。
   
- 如需其他 JavaScript 偵錯功能，例如使用 [JavaScript 主控台] 視窗，並設定中斷點，詳細資訊，請參閱[快速入門： 偵錯 JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)並[偵錯在 Visual Studio 中的應用程式](../debugger/debug-store-apps-in-visual-studio.md)。  
+ 如需其他 JavaScript 偵錯功能，例如使用 [JavaScript 主控台] 視窗，並設定中斷點，詳細資訊，請參閱[快速入門：偵錯 JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)並[偵錯在 Visual Studio 中的應用程式](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps)。  
   
 ##  <a name="InspectingDOM"></a> 檢查 Llive DOM  
  DOM 總管會顯示所呈現頁面的檢視，您可以使用 DOM 總管變更值並立即查看結果。 這讓您能測試變更，而不需要停止並重新開始偵錯工具。 當您以此方法與頁面互動時，專案中的原始程式碼並不會變更，因此當您找到所需的程式碼修正時，您可以對原始程式碼進行變更。  
@@ -47,7 +45,7 @@ ms.locfileid: "49916682"
   
 - 檢查 CSS 樣式套用到頁面項目的情形，並追蹤已套用的規則。  
   
-  偵錯應用程式時，您通常需要在 DOM 總管中選取項目。 當您選取項目時，DOM 總管右邊索引標籤上的值會自動更新，以反映 DOM 總管中選取的項目。 這些索引標籤如下：[樣式] 、[計算] 、[配置] 。 UWP 應用程式也支援**事件**並**變更**索引標籤。 如需選取項目的詳細資訊，請參閱 [Selecting elements](#SelectingElements)。  
+  偵錯應用程式時，您通常需要在 DOM 總管中選取項目。 當您選取項目時，DOM 總管右邊索引標籤上的值會自動更新，以反映 DOM 總管中選取的項目。 以下是 [] 索引標籤：**樣式**，**計算**，**版面配置**。 UWP 應用程式也支援**事件**並**變更**索引標籤。 如需選取項目的詳細資訊，請參閱 [Selecting elements](#SelectingElements)。  
   
 > [!TIP]
 >  如果 [DOM 總管] 視窗已關閉，選擇 [偵錯] > >  即可重新開啟。 此視窗只有在指令碼偵錯工作階段期間才會顯示。  
@@ -159,7 +157,7 @@ ms.locfileid: "49916682"
    > [!TIP]
    >  您可以按 Alt+Tab 或 F12，在 Visual Studio 和執行中應用程式之間切換。  
   
-10. 在 [DOM 總管] 視窗中，選取識別碼為 `"fView"`之區段的 DIV 項目。 使用方向鍵來檢視和選取正確的 DIV 項目 （向右鍵可讓您檢視的項目子系。）  
+10. 在 [DOM 總管] 視窗中，選取識別碼為 `"fView"`之區段的 DIV 項目。 使用方向鍵來檢視和選取正確的 DIV 項目 (向右鍵可讓您檢視元素的子系。)  
   
      ![DOM 總管](../debugger/media/js_dom_explorer.png "JS_DOM_Explorer")  
   
@@ -172,7 +170,7 @@ ms.locfileid: "49916682"
   
      這個索引標籤顯示所選 DOM 項目之每個屬性的計算值 (或終值)。  
   
-12. 開啟高度 CSS 規則。 請注意，有內嵌樣式設定為 100px，這與為 100%的高度值不一致`#fView`CSS 選取器。 `#fView` 選取器的 Strikethrough 文字指出內嵌樣式的優先順序高於此樣式。  
+12. 開啟高度 CSS 規則。 請注意，有內置樣式設定為 100px，這與為 `#fView` CSS 選取器設定的高度值 100% 不一致。 `#fView` 選取器的 Strikethrough 文字指出內嵌樣式的優先順序高於此樣式。  
   
      下圖顯示 [計算]  索引標籤。  
   
@@ -199,7 +197,7 @@ ms.locfileid: "49916682"
   
      狀況隨即有所改善。 不過，仍有另外一個問題待修正，邊界太大。  
   
-19. 若要調查，切換至 Visual Studio，然後選擇**版面配置**索引標籤，查看項目的方塊模型。  
+19. 若要調查，請切換至 Visual Studio 並選擇 [配置] 索引標籤，查看元素的方塊模型。  
   
      在 **版面配置**索引標籤上，您會看到下列訊息：  
   
@@ -225,7 +223,7 @@ ms.locfileid: "49916682"
   
 2.  開啟 default.html，將 `"fView"` DIV 元素的高度和寬度變更為 100%，修改您的原始程式碼。  
   
-3.  選擇 [偵錯] 工具列上的 [ **重新整理 Windows 應用程式** ] 按鈕 (或按 F4)。 按鈕看起來像這樣︰![重新整理 Windows 應用程式 按鈕](../debugger/media/js_refresh.png "JS_Refresh")。  
+3.  選擇 [偵錯] 工具列上的 [ **重新整理 Windows 應用程式** ] 按鈕 (或按 F4)。 按鈕看起來像這樣：。![重新整理 Windows 應用程式 按鈕](../debugger/media/js_refresh.png "JS_Refresh")。  
   
      應用程式頁面會重新載入，模擬器或 Phone 模擬器會回到前景。  
   
@@ -242,7 +240,7 @@ ms.locfileid: "49916682"
   
   當您使用 [DOM 總管] 視窗選取項目，並將滑鼠指標放在項目上時，對應的項目會在執行的應用程式中反白顯示。 您必須在 [DOM 總管] 中按一下元素將它選取，或者也可以使用方向鍵來反白顯示及選取元素。此外，您還可以使用 [ **選取元素** ] 按鈕來選取 [DOM 總管] 中的元素。 下圖顯示 [ **選取項目** ] 按鈕。  
   
-  ![在 [DOM 總管] 中選取項目按鈕](../debugger/media/js_dom_select_element_button.png "JS_DOM_Select_Element_Button")  
+  ![在 [DOM 總管] 中選取項目 按鈕](../debugger/media/js_dom_select_element_button.png "JS_DOM_Select_Element_Button")  
   
   按一下 [ **選取元素** ] (或按 Ctrl+B) 會變更選取模式，讓您可以在執行的應用程式中按一下元素，即可選取 [DOM 總管] 中的項目。 只要再按一下，就會回到一般選取模式。 按一下 [ **選取項目**] 時，應用程式會移至前景，而游標會改變以反映新的選取模式。 按一下加框項目時，DOM 總管會回到前景，並已選取所指定的項目。  
   
@@ -255,11 +253,11 @@ ms.locfileid: "49916682"
 > [!NOTE]
 >  Windows Phone 模擬器僅部分支援藉由滑鼠游標停留來醒目提示示項目。  
   
-## <a name="see-also"></a>另請參閱  
- [Debug apps in Visual Studio](../debugger/debug-store-apps-in-visual-studio.md)   
+## <a name="see-also"></a>請參閱  
+ [Debug apps in Visual Studio](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps)   
  [重新整理應用程式 (JavaScript)](../debugger/refresh-an-app-javascript.md)   
  [偵錯 WebView 控制項](../debugger/debug-a-webview-control.md)   
  [鍵盤快速鍵](../debugger/keyboard-shortcuts-html-and-javascript.md)   
  [JavaScript Console commands](../debugger/javascript-console-commands.md)   
- [偵錯 HTML、 CSS 和 JavaScript 範例程式碼](../debugger/debug-html-css-and-javascript-sample-code.md)   
+ [對 HTML、CSS 和 JavaScript 範例程式碼進行偵錯](../debugger/debug-html-css-and-javascript-sample-code.md)   
  [產品支援和協助工具](https://msdn.microsoft.com/library/tzbxw1af(VS.120).aspx)

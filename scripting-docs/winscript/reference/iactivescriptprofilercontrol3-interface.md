@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptProfilerControl3 介面 |Microsoft Docs
+title: IActiveScriptProfilerControl3 Interface | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -13,11 +13,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: bebe351608b3136ac00a059bffab3535141e7fca
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54097132"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54344716"
 ---
 # <a name="iactivescriptprofilercontrol3-interface"></a>IActiveScriptProfilerControl3 介面
 提供方法來列舉與指令碼引擎相關聯的 GC 堆積物件。  

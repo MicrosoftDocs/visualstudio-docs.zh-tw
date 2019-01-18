@@ -8,19 +8,21 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 998b94a13f3650446f9f791ffc29c7c863f9df89
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: 0022d94d8bb786340dba5d2d412bbbd46585e35e
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53968627"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227691"
 ---
-# <a name="inspect-your-app-with-intellitrace-historical-debugging-in-visual-studio"></a>檢查您的應用程式與 IntelliTrace 歷程偵錯在 Visual Studio 中
+# <a name="inspect-your-app-with-intellitrace-historical-debugging-in-visual-studio-c-visual-basic-c"></a>檢查您的應用程式與 IntelliTrace 歷程偵錯在 Visual Studio 中 (C#，Visual Basic、 c + +)
+
 您可以使用[歷程偵錯](../debugger/historical-debugging.md)来移向後和向前逐步執行您的應用程式並檢查其狀態。  
   
 您可以在 Visual Studio Enterprise 版本 (而非 Professional 或 Community 版本) 中使用 IntelliTrace。  
   
-## <a name="navigate-your-code-with-historical-debugging"></a>瀏覽您的程式碼，使用歷程偵錯  
+## <a name="navigate-your-code-with-historical-debugging"></a>瀏覽您的程式碼，使用歷程偵錯
+
  讓我們從內含 BUG 的簡單程式開始。 在 C# 主控台應用程式中，加入下列程式碼：  
   
 ```csharp  

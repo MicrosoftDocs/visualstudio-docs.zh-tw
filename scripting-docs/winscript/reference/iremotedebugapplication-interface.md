@@ -1,5 +1,5 @@
 ---
-title: IRemoteDebugApplication 介面 |Microsoft 文件
+title: IRemoteDebugApplication 介面 |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,30 +14,30 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ea91afdc44b70a91846d7b1a3dc4c017c0c4c80e
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 02ddf409bf25cb86fc742cdc004e2f1b664d22e3
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24729598"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54348759"
 ---
 # <a name="iremotedebugapplication-interface"></a>IRemoteDebugApplication 介面
-表示執行的應用程式。 不需要對應到作業系統處理序。 一般而言，偵錯工具為目標的應用程式進行偵錯。 程序進行偵錯管理員通常會實作應用程式物件。  
+代表執行中應用程式。 它不需要對應至作業系統處理序。 一般而言，偵錯工具的目標應用程式進行偵錯。 處理序偵錯管理員通常會實作應用程式物件。  
   
- 除了繼承自`IUnknown`、`IRemoteDebugApplication`介面會公開下列方法。  
+ 除了繼承自方法`IUnknown`，則`IRemoteDebugApplication`介面會公開下列方法。  
   
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法  
   
-|方法|說明|  
+|方法|描述|  
 |------------|-----------------|  
-|[IRemoteDebugApplication::ResumeFromBreakPoint](../../winscript/reference/iremotedebugapplication-resumefrombreakpoint.md)|會繼續執行應用程式目前正在中斷點。|  
-|[IRemoteDebugApplication::CauseBreak](../../winscript/reference/iremotedebugapplication-causebreak.md)|會在偵錯工具立即中斷應用程式。|  
-|[IRemoteDebugApplication::ConnectDebugger](../../winscript/reference/iremotedebugapplication-connectdebugger.md)|會在偵錯工具連接到此應用程式。|  
-|[IRemoteDebugApplication::DisconnectDebugger](../../winscript/reference/iremotedebugapplication-disconnectdebugger.md)|目前的偵錯工具中斷應用程式。|  
-|[IRemoteDebugApplication::GetDebugger](../../winscript/reference/iremotedebugapplication-getdebugger.md)|傳回目前的偵錯工具連接到應用程式。|  
-|[IRemoteDebugApplication::CreateInstanceAtApplication](../../winscript/reference/iremotedebugapplication-createinstanceatapplication.md)|提供偵錯工具 IDE 中，執行不足的處理序應用程式，在應用程式處理序中建立物件的機制。|  
+|[IRemoteDebugApplication::ResumeFromBreakPoint](../../winscript/reference/iremotedebugapplication-resumefrombreakpoint.md)|會繼續目前位於中斷點的應用程式。|  
+|[IRemoteDebugApplication::CauseBreak](../../winscript/reference/iremotedebugapplication-causebreak.md)|會導致應用程式偵錯工具立即中斷。|  
+|[IRemoteDebugApplication::ConnectDebugger](../../winscript/reference/iremotedebugapplication-connectdebugger.md)|連接到這個應用程式的偵錯工具。|  
+|[IRemoteDebugApplication::DisconnectDebugger](../../winscript/reference/iremotedebugapplication-disconnectdebugger.md)|目前的偵錯工具中斷連線的應用程式。|  
+|[IRemoteDebugApplication::GetDebugger](../../winscript/reference/iremotedebugapplication-getdebugger.md)|傳回目前的偵錯工具連接至應用程式。|  
+|[IRemoteDebugApplication::CreateInstanceAtApplication](../../winscript/reference/iremotedebugapplication-createinstanceatapplication.md)|您可以提供一個機制讓偵錯工具 IDE 外的-處理序執行應用程式，在應用程式處理序中建立物件。|  
 |[IRemoteDebugApplication::QueryAlive](../../winscript/reference/iremotedebugapplication-queryalive.md)|指出應用程式是否有回應。|  
-|[IRemoteDebugApplication::EnumThreads](../../winscript/reference/iremotedebugapplication-enumthreads.md)|列舉已知為應用程式相關聯的所有執行緒。|  
-|[IRemoteDebugApplication::GetName](../../winscript/reference/iremotedebugapplication-getname.md)|傳回這個應用程式節點的名稱。|  
+|[IRemoteDebugApplication::EnumThreads](../../winscript/reference/iremotedebugapplication-enumthreads.md)|列舉所有已知為應用程式相關聯的執行緒。|  
+|[IRemoteDebugApplication::GetName](../../winscript/reference/iremotedebugapplication-getname.md)|傳回此應用程式節點的名稱。|  
 |[IRemoteDebugApplication::GetRootNode](../../winscript/reference/iremotedebugapplication-getrootnode.md)|傳回在其下加入應用程式相關聯的所有節點的應用程式節點。|  
 |[IRemoteDebugApplication::EnumGlobalExpressionContexts](../../winscript/reference/iremotedebugapplication-enumglobalexpressioncontexts.md)|列舉執行此應用程式中的所有語言通用的運算式內容。|

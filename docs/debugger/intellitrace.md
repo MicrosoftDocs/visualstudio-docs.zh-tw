@@ -1,5 +1,5 @@
 ---
-title: IntelliTrace |Microsoft Docs
+title: IntelliTrace | Microsoft Docs
 ms.date: 09/19/2018
 ms.topic: conceptual
 f1_keywords:
@@ -20,14 +20,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d38ea825596d4edb38898b36296bde86f0f4c37
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: 332f737d7dc404f42623c338eef3f2dc759d2d6f
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53842404"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227326"
 ---
-# <a name="intellitrace"></a>IntelliTrace
+# <a name="intellitrace-for-visual-studio-enterprise-c-visual-basic-c"></a>Visual Studio enterprise 的 IntelliTrace (C#，Visual Basic、 c + +)
 
 當您使用 IntelliTrace 記錄和追蹤程式碼的執行歷程時，可以縮短對應用程式進行偵錯的時間。 您可以輕鬆地找到錯誤，因為 IntelliTrace 可讓您：
 
@@ -53,7 +53,7 @@ ms.locfileid: "53842404"
 | | |
 |---------------------| - |
 | **完整的支援** | - 使用 .NET Framework 2.0 或更高版本的 Visual Basic 和 Visual C# 應用程式。<br/>您可以偵錯大部分應用程式，包括 ASP.NET、Microsoft Azure、Windows Form、WCF、WPF、Windows Workflow、SharePoint 2010、SharePoint 2013 和 64 位元應用程式。<br/>若要偵錯 SharePoint 應用程式，使用 IntelliTrace，請參閱[逐步解說：使用 IntelliTrace 偵錯 SharePoint 應用程式](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md)。<br/> 若要使用 IntelliTrace 的 Microsoft Azure 應用程式進行偵錯，請參閱[偵錯已發佈的雲端服務使用 IntelliTrace 和 Visual Studio](/azure/vs-azure-tools-intellitrace-debug-published-cloud-services)。 |
-| **有限支援** | -目標檢視快照集使用 IntelliTrace 倒退的 Windows 支援原生的應用程式。 支援只偵錯工具和例外狀況的事件。<br />-.NET core 和 ASP.NET Core 應用程式特定事件只 MVC 控制器、 ADO.NET 以及 HTTPClicent 」 中支援本機偵錯。 獨立收集器不支援.NET Core 或 ASP.NET Core 應用程式。<br />- 實驗基礎的 F# 應用程式<br />支援僅適用於事件的 UWP 應用程式 |
+| **有限支援** | C-c 目標 Windows 支援檢視快照集使用 IntelliTrace 倒退 + + 應用程式。 支援只偵錯工具和例外狀況的事件。<br />-.NET core 和 ASP.NET Core 應用程式特定事件只 MVC 控制器、 ADO.NET 以及 HTTPClient 」 中支援本機偵錯。 獨立收集器不支援.NET Core 或 ASP.NET Core 應用程式。<br />- 實驗基礎的 F# 應用程式<br />支援僅適用於事件的 UWP 應用程式 |
 | **不支援** | -其他語言和指令碼<br />- Windows 服務、Silverlight、Xbox 或 [!INCLUDE[winmobile](../debugger/includes/winmobile_md.md)] 應用程式 |
 
 > [!NOTE]
@@ -148,7 +148,7 @@ IntelliTrace 預設只會記錄 IntelliTrace 事件：偵錯工具事件、例�
 您可以設定 IntelliTrace 以擷取快照集在每個中斷點和偵錯工具逐步執行事件。 IntelliTrace 會記錄完整的應用程式的狀態，在每個快照集可讓您檢視複雜變數，並評估運算式。
 
 > [!NOTE]
-> [IntelliTrace 獨立收集器](../debugger/using-the-intellitrace-stand-alone-collector.md)不支援擷取 snaphots。
+> [IntelliTrace 獨立收集器](../debugger/using-the-intellitrace-stand-alone-collector.md)不支援擷取的快照集。
 
 請參閱[檢查先前的應用程式狀態，使用 IntelliTrace](../debugger/view-historical-application-state.md)。
 

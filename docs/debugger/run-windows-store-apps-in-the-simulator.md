@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 76803a268d06de276b8158a583f307d3f7e2f242
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: 6a171c0973bdcb71ff05cff38713081acd5ffd68
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53886471"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54153950"
 ---
 # <a name="run-uwp-apps-in-the-simulator"></a>在模擬器中執行 UWP 應用程式
 UWP 應用程式的 Visual Studio 模擬器是模擬 UWP 應用程式的桌面應用程式。 一般而言，您要在本機電腦、 連接的裝置或在遠端電腦上偵錯。 不過，在某些情況下，您可能想要使用 Visual Studio 模擬器來模擬不同的實體螢幕大小和解析度。 您也可以模擬常見觸控和旋轉事件，以及模擬網路連接屬性。
