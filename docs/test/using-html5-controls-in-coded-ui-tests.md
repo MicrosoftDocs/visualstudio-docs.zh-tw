@@ -8,12 +8,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 9470027e84e33bb3acdd64756db86c951c845d3d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: dbb34804e827ddd0eefdaf4585ba517034a31392
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53883022"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269887"
 ---
 # <a name="using-html5-controls-in-coded-ui-tests"></a>在自動程式化 UI 測試中使用 HTML5 控制項
 
@@ -39,11 +39,11 @@ ms.locfileid: "53883022"
 
 |動作|錄製|產生的程式碼|
 |-|---------------|-|
-|**播放音訊**<br /><br /> 直接從控制項，或是從控制項操作功能表。|從 00:00:00 播放 \<名稱> 音訊|HtmlAudio.Play(TimeSpan)|
+|**播放音訊**<br /><br /> 直接從控制項，或是從控制項的右鍵功能表。|從 00:00:00 播放 \<名稱> 音訊|HtmlAudio.Play(TimeSpan)|
 |**搜尋音訊的特定時間**|搜尋 \<名稱> 音訊的 00:01:48|HtmlAudio.Seek(TimeSpan)|
-|**暫停音訊**<br /><br /> 直接從控制項，或是從控制項操作功能表。|在 00:01:53 暫停 \<名稱> 音訊|HtmlAudio.Pause(TimeSpan)|
-|**音訊靜音**<br /><br /> 直接從控制項，或是從控制項操作功能表。|將 \<名稱> 音訊靜音|HtmlAudio.Mute()|
-|**音訊取消靜音**<br /><br /> 直接從控制項，或是從控制項操作功能表。|將 \<名稱> 音訊取消靜音|HtmlAudio.Unmute()|
+|**暫停音訊**<br /><br /> 直接從控制項，或是從控制項的右鍵功能表。|在 00:01:53 暫停 \<名稱> 音訊|HtmlAudio.Pause(TimeSpan)|
+|**音訊靜音**<br /><br /> 直接從控制項，或是從控制項的右鍵功能表。|將 \<名稱> 音訊靜音|HtmlAudio.Mute()|
+|**音訊取消靜音**<br /><br /> 直接從控制項，或是從控制項的右鍵功能表。|將 \<名稱> 音訊取消靜音|HtmlAudio.Unmute()|
 |**變更音訊的音量**|將 \<名稱> 音訊的音量設為 79%|HtmlAudio.SetVolume(float)|
 
 請參閱 [HTMLAudioElement](https://developer.mozilla.org/docs/Web/API/HTMLAudioElement)，以取得您可以在其上新增判斷提示的屬性清單。
@@ -63,11 +63,11 @@ ms.locfileid: "53883022"
 
 |動作|錄製|產生的程式碼|
 |-|---------------|-|
-|**播放視訊**<br /><br /> 直接從控制項，或是從控制項操作功能表。|從 00:00:00 播放 \<名稱> 視訊|HtmlVideo.Play(TimeSpan)|
+|**播放視訊**<br /><br /> 直接從控制項，或是從控制項的右鍵功能表。|從 00:00:00 播放 \<名稱> 視訊|HtmlVideo.Play(TimeSpan)|
 |**搜尋視訊的特定時間**|搜尋 \<名稱> 視訊的 00:01:48|HtmlVideo.Seek(TimeSpan)|
-|**暫停視訊**<br /><br /> 直接從控制項，或是從控制項操作功能表。|在 00:01:53 暫停 \<名稱> 視訊|HtmlVideo.Pause(TimeSpan)|
-|**視訊靜音**<br /><br /> 直接從控制項，或是從控制項操作功能表。|將 \<名稱> 視訊靜音|HtmlVideo.Mute()|
-|**視訊取消靜音**<br /><br /> 直接從控制項，或是從控制項操作功能表。|將 \<名稱> 視訊取消靜音|HtmlVideo.Unmute()|
+|**暫停視訊**<br /><br /> 直接從控制項，或是從控制項的右鍵功能表。|在 00:01:53 暫停 \<名稱> 視訊|HtmlVideo.Pause(TimeSpan)|
+|**視訊靜音**<br /><br /> 直接從控制項，或是從控制項的右鍵功能表。|將 \<名稱> 視訊靜音|HtmlVideo.Mute()|
+|**視訊取消靜音**<br /><br /> 直接從控制項，或是從控制項的右鍵功能表。|將 \<名稱> 視訊取消靜音|HtmlVideo.Unmute()|
 |**變更視訊的音量**|將 \<名稱> 視訊的音量設為 79%||
 
 請參閱 [HTMLVideoElement](https://developer.mozilla.org/docs/Web/HTML/Element/video)，以取得您可以在其上新增判斷提示的屬性清單。

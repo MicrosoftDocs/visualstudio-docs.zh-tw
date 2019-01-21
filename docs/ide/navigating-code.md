@@ -19,12 +19,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 467dec8039a50b225bda53de9b19b8539f6604be
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c9415b3cf2c777e0a99b3f24a26e56d1a1c94bf8
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53877428"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269939"
 ---
 # <a name="navigate-code"></a>巡覽程式碼
 
@@ -67,7 +67,7 @@ Visual Studio 提供許多方式在編輯器中巡覽程式碼。 本主題會�
 輸入 | 功能
 ------------ | ---
 **鍵盤** | 將文字資料指標放在類型名稱內的某個位置，然後按 **Shift**+**F12**
-**滑鼠** | 從操作功能表選取 [尋找所有參考]
+**滑鼠** | 從右鍵功能表中選取 [尋找所有參考]
 
 ## <a name="reference-highlighting"></a>反白顯示參考
 

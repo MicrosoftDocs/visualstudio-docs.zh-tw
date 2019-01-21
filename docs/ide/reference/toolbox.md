@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 46a3a0a415af9cddcba63040fd445de7869921e2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 79d39aa23e752ee0ce6f95b6a6d8c419dbd51d9a
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53918608"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269991"
 ---
 # <a name="toolbox"></a>工具箱
 
@@ -40,7 +40,7 @@ ms.locfileid: "53918608"
 
 預設已在 Visual Studio IDE 左側摺疊 [工具箱]，將游標移至其上方就會顯示。 您可以釘選 [工具箱] (在其工具列上按一下 [釘選] 圖示)，使其在您移動游標時仍保持開啟狀態。 您也可以將 [工具箱] 視窗取消停駐，並拖曳至畫面上的任何位置。 您可以使用滑鼠右鍵按一下 [工具箱] 的工具列並選取其中一個選項，以將它停駐、取消停駐和隱藏。
 
-您可以在操作功能表上使用下列命令，以重新排列 [工具箱] 索引標籤中的項目，或新增自訂索引標籤和項目：
+您可以在右鍵功能表上使用下列命令，以重新排列 [工具箱] 索引標籤中的項目，或新增自訂索引標籤和項目：
 
 - **重新命名項目** - 重新命名選取的項目。
 

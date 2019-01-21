@@ -11,16 +11,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d3d306d9399ee9454d1967c24a734c5d9b9b2eb9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 11e31d46af00620b9e8ac9f45fe79946eea4eb1a
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53908799"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54270147"
 ---
 # <a name="how-to-use-surround-with-code-snippets"></a>HOW TO：使用範圍陳述式程式碼片段
 
-下列程序說明如何使用範圍陳述式程式碼片段。 有三種方式可取得範圍陳述式程式碼片段︰透過鍵盤快速鍵、透過 [編輯] 功能表，以及透過操作功能表。
+下列程序說明如何使用範圍陳述式程式碼片段。 有三種方式可取得範圍陳述式程式碼片段︰透過鍵盤快速鍵、透過 [編輯] 功能表，以及透過右鍵或操作功能表。
 
 ## <a name="to-use-surround-with-code-snippets-through-keyboard-shortcut"></a>透過鍵盤快速鍵使用範圍陳述式程式碼片段
 

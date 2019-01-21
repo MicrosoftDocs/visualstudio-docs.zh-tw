@@ -9,12 +9,12 @@ description: 如何為您的客戶購買和管理 Visual Studio 雲端訂用帳�
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 9e400373d56e494e9292a086c55c07795a75d989
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: 7ca04ab81462c2126068ed5a5710cee663944431
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53739571"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54270004"
 ---
 # <a name="buy-and-manage-visual-studio-cloud-subscriptions-for-your-customers"></a>為您的客戶購買及管理 Visual Studio 雲端訂閱
 
@@ -46,7 +46,7 @@ ms.locfileid: "53739571"
 0. 選擇 [Visual Studio Marketplace]。
 0. 確定您的客戶名稱出現在右上角。
 0. 選擇 [訂閱]。
-0. 選擇 Enterprise 或 Professional，選擇 Visual studio 訂閱的月租方案或年度訂閱。
+0. 選擇 Visual Studio Enterprise 或 Professional。
 0. 選擇 [購買]。
 0. 選擇以 Azure 訂用帳戶支付。
 0. 輸入您客戶需要的使用者數目。

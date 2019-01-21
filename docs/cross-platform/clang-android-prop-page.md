@@ -43,16 +43,16 @@ f1_keywords:
 - vc.project.AdditionalOptionsPage
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: efceeb201a7f1afcbf7cc2c6d46619301284d823
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: ab2fa6c3b2eac94159ef5e95cb022a627c3acee2
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39232113"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154307"
 ---
 # <a name="clang-project-properties-android-c"></a>Clang 專案屬性 (Android C++)
 
-屬性 | 描述 | 選擇
+屬性 | 說明 | 選擇
 --- | ---| ---
 其他 Include 目錄 | 指定一或多個要新增至 Include 路徑中的目錄；如有多個目錄，請使用分號加以分隔。 (-I[路徑])。
 偵錯資訊格式 | 指定編譯器所產生的偵錯資訊類型。 | **無** - 因為不產生任何偵錯資訊，所以編譯速度會較快。<br>**完整偵錯資訊 (DWARF2)** - 產生 DWARF2 偵錯資訊。<br>**行號資訊** - 僅產生行號資訊。<br>

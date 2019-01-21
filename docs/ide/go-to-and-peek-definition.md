@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 349a395312344ab2abcf7c3a5242e7a92cd5e902
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 95302b61da30cc2034edfe495a695efb510430d3
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53868900"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269835"
 ---
 # <a name="view-type-and-member-definitions"></a>檢視型別與成員的定義
 
@@ -27,7 +27,7 @@ ms.locfileid: "53868900"
 
 ## <a name="go-to-definition"></a>移至定義
 
-[移至定義] 功能可巡覽至類型或成員的來源，並在新的索引標籤中開啟結果。如果您是鍵盤使用者，請將文字游標放在符號名稱內的某個位置，然後按 **F12**。 如果您是滑鼠使用者，請選取操作功能表中的 [移至定義]，或使用下節所述的 **Ctrl+按一下滑鼠左鍵**功能。
+[移至定義] 功能可巡覽至類型或成員的來源，並在新的索引標籤中開啟結果。如果您是鍵盤使用者，請將文字游標放在符號名稱內的某個位置，然後按 **F12**。 如果您是滑鼠使用者，請選取右鍵功能表中的 [移至定義]，或使用下節所述的 **Ctrl+按一下滑鼠左鍵**功能。
 
 ### <a name="ctrl-click-go-to-definition"></a>Ctrl+按一下滑鼠左鍵移至定義
 
@@ -41,7 +41,7 @@ ms.locfileid: "53868900"
 
 ## <a name="peek-definition"></a>查看定義
 
-[查看定義] 功能可讓您預覽類型的定義，而不需要離開編輯器中的目前位置。 如果您是鍵盤使用者，請將文字游標放在類型或成員名稱內的某個位置，然後按 **Alt + F12**。 如果您是使用滑鼠的使用者，則可以選取操作功能表中的 [查看定義]。 在 Visual Studio 2017 15.4 版和更新版本中，有新的方式可以使用滑鼠查看檢視定義。 首先，移至 [工具] > [選項] > [文字編輯器] > [一般]。 選取 [Open definition in peek view] (在查看檢視中開啟定義) 選項，然後按一下 [確定] 關閉 [選項] 對話方塊。
+[查看定義] 功能可讓您預覽類型的定義，而不需要離開編輯器中的目前位置。 如果您是鍵盤使用者，請將文字游標放在類型或成員名稱內的某個位置，然後按 **Alt + F12**。 如果您是使用滑鼠使用者，則可選取右鍵功能表中的 [查看定義]。 在 Visual Studio 2017 15.4 版和更新版本中，有新的方式可以使用滑鼠查看檢視定義。 首先，移至 [工具] > [選項] > [文字編輯器] > [一般]。 選取 [Open definition in peek view] (在查看檢視中開啟定義) 選項，然後按一下 [確定] 關閉 [選項] 對話方塊。
 
 ![設定滑鼠點按查看定義選項](../ide/media/editor_options_peek_view.png)
 

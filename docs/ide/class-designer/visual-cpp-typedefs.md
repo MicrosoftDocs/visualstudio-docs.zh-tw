@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d0efbf39ec7000055bdaa978eab06417dae8b183
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bca0dacf2fd649db91fb37756c1670af403b4e95
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53869186"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269400"
 ---
 # <a name="visual-c-typedefs-in-class-designer"></a>類別設計工具中的 Visual C++ Typedef
 
@@ -44,7 +44,7 @@ typedef class coord
 
 類別和結構中可宣告巢狀 typedefs。 在**類別設計工具**中，類別和結構圖形可將巢狀 typedef 宣告顯示為巢狀圖形。
 
-Typedef 圖形支援操作功能表上的 [顯示為關聯] 和 [顯示為集合關聯] 命令。
+Typedef 圖形支援右鍵功能表 (操作功能表) 上的 [顯示為關聯] 和 [顯示為集合關聯] 命令。
 
 ### <a name="class-typedef-example"></a>類別 typedef 範例
 

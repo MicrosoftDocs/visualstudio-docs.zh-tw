@@ -10,14 +10,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 87758b0f75b3b38f67f72f4a32122fa9d0955335
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fb74e49cb72274292b56a01f0ec654ebe6e44815
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53939975"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227274"
 ---
-# <a name="inspect-previous-app-states-using-intellitrace-step-back-in-visual-studio"></a>使用 Visual Studio 中的 IntelliTrace 回溯，檢查先前的應用程式狀態
+# <a name="inspect-previous-app-states-using-intellitrace-step-back-in-visual-studio-visual-studio-enterprise"></a>使用 Visual Studio 中的 IntelliTrace 回溯，檢查先前的應用程式狀態 (Visual Studio Enterprise)
 
 IntelliTrace 回溯會自動擷取應用程式在每個中斷點以及偵錯工具步驟事件的快照。 記錄的快照集可讓您回溯到先前的中斷點或步驟，以檢視應用程式過去的狀態。 如果您想要查看先前的應用程式狀態，但不想要重新啟動偵錯或重新建立所需的應用程式狀態，IntelliTrace 回溯可節省您的時間。
 
@@ -26,7 +26,7 @@ IntelliTrace 回溯可用於 Visual Studio Enterprise 2017 15.5 版和更新版�
 在本教學課程中，您將進行下列作業：
 
 > [!div class="checklist"]
-> * 啟用 Intellitrace 事件與快照
+> * 啟用 IntelliTrace 事件與快照集
 > * 使用回溯和快轉命令來巡覽事件
 > * 檢視事件快照
   

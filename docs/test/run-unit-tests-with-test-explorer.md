@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 65ba6a0528dee5a0b430787ee4332ca3dab5bdec
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 89e64c88311848d53a114a1f58f711edbe3856e7
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53858065"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269874"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>使用測試總管執行單元測試
 
@@ -46,7 +46,7 @@ Visual Studio 2015 包含 Managed 程式碼和機器碼皆適用的 Microsoft �
 
 - 若要執行預設群組中的所有測試，請選擇 [執行]，然後選擇功能表上的群組。
 
-- 選取您要執行的個別測試，然後開啟所選取之測試的內容功能表並選取 [執行選取的測試] 。
+- 選取您要執行的個別測試、開啟所選取之測試的右鍵功能表，然後選擇 [執行選取的測試]。
 
 - 如果個別測試沒有任何會防止它們依任意順序執行的相依性，請使用工具列上的 ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png) 切換按鈕開啟平行測試執行。 這可大幅縮短執行所有測試所需的時間。
 
@@ -84,7 +84,7 @@ Visual Studio 2015 包含 Managed 程式碼和機器碼皆適用的 Microsoft �
 
 ### <a name="view-the-source-code-of-a-test-method"></a>檢視測試方法的原始程式碼
 
- 若要在 Visual Studio 編輯器顯示測試方法的原始程式碼，請選取測試，然後選擇操作功能表上的 [開啟測試] (鍵盤：**F12**)。
+ 若要在 Visual Studio 編輯器中顯示測試方法的原始程式碼，請選取測試，然後選擇右鍵功能表上的 [開啟測試] (鍵盤：**F12**)。
 
 ## <a name="group-and-filter-the-test-list"></a>群組和篩選測試清單
 
@@ -165,9 +165,9 @@ FilterName:"Criteria" -FilterName:"SubsetCriteria"
 
  ![選擇播放清單](../test/media/ute_playlist.png)
 
- **若要建立播放清單**，請在測試總管中選擇一或多項測試。 在操作功能表上，選擇 [加入至播放清單] > [新增播放清單]。 以您在 [建立新播放清單]  對話方塊中指定的名稱和位置儲存檔案。
+ **若要建立播放清單**，請在測試總管中選擇一或多項測試。 在右鍵功能表上，選擇 [新增到播放清單] > [新增播放清單]。 以您在 [建立新播放清單]  對話方塊中指定的名稱和位置儲存檔案。
 
- **若要將測試加入播放清單**，請在測試總管中選擇一或多項測試。 在內容功能表上，選擇 [加入至播放清單] ，然後選擇要加入測試的播放清單。
+ **若要將測試加入播放清單**，請在測試總管中選擇一或多項測試。 在右鍵功能表上，選擇 [新增到播放清單]，然後選擇要將測試新增到其中的播放清單。
 
  **若要開啟播放清單**，請選擇 Visual Studio 功能表上的 [測試] > [播放清單]，然後從最近使用過的播放清單的清單中選擇，或選擇 [開啟播放清單] 指定播放清單的名稱和位置。
 
@@ -184,13 +184,13 @@ FilterName:"Criteria" -FilterName:"SubsetCriteria"
     > [!NOTE]
     > 由於測試方法可以依照任何順序執行，請在您要偵錯的所有測試方法中設定中斷點。
 
-2. 在測試總管中，選取測試方法，然後選擇內容功能表上的 [偵測選取的測試]  。
+2. 在 [測試總管] 中，選取測試方法，然後選擇右鍵功能表上的 [偵錯選取的測試]。
 
    如需偵錯工具的詳細資訊，請參閱[在 Visual Studio 中偵錯](../debugger/debugger-feature-tour.md)。
 
 ### <a name="diagnose-test-method-performance-issues"></a>診斷測試方法效能問題
 
- 若要診斷測試方法為何花費太多時間，請在 [測試總管] 中選取該方法，然後選擇操作功能表上的 [設定檔]。 請參閱[效能總管](../profiling/performance-explorer.md)。
+ 若要診斷測試方法為何花費太多時間，請在 [測試總管] 中選取該方法，然後選擇右鍵功能表上的 [設定檔]。 請參閱[效能總管](../profiling/performance-explorer.md)。
 
 ### <a name="analyze-unit-test-code-coverage"></a>分析單元測試程式碼涵蓋範圍
 

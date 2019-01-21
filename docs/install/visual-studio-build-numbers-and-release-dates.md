@@ -6,19 +6,19 @@ keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: douge
-ms.date: 12/11/2018
+ms.date: 01/09/2019
 ms.topic: reference
 helpviewer_keywords: ''
 ms.prod: visual-studio-dev15
 ms.custom: seodec18
 ms.workload:
 - multiple
-ms.openlocfilehash: f730655d1bfdab1f7cdf03be99faafeb7f2fcb65
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 15738554ca658a337f187f554b07786569f95ea3
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53989811"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154504"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Visual Studio 組建編號和發行日期
 
@@ -28,9 +28,9 @@ ms.locfileid: "53989811"
 
 | **版本**| **通道** | **發行日期** | **組建版本** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 15.9.5 | 發行 | 2019 年 1 月 8 日 | 15.9.28307.280 |
 | 15.9.4 | 發行 | 2018 年 12 月 11 日 | 15.9.28307.222 |
 | 15.0.20 | 發行 | 2018 年 12 月 11 日 | 15.0.26228.64 |
-| 15.9.3 | Preview 1 | 2018 年 11 月 28 日 | 15.9.28307.145 |
 | 15.9.3 | 發行 | 2018 年 11 月 28 日 | 15.9.28307.145 |
 | 15.9.2 | 發行 | 2018 年 11 月 19 日 | 15.9.28307.108 |
 | 15.9.1 | 發行 | 2018 年 11 月 15 日 | 15.9.28307.105 |
