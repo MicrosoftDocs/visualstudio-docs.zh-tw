@@ -9,16 +9,19 @@ description: 了解所選取 Visual Studio 訂用帳戶隨附的 Power BI Pro �
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 0fb3033699c3331ec61e6d3fe30dd70fd47cc759
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: 3d4d24c48868c85b89e833191c03ab8188637de2
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53739639"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54315497"
 ---
 # <a name="power-bi-pro-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶中的 Power BI Pro
 
 將您的資料轉換成各式各樣內容豐富的圖表，方便您收集與整理。
+
+> [!Note]
+> 這個 Power BI 授權可用來在安全的地方了解並實驗 Power BI 功能，而不會影響較大型的生產/開發/測試環境。  目前的 Power BI 供應項目要求訂閱者建立自己的租用戶以強制分隔。 如果您在公司租用戶中需要有與公司認證相關聯的 Power BI 授權，請洽詢貴公司的管理員來購買並指派授權。
 
 ## <a name="activation-steps"></a>啟用步驟
 若要使用 Power BI Pro，您必須設定帳戶，或使用現有的帳戶登入。
@@ -95,8 +98,10 @@ A:權益是免費的，但啟用會使用用來處理付費訂單的相同系統
 - 信用卡。  如果您提供信用卡號碼，將不會向您的卡片收費。 
 - 發票。  如果您選取「發票」作為付款類型，則不需要提供信用卡號碼。  您也可以將間隔設定為「年度」。  如此一來，您會收到單一電子郵件，讓您知道已為您準備好發票。  發票金額將會是美金 $0.00 元。  
 
-### <a name="q--is-the-power-bi-pro-benefit-included-in-my-subscription-licenses-for-use-in-a-production-environment"></a>問：在生產環境中，是否可以使用我訂用帳戶授權中所包含的 Power BI Pro 權益？
-A:可以。  
+### <a name="q--is-the-power-bi-pro-benefit-included-in-my-subscription-licensed-for-use-in-a-production-environment"></a>問：在生產環境中，是否可以使用我訂用帳戶授權中所包含的 Power BI Pro 權益？
+A:是，您可以在生產環境中使用它，但有兩個重要的注意事項：
+- 此供應項目要求安裝於它自己的租用戶上。  如果您在公司租用戶中需要有與公司認證相關聯的 Power BI 授權，請洽詢貴公司的管理員來購買並指派授權。 
+- 您無法在政府租用戶上使用這項 Power BI Pro權益。  
 
 ### <a name="q--when-i-try-to-activate-power-bi-pro-i-get-a-message-you-already-have-an-account-through-work--can-i-still-use-the-benefit"></a>問：當我嘗試啟動 Power BI Pro 時，收到訊息「您已透過工作取得帳戶」。  我仍然可以使用這項權益嗎？
 A:可以。  此訊息指出您要登入的網域已經有您不是系統管理員的使用中 Office 365 租用戶。  若要將 Power BI Pro 新增至租用戶，您必須是該租用戶的系統管理員。  若要解決此問題，請遵循下列步驟來建立自己的租用戶。

@@ -9,12 +9,12 @@ helpviewer_keywords:
 author: angelosp
 ms.author: angelpe
 manager: douge
-ms.openlocfilehash: 3ba20e0df156cf2bba77bb919e55016692630ce7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d4e2767b5b4286dbf57cca6a3b1445cae55fe1a5
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53831150"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269277"
 ---
 # <a name="customize-file-nesting-in-solution-explorer"></a>自訂 [方案總管] 中的檔案巢狀
 
@@ -131,7 +131,7 @@ ms.locfileid: "53831150"
 
 ## <a name="create-solution-specific-and-project-specific-settings"></a>建立解決方案與專案特定的設定
 
-您可以透過每個解決方案和專案的操作功能表，建立解決方案與專案特定的設定：
+您可以透過每個方案和專案的右鍵功能表 (操作功能表)，建立方案特定與專案特定的設定：
 
 ![解決方案與專案特定的巢狀規則](media/filenesting_solutionprojectspecific.png)
 

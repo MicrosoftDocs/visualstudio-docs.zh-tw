@@ -2,7 +2,7 @@
 title: 教學課程：開始使用 C# 主控台應用程式
 description: 了解如何逐步在 Visual Studio 中建立 C# 主控台應用程式。
 ms.custom: seodec18, get-started
-ms.date: 12/12/2018
+ms.date: 01/10/2019
 ms.technology: vs-ide-general
 ms.prod: visual-studio-dev15
 ms.topic: tutorial
@@ -15,12 +15,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 333eeb3f826663d979e1cec444ede7eda4b55b2a
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.openlocfilehash: 6114910f8c4cbeebc0301cc0c2167a49742823a5
+ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53562213"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54204427"
 ---
 # <a name="tutorial-get-started-with-a-c-console-app-in-visual-studio"></a>教學課程：Visual Studio 中的 C# 主控台應用程式入門
 
@@ -135,9 +135,11 @@ ms.locfileid: "53562213"
 
 讓我們修正程式碼來處理小數。
 
+1. 按 **Ctrl** + **F** 以開啟 [尋找和取代] 控制項。
+
 1. 將 `int` 變數的每個執行個體變更為 `float`。
 
-   (您可以使用[尋找和取代](../../ide/finding-and-replacing-text.md#find-and-replace-control)控制項來協助您進行這項工作。 若要使用程式碼編輯器中的搜尋控制項，請按 **Crtl**+**F**。 然後在搜尋控制項上選擇 [尋找下一個] 或 [尋找上一個] 按鈕。 若要使用取代選項，請選擇 [尋找] 文字方塊旁的按鈕。 若要一次執行一個取代，請選擇 [取代] 文字方塊旁的 [取代下一個] 按鈕。 若要取代所有相符項目，請選擇 [全部取代] 按鈕。)
+    ![顯示如何將 int 變數變更為 float 的 [尋找和取代] 控制項動畫](./media/find-replace-control-animation.gif)
 
 1. 再次執行您的計算機應用程式，將數字 **42** 除以數字 **119**。
 
@@ -147,9 +149,7 @@ ms.locfileid: "53562213"
 
 不過，應用程式僅會產生小數結果。 讓我們進一步調校程式碼，讓應用程式也可以計算小數。
 
-1. 將 `float` 變數的每個執行個體變更為 `double`。
-
-1. 將 `Convert.ToInt32` 方法的每個執行個體變更為 `Convert.ToDouble`。
+1. 使用 [尋找和取代] 控制項 (**Ctrl** + **F**)，將 `float` 變數的每個執行個體變更為 `double`，以及將 `Convert.ToInt32` 方法的每個執行個體變更為 `Convert.ToDouble`。
 
 1. 執行您的計算機應用程式，將數字 **42.5** 除以數字 **119.75**。
 

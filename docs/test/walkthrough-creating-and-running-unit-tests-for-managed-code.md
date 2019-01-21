@@ -14,12 +14,12 @@ manager: douge
 ms.workload:
 - dotnet
 author: gewarren
-ms.openlocfilehash: de50a5ee6e65540b1a2052f61eae211074780417
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 537059a78ccc316b7b74a8300961b57b4e6e6f95
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53989172"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269978"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>逐步解說：針對受控碼建立和執行單元測試
 
@@ -93,7 +93,7 @@ public void Debit(double amount)
 
 5. 在 **BankTests** 專案中，新增 **Bank** 專案的參考。
 
-   在 [方案總管] 中，選取 **BankTests** 專案中的 [參考]，然後從操作功能表選擇 [新增參考]。
+   在 [方案總管] 中，選取 **BankTests** 專案中的 [參考]，然後從右鍵功能表選擇 [新增參考]。
 
 6. 在 [參考管理員] 對話方塊中，展開 [方案]，然後檢查 [Bank] 項目。
 
@@ -103,7 +103,7 @@ public void Debit(double amount)
 
 ### <a name="rename-a-class-file"></a>重新命名類別檔案
 
-在 [方案總管] 中，選取 BankTests 專案中的 *UnitTest1.cs* 檔案。 從操作功能表中，選擇 [重新命名]，然後將檔案重新命名為 *BankAccountTests.cs*。 在詢問您是否要重新命名專案中程式碼項目 `UnitTest1` 的所有參考的對話方塊上，選擇 [是]。
+在 [方案總管] 中，選取 BankTests 專案中的 *UnitTest1.cs* 檔案。 從右鍵功能表中，選擇 [重新命名]，然後將檔案重新命名為 *BankAccountTests.cs*。 在詢問您是否要重新命名專案中程式碼項目 `UnitTest1` 的所有參考的對話方塊上，選擇 [是]。
 
 此步驟會將類別名稱變更為 `BankAccountTests`。 *BankAccountTests.cs* 檔案現在會包含下面程式碼：
 

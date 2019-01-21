@@ -9,12 +9,12 @@ description: 了解如何啟用 Visual Studio 訂用帳戶所包含的技術支�
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 635280cf52ca82af67ec1b3fc321f5ea6955128a
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: e2e5b66988ba5ff5aedede2e1cef112a3b204919
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53740422"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54315510"
 ---
 # <a name="activate-the-technical-support-benefit-in-visual-studio-subscriptions"></a>啟用 Visual Studio 訂用帳戶中的技術支援權益
 
@@ -85,11 +85,8 @@ ms.locfileid: "53740422"
 若要使用您的 Visual Studio 訂閱技術支援權益來解決與 Azure 相關的問題，您必須將合約識別碼和存取識別碼連結至您的 Azure 訂用帳戶。
 
 1.  前往 https://portal.azure.com 並登入
-2.  從左方瀏覽器列，按一下 [說明 + 支援]
-3.  按一下 [支援] 底下的 [連結支援合約]
-4.  輸入上面 #1 中提供的「存取識別碼」與「合約識別碼」。
-
-完成這些步驟之後，您將能夠選取與您的 Visual Studio 訂用帳戶權益建立關聯的支援方案。  (方案名稱可能包含 "MSDN")。
+2.  從左側瀏覽列中，按一下 [說明 + 支援]
+3.  按一下 [支援] 底下的 [新增支援要求]
 
 ## <a name="eligibility"></a>資格
 

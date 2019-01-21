@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8703174b2eef580b34f48c090802822bbf6cc6c9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 96921c3b711fa1f2d01bee343d68891cf246bc6b
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53947833"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54315627"
 ---
 # <a name="create-a-c-extension-for-python"></a>建立適用於 Python 的 C++ 延伸模組
 
@@ -127,7 +127,7 @@ ms.locfileid: "53947833"
     | | **一般** > **目標擴充功能** | **.pyd** |
     | | **專案預設值** > **設定類型** | **動態程式庫 (.dll)** |
     | **C/C++** > **一般** | **其他 Include 目錄** | 視情況為您的安裝新增 Python *include* 資料夾，例如 `c:\Python36\include`。  |
-    | **C/C++** > **前置處理器** | **前置處理器定義** | 將 `Py_LIMITED_API;` 新增至字串的開頭 (包括分號)。 此定義會限制您可以從 Python 呼叫的某些功能，並使程式碼更容易在不同版本的 Python 之間移植。 |
+    | **C/C++** > **前置處理器** | **前置處理器定義** | **僅限 CPython**：將 `Py_LIMITED_API;` 新增至字串的開頭 (包括分號)。 此定義會限制您可以從 Python 呼叫的某些功能，並使程式碼更容易在不同版本的 Python 之間移植。 如果您使用 PyBind11，請勿新增這個定義，否則您將會看到建置錯誤。 |
     | **C/C++** > **程式碼產生** | **執行階段程式庫** | **多執行緒的 DLL (/ MD)** (請參閱下面的警告) |
     | **連結器** > **一般** | **其他程式庫目錄** | 視您的安裝新增適當的 Python *libs* 資料夾並包含 *.lib* 檔案，例如 `c:\Python36\libs`。 (請務必指向包含 *.lib* 檔案的 *libs* 資料夾，而「不是」包含 *.py* 檔案的 *Lib* 資料夾。) |
 
@@ -135,7 +135,7 @@ ms.locfileid: "53947833"
     > 如果在專案 [屬性] 中沒有看到 [C/C++] 索引標籤，這是因為專案不包含它識別為 C/C++ 原始程式檔的任何檔案。 如果您建立原始程式檔，而沒有 *.c* 或 *.cpp* 副檔名，便可能發生此情形。 比方說，如果您稍早在新項目對話方塊中不小心輸入 `module.coo` 而不是 `module.cpp`，則 Visual Studio 會建立此檔案，但不會將檔案類型設定為「C/C++ 程式碼」，「C/C++ 程式碼」會啟動 [C/C++ 屬性] 索引標籤。即使以 `.cpp` 來重新命名您的檔案，仍會發生這種錯誤識別。 若要正確設定檔案類型，請在 [方案總管] 中以滑鼠右鍵按一下檔案、選取 [屬性]，然後將 [檔案類型] 設定為 [C/C++ 程式碼]。
 
     > [!Warning]
-    > 即使是偵錯設定，也一律設定 [多執行緒 DLL (/MD)] 的 [C/C++] > [程式碼產生] > [執行階段程式庫] 選項，因為非偵錯 Python 二進位檔就是使用此設定建置的。 如果您剛好設定 [多執行緒偵錯 DLL (/MDd)] 選項，則建置 [偵錯] 組態會產生錯誤 **C1189：Py_LIMITED_API 與 Py_DEBUG、Py_TRACE_REFS 和 Py_REF_DEBUG 不相容**。 此外，如果您移除 `Py_LIMITED_API` 以避免發生建置錯誤，Python 會在嘗試匯入模組時當機。 (當機會發生在 DLL 的 `PyModule_Create` 呼叫內，如稍後所述，輸出訊息為 **Python 嚴重錯誤：PyThreadState_Get︰沒有目前的執行緒**)。
+    > 即使是偵錯設定，也一律設定 [多執行緒 DLL (/MD)] 的 [C/C++] > [程式碼產生] > [執行階段程式庫] 選項，因為非偵錯 Python 二進位檔就是使用此設定建置的。 使用 CPython，如果您剛好設定 [多執行緒偵錯 DLL (/MDd)] 選項，則建置 [偵錯] 組態會產生錯誤 **C1189：Py_LIMITED_API 與 Py_DEBUG、Py_TRACE_REFS 和 Py_REF_DEBUG 不相容**。 此外，如果您移除 `Py_LIMITED_API` (其對 CPython 為必要項，但對 PyBind11 則不是) 以避免發生建置錯誤，Python 會在嘗試匯入模組時當機。 (當機會發生在 DLL 的 `PyModule_Create` 呼叫內，如稍後所述，輸出訊息為 **Python 嚴重錯誤：PyThreadState_Get︰沒有目前的執行緒**)。
     >
     > /MDd 選項用來建置 Python 偵錯二進位檔案 (例如 *python_d.exe*)，但針對副檔名 DLL 選取它仍會導致 `Py_LIMITED_API` 組建錯誤。
 

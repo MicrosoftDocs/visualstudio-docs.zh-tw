@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d9c3477926161da09d0b669d32316933d967ee98
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a5f81c38d63659261281f35704edf0ecde3ccd94
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53908888"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269822"
 ---
 # <a name="create-solutions-and-projects"></a>建立方案和專案
 
@@ -129,7 +129,7 @@ ms.locfileid: "53908888"
 
 ### <a name="to-permanently-delete-a-solution"></a>永久刪除方案
 
-1. 在**方案總管**中，於您要刪除之方案的操作功能表上，選擇 [在檔案總管中開啟資料夾]。
+1. 在 [方案總管] 中，於您要刪除之方案的右鍵功能表 (操作功能表) 上，選擇 [在檔案總管中開啟資料夾]。
 
 1. 在 [檔案總管] 中，瀏覽上一層。
 

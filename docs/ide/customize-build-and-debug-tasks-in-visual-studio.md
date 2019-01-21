@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 434ba3e01313e79c734b67b65c7cff0530f4d41d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2662c09c4d131f52b0426a910d9dd4b60e6b3459
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53836320"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54270121"
 ---
 # <a name="customize-build-and-debug-tasks-for-open-folder-development"></a>針對「開啟資料夾」自訂建置及對工作進行偵錯
 
@@ -32,8 +32,8 @@ Visual Studio 知道如何執行許多不同的語言和程式碼基底，但它
 
 |檔案名稱|用途|
 |-|-|
-|*tasks.vs.json*|指定自訂建置命令和編譯器參數，以及任意 (非建置相關) 工作。<br>存取方式為透過 [方案總管] 的操作功能表項目 [設定工作]。|
-|*launch.vs.json*|針對偵錯指定命令列引數。<br>存取方式為透過 [方案總管] 的操作功能表項目 [偵錯並啟動設定]。|
+|*tasks.vs.json*|指定自訂建置命令和編譯器參數，以及任意 (非建置相關) 工作。<br>透過 [方案總管] 的右鍵功能表項目 [設定工作] 來存取。|
+|*launch.vs.json*|針對偵錯指定命令列引數。<br>透過 [方案總管] 的右鍵功能表項目 [偵錯並啟動設定] 來存取。|
 |*VSWorkspaceSettings.json*|可能會影響工作和啟動的一般設定。 例如，定義 *VSWorkspaceSettings.json* 中的 `envVars` 會將指定的環境變數新增至外部執行命令。<br>您會以手動方式建立此檔案。|
 
 這些 *.json* 檔案都是位於您程式碼基底之根資料夾中名為 *.vs* 的隱藏資料夾內。 當您在 [方案總管] 中的檔案或資料夾上選取 [設定工作] 或 [偵錯並啟動設定] 時，Visual Studio 會視需要建立 *tasks.vs.json* 和 *launch.vs.json* 檔案。 這些 *.json* 檔案會隱藏，因為使用者通常都不會想要將它簽入原始檔控制。 不過，如果您想要能夠將它簽入原始檔控制，請將檔案拖曳到您程式碼基底的根目錄中，這樣便能夠顯示它們。
@@ -47,7 +47,7 @@ Visual Studio 知道如何執行許多不同的語言和程式碼基底，但它
 
 ![設定 [工作] 功能表](../ide/media/customize-configure-tasks-menu.png)
 
-這會建立 (或開啟) *.vs* 資料夾中的 *tasks.vs.json* 檔案。 您可以在此檔案中定義建置工作或任意工作，然後使用您從 [方案總管] 操作功能表賦與它的名字來叫用它。
+這會建立 (或開啟) *.vs* 資料夾中的 *tasks.vs.json* 檔案。 您可以在此檔案中定義組建工作或任意工作，然後使用您從 [方案總管] 右鍵功能表中給予它的名稱來叫用它。
 
 您可以將自訂工作新增到個別檔案中，也可以新增到特定類型的所有檔案中。 例如，您可以將 NuGet 套件檔案設定成包含「還原套件」工作，或是將所有原始程式檔設定成包含靜態分析工作 (例如針對所有 *.js* 檔案提供 Linter)。
 
@@ -118,7 +118,7 @@ bin:
 }
 ```
 
-在您於 *tasks.vs.json* 中定義建置工作之後，系統會將額外的操作功能表項目新增至 [方案總管] 中的相對應檔案。 在此範例中，[建置]、[重建] 和 [清理] 選項會新增至任何 Makefile 檔案的操作功能表。
+在您於 *tasks.vs.json* 中定義組建工作之後，系統會將額外的右鍵功能表 (操作功能表) 項目新增至 [方案總管] 中的相對應檔案。 在此範例中，[建置]、[重建] 和 [清理] 選項會新增至任何 Makefile 檔案的操作功能表。
 
 ![具有 [建置]、[重新建置] 及 [清理] 的 Makefile 操作功能表](media/customize-build-rebuild-clean.png)
 
@@ -148,7 +148,7 @@ bin:
 }
 ```
 
-- `taskName` 能指定顯示在操作功能表中的名稱。
+- `taskName` 會指定要出現在右鍵功能表中的名稱。
 - `appliesTo` 能指定可執行該命令的檔案。
 - `command` 屬性能指定要叫用的命令。 在此範例中，`COMSPEC` 環境變數會用來識別命令列解譯器，通常為 *cmd.exe*。
 - `args` 屬性能指定要傳遞至已叫用命令的引數。

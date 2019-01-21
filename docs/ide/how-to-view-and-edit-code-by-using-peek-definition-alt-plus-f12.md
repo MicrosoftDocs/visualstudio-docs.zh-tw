@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d5013e04d1d5b6c73255be907d2b460cb186cea8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c8fb33e1b6df6cd43aaaba9c38123ff7b941da5c
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53968705"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269965"
 ---
 # <a name="how-to-view-and-edit-code-by-using-peek-definition-altf12"></a>HOW TO：使用查看定義 (Alt+F12) 檢視及編輯程式碼
 
@@ -25,7 +25,7 @@ ms.locfileid: "53968705"
 
 ### <a name="to-open-a-peek-definition-window"></a>若要開啟查看定義視窗
 
-1. 您可以從想要探索的型別或成員的操作功能表，選擇 [查看定義] 以查看定義。 在 Visual Studio 2017 15.4 版和更新版本中，如果已啟用選項，您也可以按 **Ctrl** 鍵 (或其他修飾鍵)，然後按一下成員名稱，以使用滑鼠查看定義。 或者，您也可以從鍵盤按 **Alt**+**F12**。
+1. 您可以從想要探索的型別或成員的右鍵功能表，選擇 [查看定義] 以查看定義。 在 Visual Studio 2017 15.4 版和更新版本中，如果已啟用選項，您也可以按 **Ctrl** 鍵 (或其他修飾鍵)，然後按一下成員名稱，以使用滑鼠查看定義。 或者，您也可以從鍵盤按 **Alt**+**F12**。
 
      下圖顯示名為 `Print()` 之方法的 [查看定義] 視窗：
 
