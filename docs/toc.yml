@@ -820,6 +820,14 @@ items:
           href: ide/reference/options-text-editor-csharp-advanced.md
         - name: 文字編輯器 - IntelliSense、C#
           href: ide/reference/options-text-editor-csharp-intellisense.md
+        - name: 文字編輯器 - F#、進階
+          href: ide/reference/options-text-editor-fsharp-advanced.md
+        - name: 文字編輯器 - F#、程式碼修正
+          href: ide/reference/options-text-editor-fsharp-code-fixes.md
+        - name: 文字編輯器 - F#、CodeLens
+          href: ide/reference/options-text-editor-fsharp-codelens.md
+        - name: 文字編輯器 - F#、IntelliSense
+          href: ide/reference/options-text-editor-fsharp-intellisense.md
         - name: 文字編輯器 - HTML (Web Forms)、格式
           href: ide/reference/options-text-editor-html-formatting.md
         - name: 文字編輯器 - HTML (Web Forms)、雜項
@@ -1134,9 +1142,9 @@ items:
     href: ide/reference/resources-for-troubleshooting-integrated-development-environment-errors.md
   - name: 告訴我們
     href: ide/talk-to-us.md
-ms.openlocfilehash: 7d78ac25b7b12af01409d26f6906788f4c9bcb44
-ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
+ms.openlocfilehash: c4ffd16d72a865f17e758c515bb344e26ca121dc
+ms.sourcegitcommit: 8bfabab73b39b3b3e68a3e8dc225515e8b310fed
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "54380347"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "54398334"

@@ -1,6 +1,10 @@
 items:
-- name: Visual Studio 中的 Node.js
+- name: JavaScript 和 TypeScript
   href: index.yml
+- name: 總覽
+  items:
+  - name: Visual Studio 2017 中的 JavaScript
+    href: javascript-in-vs-2017.md
 - name: 快速入門
   items:
   - name: 建立 Node.js 專案
@@ -13,35 +17,35 @@ items:
     href: tutorial-nodejs.md
   - name: 使用 React 建立 Node.js 應用程式
     href: tutorial-nodejs-with-react-and-jsx.md
-  - name: 發佈到 Linux App Service
+  - name: 將 Node.js 應用程式發佈到 Linux App Service
     href: publish-nodejs-app-azure.md
 - name: 作法指南
   items:
   - name: 撰寫和編輯程式碼
     href: write-and-edit-code.md
+  - name: 建立 Vue.js 應用程式
+    href: create-application-with-vuejs.md
   - name: 管理 npm 套件
     href: npm-package-management.md
   - name: 不使用專案或解決方案 ([開啟資料夾]) 進行開發
     href: develop-javascript-code-without-solutions-projects.md
-  - name: 使用互動式 REPL
+  - name: 使用 Node.js 互動式 REPL
     href: nodejs-interactive-repl.md
-  - name: 偵錯 Node.js 應用程式
-    href: debug-nodejs.md
-  - name: 單元測試 JavaScript 程式碼
-    href: unit-testing-javascript-with-visual-studio.md
   - name: JavaScript IntelliSense
     href: /visualstudio/ide/javascript-intellisense?toc=/visualstudio/javascript/toc.json
-  - name: 建立 Vue.js 應用程式
-    href: create-application-with-vuejs.md
+  - name: 對 JavaScript 應用程式進行偵錯
+    href: debug-nodejs.md
+  - name: 對 JavaScript 進行單元測試
+    href: unit-testing-javascript-with-visual-studio.md
 - name: 資源
   items:
   - name: package.json 組態
     href: configure-packages-with-package-json.md
-  - name: Node.js 工具的 Wiki 頁面
-    href: https://github.com/Microsoft/nodejstools
-ms.openlocfilehash: 491166ddfbdac44438c8b7c14bfe73cba498af76
-ms.sourcegitcommit: a715de2ba8c703f37aa2102567b1aa2c0f05a117
+  - name: JavaScript 和 TypeScript 的 Wiki 文件
+    href: https://github.com/Microsoft/nodejstools/wiki
+ms.openlocfilehash: f10039651ab1aba6ee5d013d83893b56d7504196
+ms.sourcegitcommit: 8bfabab73b39b3b3e68a3e8dc225515e8b310fed
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "53441453"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "54398204"
