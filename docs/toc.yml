@@ -844,6 +844,10 @@ items:
           href: ide/reference/options-text-editor-javascript-linting.md
         - name: 文字編輯器 - JavaScript、專案
           href: ide/reference/options-text-editor-javascript-project.md
+        - name: 文字編輯器 - U-SQL、格式設定
+          href: ide/reference/options-text-editor-usql-formatting.md
+        - name: 文字編輯器 - U-SQL、IntelliSense
+          href: ide/reference/options-text-editor-usql-intellisense.md
         - name: 文字編輯器 - 格式、XAML
           href: ide/reference/options-text-editor-xaml-formatting.md
         - name: 文字編輯器 - XAML、雜項
@@ -1142,9 +1146,9 @@ items:
     href: ide/reference/resources-for-troubleshooting-integrated-development-environment-errors.md
   - name: 告訴我們
     href: ide/talk-to-us.md
-ms.openlocfilehash: c4ffd16d72a865f17e758c515bb344e26ca121dc
-ms.sourcegitcommit: 8bfabab73b39b3b3e68a3e8dc225515e8b310fed
+ms.openlocfilehash: ee98252a961a3a2e6a656be5042e8f4298132c2c
+ms.sourcegitcommit: d0b02affd24e66efed924c197824f35f823e3240
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "54398334"
+ms.lasthandoff: 01/21/2019
+ms.locfileid: "54417950"
