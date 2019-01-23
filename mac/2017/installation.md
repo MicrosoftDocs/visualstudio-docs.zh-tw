@@ -6,12 +6,13 @@ ms.author: crdun
 ms.date: 11/03/2018
 ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
-ms.openlocfilehash: ca24c09a0eedc9aee10a4fad8ceb126a2d72462a
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.custom: video
+ms.openlocfilehash: 2dca1fdeace3a69fee231c1c31d3db75587e8294
+ms.sourcegitcommit: a260df15214b3198a28ca4e312263942cf6f4ce7
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54315806"
+ms.lasthandoff: 01/22/2019
+ms.locfileid: "54443789"
 ---
 # <a name="install-visual-studio-2017-for-mac"></a>安裝 Visual Studio 2017 for Mac
 
@@ -115,6 +116,10 @@ ms.locfileid: "54315806"
 ### <a name="net-core-apps-aspnet-core-web-apps-unity-game-development"></a>.NET Core 應用程式、ASP.NET Core Web 應用程式、Unity 遊戲開發
 
 對於其他工作負載，請參閱[工作負載](/visualstudio/mac/workloads)頁面。
+
+## <a name="related-video"></a>相關影片
+
+> [!Video https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Visual-Studio-for-Mac-Acquisition/player]
 
 ## <a name="see-also"></a>另請參閱
 
