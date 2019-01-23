@@ -7,17 +7,17 @@ ms.date: 11/03/2018
 ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 0E1EF257-9DE4-4653-9DF4-805CE007A1A1
-ms.openlocfilehash: 1f8469af9e5e6980cf42066bb6f1fb4f0447efbd
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.openlocfilehash: afb542e60eeae34bbe7d05694b1ffc8330ed2958
+ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54315601"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54379957"
 ---
 # <a name="install-a-preview-release"></a>安裝預覽版本
 
 > [!NOTE]
-> Visual Studio 2019 for Mac 預覽版[現已開放安裝](/visualstudio/mac/installation/view=vsmac-2019)和測試。
+> Visual Studio 2019 for Mac 預覽版[現已開放安裝](/visualstudio/mac/installation/?view=vsmac-2019)和測試。
 
 ## <a name="install-an-update-for-visual-studio-for-mac"></a>安裝 Visual Studio for Mac 的更新
 

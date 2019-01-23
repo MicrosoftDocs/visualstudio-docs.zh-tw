@@ -17,18 +17,21 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 52a2c396bc6a6e5e09d72d8a1f9a1ac7486bb280
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ac2597b5b87f75402dcc6553096c0bfcf3d30cf1
+ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53881019"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54380090"
 ---
 # <a name="what39s-new-in-visual-studio-2017"></a>Visual Studio 2017 的新功能
 
 **已針對 [15.9 版](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default&contextView=vs-2017)更新**
 
 想要從舊版 Visual Studio 升級嗎？ 以下是 Visual Studio 2017 能為您提供的內容：適用於任何開發人員、任何應用程式及任何平台的卓越生產力。 您可使用 Visual Studio 2017 來開發適用於 Android、iOS、Windows、Linux、Web 及雲端的應用程式。 快速編碼、輕鬆偵錯及診斷、頻繁測試，然後自信地發行。 您也可以建置自己的擴充功能來擴充和自訂 Visual Studio 。 使用版本控制、變得敏捷、使用這個版本有效率地共同作業！
+
+>[!div class="button"]
+>[下載 Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)
 
 以下是自舊版 Visual Studio 2015 以來，我們所做變更的高階回顧：
 
@@ -50,11 +53,9 @@ ms.locfileid: "53881019"
 
 ### <a name="a-new-setup-experience"></a>新的安裝經驗
 
-[下載 Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) 或[查看 Visual Studio 系統需求](/visualstudio/productinfo/vs2017-system-requirements-vs?context=visualstudio/default&contextView=vs-2017)
+Visual Studio 可讓您在需要功能時，以更輕鬆、更快的方式只安裝所需的功能。 而且，它也會完全進行解除安裝。
 
- Visual Studio 可讓您在需要功能時，以更輕鬆、更快的方式只安裝所需的功能。 而且，它也會完全進行解除安裝。
-
- 您在安裝 Visual Studio 時要注意的最重要變更就是它的新安裝體驗。 在 [工作負載] 索引標籤上，您會看到已分組來代表通用架構、語言及平台的安裝選項。 其範圍涵蓋 Windows、Linux 及 iOS 上從 .NET 桌面開發到 C++ 應用程式開發皆包含在內的所有項目。
+您在安裝 Visual Studio 時要注意的最重要變更就是它的新安裝體驗。 在 [工作負載] 索引標籤上，您會看到已分組來代表通用架構、語言及平台的安裝選項。 其範圍涵蓋 Windows、Linux 及 iOS 上從 .NET 桌面開發到 C++ 應用程式開發皆包含在內的所有項目。
 
 選擇您需要的工作負載，然後在需要時加以變更。
 

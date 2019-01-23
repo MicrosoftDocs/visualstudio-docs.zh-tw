@@ -15,11 +15,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: d8624c1405931edefe2e1e53e579ad28a7b238f1
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50220218"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54345483"
 ---
 # <a name="active-script-debugging-overview"></a>動態指令碼偵錯概觀
 動態指令碼偵錯介面允許進行非語言相關、非主機相關偵錯，並支援各種開發環境。  

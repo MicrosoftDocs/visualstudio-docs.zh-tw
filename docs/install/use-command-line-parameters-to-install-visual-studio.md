@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f2955a9efae219cf992936a8b64cac672a0cd680
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: eb4ab50f5b5b699d2cbb8fa800705f4ed218c588
+ms.sourcegitcommit: a8c841648d862c83a0f0d654df1b367c159adc5e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53869657"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "54403963"
 ---
 # <a name="use-command-line-parameters-to-install-visual-studio-2017"></a>使用命令列參數來安裝 Visual Studio 2017
 
@@ -77,7 +77,8 @@ ms.locfileid: "53869657"
 | `--help, --?, -h, -?` | 顯示此頁面的離線版本。 |
 | `--config <path>` | **選擇性**與 **15.9 中的新功能**：在安裝或修改作業期間，這會根據先前儲存的安裝組態檔，來決定要新增的工作負載和元件。 這是累加作業，不會移除檔案中沒有的任何工作負載或元件。 此外，不會新增未套用至產品的項目。 在匯出作業期間，這會決定安裝組態檔的儲存位置。 |
 
-> 注意:指定多個工作負載和元件時，您必須針對每個項目重複 `--add` 或 `--remove` 命令列參數。
+> [!IMPORTANT]
+> 指定多個工作負載和元件時，您必須針對每個項目重複 `--add` 或 `--remove` 命令列參數。
 
 | **配置選項** | **描述** |
 | ----------------------- | --------------- |
