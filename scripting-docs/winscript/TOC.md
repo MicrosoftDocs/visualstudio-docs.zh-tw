@@ -1,4 +1,3 @@
----
 # [Windows 指令碼的介面](windows-script-interfaces.md)
 # [Windows Script Host](windows-script-hosts.md)
 # [Windows 指令碼引擎](windows-script-engines.md)
