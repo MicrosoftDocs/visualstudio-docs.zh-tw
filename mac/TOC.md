@@ -1,4 +1,3 @@
----
 # [Visual Studio for Mac](index.md)
 # [IDE 導覽](/visualstudio/mac/ide-tour/)
 
