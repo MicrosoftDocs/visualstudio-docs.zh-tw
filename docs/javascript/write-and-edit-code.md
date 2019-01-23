@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: ebc5666ca037276d5b148151e2b41756b105dc2d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 41e8628e6d747d523dae12448d81f39ad5de964b
+ms.sourcegitcommit: 8bfabab73b39b3b3e68a3e8dc225515e8b310fed
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53967423"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "54398282"
 ---
 # <a name="learn-to-use-the-code-editor"></a>了解如何使用程式碼編輯器
 
@@ -26,9 +26,6 @@ ms.locfileid: "53967423"
 > 如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)頁面免費進行安裝。 根據您執行的應用程式開發類型，您可能需要安裝 Visual Studio 隨附的 **Node.js 開發工作負載**。
 
 本文假設您已熟悉 JavaScript 開發。 如果您不熟悉，建議您先瀏覽教學課程 (例如[建立 Node.js 和 Express 應用程式](../javascript/tutorial-nodejs.md))。
-
-> [!TIP]
-> 若要繼續遵循這篇文章，請確定您已為 Visual Studio 選取 JavaScript 設定。 如需選取整合式開發環境 (IDE) 的設定資訊，請參閱[環境設定](../ide/environment-settings.md)。 當您匯入設定時，請匯入 **JavaScript** 設定。
 
 ## <a name="add-a-new-project-file"></a>新增專案檔
 
@@ -96,7 +93,7 @@ Visual Studio 編輯器讓檢查類型、函式等定義變得十分輕鬆。其
 
    ![查看定義視窗](../javascript/media/write-code-peek-definition.png)
 
-1. 選擇快顯視窗右上方含 "x" 的小型方塊，以關閉查看的定義視窗。
+選擇快顯視窗右上方含 "x" 的小型方塊，以關閉查看的定義視窗。
 
 ## <a name="use-code-snippets"></a>使用程式碼片段
 

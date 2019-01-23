@@ -14,12 +14,12 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c9413e8b6e6db0c81eb1853c24506d20c8d06f3e
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 8f207261af82f8f5e64710df5177e891a6a47c1a
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24571438"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54347498"
 ---
 # <a name="active-script-profiling-overview"></a>動態指令碼分析概觀
 [動態指令碼分析工具介面](../winscript/reference/active-script-profiler-interfaces.md)可啟用指令碼引擎的分析。 動態指令碼分析包含下列各部分：  
@@ -44,5 +44,5 @@ ms.locfileid: "24571438"
 ## <a name="profiler"></a>程式碼剖析工具  
  分析工具會在發生各種事件時收到來自語言引擎的呼叫。 分析工具必須註冊為 COM 物件，並且必須實作 [IActiveScriptProfilerCallback 介面](../winscript/reference/iactivescriptprofilercallback-interface.md)介面。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [動態指令碼分析工具介面](../winscript/reference/active-script-profiler-interfaces.md)

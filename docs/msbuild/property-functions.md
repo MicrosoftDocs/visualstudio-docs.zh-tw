@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7cb006506b479b98710059e8c4d40f0b1af4682c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0fab9dc76bf47dbe03388aaef56c85ca2fa5a7bf
+ms.sourcegitcommit: d0b02affd24e66efed924c197824f35f823e3240
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53911087"
+ms.lasthandoff: 01/21/2019
+ms.locfileid: "54417898"
 ---
 # <a name="property-functions"></a>屬性函式
 
@@ -128,7 +128,7 @@ $([Class]::Property.Method(Parameters))
 例如，您可以使用下列程式碼，將建置屬性設為目前日期的今天。
 
 ```xml
-<Today>$([System.DateTime]::Now.ToString("yyyy.MM.dd"))</Today>
+<Today>$([System.DateTime]::Now.ToString('yyyy.MM.dd'))</Today>
 ```
 
 ### <a name="msbuild-property-functions"></a>MSBuild 屬性函式

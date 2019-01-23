@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d0714a4edc4b1bfe2a97492bfac85a1a62db1dc0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9046ec4c5523720a917849191cd42b197b115870
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53898682"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54345600"
 ---
 # <a name="msbuild-items"></a>MSBuild 項目
 MSBuild 項目是建置系統的輸入，而且它們通常代表檔案 (檔案是在 `Include` 屬性中指定)。 項目 (Item) 會依據它們的項目 (Element) 名稱分組為項目 (Item) 類型。 項目類型是具名的項目清單，可用來做為工作的參數。 工作會使用項目值來執行建置程序的步驟。  
@@ -321,12 +321,13 @@ Output:
 -->  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>另請參閱
+ [Item 項目 (MSBuild)](../msbuild/item-element-msbuild.md)  
+ [通用的 MSBuild 專案項目](../msbuild/common-msbuild-project-items.md)  
  [MSBuild 概念](../msbuild/msbuild-concepts.md)  
  [MSBuild](../msbuild/msbuild.md)   
  [如何：選取要建置的檔案](../msbuild/how-to-select-the-files-to-build.md)   
  [如何：從組建中排除檔案](../msbuild/how-to-exclude-files-from-the-build.md)   
  [如何：顯示以逗號分隔的項目清單](../msbuild/how-to-display-an-item-list-separated-with-commas.md)   
  [項目定義](../msbuild/item-definitions.md)   
- [批次處理](../msbuild/msbuild-batching.md)   
- [Item 項目 (MSBuild)](../msbuild/item-element-msbuild.md)
+ [批次處理](../msbuild/msbuild-batching.md)

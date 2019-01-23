@@ -29,14 +29,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b8a00ca75135c2c2f29ef04d428e028e31054480
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8729b722465eb01d1e497e99ef13ecbedb66f91e
+ms.sourcegitcommit: d0b02affd24e66efed924c197824f35f823e3240
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53960835"
+ms.lasthandoff: 01/21/2019
+ms.locfileid: "54417924"
 ---
-# <a name="create-a-visual-map-of-the-call-stack-while-debugging"></a>偵錯時建立的視覺效果的對應呼叫堆疊 
+# <a name="create-a-visual-map-of-the-call-stack-while-debugging-c-visual-basic-c-javascript"></a>建立視覺效果的對應呼叫堆疊偵錯時 (C#，Visual Basic、 c + +、 JavaScript)
 
 在您偵錯時建立 Code Map 以視覺方式追蹤呼叫堆疊。 您可以在地圖上做筆記來追蹤程式碼的執行狀況，以便專注於尋找 Bug。
 
@@ -53,7 +53,7 @@ ms.locfileid: "53960835"
 
 ##  <a name="MapStack"></a> 對應呼叫堆疊
 
-1. 在 Visual Studio Enterprise 中C#，Visual Basic、 c + +、 JavaScript 或 X + + 專案中，開始藉由選取偵錯**偵錯** > **開始偵錯**或按下**F5**.
+1. 在 Visual Studio Enterprise 中C#，Visual Basic、 c + + 或 JavaScript 專案中，開始藉由選取偵錯**偵錯** > **開始偵錯**或按下**F5**.
    
 1. 您的應用程式進入中斷模式或是您逐步執行函式之後，請選取**偵錯** > **Code Map**，或按**Ctrl**+**Shift**+**`**.
 
