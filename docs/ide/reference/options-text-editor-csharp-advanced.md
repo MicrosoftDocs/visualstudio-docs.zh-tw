@@ -1,6 +1,6 @@
 ---
 title: 進階、C#、文字編輯器、選項
-ms.date: 10/29/2018
+ms.date: 01/16/2019
 ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4fdb52b4fbdeac437a3833e0030acedfa382f81c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: db27509faf1c3d83eab1cd6c8fcd6b5b70fab48e
+ms.sourcegitcommit: 8bfabab73b39b3b3e68a3e8dc225515e8b310fed
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53887902"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "54398295"
 ---
 # <a name="options-text-editor-c-advanced"></a>進階、C#、文字編輯器、選項
 
@@ -109,13 +109,17 @@ ms.locfileid: "53887902"
 
 - 顯示程序行分隔符號
 
-   文字編輯器會指出程序的可見範圍。 會在專案的 *.vb* 原始程式檔中描繪一行，而這些原始程式檔是位於下表所列的位置：
+   文字編輯器會指出程序的可見範圍。 系統會在專案的 *.cs* 原始程式檔中描繪一行，描繪的位置如下表所列：
 
-   |vb 原始程式檔中的位置|行位置的範例|
+   |.cs 原始程式檔中的位置|行位置的範例|
    |---------------------------------|------------------------------|
    |在區塊宣告建構關閉之後|-   在類別、結構、模組、介面和列舉的結尾處<br />-   在屬性、函式或子函式之後<br />-   不在屬性中的 get 與 set 子句之間|
    |在一組的單一行建構之後|-   在重要的陳述式之後，類別檔中的型別定義之前<br />-   在類別中宣告的變數之後，任何程序之前|
    |在單一行宣告 (非區塊層級宣告) 之後|-   接在重要的陳述式、繼承陳述式、變數宣告、事件宣告、委派宣告和 DLL 宣告陳述式之後|
+
+## <a name="block-structure-guides"></a>區塊結構輔助線
+
+選取這些核取方塊可在程式碼中的大括號 (**{}**) 之間顯示虛線垂直線。 然後，您可以輕鬆查看宣告層級和程式碼層級建構的個別程式碼區塊。
 
 ## <a name="editor-help"></a>編輯器說明
 

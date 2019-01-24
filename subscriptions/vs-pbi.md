@@ -9,12 +9,12 @@ description: 了解所選取 Visual Studio 訂用帳戶隨附的 Power BI Pro �
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 3d4d24c48868c85b89e833191c03ab8188637de2
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.openlocfilehash: a437dd537caa75865a245a22387a4db53d94927f
+ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54315497"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54380189"
 ---
 # <a name="power-bi-pro-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶中的 Power BI Pro
 
@@ -83,7 +83,7 @@ ms.locfileid: "54315497"
 | Visual Studio Dev Essentials | NA  | 無法使用 |NA|
 | Visual Studio Enterprise (每月雲端) | Azure                                       | 無法使用                                  |NA|
 
-<sup>1</sup>  *包含：禁止轉售 (NFR)、Visual Studio 產業夥伴 (VSIP)、BizSpark、MCT Software & Services Developer、MCT Software & Service、Microsoft Valued Professional (MVP)、Region Director (RD)。排除：Microsoft Partner Network (MPN)、FTE、Imagine。*
+<sup>1</sup>  *包含：禁止轉售 (NFR)、Visual Studio 產業夥伴 (VSIP)、BizSpark、MCT 軟體與服務開發人員、MCT 軟體與服務、最有價值專家 (MVP)、區域經理 (RD)。排除：Microsoft Partner Network (MPN)、FTE、Imagine。*
 
 > [!NOTE]
 > Microsoft 不再於雲端訂用帳戶中提供 Visual Studio Professional 年度訂用帳戶和 Visual Studio Enterprise 年度訂用帳戶。 現有的客戶體驗，以及更新、增加、減少或取消其訂用帳戶的能力將不會改變。 我們鼓勵新的客戶移至 [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) 來探索 Visual Studio 的不同購買選項。

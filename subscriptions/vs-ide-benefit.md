@@ -9,12 +9,12 @@ description: 了解如何下載和安裝 Visual Studio 訂用帳戶中所含的 
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: deb8a962b18037beb70aaddac8154e506d0f3867
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: 2e721c8c944bec0741f55c05a510ef02628c6b97
+ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53739795"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54380072"
 ---
 # <a name="using-the-visual-studio-2017-benefit"></a>使用 Visual Studio 2017 權益
 
@@ -69,7 +69,7 @@ ms.locfileid: "53739795"
 | MSDN 平台 (標準)                                          | VL, 零售                                              | 無法使用                                              |  N/A          |
 | Visual Studio Dev Essentials | N/A  | Visual Studio Community |是 |
 
-<sup>1</sup>  *包含：禁止轉售 (NFR)、Visual Studio 產業夥伴 (VSIP)、Microsoft 合作夥伴網路 (MPN)、FTE、MCT Software & Services Developer、BizSpark、Imagine、Microsoft Valued Professional (MVP)、Region Director (RD)。排除：MCT Software & Services。*
+<sup>1</sup>  *包含：禁止轉售 (NFR)、Visual Studio 產業夥伴 (VSIP)、Microsoft 合作夥伴網路 (MPN)、FTE、MCT 軟體與服務開發人員、BizSpark、Imagine、最有價值專家 (MVP)、區域經理 (RD)。排除：MCT Software & Services。*
 
 > [!NOTE]
 > Microsoft 不再於雲端訂用帳戶中提供 Visual Studio Professional 年度訂用帳戶和 Visual Studio Enterprise 年度訂用帳戶。 現有的客戶體驗，以及更新、增加、減少或取消其訂用帳戶的能力將不會改變。 我們鼓勵新的客戶移至 [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) 來探索 Visual Studio 的不同購買選項。

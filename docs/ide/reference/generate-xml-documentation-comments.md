@@ -8,16 +8,21 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 05104b9c734b35226fcd9a964372802f351605df
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5b10a0bae3a9e3b0ce5f9135669cb788f0ddce9d
+ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53964279"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54380380"
 ---
 # <a name="how-to-insert-xml-comments-for-documentation-generation"></a>HOW TO：在文件產生中插入 XML 註解
 
-Visual Studio 可藉由自動產生標準 XML 文件註解結構，來幫助您記錄諸如類別和方法的程式碼項目。 編譯時間中，您可以產生包含文件註解的 XML 檔案。 編譯器所產生的 XML 檔案可以隨著 .NET 組件一起散發，因此 Visual Studio 和其他 IDE 可以使用 IntelliSense 來顯示類型和成員的快速資訊。 此外，可以透過 [DocFX](https://dotnet.github.io/docfx/) 和 [Sandcastle](https://www.microsoft.com/download/details.aspx?id=10526) 這類工具執行 XML 檔案來產生 API 參考網站。
+Visual Studio 可藉由自動產生標準 XML 文件註解結構，來幫助您記錄諸如類別和方法的程式碼項目。 編譯時間中，您可以產生包含文件註解的 XML 檔案。
+
+> [!TIP]
+> 如需設定所產生 XML 檔案的名稱和位置，請參閱[使用 XML 註解記錄您的程式碼 (C# 指南)](/dotnet/csharp/codedoc)。
+
+編譯器所產生的 XML 檔案可以隨著 .NET 組件一起散發，因此 Visual Studio 和其他 IDE 可以使用 IntelliSense 來顯示類型和成員的快速資訊。 此外，可以透過 [DocFX](https://dotnet.github.io/docfx/) 和 [Sandcastle](https://www.microsoft.com/download/details.aspx?id=10526) 這類工具執行 XML 檔案來產生 API 參考網站。
 
 > [!NOTE]
 > 會自動插入 XML 文件註解的**插入註解**命令適用於 [C#](/dotnet/csharp/programming-guide/xmldoc/xml-documentation-comments) 和 [Visual Basic](/dotnet/visual-basic/programming-guide/program-structure/how-to-create-xml-documentation)。 然而，您可以手動插入 [C + + 中的 XML 文件註解](/cpp/ide/xml-documentation-visual-cpp)檔案，且仍可在編譯時間產生 XML 文件檔。

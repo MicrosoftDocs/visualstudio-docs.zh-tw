@@ -9,12 +9,12 @@ description: 了解所選取 Visual Studio Enterprise 訂用帳戶中所含產�
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 69dcde708cdd88c1e9945567fc8525fb1763627c
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: fd7aed3acd11b0d9e5ce05784619c34a97e726a8
+ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53740256"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54380237"
 ---
 # <a name="the-modernrequirements4tfs-benefit-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶的 MODERNRequirements4TFS 權益
 
@@ -95,7 +95,7 @@ ms.locfileid: "53740256"
 | Visual Studio Dev Essentials | NA  |無法使用                                                          |NA     |
 | Visual Studio Enterprise、Visual Studio Professional (每月雲端) | Azure                                       | 無法使用                                                           |NA|
 
-<sup>1</sup>  *包含：禁止轉售 (NFR)、Visual Studio 產業夥伴 (VSIP)、Microsoft 合作夥伴網路 (Enterprise)、FTE。排除：Microsoft 合作夥伴網路 (Professional)、MCT Software & Services Developer、BizSpark、Imagine、Microsoft Valued Professional (MVP)、Region Director (RD)。MCT Software & Services。*
+<sup>1</sup>  *包含：禁止轉售 (NFR)、Visual Studio 產業夥伴 (VSIP)、Microsoft 合作夥伴網路 (Enterprise)、FTE。排除：Microsoft 合作夥伴網路 (專業版)、MCT 軟體與服務開發人員、BizSpark、Imagine、最有價值專家 (MVP)、區域經理 (RD)。MCT Software & Services。*
 
 > [!NOTE]
 > Microsoft 不再於雲端訂用帳戶中提供 Visual Studio Professional 年度訂用帳戶和 Visual Studio Enterprise 年度訂用帳戶。 現有的客戶體驗，以及更新、增加、減少或取消其訂用帳戶的能力將不會改變。 我們鼓勵新的客戶移至 [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) 來探索 Visual Studio 的不同購買選項。

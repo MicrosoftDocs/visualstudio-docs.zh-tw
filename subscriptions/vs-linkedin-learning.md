@@ -9,12 +9,12 @@ description: 了解包含為所選取 Visual Studio 訂用帳戶中所含 Linked
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: fa98ce41f0b88bd679568247eea57aa3e62318d3
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: fc77d1ebe0fe96c55000123e4bf040a35a37b619
+ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53739532"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54380218"
 ---
 # <a name="the-linkedin-learning-benefit-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶中的 LinkedIn Learning 權益
 
@@ -102,7 +102,7 @@ ms.locfileid: "53739532"
 | Visual Studio Dev Essentials | NA  | 3 個月 |否。  僅提供給新訂閱者使用 |
 | Visual Studio Enterprise、Visual Studio Professional (每月雲端) | Azure                                       | 無法使用                                                           |NA|
 
-<sup>1</sup>  *包含：禁止轉售 (NFR)、Visual Studio 產業夥伴 (VSIP)。排除：Microsoft 合作夥伴網路 (MPN)、FTE、MCT Software & Services Developer、BizSpark、Imagine、Microsoft Valued Professional (MVP)、Region Director (RD)。MCT Software & Services。*
+<sup>1</sup>  *包含：禁止轉售 (NFR)、Visual Studio 產業夥伴 (VSIP)。排除：Microsoft 合作夥伴網路 (MPN)、FTE、MCT 軟體與服務開發人員、BizSpark、Imagine、最有價值專家 (MVP)、區域經理 (RD)。MCT Software & Services。*
 
 
 > [!NOTE]

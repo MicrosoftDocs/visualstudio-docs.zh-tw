@@ -9,12 +9,12 @@ description: 了解 Visual Studio 訂用帳戶隨附的 Windows 開發人員帳�
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: df49564a920ea6f674c6d92ec2203962407a751e
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: 584048c088acb7ee3a390d941dbd6c59ce2ac3a0
+ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53739876"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54380256"
 ---
 # <a name="windows-developer-account-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶中的 Windows 開發人員帳戶
 
@@ -60,7 +60,7 @@ Windows 開發人員帳戶 (包含在所選取的 Visual Studio 訂用帳戶中)
 | Visual Studio Dev Essentials | NA  | 無法使用                                            |  NA|
 | Visual Studio Enterprise、Visual Studio Professional (每月雲端) | Azure                                       | 無法使用                                                           |NA|
 
-<sup>1</sup>  *包含：禁止轉售 (NFR)、FTE、Visual Studio 產業夥伴 (VSIP)、BizSpark、MCT Software & Services Developer。排除：Microsoft 合作夥伴網路 (MPN)、Imagine、Microsoft Valued Professional (MVP)、Region Director (RD)、MCT Software & Services。*
+<sup>1</sup>  *包含：禁止轉售 (NFR)、FTE、Visual Studio 產業夥伴 (VSIP)、BizSpark、MCT Software & Services Developer。排除：Microsoft 合作夥伴網路 (MPN)、Imagine、最有價值專家 (MVP)、區域經理 (RD)、MCT 軟體與服務。*
 
 
 > [!NOTE]

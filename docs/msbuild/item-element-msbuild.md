@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: eab46fa67230ef4a42c6025d99a689ef37d213b0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5d032e16acc0b3858f81f0989442b8fcfb351047
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53908276"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54345613"
 ---
 # <a name="item-element-msbuild"></a>Item 項目 (MSBuild)
 包含使用者定義的項目及其中繼資料。 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 專案中使用的每個項目，都必須指定為 `ItemGroup` 項目的子系。  
@@ -122,5 +122,5 @@ ms.locfileid: "53908276"
 
 ## <a name="see-also"></a>另請參閱  
  [項目](../msbuild/msbuild-items.md)   
- [MSBuild 屬性](../msbuild/msbuild-properties.md)   
+ [一般 MSBuild 專案項目](../msbuild/common-msbuild-project-items.md) [MSBuild 屬性](../msbuild/msbuild-properties.md)   
  [專案檔案結構描述參考](../msbuild/msbuild-project-file-schema-reference.md)

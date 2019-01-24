@@ -9,12 +9,12 @@ description: 了解 Visual Studio 訂用帳戶中所含的 Office 365 開發人�
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 4fde2da9c3d03b436614fdf58f3477c33091d1d8
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: 47444b8c234f0f5bb3b67a04b63b233d2c4e73e1
+ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53739717"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54379763"
 ---
 # <a name="the-office-365-developer-subscription-benefit-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶的 Office 365 開發人員訂用帳戶權益
 
@@ -75,7 +75,7 @@ ms.locfileid: "53739717"
 | Visual Studio Dev Essentials | NA  | 無法使用 |NA |
 | Visual Studio Enterprise、Visual Studio Professional (每月雲端) | Azure                                       | 無法使用                                                           |NA|
 
-<sup>1</sup>  *包含：禁止轉售 (NFR)、Visual Studio 產業夥伴 (VSIP)、FTE、BizSpark、MCT Software & Services Developer、MCT Software & Services。排除：Microsoft 合作夥伴網路 (MPN)、Imagine、Microsoft Valued Professional (MVP)、Region Director (RD)。*
+<sup>1</sup>  *包含：禁止轉售 (NFR)、Visual Studio 產業夥伴 (VSIP)、FTE、BizSpark、MCT Software & Services Developer、MCT Software & Services。排除：Microsoft 合作夥伴網路 (MPN)、Imagine、最有價值專家 (MVP)、區域經理 (RD)。*
 
 
 > [!NOTE]

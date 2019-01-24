@@ -14,18 +14,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 716cf80a9b93f5a018c31af0d36d3212a858f3b2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3d0b201d22b93b7c023627887f0fc033da360fe9
+ms.sourcegitcommit: d0b02affd24e66efed924c197824f35f823e3240
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53888591"
+ms.lasthandoff: 01/21/2019
+ms.locfileid: "54417859"
 ---
 # <a name="vsinstr-warnings"></a>VSInstr 警告
 下表列出 *VSInstr.exe* 工具所發出的警告。 若要隱藏警告訊息使其不出現，您可以使用 NOWARN 選項以及警告編號。  
   
 |警告編號|說明|  
 |--------------------|-----------------|  
+|**VSP1026**|不參考 MSCorLib 的程式庫不支援涵蓋範圍。 此情況常見於可攜式程式庫。|  
 |**VSP2000**|內部錯誤。 無法取得這個可執行檔的模組檔案名稱。|  
 |**VSP2001**|\<組件名稱> 是具備強式名稱的組件。 必須重新簽署後才能執行。<br /><br /> 檢測簽署的組件之後，就會發生這個警告。 您可以使用 *sn.exe* 工具來重新簽署二進位檔，或暫時關閉強式名稱需求。 如需詳細資訊，請參閱 [Sn.exe (強式名稱工具)](/dotnet/framework/tools/sn-exe-strong-name-tool)。|  
 |**VSP2002**|在檔案 \<filename> 中找不到函式 \<funcname><br /><br /> 如果在指定的檔案中找不到函式，就會發生這個警告。|  
