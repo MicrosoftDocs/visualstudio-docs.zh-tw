@@ -1,6 +1,6 @@
 ---
-title: Node.js 的單元測試
-description: Visual Studio 支援使用適用於 Visual Studio 的 Node.js 工具進行單元測試
+title: 對 JavaScript 和 TypeScript 進行單元測試
+description: Visual Studio 支援使用適用於 Visual Studio 的 Node.js 工具進行 JavaScript 和 TypeScript 程式碼單元測試
 ms.date: 06/06/2018
 ms.topic: conceptual
 ms.devlang: javascript
@@ -11,14 +11,14 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: a65fc53f72e2e7a90b03f376ced55fffbe9ecbf8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 75f40dc5abe10f75dccad91fa96d7e149267dc47
+ms.sourcegitcommit: 8bfabab73b39b3b3e68a3e8dc225515e8b310fed
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53952760"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "54398217"
 ---
-# <a name="unit-testing-in-nodejs"></a>Node.js 的單元測試
+# <a name="unit-testing-javascript-and-typescript-in-visual-studio"></a>在 Visual Studio 中對 JavaScript 和 TypeScript 進行單元測試
 
 適用於 Visual Studio 的 Node.js 工具可讓您使用一些較熱門的 JavaScript 架構撰寫和執行單元測試，而不需要切換到命令提示字元。
 

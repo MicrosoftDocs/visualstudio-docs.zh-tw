@@ -9,12 +9,12 @@ description: 了解 Visual Studio 訂用帳戶中所含的 Visual Studio App Cen
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 0a1a50888666f1597da008cec5a13c86a23a805e
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: fd90f301abae9f0d85509a46255317282f284b9e
+ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53738634"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54380100"
 ---
 # <a name="visual-studio-app-center-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶中的 Visual Studio App Center
 
@@ -51,7 +51,7 @@ App Center 是應用程式的任務控制機制。
 | Visual Studio Dev Essentials | NA  | 包含                                                            |是 |
 
 
-<sup>1</sup>  *包含：禁止轉售 (NFR)、FTE、Visual Studio 產業夥伴 (VSIP)、Imagine、Microsoft 合作夥伴網路 (MPN)、MCT Software & Services、MCT Software & Services Developer、BizSpark、Microsoft Valued Professional (MVP)、Region Director (RD)。*
+<sup>1</sup>  *包含：禁止轉售 (NFR)、FTE、Visual Studio 產業夥伴 (VSIP)、Imagine、Microsoft 合作夥伴網路 (MPN)、MCT 軟體與服務、MCT 軟體與服務開發人員、BizSpark、最有價值專家 (MVP)、區域經理 (RD)。*
 
 
 > [!NOTE]

@@ -9,12 +9,12 @@ description: 了解所選取 Visual Studio 訂用帳戶中所含的 Azure 社群
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: f3e0890d6b8f5e64535deea52670877d3c356f8d
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: ab3b750395fc09b52cf1d6ab290e21cfdbb7d3d8
+ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53739375"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54380333"
 ---
 # <a name="azure-community"></a>Azure 社群
 
@@ -62,7 +62,7 @@ Azure 社群權益的可用性取決於訂用帳戶層級，如下所示：
 |                                     Visual Studio Dev Essentials                                      |        N/A        | 無法使用 |     否     |
 |                                                                                                       |                   |               |            |
 
-<sup>1</sup>  *包含：禁止轉售 (NFR)、Microsoft FTE、Microsoft Valued Professional (MVP)、Region Director (RD)、Visual Studio 產業夥伴 (VSIP)、BizSpark、Imagine、Microsoft Certified Trainer (MCT)*
+<sup>1</sup>  *包含：禁止轉售 (NFR)、Microsoft FTE、最有價值專家 (MVP)、區域經理 (RD)、Visual Studio 產業夥伴 (VSIP)、BizSpark、Imagine、Microsoft 合格訓練人員 (MCT)*
 
 > [!NOTE]
 > Microsoft 不再於雲端訂用帳戶中提供 Visual Studio Professional 年度訂用帳戶和 Visual Studio Enterprise 年度訂用帳戶。 現有的客戶體驗，以及更新、增加、減少或取消其訂用帳戶的能力將不會改變。 我們鼓勵新的客戶移至 [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) 來探索 Visual Studio 的不同購買選項。

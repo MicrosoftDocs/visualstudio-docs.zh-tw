@@ -9,12 +9,12 @@ description: 了解 Visual Studio 訂用帳戶中所含的 Enterprise Mobility +
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 0e0af0c1f934163efeafd19110df7a30078bb23c
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: fe6d44b64de314153d7ba00fe4540dbecf1d6ba2
+ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54092062"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54380066"
 ---
 # <a name="enterprise-mobility--security-ems-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶的 Enterprise Mobility + Security (EMS)
 
@@ -62,7 +62,7 @@ Visual Studio Enterprise 年度雲端和標準訂用帳戶包含 Enterprise Mobi
 | Visual Studio Enterprise、Visual Studio Professional (每月雲端) | Azure | 無法使用 | N/A |
 | Visual Studio Dev Essentials | N/A  | 無法使用 |N/A |
 
-<sup>1</sup>  *包含：禁止轉售 (NFR)、Visual Studio 產業夥伴 (VSIP)、Microsoft Partner Network (MPN)、FTE、MCT Software & Services Developer、BizSpark。排除：Microsoft Valued Professional (MVP)、Region Director (RD)、MCT Software & Services、Imagine、Microsoft 合作夥伴網路 (Professional)。*
+<sup>1</sup>  *包含：禁止轉售 (NFR)、Visual Studio 產業夥伴 (VSIP)、Microsoft Partner Network (MPN)、FTE、MCT Software & Services Developer、BizSpark。排除：最有價值專家 (MVP)、區域經理 (RD)、MCT 軟體與服務、Imagine、Microsoft 合作夥伴網路 (專業版)。*
 
 <sup>2</sup> *排除 Microsoft Partner Network (Professional)*
 

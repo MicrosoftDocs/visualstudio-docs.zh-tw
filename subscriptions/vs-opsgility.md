@@ -9,12 +9,12 @@ description: 了解所選取 Visual Studio 訂用帳戶所含的 Skill Me Up - P
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscriptions
-ms.openlocfilehash: f69caa191a824f4f97ab3604b799e2b2b624f28e
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: c057eda862ffc0ef556d878a0afb3d1dd106918c
+ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53739704"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54380206"
 ---
 # <a name="the-skill-me-up---powered-by-opsgility-training-benefit-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶的 Skill Me Up - Powered by Opsgility 訓練課程權益
 
@@ -46,7 +46,7 @@ ms.locfileid: "53739704"
 | Visual Studio Dev Essentials | NA  | 無法使用 | NA  |
 | Visual Studio Enterprise、Visual Studio Professional (每月雲端) | Azure                                       | 無法使用                                                           |NA|
 
-*排除：Microsoft 合作夥伴網路 (MPN)、Microsoft Valued Professional (MVP)、Microsoft Certified Trainer、BizSpark、Imagine、NFR、FTE*
+*排除：Microsoft 合作夥伴網路 (MPN)、最有價值專家 (MVP)、區域經理 (RD)、Microsoft 合格訓練人員、BizSpark、Imagine、NFR、FTE*
 
 > [!NOTE]
 > Microsoft 不再於雲端訂用帳戶中提供 Visual Studio Professional 年度訂用帳戶和 Visual Studio Enterprise 年度訂用帳戶。 現有的客戶體驗，以及更新、增加、減少或取消其訂用帳戶的能力將不會改變。 我們鼓勵新的客戶移至 [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) 來探索 Visual Studio 的不同購買選項。

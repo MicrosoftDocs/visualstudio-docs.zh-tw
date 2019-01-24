@@ -9,12 +9,12 @@ description: 了解所選 Visual Studio 訂用帳戶中所含的 CloudPilot 權�
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: a5e3f4b3026afd528f8eeec42de157265b18013a
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: 90a71ec94e1fbd102cf731fef94394096b1e0ba7
+ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53740032"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54380121"
 ---
 # <a name="the-cloudpilot-benefit-in-visual-studio-subscriptions"></a>Visual Studio 訂用帳戶的 CloudPilot 權益
 
@@ -68,12 +68,12 @@ ms.locfileid: "53740032"
 | Visual Studio Test Professional (標準訂用帳戶)                         | VL, 零售                                              | 無法使用                                             |  N/A           |
 | MSDN 平台 (標準)                                          | VL, 零售                                              | 無法使用                                              |  N/A          |
 | Visual Studio Dev Essentials | N/A  | 無法使用 | N/A |
-| Visual Studio Enterprise (標準、年度雲端)  | NFR<sup>1</sup> |無法使用  | N/A |
+| Visual Studio Enterprise (Standard)  | NFR<sup>1</sup> |無法使用  | N/A |
 | Visual Studio Enterprise、Visual Studio Professional (每月雲端) | Azure | 無法使用 | N/A |
 
 
 
-<sup>1</sup>  *包含：禁止轉售 (NFR)、FTE、Microsoft Valued Professional (MVP)、Region Director (RD)、Microsoft 合作夥伴網路 (MPN)、Visual Studio 產業夥伴 (VSIP)、Microsoft Certified Trainer、BizSpark、Imagine*
+<sup>1</sup>  *包含：禁止轉售 (NFR)、FTE、最有價值專家 (MVP)、區域經理 (RD)、Microsoft 合作夥伴網路 (MPN)、Visual Studio 產業夥伴 (VSIP)、Microsoft 合格訓練人員、BizSpark、Imagine*
 
 
 > [!NOTE]

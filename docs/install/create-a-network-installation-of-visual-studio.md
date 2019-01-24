@@ -1,7 +1,7 @@
 ---
 title: 建立網路型安裝
 description: 了解如何建立網路安裝點以在企業內部署 Visual Studio。
-ms.date: 10/17/2017
+ms.date: 01/15/2019
 ms.custom: seodec18
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
@@ -14,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6e8005aaea5e799ece8a5e217ca28ecd553e6787
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ee0eadc9d682e41737df00f81b6443daf5e21fb6
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53966728"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349916"
 ---
 # <a name="create-a-network-installation-of-visual-studio-2017"></a>建立 Visual Studio 2017 的網路安裝
 
@@ -30,7 +30,7 @@ ms.locfileid: "53966728"
 
 ## <a name="download-the-visual-studio-bootstrapper"></a>下載 Visual Studio 啟動載入器
 
-**下載**您要的 Visual Studio 版本。 請務必按一下 [儲存]，然後按一下 [開啟資料夾]。
+下載您要的 Visual Studio 版本。 請務必按一下 [儲存]，然後按一下 [開啟資料夾]。
 
 您的安裝程式可執行檔 (具體而言，即為啟動載入器檔案) 應該符合下列其中一個檔案。
 
@@ -115,11 +115,15 @@ ms.locfileid: "53966728"
 
 系統管理員可以在執行安裝指令碼時，將 Visual Studio 部署到用戶端工作站。 或者，具有系統管理員權限的使用者可以直接從共用執行安裝程式，以在其電腦上安裝 Visual Studio。
 
-- 使用者可以執行如下來安裝： <br>```\\server\products\VS2017\vs_enterprise.exe```
-- 系統管理員可以執行如下，以便使用自動模式來安裝： <br>```\\server\products\VS2017\vs_enterprise.exe --quiet --wait --norestart```
+* 使用者可以執行如下來安裝： <br>```\\server\products\VS2017\vs_enterprise.exe```
+* 系統管理員可以執行如下，以便使用自動模式來安裝： <br>```\\server\products\VS2017\vs_enterprise.exe --quiet --wait --norestart```
 
+> [!IMPORTANT]
+> 為了防止發生錯誤，請確保完整安裝路徑少於 80 個字元。
+>
 > [!TIP]
 > 作為批次檔的一部分執行時，`--wait` 選項可確保 `vs_enterprise.exe` 程序先等到安裝完成，再傳回結束代碼。 如果企業系統管理員想要對已完成的安裝執行進一步動作 (例如，[將產品金鑰套用至成功安裝](automatically-apply-product-keys-when-deploying-visual-studio.md))，則這十分有用，但是必須等待安裝完成才能處理來自該安裝的傳回碼。  如果您未使用 `--wait`，則 `vs_enterprise.exe` 程序會在安裝完成之前結束，並傳回未代表安裝作業狀態的不正確結束代碼。
+
 
 當您從配置進行安裝時，會從配置中取得已安裝的內容。 不過，如果您選取的元件不在配置中，則會從網際網路取得。  如果您想要防止 Visual Studio 安裝程式下載您配置中遺漏的任何內容，請使用 `--noWeb` 選項。  如果使用 `--noWeb`，而且配置遺失已選取要安裝的任何內容，則安裝程式會失敗。
 

@@ -1,7 +1,7 @@
 ---
 title: 建立離線安裝
 description: 了解如何在有不可靠網際網路連線或低頻寬時離線安裝 Visual Studio。
-ms.date: 08/28/2018
+ms.date: 01/15/2019
 ms.custom: seodec18
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
@@ -15,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8359a3b0d96c92a897532edffa7c6ac0b193cd3c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7be6077d89ffc302ae556c94ed270f8cfd760c38
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53952392"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54345249"
 ---
 # <a name="create-an-offline-installation-of-visual-studio-2017"></a>建立 Visual Studio 2017 的離線安裝
 
@@ -65,6 +65,9 @@ ms.locfileid: "53952392"
 
 開啟命令提示字元，然後使用下列範例中的其中一個命令。 這裡所列的範例假設您使用 Visual Studio Community Edition；請根據您的版本適當地調整命令。
 
+> [!TIP]
+> 為了防止發生錯誤，請確保完整安裝路徑少於 80 個字元。
+
 - 針對 .NET Web 和 .NET 桌面開發，請執行：
 
    ```vs_community.exe --layout c:\vs2017layout --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Microsoft.VisualStudio.Workload.NetWeb --add Component.GitHub.VisualStudio --includeOptional --lang en-US```
@@ -81,10 +84,10 @@ ms.locfileid: "53952392"
 
    ```vs_community.exe --layout c:\vs2017layout --lang en-US```
 
-如果您想要安裝英文以外的語言，請將 `en-US` 變更為[語言地區設定清單](#list-of-language-locales)中的地區設定。 然後，使用[可用的元件和工作負載清單](workload-and-component-ids.md)，進一步自訂您的安裝快取。
+  > [!NOTE]
+  > 完整的 Visual Studio 2017 配置至少需要 35 GB 的磁碟空間。 如需如何建立只含有您要安裝的元件之配置的資訊，請參閱[使用命令列參數來安裝 Visual Studio 2017](use-command-line-parameters-to-install-visual-studio.md)。
 
-> [!IMPORTANT]
-> 完整的 Visual Studio 2017 配置至少需要 35 GB 的磁碟空間，並可能需要花費一些時間才能完成下載。 如需如何建立只含有您要安裝的元件之配置的資訊，請參閱[使用命令列參數來安裝 Visual Studio 2017](use-command-line-parameters-to-install-visual-studio.md)。
+如果您想要安裝英文以外的語言，請將 `en-US` 變更為[語言地區設定清單](#list-of-language-locales)中的地區設定。 然後，使用[可用的元件和工作負載清單](workload-and-component-ids.md)，進一步自訂您的安裝快取。
 
 ### <a name="step-3---install-visual-studio-from-the-local-cache"></a>步驟 3 - 從本機快取安裝 Visual Studio
 
