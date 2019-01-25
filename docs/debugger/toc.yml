@@ -515,11 +515,6 @@ items:
         - name: COM 伺服器和容器偵錯
           href: com-server-and-container-debugging.md
           items:
-          - name: 對 COM 伺服器進行偵錯
-            href: how-to-debug-com-servers.md
-            items:
-            - name: SDI 伺服器應用程式
-              href: sdi-server-applications.md
           - name: 使用 RPC 偵錯對 COM 用戶端和伺服器進行偵錯
             href: how-to-debug-com-clients-and-servers-using-rpc-debugging.md
         - name: 對 ActiveX 控制項進行偵錯
@@ -840,9 +835,9 @@ items:
   items:
   - name: Visual Studio 中偵錯工具的新功能
     href: what-s-new-for-the-debugger-in-visual-studio.md
-ms.openlocfilehash: 149cc7c04aad0d070a538ef32aa6b14c015eee56
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b8b5579f74964cb645fd21ba04ce0e8708a1517e
+ms.sourcegitcommit: d0b02affd24e66efed924c197824f35f823e3240
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53947474"
+ms.lasthandoff: 01/21/2019
+ms.locfileid: "54417937"
