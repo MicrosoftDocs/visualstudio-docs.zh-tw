@@ -2,6 +2,8 @@ items:
 - name: Visual Studio Tools for Docker
   href: /dotnet/standard/containerized-lifecycle-architecture/design-develop-containerized-apps/visual-studio-tools-for-docker?toc=/visualstudio/docker/toc.json&bc=/visualstudio/docker/breadcrumb/toc.json
   items:
+  - name: 快速入門：Visual Studio Tools for Docker
+    href: docker-tools.md
   - name: 在本機 Docker 容器內針對應用程式進行偵錯
     href: ../docker/vs-azure-tools-docker-edit-and-refresh.md
   - name: 使用 Visual Studio 將 ASP.NET 容器部署到容器登錄
@@ -11,9 +13,9 @@ items:
   - name: 針對使用 Docker 進行 Visual Studio 2017 開發問題進行疑難排解
     href: ../docker/vs-azure-tools-docker-troubleshooting-docker-errors.md
   expanded: true
-ms.openlocfilehash: d5d996815f1991edf0df1b4c0e3a694eae865bed
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.openlocfilehash: 0d476d43454bdbba18ce3dba8baffab1108e4250
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51762598"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54874704"
