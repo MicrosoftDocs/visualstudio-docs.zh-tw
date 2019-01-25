@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d54e8833389d110efdcefd8d437645ef5824d8f6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6c4daab3ef0a045e1c352f170282db5e0189da3b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53967770"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54800044"
 ---
 # <a name="create-a-basic-project-system-part-2"></a>建立基本專案系統，第 2 部分
 在此系列中，第一個逐步解說[建立基本專案系統，第 1 部分](../extensibility/creating-a-basic-project-system-part-1.md)，示範如何建立基本的專案系統。 本逐步解說建立基本專案系統上加上 Visual Studio 範本、 屬性頁和其他功能。 您必須先完成第一個逐步解說，才能啟動它。  
@@ -339,7 +339,7 @@ ZipProjects:
     }  
     ```  
   
-## <a name="creatr-a-project-property-page"></a>Creatr 在專案屬性頁  
+## <a name="create-a-project-property-page"></a>建立在專案屬性頁  
  讓使用者可以檢視和變更您的範本為基礎的專案中的屬性時，您便可以建立您的專案類型的屬性頁。 本節將說明如何建立獨立設定的屬性頁。 這個基本的屬性頁會使用 [屬性] 方格來顯示屬性頁類別中公開 （expose） 的公用屬性。  
   
  衍生您的屬性頁面類別，從`SettingsPage`基底類別。 所提供的 [屬性] 方格`SettingsPage`類別是留意最基本的資料型別，而且知道如何顯示它們。  颾魤 ㄛ`SettingsPage`類別知道如何保存至專案檔的屬性值。  
