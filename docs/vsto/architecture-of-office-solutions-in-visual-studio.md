@@ -13,15 +13,15 @@ helpviewer_keywords:
 - Office applications [Office development in Visual Studio], architecture
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c5fd58f487aa7323450f1236f9ac39ef11769bdc
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: cc30775f99d5d786444c99900e93647eb4faa87f
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53837978"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54863379"
 ---
 # <a name="architecture-of-office-solutions-in-visual-studio"></a>在 Visual Studio 中的 Office 方案的架構
   本節中的主題提供有關使用 Visual Studio 中之 Office Developer Tools 建立方案之運作方式的資訊。  

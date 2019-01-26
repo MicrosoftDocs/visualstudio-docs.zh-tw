@@ -8,17 +8,17 @@ dev_langs:
 helpviewer_keywords:
 - document properties, inserting in Word tables
 - documents [Office development in Visual Studio], document properties
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: aeb4d61211f6b65bf700adf1a52ee4b17ed36008
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: cfc5885ffc3c16c937781b991e1d8d83b632bbb6
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53893888"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54862846"
 ---
 # <a name="how-to-programmatically-populate-word-tables-with-document-properties"></a>HOW TO：以程式設計方式填入 Word 表格文件屬性
   下列範例會在文件的頂端建立 Microsoft Office Word 表格，並用主文件的屬性填入這個表格。  

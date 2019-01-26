@@ -13,17 +13,17 @@ helpviewer_keywords:
 - add-ins [Office development in Visual Studio], calling code from other solutions
 - interoperability [Office development in Visual Studio]
 - calling code from VBA
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 89b03298d1a0bb180e3eab706383e48ecd75cd7f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: faa71d4cefabbb59e7b9b5255cfebf3677e257a5
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53915899"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54865745"
 ---
 # <a name="walkthrough-call-code-in-a-vsto-add-in-from-vba"></a>逐步解說：從 VBA 呼叫 VSTO 增益集中的程式碼
   本逐步解說示範如何將 VSTO 增益集中的物件公開給其他 Microsoft Office 方案，包含 Visual Basic for Applications (VBA) 和 COM VSTO 增益集。  
@@ -52,7 +52,7 @@ ms.locfileid: "53915899"
 ## <a name="create-the-vsto-add-in-project"></a>建立 VSTO 增益集專案  
  第一步是建立 Excel 的 VSTO 增益集專案。  
   
-### <a name="to-create-a-new-project"></a>若要建立新的專案  
+### <a name="to-create-a-new-project"></a>建立新的專案  
   
 1.  使用 Excel VSTO 增益集專案範本建立名為 **ExcelImportData**的 Excel VSTO 增益集專案。 如需詳細資訊，請參閱[＜How to：在 Visual Studio 中建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
   

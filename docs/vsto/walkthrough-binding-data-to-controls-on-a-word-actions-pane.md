@@ -12,17 +12,17 @@ helpviewer_keywords:
 - data binding [Office development in Visual Studio], actions panes
 - actions panes [Office development in Visual Studio], binding controls
 - smart documents [Office development in Visual Studio], data binding
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a113cbdffffb202a832ce145c4507bf5845ff52d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 49d307b687943ec99e04166b66e9ca5b15efb2a3
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53926446"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54866804"
 ---
 # <a name="walkthrough-bind-data-to-controls-on-a-word-actions-pane"></a>逐步解說：將資料繫結至 Word 執行窗格上的控制項
   本逐步解說會示範在 Word 執行窗格上的控制項資料繫結。 這些控制項會顯示 SQL Server 資料庫中資料表之間的主要/詳細資料關聯。  

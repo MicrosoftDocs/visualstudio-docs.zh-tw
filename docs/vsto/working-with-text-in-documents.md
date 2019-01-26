@@ -10,17 +10,17 @@ helpviewer_keywords:
 - Word [Office development in Visual Studio], text
 - text [Office development in Visual Studio]
 - documents [Office development in Visual Studio], text
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 31b6acfaa4ff971b9b5fbf4be5e4509a91df60a3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ac4ca433a942222134705af3b71e6dcace6d60ca
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53960887"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54864991"
 ---
 # <a name="work-with-text-in-documents"></a>使用文件中的文字
   本節中的主題針對在 Office 專案中使用 Microsoft Office Word 物件模型處理文字，提供逐步程序和程式碼範例。  

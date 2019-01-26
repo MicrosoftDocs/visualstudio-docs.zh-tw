@@ -8,17 +8,17 @@ dev_langs:
 helpviewer_keywords:
 - SharePoint development in Visual Studio, importing items
 - importing items [SharePoint development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7341d12571143d2725b3dd05e5d8e9f03c7d9125
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: af0f7ad40c1e06f1c602f17ba6a80cf47b96ed0e
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53952872"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54863366"
 ---
 # <a name="how-to-import-a-master-page-or-theme"></a>HOW TO：匯入的主版頁面或佈景主題
   您可以讓頁面在您的 SharePoint 網站上一致的外觀建立並使用主版頁面和主題。 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 未提供範本，針對這些項目，但是您可以在 SharePoint Designer 中建立它們，並再將其匯入[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。 如需詳細資訊，請參閱[建置組塊：頁面和使用者介面](http://go.microsoft.com/fwlink/?LinkID=182095)Microsoft 網站上。  

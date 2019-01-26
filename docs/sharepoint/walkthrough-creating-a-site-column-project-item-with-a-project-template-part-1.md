@@ -10,17 +10,17 @@ helpviewer_keywords:
 - project items [SharePoint development in Visual Studio], defining your own types
 - SharePoint projects, creating custom templates
 - SharePoint development in Visual Studio, defining new project item types
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f6c683166eb2192a32e1d829800abed16db43e0c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f9edaadff5fd1e4f180f38b7609c90c031656792
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53832147"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54864601"
 ---
 # <a name="walkthrough-create-a-site-column-project-item-with-a-project-template-part-1"></a>逐步解說：使用專案範本，第 1 部分建立網站資料行專案項目
   SharePoint 專案的一或多個 SharePoint 專案項目的容器。 您可以擴充 SharePoint 專案系統，在 Visual Studio 中的建立您自己的 SharePoint 專案項目類型，然後再將它們關聯的專案範本。 在本逐步解說中，您將建立網站資料行定義的專案項目類型，然後會建立專案範本，可用來建立新的專案，其中包含網站資料行專案項目。
@@ -230,7 +230,7 @@ ms.locfileid: "53832147"
 
 - *Feature1.feature*
 
-- *封裝*
+- *Package.package*
 
 - *SiteColumnProjectTemplate.vstemplate*
 

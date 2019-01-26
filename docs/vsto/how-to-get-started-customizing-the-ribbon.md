@@ -12,15 +12,15 @@ helpviewer_keywords:
 - customizing the Ribbon, adding Ribbon to project
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c393633477debd18857da4296d43b3832e343434
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e1308a496f77408be5e8d8fb814fcf88a1516ed2
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53856822"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54876248"
 ---
 # <a name="how-to-get-started-customizing-the-ribbon"></a>HOW TO：開始自訂功能區
   若要自訂 Microsoft Office 應用程式的功能區，請新增**功能區 （視覺化設計工具）** 或是**功能區 (XML)** 在 Office 專案的項目。  

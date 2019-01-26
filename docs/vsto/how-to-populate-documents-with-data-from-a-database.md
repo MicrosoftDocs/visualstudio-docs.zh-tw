@@ -10,15 +10,15 @@ helpviewer_keywords:
 - data, adding to documents
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 27dc08cc5d63368cecaa54ce59ed6831e7647240
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f1522b2567c05a9c3a61091813a8b5e18315433f
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53883991"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54863444"
 ---
 # <a name="how-to-populate-documents-with-data-from-a-database"></a>HOW TO：資料庫中的資料填入文件
 

@@ -7,15 +7,15 @@ dev_langs:
 - CSharp
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9716f6adcee1d443e342074f3c46a57a1ace26db
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: debe61f07a8aa8711f1bb0b75ff0c2b39a528b21
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53915886"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54875832"
 ---
 # <a name="getautoinsertextensions-method"></a>GetAutoInsertExtensions 方法
   取得要在偵錯期間會自動插入的 Office 應用程式的相關資訊。  

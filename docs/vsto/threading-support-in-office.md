@@ -10,17 +10,17 @@ helpviewer_keywords:
 - threading [Office development in Visual Studio]
 - Office applications [Office development in Visual Studio], threading support
 - object models [Office development in Visual Studio], threading support
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 48a7ab96b26dc9410eef6977c53af7a3cf4a9841
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0dae42e2648af1212a676c8956122b4fde072d20
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53857889"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54866122"
 ---
 # <a name="threading-support-in-office"></a>Office 中的執行緒支援
   本文提供 Microsoft Office 物件模型中的執行緒支援方式的相關資訊。 Office 物件模型不是安全執行緒，但是仍可以使用 Office 方案中的多個執行緒。 Office 應用程式都是元件物件模型 (COM) 伺服器。 COM 可讓用戶端在任意的執行緒上呼叫 COM 伺服器。 不是安全執行緒的 COM 伺服器，COM 會提供一個機制來序列化，以便在任何時間只能有一個邏輯執行緒會執行伺服器上的並行呼叫。 這項機制稱為單一執行緒 apartment (STA) 模型。 因為呼叫已序列化，則呼叫端可能會封鎖，有一段時間伺服器忙碌中或正在處理其他背景執行緒上的呼叫時。  

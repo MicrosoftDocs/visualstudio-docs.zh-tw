@@ -9,15 +9,15 @@ helpviewer_keywords:
 - Office development in Visual Studio, installing tools
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 47435fb5767b19ca36fc94387bdbefe3578f6325
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e78b66e1d7e9520f4aa54d8bcee54803659f9f6f
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53955941"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54863431"
 ---
 # <a name="configure-a-computer-to-develop-office-solutions"></a>設定電腦以開發 Office 方案
 
@@ -27,7 +27,7 @@ ms.locfileid: "53955941"
 |--------------|------------------------|
 |Visual Studio 2017| 使用任何版本**Office/SharePoint 開發**工作負載。|
 |.NET Framework|-.NET Framework 4 或更新版本。|
-|Microsoft Office|<ul><li>任何 Office 套件版本，包括 Office Professional Plus for Office 365。</li><li>下列任何一種獨立應用程式：<br /><br /> <ul><li>Excel</li><li>InfoPath (僅限 Office 2013 和 Office 2010)</li><li>Outlook</li><li>PowerPoint</li><li>專案</li><li>Visio</li><li>Word</li></ul></li></ul><br /> 必須在安裝 Office 時安裝 Visual Basic for Applications (VBA)。 **重要：** 不支援隨選即用版本的 Office 2010 應用程式。|
+|Microsoft Office|<ul><li>任何 Office 套件版本，包括 Office Professional Plus for Office 365。</li><li>下列任何一種獨立應用程式：<br /><br /> <ul><li>Excel</li><li>InfoPath (僅限 Office 2013 和 Office 2010)</li><li>Outlook</li><li>PowerPoint</li><li>專案</li><li>Visio</li><li>字組</li></ul></li></ul><br /> 必須在安裝 Office 時安裝 Visual Basic for Applications (VBA)。 **重要：** 不支援隨選即用版本的 Office 2010 應用程式。|
 
 如需詳細的安裝步驟，請參閱[How to:設定電腦以開發 Office 方案](../vsto/how-to-configure-a-computer-to-develop-office-solutions.md)。
 

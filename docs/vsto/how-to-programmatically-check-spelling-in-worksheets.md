@@ -12,15 +12,15 @@ helpviewer_keywords:
 - spelling, checking in worksheets
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1aa881034458405babbe7777e1d5c689ed1b05c9
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: 4b7537d531197a9f9487bddfe3628cc52077d332
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54090502"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54862287"
 ---
 # <a name="how-to-programmatically-check-spelling-in-worksheets"></a>HOW TO：以程式設計方式檢查工作表拼字
   您可以用程式設計方式檢查工作表中的拼字。 如果工作表中有任何拼寫不正確的字，[拼字檢查]  對話方塊就會自動出現。  

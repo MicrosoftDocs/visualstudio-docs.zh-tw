@@ -14,15 +14,15 @@ helpviewer_keywords:
 - Outlook [Office development in Visual Studio], projects
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f2b8b142c7950ee45a5c870c30658d795fe44c89
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 59d9179bb0a3c3c2f08bbccafbca5db0202208e3
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53958393"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54867950"
 ---
 # <a name="debug-office-projects"></a>偵錯 Office 專案
   您可以使用與偵錯其他 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 專案時所使用的相同 Microsoft [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 工具，來偵錯 Office 專案。 當您偵錯 Office 專案時，也可以使用[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 偵錯工具功能，例如可以插入中斷點，以及在 [區域變數]  視窗中檢視變數。 如需詳細資訊[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]偵錯工具，請參閱[Visual Studio 中偵錯](../debugger/debugging-in-visual-studio.md)。

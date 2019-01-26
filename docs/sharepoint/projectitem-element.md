@@ -7,17 +7,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - ProjectItem element
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e7c9a32a7fa84d8adc064aa3a3ac035999295791
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2d2736dbcde8708589b4918979acacfdafa34cc4
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53890098"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54864276"
 ---
 # <a name="projectitem-element"></a>ProjectItem 項目
   代表 SharePoint 專案項目。 這個項目必要的根元素的 *.spdata*檔案。  
@@ -70,7 +70,7 @@ ms.locfileid: "53890098"
   
 |||  
 |-|-|  
-|**命名空間**|http<nolink>: //schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|  
+|**命名空間**|http<nolink>://schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|  
 |**結構描述名稱**|SharePoint 專案項目結構描述|  
 |**驗證檔案**|ProjectItemModelSchema.xsd|  
 |**可以是空的**|否|  

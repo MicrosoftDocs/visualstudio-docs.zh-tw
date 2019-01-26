@@ -20,15 +20,15 @@ helpviewer_keywords:
 - application-level add-ins [Office development in Visual Studio], creating projects
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 66263d8453fc550f0edb9c81d9c424f04a07c1b0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 38be1ae60dd86160bc9b107ffc0bdd19f7a1e56d
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53902236"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54867178"
 ---
 # <a name="how-to-create-office-projects-in-visual-studio"></a>HOW TO：在 Visual Studio 中建立 Office 專案
   您可以使用[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]建立 VSTO 增益集和文件層級自訂的 Microsoft Office 應用程式。 如需這些專案類型的詳細資訊，請參閱[Office 方案開發概觀&#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)。  
@@ -61,9 +61,9 @@ ms.locfileid: "53902236"
   
     位置具有下列格式：  
   
-   * [*磁碟機*\]\:  
+   * [*drive*\]\:  
   
-   * \\\\*伺服器*\\*共用*  
+   * \\\\*Server*\\*Share*  
   
      請勿在位置中使用下列字元：  
   
@@ -123,9 +123,9 @@ ms.locfileid: "53902236"
   
     位置具有下列格式：  
   
-   - [*磁碟機*\]\:  
+   - [*drive*\]\:  
   
-   - \\\\*伺服器*\\*共用*  
+   - \\\\*Server*\\*Share*  
   
      請勿在位置中使用下列字元：  
   

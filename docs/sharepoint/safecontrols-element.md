@@ -7,17 +7,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - SafeControls element
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e08b414858db389e507dc9395d218807c9530db6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0f2819f0e913b9078f22482fb39164e8ba8d40da
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53875964"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54866495"
 ---
 # <a name="safecontrols-element"></a>SafeControls 項目
   ASPX 控制項和所指定的任何使用者存取 SharePoint 網站上的任何 ASPX 頁面上，安全的 Web 組件的集合。  
@@ -46,7 +46,7 @@ ms.locfileid: "53875964"
   
 |元素|描述|  
 |-------------|-----------------|  
-|[專案項目](../sharepoint/projectitem-element.md)|代表 SharePoint 專案項目。 這個項目必要的根元素的 *.spdata*檔案。|  
+|[ProjectItem](../sharepoint/projectitem-element.md)|代表 SharePoint 專案項目。 這個項目必要的根元素的 *.spdata*檔案。|  
   
 ## <a name="remarks"></a>備註  
  如需有關安全控制項的詳細資訊，請參閱[提供專案項目中的封裝和部署資訊](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)。  
@@ -55,7 +55,7 @@ ms.locfileid: "53875964"
   
 |||  
 |-|-|  
-|**命名空間**|http<nolink>: //schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|  
+|**命名空間**|http<nolink>://schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|  
 |**結構描述名稱**|SharePoint 專案項目結構描述|  
 |**驗證檔案**|ProjectItemModelSchema.xsd|  
 |**可以是空的**|否|  

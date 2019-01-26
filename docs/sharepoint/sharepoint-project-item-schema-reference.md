@@ -18,17 +18,17 @@ helpviewer_keywords:
 - ProjectItemFile element
 - ExtensionDataItem element
 - ProjectItem element
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e2023eb4828ab5ac59a45dd72040177a654176d7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c261115b21d1067b7494d09ad8031b3f4dc5a8c5
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53895801"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54864913"
 ---
 # <a name="sharepoint-project-item-schema-reference"></a>SharePoint 專案項目結構描述參考
   Visual Studio 會使用 SharePoint 專案項目結構描述驗證的內容 *.spdata*檔案。 *.Spdata*檔案指定的內容和行為的 SharePoint 專案項目。 如需詳細的 SharePoint 專案項目內容的相關資訊，請參閱[建立項目範本和專案範本，為 SharePoint 專案項目](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)。  
@@ -44,7 +44,7 @@ ms.locfileid: "53895801"
 |[FeatureProperties](../sharepoint/featureproperties-element.md)|表示它會部署到 SharePoint 時，會包含與功能的屬性值的集合。 將功能部署之後，您可以在程式碼中存取的屬性值。|  
 |[FeatureProperty](../sharepoint/featureproperty-element.md)|表示它會部署到 SharePoint 時，會包含與功能的自訂屬性。 將功能部署之後，您可以在程式碼中存取屬性。|  
 |[檔案](../sharepoint/files-element.md)|指定要部署與 SharePoint 專案項目，例如功能元素檔案或專案的輸出檔案。|  
-|[專案項目](../sharepoint/projectitem-element.md)|代表 SharePoint 專案項目。|  
+|[ProjectItem](../sharepoint/projectitem-element.md)|代表 SharePoint 專案項目。|  
 |[ProjectItemFile](../sharepoint/projectitemfile-element.md)|代表功能項目檔案，以包含與專案項目時將它部署至 SharePoint 的 SharePoint 檔案。|  
 |[ProjectItemFolder](../sharepoint/projectitemfolder-element.md)|表示對應的資料夾。|  
 |[ProjectOutputFile](../sharepoint/projectoutputfile-element.md)|表示要加入的專案項目時將它部署至 SharePoint 專案的輸出。|  

@@ -20,15 +20,15 @@ helpviewer_keywords:
 - helper methods [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: be96a6967657a79d1e3bed9336ebb530accba2a0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9dc71ba33180fa466b8d457d084faad05c61ec40
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53842784"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54869183"
 ---
 # <a name="add-controls-to-office-documents-at-runtime"></a>將控制項加入 Office 文件，在執行階段
   您可以將控制項新增至 Microsoft Office Word 文件和 Microsoft Office Excel 活頁簿，在執行階段。 您也可以在執行階段移除它們。 您新增或移除在執行階段的控制項稱為*動態控制項*。  
@@ -110,7 +110,7 @@ ms.locfileid: "53842784"
 
 - 針對 Excel，請使用 <xref:Microsoft.Office.Tools.Excel.ControlCollection.AddControl%2A> 物件的其中一種 <xref:Microsoft.Office.Tools.Excel.ControlCollection> 方法 。  
 
-- 針對 Word，請使用 <xref:Microsoft.Office.Tools.Word.ControlCollection> 物件的其中一種 <xref:Microsoft.Office.Tools.Word.ControlCollection.AddControl%2A> 方法 。  
+- 針對 Word，請使用 <xref:Microsoft.Office.Tools.Word.ControlCollection.AddControl%2A> 物件的其中一種 <xref:Microsoft.Office.Tools.Word.ControlCollection> 方法 。  
 
   若要加入控制項，請將 <xref:System.Windows.Forms.Control>、控制項的位置，以及控制項的唯一識別名稱傳遞至 `AddControl` 方法。 `AddControl` 方法會傳回物件，其會定義控制項與工作表或文件互動的方式。 `AddControl`方法會傳回<xref:Microsoft.Office.Tools.Excel.ControlSite>（適用於 Excel) 或<xref:Microsoft.Office.Tools.Word.ControlSite>（針對 Word) 的物件。  
 
@@ -132,7 +132,7 @@ ms.locfileid: "53842784"
 
 - 若要存取控制項所共用的成員，請使用 `ControlSite`、`OLEObject` 或 `OLEControl` 物件。  
 
-  如果您從 <xref:System.Windows.Forms.Control> 存取共用的成員，其可能會在沒有警告或通知的情況下失敗，或產生無效的結果。 除非所需的方法或屬性無法使用，否則一律使用 `ControlSite`、`OLEObject` 或 `OLEControl` 物件的方法或屬性；只有在方法或屬性無法使用時參考 <xref:System.Windows.Forms.Control>。  
+  如果您從 <xref:System.Windows.Forms.Control>存取共用的成員，其可能會在沒有警告或通知的情況下失敗，或產生無效的結果。 除非所需的方法或屬性無法使用，否則一律使用 `ControlSite`、`OLEObject` 或 `OLEControl` 物件的方法或屬性；只有在方法或屬性無法使用時參考 <xref:System.Windows.Forms.Control>。  
 
   例如，<xref:Microsoft.Office.Tools.Excel.ControlSite> 類別與 <xref:System.Windows.Forms.Control> 類別皆具有 `Top` 屬性。 若要取得或設定控制項的頂端和文件頂端之間的距離，請使用 <xref:Microsoft.Office.Tools.Excel.ControlSite.Top%2A> 的 <xref:Microsoft.Office.Tools.Excel.ControlSite>屬性，而非 <xref:System.Windows.Forms.Control.Top%2A> 的 <xref:System.Windows.Forms.Control>屬性。  
 

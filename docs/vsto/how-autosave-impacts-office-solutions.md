@@ -9,15 +9,15 @@ helpviewer_keywords:
 - autosave
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e0529876ab7a055e455fbe53b379afc4db43e0fc
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1f2ca14146a6a0444859722bfded24faaa36dd9f
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53932966"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54875624"
 ---
 # <a name="how-autosave-impacts-office-solutions"></a>自動儲存如何影響 Office 方案
 
