@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: e9ada7be-845e-4baa-bf8f-e4890e7ba490
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d51762eb2d26c39eab5d803384adfed216e5bd89
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8a4e4fdfa9d1c5ee8a5ad4284ae687b44ad7f4d5
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53882321"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54956983"
 ---
 # <a name="implement-an-expression-evaluator"></a>實作運算式評估工具
 > [!IMPORTANT]

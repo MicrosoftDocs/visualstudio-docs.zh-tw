@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 61d24820-0cd9-48b6-8674-6813f7493237
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 94034f54457a66b0dccd4ccf2d533915a8d818dc
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f8faa677e5893c0737bcd89db5567ef7459f6d07
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53888474"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54953221"
 ---
 # <a name="enable-a-program-to-be-debugged"></a>啟用要偵錯程式
 您偵錯引擎 (DE) 可以偵錯程式之前，您必須先啟動 DE 或將它附加至現有的程式。  

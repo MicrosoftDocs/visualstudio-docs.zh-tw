@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 7b5578b4-a20a-4b94-ad4c-98687ac133b9
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 12ce11a057884f12466eb5c9c499b0822217b474
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3b234de491b9e8abbe3ae75fc927923c680ddd9f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53939170"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54962075"
 ---
 # <a name="outlining-in-a-legacy-language-service"></a>在舊版語言服務中製作大綱
 大綱，讓能夠摺疊成概觀或外框的是複雜的程式。 例如，在 C# 中的所有方法可以摺都疊成一行，顯示方法簽章。 此外，結構和類別可以摺疊以顯示的結構和類別的名稱。 在單一方法中，複雜的邏輯可以摺疊來顯示整體流程這類顯示陳述式的第一行`foreach`， `if`，和`while`。  

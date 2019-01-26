@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 7312afd9-84ba-417f-923e-7a159b53bf70
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: af2b1af90620fa595d85f7c26d7e5e2c96041dfc
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: eac7f403cd0e115a01252537ade45e6a1bc0aaad
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53826084"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54957880"
 ---
 # <a name="ca2224-override-equals-on-overloading-operator-equals"></a>CA2224:多載等號比較運算子時必須一併覆寫 Equals
 
