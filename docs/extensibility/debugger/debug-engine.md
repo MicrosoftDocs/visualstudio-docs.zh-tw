@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 148b1efc-ca07-4d8e-bdfc-c723a760c620
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: db4874c842775c02fdf50d827aea7daaac008587
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5f4852556b7938b6e017edc94ddb88ee0267e699
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53836229"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55033449"
 ---
 # <a name="debug-engine"></a>偵錯引擎
 偵錯引擎 (DE) 適用於解譯器或作業系統，來提供偵錯的服務，例如執行控制、 中斷點、 和運算式評估。 DE 負責監視正在偵錯程式的狀態。 若要執行達到此目的，DE 會使用任何方法會為它提供的支援的執行階段，是否執行階段所提供的 cpu，或從 Api。  

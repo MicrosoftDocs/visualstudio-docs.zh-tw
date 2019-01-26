@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 6d498b70-29c7-44b7-ae1c-7e99e488bb09
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fa00faf6fb7605af6098952b2fc592276934d2f1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: acded327d8e1b5b1b2bec0b804e6e72ac157be1a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53923214"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54950568"
 ---
 # <a name="sccuncheckout-function"></a>SccUncheckout 函式
 此函式會復原先前的簽出作業，藉此將選取的檔案或檔案的內容還原到之前簽出的狀態。 對檔案進行簽出之後的所有變更都都會遺失。  
@@ -48,7 +48,7 @@ SCCRTN SccUncheckout (
  lpFileNames  
  [in]要復原簽出檔案的完整格式的本機路徑名稱的陣列。  
   
- Stored  
+ fOptions  
  [in]（未使用） 的命令旗標。  
   
  pvOptions  

@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 8496afb4-1573-4585-ac67-c3d58b568a12
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ea506479226ed8585296208064bd3533cf0a5783
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9a7abb030ab98976a6e55a5d297cf510f01842e8
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53922833"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54929123"
 ---
 # <a name="create-a-software-development-kit"></a>建立軟體開發套件
 軟體開發套件 (SDK) 是一系列 Api，您可以參考 Visual Studio 中的單一項目。 **參考管理員**對話方塊會列出所有與專案相關的 Sdk。 當您將 SDK 加入專案時，就有一個 Api 可在 Visual Studio 中。  
@@ -75,7 +75,7 @@ ms.locfileid: "53922833"
 
 1.  您可以指定它在登錄機碼：  
 
-     **HKLM\Software\Microsoft\Microsoft Sdk\<目標平台 > \v<platform version number>\ExtensionSDKs\<SDKName >\<SDKVersion >**\  
+     **HKLM\Software\Microsoft\Microsoft SDKs\<target platform>\v<platform version number>\ExtensionSDKs\<SDKName>\<SDKVersion>**\  
 
      並將其值為 （預設值） 子機碼`<path to SDK><SDKName><SDKVersion>`。  
 

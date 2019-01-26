@@ -1,5 +1,5 @@
 ---
-title: CONNECTION_PROTOCOL |Microsoft Docs
+title: CONNECTION_PROTOCOL | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 99df5865-8b36-486d-9f4c-d10ae2bc688a
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f619bde5d2f81b37f50a5896c13c655aaf9fd80e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6d09d751dd51306810f4d0cbb56d701859e2b183
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53907861"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55036468"
 ---
 # <a name="connectionprotocol"></a>CONNECTION_PROTOCOL
 表示用來偵錯伺服器和偵錯封裝 (DE) 之間進行通訊的通訊協定。  
@@ -78,7 +78,7 @@ public enum CONNECTION_PROTOCOL {
   
  命名空間:Microsoft.VisualStudio.Debugger.Interop  
   
- 組件：Microsoft.VisualStudio.Debugger.Interop.dll  
+ 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
  [列舉型別](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   

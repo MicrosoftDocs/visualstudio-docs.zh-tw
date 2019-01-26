@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 196ec2cc-8569-4780-b217-23b24e7f50ca
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d66f49a91d35c90d1422b73dd0f75ee7cbda804b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e74273d25e121ec769207d429a622eed19654a92
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53830007"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54922882"
 ---
 # <a name="idebugpointerobjectdereference"></a>IDebugPointerObject::Dereference
 取得指向的物件。  

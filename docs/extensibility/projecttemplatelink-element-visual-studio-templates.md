@@ -11,29 +11,29 @@ helpviewer_keywords:
 ms.assetid: b0449111-8b48-45a1-a031-ea24b765e969
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 356c9d50ebdac052efdb622e26d22e97542a0d03
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8ce474c0896d5f9a72c3c09253bef8ca1a5c4a4e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53885977"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54947045"
 ---
 # <a name="projecttemplatelink-element-visual-studio-templates"></a>ProjectTemplateLink 項目 （Visual Studio 範本）
 指定的路徑 *.vstemplate*多專案範本中的某個專案的檔案。  
   
- \<VSTemplate >  
- \<TemplateContent >  
- \<ProjectCollection >  
- \<ProjectTemplateLink >  
+ \<VSTemplate>  
+ \<TemplateContent>  
+ \<ProjectCollection>  
+ \<ProjectTemplateLink>  
 -或-  
-\<VSTemplate >  
- \<TemplateContent >  
- \<ProjectCollection >  
- \<SolutionFolder >  
- \<ProjectTemplateLink >  
+\<VSTemplate>  
+ \<TemplateContent>  
+ \<ProjectCollection>  
+ \<SolutionFolder>  
+ \<ProjectTemplateLink>  
   
 ## <a name="syntax"></a>語法  
   

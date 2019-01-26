@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 59d0defc-99fd-445c-bdac-8224d5dea3f9
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 214f8ce0bc0ec5a9f7cc7358d118aefc99ed2d2d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d92d198e7f913d09fa553881fc3c7beb5de97592
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53854291"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54975006"
 ---
 # <a name="idebugerrorbreakpoint2getpendingbreakpoint"></a>IDebugErrorBreakpoint2::GetPendingBreakpoint
 取得造成錯誤的暫止中斷點。  

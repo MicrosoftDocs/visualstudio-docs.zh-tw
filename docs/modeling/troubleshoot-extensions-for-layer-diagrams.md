@@ -7,16 +7,16 @@ helpviewer_keywords:
 - dependency diagrams, troubleshooting extensions
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: d2a47bfd3b5ca927e64645f97f2923300e33d691
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 01b8486c9ca0ffc62d338b9d9a46e50248182581
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53926913"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55028591"
 ---
 # <a name="troubleshoot-extensions-for-dependency-diagrams"></a>針對相依性圖表延伸模組進行疑難排解
 

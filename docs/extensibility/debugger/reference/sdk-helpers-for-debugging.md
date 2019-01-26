@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 80a52e93-4a04-4ab2-8adc-a7847c2dc20b
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6655b96ed51cd7cce5e94ce96cedf97517f1872a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6455e4999f5115aee50fa1605103c4dadcc165dc
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53942407"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54951726"
 ---
 # <a name="sdk-helpers-for-debugging"></a>適用於偵錯的 SDK 協助程式
 這些函式和宣告是實作 c + + 中的 偵錯引擎、 運算式評估工具和符號提供者的全域 helper 函式。  
@@ -230,7 +230,7 @@ HRESULT EnumMetricSections(
 |metricShowNonUserCode|設定為非零值，以顯示 nonuser 程式碼。|  
 |metricJustMyCodeStepping|設定為非零值，指出要逐步執行可執行只有在使用者程式碼中。|  
 |metricCLSID|針對特定的計量類型物件的 CLSID。|  
-|MetricName|針對特定的計量類型物件的易記名稱。|  
+|metricName|針對特定的計量類型物件的易記名稱。|  
 |metricLanguage|語言名稱。|  
   
 ## <a name="registry-locations"></a>登錄位置  
@@ -239,7 +239,7 @@ HRESULT EnumMetricSections(
 > [!NOTE]
 >  大部分的情況下，在 HKEY_LOCAL_MACHINE 機碼會寫入計量。 不過，有時候 HKEY_CURRENT_USER 要目的地的索引鍵。 Dbgmetric.lib 會處理這兩個金鑰。 當取得度量時，它會搜尋 HKEY_CURRENT_USER 先，接著 HKEY_LOCAL_MACHINE。 當它設定計量時，參數會指定要使用哪一個最上層機碼。  
   
- *[登錄機碼]*\  
+ *[registry key]*\  
   
  `Software`\  
   
@@ -251,22 +251,22 @@ HRESULT EnumMetricSections(
   
  *[計量 root]*\  
   
- *[計量類型]*\  
+ *[metric type]*\  
   
- *[計量] = [計量值]*  
+ *[metric] = [metric value]*  
   
- *[計量] = [計量值]*  
+ *[metric] = [metric value]*  
   
- *[計量] = [計量值]*  
+ *[metric] = [metric value]*  
   
 |預留位置|描述|  
 |-----------------|-----------------|  
-|*[登錄機碼]*|`HKEY_CURRENT_USER` 或 `HKEY_LOCAL_MACHINE`。|  
+|*[registry key]*|`HKEY_CURRENT_USER` 或 `HKEY_LOCAL_MACHINE`。|  
 |*[版本 root]*|Visual Studio 的版本 (例如`7.0`， `7.1`，或`8.0`)。 不過，這個根目錄也可以修改使用 **/rootsuffix**切換至**devenv.exe**。 VSIP，對於這個修飾詞通常是**Exp**，因此版本根是，比方說，8.0Exp。|  
 |*[計量 root]*|這是`AD7Metrics`或`AD7Metrics(Debug)`，取決於是否使用 dbgmetric.lib 的偵錯版本。 **注意：** 若要應遵守是否使用 dbgmetric.lib 時，此命名慣例，如果您有偵錯和發行之間的差異必須在登錄中反映出來的版本。|  
-|*[計量類型]*|要寫入的度量類型： `Engine`， `ExpressionEvaluator`，`SymbolProvider`等等。這些全都定義如所示為 dbgmetric.h `metricTypeXXXX`，其中`XXXX`是特定型別名稱。|  
-|*[計量]*|若要將度量指派值的項目名稱。 實際組織的度量取決於計量的類型。|  
-|*[計量值]*|指派給計量的值。 此值應該有 （字串、 數字等） 的類型取決於計量。|  
+|*[metric type]*|要寫入的度量類型： `Engine`， `ExpressionEvaluator`，`SymbolProvider`等等。這些全都定義如所示為 dbgmetric.h `metricTypeXXXX`，其中`XXXX`是特定型別名稱。|  
+|*[metric]*|若要將度量指派值的項目名稱。 實際組織的度量取決於計量的類型。|  
+|*[metric value]*|指派給計量的值。 此值應該有 （字串、 數字等） 的類型取決於計量。|  
   
 > [!NOTE]
 >  所有的 Guid 會儲存在格式`{GUID}`。 例如， `{123D150B-FA18-461C-B218-45B3E4589F9B}` 。  
@@ -280,11 +280,11 @@ HRESULT EnumMetricSections(
   
  `CLSID` = *[類別 guid]*  
   
- *[計量] = [計量值]*  
+ *[metric] = [metric value]*  
   
- *[計量] = [計量值]*  
+ *[metric] = [metric value]*  
   
- *[計量] = [計量值]*  
+ *[metric] = [metric value]*  
   
  `PortSupplier`\  
   
@@ -295,7 +295,7 @@ HRESULT EnumMetricSections(
 |預留位置|描述|  
 |-----------------|-----------------|  
 |*[引擎 guid]*|偵錯引擎的 GUID。|  
-|*[類別 guid]*|實作此偵錯引擎的類別 GUID。|  
+|*[class guid]*|實作此偵錯引擎的類別 GUID。|  
 |*[連接埠供應商 guid]*|如果有的話，連接埠供應商的 GUID。 許多偵錯引擎會使用預設連接埠提供者，並因此不會指定他們自己的供應商。 在此情況下，子機碼`PortSupplier`就不會有。|  
   
 ### <a name="port-suppliers"></a>連接埠提供者  
@@ -307,14 +307,14 @@ HRESULT EnumMetricSections(
   
  `CLSID` = *[類別 guid]*  
   
- *[計量] = [計量值]*  
+ *[metric] = [metric value]*  
   
- *[計量] = [計量值]*  
+ *[metric] = [metric value]*  
   
 |預留位置|描述|  
 |-----------------|-----------------|  
 |*[連接埠供應商 guid]*|連接埠提供者的 GUID|  
-|*[類別 guid]*|類別會實作此連接埠提供者的 GUID|  
+|*[class guid]*|類別會實作此連接埠提供者的 GUID|  
   
 ### <a name="symbol-providers"></a>符號提供者  
  以下是在登錄中的符號供應商度量資訊的組織。 `SymbolProvider` 符號提供者的度量型別名稱和對應至 *[計量類型]*。  
@@ -327,22 +327,22 @@ HRESULT EnumMetricSections(
   
  `CLSID` = *[類別 guid]*  
   
- *[計量] = [計量值]*  
+ *[metric] = [metric value]*  
   
- *[計量] = [計量值]*  
+ *[metric] = [metric value]*  
   
  `metadata`\  
   
  `CLSID` = *[類別 guid]*  
   
- *[計量] = [計量值]*  
+ *[metric] = [metric value]*  
   
- *[計量] = [計量值]*  
+ *[metric] = [metric value]*  
   
 |預留位置|描述|  
 |-----------------|-----------------|  
 |*[符號提供者 guid]*|符號提供者 GUID|  
-|*[類別 guid]*|類別會實作這個符號提供者的 GUID|  
+|*[class guid]*|類別會實作這個符號提供者的 GUID|  
   
 ### <a name="expression-evaluators"></a>運算式評估工具  
  以下是在登錄中的運算式評估工具度量資訊的組織。 `ExpressionEvaluator` 運算式評估工具的計量類型名稱，並對應至 *[計量類型]*。  
@@ -354,13 +354,13 @@ HRESULT EnumMetricSections(
   
  *[語言 guid]*\  
   
- *[供應商 guid]*\  
+ *[vendor guid]*\  
   
  `CLSID` = *[類別 guid]*  
   
- *[計量] = [計量值]*  
+ *[metric] = [metric value]*  
   
- *[計量] = [計量值]*  
+ *[metric] = [metric value]*  
   
  `Engine`\  
   
@@ -370,9 +370,9 @@ HRESULT EnumMetricSections(
   
 |預留位置|描述|  
 |-----------------|-----------------|  
-|*[語言 guid]*|一種語言的 GUID|  
-|*[供應商 guid]*|供應商的 GUID|  
-|*[類別 guid]*|類別會實作此運算式評估工具的 GUID|  
+|*[language guid]*|一種語言的 GUID|  
+|*[vendor guid]*|供應商的 GUID|  
+|*[class guid]*|類別會實作此運算式評估工具的 GUID|  
 |*[偵錯引擎 guid]*|此運算式評估工具的運作方式與偵錯引擎的 GUID|  
   
 ### <a name="expression-evaluator-extensions"></a>運算式評估工具延伸模組  
@@ -382,9 +382,9 @@ HRESULT EnumMetricSections(
   
  *[延伸模組 guid]*\  
   
- *[計量] = [計量值]*  
+ *[metric] = [metric value]*  
   
- *[計量] = [計量值]*  
+ *[metric] = [metric value]*  
   
 |預留位置|描述|  
 |-----------------|-----------------|  
@@ -399,23 +399,23 @@ HRESULT EnumMetricSections(
   
  *[例外狀況類型]*\  
   
- *[例外狀況]*\  
+ *[exception]*\  
   
- *[計量] = [計量值]*  
+ *[metric] = [metric value]*  
   
- *[計量] = [計量值]*  
+ *[metric] = [metric value]*  
   
- *[例外狀況]*\  
+ *[exception]*\  
   
- *[計量] = [計量值]*  
+ *[metric] = [metric value]*  
   
- *[計量] = [計量值]*  
+ *[metric] = [metric value]*  
   
 |預留位置|描述|  
 |-----------------|-----------------|  
 |*[偵錯引擎 guid]*|支援例外狀況，偵錯引擎的 GUID。|  
-|*[例外狀況類型]*|識別可以處理的例外狀況類別的子機碼一般標題。 一般名稱**c + + 例外狀況**， **Win32 例外狀況**， **Common Language Runtime 例外狀況**，以及**原生執行階段檢查**。 這些名稱也會用來識別特定類別的例外狀況給使用者。|  
-|*[例外狀況]*|例外狀況的名稱： 例如， **_com_error**或是**Control-break**。 這些名稱也會用來識別使用者的特定例外狀況。|  
+|*[exception types]*|識別可以處理的例外狀況類別的子機碼一般標題。 一般名稱**c + + 例外狀況**， **Win32 例外狀況**， **Common Language Runtime 例外狀況**，以及**原生執行階段檢查**。 這些名稱也會用來識別特定類別的例外狀況給使用者。|  
+|*[exception]*|例外狀況的名稱： 例如， **_com_error**或是**Control-break**。 這些名稱也會用來識別使用者的特定例外狀況。|  
   
 ## <a name="requirements"></a>需求  
  這些檔案位於[!INCLUDE[vs_dev10_ext](../../../extensibility/debugger/reference/includes/vs_dev10_ext_md.md)]SDK 安裝目錄 (根據預設， *[磁碟機]* \Program Files\Microsoft Visual Studio 2010 SDK\\)。  

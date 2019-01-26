@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 73ce91d8-0ab1-4a1f-bf12-4d3c49c01e13
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3401523e7c8026b59f6737a8f0599b4df74a445f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d0a22adb627edcbda6f823c659b20f41524b83a8
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53943508"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54949021"
 ---
 # <a name="new-project-generation-under-the-hood-part-two"></a>新的專案產生：在幕後，第二部分
 在 [產生新專案：在幕後，第一段](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md)我們可了解如何**新的專案**就會填入方塊的對話方塊。 假設您已選取**Visual C# Windows 應用程式**、 填入**名稱**並**位置**文字方塊中，然後按下的 [確定]。  

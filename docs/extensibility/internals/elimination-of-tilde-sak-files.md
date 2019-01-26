@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: 5277b5fa-073b-4bd1-8ba1-9dc913aa3c50
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 37d2d8fbbd98e75b398caec9e4c2f36a5853ba4a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 701bb929bae7b5103e274810cf0ad3a222118781
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53862810"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54951270"
 ---
 # <a name="elimination-of-sak-files"></a>消除 ~ SAK 檔案
 在 原始檔控制外掛程式 API 1.2 *~ SAK*功能旗標已取代檔案和新函式來偵測是否原始檔控制外掛程式支援*MSSCCPRJ*檔案和共用簽出。  
   
-## <a name="sak-files"></a>~ SAK 檔案  
+## <a name="sak-files"></a>~SAK files  
 Visual Studio.NET 2003年建立暫存檔案前面加上 *~ SAK*。 這些檔案用來判斷是否要支援原始檔控制外掛程式：  
   
 - *MSSCCPRJ.SCC*檔案。  
@@ -45,7 +45,7 @@ Visual Studio.NET 2003年建立暫存檔案前面加上 *~ SAK*。 這些檔案�
   
  如果原始檔控制外掛程式支援建立和使用*MSSCCPRJ.SCC*檔案，則它會宣告`SCC_CAP_SCCFILE`功能，而且會實作[SccWillCreateSccFile](../../extensibility/sccwillcreatesccfile-function.md)。 一份檔案，會呼叫此函數。 此函數會傳回`TRUE' or 'FALSE`每個檔案，表示是否應該使用 Visual Studio *MSSCCPRJ.SCC*為它的檔案。 如果原始檔控制外掛程式選擇不支援這些新功能和函式，它可以使用下列登錄機碼來停用這些檔案的建立：  
   
- **[HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl]DoNotCreateTemporaryFilesInSourceControl** = *dword: 00000001*  
+ **[HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl]DoNotCreateTemporaryFilesInSourceControl** = *dword:00000001*  
   
 > [!NOTE]
 >  如果此登錄機碼設為*dword:00000000*，它就相當於索引鍵不存在，正在 Visual Studio 仍會嘗試建立暫存檔案。 不過，如果登錄機碼設為*dword: 00000001*，Visual Studio 不會嘗試建立暫存檔案。 而是它會假設原始檔控制外掛程式不支援*MSSCCPRJ.SCC*檔案，並不支援共用簽出。  

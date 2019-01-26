@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: f97104c8-2bcb-45c7-a3c9-85abeda8df98
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 80d68a254cf2d1a896be86072d50a13be2f7a44f
-ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
+ms.openlocfilehash: df27b6b85cff218526b1a69897b5809ebf28ae20
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54154417"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55041148"
 ---
 # <a name="create-an-extension-with-a-menu-command"></a>建立具有功能表命令的擴充功能
 本逐步解說示範如何建立擴充功能會啟動 [記事本] 的功能表命令。  
@@ -98,7 +98,7 @@ ms.locfileid: "54154417"
   
  您可以找到 *.vsix*檔案中此擴充功能*FirstMenuCommand* bin 目錄。 具體來說，假設您已建立的發行組態，它會是：  
   
- *\<程式碼目錄 > \FirstMenuCommand\FirstMenuCommand\bin\Release\ FirstMenuCommand.vsix*  
+ *\<code directory>\FirstMenuCommand\FirstMenuCommand\bin\Release\ FirstMenuCommand.vsix*  
   
  若要安裝擴充功能，您的朋友必須關閉所有開啟的 Visual Studio 中，執行個體，然後按兩下 *.vsix*檔案，其中會顯示**VSIX 安裝程式**。 檔案會複製到 *%LocalAppData%\Microsoft\VisualStudio\14.0\Extensions*目錄。  
   
