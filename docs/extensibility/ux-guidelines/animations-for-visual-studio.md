@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 446773a9-e6f7-4c0c-8dbc-9e303bf32eb1
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f69665c0a97fb67b4cee9ee71a52c2de0b44310f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 79c45bd5ded6ab80d7bb1a2abb6c1007e3b29e0d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53946051"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55022946"
 ---
 # <a name="animations-for-visual-studio"></a>適用於 Visual Studio 的動畫
 ## <a name="animation-fundamentals"></a>動畫的基本概念  

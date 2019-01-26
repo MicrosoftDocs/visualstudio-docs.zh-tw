@@ -1,5 +1,5 @@
 ---
-title: IDebugBinder::GetMemoryContext |Microsoft Docs
+title: IDebugBinder::GetMemoryContext | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 801c5b60-acff-4822-b23d-e9c7bbca8a0f
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6a613efac19f9b84cc5b74cd502854892fa43694
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fb90a9688f44c20a99292a1901812d8c3fbab64d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53952364"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54916325"
 ---
 # <a name="idebugbindergetmemorycontext"></a>IDebugBinder::GetMemoryContext
 這個方法會將記憶體內容的物件位置或記憶體位址。  

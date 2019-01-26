@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugPortSuppliers2::Clone |Microsoft Docs
+title: IEnumDebugPortSuppliers2::Clone | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 98b9914d-4f32-44da-b422-68830bce44b4
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 40e3f96ed4727dfb7b1ac40c263f22fd1acd6473
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7e911a6591c61beb135e8571f3b7f927f405f993
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53916740"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54922856"
 ---
 # <a name="ienumdebugportsuppliers2clone"></a>IEnumDebugPortSuppliers2::Clone
 傳回一份目前的列舉，為個別的物件。  

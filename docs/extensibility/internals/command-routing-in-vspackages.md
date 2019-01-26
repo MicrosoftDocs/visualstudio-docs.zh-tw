@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: a9c7f9ae-3594-4557-a314-8cf76f5f8772
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cd616fcfee0969e8f4c826e605de6ec5e686961d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 048ce0d88a87f42f5b98104d6ec928f5af8b40e2
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53916224"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55023063"
 ---
 # <a name="command-routing-in-vspackages"></a>在 Vspackage 中路由傳送命令
 命令路由傳入[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]根據它的執行的內容。 它是通用的內容路由傳送從向外的初步內容。  

@@ -1,5 +1,5 @@
 ---
-title: IDebugComPlusSymbolProvider::IsHiddenCode |Microsoft Docs
+title: IDebugComPlusSymbolProvider::IsHiddenCode | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 1352c6ab-7b92-4a16-b2d2-6520b628830e
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 15bff421ea7af8aa0835b9fcd6c455cd4e12fbcf
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f70d4dc824ab38d25bb4dee9601a71c2e4a4a284
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53953716"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55021308"
 ---
 # <a name="idebugcomplussymbolproviderishiddencode"></a>IDebugComPlusSymbolProvider::IsHiddenCode
 決定是否要隱藏在指定的偵錯工具通訊的程式碼。  

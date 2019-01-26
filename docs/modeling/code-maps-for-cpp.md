@@ -4,16 +4,16 @@ ms.date: 05/16/2018
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
 ms.workload:
 - multiple
-ms.openlocfilehash: b5fc8e84100d8b7ceb2b529e7b1630e644ebc9f7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 087b1f84006140508ba023ba6ba8675ee9719882
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53968653"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54927173"
 ---
 # <a name="code-maps-for-c-projects"></a>C + + 專案的 code map
 

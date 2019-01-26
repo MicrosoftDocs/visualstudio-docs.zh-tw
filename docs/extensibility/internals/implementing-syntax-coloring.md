@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 96e762ca-efd0-41e7-8958-fda4897c8c7a
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2bfa07fd46c95ada3135602f2fc09743fcaef08b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: de1a73cda8be9e56b0cad605f5507d52509ec906
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53820783"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55038041"
 ---
 # <a name="implementing-syntax-coloring"></a>實作語法著色
 當語言服務會提供語法顏色標示時、 剖析器將一行文字轉換成陣列的可設定色彩的項目，並傳回語彙基元的型別對應至這些色彩的項目。 剖析器應該會傳回屬於可設定色彩的項目清單的語彙基元型別。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 根據色彩標示器物件指派給適當的語彙基元型別屬性的程式碼 視窗中顯示每個可設定色彩的項目。  

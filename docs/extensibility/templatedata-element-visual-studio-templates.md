@@ -10,21 +10,21 @@ helpviewer_keywords:
 ms.assetid: db17ec9b-bfdf-46b1-bbe7-5ccc140056e2
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: da6bc128d194a491df580418a13af7e6112e9e45
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bae9005c8acc1272c8ca2142f929bffc03c54e16
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53878649"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55033478"
 ---
 # <a name="templatedata-element-visual-studio-templates"></a>TemplateData 項目 (Visual Studio 範本)
 將範本分類，並定義該範本在 [新增專案]  或 [加入新項目]  對話方塊中顯示的方式。  
   
- \<VSTemplate >  
- \<TemplateData >  
+ \<VSTemplate>  
+ \<TemplateData>  
   
 ## <a name="syntax"></a>語法  
   
@@ -61,7 +61,7 @@ ms.locfileid: "53878649"
 | [ProvideDefaultName](../extensibility/providedefaultname-element-visual-studio-templates.md) | 選擇性項目。<br /><br /> 指定 Visual Studio 專案系統是否會在建立時產生的預設名稱的專案或項目。 |
 | [PromptForSaveOnCreation](../extensibility/promptforsaveoncreation-element-visual-studio-templates.md) | 選擇性項目。<br /><br /> 指定專案是否可以建立為暫存專案。 |
 | [EnableLocationBrowseButton](../extensibility/enablelocationbrowsebutton-element-visual-studio-templates.md) | 選擇性項目。<br /><br /> 指定是否**瀏覽** 按鈕位於**新的專案**對話方塊，讓使用者可以輕鬆地修改儲存新專案的預設目錄。 |
-| [隱藏](../extensibility/hidden-element-visual-studio-templates.md) | 選擇性項目。<br /><br /> 指定是否在該範本會出現**新的專案**或**加入新項目** 對話方塊。 |
+| [Hidden](../extensibility/hidden-element-visual-studio-templates.md) | 選擇性項目。<br /><br /> 指定是否在該範本會出現**新的專案**或**加入新項目** 對話方塊。 |
 | [NumberOfParentCategoriesToRollUp](../extensibility/numberofparentcategoriestorollup-visual-studio-templates.md) | 選擇性項目。<br /><br /> 指定的數目會顯示在範本的父類別**新的專案** 對話方塊。 |
 | [LocationFieldMRUPrefix](../extensibility/locationfieldmruprefix-element-visual-studio-templates.md) | 選擇性項目。 |
 | [LocationField](../extensibility/locationfield-element-visual-studio-project-templates.md) | 選擇性項目。<br /><br /> 指定是否**位置**中的文字方塊**新的專案** 對話方塊中已啟用、 停用，或隱藏專案範本。 |

@@ -13,16 +13,16 @@ helpviewer_keywords:
 - mapping relationships in code
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 715d64d48a82837aca0c576a1cc95b434244368a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0ae0e0a2133d8c1d29f289c4673d20781514432b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53895554"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54929084"
 ---
 # <a name="use-code-maps-to-debug-your-applications"></a>使用 Code Map 偵錯您的應用程式
 

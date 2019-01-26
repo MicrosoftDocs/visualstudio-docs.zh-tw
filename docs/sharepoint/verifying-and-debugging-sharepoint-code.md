@@ -10,23 +10,23 @@ helpviewer_keywords:
 - IntelliTrace [SharePoint development in Visual Studio]
 - SharePoint development in Visual Studio, IntelliTrace
 - SharePoint development in Visual Studio, unit testing
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1705e77472ba9b8fa7a01d047c0aadaf342b7932
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7b57e07245631d37594d66ea7907b16efd817b2b
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53916831"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54869485"
 ---
 # <a name="verify-and-debug-sharepoint-code"></a>驗證及偵錯 SharePoint 程式碼
 您可以藉由使用 IntelliTrace 和單元測試更輕鬆地對 SharePoint 方案進行偵錯，並確保方案中的每一個方法都能正確運作。 您可以在 Visual Studio 中的 SharePoint 專案中使用這些功能，依照其他專案類型的相同程序。
 
 ## <a name="intellitrace"></a>Intellitrace
-藉由使用 IntelliTrace，您不但可以判斷目前 SharePoint 方案的狀態，也可以判斷過去發生的事件以及發生的內容。 您可以來回巡覽至 SharePoint 方案中記錄相關事件的各個時間點，並檢閱每一個時間點的狀態與變數值。 藉由使用這個動態巡覽，您就可以快速輕鬆地對 SharePoint 方案進行偵錯，而不需要設定大量中斷點。 您也可以將偵錯工作階段儲存到 IntelliTrace 記錄檔 (*.iTrace*) 檔案，稍後在 Visual Studio Enterprise 中開啟並執行當機後偵錯。 *.ITrace*檔案包含的時機和位置特定 SharePoint 錯誤發生的詳細的資訊，以便您可以更輕鬆地找出造成錯誤。 中的資訊 *.iTrace*檔案是統一記錄系統 (ULS) 在 SharePoint 中建立完整的錯誤記錄的子集。 這項資訊包括 SharePoint 專屬的事件，像是使用者設定檔何時開啟或關閉，以及 SharePoint 專案中的屬性何時載入、讀取或變更。 您可以設定 IntelliTrace 記錄的事件。 如需詳細資訊，請參閱 <<c0> [ 儲存的 IntelliTrace 資料的使用](../debugger/using-saved-intellitrace-data.md)。
+藉由使用 IntelliTrace，您不但可以判斷目前 SharePoint 方案的狀態，也可以判斷過去發生的事件以及發生的內容。 您可以來回巡覽至 SharePoint 方案中記錄相關事件的各個時間點，並檢閱每一個時間點的狀態與變數值。 藉由使用這個動態巡覽，您就可以快速輕鬆地對 SharePoint 方案進行偵錯，而不需要設定大量中斷點。 您也可以將偵錯工作階段儲存到 IntelliTrace 記錄檔 (*.iTrace*) 檔案，稍後在 Visual Studio Enterprise 中開啟並執行當機後偵錯。 *.ITrace*檔案包含的時機和位置特定 SharePoint 錯誤發生的詳細的資訊，以便您可以更輕鬆地找出造成錯誤。 中的資訊 *.iTrace*檔案是統一記錄系統 (ULS) 在 SharePoint 中建立完整的錯誤記錄的子集。 這項資訊包括 SharePoint 專屬的事件，像是使用者設定檔何時開啟或關閉，以及 SharePoint 專案中的屬性何時載入、讀取或變更。 您可以設定 IntelliTrace 記錄的事件。 如需詳細資訊，請參閱[使用儲存的 IntelliTrace 資料](../debugger/using-saved-intellitrace-data.md)。
 
 當 SharePoint 中發生錯誤時，錯誤對話方塊會顯示該特定錯誤的「相互關聯識別碼」識別項。 您也可以從所述的事件取得相互關聯識別碼 *.iTrace*檔案。 若要顯示所有所指定的相互關聯識別碼發生的事件的清單，您可以輸入中的識別碼**分析**[IntelliTrace 摘要] 頁面的區段。 在該區段中，您可以選擇僅顯示發生的事件名稱，或是顯示事件名稱與其呼叫資訊，像是函式名稱、結束和進入點、參數及傳回值。
 

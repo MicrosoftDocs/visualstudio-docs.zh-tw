@@ -5,16 +5,16 @@ ms.topic: reference
 ms.prod: visual-studio-dev15
 ms.assetid: aa186893-8775-40dd-981f-8593ead831d0
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 55fc609ffd327d1e3bea8ee52849c92746055410
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e3f0640ac32b86d14b89e4b0491eabe7b12980e9
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53950523"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55070444"
 ---
 # <a name="finalstate-activity-designer"></a>FinalState 活動設計工具
 

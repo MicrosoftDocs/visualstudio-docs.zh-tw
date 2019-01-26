@@ -6,13 +6,13 @@ ms.custom: seodec18
 ms.topic: landing-page
 author: mikejo5000
 ms.author: mikejo
-manager: douge
-ms.openlocfilehash: ced28177670ab33916701858bfae36fa860a357f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: cec753e4f01678373f47a7ed4a03d816e48a787b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53886442"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54928720"
 ---
 # <a name="measure-app-performance-in-visual-studio"></a>在 Visual Studio 中測量應用程式的效能
 
