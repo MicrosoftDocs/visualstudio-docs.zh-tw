@@ -7,17 +7,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - Outlook folders [Office development in Visual Studio], searching
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1427f0ab69cab2c23a0eeb7638bbc6e21778c55a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d9a08451b186cdc3ca1526441e906cf3c9e5d4c9
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53915490"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54866840"
 ---
 # <a name="how-to-programmatically-search-within-a-specific-folder"></a>HOW TO：以程式設計方式在特定資料夾中搜尋
   此程式碼範例會使用`Find`並`FindNext`方法來搜尋的電子郵件訊息的主旨欄位中的文字**收件匣**。 這個方法會使用字串篩選條件來檢查為起始的字母的字母 T`Subject`文字。  

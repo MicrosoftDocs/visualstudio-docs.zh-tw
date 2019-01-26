@@ -13,15 +13,15 @@ helpviewer_keywords:
 - <document> element
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2c1798815ee3216d6f3bb41eae70ae3e2cdc0121
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 36d822d60d1a28d48f660f6d358b75bf4a913048
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53854748"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54866382"
 ---
 # <a name="ltdocumentgt-element-office-development-in-visual-studio"></a>&lt;文件&gt;元素 （在 Visual Studio 中的 Office 程式開發）
   `document`項目`vstov4`命名空間會儲存文件層級自訂的自訂特定資訊。
@@ -32,7 +32,7 @@ ms.locfileid: "53854748"
 <document solutionId />
 ```
 
-## <a name="elements-and-attributes"></a>項目和屬性
+## <a name="elements-and-attributes"></a>元素和屬性
  只有需要文件層級自訂。 `document` 元素位於 `vstov4` 命名空間。 `document` 項目具有下列屬性。
 
 |屬性|描述|

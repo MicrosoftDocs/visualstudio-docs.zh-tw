@@ -9,17 +9,17 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], managing on server
 - Office documents [Office development in Visual Studio, managing on server
 - ServerDocument class, managing documents on server
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bcaebef3edcdf742bc56915d0209f3f61ee63df8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f776b73b4f80756a36a5ad4610a60440a6f9abd1
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53903239"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54876066"
 ---
 # <a name="manage-documents-on-a-server-by-using-the-serverdocument-class"></a>使用 ServerDocument 類別管理伺服器上的文件
   您可以使用`ServerDocument`類別中[!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]管理文件層級自訂的數個層面，即使未安裝 Microsoft Office Word 和 Microsoft Office Excel。 您可以執行下列工作：  

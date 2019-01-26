@@ -8,17 +8,17 @@ dev_langs:
 helpviewer_keywords:
 - SharePoint development in Visual Studio, features
 - features [SharePoint development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 55b1b3f2f243a6c4d35a4c1effbb4ca759abd9d9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 58db8ea5affd295ec21ed9e398053c57345dee79
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53842878"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54862119"
 ---
 # <a name="create-sharepoint-features"></a>建立 SharePoint 功能
   您可以使用 SharePoint 功能，將相關的 SharePoint 專案項目更容易部署。 您可以建立功能、 設定範圍，並標示為相依性的其他功能，使用 SharePoint 功能設計工具。 設計工具也會產生資訊清單，也就是描述每項功能的 XML 檔案。  

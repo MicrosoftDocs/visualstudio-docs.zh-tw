@@ -14,15 +14,15 @@ helpviewer_keywords:
 - _AssemblyName property
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8fe5c77827c23f5547f8e5bd411a33b03bfd37f8
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.openlocfilehash: 11c344b683a67f369ef3848a41b7907622945ffa
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54349500"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54866853"
 ---
 # <a name="custom-document-properties-overview"></a>自訂文件屬性概觀
 

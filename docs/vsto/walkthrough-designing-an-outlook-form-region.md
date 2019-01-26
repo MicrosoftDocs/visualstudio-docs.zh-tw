@@ -7,17 +7,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - form regions [Office development in Visual Studio], creating
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c7c14b7702acff281ab32483930559b5fe521044
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5c066f3673f6f51b01ebf00e9f594551fee03641
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53942368"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54867360"
 ---
 # <a name="walkthrough-design-an-outlook-form-region"></a>逐步解說：設計 Outlook 表單區域
   自訂的表單區域會擴充標準或自訂的 Microsoft Office Outlook 表單。 在此逐步解說中，您要設計自訂的表單區域，它在連絡人項目的 [偵測器] 視窗中會顯示為新頁面。 這個表單區域會將地址資訊傳送至 Windows Live 當地搜尋網站，顯示連絡人清單中每個地址的對應。 如需表單區域的詳細資訊，請參閱[建立 Outlook 表單區域](../vsto/creating-outlook-form-regions.md)。  
@@ -143,7 +143,7 @@ ms.locfileid: "53942368"
   
 ### <a name="to-test-the-map-it-form-region"></a>測試 Map It 表單區域  
   
-1.  按下**F5**執行專案。  
+1.  按 **F5** 執行專案。  
   
      Outlook 即開啟。  
   
@@ -155,7 +155,7 @@ ms.locfileid: "53942368"
     |------------------|-------------|  
     |**商務**|**4567 Main St.北市**|  
     |**Home**|**1234 北部 St.北市**|  
-    |**其他**|**3456 Main St.華盛頓州西雅圖**|  
+    |**其他**|**3456 Main St. Seattle, WA**|  
   
 4.  儲存並關閉連絡人項目。  
   

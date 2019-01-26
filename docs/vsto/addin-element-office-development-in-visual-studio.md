@@ -13,15 +13,15 @@ helpviewer_keywords:
 - <addin> element
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6ab185a1341192542d4e35ad01aa2d5ce5fba748
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 90ad45aa77ce5e383f258c0fcaa10030b46dd1c4
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53867721"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54864315"
 ---
 # <a name="ltaddingt-element-office-development-in-visual-studio"></a>&lt;增益集&gt;元素 （在 Visual Studio 中的 Office 程式開發）
   **Addin**項目`vstav3`命名空間包含的是 Microsoft Office VSTO 增益集和使用 Visual Studio 開發的文件層級自訂專屬的資訊。
@@ -50,7 +50,7 @@ ms.locfileid: "53867721"
 </addIn>
 ```
 
-## <a name="elements-and-attributes"></a>項目和屬性
+## <a name="elements-and-attributes"></a>元素和屬性
  **Addin**項目`vstav3`命名空間包含 Office 方案和 Microsoft Office 應用程式的相關資訊。 此項目必須位於下列命名空間中： `vstav3=urn:schemas-microsoft-com:vsta.v3`。 子項目也必須在這個命名空間中。
 
  `addin` 項目沒有任何屬性。

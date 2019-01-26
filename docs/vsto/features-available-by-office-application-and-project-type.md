@@ -16,15 +16,15 @@ helpviewer_keywords:
 - form regions [Office development in Visual Studio], features available
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 679b0456548a675545d81353332ddb70dcce8cdc
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 474c0085851d826b4b15f5f7c84600e0dd04bcb1
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53986397"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54862176"
 ---
 # <a name="features-available-by-office-application-and-project-type"></a>依 Office 應用程式和專案類型提供的功能
   Visual Studio 有幾種類型的專案範本，可支援不同的 Microsoft Office 應用程式商務案例，包括下列類型：  
@@ -53,16 +53,16 @@ ms.locfileid: "53986397"
 |-------------|--------------------------------------------|---------------------|  
 |執行窗格。|文件層級專案。|[執行窗格概觀](../vsto/actions-pane-overview.md)|  
 |ClickOnce 佈署。|VS 與文件層級專案。|[部署 Office 方案](../vsto/deploying-an-office-solution.md)|  
-|自訂工作窗格。|下列應用程式的 VSTO 增益集專案：<br /><br /> Excel<br />-InfoPath (InfoPath 2013 與 InfoPath 2010 只）<br />-Outlook<br />-PowerPoint<br />字組|[自訂工作窗格](../vsto/custom-task-panes.md)|  
-|自訂 XML 組件。|文件層級專案。<br /><br /> 下列應用程式的應用程式層級專案：<br /><br /> Excel<br />-PowerPoint<br />字組|[自訂 XML 組件概觀](../vsto/custom-xml-parts-overview.md)|  
+|自訂工作窗格。|下列應用程式的 VSTO 增益集專案：<br /><br /> -   Excel<br />-InfoPath (InfoPath 2013 與 InfoPath 2010 只）<br />-   Outlook<br />-   PowerPoint<br />-   Word|[自訂工作窗格](../vsto/custom-task-panes.md)|  
+|自訂 XML 組件。|文件層級專案。<br /><br /> 下列應用程式的應用程式層級專案：<br /><br /> -   Excel<br />-   PowerPoint<br />-   Word|[自訂 XML 組件概觀](../vsto/custom-xml-parts-overview.md)|  
 |資料快取。|文件層級專案。|[文件層級自訂中的快取的資料](../vsto/cached-data-in-document-level-customizations.md)|  
 |公開的 VSTO 增益集至其他 Microsoft Office 方案中的物件。|VSTO 增益集專案。|[從其他 Office 方案呼叫 VSTO 增益集的程式碼](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md)|  
-|下列主控制項：<br /><br /> -圖表<br />-ListObject<br />-NamedRange<br />-內容控制項<br />-書籤|文件層級專案。<br /><br /> Word 和 Excel 的 VSTO 增益集專案。|[主項目和主控制項概觀](../vsto/host-items-and-host-controls-overview.md)|  
-|下列主控制項：<br /><br /> -XMLMappedRange<br />-XMLNode<br />-XMLNodes|文件層級專案。|[主項目和主控制項概觀](../vsto/host-items-and-host-controls-overview.md)|  
+|下列主控制項：<br /><br /> -圖表<br />-   ListObject<br />-   NamedRange<br />-內容控制項<br />-書籤|文件層級專案。<br /><br /> Word 和 Excel 的 VSTO 增益集專案。|[主項目和主控制項概觀](../vsto/host-items-and-host-controls-overview.md)|  
+|下列主控制項：<br /><br /> -   XMLMappedRange<br />-   XMLNode<br />-   XMLNodes|文件層級專案。|[主項目和主控制項概觀](../vsto/host-items-and-host-controls-overview.md)|  
 |多專案部署。|文件層級專案。<br /><br /> VSTO 增益集專案。|[逐步解說：部署在單一 ClickOnce 安裝程式中的多個 Office 方案](https://msdn.microsoft.com/051223c0-4082-4799-b78b-a4763a9def55)|  
 |Outlook 表單區域。|Outlook 的 VSTO 增益集專案。|[建立 Outlook 表單區域](../vsto/creating-outlook-form-regions.md)|  
 |部署後動作。|文件層級專案。<br /><br /> VSTO 增益集專案。|[逐步解說：ClickOnce 安裝完成後，複製到終端使用者電腦的文件](https://msdn.microsoft.com/100090f7-bc63-4152-b3e1-19b48bc27466)|  
-|功能區自訂。|文件層級專案。<br /><br /> 下列應用程式的 VSTO 增益集專案：<br /><br /> Excel<br />-InfoPath (InfoPath 2013 與 InfoPath 2010 只）<br />-Outlook<br />-PowerPoint<br />專案<br />-Visio<br />字組|[功能區概觀](../vsto/ribbon-overview.md)|  
+|功能區自訂。|文件層級專案。<br /><br /> 下列應用程式的 VSTO 增益集專案：<br /><br /> -   Excel<br />-InfoPath (InfoPath 2013 與 InfoPath 2010 只）<br />-   Outlook<br />-   PowerPoint<br />-   Project<br />-   Visio<br />-   Word|[功能區概觀](../vsto/ribbon-overview.md)|  
 |視覺文件設計工具。|文件層級專案。|[在 Visual Studio 環境中的 office 專案](../vsto/office-projects-in-the-visual-studio-environment.md)|  
   
 ## <a name="see-also"></a>另請參閱  
