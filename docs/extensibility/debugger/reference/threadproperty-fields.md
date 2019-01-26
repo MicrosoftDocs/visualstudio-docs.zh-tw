@@ -1,5 +1,5 @@
 ---
-title: THREADPROPERTY_FIELDS |Microsoft Docs
+title: THREADPROPERTY_FIELDS | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 5b88acb9-03ea-4c29-a788-f0087dccbe23
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0d4b20621d186cf9e14538d7378a84e25c739929
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b181cc341ea0297cc78c0970a5de64df830dc3e6
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53887336"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54937531"
 ---
 # <a name="threadpropertyfields"></a>THREADPROPERTY_FIELDS
 指定要擷取執行緒的相關資訊。  

@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: edcd7891-f4e7-416d-809d-5e2eed9f17e4
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dbdd61e22a392309c45005c0e183704c6b84040c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 687523f54d10a6a43e5db8d46ab391f53caf8c94
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53879367"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54972231"
 ---
 # <a name="bitmap-element"></a>Bitmap 元素
 定義點陣圖。 從資源或者從檔案載入點陣圖。  

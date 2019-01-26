@@ -12,19 +12,19 @@ helpviewer_keywords:
 ms.assetid: cf05936d-0d6c-49ed-a1b4-220032e50b97
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CPP
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 966e92b7973ee22ce4da2be7edb1cc075c42077a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1924b86945df73ccd84f1215367d44d9ead039aa
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53868361"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54971282"
 ---
 # <a name="ca2240-implement-iserializable-correctly"></a>CA2240:必須正確實作 ISerializable
 

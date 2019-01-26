@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: c782175c-cce4-4bd0-8374-4a897ceb1b3d
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ea4240ddf84dc1b475adcf81fe80471c9d1bc2b9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fad7d73522bed76960f8545514ffe6334f0434ae
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53965417"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54949607"
 ---
 # <a name="command-implementation"></a>命令實作
 若要在 VSPackage 中實作的命令，您必須執行下列工作：  

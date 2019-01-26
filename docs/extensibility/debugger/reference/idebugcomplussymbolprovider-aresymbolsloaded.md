@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: bbf8707d-f89c-4177-b019-d519f1ec6f4a
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b81fb4799306b596719ef6b9d9b167e61dc75710
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 36ee4fda07e4adfc1aa84d5fa4f639dde1378086
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53923175"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54960954"
 ---
 # <a name="idebugcomplussymbolprovideraresymbolsloaded"></a>IDebugComPlusSymbolProvider::AreSymbolsLoaded
 決定是否偵錯符號載入指定的模組指定的應用程式網域識別項。  

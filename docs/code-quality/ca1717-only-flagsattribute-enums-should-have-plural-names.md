@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: a6855d8b-d78a-42c1-834e-61c31f5572ed
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8c4b4b55e2a8f5ec2dd027cf62f494d3e07416dd
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f8fa009c93f049938a198eabd1a5dcc86a45caa7
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53915665"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54957243"
 ---
 # <a name="ca1717-only-flagsattribute-enums-should-have-plural-names"></a>CA1717:只有 FlagsAttribute 列舉應該使用複數名稱
 

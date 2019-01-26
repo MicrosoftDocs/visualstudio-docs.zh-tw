@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 9b657ab0-fe81-4f4c-9481-ba746988c922
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9135ab768d3439cc996478da31343553902706fa
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7e6142ff65800e3d31a867ba0fb1ff63afba187b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53860594"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54973066"
 ---
 # <a name="ca1725-parameter-names-should-match-base-declaration"></a>CA1725:參數名稱應該符合基底類型的宣告
 

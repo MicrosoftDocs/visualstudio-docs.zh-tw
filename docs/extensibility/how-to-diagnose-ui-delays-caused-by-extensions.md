@@ -4,14 +4,14 @@ ms.date: 01/26/2018
 ms.topic: conceptual
 author: PooyaZv
 ms.author: pozandev
-manager: douge
+manager: jillfra
 ms.workload: multiple
-ms.openlocfilehash: 1bd09827899000e4f3d1f65fae27da969bcbc107
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c4852e3c760f2974620f0a6c641a540b92d19bc3
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53887707"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54957438"
 ---
 # <a name="how-to-diagnose-ui-delays-caused-by-extensions"></a>HOW TO：診斷延伸模組造成的 UI 延遲
 

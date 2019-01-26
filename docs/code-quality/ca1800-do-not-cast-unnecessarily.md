@@ -12,18 +12,18 @@ helpviewer_keywords:
 ms.assetid: b79a010a-6627-421e-8955-6007e32fa808
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - VB
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 1ef6e73812a63fdc4cc4392621ab49b279a32d18
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 19ea831e1cec04d6ccce7e35137b6f02bac4b08c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53822025"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54971672"
 ---
 # <a name="ca1800-do-not-cast-unnecessarily"></a>CA1800:不要執行不必要的轉換
 

@@ -8,15 +8,15 @@ f1_keywords:
 ms.assetid: ba3feb3c-f144-47ea-926d-cf752b804153
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e5f3080dfcd7afbc999ad478fa3bbdc8470ef54a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a9f7b695eb0ac6c29925a50b4ad346028c0ba0e4
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53905818"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54919482"
 ---
 # <a name="assign-activity-designer"></a>Assign 活動設計工具
 

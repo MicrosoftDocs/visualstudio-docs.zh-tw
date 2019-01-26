@@ -1,5 +1,5 @@
 ---
-title: IDebugStackFrame2::GetInfo |Microsoft Docs
+title: IDebugStackFrame2::GetInfo | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 19c6870b-b94e-453c-bf19-82ce95b79d26
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fb1acd489d057173fccd40a2d5f861469dafd325
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b16d37061375dee569be7c6b17dd943a59a85ba1
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53937893"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54949641"
 ---
 # <a name="idebugstackframe2getinfo"></a>IDebugStackFrame2::GetInfo
 取得堆疊框架的描述。  

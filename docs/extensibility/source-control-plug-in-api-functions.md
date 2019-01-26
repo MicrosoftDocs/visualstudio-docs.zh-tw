@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 4b0536dd-4f92-4ef2-9031-4548281f37aa
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d73dd67f0f2d64a2ac02c77b2eb86d21e559c0d3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 08d2e3ef83cf3b68cd7077dc7abd82527908ed34
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53880032"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54965636"
 ---
 # <a name="source-control-plug-in-api-functions"></a>原始檔控制外掛程式 API 函式
 原始檔控制外掛程式 API 提供下列函式，必須實作的原始檔控制外掛程式根據此 API。 每個函式和語意的簽章相關聯的位元旗標，並在此參考中有詳細說明其他參數。  

@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 8b1853b5-745c-4cd6-88a9-ce0673971bb0
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 49767701419e8e7b6c5de27e51092d9d1f276afb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b66dea45b9cc81116fa2b8c7a90cb9a0f5e35e7e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53989824"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54963043"
 ---
 # <a name="idebugbreakpointchecksumrequest2ischecksumenabled"></a>IDebugBreakpointChecksumRequest2::IsChecksumEnabled
 判斷是否啟用這份文件的總和檢查碼。  

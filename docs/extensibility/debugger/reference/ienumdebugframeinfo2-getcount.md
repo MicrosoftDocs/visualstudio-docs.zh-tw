@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugFrameInfo2::GetCount |Microsoft Docs
+title: IEnumDebugFrameInfo2::GetCount | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: d02a08e3-f34f-461e-8195-5157e154c481
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ca9c57b44180a9cdc554cc4b50cf7f6e75807825
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2a9a89fa63237808868f4672729ecd61ccfb13b0
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53891238"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54971123"
 ---
 # <a name="ienumdebugframeinfo2getcount"></a>IEnumDebugFrameInfo2::GetCount
 列舉中傳回的項目數。  
