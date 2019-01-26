@@ -1,5 +1,5 @@
 ---
-title: IEnumCodePaths2::GetCount |Microsoft Docs
+title: IEnumCodePaths2::GetCount | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 988c5092-fcc5-43a1-a94c-c261edd56ebf
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a828c914ef52be9e8691ee0bffe654e543f49879
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: febc498058b5e558239bde03ab94a536eb3f226a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53834395"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54935549"
 ---
 # <a name="ienumcodepaths2getcount"></a>IEnumCodePaths2::GetCount
 列舉中傳回的項目數。  

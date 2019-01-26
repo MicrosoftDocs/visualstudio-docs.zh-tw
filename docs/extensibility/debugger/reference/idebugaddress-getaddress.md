@@ -1,5 +1,5 @@
 ---
-title: IDebugAddress::GetAddress |Microsoft Docs
+title: IDebugAddress::GetAddress | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 2590387b-5d36-4116-9a75-737957b8898e
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8d4a40da82f77f3eb04317fcb936e7a10c5351e8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e91b90fd54ea70aed729707e927ad2394d756139
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53863705"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54917675"
 ---
 # <a name="idebugaddressgetaddress"></a>IDebugAddress::GetAddress
 傳回描述物件和它的位置，其範圍或容器內的結構。  

@@ -5,15 +5,15 @@ ms.prod: visual-studio-dev15
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ec485979eb4c8736260acfa5906b8465b5326f38
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ca21ba6e1e38e903f70451e9755b380726dee3ba
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53988374"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54937791"
 ---
 # <a name="mixed-recommended-rules-rule-set"></a>混合建議規則規則集
 
