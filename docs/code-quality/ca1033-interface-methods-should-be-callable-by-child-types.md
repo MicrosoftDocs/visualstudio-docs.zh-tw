@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 9f171497-a5e3-4769-a77b-7aed755b2662
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2dcfc7bc557c16ec07beb46cce08c6a934033b45
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c6d1fa4152b0906db89efbb4df68356c58c60416
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53829812"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54996521"
 ---
 # <a name="ca1033-interface-methods-should-be-callable-by-child-types"></a>CA1033:介面方法應該要可以由子類型呼叫
 

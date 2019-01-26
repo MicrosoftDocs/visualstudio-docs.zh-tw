@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: f69972d0-809d-40df-9da3-04738791391c
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 158eca797c13ca7889ea4d7cf2e5d811783e997e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3a72dbf33fe3c7f78513534fc31e609721cfd5a8
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53923675"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55008227"
 ---
 # <a name="operational-modes"></a>作業模式
 有三種模式，在其中 IDE 可以操作，如下所示：  

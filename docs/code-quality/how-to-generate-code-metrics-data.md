@@ -9,15 +9,15 @@ helpviewer_keywords:
 - code metrics [Visual Studio]
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 96b74421d638a99823399a0049b712bc6c54c8a9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f34f686b91d6a140e975c13eec72e8703a1b47ef
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53849054"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54945241"
 ---
 # <a name="how-to-generate-code-metrics-data"></a>HOW TO：產生程式碼度量資料
 

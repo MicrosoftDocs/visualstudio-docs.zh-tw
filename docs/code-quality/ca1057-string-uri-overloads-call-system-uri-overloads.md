@@ -12,19 +12,19 @@ helpviewer_keywords:
 ms.assetid: ef1e983e-9ca7-404b-82d7-65740ba0ce20
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CPP
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: cc113abf5fc1f0d47b37643c404dffade26d0899
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f92340541de528b794f728bbbc1fe61a7d0853b9
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53891186"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55012920"
 ---
 # <a name="ca1057-string-uri-overloads-call-systemuri-overloads"></a>CA1057:字串 URI 多載呼叫 System.Uri 多載
 

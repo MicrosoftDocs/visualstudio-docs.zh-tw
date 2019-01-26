@@ -10,22 +10,22 @@ helpviewer_keywords:
 ms.assetid: 0ff056c8-b9d2-4747-9308-92adf1811491
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 37c92b6b1fe400e859971a4233daff8d00ddac6d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8f8dfd0a5efd302b64130fc2ed029b94d4396d4e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53885352"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54927076"
 ---
 # <a name="defaultname-element-visual-studio-templates"></a>DefaultName 項目 （Visual Studio 範本）
 建立時，請指定 Visual Studio 專案系統會產生的專案或項目的名稱。  
   
- \<VSTemplate >  
- \<TemplateData >  
- \<DefaultName >  
+ \<VSTemplate>  
+ \<TemplateData>  
+ \<DefaultName>  
   
 ## <a name="syntax"></a>語法  
   

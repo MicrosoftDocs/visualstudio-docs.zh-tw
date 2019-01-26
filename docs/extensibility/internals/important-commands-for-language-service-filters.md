@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 4948c494-3d4d-4f50-b3f9-959e73f90e4d
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e9f4c568722700ab4521f8a34a0639e78b9f550b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1aec5fb925fbf7140786880db69d5be535abd5ac
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53891692"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55004509"
 ---
 # <a name="important-commands-for-language-service-filters"></a>語言服務篩選的重要命令
 如果您想要建立功能完整的語言服務篩選器，請考慮處理下列的命令。 在定義命令識別碼的完整清單<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>managed 程式碼和 Stdidcmd.h 標頭的列舉檔案未受管理[!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)]程式碼。 您可以找到 Stdidcmd.h 檔案中的*Visual Studio SDK 安裝路徑*\VisualStudioIntegration\Common\Inc。  

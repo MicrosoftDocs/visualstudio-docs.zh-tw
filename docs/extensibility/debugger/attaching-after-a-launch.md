@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 5a3600a1-dc20-4e55-b2a4-809736a6ae65
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 33bc38ca3e0c9b3bde07be48c74c31e4fc5148df
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4558fc7088803477de9dd3b89bee2c933c3cda34
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53922205"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54948878"
 ---
 # <a name="attach-after-a-launch"></a>在啟動後附加
 程式啟動之後，偵錯工作階段已附加偵錯引擎 (DE) 至前述的程式。  

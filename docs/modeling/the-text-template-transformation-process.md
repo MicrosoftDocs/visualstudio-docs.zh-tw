@@ -6,16 +6,16 @@ helpviewer_keywords:
 - text templates, transformation process
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 1f4cadbbf9de2f9f02a8bc95a4f436f399e2052b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 91e698f5b033629b688bb1aa82de019fb9fbf199
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53908653"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54966409"
 ---
 # <a name="the-text-template-transformation-process"></a>文字範本轉換流程
 文字範本轉換流程會做為輸入的文字範本檔案，並產生新的文字檔，做為輸出。 例如，您可以使用文字範本產生 Visual Basic 或 C# 程式碼，或您可以產生一份 HTML 報告。

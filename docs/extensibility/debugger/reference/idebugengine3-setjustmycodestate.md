@@ -1,5 +1,5 @@
 ---
-title: IDebugEngine3::SetJustMyCodeState |Microsoft Docs
+title: IDebugEngine3::SetJustMyCodeState | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 8ec17fbf-df93-424a-b2ed-fd1e5ee51256
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9dafc7a98b511c9d7b8367e96621faee9e2cbc22
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 180ef79d488585aa50eb19da6924c642340d0aa7
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53914419"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54925990"
 ---
 # <a name="idebugengine3setjustmycodestate"></a>IDebugEngine3::SetJustMyCodeState
 這個方法會告知偵錯引擎的 JustMyCode 狀態資訊。  

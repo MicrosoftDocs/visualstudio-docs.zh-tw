@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 6779727c-d10a-4abe-9acd-d0a1eb0737e7
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4d82e650a1254635719cc663a6dab14456952084
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a1867b2524508a5c786cfe42bea68dc0ff5ea76d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53912567"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54941336"
 ---
 # <a name="idebugcustomattributequerygetcustomattributebyname"></a>IDebugCustomAttributeQuery::GetCustomAttributeByName
 擷取自訂屬性，指定其名稱。  
@@ -50,7 +50,7 @@ int GetCustomAttributeByName(
  [out]以位元組為單位的長度`ppBlob`參數。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`。 如果自訂屬性不存在，就會傳回`S_FALSE`。 反之則傳回錯誤碼。  
+ 如果成功，會傳回 `S_OK`。 如果自訂屬性不存在，就會傳回`S_FALSE`。 反之則傳回錯誤碼。  
   
 ## <a name="example"></a>範例  
  下列範例示範如何實作這個方法，如**CDebugClassFieldSymbol**公開 （expose） 的物件[IDebugCustomAttributeQuery](../../../extensibility/debugger/reference/idebugcustomattributequery.md)介面。  

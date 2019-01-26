@@ -5,15 +5,15 @@ ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 72a22937792cc06bcac18f70a2bd4c53be98f7fe
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7a569e3bc9d467b1cfce16d3836fdd1bb2a86e1c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53894885"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55013687"
 ---
 # <a name="how-to-use-breakpoints-with-xslt"></a>HOW TO：使用中斷點與 XSLT
 

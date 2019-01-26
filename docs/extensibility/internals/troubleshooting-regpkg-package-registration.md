@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: f33f822f-697a-4bad-9c10-554b4c8f6246
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 54196fcacb5af5560482bf1b40ff21de57e175d8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8a5d8a8a63aabafb9c658d43fc90c1bb28918c8e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53900953"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54943535"
 ---
 # <a name="troubleshooting-regpkg-package-registration"></a>針對 RegPkg 套件註冊進行疑難排解
 > [!NOTE]

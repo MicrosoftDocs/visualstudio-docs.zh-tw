@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 17ecacea-397d-4a97-b003-01bd5d56e936
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 597fc90ff7b98018aab0fa11fb44fb1bc152272e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1c1a44327205f9bdbdab00ac3554f501c52e1c36
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53895437"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54967543"
 ---
 # <a name="manifest-to-code"></a>資訊清單至程式碼
 資訊清單以程式碼工具是 Visual Studio 映像服務採用.imagemanifest 檔案，並產生包裝函式的檔案或檔案參考 c + + 中的映像資訊清單的值的主控台應用程式C#，適用於 Visual Studio 的 VB 或.vsct 檔案延伸模組。 此工具會產生可用於從 Visual Studio 映像服務直接提出要求的映像或傳遞到 Api 的資訊清單的值，如果程式碼不會處理任何自己的 UI 和轉譯的包裝函式檔案。  
@@ -33,18 +33,18 @@ ms.locfileid: "53895437"
 |/imageIdClass|ImageIdClass 和相關聯的工具所建立的檔案名稱。 C + + 語言選項時，會產生只有.h 檔案。<br /><br /> 預設：\<資訊清單路徑 > \MyImageIds。\<l a n g e >|Optional|  
 |/monikerClass|MonikerClass 和相關聯的工具所建立的檔案名稱。 C + + 語言選項時，會產生只有.h 檔案。 這會忽略 VSCT 語言。<br /><br /> 預設：\<資訊清單路徑 > \MyMonikers。\<l a n g e >|Optional|  
 |/classAccess|ImageIdClass 和 monikerClass 存取修飾詞。 請確定所指定語言的存取修飾詞無效。 這會忽略 VSCT 語言選項。<br /><br /> 預設：Public|Optional|  
-|/namespace|在程式碼包裝函式中定義的命名空間。 這會忽略 VSCT 語言選項。 可能是 '。 ':: ' 是有效的命名空間的分隔符號，不論所選擇的語言選項。<br /><br /> 預設：Images|Optional|  
+|/namespace|在程式碼包裝函式中定義的命名空間。 這會忽略 VSCT 語言選項。 可能是 '。 ':: ' 是有效的命名空間的分隔符號，不論所選擇的語言選項。<br /><br /> 預設：MyImages|Optional|  
 |/noLogo|設定這個旗標，就會停止列印的產品和著作權資訊。|Optional|  
 |/?|列印出說明資訊。|Optional|  
 |/help|列印出說明資訊。|Optional|  
   
  **範例**  
   
--   ManifestToCode /manifest:D:\MyManifest.imagemanifest /language: csharp  
+-   ManifestToCode /manifest:D:\MyManifest.imagemanifest                /language:CSharp  
   
 -   ManifestToCode /manifest:D:\MyManifest.imagemanifest /language:C++ /namespace： 我:: 命名空間 /imageIdClass:MyImageIds /monikerClass:MyMonikers /classAccess:friend  
   
--   ManifestToCode /manifest:D:\MyManifest.imagemanifest /language:VSCT /imageIdClass:MyImageIds  
+-   ManifestToCode /manifest:D:\MyManifest.imagemanifest                /language:VSCT                /imageIdClass:MyImageIds  
   
 ## <a name="notes"></a>注意  
   

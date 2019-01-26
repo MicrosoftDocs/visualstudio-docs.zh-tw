@@ -4,15 +4,15 @@ ms.date: 01/02/2018
 ms.topic: conceptual
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 39ebb7c49e5a8482ab0b2ef5c3a5257d0237b39c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ba4501662e483af4ae357d75ca55f1a9cbac2329
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53836149"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55017990"
 ---
 # <a name="troubleshooting-template-installation"></a>疑難排解安裝的範本
 

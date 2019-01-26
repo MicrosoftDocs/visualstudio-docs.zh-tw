@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 329af3b5-5600-4101-831d-531ab3eb7060
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c28bf4af55e1c12045357a76e3488ff4083fcee5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b0bd410fabbeebc05d13eaee94db79cc346881e5
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53848937"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54989213"
 ---
 # <a name="ca1724-type-names-should-not-match-namespaces"></a>CA1724:類型名稱不應該和命名空間相符
 

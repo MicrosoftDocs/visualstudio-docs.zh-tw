@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: c46bf625-0a48-4cbb-8f1f-286356f2c065
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0d8a1629ee54f36b7000b6538f16bd7f4f3e7b90
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6daf0fc7a7aa2f283728210003254885345d69ee
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53900518"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54954796"
 ---
 # <a name="idebugarrayfieldgetelementtype"></a>IDebugArrayField::GetElementType
 取得項目的型別陣列中。  

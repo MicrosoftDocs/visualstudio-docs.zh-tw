@@ -9,15 +9,15 @@ helpviewer_keywords:
 - modeling software [Visual Studio ALM], What's New
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bdea0b8e24347e608ad0e1736b55e34acb4e5854
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8340876527db26354bbef2809aaf26559db617b4
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53956019"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54948930"
 ---
 # <a name="whats-new-for-design-in-visual-studio"></a>在 Visual Studio 中設計的新功能
 

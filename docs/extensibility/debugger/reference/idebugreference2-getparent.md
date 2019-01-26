@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: e3061665-ad3e-4c1b-b33f-82755fa21be3
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c7bc0cf40fd99a210ca688bedfb34885cb081aa2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bfded2472a2acb62727d60d788cd3f7f33f3f946
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53831137"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54963836"
 ---
 # <a name="idebugreference2getparent"></a>IDebugReference2::GetParent
 取得參考的父代參考。 保留供未來使用。  

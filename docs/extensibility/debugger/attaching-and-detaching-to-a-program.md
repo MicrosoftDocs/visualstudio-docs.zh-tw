@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 79dcbb9b-c7f8-40fc-8a00-f37fe1934f51
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7576b3c80ff80ec0c26234cf43682aca19a96a7b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e0e28a266653383621f1d49f37ea8ea4d3a8b8f8
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53841595"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54957386"
 ---
 # <a name="attaching-and-detaching-to-a-program"></a>附加和中斷連結至程式
 附加偵錯工具需要傳送正確的順序，方法和事件，使用適當的屬性。  

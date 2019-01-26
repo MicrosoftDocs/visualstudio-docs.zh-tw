@@ -1,5 +1,5 @@
 ---
-title: IDebugProgram2::GetProgramId |Microsoft Docs
+title: IDebugProgram2::GetProgramId | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 2c31c0aa-2b71-46c7-849c-356e237d26f8
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9f97354bc708d12ab741a60159ac3ce61ad0b1eb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 67a132250d036be11c4b7db2f2352b1d6d86793b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53857146"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54938025"
 ---
 # <a name="idebugprogram2getprogramid"></a>IDebugProgram2::GetProgramId
 取得此程式的 GUID。  

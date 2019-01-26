@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: f74e1ad1-1ee5-4360-9bd5-d82467b884ca
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1e7d221526a0fc0214b57eff0c122e526fc09029
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9c68ddea3f92c33056ba1dc98332755dfd3bb1b9
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53827081"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54921034"
 ---
 # <a name="create-your-first-extension-hello-world"></a>建立您的第一個延伸模組：Hello World
 

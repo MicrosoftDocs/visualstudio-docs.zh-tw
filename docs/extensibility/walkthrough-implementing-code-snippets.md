@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: adbc5382-d170-441c-9fd0-80faa1816478
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4866f028851fadbee9f8ab5dbd6d4dc50015a728
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 05e266429c30ac2e2a2c5d65f7e037121f02c607
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53902184"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55043202"
 ---
 # <a name="walkthrough-implement-code-snippets"></a>逐步解說：實作程式碼片段
 您可以建立程式碼片段，並將它們包含在編輯器擴充功能，以便延伸模組的使用者可以將它們加入自己的程式碼。  

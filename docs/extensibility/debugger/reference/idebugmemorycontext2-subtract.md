@@ -1,5 +1,5 @@
 ---
-title: IDebugMemoryContext2::Subtract |Microsoft Docs
+title: IDebugMemoryContext2::Subtract | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 63df14c7-8d7e-47c1-afa7-5a1ab5d8eaba
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0b57386867d76e4c31181c13336973df3502bf34
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 53f919cb0c70d93c9888eb979846bc9b228c2e18
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53901856"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55035350"
 ---
 # <a name="idebugmemorycontext2subtract"></a>IDebugMemoryContext2::Subtract
 減去指定的值，從目前的內容，並傳回新的內容。  

@@ -1,5 +1,5 @@
 ---
-title: IDebugQueryEngine2::GetEngineInterface |Microsoft Docs
+title: IDebugQueryEngine2::GetEngineInterface | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: ed84aa98-7ec7-48f3-97ae-821090bc3664
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 06d3608ea330e67ef96c4c4414473a208806ee3b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 62486617f189d161471a0a87afb8887856ba6422
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53854824"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55003087"
 ---
 # <a name="idebugqueryengine2getengineinterface"></a>IDebugQueryEngine2::GetEngineInterface
 取得自訂的偵錯引擎 (DE) 介面。  

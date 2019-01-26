@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: ad73a207-b778-4dc5-b645-5ec668a63333
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f6c99a3ed47cfba2ffba04084acb9f8ed247cfee
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a19a1e983f0aa9a8e26d47d43871201997190d45
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53954548"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54963667"
 ---
 # <a name="idebugbreakpointunboundevent2getbreakpoint"></a>IDebugBreakpointUnboundEvent2::GetBreakpoint
 取得中斷點變成未繫結。  

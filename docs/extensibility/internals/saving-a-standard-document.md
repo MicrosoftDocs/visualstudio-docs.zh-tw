@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: d692fedf-b46e-4d60-84bd-578635042235
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b7f9b650c0d355d83137e302fc716f343d47b57d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3c06702cb49ef48dafe24e7c54a5e8239d0eab42
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53868887"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54917077"
 ---
 # <a name="saving-a-standard-document"></a>儲存標準文件
 環境會處理儲存、 另存新檔，並儲存所有命令。 當使用者選取**儲存**，**另存新檔**，或**全部儲存**從**檔案**功能表或關閉方案，因而導致**全部儲存**，執行下列程序。  

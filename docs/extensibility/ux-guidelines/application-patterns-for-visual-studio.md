@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 8ed68602-4e28-46fe-b39f-f41979b308a2
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6c512d242cffc39af5d159dbe720047de7a226bb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: 4c6f09f6a29ff19c8ad43495502010713e77aa0f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53898568"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54938389"
 ---
 # <a name="application-patterns-for-visual-studio"></a>適用於 Visual Studio 的應用程式模式
 ##  <a name="BKMK_WindowInteractions"></a> 視窗的互動  
@@ -511,19 +511,19 @@ Visual Studio 工具視窗會有不同的狀態，其中有些是使用者已啟
 | 任何修飾詞 | 目標 | 將參考加入至原始項目 | 將參考加入至原始項目 |  
 | 任何修飾詞 | 原始程式檔 | 刪除原始項目的參考 | 會保留原始的項目 |  
 | 任何修飾詞 | 結果 | `DROPEFFECT_MOVE` 從動作傳回`::Drop`和項目會保留在儲存體中的原始位置 | `DROPEFFECT_LINK` 從動作傳回`::Drop`和項目會保留在儲存體中的原始位置 |  
-| Shift + 拖曳 | 動作 | Move | 不卸除 |  
-| Shift + 拖曳 | 目標 | 將參考加入至原始項目 | 不卸除 |  
-| Shift + 拖曳 | 原始程式檔 | 刪除原始項目的參考 | 不卸除 |  
-| Shift + 拖曳 | 結果 | `DROPEFFECT_MOVE` 從動作傳回`::Drop`和項目會保留在儲存體中的原始位置 | 不卸除 |  
-| Ctrl + 拖曳 | 動作 | 複製 | 不卸除 |  
-| Ctrl + 拖曳 | 目標 | 將參考加入至原始項目 | 不卸除 |  
-| Ctrl + 拖曳 | 原始程式檔 | 會保留原始項目的參考 | 不卸除 |  
-| Ctrl + 拖曳 | 結果 | `DROPEFFECT_COPY` 從動作傳回`::Drop`和項目會保留在儲存體中的原始位置 | 不卸除 |  
-| Ctrl + Shift + 拖曳 | 動作 | 連結 | 連結 |  
-| Ctrl + Shift + 拖曳 | 目標 | 將參考加入至原始項目 | 將參考加入至原始項目 |  
-| Ctrl + Shift + 拖曳 | 原始程式檔 | 會保留原始項目的參考 | 會保留原始的項目 |  
-| Ctrl + Shift + 拖曳 | 結果 | `DROPEFFECT_LINK` 從動作傳回`::Drop`和項目會保留在儲存體中的原始位置 | `DROPEFFECT_LINK` 從動作傳回`::Drop`和項目會保留在儲存體中的原始位置 |  
-| Ctrl + Shift + 拖曳 | 注意事項 | 在 Windows 檔案總管中捷徑的拖放行為相同。 ||  
+| Shift+Drag | 動作 | Move | 不卸除 |  
+| Shift+Drag | 目標 | 將參考加入至原始項目 | 不卸除 |  
+| Shift+Drag | 原始程式檔 | 刪除原始項目的參考 | 不卸除 |  
+| Shift+Drag | 結果 | `DROPEFFECT_MOVE` 從動作傳回`::Drop`和項目會保留在儲存體中的原始位置 | 不卸除 |  
+| Ctrl+Drag | 動作 | 複製 | 不卸除 |  
+| Ctrl+Drag | 目標 | 將參考加入至原始項目 | 不卸除 |  
+| Ctrl+Drag | 原始程式檔 | 會保留原始項目的參考 | 不卸除 |  
+| Ctrl+Drag | 結果 | `DROPEFFECT_COPY` 從動作傳回`::Drop`和項目會保留在儲存體中的原始位置 | 不卸除 |  
+| Ctrl+Shift+Drag | 動作 | 連結 | 連結 |  
+| Ctrl+Shift+Drag | 目標 | 將參考加入至原始項目 | 將參考加入至原始項目 |  
+| Ctrl+Shift+Drag | 原始程式檔 | 會保留原始項目的參考 | 會保留原始的項目 |  
+| Ctrl+Shift+Drag | 結果 | `DROPEFFECT_LINK` 從動作傳回`::Drop`和項目會保留在儲存體中的原始位置 | `DROPEFFECT_LINK` 從動作傳回`::Drop`和項目會保留在儲存體中的原始位置 |  
+| Ctrl+Shift+Drag | 注意事項 | 在 Windows 檔案總管中捷徑的拖放行為相同。 ||  
 | 剪下/貼上 | 動作 | Move | 連結 |  
 | 剪下/貼上 | 目標 | 將參考加入至原始項目 | 將參考加入至原始項目 |  
 | 剪下/貼上 | 原始程式檔 | 會保留原始項目的參考|會保留原始的項目 |  
@@ -542,15 +542,15 @@ Visual Studio 工具視窗會有不同的狀態，其中有些是使用者已啟
 | 任何修飾詞 | 動作 | Move | Move |
 | 任何修飾詞 | 目標 | 複製到目標位置的項目 | 複製到目標位置的項目 |
 | 任何修飾詞 | 原始程式檔 | 刪除原始項目的參考 | 刪除原始項目的參考 |
-| Shift + 拖曳 | 動作 | Move | Move |
-| Shift + 拖曳 | 目標 | 複製到目標位置的項目 | 複製到目標位置的項目 |
-| Shift + 拖曳 | 原始程式檔 | 刪除原始項目的參考 | 從原始位置刪除項目 |
-| Shift + 拖曳 | 結果 | `DROPEFFECT_MOVE` 從動作傳回`::Drop`和項目會保留在儲存體中的原始位置 | `DROPEFFECT_MOVE` 從動作傳回`::Drop`和項目會保留在儲存體中的原始位置 |
-| Ctrl + 拖曳 | 動作 | 複製 | 複製 |
-| Ctrl + 拖曳 | 目標 | 複製到目標位置的項目 | 複製到目標位置的項目 |
-| Ctrl + 拖曳 | 原始程式檔 | 會保留原始項目的參考 | 會保留原始項目的參考 |
-| Ctrl + 拖曳 | 結果 | `DROPEFFECT_COPY` 從動作傳回`::Drop`和項目會保留在儲存體中的原始位置 | `DROPEFFECT_COPY` 從動作傳回`::Drop`和項目會保留在儲存體中的原始位置 |
-| Ctrl + Shift + 拖曳 | | 不卸除 | 不卸除 |
+| Shift+Drag | 動作 | Move | Move |
+| Shift+Drag | 目標 | 複製到目標位置的項目 | 複製到目標位置的項目 |
+| Shift+Drag | 原始程式檔 | 刪除原始項目的參考 | 從原始位置刪除項目 |
+| Shift+Drag | 結果 | `DROPEFFECT_MOVE` 從動作傳回`::Drop`和項目會保留在儲存體中的原始位置 | `DROPEFFECT_MOVE` 從動作傳回`::Drop`和項目會保留在儲存體中的原始位置 |
+| Ctrl+Drag | 動作 | 複製 | 複製 |
+| Ctrl+Drag | 目標 | 複製到目標位置的項目 | 複製到目標位置的項目 |
+| Ctrl+Drag | 原始程式檔 | 會保留原始項目的參考 | 會保留原始項目的參考 |
+| Ctrl+Drag | 結果 | `DROPEFFECT_COPY` 從動作傳回`::Drop`和項目會保留在儲存體中的原始位置 | `DROPEFFECT_COPY` 從動作傳回`::Drop`和項目會保留在儲存體中的原始位置 |
+| Ctrl+Shift+Drag | | 不卸除 | 不卸除 |
 | 剪下/貼上 | 動作 | Move | Move |
 | 剪下/貼上 | 目標 | 複製到目標位置的項目 | 複製到目標位置的項目 |
 | 剪下/貼上 | 原始程式檔 | 刪除原始項目的參考 | 從原始位置刪除項目 |
@@ -569,18 +569,18 @@ Visual Studio 工具視窗會有不同的狀態，其中有些是使用者已啟
 | 任何修飾詞 | 目標 | 將參考加入至原始項目 | 複製到目標位置的項目 |
 | 任何修飾詞 | 原始程式檔 | 刪除原始項目的參考 | 刪除原始項目的參考 |
 | 任何修飾詞 | 結果 | `DROPEFFECT_ MOVE` 從動作傳回`::Drop`和項目會保留在儲存體中的原始位置 | `DROPEFFECT_ MOVE` 從動作傳回`::Drop`項目會從儲存體中的原始位置刪除 |
-| Shift + 拖曳 | 動作 | Move | Move |
-| Shift + 拖曳 | 目標 | 將參考加入至原始項目 | 複製到目標位置的項目 |
-| Shift + 拖曳 | 原始程式檔 | 刪除原始項目的參考 | 從原始位置刪除項目 | 
-| Shift + 拖曳 | 結果 | `DROPEFFECT_ MOVE` 從動作傳回`::Drop`和項目會保留在儲存體中的原始位置 | `DROPEFFECT_ MOVE` 從動作傳回`::Drop`項目會從儲存體中的原始位置刪除 |
-| Ctrl + 拖曳 | 動作 | 複製 | 複製 |
-| Ctrl + 拖曳 | 目標 | 將參考加入至原始項目 | 複製到目標位置的項目 |
-| Ctrl + 拖曳 | 原始程式檔 | 會保留原始項目的參考 | 會保留原始的項目 |
-| Ctrl + 拖曳 | 結果 | `DROPEFFECT_ COPY` 從動作傳回`::Drop`和項目會保留在儲存體中的原始位置 | `DROPEFFECT_ COPY` 從動作傳回`::Drop`和項目會保留在儲存體中的原始位置 |
-| Ctrl + Shift + 拖曳 | 動作 | 連結 | 連結 |
-| Ctrl + Shift + 拖曳 | 目標 | 將參考加入至原始項目 | 將參考加入至原始來源項目 |
-| Ctrl + Shift + 拖曳 | 原始程式檔 | 會保留原始項目的參考 | 會保留原始的項目 |
-| Ctrl + Shift + 拖曳 | 結果 | `DROPEFFECT_ LINK` 從動作傳回`::Drop`和項目會保留在儲存體中的原始位置 | `DROPEFFECT_ LINK` 從動作傳回`::Drop`和項目會保留在儲存體中的原始位置 |
+| Shift+Drag | 動作 | Move | Move |
+| Shift+Drag | 目標 | 將參考加入至原始項目 | 複製到目標位置的項目 |
+| Shift+Drag | 原始程式檔 | 刪除原始項目的參考 | 從原始位置刪除項目 | 
+| Shift+Drag | 結果 | `DROPEFFECT_ MOVE` 從動作傳回`::Drop`和項目會保留在儲存體中的原始位置 | `DROPEFFECT_ MOVE` 從動作傳回`::Drop`項目會從儲存體中的原始位置刪除 |
+| Ctrl+Drag | 動作 | 複製 | 複製 |
+| Ctrl+Drag | 目標 | 將參考加入至原始項目 | 複製到目標位置的項目 |
+| Ctrl+Drag | 原始程式檔 | 會保留原始項目的參考 | 會保留原始的項目 |
+| Ctrl+Drag | 結果 | `DROPEFFECT_ COPY` 從動作傳回`::Drop`和項目會保留在儲存體中的原始位置 | `DROPEFFECT_ COPY` 從動作傳回`::Drop`和項目會保留在儲存體中的原始位置 |
+| Ctrl+Shift+Drag | 動作 | 連結 | 連結 |
+| Ctrl+Shift+Drag | 目標 | 將參考加入至原始項目 | 將參考加入至原始來源項目 |
+| Ctrl+Shift+Drag | 原始程式檔 | 會保留原始項目的參考 | 會保留原始的項目 |
+| Ctrl+Shift+Drag | 結果 | `DROPEFFECT_ LINK` 從動作傳回`::Drop`和項目會保留在儲存體中的原始位置 | `DROPEFFECT_ LINK` 從動作傳回`::Drop`和項目會保留在儲存體中的原始位置 |
 | 剪下/貼上 | 動作 | Move | Move |
 | 剪下/貼上 | 目標 | 複製到目標位置的項目 | 複製到目標位置的項目 |
 | 剪下/貼上 | 原始程式檔 | 刪除原始項目的參考 | 從原始位置刪除項目 |

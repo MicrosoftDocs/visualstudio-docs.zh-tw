@@ -1,5 +1,5 @@
 ---
-title: METADATA_ADDRESS_RETVAL |Microsoft Docs
+title: METADATA_ADDRESS_RETVAL | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 5b0ec0fb-84b3-4ce7-8e24-becf3d881d7d
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 25d4f8c63de2fe0f5d934d7138ff80d6c9d6ad66
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 89e10bac9db8782c117e114b02e4ff73a3693518
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53869975"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55006095"
 ---
 # <a name="metadataaddressretval"></a>METADATA_ADDRESS_RETVAL
 此結構表示從方法或函式的傳回值。  

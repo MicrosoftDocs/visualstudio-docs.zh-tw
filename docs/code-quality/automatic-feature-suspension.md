@@ -9,16 +9,16 @@ helpviewer_keywords:
 ms.assetid: 572c15aa-1fd0-468c-b6be-9fa50e170914
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
 ms.workload:
 - multiple
-ms.openlocfilehash: 46df354cf860aa1aa08fd8d738711dad41fd6741
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 174f78460e852d4ee82a5e8f84c031ace86b4360
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53861299"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54938824"
 ---
 # <a name="automatic-feature-suspension"></a>自動功能暫停
 

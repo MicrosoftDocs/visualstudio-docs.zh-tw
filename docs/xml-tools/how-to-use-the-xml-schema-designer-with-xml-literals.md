@@ -6,17 +6,17 @@ ms.topic: conceptual
 ms.assetid: d11803e7-f81a-41a2-a145-ba494a45cc93
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 1483077142d1c60d3309458aedbe1abd7e2e2b00
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3883b4515ab304e2a247414f63c79db6314a654c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53863390"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54922074"
 ---
 # <a name="how-to-use-the-xml-schema-designer-with-xml-literals"></a>HOW TO：使用 XML 常值中的 XML 結構描述設計工具
 

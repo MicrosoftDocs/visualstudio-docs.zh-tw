@@ -8,16 +8,16 @@ helpviewer_keywords:
 - Domain-Specific Language, element merge directives
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: cf200620036c41fe4ed975fa6ff60bd1438b7d88
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e56688d74647c12340fcf9755dca3de282806773
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53821033"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54933022"
 ---
 # <a name="customizing-element-creation-and-movement"></a>自訂項目的建立和移動
 
@@ -39,7 +39,7 @@ ms.locfileid: "53821033"
 
 EMD 的責任是決定如何在模型中的特定位置合併物件群組。 特別是，它會決定哪些關聯性應該具現化，將合併的群組連結至模型。 您也可以自訂，以設定屬性，並建立其他物件。
 
-![DSL&#45;EMD&#95;合併](../modeling/media/dsl-emd_merge.png)
+![DSL&#45;EMD&#95;Merge](../modeling/media/dsl-emd_merge.png)
 
 當您定義一個內嵌關聯性時，會自動產生 EMD。 當使用者將新的子執行個體新增至父代，EMD 此預設會建立關聯性的執行個體。 您可以修改這些預設 EMDs 中，例如藉由加入自訂程式碼。
 

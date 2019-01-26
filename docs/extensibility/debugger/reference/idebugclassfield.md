@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 49358cbc-8973-4862-9dcc-79b1248e6712
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1239abda48ffce5081986b9452e2416694a06ff9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0f6a448b80a8950b140258be6127c35e54704062
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53914821"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54981320"
 ---
 # <a name="idebugclassfield"></a>IDebugClassField
 這個介面會表示為類型的類別。  

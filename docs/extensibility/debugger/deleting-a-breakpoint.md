@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 75a046cc-d20a-4c79-ad2d-1f18426ac5d0
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b63fa7622b7dea4a6ad5c516547518911110a8ef
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 294c8b04bb95501ef4bf6ba635a047f46a8703f0
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53958036"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55002830"
 ---
 # <a name="deleting-a-breakpoint"></a>刪除中斷點
 以下說明時刪除暫止中斷點的程序：  

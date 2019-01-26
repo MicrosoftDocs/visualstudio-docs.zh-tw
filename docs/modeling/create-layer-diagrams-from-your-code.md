@@ -9,16 +9,16 @@ helpviewer_keywords:
 - constraints, architectural
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 44b957f18061024278710683a63d250f16ae2e4d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 081dfcecc7031d843d418620111afea8586cd78c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54761410"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54930299"
 ---
 # <a name="create-dependency-diagrams-from-your-code"></a>從您的程式碼建立相依性圖表
 

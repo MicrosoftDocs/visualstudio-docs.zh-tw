@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugObjects::Reset |Microsoft Docs
+title: IEnumDebugObjects::Reset | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 4a245e47-cc39-4177-b83d-083ea0e3190f
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5493a0488051cff84518c1933faf60e92aa7550a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1c2bb11f09edbc854a021bb917971b38df605dc8
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53850160"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54956658"
 ---
 # <a name="ienumdebugobjectsreset"></a>IEnumDebugObjects::Reset
 這個方法會將列舉重設第一個項目。  

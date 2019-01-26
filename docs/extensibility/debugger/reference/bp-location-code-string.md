@@ -1,5 +1,5 @@
 ---
-title: BP_LOCATION_CODE_STRING |Microsoft Docs
+title: BP_LOCATION_CODE_STRING | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: a4cd71c6-5052-45fe-907b-ebc6ca1df2e4
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ee33cff1ba8ee6ce278a9bb11f8967d4dd377173
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6fedefecdc59c7daf8dd1aa1b2ab015a5071ea25
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53925270"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55000208"
 ---
 # <a name="bplocationcodestring"></a>BP_LOCATION_CODE_STRING
 用於設定使用者可以輸入從整合式的開發環境 (IDE) 的字串為基礎的程式碼中斷點。  
@@ -46,7 +46,7 @@ typedef struct _BP_LOCATION_CODE_STRING { 
   
  命名空間:Microsoft.VisualStudio.Debugger.Interop  
   
- 組件：Microsoft.VisualStudio.Debugger.Interop.dll  
+ 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
  [結構和等位](../../../extensibility/debugger/reference/structures-and-unions.md)   

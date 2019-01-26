@@ -1,5 +1,5 @@
 ---
-title: FRAMEINFO |Microsoft Docs
+title: FRAMEINFO | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 95001b89-dddb-45bb-889d-8327994e38a5
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bf77548136b941a4895e300e25612411611645dc
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1f9a58fba7189220b8aa60083d048ebfe015feb6
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53958861"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54954341"
 ---
 # <a name="frameinfo"></a>FRAMEINFO
 描述堆疊框架。  
