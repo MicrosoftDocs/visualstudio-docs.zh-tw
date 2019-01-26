@@ -15,17 +15,17 @@ helpviewer_keywords:
 - worksheets, Excel
 - worksheets
 - events [Office development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 76766ddde90b63821b34bd561f8d1977d730f49c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8b89b91e8a1fd93953dae6dad28019b2203cf537
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53866734"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54876274"
 ---
 # <a name="worksheet-host-item"></a>工作表主項目
   <xref:Microsoft.Office.Tools.Excel.Worksheet> 主項目是可從 Excel 的主要 Interop 組件擴充 <xref:Microsoft.Office.Interop.Excel.Worksheet> 類型的一種類型。 <xref:Microsoft.Office.Tools.Excel.Worksheet> 主項目除了提供與 <xref:Microsoft.Office.Interop.Excel.Worksheet> 物件相同的所有屬性、方法和事件之外，也會公開其他事件，並做為主控制項和 Windows Form 控制項的容器。  
@@ -35,7 +35,7 @@ ms.locfileid: "53866734"
  在文件層級專案中，您可以在設計階段將 <xref:Microsoft.Office.Tools.Excel.Worksheet> 主項目加入專案。 在 VSTO 增益集專案中，您可以產生<xref:Microsoft.Office.Tools.Excel.Worksheet>裝載在執行階段的項目。  
   
 ## <a name="understand-worksheet-host-items-in-document-level-projects"></a>了解文件層級專案中的 worksheet 主項目  
- 當您建立 Excel 的文件層級專案時，Visual Studio 會自動在專案中建立三個 <xref:Microsoft.Office.Tools.Excel.Worksheet> 主項目。 這些工作表的預設名稱為 `Sheet1`、`Sheet2` 和 `Sheet3`。 如果您根據現有的活頁簿建立專案，主項目的數目取決於活頁簿中的工作表數目。  
+ 當您建立 Excel 的文件層級專案時，Visual Studio 會自動在專案中建立三個 <xref:Microsoft.Office.Tools.Excel.Worksheet> 主項目。 這些工作表的預設名稱為 `Sheet1`、 `Sheet2`和 `Sheet3`。 如果您根據現有的活頁簿建立專案，主項目的數目取決於活頁簿中的工作表數目。  
   
  這些工作表類別可讓您存取 <xref:Microsoft.Office.Tools.Excel.Worksheet> 主項目的成員，以便在自訂中執行基本工作，例如修改工作表的內容。 您也可以使用這些類別將控制項加入工作表。 藉由結合不同組的控制項並撰寫程式碼，您可以將控制項繫結至資料、從使用者收集資訊，以及回應使用者動作。 如需詳細資訊，請參閱 <<c0> [ 程式的文件層級自訂](../vsto/programming-document-level-customizations.md)。  
   
