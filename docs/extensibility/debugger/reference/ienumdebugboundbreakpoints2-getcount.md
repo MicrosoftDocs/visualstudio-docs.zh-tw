@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugBoundBreakpoints2::GetCount |Microsoft Docs
+title: IEnumDebugBoundBreakpoints2::GetCount | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 5a572eeb-beb7-4fc7-8259-792d277069be
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 27ca202ea80c2c9dd4b86ed61aa2d60a313dd0ea
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 35c8d49a6690e3fb030f8814c3505537071c3b90
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53933005"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54977664"
 ---
 # <a name="ienumdebugboundbreakpoints2getcount"></a>IEnumDebugBoundBreakpoints2::GetCount
 列舉中傳回的項目數。  
