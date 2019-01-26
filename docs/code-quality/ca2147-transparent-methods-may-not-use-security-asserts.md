@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 5d31e940-e599-4b23-9b28-1c336f8d910e
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4daf5d4183c8226a0bed613c5e175ddbd620f43a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 057a4eb504a6b8d3eaf559b8ff370712db5e8f91
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53912489"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54932138"
 ---
 # <a name="ca2147-transparent-methods-may-not-use-security-asserts"></a>CA2147:CA2147：透明方法不可以使用安全性判斷提示
 

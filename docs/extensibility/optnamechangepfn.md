@@ -1,5 +1,5 @@
 ---
-title: OPTNAMECHANGEPFN |Microsoft Docs
+title: OPTNAMECHANGEPFN | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 147303f3-c7f1-438a-81b7-db891ea3d076
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8054094083b39a8f71ae9fe6fcb908b7af29a7a3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 31f46f8b392d5d3b37aed91a6867d80835be0d23
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53962765"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54963914"
 ---
 # <a name="optnamechangepfn"></a>OPTNAMECHANGEPFN
 這是呼叫中指定的回呼函式[SccSetOption](../extensibility/sccsetoption-function.md) (使用選項`SCC_OPT_NAMECHANGEPFN`) 並且用來傳達名稱所做的變更原始檔控制外掛程式傳回給 IDE。  

@@ -8,17 +8,17 @@ dev_langs:
 helpviewer_keywords:
 - importing form regions
 - form regions [Office development in Visual Studio], importing
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bfb7365d6e8d336d2cfae24286b6df087430e635
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: aeac6711691de4113ace572790df0bf6ac674dae
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53956175"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54870226"
 ---
 # <a name="walkthrough-import-a-form-region-that-is-designed-in-outlook"></a>逐步解說：匯入在 Outlook 中設計的表單區域
   本逐步解說示範如何在 Microsoft Office Outlook 中設計表單區域，然後使用 [新增表單區域精靈]  將表單區域匯入至 Outlook VSTO 增益集專案。 在 Outlook 中設計表單區域可讓您將原生 Outlook 控制項加入繫結至 Outlook 資料的表單區域。 匯入表單區域之後，即可處理每個控制項的事件。  
@@ -208,7 +208,7 @@ ms.locfileid: "53956175"
   
 ### <a name="to-test-the-form-region"></a>測試表單區域  
   
-1.  按下**F5**執行專案。  
+1.  按 **F5** 執行專案。  
   
      Outlook 啟動。  
   

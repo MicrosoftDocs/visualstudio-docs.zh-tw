@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 20c61f8a-d32d-47e2-9c67-bf721e2cbead
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2ba74b54e074a7522783e63c367586a943607857
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8cf55e2cf88b8cf6f92145ea7a75aa35a5f56486
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53838173"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54958585"
 ---
 # <a name="intellisense-hosting"></a>IntelliSense 裝載
 Visual Studio 可讓 IntelliSense 裝載。 IntellSense 裝載可讓您會提供 IntelliSense for Visual Studio 文字編輯器所未裝載的程式碼。  

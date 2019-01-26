@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 08526848-a442-4cd4-afa1-b2eac2005adb
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b62ffce08ecf5b6397bdda0b1f9fb6c1b83d7b63
-ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
+ms.openlocfilehash: 1bb57106bfbb1575cfdb13b1fa2d27054dbc7d81
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54154333"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54944315"
 ---
 # <a name="walkthrough-use-a-shell-command-with-an-editor-extension"></a>逐步解說：搭配編輯器擴充功能使用 shell 命令
 從 VSPackage，您可以將功能，例如功能表命令新增至編輯器。 本逐步解說示範如何加入在編輯器中文字檢視中的裝飾，藉由叫用功能表命令。  
@@ -687,7 +687,7 @@ ms.locfileid: "54154333"
   
 3.  在 **工具**功能表上，按一下**叫用加入 Adornment**。 球形文字說明應該會顯示 [文字] 視窗中，右邊，而且應該包含類似下列文字的文字。  
   
-     您的使用者名稱  
+     YourUserName  
   
      Fourscore...  
   

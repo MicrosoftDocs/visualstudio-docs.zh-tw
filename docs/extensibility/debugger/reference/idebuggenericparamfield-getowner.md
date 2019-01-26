@@ -1,5 +1,5 @@
 ---
-title: IDebugGenericParamField::GetOwner |Microsoft Docs
+title: IDebugGenericParamField::GetOwner | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: c7f6d166-a69e-40c4-bd0b-1a1fdf9aaacf
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a05bb61d10fe7e03e5f7a46939a2ac233fa723da
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9f95b8214bd1fb806308029b6889c09804c4a6e2
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53901499"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54929467"
 ---
 # <a name="idebuggenericparamfieldgetowner"></a>IDebugGenericParamField::GetOwner
 擷取此泛型參數的型別或方法擁有者。  

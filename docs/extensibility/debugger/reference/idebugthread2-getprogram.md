@@ -1,5 +1,5 @@
 ---
-title: IDebugThread2::GetProgram |Microsoft Docs
+title: IDebugThread2::GetProgram | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 8c9c5ea1-2031-472e-bc8f-30e22e754566
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 91f02a79950693c2bc0eadd5f8027b7a2ee8805d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fe6f4c4c4bbc11d8125262757216eb5c75e5dd48
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53905548"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54959628"
 ---
 # <a name="idebugthread2getprogram"></a>IDebugThread2::GetProgram
 取得執行緒正在執行的程式。  

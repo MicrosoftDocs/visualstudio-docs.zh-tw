@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 405488bb-1362-40ed-b0f1-04a57fc98c56
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9bf1b3f57fe82a4f5f6747c2667e0849f6ce6456
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 41f7708e9e10c1d5ec78354c137c5ee657575bd6
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53858019"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54927602"
 ---
 # <a name="project-subtypes-design"></a>設計專案子類型
 專案子類型可讓 Vspackage 擴充 Microsoft Build Engine (MSBuild) 為基礎的專案。 使用彙總可讓您重複使用的受管理的核心專案系統中實作大量[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]但仍然自訂特定案例的行為。  

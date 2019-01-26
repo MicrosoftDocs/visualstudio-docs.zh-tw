@@ -1,5 +1,5 @@
 ---
-title: IDebugPortEx2::GetProgram |Microsoft Docs
+title: IDebugPortEx2::GetProgram | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: cd83a111-bfd5-4eae-b576-526466c6b6ec
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 96303d8b98a573da1aa2f022d0fb66eda488ef00
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 68ee835f4c9aa81a79730f971a3c1a5885f14b31
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53951783"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54941837"
 ---
 # <a name="idebugportex2getprogram"></a>IDebugPortEx2::GetProgram
 取得與程式節點相關聯的程式。  

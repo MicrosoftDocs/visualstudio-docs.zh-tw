@@ -1,5 +1,5 @@
 ---
-title: IDebugThread2::Suspend |Microsoft Docs
+title: IDebugThread2::Suspend | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 1e20be85-aa12-48de-bb83-0bf0976e99ae
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b3037a91c838def73b559938128dba831ffe30ea
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 74d7214b8cc70f8fc844410cb22842ab4eea15e1
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53902171"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55069724"
 ---
 # <a name="idebugthread2suspend"></a>IDebugThread2::Suspend
 暫止的執行緒。  

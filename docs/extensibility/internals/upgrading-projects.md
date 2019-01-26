@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: e01cb44a-8105-4cf4-8223-dfae65f8597a
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2a02bdd92211003388ecd21e370a7a5f64da6227
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9a6f1d12e5735a0c285918c4621083bf6c1b6769
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53918634"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54949789"
 ---
 # <a name="upgrading-projects"></a>升級專案
 

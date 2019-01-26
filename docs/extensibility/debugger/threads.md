@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 2243d24a-c3d2-41d1-abbb-6db21a2db9ee
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0e53ca354bdf29dd004126a7de79b5d2648753f9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3ac9293807f280efff21fb8e8a5f97ed2cf0f96a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53889773"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54937505"
 ---
 # <a name="threads"></a>執行緒
 在偵錯工具架構中，*執行緒*:  

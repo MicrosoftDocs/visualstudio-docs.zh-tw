@@ -6,15 +6,15 @@ ms.topic: conceptual
 ms.assetid: c0df4b0d-52ef-4a6c-9676-1d8311aad7c7
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ed088de37bba8bfc7d74339d822e5ee0f6c058b4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1a161e2b354559eed220914842eaba73f20654b1
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53948832"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54917090"
 ---
 # <a name="how-to-get-an-overview-of-a-schema-set-using-the-graph-view"></a>HOW TO：取得使用 [圖形] 檢視設定的結構描述的概觀
 

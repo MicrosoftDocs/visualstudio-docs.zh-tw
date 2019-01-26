@@ -6,15 +6,15 @@ ms.topic: reference
 ms.assetid: 9dbb34d9-02ea-4201-b445-c98a0eb0d6db
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a89e6f12cb3e061abc4ebbe30cfe8d3a92138df6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 46f832992b85c181738f11976e7fb0f59de1bd89
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53913306"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54920891"
 ---
 # <a name="xml-document-properties-properties-window"></a>屬性視窗、 XML 文件屬性
 
@@ -45,7 +45,7 @@ ms.locfileid: "53913306"
 
  亦可輸入結構描述的路徑。 如果指定多個結構描述，則每個結構描述路徑都必須包含在雙引號中。
 
- **樣式表**
+ **Stylesheet**
 
  用來轉換文件的 XSLT 檔案時**顯示 XSLT 輸出**命令可用。 如果此欄位為空白時**顯示 XSLT 輸出**命令時，編輯器使用中提供的值`xml-stylesheet`處理指示的文件，它會提示您輸入檔案名稱。
 

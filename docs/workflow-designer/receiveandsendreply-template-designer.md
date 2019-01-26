@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: d1d9a058-df7e-48f5-a2e7-3caeeba7eaa6
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1b62da812773795ff89e1beb87af6364c8baee14
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e1df2b68729304068d308fe9ab7dcfe32c72bccd
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53915042"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54929729"
 ---
 # <a name="receiveandsendreply-template-designer"></a>ReceiveAndSendReply 樣板設計工具
 

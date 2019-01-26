@@ -10,21 +10,21 @@ helpviewer_keywords:
 ms.assetid: 558e3d41-0db5-4c44-82bb-6bb87892b093
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: aacda209865ee9e7d9eae48a93be7e23f16c26ec
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d649bc3258275d46a57ce880b1401672b05577b6
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53912726"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54950598"
 ---
 # <a name="folder-element-visual-studio-project-templates"></a>Folder 元素 （Visual Studio 專案範本）
 指定將會加入至專案的資料夾。  
   
- \<VSTemplate >  
- \<TemplateContent >  
+ \<VSTemplate>  
+ \<TemplateContent>  
  \<Project>  
  \<資料夾 >  
   
@@ -52,7 +52,7 @@ ms.locfileid: "53912726"
 |項目|描述|  
 |-------------|-----------------|  
 |`Folder`|指定要加入至專案的資料夾。 `Folder` 項目可以包含子`Folder`項目。|  
-|[專案項目](../extensibility/projectitem-element-visual-studio-item-templates.md)|指定要加入至專案的檔案。|  
+|[ProjectItem](../extensibility/projectitem-element-visual-studio-item-templates.md)|指定要加入至專案的檔案。|  
   
 ### <a name="parent-elements"></a>父元素  
   

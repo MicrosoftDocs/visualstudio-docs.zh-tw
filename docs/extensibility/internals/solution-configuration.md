@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: f22cfc75-3e31-4e0d-88a9-3ca99539203b
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ec88e383c7ad0a74699f984691d337da7d6a2cac
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 831a35fe910a906a29e8b0a6a48377efb3569b11
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53835024"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54937882"
 ---
 # <a name="solution-configuration"></a>方案組態
 方案組態儲存方案層級屬性。 這些指示的行為**開始**(F5) 索引鍵和**建置**命令。 根據預設，這些命令會建置，並開始偵錯組態。 這兩個命令的方案組態的內容中執行。 這表示使用者可以預期 F5 來啟動和任何使用中方案已透過設定的組建。 環境被設計來建置和執行時，最佳化解決方案，而不是專案中。  

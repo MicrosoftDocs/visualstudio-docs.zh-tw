@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: f97223ce-1d39-4134-81c9-fff2c75d979b
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dac680369c8dc7025de26c83e2e680b2c5057f7d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 931c4b29bd5f90b23492cba854644435a7e99bc5
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53845333"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54980878"
 ---
 # <a name="naming-warnings"></a>命名警告
 命名警告支援遵循.NET Framework 設計方針的命名慣例。

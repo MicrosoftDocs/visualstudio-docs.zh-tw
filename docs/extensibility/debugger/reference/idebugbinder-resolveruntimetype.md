@@ -1,5 +1,5 @@
 ---
-title: IDebugBinder::ResolveRuntimeType |Microsoft Docs
+title: IDebugBinder::ResolveRuntimeType | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 6456ab3e-1c03-4f3c-91f9-16797ab7f5e7
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f9224314d1417f08bbf025d774c1ecc8ac706e05
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9b9636dce4c964afcc5f160ed5a08825d96d597b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53852514"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54970353"
 ---
 # <a name="idebugbinderresolveruntimetype"></a>IDebugBinder::ResolveRuntimeType
 這個方法會判斷物件的執行階段型別。  

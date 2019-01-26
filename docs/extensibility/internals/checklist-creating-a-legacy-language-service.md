@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 8b73b341-a33a-4ab5-9390-178c9e563d2d
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a37909dd9648f6bac7e0b9bbbe8483244e6ed2b3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 03b784e10e7f5bb604431625be6467cdee25bd0f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53821110"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54944095"
 ---
 # <a name="checklist-create-a-legacy-language-service"></a>檢查清單：建立舊版語言服務
 下列檢查清單摘要說明您必須採取才能建立語言服務的基本步驟[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]核心編輯器。 若要整合到您的語言服務[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]，您必須建立偵錯運算式評估工具。 如需詳細資訊，請參閱 <<c0> [ 撰寫 CLR 運算式評估工具](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)中[Visual Studio 偵錯工具擴充性](../../extensibility/debugger/visual-studio-debugger-extensibility.md)。  

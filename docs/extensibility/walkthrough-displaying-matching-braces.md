@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 5af08ac7-1d08-4ccf-997e-01aa6cb3d3d7
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a048ce1e89de65e805d01971de5c4221b13be826
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 14dfc5237f505306c28954a93eb848673f0d3387
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53956572"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54936095"
 ---
 # <a name="walkthrough-display-matching-braces"></a>逐步解說：顯示對稱的括號
 實作語言為基礎的功能，例如，定義您想要比對，請在大括的號，並插入號是其中一個大括號時，將文字標記標記新增至對稱的括號比對的大括號。 您可以定義一種語言的內容中的大括號、 定義您自己的副檔名和內容類型，和套用的標籤為輸入，或將標記套用至現有的內容類型 （例如 「 文字 」）。 下列逐步解說示範如何套用至"text"的內容類型的標籤進行比對的大括號。  

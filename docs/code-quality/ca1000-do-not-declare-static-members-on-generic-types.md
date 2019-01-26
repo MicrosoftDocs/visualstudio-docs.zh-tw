@@ -12,18 +12,18 @@ helpviewer_keywords:
 ms.assetid: 5c0da594-f8d0-4f40-953d-56bf7fbd2087
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: f4f0a21f685cc4ff1edc54aa8002d6ecb3c28b9c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f15fc2bf7a8bc4e7e47efaad351ac33638195afd
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53890517"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54971750"
 ---
 # <a name="ca1000-do-not-declare-static-members-on-generic-types"></a>CA1000：不要在泛型類型上宣告靜態成員
 

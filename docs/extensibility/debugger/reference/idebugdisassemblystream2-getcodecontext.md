@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: a6d0ae82-7617-4915-9713-369abe3e2e53
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0910490ee6e75aeffe1e07f54b5b106440296efa
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 93f43cc63123b61ed94eaab638e82620095b7ea0
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53850121"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54949733"
 ---
 # <a name="idebugdisassemblystream2getcodecontext"></a>IDebugDisassemblyStream2::GetCodeContext
 傳回對應至指定的程式碼位置識別碼的程式碼內容物件。  

@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 97c48c49-3fb2-4778-accd-8585fa4feabf
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1d0c6d2e8fbe9a26a8d38351d0e6e423b1c0de5e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fc6ae64c94d6f75d7878a8e224e28179d867b847
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53961355"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54922036"
 ---
 # <a name="asyncvoidmethodbuilderobjectidfordebugger-property"></a>AsyncVoidMethodBuilder.ObjectIdForDebugger 屬性
 取得物件，可用來唯一識別這個產生器偵錯工具。  

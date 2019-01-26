@@ -1,5 +1,5 @@
 ---
-title: IDebugObject2::GetField |Microsoft Docs
+title: IDebugObject2::GetField | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: add6a6b5-e752-47dd-9613-29206ea809b0
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8c0380b3c51c1049cd1edc3185d5901b98abd9eb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6779f3911da6164401ec98cd2d0167ba760df95a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53953464"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54933733"
 ---
 # <a name="idebugobject2getfield"></a>IDebugObject2::GetField
 取得這個物件的型別。  

@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 743f0af7-41d1-4852-8d97-af0688b31118
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a566518d41a37e12ce20188bfe84c02a6cabcf9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 77b256ddaff769263bcc56891ca7c0ad2be30d0c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53890189"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54979695"
 ---
 # <a name="ca1822-mark-members-as-static"></a>CA1822:將成員標記為 static
 
@@ -28,7 +28,7 @@ ms.locfileid: "53890189"
 |-|-|
 |TypeName|MarkMembersAsStatic|
 |CheckId|CA1822|
-|類別|Microsoft.Performance|
+|分類|Microsoft.Performance|
 |中斷變更|非中斷-成員不是組件外部可見不論有變更您進行。 非中斷-如果您只要變更成員的執行個體成員為`this`關鍵字。<br /><br /> 中斷-如果您將成員從執行個體成員變更為靜態成員，而且它是組件外部可見。|
 
 ## <a name="cause"></a>原因

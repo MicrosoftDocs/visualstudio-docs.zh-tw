@@ -13,15 +13,15 @@ helpviewer_keywords:
 - form regions [Office development in Visual Studio], message classes
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5795931b5d964b6eb7a104338756066068f38510
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5ac0b74981b7e4a364bbc551be132b79cc432448
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53923344"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54875819"
 ---
 # <a name="associate-a-form-region-with-an-outlook-message-class"></a>Outlook 訊息類別相關聯的表單區域
   您可以指定哪些 Microsoft Office Outlook 項目顯示表單區域的表單區域關聯至每個項目的訊息類別。 例如，如果您想要的郵件項目底部附加表單區域，您可以將表單區域`IPM.Note`訊息類別。  

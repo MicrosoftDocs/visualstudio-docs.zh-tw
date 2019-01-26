@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 1af376e3-3be7-4445-803b-76a858567a5b
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d9c57b9e0afb443c8ec808dbd2908c1b8b7031aa
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 41de42c02916165d9c0be91c6af5076279e0b4d4
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53892503"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54922239"
 ---
 # <a name="version-compatibility-for-code-analysis-check-in-policies"></a>程式碼分析簽入原則的版本相容性
 

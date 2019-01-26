@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 50234537-9e95-4b7e-9cb7-e5cf26d6e9d2
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fa350ff37a5073a5def0140db694b53c9fdf5067
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fa203c04c897a59a6b48471cb792a5680fe2e375
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53909797"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55013739"
 ---
 # <a name="add-a-shortcut-menu-in-a-tool-window"></a>工具視窗中加入快顯功能表
 本逐步解說會置於工具視窗中的捷徑功能表。 快顯功能表是在使用者以滑鼠右鍵按一下按鈕、 文字方塊或視窗背景時出現。 快顯功能表上的命令行為與其他功能表或工具列上的命令相同。 若要支援快顯功能表，指定在 *.vsct*檔案，並顯示以回應滑鼠的按一下滑鼠右鍵。  

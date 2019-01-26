@@ -13,15 +13,15 @@ helpviewer_keywords:
 - generating code
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 60ebc9047280f228aa95aeaaddf83281d2020efc
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2c3f4e654c5bcaf373d8358201c856cc8667043d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53930644"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55034468"
 ---
 # <a name="code-generation-and-t4-text-templates"></a>程式碼產生和 T4 文字範本
 

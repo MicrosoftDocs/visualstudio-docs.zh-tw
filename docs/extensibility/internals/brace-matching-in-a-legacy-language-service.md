@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 4e3d0a70-f22f-49dd-92d8-edf48ab62b52
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5f1c69a280e84a3c444c371bef5c99c7a3c17506
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: cceac8f2eb6842166f9c73f6374f4f1923cf3831
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53910031"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54920028"
 ---
 # <a name="brace-matching-in-a-legacy-language-service"></a>舊版語言服務中的比對的大括號
 大括號比對，可協助開發人員追蹤發生在一起，例如括號和大括號所需要的語言項目。 當開發人員輸入右括號時，左括號會反白顯示。  

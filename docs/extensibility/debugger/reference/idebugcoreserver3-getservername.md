@@ -1,5 +1,5 @@
 ---
-title: IDebugCoreServer3::GetServerName |Microsoft Docs
+title: IDebugCoreServer3::GetServerName | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 0fc3fcf5-d6a3-4a00-bf14-458b8645714e
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ea67af3c46e69373ab361b5e12cc8c7ad1a87f7f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a8afdea003b03f3cc8e19aa4373034bc9322c167
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53866760"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54917390"
 ---
 # <a name="idebugcoreserver3getservername"></a>IDebugCoreServer3::GetServerName
 擷取伺服器的名稱。  

@@ -12,18 +12,18 @@ helpviewer_keywords:
 ms.assetid: fa0e5029-79e9-4a33-8576-787ac3c26c39
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d82795669bb1d490af3f78c8d1f1d35afe2b3e7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 56deb12f98767a62aed55f4e979ff666200ea044
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53885381"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54995137"
 ---
 # <a name="ca1500-variable-names-should-not-match-field-names"></a>CA1500:變數名稱不應該與欄位名稱相符
 

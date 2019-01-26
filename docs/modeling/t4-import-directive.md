@@ -4,16 +4,16 @@ ms.date: 11/04/2016
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 6df6b3f4677e53fd2105d616a4be42156848504b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6b7eed6a8280bda3b53dd43633005ebb45e58514
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53842222"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54945420"
 ---
 # <a name="t4-import-directive"></a>T4 匯入指示詞
 

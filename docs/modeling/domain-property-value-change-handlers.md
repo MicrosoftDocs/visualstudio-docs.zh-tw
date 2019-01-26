@@ -6,16 +6,16 @@ helpviewer_keywords:
 - Domain-Specific Language, overriding event handlers
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 8a682563355d37441b093db7c2e1575bf2584464
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8366ff055a9f4e92706b05b0790b8fdf37a1b6e3
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53941660"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54954718"
 ---
 # <a name="domain-property-value-change-handlers"></a>網域屬性值變更處理常式
 

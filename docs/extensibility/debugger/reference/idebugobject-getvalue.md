@@ -1,5 +1,5 @@
 ---
-title: IDebugObject::GetValue |Microsoft Docs
+title: IDebugObject::GetValue | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: eec6051e-8ecb-49fa-bdd4-dd786f211692
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 98dd9208fe28fd433a201e4d59f8dcc0af694b08
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0e2c41cc81a27e46e74298d78ff9836ef74a8bff
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53914153"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54941901"
 ---
 # <a name="idebugobjectgetvalue"></a>IDebugObject::GetValue
 取得物件的值做為一系列連續的位元組。  

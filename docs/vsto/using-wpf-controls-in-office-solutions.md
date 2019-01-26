@@ -7,17 +7,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - WPF [Office development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 49b4d2fd4a32b6d73e5fcdfc65850abcb2835856
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 70c77e3b093947703680ab7253fdee0a6c3d60cd
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53822271"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54869758"
 ---
 # <a name="use-wpf-controls-in-office-solutions"></a>在 Office 方案中使用 WPF 控制項
 

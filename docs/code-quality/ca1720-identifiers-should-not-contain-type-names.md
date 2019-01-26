@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: c95ee48f-f23a-45f0-ac9e-a3c1ecfabdea
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7dd351368ddb66cb389eee12b23dcff91b0653ce
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 06d56b2d3ae58a3cb24042c4bd4befdd2b92bae3
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53912265"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55037209"
 ---
 # <a name="ca1720-identifiers-should-not-contain-type-names"></a>CA1720:識別項名稱不應該包含類型名稱
 
@@ -73,15 +73,15 @@ ms.locfileid: "53912265"
 
 - 浮動
 
-- float32
+- Float32
 
-- float64
+- Float64
 
 此外，參數的名稱也使核對下列的語言無關的資料型別名稱，不區分大小寫的方式：
 
 - Object
 
-- obj
+- Obj
 
 - Boolean
 

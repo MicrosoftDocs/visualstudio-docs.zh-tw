@@ -8,15 +8,15 @@ f1_keywords:
 ms.assetid: 777b1310-6e16-4413-b4ee-5f3136304f82
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ea3149d2fb01b447bd2c539f7de0d440a36fe91
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 498e9e08ae15b5aa6d83bb746b7b425426b5f353
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53825759"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54946045"
 ---
 # <a name="ca2144-transparent-code-should-not-load-assemblies-from-byte-arrays"></a>CA2144:透明程式碼不可以從位元組陣列載入組件
 

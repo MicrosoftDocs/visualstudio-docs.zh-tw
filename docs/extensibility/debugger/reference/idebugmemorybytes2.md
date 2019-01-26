@@ -1,5 +1,5 @@
 ---
-title: IDebugMemoryBytes2 |Microsoft Docs
+title: IDebugMemoryBytes2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: d7647575-0e06-4190-88f5-ca40b82209a4
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8a738ecb042fa423cf165a42a9d472e06f23648d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2a9434f7464d4c13d0c4085a3ad195ba8b1bd2f3
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53887181"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55007577"
 ---
 # <a name="idebugmemorybytes2"></a>IDebugMemoryBytes2
 此介面代表記憶體位元組。  

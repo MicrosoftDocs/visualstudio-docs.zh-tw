@@ -1,5 +1,5 @@
 ---
-title: DEBUG_CUSTOM_VIEWER |Microsoft Docs
+title: DEBUG_CUSTOM_VIEWER | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 8e0ef3f0-0107-48e8-a037-6e52b4c4ed9d
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 23e1dc26a3f8d1031357715b39ce6e2d2e485d1f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2e72aecc477901ee7e8a4658c881fb14681362e3
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53906835"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55000072"
 ---
 # <a name="debugcustomviewer"></a>DEBUG_CUSTOM_VIEWER
 識別自訂檢視器的結構，或輸入視覺化檢視。  

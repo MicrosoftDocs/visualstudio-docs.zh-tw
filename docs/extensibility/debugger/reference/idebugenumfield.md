@@ -1,5 +1,5 @@
 ---
-title: IDebugEnumField |Microsoft Docs
+title: IDebugEnumField | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 42f685bf-0f39-47f4-98b0-6022efe2bf97
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6329d9efcc306115e1ceb7f4070d1bba1fbd01da
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4df4e61b570460daca88bb65b38d5c681a5bea59
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53913275"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54930221"
 ---
 # <a name="idebugenumfield"></a>IDebugEnumField
 這個介面表示列舉型別。  

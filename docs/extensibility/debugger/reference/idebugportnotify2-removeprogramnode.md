@@ -1,5 +1,5 @@
 ---
-title: IDebugPortNotify2::RemoveProgramNode |Microsoft Docs
+title: IDebugPortNotify2::RemoveProgramNode | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 3668157b-66d2-416e-a359-fc04dcd18a48
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d837d349f17c78d3140f9516b1950a3415e30b89
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: cc35d18ff089ca03880abc68a2a4e83a852550f4
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53879104"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54933824"
 ---
 # <a name="idebugportnotify2removeprogramnode"></a>IDebugPortNotify2::RemoveProgramNode
 取消註冊才能進行偵錯連接埠上執行的程式。  

@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 74652e1b-fcfa-421b-aa9f-fbc081d3b476
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a01b4fd1a6c855ce43cc332c8e4b4b01c69140fd
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9c06100e666d73341753b6268180224d277e3608
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53896340"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54916484"
 ---
 # <a name="bitmaps-element"></a>Bitmaps 元素
 群組[點陣圖項目](../extensibility/bitmap-element.md)項目。  

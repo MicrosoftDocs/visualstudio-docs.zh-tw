@@ -1,5 +1,5 @@
 ---
-title: IDebugProgram2::Continue |Microsoft Docs
+title: IDebugProgram2::Continue | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,21 +9,21 @@ helpviewer_keywords:
 ms.assetid: e5a6e02a-d21b-4a03-a034-e8de1f71ce2e
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 66e5b607588ff10f94db46b86667acc0ae968a16
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 225a1d78e3fb6610d9cbcebd1253131f0fe9caf2
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53938097"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55028533"
 ---
 # <a name="idebugprogram2continue"></a>IDebugProgram2::Continue
 會繼續執行此程式從已停止的狀態。 會保留任何先前的執行狀態 （例如在步驟），並在程式啟動重新執行。  
   
 > [!NOTE]
->  這個方法已被取代。 使用[繼續](../../../extensibility/debugger/reference/idebugprocess3-continue.md)方法改為。  
+>  這個方法已淘汰。 使用[繼續](../../../extensibility/debugger/reference/idebugprocess3-continue.md)方法改為。  
   
 ## <a name="syntax"></a>語法  
   

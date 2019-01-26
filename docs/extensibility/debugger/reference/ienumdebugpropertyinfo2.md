@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugPropertyInfo2 |Microsoft Docs
+title: IEnumDebugPropertyInfo2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: fdea8262-40b8-473e-88ba-639e4c4648e6
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: adc70944150a7dabe8d6925eb26005b5c3b2eaca
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0eecb16ce4eecf4e39163a82c3aed48d35db6af2
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53883976"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54933967"
 ---
 # <a name="ienumdebugpropertyinfo2"></a>IEnumDebugPropertyInfo2
 此介面列舉[DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md)結構。  

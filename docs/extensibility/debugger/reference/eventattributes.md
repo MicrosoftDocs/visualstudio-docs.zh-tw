@@ -1,5 +1,5 @@
 ---
-title: EVENTATTRIBUTES |Microsoft Docs
+title: EVENTATTRIBUTES | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 04db10f7-df31-4464-98e8-b3777428179e
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e9019735feebeded0150d3d5421ed3056716ff84
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 60bd3296ed3c610b238abf00d90781b6e0067d72
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53947110"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54953821"
 ---
 # <a name="eventattributes"></a>EVENTATTRIBUTES
 指定事件屬性。  

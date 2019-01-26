@@ -8,15 +8,15 @@ f1_keywords:
 ms.assetid: f523ad47-bbc0-4cda-a35c-41e67c4ba081
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 86948845f2537f0785daeebbc349292891a7a3e2
-ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
+ms.openlocfilehash: 29b7cc9d61f7be551e5b53e053a86586bab8708b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/14/2019
-ms.locfileid: "54269861"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54916265"
 ---
 # <a name="pickbranch-activity-designer"></a>PickBranch 活動設計工具
 

@@ -6,15 +6,15 @@ ms.topic: conceptual
 ms.assetid: 193b195f-e918-4c79-a1a1-8096a1433bde
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d675695b3d3e054d14e481c8c41ae06de5af5600
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c2425febfe13aef2797c78251f53a244445be175
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53820195"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55026005"
 ---
 # <a name="how-to-create-an-xml-document-based-on-an-xsd-schema"></a>HOW TO：建立根據 XSD 結構描述的 XML 文件
 

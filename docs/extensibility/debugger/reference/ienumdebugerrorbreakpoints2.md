@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugErrorBreakpoints2 |Microsoft Docs
+title: IEnumDebugErrorBreakpoints2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: ffdad73d-969a-45ef-9ad1-7f5d3b814018
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0e193c0174bd5327843e93c95ff5cb50156ce08f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ac234aca006136068d1fc348627ce0003130ea89
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53841207"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55009319"
 ---
 # <a name="ienumdebugerrorbreakpoints2"></a>IEnumDebugErrorBreakpoints2
 此介面列舉暫止中斷點相關聯的錯誤中斷點。  

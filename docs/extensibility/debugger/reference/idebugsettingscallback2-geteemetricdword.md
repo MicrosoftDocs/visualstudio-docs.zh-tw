@@ -1,5 +1,5 @@
 ---
-title: IDebugSettingsCallback2::GetEEMetricDword |Microsoft Docs
+title: IDebugSettingsCallback2::GetEEMetricDword | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: c5f8f417-0ef0-4fd0-a779-b0a8ead4effe
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: baec613bf899f432ca9859aba70a2018fdc9d2e2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e5f090d2000c26ff1fc0e008c46e6988430755d2
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53854369"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54935380"
 ---
 # <a name="idebugsettingscallback2geteemetricdword"></a>IDebugSettingsCallback2::GetEEMetricDword
 擷取對應至的運算式評估工具的指定計量的值。  

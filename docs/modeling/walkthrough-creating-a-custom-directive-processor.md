@@ -7,19 +7,19 @@ helpviewer_keywords:
 - walkthroughs [text templates], directive processor
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 44eb71a4bbb209453ee7deef6adf3b10c561e8af
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a4b5a832be03280ce41cad1930e55d4b88e18a40
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53951822"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54932424"
 ---
 # <a name="walkthrough-create-a-custom-directive-processor"></a>逐步解說：建立自訂指示詞處理器
 

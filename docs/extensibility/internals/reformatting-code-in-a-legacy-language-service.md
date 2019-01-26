@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 08bb3375-8fef-4f4e-9efa-0d7333bab0eb
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a9631027f980c3722498979411598d4f6b066217
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 44d4eecf22a63c33f65f19e9dc75f82fccb77642
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53897290"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54927537"
 ---
 # <a name="reformatting-code-in-a-legacy-language-service"></a>在舊版語言服務中將程式碼重新格式化
 

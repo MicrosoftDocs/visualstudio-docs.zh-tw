@@ -1,5 +1,5 @@
 ---
-title: IDebugObject::GetSize |Microsoft Docs
+title: IDebugObject::GetSize | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 89af423b-36eb-479d-b2de-2693455eca15
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ace264318a22dc1f186b75e68cd4dd590a633067
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7abb6278bb22c593cbe5832d00d7226f4498c851
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53913984"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55001822"
 ---
 # <a name="idebugobjectgetsize"></a>IDebugObject::GetSize
 取得物件的大小，以位元組為單位。  

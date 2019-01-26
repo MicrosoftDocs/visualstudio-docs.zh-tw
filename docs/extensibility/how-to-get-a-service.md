@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 1f000020-8fb7-4e39-8e1e-2e38c7fec3d4
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 635a02daf6f6501679cc2a38cd252b1e1ebec7a1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e848b3e54d1e3beb6b9681112cd55b74caa6a482
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53990025"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54949854"
 ---
 # <a name="how-to-get-a-service"></a>HOW TO：取得服務
 您通常需要取得 Visual Studio 服務，以存取不同的功能。 一般情況下，Visual Studio 服務提供您可以使用的一或多個介面。 您可以從 VSPackage 取得大部分的服務。  
@@ -39,7 +39,7 @@ ms.locfileid: "53990025"
   
    ```  
   
-    此程式碼取得 SVsActivityLog 服務，並將它轉換成<xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog>介面，可用來寫入活動記錄檔。 如需範例，請參閱[How to:使用活動記錄](../extensibility/how-to-use-the-activity-log.md)。  
+    此程式碼取得 SVsActivityLog 服務，並將它轉換成<xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog>介面，可用來寫入活動記錄檔。 如需範例，請參閱[如何：使用活動記錄](../extensibility/how-to-use-the-activity-log.md)。  
   
 4. 建置此專案並開始偵錯。 實驗執行個體隨即出現。  
   

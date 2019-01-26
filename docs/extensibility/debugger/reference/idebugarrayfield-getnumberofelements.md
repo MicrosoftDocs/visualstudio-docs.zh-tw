@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: a1961ef3-d69d-4022-b8c9-b9cfb9811345
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a7aff8a24c53bdc2d571d9b09ee3605153478982
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a228c0f9a213ecd12cafe09460288c1b60c333e3
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53928207"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54985064"
 ---
 # <a name="idebugarrayfieldgetnumberofelements"></a>IDebugArrayField::GetNumberOfElements
 取得陣列中的項目數。  

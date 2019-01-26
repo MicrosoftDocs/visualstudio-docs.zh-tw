@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 187d24ed-9f9a-4418-a0ef-b8a19f54652c
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 65ec7a4b1237d98f2693dbb136f712e39041f935
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e970689248dd6de163c68e8c3854f55bc428eef4
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53967809"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54974824"
 ---
 # <a name="idebugenginecreateevent2getengine"></a>IDebugEngineCreateEvent2::GetEngine
 擷取物件，表示新建立的偵錯引擎 (DE)。  

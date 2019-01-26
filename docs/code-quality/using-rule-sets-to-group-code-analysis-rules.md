@@ -9,15 +9,15 @@ helpviewer_keywords:
 - code analysis, rule sets
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8dc70348ef2fe5826339bd58e1db17574449ff6c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4095ee54dd724056ad976f0be2591113337a5341
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53885151"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55009653"
 ---
 # <a name="use-rule-sets-to-group-code-analysis-rules"></a>使用規則集分組程式碼分析規則
 

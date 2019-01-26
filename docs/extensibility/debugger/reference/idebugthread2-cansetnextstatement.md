@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 7014af80-ff4f-4790-a34b-0528918d1fa3
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dcb5ef43f30ca40454cde19a2afde229de6a9ea3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7cee011efedff2cec442e386f32c66d1398b35d3
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53924432"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54933603"
 ---
 # <a name="idebugthread2cansetnextstatement"></a>IDebugThread2::CanSetNextStatement
 判斷目前指令指標是否可以設定特定的堆疊框架。  

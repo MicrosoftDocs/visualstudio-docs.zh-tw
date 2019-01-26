@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 740ca4ec-79fa-4b98-8f9a-2a137f9f7f98
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8a8a7d17161b6d14926232f66905d7556a244e29
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 35266ff23d93e0dbdfbe6a2be14631db5c0629e5
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53874546"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54972702"
 ---
 # <a name="groups-element"></a>Groups 元素
 包含定義 VSPackage 的命令群組的項目。  
@@ -37,16 +37,16 @@ ms.locfileid: "53874546"
   
 |屬性|描述|  
 |---------------|-----------------|  
-|條件|選擇項。 請參閱[條件式屬性](../extensibility/vsct-xml-schema-conditional-attributes.md)。|  
+|條件|選擇性。 請參閱[條件式屬性](../extensibility/vsct-xml-schema-conditional-attributes.md)。|  
   
-### <a name="child-elements"></a>項目子系  
+### <a name="child-elements"></a>子元素  
   
 |項目|描述|  
 |-------------|-----------------|  
 |[群組項目](../extensibility/group-element.md)|表示單一命令群組。|  
 |[Groups 元素](../extensibility/groups-element.md)|包含定義 VSPackage 的命令群組的項目。|  
   
-### <a name="parent-elements"></a>父項目  
+### <a name="parent-elements"></a>父元素  
   
 |元素|描述|  
 |-------------|-----------------|  

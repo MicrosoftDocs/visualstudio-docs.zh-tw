@@ -10,15 +10,15 @@ helpviewer_keywords:
 - Excel [Office development in Visual Studio], closing workbooks
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 01f188af2ae96cf8622f3614da493891e3dbabe4
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: 187baa6805050507e8f824593a5b1b4f02666c46
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54093141"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54864887"
 ---
 # <a name="how-to-programmatically-close-workbooks"></a>HOW TO：以程式設計方式關閉活頁簿
   您可以關閉現用活頁簿，或是指定要關閉的活頁簿。  

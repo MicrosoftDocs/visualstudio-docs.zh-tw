@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 6b909f93-d7f5-4aec-81c6-ee9ff0f31638
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9bf60283dd56268ff7b47b5f0e81ebb23ee28197
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7ca4723d24c45a11422eae4b7d8b288671e0b921
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53930618"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55041083"
 ---
 # <a name="registering-project-and-item-templates"></a>註冊專案和項目範本
 專案類型都必須註冊其專案和專案項目範本的所在位置的目錄。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 使用您的專案類型相關聯的註冊資訊來判斷要顯示在**加入新的專案**並**加入新項目**對話方塊。  
@@ -111,7 +111,7 @@ ms.locfileid: "53930618"
 
  \Form  
 
- \Web 頁面  
+ \Web Page  
 
  \HelperFiles （包含多個檔案的專案項目中使用的檔案）  
 

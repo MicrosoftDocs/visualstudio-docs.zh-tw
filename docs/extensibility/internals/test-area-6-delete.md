@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 6f2e872c-5ba2-4303-9f50-a90cef9a6225
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3fff473dbd4e3bc70f1b6308ed0d6b1129c95e2c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3eb1615768a195fc6a5abd7e4aedd992907b794e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53930096"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54966461"
 ---
 # <a name="test-area-6-delete"></a>測試區域 6︰刪除
 此原始檔控制外掛程式的測試區域涵蓋刪除動作。  

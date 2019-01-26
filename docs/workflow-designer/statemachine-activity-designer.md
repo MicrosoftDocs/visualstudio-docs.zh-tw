@@ -8,16 +8,16 @@ f1_keywords:
 - System.Activities.Statements.StateMachine.UI
 ms.assetid: 474d5fb3-1049-4b3f-bc6b-7524dbbe1672
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 082d8ac24977996195f48a205650659acc61db9f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 52cbd0e27934d5d13c0e83c6c8e3e87281aa1b5a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53922977"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54972897"
 ---
 # <a name="statemachine-activity-designer"></a>StateMachine 活動設計工具
 

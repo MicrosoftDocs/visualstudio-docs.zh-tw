@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 2a5f04b8-6c65-4232-bddd-9093653a22c4
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2048fe77987da864271412d7bc72d68191f9e396
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1fa8d900505545432bc74584b0325de8725dc815
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53823148"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54922726"
 ---
 # <a name="sample-implementation-of-expression-evaluation"></a>運算式評估的範例實作
 > [!IMPORTANT]

@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 2b0eb705-fe94-4ca8-93e0-9dbd8ce61a44
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6a9de111a1747e9f5451bff2c8bd3e5edf171d9a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5dffffd8f2857dbb048b829cec0d2e7847a05c5f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53833603"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55021136"
 ---
 # <a name="how-to-host-an-editor-in-another-editor"></a>HOW TO：裝載在其他編輯器中的編輯器
 

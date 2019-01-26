@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugPropertyInfo2::Reset |Microsoft Docs
+title: IEnumDebugPropertyInfo2::Reset | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: fa4201c1-4633-4596-93aa-bd415c4ed71a
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c6a2a5286d36b382a802ecce3c0d101e7ac5a44f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f49b1ca747e1b8ae17ffdd9837c7c061e51e1431
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53830345"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55068871"
 ---
 # <a name="ienumdebugpropertyinfo2reset"></a>IEnumDebugPropertyInfo2::Reset
 將列舉重設第一個項目。  

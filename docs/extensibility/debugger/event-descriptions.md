@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 09f61652-7e16-4bb0-8055-f61a84bf384e
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4349a1f994612406110f2cefdb0b80358895d269
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 096d73c46ce53d05ec00fc8ba206bd8d7b20f390
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53989853"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54922687"
 ---
 # <a name="event-descriptions"></a>事件描述
 事件的每個類型都有特定的用途。  

@@ -8,15 +8,15 @@ f1_keywords:
 ms.assetid: 7a775285-42d2-4f13-8434-3fdb0deeebe6
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 61f41a47b7fbb27e1811bd2c9888baf01143a50f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2b306711bac791ff8d460da1f25e8a73c70f388b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53904097"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55069235"
 ---
 # <a name="ca2135-level-2-assemblies-should-not-contain-linkdemands"></a>CA2135:層級 2 組件不應該包含 LinkDemand
 

@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 8c59217f-56e5-4540-a73b-cd10de189373
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c89f38c98047a8fab57317c491c051474995f472
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8315626f346a96d907686e009af006e2170e072c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53963653"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54929545"
 ---
 # <a name="add-project-and-project-item-templates"></a>將專案和專案項目範本
 當您建立您自己的專案類型時，您必須提供支援加入新的專案和專案項目使用標準[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]整合式開發環境 (IDE) 對話方塊。 下列主題討論不同的技術，讓您新增的專案和專案項目。  
