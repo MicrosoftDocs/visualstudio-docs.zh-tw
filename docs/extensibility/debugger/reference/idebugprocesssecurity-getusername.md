@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: c73c60ac-da6e-45ae-8f04-95353a24ca3e
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fd3f7133652cf048bb1b4c7a2e7d4886b1c79a2b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0922dc458bb836fd579dd4281be4cfbaf9b522f3
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53931086"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54958091"
 ---
 # <a name="idebugprocesssecuritygetusername"></a>IDebugProcessSecurity::GetUserName
 從連接埠提供者取得的使用者名稱。  

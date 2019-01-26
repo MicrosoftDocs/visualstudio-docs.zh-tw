@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 2ba5ef0c-395e-4006-9e3c-9b06e1d711d0
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1db2786de20bdb845fb40ed37d4d97f49b718b3c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0793253891a99a03b26d656a8462358eca09b92d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53908497"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54992005"
 ---
 # <a name="idebugclassfieldenumnestedclasses"></a>IDebugClassField::EnumNestedClasses
 建立此類別中巢狀類別的列舉值。  

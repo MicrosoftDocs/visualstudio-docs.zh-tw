@@ -8,22 +8,22 @@ helpviewer_keywords:
 ms.assetid: 51a91963-8a3f-4741-928e-bc90c11473bb
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: caf618ab0f6908f994f9f297dfb057bdf8afd1a0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b4363d5317e3b07f8d32c754336eeed04ec3ced5
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53925611"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55037963"
 ---
 # <a name="enableeditoflocationfield-element-visual-studio-templates"></a>EnableEditOfLocationField 元素 （Visual Studio 範本）
 指定使用者是否可以編輯 [位置] 欄位。  
   
- \<VSTemplate >  
- \<TemplateData >  
- \<EnableEditOfLocationField >  
+ \<VSTemplate>  
+ \<TemplateData>  
+ \<EnableEditOfLocationField>  
   
 ## <a name="syntax"></a>語法  
   

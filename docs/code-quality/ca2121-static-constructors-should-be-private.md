@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: ee93c620-8fc1-4e47-866c-d389c3ca9f2e
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 124d65f1147bbc9aa0d38b2bca8f742bf1b60a9b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 80cc1b3312a4b3c5a53b8b05d8b68064c82d9879
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53954259"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54960382"
 ---
 # <a name="ca2121-static-constructors-should-be-private"></a>CA2121:靜態建構函式應該為私用的
 

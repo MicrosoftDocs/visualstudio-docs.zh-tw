@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: a8f3db96-1a13-4e93-9ef6-0861880369e0
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e134b9b4adeb45693a9841a0a867a9c3630bf2aa
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bf81cfeea10a0687e84982db595a5c7a9aab6074
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53835100"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54998218"
 ---
 # <a name="port-suppliers"></a>連接埠提供者
 在偵錯工具架構中，*連接埠提供者*:  

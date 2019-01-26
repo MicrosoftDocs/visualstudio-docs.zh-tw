@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugPrograms2::GetCount |Microsoft Docs
+title: IEnumDebugPrograms2::GetCount | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 84832982-fa68-4090-a5b7-b233817876b7
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d1a7cbfaefec00c730c99d3709fa677069d2eb67
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fca5e12e1727721f03786b947c000162bd4d620a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53912541"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54946239"
 ---
 # <a name="ienumdebugprograms2getcount"></a>IEnumDebugPrograms2::GetCount
 列舉中傳回的項目數。  

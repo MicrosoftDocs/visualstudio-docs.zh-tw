@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugCodeContexts2::Clone |Microsoft Docs
+title: IEnumDebugCodeContexts2::Clone | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 22c98975-4294-4fbd-a345-16f65fe1200d
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cceda4e80487f62885ff9b470127146a86ad7991
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1a1c60d1d803f4136771a202b9eacb663950a6df
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53945466"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54955501"
 ---
 # <a name="ienumdebugcodecontexts2clone"></a>IEnumDebugCodeContexts2::Clone
 傳回一份目前的列舉，為個別的物件。  

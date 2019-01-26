@@ -1,5 +1,5 @@
 ---
-title: IDebugProcess2::GetPort |Microsoft Docs
+title: IDebugProcess2::GetPort | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: e39b6e5a-64eb-48cf-a53d-da4fdb968e2d
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a63a7eaf889dc56a0a9fe61f61757eceac03e0c9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b41e434de676a60427b9c7267719cd2a61088d31
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53829679"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54934477"
 ---
 # <a name="idebugprocess2getport"></a>IDebugProcess2::GetPort
 取得處理程序執行的連接埠。  

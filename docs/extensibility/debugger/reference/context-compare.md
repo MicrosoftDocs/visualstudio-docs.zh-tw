@@ -1,5 +1,5 @@
 ---
-title: CONTEXT_COMPARE |Microsoft Docs
+title: CONTEXT_COMPARE | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 701ed61c-a320-4c20-a335-0b840024abc0
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ace149b4a7fab142749e831ddb2f56ff2d03fe40
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 95706df8b9b4d366e8baf25a96e3e15bc6532be1
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53925085"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54930208"
 ---
 # <a name="contextcompare"></a>CONTEXT_COMPARE
 指定的準則來比較兩個記憶體內容。  

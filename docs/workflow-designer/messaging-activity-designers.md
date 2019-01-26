@@ -6,15 +6,15 @@ ms.prod: visual-studio-dev15
 ms.assetid: 897e63cf-a42f-4edd-876f-c4ccfffaf6d6
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f414f79db83f65d10a3f7893580c587e4da2219
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c58ec8a22a463f8dbcaf1531feb7f7f820881c13
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53989357"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54967293"
 ---
 # <a name="messaging-activity-designers"></a>Messaging 活動設計工具
 

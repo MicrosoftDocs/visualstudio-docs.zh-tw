@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 5156f593-5052-4e3a-9d02-081916fb342d
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 652eaf5525de404fe3107449f56ad714b1b827cf
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 308063a9c6612e9426831c31253fbc2e601498a6
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53937409"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54937804"
 ---
 # <a name="ipropertyproxyeesideinitsourcedataprovider"></a>IPropertyProxyEESide::InitSourceDataProvider
 初始化此物件的來源資料，並傳回物件，其中包含初始資料。  

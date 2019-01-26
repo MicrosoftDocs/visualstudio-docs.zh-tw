@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 2d301ee6-4523-4b82-aedb-be43f352978e
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a9fc9d4339978f84b02a5c922c06139031924bf4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bcfb3d754db6696a213806c9188d34105d127fb5
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53868809"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55032952"
 ---
 # <a name="support-for-the-navigation-bar-in-a-legacy-language-service"></a>舊版語言服務中對巡覽列的支援
 導覽列頂端的 [編輯器] 檢視會顯示檔案中的類型和成員。 左側下拉式清單中，會顯示類型和成員會顯示在右側下拉式清單。 當使用者選取的型別時，插入號會放在類型的第一行中。 當使用者選取的成員時，則會將插入號放在成員的定義。 下拉式清單方塊會更新以反映目前的插入號位置。  

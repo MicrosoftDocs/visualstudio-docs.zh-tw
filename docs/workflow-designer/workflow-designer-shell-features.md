@@ -8,15 +8,15 @@ f1_keywords:
 ms.assetid: 14bfe312-9592-408e-92ce-e98585ad16e7
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2aaac9c6148aee2b39d0231f7b893bcfaf89e301
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 538a9d7b0a895b5cc50c04c107dad55d1c662f3f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53880672"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54977503"
 ---
 # <a name="workflow-designer-shell-features"></a>工作流程設計工具殼層功能
 

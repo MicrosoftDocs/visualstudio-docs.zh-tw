@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: ad9beac3-4f8d-4093-ad0e-6fb00444a709
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d4394d101ffb158392d8c8e3ed1c9365b6c68ef7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d8204f7c6716acaad0183d63b487a8191c5a1dd1
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53930904"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54964245"
 ---
 # <a name="support-for-user-settings"></a>支援使用者設定
 VSPackage 可能會定義一或多個設定類別，也就是當使用者選擇保存的狀態變數群組**匯入/匯出設定**命令**工具**功能表。 若要啟用此持續性，您可以使用 Api 設定中[!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]。  
@@ -38,17 +38,17 @@ VSPackage 可能會定義一或多個設定類別，也就是當使用者選擇�
 
  登錄項目結構如下所示：  
 
- HKLM\Software\Microsoft\VisualStudio\\*\<版本 >* \UserSettings\  
+ HKLM\Software\Microsoft\VisualStudio\\*\<Version>* \UserSettings\  
 
- `<CSPName`> = '#12345' s  
+ `<CSPName`>= s '#12345'  
 
  封裝 = ' {XXXXXX XXXX XXXX XXXX XXXXXXXXX}'  
 
- 類別目錄 = ' {YYYYYY YYYY YYYY YYYY YYYYYYYYY}'  
+ Category = '{YYYYYY YYYY YYYY YYYY YYYYYYYYY}'  
 
- ResourcePackage = ' {ZZZZZZ ZZZZ ZZZZ ZZZZ ZZZZZZZZZ}'  
+ ResourcePackage = '{ZZZZZZ ZZZZ ZZZZ ZZZZ ZZZZZZZZZ}'  
 
- AlternateParent = 類別名稱  
+ AlternateParent = CategoryName  
 
 
 | 名稱 | 類型 | 資料 | 描述 |

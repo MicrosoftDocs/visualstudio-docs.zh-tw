@@ -6,15 +6,15 @@ ms.prod: visual-studio-dev15
 ms.assetid: 0a2b613e-dc04-49a1-a787-caec2ec63b90
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 910e241195a7aac5f51a341825b5605ecce5c6bc
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 524c52c95f49b4017fcbc990c2890a3354a739ae
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53873617"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54992811"
 ---
 # <a name="primitives-activity-designers"></a>基本活動設計工具
 

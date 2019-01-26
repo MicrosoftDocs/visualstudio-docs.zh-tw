@@ -1,5 +1,5 @@
 ---
-title: DEBUG_REASON |Microsoft Docs
+title: DEBUG_REASON | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: ad2ee898-8648-4671-9078-d32873862346
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5842b79e6dd38ed99a7a255b4164762b1dd1b68b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d6102c0897c80fc927713d2f8bb1e5c83708e6bd
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53867339"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55000194"
 ---
 # <a name="debugreason"></a>DEBUG_REASON
 指定處理序已啟動偵錯，原因。  

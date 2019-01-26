@@ -1,5 +1,5 @@
 ---
-title: IDebugDynamicField |Microsoft Docs
+title: IDebugDynamicField | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: caffbd95-7596-4714-84b1-b964e89a78bb
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8344417bdcb38ec29e183925cedc4da2338ab7a5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 53e4bd31833ad5cf3441638c3735230b89a16cf7
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53882425"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54938444"
 ---
 # <a name="idebugdynamicfield"></a>IDebugDynamicField
 此介面代表變數的類型。  

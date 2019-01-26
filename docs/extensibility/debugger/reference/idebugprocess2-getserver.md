@@ -1,5 +1,5 @@
 ---
-title: IDebugProcess2::GetServer |Microsoft Docs
+title: IDebugProcess2::GetServer | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 8f73c530-cceb-4f1f-8c63-1cc0ccd4a310
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ec901ea79c89c18655ddee3f71565fd2437818a9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 855f7f4035c8711fabac21d83831b8847f25b44b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53934705"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54934435"
 ---
 # <a name="idebugprocess2getserver"></a>IDebugProcess2::GetServer
 取得伺服器上執行此程序。  

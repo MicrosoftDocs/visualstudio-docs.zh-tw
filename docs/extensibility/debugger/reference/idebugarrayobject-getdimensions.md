@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 113e0aff-9028-49d6-b104-9fe7be4772d7
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0f58db8f1f9d847f7ca69c2c829b57f1e45b5d66
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b33df4ab74b0446b18f2c2a1693ffc8f711bb2fa
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53849346"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54955891"
 ---
 # <a name="idebugarrayobjectgetdimensions"></a>IDebugArrayObject::GetDimensions
 取得陣列維度。  

@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 838c0ddf-fdf3-4df1-8d21-79610b8ba0b1
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ccb49abc1251b489807efcb4d7e9ce89b25dcd16
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c43dc4892f1cf2a938a4ed29fc68bc55e99cc05e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53842693"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54948124"
 ---
 # <a name="manage-undo-and-redo-by-using-the-legacy-api"></a>管理復原和取消復原使用舊版的 API
 編輯器必須支援可讓使用者反轉其最近的變更，它們就會修改程式碼時的復原作業。 大多數編輯器實作下[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]和[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]可以自動提供整合式的開發環境 (IDE) 的復原支援。  

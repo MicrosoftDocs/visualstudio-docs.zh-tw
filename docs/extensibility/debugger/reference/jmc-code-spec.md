@@ -1,5 +1,5 @@
 ---
-title: JMC_CODE_SPEC |Microsoft Docs
+title: JMC_CODE_SPEC | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: d89498f1-4234-46d9-b4e2-abbcbca5068a
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 60febef76a02f45e1cbca859453bf56e9cd1e38e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2500a93ea928fbc1c472a60c9350136821a84ee4
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53850095"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55040316"
 ---
 # <a name="jmccodespec"></a>JMC_CODE_SPEC
 此結構用來設定模組的 JustMyCode 資訊。  

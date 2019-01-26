@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: ce0560f3-b4c9-4ab2-a99c-d4e10f37b9e0
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c3d2e874a414efd546e3d6841cfaaf9fdd70da5c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 93efb9d03f09be9ce4fc8097b975ddf181a01526
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53951387"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54948761"
 ---
 # <a name="menu-element"></a>功能表項目
 定義一個功能表項目。 這些是功能表的六種：內容、 功能表、 MenuController、 MenuControllerLatched、 工具列和 ToolWindowToolbar。  
@@ -50,7 +50,7 @@ ms.locfileid: "53951387"
 |項目|描述|  
 |-------------|-----------------|  
 |父代|選擇性。 功能表項目的父項目。|  
-|CommandFlag|必要項。 請參閱[Command flag 元素](../extensibility/command-flag-element.md)。 針對功能表的有效 CommandFlag 值如下所示：<br /><br /> -   **AlwaysCreate**<br />-   **DefaultDocked**<br />-   **DefaultInvisible** -這個旗標不會影響顯示的工具列。<br />-   **DontCache**<br />-   **DynamicVisibility** -這個旗標不會影響顯示的工具列。<br />-   **IconAndText**<br />-   **NoCustomize**<br />-   **NotInTBList**<br />-   **NoToolbarClose**<br />-   **文字變更**<br />-   **TextIsAnchorCommand**|  
+|CommandFlag|必要項。 請參閱[Command flag 元素](../extensibility/command-flag-element.md)。 針對功能表的有效 CommandFlag 值如下所示：<br /><br /> -   **AlwaysCreate**<br />-   **DefaultDocked**<br />-   **DefaultInvisible** -這個旗標不會影響顯示的工具列。<br />-   **DontCache**<br />-   **DynamicVisibility** -這個旗標不會影響顯示的工具列。<br />-   **IconAndText**<br />-   **NoCustomize**<br />-   **NotInTBList**<br />-   **NoToolbarClose**<br />-   **TextChanges**<br />-   **TextIsAnchorCommand**|  
 |字串|必要項。 請參閱[Strings 元素](../extensibility/strings-element.md)。 子系`ButtonText`必須定義項目。|  
 |註釋|選擇性註解。|  
   

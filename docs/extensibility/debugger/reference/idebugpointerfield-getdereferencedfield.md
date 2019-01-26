@@ -1,5 +1,5 @@
 ---
-title: IDebugPointerField::GetDereferencedField |Microsoft Docs
+title: IDebugPointerField::GetDereferencedField | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 8de988ab-cd79-4287-be72-3c900f2fe407
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 58f590f88344a76095156b71c4c535b158582dc3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 74c3853389f52253b4aa62547c8a0b89a36d03e6
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53844592"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54962715"
 ---
 # <a name="idebugpointerfieldgetdereferencedfield"></a>IDebugPointerField::GetDereferencedField
 這個方法會傳回這個指標物件所指向的物件型別。  

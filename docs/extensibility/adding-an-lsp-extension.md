@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 52f12785-1c51-4c2c-8228-c8e10316cd83
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ad112d34c8f23a7738137f148f00a38a27335424
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 16f54bd3bfd2fc6ce0b16ee8fbf849974d53884d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53966556"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54965688"
 ---
 # <a name="add-a-language-server-protocol-extension"></a>新增語言伺服器通訊協定延伸模組
 
@@ -49,18 +49,18 @@ LSP 支援下列功能在 Visual Studio 中到目前為止：
 初始化 | 是
 關機 | 是
 結束 | 是
-可以呼叫 cancelRequest $/ | 是
-視窗/showMessage | 是
+$/cancelRequest | 是
+window/showMessage | 是
 window/showMessageRequest | 是
-視窗/logMessage | 是
+window/logMessage | 是
 遙測資料/事件 |
-用戶端/registerCapability |
-用戶端/unregisterCapability |
+client/registerCapability |
+client/unregisterCapability |
 workspace/didChangeConfiguration | 是
 workspace/didChangeWatchedFiles | 是
 工作區/符號 | 是
 workspace/executeCommand | 是
-工作區/applyEdit | 是
+workspace/applyEdit | 是
 textDocument/publishDiagnostics | 是
 textDocument/didOpen | 是
 textDocument/didChange | 是
@@ -68,14 +68,14 @@ textDocument/willSave |
 textDocument/willSaveWaitUntil |
 textDocument/didSave | 是
 textDocument/didClose | 是
-textDocument/完成 | 是
-完成/解決 | 是
+textDocument/completion | 是
+completion/resolve | 是
 textDocument/hover | 是
 textDocument/signatureHelp | 是
 textDocument/references | 是
 textDocument/documentHighlight | 是
 textDocument/documentSymbol | 是
-textDocument/格式 | 是
+textDocument/formatting | 是
 textDocument/rangeFormatting | 是
 textDocument/onTypeFormatting |
 textDocument/definition | 是

@@ -1,5 +1,5 @@
 ---
-title: PROVIDER_FIELDS |Microsoft Docs
+title: PROVIDER_FIELDS | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 39631545-2b0e-45b4-978b-d63656484b02
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 45adc25c67105b7e4c430e419fd2c90cdfe19050
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ec381484a0628715f593dad10848f6e8f4206eee
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53868846"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55071016"
 ---
 # <a name="providerfields"></a>PROVIDER_FIELDS
 指定的程式提供者相關聯的屬性。  

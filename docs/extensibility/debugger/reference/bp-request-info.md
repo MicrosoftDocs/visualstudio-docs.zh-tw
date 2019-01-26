@@ -1,5 +1,5 @@
 ---
-title: BP_REQUEST_INFO |Microsoft Docs
+title: BP_REQUEST_INFO | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 42a31412-5b6b-47fe-a762-0c2bc769e1cc
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fe35126089478716237823b8660df2cd17bf4cd4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 57e7ae2074f2a626a449474bfb59497adaa21b9e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53914591"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54979968"
 ---
 # <a name="bprequestinfo"></a>BP_REQUEST_INFO
 包含中斷點的實作所需的資訊。  

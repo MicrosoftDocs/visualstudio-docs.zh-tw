@@ -1,5 +1,5 @@
 ---
-title: OBJECT_TYPE |Microsoft Docs
+title: OBJECT_TYPE | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: c4d246f9-8a98-44ec-b2bb-ff5c684f668e
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: df0b3d6ef73b81f005fbdac82f8dc3faa5601fba
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 21db41657c2fe2a698f6f4d20947df1e997b8b6b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53941347"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54958208"
 ---
 # <a name="objecttype"></a>OBJECT_TYPE
 指定運算式評估工具中的物件的類型。  

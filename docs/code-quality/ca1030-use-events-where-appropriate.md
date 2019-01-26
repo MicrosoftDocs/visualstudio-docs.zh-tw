@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: ea051367-deeb-40f9-9b65-eb818f1e133a
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 445330d654e870fe12aa2ca19626377972235eac
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 89ee195da621ea9d7342302efadf582e21f7e619
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53860802"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54956723"
 ---
 # <a name="ca1030-use-events-where-appropriate"></a>CA1030:建議在適當時使用事件
 
@@ -34,7 +34,7 @@ ms.locfileid: "53860802"
 ## <a name="cause"></a>原因
  Public、 protected 或 private 方法名稱開頭為下列其中一項：
 
-- 附加元件
+- AddOn
 
 - RemoveOn
 

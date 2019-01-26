@@ -8,15 +8,15 @@ f1_keywords:
 ms.assetid: f51742a8-2c9a-47d1-8a23-18459d03ae19
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c793456cd32d6d5749bcda8c8d266f6cd939601
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c26bcbe535d45e81cb37138d26192271437b9fb6
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53823658"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54981567"
 ---
 # <a name="delay-activity-designer"></a>Delay 活動設計工具
 

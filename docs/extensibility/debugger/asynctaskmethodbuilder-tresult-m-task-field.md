@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 649abf0e-0fec-49d9-93b2-8953521f7ba5
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bb2c84910d40a851bcdf87751e15280501569078
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 351978f720f1aea47650eda7e8f213e8014320c0
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53830939"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54957152"
 ---
 # <a name="asynctaskmethodbuilderlttresultgtmtask-field"></a>AsyncTaskMethodBuilder&lt;TResult&gt;.m_task 欄位
 表示延遲初始化建置工作。  

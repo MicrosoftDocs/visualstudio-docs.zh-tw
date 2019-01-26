@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: bf98b733-4855-4110-9f16-eba5a9e79421
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e0e15f3272f39bc8894950357cb98c0feafd6e9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: db6c66e65ed89e53d0cbbed671004c88bdbaed95
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53844258"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54982971"
 ---
 # <a name="ca2230-use-params-for-variable-arguments"></a>CA2230:必須使用 params 作為變數引數
 

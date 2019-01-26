@@ -12,18 +12,18 @@ helpviewer_keywords:
 ms.assetid: 9357a724-026e-4a3d-a03a-f14635064ec6
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b72d40bbb2f83eeb8a402b2d389a941f64bfef2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0000b66302e0dbb549b2832210573d1b3b174b84
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53845372"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54943269"
 ---
 # <a name="ca1300-specify-messageboxoptions"></a>CA1300:必須指定 MessageBoxOptions
 

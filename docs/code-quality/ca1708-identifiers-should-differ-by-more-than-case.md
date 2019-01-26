@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: dac0f01d-dd21-484d-add1-c8cd2bf6969f
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4fd2ac35d5c6df5e1ffc3d49ea3089bb4ee3ea77
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 092b5f7db63ef83fb4d3bfb8507fdf7e0d5a6c86
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53833241"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55040498"
 ---
 # <a name="ca1708-identifiers-should-differ-by-more-than-case"></a>CA1708:識別項名稱不應該只靠大小寫區別
 

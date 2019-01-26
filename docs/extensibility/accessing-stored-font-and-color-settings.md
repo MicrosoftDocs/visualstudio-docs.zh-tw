@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: beba7174-e787-45c2-b6ff-a60f67ad4998
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3a3c4738923c4b187ea6a55e5f6b52f550f7442d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 91167a2f29ae95173e9de3f4f152b2c6a295b3d7
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53990905"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55015780"
 ---
 # <a name="access-stored-font-and-color-settings"></a>存取預存的字型和色彩設定
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]整合式的開發環境 (IDE) 會儲存已修改的設定的字型和色彩的登錄中。 您可以使用<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage>介面來存取這些設定。

@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 27d2f1e1-2503-4aca-9cfc-707abd07ccf0
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f49d2e10b61bac39941a12f5617fc313f17c208f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e742e2432596b4b31ecfcfc666a913076050cf06
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53967270"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54927836"
 ---
 # <a name="extend-other-parts-of-visual-studio"></a>擴充 Visual Studio 的其他部分
 有許多的多個組件，您可以擴充的 Visual Studio 使用者介面。 這裡我們將示範一些。  

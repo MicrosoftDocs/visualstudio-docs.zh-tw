@@ -1,5 +1,5 @@
 ---
-title: IDebugThread2::GetLogicalThread |Microsoft Docs
+title: IDebugThread2::GetLogicalThread | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: bce6230e-41d4-49b7-a050-2dde5efb6805
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 228e9a4a890ccd8b3198739ffa02cad65338bf4d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0034daecab2543d9a48a627a26a88ee84a872f73
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53965164"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54945927"
 ---
 # <a name="idebugthread2getlogicalthread"></a>IDebugThread2::GetLogicalThread
 偵錯引擎不會實作這個方法。  

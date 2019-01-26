@@ -7,17 +7,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - SharePoint development in Visual Studio, debugging extensions
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8f838363b52a85faff022f49542fcc2fcc7e450d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 528665cc54c78a6d5d053cc80522f53385e85daf
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53950812"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54875715"
 ---
 # <a name="debug-extensions-for-the-sharepoint-tools-in-visual-studio"></a>偵錯在 Visual Studio 中 SharePoint 工具擴充功能
   您可以偵錯的實驗執行個體或一般的執行個體的 Visual Studio 中 SharePoint 工具擴充功能。 如果您需要的行為延伸模組進行疑難排解，您也可以修改登錄值以顯示其他錯誤資訊，並設定 Visual Studio 執行 SharePoint 命令的方式。

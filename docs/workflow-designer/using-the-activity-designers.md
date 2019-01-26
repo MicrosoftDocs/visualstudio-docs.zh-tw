@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 3c2725c3-091b-49ab-81e7-d4c7028d47a2
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e6516e637b219f65613bd6e2052cd2f540428f3c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f001c503628d63c0a78e064d472e10391fa6993a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53910369"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54979262"
 ---
 # <a name="using-the-activity-designers"></a>使用活動設計工具
 

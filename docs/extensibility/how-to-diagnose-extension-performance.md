@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 46b0a1e3-7e69-47c9-9d8d-a1815d6c3896
 author: BertanAygun
 ms.author: bertaygu
-manager: douge
+manager: jillfra
 ms.workload:
 - bertaygu
-ms.openlocfilehash: fd51728f5e57af1017cb4b280f9ffc9d1c50df98
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 94a4febb30e2c476230bd038c014a1d4604a89d3
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53943417"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54955228"
 ---
 # <a name="measuring-extension-impact-in-startup"></a>測量的延伸模組影響啟動
 

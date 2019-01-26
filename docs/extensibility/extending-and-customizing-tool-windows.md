@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 46b2892e-7b2b-4b3f-83a7-b884f1e114ee
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4c942076f10aa39994c2a809f994b9725831d67b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1e9f9c11faf18c1131e7e50de1747ba0e332d00c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53949832"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54930364"
 ---
 # <a name="extend-and-customize-tool-windows"></a>擴充和自訂工具視窗
 Visual Studio 提供許多不同類型的 windows，例如工具視窗、 文件視窗和對話方塊視窗。 這類其他視窗**屬性** 視窗中，**輸出**視窗中，而**工作清單** 視窗中，類型的工具視窗。  

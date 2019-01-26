@@ -8,19 +8,19 @@ helpviewer_keywords:
 - code analysis, source suppression
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 - VB
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: a377f08a8f0a3397aee778a71c74457420dec70f
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: 7fd2d8323a249771357ca0b32dc3106f11d8aa1b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54835054"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55036182"
 ---
 # <a name="suppress-code-analysis-warnings"></a>隱藏程式碼分析警告
 

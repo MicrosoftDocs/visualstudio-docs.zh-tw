@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 748750f4-76e7-4580-9da2-afba07681b37
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 288e736b0ebd50fe55c8ba17deeeb99123853e0c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 964e7befbfb0681dfb97e69f4c43c83e2bff4916
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53936941"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54993243"
 ---
 # <a name="ieevisualizerservicegetpropertyproxy"></a>IEEVisualizerService::GetPropertyProxy
 這個方法傳回的屬性物件的 proxy。  

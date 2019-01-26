@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: b36c1eb5-1aaf-48a6-b287-ee7a273d2b1c
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9e6521f2e38044fc5a333228f5225e42853a42dd
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4151f00a9c482036d4aaea8d4ba557ff282287c5
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53959157"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54976832"
 ---
 # <a name="common-language-runtime-and-expression-evaluation"></a>Common language runtime 和運算式評估
 > [!IMPORTANT]

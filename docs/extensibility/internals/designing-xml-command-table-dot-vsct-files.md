@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: bb87a322-bac4-4258-92bc-9a876f05d653
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: eacbe69488d605d9cde2fb219a8adbca1419361b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 68647dbcbeaedd8ce3a6a493b685142434eec2c2
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53904292"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54923090"
 ---
 # <a name="design-xml-command-table-vsct-files"></a>設計 XML 命令表檔案 (.vsct)
 XML 命令資料表 (*.vsct*) 檔案描述的版面配置和外觀 VSPackage 的命令項目。 命令的項目包括按鈕、 下拉式方塊、 功能表、 工具列和命令項目的群組。 本文說明 XML 命令表檔案、 它們如何影響命令的項目和功能表，以及如何加以建立。
@@ -117,7 +117,7 @@ XML 命令資料表 (*.vsct*) 檔案描述的版面配置和外觀 VSPackage 的
 
  在開發期間，可能會建立並註冊在實驗登錄區可能會導致令人困惑的雜亂，在 IDE 中的多個 VSPackage 專案。 若要修正此問題，您可以將實驗登錄區重設的預設設定值，來移除所有已註冊的 Vspackage 和可能的 ide 所做的變更。 若要重設實驗登錄區，請使用 CreateExpInstance.exe 工具隨附於 Visual Studio SDK。 您可以找到在：
 
- *%Programfiles (x86) %\Visual Studio\\\<版本 > SDK\VisualStudioIntegration\Tools\Bin\CreateExpInstance.exe*
+ *%PROGRAMFILES(x86)%\Visual Studio\\\<version> SDK\VisualStudioIntegration\Tools\Bin\CreateExpInstance.exe*
 
  使用命令來執行此工具**CreateExpInstance /Reset**。 請記住，此工具會移除從實驗登錄區通常不會安裝使用的所有已註冊的 Vspackage [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。
 

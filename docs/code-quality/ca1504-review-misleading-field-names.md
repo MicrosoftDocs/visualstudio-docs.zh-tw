@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 94136ff1-4aaf-4dc2-9170-48c171ab7499
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4823eb7f41f99ca8af5a91c80341a51a196e1615
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: da99bab4235028f75146be1807162e93759d3eb9
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53919400"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54926458"
 ---
 # <a name="ca1504-review-misleading-field-names"></a>CA1504:必須檢閱可能造成誤導的欄位名稱
 

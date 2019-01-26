@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: 18a6c96e-49a9-4356-ab61-fbd7e3ab44bb
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5109b57ba203bbc0bd0a76cb61985ecfaa132967
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f12639eeffc2a4349a30ec3fa244a4ec5c2d3d17
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53873852"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55033735"
 ---
 # <a name="switcht-activity-designer"></a>交換器\<T > 活動設計工具
 

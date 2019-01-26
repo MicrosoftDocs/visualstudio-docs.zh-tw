@@ -1,5 +1,5 @@
 ---
-title: IEEDataStorage |Microsoft Docs
+title: IEEDataStorage | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 704e932d-2325-410e-89c4-ce88c6ec19da
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f0db1dc01c67c93c5cabfb40af8acf55b34ad660
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2bc409f455d93b84b12b9630a5f72f8e82a752d7
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53820143"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54930968"
 ---
 # <a name="ieedatastorage"></a>IEEDataStorage
 這個介面會表示為位元組陣列。  
@@ -52,7 +52,7 @@ IEEDataStorage : IUnknown
   
  命名空間:Microsoft.VisualStudio.Debugger.Interop  
   
- 組件：Microsoft.VisualStudio.Debugger.Interop.dll  
+ 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
  [核心介面](../../../extensibility/debugger/reference/core-interfaces.md)   

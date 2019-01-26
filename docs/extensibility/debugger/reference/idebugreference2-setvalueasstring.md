@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 9a508ced-fd54-44f5-bb42-ec15c80384d7
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 508405cdcc55d57f010ed6d19218afeaae01fffb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 86fcc0e73248c766e6fa8b4db7fd3456250055ee
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53846473"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54952713"
 ---
 # <a name="idebugreference2setvalueasstring"></a>IDebugReference2::SetValueAsString
 設定參考，以從字串的值。 保留供未來使用。  

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 882a10fa-bb1c-4b01-943a-7a3c155286dd
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 43ba49107c1f3b2ab72db024b8dbfd01d8eab857
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: cc2cfc74b192be01b9b5ce258d2686dda1b8ccc7
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53832550"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54930000"
 ---
 # <a name="create-a-basic-project-system-part-1"></a>建立基本專案系統，第 1 部分
 在 Visual Studio 中，專案會是開發人員用來組織原始程式碼檔和其他資產的容器。 專案會顯示為子系中的解決方案**方案總管 中**。 專案可讓您組織、 建置、 偵錯和部署來源的程式碼及建立 Web 服務、 資料庫和其他資源的參考。  
@@ -68,7 +68,7 @@ ms.locfileid: "53832550"
   
 ### <a name="to-create-a-basic-project-template"></a>若要建立基本專案範本  
   
-1. 加入專案，其中一個 [其他] 中的三個資料夾：*Templates\Projects\SimpleProject*。 (在**方案總管**，以滑鼠右鍵按一下**SimpleProject**專案節點，指向**新增**，然後按一下 **新資料夾**。 將資料夾命名*範本*。 在 *範本*資料夾中，新增名為的資料夾*專案*。 在*專案*資料夾中，新增名為的資料夾*SimpleProject*。)  
+1. 加入專案，其中一個 [其他] 中的三個資料夾：*Templates\Projects\SimpleProject*. (在**方案總管**，以滑鼠右鍵按一下**SimpleProject**專案節點，指向**新增**，然後按一下 **新資料夾**。 將資料夾命名*範本*。 在 *範本*資料夾中，新增名為的資料夾*專案*。 在*專案*資料夾中，新增名為的資料夾*SimpleProject*。)  
   
 2. 在  *Templates\Projects\SimpleProject*資料夾中，新增的點陣圖影像檔案，作為名為圖示*SimpleProject.ico*。 當您按一下 **新增**，圖示編輯器隨即開啟。  
   
@@ -261,7 +261,7 @@ Templates
   
     4.  加入下列組件的參考：  
   
-        -   `Microsoft.VisualStudio.Designer.Interfaces` (在 *\<VSSDK 安裝 > \VisualStudioIntegration\Common\Assemblies\v2.0*)  
+        -   `Microsoft.VisualStudio.Designer.Interfaces` (in *\<VSSDK install>\VisualStudioIntegration\Common\Assemblies\v2.0*)  
   
         -   `WindowsBase`  
   
@@ -456,7 +456,7 @@ Templates
   
 2. 在 **屬性**windows，減少為 16 x 16 像素的點陣圖。 請獨特的點陣圖。  
   
-    ![簡單專案 Comm](../extensibility/media/simpleprojprojectcomm.png "SimpleProjProjectComm")  
+    ![Simple Project Comm](../extensibility/media/simpleprojprojectcomm.png "SimpleProjProjectComm")  
   
 3. 在 **屬性**視窗中，變更**建置動作**點陣圖來**內嵌資源**。  
   

@@ -8,15 +8,15 @@ f1_keywords:
 ms.assetid: 5e97c947-be39-4a1f-af04-000e2e09528a
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dd0a6ec009262d1f9b9e66460437499279630034
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 60b7396c8a57b6ddcf9ea48c04a17f070194ccdc
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53873576"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54940514"
 ---
 # <a name="throw-activity-designer"></a>Throw 活動設計工具
 

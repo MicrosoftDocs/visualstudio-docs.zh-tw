@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: c64aac80-a411-463f-b7bd-8b7607a52ece
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4c5a84da9fef0bee2a4701337ea62864f5fd34b3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: abf0840b3067b323f9d1552c5cb4261002004406
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53952838"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54945381"
 ---
 # <a name="what39s-new-in-the-visual-studio-2015-sdk"></a>什麼&#39;的新功能 Visual Studio 2015 SDK
 Visual Studio SDK for Visual Studio 2015 中，更新，Visual Studio 2015 和 Visual Studio 2017 具有下列全新和更新功能。  

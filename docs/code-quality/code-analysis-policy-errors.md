@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: d1f221cd-68c0-4277-9397-b76ad0dbae77
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3edd9b341d2ccead65fee8f97f32ec54f7857dea
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5fb11b632251e67a8dad15f4b7f3f0491fec40df
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53987806"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55019550"
 ---
 # <a name="code-analysis-policy-errors"></a>程式碼分析原則錯誤
 

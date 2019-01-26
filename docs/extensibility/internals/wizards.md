@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 59d9a77f-ee80-474b-a14f-90f477ab717b
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ca842c185f4e9b50afffc20e14af70e93776116f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 22aa4c86cc00b57e7c290d8b5a5655713ee05052
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53932794"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54955358"
 ---
 # <a name="wizards"></a>精靈
 建立精靈之後，您通常想要將它新增至[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]整合式開發環境 (IDE)，以便其他人可以使用它。 已新增的精靈接著會出現在**加入新的專案**或是**加入新項目**對話方塊。 若要查看**加入新的專案**或**加入新項目**對話方塊方塊中，以滑鼠右鍵按一下中開啟的方案**方案總管 中**，指向**新增**，及然後按一下**新的專案**或是**新項目**。  
@@ -28,7 +28,7 @@ ms.locfileid: "53932794"
   
  在本節中的主題將討論，讓您實作的檔案[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]**加入新的專案**並**加入新項目**列出您可以使用精靈與範本之間的精靈對話方塊與您的精靈必須符合才能正確運作，在 IDE 中的需求。  
   
-## <a name="in-this-section"></a>本章節內容  
+## <a name="in-this-section"></a>本節內容  
  [範本目錄描述檔 (.Vsdir)](../../extensibility/internals/template-directory-description-dot-vsdir-files.md)  
  提供概略的範本目錄描述檔案，並說明其運作在 IDE 中顯示資料夾、 精靈.vsz 檔案和相關聯的專案 對話方塊中的範本檔案的方式。  
   

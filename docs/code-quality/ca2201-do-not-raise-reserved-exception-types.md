@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: dd14ef5c-80e6-41a5-834e-eba8e2eae75e
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9b8eff3ac514e82e16327bfb873ed5fa2e9ccfba
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 01453504a0076bd762e4839f3237da46bf59083d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53911935"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54946200"
 ---
 # <a name="ca2201-do-not-raise-reserved-exception-types"></a>CA2201:不要引發保留的例外狀況類型
 

@@ -6,15 +6,15 @@ ms.prod: visual-studio-dev15
 ms.assetid: 9679ca32-ad7f-4089-824e-fdb931e47a30
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3746749e988ba8ac12ede3f5ddbf92c4ecf64c06
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 03cb152aaa3d5ece6ab361f5d8ba3c181a81ae21
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53829890"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55000157"
 ---
 # <a name="error-handling-activity-designers"></a>Error Handling 活動設計工具
 

@@ -9,15 +9,15 @@ helpviewer_keywords:
 - code, exploring
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e1866437fae3fb5594e85299f94a075072dd6528
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ea963ac06c44e810c2a7195041b42d3452e19b4b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53907835"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54994208"
 ---
 # <a name="visualize-code"></a>視覺化程式碼
 

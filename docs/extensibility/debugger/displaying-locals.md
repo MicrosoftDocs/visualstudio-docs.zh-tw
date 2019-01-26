@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 62264cec-845b-4233-aed7-0b038fa79250
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e4fbc85b9b45b668d4c183d5b5068fc190f0a2f6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 50e6c7d74f522865098ef9b4262dd71e460720a2
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53852595"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54922307"
 ---
 # <a name="display-locals"></a>顯示 [區域變數]
 > [!IMPORTANT]

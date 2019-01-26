@@ -6,15 +6,15 @@ ms.prod: visual-studio-dev15
 ms.assetid: 8dd0f60f-88ec-4258-bc8d-233689be9997
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8bf5d3042d6d8556ed63d1fe97f17e924049e96a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a66bbec752cdf9f79595010012a0a08eab445450
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53922938"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54960967"
 ---
 # <a name="transaction-activity-designers"></a>Transaction 活動設計工具
 

@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentText2 |Microsoft Docs
+title: IDebugDocumentText2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: e85f50a3-211c-4220-a9f4-789950ba2782
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cae0bfefe4ab39d42f9cc67080d17394b1a1418b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fa356a41205ecbd51fd22a8396cddae2d7e4728b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53838420"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54963420"
 ---
 # <a name="idebugdocumenttext2"></a>IDebugDocumentText2
 此介面代表文字文件。  

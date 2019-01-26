@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 8e04d5fe-dfad-445a-972e-0648324fac45
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2228f25c344e7471c0ee8ff252d88a5454345999
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 518a5d4f76d1c26893ae88f45bc74586654ee15c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53840300"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54951972"
 ---
 # <a name="ca2229-implement-serialization-constructors"></a>CA2229:必須實作序列化建構函式
 

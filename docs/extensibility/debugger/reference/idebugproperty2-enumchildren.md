@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty2::EnumChildren |Microsoft Docs
+title: IDebugProperty2::EnumChildren | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: cf79f666-65d1-417c-af7c-9271bac9a267
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e2c24e0cb7363f3edede4893b786cc919491120f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e6f297b4adf3c7194340bfdda71936de93c4506a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53842014"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54988242"
 ---
 # <a name="idebugproperty2enumchildren"></a>IDebugProperty2::EnumChildren
 擷取屬性的子系清單。  

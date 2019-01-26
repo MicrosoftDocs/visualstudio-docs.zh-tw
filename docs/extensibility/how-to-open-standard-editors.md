@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: d5ce10f9-047a-4b74-aa1d-295128898b89
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fbc4c694dcaa39e61eef484f018204474e67dd7a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8536511853b513e485e73005df924fa8fd1b7df3
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53820341"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54979994"
 ---
 # <a name="how-to-open-standard-editors"></a>HOW TO：開啟標準編輯器
 當您開啟標準編輯器時，您會讓判斷指定的檔案類型，而不是指定之檔案的專案特定編輯器的標準編輯器在 IDE。  

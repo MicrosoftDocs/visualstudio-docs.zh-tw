@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 9c399598-b9fa-4da7-84b5-defbf82e9335
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dd4ed2783ba3b56004037338452722f3ea0f8ddc
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 80013faf174900c4e94bf452f6f19c0ac9bfbeba
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53909888"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54956489"
 ---
 # <a name="the-structure-of-the-contenttypesxml-file"></a>[Content_types].xml 檔案的結構
 包含在 VSIX 封裝的內容類型的相關資訊。 Visual Studio 安裝套件，請使用 [Content_Types].xml 檔案，但它不會安裝檔案本身。  
@@ -71,10 +71,10 @@ ms.locfileid: "53909888"
 |xml|text/xml|  
 |vsixmanifest|text/xml|  
 |htm 或 html|text/html|  
-|rtf|應用程式 /rtf|  
-|pdf|應用程式/pdf|  
+|rtf|application/rtf|  
+|pdf|application/pdf|  
 |gif|image/gif|  
-|jpg 或 jpeg|映像/jpg|  
+|jpg 或 jpeg|image/jpg|  
 |Tiff|tiff 影像 /|  
 |vsix|應用程式/郵遞區號|  
 |zip|應用程式/郵遞區號|  

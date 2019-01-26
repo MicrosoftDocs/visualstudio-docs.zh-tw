@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 596c28ee-f48d-4252-a5c4-f730c43a39e6
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c515270e530428e7d23ce6c8ea698024eecf145d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d54fbcf42786e7c31244dc0c37f4986e36096e17
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53877662"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54958482"
 ---
 # <a name="managing-configuration-options"></a>管理組態選項
 當您建立新的專案類型時，您必須管理專案和方案組態設定，以決定如何您將會建立專案、 封裝、 部署及執行。 下列主題將討論專案和方案組態。  

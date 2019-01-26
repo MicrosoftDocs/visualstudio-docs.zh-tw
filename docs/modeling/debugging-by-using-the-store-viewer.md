@@ -7,16 +7,16 @@ helpviewer_keywords:
 - Domain-Specific Language, store
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 79e995393c02f96561d3283f4181b3a7159f0832
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 55781c9270210f5aaf368ed4df9d247113d0926f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53856440"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55031561"
 ---
 # <a name="debugging-by-using-the-store-viewer"></a>使用存放區檢視進行偵錯
 使用儲存的檢視器 中，您可以檢查的狀態*儲存*供[!INCLUDE[dsl](../modeling/includes/dsl_md.md)]。 儲存的檢視器會顯示所有的網域模型項目處於為特定的存放區，以及項目屬性和項目之間的連結。

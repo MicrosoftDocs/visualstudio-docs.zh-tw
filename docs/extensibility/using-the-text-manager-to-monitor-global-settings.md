@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 023e7671-cf65-419c-9bc1-3c4ee92aa436
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 43b4f1c2de4862b30dd5822931b02292b942c50f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 29f054a5b584f7cf5471e783d28e857994c1a5a2
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53877545"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54989363"
 ---
 # <a name="use-the-text-manager-to-monitor-global-settings"></a>使用文字管理員監視全域設定
 如果您實作核心編輯器，您必須監控全域設定，所做的變更，因為這些變更可能會影響您的編輯器執行個體。 您可以藉由接聽文字管理員所引發的事件追蹤所做的變更。 例如，核心編輯器，例如其文件資料物件中指定的外觀或元件的行為全域喜好設定時文字管理員將此資訊儲存，並與所有受影響的用戶端。  

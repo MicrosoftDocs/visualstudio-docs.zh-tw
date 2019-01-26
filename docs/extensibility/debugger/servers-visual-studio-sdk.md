@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 62236d64-7956-448c-9ac3-5528f3edac1d
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 109c24935511f98e5eb3b5d83270960e5a0c6855
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ea7b54d8a27f061c1ef5d023f309ddab8295db90
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53905546"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54989597"
 ---
 # <a name="servers-visual-studio-sdk"></a>伺服器 (Visual Studio SDK)
 在偵錯工具架構中， *server*:  

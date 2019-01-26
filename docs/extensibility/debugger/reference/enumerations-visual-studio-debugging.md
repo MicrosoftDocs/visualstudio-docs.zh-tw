@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 557065bf-081f-4d57-8744-bae02b8a5a6e
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 604cf38d96b25347a49edd24b29cffdaf012d52a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 734518c1c7f82cfdb07d0f2298e1cdb382f27c0a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53860006"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55019667"
 ---
 # <a name="enumerations-visual-studio-debugging"></a>Enumerations (Visual Studio Debugging)
 以下是列舉型別供[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]偵錯 sdk 》。  

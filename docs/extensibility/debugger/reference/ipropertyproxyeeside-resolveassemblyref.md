@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 662ca0a6-dad0-4c00-a718-bb3bbc5bd9da
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 521899c2b141faa582fc9edd9baa4b028dbe1f46
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d161e5e66d60b3967dcdd0e9e6f67e5699c4444c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53885909"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54949775"
 ---
 # <a name="ipropertyproxyeesideresolveassemblyref"></a>IPropertyProxyEESide::ResolveAssemblyRef
 判斷指定的 managed 組件參考的位置。  
