@@ -8,17 +8,17 @@ dev_langs:
 helpviewer_keywords:
 - localizing XML [SharePoint development in Visual Studio]
 - SharePoint development in Visual Studio, localizing
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0a646c84df5f6da318e8c21f6a55ac7a852a1af0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: df6e4be288e957708ba7339383d8e80e82f27e40
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53959833"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54870265"
 ---
 # <a name="how-to-localize-aspx-markup"></a>HOW TO：當地語系化 ASPX 標記
   [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] (.aspx) 網頁通常會使用硬式編碼的字串值。 若要當地語系化這些字串，請將它們取代參考當地語系化的資源的運算式中。  

@@ -21,17 +21,17 @@ helpviewer_keywords:
 - runtime [Office development in Visual Studio], about VSTO runtime
 - solution loader [Office development in Visual Studio]
 - runtime [Office development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bdae6b7f08ec442d7bca0b0aa3b46b8825385767
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e7d3ba962a214f1f1ac9bf134a3408b38e8cb018
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53878779"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54868283"
 ---
 # <a name="visual-studio-tools-for-office-runtime-overview"></a>Visual Studio Tools for Office runtime 概觀
   若要執行使用 Visual Studio 中的 Microsoft Office developer tools 所建立的解決方案，必須在使用者電腦上安裝 Visual Studio 2010 Tools for Office 執行階段。 如需詳細資訊，請參閱[＜How to：安裝 Visual Studio Tools for Office runtime 可轉散發套件](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md)。 Visual Studio 2010 Tools for Office 執行階段是由兩個主要元件所組成：  
@@ -79,7 +79,7 @@ ms.locfileid: "53878779"
   
  如需如何在載入過程中使用這些元件的資訊，請參閱[文件層級自訂的架構](../vsto/architecture-of-document-level-customizations.md)並[Architecture of VSTO 增益集](../vsto/architecture-of-vsto-add-ins.md)。  
   
-### <a name="vstoeedll"></a>VSTOEE.dll  
+### <a name="vstoeedll"></a>vstoee.dll  
  當使用者開啟文件層級自訂或 VSTO 增益集啟動時，Office 應用程式呼叫*VSTOEE.dll*來執行工作負載所需[!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]。  
   
  *VSTOEE.dll*可確保正確的版本[!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]載入解決方案和安裝的 Office 版本。 雖然多個版本的[!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]可以安裝在同一部電腦，也就是只有一個執行個體*VSTOEE.dll*安裝一次。 這是*VSTOEE.dll* ，已包含最新版本的電腦上安裝的執行階段。 如需不同版本的詳細資訊[!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]，可以用於其他方案，請參閱 <<c2> [ 執行不同版本的 Microsoft Office 中的方案](../vsto/running-solutions-in-different-versions-of-microsoft-office.md)。  

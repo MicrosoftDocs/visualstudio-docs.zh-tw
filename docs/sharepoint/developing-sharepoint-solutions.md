@@ -10,17 +10,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - SharePoint development in Visual Studio, overview
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bc45f1420f073347153c6b7b8dd72cae44dd6b0f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4384396781172c73056de27fd3c674535571d591
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53871053"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54869014"
 ---
 # <a name="develop-sharepoint-solutions"></a>開發 SharePoint 方案
   [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 中提供數個 SharePoint 專案類型範本，以用來建立 SharePoint 網站和網站元素。 如需可用的專案類型的清單，請參閱 < [SharePoint 專案和專案項目範本](../sharepoint/sharepoint-project-and-project-item-templates.md)。 以下是 SharePoint 專案的元素和屬性描述。  
@@ -101,7 +101,7 @@ ms.locfileid: "53871053"
 |部署位置|檔案在 SharePoint 伺服器中的完整路徑。 這個路徑是由部署根和部署路徑的子屬性構成。|  
 |部署路徑|在 SharePoint 伺服器檔案，例如 Workflow1 檔案的相對路徑\\。 將 *Deployment Path* 值串連至 *Deployment Root* 值的結尾，即可建立檔案的完整路徑。<br /><br /> 選取的值*RootFile* for*部署類型*屬性變更*Deployment Root*屬性設\<SharePointRoot >\\，產生的完整路徑\<SharePointRoot > \Workflow1\\。 如需詳細資訊，請參閱 <<c0> [ 封裝和部署 SharePoint 方案](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)。|  
 |Deployment Root|字串。 在 SharePoint 伺服器部署檔案的根資料夾。 例如， \<SharePointRoot > \Template\Features\\\<FeatureName >\\。<br /><br /> *Deployment Root* 屬性值是依據 *Deployment Type* 設定而定。|  
-|RootFile|檔案的部署類型會決定其 *Deployment Root* 值。 可為下列其中一個值：<br /><br /> NoDeployment: *\<沒有值 >*<br /><br /> ElementManifest:*\<SharePointRoot > \Template\Features\\\<FeatureName >*\\<br /><br /> ElementFile:*\<SharePointRoot > \Template\Features\\\<FeatureName >\\*<br /><br /> TemplateFile:*\<SharePointRoot > \Template\\*<br /><br /> RootFile:*\<SharePointRoot >\\*<br /><br /> GlobalResource:*\<SharePointRoot > \Resources\\*<br /><br /> ClassResource:*\<ClassResourcePath >\\*<br /><br /> 如需詳細資訊，請參閱<xref:Microsoft.VisualStudio.SharePoint.DeploymentType>。|  
+|RootFile|檔案的部署類型會決定其 *Deployment Root* 值。 可為下列其中一個值：<br /><br /> NoDeployment: *\<沒有值 >*<br /><br /> ElementManifest:*\<SharePointRoot>\Template\Features\\\<FeatureName>*\\<br /><br /> ElementFile:*\<SharePointRoot>\Template\Features\\\<FeatureName>\\*<br /><br /> TemplateFile:*\<SharePointRoot>\Template\\*<br /><br /> RootFile:*\<SharePointRoot>\\*<br /><br /> GlobalResource:*\<SharePointRoot>\Resources\\*<br /><br /> ClassResource:*\<ClassResourcePath>\\*<br /><br /> 如需詳細資訊，請參閱<xref:Microsoft.VisualStudio.SharePoint.DeploymentType>。|  
 |檔案名稱|項目檔案的檔案或資料夾名稱。|  
 |完整路徑|項目檔案的位置。 (唯讀)。|  
   

@@ -9,17 +9,17 @@ helpviewer_keywords:
 - SharePoint project items, defining your own types
 - project items [SharePoint development in Visual Studio], defining your own types
 - SharePoint development in Visual Studio, defining new project item types
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: dc3acaf90f646529da00a89aec6db860c3711fc8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8cde43b5e04b870ec4264d28ee6a33b56d5571d0
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53959893"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54873323"
 ---
 # <a name="how-to-add-a-shortcut-menu-item-to-a-custom-sharepoint-project-item-type"></a>HOW TO：將捷徑功能表項目新增至自訂的 SharePoint 專案項目類型
   當您定義自訂的 SharePoint 專案項目類型時，您可以快顯功能表項目加入專案項目。 使用者以滑鼠右鍵按一下專案項目中的時，會出現的功能表項目**方案總管 中**。  

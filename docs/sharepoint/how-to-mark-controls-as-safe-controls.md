@@ -9,17 +9,17 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, safe controls
 - SharePoint development in Visual Studio, advanced packaging tools
 - safe controls [SharePoint development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 87e99937239ad080d24bf997d6c2de2a5d8f73ac
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d3f0ff39658aca76318174143da52e17594ace24
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53989370"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54875445"
 ---
 # <a name="how-to-mark-controls-as-safe-controls"></a>HOW TO：將控制項標記為安全控制項
   為了安全性，SharePoint 會區別指令碼資料隱碼攻擊時受到保護的 Web 控制項和 Web 控制項不是。 受保護的控制項，或是*安全控制項*，可以由不受信任的使用者存取。 您可以將標記為安全的 SharePoint 專案項目，或在 安全控制項項目屬性中的控制項**封裝設計工具**將組件加入封裝。 如需詳細資訊，請參閱  

@@ -10,15 +10,15 @@ helpviewer_keywords:
 - icons [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c5ecb22caaa7b86b4bc777b08e749d0fd75bd5e0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4d3bab7d79b60d763ae0e46831091dcc6860f672
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53873245"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54869092"
 ---
 # <a name="guidelines-to-create-outlook-form-regions"></a>若要建立 Outlook 表單區域的指導方針
   下列資訊可協助您最佳化表單區域及避免發生可能的問題：  
@@ -84,7 +84,7 @@ ms.locfileid: "53873245"
   
   **頁面** 圖示會出現在擁有獨立型、取代型或全部取代型表單區域之項目的偵測器功能區上。  
   
-  ** 視窗**圖示會出現在通知區域中，然後在**Alt**+**索引標籤**開啟的對話方塊中的項目，顯示取代型或全部取代型表單區域。  
+  **視窗** 圖示會出現在通知區域中，然後在 **Alt** +**索引標籤** 開啟的對話方塊中的項目，顯示取代型或全部取代型表單區域。  
   
 ## <a name="see-also"></a>另請參閱  
  [存取表單區域在執行階段](../vsto/accessing-a-form-region-at-run-time.md)   

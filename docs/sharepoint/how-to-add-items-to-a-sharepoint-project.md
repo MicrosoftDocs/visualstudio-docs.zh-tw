@@ -7,17 +7,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - SharePoint development in Visual Studio, adding items
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b10277945feb638764162d523066d49b9c6c7215
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7279631b84e67e8b95b56f4bc04a4d77ca3ebb0d
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53949676"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54867932"
 ---
 # <a name="how-to-add-items-to-a-sharepoint-project"></a>HOW TO：將項目加入至 SharePoint 專案
   SharePoint 方案包含一或多個專案，其中每一個包含多個 SharePoint 專案項目。 您開啟或建立 SharePoint 方案之後，您可以在這些專案中加入新的或現有的項目。 比方說，新的工作流程專案會隨附預設表單名為 default.aspx，但您可以使用新的或不同的表單，取代該表單，或新增另一種 ASPX 形式。  

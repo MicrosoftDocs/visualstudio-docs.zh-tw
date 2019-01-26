@@ -8,17 +8,17 @@ dev_langs:
 helpviewer_keywords:
 - workbooks, opening
 - Excel [Office development in Visual Studio], opening workbooks
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ab91a1e9a89edee013b559f1653c1607e7b8c884
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 59163e0e054e3546ada8c7ee7b7d23362ca96fba
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53860945"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54869891"
 ---
 # <a name="how-to-programmatically-open-workbooks"></a>HOW TO：以程式設計方式開啟活頁簿
   <xref:Microsoft.Office.Interop.Excel.Workbooks> Microsoft Office Excel 中的集合就可以使用 所有開啟的活頁簿，並開啟活頁簿。  

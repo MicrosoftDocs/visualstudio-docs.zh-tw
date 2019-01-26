@@ -15,17 +15,17 @@ dev_langs:
 helpviewer_keywords:
 - SharePoint development in Visual Studio, project and project item templates
 - SharePoint development in Visual Studio, templates
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 71590e2cd5ece2a025b2aef3dfa0baf612fb2808
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3f2479d58dfb8e1e28a2de230c0838ef8c8f3768
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53936291"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54872192"
 ---
 # <a name="sharepoint-project-and-project-item-templates"></a>SharePoint 專案與專案項目範本
   下列各節說明可用的 SharePoint 專案和專案項目範本，以及如何使用它們。 

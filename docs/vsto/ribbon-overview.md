@@ -13,17 +13,17 @@ helpviewer_keywords:
 - Ribbon [Office development in Visual Studio], multiple Ribbons
 - toolbars [Office development in Visual Studio]
 - custom Ribbon, multiple Ribbons
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ff1cda312fdc007c1c700d2edf6576dcc91d87e3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4022720a787801405915fe92a10b93a850a0d2f3
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53989198"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54867724"
 ---
 # <a name="ribbon-overview"></a>功能區概觀
   功能區是一種方式，使其更容易尋找到組織相關的命令。 命令會顯示為功能區上的控制項。 控制項分為*群組*沿著水平帶狀的應用程式視窗的頂端。 相關的群組會組織在索引標籤上。  
@@ -37,7 +37,7 @@ ms.locfileid: "53989198"
   
 - **功能區 （視覺化設計工具）**  
   
-- **功能區 (XML)**  
+- **Ribbon (XML)**  
   
   例如，若要自訂 Excel 功能區，請將功能區項目加入 Excel VSTO 增益集專案。  
   

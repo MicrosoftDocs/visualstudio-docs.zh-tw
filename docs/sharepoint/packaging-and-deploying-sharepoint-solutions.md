@@ -9,17 +9,17 @@ helpviewer_keywords:
 - packaging [SharePoint development in Visual Studio]
 - deploying [SharePoint development in Visual Studio]
 - SharePoint development in Visual Studio, packaging and deploying
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c1213d4dd2cdd347fe1d29f594fa7614df50b1e6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a50d7088cdeb868ef4170e3b4b76fbf129151626
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53849015"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54867633"
 ---
 # <a name="package-and-deploy-sharepoint-solutions"></a>封裝和部署 SharePoint 方案
   一般而言，SharePoint 解決方案會使用方案套件 (.wsp) 檔案部署到 SharePoint 伺服器。 若要將您的 SharePoint 專案項目組織成功能，並建立要部署您的 SharePoint 功能的套件，您可以使用 Visual Studio。  
@@ -80,7 +80,7 @@ ms.locfileid: "53849015"
   
   如需 [封裝總管] 中的詳細資訊，請參閱[How to:新增和移除功能和項目加入封裝時，使用 [封裝總管] 中](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer.md)。  
   
-### <a name="solution-explorer"></a>方案總管
+### <a name="solution-explorer"></a>底下提供說明，包括方案總管
  您可以使用 [方案總管] 來瀏覽並開啟 SharePoint 專案的檔案。 在 [方案總管] 中使用操作功能表，以加入功能，功能事件接收器，和功能的資源。 此外，您可以開啟功能設計工具與封裝設計工具，來設定部署套件的功能。  
   
 ## <a name="deploy-sharepoint-solutions"></a>部署 SharePoint 方案

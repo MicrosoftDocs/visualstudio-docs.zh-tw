@@ -25,17 +25,17 @@ helpviewer_keywords:
 - Visio [Office development in Visual Studio], project templates
 - Word projects in Visual Studio
 - Outlook [Office development in Visual Studio], project templates
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 399a4aa1e735426ee5fe63bca60d89fed1fd94a7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fc1cce8e951e074d45317a9908e7a8b7cbb04f43
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53940597"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54874688"
 ---
 # <a name="office-project-templates-overview"></a>Office 專案範本概觀
   Visual Studio 中的 Microsoft Office 開發人員工具包含專案範本，用來建立下列類型的 Office 方案：  

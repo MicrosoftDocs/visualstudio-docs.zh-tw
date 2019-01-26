@@ -10,15 +10,15 @@ helpviewer_keywords:
 - application manifests [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bd88f7978e7c848d925f21bae6a0a3ad27792e67
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c9c15d7435fa6f5267e413e3afd0fd6e4c7ea17c
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53950630"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54873700"
 ---
 # <a name="application-manifests-for-office-solutions"></a>Office 方案的應用程式資訊清單
   應用程式資訊清單是描述載入至 Microsoft Office 方案之組件的 XML 檔案。 Microsoft Office 開發工具，在 Visual Studio 中的使用[!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]應用程式資訊清單結構描述中定義[ClickOnce 應用程式資訊清單](../deployment/clickonce-application-manifest.md)參考。
@@ -28,7 +28,7 @@ ms.locfileid: "53950630"
 |元素|描述|屬性|
 |-------------|-----------------|----------------|
 |[&#60;組件&#62;項目&#40;ClickOnce 應用程式&#41;](../deployment/assembly-element-clickonce-deployment.md)|必要項。 最上層項目。|**manifestVersion**|
-|[&#60;組件識別&#62;項目&#40;ClickOnce 應用程式&#41;](../deployment/assemblyidentity-element-clickonce-deployment.md)|必要項。 識別 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] 應用程式的主要組件。|**name**<br /><br /> **version**<br /><br /> **publicKeyToken**<br /><br /> **ProcessorArchitecture**<br /><br /> **language**|
+|[&#60;組件識別&#62;項目&#40;ClickOnce 應用程式&#41;](../deployment/assemblyidentity-element-clickonce-deployment.md)|必要項。 識別 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] 應用程式的主要組件。|**name**<br /><br /> **version**<br /><br /> **publicKeyToken**<br /><br /> **processorArchitecture**<br /><br /> **language**|
 |[&#60;trustInfo&#62;項目&#40;ClickOnce 應用程式&#41;](../deployment/trustinfo-element-clickonce-application.md)|識別應用程式安全性需求。|無|
 |[&#60;entryPoint&#62;項目&#40;ClickOnce 應用程式&#41;](../deployment/entrypoint-element-clickonce-application.md)|必要項。 識別執行的應用程式程式碼進入點。|**name**<br /><br /> **dependencyName**<br /><br /> **customHostSpecified**|
 |[&#60;相依性&#62;項目&#40;ClickOnce 應用程式&#41;](../deployment/dependency-element-clickonce-deployment.md)|必要項。 識別執行應用程式所需的每個相依性。 選擇性地識別需要預先安裝的組件。|無|
@@ -74,16 +74,16 @@ ms.locfileid: "53950630"
 |[&#60;增益集&#62;項目&#40;Visual Studio 中的 Office 程式開發&#41;](../vsto/addin-element-office-development-in-visual-studio.md)|必要項。 將進入點儲存至單一命名空間。|無|
 |[&#60;entryPointsCollection&#62;項目&#40;Visual Studio 中的 Office 程式開發&#41;](../vsto/entrypointscollection-element-office-development-in-visual-studio.md)|必要項。 群組一或多個 Office 方案的所有組件。|**id**|
 |[&#60;進入點&#62;項目&#40;Visual Studio 中的 Office 程式開發&#41;](../vsto/entrypoints-element-office-development-in-visual-studio.md)|必要項。 群組所有組件以執行 Office 方案。|無|
-|[&#60;entryPoint&#62;項目&#40;Visual Studio 中的 Office 程式開發&#41;](../vsto/entrypoint-element-office-development-in-visual-studio.md)|必要項。 識別要在 Office 方案中執行的組件。|**class**<br /><br /> **合約**|
-|[&#60;更新&#62;項目&#40;Visual Studio 中的 Office 程式開發&#41;](../vsto/update-element-office-development-in-visual-studio.md)|必要項。 設定方案的更新。|**enabled**<br /><br /> **到期日**|
+|[&#60;entryPoint&#62;項目&#40;Visual Studio 中的 Office 程式開發&#41;](../vsto/entrypoint-element-office-development-in-visual-studio.md)|必要項。 識別要在 Office 方案中執行的組件。|**class**<br /><br /> **contract**|
+|[&#60;更新&#62;項目&#40;Visual Studio 中的 Office 程式開發&#41;](../vsto/update-element-office-development-in-visual-studio.md)|必要項。 設定方案的更新。|**enabled**<br /><br /> **expiration**|
 |[&#60;postActions&#62;項目&#40;Visual Studio 中的 Office 程式開發&#41;](../vsto/postactions-element-office-development-in-visual-studio.md)|選擇性。 群組在安裝 Office 方案後執行的所有部署後動作。|無|
 |[&#60;postAction&#62;項目&#40;Visual Studio 中的 Office 程式開發&#41;](../vsto/postaction-element-office-development-in-visual-studio.md)|選擇性。 識別部署後動作。|無|
 |[&#60;postActionData&#62;項目&#40;Visual Studio 中的 Office 程式開發&#41;](../vsto/postactiondata-element-office-development-in-visual-studio.md)|選擇性。 設定部署後動作的資料。|無|
 |[&#60;應用程式&#62;項目&#40;Visual Studio 中的 Office 程式開發&#41;](../vsto/application-element-office-development-in-visual-studio.md)|必要項。 將應用程式特定資訊包裝成單一節點。|無|
 |[&#60;自訂&#62;項目&#40;Visual Studio 中的 Office 程式開發&#41;](../vsto/customizations-element-office-development-in-visual-studio.md)|必要項。 將所有應用程式主機特定資訊儲存至不同的命名空間。|無|
 |[&#60;自訂&#62;項目&#40;Visual Studio 中的 Office 程式開發&#41;](../vsto/customization-element-office-development-in-visual-studio.md)|必要項。 將應用程式主機特定資訊儲存至不同的命名空間。|**xmlns**|
-|[&#60;文件&#62;項目&#40;Visual Studio 中的 Office 程式開發&#41;](../vsto/document-element-office-development-in-visual-studio.md)|只有文件層級方案才需要。 儲存自訂特定資訊。|**方案識別碼**|
-|[&#60;appAddin&#62;項目&#40;Visual Studio 中的 Office 程式開發&#41;](../vsto/appaddin-element-office-development-in-visual-studio.md)|只有應用程式層級方案才需要。 儲存自訂特定資訊。|**應用程式**<br /><br /> **LoadBehavior**<br /><br /> **keyName**|
+|[&#60;文件&#62;項目&#40;Visual Studio 中的 Office 程式開發&#41;](../vsto/document-element-office-development-in-visual-studio.md)|只有文件層級方案才需要。 儲存自訂特定資訊。|**solutionId**|
+|[&#60;appAddin&#62;項目&#40;Visual Studio 中的 Office 程式開發&#41;](../vsto/appaddin-element-office-development-in-visual-studio.md)|只有應用程式層級方案才需要。 儲存自訂特定資訊。|**application**<br /><br /> **loadBehavior**<br /><br /> **keyName**|
 |[&#60;friendlyName&#62;項目&#40;Visual Studio 中的 Office 程式開發&#41;](../vsto/friendlyname-element-office-development-in-visual-studio.md)|選擇性。 儲存出現在已安裝之 VSTO 增益集清單中的 VSTO 增益集名稱。|無|
 |[&#60;描述&#62;項目&#40;Visual Studio 中的 Office 程式開發&#41;](../vsto/description-element-office-development-in-visual-studio.md)|只有 VSTO 增益集才需要。儲存出現在已安裝之程式清單中的描述。|無|
 |[&#60;formRegions&#62;項目&#40;Visual Studio 中的 Office 程式開發&#41;](../vsto/formregions-element-office-development-in-visual-studio.md)|只有包含表單區域的 Outlook VSTO 增益集才需要。|無|

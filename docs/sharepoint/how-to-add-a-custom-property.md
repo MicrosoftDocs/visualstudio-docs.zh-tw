@@ -12,17 +12,17 @@ helpviewer_keywords:
 - Business Data Connectivity service [SharePoint development in Visual Studio], properties
 - Business Data Connectivity service [SharePoint development in Visual Studio], custom properties
 - BDC [SharePoint development in Visual Studio], custom properties
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 845e5c3862ef64a584e4f9033dbe481d454010f0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d9821b2ba9602c86916487bf3444eb74e2c0850c
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53913292"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54873830"
 ---
 # <a name="how-to-add-a-custom-property"></a>HOW TO：新增自訂屬性
   您可以將自訂屬性加入模型利用**屬性編輯器**。 您可以存取這些屬性來擷取資訊，例如連接字串和其他資料在執行階段的程式碼中。  

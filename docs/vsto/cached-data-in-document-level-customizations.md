@@ -15,15 +15,15 @@ helpviewer_keywords:
 - document-level customizations [Office development in Visual Studio], data model
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 25cfbeba37be0d11e05b4524f5e683cfa798da6e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 74a6c196bbde0ae6765627e768dd926b992d374d
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53964646"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54868270"
 ---
 # <a name="cached-data-in-document-level-customizations"></a>文件層級自訂中的快取的資料
   文件層級自訂的主要目標是將資料從 Office 文件中的檢視。 資料是指儲存在文件，包括數字和文字的資訊。 檢視是指使用者介面和 Microsoft Office Word 和 Microsoft Office Excel 物件模型。  
@@ -56,7 +56,7 @@ ms.locfileid: "53964646"
   
 ||資料快取|自訂 XML 組件|  
 |-|----------------|----------------------|  
-|哪些 Office 應用程式可以使用這些？|下列應用程式的文件層級自訂：<br /><br /> Excel<br />字組|下列應用程式的文件層級和應用程式層級解決方案：<br /><br /> Excel<br />-PowerPoint<br />字組|  
+|哪些 Office 應用程式可以使用這些？|下列應用程式的文件層級自訂：<br /><br /> -   Excel<br />-   Word|下列應用程式的文件層級和應用程式層級解決方案：<br /><br /> -   Excel<br />-   PowerPoint<br />-   Word|  
 |您可以儲存的資料類型？|您符合特定需求的自訂組件中的任何公用物件。 如需詳細資訊，請參閱 <<c0> [ 快取資料](../vsto/caching-data.md)。|任何的 XML 資料。|  
 |您可以存取的資料而不啟動 Microsoft Office 應用程式嗎？|是的是藉由使用<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument>所提供的類別[!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]。|是的是藉由使用中的類別<xref:System.IO.Packaging>命名空間，或使用 Open XML 格式 SDK。|  
   

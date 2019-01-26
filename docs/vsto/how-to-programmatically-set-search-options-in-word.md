@@ -10,17 +10,17 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], search options
 - Word, searching options
 - searching, Word options
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ec5b2f797371d19fea1b4fedc2064ab355ffac10
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 66bd4258d04259c5356ce459328012d50445de62
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53853381"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54874363"
 ---
 # <a name="how-to-programmatically-set-search-options-in-word"></a>HOW TO：以程式設計方式在 Word 中設定搜尋選項
   有兩種方式可在 Microsoft Office Word 文件中設定搜尋選項的選取項目：  

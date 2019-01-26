@@ -18,17 +18,17 @@ helpviewer_keywords:
 - customizing the Ribbon, defining behavior
 - Ribbon [Office development in Visual Studio], customizing
 - customizing the Ribbon, displaying
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: aec5c0d2fbbf46978a42cfe2808e708eb4a2b35e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d668e53738e1a77cfed4b84c7a292cdc503af6c3
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53929571"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54869433"
 ---
 # <a name="ribbon-xml"></a>功能區 XML
   功能區 (XML) 項目可讓您使用 XML 自訂功能區。 如果您想要自訂功能區的功能區 （視覺化設計工具） 項目不支援的方式，請使用功能區 (XML) 項目。 您可以使用每個項目進行比較，請參閱[功能區概觀](../vsto/Ribbon-overview.md)。  
@@ -115,9 +115,9 @@ ms.locfileid: "53929571"
   
 |元素|描述|  
 |-------------|-----------------|  
-|**前述的 customUI**|代表 VSTO 增益集專案中的自訂功能區。|  
+|**customUI**|代表 VSTO 增益集專案中的自訂功能區。|  
 |**ribbon**|代表功能區。|  
-|**索引標籤**|代表一組功能區索引標籤。|  
+|**tabs**|代表一組功能區索引標籤。|  
 |**索引標籤**|代表單一功能區索引標籤。|  
 |**group**|代表功能區索引標籤上的控制項群組。|  
   
@@ -125,10 +125,10 @@ ms.locfileid: "53929571"
   
 |屬性|父項目|描述|  
 |---------------|--------------------|-----------------|  
-|**onLoad**|**前述的 customUI**|識別應用程式載入功能區時，會呼叫的方法。|  
+|**onLoad**|**customUI**|識別應用程式載入功能區時，會呼叫的方法。|  
 |**idMso**|**索引標籤**|識別要顯示在功能區中的內建索引標籤。|  
 |**id**|**group**|識別群組。|  
-|**標籤**|**group**|指定出現在群組上的文字。|  
+|**label**|**group**|指定出現在群組上的文字。|  
   
  功能區 XML 檔案中的預設項目和屬性是可用項目和屬性的小型子集。 如需可用的項目和屬性的完整清單，請參閱技術文件[適用於開發人員 (第 2 部分為 3) 自訂 Office (2007) 功能區使用者介面](/previous-versions/office/developer/office-2007/aa338199(v=office.12))。  
   
