@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 96ba07ca-0811-4013-8602-12550ac4ba79
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 73626b9fcd756041d9a14a270644dca4acfcb64e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1887ff23bc6b4c2e3880d8ed1d3e4b2dc98b36f9
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53864747"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54950451"
 ---
 # <a name="get-project-properties"></a>取得專案屬性
 本逐步解說示範如何在工具視窗中顯示專案內容。  

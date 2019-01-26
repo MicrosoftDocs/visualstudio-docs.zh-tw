@@ -12,18 +12,18 @@ helpviewer_keywords:
 ms.assetid: a762ea2f-5285-4f73-bfb9-9eb10aea4290
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: c0221231956c565eb2ce3792d0c88864b0e13e65
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a94654475432706592c3cd2845488163529ca260
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53839319"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54943217"
 ---
 # <a name="ca1405-com-visible-type-base-types-should-be-com-visible"></a>CA1405:COM 可見類型的基底類型應該是 COM 可見
 

@@ -6,15 +6,15 @@ ms.prod: visual-studio-dev15
 ms.assetid: b3a8a785-5928-457a-8a50-30267e29503d
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9540fd6ec203b990f53294e41ee829c9e3be897b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1348e958fa4b4871036794238ea3fb19fddb5745
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53914977"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54983816"
 ---
 # <a name="how-to-add-activities-to-the-toolbox"></a>HOW TO：將活動新增至工具箱
 

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: e5523e45-d350-491e-a92c-fe0ca97d2052
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a58914186b09fe25fe67c8c6f914d3515615bd2a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: da72bcbe32a4de2760d7b42a580c0550b5cfa17f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53871036"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54944731"
 ---
 # <a name="idebugclassfieldenuminterfacesimplemented"></a>IDebugClassField::EnumInterfacesImplemented
 建立這個類別所實作之介面的列舉值。  

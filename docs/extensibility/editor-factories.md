@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: cf4e8164-3546-441d-b465-e8a836ae7216
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 998aae3efed362e07c07ae1933f2a6858b4f54b5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 961b71d7bf5a28eb91bef24b84c13f72de424628
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53887353"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54958026"
 ---
 # <a name="editor-factories"></a>編輯器 factory
 編輯器 factory 建立編輯器的物件，並將它們放在視窗框架內，又稱為實體的檢視。 它會建立文件資料及建立編輯器和設計工具所需的文件檢視物件。 編輯器 factory，才能建立 Visual Studio 核心編輯器和任何標準的編輯器。 也可以使用編輯器 factory 來建立自訂編輯器。  

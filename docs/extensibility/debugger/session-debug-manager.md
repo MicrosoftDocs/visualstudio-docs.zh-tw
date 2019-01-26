@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: fbb1928d-dddc-43d1-98a4-e23b0ecbae09
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 014ac5b4c310b97fb1c041eeaededef8c97ab88b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 321b0a7c7eb2a30465098da39abc49cbc9261e11
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53905354"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54947201"
 ---
 # <a name="session-debug-manager"></a>工作階段偵錯管理員
 工作階段的偵錯管理員 (SDM) 管理任何偵錯引擎 (DE) 要進行偵錯跨任意數目的機器的任意數目的多個處理序中的程式的數目。 除了多工器的偵錯引擎，SDM 提供 ide 的偵錯工作階段的統一的檢視。  

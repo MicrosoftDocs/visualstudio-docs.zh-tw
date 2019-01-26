@@ -1,5 +1,5 @@
 items:
-- name: Visual Studio 中的 C#
+- name: C# 教學課程
   href: index.yml
   items:
   - name: 總覽
@@ -12,7 +12,7 @@ items:
       href: tutorial-projects-solutions.md
     - name: 更多 Visual Studio 功能
       href: ../../ide/advanced-feature-overview.md?toc=/visualstudio/csharp/toc.json&bc=/visualstudio/csharp/breadcrumb/toc.json
-  - name: 教學課程
+  - name: 建立應用程式
     items:
     - name: 建立您的第一個 C# 應用程式
       href: tutorial-console.md
@@ -37,9 +37,10 @@ items:
       href: ../../deployment/index.md
     - name: 存取資料
       href: ../../data-tools/create-a-sql-database-by-using-a-designer.md?toc=/visualstudio/csharp/toc.json&bc=/visualstudio/csharp/breadcrumb/toc.json
-ms.openlocfilehash: cb9bc5df898e902292b2cf53bcb43f72f4464454
-ms.sourcegitcommit: a715de2ba8c703f37aa2102567b1aa2c0f05a117
+    expanded: true
+ms.openlocfilehash: d87b0861c007490137dd6e3f164173616f12f66f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "53442933"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54993997"

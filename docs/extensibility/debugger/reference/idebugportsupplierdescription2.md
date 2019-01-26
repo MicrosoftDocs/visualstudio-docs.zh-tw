@@ -1,5 +1,5 @@
 ---
-title: IDebugPortSupplierDescription2 |Microsoft Docs
+title: IDebugPortSupplierDescription2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: dd19b9d6-0703-44b3-9498-cedffa0ce5b7
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f6387708232c97a25ea11fc554d250e14e6b66e8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 49ee702c33c322a88c2124b6c6002c5f1fd82d10
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53818335"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54966003"
 ---
 # <a name="idebugportsupplierdescription2"></a>IDebugPortSupplierDescription2
 可讓[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]UI，以顯示內部文字**傳輸資訊**一節**附加至處理序** 對話方塊。  

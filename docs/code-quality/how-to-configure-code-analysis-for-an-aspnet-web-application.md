@@ -7,15 +7,15 @@ f1_keywords:
 - vs.codeanalysis.propertypages.asp
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: a781e918a925ebd43110339e03d528a4cf6b3c70
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1483ba4ea8e726ed61dc7c65ec486d420dbeb8a2
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53853027"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55021932"
 ---
 # <a name="how-to-configure-code-analysis-for-an-aspnet-web-application"></a>HOW TO：設定 ASP.NET Web 應用程式的程式碼分析
 

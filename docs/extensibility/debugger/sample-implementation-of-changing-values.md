@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: ee2d955b-12ca-4f27-89aa-c2d0e768b6b6
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ca91ed6fbcbef872332fe309370f420bc4ff2505
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f8701241de5b1e9266069a5eebe14e534ba96cfa
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53895710"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55041512"
 ---
 # <a name="sample-implementation-of-changing-values"></a>變更值的範例實作
 > [!IMPORTANT]
