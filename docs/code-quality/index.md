@@ -7,13 +7,13 @@ ms.prod: visual-studio-dev15
 ms.topic: landing-page
 ms.author: gewarren
 author: gewarren
-manager: douge
-ms.openlocfilehash: c5a4d238c897b60258d87ed231d6d4cced26e476
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 811925de93c3be02800c1c7ce4f6f40565881c13
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53936629"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54970899"
 ---
 # <a name="code-analysis-in-visual-studio"></a>Visual Studio 中的程式碼分析
 

@@ -7,13 +7,13 @@ ms.topic: landing-page
 ms.prod: visual-studio-dev15
 ms.author: mikejo
 author: mikejo5000
-manager: douge
-ms.openlocfilehash: 875549bcc1158542fe19da05711a6d39bb4efb25
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 48a7bf6cabaf7cf6c9ccaf675989d8f39e2b2211
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53893454"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54954601"
 ---
 # <a name="deployment-in-visual-studio"></a>Visual Studio 中的部署
 

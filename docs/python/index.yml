@@ -1,10 +1,10 @@
 ### YamlMime:YamlDocument
-ms.openlocfilehash: 693ef554635db44e96f2feaa2bb05e595e8e62a8
-ms.sourcegitcommit: a715de2ba8c703f37aa2102567b1aa2c0f05a117
+ms.openlocfilehash: 5dc39dbaa7f86763fbcdda391814dc26ec74c3de
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "53441914"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54923632"
 documentType: LandingData
 title: Visual Studio | Python
 metadata:
@@ -12,7 +12,7 @@ metadata:
   titleSuffix: ''
   meta.description: Tutorials and conceptual articles about developing Python apps with Visual Studio.
   author: kraigb
-  manager: douge
+  manager: jillfra
   ms.prod: visual-studio-dev15
   ms.technology: vs-python
   ms.topic: landing-page
