@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 17fe4698-b04e-4798-8412-80e0da60c387
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1d0c3862468d5ad1a9c548297a69d9ae10521e59
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7a27d0dd5c501076f7ee2354736b989a441395df
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53964373"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54954952"
 ---
 # <a name="idebugengine2causebreak"></a>IDebugEngine2::CauseBreak
 其中一個其執行緒嘗試執行要求的所有程式進行偵錯此偵錯引擎 (DE) 來停止執行下一次。  

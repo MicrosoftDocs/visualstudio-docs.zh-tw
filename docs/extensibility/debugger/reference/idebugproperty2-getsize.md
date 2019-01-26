@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 0deb8ec5-d6fb-4622-bb14-0c46b9459cc6
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9371ff0ba43a6d7332649b21363a6b4950097f74
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 863554c6412bc15d4da5e72a6ae3eff586332535
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53855586"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54984206"
 ---
 # <a name="idebugproperty2getsize"></a>IDebugProperty2::GetSize
 取得大小，以位元組為單位的屬性值。  

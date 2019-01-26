@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 822cbb8d-7ab4-40ee-bd12-44016ebcce81
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 785e47a337eb33eb9416705a4c2c647a99f611d7
-ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
+ms.openlocfilehash: 803fd69df06ae820e39d7edcfa54e56e59717a1c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54204517"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54963108"
 ---
 # <a name="inside-the-editor"></a>在編輯器內
 

@@ -1,5 +1,5 @@
 ---
-title: IDebugBreakpointRequest2 |Microsoft Docs
+title: IDebugBreakpointRequest2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 01ac4013-96f9-4235-b289-f55f9e99558f
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a29ddfa8e525e145143ae06e69cfed050b42a992
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e61b89fb889a2e274c482e083610b97a19f57f5c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53991080"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55001978"
 ---
 # <a name="idebugbreakpointrequest2"></a>IDebugBreakpointRequest2
 這個介面會表示建立並繫結任何中斷點類型的所需的資訊。  

@@ -5,15 +5,15 @@ ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c1f997cc04c69e1641a12a86b2a85a8a5fd81e90
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 99289b510c010b935c242eebb00ca2305f7f444a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53819779"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55000922"
 ---
 # <a name="xml-editor-components"></a>XML 編輯器元件
 

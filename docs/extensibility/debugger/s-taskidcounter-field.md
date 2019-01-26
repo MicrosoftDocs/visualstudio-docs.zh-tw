@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 7e5a1907-c652-4046-b207-d2f1ef7b8029
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d62e91274d7576360152512a9b42d8203199a297
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c0017e058c4ada52545c517a04c4babeb02b7442
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53870082"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55041447"
 ---
 # <a name="staskidcounter-field"></a>s_taskIdCounter 欄位
 下一個可用的識別項，如<xref:System.Threading.Tasks.Task>物件。  

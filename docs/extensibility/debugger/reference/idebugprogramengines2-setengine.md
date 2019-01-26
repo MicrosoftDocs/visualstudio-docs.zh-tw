@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramEngines2::SetEngine |Microsoft Docs
+title: IDebugProgramEngines2::SetEngine | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: c05857ee-89cf-455e-8f1e-300cce4a2eab
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8c77cffc8b30d09e4136c6bdd94f30da85a4a77b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 66861a6af435d1c26657cc37f73995c80f1c005f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53916055"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54985522"
 ---
 # <a name="idebugprogramengines2setengine"></a>IDebugProgramEngines2::SetEngine
 會告訴程式節點的程式的偵錯引擎 (DE) 使用偵錯此程式。  

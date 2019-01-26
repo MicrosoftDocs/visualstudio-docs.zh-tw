@@ -1,5 +1,5 @@
 ---
-title: IDebugBoundBreakpoint2::Delete |Microsoft Docs
+title: IDebugBoundBreakpoint2::Delete | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 7088dc66-f24a-446f-a52a-397d02457a41
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: af0263c4fe52373f736db4da2b9c6648eba6a0f3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3890beda8845da06b9c46bb4fb651f12504d91ca
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53876769"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55014675"
 ---
 # <a name="idebugboundbreakpoint2delete"></a>IDebugBoundBreakpoint2::Delete
 刪除中斷點。  

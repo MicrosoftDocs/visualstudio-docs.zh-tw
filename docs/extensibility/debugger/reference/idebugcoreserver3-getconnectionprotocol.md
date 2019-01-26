@@ -1,5 +1,5 @@
 ---
-title: IDebugCoreServer3::GetConnectionProtocol |Microsoft Docs
+title: IDebugCoreServer3::GetConnectionProtocol | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 368ced5b-c5d9-4090-a5b4-26ff400d1a55
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c30789d0d5a0b0de20496e686a8100e092a0a4fe
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 649550446fb610ebab542fc927041f71c8af33a3
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53929250"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55017756"
 ---
 # <a name="idebugcoreserver3getconnectionprotocol"></a>IDebugCoreServer3::GetConnectionProtocol
 傳回值，指出用來在伺服器和偵錯封裝之間進行通訊的通訊協定。  
