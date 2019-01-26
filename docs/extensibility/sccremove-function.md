@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 20830fdc-c0e9-4a5f-bf60-33f28874442f
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2b07706fd7e74011a87d0eb67c8a158208ac95a6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4db8360f6874f8e2c506aefb153c663670fa5cba
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53818426"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55014831"
 ---
 # <a name="sccremove-function"></a>SccRemove 函式
 此函式會從原始檔控制系統中刪除檔案。  
@@ -52,7 +52,7 @@ SCCRTN SccRemove(
  lpComment  
  [in]要套用至要移除的每個檔案的註解。  
   
- Stored  
+ fOptions  
  [in]命令的旗標 （未使用）。  
   
  pvOptions  

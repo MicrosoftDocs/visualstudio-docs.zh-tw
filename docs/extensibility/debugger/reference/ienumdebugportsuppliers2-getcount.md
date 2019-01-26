@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugPortSuppliers2::GetCount |Microsoft Docs
+title: IEnumDebugPortSuppliers2::GetCount | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 004f78dd-87d0-41a8-bcaa-f7fadbfeb8fc
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: eab7639eade177c86a6c1055603f8f84e2097cde
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ebf1b38c991665331f5ea0a87ba464684d6c7e60
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53894700"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55007005"
 ---
 # <a name="ienumdebugportsuppliers2getcount"></a>IEnumDebugPortSuppliers2::GetCount
 列舉中傳回的項目數。  

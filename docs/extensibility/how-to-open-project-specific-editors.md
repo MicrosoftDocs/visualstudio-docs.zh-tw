@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 83e56d39-c97b-4c6b-86d6-3ffbec97e8d1
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 96f760163fcbe80e53cca78f7d554563ff6b7225
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2e2d680bb1342b66ac8fc063ff2fb840c63d05cf
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53934410"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55010112"
 ---
 # <a name="how-to-open-project-specific-editors"></a>HOW TO：開啟專案特定的編輯器
 如果在開啟的專案項目檔本質上繫結至特定的編輯器中為該專案，專案必須使用專案特定編輯器開啟檔案。 檔案無法委派到 IDE 的機制，來選取一個編輯器。 比方說，而不是使用標準的點陣圖編輯器中，您可以使用此專案特定編輯器選項來指定特定的點陣圖編輯器可辨識對您的專案是唯一的檔案中的資訊。  

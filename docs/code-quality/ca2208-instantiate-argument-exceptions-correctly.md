@@ -12,19 +12,19 @@ helpviewer_keywords:
 ms.assetid: e2a48939-d9fa-478c-b2f9-3bdbce07dff7
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CPP
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 64b44ea52c446b4264bfaf8f63f4099e4e6025b6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8ef4e23f0200f17c0f6d59789538352d9e1676ce
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53844154"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54980176"
 ---
 # <a name="ca2208-instantiate-argument-exceptions-correctly"></a>CA2208:必須正確執行個體化引數例外狀況
 

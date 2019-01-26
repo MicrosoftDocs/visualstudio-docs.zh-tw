@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 10e70aa7-9381-40d3-bdd1-d2cad78ef16c
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b63a2635bcfaf80dea06659ec1472fc93bc6797a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 22f0157515dcd73ef9d75ecead611dc871baff67
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53856380"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55002622"
 ---
 # <a name="disassemblydata"></a>DisassemblyData
 描述一個反組譯碼指令的整合式的開發環境 (IDE) 來顯示。  

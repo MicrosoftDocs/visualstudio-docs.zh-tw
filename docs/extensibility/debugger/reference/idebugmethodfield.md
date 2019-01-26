@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: a7dc9030-fc98-4cf1-b943-37a4003300b6
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ba7ea690cdf89bd76474ddb0e863b629137e7242
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c0e7f68b3854d992a55dfe237277a6bc69605fff
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53922464"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55007969"
 ---
 # <a name="idebugmethodfield"></a>IDebugMethodField
 此介面描述的方法。  

@@ -1,5 +1,5 @@
 ---
-title: IDebugPortSupplierLocale2 |Microsoft Docs
+title: IDebugPortSupplierLocale2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 910e7220-da2a-4339-9fff-9fb1bad3c28c
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c41d3bf89403344d80659074f0f486a90f089c55
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 000122ede98b66a2a5b3cd8eafe5668fc5b2dc2d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53915977"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55027800"
 ---
 # <a name="idebugportsupplierlocale2"></a>IDebugPortSupplierLocale2
 提供連接埠提供者的地區設定支援。  

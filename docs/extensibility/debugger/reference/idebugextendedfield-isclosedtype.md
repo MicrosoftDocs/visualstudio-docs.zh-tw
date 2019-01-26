@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 9136fc57-74ff-4fe4-a6e2-b137cb9d5b08
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ae7d6010bcc7c80f6b61c04242e5f335e3a3f013
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6b3c1badda9933c97761d3bf209380ba0c822b7f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53850670"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55002791"
 ---
 # <a name="idebugextendedfieldisclosedtype"></a>IDebugExtendedField::IsClosedType
 決定是否表示封閉式的型別欄位。  

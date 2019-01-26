@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 2b8e6dce-b4e8-4a66-ba9a-6b79be5bfe8c
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e8923f3bb1ae4fe92891593c2109852810beb4e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5fa39e361d7659e4508c916fc7681ac3b0c5fdd1
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53944706"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55029852"
 ---
 # <a name="ca1710-identifiers-should-have-correct-suffix"></a>CA1710:識別項應該使用正確的後置字元
 
@@ -60,7 +60,7 @@ ms.locfileid: "53944706"
 |<xref:System.IO.Stream?displayProperty=fullName>|資料流|
 |<xref:System.Security.IPermission?displayProperty=fullName>|權限|
 |<xref:System.Security.Policy.IMembershipCondition?displayProperty=fullName>|條件|
-|事件處理常式委派。|事件處理常式|
+|事件處理常式委派。|EventHandler|
 
 型別都會實作<xref:System.Collections.ICollection>而產生的類型的資料結構，例如字典、 堆疊或佇列，可提供之型別的預定的使用方式的有意義資訊的名稱。
 
