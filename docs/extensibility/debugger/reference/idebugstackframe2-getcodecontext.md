@@ -1,5 +1,5 @@
 ---
-title: IDebugStackFrame2::GetCodeContext |Microsoft Docs
+title: IDebugStackFrame2::GetCodeContext | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 93d66159-a41d-49ef-982f-91bb4d073b74
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6a3a4446c1f466767ca91a6e9da22af7790c20b7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 471dd58d20fb6a92acc44a1357129d71e881a33f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53986553"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55001442"
 ---
 # <a name="idebugstackframe2getcodecontext"></a>IDebugStackFrame2::GetCodeContext
 取得此堆疊框架的程式碼內容。  

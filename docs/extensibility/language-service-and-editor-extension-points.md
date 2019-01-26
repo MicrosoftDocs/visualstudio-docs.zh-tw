@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 91a6417e-a6fe-4bc2-9d9f-5173c634a99b
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d99916c31e35f7494a402ff4c5d1a7b182a0c52d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: abc4824a3e90250401d720aefedda80189419c85
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53907958"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55010047"
 ---
 # <a name="language-service-and-editor-extension-points"></a>語言服務及編輯器擴充點
 編輯器會提供您可以擴充為 Managed Extensibility Framework (MEF) 元件組件，其中包括大部分的語言服務功能的擴充點。 這些是主要擴充點類別：  
@@ -91,7 +91,7 @@ internal static ContentTypeDefinition TestContentTypeDefinition;
   
 - ENC  
   
-- 裡  
+- FindResults  
   
 - F#  
   
@@ -176,7 +176,7 @@ internal static ClassificationTypeDefinition CSharpTestDefinition;
   
 - 「 其他錯誤 」  
   
-- 「 警告 」  
+- "warning"  
   
   若要探索可用的分類類型的清單，匯入<xref:Microsoft.VisualStudio.Text.Classification.IClassificationTypeRegistryService>，可維護之編輯器的分類類型集合。 下列程式碼中，會匯入這項服務做為屬性。  
   

@@ -1,5 +1,5 @@
 ---
-title: IDebugObject::SetReferenceValue |Microsoft Docs
+title: IDebugObject::SetReferenceValue | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 08c78a4e-98eb-41cb-8b75-02a6a43d49f7
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4e107408b27ffcbb057452030172a49d8027b422
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bd1c00dc1ecd3f90c3dce6f9526957c462303451
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53958406"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55004418"
 ---
 # <a name="idebugobjectsetreferencevalue"></a>IDebugObject::SetReferenceValue
 設定參考值，這個物件。  

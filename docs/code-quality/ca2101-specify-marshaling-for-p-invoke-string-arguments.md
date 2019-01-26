@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 9d1abfc3-d320-41e0-9f6e-60cefe6ffe1b
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 778668f799f325aee98334e243a0501a185a9ceb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 52f7e6e0a09bf4b6b11d5cbdab3ab86cfa79724c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53915641"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54971516"
 ---
 # <a name="ca2101-specify-marshaling-for-pinvoke-string-arguments"></a>CA2101:必須指定 P/Invoke 字串引數的封送處理
 

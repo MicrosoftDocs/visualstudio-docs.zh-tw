@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 7a7e01c3-ae7d-4c82-a646-91b58864a749
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 27372856d8984a1c16741142a4affec757670b32
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7046daecf2a133d44836c178cb42b45a286bb4b6
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53914630"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55018172"
 ---
 # <a name="ca1700-do-not-name-enum-values-39reserved39"></a>CA1700:不要在列舉值名稱&#39;保留&#39;
 

@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: e8747d07-6c90-46cc-b425-55b589f7e9e4
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bca879905e524e80205878034773349ddff06460
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d92a8ae5d0581ae5b36276fcf857371d0ae2f8b8
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53907161"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54993440"
 ---
 # <a name="ui-text-and-help-for-visual-studio"></a>UI 文字與說明適用於 Visual Studio
 ##  <a name="BKMK_UITextAndTerminology"></a> UI 文字和術語  
@@ -68,7 +68,7 @@ ms.locfileid: "53907161"
   
  **Visual Studio 中的補充文字**  
   
-#### <a name="infotips"></a>資訊提示  
+#### <a name="infotips"></a>InfoTips  
  通常，指示的文字可能太長的時間來定位 UI 中的就地或可能是新的使用者，混亂的情形有經驗的使用者，都覺得很有用。 在此情況下，指示/資訊文字應該放在工具提示的工具提示的形式。  
   
  資訊提示應該放置該控制它們與相關，而且應該使用尚不顯眼的特定資訊提示圖示附近明顯。  
@@ -281,7 +281,7 @@ ms.locfileid: "53907161"
 #### <a name="instructional-and-supplemental-text-in-dialogs"></a>在對話方塊中的指示和補充文字  
  在支援複雜工作的對話，可能需要通常頂端或附近複雜的控制項的對話方塊提供 UI，內的說明文字。 請參閱[UI 文字和術語](../../extensibility/ux-guidelines/ui-text-and-help-for-visual-studio.md#BKMK_UITextAndTerminology)如需有關撰寫樣式。  
   
-#### <a name="infotips"></a>資訊提示  
+#### <a name="infotips"></a>InfoTips  
  通常，說明文字可能太長的時間，在 UI 中的位置，或可能是新的使用者，混亂的情形有經驗的使用者，都覺得很有用。 在此情況下，指示/資訊文字應該放在工具提示的工具提示的形式。  
   
  資訊提示應該放置該控制它們與相關，而且應該使用尚不顯眼的特定資訊提示圖示附近明顯。  

@@ -1,5 +1,5 @@
 ---
-title: IDebugSettingsCallback2::GetMetricDword |Microsoft Docs
+title: IDebugSettingsCallback2::GetMetricDword | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 831a5a1a-c4af-4520-9fdf-3a731aeff85c
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d2c398de36339b97ce38fd3e594ec3bff32d1149
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: eb4331dec219e31c3e0151ebc3475ebbf5c99a04
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53831072"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54988216"
 ---
 # <a name="idebugsettingscallback2getmetricdword"></a>IDebugSettingsCallback2::GetMetricDword
 擷取值，指定其名稱的度量資訊。  

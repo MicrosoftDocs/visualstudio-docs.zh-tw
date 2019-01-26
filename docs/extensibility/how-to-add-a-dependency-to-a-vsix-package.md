@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 8f20177b-dab9-43a3-b959-81a591b451d6
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7ce21c10f1a64bf8edad9181d66b83291d0405c4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ba9f1f5f1d656dc2283d9cc943ca03f752cb5067
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53902476"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55000077"
 ---
 # <a name="how-to-add-a-dependency-to-a-vsix-package"></a>HOW TO：將相依性加入至 VSIX 封裝
 

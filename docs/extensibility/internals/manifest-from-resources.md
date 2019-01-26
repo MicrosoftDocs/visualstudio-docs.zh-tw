@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 0234109b-5dcb-4d9d-acb9-a63f8bd5699c
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f1affa200527e770dc87c51c4bb6f7b8a088fcc0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 286ec5b71691777af601c00e26c2db5772bd5f1a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53959364"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54993971"
 ---
 # <a name="manifest-from-resources"></a>來自資源的資訊清單
 從 [資源] 工具的資訊清單是根據影像資源 （.png 或.xaml 檔案） 的清單，並產生.imagemanifest 檔案，讓這些映像來搭配 Visual Studio 映像服務的主控台應用程式。 此外，此工具可用來將影像新增至現有的.imagemanifest。 這項工具可用於新增高 DPI 和佈景主題的 Visual Studio 延伸模組的映像的支援。 產生的.imagemanifest 檔案應包含在和 Visual Studio 擴充功能 (.vsix) 的一部分部署。  
@@ -21,7 +21,7 @@ ms.locfileid: "53959364"
 ## <a name="how-to-use-the-tool"></a>如何使用工具  
  **語法**  
   
- ManifestFromResources /resources:\<Dir1 >;\<Img1 > /assembly:\<組件名稱 >\<選擇性引數 >  
+ ManifestFromResources /resources:\<Dir1>;\<Img1> /assembly:\<AssemblyName> \<Optional Args>  
   
  **引數**  
   
@@ -43,9 +43,9 @@ ms.locfileid: "53959364"
   
  **範例**  
   
--   ManifestFromResources /resources:D:\Images /assembly:My.Assembly.Name /isNative  
+-   ManifestFromResources /resources:D:\Images                       /assembly:My.Assembly.Name                       /isNative  
   
--   ManifestFromResources /resources:D:\Images\Image1.png;D:\Images\Image1.xaml /assembly:My.Assembly.Name /manifest:MyImageManifest.imagemanifest  
+-   ManifestFromResources /resources:D:\Images\Image1.png;D:\Images\Image1.xaml                       /assembly:My.Assembly.Name                       /manifest:MyImageManifest.imagemanifest  
   
 -   ManifestFromResources /resources:D:\Images\Image1.png;D:\Images\Image1.xaml /assembly:My.Assembly.Name /guidName:MyImages /newGuids /newIds  
   

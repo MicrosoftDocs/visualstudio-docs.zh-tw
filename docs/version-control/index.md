@@ -4,7 +4,7 @@ title: 版本控制
 description: Visual Studio 中的版本控制使用者入門指南
 keywords: VSTS, TFS, 版本控制
 author: steved0x
-ms.manager: douge
+ms.manager: jillfra
 ms.author: sdanie
 ms.date: 12/15/2017
 ms.topic: landing-page
@@ -12,12 +12,12 @@ ms.prod: .net-core
 ms.assetid: 2c119a5f-0272-48c0-8d6c-806196944aea
 ms.workload:
 - multiple
-ms.openlocfilehash: 3640fba7d1ca3993841adb94dfdd08bc7d405e9b
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: edcf47601007e3249c58dd8ad215c5ba1fd3bf83
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51348158"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54998920"
 ---
 # <a name="version-control-in-visual-studio"></a>Visual Studio 中的版本控制
 
