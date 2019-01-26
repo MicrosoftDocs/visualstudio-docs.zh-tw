@@ -6,15 +6,15 @@ ms.topic: conceptual
 ms.assetid: 344940bd-c41e-4ed9-8458-3e3aa8e6bb37
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d62f95b934e2dc292aca1716223be2458e778c1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a2338a2111efba3b97b3a29d4f6e5576af5b4e0a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53923383"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54986686"
 ---
 # <a name="debugging-xslt"></a>偵錯 XSLT
 

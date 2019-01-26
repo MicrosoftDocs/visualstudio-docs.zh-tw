@@ -1,5 +1,5 @@
 ---
-title: IDebugBinder::ResolveDynamicType |Microsoft Docs
+title: IDebugBinder::ResolveDynamicType | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 2c36ef92-5b44-4cfd-988e-54a2e5a6710c
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c57c5c9a5974f42b7e7e6908d4b3951f2e7d48d2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 77d2b89d861cc21321759ffc7628d59d258455c7
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53960770"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55042032"
 ---
 # <a name="idebugbinderresolvedynamictype"></a>IDebugBinder::ResolveDynamicType
 這個方法會傳回變數的確切型別。  
