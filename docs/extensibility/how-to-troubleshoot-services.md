@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 001551da-4847-4f59-a0b2-fcd327d7f5ca
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ce33e86714c68d8eac39dca236e67b156187448d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 827c4e4aa1857790e090e34c179bffa4a4f439a1
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53877938"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55040355"
 ---
 # <a name="how-to-troubleshoot-services"></a>HOW TO：針對服務進行疑難排解
 有數個常見的問題，當您嘗試取得服務時，可能會發生：  

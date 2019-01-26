@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 2ac5b5fb-da17-43f7-811a-313f677e60d7
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d523a055f27961fe0d7676ba4f8e914b3d0f97be
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: dffc2bbd858fa7c8bcc31825de79dcdc4b9a60ac
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53950156"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55040186"
 ---
 # <a name="idebugevent2getattributes"></a>IDebugEvent2::GetAttributes
 取得這個偵錯事件的屬性。  

@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: d0861e0c-b819-490c-9604-5e6d08ac291a
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 671fc36da33cde3617ef15ad31c5a245c494cb6f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 441f5c470f97012da7c63f79f06dd08f810c1d0a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53850315"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54945329"
 ---
 # <a name="process-debug-manager"></a>處理序偵錯管理員
 處理序偵錯管理員 (PDM) 是管理程式的 Visual Studio 的元件和程序，以提供給工作階段偵錯管理員和偵錯引擎。  

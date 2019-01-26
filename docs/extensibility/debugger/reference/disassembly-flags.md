@@ -1,5 +1,5 @@
 ---
-title: DISASSEMBLY_FLAGS |Microsoft Docs
+title: DISASSEMBLY_FLAGS | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: c1ec5a4d-5d42-4660-932c-7348550140cb
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7b0e4f793b0dcfe7a8a35bfeb06a3acd53c969d5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ada1fba496051d3e71b21c94e61c951f7c14c6c4
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53960985"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55036429"
 ---
 # <a name="disassemblyflags"></a>DISASSEMBLY_FLAGS
 指定反組譯碼的旗標。  

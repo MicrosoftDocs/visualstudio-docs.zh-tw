@@ -1,5 +1,5 @@
 ---
-title: IDebugBinder3::GetTypeArgumentCount |Microsoft Docs
+title: IDebugBinder3::GetTypeArgumentCount | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: caf68de6-6f7c-4efd-b803-121347a5032e
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3ffe64b5977ce57130d2c97720442a4b030c1ac4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2f0a3e0b67c120e4f0c6712c6e47e35e7c370cce
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53986176"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54948098"
 ---
 # <a name="idebugbinder3gettypeargumentcount"></a>IDebugBinder3::GetTypeArgumentCount
 這個方法會傳回與這個物件相關聯的引數類型的數目。  

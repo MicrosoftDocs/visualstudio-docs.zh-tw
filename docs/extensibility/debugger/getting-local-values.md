@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: a10b0764-65ac-476f-bf42-b4a9c38e20de
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8b00453228157970afcca4da50080f32b9d58367
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b0b2fd47242cb5d0fd3daea35a19e18549bda036
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53933806"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55038457"
 ---
 # <a name="get-local-values"></a>取得本機值
 > [!IMPORTANT]

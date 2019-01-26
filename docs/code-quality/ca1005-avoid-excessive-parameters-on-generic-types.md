@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 372b2f28-5c59-4815-9753-6c65b2bb3589
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 502a51af172acce0e10eb16e1ee62524c20194f2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b4af6f870723e65f414c3f05762cdc74c19dea53
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53960572"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55031085"
 ---
 # <a name="ca1005-avoid-excessive-parameters-on-generic-types"></a>CA1005：避免在泛型類型上包含過多參數
 

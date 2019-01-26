@@ -1,5 +1,5 @@
 ---
-title: FIELD_MODIFIERS |Microsoft Docs
+title: FIELD_MODIFIERS | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 1e44681c-1f03-41a9-9c04-b79f231b0822
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 84275f107872358f027a85843c3ce5c431bba6a1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 282e7ec04f2cff029480701de10af2294a8185d6
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53946262"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54944497"
 ---
 # <a name="fieldmodifiers"></a>FIELD_MODIFIERS
 指定的欄位型別修飾詞。  
