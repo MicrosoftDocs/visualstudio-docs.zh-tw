@@ -12,19 +12,19 @@ helpviewer_keywords:
 ms.assetid: 26967aaf-6fbe-438a-b4d3-ac579b5dc0f9
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 - VB
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: 085bf631a444dc3b6dc64dba4ef10d111f6492bb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b6aae7d2f6ed730dc0ac7198a43167dd09976037
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53949059"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55037469"
 ---
 # <a name="ca2227-collection-properties-should-be-read-only"></a>CA2227:集合屬性應該為唯讀
 

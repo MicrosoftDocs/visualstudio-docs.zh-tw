@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 19db8edb-31ce-441c-b0de-a0f2746155b7
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f9e66a7c535ec83ac176700dbae8ee58fbf04135
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1c3a20179bb8463d059b5e7d7c82e045b3517f47
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53958783"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54957620"
 ---
 # <a name="ca2001-avoid-calling-problematic-methods"></a>CA2001:避免呼叫有問題的方法
 

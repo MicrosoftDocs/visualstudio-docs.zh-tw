@@ -1,5 +1,5 @@
 ---
-title: IDebugEngine3 |Microsoft Docs
+title: IDebugEngine3 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 8bdf4bb7-3b5d-4991-8981-772d4f6bb656
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7110a69c84a131a600c903ac73fbb6acdde7cd64
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0f89452582677334f75c330ff00af58b95e928c2
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53913432"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54992343"
 ---
 # <a name="idebugengine3"></a>IDebugEngine3
 表示單一的偵錯引擎 (DE)，以控制一個或多個模組的偵錯。  
