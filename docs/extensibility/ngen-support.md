@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 1472e884-c74e-4c23-9d4a-6d8bdcac043b
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dcf5f6366514fb18074d253b788c9cf67f1d297a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b316efe4abc9f14608db2e61602ac882c7208234
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53835048"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54958689"
 ---
 # <a name="ngen-support-in-vsix-v3"></a>VSIX v3 中的 Ngen 支援
 
@@ -37,7 +37,7 @@ ms.locfileid: "53835048"
 
 1. **Ngen** （布林值）-如果為 true，Visual Studio 安裝程式會 「 ngen"組件。
 2. **Ngen 應用程式**（字串）-Ngen 提供使用的應用程式的機會*app.config*檔案以解析組件相依性。 此值應該設定為應用程式其*app.config*您想要使用 （相對於 Visual Studio 安裝目錄中）。
-3. **Ngen 架構**（列舉）-原生方式編譯您的組件的架構。 選項包括：。 NotSpecified b。 X86 c。 X64 d。 全部
+3. **Ngen 架構**（列舉）-原生方式編譯您的組件的架構。 選項包括：。 NotSpecified b。 X86 c. X64 d。 全部
 4. **Ngen 優先順序**（1 到 3 之間的整數）-Ngen 優先權層級已記錄在[Ngen.exe 優先權等級](/dotnet/framework/tools/ngen-exe-native-image-generator#priority-levels)。
 
 以下就來看看**屬性**作用中的視窗：

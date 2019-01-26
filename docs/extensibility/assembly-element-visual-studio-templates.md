@@ -11,21 +11,21 @@ helpviewer_keywords:
 ms.assetid: 9242f76a-1273-4b8a-8f26-6606f91829ef
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 74e57ae61ddfaa24de4cc8e3e332b3fa9f7250c6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6d6c251c1aedcfb494047c055e358a049ff69431
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53912895"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55008916"
 ---
 # <a name="assembly-element-visual-studio-templates"></a>Assembly 項目 （Visual Studio 範本）
 指定的範本會使用該組件的參考加入至專案的組件的相關資訊。  
   
- \<VSTemplate >  
- \<TemplateContent >  
+ \<VSTemplate>  
+ \<TemplateContent>  
  \<參考 >  
  \<參考 >  
  \<組件 >  

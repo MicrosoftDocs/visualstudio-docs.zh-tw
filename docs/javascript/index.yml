@@ -1,17 +1,17 @@
 ### YamlMime:YamlDocument
-ms.openlocfilehash: 4d671cb8077c6d2608d02eede477c57cd765a528
-ms.sourcegitcommit: d0b02affd24e66efed924c197824f35f823e3240
+ms.openlocfilehash: ebdc56f630ef24cb81beadb676013c7a46b52364
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/21/2019
-ms.locfileid: "54417755"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54983309"
 documentType: LandingData
 title: Visual Studio | JavaScript 和 TypeScript
 metadata:
   title: 使用 Visual Studio 進行 JavaScript 和 TypeScript 開發 | Microsoft Docs
   meta.description: Tutorials and conceptual articles about developing JavaScript and TypeScript apps with Visual Studio.
   author: mikejo5000
-  manager: douge
+  manager: jillfra
   ms.prod: visual-studio-dev15
   ms.technology: vs-nodejs
   ms.topic: landing-page

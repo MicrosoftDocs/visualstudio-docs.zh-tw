@@ -1,5 +1,5 @@
 ---
-title: IDebugGenericFieldDefinition::TypeParamCount |Microsoft Docs
+title: IDebugGenericFieldDefinition::TypeParamCount | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: d41dd5ea-aa25-4bf3-bcfd-e0bf451ead49
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c7aa853240452b9f30bf3a1b40f0f5be01673e61
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e9216a843995e83c9ae40b22c6b5cd35f7602b47
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53929933"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55006043"
 ---
 # <a name="idebuggenericfielddefinitiontypeparamcount"></a>IDebugGenericFieldDefinition::TypeParamCount
 擷取一般欄位相關聯的型別參數數目。  

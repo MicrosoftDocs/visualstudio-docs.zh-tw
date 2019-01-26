@@ -19,15 +19,15 @@ helpviewer_keywords:
 - software, modeling
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f608246af6311c03f4ed5ee31d4588ce2aa1a7ea
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d5a562b267b630e2a0c53b90072c2dfde62f085b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53942680"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54978876"
 ---
 # <a name="create-models-for-your-app"></a>建立應用程式模型
 
@@ -45,7 +45,7 @@ ms.locfileid: "53942680"
 
 ## <a name="related-tasks"></a>相關工作
 
-|**主題**|**Task**|
+|**Topic**|**Task**|
 |-|-|
 |[視覺化程式碼](../modeling/visualize-code.md)|建立 code map 和相依性圖表，使其更了解不熟悉的程式碼。|
 |[模型使用者需求](../modeling/model-user-requirements.md)|使用模型來釐清和溝通使用者的需求。|

@@ -1,5 +1,5 @@
 ---
-title: IDebugCoreServer2::GetMachineName |Microsoft Docs
+title: IDebugCoreServer2::GetMachineName | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 693bd794-7215-4f07-8651-b57366d39953
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8fb404ce791f17df027ba360a9a0b853c8e6b747
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 513247a948c73c8b10712336c01dc51dd2369565
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53866240"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54983790"
 ---
 # <a name="idebugcoreserver2getmachinename"></a>IDebugCoreServer2::GetMachineName
 取得核心伺服器執行的電腦名稱。  

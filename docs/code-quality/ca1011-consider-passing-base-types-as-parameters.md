@@ -12,19 +12,19 @@ helpviewer_keywords:
 ms.assetid: ce1e1241-dcf4-419b-9363-1d5bc4989279
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CPP
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 9388dc1b6649efd1f43e353e69833ad59ad5ff29
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5d3f293e6e75986e4c3097e972e7047c25756d65
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53860682"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54957607"
 ---
 # <a name="ca1011-consider-passing-base-types-as-parameters"></a>CA1011:建議將基底類型當作參數傳遞
 
