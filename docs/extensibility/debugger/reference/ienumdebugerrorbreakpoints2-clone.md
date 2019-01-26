@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugErrorBreakpoints2::Clone |Microsoft Docs
+title: IEnumDebugErrorBreakpoints2::Clone | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: f6fb4985-8dd6-4a9b-98e0-15dbc64cc9ec
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 794df93bf935c383f119e6aed5fcc039f0902ba9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 384476354f0f638f79d8c5e921bd09d9ca1b34ec
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53888734"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54935458"
 ---
 # <a name="ienumdebugerrorbreakpoints2clone"></a>IEnumDebugErrorBreakpoints2::Clone
 傳回一份目前的列舉，為個別的物件。  

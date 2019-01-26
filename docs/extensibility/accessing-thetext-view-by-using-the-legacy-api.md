@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 8f751f72-c972-4be3-84ee-19c281e02e25
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f1878c1e3769ffaa8aedd4c4d0f26349d6f097d2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bee3e781e9cb504148ae46f6a9e0b37b6ae778fb
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53943833"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54979643"
 ---
 # <a name="access-the-text-view-by-using-the-legacy-api"></a>使用舊版的 API 來存取 [文字] 檢視
 文字檢視是儲存在文字緩衝區中的文字呈現。 您可以存取 [文字] 檢視下一節中所示，使用舊版 API。

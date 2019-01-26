@@ -1,5 +1,5 @@
 ---
-title: IDebugStackFrame2::GetDocumentContext |Microsoft Docs
+title: IDebugStackFrame2::GetDocumentContext | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 69e81439-1238-4f18-9028-6fd1c1ba5e4a
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 37c2ec13fe74efd694ed0f1735d018a37cff6997
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d5fddf539c8c3fe9629784289bed4021cb02c706
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53917065"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55001352"
 ---
 # <a name="idebugstackframe2getdocumentcontext"></a>IDebugStackFrame2::GetDocumentContext
 取得此堆疊框架的文件內容。  

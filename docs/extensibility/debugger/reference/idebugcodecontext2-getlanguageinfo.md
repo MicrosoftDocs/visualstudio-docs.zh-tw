@@ -1,5 +1,5 @@
 ---
-title: IDebugCodeContext2::GetLanguageInfo |Microsoft Docs
+title: IDebugCodeContext2::GetLanguageInfo | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 03002ef1-9fe6-44b6-b23b-ef7b86b2b21b
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f6ed38b05e7e7453a5a3d622e0d5746964a41e6a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c9b624b05dd688ef74bba6e7ab44a09337bbb9b3
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53889053"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54991914"
 ---
 # <a name="idebugcodecontext2getlanguageinfo"></a>IDebugCodeContext2::GetLanguageInfo
 取得此程式碼內容的語言資訊。  

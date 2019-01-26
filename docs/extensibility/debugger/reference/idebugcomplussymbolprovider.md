@@ -1,5 +1,5 @@
 ---
-title: IDebugComPlusSymbolProvider |Microsoft Docs
+title: IDebugComPlusSymbolProvider | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 5b98e908-fd15-49a6-9010-933c9b948085
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 707cf44f6c4bff961df4225d23d8918ed4548e04
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 28e2819a6f937c3adb21993de959a4b35fa57249
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53948982"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54927498"
 ---
 # <a name="idebugcomplussymbolprovider"></a>IDebugComPlusSymbolProvider
 代表 COM + 符號提供者特有的 managed 程式碼的方法。  

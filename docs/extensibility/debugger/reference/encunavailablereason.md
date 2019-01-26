@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: c10aa4c0-d7e0-4de1-b8ff-7e050985eb12
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a3c68aa25a009bad385bec87dba47fcb9957133d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2f701a541077f3bdb53374deec0562fd68e5c7b8
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53872037"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55024366"
 ---
 # <a name="encunavailablereason"></a>EncUnavailableReason
 `This is for internal use only!` 表示的原因，**編輯後繼續**不提供。  
