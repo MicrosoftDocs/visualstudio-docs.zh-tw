@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: a20d0f0b-2ca0-4437-bd22-9213c81d2738
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 338127784a7ea4ee474edf1bfc58a75c5df7704d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bcbd37f4774f5994efb3d1b03e7153d910342f71
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53945609"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54990455"
 ---
 # <a name="idebugexceptionevent2passtodebuggee"></a>IDebugExceptionEvent2::PassToDebuggee
 指定例外狀況應該傳遞給正在偵錯程式時繼續執行，或如果例外狀況應予捨棄。  

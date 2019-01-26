@@ -1,5 +1,5 @@
 ---
-title: AD_PROCESS_ID |Microsoft Docs
+title: AD_PROCESS_ID | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 4cb40d12-2e92-4f09-83f4-689928bd65b3
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5e805b11168dd1936b116a8873d61e333bee37f1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 754d2037f734b4f142c4a7209a5208b958fc913f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53853394"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54988112"
 ---
 # <a name="adprocessid"></a>AD_PROCESS_ID
 指定的處理序識別碼，可能是系統識別碼或 GUID。  

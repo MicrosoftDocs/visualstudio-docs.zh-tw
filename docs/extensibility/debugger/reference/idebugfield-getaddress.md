@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 6981bf03-66ef-4bf9-87ea-f6c9624486cb
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 656d51358b48f48b5a6d5fa160bec38ad9f145ca
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2b42da15a6857c8a6f0647d9c7ee54afa63aa83b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53965930"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55043361"
 ---
 # <a name="idebugfieldgetaddress"></a>IDebugField::GetAddress
 這個方法會取得欄位的偵錯位址。  

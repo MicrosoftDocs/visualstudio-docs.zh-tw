@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 1787d371-389f-4d39-b305-12b53bc0dfb9
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ffac1cca87f3b1cbed23e2bbc8a9b463cd4adc6c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 84861aa1d17f041061d1666d6f78c9d273b948b4
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53987845"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55037768"
 ---
 # <a name="ca1900-value-type-fields-should-be-portable"></a>CA1900:實值類型欄位應該為可移植的
 

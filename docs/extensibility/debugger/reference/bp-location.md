@@ -1,5 +1,5 @@
 ---
-title: BP_LOCATION |Microsoft Docs
+title: BP_LOCATION | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: ed1e874c-f289-4c31-8b6c-04dde03ad0f5
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 16b45f2f1122b594298ad36d170be7bdbaf37fe8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 237d89abeb4d41a2c01a7e7d0eb1ccc1ca7a6ddc
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53839639"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54974041"
 ---
 # <a name="bplocation"></a>BP_LOCATION
 指定用來描述中斷點的位置的結構類型。  

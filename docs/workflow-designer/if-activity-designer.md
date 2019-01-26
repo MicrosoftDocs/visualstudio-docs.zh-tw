@@ -8,15 +8,15 @@ f1_keywords:
 ms.assetid: 930a8fa2-db98-43e9-ad6d-a85cc7a6519a
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: de237acd09f4c4139bdf79f986dbb43c1a1f8343
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f069da9bb84074544cc388ab2bf7fa1eab3c7595
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53988413"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54917155"
 ---
 # <a name="if-activity-designer"></a>If 活動設計工具
 

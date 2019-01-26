@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 08154aed-ae5c-463c-8694-745d0e332965
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0761956cd18945a50bdb45fa7624a72f645683e7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 744b18e3b52105679f9b6a82083d6ffd7fe9268d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53831780"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54969807"
 ---
 # <a name="scccreatesubproject-function"></a>SccCreateSubProject 函式
 這個函式具有指定之名稱所指定的現有父專案底下建立子專案`lpParentProjPath`引數。  
@@ -85,7 +85,7 @@ SCCRTN SccCreateSubProject(
 ## <a name="technical-notes-for-scccreatesubproject-and-sccgetparentprojectpath"></a>SccCreateSubProject 和 SccGetParentProjectPath 的技術提示  
  已簡化方案和專案加入原始檔控制在 Visual Studio 中的系統會提示使用者在原始檔控制系統中選取位置的次數降到最低。 如果原始檔控制外掛程式支援這兩個新函數，這些變更會啟動 Visual Studio`SccCreateSubProject`和`SccGetParentProjectPath`。 不過，下列的登錄項目可用來停用這些變更並還原成先前的 Visual Studio (原始檔控制外掛程式 API 版本 1.1) 行為：  
   
- **[HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl]「 DoNotCreateSolutionRootFolderInSourceControl"= dword: 00000001**  
+ **[HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl] "DoNotCreateSolutionRootFolderInSourceControl"=dword:00000001**  
   
  如果此登錄項目不存在，或設為 dword:00000000，Visual Studio 會嘗試使用新的函式`SccCreateSubProject`和`SccGetParentProjectPath`。  
   

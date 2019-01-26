@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 6164b2d3-a622-4de8-bef3-a6de985e9ebd
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 992fd9a6f45d607538f1091eb7a652984595cc34
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3986a90754f073fa28ecce11ff0053ecad512289
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53954496"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54957919"
 ---
 # <a name="model-for-source-control-packages"></a>原始檔控制套件的模型
 下列模型代表來源控制項實作的範例。 在模型中，您會看到您必須實作的介面和環境服務，您必須呼叫。 如同所有的服務，您實際上會呼叫您取得透過服務的特定介面的方法。 讓您更輕鬆地查看原始檔控制會論及如何識別類別的名稱。  

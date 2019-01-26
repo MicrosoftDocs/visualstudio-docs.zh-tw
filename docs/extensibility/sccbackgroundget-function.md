@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 69817e52-b9ac-4f4d-820b-2cc9c384f0dc
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ae32f7b0c9eea907c830a3cc62e0e53e87803177
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6afce798e327e21bf2613a84d717bab3a737d05a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53826873"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54975682"
 ---
 # <a name="sccbackgroundget-function"></a>SccBackgroundGet 函式
 此函式會擷取從原始檔控制每個指定的檔案而不需要使用者互動。  

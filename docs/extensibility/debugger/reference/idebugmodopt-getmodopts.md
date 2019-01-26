@@ -1,5 +1,5 @@
 ---
-title: IDebugModOpt::GetModOpts |Microsoft Docs
+title: IDebugModOpt::GetModOpts | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: cb513fa9-d521-4a65-b968-f55f53a368df
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3ef054e35fe136b0b3280494b3dfd43cd58a53d5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c611c55654ee14bc3cda3f27fe20e19188faa71a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53908237"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55017159"
 ---
 # <a name="idebugmodoptgetmodopts"></a>IDebugModOpt::GetModOpts
 擷取一份選擇性修飾詞。  

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: d71308cf-d464-4536-8711-0d0a8eadb255
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 64574156bb1645a3d1f4e84f50a8e322751fd370
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b06ee7101dcb6b227f8e7f0228730fb0668695b4
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53923422"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54998842"
 ---
 # <a name="debug-workflows-with-the-workflow-designer"></a>偵錯工作流程與工作流程設計工具
 

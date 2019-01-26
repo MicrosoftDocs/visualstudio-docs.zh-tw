@@ -12,19 +12,19 @@ helpviewer_keywords:
 ms.assetid: 3503a73c-360c-416d-8ee4-c2aa44365a05
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CPP
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: b535424a391c91f57ce4a3d2edf997688989fdde
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9264b37992885ff3d93aba4802d8d7f0cee535aa
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53953377"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54992902"
 ---
 # <a name="ca1008-enums-should-have-zero-value"></a>CA1008:列舉值中應該要有值為零的成員
 
@@ -32,7 +32,7 @@ ms.locfileid: "53953377"
 |-|-|
 |TypeName|EnumsShouldHaveZeroValue|
 |CheckId|CA1008|
-|類別|Microsoft.Design|
+|分類|Microsoft.Design|
 |中斷變更|非中斷-當系統提示您新增**無**非旗標列舉的值。 -系統會提示您重新命名或移除任何列舉值時中斷。|
 
 ## <a name="cause"></a>原因

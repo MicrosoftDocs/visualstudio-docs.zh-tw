@@ -4,16 +4,16 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 90385b233e859bf1cdd8ea1617b94efe58ec4cbf
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 70aceff2ab56e4b884d4746cc2ba582138fe7f3b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53876389"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54990302"
 ---
 # <a name="how-to-add-a-drag-and-drop-handler"></a>HOW TO：新增拖放處理常式
 

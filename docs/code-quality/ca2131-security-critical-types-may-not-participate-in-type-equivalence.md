@@ -8,15 +8,15 @@ f1_keywords:
 ms.assetid: 4170f3b1-6086-430d-8fba-837d5538c573
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f91f5be2aad41006dacab059db27e9609a4f84f7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d42b7f0104f00f346146de882c903c2ebd0ececc
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53913025"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54993153"
 ---
 # <a name="ca2131-security-critical-types-may-not-participate-in-type-equivalence"></a>CA2131:安全性關鍵類型可能未參與類型等價
 

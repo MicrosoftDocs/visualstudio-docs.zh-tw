@@ -7,16 +7,16 @@ helpviewer_keywords:
 - text templates, custom hosts
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: f88e7dbd95d62a17c048bf5fb01785799c3a6ce0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bc59718131cc4879a351097b767fa513d72b5c81
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53845716"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54962744"
 ---
 # <a name="customize-t4-text-transformation"></a>自訂 T4 文字轉換
 

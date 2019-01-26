@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 47ee26cf-67b7-4ff1-8a9d-ab11a725405c
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7bcc1485834209133897c776fcb52ed5c600d9ca
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5b37d8d123ff45d563c165a6833151692582ebe6
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53837403"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54961555"
 ---
 # <a name="how-to-use-wizards-with-project-templates"></a>HOW TO：使用精靈與專案範本
 
@@ -226,19 +226,19 @@ Visual Studio 提供<xref:Microsoft.VisualStudio.TemplateWizard.IWizard>介面�
   
 9. 尋找*sn.exe*簽署工具。 比方說，Windows 10 64 位元作業系統上，典型的路徑會是下列：  
   
-     *C:\Program Files (x86) \Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.6.1 Tools*  
+     *C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.6.1 Tools*  
   
      如果找不到工具，請嘗試執行**其中 /R。 sn.exe**命令視窗中。 記下路徑。  
   
 10. 擷取的公開金鑰*key.snk*檔案。 在 [命令] 視窗中，輸入  
   
-     **\<sn.exe 的位置 > \sn.exe-p key.snk outfile.key。**  
+     **\<location of sn.exe>\sn.exe -p key.snk outfile.key.**  
   
      別忘了要環繞的路徑*sn.exe*加上引號，如果目錄名稱中有空格 ！  
   
 11. 從 outfile 取得的公開金鑰語彙基元：  
   
-     **\<sn.exe 的位置 > \sn.exe-t outfile.key。**  
+     **\<location of sn.exe>\sn.exe -t outfile.key.**  
   
      同樣地，別忘了引號。 您應該會看到如下的輸出中的資料行  
   

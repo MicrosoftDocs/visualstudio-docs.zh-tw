@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: d9cbd1c4-719b-467a-8100-333c1e146d3b
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6d9139ca59394c8d5de69ddf77f51bf57b8b7619
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f05a28ab046c1c0221162bce623a2ccf983f3d43
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53931969"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54958143"
 ---
 # <a name="error-codes"></a>錯誤碼
 原始檔控制外掛程式 API 函式會傳回錯誤，它應該是其中一個下列的錯誤代碼。 所有的錯誤是負數，警告或參考用錯誤代碼為正數，並成功則為 0。  

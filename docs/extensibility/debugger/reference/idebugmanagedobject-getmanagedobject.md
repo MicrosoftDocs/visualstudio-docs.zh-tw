@@ -1,5 +1,5 @@
 ---
-title: IDebugManagedObject::GetManagedObject |Microsoft Docs
+title: IDebugManagedObject::GetManagedObject | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 6abe1402-6aad-41e6-8ec1-ae12d5945992
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9915e4b9096f9e7ac42700012ea55ee23baef46c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2be150d3ce1103f8f47438af7ac8fcfcba8519da
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53823046"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54922908"
 ---
 # <a name="idebugmanagedobjectgetmanagedobject"></a>IDebugManagedObject::GetManagedObject
 傳回代表受管理的物件的介面。  

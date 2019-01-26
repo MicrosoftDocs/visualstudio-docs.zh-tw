@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 9a57dfcd-df8e-4be5-b1fe-bd853e3c6bb2
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: eaa1d399de86864eb8d1c20e6b8e085a2e0d9f9f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fa4d8756beeeec87b663c565382947a8824bbe37
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53849450"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55038899"
 ---
 # <a name="idebugengine2continuefromsynchronousevent"></a>IDebugEngine2::ContinueFromSynchronousEvent
 工作階段的偵錯管理員 (SDM)，表示同步的偵錯事件，先前傳送給 SDM，偵錯引擎 (DE) 已收到並處理呼叫。  

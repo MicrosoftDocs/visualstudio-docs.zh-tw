@@ -30,15 +30,15 @@ helpviewer_keywords:
 ms.assetid: 1fd5de47-2d61-4180-9539-c2c4bf9ab768
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ecbd93836cdf5b91bb9f7abb93a95499927fa0b1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2238a09115e3f714c871394f0138a9d77b055aae
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53872956"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55001286"
 ---
 # <a name="xml-tools-in-visual-studio"></a>Visual Studio 中的 XML 工具
 

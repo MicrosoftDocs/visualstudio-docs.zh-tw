@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 34853412-ab8a-4caa-9601-7d0727b2985d
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9d8430c5e08bc6d6d77a7968bd918e219fbd0da3
-ms.sourcegitcommit: d0b02affd24e66efed924c197824f35f823e3240
+ms.openlocfilehash: d45d402287443e3cdd643a76853e62c11c64e3d3
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/21/2019
-ms.locfileid: "54417885"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54951153"
 ---
 # <a name="add-and-remove-property-pages"></a>新增和移除屬性頁
 

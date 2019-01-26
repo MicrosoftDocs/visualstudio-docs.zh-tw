@@ -12,18 +12,18 @@ helpviewer_keywords:
 ms.assetid: 5a15b20d-769c-4640-b31a-36e07077daae
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 2cdbd9a3af7c22e2afa29efdff411903c81b6620
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2ed7249925f066cdbba7616b368e80e7b8126bca
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53862086"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54935994"
 ---
 # <a name="ca2236-call-base-class-methods-on-iserializable-types"></a>CA2236:必須呼叫 ISerializable 類型上的基底類別方法
 

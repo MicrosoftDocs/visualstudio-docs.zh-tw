@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 6857e9c6-e44a-468a-afa4-f7c4a0b77844
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fb403e9df8b159162d5160e3927acb40cc775ff3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0671a8f0d926cb90419470278f65eedf07486da7
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53862149"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54945875"
 ---
 # <a name="launch-a-program"></a>啟動程式
 想要偵錯程式的使用者可以按下**F5**從 IDE 執行偵錯工具。 這樣就會開始一系列的最終會導致 IDE 連接到偵錯引擎 (DE)，依序連接，或附加，給程式，如下所示的事件：  

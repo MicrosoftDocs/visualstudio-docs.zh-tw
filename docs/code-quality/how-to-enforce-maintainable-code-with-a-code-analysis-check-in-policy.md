@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: d1b3b04f-4dd9-40e6-b2d4-b414d33fb647
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d31e52ab2f158b73a0076414b6d18e0b7421b04
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a9b868054813f65e15c3dfd422be7240df09e284
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53825709"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54956749"
 ---
 # <a name="how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy"></a>HOW TO：強制維護的程式碼的程式碼分析簽入原則
 
@@ -50,7 +50,7 @@ Team foundation 版本控制的系統管理員可以將程式碼分析可維護�
 
    - 複雜度：**CA1502 AvoidExcessiveComplexity** -臨界值：在多個 25 的警告
 
-   - 可維護性指數：**Ca1505 應 AvoidUnmaintainableCode** -臨界值：在少於 20 的警告
+   - 可維護性指數：**CA1505 AvoidUnmaintainableCode** - Threshold:在少於 20 的警告
 
    - 類別結合程度：**CA1506 AvoidExcessiveClassCoupling** -臨界值：在多個類別的 80 和多個方法的 30 的警告
 

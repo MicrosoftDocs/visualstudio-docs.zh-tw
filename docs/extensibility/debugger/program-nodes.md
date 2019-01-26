@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 1c5a5c13-c14d-42c3-af11-4c63f1032c8d
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 467ee94d317f722c1e0d22776339aa9670bf7c1b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 61e09651786870d892eaa85a01561ddb283785bf
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53867390"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54921891"
 ---
 # <a name="program-nodes"></a>程式節點
 在偵錯工具架構中，*計劃節點*:  

@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 0bda9dc8-87b4-4038-ab9d-563298387466
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e0a6db369cea0e242ce5b2b6e169278b1bf17ea2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 57da84c7109826ff08a60ca5f2b808facaaa5ce9
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53928551"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54995605"
 ---
 # <a name="ca1061-do-not-hide-base-class-methods"></a>CA1061:不要隱藏基底類別方法
 

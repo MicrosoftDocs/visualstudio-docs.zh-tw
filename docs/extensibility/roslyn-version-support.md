@@ -7,15 +7,15 @@ helpviewer_keywords:
 - roslyn package versions
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 51ed47364778f29e450597156f82566ec2094ab6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4040c825f5decf7da58ab92959c62f4bf7ce0a2c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53869056"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54919404"
 ---
 # <a name="net-compiler-platform-package-version-reference"></a>.NET 編譯器平台的套件版本參考
 
@@ -31,7 +31,7 @@ ms.locfileid: "53869056"
 | 2.1.0 | Visual Studio 2017 版本 15.1 或更新版本 |
 | 2.2.0 | Visual Studio 2017 版本 15.2 或更高版本 |
 | 2.3.2 | Visual Studio 2017 15.3 版或更高版本 |
-| 2.4.0 為基礎 | Visual Studio 2017 版本 15.4 或更高版本 |
+| 2.4.0 | Visual Studio 2017 版本 15.4 或更高版本 |
 | 2.6.1 | Visual Studio 2017 15.5 版或更高版本 |
 | 2.7.0 | Visual Studio 2017 15.6 版或更高版本 |
 | 2.8.2 | Visual Studio 2017 15.7 版或更高版本 |

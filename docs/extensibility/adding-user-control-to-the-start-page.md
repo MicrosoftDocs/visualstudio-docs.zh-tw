@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 5b7997db-af6f-4fa9-a128-bceb42bddaf1
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8218910c50c63e3cef8f8ad402967bd21fb0da5d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d66735c516d9c083ae13606f415136c9a2e817bd
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53874689"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54946525"
 ---
 # <a name="add-user-control-to-the-start-page"></a>將使用者控制項加入至 [入門] 頁面
 本逐步解說示範如何加入自訂的 [入門] 頁面的 DLL 參考。 此範例會將使用者控制項新增至方案、 建置使用者控制項，並再參考從 開始 頁面的 建置的組件 *.xaml*檔案。 新的索引標籤裝載使用者控制項，可當做基本網頁瀏覽器。  

@@ -6,15 +6,15 @@ ms.prod: visual-studio-dev15
 ms.assetid: 8b7b4aa6-d27d-45c8-87c2-641440d38afc
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d1e07cb0de11136649aabc7937a6cc2bcb1ceacc
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3bbda61066084e109683c07c020413710e29f2aa
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53857876"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54999804"
 ---
 # <a name="flowchart-activity-designers"></a>Flowchart 活動設計工具
 

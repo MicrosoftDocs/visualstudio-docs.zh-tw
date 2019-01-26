@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentPosition2::GetRange |Microsoft Docs
+title: IDebugDocumentPosition2::GetRange | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 91a06ee7-253a-4215-be22-04bf57305aa8
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 36794360c84b46b623a70526c38f388530254792
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: db27be140cf47e0d070ba3c4f560a4ad89e68b83
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53895632"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55037261"
 ---
 # <a name="idebugdocumentposition2getrange"></a>IDebugDocumentPosition2::GetRange
 取得此文件位置的範圍。  

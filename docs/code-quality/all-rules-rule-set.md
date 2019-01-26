@@ -5,15 +5,15 @@ ms.prod: visual-studio-dev15
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5fe3a00e616af6973b8ffbaeed3fcb5d821813a0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 001faad19c34f00b011bae64ba8de3739b417076
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53834877"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55038431"
 ---
 # <a name="all-rules-rule-set"></a>所有規則規則集
 

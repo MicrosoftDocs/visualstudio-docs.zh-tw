@@ -1,5 +1,5 @@
 ---
-title: IDebugBreakpointRequest2::GetLocationType |Microsoft Docs
+title: IDebugBreakpointRequest2::GetLocationType | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: b6d14c59-d3aa-48ff-8278-f6b5bba9c2f3
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6049bd43748aa3e791ccd5fa9c8ae2fde9fd5b20
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1340d127d029bb1c857ae3748b529253f8bb4a85
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53985783"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54973729"
 ---
 # <a name="idebugbreakpointrequest2getlocationtype"></a>IDebugBreakpointRequest2::GetLocationType
 取得此中斷點要求的中斷點位置類型。  

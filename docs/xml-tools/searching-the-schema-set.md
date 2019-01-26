@@ -6,15 +6,15 @@ ms.topic: conceptual
 ms.assetid: ec1395e0-d03c-4130-810d-f2db656937bd
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fdb4a680fc2bbfc9a55d93d17f9ef95d45fc6186
-ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
+ms.openlocfilehash: 99e8c8301f057990471ff9b20f782a4c3ee13fb1
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/14/2019
-ms.locfileid: "54270069"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54992174"
 ---
 # <a name="search-the-schema-set"></a>搜尋結構描述集合
 

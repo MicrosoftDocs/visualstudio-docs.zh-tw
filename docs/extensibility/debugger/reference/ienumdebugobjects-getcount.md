@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugObjects::GetCount |Microsoft Docs
+title: IEnumDebugObjects::GetCount | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 9cbc5db4-03ae-479f-a664-13cad66ad210
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 67568b10d5b7fe33adf1d67bd9bd1f2771d058e0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 88eb5d397201fc127c534db298b11b092716bff6
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53873258"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54997087"
 ---
 # <a name="ienumdebugobjectsgetcount"></a>IEnumDebugObjects::GetCount
 這個方法會傳回在列舉中的項目數。  

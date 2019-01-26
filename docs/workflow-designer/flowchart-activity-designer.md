@@ -10,15 +10,15 @@ f1_keywords:
 ms.assetid: d5af2276-5215-4138-880a-cf2b90bbf3a0
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6aee36a87b6bf9210a880c9b547f8efda08dbe98
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d9a4b89fbaf82cd7535919a112ed8a4eab46241e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53926619"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54984583"
 ---
 # <a name="flowchart-activity-designer"></a>Flowchart 活動設計工具
 
@@ -51,4 +51,4 @@ ms.locfileid: "53926619"
 
 - [流程圖](../workflow-designer/flowchart-activity-designers.md)
 - [FlowDecision](../workflow-designer/flowdecision-activity-designer.md)
-- [FlowSwitch\<T >](../workflow-designer/flowswitch-t-activity-designer.md)
+- [FlowSwitch\<T>](../workflow-designer/flowswitch-t-activity-designer.md)

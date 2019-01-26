@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: c460f772-d08a-4b36-81f3-dff6a51a93fd
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5920e4804218d97c51ef7477f31a90556e8c7a3a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 34efc9c297772a8d34136c9c28f5add208b770de
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53956032"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54975864"
 ---
 # <a name="idebugobjectisreadonly"></a>IDebugObject::IsReadOnly
 判斷這個物件是否為唯讀。  

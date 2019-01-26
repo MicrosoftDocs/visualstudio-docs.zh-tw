@@ -1,5 +1,5 @@
 ---
-title: BP_LOCATION_TYPE |Microsoft Docs
+title: BP_LOCATION_TYPE | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 0248430a-3b61-4809-87a9-e9b6bb7d1130
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3a064e5076c9970ed827119923c8f232dfdc85e1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b4f483ca341055e7d041fe690dcdb4271138cf97
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53867627"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54922216"
 ---
 # <a name="bplocationtype"></a>BP_LOCATION_TYPE
 指定中斷點要求的中斷點位置類型。  

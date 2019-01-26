@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 60d4e8ea-230a-494f-aa6a-b91db77540e4
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 648625164d58dca8449196bc80373a0fbfa96d9d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a0e99623e84bcd5342f1d0b080d2dd00095b6262
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53825405"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54956918"
 ---
 # <a name="security-warnings"></a>安全性警告
 
@@ -39,7 +39,7 @@ ms.locfileid: "53825405"
 |[CA2106： 必須必須保護判斷提示](../code-quality/ca2106-secure-asserts.md)|方法會判斷提示使用權限，而且不會在呼叫端上執行安全性檢查。 判斷提示安全性權限但未執行任何安全性檢查，會在您的程式碼中留下可能遭利用的安全性弱點。|
 |[CA2107： 必須檢視 deny 和 permit only 的使用方式](../code-quality/ca2107-review-deny-and-permit-only-usage.md)|只有相當了解 .NET Framework 安全性的人員才能執行 PermitOnly 方法和 CodeAccessPermission.Deny 安全性動作。 而使用這些安全性動作的程式碼應該接受安全性檢閱。|
 |[CA2108:必須檢閱實值型別上的宣告式安全性](../code-quality/ca2108-review-declarative-security-on-value-types.md)|公用或受保護的實值類型受到資料存取或連結要求保護。|
-|[CA2109： 必須檢閱顯示的事件處理常式](../code-quality/ca2109-review-visible-event-handlers.md)|偵測到公用或保護的事件處理方法。 除非有絕對的必要性，否則不應該公開事件處理方法。|
+|[CA2109:檢閱顯示的事件處理常式](../code-quality/ca2109-review-visible-event-handlers.md)|偵測到公用或保護的事件處理方法。 除非有絕對的必要性，否則不應該公開事件處理方法。|
 |[CA2111:指標不應該為可見](../code-quality/ca2111-pointers-should-not-be-visible.md)|指標不為私用、內部或唯讀。 惡意的程式碼可變更指標值，進而可能會允許存取記憶體中的任意位置，或是造成應用程式或系統失敗。|
 |[CA2112:受保護的類型不應該公開欄位](../code-quality/ca2112-secured-types-should-not-expose-fields.md)|公用或受保護的類型包含公用欄位，而且受到連結要求保護。 如果程式碼可存取受連結要求保護的類型執行個體，則程式碼不必滿足連結要求即可存取類型的欄位。|
 |[CA2114:方法安全性應該是類型的超集](../code-quality/ca2114-method-security-should-be-a-superset-of-type.md)|方法不應該同時具有相同動作的方法層級和類型層級宣告式安全性。|

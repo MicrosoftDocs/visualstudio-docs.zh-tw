@@ -7,15 +7,15 @@ helpviewer_keywords:
 - UML, using models
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b1a507a6995ceb3c04dfc3d9daf57fa341fe6fc7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 123d34383f1dace7d7c6d12d41bfc1122ae521c7
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53832814"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55071081"
 ---
 # <a name="use-models-in-your-development-process"></a>在開發程序中使用模型
 

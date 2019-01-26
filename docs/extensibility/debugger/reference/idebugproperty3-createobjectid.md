@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty3::CreateObjectID |Microsoft Docs
+title: IDebugProperty3::CreateObjectID | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: f2fa81e7-822f-456e-8729-a96a18eea771
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b6fab6a75885dba8ddfd952ec3680e2c44b87312
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0d833f0d01cb6abda3383e1f96d1563de96b7dff
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53855818"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54991706"
 ---
 # <a name="idebugproperty3createobjectid"></a>IDebugProperty3::CreateObjectID
 建立此屬性以確保它是唯一的所有其他屬性的唯一識別碼。  

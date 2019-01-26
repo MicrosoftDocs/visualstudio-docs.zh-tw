@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 366f4a56-ae93-4882-81d0-bd0a55ebbc26
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c8f4e108d8443816bf43dec9deb629a3a231822
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 82b3bc6152bf233a1435eb0606490aa7be90e434
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53826097"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54971583"
 ---
 # <a name="ca2107-review-deny-and-permit-only-usage"></a>CA2107:必須檢閱 Deny 和 Permit Only 的使用方式
 

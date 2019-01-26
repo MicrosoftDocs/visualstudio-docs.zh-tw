@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: df976c76-27ec-4f00-ab6d-a26a745dc6c7
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3a5702a5ab42de90363328f0118b89cdc94d67f4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7ef616473b2164d3fce6659c9db925deba2f50ad
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53830293"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54921166"
 ---
 # <a name="extend-the-solution-explorer-filter"></a>擴充方案總管 中的篩選
 您可以延伸**方案總管 中**篩選功能，以顯示或隱藏不同的檔案。 例如，您可以建立篩選會顯示只有 C# 類別處理站中的檔案**方案總管 中**，如本逐步解說示範。  

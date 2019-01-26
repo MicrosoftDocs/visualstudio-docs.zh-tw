@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 9808054c-593b-4fc3-92cc-1fc45f41569c
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2125f8fc674c91d5bbb301c13a3a898b79e174a8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 47bb602da5483b3ea31513b6185ce00e07200a42
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53889950"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54974002"
 ---
 # <a name="mobility-warnings"></a>行動性警告
 行動性警告支援有效率的用電量。

@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: b75bbb51-8e42-41b1-bece-09ab0b1f03cc
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ce2079ce16ac339ae536430d02d546ea39ffae0a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7fe1fdfc8b16988505ef30773cf1ec2e98d58edd
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53873998"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55039640"
 ---
 # <a name="contained-languages"></a>包含的語言
 

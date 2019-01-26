@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: cd6cf4ae-fff5-4e23-b293-7cbafdb8aed2
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ba58811c800501b5397465192ffbdec4c80160a7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9dfd4535eb0d792e323143bdebd4b5e17a048e1d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53915003"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54972663"
 ---
 # <a name="access-the-text-buffer-by-using-the-legacy-api"></a>使用舊版的 API 來存取文字緩衝區
 負責管理文字資料流和檔案持續性的文字。 雖然緩衝區可以讀取或寫入其他格式中，使用 Unicode 來執行所有一般的通訊緩衝區。 在舊版的 Api 中，文字緩衝區可以使用一段或二維的座標系統識別緩衝區中的字元位置。  

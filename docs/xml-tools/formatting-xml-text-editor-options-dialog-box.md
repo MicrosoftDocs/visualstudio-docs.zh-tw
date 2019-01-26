@@ -6,15 +6,15 @@ ms.topic: reference
 ms.assetid: bb539b3a-027c-4b2f-906e-403e0e22ba8d
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 05ddfcb0613dac08fb6e4323062f87475bd8f0d1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d5fbc4678431cd8b540b5bbc90bfab5dc2bb2bd4
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53938588"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55020785"
 ---
 # <a name="formatting-xml-text-editor-options-dialog-box"></a>格式、 XML、 文字編輯器、 選項對話方塊
 

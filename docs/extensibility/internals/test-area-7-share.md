@@ -1,5 +1,5 @@
 ---
-title: 測試區域 7︰共用 |Microsoft Docs
+title: 測試區域 7︰Share | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 6ec4780a-bda4-4327-bb3e-c6c9e7eabf35
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ca148ccf4c3ca296fd03e9c3c25e2eacc9b6cf93
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2efaad276eec2030b062be5f6508ec9603dcbf89
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53941988"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55040693"
 ---
 # <a name="test-area-7-share"></a>測試區域 7︰共用
 這個測試部分涵蓋透過位置之間的共用項目**共用**命令。  

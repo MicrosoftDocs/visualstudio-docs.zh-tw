@@ -6,16 +6,16 @@ helpviewer_keywords:
 - Domain-Specific Language, domain path
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 13a8ab293a6a18856ba98edc7aa04154bc876d40
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b8825d123c9d4cce5b72582fe213ba61ce6e7f6b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53834928"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54975955"
 ---
 # <a name="domain-path-syntax"></a>網域路徑語法
 DSL 定義使用類似 XPath 的語法來尋找模型中的特定項目。

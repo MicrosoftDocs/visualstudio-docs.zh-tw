@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: dda23b18-96ef-43c6-b0dc-06d15cbe5cbb
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 14583d242c260e4b0f1a754d53faf35b645be666
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 292e30a094cd78954e48817324a44ebacda7a78a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53838160"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54934530"
 ---
 # <a name="instantiate-the-core-editor-by-using-the-legacy-api"></a>使用舊版 API 具現化核心編輯器
 編輯器會負責文字編輯功能，例如插入、 刪除、 複製和貼。 它結合了這些函式語言服務，例如文字著色、 縮排，並完成 IntelliSense 陳述式所提供的函數。  

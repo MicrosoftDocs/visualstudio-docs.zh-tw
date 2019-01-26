@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 66778698-0258-467d-8b8b-c351744510eb
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8ca4ac8523185f1fe818ffa287ed9083b6618c04
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: dd41bb8fd0e35ee13815b11941950d9031f824a0
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53827646"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55041785"
 ---
 # <a name="new-project-generation-under-the-hood-part-one"></a>新的專案產生：在幕後，第一部
 有人想到要如何建立您自己的專案類型嗎？ 不知道實際發生什麼事時建立新的專案？ 讓我們來看一下在幕後，並請參閱什麼實際狀況。  
@@ -76,7 +76,7 @@ devenv /installvstemplates
   
  如果您查詢中的鄰近的套件金鑰的 GUID，並檢查 SatelliteDll 子機碼，您可以找到包含字串資源的組件的路徑：  
   
- \<Visual Studio 安裝路徑 > \VC#\VCSPackages\1033\csprojui.dll  
+ \<Visual Studio installation path>\VC#\VCSPackages\1033\csprojui.dll  
   
  若要確認，請開啟 [檔案總管] csprojui.dll 拖到 Visual Studio 目錄... 字串資料表顯示資源 # 2345年標題**Visual C#**。  
   
@@ -90,7 +90,7 @@ devenv /installvstemplates
 ##### <a name="developeractivity"></a>DeveloperActivity  
  如果這個子機碼存在時，根節點的位置會受到開發人員設定 對話方塊。 例如，套用至物件的  
   
- DeveloperActivity REG_SZ VC #  
+ DeveloperActivity REG_SZ VC#  
   
  表示 Visual C# 將根節點如果 Visual Studio 設定[!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)]開發。 否則，它是子節點**其他語言**。  
   

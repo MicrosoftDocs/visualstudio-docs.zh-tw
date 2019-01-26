@@ -1,5 +1,5 @@
 ---
-title: DEBUG_ADDRESS |Microsoft Docs
+title: DEBUG_ADDRESS | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 79f5e765-9aac-4b6e-82ef-bed88095e9ba
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c38969fb6a17b01ebe7f04259a6ed7397c86612f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 420f8d6e065fc68077a134f6d7bb677690dc2b57
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53859395"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54972517"
 ---
 # <a name="debugaddress"></a>DEBUG_ADDRESS
 此結構代表地址。  
@@ -55,7 +55,7 @@ public struct DEBUG_ADDRESS {
 > [!NOTE]
 >  這個值是特定符號提供者也因此而不做為類別類型的識別項的一般意義。  
   
- Addr  
+ addr  
  A [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)結構，其中包含可描述個別地址類型結構的聯集。 值`addr`。`dwKind` 來自[ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)列舉型別，其中說明如何解譯聯集。  
   
 ## <a name="remarks"></a>備註  

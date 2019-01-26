@@ -4,16 +4,16 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 9eaae58d9b805888215ccd9e69753061be7695fa
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 92c7244a69f00e42beae7291b505e18919443608
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53877597"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55015039"
 ---
 # <a name="create-a-wpf-based-domain-specific-language"></a>建立 WPF 架構的特定領域語言
 

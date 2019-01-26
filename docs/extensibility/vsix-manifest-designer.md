@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 5a691e77-cf91-430d-90ea-361d9031ef83
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 54ad66452151142b3ad18a97591a5cf774896a14
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0559f003ec09b6f3b0a12fd8f429f5dc83e6322d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53852345"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54993558"
 ---
 # <a name="vsix-manifest-designer"></a>VSIX 資訊清單設計工具
 修改 VSIX 封裝資訊清單檔，它會設定 Visual Studio 擴充功能的安裝行為。  
@@ -50,7 +50,7 @@ ms.locfileid: "53852345"
   **產品識別碼**  
   指定此套件的唯一識別資訊。  
   
-  **作者**  
+  **Author**  
   指定延伸模組的作者名稱。  
   
   **版本**  

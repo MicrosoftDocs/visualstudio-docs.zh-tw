@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: c505b586-2f1e-47cb-98ee-a5afcbeda70f
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bc2086038187093397d53e80b1a26f2006c32c80
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 09f417c1f49239aacb446469944aed5336c6834d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53873349"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55033202"
 ---
 # <a name="ca2117-aptca-types-should-only-extend-aptca-base-types"></a>CA2117:APTCA 類型應該只擴充 APTCA 基底類型
 

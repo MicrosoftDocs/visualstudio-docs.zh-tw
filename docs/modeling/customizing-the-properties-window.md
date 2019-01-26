@@ -6,16 +6,16 @@ helpviewer_keywords:
 - Domain-Specific Language, Properties window
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 42f1f99cd8d5d8bc214b3a7ccde571d2a45a7d4a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c02bdb890ed6e65db4916efa9899e967a1ce897c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53987336"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54936286"
 ---
 # <a name="customizing-the-properties-window"></a>自訂屬性視窗
 您可以在您的特定領域語言 (DSL)，Visual Studio 中自訂的外觀和行為的 [屬性] 視窗。 在 DSL 定義中，您可以定義網域內容上每個網域類別。 根據預設，當您選取的類別，在圖表上或在 [模型總管] 中，執行個體時每個網域屬性列在 [屬性] 視窗中。 這可讓您查看和編輯屬性的值網域，即使您尚未對應它們在圖表上的形狀欄位。

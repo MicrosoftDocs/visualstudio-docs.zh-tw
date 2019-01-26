@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 47fc3827-07a0-4eee-b7f4-fc1c62e6b25c
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ffc97a36cc8d2ebbae5f8c37b85612a2b078d82f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2d9a312043e9acda68cb7e5083f6fad4159e0217
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53902986"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55041538"
 ---
 # <a name="idebugreference2getmemorycontext"></a>IDebugReference2::GetMemoryContext
 取得參考的記憶體內容。 保留供未來使用。  

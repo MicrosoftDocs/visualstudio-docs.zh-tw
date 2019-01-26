@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: a8623c56-273a-4c95-8d83-95911a042be7
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c0a9439150602bdb3f84f9a82aacac39dc2e9517
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 947b22929c58ce962861c65946941513d7845152
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53881227"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54957777"
 ---
 # <a name="ca1032-implement-standard-exception-constructors"></a>CA1032:必須實作標準例外狀況建構函式
 
@@ -39,11 +39,11 @@ ms.locfileid: "53881227"
 
 例外狀況類型必須實作下列三個建構函式：
 
-- 公用 NewException()
+- public NewException()
 
-- 公用 NewException(string)
+- public NewException(string)
 
-- 公用 NewException (string，例外狀況)
+- public NewException(string, Exception)
 
 此外，如果您執行舊版 FxCop 靜態程式碼分析做為相對於[Roslyn 為基礎的 FxCop 分析器](../code-quality/roslyn-analyzers-overview.md)，如果沒有第四個建構函式也會產生違規情形：
 

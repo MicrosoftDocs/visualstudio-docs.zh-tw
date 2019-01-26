@@ -9,15 +9,15 @@ helpviewer_keywords:
 - Roslyn analyzers
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 660abf31d764d0dd78b4d83c46d0931fb790f14f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7a74a529f990eca48e4e884decdd7d2c0db7b3c7
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53873219"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54930429"
 ---
 # <a name="configure-and-use-roslyn-analyzer-rules"></a>設定和使用 Roslyn 分析器規則
 

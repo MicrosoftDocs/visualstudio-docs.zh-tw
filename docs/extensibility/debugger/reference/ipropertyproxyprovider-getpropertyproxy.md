@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 3ebb7515-5bfe-48f4-9b8d-721b8f664eb6
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b97b1f3d9b2bbdd3611ea95a05da341fd7e081f3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fa11057a66ab7b876d5f7866dfcca728bb3bb790
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53934673"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54916898"
 ---
 # <a name="ipropertyproxyprovidergetpropertyproxy"></a>IPropertyProxyProvider::GetPropertyProxy
 擷取的屬性 proxy 介面做為指定之 proxy 識別碼。  

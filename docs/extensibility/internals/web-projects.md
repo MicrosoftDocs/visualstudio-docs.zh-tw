@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: d9c0329f-4b0b-4fda-8061-cce69f2f502d
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 41237c927368ff98f8e0eaa61cc1bb5717446674
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4b23602fd9f425b4943544a2af3b815a5363685a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53929746"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55034580"
 ---
 # <a name="web-projects"></a>Web 專案
 Web 專案系統會建立 Web 專案的專案系統。 Web 專案接著會建立 Web 應用程式。 您可以使用傳統的程式設計語言，例如網頁進行程式設計[!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]或[!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]，以收集和處理來自使用者的資訊、 將它儲存在資料庫中，等等。 使用相關聯的程式碼的網頁會呼叫智慧的網頁。  

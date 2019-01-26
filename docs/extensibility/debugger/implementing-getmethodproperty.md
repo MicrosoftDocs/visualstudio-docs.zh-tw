@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 6305874f-a2c4-4432-834c-07530ea84bff
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 94e9f697161a2aab0f922890d8be7506753176e9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 86dea630dc4f04a96cf017d6ac203441c71dedf5
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53912344"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55031938"
 ---
 # <a name="implement-getmethodproperty"></a>實作 GetMethodProperty
 > [!IMPORTANT]

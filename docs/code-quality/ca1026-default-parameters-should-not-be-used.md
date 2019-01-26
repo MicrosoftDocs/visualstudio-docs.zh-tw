@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 09643415-36ef-4d0f-9411-5721e14e2512
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 30a925d685a327499f426bc3e6d060b897dd90c3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2f595637f5f2023eaa6529c943a1b1a48b4446d4
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53839673"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54980528"
 ---
 # <a name="ca1026-default-parameters-should-not-be-used"></a>CA1026:不應該使用預設參數
 

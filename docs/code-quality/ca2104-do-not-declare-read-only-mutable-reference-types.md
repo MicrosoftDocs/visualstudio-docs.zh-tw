@@ -12,19 +12,19 @@ helpviewer_keywords:
 ms.assetid: 81b83ee5-4db5-4be0-9f8d-90b53894ec3b
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CPP
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 3dd84a9830f5c717595f9a2b0f25ac652e931b69
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8c1e2ceed83564c5ccdd6de87eefe3537b410612
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53844206"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55037664"
 ---
 # <a name="ca2104-do-not-declare-read-only-mutable-reference-types"></a>CA2104:不要宣告唯讀的可變動參考類型
 

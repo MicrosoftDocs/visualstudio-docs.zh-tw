@@ -1,5 +1,5 @@
 ---
-title: IDebugAlias2::GetAppDomainId |Microsoft Docs
+title: IDebugAlias2::GetAppDomainId | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 23581aaa-5a53-4859-b264-eca49fc44bcd
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 03d0ebeeddfd212b4ad99b8f1686c4f9d64141d3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b70b26cbf9248f654836a2d138ad0f79b80a3b54
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53900252"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55011738"
 ---
 # <a name="idebugalias2getappdomainid"></a>IDebugAlias2::GetAppDomainId
 擷取應用程式定義域的識別項。  

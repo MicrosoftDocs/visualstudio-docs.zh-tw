@@ -1,5 +1,5 @@
 ---
-title: IDebugEngine2::SetLocale |Microsoft Docs
+title: IDebugEngine2::SetLocale | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: cd0d2cf1-2aac-43da-a830-4bb3d696c219
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6881a217ba1d5db885c8c963885eb69e4257b26e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e736211dd4256b2a2d85a8b2f23e2474e1e4da30
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53908406"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54934782"
 ---
 # <a name="idebugengine2setlocale"></a>IDebugEngine2::SetLocale
 設定偵錯引擎 (DE) 的地區設定。  

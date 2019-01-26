@@ -1,5 +1,5 @@
 ---
-title: IDebugDefaultPort2::GetPortNotify |Microsoft Docs
+title: IDebugDefaultPort2::GetPortNotify | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 3ae715ee-9886-4694-a52b-59bb3b27467a
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f91fd7792a47b0a2e02bdf28c75702e896b704f4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 124a901ab00ba06c7855566cda00a3285c2ba6ca
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53865566"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54974668"
 ---
 # <a name="idebugdefaultport2getportnotify"></a>IDebugDefaultPort2::GetPortNotify
 這個方法會取得[IDebugPortNotify2](../../../extensibility/debugger/reference/idebugportnotify2.md)介面，此連接埠。  

@@ -1,5 +1,5 @@
 ---
-title: IDebugPropertyDestroyEvent2::GetDebugProperty |Microsoft Docs
+title: IDebugPropertyDestroyEvent2::GetDebugProperty | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: c96ae785-0ac8-4df4-8df3-15a8d7e13687
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b0e1ad40a86f8bc4c682c69ca04dbc978c75195d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 963a3d204841cf92423fa893413d375cfb62cfd8
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53956071"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54960018"
 ---
 # <a name="idebugpropertydestroyevent2getdebugproperty"></a>IDebugPropertyDestroyEvent2::GetDebugProperty
 取得要終結的屬性。  

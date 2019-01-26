@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 537e70ca-a88c-49df-bfc7-0ee63bbe4f16
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5fc9b8be565cb7b8bad25b8bddbcb35158dcc0bd
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 57bb9e239fdc8272fbf01b45456edcde95503198
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53938658"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54965324"
 ---
 # <a name="maintainability-warnings"></a>維護性警告
 

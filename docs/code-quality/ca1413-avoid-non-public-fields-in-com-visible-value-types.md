@@ -12,18 +12,18 @@ helpviewer_keywords:
 ms.assetid: 1352e7eb-fefc-4239-8847-25edc7804a54
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: dab50ec607e92222e0d14ed8f6afeeeb1515e61b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 78152c3ee5825c34ea47e2267370720e698212dc
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53912006"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54996463"
 ---
 # <a name="ca1413-avoid-non-public-fields-in-com-visible-value-types"></a>CA1413:避免在 COM 可見實值類型中使用非公用欄位
 
@@ -31,7 +31,7 @@ ms.locfileid: "53912006"
 |-|-|
 |TypeName|AvoidNonpublicFieldsInComVisibleValueTypes|
 |CheckId|CA1413|
-|類別|Microsoft.Interoperability|
+|分類|Microsoft.Interoperability|
 |中斷變更|中斷|
 
 ## <a name="cause"></a>原因

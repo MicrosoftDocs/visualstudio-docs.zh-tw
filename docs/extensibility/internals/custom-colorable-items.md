@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: b4d0ddee-c04b-48dc-ba82-f6068570cef0
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5777c5bf6340ac25888bf4a8446c61a68757c6fb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 690770c2091d3c0a983b91b9a25afc3d3eb4b348
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53989746"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54974015"
 ---
 # <a name="custom-colorable-items"></a>自訂色彩的項目
 您可以覆寫型別的清單標示色彩，例如關鍵字和註解，以及在您的語言服務中實作自訂色彩的項目。  
@@ -30,7 +30,7 @@ ms.locfileid: "53989746"
 > [!CAUTION]
 >  您應該避免與現有的色彩項目的名稱發生衝突的色彩項目的名稱包含語言名稱。 如果您變更其中一個您可設定色彩的項目名稱，在開發期間，您必須重設快取建立第一次存取您可設定色彩的項目。 您可以重設實驗性的快取**CreateExpInstance**工具，它會隨 Visual Studio SDK，通常在目錄中：  
 >   
->  *C:\Program 檔案 (x86) \Microsoft Visual Studio 14.0\VSSDK\VisualStudioIntegration\Tools\Bin*
+>  *C:\Program Files (x86)\Microsoft Visual Studio 14.0\VSSDK\VisualStudioIntegration\Tools\Bin*
 >   
 >  若要重設快取，請輸入**CreateExpInstance /Reset**。 如需詳細資訊**CreateExpInstance**，請參閱[CreateExpInstance utility](../../extensibility/internals/createexpinstance-utility.md)。  
   

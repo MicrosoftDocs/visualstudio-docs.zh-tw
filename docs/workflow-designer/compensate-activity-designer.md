@@ -8,15 +8,15 @@ f1_keywords:
 ms.assetid: 7347c947-bfff-4bad-becd-5cd23e7b24cd
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c2fd99ae4fded96b1d01a23a8ae7da47c6f09255
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c7c195c9bfd6bedf0220a989c31936975fb6d70a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53871157"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54950425"
 ---
 # <a name="compensate-activity-designer"></a>Compensate 活動設計工具
 

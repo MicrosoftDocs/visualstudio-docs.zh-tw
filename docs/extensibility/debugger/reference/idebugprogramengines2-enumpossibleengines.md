@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramEngines2::EnumPossibleEngines |Microsoft Docs
+title: IDebugProgramEngines2::EnumPossibleEngines | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 993d70a4-f6a5-4e47-a603-0b162b9fde00
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b3ebf30c4152e03a72626b96cfd51b0341494ccb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 316e7107ca1fb9bfccc27123993260e449957bc9
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53891381"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54985444"
 ---
 # <a name="idebugprogramengines2enumpossibleengines"></a>IDebugProgramEngines2::EnumPossibleEngines
 傳回所有可能的偵錯引擎 (DE) 可以偵錯此程式的 Guid。  

@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: d8fd9475-ac9b-4085-b5a3-b0c807922cac
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 954bce670ea4b8f05f4d9ba88c4a7f09850375e1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0a182bba091dfb1363f2f643a9f0f8b4be7e4963
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53826058"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54931254"
 ---
 # <a name="code-analysis-application-errors"></a>程式碼分析應用程式錯誤
 

@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 94c90012-8669-459c-af8e-307ac242c8c4
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1eefd53b82ef12c0ee2b374a320e049e620dcf5a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bfde36f5e2b4854dbcee494ddd83ff4610982530
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53938117"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54936914"
 ---
 # <a name="create-project-instances-by-using-project-factories"></a>使用 project factory 建立專案執行個體
 專案中的型別[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]使用*project factory*建立專案物件的執行個體。 專案的處理站是類似於標準的 class factory cocreatable COM 物件。 不過，不 cocreatable; 專案物件它們只能使用 project factory 建立。  

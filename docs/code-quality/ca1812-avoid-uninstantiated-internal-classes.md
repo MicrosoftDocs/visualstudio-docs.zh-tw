@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 1bb92a42-322a-44cc-98a8-8858212c1e1f
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f69e3179ffc61faca2706436444a741a238aa73
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 366039fb6cbea60e6fe2f49414e7d1827eb09df8
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53836659"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54973222"
 ---
 # <a name="ca1812-avoid-uninstantiated-internal-classes"></a>CA1812:避免使用未執行個體化的內部類別
 

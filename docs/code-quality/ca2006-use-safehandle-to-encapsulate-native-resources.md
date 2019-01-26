@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: a71950bd-bcc1-463d-b1f2-5233bc451456
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a522168250d1b62f93222201f440f53efd992f16
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9940d200c2b1c78df7a8ce69393f077b282de84a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53912347"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54986445"
 ---
 # <a name="ca2006-use-safehandle-to-encapsulate-native-resources"></a>CA2006:必須使用 SafeHandle 封裝原生資源
 

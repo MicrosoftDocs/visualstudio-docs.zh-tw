@@ -7,16 +7,16 @@ helpviewer_keywords:
 - stories
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 9101c6f264d3f4017581a6732e9b93f78e33215d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 48e25a84540bf02ee0fc64d1a0ff9509c2465ebe
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53867010"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54978733"
 ---
 # <a name="model-user-requirements"></a>模型使用者需求
 

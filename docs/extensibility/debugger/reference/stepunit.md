@@ -1,5 +1,5 @@
 ---
-title: STEPUNIT |Microsoft Docs
+title: STEPUNIT | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: cb8441f2-f744-4e73-acfe-ae8542df9649
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a0b7395b487fdcc789c99113014f4693bc6bb899
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2323ed8f539de465776ee1a9aebc9b3c21860cf9
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53944995"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54971175"
 ---
 # <a name="stepunit"></a>STEPUNIT
 指定間距單位逐步執行。  

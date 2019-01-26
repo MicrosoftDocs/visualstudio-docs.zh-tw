@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 15398fb1-f384-4bcc-ad93-00e1c0fa9ddf
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ceedee8dc355392cae34fe3ed5fae5708b6d02d6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8a2b843eb3e4a898006c26d978afb12a147f9745
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53844167"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54978421"
 ---
 # <a name="ca2003-do-not-treat-fibers-as-threads"></a>CA2003:不要將 Fiber 視為執行緒
 

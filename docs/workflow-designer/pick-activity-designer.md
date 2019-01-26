@@ -8,15 +8,15 @@ f1_keywords:
 ms.assetid: 642c0a47-1b47-45de-a19a-ca0606cedd7a
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 710c7728069a7166d67ab39239b360634fb80509
-ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
+ms.openlocfilehash: 3afd20b75bdb2c00317f9acf6ec6adcd12f6f949
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/14/2019
-ms.locfileid: "54269497"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55069773"
 ---
 # <a name="pick-activity-designer"></a>Pick 活動設計工具
 

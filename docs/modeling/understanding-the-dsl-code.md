@@ -6,16 +6,16 @@ helpviewer_keywords:
 - Domain-Specific Language, generated code
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: b47fe1e80f2441c729dd2d971bfadffb80dfbd04
-ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
+ms.openlocfilehash: 2a1a32f60f1cee19310af76e1f4b82a4dfe2f828
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/14/2019
-ms.locfileid: "54270290"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55033280"
 ---
 # <a name="understanding-the-dsl-code"></a>了解 DSL 程式碼
 特定領域語言 (DSL) 方案會產生 API，您可以用來讀取和更新 Visual Studio 中之 DSL 執行個體。 這個應用程式開發介面是以從 DSL 定義產生的程式碼來定義。 本主題說明產生的應用程式開發介面。

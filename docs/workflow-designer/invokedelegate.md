@@ -8,16 +8,16 @@ f1_keywords:
 - System.Activities.Statements.InvokeDelegate.UI
 ms.assetid: 289a7498-5127-453f-beb5-05f05b80d26f
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: fd490d15d5dc1760222446a1ae507d0e764c73f4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d960984ddb65069b5d8ccd489ed3831d6c11b33c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53870530"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54967702"
 ---
 # <a name="invokedelegate"></a>InvokeDelegate
 

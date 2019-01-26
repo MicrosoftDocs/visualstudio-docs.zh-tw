@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 5854a172-ea82-481c-97d9-c7fc16923d44
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d05abc3aa78e7c9e449892e535110a9f6c1deae8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c73ef6fb192f1b2e5538a3ad020147a6d8836678
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53911581"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55021607"
 ---
 # <a name="idebugreference2setreferencetype"></a>IDebugReference2::SetReferenceType
 設定參考型別。 保留供未來使用。  

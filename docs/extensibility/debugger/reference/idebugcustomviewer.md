@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 7aca27d3-c7b8-470f-b42c-d1e9d9115edd
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b32073b54362c7598c3756ebd691823f5bea76bb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 72f273cc08926b79e188f43356466fa00736fa5b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53946275"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54988973"
 ---
 # <a name="idebugcustomviewer"></a>IDebugCustomViewer
 此介面可讓運算式評估工具 (EE) 中是必要的任何格式顯示屬性的值。  
