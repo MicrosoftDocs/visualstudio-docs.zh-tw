@@ -1,5 +1,5 @@
 ---
-title: BP_ERROR_TYPE |Microsoft Docs
+title: BP_ERROR_TYPE | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: c483eaab-db29-46de-bfdb-5c2a9a9cfb68
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3c16d3a9658f2e53a651f7a5201bc5f04d48413c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fec663bce0c64d4da003ca337ab43cebbe73a2d7
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53989473"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54960291"
 ---
 # <a name="bperrortype"></a>BP_ERROR_TYPE
 指定中斷點的錯誤類型。  

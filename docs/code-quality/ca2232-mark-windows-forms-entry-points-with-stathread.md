@@ -12,18 +12,18 @@ helpviewer_keywords:
 ms.assetid: a3c95130-8e7f-4419-9fcd-b67d077e8efb
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: e2afcda0ee47f283ab6958b951946fffe4d37deb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1ee37645d1cc20bfd83a18b9dbb7a001731702f1
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53900570"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55043670"
 ---
 # <a name="ca2232-mark-windows-forms-entry-points-with-stathread"></a>CA2232:Windows Forms 進入點必須標記 STAThread
 

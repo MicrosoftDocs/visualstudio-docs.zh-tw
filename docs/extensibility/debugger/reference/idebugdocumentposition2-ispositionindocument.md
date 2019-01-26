@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: d5cf57cb-b93b-4e1d-bec9-185f4fe8668d
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 12c7399c85b4ad4f1bc84ae9c400c04be23837ff
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7bb112a19c933cdcdf3cc2f9e127ab2c06127bf0
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53892036"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54965350"
 ---
 # <a name="idebugdocumentposition2ispositionindocument"></a>IDebugDocumentPosition2::IsPositionInDocument
 判斷文件位置是否包含指定的文件中。  

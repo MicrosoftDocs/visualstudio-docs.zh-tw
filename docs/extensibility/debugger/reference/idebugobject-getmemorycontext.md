@@ -1,5 +1,5 @@
 ---
-title: IDebugObject::GetMemoryContext |Microsoft Docs
+title: IDebugObject::GetMemoryContext | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 6760a0d3-a898-4e81-b68f-c45c584b225b
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0d4b8929b9ed341bfa1666463349f0ab55f4bbbd
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9fe479c93cadeb6826ee4e4d3ba41ff973cb11c9
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53938208"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55027733"
 ---
 # <a name="idebugobjectgetmemorycontext"></a>IDebugObject::GetMemoryContext
 取得代表物件的值的位址的記憶體內容。  

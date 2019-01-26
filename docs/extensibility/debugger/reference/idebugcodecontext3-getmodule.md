@@ -1,5 +1,5 @@
 ---
-title: IDebugCodeContext3::GetModule |Microsoft Docs
+title: IDebugCodeContext3::GetModule | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 8e4317b8-8255-486c-a896-a68ed94f8aa1
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 964307760c0ff5224bf56db3d3779771725b7e9d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7a9c56f50e878b26ddb1012527a0388e03af6898
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53915016"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54941597"
 ---
 # <a name="idebugcodecontext3getmodule"></a>IDebugCodeContext3::GetModule
 擷取的偵錯模組介面的參考。  
