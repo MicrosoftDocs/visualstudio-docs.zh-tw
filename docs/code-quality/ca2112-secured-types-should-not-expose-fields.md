@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 9eb13a78-3487-49f2-81d1-3c3866db132f
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d4786b51536d9df7c51c8551b5fbd8d863879875
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0993a5cec6ef5fc9e21aae3ff97c37397931b78c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53920400"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55026654"
 ---
 # <a name="ca2112-secured-types-should-not-expose-fields"></a>CA2112:受保護類型不應該公開欄位
 

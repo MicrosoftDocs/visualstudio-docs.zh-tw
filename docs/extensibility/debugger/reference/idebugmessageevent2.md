@@ -1,5 +1,5 @@
 ---
-title: IDebugMessageEvent2 |Microsoft Docs
+title: IDebugMessageEvent2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: a9ff3d00-e9ac-4cd6-bda9-584a4815aff8
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 62ead34f06d474875539ebd4e274cfcd51db4e22
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fe342f8d6de169f25ee432a8295bc08d6a7991ca
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53860971"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55026174"
 ---
 # <a name="idebugmessageevent2"></a>IDebugMessageEvent2
 此介面由偵錯引擎 (DE) 用於將訊息傳送至 Visual Studio 需要來自使用者的回應。  

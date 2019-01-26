@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 620d7dcd-d462-475e-a449-fbfa06ff12c5
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0a4ec2f9fa5fbd6e0fbbdd57bf6de6f2c9dfb0fa
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e297493226478c27f3c3eb6d22e45cb5769e42d3
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53987047"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55023911"
 ---
 # <a name="microsoft-help-viewer-sdk"></a>Microsoft Help Viewer SDK
 
@@ -310,13 +310,13 @@ F1 流程圖表：
 
    - 適用於 32 位元作業系統：
 
-      HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Help\v2.3\Partner<em>\\< 命名空間\></em>
+      HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Help\v2.3\Partner<em>\\<namespace\></em>
 
       「 位置 」 = 「 離線 」
 
    - 適用於 64 位元作業系統：
 
-      HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Help\v2.3\Partner<em>\\< 命名空間\></em>
+      HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Help\v2.3\Partner<em>\\<namespace\></em>
 
       「 位置 」 = 「 離線 」
 
@@ -351,18 +351,18 @@ HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\15.0\Dynamic 說明鍵：零�
 
 | 屬性 （HTML 表示） | 描述 |
 | - | - |
-| \< 中繼 name="Microsoft.Help.Locale"內容 ="[語言代碼]"/ > | 本主題的地區設定。 如果此標記用在主題中，必須一次使用，而且它必須插入上述任何其他的 Microsoft 說明標記。 如果未使用此標記，本主題的內文會使用斷詞工具所關聯的產品地區設定中，如果您指定了; 編製索引否則，en-us-我們會使用斷詞工具。 ISOC RFC 4646 符合此標記。 若要確保 Microsoft 技術能夠正常運作，使用此屬性而不是一般的 [語言] 屬性。 |
-| \< 中繼 name="Microsoft.Help.TopicLocale"內容 ="[語言代碼]"/ > | 本主題的地區設定時也會使用其他地區設定。 如果此標記用在主題中，它必須使用一次。 當類別目錄包含在一個以上的語言中的內容時，請使用這個標記。 在目錄中的多個主題可以有相同的識別碼，但必須指定唯一的 TopicLocale 的每個。 指定符合目錄的地區設定 TopicLocale 主題是顯示在目錄中的主題。 不過，本主題的所有語言版本會都顯示在搜尋結果中。 |
+| \< meta name="Microsoft.Help.Locale" content="[language-code]" /> | 本主題的地區設定。 如果此標記用在主題中，必須一次使用，而且它必須插入上述任何其他的 Microsoft 說明標記。 如果未使用此標記，本主題的內文會使用斷詞工具所關聯的產品地區設定中，如果您指定了; 編製索引否則，en-us-我們會使用斷詞工具。 ISOC RFC 4646 符合此標記。 若要確保 Microsoft 技術能夠正常運作，使用此屬性而不是一般的 [語言] 屬性。 |
+| \< meta name="Microsoft.Help.TopicLocale" content="[language-code]" /> | 本主題的地區設定時也會使用其他地區設定。 如果此標記用在主題中，它必須使用一次。 當類別目錄包含在一個以上的語言中的內容時，請使用這個標記。 在目錄中的多個主題可以有相同的識別碼，但必須指定唯一的 TopicLocale 的每個。 指定符合目錄的地區設定 TopicLocale 主題是顯示在目錄中的主題。 不過，本主題的所有語言版本會都顯示在搜尋結果中。 |
 | \< 標題 > [標題] \< /標題 > | 指定本主題的標題。 此標記為必要項，並必須用於主題的一次。 如果本主題的本文不包含標題\<d i v > 區段中，這個標題會顯示主題中，並在目錄中。 |
-| \< 中繼名稱 ="Microsoft.Help.Keywords 」 內容 ="[aKeywordPhrase]"/ > | 指定連結的說明檢視器的 [索引] 窗格中顯示的文字。 按一下連結時，即會顯示主題。 您可以指定多個索引關鍵字的主題，或如果您不想要顯示在索引中此主題的連結，您可以省略此標記。 "K"關鍵字，從早期版本的說明可以轉換成這個屬性。 |
-| \< 中繼 name="Microsoft.Help.Id"內容 ="[TopicID]"/ > | 設定本主題的識別碼。 此標記為必要項，並必須用於主題的一次。 識別碼必須是唯一的目錄中有相同的地區設定的主題。 在另一個主題中，您可以建立本主題的連結，使用此識別碼。 |
-| \< 中繼 name="Microsoft.Help.F1"content="[System.Windows.Controls.Primitives.IRecyclingItemContainerGenerator]"/ > | 指定本主題的 f1 說明關鍵字。 您可以指定多個 F1 關鍵字的主題，或如果不想讓此應用程式使用者按下 F1 鍵時要顯示的主題，您可以省略此標記。 通常，只有一個 F1 關鍵字會指定主題。 "F"關鍵字，從早期版本的說明可以轉換成這個屬性。 |
-| \< 中繼名稱 ="Description"content ="[主題 description]"/ > | 提供簡短摘要，本主題中的內容。 如果此標記用在主題中，它必須使用一次。 直接由查詢程式庫，存取這個屬性它不會儲存在索引檔案。 |
-| 中繼 name="Microsoft.Help.TocParent"內容 ="[sys.internal_tables]"/ > | 指定本主題的最上層主題中的目錄。 此標記為必要項，並必須用於主題的一次。 這個值會是父代的 Microsoft.Help.Id。 主題可以有一個位置資料表中的內容。 "-1"，就會被視為目錄根的主題識別碼。 在  [!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)]，該頁面是說明檢視器首頁。 這是我們特別將 TocParent = 1 加入一些主題，以確保，它們會顯示在上方層級相同的原因。 說明檢視器首頁是系統頁面，因此不可取代。 如果 VSP 嘗試新增的頁面識別碼為-1 時，它可能會加入至內容集，但說明檢視器一律會使用 系統 頁面-說明檢視器首頁 |
-| \< 中繼 name="Microsoft.Help.TocOrder"內容 ="[整數]"/ > | 指定的目錄中本主題出現的位置相對於其對等主題。 此標記為必要項，並必須用於主題的一次。 值為整數。 指定的數值較小的整數的主題上方指定較高值整數的主題。 |
-| \< 中繼 name="Microsoft.Help.Product"內容 ="[product code]"/ > | 指定此主題描述的產品。 如果此標記用在主題中，它必須使用一次。 這項資訊也可做為參數傳遞給協助索引子。 |
+| \< meta name=" Microsoft.Help.Keywords" content="[aKeywordPhrase]"/> | 指定連結的說明檢視器的 [索引] 窗格中顯示的文字。 按一下連結時，即會顯示主題。 您可以指定多個索引關鍵字的主題，或如果您不想要顯示在索引中此主題的連結，您可以省略此標記。 "K"關鍵字，從早期版本的說明可以轉換成這個屬性。 |
+| \< meta name="Microsoft.Help.Id" content="[TopicID]"/> | 設定本主題的識別碼。 此標記為必要項，並必須用於主題的一次。 識別碼必須是唯一的目錄中有相同的地區設定的主題。 在另一個主題中，您可以建立本主題的連結，使用此識別碼。 |
+| \< meta name="Microsoft.Help.F1" content="[System.Windows.Controls.Primitives.IRecyclingItemContainerGenerator]"/> | 指定本主題的 f1 說明關鍵字。 您可以指定多個 F1 關鍵字的主題，或如果不想讓此應用程式使用者按下 F1 鍵時要顯示的主題，您可以省略此標記。 通常，只有一個 F1 關鍵字會指定主題。 "F"關鍵字，從早期版本的說明可以轉換成這個屬性。 |
+| \< meta name="Description" content="[topic description]" /> | 提供簡短摘要，本主題中的內容。 如果此標記用在主題中，它必須使用一次。 直接由查詢程式庫，存取這個屬性它不會儲存在索引檔案。 |
+| meta name="Microsoft.Help.TocParent" content="[parent_Id]"/> | 指定本主題的最上層主題中的目錄。 此標記為必要項，並必須用於主題的一次。 這個值會是父代的 Microsoft.Help.Id。 主題可以有一個位置資料表中的內容。 "-1"，就會被視為目錄根的主題識別碼。 在  [!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)]，該頁面是說明檢視器首頁。 這是我們特別將 TocParent = 1 加入一些主題，以確保，它們會顯示在上方層級相同的原因。 說明檢視器首頁是系統頁面，因此不可取代。 如果 VSP 嘗試新增的頁面識別碼為-1 時，它可能會加入至內容集，但說明檢視器一律會使用 系統 頁面-說明檢視器首頁 |
+| \< meta name="Microsoft.Help.TocOrder" content="[positive integer]"/> | 指定的目錄中本主題出現的位置相對於其對等主題。 此標記為必要項，並必須用於主題的一次。 值為整數。 指定的數值較小的整數的主題上方指定較高值整數的主題。 |
+| \< meta name="Microsoft.Help.Product" content="[product code]"/> | 指定此主題描述的產品。 如果此標記用在主題中，它必須使用一次。 這項資訊也可做為參數傳遞給協助索引子。 |
 | \< 中繼 name="Microsoft.Help.ProductVersion"內容 ="[版本號碼]"/ > | 指定此主題描述的產品版本。 如果此標記用在主題中，它必須使用一次。 這項資訊也可做為參數傳遞給協助索引子。 |
-| \< 中繼 name="Microsoft.Help.Category"內容 ="[string]"/ > | 用來識別小節內容的產品。 您可以識別多個小節的主題，或如果您不想找出任何小節的連結，您可以省略此標記。 此標記用來儲存 TargetOS 和 TargetFrameworkMoniker 的屬性，當轉換從較早版本的說明主題。 內容的格式是 AttributeName:AttributeValue。 |
+| \< meta name="Microsoft.Help.Category" content="[string]"/> | 用來識別小節內容的產品。 您可以識別多個小節的主題，或如果您不想找出任何小節的連結，您可以省略此標記。 此標記用來儲存 TargetOS 和 TargetFrameworkMoniker 的屬性，當轉換從較早版本的說明主題。 內容的格式是 AttributeName:AttributeValue。 |
 | \< 中繼 name="Microsoft.Help.TopicVersion 內容 ="[主題版本號碼]"/ > | 在目錄中的多個版本存在時，請指定此版本的主題。 Microsoft.Help.Id 不保證是唯一的因為此標記時，需要多個版本的主題時存在，在目錄中，例如，目錄包含.NET Framework 3.5 和主題的主題，適用於.NET Framework 4 而且兩者都有相同的 Micro軟性。Help.Id。 |
 | \< 中繼名稱 ="SelfBranded"content ="[為 TRUE 或 FALSE]"/ > | 指定本主題使用 Help Library 管理員啟動商標或商標套件的特定主題。 此標記必須是 TRUE 或 FALSE。 如果是 TRUE，則相關主題的品牌封裝會覆寫 Help Library 管理員啟動，以便讓主題呈現如預期般，即使其不同於其他內容的轉譯時，會設定品牌封裝。 如果是 FALSE，目前的主題是根據 Help Library 管理員啟動時設定品牌封裝中呈現。 根據預設，Help Library 管理員假設自我品牌除非 SelfBranded 變數宣告為 TRUE; 否則為 false因此，您並不需要宣告\<中繼名稱 ="SelfBranded"content ="FALSE"/ >。 |
 
@@ -452,7 +452,7 @@ Branding.xml 檔案包含用於以一致的方式呈現在主題中的特定項�
 | 功能： | **意見反應、 頁尾和標誌** |
 | 用法: | 提供客戶提供有關透過電子郵件的目前主題的意見反應的意見反應控制項。  著作權文字內容。  標誌的定義。 |
 | **目** | **值 （這些字串可以修改以符合內容的採用者需要）。** |
-| 著作權 | © 2013 Microsoft Corporation。 著作權所有，並保留一切權利。 |
+| 著作權 | © 2013 Microsoft Corporation. 著作權所有，並保留一切權利。 |
 | SendFeedback | \<a ="{0}」 {1}> 傳送意見反應 \< /a > 給 Microsoft 的這個主題。 |
 | FeedbackLink | |
 | LogoTitle | [!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)] |
@@ -467,7 +467,7 @@ Branding.xml 檔案包含用於以一致的方式呈現在主題中的特定項�
 | MT_QualityNonEditable | 本文是人工翻譯。 如果您有網際網路連線時，選取 檢視線上本主題 「 以同時顯示原始英文內容的可編輯模式檢視這個頁面。 |
 | MT_BetaContents | 這篇文章是針對初步發行的機器翻譯。 如果您有網際網路連線時，選取 檢視線上本主題 「 以同時顯示原始英文內容的可編輯模式檢視這個頁面。 |
 | MT_BetaRecycledContents | 本文是人工翻譯為初步發行版。 如果您有網際網路連線時，選取 檢視線上本主題 「 以同時顯示原始英文內容的可編輯模式檢視這個頁面。 |
-| 功能： | **用於 LinkTable** |
+| 功能： | **LinkTable** |
 | 用法: | 如需線上主題的連結支援 |
 | **目** | **值** |
 | LinkTableTitle | 連結資料表 |
@@ -510,7 +510,7 @@ Branding.xml 檔案包含用於以一致的方式呈現在主題中的特定項�
 | HomePageNoBooksInstalled | 在您的電腦上找不到任何內容。 |
 | HomePageHelpSettings | 說明內容設定 |
 | HomePageHelpSettingsText | \<p > 您目前的設定是本機說明。 說明檢視器會顯示您已安裝在電腦的內容。\<b / > 若要變更您的來源的說明內容，請在 Visual Studio 功能表列上選擇\<s p a n style ="{0}"> 協助，請設定說明偏好\</s p a n >。\<b / > \< /p > |
-| Mb | MB |
+| MegaByte | MB |
 
 **branding.js**
 
@@ -523,7 +523,7 @@ Branding.js 檔案包含 Visual Studio 說明檢視器的品牌元素所使用�
 |取得使用者程式碼語言|setUserPreferenceLang|對應索引 # 程式碼語言|
 |設定和取得 cookie 值|getCookie setCookie||
 |繼承的成員|changeMembersLabel|展開/摺疊繼承的成員|
-|當 SelfBranded = False|onLoad|讀取查詢字串來檢查其是否為列印要求。  設定將使用者的慣用索引標籤的所有 codesnippets。如果是列印要求，然後設定 isPrinterFriendly 為 true。 檢查有高對比模式。|
+|When SelfBranded=False|onLoad|讀取查詢字串來檢查其是否為列印要求。  設定將使用者的慣用索引標籤的所有 codesnippets。如果是列印要求，然後設定 isPrinterFriendly 為 true。 檢查有高對比模式。|
 |程式碼片段|addSpecificTextLanguageTagSet||
 ||getIndexFromDevLang||
 ||ChangeTab||
@@ -545,7 +545,7 @@ Branding.js 檔案包含 Visual Studio 說明檢視器的品牌元素所使用�
 ||captionsOnOff(id)||
 ||toSeconds(t)||
 ||getAllComments(node)||
-||styleRectify （styleName、 styleValue）||
+||styleRectify(styleName, styleValue)||
 ||showCC(id)||
 ||subtitle(id)||
 
@@ -557,22 +557,22 @@ Branding.js 檔案包含 Visual Studio 說明檢視器的品牌元素所使用�
 |-|-|-|
 |**檔案**|**使用**|**顯示內容的來源**|
 |homepage.htm|這是頁面會顯示目前已安裝的內容，以及適當呈現給使用者，其內容相關的任何其他訊息。  此檔案具有額外的中繼資料屬性 」 Microsoft.Help.Id"內容 ="-1"，而放置此內容在本機內容目錄的頂端。||
-||&LT; META_HOME_PAGE_TITLE_ADD / &GT;|Branding.xml、 標記\<HomePageTitle >|
-||&LT; HOME_PAGE_INTRODUCTION_SECTION_ADD / &GT;|Branding.xml、 標記\<HomePageIntroduction >|
-||&LT; HOME_PAGE_CONTENT_INSTALL_SECTION_ADD / &GT;|Branding.xml、 標記\<HomePageContentInstallText >|
-||&LT; HOME_PAGE_BOOKS_INSTALLED_SECTION_ADD / &GT;|標題區段 Branding.xml 標記\<HomePageInstalledBooks >，從應用程式，產生的資料\<HomePageNoBooksInstalled > 何時安裝任何書。|
-||&LT; HOME_PAGE_SETTINGS_SECTION_ADD / &GT;|標題區段 Branding.xml 標記\<HomePageHelpSettings >，區段文字\<HomePageHelpSettingsText >。|
+||<META_HOME_PAGE_TITLE_ADD />|Branding.xml、 標記\<HomePageTitle >|
+||<HOME_PAGE_INTRODUCTION_SECTION_ADD />|Branding.xml、 標記\<HomePageIntroduction >|
+||<HOME_PAGE_CONTENT_INSTALL_SECTION_ADD />|Branding.xml、 標記\<HomePageContentInstallText >|
+||<HOME_PAGE_BOOKS_INSTALLED_SECTION_ADD />|標題區段 Branding.xml 標記\<HomePageInstalledBooks >，從應用程式，產生的資料\<HomePageNoBooksInstalled > 何時安裝任何書。|
+||<HOME_PAGE_SETTINGS_SECTION_ADD />|標題區段 Branding.xml 標記\<HomePageHelpSettings >，區段文字\<HomePageHelpSettingsText >。|
 |topiccorrupted.htm|當本機集合中的主題存在，但無法顯示因為某些原因 （損毀的內容）。||
-||&LT; META_TOPIC_CORRUPTED_TITLE_ADD / &GT;|Branding.xml、 標記\<TopicCorruptedTitle >|
-||&LT; TOPIC_CORRUPTED_SECTION_ADD / &GT;|Branding.xml、 標記\<TopicCorruptedViewOnlineText >|
+||<META_TOPIC_CORRUPTED_TITLE_ADD />|Branding.xml、 標記\<TopicCorruptedTitle >|
+||<TOPIC_CORRUPTED_SECTION_ADD />|Branding.xml、 標記\<TopicCorruptedViewOnlineText >|
 |topicnotfound.htm|當主題找不到本機內容中設定，也無法再使用 online||
-||&LT; META_TOPIC_NOT_FOUND_TITLE_ADD / &GT;|Branding.xml、 標記\<TopicNotFoundTitle >|
-||&LT; META_TOPIC_NOT_FOUND_ID_ADD / &GT;|Branding.xml、 標記\<TopicNotFoundViewOnlineText > + \<TopicNotFoundDownloadContentText >|
-||&LT; TOPIC_NOT_FOUND_SECTION_ADD / &GT;|Branding.xml、 標記\<TopicNotFoundText >|
+||<META_TOPIC_NOT_FOUND_TITLE_ADD />|Branding.xml、 標記\<TopicNotFoundTitle >|
+||<META_TOPIC_NOT_FOUND_ID_ADD />|Branding.xml, tag \<TopicNotFoundViewOnlineText> + \<TopicNotFoundDownloadContentText>|
+||<TOPIC_NOT_FOUND_SECTION_ADD />|Branding.xml、 標記\<TopicNotFoundText >|
 |contentnotinstalled.htm|當沒有本機安裝之產品的內容。||
-||&LT; META_CONTENT_NOT_INSTALLED_TITLE_ADD / &GT;|Branding.xml、 標記\<ContentNotInstalledTitle >|
-||&LT; META_CONTENT_NOT_INSTALLED_ID_ADD / &GT;|Branding.xml、 標記\<ContentNotInstalledDownloadContentText >|
-||&LT; CONTENT_NOT_INSTALLED_SECTION_ADD / &GT;|Branding.xml、 標記\<ContentNotInstalledText >|
+||<META_CONTENT_NOT_INSTALLED_TITLE_ADD />|Branding.xml、 標記\<ContentNotInstalledTitle >|
+||<META_CONTENT_NOT_INSTALLED_ID_ADD />|Branding.xml、 標記\<ContentNotInstalledDownloadContentText >|
+||<CONTENT_NOT_INSTALLED_SECTION_ADD />|Branding.xml、 標記\<ContentNotInstalledText >|
 
 **CSS 檔案**
 
@@ -801,7 +801,7 @@ Visual Studio 標誌，以及其他圖形，則會顯示 visual Studio 內容。
 
     [!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)] 整合式的 Shell:
 
-    C:ProgramDataMicrosoftHelpLibrary2CatalogsVisualStudio15en-美國
+    C:ProgramDataMicrosoftHelpLibrary2CatalogsVisualStudio15en-US
 
     關鍵字：CatalogName 字串值：[!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)] 文件。 ISO 殼層，這是您目錄的名稱。
 
@@ -809,7 +809,7 @@ Visual Studio 標誌，以及其他圖形，則會顯示 visual Studio 內容。
 
 9. 整合式 Shell 命令列範例測試內容存放區。 ISO shell 變更類別目錄和 launchingApp 為適當的值來比對的產品。
 
-     "C:\Program 檔案 (x86) \Microsoft Help Viewer\v2.3\HlpViewer.exe"/catalogName VisualStudio15 /helpQuery 方法 = 「 頁面 」 與 「 識別碼 = ContosoTopic0"/launchingApp Microsoft VisualStudio，12.0
+     "C:\Program Files (x86)\Microsoft Help Viewer\v2.3\HlpViewer.exe" /catalogName VisualStudio15 /helpQuery method="page&id=ContosoTopic0" /launchingApp Microsoft,VisualStudio,12.0
 
 10. 啟動 Contoso 應用程式 （來自 Contoso 應用程式根目錄中）。 在 ISO Shell 中，選擇**幫助**功能表項目，以及變更**設定說明偏好**來**使用本機說明**。
 

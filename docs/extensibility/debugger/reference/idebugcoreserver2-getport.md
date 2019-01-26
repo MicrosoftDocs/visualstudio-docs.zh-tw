@@ -1,5 +1,5 @@
 ---
-title: IDebugCoreServer2::GetPort |Microsoft Docs
+title: IDebugCoreServer2::GetPort | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 3f5ea4a8-6085-4600-980a-9e48f8b5be56
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6d9f2ba3699337191a9aa11b8b47d9e5f6101bf2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7d1bc15f1de05a2474c924f7407353a7a0040d69
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53965391"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55021321"
 ---
 # <a name="idebugcoreserver2getport"></a>IDebugCoreServer2::GetPort
 擷取特定的連接埠。  

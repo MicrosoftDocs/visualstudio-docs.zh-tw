@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 3eda58e7-c6ec-41c3-8112-ae0841109c6a
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0e0408969d5f14681c2640b71894aa6c7d9b65f4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 701b44b8018e7493305c5269a38908c454889b9c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53954207"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54986146"
 ---
 # <a name="ca2122-do-not-indirectly-expose-methods-with-link-demands"></a>CA2122:不要間接公開具有連結要求的方法
 

@@ -1,5 +1,5 @@
 ---
-title: IDebugModule3::IsUserCode |Microsoft Docs
+title: IDebugModule3::IsUserCode | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 77022946-bb8b-4114-aa81-614df6e54b13
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a8756e926f602c1be62670aa36f9367e064910a4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f852869069125e0a215cffd9c4c4f6eb15a2ab39
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53990054"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55007447"
 ---
 # <a name="idebugmodule3isusercode"></a>IDebugModule3::IsUserCode
 擷取有關模組是否代表使用者程式碼。  

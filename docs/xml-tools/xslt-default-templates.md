@@ -6,15 +6,15 @@ ms.topic: conceptual
 ms.assetid: 773dd34e-67d3-4997-8df9-b71e7f880d88
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2eb71cf0a94f02e5de8af9e61bdc947694920929
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 088f408d657a828cdffa4012c41afb3da034af5d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53908380"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55043047"
 ---
 # <a name="xslt-default-templates"></a>XSLT 預設範本
 

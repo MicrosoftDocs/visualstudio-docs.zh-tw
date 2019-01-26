@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: ef48d2d2-0c47-4f93-8cfe-52026b6c463e
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8186e8287c55f5e8d383457d809cd9e3235cee75
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 552389cddf412477443ff47df6d9ec9e2f6e14dc
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53895738"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55021412"
 ---
 # <a name="combos-element"></a>Combos 元素
 群組[Combo 元素](../extensibility/combo-element.md)項目。  

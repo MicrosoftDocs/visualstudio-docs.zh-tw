@@ -1,5 +1,5 @@
 ---
-title: IDebugModule3::SetJustMyCodeState |Microsoft Docs
+title: IDebugModule3::SetJustMyCodeState | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 68f8166d-ef64-49ae-ad5e-79604f43bbd4
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 60f072ab458e1c4eddb053f897665422aacf2c7f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: faa3348f7916e7d56cbdd4c279a09dcc2b5ccdab
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53908471"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55008175"
 ---
 # <a name="idebugmodule3setjustmycodestate"></a>IDebugModule3::SetJustMyCodeState
 將標記視為使用者程式碼模組。  

@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 10302b9a-fa5e-4935-a06a-513d9600f613
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 998d941d0dd0ec06ff7d0f8a727ad3bf50718065
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7f9b0e55a7417d60187572d3f49d8ae547ff04aa
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53928515"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54995229"
 ---
 # <a name="ca1053-static-holder-types-should-not-have-constructors"></a>CA1053:靜態預留位置類型不應該包含建構函式
 

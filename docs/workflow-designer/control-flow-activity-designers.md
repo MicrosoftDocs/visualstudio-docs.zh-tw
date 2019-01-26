@@ -6,15 +6,15 @@ ms.prod: visual-studio-dev15
 ms.assetid: ba74af23-5398-4e62-bd90-c50612e3bfef
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 17f8ee8f97c172546867a552b32f2640d42bc91f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 31ac70e2b9628274e932d2b16fd695700aa2701a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53935511"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54998634"
 ---
 # <a name="control-flow-activity-designers"></a>Control Flow 活動設計工具
 

@@ -5,20 +5,20 @@ ms.topic: conceptual
 ms.assetid: 754b9bf3-8681-4c77-b0a4-09146a4e1d2d
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 563c9206e72788cc26eccdfab7d0e0993d14d1a8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c385c7abda5ccf45914cf990770704156dd701a4
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53948767"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55000805"
 ---
 # <a name="walkthrough-save-user-settings-on-a-start-page"></a>逐步解說：起始頁上儲存使用者設定
 您可以保存您的起始頁的使用者設定。 依照本逐步解說中，您可以建立將設定儲存至登錄中，當使用者按一下按鈕，並接著會擷取該設定，每次載入起始頁的控制項。 由於起始頁專案範本包含可自訂的使用者控制項，而且預設啟動頁面 XAML 呼叫該控制項，您不需要修改 [啟動] 頁面本身。  
   
- 在此逐步解說中具現化的設定存放區是的執行個體<xref:Microsoft.VisualStudio.Shell.Interop.IVsWritableSettingsStore>介面，它會讀取並寫入下列登錄位置，當呼叫它：**HKCU\Software\Microsoft\VisualStudio\14.0\\\<集合名稱 >**  
+ 在此逐步解說中具現化的設定存放區是的執行個體<xref:Microsoft.VisualStudio.Shell.Interop.IVsWritableSettingsStore>介面，它會讀取並寫入下列登錄位置，當呼叫它：**HKCU\Software\Microsoft\VisualStudio\14.0\\\<CollectionName>**  
   
  當執行它時，Visual Studio 的實驗執行個體中時，設定存放區讀取並寫入**HKCU\Software\Microsoft\VisualStudio\14.0Exp\\\<集合名稱 >。**  
   

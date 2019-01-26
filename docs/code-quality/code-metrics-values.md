@@ -7,15 +7,15 @@ helpviewer_keywords:
 - code metrics [Visual Studio]
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4be2b3672741d0bcae64085d1140e5c2ae2bbf63
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d2036d2d8ca11fbae20694d4780fee3e710e537c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53855568"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55013817"
 ---
 # <a name="code-metrics-values"></a>程式碼度量值
 

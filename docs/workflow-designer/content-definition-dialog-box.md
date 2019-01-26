@@ -8,15 +8,15 @@ f1_keywords:
 ms.assetid: 7e4237c3-90a1-4149-bd8a-3643d1dde0df
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cae5fc2c8da95a803dba915c3fa4b2a63820ee93
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 49d789e3cbf1a005462e4b23db698bc81c65164a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53952968"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54999934"
 ---
 # <a name="content-definition-dialog-box"></a>內容定義對話方塊
 

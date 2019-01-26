@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 20570a00-864b-459c-a1fa-a6e9db5f1001
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d20ec103b2861fbdb80d45b82135686c26b91c9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 04a6c105f2452392af5c7246508232df18385b5e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53944982"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55018380"
 ---
 # <a name="ca1301-avoid-duplicate-accelerators"></a>CA1301:避免使用重複的快速鍵
 

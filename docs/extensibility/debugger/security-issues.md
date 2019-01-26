@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: d6ffff0a-afb4-4f38-86d8-476c881c4e4b
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 387c00fa9440bd8a6ffdc862e9b91110dadcfd69
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4dcd9806459a1cdc92d3eb698fcae7b4a7e0fa6f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53940754"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55016449"
 ---
 # <a name="security-issues"></a>安全性問題
 若要偵錯使用 Visual Studio 的程式，所需的權限僅限於都相同的開發人員需要用來執行程式。 這包括大多數的情況下執行遠端偵錯。 某些情況下，包含其他服務，例如網際網路資訊服務，可能需要較高層級的權限。  

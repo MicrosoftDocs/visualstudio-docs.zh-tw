@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: e48ecfb2-f4b5-4d3a-b4a2-7a4d62fa4ec0
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 07a2e38f38ca5e9414f5ab6b416eb0ca888131f2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5b373fd51087526c30243391b6b0b32ad27e15ab
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53866903"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55027421"
 ---
 # <a name="composite-patterns-for-visual-studio"></a>適用於 Visual Studio 的複合模式
 複合模式結合不同組態中的互動與設計元素。 在 Visual Studio 中的一致性方面的最重要複合模式包括：  
@@ -73,13 +73,13 @@ ms.locfileid: "53866903"
 
 |樣本|hex|RGB|  
 |------------|---------|---------|  
-|![樣本 71B252](../../extensibility/ux-guidelines/media/0711_71b252.png "0711_71B252")|# 71B252|113,178,82|  
-|![樣本 BF3F00](../../extensibility/ux-guidelines/media/0711_bf3f00.png "0711_BF3F00")|# BF3F00|191,63,0|  
-|![樣本 FCB714](../../extensibility/ux-guidelines/media/0711_fcb714.png "0711_FCB714")|# FCB714|252,183,20|  
-|![樣本 903F8B](../../extensibility/ux-guidelines/media/0711_903f8b.png "0711_903F8B")|# 903F8B|144,63,139|  
-|![樣本 117AD1](../../extensibility/ux-guidelines/media/0711_117ad1.png "0711_117AD1")|# 117AD1|17,122,209|  
-|![樣本 79D7F2](../../extensibility/ux-guidelines/media/0711_79d7f2.png "0711_79D7F2")|# 79D7F2|121,215,242|  
-|![樣本 B5B5B5](../../extensibility/ux-guidelines/media/0711_b5b5b5.png "0711_B5B5B5")|# B5B5B5|181,181,181|  
+|![樣本 71B252](../../extensibility/ux-guidelines/media/0711_71b252.png "0711_71B252")|#71B252|113,178,82|  
+|![Swatch BF3F00](../../extensibility/ux-guidelines/media/0711_bf3f00.png "0711_BF3F00")|#BF3F00|191,63,0|  
+|![Swatch FCB714](../../extensibility/ux-guidelines/media/0711_fcb714.png "0711_FCB714")|#FCB714|252,183,20|  
+|![樣本 903F8B](../../extensibility/ux-guidelines/media/0711_903f8b.png "0711_903F8B")|#903F8B|144,63,139|  
+|![樣本 117AD1](../../extensibility/ux-guidelines/media/0711_117ad1.png "0711_117AD1")|#117AD1|17,122,209|  
+|![樣本 79D7F2](../../extensibility/ux-guidelines/media/0711_79d7f2.png "0711_79D7F2")|#79D7F2|121,215,242|  
+|![Swatch B5B5B5](../../extensibility/ux-guidelines/media/0711_b5b5b5.png "0711_B5B5B5")|#B5B5B5|181,181,181|  
 
 ##  <a name="BKMK_OnObjectUI"></a> 物件上 UI 和預覽  
  本節提供內容來窺視，也就是程式碼預覽 檢視的唯一 Visual studio 的物件上 UI 型別。  
@@ -396,7 +396,7 @@ ms.locfileid: "53866903"
 
 | 狀況 | 外觀 | 視覺效果詳細資料 |
 |-------------------------|---------------| - |
-| **未選取** | 預設 | ![預設按鈕狀態](../../extensibility/ux-guidelines/media/0713-10_defaultstate.png "0713年 10_DefaultState") |
+| **未選取** | 預設 | ![Default button state](../../extensibility/ux-guidelines/media/0713-10_defaultstate.png "0713-10_DefaultState") |
 | **主要選取項目** | 可調整大小 | ![使用主要選取項目調整大小控點](../../extensibility/ux-guidelines/media/0713-11_primaryresize.png "0713年 11_PrimaryResize") |
 | **主要選取項目** | 不能調整大小 | ![主要的選取項目，而不需要調整大小控點](../../extensibility/ux-guidelines/media/0713-13_primarynoresize.png "0713年 13_PrimaryNoResize") |
 | **主要選取項目** | 鎖定 | ![已鎖定主要選取範圍](../../extensibility/ux-guidelines/media/0713-15_primarylocked.png "0713年 15_PrimaryLocked") |

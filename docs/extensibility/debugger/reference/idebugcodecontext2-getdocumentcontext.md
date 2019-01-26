@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: d552cc92-963f-43c1-949f-ae6b63a427b8
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d506c6c0810d27e7c8ed155724c1edc90f29fe06
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5bd66680e3651f636b1470b881998125b7cf2d38
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53917341"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55040901"
 ---
 # <a name="idebugcodecontext2getdocumentcontext"></a>IDebugCodeContext2::GetDocumentContext
 取得對應於這個程式碼內容的文件內容。 文件內容代表對應至產生此指令的原始程式碼的原始程式檔中的位置。  

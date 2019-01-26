@@ -1,5 +1,5 @@
 ---
-title: IDebugObject2::IsUserData |Microsoft Docs
+title: IDebugObject2::IsUserData | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 6ffa0d0e-f742-496d-acc7-db74c248bc45
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8022c5e618df682456b81bc716e0964ff2c3a94d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 33b6815f5d216e4259c7e43dad11ca93ab1a3776
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53834343"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55015624"
 ---
 # <a name="idebugobject2isuserdata"></a>IDebugObject2::IsUserData
 判斷物件是否代表使用者資料。  

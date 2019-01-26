@@ -1,5 +1,5 @@
 ---
-title: IDebugField::GetInfo |Microsoft Docs
+title: IDebugField::GetInfo | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 7d508200-89ce-400f-a8ea-f28e7610cb2b
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d853d63c71e6cc2edb58ec858503f11061ee427b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 78555274e7e88bc6073f11f35d7f6f6b1ad55808
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53823976"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54988892"
 ---
 # <a name="idebugfieldgetinfo"></a>IDebugField::GetInfo
 這個方法會取得可顯示的欄位資訊。  

@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 5bb24967-434a-4ef4-87a0-2f3250c9e22d
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2b8c655faed880b8e3b8764c8846288f07ef481a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 16a9c34d06cc94e3c9fb41fa3cc09b12b7349849
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53881684"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54992889"
 ---
 # <a name="expose-project-objects"></a>公開專案物件
 

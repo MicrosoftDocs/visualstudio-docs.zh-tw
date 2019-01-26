@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 7a44067f-a410-4a6a-84d2-bda5184140bc
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1963dad4861ad9026a683c695cf25a6becff7571
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7ebb0293e17fe022fc04c9e4e6724fa49a8c3056
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53841353"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54994221"
 ---
 # <a name="language-service-support-for-debugging"></a>語言服務支援偵錯
 語言服務可以提供功能，可支援偵錯工具透過<xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageDebugInfo>介面。 這些功能包括驗證中斷點，並提供運算式，以一份**自動變數**視窗。  

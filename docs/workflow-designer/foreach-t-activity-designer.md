@@ -8,15 +8,15 @@ f1_keywords:
 ms.assetid: 67097b3a-fcf5-4a72-beb1-2c7784151a86
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 681a89bd9c31cc4682e3ba7f5b9b0762f0ad8983
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 838dc50c83147755fb8f0a796ebbac853bba9c14
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53830306"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54999843"
 ---
 # <a name="foreachlttgt-activity-designer"></a>ForEach&lt;T&gt;活動設計工具
 
