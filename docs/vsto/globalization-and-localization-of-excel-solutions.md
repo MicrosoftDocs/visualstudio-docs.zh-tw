@@ -9,15 +9,15 @@ helpviewer_keywords:
 - globalization [Office development in Visual Studio], configuring
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6de8e63331c4cb5250ceadd6f7394dd54319e499
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7b416d48b8e5351f0a6ddf037fa80b442888bbe2
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53856406"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54866827"
 ---
 # <a name="globalization-and-localization-of-excel-solutions"></a>全球化和當地語系化的 Excel 方案
   本節包含在非英文設定的 Windows 電腦上執行 Microsoft Office Excel 解決方案之特殊考量的相關資訊。 當您使用 Visual Studio 建立其他種類的解決方案時，遇到的 Microsoft Office 解決方案全球化和當地語系化問題層面，大部分都一樣。 如需一般資訊，請參閱 < [Globalize 和當地語系化應用程式](../ide/globalizing-and-localizing-applications.md)。
@@ -36,7 +36,7 @@ ms.locfileid: "53856406"
 
  雖然 Managed 程式碼傳遞或操作的資料使用了英文 (美國) 格式，但 Excel 仍會根據使用者的地區設定正確轉譯和顯示資料。 Excel 能夠正確地格式化資料，是因為 Managed 程式碼會把地區設定識別碼 1033 和資料一起傳遞，這表示資料是英文 (美國) 格式，因此必須重新格式以符合使用者的地區設定。
 
- 比方說，如果使用者有地區選項設為德文 （德國） 地區設定，則會預期要格式化的日期 2005 年 6 月 29 日：29.06.2005。 不過，如果您的解決方案會將日期傳遞至 Excel 做為字串，您必須設定格式英文 （美國） 格式的日期：6/29/2005。 如果儲存格已格式化為 [日期] 儲存格，Excel 就會以德文 (德國) 格式顯示日期。
+ 比方說，如果使用者有地區選項設為德文 （德國） 地區設定，則會預期要格式化的日期 2005 年 6 月 29 日：29.06.2005. 不過，如果您的解決方案會將日期傳遞至 Excel 做為字串，您必須設定格式英文 （美國） 格式的日期：6/29/2005. 如果儲存格已格式化為 [日期] 儲存格，Excel 就會以德文 (德國) 格式顯示日期。
 
 ### <a name="pass-other-locale-ids-to-the-excel-object-model"></a>將其他地區設定識別碼傳遞給 Excel 物件模型
  通用語言執行平台 (CLR) 會自動將地區設定識別碼 1033 傳遞給接受區分地區設定資料之 Excel 物件模型中的所有方法和屬性。 沒有任何方法可以自動為進入物件模型的所有呼叫變更此行為。 但是，您可以將不同的地區設定識別碼傳遞給特定的方法：使用 <xref:System.Type.InvokeMember%2A> 呼叫方法，並把地區設定識別碼傳遞給此方法的 *culture* 參數。

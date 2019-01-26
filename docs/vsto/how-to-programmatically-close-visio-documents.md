@@ -10,15 +10,15 @@ helpviewer_keywords:
 - Visio [Office development in Visual Studio], closing Visio documents
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 499cc399c1e23c6f045426e57f8e9a027b5c6537
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: 942054ea7b09525b6214cc63013bbb0c1ce5f41d
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54091789"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54864497"
 ---
 # <a name="how-to-programmatically-close-visio-documents"></a>HOW TO：以程式設計方式關閉 Visio 文件
   您可以使用 `Microsoft.Office.Interop.Visio.Document.Close` 方法來關閉使用中的 Microsoft Office Visio 文件。  

@@ -10,15 +10,15 @@ helpviewer_keywords:
 - ClickOnce deployment [Office development in Visual Studio], deploying solutions
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 448cd7ccd2c56ab9d7d7117c01f6c7f455aa53f4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8499e6f34ae43e0dfa64b98950316dc65227baac
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53946837"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54863925"
 ---
 # <a name="deploy-an-office-solution-by-using-clickonce"></a>使用 ClickOnce 部署 Office 方案
   使用 ClickOnce 只需要幾個步驟就能部署 Office 方案。 如果您發行更新，方案會自動偵測並安裝更新。 不過，ClickOnce 要求您針對電腦上的每個使用者分別安裝方案。 因此，您應該考慮使用 Windows Installer (*.msi*) 如果一個以上的使用者將同一部電腦上執行您的解決方案。

@@ -8,17 +8,17 @@ dev_langs:
 helpviewer_keywords:
 - application pages [SharePoint development in Visual Studio], developing
 - application pages [SharePoint development in Visual Studio], creating
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 22f53a59119ed10055decdd5c055edf378838c72
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 802c20a21b624e868cddac4badfd8827ef765506
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53867835"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54866187"
 ---
 # <a name="walkthrough-create-a-sharepoint-application-page"></a>逐步解說：建立 SharePoint 應用程式頁面
  

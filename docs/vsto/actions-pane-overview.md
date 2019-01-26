@@ -13,15 +13,15 @@ helpviewer_keywords:
 - user controls [Office development in Visual Studio], actions panes
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: de9e6a7f148612716cee55b5a21a26f1bcf04d9b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 947b5730ce459751ec281749d369a9770c074df3
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53821123"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54875945"
 ---
 # <a name="actions-pane-overview"></a>執行窗格概觀
   執行窗格是可自訂**文件動作**附加至特定的 Microsoft Office Word 文件或 Microsoft Office Excel 活頁簿的工作窗格。 動作 窗格位於 Office 工作窗格，以及其他內建的工作 窗格中，這類**XML 來源**在 Excel 中的工作窗格或**樣式與格式**在 Word 中的工作窗格。 您可以使用 Windows Form 控制項或 WPF 控制項，設計執行窗格使用者介面。

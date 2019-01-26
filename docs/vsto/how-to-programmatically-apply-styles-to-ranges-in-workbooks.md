@@ -11,15 +11,15 @@ helpviewer_keywords:
 - workbooks, styles
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d12b42d7af92204992f1e32cbb29f311d337b70f
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: c9932aae9e54c65baf35e1dbff5c6ebbf2ff9dc7
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54096121"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54863249"
 ---
 # <a name="how-to-programmatically-apply-styles-to-ranges-in-workbooks"></a>HOW TO：以程式設計方式將樣式套用至活頁簿中的範圍
   您可以將具名樣式套用至活頁簿中的區域。 Excel 提供多個預先定義的樣式。  

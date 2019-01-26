@@ -10,17 +10,17 @@ helpviewer_keywords:
 - Office development in Visual Studio, creating your first project
 - add-ins [Office development in Visual Studio], creating your first project
 - Outlook [Office development in Visual Studio], creating your first project
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fbb5c938d6dbd269732b49584fc4e3831e869b0e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9b370702d2f373980b9aaff365f6e5e083ab23f1
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53962541"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54865953"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-outlook"></a>逐步解說：建立您第一個 VSTO 增益集適用於 Outlook
   本逐步解說將示範如何建立 Microsoft Office Outlook 的 VSTO 增益集。 無論開啟的 Outlook 項目為何，您在這類解決方案中建立的功能都可供應用程式本身使用。 如需詳細資訊，請參閱 < [Office 方案開發概觀&#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)。  

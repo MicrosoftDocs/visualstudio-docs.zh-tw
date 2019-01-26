@@ -8,17 +8,17 @@ dev_langs:
 helpviewer_keywords:
 - master-detail tables [Office development in Visual Studio], walkthroughs
 - data caching [Office development in Visual Studio], Master/Detail Relation
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c75ee922694e80b5ba70e4743d397cdf465169e8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 07c286a9166421272866662dea4c244fa50eb168
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53823645"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54875650"
 ---
 # <a name="walkthrough-create-a-master-detail-relation-using-a-cached-dataset"></a>逐步解說：建立使用快取的資料集的主版詳細資料關聯性
   本逐步解說會示範在工作表，來建立主從式關聯和快取資料，以便可以離線使用方案。  

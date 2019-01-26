@@ -9,17 +9,17 @@ helpviewer_keywords:
 - databases [Office development in Visual Studio], scrolling records
 - records [Office development in Visual Studio], scrolling
 - data [Office development in Visual Studio], scrolling database records
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 95b504907d55491ee925ea0824a810314d3c8033
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b56a23fdc29a7b6f9656ba1e065ffb097461aeaf
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53892286"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54876183"
 ---
 # <a name="walkthrough-bind-to-data-from-a-service-in-a-vsto-add-in-project"></a>逐步解說：從 VSTO 增益集專案中的服務繫結至資料
   您可以將資料繫結至 VSTO 增益集專案中的主控制項。 本逐步解說示範如何將控制項加入 Microsoft Office Word 文件、將控制項繫結至從 MSDN 內容服務擷取的資料，以及在執行階段回應事件。  
@@ -83,7 +83,7 @@ ms.locfileid: "53892286"
      [!code-csharp[Trin_WordAddIn_BindingDataToContentControl#2](../vsto/codesnippet/CSharp/trin_wordaddin_bindingdatatocontentcontrol/ThisAddIn.cs#2)]
      [!code-vb[Trin_WordAddIn_BindingDataToContentControl#2](../vsto/codesnippet/VisualBasic/trin_wordaddin_bindingdatatocontentcontrol/ThisAddIn.vb#2)]  
   
-2.  將下列方法加入 `ThisAddIn` 類別中。 這個方法會在使用中文件的開頭建立內容控制項。  
+2.  將下列方法加入 `ThisAddIn` 類別。 這個方法會在使用中文件的開頭建立內容控制項。  
   
      [!code-csharp[Trin_WordAddIn_BindingDataToContentControl#4](../vsto/codesnippet/CSharp/trin_wordaddin_bindingdatatocontentcontrol/ThisAddIn.cs#4)]
      [!code-vb[Trin_WordAddIn_BindingDataToContentControl#4](../vsto/codesnippet/VisualBasic/trin_wordaddin_bindingdatatocontentcontrol/ThisAddIn.vb#4)]  

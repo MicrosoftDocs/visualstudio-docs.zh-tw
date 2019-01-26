@@ -11,15 +11,15 @@ helpviewer_keywords:
 - application manifests [Office development in Visual Studio], <entryPoints> element
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8392fa83899e078050786091fa4a2f462eb40c9b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5bbe0c00b86f38ab8b3dc47713af7d3b38f98045
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53852929"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54862274"
 ---
 # <a name="ltentrypointsgt-element-office-development-in-visual-studio"></a>&lt;進入點&gt;元素 （在 Visual Studio 中的 Office 程式開發）
   `entryPoints` 命名空間的 `vstav3` 項目包含與 Office 方案相關聯的所有 `entryPoint` 項目。
@@ -37,7 +37,7 @@ ms.locfileid: "53852929"
 </entryPoints>
 ```
 
-## <a name="elements-and-attributes"></a>項目和屬性
+## <a name="elements-and-attributes"></a>元素和屬性
  `entryPoints` 項目是必要的，且位於 `vstav3` 命名空間。 在應用程式資訊清單中，會為每個 Office 方案定義一個 `entryPoints` 項目。 例如，如果您在多專案的部署中部署三個 Office 方案，則在應用程式資訊清單中會有三個 `entryPoints` 項目。
 
  `entryPoints` 項目具有下列屬性。
@@ -48,7 +48,7 @@ ms.locfileid: "53852929"
 
  `entryPoints` 具有下列項目。
 
-### <a name="entrypoint"></a>entryPoint
+### <a name="entrypoint"></a>entrypoint
  必要項。 所扮演的角色`entryPoint`中的項目`vstav3`中所定義的命名空間[ &#60;entryPoint&#62;項目的&#40;Visual Studio 中的 Office 程式開發&#41;](../vsto/entrypoint-element-office-development-in-visual-studio.md)。
 
 ## <a name="document-level-customization-example"></a>文件層級自訂範例

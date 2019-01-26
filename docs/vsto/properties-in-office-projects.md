@@ -13,17 +13,17 @@ helpviewer_keywords:
 - Office projects [Office development in Visual Studio], properties
 - projects [Office development in Visual Studio], properties
 - Value2 property
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a3e2179d10983bc74c8dd9bb692f1eade44dec47
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ed7698db0c235bb5c49379c4a6fb0312895f4b1a
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53932209"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54866957"
 ---
 # <a name="properties-in-office-projects"></a>Office 專案中的屬性
   在 Visual Studio 中，Office 專案有幾個可用的重要屬性。 這些屬性可於 [屬性]  視窗中取得。  

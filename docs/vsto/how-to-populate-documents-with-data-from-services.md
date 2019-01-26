@@ -11,15 +11,15 @@ helpviewer_keywords:
 - data [Office development in Visual Studio], adding to documents
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e935501e2e38c7e6c3abdb1c16e351342cf52a8a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 137755ae4e1bfab97cbaec063a29a95caa1d9cd6
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53838290"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54865017"
 ---
 # <a name="how-to-populate-documents-with-data-from-services"></a>HOW TO：服務中的資料填入文件
 

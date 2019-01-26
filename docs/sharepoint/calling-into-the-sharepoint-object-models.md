@@ -10,17 +10,17 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, server object model
 - SharePoint commands [SharePoint development in Visual Studio]
 - SharePoint development in Visual Studio, extensibility features
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: df55347ea08bfcb243f37aaee111066106da49ff
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: cd6e8d1bbd2f880a3e3c4c7fab4b292a2c7bd6d0
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53914523"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54875663"
 ---
 # <a name="call-into-the-sharepoint-object-models"></a>呼叫 SharePoint 物件模型
   當您在 Visual Studio 中建立 SharePoint 工具擴充功能時，您可能必須呼叫 SharePoint Api 來執行特定工作。 例如，如果您建立 SharePoint 專案的自訂部署步驟時，您可能在呼叫 SharePoint Api 來執行一些工作，以部署解決方案。  

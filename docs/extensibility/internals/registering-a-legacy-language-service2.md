@@ -14,7 +14,7 @@ ms.workload:
 - vssdk
 ms.openlocfilehash: 689a612ad277291f72af5527300b4d49f76f173f
 ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 01/02/2019
 ms.locfileid: "53828637"
@@ -22,7 +22,7 @@ ms.locfileid: "53828637"
 # <a name="registering-a-legacy-language-service"></a>註冊舊版語言服務
 下列各節提供的登錄項目清單的各種語言中可用的服務選項[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。  
   
- 登錄項目下, 面*VS Reg 根*等於 hkey_local_machine\software\microsoft\visualstudio \\\*X.Y*，其中*X.Y*是[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]版本號碼。  
+ 登錄項目下, 面*VS Reg 根*等於 hkey_local_machine\software\microsoft\visualstudio \\*X.Y*，其中*X.Y*是[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]版本號碼。  
   
 ## <a name="registry-entries-for-language-service-options"></a>語言服務選項的登錄項目  
  *VS Reg 根*\Languages\Language Services\\*語言名稱*索引鍵可以包含下列值。  

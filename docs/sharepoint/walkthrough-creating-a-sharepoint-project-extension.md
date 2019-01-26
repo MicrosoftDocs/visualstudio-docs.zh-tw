@@ -9,17 +9,17 @@ helpviewer_keywords:
 - projects [SharePoint development in Visual Studio], extending
 - SharePoint development in Visual Studio, extending projects
 - SharePoint projects, extending
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 39432f20620a3c7e6f374b09943fc73c2d4d2903
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fd142b71de2919f1f44f36134ce286e58229bae5
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53885896"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54866109"
 ---
 # <a name="walkthrough-create-a-sharepoint-project-extension"></a>逐步解說：建立 SharePoint 專案擴充功能
   此逐步解說將說明如何建立 SharePoint 專案延伸模組。 您可以使用專案擴充功能，例如加入、 刪除或重新命名專案時的專案層級事件回應。 您也可以新增自訂屬性，或當屬性值變更時回應。 不同的專案項目擴充功能，於專案延伸模組不能與特定的 SharePoint 專案類型相關聯。 當您建立的專案延伸模組時，擴充功能載入任何種類的 SharePoint 專案中開啟時[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。  

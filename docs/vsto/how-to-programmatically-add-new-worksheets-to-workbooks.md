@@ -12,15 +12,15 @@ helpviewer_keywords:
 - worksheets, adding to workbooks
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0c5cfd48cf65ea8eed18606377cde2092ddaf302
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4d357fd6028fd080f2c1e37895c8d4256bea56a0
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53867666"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54865238"
 ---
 # <a name="how-to-programmatically-add-new-worksheets-to-workbooks"></a>HOW TO：以程式設計方式在活頁簿中加入新的工作表
   您可以用程式設計方式建立工作表，然後將工作表加入活頁簿的工作表集合。  
@@ -29,7 +29,7 @@ ms.locfileid: "53867666"
   
 ## <a name="to-add-a-new-worksheet-to-a-workbook-in-a-document-level-customization"></a>在文件層級自訂的活頁簿中加入新的工作表  
   
-1.  使用 <xref:Microsoft.Office.Interop.Excel.Sheets> 集合的 <xref:Microsoft.Office.Interop.Excel.Worksheets.Add%2A> 方法。  
+1.  使用 <xref:Microsoft.Office.Interop.Excel.Worksheets.Add%2A> 集合的 <xref:Microsoft.Office.Interop.Excel.Sheets> 方法。  
   
      [!code-csharp[Trin_VstcoreExcelAutomation#15](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#15)]
      [!code-vb[Trin_VstcoreExcelAutomation#15](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#15)]  

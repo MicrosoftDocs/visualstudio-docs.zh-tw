@@ -13,15 +13,15 @@ helpviewer_keywords:
 - assemblies [Office development in Visual Studio], updating
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 24650d2cb4cbed3a5b4c4f1ee02e395e7b8c2988
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9deabada5a9e3d69c3d3a9a821abf7d6b8dcf56e
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53828552"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54875611"
 ---
 # <a name="application-and-deployment-manifests-in-office-solutions"></a>在 Office 方案中的應用程式和部署資訊清單
   應用程式資訊清單是提供資訊讓 Office 方案用來尋找及更新其組件的 XML 檔案。 應用程式資訊清單可以搭配部署資訊清單使用，部署資訊清單是伺服器上儲存的 XML 檔案，可提供尋找最新版應用程式資訊清單和組件所需的資訊。
