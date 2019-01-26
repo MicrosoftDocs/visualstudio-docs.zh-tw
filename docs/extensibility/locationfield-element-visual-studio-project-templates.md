@@ -10,22 +10,22 @@ helpviewer_keywords:
 ms.assetid: 6aaaa155-6ce0-4f7f-aa50-8d63d7a7c992
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1bbdff5e2dcee4611b5a46cc74f0255f94d30744
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 747cf53056b7f1d5ccd982e81f92db2c2dd84472
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53868492"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54984947"
 ---
 # <a name="locationfield-element-visual-studio-project-templates"></a>LocationField 項目 （Visual Studio 專案範本）
 指定是否**位置**中的文字方塊**新的專案** 對話方塊中已啟用、 停用，或隱藏專案範本。  
   
- \<VSTemplate >  
- \<TemplateData >  
- \<LocationField >  
+ \<VSTemplate>  
+ \<TemplateData>  
+ \<LocationField>  
   
 ## <a name="syntax"></a>語法  
   

@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: b955f51c-f9f9-49c3-a8e4-63b6eb0e0341
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 51c1f286e23ed192970118d47981a60a2fbd76eb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5b7c050022f129369962c572cbb5a60a27cca547
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53885326"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54979682"
 ---
 # <a name="how-to-create-a-vsct-file"></a>HOW TO：建立.vsct 檔  
   

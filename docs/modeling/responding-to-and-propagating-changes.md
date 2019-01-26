@@ -6,16 +6,16 @@ helpviewer_keywords:
 - Domain-Specific Language, events
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: ace1873c45ba8437ba929ec10ef75db3d0d50bf2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f7ea3068d4dc82e7b53d0f9adc87f08e072ff120
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53905198"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54971334"
 ---
 # <a name="responding-to-and-propagating-changes"></a>回應及傳播變更
 當建立、 刪除或更新項目時，您可以撰寫會傳播變更的其他部分的模型或外部的資源，例如檔案、 資料庫或其他元件的程式碼。

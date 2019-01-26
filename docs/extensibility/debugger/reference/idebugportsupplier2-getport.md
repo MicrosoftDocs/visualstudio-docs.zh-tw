@@ -1,5 +1,5 @@
 ---
-title: IDebugPortSupplier2::GetPort |Microsoft Docs
+title: IDebugPortSupplier2::GetPort | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: d55d5055-7386-4037-bf22-4c3e434a99ca
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9672ead8b774761d5655acc86878103664f8662f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b55e2341202f8a34ff67b692b9d47b3dd203cc11
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53841456"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54962885"
 ---
 # <a name="idebugportsupplier2getport"></a>IDebugPortSupplier2::GetPort
 從連接埠提供者取得的連接埠。  

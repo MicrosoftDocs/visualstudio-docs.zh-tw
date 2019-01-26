@@ -1,5 +1,5 @@
 ---
-title: IDebugEventCallback2::Event |Microsoft Docs
+title: IDebugEventCallback2::Event | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: e5a3345b-d460-4e40-8f5b-3111c56a2ed9
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ca9ac17147604dda52e7446d6a97c90dad155ca6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f19462891b9a82168f9df09de108a753718d2592
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53892685"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54957191"
 ---
 # <a name="idebugeventcallback2event"></a>IDebugEventCallback2::Event
 傳送通知的偵錯事件。  

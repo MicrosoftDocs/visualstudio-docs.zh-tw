@@ -11,17 +11,17 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, browsing SharePoint sites
 - SharePoint development in Visual Studio, SharePoint Connections
 - SharePoint Connections [SharePoint development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d3804b97967cffb299393e7e3a8866e51a2e3224
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 825bf975d877cd6b0844e86aabff605daa30a900
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53931355"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54875481"
 ---
 # <a name="browse-sharepoint-connections-by-using-server-explorer"></a>使用伺服器總管瀏覽 SharePoint 連線
   您現在可以瀏覽本機 SharePoint 連接中的**伺服器總管**。 使用這項技術就可以巡覽系統中的 SharePoint 網站元件。 SharePoint 站台元件，例如清單定義和內容類型，會顯示在名為節點**SharePoint 連線**在樹狀檢視中的**伺服器總管**。 若要顯示**伺服器總管**，在功能表列上選擇 **檢視** > **伺服器總管**。 除了顯示 SharePoint 網站元件之外，您還可以使用捷徑功能表的命令移除項目、檢閱其屬性或重新整理樹狀檢閱。  

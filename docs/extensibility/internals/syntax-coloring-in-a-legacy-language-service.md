@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: f65ff67e-8c20-497a-bebf-5e2a5b5b012f
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0b48391be0bcd852637296f45c5b8dda9916cefa
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 081f48f89b533862125069f751996c72a4cf00f0
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53874653"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55025640"
 ---
 # <a name="syntax-coloring-in-a-legacy-language-service"></a>舊版語言服務中的語法著色
 

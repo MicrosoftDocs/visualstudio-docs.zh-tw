@@ -1,5 +1,5 @@
 ---
-title: IDebugGenericFieldDefinition::GetFormalTypeParams |Microsoft Docs
+title: IDebugGenericFieldDefinition::GetFormalTypeParams | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: cadbd6a1-bc7c-4aff-8777-5396b7a23c3e
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6cc935bf8e04f4e8445664f12ef01a388d691453
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6490a8ad013907c77d205838db6218a853e717bd
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53824492"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55029161"
 ---
 # <a name="idebuggenericfielddefinitiongetformaltypeparams"></a>IDebugGenericFieldDefinition::GetFormalTypeParams
 擷取指定的參數數目的型別參數。  

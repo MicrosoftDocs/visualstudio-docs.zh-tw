@@ -1,5 +1,5 @@
 ---
-title: IDebugAlias::GetObject |Microsoft Docs
+title: IDebugAlias::GetObject | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 97bc3af6-6e55-4940-8a6d-692c61257806
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e66019ec0e8e23606a40687247a5d436a301049b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c30d8981564df3b43542cd54b5380991ece89ce4
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53821805"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54929519"
 ---
 # <a name="idebugaliasgetobject"></a>IDebugAlias::GetObject
 取得這個別名所針對的物件。  

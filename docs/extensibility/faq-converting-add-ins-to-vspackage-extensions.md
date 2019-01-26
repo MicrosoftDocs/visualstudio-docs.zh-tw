@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 3a01d333-6e31-423f-ae06-5091a4fcb7a9
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9623ec6fd2fed89dbe541d6088f7366d38bc0636
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d15e6872a418cfc2a3cf5dded5b873429075d276
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53879143"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54977183"
 ---
 # <a name="faq-converting-add-ins-to-vspackage-extensions"></a>常見問題集：將增益集轉換成 VSPackage 擴充功能
 增益集目前已被取代。 若要讓新的 Visual Studio 擴充功能，您需要建立 VSIX 擴充功能。 以下是一些有關如何將轉換的 Visual Studio 增益集，為 VSIX 擴充功能的常見問題集問題的答案。  
@@ -50,7 +50,7 @@ ms.locfileid: "53879143"
   
      Visual Studio 的第二個執行個體隨即出現。 第二個執行個體稱為實驗執行個體，其設定可能與您正用來撰寫程式碼的 Visual Studio 執行個體的設定不同。 第一次執行實驗執行個體時，系統會要求您登入 VS Online 並指定佈景主題和設定檔。  
   
-     在 **工具**功能表上 （在實驗執行個體中） 您應該會看到名為按鈕**我的命令名稱**。 當您選擇此按鈕時，應該會出現一則訊息：**在 testvspackagepackage.menuitemcallback （） 之中**。  
+     在 **工具**功能表上 （在實驗執行個體中） 您應該會看到名為按鈕**我的命令名稱**。 當您選擇此按鈕時，應該會出現一則訊息：**Inside TestVSPackagePackage.MenuItemCallback()**.  
   
 ##  <a name="BKMK_RunAddin"></a> 如何在 VSPackage 中執行我的增益集程式碼？  
  增益集程式碼通常以兩種方式之一執行：  

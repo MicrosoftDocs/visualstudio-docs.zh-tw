@@ -16,13 +16,13 @@ dev_langs:
 - CPP
 - CSharp
 - VB
-manager: douge
-ms.openlocfilehash: 865c4d26758021b0f0200f7834d02cd34f22bc8a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 4ac122534a42cb78b80d1a12004a8db3d1b5b203
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53954194"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55043631"
 ---
 # <a name="ca1806-do-not-ignore-method-results"></a>CA1806:不要忽略方法的結果
 

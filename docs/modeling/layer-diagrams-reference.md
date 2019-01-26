@@ -17,16 +17,16 @@ helpviewer_keywords:
 - constraints, architectural
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: a883b82da76fff2fc4b298de7263320c069a501b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 473bbcfa7d9c83b8011fc849a246c30b86cce6a6
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53948390"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54980211"
 ---
 # <a name="dependency-diagrams-reference"></a>相依性圖表： 參考
 
@@ -57,7 +57,7 @@ ms.locfileid: "53948390"
 
 下表描述您可以使用相依性圖表的項目。
 
-|**圖形**|**目**|**描述**|
+|**Shape**|**目**|**描述**|
 |-|-|-|
 |1|**圖層**|您系統中之實體成品的邏輯群組。 這些成品可以是命名空間、專案、類別、方法等等。<br /><br /> 若要查看已連結至圖層的成品，開啟圖層的捷徑功能表，然後選擇**檢視連結**來開啟**圖層總管**。<br /><br /> 如需詳細資訊，請參閱 <<c0> [ 圖層總管](#Explorer)。<br /><br /> -   **Forbidden Namespace Dependencies** -指定與此圖層相關聯的成品不可相依於指定的命名空間。<br />-   **禁止的命名空間**-指定與這個圖層相關聯的成品必須屬於指定的命名空間。<br />-   **必要的命名空間**-指定與這個圖層相關聯的成品必須屬於其中一個指定的命名空間。|
 |2|**相依性**|表示一個圖層可以使用另一個圖層的功能，但反之則不然。<br /><br /> -   **方向**-指定相依性的方向。|

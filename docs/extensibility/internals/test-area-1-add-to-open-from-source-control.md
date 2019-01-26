@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 5b3b5b08-5e9b-41be-ac72-c63957faed22
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3b50ff6c737b75fcdbd9a6fc265928301eeb4467
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fd60d4c042e7fa27386ef549ce6b9d8e808a3176
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53842667"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54962871"
 ---
 # <a name="test-area-1-add-toopen-from-source-control"></a>測試區域 1:從原始檔控制新增至 / Open
 此原始檔控制外掛程式測試區域涵蓋如何將方案或專案原始檔控制之下，並擷取從原始檔控制。  

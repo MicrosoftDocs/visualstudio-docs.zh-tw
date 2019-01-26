@@ -6,15 +6,15 @@ ms.topic: conceptual
 ms.assetid: 3fc7af94-dcb8-4226-a577-43f03664388b
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1adf06d6f9a356fc31ead5ffb22f795c3da21033
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 549caa94e81aa98481054b5b305c6363baf82ce0
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53964386"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54950711"
 ---
 # <a name="how-to-add-nodes-to-the-workspace-from-the-start-view"></a>HOW TO：將節點從開始檢視加入至工作區
 
