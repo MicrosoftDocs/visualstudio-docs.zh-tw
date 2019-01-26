@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: c4cf2809-dbdb-4e75-9273-b3d3d77b67d0
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e17bbfc494fb305e9a264c31c3b82936681347f0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: cdcaa4afb2191c80a8b5bed1bedf68f4c217f029
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53867325"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55008305"
 ---
 # <a name="modules"></a>模組
 偵錯工具就架構而言，*模組*:  

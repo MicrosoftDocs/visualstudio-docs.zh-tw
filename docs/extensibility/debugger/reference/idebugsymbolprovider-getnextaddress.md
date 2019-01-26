@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 704eeb94-cb13-49d1-82b6-7d83ed0f19c0
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 11585c923e2ccb3842f93be0b41e0c1cf68c9afb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f24871063e39c489761fd527322b40a4be09f6dc
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53858457"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54949424"
 ---
 # <a name="idebugsymbolprovidergetnextaddress"></a>IDebugSymbolProvider::GetNextAddress
 取得會遵循在方法中的指定偵錯位址的偵錯位址。  

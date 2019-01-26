@@ -8,15 +8,15 @@ f1_keywords:
 ms.assetid: 9cfa2eda-395f-4cf3-9154-83fadd4f7452
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 929007c878be0313c4e90d4bb2a14bc0613d9dbd
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9232244c7e8bc2801d9db1d3f2bad995a70ed63c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53930943"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54999999"
 ---
 # <a name="rethrow-activity-designer"></a>Rethrow 活動設計工具
 

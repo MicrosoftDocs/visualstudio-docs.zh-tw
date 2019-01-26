@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: e1f955d8-95da-493b-837e-e97741a26d7e
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 62bd59222fa8b173f3e805f60f4b8bd3ad245c6f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 372cf5c64fde2009b8bddf8fa5800788ba0d6501
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53964620"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54970184"
 ---
 # <a name="programs"></a>Programs
 在偵錯工具架構中，*程式*:  

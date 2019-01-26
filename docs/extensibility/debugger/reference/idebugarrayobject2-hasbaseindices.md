@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 51a5d145-ea53-422c-b5cf-c800cf64b8e6
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3cb53ba84d73348f110154a478c772b07cefd329
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7f0d49fb43362bc59591cbd0cb4ee8df7358b606
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53857315"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55005408"
 ---
 # <a name="idebugarrayobject2hasbaseindices"></a>IDebugArrayObject2::HasBaseIndices
 判斷陣列是否具有定義的基底索引 （下限）。  

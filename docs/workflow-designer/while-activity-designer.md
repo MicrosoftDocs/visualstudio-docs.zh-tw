@@ -8,15 +8,15 @@ f1_keywords:
 ms.assetid: ea008091-2e4c-4f64-bfa5-afb919552446
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c75ce30ba231efa9084ce6ec733f08c5b86aa861
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 81caba883293a59fe67988d34785758340b4705a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53987754"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54987033"
 ---
 # <a name="while-activity-designer"></a>While 活動設計工具
 

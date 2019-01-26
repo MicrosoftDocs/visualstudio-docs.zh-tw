@@ -4,16 +4,16 @@ ms.date: 11/04/2016
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 337560d6db6d8747b1aedd23d789f2ef56d045c9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f8f60f061e62fecc15a92f313489f4053ed19016
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53885284"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54974249"
 ---
 # <a name="t4-template-directive"></a>T4 範本指示詞
 
@@ -36,7 +36,7 @@ Visual Studio T4 文字範本的開頭通常`template`指示詞，指定應該�
 `compilerOptions="optimize+"`
 
 有效值：
- 
+
 任何有效的編譯器選項。
 
 忽略執行階段 (前置處理過的) 範本。
@@ -46,11 +46,11 @@ Visual Studio T4 文字範本的開頭通常`template`指示詞，指定應該�
 ## <a name="culture-attribute"></a>culture 屬性
 
 範例：
- 
+
 `culture="de-CH"`
 
 有效值：
- 
+
 "" (不因文化特性而異)，此為預設值。
 
 以 xx-XX 字串形式表示的文化特性。 例如，en-US、ja-JP、de-CH、de-DE。 如需詳細資訊，請參閱<xref:System.Globalization.CultureInfo?displayProperty=fullName>。
@@ -66,11 +66,11 @@ debug="true"
 ```
 
 有效值：
- 
+
 `true`
- 
+
 `false` (預設值)
- 
+
 如果 `debug` 屬性為 `true`，表示中繼程式碼檔案將會包含啟用偵錯工具所需的相關資訊，以更精確識別範本內中斷或例外狀況發生的位置。
 
 設計階段範本中繼程式碼檔案會寫入至您 **%TEMP%** 目錄。
@@ -88,9 +88,9 @@ hostspecific="true"
 有效值：
 
 `true`
- 
+
 `false` (預設值)
- 
+
 `trueFromBase`
 
 如果您將這個屬性值設定為 `true`，就會有名為 `Host` 的屬性加入至文字範本所產生的類別中。 此屬性是轉換引擎主應用程式的參考，並宣告為 <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>。 如果您定義了自訂主應用程式，則可以將它轉換為自訂主應用程式類型。

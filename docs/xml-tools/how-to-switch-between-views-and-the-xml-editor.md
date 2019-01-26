@@ -6,15 +6,15 @@ ms.topic: conceptual
 ms.assetid: cb69fbbd-d99c-439e-9498-5df9050f8df0
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 09ad752dc87ea322396d6e6513593d71a7554b98
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7bc9ec24aae4f35c45bcb4faf0bbc5a355c57da8
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53936239"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54920704"
 ---
 # <a name="how-to-switch-between-views-and-the-xml-editor"></a>HOW TO：檢視和 XML 編輯器之間切換
 

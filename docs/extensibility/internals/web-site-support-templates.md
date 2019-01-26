@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 37173c97-486b-4b3c-8ed3-cf5890c4de23
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e289dd6d97b5237ad8c523a64749e55393d25fbb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 36c22cbb5ca39e48e488851f26786955c9704fda
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53875228"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54961594"
 ---
 # <a name="web-site-support-templates"></a>網站支援範本
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 網站專案和項目範本會提供可重複使用且可自訂的網站專案和項目虛設常式，並不需要從頭開始建立新的網站專案和項目，來加速開發程序。 如需詳細資訊[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]範本，請參閱[建立專案和項目範本](../../ide/creating-project-and-item-templates.md)。
@@ -80,7 +80,7 @@ ms.locfileid: "53875228"
 
      HTML 網頁進行新的 Web 服務。 Language 屬性會指定程式碼後置的語言，且程式碼後置屬性指定包含此服務相關聯的程式碼後置程式碼的相依檔案。
 
--   服務。 *延伸模組*
+-   服務。 *extension*
 
      實作服務類別的相依檔案。 程式碼後置語言會決定*延伸模組*此檔案。
 
@@ -113,7 +113,7 @@ ms.locfileid: "53875228"
 ### <a name="new-class"></a>新的類別
  此範本會建立新的原始程式檔定義空的類別，以回應**加入新類別**命令。
 
--   類別。 *延伸模組*
+-   類別。 *extension*
 
      實作空的類別原始程式檔。 程式碼後置語言會決定*延伸模組*此檔案。
 
@@ -147,7 +147,7 @@ ms.locfileid: "53875228"
 
      起始網頁的內容。 這個 Web 網頁有相關聯的程式碼後置相依檔案。
 
--   程式碼後置。 *延伸模組*
+-   程式碼後置。 *extension*
 
      實作 webform 類別的相依檔案。 程式碼後置語言會決定*延伸模組*此檔案。
 

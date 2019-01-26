@@ -1,5 +1,5 @@
 ---
-title: IDebugPortNotify2 |Microsoft Docs
+title: IDebugPortNotify2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 43278b79-bf16-4c08-bcf1-6f7f7a17feab
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 61cc6f609295022c27b18895f905e7931c834e8e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 13b96fd88bee0bff70352606325917cb1dd4229a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53876873"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55021724"
 ---
 # <a name="idebugportnotify2"></a>IDebugPortNotify2
 這個介面會註冊，或取消註冊使用其執行的連接埠可以進行偵錯的程式。  

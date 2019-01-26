@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 7d61adbe-6b3d-41f3-86a1-45d9cc01a7f8
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ab2078a655062e67c7db8c2fe2be7d5472b31dcf
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 74c548df0aaffdca4dafc8851fa29e18c5ff4528
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53854304"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54954757"
 ---
 # <a name="idebugcanstopevent2canstop"></a>IDebugCanStopEvent2::CanStop
 通知要停止在目前的程式碼位置，或只是繼續執行偵錯引擎 (DE)。  

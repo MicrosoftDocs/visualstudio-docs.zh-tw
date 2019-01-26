@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 99395da7-ec34-491d-9baa-0590d23283ce
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a1fee65200d026200de5196d1396191d759aded8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c5055da98dd13c5f9f97a28bb420b5ee28d52c10
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53990853"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54948397"
 ---
 # <a name="vsix-color-compiler"></a>VSIX 色彩編譯器
 Visual Studio 擴充功能色彩編譯器工具會採用代表現有的 Visual Studio 佈景主題色彩的.xml 檔案的主控台應用程式並將它.pkgdef 檔案，以便可以在 Visual Studio 中使用這些色彩。 就可以輕鬆地比較.xml 檔案之間的差異，因為此工具是可用來管理原始檔控制中的自訂色彩。 它也可以連結至建置環境以便組建的輸出是有效的.pkgdef 檔案。  
@@ -82,7 +82,7 @@ Visual Studio 擴充功能色彩編譯器工具會採用代表現有的 Visual S
 |名稱|[必要]分類的名稱|  
 |GUID|[必要]類別的 GUID （必須符合 GUID 格式）|  
   
- **色彩**  
+ **Color**  
   
  \<色彩 > 項目定義的色彩元件或 UI 狀態。 慣用的命名配置，色彩會是 [UI 型別] [State]。 請勿使用 「 色彩 」 這個字，因為它是多餘。 項目型別和情況下，或 「 狀態 」，色彩會套用，應該清楚指出一種色彩。 色彩不可為空白，並必須包含一個或兩個\<背景 > 和\<前景 > 項目。 色彩的項目定義如下：  
   

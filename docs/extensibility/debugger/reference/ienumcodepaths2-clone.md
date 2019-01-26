@@ -1,5 +1,5 @@
 ---
-title: IEnumCodePaths2::Clone |Microsoft Docs
+title: IEnumCodePaths2::Clone | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 9d5c6bc6-7e72-4f1b-801c-7192458f3ba8
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f8dd02f49b7865bf92cce2f6cd5e48fdf8992b27
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b8fd1422b787fc8322e66e362b629092a1bb2cca
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53863744"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55006775"
 ---
 # <a name="ienumcodepaths2clone"></a>IEnumCodePaths2::Clone
 傳回一份目前的列舉，為個別的物件。  

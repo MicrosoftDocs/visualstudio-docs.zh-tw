@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: 02a326c2-4009-442f-b7cb-e42121fd2992
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a4a62b660f2deb2b3ab3a092cdfd586a56b2bcb8
-ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
+ms.openlocfilehash: 5a1b0160ddb3dcdcec7198fe4bf424ca11118a43
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/14/2019
-ms.locfileid: "54269809"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54918468"
 ---
 # <a name="trycatch-activity-designer"></a>TryCatch 活動設計工具
 

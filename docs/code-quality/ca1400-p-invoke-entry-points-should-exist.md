@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 1d64e470-7b2f-4cca-8fb0-ac92829e6332
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ad31cc78bca1e8bd114b2a547e5d0ae3972b4395
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: adc37d1440b5aa39cad30bc2d065b8e9d97e4f5e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53829455"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54967608"
 ---
 # <a name="ca1400-pinvoke-entry-points-should-exist"></a>CA1400:P/Invoke 進入點應該要存在
 

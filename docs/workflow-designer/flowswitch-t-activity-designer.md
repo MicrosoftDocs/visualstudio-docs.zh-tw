@@ -11,15 +11,15 @@ f1_keywords:
 ms.assetid: 5b9c5afe-7499-4ee8-8c33-28aff14bde07
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 046dd00b89b8f14da3082e60a04a92f8152ecc08
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 779a20e0dc0381c0f84d939c5af5cedd2c1b7426
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53942381"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54977105"
 ---
 # <a name="flowswitcht-activity-designer"></a>FlowSwitch\<T > 活動設計工具
 

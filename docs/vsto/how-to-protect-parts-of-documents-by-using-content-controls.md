@@ -13,17 +13,17 @@ helpviewer_keywords:
 - document protection [Office development in Visual Studio]
 - Word [Office development in Visual Studio], restricted permissions
 - GroupContentControl
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8498eac9c34c9876c22eb9f04723b62e40f70ca4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9f12eb0e43b1868d93a155354756b10b9661e560
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53989253"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54875520"
 ---
 # <a name="how-to-protect-parts-of-documents-by-using-content-controls"></a>HOW TO：使用內容控制項保護文件的組件
   當您保護文件的某個部分時，使用者即無法變更或刪除文件中該部分的內容。 您可使用多種方法，透過內容控制項來保護 Microsoft Office Word 文件的下列部分：  
@@ -66,7 +66,7 @@ ms.locfileid: "53989253"
      [!code-csharp[Trin_WordAddInDynamicControls#14](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs#14)]  
   
 ## <a name="protect-a-part-of-a-document-that-is-not-in-a-content-control"></a>保護不在內容控制項內的文件的一部分  
- 您可以將文件區域放入 <xref:Microsoft.Office.Tools.Word.GroupContentControl> 中，防止使用者變更該區域。 這在下列案例中十分有用：  
+ 您可以將文件區域放入 <xref:Microsoft.Office.Tools.Word.GroupContentControl> 中，防止使用者變更該區域。 這在下列案例中很有用：  
   
 -   您想要保護不含內容控制項的區域。  
   

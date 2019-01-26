@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: c7d7126f-fa70-40be-8f93-3243e1760dc5
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c52bbd46d36923245a4df09eed7304074fa96115
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: af0d88b2d9a17595fdfcabb27ba90f601a836635
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53880243"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54935614"
 ---
 # <a name="ca1010-collections-should-implement-generic-interface"></a>CA1010:集合應該實作泛型介面
 

@@ -13,15 +13,15 @@ dev_langs:
 - VB
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 47f90e0a9ca01e76ea1a3686c790dcf00a4becde
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: dd5053f3774c7a92d16690883a0845ba7bae32db
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53860776"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55008929"
 ---
 # <a name="anonymous-methods-and-code-analysis"></a>匿名方法和程式碼分析
 
