@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 47f295b5-1ca5-4e7b-bb52-7b926b136622
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e696e1dc71af4dbcfc408e169c1a6e5ba8984921
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e2e396afabe6ea54668e4dedbbf743f6b91a065e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53921834"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54998569"
 ---
 # <a name="expose-properties-to-the-properties-window"></a>公開屬性，以 [屬性] 視窗
 本逐步解說會公開物件的公用屬性**屬性**視窗。 您對這些屬性的變更會反映在**屬性**視窗。  

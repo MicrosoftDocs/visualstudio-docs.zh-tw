@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 5086d228-f92e-4515-9708-c5b89b9e9a03
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5324ba78b5a571d6ffd7812a9d3dd766ad060db7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 41c95ca8adc0b02db89af0b7c0ba2f1dafd399f3
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53845294"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55000766"
 ---
 # <a name="how-to-run-code-analysis-manually-for-managed-code"></a>HOW TO：對 Managed 程式碼手動執行程式碼分析
 程式碼分析工具會提供給您在原始程式碼中可能的缺失相關資訊。 您可以使用的程式碼專案，每個組建，自動執行程式碼分析，您也可以手動執行程式碼分析。 在專案屬性頁的 [程式碼分析] 頁面上指定規則時執行程式碼分析簽入。 如需詳細資訊，請參閱[＜How to：設定 Managed 程式碼專案的程式碼分析](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md)

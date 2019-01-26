@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: d683a833-fbfb-4042-84df-6905124a268a
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8af1b785e56d5efba2505b0cdbd5a9474b5c261b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5bb70d58cb2f419661253f4aab135bef91d3700b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53957945"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54978499"
 ---
 # <a name="ieevisualizerservicegetvaluedisplaystringcount"></a>IEEVisualizerService::GetValueDisplayStringCount
 擷取值的字串，以顯示指定的屬性或欄位的數目。  

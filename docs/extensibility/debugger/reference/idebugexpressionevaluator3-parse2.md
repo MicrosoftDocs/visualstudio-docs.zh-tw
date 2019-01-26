@@ -1,5 +1,5 @@
 ---
-title: IDebugExpressionEvaluator3::Parse2 |Microsoft Docs
+title: IDebugExpressionEvaluator3::Parse2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 78099628-d600-4f76-b7c8-ee07c864af1e
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2236276e5d97b8c0d3d38921206ffd7d9506e243
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9e3b25697a432a3214a88958c0918bd787c10ee3
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53901697"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54975630"
 ---
 # <a name="idebugexpressionevaluator3parse2"></a>IDebugExpressionEvaluator3::Parse2
 要剖析的運算式，指定的符號提供者和鑑定框架的位址，將轉換的運算式字串。  

@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: fa1ce513-eb7d-42bc-b6e8-cb2433d051d5
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f2f2da0e351f8444ef9966b00551b941830dda3a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 320f394aa08a3be7f1dfc571b3aa80aaecadead6
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53986436"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54983894"
 ---
 # <a name="document-lock-holder-management"></a>文件鎖定持有者管理
 執行文件資料表 (RDT) 會維持開啟的文件和它們所擁有的任何編輯鎖定計數。 以程式設計方式編輯在背景中沒有看到文件視窗中開啟的文件的使用者時，您可以編輯鎖定放置 RDT 中的文件上。 這項功能常用的設計工具，可修改的圖形化使用者介面的多個檔案。

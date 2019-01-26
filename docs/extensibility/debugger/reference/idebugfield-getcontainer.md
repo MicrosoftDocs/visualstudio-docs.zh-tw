@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 6d6c8213-6181-4adf-9584-3e4cac163dd8
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: de664eb2a5c53317da9732101187965e6e5c7509
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3bf1aea1291b8d92d2ebdfcb35f4c6eeb5125f77
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53945830"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54983883"
 ---
 # <a name="idebugfieldgetcontainer"></a>IDebugField::GetContainer
 這個方法會取得容器的欄位。  

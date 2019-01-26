@@ -1,5 +1,5 @@
 ---
-title: IDebugBreakpointChecksumRequest2 |Microsoft Docs
+title: IDebugBreakpointChecksumRequest2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 9cfdbca5-052c-48e9-8411-e2e9e4065d00
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2f68b7c210ac10b2aaa3c656dead963d86ba73c2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8ff19ac7cfc05e198e49dccdc0a24f198cd1be02
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53919699"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55013245"
 ---
 # <a name="idebugbreakpointchecksumrequest2"></a>IDebugBreakpointChecksumRequest2
 表示中斷點要求的文件總和檢查碼。  
