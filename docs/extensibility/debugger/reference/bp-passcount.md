@@ -1,5 +1,5 @@
 ---
-title: BP_PASSCOUNT |Microsoft Docs
+title: BP_PASSCOUNT | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 791ac175-b897-4c70-873e-240da7e0ac89
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 15026cc5b51c5a7caf4d7abb11029ff9d800cb39
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b1586e9bd8f0a33eb0b11370e81d283381e91866
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53927294"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54920452"
 ---
 # <a name="bppasscount"></a>BP_PASSCOUNT
 描述的引發條件中斷點的計數和條件。  

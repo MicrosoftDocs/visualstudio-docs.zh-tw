@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramEx2::Attach |Microsoft Docs
+title: IDebugProgramEx2::Attach | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 33b22b2f-431e-4205-9441-d28a9c928c97
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f885bd3cdd09caa145451e922ad154b60fdb1ff4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 471702bb34e76b8e29c42ca8fc2c0c623cd9b391
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53900583"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55025549"
 ---
 # <a name="idebugprogramex2attach"></a>IDebugProgramEx2::Attach
 附加至程式的工作階段。  

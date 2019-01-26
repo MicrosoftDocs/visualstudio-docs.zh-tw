@@ -1,5 +1,5 @@
 ---
-title: GETNAME_TYPE |Microsoft Docs
+title: GETNAME_TYPE | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 2f9f1679-e9e8-4c9c-ac90-aa07bfe69914
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5a0c15f97548386192a635e81a4d0e8a0274cb3a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6443c4c359562cc6b04ab413c31fb61441511ef4
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53860396"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54916559"
 ---
 # <a name="getnametype"></a>GETNAME_TYPE
 指定要擷取檔案的名稱類型。  

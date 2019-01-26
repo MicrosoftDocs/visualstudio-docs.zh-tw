@@ -1,5 +1,5 @@
 ---
-title: IDebugPortSupplier2 |Microsoft Docs
+title: IDebugPortSupplier2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 37067324-2ea6-4a01-8829-a6e9c7a70068
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9cb8c38ed3fde6706fa59a76f17090557455c827
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8721718390efb5c94b89b1185dcd64f11da4e0a1
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53860997"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54942330"
 ---
 # <a name="idebugportsupplier2"></a>IDebugPortSupplier2
 這個介面會提供工作階段的偵錯管理員 (SDM) 的連接埠。  

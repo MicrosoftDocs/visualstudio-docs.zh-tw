@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 5044ced5-c18c-4534-b0bf-cc3e50cd57ac
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bdd8937963175ffe0e8cadbfe2f6653b16a1f5a5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e83bea1cf503f7b2b7ffaf19452a4f819f023089
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53888721"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55030596"
 ---
 # <a name="expression-evaluation-visual-studio-debugging-sdk"></a>運算式評估 (Visual Studio 偵錯 SDK)
 在中斷模式中，IDE 必須評估涉及數個程式變數的簡單運算式。 若要完成其評估，偵錯引擎 (DE) 必須剖析並評估在其中一個 IDE 視窗中輸入的運算式。 

@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: e9989da1-55a0-43f8-9aa9-da86afae3b41
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1dbb6f74b138b0ec555af06ece4b6cb11ad8b678
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: cf54f65f19d00f385a3e0eea2c8584e345e10b6f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53899676"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54928434"
 ---
 # <a name="ca2120-secure-serialization-constructors"></a>CA2120:必須保護序列化建構函式
 

@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 3a46e4eb-e677-49c3-8647-d927d035a19a
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f0a354ebafe81b707fa6b0560e473a753a36685d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ee148a9455e9d1fc0f5615ecc03d15154bff20a7
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53902982"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54919313"
 ---
 # <a name="source-control-integration-overview"></a>原始檔控制整合概觀
 本節將比較兩種方式，將整合到 Visual Studio 原始檔控制原始檔控制外掛程式和 VSPackage 所提供的原始檔控制解決方案，並反白顯示新的原始檔控制功能。 Visual Studio 可讓手動切換原始檔控制 Vspackage 和原始檔控制外掛程式，以及自動以解決方案為基礎的切換。  

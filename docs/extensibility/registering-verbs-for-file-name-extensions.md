@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 81a58e40-7cd0-4ef4-a475-c4e1e84d6e06
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 55b6e8d450a298b6d35079998863a9394ec7d70d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f9dde7935750c7ff7b3e9d41ce940b9df8ab0942
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53949728"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55035428"
 ---
 # <a name="register-verbs-for-file-name-extensions"></a>註冊副檔名的動詞命令
 與應用程式的檔案名稱副檔名關聯通常會有偏好的動作，當使用者按兩下檔案時，就會發生。 此建議動作連結到動詞，例如開啟時，對應至動作。  

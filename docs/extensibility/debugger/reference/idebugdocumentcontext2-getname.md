@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 546c5b2e-f166-4edb-9e61-57d797ca98a1
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 524debdf1541c71119bfa539da719f33265d3fb9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c949d8767e3af72fcab145a95830a918ab109287
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53841482"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54925869"
 ---
 # <a name="idebugdocumentcontext2getname"></a>IDebugDocumentContext2::GetName
 取得包含這個文件內容的文件可顯示名稱。  

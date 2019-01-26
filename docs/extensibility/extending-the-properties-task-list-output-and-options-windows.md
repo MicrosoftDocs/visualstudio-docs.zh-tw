@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 06990510-5424-44b8-9fd9-6481acec5c76
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 621ba178f255fc3c86e8234d4e01bcb74b106b62
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4be06a69eac693e951407ecf4c04eabff7bbb31c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53922321"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54933239"
 ---
 # <a name="extend-the-properties-task-list-output-and-options-windows"></a>擴充屬性、 工作清單、 輸出和選項的 windows
 您可以存取任何 Visual Studio 中的 [工具] 視窗。 本逐步解說示範如何整合到新的工具視窗的相關資訊**選項**頁面和新的設定上**屬性**頁面上，以及如何將寫入**工作清單**並**輸出**windows。  
@@ -45,7 +45,7 @@ ms.locfileid: "53922321"
   
 2.  從**所有 WPF 控制項**一節**工具箱**，拖曳**畫布**方格控制項。  
   
-3.  拖曳**文字方塊**，則** 按鈕**，和**ListBox**至畫布。 排列項目，讓文字方塊和按鈕是在相同的層級和清單方塊會填滿視窗下方，如下列圖片所示的其餘部分。  
+3.  拖曳**文字方塊**，則 **按鈕**，和 **ListBox** 至畫布。 排列項目，讓文字方塊和按鈕是在相同的層級和清單方塊會填滿視窗下方，如下列圖片所示的其餘部分。  
   
      ![完成工具視窗](../extensibility/media/t5-toolwindow.png "T5 工具視窗")  
   

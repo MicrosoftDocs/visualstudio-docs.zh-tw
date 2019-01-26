@@ -8,15 +8,15 @@ f1_keywords:
 ms.assetid: 75f20664-9042-464d-8e2b-148d365a2286
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0562b113e91bb9485eaf356085715522b1b39bc3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0ecb1ff26dc30da78c454364db02cf8a2afa2fd2
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53829916"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55033241"
 ---
 # <a name="correlationscope-activity-designer"></a>CorrelationScope 活動設計工具
 

@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: d530f6f1-4af2-454b-bab0-02478a8fe81e
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bad7f7d4d8127e814f4b89a8309ee59ca670553c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: be91f2e66edb1a2426fbdb37160d5ffd8a24571b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53897783"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55021217"
 ---
 # <a name="idebugcomplussymbolproviderupdatesymbols"></a>IDebugComPlusSymbolProvider::UpdateSymbols
 取代為指定的資料流，更新記憶體中的偵錯符號。  

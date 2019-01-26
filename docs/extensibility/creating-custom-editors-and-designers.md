@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: b6a5e8b2-0ae1-4fc3-812d-09d40051b435
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2c3f7a4b3f3219be4a4e3a40a0bb792b34599ce0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 69661c1ad10edaf0f27bfc67f6b9f2145a29d835
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53946993"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54917831"
 ---
 # <a name="create-custom-editors-and-designers"></a>建立自訂編輯器和設計工具
 Visual Studio 整合式的開發環境 (IDE) 可裝載不同類型的編輯器：  

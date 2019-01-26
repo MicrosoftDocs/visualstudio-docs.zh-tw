@@ -5,15 +5,15 @@ ms.prod: visual-studio-dev15
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 12e9e271e0fd6881ae19581a1678f131719c4b34
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4b39d47348a4587d53dbfd29cd83ce474e8848a5
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53882798"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55070691"
 ---
 # <a name="native-recommended-rules-rule-set"></a>原生建議規則規則集
 

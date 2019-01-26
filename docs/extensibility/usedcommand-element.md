@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 99cd05d3-644a-42ff-b289-8458cd1b20c0
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 697685ea3cf39cf1aede3d2a475d3d3bb39c587f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6ccc96d92e83ea42c6921abd2159499c1e9c42c4
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53886042"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54930351"
 ---
 # <a name="usedcommand-element"></a>UsedCommand 項目
 可讓 VSPackage 也可以存取另一個.vsct 檔案中定義的命令。 例如，如果您的 VSPackage 會使用標準**複製**命令，可定義[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]shell 中，您可以將命令加入功能表或工具列而不需要重新實作它。  
