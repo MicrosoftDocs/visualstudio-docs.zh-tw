@@ -6,15 +6,15 @@ ms.topic: reference
 ms.assetid: e8db7c7d-31cf-479e-9dcc-299759891795
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1717908c5d8cd6ee2afab672ca3438d358a5758b
-ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
+ms.openlocfilehash: 6aa49bea25828d4f98b30f1b1f84b35dac76c51e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/14/2019
-ms.locfileid: "54270095"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54977326"
 ---
 # <a name="content-model-view"></a>內容模型檢視
 

@@ -1,5 +1,5 @@
 ---
-title: IDebugTypeFieldBuilder2 |Microsoft Docs
+title: IDebugTypeFieldBuilder2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 23911c5b-2bbf-4734-9976-87a0bd6ea36c
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ed8304203b7145861797732be98c7ba9e22ef6af
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b5fe9f0ba0182662a429cd7003caca5c48288309
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53898605"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54955267"
 ---
 # <a name="idebugtypefieldbuilder2"></a>IDebugTypeFieldBuilder2
 擴充**IDebugTypeFieldBuilder**能夠建立陣列的型別。  
@@ -37,8 +37,8 @@ IDebugTypeFieldBuilder2 : IDebugTypeFieldBuilder
 |[CreateArrayOfType](../../../extensibility/debugger/reference/idebugtypefieldbuilder2-createarrayoftype.md)|建立指定的類型和大小的陣列。|  
   
 ## <a name="requirements"></a>需求  
- Header:Sh.h  
+ 標頭：Sh.h  
   
  命名空間:Microsoft.VisualStudio.Debugger.Interop  
   
- 組件：Microsoft.VisualStudio.Debugger.Interop.dll
+ 組件︰Microsoft.VisualStudio.Debugger.Interop.dll

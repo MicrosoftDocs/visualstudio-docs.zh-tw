@@ -8,15 +8,15 @@ f1_keywords:
 ms.assetid: c753b67b-b0e7-462a-bb4e-ba8db04a078d
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 34f59bc8ad3040c6077d5feeb4f725f367b8dcdc
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 483ac2b294ee68518313767576ed8c2e44301e83
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53956454"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54956944"
 ---
 # <a name="confirm-activity-designer"></a>Confirm 活動設計工具
 

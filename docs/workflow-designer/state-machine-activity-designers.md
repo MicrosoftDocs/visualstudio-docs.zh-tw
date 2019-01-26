@@ -5,16 +5,16 @@ ms.topic: reference
 ms.prod: visual-studio-dev15
 ms.assetid: 97f0bff5-7e48-4914-8f04-8015a1c6bfae
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: f105a583937650fbccf176efdf04faee3993914d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fabbe516baf57c852c0c759489128da732f73c3b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53873644"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54917012"
 ---
 # <a name="state-machine-activity-designers"></a>狀態機器活動設計工具
 

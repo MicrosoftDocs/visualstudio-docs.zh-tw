@@ -1,5 +1,5 @@
 ---
-title: IDebugEntryPointEvent2 |Microsoft Docs
+title: IDebugEntryPointEvent2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: a15d1cc3-97b7-438c-8d24-c23149708f42
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5bf75f84d8adf6aa8786c02a6b5fb1a927be7595
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2205ef7d6fa8b270ce30224f867dd2c318272b37
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53931112"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54992278"
 ---
 # <a name="idebugentrypointevent2"></a>IDebugEntryPointEvent2
 偵錯引擎 (DE) 執行使用者程式碼的第一個指令程式時，將此介面傳送工作階段的偵錯管理員 (SDM)。  

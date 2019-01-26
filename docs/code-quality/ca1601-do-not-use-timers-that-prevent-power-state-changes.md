@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: b8028c92-0696-4c54-9773-0028f29bda9a
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eebcd4f370055b9fb5f27d5b5694534ed8b46a76
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9a75954b4846e24d25e964d9574772469fba32ec
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53937305"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54951803"
 ---
 # <a name="ca1601-do-not-use-timers-that-prevent-power-state-changes"></a>CA1601:不要使用會妨礙電源狀態變更的計時器
 

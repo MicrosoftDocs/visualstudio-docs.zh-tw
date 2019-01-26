@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentText2::GetText |Microsoft Docs
+title: IDebugDocumentText2::GetText | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: f8c15a58-da77-473e-a721-7a094e306c63
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 659f034b9c785a44debed5d1c5743267a0e8b51a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 572b10249f77611edd69b23e60261aefcac028f3
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53838511"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55013401"
 ---
 # <a name="idebugdocumenttext2gettext"></a>IDebugDocumentText2::GetText
 從指定之位置的文件中擷取的文字。  

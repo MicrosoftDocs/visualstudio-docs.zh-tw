@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 9f0943c0-e802-4e3f-8798-2ab8653ddc80
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aa8d2e85ebacdedfde9d6731ff3e24a557de3e13
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a359df7f9538c1b1bc3fe03f1f711a41adca009e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53988552"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54931241"
 ---
 # <a name="ca1506-avoid-excessive-class-coupling"></a>CA1506:應避免使用結合過度的類別
 

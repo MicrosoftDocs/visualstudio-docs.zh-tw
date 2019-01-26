@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 82879fbe-7756-42cd-9a07-c10edf5b4673
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2290b8a95bbb2e53ae14f410f77109394528b138
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b618d79b858f9ed6b770f31d7a55550b8e590300
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53927359"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55009540"
 ---
 # <a name="projectitem-element-visual-studio-project-templates"></a>ProjectItem 項目 （Visual Studio 專案範本）
 指定專案範本中所包含的檔案。  
@@ -27,10 +27,10 @@ ms.locfileid: "53927359"
 > [!NOTE]
 >  `ProjectItem`元素接受不同的屬性，根據該範本是否為專案或項目。 本主題說明`ProjectItem`專案範本的項目。 如需說明`ProjectItem`項目，項目範本，請參閱[ProjectItem 項目 （Visual Studio 項目範本）](../extensibility/projectitem-element-visual-studio-item-templates.md)。  
   
- \<VSTemplate >  
- \<TemplateContent >  
+ \<VSTemplate>  
+ \<TemplateContent>  
  \<Project>  
- \<專案項目 >  
+ \<ProjectItem>  
   
 ## <a name="syntax"></a>語法  
   

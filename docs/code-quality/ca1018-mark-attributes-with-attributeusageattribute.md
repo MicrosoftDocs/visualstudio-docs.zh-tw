@@ -12,18 +12,18 @@ helpviewer_keywords:
 ms.assetid: 6ab70ec0-220f-4880-af31-45067703133c
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f88185882d8cddaf81caf95e2871918553b8eaa
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: dfdaca64c166a29ad731719f79bbad57e975ff8b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53881980"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55043722"
 ---
 # <a name="ca1018-mark-attributes-with-attributeusageattribute"></a>CA1018:必須以 AttributeUsageAttribute 標記屬性
 

@@ -1,5 +1,5 @@
 ---
-title: IDebugBinder3 |Microsoft Docs
+title: IDebugBinder3 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 92353a74-dc74-4f93-8762-61d6b220478c
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e45e88891eab098837c055cce4a99d271e1f3e83
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5dc5a7baad0b516b68740d5a14cd8f1b767644b6
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53919478"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54948579"
 ---
 # <a name="idebugbinder3"></a>IDebugBinder3
 > [!IMPORTANT]

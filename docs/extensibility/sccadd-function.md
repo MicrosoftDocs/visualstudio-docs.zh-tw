@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 545268f3-8e83-446a-a398-1a9db9e866e8
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7fc2b74b32c0fb90a578644df0065e24eb8e373f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5124088599eced9d5ae6bc17365d06dc36f81987
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53830900"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55027889"
 ---
 # <a name="sccadd-function"></a>SccAdd 函式
 此函式會將新檔案加入至原始檔控制系統。  

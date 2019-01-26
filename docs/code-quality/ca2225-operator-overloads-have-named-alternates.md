@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: af8f7ab1-63ad-4861-afb9-b7a7a2be15e1
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a60a050f6403abec471b02e44696081f07c347a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3da94ae10da4632eafda48f145d9bb099d4c3207
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53954801"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54965129"
 ---
 # <a name="ca2225-operator-overloads-have-named-alternates"></a>CA2225:運算子多載必須有具名的替代方法
 
@@ -44,21 +44,21 @@ ms.locfileid: "53954801"
 |+ （二進位）|+|+ （二進位）|新增|
 |+=|+=|+=|新增|
 |&|及|&|BitwiseAnd|
-|&=|和 =|&=|BitwiseAnd|
+|&=|And=|&=|BitwiseAnd|
 |&#124;|或|&#124;|BitwiseOr|
-|&#124;=|或 =|&#124;=|BitwiseOr|
+|&#124;=|Or=|&#124;=|BitwiseOr|
 |--|N/A|--|遞減|
 |/|/|/|分割|
 |/=|/=|/=|分割|
 |==|=|==|等於|
 |^|Xor|^|Xor|
-|^=|Xor =|^=|Xor|
+|^=|Xor=|^=|Xor|
 |>|>|>|比較|
 |>=|>=|>=|比較|
 |++|N/A|++|遞增|
 |<>|!=|等於|
-|<<|<<|<<|Shift|
-|<<=|<<=|<<=|Shift|
+|<<|<<|<<|LeftShift|
+|<<=|<<=|<<=|LeftShift|
 |<|<|<|比較|
 |<=|<=|\<=|比較|
 |&&|N/A|&&|LogicalAnd|
@@ -69,8 +69,8 @@ ms.locfileid: "53954801"
 |* （二進位）|*|*|乘法|
 |*=|N/A|*=|乘法|
 |~|not|~|OnesComplement|
-|>>|>>|>>|右 Shift|
-=|N/A|>>=|右 Shift|
+|>>|>>|>>|RightShift|
+=|N/A|>>=|RightShift|
 |-（二進位）|-（二進位）|-（二進位）|差集|
 |-=|N/A|-=|差集|
 |true|IsTrue|N/A|IsTrue （屬性）|

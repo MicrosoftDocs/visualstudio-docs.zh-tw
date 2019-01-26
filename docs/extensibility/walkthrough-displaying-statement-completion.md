@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: f3152c4e-7673-4047-a079-2326941d1c83
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 148640c7522f133c780703df4052ef3235d8493a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c91f9aec4bd3db9a9495b2a05ce5153bf45f2f52
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53986631"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55009761"
 ---
 # <a name="walkthrough-display-statement-completion"></a>逐步解說：顯示陳述式完成
 您可以定義您要提供完成的識別碼，並接著觸發完成工作階段，以實作語言為基礎的陳述式完成。 您可以定義的語言服務內容中的陳述式完成、 定義您自己的副檔名和內容類型，然後顯示該型別的完成。 或者，您可以觸發完成針對現有的內容類型 — 比方說，「 純文字 」。 本逐步解說示範如何觸發 「 純文字 」 內容類型，也就是文字檔案的內容類型的陳述式完成。 「 文字 」 內容類型是所有其他內容類型，包括程式碼和 XML 檔案的上階。  
@@ -150,7 +150,7 @@ ms.locfileid: "53986631"
     [!code-csharp[VSSDKCompletionTest#15](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_15.cs)]
     [!code-vb[VSSDKCompletionTest#15](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_15.vb)]  
   
-2. 新增下一步 （要您傳遞的命令） 的命令處理常式、 [文字] 檢視、 命令處理常式提供者 （這可讓您存取各種服務），私用欄位和完成工作階段：  
+2. 新增下一步 （要您傳遞的命令） 的命令處理常式、 文字 檢視、 命令處理常式提供者 （這可讓您存取各種服務），私用欄位和完成工作階段：  
   
     [!code-csharp[VSSDKCompletionTest#16](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_16.cs)]
     [!code-vb[VSSDKCompletionTest#16](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_16.vb)]  
@@ -197,7 +197,7 @@ ms.locfileid: "53986631"
   
 2.  當您執行此專案的偵錯工具時，會啟動 Visual Studio 的第二個執行個體。  
   
-3.  建立文字檔案，並輸入一些文字，其中包含這個字，新增。  
+3.  建立文字檔案，並輸入一些文字，其中包含這個字，[新增]。  
   
 4.  當您第一次輸入"a"，然後 「 d 的"，應該會出現包含 「 加法 」 和 「 調整 」 的清單。 請注意已選取 新增。 當您輸入另一個的"d"時，則清單應包含只有 「 加法 」，它現在已選取。 您可以藉由按下認可 「 加法 」 **空格鍵** ， **索引標籤** ，或 **Enter** 鍵或按 esc 鍵或任何其他的索引鍵關閉清單。  
   

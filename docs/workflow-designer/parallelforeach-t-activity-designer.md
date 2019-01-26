@@ -8,15 +8,15 @@ f1_keywords:
 ms.assetid: e93a4843-aef2-4d3e-9a0a-a2d3d1411aa7
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e411f5e72566753d66ded4e445868e5ab245bf9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f584a7f22c4501aef4488b7e2be48b23e99f842b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53873904"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55070811"
 ---
 # <a name="parallelforeach-activity-designer"></a>ParallelForEach 活動設計工具
 

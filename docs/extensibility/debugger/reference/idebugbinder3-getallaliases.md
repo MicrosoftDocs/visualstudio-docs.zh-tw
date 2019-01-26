@@ -1,5 +1,5 @@
 ---
-title: IDebugBinder3::GetAllAliases |Microsoft Docs
+title: IDebugBinder3::GetAllAliases | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 1f9ab2ee-2ab3-4a61-8b99-95dd7fdf3511
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3733d6582559f8042ec1e7d5d8d8814a0a555c20
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e64df5e58f396462ebc9309302a7bbb7a42febcf
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53857284"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55006290"
 ---
 # <a name="idebugbinder3getallaliases"></a>IDebugBinder3::GetAllAliases
 這個方法會擷取從程式的別名清單。  

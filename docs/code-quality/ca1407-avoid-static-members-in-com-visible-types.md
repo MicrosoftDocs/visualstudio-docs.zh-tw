@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: bebd0776-ad04-453c-bca8-8c124c2d7840
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f72949326cf52455013c20419202b358b06d8b0b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b37fffe4ee3000ee1b85d2680bceb0f2aedb5aaf
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53916435"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55012855"
 ---
 # <a name="ca1407-avoid-static-members-in-com-visible-types"></a>CA1407:避免在 COM 可見類型中使用靜態成員
 

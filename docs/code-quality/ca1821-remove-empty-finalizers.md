@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 3f4855a0-e4a0-46e6-923c-4c3b7074048d
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d155d8846828d8806fb4927d39120bfad2b01f33
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 01f89e022be966f0d265abd2f4e24b1779ce64b1
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53937331"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54975175"
 ---
 # <a name="ca1821-remove-empty-finalizers"></a>CA1821:必須移除空的完成項
 

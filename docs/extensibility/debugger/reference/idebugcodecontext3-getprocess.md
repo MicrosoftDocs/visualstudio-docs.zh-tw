@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: e082e494-2255-4d9d-a5a9-6dadd904bea8
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5765e8aaf870617c58bfba6cb8ef5559d0f1e5f2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a7a340a48a6b997dd6fd812a850c4df33d667586
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53917471"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54948709"
 ---
 # <a name="idebugcodecontext3getprocess"></a>IDebugCodeContext3::GetProcess
 擷取偵錯處理序的介面的參考。  

@@ -7,16 +7,16 @@ helpviewer_keywords:
 - dependency diagrams, adding custom gestures
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: eb7dfe94363d757c1ac15a8a44d21d69304c1e60
-ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
+ms.openlocfilehash: a09ead4bc6303f9e349d20830857717d8b69a42b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/14/2019
-ms.locfileid: "54270134"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55043189"
 ---
 # <a name="add-commands-and-gestures-to-dependency-diagrams"></a>將命令和軌跡新增至相依性圖表
 

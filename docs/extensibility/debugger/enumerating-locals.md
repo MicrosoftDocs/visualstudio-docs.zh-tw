@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 254a88e7-d3a7-447a-bd0c-8985e73d85cf
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2bff27683b542b773572b6ba5875a130531af16c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c9e9612606b318f1dd292e7cab6d9bdc57bfda7a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53851926"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55010333"
 ---
 # <a name="enumerate-locals"></a>列舉區域變數
 > [!IMPORTANT]

@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: c0cc5e08-4897-44f2-8309-e3478f1f999e
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1060dda64fc402e69f7f87601a1643fbabed5507
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 04a31171b2aca3de8284bb93257c106b80780242
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53838407"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55040800"
 ---
 # <a name="create-an-extension-with-a-vspackage"></a>使用 VSPackage 建立擴充功能
 本逐步解說會示範如何建立 VSIX 專案，並加入 VSPackage 專案項目。 我們將使用 VSPackage 來取得，UI Shell 服務以顯示訊息方塊。  

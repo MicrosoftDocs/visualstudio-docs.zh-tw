@@ -10,23 +10,23 @@ helpviewer_keywords:
 ms.assetid: 651e1010-d529-4856-85ff-c77ceca5d2ed
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f185d791010c545dd56326505d871fb964a71b66
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 259da66e9f6606a40fe585f37eb2eefd5a583daa
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53943731"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54950503"
 ---
 # <a name="fullclassname-element-visual-studio-template-wizard-extension"></a>FullClassName 項目 （Visual Studio 範本精靈擴充）
 實作的類別完整的名稱`IWizard`介面。  
   
- \<VSTemplate >  
- \<WizardExtension >  
+ \<VSTemplate>  
+ \<WizardExtension>  
  ...  
- \<FullClassName >  
+ \<FullClassName>  
   
 ## <a name="syntax"></a>語法  
   

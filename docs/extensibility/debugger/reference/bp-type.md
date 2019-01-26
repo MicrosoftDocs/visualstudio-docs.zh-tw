@@ -1,5 +1,5 @@
 ---
-title: BP_TYPE |Microsoft Docs
+title: BP_TYPE | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: ef07191e-7966-43ab-96fb-1a0b1db3115d
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: eba96a742dfe674440e7b4fd2432a56bf8458ec9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ccd33c31a466882716ca745fe310bc395cd0655a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53928418"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54948917"
 ---
 # <a name="bptype"></a>BP_TYPE
 指定中斷點的程式碼位置，是一個資料位置，或是中斷點的另一種。  

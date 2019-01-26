@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: c6fea690-1659-4ee7-a1c5-125ad6754525
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ca40c478eb383025755bff147dd9e0f47cecb79
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 86f7b2b79136f2a65a56f0bd1271258b32c97f02
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53868874"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54935588"
 ---
 # <a name="ca1719-parameter-names-should-not-match-member-names"></a>CA1719:參數名稱不應該和成員名稱相符
 

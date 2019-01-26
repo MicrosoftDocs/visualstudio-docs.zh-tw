@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 6dbfcdb0-954f-4486-8fac-7ea8d003e3a9
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 027d6364ad3d6277b716d6716d9d02d1390cde6a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 021d7d8b7c1203aab68a93efe8581f66dec698f9
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53962937"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54975266"
 ---
 # <a name="idebugobjectisnullreference"></a>IDebugObject::IsNullReference
 測試這個物件是否為 null 參考。  

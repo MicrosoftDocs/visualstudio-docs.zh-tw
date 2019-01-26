@@ -1,5 +1,5 @@
 ---
-title: IDebugPropertyDestroyEvent2 |Microsoft Docs
+title: IDebugPropertyDestroyEvent2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 301b7a75-ecfa-46f1-9131-66cf3e4be147
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5b8f044b3600e3c6d0b673223751468d5a63075d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e8c8dcab44a1732a71d7d7f5a31b76cf50b7b31b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53846550"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54983387"
 ---
 # <a name="idebugpropertydestroyevent2"></a>IDebugPropertyDestroyEvent2
 這個介面會傳送偵錯引擎 (DE) 工作階段的偵錯管理員 (SDM) 與特定文件相關聯的屬性時即將終結。  
@@ -49,7 +49,7 @@ IDebugPropertyDestroyEvent2 : IUnknown
   
  命名空間:Microsoft.VisualStudio.Debugger.Interop  
   
- 組件：Microsoft.VisualStudio.Debugger.Interop.dll  
+ 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
  [核心介面](../../../extensibility/debugger/reference/core-interfaces.md)   

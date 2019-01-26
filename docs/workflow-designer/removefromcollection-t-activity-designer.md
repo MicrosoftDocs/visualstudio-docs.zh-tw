@@ -8,15 +8,15 @@ f1_keywords:
 ms.assetid: 6617ba26-c8bc-4aed-b746-112bf490d288
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a3cda73243ce84fa49a1c55ff01fdbd43c085ea1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6105668b8511d340200e13c191c532c8743a0b0d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53830020"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54940085"
 ---
 # <a name="removefromcollectiont-activity-designer"></a>RemoveFromCollection\<T > 活動設計工具
 
@@ -46,6 +46,6 @@ ms.locfileid: "53830020"
 ## <a name="see-also"></a>另請參閱
 
 - [集合](../workflow-designer/collection-activity-designers.md)
-- [AddToCollection\<T >](../workflow-designer/addtocollection-t-activity-designer.md)
-- [ClearCollection\<T >](../workflow-designer/clearcollection-t-activity-designer.md)
+- [AddToCollection\<T>](../workflow-designer/addtocollection-t-activity-designer.md)
+- [ClearCollection\<T>](../workflow-designer/clearcollection-t-activity-designer.md)
 - [ExistsInCollection\<T>](../workflow-designer/existsincollection-t-activity-designer.md)

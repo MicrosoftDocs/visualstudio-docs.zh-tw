@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 9b0d5e71-1683-4a0d-bc4a-68b2fbd8af71
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e1a4ac50cd189368bcc59aaff6b02b6f4b639a6b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2e3896056612631bac0c871ea7b09204e2622492
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53908927"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55018276"
 ---
 # <a name="ca1307-specify-stringcomparison"></a>CA1307:必須指定 StringComparison
 

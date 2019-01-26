@@ -1,5 +1,5 @@
 ---
-title: IDebugExpressionContext2 |Microsoft Docs
+title: IDebugExpressionContext2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 577fdaae-4b2d-4112-9839-ab899535fa6f
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 836ff67b314265081a4dc47d4984c4e0ff35fcd7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 89919ca38c534a292da3e803e823c97a618d534b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53959770"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54927433"
 ---
 # <a name="idebugexpressioncontext2"></a>IDebugExpressionContext2
 此介面代表運算式評估的內容  

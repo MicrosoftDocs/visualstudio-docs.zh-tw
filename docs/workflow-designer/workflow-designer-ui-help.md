@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: f7afc443-7c7f-4b0f-9517-c58070a640de
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 76acda6888734d6586a4b01e2f4ff994d9c13cb8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: cb3893cf9fb17659d83d75efaa9dd316e9f9a511
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53857850"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55013830"
 ---
 # <a name="workflow-designer-ui-help"></a>Workflow 設計工具 UI 說明
 

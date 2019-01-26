@@ -6,16 +6,16 @@ helpviewer_keywords:
 - Domain-Specific Language, events
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 449fb0c12b11163ba0ceca981e66a7da0c399e1c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8c6ab2a25838935ff0c0b7dcc860fa9196504974
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53950195"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54986214"
 ---
 # <a name="boundsrules-constrain-shape-location-and-size"></a>BoundsRules 限制圖案位置和大小
 

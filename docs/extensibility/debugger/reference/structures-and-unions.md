@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 9ff0a8f8-1ee6-4fdd-8b80-206436ff589b
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 42d2634cf99a730aa44f1a497080b69fdff2b962
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f3a33683bd5282eee0f9960ac4ce5c56804232f0
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53906900"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54923291"
 ---
 # <a name="structures-and-unions"></a>Structures and Unions
 以下是結構和等位在 Visual Studio 偵錯 SDK 中。  

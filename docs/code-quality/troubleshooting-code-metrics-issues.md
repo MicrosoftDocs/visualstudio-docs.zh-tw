@@ -6,15 +6,15 @@ ms.topic: troubleshooting
 ms.assetid: f2fdb995-4888-4246-85dc-7bacadd45968
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c20fc0cd975dba4efcf9384d804e7732afecec0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e3d4e83d264e474a8ff578d1b832c4c2a2484bcd
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53930891"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54937070"
 ---
 # <a name="troubleshooting-code-metrics-issues"></a>程式碼度量問題疑難排解
 收集程式碼度量時，可能會遇到下列一些問題：

@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 5ac366c4-fd87-4d5c-95d5-f755510c8e5c
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 710e02cdafb8712cff4aabeb0dd37f3e1a4d34b0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5e5a9f99bb89e78da34860cb5470627bcc5c8574
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53848989"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54980488"
 ---
 # <a name="ca1039-lists-are-strongly-typed"></a>CA1039:清單為強類型
 

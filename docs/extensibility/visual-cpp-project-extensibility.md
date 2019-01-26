@@ -7,15 +7,15 @@ dev_langs:
 - C++
 author: corob-msft
 ms.author: corob
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0eccf13f38799c1d35b7fe4226fa02ec1a291b0c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 499e3776e81fcde3e89eb3436e3938f2feafb137
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53986982"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55013700"
 ---
 # <a name="visual-studio-c-project-system-extensibility-and-toolset-integration"></a>Visual Studio c + + 專案系統擴充性和工具組之間的整合
 
@@ -41,7 +41,7 @@ ms.locfileid: "53986982"
 
    這必須是有效的版本字串，表單 major.minor[.build[.revision]]。
 
-   例如：1.0、 10.0.0.0
+   例如：1.0, 10.0.0.0
 
 - `$(Platform)`
 
@@ -110,7 +110,7 @@ Windows 桌面專案未定義`$(ApplicationType)`，因此它們只匯入
 > `$(VCTargetsPath)`\\*Microsoft.Cpp.Default.props*  
 > &nbsp;&nbsp;&nbsp;&nbsp;`$(MSBuildExtensionsPath)`\\`$(MSBuildToolsVersion)`\\*Microsoft.Common.props*  
 > &nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*ImportBefore*\\*預設*\\\*。*屬性*  
-> &nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*平台*\\`$(Platform)`\\*Platform.default.props*  
+> &nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*Platforms*\\`$(Platform)`\\*Platform.default.props*  
 > &nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*ImportAfter*\\*預設*\\\*。*屬性*  
 
 我們將使用`$(_PlatformFolder)`屬性來保留`$(Platform)`平台資料夾位置。 這個屬性 
@@ -482,7 +482,7 @@ CPS 支援內容類型，使用其他值，但不會用在 Visual c + + 專案�
 |------------| - |
 | `generic` | 在類別目錄標題下的單一頁面上會顯示所有的屬性<br/>規則可以是顯示`Project`並`PropertySheet`內容，但不是`File`。<br/><br/> 範例：`$(VCTargetsPath)`\\*1033*\\*general.xml* |
 | `tool` | 類別會顯示為子頁面。<br/>規則可以是顯示在所有的內容： `Project`，`PropertySheet`和`File`。<br/>規則內容中會顯示專案的專案已使用的項目時，才`ItemType`中定義`Rule.DataSource`，除非規則名稱會包含在`ProjectTools`項目群組。<br/><br/>範例：`$(VCTargetsPath)`\\*1033*\\*clang.xml* |
-| `debugger` | 頁面會顯示為 [偵錯] 頁面的一部分。<br/>類別目前會被忽略。<br/>規則名稱應該符合偵錯啟動器 MEF 物件的`ExportDebugger`屬性。<br/><br/>範例：`$(VCTargetsPath)`\\*1033*\\*偵錯工具\_本機\_windows.xml* |
+| `debugger` | 頁面會顯示為 [偵錯] 頁面的一部分。<br/>類別目前會被忽略。<br/>規則名稱應該符合偵錯啟動器 MEF 物件的`ExportDebugger`屬性。<br/><br/>範例：`$(VCTargetsPath)`\\*1033*\\*debugger\_local\_windows.xml* |
 | *custom* | 自訂範本。 範本的名稱應該符合`ExportPropertyPageUIFactoryProvider`屬性的`PropertyPageUIFactoryProvider`MEF 物件。 請參閱**Microsoft.VisualStudio.ProjectSystem.Designers.Properties.IPropertyPageUIFactoryProvider**。<br/><br/> 範例：`$(VCTargetsPath)`\\*1033*\\*userMacros.xml* |
 
 如果此規則會使用其中一個屬性方格為基礎的範本，它可以使用這些擴充點的屬性：

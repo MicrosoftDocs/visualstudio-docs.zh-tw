@@ -8,15 +8,15 @@ f1_keywords:
 ms.assetid: f58d3c70-944d-4bb4-90a7-e68c103caddc
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 86c2d67d3922679096a3b3980a928a234515b78e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f984a9f7207a8eec77468a3360e2caec5d9400d4
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53858988"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55036091"
 ---
 # <a name="receive-activity-designer"></a>Receive 活動設計工具
 

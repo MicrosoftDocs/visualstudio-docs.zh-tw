@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramHost2::GetHostName |Microsoft Docs
+title: IDebugProgramHost2::GetHostName | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 48bbb089-e59a-471a-9965-24b42a8dabf3
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9853313806cf7fc43e12cd27edb571e1c40deb3b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 040602eeca784ac6265403f615f9234864715949
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53947630"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54923265"
 ---
 # <a name="idebugprogramhost2gethostname"></a>IDebugProgramHost2::GetHostName
 取得標題、 易記名稱或此程式的裝載處理序的檔案名稱。  

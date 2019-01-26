@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: b6b3dee7-91c5-4556-9f69-0d56b675e83b
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f1be2f2327ac48f46894f66d35f6a392608b6177
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a764b10f295e10ab1ef4083948aa7792195ea9b3
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53897770"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55008236"
 ---
 # <a name="private-galleries"></a>私用組件庫
 您可以共用控制項、 範本和工具，您藉由公佈到開發*私用組件庫*內部為您的組織，如下所示：  

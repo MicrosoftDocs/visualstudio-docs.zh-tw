@@ -1,5 +1,5 @@
 ---
-title: IDebugStackFrame2::GetLanguageInfo |Microsoft Docs
+title: IDebugStackFrame2::GetLanguageInfo | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 0e12fd92-f155-46a7-8272-cda279388cfb
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0585a7f48e03b8d3a919ad6f8103f7a65c540cfc
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 790c17bbf547a4b54ef86b7fb79f2e5108a3cbf6
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53851611"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54921930"
 ---
 # <a name="idebugstackframe2getlanguageinfo"></a>IDebugStackFrame2::GetLanguageInfo
 取得此堆疊框架相關聯的語言。  

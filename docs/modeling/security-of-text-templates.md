@@ -6,16 +6,16 @@ helpviewer_keywords:
 - text templates, security
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: bb5ad4348d681a2b7bc59c588bb74e0a27813e73
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 94b2520ffafe3e99420bf77577b59341b6d216aa
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53820808"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54957204"
 ---
 # <a name="security-of-text-templates"></a>文字範本的安全性
 文字範本具有下列安全性考量：

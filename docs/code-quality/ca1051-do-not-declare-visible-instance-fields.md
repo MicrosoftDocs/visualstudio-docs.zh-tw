@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 2805376c-824c-462c-81d1-c51aaf7cabe7
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b85fe5458dc4395ab7f1e119c3da90b685c96410
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 56e5c8f0a0e703bfa2a2cc2419d1bd3be0b0f23a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53944466"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54917221"
 ---
 # <a name="ca1051-do-not-declare-visible-instance-fields"></a>CA1051:不要宣告可見的執行個體欄位
 

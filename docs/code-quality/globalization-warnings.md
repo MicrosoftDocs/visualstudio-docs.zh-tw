@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: a8d12d41-14bf-4b43-af24-168312d7c390
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: de70944f4bf8e4944b94285a570e6d85ec1a5bb7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6f1b1b6981c4aa03392267d64ce8a28e88d9b904
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53821392"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54940722"
 ---
 # <a name="globalization-warnings"></a>全球化警告
 全球化警告支援全球化程式庫和應用程式。

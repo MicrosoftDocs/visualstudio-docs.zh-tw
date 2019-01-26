@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 5c07cc52-6d2d-42df-9d76-9f1f769641db
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4e5340f3a8bacdb8ac9c3cdd8be21c09aa1274ac
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 67da86fd82020ef811484cb91dcd46f5f2b850da
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53841443"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54942775"
 ---
 # <a name="idebugcustomattributequery2iscustomattributedefined"></a>IDebugCustomAttributeQuery2::IsCustomAttributeDefined
 判斷名稱是否存在的自訂屬性。  

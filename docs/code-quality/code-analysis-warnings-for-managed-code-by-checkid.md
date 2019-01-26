@@ -256,15 +256,15 @@ f1_keywords:
 ms.assetid: 5cb221f6-dc59-4abf-9bfa-adbd6f907f96
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: ba3d5d157cebe48212128a6eeb0312f9f67c2f3b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 55a4f53915e50275df0876d50564b3f30add1d5f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53935985"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55010320"
 ---
 # <a name="code-analysis-warnings-for-managed-code-by-checkid"></a>依據 checkid 列出 managed 程式碼的程式碼分析警告
 
@@ -401,7 +401,7 @@ ms.locfileid: "53935985"
 | CA1812 | [CA1812:避免使用未執行個體化的內部類別](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md) | 組件層級類型的執行個體不是由組件中的程式碼所建立。 |
 | CA1813 | [CA1813:避免使用非密封的屬性](../code-quality/ca1813-avoid-unsealed-attributes.md) | .NET Framework 類別庫會提供方法來擷取自訂屬性。 根據預設，這些方法會搜尋屬性繼承階層架構。 密封屬性會減少對整個繼承階層架構的搜尋，並且可以改進效能。 |
 | CA1814 | [CA1814:建議使用不規則陣列取代多維](../code-quality/ca1814-prefer-jagged-arrays-over-multidimensional.md) | 不規則陣列是一種陣列，其元素也是陣列。 組成元素的陣列大小可以不相同，對於某些資料集而言較不會浪費空間。 |
-| CA1815 | [CA1815:覆寫 equals 和實值型別上等號比較運算子](../code-quality/ca1815-override-equals-and-operator-equals-on-value-types.md) | 對於實值類型而言，Equals 的繼承實作會使用 Reflection 程式庫，並比較所有欄位的內容。 但是 Reflection 相當耗費運算資源，而且可能不需要比較每個欄位是否相等。 如果希望使用者比較或排序執行個體，或是使用執行個體做為雜湊資料表索引鍵，則您的實值類型應實作 Equals。 |
+| CA1815 | [CA1815:覆寫實值型別上的 Equals 和等號比較運算子](../code-quality/ca1815-override-equals-and-operator-equals-on-value-types.md) | 對於實值類型而言，Equals 的繼承實作會使用 Reflection 程式庫，並比較所有欄位的內容。 但是 Reflection 相當耗費運算資源，而且可能不需要比較每個欄位是否相等。 如果希望使用者比較或排序執行個體，或是使用執行個體做為雜湊資料表索引鍵，則您的實值類型應實作 Equals。 |
 | CA1816 | [CA1816:呼叫 GC。SuppressFinalize 正確](../code-quality/ca1816-call-gc-suppressfinalize-correctly.md) | Dispose 實作的方法不會呼叫 GC。SuppressFinalize;或不是實作 Dispose 方法呼叫的 GC。SuppressFinalize;或方法呼叫 GC。SuppressFinalize 並傳遞項目以外這個 （我在 Visual Basic 中）。 |
 | CA1819 | [CA1819:屬性不應該傳回陣列](../code-quality/ca1819-properties-should-not-return-arrays.md) | 即使屬性是唯讀，所傳回的陣列不會是寫入保護。 若要保持陣列為防止遭他人修改，屬性必須傳回陣列複本。 一般而言，使用者不了解呼叫這類屬性所造成的不良效能影響。 |
 | CA1820 | [CA1820： 應該測試使用字串長度的空字串](../code-quality/ca1820-test-for-empty-strings-using-string-length.md) | 使用 String.Length 屬性或 String.IsNullOrEmpty 方法比較字串，明顯地會比使用 Equals 還快。 |
@@ -427,7 +427,7 @@ ms.locfileid: "53935985"
 | CA2106 | [CA2106： 必須必須保護判斷提示](../code-quality/ca2106-secure-asserts.md) | 方法會判斷提示使用權限，而且不會在呼叫端上執行安全性檢查。 判斷提示安全性權限但未執行任何安全性檢查，會在您的程式碼中留下可能遭利用的安全性弱點。 |
 | CA2107 | [CA2107： 必須檢視 deny 和 permit only 的使用方式](../code-quality/ca2107-review-deny-and-permit-only-usage.md) |應該只能由有.NET Framework 安全性的進階的知識的人員使用 PermitOnly 方法和 CodeAccessPermission.Deny 安全性動作。 而使用這些安全性動作的程式碼應該接受安全性檢閱。 |
 | CA2108 | [CA2108:必須檢閱實值型別上的宣告式安全性](../code-quality/ca2108-review-declarative-security-on-value-types.md) | 公用或受保護的實值類型受到資料存取或連結要求保護。 |
-| CA2109 | [CA2109： 必須檢閱顯示的事件處理常式](../code-quality/ca2109-review-visible-event-handlers.md) | 偵測到公用或保護的事件處理方法。 除非有絕對的必要性，否則不應該公開 (Expose) 事件處理方法。 |
+| CA2109 | [CA2109:檢閱顯示的事件處理常式](../code-quality/ca2109-review-visible-event-handlers.md) | 偵測到公用或保護的事件處理方法。 除非有絕對的必要性，否則不應該公開 (Expose) 事件處理方法。 |
 | CA2111 |[CA2111:指標不應該為可見](../code-quality/ca2111-pointers-should-not-be-visible.md) | 指標不為私用、內部或唯讀。 惡意的程式碼可變更指標值，進而可能會允許存取記憶體中的任意位置，或是造成應用程式或系統失敗。 |
 | CA2112 | [CA2112:受保護的類型不應該公開欄位](../code-quality/ca2112-secured-types-should-not-expose-fields.md) | 公用或受保護的類型包含公用欄位，而且受到連結要求保護。 如果程式碼可存取受連結要求保護的類型執行個體，則程式碼不必滿足連結要求即可存取類型的欄位。 |
 | CA2114 | [CA2114:方法安全性應該是類型的超集](../code-quality/ca2114-method-security-should-be-a-superset-of-type.md) | 方法不應該同時具有相同動作的方法層級和類型層級宣告式安全性。 |

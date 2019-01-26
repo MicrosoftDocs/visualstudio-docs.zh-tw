@@ -6,15 +6,15 @@ ms.topic: conceptual
 ms.assetid: 7e1785e4-4aaf-4c66-8735-51e7ca035565
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bd147b5a7b491c17e0ed0024cfe471762e6160b1
-ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
+ms.openlocfilehash: 52e5fcf61bcb8c625d25707f235f15879cf46313
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/14/2019
-ms.locfileid: "54269705"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55013180"
 ---
 # <a name="how-to-print-diagrams-from-the-graph-view-and-the-content-model-view"></a>HOW TO：從 [圖形] 檢視和內容模型檢視列印圖表
 

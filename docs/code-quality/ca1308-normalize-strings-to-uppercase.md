@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 7e9a7457-3f93-4938-ac6f-1389fba8d9cc
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cf3acc0911f82a95bde3ce51a8869227c817e49a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 87a672737f3c5d7287215bdd4930e25fb2981825
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53894963"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54924214"
 ---
 # <a name="ca1308-normalize-strings-to-uppercase"></a>CA1308:必須將字串標準化為大寫字母
 
