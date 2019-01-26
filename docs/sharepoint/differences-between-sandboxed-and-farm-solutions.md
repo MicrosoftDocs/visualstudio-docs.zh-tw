@@ -10,17 +10,17 @@ helpviewer_keywords:
 - sandboxed solutions [SharePoint development in Visual Studio]
 - SharePoint development in Visual Studio, farm solutions
 - farm solutions [SharePoint development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f4f37d908448eba54924589cd669dbdda84956d7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 49dcd021e3f04d78af9d0ff50e7001dedcc73297
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53849737"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54867854"
 ---
 # <a name="differences-between-sandboxed-and-farm-solutions"></a>差異沙箱化方案與伺服器陣列解決方案
   當您編譯 SharePoint 方案時，它會部署到 SharePoint 伺服器，並偵錯工具附加至偵錯。 用於偵錯解決方案的程序取決於沙箱化方案屬性的設定： 沙箱化方案 」 或 「 伺服器陣列方案。  

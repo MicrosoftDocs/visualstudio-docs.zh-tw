@@ -13,15 +13,15 @@ helpviewer_keywords:
 - application manifests [Office development in Visual Studio], <description> element
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 61c71bac86bed67750997ac225e3a17250183429
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ede5ac920c1d40402504544a13f8a00905b82e80
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53854486"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54871321"
 ---
 # <a name="ltdescriptiongt-element-office-development-in-visual-studio"></a>&lt;描述&gt;元素 （在 Visual Studio 中的 Office 程式開發）
   `description` 命名空間的 `vstov4` 元素會儲存 Microsoft Office 應用程式之 [COM 增益集] 對話方塊中所顯示的 Office 解決方案描述。
@@ -33,7 +33,7 @@ ms.locfileid: "53854486"
 </description>
 ```
 
-## <a name="elements-and-attributes"></a>項目和屬性
+## <a name="elements-and-attributes"></a>元素和屬性
  選擇性。 `description` 元素位於 `vstov4` 命名空間。 它包含 Microsoft Office 應用程式之 [COM 增益集] 對話方塊中所顯示的增益集描述。
 
  `description` 元素沒有屬性或元素。

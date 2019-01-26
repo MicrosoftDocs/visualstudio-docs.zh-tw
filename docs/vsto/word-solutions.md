@@ -21,17 +21,17 @@ helpviewer_keywords:
 - user interfaces [Office development in Visual Studio], Word
 - Office documents [Office development in Visual Studio, Word
 - document-level customizations [Office development in Visual Studio], Word
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 81154d0cab5760fa3b6a9d2418c9669258fca01f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b9c5f5bc13a8ca77268c5333cbe44a8b6729df4d
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53986748"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54874844"
 ---
 # <a name="word-solutions"></a>Word 方案
   Visual Studio 提供的專案範本，可用以建立 Microsoft Office Word 的文件層級自訂和 VSTO 增益集。 您可以使用這些解決方案自動化 Word、擴充 Word 功能和自訂 Word 使用者介面 (UI)。 如需文件層級自訂和 VSTO 增益集之間的差異的詳細資訊，請參閱[Office 方案開發概觀&#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)。  

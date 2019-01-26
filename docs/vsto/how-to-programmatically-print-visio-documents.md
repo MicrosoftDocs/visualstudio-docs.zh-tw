@@ -8,17 +8,17 @@ dev_langs:
 helpviewer_keywords:
 - Visio [Office development in Visual Studio], printing Visio documents
 - documents [Office development in Visual Studio], printing Visio documents
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3f5e8ff7f7577c779349b49fc291f91d02c90094
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2abcf439abfe240bace83ca7ecb88ef5b9940944
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53845521"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54872478"
 ---
 # <a name="how-to-programmatically-print-visio-documents"></a>HOW TO：以程式設計方式列印 Visio 文件
   您可以列印整份 Microsoft Office Visio 文件，或僅列印特定頁面。  
@@ -29,7 +29,7 @@ ms.locfileid: "53845521"
   
 ### <a name="to-print-a-complete-document"></a>列印整份文件  
   
--   呼叫您要列印之 `Microsoft.Office.Interop.Visio.Document` 物件的 `Microsoft.Office.Interop.Visio.Document.Print` 方法。  
+-   呼叫您要列印之 `Microsoft.Office.Interop.Visio.Document.Print` 物件的 `Microsoft.Office.Interop.Visio.Document` 方法。  
   
      下列程式碼範例會列印使用中的文件。 若要使用這個範例，請從專案中的 `ThisAddIn` 類別執行程式碼。  
   
@@ -40,7 +40,7 @@ ms.locfileid: "53845521"
   
 ### <a name="to-print-a-page-of-a-document"></a>列印文件頁面  
   
--   呼叫您要列印之 `Microsoft.Office.Interop.Visio.Pages` 物件的 `Microsoft.Office.Interop.Visio.Pages.Print` 方法。  
+-   呼叫您要列印之 `Microsoft.Office.Interop.Visio.Pages.Print` 物件的 `Microsoft.Office.Interop.Visio.Pages` 方法。  
   
      下列程式碼範例會列印使用中之文件的第一頁。 若要使用這個範例，請從專案中的 `ThisAddIn` 類別執行程式碼。  
   

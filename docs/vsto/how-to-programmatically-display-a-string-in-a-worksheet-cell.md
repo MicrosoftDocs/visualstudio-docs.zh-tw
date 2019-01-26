@@ -8,17 +8,17 @@ dev_langs:
 helpviewer_keywords:
 - text [Office development in Visual Studio], adding to worksheets
 - worksheets, displaying text in cells
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 021fe02e501fc5a8921ec8f2a50329653ca45401
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d97e57f35298a14da5c4098b464f8248b93a0592
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53849764"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54871802"
 ---
 # <a name="how-to-programmatically-display-a-string-in-a-worksheet-cell"></a>HOW TO：以程式設計方式在工作表儲存格中顯示字串
   此範例示範如何以程式設計方式顯示在資料格中的文字。 若要在儲存格中顯示文字，使用<xref:Microsoft.Office.Tools.Excel.NamedRange>控制項或原生的 Excel 範圍物件。  

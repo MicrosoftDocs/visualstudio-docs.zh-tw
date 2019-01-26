@@ -13,17 +13,17 @@ helpviewer_keywords:
 - projects [Office development in Visual Studio], Outlook
 - Outlook [Office development in Visual Studio]
 - e-mail [Office development in Visual Studio], Outlook solutions
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6c1849a832bcc2bda8ea63b9939968ea44f5cd5b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5537b07263cbdf48da9a0ce2e5705b8bd71941e9
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53868692"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54870006"
 ---
 # <a name="outlook-solutions"></a>Outlook 方案
   Visual Studio 提供的專案範本可用來建立 Microsoft Office Outlook 的 VSTO 增益集。 您可以使用 VSTO 增益集來自動化 Outlook、擴充 Outlook 功能，或自訂 Outlook 的使用者介面 (UI)。 如需 VSTO 增益集的詳細資訊，請參閱 [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md)。  

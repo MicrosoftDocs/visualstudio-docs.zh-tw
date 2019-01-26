@@ -8,17 +8,17 @@ dev_langs:
 helpviewer_keywords:
 - Ribbon [Office development in Visual Studio], tabs
 - Developer tab [Office development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c8346a1f23cc9aa02291aa994a0cea51b7810345
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 30ff440914448a08ae7d2d50319fbc91e9a43ee2
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53906796"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54869732"
 ---
 # <a name="how-to-show-the-developer-tab-on-the-ribbon"></a>HOW TO：在功能區顯示開發人員索引標籤
   若要存取**開發人員** 索引標籤上的 Office 應用程式功能區中，您必須將它設定為顯示該索引標籤上，因為它不會出現預設。 例如，如果您要將 <xref:Microsoft.Office.Tools.Word.GroupContentControl> 加入至 Word 文件層級自訂中，您必須顯示此索引標籤。  

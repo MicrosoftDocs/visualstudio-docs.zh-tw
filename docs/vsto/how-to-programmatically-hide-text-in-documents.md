@@ -8,17 +8,17 @@ dev_langs:
 helpviewer_keywords:
 - documents [Office development in Visual Studio], hiding text
 - text [Office development in Visual Studio], hiding in documents
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5e820cd3b4ed9ea97d9fa7268253663e2ef328c9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ca17436e022763f606ed950cc7240d78e0ad1b68
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53928431"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54874909"
 ---
 # <a name="how-to-programmatically-hide-text-in-documents"></a>HOW TO：以程式設計方式隱藏 文件中的文字
   您可以針對文字的特定範圍設定 <xref:Microsoft.Office.Interop.Word._Font.Hidden%2A> 的 <xref:Microsoft.Office.Interop.Word.Range.Font%2A> 屬性，以隱藏文件中的文字。  
@@ -46,7 +46,7 @@ ms.locfileid: "53928431"
      [!code-vb[Trin_VstcoreWordAutomation#107](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#107)]
      [!code-csharp[Trin_VstcoreWordAutomation#107](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#107)]  
   
-     下列程式碼範例可用於 VSTO 增益集。 本範例使用現用的文件。 若要使用此範例，請從專案的 `ThisAddIn` 類別中執行。  
+     下列程式碼範例可用於 VSTO 增益集。 本範例使用現用文件。 若要使用此範例，請從專案的 `ThisAddIn` 類別中執行。  
   
      [!code-vb[Trin_VstcoreWordAutomationAddIn#107](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#107)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#107](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#107)]  

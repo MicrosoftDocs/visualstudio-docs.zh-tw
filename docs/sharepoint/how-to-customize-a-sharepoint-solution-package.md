@@ -12,17 +12,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - SharePoint development in Visual Studio, packages
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 85140f8d85c90d2b58df10a63f50c117e10eb8bd
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5e1c2e86f489191c3876154143706be4f9b0f1e4
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53835392"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54874935"
 ---
 # <a name="how-to-customize-a-sharepoint-solution-package"></a>HOW TO：自訂 SharePoint 方案套件
   您可以使用 封裝設計工具來建立和自訂套件 (*.wsp*)。 比方說，您可以新增 SharePoint 專案項目及功能，指定是否會重設部署方案時，Web 伺服器，以及設定部署伺服器類型。  

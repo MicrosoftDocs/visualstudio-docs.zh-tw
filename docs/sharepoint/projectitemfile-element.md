@@ -7,17 +7,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - ProjectItemFile element
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f2c4446d8c0e3beff59a08cfbe6c0a6c9e5294d0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 73578d564714ff6e596dca62942f12e24589d235
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53883911"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54867737"
 ---
 # <a name="projectitemfile-element"></a>ProjectItemFile 項目
   代表功能項目檔案，以包含與專案項目時將它部署至 SharePoint 的 SharePoint 檔案。  
@@ -60,7 +60,7 @@ ms.locfileid: "53883911"
   
 |||  
 |-|-|  
-|**命名空間**|http<nolink>: //schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|  
+|**命名空間**|http<nolink>://schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|  
 |**結構描述名稱**|SharePoint 專案項目結構描述|  
 |**驗證檔案**|ProjectItemModelSchema.xsd|  
 |**可以是空的**|否|  

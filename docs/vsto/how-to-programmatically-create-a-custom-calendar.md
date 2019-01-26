@@ -11,15 +11,15 @@ helpviewer_keywords:
 - appointments [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4582c7bbc93cfbf1f0db80fe147c3f367a5afd63
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: 9ded66152b3569242bc763a9375b5aa6fb6a2d40
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54091594"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54871399"
 ---
 # <a name="how-to-programmatically-create-a-custom-calendar"></a>HOW TO：以程式設計方式建立自訂行事曆
   這個範例會建立新行事曆 資料夾名為**PersonalCalendar**，然後建立新的約會項目，並將它新增至行事曆 資料夾。 程式碼接著會顯示行事曆 資料夾。  

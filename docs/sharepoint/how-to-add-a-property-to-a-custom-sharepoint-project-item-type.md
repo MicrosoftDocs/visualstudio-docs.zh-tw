@@ -9,17 +9,17 @@ helpviewer_keywords:
 - SharePoint project items, defining your own types
 - project items [SharePoint development in Visual Studio], defining your own types
 - SharePoint development in Visual Studio, defining new project item types
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 44b791c5855838cc8108902305d016fe7f9900ac
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ca3bfbf6ecd773f0a7c3147a44eb02a5c260764b
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53950481"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54872790"
 ---
 # <a name="how-to-add-a-property-to-a-custom-sharepoint-project-item-type"></a>HOW TO：將屬性加入至自訂的 SharePoint 專案項目類型
   當您定義自訂的 SharePoint 專案項目類型時，則可以將屬性加入專案項目。 屬性會出現在**屬性**視窗中選取的專案項目時**方案總管 中**。  

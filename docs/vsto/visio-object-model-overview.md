@@ -12,17 +12,17 @@ helpviewer_keywords:
 - objects [Office development in Visual Studio], Office object models
 - Office object models
 - Visio object model
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 040144b1e18e216ef8ceadbd218cd42ccf7c40f1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fbdcecc11a260130128c60c222da10c249a58799
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53848463"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54869316"
 ---
 # <a name="visio-object-model-overview"></a>Visio 物件模型概觀
   若要開發 Microsoft Office Visio 的 Office 方案，您可以與 Visio 物件模型互動。 組成這個物件模型的類別和介面，是由 Visio 的主要 Interop 組件所提供，並在 `Microsoft.Office.Interop.Visio` 命名空間中定義。  

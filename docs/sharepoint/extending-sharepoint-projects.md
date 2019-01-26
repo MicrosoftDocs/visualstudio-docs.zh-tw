@@ -9,17 +9,17 @@ helpviewer_keywords:
 - projects [SharePoint development in Visual Studio], extending
 - SharePoint development in Visual Studio, extending projects
 - SharePoint projects, extending
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2cc42ed418de78ee5f75ab51b63c7e1ccdf29911
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9af36ee6db8421b52978c12c4933e174c71c6fd1
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53863978"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54872933"
 ---
 # <a name="extend-sharepoint-projects"></a>擴充 SharePoint 專案
   當您想要自訂的 SharePoint 專案的專案層級功能，請建立專案擴充功能。 比方說，您可以新增自訂的專案屬性，或使用者開發的 Visual Studio 中的 SharePoint 方案時所引發的專案層級事件回應。  

@@ -11,17 +11,17 @@ helpviewer_keywords:
 - Database field [Office development in Visual Studio]
 - data [Office development in Visual Studio], binding data
 - simple data binding [Office development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a9967d830d72355f23173a7dfc6f1a95be073959
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5ae634a87e8b105df88fed4168b6a70909efbc7f
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53895489"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54868990"
 ---
 # <a name="walkthrough-simple-data-binding-in-a-document-level-project"></a>逐步解說：在文件層級專案中的簡單資料繫結
   本逐步解說會示範在文件層級專案中的資料繫結的基本概念。 SQL Server 資料庫中的單一資料欄位繫結至 Microsoft Office Excel 中的具名範圍。 本逐步解說也示範如何新增控制項，可讓您捲動瀏覽資料表中的所有記錄。  

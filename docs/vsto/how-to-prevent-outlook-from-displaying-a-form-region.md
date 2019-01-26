@@ -10,15 +10,15 @@ helpviewer_keywords:
 - canceling form region display
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a7df2aef4348e95a30c0b14b26686764890b6abf
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 473b88dca8813d1db3c465105dc7eca95e49dfbe
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53849738"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54868923"
 ---
 # <a name="how-to-prevent-outlook-from-displaying-a-form-region"></a>HOW TO：防止 Outlook 顯示表單區域
   可能有不想要顯示特定項目的表單區域的 Microsoft Office Outlook 中的情況。 例如，如果連絡人項目沒有商務地址，您就可以防止表單區域，使其不出現對應中會顯示企業的位置。  

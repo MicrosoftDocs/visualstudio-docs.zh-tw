@@ -6,17 +6,17 @@ helpviewer_keywords:
 - project items [SharePoint development in Visual Studio], creating template wizards
 - SharePoint project items, creating template wizards
 - SharePoint development in Visual Studio, defining new project item types
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f5f9f2bbad380302d2a13b4352b2c9a7a54797e5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1e92d200a440b093e6c3be3e143993df230ab9fd
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53829903"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54870970"
 ---
 # <a name="walkthrough-create-a-site-column-project-item-with-a-project-template-part-2"></a>逐步解說：使用專案範本，第 2 部分建立網站資料行專案項目
   您定義自訂 SharePoint 專案項目類型，並將它與 Visual Studio 中的專案範本產生關聯之後，您也可以提供範本的精靈。 您可以使用精靈，在使用您的範本來建立新的專案，其中包含的專案項目時，從使用者收集資訊。 您所收集的資訊可以用來初始化專案項目中。  

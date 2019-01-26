@@ -11,15 +11,15 @@ helpviewer_keywords:
 - application manifests [Office development in Visual Studio], <application> element
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7b2f0035bd4072e3245aa44be64d05ef059a70cb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 81b43779b52299f70877231b99d0f8bb730c39df
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53950273"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54872296"
 ---
 # <a name="ltapplicationgt-element-office-development-in-visual-studio"></a>&lt;應用程式&gt;元素 （在 Visual Studio 中的 Office 程式開發）
   `application` 命名空間的 `vstav3` 項目會包裝 Office 方案的描述。 文件層級自訂與 VSTO 增益集的子項目不同。
@@ -54,7 +54,7 @@ ms.locfileid: "53950273"
 </application>
 ```
 
-## <a name="elements-and-attributes"></a>項目和屬性
+## <a name="elements-and-attributes"></a>元素和屬性
  `application` 命名空間的 `vstav3` 項目是包裝 `vstov4` 命名空間所包含之所有自訂特定資訊的節點。
 
  `application` 項目沒有任何屬性。

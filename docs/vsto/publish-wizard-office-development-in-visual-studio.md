@@ -13,17 +13,17 @@ helpviewer_keywords:
 - deploying applications [Office development in Visual Studio], Publish Wizard
 - Office applications [Office development in Visual Studio], Publish Wizard
 - Publish Wizard, Office solutions
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1a76a333b8a692a8d7dc0a2c0f093e2eaf586c33
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d0ba0e629ba04ec3df6b3be950f59fb34da46364
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53965917"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54871932"
 ---
 # <a name="publish-wizard-office-development-in-visual-studio"></a>發行精靈 （在 Visual Studio 中的 Office 程式開發）
   使用**發行精靈**將方案檔複製到指定的位置，建立資訊清單的檔案，並建立安裝程式。  

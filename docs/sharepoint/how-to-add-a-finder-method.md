@@ -12,17 +12,17 @@ helpviewer_keywords:
 - Business Data Connectivity service [SharePoint development in Visual Studio], Finder method
 - Business Data Connectivity service [SharePoint development in Visual Studio], get entities
 - BDC [SharePoint development in Visual Studio], Finder method
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 40a3cb4457f3078e843b89349fd850d83b8a1c67
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2ae5b1dfca8a083f12aa05d96378c3df348766a0
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53963448"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54872881"
 ---
 # <a name="how-to-add-a-finder-method"></a>HOW TO：新增搜尋方法
   若要啟用網頁組件或清單中顯示的實體清單的商務資料連接 (BDC) 服務，您必須建立*Finder*方法。 搜尋方法是特殊的方法可傳回實體執行個體的集合。 如需詳細資訊，請參閱 <<c0> [ 設計 Business Data Connectivity 模型](../sharepoint/designing-a-business-data-connectivity-model.md)。  

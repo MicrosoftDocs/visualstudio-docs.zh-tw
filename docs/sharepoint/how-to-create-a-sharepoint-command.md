@@ -7,17 +7,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - SharePoint commands [SharePoint development in Visual Studio], creating
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7f83447bcceb010f5a479d61c250e703daa1aab1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: da1b31b7cc1436c90437a9e2b5ef66adfee825b1
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53894846"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54867893"
 ---
 # <a name="how-to-create-a-sharepoint-command"></a>HOW TO：建立 SharePoint 命令
   如果您想要使用 SharePoint 工具擴充功能中的伺服器物件模型，您必須建立自訂*SharePoint 命令*來呼叫 API。 您可以直接呼叫伺服器物件模型的組件中定義之 SharePoint 命令。  
@@ -30,7 +30,7 @@ ms.locfileid: "53894846"
   
     -   .NET Framework 3.5 為目標。 如需有關如何選取目標 framework 的詳細資訊，請參閱[How to:以一個 .NET Framework 版本為目標](../ide/how-to-target-a-version-of-the-dotnet-framework.md)。  
   
-    -   目標 AnyCPU 或 x64 平台。 根據預設，類別庫專案的目標平台會為 AnyCPU。 如需有關如何選取目標平台的詳細資訊，請參閱[How to:專案設定為目標平台](../ide/how-to-configure-projects-to-target-platforms.md)。  
+    -   目標 AnyCPU 或 x64 平台。 根據預設，類別庫專案的目標平台會為 AnyCPU。 如需有關如何選取目標平台的詳細資訊，請參閱[How to:將專案設定到目標平台](../ide/how-to-configure-projects-to-target-platforms.md)。  
   
     > [!NOTE]  
     >  您無法在相同的專案定義的 SharePoint 工具延伸模組中，實作 SharePoint 命令，因為 SharePoint 命令的目標.NET Framework 3.5 和 SharePoint 工具擴充功能目標[!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]。 您必須定義任何您在個別的專案中的延伸模組所使用的 SharePoint 命令。 如需詳細資訊，請參閱 <<c0> [ 部署適用於 Visual Studio 中 SharePoint 工具擴充功能](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)。  

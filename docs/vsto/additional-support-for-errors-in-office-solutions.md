@@ -54,15 +54,15 @@ helpviewer_keywords:
 - Office development in Visual Studio, errors
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9181b74da09f87d1c19805995b527b9fbd56c52f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ad487485ed07a345826f96d1f19200bf3f98d12e
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53946288"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54872114"
 ---
 # <a name="additional-support-for-errors-in-office-solutions"></a>Office 方案錯誤的其他支援
   您可以使用下列資源可協助您尋找當您建立 Office 方案在 Visual Studio 中遇到的常見問題的解答。  

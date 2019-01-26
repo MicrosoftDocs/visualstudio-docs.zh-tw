@@ -9,17 +9,17 @@ helpviewer_keywords:
 - Web Parts [SharePoint development in Visual Studio], designer
 - Web Parts [SharePoint development in Visual Studio], creating
 - Web Parts [SharePoint development in Visual Studio], designing
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 146a1722f240895e0f508b0474df72f6f5f84ece
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fa5817bb7c20cf58457281667dda76ac43608647
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53870903"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54875328"
 ---
 # <a name="walkthrough-create-a-web-part-for-sharepoint-by-using-a-designer"></a>逐步解說：使用設計工具建立 SharePoint web 組件
 

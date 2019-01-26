@@ -22,17 +22,17 @@ helpviewer_keywords:
 - document-level customizations [Office development in Visual Studio], Windows Forms controls
 - Windows Forms controls [Office development in Visual Studio], about Windows Forms controls
 - Office applications [Office development in Visual Studio], Windows Forms
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 48778074587e5cf6e4a51ff2386a437e9c3922d7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fbadf9f2e431cfe441b2cd3ef3694f38e019de49
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53902489"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54872335"
 ---
 # <a name="windows-forms-controls-on-office-documents-overview"></a>在 Office 文件概觀上的 Windows Form 控制項
   Windows Forms 控制項是使用者可以互動，輸入或操作資料的物件。 在 Microsoft Office Excel 和 Microsoft Office Word 的文件層級專案，您可以將 Windows Form 控制項加入文件或活頁簿專案中在設計階段，或您可以在執行階段以程式設計方式加入這些控制項。 您可以程式設計方式加入這些控制項加入任何開啟的文件或 VSTO 增益集在執行階段的工作表的 Excel 或 Word。  

@@ -7,17 +7,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - coauthoring, in Excel
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 62e73362a04d334027075d5c1fea9cc4c0b5d3bf
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 254a7ce0409ffbf254f0ec7d10ad3fa543775d61
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53871066"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54870031"
 ---
 # <a name="understand-coauthoring-and-add-ins"></a>了解共同撰寫與增益集
 

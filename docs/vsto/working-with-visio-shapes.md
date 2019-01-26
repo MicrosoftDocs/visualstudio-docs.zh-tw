@@ -8,17 +8,17 @@ dev_langs:
 helpviewer_keywords:
 - Visio [Office development in Visual Studio], common tasks with Visio shapes
 - shapes [Office development in Visual Studio], common tasks with Visio shapes
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: aa78a0b8956b390e48221f7a516c7a41e6f5ced9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 55a05e009d35facbcab960c6550e7619b643fc7c
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53942316"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54872101"
 ---
 # <a name="work-with-visio-shapes"></a>使用 Visio 圖案
   在本節中的主題會提供逐步程序和程式碼範例，使用 Microsoft Office Visio 物件模型使用的 Office 專案中的圖形。  

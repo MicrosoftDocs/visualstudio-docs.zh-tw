@@ -11,17 +11,17 @@ dev_langs:
 helpviewer_keywords:
 - project upgrade [Office development in Visual Studio]
 - Options dialog box, Project Upgrade page
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fe2f6e251be529cc066c1e66fa9d79773b161bb6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d0bd21a6833bcbc5e9b51b65d4d7ca1c719a666d
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53825590"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54873037"
 ---
 # <a name="project-upgrade-options-dialog-box"></a>專案升級、 選項對話方塊
   您可以使用 [專案升級]  頁面，指定 Visual Studio 是否會自動變更 VSTO 增益集專案，將其目標設定為開發電腦上所安裝的 Office 版本。  

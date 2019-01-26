@@ -7,17 +7,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - Visual Studio Tools for Office runtime, installation scenarios
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 366863dc9babfd918e3f689420c5e26ec05db6a1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5bf5314abd1cf2266d89feaa8f1772b7a7177949
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53850027"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54872465"
 ---
 # <a name="visual-studio-tools-for-office-runtime-installation-scenarios"></a>Visual Studio Tools for Office runtime 安裝案例
   您可以透過三種方式安裝 Visual Studio 2010 Tools for Office 執行階段：  

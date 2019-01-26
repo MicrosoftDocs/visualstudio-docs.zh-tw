@@ -8,17 +8,17 @@ dev_langs:
 helpviewer_keywords:
 - SharePoint development in Visual Studio, site definitions
 - site definitions [SharePoint development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7e09124e3204240f188c65e10865bbf221e15358
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b1f452b79432d8a7a5833b46bf427490ce205ef5
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53958887"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54872595"
 ---
 # <a name="walkthrough-create-a-basic-site-definition-project"></a>逐步解說：建立基本網站定義專案
   本逐步解說會示範如何建立基本網站定義包含在其上的控制項的視覺 Web 組件。 為求清楚起見，您建立視覺 Web 組件會有只有少數的控制項。 不過，您可以建立更複雜的 SharePoint 網站定義包含更多的功能。  

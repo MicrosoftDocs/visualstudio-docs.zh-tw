@@ -7,17 +7,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - Outlook folders [Office development in Visual Studio], moving items
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 51123937fd26b6d6decf3770affd83b1d58d5bfc
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b4551a7e1228203977cf04dc205445f3fe7d250c
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53875737"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54870736"
 ---
 # <a name="how-to-programmatically-move-items-in-outlook"></a>HOW TO：以程式設計方式在 Outlook 中移動項目
   此範例中移動的未閱讀的電子郵件訊息**收件匣**資料夾，名為**測試**。 此範例只會移動有這個字的訊息**測試**在`Subject`欄位。  

@@ -10,15 +10,15 @@ helpviewer_keywords:
 - inclusion lists [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 026cdef278f87ec4367dd88a8530a35425452b75
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6c8ea1c94254bc37edc15e0c267592e921003426
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53895568"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54868676"
 ---
 # <a name="how-to-configure-inclusion-list-security"></a>HOW TO：設定內含清單的安全性
   如果您有系統管理員權限，您可以設定[!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]信任提示來控制使用者是否可以選擇安裝 Office 方案儲存內含清單信任決策。 關於內含清單的資訊，請參閱[使用內含清單信任 Office 方案](../vsto/trusting-office-solutions-by-using-inclusion-lists.md)。  
@@ -40,13 +40,13 @@ ms.locfileid: "53895568"
   
 1.  開啟登錄編輯程式：  
   
-    1.  按一下 **開始**，然後按一下**執行**。  
+    1.  按一下 [開始]，然後按一下 [執行]。  
   
     2.  在 **開放**方塊中，輸入**regedt32.exe**，然後按一下**確定**。  
   
 2.  尋找下列登錄機碼：  
   
-     **\HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\。NETFramework\Security\TrustManager\PromptingLevel**  
+     **\HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\.NETFramework\Security\TrustManager\PromptingLevel**  
   
      如果索引鍵不存在，請加以建立。  
   
@@ -54,7 +54,7 @@ ms.locfileid: "53895568"
   
     |字串值的子機碼|值|  
     |-------------------------|-----------|  
-    |**網際網路**|**AuthenticodeRequired**|  
+    |**Internet**|**AuthenticodeRequired**|  
     |**UntrustedSites**|**已停用**|  
     |**MyComputer**|**已啟用**|  
     |**LocalIntranet**|**已啟用**|  
@@ -99,13 +99,13 @@ ms.locfileid: "53895568"
   
 1.  開啟登錄編輯程式：  
   
-    1.  按一下 **開始**，然後按一下**執行**。  
+    1.  按一下 [開始]，然後按一下 [執行]。  
   
     2.  在 **開放**方塊中，輸入**regedt32.exe**，然後按一下**確定**。  
   
 2.  尋找下列登錄機碼：  
   
-     **\HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\。NETFramework\Security\TrustManager\PromptingLevel**  
+     **\HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\.NETFramework\Security\TrustManager\PromptingLevel**  
   
      如果索引鍵不存在，請加以建立。  
   
@@ -114,7 +114,7 @@ ms.locfileid: "53895568"
     |字串值的子機碼|值|  
     |-------------------------|-----------|  
     |**UntrustedSites**|**已停用**|  
-    |**網際網路**|**AuthenticodeRequired**|  
+    |**Internet**|**AuthenticodeRequired**|  
     |**MyComputer**|**AuthenticodeRequired**|  
     |**LocalIntranet**|**AuthenticodeRequired**|  
     |**TrustedSites**|**AuthenticodeRequired**|  
@@ -158,20 +158,20 @@ ms.locfileid: "53895568"
   
 1.  開啟登錄編輯程式：  
   
-    1.  按一下 **開始**，然後按一下**執行**。  
+    1.  按一下 [開始]，然後按一下 [執行]。  
   
     2.  在 **開放**方塊中，輸入**regedt32.exe**，然後按一下**確定**。  
   
 2.  如果這並不存在，請建立下列登錄機碼：  
   
-     **\HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\。NETFramework\Security\TrustManager\PromptingLevel**  
+     **\HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\.NETFramework\Security\TrustManager\PromptingLevel**  
   
 3.  新增為下列子機碼**字串值**，如果它們尚不存在，與相關的值。  
   
     |字串值的子機碼|值|  
     |-------------------------|-----------|  
     |**UntrustedSites**|**已停用**|  
-    |**網際網路**|**已停用**|  
+    |**Internet**|**已停用**|  
     |**MyComputer**|**已停用**|  
     |**LocalIntranet**|**已停用**|  
     |**TrustedSites**|**已停用**|  

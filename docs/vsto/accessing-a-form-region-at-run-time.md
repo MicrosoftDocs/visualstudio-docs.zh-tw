@@ -12,15 +12,15 @@ helpviewer_keywords:
 - form regions [Office development in Visual Studio], accessing at runtime
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 82f613711d1d95b271bd0d1ca558b193a1aa90cb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 32c38cc7553bc31859eeb665a6e26000252194cb
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53875429"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54870698"
 ---
 # <a name="access-a-form-region-at-runtime"></a>存取表單區域在執行階段
 

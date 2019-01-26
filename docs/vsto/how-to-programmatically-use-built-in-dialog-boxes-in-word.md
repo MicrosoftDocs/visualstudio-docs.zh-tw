@@ -8,17 +8,17 @@ dev_langs:
 helpviewer_keywords:
 - Word [Office development in Visual Studio], dialog boxes
 - dialog boxes, Word
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 38e9fd10171bcc5be20f061217ff85b85ae3b52d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e954533957fc655c49145fec9505679d376eedb9
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53829059"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54872530"
 ---
 # <a name="how-to-programmatically-use-built-in-dialog-boxes-in-word"></a>HOW TO：以程式設計方式使用 Word 中的內建對話方塊
   當使用 Microsoft Office Word 時，有當您需要顯示對話方塊，供使用者輸入的時間。 雖然您可以建立您自己，您也可以採取的方法使用的內建對話方塊在 Word 中，其公開於<xref:Microsoft.Office.Interop.Word.Dialogs>的集合<xref:Microsoft.Office.Interop.Word.Application>物件。 這可讓您存取超過 200 個內建的對話方塊，以列舉型別表示。  

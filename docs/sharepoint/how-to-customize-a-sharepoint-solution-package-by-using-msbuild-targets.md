@@ -7,17 +7,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - SharePoint development in Visual Studio, packages
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ad63fd1bbf5f3f41b86368b9215dab670b64f2e3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 814af35e452bce86dd2a6ba780b9fca5fe9bb4d4
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53939275"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54873193"
 ---
 # <a name="how-to-customize-a-sharepoint-solution-package-by-using-msbuild-targets"></a>HOW TO：使用 MSBuild 目標自訂 SharePoint 方案套件
   藉由在命令提示字元使用 MSBuild 目標，您可以自訂 Visual Studio 建立 SharePoint 封裝檔案的方式 (*.wsp*)。 例如，您可以自訂變更封裝中繼目錄的 MSBuild 屬性，以及自訂指定列舉檔案的 MSBuild 項目群組。  
