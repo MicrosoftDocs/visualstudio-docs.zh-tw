@@ -13,7 +13,7 @@ ms.workload:
 - vssdk
 ms.openlocfilehash: d549ab4af45a2571b2d20d47215109f57b3f3384
 ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 01/02/2019
 ms.locfileid: "53930709"
@@ -24,7 +24,7 @@ ms.locfileid: "53930709"
 ## <a name="registering-a-source-control-package"></a>將原始檔控制套件註冊  
  原始檔控制套件註冊以便[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]環境可以找到它，並查詢其支援的功能。 這是根據其功能的命令所需或明確要求時，才，建立封裝的執行個體的延遲載入配置。  
   
- Vspackage 會將資訊放入特定版本的登錄機碼 hkey_local_machine\software\microsoft\visualstudio \\\*X.Y*，其中*X*是主要版本號碼和*Y*是次要版本號碼。 這種做法讓您能夠支援多個版本的並排顯示安裝[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。  
+ Vspackage 會將資訊放入特定版本的登錄機碼 hkey_local_machine\software\microsoft\visualstudio \\*X.Y*，其中*X*是主要版本號碼和*Y*是次要版本號碼。 這種做法讓您能夠支援多個版本的並排顯示安裝[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。  
   
  [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]使用者介面 (UI) 以及原始檔控制 Vspackage 支援從多個原始檔控制外掛程式 （透過原始檔控制配接器套件） 中的選取範圍。 可以有一個作用中的原始檔控制外掛程式或 VSPackage 一次。 不過，如下所述，IDE 會允許透過自動解決方案為根據封裝交換機制切換原始檔控制外掛程式和 Vspackage。 有部分的原始檔控制 VSPackage 一些需求，以啟用此工作階段機制。  
   

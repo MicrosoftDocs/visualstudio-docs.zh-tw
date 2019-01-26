@@ -9,17 +9,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - SharePoint development in Visual Studio, building
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d7c6b0b3a3e99c5c62713d1fdc12952ea421d8c5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fe707f1b779978b26a53d11c32e92341e667be04
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53928903"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54867118"
 ---
 # <a name="how-to-build-sharepoint-solutions"></a>HOW TO：建置 SharePoint 解決方案
 

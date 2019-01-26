@@ -21,17 +21,17 @@ helpviewer_keywords:
 - Ribbon Designer [Office development in Visual Studio]
 - read-only properties
 - Ribbon [Office development in Visual Studio], shortcut keys
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7179de49f80bee847077a7f247cc11dee855be80
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f923c4762a78f43d2d9b1ba3df990c148a074e68
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53928863"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54867256"
 ---
 # <a name="ribbon-designer"></a>功能區設計工具
   功能區設計工具是視覺效果設計畫布。 若要將自訂索引標籤、 群組和控制項加入 Microsoft Office 應用程式的功能區中使用功能區設計工具。
@@ -145,13 +145,13 @@ ms.locfileid: "53928863"
 |**ButtonGroup**|包含一或多個按鈕、 切換按鈕、 功能表、 分割按鈕和組件庫的群組。 您可以將按鈕群組新增至群組或功能表。|
 |**CheckBox**|方塊選取或清除，以開啟或關閉選項。|
 |**ComboBox**|編輯方塊與清單方塊。 使用者可以輸入或選取他們選擇。 這個方塊會顯示目前的選取範圍。 使用<xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox.Items%2A>新增和移除項目，在執行階段之前或之後在功能區載入至 Office 應用程式的屬性。|
-|**下拉式清單中**|使用者可以選取的項目清單。 使用者無法在下拉式清單中輸入新的項目。<br /><br /> 使用<xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown.Items%2A>將項目新增至清單的屬性。 您可以新增和移除項目，在執行階段。<br /><br /> 使用<xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown.Buttons%2A>將按鈕新增至清單的屬性。 不過，您無法新增和移除在執行階段，功能區載入至 Office 應用程式之後的按鈕。|
-|**編輯方塊**|使用者可在其中輸入文字的方塊。|
+|**DropDown**|使用者可以選取的項目清單。 使用者無法在下拉式清單中輸入新的項目。<br /><br /> 使用<xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown.Items%2A>將項目新增至清單的屬性。 您可以新增和移除項目，在執行階段。<br /><br /> 使用<xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown.Buttons%2A>將按鈕新增至清單的屬性。 不過，您無法新增和移除在執行階段，功能區載入至 Office 應用程式之後的按鈕。|
+|**EditBox**|使用者可在其中輸入文字的方塊。|
 |**圖庫**|功能表，呈現陣列或方格中的使用者可以從中選取的視覺化選項。 您可以控制功能表中選取項目的版面配置。 使用<xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.ColumnCount%2A>而<xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.RowCount%2A>屬性，以指定的資料列和資料行，會顯示項目數目和資源庫 按鈕。|
 |**Label**|您可以使用它來識別功能區上的控制項的文字。|
-|**Menu**|下拉式清單可以包含任何下列控制項：<br /><br /> 按鈕<br />-核取方塊<br />在資源庫內<br />功能表<br />分割按鈕<br />-切換按鈕<br />-分隔符號<br /><br /> 若要將控制項加入至功能區設計工具中的功能表中，按一下要公開 （expose） 功能表的設計介面的功能表中的下拉箭頭。 然後，您可以將從功能區控制項**工具箱**拖曳至功能表。 若要排列控制項，請將它們拖曳到所需的位置。<br /><br /> 若要將控制項加入<xref:Microsoft.Office.Tools.Ribbon.RibbonMenu>功能區載入至 Office 應用程式之後，您必須設定<xref:Microsoft.Office.Tools.Ribbon.RibbonMenu.Dynamic%2A>屬性設 **，則為 true**載入功能區之前。 如需如何執行這項操作的資訊，請參閱[功能區物件模型概觀](../vsto/ribbon-object-model-overview.md)。|
+|**Menu**|下拉式清單可以包含任何下列控制項：<br /><br /> 按鈕<br />-核取方塊<br />在資源庫內<br />功能表<br />分割按鈕<br />-切換按鈕<br />-   Separator<br /><br /> 若要將控制項加入至功能區設計工具中的功能表中，按一下要公開 （expose） 功能表的設計介面的功能表中的下拉箭頭。 然後，您可以將從功能區控制項**工具箱**拖曳至功能表。 若要排列控制項，請將它們拖曳到所需的位置。<br /><br /> 若要將控制項加入<xref:Microsoft.Office.Tools.Ribbon.RibbonMenu>功能區載入至 Office 應用程式之後，您必須設定<xref:Microsoft.Office.Tools.Ribbon.RibbonMenu.Dynamic%2A>屬性設 **，則為 true**載入功能區之前。 如需如何執行這項操作的資訊，請參閱[功能區物件模型概觀](../vsto/ribbon-object-model-overview.md)。|
 |**Separator**|用來分隔清單中的項目的細列。 新增至群組時，軸是垂直。 新增至功能表時，軸是水平。|
-|**SplitButton**|附有功能表按鈕。 分割按鈕可以包含任何下列控制項：<br /><br /> 按鈕<br />-核取方塊<br />在資源庫內<br />功能表<br />分割按鈕<br />-切換按鈕<br />-分隔符號<br /><br /> 功能表上，例如分割按鈕也有它自己的設計介面。 不過，不同於功能表上，您只能更新分割按鈕中的項目功能區載入至 Office 應用程式之前。 如需如何更新分割按鈕中的項目資訊，請參閱[功能區物件模型概觀](../vsto/ribbon-object-model-overview.md)。|
+|**SplitButton**|附有功能表按鈕。 分割按鈕可以包含任何下列控制項：<br /><br /> 按鈕<br />-核取方塊<br />在資源庫內<br />功能表<br />分割按鈕<br />-切換按鈕<br />-   Separator<br /><br /> 功能表上，例如分割按鈕也有它自己的設計介面。 不過，不同於功能表上，您只能更新分割按鈕中的項目功能區載入至 Office 應用程式之前。 如需如何更新分割按鈕中的項目資訊，請參閱[功能區物件模型概觀](../vsto/ribbon-object-model-overview.md)。|
 |**ToggleButton**|會出現一個按鈕按下或未按下。|
 
 ##  <a name="HandleEventsSetProperties"></a> 處理事件及設定屬性
@@ -179,8 +179,8 @@ ms.locfileid: "53928863"
 
 |動作|鍵盤快速鍵|
 |------------|-----------------------|
-|移動清單中的前一個控制項的控制項。|**Ctrl**+**向上**<br /><br /> **Ctrl**+**左**|
-|在清單中的下一個控制項之後移動控制項。|**Ctrl**+**向下**<br /><br /> **Ctrl**+**權限**|
+|移動清單中的前一個控制項的控制項。|**Ctrl**+**Up**<br /><br /> **Ctrl**+**Left**|
+|在清單中的下一個控制項之後移動控制項。|**Ctrl**+**Down**<br /><br /> **Ctrl**+**Right**|
 |將選取項目從一個控制項移到相同群組中的另一個。 針對下拉式面板中，在 父控制項和下拉式面板中的控制項之間移動。|**註冊**<br /><br /> **向下**|
 |向前逐一查看所有控制項。|**Tab**|
 |所有的控制項反向逐一查看。|**Shift**+**Tab**|

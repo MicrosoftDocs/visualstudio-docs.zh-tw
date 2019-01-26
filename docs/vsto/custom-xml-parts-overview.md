@@ -20,15 +20,15 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], custom XML parts
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b0cc9e30cbc55164e8ee993930c6d5fca639a318
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4906bfc091f9fe59b2f7c64d3000deba8018c5f6
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53942439"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54862121"
 ---
 # <a name="custom-xml-parts-overview"></a>自訂 XML 組件概觀
   您可以將 XML 資料嵌入某些 Microsoft Office 應用程式的文件中。 當您將 XML 資料嵌入文件時，該資料就稱為*自訂 XML 組件*。  

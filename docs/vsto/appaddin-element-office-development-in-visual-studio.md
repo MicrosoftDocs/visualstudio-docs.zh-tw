@@ -11,15 +11,15 @@ helpviewer_keywords:
 - application manifests [Office development in Visual Studio], <appAddin> element
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fdba74f7022ec73cfd6d52c386e8a4594aa6ca7f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b53fcfaa28694b88f3401d0e2e40b157ba7c3201
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53905435"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54875988"
 ---
 # <a name="ltappaddingt-element-office-development-in-visual-studio"></a>&lt;appAddin&gt;元素 （在 Visual Studio 中的 Office 程式開發）
   **AppAddin**項目`vstov4`命名空間會儲存為 VSTO 增益集的自訂特定資訊。
@@ -37,15 +37,15 @@ ms.locfileid: "53905435"
 </appAddin>
 ```
 
-## <a name="elements-and-attributes"></a>項目和屬性
+## <a name="elements-and-attributes"></a>元素和屬性
  **AppAddin**是必要項目，且位於`vstov4`命名空間。 只有一個**appAddin**應用程式資訊清單中所定義的項目。
 
  **AppAddin**項目具有下列屬性。
 
 |屬性|描述|
 |---------------|-----------------|
-|**應用程式**|必要項。 識別 Microsoft Office 應用程式。 值可以是下列其中一項：Excel、 InfoPath、 Outlook、 PowerPoint、 Project、 Visio 或 Word。|
-|**LoadBehavior**|選擇性。 根據預設， **loadBehavior**將此值設為啟用。 若要進行偵錯，可以將此值設定為 2 來停用 VSTO 增益集。 如需詳細資訊，請參閱標題為 LoadBehavior 值的表格[VSTO 增益集的登錄項目](../vsto/registry-entries-for-vsto-add-ins.md)。|
+|**application**|必要項。 識別 Microsoft Office 應用程式。 值可以是下列其中一項：Excel、 InfoPath、 Outlook、 PowerPoint、 Project、 Visio 或 Word。|
+|**loadBehavior**|選擇性。 根據預設， **loadBehavior**將此值設為啟用。 若要進行偵錯，可以將此值設定為 2 來停用 VSTO 增益集。 如需詳細資訊，請參閱標題為 LoadBehavior 值的表格[VSTO 增益集的登錄項目](../vsto/registry-entries-for-vsto-add-ins.md)。|
 |**keyName**|必要項。 這個值是該應用程式載入 VSTO 增益集時將要使用的登錄機碼名稱。 如需詳細資訊，請參閱 < [VSTO 增益集的登錄項目](../vsto/registry-entries-for-vsto-add-ins.md)。|
 
  **AppAddin**項目具有下列子項目。

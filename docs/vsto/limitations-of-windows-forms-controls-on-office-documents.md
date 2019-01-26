@@ -15,17 +15,17 @@ helpviewer_keywords:
 - Toolbox [Office development in Visual Studio], unsupported controls
 - user controls [Office development in Visual Studio], grouping controls
 - Windows Forms controls [Office development in Visual Studio], Toolbox
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1e3ea01d83dcb40378e3ac3282d95620eacc5731
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 610ee5e18054b6da35a3098b851d1585c70b6bc3
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53929668"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54863538"
 ---
 # <a name="limitations-of-windows-forms-controls-on-office-documents"></a>Office 文件上的 Windows Form 控制項的限制
 

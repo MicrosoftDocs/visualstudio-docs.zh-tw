@@ -10,17 +10,17 @@ helpviewer_keywords:
 - smart documents [Office development in Visual Studio], adding controls
 - actions panes [Office development in Visual Studio], creating in Word
 - actions panes [Office development in Visual Studio], adding controls
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4e868f8639aa8803e1ba9631bf46929bc917be3f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 49a570a68d2ce301ff103c3587e3246a725a1f42
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53943086"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54866268"
 ---
 # <a name="walkthrough-insert-text-into-a-document-from-an-actions-pane"></a>逐步解說：從 [動作] 窗格中的文件中插入文字
   本逐步解說示範如何建立 Microsoft Office Word 文件中的 [動作] 窗格。 [動作] 窗格包含兩個控制項收集輸入，然後將文字傳送到文件。  
@@ -111,7 +111,7 @@ ms.locfileid: "53943086"
   
     |屬性|值|  
     |--------------|-----------|  
-    |**名稱**|**GetName**|  
+    |**名稱**|**getName**|  
     |**Size**|**130, 20**|  
   
 5.  新增第二**標籤**控制項加入執行窗格控制項，並變更**文字**屬性設**位址**。  
@@ -120,7 +120,7 @@ ms.locfileid: "53943086"
   
     |屬性|值|  
     |--------------|-----------|  
-    |**名稱**|**GetAddress**|  
+    |**名稱**|**getAddress**|  
     |**接受傳回**|**True**|  
     |**多行**|**True**|  
     |**Size**|**130, 40**|  

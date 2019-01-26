@@ -11,15 +11,15 @@ helpviewer_keywords:
 - mail items [Office development in Visual Studio], creating
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c763e597b192ffe0ae7efdce04c3aba05ab2fa5a
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: b926a7ce44d4a07bc875a275f82cf2ae24de0a3f
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54087785"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54876053"
 ---
 # <a name="how-to-programmatically-create-an-email-item"></a>HOW TO：以程式設計方式建立電子郵件項目
   此範例會建立在 Microsoft Office Outlook 電子郵件訊息。  

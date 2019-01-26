@@ -7,17 +7,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - FeatureProperties element
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e7843d8a8ee9fc21c546c8cfca57cfef63cd4015
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fb345e66a53f9816281df6e948a8961252c0fcea
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53955668"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54862585"
 ---
 # <a name="featureproperties-element"></a>FeatureProperties 項目
   它會部署到 SharePoint 時，會包含與功能的屬性值的集合。 將功能部署之後，您可以在程式碼中存取的屬性值。  
@@ -46,7 +46,7 @@ ms.locfileid: "53955668"
   
 |元素|描述|  
 |-------------|-----------------|  
-|[專案項目](../sharepoint/projectitem-element.md)|代表 SharePoint 專案項目。 這個項目必要的根元素的`.spdata`檔案。|  
+|[ProjectItem](../sharepoint/projectitem-element.md)|代表 SharePoint 專案項目。 這個項目必要的根元素的`.spdata`檔案。|  
   
 ## <a name="remarks"></a>備註  
  如需有關功能屬性的詳細資訊，請參閱[提供專案項目中的封裝和部署資訊](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)。  
@@ -55,7 +55,7 @@ ms.locfileid: "53955668"
   
 |元素|描述|  
 |-------------|-----------------|  
-|**命名空間**|http<nolink>: //schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|  
+|**命名空間**|http<nolink>://schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|  
 |**結構描述名稱**|SharePoint 專案項目結構描述|  
 |**驗證檔案**|ProjectItemModelSchema.xsd|  
 |**可以是空的**|否|  

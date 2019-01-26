@@ -10,17 +10,17 @@ dev_langs:
 helpviewer_keywords:
 - SharePoint development in Visual Studio, adding applications page to workflow
 - application page [SharePoint development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: cb0dfa7212cae1dd4e7c62f71f423c0f8fd275d9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 930252a509466fa65a7cbdf2eabac35cfeb25081
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53938195"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54865824"
 ---
 # <a name="walkthrough-add-an-application-page-to-a-workflow"></a>逐步解說：將應用程式頁面加入至工作流程
   本逐步解說示範如何新增應用程式頁面，以顯示衍生自工作流程在工作流程專案的資料。 本文是根據本主題所述之專案[逐步解說：建立工作流程關聯與初始表單](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md)。
@@ -131,7 +131,7 @@ ms.locfileid: "53938195"
     using Microsoft.SharePoint.Navigation;
     ```
 
-3.  將下列程式碼加入至 `Page_Load` 方法中：
+3.  將下列程式碼加入 `Page_Load` 方法：
 
     ```vb
     Try

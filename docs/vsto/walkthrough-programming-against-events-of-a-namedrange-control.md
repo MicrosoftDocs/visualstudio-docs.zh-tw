@@ -11,17 +11,17 @@ helpviewer_keywords:
 - NamedRange control, events
 - worksheets, events
 - worksheets, automating
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 020d10aec83cd9249378c326f02ba37c3721b126
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0bf7591ad85519f3d68e6f341d325a65f4021fff
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53910814"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54875728"
 ---
 # <a name="walkthrough-program-against-events-of-a-namedrange-control"></a>逐步解說：針對 NamedRange 控制項的事件進行程式設計
   本逐步解說示範如何新增<xref:Microsoft.Office.Tools.Excel.NamedRange>控制項，Microsoft Office Excel 工作表並對其事件，藉由使用 Visual Studio 中 Office 開發工具的程式。  
