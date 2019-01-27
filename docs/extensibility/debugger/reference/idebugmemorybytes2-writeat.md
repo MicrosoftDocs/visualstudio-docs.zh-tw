@@ -1,5 +1,5 @@
 ---
-title: IDebugMemoryBytes2::WriteAt |Microsoft Docs
+title: IDebugMemoryBytes2::WriteAt | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 61cc3704-47fa-4d9b-aa62-bb4585ac8fb1
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c7d9cbd621b24db26316cc7fca48352a7d97df6e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 92b0438820d776dce7eb9fd5bd7e1c049d449b14
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53873180"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55035324"
 ---
 # <a name="idebugmemorybytes2writeat"></a>IDebugMemoryBytes2::WriteAt
 寫入指定的記憶體，並指定位址開頭的位元組數目。  

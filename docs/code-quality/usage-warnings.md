@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: fe7dc2a3-289d-4bf7-a1e4-0947a81287c4
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a5b5f2e57b6fa27f314394552d72844cd9b8e189
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 751b2e7f37ff57b980ca5d6c304dfa8ad7404128
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53869082"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55070509"
 ---
 # <a name="usage-warnings"></a>用法警告
 用法警告支援.NET Framework 的正確用法。
