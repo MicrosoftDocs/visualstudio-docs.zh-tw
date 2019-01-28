@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 22491cdc-8f04-4e1c-8eb4-ff33798ec792
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 456661c06934063041f06c36c20eee72d52c5b4a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a0939fd9499f9699d5672fe5bb7ef580ffe75489
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53915331"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55021477"
 ---
 # <a name="how-to-migrate-extensibility-projects-to-visual-studio-2015"></a>HOW TO：將擴充性專案移轉至 Visual Studio 2015
 以下是如何升級您的延伸模組。  
@@ -29,7 +29,7 @@ ms.locfileid: "53915331"
   
 2.  在升級完成之後，可將外部程式的路徑變更為新版本的*devenv.exe*。 以滑鼠右鍵按一下專案節點，在**方案總管**，然後選擇**屬性**。 在 **偵錯**索引標籤上，尋找由文字方塊**啟動外部程式**和變更的路徑*devenv.exe*至 Visual Studio 2015 的路徑，這應該看起來像這樣：  
   
-     *%ProgramFiles%\Microsoft visual Studio 14.0\Common7\IDE\devenv.exe*  
+     *%ProgramFiles%\Microsoft Visual Studio 14.0\Common7\IDE\devenv.exe*  
   
 3.  將參考加入*Microsoft.VisualStudio.Shell.14.0.dll*。 (以滑鼠右鍵按一下專案節點，在**方案總管**，然後選擇**新增** > **參考**。 選取**延伸模組**索引標籤，然後再檢查**Microsoft.VisualStudio.Shell.14.0**。)  
   
@@ -39,7 +39,7 @@ ms.locfileid: "53915331"
   
 ### <a name="to-update-an-extensibility-project-to-nuget-vs-sdk-reference-assemblies"></a>更新 NuGet VS SDK 參考組件的擴充性專案  
   
-1.  判斷您的專案需要的 VS SDK 參考組件。  在 [**方案總管] 中**，展開專案的**參考**節點和檢閱專案參考的清單。  VS SDK 參考的組件會具有前置詞**Microsoft.VisualStudio**名稱中 (例如：Microsoft.VisualStudio.Shell.14.0)。  
+1.  判斷您的專案需要的 VS SDK 參考組件。  在 [**方案總管] 中**，展開專案的**參考**節點和檢閱專案參考的清單。  VS SDK 參考的組件會具有前置詞**Microsoft.VisualStudio**名稱中 (例如：Microsoft.VisualStudio.Shell.14.0).  
   
 2.  從專案移除 VS SDK 參考組件，方法是選取它們，以滑鼠右鍵按一下並選取**移除**。  
   

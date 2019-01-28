@@ -1,5 +1,5 @@
 ---
-title: IDebugCustomViewer::DisplayValue |Microsoft Docs
+title: IDebugCustomViewer::DisplayValue | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 7a538248-5ced-450e-97cd-13fabe35fb1c
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f372c7440cf95fb1a3896512188776f74c5f3cd0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e711fc91a1d234957a136572cc4f5fddb9a47944
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53913445"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54991082"
 ---
 # <a name="idebugcustomviewerdisplayvalue"></a>IDebugCustomViewer::DisplayValue
 顯示指定的值，會呼叫這個方法。  

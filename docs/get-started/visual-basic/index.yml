@@ -1,23 +1,25 @@
 ### YamlMime:YamlDocument
-ms.openlocfilehash: c9110582a80de3031ed4d2698a4f1afcf31e3b72
-ms.sourcegitcommit: a715de2ba8c703f37aa2102567b1aa2c0f05a117
+ms.openlocfilehash: 6c68bfe6d5216c6730a4b42713c5124b8075e9e1
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "53442890"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54946421"
 documentType: LandingData
-title: Visual Studio | Visual Basic
+title: Visual Basic 教學課程 | Visual Basic
 metadata:
   title: 使用 Visual Studio 進行 Visual Basic 開發 | Microsoft Docs
   description: 關於使用 Visual Studio 開發 Visual Basic 應用程式的教學課程和概念性文章。
   ms.custom: seodec18
   author: ghogen
-  manager: douge
+  manager: jillfra
   ms.prod: visual-studio-dev15
   ms.technology: vs-acquisition
   ms.topic: landing-page
   ms.date: 10/30/2018
   ms.author: ghogen
+abstract:
+  description: 本頁面包含初學者教學課程的連結，供 Visual Basic 使用者學習 Visual Studio。 如需完整的 Visual Studio 文件，請參閱 <a href="/visualstudio/ide/">Visual Studio</a>。 如需 Visual Studio 語言文件，請參閱 <a href=/dotnet/visual-basic>Visual Basic 指南</a>。
 sections:
 - title: 開始使用
   items:

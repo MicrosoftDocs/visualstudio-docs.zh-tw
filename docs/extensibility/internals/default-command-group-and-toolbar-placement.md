@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 35342110-d639-4577-8367-00b21dcc6f07
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8d4292ff0a3760c412d0c12961ad7b34ad18f607
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 193e61c0794282a2a4dba2498d8494d27f6c6d2a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53850975"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55040615"
 ---
 # <a name="default-command-group-and-toolbar-placement"></a>預設命令、 群組及工具列位置
 如需產品的一致性和穩定性，UI 預設會顯示特定命令群組，和[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]提供命令和命令群組的定義。 Vspackage 也可以使用標準命令和命令群組。  

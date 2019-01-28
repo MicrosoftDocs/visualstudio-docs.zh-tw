@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 8f512704-12d0-46d2-959a-4f8dffe117b5
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ccdb3a4e02403ec10da814770816ce78feb65f6d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ed9db83ed17b27090efef3e1d892d28f0078ce6c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53887249"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54988840"
 ---
 # <a name="idebugdisassemblystream2getsize"></a>IDebugDisassemblyStream2::GetSize
 指示這個反組譯碼資料流中取得的大小。  

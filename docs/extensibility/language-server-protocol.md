@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 6a7d93c2-31ea-4bae-8b29-6988a567ddf2
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1b2329b54ba90a37e0d6d5e782e66c4af923a646
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2a41bccbec31f11a30d5e9ccf0e97806d3e7efb4
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53828221"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55023453"
 ---
 # <a name="language-server-protocol"></a>語言伺服器通訊協定
 

@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 104c4c55-78b8-42f4-b6b0-9a334101aaea
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fad1d3145a50238dbc2b00cc450a5065bd5e0a04
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 50d707c42196d727a35ca7c9d9cef250c60f7d5b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53926846"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55018068"
 ---
 # <a name="providing-automation-for-vspackages"></a>為 VSPackage 提供自動化
 有兩個主要的方式，可讓您的 Vspackage： 藉由實作 VSPackage 特有的物件，並藉由實作標準 automation 物件。 一般而言，這些一起用來擴充 automation 模型的環境。  

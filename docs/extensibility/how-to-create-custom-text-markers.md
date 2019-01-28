@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 6e32ed81-c604-4a32-9012-8db3bec7c846
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1c8389788504a49bc9a4962c89ed47500a1dc7da
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 93128e22d3bb70a0ff9cfb9b5b56e8c4e7c463f5
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53965213"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55030388"
 ---
 # <a name="how-to-create-custom-text-markers"></a>HOW TO：建立自訂文字標記
 如果您想要建立自訂文字標記，以強調或組織程式碼，您必須採取下列步驟：  
@@ -32,7 +32,7 @@ ms.locfileid: "53965213"
   
 1. 建立登錄項目，如下所示：  
   
-    **Hkey_local_machine\software\microsoft\visualstudio \\\\<版本 > \Text Editor\External 標記\\\<MarkerGUID >**  
+    **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\\<Version>\Text Editor\External Markers\\\<MarkerGUID>**  
   
     *\<MarkerGUID >* 是`GUID`用來識別要加入標記  
   

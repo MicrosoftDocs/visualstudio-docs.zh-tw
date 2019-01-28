@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: eb7a348e-a7f5-4f25-be68-80482d5482a8
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b9e06e8199e9cfe0c259b190817bf4b244b2727c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8c942de7697d34e288e0deca28b7f0c2626e62fe
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53820169"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55007554"
 ---
 # <a name="idebugfunctionposition2getfunctionname"></a>IDebugFunctionPosition2::GetFunctionName
 取得此位置指向函式的名稱。  

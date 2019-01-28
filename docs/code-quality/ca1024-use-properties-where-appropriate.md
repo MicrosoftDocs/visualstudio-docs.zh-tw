@@ -12,18 +12,18 @@ helpviewer_keywords:
 ms.assetid: 3a04f765-af7c-4872-87ad-9cc29e8e657f
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 54465448514f2c8b726fbc1c49b64c4ddc641ee7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0cc51a046e2b02375f719d5407c2cbaf714dc78c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53904912"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54984362"
 ---
 # <a name="ca1024-use-properties-where-appropriate"></a>CA1024:建議在適當時使用屬性
 

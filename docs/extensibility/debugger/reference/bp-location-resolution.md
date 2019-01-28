@@ -1,5 +1,5 @@
 ---
-title: BP_LOCATION_RESOLUTION |Microsoft Docs
+title: BP_LOCATION_RESOLUTION | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 86ea2c8a-54a3-48e8-83c7-18a515273129
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5bfee3974e97f6eacf3ea506c36c120035390c76
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 56a990c13699d31b06396d0a762abda68e409c49
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53885368"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54997972"
 ---
 # <a name="bplocationresolution"></a>BP_LOCATION_RESOLUTION
 描述的特定位置的中斷點解析。  

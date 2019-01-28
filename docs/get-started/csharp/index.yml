@@ -1,18 +1,18 @@
 ### YamlMime:YamlDocument
-ms.openlocfilehash: f65c4c6ea5ed255f40467839e5fa41c879d422f2
-ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
+ms.openlocfilehash: 7da3e8111a16a8003331de0c388805c459cefa07
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54204316"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55014065"
 documentType: LandingData
-title: Visual Studio | C#
+title: Visual Studio 教學課程 | C#
 metadata:
   title: 使用 Visual Studio 進行 C# 開發 | Microsoft Docs
   description: 關於使用 Visual Studio 開發 C# 應用程式的教學課程和概念性文章。
   ms.custom: seodec18
   author: ghogen
-  manager: douge
+  manager: jillfra
   ms.prod: visual-studio-dev15
   ms.technology: vs-acquisition
   ms.topic: landing-page
@@ -20,6 +20,8 @@ metadata:
   ms.author: ghogen
   dev_langs:
   - CSharp
+abstract:
+  description: 本頁面包含初學者教學課程的連結，供學習如何以 Visual Studio 建立 C# 應用程式之用。 如需完整的 Visual Studio 文件，請參閱 <a href="/visualstudio/ide/">Visual Studio</a>。 如需 C# 語言文件，請參閱 <a href="/dotnet/csharp">C# 指南</a>。
 sections:
 - title: 開始使用
   items:

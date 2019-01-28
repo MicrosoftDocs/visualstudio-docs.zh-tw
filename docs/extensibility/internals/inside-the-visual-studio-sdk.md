@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 9118eaa4-0453-4dc5-9e16-c7062d254869
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f356fe21f512ae1fabb51df3ab562b067a692665
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c386fb7f9fb57abccf7d7bc3c9cec900a65d883a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53821141"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54978265"
 ---
 # <a name="inside-the-visual-studio-sdk"></a>深入探索 Visual Studio SDK
 本節提供有關 Visual Studio 擴充功能，包括 Visual Studio 架構、 元件、 服務、 結構描述、 公用程式，以及類似的深入資訊。
@@ -102,7 +102,7 @@ ms.locfileid: "53821141"
 ## <a name="properties-and-options"></a>屬性和選項
  **屬性**視窗會顯示單一或多個選取的項目屬性：[擴充屬性](../../extensibility/internals/extending-properties.md)選項 頁面包含屬於特定的元件，例如程式設計語言或 VSPackage 選項組：[選項和選項頁](../../extensibility/internals/options-and-options-pages.md)。 這是通常與 UI 相關的功能，可以匯入和匯出設定：[支援使用者設定](../../extensibility/internals/support-for-user-settings.md)。
 
-## <a name="visual-studio-services"></a>Visual Studio 服務
+## <a name="visual-studio-services"></a>Visual Studio Services
  服務提供一組特定的元件使用的介面。 Visual Studio 提供一組可供任何元件，包括擴充功能的服務。 例如，Visual Studio 服務可讓工具視窗，顯示或隱藏起來，以動態方式啟用 Help、 狀態列或使用者介面事件的存取。 Visual Studio 編輯器也提供服務，可以匯入的編輯器延伸模組。 如需詳細資訊，請參閱 <<c0> [ 使用和提供服務](../../extensibility/using-and-providing-services.md)。
 
 ## <a name="debugger"></a>偵錯工具

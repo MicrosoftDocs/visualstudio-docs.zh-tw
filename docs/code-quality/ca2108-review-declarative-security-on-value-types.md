@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: d62bffdd-3826-4d52-a708-1c646c5d48c2
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c62704a99e5952c313c4ba11a71fd234070d6df8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: cb7795b2e1cdcdf8d32578396bb879f4573a45e8
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53882230"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55003276"
 ---
 # <a name="ca2108-review-declarative-security-on-value-types"></a>CA2108:必須檢閱實值類型上的宣告式安全性
 

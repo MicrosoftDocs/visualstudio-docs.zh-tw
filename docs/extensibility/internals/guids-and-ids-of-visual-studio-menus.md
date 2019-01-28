@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 84639d86-dd21-4b35-9988-6bb654162488
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3c2990e7002a75dfb5868a4079d889c08e49c3c3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 227803e5eb1108079651271823efb615e4b473cd
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53906939"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54982893"
 ---
 # <a name="guids-and-ids-of-visual-studio-menus"></a>Visual Studio 識別碼和 Guid 功能表
 這篇文章會列舉的 GUID 和 ID 值的功能表和 Visual Studio 功能表列上的群組。 這些值會定義於 *.vsct*安裝為 Visual Studio SDK 的一部分的檔案。 如需詳細資訊，請參閱 < [IDE 定義的命令、 功能表和群組](../../extensibility/internals/ide-defined-commands-menus-and-groups.md)。  
@@ -87,7 +87,7 @@ ms.locfileid: "53906939"
 |復原/取消復原|IDG_VS_EDIT_UNDOREDO|  
 |剪下/複製/貼上|IDG_VS_EDIT_CUTCOPY|  
 |選用版|IDG_VS_EDIT_SELECT|  
-|移至|IDG_VS_EDIT_GOTO|  
+|GoTo|IDG_VS_EDIT_GOTO|  
 |Find|IDG_VS_EDIT_FIND|  
 |物件|IDG_VS_EDIT_OBJECTS|  
 |OLE 指令動詞|IDG_VS_EDIT_OLEVERBS|  

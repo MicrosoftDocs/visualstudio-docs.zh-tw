@@ -1,5 +1,5 @@
 ---
-title: IDebugStackFrame2::GetExpressionContext |Microsoft Docs
+title: IDebugStackFrame2::GetExpressionContext | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: a2604e6a-502d-473b-868f-b11ac64c7a35
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 856d9b8b12388628bde73d15d0af51a86dcf96c9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c7a4c89861f22d1dd7df1f5a19ed7f5f3b192daf
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53830913"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55020135"
 ---
 # <a name="idebugstackframe2getexpressioncontext"></a>IDebugStackFrame2::GetExpressionContext
 取得目前的內容中的運算式評估的堆疊框架和執行緒評估內容。  

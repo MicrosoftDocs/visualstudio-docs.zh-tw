@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 724eb24b-b87c-4971-a2e7-adee7afc03b2
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 95eff5fee76b755ba30d6ec5b74d990b2b250f72
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3d84b8b6b186887fe9add71d5e70ac007e3157ab
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54800952"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54934201"
 ---
 # <a name="list-of-available-services"></a>可用服務清單
 

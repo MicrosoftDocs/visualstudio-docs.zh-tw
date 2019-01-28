@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 97c38622-ae0b-4ae0-90ed-604072c298d3
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dc86bda0bb0e9acf8c9ebb3fd248afd0fca4023c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6191d680a262cf76d38faf3a548cc2abb7fcacc0
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53861484"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54983049"
 ---
 # <a name="legacy-language-service-features"></a>舊版語言服務功能
 下列主題將列出一些您可以提供舊版語言服務功能。  

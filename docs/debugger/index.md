@@ -6,13 +6,13 @@ ms.custom: seodec18
 ms.topic: landing-page
 ms.author: mikejo
 author: mikejo5000
-manager: douge
-ms.openlocfilehash: 79a3aa8fd2d86b7c64d719dc745138b970b92d3c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 93117ddabe3184d5e1900b68f058a7a5f3dba711
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53886633"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55030505"
 ---
 # <a name="debugging-in-visual-studio"></a>Visual Studio 偵錯
 
@@ -48,7 +48,7 @@ Visual Studio 偵錯工具協助您觀察程式的執行階段行為，並找出
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>撰寫 Bug 更少的 C# 程式碼！</h3>
+                        <h3>偵錯技術和工具</h3>
                     </div>
                 </div>
             </div>

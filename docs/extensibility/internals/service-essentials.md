@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: fbe84ad9-efe1-48b1-aba3-b50b90424d47
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3428deeaf0e9cdc2aa926f5b1ff17b5030540f2b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a72dfb519e35cb0bec94fb73d112e0bff27b0b14
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53867273"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55027954"
 ---
 # <a name="service-essentials"></a>服務的基本資訊
 服務是兩個的 Vspackage 之間的合約。 一個 VSPackage 提供一組特定的介面使用的另一個 VSPackage。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 本身是提供服務給其他 Vspackage 的 Vspackage 集合。  
@@ -89,7 +89,7 @@ ms.locfileid: "53867273"
     End If
     ```  
     
-    此程式碼會取得 SVsActivityLog 服務，並將它轉換成 IVsActivityLog 介面，可用來寫入活動記錄檔。 如需範例，請參閱[How to:使用活動記錄](../../extensibility/how-to-use-the-activity-log.md)。  
+    此程式碼會取得 SVsActivityLog 服務，並將它轉換成 IVsActivityLog 介面，可用來寫入活動記錄檔。 如需範例，請參閱[如何：使用活動記錄](../../extensibility/how-to-use-the-activity-log.md)。  
   
 ## <a name="see-also"></a>另請參閱  
  [可用服務清單](../../extensibility/internals/list-of-available-services.md)   

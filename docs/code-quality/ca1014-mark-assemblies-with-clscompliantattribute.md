@@ -12,19 +12,19 @@ helpviewer_keywords:
 ms.assetid: 4fe57449-cf45-4745-bcd2-6345f1ed266d
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CPP
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 273eee55db6ea9c8cbd57573da1ec82a804a21d2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3c97d7731cc3bbad98ce5b62346bab1b7d5029ea
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53940027"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54986640"
 ---
 # <a name="ca1014-mark-assemblies-with-clscompliantattribute"></a>CA1014:組件必須標記 CLSCompliantAttribute
 

@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 9a3f5b83-60b5-4ef0-91fe-a432105bd066
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 50c9ce5079f15c945c963f530997d9bbc333bc42
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 631ccf0b9bd48278318c857e5b6011898bac72ae
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53832605"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55014597"
 ---
 # <a name="attach-to-the-program"></a>附加至程式
 您已向適當的連接埠中的程式之後，您必須在您想要偵錯的程式附加偵錯工具。  

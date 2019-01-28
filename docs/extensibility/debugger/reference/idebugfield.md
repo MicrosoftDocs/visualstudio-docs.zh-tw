@@ -1,5 +1,5 @@
 ---
-title: IDebugField |Microsoft Docs
+title: IDebugField | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: adecdd1c-b1b9-4027-92da-74cbe910636f
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ab18508a7b79361b85c459066a9e083d77983d7a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e1b4b7f27bbecd71fa5a99e942d5f1b75e983c0d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53848083"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55002475"
 ---
 # <a name="idebugfield"></a>IDebugField
 這個介面表示的欄位，也就是符號或類型的描述。  

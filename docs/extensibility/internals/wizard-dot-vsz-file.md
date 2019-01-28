@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 72e1d0f3-eef1-455e-b803-96827f030f50
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c66665fa927cbd1f7c2f704467750c6c943eb467
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b1bd68e9d647f9a44eaa8b975995f2d7de3d9640
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53898186"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55013983"
 ---
 # <a name="wizard-vsz-file"></a>精靈檔 (.Vsz)
 
@@ -40,7 +40,7 @@ Param="WIZARDUI = FALSE"
 |----------|-----------------|
 |VSWizard|在檔案中的第一個參數是範本的檔案格式的版本號碼。 6.0、 7.0、 7.1 或 8.0，必須是此版本號碼。 其他數字無法啟動，而且會導致不正確的格式錯誤。|
 |精靈|此欄位會包含 OLE ProgID 的精靈中，或者 cocreated ide 在精靈的 CLSID 的 GUID 字串表示。|
-|Param|這些組件是選擇性的。 您可以新增所需數目。|
+|參數|這些組件是選擇性的。 您可以新增所需數目。|
 
 參數可讓將額外的自訂參數傳遞給精靈.vsz 檔案。 每個值被當做 variant 的陣列中的字串項目精靈。 如需詳細資訊，請參閱 <<c0> [ 自訂參數](../../extensibility/internals/custom-parameters.md)。
 

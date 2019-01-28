@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: fd6070ab-07d4-4ea1-8d71-b16592d6f1a7
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 56c35ca77a5b6529ba61bc89697d6ed6b91284fe
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7de2f405febc6731cb31613a7462491d1fbbe1df
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53963187"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54946512"
 ---
 # <a name="idebugfunctionobjectcreatestringobject"></a>IDebugFunctionObject::CreateStringObject
 建立字串物件。  

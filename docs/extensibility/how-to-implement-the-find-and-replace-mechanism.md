@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: bbd348db-3d19-42eb-99a2-3e808528c0ca
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e3847b9125109cd48b458d06cbfc41fa91b7139f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9d803e074970e2827f7e644d29d12e4df920d7c4
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53943021"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55027512"
 ---
 # <a name="how-to-implement-the-find-and-replace-mechanism"></a>HOW TO：實作尋找和取代機制
 

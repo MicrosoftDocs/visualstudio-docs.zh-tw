@@ -8,15 +8,15 @@ f1_keywords:
 ms.assetid: 241fb784-1f6b-46e5-8ceb-c438e341d38e
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 785c31d3d6d58215936e69d0c8034be955c9afd7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8bfc3cebb0d90d0400f1b5dbd1c9ba6bab266563
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53899885"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55014090"
 ---
 # <a name="ca2146-types-must-be-at-least-as-critical-as-their-base-types-and-interfaces"></a>CA2146:類型至少必須和基底類型與介面一樣關鍵
 

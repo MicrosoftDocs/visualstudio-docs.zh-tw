@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 8f8fa0ee-e94e-400e-b516-24d8727725d7
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d234fe466395b5267c18eae9aa14d855d58abe2a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a3b0cb900b2a59e2c52ca2f00ee1573116dc5fe5
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53860841"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55029683"
 ---
 # <a name="ca2109-review-visible-event-handlers"></a>CA2109:必須檢閱可見的事件處理常式
 
