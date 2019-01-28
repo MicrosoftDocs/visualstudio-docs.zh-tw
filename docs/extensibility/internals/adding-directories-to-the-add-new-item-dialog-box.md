@@ -50,7 +50,7 @@ NoRemove Projects
  `SortPriority`值指定排序的優先順序。  
   
 ## <a name="add-items-to-an-existing-project"></a>將項目加入至現有的專案  
- 您也可以在現有的專案中加入項目。 例如，對於[!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]專案中，您可以將項目加入*\<根 > \Program Files\Microsoft Visual Studio\VC #\CSharpProjectItems\LocalProjectItems*資料夾。 在此情況下，`%GUID_Project%`是 C# 專案 ({FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}) 的 GUID。  
+ 您也可以在現有的專案中加入項目。 例如，對於[!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]專案中，您可以將項目加入 *\<根 > \Program Files\Microsoft Visual Studio\VC #\CSharpProjectItems\LocalProjectItems* 資料夾。 在此情況下，`%GUID_Project%`是 C# 專案 ({FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}) 的 GUID。  
   
  您也可以程式設計專案子類型，以擴充現有的專案。 與專案子類型，您可以擴充專案，而不需要撰寫新的專案類型。 如需有關專案子類型的詳細資訊，請參閱[專案子類型](../../extensibility/internals/project-subtypes.md)。  
   
