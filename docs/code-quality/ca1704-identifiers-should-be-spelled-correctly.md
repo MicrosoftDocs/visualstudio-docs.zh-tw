@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: f2c7a44d-1690-44ca-9cd0-681b04b12b2a
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c39f744556968ff279b3e3e7e9eb923ec069ebc
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: cfb91c830239a61b3f7f7e58364ae41c87152321
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53954405"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54935653"
 ---
 # <a name="ca1704-identifiers-should-be-spelled-correctly"></a>CA1704:識別項應該使用正確的拼字
 

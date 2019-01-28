@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: c19e3022-047c-43b6-a046-a82717efed4f
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e82ed0f65a8546cc16decce84c3cca01237694d0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: db9ffd8fa53b42092678075a68dbe655b8e7c653
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53898748"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54930839"
 ---
 # <a name="layout-for-visual-studio"></a>適用於 Visual Studio 的版面配置
 就大部分的 Visual Studio 對話方塊[公用程式對話方塊版面配置](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_UtilityDialogLayout)，這是 unthemed 對話方塊該遵循標準[Windows Desktop 對話方塊版面配置原則](/windows/desktop/uxguide/win-dialog-box)。 如 Visual Studio 會移到重新整理其 UI 中，一些更重要的對話方塊會有新的設計可建立它們，產品定義的體驗。 這些[佈景主題對話方塊版面配置](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_ThemedDialogLayout)具有佈景主題的外觀。  
