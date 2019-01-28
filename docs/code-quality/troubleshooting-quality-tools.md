@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 535b9e67-ce9e-4a3e-8d28-9365f257036e
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9627df92c6accaaf1eb3fd0ab78af2856d835c51
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b7fb0a08f82ff415e11903ccfc7bddc6516818a8
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53924835"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55017691"
 ---
 # <a name="troubleshooting-quality-tools"></a>品質工具疑難排解
 

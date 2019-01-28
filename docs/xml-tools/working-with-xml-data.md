@@ -5,15 +5,15 @@ ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ecd138ae1559f75880d343181a4d35b60394b42
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ea9df09ea51eca610f9d0b19056d0c116e2cd5cb
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53834553"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55016820"
 ---
 # <a name="working-with-xml-data"></a>使用 XML 資料
 

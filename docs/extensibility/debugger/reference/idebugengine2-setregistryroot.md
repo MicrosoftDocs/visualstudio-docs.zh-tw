@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: d0d81202-8a4a-4bc3-b297-30a047c5ec60
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ee67aac4941378e86fdea68e1ecc5045e87d4e81
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 91685a1cbc465612623370dac1699021e57eaa63
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53921979"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54938629"
 ---
 # <a name="idebugengine2setregistryroot"></a>IDebugEngine2::SetRegistryRoot
 設定偵錯引擎 (DE) 的登錄根目錄。  

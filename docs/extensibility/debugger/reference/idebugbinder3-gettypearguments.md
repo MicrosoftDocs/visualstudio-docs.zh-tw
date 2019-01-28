@@ -1,5 +1,5 @@
 ---
-title: IDebugBinder3::GetTypeArguments |Microsoft Docs
+title: IDebugBinder3::GetTypeArguments | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: fa0c37a7-327f-463e-9a9d-bb3f534584cb
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c0151814261df2f57289edbb564e691b50c3acfd
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a65c27e3ac175c0140b2484f9581642551b8b1ac
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53987923"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55007694"
 ---
 # <a name="idebugbinder3gettypearguments"></a>IDebugBinder3::GetTypeArguments
 這個方法會擷取與這個物件相關聯的引數類型的清單。  

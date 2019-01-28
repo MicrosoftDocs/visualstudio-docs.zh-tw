@@ -1,5 +1,5 @@
 ---
-title: MODULE_INFO_FIELDS |Microsoft Docs
+title: MODULE_INFO_FIELDS | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 8bed85f4-235f-4192-b58f-5fad7a4d7a78
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3687237849e39e1cba76a37ed6273e8cc39fccfd
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5d0b5e1423875bfa7834bd1340339ebab2a9e3b3
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53831481"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55040342"
 ---
 # <a name="moduleinfofields"></a>MODULE_INFO_FIELDS
 指定偵錯模組資訊旗標。  

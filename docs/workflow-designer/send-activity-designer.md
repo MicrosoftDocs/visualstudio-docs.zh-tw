@@ -8,15 +8,15 @@ f1_keywords:
 ms.assetid: b514f2e4-767c-4b94-ac61-dd3a54d4b96d
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 788884590054b29ae31df9c5ba2ca31ac0ea5c49
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 32d79ef9b17453995bee5979bc6ce6b065a7e9cb
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53954017"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55006017"
 ---
 # <a name="send-activity-designer"></a>Send 活動設計工具
 

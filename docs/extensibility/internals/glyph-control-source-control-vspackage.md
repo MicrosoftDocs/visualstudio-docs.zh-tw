@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: b9413b08-b3c3-4fc3-a6e0-3dc0db3652d7
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2e432e045a55593f0967c7805323785cfc6acaa7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0c0a7fdaf52402fdb6ecad705293e1984bb42013
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53870043"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54992603"
 ---
 # <a name="glyph-control-source-control-vspackage"></a>字符控制 （原始檔控制 VSPackage）
 加入原始檔控制 Vspackage 提供的深入整合的一部分是能夠顯示自己的字符，以指出原始檔控制下的項目狀態。  

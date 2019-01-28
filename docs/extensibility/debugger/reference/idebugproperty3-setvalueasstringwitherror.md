@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty3::SetValueAsStringWithError |Microsoft Docs
+title: IDebugProperty3::SetValueAsStringWithError | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: b378368f-4a45-4b2f-8e3d-3bff7a18ab17
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 91f027104019f18c1f20af574a8be602f8e9e983
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f015781b266c01a108aaea6a5e56e19d9ff5fd89
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53855662"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55020265"
 ---
 # <a name="idebugproperty3setvalueasstringwitherror"></a>IDebugProperty3::SetValueAsStringWithError
 設定這個屬性的值，並傳回錯誤訊息，如有必要。  

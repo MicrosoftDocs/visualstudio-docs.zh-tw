@@ -8,15 +8,15 @@ f1_keywords:
 ms.assetid: a09672e2-63cb-4abd-9e8f-dff515e101ce
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8053090802c77b310bc04d6e95be8d3c538a4cb9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bee0e9580bd7c22297e20b4ed304ff27a81bcefc
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53939780"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55023732"
 ---
 # <a name="ca2133-delegates-must-bind-to-methods-with-consistent-transparency"></a>CA2133:委派必須繫結至具有一致透明度的方法
 

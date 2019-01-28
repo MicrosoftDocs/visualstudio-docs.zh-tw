@@ -4,16 +4,16 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 41279e483e2ea752fd6cb573d7632f61a206003d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7343fe78ab83b2297f8427e973d1606e208964ab
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53841751"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55016157"
 ---
 # <a name="embed-a-diagram-in-a-windows-form"></a>在 Windows Form 中內嵌圖表
 

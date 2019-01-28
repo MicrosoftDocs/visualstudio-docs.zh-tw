@@ -6,15 +6,15 @@ ms.topic: reference
 ms.assetid: fd3fff31-cddc-422d-a2f0-a5a1ef492afd
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 85af563d9fb20b12785a410cf7df7e612d17dbee
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8dacb77d309725754409502a0136030c80505c71
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53941397"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55001195"
 ---
 # <a name="miscellaneous-xml-text-editor-options-dialog-box"></a>其他、 XML、 文字編輯器、 選項對話方塊
 

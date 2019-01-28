@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: afec3008-b1e0-4803-ad24-195dbfb6497e
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 81f17bf830a9d7566ad00b062d81edcd7e1a242a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6a2c3cf1a1a5ee17a3ecdb6ed6b097b3ff4dde18
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53913116"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54976702"
 ---
 # <a name="idebugdisassemblystream2seek"></a>IDebugDisassemblyStream2::Seek
 反組譯碼資料流指定數目的相對於指定位置的指示中移動讀取的指標。  
@@ -56,7 +56,7 @@ int Seek( 
  [in]將相對於位置中指定的指令數目`dwSeekStart`。 這個值可以是負數以向後移動。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`。 傳回`S_FALSE`如果搜尋位置是要提供的指示清單以外的點。 反之則傳回錯誤碼。  
+ 如果成功，會傳回 `S_OK`。 傳回`S_FALSE`如果搜尋位置是要提供的指示清單以外的點。 反之則傳回錯誤碼。  
   
 ## <a name="remarks"></a>備註  
  如果搜尋到清單的開頭之前的位置，會將讀取的位置設在清單中的第一個指令。 時，請參閱至位置清單的結尾之後，讀取的位置設定的最後一個指示清單中。  

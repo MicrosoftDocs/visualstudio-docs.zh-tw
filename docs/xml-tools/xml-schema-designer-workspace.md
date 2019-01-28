@@ -6,15 +6,15 @@ ms.topic: conceptual
 ms.assetid: 588fa495-fe7f-4b16-8a9f-6b6b8d2d502a
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cbedf6454ae97ee97d29d836dd8f8012fb6ca222
-ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
+ms.openlocfilehash: 8a64e31b2534c120d8810c97870cf3e2466cc30e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/14/2019
-ms.locfileid: "54269146"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55001221"
 ---
 # <a name="xml-schema-designer-workspace"></a>XML 結構描述設計工具工作區
 

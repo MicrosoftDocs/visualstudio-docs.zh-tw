@@ -1,5 +1,5 @@
 ---
-title: MACHINE_INFO_FIELDS |Microsoft Docs
+title: MACHINE_INFO_FIELDS | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 2d61d206-7d40-4df1-8c88-1b3c9c78821e
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 27feb8a47d28569d05afca46d2d773ba855976e2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 76e3adb36cd0465413c60f70fed1f989937d7a45
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53830176"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55021006"
 ---
 # <a name="machineinfofields"></a>MACHINE_INFO_FIELDS
 指定要擷取特定電腦的資訊種類。  

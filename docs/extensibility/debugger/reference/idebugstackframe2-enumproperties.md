@@ -1,5 +1,5 @@
 ---
-title: IDebugStackFrame2::EnumProperties |Microsoft Docs
+title: IDebugStackFrame2::EnumProperties | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 334bb95e-c7e0-4008-9f06-8c3999e47ee8
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 62be5aceeae9df198b07969c7d44c0927b5d4825
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6a997db37aa980afe1d4eb3bd2728017b6276e23
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53986332"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54999362"
 ---
 # <a name="idebugstackframe2enumproperties"></a>IDebugStackFrame2::EnumProperties
 建立堆疊框架，例如本機變數與相關聯屬性的列舉值。  

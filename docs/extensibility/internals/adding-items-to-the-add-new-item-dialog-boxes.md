@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 2f70863b-425b-4e65-86b4-d6a898e29dc7
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d447090585a2314899bb2d6246c6fb450a9e767d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ef91cc3d3bcec479fd6619662d40fbfeffb82131
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53956045"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54989948"
 ---
 # <a name="add-items-to-the-add-new-item-dialog-box"></a>將項目新增至 [加入新項目] 對話方塊
 加入項目至的程序**加入新項目**對話方塊開頭的登錄機碼。 下列登錄項目中所示**AddItemTemplates**一節包含可在哪一個項目中的目錄名稱與路徑**加入新項目**放 對話方塊。  
@@ -38,8 +38,8 @@ ms.locfileid: "53956045"
 
 | 名稱 | 類型 | 資料 (從 *.rgs*檔案) | 描述 |
 |------------------|-----------| - | - |
-| @ （預設值） | REG_SZ | #%IDS_ADDITEM_TEMPLATES_ENTRY % | 資源識別碼**加入項目**範本。 |
-| Val TemplatesDir | REG_SZ | %Template_path\\&lt;SomeProjectItems&gt; | 在對話方塊中顯示的專案項目路徑**加入新項目**精靈。 |
+| @ （預設值） | REG_SZ | #%IDS_ADDITEM_TEMPLATES_ENTRY% | 資源識別碼**加入項目**範本。 |
+| Val TemplatesDir | REG_SZ | %TEMPLATE_PATH%\\&lt;SomeProjectItems&gt; | 在對話方塊中顯示的專案項目路徑**加入新項目**精靈。 |
 | Val SortPriority | REG_DWORD | 100 ([!INCLUDE[vcprx64](../../extensibility/internals/includes/vcprx64_md.md)]) | 判斷樹狀節點中顯示的檔案中的排序次序**加入新項目** 對話方塊。 |
 
 > [!NOTE]

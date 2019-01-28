@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: bc7d0a81-0df5-41a9-a912-1b30e5da1d13
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8306eb62317807913aa0d23e19b6fb5adc4dfa53
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ba9f4123b69a2decbcc46433e85082a4897b378d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53961951"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54999466"
 ---
 # <a name="visual-studio-template-manifest-schema-reference"></a>Visual Studio 範本資訊清單結構描述參考
 此結構描述會描述 Visual Studio 範本資訊清單的格式 (*.vstman*) Visual Studio 專案或項目範本所產生的檔案。 結構描述也會說明的位置和範本的其他相關資訊。  
@@ -51,7 +51,7 @@ ms.locfileid: "53961951"
   
 -   **RelativePathOnDisk**:在磁碟上的範本檔案的相對路徑。 此位置也會定義範本的位置在範本樹狀目錄中所示**新的專案**或是**新項目**對話方塊。 如需部署為目錄和個別檔案的範本，此路徑會參考包含範本檔案的目錄。 針對做為部署範本 *.zip*檔案，這個路徑應該是路徑 *.zip*檔案。  
   
--   * * VSTemplateHeader:A [TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)描述標頭的項目。  
+-   **VSTemplateHeader:A [TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)描述標頭的項目。  
   
 ### <a name="parent-element"></a>父項目  
  **VSTemplateManifest**  

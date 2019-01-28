@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 586da5dc-f678-402b-afd0-0332959fd7a6
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d8864c7b3e5bd43de58032daf88a947cd4082c0e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: aeb08af2edeea8650303b8e954bc7d3b42ef2641
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53822329"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55012244"
 ---
 # <a name="create-custom-project-and-item-templates"></a>建立自訂專案和項目範本
 

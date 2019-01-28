@@ -6,15 +6,15 @@ ms.topic: reference
 ms.assetid: 631f0daf-1d42-4c90-a7dc-1a6a9de64c93
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: cc1b57bed4ec910b1b06cc8efb5a80d0fa2fdc5a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 937a41f6d308e9c3ff8a99f925cd75c95c17fb24
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53933633"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55012478"
 ---
 # <a name="basic-correctness-rules-rule-set-for-managed-code"></a>適用於 Managed 程式碼的基本正確性規則規則集
 基本正確性規則規則集著重於邏輯錯誤和架構 Api 的使用方式中的常見錯誤。 基本正確性規則中的最小建議規則規則集包含的規則。 如需詳細資訊，請參閱 < [managed 程式碼的 Managed 建議規則規則集](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md)您應該包含這個規則集來展開上的最小建議規則報告的警告清單。
@@ -88,24 +88,24 @@ ms.locfileid: "53933633"
 |[CA1008](../code-quality/ca1008-enums-should-have-zero-value.md)|列舉值中應該要有值為零的成員|
 |[CA1013](../code-quality/ca1013-overload-operator-equals-on-overloading-add-and-subtract.md)|多載加號和減號運算子時必須一併多載等號比較運算子|
 |[CA1303](../code-quality/ca1303-do-not-pass-literals-as-localized-parameters.md)|不要將常值當作已當地語系化的參數傳遞|
-|[CA1308 必須](../code-quality/ca1308-normalize-strings-to-uppercase.md)|必須將字串標準化為大寫字母|
+|[CA1308](../code-quality/ca1308-normalize-strings-to-uppercase.md)|必須將字串標準化為大寫字母|
 |[CA1806](../code-quality/ca1806-do-not-ignore-method-results.md)|不要忽略方法的結果|
 |[CA1816](../code-quality/ca1816-call-gc-suppressfinalize-correctly.md)|正確呼叫 GC.SuppressFinalize|
 |[CA1819](../code-quality/ca1819-properties-should-not-return-arrays.md)|屬性不應該傳回陣列|
-|[CA1820 應該](../code-quality/ca1820-test-for-empty-strings-using-string-length.md)|應該使用字串長度測試空白字串|
+|[CA1820](../code-quality/ca1820-test-for-empty-strings-using-string-length.md)|應該使用字串長度測試空白字串|
 |[CA1903](../code-quality/ca1903-use-only-api-from-targeted-framework.md)|只使用來自目標架構的 API|
-|[CA2004 必須](../code-quality/ca2004-remove-calls-to-gc-keepalive.md)|必須移除對 GC.KeepAlive 的呼叫|
+|[CA2004](../code-quality/ca2004-remove-calls-to-gc-keepalive.md)|必須移除對 GC.KeepAlive 的呼叫|
 |[CA2006](../code-quality/ca2006-use-safehandle-to-encapsulate-native-resources.md)|必須使用 SafeHandle 封裝原生資源|
 |[CA2102](../code-quality/ca2102-catch-non-clscompliant-exceptions-in-general-handlers.md)|必須使用一般處理常式攔截非 CLSCompliant 例外狀況|
 |[CA2104](../code-quality/ca2104-do-not-declare-read-only-mutable-reference-types.md)|不要宣告唯讀的可變動參考類型|
 |[CA2105](../code-quality/ca2105-array-fields-should-not-be-read-only.md)|陣列欄位不應該為唯讀|
-|[CA2106 必須](../code-quality/ca2106-secure-asserts.md)|必須保護判斷提示|
+|[CA2106](../code-quality/ca2106-secure-asserts.md)|必須保護判斷提示|
 |[CA2115](../code-quality/ca2115-call-gc-keepalive-when-using-native-resources.md)|使用原生資源時必須呼叫 GC.KeepAlive|
 |[CA2119](../code-quality/ca2119-seal-methods-that-satisfy-private-interfaces.md)|密封方法以滿足私用介面的要求|
-|[CA2120 必須](../code-quality/ca2120-secure-serialization-constructors.md)|必須保護序列化建構函式|
+|[CA2120](../code-quality/ca2120-secure-serialization-constructors.md)|必須保護序列化建構函式|
 |[CA2121](../code-quality/ca2121-static-constructors-should-be-private.md)|靜態建構函式應該為私用的|
 |[CA2130](../code-quality/ca2130-security-critical-constants-should-be-transparent.md)|安全性關鍵常數應該是透明的|
-|[CA2205 必須](../code-quality/ca2205-use-managed-equivalents-of-win32-api.md)|必須使用 Win32 API 的受控對應項|
+|[CA2205](../code-quality/ca2205-use-managed-equivalents-of-win32-api.md)|必須使用 Win32 API 的受控對應項|
 |[CA2215](../code-quality/ca2215-dispose-methods-should-call-base-class-dispose.md)|Dispose 方法應該呼叫基底類別處置|
 |[CA2221](../code-quality/ca2221-finalizers-should-be-protected.md)|Finalizer 方法應該為 protected|
 |[CA2222](../code-quality/ca2222-do-not-decrease-inherited-member-visibility.md)|不要降低繼承成員的可視性|
@@ -113,4 +113,4 @@ ms.locfileid: "53933633"
 |[CA2224](../code-quality/ca2224-override-equals-on-overloading-operator-equals.md)|多載等號比較運算子時必須一併覆寫 Equals|
 |[CA2226](../code-quality/ca2226-operators-should-have-symmetrical-overloads.md)|運算子應該有對稱的多載|
 |[CA2227](../code-quality/ca2227-collection-properties-should-be-read-only.md)|集合屬性應該為唯讀|
-|[CA2239 必須](../code-quality/ca2239-provide-deserialization-methods-for-optional-fields.md)|必須為選擇性欄位提供還原序列化方法|
+|[CA2239](../code-quality/ca2239-provide-deserialization-methods-for-optional-fields.md)|必須為選擇性欄位提供還原序列化方法|

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 94bfce74-aa3d-45f0-8e04-5715faf85217
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 25dec8aa273d9b5fa89ce557d95cac181f2fe6de
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 186bc68fcf208c1b1f3d4d69915882336bf0efaf
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53929842"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54993854"
 ---
 # <a name="idebugcustomattributequery2enumcustomattributes"></a>IDebugCustomAttributeQuery2::EnumCustomAttributes
 取得附加至這個欄位的所有自訂屬性的列舉值。  

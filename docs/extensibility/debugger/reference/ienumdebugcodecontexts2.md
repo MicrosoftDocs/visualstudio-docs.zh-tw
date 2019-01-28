@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugCodeContexts2 |Microsoft Docs
+title: IEnumDebugCodeContexts2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 72915146-215f-4c99-a034-131b2b474e0e
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 198b184059b267bf3ab1879365cb1c0b58321e7d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 75765f714bd52d7e7b01eca15e451152ceba54a7
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53937122"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54980579"
 ---
 # <a name="ienumdebugcodecontexts2"></a>IEnumDebugCodeContexts2
 此介面列舉與偵錯工作階段中，或特定的程式或文件相關聯的程式碼內容。  

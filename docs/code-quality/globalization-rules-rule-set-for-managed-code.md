@@ -6,15 +6,15 @@ ms.topic: reference
 ms.assetid: 3c4032ee-0805-4581-8c48-b1827cd6b213
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a0c0eb4edfb58d740692f2afff187659a665b234
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3dea6c153196223f91726eaaedcace4f62c2868c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53936980"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55015260"
 ---
 # <a name="globalization-rules-rule-set-for-managed-code"></a>適用於 Managed 程式碼的全球化規則規則集
 您可以使用 Microsoft 全球化規則規則集將焦點放在可能會導致資料不會正確出現在不同的語言、 地區設定中和文化特性的應用程式中的問題。 您應該包含這個規則集如果當地語系化您的應用程式，全球化，或兩者。
@@ -29,6 +29,6 @@ ms.locfileid: "53936980"
 |[CA1305](../code-quality/ca1305-specify-iformatprovider.md)|必須指定 IFormatProvider|
 |[CA1306](../code-quality/ca1306-set-locale-for-data-types.md)|必須設定資料類型的地區設定|
 |[CA1307](../code-quality/ca1307-specify-stringcomparison.md)|必須指定 StringComparison|
-|[CA1308 必須](../code-quality/ca1308-normalize-strings-to-uppercase.md)|必須將字串標準化為大寫字母|
+|[CA1308](../code-quality/ca1308-normalize-strings-to-uppercase.md)|必須將字串標準化為大寫字母|
 |[CA1309](../code-quality/ca1309-use-ordinal-stringcomparison.md)|使用循序的 StringComparison|
 |[CA2101](../code-quality/ca2101-specify-marshaling-for-p-invoke-string-arguments.md)|必須指定 P/Invoke 字串引數的封送處理|

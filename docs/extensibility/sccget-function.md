@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 09a18bd2-b788-411a-9da6-067d806e46f6
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 089b0f56292dfdeb56eb770a5cec5abf6c0d6b82
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c8cff11ca46924b84c61f45fb5c11993313bff9d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53869410"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54993737"
 ---
 # <a name="sccget-function"></a>SccGet 函式
 此函式會擷取一或多個檔案，來檢視和編譯，但不是用於編輯的複本。 在大部分的系統中，檔案會標記為唯讀。  
@@ -48,7 +48,7 @@ SCCRTN SccGet(
  lpFileNames  
  [in]要擷取檔案的完整名稱的陣列。  
   
- Stored  
+ fOptions  
  [in]命令旗標 (`SCC_GET_ALL`， `SCC_GET_RECURSIVE`)。  
   
  pvOptions  

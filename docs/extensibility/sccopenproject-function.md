@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: d609510b-660a-46d7-b93d-2406df20434d
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4fde4a8e59fb64e12b78eacc14406fdf5020b64f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f404bf595c1dad1dfd5bc9b7fbc4f6b184fa4f41
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53856471"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55029703"
 ---
 # <a name="sccopenproject-function"></a>SccOpenProject 函式
 此函式會開啟現有的原始檔控制專案，或建立新的。  

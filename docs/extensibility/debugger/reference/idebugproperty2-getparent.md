@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty2::GetParent |Microsoft Docs
+title: IDebugProperty2::GetParent | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 58780469-fe25-4d84-9187-67940ca0767f
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1ebe6f4e4e00f514b38d7263130ce8b36c1ae05f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1db6acb0f60dac726717ebaccae0837e620dd9ce
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53887236"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54991459"
 ---
 # <a name="idebugproperty2getparent"></a>IDebugProperty2::GetParent
 取得屬性的父屬性。  

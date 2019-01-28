@@ -6,15 +6,15 @@ ms.topic: conceptual
 ms.assetid: ff33b3cc-4db9-4b4e-9378-b45ed5999b18
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9e9f004943474f9b1c0fb449c1aec23f70034c3a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 114a7dbd8056f2e102d574a2c7f19742fceaea2d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53875030"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55020837"
 ---
 # <a name="how-to-add-schema-set-search-result-nodes-to-the-workspace"></a>HOW TO：結構描述集合搜尋結果節點新增至工作區
 

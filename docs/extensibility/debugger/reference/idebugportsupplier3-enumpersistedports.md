@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 1c3dead3-5d6c-4067-8418-4015f0b0dd07
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7c29e53df99c019f0b50a1dcd13c7c74280025ad
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4bb7d89128ce5c2002d38f18bf7b93f74817191b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53876938"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54985311"
 ---
 # <a name="idebugportsupplier3enumpersistedports"></a>IDebugPortSupplier3::EnumPersistedPorts
 這個方法會擷取物件，可讓持續性的連接埠清單的列舉型別。  

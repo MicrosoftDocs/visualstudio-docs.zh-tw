@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 2203e4e7-8b7f-44ec-8884-6ff718d4f278
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 84d1d409c86f018cb0c661a6a6bb36ccc1911d11
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e73d021e89ea59ada88e79ce3235e7f08f75b10f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53966484"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54983998"
 ---
 # <a name="font-and-color-overview"></a>字型和色彩的概觀
 本主題討論中的文字字型和色彩設定[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]整合式的開發環境 (IDE)。 它也會介紹的概念類別和顯示項目，並說明如何在 Vspackage 和核心編輯器使用文字屬性。  

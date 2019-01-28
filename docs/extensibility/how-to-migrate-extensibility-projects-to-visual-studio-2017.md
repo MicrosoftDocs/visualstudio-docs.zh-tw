@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 8ca07b00-a3ff-40ab-b647-c0a93b55e86a
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 22fdb969112278fafb636e0162db4ebc93b9a657
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3726ee6995e770d89e5916a922c0546439c3ba14
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53820406"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54953506"
 ---
 # <a name="how-to-migrate-extensibility-projects-to-visual-studio-2017"></a>HOW TO：將擴充性專案移轉至 Visual Studio 2017
 
@@ -98,13 +98,13 @@ ms.locfileid: "53820406"
 
   ![新增 roslyn 必要條件](media/add-roslyn-prerequisite.png)
 
-* 按下**確定**。
+* 按 [確定]。
 
 ## <a name="update-debug-settings-for-the-project"></a>更新專案的偵錯設定
 
 如果您想要偵錯您的 Visual Studio 的實驗執行個體的延伸模組，請確定專案設定，如**偵錯** > **起始動作**具有**啟動外部程式：** 值設定為*devenv.exe* Visual Studio 2017 安裝的檔案。
 
-它可能如下：*C:\Program 檔案 (x86) \Microsoft Visual Studio\2017\Enterprise\Common7\IDE\devenv.exe*
+它可能如下：*C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\devenv.exe*
 
 ![啟動外部程式](media/start-external-program.png)
 
@@ -175,7 +175,7 @@ WPF | Managed 桌面工作負載核心 | Microsoft.VisualStudio.Component.Manage
 
 如果您不確定哪些元件包含特定的二進位檔，請下載[元件]-> [二進位對應試算表](https://aka.ms/vs2017componentid-binaries)。
 
-### <a name="vs2017-componentbinarymappingxlsx"></a>vs2017 ComponentBinaryMapping.xlsx
+### <a name="vs2017-componentbinarymappingxlsx"></a>vs2017-ComponentBinaryMapping.xlsx
 
 在 Excel 工作表中有四個資料行：**元件名稱**， **ComponentId**，**版本**，和**二進位檔名 /**。  您可以使用篩選來搜尋及尋找特定元件和二進位檔。
 

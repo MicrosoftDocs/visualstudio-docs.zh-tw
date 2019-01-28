@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 404a71d5-cce5-44e7-9eaf-d747c794fedb
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f60a47180a95c7609f784a2d0a03b51d0d4a7a6b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c1195299ae63ddb2e14d36fffe79bbc06b909072
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53874121"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55003041"
 ---
 # <a name="add-an-attribute-to-a-project-item"></a>將屬性加入專案項目
 方法<xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.GetItemAttribute%2A>和<xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetItemAttribute%2A>取得和設定的專案項目屬性的值。 SetItemAttribute 建立屬性如果已經存在，將它新增至專案項目中繼資料。  

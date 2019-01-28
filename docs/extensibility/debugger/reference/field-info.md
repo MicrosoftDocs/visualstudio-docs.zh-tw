@@ -1,5 +1,5 @@
 ---
-title: FIELD_INFO |Microsoft Docs
+title: FIELD_INFO | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: bfafef6d-0c83-43d7-a779-1f0d24b166a1
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d473c153b2487f2063e965cbcc3818befc1e2aa5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 85d84c88f0b16d1b58e2bd1d85e5ca6b000dc125
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53896522"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54986003"
 ---
 # <a name="fieldinfo"></a>FIELD_INFO
 此結構描述的本機變數、 參數或其他欄位。  

@@ -6,15 +6,15 @@ ms.topic: conceptual
 ms.assetid: 07fa3ecf-6345-4d30-9d85-d5ef5b083319
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d5fc57c894c1e3a616062f01cc46103b4714fa35
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8ee170d42390ed04292be28740dde4d597b7f7d9
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53849041"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55005402"
 ---
 # <a name="how-to-edit-xml-files"></a>HOW TO：編輯 XML 檔案
 

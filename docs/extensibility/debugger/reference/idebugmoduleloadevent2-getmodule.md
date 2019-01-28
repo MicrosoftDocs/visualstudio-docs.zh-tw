@@ -1,5 +1,5 @@
 ---
-title: IDebugModuleLoadEvent2::GetModule |Microsoft Docs
+title: IDebugModuleLoadEvent2::GetModule | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: c86482bb-9ce5-4e63-bbe0-969b50169424
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f1b9170db806ac4b501d6acf7ad66f90be6aea75
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 88a3ff6ae5416ff4c734ab4cf88bacb4cfa5d494
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53892857"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55007607"
 ---
 # <a name="idebugmoduleloadevent2getmodule"></a>IDebugModuleLoadEvent2::GetModule
 取得模組，正在載入或卸載。  

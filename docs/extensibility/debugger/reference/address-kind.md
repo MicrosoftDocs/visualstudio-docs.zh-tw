@@ -1,5 +1,5 @@
 ---
-title: ADDRESS_KIND |Microsoft Docs
+title: ADDRESS_KIND | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 3a12fbec-7088-4cf9-8f6f-ad8ddec6009a
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 65e4c103884da28bedfd221e26b159e9e8f98e55
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 635602117eac80aacd8c78ef6a30de905877a550
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53867419"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54983140"
 ---
 # <a name="addresskind"></a>ADDRESS_KIND
 指定位址的類型。  

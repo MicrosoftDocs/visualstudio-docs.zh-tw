@@ -6,15 +6,15 @@ ms.topic: conceptual
 ms.assetid: 2fc39e98-b194-456b-a452-cfafb0a52d66
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 37733ddb09fb726c5407888af91db2bc32713799
-ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
+ms.openlocfilehash: ddbe303d9045c279a820073befaf7195cbccd76f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/14/2019
-ms.locfileid: "54268496"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55020486"
 ---
 # <a name="xml-schema-explorer"></a>XML 結構描述總管
 

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: de069fbf-a565-4905-b102-f5658c55aacd
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5415a79b3c371f89b215f65c54f371eeb0319ead
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 00a5f71a5283640f79079f4117471d0e5e3d42f6
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53947617"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55025679"
 ---
 # <a name="idebugprogram2attach"></a>IDebugProgram2::Attach
 將附加至程式。  

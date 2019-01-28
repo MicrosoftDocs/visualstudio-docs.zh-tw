@@ -1,5 +1,5 @@
 ---
-title: IDebugObject::SetValue |Microsoft Docs
+title: IDebugObject::SetValue | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: d652e09c-cdc1-4519-8116-d7c743f5679b
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1a3e2166818de87ea2322cd7155c76c3f3209aef
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4ba9b3983f3d6cab2525c391153457d362d2ad05
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53938299"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55038392"
 ---
 # <a name="idebugobjectsetvalue"></a>IDebugObject::SetValue
 設定物件的值從一系列連續的位元組。  

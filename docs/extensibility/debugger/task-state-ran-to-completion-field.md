@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 0f4830af-fe0c-4141-b768-817f4e426b8c
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d4af0b4a2b3ef106aeb57e88440638d2b4a4c904
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ea3a68237b82873cc4c6646957832beb8880dcac
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53830738"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55001369"
 ---
 # <a name="taskstaterantocompletion-field"></a>TASK_STATE_RAN_TO_COMPLETION 欄位
 工作已成功完成執行。  

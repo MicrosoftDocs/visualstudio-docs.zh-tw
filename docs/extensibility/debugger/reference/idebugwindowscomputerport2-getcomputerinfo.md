@@ -1,5 +1,5 @@
 ---
-title: IDebugWindowsComputerPort2::GetComputerInfo |Microsoft Docs
+title: IDebugWindowsComputerPort2::GetComputerInfo | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 654910b2-c239-44c8-92fc-317680a5672f
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b0bfdacaf6740b689a98e3eef0b3f40152d387c9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 26912ccf11b70bc7f8f0dfb1c710b739c83d8a22
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53941254"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55004912"
 ---
 # <a name="idebugwindowscomputerport2getcomputerinfo"></a>IDebugWindowsComputerPort2::GetComputerInfo
 擷取電腦的相關資訊的偵錯工具中執行。  

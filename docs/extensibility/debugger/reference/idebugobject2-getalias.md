@@ -1,5 +1,5 @@
 ---
-title: IDebugObject2::GetAlias |Microsoft Docs
+title: IDebugObject2::GetAlias | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: aa6824d5-c932-42ba-8713-950e7d1fb42f
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 756f1249fc2adad9cdfa217c3f8fdd05eaa945d1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2cf429563914aef006ec6eda31903ebfce6ca9b8
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53889747"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55028396"
 ---
 # <a name="idebugobject2getalias"></a>IDebugObject2::GetAlias
 如果有的話，請取得與這個物件相關聯的別名。  

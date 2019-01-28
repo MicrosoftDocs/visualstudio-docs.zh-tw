@@ -1,5 +1,5 @@
 ---
-title: IDebugProcess2::GetPhysicalProcessId |Microsoft Docs
+title: IDebugProcess2::GetPhysicalProcessId | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 77da6e10-75af-4308-97dd-c44416ca52d7
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 428f71b386f36a4a16de08128fc1858bfc5ec0e2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 700e00f0d607c06492c36d4dafb91cc7ce7a5956
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53908445"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55025523"
 ---
 # <a name="idebugprocess2getphysicalprocessid"></a>IDebugProcess2::GetPhysicalProcessId
 取得系統處理序識別碼。  
