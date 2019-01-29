@@ -1,8 +1,6 @@
 ---
-title: 如何： 搜尋在 [Windows] 檢視視窗 |Microsoft Docs
-ms.custom: ''
+title: HOW TO：搜尋在 [Windows] 檢視視窗 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - windows, searching in Windows view
@@ -12,14 +10,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c187c3a4b8086b5b991f7288f2686d6010e79262
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 317b815595d6e7bca820b730a2761113e588dded
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49927394"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "53837062"
 ---
-# <a name="how-to-search-for-a-window-in-windows-view"></a>如何：在視窗檢視中搜尋視窗
+# <a name="how-to-search-for-a-window-in-windows-view"></a>HOW TO：在視窗檢視中搜尋視窗
 您可以使用其控制代碼、 標題、 類別或其標題和類別的組合做為搜尋準則，搜尋 Windows 檢視在特定時間範圍。 您也可以指定搜尋的初始方向。 在對話方塊中的欄位會顯示在視窗樹狀目錄中的選取視窗的屬性。  
   
  開始使用第二個層級 (所有 windows 桌面的子系)，展開樹狀結構，讓您可以識別層級的桌面視窗中，其類別名稱和標題。 一旦您已選擇桌面層級的視窗，您可以展開該層次，以尋找特定的子視窗。  

@@ -1,8 +1,6 @@
 ---
 title: 建立自訂的資料視覺化檢視 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/07/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.visualizer.troubleshoot
@@ -21,14 +19,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4c5f505bfa8032b0f7d59f348835e1e4969b2648
-ms.sourcegitcommit: 6a955a2d179cd0e137942389f940d9fcbbe125de
-ms.translationtype: MT
+ms.openlocfilehash: 9bb693e509eb12b01d3c70f8f341b39de06e5797
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51607818"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54204384"
 ---
-# <a name="create-custom-data-visualizers"></a>建立自訂的資料視覺化檢視 
+# <a name="create-custom-data-visualizers"></a>建立自訂的資料視覺化檢視
  A*視覺化檢視*屬於[!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]適用於其資料類型的方式顯示變數或物件的偵錯工具使用者介面。 例如，HTML 視覺化檢視會解譯 HTML 字串，並顯示結果，就會出現在瀏覽器視窗中。 而點陣圖視覺化檢視會解譯點陣圖結構，並顯示它所代表的圖形。 有些視覺化檢視可讓您修改，以及檢視資料。
 
  [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] 偵錯工具包含六個標準視覺化檢視。 文字、 HTML、 XML 及 JSON 視覺化檢視作用於字串物件。 WPF 樹狀架構視覺化檢視會顯示 WPF 物件視覺化樹狀結構的屬性。 資料集視覺化檢視適用於資料集、 DataView 和 DataTable 物件。 
@@ -42,13 +40,13 @@ ms.locfileid: "51607818"
  > [!NOTE]
  > 若要建立原生程式碼的自訂視覺化檢視，請參閱[SQLite 原生偵錯工具視覺化檢視](https://github.com/Microsoft/VSSDK-Extensibility-Samples/tree/master/SqliteVisualizer)範例。 UWP 和 Windows 8.x 應用程式不支援自訂視覺化檢視。
 
-您可以撰寫自訂視覺化檢視物件的任何受管理的類別，除了<xref:System.Object>和<xref:System.Array>。  
+您可以為任何受控類別的物件撰寫自訂視覺化檢視，除了 <xref:System.Object> 和 <xref:System.Array> 以外。  
   
 偵錯工具視覺化檢視的架構分為兩部分：  
   
 - *偵錯工具端*執行 Visual Studio 偵錯工具中，會建立並顯示視覺化檢視使用者介面。  
   
-- *偵錯項目端*Visual Studio 偵錯處理序內執行 (*偵錯項目*)。 偵錯項目處理序中，有要以視覺化方式檢視 （例如，字串物件） 的資料物件。 在偵錯項目端會將物件傳送至偵錯工具端，以顯示您所建立的使用者介面中。  
+- 「偵錯項目端」會在 Visual Studio 正在偵錯的處理序 (亦即「偵錯項目」) 中執行。 偵錯項目處理序中，有要以視覺化方式檢視 （例如，字串物件） 的資料物件。 在偵錯項目端會將物件傳送至偵錯工具端，以顯示您所建立的使用者介面中。  
 
 偵錯工具端接收資料物件從*物件提供者*可實<xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider>介面。 在偵錯項目端會傳送物件，可透過*物件來源*，其係衍生自<xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource>。 
 
@@ -84,9 +82,9 @@ ms.locfileid: "51607818"
   
 ## <a name="see-also"></a>另請參閱
   
- [逐步解說：使用 C# 撰寫視覺化檢視](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)  
+ [逐步解說：以 C# 撰寫視覺化檢視](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)  
 
- [逐步解說：使用 Visual Basic 撰寫視覺化檢視](../debugger/walkthrough-writing-a-visualizer-in-visual-basic.md)  
+ [逐步解說：以 Visual Basic 撰寫視覺化檢視](../debugger/walkthrough-writing-a-visualizer-in-visual-basic.md)  
   
  [如何：安裝視覺化檢視](../debugger/how-to-install-a-visualizer.md)  
   
@@ -94,4 +92,4 @@ ms.locfileid: "51607818"
   
  [視覺化檢視 API 參考](../debugger/visualizer-api-reference.md)  
   
- [在 偵錯工具中檢視資料](../debugger/viewing-data-in-the-debugger.md)
+ [在偵錯工具中檢視資料](../debugger/viewing-data-in-the-debugger.md)

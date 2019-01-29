@@ -1,8 +1,6 @@
 ---
 title: ClickOnce 和 Authenticode |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bc0018533f089c2be3d0a94093bf41deadd9a74e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 2fe73ba2ef02ecf6f9eb75663650862fd78fea1c
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49907439"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "53859142"
 ---
 # <a name="clickonce-and-authenticode"></a>ClickOnce 和 Authenticode
 *Authenticode* 是 Microsoft 技術，使用業界標準密碼編譯簽署有數位憑證的應用程式程式碼，以確認應用程式發行者真偽。 使用 Authenticode 部署應用程式， [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 可以降低特洛伊木馬程式的風險。 特洛伊木馬程式是誤以為來自於已建立、可信任來源的合法程式，其實是惡意第三方的病毒或其他有害的程式。 使用數位憑證簽署 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 部署是選擇性的步驟，用以確認組件和檔案未遭竄改。  
@@ -35,7 +33,7 @@ ms.locfileid: "49907439"
 ## <a name="authenticode-and-code-signing"></a>Authenticode 與程式碼簽署  
  *數位憑證* 是包含密碼編譯公用/私密金鑰組的檔案，以及描述憑證發行對象與憑證發行單位的發行者中繼資料。  
   
- Authenticode 憑證有各種類型。 每種都有專門針對的簽章類型。 若為 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式，您必須擁有可有效簽署程式碼的 Authenticode 憑證。 若嘗試使用另一種憑證類型簽署 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式，例如數位電子郵件憑證，它會無法運作。 如需詳細資訊，請參閱 <<c0> [ 程式碼簽署簡介](http://go.microsoft.com/fwlink/?LinkId=179452)。  
+ Authenticode 憑證有各種類型。 每種都有專門針對的簽章類型。 若為 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式，您必須擁有可有效簽署程式碼的 Authenticode 憑證。 若嘗試使用另一種憑證類型簽署 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式，例如數位電子郵件憑證，它會無法運作。 如需詳細資訊，請參閱 [Introduction to Code Signing](http://go.microsoft.com/fwlink/?LinkId=179452) (程式碼簽署簡介)。  
   
  有三種方法可以取得程式碼簽署憑證︰  
   
@@ -55,7 +53,7 @@ ms.locfileid: "49907439"
 ### <a name="timestamps"></a>時間戳記  
  簽署 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式所用的憑證會在一定時間後過期，通常是十二個月。 為免經常需要使用新憑證重新簽署應用程式， [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 支援時間戳記。 使用時間戳記簽署應用程式後，只要時間戳記有效，憑證即使到期仍被接受。 這可讓使用過期憑證，但時間戳記有效的 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式，能夠下載並執行。 它也允許使用過期憑證的已安裝應用程式，能夠繼續下載並安裝更新。  
   
- 若要在應用程式伺服器中包含時間戳記，必須有可用的時間戳記伺服器。 如需如何選取時間戳記伺服器的資訊，請參閱 [How to: Sign Application and Deployment Manifests](../ide/how-to-sign-application-and-deployment-manifests.md)。  
+ 若要在應用程式伺服器中包含時間戳記，必須有可用的時間戳記伺服器。 如需有關如何選取時間戳記伺服器的資訊，請參閱[How to:簽署應用程式與部署資訊清單](../ide/how-to-sign-application-and-deployment-manifests.md)。  
   
 ### <a name="update-expired-certificates"></a>更新過期的憑證  
  在舊版的 .NET Framework 中，更新憑證已過期的應用程式可能會導致應用程式停止運作。 為解決此問題，請使用下列其中一種方法：  
@@ -68,7 +66,7 @@ ms.locfileid: "49907439"
   
 ### <a name="store-certificates"></a>儲存憑證  
   
-- 您可以儲存為憑證 *.pfx*檔案在您的檔案系統，或者您可以將它們儲存在金鑰容器內。 Windows 網域的使用者可以有多個金鑰容器。 根據預設， *MakeCert.exe*將憑證儲存在您個人的金鑰容器，除非您另外指定，它應該將它儲存到 *.pfx*改。 *Mage.exe*並*MageUI.exe*，則[!INCLUDE[winsdkshort](../debugger/debug-interface-access/includes/winsdkshort_md.md)]的工具來建立[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]部署，讓您使用以任一方式儲存的憑證。  
+- 您可以將憑證儲存為檔案系統的 *.pfx* 檔，或儲存在金鑰容器內。 Windows 網域的使用者可以有多個金鑰容器。 *MakeCert.exe* 預設將憑證儲存在您個人的金鑰容器中，除非您另行指定，才會改儲存為 *.pfx*。 *Mage.exe* 和 *MageUI.exe* 是建立 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 部署的 [!INCLUDE[winsdkshort](../debugger/debug-interface-access/includes/winsdkshort_md.md)] 工具，可讓您使用以任一方式儲存的憑證。  
   
 ## <a name="see-also"></a>另請參閱  
  [ClickOnce 安全性和部署](../deployment/clickonce-security-and-deployment.md)   
