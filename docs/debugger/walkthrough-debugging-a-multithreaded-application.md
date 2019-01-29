@@ -23,26 +23,26 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e3b2ed9001d1096dca82a30dab29a67b9e962354
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: d9759b988e592b122866701b398eec55aedd8e95
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53946158"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54228015"
 ---
-# <a name="view-threads-in-the-visual-studio-debugger-by-using-the-threads-window"></a>在 Visual Studio 偵錯工具中使用 [執行緒] 視窗中檢視往來文章
+# <a name="view-threads-in-the-visual-studio-debugger-by-using-the-threads-window-c-visual-basic-c"></a>在 Visual Studio 偵錯工具中檢視往來文章，使用 [執行緒] 視窗 (C#，Visual Basic、 c + +)
 在 [**執行緒**] 視窗中，您可以檢查及使用您要偵錯應用程式中的執行緒。 如需如何使用的逐步指引**執行緒** 視窗中，請參閱[逐步解說：使用 [執行緒] 視窗進行偵錯](../debugger/how-to-use-the-threads-window.md)。
 
 ## <a name="use-the-threads-window"></a>使用執行緒視窗 
  **執行緒**視窗包含的資料表，其中每個資料列描述您的應用程式中的個別執行緒。 這份表格預設會列出應用程式中的所有執行緒，但是您可以篩選清單，只顯示您感興趣的執行緒。 每個資料行描述不同類型的資訊。 您也可以隱藏部分資料行。 如果您顯示所有資料行時，下列資料行出現，請從左到右：  
   
-- **旗標**在此未標記的專欄中，您可以將標記您要特別注意的執行緒。 如需如何在執行緒的旗標的資訊，請參閱[How to:將執行緒加上旗標和取消旗標](../debugger/how-to-flag-and-unflag-threads.md)  
+- **旗標**在此未標記的專欄中，您可以將標記您要特別注意的執行緒。 如需如何在執行緒的旗標的資訊，請參閱[How to:將執行緒加上旗標和取消旗標  
   
-- 目前的執行緒此未加上標籤的資料行中的黃色箭號表示目前的執行緒。 箭號外框表示非目前執行緒的目前偵錯工具內容。
+- -   目前的執行緒此未加上標籤的資料行中的黃色箭號表示目前的執行緒。 箭號外框表示非目前執行緒的目前偵錯工具內容。
   
 - **ID**顯示每個執行緒的識別碼。  
   
-- Managed ID會顯示 managed 執行緒的 managed 的識別碼。  
+- -   受控識別碼會顯示 managed 執行緒的 managed 的識別碼。  
   
 - **分類**.為使用者介面執行緒、 遠端程序呼叫處理常式或背景工作執行緒顯示執行緒的類別。 特殊分類表示應用程式的主要執行緒。  
   
@@ -50,13 +50,13 @@ ms.locfileid: "53946158"
   
 - **location**：顯示執行緒正在執行。 您可以展開這個位置，以顯示執行緒的整個呼叫堆疊。  
   
-- 優先權（預設為隱藏） 的進階資料行，顯示 優先順序 或 系統指派給每個執行緒的優先順序。  
+- -   優先權（預設為隱藏） 的進階資料行，顯示 優先順序 或 系統指派給每個執行緒的優先順序。  
   
-- 關連遮罩（預設為隱藏） 的進階資料行，其會顯示每個執行緒的處理器親和性遮罩。 在多處理器系統中，關連遮罩會決定可以執行執行緒的處理器。  
+- -   親和性遮罩（預設為隱藏） 的進階資料行，其會顯示每個執行緒的處理器親和性遮罩。 在多處理器系統中，關連遮罩會決定可以執行執行緒的處理器。  
   
-- 暫停計數進階 （預設為隱藏） 顯示之資料行暫停的計數。 這個計數決定是否可以執行執行緒。 如需暫停計數的詳細資訊，請參閱[凍結和解除凍結執行緒](#freeze-and-thaw-threads)。  
+- -   暫停計數進階 （預設為隱藏） 顯示之資料行暫停的計數。 這個計數決定是否可以執行執行緒。 如需暫停計數的詳細資訊，請參閱[凍結和解除凍結執行緒](#freeze-and-thaw-threads)。  
   
-- 處理序名稱（預設為隱藏） 的進階資料行，會顯示每個執行緒所屬的程序。 當您偵錯的許多程序，此資料行中的資料可以是很有用。  
+- -   處理序名稱（預設為隱藏） 的進階資料行，會顯示每個執行緒所屬的程序。 當您偵錯的許多程序，此資料行中的資料可以是很有用。  
 
 - 處理序 ID（預設為隱藏） 的進階資料行，會顯示每個執行緒所屬的處理序識別碼。 
 

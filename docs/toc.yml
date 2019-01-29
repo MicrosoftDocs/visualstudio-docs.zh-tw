@@ -1102,8 +1102,10 @@ items:
       href: ide/dotfuscator/upgrades.md
 - name: 資源
   items:
-  - name: Visual Studio 的新功能
-    href: ide/whats-new-visual-studio.md
+  - name: Visual Studio 2017 的新功能
+    href: ide/whats-new-visual-studio-2017.md
+  - name: Visual Studio 2019 Preview 的新功能
+    href: ide/whats-new-visual-studio-2019.md
   - name: 版本資訊與系統需求
     items:
     - name: 目前版本資訊
@@ -1144,9 +1146,10 @@ items:
     href: ide/reference/resources-for-troubleshooting-integrated-development-environment-errors.md
   - name: 告訴我們
     href: ide/talk-to-us.md
-ms.openlocfilehash: 240f0069093e2db2ed4bf74c88aed8d0244bb8c1
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+  expanded: true
+ms.openlocfilehash: 3734bd3e2955f1f2297ec9a63f92d2e617341142
+ms.sourcegitcommit: 447f2174bdecdd471d8a8e11c19554977db620a0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54834236"
+ms.lasthandoff: 01/28/2019
+ms.locfileid: "55089288"

@@ -1,5 +1,5 @@
 ---
-title: 逐步解說：建立 N-Tier 資料應用程式
+title: 逐步解說：建立多層式架構 (N-Tier) 資料應用程式
 ms.date: 09/08/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,17 +13,16 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 71c1c8dbaf34613d07ce29fa3f5e08d8e9c6961f
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
-ms.translationtype: MTE95
+ms.openlocfilehash: 2e224ae331b1fba42d06973777b50e84bf1f7e8b
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52305696"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "53924263"
 ---
-# <a name="walkthrough-create-an-n-tier-data-application"></a>逐步解說： 建立 n-tier 資料應用程式
+# <a name="walkthrough-create-an-n-tier-data-application"></a>逐步解說：建立多層式架構 (N-Tier) 資料應用程式
 「多層式架構」(N-tier) 資料應用程式是可存取資料而且分成多個邏輯層或「層級」(tier) 的應用程式。 將應用程式元件分成離散層級，可增加應用程式的可維護性和延展性。 原因是可以更輕鬆地採用套用至單一層級的新技術，而且您不需要重新設計整個方案。 多層式架構包括呈現層、中介層和資料層。 中介層通常包括資料存取層、商務邏輯層和共用元件 (如驗證 (authentication) 和驗證 (validation))。 資料層包括關聯式資料庫。 多層式架構應用程式通常會將敏感性資訊儲存至中介層的資料存取層，以與存取呈現層的終端使用者隔離。 如需詳細資訊，請參閱 <<c0> [ 多層式架構資料應用程式概觀](../data-tools/n-tier-data-applications-overview.md)。
 
 其中一種在多層式架構應用程式中分為各種層級的方式，是針對您要併入應用程式中的每個層級建立離散專案。 具類型資料集所含的 `DataSet Project` 屬性可以決定所產生的資料集和 `TableAdapter` 程式碼應該進入的專案。
@@ -50,7 +49,7 @@ ms.locfileid: "52305696"
 
 -   撰寫程式碼以填入資料表。
 
-![影片連結](../data-tools/media/playvideo.gif)如本主題的影片版本，請參閱 <<c2> [ 影片-如何： 建立 n-tier 資料應用程式](http://go.microsoft.com/fwlink/?LinkId=115188)。
+![影片連結](../data-tools/media/playvideo.gif)如本主題的影片版本，請參閱[視訊 HOW TO：建立 N-Tier 資料應用程式](http://go.microsoft.com/fwlink/?LinkId=115188)。
 
 ## <a name="prerequisites"></a>必要條件
 本逐步解說會使用 SQL Server Express LocalDB 和 Northwind 範例資料庫。
@@ -106,7 +105,7 @@ ms.locfileid: "52305696"
  下一個步驟是建立具類型資料集。 這兩個資料集類別以建立具類型資料集 (包括`DataTables`類別) 和`TableAdapter`單一專案中的類別。 (所有類別都會產生到單一檔案)。當您將資料集和 Tableadapter 分成不同的專案時，就會移至另一個專案，讓資料集類別`TableAdapter`原始專案中的類別。 因此，最後會包含 Tableadapter （DataAccessTier 專案） 的專案中建立資料集。 使用建立資料集**資料來源組態精靈**。
 
 > [!NOTE]
-> 您必須具有 Northwind 範例資料庫的存取權，才能建立連接。 如需有關如何設定 Northwind 範例資料庫的資訊，請參閱 <<c0> [ 如何： 安裝範例資料庫](../data-tools/installing-database-systems-tools-and-samples.md)。
+> 您必須具有 Northwind 範例資料庫的存取權，才能建立連接。 如需有關如何設定 Northwind 範例資料庫的資訊，請參閱[How to:安裝範例資料庫](../data-tools/installing-database-systems-tools-and-samples.md)。
 
 ### <a name="to-create-the-dataset"></a>建立資料集
 
@@ -156,7 +155,7 @@ ms.locfileid: "52305696"
 
 5. 在 [建置] 功能表上，選取 [建置方案]。
 
-   資料集和 TableAdapter 會分隔到兩個類別庫專案。 原本包含整個資料集的專案 (`DataAccessTier`) 現在只會包含 Tableadapter。 中指定的專案**資料集 Project**屬性 (`DataEntityTier`) 包含具類型資料集： *NorthwindDataSet.Dataset.Designer.vb* (或*NorthwindDataSet.Dataset.Designer.cs*)。
+   資料集和 TableAdapter 會分隔到兩個類別庫專案。 原本包含整個資料集的專案 (`DataAccessTier`) 現在只會包含 Tableadapter。 中指定的專案**資料集 Project**屬性 (`DataEntityTier`) 包含具類型資料集：*NorthwindDataSet.Dataset.Designer.vb* (或*NorthwindDataSet.Dataset.Designer.cs*)。
 
 > [!NOTE]
 > 當您分隔資料集與 TableAdapter 時 (設定 [資料集專案] 屬性)，將不會自動移動專案中的現有部份資料集類別。 現有資料集部分類別必須手動移至資料集專案。

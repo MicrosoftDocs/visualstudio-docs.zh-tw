@@ -13,15 +13,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 875208d068c791c0238c110ea0e83b04e18348fc
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
-ms.translationtype: MT
+ms.openlocfilehash: 4e42058d2728d806551ae319112052e664950dab
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37117936"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "53863416"
 ---
 # <a name="upgrade-mdf-files"></a>升級 .mdf 檔案
 
@@ -63,17 +62,17 @@ ms.locfileid: "37117936"
 
 2.  在 **加入連接**對話方塊方塊中，指定下列資訊：
 
-    -   **資料來源**: `Microsoft SQL Server (SqlClient)`
+    -   **資料來源**：`Microsoft SQL Server (SqlClient)`
 
-    -   **伺服器名稱**:
+    -   **伺服器名稱**：
 
         -   若要使用的預設版本： `(localdb)\MSSQLLocalDB`。  這會指定 ProjectV12 或 ProjectV13，取決於已安裝的 Visual Studio 版本，並建立第一個的 LocalDB 執行個體時。 **MSSQLLocalDB**中的節點**SQL Server 物件總管**哪一個版本指向所示。
 
         -   若要使用特定版本：`(localdb)\ProjectsV12`或`(localdb)\ProjectsV13`，其中 V12 是 LocalDB 2014 而 V13 是 LocalDB 2016。
 
-    -   **附加資料庫檔案**： 主要的實體路徑 *.mdf*檔案。
+    -   **附加資料庫檔案**:主要的實體路徑 *.mdf*檔案。
 
-    -   **邏輯名稱**： 您想要使用與檔案的名稱。
+    -   邏輯名稱(&L):您想要使用的檔案名稱。
 
 3.  選取 [確定] 按鈕。
 

@@ -2,7 +2,6 @@
 title: 檢視暫存器值中偵錯工具 |Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/19/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.registers
@@ -25,16 +24,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 31d9b9a9243bdf5bd39ebddf90ffa0ea32b23072
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
-ms.translationtype: MTE95
+ms.openlocfilehash: 8622bb1288324429ad346834930559d1435ac6d5
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53058437"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "53867575"
 ---
 # <a name="view-register-values-in-the-registers-window-c-c-visual-basic-f"></a>檢視暫存器暫存器視窗中的值 (C#，c + +、 Visual Basic 中， F#)
 
-**註冊**視窗會顯示在 Visual Studio 偵錯期間暫存器內容。 暫存器的基本概念的高階簡介及**註冊** 視窗中，請參閱[偵錯基本概念：暫存器視窗](../debugger/debugging-basics-registers-window.md)。
+**註冊**視窗會顯示在 Visual Studio 偵錯期間暫存器內容。 暫存器的基本概念的高階簡介及**註冊** 視窗中，請參閱[偵錯基本概念： 暫存器視窗](../debugger/debugging-basics-registers-window.md)。
 
 > [!NOTE]
 > 無法使用的指令碼或 SQL 應用程式註冊資訊。
@@ -56,5 +55,5 @@ ms.locfileid: "53058437"
 
 ### <a name="see-also"></a>另請參閱
 
-- [偵錯的基本概念：暫存器視窗](../debugger/debugging-basics-registers-window.md)
+- [偵錯基本概念：暫存器視窗](../debugger/debugging-basics-registers-window.md)
 - [在偵錯工具中檢視資料](../debugger/viewing-data-in-the-debugger.md)
