@@ -8,13 +8,13 @@ helpviewer_keywords:
 - Visual Studio templates, customizing
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 8f52a948158ec4a48ee3c521c04c65f875156823
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 8ec3640b4ed194d246088a93453d28a6a94aa76d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53864526"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55011191"
 ---
 # <a name="customize-project-and-item-templates"></a>自訂專案和項目範本
 

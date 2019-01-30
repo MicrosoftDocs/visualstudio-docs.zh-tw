@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: ddc96c4c-0600-46c1-8267-7dce4c44ad24
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c8fa92644221149d3405eea25b1c85e229861e4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2ac057edf27661403185fb31e5ca9364c629bd38
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53906770"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54982412"
 ---
 # <a name="how-to-set-ide-accessibility-options"></a>HOW TO：設定 IDE 協助工具選項
 

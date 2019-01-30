@@ -6,15 +6,15 @@ ms.topic: conceptual
 ms.assetid: 0bd48bf4-9792-4456-a545-e462a2be668d
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 92e0ae391cb196053d136dc44a8e64758f485115
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b5b9b59386e9a17c200980ba246932bb990c1066
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53861445"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55024834"
 ---
 # <a name="how-to-export-a-shader"></a>HOW TO：匯出著色器
 

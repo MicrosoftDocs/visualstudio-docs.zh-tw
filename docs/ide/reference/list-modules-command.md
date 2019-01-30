@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 3cb73774-6ac0-43b2-b781-75ed47175bfd
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1d13fe40866f8c3baf7d47e17a98515ea8197dfe
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b9bf23375f4be979c8cd5ea5dd44913746840ce6
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53962645"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54972884"
 ---
 # <a name="list-modules-command"></a>列出模組命令
 列出目前處理序的模組。

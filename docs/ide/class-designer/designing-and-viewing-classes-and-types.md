@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 40ed2c9d-0ce0-4b95-ad78-5dec2065ccea
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6533827c3aa962cf8856752c0482678684e65755
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: be4e15b282e0f1c671731bfd1d7b10e25fd8deed
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53853420"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54958364"
 ---
 # <a name="design-and-view-classes-and-types-with-class-designer"></a>使用類別設計工具設計及檢視類別和類型
 

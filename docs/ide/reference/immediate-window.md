@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: d33e7937-73f3-4c69-9df0-777a8713c6f2
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 294a68ea3c36f47dad06d9104795b493661c40e9
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: 91f25f9ab44bee749283603b78744c9e01e4e469
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54097106"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54992629"
 ---
 # <a name="immediate-window"></a>即時運算視窗
 

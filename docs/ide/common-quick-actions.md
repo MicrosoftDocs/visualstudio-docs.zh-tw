@@ -5,18 +5,18 @@ ms.prod: visual-studio-dev15
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 0c2491ba0968f60f5e67e9829a19994b7d4cbe7d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 19284bb1b8a96443411226343bfd5ec08f0cff7c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53877441"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54955735"
 ---
 # <a name="common-quick-actions"></a>一般的快速動作
 

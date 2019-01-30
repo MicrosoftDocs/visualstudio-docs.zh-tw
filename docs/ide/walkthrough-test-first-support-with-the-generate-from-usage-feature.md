@@ -11,15 +11,15 @@ helpviewer_keywords:
 - Test-First Development
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c1ea4f3fe408643c3d1c15d33b5754d829e5145e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 115ffb5c22b45a8cdae1f404556d9aab3ed38bad
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53842933"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54964609"
 ---
 # <a name="walkthrough-test-first-development-with-the-generate-from-usage-feature"></a>逐步解說：以 [使用時產生] 功能進行測試優先開發
 

@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 4200f297-d065-4723-9a30-d91ff2e26c9d
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c3dca4a9eb34a950fe571db4da8c9c30d7f2a08b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 029b42cf4a1df9fdb2082e8202c0557827b0ba7a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53893509"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55020967"
 ---
 # <a name="quick-launch-environment-options-dialog-box"></a>選項對話方塊、環境、快速啟動
 

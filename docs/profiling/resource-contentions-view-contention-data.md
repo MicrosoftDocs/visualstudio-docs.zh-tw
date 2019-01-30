@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 14a7f774-211f-4ef8-af05-94d1c8f65d2f
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 662ae2c4b96320dda0d3f9f4efb350ed0e61be0f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 57fc5075ee375ed73b448e8a90e8bb2c3e22e7bf
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53870504"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54970808"
 ---
 # <a name="resource-contentions-view---contention-data"></a>資源爭用檢視 - 爭用資料
 資源爭用檢視列出爭用事件來源的資源爭用資料。 因為另一個執行緒中的函式已取得資源的獨佔存取權，所以會強制執行緒中的函式等候存取資源，而發生爭用事件。 每項資源都是呼叫樹狀圖的根節點，會顯示導致爭用事件的函式執行路徑。  

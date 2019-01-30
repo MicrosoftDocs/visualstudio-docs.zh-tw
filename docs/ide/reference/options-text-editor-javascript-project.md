@@ -11,15 +11,15 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.TypeScript.Project
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7be14c9953fed34e7bdd9507b6224875b1008a22
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.openlocfilehash: ff2fc32a173f1c05fc200c9acd9b37ad2307a3a3
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54350234"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55031808"
 ---
 # <a name="options-text-editor-javascript-project"></a>選項、文字編輯器、JavaScript、專案
 
@@ -37,7 +37,7 @@ ms.locfileid: "54350234"
 
 ## <a name="virtual-projects-in-solution-explorer"></a>[方案總管] 中的虛擬專案
 
-這些選項可讓您選擇是否要在載入或未載入解決方案時顯示虛擬專案。 
+這些選項可讓您選擇是否要在載入或未載入解決方案時顯示虛擬專案。
 
 ## <a name="compile-on-save"></a>儲存時編譯
 
@@ -64,7 +64,7 @@ ms.locfileid: "54350234"
 |選項|說明|
 |------------|-----------------|
 |**React 架構**|選取此選項後，程式碼編輯器會發出 *.js* 副檔名。|
-|**保留**|選取此選項時，程式碼編輯器會將 JSX 保留為輸出的一部分，並發出 *.jsx* 副檔名。|
+|**Preserve**|選取此選項時，程式碼編輯器會將 JSX 保留為輸出的一部分，並發出 *.jsx* 副檔名。|
 
 ## <a name="see-also"></a>另請參閱
 

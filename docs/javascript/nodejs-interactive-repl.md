@@ -6,17 +6,17 @@ ms.topic: conceptual
 ms.devlang: javascript
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: bdb5202f383a0e9145a03dae71e11894555f5e33
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: faed930c60869010f740cf0a1e118a40299ce782
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53926485"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54940670"
 ---
 # <a name="work-with-the-nodejs-interactive-window"></a>使用 Node.js 互動式視窗
 

@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 02085214-a8e4-40fd-9b26-32391a7a7082
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cf973c05e3ee70654fee1655591da11f54bc826b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ba235f98ce0c6f8016463c86635eff0c4178ff4f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53942849"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54992460"
 ---
 # <a name="getting-started-with-performance-tools"></a>效能工具使用者入門
 

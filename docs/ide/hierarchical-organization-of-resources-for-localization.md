@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: dadf8f2c-f74c-44d7-bec0-a1e956d8d38d
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dca07960458360ebec0dd0952125e92e2572ab34
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4df50f1336f235d50d7c897deb2450469f9128b8
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53965496"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55038600"
 ---
 # <a name="hierarchical-organization-of-resources-for-localization"></a>階層式組織當地語系化的資源
 

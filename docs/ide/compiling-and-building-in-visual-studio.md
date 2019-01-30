@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: c7958821-285f-4e28-9e7a-b5d8b40336a1
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7681ad9cd109dbc8da266721d9d8382d3552eda6
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.openlocfilehash: d091791a7ad5f7146aa6f916393e051388587dd7
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "53062589"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55023323"
 ---
 # <a name="compile-and-build-in-visual-studio"></a>在 Visual Studio 中編譯與建置
 

@@ -4,16 +4,16 @@ ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 71e5ae809cf2c42e032d8545f0007c61d97e7047
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a2c3ddb18e2414080b7d6354d1e04fc97275b12e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53842159"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55019407"
 ---
 # <a name="extend-coded-ui-tests-and-action-recordings"></a>擴充自動程式化 UI 測試和動作記錄
 

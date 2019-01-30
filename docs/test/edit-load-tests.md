@@ -8,14 +8,14 @@ helpviewer_keywords:
 ms.assetid: ba16ed02-137e-40bf-a4cb-45d87d922d37
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: a060d6fd038d3dfaf0c869aba2c660efba4c9ecd
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7a02db6fb91eb303a05a27b4f135445891098a7c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53933200"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54995670"
 ---
 # <a name="edit-load-tests"></a>編輯負載測試
 

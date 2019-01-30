@@ -6,15 +6,15 @@ ms.topic: conceptual
 ms.assetid: a0d97966-2df8-449b-a8cf-5a19684dc773
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aeff9ce5ad4085c77443775fccb82e0eb9e6739d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ecf050a6546c32b99b5f1c701428e69e26f22c80
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53929613"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55003408"
 ---
 # <a name="how-to-create-a-basic-3d-model"></a>HOW TO：建立基本 3D 模型
 

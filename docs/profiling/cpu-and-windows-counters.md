@@ -9,15 +9,15 @@ helpviewer_keywords:
 - CPU counters in Profiling Tools
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ddf173f39accb0bb9d2907349c82accdd4f21b40
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e63919a13a948f7e6be2d2789aa778bd39514e51
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53912632"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54950828"
 ---
 # <a name="cpu-and-windows-counters"></a>CPU 和 Windows 計數器
 

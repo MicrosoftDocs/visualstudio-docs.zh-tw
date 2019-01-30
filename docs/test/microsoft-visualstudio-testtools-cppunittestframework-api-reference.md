@@ -4,16 +4,16 @@ ms.date: 11/04/2017
 ms.prod: visual-studio-dev15
 ms.topic: reference
 ms.author: mblome
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 author: mikeblome
-ms.openlocfilehash: 33cfa33e28bc8bf76122bafd6de3fe1d5e48f6cb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1bb00b4ae7ff787a8349d5dc623cbd7adabbb5de
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53849949"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55000649"
 ---
 # <a name="microsoftvisualstudiotesttoolscppunittestframework-api-reference"></a>Microsoft.VisualStudio.TestTools.CppUnitTestFramework API 參考
 

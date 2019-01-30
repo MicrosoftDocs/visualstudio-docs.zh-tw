@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 2e9b28fe-3ed2-4e1d-b9cb-0a5e384380b0
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9bb2020ff396eef3dd9dad4c0ed2e2fd015e0fd6
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.openlocfilehash: 5338d9279e82c8675e00198ffe6fce252e31bd2f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "53838368"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54972452"
 ---
 # <a name="save-and-export-performance-tools-data"></a>儲存和匯出效能工具資料
 本文描述如何儲存和匯出效能資料檔案。  

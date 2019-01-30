@@ -7,15 +7,15 @@ helpviewer_keywords:
 - coded UI tests
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dbee9735922b680daad51a698b3e05ad54f31115
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9adcc03a66aa6359613f42dc4dd6ee67024185ea
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53949306"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54999726"
 ---
 # <a name="anatomy-of-a-coded-ui-test"></a>自動程式化 UI 測試的結構
 

@@ -6,18 +6,18 @@ ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: ea5a4d53302d19d11da819cac94bb620df3dab6f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b31a19a08473f71404395ac4d1694489253738b4
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53965745"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54991732"
 ---
 # <a name="publish-to-azure-app-service"></a>發佈至 Azure App Service
 

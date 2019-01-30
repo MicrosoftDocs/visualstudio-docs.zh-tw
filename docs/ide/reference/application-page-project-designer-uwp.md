@@ -9,15 +9,15 @@ helpviewer_keywords:
 - Application page [UWP project]
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 2808afab24fa4a78d881dd23cc2b1a8efa364b2a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4620f59c8997f310736d55082087a15921c24dee
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53898278"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54988931"
 ---
 # <a name="application-property-page-uwp-projects"></a>應用程式屬性頁 (UWP 專案)
 

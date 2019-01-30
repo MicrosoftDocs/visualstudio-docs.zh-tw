@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 6dde4a2d-85e1-4275-aa55-24b84111be91
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 251a78ebe56a9ba2c88444da879970c590ece029
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 490f7fcbe1a63fee9b44844de94e58cd0823aa46
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53917221"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55023154"
 ---
 # <a name="advanced-settings-for-services-dialog-box"></a>服務對話方塊的進階設定
 用戶端應用程式服務簡化了從 Windows Forms 和 Windows Presentation Foundation (WPF) 應用程式對 [!INCLUDE[ajax_current_short](../../ide/reference/includes/ajax_current_short_md.md)] 登入、角色和設定檔服務的存取。 您可以使用 [專案設計工具] 的 [服務] 頁面來設定用戶端應用程式服務。 如需 [服務] 頁面的詳細資訊，請參閱[專案設計工具、服務頁](../../ide/reference/services-page-project-designer.md)。

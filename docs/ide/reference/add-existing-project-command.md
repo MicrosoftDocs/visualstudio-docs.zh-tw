@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 71cf3e31-c76b-405b-ad6a-1b1bc654bd40
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a5b0579037d31cf88de32f4fabda531d92c1b61
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: cded9ecfa76114e43efa07c7bac5d5b0c314f91c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53880451"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54980046"
 ---
 # <a name="add-existing-project-command"></a>加入現有專案命令
 將現有專案新增至目前的方案。

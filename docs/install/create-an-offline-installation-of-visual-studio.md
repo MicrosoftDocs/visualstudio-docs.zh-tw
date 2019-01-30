@@ -12,15 +12,15 @@ f1_keywords:
 ms.assetid: f8625d5e-f6ea-4db0-83c0-619b77fab3cf
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7be6077d89ffc302ae556c94ed270f8cfd760c38
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.openlocfilehash: cbf0f68f090219aea8f3ddde31e697463f8e9ee3
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54345249"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55035519"
 ---
 # <a name="create-an-offline-installation-of-visual-studio-2017"></a>建立 Visual Studio 2017 的離線安裝
 

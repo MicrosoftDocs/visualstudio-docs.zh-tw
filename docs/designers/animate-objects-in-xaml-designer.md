@@ -6,15 +6,15 @@ ms.topic: conceptual
 ms.assetid: fb88fa26-e835-47f5-9771-2f279441c83c
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 312721cb47858d3c5462fcbee99289dbad526180
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f6fbeceeb0c9943e561c5bd4e353551005be23a4
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53941488"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54960200"
 ---
 # <a name="animate-objects-in-xaml-designer"></a>在 XAML 設計工具中製作物件動畫
 

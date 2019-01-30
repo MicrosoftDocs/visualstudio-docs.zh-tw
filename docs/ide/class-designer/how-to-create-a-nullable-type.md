@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 84673a89-3f6d-4668-919e-1c0f56182fe5
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 461bcef015169cfd9506d301111859b53fdce600
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2d21a032c100f2a76815e25a9d7c96aa4c071b62
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53953033"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54988333"
 ---
 # <a name="how-to-create-a-nullable-type-in-class-designer"></a>HOW TO：在類別設計工具中建立可為 Null 的型別
 

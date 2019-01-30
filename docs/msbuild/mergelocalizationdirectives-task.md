@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 9095b4f1-88da-4194-914b-ee1456826830
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 64f36cadc6ee33563f516703f3bc48e81558b8ec
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1b9b9f5a708abacecaf90a7de1d2a3e9ee231579
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53959907"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55016248"
 ---
 # <a name="mergelocalizationdirectives-task"></a>MergeLocalizationDirectives 工作
 <xref:Microsoft.Build.Tasks.Windows.MergeLocalizationDirectives> 工作會將一或多個 [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] 二進位格式檔案的當地語系化屬性和註解合併到適用於整個組件的單一檔案。  

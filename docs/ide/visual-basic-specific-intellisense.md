@@ -10,15 +10,15 @@ helpviewer_keywords:
 - IntelliSense [Visual Studio], Visual Basic
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e01c255a7e89298a2a4bd7548bab0b548520ceed
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9654d952d0d9ef7166c4a4f05930e91f4e8d9632
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53877886"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54978694"
 ---
 # <a name="intellisense-for-visual-basic-code-files"></a>Visual Basic 程式碼檔案的 IntelliSense
 

@@ -6,15 +6,15 @@ ms.topic: conceptual
 ms.assetid: 3071d6df-2b2f-4e95-ab68-bef727323136
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f44174f98c69f05cf7a0030e642dc9d9e065201
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 48db0eed985ec22f5a3032d6a601664723dca2ff
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53861646"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54931722"
 ---
 # <a name="tutorial-1-create-a-picture-viewer"></a>教學課程 1：建立圖片檢視器
 

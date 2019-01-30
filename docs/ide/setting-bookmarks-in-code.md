@@ -8,15 +8,15 @@ f1_keywords:
 ms.assetid: a752ed5f-5cf9-4bf2-865a-2131ca600ed5
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 72f1a9f6ba6732ee5815ae6df8ceefa4322b96b1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6d2b8532e71cd5448b4ea284fdbb36d0bc35738f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53940293"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54983010"
 ---
 # <a name="set-bookmarks-in-code"></a>在程式碼中設定書籤
 

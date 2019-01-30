@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 2253956e-3ae0-4bdc-9d3a-4881dfae4ddb
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0fab9dc76bf47dbe03388aaef56c85ca2fa5a7bf
-ms.sourcegitcommit: d0b02affd24e66efed924c197824f35f823e3240
+ms.openlocfilehash: 86e4c96d0b6f4f441d862ba76bf5fa1199a704d6
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/21/2019
-ms.locfileid: "54417898"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54997035"
 ---
 # <a name="property-functions"></a>屬性函式
 

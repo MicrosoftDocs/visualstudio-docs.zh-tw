@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: c9f8eea2-c964-485d-9ad0-55a4bf425ae7
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e489e462c043bb48c9ba0f59f39ce364bb8843d5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 66264af71d93bb83c217360668a14c5cae2bf812
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53895242"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54975942"
 ---
 # <a name="c-library-reference"></a>C++ 程式庫參考
 本節包含並行視覺化檢視 SDK 的參考資訊。  

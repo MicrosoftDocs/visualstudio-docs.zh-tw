@@ -7,17 +7,17 @@ ms.custom: get-started
 ms.topic: tutorial
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: ba7bb7452fd86da4ab449c61c41dc27c865070c3
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: 3ebc53148e40be1285c554526743c4950465c3a5
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53738987"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54983400"
 ---
 # <a name="learn-about-projects-and-solutions-using-c"></a>使用 C# 了解專案與解決方案
 
@@ -33,7 +33,7 @@ ms.locfileid: "53738987"
 
 ## <a name="solutions-and-projects"></a>方案和專案
 
-儘管名稱為方案，但其並非「解答」。 解決方案僅是 Visual Studio 用來組織一或多個相關專案的容器。 當您在 Visual Studio 中開啟解決方案時，會自動載入解決方案所包含的所有專案。
+儘管名稱為方案，但其並非「解答」。 解決方案僅是 Visual Studio 用來組織一或多個相關專案的容器。 當您在 Visual Studio 中開啟解決方案時，會自動載入解決方案包含的所有專案。
 
 ### <a name="create-a-solution"></a>建立解決方案
 

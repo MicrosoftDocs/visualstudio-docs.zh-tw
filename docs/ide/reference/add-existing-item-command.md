@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 41f56131-d4c7-4f81-83b7-bdac713ea870
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fd74b6af128ee8b624c022cbbf72c5de4edc7997
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: aaa9784b40b02ba726b1bcc4b82e0708223fb283
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53873985"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55039627"
 ---
 # <a name="add-existing-item-command"></a>加入現有項目命令
 將現有檔案新增至目前的方案，並開啟它。

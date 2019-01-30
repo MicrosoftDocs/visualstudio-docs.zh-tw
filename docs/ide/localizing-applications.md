@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 879c20e0-8301-4f44-b520-97283848c965
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bbde4f1afb539754708582ebfc85495e5de94e98
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 178b57862b3a1bc84520d88b7ec6775317f2f559
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53966845"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55026304"
 ---
 # <a name="localizing-applications"></a>當地語系化應用程式
 

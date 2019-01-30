@@ -6,16 +6,16 @@ ms.topic: conceptual
 helpviewer_keywords:
 - IntelliTest, Get started
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 41fd7b7b32a2e81ec2a217a54a6220cbafb38668
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fb7fc6049bd916c766651484da0c53b3aeccbe35
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53952870"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54929365"
 ---
 # <a name="get-started-with-microsoft-intellitest"></a>開始使用 Microsoft IntelliTest
 

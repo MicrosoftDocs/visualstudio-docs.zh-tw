@@ -5,7 +5,7 @@ description: 使用工作負載和元件識別碼透過命令列安裝 Visual St
 keywords: ''
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.date: 01/11/2019
 ms.topic: reference
 helpviewer_keywords:
@@ -18,12 +18,12 @@ ms.prod: visual-studio-dev15
 ms.assetid: 34e19ef1-abfb-44fd-aad2-33c5d7874482
 ms.workload:
 - multiple
-ms.openlocfilehash: e6df4435cf19dc18e2c24e32207b9d3d9bce093a
-ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
+ms.openlocfilehash: 44fcbd8b875aa4eb490a49806b46fe6c63efa8b3
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/14/2019
-ms.locfileid: "54269718"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55011620"
 ---
 # <a name="visual-studio-2017-workload-and-component-ids"></a>Visual Studio 2017 工作負載和元件識別碼
 

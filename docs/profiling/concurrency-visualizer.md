@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: ae5879a0-1e1a-455a-ba72-148e57f59289
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 211f941e5ea9e3ae6ed1eeec7f8f558319d0f703
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: da330fcd452c1c2d5ba4a3f580fcf49cc664608e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53908901"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54979032"
 ---
 # <a name="concurrency-visualizer"></a>並行視覺化檢視
 > [!NOTE]

@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: d1405347-1309-4f18-b565-905408093d59
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6e2f66ea8b3a2439e3fa5ce481f0af9ec09c8207
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 27ab29af7b45d8f4f4dbc53a5baeecf6b2f6abd8
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53917510"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54966042"
 ---
 # <a name="move-task"></a>Move 工作
 將檔案移到新位置。  

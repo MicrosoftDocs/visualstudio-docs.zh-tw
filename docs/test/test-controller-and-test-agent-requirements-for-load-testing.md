@@ -8,14 +8,14 @@ helpviewer_keywords:
 ms.assetid: 372d97ce-12e4-46a9-9863-da508adba68f
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 2dfb0f7791532184b78d5839bf1c89c9a276b24d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0c295fc051e4aa85206e8c888e5c0a869e42616c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53854707"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55000662"
 ---
 # <a name="test-controller-and-test-agent-requirements-for-load-testing"></a>負載測試的測試控制器和測試代理程式需求
 

@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 056b10a0-952b-4790-89e0-02aebe902e87
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 38c19d70817588a40ced0d57a6753cf52803a353
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f5ca047f29f1112fc551188548dc98c60885f83d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53896366"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55019433"
 ---
 # <a name="how-to-filter-report-views-from-the-summary-timeline"></a>HOW TO：從摘要時間軸篩選報表檢視
 您可以在 [摘要] 檢視的時間軸圖形中指定一個時間區段，來篩選效能報告中顯示的資料。 當您篩選報告時，系統會對分析資料檔進行分析，以只包含您指定的時間區段。  

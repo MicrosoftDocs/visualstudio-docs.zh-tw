@@ -6,16 +6,16 @@ ms.topic: reference
 helpviewer_keywords:
 - coded UI tests
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: ebac25b0269d5c5bc1d0bd674b41d35ab91cc7b5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e8ac4d3eaf1111b0d8461edf7899f443dc4f8fb0
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53893032"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54990351"
 ---
 # <a name="supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings"></a>自動程式碼 UI 測試和動作記錄的支援組態和平台
 

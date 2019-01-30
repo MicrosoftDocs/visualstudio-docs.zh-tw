@@ -7,15 +7,15 @@ helpviewer_keywords:
 - Profiling Tools, .NET memory method
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 518be5d4126dbfa2713fada4df8451292166dcbf
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 463bb6510e304de8d9068e1c8d133c4ab331ea4f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53858947"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54978668"
 ---
 # <a name="understand-memory-allocation-and-object-lifetime-data-values"></a>了解記憶體配置和物件存留期資料值
 

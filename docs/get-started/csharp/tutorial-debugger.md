@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 62734c0d-a75a-4576-8f73-0e97c19280e1
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1590bbbe53a164ff9e59b887f7161b45a7d62361
-ms.sourcegitcommit: a715de2ba8c703f37aa2102567b1aa2c0f05a117
+ms.openlocfilehash: 3e3936af89d7f59a47f01a68d17a672e67a5752e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "53441931"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54988957"
 ---
 # <a name="tutorial-learn-to-debug-c-code-using-visual-studio"></a>教學課程：了解如何使用 Visual Studio 對 C# 程式碼進行偵錯
 
@@ -93,7 +93,7 @@ ms.locfileid: "53441931"
         public int Y { get; private set; }
         public int Height { get; set; }
         public int Width { get; set; }
-   
+
         // Virtual method
         public virtual void Draw()
         {
@@ -192,7 +192,7 @@ ms.locfileid: "53441931"
 
     您設定中斷點的位置會出現紅色圓圈。
 
-    中斷點是可靠偵錯最基本也最重要的功能。 中斷點會指出 Visual Studio 應暫停程式碼執行的地方，如此一來您可以查看變數的值或記憶體的行為，或查看程式碼分支是否正在執行。 
+    中斷點是可靠偵錯最基本也最重要的功能。 中斷點會指出 Visual Studio 應暫停程式碼執行的地方，如此一來您可以查看變數的值或記憶體的行為，或查看程式碼分支是否正在執行。
 
 2. 按 **F5** 鍵或 [開始偵錯] 按鈕 ![開始偵錯](../../debugger/media/dbg-tour-start-debugging.png "開始偵錯")，應用程式會啟動，而偵錯工具會執行到您設定中斷點的程式碼行。
 

@@ -7,15 +7,15 @@ f1_keywords:
 - vs.UnitTest.CreateUnitTest
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e5b08592fdd60bf88ce703b1b97bd5485cc307ab
-ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
+ms.openlocfilehash: 76bd796bb706b63d2bb8ac022eb610a8a7d22d60
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/14/2019
-ms.locfileid: "54270176"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55024418"
 ---
 # <a name="unit-test-basics"></a>單元測試基本概念
 

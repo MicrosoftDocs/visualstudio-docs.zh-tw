@@ -7,19 +7,19 @@ ms.custom: get-started
 ms.topic: tutorial
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 25450c2bb2965852e2077fc234548f224e070ff8
-ms.sourcegitcommit: a715de2ba8c703f37aa2102567b1aa2c0f05a117
+ms.openlocfilehash: f62e963af28a165246ba7e0ec977d7fd2149d622
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "53441739"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55033761"
 ---
 # <a name="learn-about-projects-and-solutions"></a>了解專案與解決方案
 
-在這篇簡介文章中，我們將探討在 Visual Studio 中建立「解決方案」和「專案」的意義。 方案是用來組織一或多個相關程式碼專案的容器，例如類別庫專案和對應的測試專案。 我們會查看專案的屬性以及它可包含的一些檔案。 我們也會建立兩個專案之間的參考。
+在這篇簡介文章中，我們將探討在 Visual Studio 中建立「解決方案」和「專案」的意義。 解決方案是用來組織一或多個相關程式碼專案的容器，例如類別庫專案和對應的測試專案。 我們會查看專案的屬性以及它可包含的一些檔案。 我們也會建立兩個專案之間的參考。
 
 如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)頁面免費進行安裝。
 
@@ -30,7 +30,7 @@ ms.locfileid: "53441739"
 
 ## <a name="solutions-and-projects"></a>方案和專案
 
-儘管名稱為方案，但其並非「解答」。 方案僅是 Visual Studio 用來組織一或多個相關專案的容器。 當您在 Visual Studio 中開啟方案時，會自動載入方案所包含的所有專案。
+儘管名稱為方案，但其並非「解答」。 解決方案僅是 Visual Studio 用來組織一或多個相關專案的容器。 當您在 Visual Studio 中開啟解決方案時，會自動載入解決方案包含的所有專案。
 
 ### <a name="create-a-solution"></a>建立解決方案
 

@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 6c36b6eb-c93f-496b-af08-4199f7afd8bd
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bf2c00350b6b366e0e1d5ea02a8e260c8927b348
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1f48ecaa6baf60cc62d51bd2548a16e62d8aac3e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53988880"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54985821"
 ---
 # <a name="how-to-move-around-in-the-visual-studio-ide"></a>HOW TO：在 Visual Studio IDE 中四處移動
 

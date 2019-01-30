@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 14e03310-fcc0-4bb2-a84d-cda12be66367
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e14ff5857676746c630bc8a7187571d3adb8f4e8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 939b5b4adb6b3089987088b2bcd58e23844094b7
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53820757"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54978382"
 ---
 # <a name="fileclassifier-task"></a>FileClassifier 工作
 <xref:Microsoft.Build.Tasks.Windows.FileClassifier> 工作會將一組來源資源分類為將內嵌至組件的來源資源。 如果無法將資源當地語系化，即會將它內嵌至主應用程式組件；否則，會將它內嵌至附屬組件。  

@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: b01946b4-75e3-47d5-a1a1-cebfae66a3af
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 35ed8409ef59c002903dc26631d0af70e030c070
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b7bd27ceb83105a9d790937b3a5fcb904adf3abd
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53928194"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54983972"
 ---
 # <a name="da0501-average-cpu-consumption-by-the-process-being-profiled"></a>DA0501：所分析之處理序的平均 CPU 使用量。
 

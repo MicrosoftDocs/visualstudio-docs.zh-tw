@@ -11,15 +11,15 @@ f1_keywords:
 - vs.toolsoptionspages.r_tools.#150
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 2d48f59be1bb8e41e5cb587a6c5defcfb6e3227f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e1088dab75325e6a8eebac7b5968eca410b9e82e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53900557"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55017522"
 ---
 # <a name="r-tools-for-visual-studio-options"></a>Visual Studio R 工具選項
 

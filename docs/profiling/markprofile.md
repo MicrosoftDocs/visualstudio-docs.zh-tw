@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 54dac8c8-c8ee-4023-af27-b25466e3a6ec
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d079310fa8fa579f05e927eb37a0cbd6f2c8cca
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 15a53b3423cbda77f0625e6791e96db740636000
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53853745"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54925184"
 ---
 # <a name="markprofile"></a>MarkProfile
 `MarkProfile` 方法會在 .*vsp* 檔案中插入分析標記。 包含 `MarkProfile` 函式之執行緒的分析必須設定為 ON，才能插入標記。  

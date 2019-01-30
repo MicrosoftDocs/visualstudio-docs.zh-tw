@@ -6,15 +6,15 @@ ms.prod: visual-studio-dev15
 ms.topic: troubleshooting
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4f5ef4e8b46681cc102a6678fcd4cb38f3e6f069
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 88a689461fd5417800c6243950f296fde18fb3a1
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53888071"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54970938"
 ---
 # <a name="target-older-versions-of-net-f"></a>以舊版 .NET 為目標 (F#)
 

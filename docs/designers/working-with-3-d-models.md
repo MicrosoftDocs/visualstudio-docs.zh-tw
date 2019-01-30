@@ -6,15 +6,15 @@ ms.topic: conceptual
 ms.assetid: fa035091-1354-4d1c-be44-4fb83860466f
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4c1fd3c3a5067c565924a3580691c386453a23b2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7fe6c9e2b1f17d24aab94c793e083d06934ef143
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53850735"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55030804"
 ---
 # <a name="work-with-3d-models"></a>使用 3D 模型
 

@@ -6,15 +6,15 @@ ms.topic: conceptual
 ms.assetid: 79181d81-44af-445e-9a18-03483dd70260
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0634d08f386c638cf141b6e8085982b74377ab55
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 58f6ca03a7bad27ad3c2cb4f7dae662e14292e95
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53933537"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55015502"
 ---
 # <a name="how-to-create-a-grayscale-texture-shader"></a>HOW TO：建立灰階紋理著色器
 

@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: b3144b27-a426-4259-b8ae-5f7991b202b6
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 77473f001d3d363309f1ac2403a146d0aa8124cf
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 18ba71906b38fd889f1db42fcb69c689718107c6
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53884720"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54951283"
 ---
 # <a name="msbuild-task-reference"></a>MSBuild 工作參考
 提供在建置流程期間執行之程式碼的工作。 下列清單的工作包含於 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 中。 若已安裝 [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)]，將提供可用來建置 [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] 專案的其他工作。 如需詳細資訊，請參閱 [Visual C++ 工作](../msbuild/msbuild-tasks-specific-to-visual-cpp.md)。  

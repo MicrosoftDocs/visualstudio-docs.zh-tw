@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 5e26e0fd-383b-4fb6-a29d-a458d8232828
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 67e890b725ecc9ed13490d9b874ebf45086044fd
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c673a362cfa48e41c82518da50f489422ea480fd
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53961977"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54994273"
 ---
 # <a name="instruction-pointers-ips-view"></a>指令指標 (IP) 檢視
 [指令指標] 檢視可讓您查看取樣程式碼剖析期間所執行的特定指標。  

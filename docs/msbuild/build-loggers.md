@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: fa34810d-185a-4d22-92bd-9852915e5f1d
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a1df3eea826f2b439d2dfb9d6607c1afded80421
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f6e840d64ebe91258104846903ae08a9fd2798b8
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53913997"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55015601"
 ---
 # <a name="build-loggers"></a>組建記錄器
 記錄器提供一種方式，讓您能夠自訂組建的輸出，並顯示訊息、錯誤或警告來回應特定的建置事件。 每個記錄器都會實作為 .NET 類別，此類別會實作 <xref:Microsoft.Build.Framework.ILogger> 介面，此介面定義於 Microsoft.Build.Framework.dll 組件中。  

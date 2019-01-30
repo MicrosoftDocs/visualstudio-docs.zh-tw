@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: ff987d1b-1798-4803-9ef6-cc8fcc263516
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e97290d1762194a14bcdcef2af74de20a9f2083a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: aefd76da0fef3b0ab19dae3b4b2064f83eaa0531
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53887551"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55005263"
 ---
 # <a name="write-multi-processor-aware-loggers"></a>撰寫能夠辨識多處理器的記錄器
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 雖能夠使用多個處理器來大幅縮短專案建置時間，但同時也增加了建置事件記錄的複雜性。 在單一處理器環境中，事件、訊息、警告和錯誤是以可預測的循序方式傳入記錄器。 不過，在多處理器環境中，不同來源的事件可能會同時或不依順序傳入。 為解決這個問題，[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 提供了能夠辨識多處理器的記錄器以及新的記錄模型，可讓您建立自訂的「轉送記錄器」。  

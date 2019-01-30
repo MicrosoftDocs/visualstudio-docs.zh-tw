@@ -5,7 +5,7 @@ ms.prod: visual-studio-dev15
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 f1_keywords:
 - vs.csharp.refactoring.remove
 - vs.csharp.refactoring.reorder
@@ -14,12 +14,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 68c814fca9d5e1df2c01e803b13cd5b03e8935e4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bc40f71db956e42a566cf3a49b924c601fbe28d1
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53968400"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54971256"
 ---
 # <a name="change-a-method-signature-refactoring"></a>變更方法特徵標記重構
 

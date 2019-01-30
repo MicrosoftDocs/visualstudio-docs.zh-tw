@@ -6,15 +6,15 @@ ms.topic: conceptual
 ms.assetid: 6b2ea1ed-b995-4e75-af19-c68fd37a3bc5
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5371483661702e77f9639aae457a47910eda8101
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d7a6bb421f47d381cb5a0e7dac91aa4fc9236f22
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53850605"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55007408"
 ---
 # <a name="work-with-shaders"></a>使用著色器
 

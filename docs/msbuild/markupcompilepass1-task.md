@@ -14,15 +14,15 @@ helpviewer_keywords:
 - MarkupCompilePass1 task [WPF MSBuild], converting XAML to binary format
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 52b6e36e06ee74f974d2d774af806a234835cff0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: cb5f9ec3f2db14369cf8f469b718b027fd394649
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53906874"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55027330"
 ---
 # <a name="markupcompilepass1-task"></a>MarkupCompilePass1 工作
 

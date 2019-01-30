@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: d637e019-7c50-4b0a-812e-bc822001e697
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9608ca6237a44d48d4ee4c4d8daf057d88fc5b53
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2f0bc04dfa06672e7764676be87584c2a757a50b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53947825"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54940579"
 ---
 # <a name="resumetracking"></a>ResumeTracking
 在目前的內容中繼續追蹤。  

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: ec14c85d-7efb-441c-a46b-bee34a227e39
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 05c6dc160fc15973b8b2b7efff57bce4fef8ba36
-ms.sourcegitcommit: 75e02ed88a1ace6e8265fd4e3a82a1bc78f3adca
+ms.openlocfilehash: 91d06b237c38dbf648bfcdddeffb403cdf6444e6
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/13/2018
-ms.locfileid: "54406036"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55015585"
 ---
 # <a name="shortcut-keys-in-help-viewer"></a>說明檢視器中的快速鍵
 

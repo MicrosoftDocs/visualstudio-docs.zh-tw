@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: da2fbf8a-2d41-4654-a509-dd238532d25a
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ed0549cceb928b622578add5a634bb5795e5c96d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c3219621b5253287845449cd02d50188b9bddd7c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53889786"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54983673"
 ---
 # <a name="measure-application-performance-by-analyzing-cpu-usage"></a>透過分析 CPU 使用量測量應用程式效能
 您可以使用 Visual Studio 程式碼剖析工具來分析應用程式中的效能問題。 此程序示範如何使用 [診斷工具] 的 [CPU 使用量] 索引標籤，以取得您的應用程式的效能資料。 診斷工具可用於 Visual Studio 中的 .NET 開發 (包括 ASP.NET) 和原生/C++ 開發。

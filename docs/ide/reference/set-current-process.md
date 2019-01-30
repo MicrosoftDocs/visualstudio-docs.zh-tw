@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 1e016ebd-aadd-411f-a606-03bf69d3f8aa
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0c01c399dc76d1b328443edef27edd9a921b1b9c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f139e204fe24b105c467f9698b78c1764521706c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53855279"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54977131"
 ---
 # <a name="set-current-process"></a>設定目前處理序
 將指定的處理序設為偵錯工具中的使用中處理序。

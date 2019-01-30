@@ -8,14 +8,14 @@ helpviewer_keywords:
 ms.assetid: 1118c604-4b1b-4b21-a04e-45995b676fa8
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: d90b2ace06b6840a061b1f559f6f2dc7aaa67b6b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e4761eee5a45314911811dd55d1e3fc45a496baf
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53894515"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54976189"
 ---
 # <a name="how-to-create-a-visual-studio-add-in-for-the-web-performance-test-results-viewer"></a>HOW TO：建立 Web 效能測試結果檢視器的 Visual Studio 增益集
 

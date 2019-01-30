@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 76247259-c6f3-44c4-b3f9-d8dac16b5e0d
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c52d9ee8ba8488ef8dd3f343aab172689d907532
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 16782fcf3c8f859edd8363c43741f598d5929188
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53948955"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55006999"
 ---
 # <a name="da0029-unsupported-clr-version"></a>DA0029：不支援的 CLR 版本
 
