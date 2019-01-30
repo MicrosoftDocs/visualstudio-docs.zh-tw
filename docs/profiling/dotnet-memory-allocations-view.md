@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 01eb876e-c413-4516-977b-4f896929e8a6
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f866eba741dd84286bc969e64b8c36068c824a90
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 74ea89dcf3244da64fdadf4259e2afb3c4718630
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53895541"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54927472"
 ---
 # <a name="net-memory-allocations-view"></a>.NET 記憶體配置檢視
 [配置] 檢視會列出在分析回合期間建立的類型。 每種類型都是呼叫樹狀圖的根節點，可顯示導致類型配置的函式執行路徑。  

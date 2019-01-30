@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: b4ce1ad9-5215-4b6f-b6a2-798b249aa335
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 59451b6745e75fe198b6e428619c5d70f50dd03c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9dc28312784ecf8ae403b8a7d94df074d57474b1
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53964672"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54975162"
 ---
 # <a name="how-to-specify-build-events-c"></a>HOW TO：指定建置事件 (C#)
 

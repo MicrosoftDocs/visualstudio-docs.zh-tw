@@ -11,14 +11,14 @@ helpviewer_keywords:
 ms.assetid: 3c4f7874-081a-4ec4-9510-4d6d7d863a11
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 8aacdda24dc9490f0c07862950f4a144135d7341
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b847b664c5ea1a836b3b3de6cf1113e227b8c455
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53937513"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55038717"
 ---
 # <a name="specify-virtual-network-types-in-a-load-test-scenario"></a>在負載測試情節中指定虛擬網路類型
 

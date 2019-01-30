@@ -1,22 +1,22 @@
 ---
 title: 搭配 Python 使用 CookieCutter 範本
 description: Visual Studio 支援圖形 Cookiecutter 延伸模組來探索適用於 Python 程式碼的範本，並從這些範本建立專案。
-ms.date: 10/29/2018
+ms.date: 01/28/2019
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 1f5123323794d7a333440cb8aa94c51e44c8fc87
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b09e46f65d7aeafbf781af2a5e77ae9e4cc17ea0
+ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53958231"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55231788"
 ---
 # <a name="use-the-cookiecutter-extension"></a>使用 Cookiecutter 延伸模組
 
@@ -60,7 +60,7 @@ Cookiecutter 首頁會顯示可選擇的範本清單，並分為下列群組︰
 
 ![Cookiecutter 選項頁面](media/cookiecutter-template-options.png)
 
-每個 Cookiecutter 範本都會定義自己的一組選項，並指定每個選項的預設值 (在每個輸入欄位中顯示為建議的文字)。 預設值可以是程式碼片段 (通常在它是使用其他選項的動態值時)。 
+每個 Cookiecutter 範本都會定義自己的一組選項，並指定每個選項的預設值 (在每個輸入欄位中顯示為建議的文字)。 預設值可以是程式碼片段 (通常在它是使用其他選項的動態值時)。
 
 您可以利用使用者組態檔為特定選項自訂預設值。 當 Cookiecutter 延伸模組偵測到使用者組態檔時，它會以使用者組態的預設值覆寫範本的預設值。 Cookiecutter 文件的[User Config](https://cookiecutter.readthedocs.io/en/latest/advanced/user_config.html) (使用者組態) 一節對此行為有相關討論。
 

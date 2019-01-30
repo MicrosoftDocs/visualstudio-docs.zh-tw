@@ -11,15 +11,15 @@ helpviewer_keywords:
 - keyboard shortcuts
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dbde2e26ac576758d45ee908e30d9bef3341a3ec
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fd424618666529bb051c2d774ad195ea3162c1b3
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53849586"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54954016"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Visual Studio 中的預設鍵盤快速鍵
 

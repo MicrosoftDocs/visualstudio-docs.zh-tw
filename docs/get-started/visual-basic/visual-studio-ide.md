@@ -7,17 +7,17 @@ ms.custom: get-started
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 506581dc329249fc4043e01222163499f2de46d7
-ms.sourcegitcommit: a715de2ba8c703f37aa2102567b1aa2c0f05a117
+ms.openlocfilehash: 113a333c7a1ca100b6572f730ec9291ffc20ff87
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "54405318"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54939175"
 ---
 # <a name="welcome-to-the-visual-studio-ide--visual-basic"></a>歡迎使用 Visual Studio IDE | Visual Basic
 
@@ -59,13 +59,13 @@ Visual Studio 的某些熱門功能可在您開發軟體時協助您提高生產
 
 - [快速啟動](../../ide/reference/quick-launch-environment-options-dialog-box.md)
 
-   Visual Studio 使用這麼多的功能表、選項和屬性，有時似乎讓人有壓迫感。 **快速啟動**搜尋方塊是一個可讓您在 Visual Studio 中快速找到所需項目的絕佳方式。 當您開始輸入要尋找的項目名稱時，Visual Studio 會列出結果，將您引導至您確實想要去的地方。 如果您需要在 Visual Studio 中新增功能，例如新增對其他程式設計語言的支援，[快速啟動] 提供的結果可開啟 Visual Studio 安裝程式，安裝工作負載或個別元件。
+   Visual Studio 使用這麼多的功能表、選項和屬性，有時似乎讓人有壓迫感。 **快速啟動**搜尋方塊是一個可讓您在 Visual Studio 中快速找到所需項目的絕佳方式。 當您開始鍵入要尋找的項目名稱時，Visual Studio 會列出結果，將您引導至您確實想要去的地方。 如果您需要在 Visual Studio 中新增功能，例如新增對其他程式設計語言的支援，[快速啟動] 提供的結果可開啟 Visual Studio 安裝程式，安裝工作負載或個別元件。
 
    ![Visual Studio 的 [快速啟動] 搜尋方塊](../media/quick-launch-nuget.png)
 
 - 波浪線和[快速動作](../../ide/quick-actions.md)
 
-   波浪線是波浪底線，可在您輸入程式碼時，針對錯誤或潛在問題提出警示。 這些視覺提示可讓您立即修正問題，不必等到建置期間或執行程式時發現錯誤。 如果您將滑鼠停留在波浪線，您會看到有關此錯誤的其他資訊。 左邊界也可能會出現燈泡與修正錯誤的動作，稱為「快速動作」。
+   波浪線是波浪底線，可在您鍵入程式碼時，針對錯誤或潛在問題提出警示。 這些視覺提示可讓您立即修正問題，不必等到建置期間或執行程式時發現錯誤。 如果您將滑鼠停留在波浪線，您會看到有關此錯誤的其他資訊。 左邊界也可能會出現燈泡與修正錯誤的動作，稱為「快速動作」。
 
    ![Visual Studio 的波浪線](media/squiggles-error.png)
 
@@ -86,7 +86,7 @@ Visual Studio 的某些熱門功能可在您開發軟體時協助您提高生產
 
 - [移至定義](../../ide/go-to-and-peek-definition.md)
 
-   [移至定義] 功能可以直接帶您進入定義函式或類型的位置。
+   [移至定義] 功能就可以直接帶您進入定義函式或類型的位置。
 
    ![Visual Studio 中的 [移至定義]](media/go-to-definition-menu.png)
 
@@ -148,7 +148,7 @@ Visual Studio 的某些熱門功能可在您開發軟體時協助您提高生產
 
    ![功能表列上的 [檔案] > [新增專案]](media/file-new-project-menu.png)
 
-2. [新增專案] 對話方塊會顯示數個專案「範本」。 範本包含指定專案類型所需的基本檔案和設定。 選擇 [Visual Basic] 下的 [.NET Core] 類別，然後選擇 [主控台應用程式 (.NET Core)] 範本。 在 [名稱] 文字方塊中，輸入 **HelloWorld**，然後選取 [確定] 按鈕。
+2. [新增專案] 對話方塊會顯示數個專案「範本」。 範本包含指定專案類型所需的基本檔案和設定。 選擇 [Visual Basic] 下的 [.NET Core] 類別，然後選擇 [主控台應用程式 (.NET Core)] 範本。 在 [名稱] 文字方塊中，鍵入 **HelloWorld**，然後選取 [確定] 按鈕。
 
    ![.NET Core 應用程式範本](media/overview-npd.png)
 
@@ -157,7 +157,7 @@ Visual Studio 的某些熱門功能可在您開發軟體時協助您提高生產
 
    Visual Studio 會建立專案。 其為簡單的 "Hello World" 應用程式，會呼叫 <xref:System.Console.WriteLine?displayProperty=nameWithType> 方法來顯示常值字串 "Hello World!" 在主控台 (程式輸出) 視窗中。
 
-   您應該會立即看到如下畫面：
+   您應該會立即看到類似下列的畫面：
 
    ![Visual Studio IDE](media/overview-ide-console-app.png)
 
@@ -194,7 +194,7 @@ Visual Studio 的某些熱門功能可在您開發軟體時協助您提高生產
 
    Visual Studio 會重建應用程式，然後主控台視窗會開啟並提示您輸入您的名稱。
 
-8. 請在主控台視窗中輸入您的名稱，並按下 **Enter**。
+8. 請在主控台視窗中輸入您的名稱，並按下 **ENTER**。
 
    程式會回應您的名稱。
 
@@ -210,7 +210,7 @@ Visual Studio 的某些熱門功能可在您開發軟體時協助您提高生產
 
 1. 按兩下 `name` 變數來選取它。
 
-2. 輸入變數的新名稱 **username**。
+2. 鍵入變數的新名稱 **username**。
 
    請注意，變數周圍會出現一個灰色方塊，而邊界會出現一個燈泡。
 
@@ -257,21 +257,21 @@ Visual Studio 的某些熱門功能可在您開發軟體時協助您提高生產
 
     ![含有程式輸出的主控台視窗](media/overview-console-final.png)
 
-## <a name="debug-code"></a>針對程式碼進行偵錯
+## <a name="debug-code"></a>偵錯程式碼
 
-當您撰寫程式碼時，必須執行並測試它，以找出錯誤 (Bug)。 Visual Studio 偵錯系統可讓您以一次一個陳述式的方式逐步針對程式碼進行 偵錯，並一邊檢查變數。 您可以設定「中斷點」，以在特定行停止執行程式碼。 您可以觀察變數值如何隨著程式碼執行而變更，以及更多。
+當您撰寫程式碼時，必須執行並測試它，以找出 Bug。 Visual Studio 偵錯系統可讓您以一次一個陳述式的方式逐步偵錯程式碼，並一邊檢查變數。 您可以設定「中斷點」，其會停止執行特定行的程式碼。 您可以觀察變數值如何隨著程式碼執行而變更，以及更多。
 
 讓我們來設定中斷點，以查看程式「進行」期間的 `username` 變數值。
 
-1. 尋找程式碼 `Console.WriteLine("Hello " + username + "!")`。 若要設定這行程式碼的中斷點，讓程式在這行暫停執行，請按一下編輯器的左邊界。 您也可以按一下該行程式碼的任何位置，然後按下 **F9** 鍵。
+1. 尋找程式碼行 `Console.WriteLine("Hello " + username + "!")`。 若要設定這行程式碼的中斷點，讓程式在這行暫停執行，請按一下編輯器的左邊界。 您也可以按一下該行程式碼的任何位置，然後按下 **F9** 鍵。
 
    左邊界會出現一個紅色圓圈，並以紅色醒目顯示程式碼。
 
-   ![Visual Studio 中程式碼的中斷點](media/breakpoint.png)
+   ![Visual Studio 中程式碼行的中斷點](media/breakpoint.png)
 
 1. 選取 [偵錯] > [開始偵錯] 或按 **F5** 鍵以開始偵錯。
 
-1. 在主控台視窗出現並要求您的名稱時，輸入名稱並按 **Enter** 鍵。
+1. 在主控台視窗出現並要求您的名稱時，鍵入名稱並按 **Enter** 鍵。
 
    焦點會返回 Visual Studio 程式碼編輯器，並以黃色醒目提示具有中斷點的程式碼。 這表示程式要執行的下一行程式碼。
 

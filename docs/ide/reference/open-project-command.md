@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: baa85f86-041b-49f4-9ced-0c397dc180e1
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 34a6783e71d2a6dfee718aa441fbb3007aa71fa9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 14ca6ed2f9a3e21d641f9d5dbe83234066886164
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53946236"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55010164"
 ---
 # <a name="open-project-command"></a>開啟專案命令
 

@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 8e3dc223-f9e5-4974-aa0e-5dc7967419cb
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2cc550d91c1cccbbc5417300da3618aa52afa69b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ef39b6a3b1a5700f8d6699b411020b2c05238381
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53990801"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54994091"
 ---
 # <a name="item-definitions"></a>項目定義
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 2.0 可讓您使用 [ItemGroup](../msbuild/itemgroup-element-msbuild.md) 元素來靜態宣告專案檔中的項目。 不過，您只能在項目層級新增中繼資料，即使所有項目的中繼資料都相同也是如此。 從 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 3.5 開始，名為 [ItemDefinitionGroup](../msbuild/itemdefinitiongroup-element-msbuild.md) 的專案元素可克服這項限制。 *ItemDefinitionGroup* 可讓您定義一組項目定義，這些項目定義會將預設的中繼資料值，新增到具名項目類型中的所有項目。  

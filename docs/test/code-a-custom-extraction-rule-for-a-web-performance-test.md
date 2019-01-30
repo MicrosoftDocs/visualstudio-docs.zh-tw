@@ -12,14 +12,14 @@ dev_langs:
 - VB
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 311a1ff5b9f5587d04c90484f21a323161c9c18a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7d63bf5fdb6885f3ac71f26ba76dbc37b7bc4a0c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53835707"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54960070"
 ---
 # <a name="code-a-custom-extraction-rule-for-a-web-performance-test"></a>為 Web 效能測試撰寫自訂擷取規則程式碼
 

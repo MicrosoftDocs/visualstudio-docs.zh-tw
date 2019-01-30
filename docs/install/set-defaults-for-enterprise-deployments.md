@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 9B7B4608-7A3F-4FF4-BDCE-42D9F7CE6DBA
 author: heaths
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 55bc436db77b90f30cec39fe2d0d33e3a8c60bb1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 77fbea5daced46e8437bf4a277798b9911a13669
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53906068"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55042617"
 ---
 # <a name="set-defaults-for-enterprise-deployments-of-visual-studio-2017"></a>設定 Visual Studio 2017 企業部署的預設
 

@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 2ae38b2a-29d2-461c-a67d-29dad274bf45
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d9e23cd79510d789c8c8f8b426fb3196f1845745
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0f30bc874f5ed3debecf24a3259a8b13c9c38d49
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53952947"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54997399"
 ---
 # <a name="toolbox-data-tab"></a>工具箱, 資料索引標籤
 

@@ -4,16 +4,16 @@ ms.date: 06/07/2018
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: f8cdfa96e41e72531cb3f2cdc164af4ed57546e5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4cf2635cf46b1fa8b395cb8a7cab8769ae6ed6d3
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53955236"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54960110"
 ---
 # <a name="install-unit-test-frameworks"></a>安裝單元測試架構
 

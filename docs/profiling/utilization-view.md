@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: b4f7ceab-3653-4069-bb74-c309aec62866
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 70e6fd49e72b3cb6ffdb1ade70dcd1ffb562bdd9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 84cdc938320be106ffa230595448fa0ffb332cee
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53824207"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54924119"
 ---
 # <a name="utilization-view"></a>使用率檢視
 [使用率檢視] 顯示目前處理序使用的 CPU、GPU 和其他系統資源的相關資訊 (選擇 [分析] > [並行視覺化檢視] 來啟動並行視覺化檢視)。 顯示一段時間內在系統上執行的分析處理序、閒置處理序、系統處理序及其他處理序的平均核心使用率。 不會顯示在任何指定時間作用中的特定核心。 例如，如果兩個核心在指定期間各以 50% 的產量執行，然後此檢視會顯示共使用一個邏輯核心。 此檢視是將程式碼剖析時間分成數個區段而產生。 對於每個區段，圖形都會繪製在該間隔期間於邏輯核心上執行的處理序執行緒平均數目。  

@@ -6,15 +6,15 @@ ms.topic: conceptual
 ms.assetid: 0e215fdd-55f8-43ef-9534-06542eefe223
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: f5a018a5089682a50ee45aede3f695c0744ac578
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6ac30e2d4dbe97371516201670d82876c1287a52
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53893496"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55027060"
 ---
 # <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-concurrency-data-by-using-the-command-line"></a>HOW TO：使用命令列將分析工具附加至 ASP.NET Web 應用程式以收集並行資料
 本文描述如何使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具命令列工具將分析工具附加至 ASP.NET 應用程式，並收集處理序和執行緒並行資料。  

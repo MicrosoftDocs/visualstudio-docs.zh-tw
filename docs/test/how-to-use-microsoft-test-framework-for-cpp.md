@@ -4,16 +4,16 @@ ms.date: 11/15/2017
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.author: mblome
-manager: douge
+manager: jillfra
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 83bee98a0f0ba74d65aa770d4f8dd5588eba26b8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d95ffeb2e880f6b27a67342c3f6accd512d39c22
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53915097"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54930494"
 ---
 # <a name="use-the-microsoft-unit-testing-framework-for-c-in-visual-studio"></a>在 Visual Studio 中使用適用於 C++ 的 Microsoft 單元測試架構
 

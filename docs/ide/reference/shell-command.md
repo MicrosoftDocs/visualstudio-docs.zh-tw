@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 737fda23-b852-45c4-a9fe-41cbce6ba70f
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c62eb3f5fa27a11779cbb2aabf2067a35c0fe5e3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8ed5114dac4bf1d91c77746fbd896e971241dc22
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53821603"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54923658"
 ---
 # <a name="shell-command"></a>Shell 命令
 在 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 內啟動可執行程式。

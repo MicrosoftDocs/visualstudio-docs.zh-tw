@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: b273afff-b500-4e97-8cfd-31f39fa64a51
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e932b5a49559e77b9d7231d969f8ee78e2b4ec6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 83f713382b0f767d966276807b1d10fac39c4bcd
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53820276"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54982731"
 ---
 # <a name="parameter-element"></a>Parameter 元素
 包含 `UsingTask` `TaskFactory` 所產生之工作的特定參數相關資訊。  元素的名稱是參數的名稱。  如需詳細資訊，請參閱 [UsingTask 元素 (MSBuild)](../msbuild/usingtask-element-msbuild.md)。  

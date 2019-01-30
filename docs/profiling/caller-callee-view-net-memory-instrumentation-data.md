@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: da624c06-8741-4afb-aad1-f8c0002f3de2
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a2ac6322f7264f6a6816b6724f0e477c7daa977c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8142899669d998a3d7e51366c482532f1fa415a6
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53833465"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54948254"
 ---
 # <a name="callercallee-view---net-memory-instrumentation-data"></a>呼叫端/被呼叫端檢視 - .NET 記憶體檢測資料
 使用檢測方法收集之 .NET 記憶體分析資料的 [呼叫端/被呼叫端] 檢視會顯示所選取函式及其父函式和子函式的配置和計時資料。 [呼叫端/被呼叫端] 檢視包含三個方格。  

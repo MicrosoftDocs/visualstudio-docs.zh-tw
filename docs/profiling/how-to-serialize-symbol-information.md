@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 9e0da706-6325-4073-83d1-aeab3b7c137a
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ae49e4656bcbeb8e1048331b9fb0b61849e4099
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f7957917c999396f2e09bbb697474beb47ebcc47
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53987588"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55042435"
 ---
 # <a name="how-to-serialize-symbol-information"></a>HOW TO：序列化符號資訊
 您可以將分析應用程式所需的符號序列化。 符號序列化會將符號新增至 .*vsp* 檔案。 透過將符號資訊新增至 .*vsp* 檔案，其他人就算沒有原始符號的存取權也可以分析效能報告。 如果符號未序列化，您必須擁有原始的已檢測 .*exe* 和 .*pdb* 檔案才能分析 .*vsp* 檔案。  

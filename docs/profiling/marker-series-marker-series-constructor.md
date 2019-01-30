@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 042c7d23-f1d8-4e09-9e76-a21c30243790
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8fad8eec19346273a7ea302da4653faa1bdec032
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fa010c535b984eb6a00bcb8234815f3d489b87b3
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53987229"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54939448"
 ---
 # <a name="markerseriesmarkerseries-constructor"></a>marker_series::marker_series 建構函式
 初始化 `marker_series` 類別的新執行個體。  

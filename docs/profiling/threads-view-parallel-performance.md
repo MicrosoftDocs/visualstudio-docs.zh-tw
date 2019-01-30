@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 2e441103-a266-407b-88c3-fb58716257a3
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6302adfab98b343e34e042f0294ec509b232b951
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0414e8389c35e873ce65f1b3d704b20dee396cd8
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53891783"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55039289"
 ---
 # <a name="threads-view-in-the-concurrency-visualizer"></a>並行視覺化檢視中的執行緒檢視
 

@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 90d4e522-6391-4571-927d-b466a9766342
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e034ecee379e2c0ff577392f89539cee7610dfd
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ca0432f5a6aa963192802c6fc126167b01d96854
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53833820"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54926816"
 ---
 # <a name="text-editor-options-dialog-box"></a>文字編輯器選項對話方塊
 

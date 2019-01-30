@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: e72e6506-4a11-4edf-ae8d-cfb5a3b9d8a0
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bb0f0b23e58ea6bafdb6eaaaa6af43cd1c7d7fc9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f65cf4b03341965a32c7e5cc5c8c3e9b9b913a6b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53880347"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54963407"
 ---
 # <a name="msbuild-inline-tasks"></a>MSBuild 內嵌工作
 MSBuild 工作通常是透過編譯實作 <xref:Microsoft.Build.Framework.ITask> 介面的類別來建立。 如需詳細資訊，請參閱[工作](../msbuild/msbuild-tasks.md)。  

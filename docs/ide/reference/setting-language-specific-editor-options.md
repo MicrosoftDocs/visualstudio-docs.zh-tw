@@ -9,15 +9,15 @@ helpviewer_keywords:
 - editor settings
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 331f43bbc478eba1f6372d3cb9fa949969bf6871
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 02ea5d41816c68ab5fcad57562f324fd3d136d31
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53855227"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54950464"
 ---
 # <a name="setting-language-specific-editor-options"></a>設定語言特定編輯器選項
 

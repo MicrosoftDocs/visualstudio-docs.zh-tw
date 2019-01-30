@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 0412d381-590a-483f-bab4-6e1cca095645
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 31f604d6df45cb22d18401b5925867d5ab0e02b8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1677e05668b8681976447ef9ee401624d82bdd9a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53900882"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54939825"
 ---
 # <a name="print-command"></a>列印命令
 評估運算式，或顯示指定的文字。

@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: ae23c4ae-2376-4fe3-b8d2-81d34e61c8ba
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e6573bb8bb6118a38266c0b76ef435c59e6ccecb
-ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
+ms.openlocfilehash: ab5ba4756a24405c6cf531452395235b7f4d6db7
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "54227235"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54949856"
 ---
 # <a name="log-devenvexe"></a>/Log (devenv.exe)
 

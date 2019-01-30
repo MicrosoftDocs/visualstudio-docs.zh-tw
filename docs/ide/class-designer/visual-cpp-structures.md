@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: bad18ab6-d956-47a6-a413-811cc26db5f5
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 95c6622a6c67eda3543c11153c8f79d232aa023d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6daa85e9f8a3ea6f5fe68808cd46fc4414f77c17
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53876597"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54966357"
 ---
 # <a name="visual-c-structures-in-class-designer"></a>類別設計工具中的 Visual C++ 結構
 

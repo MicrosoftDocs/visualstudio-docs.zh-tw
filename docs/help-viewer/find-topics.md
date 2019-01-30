@@ -6,15 +6,15 @@ ms.topic: conceptual
 ms.assetid: 683f1b0c-1551-4bba-91fe-3855f03fdd69
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6e50a2ecb302461db6454632e6c9702cff98c711
-ms.sourcegitcommit: 75e02ed88a1ace6e8265fd4e3a82a1bc78f3adca
+ms.openlocfilehash: a3a101cb18343ca80096b6adc43f54a9daae1a45
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/13/2018
-ms.locfileid: "54406206"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54940813"
 ---
 # <a name="how-to-search-for-topics"></a>HOW TO：搜尋主題
 

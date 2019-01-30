@@ -13,15 +13,15 @@ helpviewer_keywords:
 - outlining code
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ee657cdf0c7046021a3589378926b086caf504ac
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 98c07a0f79e18e5500ef4562895fdf72f046c04c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53832881"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54999440"
 ---
 # <a name="outlining"></a>大綱
 

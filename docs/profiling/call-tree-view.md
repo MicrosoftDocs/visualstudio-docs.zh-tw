@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: b2dbc033-bf95-4d10-8e51-f9462979133e
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1f006893a32e6609167626e3331616eef7a31a59
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 44bfbf4f5fb0a0b158d08254656d9c3831c77e86
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53946470"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54948423"
 ---
 # <a name="call-tree-view"></a>[呼叫樹狀圖] 檢閱
 [呼叫樹狀圖] 檢視顯示在分析的應用程式中周遊的函式執行路徑。 樹狀圖的根是應用程式或元件的進入點。 每個函式節點都會列出其所呼叫的所有函式，以及這些函式呼叫的效能資料。  

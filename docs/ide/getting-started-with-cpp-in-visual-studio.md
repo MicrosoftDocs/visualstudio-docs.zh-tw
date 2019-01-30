@@ -7,17 +7,17 @@ ms.prod: visual-studio-dev15
 ms.topic: tutorial
 author: corob-msft
 ms.author: corob
-manager: douge
+manager: jillfra
 dev_langs:
 - CPP
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6d77732d6bf54e4849be55324e6ac18be2a46f74
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: caff9da5f77ea44c75d12d4e38455a9bcfefbdb8
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53820886"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54968904"
 ---
 # <a name="get-started-with-c-in-visual-studio"></a>Visual Studio 中的 C++ 使用者入門
 

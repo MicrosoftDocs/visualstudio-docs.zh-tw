@@ -15,15 +15,15 @@ helpviewer_keywords:
 - exporting shortcut keys [Visual Studio]
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f52a2e57e913735ffe678768732a822e1bb30e6f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5394f58ac150fb482cbbec915fa99ef6f7fc2005
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53820393"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54987475"
 ---
 # <a name="identify-and-customize-keyboard-shortcuts-in-visual-studio"></a>識別及自訂 Visual Studio 中的鍵盤快速鍵
 

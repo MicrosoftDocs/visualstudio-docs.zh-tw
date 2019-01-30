@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: ae0c8b2f-17b2-4f3d-a834-aa2f6371753b
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c670ab939f2535c7dfcdf2d2db8a53e06bcd58db
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9d16630d444a8f1887b9aa8da9f05a24828d4b19
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53845911"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54944668"
 ---
 # <a name="da0038-high-rate-of-lock-contentions"></a>DA0038：高比率的鎖定爭用
 

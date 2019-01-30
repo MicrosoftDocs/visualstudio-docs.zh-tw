@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: be75b03c-7af5-4abe-a54a-6ee5479ad877
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b44726b2ce1f7a0b699898edfc3a53371163168e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0ba5dc9568207402e9753501b2674cc908a811d1
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53952231"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55019498"
 ---
 # <a name="stopprofile"></a>StopProfile
 `StopProfile` 函式會將所指定分析層級的計數器設定為 0 (關閉)。  

@@ -26,15 +26,15 @@ helpviewer_keywords:
 ms.assetid: 79d70e70-704c-4255-ab68-c10d6949470e
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cfafcedae225522ec71e0bc35854d827047af2fe
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 424f205a05505d6ba4b9a19f4d4ea585d02167b3
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53901684"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55033610"
 ---
 # <a name="class-designer-errors"></a>類別設計工具錯誤
 

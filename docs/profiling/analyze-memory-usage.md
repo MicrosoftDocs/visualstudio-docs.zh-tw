@@ -5,15 +5,15 @@ ms.date: 01/02/2018
 ms.topic: conceptual
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1dcd3467f474d5c2b3e24ed1d1e490a73e7498bb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4f06685be91926e4168c5e4592514469f94da47d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53867182"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54932606"
 ---
 # <a name="analyze-memory-usage"></a>分析記憶體使用量
 使用與偵錯工具整合的 [記憶體使用量] 診斷工具，來找出記憶體遺漏和記憶體使用沒有效率等問題。 記憶體使用量工具可讓您擷取 Managed 和原生記憶體堆積的一個或多個 *「快照」* (Snapshot)。 您可以收集 .NET、ASP.NET、原生或混合模式 (.NET 和原生) 應用程式的快照。  

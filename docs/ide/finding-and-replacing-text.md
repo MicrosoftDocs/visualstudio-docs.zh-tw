@@ -28,15 +28,15 @@ helpviewer_keywords:
 - multi-caret selection
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 189f56dd0017ee431a4e91c82684b8f678891e44
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 80a6b369826c9f03d8f40d2dc924845acbf6a3f4
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53866409"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55039406"
 ---
 # <a name="find-and-replace-text"></a>尋找和取代文字
 

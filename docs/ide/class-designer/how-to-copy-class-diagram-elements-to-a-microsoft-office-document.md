@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: c43061ad-d258-46b1-be66-f97a312e86d5
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4c29a3c167f6bf8f0588f94f3ed843d15bc02bc5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3f1b105f0e5cc566acb09d999c2341e4edaf0692
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53916289"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54991316"
 ---
 # <a name="how-to-copy-class-diagram-elements-to-a-microsoft-office-document"></a>HOW TO：將類別圖表項目複製到 Microsoft Office 文件
 

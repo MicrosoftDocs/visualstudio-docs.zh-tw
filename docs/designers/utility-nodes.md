@@ -6,15 +6,15 @@ ms.topic: reference
 ms.assetid: ff732221-b731-424c-ad5b-82ef5f21dff5
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d6bab6f3ce689903003b055e89389bb73e48b7c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f2cb747c6309b59059eece258f8d71ba4d4475c9
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53883103"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54984635"
 ---
 # <a name="utility-nodes"></a>公用程式節點
 

@@ -31,15 +31,15 @@ helpviewer_keywords:
 ms.assetid: d49b2c57-24bf-4fb2-8351-5c4b6cca938f
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7cc93b398791d01cc29025772a6cd086f0d0c740
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6fa3ec42d90611c4618b786c0263ed0732dca093
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53877899"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55023284"
 ---
 # <a name="pre-build-eventpost-build-event-command-line-dialog-box"></a>建置前事件/建置後事件命令列對話方塊
 您可以直接在編輯方塊中鍵入[專案設計工具、建置事件頁面 (C#)](../../ide/reference/build-events-page-project-designer-csharp.md)的建置前或建置後事件，或者可以從可用的巨集清單選取建置前或建置後巨集。

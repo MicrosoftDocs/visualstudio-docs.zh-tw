@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: bd9ca972-e5bf-45a6-9a5d-ac30a4d9ee02
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d8bc3326bfe194815f043233120f3e2ee5fae571
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8577cb0c456d3cf3ea295928a9bfd1df59d65c03
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53942563"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55040225"
 ---
 # <a name="profiling-tools-apis"></a>程式碼剖析工具 API
 您可以插入 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 程式碼剖析工具 API 的 Managed 或原生方法，來控制程式碼剖析執行時收集的資料。 本節描述 API 方法並說明如何使用它們。  

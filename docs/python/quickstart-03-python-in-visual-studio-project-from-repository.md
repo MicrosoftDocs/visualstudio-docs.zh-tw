@@ -6,17 +6,17 @@ ms.prod: visual-studio-dev15
 ms.topic: quickstart
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: a98b236d12954d5707df7fa4933c1f31150c7a0c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3df8bacc5d026cb915521e3870cd19a5128796e7
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53922834"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55022759"
 ---
 # <a name="quickstart-clone-a-repository-of-python-code-in-visual-studio"></a>快速入門：在 Visual Studio 中複製 Python 程式碼存放庫
 

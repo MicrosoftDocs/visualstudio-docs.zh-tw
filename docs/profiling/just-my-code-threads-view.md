@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: a9ac8a2c-9d99-4207-8ed4-e87f033f440d
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 825bf6e16aa0420a24b80dbfaaeb869325b3e68b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1e6cb50e3b62380ff8de191de153ff4edd0545de
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53877415"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54982984"
 ---
 # <a name="just-my-code-threads-view"></a>Just My Code (執行緒檢視)
 如果選取此選項，即會篩選呼叫堆疊只顯示您的程式碼，加上一個層級的已呼叫函式。  

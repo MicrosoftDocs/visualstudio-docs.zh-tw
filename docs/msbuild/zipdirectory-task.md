@@ -19,15 +19,15 @@ ms.assetid: 916bb2e3-3017-4828-ae27-c0b5c99bbb48
 caps.latest.revision: 16
 author: Mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 320fd3a62c3283b0c442f0f7bbc3df5512eb7bcc
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b09c98fb41adcf1d094ca3cf35e9415773e5c292
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53930956"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54963524"
 ---
 # <a name="zipdirectory-task"></a>ZipDirectory 工作
 從目錄的內容建立 *.zip* 封存。

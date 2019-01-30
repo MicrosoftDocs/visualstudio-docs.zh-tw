@@ -16,15 +16,15 @@ helpviewer_keywords:
 - Text editor Options dialog box, formatting
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: b3c4aa17e31797c9c8bbfa1a931369f371977e26
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b66acd2ab44db0c38d714c805db152e338da9175
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53946405"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54925171"
 ---
 # <a name="options-text-editor-c-code-style-formatting"></a>選項、文字編輯器、C#、程式碼樣式、格式化
 

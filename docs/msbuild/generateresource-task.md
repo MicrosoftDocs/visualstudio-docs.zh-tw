@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: c0aff32f-f2cc-46f6-9c3e-a5c9f8f912b1
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c879ddc38b2dd3988878119f87c3d777aea7c09d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f4665d437290e75d1542e79d62f898f916576806
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53917497"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54978135"
 ---
 # <a name="generateresource-task"></a>GenerateResource 工作
 在 *.txt* 與 *.resx* (XML 資源格式) 檔案，以及 Common Language Runtime 二進位 *.resources* 檔案 (可以內嵌在執行階段二進位可執行檔，或是編譯到附屬組件中) 之間轉換。 此工作一般用來將 *.txt* 或 *.resx* 檔轉換為 *.resources* 檔。 `GenerateResource` 工作的功能類似於 [resgen.exe](/dotnet/framework/tools/resgen-exe-resource-file-generator)。  

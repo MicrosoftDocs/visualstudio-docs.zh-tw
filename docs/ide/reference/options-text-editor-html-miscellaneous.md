@@ -8,15 +8,15 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.HTML.Miscellaneous
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 01fd6fa7e2fc2a3db1b05523ddcc9d4a5dc5629b
-ms.sourcegitcommit: d0b02affd24e66efed924c197824f35f823e3240
+ms.openlocfilehash: f764b179183dcb52014df775d7d392b61168a2b9
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/21/2019
-ms.locfileid: "54417833"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54951023"
 ---
 # <a name="options-text-editor-html-web-forms-miscellaneous"></a>選項、文字編輯器、HTML (Web Form)、其他
 

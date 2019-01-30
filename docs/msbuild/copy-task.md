@@ -18,15 +18,15 @@ helpviewer_keywords:
 ms.assetid: a46ba9da-3e4e-4890-b4ea-09a099b6bc40
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ba0e7e85f4367c775c8b9185c6c2684b728cc4d7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ec29eae7b2989af0ce7c4629ac708553de99e3df
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53943898"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54995614"
 ---
 # <a name="copy-task"></a>Copy 工作
 將檔案複製到檔案系統上的新位置。  

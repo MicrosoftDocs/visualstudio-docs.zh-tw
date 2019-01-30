@@ -6,15 +6,15 @@ ms.topic: conceptual
 ms.assetid: ec5c10fb-9600-4240-8280-d59451ea1d68
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 622209951ba3321a8278e0f65058459591af7d38
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ce633ef790c3d88d02762369af2abb701cb0bc25
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53850347"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54945576"
 ---
 # <a name="how-to-create-a-basic-lambert-shader"></a>HOW TO：建立基本 Lambert 著色器
 

@@ -12,17 +12,17 @@ helpviewer_keywords:
 - formatting conventions [EditorConfig]
 author: kuhlenh
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: f99f18af416ead93c9327afcda6de0196da81566
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9cbcdb26b333bc0d4ba0d96d5a81d652666c6c86
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53833853"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54956086"
 ---
 # <a name="net-coding-convention-settings-for-editorconfig"></a>EditorConfig 的 .NET 編碼慣例設定
 

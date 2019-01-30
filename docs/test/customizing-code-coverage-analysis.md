@@ -4,16 +4,16 @@ ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: e640fd14c6fd5b465a52ffe319814083958db676
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bb4b8625c69c28ca6d9a2e0a4b86122e810a87e4
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53856523"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54935809"
 ---
 # <a name="customize-code-coverage-analysis"></a>自訂程式碼涵蓋範圍分析
 

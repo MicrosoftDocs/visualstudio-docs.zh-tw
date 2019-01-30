@@ -14,15 +14,15 @@ f1_keywords:
 ms.assetid: a05ab01f-3d5d-4675-a845-eab51807d3a3
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 83c7a2b0d0004b1f96a1c46ab120814179f77d26
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9011a6614c59b033925cb2266d4e16a4f131a119
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53956527"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54923840"
 ---
 # <a name="property-pages-javascript"></a>JavaScript、屬性頁
 [屬性頁] 提供對專案設定的存取。 您可以使用 [屬性頁] 中所顯示的頁面來變更專案屬性。

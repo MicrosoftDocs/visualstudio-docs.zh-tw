@@ -11,15 +11,15 @@ dev_langs:
 - CPP
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3ff77dc6c434a58ee916ea1eb4ffcab932d7a675
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0cd20de20279ea57bea4f829be03533bc43bfaa4
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53958127"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55027057"
 ---
 # <a name="use-code-coverage-to-determine-how-much-code-is-being-tested"></a>使用程式碼涵蓋範圍來決定所測試的程式碼數量
 

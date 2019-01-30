@@ -6,15 +6,15 @@ ms.topic: conceptual
 ms.assetid: 525815c8-2845-45e8-be96-100d1f144725
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 724d61fcebe85a512afa346e4deed58f16260c46
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a26f6b06c972d88ba1dfd56e8c3e4ebc1e4fed36
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53963825"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54943152"
 ---
 # <a name="tutorial-3-create-a-matching-game"></a>教學課程 3：建立配對遊戲
 

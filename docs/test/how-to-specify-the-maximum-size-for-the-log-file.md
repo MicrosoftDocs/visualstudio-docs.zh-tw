@@ -7,14 +7,14 @@ helpviewer_keywords:
 ms.assetid: 417059bf-37ae-4e7a-b9b0-29bd71f1414f
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 69078569f59612f5335266784d71c5003aad5f5d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5b685681444e501ef05b76bea22d2152c3296908
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53902956"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54973677"
 ---
 # <a name="how-to-specify-the-maximum-size-for-the-log-file-for-load-tests"></a>HOW TO：指定負載測試的記錄檔大小上限
 

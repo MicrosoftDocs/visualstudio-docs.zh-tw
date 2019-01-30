@@ -2,22 +2,22 @@
 title: Visual Studio 中的 Python 教學課程步驟 1 來建立專案
 titleSuffix: ''
 description: 在 Visual Studio 中 Python 功能核心逐步解說的概觀與步驟 1，包含必要條件和建立新的 Python 專案。
-ms.date: 10/29/2018
+ms.date: 01/28/2019
 ms.prod: visual-studio-dev15
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 2741d98eff02fd17be67213ab1069bdd43476475
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bc6f831d30f578cb03bbb760da410aefff312e99
+ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53916042"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55231866"
 ---
 # <a name="tutorial-work-with-python-in-visual-studio"></a>教學課程：在 Visual Studio 中使用 Python
 
@@ -61,7 +61,7 @@ Visual Studio 提供 Python 的第一級語言支援。 此教學課程會指導
 
     (1) 以粗體反白顯示的項目就是您的專案，並使用您在 [新增專案] 對話方塊中所指定的名稱。 在磁碟上，此專案是由專案資料夾中的 *.pyproj* 檔案所呈現。
 
-    (2) 最上層是「方案」，預設其名稱與專案相同。 方案 (以磁碟上的 *.sln* 檔案呈現) 是一或多個相關專案的容器。 例如，如果您撰寫 Python 應用程式的 C++ 延伸模組，則該 C++ 專案可能位在相同的方案內。 方案也可以包含 Web 服務的專案，以及專用測試程式的專案。 
+    (2) 最上層是「方案」，預設其名稱與專案相同。 方案 (以磁碟上的 *.sln* 檔案呈現) 是一或多個相關專案的容器。 例如，如果您撰寫 Python 應用程式的 C++ 延伸模組，則該 C++ 專案可能位在相同的方案內。 方案也可以包含 Web 服務的專案，以及專用測試程式的專案。
 
     (3) 在您的專案下方，您會看到原始程式檔，在此情況下，只是單一 *.py* 檔案。 選取檔案時會在 [屬性] 視窗中顯示其屬性。 按兩下檔案即會以該檔案適合的方式開啟。
 

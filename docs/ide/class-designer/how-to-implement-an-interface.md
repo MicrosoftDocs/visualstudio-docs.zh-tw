@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 81d2cf46-7f60-448c-83e3-1d16bb88ca36
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b1f427a78c11696253bdd418f5c8f7ac86b906bf
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.openlocfilehash: f2f3ca84dfb7832d15f6d8d8c53bf3770e36a0d0
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "53916315"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55038197"
 ---
 # <a name="how-to-implement-an-interface-in-class-designer"></a>HOW TO：在類別設計工具中實作介面
 

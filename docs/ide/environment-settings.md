@@ -5,15 +5,15 @@ ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ba582f0c7445a64eb27ea2d3875cd7072f65fe3d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d28b952394f4342c2ae7a93fabf6c6e83d97974b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53927099"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54964531"
 ---
 # <a name="environment-settings-for-visual-studio"></a>Visual Studio 的環境設定
 

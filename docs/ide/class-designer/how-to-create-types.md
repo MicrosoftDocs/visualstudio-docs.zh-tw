@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 94458c31-28bc-40e2-9737-85868788a0e5
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 131c09b170e86858d8a2855092404208fe06fa91
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f71ea519a8eddfc28fbf8bb0d15bdc228050e56a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53916464"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54960941"
 ---
 # <a name="how-to-create-types-by-using-class-designer"></a>HOW TO：使用 [類別設計工具] 建立類型
 

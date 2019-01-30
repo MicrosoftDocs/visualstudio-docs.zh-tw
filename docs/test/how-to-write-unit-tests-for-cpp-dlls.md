@@ -4,16 +4,16 @@ ms.date: 11/04/2017
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.author: mblome
-manager: douge
+manager: jillfra
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 7de21715053a91b187ccdcc1b87f042cedd1b7de
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b6c107bd225f1cc0f0e313b20295f3d87a2730eb
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53832446"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54930741"
 ---
 # <a name="write-unit-tests-for-c-dlls-in-visual-studio"></a>在 Visual Studio 中撰寫 C++ DLL 的單元測試
 

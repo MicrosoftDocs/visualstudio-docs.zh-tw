@@ -8,16 +8,16 @@ helpviewer_keywords:
 - unit tests, verifying code with
 - testing code, automated tests
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 1b036a9a34711d82194ea3c41acdb12651978446
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b490302fe898830afe6ee2c3b8d73ee2454593ba
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53868637"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55070392"
 ---
 # <a name="unit-test-your-code"></a>對程式碼進行單元測試
 

@@ -4,16 +4,16 @@ ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: c617e11fe14f7d838aa04c57f33e50306541a29c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2797a58c7d3811d40f7ed31956280cbc1739794a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53951520"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54922177"
 ---
 # <a name="code-generation-compilation-and-naming-conventions-in-microsoft-fakes"></a>Microsoft Fakes 中的程式碼產生、編譯和命名慣例
 

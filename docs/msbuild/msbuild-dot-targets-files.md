@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: f6d98eb4-d2fa-49b7-8e3c-bae1ca3cf596
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 170f80cc1abb12570e01dd9f9b2fcd04d7bff139
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c4053cd105bddf94644318ff7e06811e8d8cbbaf
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53902811"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54961893"
 ---
 # <a name="msbuild-targets-files"></a>MSBuild .targets 檔案
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 內含數個 .targets 檔案，其中包含適用於通用案例的項目、屬性、目標和工作。 這些檔案會自動匯入大部分的 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 專案檔，以簡化維護和可讀性。  

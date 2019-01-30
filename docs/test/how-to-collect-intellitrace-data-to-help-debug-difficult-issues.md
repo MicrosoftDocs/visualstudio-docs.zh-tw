@@ -10,14 +10,14 @@ helpviewer_keywords:
 ms.assetid: 02b6716f-569e-4961-938a-e790a0c74b5c
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: d9023f094ca662a270d7a28609e09f012d8f445c
-ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
+ms.openlocfilehash: 33dd1d131d85a066078d9e145ccbbc1fed6e98b9
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54154359"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54932346"
 ---
 # <a name="how-to-collect-intellitrace-data-to-help-debug-difficult-issues"></a>HOW TO：收集 IntelliTrace 資料以協助偵錯困難的問題
 

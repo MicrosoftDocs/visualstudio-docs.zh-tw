@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 98a1eb71-bbf5-4ce7-8559-cdc29f082c4b
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ce66ecc8114d349e0fea241b9f704b1f61de198
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a07584130b89eb90da24ebf1ee4783a312033d07
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53842209"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54940462"
 ---
 # <a name="summary-view"></a>摘要檢視
 [摘要] 檢視顯示分析回合中效能耗費最多資源的函式或物件資訊。 此檢視會提供時間軸圖表，以及根據分析方法效能計量之兩個以上耗費最多資源的函式或物件清單。 此檢視中的資料取決於所使用的分析方法 (取樣、檢測或並行) 以及是否收集 .NET 記憶體配置。  

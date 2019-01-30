@@ -5,7 +5,7 @@ ms.prod: visual-studio-dev15
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 f1_keywords:
 - vsl.GenerateFromUsage
 dev_langs:
@@ -13,12 +13,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: a98ccfc73a1d0390cdec101ed763535f316a5625
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 718d8cb497435050b82943da3f0ca466e33b945a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53965826"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54954835"
 ---
 # <a name="generate-a-class-or-type-in-visual-studio"></a>在 Visual Studio 中產生類別或類型
 

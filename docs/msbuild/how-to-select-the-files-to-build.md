@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: f5ff182f-7b3a-46fb-9335-37df54cfb8eb
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2fd4475f149627776480fb54ec821298bf74b700
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7ada47f29f66239a8177b379ba11b4bc66658820
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53875403"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54979253"
 ---
 # <a name="how-to-select-the-files-to-build"></a>HOW TO：選取要建置的檔案
 建置包含數個檔案的專案時，您可以在專案檔中分別列出每個檔案，或是您可以使用萬用字元來包含一個目錄或巢狀目錄集合中的所有檔案。  

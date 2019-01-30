@@ -6,15 +6,15 @@ ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: c5d531f90dd748b3c10e3ac2295a8c340d63b04b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: dfbf4e2b39347fb6307121c84acc6e9f70f8dc2d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53885688"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55031678"
 ---
 # <a name="rtvs-current-version"></a>RTVS 目前版本
 

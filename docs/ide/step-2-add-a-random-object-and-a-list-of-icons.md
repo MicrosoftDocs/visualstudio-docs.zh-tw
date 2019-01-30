@@ -6,15 +6,15 @@ ms.topic: conceptual
 ms.assetid: 95faea28-eddc-4cfa-95fb-3b34b5a976d7
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a8e9787d3f130bc6fb6597b3e8a5a6a8483029d7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e98c79edfc3269781aa97250926f4c2587fb61bd
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53907212"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54923671"
 ---
 # <a name="step-2-add-a-random-object-and-a-list-of-icons"></a>步驟 2：新增隨機物件和圖示清單
 在這個步驟中，您會為遊戲建立一組配對符號。 每個符號會加入至表單上 TableLayoutPanel 中的兩個隨機儲存格。 若要這麼做，您必須使用兩個 `new` 陳述式來建立兩個物件。 第一個是 <xref:System.Random> 物件，就像是您用於數學測驗遊戲中的物件。 該物件在這個程式碼中會用來隨機選擇 TableLayoutPanel 中的儲存格。 第二個物件 (您可能不熟悉) 是一個 <xref:System.Collections.Generic.List%601> 物件，用來儲存隨機選擇的符號。

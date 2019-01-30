@@ -6,17 +6,17 @@ ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: eaeb13a087723b10098c9cfe6f75f3be2aad351e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b6681e3e1a1e04468d00c3b2087d5914cf0e71b6
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53964886"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55015338"
 ---
 # <a name="remotely-debug-python-code-on-linux"></a>對 Linux 上的 Python 程式碼進行遠端偵錯
 
@@ -66,7 +66,7 @@ Visual Studio 可以在 Windows 電腦上本機和遠端啟動 Python 應用程�
         print('Nope. The number I was thinking of was {0}'.format(number))
     ```
 
-1. 使用 `pip3 install ptvsd`，將 `ptvsd` 封裝安裝到您的環境。 
+1. 使用 `pip3 install ptvsd`，將 `ptvsd` 封裝安裝到您的環境。
    >[!NOTE]
    >建議您將 ptvsd 的安裝版本記錄起來，以免需要進行疑難排解；[ptvsd 清單](https://pypi.python.org/pypi/ptvsd)中也會顯示可用的版本。
 

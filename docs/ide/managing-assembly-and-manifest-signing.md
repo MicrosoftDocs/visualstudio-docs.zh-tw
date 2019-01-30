@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 6c1ef36b-25f7-4ad0-b29a-51801b7a5420
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c3795c2887e9d7516f3e9f781e42a2629e2a0b5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c48a4a41c129ec4ba2db7f91f06a6c6bcecd76f2
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53927567"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54939747"
 ---
 # <a name="manage-assembly-and-manifest-signing"></a>管理組件和資訊清單簽署
 

@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 8a978645-1393-4904-ae69-42afabd8c109
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c9ce9b12d67a43f290f6a83e85668233050d4047
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 48c329b68449d9c92d6e501f81f2e3f0d2978cf5
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53854720"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55003157"
 ---
 # <a name="touch-task"></a>Touch 工作
 設定檔案的存取和修改時間。  

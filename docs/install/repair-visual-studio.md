@@ -8,15 +8,15 @@ ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: PoulChapman
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5455dd413b00556bd6254fe134585f163e294b92
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.openlocfilehash: 2a8d776036dec221d66aeffb93b618e500cfa7f9
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54315484"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54987280"
 ---
 # <a name="repair-visual-studio-2017"></a>修復 Visual Studio 2017
 

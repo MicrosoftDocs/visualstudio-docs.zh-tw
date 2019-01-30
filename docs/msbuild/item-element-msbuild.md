@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: dcef5f91-0613-4bfc-8ee9-d7004bb6d3a9
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d032e16acc0b3858f81f0989442b8fcfb351047
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.openlocfilehash: befac75f321863784f6977e99e00b36dfc077563
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54345613"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54943022"
 ---
 # <a name="item-element-msbuild"></a>Item 項目 (MSBuild)
 包含使用者定義的項目及其中繼資料。 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 專案中使用的每個項目，都必須指定為 `ItemGroup` 項目的子系。  

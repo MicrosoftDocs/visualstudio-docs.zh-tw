@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 9bd4bde2-2ca3-446c-9ccc-7421522e03ae
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 86a4e29425e710818dee68e28dcc306c3c14ab85
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 709019ecc38558a324f48fc98ec803f7f328f963
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53927502"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55037132"
 ---
 # <a name="call-tree-view---contention-data"></a>呼叫樹狀圖檢視 - 爭用資料
 [呼叫樹狀圖] 檢視顯示在分析的應用程式中周遊的函式執行路徑。 樹狀圖的根是應用程式或元件的進入點。 每個函式節點都會列出它呼叫的所有函式，以及因函式與其他執行緒或處理序爭用資源而遭封鎖的次數和時間長度。  

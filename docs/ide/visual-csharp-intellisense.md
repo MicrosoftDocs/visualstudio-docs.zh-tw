@@ -8,15 +8,15 @@ helpviewer_keywords:
 - IntelliSense [C#]
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: cf15c8015eb1a26cc418bcf11d9e189eb3875585
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f352ac46b87fee66a491c178f5f11369eca7b7d7
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53885792"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54979058"
 ---
 # <a name="c-intellisense"></a>C# IntelliSense
 

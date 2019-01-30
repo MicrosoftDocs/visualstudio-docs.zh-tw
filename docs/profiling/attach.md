@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 79614283-6733-4592-a53a-d428052271ad
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bc094fe4d8ef59a17a64d654edff4a834964df79
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: dd89e8c5d56606a60994d70d4d9fecbbe3b6e53c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53901317"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54940438"
 ---
 # <a name="attach"></a>附加
 *VSPerfCmd.exe* **Attach** 選項會開始進行處理序識別碼 (PID) 所指定之執行中處理序的樣本分析。  

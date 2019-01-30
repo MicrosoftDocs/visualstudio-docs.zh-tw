@@ -6,15 +6,15 @@ ms.topic: conceptual
 ms.assetid: af8eb0f3-bf6a-4d1c-ab47-dcd88ab04efa
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 75b7b405ba9e25a94c8db22c4ddf5e4a0aedad09
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6c1b1292bbd1c1f734fc7aa949d6af0ac1d0fad1
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53913487"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54937999"
 ---
 # <a name="walkthrough-create-a-realistic-3d-billiard-ball"></a>逐步解說：建立逼真的 3D 撞球
 

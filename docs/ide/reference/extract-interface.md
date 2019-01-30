@@ -5,7 +5,7 @@ ms.prod: visual-studio-dev15
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 f1_keywords:
 - vs.csharp.refactoring.extractinterface
 dev_langs:
@@ -13,12 +13,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: bc315ed49e31e78bc549e446858a30979d7135b2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fe61ca799b6df00acc34a0579398d612c142c2c2
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53838212"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55028449"
 ---
 # <a name="extract-an-interface-refactoring"></a>擷取介面重構
 

@@ -14,14 +14,14 @@ helpviewer_keywords:
 ms.assetid: 4a919cd8-541c-40ee-be3b-352fabc56140
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: f27689d5e3c322a539a0db5ee1f93c569cb181a5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d1d5899211283301bde2944eb07b67b6d7b59a4f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53914552"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55012621"
 ---
 # <a name="analyze-load-test-results-in-the-graphs-view-of-the-load-test-analyzer"></a>在負載測試分析器的圖形檢視中分析負載測試結果
 

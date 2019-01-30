@@ -7,17 +7,17 @@ ms.custom: get-started
 ms.topic: tutorial
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9d3196a1e6828d093245043ec5c21accd50a6bbb
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: c55f0bf2d36d06cc47e39086236b41d4cc8340c9
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53739613"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54961607"
 ---
 # <a name="learn-about-projects-and-solutions-using-visual-basic"></a>了解使用 Visual Basic 的專案與解決方案
 

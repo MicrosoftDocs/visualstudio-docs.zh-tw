@@ -6,17 +6,17 @@ ms.prod: visual-studio-dev15
 ms.topic: quickstart
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8e4712a5dd73c899e82a8fc6e07331be5b6e6c46
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9dd949f921c3d504823e9204e0974617c8a2b3e7
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53863689"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54953181"
 ---
 # <a name="quickstart-create-a-project-from-a-cookiecutter-template"></a>快速入門：從 Cookiecutter 範本建立專案
 
@@ -26,7 +26,7 @@ ms.locfileid: "53863689"
 
 1. 啟動 Visual Studio。
 
-1. 選取 [檔案] > [新增] > [從 Cookiecutter]。 此命令會在 Visual Studio 中開啟視窗，而您可以在其中瀏覽範本。 
+1. 選取 [檔案] > [新增] > [從 Cookiecutter]。 此命令會在 Visual Studio 中開啟視窗，而您可以在其中瀏覽範本。
 
     ![從 Cookiecutter 範本新增專案](media/projects-from-cookiecutter1.png)
 
@@ -38,7 +38,7 @@ ms.locfileid: "53863689"
 
 1. 程序完成時，您看到「已成功建立檔案」訊息。 選取 [在方案總管中開啟] 命令以開啟專案。
 
-1. 按 **Ctrl**+**F5**，或是選取 [偵錯] > [啟動但不偵錯]，以執行程式。 
+1. 按 **Ctrl**+**F5**，或是選取 [偵錯] > [啟動但不偵錯]，以執行程式。
 
     ![python-sklearn-classifier-cookiecutter 範本專案的輸出](media/projects-from-cookiecutter4.png)
 

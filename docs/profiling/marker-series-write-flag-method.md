@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: ca07f388-e5d5-46fd-b991-fe6e9029a68f
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ba32b08de607f28a32cedf4050c4b4db439c1a39
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f70f6b357e8baaf721c751c57b21924afaff90e6
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53840495"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55069770"
 ---
 # <a name="markerserieswriteflag-method"></a>marker_series::write_flag 方法
 將旗標寫入並行視覺化檢視追蹤檔。  

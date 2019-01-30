@@ -6,17 +6,17 @@ ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 7ed108232fc1dd04785f5eeb68d29fb304607ed7
-ms.sourcegitcommit: a7e6675185fd34ac8084f09627b2038046cdd2b1
+ms.openlocfilehash: cdaaf7964ee7da9a5ae7a1b1bfa0f77631c22622
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/07/2019
-ms.locfileid: "54060851"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55036065"
 ---
 # <a name="debug-your-python-code"></a>偵錯您的 Python 程式碼
 

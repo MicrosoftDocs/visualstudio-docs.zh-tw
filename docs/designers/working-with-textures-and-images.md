@@ -6,15 +6,15 @@ ms.topic: conceptual
 ms.assetid: b9fbc8fa-66d1-4055-8460-24d8b8fbe43e
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d7e7519817c15a73ad0c4e6b136790984cbe1cdf
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fd520d6a07722063ce1cc5f3c08e4592dbe08351
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53913878"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55010996"
 ---
 # <a name="work-with-textures-and-images"></a>使用紋理和影像
 

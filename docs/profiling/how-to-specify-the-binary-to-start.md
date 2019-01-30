@@ -10,15 +10,15 @@ helpviewer_keywords:
 - performance sessions, launching
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c569b9e285e4865b8ef637443acdf6026b0fec9c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8a82e67d92dcb7b59898e4eb9d4b72d3e53ff351
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53868465"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54952570"
 ---
 # <a name="how-to-specify-the-binary-to-start"></a>HOW TO：指定要啟動的二進位檔
 

@@ -6,15 +6,15 @@ ms.topic: conceptual
 ms.assetid: 185cf370-ab39-4ac0-b6bc-601d5b95a4a2
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 55c5b2a645c2781f9286b635cd6d1e08dd86137e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 53c807835af42ac09aa71eba5dac05e9606af94f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53882850"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54952856"
 ---
 # <a name="step-10-write-code-for-additional-buttons-and-a-check-box"></a>步驟 10：為其他按鈕及核取方塊撰寫程式碼
 現在，您可以準備完成其他四個方法。 您可以複製及貼上此程式碼，但如果想要充分學習本教學課程，請輸入程式碼並使用 IntelliSense。

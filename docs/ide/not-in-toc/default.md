@@ -6,16 +6,16 @@ robots: noindex,nofollow
 f1_keywords:
 - vs.texteditor
 - vs.ambient
-manager: douge
+manager: jillfra
 author: gewarren
 ms.author: gewarren
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 1be890236efcfdb62c0fa6b4f9ad24d54d81b20f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: be3a845dcc31c2f5b58d9f3be38026265a9b1a88
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53865449"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55069664"
 ---
 # <a name="f1-help"></a>F1 說明
 

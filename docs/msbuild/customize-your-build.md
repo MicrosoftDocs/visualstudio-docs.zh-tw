@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: d0bceb3b-14fb-455c-805a-63acefa4b3ed
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 858d28ac2fdc6cab32e537e86f84771e0fb53f90
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f09e5c32bd18213969481ab214fa7873f4f69c48
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53919556"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54982152"
 ---
 # <a name="customize-your-build-c-visual-basic"></a>自訂組建 (C#、Visual Basic)
 

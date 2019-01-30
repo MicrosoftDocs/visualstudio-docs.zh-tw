@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: f5e49c24-d4cf-4f87-977d-37e3223d1196
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cb7e4712c47376c6e7389085b78e2e01c58f6d88
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 41d5a490ddd4b426a3c03f9e5bbea94d18660200
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53853472"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54946330"
 ---
 # <a name="instruction-pointers-ips-view---contention-data"></a>指令指標 (IP) 檢視 - 爭用資料
 爭用資料的 IP檢視會列出遭到封鎖而不可在程式碼剖析執行時執行的組件指令。  

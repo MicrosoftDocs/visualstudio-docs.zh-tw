@@ -7,14 +7,14 @@ helpviewer_keywords:
 ms.assetid: 0c86918b-cd63-4468-8f49-6d547a1276dc
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: f32c03a9cad8c2e264d7b3e9f98e93a71c1ad5d6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e523f66b4d89ea430e3665f8a54095eee103fbde
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53888435"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54973742"
 ---
 # <a name="collect-diagnostic-information-using-test-settings"></a>使用測試設定收集診斷資訊
 

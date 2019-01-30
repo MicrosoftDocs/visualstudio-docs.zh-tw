@@ -6,17 +6,17 @@ ms.topic: conceptual
 ms.devlang: javascript
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 75f40dc5abe10f75dccad91fa96d7e149267dc47
-ms.sourcegitcommit: 8bfabab73b39b3b3e68a3e8dc225515e8b310fed
+ms.openlocfilehash: 7ad0105cffc99894134dc58af7c71c9f95bceace
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "54398217"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54946694"
 ---
 # <a name="unit-testing-javascript-and-typescript-in-visual-studio"></a>在 Visual Studio 中對 JavaScript 和 TypeScript 進行單元測試
 

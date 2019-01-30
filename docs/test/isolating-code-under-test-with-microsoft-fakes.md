@@ -4,19 +4,19 @@ ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
 dev_langs:
 - VB
 - CSharp
-ms.openlocfilehash: f38ce5a070214d96e969d3b27eb1662448e8360c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e2d1415c4662d1605afd468c6d6d992466e5a90b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53966517"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54929279"
 ---
 # <a name="isolate-code-under-test-with-microsoft-fakes"></a>使用 Microsoft Fakes 隔離測試中的程式碼
 

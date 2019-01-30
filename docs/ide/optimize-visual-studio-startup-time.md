@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: d1508121-8499-4084-8eb5-fa89fa7b17d3
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 f1_keywords:
 - vs.performancecenter
 ms.prod: visual-studio-dev15
 ms.workload:
 - multiple
-ms.openlocfilehash: 39dd45f7b66dfe0966f3a8c62841f591d56a195a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 873977e8ab1180eb6671a34304b033515b6fc36e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53865540"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54949294"
 ---
 # <a name="optimize-visual-studio-startup-time"></a>最佳化 Visual Studio 啟動時間
 

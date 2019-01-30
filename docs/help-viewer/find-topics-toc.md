@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 8b98464d-2b05-4710-ad68-5647e78c6b7b
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 667295e0343b7523f039770b02a7544c36906db2
-ms.sourcegitcommit: 75e02ed88a1ace6e8265fd4e3a82a1bc78f3adca
+ms.openlocfilehash: 6becee36b4d78d6522e662d3b6bc4879cad7501d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/13/2018
-ms.locfileid: "54406076"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54940839"
 ---
 # HOW TO：在目錄中尋找主題
 

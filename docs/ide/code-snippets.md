@@ -11,19 +11,19 @@ helpviewer_keywords:
 - code snippets
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 - VB
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: c539e2a20f7fa32ccba86a56831c71b17fdbefa5
-ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
+ms.openlocfilehash: 3b18f716c1804b0217fd8c882e152de0352a72ab
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/14/2019
-ms.locfileid: "54269401"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54958338"
 ---
 # <a name="code-snippets"></a>程式碼片段
 

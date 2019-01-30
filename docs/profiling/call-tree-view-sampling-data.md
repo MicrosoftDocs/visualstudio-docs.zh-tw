@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 5c4e8ec3-d0d3-485a-93bd-9060df4eb739
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c71ff415ea121f5fb8a28eb8365e601414ba5d0a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 41b6a9fca008e7f457eb75b52d9ace3a38451262
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53917484"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54933009"
 ---
 # <a name="call-tree-view---sampling-data"></a>呼叫樹狀圖檢視 - 取樣資料
 [呼叫樹狀圖] 檢視顯示在分析的應用程式中周遊的函式執行路徑。  

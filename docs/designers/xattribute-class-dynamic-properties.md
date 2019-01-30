@@ -6,15 +6,15 @@ ms.topic: reference
 ms.assetid: 7394cef0-55e9-4e90-bc2e-118ed4b78fb0
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d96548b1894389c2ad48dd3cababfb31de2808af
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6639485d02c0563e3d4ebde266974438cb9e9b63
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53826439"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54966016"
 ---
 # <a name="xattribute-class-dynamic-properties"></a>XAttribute 類別動態屬性
 

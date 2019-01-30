@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 876f145b-ec07-4240-ade6-4f6e44baadce
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c503c0fccf6cd78a01914647294a37e0b86f55e5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 21787d108fcd1ea6913b937ef4985dd762bee8ba
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53947903"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55023217"
 ---
 # <a name="resumeprofile"></a>ResumeProfile
 `ResumeProfile` 方法會遞減指定分析層級的暫止/繼續計數器。  

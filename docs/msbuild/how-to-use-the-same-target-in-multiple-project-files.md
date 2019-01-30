@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 163734bd-1bfd-4093-a730-7741fc21742d
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ace0e86a5c65afa2c8c5fb12364b9dba66c093e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 83b983ee2644010b19370e44be616df7171d7d91
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53905461"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54937245"
 ---
 # <a name="how-to-use-the-same-target-in-multiple-project-files"></a>HOW TO：在多個專案檔中使用相同的目標
 如果您撰寫了數個 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 專案檔，您可能已發現到需要在不同的專案檔中使用相同的工作和目標。 您可以不在每個專案檔中包含這些工作或目標的完整描述，而是在一個個別的專案檔中儲存目標，然後將該專案匯入到任何其他需要使用該目標的專案中。  

@@ -6,15 +6,15 @@ ms.topic: sample
 ms.assetid: 60126510-b7dd-4cb4-92d3-9883590b92f2
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1f7d5e26d78dcc2e90477b2d7b99a4c64c17ce37
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 394936e9a6b94fdcb186e077c51977432dc2013d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53934845"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54920380"
 ---
 # <a name="sample-xsd-file-relationships"></a>XSD 範例檔案：關聯性
 

@@ -13,14 +13,14 @@ dev_langs:
 - VB
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 21c4f8a7c1f8e5d5449f576740e8f901d25d9006
-ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
+ms.openlocfilehash: 7640ce25bb2c4dc3db57e59db9b5ac75c6d25442
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/14/2019
-ms.locfileid: "54269528"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54935783"
 ---
 # <a name="generate-and-run-a-coded-web-performance-test"></a>產生和執行 Web 效能測試程式碼
 

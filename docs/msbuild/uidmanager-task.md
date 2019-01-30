@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 4fc7b5a5-11b0-46ca-9656-8c2a0b08d1fe
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 93b3c571d8c68eee8ee00475fad8bda2b5b2ec65
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b2e6f653ca7fc6bc335ab58530242f94b1f95d39
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53989123"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54963799"
 ---
 # <a name="uidmanager-task"></a>UidManager 工作
 <xref:Microsoft.Build.Tasks.Windows.UidManager> 工作會檢查、更新或移除唯一識別碼 (UID)，以將來源 [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] 檔案中包含的所有 [!INCLUDE[TLA#tla_xaml](../msbuild/includes/tlasharptla_xaml_md.md)] 項目當地語系化。  
