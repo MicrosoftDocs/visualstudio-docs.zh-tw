@@ -380,7 +380,45 @@ items:
 - name: Visual Studio C++ 專案擴充性
   href: visual-cpp-project-extensibility.md
 - name: Visual Studio 使用者體驗方針
-  href: ux-guidelines/toc.yml
+  href: ux-guidelines/visual-studio-user-experience-guidelines.md
+  items:
+  - name: UX 基本資訊
+    href: ux-guidelines/ux-essentials-for-visual-studio.md
+  - name: 字型與格式化
+    href: ux-guidelines/fonts-and-formatting-for-visual-studio.md
+  - name: 色彩與樣式
+    href: ux-guidelines/colors-and-styling-for-visual-studio.md
+    items:
+    - name: 共用色彩
+      href: ux-guidelines/shared-colors-for-visual-studio.md
+    - name: 色彩值參考
+      href: ux-guidelines/color-value-reference-for-visual-studio.md
+  - name: 影像與圖示
+    href: ux-guidelines/images-and-icons-for-visual-studio.md
+    items:
+    - name: 視覺化語言字典
+      href: ux-guidelines/visual-language-dictionary-for-visual-studio.md
+  - name: 功能表與命令
+    href: ux-guidelines/menus-and-commands-for-visual-studio.md
+  - name: 互動模式
+    href: ux-guidelines/interaction-patterns-for-visual-studio.md
+    items:
+    - name: 應用程式模式
+      href: ux-guidelines/application-patterns-for-visual-studio.md
+    - name: 常見控制項模式
+      href: ux-guidelines/common-control-patterns-for-visual-studio.md
+    - name: 複合模式
+      href: ux-guidelines/composite-patterns-for-visual-studio.md
+  - name: UI 文字與說明
+    href: ux-guidelines/ui-text-and-help-for-visual-studio.md
+  - name: 對話方塊版面配置
+    href: ux-guidelines/layout-for-visual-studio.md
+  - name: 通知與進度
+    href: ux-guidelines/notifications-and-progress-for-visual-studio.md
+  - name: Animations
+    href: ux-guidelines/animations-for-visual-studio.md
+  - name: 評估工具
+    href: ux-guidelines/evaluation-tools-for-visual-studio.md
 - name: 處理 DPI 問題
   href: addressing-dpi-issues2.md
 - name: 影像服務與資料庫目錄
@@ -743,9 +781,9 @@ items:
     href: roslyn-analyzers-and-code-aware-library-for-immutablearrays.md
   - name: Roslyn 套件版本參考
     href: roslyn-version-support.md
-ms.openlocfilehash: f16722f3f0b684b3923f2dfa5b30c06e79d0a90b
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.openlocfilehash: 14efc710953d669b51b275226885eb9d0f5bbe50
+ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53562356"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55231996"
