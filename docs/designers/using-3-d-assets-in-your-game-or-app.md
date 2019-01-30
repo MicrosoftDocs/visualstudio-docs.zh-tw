@@ -13,15 +13,15 @@ f1_keywords:
 ms.assetid: ea587909-e434-46a8-abf8-9b3e95a58b4f
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d346982d682305f3c80531bd4386fbefda536a9f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f9a292e1bdd25a07029ab90d9f2ba5bbfc08bed2
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53986761"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54942369"
 ---
 # <a name="use-3d-assets-in-your-game-or-app"></a>在遊戲或應用程式中使用 3D 資產
 

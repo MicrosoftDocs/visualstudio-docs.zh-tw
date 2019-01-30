@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: de110a4e-5b51-4a40-9dee-615df4d8f999
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e78e92e5d6f8b21dde2660491a944620ac19069b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fb594bd1096dbf2908ed2daa21706f60d329264e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53916662"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55038353"
 ---
 # <a name="how-to-view-existing-types-in-class-designer"></a>HOW TO：在 [類別設計工具] 中檢視現有類型
 

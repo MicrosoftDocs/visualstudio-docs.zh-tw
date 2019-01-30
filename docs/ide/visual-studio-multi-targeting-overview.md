@@ -11,15 +11,15 @@ helpviewer_keywords:
 - .NET framework targeting [Visual Studio]
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 763e02dbd491e132dc91ec7a79717fab1e645d86
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f3131c6aef7d7e255e28ef2a75ab3515def55d61
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53955197"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54956684"
 ---
 # <a name="visual-studio-multi-targeting-overview"></a>Visual Studio 多目標概觀
 

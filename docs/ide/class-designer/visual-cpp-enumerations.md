@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 11e90ba1-18cd-44f8-9e26-e3746a7a19d1
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: dde9e749a58935e0b50b604897092f69f16300b3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d5f02d899c9d81c8dd19aac879bed7ac9c1acdb8
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53869199"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54946824"
 ---
 # <a name="visual-c-enumerations-in-class-designer"></a>類別設計工具中的 Visual C++ 列舉
 

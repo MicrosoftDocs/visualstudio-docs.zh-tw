@@ -7,14 +7,14 @@ helpviewer_keywords:
 ms.assetid: de10dabb-02ed-403b-9e6f-0b735524988c
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 73c561cf7f79345751b62b53ec3b7da4f74e2e52
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0ab64f1d59e5a183355f665dd720b02a46be98e9
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53860201"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54970171"
 ---
 # <a name="load-test-run-settings-properties"></a>負載測試回合設定屬性
 

@@ -10,12 +10,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6b96faf4ec1daa80bdd6d97e623fd0e155a39325
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bd4986d88654e584b3c05be2fd2b720b76be423a
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53942183"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54834249"
 ---
 # <a name="get-started-with-live-unit-testing-in-visual-studio"></a>在 Visual Studio 中開始使用 Live Unit Testing
 
@@ -25,7 +25,7 @@ Live Unit Testing 可以用來測試目標設為 .NET Framework 或 .NET Core �
 
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
 您可以從 GitHub 的 [MicrosoftDocs/visualstudio-docs](https://github.com/MicrosoftDocs/visualstudio-docs/tree/master/docs/test/samples/csharp/UtilityLibraries/) 存放庫下載完整 C# 方案。
-# <a name="visual-basictabvisual-basic"></a>[Visual Basic](#tab/visual-basic)
+# <a name="visual-basictabvb"></a>[Visual Basic](#tab/vb)
 您可以從 GitHub 的 [MicrosoftDocs/visualstudio-docs](https://github.com/MicrosoftDocs/visualstudio-docs/tree/master/docs/test/samples/visual-basic/UtilityLibraries/) 存放庫下載完整 Visual Basic 方案。
 
 ---
@@ -78,7 +78,7 @@ Live Unit Testing 可以用來測試目標設為 .NET Framework 或 .NET Core �
 
 1.  從最上層 Visual Studio 功能表中，依序選取 [建置] > [建置方案]。 Visual Studio 應該已成功建置程式庫。
 
-# <a name="visual-basictabvisual-basic"></a>[Visual Basic](#tab/visual-basic)
+# <a name="visual-basictabvb"></a>[Visual Basic](#tab/vb)
 1. 在 [方案總管] 中以滑鼠右鍵按一下 `UtilityLibraries` 方案，然後選取 [新增] > [新增專案]。
 
 1. 在 [新增專案] 對話方塊中，選取 Visual Basic 節點，然後選取 [.NET Standard]。
@@ -153,7 +153,7 @@ Live Unit Testing 可以用來測試目標設為 .NET Framework 或 .NET Core �
 
 1. 從最上層的 Visual Studio 功能表，選取 [建置]  >  [重建方案]，以編譯單元測試專案。
 
-# <a name="visual-basictabvisual-basic"></a>[Visual Basic](#tab/visual-basic)
+# <a name="visual-basictabvb"></a>[Visual Basic](#tab/vb)
 
 1. 在 [方案總管] 中以滑鼠右鍵按一下 `UtilityLibraries` 方案，然後選取 [新增] > [新增專案]。
 
@@ -210,7 +210,7 @@ Live Unit Testing 可以用來測試目標設為 .NET Framework 或 .NET Core �
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
 ![啟動 Live Unit Testing 之後的測試總管和程式碼視窗](media/lut-start/lut-results-cs.png)
 
-# <a name="visual-basictabvisual-basic"></a>[Visual Basic](#tab/visual-basic)
+# <a name="visual-basictabvb"></a>[Visual Basic](#tab/vb)
 ![啟動 Live Unit Testing 之後的測試總管和程式碼視窗](media/lut-start/lut-results-vb.png)
 
 ---
@@ -226,7 +226,7 @@ Live Unit Testing 可以用來測試目標設為 .NET Framework 或 .NET Core �
 
    ![return 陳述式的程式碼涵蓋範圍](media/lut-start/code-coverage-cs2.png)
 
-# <a name="visual-basictabvisual-basic"></a>[Visual Basic](#tab/visual-basic)
+# <a name="visual-basictabvb"></a>[Visual Basic](#tab/vb)
 1. 按一下 `StartsWithUpper` 方法之 `If (String.IsNullOrWhiteSpace(s)) Then` 行中的綠色核取記號。 如下圖所示，Live Unit Testing 指出三項測試涵蓋該程式碼行，而且全部已成功執行。
 
    !['If' 條件陳述式的程式碼涵蓋範圍](media/lut-start/code-coverage-vb1.png)
@@ -262,7 +262,7 @@ Live Unit Testing 所識別的主要問題是不完整的程式碼涵蓋範圍�
 
     ![StartsWithLower 方法的程式碼涵蓋範圍](media/lut-start/lut-extended-cs.png)
 
-# <a name="visual-basictabvisual-basic"></a>[Visual Basic](#tab/visual-basic)
+# <a name="visual-basictabvb"></a>[Visual Basic](#tab/vb)
 1. 將下列 `TestStartsWithLower` 和 `TestDoesNotStartWithLower` 方法新增至專案的測試原始程式檔：
 
     [!code-vb[StringLibraryTest source code](samples/snippets/visual-basic/lut-start/unittest2.vb#1)]
@@ -322,7 +322,7 @@ Live Unit Testing 所識別的主要問題是不完整的程式碼涵蓋範圍�
 
 1. 選取 [偵錯] > [繼續]、按 **F5**，或按一下工具列上的 [繼續] 按鈕，繼續執行測試程式。 因為發生無法處理的例外狀況，所以測試終止。
 
-# <a name="visual-basictabvisual-basic"></a>[Visual Basic](#tab/visual-basic)
+# <a name="visual-basictabvb"></a>[Visual Basic](#tab/vb)
 1. 將下列方法新增至測試檔案：
 
     [!code-vb[The TestHasEmbeddedSpaces test method](samples/snippets/visual-basic/lut-start/unittest2.vb#3)]
@@ -370,7 +370,7 @@ Live Unit Testing 所識別的主要問題是不完整的程式碼涵蓋範圍�
 
     ![成功 HasEmbeddedSpaces 測試。](media/lut-start/test-success-cs.png)
 
-# <a name="visual-basictabvisual-basic"></a>[Visual Basic](#tab/visual-basic)
+# <a name="visual-basictabvb"></a>[Visual Basic](#tab/vb)
 1. 查看 `HasEmbeddedSpaces` 方法中的比較。 它會將內嵌空格視為 U+0020。 不過，Unicode Standard 包含許多其他空格字元。 這可能表示不正確地測試程式庫程式碼的空格字元。
 
 1. 將相等比較取代為 <xref:System.Char.IsWhiteSpace%2A?displayProperty=fullName> 方法呼叫：

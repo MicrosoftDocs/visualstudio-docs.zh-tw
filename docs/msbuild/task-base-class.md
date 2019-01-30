@@ -10,15 +10,15 @@ dev_langs:
 ms.assetid: 6c3f6238-b9f0-4325-b8b0-de61090bd0a2
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1f2f32273ff00121ea764add262f16635d52de77
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f1859694a85b25effe56afef17f65bd831a65882
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53910278"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54959404"
 ---
 # <a name="task-base-class"></a>Task 基底類別
 許多工作最終繼承自 <xref:Microsoft.Build.Utilities.Task> 類別。 此類別會將數個參數新增至從中衍生它們的工作。 本文件會列出這些參數。  

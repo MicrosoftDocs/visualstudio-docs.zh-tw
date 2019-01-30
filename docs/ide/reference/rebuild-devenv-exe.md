@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: c5a8a4bf-0e2b-46eb-a44a-8aeb29b92c32
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 208bc533578d116fe55ad336f4aaee72eec94c3f
-ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
+ms.openlocfilehash: 65667245ba8cdcdccc3fe96f2fefe89d2d2b1aba
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/14/2019
-ms.locfileid: "54268563"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54965285"
 ---
 # <a name="rebuild-devenvexe"></a>/Rebuild (devenv.exe)
 

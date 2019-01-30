@@ -19,15 +19,15 @@ helpviewer_keywords:
 - objects [Visual Studio], referencing
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6209daea293859df16212560255f50d7f7ffff28
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3612e3b04fc27460922f90e48666397ce9fb3b73
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53822500"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55042982"
 ---
 # <a name="manage-references-in-a-project"></a>管理專案中的參考
 

@@ -5,13 +5,13 @@ ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.author: gewarren
 author: gewarren
-ms.manager: douge
-ms.openlocfilehash: 28c051375811a79775af53dbb0d796ed74d25003
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.manager: jillfra
+ms.openlocfilehash: 502e77f288f9daee3bd1952b86879954497dadee
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53848294"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54931790"
 ---
 # <a name="connect-to-projects-in-team-explorer"></a>在 Team Explorer 中連線到專案
 

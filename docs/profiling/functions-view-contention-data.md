@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 208773b0-1a54-4b7a-ad37-2b6fd4f731d4
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b92d19c48f91d6094136d0ac8d2d6b276b59707d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a774c3e04a2a4ded098424728cf3f9621699be1d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53920020"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55068742"
 ---
 # <a name="functions-view---contention-data"></a>函式檢視 - 爭用資料
 爭用資料的函式報告檢視會列出執行的分析中，於分析執行期間被封鎖執行的函式。  

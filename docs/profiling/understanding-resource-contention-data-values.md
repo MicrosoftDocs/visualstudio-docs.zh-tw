@@ -7,15 +7,15 @@ helpviewer_keywords:
 - Profiling Tools, concurrency method
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d62b21e83f057c2a1d2e4347b3d7bcf6dbc22ad
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d5bfd571364dadb4d070634ee6a5d28951e90586
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53896620"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54960707"
 ---
 # <a name="understand-resource-contention-data-values"></a>了解資源爭用資料值
 

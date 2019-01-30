@@ -6,15 +6,15 @@ ms.topic: conceptual
 ms.assetid: 62670a2b-efdc-45c6-9646-9b17eeb33dcb
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c259f8cae798db3ed79329276c95135a9b607541
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d07265ec978b6bf444d1d98407ddace991c162df
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53962554"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54935042"
 ---
 # <a name="step-3-add-a-countdown-timer"></a>步驟 3：新增倒數計時器
 在本教學課程的第三個部分中，您將加入倒數計時器來追蹤受測者可完成作答的剩餘秒數。

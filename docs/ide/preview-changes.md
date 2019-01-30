@@ -5,17 +5,17 @@ ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 f1_keywords:
 - vs.codefix.previewchanges
 ms.workload:
 - multiple
-ms.openlocfilehash: be664e48694ad1d0ea88a95a6b72e0355454d9db
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: af5cc054411d5297e919f549c7cb518b48ac441b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53832988"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54928811"
 ---
 # <a name="preview-changes-window"></a>[預覽變更] 視窗
 

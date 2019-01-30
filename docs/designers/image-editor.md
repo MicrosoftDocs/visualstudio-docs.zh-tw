@@ -8,15 +8,15 @@ f1_keywords:
 - vs.graphics.imageeditor
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d6842a8661dba851fd4f2c73334e89f8cdfe7a1d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: be73a9d17125c1b0186afbb12a20ce07c899ebe5
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53899713"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54935211"
 ---
 # <a name="image-editor"></a>影像編輯器
 

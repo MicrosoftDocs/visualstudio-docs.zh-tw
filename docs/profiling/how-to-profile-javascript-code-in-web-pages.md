@@ -8,15 +8,15 @@ helpviewer_keywords:
 - web site performance profiling
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bc3c83e81608d671db8bad655c4853e5262ea467
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 139cc1ad17448334098dc8e0ac0bbfbdf9ef6d5a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53863633"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55043514"
 ---
 # <a name="how-to-profile-javascript-code-in-web-pages"></a>HOW TO：分析網頁中的 JavaScript 程式碼
 

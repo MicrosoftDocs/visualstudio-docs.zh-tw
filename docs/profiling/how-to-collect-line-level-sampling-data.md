@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 44803aad-dd39-4c2e-9209-d35185d44983
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f7dc61ae776d75331eaaf2974f0eda139b601089
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: af1e0bfd6aff9e7816feee5a627274f2645cf0b0
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53952030"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54959157"
 ---
 # <a name="how-to-collect-line-level-sampling-data"></a>HOW TO：收集程式行層級取樣資料
 程式行層級取樣是程式碼剖析工具的一項功能，可以在需要大量處理器資源的函式 (例如包含大量專有樣本的函式) 中判斷處理器花最多時間處理的程式碼。  

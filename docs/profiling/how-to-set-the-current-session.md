@@ -12,15 +12,15 @@ helpviewer_keywords:
 - sessions, setting multiple
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ba98d1d2a4a427632487e2b96663c5c40ad0a052
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c082abccc6201bd0e0af2152767dd61ce1e720c5
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53841803"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55042500"
 ---
 # <a name="how-to-set-the-current-session"></a>HOW TO：設定目前的工作階段
 

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 2f798c17-2363-42a4-be94-a5751d208eac
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d3ab6254ba56337e3e47379f1f4df800a73c67f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 312da8df1222521fa4cf4511e433e0d174e0bd31
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53870923"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54983543"
 ---
 # <a name="channels-threads-view"></a>通道 (執行緒檢視)
 並行視覺化檢視會顯示四種通道︰執行緒通道、磁碟通道、標記通道和 GPU 通道。  

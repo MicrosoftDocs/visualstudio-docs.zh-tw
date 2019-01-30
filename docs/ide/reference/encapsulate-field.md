@@ -5,7 +5,7 @@ ms.prod: visual-studio-dev15
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 f1_keywords:
 - vs.csharp.refactoring.encapsulatefield
 dev_langs:
@@ -13,12 +13,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: cc2d4e7d7210cc374358c6f5d296f5f99035907a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4b0ccda198cede5f7f4f3094605043eec4defba2
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53822247"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54932242"
 ---
 # <a name="encapsulate-a-field-refactoring"></a>封裝欄位重構
 

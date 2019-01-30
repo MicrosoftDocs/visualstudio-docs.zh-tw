@@ -9,15 +9,15 @@ apitype: Assembly
 ms.assetid: c6c25b8d-a1da-41ff-aeff-867ff1dcf749
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e292be4458459fff2a3784d989e603f21dcb53c9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 520df74dae14fe672eb7d3db1bdc23a0a6437b16
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53888058"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54976754"
 ---
 # <a name="element-xelement-dynamic-property"></a>Element (XElement 動態屬性)
 

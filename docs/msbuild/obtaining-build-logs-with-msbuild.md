@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 6ba9a754-9cc0-4fed-9fc8-4dcd3926a031
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 37c2c9b1ff1380fc8a8f4a96f64a45a0a7fbd1b6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d372bf84d6b43547be160a50e52afffccd42bc89
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53925858"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55035567"
 ---
 # <a name="obtain-build-logs-with-msbuild"></a>使用 MSBuild 取得組建記錄檔
 

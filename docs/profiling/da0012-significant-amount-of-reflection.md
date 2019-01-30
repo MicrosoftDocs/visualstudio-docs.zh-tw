@@ -10,15 +10,15 @@ f1_keywords:
 ms.assetid: c92a1d76-21fa-426e-8b1b-a3c08e9bcbca
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7dc1cbce8b4d676022b7e413d3c1a2c2fe295056
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2083b6446fc4f818bfc7d88b2b8a029ef4b06624
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53932664"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54962114"
 ---
 # <a name="da0012-significant-amount-of-reflection"></a>DA0012：大量的反射
 

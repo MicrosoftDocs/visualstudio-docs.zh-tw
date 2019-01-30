@@ -1,22 +1,22 @@
 ---
 title: 適用於 Python 的 Web 應用程式範本
 description: Visual Studio 提供使用 Bottle、Flask 和 Django 架構的 Python Web 應用程式範本，其支援包括偵錯組態並發佈到 Azure App Service。
-ms.date: 10/29/2018
+ms.date: 01/28/2019
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 29730f6dfa2d220759a5e563305e4e0cbb9675c2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 214db7bcc2dca01917228598f2103a5bd90bbc37
+ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53850618"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55231710"
 ---
 # <a name="python-web-application-project-templates"></a>Python Web 應用程式專案範本
 

@@ -6,17 +6,17 @@ ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 076deaaa326f1e19b14670a91e988dc8eebef450
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fa82d2d475d540dfdda31c7dea1bd4681aaeb7a2
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53989564"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54982386"
 ---
 # <a name="python-environments-window-tabs-reference"></a>Python 環境視窗索引標籤參考
 

@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 2ef82b98-02b6-40cf-a9b5-f0e882fb5064
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 41a462361b5767048d9e29e3ed87c7ce9eb2f30d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fb1ca2a4c77471f4b6767269e511d690c6c094a1
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53819489"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54947266"
 ---
 # <a name="getframeworksdkpath-task"></a>GetFrameworkSdkPath 工作
 擷取 [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)] 的路徑。  

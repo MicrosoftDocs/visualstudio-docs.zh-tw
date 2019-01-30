@@ -8,15 +8,15 @@ f1_keywords:
 - Blend.Start.Dev12
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b44f49c08be44ec16cbd90d06cef96cb091e67f6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5e0a39bee4f44f0cf62c237ec9bb62135637a957
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53934501"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54923788"
 ---
 # <a name="creating-a-ui-by-using-blend-for-visual-studio"></a>使用 Blend for Visual Studio 建立 UI
 

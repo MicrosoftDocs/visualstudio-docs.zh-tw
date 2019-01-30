@@ -6,18 +6,18 @@ ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 dev_langs:
 - Python
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d671a81c75483bfc21cf83954e03307d05a93ce8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 97b48daf123ea39cd00070fa95c4b488da9d9163
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53950747"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54952947"
 ---
 # <a name="welcome-to-the-visual-studio-ide--python"></a>歡迎使用 Visual Studio IDE | Python
 
@@ -27,8 +27,8 @@ Visual Studio 整合式開發環境是支援 Python (和其他語言) 且創作�
 
 此圖顯示 Visual Studio 有一個開啟的 Python 專案，以及數個您可能會用到的重要工具視窗：
 
-- [方案總管][](../ide/solutions-and-projects-in-visual-studio.md) (右上) 可讓您檢視、巡覽及管理您的程式碼檔案。 [方案總管] 透過將程式碼的檔案分組到[解決方案和專案](/visualstudio/get-started/tutorial-projects-solutions)，以協助組織程式碼。
-    - 方案總管 旁的是 Python 環境[](managing-python-environments-in-visual-studio.md)，您可以在此環境中管理安裝在電腦上的其他 Python 解譯器。
+- [[方案總管]](../ide/solutions-and-projects-in-visual-studio.md) (右上) 可讓您檢視、巡覽及管理您的程式碼檔案。 [方案總管] 透過將程式碼的檔案分組到[解決方案和專案](/visualstudio/get-started/tutorial-projects-solutions)，以協助組織程式碼。
+    - 方案總管 旁的是 [Python 環境](managing-python-environments-in-visual-studio.md)，您可以在此環境中管理安裝在電腦上的其他 Python 解譯器。
 
 - [編輯器視窗](../ide/writing-code-in-the-code-and-text-editor.md) (中間) 會顯示檔案內容，您大部分的時間可能都是花在這裡。 您可在這裡[編輯 Python 控制碼](editing-python-code-in-visual-studio.md)、瀏覽程式碼架構，以及在偵錯工作階段期間設定中斷點。 使用 Python 時，您也可按 Ctrl+Enter 在 [[互動式 REPL] 視窗](python-interactive-repl-in-visual-studio.md)中執行該程式碼。
 

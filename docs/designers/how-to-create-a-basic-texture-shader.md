@@ -6,15 +6,15 @@ ms.topic: conceptual
 ms.assetid: 5af113fb-6415-4be0-8b23-10fddb10e80a
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 85de6bcaa4b3b62c9a3ad03464d9b95cb0134a6e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 008a98702bcea94c6daa863f620f3ed8b77078c4
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53946064"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54928421"
 ---
 # <a name="how-to-create-a-basic-texture-shader"></a>HOW TO：建立基本紋理著色器
 

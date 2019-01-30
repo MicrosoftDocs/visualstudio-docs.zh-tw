@@ -23,15 +23,15 @@ helpviewer_keywords:
 - General Environment Options dialog box
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 15af9d627e425df57443cbf663b2b231b74f9a7e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6a881387bc8e808848d8078a1908541628263678
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53945531"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54928174"
 ---
 # <a name="general-environment-options-dialog-box"></a>選項對話方塊、環境、一般
 

@@ -5,15 +5,15 @@ ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f1ae5ae9b0bd751deca5e26ac4ea09e884e5db0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8b57e3494a4d9ed1461f9efa53ad97642e745b06
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53824297"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54940540"
 ---
 # <a name="manage-project-and-solution-properties"></a>管理專案和解決方案屬性
 

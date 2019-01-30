@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 3a81a7c7-39f9-47a8-ba5a-b351227f380e
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5899c8fc2b9e064ac326106a289d8309421e21f2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6f740fd6c63edcb4b7a7f0679995f77c35c71fc8
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53937019"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54948553"
 ---
 # <a name="build-events-dialog-box-visual-basic"></a>建置事件對話方塊 (Visual Basic)
 

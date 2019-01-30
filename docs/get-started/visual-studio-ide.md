@@ -12,15 +12,15 @@ f1_keywords:
 - VS.StartPage.HowDoI
 - MSDNSTART
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6e0950916ad6cbcd4864b0b1813258604be5b757
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fad0568804c4cd455a195c476cd2cd447ef5827f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "54405348"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54954770"
 ---
 # <a name="welcome-to-the-visual-studio-ide"></a>歡迎使用 Visual Studio IDE
 

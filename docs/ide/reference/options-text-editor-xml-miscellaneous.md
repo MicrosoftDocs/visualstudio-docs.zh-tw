@@ -8,13 +8,13 @@ f1_keywords:
 ms.assetid: b6538cbe-badd-4313-a1fb-39e906736bbe
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 85f37f4266f4c05d4de016caa07e8cc6e3cf43a4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 1bcf8da107aa79d67e49a6020b938758b37c1113
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53905620"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54965259"
 ---
 # <a name="options-text-editor-xml-miscellaneous"></a>選項、文字編輯器、XML、其他
 

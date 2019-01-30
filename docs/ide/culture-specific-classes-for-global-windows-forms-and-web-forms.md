@@ -23,18 +23,18 @@ helpviewer_keywords:
 ms.assetid: 0d06a0a4-f887-4f7c-bde7-1d543c06f803
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: cb0215c27b8d1fb09f54bc8590d24b99403670f4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c311e9c79e4f2861b8b52852ff7bb9b0217bf22c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53989957"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54948033"
 ---
 # <a name="culture-specific-classes-for-global-windows-forms-and-web-forms"></a>全域 Windows Form 和 Web Form 的文化特性 (Culture) 特定類別
 

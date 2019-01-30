@@ -8,15 +8,15 @@ helpviewer_keywords:
 - find all references
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 143a40c1a2e3602460419465cb84d6ffa44d853c
-ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
+ms.openlocfilehash: ecb190f7cc0b0f98aea5c3548c756f9bcfcd881d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/14/2019
-ms.locfileid: "54269848"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55034658"
 ---
 # <a name="find-references-in-your-code"></a>在您的程式碼中尋找參考
 

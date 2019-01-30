@@ -8,15 +8,15 @@ helpviewer_keywords:
 - coded UI tests, for large applications
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f1677ac36222b3d7efddc22bc1c0a69394eaf564
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b0fa21c56b3d4f09d73426cc68227cf72484299b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53931678"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54996411"
 ---
 # <a name="test-a-large-application-with-multiple-ui-maps"></a>測試含有多個 UI 對應的大型應用程式
 

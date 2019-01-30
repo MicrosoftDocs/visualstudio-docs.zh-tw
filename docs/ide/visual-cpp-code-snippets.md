@@ -5,17 +5,17 @@ ms.prod: visual-studio-dev15
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CPP
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5069d1b92b9c4f73fdb8eca50eabce170f42cef1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ed34e1cb4eb4c62e7d61c8c0bf324a033ab57f47
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53937435"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55030869"
 ---
 # <a name="visual-c-code-snippets"></a>Visual C++ 程式碼片段
 

@@ -10,13 +10,13 @@ helpviewer_keywords:
 - item templates, parameters
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: e945ac065b2c7f5e3a677ae2175b45a94af2910a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 6c46c0094985e8b84e546ef64fbdd268689c5296
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53935186"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54935016"
 ---
 # <a name="template-parameters"></a>範本參數
 

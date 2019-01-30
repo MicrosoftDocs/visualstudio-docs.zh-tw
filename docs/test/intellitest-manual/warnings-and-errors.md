@@ -6,16 +6,16 @@ ms.topic: reference
 helpviewer_keywords:
 - IntelliTest, Warnings and errors
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: fe52e31c7401acd6bc10d469d98eabf2916f84be
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e6c58aa23e4b5c3133de2bee8f29b3205cf7aff9
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53899021"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54942628"
 ---
 # <a name="warnings-and-errors"></a>警告和錯誤
 

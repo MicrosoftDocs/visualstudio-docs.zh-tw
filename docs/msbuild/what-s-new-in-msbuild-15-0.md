@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 9976b6fd-d052-4017-b848-35b5bf4b2f66
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3712f009262abd9590653af3f3ef4e4e81c87e84
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c6aabe66359c1f400eb06d6738615c1a81b679e0
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53943573"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55069892"
 ---
 # <a name="whats-new-in-msbuild-15"></a>MSBuild 15 中的新功能
 

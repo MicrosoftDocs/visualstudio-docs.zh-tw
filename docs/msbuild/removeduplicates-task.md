@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 481cbab6-73ff-488c-aba5-2c09f9eb1e04
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b11ac8c615bce56e4dc1a0299076ef36e1b6b373
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5d9e732d55858b713d73cbf1ba4f325f40560503
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53831871"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54987371"
 ---
 # <a name="removeduplicates-task"></a>RemoveDuplicates 工作
 從指定的項目集合中移除重複項目。  

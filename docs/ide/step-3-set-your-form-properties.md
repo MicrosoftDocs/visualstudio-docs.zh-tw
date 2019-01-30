@@ -6,15 +6,15 @@ ms.topic: conceptual
 ms.assetid: 634ef037-1525-48c8-ac7f-abf04be69376
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c891a8aa535b9e2bc000f3d115b580f3a220a44b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 29b86b9a81426b81e7fdf4237a70640c6385dd2d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53968507"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54980709"
 ---
 # <a name="step-3-set-your-form-properties"></a>步驟 3：設定表單屬性
 接下來，您要使用 [屬性] 視窗變更表單的外觀。

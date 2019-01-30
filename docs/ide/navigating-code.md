@@ -16,15 +16,15 @@ helpviewer_keywords:
 - go to
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c9415b3cf2c777e0a99b3f24a26e56d1a1c94bf8
-ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
+ms.openlocfilehash: b8a2bb4bf9467000a792a728259d37f40e534ad3
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/14/2019
-ms.locfileid: "54269939"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55039133"
 ---
 # <a name="navigate-code"></a>巡覽程式碼
 

@@ -8,15 +8,15 @@ helpviewer_keywords:
 - build environment, MSBuild
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 104584f415e3b4167206632e75e1c7b6d29bb6b9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f2d6aea526494e2adfd8151497f8b8b01f3f5c07
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53836307"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55038379"
 ---
 # <a name="walkthrough-create-a-multiple-computer-build-environment"></a>逐步解說：建立多電腦建置環境
 

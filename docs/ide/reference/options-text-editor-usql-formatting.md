@@ -11,15 +11,15 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.U-SQL.Formatting.General
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3e0afd9a8ba99ca7b1c167042bc1bbd03da93af1
-ms.sourcegitcommit: d0b02affd24e66efed924c197824f35f823e3240
+ms.openlocfilehash: 3d206d6e5a559550e874769a0dc01af907501882
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/21/2019
-ms.locfileid: "54418039"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55042851"
 ---
 # <a name="options-text-editor-u-sql-formatting"></a>選項、文字編輯器、U-SQL、格式化
 

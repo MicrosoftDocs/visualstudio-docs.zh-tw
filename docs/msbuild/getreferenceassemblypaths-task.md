@@ -10,15 +10,15 @@ dev_langs:
 ms.assetid: 178ef49c-5dee-405b-a14b-a37f41dc0609
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 485b8f9c19a8a91d686b603ee1be9da70b6c78e1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 227b7ba739794bde1588dfbd3b04a5ba3a9e51d4
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53987871"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54989009"
 ---
 # <a name="getreferenceassemblypaths-task"></a>GetReferenceAssemblyPaths 工作
 傳回各種架構的參考組件路徑。  

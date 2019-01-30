@@ -7,17 +7,17 @@ ms.topic: conceptual
 ms.devlang: javascript
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: bae9beac69daf78bfd6a8604c4364af857dff0a6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c4f04d1d919123bca787c6175696224042f79725
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53845950"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54948192"
 ---
 # <a name="manage-npm-packages-in-visual-studio"></a>管理 Visual Studio 中的 npm 套件
 
@@ -36,7 +36,7 @@ Visual Studio 可讓您輕鬆地與 npm 互動，並透過 UI 或直接發出 np
 
 ![從 [方案總管] 安裝新的 npm 套件](../javascript/media/solution-explorer-install-package.png)
 
-在此視窗中，您可以搜尋套件、指定選項，並安裝。 
+在此視窗中，您可以搜尋套件、指定選項，並安裝。
 
 ![搜尋 npm 套件](../javascript/media/search-package.png)
 
@@ -73,10 +73,10 @@ npm 套件會顯示在 [方案總管] 中。 **npm** 節點下的項目會模擬
 在此視窗中，您可以使用下列這類命令來安裝套件：
 
 `.npm install azure@4.2.3`
- 
+
  > [!Tip]
- > npm 預設會在您專案的主目錄中執行。 如果您的方案中有多個專案，則請指定以括弧括住的專案名稱或路徑。 
+ > npm 預設會在您專案的主目錄中執行。 如果您的方案中有多個專案，則請指定以括弧括住的專案名稱或路徑。
  > `.npm [MyProjectNameOrPath] install azure@4.2.3`
 
  > [!Tip]
- > 如果您的專案未包含 package.json 檔案，請使用 `.npm init -y`來以預設項目建立新的 package.json 檔案。 
+ > 如果您的專案未包含 package.json 檔案，請使用 `.npm init -y`來以預設項目建立新的 package.json 檔案。

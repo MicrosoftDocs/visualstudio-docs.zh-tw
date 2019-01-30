@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.assetid: 789f7a1c-38b4-41d0-809b-14f4d96c8116
 author: corob
 ms.author: mblome
-manager: douge
+manager: jillfra
 f1_keywords:
 - VC.Project.AndroidDebugger.DebuggerType
 - VC.Project.AndroidDebugger.AndroidDeviceID
@@ -15,16 +15,16 @@ f1_keywords:
 - VC.Project.AndroidDebugger.LaunchActivity
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: be240ed2cea05194d51040fd29a17de9a4472fc9
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 9a4d7baa970008c2de7a3bc28966f7edbad68b21
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39232640"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55036169"
 ---
 # <a name="android-debugger-properties"></a>Android 偵錯工具屬性
 
-屬性 | 描述 | 選擇
+屬性 | 說明 | 選擇
 --- | ---| ---
 偵錯工具類型 | 指定要偵錯的程式碼類型。 | **僅限原生**<br>**僅限 Java**<br>
 偵錯目標 | 指定要用於偵錯的模擬器或裝置。 如果沒有模擬器正在執行中，請使用 'Android Virtual Device (AVD) Manager' 啟動裝置。

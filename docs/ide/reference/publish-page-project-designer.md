@@ -10,15 +10,15 @@ helpviewer_keywords:
 - Publish page in Project Designer
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d8ff0600efbb591e8646c5369aa255e7ce153b3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 641b6ba6e1e9c5d277cb2861b8d3c4d53ba9a13c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53911402"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54945524"
 ---
 # <a name="publish-page-project-designer"></a>專案設計工具、發行頁
 [專案設計工具]  的 [發行]  頁面，可用以設定 ClickOnce 部署的屬性。

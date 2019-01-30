@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: aba875fe-9cbc-418d-a2c4-6eb47519a5bb
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e340c7a46b469eda296b09da96a01249bc860e2e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ac35c48f9296057b7ab0cdee12b36fdff939af6d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53839108"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54961971"
 ---
 # <a name="da0023-high-gc-cpu-time"></a>DA0023：高記憶體回收 CPU 時間
 

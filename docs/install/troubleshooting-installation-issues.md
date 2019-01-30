@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 556EDD3F-E365-43EE-B3DD-03AA4353F75B
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 413c8a9874669e180a6436bf817704919da48049
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1196902df41ec9c465be948415f866280de62e32
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53910109"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54939812"
 ---
 # <a name="troubleshoot-visual-studio-2017-installation-and-upgrade-issues"></a>針對 Visual Studio 2017 安裝和升級問題進行疑難排解
 

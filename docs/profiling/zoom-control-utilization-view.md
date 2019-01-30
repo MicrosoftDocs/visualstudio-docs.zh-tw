@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 8aeff804-0183-4588-8218-52e107a5382e
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c54a59cf95452e5582252ff29857851b0f43a50
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0f497c7105f0b05caf907d14b59dbbbfc1801dc9
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53986124"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54943324"
 ---
 # <a name="zoom-control-utilization-view"></a>縮放控制 (使用率檢視)
 縮放控制可協助您放大 CPU 使用率圖表，以專注在特別感興趣的區域。 此控制項會從檢視的中央放大。 因此您需要先將感興趣的區域置中再放大。  

@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 029d5ebb-e551-46b0-b64e-2c553d9dbb8e
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d1f45c2437a1bf1f5d0c81d91bced3f26a6faaad
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4bf90e28fec2c97c4dbdc5d90bb78ffed4020970
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53942576"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54948735"
 ---
 # <a name="functions-view---sampling-data"></a>函式檢視 - 取樣資料
 取樣方法的函式報表檢視會列出程式碼剖析執行期間取樣的函式。  

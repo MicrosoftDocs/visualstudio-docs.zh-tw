@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 7b6dd40e-2f78-4b50-8e68-41fac1bcb81e
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4505d9d280e8a55ca03fcc8364f10b939e6378a1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 79db18df9f9961a539eb0efb3dd399f9be85a276
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53842563"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54943243"
 ---
 # <a name="troubleshoot-snippets"></a>針對程式碼片段的問題進行疑難排解
 

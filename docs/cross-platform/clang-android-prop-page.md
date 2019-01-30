@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.assetid: 663140ea-a568-472b-a79a-dfea8818e06a
 author: corob
 ms.author: mblome
-manager: douge
+manager: jillfra
 f1_keywords:
 - VC.Project.VCClangCompilerTool.AdditionalIncludeDirectories
 - VC.Project.VCClangCompilerTool.DebugInformationFormat
@@ -43,12 +43,12 @@ f1_keywords:
 - vc.project.AdditionalOptionsPage
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: ab2fa6c3b2eac94159ef5e95cb022a627c3acee2
-ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
+ms.openlocfilehash: 055ec15deed2e5071c50d9903779d00030e07b02
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54154307"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54956229"
 ---
 # <a name="clang-project-properties-android-c"></a>Clang 專案屬性 (Android C++)
 

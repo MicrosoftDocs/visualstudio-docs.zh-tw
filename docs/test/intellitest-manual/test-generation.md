@@ -6,16 +6,16 @@ ms.topic: conceptual
 helpviewer_keywords:
 - IntelliTest, Test generation
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 5f2a63c21a1d2f25f34bda3f27163783d9c96bcd
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8b5db931444d4bfd1c658fca9c067e698d079418
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53936642"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54936979"
 ---
 # <a name="test-generation"></a>測試產生
 

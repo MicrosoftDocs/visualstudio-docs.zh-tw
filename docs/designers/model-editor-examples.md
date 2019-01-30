@@ -6,15 +6,15 @@ ms.topic: conceptual
 ms.assetid: dd0f4155-b4f9-4f16-b0fd-3f4cd4c80d5a
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e48af4d2693bc5185f37e479adb693a9ad1813ed
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 36beb87068361e2cfa02ff69fa293fcad1d10270
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53946025"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54936940"
 ---
 # <a name="model-editor-examples"></a>模型編輯器範例
 

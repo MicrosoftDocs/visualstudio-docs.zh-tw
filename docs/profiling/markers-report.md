@@ -7,15 +7,15 @@ f1_keywords:
 ms.assetid: 829ce099-172e-4c7e-bbd0-578b110c59bd
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f85da57219d2912ddec1314ed7535b8270b9c50
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 726dc50032cd276c23f9fc3f988a8553e23bde17
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53931154"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54924951"
 ---
 # <a name="markers-report"></a>標記報告
 標記報告會列出所顯示時間範圍內的標記。  移動瀏覽、縮放或隱藏通道可能會造成標記顯示或消失。 報表包含每個標記的下列資訊：  

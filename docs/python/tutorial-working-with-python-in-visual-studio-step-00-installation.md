@@ -2,22 +2,22 @@
 title: Visual Studio 中的 Python 教學課程步驟 0，安裝
 titleSuffix: ''
 description: 在 Visual Studio 中 Python 核心逐步解說的步驟 0 (安裝必要條件)。
-ms.date: 10/29/2018
+ms.date: 01/28/2019
 ms.prod: visual-studio-dev15
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 5e9fda2004d80f8512fcb09f7cc493927d6ef23b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1be1efc16502c3b379c304573a1ee4beb5f96a78
+ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53937617"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55231593"
 ---
 # <a name="install-python-support-in-visual-studio"></a>在 Visual Studio 中安裝 Python 支援
 

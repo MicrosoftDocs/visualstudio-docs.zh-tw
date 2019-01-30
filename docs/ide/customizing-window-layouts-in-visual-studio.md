@@ -21,15 +21,15 @@ helpviewer_keywords:
 ms.assetid: 7517ff13-76de-4ecf-9c1b-eb9b7ff4d718
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ef1b20741684a8d450d86bf4f41c71516f8eaba6
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.openlocfilehash: 0ae88d21130111d9b65ebbad52a7ccb8fa900a73
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "53959322"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54928109"
 ---
 # <a name="customize-window-layouts-in-visual-studio"></a>在 Visual Studio 中自訂視窗版面配置
 

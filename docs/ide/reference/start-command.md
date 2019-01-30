@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: dc4e4aa2-b0ab-4e00-92db-6dc3058ddc21
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f3e15e9bcea439e6e01ff3bb233622d119fa4b46
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0307bc8fef348aa408bf6d4fad53759df61806fb
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53903925"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54962819"
 ---
 # <a name="start-command"></a>Start 命令
 開始偵錯啟始專案。

@@ -1,5 +1,5 @@
 ---
-title: 在適用於 Visual Studio 的 AI 工具中建立專案
+title: 建立專案
 description: 使用 Azure Machine Learning 資源庫中的範例來建立專案
 keywords: AI, Visual Studio, Azure Machine Learning
 author: lisawong19
@@ -11,14 +11,14 @@ ms.devlang: multiple
 ms.service: multiple
 ms.workload:
 - multiple
-ms.openlocfilehash: ad28d01fdb1bbb91aaff3fb5530bbaa77444bb35
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e44624b5aa6fc5bbb518b5c15798daeca6361680
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53873506"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54797459"
 ---
-## <a name="create-an-ai-project-from-the-azure-machine-learning-gallery-in-visual-studio"></a>在 Visual Studio 中從 Azure Machine Learning 資源庫建立 AI 專案
+# <a name="create-an-ai-project-from-the-azure-machine-learning-gallery-in-visual-studio"></a>在 Visual Studio 中從 Azure Machine Learning 資源庫建立 AI 專案
 
 Azure Machine Learning 與 Visual Studio Tools for AI 整合。 您可以使用它來提交機器學習作業給 Azure 虛擬機器、Spark 叢集等遠端計算目標。 深入了解 [Azure Machine Learning 測試](https://docs.microsoft.com/azure/machine-learning/preview/experimentation-service-configuration)
 

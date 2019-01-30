@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 2429993A-3F0E-41C5-9562-FEA6AE994440
 author: heaths
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ed8a827dd1edfcd2f0e61361ec4b20f6662ab036
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 06234ab61bc77f9d52e18b479f05f145e850d0ba
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53909007"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54924146"
 ---
 # <a name="disable-or-move-the-package-cache"></a>停用或移動套件快取
 

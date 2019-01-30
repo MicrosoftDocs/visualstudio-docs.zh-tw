@@ -6,16 +6,16 @@ ms.topic: reference
 helpviewer_keywords:
 - IntelliTest, Attribute glossary
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: e858c85c81e23fc460e858a0d2001c65b4877838
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 99fb82ea943df7ffc66000a4cc8ffc500b650583
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53834382"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54966721"
 ---
 # <a name="attribute-glossary"></a>屬性字彙
 
@@ -159,7 +159,7 @@ using Microsoft.Pex.Framework;
 <a name="pexassemblyundertest"></a>
 ## <a name="pexassemblyundertest"></a>PexAssemblyUnderTest
 
-此屬性指定目前測試專案所測試的組件。 
+此屬性指定目前測試專案所測試的組件。
 
 ```csharp
 [assembly: PexAssemblyUnderTest("MyAssembly")]

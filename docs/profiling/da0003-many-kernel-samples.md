@@ -10,15 +10,15 @@ f1_keywords:
 ms.assetid: c1f46f77-eb95-42e5-b340-d86bc9de41b4
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 627db454148a9abe1d9bdc8c3a9764ed014d7f39
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 895fd206a6ca816726606ebc57e2fc0a865ee2f8
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53911568"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54923077"
 ---
 # <a name="da0003-many-kernel-samples"></a>DA0003：許多核心樣本
 

@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: f6ef2b76-8035-4a14-8195-aa221c46ef48
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 721d50b4e710e19c759bb418197d82c4828e6961
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c81db2a67c11d702b0b35a088fe235542d99a20a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53989996"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54946720"
 ---
 # <a name="starttrackingcontextwithroot"></a>StartTrackingContextWithRoot
 使用指定根標記的回應檔啟動追蹤內容。  

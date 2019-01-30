@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: ef3c6247-9f59-4ef4-aa8b-a8922b3e0943
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e209e609caf073a7360bad3d0991a6fbd873989
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5eb85431916a844724e7bfd4b69a6d269045db5a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53886315"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55034545"
 ---
 # <a name="accessibility-products-and-services-from-microsoft"></a>Microsoft 的協助工具產品和服務
 

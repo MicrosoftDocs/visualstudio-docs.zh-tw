@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 9f53987b-20ee-470a-ab62-fce997bb5e15
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 33156a0614ad47839187056e4e0a24b5ee2f7ae2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c3777be5701e9876352db41a5454d5e12668f6f1
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53989668"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54932113"
 ---
 # <a name="msbuild-response-files"></a>MSBuild 回應檔
 回應檔 (*.rsp*) 是包含 *MSBuild.exe* 命令列參數的文字檔。 每個參數可位於單獨一行，或所有參數可位於同一行。 註解行前面會加上 **#** 符號。 **@** 參數可用來將其他回應檔傳遞給 MSBuild.exe。  

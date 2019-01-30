@@ -8,15 +8,15 @@ helpviewer_keywords:
 - Profiling Tools, profiling methods
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9bde4e313b9baf4975f5bff247fac248f3a090ea
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fb64e988f88546efafc26ffe8bcc39441e20cd4f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53825785"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54918611"
 ---
 # <a name="understand-performance-collection-methods"></a>了解效能收集方法
 
