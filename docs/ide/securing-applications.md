@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 7d32c4cf-8bec-4307-a2a8-42f0ceddf3eb
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 74643454c4e96f5f4c1faa98b26fa1f26bd2790b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f3acc9f198467694f17918e44ca0d8fff45b5f38
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53904626"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55033384"
 ---
 # <a name="secure-applications"></a>保護應用程式
 

@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: de8bb378-8c1c-4087-a9a5-537fa8314c19
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ae0064052fa2f042eec218f3653f4b43fa24ba0a
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.openlocfilehash: 33ff7874a6f5af1c9196f498f6a72e51cdce265e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "53878883"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54938363"
 ---
 # <a name="visual-studio-command-aliases"></a>Visual Studio Command Aliases
 

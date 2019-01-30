@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 032039bc-9477-4f93-9b9d-66d4be0e90f4
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b0be6e57c0c741420006d20c0945b9b8c8b77d51
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 89f8eacc11e591545e1a542c0e1eeda3c45b7df3
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53864121"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55002388"
 ---
 # <a name="evaluate-statement-command"></a>評估陳述式命令
 評估並顯示指定的陳述式。

@@ -2,19 +2,19 @@
 title: 指派 Visual Studio 訂用帳戶的授權 | Microsoft Docs
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.date: 07/16/2018
 ms.topic: conceptual
 description: 了解系統管理員如何指派訂閱者授權
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 6f0bbded7682bd8f7162ae415c6c83711df04a04
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4dfec16161f6cd6b875b38738a9340e12d62f975
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49931229"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54970119"
 ---
 # <a name="assign-licenses-in-the-visual-studio-subscriptions-administrator-portal"></a>在 Visual Studio 訂用帳戶系統管理員入口網站中指派授權
 
@@ -46,7 +46,7 @@ ms.locfileid: "49931229"
 
     如果您想要將自己的參考資訊新增至訂用帳戶，您可在 [新增參考] 區段中執行此作業。
    > [!div class="mx-imgBorder"]
-   > ![在每個訂閱中新增您自己的參考資訊](media/add-subscriber-reference-notes.png) 
+   > ![在每個訂閱中新增您自己的參考資訊](media/add-subscriber-reference-notes.png)
 
     當您完成選取選項，並輸入訂閱者資料時，請選擇 [新增訂閱者] 飛出視窗底部的 [新增]。
    > [!div class="mx-imgBorder"]
@@ -54,7 +54,7 @@ ms.locfileid: "49931229"
 
 4. 在您新增訂閱者之後，會將具有進一步指示的指派電子郵件自動傳送給新訂閱者。 您可以選取訂閱者並按一下上方功能表中的 [重新傳送] 按鈕，隨時重新傳送指派電子郵件。
    > [!div class="mx-imgBorder"]
-   > ![隨時重新傳送啟用電子郵件給任何使用者或多位使用者](media/resend-subscriber-activation-emails.png) 
+   > ![隨時重新傳送啟用電子郵件給任何使用者或多位使用者](media/resend-subscriber-activation-emails.png)
 
 ## <a name="bulk-assignments"></a>大量指派
 
@@ -65,7 +65,7 @@ ms.locfileid: "49931229"
 2. 大量指派會使用 Microsoft Excel 範本來上傳訂閱者。 在 [Upload Multiple Subscribers] (上傳多位訂閱者)　對話方塊中，按一下 [下載] 來下載範本。
    > [!div class="mx-imgBorder"]
    > ![下載 Excel 範本，以上傳多位訂閱者](media/download-template-upload-subscribers.png)
-   > 
+   >
    > [!NOTE]
    > 請一律下載這個範本的最新版本。 如果您使用舊版本，則大量上傳可能會失敗。
 

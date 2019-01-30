@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 96ba5507-8b43-4f54-a1d7-9b15644dd56c
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c2c3b23f9377fff4e820f10b76ed841ff722b15d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1b85cb1529d929196a2b77629d870c75f03b878a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53910177"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54963901"
 ---
 # <a name="warning-task"></a>Warning 工作
 在建置期間，根據評估的條件陳述式來記錄警告。  

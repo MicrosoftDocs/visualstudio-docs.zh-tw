@@ -10,15 +10,15 @@ helpviewer_keywords:
 - C#, code snippets
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: be3af132a84b37043cf185beb26293ef5618439b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 38794c3a81d98b245102f48b0c99319f6e9571b4
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53858235"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55021386"
 ---
 # <a name="c-code-snippets"></a>C# 程式碼片段
 

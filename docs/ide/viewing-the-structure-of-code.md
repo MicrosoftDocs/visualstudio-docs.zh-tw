@@ -23,15 +23,15 @@ helpviewer_keywords:
 - object browser
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b3419c7f6b08fbedbe7af684a5c3b2de8967b55
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7ad57f9620fcd02400c51c7bdd80e5aea566cec9
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53880909"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54978889"
 ---
 # <a name="view-the-structure-of-code-using-different-tool-windows"></a>使用不同的工具視窗來檢視程式碼結構
 

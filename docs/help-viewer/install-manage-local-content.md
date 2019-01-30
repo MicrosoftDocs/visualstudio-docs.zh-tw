@@ -21,15 +21,15 @@ helpviewer_keywords:
 ms.assetid: efd9df4c-2e69-4c50-992c-9678a8d8cf19
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fab06fee0dadd28d6b8feb793d29fb1e22e0b00b
-ms.sourcegitcommit: 75e02ed88a1ace6e8265fd4e3a82a1bc78f3adca
+ms.openlocfilehash: 8bc70cb40eb10adc20c25dc4e391b99fa705a914
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/13/2018
-ms.locfileid: "54406146"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54940878"
 ---
 # <a name="install-and-manage-local-content"></a>安裝與管理本機內容
 

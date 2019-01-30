@@ -8,15 +8,15 @@ f1_keywords:
 ms.assetid: ea813046-1ae6-4c9f-9784-dc41494101b9
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0cb4e77da4d32980c5963ed439ac00f2ccfb2ab6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: aa38914362de371628d5ebbf76e46f2d7e5f72f7
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53842550"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55017457"
 ---
 # <a name="options-dialog-box-projects-and-solutions-web-projects"></a>選項對話方塊、專案和方案、Web 專案
 

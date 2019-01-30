@@ -7,15 +7,15 @@ helpviewer_keywords:
 - coded UI tests, best practices
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 28781756e46f39aa0925521c0ec0bfacdcca5009
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6e1a3b0b38a9579d03afba625f11b5f8e4f4fdae
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53848583"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54978746"
 ---
 # <a name="best-practices-for-coded-ui-tests"></a>自動程式化 UI 測試的最佳做法
 

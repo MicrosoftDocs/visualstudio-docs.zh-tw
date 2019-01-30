@@ -9,15 +9,15 @@ helpviewer_keywords:
 - unit tests, samples
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b98e8fc926917d4da8bc805110f464ead24d405c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 172cf928c52f31f650337c5f0d449e28ccecc294
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53898943"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55018523"
 ---
 # <a name="sample-code-for-testing"></a>用於測試的範例程式碼
 

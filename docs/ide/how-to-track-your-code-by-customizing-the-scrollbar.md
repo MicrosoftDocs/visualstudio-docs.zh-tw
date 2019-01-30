@@ -5,15 +5,15 @@ ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c5fc435f2fe350c177cbff0e526d2f0221a93b89
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3189bf2c87b6996cfd11a42a05ee9612d79bee38
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53965067"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54965765"
 ---
 # <a name="how-to-customize-the-scroll-bar"></a>HOW TO：自訂捲軸
 

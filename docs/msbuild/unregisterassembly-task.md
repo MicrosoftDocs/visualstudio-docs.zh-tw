@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 04f549dd-3591-4dda-9c3a-cf6ede9df2c3
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d07e9bec84e735082ce1392eaf8db33c3c617c06
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 518c8ea976783d2771500302e8f0ecce560e11b2
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53917328"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54961253"
 ---
 # <a name="unregisterassembly-task"></a>UnregisterAssembly 工作
 針對 COM Interop 用途將指定的組件取消註冊。 與 [RegisterAssembly 工作](../msbuild/registerassembly-task.md)執行的方式相反。  

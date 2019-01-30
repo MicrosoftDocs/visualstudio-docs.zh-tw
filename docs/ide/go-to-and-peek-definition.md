@@ -11,15 +11,15 @@ helpviewer_keywords:
 - member definition [Visual Studio]
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 95302b61da30cc2034edfe495a695efb510430d3
-ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
+ms.openlocfilehash: fadd905e6d7859f8d00e6c5884673d02aa8e3928
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/14/2019
-ms.locfileid: "54269835"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55027278"
 ---
 # <a name="view-type-and-member-definitions"></a>檢視型別與成員的定義
 

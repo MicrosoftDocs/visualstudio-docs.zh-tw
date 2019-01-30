@@ -6,15 +6,15 @@ ms.topic: conceptual
 ms.assetid: 34eac8a0-7ec5-4c40-b97a-0126ed367931
 author: karann-msft
 ms.author: karann
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a7e0a5b4bde839e90bcf852273fa0872b1a5c76f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 45344dbeac80125442506e4d804e97853877a077
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53922608"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54953129"
 ---
 # <a name="xaml-errors-and-warnings"></a>XAML 錯誤和警告
 

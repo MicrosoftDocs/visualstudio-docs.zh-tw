@@ -8,17 +8,17 @@ helpviewer_keywords:
 ms.assetid: 5f717abd-e167-47ae-818c-6b0bae100ceb
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: e624f313c66df09c7496babe08a32dfd8453829c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 890bec08c29491bbd867c9c8380172cced71d2fe
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53836058"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54985704"
 ---
 # <a name="how-to-distribute-code-snippets"></a>HOW TO：散發程式碼片段
 

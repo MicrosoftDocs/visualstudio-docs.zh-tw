@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 6131eb80-8745-4eb9-bdab-433e69b41651
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ed02ad99172809816ebacf2459036253a04c6c6c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fd0d0b5d88b20081b52e1371717e12aa7bfb63a9
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53842185"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55031834"
 ---
 # <a name="how-to-set-multiple-startup-projects"></a>HOW TO：設定多個啟始專案
 
