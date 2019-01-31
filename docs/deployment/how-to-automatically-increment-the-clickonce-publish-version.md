@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 686ab88a-6305-4914-a05b-fe269cc0ae1e
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b17a0c54ba0efa7a6eb732de45fa7d1644577041
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 174506e9ee88de385f5bbba6fe09276d9297f298
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53861386"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54937700"
 ---
 # <a name="how-to-automatically-increment-the-clickonce-publish-version"></a>HOW TO：自動累加 ClickOnce 的發佈版本
 

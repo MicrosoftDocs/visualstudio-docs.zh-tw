@@ -1,14 +1,9 @@
 ---
-title: 如何：建立和編輯組態 | Microsoft Docs
-ms.custom: ''
+title: HOW TO：建立和編輯組態 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - solution build configurations, editing
 - build configurations, creating
@@ -23,15 +18,15 @@ ms.assetid: 19be121c-148e-4ece-bbfc-d20b08cfc3f7
 caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: f171c337f73db495b7b71aded24f669b6e613a07
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: e885ffa758f6503c10517c672745a31ef0960fe5
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49887783"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54767325"
 ---
-# <a name="how-to-create-and-edit-configurations"></a>如何：建立和編輯組態
+# <a name="how-to-create-and-edit-configurations"></a>HOW TO：建立及編輯組態
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 您可以為方案建立數個組建組態。 例如，您可以設定偵錯組建讓測試人員可以用來尋找和修正問題，也可以設定不同類型的組建，散發給不同的客戶。  
@@ -58,7 +53,7 @@ ms.locfileid: "49887783"
   
      [屬性頁] 視窗隨即開啟。  
   
-     您可以設定組態的屬性。 例如，針對發行組態，您可以指定在建置方案時將程式碼最佳化，而針對偵錯組態，您可以指定包含 `DEBUG` 條件式編譯符號。 如需屬性頁設定的詳細資訊，請參閱[專案設計工具簡介](http://msdn.microsoft.com/en-us/898dd854-c98d-430c-ba1b-a913ce3c73d7)。  
+     您可以設定組態的屬性。 例如，針對發行組態，您可以指定在建置方案時將程式碼最佳化，而針對偵錯組態，您可以指定包含 `DEBUG` 條件式編譯符號。 如需屬性頁設定的詳細資訊，請參閱[專案設計工具簡介](http://msdn.microsoft.com/898dd854-c98d-430c-ba1b-a913ce3c73d7)。  
   
 ## <a name="creating-and-modifying-project-configurations"></a>建立和修改專案組態  
   
@@ -128,10 +123,7 @@ ms.locfileid: "49887783"
   
 3.  在 [專案內容] 窗格中，針對每個專案選取您要的 [組態] 和 [平台]，然後選取是否要 [建置] 它，以及是否要 [部署] 它。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [了解組建組態](../ide/understanding-build-configurations.md)   
  [在 Visual Studio 中建置和清除專案與方案](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)   
- [NIB 如何：修改專案屬性和組態設定](http://msdn.microsoft.com/en-us/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67)
-
-
-
+ [(NIB) 如何︰修改專案屬性和組態設定](http://msdn.microsoft.com/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67)

@@ -1,14 +1,9 @@
 ---
 title: MT 工作 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 f1_keywords:
 - VC.Project.VCManifestTool.ResourceOutputFileName
 - VC.Project.VCManifestTool.SuppressDependencyElement
@@ -29,13 +24,13 @@ ms.assetid: bb94913c-1042-4968-9f08-b394518e899f
 caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: c9b14de0b9e80379736dd7f6a02cb374d475fcda
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 957e40a44c4f396fbd31b9062cfacddfd78cc8d5
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49214924"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54805470"
 ---
 # <a name="mt-task"></a>MT 工作
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +44,7 @@ ms.locfileid: "49214924"
 > [!NOTE]
 >  mt.exe 文件使用連字號 (**-**) 做為命令列選項的前置詞，但本主題使用斜線 (**/**)。 任一前置詞都可接受。  
   
-|參數|描述|  
+|參數|說明|  
 |---------------|-----------------|  
 |**AdditionalManifestFiles**|選擇性的 **String[]** 參數。<br /><br /> 指定一或多個資訊清單檔案的名稱。<br /><br /> 如需詳細資訊，請參閱 [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) 網站中 "Mt.exe" 的 **/manifest** 選項。|  
 |**AdditionalOptions**|選擇性的 **String** 參數。<br /><br /> 命令列選項清單。 例如 "*/option1 /option2 /option#*"。 使用此參數，來指定任何其他 **MT** 工作參數未表示的命令列選項。<br /><br /> 如需詳細資訊，請參閱 [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) 網站的 "Mt.exe"。|  
@@ -79,8 +74,5 @@ ms.locfileid: "49214924"
   
 ## <a name="remarks"></a>備註  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [工作參考](../msbuild/msbuild-task-reference.md)
-
-
-

@@ -21,15 +21,15 @@ helpviewer_keywords:
 ms.assetid: 91689e9c-6733-44b9-b36a-8b9b2eef7d1d
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b757d02f5a0da520f4bcb929b8c4f9eff4b4419
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c7135ce785665bcaf01b209ebc8e9ec094db55f5
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53892581"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54922830"
 ---
 # <a name="cventerspan-function"></a>CvEnterSpan 函式
 標記新範圍的開頭。  

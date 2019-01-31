@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 1fa3e10b-263c-4960-a9ad-485c02a7a872
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ca5bfbdae319aff8d90686deb32a5c7348fa74e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d9bae108ad946485fac3a9ba555978ccc1cb308a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53985533"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54919977"
 ---
 # <a name="writealltlogs"></a>WriteAllTLogs
 寫入所有執行緒和內容的追蹤記錄檔。  

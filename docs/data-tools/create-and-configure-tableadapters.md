@@ -11,16 +11,16 @@ helpviewer_keywords:
 ms.assetid: 08630d69-0d6c-4e8f-b42d-2922f45f8415
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: a363c9964b88196e31f5ba05a4244fabdf00f90f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7f43cbd8e9002d026fba632046907dfee969884d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53966871"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54948358"
 ---
 # <a name="create-and-configure-tableadapters"></a>建立和設定 TableAdapter
 

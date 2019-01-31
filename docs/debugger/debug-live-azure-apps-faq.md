@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 944f1eb0-a74b-4d28-ae2b-a370cd869add
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ce6f242486afd82508e60d2e20c053735e61d6f3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a1465d7ee664b1c1d534350be19e4c067a74cb79
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53924159"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55024496"
 ---
 # <a name="frequently-asked-questions-for-snapshot-debugging-in-visual-studio"></a>B80acca24f64">frequently Asked Questions for Visual Studio 偵錯快照集
 

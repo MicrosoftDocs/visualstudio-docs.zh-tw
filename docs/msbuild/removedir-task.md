@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 7ab214be-26b2-4bcd-9de8-c1b2091c0b74
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 075eb8b688fa7cab1da7e6ef6c81363795ab6481
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9d1268d82325daa068ca42684b5f191c3db87d9e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53831819"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55009527"
 ---
 # <a name="removedir-task"></a>RemoveDir 工作
 移除指定的目錄及其所有檔案和子目錄。  

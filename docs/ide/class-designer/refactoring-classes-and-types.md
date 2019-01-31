@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: dcf07bb4-fa3b-4224-9dec-566fd924a8ce
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e85c4b760bab242ba5aa43f0e1aab0936565af33
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 83649a5b2b1053453a36e5ae8ad6f8636112ffd9
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53891462"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55069508"
 ---
 # <a name="refactor-classes-and-types-in-class-designer"></a>在類別設計工具中將類別與類型重構
 

@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: ef11eae9-df96-4e20-aabd-2678ba317140
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f383701017e9fb830333f7a9869aac99684333a6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4b0de77c461b8196508adcdf5cb87c4729988b4d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53848255"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55026200"
 ---
 # <a name="debug-page-project-designer"></a>專案設計工具、偵錯頁
 

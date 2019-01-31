@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 0f0df097-bbaf-46ad-9ad1-ef5f40435079
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 99c31291e31821f79e23f507e37003c571a8ab7c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 32c221359733761f7f5fa307308a5666502722c3
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53952043"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54947415"
 ---
 # <a name="debug-only-user-code-with-just-my-code"></a>只有使用 Just My Code 的使用者程式碼進行偵錯 
 

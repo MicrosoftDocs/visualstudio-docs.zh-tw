@@ -7,15 +7,15 @@ dev_langs:
 ms.assetid: 64834351-e2c9-4f1c-9dc0-2abb5478bc63
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 24c6078cd1246e5bcb13938e31f65e67f5615e4a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4c30c3b91bb601d22df8193602d6a4ddbddf024c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53953192"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55026537"
 ---
 # <a name="idiasymbolgetnumberofcolumns"></a>IDiaSymbol::get_numberOfColumns
 擷取在矩陣中的資料行數目。  

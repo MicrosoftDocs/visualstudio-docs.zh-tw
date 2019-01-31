@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: c2c5d794-8dc8-4594-8717-70dc79a0e75d
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fba2d86ca02bf0ddc12e288b3bcbbd4b7189120e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 60db5058f3a084a4d24f3b3a1d83e615a9071d8e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53911503"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54920250"
 ---
 # <a name="endtrackingcontext"></a>EndTrackingContext
 結束目前追蹤內容。  

@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 949c18fb-bb25-42ed-9130-c4a47869f24d
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1df2ad55bd154e92072d1bb0dac6ebffe24fbcb3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a7a3213d614caa19fb6df77a72efd05e36484c77
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53884642"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54982672"
 ---
 # <a name="spy-toolbar"></a>Spy++ 工具列
 工具列會出現在功能表列，Spy + + 中。 若要顯示或隱藏工具列，請在**檢視**功能表上，按一下**工具列**。  

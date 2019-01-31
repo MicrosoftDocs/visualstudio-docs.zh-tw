@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 9f0c8505-b6b2-452b-adfd-076db14d8115
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2fe2d42ad06b45239f0ab7e216c497a7cd408ee1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 874d96bab20cf1aa223aca41b63ce0162adfed5a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53931956"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54936238"
 ---
 # <a name="tools-to-debug-threads-and-processes-in-visual-studio"></a>若要偵錯執行緒和處理序，在 Visual Studio 中的工具
 「執行緒」和「處理序」在電腦科學中是相關的概念。 兩者都代表必須以特定順序執行的指令序列。 但是，不同執行緒或處理序中的指令能夠平行執行。  

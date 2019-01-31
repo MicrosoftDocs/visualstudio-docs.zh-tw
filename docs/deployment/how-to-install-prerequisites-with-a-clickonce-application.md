@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: e964fca5-fdfd-47cf-a1c9-7fb96b1c88b5
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e474bba5168867180f0f50a927ea4c71ebe0370
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bf4e015da7f5661f0964e9f60d65f39b665fe9d7
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53907848"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54973963"
 ---
 # <a name="how-to-install-prerequisites-with-a-clickonce-application"></a>HOW TO：隨著 ClickOnce 應用程式安裝必要軟體
 所有[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式需要它們才能執行，在電腦上安裝正確版本的.NET framework; 許多應用程式以及其他必要條件。 發佈時[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式中，您可以選擇一組與您的應用程式一起封裝的必要元件。 在安裝期間，會檢查以判斷它是否已經存在; 每個必要條件如果在安裝之前未將已安裝[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式。  

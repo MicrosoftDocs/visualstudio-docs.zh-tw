@@ -8,15 +8,15 @@ helpviewer_keywords:
 - Help Viewer, installing
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e806efad72578ecfbeecfdb55af1e8d48e75e77
-ms.sourcegitcommit: 75e02ed88a1ace6e8265fd4e3a82a1bc78f3adca
+ms.openlocfilehash: cb6f2fb01c73a588adc64813c191742de5bf5938
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/13/2018
-ms.locfileid: "54406056"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55005705"
 ---
 # <a name="microsoft-help-viewer-installation"></a>Microsoft Help Viewer 安裝
 

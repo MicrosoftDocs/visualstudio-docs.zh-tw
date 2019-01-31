@@ -10,15 +10,15 @@ dev_langs:
 ms.assetid: 2d9a177a-e14b-404f-a6af-49498eff0bd7
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d91a62971db47b78b974cc2dede77d0a47b5c851
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ca1cf68af84556a76c29417c9bd56894a70f12ca
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53821188"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54997321"
 ---
 # <a name="create-custom-views-of-native-objects-in-the-debugger"></a>在偵錯工具中建立原生物件的自訂檢視
 
@@ -26,10 +26,6 @@ Visual Studio *Natvis* framework 自訂原生類型的顯示的方式偵錯工�
 
 Natvis 會取代*autoexp.dat* XML 語法、 更佳診斷、 版本控制，與舊版的 Visual Studio 中的檔案和支援的多個檔案。  
 
-Natvis 不適用於：
-
-- C + + Windows 桌面專案與**偵錯工具類型**設為**混合**之下**組態屬性** > **偵錯**. 
-- [混合模式偵錯](how-to-debug-in-mixed-mode.md)受管理的相容性模式中的 Windows 傳統型應用程式 (**工具** > **選項** > **偵錯**  > **一般** > **使用 Managed 相容性模式**)。
 
 ## <a name="BKMK_Why_create_visualizations_"></a>Natvis 視覺化
 

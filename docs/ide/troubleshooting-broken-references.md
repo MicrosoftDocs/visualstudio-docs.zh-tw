@@ -11,15 +11,15 @@ helpviewer_keywords:
 - referencing components, troubleshooting
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c4d45dc01201747240f2ebbc50854b77fd31ec0f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 85d6eb776854474042ea4ccc050f486a9edc0b5a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53847122"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55042604"
 ---
 # <a name="troubleshoot-broken-references"></a>針對中斷參考進行疑難排解
 

@@ -9,15 +9,15 @@ ms.topic: conceptual
 ms.assetid: d5c038e2-e70d-411e-950c-8a54917b578a
 author: heaths
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3e98ff7f21ab7620092f2b535f17c55ab4d584b7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1a7134fbe40fb68a2ed1e957b9a2d910adfad591
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53946629"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54929149"
 ---
 # <a name="install-build-tools-into-a-container"></a>將 Build Tools 安裝至容器
 

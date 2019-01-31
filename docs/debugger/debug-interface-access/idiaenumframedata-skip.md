@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 67140b4c-7125-4895-932d-42412326da29
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b4b12926fb1fb79ee02dc934f808b6e5ba8f742e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2ad89beb8672c8f8cf2d6d6710ee53dccba5b5ed
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53834083"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55000327"
 ---
 # <a name="idiaenumframedataskip"></a>IDiaEnumFrameData::Skip
 略過指定的數目的畫面格的資料序列中項目的列舉型別。  

@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: ced21627-7653-455b-8821-3e31c6a448cf
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 30637a797d8c0845bae9548bb6a48e877d44727b
-ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
+ms.openlocfilehash: 7167a27e8c36001108691ec65ef07aa43db98a3c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/14/2019
-ms.locfileid: "54269471"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54967478"
 ---
 # <a name="build-devenvexe"></a>/Build (devenv.exe)
 

@@ -1,25 +1,20 @@
 ---
 title: Visual Studio Tools for Unity | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- tgt-pltfrm-cross-plat
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-unity-tools
+ms.topic: conceptual
 ms.assetid: 6cabc626-5310-4622-a743-210a9abb5535
 caps.latest.revision: 6
 author: conceptdev
 ms.author: crdun
-manager: ghogen
-ms.openlocfilehash: 7bdcdbc4a19914494b0a48932afc25c1f7626fbb
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: e91bfef287a16db45ada783a4e109781d247ecf2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51762324"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54775268"
 ---
 # <a name="visual-studio-tools-for-unity"></a>Visual Studio Tools for Unity
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,4 +49,3 @@ ms.locfileid: "51762324"
   
  [變更記錄](../cross-platform/change-log-visual-studio-tools-for-unity.md)  
  在本節中，您將了解 Visual Studio Tools for Unity 每一版的新功能、Bug 修正和其他變更。
-

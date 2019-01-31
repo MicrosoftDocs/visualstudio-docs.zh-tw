@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 335335a5-8ca0-4e18-95f5-62aa6a691386
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 13e7e2bb1ecabc67f60da7b2d4c68b413fa9cf92
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2b4bfb8e1f60ed668039011841e12021e0f0702f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53844362"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54942005"
 ---
 # <a name="setthreadcount"></a>SetThreadCount
 設定全域執行緒計數，並將該計數指派給目前的執行緒。  

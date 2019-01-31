@@ -1,14 +1,9 @@
 ---
 title: 選項對話方塊、環境、尋找和取代 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Environment.FindReplace
 - VS.ToolsOptionsPages.Environment.FindandReplace
@@ -19,13 +14,13 @@ ms.assetid: f804d6d5-6309-46e4-8294-b83e880b5ec9
 caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 4c60e89624c1245415ee887e44ad8d7df24bf8d6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: cc374d536997c05aed644a80fe3826283d208569
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49250616"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54758178"
 ---
 # <a name="find-and-replace-environment-options-dialog-box"></a>選項對話方塊、環境、尋找和取代
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -34,7 +29,7 @@ ms.locfileid: "49250616"
 使用 [選項] 對話方塊的這個頁面，即可控制訊息方塊以及尋找和取代作業的其他層面。 從 [工具] 功能表中按一下 [選項]，並展開 [環境]，然後按一下 [尋找和取代]，即可存取此對話方塊。 如果此頁面未出現在清單中，請在 [選項] 對話方塊中選取 [顯示所有設定]。  
   
 > [!NOTE]
->  根據您目前使用的設定或版本，您所看到的對話方塊可用選項，以及功能表命令的名稱和位置，可能會與 [說明] 中描述的有所不同。 若要變更設定，請從 [ **工具** ] 功能表中選取 [ **匯入和匯出設定** ]。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
+>  根據您目前使用的設定或版本，您所看到的對話方塊可用選項，以及功能表命令的名稱和位置，可能會與 [說明] 中描述的有所不同。 若要變更設定，請從 [ **工具** ] 功能表中選取 [ **匯入和匯出設定** ]。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
   
 ## <a name="uielement-list"></a>UIElement 清單  
  **顯示告知性訊息**  
@@ -60,8 +55,5 @@ ms.locfileid: "49250616"
  **用編輯器的文字自動填入 [尋找目標]**  
  選取此選項，可在您從 [編輯] 功能表中選取 [尋找和取代] 視窗的任何檢視時，將目前編輯器插入點任一端的文字貼入 [尋找目標] 欄位。 清除此選項，可使用前一個搜尋的最後一個搜尋模式作為 [尋找目標] 字串。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [尋找和取代文字](../../ide/finding-and-replacing-text.md)
-
-
-

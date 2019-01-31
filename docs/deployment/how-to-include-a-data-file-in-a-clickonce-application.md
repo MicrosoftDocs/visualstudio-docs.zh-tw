@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 89ee46ef-bc8c-4ab0-a2ac-1220f9da06fc
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ea6f111aea8d5008ad5d9f933ded37c6df0c465
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 673b22dfbde5497f6be7b24bf04773f6cddf4a01
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53990210"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54999661"
 ---
 # <a name="how-to-include-a-data-file-in-a-clickonce-application"></a>HOW TO：在 ClickOnce 應用程式中納入資料檔案
 每個[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]您安裝的應用程式已指派應用程式可在其中管理它自己的資料的目的地電腦的本機磁碟上的資料目錄。 資料檔案可以包含任何類型的檔案： 文字檔、 XML 檔案或甚至是 Microsoft Access 資料庫 (*.mdb*) 檔案。 下列程序會示範如何新增到任何類型的資料檔案您[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式。  

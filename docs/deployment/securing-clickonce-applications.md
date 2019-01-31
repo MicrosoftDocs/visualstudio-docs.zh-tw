@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: a05b5f2f-d1f2-471a-8096-8b11f7554265
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 16ca92b1e34e1cec4426da368fb9a5c557db65b8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 35814b1227f9a03fe40c9d41e7809dac54a0f1fa
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53944268"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54932814"
 ---
 # <a name="secure-clickonce-applications"></a>保護 ClickOnce 應用程式
 在 .NET Framework 中，[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式受到程式碼存取安全性條件約束的限制，因此能夠協助限制程式碼對受保護之資源和作業的存取。 因此，很重要的是您必須了解程式碼存取安全性的含意，照著撰寫 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式。 您的應用程式可以使用完全信任或部分信任區域 (例如網際網路和內部網路區域) 以限制存取。  
@@ -66,7 +66,7 @@ ms.locfileid: "53944268"
   
  `http://servername.adatum.com/WindowsApp1.application?username=joeuser`  
   
- 查詢字串引數預設是停用狀態。 若要啟用查詢字串引數，必須在應用程式的部署資訊清單中設定 `trustUrlParameters` 屬性 (Attribute)。 這個值可以從 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 和 MageUI.exe 進行設定。 如需詳細步驟，如何啟用傳遞查詢字串，請參閱[How to:在線上 ClickOnce 應用程式中擷取查詢字串資訊](../deployment/how-to-retrieve-query-string-information-in-an-online-clickonce-application.md)  
+ 查詢字串引數預設是停用狀態。 若要啟用查詢字串引數，必須在應用程式的部署資訊清單中設定 `trustUrlParameters` 屬性 (Attribute)。 這個值可以從 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 和 MageUI.exe 進行設定。 如需詳細步驟，如何啟用傳遞查詢字串，請參閱[How to:在線上 ClickOnce 應用程式中擷取查詢字串資訊](../deployment/how-to-retrieve-query-string-information-in-an-online-clickonce-application.md)。  
   
  請絕對不要將透過查詢字串擷取的引數傳遞給資料庫或命令列，而沒有檢查這些引數來確定其是否安全。 不安全的引數為包含資料庫或命令列逸出字元 (Escape Character) 的引數，這些引數可讓惡意使用者操縱您的應用程式來執行任意命令。  
   

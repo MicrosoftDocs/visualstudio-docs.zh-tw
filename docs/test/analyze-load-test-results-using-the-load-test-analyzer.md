@@ -9,14 +9,14 @@ helpviewer_keywords:
 ms.assetid: 8a4ba300-425d-447c-91d9-c53f4345feee
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 76aa076f4813cf2719f1ecc2d009c44788dae9f9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c9894c62975da0353fd9e920fa5596e7e0ebeb26
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53900674"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54935848"
 ---
 # <a name="analyze-load-test-results-using-the-load-test-analyzer"></a>使用負載測試分析器分析負載測試結果
 

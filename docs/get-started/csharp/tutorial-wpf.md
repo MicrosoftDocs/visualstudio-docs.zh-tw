@@ -11,15 +11,15 @@ dev_langs:
 ms.assetid: f84339c7-d617-4f56-bfcd-af2215c347ba
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: af7126910971cdf9ce583c57c1f88bb56a87f744
-ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
+ms.openlocfilehash: 3aa55ede0d6d36e455a9ab7cc007afede0ff465d
+ms.sourcegitcommit: 447f2174bdecdd471d8a8e11c19554977db620a0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54405378"
+ms.lasthandoff: 01/28/2019
+ms.locfileid: "55089194"
 ---
 # <a name="tutorial-create-a-simple-application-with-c"></a>教學課程：使用 C# 建立一個簡單的應用程式
 
@@ -274,5 +274,4 @@ IsChecked="True"
 
 ## <a name="see-also"></a>另請參閱
 
-- [Visual Studio 2017 的新功能](../../ide/whats-new-in-visual-studio.md)
 - [生產力祕訣](../../ide/productivity-tips-for-visual-studio.md)

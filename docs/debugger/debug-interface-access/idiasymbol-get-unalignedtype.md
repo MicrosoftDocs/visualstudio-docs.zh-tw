@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: fdcb38fb-490e-4d15-b4e5-3770043a366c
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 63094fff1a513b9de0e21fc29ad8aa10fb3746ca
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7d397c4f5fc0b2555d9f2d651d70b808b284eea3
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53966793"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54997711"
 ---
 # <a name="idiasymbolgetunalignedtype"></a>IDiaSymbol::get_unalignedType
 擷取指定使用者定義資料類型是否未對齊的旗標。  

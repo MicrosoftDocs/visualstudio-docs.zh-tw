@@ -19,15 +19,15 @@ helpviewer_keywords:
 - referencing components, assemblies not listed
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e3e21f38f8b4f60678aa4bb767368393c666cab
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bc6fc2b414ae7e49cae326ae5ce660e45cc8b47a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53856276"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55010245"
 ---
 # <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>HOW TO：使用參考管理員新增或移除參考
 

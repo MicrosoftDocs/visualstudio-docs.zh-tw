@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 8b72b071-691b-48b7-8852-f748c20fc787
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8ff62a6d88d7a85638029542363722d9e7e7179c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fba742bd2239ac28957e7d392e99168c8854028f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53962110"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54985561"
 ---
 # <a name="how-to-display-message-properties"></a>HOW TO：顯示訊息屬性
 若要深入了解中所列的訊息[訊息檢視](../debugger/messages-view.md)，使用[訊息內容 對話方塊](../debugger/message-properties-dialog-box.md)。  

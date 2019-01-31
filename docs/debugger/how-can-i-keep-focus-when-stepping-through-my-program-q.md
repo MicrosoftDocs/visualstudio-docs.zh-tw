@@ -18,15 +18,15 @@ helpviewer_keywords:
 ms.assetid: 11a30580-3a1a-4be8-a241-0abdc758302e
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1260e82067a201f836f25b213773dfed0f8d8e72
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 559c8fa5cf21a5f87d60167d586ef7d0d543100b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53944346"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55009488"
 ---
 # <a name="how-can-i-keep-focus-when-stepping-through-my-app"></a>逐步執行我的應用程式時，如何保持焦點？
 ## <a name="description"></a>說明  

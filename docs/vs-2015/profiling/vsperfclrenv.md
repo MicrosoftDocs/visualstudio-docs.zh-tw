@@ -1,14 +1,9 @@
 ---
 title: VSPerfCLREnv | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - command-line tools, VSPerfCLREnv
 - command line, tools
@@ -19,13 +14,13 @@ ms.assetid: 4bc9dd6e-379c-4930-9bba-59a4faa93303
 caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 0ff359904b2b4d8b10dbc180f076606651028e80
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 7387f2bc55d00695e85df3b023914e8d6fe9696d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51741508"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54768081"
 ---
 # <a name="vsperfclrenv"></a>VSPerfCLREnv
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -72,7 +67,7 @@ VSPerfCmd /Attach:MyService.exe
   
  下表描述用於檢測程式碼剖析的 VSPerfCLREnv 選項︰  
   
-|選項|描述|  
+|選項|說明|  
 |------------|-----------------|  
 |**TraceOn**|使用檢測方法啟用程式碼剖析功能。 不會啟用記憶體配置程式碼剖析功能或收集物件存留期資料。|  
 |**TraceGC**|使用檢測方法啟用記憶體配置程式碼剖析功能。 不會啟用收集物件存留期資料的功能。|  
@@ -82,7 +77,7 @@ VSPerfCmd /Attach:MyService.exe
   
  下表描述用於取樣程式碼剖析的 VSPerfCLREnv 選項︰  
   
-|選項|描述|  
+|選項|說明|  
 |------------|-----------------|  
 |**SampleOn**|使用取樣方法啟用程式碼剖析功能。 不會啟用記憶體配置程式碼剖析功能或收集物件存留期資料。|  
 |**SampleGC**|使用取樣方法啟用記憶體配置程式碼剖析功能。 不會啟用收集物件存留期資料的功能。|  
@@ -93,7 +88,7 @@ VSPerfCmd /Attach:MyService.exe
   
  若要分析受管理服務和由作業系統啟動而不是使用者啟動的 ASP.NET Web 應用程式，請選擇使用進行全域程式碼剖析的 VSPerfCLREnv 選項。 下表描述 VSPerfCLREnv 選項的全域版本︰ 這些選項可在登錄中設定適當的環境變數。  
   
-|選項|描述|  
+|選項|說明|  
 |------------|-----------------|  
 |**GlobalTraceOn**|使用檢測方法啟用全域程式碼剖析功能。 不會收集記憶體配置事件或物件存留期資料。|  
 |**GlobalTraceGC**|使用檢測方法啟用全域記憶體配置程式碼剖析功能。 不會啟用收集物件存留期資料的功能。|  
@@ -106,7 +101,7 @@ VSPerfCmd /Attach:MyService.exe
   
  當您完成對 Managed 應用程式進行程式碼剖析時，使用下列其中一個選項來刪除 VSPerfCLREnv 所加入的環境變數。 下表描述如何刪除這兩個標準和全域環境變數︰  
   
-|選項|描述|  
+|選項|說明|  
 |------------|-----------------|  
 |**Off**|刪除標準 .NET 程式碼剖析的環境變數。 使用非全域 VSPerfClrEnv 選項來設定分析工具環境變數時，請使用此選項。|  
 |**GlobalOff**|刪除全域 .NET 程式碼剖析的環境變數。 當應用程式由作業系統啟動且不是分析工具時，請使用此選項。|  
@@ -116,8 +111,5 @@ VSPerfCmd /Attach:MyService.exe
   
  如果程式碼剖析期間未設定正確的環境，會在分析期間報告警告且無法正確解析 Managed 函式名稱。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [從命令列進行程式碼剖析](../profiling/using-the-profiling-tools-from-the-command-line.md)
-
-
-

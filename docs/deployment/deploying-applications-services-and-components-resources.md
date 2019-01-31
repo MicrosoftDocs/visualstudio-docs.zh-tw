@@ -10,15 +10,15 @@ dev_langs:
 - C++
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4af052f2851e8fa79e60d57aa771d914b3aa2fdd
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fdf11d31244ffca5c6a12e0661d34a8727301be0
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53888149"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54952596"
 ---
 # <a name="overview-of-deployment-in-visual-studio"></a>Visual Studio 中的部署概觀
 

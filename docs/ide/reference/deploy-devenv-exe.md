@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: e47c8723-df08-4645-aa2d-0c956e7ccca2
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 33738e4986b477024d1992da17078ac1368babf4
-ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
+ms.openlocfilehash: 0eef6420f09157a349658ca232a9e2551476b9d1
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/14/2019
-ms.locfileid: "54269458"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55008473"
 ---
 # <a name="deploy-devenvexe"></a>/Deploy (devenv.exe)
 

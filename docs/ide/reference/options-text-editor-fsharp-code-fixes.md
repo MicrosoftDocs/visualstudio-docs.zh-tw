@@ -4,18 +4,18 @@ ms.date: 01/16/2019
 ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
-- VS.ToolsOptionsPages.Text_Editor.FSharp.Code_Fixes
+- VS.ToolsOptionsPages.Text_Editor.F%2523.Code_Fixes
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: bbe6b49d7b80138c7fc465e1c86aa13e6bc5e92d
-ms.sourcegitcommit: 8bfabab73b39b3b3e68a3e8dc225515e8b310fed
+ms.openlocfilehash: 9345cf5d608ec8b69d88ac1c1644510f105337fd
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "54398368"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54947071"
 ---
 # <a name="options-text-editor-f-code-fixes"></a>選項、文字編輯器、F#、程式碼修正
 

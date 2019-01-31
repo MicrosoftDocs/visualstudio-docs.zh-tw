@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 74e41666-2ce8-4ac0-a0e5-3723d1e322c2
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bc9fd8b8684782f92c27563fb5d19a46d61c554e
-ms.sourcegitcommit: 75e02ed88a1ace6e8265fd4e3a82a1bc78f3adca
+ms.openlocfilehash: 4ac5b6fed30689a69fe90bc0972f8cb292f7691b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/13/2018
-ms.locfileid: "54406116"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54987657"
 ---
 # <a name="microsoft-help-viewer"></a>Microsoft Help Viewer
 

@@ -1,14 +1,9 @@
 ---
 title: 封鎖時間分析報表 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.cv.threads.report.blocking
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 3bc45af0-3ba6-4fa3-a336-be8e9ae95107
 caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 31be25e5fb41f2e7a92ee2c19803d74c442fcad4
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 0efeb7fb0eb481d0b8d62ff4a9ebf9daad98c39f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51807019"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54782290"
 ---
 # <a name="blocking-time-profile-report"></a>封鎖時間分析報表
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +34,7 @@ ms.locfileid: "51807019"
 ## <a name="blocking-time-report-columns"></a>封鎖時間報表資料行  
  下表顯示每個封鎖時間報表的資料行。  
   
-|資料行名稱|描述|  
+|資料行名稱|說明|  
 |-----------------|-----------------|  
 |名稱|每個層級的呼叫堆疊的函式名稱。|  
 |執行個體|顯示的時間週期內封鎖呼叫的執行個體數目。|  
@@ -66,8 +61,5 @@ ms.locfileid: "51807019"
 ### <a name="ui-processing"></a>UI 處理  
  UI 處理報表顯示對封鎖 UI 處理區塊之區段負責的呼叫，以及每個呼叫堆疊的彙總封鎖時間。 如需詳細資訊，請參閱 [UI 處理時間](../profiling/ui-processing-time.md)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [執行緒檢視](../profiling/threads-view-parallel-performance.md)
-
-
-

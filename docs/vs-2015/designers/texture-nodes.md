@@ -1,25 +1,20 @@
 ---
 title: 紋理節點 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: b7df5ef3-dd4f-4964-9d96-34e0e180515e
 caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: bda107323b24940ed8cab18a61f9e491f8392f53
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: e43329cb15eaf41ccb8859521bd45eff6f749c10
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49252352"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54779836"
 ---
 # <a name="texture-nodes"></a>紋理節點
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,6 +34,3 @@ ms.locfileid: "49252352"
 |**材質維度**|輸出 2D 材質貼圖的寬度和高度。<br /><br /> 您可以將材質維度視為著色器中材質的高度與寬度來使用。<br /><br /> **輸出：**<br /><br /> `Output`: `float2`<br /> 以向量表示材質的高度與寬度。 寬度儲存在向量的第一個元素。 高度會儲存在第二個元素。|**材質**<br /> 與材質維度相關聯的材質暫存器。|  
 |**材質差異**|輸出 2D 材質貼圖材質之間的差異 (距離)。<br /><br /> 您可以使用材質差異，對著色器中相鄰的材質值取樣。<br /><br /> **輸出：**<br /><br /> `Output`: `float2`<br /> 材質和下一個材質 (以對角線正向移動) 間的差異 (距離)，以標準化材質空間中的向量表示。 您可以選擇性地略過或否定差異的 U 或 V 座標，衍生出所有相鄰材質的位置。|**材質**<br /> 與材質差異相關聯的材質暫存器。|  
 |**材質範例**|在指定座標接受來自 2D 材質貼圖的色彩範例。<br /><br /> 您可以使用材質貼圖，在物件的表面提供色彩詳細資料。<br /><br /> **輸入：**<br /><br /> `UV`: `float2`<br /> 取樣處的座標。<br /><br /> **輸出：**<br /><br /> `Output`: `float4`<br /> 色彩範例。|**紋理**<br /> 與取樣器相關聯的材質暫存器。|
-
-
-

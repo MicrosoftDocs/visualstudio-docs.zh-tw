@@ -11,15 +11,15 @@ dev_langs:
 ms.assetid: f84339c7-d617-4f56-bfcd-af2215c347ba
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5c9d1dd1b17c9e3c301822a2c4a3b5eaae037d2f
-ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
+ms.openlocfilehash: 3e1789a14d1b3d398372a6490c901b8e9b347691
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54405368"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55013297"
 ---
 # <a name="tutorial-create-a-simple-application-with-visual-basic"></a>教學課程：使用 Visual Basic 建立簡單的應用程式
 
@@ -270,5 +270,5 @@ IsChecked="True"
 
 ## <a name="see-also"></a>另請參閱
 
-- [Visual Studio 2017 的新功能](../../ide/whats-new-in-visual-studio.md)
+- [Visual Studio 2017 的新功能](../../ide/whats-new-visual-studio.md)
 - [生產力祕訣](../../ide/productivity-tips-for-visual-studio.md)

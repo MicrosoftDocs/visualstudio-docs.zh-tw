@@ -1,14 +1,9 @@
 ---
 title: 開啟方案命令 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - file.opensolution
 helpviewer_keywords:
@@ -18,13 +13,13 @@ ms.assetid: 61de76c8-69d7-4cdb-b605-e132f45d05d9
 caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 15c51e341761ad34241f1230f797896ce8dc2e9e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 298609aa37557eebc52dce7ca6eada2f98f2096d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49186398"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54759982"
 ---
 # <a name="open-solution-command"></a>開啟方案命令
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -40,7 +35,7 @@ File.OpenSolution filename
   
 ## <a name="arguments"></a>引數  
  `Filename`  
- 必要。 要開啟之方案的完整路徑和檔名。  
+ 必要項。 要開啟之方案的完整路徑和檔名。  
   
  `filename` 引數的語法需要包含空格的路徑使用引號。  
   
@@ -54,11 +49,8 @@ File.OpenSolution filename
 >File.OpenSolution "c:\MySolutions\Test1\Test1.sln"  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Visual Studio 命令](../../ide/reference/visual-studio-commands.md)   
  [命令視窗](../../ide/reference/command-window.md)   
  [尋找/命令方塊](../../ide/find-command-box.md)   
  [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
-
-
-

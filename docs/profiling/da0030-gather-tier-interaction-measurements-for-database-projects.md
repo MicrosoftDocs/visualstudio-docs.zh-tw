@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: 42b2f69d-0cfa-4854-82c4-589c3d8b4557
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e1ce3a67fd9894062906991bae1adf3ccc24116
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e1ee7144e77fe007ce4c8219e668ddd161cd6e6d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53845807"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55024122"
 ---
 # <a name="da0030-gather-tier-interaction-measurements-for-database-projects"></a>DA0030：資料庫專案的收集階層互動度量
 

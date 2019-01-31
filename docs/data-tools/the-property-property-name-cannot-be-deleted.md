@@ -5,16 +5,16 @@ ms.topic: reference
 ms.assetid: 55873f74-7834-4ec1-8815-eeeb65618d87
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 73e3443c5af145934de15f674213ea5bd01384d1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6940da198fddc4213bbec1271164b20cfbeb6672
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53951663"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54994156"
 ---
 # <a name="the-property-property-name-cannot-be-deleted"></a>無法刪除屬性 \<屬性名稱>
 

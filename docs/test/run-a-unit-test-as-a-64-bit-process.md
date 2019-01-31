@@ -7,16 +7,16 @@ helpviewer_keywords:
 - unit tests, creating
 - unit tests, running
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: b38968c7724faaaba092b68aaa89e02b93d2dd10
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1e4a5919a4c030380e82794c9dd1dbe4ca35cc11
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53921662"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55024275"
 ---
 # <a name="run-a-unit-test-as-a-64-bit-process"></a>以 64 位元處理序的形式執行單元測試
 

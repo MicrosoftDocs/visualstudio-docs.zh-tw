@@ -5,16 +5,16 @@ ms.topic: conceptual
 ms.assetid: af32653c-f4e6-4217-8c5a-e32b322b4918
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: e554561598086193b4862f5962435b25a1ae4d47
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f0e95466baa4e16e4620ff387a11d4e723399a38
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53935758"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54953389"
 ---
 # <a name="data-class-inheritance-or-designer"></a>資料類別繼承 (O/R 設計工具)
 

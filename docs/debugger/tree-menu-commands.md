@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: ffc1b893-17b1-477f-92a1-e4a59261ca1a
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ce1d92bd7a0edd741832c2d5009b671a9d029964
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a2b026da51014ec8ffb5de444b4e42978604bf7c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53861675"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54931995"
 ---
 # <a name="tree-menu-commands"></a>樹狀結構功能表命令
 **樹狀結構**功能表提供命令，以展開或摺疊檢視。  

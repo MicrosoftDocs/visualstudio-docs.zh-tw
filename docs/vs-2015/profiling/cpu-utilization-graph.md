@@ -1,14 +1,9 @@
 ---
 title: CPU 使用率圖形 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.cv.cpu.graph
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 5332fd38-622d-47a3-874f-8c2fd7a30f95
 caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: b1eb8baeee066336834cc1fcfe427512108387a3
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: cebba40ee1c438e7be8ea97dcfc7050491511039
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51727004"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54780730"
 ---
 # <a name="cpu-utilization-graph"></a>CPU 使用率圖形
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,9 +35,6 @@ CPU 使用率圖形顯示應用程式經過一段時間的使用率等級。 X �
   
 -   白色表示系統上未使用的邏輯核心可用性。 如果您可以找到更多平行處理的機會，您的處理序就可以使用這些核心。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [使用率檢視](../profiling/utilization-view.md)   
  [平均 CPU 使用率](../profiling/average-cpu-utilization.md)
-
-
-

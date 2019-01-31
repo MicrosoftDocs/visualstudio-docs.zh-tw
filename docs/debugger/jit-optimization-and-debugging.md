@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 19bfabf3-1a2e-49dc-8819-a813982e86fd
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 917c9bab910b8f3153af46dc9d1d1a64ec6e529d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8699c468a3bf5f9c72131add984055f08f23c7c3
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53841261"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54959287"
 ---
 # <a name="jit-optimization-and-debugging"></a>JIT 最佳化和偵錯
 **如何最佳化會在.NET 中運作：** 如果您嘗試偵錯程式碼，這遠時，程式碼是**不**最佳化。 這是因為當程式碼最佳化時，編譯器和執行階段發出 CPU 程式碼進行變更，讓它執行速度較快，但較不直接對應至原始的原始程式碼。 這表示偵錯工具會經常無法告訴您的本機變數的值，然後逐步執行程式碼，而且中斷點可能無法如預期運作。

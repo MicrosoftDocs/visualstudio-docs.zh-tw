@@ -1,14 +1,9 @@
 ---
 title: 管理通道 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.cv.threads.tools.managechannels
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 507b06e9-bb56-4a72-8fd5-f91f958da6fc
 caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: dba4def686f97bd3169eb5816630c272dc61d8e6
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 61b20ea728cd0b714ba61dfa7aef1893a91cfaca
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51725996"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54758370"
 ---
 # <a name="manage-channels"></a>管理通道
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -66,10 +61,7 @@ ms.locfileid: "51725996"
 ## <a name="group-markers-by-thread"></a>依據執行緒來分組標記  
  如果追蹤包含標記事件，您就可以使用此命令將標記通道分組在產生標記事件的執行緒下方。  磁碟通道會移動到通道清單的最上方，而 GPU 通道會移動到最下方。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [縮放控制 (執行緒檢視)](../profiling/zoom-control-threads-view.md)   
  [開啟/關閉測量模式](../profiling/measure-mode-on-off.md)   
  [執行緒檢視](../profiling/threads-view-parallel-performance.md)
-
-
-

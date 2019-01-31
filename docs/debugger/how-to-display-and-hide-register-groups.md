@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 6be5dfb4-4cfe-4daf-b538-60405640857d
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 839ae628184250e276c27fccc80c6b9f8085fabd
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: be702dcd19506e6da8fb1e291aa5262dbf4399b2
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53846791"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55018445"
 ---
 # <a name="how-to-display-and-hide-register-groups-c-c-visual-basic-f"></a>HOW TO：顯示和隱藏暫存器群組 (C#，c + +、 Visual Basic 中， F#)
 

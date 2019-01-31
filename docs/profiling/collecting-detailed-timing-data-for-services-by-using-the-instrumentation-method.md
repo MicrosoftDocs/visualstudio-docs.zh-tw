@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 6116e1df-ed3e-4b0d-ac7f-22f7d7ac00ea
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 693bd44fe9945d5f86ea405fbc8c2ccbd3e15560
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6050ff47168d1102d8e6d115f2a3abd140196b8e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53946340"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54948319"
 ---
 # <a name="collect-detailed-timing-data-for-services-by-using-the-instrumentation-method-from-the-profiler-command-line"></a>從分析工具命令列使用檢測方法收集服務的詳細計時資料
 本節描述從命令列使用檢測方法收集 Windows 服務之詳細效能資料的程序和選項。  

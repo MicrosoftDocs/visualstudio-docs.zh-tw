@@ -11,15 +11,15 @@ dev_langs:
 - C++
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b884326eb2e3aeeb03381088d0dc5b7caa07475
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: cb5d5091f38835134c8803f58962a250790b24c9
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53923053"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54996489"
 ---
 # <a name="error-ensure-that-dns-is-correctly-configured-on-the-target-computer"></a>錯誤：確認目標電腦上的 DNS 設定都正確
 您可能會在嘗試進行遠端偵錯時，得到下列錯誤訊息：  

@@ -8,15 +8,15 @@ f1_keywords:
 ms.assetid: 4e69f97b-2bd2-4619-a5f9-92ca2e814de3
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 48ccedbc769b2d4acdc4fd921164a689f5ec4f48
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9726283b67c0e20ab483bbe24607a7bf78c60ed7
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53943219"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54933980"
 ---
 # <a name="import-and-export-settings-environment-options-dialog-box"></a>選項對話方塊、環境、匯入和匯出設定
 

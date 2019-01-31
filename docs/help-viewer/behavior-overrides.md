@@ -6,15 +6,15 @@ ms.topic: conceptual
 ms.assetid: 95fe6396-276b-4ee5-b03d-faacec42765f
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 30953bb5cd41722ff99e37a0820a67aba77f3eef
-ms.sourcegitcommit: 75e02ed88a1ace6e8265fd4e3a82a1bc78f3adca
+ms.openlocfilehash: 7b73feb967e340f66eb243013add0b650916c956
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/13/2018
-ms.locfileid: "54406126"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54961422"
 ---
 # <a name="help-content-manager-overrides"></a>Help Content Manager 覆寫
 

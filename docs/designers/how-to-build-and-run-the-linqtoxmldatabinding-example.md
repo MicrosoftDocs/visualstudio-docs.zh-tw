@@ -5,15 +5,15 @@ ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4087ea9d97970621a2ec8b51dc37d38f0306b0e6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 10d3f93e467d95e11606d8d8e4d27d82abb5dee6
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53989013"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54973118"
 ---
 # <a name="how-to-build-and-run-the-linqtoxmldatabinding-example"></a>HOW TO：建置並執行 LinqToXmlDataBinding 範例
 

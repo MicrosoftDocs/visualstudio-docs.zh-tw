@@ -1,14 +1,9 @@
 ---
 title: CL 工作 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 f1_keywords:
 - VC.Project.VCCLCompilerTool.UseUnicodeForAssemblerListing
 - vc.task.cl
@@ -26,13 +21,13 @@ ms.assetid: 651ba971-b755-4f03-a549-4816beb3cc0d
 caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: fb9b6924f5d11e3d857308e3a1bcf1e1644f78bc
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 136bc554abe6c231dfa80753b19dba89946830c3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50220244"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54756659"
 ---
 # <a name="cl-task"></a>CL 工作
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -809,8 +804,5 @@ ms.locfileid: "50220244"
   
 ## <a name="remarks"></a>備註  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [工作參考](../msbuild/msbuild-task-reference.md)
-
-
-

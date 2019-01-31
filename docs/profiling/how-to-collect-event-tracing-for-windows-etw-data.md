@@ -10,15 +10,15 @@ helpviewer_keywords:
 - performance tools, enabling event trace providers
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a619820cd2c6a3a884c7279d4eb9ffc9741619d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7f4259a28976f7fc622c0b0cf8948bc2ad891a8b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53863634"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55024925"
 ---
 # <a name="how-to-collect-event-tracing-for-windows-etw-data"></a>HOW TO：收集 Windows 事件追蹤 (ETW) 資料
 

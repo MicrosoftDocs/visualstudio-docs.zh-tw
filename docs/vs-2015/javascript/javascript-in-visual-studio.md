@@ -1,24 +1,20 @@
 ---
 title: JavaScript
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-javascript
+ms.topic: conceptual
 ms.assetid: f3eee13e-30e4-4bc1-81f5-058d7e379b75
 caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 7944572cda7f5d549355a25f05bcbcf897fe8530
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 962657d19026f85e98b1f1d22241aa57013d7df6
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53990986"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54834068"
 ---
 # <a name="javascript-in-visual-studio"></a>Visual Studio 中的 JavaScript
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +27,7 @@ JavaScript 是在 Visual Studio 中的第一級語言。 當您在 Visual Studio
 
 - 若要使用 Apache Cordova 來建立跨平台應用程式，請[取得 Visual Studio Tools for Apache Cordova](http://go.microsoft.com/fwlink/p/?LinkId=397606)。
 
-- 若要建立 [Windows 市集](http://dev.windows.com/develop)、[Windows Phone](http://dev.windows.com/develop) 及通用應用程式 (支援這兩種平台)，請[取得工具](http://dev.windows.com/en-us/develop/downloads)。
+- 若要建立 [Windows 市集](http://dev.windows.com/develop)、[Windows Phone](http://dev.windows.com/develop) 及通用應用程式 (支援這兩種平台)，請[取得工具](http://dev.windows.com/develop/downloads)。
 
 - 若要建立雲端式服務，請參閱 [Microsoft Azure 網站](http://azure.microsoft.com/documentation/)。
 

@@ -6,17 +6,17 @@ ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 96921c3b711fa1f2d01bee343d68891cf246bc6b
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.openlocfilehash: cd0e2079edde74155d38646fa5e22b6a11c1c7fd
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54315627"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55032419"
 ---
 # <a name="create-a-c-extension-for-python"></a>建立適用於 Python 的 C++ 延伸模組
 
@@ -323,7 +323,7 @@ C++ 模組可能因為下列原因而無法編譯：
 
     setup(
         name = 'superfastcode2',
-        version = '1.0',    
+        version = '1.0',
         description = 'Python package with superfastcode2 C++ extension (PyBind11)',
         ext_modules = [sfc_module],
     )
@@ -409,7 +409,7 @@ Visual Studio 可支援同時偵錯 Python 和 C++ 程式碼。 本節將逐步�
 | ctypes | 2003 | [oscrypto](https://github.com/wbond/oscrypto) | 不需編譯、廣泛可用。 | 存取與變更 C 結構麻煩又容易出錯。 |
 | SWIG | 1996 | [crfsuite](http://www.chokkan.org/software/crfsuite/) | 一次產生許多語言的繫結。 | 如果 Python 是唯一的目標，負荷會過大。 |
 | cffi | 2013 | [cryptography](https://cryptography.io/en/latest/)、[pypy](https://pypy.org/) | 輕鬆整合、PyPy 相容性。 | 較新穎、較不成熟。 |
-| [cppyy](https://cppyy.readthedocs.io/en/latest/) | 2017 | | 類似於使用 C++ 的 cffi。 | 較新，搭配 VS 2017 使用時可能會有一些問題。 |  
+| [cppyy](https://cppyy.readthedocs.io/en/latest/) | 2017 | | 類似於使用 C++ 的 cffi。 | 較新，搭配 VS 2017 使用時可能會有一些問題。 |
 
 ## <a name="see-also"></a>另請參閱
 

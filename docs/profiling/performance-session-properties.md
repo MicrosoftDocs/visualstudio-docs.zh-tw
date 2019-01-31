@@ -8,15 +8,15 @@ helpviewer_keywords:
 - performance tools, performance session properties
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a6cf897d0181717439f7ae3ac6afccb469b06f0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 76e2d85cd1417d7700841b3d035255317f2581a0
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53961909"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54959417"
 ---
 # <a name="performance-session-properties"></a>效能工作階段屬性
 

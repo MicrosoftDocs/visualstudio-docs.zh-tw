@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 529fa251-b7b3-49cf-863c-10e0b82ac7cc
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 89bc0016390fd2690a0136b3c3c6c130ab3eae46
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1eabc2f69ac5acf7aaf5fa28502b5ffd64cbc4a3
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53847551"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54982490"
 ---
 # <a name="go-to-line-dialog-box"></a>移至行對話方塊
 

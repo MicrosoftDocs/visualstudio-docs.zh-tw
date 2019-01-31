@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: e3a8815c-6995-4099-8e88-34f91fad55b2
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 74a0380cd7d31f0c7a3e8d94a9232efa908ee89f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3ae6eb64abe6533b6110742815bc92b96abfa9cb
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53833136"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54923240"
 ---
 # <a name="international-settings-environment-options-dialog-box"></a>選項對話方塊、環境、國際設定
 

@@ -1,14 +1,9 @@
 ---
 title: 使用 Assert 類別 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 helpviewer_keywords:
 - Assert classes
 - Assert statements
@@ -17,13 +12,13 @@ helpviewer_keywords:
 ms.assetid: da1b7a0d-4f1d-4d50-a07e-7b3ff60053f9
 caps.latest.revision: 29
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 6775f7ea22bab5d210eb4e2993e81bd4a9587560
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 9b44932d9c9cd1defb691527fea40c4cf39d2fe5
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49208308"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54834618"
 ---
 # <a name="using-the-assert-classes"></a>使用 Assert 類別
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,9 +59,6 @@ ms.locfileid: "49208308"
   
  當您想要測試方法確認您預期由開發程式碼中之方法擲回的例外狀況，確實是由該方法擲回時，請使用 ExpectedExceptionAttribute 屬性裝飾測試方法。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  <xref:Microsoft.VisualStudio.TestTools.UnitTesting>   
- [針對現有的程式碼建立和執行單元測試](http://msdn.microsoft.com/en-us/e8370b93-085b-41c9-8dec-655bd886f173)
-
-
-
+ [針對現有的程式碼建立和執行單元測試](http://msdn.microsoft.com/e8370b93-085b-41c9-8dec-655bd886f173)

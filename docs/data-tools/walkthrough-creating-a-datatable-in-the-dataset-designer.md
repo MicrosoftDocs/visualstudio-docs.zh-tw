@@ -9,16 +9,16 @@ helpviewer_keywords:
 - data [Visual Studio], Dataset Designer
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 505c27787b033a6ccee9f89a19962d5fc81b9912
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 721613b36a14c82c67c4cc187593651a4fd24acd
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53824830"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54972374"
 ---
 # <a name="walkthrough-create-a-datatable-in-the-dataset-designer"></a>逐步解說：以 Dataset 設計工具建立 DataTable
 

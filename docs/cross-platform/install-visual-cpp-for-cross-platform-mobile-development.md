@@ -9,15 +9,15 @@ dev_langs:
 ms.assetid: aaea6b8d-55eb-4427-8185-c050f855c257
 author: corob-msft
 ms.author: corob
-manager: douge
+manager: jillfra
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: 5dffe82511e75889ea588cb23b1f19490f991ab0
-ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
+ms.openlocfilehash: c46644b18188475bd6389a795625209f74a7d9b5
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39251903"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55021984"
 ---
 # <a name="install-cross-platform-mobile-development-with-c"></a>使用 C++ 來安裝跨平台行動裝置應用程式開發
 
@@ -136,7 +136,7 @@ Visual Studio Community、Professional 及 Enterprise 版本中都有提供「�
 
    根據預設，安裝程式會將 Apache Ant 放在 *C:\Program Files (x86)\Microsoft Visual Studio 14.0\Apps*。
 
-- [Android 版 Microsoft Visual Studio 模擬器](https://aka.ms/vscomemudownload)
+- [Microsoft Visual Studio Emulator for Android](https://aka.ms/vscomemudownload)
 
    「Microsoft Visual Studio 的 Android 模擬器」是一款選用的模擬器，適合用來進行程式碼測試與偵錯。 在「Visual Studio 的 Android 模擬器」發行之後，Google 將其 Android 模擬器更新成透過 Intel 的 HAXM 使用硬體加速。 建議您儘可能使用 Google 的加速模擬器，因為它可讓您存取最新的 Android OS 映像和 Google Play 服務。
 

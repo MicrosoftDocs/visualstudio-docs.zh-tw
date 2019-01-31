@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 3c6d58b0-36e8-47aa-bfca-b73dd2045d91
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 865e291e24bfb161f43e8fb5192a08e93cdb75d0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e0c497427404a9ebcc22ad9b41ee7dc9db1d5480
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53869095"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54961724"
 ---
 # <a name="findunderpath-task"></a>FindUnderPath 工作
 判斷指定項目集合中哪些項目的路徑位於指定資料夾或其子資料夾中。  

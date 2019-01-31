@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: db648e5f-6375-4e2d-aa98-eb7261958927
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f79bd9c0f2bbf2ab3156f5bc49100c9c8aee536
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8af6b4b5f381fe1b1db93e99263c0026e8be408f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53947357"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54941739"
 ---
 # <a name="debug-64-bit-applications"></a>偵錯 64 位元應用程式
 您可以對本機電腦或遠端電腦上執行的 64 位元應用程式進行偵錯。  

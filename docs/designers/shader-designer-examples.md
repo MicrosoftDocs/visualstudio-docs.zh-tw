@@ -6,15 +6,15 @@ ms.topic: conceptual
 ms.assetid: f12f5dee-63ab-4376-9952-7f87f269e9c4
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3ef12409a1c0c90a94a7284f3d6d7576bb241b62
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: cef326f139526683e76191041538437943474eba
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53959820"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55041889"
 ---
 # <a name="shader-designer-examples"></a>著色器設計工具範例
 

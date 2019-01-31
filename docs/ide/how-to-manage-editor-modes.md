@@ -22,15 +22,15 @@ helpviewer_keywords:
 ms.assetid: 1fb48027-d870-439f-8b72-4a0321390748
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1f2bf05eaaa5a61f7614b5d35ac6f8467ad6089a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e288c202bbba093738592c5060ee0d3a4f605c88
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53820435"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54943886"
 ---
 # <a name="how-to-manage-editor-modes"></a>HOW TO：管理編輯器模式
 

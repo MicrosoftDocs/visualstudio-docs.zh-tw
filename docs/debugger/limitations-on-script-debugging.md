@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 280eead5-693c-47af-967f-dfe9d23f84db
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 565f483c12e3d91bd68919537feb06af5029abc7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a4c74a698a07718d99036ee4fc23c5b45123b9dc
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53825954"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55021555"
 ---
 # <a name="limitations-on-script-debugging"></a>指令碼偵錯的限制
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 支援用戶端指令碼偵錯，但受限於本主題所述的限制。  

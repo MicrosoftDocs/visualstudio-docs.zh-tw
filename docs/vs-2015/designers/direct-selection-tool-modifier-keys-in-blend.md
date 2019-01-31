@@ -1,25 +1,20 @@
 ---
 title: Blend 中的直接選取工具輔助按鍵 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: 21f9b951-dc2b-4d09-bd70-75caed8fb964
 caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: dfe69bcc678cbd6f06f8afc8d7e175b124f423ab
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: f4c9c027487fcefd29b486d6c58fa45f9e347f60
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49191070"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54776284"
 ---
 # <a name="direct-selection-tool-modifier-keys-in-blend"></a>Blend 中的直接選取工具輔助按鍵
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,11 +34,8 @@ ms.locfileid: "49191070"
 |選取線段並將其彎成曲線，以通過指標的位置。|將滑鼠指標停在路徑中的線段上，按住 ALT 鍵，然後拖曳線段|![](../designers/media/975a855a-8536-441f-97ed-2f1496e416bf.png "975a855a-8536-441f-97ed-2f1496e416bf")<br /><br /> 轉換線段的指標|  
 |個別調整另一側正切函數的一端|直接選取點或線段，按住 ALT 鍵，然後拖曳正切函數的結束點|![](../designers/media/923951da-4081-4f8b-bebc-0f1f64d87504.png "923951da-4081-4f8b-bebc-0f1f64d87504")<br /><br /> 轉換正切函數的指標|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [鍵盤快速鍵和輔助按鍵](../designers/keyboard-shortcuts-and-modifier-keys-in-blend.md)   
  [畫板輔助按鍵](../designers/artboard-modifier-keys-in-blend.md)   
  [畫筆工具輔助按鍵](../designers/pen-tool-modifier-keys-in-blend.md)   
  [繪製圖案與路徑](../designers/draw-shapes-and-paths.md)
-
-
-

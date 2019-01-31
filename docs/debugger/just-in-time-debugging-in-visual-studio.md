@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 14972d5f-69bc-479b-9529-03b8787b118f
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f946c44039407ac413fb0b49234a8590025e12d3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: edd21719348a69926a32bc23007e37d8bb577de9
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53959783"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54983751"
 ---
 # <a name="disable-the-just-in-time-debugger"></a>停用 Just-In-Time 偵錯工具 
 

@@ -5,15 +5,15 @@ ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: gewarren
 ms.author: michma
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 873d0be0e1efee220e0a702fc537beace1d7aa32
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a97b8da26be280b0c35d236bd5c817d5c58ba8ab
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53824508"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54987163"
 ---
 # <a name="system-generated-logs-collected-by-visual-studio"></a>Visual Studio 所收集的系統產生記錄檔
 

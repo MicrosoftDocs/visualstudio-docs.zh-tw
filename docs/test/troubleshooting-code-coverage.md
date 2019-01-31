@@ -4,16 +4,16 @@ ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.topic: troubleshooting
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 648f080c2733da4a9b0ee4a0e4bf746354737da4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d3bcefaa9c316b0308eb68ccf82231c11926a7e8
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53905289"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54967796"
 ---
 # <a name="troubleshoot-code-coverage"></a>對程式碼涵蓋範圍進行疑難排解
 

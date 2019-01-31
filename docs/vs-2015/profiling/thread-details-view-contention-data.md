@@ -1,14 +1,9 @@
 ---
 title: 執行緒詳細資料檢視 - 爭用資料 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.view.threaddetails
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 874c3b1c-88d8-479a-bb35-1291d9aa8e67
 caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: da2cac3503f97976fe5c0918f86e5b25f2b89329
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 5d8ecbeca226d558774c12f4bec45ac26f66a808
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51795646"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54762120"
 ---
 # <a name="thread-details-view---contention-data"></a>執行緒詳細資料檢視 - 爭用資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -67,6 +62,3 @@ ms.locfileid: "51795646"
 -   在時間軸圖形中，按一下 [總計]。  
   
      [處理序檢視](../profiling/process-view-contention-data.md)隨即顯示，並選取該執行緒。
-
-
-

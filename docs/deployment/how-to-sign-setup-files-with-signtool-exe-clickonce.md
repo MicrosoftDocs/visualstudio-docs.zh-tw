@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 545a4005-d283-4110-9821-c78a9833c250
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 845c1511ebb4555fee12c92b5534b11fb23cbb45
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ce9a12c940f2b654ef67d03d30af6a4a5b9266a5
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53845320"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54949632"
 ---
 # <a name="how-to-sign-setup-files-with-signtoolexe-clickonce"></a>HOW TO：使用 SignTool.exe 簽署安裝程式檔案 (ClickOnce)
 您可以使用 *SignTool.exe* 簽署安裝程式 (*setup.exe*)。 這項程序有助於確保不會在使用者電腦上安裝遭到修改的檔案。  

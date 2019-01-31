@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: e0846d4d-2ce1-48e3-b219-674ff070bf4e
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 97063980f22d96a88f0083912e75ca4aa5a33b4f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 267308ba6cedf5277a986b9d953dd5774d789c9e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53896602"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54981372"
 ---
 # <a name="visual-studio-product-feedback"></a>Visual Studio 產品意見反應
 

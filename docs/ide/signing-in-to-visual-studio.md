@@ -8,15 +8,15 @@ ms.topic: conceptual
 ms.assetid: b9531c25-e4cf-43ae-b331-a9f31a8cd171
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dccb2fb9c4fce456055b136dace7e95d02647a94
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b2ebcfa51dc04408a5cea334d7d62f457dcc3ae7
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53840787"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54948306"
 ---
 # <a name="sign-in-to-visual-studio"></a>登入 Visual Studio
 

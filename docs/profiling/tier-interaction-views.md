@@ -6,15 +6,15 @@ helpviewer_keywords:
 - profiling tools, tier interaction method views
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f83cd5fc4b7f15fe98f39f24d9deea3dfbb9c6e6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d29725f0ed593f2cfd0994ff981ac528ccb1c148
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53961854"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55020174"
 ---
 # <a name="tier-interaction-views"></a>階層互動檢視
 

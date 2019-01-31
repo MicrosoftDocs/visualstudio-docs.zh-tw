@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: b697ef2d-3f5d-40df-b113-7068a5bec0d4
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 56e274c103d9bc8d4f80606476c8c6fd4793a8a5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3debe7c0a193cc0dc2c07875ebb32ac45a7741fb
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53903938"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54949255"
 ---
 # <a name="symbol-path-command"></a>符號路徑命令
 設定目錄清單，以讓偵錯工具搜尋符號。

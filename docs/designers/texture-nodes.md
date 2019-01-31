@@ -6,15 +6,15 @@ ms.topic: reference
 ms.assetid: b7df5ef3-dd4f-4964-9d96-34e0e180515e
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 858857dae187174a70740a91063943383526def9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8e426201acc0aed4c6d5fe897e78d261edaa5e4a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53830751"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55041902"
 ---
 # <a name="texture-nodes"></a>紋理節點
 

@@ -4,15 +4,15 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: baf48f1e5f8f0370bbabb64bc6b28ef0fd4fcb63
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d73897f9d02111fa686eb66c00d9a8ada0f621bc
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53892724"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55027359"
 ---
 # <a name="collect-additional-performance-data"></a>收集其他效能資料
 

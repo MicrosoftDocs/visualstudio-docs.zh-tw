@@ -8,13 +8,14 @@ helpviewer_keywords:
 - solution filtering
 author: gewarren
 ms.author: stsu
-manager: douge
-ms.openlocfilehash: 689f0f2c4ba6d6b8e2e94c2b7982604b1d444745
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+monikerRange: vs-2019
+ms.openlocfilehash: 1ce2c3fbb8386cb58e096e526dc27b03d16e428e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53822793"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54972556"
 ---
 # <a name="filtered-solutions-in-visual-studio"></a>Visual Studio 中已篩選的方案
 

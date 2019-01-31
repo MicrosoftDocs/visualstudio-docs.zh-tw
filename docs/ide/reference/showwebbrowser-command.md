@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: c6a4fbd6-8e9d-45cc-8b2f-93990d065e78
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: df5983b0cbc33abe0f5919a93af1450394134a99
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a46f37f93340226c669df5db59745af17c7b2464
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53985822"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54958884"
 ---
 # <a name="showwebbrowser-command"></a>ShowWebBrowser 命令
 

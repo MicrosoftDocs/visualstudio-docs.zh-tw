@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 9c8862ac-8da5-4437-9430-ecc30421f1c9
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6e41cc7e7be90497995bbadaced4a002ad0bd42d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 577a87d9faccbb110011eb1fe9bdc6ddb6b3d732
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53908784"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54919365"
 ---
 # <a name="writelinestofile-task"></a>WriteLinesToFile 工作
 將所指定項目的路徑寫入至指定的文字檔。  

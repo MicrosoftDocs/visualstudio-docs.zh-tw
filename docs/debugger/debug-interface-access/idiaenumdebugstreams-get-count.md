@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 5c13fa9a-b35e-47b0-806f-1f53bfe1ba89
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: faecfab05e80028e0b9646df9e3fae8f20a46d25
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b37ece7f1a0d062b7c58f72a23916a28863660fb
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53864108"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54956892"
 ---
 # <a name="idiaenumdebugstreamsgetcount"></a>IDiaEnumDebugStreams::get_Count
 擷取偵錯資料流的數目。  

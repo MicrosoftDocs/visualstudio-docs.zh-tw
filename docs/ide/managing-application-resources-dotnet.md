@@ -15,15 +15,15 @@ helpviewer_keywords:
 - application resources [Visual Studio]
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4c689de00c5c5f37d47cb0ecc9f802be4b51a9ab
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1ef364b5152cc822c518e02d9f0b9a4a1a4e3679
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53966806"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55042838"
 ---
 # <a name="manage-application-resources-net"></a>管理應用程式資源 (.NET)
 

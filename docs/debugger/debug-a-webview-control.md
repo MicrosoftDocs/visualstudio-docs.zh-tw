@@ -10,15 +10,15 @@ dev_langs:
 ms.assetid: 7d105907-8b39-4d07-8762-5c5ed74c7f21
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 05ca223405635f8ceed02487aabf364fb59d5893
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4945515def65a0a1a363e6ba6cd76ca411dc6d6f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53944401"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55009036"
 ---
 # <a name="debug-a-webview-control-in-a-uwp-app"></a>偵錯 WebView 控制項在 UWP 應用程式
   

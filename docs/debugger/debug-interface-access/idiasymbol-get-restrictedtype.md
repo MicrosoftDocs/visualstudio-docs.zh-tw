@@ -7,15 +7,15 @@ dev_langs:
 ms.assetid: c48b00a6-26b0-47b0-b824-fe44dedbc756
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9753fa8d500fcd1b38593b5b2f1f985452340dfa
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6caefce977779f7749e1860c1f1304a19c619b0a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53953166"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54921205"
 ---
 # <a name="idiasymbolgetrestrictedtype"></a>IDiaSymbol::get_restrictedType
 指定是否`this`指標會標示為受限制。  

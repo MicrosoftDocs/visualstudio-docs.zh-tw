@@ -6,15 +6,15 @@ ms.topic: conceptual
 ms.assetid: c7c69da8-142b-4d3b-9be9-4be0d5970b25
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ef3120142b2d6fae7c8ee02c81f6ae76efb0aaaa
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c95ba813ff1b571c2db1c5e35b64f30a7e7dff31
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53934118"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54992187"
 ---
 # <a name="how-to-create-a-basic-phong-shader"></a>HOW TO：建立基本 Phong 著色器
 

@@ -6,17 +6,17 @@ ms.prod: visual-studio-dev15
 ms.topic: quickstart
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e26768c3e18fb12ca97e2875dec6ab84cb0344ac
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ab82a2d6b263174eb4b43848bf916e7116059950
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53965489"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55032983"
 ---
 # <a name="quickstart-create-a-python-project-from-existing-code"></a>快速入門：從現有程式碼建立 Python 專案
 

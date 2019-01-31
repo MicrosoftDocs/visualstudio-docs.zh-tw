@@ -9,15 +9,15 @@ helpviewer_keywords:
 - external tools [Visual Studio]
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f918ad272683de5316467d1027e098c1ead91a6
-ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
+ms.openlocfilehash: d82a42e83364e43afbe242e93c7f08dbfb27be96
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54154059"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55025796"
 ---
 # <a name="manage-external-tools"></a>管理外部工具
 

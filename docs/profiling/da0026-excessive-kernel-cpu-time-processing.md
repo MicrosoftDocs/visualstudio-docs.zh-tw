@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: 4cfc8a29-b29b-4a72-b386-03d8856fdf8a
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 20abd86d12db44dac1a2b3a7772e90dee1b2721f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a22f797f8099da7b33afb0e0b6f05bd932f67c1c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53855451"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54971959"
 ---
 # <a name="da0026-excessive-kernel-cpu-time-processing"></a>DA0026：過多的核心 CPU 時間處理
 

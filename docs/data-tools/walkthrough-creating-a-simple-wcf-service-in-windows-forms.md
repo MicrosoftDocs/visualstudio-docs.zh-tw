@@ -13,16 +13,16 @@ helpviewer_keywords:
 ms.assetid: 5fef1a64-27a4-4f10-aa57-29023e28a2d6
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 466514f0bfd343dc985021a3a081739a91946f8e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 74643d6511fc0eac99eff9693eac9cb9234df88f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53882061"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54966253"
 ---
 # <a name="walkthrough-create-a-simple-wcf-service-in-windows-forms"></a>逐步解說：在 Windows Forms 中建立簡單的 WCF 服務
 

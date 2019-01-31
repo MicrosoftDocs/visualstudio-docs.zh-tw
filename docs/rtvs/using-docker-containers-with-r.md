@@ -7,15 +7,15 @@ ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 ms.reviewer: karthiknadig
-manager: douge
+manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 39d28f01d6c59e91c07853b00d91680c4ce10278
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: aff41dbf0d3f0130c1158806c9420e8edd651fb3
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53835600"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55036507"
 ---
 # <a name="use-docker-containers-with-r-tools-for-visual-studio"></a>搭配 Visual Studio R 工具使用 Docker 容器
 

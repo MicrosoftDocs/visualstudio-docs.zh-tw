@@ -6,15 +6,15 @@ ms.topic: conceptual
 ms.assetid: ba8557f6-231a-4d8b-80dd-80397e87a17f
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: be4a39747150d0be0e550afddf8048d4e207521d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f2a4f50e710073c0dfe230f34d188056c20eaaab
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53965852"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54922986"
 ---
 # <a name="accessibility-products-and-services-blend"></a>協助工具產品和服務 (Blend)
 Microsoft 致力於使其產品和服務對於每個人都更容易使用。 下列章節提供讓行動不便人士更容易存取 Microsoft Windows 之功能、產品和服務的相關資訊：

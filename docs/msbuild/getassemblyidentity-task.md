@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: a977e072-37ad-4941-84a6-32a4483be55d
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eff5fdff9d96db1dd1fc2244b8ebec9437481c49
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9c5c716f34ed1603c4f0ed2965c1fd6184f44654
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53829943"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54982100"
 ---
 # <a name="getassemblyidentity-task"></a>GetAssemblyIdentity 工作
 從指定的檔案擷取組件識別，並輸出識別資訊。  

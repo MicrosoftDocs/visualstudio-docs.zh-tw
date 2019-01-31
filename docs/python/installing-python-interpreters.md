@@ -6,17 +6,17 @@ ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 60a3aff0cf0a5803cfc60b0215ca1f3cda44cef4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 613b9b97e96c721a979e01b9e07adc175b71197b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53905224"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54934649"
 ---
 # <a name="install-python-interpreters"></a>安裝 Python 解譯器
 

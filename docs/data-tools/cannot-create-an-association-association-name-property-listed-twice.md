@@ -5,16 +5,16 @@ ms.topic: reference
 ms.assetid: 3ced8bda-210e-4caf-9d8f-96cdbba19251
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: db36f6e15a219109fa60ffaed13a01890833ea82
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: da5ee57dda360f9851737fe061ee02c6aeae4c8e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53910853"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54954744"
 ---
 # <a name="cannot-create-an-association-ltassociation-namegt---property-listed-twice"></a>無法建立關聯&lt;關聯名稱&gt;：屬性已列出兩次
 

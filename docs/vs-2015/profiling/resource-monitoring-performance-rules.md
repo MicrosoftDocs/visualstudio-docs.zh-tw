@@ -1,25 +1,20 @@
 ---
 title: 資源監視效能規則 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: f0f77faf-0a05-4718-a2c5-47934be40868
 caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 258cb329adac23ea1bd463e22a0fd6ada7b526bc
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 09c9e41061564a8ffb0e08e3aba75a0d4355d0d2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51745626"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54795391"
 ---
 # <a name="resource-monitoring-performance-rules"></a>資源監視效能規則
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,6 +29,3 @@ ms.locfileid: "51745626"
 |[DA0504：所分析的處理序的最大工作集 (以位元組為單位)](../profiling/da0504-maximum-working-set-in-bytes-for-the-process-being-profiled.md)|此訊息會報告處理序在分析作用時使用的最大實體記憶體數量 (以位元組為單位)。|  
 |[DA0505：為所分析的處理序配置的平均私用位元組](../profiling/da0505-average-private-bytes-allocated-for-the-process-being-profiled.md)|此訊息會報告處理序在分析作用時配置的平均虛擬記憶體數量 (以位元組為單位)。 此虛擬記憶體量值稱為「私用位元組」。 私用位元組表示只能由處理序內執行的執行緒存取的處理序所配置的虛擬記憶體位置。|  
 |[DA0506：為所分析的處理序配置的最大私用位元組](../profiling/da0506-maximum-private-bytes-allocated-for-the-process-being-profiled.md)|此訊息會報告處理序在分析作用時配置的最大虛擬記憶體數量 (以私用位元組 為單位)。|
-
-
-

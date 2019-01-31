@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 500aebee-545e-4831-a78b-b8671a008015
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a322dde6ae616f2909a0a33721d28d1309c66fae
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2f90c020f5bfed1c6b4bd3c63aed67b8ffede7b6
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53933936"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55016492"
 ---
 # <a name="how-to-specify-a-link-for-technical-support"></a>HOW TO：指定技術支援的連結
 發佈時[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式中，**支援 URL**屬性會識別網頁或使用者可以前往取得應用程式的相關資訊的檔案共用。 這是選擇性的; 屬性如果提供，URL 會顯示在應用程式的項目**新增或移除程式** 對話方塊。  

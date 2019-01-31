@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: bb98fc67-cad8-43a7-9598-60df6d734db2
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f5a8d7f60793bbd6864fdfa98fc1864d1612955
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 81644cd67ff46291d3bb4e678e858d41a4305bb1
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53887444"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55027226"
 ---
 # <a name="bscmake-task"></a>BscMake 工作
 > [!IMPORTANT]

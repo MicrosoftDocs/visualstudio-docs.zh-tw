@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 3786a21c-8022-4bf5-9d13-740fd354e93c
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b94d89f6051b47f8500886348b335754abae9b72
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0efcabfb5f7b76855a80ae69f50ec9c5282ccb2c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53925559"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54939006"
 ---
 # <a name="how-to-create-inheritance-between-types-in-class-designer"></a>HOW TO：在類別設計工具中建立類型之間的繼承
 

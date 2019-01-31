@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: b8445ed0-c512-4f92-b6b4-3d05c044f939
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e8ecc6a14cce80197c1221734aadb4ce7e6758cf
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 13329ce649ac1947b335ee73d1408e94a5ff52e7
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53869816"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55068887"
 ---
 # <a name="markerseries-class"></a>marker_series 類別
 表示由單一提供者產生之事件的序列通道。  

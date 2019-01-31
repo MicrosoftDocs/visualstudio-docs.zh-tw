@@ -1,14 +1,9 @@
 ---
-title: 如何：在 MSBuild 中逸出特殊字元 | Microsoft Docs
-ms.custom: ''
+title: HOW TO：在 MSBuild 中逸出特殊字元 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords:
 - special characters, escaping
 - characters, escapes
@@ -18,15 +13,15 @@ ms.assetid: 1aa3669c-1647-4960-b770-752e2532102f
 caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 8346d44b16e9ada275541a23c4bf080ef1f0f54a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 291b8a33b5cf8777259be6325be9596bd9dc95e2
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49230167"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54834596"
 ---
-# <a name="how-to-escape-special-characters-in-msbuild"></a>如何：在 MSBuild 中逸出特殊字元
+# <a name="how-to-escape-special-characters-in-msbuild"></a>HOW TO：在 MSBuild 中逸出特殊字元
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
@@ -51,8 +46,6 @@ ms.locfileid: "49230167"
   
 -   請使用標記 %*xx* 取代特殊字元，其中 *xx* 代表 ASCII 字元的十六進位值。 例如，若要使用星號 (*) 做為常值字元，請使用值 `%2A`。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [MSBuild 概念](../msbuild/msbuild-concepts.md)   
  [MSBuild](msbuild.md) [項目](../msbuild/msbuild-items.md)
-
-

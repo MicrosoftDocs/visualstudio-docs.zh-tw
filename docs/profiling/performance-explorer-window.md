@@ -9,15 +9,15 @@ helpviewer_keywords:
 - performance tools, Performance Explorer
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 01aae2cc3ed447f608992df11b72136d418bd5a9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f46494c22a11be09efb6181340e0fb6108a17c8b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53869462"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54979139"
 ---
 # <a name="performance-explorer-window"></a>效能總管視窗
 

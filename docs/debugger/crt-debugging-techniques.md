@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 9be561f6-14a8-44ff-925d-d911d5b8e6ff
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 99edc41e86d492e8a38341917de1a5d7543dc93d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8dedb7a35e95cc9efc68cbd947b415b4499a8fa9
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53889107"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54943912"
 ---
 # <a name="crt-debugging-techniques"></a>CRT 偵錯技術
 如果您要偵錯的程式使用 C 執行階段程式庫，可以使用這些偵錯技術。  

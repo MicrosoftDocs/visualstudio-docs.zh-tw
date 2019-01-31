@@ -1,14 +1,9 @@
 ---
 title: Csc 工作 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#Csc
 dev_langs:
@@ -23,13 +18,13 @@ ms.assetid: d8c19b36-f5ca-484b-afa6-8ff3b90e103a
 caps.latest.revision: 30
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 657535e73294508ac59330cd379c1c6bd192a0b2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: f3cab96aece51252c5a847e07fc3863e6b6f0bf5
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49237376"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54766185"
 ---
 # <a name="csc-task"></a>Csc 工作
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +35,7 @@ ms.locfileid: "49237376"
 ## <a name="parameters"></a>參數  
  下表說明 `Csc` 工作的參數。  
   
-|參數|描述|  
+|參數|說明|  
 |---------------|-----------------|  
 |`AdditionalLibPaths`|選擇性的 `String[]` 參數。<br /><br /> 指定要搜尋參考的其他目錄。 如需詳細資訊，請參閱 [/lib (C# 編譯器選項)](http://msdn.microsoft.com/library/b0efcc88-e8aa-4df4-a00b-8bdef70b7673)。|  
 |`AddModules`|選擇性的 `String` 參數。<br /><br /> 指定要成為組件一部分的一個或多個模組。 如需詳細資訊，請參閱 [/addmodule (C# 編譯器選項)](http://msdn.microsoft.com/library/ed604546-0dc2-4bd4-9a3e-610a8d973e58)。|  
@@ -76,7 +71,7 @@ ms.locfileid: "49237376"
 |`Resources`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 將 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 資源內嵌到輸出檔中。<br /><br /> 傳遞到此參數的項目可以具備名為 `LogicalName` 和 `Access` 的選擇性中繼資料項目。 `LogicalName` 會對應至 `/resource` 參數 (Switch) 的 `identifier` 參數 (Parameter)，而 `Access` 會對應至 `accessibility-modifier` 參數 (Parameter)。 如需詳細資訊，請參閱 [/resource (C# 編譯器選項)](http://msdn.microsoft.com/library/5212666e-98ab-47e4-a497-b5545ab15c7f)。|  
 |`ResponseFiles`|選擇性的 `String` 參數。<br /><br /> 指定包含適用於此工作之命令的回應檔。 如需詳細資訊，請參閱 [@ (指定回應檔)](http://msdn.microsoft.com/library/dda4fa9f-a02c-400f-8b6a-d58834e13d7f)。|  
 |`Sources`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 指定一或多個 [!INCLUDE[csprcs](../includes/csprcs-md.md)] 原始程式檔。|  
-|`TargetType`|選擇性的 `String` 參數。<br /><br /> 指定輸出檔的檔案格式。 此參數的值如下：`library` (可建立程式碼程式庫)、`exe` (可建立主控台應用程式)、`module` (可建立模組) 或 `winexe` (可建立 Windows 程式)。 預設值是 `library`。 如需詳細資訊，請參閱 [/target (C# 編譯器選項)](http://msdn.microsoft.com/library/a18bbd8e-bbf7-49e7-992c-717d0eb1f76f)。|  
+|`TargetType`|選擇性的 `String` 參數。<br /><br /> 指定輸出檔的檔案格式。 此參數的值如下：`library` (可建立程式碼程式庫)、`exe` (可建立主控台應用程式)、`module` (可建立模組) 或 `winexe` (可建立 Windows 程式)。 預設值為 `library`。 如需詳細資訊，請參閱 [/target (C# 編譯器選項)](http://msdn.microsoft.com/library/a18bbd8e-bbf7-49e7-992c-717d0eb1f76f)。|  
 |`TreatWarningsAsErrors`|選擇性的 `Boolean` 參數。<br /><br /> 如果是 `true`，即會將所有警告視為錯誤。 如需詳細資訊，請參閱 [/warnaserror (C# 編譯器選項)](http://msdn.microsoft.com/library/04680ec3-08d6-4e2e-a274-38310e10e33c)。|  
 |`UseHostCompilerIfAvailable`|選擇性的 `Boolean` 參數。<br /><br /> 如果有的話，即會指示工作來使用同處理序編譯器物件。 僅可供 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 使用。|  
 |`Utf8Output`|選擇性的 `Boolean` 參數。<br /><br /> 使用 UTF-8 編碼記錄編譯器輸出。 如需詳細資訊，請參閱 [/utf8output (C# 編譯器選項)](http://msdn.microsoft.com/library/27ff7381-c281-45d7-b2eb-1ad644b1354e)。|  
@@ -100,9 +95,6 @@ ms.locfileid: "49237376"
     EmitDebugInformation="true" />  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [工作參考](../msbuild/msbuild-task-reference.md)   
  [工作](../msbuild/msbuild-tasks.md)
-
-
-

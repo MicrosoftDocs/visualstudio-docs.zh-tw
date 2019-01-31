@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 3d434de3-ee5f-419d-9a94-ac4ac02d635b
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - azure
-ms.openlocfilehash: 29de81a15a042c2033a055749565f76684753425
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 72947a75cb782ad92444dd58658dbeebce55012a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53932164"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54967569"
 ---
 # <a name="debug-azure-services-in-visual-studio"></a>偵錯 Visual Studio 中的 Azure 服務
 

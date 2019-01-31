@@ -1,14 +1,9 @@
 ---
-title: 如何：參考專案檔的名稱或位置 | Microsoft Docs
-ms.custom: ''
+title: HOW TO：參考專案檔的名稱或位置 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords:
 - locations, referencing
 - locations
@@ -21,15 +16,15 @@ ms.assetid: c8fcc594-5d37-4e2e-b070-4d9c012043b5
 caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 8631d10d56a35f8cf4ef6024d087bf94ec89b9d9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 9a5d07c374e75bd7f042f466f13fc5727241e252
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49845728"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54780998"
 ---
-# <a name="how-to-reference-the-name-or-location-of-the-project-file"></a>如何：參考專案檔的名稱或位置
+# <a name="how-to-reference-the-name-or-location-of-the-project-file"></a>HOW TO：參考專案檔的名稱或位置
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
@@ -40,7 +35,7 @@ ms.locfileid: "49845728"
   
 #### <a name="to-use-the-msbuildprojectname-property"></a>使用 MSBuildProjectName 屬性  
   
-- 使用 $() 標記法來參考專案檔中的屬性，就像您使用其他屬性一樣。 例如:   
+- 使用 $() 標記法來參考專案檔中的屬性，就像您使用其他屬性一樣。 例如：  
   
   ```  
   <CSC Sources = "@(CSFile)"   
@@ -81,8 +76,6 @@ ms.locfileid: "49845728"
 </Project>  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
 [MSBuild](msbuild.md)  
  [MSBuild 保留和已知屬性](../msbuild/msbuild-reserved-and-well-known-properties.md)
-
-

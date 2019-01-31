@@ -1,27 +1,22 @@
 ---
-title: 如何：修改 3D 模型的樞紐分析點 | Microsoft Docs
-ms.custom: ''
+title: HOW TO：修改 3d 模型的樞紐分析點 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: c20b4ec8-29f5-4ca5-bc39-d4548ca6f573
 caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: beba04bab85b3fd09aafb195039ad6e34106e293
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 7b28a279e729900d8a1cb26f25bca6370c00a08c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49850525"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54774097"
 ---
-# <a name="how-to-modify-the-pivot-point-of-a-3-d-model"></a>如何：修改 3D 模型的樞紐分析點
+# <a name="how-to-modify-the-pivot-point-of-a-3-d-model"></a>HOW TO：修改 3d 模型的樞紐點
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 本文件將示範如何使用模型編輯器來修改 3D 模型的「樞紐分析點」。 樞紐分析點是空間中的點，定義物件在旋轉和縮放時的數學中心。  
@@ -37,7 +32,7 @@ ms.locfileid: "49850525"
   
 #### <a name="to-modify-the-pivot-point-of-a-3-d-model"></a>修改 3D 模型的樞紐分析點  
   
-1. 開始使用像是[如何：建立基本 3D 模型](../designers/how-to-create-a-basic-3-d-model.md)所述的現有 3D 模型。  
+1. 開始使用的現有 3d 模型，例如中所述[How to:建立基本 3d 模型](../designers/how-to-create-a-basic-3-d-model.md)。  
   
 2. 進入樞紐分析模式。 在 [模型編輯器模式] 工具列上，選擇 [樞紐分析表模式] 按鈕以啟動樞紐分析表模式。 出現在 [樞紐分析表模式] 按鈕附近的方塊，指出 [模型編輯器] 現在處於樞紐分析表模式。 在樞紐分析表模式中，像是平移的作業會影響物件的樞紐分析點，而不是世界空間中的物件結構。  
   
@@ -54,9 +49,6 @@ ms.locfileid: "49850525"
   
    ![具有已修改樞紐點的房屋模型](../designers/media/digit-modified-model.png "Digit-Modified-Model")  
   
-## <a name="see-also"></a>另請參閱  
- [如何：建立基本 3D 模型](../designers/how-to-create-a-basic-3-d-model.md)   
+## <a name="see-also"></a>請參閱  
+ [如何：建立基本 3d 模型](../designers/how-to-create-a-basic-3-d-model.md)   
  [模型編輯器](../designers/model-editor.md)
-
-
-

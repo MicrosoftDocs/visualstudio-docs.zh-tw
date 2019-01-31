@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 6ba1953c-be3b-4df8-8561-e133408f8270
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6a12991a8ea3de4348ce87686feadd7bc7681968
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 691a9ddbba4291bb6b54d15c9b60e6339b2548b3
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53934228"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54963774"
 ---
 # <a name="xmlpoke-task"></a>XmlPoke 工作
 

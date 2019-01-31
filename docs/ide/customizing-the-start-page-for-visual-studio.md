@@ -11,15 +11,15 @@ helpviewer_keywords:
 - Visual Studio Start Page
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d3514effbe9b8affd870e46746b308216a80de33
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8fca98116a6d810a97abbf4e1f850b2312f42c60
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53864786"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55070973"
 ---
 # <a name="customize-the-start-page-for-visual-studio"></a>自訂 Visual Studio 的起始頁
 

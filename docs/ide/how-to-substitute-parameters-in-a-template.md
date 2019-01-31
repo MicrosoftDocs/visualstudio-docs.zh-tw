@@ -9,13 +9,13 @@ helpviewer_keywords:
 - Visual Studio templates, using parameters
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: fa06783acf3feaa863b788c3c0b976b0c762d0c8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 93e553338478bcdead9e283323348b02ac73eaac
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53986904"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55031756"
 ---
 # <a name="how-to-substitute-parameters-in-a-template"></a>HOW TO：替代範本中的參數
 

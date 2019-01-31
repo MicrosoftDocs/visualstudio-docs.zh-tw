@@ -7,16 +7,16 @@ ms.topic: conceptual
 f1_keywords:
 - vs.unittesting.testexplorer.overview
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 89e64c88311848d53a114a1f58f711edbe3856e7
-ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
+ms.openlocfilehash: fd829083cc86d16dd01186bd848c6bc29c062ef5
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/14/2019
-ms.locfileid: "54269874"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55000297"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>使用測試總管執行單元測試
 

@@ -21,15 +21,15 @@ helpviewer_keywords:
 ms.assetid: bbc02cf7-a7e6-44fe-99af-87a43e1d7251
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 059dde50a01c1c71545a187043e60a32a9e68309
-ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
+ms.openlocfilehash: 385f5c9e03aaeb84cf33c6d76a499b0d1e35d5c3
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/14/2019
-ms.locfileid: "54269679"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54931982"
 ---
 # <a name="how-to-debug-an-activex-control"></a>HOW TO：對 ActiveX 控制項進行偵錯
 

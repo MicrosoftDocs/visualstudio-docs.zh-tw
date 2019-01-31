@@ -1,14 +1,9 @@
 ---
 title: 分析工具取樣方法資料檢視 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Profiling Tools,sampling data views
 - sampling data views
@@ -16,13 +11,13 @@ ms.assetid: 798de693-e43a-4056-aff5-48310c2172c5
 caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: bde5ae4d7f6fe7d556096ee29533bdbcae5445bf
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: dccfb68838d204bfa560e728262b71e359082a97
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51817213"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54800350"
 ---
 # <a name="profiler-sampling-method-data-views"></a>程式碼剖析工具取樣方法資料檢視
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -71,8 +66,5 @@ ms.locfileid: "51817213"
  [.NET 記憶體資料檢視](../profiling/dotnet-memory-data-views.md)  
  包含 .NET 記憶體資料的分析工具資料檔案之檢視和報告的參考資訊。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [了解取樣資料值](../profiling/understanding-sampling-data-values.md)
-
-
-

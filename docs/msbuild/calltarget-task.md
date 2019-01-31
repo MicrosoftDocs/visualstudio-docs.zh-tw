@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: bb1fe2c4-4383-436f-8326-c24cc4a46150
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bff9d8967d02f8950cc5518f00baa9551c93ec76
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 85ad6261dba80e56ab44f43b4c70df79d63bb509
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53962359"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55001627"
 ---
 # <a name="calltarget-task"></a>CallTarget 工作
 叫用專案檔內指定的目標。  

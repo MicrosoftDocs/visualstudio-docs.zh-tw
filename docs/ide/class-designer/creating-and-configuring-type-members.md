@@ -27,15 +27,15 @@ helpviewer_keywords:
 ms.assetid: 42af8738-3738-4ca7-82ff-edf573a68f96
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7063b536c50cff39bfeb3adabe989b3cd9a56ddf
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8ba5c26ece60c6689509054b733109ee11799ccd
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53828133"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55010073"
 ---
 # <a name="create-and-configure-type-members-in-class-designer"></a>在類別設計工具中建立及設定類型成員
 

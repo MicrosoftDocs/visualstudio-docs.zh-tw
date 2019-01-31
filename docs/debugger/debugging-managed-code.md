@@ -13,15 +13,15 @@ helpviewer_keywords:
 - managed code, debugging
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: e34d138ec65d2508244c6802ccee67d931e87257
-ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
+ms.openlocfilehash: 81a0e4b872732fa0b776c163bafa4cc162d91da2
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/14/2019
-ms.locfileid: "54270202"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54938103"
 ---
 # <a name="debugging-managed-code"></a>偵錯 Managed 程式碼
 

@@ -1,14 +1,9 @@
 ---
 title: 使用 NuGet 和延伸模組 SDK 兩種方式新增參考 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vs.toolsoptionspages.nuget_package_manager.general
 - vs.toolsoptionspages.nuget_package_manager.package_sources
@@ -16,13 +11,13 @@ ms.assetid: 2175581e-83cb-444c-bb52-cc1fca8ea196
 caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 031b582665abeb14f705725c7bee97f272bd5ab4
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 29590b96a8d8d2ad8fbddaf0d97b9ed55e6aadf2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49235803"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54763594"
 ---
 # <a name="adding-references-using-nuget-versus-an-extension-sdk"></a>使用 NuGet 和擴充功能 SDK 兩種方式新增參考
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -75,8 +70,5 @@ ms.locfileid: "49235803"
 |機制可供所有 Visual Studio 版本使用。|Y|SDK 支援所有 Visual Studio 版本，從 Visual Studio Express 直至 [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)]。|Y|NuGet 支援所有 Visual Studio 版本，從 Express 直至 [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)]。|  
 |機制適用於所有專案類型。|N|從 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] 開始，SDK 支援 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 應用程式。|N|您可以檢閱允許專案的清單。|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [管理專案中的參考](../ide/managing-references-in-a-project.md)
-
-
-

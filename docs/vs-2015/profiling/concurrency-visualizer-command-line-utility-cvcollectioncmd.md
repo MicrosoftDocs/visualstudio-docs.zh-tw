@@ -1,27 +1,22 @@
 ---
 title: 並行視覺化檢視命令列公用程式 (CVCollectionCmd) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.cv.performance.cvcollectioncmd
 ms.assetid: 476601be-1608-4014-af15-5aba6ccbed1c
 caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: ee6ba9335cee43a36750dfcdf46faed16c56db4e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: d7d37db61f49db19d952cf5b45699b604a91e090
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51790980"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54752909"
 ---
 # <a name="concurrency-visualizer-command-line-utility-cvcollectioncmd"></a>並行視覺化檢視命令列公用程式 (CVCollectionCmd)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,9 +41,9 @@ ms.locfileid: "51790980"
   
  **CvCollectionCmd /?**  
   
-|選項|描述|參數|傳回值|  
+|選項|說明|參數|傳回值|  
 |------------|-----------------|----------------|-------------------|  
-|Query|傳回是否可以開始收集。|無|0，表示準備開始收集。<br /><br /> 1，表示收集已在進行中。<br /><br /> 2，表示收集不在進行中，但已啟用一個或多個所需的 [ETW](http://msdn.microsoft.com/library/ac99a063-e2d2-40cc-b659-d23c2f783f92) 工作階段。|  
+|查詢|傳回是否可以開始收集。|無|0，表示準備開始收集。<br /><br /> 1，表示收集已在進行中。<br /><br /> 2，表示收集不在進行中，但已啟用一個或多個所需的 [ETW](http://msdn.microsoft.com/library/ac99a063-e2d2-40cc-b659-d23c2f783f92) 工作階段。|  
 |啟動|在並行視覺化檢視下執行指定的處理序。|可執行檔的路徑。|0，表示執行成功。<br /><br /> 1，表示執行失敗，因為無法啟動目標應用程式。<br /><br /> 13，表示執行失敗，因為 CVCollectionCmd 沒有足夠的權限可寫入指定的輸出目錄。|  
 |附加|開始收集系統範圍追蹤；如果指定處理序，則附加至該處理序。|無。|0，表示附加成功。<br /><br /> 1，表示附加失敗，因為指定的處理序無效或模稜兩可。<br /><br /> 13，表示附加失敗，因為 CVCollectionCmd 沒有足夠的權限可寫入指定的輸出目錄。|  
 |中斷連結|停止收集。|無。|0，表示中斷連結成功。<br /><br /> 1，表示中斷連結失敗，因為目前正在收集。<br /><br /> 2，表示中斷連結失敗，因為無法停止收集。|  
@@ -69,7 +64,7 @@ ms.locfileid: "51790980"
 ### <a name="configuration-file-tags"></a>組態檔標記  
  組態檔採用 XML 格式。 以下是有效的標記和值：  
   
-|標記|描述|值|  
+|標記|說明|值|  
 |---------|-----------------|------------|  
 |組態|標示整個組態檔。|必須包含下列項目：<br /><br /> -   MinorVersion<br />-   MajorVersion|  
 |MajorVersion|指定組態檔的主要版本。|[!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] 專案必須是 1。 如果不是 1，公用程式將無法運作。|  
@@ -158,6 +153,3 @@ ms.locfileid: "51790980"
 </LocalConfig>  
   
 ```
-
-
-

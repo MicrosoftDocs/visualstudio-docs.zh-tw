@@ -9,13 +9,13 @@ helpviewer_keywords:
 - multi-project templates
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 34d15de5012ff640ba05b106321c2a534557c3e7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: cefeabffc42722b1fa574a19068eb45c5e850e86
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53925819"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54985912"
 ---
 # <a name="how-to-create-multi-project-templates"></a>HOW TO：建立多重專案範本
 

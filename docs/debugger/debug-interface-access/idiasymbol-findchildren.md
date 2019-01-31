@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 5fe7573a-e48b-428d-9c17-7421b7209246
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 43a1f761ad2d21d696e56e95191af92bb1567e7f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b6785031d6d57d94d35828175b7d07b4fd7491ee
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53910749"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54973495"
 ---
 # <a name="idiasymbolfindchildren"></a>IDiaSymbol::findChildren
 擷取之符號的子系。  

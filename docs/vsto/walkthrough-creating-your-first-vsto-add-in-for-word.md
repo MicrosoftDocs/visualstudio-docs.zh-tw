@@ -52,17 +52,17 @@ ms.locfileid: "54868322"
   
 1.  啟動 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。  
   
-2.  在 [檔案] **Deploying Office Solutions** 功能表中，指向 [新增] ，然後按一下 [專案] 。  
+2.  在 [檔案]  功能表中，指向 [新增] ，然後按一下 [專案] 。  
   
-3.  在範本窗格中，展開 [Visual C#] **Deploying Office Solutions** 或 [Visual Basic] ，然後展開 [Office/SharePoint] 。  
+3.  在範本窗格中，展開 **[Visual C#]** 或 **[Visual Basic]**，然後展開 **[Office/SharePoint]**。  
   
-4.  在展開的 [Office/SharePoint] **Deploying Office Solutions** 節點下，選取 [Office 增益集]  節點。  
+4.  在展開的 [Office/SharePoint]  節點下，選取 [Office 增益集]  節點。  
   
 5.  在專案範本清單中，選取 [Word VSTO 增益集] 專案。  
   
 6.  在 **名稱**方塊中，輸入**FirstWordAddIn**。  
   
-7.  按一下 [確定 **Deploying Office Solutions**]。  
+7.  按一下 [確定] 。  
   
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 會建立**FirstWordAddIn**專案，並在編輯器中開啟 ThisAddIn 程式碼檔。  
   
@@ -99,7 +99,7 @@ ms.locfileid: "54868322"
   
 ### <a name="to-test-the-project"></a>測試專案  
   
-1.  按 F5 **Deploying Office Solutions** 建置及執行專案。  
+1.  按 **F5** 建置及執行專案。  
   
      當您建置專案時，程式碼會編譯到包含在專案建置輸出資料夾中的組件。 Visual Studio 也會建立一組登錄項目，以便 Word 探索和載入 VSTO 增益集，而且會設定開發電腦中的安全性設定，讓 VSTO 增益集可以執行。 如需詳細資訊，請參閱 <<c0> [ 建置 Office 方案](../vsto/building-office-solutions.md)。  
   
@@ -116,7 +116,7 @@ ms.locfileid: "54868322"
   
 ### <a name="to-clean-up-the-completed-project-on-your-development-computer"></a>清除開發電腦上已完成的專案  
   
-1.  在 Visual Studio 中，按一下 [建置] **Deploying Office Solutions** 功能表上的 [清除方案] 。  
+1.  在 Visual Studio 中，按一下 [建置]  功能表上的 [清除方案] 。  
   
 ## <a name="next-steps"></a>後續步驟  
  現在您已經建立 Word 的基本 VSTO 增益集，可以從下列主題進一步了解如何開發 VSTO 增益集：  

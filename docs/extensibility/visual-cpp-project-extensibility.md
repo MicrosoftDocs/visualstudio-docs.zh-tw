@@ -1,6 +1,6 @@
 ---
 title: Visual c + + 專案擴充性
-ms.date: 09/12/2018
+ms.date: 01/25/2019
 ms.technology: vs-ide-mobile
 ms.topic: conceptual
 dev_langs:
@@ -10,12 +10,12 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 499e3776e81fcde3e89eb3436e3938f2feafb137
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e38ff6cf2912ccc18c27f517a35c7a543325a8eb
+ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55013700"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55232048"
 ---
 # <a name="visual-studio-c-project-system-extensibility-and-toolset-integration"></a>Visual Studio c + + 專案系統擴充性和工具組之間的整合
 
@@ -274,6 +274,8 @@ Microsoft.Cpp.Common.Tasks.dll 會實作下列工作：
 
 - `SetEnv`
 
+- `GetOutOfDateItems`
+
 如果您有一項工具，以執行相同的動作，做為現有的工具，和 （如同 clang-cl 和 CL） 具有類似的命令列參數，您可以使用相同的工作兩者都是。
 
 如果您需要建立新的工作，建置工具，您可以選擇下列選項：
@@ -294,11 +296,14 @@ Microsoft.Cpp.Common.Tasks.dll 會實作下列工作：
 
 目標會使用預設的 MSBuild 累加建置`Inputs`和`Outputs`屬性。 如果您指定它們，MSBuild 就會呼叫目標只能在任何輸入有較新的時間戳記，於所有輸出。 原始程式檔通常包含或匯入其他檔案，並建置工具產生不同的工具選項而定的輸出，因為它很難指定所有可能的輸入和輸出中的 MSBuild 目標。
 
-若要管理此問題，c + + 建置會使用不同的技巧，來支援累加建置。 大部分的目標不指定輸入和輸出，並如此一來，一律會在建置期間執行。 呼叫目標的工作撰寫所有的相關資訊輸入，並輸出到*tlog*副檔名的.tlog 檔案。 用來檢查項目已變更且需要重建的更新版本組建的.tlog 檔案，以及為何保持最新狀態。
+若要管理此問題，c + + 建置會使用不同的技巧，來支援累加建置。 大部分的目標不指定輸入和輸出，並如此一來，一律會在建置期間執行。 呼叫目標的工作撰寫所有的相關資訊輸入，並輸出到*tlog*副檔名的.tlog 檔案。 用來檢查項目已變更且需要重建的更新版本組建的.tlog 檔案，以及為何保持最新狀態。 .tlog 檔案也是預設的組建保持最新狀態檢查在 IDE 中的唯一來源。
 
 若要判斷所有輸入和輸出，原生工具工作會使用 tracker.exe 並[FileTracker](/dotnet/api/microsoft.build.utilities.filetracker) MSBuild 所提供的類別。
 
 Microsoft.Build.CPPTasks.Common.dll 定義`TrackedVCToolTask`公用抽象的基底類別。 原生工具工作大部分都衍生自這個類別。
+
+從 Visual Studio 2017 更新 15.8 開始，您可以使用`GetOutOfDateItems`Microsoft.Cpp.Common.Tasks.dll 来產生已知的輸入和輸出的自訂目標的.tlog 檔案中實作的工作。
+或者，您可以藉由建立它們`WriteLinesToFile`工作。 請參閱`_WriteMasmTlogs`中的目標`$(VCTargetsPath)` \\ *BuildCustomizations*\\*masm.targets*做為範例。
 
 ## <a name="tlog-files"></a>.tlog 檔案。
 
@@ -314,7 +319,6 @@ MSBuild 會提供這些協助程式類別，來讀取和寫入.tlog 檔案：
 
 命令列的.tlog 檔案包含在組建中使用命令列的相關資訊。 它們只會用於累加建置，而不是最新的檢查，所以內部的格式取決於它們所產生的 MSBuild 工作。
 
-如果建立.tlog 檔案的工作，最好是用來建立它們的這些協助程式類別。 不過，因為預設的最新檢查現在僅依賴.tlog 檔案，有時很更方便地產生這些函式中，目標沒有工作。 您可以使用撰寫`WriteLinesToFile`工作。 請參閱`_WriteMasmTlogs`中的目標`$(VCTargetsPath)` \\ *BuildCustomizations*\\*masm.targets*做為範例。
 
 ### <a name="read-tlog-format"></a>閱讀.tlog 格式
 

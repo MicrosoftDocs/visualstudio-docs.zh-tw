@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: abfb4e9e-1622-47c9-afda-b6b71a9d88e4
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 616a426192b15353b2d30a8f910619f5333cb5fa
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 48babdee829eec50a8b8582e5b48e78b691f1073
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53913513"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54979045"
 ---
 # <a name="threads-view"></a>執行緒檢視
 [執行緒] 檢視是您的系統上的 windows 相關聯的所有執行緒的簡單列表。 顯示執行緒 ID 和每個執行緒的模組名稱。 處理程序不包含在內，但您可以輕鬆地找到擁有所選取之執行緒的處理序。  

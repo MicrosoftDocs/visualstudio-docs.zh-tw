@@ -6,15 +6,15 @@ ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 8b0c633e3236f537e9f631df12a5af597e67475c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bc568c6e2e28d27516ac5a92d7ccd01d3704bb7c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53859077"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55009930"
 ---
 # <a name="create-visual-data-plots-with-r"></a>以 R 建立視覺化資料繪圖
 
@@ -38,7 +38,7 @@ ms.locfileid: "53859077"
 
 產生繪圖會使用「使用中」繪圖視窗，並儲存任何先前繪圖的歷程記錄 (請參閱[繪圖歷程記錄](#plot-history))。 例如，輸入 `plot(100:1)`，而第一個繪圖會取代為向下線條。
 
-如同所有其他 Visual Studio 視窗一樣。 繪圖視窗支援自訂的版面配置 (請參閱[在 Visual Studio 中自訂視窗版面配置](../ide/customizing-window-layouts-in-visual-studio.md))。 繪圖視窗可以停駐在 Visual Studio 框架內的不同位置、在該框架內調整大小，或從框架中整個提取出來獨立調整大小。 
+如同所有其他 Visual Studio 視窗一樣。 繪圖視窗支援自訂的版面配置 (請參閱[在 Visual Studio 中自訂視窗版面配置](../ide/customizing-window-layouts-in-visual-studio.md))。 繪圖視窗可以停駐在 Visual Studio 框架內的不同位置、在該框架內調整大小，或從框架中整個提取出來獨立調整大小。
 
 調整繪圖視窗的大小一律會重新繪圖，以提供最佳品質的影像。 您通常會想要先調整繪圖大小，再使用下一節描述的命令將繪圖匯出至檔案或剪貼簿。
 
@@ -46,7 +46,7 @@ ms.locfileid: "53859077"
 
 繪圖視窗工具列保留適用的命令，其中大部分也都可透過 [R 工具] > [繪圖] 功能表取得。
 
-| 按鈕 | 命令 | 說明 | 
+| 按鈕 | 命令 | 說明 |
 | --- | --- | --- |
 | ![新增繪圖視窗按鈕](media/plotting-toolbar-01-new-plot-window.png) | 新增繪圖視窗 | 建立有專屬歷程記錄的個別繪圖視窗。 請參閱[多個繪圖視窗](#multiple-plot-windows)。 |
 | ![啟動繪圖視窗按鈕](media/plotting-toolbar-02-activate-plot-window.png) | 啟動繪圖視窗 | 將目前的繪圖視窗設為使用中視窗，以便後續的 `plot` 命令呈現在該視窗中。 請參閱[多個繪圖視窗](#multiple-plot-windows)。 請參閱[多個繪圖視窗](#multiple-plot-windows)。 |
@@ -54,8 +54,8 @@ ms.locfileid: "53859077"
 | ![繪圖歷程記錄按鈕](media/plotting-toolbar-04-plot-history-arrows.png) | 上一張/下一張繪圖 |  巡覽歷程記錄中的上一張或下一張繪圖。 您也可以使用 Ctrl+Alt+F11 ([上一張]) 和 Ctrl+Alt+F12 ([下一張]) 巡覽歷程記錄。 請參閱[繪圖歷程記錄](#plot-history)。 |
 | ![另存成影像按鈕](media/plotting-toolbar-05-save-as-image.png)| 另存成影像 | 提示輸入檔案名稱，並將目前的繪圖 (視窗大小的視窗內容) 儲存為影像檔案。 可用的格式為 `.png`、`.jpg`、`.bmp` 和 `.tif`。 |
 | ![儲存為 PDF 按鈕](media/plotting-toolbar-06-save-as-pdf.png)| 儲存為 PDF | 將目前的繪圖儲存為 PDF 檔案，使用目前的視窗大小。 如果調整 PDF，會重新呈現繪圖。 |
-| ![複製為點陣圖按鈕](media/plotting-toolbar-07-copy-as-bitmap.png)| 複製為點陣圖 | 將繪圖複製到剪貼簿中成為點陣圖，使用目前的視窗大小。 | 
-| ![複製為中繼檔按鈕](media/plotting-toolbar-08-copy-as-metafile.png)| 複製為中繼檔 | 將繪圖複製到剪貼簿成為 [Windows 中繼檔](https://en.wikipedia.org/wiki/Windows_Metafile) (維基百科)。 | 
+| ![複製為點陣圖按鈕](media/plotting-toolbar-07-copy-as-bitmap.png)| 複製為點陣圖 | 將繪圖複製到剪貼簿中成為點陣圖，使用目前的視窗大小。 |
+| ![複製為中繼檔按鈕](media/plotting-toolbar-08-copy-as-metafile.png)| 複製為中繼檔 | 將繪圖複製到剪貼簿成為 [Windows 中繼檔](https://en.wikipedia.org/wiki/Windows_Metafile) (維基百科)。 |
 | ![移除繪圖按鈕](media/plotting-toolbar-09-remove-plot.png)| 移除繪圖 | 從歷程記錄中移除目前的繪圖。 |
 | ![清除所有繪圖按鈕](media/plotting-toolbar-10-clear-all-plots.png) | 清除所有繪圖 | 從歷程記錄中清除所有繪圖 (提示使用者進行確認)。 |
 
@@ -84,7 +84,7 @@ ms.locfileid: "53859077"
 
 ## <a name="programmatically-manipulate-plot-windows"></a>以程式設計方式操作繪圖視窗
 
-您可利用裝置編號識別特定的繪圖視窗，使用 R 程式碼以程式設計方式操作繪圖視窗。 
+您可利用裝置編號識別特定的繪圖視窗，使用 R 程式碼以程式設計方式操作繪圖視窗。
 
 - `dev.list()`：列出目前 R 工作階段內所有的圖形裝置。
 - `dev.new()`：建立新的圖形裝置 (新的繪圖視窗)。

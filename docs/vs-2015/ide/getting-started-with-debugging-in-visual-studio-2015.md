@@ -9,13 +9,13 @@ ms.assetid: c3a14d28-d811-4ff3-bd09-21dce14025ca
 caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 7e4366061cc6eba29f630cb51757ddc2ace58970
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: 7fecc637a62e96381362d79f66eb5a3cd4d8fa1d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53066235"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54764844"
 ---
 # <a name="getting-started-with-debugging-in-visual-studio-2015"></a>Visual Studio 2015 中的偵錯入門
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ Visual Studio 2015 提供一組強大的整合式專案建置和偵錯工具。 
  所以說，您已經找出了編輯器並建立了一些程式碼。 現在，您要開始偵錯程式碼。 在 Visual Studio 2015，如同大部分的 IDE，有兩個階段用以偵錯：建立程式碼來攔截和解決專案及編譯器錯誤；且在該環境中執行程式碼來攔截和解決執行階段及動態錯誤。
 
 ### <a name="configuring-a-build"></a>設定建置
- 有兩種基本建置組態：**偵錯**並**發行**。 第一個組態會產生較慢、較大的可執行檔，讓您擁有更豐富的互動式執行階段偵錯體驗，但絕不應該釋出這個可執行檔。 第二個會建置較快、較為最佳化的可執行檔，適合釋出 (至少從編譯器的觀點來看是如此)。
+ 有兩種基本類型的建置組態：[偵錯] 和 [發行]。 第一個組態會產生較慢、較大的可執行檔，讓您擁有更豐富的互動式執行階段偵錯體驗，但絕不應該釋出這個可執行檔。 第二個會建置較快、較為最佳化的可執行檔，適合釋出 (至少從編譯器的觀點來看是如此)。
 
  預設建置組態是 [偵錯]。
 

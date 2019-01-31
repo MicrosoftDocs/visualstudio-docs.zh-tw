@@ -1,26 +1,22 @@
 ---
 title: HOW TO：安裝特定版本 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: vs-ide-install
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - install a specific release, Visual Studio
 ms.assetid: d69ad0f8-f0a0-438e-a0ef-777c4868f139
 caps.latest.revision: 20
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.openlocfilehash: 42776c20cd6634903344569f9ce1f35a776c5f86
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: b5f74512d0c035a82845d77f4b3df12633036f03
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53959888"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54756356"
 ---
 # <a name="how-to-install-a-specific-release-of-visual-studio"></a>HOW TO：安裝特定版本的 Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +39,7 @@ ms.locfileid: "53959888"
 |Visual Studio Enterprise (原始 Update 2 而不需要任何進一步的 Update 2-紀元更新)|Visual Studio Enterprise RTM (可從 [MSDN 訂用帳戶下載頁面](https://msdn.microsoft.com/subscriptions/downloads/)取得)|`vs_enterprise.exe /OverrideFeedURI http://download.microsoft.com/download/0/6/B/06BB0C5C-C767-4250-91DA-AB463377597E/20160405.3/enu/feed.xml`|Visual Studio 安裝程式將使用 Update 2 發行時所提供的 feed.xml|
 |Visual Studio Enterprise Update 1 （原始 Update 1，但與更新該預先狀態的 Update 2）|Visual Studio Enterprise RTM (可從 [MSDN 訂用帳戶下載頁面](https://msdn.microsoft.com/subscriptions/downloads/)取得)|`vs_enterprise.exe /OverrideFeedURI http://download.microsoft.com/download/3/2/A/32A1974F-D236-43C1-8981-97DDCBAEF14A/20160225.3/enu/feed.xml`|Visual Studio 安裝程式將使用在 Update 2 發行前現有的 feed.xml|
 |Visual Studio Enterprise Update 1 (沒有其他 Update 1 時期更新的原始 Update 1)|Visual Studio Enterprise RTM (可從 [MSDN 訂用帳戶下載頁面](https://msdn.microsoft.com/subscriptions/downloads/)取得)|`vs_enterprise.exe /OverrideFeedURI https://download.microsoft.com/download/3/2/A/32A1974F-D236-43C1-8981-97DDCBAEF14A/20151201.1/enu/feed.xml`|Visual Studio 安裝程式將使用 Update 1 發行時所提供的 feed.xml|
-|Visual Studio Enterprise (原始 RTM，但包含 Update 1 前的更新)|Visual Studio Enterprise RTM (可從  [MSDN 訂用帳戶下載頁面](https://msdn.microsoft.com/en-us/subscriptions/downloads/)取得)|`vs_enterprise.exe /OverrideFeedURI https://download.microsoft.com/download/3/6/1/36188D5F-479F-4A46-BF55-6AE5928D1EBB/20151102.3/enu/feed.xml`|Visual Studio 安裝程式將使用在 Update 1 發行前現用的 feed.xml|
+|Visual Studio Enterprise (原始 RTM，但包含 Update 1 前的更新)|Visual Studio Enterprise RTM (可從  [MSDN 訂用帳戶下載頁面](https://msdn.microsoft.com/subscriptions/downloads/)取得)|`vs_enterprise.exe /OverrideFeedURI https://download.microsoft.com/download/3/6/1/36188D5F-479F-4A46-BF55-6AE5928D1EBB/20151102.3/enu/feed.xml`|Visual Studio 安裝程式將使用在 Update 1 發行前現用的 feed.xml|
 |Visual Studio Enterprise (沒有更新的原始 RTM)|Visual Studio Enterprise RTM (可從 [MSDN 訂用帳戶下載頁面](https://msdn.microsoft.com/subscriptions/downloads/)取得)|`vs_enterprise.exe /OverrideFeedURI https://download.microsoft.com/download/5/7/B/57BF5016-E4F0-4EB5-BE27-2BFA87E7723F/20150713.1/enu/feed.xml`|Visual Studio 安裝程式將使用 RTM 發行時所提供的 feed.xml|
 
 > [!IMPORTANT]

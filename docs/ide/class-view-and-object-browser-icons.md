@@ -14,15 +14,15 @@ helpviewer_keywords:
 - Object Browser, icons in Class View
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 29d39c210a14934ba50ace92692bee944b6b75c0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3791c6b94f4c229efe843b463cb51a64998e5b6f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53844388"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54958247"
 ---
 # <a name="class-view-and-object-browser-icons"></a>類別檢視和物件瀏覽器圖示
 

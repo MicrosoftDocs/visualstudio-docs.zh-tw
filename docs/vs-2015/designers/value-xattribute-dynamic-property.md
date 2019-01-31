@@ -1,14 +1,9 @@
 ---
 title: Value (XAttribute 動態屬性) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 api_name:
 - XAttribute.Value
 api_type:
@@ -17,13 +12,13 @@ ms.assetid: 019733d2-e050-4120-b537-831cd3fc008e
 caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: bd9ea1fa163980a39bcd9981b9e1d757d72fcb6a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 2b83e4a208553b0ad732cfe927aec02b47e389dd
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49229147"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54757538"
 ---
 # <a name="value-xattribute-dynamic-property"></a>Value (XAttribute 動態屬性)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,10 +43,7 @@ attrib.Value
 ## <a name="remarks"></a>備註  
  此屬性相當於 <xref:System.Xml.Linq.XAttribute.Value%2A> 類別的 <xref:System.Xml.Linq.XAttribute?displayProperty=fullName> 屬性，但此動態屬性也支援變更通知。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  <xref:System.Xml.Linq.XAttribute.Value%2A?displayProperty=fullName>   
  [XAttribute 類別動態屬性](../designers/xattribute-class-dynamic-properties.md)   
  [屬性](../designers/attribute-xelement-dynamic-property.md)
-
-
-

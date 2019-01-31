@@ -7,17 +7,17 @@ ms.topic: conceptual
 ms.devlang: javascript
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 37d44112630797ecbc8621a885412ef4014610fd
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a4b912f523be0380858d639dbf43a4c53bc358c6
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53857719"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54947019"
 ---
 # <a name="create-a-vuejs-application-using-nodejs-tools-for-visual-studio"></a>使用適用於 Visual Studio 的 Node.js 工具建立 Vue.js 應用程式
 
@@ -176,6 +176,7 @@ vue-cli 3.0 的未知問題會阻止自動化建置流程。 每次嘗試重新�
 * 使用 vue-cli 3.0 時，執行命令 `npm run build` 作為專案屬性的建置前事件無法運作。
 
 ## <a name="see-also"></a>另請參閱
-https://vuejs.org/v2/guide - Vue 使用者入門指南。  
-https://github.com/vuejs/vue-cli - Vue CLI 專案。  
-https://webpack.js.org/configuration/ - Webpack 組態文件。
+
+- https://vuejs.org/v2/guide - Vue 使用者入門指南。
+- https://github.com/vuejs/vue-cli - Vue CLI 專案。
+- https://webpack.js.org/configuration/ - Webpack 組態文件。

@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: 3f463cf0-734b-4fdc-b4ff-b47f9bb99069
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e120260559f60f0433770369b36e523e0fcd4cff
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 67642057c85a74633a8793ac2ef800a1b31bceb0
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53937344"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55012964"
 ---
 # <a name="environment-options-dialog-box"></a>環境選項對話方塊
 

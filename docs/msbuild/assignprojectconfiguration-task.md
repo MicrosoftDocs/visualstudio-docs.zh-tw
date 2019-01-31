@@ -10,15 +10,15 @@ dev_langs:
 ms.assetid: 09633a0b-8f6f-4aba-8058-7cb4d13ce2c0
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f9e758fe7128c9ae9562c400008ab8573d7d8df6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d7ea5621c2285484c513a7602d934bbd14591262
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53850884"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54970613"
 ---
 # <a name="assignprojectconfiguration-task"></a>AssignProjectConfiguration 工作
 此工作會接受組態字串清單，並將它們指派給指定的專案。  

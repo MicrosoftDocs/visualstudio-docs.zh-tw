@@ -1,14 +1,9 @@
 ---
 title: 通道 (執行緒檢視) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.cv.threads.timeline.channelnames
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 2f798c17-2363-42a4-be94-a5751d208eac
 caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: feebccb0905a4e3161484b5c1fe9f0142fa41d53
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 445eaf5269ce59e6f6f8fa323020a80648567f54
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51743531"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54794198"
 ---
 # <a name="channels-threads-view"></a>通道 (執行緒檢視)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,8 +50,5 @@ ms.locfileid: "51743531"
 ## <a name="gpu-channels"></a>GPU 通道  
  GPU 通道顯示系統上 DirectX 11 活動的相關資訊。  與圖形卡相關聯的每個 DirectX 引擎都有不同的通道。  個別區段代表處理 DMA 封包所花費的時間。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [執行緒檢視](../profiling/threads-view-parallel-performance.md)
-
-
-

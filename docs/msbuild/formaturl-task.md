@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 81114b67-520f-43b5-8891-224f68a78516
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6086c03d3dae5a919b9b30abaecf2957076631b1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 02d7edcf74399e6d511a50008ef7ce86e822bc14
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53845469"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54979305"
 ---
 # <a name="formaturl-task"></a>FormatUrl 工作
 將 URL 轉換為正確的 URL 格式。  

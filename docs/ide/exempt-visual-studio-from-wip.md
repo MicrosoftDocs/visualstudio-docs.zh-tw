@@ -5,15 +5,15 @@ ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 665a4e893b8b146555dd35caad5cc521e1630dd9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 65a8da50cb14850762a1bd29c8a554f9f4556ca4
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53891501"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54968710"
 ---
 # <a name="configure-visual-studio-as-a-wip-exempt-app"></a>設定 Visual Studio 作為 WIP 豁免應用程式
 

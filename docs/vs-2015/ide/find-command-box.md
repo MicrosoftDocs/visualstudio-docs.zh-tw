@@ -1,14 +1,9 @@
 ---
 title: 尋找/命令方塊 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vs.findcommandbox
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: c81736dd-7a26-4e11-95c8-c2a2e56d7a41
 caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 0e818df222e9b7343facc989c1b61be30c098b64
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: b8bddc27eb4a59b65796c7837ae4561e5d56a5d5
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49172564"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54801221"
 ---
 # <a name="findcommand-box"></a>尋找/命令方塊
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +36,7 @@ ms.locfileid: "49172564"
  如果您在 [尋找/命令] 方塊中指定文字，然後選擇 ENTER 鍵，則 Visual Studio 預設會使用 [檔案中尋找] 對話方塊中所指定的選項來搜尋目前文件或工具視窗。 如需詳細資訊，請參閱 [Finding and Replacing Text](../ide/finding-and-replacing-text.md)。  
   
 ## <a name="entering-commands"></a>輸入命令  
- 若要使用 [尋找/命令] 方塊來發出單一 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 命令或別名，而不是搜尋文字，請輸入 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 命令，並在前面加上大於 (>) 符號。 例如:   
+ 若要使用 [尋找/命令] 方塊來發出單一 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 命令或別名，而不是搜尋文字，請輸入 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 命令，並在前面加上大於 (>) 符號。 例如：  
   
 ```  
 >File.NewFile c:\temp\MyFile /t:"General\Text File"  
@@ -58,9 +53,6 @@ ms.locfileid: "49172564"
   
  無論插入號位於引號內部或外部，功能都相同。 如果插入號是該程式行的最後一個字元，則會將其忽略。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [命令視窗](../ide/reference/command-window.md)   
  [尋找和取代文字](../ide/finding-and-replacing-text.md)
-
-
-

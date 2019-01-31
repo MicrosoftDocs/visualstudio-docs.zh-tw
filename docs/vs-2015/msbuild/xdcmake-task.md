@@ -1,14 +1,9 @@
 ---
 title: XDCMake 工作 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 f1_keywords:
 - vc.task.xdcmake
 dev_langs:
@@ -24,13 +19,13 @@ ms.assetid: a7de9c64-903a-4a02-85f3-f37672270f25
 caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: caf3803edff01e6ffe650f18aaccef99fc50728f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 58257921634e1afb89dfc0c012728523bc98a2ef
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49204876"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54792885"
 ---
 # <a name="xdcmake-task"></a>XDCMake 工作
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +41,7 @@ ms.locfileid: "49204876"
 ## <a name="parameters"></a>參數  
  下表說明 **XDCMake** 工作的參數。  
   
-|參數|描述|  
+|參數|說明|  
 |---------------|-----------------|  
 |**AdditionalDocumentFile**|選擇性的 **String[]** 參數。<br /><br /> 指定其他一或多個要合併的 .xdc 檔案。<br /><br /> 如需詳細資訊，請參閱 [XML 文件產生器工具屬性頁](http://msdn.microsoft.com/library/645912b5-197a-4c36-ba58-64df09444ca0)中的**其他文件檔**描述。 另請參閱 xdcmake.exe 的 **/old** 和 **/Fs** 命令列選項。|  
 |**AdditionalOptions**|選擇性的 **String** 參數。<br /><br /> 選項的清單，如命令列上所指定。 例如 "*/option1 /option2 /option#*"。 使用這個參數來指定任何其他 **XDCMake** 工作參數未表示的選項。<br /><br /> 如需詳細資訊，請參閱 [XDCMake 參考](http://msdn.microsoft.com/library/14e65747-d000-4343-854b-8393bf01cbac)、[XML 文件產生器工具屬性頁](http://msdn.microsoft.com/library/645912b5-197a-4c36-ba58-64df09444ca0)，以及 xdcmake.exe 的命令列說明 (**/?**)。|  
@@ -58,8 +53,5 @@ ms.locfileid: "49204876"
 |**SuppressStartupBanner**|選擇性的 **Boolean** 參數。<br /><br /> 如果是 `true`，當工作開始時，會防止顯示著作權和版本號碼訊息。<br /><br /> 如需詳細資訊，請參閱 [XDCMake 參考](http://msdn.microsoft.com/library/14e65747-d000-4343-854b-8393bf01cbac)中的 **/nologo** 選項。|  
 |**TrackerLogDirectory**|選擇性的 **String** 參數。<br /><br /> 指定追蹤器記錄檔的目錄。|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [工作參考](../msbuild/msbuild-task-reference.md)
-
-
-

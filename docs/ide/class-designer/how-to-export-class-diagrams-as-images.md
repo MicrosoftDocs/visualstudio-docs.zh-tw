@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: c57055c5-1340-449f-b9d3-ca6f87e2f69a
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5fe46216957f6104869e9cad7e95ce46769fb2a5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a14220d3a66db1528ac19a8f1fa263b7244b4cd0
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53873826"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54988060"
 ---
 # <a name="how-to-export-class-diagrams-as-images"></a>HOW TO：將類別圖表匯出為影像
 

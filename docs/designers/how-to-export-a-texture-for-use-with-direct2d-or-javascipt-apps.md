@@ -6,15 +6,15 @@ ms.topic: conceptual
 ms.assetid: 241c25fe-764e-4e1b-ad32-b1377dcbb605
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aad52a3ff4849702421303bdbaa3af8d1c073d87
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f7f094d08403b4410aa3075f90b8ff7c5e5491cf
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53850832"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55018484"
 ---
 # <a name="how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps"></a>HOW TO：匯出紋理以搭配 Direct2D 或 Javascipt 應用程式使用
 

@@ -6,15 +6,15 @@ ms.topic: conceptual
 ms.assetid: 0222e8bf-d29f-421b-9b1f-123d500fa179
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 680ec789c4a52e0855651fbe4d5caed7b945a8e8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 132fd7c9af4bbee7ae6984ccd58ae5c403121627
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53822096"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54953194"
 ---
 # <a name="how-to-create-a-basic-texture"></a>HOW TO：建立基本紋理
 

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: eb8eae5a-be27-45f4-a7bd-6e4ef0652385
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9b0f636e249d310d8f05b499410ce4da4f14da8b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 37236435204bc5fc5d7f971b1ecbf14ca628dd13
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53896769"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55010424"
 ---
 # <a name="idiaenumdebugstreamsnext"></a>IDiaEnumDebugStreams::Next
 擷取指定的數目的列舉型別序列中的偵錯資料流。  

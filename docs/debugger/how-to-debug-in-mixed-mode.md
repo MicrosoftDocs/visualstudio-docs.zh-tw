@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 2859067d-7fcc-46b0-a4df-8c2101500977
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: db26a3a68b15dcd6252f6bd02a540e105c993b54
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2e1da9b01c32b82948718ef5045005eb0d9beb37
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53896054"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54968527"
 ---
 # <a name="how-to-debug-in-mixed-mode-c-c-visual-basic"></a>HOW TO：在混合模式偵錯 (C#，c + +、 Visual Basic)
 

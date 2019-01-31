@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 1f81133a-293f-4dba-bc1c-8baafb01d857
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 34880d96effb9c1c77c1d88c22f61967741b693e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d32432631f254ca3a9a67d95862f8017fd61ac17
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53878269"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54941323"
 ---
 # <a name="advanced-compiler-settings-dialog-box-visual-basic"></a>進階編譯器設定對話方塊 (Visual Basic)
 

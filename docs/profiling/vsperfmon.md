@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 37052afb-7a58-441f-bb17-f1587cc57068
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6be37dc46b603d8193e45b8aa11d9b0cd78d9891
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1f43a01902801e6d3af9b6611ac2181acbcf398f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53841056"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55070483"
 ---
 # <a name="vsperfmon"></a>VSPerfMon
 您可以使用 VSPerfMon 工具來收集應用程式的效能資料，而這項工具通常是由 *VSPerfCmd.exe* 啟動。 VSPerfMon 會顯示有關附加或中斷連結處理序的其他資訊，其在使用 VSPerfCmd 工具時無法使用。 若要檢視這項資訊，請以個別的視窗來啟動 VSPerfMon。 若要叫用 VSPerfMon，請使用下列語法︰  

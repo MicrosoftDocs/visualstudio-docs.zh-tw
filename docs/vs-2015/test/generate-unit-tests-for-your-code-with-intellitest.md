@@ -1,26 +1,21 @@
 ---
 title: 使用 IntelliTest 為程式碼產生單元測試 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 f1_keywords:
 - vs.UnitTest.CreateIntelliTest
 ms.assetid: cd9ff940-e948-4d28-a72c-b291ef5c1e90
 caps.latest.revision: 35
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 6743db0b10d8df4f131f8125b3e2f83bca262054
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: c6d880ef434eafd7aee3ffbc5f7d8f80a68a4b25
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49226508"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54790502"
 ---
 # <a name="generate-unit-tests-for-your-code-with-intellitest"></a>使用 IntelliTest 為程式碼產生單元測試
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -92,11 +87,11 @@ IntelliTest 會探索您的 .NET 程式碼，從而產生測試資料及單元�
   
 ##  <a name="QandALink"></a> 問與答  
   
-### <a name="q-can-you-use-intellitest-for-unmanaged-code"></a>問：IntelliTest 適用於 Unmanaged 程式碼嗎？  
- **答：** 不適用，IntelliTest 只適用於 Managed 程式碼。  
+### <a name="q-can-you-use-intellitest-for-unmanaged-code"></a>問：IntelliTest 適用於非受控碼嗎？  
+ **答：** 不適用，IntelliTest 只適用於受控碼。  
   
 ### <a name="q-when-does-a-generated-test-pass-or-fail"></a>問：產生的測試會在何時成功或失敗？  
- **答：** 一如其他單元測試般，只要未發生任何例外狀況，測試便會成功。 當有任何判斷提示失敗，或有測試的程式擲回無法處理的例外狀況時，測試便會失敗。  
+ **答：** 如同任何其他單元測試，只要未發生任何例外狀況，測試便會成功。 當有任何判斷提示失敗，或有測試的程式擲回無法處理的例外狀況時，測試便會失敗。  
   
  若您的測試在擲回某些例外狀況時仍能成功，可以依據您的需求，在測試方法、測試類別或組件層級設定下列屬性：  
   
@@ -108,21 +103,21 @@ IntelliTest 會探索您的 .NET 程式碼，從而產生測試資料及單元�
   
 -   **PexAllowedExceptionFromAssemblyAttribute**  
   
-### <a name="q-can-i-add-assumptions-to-the-parameterized-unit-test"></a>問：我可以在參數型單元測試中加入假設嗎？  
- **答：** 可以，您可以使用假設，為特定方法的單元測試指定不需要的測試資料。 您可以使用 <xref:Microsoft.Pex.Framework.PexAssume> 類別加入假設。 例如，您可以如下列範例般，加入長度變數不是 Null 的假設。  
+### <a name="q-can-i-add-assumptions-to-the-parameterized-unit-test"></a>問：我可以在參數化單元測試中新增假設嗎？  
+ **答：** 可以，您可以使用假設，為特定方法單元測試指定不需要的測試資料。 您可以使用 <xref:Microsoft.Pex.Framework.PexAssume> 類別加入假設。 例如，您可以如下列範例般，加入長度變數不是 Null 的假設。  
   
  `PexAssume.IsNotNull(lengths);`  
   
  加入假設之後，請重新執行 IntelliTest，以移除不再相關的測試資料。  
   
-### <a name="q-can-i-add-assertions-to-the-parameterized-unit-test"></a>問：我可以在參數型單元測試中加入判斷提示嗎？  
+### <a name="q-can-i-add-assertions-to-the-parameterized-unit-test"></a>問：我可以在參數化單元測試中新增判斷提示嗎？  
  **答：** 可以，IntelliTest 會在執行單元測試時，檢查陳述式中的判斷提示是否符合實際情況。 使用 <xref:Microsoft.Pex.Framework.PexAssert> 類別或測試架構隨附的判斷提示 API，以加入判斷提示。 例如，您可以加入判斷提示，指出兩個變數相等。  
   
  `PexAssert.AreEqual(a, b);`  
   
  當您加入判斷提示並重新執行 IntelliTest 時，其會檢查該判斷提示是否正確，若不正確，測試即會失敗。  
   
-###  <a name="NoRun"></a> 問： 是否可以產生參數化的單元測試而不需先執行 IntelliTest?  
+###  <a name="NoRun"></a> 問：是否可以產生參數化單元測試而不需先執行 IntelliTest?  
  **答：** 可以，只要以滑鼠右鍵按一下類別或方法，然後選擇 [建立 IntelliTest] 即可。  
   
  ![以滑鼠右鍵按一下編輯器，選擇 [建立 IntelliTest]](../test/media/pexcreateintellitest.png "PEXCreateIntelliTest")  
@@ -131,15 +126,12 @@ IntelliTest 會探索您的 .NET 程式碼，從而產生測試資料及單元�
   
  ![使用 MSTest 預設值建立 IntelliTest](../test/media/pexcreateintellitestmstest.png "PEXCreateIntelliTestMSTest")  
   
-### <a name="q-can-i-use-other-unit-test-frameworks-with-intellitest"></a>問： 是否可以使用其他單元測試架構搭配 IntelliTest？  
- **答：** 可以，請遵循 [尋找並安裝其他架構](../test/install-third-party-unit-test-frameworks.md)中的步驟。 重新啟動 Visual Studio 並重新開啟方案之後，以滑鼠右鍵按一下類別或方法，然後選擇 [建立 IntelliTest] 。 於此處選取您已安裝的架構：  
+### <a name="q-can-i-use-other-unit-test-frameworks-with-intellitest"></a>問：是否可以使用其他單元測試架構搭配 IntelliTest？  
+ **答：** 可以，請遵循[尋找並安裝其他架構](../test/install-third-party-unit-test-frameworks.md)中的步驟。 重新啟動 Visual Studio 並重新開啟方案之後，以滑鼠右鍵按一下類別或方法，然後選擇 [建立 IntelliTest] 。 於此處選取您已安裝的架構：  
   
  ![選取 IntelliTest 的其他單元測試架構](../test/media/pexcreateintellitestextensions.png "PEXCreateIntelliTestExtensions")  
   
  然後執行 IntelliTest，以在對應的 g.cs 檔案中產生個別的單元測試。  
   
 ### <a name="q-can-i-learn-more-about-how-the-tests-are-generated"></a>問：我可以進一步了解如何產生測試嗎？  
- **答：** 可以，如需高階概觀，請閱讀這篇 [部落格文章](http://blogs.msdn.com/b/visualstudioalm/archive/2015/07/05/intellitest-one-test-to-rule-them-all.aspx)。
-
-
-
+ **答：** 可以，如需高階概觀，請閱讀這篇[部落格文章](http://blogs.msdn.com/b/visualstudioalm/archive/2015/07/05/intellitest-one-test-to-rule-them-all.aspx)。

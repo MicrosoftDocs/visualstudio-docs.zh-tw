@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: b04d1327-a45e-4c12-a0d0-67672b3fa855
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a9a239c601032a21cd34636ed79871cd108b853e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 32ddd6cd204a9f301553f2f83ab0199937dc7ae1
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53879263"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54989571"
 ---
 # <a name="how-to-change-text-case-in-the-editor"></a>HOW TO：變更編輯器中的文字大小寫
 

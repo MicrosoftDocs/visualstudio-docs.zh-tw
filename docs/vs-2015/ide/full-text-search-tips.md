@@ -1,14 +1,9 @@
 ---
 title: 全文檢索搜尋提示 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - hv_search
 helpviewer_keywords:
@@ -18,13 +13,13 @@ ms.assetid: bcaad23d-2ca7-4bec-8b54-b884bc34e70b
 caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 85770dfd3c610f92bcb190b7a2c151b40cd31a4c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: a015aeff983979bbb8f6ddedc245c74d3fb5f77b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49850044"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54791704"
 ---
 # <a name="full-text-search-tips"></a>全文檢索搜尋提示
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +32,7 @@ ms.locfileid: "49850044"
 ### <a name="general-guidelines"></a>一般方針  
  下表包含一些基本規則和指導方針，以便開發 [說明] 中的搜尋查詢。  
   
-|語法|描述|  
+|語法|說明|  
 |------------|-----------------|  
 |區分大小寫|搜尋不區分大小寫。 使用大寫或小寫字元開發您的搜尋準則。 例如，"OLE" 和 "ole" 傳回相同的結果。|  
 |字元組合|您無法只搜尋個別的字母 (a – z) 或數字 (0 – 9)。 如果您嘗試搜尋特定的保留字，例如 "and"、"from" 和 "with"，則會忽略它們。 如需詳細資訊，請參閱本主題稍後的「搜尋中忽略的字 (停用字詞)」。|  
@@ -65,9 +60,6 @@ ms.locfileid: "49850044"
 ### <a name="words-ignored-in-searches-stop-words"></a>搜尋中忽略的字 (停用字詞)  
  全文檢索搜尋期間會自動忽略常出現的文字或數字，這些有時稱為停用字詞。 例如，如果您搜尋片語 "pass through"，搜尋結果會顯示包含單字 "pass" 但不包含 "through" 的主題。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [尋找資訊](../ide/locate-information.md)   
  [搜尋運算式中的邏輯運算子](../ide/logical-operators-in-search-expressions.md)
-
-
-

@@ -1,23 +1,19 @@
 ---
 title: Emulator for Android 疑難排解 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: tgt-pltfrm-cross-plat
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: troubleshooting
 ms.assetid: f3fb5df4-3aae-40e4-9450-bbe15b0c5af5
 caps.latest.revision: 25
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 01c73e4701d98422323b92918bd96d0d09bf2dfb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5500af58ab93b41cc73b48f5ebe2d63ed16ca495
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53841339"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54754931"
 ---
 # <a name="troubleshooting-the-visual-studio-emulator-for-android"></a>Troubleshooting the Visual Studio Emulator for Android
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -259,7 +255,7 @@ ms.locfileid: "53841339"
 
   若要解決這個問題，請停用主機板之 BIOS 設定中的 USB3 並重新啟動電腦。 然後檢查是否已針對主機板的 BIOS 發行 GB 更新。
 
-  如需詳細資訊，請參閱下列知識庫文件：[安裝在 Gb 系統上的 HYPER-V 角色後開機失敗](https://support.microsoft.com/en-us/kb/2693144)。
+  如需詳細資訊，請參閱下列知識庫文件：[安裝在 Gb 系統上的 HYPER-V 角色後開機失敗](https://support.microsoft.com/kb/2693144)。
 
 ##  <a name="ADB"></a> Visual Studio 在嘗試將應用程式部署至模擬器時遇遭困難，或模擬器未作為偵錯目標出現在其他 IDE 中
  若模擬器正在執行，但似乎未連接到 ADB (Android Debug Bridge) 或未顯示在使用 ADB (例如 Android Studio 或 Eclipse) 的 Android 工具 中，則您可能需要調整模擬器尋找 ADB 的位置。 模擬器使用登錄機碼來識別您的 Android SDK 的基礎位置，並尋找該目錄下的 \platform-tools\adb.exe 檔案。 若要修改模擬器所使用的 Android SDK 路徑：

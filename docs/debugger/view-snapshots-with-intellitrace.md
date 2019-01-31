@@ -7,15 +7,15 @@ helpviewer_keywords:
 - IntelliTrace step-back
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e2ce52e970187e2d18679b60522a24899a5e43e8
-ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
+ms.openlocfilehash: 93a2fdd318b7e87bc585dff0b1b09589bfa4037b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "54227560"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54923117"
 ---
 # <a name="view-snapshots-with-intellitrace-step-back-visual-studio-enterprise-c-visual-basic-c"></a>使用 IntelliTrace 回溯檢視快照集 (Visual Studio Enterprise) (C#、Visual Basic、C++)
 

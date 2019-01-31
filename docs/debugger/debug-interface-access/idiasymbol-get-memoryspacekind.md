@@ -7,15 +7,15 @@ dev_langs:
 ms.assetid: 9a63b298-8577-4c15-8595-530558d41bf1
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e9bfb63c05a864d1ee477ec9411cfaded431cc01
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: dc48e56cb9a053b1ce85cf4b719de82292d8524d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53920124"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54925405"
 ---
 # <a name="idiasymbolgetmemoryspacekind"></a>IDiaSymbol::get_memorySpaceKind
 擷取記憶體空間類型。  

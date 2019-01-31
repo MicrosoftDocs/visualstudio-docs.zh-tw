@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: a096a90d-6d0d-4752-9fb5-417635ccab3e
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f8827bea4ad3819c7915c34793dfe3b2164d5bb
-ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
+ms.openlocfilehash: c47d51566074eec4c38bab1bd7846b1dfe0f034d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/14/2019
-ms.locfileid: "54269627"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55027824"
 ---
 # <a name="debugging-web-applications"></a>偵錯 Web 應用程式
 本節將說明如何偵錯數種類型的 Web 應用程式。  

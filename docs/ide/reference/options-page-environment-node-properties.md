@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 26dca41f-91fc-4ca7-9103-3da402baa1d5
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 54ce1d5fdd318ddd8c1ac4cd1a988b458898327a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ca01809edc10058097ea40ff67ea263b5a10a5a1
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53914964"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54959810"
 ---
 # <a name="options-page-environment-node-properties"></a>環境節點屬性、選項頁
 本文件描述與 [選項] 對話方塊的 [環境] 分類 `DTE.Properties("Environment", <Property Page>)` 相關聯的頁面 (或屬性集合)。 每一小節的標題就是用來存取屬性集合的呼叫，而每一小節中的表格會列出集合中的屬性。

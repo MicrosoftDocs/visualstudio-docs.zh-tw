@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 5377fedb-632a-4e86-a947-7c11c86451e7
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cfe0fcdb039b4c7b234f3f43e6ce5741d96f5e9c
-ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
+ms.openlocfilehash: c7e701a0365827c09ec919dae661aa0bf94c2e45
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "54227443"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55023466"
 ---
 # <a name="diff-devenvexe"></a>/Diff (devenv.exe)
 
@@ -47,7 +47,7 @@ devenv /Diff SourceFile TargetFile [SourceDisplayName [TargetDisplayName]]
 - *TargetDisplayName*
 
   選擇性。 第二個檔案的顯示名稱。
-    
+
 ## <a name="remarks"></a>備註
 
 如果已經開啟 IDE 的執行個體，則檔案比較會出現在目前 IDE 的索引標籤中。

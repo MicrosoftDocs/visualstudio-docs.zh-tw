@@ -1,14 +1,9 @@
 ---
 title: 其他 MSBuild 資源 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 f1_keywords:
 - MSBuild.UnregisterAssembly.UnregisterTlbFileNotRegistered
 - MSBuild.DollarSignInTaskOutputPropertyName
@@ -603,13 +598,13 @@ ms.assetid: 29dd85ee-1530-43c1-b085-bb2330ac5a48
 caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 935d73f8dd1a5c1dedb3fb4d1e7a727d19e5d10b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 27dec65ec40db76c643260e26e98375e4a80ec10
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49222738"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54764904"
 ---
 # <a name="additional-msbuild-resources"></a>其他 MSBuild 資源
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -628,8 +623,5 @@ ms.locfileid: "49222738"
 ## <a name="product-support"></a>產品支援  
  如果您在嘗試其他資源之後仍有疑問，可以前往 [Microsoft 說明及支援](http://go.microsoft.com/fwlink/?linkid=1782)網站，連絡 Microsoft 支援服務。 如需您地區中可用的產品支援資訊，請參閱[告訴我們](../ide/talk-to-us.md)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [進行 .NET Framework 目標錯誤的疑難排解](../msbuild/troubleshooting-dotnet-framework-targeting-errors.md)
-
-
-

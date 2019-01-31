@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 79929dfd-22c9-4cec-a0d0-a16f15b8f7e4
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fd2271ca3a2a674d569bc20ad6b45642e460108f
-ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
+ms.openlocfilehash: 823f79169b655bd12222a7debedab820017257f6
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/14/2019
-ms.locfileid: "54269562"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55003015"
 ---
 # <a name="clean-devenvexe"></a>/Clean (devenv.exe)
 

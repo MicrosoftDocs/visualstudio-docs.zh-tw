@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: ffcce3cc-085c-44eb-8145-46e3819c54f9
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 844d5d7f2dce19af29afb2d30daa9ee0290115f8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 774ea527cb34b1be1a27bed2904788498390ec10
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53832709"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54968878"
 ---
 # <a name="idiasymbolgetliverangelength"></a>IDiaSymbol::get_liveRangeLength
 傳回本機符號無效的位址範圍的長度。  

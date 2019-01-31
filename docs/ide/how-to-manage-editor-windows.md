@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 340143d4-8a71-490d-823e-162b276f4c6d
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d9134e7dcaddebbc63ad7fcb5650d5c24a00c6db
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5f7aa70a5de2014d2e088d0c56ce7408e40b24ef
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53866172"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55028451"
 ---
 # <a name="how-to-manage-editor-windows"></a>HOW TO：管理編輯器視窗
 

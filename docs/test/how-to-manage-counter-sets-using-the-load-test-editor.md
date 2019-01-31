@@ -12,14 +12,14 @@ helpviewer_keywords:
 ms.assetid: 64315c2f-a0b2-4378-be16-0774b99beef5
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 89e582c4377d3948f5ed0cfdb1e23a3259bde27e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3e3dd1d3ffb22a7b6ea3940578345a8b616358e0
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53941147"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54976924"
 ---
 # <a name="how-to-manage-counter-sets-using-the-load-test-editor"></a>HOW TO：使用負載測試編輯器管理計數器集合
 

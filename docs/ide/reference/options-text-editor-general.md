@@ -27,15 +27,15 @@ helpviewer_keywords:
 ms.assetid: 4ac21e48-3243-4141-9058-7eaf12b3cde7
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ce5553f54b5864c27fc4dfa14376e8eb7735c613
-ms.sourcegitcommit: d0b02affd24e66efed924c197824f35f823e3240
+ms.openlocfilehash: 69c74548340e8b8f642fa1e373bdd424c3c81a69
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/21/2019
-ms.locfileid: "54417794"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54989740"
 ---
 # <a name="options-text-editor-general"></a>一般、文字編輯器、選項
 
@@ -67,7 +67,7 @@ ms.locfileid: "54417794"
 
 選取時，您可以按下 **Ctrl** 並暫留在元素上，同時按一下滑鼠。 這樣會帶您前往所選取元素的定義。 您也可以從 [使用輔助按鍵] 下拉式清單選擇 [Alt] 或 [Ctrl + Alt]。
 
-選取 [在預覽檢視中開啟定義] 核取方塊，以在視窗中顯示元素的定義，而不需從您目前在程式碼編輯器中的位置尋覽到他處。 
+選取 [在預覽檢視中開啟定義] 核取方塊，以在視窗中顯示元素的定義，而不需從您目前在程式碼編輯器中的位置尋覽到他處。
 
 ## <a name="display"></a>顯示
 

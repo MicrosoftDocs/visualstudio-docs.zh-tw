@@ -9,13 +9,13 @@ helpviewer_keywords:
 - project templates [Visual Studio], creating
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: d0d15d4f3836ca1ccfdc800ad4805ed7691e4454
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: f9479eca1ac7763e1dc2861cffc8e0d940368692
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53990223"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54985808"
 ---
 # <a name="how-to-create-project-templates"></a>HOW TO：建立專案範本
 

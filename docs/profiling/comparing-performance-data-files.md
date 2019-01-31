@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: e6fda144-f21d-4912-9d16-1b8d3555a210
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e75a5da65343a08f0c94be27837e70f4078192d5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: aec25bac7d1851095a9c7c5d96766b2326fb36ac
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53893045"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54943061"
 ---
 # <a name="compare-performance-data-files"></a>比較效能資料檔案
 分析工具資料檔案比較功能可讓您選取兩個報表檔案 (.*vsp* 或 .*vsps*) 檔案，然後產生報告以顯示一個分析工作階段到另一個之間發生的差異、效能回復和改善。  

@@ -8,15 +8,15 @@ helpviewer_keywords:
 - .NET Framework version [Visual Studio]
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 95e2b6bef32bdc5830e54795eb2580e7dd1fa068
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9f1dfec6eecb92a306a8c3579c6a980b3d3fa8d1
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53860162"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55031353"
 ---
 # <a name="how-to-target-a-version-of-the-net-framework"></a>HOW TO：以一個 .NET Framework 版本為目標
 

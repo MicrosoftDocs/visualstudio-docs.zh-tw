@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 1a4c7f4c-7a41-45f2-9af4-8b1666469b89
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 216d3802ddac4e2a4cee2b8ab20d4d3abd381424
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d3be7039995c27990a1c5c55bf173ef06e5fee0c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53888448"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54984700"
 ---
 # <a name="deploy-com-components-with-clickonce"></a>使用 ClickOnce 部署 COM 元件
 部署舊版的 COM 元件一直是困難的工作。 元件必須全域註冊，因此可能會導致非預期的副作用之間重疊的應用程式。 這種情況通常不是問題在.NET Framework 應用程式中的因為都是完全隔離的應用程式或元件並排顯示相容。 Visual Studio 可讓您部署隔離的 COM 元件，在 Windows XP 或更高版本的作業系統上。  
@@ -163,7 +163,7 @@ ms.locfileid: "53888448"
   
 - 元件會管理系統，例如，列印多工緩衝處理器的裝置驅動程式的實體或虛擬裝置。  
   
-- 元件為資料存取可轉散發套件。 資料應用程式通常需要不同資料存取的可轉散發套件才能執行安裝。 您不應該嘗試隔離元件，例如 Microsoft ADO 資料控制項、 Microsoft OLE DB 或 Microsoft Data Access Components (MDAC)。 相反地，如果您的應用程式使用 MDAC 或 SQL Server Express，您應該將它們設為必要條件。請參閱[How to:隨著 ClickOnce 應用程式安裝必要軟體](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)  
+- 元件為資料存取可轉散發套件。 資料應用程式通常需要不同資料存取的可轉散發套件才能執行安裝。 您不應該嘗試隔離元件，例如 Microsoft ADO 資料控制項、 Microsoft OLE DB 或 Microsoft Data Access Components (MDAC)。 相反地，如果您的應用程式使用 MDAC 或 SQL Server Express，您應該將它們設為必要條件。請參閱[如何： 使用 ClickOnce 應用程式的安裝必要條件](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)。  
   
   在某些情況下，它可能會重新設計免註冊 COM 元件的開發人員 如果這不可行，但您仍會建置，並發佈應用程式，透過使用啟動載入器的標準註冊配置相依於這些。 如需詳細資訊，請參閱 <<c0> [ 建立啟動載入器套件](../deployment/creating-bootstrapper-packages.md)。  
   

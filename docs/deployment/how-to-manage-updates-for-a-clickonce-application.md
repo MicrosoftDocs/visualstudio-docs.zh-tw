@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: a3f23f05-e7f1-4620-b23c-2d68f9643684
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 95436528b42c4b32e15048b771a36daf32a22c1c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 591f69ddc1ac163858c3d3a2b2ce8721c27e16b6
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53945895"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54955904"
 ---
 # <a name="how-to-manage-updates-for-a-clickonce-application"></a>HOW TO：管理 ClickOnce 應用程式的更新
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式可以自動或以程式設計方式檢查更新。 身為開發人員，您會有更多的彈性，指定何時和如何執行更新檢查、 更新是否為必要項目，以及應用程式應該檢查更新。  
@@ -101,7 +101,7 @@ ms.locfileid: "53945895"
   
 5.  在 **更新位置**欄位中，輸入完整的 URL，並使用格式的更新位置*http://Hostname/ApplicationName*，或使用的格式將 UNC 路徑 *\\\Server\ApplicationName*，或按一下**瀏覽**按鈕來瀏覽的更新位置。 更新位置就是應用程式將在其中尋找本身的更新版本。  
   
-6.  使用者會選取檢查更新的 Windows Form 上建立按鈕、 功能表項目或其他使用者介面項目。 從該項目的事件處理常式，呼叫方法來檢查並安裝更新。 您可以找到範例的 Visual Basic 和 VisualC#中的這類方法的程式碼[如何：使用 ClickOnce 部署 API 以程式檢查應用程式更新](../deployment/how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api.md)  
+6.  使用者會選取檢查更新的 Windows Form 上建立按鈕、 功能表項目或其他使用者介面項目。 從該項目的事件處理常式，呼叫方法來檢查並安裝更新。 您可以找到範例的 Visual Basic 和 VisualC#中的這類方法的程式碼[如何：使用 ClickOnce 部署 API 以程式設計的方式檢查應用程式更新](../deployment/how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api.md)  
   
 7.  建置您的應用程式。  
   

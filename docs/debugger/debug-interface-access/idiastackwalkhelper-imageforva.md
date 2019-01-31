@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 8d4edabf-3c01-4fef-8b61-4779f3371067
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a65c93bbac1cd49c52f6e93e2f009aba22581bb4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 26cb6957edd30d36fbc1a9ebbf982fd3ce91c94a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53854629"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54971239"
 ---
 # <a name="idiastackwalkhelperimageforva"></a>IDiaStackWalkHelper::imageForVA
 傳回在指定的虛擬位址某處可執行檔的記憶體空間中的記憶體中的可執行檔映像。  

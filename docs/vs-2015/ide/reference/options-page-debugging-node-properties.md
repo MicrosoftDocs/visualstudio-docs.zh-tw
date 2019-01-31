@@ -1,25 +1,20 @@
 ---
 title: 偵錯節點屬性、選項頁 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 ms.assetid: 564cc8b2-0084-420e-b560-200cc5621a7e
 caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 8bcc4637ebb933c2d6cc8a06d15ad70c1fbb76c1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 31eff8876dd6ae1a83f74d419853846bf461e275
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49223844"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54782193"
 ---
 # <a name="options-page-debugging-node-properties"></a>偵錯節點屬性、選項頁
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -30,7 +25,7 @@ ms.locfileid: "49223844"
 ## <a name="general"></a>一般  
  `DTE.Properties("Debugging", "General")`  
   
-|屬性項目名稱|值|描述|  
+|屬性項目名稱|值|說明|  
 |------------------------|-----------|-----------------|  
 |PromptOnBreakpointDelete|Get/Set (布林值)|判斷偵錯工具是否先提示權限，再刪除專案中的所有中斷點。|  
 |BreakAllProcesses|Get/Set (布林值)|決定是否只要單一處理序中斷，偵錯工具即中斷所有處理序。|  
@@ -60,7 +55,7 @@ ms.locfileid: "49223844"
 ## <a name="edit-and-continue"></a>編輯後繼續  
  `DTE.Properties("Debugging", "EditAndContinue")`  
   
-|屬性項目名稱|值|描述|  
+|屬性項目名稱|值|說明|  
 |------------------------|-----------|-----------------|  
 |EnableEditAndContinue|Get/Set (布林值)|決定是否啟用 [編輯後繼續]。 此選項適用於所有支援 [編輯後繼續] 的語言。|  
 |InvokedByCommands|Get/Set (布林值)|當使用者選取 [步驟] 或 [繼續] 等偵錯命令時，決定 [編輯後繼續] 是否自動套用程式碼變更。 此選項僅適用於原生程式碼。|  
@@ -72,7 +67,7 @@ ms.locfileid: "49223844"
 ## <a name="just-in-time"></a>Just-In-Time  
  `DTE.Properties("Debugging", "JustInTime")`  
   
-|屬性項目名稱|值|描述|  
+|屬性項目名稱|值|說明|  
 |------------------------|-----------|-----------------|  
 |JitManaged|Get/Set (布林值)|決定 Managed 程式碼是否啟用 Just-In-Time 偵錯。|  
 |JitNative|Get/Set (布林值)|決定原生程式碼是否啟用 Just-In-Time 偵錯。|  
@@ -81,12 +76,12 @@ ms.locfileid: "49223844"
 ## <a name="native"></a>原生  
  `DTE.Properties("Debugging", "Native")`  
   
-|屬性項目名稱|值|描述|  
+|屬性項目名稱|值|說明|  
 |------------------------|-----------|-----------------|  
 |LoadDllExports|Get/Set (布林值)|決定偵錯工具是否載入 DLL 匯出表。|  
 |EnableRPC|Get/Set (布林值)|決定偵錯工具是否可以逐步執行至 COM 遠端程序呼叫。|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [控制選項設定](http://msdn.microsoft.com/library/a09ed242-7494-4cde-bbd1-7a8ec617965d)   
  [在選項頁中決定屬性項目的名稱](http://msdn.microsoft.com/library/d450422d-47c7-4eeb-9f9f-3286264bc5aa)   
  [字型和色彩節點屬性、選項頁](../../ide/reference/options-page-fonts-and-colors-node-properties.md)   
@@ -94,6 +89,3 @@ ms.locfileid: "49223844"
  [選項對話方塊、偵錯、一般](../../debugger/general-debugging-options-dialog-box.md)   
  [選項對話方塊、偵錯、編輯後繼續](http://msdn.microsoft.com/library/009d225f-ef65-463f-a146-e4c518f86103)   
  [選項對話方塊、偵錯、Just-In-Time](../../debugger/just-in-time-debugging-options-dialog-box.md)
-
-
-

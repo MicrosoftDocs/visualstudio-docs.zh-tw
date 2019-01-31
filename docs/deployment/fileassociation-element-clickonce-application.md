@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 8f951b4f-54f9-412e-a9e5-af4e379fcf08
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 78cdb22f2d87b67d5a29e8031358193526fa4b71
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d506fc7023f01d305fee95c52a32f2ea3dafddaf
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53866159"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54984505"
 ---
 # <a name="ltfileassociationgt-element-clickonce-application"></a>&lt;fileAssociation&gt;項目 （ClickOnce 應用程式）
 識別要與應用程式相關聯的副檔名。  

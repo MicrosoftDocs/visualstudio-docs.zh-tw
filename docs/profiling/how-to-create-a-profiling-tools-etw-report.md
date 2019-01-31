@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: bf5547b3-f6c7-4989-9d47-2fe4f1261444
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 304cc9b65ed876e2348a6b96dc1f50e9a6934a4a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 20b7c92c8cbbf500b44816fbb0f34e0df6f04720
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53950971"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54940930"
 ---
 # <a name="how-to-create-a-profiling-tools-etw-report"></a>HOW TO：建立程式碼剖析工具 ETW 報告
 「Windows 事件追蹤」(ETW) 報告會列出「[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具」的效能工作階段中記錄的 ETW 事件。 ETW 資料會收集在二進位 (.*etl*) 檔案中。 如需此報表的詳細資訊，請參閱 [Windows 事件追蹤 (ETW) 報表](../profiling/event-tracing-for-windows-etw-report.md)。  

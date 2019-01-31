@@ -1,14 +1,9 @@
 ---
 title: 管理專案中的參考 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vs.ProjectPropertiesReferencePaths
 - cs.ProjectPropertiesReferencePaths
@@ -27,13 +22,13 @@ ms.assetid: 05d1c51b-44f3-4973-8a11-6c919b08ad62
 caps.latest.revision: 55
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 464b5703a33caefe4533d8ecd726bbb9d6910de4
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+manager: jillfra
+ms.openlocfilehash: 3da4501d472949a89ad9120a07da99aaff3ebd1b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53740360"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54763646"
 ---
 # <a name="managing-references-in-a-project"></a>管理專案中的參考
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -101,7 +96,7 @@ ms.locfileid: "53740360"
 ## <a name="references-to-shared-components-at-run-time"></a>在執行階段參考共用元件  
  在執行階段中，元件必須位於專案的輸出路徑或 [Global Assembly Cache](http://msdn.microsoft.com/library/cf5eacd0-d3ec-4879-b6da-5fd5e4372202) (GAC) 中。 如果專案包含不在這些位置其中之一的物件參考，您必須在建置專案時，將參考複製至專案的輸出路徑。 <xref:Microsoft.VisualStudio.VCProjectEngine.VCProjectReference.CopyLocal%2A> 屬性表示是否要進行此複製。 如果值為 **True**，則當您建置專案時，會將參考複製至專案目錄。 如果值為 **False**，則不會複製參考。  
   
- 如果您部署的應用程式中包含在 GAC 中已註冊自訂元件的參考，則不論 <xref:Microsoft.VisualStudio.VCProjectEngine.VCProjectReference.CopyLocal%2A> 設定為何，該元件都不會隨著應用程式一起部署。 在舊版的 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中，您可以在參考上設定 <xref:Microsoft.VisualStudio.VCProjectEngine.VCProjectReference.CopyLocal%2A> 屬性以確保組件已部署。 現在，您必須手動將組件加入 \Bin 資料夾。 這會使所有自訂程式碼受到監督，降低您在不熟悉的情況下發行自訂程式碼的風險。  
+ 如果您部署的應用程式中包含在 GAC 中已註冊自訂元件的參考，則不論 <xref:Microsoft.VisualStudio.VCProjectEngine.VCProjectReference.CopyLocal%2A> 設定為何，該元件都不會隨著應用程式一起部署。 在舊版的 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]中，您可以在參考上設定 <xref:Microsoft.VisualStudio.VCProjectEngine.VCProjectReference.CopyLocal%2A> 屬性以確保組件已部署。 現在，您必須手動將組件加入 \Bin 資料夾。 這會使所有自訂程式碼受到監督，降低您在不熟悉的情況下發行自訂程式碼的風險。  
   
  根據預設，如果組件或元件位於全域組件快取或 Framework 元件，則 <xref:Microsoft.VisualStudio.VCProjectEngine.VCProjectReference.CopyLocal%2A> 屬性會設定為 **False** 。 否則，值會設定為 **True**。 專案對專案參考一律會設定為 **True**。  
   
@@ -113,7 +108,7 @@ ms.locfileid: "53740360"
 ## <a name="project-to-project-references"></a>專案對專案參考  
  專案對專案參考是包含組件的專案參考；您可以使用 [專案]  索引標籤建立專案對專案參考。當給定專案路徑時，Visual Studio 即可找出組件。  
   
- 當您有會產生組件的專案時，您應該參考該專案，而不要使用檔案參考 (請參閱下文)。 專案對專案參考的優點是它會在組建系統中建立專案之間的相依性。 如果自上次建置的參考專案已變更，則將會建立相依專案。 檔案參考不會建立組建相依性，因此可以建置參考專案而不需建置相依專案，且參考可能會遭到淘汰。 (也就是專案可以參考先前建置的專案版本。)這會導致在 bin 目錄中需要單一 DLL 的數個版本，但這不可能達成。 發生這個衝突時，您會看到類似[警告：無法將專案 'project' 中的相依性 'file' 複製至執行目錄，因為它會覆寫參考 'file'](/visualstudio/vs-2015/misc/warning-the-dependency-file-in-project-project-cannot-be-copied) 的訊息。 如需詳細資訊，請參閱[針對中斷參考進行疑難排解](../ide/troubleshooting-broken-references.md)以及[如何：建立和移除專案相依性](../ide/how-to-create-and-remove-project-dependencies.md)。  
+ 當您有會產生組件的專案時，您應該參考該專案，而不要使用檔案參考 (請參閱下文)。 專案對專案參考的優點是它會在組建系統中建立專案之間的相依性。 如果自上次建置的參考專案已變更，則將會建立相依專案。 檔案參考不會建立組建相依性，因此可以建置參考專案而不需建置相依專案，且參考可能會遭到淘汰。 (也就是專案可以參考先前建置的專案版本。)這會導致在 bin 目錄中需要單一 DLL 的數個版本，但這不可能達成。 發生這個衝突時，您會看到類似[警告：無法將專案 'project' 中的相依性 'file' 複製至執行目錄，因為它會覆寫參考 'file'](/visualstudio/vs-2015/misc/warning-the-dependency-file-in-project-project-cannot-be-copied) 的訊息。 如需詳細資訊，請參閱 <<c0> [ 疑難排解中斷的參考](../ide/troubleshooting-broken-references.md)和[How to:建立及移除專案相依性](../ide/how-to-create-and-remove-project-dependencies.md)。  
   
 > [!NOTE]
 >  如果某個專案的 .NET Framework 目標版本為 4.5 版，而其他專案的目標版本為第 2 版、第 3 版、3.5 版或 4.0 版，則會建立檔案參考而非專案對專案參考。  
@@ -125,4 +120,3 @@ ms.locfileid: "53740360"
  [Troubleshooting Broken References](../ide/troubleshooting-broken-references.md)   
  [使用組件設計程式](http://msdn.microsoft.com/library/25918b15-701d-42c7-95fc-c290d08648d6)   
  [如何：使用參考管理員新增或移除參考](../ide/how-to-add-or-remove-references-by-using-the-reference-manager.md)
-

@@ -1,14 +1,9 @@
 ---
 title: SignFile 工作 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#SignFile
 dev_langs:
@@ -23,13 +18,13 @@ ms.assetid: edef1819-ddeb-4e09-95de-fc7063ba9388
 caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 849c82fe11e4440c4b3394532ceecfe30ef57253
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 07215b20da99a02100eeb8781c5a637c3b689e71
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49206403"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54764888"
 ---
 # <a name="signfile-task"></a>SignFile 工作
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +40,7 @@ ms.locfileid: "49206403"
 > [!WARNING]
 >  從 Visual Studio 2013 Update 3 開始，這個工作有新的簽章，可讓您指定檔案的目標架構版本。 我們鼓勵您儘可能地使用新的簽章，因為只有當目標架構是 .NET 4.5 或更高版本時，MSBuild 程序才會使用 SHA-256 雜湊。 如果目標架構是 .NET 4.0 或更低版本，將不會使用 SHA-256 雜湊。  
   
-|參數|描述|  
+|參數|說明|  
 |---------------|-----------------|  
 |`CertificateThumbprint`|必要的 `String` 參數。<br /><br /> 指定簽署要使用的憑證。 此憑證必須位於目前使用者的個人存放區。|  
 |`SigningTarget`|必要的 <xref:Microsoft.Build.Framework.ITaskItem> 參數。<br /><br /> 指定要使用憑證簽署的檔案。|  
@@ -76,7 +71,7 @@ ms.locfileid: "49206403"
 ```  
   
 > [!NOTE]
->  憑證指紋是憑證的 SHA-1 雜湊。 如需詳細資訊，請參閱[取得受信任的根 CA 憑證的 SHA-1 雜湊](http://msdn.microsoft.com/en-us/dd641990-9a88-4228-a245-017797131a87)。  
+>  憑證指紋是憑證的 SHA-1 雜湊。 如需詳細資訊，請參閱[取得受信任的根 CA 憑證的 SHA-1 雜湊](http://msdn.microsoft.com/dd641990-9a88-4228-a245-017797131a87)。  
   
 ## <a name="example"></a>範例  
  下列範例使用 `Exec` 工作來簽署 `FilesToSign` 項目集合中指定的檔案，並使用 `Certificate` 屬性所指定的憑證。 您可以使用這個在建置程序期間簽署 Windows 安裝程式檔案。  
@@ -99,9 +94,6 @@ ms.locfileid: "49206403"
 </Project>  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [工作參考](../msbuild/msbuild-task-reference.md)   
  [工作](../msbuild/msbuild-tasks.md)
-
-
-

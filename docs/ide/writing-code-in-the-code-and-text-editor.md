@@ -8,15 +8,15 @@ helpviewer_keywords:
 - code editor [Visual Studio]
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e92749c7e18913685fdedac3a9404ace0705ac3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 993b3156084f0f780da168bcafd406012e8cd704
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53891744"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55022829"
 ---
 # <a name="features-of-the-code-editor"></a>程式碼編輯器的功能
 

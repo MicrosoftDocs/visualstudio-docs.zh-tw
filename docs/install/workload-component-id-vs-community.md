@@ -5,7 +5,7 @@ description: 使用工作負載和元件識別碼透過命令列安裝 Visual St
 keywords: ''
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.date: 11/13/2018
 ms.topic: reference
 helpviewer_keywords:
@@ -17,12 +17,12 @@ ms.prod: visual-studio-dev15
 ms.assetid: 58494fc3-12de-4761-bd4a-74b54f72bfb3
 ms.workload:
 - multiple
-ms.openlocfilehash: 0c08a78d49a637b37570a0b77063bf307e97cba2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a6caf731b9462bf05eea4e827bb281a38df89b2f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53990892"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54985103"
 ---
 # <a name="visual-studio-community-2017-component-directory"></a>Visual Studio Community 2017 元件目錄
 
@@ -713,7 +713,7 @@ Microsoft.VisualStudio.Web.Mvc4.ComponentGroup | ASP.NET MVC 4 | 15.6.27406.0 | 
 
 **識別碼：** Microsoft.VisualStudio.Workload.Node
 
-**描述：** 使用非同步事件驅動的 JavaScript 執行階段 Node.js 來建置可調整網路應用程式。 
+**描述：** 使用非同步事件驅動的 JavaScript 執行階段 Node.js 來建置可調整網路應用程式。
 
 ### <a name="components-included-by-this-workload"></a>此工作負載所包含的元件
 

@@ -14,13 +14,13 @@ ms.author: kehavens
 ms.workload:
 - multiple
 author: kendrahavens
-manager: douge
-ms.openlocfilehash: 6f4d93f81cb653cda5af7a4b75affef4a845790f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 8ce8969ecb668d30f87753412dfd53887d050f4c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53910425"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55043566"
 ---
 # <a name="visual-studio-test-explorer-faq"></a>Visual Studio 測試總管常見問題集
 

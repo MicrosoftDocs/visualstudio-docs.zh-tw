@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 9d70eebb-bdee-4b42-8e7e-7a07e199bdf7
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6397944a39a0424211c57ddfe1ad045fce730ec3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9878c3aa3f7ca7ae2a1606e3dd455731c0d9876b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53911659"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54917753"
 ---
 # <a name="how-to-specify-a-publish-page-for-a-clickonce-application"></a>HOW TO：指定 ClickOnce 應用程式的發佈頁面
 發佈時[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式中，預設 Web 網頁 (publish.htm) 會產生並發佈以及應用程式。 此頁面包含的應用程式、 安裝應用程式和/或任何必要條件，連結和說明主題描述的連結名稱[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]。 **發行頁**專案的屬性可讓您指定網頁的名稱您[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式。  
@@ -59,5 +59,5 @@ ms.locfileid: "53911659"
   
 ## <a name="see-also"></a>另請參閱  
  [發佈 ClickOnce 應用程式](../deployment/publishing-clickonce-applications.md)   
- [如何：使用 [發佈精靈] 發佈 ClickOnce 應用程式](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)   
+ [如何：使用 [發行精靈] 發行 ClickOnce 應用程式](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)   
  [如何：自訂 ClickOnce 預設網頁](../deployment/how-to-customize-the-default-web-page-for-a-clickonce-application.md)

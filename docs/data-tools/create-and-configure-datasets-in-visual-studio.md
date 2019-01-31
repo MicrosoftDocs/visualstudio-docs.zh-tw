@@ -9,15 +9,15 @@ helpviewer_keywords:
 - datasets, configuring
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 3cde629114c56f80f0b70e7ef6641bffa7551577
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 197bc97874705f73bc3a9da176409679601dcabd
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53829231"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55002544"
 ---
 # <a name="create-and-configure-datasets-in-visual-studio"></a>在 Visual Studio 中建立和設定資料集
 

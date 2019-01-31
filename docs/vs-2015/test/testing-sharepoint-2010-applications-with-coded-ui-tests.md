@@ -1,24 +1,19 @@
 ---
 title: 使用自動程式化 UI 測試來測試 SharePoint 2010 應用程式 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 ms.assetid: 51b53778-469c-4cc9-854c-4e4992d6389b
 caps.latest.revision: 32
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: e450cd333c01e4e2e557013ef106337fe5a80a71
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 96a3a9fc38d82a2eaeb1adfbcfdd59f9ae503275
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49937274"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54775006"
 ---
 # <a name="testing-sharepoint-2010-applications-with-coded-ui-tests"></a>使用自動程式化 UI 測試來測試 SharePoint 2010 應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,7 +53,7 @@ ms.locfileid: "49937274"
 > [!WARNING]
 >  若在任何 Excel 儲存格中輸入文字，後面接著方向鍵動作，則這類動作無法正確錄製。 使用滑鼠選取儲存格。  
   
- 如果您錄製空儲存格上的動作，則必須按兩下儲存格然後執行一組文字作業，藉此修改程式碼。 由於在儲存格中按一下，再接著任何鍵盤動作都會啟動儲存格內的 `textarea` ，因此必須這樣做。 僅錄製空儲存格上的 `setvalue` 會搜尋 `editbox` ，但是在按下儲存格之前它並不存在。 例如:   
+ 如果您錄製空儲存格上的動作，則必須按兩下儲存格然後執行一組文字作業，藉此修改程式碼。 由於在儲存格中按一下，再接著任何鍵盤動作都會啟動儲存格內的 `textarea` ，因此必須這樣做。 僅錄製空儲存格上的 `setvalue` 會搜尋 `editbox` ，但是在按下儲存格之前它並不存在。 例如：  
   
 ```csharp  
 Mouse.DoubliClick(uiItemCell,new Point(31,14));  
@@ -148,13 +143,10 @@ uiGridKeyboardInputEdit.Text=value;
 ### <a name="forum"></a>論壇  
  [Visual Studio ALM + Team Foundation Server 部落格 (英文)](http://go.microsoft.com/fwlink/?LinkID=254496)  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [使用使用者介面自動化來測試您的程式碼](../test/use-ui-automation-to-test-your-code.md)   
  [對 SharePoint 2010 和 2013 應用程式執行 Web 效能和負載測試](http://msdn.microsoft.com/library/20c2e469-0e4e-4296-a739-c0e8fff36e54)   
  [建立 SharePoint 方案](http://msdn.microsoft.com/library/4bfb1e59-97c9-4594-93f8-3068b4eb9631)   
  [驗證及偵錯 SharePoint 程式碼](http://msdn.microsoft.com/library/b5f3bce2-6a51-41b1-a292-9e384bae420c)   
  [建置和偵錯 SharePoint 方案](http://msdn.microsoft.com/library/c9e7c9ab-4eb3-40cd-a9b9-6c2a896f70ae)   
  [剖析 SharePoint 應用程式的效能](http://msdn.microsoft.com/library/61ae02e7-3f37-4230-bae1-54a498c2fae8)
-
-
-

@@ -9,15 +9,15 @@ helpviewer_keywords:
 - Call Hierarchy
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e1ca479a335cc46e199a107ec38d937dc5774d2f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 77142ff9f2923ba21507327ad3f6f487b4f895ae
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53915691"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54960889"
 ---
 # <a name="view-call-hierarchy"></a>檢視呼叫階層
 

@@ -11,15 +11,15 @@ helpviewer_keywords:
 - custom controls [Visual Studio]
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 79d39aa23e752ee0ce6f95b6a6d8c419dbd51d9a
-ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
+ms.openlocfilehash: feddaf034394e7f27411562d85631b66de3b66e3
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/14/2019
-ms.locfileid: "54269991"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55012608"
 ---
 # <a name="toolbox"></a>工具箱
 

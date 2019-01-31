@@ -30,15 +30,15 @@ helpviewer_keywords:
 ms.assetid: 43a77fa8-37d0-4c98-a334-0134dbca4ece
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f31fa49916bf9b6d13865cd5d427670ceb33cb0
-ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
+ms.openlocfilehash: b6a43e42f68b93c358ed5808a6cffc9570fcbef9
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54204414"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54918105"
 ---
 # <a name="manage-exceptions-with-the-debugger-in-visual-studio"></a>使用 Visual Studio 中偵錯工具管理例外狀況
 

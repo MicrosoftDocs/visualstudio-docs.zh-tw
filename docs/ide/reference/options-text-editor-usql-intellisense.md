@@ -8,15 +8,15 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.HQL.IntelliSense
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 163be3ef80a103c2d9a398a443fd562d7aa07d8f
-ms.sourcegitcommit: d0b02affd24e66efed924c197824f35f823e3240
+ms.openlocfilehash: 1ff2c1e69081e6ad54abd6ba17d228aed0f0217a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/21/2019
-ms.locfileid: "54418035"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55042682"
 ---
 # <a name="options-text-editor-u-sql-intellisense"></a>選項、文字編輯器、U-SQL、IntelliSense
 

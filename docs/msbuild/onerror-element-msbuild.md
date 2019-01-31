@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 765767d3-ecb7-4cd9-ba1e-d9468964dddc
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 43e76a9ffece66a6330b634bb982ec14b10b803c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e5a7ecc4c91dcb39d090c00b7b2ed37bd6bb906c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53924549"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55011893"
 ---
 # <a name="onerror-element-msbuild"></a>OnError 元素 (MSBuild)
 如果失敗工作的 `ContinueOnError` 屬性是 `false`，則會執行一或多個目標。  

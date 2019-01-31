@@ -12,15 +12,15 @@ helpviewer_keywords:
 - use the D drive
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ce04592b6de6be16047baf3736e020c2ba71536a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 522b27093c97101df66aca2e5b4d969bcdaa3bc5
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53837611"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55003221"
 ---
 # <a name="select-the-installation-locations-in-visual-studio-2017"></a>在 Visual Studio 2017 中選取安裝位置
 

@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: e2a0a8ff-dae7-40a8-b774-b88aa5235183
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 24f44545ebc591a8e3b1a8359e0d7db8dddbb5d5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 832fb93788ebd0b1f7fbcefdf25646ad011a474d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53925690"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54985652"
 ---
 # <a name="how-to-create-and-remove-project-dependencies"></a>HOW TO：建立及移除專案相依性
 

@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: d71a4cc1-d352-4164-8538-3f9fa070a331
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c32eadc67d0b36440d30f8fee75a5444a31eb60
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5b9f82d9b19d1a256a9fb3e8fa8671025ee267ef
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53874455"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54981489"
 ---
 # <a name="how-to-use-the-keyboard-exclusively"></a>HOW TO：以獨佔模式使用鍵盤
 

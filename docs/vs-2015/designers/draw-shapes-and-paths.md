@@ -1,25 +1,20 @@
 ---
 title: 繪製圖形與路徑 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: d5378c59-e2e5-49f0-91f1-aa82d984a33c
 caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 0f59ecbdf9e69093d5c445cdb6d4780eb3b6f86e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: eae8f49efbff2fd2219d0180db3a542f553a8027
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49188184"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54775347"
 ---
 # <a name="draw-shapes-and-paths"></a>繪製圖案與路徑
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -104,7 +99,7 @@ ms.locfileid: "49188184"
 ##  <a name="Convert"></a> 將圖形轉換成路徑  
  若要以修改路徑的相同方式來修改圖形，請將圖形轉換為路徑。  
   
- **觀看短片︰**![設定已安裝的功能](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Working with paths: Convert a shape to a path](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=147) (使用路徑：將圖形轉換成路徑)。  
+ **觀看短片：**![設定已安裝的功能](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [使用路徑：將圖形轉換成路徑](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=147)。  
   
 ##  <a name="Combine"></a> 合併路徑  
  您可以將路徑與圖形合併為單一路徑。  
@@ -117,7 +112,7 @@ ms.locfileid: "49188184"
 |![](../designers/media/b1-2.png "B1_2")|聯集|![](../designers/media/b1-5.png "B1_5")|排除重疊|  
 |![](../designers/media/b1-3.png "B1_3")|分割|![](../designers/media/b1-6.png "B1_6")|差集|  
   
- **觀看短片︰**![設定已安裝的功能](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Working with paths: Combine paths](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=195) (使用路徑：合併路徑)。  
+ **觀看短片：**![設定已安裝的功能](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [使用路徑：合併路徑](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=195)。  
   
 ##  <a name="Compound"></a> 建立複合路徑  
  當您建立複合路徑時，這些路徑的任何交集部分都會從結果中減去，而所產生的路徑會採用最底層路徑的視覺屬性。  
@@ -126,17 +121,14 @@ ms.locfileid: "49188184"
   
  ![](../designers/media/2157a8aa-d9a7-4de4-8de5-b10d28f08a84.png "2157a8aa-d9a7-4de4-8de5-b10d28f08a84")  
   
- **觀看短片︰**![設定已安裝的功能](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Working with paths: Create a compound path](https://www.youtube.com/watch?v=Io5bC0-nH6Q) (使用路徑：建立複合路徑)。  
+ **觀看短片：**![設定已安裝的功能](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [使用路徑：建立複合路徑](https://www.youtube.com/watch?v=Io5bC0-nH6Q)。  
   
 ##  <a name="Clipping"></a> 建立裁剪路徑  
  裁剪路徑是套用至其他物件的路徑或圖形，隱藏了所遮蔽物件落於裁剪路徑外面的部分。  
   
  ![](../designers/media/22471e98-a841-4f39-a3ef-36090cf5a625.png "22471e98-a841-4f39-a3ef-36090cf5a625")  
   
- **觀看短片︰**![設定已安裝的功能](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Working with paths: Create a clipping path](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=232) (使用路徑：建立裁剪路徑)。  
+ **觀看短片：**![設定已安裝的功能](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [使用路徑：建立裁剪路徑](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=232)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [使用 Blend for Visual Studio 建立 UI](../designers/creating-a-ui-by-using-blend-for-visual-studio.md)
-
-
-

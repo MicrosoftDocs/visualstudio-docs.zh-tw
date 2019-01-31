@@ -1,14 +1,9 @@
 ---
-title: 如何：忽略工作中的錯誤 | Microsoft Docs
-ms.custom: ''
+title: HOW TO：忽略工作中的錯誤 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, ignoring errors
 - ContinueOnError attribute [MSBuild]
@@ -16,15 +11,15 @@ ms.assetid: e2f1ca4f-787b-44bd-bc64-81a036025e96
 caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 72f638a17fd6d49157f13d54a6ec1deba0e2bf27
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 4bac63523829c47b17821ff5905687bd76bbc57e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49891189"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54777027"
 ---
-# <a name="how-to-ignore-errors-in-tasks"></a>如何：忽略工作中的錯誤
+# <a name="how-to-ignore-errors-in-tasks"></a>HOW TO：忽略工作中的錯誤
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
@@ -47,7 +42,7 @@ ms.locfileid: "49891189"
   
 #### <a name="to-ignore-an-error-in-a-task"></a>忽略工作中的錯誤  
   
--   使用工作的 `ContinueOnError` 屬性。 例如:   
+-   使用工作的 `ContinueOnError` 屬性。 例如：  
   
      `<Delete Files="@(Files)" ContinueOnError="WarnAndContinue"/>`  
   
@@ -70,9 +65,7 @@ ms.locfileid: "49891189"
 </Project>  
 ```  
   
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 [MSBuild](msbuild.md)  
  [工作參考](../msbuild/msbuild-task-reference.md)   
  [工作](../msbuild/msbuild-tasks.md)
-
-
