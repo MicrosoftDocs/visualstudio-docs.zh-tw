@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 65881c5a-d251-4a36-ad0d-73d088436092
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 56ffdcaf2a78933d52fe3a19e2c34deb5c303401
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 822e846188b70994732473e66fe5bad3b5677164
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53952637"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55005744"
 ---
 # <a name="how-to-change-between-member-notation-and-association-notation-in-class-designer"></a>HOW TO：在 [類別設計工具] 中，在成員標記法和關聯標記法之間變更
 

@@ -1,14 +1,9 @@
 ---
 title: CvCreateDefaultMarkerSeriesOfDefaultProvider 函式 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 f1_keywords:
 - cvmarkers/CvCreateDefaultMarkerSeriesOfDefaultProvider
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 24eb80f8-8fca-4c47-93b5-bb1eb8ffdffd
 caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 999814dd92347e5c6ec44a9d3e2bb07d237f5b66
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: fb0ab16dcd7e42a496317f4e7589bafdbdaf83dc
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51804465"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54770881"
 ---
 # <a name="cvcreatedefaultmarkerseriesofdefaultprovider-function"></a>CvCreateDefaultMarkerSeriesOfDefaultProvider 函式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,8 +47,5 @@ HRESULT CvCreateDefaultMarkerSeriesOfDefaultProvider(
 ## <a name="requirements"></a>需求  
  **標頭︰** cvmarkers.h  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [C++ 程式庫參考](../profiling/cpp-library-reference.md)
-
-
-

@@ -2,21 +2,18 @@
 title: 同步處理 XCode 和 Visual Studio 2015 之間的變更 |Microsoft Docs
 titleSuffix: ''
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: c71a4d7c-120e-4559-a114-3a99c4b860a9
 caps.latest.revision: 10
 author: corob-msft
 ms.author: corob
-manager: ghogen
-ms.openlocfilehash: bd02f7b231956f10c0e8a816a93ee052f74cff66
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: bb7b5ebe398b66a8ae28d7734d64ce67c8735a73
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53050305"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54754910"
 ---
 # <a name="sync-changes-between-xcode-and-visual-studio"></a>同步處理 XCode 和 Visual Studio 之間的變更
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

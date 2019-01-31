@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 952d579d-6911-413e-b3e5-54e7e797e70c
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d6f50827e81d9aecce4878df00f99e155edb04f
-ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
+ms.openlocfilehash: 0d05987b23eca2d22472929a91fa1a140d7af10d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "54227287"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54969453"
 ---
 # <a name="how-to-flag-and-unflag-threads-c-visual-basic-c"></a>HOW TO：旗標，並將執行緒取消標幟 (C#，Visual Basic、 c + +)
 

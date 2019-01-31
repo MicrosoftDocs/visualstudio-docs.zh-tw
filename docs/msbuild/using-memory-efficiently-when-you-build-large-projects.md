@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 853a21ed-69f7-4817-af00-57f73e2c74b5
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 958c4c41aea3a147415d799db52c7295234d9488
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5d18f78a0ceec7b79388f53f83909e4dcbcf3b86
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53858340"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54923529"
 ---
 # <a name="use-memory-efficiently-when-you-build-large-projects"></a>在建置大型專案時有效使用記憶體
 大型專案通常會包含許多子專案和其他相依性，這可能會在建置時耗用大量系統記憶體。 可用系統記憶體減少時，系統效能也可能會降低。 舊版 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 專案會保留在記憶體中。 3.5 版中移除了舊版專案，但在快取中保留了建置結果以供日後擷取之用。  

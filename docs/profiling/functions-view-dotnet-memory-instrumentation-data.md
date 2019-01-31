@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: cd45b379-394b-4b71-828c-92cd89e46ae0
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: b578fd091b0b7473eb9e09e8c1eb13510c9e1b84
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.openlocfilehash: b00b9f8b455e12a3a851e82b40ef614ed44146f6
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "53962330"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55030089"
 ---
 # <a name="functions-view---net-memory-instrumentation-data"></a>函式檢視 - .NET 記憶體檢測資料
 使用檢測方法所收集之 .NET 記憶體配置分析資料的 [函式] 檢視，會列出已在執行分析期間配置記憶體的函式。 函式資料列會報告配置的大小和數量，以及函式的計時資料。  

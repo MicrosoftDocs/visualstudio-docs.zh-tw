@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 9d1aab27-9ac0-4096-8e12-c47503acb2e9
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 59afcb8db6fbfa8aa2e6891b954b486eb4ec197e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8c83c0f09fbf7e6d595cbdd3e40c6add2cf7e8ae
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53830673"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54927550"
 ---
 # <a name="menu-commands"></a>功能表命令
 在本節中的 [說明] 主題會列出可以使用 Spy + + 功能表上的命令。  

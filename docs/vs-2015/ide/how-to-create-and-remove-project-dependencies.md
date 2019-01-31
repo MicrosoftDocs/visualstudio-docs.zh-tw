@@ -1,14 +1,9 @@
 ---
-title: 如何：建立和移除專案相依性 | Microsoft Docs
-ms.custom: ''
+title: HOW TO：建立和移除專案相依性 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - VS.ProjectDependenciesDlg
 helpviewer_keywords:
@@ -22,15 +17,15 @@ ms.assetid: e2a0a8ff-dae7-40a8-b774-b88aa5235183
 caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: cc63ef7159b0f11b3d170e0b4123f337ba413d65
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: e4ce804664f78bd4ec329f7e4e66008053291c77
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49823836"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54799768"
 ---
-# <a name="how-to-create-and-remove-project-dependencies"></a>如何：建立和移除專案相依性
+# <a name="how-to-create-and-remove-project-dependencies"></a>HOW TO：建立及移除專案相依性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 在建置包含多個專案的方案時，您可能需要先建置特定專案，以產生其他專案使用的程式碼。 當某個專案使用其他專案所產生的可執行程式碼時，產生程式碼的專案和使用程式碼的專案之間即具有專案相依性。 您可以在 [專案相依性] 對話方塊中定義這類相依性關聯。  
@@ -67,11 +62,8 @@ ms.locfileid: "49823836"
   
 4.  如果任何其他專案不再與此專案具有相依性，請在 [相依於] 欄位中，清除這些專案旁的核取方塊。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [在 Visual Studio 中建置和清除專案與方案](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)   
  [編譯和建置](../ide/compiling-and-building-in-visual-studio.md)   
  [了解組建組態](../ide/understanding-build-configurations.md)   
- [NIB 如何：修改專案屬性和組態設定](http://msdn.microsoft.com/en-us/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67)
-
-
-
+ [(NIB) 如何︰修改專案屬性和組態設定](http://msdn.microsoft.com/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67)

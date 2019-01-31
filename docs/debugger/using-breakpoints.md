@@ -31,15 +31,15 @@ helpviewer_keywords:
 ms.assetid: 020b2e97-3b3e-4b2c-872d-b5c6025e120e
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 37e3ec71123cd03c8b5b431d8b8dd6042a610bad
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5d2d60113e3020e92d44cb45727ac1d422745f03
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53934553"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54943087"
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>使用 Visual Studio 偵錯工具中的中斷點
 中斷點是在您的開發人員工具箱中最重要的偵錯技術之一。 每當您要暫停偵錯工具執行，您可以設定中斷點。 例如，您可能要查看程式碼變數的狀態，或查看呼叫堆疊，在特定中斷點。 如果這是您第一次嘗試偵錯程式碼，您可能需要先閱讀[適用於徹底初學者偵錯](../debugger/debugging-absolute-beginners.md)，再瀏覽本文。

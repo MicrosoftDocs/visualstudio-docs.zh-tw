@@ -1,25 +1,20 @@
 ---
 title: 參數節點 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: da54db0b-3a3d-48dc-858c-7ac43aa04b13
 caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: bb15b19ebdef04facdb66d4b97042bb47e4cb5fa
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 110f380f7450d611de5786fb865bdee8e64195f6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49276286"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54764167"
 ---
 # <a name="parameter-nodes"></a>參數節點
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,6 +34,3 @@ ms.locfileid: "49276286"
 |**材質光澤度**|描述反射反白顯示項目之濃度的純量值。<br /><br /> 光澤度越大，反射亮部會變得越強烈和深遠。<br /><br /> **輸出：**<br /><br /> `Output`: `float`<br /> 一個指數項，描述目前像素上的反射亮部濃度。|**存取權**<br /> [公用] 允許從模型編輯器設定此屬性，否則為 [私用]。<br /><br /> **值**<br /> 指數，定義目前像素上反射亮部的濃度。|  
 |**標準化時間**|秒數，標準化為範圍 [0, 1]，如此，當時間達到 1 時，就會重設為 0。<br /><br /> 您可以將這個當做著色器計算中的參數，如此，舉例來說，就能以動畫方式顯示材質座標、色彩值或其他屬性。<br /><br /> **輸出：**<br /><br /> `Output`: `float`<br /> 標準化時間，以秒為單位。|無|  
 |**時間**|時間 (秒)。<br /><br /> 您可以將這個當做著色器計算中的參數，如此，舉例來說，就能以動畫方式顯示材質座標、色彩值或其他屬性。<br /><br /> **輸出：**<br /><br /> `Output`: `float`<br /> 時間，以秒為單位。|無|
-
-
-

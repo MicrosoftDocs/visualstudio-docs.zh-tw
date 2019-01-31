@@ -10,15 +10,15 @@ helpviewer_keywords:
 - permissions
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 14d82825d9f1db2cd95222f4722d19b2f9347186
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 09fe84a9cd48f85ffac1f98b9300e1bdbad96ade
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53833587"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55012192"
 ---
 # <a name="user-permissions-and-visual-studio"></a>使用者權限和 Visual Studio
 

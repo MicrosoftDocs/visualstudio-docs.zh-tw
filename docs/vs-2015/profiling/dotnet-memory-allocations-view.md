@@ -1,14 +1,9 @@
 ---
 title: .NET 記憶體配置檢視 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.view.allocation
 helpviewer_keywords:
@@ -20,13 +15,13 @@ ms.assetid: 01eb876e-c413-4516-977b-4f896929e8a6
 caps.latest.revision: 32
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 73a2be1314b01a0a7de73f71794bc94b18f0e851
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 563826c63d851e412b7c74a99f5b8a9ad1c1556e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51760350"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54798803"
 ---
 # <a name="net-memory-allocations-view"></a>.NET 記憶體配置檢視
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +41,7 @@ ms.locfileid: "51760350"
   
 -   若要顯示最常使用的路徑，請以滑鼠右鍵按一下類型或函式，然後按一下 [展開最忙碌路徑]。  
   
-|資料行|描述|  
+|資料行|說明|  
 |------------|-----------------|  
 |**名稱**|已配置類型或函式的名稱。|  
 |**處理序 ID**|分析執行的處理序 ID (PID)。|  
@@ -64,6 +59,3 @@ ms.locfileid: "51760350"
 |**內含位元組 %**|-   針對函式，分析回合中配置的所有記憶體中，屬於函式父類型之內含配置的百分比。<br />-   針對類型，針對類型執行個體所配置的分析回合中配置的所有記憶體百分比。|  
 |**專有位元組**|-   針對函式，父類型之物件的函式所配置的記憶體位元組數目。 此數目未包含其子函式所配置的記憶體。<br />-   針對類型，分析回合中針對類型執行個體所配置的位元組總數。|  
 |**專有位元組 %**|-   針對函式，分析回合中配置的所有記憶體中，屬於函式父類型之專有配置的百分比。<br />-   針對類型，針對類型執行個體所配置的分析回合中配置的所有記憶體百分比。|
-
-
-

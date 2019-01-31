@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: d036090a-1651-454d-9130-b798f58ba053
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 40464f1c9628fca9a7cd3a0d911c32efef9666a3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 24797dc18a247c050225b3bcd8c8215b3b266464
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53959140"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54960424"
 ---
 # <a name="idiasymbolgetframepointerpresent"></a>IDiaSymbol::get_framePointerPresent
 擷取指定的框架指標是否存在的旗標。 使用時機[SymTagEnum 列舉](../../debugger/debug-interface-access/symtagenum.md)設定為`SymTagFunction`。  

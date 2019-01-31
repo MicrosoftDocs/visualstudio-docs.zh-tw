@@ -1,14 +1,9 @@
 ---
 title: ASP.NET Web 應用程式的命令列分析 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - profiling ASP.NET applications
 - profling tools,ASP.NET applications
@@ -16,13 +11,13 @@ ms.assetid: 897c00d5-5767-433b-a960-4a29c6023ede
 caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: bf3727447d17d941f477dfb71373a8c90e518dd0
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+manager: jillfra
+ms.openlocfilehash: bdd774b073396789bd9bb23949b5de68f40067a7
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "53861691"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54782316"
 ---
 # <a name="command-line-profiling-of-aspnet-web-applications"></a>ASP.NET Web 應用程式的命令列分析
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,6 +44,3 @@ ms.locfileid: "53861691"
 |----------|---------------------|  
 |**分析獨立 (用戶端) 應用程式**|-   [分析獨立應用程式](../profiling/command-line-profiling-of-stand-alone-applications.md)|  
 |**分析服務**|-   [分析服務](../profiling/command-line-profiling-of-services.md)|
-
-
-

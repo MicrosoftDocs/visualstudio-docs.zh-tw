@@ -27,15 +27,15 @@ helpviewer_keywords:
 ms.assetid: ad3820b1-0d94-4807-a74c-c3467ed973a2
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: b5eaddd1170fa1f6f076e79de2038e0089fd4f39
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 77424baa8b359846026dfa57c1bcd57b2e4cbcda
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53950234"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55039367"
 ---
 # <a name="options-text-editor-xaml-formatting"></a>格式、XAML、文字編輯器、選項
 

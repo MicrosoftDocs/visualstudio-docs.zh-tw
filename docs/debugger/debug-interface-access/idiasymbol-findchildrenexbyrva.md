@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: cbc57c6c-7d64-4469-a114-1dd6671e5ec5
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 83711ca61a1bd9a27a7ebed2262bd5ca3f3487e1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4aa1c1d10d9f1675811c63a78b017fe3dc3f537e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53903061"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54950782"
 ---
 # <a name="idiasymbolfindchildrenexbyrva"></a>IDiaSymbol::findChildrenExByRVA
 擷取在指定的相對虛擬位址 (RVA) 的有效符號的子系。  

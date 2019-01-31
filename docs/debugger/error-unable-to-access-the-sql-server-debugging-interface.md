@@ -12,15 +12,15 @@ dev_langs:
 - SQL
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5cc911368544801e03ec9ac272f91831a652c051
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 950af1d92067d987506e37cd5f87d68f3a9c9f38
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53988510"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54916516"
 ---
 # <a name="error-unable-to-access-the-sql-server-debugging-interface"></a>錯誤：無法存取 SQL Server 偵錯介面
 當您嘗試在未啟用 SQL 偵錯的電腦上進行 SQL 偵錯時，便會出現這則訊息。  

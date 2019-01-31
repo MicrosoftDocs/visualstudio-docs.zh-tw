@@ -14,16 +14,16 @@ helpviewer_keywords:
 ms.assetid: 9748815e-3556-49e8-86b1-c6aa593c6163
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 803de097d05f472e7a5b585a8b58395c45a924ed
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8f5afe5032f062205ada6c507c7d03d50c9d4209
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53914986"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55008419"
 ---
 # <a name="bind-controls-to-pictures-from-a-database"></a>從資料庫將控制項繫結至圖片
 

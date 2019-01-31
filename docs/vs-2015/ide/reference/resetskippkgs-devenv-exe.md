@@ -1,14 +1,9 @@
 ---
 title: -ResetSkipPkgs (devenv.exe) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 helpviewer_keywords:
 - /ResetSkipPkgs Devenv switch
 - Devenv, /ResetSkipPkgs switch
@@ -17,13 +12,13 @@ ms.assetid: 7ece64f9-cfa4-4b34-b0d9-1c338b9557b3
 caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 2345c675f55be5c01ea65f5266d4b73bff30feed
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 59bde318995ed8b66637a2220ae1817db2a1e800
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49190357"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54834674"
 ---
 # <a name="resetskippkgs-devenvexe"></a>/ResetSkipPkgs (devenv.exe)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -47,8 +42,5 @@ Devenv /ResetSkipPkgs
 Devenv.exe /ResetSkipPkgs  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Devenv 命令列參數](../../ide/reference/devenv-command-line-switches.md)
-
-
-

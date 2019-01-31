@@ -12,15 +12,15 @@ helpviewer_keywords:
 - debugging, JavaScript
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d97b7d8a4143ba48e0b5c411539deeb85a0cd70f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d7e654e5a3a4bb5444ab020bee8d933bcbdc6636
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53840378"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55024912"
 ---
 # <a name="debug-javascript-using-the-console-in-visual-studio"></a>在 Visual Studio 中使用主控台偵錯 JavaScript
   

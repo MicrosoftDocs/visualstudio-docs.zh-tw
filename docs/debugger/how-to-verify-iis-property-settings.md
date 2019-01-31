@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 9efc50bf-02fb-4750-9b3e-f03c38f10d8b
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b2bfc72fbae9383b54a31f2252ab60b101903a4e
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.openlocfilehash: a5941dec4b21e044873a2ae95ae7682867b4bd67
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "53926877"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55037014"
 ---
 # <a name="how-to-verify-iis-property-settings"></a>HOW TO：確認 IIS 屬性設定
 

@@ -7,15 +7,15 @@ dev_langs:
 ms.assetid: 1ec8b8ea-e423-4327-8dc0-a390e6e3ffb0
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 699cabda0fc6cbdfdf61ec14b5919ffffd62819e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: eaa3df0b08077bf0e8f2d3536441fc8071690347
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53867972"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55069248"
 ---
 # <a name="idiasymbolgetnumberofregisterindices"></a>IDiaSymbol::get_numberOfRegisterIndices
 擷取註冊索引的數目。  

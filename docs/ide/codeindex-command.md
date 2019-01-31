@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: b79568d4-6a64-4ca9-a1ee-3e57f92a9c5c
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 03a7f56f7b295cbfaf8eda437d6071e83b79ca44
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f3d9eb44a53dba0ca99deef9d390b37a4d5718b4
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53898251"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55005159"
 ---
 # <a name="codeindex-command"></a>CodeIndex 命令
 

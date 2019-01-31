@@ -14,16 +14,16 @@ helpviewer_keywords:
 ms.assetid: 78bf038b-9296-4fbf-b0e8-d881d1aff0df
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 0f4c77e4d2f8d0c75f71942cf61213210bc680ba
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6d4e7d85892974b1ef2d4600525b37c45c7ac8fa
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53944823"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54946174"
 ---
 # <a name="pass-data-between-forms"></a>在表單之間傳遞資料
 

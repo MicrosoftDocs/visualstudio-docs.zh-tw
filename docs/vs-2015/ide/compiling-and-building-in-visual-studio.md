@@ -1,13 +1,9 @@
 ---
 title: 編譯和建置
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - builds [Visual Studio], about building in Visual Studio
 - custom build steps, types of builds
@@ -15,13 +11,13 @@ ms.assetid: c7958821-285f-4e28-9e7a-b5d8b40336a1
 caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 3d94289baf5cd7b3e4724f205dbfcb5e0ff227eb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 04d67f90006d4e11b2cbe16f6dacd3ba02cde7a6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53931053"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54779445"
 ---
 # <a name="compiling-and-building-in-visual-studio"></a>在 Visual Studio 中編譯與建置
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +36,7 @@ ms.locfileid: "53931053"
 |使用 Team Foundation Build|-  您可以自動化您的建置流程。 例如，您可以每晚或在每次簽入程式碼時建置一或多個專案。 您也可以在共用的組置伺服器上建置專案，而不是在開發電腦上建置。<br />- 您可以快速指定您想要建置的程式碼、想要執行的測試，和其他常見的選項。<br />- 您可以修改建置工作流程，並視需要建立建置活動執行深入自訂的工作。|[建置應用程式](http://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)|
 
 ## <a name="building-from-the-ide"></a>從 IDE 建置
- 當您建立專案時，會定義它的預設組建組態，並指派方案組建組態給它以提供組建的內容。 方案組態會定義如何建立和部署方案中的專案。 專案組態是一組專案屬性，它們對於平台和組建類型 (例如，版本 Win32) 而言是唯一的。 您可以編輯這些預設組態，且可以建立自己的組態。 如需詳細資訊，請參閱 <<c0> [ 專案設計工具簡介](http://msdn.microsoft.com/en-us/898dd854-c98d-430c-ba1b-a913ce3c73d7)和[NIB 如何：修改專案屬性和組態設定](http://msdn.microsoft.com/en-us/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67)。
+ 當您建立專案時，會定義它的預設組建組態，並指派方案組建組態給它以提供組建的內容。 方案組態會定義如何建立和部署方案中的專案。 專案組態是一組專案屬性，它們對於平台和組建類型 (例如，版本 Win32) 而言是唯一的。 您可以編輯這些預設組態，且可以建立自己的組態。 如需詳細資訊，請參閱 <<c0> [ 專案設計工具簡介](http://msdn.microsoft.com/898dd854-c98d-430c-ba1b-a913ce3c73d7)和[NIB 如何：修改專案屬性和組態設定](http://msdn.microsoft.com/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67)。
 
  您可以從 IDE 中執行下列其他工作︰
 

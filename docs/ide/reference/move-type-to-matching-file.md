@@ -5,18 +5,18 @@ ms.prod: visual-studio-dev15
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 793ae8f86bf4c4641a3170cde011a3912d0d38ef
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1cdb84af563afaf5b51d3c378d7a9e06d67a9e76
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53870543"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55039081"
 ---
 # <a name="move-a-type-to-a-matching-file-refactoring"></a>將類型移到對應的檔案重構
 

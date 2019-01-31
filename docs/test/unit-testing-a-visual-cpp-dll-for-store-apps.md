@@ -4,16 +4,16 @@ ms.date: 02/15/2018
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.author: mblome
-manager: douge
+manager: jillfra
 ms.workload:
 - uwp
 author: mikeblome
-ms.openlocfilehash: eea24b56d05f155b2b9cb0297aa58c34adac02cf
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b6ab809287bdcaac290328b81b5e9213758f5984
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53868770"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54986536"
 ---
 # <a name="how-to-test-a-visual-c-dll"></a>如何測試 Visual C++ DLL
 

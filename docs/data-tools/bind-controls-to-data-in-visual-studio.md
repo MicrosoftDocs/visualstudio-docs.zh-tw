@@ -10,16 +10,16 @@ helpviewer_keywords:
 ms.assetid: be8b6623-86a6-493e-ab7a-050de4661fd6
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: f6e40e5353fb33462459a6d4d4a97b34af800524
-ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
+ms.openlocfilehash: ff7c2db3fc1032e08a9e15f17ca6ae1af6d9373b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54154443"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54991628"
 ---
 # <a name="bind-controls-to-data-in-visual-studio"></a>將控制項繫結至 Visual Studio 中的資料
 

@@ -19,15 +19,15 @@ helpviewer_keywords:
 ms.assetid: 7c126f57-62ab-4d94-9805-632d696ba1f0
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d10c4804d4d53c22281c11d8afc464cf2ac3732
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b177ec2664014fa547908aa18e19f605a83a8282
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53861510"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54931878"
 ---
 # <a name="how-can-i-debug-windows-api-functions"></a>如何偵錯 Windows API 函式？
 如果要偵錯已載入 NT 符號的 Windows API 函式，必須進行下列步驟。  

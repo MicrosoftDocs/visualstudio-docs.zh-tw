@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 2fc78bfe-b339-4599-97f9-4cafd8a194d9
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9aab2251f8859cb8e6a5699ba3cd2d4828bd32a4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 03dc4a1c83b3056e4991da6cecbe6c3b7b97324e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53831202"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54958416"
 ---
 # <a name="find-in-files-command"></a>檔案中尋找命令
 在 [尋找和取代] 視窗中，您可以使用 [檔案中尋找] 索引標籤提供的選項子集，搜尋檔案。

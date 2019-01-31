@@ -1,13 +1,9 @@
 ---
 title: 多目標概觀 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - targeting .NET Framework version [Visual Studio]
 - versions [Visual Studio], targeting .NET Framework version
@@ -17,13 +13,13 @@ ms.assetid: b1702c33-0672-4ebc-b779-2b324d6ea880
 caps.latest.revision: 39
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: cf64514f1510a9d4d65930bfc22dc322569853c0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: fee905da1fbb973a9cb1a6c954b7d450511b4be1
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53886497"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54768876"
 ---
 # <a name="visual-studio-multi-targeting-overview"></a>Visual Studio 多目標概觀
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -75,7 +71,7 @@ ms.locfileid: "53886497"
 > [!NOTE]
 >  .NET Framework Client Profile 是 .NET Framework 的子集，提供一組有限的程式庫和功能。 如需 Client Profile 的詳細資訊，請參閱 [.NET Framework Client Profile](http://msdn.microsoft.com/library/f0219919-1f02-4588-8704-327a62fd91f1)。
 
- [加入參考] 對話方塊會停用與目標 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 版本無關的系統組件，如此一來就不會不慎將系統組件新增至專案。 (系統組件是包含在 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 版本中的 .dll 檔案)。無法解析屬於晚於目標版本之 Framework 版本的參考，也無法新增相依於這類參考的控制項。 如果您想要啟用這類參考，請將專案的 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 目標重設為包含參考的目標。  如需詳細資訊，請參閱[專案設計工具簡介](http://msdn.microsoft.com/en-us/898dd854-c98d-430c-ba1b-a913ce3c73d7)。
+ [加入參考] 對話方塊會停用與目標 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 版本無關的系統組件，如此一來就不會不慎將系統組件新增至專案。 (系統組件是包含在 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 版本中的 .dll 檔案)。無法解析屬於晚於目標版本之 Framework 版本的參考，也無法新增相依於這類參考的控制項。 如果您想要啟用這類參考，請將專案的 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 目標重設為包含參考的目標。  如需詳細資訊，請參閱[專案設計工具簡介](http://msdn.microsoft.com/898dd854-c98d-430c-ba1b-a913ce3c73d7)。
 
  如需組件參考的詳細資訊，請參閱[在設計階段時解析組件](../msbuild/resolving-assemblies-at-design-time.md)。
 

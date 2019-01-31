@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 1AF69C0E-0AC9-451B-845D-AE4EDBCEA65C
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 55509f49aff21d5c4e4319a35de20b29a6bc3f75
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 781f6e45d900c1401431346abdcd26d1579a70ab
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53906399"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55021019"
 ---
 # <a name="update-a-network-based-installation-of-visual-studio-2017"></a>更新 Visual Studio 2017 的網路型安裝
 

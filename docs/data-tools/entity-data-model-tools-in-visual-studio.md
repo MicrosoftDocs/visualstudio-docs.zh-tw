@@ -5,16 +5,16 @@ ms.topic: conceptual
 ms.assetid: 1b06b573-84aa-4458-b3f5-e238df47bf45
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 556f82d99fd6ea811f4198dc7abffb3ab32d47fd
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0058d3e7106e7af3bf2b417a512b19ce87c52c57
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53821253"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55014636"
 ---
 # <a name="entity-framework-tools-in-visual-studio"></a>在 Visual Studio 中的 entity Framework 工具
 

@@ -10,15 +10,15 @@ f1_keywords:
 ms.assetid: 8a5b78aa-7b3d-476c-a47d-abfaff3fae7c
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c38aaed1c706cc8c5ddd9447fd30fadd5698133
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: baf973837a687bb102dd857adf97caf0e1b8e5ab
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53987127"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55001770"
 ---
 # <a name="da0008-few-samples-collected"></a>DA0008：只收集到少量樣本
 

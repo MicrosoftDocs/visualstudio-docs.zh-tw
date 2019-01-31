@@ -1,25 +1,20 @@
 ---
 title: 對市集應用程式中的 Visual C# 程式碼進行單元測試 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 ms.assetid: 23cb0d82-0451-464e-98ea-fa66e7010ead
 caps.latest.revision: 21
 author: alexhomer1
 ms.author: gewarren
-manager: robinr
-ms.openlocfilehash: ae41a5a646860526cbc5b3f6e3c04bfbf7612e2b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 6128ca2638f98600c9bfb17e8388cf0a663040a8
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49901550"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54766259"
 ---
 # <a name="unit-testing-visual-c-code-in-a-store-app"></a>對市集應用程式中的 Visual C# 程式碼進行單元測試
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -371,6 +366,3 @@ ms.locfileid: "49901550"
   
 > [!NOTE]
 >  若要將協助程式方法新增至測試類別，請不要將 `[TestMethod]` 屬性新增至方法。 [測試總管] 並未登錄要執行的方法。
-
-
-

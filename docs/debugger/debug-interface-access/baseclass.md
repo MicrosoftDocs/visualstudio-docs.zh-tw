@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 9375ca35-cb91-45f5-8903-7344ee4528e8
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ccd89628c0d44f4790d71cb27b3b00b3215b0c9d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: cacb36e37c9fb29102879f1e146cb5cf70283677
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53936863"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54960592"
 ---
 # <a name="baseclass"></a>BaseClass
 每個使用者定義型別 (UDT) 符號的基底類別由與子系`SymTagBaseClass`標記。 [Idiasymbol:: Get_type](../../debugger/debug-interface-access/idiasymbol-get-type.md)屬性為基礎的 UDT，包含的符號和基礎 UDT 的所有屬性都都可以做為這個 BaseClass 符號的一部分。  

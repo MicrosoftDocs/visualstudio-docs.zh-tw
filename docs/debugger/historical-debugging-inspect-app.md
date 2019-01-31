@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 629b5d93-39b2-430a-b8ba-d2a47fdf2584
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0022d94d8bb786340dba5d2d412bbbd46585e35e
-ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
+ms.openlocfilehash: 64cbebf3380e4450f889bee5e4e49ff3282917f5
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "54227691"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55024509"
 ---
 # <a name="inspect-your-app-with-intellitrace-historical-debugging-in-visual-studio-c-visual-basic-c"></a>檢查您的應用程式與 IntelliTrace 歷程偵錯在 Visual Studio 中 (C#，Visual Basic、 c + +)
 

@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: b21a0ebc-0ff6-4f49-8993-7d1ad3f8cac2
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a73ddb8781276fbd2c56ce58b9fde257e728f86d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 953761232c184c3f77dea089767bfcfbb4b2ff70
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53850774"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55002635"
 ---
 # <a name="clickonce-deployment-on-windows-vista"></a>Windows Vista 的 ClickOnce 部署
 

@@ -1,24 +1,19 @@
 ---
 title: 安裝協力廠商單元測試架構 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 ms.assetid: 47893b70-46f8-49dc-84bd-ec820178f683
 caps.latest.revision: 12
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 6798106eda43be42e3149160a797e6bf469f9d42
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 0901c16d4e467869768b3863a194ea524b5f9472
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49900900"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54787877"
 ---
 # <a name="install-third-party-unit-test-frameworks"></a>安裝協力廠商單元測試架構
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,8 +58,5 @@ Visual Studio 測試總管可以執行任何已針對總管開發配接器介面
   
 7. 在結果清單中選擇一個架構，以巡覽至該工具的 [Visual Studio 組件庫] 頁面。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [對程式碼進行單元測試](../test/unit-test-your-code.md)
-
-
-

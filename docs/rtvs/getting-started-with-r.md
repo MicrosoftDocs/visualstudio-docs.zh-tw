@@ -6,19 +6,19 @@ ms.prod: visual-studio-dev15
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: c156993bf2fe425368a2cfebcaca8ac18ea790f2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 83a4f4ea1add79ce0317ff5823066a0070a407c1
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53944622"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55024093"
 ---
 # <a name="get-started-with-r-tools-for-visual-studio"></a>Visual Studio R 工具使用者入門
 
-一旦安裝了 Visual Studio R 工具 (RTVS) (請參閱[安裝](installing-r-tools-for-visual-studio.md))，便可以快速體驗一下這些工具提供的體驗。 
+一旦安裝了 Visual Studio R 工具 (RTVS) (請參閱[安裝](installing-r-tools-for-visual-studio.md))，便可以快速體驗一下這些工具提供的體驗。
 
 ## <a name="create-an-r-project"></a>建立 R 專案
 
@@ -93,7 +93,7 @@ ms.locfileid: "53944622"
 
 > [!Tip]
 > 了解進行編輯並按 **Ctrl**+**Enter** 鍵 (或用 **Ctrl**+**A** 選取所有項目，然後按 **Ctrl**+**Enter** 鍵) 以快速執行程式碼的模式。 這樣做會比使用滑鼠進行相同的作業更有效率。
-> 
+>
 > 此外，您可以將繪圖視窗從 Visual Studio 框架拖曳出來，放在顯示畫面上您想要的其他任何地方。 您可以輕鬆地將繪圖視窗調整成您想要的尺寸，然後將它儲存成影像或 PDF 檔案。
 
 1. 新增幾行程式碼，包含第二個繪圖︰

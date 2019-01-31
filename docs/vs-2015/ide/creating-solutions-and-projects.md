@@ -1,14 +1,9 @@
 ---
 title: 建立方案與專案 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vs.openprojectfromweb
 - vs.newproject
@@ -22,13 +17,13 @@ ms.assetid: 836f8ca0-3fc9-4f4b-9090-45f2e4d2e9c8
 caps.latest.revision: 49
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 336fb41ee6a4c90e7065187b2805aefe9e6e6df7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: db0aaaee01c27fa4588cc2268cd3106abfcc739e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49893698"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54763110"
 ---
 # <a name="creating-solutions-and-projects"></a>Creating Solutions and Projects
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +31,7 @@ ms.locfileid: "49893698"
 專案是邏輯容器，以儲存建置您應用程式所需的所有檔案。 選擇主要功能表中的 [檔案] &#124; [新增] &#124; [專案] 來建立專案時，[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 會建立一個包含該專案的方案。 您接著可以視需要將更多新的或現有專案加入方案。 您可以從現有的程式碼檔案建立專案，而且您可以建立暫存專案 (僅限 .NET)，當專案完成後，將刪除暫存專案。  
   
 > [!NOTE]
->  本主題中的描述以 Visual Studio Community 版本為基礎。 您看到的對話方塊與功能表命令，可能會依您的設定與 Visual Studio 版本而與此處描述的有所不同。 若要變更設定，請從 [ **工具** ] 功能表中選取 [ **匯入和匯出設定** ]。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
+>  本主題中的描述以 Visual Studio Community 版本為基礎。 您看到的對話方塊與功能表命令，可能會依您的設定與 Visual Studio 版本而與此處描述的有所不同。 若要變更設定，請從 [ **工具** ] 功能表中選取 [ **匯入和匯出設定** ]。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
   
 ## <a name="create-a-project-from-an-installed-project-template"></a>從已安裝的專案範本建立專案  
  從主要功能表中的 [檔案] &#124; [新增] &#124; [專案]，以顯示 [新增專案] 對話方塊。 在 [已安裝] &#124; [範本] 的左窗格中，選擇程式設計語言與平台或技術，然後從中間窗格的可用範本中進行選擇。  
@@ -85,7 +80,7 @@ ms.locfileid: "49893698"
    建立空的方案之後，您可以在 [專案]  功能表上，按一下 [新增項目]  或 [加入現有項目]  ，將新專案或項目或是現有專案或項目加入該方案。  
   
 ### <a name="deleting-solutions"></a>刪除方案  
- 您可以永久刪除方案，但不是使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 來刪除。 刪除方案之前，請移動您可能再次用於另一個方案的任何專案。 然後使用 [檔案總管] 來刪除包含 .sln 和 .suo 方案檔案的目錄。  
+ 您可以永久刪除方案，但不是使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]來刪除。 刪除方案之前，請移動您可能再次用於另一個方案的任何專案。 然後使用 [檔案總管] 來刪除包含 .sln 和 .suo 方案檔案的目錄。  
   
 > [!NOTE]
 >  .Suo 檔案是隱藏檔案，不會顯示在預設的 [檔案總管] 設定下。  
@@ -98,9 +93,6 @@ ms.locfileid: "49893698"
   
 3.  選取包含方案的目錄，然後按 Delete 鍵。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [專案和方案](../ide/solutions-and-projects-in-visual-studio.md)   
- [NIB 如何：建立多專案的方案](http://msdn.microsoft.com/en-us/02ecd6dd-0114-46fe-b335-ba9c5e3020d6)
-
-
-
+ [(NIB) 如何︰建立多專案的方案](http://msdn.microsoft.com/02ecd6dd-0114-46fe-b335-ba9c5e3020d6)

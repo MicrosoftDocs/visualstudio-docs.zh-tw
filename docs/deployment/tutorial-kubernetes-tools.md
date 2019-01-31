@@ -4,15 +4,15 @@ ms.date: 06/08/2018
 ms.topic: conceptual
 author: ghogen
 ms.author: ghogen
-manager: douge
+manager: jillfra
 ms.workload:
 - azure
-ms.openlocfilehash: 8cb250cd319f28b444a8f3bfecef421ecbaac9b4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c6a0ba1f44d9e6d9cc0dbcce03af2705e370cbb6
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53848359"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54965455"
 ---
 # <a name="get-started-with-visual-studio-kubernetes-tools"></a>開始使用 Visual Studio 的 Kubernetes 工具
 

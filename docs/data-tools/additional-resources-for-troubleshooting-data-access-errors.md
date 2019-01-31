@@ -221,16 +221,16 @@ helpviewer_keywords:
 ms.assetid: 357c9f0a-9d59-4db4-9b7c-b96cad839961
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: a02b82fbd3f32c2174d571ff923b8a219a66c9b6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5bb0262f8a57bc9e49ebb81bff3f67d585b5c8b0
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53932716"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54917116"
 ---
 # <a name="troubleshoot-data-access-errors-on-the-forums"></a>在論壇上的資料存取錯誤進行疑難排解
 

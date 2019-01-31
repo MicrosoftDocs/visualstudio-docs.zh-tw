@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: fc12e472-ac6a-4e77-8e22-a769e13a03b8
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: fb0990eb977a3fae11e478ff9bb798e3b1ea1356
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 430f50c1ccac8ea7e9cc02dd117dda1048747aba
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53836474"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55019303"
 ---
 # <a name="how-to-debug-net-framework-source"></a>HOW TO：對 .NET Framework 原始檔進行偵錯
 

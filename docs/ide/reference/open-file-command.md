@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: a51a83fc-e3c6-4fa2-8882-8b7b6c0a6406
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b5ade09e52db37b64f2bbd36af6f7f9dd67f3c89
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 54fd99ce727065c90da994cc431a77d7e55543c9
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53902626"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54927876"
 ---
 # <a name="open-file-command"></a>開啟檔案命令
 

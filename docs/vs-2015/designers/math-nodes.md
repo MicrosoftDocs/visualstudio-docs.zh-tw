@@ -1,25 +1,20 @@
 ---
 title: 數學節點 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: adc225cc-1cf5-4f7c-9b00-e7ac8450b6b9
 caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: bab77bbed9f14ccc81429c37ad367d7d51709871
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: c2971a13e82e4b31f985be6db2a8a32167a3f74b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49305769"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54796215"
 ---
 # <a name="math-nodes"></a>數學節點
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,6 +53,3 @@ ms.locfileid: "49305769"
 |**Sqrt**|根據每個元件計算指定輸入的平方根。<br /><br /> 對於結果的每個元件，會計算對應元件的平方根。<br /><br /> **輸入：**<br /><br /> `X`：`float`、`float2`、`float3` 或 `float4`<br /> 要計算平方根的值。<br /><br /> **輸出：**<br /><br /> `Output`：與輸入 `X` 相同<br /> 每個元件的平方根。|無|  
 |**差集**|計算指定輸入的整體元件差值。<br /><br /> 對於結果的每個元件，輸入 `Y` 的對應元件會減去輸入 `X` 的對應元件。 您可以使用這個來計算從第一個輸入擴充至第二個輸入的向量。<br /><br /> **輸入：**<br /><br /> `X`：`float`、`float2`、`float3` 或 `float4`<br /> 要相減的值。<br /><br /> `Y`：與輸入 `X` 相同<br /> 要從輸入 `X` 減去的值。<br /><br /> **輸出：**<br /><br /> `Output`：與輸入 `X` 相同<br /> 每個元件的差值。|無|  
 |**轉換 3D 向量**|將指定的 3D 向量轉換成不同的空間。<br /><br /> 您可以用這個將向量帶入通用空間，以便用來執行有意義的計算。<br /><br /> **輸入：**<br /><br /> `Vector`: `float3`<br /> 要轉換的向量。<br /><br /> **輸出：**<br /><br /> `Output`: `float3`<br /> 已轉換的向量。|**從系統**<br /> 向量的原始空間。<br /><br /> **至系統**<br /> 轉換向量的目標空間。|
-
-
-

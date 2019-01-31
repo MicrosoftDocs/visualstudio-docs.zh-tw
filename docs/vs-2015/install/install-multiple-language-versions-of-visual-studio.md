@@ -1,13 +1,9 @@
 ---
 title: 安裝多個語言版本 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: vs-ide-install
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - installing Visual Studio, multiple languages
 - install Visual Studio, multiple languages
@@ -15,13 +11,13 @@ ms.assetid: ee09497d-75ea-4359-9f55-889b3b2e342a
 caps.latest.revision: 14
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.openlocfilehash: 0cc19558303a07c3bcd8e134096d311d36f29f34
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: a0f6cd1d963427730ddda62628c3f1d064ed3541
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53823944"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54761481"
 ---
 # <a name="install-multiple-language-versions-of-visual-studio"></a>安裝多個語言版本的 Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

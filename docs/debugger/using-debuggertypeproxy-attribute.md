@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 943f3bb1-993e-4800-a47e-0af78b063014
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f868041449e622ddbd5cf177a0aa22771fd48498
-ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
+ms.openlocfilehash: cfe19bea0b62b7d137ac806208a9c505469cd214
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "54227534"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55069586"
 ---
 # <a name="using-debuggertypeproxy-attribute-c-visual-basic-ccli"></a>使用 DebuggerTypeProxy 屬性 (C#，Visual Basic、 C + + /cli CLI)
 

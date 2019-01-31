@@ -1,27 +1,22 @@
 ---
 title: 使用率導覽 |Microsoft 文件
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.cv.performance.utilizationnavigator
 ms.assetid: 522a981a-37ef-4cdd-a04c-f1e7525a2aab
 caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: fd3b1df58ccfbc33c256db658e4ff7f3a98d7563
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: f4aec8cc1a707535e9cf6ae204be0a7ff67ea51d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51784906"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54788318"
 ---
 # <a name="utilization-navigator"></a>使用率導覽
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,11 +30,8 @@ ms.locfileid: "51784906"
   
  以下是您可以用使用率導覽來顯示時間範圍的操控方式：  
   
-- 您可以左右拖曳 Thumb 來移動瀏覽。 (鍵盤︰將焦點移至 thumb，然後按向左鍵或向右鍵。)  
+- 您可以左右拖曳 Thumb 來移動瀏覽。 (鍵盤：將焦點移至指標，然後按向左鍵或向右鍵。)  
   
-- 您可以拖曳其中一個控點來變更間隔的範圍。 (鍵盤︰將焦點移至控點，然後按向右鍵或向左鍵。)  
+- 您可以拖曳其中一個控點來變更間隔的範圍。 (鍵盤：將焦點移至控點，然後按向右鍵或向左鍵。)  
   
   如果您使用不同的並行視覺化檢視縮放控制項來變更間隔，使用率導覽會更新以反映變更。
-
-
-

@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 4d9815ae-3e80-4b4d-933d-f8309aee18d5
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f08ad869e1a8d06a8a29325c2cbeb723734c6f2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 850a10ca569afa9b5202059b12998570813e789b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53991067"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54961227"
 ---
 # <a name="globalizing-and-localizing-applications"></a>全球化和當地語系化應用程式
 

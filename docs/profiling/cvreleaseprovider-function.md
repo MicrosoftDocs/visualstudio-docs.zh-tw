@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 8d74379e-295d-452b-bd5f-0769df387d4f
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 419cf6c30822a041397e73104974989881ac6e59
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fb47eb0bb63ca7d617e98d372f691ab4d28fec4a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53822472"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54969245"
 ---
 # <a name="cvreleaseprovider-function"></a>CvReleaseProvider 函式
 釋放標記提供者。 釋放標記提供者不會影響此提供者先前建立的標記系列。 標記系列必須個別由 CvReleaseMarkerSeries 呼叫釋放。 釋放提供者失敗會造成記憶體流失。  

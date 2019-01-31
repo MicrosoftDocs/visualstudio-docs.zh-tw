@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 8060b4d2-e4a9-48cf-a437-852649ceb417
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c383af855c849636f780e5c333bd1937e5e90955
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8b94c9a78d3541645edf959aedb295d1a2379ce3
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53877636"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54978811"
 ---
 # <a name="msbuild-targets"></a>MSBuild 目標
 依特定順序將目標設為群組工作，並允許將建置處理序分成較小的單位。 例如，一個目標可能會刪除輸出目錄中的所有檔案來準備進行建置，而另一個目標會編譯專案的輸入，並將它們放在空目錄中。 如需工作的詳細資訊，請參閱[工作](../msbuild/msbuild-tasks.md)。  

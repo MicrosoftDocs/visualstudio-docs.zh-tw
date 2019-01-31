@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: fe6c9d32-4b81-4dc4-a307-848d23af66ce
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 42f1838aa2dcfcdd9ac070d3b1c03c4e177c195d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b1650d11c4af758a38d6778b17f61447c0d8485a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53898030"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54993841"
 ---
 # <a name="process-properties-dialog-box"></a>處理序屬性對話方塊
 若要深入了解特定的處理序中使用此對話方塊。 若要顯示此對話方塊中，焦點移至[處理序檢視](../debugger/processes-view.md)視窗。 在樹狀目錄中，選取任何處理序節點，然後選擇**屬性**從**檢視**功能表。  

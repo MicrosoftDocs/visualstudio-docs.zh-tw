@@ -10,15 +10,15 @@ helpviewer_keywords:
 - Project Designer, Settings page
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 95fc794bee8388dd0655af9adcd9101f57816126
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fee0e6539901e5b95ca62f5e2beb1c3ea48692b0
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53949241"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54958612"
 ---
 # <a name="settings-page-project-designer"></a>設定頁面、專案設計工具
 

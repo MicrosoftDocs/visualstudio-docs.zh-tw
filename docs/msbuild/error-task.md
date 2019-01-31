@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: e96a90ee-a8ae-4e5b-8ef2-b5cf5fedd8b2
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d9e55fe148ccb973a6fdcbf0722d354d91cc1816
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 781f5515be77cfa6ae734b97a2cdba52f6702f56
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53833014"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54946980"
 ---
 # <a name="error-task"></a>Error 工作
 停止組建，並根據評估的條件陳述式來記錄錯誤。  

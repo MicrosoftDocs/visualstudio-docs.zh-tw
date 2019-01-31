@@ -6,15 +6,15 @@ ms.topic: reference
 ms.assetid: adc225cc-1cf5-4f7c-9b00-e7ac8450b6b9
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 820853d92507cf650ea7988ef2405e3948f7ed13
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a6120975febd9dae5f7cb21e3ab425b1a2389c30
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53866812"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54984804"
 ---
 # <a name="math-nodes"></a>數學節點
 

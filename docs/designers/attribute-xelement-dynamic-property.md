@@ -6,15 +6,15 @@ ms.topic: reference
 ms.assetid: 8440fc7d-b3b4-4726-8ec8-492e6af79642
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 701636a82b07311bdc9f5a9b20882d613e8469ce
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b81800e97b02657bd296076803171dda23f65d6f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53959910"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55001757"
 ---
 # <a name="attribute-xelement-dynamic-property"></a>Attribute (XElement 動態屬性)
 

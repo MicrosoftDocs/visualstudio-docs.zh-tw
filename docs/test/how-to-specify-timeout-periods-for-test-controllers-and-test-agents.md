@@ -10,14 +10,14 @@ helpviewer_keywords:
 ms.assetid: 777d0db5-0073-458a-a2a3-58b1c1f24c60
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 49d81090a0db94fe0215d01a1194f3eb4fabfcad
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1edf37a6c6c22591f0a4f857e9ff38a701b8ddff
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53870449"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54919912"
 ---
 # <a name="how-to-specify-timeout-periods-for-test-controllers-and-test-agents"></a>HOW TO：指定測試控制器和測試代理程式的逾時期間
 

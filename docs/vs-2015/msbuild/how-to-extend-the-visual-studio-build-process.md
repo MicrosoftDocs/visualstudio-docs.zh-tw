@@ -1,13 +1,9 @@
 ---
 title: HOW TO：擴充建置程序 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, overriding predefined targets
 - MSBuild, overriding DependsOn properties
@@ -17,13 +13,13 @@ ms.assetid: cb077613-4a59-41b7-96ec-d8516689163c
 caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: a3a530f74e1cf90012f9724d68493b1602b0e6dc
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 43b95fd47c2d5b859478814dd330c175e82bac89
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53938717"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54758661"
 ---
 # <a name="how-to-extend-the-visual-studio-build-process"></a>HOW TO：延伸 Visual Studio 建置流程
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

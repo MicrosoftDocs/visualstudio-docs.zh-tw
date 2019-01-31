@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 397e5e44-4bbe-4289-94d1-642b466c9111
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3a9a621b806cb7b81a302af1de51dd82c5b92e30
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c6b65da35a180e507af8175d7e1c8e209e84ba8d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53943534"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54993984"
 ---
 # <a name="autorecover-environment-options-dialog-box"></a>選項對話方塊、環境、自動回復
 

@@ -1,14 +1,9 @@
 ---
 title: WPF MSBuild 工作參考 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -23,13 +18,13 @@ ms.assetid: 96df0370-e50f-4ffc-9771-b12fb8721143
 caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 5266b5b6274eb9a39f6603598b90cd551f25caef
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 51a052dea0a828201400086e25880124cb4a05c1
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49185467"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54776979"
 ---
 # <a name="wpf-msbuild-task-reference"></a>WPF MSBuild 工作參考
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,8 +60,5 @@ Windows Presentation Foundation (WPF) 建置程序會擴充 Microsoft Build Engi
  [UpdateManifestForBrowserApplication](../msbuild/updatemanifestforbrowserapplication-task.md)  
  建置 [!INCLUDE[TLA#tla_xbap](../includes/tlasharptla-xbap-md.md)] 專案時，將 **\<hostInBrowser />** 項目新增至應用程式資訊清單 (*projectname*.exe.manifest)。  
   
-## <a name="see-also"></a>另請參閱  
- [MSBuild](http://msdn.microsoft.com/en-us/7c49aba1-ee6c-47d8-9de1-6f29a906e20b)
-
-
-
+## <a name="see-also"></a>請參閱  
+ [MSBuild](http://msdn.microsoft.com/7c49aba1-ee6c-47d8-9de1-6f29a906e20b)

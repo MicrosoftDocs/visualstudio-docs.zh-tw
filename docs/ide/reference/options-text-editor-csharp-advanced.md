@@ -8,15 +8,15 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Advanced
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: db27509faf1c3d83eab1cd6c8fcd6b5b70fab48e
-ms.sourcegitcommit: 8bfabab73b39b3b3e68a3e8dc225515e8b310fed
+ms.openlocfilehash: 69f0d2f89901632ab4f500879fc89e3b6ca1e0ba
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "54398295"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54959719"
 ---
 # <a name="options-text-editor-c-advanced"></a>進階、C#、文字編輯器、選項
 
@@ -47,7 +47,7 @@ ms.locfileid: "54398295"
    using Newtonsoft.Json;
    using System;
    ```
-   
+
    排序之後：
 
    ```csharp
@@ -58,7 +58,7 @@ ms.locfileid: "54398295"
    using FluentValidation;
    using Newtonsoft.Json;
    ```
-   
+
 - 使用指示詞群組來進行分隔
 
    選取後，快顯功能表中的 [移除並排序 Using] 命令會透過在具有相同根命名空間的指示詞群組之間插入空白行來分隔 `using` 指示詞。
@@ -73,28 +73,28 @@ ms.locfileid: "54398295"
    using Newtonsoft.Json;
    using System;
    ```
-   
+
    排序之後：
-   
+
    ```csharp
    using AutoMapper;
-   
+
    using FluentValidation;
-   
+
    using Newtonsoft.Json;
-   
+
    using System;
    using System.Collections.Generic;
    using System.Linq;
    ```
-   
-- 為參考組件中的類型建議 Using 
-- 為 NuGet 套件中的類型建議 Using 
+
+- 為參考組件中的類型建議 Using
+- 為 NuGet 套件中的類型建議 Using
 
    選取這些選項後，[快速動作](../quick-actions.md)可用來安裝 NuGet 套件，並為未參考的類型新增 `using` 指示詞。
 
    ![在 Visual Studio 中安裝 NuGet 套件的快速動作](media/nuget-lightbulb.png)
-  
+
 ## <a name="highlighting"></a>醒目提示
 
 - 反白顯示游標下的符號參考

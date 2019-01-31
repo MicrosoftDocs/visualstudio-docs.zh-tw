@@ -1,25 +1,20 @@
 ---
 title: 著色器設計工具節點 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: f5192fbd-c78f-40a8-a4d4-443209610268
 caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: f41d1d3d934ecd85ac36d24d704db561d42faa97
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 659ac2dadd5500ef3cd4a4a3e7c3b36b91e9cc49
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49293497"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54793260"
 ---
 # <a name="shader-designer-nodes"></a>著色器設計工具節點
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +44,7 @@ ms.locfileid: "49293497"
   
 ## <a name="related-topics"></a>相關主題  
   
-|標題|描述|  
+|標題|說明|  
 |-----------|-----------------|  
 |[常數節點](../designers/constant-nodes.md)|描述您可用來代表著色器計算之常值和插補頂點狀態資訊的節點。 因為插入頂點狀態 (因此，每個像素都會不同)，所以每個像素著色器執行個體都會收到不同版本的常數。|  
 |[參數節點](../designers/parameter-nodes.md)|所描述的節點可以用來代表著色器計算中的觀景窗位置、材質屬性、光源參數、時間以及其他應用程式狀態資訊。|  
@@ -57,6 +52,3 @@ ms.locfileid: "49293497"
 |[數學節點](../designers/math-nodes.md)|所描述的節點可用來執行代數、邏輯、三角，以及直接對應至 HLSL 指令的其他數學運算。|  
 |[公用程式節點](../designers/utility-nodes.md)|所描述的節點可用來執行常見光源計算，以及未直接對應至 HLSL 指令的其他常見運算。|  
 |[篩選節點](../designers/filter-nodes.md)|所描述的節點可用來執行紋理篩選和色彩篩選。|
-
-
-

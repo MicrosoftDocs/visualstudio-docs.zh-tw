@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 0c4ec14d-d8dd-49c1-999c-dcbf4e8e1dc8
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cf64339f25e392d4e5790673d77d078b84d02c7c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c5743062a56dbf5afac76698d4ca9247d5652833
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53826607"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54997464"
 ---
 # <a name="io-time-threads-view"></a>I/O 時間 (執行緒檢視)
 時間軸中的這些區段與歸類為 I/O 的封鎖時間關聯。 這意謂著某個執行緒正等候 I/O 作業完成。 該執行緒可能已在 API 中被封鎖，或被「並行視覺化檢視」視為 I/O 的 I/O 相關核心等待封鎖。 `CreateFile()`、`ReadFile()` 及 `WSARecv()` 之類的 API 即屬於這個群組。  

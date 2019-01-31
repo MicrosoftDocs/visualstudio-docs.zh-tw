@@ -4,16 +4,16 @@ ms.date: 03/02/2018
 ms.prod: visual-studio-dev15
 ms.topic: reference
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 13fb1fb6b0b78ffbb2e89b80180260f14b695282
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.openlocfilehash: 85b9c6b0abd67eda373b2d581f26b1de8238386b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "53902785"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55017249"
 ---
 # <a name="use-the-mstest-framework-in-unit-tests"></a>在單元測試中使用 MSTest 架構
 

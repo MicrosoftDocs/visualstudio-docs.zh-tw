@@ -1,14 +1,9 @@
 ---
 title: 資源詳細資料檢視 - 爭用資料 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.view.resourcedetails
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: a4ecfe1c-abbc-4fb3-9ab2-34de50486901
 caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 98cc1d3f281108ef23f073ceae69d97fa3c0c32a
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 27aed07b7e4212502a819ce024b0ce46680df6bf
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51782462"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54759957"
 ---
 # <a name="resource-details-view---contention-data"></a>資源詳細資料檢視 - 爭用資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -69,6 +64,3 @@ ms.locfileid: "51782462"
 -   在時間軸圖形中，按一下該執行緒的名稱或 ID。  
   
      所選取執行緒的執行緒詳細資料檢視隨即顯示。 如需詳細資訊，請參閱[執行緒詳細資料檢視](../profiling/thread-details-view-contention-data.md)。
-
-
-

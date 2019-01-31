@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: ab354047-053e-4f94-8ac1-26e761442b6f
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a08b7f3731de490443cc56a418c75974bf9ff722
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 118547c53e49cd11c8e64783ed6ae521e175f814
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53919530"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54920210"
 ---
 # <a name="about-the-registers-window-in-visual-studio-c-c-visual-basic-f"></a>關於 Visual Studio 中的暫存器視窗 (C#，c + +、 Visual Basic 中， F#)
 

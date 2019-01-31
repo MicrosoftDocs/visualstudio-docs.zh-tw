@@ -14,14 +14,14 @@ dev_langs:
 - VB
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: b7a656ce5cf15575a0c875ecd686a1ae535a978c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2cb6f7af1d9dec89e8810145d971badd8f50902b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53989318"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55012075"
 ---
 # <a name="code-a-custom-validation-rule-for-a-web-performance-test"></a>為 Web 效能測試撰寫自訂驗證規則程式碼
 

@@ -1,24 +1,20 @@
 ---
 title: 產能的秘訣 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: ccc5e543-7dcf-465c-97dd-e133e869800c
 caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: c56b2a2cd49d164fa55eae472eaa11942bead262
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 096de590d49f5d09614bb9149ae6e5218f2ab7ec
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53928850"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54785683"
 ---
 # <a name="productivity-tips-for-visual-studio"></a>使用 Visual Studio 提高產能的秘訣
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -119,7 +115,7 @@ ms.locfileid: "53928850"
 
 -   **尋找對話方塊、功能表命令和選項**。 在[選項對話方塊、環境、快速啟動](../ide/reference/quick-launch-environment-options-dialog-box.md)方塊中，輸入您要嘗試尋找之項目的關鍵字或片語。 例如，如果您輸入 `new project`，則會出現下列選項︰
 
-     圖 3.快速啟動 結果清單 `new project`
+     圖 3：快速啟動 結果清單 `new project`
 
      !['new project' 的快速啟動結果](../ide/media/productivity-quicklaunch.png "Productivity_QuickLaunch")
 

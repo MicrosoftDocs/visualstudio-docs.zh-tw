@@ -11,16 +11,16 @@ helpviewer_keywords:
 - unit tests, data-driven
 - data-driven unit tests
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: cf09dc02113692b02231fa2f219207a0399ebff1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e8092663f7ccc0b6443f392358e7c487d0f6b63f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53822874"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54968134"
 ---
 # <a name="how-to-create-a-data-driven-unit-test"></a>如何：建立資料驅動型單元測試
 

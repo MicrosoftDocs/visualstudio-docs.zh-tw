@@ -1,14 +1,9 @@
 ---
 title: 管理應用程式設定 (.NET) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - msvse_settingsdesigner.err.nameblank
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 35254321-ad14-47d9-b8c6-39ab3203c5d9
 caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: ac4f670b813970d027925b681a2e3211e1898e1a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: a2d5d5ff514752234bba3020927716d57ee413d1
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49866125"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54793282"
 ---
 # <a name="managing-application-settings-net"></a>管理應用程式設定 (.NET)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -98,8 +93,5 @@ Properties.Settings.Default.Save();
   
  如需透過 `Settings` 類別存取應用程式設定的一般資訊，請參閱[應用程式設定概觀](http://msdn.microsoft.com/library/0dd8bca5-a6bf-4ac4-8eec-5725d08b38dc)。 如需逐一查看設定的詳細資訊，請參閱此 [論壇文章](http://social.msdn.microsoft.com/Forums/vstudio/40fbb470-f1e8-4a02-a4a0-9f62b54d0fc4/is-this-possible-propertiessettingsdefault?forum=csharpgeneral)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [存取應用程式設定](http://msdn.microsoft.com/library/e38d0cc7-247a-46ca-ba04-f2913f0adb2e)
-
-
-

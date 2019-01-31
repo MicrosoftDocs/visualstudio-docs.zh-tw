@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 94b12890-365d-479a-b239-71109fbcb462
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6cecba9106fc08e198d819567c10f3b96ef92fb7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4879c30290fcb932f8fbd203290fa57c792efa4b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53819883"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54963589"
 ---
 # <a name="wpf-msbuild-reference"></a>WPF MSBuild 參考
 Windows Presentation Foundation (WPF) 擴充 Microsoft Build Engine (MSBuild) 增加建置支援，本節會加以說明。  

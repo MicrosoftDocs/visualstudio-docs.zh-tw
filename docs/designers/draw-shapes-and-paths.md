@@ -6,15 +6,15 @@ ms.topic: conceptual
 ms.assetid: d5378c59-e2e5-49f0-91f1-aa82d984a33c
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 29cd9da26b632d8ed8b1d09b0803f27599dba95e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 31673371e1feae9c31c6041a076fde939175e6b1
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53942641"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54998335"
 ---
 # <a name="draw-shapes-and-paths"></a>繪製圖案與路徑
 

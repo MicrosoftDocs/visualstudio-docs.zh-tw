@@ -18,15 +18,15 @@ helpviewer_keywords:
 ms.assetid: b33aee0b-43c3-4c26-8ed4-bc673f491503
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9fa48ff41739752ff37817192b26483a23579419
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 45e4fb01613ab3d1ea2a5d521abccf81471a89bb
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53829469"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54985759"
 ---
 # <a name="general-debugging-options"></a>一般偵錯選項
 

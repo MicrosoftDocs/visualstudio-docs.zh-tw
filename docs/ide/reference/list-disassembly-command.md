@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: eb363e35-e86a-4121-966f-991210c27e2a
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b175c6b7e0fcd145d58318d89707cfd907acb2c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ab169dba1ab6692c0a6df8665e20d2695c7ac2c5
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53913368"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55028724"
 ---
 # <a name="list-disassembly-command"></a>列出反組譯碼命令
 開始偵錯處理序，並可讓您指定處理錯誤的方式。

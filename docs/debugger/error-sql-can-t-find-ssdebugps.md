@@ -12,15 +12,15 @@ dev_langs:
 - SQL
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d0c10c2ba2a5b9da700d698d553cdf49a7a0a136
-ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
+ms.openlocfilehash: 0b4bd8ed846ab4f3d461a29f152db0b83232ec8e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54153663"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54972244"
 ---
 # <a name="error-sql-can39t-find-ssdebugps"></a>錯誤：SQL 可以&#39;t 找不到 SSDEBUGPS
 

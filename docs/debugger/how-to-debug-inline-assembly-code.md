@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: cc5664e0-0b38-40c1-bb65-04ae720c2adb
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e0bf97141b78079c8080fb4b624c524ee0a6065f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3e5e7eb7dcfe8103370e30b0be18a0fdcda298d7
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53935420"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55018666"
 ---
 # <a name="how-to-debug-inline-assembly-code"></a>HOW TO：對內嵌組譯碼進行偵錯
 

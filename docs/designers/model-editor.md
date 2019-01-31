@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: 5edf1a30-9307-43c3-9b8b-831217be0104
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bf26cf8f8d0e47c257d35acbe6e7af29e1416a69
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 686d5a52b7cbf3a442d2ec330089331018a9716d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53833040"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54966029"
 ---
 # <a name="model-editor"></a>模型編輯器
 

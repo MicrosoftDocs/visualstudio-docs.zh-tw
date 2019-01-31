@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 77ff1bfc-d633-4634-ba29-9afdb6d7e362
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: b690340440cfeeb13cecd82ed39109f688d24760
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 91257834562a0aa04f5a9a98ec3435ca9d603149
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53908013"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54930611"
 ---
 # <a name="build-page-project-designer-c"></a>專案設計工具、建置頁 (C#)
 您可以使用 [專案設計工具] 的 [建置] 頁面，來指定專案的組建組態屬性。 此頁面只適用於 [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] 專案。

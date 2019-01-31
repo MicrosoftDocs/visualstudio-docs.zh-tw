@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: bfe5fe27-6a84-4392-910f-e325146d7552
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 90bc87a8e4fd0702243bd47cb819ddf313350877
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: be6e20f043e7f23dc881ab95ac7d6fd51200d12e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53862136"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55039510"
 ---
 # <a name="idiaenumsymbolsnext"></a>IDiaEnumSymbols::Next
 擷取指定的列舉型別序列中的符號數。  

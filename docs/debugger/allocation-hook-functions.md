@@ -19,15 +19,15 @@ helpviewer_keywords:
 ms.assetid: 6bfbdb65-8cb1-4c21-8c45-7194a2b77c1e
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a75a425734670267db20bbaf0dc3f7aabb616585
-ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
+ms.openlocfilehash: 4813e7d97eae8ed6f5a6e1da5df35702d63dce23
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54154188"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55015118"
 ---
 # <a name="allocation-hook-functions"></a>配置攔截函式
 配置攔截函式，使用安裝[_CrtSetAllocHook](/cpp/c-runtime-library/reference/crtsetallochook)，每次記憶體配置、 重新配置，或釋出呼叫。 您可以使用這種類型的攔截程序針對許多不同的用途。 使用它來測試應用程式如何處理記憶體不足的情況下，例如檢查配置模式，或記錄配置資訊以供稍後分析。  

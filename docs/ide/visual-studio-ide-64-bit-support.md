@@ -9,15 +9,15 @@ helpviewer_keywords:
 - 64-bit programming [C++]
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d8f7755b1c6d1b2aefbc39d20eec9b0432391e7d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5c417ee6b8c40068a1340904d89561093ee2dcfc
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53844102"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55021815"
 ---
 # <a name="visual-studio-ide-64-bit-support"></a>Visual Studio IDE 64 位元支援
 

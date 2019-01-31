@@ -1,24 +1,20 @@
 ---
 title: 通知 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: cfbbc30a-bb61-42e6-b58e-b4ea9d33c440
 caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 36cd99f303f60c0e7936ce14b1686c6a9ef9941b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 9aacdbf7bbde890abd0b7ac03f5cd5d714d6c9c8
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53911529"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54799991"
 ---
 # <a name="visual-studio-notifications"></a>Visual Studio 通知
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

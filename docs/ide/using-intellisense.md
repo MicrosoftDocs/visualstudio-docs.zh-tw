@@ -13,15 +13,15 @@ helpviewer_keywords:
 - IntelliSense [Visual Studio]
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2adb067377ac417073785df63d68e51040752218
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7ff6db60e9d6df092e3189f03e1410c41a799235
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53953072"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54981892"
 ---
 # <a name="intellisense-in-visual-studio"></a>Visual Studio 中的 Intellisense
 

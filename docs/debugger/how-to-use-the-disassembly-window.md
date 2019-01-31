@@ -19,15 +19,15 @@ helpviewer_keywords:
 ms.assetid: eaf84dd0-c82d-481b-af51-690b74e7794c
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c3af42271e3d08a7910c1eae01bcd6563e46dda1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 43214ee122b3aa5c3907b9176631f2dc22c9178e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53922223"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54987761"
 ---
 # <a name="view-disassembly-code-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>在 Visual Studio 偵錯工具中檢視反組譯碼 (C#，c + +、 Visual Basic 中， F#)
 

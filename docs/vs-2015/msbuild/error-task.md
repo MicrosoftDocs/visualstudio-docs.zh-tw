@@ -1,14 +1,9 @@
 ---
 title: Error 工作 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#Error
 dev_langs:
@@ -23,13 +18,13 @@ ms.assetid: e96a90ee-a8ae-4e5b-8ef2-b5cf5fedd8b2
 caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: ff957a54c27c4ae4860e31e4fb7001b7f831ab3a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 71c257dae17f6846e3e6a4490178b49f28c6dad3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49212715"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54767471"
 ---
 # <a name="error-task"></a>Error 工作
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +35,7 @@ ms.locfileid: "49212715"
 ## <a name="parameters"></a>參數  
  下表說明 `Error` 工作的參數。  
   
-|參數|描述|  
+|參數|說明|  
 |---------------|-----------------|  
 |`Code`|選擇性的 `String` 參數。<br /><br /> 與錯誤相關聯的錯誤碼。|  
 |`File`|選擇性的 `String` 參數。<br /><br /> 包含錯誤的檔案名稱。 如果沒有提供檔案名稱，將會使用包含 Error 工作的檔案。|  
@@ -71,9 +66,6 @@ ms.locfileid: "49212715"
 </Project>  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [工作參考](../msbuild/msbuild-task-reference.md)   
  [取得組建記錄檔](../msbuild/obtaining-build-logs-with-msbuild.md)
-
-
-

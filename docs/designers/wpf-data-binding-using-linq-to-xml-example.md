@@ -6,15 +6,15 @@ ms.topic: conceptual
 ms.assetid: 8e90b252-646e-4449-a898-5f03e40df87d
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 80d5e7d679971034f8c1b60a82d7a63911a81971
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 655c51b43e7f0ddd60da22af9b7e0b9bcbf2b627
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53945583"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55027876"
 ---
 # <a name="wpf-data-binding-using-linq-to-xml-example"></a>使用 LINQ to XML 的 WPF 資料繫結範例
 

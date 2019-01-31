@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: f4eb7c76-af4e-493b-9ab6-9cb05949d9b3
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ecbbad832ad206a0a8192d57d2642bc68a8e3902
-ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
+ms.openlocfilehash: 2a78284cbdfa33953f6675c7d6e7ceee29a0eab4
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "54228054"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54932190"
 ---
 # <a name="using-the-debuggerdisplay-attribute-c-visual-basic-ccli"></a>使用 DebuggerDisplay 屬性 (C#，Visual Basic、 C + + /cli CLI)
 <xref:System.Diagnostics.DebuggerDisplayAttribute> 控制物件、屬性或欄位在偵錯工具變數視窗中顯示的方式。 這個屬性可以適用於類型、委派、屬性、欄位和組件。  

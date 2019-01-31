@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: bd5e0612-a0dc-41cf-a7af-1e87d0d5c35f
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 957077335b8df286d6fa2fbd34b6b81874fddbaa
-ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
+ms.openlocfilehash: b32dc6372a6ce4983e9bd11e05a4a662d0ad44ba
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "54227768"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54993006"
 ---
 # <a name="using-the-tasks-window-c-visual-basic-c"></a>使用 [工作] 視窗 (C#，Visual Basic、 c + +)
 

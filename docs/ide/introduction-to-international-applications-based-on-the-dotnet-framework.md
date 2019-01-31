@@ -23,15 +23,15 @@ helpviewer_keywords:
 ms.assetid: b0788993-e62d-4f68-8235-5f87b1d48525
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: f6d254da3a6ee4aae307868fe90b8025242e2ba2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 854352024ebace79773c360db2bf2161197820ef
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53952218"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54939721"
 ---
 # <a name="introduction-to-international-applications-based-on-the-net-framework"></a>以 .NET Framework 為基礎的國際應用程式簡介
 

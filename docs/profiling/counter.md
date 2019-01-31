@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: aa4b4cdb-e6ea-433a-9579-56f3785e1385
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 16a16e76e2556549f428e1ef6554a3ff2c2a29ab
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4adc1b916fd8f796368de99f8007859b3d71e1cf
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53835366"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54934688"
 ---
 # <a name="counter"></a>計數器
 **Counter** 選項會從處理器 (硬體) 效能計數器收集資料。  

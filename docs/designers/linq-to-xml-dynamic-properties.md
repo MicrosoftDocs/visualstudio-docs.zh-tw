@@ -6,15 +6,15 @@ ms.topic: conceptual
 ms.assetid: 0455f47c-4a68-4f2e-a3f8-dd1d85b99012
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f51995cf1e327691276f0adb417e1832dc936f3e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 78930e2f7aa1547bac0a2743a83e0b596e0c1510
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53823389"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54990663"
 ---
 # <a name="linq-to-xml-dynamic-properties"></a>LINQ to XML 動態屬性
 

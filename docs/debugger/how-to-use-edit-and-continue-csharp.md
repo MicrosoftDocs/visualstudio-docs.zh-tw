@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 40e136d8-a08c-43bd-b313-fb821c55eb3c
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: b694f2d3603c9b768a9a4ddbf7b2c66cf5c61b21
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ca4d8efda78974be00973ef3f6c5adcc77c2465d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53861964"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54965272"
 ---
 # <a name="how-to-use-edit-and-continue-c"></a>HOW TO：使用編輯後繼續 (C#)
 編輯後繼續，您可以進行，並將變更套用至您的程式碼在中斷模式中，偵錯時，而不需要停止並重新啟動偵錯工作階段。  

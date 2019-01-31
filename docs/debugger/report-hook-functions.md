@@ -20,15 +20,15 @@ helpviewer_keywords:
 ms.assetid: 1854bca7-d7eb-4502-89bf-b1ee64cb50ef
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ce84105fa1a3d7bf5c6f949421b306b5147368a5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 18485d94aaedcb1f41c0ed747dc6af0be7f7e276
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53892351"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54952869"
 ---
 # <a name="report-hook-functions"></a>報告攔截函式
 報告攔截函式，使用 [_CrtSetReportHook](/cpp/c-runtime-library/reference/crtsetreporthook) 安裝，會在每次 [_CrtDbgReport](/cpp/c-runtime-library/reference/crtdbgreport-crtdbgreportw) 產生偵錯報告時呼叫。 除此之外，您可以使用它來篩選報告以專注於特定類型的配置。 報告攔截函式應該有像下列的原型：  

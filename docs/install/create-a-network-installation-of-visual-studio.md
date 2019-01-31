@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 4CABFD20-962E-482C-8A76-E4012052F701
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ee0eadc9d682e41737df00f81b6443daf5e21fb6
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.openlocfilehash: ddc786cddc2a3676c1be246f04b726072beb37b8
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54349916"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54981255"
 ---
 # <a name="create-a-network-installation-of-visual-studio-2017"></a>建立 Visual Studio 2017 的網路安裝
 

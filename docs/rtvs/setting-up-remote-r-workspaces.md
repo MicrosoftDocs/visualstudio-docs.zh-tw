@@ -6,15 +6,15 @@ ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 6a5dfb136c975634bd4f8915d1f5eb1c9d023e98
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 44cd70f9c15accd02742e7533d29072114b23929
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53837780"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55002466"
 ---
 # <a name="set-up-remote-workspaces"></a>設定遠端工作區
 

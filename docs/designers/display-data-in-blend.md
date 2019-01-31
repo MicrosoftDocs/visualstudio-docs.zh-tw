@@ -6,15 +6,15 @@ ms.topic: conceptual
 ms.assetid: 87d31b6c-4607-4121-bb7d-cfc80390ab93
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cae026f0b4a7be3a0ed9a389f3f6d9b8a6a911f3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b30a879189612545979b9e34e963e782bb1d779a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53924393"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55021347"
 ---
 # <a name="display-data-in-blend"></a>在 Blend 中顯示資料
 

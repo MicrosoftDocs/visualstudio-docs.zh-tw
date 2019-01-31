@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 24b0ed68-d19e-473e-9af3-252c11d82bcf
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 21e821426d5e5a1f10d3e6719e9a47b5c46ea7f2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8fc5a353b87d8dbe945e73d828269c38b18274a4
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53901486"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54961646"
 ---
 # <a name="globalon-and-globaloff"></a>GlobalOn 和 GlobalOff
 *VSPerfCmd.exe* **GlobalOff** 和 **GlobalOn** 選項可暫停和繼續對命令列分析工作階段中的所有處理序和執行緒進行分析。  

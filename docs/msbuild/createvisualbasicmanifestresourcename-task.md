@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 251c47b9-de32-414b-a138-bf45290af12e
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 948b27aa9e2b800929d9f507535aee1395d45344
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5e9949d158afb0dfd2f13a2ed62da34b3960e4a3
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53871222"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54997061"
 ---
 # <a name="createvisualbasicmanifestresourcename-task"></a>CreateVisualBasicManifestResourceName 工作
 從指定的 *.resx* 檔案名稱或其他資源，建立 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 樣式的資訊清單名稱。  

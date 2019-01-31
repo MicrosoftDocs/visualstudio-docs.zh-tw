@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: bc951577-1bfb-4100-b1f1-bc8278c45bf7
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d56801821a0c041e5de0785a39146a0e8f5a747b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0fb225297973a1bedb6fabb56770622ecc100c3e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53960926"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55026486"
 ---
 # <a name="makedir-task"></a>MakeDir 工作
 建立目錄，以及任何父目錄 (如有必要)。  

@@ -25,15 +25,15 @@ helpviewer_keywords:
 ms.assetid: 66cfac86-f5be-4d3a-9329-d44cd74bc586
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f1d7c491b864fb8791a5fbd527859edafbd54b9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7e4dab741c8116b82630ea4279a948f967698802
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53909134"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54920935"
 ---
 # <a name="when-calling-a-function-hundreds-of-times-how-do-i-know-which-call-failed"></a>呼叫函式好幾百次時，如何判斷是哪一個呼叫失敗？
 ## <a name="problem-description"></a>問題說明  

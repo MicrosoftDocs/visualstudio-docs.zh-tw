@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: b8e3362a-f821-4696-b98d-571d4bbfe431
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 10e9119f54eeb428e94b9e9055b9845fbc7cb9a2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7e6192c7705555e817ed82d452d703f0affd9609
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53899820"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54932697"
 ---
 # <a name="ltassemblygt-element-clickonce-deployment"></a>&lt;組件&gt;項目 （ClickOnce 部署）
 部署資訊清單最上層項目。  

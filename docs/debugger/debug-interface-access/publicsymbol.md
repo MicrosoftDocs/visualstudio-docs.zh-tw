@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: f8d33007-302d-4549-9dad-47fb33ea60b7
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8466a828c0791f931d4b94f646e258c08a2b1bde
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 32b5264db1a103c23f4f24aa4fa3a411e6bac614
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53918936"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55024613"
 ---
 # <a name="publicsymbol"></a>PublicSymbol
 每個公用符號 （在最小，每個全域函式和資料符號） 時建立的.exe 檔案時，會給予`SymTagPublicSymbol`標記。  
@@ -47,6 +47,6 @@ ms.locfileid: "53918936"
 |[IDiaSymbol::get_undecoratedNameEx](../../debugger/debug-interface-access/idiasymbol-get-undecoratednameex.md)|`BSTR`|部分或全部的未裝飾的符號名稱。|  
   
 ## <a name="see-also"></a>請參閱  
- [符號類型的語彙階層架構](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md)   
+ [符號類型的語彙階層](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md)   
  [LocationType 列舉](../../debugger/debug-interface-access/locationtype.md)   
  [符號位置](../../debugger/debug-interface-access/symbol-locations.md)

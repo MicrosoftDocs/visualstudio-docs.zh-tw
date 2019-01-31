@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: edaa65ec-ab8a-42a1-84cb-d76d5b2f4584
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 583f6558bb9af35f71e98d61ec78d0b90429f27b
-ms.sourcegitcommit: a8c841648d862c83a0f0d654df1b367c159adc5e
+ms.openlocfilehash: fd1e81a065a15a1a269d2d2f6bdd86b0b323dc95
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "54403950"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55010099"
 ---
 # <a name="msbuild-command-line-reference"></a>MSBuild 命令列參考
 在使用 *MSBuild.exe* 來建置專案或方案檔時，您可以包含數個參數來指定程序的各個層面。  

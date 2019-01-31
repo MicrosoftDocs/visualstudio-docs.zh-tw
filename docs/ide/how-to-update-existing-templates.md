@@ -10,13 +10,13 @@ helpviewer_keywords:
 - updating templates [Visual Studio]
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: db5b9c3f601ae11b704e54ae2ebcd58f10c4c724
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: b5f72f6cbe2fcf3be2566fd7e51d7366dd2563ae
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53835824"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54985886"
 ---
 # <a name="how-to-update-existing-templates"></a>HOW TO：更新現有範本
 

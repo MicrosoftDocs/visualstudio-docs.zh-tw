@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: c70e9429-fb0c-452a-9626-79f168393e44
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d8a1371e8c87b98bdc30a4172be7420686cf21e0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f49164149e642544a4a814378e7aa0bc95caf5c1
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53909238"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54979201"
 ---
 # <a name="window-properties-dialog-box"></a>視窗屬性對話方塊
 若要深入了解特定的視窗中使用此對話方塊。 若要顯示此對話方塊中，焦點移至[Windows 檢視](../debugger/windows-view.md)視窗。 在樹狀目錄中，選取視窗的任何節點，然後選擇**屬性**從**檢視**功能表。  

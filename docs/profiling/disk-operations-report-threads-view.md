@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: e352f4f3-f654-45eb-96ed-417863487ddc
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 95173f260ce8ed40c607c7026df727267dd3866e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 82b9162941a560237e608e14debc331da6064af4
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53955262"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54965610"
 ---
 # <a name="disk-operations-report-threads-view"></a>磁碟作業報告 (執行緒檢視)
 磁碟作業報告顯示磁碟通道中的磁碟 I/O 作業。  

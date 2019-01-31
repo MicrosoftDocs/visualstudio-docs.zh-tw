@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: dac3fa2d-6678-4017-af35-93686f53f302
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 21dcaa5e4192c2ee4dd223da5cad560ded220275
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 97d5aeac5115dfa251b42c824b88a779e22ad6a4
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53928986"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54978330"
 ---
 # <a name="importgroup-element"></a>ImportGroup 項目
 包含群組在選擇性條件下方的 `Import` 元素集合。 如需詳細資訊，請參閱 [Import 項目 (MSBuild)](../msbuild/import-element-msbuild.md)。  

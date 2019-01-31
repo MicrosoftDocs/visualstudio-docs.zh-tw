@@ -6,18 +6,18 @@ ms.topic: conceptual
 ms.assetid: b8d7cf43-d1f2-4f3d-adb0-4f3a6428edc0
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - csharp
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: cb2e835a3dac2f85de806e876bc8801d7b1d0dd3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8b8f85d5d94ddb5f14926fa5100889da2aa3c2d6
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53955288"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54980241"
 ---
 # <a name="wpf-overview"></a>WPF 概觀
 

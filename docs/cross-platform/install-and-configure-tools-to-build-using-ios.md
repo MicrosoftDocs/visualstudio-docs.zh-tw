@@ -9,15 +9,15 @@ dev_langs:
 ms.assetid: d0c311c9-9eb9-42c5-ba07-25604362cd28
 author: corob-msft
 ms.author: corob
-manager: douge
+manager: jillfra
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: cbc9e2b0016fde990e2fbd6d79b083907ced5060
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 54c93a07d7ac3754c5c57d2029fff9991221ae65
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48881081"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55070639"
 ---
 # <a name="install-and-configure-tools-to-build-using-ios"></a>安裝和設定工具以使用 iOS 進行建置
 

@@ -1,14 +1,9 @@
 ---
 title: 縮放控制 (執行緒檢視) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.cv.threads.tools.zoom
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 7f9bda07-53a8-4f11-9846-a3e31064c596
 caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 897ee8b650914b352c1cd4053428a35bf48997ec
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 44d816c7107d34cf81369a98ea0c435133e8e4b3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51804432"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54767516"
 ---
 # <a name="zoom-control-threads-view"></a>縮放控制 (執行緒檢視)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,11 +31,8 @@ ms.locfileid: "51804432"
 ## <a name="zooming-in-and-out-by-using-the-mouse-wheel"></a>使用滑鼠滾輪來縮放  
  按一下時間軸上的任一點 (確定滑鼠焦點在該點上)，然後按下 CTRL 並移動滑鼠滾輪 (向前放大、向後縮小)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [管理通道](../profiling/manage-channels.md)   
  [開啟/關閉測量模式](../profiling/measure-mode-on-off.md)   
  [執行緒檢視](../profiling/threads-view-parallel-performance.md)   
  [使用率導覽](../profiling/utilization-navigator.md)
-
-
-

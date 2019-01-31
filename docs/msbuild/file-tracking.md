@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: e6c66ac0-3464-451f-9192-3b98dca21b4a
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8b99934091ed617aa6c6bf2163391aa0d79c5414
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 878d4d7e56c51d8a41a0e3cf3e78d6c83ed5d0b5
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53861662"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55027668"
 ---
 # <a name="file-tracking"></a>檔案追蹤
 檔案追蹤會記錄對 Windows 檔案系統處理序及其子處理序的呼叫。 呼叫下列函式，程式可以控制此記錄開啟和關閉的時間，並指定要使用的記錄檔。  

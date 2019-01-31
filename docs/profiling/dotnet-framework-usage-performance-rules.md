@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: ab573755-6370-48aa-853d-a7321c424c79
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7fa14a9b5a1ce36acc1869cded5e955a78f0a9ef
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b92ae0ad9d60ac24047b136e67d7659cb680ecc1
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53950104"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55002453"
 ---
 # <a name="net-framework-usage-performance-rules"></a>.NET Framework 使用效能規則
 .Net Framework 使用類別中的效能規則會識別可最佳化的特定方法，也會識別較一般的使用模式 (例如記憶體回收和鎖定爭用)，以用於效能問題調查。  

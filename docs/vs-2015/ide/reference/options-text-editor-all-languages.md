@@ -1,14 +1,9 @@
 ---
 title: 選項、文字編輯器、所有語言 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.JavaScript.General
 - VS.ToolsOptionsPages.Text_Editor.ResJSON.General
@@ -24,13 +19,13 @@ ms.assetid: 49ee7306-9d46-4170-850f-a1716171752d
 caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 987e0339f2d27405c81ce05b6a30181a1469be7b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 0abb0a38e63231dfddea391b3a63a73ae982bd24
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49884169"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54802554"
 ---
 # <a name="options-text-editor-all-languages"></a>選項，文字編輯器，所有語言
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -44,7 +39,7 @@ ms.locfileid: "49884169"
  當某些程式設計語言的 [一般] 選項頁面上已經選取某個選項，但其他程式設計語言尚未選取時，會顯示呈現灰色的核取記號。  
   
 > [!NOTE]
->  根據您目前使用的設定或版本，您所看到的對話方塊與功能表命令可能會與 [說明] 中描述的不同。 若要變更設定，請從 [ **工具** ] 功能表中選取 [ **匯入和匯出設定** ]。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
+>  根據您目前使用的設定或版本，您所看到的對話方塊與功能表命令可能會與 [說明] 中描述的不同。 若要變更設定，請從 [ **工具** ] 功能表中選取 [ **匯入和匯出設定** ]。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
   
 ## <a name="statement-completion"></a>陳述式完成  
  自動列出成員  
@@ -101,10 +96,7 @@ ms.locfileid: "49884169"
  巡覽列  
  選取時，會在程式碼編輯器的頂端顯示 [導覽列]。 它的下拉式 [物件] 和 [成員] 清單，可讓您選擇程式碼中的特定物件、從其成員選擇，並在程式碼編輯器中巡覽至選取之成員的宣告。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [選項、文字編輯器、所有語言、定位點](../../ide/reference/options-text-editor-all-languages-tabs.md)   
  [選項對話方塊、環境、一般](../../ide/reference/general-environment-options-dialog-box.md)   
  [使用 IntelliSense](../../ide/using-intellisense.md)
-
-
-

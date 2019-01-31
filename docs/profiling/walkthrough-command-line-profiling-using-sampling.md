@@ -8,15 +8,15 @@ helpviewer_keywords:
 - performance tools, command-line tools
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 10fe1aaaa9301429d3ef80fa12713b5cc4fbcc68
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6cfa4afeda38180825a9f17b47a4e959fdac092d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53886805"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54960538"
 ---
 # <a name="walkthrough-command-line-profiling-using-sampling"></a>逐步解說：使用取樣進行命令列分析
 

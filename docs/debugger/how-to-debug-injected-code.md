@@ -21,15 +21,15 @@ helpviewer_keywords:
 ms.assetid: a1b4104d-d49e-451f-a91e-e39ceaf35875
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c9cb24bb4ea3f1edbb36f8e0f1219f6a0c653ec8
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.openlocfilehash: 1ecb4d69db653c24ff13c0c95059d431424e4fe9
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "53920627"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55069117"
 ---
 # <a name="how-to-debug-injected-code"></a>HOW TO：對插入程式碼進行偵錯
 

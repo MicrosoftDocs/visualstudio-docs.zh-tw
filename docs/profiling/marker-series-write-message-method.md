@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 546121bc-67e0-4a5a-a456-12bd78fd6de2
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 03a99aa603dec83751a0254897ad9c6f40215016
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a4a81f6f8aee20ec8d3faa9c8b65b74ef714c55a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53965599"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54924911"
 ---
 # <a name="markerserieswritemessage-method"></a>marker_series::write_message 方法
 將訊息寫入並行視覺化檢視追蹤檔。  

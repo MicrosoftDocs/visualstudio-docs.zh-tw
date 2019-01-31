@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 2e4aa67c-4445-4f7b-9e03-9acb95829127
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1a6b916e8050bd68f4ccd601e92725768a01c4c7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 53a0d26e5eba40a0e089055ad2c3bf69404f4db7
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53935043"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55016547"
 ---
 # <a name="how-to-publish-a-clickonce-application-using-the-publish-wizard"></a>HOW TO：使用 [發行精靈] 發行 ClickOnce 應用程式
 若要讓使用者可以使用 ClickOnce 應用程式，您必須將它發行至檔案共用或路徑、FTP 伺服器或卸除式媒體。 您可以使用 [發佈精靈] 發佈應用程式；[專案設計工具] 的 [發佈] 頁面上也有提供與發佈相關的其他屬性。 如需詳細資訊，請參閱[發佈 ClickOnce 應用程式](../deployment/publishing-clickonce-applications.md)。

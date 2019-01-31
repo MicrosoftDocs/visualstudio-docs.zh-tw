@@ -9,15 +9,15 @@ helpviewer_keywords:
 - application settings [Visual Studio]
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e6f4340f87782573f7330705786d0e4f923eb914
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a300642970dda99f174f2378963daa5cea7a6a57
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53865501"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54939149"
 ---
 # <a name="manage-application-settings-net"></a>管理應用程式設定 (.NET)
 

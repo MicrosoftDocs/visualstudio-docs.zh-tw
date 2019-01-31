@@ -7,15 +7,15 @@ ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 ms.reviewer: karthiknadig
-manager: douge
+manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: c9406db2f7ae97a40936d672fb01d4943aeadcce
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d73f6df65c1ce1b78448a7582330741c887f7768
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53835941"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55020200"
 ---
 # <a name="remote-r-service-for-linux"></a>適用於 Linux 的遠端 R 服務
 

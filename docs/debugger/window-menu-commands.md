@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 9b5f1b5f-fd42-4de5-a3e1-d8e7e2e8cf1a
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e90d6dc7074ad6d70be783326e7617d0fd7e337
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 46a8f3c19559f5c2b267410d22fd30f32dca7a02
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53895645"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54947097"
 ---
 # <a name="window-menu-commands"></a>視窗功能表命令
 **視窗**功能表提供用來管理 Spy + + windows 命令。  

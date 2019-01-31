@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: d49b9f84-52a2-4242-9269-b741a7a7e9f7
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f083d44578a4fe61029c707b3798191c5b8b3665
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: df81cacf099c3c1e052a568a8d1fc63c47611dcb
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53865631"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54981996"
 ---
 # <a name="findinlist-task"></a>FindInList 工作
 在指定的清單中，尋找擁有相符 itemspec 的項目。  

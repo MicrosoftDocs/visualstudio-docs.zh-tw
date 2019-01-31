@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 1291fd33-b89e-4e15-8fb1-69f9625cf2d2
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3fc6b89034815f0eb1ee5762e911c42075d115cc
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 79d4eb1d9ea90f2ee10a5b285e8fd841b5405203
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53985559"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54961292"
 ---
 # <a name="updatemanifest-task"></a>UpdateManifest 工作
 更新資訊清單中選取的屬性，並重新簽署。  

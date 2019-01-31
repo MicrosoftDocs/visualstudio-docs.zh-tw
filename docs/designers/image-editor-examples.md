@@ -6,15 +6,15 @@ ms.topic: conceptual
 ms.assetid: 9f887976-25ae-4099-b987-87ea97f98c58
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8df0679856e66ad61297669d4dc33f8d0d2d87ae
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1c59c739455a487fef6589b0604f04772777e1a0
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53938614"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54938428"
 ---
 # <a name="image-editor-examples"></a>影像編輯器範例
 

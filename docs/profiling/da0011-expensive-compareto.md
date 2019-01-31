@@ -10,15 +10,15 @@ f1_keywords:
 ms.assetid: 239a381d-0d97-4367-8668-746c93f5af2c
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e3a1d51f66050837c05f81315f4f368749cea1b4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 83708fa0e58381f50d1637e5f03255fc12376a7a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53872428"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54942434"
 ---
 # <a name="da0011-expensive-compareto"></a>DA0011：CompareTo 高度耗費資源
 

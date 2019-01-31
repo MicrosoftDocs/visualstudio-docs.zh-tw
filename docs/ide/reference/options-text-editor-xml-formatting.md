@@ -8,13 +8,13 @@ f1_keywords:
 ms.assetid: 203e60b2-7b80-4ff4-9fa1-aa9f4374377b
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 0d8420df205d49df3c6799e62adbc4e759a4aed2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 23fcfe1093d2100034f248fa06db95feb1975bca
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53826516"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55032315"
 ---
 # <a name="options-text-editor-xml-formatting"></a>選項、文字編輯器、XML、格式化
 

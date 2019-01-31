@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 732b7ccc-54ea-41db-823b-2b96e3e4083e
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1b92cee00b93541ddc75a4c3210d77c61a82f640
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 59fc1d6936822bb3a5ffad3bcdcbe9bc9976f293
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53863377"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54940345"
 ---
 # <a name="how-to-search-for-a-message-in-messages-view"></a>HOW TO：在訊息檢視中搜尋訊息
 您可以使用其控制代碼、 類型或訊息識別碼，做為搜尋準則來搜尋特定訊息在訊息檢視中。 其中任何一個，或組合，會是有效的搜尋準則。 也可以指定搜尋的初始方向。 在對話方塊中的欄位會預先載入的目前選取的訊息屬性。  

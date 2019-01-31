@@ -1,14 +1,9 @@
 ---
 title: 使用 Visual C++ 程式碼 (類別設計工具) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vs.classdesigner.cpplimitation
 helpviewer_keywords:
@@ -23,13 +18,13 @@ ms.assetid: f5b40921-2ef7-4de0-b595-45b44c79ffa6
 caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: f777c9bdd0cf2ea300d2df8e7cbfbc8900c25c2a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 90f0c73abb33a2da9c2735bcbc16b5559437bc65
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49929526"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54765008"
 ---
 # <a name="working-with-visual-c-code-class-designer"></a>使用 Visual C++ 程式碼 (類別設計工具)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,7 +48,7 @@ ms.locfileid: "49929526"
 -   Typedef  
   
 > [!NOTE]
->  這與 UML 類別圖不同，後者可在「模型專案」中建立。 如需詳細資訊，請參閱 [UML 類別圖表：參考](../modeling/uml-class-diagrams-reference.md)。  
+>  這與 UML 類別圖不同，後者可在「模型專案」中建立。 如需詳細資訊，請參閱 [UML 類別圖表：參考資料](../modeling/uml-class-diagrams-reference.md)。  
   
 ## <a name="troubleshooting-type-resolution-and-display-issues"></a>類型解析與顯示問題的疑難排解  
   
@@ -68,7 +63,7 @@ ms.locfileid: "49929526"
 ### <a name="type-resolution-issues"></a>類型解析問題  
  類別設計工具無法解析類型的可能原因如下：  
   
-- 類型所屬的專案或組件不是從包含類別圖的專案中參考的。 若要更正這個錯誤，請在包含類型的專案或組件中加入參考。 如需詳細資訊，請參閱 [NIB 如何：使用加入參考對話方塊加入或移除參考](http://msdn.microsoft.com/en-us/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)。  
+- 類型所屬的專案或組件不是從包含類別圖的專案中參考的。 若要更正這個錯誤，請在包含類型的專案或組件中加入參考。 如需詳細資訊，請參閱[NIB 如何：新增或移除參考使用加入參考對話方塊](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)。  
   
 - 類型不在正確的範圍內，因此類別設計工具無法找到它。 請確定您的程式碼未遺漏 `using`、`imports` 或 `#include` 陳述式。 也請確定您未將該類型 (或相關類型) 從它最初建立所在的命名空間中移出。  
   
@@ -82,7 +77,7 @@ ms.locfileid: "49929526"
   
 - 確定類別設計工具支援您所輸入的類型。 請參閱 [C++ 程式碼項目限制](#limitations)。  
   
-- 嘗試解析類型。 類型所屬的專案或組件不是從包含類別圖的專案中參考的。 若要更正這個錯誤，請在包含類型的專案或組件中加入參考。 如需詳細資訊，請參閱 [NIB 如何：使用加入參考對話方塊加入或移除參考](http://msdn.microsoft.com/en-us/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)。  
+- 嘗試解析類型。 類型所屬的專案或組件不是從包含類別圖的專案中參考的。 若要更正這個錯誤，請在包含類型的專案或組件中加入參考。 如需詳細資訊，請參閱[NIB 如何：新增或移除參考使用加入參考對話方塊](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)。  
   
 - 確定類型位於正確的範圍內，讓類別設計工具能夠找到它。 確定程式碼未遺漏 `using`、`imports` 或 `#include` 陳述式。 也請確定您未將該類型 (或相關類型) 從它最初建立所在的命名空間中移出。  
   
@@ -111,7 +106,7 @@ ms.locfileid: "49929526"
   
 -   類別設計工具無法顯示 void 類型或衍生自 void 類型的類型。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [設計和檢視類別與類型](../ide/designing-and-viewing-classes-and-types.md)   
  [使用類別和其他類型 (類別設計工具)](../ide/working-with-classes-and-other-types-class-designer.md)   
  [使用類別圖表 (類別設計工具)](../ide/working-with-class-diagrams-class-designer.md)   
@@ -121,6 +116,3 @@ ms.locfileid: "49929526"
  [類別設計工具中的 Visual C++ 結構](../ide/visual-cpp-structures-in-class-designer.md)   
  [類別設計工具中的 Visual C++ 列舉](../ide/visual-cpp-enumerations-in-class-designer.md)   
  [類別設計工具中的 Visual C++ Typedef](../ide/visual-cpp-typedefs-in-class-designer.md)
-
-
-

@@ -18,15 +18,15 @@ helpviewer_keywords:
 ms.assetid: 5b96640b-8efe-48a4-8d0a-1ae3f9587e44
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d764cea7992a9833bd8bddde8432388aebbc994
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f2e00e836725620c9a3ded6e2df5119a66d1cb54
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53867156"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54942278"
 ---
 # <a name="miscellaneous-files"></a>其他檔案
 您可能想要使用 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 編輯器，單獨處理專案或方案中的檔案。 開啟方案時，可以開啟並修改檔案，而不需要將它們新增至方案或專案。 您想要單獨處理稱為其他檔案的容器中檔案。 其他檔案是方案和專案的外部檔案、未納入組建中，而且不能隨附於原始檔控制下的方案。

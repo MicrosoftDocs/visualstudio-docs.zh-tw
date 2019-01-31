@@ -6,19 +6,19 @@ ms.topic: reference
 ms.devlang: csharp
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 f1_keywords:
 - vs.csharp.refactoring.convertmethodtoproperty
 dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0af901ed6a51b962b7b2999b04909136bbb0f3e9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bd3e534aec6ca1a8bbebfb5e1437d13e97d36e70
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53861143"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54990949"
 ---
 # <a name="convert-get-method-to-property--convert-property-to-get-method-refactorings"></a>將 Get 方法轉換為屬性 / 將屬性轉換為 Get 方法的重構
 

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 0eac1b54-2711-4e4b-9654-a0c429c08c8f
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4df2047109ebd89b7dee621373bf30b9f55747a1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f1f738d1c2480cf97848c17dadfdf1a3ac53380c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53866448"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55038210"
 ---
 # <a name="how-to-add-class-diagrams-to-projects"></a>HOW TO：將類別圖表新增至專案
 

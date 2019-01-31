@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 7cdbbce1-8b59-43ce-b6aa-a948bb4d7148
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f5cf77194d711baef2663d1c735ff2299d8997e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0a4dbcd8de6aeb339fd742b906db890128024b16
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53842865"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55042864"
 ---
 # <a name="debug-interface-access-sdk-reference"></a>偵錯介面存取 SDK 參考
 所有的介面和支援列舉和結構在 DIA SDK 中的完整參考。  

@@ -10,15 +10,15 @@ helpviewer_keywords:
 - Project Designer, Services page
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4c3e40108f6bca3226e6f39eb2eb4b09437a4f1e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ac182562241fd35c8eaf58bd49fe8004cb27367f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53952377"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55013362"
 ---
 # <a name="services-page-project-designer"></a>專案設計工具、服務頁
 

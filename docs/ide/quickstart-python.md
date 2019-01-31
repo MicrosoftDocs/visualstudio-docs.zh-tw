@@ -7,16 +7,16 @@ ms.technology: vs-python
 ms.topic: quickstart
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 025adc3a99e2c5aabe2588852885e537553ddce6
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: a5b4cad6d3f033b03f28851fca3c88e9efcc271d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219272"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54945095"
 ---
 # <a name="quickstart-create-your-first-python-web-app-using-visual-studio"></a>快速入門：使用 Visual Studio 建立您的第一個 Python Web 應用程式
 
@@ -44,13 +44,13 @@ ms.locfileid: "50219272"
 
     ![顯示新建立之空專案的方案總管](media/quickstart-python-01-empty-project.png)
 
-**問題：在 Visual Studio 中為 Python 應用程式建立專案的優點為何？**
+**問題：在 Visual Studio 中建立 Python 應用程式專案的優點為何？**
 
-**解答**：Python 應用程式通常只使用資料夾與檔案來定義，但隨著應用程式變得越來越大，此簡單結構會變得相當麻煩，且可能牽涉到自動產生的檔案、Web 應用程式的 JavaScript 等。 Visual Studio 專案有利於管理此複雜部分。 專案 (*.pyproj* 檔案) 會識別與您專案建立關聯的所有來源和內容檔案、包含每個檔案的組建資訊、維護要與來源控制系統整合的資訊，以及協助您將應用程式整理成邏輯元件。
+**答**：Python 應用程式通常只使用資料夾與檔案來定義，但隨著應用程式變得越來越大，此簡單結構會變得相當麻煩，且可能牽涉到自動產生的檔案、Web 應用程式的 JavaScript 等。 Visual Studio 專案有利於管理此複雜部分。 專案 (*.pyproj* 檔案) 會識別與您專案建立關聯的所有來源和內容檔案、包含每個檔案的組建資訊、維護要與來源控制系統整合的資訊，以及協助您將應用程式整理成邏輯元件。
 
-**問題： 什麼是顯示在 [方案總管] 中的「解決方案」？**
+**問題：顯示在 [方案總管] 中的「解決方案」是什麼？**
 
-**解答**：Visual Studio 解決方案是一個容器，可協助您以群組的方式管理一或多個相關專案，以及儲存非專案特定的組態設定。 解決方案中的專案也可以彼此參考，這樣執行某一專案 (Python 應用程式) 會自動建立第二個專案 (例如 Python 應用程式中使用的 C++ 延伸模組)。
+**答**：Visual Studio 解決方案是一個容器，可協助您以群組的方式來管理一或多個相關專案，以及儲存非專案特定的組態設定。 解決方案中的專案也可以彼此參考，這樣執行某一專案 (Python 應用程式) 會自動建立第二個專案 (例如 Python 應用程式中使用的 C++ 延伸模組)。
 
 ## <a name="install-the-flask-library"></a>安裝 Flask 程式庫
 
@@ -66,18 +66,18 @@ Python 中的 Web 應用程式幾乎一律使用許多可用的 Python 程式庫
 
 1. 在 [搜尋] 欄位中輸入 "flask"，並選取 [pip install flask from PyPI] \(從 PyPI 進行 pip 安裝 flask\)。 接受所有的系統管理員權限提示，並觀察 Visual Studio [輸出] 視窗的進度。 (當全域環境的 packages 資料夾位於受保護的區域內，例如 *C:\Program Files*，就會提示提高權限)。
 
-    ![安裝 Flask 程式庫](media/quickstart-python-03-install-package.png)
+    ![使用 pip install 安裝 Flask 程式庫](media/quickstart-python-03-install-package.png)
 
 1. 安裝之後，程式庫會出現在**方案總管**的環境中，這表示您可以在 Python 程式碼中使用它。
 
-    ![已安裝 Flask 程式庫](media/quickstart-python-04-package-installed.png)
+    ![已安裝 Flask 程式庫，並顯示在 [方案總管] 中](media/quickstart-python-04-package-installed.png)
 
 > [!Note]
 > 開發人員不是將程式庫安裝在全域環境中，他們一般會建立「虛擬環境」並在這裡安裝特定專案的程式庫。 Visual Studio 範本一般都會提供此選項，如[快速入門 - 使用範本建立 Python 專案](../python/quickstart-02-python-in-visual-studio-project-from-template.md)中所述。
 
 **問題：哪裡可以深入了解其他可用的 Python 套件？**
 
-**解答**：瀏覽 [Python 套件索引](https://pypi.org/) \(英文\)。
+**答**：請前往 [Python Package Index](https://pypi.org/) (Python 套件索引)。
 
 ## <a name="add-a-code-file"></a>新增程式碼檔案
 
@@ -116,7 +116,7 @@ Python 中的 Web 應用程式幾乎一律使用許多可用的 Python 程式庫
 
 **問題：哪裡可以深入了解 Flask？**
 
-**解答**：請參閱 Flask 文件，從 [Flask 快速入門](http://flask.pocoo.org/docs/0.12/quickstart/#quickstart) \(英文\) 開始。
+**答**：請從 [Flask Quickstart](http://flask.pocoo.org/docs/0.12/quickstart/#quickstart) (Flask 快速入門) 開始參考 Flask 文件。
 
 ## <a name="run-the-application"></a>執行應用程式
 
@@ -140,7 +140,7 @@ Python 中的 Web 應用程式幾乎一律使用許多可用的 Python 程式庫
 
 **問題：啟動但不偵錯命令和開始偵錯之間有何差異？**
 
-**解答**：您使用 [開始偵錯] 在 [Visual Studio 偵錯工具](../python/debugging-python-in-visual-studio.md)的環境中執行應用程式，可讓您設定中斷點、檢查變數，以及一行一行地逐步執行程式碼。 在偵錯工具中，應用程式可能會執行得較慢，原因是有各種不同的攔截程序在進行偵錯。 相反地，[開始偵錯] 會直接執行應用程式，就像是您從命令列執行它一樣，沒有任何偵錯內容，而且也會自動啟動瀏覽器並瀏覽到專案屬性的 [偵錯] 索引標籤中指定的 URL。
+**答**：您可以使用 [開始偵錯] 在 [Visual Studio 偵錯工具](../python/debugging-python-in-visual-studio.md)的內容中執行應用程式，讓您設定中斷點、檢查變數，以及逐行執行程式碼。 在偵錯工具中，應用程式可能會執行得較慢，原因是有各種不同的攔截程序在進行偵錯。 相反地，[開始偵錯] 會直接執行應用程式，就像是您從命令列執行它一樣，沒有任何偵錯內容，而且也會自動啟動瀏覽器並瀏覽到專案屬性的 [偵錯] 索引標籤中指定的 URL。
 
 ## <a name="next-steps"></a>後續步驟
 
@@ -151,10 +151,10 @@ Python 中的 Web 應用程式幾乎一律使用許多可用的 Python 程式庫
 
 因為您在本快速入門遵循的步驟都相當一般，您可能已經猜到可以且應該將它們自動化。 這類自動化就由 Visual Studio 專案範本負責。 如需建立類似於您在本文中所建立 Web 應用程式但使用較少步驟的示範，請檢閱[快速入門 - 使用範本建立 Python 專案](../python/quickstart-02-python-in-visual-studio-project-from-template.md)。
 
-若要繼續更完整的 Visual Studio Python 教學課程，包括使用互動式視窗、偵錯、資料視覺效果，以及使用 Git，請檢閱[教學課程：Visual Studio 中的 Python 使用者入門](../python/tutorial-working-with-python-in-visual-studio-step-01-create-project.md)。
+若要繼續更完整的 Visual Studio Python 教學課程，包括使用互動式視窗、偵錯、資料視覺效果，以及使用 Git，請前往[教學課程：Visual Studio 中的 Python 入門](../python/tutorial-working-with-python-in-visual-studio-step-01-create-project.md)。
 
 若要深入探索 Visual Studio 所提供的各項功能，請選取下列連結。
 
 - 了解 [Visual Studio 中的 Python Web 應用程式範本](../python/python-web-application-project-templates.md)。
 - 深入了解 [Python 偵錯](../python/debugging-python-in-visual-studio.md)
-- 深入了解一般的 [Visual Studio IDE](../ide/visual-studio-ide.md)。
+- 深入了解一般的 [Visual Studio IDE](../get-started/visual-studio-ide.md)。

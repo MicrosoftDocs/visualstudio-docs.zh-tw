@@ -5,15 +5,15 @@ ms.prod: visual-studio-dev15
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d821d736bc73dbc64c947396ead683f59c4be0b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6755ab33f3d68a4cfdedbd9835fbde62532b504d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53897809"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55042630"
 ---
 # <a name="keyboard-shortcuts-for-visual-studio"></a>Visual Studio 的鍵盤快速鍵
 

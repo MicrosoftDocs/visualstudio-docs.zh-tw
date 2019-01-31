@@ -23,15 +23,15 @@ helpviewer_keywords:
 ms.assetid: 386e9524-be17-4573-83fb-4f7c5cae0be0
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 18ea526fdff312ce46cdb63b6c74e0e0a2600116
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3d3d65d888b2de32bc19235bc34acb9ce2a1d535
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53906744"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54969505"
 ---
 # <a name="send-messages-to-the-output-window"></a>傳送訊息至 [輸出] 視窗
 

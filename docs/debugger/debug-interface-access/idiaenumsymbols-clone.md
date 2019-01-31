@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 5c542025-98cf-4307-901f-b9430f780cf0
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d665be2d4bbebe58cc834b92283bfc14a702b34
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: baea8fb7d0bf43f648cd4201bef74c97e91db7ee
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53825918"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55042734"
 ---
 # <a name="idiaenumsymbolsclone"></a>IDiaEnumSymbols::Clone
 建立列舉值，包含目前的列舉值相同的列舉型別狀態。  

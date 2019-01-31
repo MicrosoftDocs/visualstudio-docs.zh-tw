@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: c0a2bf21-8fa5-4457-9281-f599beb53e7d
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7cf31fed530447af986d96418d06cf46f02b14b1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d448111a9bac5d03fe3bc8e7ba35c0f9fed1d4a6
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53907809"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55020460"
 ---
 # <a name="code-snippet-functions"></a>程式碼片段函式
 

@@ -6,17 +6,17 @@ ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 5f808314639c72f530e64c4ccac08c49439c6818
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 76cdaadc8258acd3ed0ea87b69a6446b4ad920df
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53858275"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54929188"
 ---
 # <a name="set-up-unit-testing-for-python-code"></a>設定 Python 程式碼的單元測試
 

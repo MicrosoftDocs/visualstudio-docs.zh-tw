@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 64173505-8bfb-41cf-a0de-b9075173f3a2
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 45199d736e1402c67ca84ced8db95d81534a7c3a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f394acb8ef939b3d550ed0966fe002aab75b6b22
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53852910"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55001952"
 ---
 # <a name="how-to-sign-application-and-deployment-manifests"></a>HOW TO：簽署應用程式與部署資訊清單
 

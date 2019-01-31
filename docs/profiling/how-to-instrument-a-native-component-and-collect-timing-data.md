@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 36883074-9be8-4e90-a66f-7e87f21fcd30
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b8f98e0c9e0277849b967bbba784b4b81395c713
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b4fc93e6481763c7970a5b7b962692b4d8d3b3ef
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53857282"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54997776"
 ---
 # <a name="how-to-instrument-a-native-stand-alone-component-and-collect-timing-data-with-the-profiler-from-the-command-line"></a>HOW TO：從命令列使用分析工具以檢測原生獨立元件並收集計時資料
 本主題描述如何使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具命令列工具來檢測原生元件 (例如 C++ .*exe* 或 .*dll* 檔案)，並收集詳細的計時資料。  

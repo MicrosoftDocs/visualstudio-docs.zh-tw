@@ -6,15 +6,15 @@ f1_keywords:
 - vs.performance.property.general
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b3dce2f53ef0e16563ff73d188e5d475c42bf0fb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4cc99869276588da43a897e7b087f6e1251651b7
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53896405"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55026771"
 ---
 # <a name="set-general-performance-session-options"></a>設定一般效能工作階段選項
 

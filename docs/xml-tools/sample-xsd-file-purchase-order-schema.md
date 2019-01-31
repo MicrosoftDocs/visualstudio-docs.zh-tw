@@ -6,15 +6,15 @@ ms.topic: sample
 ms.assetid: f92b63b5-ec61-43b5-ae1e-63432a7a7e30
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f7b26fdef946d37824c0595821541b3cb2adce20
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9050580d1b21d21095c9d7cb475696d929fb652a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53941475"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54974158"
 ---
 # <a name="sample-xsd-file-purchase-order-schema"></a>XSD 範例檔案：訂購單結構描述
 

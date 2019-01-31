@@ -15,16 +15,16 @@ helpviewer_keywords:
 ms.assetid: 104d1d19-b5a9-4071-b81e-1b3af08e9c7b
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: fc4164ff4cf88edad8c4b0e4e69a41fc18a0b58c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a65b8cbffaefff340297e80f708fa74abe352e6d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53900202"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55037638"
 ---
 # <a name="create-parameterized-tableadapter-queries"></a>建立參數型 TableAdapter 查詢
 

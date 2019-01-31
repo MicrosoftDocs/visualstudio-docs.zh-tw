@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 3468045c-5cc9-4157-9a9d-622452145d27
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c106d05b81878c6d1d48f98a8c72358cfef3c6cf
-ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
+ms.openlocfilehash: 4d6554a167bd4515b65482a00ed724bf47e53dc2
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "54227456"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54923554"
 ---
 # <a name="upgrade-devenvexe"></a>/Upgrade (devenv.exe)
 

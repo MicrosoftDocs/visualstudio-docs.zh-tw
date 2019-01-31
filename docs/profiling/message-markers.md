@@ -7,15 +7,15 @@ f1_keywords:
 ms.assetid: 721f40ca-5af2-4a01-b8b6-2b90f6cb7f89
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 13cd156263584fb65c2e69df9f86e4610fc5eb3a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: afdd3c12535c86f5fc7b4a3270613568f9fd997e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53846499"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55033787"
 ---
 # <a name="message-markers"></a>訊息標記
 訊息標記表示記錄檔輸出。 訊息是由特定執行緒在特定時間發出的字串。 您可以將訊息匯出成文字檔，以便與其他工具搭配使用。 您可以將指標放在並行視覺化檢視中的訊息上，以檢視訊息字串。 您可以在[標記報表](../profiling/markers-report.md)中檢視所有訊息標記。  下圖顯示訊息標記。  

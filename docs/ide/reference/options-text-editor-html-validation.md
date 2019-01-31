@@ -8,15 +8,15 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.HTML.Validation
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fad568f43e1064fe264c528d68a39b072bf905db
-ms.sourcegitcommit: d0b02affd24e66efed924c197824f35f823e3240
+ms.openlocfilehash: 7f629a0b8d9f149ee10f7a35c75e351a6c3abfd3
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/21/2019
-ms.locfileid: "54417820"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55031769"
 ---
 # <a name="options-text-editor-html-web-forms-validation"></a>選項、文字編輯器、HTML (Web Form)、驗證
 
@@ -27,7 +27,7 @@ ms.locfileid: "54417820"
 - **將 doctype 用於驗證結構描述偵測**
 
    結構描述決定在該結構描述中有效的元素、屬性和大小寫。 也決定可在 IntelliSense 中使用哪些標籤和屬性。
-  
+
    若您想要 Visual Studio 使用頁面的 **<!DOCTYPE>** 宣告與 **html** 元素來決定結構描述，請選取此選項。 例如，若您選取此選項且頁面有 `<!DOCTYPE html>` 宣告，則 Visual Studio 會使用 HTML5 結構描述。 不過，如果 **html** 標籤有 **xmlns** 屬性 (例如 `<html xmlns="http://www.w3.org/1999/xhtml">`)，則 Visual Studio 會使用 XHTML5 結構描述。
 
 - **找不到 doctype 時的目標**
@@ -37,7 +37,7 @@ ms.locfileid: "54417820"
   - **顯示錯誤**
 
      選取核取方塊以啟用驗證。 如果未選取核取方塊，編輯器不會標示驗證錯誤。
-    
+
      其他核取方塊可讓您微調驗證，您可以指定編輯器要標示的個別錯誤類型。
 
      > [!NOTE]

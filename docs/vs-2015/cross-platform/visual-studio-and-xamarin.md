@@ -1,30 +1,25 @@
 ---
 title: Visual Studio 和 Xamarin | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- tgt-pltfrm-cross-plat
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: tgt-pltfrm-cross-plat
+ms.topic: conceptual
 ms.assetid: 1da4064f-af69-472c-8f31-98484be5f790
 caps.latest.revision: 14
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: d43a76f6ae795017ca8e0d4dc898faca1ee2b48b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.openlocfilehash: 99f36287c6ab1aa6b8157e6dde2a84bb97233fcb
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51788078"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54766954"
 ---
 # <a name="visual-studio-and-xamarin"></a>Visual Studio 和 Xamarin
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
-Xamarin 是行動應用程式開發平台，可從通用 C#/.NET 程式碼基底建置原生 iOS、Android 和 Windows 應用程式，以在平台之間重複使用 75% 到將近 100% 的程式碼。 使用 Xamarin 和 C# 撰寫的應用程式可完整存取基礎平台 API，而且能夠建置原生使用者介面，並編譯為平台專用的封裝，因此不會對執行階段效能造成太大的影響。 (注意︰Xamarin 也支援 F#，但本文將只著重在 C#。 目前不支援 Visual Basic。)  
+Xamarin 是行動應用程式開發平台，可從通用 C#/.NET 程式碼基底建置原生 iOS、Android 和 Windows 應用程式，以在平台之間重複使用 75% 到將近 100% 的程式碼。 使用 Xamarin 和 C# 撰寫的應用程式可完整存取基礎平台 API，而且能夠建置原生使用者介面，並編譯為平台專用的封裝，因此不會對執行階段效能造成太大的影響。 注意:Xamarin 也支援F#，但本文將著重在C#只。 目前不支援 Visual Basic。)  
   
  更棒的是，熟悉 C#、.NET 和 Visual Studio 的開發人員在使用 Xamarin 開發行動應用程式時，不需要了解 Objective-C 或 Java 等機器碼語言，也能享有相同的功能和產能，包括在 Android、iOS 和 Windows 裝置上進行遠端偵錯。 因此，許多具有美觀使用者介面的高效能應用程式 (例如 NASCAR、Aviva 和 MixRadio) 意料之中都是使用 Xamarin 所建置。  
   
@@ -45,4 +40,3 @@ Xamarin 是行動應用程式開發平台，可從通用 C#/.NET 程式碼基底
   
 > [!NOTE]
 >  如果您想要尋求以 HTML 和 CSS 為基礎的跨平台開發解決方案，請試試 Visual Studio Tools for Apache Cordova，如 [Visual Studio 中的跨平台開發](../cross-platform/cross-platform-mobile-development-in-visual-studio.md#HTML)所述。
-

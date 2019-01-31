@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: db31a16b-960f-4264-91d7-c7c40f876068
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 611bb0d2c3c828be5f8eaa10f3baeaafca1c8f37
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 26fdadf92fa94efe0a08fdf090e5a295e2f65096
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53854772"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54999973"
 ---
 # <a name="how-to-disable-url-activation-of-clickonce-applications"></a>HOW TO：停用 ClickOnce 應用程式的 URL 啟動
 

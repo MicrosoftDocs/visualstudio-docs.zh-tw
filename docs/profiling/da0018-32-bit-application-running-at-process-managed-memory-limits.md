@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: 98eb2d96-f92f-42f9-915c-e5ac2330ffbf
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: c3a4424394a98e9a4c4fb1d023f26ff2f1ce722e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 65ee298aab44613f87764bc66d901476e6ccbfd4
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53881272"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55070379"
 ---
 # <a name="da0018-32-bit-application-running-at-process-managed-memory-limits"></a>DA0018：32 位元應用程式正以處理序受控記憶體限制執行
 

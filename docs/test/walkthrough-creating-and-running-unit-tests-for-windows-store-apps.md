@@ -9,16 +9,16 @@ helpviewer_keywords:
 - unit tests, UWP apps
 - unit tests, running
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - uwp
 author: gewarren
-ms.openlocfilehash: 1aa81512b06546ea2af89faf545db3a86da08218
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3495cef6fd14e6f8cf56da0838f1649c3a3fcb25
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53917156"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54981541"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-uwp-apps"></a>逐步解說：建立並執行 UWP App 的單元測試
 

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: e47af672-9785-4899-bd45-4d9dda3c396f
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3dea7eca97ed938271977fea8e8fa5e41dbd19aa
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: abca09620c82ba41f3acec5f878c621f6af02ae8
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53933699"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55038847"
 ---
 # <a name="cores-view"></a>核心檢視
 [核心檢視] 顯示執行緒的執行如何對應至邏輯處理器核心 (選擇 [分析] > [並行視覺化檢視] 來啟動並行視覺化檢視)。 如果您要撰寫伺服器應用程式，此檢視可使用執行緒同質性或執行緒集區管理協助您最佳化快取效能。 它也可以協助您檢查使用執行緒同質性可能讓跨核心移轉問題惡化的情況。 核心檢視有兩個部分：圖形和圖例。  

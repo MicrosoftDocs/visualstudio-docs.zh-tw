@@ -5,15 +5,15 @@ ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c8fb33e1b6df6cd43aaaba9c38123ff7b941da5c
-ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
+ms.openlocfilehash: 97caa6bac07839d962693914c8bbd22869f7e488
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/14/2019
-ms.locfileid: "54269965"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54969401"
 ---
 # <a name="how-to-view-and-edit-code-by-using-peek-definition-altf12"></a>HOW TO：使用查看定義 (Alt+F12) 檢視及編輯程式碼
 

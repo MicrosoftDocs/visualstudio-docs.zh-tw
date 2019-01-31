@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 3c0b5386-321f-4f8f-85cc-e2ee7b4cc3d2
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a923e323f4ca9dc7f661457add7665f8c136ae92
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3b5582990ff3db2e03dce9dc0c198a907de978d9
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53824453"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54971071"
 ---
 # <a name="idiainjectedsourcegetsource"></a>IDiaInjectedSource::get_source
 擷取來源的程式碼位元組。  
@@ -43,7 +43,7 @@ HRESULT get_source ( 
  [out]要填入來源位元組的緩衝區。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回 `S_OK`。 傳回`S_FALSE`不支援這個屬性，則為。 反之則傳回錯誤碼。  
+ 如果成功，會傳回 `S_OK`。 傳回`S_FALSE`不支援這個屬性，則為。 反之則傳回錯誤碼。  
   
 ## <a name="see-also"></a>請參閱  
  [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)

@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 3f7629d1-1cdf-4046-9a31-0632517f234d
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ed964723265015d0305fce156cb81bf593123e38
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 900a765bf35b9441027d7a389be0fa1f1b2cfdd4
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53891757"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54969349"
 ---
 # <a name="how-to-change-fonts-and-colors-for-the-editor-in-visual-studio-2017"></a>HOW TO：在 Visual Studio 2017 中變更編輯器的字型和色彩
 

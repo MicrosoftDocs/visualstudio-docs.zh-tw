@@ -7,15 +7,15 @@ helpviewer_keywords:
 - unit testing, create unit test plans
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 557102378757919abfff4280e4a8d842707c74a9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b0ac3acc8b5addf02e510943b6b61ce1c5f0c5b1
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53959505"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54999752"
 ---
 # <a name="get-started-with-unit-testing"></a>開始使用單元測試
 

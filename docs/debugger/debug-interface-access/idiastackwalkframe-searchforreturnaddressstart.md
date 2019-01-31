@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 47660b9b-6e4f-4dfa-88ab-63dce28f7412
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1dd00d6e515e26ae5b2c7c8f90e29220ec1e1564
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1a9c1e28c458ad863248235166df03cb2ae4f8a3
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53961708"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54931228"
 ---
 # <a name="idiastackwalkframesearchforreturnaddressstart"></a>IDiaStackWalkFrame::searchForReturnAddressStart
 搜尋指定的堆疊框架的地址，位於或接近指定的位址。  

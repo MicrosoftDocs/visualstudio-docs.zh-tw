@@ -1,13 +1,9 @@
 ---
 title: 建立離線安裝 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: vs-ide-install
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - offline installation
 - offline install
@@ -16,13 +12,13 @@ ms.assetid: 85d65709-42be-449f-9663-914bf1045089
 caps.latest.revision: 22
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.openlocfilehash: 78a737c953446773c8788875d1924ce21f64f599
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 8d76e4b1c9a7f7b6882eccab4a250e95c7419ea0
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53964701"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54763129"
 ---
 # <a name="create-an-offline-installation-of-visual-studio"></a>建立 Visual Studio 的離線安裝
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 639e430b-6d2d-46bd-b738-8c60dfb384f1
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 015dc86890c6d60cf7326a554aa419ac0fe1645c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7bcf2c97e26e61b72a1279a11e8c95474099c3d6
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53986475"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54918560"
 ---
 # <a name="quickstart-debug-with-c-using-the-visual-studio-debugger"></a>快速入門：使用 Visual Studio 偵錯工具對 C++ 進行偵錯
 

@@ -16,13 +16,13 @@ ms.assetid: 74dca14c-5071-416f-a92b-d09f95e3dfb8
 caps.latest.revision: 1
 author: bowdenk7
 ms.author: wilkelly
-manager: douge
-ms.openlocfilehash: 1045c515870d2574bfb86d12396c5572b01ddda4
-ms.sourcegitcommit: 8bfabab73b39b3b3e68a3e8dc225515e8b310fed
+manager: jillfra
+ms.openlocfilehash: ee22803c7a479c6d22821a9a6b267cd72938792e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "54398391"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55012998"
 ---
 # <a name="javascript-in-visual-studio-2017"></a>Visual Studio 2017 中的 JavaScript
 
@@ -206,7 +206,8 @@ var x = React.createElement(comps_1.RepoDisplay, {description: "test"});
   }
 }
 ```
-# <a name="troubleshooting-the-javascript-language-service-has-been-disabled-for-the-following-projects"></a>「下列專案已停用 JavaScript Language Service」的疑難排解
+
+## <a name="troubleshooting-the-javascript-language-service-has-been-disabled-for-the-following-projects"></a>「下列專案已停用 JavaScript Language Service」的疑難排解
 當您開啟具有極大量內容的 JavaScript 專案時，可能會收到「下列專案已停用 JavaScript Language Service」訊息。 會有極大量 JavaScript 原始碼的最常見原因，是因為包含了具有超過 20 MB 專案限制的原始碼程式庫。
 
 有一個將專案最佳化的簡單方法，是在專案根目錄中新增 `tsconfig.json` 檔案，讓語言服務知道哪些檔案可安全忽略。 使用下方範例來排除儲存了程式庫的常用目錄：
@@ -231,7 +232,7 @@ var x = React.createElement(comps_1.RepoDisplay, {description: "test"});
 }
 ```
 
-根據您的需要新增更多目錄。 其他範例包括 "vendor" 或 "wwwroot/lib" 目錄。 
+根據您的需要新增更多目錄。 其他範例包括 "vendor" 或 "wwwroot/lib" 目錄。
 
 > [!NOTE]
 > 編譯器屬性 `disableSizeLimit` 也可用來停用 20 MB 的檢查限制。 使用此屬性時請務必特別注意，因為停用限制可能會造成語言服務當機。

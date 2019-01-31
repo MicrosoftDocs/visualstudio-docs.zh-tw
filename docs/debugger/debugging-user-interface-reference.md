@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 57f1cad8-c908-42bf-8ec5-6eb567df08e9
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1f68fdea35b8b6291ddb53e604510caf7ffc0ba1
-ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
+ms.openlocfilehash: 72bb0d5bdb432e38ad507ccd2113bb1b9bc2f5a3
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/14/2019
-ms.locfileid: "54269484"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55018640"
 ---
 # <a name="debugging-user-interface-reference"></a>偵錯使用者介面參考
 偵錯應用程式時，可能發現下列對話方塊。  

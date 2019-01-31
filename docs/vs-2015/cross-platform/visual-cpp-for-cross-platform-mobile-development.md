@@ -1,27 +1,22 @@
 ---
 title: 適用於跨平台行動裝置開發的 Visual C++ | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- tgt-pltfrm-cross-plat
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-mobile
+ms.topic: conceptual
 dev_langs:
 - C++
 ms.assetid: 0bb872d6-981b-4c96-9143-fcec5336bf0d
 caps.latest.revision: 12
 author: corob-msft
 ms.author: corob
-manager: ghogen
-ms.openlocfilehash: 1e0dfe11fc35ed452010592548e4bd2cba63e14b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: c2ff6555be6f8189ff085e203890891f5345d3c4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51781110"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54778299"
 ---
 # <a name="visual-c-for-cross-platform-mobile-development"></a>適用於跨平台行動裝置開發的 Visual C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -113,4 +108,3 @@ ms.locfileid: "51781110"
 4.  [Build an OpenGL ES Application on Android and iOS](../cross-platform/build-an-opengl-es-application-on-android-and-ios.md)  
   
 5.  [Cross-Platform Mobile Development Examples](../cross-platform/cross-platform-mobile-development-examples.md)
-

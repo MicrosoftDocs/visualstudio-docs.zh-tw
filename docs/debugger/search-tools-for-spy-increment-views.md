@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: db0c32cf-8e50-4e1b-9a9f-4c07fd6a2163
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a2559fccf87fcd964a70d2c111d4b20e772e1585
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 81725869c85ea5050a4bf4df7a7bc00f82ddb9e0
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53821084"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54952233"
 ---
 # <a name="search-tools-for-spy-views"></a>Spy++ 檢視的搜尋工具
 您可以使用這些對話方塊來指定 Spy + + 檢視視窗會顯示哪些資料：  

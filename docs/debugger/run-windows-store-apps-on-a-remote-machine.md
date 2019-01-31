@@ -10,15 +10,15 @@ dev_langs:
 ms.assetid: 0f6814d6-cd0d-49f3-b501-dea8c094b8ef
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 8fec6295fce7f100b0dc8c602a41f95e1af7d64f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9125887789cdeee3152f9ebf3e2c82cf523cc468
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53892247"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54932762"
 ---
 # <a name="debug-uwp-apps-on-remote-machines-from-visual-studio"></a>從 Visual Studio 的遠端電腦上的 UWP 應用程式進行偵錯
   

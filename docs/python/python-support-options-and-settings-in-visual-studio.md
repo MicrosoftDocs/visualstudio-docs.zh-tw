@@ -14,16 +14,16 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.Python.Advanced
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 7223d2b39630ab76c915b9e1db68967e3777fd24
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: cc107c4679c9e270518281636ddf5f5a83c108f4
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53889133"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55000818"
 ---
 # <a name="options-for-python-in-visual-studio"></a>Visual Studio 中 Python 的選項
 

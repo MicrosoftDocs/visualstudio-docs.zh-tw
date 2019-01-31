@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: f7d48602-ba32-4487-b51a-89e596124108
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5bfc05c208a072fbe1e17eeafdebb938b33aaaf4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c30cadc2ab781712deebf7edb6fda47fce5eb724
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53967290"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55035402"
 ---
 # <a name="cores-view-zoom-tool"></a>核心檢視縮放工具
 [縮放] 控制項是可讓您放大和縮小時間軸的滑桿，以專注在特別感興趣的區域。 此控制項會放大目前檢視的中心，以在放大之前調整檢視。  

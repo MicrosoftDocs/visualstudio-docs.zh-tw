@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: ed8ac02d-b38f-4055-82fb-67757c2ccbb9
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4619876794abb07a76a38af78d21e51f8a1e86dc
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: cad880d3c16d2118364a0d9fbce17261b814619b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53863965"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54931892"
 ---
 # <a name="walkthrough-missing-objects-due-to-misconfigured-pipeline"></a>逐步解說：因管線設定錯誤而遺漏的物件
 此逐步解說示範如何使用 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 圖形診斷工具來調查因為沒有設定像素著色器而遺失的物件。  

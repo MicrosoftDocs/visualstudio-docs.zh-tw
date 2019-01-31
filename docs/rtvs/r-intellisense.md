@@ -6,15 +6,15 @@ ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: eaa56759476a2cecc557c4610a6b9e321b9b91ff
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3ce62d81a3a6fce4e59d43f088d06f0af7385708
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53959556"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55024080"
 ---
 # <a name="intellisense"></a>IntelliSense
 

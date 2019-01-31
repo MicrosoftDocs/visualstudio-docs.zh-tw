@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: ddc7d794-c622-4c63-b2a6-72f8b2d0022a
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1325d32c3656a45cab41bd174596113a18c5f58c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 56ed4b317dc9259458ddb9f984c5d086595d7846
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53936902"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55033917"
 ---
 # <a name="compilanddetails"></a>CompilandDetails
 編譯模組的資訊分割成具有符號`SymTagCompiland`標記 （低詳細資料） 和`SymTagCompilandDetails`標記 （高詳細資料）。 `SymTagCompilandDetails` 需要載入其他符號。 不過，它提供豐富的資訊不適用於編譯模組`SymTagCompiland`符號。  

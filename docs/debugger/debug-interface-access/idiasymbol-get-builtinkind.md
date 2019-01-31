@@ -7,15 +7,15 @@ dev_langs:
 ms.assetid: 953e6dba-582e-4b76-b736-898b92e5693e
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bbfa28749e01ad6874e10fd1a17243f79536e694
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9666808d5f75cb1de8b33751b3272f3a04d6ec83
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53966183"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54917364"
 ---
 # <a name="idiasymbolgetbuiltinkind"></a>IDiaSymbol::get_builtInKind
 擷取 HLSL 型別的內建類型。  

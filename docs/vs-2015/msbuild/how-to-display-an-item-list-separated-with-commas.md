@@ -1,14 +1,9 @@
 ---
-title: 如何：顯示以逗號分隔的項目清單 | Microsoft Docs
-ms.custom: ''
+title: HOW TO：顯示以逗號分隔的項目清單 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, separating items with semicolons
 - MSBuild, formatting item collections
@@ -16,15 +11,15 @@ ms.assetid: 3cae844c-7c6d-4144-82dc-efad10ba458f
 caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: c9de7655335d2937a31cc2d63f5220fbf5415745
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 20df19f09dd31e428555831b98bfd0b3c9360233
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49195867"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54765021"
 ---
-# <a name="how-to-display-an-item-list-separated-with-commas"></a>如何：顯示以逗號分隔的項目清單
+# <a name="how-to-display-an-item-list-separated-with-commas"></a>HOW TO：顯示以逗號分隔的項目清單
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
@@ -75,9 +70,6 @@ ms.locfileid: "49195867"
 </Project>  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [MSBuild 參考](../msbuild/msbuild-reference.md)   
  [項目](../msbuild/msbuild-items.md)
-
-
-

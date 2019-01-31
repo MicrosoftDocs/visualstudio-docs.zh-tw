@@ -1,14 +1,9 @@
 ---
 title: MSBuild 工作 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#MSBuild
 dev_langs:
@@ -23,13 +18,13 @@ ms.assetid: 76577f6c-7669-44ad-a840-363e37a04d34
 caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 3782db2b2c3fb3cdc5d0cc9ed21459c2b2215250
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 15a6f0d3a0a50068d05a96994cb01462f07f3258
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49878254"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54772333"
 ---
 # <a name="msbuild-task"></a>MSBuild 工作
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,19 +35,19 @@ ms.locfileid: "49878254"
 ## <a name="parameters"></a>參數  
  下表說明 `MSBuild` 工作的參數。  
   
-|參數|描述|  
+|參數|說明|  
 |---------------|-----------------|  
 |`BuildInParallel`|選擇性的 `Boolean` 參數。<br /><br /> 如果是 `true`，同時也會建置 `Projects` 參數中指定的專案 (如果可能)。 預設為 `false`。|  
 |`Projects`|必要的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 指定要建置的專案檔。|  
-|`Properties`|選擇性的 `String` 參數。<br /><br /> 作為全域屬性套用至子專案的屬性名稱/值組的分號分隔清單。 當您指定此參數時，它在功能上相當於當您使用 [MSBuild.exe](../msbuild/msbuild-command-line-reference.md) 建置時，設定具有 **/property** 參數的屬性。 例如: <br /><br /> `Properties="Configuration=Debug;Optimize=$(Optimize)"`<br /><br /> 當您透過 `Properties` 參數將屬性傳遞至專案時，[!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 會建立專案的新執行個體，即使已經載入專案檔也一樣。 建立專案的新執行個體之後，[!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 會將它視為具有不同全域屬性，且可使用專案的其他執行個體同時建置的不同專案。 例如，Release 組態可以與 Debug 組態同時建置。|  
+|`Properties`|選擇性的 `String` 參數。<br /><br /> 作為全域屬性套用至子專案的屬性名稱/值組的分號分隔清單。 當您指定此參數時，它在功能上相當於當您使用 [MSBuild.exe](../msbuild/msbuild-command-line-reference.md) 建置時，設定具有 **/property** 參數的屬性。 例如：<br /><br /> `Properties="Configuration=Debug;Optimize=$(Optimize)"`<br /><br /> 當您透過 `Properties` 參數將屬性傳遞至專案時，[!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 會建立專案的新執行個體，即使已經載入專案檔也一樣。 建立專案的新執行個體之後，[!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 會將它視為具有不同全域屬性，且可使用專案的其他執行個體同時建置的不同專案。 例如，Release 組態可以與 Debug 組態同時建置。|  
 |`RebaseOutputs`|選擇性的 `Boolean` 參數。<br /><br /> 如果是 `true`，已建置的專案中目標輸出項目的相對路徑就會將其路徑調整為相對於呼叫的專案。 預設為 `false`。|  
 |`RemoveProperties`|選擇性的 `String` 參數。<br /><br /> 指定要移除的全域屬性組。|  
 |`RunEachTargetSeparately`|選擇性的 `Boolean` 參數。<br /><br /> 如果是 `true`，[!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 工作即會一次一個叫用傳遞至 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 之清單中的每個目標，而不是同時叫用。 將此參數設定為 `true`，可保證即使先前叫用的目標失敗，還是會叫用後續的目標。 否則，建置錯誤便會停止叫用所有後續的目標。 預設為 `false`。|  
 |`SkipNonexistentProjects`|選擇性的 `Boolean` 參數。<br /><br /> 如果是 `true`，將會略過不存在於磁碟上的專案檔。 否則，這類專案將會造成錯誤。|  
 |`StopOnFirstFailure`|選擇性的 `Boolean` 參數。<br /><br /> 如果是 `true`，則當其中一個專案無法建置時，將無法建置其他專案。 目前在 (使用多個處理器) 同時建置時不支援此功能。|  
 |`TargetAndPropertyListSeparators`|選擇性的 `String[]` 參數。<br /><br /> 指定目標和屬性的清單做為 `Project` 中繼資料。 處理之前將不會逸出分隔符號。 例如，%3B (逸出的 ';') 將會被視為是未逸出的 ';'。|  
-|`TargetOutputs`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 唯讀輸出參數。<br /><br /> 傳回所有專案檔中建置目標的輸出。 只會傳回所指定目標的輸出，而非可能存在於這些目標所依存的任何輸出。<br /><br /> `TargetOutputs` 參數也會包含下列中繼資料：<br /><br /> -   `MSBuildSourceProjectFile`：[!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 專案檔，包含設定輸出的目標。<br />-   `MSBuildSourceTargetName`：設定輸出的目標。 **注意︰** 如果您想要分別找出每個專案檔或目標的輸出，請針對每個專案檔或目標個別執行 `MSBuild` 工作。 如果您只執行 `MSBuild` 工作一次來建置所有專案檔，即會將所有目標的輸出收集到一個陣列。|  
-|`Targets`|選擇性的 `String` 參數。<br /><br /> 指定要在專案檔中建置的一或多個目標。 請使用分號分隔目標名稱清單。 如果未在 `MSBuild` 工作中指定目標，即會建置專案檔中指定的預設目標。 **注意︰** 目標必須存在於所有的專案檔中。 如果沒有，就會發生建置錯誤。|  
+|`TargetOutputs`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 唯讀輸出參數。<br /><br /> 傳回所有專案檔中建置目標的輸出。 只會傳回所指定目標的輸出，而非可能存在於這些目標所依存的任何輸出。<br /><br /> `TargetOutputs` 參數也會包含下列中繼資料：<br /><br /> -   `MSBuildSourceProjectFile`：[!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 專案檔，包含設定輸出的目標。<br />-   `MSBuildSourceTargetName`：設定輸出的目標。 **注意：** 如果您想要分別找出每個專案檔或目標的輸出，請針對每個專案檔或目標個別執行 `MSBuild` 工作。 如果您只執行 `MSBuild` 工作一次來建置所有專案檔，即會將所有目標的輸出收集到一個陣列。|  
+|`Targets`|選擇性的 `String` 參數。<br /><br /> 指定要在專案檔中建置的一或多個目標。 請使用分號分隔目標名稱清單。 如果未在 `MSBuild` 工作中指定目標，即會建置專案檔中指定的預設目標。 **注意：** 目標必須存在於所有的專案檔中。 如果沒有，就會發生建置錯誤。|  
 |`ToolsVersion`|選擇性的 `String` 參數。<br /><br /> 指定要在將建置中專案傳遞給此工作時使用 `ToolsVersion`。<br /><br /> 讓 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 工作能夠建置目標為與專案中所指定的 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 不同版本的專案。 有效值為 `2.0`、`3.0` 及 `3.5`。 預設值為 `3.5`。|  
 |`UnloadProjectsOnCompletion`|選擇性的 `Boolean` 參數。<br /><br /> 如果是 `true`，將會在作業完成之後卸載專案。|  
 |`UseResultsCache`|選擇性的 `Boolean` 參數。<br /><br /> 如果是 `true`，將會傳回快取的結果 (如果有的話)。 如果執行 MSBuild 工作，即會在範圍 (ProjectFileName, GlobalProperties)[TargetNames] 內快取它的結果<br /><br /> 做為組建項目清單|  
@@ -195,9 +190,6 @@ ms.locfileid: "49878254"
 </Project>  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [工作](../msbuild/msbuild-tasks.md)   
  [工作參考](../msbuild/msbuild-task-reference.md)
-
-
-

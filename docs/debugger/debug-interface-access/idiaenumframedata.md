@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 2ca7fd5a-b2fa-4b3a-9492-0263eafc435b
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 65917b88144bfe86c9159772588888c590e2cd7e
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.openlocfilehash: 55aba0ff827bde1be1736e7b4dc4e57eb249e144
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "53876285"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55014714"
 ---
 # <a name="idiaenumframedata"></a>IDiaEnumFrameData
 列舉各種資料來源中包含的框架資料項目。  
@@ -107,7 +107,7 @@ void ShowFrameData(IDiaSession *pSession)
   
  **DLL:** msdia80.dll  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [介面 (偵錯介面存取 SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
  [IDiaSession::getEnumTables](../../debugger/debug-interface-access/idiasession-getenumtables.md)   
  [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

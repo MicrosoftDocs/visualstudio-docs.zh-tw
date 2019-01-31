@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 45dd86b2-801e-4b07-a8c4-7bd25641d7f8
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8419ea4f653d870802fd104da2824952b422ab6f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2509b7e3c373cecfe5cd1554805554afbedd2b3f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53867023"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54999310"
 ---
 # <a name="graphics-diagnostics-examples"></a>圖形診斷範例
 這些範例示範如何使用 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 圖形診斷，偵錯 DirectX 應用程式中的呈現問題。  
@@ -52,4 +52,4 @@ ms.locfileid: "53867023"
 ## <a name="debugging-compute-shaders"></a>偵錯計算著色器  
  您可以使用圖形診斷，偵錯產生錯誤結果的 DirectCompute 計算著色器核心。 您可以透過 DirectCompute，使用 GPU 的計算能力來平行執行大量資料項目的計算。 針對特定類型的問題，利用 GPU 的執行速度甚至可能比最佳化的 CPU 程式碼還要快數倍。 不過，傳統偵錯工具偵測不到在 GPU 上執行的程式碼。 偵錯這類程式碼需要特定的工具，而這些特定工具通常是廠商特有的，而且可能未與 Visual Studio 有良好的整合。 為了讓計算著色器在某個 GPU 範圍之間進行更一致的偵錯，圖形診斷會擷取 DirectCompute 分派事件 (除了 Direct3D 呈現事件之外)，讓您可以使用熟悉的工具來偵錯計算著色器程式碼中的問題。  
   
- 示範如何偵錯計算著色器中的 bug 所造成之模擬問題的案例，請參閱[逐步解說：使用圖形診斷來針對計算著色器進行偵錯](walkthrough-using-graphics-diagnostics-to-debug-a-compute-shader.md)
+ 示範如何偵錯計算著色器中的 bug 所造成之模擬問題的案例，請參閱[逐步解說： 使用圖形診斷來偵錯計算著色器](walkthrough-using-graphics-diagnostics-to-debug-a-compute-shader.md)。

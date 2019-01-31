@@ -8,15 +8,15 @@ f1_keywords:
 ms.assetid: 71cf7380-f2c6-436f-a17c-fdd5f90f5865
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 66ab05c4b1d9fb4dcc806f2acb2d1d64ac8a6d68
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0ea0afb82e244f96485da7aa78fa347c5e427494
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53946213"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54992434"
 ---
 # <a name="notifications-environment-options-dialog-box"></a>選項對話方塊、環境、通知
 

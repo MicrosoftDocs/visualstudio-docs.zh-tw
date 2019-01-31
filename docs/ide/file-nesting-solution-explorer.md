@@ -8,13 +8,13 @@ helpviewer_keywords:
 - Solution Explorer, file nesting
 author: angelosp
 ms.author: angelpe
-manager: douge
-ms.openlocfilehash: d4e2767b5b4286dbf57cca6a3b1445cae55fe1a5
-ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
+manager: jillfra
+ms.openlocfilehash: 185aca140804ff8ce21f7a6075825c2a80816880
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/14/2019
-ms.locfileid: "54269277"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55024977"
 ---
 # <a name="customize-file-nesting-in-solution-explorer"></a>自訂 [方案總管] 中的檔案巢狀
 

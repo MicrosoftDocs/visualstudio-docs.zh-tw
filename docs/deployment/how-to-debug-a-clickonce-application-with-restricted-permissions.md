@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 6991ea91-5253-451b-923d-22273a3d38b1
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 880966e78bd2e27159b1ede81c07aa15aa994e75
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 373fa21a0ec588768017bcbcd8b0fdc4587bf091
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53921253"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54976520"
 ---
 # <a name="how-to-debug-a-clickonce-application-with-restricted-permissions"></a>HOW TO：以受限制的權限對 ClickOnce 應用程式進行偵錯
 身為開發人員，您很可能正在以完全信任權限來執行開發電腦，因此在偵錯 ClickOnce 應用程式時，不會看到使用者以受限權限執行時可能看到的相同安全性例外狀況。  

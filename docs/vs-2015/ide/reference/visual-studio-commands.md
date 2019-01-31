@@ -1,13 +1,9 @@
 ---
 title: 命令 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: reference
 helpviewer_keywords:
 - Visual Studio, commands
 - commands, Visual Studio
@@ -16,13 +12,13 @@ ms.assetid: 76ffa394-ee89-4629-aba9-1a62b72e6cc1
 caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 8bfcac20d0facea28734e27cbb60966717cdcdc2
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+manager: jillfra
+ms.openlocfilehash: 17cfc810bbe8cfa303620b19c49941ba9085a849
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "53869803"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54779355"
 ---
 # <a name="visual-studio-commands"></a>Visual Studio 命令
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

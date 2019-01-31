@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 767868d6-a525-425b-a43b-2198f636ab6b
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eb4ccae573813811567033dfa574c94e1bf809b3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c6ccf2d50a0e6c6319da30be09df2b0573d0ce8a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53932112"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54937609"
 ---
 # <a name="new-file-command"></a>新增檔案命令
 建立新的檔案並開啟它。 檔案會顯示其他檔案資料夾之下。

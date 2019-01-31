@@ -12,15 +12,15 @@ helpviewer_keywords:
 - command-line
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4262e3d56793e1c664dc51a46403c8f9996e7bb7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8ae0fb990ee9c7aa6168420a5b5f5144a216165e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53920293"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54975279"
 ---
 # <a name="how-to-define-settings-in-a-response-file"></a>如何在回應檔中定義設定
 

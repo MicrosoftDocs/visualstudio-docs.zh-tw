@@ -20,15 +20,15 @@ helpviewer_keywords:
 ms.assetid: 04b104d0-0bd3-4ccb-b164-1de92d234487
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 44ee28c0e495b0b3868356d6e5a10890937f70a0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ee9d478aa328337d3a2b08c74fcbbf7166580962
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53828351"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55018341"
 ---
 # <a name="code-access-security-for-clickonce-applications"></a>ClickOnce 應用程式的程式碼存取安全性
 ClickOnce 應用程式是以 .NET Framework 為基礎，並且受限於程式碼存取安全性限制。 因此，您必須了解程式碼存取安全性的含意，並照著撰寫 ClickOnce 應用程式。  
@@ -56,7 +56,7 @@ ClickOnce 應用程式是以 .NET Framework 為基礎，並且受限於程式碼
   
  要開始設定權限時，您可以從 [安全性]  頁面上的 [區域]  清單選取安全性區域。 如果您的應用程式可能會從多個區域部署，請選取權限最低的區域。 如需詳細資訊，請參閱[＜How to：為 ClickOnce 應用程式設定安全性區域](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)。  
   
- 可以設定的屬性會因權限集合而不同；並非所有的權限集合都具有可設定的屬性。 如需您的應用程式可以要求的完整權限清單的相關資訊，請參閱 <xref:System.Security.Permissions>。 如需如何設定自訂區域的權限的詳細資訊，請參閱[How to:為 ClickOnce 應用程式設定自訂權限](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)  
+ 可以設定的屬性會因權限集合而不同；並非所有的權限集合都具有可設定的屬性。 如需您的應用程式可以要求的完整權限清單的相關資訊，請參閱 <xref:System.Security.Permissions>。 如需如何設定自訂區域的權限的詳細資訊，請參閱[How to:為 ClickOnce 應用程式設定自訂權限](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)。  
   
 ## <a name="debug-an-application-that-has-restricted-permissions"></a>偵錯具有限制權限的應用程式  
  身為開發人員，您最可能以完全信任權限執行您的開發電腦。 因此，當您在偵錯應用程式時，看不到當使用者以受限制的權限執行時可能看到的相同安全性例外狀況。  

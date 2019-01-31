@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: e280530b-137a-43a7-8643-aa514ab86ed7
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9395f576e942e799312dad2e22be79942110a8ae
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a0c0371992bde7b7ac58551457fa81e2b18a8f56
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53967796"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55006976"
 ---
 # <a name="cvcreatemarkerseries-function"></a>CvCreateMarkerSeries 函式
 建立指定提供者的標記系列。  
@@ -52,7 +52,7 @@ _Check_return_ HRESULT CvCreateMarkerSeriesA(
  成功建立標記系列時傳回 S_OK，發生任何錯誤時則傳回錯誤碼。 您可以使用 SUCCEEDED/FAILED 巨集檢查是否有錯誤狀況。  
   
 ## <a name="requirements"></a>需求  
- **標頭︰***cvmarkers.h*  
+ **標頭︰** *cvmarkers.h*  
   
  **Unicode：** CvCreateMarkerSeriesW  
   

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: ddfa1617-bd0f-4187-ba77-a225bab93a95
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d9bf36c1a02fd80c36b362e1f250f5259ebb3260
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 42f0048c3909ad141c40629dcd8a643cb4986dfa
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53952900"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54996151"
 ---
 # <a name="idiasymbolgetupperboundid"></a>IDiaSymbol::get_upperBoundId
 擷取的符號識別項的 FORTRAN 陣列維度的上限。  

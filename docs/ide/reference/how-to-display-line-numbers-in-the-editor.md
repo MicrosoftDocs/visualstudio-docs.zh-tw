@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 40b38559-b8de-4041-91f2-68986767c976
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7b76ac306607dae5fbeaa015bf3f41eb787bf0f2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b64d6069c4f1c1fe8a823a7acae30908c438632d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53882535"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55022517"
 ---
 # <a name="how-to-display-line-numbers-in-the-editor"></a>HOW TO：顯示編輯器中的行號
 

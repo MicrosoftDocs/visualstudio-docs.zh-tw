@@ -22,15 +22,15 @@ helpviewer_keywords:
 ms.assetid: 6fe97aac-2131-4615-bd92-d3afee741558
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a966709ed4b3fbb773d9f91726f4f79289af5504
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 48e0cf526d6fadcb1b91206d6e1958d89d3bdfe5
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53864465"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54949957"
 ---
 # <a name="continuing-execution-after-an-exception"></a>例外狀況之後繼續執行
 當偵錯工具中斷執行，因為發生例外狀況時，您會看到**例外狀況協助程式**，根據預設。 如果您已停用**例外狀況協助程式**中**選項** 對話方塊中，您會看到**例外狀況助理**(C#或 Visual Basic) 或**例外狀況**對話方塊 （c + +）。  

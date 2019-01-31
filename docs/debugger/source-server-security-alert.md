@@ -12,15 +12,15 @@ dev_langs:
 ms.assetid: 8451c281-6914-469c-b80c-6271cc3f3d17
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e01f9c06ec989829a27c58b7dae9b128512911e9
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.openlocfilehash: f732586581c1e7c4634d4a3d7e9d904cd5ea46ca
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "53909907"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54991472"
 ---
 # <a name="source-server-security-alert"></a>來源伺服器安全性警示
 當使用來源伺服器時，僅限使用來自已知和受信任位置的符號檔。  

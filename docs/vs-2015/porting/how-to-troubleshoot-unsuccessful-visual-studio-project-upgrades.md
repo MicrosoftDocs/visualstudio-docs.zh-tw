@@ -1,13 +1,9 @@
 ---
 title: HOW TO：不成功的專案升級疑難排解 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: troubleshooting
 f1_keywords:
 - VisualStudio.SourceControl.CannotOpenFromSourceControlDSW
 - vs.UpgradeProjectSolution.8.0
@@ -21,13 +17,13 @@ ms.assetid: 842fe448-c044-4343-8eae-d81711cf48ba
 caps.latest.revision: 31
 author: kraigb
 ms.author: kraigb
-manager: ghogen
-ms.openlocfilehash: 2e21feda11ef4d3405fa1488740fefe7c7238dc5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 7d5c30c9b61707f9ac4a32d49613b46416a8d881
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53942014"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54804259"
 ---
 # <a name="how-to-troubleshoot-unsuccessful-visual-studio-project-upgrades"></a>HOW TO：不成功的 Visual Studio 專案升級疑難排解
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

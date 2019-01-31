@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 492c0893-7043-452f-a020-890a47230d20
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 93c103387ff2acd7b041fc103bc519e9ac166593
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7a91b12ae49028d2c84c8308d043d69bf2297797
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53859642"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54939112"
 ---
 # <a name="dia2dump-sample"></a>Dia2dump 範例
 

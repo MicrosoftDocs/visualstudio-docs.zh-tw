@@ -7,14 +7,14 @@ helpviewer_keywords:
 ms.assetid: bd7ad36c-54cb-4d2a-9aea-9d10ad98d7ba
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 72bac83cf3f71397d0950521c4252045eeaa2822
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 57c0ac315aa7ca24d5fbd95bd67b99f49a108d92
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53886750"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54990301"
 ---
 # <a name="how-to-create-a-diagnostic-data-adapter"></a>HOW TO：建立診斷資料配接器
 

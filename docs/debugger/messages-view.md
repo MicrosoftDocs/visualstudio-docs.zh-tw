@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 14c2a786-c23a-4b2d-acad-8c32a856c70d
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a3f67a8e354addef7aca298ebac3740702951a17
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: db1b4ec3c2ae5fa0b24c3981e2b0296b54aec3cb
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53869876"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55016345"
 ---
 # <a name="messages-view"></a>訊息檢視
 每個視窗都具有相關聯的訊息資料流。 訊息檢視 視窗會顯示此訊息資料流。 視窗控制代碼、 訊息和訊息會顯示。 您可以建立執行緒或處理序的訊息檢視。 這可讓您檢視傳送給特定的處理程序或特別適用於擷取視窗初始化訊息的執行緒所擁有的所有視窗的訊息。  

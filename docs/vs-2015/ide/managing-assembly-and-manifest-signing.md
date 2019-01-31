@@ -1,14 +1,9 @@
 ---
 title: 管理組件和資訊清單簽署 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - manifests [Visual Studio]
 - signing manifests [Visual Studio]
@@ -18,13 +13,13 @@ ms.assetid: 6c1ef36b-25f7-4ad0-b29a-51801b7a5420
 caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 831fb08941e16abdb197d3a25e71f2a20fcb14cb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 63a2e1b98baa61ef0a83c1de65653dd2e57a8b2c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49909675"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54755460"
 ---
 # <a name="managing-assembly-and-manifest-signing"></a>管理組件和資訊清單簽署
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -66,15 +61,12 @@ ms.locfileid: "49909675"
 > [!WARNING]
 >  您應該一律以密碼保護金鑰檔，以防止他人使用您的金鑰檔。 您也可以使用提供者或憑證存放區來保護您的金鑰。  
   
- 您也可以指向已經建立的金錀。 如需建立金鑰的詳細資訊，請參閱[如何：建立公用/私密金鑰組](http://msdn.microsoft.com/library/05026813-f3bd-4d7c-9e0b-fc588eb3d114)。  
+ 您也可以指向已經建立的金錀。 如需建立金鑰的詳細資訊，請參閱[How to:建立公開/私密金鑰組](http://msdn.microsoft.com/library/05026813-f3bd-4d7c-9e0b-fc588eb3d114)。  
   
  如果您只能存取公開金鑰，您可以使用延遲簽署，稍後再指定金鑰。 選取 [僅延遲簽署] 核取方塊以啟用延遲簽署。 延遲簽署的專案將不會執行，且無法進行偵錯。 不過，您可以在開發期間略過驗證，使用 [Sn.exe (Strong Name Tool)](http://msdn.microsoft.com/library/c1d2b532-1b8e-4c7a-8ac5-53b801135ec6) 與 `-Vr` 選項。  
   
- 如需簽署資訊清單的資訊，請參閱[如何：簽署應用程式和部署資訊清單](../ide/how-to-sign-application-and-deployment-manifests.md)。  
+ 如需簽署資訊清單的資訊，請參閱[如何：簽署應用程式與部署資訊清單](../ide/how-to-sign-application-and-deployment-manifests.md)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [強式名稱的組件](http://msdn.microsoft.com/library/d4a80263-f3e0-4d81-9b61-f0cbeae3797b)   
  [強式名稱組件 (組件簽署) (C++/CLI)](http://msdn.microsoft.com/library/c337cd3f-e5dd-4c6f-a1ad-437e85dba1cc)
-
-
-

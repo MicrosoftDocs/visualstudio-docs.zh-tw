@@ -1,14 +1,9 @@
 ---
 title: 設定效能工作階段 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - common tasks, performance
 - common tasks, profiling tools
@@ -18,13 +13,13 @@ ms.assetid: e1c3ba41-ffca-4edf-9a7f-8a5a9244ef9b
 caps.latest.revision: 41
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 280d9023167b4d83dfb8b0137301219a518521b9
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: c479a2c62d40b52c085f56b424cf3151e93f487c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51790392"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54774692"
 ---
 # <a name="configuring-performance-sessions"></a>設定效能工作階段
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,15 +33,12 @@ ms.locfileid: "51790392"
   
 |工作|相關內容|  
 |----------|---------------------|  
-|**設定基本分析選項︰** 您應該設定 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 使用 Microsoft 符號伺服器。 如此可確保您可以存取目前 Windows 版本和其他 Microsoft 應用程式的符號，例如函式和參數名稱。 在分析工作階段開始之前，您也可以指定其他一般選項，例如分析工具的系統權限和分析資料檔案的名稱。|-   [如何：參考 Windows 符號資訊](../profiling/how-to-reference-windows-symbol-information.md)<br />-   [如何：序列化符號資訊](../profiling/how-to-serialize-symbol-information.md)<br />-   [如何：設定目前的工作階段](../profiling/how-to-set-the-current-session.md)<br />-   [如何：設定權限](../profiling/how-to-set-permissions.md)<br />-   [如何：設定效能資料檔案名稱選項](../profiling/how-to-set-performance-data-file-name-options.md)|  
-|**指定您想要收集的資料︰** 您用來設定分析工作階段的程序取決於您要分析的目標應用程式類型和您想要收集的效能資料類型。|-   [如何：選擇收集方法](../profiling/how-to-choose-collection-methods.md)<br />-   [使用取樣收集效能統計資料](../profiling/collecting-performance-statistics-by-using-sampling.md)<br />-   [收集 .NET 記憶體配置和存留期資料](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md)<br />-   [使用檢測收集詳細計時資料](../profiling/collecting-detailed-timing-data-by-using-instrumentation.md)<br />-   [如何：分析網頁中的 JavaScript 程式碼](../profiling/how-to-profile-javascript-code-in-web-pages.md)<br />-   [收集執行緒和處理序並行資料](../profiling/collecting-thread-and-process-concurrency-data.md)<br />-   [收集其他效能資料](../profiling/collecting-additional-performance-data.md)|  
-|**設定進階設定選項：** 當您分析載入多個通用語言執行平台 (CLR) 版本的 .NET Framework 應用程式時，可以指定要分析的版本。 當您的效能工作階段中有多個 .exe 檔案時，可以設定二進位檔的啟動順序。|-   [如何︰指定 .NET Framework 執行階段](../profiling/how-to-specify-the-dotnet-framework-runtime.md)<br />-   [如何：指定要啟動的二進位檔](../profiling/how-to-specify-the-binary-to-start.md)|  
+|**設定基本分析選項：** 您應該設定 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 來使用 Microsoft 符號伺服器。 如此可確保您可以存取目前 Windows 版本和其他 Microsoft 應用程式的符號，例如函式和參數名稱。 在分析工作階段開始之前，您也可以指定其他一般選項，例如分析工具的系統權限和分析資料檔案的名稱。|-   [如何：參考 Windows 符號資訊](../profiling/how-to-reference-windows-symbol-information.md)<br />-   [如何：序列化符號資訊](../profiling/how-to-serialize-symbol-information.md)<br />-   [如何：設定目前的工作階段](../profiling/how-to-set-the-current-session.md)<br />-   [如何：設定權限](../profiling/how-to-set-permissions.md)<br />-   [如何：設定效能資料檔案名稱選項](../profiling/how-to-set-performance-data-file-name-options.md)|  
+|**指定您想要收集的資料：** 您用來設定分析工作階段的程序取決於您要分析的目標應用程式類型和您想要收集的效能資料類型。|-   [如何：選擇收集方法](../profiling/how-to-choose-collection-methods.md)<br />-   [使用取樣收集效能統計資料](../profiling/collecting-performance-statistics-by-using-sampling.md)<br />-   [收集 .NET 記憶體配置和存留期資料](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md)<br />-   [使用檢測收集詳細計時資料](../profiling/collecting-detailed-timing-data-by-using-instrumentation.md)<br />-   [如何：分析網頁中的 JavaScript 程式碼](../profiling/how-to-profile-javascript-code-in-web-pages.md)<br />-   [收集執行緒和處理序並行資料](../profiling/collecting-thread-and-process-concurrency-data.md)<br />-   [收集其他效能資料](../profiling/collecting-additional-performance-data.md)|  
+|**設定進階組態選項：** 當您分析載入多個 Common Language Run-time (CLR) 版本的 .NET Framework 應用程式時，可以指定要分析的版本。 當您的效能工作階段中有多個 .exe 檔案時，可以設定二進位檔的啟動順序。|-   [如何：指定 .NET Framework 執行階段](../profiling/how-to-specify-the-dotnet-framework-runtime.md)<br />-   [如何：指定要啟動的二進位檔](../profiling/how-to-specify-the-binary-to-start.md)|  
   
 ## <a name="related-sections"></a>相關章節  
  [控制資料收集](../profiling/controlling-data-collection.md)  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [效能總管](../profiling/performance-explorer.md)
-
-
-

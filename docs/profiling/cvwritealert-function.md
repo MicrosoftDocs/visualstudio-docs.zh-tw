@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 937aa9d6-278a-4df3-bef7-151441df16d5
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 743cec7c632bbfca7faf3659ffba5b337553ecee
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 16ac2de5e97cd6dd6d007659c0e535bc2f9eb1ef
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53921981"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55013661"
 ---
 # <a name="cvwritealert-function"></a>CvWriteAlert 函式
 將警示寫入並行視覺化檢視追蹤檔。  

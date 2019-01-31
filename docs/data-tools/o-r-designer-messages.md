@@ -5,16 +5,16 @@ ms.topic: reference
 ms.assetid: 42178ae8-be6c-4df6-9b7a-cdac24d71dd2
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 243eb5a9d10ec824cc2c17ff1692e58fa3738ca8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: dd3a659c9d5cfb2c1ada5b98cc3bd735442be088
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53859863"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54972296"
 ---
 # <a name="or-designer-messages"></a>O/R 設計工具訊息
 

@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 5aecc507-2764-42f2-ae6f-c227971cf0af
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a1f965bdbd19193bfaa942d5f3635b0652f0e9c4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5d7a9863891d8d7c0e91ba2b7bc243908860d0a5
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53943469"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54976481"
 ---
 # <a name="how-to-create-a-package-manifest"></a>HOW TO：建立套件資訊清單
 若要部署您的應用程式的必要條件，您可以使用啟動載入器套件。 啟動載入器套件會包含單一產品資訊清單檔案的套件資訊清單但每個地區設定。 在不同的當地語系化版本之間共用的功能應該移入產品資訊清單。  
@@ -99,4 +99,4 @@ installing this package.</String>
 ```  
   
 ## <a name="see-also"></a>另請參閱  
- [產品和封裝結構描述參考](../deployment/product-and-package-schema-reference.md)
+ [產品和套件結構描述參考](../deployment/product-and-package-schema-reference.md)

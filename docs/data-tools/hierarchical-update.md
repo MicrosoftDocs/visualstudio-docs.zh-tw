@@ -18,16 +18,16 @@ helpviewer_keywords:
 ms.assetid: 68bae3f6-ec9b-45ee-a33a-69395029f54c
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 95aa29fc9856777912afa2efac2551ec4a703506
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 658fd8251b71b5920c0cc40f79effd7230edeb39
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53892698"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54984752"
 ---
 # <a name="hierarchical-update"></a>階層式更新
 

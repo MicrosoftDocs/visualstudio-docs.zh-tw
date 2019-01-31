@@ -5,15 +5,15 @@ ms.prod: visual-studio-dev15
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: f4c78edaecb9cedf3bcff4acf7b39b3e54701f24
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e8f7a306fbdaf917cee9263c937d58cf6bb82c37
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53906861"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54918736"
 ---
 # <a name="generate-an-override-in-visual-studio"></a>在 Visual Studio 中產生覆寫
 

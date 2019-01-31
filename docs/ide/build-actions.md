@@ -6,15 +6,15 @@ ms.technology: vs-ide-compile
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5eb4c000973afd1eef92d283e5688862413add16
-ms.sourcegitcommit: f61ad0e8babec8810295f039e67629f4bdebeef0
+ms.openlocfilehash: 45a0e4822bc9b6d20bd2cf63d664e6cba97c77bf
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "52002122"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54951296"
 ---
 # <a name="build-actions"></a>建置動作
 

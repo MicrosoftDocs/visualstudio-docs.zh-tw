@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: c0ddbe32-b99f-4425-acf1-f48842804f56
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 90278476b2530e80c33440ca6e2dc299be5e9be5
-ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
+ms.openlocfilehash: 8d6bc004ac9d450e0f5ea358d16bb25ab6cabecf
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/14/2019
-ms.locfileid: "54269783"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55018744"
 ---
 # <a name="executable-for-debugging-session-dialog-box"></a>偵錯工作階段的可執行檔對話方塊
 

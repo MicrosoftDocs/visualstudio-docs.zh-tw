@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 95382395-da41-4aa8-87f1-5b03da128565
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 36adc59d9b3dbeb9484433acea7301c55b9e7195
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f4d96e30d443adb6d790c1645c218fb212ce0699
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53834538"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54987722"
 ---
 # <a name="idiasymbolgettargetsection"></a>IDiaSymbol::get_targetSection
 擷取 thunk 目標的 [位址] 的區段。  

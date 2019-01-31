@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 8f1f6449-e03d-4a5b-9076-d3b1f84ada48
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1145c1369f13c04957b4b0f4c4ccf84569773986
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5e6214ec04dbf45e7d6b5a973babe4c7d95b571b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53882983"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55020083"
 ---
 # <a name="assembly-information-dialog-box"></a>組件資訊對話方塊
 您可以使用 [組件資訊] 對話方塊來指定 [!INCLUDE[dnprdnshort](../../code-quality/includes/dnprdnshort_md.md)] 全域組件屬性的值，該值會儲存在隨專案自動建立的 AssemblyInfo 檔案中。 在方案總管中，若是 [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]，此檔案是在 [我的專案] 節點中 (按一下 [顯示所有檔案] 即可檢視)；若是 [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]，則是在 [屬性] 底下。 如需組件屬性的詳細資訊，請參閱[屬性](https://msdn.microsoft.com/Library/ae334cee-d96c-4243-a5e3-06dd7fcaf205)。

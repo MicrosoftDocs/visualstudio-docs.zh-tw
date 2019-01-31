@@ -1,25 +1,20 @@
 ---
 title: Blend 中的畫筆工具輔助按鍵 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: c3ab14c6-a320-46db-a6b3-7fd1ca261587
 caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: f4fd240ffae322d21e37049b5ec0a862515b00f2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: fc4f5e798e5ae675a04e7df701d08210a83062d2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49172103"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54764180"
 ---
 # <a name="pen-tool-modifier-keys-in-blend"></a>Blend 中的畫筆工具輔助按鍵
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,11 +37,8 @@ ms.locfileid: "49172103"
 |結合兩個路徑時建立平滑的角|選取兩個路徑，按一下 [畫筆] 工具，再按一下其中一個路徑的結束點，然後拖曳另一個路徑的結束點|![](../designers/media/bd12dfa4-112e-4f37-9765-3479e6b69894.png "bd12dfa4-112e-4f37-9765-3479e6b69894")<br /><br /> 畫筆結合指標|  
 |建立新路徑|按住 CTRL 鍵，並按一下上一個路徑的外部，以停止將點加入上一個路徑，然後按一下或拖曳您想要開始新路徑的地方|![](../designers/media/69758176-5f53-465b-808c-f13fd1a0b3f2.png "69758176-5f53-465b-808c-f13fd1a0b3f2")<br /><br /> 畫筆開始指標|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [鍵盤快速鍵和輔助按鍵](../designers/keyboard-shortcuts-and-modifier-keys-in-blend.md)   
  [畫板輔助按鍵](../designers/artboard-modifier-keys-in-blend.md)   
  [直接選取工具輔助按鍵](../designers/direct-selection-tool-modifier-keys-in-blend.md)   
  [繪製圖案與路徑](../designers/draw-shapes-and-paths.md)
-
-
-

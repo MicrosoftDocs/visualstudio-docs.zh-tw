@@ -7,14 +7,14 @@ helpviewer_keywords:
 ms.assetid: 4a69e857-f93b-4907-9a01-fd1b66291205
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 4338ba11116ce8077cff8e15a6bb8093214917d8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 32ba2fb204a4452df61d63015959be977c358f00
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53925754"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54931276"
 ---
 # <a name="how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern"></a>HOW TO：指定步驟負載模式的逐步遞增時間屬性
 

@@ -5,15 +5,15 @@ ms.prod: visual-studio-dev15
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 551efd07e3e62764c71a6bc4e2a9683517139966
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c3e4267e806d0dea1b8d00ca2836982fbfdb9d58
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53840404"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55030635"
 ---
 # <a name="implement-an-abstract-class-in-visual-studio"></a>在 Visual Studio 中實作抽象類別
 

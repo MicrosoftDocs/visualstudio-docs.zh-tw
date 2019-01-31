@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: dc20c7c0-15a6-4b78-a5c9-2e0b94cac522
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d92e58468c6e5d33121be573fd0057bbd4a4bec7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f7db826adb5d88e1f64adde7c87e34047b3c9c6d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53831962"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54921153"
 ---
 # <a name="idiasymbolgetvirtualaddress"></a>IDiaSymbol::get_virtualAddress
 擷取位置的虛擬位址 (VA)。 使用時機[LocationType 列舉](../../debugger/debug-interface-access/locationtype.md)設定為`LocIsStatic`。  

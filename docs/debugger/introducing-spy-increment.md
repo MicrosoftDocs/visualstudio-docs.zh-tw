@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 733b514b-63a9-402d-89aa-4f0416766655
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4126f4fde8109b9d67b3ad6a69c97395ddf1ef40
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 371e707dae11dacbbcc9ec590e908cd66f6189ee
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53950786"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55027980"
 ---
 # <a name="introducing-spy"></a>Spy++ 簡介
 Spy++ 可讓您執行下列工作︰  

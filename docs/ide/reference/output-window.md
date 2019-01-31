@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: d8931d88-250e-4db4-963f-2c5b3e99b45f
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f5121053ebb88d3c6c5bcbedbb2798daff3ad07f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f07caeeccbee5a8b7f0239f9ae8b2383e755dd69
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53836487"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54991927"
 ---
 # <a name="output-window"></a>輸出視窗
 

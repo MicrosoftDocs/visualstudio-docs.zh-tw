@@ -6,16 +6,16 @@ ms.topic: conceptual
 helpviewer_keywords:
 - IntelliTest, Settings waterfall
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: c15b440845f918c194bad334e118e25dee676431
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5371900ec439a0d8c736d5437316705b6bfb98cb
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53936161"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54934513"
 ---
 # <a name="settings-waterfall"></a>設定瀑布圖
 
@@ -38,7 +38,7 @@ using Microsoft.Pex.Framework;
 
 namespace MyTests
 {
-    [PexClass(MaxBranches = 500)] // we override the 1000 value and set maxbranches to 500 
+    [PexClass(MaxBranches = 500)] // we override the 1000 value and set maxbranches to 500
     public partial class MyTests
     {
         [PexMethod(MaxBranches = 100)] // we override again, maxbranches = 100

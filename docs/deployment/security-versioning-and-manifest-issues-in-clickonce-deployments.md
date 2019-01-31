@@ -19,15 +19,15 @@ helpviewer_keywords:
 - ClickOnce applications, security issues
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 366e384ec01c67a1beb6b08b018365cbb3c73bf4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e95c89633c047a0a56a1efed5aba46e6632da7cc
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53927138"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54983426"
 ---
 # <a name="security-versioning-and-manifest-issues-in-clickonce-deployments"></a>ClickOnce 部署中的安全性、版本控制和資訊清單問題
 

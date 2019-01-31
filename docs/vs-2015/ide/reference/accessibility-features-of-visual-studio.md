@@ -1,13 +1,9 @@
 ---
 title: 協助工具功能 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: reference
 helpviewer_keywords:
 - Visual Studio, accessibility
 - accessibility [Visual Studio]
@@ -15,13 +11,13 @@ ms.assetid: aa1ada29-4d93-4bf0-af8b-03633fcb0fba
 caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: fc0d6617eed2122a69e69ec7a49dfcdf6e6d5ebd
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 519eefc9260816fcbbbbd3dd8672bbaeebb3429f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53871894"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54778509"
 ---
 # <a name="accessibility-features-of-visual-studio"></a>Visual Studio 的協助工具功能
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

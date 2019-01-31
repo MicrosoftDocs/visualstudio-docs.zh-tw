@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: ccd42c07-0fb6-4e8b-9ebb-a6a6db18aa2e
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ffb58fdbf35d2fc070fbf2463ee02fa154f84f94
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e58756dc1786f3c15fddc57399b59711d92074a8
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53867970"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55005367"
 ---
 # <a name="override-toolsversion-settings"></a>覆寫 ToolsVersion 設定
 您可以使用三種方式中的其中一種來變更專案和方案的工具組︰  

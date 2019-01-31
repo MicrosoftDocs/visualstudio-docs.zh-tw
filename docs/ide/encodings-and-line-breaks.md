@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 8f9b3ffc-7b8d-44f4-87cb-dc29105be12d
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 11a70e214362d61fa54e83182bec7cc128905b69
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e562b611e1efa89fdfc5b2d80fdd0a702cc692cf
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53847697"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55034775"
 ---
 # <a name="encodings-and-line-endings"></a>編碼與行尾結束符號
 

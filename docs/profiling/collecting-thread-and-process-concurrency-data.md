@@ -7,15 +7,15 @@ helpviewer_keywords:
 - Profiling Tools, concurrency method
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ccec0581c3166ec74bc4626ec49aa8eb6b7a68d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 248c025b23fe2a39203a414c7af252bdfd3c2129
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53905263"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55014899"
 ---
 # <a name="collect-thread-and-process-concurrency-data"></a>收集執行緒和處理序並行資料
 

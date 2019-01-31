@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 06f15504-6385-40a6-b01d-cd90ca36dc73
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bd0f38fda93d1a91e72c547bdfe230354988da9d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7908bb88e13dff34721b7c6419d0a7f036be68d1
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53869108"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54923580"
 ---
 # <a name="how-to-set-the-clickonce-publish-version"></a>HOW TO：設定 ClickOnce 發佈版本
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] `Publish Version`屬性會決定是否要發行的應用程式將會被視為更新。 每個階段的版本會遞增，將更新的形式發行應用程式。  

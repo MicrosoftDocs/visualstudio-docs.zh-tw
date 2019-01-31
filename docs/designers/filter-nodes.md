@@ -6,15 +6,15 @@ ms.topic: reference
 ms.assetid: f7cae2dc-e9a7-49d4-8be5-58b79868624e
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ba6246f68505a4b1d0a93011b46e32918779dfa2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b047bba87ef99916ba83d5cef07f26382755ce6c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53836893"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54976533"
 ---
 # <a name="filter-nodes"></a>篩選節點
 

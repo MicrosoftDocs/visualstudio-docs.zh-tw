@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: 5db09a16-b82c-4ba3-8ec9-630cdc109397
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dc48d2981e09dca55031b8ce78a06306a66ffbc0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f8ce5bb964b3d774a7030bfeb1909d8e9042de69
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53968536"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55043553"
 ---
 # <a name="shader-designer"></a>著色器設計工具
 

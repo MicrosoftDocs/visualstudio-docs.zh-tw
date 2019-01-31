@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 82155004-8d9e-4875-b7db-237a3cffb530
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 156629fdce19dfe4e503f4af67ca31f99041e231
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9114b9e442f4a6cb8525120d24ba59be99891fef
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53855583"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54940098"
 ---
 # <a name="spy-help"></a>Spy++ 說明
 Spy + + 公用程式的文件包含兩個群組的一般主題，在使用 Spy + +，以及在 Spy + + 檢視。 這些被後面接著 Spy + + 參考，可在每個可用的功能表命令和對話方塊中提供進一步的詳細資料。  

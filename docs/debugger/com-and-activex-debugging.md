@@ -18,15 +18,15 @@ helpviewer_keywords:
 ms.assetid: 3260b2a7-3239-493d-9271-aedf705c13c7
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d75b045e16ce6435568b5bb6993a74f3123f779
-ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
+ms.openlocfilehash: 7196ce1342fb410f13729b9d204a9ff4be3d3f3e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/14/2019
-ms.locfileid: "54269601"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55013978"
 ---
 # <a name="com-and-activex-debugging"></a>偵錯 COM 和 ActiveX
 本章節提供有關偵錯 COM 應用程式和 ActiveX 控制項的秘訣。  

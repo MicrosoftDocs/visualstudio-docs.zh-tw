@@ -1,27 +1,22 @@
 ---
 title: 指令指標 (IP) 檢視 - .NET 記憶體取樣資料 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Instruction Pointers view
 ms.assetid: 7d91cc14-e8e9-4ebb-b14f-b9f0da770508
 caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 884e8a75b555d0cee59a708aea91f6fc83557df1
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: dd06bc09114785c4359d05e3cda70c3ce7646c9e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51730328"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54804243"
 ---
 # <a name="instruction-pointers-ips-view---net-memory-sampling-data"></a>指令指標 (IP) 檢視 - .NET 記憶體取樣資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +25,7 @@ ms.locfileid: "51730328"
   
  只會列出專有值。  
   
-|資料行|描述|  
+|資料行|說明|  
 |------------|-----------------|  
 |**處理序 ID**|分析執行的處理序 ID (PID)。|  
 |**處理序名稱**|處理序的名稱。|  
@@ -50,8 +45,5 @@ ms.locfileid: "51730328"
 |**專有位元組**|指令所配置之分析回合中所配置記憶體的位元組數目。|  
 |**專有位元組 %**|指令所配置之分析回合中所配置記憶體的所有位元組百分比。|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [指令指標 (IP) 檢視](../profiling/instruction-pointers-ips-view-sampling-data.md)
-
-
-

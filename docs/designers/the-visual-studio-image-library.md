@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: f7a2e7c8-3b9f-4f8e-a6a8-000d72e3811d
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 984f36ea98c0e61be7236407c9188211bdb2fe60
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d36edd8604723756e4af374c0e5b219059ae5c22
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53987488"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55008201"
 ---
 # <a name="the-visual-studio-image-library"></a>Visual Studio 影像庫
 
