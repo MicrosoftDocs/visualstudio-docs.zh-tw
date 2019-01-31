@@ -230,6 +230,8 @@ items:
           href: ide/how-to-update-existing-templates.md
         - name: 替代範本中的參數
           href: ide/how-to-substitute-parameters-in-a-template.md
+        - name: 範本參數
+          href: ide/template-parameters.md
       - name: 64 位元支援
         href: ide/visual-studio-ide-64-bit-support.md
     - name: 不使用專案或解決方案 ([開啟資料夾]) 進行開發
@@ -719,10 +721,6 @@ items:
       href: ide/creating-applications-in-bi-directional-languages.md
 - name: 參考資料
   items:
-  - name: 專案與項目範本
-    items:
-    - name: 範本參數
-      href: ide/template-parameters.md
   - name: 一般使用者介面項目
     items:
     - name: 呼叫階層
@@ -1147,9 +1145,9 @@ items:
   - name: 告訴我們
     href: ide/talk-to-us.md
   expanded: true
-ms.openlocfilehash: 3734bd3e2955f1f2297ec9a63f92d2e617341142
-ms.sourcegitcommit: 447f2174bdecdd471d8a8e11c19554977db620a0
+ms.openlocfilehash: 69a36121297349edd6a3e79880935a9b3ed6fe75
+ms.sourcegitcommit: 9866740aec05d1a3a5dc3b4b6d2ceaeecbd3fc29
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2019
-ms.locfileid: "55089288"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55424612"
