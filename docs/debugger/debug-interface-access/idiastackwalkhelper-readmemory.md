@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: e1eb90aa-49b7-476c-9e70-7e8f08994cbe
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d12d1da983a69f71d96bb06271bd3a971a16cbb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 229aace046dfebd75786dfa5c14998d9498b98b2
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53825733"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54967098"
 ---
 # <a name="idiastackwalkhelperreadmemory"></a>IDiaStackWalkHelper::readMemory
 從記憶體中的可執行檔的映像中讀取資料的區塊。  

@@ -9,20 +9,20 @@ helpviewer_keywords:
 - debugging JavaScript, console [UWP apps]
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - uwp
 - cordova
-ms.openlocfilehash: bf978f336070e9bd90f90f399f4b6c3d8598877e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bf9f339283af27f450950d9a79079ea35c97e3b8
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53990931"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54941454"
 ---
 # <a name="javascript-console-commands-in-visual-studio"></a>Visual Studio 中的 JavaScript 主控台命令
   
- 您可以在 Visual Studio [JavaScript 主控台] 視窗中，使用命令傳送訊息及執行其他工作。 如需示範如何使用該視窗的範例，請參閱[快速入門：針對 JavaScript 進行偵錯](../debugger/quickstart-debug-javascript-using-the-console.md) 本主題資訊適用於 UWP 應用程式和使用 Visual Studio Tools for Apache Cordova 建立的應用程式。 如需 Cordova 應用程式支援的主控台命令相關資訊，請參閱 [Debug Your App](https://taco.visualstudio.com/en-us/docs/debug-using-visual-studio/)。 如需在 Internet Explorer F12 工具中使用主控台的詳細資訊，請參閱 [本主題](/previous-versions/windows/internet-explorer/ie-developer/samples/dn255006(v=vs.85))。  
+ 您可以在 Visual Studio [JavaScript 主控台] 視窗中，使用命令傳送訊息及執行其他工作。 如需示範如何使用該視窗的範例，請參閱[快速入門：對 JavaScript 進行偵錯](../debugger/quickstart-debug-javascript-using-the-console.md) 本主題資訊適用於 UWP 應用程式和使用 Visual Studio Tools for Apache Cordova 建立的應用程式。 如需 Cordova 應用程式支援的主控台命令相關資訊，請參閱 [Debug Your App](https://taco.visualstudio.com/en-us/docs/debug-using-visual-studio/)。 如需在 Internet Explorer F12 工具中使用主控台的詳細資訊，請參閱 [本主題](/previous-versions/windows/internet-explorer/ie-developer/samples/dn255006(v=vs.85))。  
   
  如果 [JavaScript 主控台] 視窗已關閉，您可以開啟偵錯時在 Visual Studio 中選擇**偵錯** > **Windows** > **JavaScript主控台**。  
   

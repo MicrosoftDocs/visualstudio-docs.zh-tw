@@ -16,15 +16,15 @@ dev_langs:
 ms.assetid: bde37134-66af-4273-b02e-05b3370c31ab
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ffe28dbf30b1b4f40c69f565cc1e97524ce382b4
-ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
+ms.openlocfilehash: 260fab33f8303ddc00b3d80b776786239746ba4f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "54227378"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55005653"
 ---
 # <a name="debug-multiple-processes-c-visual-basic-c"></a>偵錯多個處理序 (C#，Visual Basic、 c + +)
 

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 8fe33eea-1457-4b8c-ae19-f1ede5578483
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ced7def09c9a5ba95c149f5f8507e3571d120ad
-ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
+ms.openlocfilehash: 0af18b58ed509d2fc5f0b962b9a94ce7bdc1b820
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54154159"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55031392"
 ---
 # <a name="idiadatasourceloaddatafromistream"></a>IDiaDataSource::loadDataFromIStream
 準備透過記憶體中資料流存取程式資料庫 (.pdb) 檔案中儲存的偵錯資料。  

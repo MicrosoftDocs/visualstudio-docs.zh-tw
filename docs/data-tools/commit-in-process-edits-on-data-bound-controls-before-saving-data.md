@@ -15,16 +15,16 @@ helpviewer_keywords:
 ms.assetid: 61af4798-eef7-468c-b229-5e1497febb2f
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 6c548cd7a91683da88a760e28831a0b13af433c5
-ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
+ms.openlocfilehash: 936fb3ea1a5faae942c2c0b614a27c0a037c9dd6
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54154201"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55001744"
 ---
 # <a name="commit-in-process-edits-on-data-bound-controls-before-saving-data"></a>儲存資料前先認可資料繫結控制項上的同處理序編輯
 

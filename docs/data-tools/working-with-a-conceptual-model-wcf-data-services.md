@@ -9,16 +9,16 @@ helpviewer_keywords:
 ms.assetid: 2cd873cf-b010-49f2-a278-bb1277aaa934
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 6d49df542dbd134a6164e582459978bb2ef1aee3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4c23097bfdf122d5b10cdf3b03cd020db5b62c0c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53989642"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54989636"
 ---
 # <a name="work-with-a-conceptual-model-wcf-data-services"></a>使用概念模型 (WCF Data Services)
 

@@ -5,16 +5,16 @@ ms.topic: conceptual
 ms.assetid: e7ca32f1-50b3-48af-ad92-ceafd749296a
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: bda01cec76629bd69d0e3773d99da0b34773f4ff
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.openlocfilehash: ce1d2a4f5e8b068da20d7fd7e46471cdad6d9e59
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "53868498"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54952336"
 ---
 # <a name="how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-or-designer"></a>HOW TO：建立對應至預存程序和函式的 DataContext 方法 (O/R 設計工具)
 

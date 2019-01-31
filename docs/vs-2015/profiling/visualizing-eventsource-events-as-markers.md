@@ -1,25 +1,20 @@
 ---
 title: 將 EventSource 事件顯示為標記 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 3a10022a-5c37-48b1-a833-dd35902176b6
 caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: c39f137299c1f229de8c3c6dc8d7329cba6033cb
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: b638bb1e300fd03d358c338c10dec4844f4e4adc
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51742562"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54801488"
 ---
 # <a name="visualizing-eventsource-events-as-markers"></a>將 EventSource 事件顯示為標記
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,9 +26,9 @@ ms.locfileid: "51742562"
   
 ### <a name="marker-type"></a>標記類型  
   
-1.  有[作業碼 (Opcode)](http://msdn.microsoft.com/en-us/d97953df-669b-4c55-b1a8-925022b339b7) win:Start 或 win:Stop 的事件會分別視為延伸範圍的開始或結束。  無法顯示巢狀或重疊的延伸範圍。 無法顯示在一個執行緒開始但在另一個執行序結束的事件組合。  
+1.  有[作業碼 (Opcode)](http://msdn.microsoft.com/d97953df-669b-4c55-b1a8-925022b339b7) win:Start 或 win:Stop 的事件會分別視為延伸範圍的開始或結束。  無法顯示巢狀或重疊的延伸範圍。 無法顯示在一個執行緒開始但在另一個執行序結束的事件組合。  
   
-2.  其作業碼不是 win:Start，也非 win:Stop 的事件會視為標記旗標，除非其[層級 (Level)](http://msdn.microsoft.com/en-us/dfa4e0a9-4d89-4f50-aef9-1dae0dc11726) (EVENT_RECORD.EVENT_HEADER.EVENT_DESCRIPTOR 的欄位) 是 win:Verbose 或更高。  
+2.  其作業碼不是 win:Start，也非 win:Stop 的事件會視為標記旗標，除非其[層級 (Level)](http://msdn.microsoft.com/dfa4e0a9-4d89-4f50-aef9-1dae0dc11726) (EVENT_RECORD.EVENT_HEADER.EVENT_DESCRIPTOR 的欄位) 是 win:Verbose 或更高。  
   
 3.  在其他情況下，會將該事件視為一則訊息。  
   
@@ -56,7 +51,7 @@ ms.locfileid: "51742562"
 ### <a name="category"></a>分類  
  如果層級為 win:Critical 或 win:Error，則分類會是警示 (-1)。 否則，該分類為預設值 (0)。  
   
-### <a name="text"></a>文字  
+### <a name="text"></a>Text  
  如果事件定義為 printf 類型的格式化文字訊息，其會顯示為標記的描述。 否則，描述會是事件名稱和每個裝載欄位的值。  
   
 ## <a name="customizing-visualization-of-eventsource-events"></a>自訂 EventSource 事件的視覺化  
@@ -92,7 +87,7 @@ ms.locfileid: "51742562"
 ### <a name="category"></a>分類  
  使用 `cvCategory` 欄位 (一個位元組)，來控制並行視覺化檢視提供給 EventSource 事件的分類。  
   
-### <a name="text"></a>文字  
+### <a name="text"></a>Text  
  使用 `cvTextW` 欄位 (一個字串)，來控制並行視覺化檢視提供給 EventSource 事件的描述。  
   
 ### <a name="spanid"></a>SpanID  
@@ -101,8 +96,5 @@ ms.locfileid: "51742562"
 > [!NOTE]
 >  使用 SpanID 將延伸範圍巢狀化，不支援允許其在相同執行緒上部分重疊，或允許其在一個執行緒上開始並在另一個執行緒上結束。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [並行視覺化檢視標記](../profiling/concurrency-visualizer-markers.md)
-
-
-

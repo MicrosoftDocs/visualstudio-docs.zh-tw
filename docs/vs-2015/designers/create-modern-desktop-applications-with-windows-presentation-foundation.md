@@ -1,25 +1,20 @@
 ---
 title: 使用 Windows Presentation Foundation 建立新式桌面應用程式 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: 8d6c7295-ff64-4681-b01c-5056e8504569
 caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: cfc64665c16426725795af2f71d1b98f1810b53e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 03f76f8538a9519dfc314cf400a577424c900788
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49200696"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54774016"
 ---
 # <a name="create-modern-desktop-applications-with-windows-presentation-foundation"></a>使用 Windows Presentation Foundation 建立新式桌面應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,6 +30,3 @@ Visual Studio 2015 中的 Windows Presentation Foundation (WPF) 為開發人員�
  [WPF 簡介](https://msdn.microsoft.com/library/aa970268\(v=vs.100\).aspx)  
   
  [.NET Framework 中的 WPF](https://msdn.microsoft.com/library/ms754130\(v=vs.100\).aspx)
-
-
-

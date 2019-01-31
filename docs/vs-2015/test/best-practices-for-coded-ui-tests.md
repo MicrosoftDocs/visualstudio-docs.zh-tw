@@ -1,26 +1,21 @@
 ---
 title: 自動程式碼 UI 測試的最佳做法 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 helpviewer_keywords:
 - coded UI tests, best practices
 ms.assetid: d5aef766-a24c-4f1f-ac9b-e5462b6627d4
 caps.latest.revision: 41
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 1a067751662895f99f4caf95d487dc8c8a4672f3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 192d97d8d2096b37d2dd52d2ed942ccb595456d0
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49903578"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54795788"
 ---
 # <a name="best-practices-for-coded-ui-tests"></a>自動程式化 UI 測試的最佳作法
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,7 +55,7 @@ ms.locfileid: "49903578"
   
   自動程式碼 UI 測試會隨著使用者介面中的許多變更自動調整。 例如，如果 UI 元素已變更位置或色彩，大多數情況下，自動程式化 UI 測試仍可找到正確的元素。  
   
-  在測試執行期間，測試架構會使用一組套用至每個控制項類別的搜尋屬性 (在 `UIMap.Designer.cs` 檔案中的自動程式碼 UI 測試產生器所建立的定義中) 來定位 UI 控制項。 搜尋屬性包含屬性名稱和屬性值的名稱/值組，可用來識別控制項，例如控制項的 <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.FriendlyName%2A>、<xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.Name%2A> 和 <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.ControlType%2A> 屬性。 如果搜尋屬性未變更，自動程式碼 UI 測試將會在 UI 中成功找出控制項。 如果搜尋屬性已變更，自動程式碼 UI 測試會以套用啟發學習法的智慧比對演算法來尋找 UI 中的控制項和視窗。 當 UI 已變更時，您可以修改先前已識別之元素的搜尋屬性，以確定已找到這些元素。  
+  在測試執行期間，測試架構會使用一組套用至每個控制項類別的搜尋屬性 (在 `UIMap.Designer.cs` 檔案中的自動程式碼 UI 測試產生器所建立的定義中) 來定位 UI 控制項。 搜尋屬性包含屬性名稱和屬性值的名稱/值組，可用來識別控制項，例如控制項的 <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.FriendlyName%2A>、<xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.Name%2A> 和 <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.ControlType%2A> 屬性。 如果搜尋屬性未變更，自動程式化 UI 測試將會在 UI 中成功找出控制項。 如果搜尋屬性已變更，自動程式碼 UI 測試會以套用啟發學習法的智慧比對演算法來尋找 UI 中的控制項和視窗。 當 UI 已變更時，您可以修改先前已識別之元素的搜尋屬性，以確定已找到這些元素。  
   
 ## <a name="what-to-do-if-your-user-interface-changes"></a>使用者介面已變更時的因應作法  
  使用者介面在開發期間會經常變更。 下列方法可以減少這些變更的影響：  
@@ -91,13 +86,10 @@ this.UIMap.ClickSubmit();
 Playback.PlaybackSettings.WaitForReadyLevel = WaitForReadyLevel.UIThreadOnly;  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap>   
  <xref:Microsoft.VisualStudio.TestTools.UITesting>   
  [使用使用者介面自動化來測試您的程式碼](../test/use-ui-automation-to-test-your-code.md)   
  [建立自動程式化 UI 測試](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate)   
  [測試含有多個 UI 對應的大型應用程式](../test/testing-a-large-application-with-multiple-ui-maps.md)   
  [自動程式化 UI 測試和動作記錄的支援組態和平台](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
-
-
-

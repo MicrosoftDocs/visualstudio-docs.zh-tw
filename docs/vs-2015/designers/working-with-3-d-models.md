@@ -1,25 +1,20 @@
 ---
 title: 使用 3D 模型 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: fa035091-1354-4d1c-be44-4fb83860466f
 caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: cd22a3efecab0e544ddab7fff4ab795020ba0a4f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: d5d52f517e40ff7f61db904b81104bf1940938d5
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49251054"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54798448"
 ---
 # <a name="working-with-3-d-models"></a>使用 3D 模型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,10 +30,7 @@ ms.locfileid: "49251054"
   
 ## <a name="related-topics"></a>相關主題  
   
-|標題|描述|  
+|標題|說明|  
 |-----------|-----------------|  
 |[模型編輯器](../designers/model-editor.md)|說明如何使用模型編輯器來處理 3D 模型。|  
 |[模型編輯器範例](../designers/model-editor-examples.md)|提供示範如何使用模型編輯器來執行一般 3D 模型工作的主題連結。|
-
-
-

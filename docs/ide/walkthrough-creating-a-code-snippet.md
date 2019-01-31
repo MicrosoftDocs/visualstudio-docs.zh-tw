@@ -13,17 +13,17 @@ helpviewer_keywords:
 ms.assetid: 0dcaae11-39cf-4463-9c90-2494321251c2
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 66d618999fc2ae3e94316f64e20a82516efbeb38
-ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
+ms.openlocfilehash: 27c8237b04b2c4c903d971b1035558b77d4bf2d6
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/14/2019
-ms.locfileid: "54269796"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54937596"
 ---
 # <a name="walkthrough-create-a-code-snippet"></a>逐步解說：建立程式碼片段
 只需要幾個步驟就能建立程式碼片段。 您只需要建立 XML 檔案、填入適當的項目，並在其中新增您的程式碼。 您也可以將參考和取代參數新增至程式碼。 您可以使用 [程式碼片段管理員] ([工具] > [程式碼片段管理員]) 上的 [匯入] 按鈕，將程式碼片段新增至 Visual Studio 安裝。

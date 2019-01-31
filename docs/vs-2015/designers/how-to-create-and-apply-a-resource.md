@@ -1,14 +1,9 @@
 ---
 title: 如何建立和套用資源 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 f1_keywords:
 - VS.XamlDesigner.CreateResource
 - VS.XamlDesigner.EditResource
@@ -16,13 +11,13 @@ ms.assetid: 3ff4006d-659d-4073-9a41-06ff85e6cfdf
 caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: ef5dc15db983a54e60df447a2457d9dbc6804d85
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: fdac7018ec67250514836f22f3c297ddce5bd382
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49915798"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54805025"
 ---
 # <a name="how-to-create-and-apply-a-resource"></a>如何建立和套用資源
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -80,8 +75,5 @@ XAML 設計工具中的項目樣式和樣板會儲存在可重複使用的實體
   
 3.  修改資源的選項。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [使用 XAML 設計工具建立 UI](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)
-
-
-

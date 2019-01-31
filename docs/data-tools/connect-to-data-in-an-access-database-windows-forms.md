@@ -11,16 +11,16 @@ helpviewer_keywords:
 ms.assetid: 4159e815-d430-4ad0-a234-e4125fcbef18
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 3d80bd31b7a0979be664ca712f01b4a71f043786
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 38035851405261b94ad1a83f8b2c96d4c33e6952
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53952981"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54952752"
 ---
 # <a name="connect-to-data-in-an-access-database-windows-forms"></a>連線至 Access 資料庫中的資料 (Windows Forms)
 

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 474eddc6-bf16-4731-9145-6db2f2a0b4fd
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8ddc47a28bdd5fc472e46239b51d81c34346d8e4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 901bfefb245191d84a5ffb0807ae8595c64fd871
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53832277"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55026407"
 ---
 # <a name="idiasymbolgetvirtualbaseclass"></a>IDiaSymbol::get_virtualBaseClass
 擷取指定的使用者定義資料類型是否為虛擬基底類別的旗標。  

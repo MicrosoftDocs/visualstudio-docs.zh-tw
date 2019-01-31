@@ -1,13 +1,9 @@
 ---
 title: HOW TO：變更字型與色彩
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio, color themes
 - color themes, Visual Studio
@@ -15,13 +11,13 @@ ms.assetid: 60d91ba1-244b-4c43-847f-60b744f1352a
 caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: db98360ecf13ddeec8af7be0b546553b81a7dc72
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+manager: jillfra
+ms.openlocfilehash: 017494f4241c74f2c319f918433f1072b7097a9e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "53915357"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54760343"
 ---
 # <a name="how-to-change-fonts-and-colors-in-visual-studio"></a>HOW TO：變更 Visual Studio 中的字型和色彩
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

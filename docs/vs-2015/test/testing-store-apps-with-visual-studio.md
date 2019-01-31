@@ -2,18 +2,18 @@
 title: 測試市集應用程式
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.technology: vs-ide-general
+ms.technology: vs-ide-test
 ms.topic: reference
 ms.assetid: cf4000b4-91b5-4b3f-a00d-cc8d192467c2
 caps.latest.revision: 22
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 2f15fbac76533c55b51b021df5f75056de83a355
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: 4817fdd346f8c60d061eaa18d9e8a335a5b26ea2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53062318"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54784751"
 ---
 # <a name="testing-store-apps-with-visual-studio"></a>使用 Visual Studio 測試市集應用程式
 

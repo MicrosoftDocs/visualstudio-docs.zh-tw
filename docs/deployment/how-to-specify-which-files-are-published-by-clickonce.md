@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 579c134a-d50f-4e0c-8e05-2a4ff654896a
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e11c336f891ae71968a3b325a66a50d4d9a79446
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b24cb2b90bdd9e3fad5128a483314d75ffc1672f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53826951"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54926877"
 ---
 # <a name="how-to-specify-which-files-are-published-by-clickonce"></a>HOW TO：指定哪些檔案是由 ClickOnce 發佈
 發佈時[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]隨應用程式會部署專案中的應用程式中，所有非程式碼檔案。 在某些情況下，您可能不想要或需要發行特定檔案，或您可能想要安裝特定條件為基礎的檔案。 Visual Studio 提供的功能來排除檔案、 將檔案標示為資料檔案或必要條件，以及建立的條件式安裝的檔案群組。  

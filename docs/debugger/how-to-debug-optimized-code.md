@@ -18,15 +18,15 @@ helpviewer_keywords:
 ms.assetid: fc8eeeb8-6629-4c9b-99f7-2016aee81dff
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 648af91d4b71be65e1f5befef1c3a84225bfabfe
-ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
+ms.openlocfilehash: 756b8859c2f13c53eb46a0d9ae9d32836997f70f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54154320"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55035922"
 ---
 # <a name="how-to-debug-optimized-code"></a>HOW TO：對最佳化程式碼進行偵錯
 

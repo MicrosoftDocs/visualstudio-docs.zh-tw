@@ -1,14 +1,9 @@
 ---
 title: Exec 工作 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#Exec
 dev_langs:
@@ -23,13 +18,13 @@ ms.assetid: c9b7525a-b1c9-40fc-8bce-77a5b8f960d8
 caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: f3d092a6d69f668ef48ca2f586494f848795c178
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 337dcd310efbdf0f0657b5eb44b1ed0fc8253b39
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49300530"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54782501"
 ---
 # <a name="exec-task"></a>Exec 工作
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +35,7 @@ ms.locfileid: "49300530"
 ## <a name="parameters"></a>參數  
  下表說明 `Exec` 工作的參數。  
   
-|參數|描述|  
+|參數|說明|  
 |---------------|-----------------|  
 |`Command`|必要的 `String` 參數。<br /><br /> 一或多個要執行的命令。 這些可以是系統命令 (例如 attrib) 或可執行檔 (例如 program.exe、runprogram.bat 或 setup.msi)。<br /><br /> 此參數可以包含多行命令。 或者，您可以將多個命令放在一個批次檔中，然後使用此參數來執行該批次檔。|  
 |`CustomErrorRegularExpression`|選擇性的 `String` 參數。<br /><br /> 指定在工具輸出中用來檢查錯誤行的規則運算式。 這適用於會產生異常格式之輸出的工具。|  
@@ -77,9 +72,6 @@ ms.locfileid: "49300530"
 </Project>  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [工作](../msbuild/msbuild-tasks.md)   
  [工作參考](../msbuild/msbuild-task-reference.md)
-
-
-

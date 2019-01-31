@@ -7,15 +7,15 @@ dev_langs:
 ms.assetid: bb2ff5ed-9293-4c37-9741-654058b571c5
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0db92804ac10a011bcb7697da5e8899406295acb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 64b77c08d98535666f109610b618eac00b24aaf7
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53923883"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55069001"
 ---
 # <a name="idiasymbolgetbasedataoffset"></a>IDiaSymbol::get_baseDataOffset
 擷取的基底的資料位移。  

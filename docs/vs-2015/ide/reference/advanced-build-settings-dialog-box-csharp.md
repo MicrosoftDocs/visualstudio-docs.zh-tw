@@ -1,14 +1,9 @@
 ---
 title: 進階建置設定對話方塊 (C#) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - cs.AdvancedBuildSettings
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 141f2dee-1563-4ce6-ba37-32920b082519
 caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 9f3d62f6cd393dfccdaeb9047bac4780546f0087
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: f4336ef93eded7ed1d56a8ee34fff0189813da17
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49811967"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54763344"
 ---
 # <a name="advanced-build-settings-dialog-box-c"></a>進階建置設定對話方塊 (C#)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -54,7 +49,7 @@ ms.locfileid: "49811967"
   指定不在 [checked](http://msdn.microsoft.com/library/718a1194-988d-48a3-b089-d6ee8bd1608d) 或 [unchecked](http://msdn.microsoft.com/library/0c021f7c-923f-4b3d-a58f-55336f5ac27e) 關鍵字範圍內，且會產生超出該資料類型範圍之值的整數算術運算式，是否會導致執行階段例外狀況。如需詳細資訊，請參閱 [/checked (C# 編譯器選項)](http://msdn.microsoft.com/library/fb7475d3-e6a6-4e6d-b86c-69e7a74c854b)。  
   
   **不要參考 mscorlib.dll**  
-  指定是否 mscorlib.dll 會匯入至您的程式，定義整個<xref:System>命名空間。 如果您想要定義或建立自己的 <xref:System> 命名空間和物件，請核取此方塊。 如需詳細資訊，請參閱 [/nostdlib (C# 編譯器選項)](http://msdn.microsoft.com/library/ec197989-fa49-4725-a455-e06b551eb65f)。  
+  指定是否要將 mscorlib.dll 匯入您的程式，並定義整個 <xref:System> 命名空間。 如果您想要定義或建立自己的 <xref:System> 命名空間和物件，請核取此方塊。 如需詳細資訊，請參閱 [/nostdlib (C# 編譯器選項)](http://msdn.microsoft.com/library/ec197989-fa49-4725-a455-e06b551eb65f)。  
   
 ## <a name="output"></a>輸出  
  下列選項可讓您指定進階輸出選項。  
@@ -82,9 +77,6 @@ ms.locfileid: "49811967"
   **DLL 基底位址**  
   指定載入 DLL 時慣用的基底位址。 DLL 的預設基底位址是由 [!INCLUDE[dnprdnshort](../../includes/dnprdnshort-md.md)] 通用語言執行平台所設定。 如需詳細資訊，請參閱 [/baseaddress (C# 編譯器選項)](http://msdn.microsoft.com/library/ce13c965-dfe4-4433-94f5-63b476e3a608)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [C# 編譯器選項](http://msdn.microsoft.com/library/d3403556-1816-4546-a782-e8223a772e44)   
  [專案設計工具、建置頁面 (C#)](../../ide/reference/build-page-project-designer-csharp.md)
-
-
-

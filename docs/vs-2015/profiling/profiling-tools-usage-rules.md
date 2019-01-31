@@ -1,25 +1,20 @@
 ---
 title: 程式碼剖析工具使用規則 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: afa7db3b-8c1d-473a-81ac-24ede112a17f
 caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 6eab17a80df478e695af9280e967ba03e14a13de
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 693b43d4a421bd0d0d87fbf485af88573b26adff
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51791764"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54754842"
 ---
 # <a name="profiling-tools-usage-rules"></a>程式碼剖析工具使用規則
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,6 +30,3 @@ ms.locfileid: "51791764"
 |[DA0026：過多核心 CPU 時間處理](../profiling/da0026-excessive-kernel-cpu-time-processing.md)|在程式碼剖析執行時，有大量時間都處於處理器核心模式。 取樣時，請考慮使用系統呼叫作為度量，而不是使用時間作為度量。|  
 |[DA0029：不支援的 CLR 版本](../profiling/da0029-unsupported-clr-version.md)|分析工具不支援已進行程式碼剖析的二進位檔使用 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 版本。 分析工具報表無法解析符號名稱。|  
 |[DA0030：資料庫專案的收集階層互動度量](../profiling/da0030-gather-tier-interaction-measurements-for-database-projects.md)|收集到大量對 <xref:System.Data?displayProperty=fullName> 命名空間中方法的呼叫。 若要納入資料庫呼叫的相關資料，請考慮在分析執行時收集階層互動資料。|
-
-
-

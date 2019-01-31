@@ -14,16 +14,16 @@ helpviewer_keywords:
 ms.assetid: 8c43e7d2-ba94-4d9b-96de-3aa971955afd
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: b4cd6004519573064683d87a35d1b3c49711edb6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2ff45403516f23e8879e8dcda48079349b82a72c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53867929"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54990768"
 ---
 # <a name="add-custom-controls-to-the-data-sources-window"></a>將自訂控制項加入 [資料來源] 視窗
 

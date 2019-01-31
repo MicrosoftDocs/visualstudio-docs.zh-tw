@@ -1,22 +1,20 @@
 ---
 title: 偵錯或停用 XAML 設計工具的專案程式碼 | Microsoft Docs
-ms.custom: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-designers
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: ac600581-8fc8-49e3-abdf-1569a3483d74
 caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 2507b509ee33957845f010f7c18404d257ad4a38
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: afe3b2fd5bdae86d0b5046775c695766594ae9b9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49837577"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54795133"
 ---
 # <a name="debugging-or-disabling-project-code-in-xaml-designer"></a>偵錯或停用 XAML 設計工具的專案程式碼
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -89,10 +87,5 @@ ms.locfileid: "49837577"
     > [!NOTE]
     >  停用專案程式碼會導致設計階段資料遺失。 另一個方法是偵錯在設計工具中執行的程式碼。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [在 Visual Studio 和 Blend for Visual Studio 中設計 XAML](../designers/designing-xaml-in-visual-studio.md)
-
-
-
-
-

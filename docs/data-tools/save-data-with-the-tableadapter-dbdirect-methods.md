@@ -13,16 +13,16 @@ helpviewer_keywords:
 ms.assetid: 74a6773b-37e1-4d96-a39c-63ee0abf49b1
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 88590c49938ef61344a1092dffb42565a81755d1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 77e620a5611a912c3abf449241670fdb298036f3
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53920137"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54934305"
 ---
 # <a name="save-data-with-the-tableadapter-dbdirect-methods"></a>使用 TableAdapter DBDirect 方法儲存資料
 

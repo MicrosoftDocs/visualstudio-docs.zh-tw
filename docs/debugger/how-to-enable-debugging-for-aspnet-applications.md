@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 3beed819-cece-4864-8184-bd410000973a
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: c8723a97f5751b790c946055693064c3b7d12237
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b87a8415bf2df2b8848b4fb619964d981e31ffcf
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53881097"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55035246"
 ---
 # <a name="debug-aspnet-or-aspnet-core-apps-in-visual-studio"></a>偵錯在 Visual Studio 中的 ASP.NET 或 ASP.NET Core 應用程式
 
@@ -116,7 +116,7 @@ ASP.NET 專案具有*web.config*檔案依預設，其中包含這兩個應用程
 
 1. 在 Visual Studio 中，開啟 ASP.NET 專案的*web.config*檔案。  
   
-2. *Web.config*是一個 XML 檔案，因此會包含巢狀標記所標記的區段。 找出`configuration/system.web/compilation`一節。 (如果`compilation`項目不存在，請予以建立。)
+2. *Web.config*是一個 XML 檔案，因此會包含巢狀標記所標記的區段。 找出 `configuration/system.web/compilation` 區段。 (如果`compilation`項目不存在，請予以建立。)
   
 3. 請確定`debug`屬性中`compilation`元素設定為`true`。 (如果`compilation`項目不包含`debug`屬性、 將它加入，然後將它設定為`true`。) 
   

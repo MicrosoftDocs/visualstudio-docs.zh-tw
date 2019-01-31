@@ -1,14 +1,9 @@
 ---
 title: marker_series::write_alert 方法 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - cvmarkersobj/Concurrency::diagnostic:marker_series::write_alert
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 9d5465c7-f862-47a7-b249-4116605075a6
 caps.latest.revision: 8
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: b980939627cb770e27d01d1413bdee877ab1bcb1
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: d65bec449938a55ee9a415dd86db1ba07efbdb1b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51722536"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54792823"
 ---
 # <a name="markerserieswritealert-method"></a>marker_series::write_alert 方法
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,8 +43,5 @@ void write_alert(
   
  **命名空間：** Concurrency::diagnostic  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [marker_series 類別](../profiling/marker-series-class.md)
-
-
-

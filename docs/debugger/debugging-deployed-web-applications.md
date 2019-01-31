@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: b938a91b-be96-416f-83bc-4177e7f3929a
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 724f250e6f41203bc1fe56c88703609e67072783
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: aeb64c445acc0881ce808f9261c42f5205c4d979
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53908367"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55009514"
 ---
 # <a name="debugging-deployed-aspnet-applications"></a>偵錯已部署的 ASP.NET 應用程式
 若要使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 偵錯已部署的應用程式，您必須附加至 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 背景工作處理序，並且確定偵錯工具可以存取應用程式的符號。 您還必須找出並開啟應用程式的原始程式檔 (Source File)。 如需詳細資訊，請參閱 <<c0> [ 指定符號 (.pdb) 和原始程式檔](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)， [How to:尋找 ASP.NET 處理序的名稱](../debugger/how-to-find-the-name-of-the-aspnet-process.md)，並[系統需求](../debugger/aspnet-debugging-system-requirements.md)。  

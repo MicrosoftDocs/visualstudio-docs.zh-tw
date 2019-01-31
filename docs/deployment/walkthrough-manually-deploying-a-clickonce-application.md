@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: ccee6551-a1b9-4ca2-8845-9c1cf4ac2560
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 652c7eee2e4b3830966882afd4a9b9b31c8aceb3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6dac1a48db34f1b3a5a9dbdbac4469344f3e5383
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53923266"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55001718"
 ---
 # <a name="walkthrough-manually-deploy-a-clickonce-application"></a>逐步解說：手動部署 ClickOnce 應用程式
 如果您不能使用 Visual Studio 部署您[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式，或您需要使用進階的部署功能，例如受信任的應用程式部署，您應該使用*Mage.exe*命令列工具來建立您[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]資訊清單。 本逐步解說描述如何建立[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]部署所使用的命令列版本 (*Mage.exe*) 或圖形化的版本 (*MageUI.exe*) 的資訊清單產生和編輯工具。  

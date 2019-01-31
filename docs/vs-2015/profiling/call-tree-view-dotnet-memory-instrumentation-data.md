@@ -1,27 +1,22 @@
 ---
 title: 呼叫樹狀結構檢視 - .NET 記憶體檢測資料 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Call Tree view
 ms.assetid: dd359707-245a-4a36-8305-2e980b9edd53
 caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: ed87363751c18794d9cf4c00e156d75760e0bf8d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: dfcee55882ee90af6ed13072a7e557a9c1763ae8
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51782501"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54792989"
 ---
 # <a name="call-tree-view---net-memory-instrumentation-data"></a>呼叫樹狀結構檢視 - .NET 記憶體檢測資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +35,7 @@ ms.locfileid: "51782501"
   
 ## <a name="general"></a>一般  
   
-|資料行|描述|  
+|資料行|說明|  
 |------------|-----------------|  
 |**函式名稱**|函式的名稱。|  
 |**函式位址**|函式的位址。|  
@@ -61,7 +56,7 @@ ms.locfileid: "51782501"
   
  專屬記憶體值，表示函式主體中程式碼所建立的物件數量及大小，不是該函式呼叫的各函式所建立的物件數量及大小。  
   
-|資料行|描述|  
+|資料行|說明|  
 |------------|-----------------|  
 |**內含配置**|此函式執行個體所配置的物件數目，而函式執行個體是由呼叫樹狀結構中的父函式所呼叫。 此數目包含子函式所進行的配置。|  
 |**內含配置 %**|在分析執行建立的所有物件中，屬於呼叫樹狀結構中父函式所呼叫之函式執行個體的內含配置百分比。|  
@@ -71,7 +66,7 @@ ms.locfileid: "51782501"
 ## <a name="elapsed-inclusive-values"></a>功能內含耗用值  
  功能內含耗用值表示函式在呼叫堆疊上的時間。 該時間包含函式呼叫函式以及呼叫作業系統所花費的時間，例如內容切換和輸入/輸出作業。  
   
-|資料行|描述|  
+|資料行|說明|  
 |------------|-----------------|  
 |**功能內含耗用 (Elapsed Inclusive) 時間**|在呼叫樹狀結構中父函式呼叫此函式時，所有對此函式呼叫的總功能內含耗用 (Elapsed Inclusive) 時間。|  
 |**功能內含耗用 (Elapsed Inclusive) 時間 %**|在分析執行的總功能內含耗用 (Elapsed Inclusive) 時間中，當呼叫樹狀結構中父函式呼叫此函式時，花費在此函式之總功能內含耗用 (Elapsed Inclusive) 時間的百分比。|  
@@ -82,7 +77,7 @@ ms.locfileid: "51782501"
 ## <a name="elapsed-exclusive-values"></a>功能專屬耗用值  
  功能專屬耗用值表示函式直接在呼叫堆疊最上方執行的時間。 該時間包含呼叫作業系統所花費的時間，例如內容切換和輸入/輸出作業。 不過，該時間不包括函式呼叫函式所花費的時間。  
   
-|資料行|描述|  
+|資料行|說明|  
 |------------|-----------------|  
 |**功能專屬耗用 (Elapsed Exclusive) 時間**|在呼叫樹狀結構中父函式呼叫此函式時，所有對此函式呼叫的總功能專屬耗用 (Elapsed Exclusive) 時間。|  
 |**功能專屬耗用 (Elapsed Exclusive) 時間 %**|在分析執行的總功能專屬耗用 (Elapsed Exclusive) 時間中，當呼叫樹狀結構中父函式呼叫此函式時，花費在此函式之總功能專屬耗用 (Elapsed Exclusive) 時間的百分比。|  
@@ -93,7 +88,7 @@ ms.locfileid: "51782501"
 ## <a name="application-inclusive-values"></a>應用程式內含值  
  應用程式內含值表示函數在呼叫堆疊上的時間。 該時間不包含呼叫作業系統所花費的時間，例如內容切換和輸入/輸出作業。 該時間確實包括函式呼叫子函式所花費的時間。  
   
-|資料行|描述|  
+|資料行|說明|  
 |------------|-----------------|  
 |**應用程式內含 (Application Inclusive) 時間**|在呼叫樹狀結構中父函式呼叫此函式時，所有對此函式呼叫的總應用程式內含 (Application Inclusive) 時間。|  
 |**應用程式內含 (Application Inclusive) 時間 %**|在分析執行的總功能內含耗用 (Elapsed Inclusive) 時間中，當呼叫樹狀結構中父函式呼叫此函式時，花費在此函式之總應用程式內含 (Application Inclusive) 時間的百分比。|  
@@ -104,13 +99,10 @@ ms.locfileid: "51782501"
 ## <a name="application-exclusive-values"></a>應用程式專屬值  
  應用程式專屬值，表示在函式中花費的時間，排除在該函式呼叫的子函式中花費的時間。 該時間也排除呼叫作業系統的時間，例如內容切換和輸入/輸出作業。  
   
-|資料行|描述|  
+|資料行|說明|  
 |------------|-----------------|  
 |**應用程式專屬 (Application Exclusive) 時間**|在呼叫樹狀結構中父函式呼叫此函式時，所有對此函式呼叫的總應用程式專屬 (Application Exclusive) 時間。|  
 |**應用程式專屬 (Application Exclusive) 時間 %**|在分析執行的總功能專屬耗用 (Elapsed Exclusive) 時間中，當呼叫樹狀結構中父函式呼叫此函式時，花費在此函式之總應用程式專屬 (Application Exclusive) 時間的百分比。|  
 |**平均應用程式專屬 (Application Exclusive) 時間**|在呼叫樹狀結構中父函式呼叫此函式時，對此函式呼叫的平均應用程式專屬 (Application Exclusive) 時間。|  
 |**最大應用程式專屬 (Application Exclusive) 時間**|在呼叫樹狀結構中父函式呼叫此函式時，對此函式呼叫的最大應用程式專屬 (Application Exclusive) 時間。|  
 |**最小應用程式專屬 (Application Exclusive) 時間**|在呼叫樹狀結構中父函式呼叫此函式時，對此函式呼叫的最小應用程式專屬 (Application Exclusive) 時間。|
-
-
-

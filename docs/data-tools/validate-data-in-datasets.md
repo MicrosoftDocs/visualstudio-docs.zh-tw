@@ -18,16 +18,16 @@ helpviewer_keywords:
 ms.assetid: 79500596-1e4d-478e-a991-a636fd73a622
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: e485223f73a74a97dd388a9c78dd4cf543a92350
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5a8d533b647861b8185a65c926f1783744cded74
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53936187"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55004392"
 ---
 # <a name="validate-data-in-datasets"></a>驗證資料集中的資料
 驗證資料是資料物件中所輸入的值符合的條件約束的資料集結構描述中的確認程序。 驗證程序也會確認這些值會遵循您的應用程式所建立的規則。 它是個不錯的做法，驗證資料，再將更新傳送至基礎資料庫。 這會減少錯誤，以及可能的應用程式與資料庫之間的往返次數。

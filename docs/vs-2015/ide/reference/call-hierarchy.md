@@ -1,14 +1,9 @@
 ---
 title: 呼叫階層 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - VS.CallHierarchy
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: c55bda01-d7de-4823-8f9a-1bcc37dbb74a
 caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 86cf4e12f412e6448f4a4b7c38af8268f10d9c56
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 4846d00172c3d71be1f8a8dbdf68cf4e7fd1f065
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49851106"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54774770"
 ---
 # <a name="call-hierarchy"></a>呼叫階層
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -66,7 +61,7 @@ ms.locfileid: "49851106"
 ## <a name="shortcut-menu-items"></a>捷徑功能表項目  
  下表描述幾個當您以滑鼠右鍵按一下樹狀檢視窗格中的節點時，可以使用的捷徑功能表選項。  
   
-|操作功能表項目|描述|  
+|操作功能表項目|說明|  
 |-----------------------|-----------------|  
 |**增為新根目錄**|將選取的節點新增至樹狀檢視窗格作為新的根節點。 這可讓您將注意力放在特定樹狀子目錄。|  
 |**移除根目錄**|從樹狀檢閱窗格移除所選根節點。 這個選項只能從根節點使用。<br /><br /> 您也可以使用 [移除根目錄] 工具列按鈕來移除選取的根節點。|  
@@ -74,6 +69,3 @@ ms.locfileid: "49851106"
 |**尋找所有參考**|在選取的節點上執行 [尋找所有參考] 命令。 如此即可尋找專案中參考類別或成員的所有程式碼行。<br /><br /> 您也可以使用 SHIFT+F12，在選取的節點上執行 [尋找所有參考] 命令。|  
 |**複製**|複製選取之節點 (而非其子節點) 的內容。|  
 |**重新整理**|摺疊選取的節點，以便於再次展開時顯示目前的資訊。|
-
-
-

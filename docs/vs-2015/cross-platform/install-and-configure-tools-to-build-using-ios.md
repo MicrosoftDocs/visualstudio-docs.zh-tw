@@ -1,27 +1,22 @@
 ---
 title: 安裝和設定工具以使用 iOS 進行建置 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- tgt-pltfrm-cross-plat
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: tgt-pltfrm-cross-plat
+ms.topic: conceptual
 dev_langs:
 - C++
 ms.assetid: d0c311c9-9eb9-42c5-ba07-25604362cd28
 caps.latest.revision: 13
 author: corob-msft
 ms.author: corob
-manager: ghogen
-ms.openlocfilehash: 6a5d5543ace2087db4ed5349e72fcaf53228d8ec
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: c1eaa934c83676ee11854701f372b972f3045e66
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51787805"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54792849"
 ---
 # <a name="install-and-configure-tools-to-build-using-ios"></a>Install and Configure Tools to Build using iOS
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +25,7 @@ ms.locfileid: "51787805"
 您可以使用 Visual C++ for Cross-Platform Mobile Development 編輯、偵錯 iOS 程式碼並將其部署至 iOS 模擬器或 iOS 裝置，但由於授權限制，必須在 Mac 上遠端建置及執行程式碼。 若要使用 Visual Studio 建置並執行 iOS 應用程式，您必須在 Mac 上安裝及設定 [vcremote](http://go.microsoft.com/fwlink/p/?LinkId=534988)遠端代理程式。 遠端代理程式會處理來自 Visual Studio 的建立要求，並在連接至 Mac 的 iOS 裝置或 Mac 中的 iOS 模擬器上執行應用程式。  
   
 > [!NOTE]
->  如需使用雲端裝載 Mac 服務，而非使用 Mac 的相關資訊，請參閱 [Build and Simulate iOS in the Cloud](https://taco.visualstudio.com/en-us/docs/build_ios_cloud/)。 本指示是針對使用 Visual Studio Tools for Apache Cordova 進行建置。 若要使用本指示以利用 Visual C++ for Cross-Platform Mobile Development 進行建置，請將 vs-mda-remote 取代為 vcremote。  
+>  如需使用雲端裝載 Mac 服務，而非使用 Mac 的相關資訊，請參閱 [Build and Simulate iOS in the Cloud](https://taco.visualstudio.com/docs/build_ios_cloud/)。 本指示是針對使用 Visual Studio Tools for Apache Cordova 進行建置。 若要使用本指示以利用 Visual C++ for Cross-Platform Mobile Development 進行建置，請將 vs-mda-remote 取代為 vcremote。  
   
  一旦您已安裝使用 iOS 進行建置的工具，請參閱本主題以取得可在 Visual Studio 及 Mac 上進行 iOS 開發快速設定和更新遠端代理程式的方式。  
   
@@ -53,7 +48,7 @@ ms.locfileid: "51787805"
   
 -   執行 OS X Mavericks 或更新版本的 Mac 電腦  
   
--   [Apple ID](https://appleid.apple.com/)  
+-    [Apple ID](https://appleid.apple.com/)  
   
 -   Apple 的使用中 [iOS 開發人員計劃](https://developer.apple.com/programs/ios/) 帳戶  
   
@@ -245,6 +240,5 @@ ms.locfileid: "51787805"
   
      其中， *config_file_path* 是 JSON 格式的組態檔路徑。 啟動選項及其值不得包含破折號。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Install Visual C++ for Cross-Platform Mobile Development](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md)
-

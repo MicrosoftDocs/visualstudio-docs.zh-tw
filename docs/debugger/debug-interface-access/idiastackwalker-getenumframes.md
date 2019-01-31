@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: f9f09729-4c34-441c-989c-e0b7339ee32c
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d1ab73810b79db8c98f45727d4019da1e7055db
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a4b59824b8010987161937d16f852295e6929f2e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53935706"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54951907"
 ---
 # <a name="idiastackwalkergetenumframes"></a>IDiaStackWalker::getEnumFrames
 擷取堆疊框架的列舉值適用於 x86 平台。  

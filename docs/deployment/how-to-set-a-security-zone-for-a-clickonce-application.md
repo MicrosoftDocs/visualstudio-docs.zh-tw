@@ -13,20 +13,20 @@ helpviewer_keywords:
 ms.assetid: d3dac454-518a-44d7-a76e-ccb7b9c3a150
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 197a1c7d91c017c51ef5aa5303ffc3a1bb11f7e9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0da7c3d4129102339eaf74fac815f086e027a4f3
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53946145"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54980670"
 ---
 # <a name="how-to-set-a-security-zone-for-a-clickonce-application"></a>HOW TO：為 ClickOnce 應用程式設定安全性區域
 設定 ClickOnce 應用程式的程式碼存取安全性權限時，必須從 [專案設計工具]  之 [安全性] 頁面上的一組基底權限開始。  
   
- 在大多數情況下，您也可以選擇 [網際網路]  區域 (包含一組有限的權限) 或 [近端內部網路]  區域 (包含一組更高的權限)。 如果應用程式需要自訂權限，您可以選擇 [自訂]  安全性區域來完成。 如需有關設定自訂權限的詳細資訊，請參閱[How to:為 ClickOnce 應用程式設定自訂權限](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)  
+ 在大多數情況下，您也可以選擇 [網際網路]  區域 (包含一組有限的權限) 或 [近端內部網路]  區域 (包含一組更高的權限)。 如果應用程式需要自訂權限，您可以選擇 [自訂]  安全性區域來完成。 如需有關設定自訂權限的詳細資訊，請參閱[How to:為 ClickOnce 應用程式設定自訂權限](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)。  
   
 ### <a name="to-set-a-security-zone"></a>設定安全性區域  
   

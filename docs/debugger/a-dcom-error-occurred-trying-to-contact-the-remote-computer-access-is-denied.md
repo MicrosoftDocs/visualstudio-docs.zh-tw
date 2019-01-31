@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 9d7dfc1b-9fe0-4f54-9c50-9c0e0f8358c5
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c329704ee7f2ea19f56d3bd9201783a04d967de7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 93dfb374e693c6483ff80737b8715e4abc570bf0
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53938654"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55009696"
 ---
 # <a name="a-dcom-error-occurred-trying-to-contact-the-remote-computer-access-is-denied"></a>嘗試聯繫遠端電腦時，發生 DCOM 錯誤。 存取被拒絕。
 在下列情況下，遠端偵錯會使用 DCOM 在本機與遠端電腦之間進行通訊：  

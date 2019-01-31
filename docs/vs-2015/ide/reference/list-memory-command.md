@@ -1,14 +1,9 @@
 ---
 title: 列出記憶體命令 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - debug.listmemory
 helpviewer_keywords:
@@ -19,13 +14,13 @@ ms.assetid: a84de361-a6a6-4f6d-96aa-a0d4a424371e
 caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 25be71041f0ab127037a25a03cff1d6ffe42ac97
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 057099c2ce1c4832c48d2eeac8774a36c5fad7b5
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49224493"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54804291"
 ---
 # <a name="list-memory-command"></a>列出記憶體命令
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -89,14 +84,10 @@ Debug.ListMemory [/ANSI|Unicode] [/Count:number] [/Format:formattype]
 >Debug.ListMemory /Format:float /Count:30 /Unicode  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [列出呼叫堆疊命令](../../ide/reference/list-call-stack-command.md)   
  [列出執行緒命令](../../ide/reference/list-threads-command.md)   
  [Visual Studio 命令](../../ide/reference/visual-studio-commands.md)   
  [命令視窗](../../ide/reference/command-window.md)   
  [尋找/命令方塊](../../ide/find-command-box.md)   
  [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
-
-
-
-

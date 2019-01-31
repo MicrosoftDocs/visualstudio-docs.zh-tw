@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: a70785f2-5997-40ec-a90f-80a52449768b
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 780f741e20ed6a7a328904d7ddcadfb0025ac869
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ccafbcf829b78fa4e1c12b3a46c46dfa59e3e863
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53886510"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54996398"
 ---
 # <a name="memory-tab-process-properties-dialog-box"></a>處理序屬性對話方塊、記憶體索引標籤
 使用**記憶體** 索引標籤以顯示處理程序如何使用記憶體。 若要顯示[處理序屬性對話方塊](../debugger/process-properties-dialog-box.md)，焦點移至[處理序檢視](../debugger/processes-view.md)視窗。 在樹狀目錄中，選取任何處理序節點，然後選擇**屬性**從**檢視**功能表。  

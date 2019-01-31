@@ -1,14 +1,9 @@
 ---
 title: marker_importance 列舉 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - cvmarkersobj/Concurrency::diagnostic::marker_importance
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: d5524ea0-0227-4d8e-9122-332291042df5
 caps.latest.revision: 8
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 32e57a9463e6c6966c215066fd470b62596f5481
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: a4451a7b222b66f0fe5bea2b0e5f2b8499c9033c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51756861"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54779033"
 ---
 # <a name="markerimportance-enumeration"></a>marker_importance 列舉
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,8 +47,5 @@ enum marker_importance;
   
  **命名空間：** Concurrency::diagnostic  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [diagnostic 命名空間](../profiling/diagnostic-namespace.md)
-
-
-

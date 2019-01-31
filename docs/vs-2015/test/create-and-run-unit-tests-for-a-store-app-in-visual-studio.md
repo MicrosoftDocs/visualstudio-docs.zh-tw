@@ -2,7 +2,7 @@
 title: 建立及執行的市集應用程式的單元測試
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.technology: vs-ide-general
+ms.technology: vs-ide-test
 ms.topic: conceptual
 helpviewer_keywords:
 - unit tests
@@ -10,13 +10,13 @@ ms.assetid: d3de7b31-0262-4373-ba84-e74eda7651e4
 caps.latest.revision: 28
 author: alexhomer1
 ms.author: gewarren
-manager: robinr
-ms.openlocfilehash: ac1e4e0b1793919b0ecad633e264df623cb4fd8f
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: 7ab342c2d038a0021d94858de916e66456622adb
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53058394"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54794488"
 ---
 # <a name="create-and-run-unit-tests-for-a-store-app-in-visual-studio"></a>在 Visual Studio 中對市集應用程式建立及執行單元測試
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

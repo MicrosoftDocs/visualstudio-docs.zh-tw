@@ -1,14 +1,9 @@
 ---
 title: 模組檢視 - 取樣資料 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Modules view
 - sampling profiling method,Modules view
@@ -16,13 +11,13 @@ ms.assetid: 816f5633-65d7-41e5-aee1-033628d4e2df
 caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: a885ca96ce58be7448f5b9b814457b38e08a1233
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 04c714576a0207d4168f20a241d6f0c7dd29298c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51742493"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54784453"
 ---
 # <a name="modules-view---sampling-data"></a>模組檢視 - 取樣資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +29,7 @@ ms.locfileid: "51742493"
   
  如果收集樣本的時候正在執行函式 (即函式在呼叫堆疊最上方)，則執行中的原始程式行和指令位址會列在函式節點之下。 因為資料是在執行程式行或指令時，針對原始程式行或指令指標來收集資料，所以程式行資料和指令資料的內含值和專屬值一律相同。  
   
-|資料行|描述|  
+|資料行|說明|  
 |------------|-----------------|  
 |**名稱**|模組、函式、行號或指令指標位址的名稱。|  
 |**處理序 ID**|分析執行的處理序 ID (PID)。|  
@@ -48,10 +43,7 @@ ms.locfileid: "51742493"
 |**專有樣本**|-   對於函式，這是此函式直接在其中執行的呼叫堆疊樣本數，亦即此函式在呼叫堆疊最上方的樣本數量。<br />-   對於模組，這是模組中函式之專有樣本的總和。<br />-   對於程式行或指令，這是此程式行或指令正在其中執行的樣本數量。|  
 |**專有樣本 %**|-   對於函式或模組，這是分析執行中此函式或模組的專有樣本佔所有樣本的百分比。<br />-   對於程式行或指令，這是分析執行中，其中正在執行此程式行或指令之所有樣本的百分比。|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [模組檢視 - 取樣](../profiling/modules-view-dotnet-memory-sampling-data.md)   
  [模組檢視 - 檢測](../profiling/modules-view-dotnet-memory-instrumentation-data.md)   
  [模組檢視](../profiling/modules-view-instrumentation-data.md)
-
-
-

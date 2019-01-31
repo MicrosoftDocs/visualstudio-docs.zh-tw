@@ -7,16 +7,16 @@ helpviewer_keywords:
 ms.assetid: 40b51f5a-d52c-44ac-8f84-037a0917af33
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: ad784e0438e0b1f02607c3cb748c759b9266dbe6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bde98c7acb8c4f5c2b8b2cee4fd1c442438da540
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53824570"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54940969"
 ---
 # <a name="database-projects-and-data-tier-applications"></a>資料庫專案和資料層應用程式
 

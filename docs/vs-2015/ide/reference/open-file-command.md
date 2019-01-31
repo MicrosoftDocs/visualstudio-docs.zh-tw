@@ -1,14 +1,9 @@
 ---
 title: 開啟檔案命令 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - file.openfile
 helpviewer_keywords:
@@ -19,13 +14,13 @@ ms.assetid: a51a83fc-e3c6-4fa2-8882-8b7b6c0a6406
 caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 0b519d8defcdc4b43dd7ca84552536ca655bb348
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: d1a3d363f51861af5914ee0172c5c9a3511b2485
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49247932"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54767346"
 ---
 # <a name="open-file-command"></a>開啟檔案命令
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -41,7 +36,7 @@ File.OpenFile filename [/e:editorname]
   
 ## <a name="arguments"></a>引數  
  `filename`  
- 必要。 要開啟之檔案的完整或部分路徑和檔名。 包含空格的路徑必須包含在引號中。  
+ 必要項。 要開啟之檔案的完整或部分路徑和檔名。 包含空格的路徑必須包含在引號中。  
   
 ## <a name="switches"></a>參數  
  /e:`editorname`  
@@ -65,12 +60,9 @@ File.OpenFile filename [/e:editorname]
 >File.OpenFile "C:\My Projects\project1\Test1.css" /e:"Source Code (text) Editor"  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Visual Studio 命令](../../ide/reference/visual-studio-commands.md)   
  [命令視窗](../../ide/reference/command-window.md)   
  [即時運算視窗](../../ide/reference/immediate-window.md)   
  [尋找/命令方塊](../../ide/find-command-box.md)   
  [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
-
-
-

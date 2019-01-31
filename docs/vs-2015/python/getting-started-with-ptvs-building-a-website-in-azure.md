@@ -1,27 +1,22 @@
 ---
-title: 開始使用 PTVS：在 Azure 建置網站 | Microsoft Docs
-ms.custom: ''
+title: Ptvs 快速入門：在 Azure 建置網站 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-python
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-python
+ms.topic: conceptual
 ms.assetid: 3bdbda36-14d2-4fde-ba42-d91042777ff6
 caps.latest.revision: 5
 author: kraigb
 ms.author: kraigb
-manager: ghogen
-ms.openlocfilehash: 1c4f0d0a1bf963857cde5dc0c6aa36e2aa04ca7f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 61f8748a3874f32db9c235d03b6b7464bc5cecf1
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49282746"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54783192"
 ---
-# <a name="getting-started-with-ptvs-building-a-website-in-azure"></a>開始使用 PTVS：在 Azure 建置網站
+# <a name="getting-started-with-ptvs-building-a-website-in-azure"></a>Ptvs 快速入門：在 Azure 建置網站
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 您可以快速地開始在 Azure 中建置 Python 網站。  
@@ -38,7 +33,6 @@ ms.locfileid: "49282746"
   
  您可以在這段簡短的 [YouTube 影片 (英文)](https://www.youtube.com/watch?v=FJx5mutt1uk&list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff&index=6) 中觀看這些指示。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Wiki 文件 (英文)](https://github.com/Microsoft/PTVS/wiki/Web-Project)   
  [PTVS 快速入門及深度剖析影片 (英文)](https://www.youtube.com/playlist?list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff)
-

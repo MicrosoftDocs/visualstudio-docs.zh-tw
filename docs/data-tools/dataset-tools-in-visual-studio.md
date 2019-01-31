@@ -45,15 +45,15 @@ helpviewer_keywords:
 ms.assetid: ee57f4f6-9fe1-4e0a-be9a-955c486ff427
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 8c48420ca03e2e6de8d240fd4f28fbe80bcbcd18
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b131e1339c1eab5cac84f55f08779e41c50eedd5
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53863091"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54949138"
 ---
 # <a name="dataset-tools-in-visual-studio"></a>Visual Studio 中的資料集工具
 

@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: eb6dfe79-f54c-4331-8e36-073688e70973
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ee9c3ee6bca6ffa338dc4cf609947b98b88c0498
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 273f726daa7b3f467e4c055cfb52e9584a048c2c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53930132"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54954627"
 ---
 # <a name="publish-clickonce-applications"></a>發佈 ClickOnce 應用程式
 首次發行 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式時，可以使用 [發行精靈] 來設定發行屬性。 這個精靈僅提供少數屬性；所有其他屬性都設為其預設值。  

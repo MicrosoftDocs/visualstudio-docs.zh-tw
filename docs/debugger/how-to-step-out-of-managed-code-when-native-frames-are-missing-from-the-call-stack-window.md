@@ -19,16 +19,16 @@ helpviewer_keywords:
 ms.assetid: 97cdd2a8-02a9-4a06-a5b1-c92b1e431979
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 2759df7cc59f4d0167e1ef44dfb9cc65d16ba815
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 25021f0c3daffdaf59633fdb9bff0e2659f43d2e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53867432"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55043021"
 ---
 # <a name="how-to-step-out-of-managed-code-when-native-frames-are-missing-from-the-call-stack-window"></a>HOW TO：在原生框架從呼叫堆疊視窗遺失時跳離受控程式碼
 

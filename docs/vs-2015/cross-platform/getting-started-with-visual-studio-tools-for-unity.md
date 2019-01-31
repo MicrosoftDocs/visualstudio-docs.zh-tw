@@ -1,25 +1,20 @@
 ---
 title: Visual Studio Tools for Unity 使用者入門 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- tgt-pltfrm-cross-plat
-ms.tgt_pltfrm: ''
+ms.technology: vs-unity-tools
 ms.topic: conceptual
 ms.assetid: 66b5b4eb-13b5-4071-98d2-87fafa4598a8
 caps.latest.revision: 12
 author: conceptdev
 ms.author: crdun
-manager: ghogen
-ms.openlocfilehash: 9ed6cb4127ba57c6b9b84a32996968dbf9fac4fe
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 5b3c1d384ea42f4a1cdc864c261586ff1ee2e384
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51762714"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54764605"
 ---
 # <a name="getting-started-with-visual-studio-tools-for-unity"></a>Visual Studio Tools for Unity 使用者入門
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -117,6 +112,5 @@ ms.locfileid: "51762714"
 ## <a name="next-steps"></a>後續步驟  
  如需了解如何在 Visual Studio 中使用及偵錯 Unity 專案，請參閱[使用 Visual Studio Tools for Unity](../cross-platform/getting-started-with-visual-studio-tools-for-unity.md)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Unity 首頁 (英文)](http://unity3d.com)
-

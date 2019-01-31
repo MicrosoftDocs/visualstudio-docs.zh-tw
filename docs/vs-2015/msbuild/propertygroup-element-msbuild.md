@@ -1,14 +1,9 @@
 ---
 title: PropertyGroup 項目 (MSBuild) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#PropertyGroup
 dev_langs:
@@ -23,13 +18,13 @@ ms.assetid: ff1e6c68-b9a1-4263-a1ce-dc3b829a64d4
 caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 2fa874a99a931f872da4a77df32d8cc2bd73a248
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: fb3ae2ba566c42ef1cde10e4a758fe8f9698ed13
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49284371"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54772523"
 ---
 # <a name="propertygroup-element-msbuild"></a>PropertyGroup 項目 (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,19 +49,19 @@ ms.locfileid: "49284371"
   
 ### <a name="attributes"></a>屬性  
   
-|屬性|描述|  
+|屬性|說明|  
 |---------------|-----------------|  
 |條件|選擇性屬性。<br /><br /> 要評估的條件。 如需詳細資訊，請參閱[條件](../msbuild/msbuild-conditions.md)。|  
   
 ### <a name="child-elements"></a>子元素  
   
-|項目|描述|  
+|元素|說明|  
 |-------------|-----------------|  
 |[Property](../msbuild/property-element-msbuild.md)|選擇性項目。<br /><br /> 使用者定義的屬性名稱，其中包含屬性值。 `PropertyGroup` 項目中可能有零或多個 *Property* 項目。|  
   
 ### <a name="parent-elements"></a>父項目  
   
-|項目|描述|  
+|元素|說明|  
 |-------------|-----------------|  
 |[專案](../msbuild/project-element-msbuild.md)|[!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 專案檔案的必要根項目。|  
   
@@ -81,9 +76,6 @@ ms.locfileid: "49284371"
 </PropertyGroup>  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [專案檔案結構描述參考](../msbuild/msbuild-project-file-schema-reference.md)  
  [MSBuild 屬性](msbuild-properties1.md)
-
-
-

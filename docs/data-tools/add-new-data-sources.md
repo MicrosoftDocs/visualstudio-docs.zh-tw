@@ -10,16 +10,16 @@ helpviewer_keywords:
 ms.assetid: ed28c625-bb89-4037-bfde-cfa435d182a2
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: d203fc6c0ecb61310a31ae172fe68bcdf77f66a8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 929f24fbbc490c48db72d5fa085879beaabcea6c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53863848"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54974694"
 ---
 # <a name="add-new-data-sources"></a>新增新資料來源
 

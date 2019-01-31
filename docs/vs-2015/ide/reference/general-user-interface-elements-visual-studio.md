@@ -1,24 +1,20 @@
 ---
 title: 一般使用者介面項目 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: reference
 ms.assetid: bc67652d-1001-4979-ba71-d57147d21928
 caps.latest.revision: 40
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 9222a03b9df8997298e473c7248307341d89409f
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+manager: jillfra
+ms.openlocfilehash: 39669408402a12ce8010865606e2a2ec3929569b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "53931167"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54756388"
 ---
 # <a name="general-user-interface-elements-visual-studio"></a>一般使用者介面項目 (Visual Studio)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

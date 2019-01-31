@@ -5,16 +5,16 @@ ms.topic: reference
 ms.assetid: 389873cc-92dd-48da-bfca-0f6c8e0ae3c2
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4e2d519a8b35d10b3dbf71695b75e77ee6309885
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 32eeef65eaf8cfebbce0458b90f954bf491f718a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53896565"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54997958"
 ---
 # <a name="the-property-ltproperty-namegt-cannot-be-deleted-because-it-is-participating-in-the-association-ltassociation-namegt"></a>無法刪除屬性&lt;屬性名稱&gt;，因為其正在參與關聯&lt;關聯名稱&gt;
 

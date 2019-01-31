@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 73cd3e9d-cd72-4ad2-8cae-94d6bb6b01e0
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d736ca95b9095aa1db19445762d4734dc49677a1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a8b399b8551810cf4fa33d694eb5a63959a7ea2f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53967265"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55019485"
 ---
 # <a name="how-to-enable-clickonce-security-settings"></a>HOW TO：啟用 ClickOnce 安全性設定
 為了發佈應用程式，就必須啟用程式碼存取安全性，ClickOnce 應用程式。 當您發行應用程式使用發佈精靈時，這會自動完成。  

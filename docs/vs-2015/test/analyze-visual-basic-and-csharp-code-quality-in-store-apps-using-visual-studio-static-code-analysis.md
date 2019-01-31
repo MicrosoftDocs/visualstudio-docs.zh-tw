@@ -2,7 +2,7 @@
 title: 分析 Visual Basic 和C#程式碼中使用靜態程式碼分析市集應用程式的品質
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.technology: vs-ide-general
+ms.technology: vs-ide-test
 ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.propertypages.csvb.express
@@ -10,13 +10,13 @@ ms.assetid: cab553fc-19a9-4cbf-858e-8200258ffe50
 caps.latest.revision: 16
 author: erickson-doug
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: a3a3d753f9e2dd3b046159d191149b7af062fe16
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: 9353b4c3f5f5f073a0658d2cf506a46e13d3662c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53063203"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54795672"
 ---
 # <a name="analyze-visual-basic-and-c-code-quality-in-store-apps-using-visual-studio-static-code-analysis"></a>使用 Visual Studio 靜態程式碼分析，分析市集應用程式中的 Visual Basic 和 C# 程式碼品質
 

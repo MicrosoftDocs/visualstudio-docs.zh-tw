@@ -10,16 +10,16 @@ helpviewer_keywords:
 - datasets [Visual Basic], creating
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: e79646609bf592b7a8d71d3e0ba8660c65520715
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ce6d5a6a485a2d72c3a531219455efd425cd991f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53868510"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55003281"
 ---
 # <a name="walkthrough-create-a-dataset-with-the-dataset-designer"></a>逐步解說：以 Dataset 設計工具建立資料集
 

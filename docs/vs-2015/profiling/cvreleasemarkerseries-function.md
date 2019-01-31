@@ -1,14 +1,9 @@
 ---
 title: CvReleaseMarkerSeries 函式 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 f1_keywords:
 - cvmarkers/CvReleaseMarkerSeries
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 3b4711ee-e534-411d-9128-f69cd7932a48
 caps.latest.revision: 8
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: cf62ece61be25ef92866a9b761819c842d9154c3
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 6bfa9952a834110ef0fea36568ea210b637547aa
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51801520"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54794131"
 ---
 # <a name="cvreleasemarkerseries-function"></a>CvReleaseMarkerSeries 函式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,8 +43,5 @@ HRESULT CvReleaseMarkerSeries(
 ## <a name="requirements"></a>需求  
  **標頭︰** cvmarkers.h  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [C++ 程式庫參考](../profiling/cpp-library-reference.md)
-
-
-

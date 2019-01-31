@@ -1,14 +1,9 @@
 ---
 title: 專案設計工具、應用程式頁面 (C#) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - cs.ProjectPropertiesApplicationWPF
 - cs.ProjectPropertiesApplication
@@ -19,13 +14,13 @@ ms.assetid: f13701a8-4e2e-4474-9d60-bb43decbe0c1
 caps.latest.revision: 61
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 4a130a04be7a0645fef44ff6c8ae9dcc31b55dcf
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: db76b86bd9a6f05ea6f36dc28c06d01692944e37
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49867230"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54778642"
 ---
 # <a name="application-page-project-designer-c"></a>專案設計工具，應用程式頁 (C#)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -58,7 +53,7 @@ ms.locfileid: "49867230"
 > [!NOTE]
 >  第一次開啟該對話方塊時，會自動設定[必要條件對話方塊](../../ide/reference/prerequisites-dialog-box.md)中所列的必要條件套件。 如果您接著變更專案的目標架構，您就必須手動選取必要條件以符合新的目標架構。  
   
- 如需詳細資訊，請參閱[如何：以 .NET Framework 版本為目標](../../ide/how-to-target-a-version-of-the-dotnet-framework.md)和 [Visual Studio 多目標概觀](../../ide/visual-studio-multi-targeting-overview.md)。  
+ 如需詳細資訊，請參閱[＜How to：以 .NET Framework 版本為目標](../../ide/how-to-target-a-version-of-the-dotnet-framework.md)和 [Visual Studio 多目標概觀](../../ide/visual-studio-multi-targeting-overview.md)。  
   
  **應用程式類型**  
  指定要建置的應用程式類型。 針對 [!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)] 應用程式，您可以指定 [Windows 市集應用程式]、[類別庫] 或 [WinMD 檔案]。 針對大多數其他應用程式類型，您可以指定 [Windows 應用程式]、[主控台應用程式]、[類別庫]、[Windows 服務] 或 [Web 控制項程式庫]。  
@@ -105,9 +100,6 @@ ms.locfileid: "49867230"
   
   輸入路徑名稱，或使用 [瀏覽] 按鈕 (**...**) 將 Win32 資源檔新增至專案。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
 [管理應用程式屬性](../../ide/application-properties.md)  
  [Writing Code in Office Solutions](http://msdn.microsoft.com/library/2d4d8fd0-e881-4829-976f-0d1a9221dec0)
-
-
-

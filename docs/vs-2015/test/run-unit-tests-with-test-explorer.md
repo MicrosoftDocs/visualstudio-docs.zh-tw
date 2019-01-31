@@ -1,26 +1,21 @@
 ---
 title: 使用測試總管執行單元測試 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 f1_keywords:
 - vs.unittesting.testexplorer.overview
 ms.assetid: 91b167a3-280a-498b-8fc2-f67859a2c64e
 caps.latest.revision: 29
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: f4c5a8a4d090a7603f83f6fb3c3d9deb0c67d5f8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 8c8894239e1e1dd3979b9bb7c61e5aa1f294fe2b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49846833"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54805104"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>使用測試總管執行單元測試
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -117,7 +112,7 @@ ms.locfileid: "49846833"
   ![回到頁首](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [內容](#BKMK_Contents)  
   
 ###  <a name="BKMK_View_the_source_code_of_a_test_method"></a> 檢視測試方法的原始程式碼  
- 若要在 Visual Studio 編輯器顯示測試方法的原始程式碼，請選取測試，然後選擇內容功能表上的 [開啟測試]  (鍵盤：按 F12)。  
+ 若要在 Visual Studio 編輯器顯示測試方法的原始程式碼，請選取測試，然後選擇操作功能表上的 [開啟測試] (鍵盤：F12)。  
   
  ![回到頁首](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [內容](#BKMK_Contents)  
   
@@ -133,10 +128,10 @@ ms.locfileid: "49846833"
   
 ### <a name="test-explorer-groups"></a>測試總管群組  
   
-|群組|描述|  
+|群組|說明|  
 |-----------|-----------------|  
-|**持續期間**|依據執行時間群組測試：[快] 、[中] 和 [慢] 。|  
-|**結果**|依據執行結果群組測試：[失敗的測試] 、[略過的測試] 、[成功的測試] 。|  
+|**持續期間**|依據執行時間群組測試：[快]、[中] 和 [慢]。|  
+|**結果**|依據執行結果群組測試：[失敗的測試]、[略過的測試]、[成功的測試]。|  
 |**特性**|依據您定義的分類/值組群組測試。 指定特性分類和值的語法是由單元測試架構所定義。|  
 |**專案**|依據名稱專案群組測試。|  
   
@@ -149,7 +144,7 @@ ms.locfileid: "49846833"
   
  Microsoft Managed 程式碼單元測試架構中，您可在  <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute> 屬性中定義特性名稱/值組。 測試架構也包含下列預先定義的特性：  
   
-|特性|描述|  
+|特性|說明|  
 |-----------|-----------------|  
 |<xref:Microsoft.VisualStudio.TestTools.UnitTesting.OwnerAttribute>|擁有者分類是由單元測試架構所定義，會要求您提供擁有者的字串值。|  
 |<xref:Microsoft.VisualStudio.TestTools.UnitTesting.PriorityAttribute>|優先權分類是由單元測試架構所定義，會要求您提供優先權的整數值。|  
@@ -182,7 +177,7 @@ TEST_METHOD(Method1)
   
 ### <a name="c-trait-attribute-macros"></a>C++ 特性屬性巨集  
   
-|巨集|描述|  
+|巨集|說明|  
 |-----------|-----------------|  
 |`TEST_METHOD_ATTRIBUTE(attributeName, attributeValue)`|使用 TEST_METHOD_ATTRIBUTE 巨集定義特性。|  
 |`TEST_OWNER(ownerAlias)`|使用預先定義的擁有者特性，指定測試方法的擁有者。|  
@@ -208,7 +203,7 @@ TEST_METHOD(Method1)
 > [!NOTE]
 >  搜尋是區分大小寫且比對指定字串與準則值的任何部分。  
   
-|限定詞|描述|  
+|限定詞|說明|  
 |---------------|-----------------|  
 |**特性**|在特性分類和值中搜尋相符項目。 指定特性分類和值的語法是由單元測試架構所定義。|  
 |**Project**|在測試專案名稱中搜尋相符項目。|  
@@ -216,7 +211,7 @@ TEST_METHOD(Method1)
 |**檔案路徑**|在測試來源檔的完整檔案名稱中搜尋相符項目。|  
 |**完整名稱**|在測試命名空間、類別和方法的完整檔案名稱中搜尋相符項目。|  
 |**輸出**|搜尋寫入標準輸出 (stdout) 或標準錯誤 (stderr) 的使用者定義錯誤訊息。 指定輸出訊息的語法是由單元測試架構所定義。|  
-|**結果**|在測試總管分類名稱中搜尋相符項目：[失敗的測試] 、[略過的測試] 、[成功的測試] 。|  
+|**結果**|在 [測試總管] 分類名稱中搜尋相符項目：[失敗的測試]、[略過的測試]、[成功的測試]。|  
   
  若要排除篩部分選條件的結果，請使用下列語法：  
   
@@ -295,11 +290,8 @@ FullName:"MyClass" - FullName:"PerfTest"
 ##  <a name="BKMK_External_resources"></a> 外部資源  
   
 ###  <a name="BKMK_Guidance"></a> 指引  
- [使用 Visual Studio 2012 測試持續傳遞 - 第 2 章：單元測試：測試內部](http://go.microsoft.com/fwlink/?LinkID=255188)  
+ [測試 for Continuous Delivery with Visual Studio 2012 – 第 2 章：單元測試測試內部](http://go.microsoft.com/fwlink/?LinkID=255188)  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [對程式碼進行單元測試](../test/unit-test-your-code.md)   
  [以 64 位元處理序的形式執行單元測試](../test/run-a-unit-test-as-a-64-bit-process.md)
-
-
-

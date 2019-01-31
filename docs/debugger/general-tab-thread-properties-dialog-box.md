@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 46b6c668-6786-456e-97dc-337bcac0d812
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f06fb3d5af44a220a1eb88fd7a4df53bc589972
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: df711f61500d241d9f5ec0234d4f9b29f525c4f5
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53989331"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55013924"
 ---
 # <a name="general-tab-thread-properties-dialog-box"></a>執行緒屬性對話方塊、一般索引標籤
 使用此對話方塊中，若要深入了解特定的執行緒。 若要顯示此對話方塊中，焦點移至[執行緒檢視](../debugger/threads-view.md)視窗中或開啟[訊息檢視](../debugger/messages-view.md)展開一則訊息。 在樹狀目錄中，選取執行緒的任何節點，然後選擇**屬性**從**檢視**功能表。  

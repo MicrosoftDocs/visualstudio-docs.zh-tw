@@ -1,27 +1,22 @@
 ---
 title: 指令指標 (IP) 檢視 - 取樣資料 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Instruction Pointers view
 ms.assetid: c7f647bb-c5a3-4708-9f9d-33c0fd6e2e96
 caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 7bd936d9483469900a679ad08aada4bcf9235e78
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: b2d4ce3c3a6ba7e49d70b335a85a17a847739962
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51721955"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54758482"
 ---
 # <a name="instruction-pointers-ips-view---sampling-data"></a>指令指標 (IP) 檢視 - 取樣資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +26,7 @@ ms.locfileid: "51721955"
 > [!NOTE]
 >  Windows 8 和 Windows Server 2012 增強式安全性功能需要的重大變更，會以 Visual Studio 分析工具在這些平台收集資料的方式表現。 Windows 市集應用程式也需要新的資料收集技術。 請參閱 [Windows 8 和 Windows Server 2012 應用程式的效能工具](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)。  
   
-|資料行|描述|  
+|資料行|說明|  
 |------------|-----------------|  
 |**處理序 ID**|分析執行的處理序 ID (PID)。|  
 |**處理序名稱**|處理序的名稱。|  
@@ -49,8 +44,5 @@ ms.locfileid: "51721955"
 |**專有樣本**|當正在執行指令時所收集的總樣本數。|  
 |**專有樣本 %**|執行程式碼剖析期間，執行指令時所收集的所有樣本的百分比。|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [指令指標 (IP) 檢視 - 取樣](../profiling/instruction-pointers-ips-view-dotnet-memory-sampling-data.md)
-
-
-

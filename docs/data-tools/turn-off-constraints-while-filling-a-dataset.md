@@ -17,16 +17,16 @@ helpviewer_keywords:
 ms.assetid: 553f7d0c-2faa-4c17-b226-dd02855bf1dc
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: aaf566c211cd79657b67a5af72d53c718cd2507a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b78bd412343888a5f90fdc84f1c4fe31a3babaa7
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53951455"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54996762"
 ---
 # <a name="turn-off-constraints-while-filling-a-dataset"></a>填入資料集時關閉條件約束
 

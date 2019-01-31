@@ -1,14 +1,9 @@
 ---
 title: 類別設計工具中的 Visual C++ 類別 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vs.classdesigner.inheritancelinelabel
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 75e56f8c-11ef-42a3-b7ec-3d2cf25c581b
 caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: d4193dda70aeda8534b9dc2fa3428ca08a9d89fa
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 04392545b5b5c352a35b9a3d523f0c6ff5d98b01
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49285684"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54787072"
 ---
 # <a name="visual-c-classes-in-class-designer"></a>類別設計工具中的 Visual C++ 類別
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +36,7 @@ class A {};
 class B : A {};  
 ```  
   
- 您也可以只將類別 B 拖曳至類別圖表，並以滑鼠右鍵按一下 B 的類別圖形，然後按一下 [顯示基底類別]。 這會顯示其基底類別：A。  
+ 您也可以只將類別 B 拖曳至類別圖表，並以滑鼠右鍵按一下 B 的類別圖形，然後按一下 [顯示基底類別]。 這會顯示其基底類別：答：  
   
 ## <a name="multiple-inheritance"></a>多重繼承  
  類別設計工具支援多重類別繼承關聯性的視覺效果。 衍生類別有多個基底類別的屬性時，會使用「多重繼承」。 以下是多重繼承的範例：  
@@ -59,7 +54,7 @@ class Penguin : public Bird, public Swimmer {};
 > [!NOTE]
 >  [顯示衍生類別] 命令不支援用於 C++ 程式碼。 您可以移至 [類別檢視]、展開類型節點、展開 [衍生類型] 子資料夾，然後將這些類型拖曳至類別圖表，以顯示衍生類別。  
   
- 如需多重類別繼承的詳細資訊，請參閱 [(NOTINBUILD) 多重繼承](http://msdn.microsoft.com/en-us/3b74185e-2beb-4e29-8684-441e51d2a2ca)和[多重基底類別](http://msdn.microsoft.com/library/a30c69fe-401c-4a87-96a0-e0da70c7c740)。  
+ 如需多重類別繼承的詳細資訊，請參閱 [(NOTINBUILD) 多重繼承](http://msdn.microsoft.com/3b74185e-2beb-4e29-8684-441e51d2a2ca)和[多重基底類別](http://msdn.microsoft.com/library/a30c69fe-401c-4a87-96a0-e0da70c7c740)。  
   
 ## <a name="abstract-classes"></a>抽象類別  
  類別設計工具支援抽象類別 (也稱為「抽象基底類別」)。 這些是您永遠不會具現化的類別，而是從中衍生其他類別的類別。 使用本文件稍早＜多重繼承＞中的範例，您可能會將 `Bird` 類別具現化為個別物件，如下所示︰  
@@ -174,13 +169,10 @@ typedef struct
 |`template <class T>`<br /><br /> `class C {};`<br /><br /> `template<>`<br /><br /> `class C<int> {};`<br /><br /> `class A : C<int> {};`<br /><br /> `class D : C<float> {};`|`A`<br /><br /> 類別<br /><br /> ->C\<int><br /><br /> `C<int>`<br /><br /> 類別<br /><br /> `C<T>`<br /><br /> 範本類別<br /><br /> `D`<br /><br /> 類別<br /><br /> ->C\<float>|  
 |`class B {`<br /><br /> `template <class T>`<br /><br /> `T min (const T &a, const T &b);`<br /><br /> `};`|`B`<br /><br /> min \<T>|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [使用 Visual C++ 程式碼 (類別設計工具)](../ide/working-with-visual-cpp-code-class-designer.md)   
  [類別和結構](http://msdn.microsoft.com/library/516dd496-13fb-4f17-845a-e9ca45437873)   
  [匿名類別類型](http://msdn.microsoft.com/library/9ba667b2-8c2a-4c29-82a6-fa120b9233c8)   
- [(NOTINBUILD) 多重繼承](http://msdn.microsoft.com/en-us/3b74185e-2beb-4e29-8684-441e51d2a2ca)   
+ [(NOTINBUILD) 多重繼承](http://msdn.microsoft.com/3b74185e-2beb-4e29-8684-441e51d2a2ca)   
  [多重基底類別](http://msdn.microsoft.com/library/a30c69fe-401c-4a87-96a0-e0da70c7c740)   
  [範本](http://msdn.microsoft.com/library/90fcc14a-2092-47af-9d2e-dba26d25b872)
-
-
-

@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 8b8eca0d-122f-4eda-848a-cf0945f207d0
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bdbcefe1e0878ef6bf2520edb90ce904e414f211
-ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
+ms.openlocfilehash: 88deb9957766b4e4e0802a1eded352a6ccb04f98
+ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/14/2019
-ms.locfileid: "54269757"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55231567"
 ---
 # <a name="remote-debugging-a-visual-c-project-in-visual-studio"></a>遠端偵錯 Visual Studio 中的 Visual c + + 專案
 若要偵錯在不同電腦上的 Visual Studio 應用程式安裝，您將在其中部署您的應用程式的電腦上執行遠端工具，設定您的專案從 Visual Studio 中，連接到遠端電腦，然後部署並執行您的應用程式。
@@ -96,9 +96,11 @@ ms.locfileid: "54269757"
 11. 在 Visual Studio 的電腦上，您應該會看到執行過程在中斷點停止。  
   
     > [!TIP]
-    >  或者，您可以另外執行一個步驟來部署檔案。 在 [方案總管] 中，以滑鼠右鍵按一下 [mymfc] 節點，然後選擇 [部署]。  
+    > 或者，您可以另外執行一個步驟來部署檔案。 在 [方案總管] 中，以滑鼠右鍵按一下 [mymfc] 節點，然後選擇 [部署]。
   
-    如果您有應用程式所使用的非程式碼檔案，您需要將它們包含在 Visual Studio 專案。 建立其他檔案的專案資料夾 (在 [方案總管]中，按一下 [新增] > [新增資料夾]。)然後將檔案新增至資料夾 (在 [方案總管] 中，按一下 [新增] > [現有的項目]，然後選取檔案)。 在每個檔案的 [屬性] 頁面上，將 [複製到輸出目錄] 設定為 [一律複製]。
+    如果您有應用程式所需的非程式碼檔案，您可以指定在**其他要部署的檔案**上**遠端 Windows 偵錯工具**頁面。
+
+    或者，您可以將檔案納入您的專案，並設定**內容**屬性設**是**中**屬性**每個檔案的頁面。 這些檔案會複製到**部署目錄**上指定**遠端 Windows 偵錯工具**頁面。 您也可以變更**項目類型**要**複製檔案**並指定額外的屬性，如果您需要的檔案複製到的子資料夾**部署目錄**。
   
 ## <a name="set-up-debugging-with-remote-symbols"></a>設定遠端符號偵錯 
 

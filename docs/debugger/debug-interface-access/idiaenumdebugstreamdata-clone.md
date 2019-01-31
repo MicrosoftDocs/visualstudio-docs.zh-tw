@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: e7f17750-0694-4634-bf34-c821cd265c2f
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f959f485b1bb424942e71b048c4c6dbc5e1a804
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a630f1097db2a2f90b4958466a0280bac8fac86d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53962887"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54973289"
 ---
 # <a name="idiaenumdebugstreamdataclone"></a>IDiaEnumDebugStreamData::Clone
 建立包含相同的列舉的序列，做為目前的列舉值的列舉值。  

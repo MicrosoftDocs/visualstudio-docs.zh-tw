@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 2cf41bc9-55f3-4bb6-b28d-08c75215debd
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a6d2ab8eef8e99dee5d7f533623f64aea1fa2ab9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 407c161c700f4dd24eb8d123f0ef015398051caa
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53856367"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54925606"
 ---
 # <a name="spy-reference"></a>Spy++ 參考
 請參閱下面所列的每個 Spy + + 功能表和對話方塊方塊的描述的章節：  
