@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 631ccf0b9bd48278318c857e5b6011898bac72ae
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 42d61b940d7ca30020ece1d1b1aab200360e9b0c
+ms.sourcegitcommit: 9866740aec05d1a3a5dc3b4b6d2ceaeecbd3fc29
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55014597"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55424547"
 ---
 # <a name="attach-to-the-program"></a>附加至程式
 您已向適當的連接埠中的程式之後，您必須在您想要偵錯的程式附加偵錯工具。  
@@ -35,7 +35,7 @@ ms.locfileid: "55014597"
   
    如果您要偵錯應用程式相同的程序中執行您的德國，則您必須實作下列方法[IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md):  
   
-- [GetHostName](../../extensibility/debugger/reference/idebugprogramnode2-gethostname.md)，  
+- [GetHostName](../../extensibility/debugger/reference/idebugprogramnode2-gethostname.md)  
   
 - [GetHostPid](../../extensibility/debugger/reference/idebugprogramnode2-gethostpid.md)  
   

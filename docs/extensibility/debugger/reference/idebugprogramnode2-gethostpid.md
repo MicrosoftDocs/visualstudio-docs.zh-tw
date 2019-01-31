@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b9d170fcddf26d68dd33fe056276c7f939e82ab1
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b2e177b70f44b5200ad3cd0cff80f06e82d9f089
+ms.sourcegitcommit: 9866740aec05d1a3a5dc3b4b6d2ceaeecbd3fc29
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54981151"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55424326"
 ---
 # <a name="idebugprogramnode2gethostpid"></a>IDebugProgramNode2::GetHostPid
 取得裝載程式的處理序的系統處理序識別碼。  
@@ -47,17 +47,15 @@ int GetHostPid ( 
  下列範例示範如何實作這個方法來簡單`CProgram`實作的物件[IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)介面。  
   
 ```cpp  
-HRESULT CProgram::GetHostPid(DWORD* pdwHostPid) {    
-    // Check for valid argument.    
-   if (pdwHostPid)    
-    {    
-        // Get the process identifier of the calling process.    
-      *pdwHostPid = GetCurrentProcessId();    
-  
-        return S_OK;    
-    }    
-  
-    return E_INVALIDARG;    
+HRESULT CProgram::GetHostPid(AD_PROCESS_ID* pdwHostPid) {
+   // Check for valid argument.
+   if (pdwHostPid == NULL)
+     return E_INVALIDARG;
+
+   // Get the process identifier of the calling process.
+   pdwHostPid->ProcessIdType = AD_PROCESS_ID_SYSTEM;
+   pdwHostPid->ProcessId.dwProcessId = GetCurrentProcessId();
+   return S_OK; 
 }    
 ```  
   
