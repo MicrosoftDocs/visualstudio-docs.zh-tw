@@ -1,14 +1,9 @@
 ---
 title: 文字編輯器節點屬性、選項頁 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 helpviewer_keywords:
 - Tools Options settings, Text Editor node properties
 - automation [Visual Studio], controlling Tools Options
@@ -16,13 +11,13 @@ ms.assetid: 19438302-0677-4f4d-9720-5667e6a22ab2
 caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 88ba9765e292d4f07a7e1392a64270ddf27e8f60
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: e117eac0a0a5211dcc97ddf14bf6727f62260ff8
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49241900"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54767988"
 ---
 # <a name="options-page-text-editor-node-properties"></a>文字編輯器節點屬性、選項頁
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -35,7 +30,7 @@ ms.locfileid: "49241900"
 ## <a name="general"></a>一般  
  `DTE.Properties("TextEditor", "General")`  
   
-|屬性項目名稱|值|描述|  
+|屬性項目名稱|值|說明|  
 |------------------------|-----------|-----------------|  
 |GoToAnchorAfterEscape|Get/Set (布林值)|如果為 `True`，在有選取範圍時按 Escape 鍵會將插入點移至建立選取範圍這個動作的起始位置。 如果為 `False`，則會將插入點移至選取範圍的結束位置。|  
 |DragNDropTextEditing|Get/Set (布林值)|決定您能否在文件中拖曳選取的文字區域，執行複製或剪貼作業。|  
@@ -54,7 +49,7 @@ ms.locfileid: "49241900"
   
  `PlainText` 編輯器選項會影響編輯文字檔時的編輯器設定。 每個程式語言和 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 套件都有各自特定的 [文字編輯器] 設定。 例如，若要檢視或變更 [!INCLUDE[csprcs](../../includes/csprcs-md.md)] 的編輯器設定，請使用 `DTE.Properties("TextEditor", "CSharp") or DTE.Properties("TextEditor", "CSharp-Specific")`。 [SQL 指令碼] 編輯器設定請使用 `DTE.Properties("TextEditor", "SQL ")`。  
   
-|屬性項目名稱|值|描述|  
+|屬性項目名稱|值|說明|  
 |------------------------|-----------|-----------------|  
 |AutoListMembers|Get/Set (布林值)|決定當使用者在變數參考後面輸入句號時，是否自動顯示可用的成員清單|  
 |AutoListParams|Get/Set (布林值)|決定當使用者在函式名稱後面輸入 "(" 時，是否自動顯示引數清單描述|  
@@ -63,7 +58,7 @@ ms.locfileid: "49241900"
 |WordWrap|Get/Set (布林值)|決定檢視表是否在字組界限處自動為長行換行。 如果將此屬性項目設定為 `true`，則會將此清單中的 `VirtualSpace` 屬性項目設定為 `false`|  
 |WordWrapGlyphs|Get/Set (布林值)|在一行的結尾顯示圖像；這表示該行會換行至下一行。|  
 |EnableLeftClickForURLs|Get/Set (布林值)|決定編輯器是否為 URL 加底線，以及是否只要按一下滑鼠左鍵即可跳至系統登錄之 Web 瀏覽器中的 URL|  
-|IndentStyle|Get/Set (<xref:EnvDTE.vsIndentStyle>)|判斷縮排樣式：預設、智慧或無。|  
+|IndentStyle|Get/Set (<xref:EnvDTE.vsIndentStyle>)|決定縮排樣式：[預設]、[智慧] 或 [無]。|  
 |TabSize|Get/Set (長整數)|表示一個定位點相當於幾個空格。如果設定的整數超出 1 到 60 (含) 的範圍就會失敗|  
 |InsertTabs|Get/Set (布林值)|如果為 `True`，則縮排時會使用定位字元|  
 |IndentSize|Get/Set (長整數)|表示一個縮排層次相當於幾個空格。 如果設定的整數值超出 1 到 60 (含) 的範圍就會失敗|  
@@ -71,11 +66,8 @@ ms.locfileid: "49241900"
 |ShowNavigationBar|Get/Set (布林值)|決定是否在編輯器視窗的頂端顯示下拉式清單和按鈕|  
 |CutCopyBlankLines|Get/Set (布林值)|在選取時剪下或複製空白行。|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [控制選項設定](http://msdn.microsoft.com/library/a09ed242-7494-4cde-bbd1-7a8ec617965d)   
  [在選項頁中決定屬性項目的名稱](http://msdn.microsoft.com/library/d450422d-47c7-4eeb-9f9f-3286264bc5aa)   
  [環境節點屬性、選項頁](../../ide/reference/options-page-environment-node-properties.md)   
  [字型和色彩節點屬性、選項頁面](../../ide/reference/options-page-fonts-and-colors-node-properties.md)
-
-
-

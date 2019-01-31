@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 7bce69e2-407c-4342-8516-641586968928
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: de0ad1829f366e7941e48feb85277e2566c57082
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2f78e7a6e71eccba185a9f1c363dc39b7a74a365
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53926922"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54961331"
 ---
 # <a name="collect-net-framework-memory-data-by-using-the-profiler-command-line"></a>使用分析工具命令列收集 .NET Framework 記憶體資料
 

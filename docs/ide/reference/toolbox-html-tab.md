@@ -11,15 +11,15 @@ helpviewer_keywords:
 - HTML tab in Toolbox
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e2f51ce6b1aee945bb368f3206d136bf7f4d1565
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c6e7f5e09a1352ee1fdcb6247920c12990c2df19
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53862922"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54966107"
 ---
 # <a name="toolbox-html-tab"></a>HTML 索引標籤、工具箱
 

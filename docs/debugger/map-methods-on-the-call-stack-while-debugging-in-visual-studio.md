@@ -26,15 +26,15 @@ helpviewer_keywords:
 ms.assetid: d6a72e5e-f88d-46fc-94a3-1789d34805ef
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8729b722465eb01d1e497e99ef13ecbedb66f91e
-ms.sourcegitcommit: d0b02affd24e66efed924c197824f35f823e3240
+ms.openlocfilehash: 087e8f850aa7d12a427924133f82f1e72c9c4bd3
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/21/2019
-ms.locfileid: "54417924"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54959474"
 ---
 # <a name="create-a-visual-map-of-the-call-stack-while-debugging-c-visual-basic-c-javascript"></a>建立視覺效果的對應呼叫堆疊偵錯時 (C#，Visual Basic、 c + +、 JavaScript)
 

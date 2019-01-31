@@ -12,15 +12,15 @@ dev_langs:
 ms.assetid: 323d2b1d-52a4-42f7-b4ad-96b4b0c23b8d
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9b2cff26e977d6d7e1079e558ed0dc40fa305f6c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 27db28656715d3fbce1515e0152a200b6933f7fb
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53940436"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54951634"
 ---
 # <a name="warning-script-debugging-disabled"></a>警告:已停用指令碼偵錯
 在 Internet Explorer 中，目前停用指令碼偵錯功能  
