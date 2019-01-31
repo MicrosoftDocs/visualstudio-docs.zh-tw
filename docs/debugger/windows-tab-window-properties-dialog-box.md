@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 9001342a-09a8-4f5e-b6ed-881a3b9d7246
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 50b3bb42613fd28741ea6541a13ad08e3d12b97a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b968ac3cc7356aa085eb8237d37a5372e1f67bb7
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53949981"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54944445"
 ---
 # <a name="windows-tab-window-properties-dialog-box"></a>視窗屬性對話方塊、視窗索引標籤
 使用**Windows**  索引標籤顯示在 windows 上的資訊與選取的視窗。 若要顯示[視窗中 [屬性] 對話方塊中](../debugger/window-properties-dialog-box.md)，焦點移至[Windows 檢視](../debugger/windows-view.md)視窗。 在樹狀目錄中，選取視窗的任何節點，然後選擇**屬性**從**檢視**功能表。  

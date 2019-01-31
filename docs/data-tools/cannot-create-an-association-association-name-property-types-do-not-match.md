@@ -5,16 +5,16 @@ ms.topic: reference
 ms.assetid: 97ec5a04-6e23-45a2-9226-d77ead854392
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 1d0ed4ba38f93d57c8f8ab18245155dbd9013a5f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b1126279d5a52d981570ddcfc22b07c8c743e723
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53880633"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55005120"
 ---
 # <a name="cannot-create-an-association-ltassociation-namegt---property-types-do-not-match"></a>無法建立關聯&lt;關聯名稱&gt;：屬性類型不符
 

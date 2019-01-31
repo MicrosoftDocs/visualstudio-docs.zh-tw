@@ -1,27 +1,22 @@
 ---
 title: 使用 3D 資產來打造遊戲和應用程式 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 f1_keywords:
 - vs.graphics
 ms.assetid: 910d673b-c884-4eeb-9928-0e89f3d38cb6
 caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: bdf19958ec7b3cfe72ee00ea84e0e23724a51458
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 90bf88beafee6f263695b3614cf6385419b33efe
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49265225"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54797591"
 ---
 # <a name="working-with-3-d-assets-for-games-and-apps"></a>使用 3D 資產來打造遊戲和應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,12 +51,9 @@ ms.locfileid: "49265225"
   
 ## <a name="related-topics"></a>相關主題  
   
-|標題|描述|  
+|標題|說明|  
 |-----------|-----------------|  
 |[使用紋理和影像](../designers/working-with-textures-and-images.md)|描述如何使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 來使用影像和紋理。|  
 |[使用 3D 模型](../designers/working-with-3-d-models.md)|描述如何使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 來使用 3D 模型。|  
 |[使用著色器](../designers/working-with-shaders.md)|描述如何使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 著色器設計工具來建立和修改自訂著色器效果。|  
 |[在遊戲或應用程式中使用 3D 資產](../designers/using-3-d-assets-in-your-game-or-app.md)|描述如何在遊戲或應用程式中使用資產，而資產是使用影像編輯器、模型編輯器或著色器設計工具所建立。|
-
-
-

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: e601fbc9-b10b-41c7-8180-959e57efabe8
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 492748dc54f68d4f888b8cfb6ad8e27ec44435d0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0168c3f58cf9bd701f0cc34edf77673c70e66222
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53918621"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55021438"
 ---
 # <a name="idiaenumsymbolsskip"></a>IDiaEnumSymbols::Skip
 略過指定的數目的列舉型別序列中的符號。  

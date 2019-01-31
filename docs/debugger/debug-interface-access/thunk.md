@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 01abb95f-d89a-465c-a4eb-8e8509598c95
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 934a261c182c9aeeb4b14f99aa7cedf892890f5d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1012053d3c63f9da18120dd3ccaa652ffc2301a8
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53843563"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55070366"
 ---
 # <a name="thunk"></a>Thunk
 每個`thunk`由`SymTagThunk`標記。  

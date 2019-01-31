@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 6c8974d0-2c15-4d9f-a7f3-cabd4b204cda
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ed68060210cd14eb8dd48315fb6b3e36b92e96f1
-ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
+ms.openlocfilehash: 9cb9e84de2724943511017027f51fa8e74b73091
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/14/2019
-ms.locfileid: "54269445"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55008695"
 ---
 # <a name="debugging-wcf-services"></a>偵錯 WCF 服務
 ## <a name="in-this-section"></a>本節內容  
