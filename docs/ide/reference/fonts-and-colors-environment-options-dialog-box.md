@@ -23,15 +23,15 @@ helpviewer_keywords:
 ms.assetid: c767d302-51ed-47a8-a527-c07bce2aa485
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 55f402eaaa1ee11feb115e38ae5e7759bbbb93f2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 499e3c79ca7c18b4b854b38920481757dbf49d2c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53966008"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54919794"
 ---
 # <a name="fonts-and-colors-environment-options-dialog-box"></a>選項對話方塊、環境、字型和色彩
 

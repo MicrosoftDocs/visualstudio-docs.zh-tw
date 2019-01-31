@@ -6,15 +6,15 @@ ms.topic: conceptual
 ms.assetid: f3be98cb-870f-472c-9da5-cb815e4f6598
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5585bf577bac21ec448f551f432589676b636e8b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a71434905ab88327690ff24215ec2c2da5c2211d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53986215"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54919118"
 ---
 # <a name="get-started-with-wpf"></a>開始使用 WPF
 

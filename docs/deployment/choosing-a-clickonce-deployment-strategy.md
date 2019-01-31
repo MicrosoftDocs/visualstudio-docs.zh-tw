@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 98bcab65-ab8b-4ed1-9adc-fdacf92b8106
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e752160c7406f858a2aa370a542efe14eb82e3b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: dcb25faba045f9af9a00bd544ae4031e9da239a0
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53931099"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54985051"
 ---
 # <a name="choose-a-clickonce-deployment-strategy"></a>選擇 ClickOnce 部署策略
 有三種不同的策略可用來部署 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式。您所選擇的策略主要是取決於您要部署的應用程式類型。 這三種部署策略說明如下：  

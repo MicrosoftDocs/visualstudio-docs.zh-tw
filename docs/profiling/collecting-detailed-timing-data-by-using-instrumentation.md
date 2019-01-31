@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: e9deb370-c459-45ac-84d3-14d646590d05
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f8812db301b4e58b89ac8ab879625b7cf101ad94
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: eaeebaf4a6b935d59152e9f15e01cfae88ff6f92
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53913950"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54974314"
 ---
 # <a name="collect-detailed-timing-data-by-using-instrumentation"></a>使用檢測設備收集詳細計時資料
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 程式碼剖析工具檢測方法會將程式碼剖析的程式碼插入模組的複本。 執行剖析期間，程式碼會記錄在模組中函式的每個項目、結束和函式呼叫。 此檢測方法適合用來收集程式碼區段的詳細計時資訊，以及了解輸入和輸出作業對應用程式效能的影響。  

@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 30306970-b861-4315-acf8-f86a43d4e73b
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 317b815595d6e7bca820b730a2761113e588dded
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
-ms.translationtype: HT
+ms.openlocfilehash: 1526ed73b1a4f5c665f6b60c3cbb7e5b0b659380
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "53837062"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54974054"
 ---
 # <a name="how-to-search-for-a-window-in-windows-view"></a>HOW TO：在視窗檢視中搜尋視窗
 您可以使用其控制代碼、 標題、 類別或其標題和類別的組合做為搜尋準則，搜尋 Windows 檢視在特定時間範圍。 您也可以指定搜尋的初始方向。 在對話方塊中的欄位會顯示在視窗樹狀目錄中的選取視窗的屬性。  

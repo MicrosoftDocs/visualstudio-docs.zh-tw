@@ -1,14 +1,9 @@
 ---
 title: 縮放控制 (使用率檢視) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.cv.cpu.zoom
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 8aeff804-0183-4588-8218-52e107a5382e
 caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 05a08040d8027732a17c4575f17da343f3cd1154
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: f018388abc91bc26f1bef30d066a9b6d8aa6f097
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51810237"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54767426"
 ---
 # <a name="zoom-control-utilization-view"></a>縮放控制 (使用率檢視)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,8 +27,5 @@ ms.locfileid: "51810237"
   
  您可以在 CPU 使用量圖表或 GPU 活動圖中拖曳滑鼠指標來建立醒目提示的區域。 放開滑鼠按鈕之後，選取的範圍就會在檢視中放大。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [使用率檢視](../profiling/utilization-view.md)
-
-
-

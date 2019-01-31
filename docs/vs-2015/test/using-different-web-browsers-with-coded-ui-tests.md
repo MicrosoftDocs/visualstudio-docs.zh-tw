@@ -1,24 +1,19 @@
 ---
 title: 使用不同的網頁瀏覽器搭配自動程式碼 UI 測試 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 ms.assetid: a859595f-6517-43f2-9d61-c706cb55a388
 caps.latest.revision: 25
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: e9e540e35bdfd68d8c371c2bad0ace3fc4b420e0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: c7245af090cfdaa8e4282677c8b5a052d63b63e2
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49893230"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54805530"
 ---
 # <a name="using-different-web-browsers-with-coded-ui-tests"></a>使用不同的 Web 瀏覽器搭配自動程式化 UI 測試
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -61,7 +56,7 @@ ms.locfileid: "49893230"
  您的使用者可能執行不同的瀏覽器，因此使用各種 Web 瀏覽器類型測試 Web 應用程式可以進一步模擬其 UI 使用經驗。 例如，您的應用程式可能會在 Internet Explorer 中包含與其他 Web 瀏覽器不相容的控制項或程式碼。 若能跨其他瀏覽器執行自動程式碼 UI 測試，可以找出並修正任何可能影響客戶的問題。  
   
 ## <a name="how-do-i-record-and-play-back-coded-ui-tests-on-web-applications-using-the-supported-web-browsers"></a>如何使用支援的 Web 瀏覽器，在 Web 應用程式上錄製和播放自動程式化 UI 測試？  
- **記錄：** 您必須使用自動程式碼 UI 測試產生器，來記錄使用 Internet Explorer 的 Web 應用程式測試。 您可以選擇性地使用一組預先定義的屬性針對待測控制項加入驗證和自訂程式碼，就像平常使用自動程式化 UI 測試所做的一樣。 如需詳細資訊，請參閱[使用 UI 自動化來測試您的程式碼](../test/use-ui-automation-to-test-your-code.md)。  
+ **錄製：** 您必須使用自動程式化 UI 測試產生器，來錄製使用 Internet Explorer 的 Web 應用程式測試。 您可以選擇性地使用一組預先定義的屬性針對待測控制項加入驗證和自訂程式碼，就像平常使用自動程式化 UI 測試所做的一樣。 如需詳細資訊，請參閱[使用 UI 自動化來測試您的程式碼](../test/use-ui-automation-to-test-your-code.md)。  
   
 > [!NOTE]
 >  您不能使用 Google Chrome 或 Mozilla Firefox 瀏覽器記錄自動程式化 UI 測試。  
@@ -144,9 +139,9 @@ ms.locfileid: "49893230"
  [針對跨瀏覽器測試失敗問題進行疑難排解](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!182&authkey=!AEpS48i295B49FI)  
   
 ### <a name="guidance"></a>指引  
- [使用 Visual Studio 2012 測試持續傳遞 - 第 2 章：單元測試：測試內部](http://go.microsoft.com/fwlink/?LinkID=255188)  
+ [測試 for Continuous Delivery with Visual Studio 2012 – 第 2 章：單元測試測試內部](http://go.microsoft.com/fwlink/?LinkID=255188)  
   
- [使用 Visual Studio 2012 測試持續傳遞 - 第 5 章：自動化系統測試](http://go.microsoft.com/fwlink/?LinkID=255196)  
+ [測試 for Continuous Delivery with Visual Studio 2012 – Chapter 5:自動化系統測試](http://go.microsoft.com/fwlink/?LinkID=255196)  
   
 ### <a name="faq"></a>常見問題集  
  [自動程式碼 UI 測試常見問題集 - 1](http://go.microsoft.com/fwlink/?LinkID=230576)  
@@ -156,10 +151,7 @@ ms.locfileid: "49893230"
 ### <a name="forum"></a>論壇  
  [Visual Studio 使用者介面自動化測試 (包括自動程式碼 UI)](http://go.microsoft.com/fwlink/?LinkID=224497)  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [使用使用者介面自動化來測試您的程式碼](../test/use-ui-automation-to-test-your-code.md)   
  [自動程式化 UI 測試和動作記錄的支援組態和平台](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)   
  [使用自動程式化 UI 測試記錄分析自動程式化 UI 測試](../test/analyzing-coded-ui-tests-using-coded-ui-test-logs.md)
-
-
-

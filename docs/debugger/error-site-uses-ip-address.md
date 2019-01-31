@@ -13,15 +13,15 @@ helpviewer_keywords:
 - debugger, Web application errors
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 66e63a85ecbf42d0d4091a7ce9315c91184078ea
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d8aa34553f4fb6d4524357f830dbbeabe3296354
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53871365"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54981112"
 ---
 # <a name="error-site-uses-ip-address"></a>錯誤：網站使用 IP 位址
 當偵錯工具嘗試自動附加至使用 IP 位址的 Web 應用程式時，就會發生這個錯誤。 如果在 IIS 中將 [網站識別] 變更為 [使用特定 IP 位址]，就會發生這個問題。  

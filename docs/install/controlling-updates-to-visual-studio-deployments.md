@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 35C7AB05-07D5-4B38-BCAC-AB88444E7368
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3269b368003658fb602aa4d0b1ee2112a9b88817
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a02b3176a5cdb63ac3dad1e0781a143e5a518784
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53878162"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54955345"
 ---
 # <a name="control-updates-to-network-based-visual-studio-deployments"></a>控制網路型 Visual Studio 部署的更新
 

@@ -1,14 +1,9 @@
 ---
 title: 專案屬性參考 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 helpviewer_keywords:
 - user interface [Visual Studio], projects
 - projects [Visual Studio], user interface
@@ -16,13 +11,13 @@ ms.assetid: eec49aec-5474-48a7-889d-709045b9a475
 caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 497afd9c7fb6f1449d8d9c2227c7ae1ee7af44b8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 8bf0e41f750a7003f3d267b2bd17dcf6dc2d4a3a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49297527"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54800845"
 ---
 # <a name="project-properties-reference"></a>專案屬性參考
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -32,7 +27,7 @@ ms.locfileid: "49297527"
   
 ## <a name="project-properties-pages"></a>專案屬性頁面  
   
-|標題|描述|  
+|標題|說明|  
 |-----------|-----------------|  
 |[專案設計工具、應用程式頁面 (Visual Basic)](../../ide/reference/application-page-project-designer-visual-basic.md)|使用這個頁面來指定 [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] 專案的應用程式設定和屬性。|  
 |[專案設計工具，應用程式頁面 (C#)](../../ide/reference/application-page-project-designer-csharp.md)|使用這個頁面來指定 [!INCLUDE[csprcs](../../includes/csprcs-md.md)] 專案的應用程式設定和屬性。|  
@@ -50,9 +45,6 @@ ms.locfileid: "49297527"
 |||  
 |||  
   
-## <a name="see-also"></a>另請參閱  
- [專案設計工具簡介](http://msdn.microsoft.com/en-us/898dd854-c98d-430c-ba1b-a913ce3c73d7)   
+## <a name="see-also"></a>請參閱  
+ [專案設計工具簡介](http://msdn.microsoft.com/898dd854-c98d-430c-ba1b-a913ce3c73d7)   
  [專案和方案](../../ide/solutions-and-projects-in-visual-studio.md)
-
-
-

@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: cb071e93-f297-459c-a6fa-8ae0dabc42a4
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f94b99fecdee598141504128dd47b7189afe5a4e
-ms.sourcegitcommit: 75e02ed88a1ace6e8265fd4e3a82a1bc78f3adca
+ms.openlocfilehash: c9ad6b51782be82afc485ddbef529c5be0c1b419
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/13/2018
-ms.locfileid: "54406266"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54940761"
 ---
 # <a name="find-topics-by-using-the-help-viewer-index"></a>使用說明檢視器索引來尋找主題
 

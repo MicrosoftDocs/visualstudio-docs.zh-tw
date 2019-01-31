@@ -11,15 +11,15 @@ helpviewer_keywords:
 - Security page in Project Designer
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 30b09fee21dd7f028615612c27c3aab468a22055
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ffcaa273095529a26b0d77b96df0f316eb93016a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53987949"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54924148"
 ---
 # <a name="security-page-project-designer"></a>專案設計工具、安全性頁
 

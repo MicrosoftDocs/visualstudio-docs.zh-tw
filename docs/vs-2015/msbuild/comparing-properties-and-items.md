@@ -1,27 +1,22 @@
 ---
 title: 比較屬性和項目 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords:
 - msbuild, msbuild properties
 ms.assetid: b9da45ae-d6a6-4399-8628-397deed31486
 caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 9d42cc8fb4e5ba0783ad24aedc0edf7a323db4d9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 9418bd27d2f089b57cc2fb2abcf7b6610342f32d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49878579"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54758443"
 ---
 # <a name="comparing-properties-and-items"></a>比較屬性和項目
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -76,7 +71,7 @@ MSBuild 屬性和項目都可用來將資訊傳遞至工作、評估條件，以
 </PropertyGroup>  
 ```  
   
- 項目類型 OutputDir 具有 `Include` 屬性以及 "KeyFiles\\;Certificates\\"值。 MSBuild 會將此字串剖析成兩個項目︰KeyFiles\ 和 Certificates\\。 將項目類型 OutputDir 用來做為 OutputDirList 屬性的值時，MSBuild 會將此項目類型轉換或「扁平化」為以分號分隔的字串 "KeyFiles\\;Certificates\\"。  
+ 項目類型 OutputDir 具有 `Include` 屬性以及 "KeyFiles\\;Certificates\\"值。 MSBuild 會將此字串剖析成兩個項目：KeyFiles\ 和 Certificates\\。 將項目類型 OutputDir 用來做為 OutputDirList 屬性的值時，MSBuild 會將此項目類型轉換或「扁平化」為以分號分隔的字串 "KeyFiles\\;Certificates\\"。  
   
 ## <a name="properties-and-items-in-tasks"></a>工作中的屬性和項目  
  屬性和項目可用來做為 MSBuild 工作的輸入和輸出。 如需詳細資訊，請參閱[工作](../msbuild/msbuild-tasks.md)。  
@@ -187,8 +182,5 @@ KeyFileVersion:
 KeyFileVersion: 1.0.0.3  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [進階概念](../msbuild/msbuild-advanced-concepts.md)
-
-
-

@@ -13,16 +13,16 @@ helpviewer_keywords:
 ms.assetid: 56a1fbff-c7e8-4187-a1c1-ffd17024bc1b
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5cf04b804ea377723a268c080b96a24442e31486
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ed448c44b46098a6ccaa7ac1194acd76bd64c089
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53947656"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54988905"
 ---
 # <a name="create-lookup-tables-in-wpf-applications"></a>在 WPF 應用程式中建立查閱資料表
 

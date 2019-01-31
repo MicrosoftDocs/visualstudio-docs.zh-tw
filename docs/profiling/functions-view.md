@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 513c6174-071d-48a4-9e25-04debbb63e5c
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c2b86a1822c7ec25170ce168af9864c6df740f6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: cdca652ebbd7e72675aeff2aa3c5849b7ca2f347
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53833338"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54974746"
 ---
 # <a name="functions-view"></a>函式檢視
 [函式] 檢視會列出分析期間呼叫的函式。  

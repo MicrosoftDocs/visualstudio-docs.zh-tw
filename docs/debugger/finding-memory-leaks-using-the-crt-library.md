@@ -26,15 +26,15 @@ helpviewer_keywords:
 ms.assetid: cf6dc7a6-cd12-4283-b1b6-ea53915f7ed1
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e29ef610fdfe114525e7da22b58635e0f3e4a3af
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e3045f9e420ad8d70b9f02172c18f46e4e412c37
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53931023"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54946305"
 ---
 # <a name="find-memory-leaks-with-the-crt-library"></a>尋找 CRT 程式庫的記憶體流失問題
 

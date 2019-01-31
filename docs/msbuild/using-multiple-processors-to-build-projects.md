@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 49fa36c9-8e14-44f5-8a2b-34146cf6807b
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 540e2ab57dc7509943bf5d3509f3aed388e77687
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1732343d160b5c80363999830a41cdb66618b45c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53819342"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54933397"
 ---
 # <a name="use-multiple-processors-to-build-projects"></a>使用多個處理器來建置專案
 MSBuild 可運用有多個處理器或多核心處理器的系統。 針對每個可用的處理器會建立個別的建置流程。 例如，如果系統具備四個處理器，則會建立四個建置流程。 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 可同時處理這些建置，因此將縮短整體的建置時間。 不過，平行建置會對建置處理序的發生方式帶來一些改變。 本主題將討論這些變更。  

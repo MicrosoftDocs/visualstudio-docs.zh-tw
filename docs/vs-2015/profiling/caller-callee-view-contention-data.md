@@ -1,27 +1,22 @@
 ---
 title: 呼叫端 - 被呼叫端檢視 - 爭用資料 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Caller/Callee view
 ms.assetid: a18a1b1b-9b39-43c7-b1f3-708fd20376f6
 caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 0e226cb5a44923e73d64a9374eb1d170e18d2428
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 2f60e8eedeeb7106a7a95a33a4a5cc794194861c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51797607"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54796995"
 ---
 # <a name="caller--callee-view----contention-data"></a>呼叫端 / 被呼叫端檢視 - 爭用資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +29,7 @@ ms.locfileid: "51797607"
   
  **目前的函式所呼叫的函式**會顯示在下方方格中，並顯示所選取函式之被呼叫端 (子) 函式 (由目前函式所呼叫) 的爭用資訊。  
   
-|資料行|描述|  
+|資料行|說明|  
 |------------|-----------------|  
 |**Type**|函式的內容︰<br /><br /> -   **0** - 目前的函式<br />-   **1** - 呼叫目前函式的函式<br />-   **2** - 目前的函式所呼叫的函式<br /><br /> 只存在於 [VSPerfReport](../profiling/vsperfreport.md) 命令列報表中。|  
 |**專有封鎖時間**|- 如果是目前的函式，即為此函式已遭封鎖而無法執行函式主體中之程式碼的時間。 不包括函式所呼叫之函式的封鎖時間。<br />- 如果是呼叫端函式，即為目前函式專有封鎖時間的部分，這會發生在此函式呼叫目前的函式時。<br />- 如果是被呼叫端函式，即為此函式已遭封鎖，而無法在目前函式呼叫此函式時執行本身程式碼的時間。 不包括被呼叫端函式所呼叫之子函式的封鎖時間。|  
@@ -55,13 +50,10 @@ ms.locfileid: "51797607"
 |**根函式名稱**|目前函式的名稱。 只存在於 [VSPerfReport](../profiling/vsperfreport.md) 命令列報表中。|  
 |**原始程式檔**|含有這個函式定義的原始程式檔。|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [如何：自訂報表檢視資料行](../profiling/how-to-customize-report-view-columns.md)   
  [呼叫端/被呼叫端檢視](../profiling/caller-callee-view.md)   
  [呼叫端/被呼叫端檢視 - 取樣資料](../profiling/caller-callee-view-sampling-data.md)   
  [呼叫端/被呼叫端檢視 - .NET 記憶體檢測資料](../profiling/caller-callee-view-net-memory-instrumentation-data.md)   
  [呼叫端/被呼叫端檢視 - .NET 記憶體取樣資料](../profiling/caller-callee-view-dotnet-memory-sampling-data.md)   
  [呼叫者/被呼叫者檢視 - 檢測資料](../profiling/caller-callee-view-instrumentation-data.md)
-
-
-

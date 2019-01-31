@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: 187ce86e-e340-4f6c-8937-8e8f1027a17f
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 50ad611c2f8dc04eb92ba4be112d32d49808f3c0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5f6bbaf9a387a43accfd779c9583687ec98b1813
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53838147"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54952427"
 ---
 # <a name="capturing-graphics-information"></a>擷取圖形資訊
 從 DirectX 應用程式擷取圖形資訊，以使用 Visual Studio 圖形分析器來診斷轉譯問題和效能問題。  
@@ -27,7 +27,7 @@ ms.locfileid: "53838147"
   
 ### <a name="to-run-your-app-under-graphics-diagnostics"></a>在圖形診斷下執行您的應用程式  
   
-- 在功能表列上選擇 **偵錯**，**圖形**，**開始圖形偵錯**。 鍵盤按下 Alt + F5）  
+- 在功能表列上選擇 **偵錯**，**圖形**，**開始圖形偵錯**。 (鍵盤：按下 Alt + F5）  
   
 - 在 [**圖形**工具列上，選擇**開始圖形偵錯**] 按鈕。  
   

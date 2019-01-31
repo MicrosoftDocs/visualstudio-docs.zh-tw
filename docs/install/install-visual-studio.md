@@ -16,15 +16,15 @@ helpviewer_keywords:
 - Visual Studio installer
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b4ab9fb30a1268778f47a0190d1b16b1cd48d974
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2e01f51bd94f14b5f78ab26d452be6a100e4fd50
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53958432"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54961870"
 ---
 # <a name="install-visual-studio-2017"></a>安裝 Visual Studio 2017
 

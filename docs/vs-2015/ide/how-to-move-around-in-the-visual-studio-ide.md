@@ -1,13 +1,9 @@
 ---
 title: HOW TO：在 IDE 中四處移動 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - environments [Visual Studio], navigation
 - documents [Visual Studio], navigating
@@ -21,13 +17,13 @@ ms.assetid: 6c36b6eb-c93f-496b-af08-4199f7afd8bd
 caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 4c252f709875133be7b4106a55cd853fbb309635
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 94629a2e64d154313711b3e8968b28959d3341e8
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53880980"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54805415"
 ---
 # <a name="how-to-move-around-in-the-visual-studio-ide"></a>HOW TO：在 Visual Studio IDE 中四處移動
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +31,7 @@ ms.locfileid: "53880980"
 整合式開發環境 (IDE) 經過設計，可讓您使用數種不同方式，執行視窗至視窗以及檔案至檔案之間的移動 (根據您的喜好或專案需求而定)。 您可選擇在編輯器中循環瀏覽開啟的檔案，或是在 IDE 中循環瀏覽所有使用中的工具視窗。 您亦可在編輯器中直接切換至任何開啟的檔案，而忽略上次存取檔案的順序。 這些功能可協助您提升使用 IDE 工作時的生產力。
 
 > [!NOTE]
->  根據您目前使用的設定或版本，您所看到的對話方塊可用選項，以及功能表命令的名稱和位置，可能會與 [說明] 中描述的有所不同。 當我們撰寫這個說明頁面時，主要是考慮 [一般開發設定]。 若要變更設定，請從 [ **工具** ] 功能表中選取 [ **匯入和匯出設定** ]。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3)
+>  根據您目前使用的設定或版本，您所看到的對話方塊可用選項，以及功能表命令的名稱和位置，可能會與 [說明] 中描述的有所不同。 當我們撰寫這個說明頁面時，主要是考慮 [一般開發設定]。 若要變更設定，請從 [ **工具** ] 功能表中選取 [ **匯入和匯出設定** ]。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)
 
 ## <a name="keyboard-shortcuts"></a>鍵盤快速鍵
  在 Visual Studio 中幾乎所有功能表命令皆具有鍵盤快速鍵。 您亦可建立專屬的自訂快速鍵。 如需詳細資訊，請參閱[識別及自訂鍵盤快速鍵](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)。

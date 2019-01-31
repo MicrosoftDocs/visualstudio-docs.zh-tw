@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: c7f647bb-c5a3-4708-9f9d-33c0fd6e2e96
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dc695dab636f486783e3f0ae778457d531934a8a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e881c1a7919032d5bcee2ba0019c818f964dc5fd
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53819594"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54985483"
 ---
 # <a name="instruction-pointers-ips-view---sampling-data"></a>指令指標 (IP) 檢視 - 取樣資料
 取樣資料的 IP 檢視會針對在程式碼剖析執行期間收集樣本時直接執行的組件指令，列出效能資料。  

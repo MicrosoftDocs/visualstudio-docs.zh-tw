@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 76ffa394-ee89-4629-aba9-1a62b72e6cc1
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d4b2c4a3f7995fd00b9997e68a6bd7f64114d4a
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.openlocfilehash: 015cc736ca9c6c430ca0312d55ab53b58794f01b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "53909758"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55041213"
 ---
 # <a name="visual-studio-commands"></a>Visual Studio 命令
 

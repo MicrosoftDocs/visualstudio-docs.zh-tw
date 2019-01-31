@@ -1,27 +1,22 @@
 ---
 title: 模組檢視 - .NET 記憶體取樣資料 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Modules view
 ms.assetid: 9c05b51a-8382-44cf-a8f7-3fabdd2e8f1b
 caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 0b9a02e5579eb5dc82f2e1f21a10444c329a317f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: abc5f1f6a15271fa3ec530658add2b6ca3027959
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51765528"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54804091"
 ---
 # <a name="modules-view---net-memory-sampling-data"></a>模組檢視 - .NET 記憶體取樣資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +25,7 @@ ms.locfileid: "51765528"
   
  配置記憶體之陳述式的原始程式檔行號會列在函式節點下，且執行配置之指示的位址會列在行節點下。 程式行資料和指令資料的內含與專屬值一律相同。  
   
-|資料行|描述|  
+|資料行|說明|  
 |------------|-----------------|  
 |**名稱**|模組、函式、行號或指令位址的名稱。|  
 |**處理序 ID**|分析執行的處理序 ID (PID)。|  
@@ -48,11 +43,8 @@ ms.locfileid: "51765528"
 |**專有位元組**|-   對於函式，這是該函式配置的位元組總數。 該數量不包含由此函式呼叫之函式所配置的位元組。<br />-   對於模組，這是該模組中的函式所配置的專有位元組總和。<br />-   對於程式行或指令，這是此程式行或指令配置的物件總數。|  
 |**專有位元組 %**|分析執行期間，模組、函式、程式行或指令的專有位元組佔所有已配置位元組的百分比。|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [如何：自訂報表檢視資料行](../profiling/how-to-customize-report-view-columns.md)   
  [模組檢視 - 檢測](../profiling/modules-view-dotnet-memory-instrumentation-data.md)   
  [模組檢視](../profiling/modules-view-sampling-data.md)   
  [模組檢視](../profiling/modules-view-instrumentation-data.md)
-
-
-

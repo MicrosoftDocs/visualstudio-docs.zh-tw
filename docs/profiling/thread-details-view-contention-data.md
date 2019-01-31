@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 874c3b1c-88d8-479a-bb35-1291d9aa8e67
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cb210a438a4f9cbc171b270f06c615e050fb71fd
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 288dd093a4e6cfcdf9cfce7971e967c021549734
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53900821"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54967322"
 ---
 # <a name="thread-details-view---contention-data"></a>執行緒詳細資料檢視 - 爭用資料
 執行緒詳細資料檢視會在時間軸圖形顯示因爭用資源，而在程式碼剖析執行選取的執行緒中造成的封鎖事件。 因為另一個執行緒已鎖定資源的存取權時，所以會強制該執行緒暫停執行而發生封鎖事件。  

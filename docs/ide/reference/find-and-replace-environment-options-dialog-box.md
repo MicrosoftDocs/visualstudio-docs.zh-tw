@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: f804d6d5-6309-46e4-8294-b83e880b5ec9
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f5305aee9e60d51fb65fe9fe1edd3dddf541a965
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 263a7778d076049b0c83e4867fbdaa9a5078d61f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53910971"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54958429"
 ---
 # <a name="find-and-replace-environment-options-dialog-box"></a>選項對話方塊、環境、尋找和取代
 

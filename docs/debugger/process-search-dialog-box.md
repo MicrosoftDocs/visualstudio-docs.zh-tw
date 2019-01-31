@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 518e8153-eec2-4db9-a6f7-416ec11d8e09
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c795671f6e8f5f47d8b0da7e36fbb1f81ab95c28
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 73d4d32af6e3aa76dd586f665c66d3ef014518ca
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53958052"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54961620"
 ---
 # <a name="process-search-dialog-box"></a>處理序搜尋對話方塊
 使用此對話方塊，即可尋找並選取特定的處理序中的節點[處理序檢視](../debugger/processes-view.md)。 若要顯示此對話方塊中，焦點移至**處理序**檢視 視窗中。 然後選擇**尋找處理序**從**搜尋**功能表。  

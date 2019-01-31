@@ -1,25 +1,20 @@
 ---
 title: Start | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: b85d0fe9-f67a-4b7c-8d48-7eecf3f2dfe9
 caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 6c2f52a000cdf5eaa1a1ef4b9afeb141500f1911
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 551af75c985c9103db37cd3f9fe585655a4df342
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51724184"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54800462"
 ---
 # <a name="start"></a>啟動
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -79,11 +74,8 @@ VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp
 VSPerfCmd.exe /Launch:TestApp.exe  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [VSPerfCmd](../profiling/vsperfcmd.md)   
  [對獨立應用程式進行程式碼剖析](../profiling/command-line-profiling-of-stand-alone-applications.md)   
  [對 ASP.NET Web 應用程式進行程式碼剖析](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
  [對服務進行程式碼剖析](../profiling/command-line-profiling-of-services.md)
-
-
-

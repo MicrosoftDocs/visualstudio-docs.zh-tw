@@ -7,15 +7,15 @@ dev_langs:
 ms.assetid: cc4ea375-76f6-4ba8-baed-c5fa82108137
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2314142f2080b25a81610ee74f3f627d151651f0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b2c11cc560be00bd51f8c5ebb35803240c5fbe8e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53956568"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54925327"
 ---
 # <a name="idiasymbolgetisacceleratorstubfunction"></a>IDiaSymbol::get_isAcceleratorStubFunction
 指出是否符號為最上層函式的符號中對應的著色器編譯對應於加速器`parallel_for_each`呼叫。  

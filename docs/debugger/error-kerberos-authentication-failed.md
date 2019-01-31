@@ -11,15 +11,15 @@ dev_langs:
 - C++
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 66e9ef1ee7ab969e8abb62e2e6886ee2e74c82f5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6f8d317b5633fe94cc5d3a9933a4a698705998d3
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53854265"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54930653"
 ---
 # <a name="error-kerberos-authentication-failed"></a>錯誤：Kerberos 驗證失敗
 當您嘗試進行遠端偵錯時，可能會看到下列錯誤訊息：  

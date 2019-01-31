@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 1be36e45-01da-451c-972d-f9fc0e7d663c
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9ed8eeca4655761e0696184fdfc0d146ece06117
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b4ce4b7108a62e7f16c83d6cdcb637470fb94656
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53833273"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54937190"
 ---
 # <a name="how-to-exclude-files-from-the-build"></a>HOW TO：從組建中排除檔案
 在專案檔中，您可以使用萬用字元，來包含一個目錄中的所有檔案或巢狀目錄集合做為組建的輸入。 不過，目錄中可能有一個您不想包含來建置輸入的檔案，或者巢狀目錄集合中可能有一個您不想包含的目錄。 您可以明確地從輸入清單中排除該檔案或目錄。 專案中也可能有一個您只想在符合特定條件的情況下包含的檔案。 您可以明確地宣告要在組建中包含檔案的條件。  

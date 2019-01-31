@@ -1,27 +1,22 @@
 ---
 title: 從 IDE 中啟動組建 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords:
 - build
 ms.assetid: 936317aa-63b7-4eb0-b9db-b260a0306196
 caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: c741b8dfd0607de41ca7b53bdd88244ae3957a9a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: b5176a3a8c5575521c3adaea13f1f1b862010217
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49230382"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54788422"
 ---
 # <a name="starting-a-build-from-within-the-ide"></a>從 IDE 中啟動組建
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -127,6 +122,3 @@ public bool Build(Project project, bool isDesignTimeBuild)
 }  
   
 ```
-
-
-

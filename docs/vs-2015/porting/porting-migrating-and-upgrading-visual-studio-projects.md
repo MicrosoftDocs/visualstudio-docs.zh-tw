@@ -1,13 +1,9 @@
 ---
 title: 移植、 移轉和升級專案 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - Win8ExpressDesktopBlock
 - w8trefactor
@@ -22,13 +18,13 @@ ms.assetid: bee759bd-6ff5-4c2e-913a-ea7d3c906c29
 caps.latest.revision: 108
 author: kraigb
 ms.author: kraigb
-manager: ghogen
-ms.openlocfilehash: 6c73910b3866546ae0b8c169bfab489dfc3d55f8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 3b76154db0d85cba745ffe1c694b18a1fb9dde26
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53966595"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54805549"
 ---
 # <a name="porting-migrating-and-upgrading-visual-studio-projects"></a>Porting, Migrating, and Upgrading Visual Studio Projects
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -86,7 +82,7 @@ ms.locfileid: "53966595"
 |其他|您可以在 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]、 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]和 Visual Studio 2010 SP1 中開啟大部分其他類型的專案。|
 |FrontPage 網站|您無法在 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] 中開啟這個專案，因為它不支援該專案類型。|
 |可攜式類別庫|如果您允許 Visual Studio 自動更新專案，則可以在 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]、 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]或 Visual Studio 2010 SP1 中開啟專案。<br /><br /> -   原先以 Silverlight 4 為目標的專案，將會以 Silverlight 5 為目標。<br />-   原先以 Windows Phone 7.0 或 Windows Phone 7.5 為目標的專案，將會以 Windows Phone 8 為目標。<br />-   以 Xbox 360 為目標的專案，不會再以 Xbox 360 為目標。|
-|Azure 專案 (例如雲端服務專案 (副檔名 .ccproj)) 以及副檔名為 .deployproj 的 Azure 資源管理員專案 (雲端部署專案)|若要開啟這些類型的專案，請先安裝 [Azure SDK for .NET](http://azure.microsoft.com/en-us/downloads/)，然後再開啟專案。|
+|Azure 專案 (例如雲端服務專案 (副檔名 .ccproj)) 以及副檔名為 .deployproj 的 Azure 資源管理員專案 (雲端部署專案)|若要開啟這些類型的專案，請先安裝 [Azure SDK for .NET](http://azure.microsoft.com/downloads/)，然後再開啟專案。|
 
 ## <a name="troubleshooting-project-compatibility-issues"></a>疑難排解專案相容性問題
  當專案在 [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)] 或 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]中不會開啟時，可執行的某些作業如下：

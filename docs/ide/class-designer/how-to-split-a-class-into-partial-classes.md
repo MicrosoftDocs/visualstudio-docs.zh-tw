@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 6f6b0b30-3996-4569-9200-20482b3adf90
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 69a0a90315ec906874c94445e904e7dc1274a23e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5b169979da4a6eba777855d3b0af5c0a31059f73
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53826240"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54970080"
 ---
 # <a name="how-to-split-a-class-into-partial-classes-in-class-designer"></a>HOW TO：將類別分割成部分類別 (類別設計工具)
 

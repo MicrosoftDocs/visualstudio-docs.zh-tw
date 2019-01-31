@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 59fc9424-76ca-4365-ae47-bb14a736c9c2
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b3d947dbc3fae436fa64d3effa963df5445991be
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 13bcc997f57695c0c8f6e50c755cd485be91c663
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53831283"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54924200"
 ---
 # <a name="performance-rules-reference"></a>效能規則參考
 程式碼剖析工具的效能規則提供關於應用程式效能的額外警告和資訊。 效能規則會分析從 Windows 和處理器效能計數器等來源收集到的程式碼剖析執行資料。 規則訊息會出現在 [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] 整合式開發環境的 [錯誤輸出] 視窗。 訊息會隨下列其中一項規則層級同時列出：  

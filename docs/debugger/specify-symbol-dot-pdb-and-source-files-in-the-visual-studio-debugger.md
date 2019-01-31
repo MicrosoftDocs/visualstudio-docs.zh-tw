@@ -25,15 +25,15 @@ helpviewer_keywords:
 ms.assetid: 1105e169-5272-4e7c-b3e7-cda1b7798a6b
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d970d2b761b2987bc74e94eb5bfefa8f0ffc78ec
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.openlocfilehash: d7784e6bde19a556d31394f3443dbf4494042481
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "53892442"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55005302"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>在 Visual Studio debugger 中指定符號 (.pdb) 和原始程式檔 (C#，c + +、 Visual Basic 中， F#)
 

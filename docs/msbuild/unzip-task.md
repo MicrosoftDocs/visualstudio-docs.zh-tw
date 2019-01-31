@@ -19,15 +19,15 @@ ms.assetid: 916bb2e3-3017-4828-ae27-c0b5c99bbb48
 caps.latest.revision: 16
 author: Mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 386e0e76161982a4bedf6bb188381314d47e42e7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 883595eb6cd7565250de216bcae23eba86bf5074
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53882743"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54937019"
 ---
 # <a name="unzip-task"></a>Unzip 工作
 將 *.zip* 封存解壓縮至指定的位置。

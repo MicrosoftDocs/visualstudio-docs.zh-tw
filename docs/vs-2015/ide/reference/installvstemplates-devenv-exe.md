@@ -1,14 +1,9 @@
 ---
 title: -InstallVSTemplates (devenv.exe) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 helpviewer_keywords:
 - Devenv, /InstallVSTemplates switch
 - /InstallVSTemplates Devenv switch
@@ -17,13 +12,13 @@ ms.assetid: 1fb466f6-7955-4535-a840-d93eb8aaa492
 caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: e0d13fea946f7506544be6fc32e83097d81148a7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 8760a529ddc9453911e2fcaf53255c98ec992e4f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49199819"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54789948"
 ---
 # <a name="installvstemplates-devenvexe"></a>/InstallVSTemplates (devenv.exe)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -42,8 +37,5 @@ devenv.exe /InstallVSTemplates
   
 ## <a name="remarks"></a>備註  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Devenv 命令列參數](../../ide/reference/devenv-command-line-switches.md)
-
-
-

@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 646a07e7-9d4f-4e21-95e3-3e403cdd4843
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aba81b4557bf91c2d50e5267fc6af69c3e84edf5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8d7542b2d0fb291af57de5596bbeb2320d28db4d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53932296"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54970834"
 ---
 # <a name="functiontype"></a>FunctionType
 每個唯一的函式簽章由`SymTagFunctionType`符號。 每個參數會識別為具有類別子符號`SymTagFunctionArgType`標記。  

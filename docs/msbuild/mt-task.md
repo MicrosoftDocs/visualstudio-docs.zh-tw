@@ -21,15 +21,15 @@ helpviewer_keywords:
 ms.assetid: bb94913c-1042-4968-9f08-b394518e899f
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6a436423bd55fbcf1a519e56b27c2449c5b3bc9a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5349aa86ff0411164b292da8c9bf7a9b657c64cb
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53848820"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54975760"
 ---
 # <a name="mt-task"></a>MT 工作
 包裝 Microsoft 資訊清單工具 *mt.exe*。 如需詳細資訊，請參閱 [Mt.exe](https://docs.microsoft.com/windows/desktop/SbsCs/mt-exe)。  
