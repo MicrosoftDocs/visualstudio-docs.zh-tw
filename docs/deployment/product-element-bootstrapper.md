@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 52b414af-ec80-4d2f-ad14-902543cd268e
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 32e1689331ff41cec007c98be5410b518f1e44e9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d3812d9eb20aa40bba6e094afa47b5e2b9ab7b67
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53821227"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54918962"
 ---
 # <a name="ltproductgt-element-bootstrapper"></a>&lt;產品&gt;項目 （啟動載入器）
 `Product`項目是最上層 XML 元素內的產品檔案。  

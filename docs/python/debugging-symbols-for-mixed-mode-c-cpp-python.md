@@ -6,16 +6,16 @@ ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 909b3ab71a4e204372c291ec6ca5421b500a056a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9d61c3bcf9e7d403a73c78700257f1ecfe8a70fd
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53885964"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55010151"
 ---
 # <a name="install-debugging-symbols-for-python-interpreters"></a>安裝 Python 解譯器的偵錯符號
 
@@ -51,7 +51,7 @@ Visual Studio 會在需要符號時提示您，一般來說，這是指啟動混
 
 1. 選取 [工具] > [選項] 功能表，然後巡覽至 [偵錯] > [符號]。
 
-1. 選取工具列上的 [新增] 按鈕 (如下所述)，輸入您要展開下載符號之資料夾 (*python.pdb* 的位置，例如 *c:\python34\Symbols*，如下所示)，然後選取 [確定]。 
+1. 選取工具列上的 [新增] 按鈕 (如下所述)，輸入您要展開下載符號之資料夾 (*python.pdb* 的位置，例如 *c:\python34\Symbols*，如下所示)，然後選取 [確定]。
 
     ![混合模式偵錯工具符號選項](media/mixed-mode-debugging-symbols.png)
 
@@ -62,9 +62,9 @@ Visual Studio 會在需要符號時提示您，一般來說，這是指啟動混
 
 ## <a name="official-distributions"></a>官方發行版
 
-| Python 版本 | 下載 | 
-| --- | --- | 
-| 3.5 和更新版本 | 透過 Python 安裝程式來安裝符號。 | 
+| Python 版本 | 下載 |
+| --- | --- |
+| 3.5 和更新版本 | 透過 Python 安裝程式來安裝符號。 |
 | 3.4.4 | [32 位元](https://www.python.org/ftp/python/3.4.4/python-3.4.4-pdb.zip) - [64 位元](https://www.python.org/ftp/python/3.4.4/python-3.4.4.amd64-pdb.zip) |
 | 3.4.3 | [32 位元](https://www.python.org/ftp/python/3.4.3/python-3.4.3-pdb.zip) - [64 位元](https://www.python.org/ftp/python/3.4.3/python-3.4.3.amd64-pdb.zip) |
 | 3.4.2 | [32 位元](https://www.python.org/ftp/python/3.4.2/python-3.4.2-pdb.zip) - [64 位元](https://www.python.org/ftp/python/3.4.2/python-3.4.2.amd64-pdb.zip) |

@@ -10,14 +10,14 @@ helpviewer_keywords:
 ms.assetid: 3d8fac8f-426f-4155-9ced-f7cd4c79792c
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 76cf2ff3cd5ab3f18f76a5c6ea68be2411b76d84
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e06ed07ba37b6f9c6442c69edab86aaf0f10e9de
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53896327"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54971097"
 ---
 # <a name="how-to-add-a-threshold-rule-using-the-load-test-editor"></a>HOW TO：使用負載測試編輯器新增臨界值規則
 

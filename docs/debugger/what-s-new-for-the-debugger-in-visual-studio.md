@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 2aed9caa-2384-4e49-8595-82d8b06cf271
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fbc48fdc93feebf2f78b6d11ae2b7cc744c46f98
-ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
+ms.openlocfilehash: ff14414415f86aeb704920f722eb221a2530a35c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/14/2019
-ms.locfileid: "54269731"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54993230"
 ---
 # <a name="whats-new-for-the-debugger-in-includevsdev15miscincludesvsdev15mdmd"></a>偵錯工具中最新消息 [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]
 

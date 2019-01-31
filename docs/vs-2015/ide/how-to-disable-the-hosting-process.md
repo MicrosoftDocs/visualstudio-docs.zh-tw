@@ -1,14 +1,9 @@
 ---
-title: 如何：停用裝載處理序 | Microsoft Docs
-ms.custom: ''
+title: HOW TO：停用裝載處理序 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - hosting process, disabling
 - vshost.exe, disabling the hosting process
@@ -16,15 +11,15 @@ ms.assetid: 9157488d-737f-454b-8d8d-36f99de38bb0
 caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 4251e5aac5042b610ed32f95a13ba5d6ffb9d4eb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 0266e14b3a03e6d8225e7ec9283fe727a9502e53
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49848484"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54785877"
 ---
-# <a name="how-to-disable-the-hosting-process"></a>How to: Disable the Hosting Process
+# <a name="how-to-disable-the-hosting-process"></a>HOW TO：停用裝載處理序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 啟用裝載處理序時，可能會影響特定 API 呼叫。 在這些情況下，必須停用裝載處理序來傳回正確的結果。  
@@ -49,10 +44,7 @@ ms.locfileid: "49848484"
   
 -   部分信任偵錯無法使用。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [偵錯和裝載處理序](../debugger/debugging-and-the-hosting-process.md)   
  [裝載處理序 (vshost.exe)](../ide/hosting-process-vshost-exe.md)   
- [在應用程式開發期間建置](http://msdn.microsoft.com/en-us/c9497d62-3b7b-4449-88e8-cf27acc9efe6)
-
-
-
+ [在應用程式開發期間建置](http://msdn.microsoft.com/c9497d62-3b7b-4449-88e8-cf27acc9efe6)

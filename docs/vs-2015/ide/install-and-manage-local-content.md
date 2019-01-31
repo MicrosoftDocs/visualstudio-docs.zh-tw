@@ -1,14 +1,9 @@
 ---
 title: 安裝與管理本機內容 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - hv_manage
 helpviewer_keywords:
@@ -28,13 +23,13 @@ ms.assetid: efd9df4c-2e69-4c50-992c-9678a8d8cf19
 caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 7b8a67a9105314ad73076d3a8b12d51c23f83097
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: a6e52c9a34b5fc6ea487cffd1728a525dc5a0984
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49832728"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54766220"
 ---
 # <a name="install-and-manage-local-content"></a>安裝與管理本機內容
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -129,8 +124,5 @@ ms.locfileid: "49832728"
   
 3.  當內容經移動後，請選擇 [關閉] 按鈕。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Microsoft Help Viewer](../ide/microsoft-help-viewer.md)
-
-
-

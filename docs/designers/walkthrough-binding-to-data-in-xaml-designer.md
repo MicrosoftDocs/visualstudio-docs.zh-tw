@@ -10,15 +10,15 @@ dev_langs:
 - VB
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: f0d9ccd32c8f616e6f998bcd1f31773460c89a20
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 76ed74f6688add7892dbdbfd95a837a9bae69b96
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53866120"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54945303"
 ---
 # <a name="walkthrough-bind-to-data-in-xaml-designer"></a>逐步解說：在 XAML 設計工具中繫結至資料
 

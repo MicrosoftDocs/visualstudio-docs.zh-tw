@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 1b9aa3ea-29a0-4e21-bc57-936f33537b5c
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 015878da1d2e8c144787ba94d7f5394ebea4f4c6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 33768ffd0784d6b1fc406400c2cabb94464cf0a8
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53854343"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54945888"
 ---
 # <a name="how-to-change-the-graphics-diagnostics-playback-machine"></a>HOW TO：變更圖形診斷播放電腦
 您可以播放圖形資訊使用本機電腦，或使用遠端電腦或裝置。  

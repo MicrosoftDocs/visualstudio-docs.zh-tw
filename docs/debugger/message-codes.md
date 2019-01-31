@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 9f91f4e2-c1f1-4349-9f11-2fbbf59654be
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c1f568ead3e5862460d4ae4e18e51687737d4a5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c3899da3b668406a701ce5c1c4935b531754d10e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53866292"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55017076"
 ---
 # <a name="message-codes"></a>訊息代碼
 顯示在每個訊息列[訊息檢視](../debugger/messages-view.md)包含 'P' 的 '的' 或 'R' 程式碼。 這些程式碼具有下列意義：  

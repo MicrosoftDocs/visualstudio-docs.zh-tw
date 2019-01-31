@@ -9,15 +9,15 @@ apitype: Assembly
 ms.assetid: 019733d2-e050-4120-b537-831cd3fc008e
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b97e33bdcb28a3c8790af752d5ab9786dc5ef3d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e5ab4711d0165511aaf5934eeab1a81308fc3084
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53882889"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55031116"
 ---
 # <a name="value-xattribute-dynamic-property"></a>Value (XAttribute 動態屬性)
 

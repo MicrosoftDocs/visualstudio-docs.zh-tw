@@ -2,22 +2,22 @@
 title: Visual Studio 中的 Python 教學課程步驟 3，互動式 REPL
 titleSuffix: ''
 description: 在 Visual Studio 中 Python 功能核心逐步解說的步驟 3，涵蓋 Python 互動式 REPL 視窗。
-ms.date: 10/29/2018
+ms.date: 01/28/2019
 ms.prod: visual-studio-dev15
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9cc9bc13f26707132703851dea5cc3c7de351601
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: cf51a53301ad65debe2bb69d33ce8a159aa9612f
+ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53986826"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55231879"
 ---
 # <a name="step-3-use-the-interactive-repl-window"></a>步驟 3：使用互動式 REPL 視窗
 
@@ -74,7 +74,7 @@ ms.locfileid: "53986826"
     ![在互動式視窗中編輯前一個陳述式](media/vs-getting-started-python-16-interactive6.png)
 
 1. 重複此處理序來試驗不同的步驟設定，直到您找到最喜歡的值。 您也可以延長範圍 (例如，`range(0, 1800, 12)`) 來重複波浪。
- 
+
 1. 當您滿意在**互動式**視窗中撰寫的程式碼時，請選取它，並按一下滑鼠右鍵，再選取 [複製程式碼] (**Ctrl**+**Shift**+**C**)，然後貼入編輯器中。 注意此 Visual Studio 特殊功能如何自動省略任何輸出以及 `>>>` 和 `...` 提示。 例如，下圖顯示如何對包含提示和輸出的選取範圍使用 [複製程式碼] 命令：
 
     ![以提示和輸出對選取範圍的互動式視窗複製程式碼命令](media/vs-getting-started-python-17-interactive7.png)

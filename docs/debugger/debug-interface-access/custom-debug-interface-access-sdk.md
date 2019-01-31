@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: a219fc83-d2a8-4bc5-b7e1-bfafeb247f16
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aaa6934fbed6780fb9a8a3be6685dbb7bcf0fbc8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4b5764ec6d996e4e76d509e0cfe65ec34237d581
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53834356"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54931306"
 ---
 # <a name="custom-debug-interface-access-sdk"></a>Custom (偵錯介面存取 SDK)
 某些編譯器導入不會識別任何標準語彙符號類型的符號。 這些符號由識別`SymTagCustom`標記。  

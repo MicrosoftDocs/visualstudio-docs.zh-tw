@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 40dc83bf-a7c5-4a14-816a-fa0980b6e4c3
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 60f1ab9444c38514646a5ef1147b3f1b0473289e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2e900f410c7484a403b8a24996147af5ff5c2edb
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53828861"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55069261"
 ---
 # <a name="how-to-specify-build-events-visual-basic"></a>HOW TO：指定建置事件 (Visual Basic)
 

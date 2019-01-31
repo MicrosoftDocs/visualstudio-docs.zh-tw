@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 13e1105f-f987-402e-9108-ec6ac12be042
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e5c5466515e0e58fd94d7a949b04d060a90925d1
-ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
+ms.openlocfilehash: b00eb9127247c98324b64a998ea8c13cb47e074d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "54227222"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55030479"
 ---
 # <a name="create-custom-views-of-data-in-the-visual-studio-debugger-c-visual-basic-c"></a>在 Visual Studio 偵錯工具中建立自訂檢視的資料 (C#，Visual Basic、 c + +)
 

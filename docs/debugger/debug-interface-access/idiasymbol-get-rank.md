@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 14cc9c4b-a5ec-414a-b01f-4a142c17b7cc
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6689694c3256ce463eaf70aa32215b39f907efe3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3a2f3a9201441abdc9a92fd6ac7f9ddcab385711
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53919822"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55016898"
 ---
 # <a name="idiasymbolgetrank"></a>IDiaSymbol::get_rank
 擷取 FORTRAN 多維陣列的陣序 （維度數目）。  

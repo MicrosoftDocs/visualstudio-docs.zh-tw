@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 46e6c648-293b-45c2-a29e-cca9c36cd865
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f39bca422cf5dbc6e14c6ca9e876c8e160023994
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5292cf3e9650264603772676da9738aecd52fb59
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53828481"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55009605"
 ---
 # <a name="api-reference-for-intellitrace-extensibility"></a>IntelliTrace 擴充性的 API 參考
 

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 527826a8-2590-43ad-b907-7bc0b7288e92
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b1a430ebba3435673c90f85c6270c308c58612d9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bacf5699e1ccccf186b09bcd50c82cba203919fc
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53893914"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55070080"
 ---
 # <a name="span-class"></a>span 類別
 定義應用程式階段。  
@@ -41,7 +41,7 @@ class span;
  `span`  
   
 ## <a name="requirements"></a>需求  
- **標頭：***cvmarkersobj.h*  
+ **標頭：** *cvmarkersobj.h*  
   
  **命名空間：** Concurrency::diagnostic  
   

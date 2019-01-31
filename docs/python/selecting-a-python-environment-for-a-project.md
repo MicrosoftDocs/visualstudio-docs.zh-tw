@@ -6,17 +6,17 @@ ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 25492d3f6d152369bdabaad5eafc05f5e8822132
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c37492bfe514536ff94cf8c51a616e2df69b891e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53879354"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55010203"
 ---
 # <a name="how-to-select-a-python-environment-for-a-project"></a>如何選取要用於專案的 Python 環境
 
@@ -46,7 +46,7 @@ Visual Studio 中所有新的 Python 專案一開始都會設定為使用預設�
 
 ## <a name="use-virtual-environments"></a>使用虛擬環境
 
-虛擬環境是特定的 Python 解譯器與特定的一組程式庫的唯一組合，有別於其他的全域和 Conda 環境。 每個專案都有專屬的虛擬環境，並在專案資料夾中進行維護。 該資料夾包含環境的已安裝程式庫以及 *pyvenv.cfg* 檔案，其指定位於檔案系統上其他位置的環境「基底解譯器」路徑。 (也就是說，虛擬環境不包含解譯器複本，只包含它的連結)。 
+虛擬環境是特定的 Python 解譯器與特定的一組程式庫的唯一組合，有別於其他的全域和 Conda 環境。 每個專案都有專屬的虛擬環境，並在專案資料夾中進行維護。 該資料夾包含環境的已安裝程式庫以及 *pyvenv.cfg* 檔案，其指定位於檔案系統上其他位置的環境「基底解譯器」路徑。 (也就是說，虛擬環境不包含解譯器複本，只包含它的連結)。
 
 使用虛擬環境的其中一個優點是，即使經過一段時間的專案開發，虛擬環境仍會反映專案的確切相依性。 (反之，共用全域環境則會包含任意數目的程式庫，不論您是否在專案中使用這些程式庫)。如此一來，您即可輕鬆從虛擬環境建立 *requirements.txt* 檔案，然後用來在其他的開發或生產電腦上重新安裝這些相依性。 如需詳細資訊，請參閱[使用 requirements.txt 管理必要套件](managing-required-packages-with-requirements-txt.md)。
 

@@ -8,17 +8,17 @@ ms.topic: conceptual
 ms.devlang: javascript
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: e8c42bd40528dfe8567219bdc2bc4a8d216e7c6b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 37061173a7bc0b3d9c3b9b7e011428ec3a297b72
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53899752"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55043709"
 ---
 # <a name="develop-javascript-and-typescript-code-in-visual-studio-without-solutions-or-projects"></a>不使用方案或專案在 Visual Studio 中開發 JavaScript 和 TypeScript 程式碼
 
@@ -32,9 +32,9 @@ Visual Studio 2017 引進了[不使用專案或方案開發程式碼](../ide/dev
 
 ## <a name="npm-integration"></a>npm 整合
 
-如果開啟的資料夾中包含 *package.json* 檔案，您可以用滑鼠右鍵按一下 *package.json* 以顯示 npm 專用的操作功能表 (捷徑功能表)。 
+如果開啟的資料夾中包含 *package.json* 檔案，您可以用滑鼠右鍵按一下 *package.json* 以顯示 npm 專用的操作功能表 (捷徑功能表)。
 
-![[方案總管] 中的 npm 功能表](../javascript/media/solution-explorer-npm-ctx.png) 
+![[方案總管] 中的 npm 功能表](../javascript/media/solution-explorer-npm-ctx.png)
 
 在捷徑功能表中，您可以利用與使用專案檔時[管理 npm 套件](npm-package-management.md)的相同方式來管理 npm 所安裝的套件。
 
@@ -43,7 +43,8 @@ Visual Studio 2017 引進了[不使用專案或方案開發程式碼](../ide/dev
 ## <a name="build-and-debug"></a>建置和偵錯
 
 ### <a name="packagejson"></a>package.json
-如果資料夾中的 *package.json* 指定 `main` 項目，則 *package.json* 的滑鼠右鍵捷徑功能表將提供 [偵錯] 命令。 按一下此項目時，將以指定的指令碼作為其引數來啟動 *node.exe*。
+如果資料夾中的 *package.json* 指定 `main` 項目，則 *package.json* 的滑鼠右鍵捷徑功能表將提供 [偵錯] 命令。
+按一下此項目時，將以指定的指令碼作為其引數來啟動 *node.exe*。
 
 ### <a name="javascript-files"></a>JavaScript 檔案
 您可以用滑鼠右鍵按一下檔案，然後從捷徑功能表中選取 [偵錯]，藉以對 JavaScript 檔案進行偵錯。 這會以該 JavaScript 檔案作為其引數來啟動 *node.exe*。

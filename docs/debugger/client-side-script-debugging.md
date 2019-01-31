@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: bb668527-2288-47bd-a6c8-cecbad76dde2
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 89a5f1a5e5f90357d2f48ccd295356129da8a398
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: cec8e999ef4cf472ceabd56b30ec19c1077e31d1
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53898717"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54992713"
 ---
 # <a name="client-side-script-debugging"></a>用戶端指令碼偵錯
 Visual Studio 偵錯工具提供完整的偵錯環境，以找出並修正 ASP.NET 頁面中用戶端指令碼的錯誤。  

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 6ccc9397-ce41-4f72-b261-72ac252cd4a5
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b3d51e398da337a12f38a099045bd82222ca3105
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f3c507df19fad7dd9594aeca1a53b9cb89a2e936
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53948019"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55035558"
 ---
 # <a name="idiapropertystoragereadmultiple"></a>IDiaPropertyStorage::ReadMultiple
 讀取指定從目前的屬性集的屬性。  

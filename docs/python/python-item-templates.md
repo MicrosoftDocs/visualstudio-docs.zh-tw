@@ -6,17 +6,17 @@ ms.prod: visual-studio-dev15
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 37c39346f7cad79e8008cc72711670159eb84f52
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5c82525599ce3c2adbc3aea1e7569748d877a6db
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53852160"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55005887"
 ---
 # <a name="python-item-templates"></a>Python 項目範本
 

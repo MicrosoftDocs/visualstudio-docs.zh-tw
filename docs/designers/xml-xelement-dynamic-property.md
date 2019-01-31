@@ -8,15 +8,15 @@ apiname:
 ms.assetid: 69ab2a33-4fe7-4cfa-97f8-eaf063decb18
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 87796afcc06190a54a3670581be7700fa8d49061
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0cadfd6f02cbe431cb5a74db4a3b7008d05d9c05
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53940546"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55026979"
 ---
 # <a name="xml-xelement-dynamic-property"></a>Xml (XElement 動態屬性)
 

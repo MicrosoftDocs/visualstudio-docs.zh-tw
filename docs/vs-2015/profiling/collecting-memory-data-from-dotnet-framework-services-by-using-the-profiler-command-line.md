@@ -1,25 +1,20 @@
 ---
 title: 使用分析工具命令列收集 .NET Framework 服務的記憶體資料 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: b1361333-8a09-4a65-87a9-4ac94ceb2d9f
 caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 3a12add91b1062b109d392d130b625cdd7f4c873
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 67184daeae3b2a50da266e2eb420d5a2ae9896db
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51727918"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54794262"
 ---
 # <a name="collecting-memory-data-from-net-framework-services-by-using-the-profiler-command-line"></a>使用程式碼剖析工具命令列以收集 .NET Framework 服務的記憶體資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,6 +51,3 @@ ms.locfileid: "51727918"
   
 ## <a name="reference"></a>參考資料  
  [命令列程式碼剖析工具參考](../profiling/command-line-profiling-tools-reference.md)
-
-
-

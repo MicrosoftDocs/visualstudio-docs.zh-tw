@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 5f056e0c-e15b-4e00-8f78-aadc8574f7ea
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 94ff65cd9218ce26964d4dbb0da6fe2c3ffcae36
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fcfde6e7824fa0df315cb843eedb92e4d249b618
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53868007"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54965142"
 ---
 # <a name="idiasymbolgettypes"></a>IDiaSymbol::get_types
 擷取這個符號的編緝器特定類型的陣列。  

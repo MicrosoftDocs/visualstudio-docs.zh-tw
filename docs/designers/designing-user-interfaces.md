@@ -6,15 +6,15 @@ ms.topic: conceptual
 ms.assetid: 880da508-7573-4434-b3a0-d48cf003c0a9
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 067afe28f9d9f904291576a9580b46c2c1fe5dde
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5a547da5a2a25e17cfa81f7fd05484ec6e5abe2a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53896003"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55004574"
 ---
 # <a name="design-user-interfaces"></a>設計使用者介面
 

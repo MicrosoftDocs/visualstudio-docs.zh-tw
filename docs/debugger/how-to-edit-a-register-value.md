@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: e27b6bd8-e6d4-4f1d-8a86-9f4047bb1167
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a84cd75dd6ae6ecd2e62bd41ed384cd03305bbf0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 57ab8c2d173d5a5799d20bf50e0fd26716d163af
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53963445"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54992746"
 ---
 # <a name="how-to-edit-a-register-value-c-c-visual-basic-f"></a>HOW TO：編輯暫存器值 (C#，c + +、 Visual Basic 中， F#)
 

@@ -6,15 +6,15 @@ ms.topic: sample
 ms.assetid: f7e1dde1-b4f6-4371-add4-935b68ec77d7
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d3c07e6668f7805a6ed044258b6767764e63e1b1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ae071c22d9d8d185733a34206333aa2aa3729c0c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53922283"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55009917"
 ---
 # <a name="sample-xsd-file-simple-schema"></a>範例 XSD 檔案：簡單結構描述
 

@@ -8,14 +8,14 @@ helpviewer_keywords:
 ms.assetid: 93a6a1dd-663b-4ab5-8760-7d6b081561d3
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: c3eaf93b6e39d773884ecfde97e18daef2bedbe0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: de64059325e1bbfc9a1c9ffb1adc988522f276ce
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53893535"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54968186"
 ---
 # <a name="how-to-use-the-web-performance-test-api"></a>HOW TO：使用 Web 效能測試 API
 

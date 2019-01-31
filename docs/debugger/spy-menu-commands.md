@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 802549be-dbd8-4df0-a18b-971900eaa769
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b0abf9695e0210cdae9785aafcd967513e48bf43
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d056a878696840de2c6110209c43fa640ef1eccb
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53989525"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54992681"
 ---
 # <a name="spy-menu-commands"></a>Spy 功能表命令
 **Spy**功能表提供命令以使用 Spy + + Windows 和檢視表。  

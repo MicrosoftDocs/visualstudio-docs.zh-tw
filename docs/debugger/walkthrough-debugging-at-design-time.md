@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 35bfdd2c-6f60-4be1-ba9d-55fce70ee4d8
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c367176a6e05b394449fbd78dabc0e863b43c2b5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bbffdd4a6cc108b6ce5d5e986015857756f6ca17
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53960006"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54951764"
 ---
 # <a name="debug-at-design-time-in-visual-studio-c-c-visual-basic-f"></a>在 Visual Studio 中的設計階段偵錯 (C#，c + +、 Visual Basic 中， F#)
 

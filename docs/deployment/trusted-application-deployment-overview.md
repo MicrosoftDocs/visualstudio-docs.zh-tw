@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: b24a1702-8fbe-45b1-87a0-9618a0708f1d
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f63bc8b454985e368e344bda925ce306bdf3de7
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.openlocfilehash: ae744a4d76b73364459ae16dbdcdd3756362af86
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "53934660"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54957555"
 ---
 # <a name="trusted-application-deployment-overview"></a>信任的應用程式部署概觀
 本主題提供如何部署 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式的概觀，使用受信任的應用程式部署技術可提高此應用程式的權限。  
