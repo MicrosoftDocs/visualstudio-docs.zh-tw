@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 0807a28d-2e40-4a51-ab10-308d808ded6b
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c00dd94c9d8ad6702a7f54e461b50f476f0be33
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3e9abdd886215582d2f4a05145ab9da5bd81151b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53840248"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55041356"
 ---
 # <a name="how-to-specify-verbose-log-files-for-clickonce-deployments"></a>HOW TO：指定供 ClickOnce 部署使用的詳細資訊記錄檔
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 會維護所有部署的活動記錄檔。 這些記錄檔記錄有關安裝、 初始化、 更新及解除安裝的詳細資料[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]部署。 若要增加詳細資料，[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]寫入這些記錄檔，使用登錄編輯程式 (*regedit.exe*) 指定的詳細資訊層級。  

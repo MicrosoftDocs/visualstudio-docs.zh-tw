@@ -1,13 +1,9 @@
 ---
 title: JavaScript IntelliSense | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - IntelliSense [JavaScript]
 - <reference> JavaScript XML tag
@@ -29,13 +25,13 @@ ms.assetid: af1a3171-c9d8-45a3-9c96-a763e3b163ef
 caps.latest.revision: 67
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: a70e9598a6cae07a1ef6fcb861924b250a444ffe
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 64da24c21ef40bd850e7fb91ed530df67bfe66b4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53864539"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54763280"
 ---
 # <a name="javascript-intellisense"></a>JavaScript IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -288,5 +284,5 @@ IntelliSense 藉由在您撰寫程式碼的同時提供資訊，幫助您更快�
 - [識別項的陳述式完成](../ide/statement-completion-for-identifiers.md)
 - [XML 文件註解](../ide/xml-documentation-comments-javascript.md)
 - [關於 DHTML 物件模型](http://go.microsoft.com/fwlink/?LinkID=92344) \(英文\)
-- [列出成員](http://msdn.microsoft.com/en-us/1b9cc469-9cd4-4d42-9999-1f9479635ff8) \(機器翻譯\)
+- [列出成員](http://msdn.microsoft.com/1b9cc469-9cd4-4d42-9999-1f9479635ff8) \(機器翻譯\)
 - [SRC 屬性&#124;src 屬性](http://go.microsoft.com/fwlink/?LinkId=92345)

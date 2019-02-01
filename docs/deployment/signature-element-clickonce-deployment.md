@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: c99b07ad-e8ba-43f2-b0d6-3745e7a7c8b3
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ab91a8dea24c37c58fceddce32eadabca4e11e7d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1f7d15bca56c2ceaf4626be03edda856252e3ce4
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53858035"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55033496"
 ---
 # <a name="ltsignaturegt-element-clickonce-deployment"></a>&lt;簽章&gt;項目 （ClickOnce 部署）
 包含對此部署資訊清單進行數位簽章時所需的資訊。  

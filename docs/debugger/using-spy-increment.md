@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 02769bfa-5679-4ee2-8c6b-27876edb4e8c
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a316f2fa786697511a98ae06e5fc52e86412d6b3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3127ab476c0b4500d7cb481222d1f0ef68819edb
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53943271"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55016664"
 ---
 # <a name="using-spy"></a>使用 Spy++
 Spy + + (SPYXX。EXE) 是以 Win32 為基礎的公用程式，可讓您的系統的處理程序、 執行緒、 windows 及視窗訊息的圖形化檢視。 Spy + + 說明的這一節包含下列說明主題：  

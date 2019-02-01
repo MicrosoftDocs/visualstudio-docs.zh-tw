@@ -7,15 +7,15 @@ dev_langs:
 ms.assetid: cabb5a18-bda7-47e8-9e46-5f4718579fc9
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f0c5a6bd5f28f72e154b76b28b10b19a76652eea
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 056e479a6d63665fe6121921fb941f04b3f20048
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53841881"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54987410"
 ---
 # <a name="idiasymbolgetbasesymbol"></a>IDiaSymbol::get_baseSymbol
 擷取來源的指標為基礎的符號。  

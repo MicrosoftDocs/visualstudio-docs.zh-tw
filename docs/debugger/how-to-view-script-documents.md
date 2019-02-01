@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 8b621e53-4508-4b4a-9995-70995b0b9ac8
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ca9eff00f76bd62abce3c3dae061958af546e483
-ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
+ms.openlocfilehash: 4aff2a30846df811808364234000b5a6e7d696f7
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54204131"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54983803"
 ---
 # <a name="how-to-view-script-documents-javascript"></a>HOW TO：檢視指令碼文件 (JavaScript)
 

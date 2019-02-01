@@ -5,16 +5,16 @@ ms.topic: reference
 ms.assetid: d68254a0-f3a1-47e2-aed3-a83471e1d711
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 36ad2afe48b5af06bf7ee59fa3043221bc787ba6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 00fc4ee0be84cc4937fddc083633324cc8ab41d3
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53988970"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55070860"
 ---
 # <a name="the-selected-class-cannot-be-deleted-because-it-is-used-as-a-return-type-for-one-or-more-datacontext-methods"></a>無法刪除所選取的類別，因為它是用來當做一或多個 DataContext 方法的傳回型別。
 

@@ -8,12 +8,12 @@ ms.prod: visual-studio-dev15
 ms.author: mikejo
 author: mikejo5000
 manager: jillfra
-ms.openlocfilehash: 48a7bf6cabaf7cf6c9ccaf675989d8f39e2b2211
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a225ce8d08f41fb66e7ab3de4efb337927de31fe
+ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54954601"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55483727"
 ---
 # <a name="deployment-in-visual-studio"></a>Visual Studio 中的部署
 
@@ -83,7 +83,7 @@ Visual Studio 提供數種不同工具，協助您部署應用程式。
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/media/common/i_get-started.svg" alt="Deploy to Azure App Service">
+                            <img src="https://docs.microsoft.com/media/logos/logo_azure.svg" alt="Deploy to Azure App Service">
                         </div>
                     </div>
                     <div class="cardText">
@@ -101,7 +101,7 @@ Visual Studio 提供數種不同工具，協助您部署應用程式。
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/media/common/i_get-started.svg" alt="Deploy to Azure App Service">
+                            <img src="https://docs.microsoft.com/media/logos/logo_azure.svg" alt="Deploy to Azure App Service">
                         </div>
                     </div>
                     <div class="cardText">
@@ -124,7 +124,7 @@ Visual Studio 提供數種不同工具，協助您部署應用程式。
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/media/logos/logo_net.svg" alt="Deploy ASP.NET to Azure">
+                            <img src="https://docs.microsoft.com/media/logos/logo_azure.svg" alt="Deploy ASP.NET to Azure">
                         </div>
                     </div>
                     <div class="cardText">
@@ -160,7 +160,7 @@ Visual Studio 提供數種不同工具，協助您部署應用程式。
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/media/logos/logo_net.svg" alt="Deploy a .NET core app">
+                            <img src="https://docs.microsoft.com/media/logos/logo_NETcore.svg" alt="Deploy a .NET core app">
                         </div>
                     </div>
                     <div class="cardText">
@@ -196,7 +196,7 @@ Visual Studio 提供數種不同工具，協助您部署應用程式。
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/media/logos/logo_net.svg" alt="Import publish settings and deploy to Azure App Service">
+                            <img src="https://docs.microsoft.com/media/logos/logo_azure.svg" alt="Import publish settings and deploy to Azure App Service">
                         </div>
                     </div>
                     <div class="cardText">
@@ -268,7 +268,7 @@ Visual Studio 提供數種不同工具，協助您部署應用程式。
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/media/common/i_learn-about.svg" alt="Learn about deployment in Visual C++">
+                            <img src="https://docs.microsoft.com/media/logos/logo_Cplusplus.svg" alt="Learn about deployment in Visual C++">
                         </div>
                     </div>
                     <div class="cardText">

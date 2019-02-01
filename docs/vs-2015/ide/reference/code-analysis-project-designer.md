@@ -1,14 +1,9 @@
 ---
 title: 專案設計工具、程式碼分析 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - vs29106
 helpviewer_keywords:
@@ -18,13 +13,13 @@ ms.assetid: 71743d26-4da5-4f7d-a403-7ab96cf2ef2e
 caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 9e2af505b7cf5700a521903a873c117c7daf4681
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 5e5ae21fcbe215a7abaec247201f2af44caa740f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49245163"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54764822"
 ---
 # <a name="code-analysis-project-designer"></a>專案設計工具、程式碼分析
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -69,10 +64,7 @@ ms.locfileid: "49245163"
  使用規則  
  啟用或停用使用規則。 您也可以展開此項目來啟用或停用個別規則。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [受控碼的程式碼分析警告](../../code-quality/code-analysis-for-managed-code-warnings.md)   
  [受控碼的程式碼分析概觀](../../code-quality/code-analysis-for-managed-code-overview.md)   
- [逐步解說：分析 Managed 程式碼中的程式碼缺失](../../code-quality/walkthrough-analyzing-managed-code-for-code-defects.md)
-
-
-
+ [逐步解說：分析受控碼的程式碼缺失](../../code-quality/walkthrough-analyzing-managed-code-for-code-defects.md)

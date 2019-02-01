@@ -10,15 +10,15 @@ dev_langs:
 - C++
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 58f271bd1d4e0a7a15d1f08fe89b1ef252bdefd4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 42462d7db7f3424370fcfaf9ae54d09f5f6bff56
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53902197"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55018302"
 ---
 # <a name="debug-universal-windows-apps-uwp-in-visual-studio"></a>偵錯在 Visual Studio 中的通用 Windows App (UWP)
 

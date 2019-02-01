@@ -1,29 +1,24 @@
 ---
-title: 如何：設定 IDE 協助工具選項 | Microsoft Docs
-ms.custom: ''
+title: HOW TO：設定 IDE 協助工具選項 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 helpviewer_keywords:
 - accessibility [Visual Studio]
 ms.assetid: ddc96c4c-0600-46c1-8267-7dce4c44ad24
 caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 485529a8be2adf57f7b79a3d2f0844d662920448
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: b1f70f2f33b8ad0af4f0fa13489cb75be529c322
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49867282"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54803219"
 ---
-# <a name="how-to-set-ide-accessibility-options"></a>如何：設定 IDE 協助工具選項
+# <a name="how-to-set-ide-accessibility-options"></a>HOW TO：設定 IDE 協助工具選項
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
   
@@ -32,12 +27,12 @@ ms.locfileid: "49867282"
  此外，[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 支援 Dvorak 鍵盤配置，這會讓最常鍵入的字元更容易存取。 您也可以自訂 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 提供的預設快速鍵。 如需詳細資訊，請參閱[識別及自訂鍵盤快速鍵](../../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)。  
   
 > [!NOTE]
->  根據您目前使用的設定或版本，您所看到的對話方塊與功能表命令可能會與 [說明] 中描述的不同。 若要變更設定，請從 [ **工具** ] 功能表中選取 [ **匯入和匯出設定** ]。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
+>  根據您目前使用的設定或版本，您所看到的對話方塊與功能表命令可能會與 [說明] 中描述的不同。 若要變更設定，請從 [ **工具** ] 功能表中選取 [ **匯入和匯出設定** ]。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
   
 ## <a name="editors-dialogs-and-tool-windows"></a>編輯器、對話方塊和工具視窗  
  根據預設，[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 中的對話方塊和工具視窗使用與作業系統相同的字型大小和色彩。 IDE 框架、對話方塊、工具列和工具視窗的色彩設定，是以色彩配置為基礎：淡或暗。 您可以在[一般、環境、選項對話方塊](../../ide/reference/general-environment-options-dialog-box.md)變更目前的色彩佈景主題。  
   
- 您也可以在編輯器的 [程式碼] 檢視中顯示快顯視窗。 這些視窗可以提示您目前物件上的可用成員和參數，以便完成函式或陳述式。 如果您不方便鍵入，這些視窗會很有用。 不過，它們會干擾程式碼編輯器中的焦點，可能會對某些使用者造成問題。 您可以關閉這些視窗，方法是開啟 [選項] 對話方塊，並在 [選項] 對話方塊的 [文字編輯器]、[所有語言]、[一般] 頁面中，清除 [自動列出成員] 和 [參數資訊]。 如需詳細資訊，請參閱[如何：設定一般編輯器選項](http://msdn.microsoft.com/en-us/704e4a7b-2162-4bed-8a47-f4f6ffec98c2)。  
+ 您也可以在編輯器的 [程式碼] 檢視中顯示快顯視窗。 這些視窗可以提示您目前物件上的可用成員和參數，以便完成函式或陳述式。 如果您不方便鍵入，這些視窗會很有用。 不過，它們會干擾程式碼編輯器中的焦點，可能會對某些使用者造成問題。 您可以關閉這些視窗，方法是開啟 [選項] 對話方塊，並在 [選項] 對話方塊的 [文字編輯器]、[所有語言]、[一般] 頁面中，清除 [自動列出成員] 和 [參數資訊]。 如需詳細資訊，請參閱[＜How to：設定一般編輯器選項](http://msdn.microsoft.com/704e4a7b-2162-4bed-8a47-f4f6ffec98c2)。  
   
  您可以在整合式開發環境 (IDE) 中重新排列視窗，以符合您的工作方式。 您可以停駐、浮動、隱藏或自動隱藏每個工具視窗。  
   
@@ -116,9 +111,6 @@ ms.locfileid: "49867282"
   
 2.  在相鄰 [名稱] 處，提供選取按鈕的新標題。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Visual Studio 的協助工具功能](../../ide/reference/accessibility-features-of-visual-studio.md)   
  [設計可及性應用程式的資源](../../ide/reference/resources-for-designing-accessible-applications.md)
-
-
-

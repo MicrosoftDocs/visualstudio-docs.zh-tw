@@ -1,14 +1,9 @@
 ---
 title: VSPerfCmd | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - performance tools, VSPerfCmd tool
 - command-line tools, VSPerfCmd tool
@@ -19,13 +14,13 @@ ms.assetid: 778bc105-7643-46c4-a338-f3620e31125a
 caps.latest.revision: 54
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: e8cd602a005026c8dec4bf5a309d6f04044b960d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: da82cbd8426b1a9af08e27577cdb76ca4a64d2e2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51766657"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54776094"
 ---
 # <a name="vsperfcmd"></a>VSPerfCmd
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,17 +54,17 @@ VSPerfCmd [/U] [/options]
 |[ProcessOff](../profiling/processon-and-processoff.md) **:** `pid`|停止指定處理序的資料收集。|  
 |[ThreadOn 與 ThreadOff](../profiling/threadon-and-threadoff.md) **:** *tid*|在對 **VSPerfCmdThreadOff** 的呼叫暫停分析後，恢復指定處理序的分析。 請只在使用檢測方法進行分析時使用 **ThreadOn**。|  
 |[ThreadOn 與 ThreadOff](../profiling/threadon-and-threadoff.md) **:** *tid*|暫停指定執行緒的分析。 請只在使用檢測方法進行分析時使用 **ThreadOff**。|  
-|[Mark](../profiling/mark.md) **:** _MarkNum_[**,**_MarkText_**]**|在分析資料檔案中插入標記，以及選擇性文字。|  
+|[Mark](../profiling/mark.md) **:**_MarkNum_[**,**_MarkText_**]**|在分析資料檔案中插入標記，以及選擇性文字。|  
   
 ## <a name="sampling-method-options"></a>取樣方法選項  
  只有在使用取樣分析方法時，才能使用下列選項。  
   
 |選項|描述|  
 |------------|-----------------|  
-|[Launch](../profiling/launch.md) **:** *Executable*|啟動指定的應用程式並開始分析。|  
-|[Args](../profiling/args.md) **:** *Arguments*|指定要傳遞給啟動應用程式的命令列引數。|  
+|[Launch](../profiling/launch.md) **:***可執行檔*|啟動指定的應用程式並開始分析。|  
+|[Args](../profiling/args.md) **:***引數*|指定要傳遞給啟動應用程式的命令列引數。|  
 |[Console](../profiling/console.md)|在新的命令提示字元視窗啟動指定的命令。|  
-|[Attach](../profiling/attach.md) **:** *PID*[**,**_PID_]|開始分析指定的處理序。 處理序可依處理序識別碼或處理序名稱識別。|  
+|[Attach](../profiling/attach.md) **:***PID*[**,**_PID_]|開始分析指定的處理序。 處理序可依處理序識別碼或處理序名稱識別。|  
 |[Detach](../profiling/detach.md)[**:**_PID_[,_PID_]]|停止分析指定的處理序。 處理序可依處理序識別碼或處理序名稱識別。 如果未指定任何處理序，所有處理序的分析都會停止。|  
 |[GC](../profiling/gc-vsperfcmd.md)[**:**{**Allocation**`&#124;`**Lifetime**}]|收集 .NET 記憶體配置和物件存留期資料。 只能搭配 **VSPerfCmdLaunch** 選項使用。|  
   
@@ -91,16 +86,13 @@ VSPerfCmd [/U] [/options]
 |------------|-----------------|  
 |**Admin:Security** \<**ALLOW&#124;DENY**> *Right*[ *Right*] \<*User*&#124;*Group*>|允許或拒絕指定的使用者或群組存取分析服務。<br /><br /> `Right` 可以是：<br /><br /> CrossSession - 將服務存取權提供給使用者，以進行交叉工作階段分析。<br /><br /> SampleProfiling - 將驅動程式存取權提供給使用者，以進行取樣分析。 也可用來在追蹤分析期間存取核心轉換資訊。<br /><br /> FullAccess - 將 CrossSession 和 SampleProfiling 存取權都提供給使用者。|  
 |**Admin:Security, List**|列出分析服務的目前狀態，並列出使用者權限。|  
-|**Admin:** \<*Service*&#124;*Driver*>\<**START**&#124;**STOP**&#124;**INSTALL**&#124;**UNINSTALL**>|啟動、停止、安裝或解除安裝分析服務元件 (service) 或核心模式裝置驅動程式 (driver)。|  
-|**Admin:** \<*Service*&#124;*Driver*>**AutoStart**\<**ON**&#124;**OFF**>|啟用或停用在重新開機後自動啟動分析服務 (service) 或核心模式裝置驅動程式 (driver)。|  
+|**Admin:**\<*Service*&#124;*Driver*>\<**START**&#124;**STOP**&#124;**INSTALL**&#124;**UNINSTALL**>|啟動、停止、安裝或解除安裝分析服務元件 (service) 或核心模式裝置驅動程式 (driver)。|  
+|**Admin:**\<*Service*&#124;*Driver*>**AutoStart**\<**ON**&#124;**OFF**>|啟用或停用在重新開機後自動啟動分析服務 (service) 或核心模式裝置驅動程式 (driver)。|  
   
 ## <a name="vsperfcmd-driver"></a>VSPerfCmd /Driver  
  **VSPerfCmd /Driver** 選項現已淘汰。 請對這個功能使用 **VsPerfCmdAdmin** 選項。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [VSInstr](../profiling/vsinstr.md)   
  [VSPerfMon](../profiling/vsperfmon.md)   
  [VSPerfReport](../profiling/vsperfreport.md)
-
-
-

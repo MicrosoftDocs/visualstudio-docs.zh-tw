@@ -1,14 +1,9 @@
 ---
 title: MarkupCompilePass2 工作 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -22,13 +17,13 @@ ms.assetid: 1d25689a-d21f-4b05-be26-95aa0ed4fd03
 caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: ea61e827bfae47c3bea961cb15c208f585aa6ed9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 87c31551541bc949a98ec2dd7a15da5a86b36d21
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49179220"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54777088"
 ---
 # <a name="markupcompilepass2-task"></a>MarkupCompilePass2 工作
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +36,7 @@ ms.locfileid: "49179220"
 |參數|描述|  
 |---------------|-----------------|  
 |`AlwaysCompileMarkupFilesInSeparateDomain`|選擇性的 **Boolean** 參數。<br /><br /> 指定是否在不同的 <xref:System.AppDomain> 中執行工作。 如果此參數傳回 **false**，工作就會在與 [!INCLUDE[TLA#tla_msbuild](../includes/tlasharptla-msbuild-md.md)] 相同的 <xref:System.AppDomain> 中執行，且執行速度會較快。 如果此參數傳回 **true**，工作就會在與 [!INCLUDE[TLA2#tla_msbuild](../includes/tla2sharptla-msbuild-md.md)] 隔離的第二個 <xref:System.AppDomain> 中執行，且執行速度會較慢。|  
-|`AssembliesGeneratedDuringBuild`|選擇性的 **String[]** 參數。<br /><br /> 指定對在建置程序中變更之組件的參考。 例如，[!INCLUDE[TLA#tla_visualstu2005](../includes/tlasharptla-visualstu2005-md.md)] 方案可能包含一個專案，此專案參考另一個專案的已編譯輸出。 在此情況下，可以將第二個專案的已編譯輸出新增到 **AssembliesGeneratedDuringBuild**。<br /><br /> 注意：**AssembliesGeneratedDuringBuild** 必須包含對組建方案所產生之一組完整組件的參考。|  
+|`AssembliesGeneratedDuringBuild`|選擇性的 **String[]** 參數。<br /><br /> 指定對在建置程序中變更之組件的參考。 例如，[!INCLUDE[TLA#tla_visualstu2005](../includes/tlasharptla-visualstu2005-md.md)] 方案可能包含一個專案，此專案參考另一個專案的已編譯輸出。 在此情況下，可以將第二個專案的已編譯輸出新增到 **AssembliesGeneratedDuringBuild**。<br /><br /> 注意:**AssembliesGeneratedDuringBuild** 必須包含對一組完整組件的參考，這些組件是由組建方案所產生。|  
 |`AssemblyName`|必要的 **String** 參數。<br /><br /> 指定為專案產生之組件的簡短名稱。 例如，如果專案要產生名稱為 **WinExeAssembly.exe** 的 [!INCLUDE[TLA#tla_win](../includes/tlasharptla-win-md.md)] 可執行檔，則 **AssemblyName** 參數的值會是 **WinExeAssembly**。|  
 |`GeneratedBaml`|選擇性的 **ITaskItem[]** 輸出參數。<br /><br /> 包含採用 [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)] 二進位格式的已產生檔案清單。|  
 |`KnownReferencePaths`|選擇性的 **String[]** 參數。<br /><br /> 指定對在建置程序中永不變更之組件的參考。 包括位於 [!INCLUDE[TLA#tla_gac](../includes/tlasharptla-gac-md.md)]、位於 [!INCLUDE[TLA#tla_netframewk](../includes/tlasharptla-netframewk-md.md)] 安裝目錄等位置中的組件。|  
@@ -77,13 +72,10 @@ ms.locfileid: "49179220"
 </Project>  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [WPF MSBuild 參考](../msbuild/wpf-msbuild-reference.md)   
  [工作參考](../msbuild/wpf-msbuild-task-reference.md)   
  [MSBuild 參考](../msbuild/msbuild-reference.md)   
  [工作參考](../msbuild/msbuild-task-reference.md)   
  [建置 WPF 應用程式 (WPF)](http://msdn.microsoft.com/library/a58696fd-bdad-4b55-9759-136dfdf8b91c)   
  [WPF XAML 瀏覽器應用程式概觀](http://msdn.microsoft.com/library/3a7a86a8-75d5-4898-96b9-73da151e5e16)
-
-
-

@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: ee733077-d17a-4439-8a49-bc2f5dbc60d0
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 02f88994bb5752a16e690522d35259b0853e997b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c4514f914569c6a28681ce5450d10913bbd7a22a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53879078"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55011685"
 ---
 # <a name="find-window-dialog-box"></a>尋找視窗對話方塊
 使用此對話方塊來選取視窗，並顯示其屬性或訊息。 若要顯示此對話方塊中，選擇**尋找視窗**從**Spy**功能表。  

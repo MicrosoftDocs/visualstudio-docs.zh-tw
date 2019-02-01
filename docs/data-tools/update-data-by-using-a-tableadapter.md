@@ -15,16 +15,16 @@ helpviewer_keywords:
 ms.assetid: 5e32e10e-9bac-4969-9bdd-b8f6919d3516
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: fda8f23cdaff6fc98e0a0bb982d5c4c17265ecf0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bcdf4c798960dacca6cfc11aaacd66c64b3a725e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53843277"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55036767"
 ---
 # <a name="update-data-by-using-a-tableadapter"></a>使用 TableAdapter 更新資料
 

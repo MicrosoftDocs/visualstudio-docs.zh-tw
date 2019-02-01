@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 780a298a-132e-4245-8370-8c82ca27c6c1
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8b65c10b07b93e657a9e3cb9da5f94d5c9b14362
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 304c3bb5779af3fd53dddb8e5397a7913b353a4c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53854018"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55024262"
 ---
 # <a name="how-can-i-debug-access-violations-when-running-my-program-outside-the-debugger"></a>在偵錯工具外執行我的程式時，如何偵錯存取違規？
 
