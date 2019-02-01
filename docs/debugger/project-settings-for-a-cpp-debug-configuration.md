@@ -109,15 +109,15 @@ helpviewer_keywords:
 ms.assetid: 860c7f13-a108-4fe5-8fca-d235cd3ca1cb
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4351553d5df55dd5dceeffe542ff542a9487d6e5
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.openlocfilehash: 163b3e2d3ac222fd2e495e7a3b71841c818a4a3f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "53957906"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54961841"
 ---
 # <a name="project-settings-for-a-c-debug-configuration"></a>C++ 偵錯組態的專案設定
 您可以變更專案設定中的 C 或 Visual c + + 偵錯組態**屬性頁** 對話方塊中所述[How to:設定偵錯和版本組態](../debugger/how-to-set-debug-and-release-configurations.md)。 下表顯示 [屬性頁] 對話方塊中與偵錯工具相關的設定位置。  
@@ -155,19 +155,19 @@ ms.locfileid: "53957906"
   
 ## <a name="cc-folder-general-category"></a>C/C++ 資料夾 (一般分類)  
   
-|設定|說明|  
+|設定|描述|  
 |-------------|-----------------|  
 |**偵錯資訊格式** ([/Z7、/Zd、Zi、/ZI](/cpp/build/reference/z7-zi-zi-debug-information-format))|指定要為專案建立的偵錯資訊類型。<br /><br /> 預設選項 (/ZI) 會以 [編輯後繼續] 相容格式建立程式資料庫 (PDB)。 如需詳細資訊，請參閱 [/Z7、/Zd、/Zi、/ZI (偵錯資訊格式)](/cpp/build/reference/z7-zi-zi-debug-information-format)。|  
   
 ## <a name="cc-folder-optimization-category"></a>C/C++ 資料夾 (最佳化分類)  
   
-|設定|說明|  
+|設定|描述|  
 |-------------|-----------------|  
 |**Optimization**|指定編譯器是否應該將它所產生的程式碼最佳化。 最佳化會變更執行的程式碼。 最佳化程式碼不再符合原始程式碼，讓偵錯更加困難。<br /><br /> 預設選項 ([停用 (/0d]) 會隱藏最佳化。 您可以在隱藏最佳化的情況下進行開發，然後在建立程式碼的生產環境版本時再將此功能開啟。|  
   
 ## <a name="linker-folder-debugging-category"></a>連結器資料夾 (偵錯分類)  
   
-|設定|說明|  
+|設定|描述|  
 |-------------|-----------------|  
 |**產生偵錯資訊** ([/DEBUG](/cpp/build/reference/debug-generate-debug-info))|通知連結器要包含偵錯資訊，資訊的格式是由 [/Z7、/Zd、Zi 或 /ZI](/cpp/build/reference/z7-zi-zi-debug-information-format) 所指定。|  
 |**產生程式資料庫檔案** ([/PDB:name](/cpp/build/reference/pdb-use-program-database))|在此方塊中，指定程式資料庫 (PDB) 檔的名稱。 您必須選取 ZI 或 /Zi 以指定 [偵錯資訊格式]。|  

@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: cc34ee96-3d91-41bd-a019-aa3759139e7e
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a654c2d86ed0eb598a963b56cd6e3ef16ad91f19
-ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
+ms.openlocfilehash: f9432eab55f22bcf18266a10e4e1616997ed8c4a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54154091"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54924174"
 ---
 # <a name="allocation-hooks-and-c-run-time-memory-allocations"></a>配置攔截和 C 執行階段記憶體配置
 配置攔截函式非常重要的限制是，必須明確地忽略`_CRT_BLOCK`區塊。 這些區塊是由 C 執行階段程式庫函式內部做，如果它們呼叫任何配置內部記憶體的 C 執行階段程式庫函式的記憶體配置。 您可以忽略`_CRT_BLOCK`所配置的開頭將下列程式碼區塊攔截函式：  

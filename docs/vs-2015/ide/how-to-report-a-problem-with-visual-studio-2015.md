@@ -8,13 +8,13 @@ ms.assetid: 24ecb76e-b7ad-432d-88ab-d9849963465d
 caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 26758c63bb1de64c9497b67afc3f55b73238d5e4
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: 10cf59d4350d71d6f7feb75757b1c5ea9c9d1363
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53064056"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54834435"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-2015"></a>如何回報 Visual Studio 2015 的問題
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,7 +23,7 @@ ms.locfileid: "53064056"
 
 如果您遇到 Visual Studio 2015 的問題，我們想要了解它，以便我們可以診斷並修正此問題。  透過使用 [回報問題]  工具，您可以收集問題的詳細資訊，並只需按幾下按鈕即可將其傳送給 Microsoft。
 
- Microsoft 尊重您的隱私權。 如需我們如何處理您所傳送之資料的資訊，請參閱 [Microsoft Visual Studio 產品系列隱私權聲明](https://www.visualstudio.com/en-us/dn948229)。
+ Microsoft 尊重您的隱私權。 如需我們如何處理您所傳送之資料的資訊，請參閱 [Microsoft Visual Studio 產品系列隱私權聲明](https://www.visualstudio.com/dn948229)。
 
 ## <a name="open-the-report-a-problem-tool"></a>開啟 [回報問題] 工具
  按一下標題列中 [快速啟動] 旁的使用者意見反應圖示，或按一下 [說明] &#124; [傳送意見反應] &#124; [回報問題]。

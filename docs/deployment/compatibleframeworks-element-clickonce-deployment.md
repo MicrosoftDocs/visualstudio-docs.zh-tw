@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: f6c3ee55-9e65-403d-8664-3ebde872c7d4
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: df45e5bc3f9294ac1a53353ec784d83c9220f1cf
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 14dab7912816ffa86e40c2ed84d83d4020cc7002
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53900950"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54982087"
 ---
 # <a name="ltcompatibleframeworksgt-element-clickonce-deployment"></a>&lt;compatibleFrameworks&gt;項目 （ClickOnce 部署）
 識別安裝及執行此應用程式所需的 .NET Framework 版本。  
@@ -45,14 +45,14 @@ ms.locfileid: "53900950"
   
  下表列出屬性，`compatibleFrameworks`項目支援。  
   
-|屬性|說明|  
+|屬性|描述|  
 |---------------|-----------------|  
 |`S` `upportUrl`|選擇性。 指定的 URL，可以下載相容的慣用的.NET Framework 版本的位置。|  
   
 ## <a name="framework"></a>架構  
  必要項。 下表列出的屬性，`framework`項目支援。  
   
-|屬性|說明|  
+|屬性|描述|  
 |---------------|-----------------|  
 |`targetVersion`|必要項。 指定的目標.NET Framework 的版本號碼。|  
 |`profile`|必要項。 指定的目標.NET Framework 的設定檔。|  

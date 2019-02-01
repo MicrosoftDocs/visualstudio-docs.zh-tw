@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: 6ccb1269-d55f-49c4-920d-baedf7de2888
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ad9c458891a13a28d9b13ec9674a4a9e829b95a1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ba089ace95308ddcf6067920da8484064e797ecd
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53955275"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55015104"
 ---
 # <a name="graphics-log-document"></a>圖形記錄文件
 圖形記錄文件是在圖形診斷工作階段下執行應用程式時所發生圖形事件的記錄。 錄製之後，您可以在 Visual Studio 圖形分析器中檢查記錄來診斷轉譯和效能問題。  
@@ -42,7 +42,7 @@ ms.locfileid: "53955275"
 ## <a name="playback-machine"></a>播放電腦  
  [播放電腦] 也會顯示在 [畫面清單] 右上角。 播放電腦是一部電腦或一個裝置，用來在稍後的圖形診斷工作階段期間，從圖形記錄檔播放圖形事件。 透過使用不同的裝置 (非開發電腦) 播放所擷取的事件，您可以更精確地重現發生問題的執行環境；例如，您可以使用具有與開發電腦所使用之圖形硬體或驅動程式不同的電腦，或其他類型的裝置 (例如 ARM Windows RT 平板電腦或 Windows Phone 裝置)。  
 
- 如需有關如何指定播放電腦的資訊，請參閱[How to:變更圖形診斷播放電腦](how-to-change-the-graphics-diagnostics-playback-machine.md)  
+ 如需有關如何指定播放電腦的資訊，請參閱[How to:變更圖形診斷播放電腦](how-to-change-the-graphics-diagnostics-playback-machine.md)。  
 
 ## <a name="graphics-log-summary-information"></a>圖形記錄摘要資訊  
  當圖形記錄檔是使用中文件時，[屬性] 視窗會顯示裝載圖形診斷擷取工作階段之環境的相關資訊。 隨即顯示數個分類的資訊。  
@@ -50,7 +50,7 @@ ms.locfileid: "53955275"
  **Direct3D 資訊**  
  列出有關擷取工作階段期間，所使用之顯示卡的硬體和驅動程式功能資訊。  
 
-|屬性|說明|  
+|屬性|描述|  
 |--------------|-----------------|  
 |**10 位元 XR 高彩格式**|如果支援 10 位元 XR 高彩格式，則為 **True**，否則為 **False**。|  
 |**DirectCompute CS 4.x**|如果支援計算著色器 4.0，則為 **True**，否則為 **False**。|  
@@ -63,7 +63,7 @@ ms.locfileid: "53955275"
  **顯示資訊**  
  列出擷取工作階段期間所使用之顯示卡的相關資訊。  
 
-|屬性|說明|  
+|屬性|描述|  
 |--------------|-----------------|  
 |**描述**|顯示卡描述字串。|  
 |**顯示記憶體**|已安裝在圖形卡上的記憶體數量。|  
@@ -74,7 +74,7 @@ ms.locfileid: "53955275"
  **實驗檔案**  
  列出與擷取工作階段相關聯之實驗檔案的資訊。  
 
-|屬性|說明|  
+|屬性|描述|  
 |--------------|-----------------|  
 |**路徑**|.vsglog 檔案的路徑。 **注意：** 在舊版擷取下，未使用此屬性。|  
 
@@ -84,7 +84,7 @@ ms.locfileid: "53955275"
  **系統資訊**  
  列出已在擷取工作階段期間，裝載應用程式之硬體和作業系統的資訊。  
 
-|屬性|說明|  
+|屬性|描述|  
 |--------------|-----------------|  
 |**記憶體**|已安裝在電腦中的記憶體數量。|  
 |**OS 架構**|作業系統的目標 CPU 架構。|  
@@ -95,7 +95,7 @@ ms.locfileid: "53955275"
  **目標應用程式**  
  列出做為擷取工作階段之原因的應用程式相關資訊。  
 
-|屬性|說明|  
+|屬性|描述|  
 |--------------|-----------------|  
 |**上次修改日期/時間**|建置應用程式的日期和時間。|  
 |**路徑**|應用程式的路徑。|  
@@ -106,7 +106,7 @@ ms.locfileid: "53955275"
  列出圖形記錄文件的資訊。  
 
 
-| 屬性 | 說明 |
+| 屬性 | 描述 |
 |------------------------| - |
 | **建立者** | 已建立圖形記錄文件的應用程式名稱。 例如，如果已從 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 啟動擷取工作階段 (手動擷取)，則此屬性的值為 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。 |
 | **工作階段開始時間** | 擷取工作階段開始的日期和時間。 |

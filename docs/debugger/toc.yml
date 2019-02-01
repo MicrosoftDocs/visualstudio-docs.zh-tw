@@ -202,6 +202,9 @@ items:
       items:
       - name: 建立原生物件的自訂檢視
         href: create-custom-views-of-native-objects.md
+        items:
+        - name: Visual C++ 自訂視覺化檢視相容性
+          href: visual-cpp-custom-visualizer-compatibility.md
       - name: 建立受控物件的自訂檢視
         href: create-custom-views-of-dot-managed-objects.md
         items:
@@ -835,9 +838,9 @@ items:
   items:
   - name: Visual Studio 中偵錯工具的新功能
     href: what-s-new-for-the-debugger-in-visual-studio.md
-ms.openlocfilehash: c65dcb45bc60abaaec767785e3059012b59a3e74
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 71d02bd5fba02367da6f28400c4b991784422133
+ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55002765"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55231657"

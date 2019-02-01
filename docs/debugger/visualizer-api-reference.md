@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: b9ff4ed0-9e80-49df-9016-a81189319afd
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f70c806cc848c8f7aba87e2d89f55c480cbc4af
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9665484a571150f63a4b8d2d1d952999dc9e53b1
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53902210"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54945641"
 ---
 # <a name="visualizer-api-reference"></a>視覺化檢視 API 參考
 

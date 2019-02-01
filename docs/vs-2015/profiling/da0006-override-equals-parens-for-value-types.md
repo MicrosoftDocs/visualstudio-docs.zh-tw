@@ -1,14 +1,9 @@
 ---
 title: DA0006：覆寫實值型別的 Equals() | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 f1_keywords:
 - vs.performance.rules.DAOverrideEquals
 - vs.performance.6
@@ -18,19 +13,19 @@ ms.assetid: 4d85bdd6-b571-47e0-afd6-ba3764e4eed5
 caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: a60bc533ccc826b09e288e7d8ca934702f0443e5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 2229edad7ff338251fea23740343e23f87aa2792
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51768323"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54793028"
 ---
-# <a name="da0006-override-equals-for-value-types"></a>DA0006：覆寫實值類型的 Equals()
+# <a name="da0006-override-equals-for-value-types"></a>DA0006：覆寫實值型別的 Equals()
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 規則 Id |DA0006 |  
-|類別目錄 |.NET Framework 使用方式 |  
+|類別目錄 |。.NET Framework 使用方式 |  
 |分析方法 |取樣 |  
 |訊息 |覆寫 Equals 和實值型別上的等號比較運算子。 |  
 |訊息類型 |警告 |  
@@ -44,7 +39,4 @@ ms.locfileid: "51768323"
  如需如何覆寫 Equals 和等號比較運算子的詳細資訊，請參閱[實作 Equals 和相等運算子 (==) 的方針](http://go.microsoft.com/fwlink/?LinkId=177818)。  
   
 ## <a name="how-to-investigate-a-warning"></a>如何調查警告  
- 如需實作 Equals 和相等運算子的範例，請參閱程式碼分析規則 [CA1815：必須覆寫實值型別上的 Equals 方法和相等運算子](../code-quality/ca1815-override-equals-and-operator-equals-on-value-types.md)
-
-
-
+ 如需實作 Equals 和等號比較運算子的範例，請參閱程式碼分析規則 [CA1815：覆寫實值型別上的 Equals 和等號比較運算子](../code-quality/ca1815-override-equals-and-operator-equals-on-value-types.md)

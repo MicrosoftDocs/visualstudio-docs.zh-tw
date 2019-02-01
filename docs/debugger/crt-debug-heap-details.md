@@ -70,15 +70,15 @@ helpviewer_keywords:
 ms.assetid: bf78ace6-28e4-4a04-97c6-39e0cdd00ba4
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 900672b7b335880df9c5a17c8b15a8c6394ae67e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 95d69b89dd9b0d3b3aa37187ce69cc57c303cd53
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53949478"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54934740"
 ---
 # <a name="crt-debug-heap-details"></a>CRT 偵錯堆積詳細資料
 本主題提供 CRT 偵錯堆積的詳細檢視。  
@@ -190,7 +190,7 @@ freedbg(pbData, _CLIENT_BLOCK|(MYSUBTYPE<<16));
   
  **_crtDbgFlag** 旗標包含下列位元欄位：  
   
-|位元欄位|預設<br /><br /> value|說明|  
+|位元欄位|預設<br /><br /> value|描述|  
 |---------------|-----------------------|-----------------|  
 |**_CRTDBG_ALLOC_MEM_DF**|開啟|開啟偵錯配置。 當這個位元關閉時，配置會繼續鏈結在一起，但是區塊類型是 **_IGNORE_BLOCK**。|  
 |**_CRTDBG_DELAY_FREE_MEM_DF**|Off|防止真的釋放記憶體，這是為了模擬低記憶體情況。 當這個位元開啟時，釋放區塊會保持在偵錯堆積的連結清單裡，但是會標記為 **_FREE_BLOCK** 並且會填入一個特殊位元組值。|  
@@ -300,7 +300,7 @@ typedef struct _CrtMemState
   
  下列函式報告堆積的狀態和內容，並且使用資訊來幫助偵測記憶體流失和其他問題。  
   
-|功能|說明|  
+|功能|描述|  
 |--------------|-----------------|  
 |[_CrtMemCheckpoint](/cpp/c-runtime-library/reference/crtmemcheckpoint)|將堆積的快照儲存在應用程式提供的 **_CrtMemState** 結構中。|  
 |[_CrtMemDifference](/cpp/c-runtime-library/reference/crtmemdifference)|比較兩個記憶體狀態結構，將它們之間的差異儲存在第三個狀態結構，如果兩個狀態不同則傳回 TRUE。|  

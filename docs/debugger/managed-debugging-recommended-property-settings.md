@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 3d14a8d4-2925-44d0-be41-ec546d411db9
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1acc20c8987b3a5fced5826c8a2bfc068ce18c01
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d15e41f07f4866b12937455b79f2f2f7a7ba4052
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53887035"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54971136"
 ---
 # <a name="managed-debugging-recommended-property-settings"></a>受控偵錯：建議的屬性設定
 在所有 Managed 偵錯案例中，某些屬性必須以相同的方式設定。  

@@ -1,25 +1,20 @@
 ---
 title: 針對程式碼度量問題進行疑難排解 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: troubleshooting
 ms.assetid: f2fdb995-4888-4246-85dc-7bacadd45968
 caps.latest.revision: 6
 author: erickson-doug
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 76cd6d3b05346ee8ed0577dcbea512b609789167
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: b059102e945af0765b3008baf7c8b1283450bb72
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49233014"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54755588"
 ---
 # <a name="troubleshooting-code-metrics-issues"></a>程式碼度量問題疑難排解
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,8 +30,5 @@ ms.locfileid: "49233014"
   
 -   函式包含參數 (VB 中的 Select Case) 陳述式。 [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] 與舊版本之間的編譯器差異可能會針對一些包含 fallthrough 案例的 switch 陳述式產生不同的 MSIL 程式碼。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [測量 Managed 程式碼的複雜度和維護性](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)
-
-
-

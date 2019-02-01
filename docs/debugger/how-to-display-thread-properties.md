@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: f0e64c0e-cdb3-4ad4-9723-09934166f3a2
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e011da42235fe62c86c7c2a12fee99b439b38421
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9216c3f949ed5a31a0147f54fd8e5dfe8d8215db
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53851374"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55018419"
 ---
 # <a name="how-to-display-thread-properties"></a>HOW TO：顯示執行緒屬性
 若要深入了解中所列的執行緒[執行緒檢視](../debugger/threads-view.md)，使用[執行緒屬性對話方塊](../debugger/thread-properties-dialog-box.md)。  

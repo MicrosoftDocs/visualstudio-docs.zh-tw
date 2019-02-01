@@ -1,14 +1,9 @@
 ---
 title: 管理應用程式資源 (.NET) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - msvse_resedit.dlg.SetCustomTool
 - msvse_settingsdesigner.err.formatvalue
@@ -26,13 +21,13 @@ ms.assetid: f2582734-8ada-4baa-8a7c-e2ef943ddf7e
 caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: b29f32fa59f719af3efab6901596b682c95a5d57
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 8319e4e71b313e0c4614f720cb371b339c09d391
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49287218"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54784770"
 ---
 # <a name="managing-application-resources-net"></a>管理應用程式資源 (.NET)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,5 +41,4 @@ ms.locfileid: "49287218"
 ## <a name="working-with-resources"></a>使用資源  
  在 managed 程式碼專案中，開啟 專案屬性 視窗 (以滑鼠右鍵按一下專案節點中的 **方案總管 中** ，然後選取 **屬性**, ，或類型 **專案屬性** 中 **快速啟動**  視窗中，或輸入 ALT + ENTER 在 **方案總管 中** 視窗)。 選取 **資源**  索引標籤。您可以在專案尚未包含 .resx 檔案的情況下加入 .resx 檔案、加入和刪除不同種類的資源，以及修改現有的資源。  
   
- 若要了解如何在 C++ 專案中使用資源，請參閱[如何：建立資源](http://msdn.microsoft.com/library/aad44914-9145-45a3-a7d8-9de89b366716)。
-
+ 若要了解如何使用 c + + 專案中的資源，請參閱[How to:建立資源](http://msdn.microsoft.com/library/aad44914-9145-45a3-a7d8-9de89b366716)

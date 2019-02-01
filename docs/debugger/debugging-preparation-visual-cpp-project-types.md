@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 912b4ba2-7719-43d5-b087-db33e3f9329a
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fd76689d52bce7f77f61d7998eec683abec30555
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 223a04eada43d9ca69bf5f2d6b5a36ce2d7a5933
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53968150"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54979162"
 ---
 # <a name="debugging-preparation-visual-c-project-types"></a>偵錯準備：Visual C++ 專案類型
 本節說明如何對 [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] 專案範本所建立的基本專案類型進行偵錯。  

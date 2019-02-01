@@ -13,16 +13,16 @@ helpviewer_keywords:
 ms.assetid: 3b531120-1325-4734-90c6-6e6113bd12ac
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: ecedfce45ab30d70138511ab0c87206bb35a2148
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 573019483f1c7c616f8bdf61286c46f76458354f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53919465"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55031276"
 ---
 # <a name="troubleshoot-service-references"></a>針對服務參考進行疑難排解
 

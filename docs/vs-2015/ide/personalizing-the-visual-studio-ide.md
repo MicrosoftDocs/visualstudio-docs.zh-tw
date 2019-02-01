@@ -1,24 +1,20 @@
 ---
 title: 將 IDE 個人化 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: c2fec4ce-3885-4c4c-ace2-14c197e11079
 caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: e38c7c578fd23e1f141721868a111e796afc9365
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: dbdeb2188580c9be67cbca992a8513c509d5514e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53916768"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54778441"
 ---
 # <a name="personalizing-the-visual-studio-ide"></a>將 Visual Studio IDE 個人化
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

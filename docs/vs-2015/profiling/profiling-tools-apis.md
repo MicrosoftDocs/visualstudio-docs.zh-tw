@@ -1,25 +1,20 @@
 ---
 title: 分析工具 API | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: bd9ca972-e5bf-45a6-9a5d-ac30a4d9ee02
 caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 10b97169440814366141670768561ce314498191
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: cabd90c249f4ea725987586874544de5772887ba
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51769239"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54801153"
 ---
 # <a name="profiling-tools-apis"></a>程式碼剖析工具 API
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,8 +34,5 @@ ms.locfileid: "51769239"
 ## <a name="related-sections"></a>相關章節  
  [控制資料收集](../profiling/controlling-data-collection.md)  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [效能總管](../profiling/performance-explorer.md)
-
-
-
