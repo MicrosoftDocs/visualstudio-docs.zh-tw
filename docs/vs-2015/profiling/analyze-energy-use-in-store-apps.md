@@ -1,14 +1,9 @@
 ---
 title: 分析市集應用程式中的能源利用 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -18,13 +13,13 @@ ms.assetid: 96d06843-b97e-45a8-8126-07478a40bfc4
 caps.latest.revision: 39
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 102302a1c14f379745007135593cc039aa9f8836
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: b61f367384c8ff11de72f16586a98a5d54f0ee06
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51742005"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54790349"
 ---
 # <a name="analyze-energy-use-in-store-apps"></a>分析市集應用程式中的能源利用
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,7 +60,7 @@ Visual Studio [ **能源消耗** ] 分析工具可協助您分析 Windows 市集
  當方法執行時，使用者標記就會與訊息一起加入至分析資料中。  
   
 > [!NOTE]
-> - Windows.Foundation.Diagnostics LoggingChannel 會實作[Windows.Foundation.IClosable](http://msdn.microsoft.com/library/windows/apps/windows.foundation.iclosable.aspx)介面 (預計為[System.IDisposable](http://msdn.microsoft.com/library/System.IDisposable.aspx) C# 和 VB 中)。若要避免作業系統資源流失，請呼叫[LoggingChannel.Close](http://msdn.microsoft.com/library/windows/apps/windows.foundation.diagnostics.loggingchannel.close.aspx)（) (C# 和 VB 中 Windows.Foundation.Diagnostics.LoggingChannel.Dispose()) 是在完成記錄通道時。  
+> - Windows.Foundation.Diagnostics LoggingChannel 會實作 [Windows.Foundation.IClosable](http://msdn.microsoft.com/library/windows/apps/windows.foundation.iclosable.aspx) 介面 (等同於 C# 和 VB 中的 [System.IDisposable](http://msdn.microsoft.com/library/System.IDisposable.aspx))。為了避免作業系統資源流失，請在記錄頻道結束時呼叫 [LoggingChannel.Close](http://msdn.microsoft.com/library/windows/apps/windows.foundation.diagnostics.loggingchannel.close.aspx) (等同於 C# 和 VB 中的 Windows.Foundation.Diagnostics.LoggingChannel.Dispose)。  
 >   -   每個開啟的記錄通道都必須具有唯一名稱。 嘗試使用與尚未處置的通道相同的名稱建立新記錄通道，將會造成例外狀況。  
   
  如需相關範例，請參閱 [LoggingSession 範例](http://code.msdn.microsoft.com/windowsapps/LoggingSession-Sample-ccd52336) 這個 Windows SDK 範例。  
@@ -153,11 +148,8 @@ if (performance && performance.mark) {
   
 ##  <a name="BKMK_Other_resources"></a> 其他資源  
   
--   Windows 開發人員中心有關 **C#/VB/C++ 和 XAML** 和 [JavaScript 和 HTML](http://msdn.microsoft.com/en-us/0ee0b706-8432-4d49-9801-306ed90764e1) 的 [連線狀態和成本管理](http://msdn.microsoft.com/en-us/372afa6a-1c7c-4657-967d-03a77cd8e933) 章節中，描述了提供網路連線資訊的 Windows API，這些資訊可讓您的應用程式用來減少網路流量的成本。  
+-   Windows 開發人員中心有關 **C#/VB/C++ 和 XAML** 和 [JavaScript 和 HTML](http://msdn.microsoft.com/0ee0b706-8432-4d49-9801-306ed90764e1) 的 [連線狀態和成本管理](http://msdn.microsoft.com/372afa6a-1c7c-4657-967d-03a77cd8e933) 章節中，描述了提供網路連線資訊的 Windows API，這些資訊可讓您的應用程式用來減少網路流量的成本。  
   
      Windows 市集應用程式適用的 Visual Studio 模擬器可讓您模擬網路資訊 API 的資料連接屬性。 請參閱 [Run Windows Store apps in the simulator](../debugger/run-windows-store-apps-in-the-simulator.md)  
   
 -   [JavaScript 函式計時]  和 [CPU 使用量]  工具可以協助您降低因為沒有效率的函式所造成的 CPU 負載。 請參閱[分析 CPU 使用量](../profiling/analyze-cpu-usage-in-a-windows-universal-app.md)。
-
-
-

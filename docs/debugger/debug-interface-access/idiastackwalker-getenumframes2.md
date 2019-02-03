@@ -1,5 +1,5 @@
 ---
-title: IDiaStackWalker::getEnumFrames2 |Microsoft Docs
+title: IDiaStackWalker::getEnumFrames2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 73196d3f-112c-4b3a-997b-7c6b815d4afc
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a6391e90a10477d07e5f35e8f5607bee3f412031
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5fb7fff92007160abdba64970d652ee73042661b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53935927"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54938129"
 ---
 # <a name="idiastackwalkergetenumframes2"></a>IDiaStackWalker::getEnumFrames2
 擷取特定平台類型的堆疊框架的列舉值。  

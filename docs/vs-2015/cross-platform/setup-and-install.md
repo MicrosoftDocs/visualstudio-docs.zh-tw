@@ -1,21 +1,17 @@
 ---
 title: 設定和安裝 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 2cfcad00-352c-4161-814c-f5ae32d8ada8
 caps.latest.revision: 19
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: f3a72c197963332ad433f88e6cb7fffde5a9a41b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.openlocfilehash: 26733c576a8bfd260368697ba0791a665afa46ff
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51730417"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54781704"
 ---
 # <a name="setup-and-install"></a>設定和安裝
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,7 +59,7 @@ ms.locfileid: "51730417"
 > [!TIP]
 >  這些指示適用於 Visual Studio 2015。 若要使用 Xamarin 搭配 Visual Studio 2013 (Update 2 是必要項)，請依照[直接安裝 Xamarin (英文)](https://developer.xamarin.com/guides/cross-platform/getting_started/requirements/#install) (xamarin.com) 的指示執行。  
   
-1. [下載並啟動任何 Visual Studio 2015 版本的安裝程式](https://www.visualstudio.com/en-us/downloads/download-visual-studio-vs.aspx) (Community、Professional 或 Enterprise)。 Visual Studio 2015 Community 是免費版本，而 Professional 和 Enterprise 版則可試用 30 天，之後您必須購買授權。  
+1. [下載並啟動任何 Visual Studio 2015 版本的安裝程式](https://www.visualstudio.com/downloads/download-visual-studio-vs.aspx) (Community、Professional 或 Enterprise)。 Visual Studio 2015 Community 是免費版本，而 Professional 和 Enterprise 版則可試用 30 天，之後您必須購買授權。  
   
    1.  如果您已經安裝 Visual Studio，請開啟 [控制台] > [程式和功能]、選擇 [Visual Studio 2015] 項目，然後按一下 [變更]。 當安裝程式開啟時，按一下 [修改]，直接跳到以下的步驟 3。  
   
@@ -77,7 +73,7 @@ ms.locfileid: "51730417"
   
         ![在 [跨平台行動開發] 下選取 Xamarin 選項](../cross-platform/media/cross-plat-xamarin-setup-2.png "跨平台 Xamarin 設定 2")  
   
-   2.  針對 Windows 8+：[跨平台行動開發] > [Android 版 Microsoft Visual Studio 模擬器]。 注意：如果您要使用 Windows 7 或舊版電腦，或在 Mac 上執行 Windows，請務必「取消核取」這個選項。 請參閱步驟 5 之後的＜Windows 電腦上的模擬器相關注意事項＞。 如果您只想在 Android 實體裝置上進行偵錯，也可以讓此選項保留未核取狀態。  
+   2.  針對 Windows：**跨平台行動開發 > Microsoft Visual Studio Emulator for Android**。 注意：如果您要使用 Windows 7 或舊版電腦，或在 Mac 上執行 Windows，請務必「取消核取」這個選項。 請參閱步驟 5 之後的＜Windows 電腦上的模擬器相關注意事項＞。 如果您只想在 Android 實體裝置上進行偵錯，也可以讓此選項保留未核取狀態。  
   
    3.  (選擇性) 如果您打算以 Windows 裝置為目標，也要核取 [Windows 及 Web 程式開發] > [通用 Windows 應用程式開發工具] 及 (或) [Windows 8.1 及 Windows Phone 8.0/8.1 工具]。 其中包括安裝模擬器映像的選項，需要較長的時間下載；您可以稍後隨時返回 Visual Studio 安裝程式以加入這些選項。  
   
@@ -94,11 +90,11 @@ ms.locfileid: "51730417"
       
 6. 針對 Windows 7 (含) 之前版本，或是在 Mac 上執行 Windows，如果您沒有實體裝置，請使用 [Android SDK 模擬器 (英文)](https://developer.xamarin.com/guides/android/deployment,_testing,_and_metrics/debug-on-emulator/android-sdk-emulator/)。 請參閱下列注意事項。  
   
-   **Windows 電腦上的模擬器相關注意事項：** 由於 CPU 一次只支援一種虛擬化技術，因此最好在開發電腦上只使用一種技術。 虛擬化技術主要有三種：Hyper-V (供 Android 版 Visual Studio 模擬器和 Windows Phone 模擬器使用)、Virtual Box (供 Genymotion 使用) 和 Intel HAXM (供 Android SDK 模擬器使用)。 由於 Hyper-V 和 Virtual Box 之間有各種問題，最好是在任何指定的電腦上只使用一種模擬器類型，因此上述建議在 Windows 8 (含) 以上版本的電腦上使用 Hyper-V，但在 Windows 7 (含) 以前版本上以及在 Mac 上執行 Windows 時，則使用 Intel HAXM 模擬器。  
+   **請注意在 Windows 上的模擬器相關電腦：** 由於 Cpu 一次支援只有一個虛擬化技術，因此最好在開發電腦上有一個使用中。 虛擬化技術主要有三種：Hyper-V (供 Android 版 Visual Studio 模擬器和 Windows Phone 模擬器使用)、Virtual Box (供 Genymotion 使用) 和 Intel HAXM (供 Android SDK 模擬器使用)。 由於 Hyper-V 和 Virtual Box 之間有各種問題，最好是在任何指定的電腦上只使用一種模擬器類型，因此上述建議在 Windows 8 (含) 以上版本的電腦上使用 Hyper-V，但在 Windows 7 (含) 以前版本上以及在 Mac 上執行 Windows 時，則使用 Intel HAXM 模擬器。  
   
 ##  <a name="mac"></a> Mac 設定 (Apple ID、Xcode 和 Xamarin)  
   
-1.  建立免費的 Apple ID，在[ https://appleid.apple.com ](https://appleid.apple.com/)如果您還沒有。 安裝及登入 Xcode 時需要這個 ID。  
+1.  如果您還沒有 Apple 識別碼，請在 [https://appleid.apple.com](https://appleid.apple.com/) 建立免費的 Apple 識別碼。 安裝及登入 Xcode 時需要這個 ID。  
   
 2.  從 [https://developer.apple.com/xcode/](https://developer.apple.com/xcode/) 下載並安裝 Xcode，然後遵循[將您的帳戶新增至 XCode](https://developer.apple.com/library/content/documentation/IDEs/Conceptual/AppStoreDistributionTutorial/AddingYourAccounttoXcode/AddingYourAccounttoXcode.html#//apple_ref/doc/uid/TP40013839-CH40-SW1) (apple.com) 中所述，新增您的 Apple 識別碼。  
   
@@ -107,4 +103,3 @@ ms.locfileid: "51730417"
 4.  當您在 Windows 和 Mac 電腦上完成安裝 Xamarin 之後，請依照[連線到 Mac (英文)](http://developer.xamarin.com/guides/ios/getting_started/installation/windows/xamarin-mac-agent/) (xamarin.com) 上的指示執行，如此就能在 Windows 電腦上透過 Visual Studio 使用 iOS 和 Mac。  
   
      請注意，這兩部電腦必須位於相同的區域網路中。
-

@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_liveRangeStartAddressOffset |Microsoft Docs
+title: IDiaSymbol::get_liveRangeStartAddressOffset | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: f5b28914-0a14-4b22-8259-59d7f97ee610
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 95c24788894c784cbe1d4b60dac3dbccf0350a85
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a3a7bf8786f2ca066248ada3f1a0473b85681315
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53851309"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54986991"
 ---
 # <a name="idiasymbolgetliverangestartaddressoffset"></a>IDiaSymbol::get_liveRangeStartAddressOffset
 傳回本機符號有效範圍的起始位址的位移的部分。  

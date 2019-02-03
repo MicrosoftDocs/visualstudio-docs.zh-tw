@@ -1,14 +1,9 @@
 ---
 title: 使用雙向語言建立應用程式 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - Hebrew character display, creating applications
 - bi-directional language support, about bi-directional language support
@@ -17,13 +12,13 @@ ms.assetid: b56f9795-ed8d-4452-9d49-8ca0b0145d86
 caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 32acd2a58c2482de6fdd7ed10c99a023d41a8cb4
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 340dc798cdff3276df78b6cbf13065f7e769cb23
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49248491"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54763449"
 ---
 # <a name="creating-applications-in-bi-directional-languages"></a>使用雙向語言建立應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +43,7 @@ ms.locfileid: "49248491"
   
 -   **物件名稱**：您可以使用雙向語言，將名稱指派給方案、專案、檔案、資料夾等等。 在程式碼中，您可以針對變數、類別、物件、屬性、中繼資料以及其他項目的名稱使用雙向語言。  
   
--   **檔案編碼方式**：您可以使用特定語言或 Unicode 編碼方式，儲存及開啟檔案。 如需詳細資訊，請參閱[如何：以編碼方式儲存及開啟檔案](../ide/how-to-save-and-open-files-with-encoding.md)。  
+-   **檔案編碼方式**：您可以使用特定語言或 Unicode 編碼方式，儲存及開啟檔案。 如需詳細資訊，請參閱[＜How to：以編碼來儲存及開啟檔案](../ide/how-to-save-and-open-files-with-encoding.md)。  
   
 ## <a name="features-with-limited-or-no-support"></a>有限支援或不支援的功能  
  Visual Studio 並非全數支援雙向語言應用程式通用的其他功能；在某些情況下，甚至完全不支援。 它們包括：  
@@ -84,16 +79,15 @@ ms.locfileid: "49248491"
 -   程式碼和常值文字。 在程式碼編輯器 (亦即文字編輯器) 中，您可以使用阿拉伯文或希伯來文命名類別、函式、變數、屬性、字串常值、屬性等等。 不過，編輯器不支援由右至左的讀取順序；文字一律從左邊界開始。  
   
     > [!TIP]
-    >  建議您將字串常值放在資源檔中，而不要在您的程式中直接撰寫 (硬式編碼)。 如需詳細資訊，請參閱[逐步解說：將 Windows Forms 當地語系化](http://msdn.microsoft.com/en-us/9a96220d-a19b-4de0-9f48-01e5d82679e5)。  
+    >  建議您將字串常值放在資源檔中，而不要在您的程式中直接撰寫 (硬式編碼)。 如需詳細資訊，請參閱[逐步解說：將 Windows Form 當地語系化](http://msdn.microsoft.com/9a96220d-a19b-4de0-9f48-01e5d82679e5)。  
   
     > [!NOTE]
     >  您必須使用一致的方式來參考以這些語言物名的物件。 例如，若您使用 Kashida 來命名阿拉伯文的變數，則在參考該變數時，您必須一律使用 Kashida，否則會產生錯誤。  
   
 -   程式碼註解。 您可以使用阿拉伯文或希伯來文建立註解。 您也可以在註解產生器工具中使用這些語言。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [對 Windows Forms 應用程式的雙向支援](http://msdn.microsoft.com/library/7b622fa4-f390-4e4d-b624-83a1917cccf2)   
  [ASP.NET Web 應用程式的雙向支援](http://msdn.microsoft.com/library/5576f9b1-9b86-41ef-8354-092d366bcd03)   
  [全球化應用程式](../ide/globalizing-applications.md)   
  [當地語系化應用程式](../ide/localizing-applications.md)
-

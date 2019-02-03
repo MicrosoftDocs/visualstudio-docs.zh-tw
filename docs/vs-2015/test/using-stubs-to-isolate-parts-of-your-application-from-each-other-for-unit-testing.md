@@ -1,29 +1,24 @@
 ---
 title: 使用虛設常式隔離應用程式的各個組件，方便進行單元測試 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 ms.assetid: 73519dd9-f3d5-49b6-a634-38881b459ea4
 caps.latest.revision: 19
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: cc12f77a8f1c3443606537dd6f818e9ee6625327
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: e3b9b104fe6f246592f4716ad18ab4a9e6f122fc
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49853177"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54803241"
 ---
 # <a name="using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing"></a>使用虛設常式隔離應用程式的各個組件，方便進行單元測試
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-虛設常式類型 * 是 Microsoft Fakes framework 提供可讓您輕鬆地隔離測試中其他元件，它會呼叫元件的兩個技術的其中一個。 虛設常式是在測試期間取代另一個元件的一小段程式碼。 使用虛設常式的優點是它會傳回一致的結果，讓測試更容易撰寫。 即使其他元件還無法運作，您仍然可以執行測試。  
+「虛設常式類型」是 Microsoft Fakes 架構提供的兩項技術之一，可讓您輕鬆地隔離測試中的元件與它所呼叫的其他元件。 虛設常式是在測試期間取代另一個元件的一小段程式碼。 使用虛設常式的優點是它會傳回一致的結果，讓測試更容易撰寫。 即使其他元件還無法運作，您仍然可以執行測試。  
   
  如需 Fakes 的概觀和快速入門指南，請參閱[使用 Microsoft Fakes 在測試期間隔離程式碼](../test/isolating-code-under-test-with-microsoft-fakes.md)。  
   
@@ -259,7 +254,7 @@ End Class
  另外也會為屬性、事件及泛型方法的 getter 及 setter 產生虛設常式。  
   
 ###  <a name="mocks"></a> 驗證參數值  
- 您可以驗證當您的元件呼叫另一個元件時，是否會傳遞正確的值。 您可以在虛設常式中加入判斷提示，也可以將值儲存在測試主體中並進行驗證。 例如:   
+ 您可以驗證當您的元件呼叫另一個元件時，是否會傳遞正確的值。 您可以在虛設常式中加入判斷提示，也可以將值儲存在測試主體中並進行驗證。 例如：  
   
 ```csharp  
 [TestClass]  
@@ -507,10 +502,7 @@ StubBehaviors.Current =
 ## <a name="external-resources"></a>外部資源  
   
 ### <a name="guidance"></a>指引  
- [使用 Visual Studio 2012 測試持續傳遞 - 第 2 章：單元測試：測試內部](http://go.microsoft.com/fwlink/?LinkID=255188)  
+ [測試 for Continuous Delivery with Visual Studio 2012 – 第 2 章：單元測試測試內部](http://go.microsoft.com/fwlink/?LinkID=255188)  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [使用 Microsoft Fakes 在測試期間隔離程式碼](../test/isolating-code-under-test-with-microsoft-fakes.md)
-
-
-

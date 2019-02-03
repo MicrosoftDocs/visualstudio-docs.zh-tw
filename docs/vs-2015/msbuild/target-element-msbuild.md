@@ -1,14 +1,9 @@
 ---
 title: Target 項目 (MSBuild) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#Target
 dev_langs:
@@ -23,13 +18,13 @@ ms.assetid: 350f6fc2-86b3-45f2-a31e-ece0e6bd4dca
 caps.latest.revision: 38
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: bc4224930782e24b20d3e9720c517304b0153f2d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 6e763c0a39e3785e91733105f8fc18eae324e958
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49173403"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54758286"
 ---
 # <a name="target-element-msbuild"></a>目標項目 (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,12 +60,12 @@ ms.locfileid: "49173403"
   
 ### <a name="attributes"></a>屬性  
   
-|屬性|描述|  
+|屬性|說明|  
 |---------------|-----------------|  
 |`Name`|必要屬性。<br /><br /> 目標的名稱。|  
 |`Condition`|選擇性屬性。<br /><br /> 要評估的條件。 如果條件評估為 `false`，目標將不會執行目標或 `DependsOnTargets` 屬性中所設定之任何目標的主體。 如需條件的詳細資訊，請參閱[條件](../msbuild/msbuild-conditions.md)。|  
-|`Inputs`|選擇性屬性。<br /><br /> 構成此目標輸入的檔案。 若有多個檔案，則會以分號分隔。 檔案的時間戳記將會與 `Outputs` 中的檔案時間戳記相比較，以判斷 `Target` 是否為最新狀態。 如需詳細資訊，請參閱[累加建置](../msbuild/incremental-builds.md)、[如何：累加建置](../msbuild/how-to-build-incrementally.md)及[轉換](../msbuild/msbuild-transforms.md)。|  
-|`Outputs`|選擇性屬性。<br /><br /> 構成此目標輸出的檔案。 若有多個檔案，則會以分號分隔。 檔案的時間戳記將會與 `Inputs` 中的檔案時間戳記相比較，以判斷 `Target` 是否為最新狀態。 如需詳細資訊，請參閱[累加建置](../msbuild/incremental-builds.md)、[如何：累加建置](../msbuild/how-to-build-incrementally.md)及[轉換](../msbuild/msbuild-transforms.md)。|  
+|`Inputs`|選擇性屬性。<br /><br /> 構成此目標輸入的檔案。 若有多個檔案，則會以分號分隔。 檔案的時間戳記將會與 `Outputs` 中的檔案時間戳記相比較，以判斷 `Target` 是否為最新狀態。 如需詳細資訊，請參閱[累加建置](../msbuild/incremental-builds.md)、[如何：以累加方式建置](../msbuild/how-to-build-incrementally.md)和[轉換](../msbuild/msbuild-transforms.md)。|  
+|`Outputs`|選擇性屬性。<br /><br /> 構成此目標輸出的檔案。 若有多個檔案，則會以分號分隔。 檔案的時間戳記將會與 `Inputs` 中的檔案時間戳記相比較，以判斷 `Target` 是否為最新狀態。 如需詳細資訊，請參閱[累加建置](../msbuild/incremental-builds.md)、[如何：以累加方式建置](../msbuild/how-to-build-incrementally.md)和[轉換](../msbuild/msbuild-transforms.md)。|  
 |`Returns`|選擇性屬性。<br /><br /> 將可供叫用此目標的工作 (例如 MSBuild 工作) 使用的項目組。 若有多個目標，則會以分號分隔。 如果檔案中的目標沒有 `Returns` 屬性，即會基於此目的改用 Outputs 屬性。|  
 |`KeepDuplicateOutputs`|選擇性的 Boolean 屬性。<br /><br /> 如果是 `true`，即會記錄多個對目標 Returns 中相同項目的參考。  根據預設，此屬性為 `false`。|  
 |`BeforeTargets`|選擇性屬性。<br /><br /> 以分號分隔的目標名稱清單。  指定時，表示此目標應該在指定的一或多個目標之前執行。 這讓專案作者能夠擴充現有的目標組，而不需直接修改它們。 如需詳細資訊，請參閱[目標建置順序](../msbuild/target-build-order.md)。|  
@@ -80,7 +75,7 @@ ms.locfileid: "49173403"
   
 ### <a name="child-elements"></a>子元素  
   
-|項目|描述|  
+|元素|說明|  
 |-------------|-----------------|  
 |[Task](../msbuild/task-element-msbuild.md)|建立並執行 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 工作的執行個體。 目標中可能有零或多個工作。|  
 |[PropertyGroup](../msbuild/propertygroup-element-msbuild.md)|包含一組使用者定義的 `Property` 項目。 從 .NET Framework 3.5 開始，`Target` 項目可以包含 `PropertyGroup` 項目。|  
@@ -89,7 +84,7 @@ ms.locfileid: "49173403"
   
 ### <a name="parent-elements"></a>父項目  
   
-|項目|描述|  
+|元素|說明|  
 |-------------|-----------------|  
 |[專案](../msbuild/project-element-msbuild.md)|[!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 專案檔案的必要根項目。|  
   
@@ -125,9 +120,6 @@ ms.locfileid: "49173403"
 </Target>  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [目標](../msbuild/msbuild-targets.md)   
  [專案檔案結構描述參考](../msbuild/msbuild-project-file-schema-reference.md)
-
-
-

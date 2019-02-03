@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_isAcceleratorGroupSharedLocal |Microsoft Docs
+title: IDiaSymbol::get_isAcceleratorGroupSharedLocal | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -7,15 +7,15 @@ dev_langs:
 ms.assetid: 17a20542-5b45-478f-bb80-0d56031aadb5
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a6bf469433a4356c86aba36478f8a07e3437c9f5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 10219746f46dfcd9b628d84fdd7c75c1ff93bfb3
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53828286"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54950724"
 ---
 # <a name="idiasymbolgetisacceleratorgroupsharedlocal"></a>IDiaSymbol::get_isAcceleratorGroupSharedLocal
 擷取表示符號是否對應至共用本機群組的變數在編譯 c + + AMP 加速器的程式碼的旗標。  
