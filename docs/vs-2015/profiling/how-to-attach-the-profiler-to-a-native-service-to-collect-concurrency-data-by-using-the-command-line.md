@@ -1,27 +1,22 @@
 ---
-title: 如何：使用命令列將程式碼剖析工具附加至原生服務以收集並行資料 | Microsoft Docs
-ms.custom: ''
+title: HOW TO：使用命令列將分析工具附加至原生服務以收集並行資料 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 283a1ee1-b43e-4daf-95ae-1311925a42a8
 caps.latest.revision: 27
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 6add1c0837e9a1d1308f61112540d00f42617a92
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 77aa3500b867b63dd9049307c2e3e5986a1cba61
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51731435"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54780853"
 ---
-# <a name="how-to-attach-the-profiler-to-a-native-service-to-collect-concurrency-data-by-using-the-command-line"></a>如何：使用命令列將程式碼剖析工具附加至原生服務以收集並行資料
+# <a name="how-to-attach-the-profiler-to-a-native-service-to-collect-concurrency-data-by-using-the-command-line"></a>HOW TO：使用命令列將分析工具附加至原生服務以收集並行資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 本主題描述如何使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 程式碼剖析工具命令列工具將程式碼剖析工具附加至原生 (C/C++) 服務，並使用取樣方法收集處理序和執行緒並行資料。  
@@ -52,7 +47,7 @@ ms.locfileid: "51731435"
    > [!NOTE]
    >  大多數服務都需要 **/user** 和 **/crosssession** 選項。  
 
-   |                               選項                               |                                                                     描述                                                                      |
+   |                               選項                               |                                                                     說明                                                                      |
    |--------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
    | [/user](../profiling/user-vsperfcmd.md) **:**[`Domain\`]`UserName` |                           指定要授與程式碼剖析工具存取權之帳戶的選擇性網域和使用者名稱。                           |
    |           [/crosssession](../profiling/crosssession.md)            |                                               在其他登入工作階段啟用處理序程式碼剖析。                                                |
@@ -74,7 +69,7 @@ ms.locfileid: "51731435"
 
 -   下表中成對的選項會開始和停止資料收集。 請在個別的命令列上指定各個選項。 您可以多次開始和停止資料收集。  
 
-    |選項|描述|  
+    |選項|說明|  
     |------------|-----------------|  
     |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|開始 (**/globalon**) 或停止 (**/globaloff**) 所有處理序的資料收集。|  
     |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|開始 (**/processon**) 或停止 (**/processoff**) 處理序 ID (`PID`) 指定的處理序資料收集。|  
@@ -92,6 +87,3 @@ ms.locfileid: "51731435"
 2.  在命令提示字元中輸入下列命令，以關閉程式碼剖析工具︰  
 
      **VSPerfCmd**  [/shutdown](../profiling/shutdown.md)
-
-
-

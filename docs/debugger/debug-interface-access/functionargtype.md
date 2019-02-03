@@ -1,5 +1,5 @@
 ---
-title: FunctionArgType |Microsoft Docs
+title: FunctionArgType | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 9f072fd3-0b99-405c-af99-fd44cd56fd73
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 355b2d1c53963eb1d3d54759d5ae2b80aa0a17c4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 33327cf38ba241504757a162d611b6a7948ffdde
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53958536"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55031142"
 ---
 # <a name="functionargtype"></a>FunctionArgType
 函式的每個參數由`SymTagFunctionArgType`符號。  

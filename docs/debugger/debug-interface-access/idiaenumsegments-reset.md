@@ -1,5 +1,5 @@
 ---
-title: 'Idiaenumsegments:: Reset |Microsoft Docs'
+title: IDiaEnumSegments::Reset | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 5eabca3c-6023-4474-a545-a3bec7521e4d
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f26f4e1e79e6197e6077dfe797f5ef02f17fddb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5d9194483e836ab1280fa7ba473987e926828687
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53943193"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55070847"
 ---
 # <a name="idiaenumsegmentsreset"></a>IDiaEnumSegments::Reset
 將列舉型別序列重設到開頭。  

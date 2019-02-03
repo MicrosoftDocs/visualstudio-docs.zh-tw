@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_symbolsfilename |Microsoft Docs'
+title: IDiaSymbol::get_symbolsFileName | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: c1aa39ee-d645-431e-bf5f-0640c0998934
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ce511aa7766f55151bfce489cf2acba24f85ccdd
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fafae8bb5c2e9ab275601af0d7ed1dea22db4940
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53907199"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54970067"
 ---
 # <a name="idiasymbolgetsymbolsfilename"></a>IDiaSymbol::get_symbolsFileName
 擷取已載入符號來源檔案的名稱。  
