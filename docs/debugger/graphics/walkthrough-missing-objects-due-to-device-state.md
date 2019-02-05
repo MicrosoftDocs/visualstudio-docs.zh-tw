@@ -96,7 +96,7 @@ ms.locfileid: "55019511"
   
 2. 在 [圖形物件表]  中找出 [D3D10 裝置] 物件，然後開啟 [D3D10 裝置]  物件。 新的 [d3d10 裝置]  索引標籤隨即在 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]中開啟。 若要讓這項工作更容易進行，您可以依 [類型]  排序 [圖形物件表] ：  
   
-    ![圖形物件表] 和 [相關的裝置狀態](media/vsg_walkthru1_objtable.png "vsg_walkthru1_objtable")  
+    ![圖形物件表 和 相關的裝置狀態](media/vsg_walkthru1_objtable.png "vsg_walkthru1_objtable")  
   
 3. 檢查 [d3d10 裝置]  索引標籤中顯示的裝置狀態，找出潛在的問題。 由於幾何沒有出現的原因是其基本圖形未通過深度測試，因此您可以專注於影響深度測試的裝置狀態，例如深度樣板。 在此情節中，[深度樣板描述]  (在 [輸出合併狀態] 下) 包含 **深度函式** 成員 `D3D10_COMPARISON_GREATER`不常見的值：  
   
