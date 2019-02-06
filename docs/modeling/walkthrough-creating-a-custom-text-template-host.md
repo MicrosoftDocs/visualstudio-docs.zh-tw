@@ -14,16 +14,16 @@ ms.prod: visual-studio-dev15
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: eb7059f5a0ecaf07858e6a24b62296383494725c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 9f59f1038226d34b15310ac09b6b34706c36c342
+ms.sourcegitcommit: 0342f99120fbd603b8f06f7e9166c39f2896827a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54979552"
+ms.lasthandoff: 02/05/2019
+ms.locfileid: "55742467"
 ---
 # <a name="walkthrough-create-a-custom-text-template-host"></a>逐步解說：建立自訂文字範本主機
 
-A*文字範本*<em>主機</em>提供的環境，可讓*文字範本轉換引擎*執行。 這個主應用程式負責管理引擎與檔案系統之間的互動。 引擎或*指示詞處理器*，需要檔案或組件可以從主應用程式要求資源。 主機便會搜尋目錄和全域組件快取來找出要求的資源。 如需詳細資訊，請參閱 <<c0> [ 文字範本轉換流程](../modeling/the-text-template-transformation-process.md)。
+A*文字範本主機*提供的環境，可讓*文字範本轉換引擎*執行。 這個主應用程式負責管理引擎與檔案系統之間的互動。 引擎或*指示詞處理器*，需要檔案或組件可以從主應用程式要求資源。 主機便會搜尋目錄和全域組件快取來找出要求的資源。 如需詳細資訊，請參閱 <<c0> [ 文字範本轉換流程](../modeling/the-text-template-transformation-process.md)。
 
 您可以撰寫自訂主應用程式如果您想要使用*文字範本轉換*從 Visual Studio 外部，或如果您想要將該功能整合到自訂工具的功能。 若要建立自訂主機，您必須建立一個繼承自 <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost> 的類別。 如需個別方法的說明文件，請參閱 <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>。
 
