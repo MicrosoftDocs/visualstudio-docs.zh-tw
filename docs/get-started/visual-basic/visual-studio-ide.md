@@ -12,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 113a333c7a1ca100b6572f730ec9291ffc20ff87
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 2b9777fc9bbe22e394c06152808d35b3f0a549d4
+ms.sourcegitcommit: 0f7411c1a47d996907a028e920b73b53c2098c9f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54939175"
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "55690524"
 ---
 # <a name="welcome-to-the-visual-studio-ide--visual-basic"></a>歡迎使用 Visual Studio IDE | Visual Basic
 
@@ -27,7 +27,7 @@ Visual Studio「整合式開發環境」是一個有創意的啟動控制板，�
 
 此圖顯示 Visual Studio，其中包含一個開啟的專案，以及您想要使用的數個重要工具視窗：
 
-- [方案總管][](../../ide/solutions-and-projects-in-visual-studio.md) (右上) 可讓您檢視、巡覽及管理您的程式碼檔案。 [方案總管] 透過將程式碼的檔案分組到[解決方案和專案](tutorial-projects-solutions.md)，以協助組織程式碼。
+- [[方案總管]](../../ide/solutions-and-projects-in-visual-studio.md) (右上) 可讓您檢視、巡覽及管理您的程式碼檔案。 [方案總管] 透過將程式碼的檔案分組到[解決方案和專案](tutorial-projects-solutions.md)，以協助組織程式碼。
 
 - [編輯器視窗](../../ide/writing-code-in-the-code-and-text-editor.md) (中間) 會顯示檔案內容，您大部分的時間可能都是花在這裡。 您在這裡編輯程式碼或設計使用者介面，例如有按鈕和文字方塊的視窗。
 
@@ -98,7 +98,7 @@ Visual Studio 的某些熱門功能可在您開發軟體時協助您提高生產
 
 ## <a name="install-the-visual-studio-ide"></a>安裝 Visual Studio IDE
 
-此概觀文章將引導您建立簡單的專案，並嘗試您可以運用 Visual Studio 來進行的一些操作，例如變更色彩佈景主題、使用 [IntelliSense](../../ide/using-intellisense.md) 作為程式碼撰寫輔助工具，以及偵錯應用程式來查看程式執行期間的變數值。 若要開始，請[下載 Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) 並將它安裝在您的系統上。
+此概觀文章將引導您建立簡單的專案，並嘗試您可以運用 Visual Studio 來進行的一些操作，例如變更色彩佈景主題、使用 [IntelliSense](../../ide/using-intellisense.md) 作為程式碼撰寫輔助工具，以及偵錯應用程式來查看程式執行期間的變數值。 若要開始，請[下載 Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) 並將它安裝在您的系統上。
 
 模組安裝程式可讓您選擇並安裝「工作負載」，這些通常是您慣用的程式設計語言或平台所需的幾組功能。 若要遵循[建立程式](#create-a-program)的步驟，請務必在安裝期間選取 **.NET Core 跨平台開發**工作負載。
 

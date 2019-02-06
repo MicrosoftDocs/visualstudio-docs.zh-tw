@@ -14,18 +14,18 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: e4fcd76cb535fdf7f043189720f291393e4ed9d3
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 7e2d5cf15b6afd1b6eed6d800a1b7ba67c1f87b8
+ms.sourcegitcommit: 9866740aec05d1a3a5dc3b4b6d2ceaeecbd3fc29
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54919066"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55424495"
 ---
 # <a name="tutorial-get-started-with-visual-basic-in-visual-studio"></a>教學課程：Visual Studio 中的 Visual Basic 使用者入門
 
 在 Visual Basic (VB) 的這個教學課程中，您將使用 Visual Studio 建立和執行一些不同的主控台應用程式，並在這樣做的同時探索 [Visual Studio 整合式開發環境 (IDE)](visual-studio-ide.md) 的一些功能。
 
-如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)頁面免費進行安裝。
+如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017)頁面免費進行安裝。
 
 ## <a name="create-a-project"></a>建立專案
 

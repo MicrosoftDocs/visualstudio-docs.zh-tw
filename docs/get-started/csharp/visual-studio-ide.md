@@ -12,12 +12,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 23148307f372ba094df86344031aaea4c081d826
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f1b1ccaaeb8f51e662c85b7894f9f752dba9c2a8
+ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54918377"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55484169"
 ---
 # <a name="welcome-to-the-visual-studio-ide--c"></a>歡迎使用 Visual Studio IDE | C#
 
@@ -98,7 +98,7 @@ Visual Studio 的某些熱門功能可在您開發軟體時協助您提高生產
 
 ## <a name="install-the-visual-studio-ide"></a>安裝 Visual Studio IDE
 
-此概觀文章將引導您建立簡單的專案，並嘗試您可以運用 Visual Studio 來進行的一些操作，例如使用 [IntelliSense](../../ide/using-intellisense.md) 作為程式碼撰寫輔助工具、對應用程式進行偵錯來查看程式執行期間的變數值，以及變更色彩佈景主題。 若要開始，請[下載 Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) 並將它安裝在您的系統上。
+此概觀文章將引導您建立簡單的專案，並嘗試您可以運用 Visual Studio 來進行的一些操作，例如使用 [IntelliSense](../../ide/using-intellisense.md) 作為程式碼撰寫輔助工具、對應用程式進行偵錯來查看程式執行期間的變數值，以及變更色彩佈景主題。 若要開始，請[下載 Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) 並將它安裝在您的系統上。
 
 模組安裝程式可讓您選擇並安裝「工作負載」，這些通常是您慣用的程式設計語言或平台所需的幾組功能。 若要遵循[建立程式](#create-a-program)的步驟，請務必在安裝期間選取 **.NET Core 跨平台開發**工作負載。
 
