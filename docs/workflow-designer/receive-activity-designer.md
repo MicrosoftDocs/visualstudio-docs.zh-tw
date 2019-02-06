@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f984a9f7207a8eec77468a3360e2caec5d9400d4
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c75b635cbdce7662c9e3a30237edb3e004ab7d0c
+ms.sourcegitcommit: 0342f99120fbd603b8f06f7e9166c39f2896827a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55036091"
+ms.lasthandoff: 02/05/2019
+ms.locfileid: "55742439"
 ---
 # <a name="receive-activity-designer"></a>Receive 活動設計工具
 
@@ -52,7 +52,7 @@ ms.locfileid: "55036091"
 | <xref:System.ServiceModel.Activities.Receive.KnownTypes%2A> | False | 指定這個 <xref:System.ServiceModel.Activities.Receive> 活動實作服務作業之已知型別的集合。 這個屬性應該搭配 <xref:System.ServiceModel.Activities.Receive.SerializerOption%2A> 屬性 (設定為 <xref:System.Runtime.Serialization.DataContractSerializer>) 使用。 如果使用 <xref:System.Xml.Serialization.XmlSerializer>，則會忽略此項。<br /><br /> 選取旁邊的省略符號按鈕**KnownTypes**欄位中顯示的屬性方格**型別集合編輯器**對話方塊中，您可以加入相關型別。 如需使用此方塊的詳細資訊，請參閱[型別集合編輯器對話方塊](../workflow-designer/type-collection-editor-dialog-box.md)主題。 |
 | <xref:System.ServiceModel.Activities.Receive.ProtectionLevel%2A> | False | 指定訊息的 <xref:System.Net.Security.ProtectionLevel>。<br /><br /> 1。<xref:System.Net.Security.ProtectionLevel>表示僅有驗證。<br />2。<xref:System.Net.Security.ProtectionLevel>表示簽署資料以協助確保傳輸之資料的完整性。<br />3。<xref:System.Net.Security.ProtectionLevel>表示加密並簽署資料以協助確保傳輸之資料的完整性與機密性。 |
 | <xref:System.ServiceModel.Activities.Receive.SerializerOption%2A> | False | 指定 <xref:System.ServiceModel.Activities.Receive> 活動實作服務作業之序列化程式的型別。 預設值是 <xref:System.Runtime.Serialization.DataContractSerializer>，這會使用提供的資料合約，將型別的執行個體序列化及還原序列化，成為 XML 資料流或文件。 如果 XML 需要更多控制，也可以使用 <xref:System.Xml.Serialization.XmlSerializer>。 |
-| <xref:System.ServiceModel.Activities.Receive.Action%2A> | False | 指定訊息的動作標頭。 如果明確設定，其值會預設為： https://tempuri.org/{service合約命名空間} / {服務合約名稱} / {作業名稱}。 |
+| <xref:System.ServiceModel.Activities.Receive.Action%2A> | False | 指定訊息的動作標頭。 如果明確設定，其值會預設為： `https://tempuri.org/{service contract namespace}/{service contract name}/{operation name}`。 |
 
 ## <a name="see-also"></a>另請參閱
 

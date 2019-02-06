@@ -13,18 +13,18 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 890bec08c29491bbd867c9c8380172cced71d2fe
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b00cf69a949dcd5ad73120c9ce1fccb2b7af9040
+ms.sourcegitcommit: 0f7411c1a47d996907a028e920b73b53c2098c9f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54985704"
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "55690364"
 ---
 # <a name="how-to-distribute-code-snippets"></a>HOW TO：散發程式碼片段
 
 您可以使用 [程式碼片段管理員]，將您的程式碼片段提供給您的朋友，並讓他們在自己的電腦上安裝程式碼片段。 不過，如果您有數個程式碼片段要散發，或想要更廣泛地散發，請在 Visual Studio 延伸模組中包含您的程式碼片段檔案。 Visual Studio 使用者可以接著安裝此延伸模組。
 
-若要建立 Visual Studio 擴充功能，您必須安裝 Visual Studio SDK。 請前往 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)，以尋找符合您 Visual Studio 安裝的 VSSDK 版本。
+若要建立 Visual Studio 擴充功能，您必須安裝 Visual Studio SDK。 請前往 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017)，以尋找符合您 Visual Studio 安裝的 VSSDK 版本。
 
 ## <a name="set-up-the-extension"></a>設定延伸模組
 
