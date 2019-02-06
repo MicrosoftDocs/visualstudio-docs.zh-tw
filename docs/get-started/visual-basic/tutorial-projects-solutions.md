@@ -12,19 +12,19 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: c55f0bf2d36d06cc47e39086236b41d4cc8340c9
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b9de49d9e5c7c1ebbe8fef41ff5efdb65c96d6e9
+ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54961607"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55483870"
 ---
 # <a name="learn-about-projects-and-solutions-using-visual-basic"></a>了解使用 Visual Basic 的專案與解決方案
 
 在這篇簡介文章中，我們將探討在 Visual Studio 中建立「解決方案」和「專案」的意義。 解決方案是用來組織一或多個相關程式碼專案的容器，例如類別庫專案和對應的測試專案。 我們會查看專案的屬性以及它可包含的一些檔案。 我們也會建立兩個專案之間的參考。
 
 > [!TIP]
-> 如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)頁面免費進行安裝。
+> 如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017)頁面免費進行安裝。
 
 我們將會從頭建構方案和專案，作為教育練習以了解專案的概念。 在 Visual Studio 的一般使用中，您可能在建立新專案時使用 Visual Studio 所提供的一些各種專案「範本」。
 

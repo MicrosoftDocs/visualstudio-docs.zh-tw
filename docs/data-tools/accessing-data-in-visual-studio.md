@@ -11,16 +11,16 @@ helpviewer_keywords:
 - ADO.NET, data access
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 9a13efa2335cd0721b71dd61e270e5331d78dede
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7bd87013245bd1c9a28ea093433687009f9c35e8
+ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53936382"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55484143"
 ---
 # <a name="access-data-in-visual-studio"></a>使用 Visual Studio 存取資料
 
@@ -28,7 +28,7 @@ ms.locfileid: "53936382"
 
 JavaScript、 Python、 PHP、 Ruby 或 c + + 中的應用程式，您連接到資料就像任何其他動作，取得程式庫，然後撰寫程式碼。 .NET 應用程式，Visual Studio 會提供您可用來瀏覽資料來源，請建立來儲存和管理記憶體中的資料和資料繫結至使用者介面的物件模型的工具。 Microsoft Azure 會提供 Sdk for.NET、 Java、 Node.js、 PHP、 Python、 Ruby 和行動應用程式和在 Visual Studio 中的工具連線至 Azure 儲存體。
 
-下列清單會顯示幾個可用的許多資料庫和儲存體系統，從 Visual Studio。 [Microsoft Azure](https://azure.microsoft.com/)供應項目是資料服務，其中包含所有的佈建和管理的基礎資料存放區。 **Azure 開發**中的工作負載[Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)可讓您能夠直接從 Visual Studio 的 Azure 資料存放區使用。
+下列清單會顯示幾個可用的許多資料庫和儲存體系統，從 Visual Studio。 [Microsoft Azure](https://azure.microsoft.com/)供應項目是資料服務，其中包含所有的佈建和管理的基礎資料存放區。 **Azure 開發**中的工作負載[Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017)可讓您能夠直接從 Visual Studio 的 Azure 資料存放區使用。
 
 ![Azure 開發工作負載](media/azure-development-workload.png)
 

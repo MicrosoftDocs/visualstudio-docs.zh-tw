@@ -14,18 +14,18 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: c3f9c4dca4877d608aaeb8cda1791217a02207de
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 63ef768b0279d1859972bd3a5b49242fe549cea7
+ms.sourcegitcommit: 9866740aec05d1a3a5dc3b4b6d2ceaeecbd3fc29
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55000675"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55424430"
 ---
 # <a name="tutorial-create-your-first-universal-windows-platform-application-in-visual-studio-with-xaml-and-c35"></a>教學課程：在 Visual Studio 中使用 XAML 和 C&#35; 來建立您的第一個通用 Windows 平台應用程式
 
 在這個 5-10 分鐘的 Visual Studio 整合式開發環境 (IDE) 簡介中，您將建立一個可在任何 Windows 10 裝置上執行的 "Hello World" 應用程式。 為了這樣做，您將使用「通用 Windows 平台」(UWP) 專案範本、Extensible Application Markup Language (XAML) 及 C# 程式設計語言。
 
-如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)頁面免費進行安裝。
+如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017)頁面免費進行安裝。
 
 ## <a name="create-a-project"></a>建立專案
 

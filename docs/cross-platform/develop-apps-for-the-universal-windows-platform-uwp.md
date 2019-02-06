@@ -10,12 +10,12 @@ ms.author: shoag
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: cf58ea2ada658f7a1548ed81c875b19d33f81a91
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 5fc9378b08db39d26ad491aa8cb213e89e6fa493
+ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54981689"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55483792"
 ---
 # <a name="develop-apps-for-the-universal-windows-platform-uwp"></a>開發適用於通用 Windows 平台 (UWP) 的應用程式
 通用 Windows 平台和單一 Windows 核心可讓您在任何 Windows 10 裝置上執行相同的應用程式 (包括手機和桌上型電腦)。 您可以使用 Visual Studio 和通用 Windows 應用程式開發工具，來建立這些通用 Windows 應用程式。
@@ -39,7 +39,7 @@ ms.locfileid: "54981689"
 
 -   [Windows 10](http://windows.microsoft.com/windows/downloads)。 Visual Studio 2017 只支援在 Windows 10 上開發 UWP。 如需詳細資料，請參閱 Visual Studio 的[平台目標](/visualstudio/productinfo/vs2017-compatibility-vs)和[系統需求](/visualstudio/productinfo/vs2017-system-requirements-vs)。
 
--   [Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)。 您也需要選用的通用 Windows 平台開發工作負載。
+-   [Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017)。 您也需要選用的通用 Windows 平台開發工作負載。
 
      ![UWP 工作負載](media/uwp_workload.png)
 

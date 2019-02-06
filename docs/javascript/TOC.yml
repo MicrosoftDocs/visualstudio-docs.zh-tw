@@ -7,6 +7,8 @@ items:
     href: javascript-in-vs-2017.md
 - name: 快速入門
   items:
+  - name: Visual Studio 整合式開發環境 (IDE) 初探
+    href: quickstart-ide-orientation-js.md
   - name: 建立 Node.js 專案
     href: /visualstudio/ide/quickstart-nodejs?toc=/visualstudio/javascript/toc.json
   - name: 建立 Vue.js 專案
@@ -43,9 +45,9 @@ items:
     href: configure-packages-with-package-json.md
   - name: JavaScript 和 TypeScript 的 Wiki 文件
     href: https://github.com/Microsoft/nodejstools/wiki
-ms.openlocfilehash: f10039651ab1aba6ee5d013d83893b56d7504196
-ms.sourcegitcommit: 8bfabab73b39b3b3e68a3e8dc225515e8b310fed
+ms.openlocfilehash: ef90117b0e8b3a4bc0695db384d7f30fd32130aa
+ms.sourcegitcommit: 0342f99120fbd603b8f06f7e9166c39f2896827a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "54398204"
+ms.lasthandoff: 02/05/2019
+ms.locfileid: "55742491"

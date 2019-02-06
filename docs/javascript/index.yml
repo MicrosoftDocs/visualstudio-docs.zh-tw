@@ -1,10 +1,10 @@
 ### YamlMime:YamlDocument
-ms.openlocfilehash: ebdc56f630ef24cb81beadb676013c7a46b52364
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: d3390bd35590d5e5536dd7954688a417624c22a9
+ms.sourcegitcommit: 0342f99120fbd603b8f06f7e9166c39f2896827a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54983309"
+ms.lasthandoff: 02/05/2019
+ms.locfileid: "55742413"
 documentType: LandingData
 title: Visual Studio | JavaScript 和 TypeScript
 metadata:
@@ -33,7 +33,7 @@ sections:
       image:
         src: https://docs.microsoft.com/media/common/i_setup.svg
       title: 安裝 Visual Studio
-    - href: ../ide/quickstart-ide-orientation.md
+    - href: ../javascript/quickstart-ide-orientation-js.md
       html: <p></p>
       image:
         src: https://docs.microsoft.com/media/logos/logo_visual-studio.svg
