@@ -43,11 +43,11 @@ items:
       href: tutorial-kubernetes-tools.md
   - name: C++
     items:
-    - name: Visual C++ 中的部署...
-      href: /cpp/ide/deployment-in-visual-cpp
+    - name: 部署 C/C++ 應用程式
+      href: /cpp/ide/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project
     - name: 為 Microsoft Store 封裝桌面應用程式 (傳統型橋接器)
       href: /windows/uwp/porting/desktop-to-uwp-packaging-dot-net
-    - name: 使用 ClickOnce 部署原生應用程式...
+    - name: 使用 ClickOnce 部署 C++/CLR 應用程式...
       href: /cpp/ide/clickonce-deployment-for-visual-cpp-applications
   - name: UWP
     items:
@@ -290,9 +290,9 @@ items:
         href: customerrorreporting-element-clickonce-deployment.md
     - name: ClickOnce Unmanaged API 參考
       href: clickonce-unmanaged-api-reference.md
-ms.openlocfilehash: 427a4156599cbf4ed4fc718c2b5f6199aeef2342
-ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
+ms.openlocfilehash: a48576850789721b47c57183babcd3dd45d3e7e3
+ms.sourcegitcommit: 612f8c21d1448f1a013c30100cdecfbec5ddb24f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55484052"
+ms.lasthandoff: 02/01/2019
+ms.locfileid: "55571118"
