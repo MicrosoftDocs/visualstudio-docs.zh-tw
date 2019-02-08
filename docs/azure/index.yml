@@ -1,10 +1,10 @@
 ### YamlMime:YamlDocument
-ms.openlocfilehash: 423a153c42b8ca07cd3a78e7ab78721fa6fd67e3
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 2a4b94a26b8f22ee87e42a1f890c58ab1299524f
+ms.sourcegitcommit: 612f8c21d1448f1a013c30100cdecfbec5ddb24f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54935666"
+ms.lasthandoff: 02/01/2019
+ms.locfileid: "55571079"
 documentType: LandingData
 title: 使用 Visual Studio 進行 Azure 開發
 metadata:
@@ -19,7 +19,7 @@ metadata:
   ms.author: ghogen
   ms.custom: seodec18
 sections:
-- title: 發佈至 Azure
+- title: 部署到 Azure App Service
   items:
   - type: paragraph
     text: 使用 Visual Studio 將您的應用程式部署到 Azure 中的暫存或生產環境，或設定持續整合與部署 (CI/CD)。
@@ -32,17 +32,12 @@ sections:
       html: <p></p>
       image:
         src: https://docs.microsoft.com/media/logos/logo_NETcore.svg
-      title: 將 ASP.NET Core 應用程式發行到 Azure
+      title: 將 ASP.NET Core 應用程式部署到 Azure
     - href: https://docs.microsoft.com/azure/app-service/app-service-web-get-started-dotnet-framework
       html: <p></p>
       image:
         src: https://docs.microsoft.com/media/logos/logo_NET.svg
-      title: 將 ASP.NET Web 應用程式發佈到 Azure
-    - href: https://docs.microsoft.com/azure/azure-functions/functions-create-your-first-function-visual-studio
-      html: <p></p>
-      image:
-        src: https://docs.microsoft.com/azure/media/index/AzureFunctions.svg
-      title: 發佈 Azure Functions
+      title: 將 ASP.NET Web 應用程式部署到 Azure
     - href: /aspnet/core/host-and-deploy/azure-apps/azure-continuous-deployment?view=aspnetcore-2.1
       html: <p></p>
       image:
@@ -57,8 +52,8 @@ sections:
       html: <p></p>
       image:
         src: https://docs.microsoft.com/media/common/i_vmm-cloud.svg
-      title: 將 ASP.NET Web 應用程式發佈到 Azure VM
-- title: Azure App Service 與 Azure Functions
+      title: 將 ASP.NET Web 應用程式部署到 Azure VM
+- title: Azure 應用程式服務、Logic Apps 與 Azure Functions
   items:
   - type: paragraph
     text: 有關如何建立 Web 應用程式與 Azure 中裝載之無伺服器函式的教學課程
@@ -72,7 +67,12 @@ sections:
       image:
         src: https://docs.microsoft.com/azure/media/index/AppService.svg
       title: ASP.NET Core
-    - href: /azure/azure-functions/functions-develop-vs
+    - href: /azure/logic-apps/quickstart-create-logic-apps-with-visual-studio
+      html: <p>使用 Azure Logic Apps 建置自動化、可調整的工作流程。</p>
+      image:
+        src: https://docs.microsoft.com/azure/media/index/LogicApp.svg
+      title: Azure Logic Apps
+    - href: /azure/azure-functions/functions-create-your-first-function-visual-studio
       html: <p>使用無伺服器程式碼來處理事件</p>
       image:
         src: https://docs.microsoft.com/azure/media/index/AzureFunctions.svg
@@ -95,8 +95,8 @@ sections:
       href: /visualstudio/containers
     - image:
         src: https://docs.microsoft.com/media/logos/logo_docker.svg
-      text: Visual Studio 中的 Docker 工具
-      href: /visualstudio/docker/vs-azure-tools-docker-setup
+      text: Visual Studio 中的容器工具
+      href: /visualstudio/docker/docker-tools
     - image:
         src: https://docs.microsoft.com/media/logos/logo_kubernetes.svg
       text: Kubernetes 工具
@@ -178,10 +178,10 @@ sections:
         src: https://docs.microsoft.com//media/common/i_code-performance.svg
       title: 分析效能
     - href: vs-azure-tools-publishing-a-cloud-service.md
-      html: <p>將雲端服務發佈到 Azure</p>
+      html: <p>將雲端服務部署到 Azure</p>
       image:
         src: https://docs.microsoft.com//media/common/i_deploy.svg
-      title: 發行
+      title: 部署
     - href: vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines.md
       html: <p>針對在 Azure 中執行的雲端服務與虛擬機器進行監視及診斷</p>
       image:
