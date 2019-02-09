@@ -1,7 +1,6 @@
 ---
 title: IntelliTest 參考手冊 | Microsoft 開發人員測試工具
 ms.date: 05/02/2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - IntelliTest Reference Manual, IntelliTest
@@ -10,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: b2123ca4367feaf43603a25b4497e23886605bc4
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 2ba7a355b5fe8e2b332928c351753a99faed6681
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54968338"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55948940"
 ---
 # <a name="intellitest-reference-manual"></a>IntelliTest 參考手冊
 
