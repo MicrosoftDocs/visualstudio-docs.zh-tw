@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 18ba71906b38fd889f1db42fcb69c689718107c6
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: aae170d2fb9b824d0c547dec7549ef2fdd8401ee
+ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54951283"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55483974"
 ---
 # <a name="msbuild-task-reference"></a>MSBuild 工作參考
 提供在建置流程期間執行之程式碼的工作。 下列清單的工作包含於 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 中。 若已安裝 [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)]，將提供可用來建置 [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] 專案的其他工作。 如需詳細資訊，請參閱 [Visual C++ 工作](../msbuild/msbuild-tasks-specific-to-visual-cpp.md)。  
@@ -28,7 +28,7 @@ ms.locfileid: "54951283"
  除了本節中主題所列的參數之外，每個工作也會有下列參數：  
 
 
-| 參數 | 說明 |
+| 參數 | 描述 |
 |-------------------| - |
 | `Condition` | 選擇性的 `String` 參數。<br /><br /> `Boolean` 運算式，[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 引擎會使用此運算式來決定是否要執行此工作。 如需 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 所支援條件的相關資訊，請參閱[條件](../msbuild/msbuild-conditions.md)。 |
 | `ContinueOnError` | 選擇性參數。 可包含一或多個下列值：<br /><br /> -   **WarnAndContinue** 或 **true**。 當工作失敗時，[Target](../msbuild/target-element-msbuild.md) 項目中的後續工作與組建都會繼續執行，並將來自工作的所有錯誤視為警告。<br />-   **ErrorAndContinue**。 當工作失敗時，`Target` 項目中的後續工作與組建都會繼續執行，並將來自工作的所有錯誤視為錯誤。<br />-   **ErrorAndStop** 或 **false** (預設值)。 當工作失敗時，就不會執行 `Target` 項目中的其餘工作和組建，並將整個 `Target` 項目與組建視為失敗。<br /><br /> 只有 4.5 版之前的 .NET Framework 版本支援 `true` 和 `false` 值。<br /><br /> 如需詳細資訊，請參閱[＜How to：忽略工作中的錯誤](../msbuild/how-to-ignore-errors-in-tasks.md)。 |
@@ -130,7 +130,10 @@ ms.locfileid: "54951283"
  [GetAssemblyIdentity 工作](../msbuild/getassemblyidentity-task.md)  
  從指定的檔案擷取組件識別，並輸出識別資訊。  
 
- [GetFrameworkPath 工作](../msbuild/getframeworkpath-task.md)  
+ [GetFileHash 工作](../msbuild/getfilehash-task.md)  
+ 計算檔案或一組檔案內容的總和檢查碼。
+
+[GetFrameworkPath 工作](../msbuild/getframeworkpath-task.md)  
  擷取 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 組件的路徑。  
 
  [GetFrameworkSdkPath 工作](../msbuild/getframeworksdkpath-task.md)  
@@ -210,6 +213,9 @@ ms.locfileid: "54951283"
 
  [Vbc 工作](../msbuild/vbc-task.md)  
  叫用 Visual Basic 編譯器來產生可執行檔、動態連結程式庫或程式碼模組。  
+
+ [VerifyFileHash 工作](../msbuild/verifyfilehash-task.md)  
+ 驗證檔案是否符合預期的檔案雜湊。
 
  [Warning 工作](../msbuild/warning-task.md)  
  在建置期間，根據評估的條件陳述式來記錄警告。  

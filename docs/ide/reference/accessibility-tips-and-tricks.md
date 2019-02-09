@@ -12,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6451b45f8bb98232ea0c3a1b3cb96d37cf303ccc
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 90a9ba0da2ee8c77b66d147c9af5fa560f50f3a0
+ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55010385"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55484130"
 ---
 # <a name="accessibility-tips-and-tricks-for-visual-studio"></a>Visual Studio 協助工具祕訣和訣竅
 
@@ -41,7 +41,7 @@ Visual Studio 有與螢幕助讀程式和其他輔助技術相容的內建協助
 
 ## <a name="use-annotations-to-reveal-useful-information-about-your-code"></a>使用註釋顯示程式碼的實用資訊
 
-Visual Studio 編輯器包含許多文字「裝飾」，讓您知道程式碼特定點的特性和功能，例如燈泡、錯誤和警告的「波浪線」、書籤等等。 您可以使用「顯示程式碼行註釋」命令集協助探索，然後巡覽這些裝飾。
+Visual Studio 編輯器包含許多文字「裝飾」，讓您知道程式碼特定點的特性和功能，例如螺絲起子和燈泡圖示、錯誤和警告的「波浪線」、書籤等等。 您可以使用「顯示程式碼行註釋」命令集協助探索，然後巡覽這些裝飾。
 
   ![使用「顯示程式碼行註釋」命令集](media/show-line-annotations-command-set.png)
 
@@ -49,7 +49,7 @@ Visual Studio 編輯器包含許多文字「裝飾」，讓您知道程式碼特
 
 Visual Studio IDE 工具列的作用與許多工具視窗相同。 下列快速鍵組合可協助您進行存取。
 
-|功能|說明|按鍵組合|
+|功能|描述|按鍵組合|
 |-------------|-----------------| - |
 |IDE 工具列|選取 [標準] 工具列上的第一個按鈕。|**ALT**、**CTRL** + **TAB**|
 |工作視窗工具列|將焦點移至工具視窗中的工具列。 <br> <br> **注意：** 這適用於大部分的工具視窗，但只限焦點位於在工具視窗中時。 此外，您必須先選擇 SHIFT 鍵再選擇 ALT 鍵。 在部分工具視窗 (例如 Team Explorer) 中，您必須先按住 SHIFT 鍵再選擇 ALT 鍵。|**SHIFT** + **ALT**|
@@ -59,7 +59,7 @@ Visual Studio IDE 工具列的作用與許多工具視窗相同。 下列快速�
 
 有些其他實用快速鍵組合包括下列項目。
 
-|功能|說明|按鍵組合|
+|功能|描述|按鍵組合|
 |-------------|-----------------| - |
 |IDE|開啟或關閉高對比。 <br> <br> **注意：** 標準 Windows 捷徑|**左 ALT + 左 SHIFT + PRINT SCREEN**|
 |對話方塊|選取或清除對話方塊中的核取方塊選項。 <br> <br> **注意：** 標準 Windows 捷徑|**空格鍵**|

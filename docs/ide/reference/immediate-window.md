@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 91f25f9ab44bee749283603b78744c9e01e4e469
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b18e1837fdc673500fae96555dab7fb0195ec42e
+ms.sourcegitcommit: 9866740aec05d1a3a5dc3b4b6d2ceaeecbd3fc29
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54992629"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55424236"
 ---
 # <a name="immediate-window"></a>即時運算視窗
 
@@ -102,7 +102,7 @@ ms.locfileid: "54992629"
 
 當您在 [即時運算] 視窗中按一下之前任一行時，會自動切換至 [標記] 模式。 這可讓您像在任何文字編輯器中一樣地選取、編輯和複製先前命令的文字，並將它們貼入目前行。
 
-## <a name="the-equals-sign"></a>等號 (=)
+## <a name="the-equals-sign-"></a>等號 (=)
 
 用來輸入 `EvaluateStatement` 命令的視窗可判斷是否將等號 (=) 解譯為比較運算子或指派運算子。
 

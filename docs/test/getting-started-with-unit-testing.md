@@ -10,20 +10,23 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b0ac3acc8b5addf02e510943b6b61ce1c5f0c5b1
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 52a0b5d046580e5d4dbf499e504cd0ea123ff5b2
+ms.sourcegitcommit: 9866740aec05d1a3a5dc3b4b6d2ceaeecbd3fc29
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54999752"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55424378"
 ---
 # <a name="get-started-with-unit-testing"></a>開始使用單元測試
 
-使用 Visual Studio 來定義和執行單元測試，藉以維護程式碼的健康狀態、確定程式碼涵蓋範圍，以及在客戶遭遇問題之前找出錯誤和失敗。
+使用 Visual Studio 來定義和執行單元測試，藉以維護程式碼的健康狀態、確定程式碼涵蓋範圍，以及在客戶遭遇問題之前找出錯誤和失敗。 經常執行單元測試，以確定您的程式碼運作正常。
 
 ## <a name="create-unit-tests"></a>建立單元測試
 
-建立單元測試並經常執行它們，以確定您的程式碼運作正常。
+本節詳盡說明如何建立單元測試專案。
+
+> [!TIP]
+> 測試的專案 "HelloWorld" 是範例專案，不會顯示程式碼。 如果您想要建立 "HelloWorld" 專案以便測試，請參閱[建立您的第一個 C# 主控台應用程式](../ide/quickstart-csharp-console.md)。 如需完整逐步解說文章，請參閱[為受控程式碼建立和執行單元測試](walkthrough-creating-and-running-unit-tests-for-managed-code.md)。
 
 1. 建立單元測試專案。
 
@@ -150,6 +153,7 @@ ms.locfileid: "54999752"
 
 ## <a name="see-also"></a>另請參閱
 
+* [逐步解說：針對受控碼建立和執行單元測試](walkthrough-creating-and-running-unit-tests-for-managed-code.md)
 * [建立單元測試命令](create-unit-tests-menu.md)
 * [使用 IntelliTest 產生測試](generate-unit-tests-for-your-code-with-intellitest.md)
 * [使用測試總管執行測試](run-unit-tests-with-test-explorer.md)
