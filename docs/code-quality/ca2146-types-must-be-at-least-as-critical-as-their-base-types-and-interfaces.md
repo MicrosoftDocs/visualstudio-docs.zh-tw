@@ -1,7 +1,6 @@
 ---
 title: CA2146:類型至少必須和基底類型與介面一樣關鍵
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - CA2146
@@ -11,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8bfc3cebb0d90d0400f1b5dbd1c9ba6bab266563
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 01a8a5609394f0dd428066e32fb425a2abb486c4
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55014090"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55926862"
 ---
 # <a name="ca2146-types-must-be-at-least-as-critical-as-their-base-types-and-interfaces"></a>CA2146:類型至少必須和基底類型與介面一樣關鍵
 

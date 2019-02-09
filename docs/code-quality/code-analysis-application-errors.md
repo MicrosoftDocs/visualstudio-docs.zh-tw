@@ -1,7 +1,6 @@
 ---
 title: 程式碼分析應用程式錯誤
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 helpviewer_keywords:
 - errors [Visual Studio ALM], code analysis
@@ -14,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a182bba091dfb1363f2f643a9f0f8b4be7e4963
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 9d2350a495bf0540f77ff6f0d4222b18431e1586
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54931254"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55912426"
 ---
 # <a name="code-analysis-application-errors"></a>程式碼分析應用程式錯誤
 

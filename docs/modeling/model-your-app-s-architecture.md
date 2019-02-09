@@ -9,13 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 56b3d76f0d48b60aabace9de1e262ccea4322a53
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: cd92f2c87d1f9541d0b5fc7c812c2a096ee0615a
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55040368"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55948938"
 ---
 # <a name="model-your-app39s-architecture"></a>模型化應用程式&#39;s 架構
 若要協助確保您的軟體系統或應用程式符合使用者的需要您可以在 Visual Studio 中建立模型，為您的整體結構描述和軟體系統或應用程式的行為的一部分。 您也可以使用模型來描述整個設計所使用的模式。 這些模型可協助您了解現有架構、討論變更，並清楚地傳達您的意圖。

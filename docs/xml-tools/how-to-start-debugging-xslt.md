@@ -1,7 +1,6 @@
 ---
 title: HOW TO：開始偵錯 XSLT
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
@@ -10,12 +9,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 966bcaa9a2fc2e9a07166f2851c34af9f9574d2f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 196e071802c068475da1dea1ba7f2a5b94a86a36
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54956242"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55936328"
 ---
 # <a name="how-to-start-debugging-xslt"></a>HOW TO：開始偵錯 XSLT
 

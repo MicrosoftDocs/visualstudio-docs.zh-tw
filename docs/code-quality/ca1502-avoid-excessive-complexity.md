@@ -1,7 +1,6 @@
 ---
 title: CA1502:避免造成過度複雜的方法
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - AvoidExcessiveComplexity
@@ -19,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 35fa770c9a7f1d2e0a5d1a5634edf21caae26cfc
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: aa10945e87022546240d05304f59478b33bb5596
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55006126"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55916761"
 ---
 # <a name="ca1502-avoid-excessive-complexity"></a>CA1502:避免造成過度複雜的方法
 

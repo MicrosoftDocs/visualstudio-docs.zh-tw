@@ -15,13 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 59c9513514b6e7ccb47e68168396593dc23b6b2f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 86c31a33abd5767207f9c2406907961379f84bae
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55012985"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55924461"
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>使用 T4 文字範本在設計階段產生程式碼
 設計階段 T4 文字範本可讓您在 Visual Studio 專案中產生程式碼和其他檔案。 通常，您會撰寫範本，讓他們變更其根據從資料產生的程式碼*模型*。 模型是檔案或資料庫，其中包含您的應用程式需求的重要資訊。
@@ -66,7 +65,7 @@ ms.locfileid: "55012985"
 
 5. 儲存檔案。
 
-    您可能會看到**安全性警告**會要求您確認您想要執行範本的訊息方塊。 按一下 [確定 **Deploying Office Solutions**]。
+    您可能會看到**安全性警告**會要求您確認您想要執行範本的訊息方塊。 按一下 [確定] 。
 
 6. 在 **方案總管**，展開範本檔節點，然後您會發現副檔名的檔案 **.txt**。 此檔案包含從範本產生的文字。
 

@@ -1,7 +1,6 @@
 ---
 title: CA1308:必須將字串標準化為大寫字母
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - CA1308
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 87a672737f3c5d7287215bdd4930e25fb2981825
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 4e8d8b5b522f805bd7e8826cea5ced394c50064f
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54924214"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55919088"
 ---
 # <a name="ca1308-normalize-strings-to-uppercase"></a>CA1308:必須將字串標準化為大寫字母
 

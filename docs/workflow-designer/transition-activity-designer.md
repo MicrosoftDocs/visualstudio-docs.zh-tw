@@ -2,7 +2,6 @@
 title: 工作流程設計工具-Transition 活動設計工具
 ms.date: 11/04/2016
 ms.topic: reference
-ms.prod: visual-studio-dev15
 f1_keywords:
 - System.Activities.Statements.Transition.UI
 ms.assetid: f6e8b5cc-7fb8-4699-9703-f3c9fc7cc316
@@ -11,12 +10,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 62de732d4f2aed819681c0d2141df4ba0553ffe2
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: ad9572004702f53cefaad05bfcaad0cd29520542
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55033611"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55923848"
 ---
 # <a name="transition-activity-designer"></a>轉換活動設計工具
 

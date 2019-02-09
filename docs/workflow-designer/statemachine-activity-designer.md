@@ -2,7 +2,6 @@
 title: 工作流程設計工具-StateMachine 活動設計工具
 ms.date: 11/04/2016
 ms.topic: reference
-ms.prod: visual-studio-dev15
 f1_keywords:
 - StateMachine Designer
 - System.Activities.Statements.StateMachine.UI
@@ -12,12 +11,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 52cbd0e27934d5d13c0e83c6c8e3e87281aa1b5a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 59b1a194f4f301bd3080820b56c89044315c66e7
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54972897"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55921064"
 ---
 # <a name="statemachine-activity-designer"></a>StateMachine 活動設計工具
 

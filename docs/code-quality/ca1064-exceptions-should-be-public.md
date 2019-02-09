@@ -1,7 +1,6 @@
 ---
 title: CA1064:例外狀況必須是公用
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - CA1064
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d858b5b266b80d84bcbd6eb409a4183105960ee1
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 8196d4c48bfb93735b62c6f24cb08ec462e64c91
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55018679"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55916839"
 ---
 # <a name="ca1064-exceptions-should-be-public"></a>CA1064:例外狀況必須是公用
 

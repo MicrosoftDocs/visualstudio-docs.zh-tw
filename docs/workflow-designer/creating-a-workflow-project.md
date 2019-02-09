@@ -2,7 +2,6 @@
 title: 建立 Workflow Foundation 專案
 ms.date: 06/25/2018
 ms.topic: conceptual
-ms.prod: visual-studio-dev15
 helpviewer_keywords:
 - Workflow Designer, creating a workflow project
 - creating a workflow project
@@ -12,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 577bb58101556dc17c62453bfe18e9618c879405
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 0450260d5d889c141607a281740bf06d255d5c17
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54999947"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55923417"
 ---
 # <a name="workflow-project-templates"></a>工作流程專案範本
 

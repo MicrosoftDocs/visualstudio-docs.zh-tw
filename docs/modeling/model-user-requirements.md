@@ -10,13 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 48e25a84540bf02ee0fc64d1a0ff9509c2465ebe
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: cda0284bd9ae4b0f68a8bb0fa779959f52650bdd
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54978733"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55937258"
 ---
 # <a name="model-user-requirements"></a>模型使用者需求
 

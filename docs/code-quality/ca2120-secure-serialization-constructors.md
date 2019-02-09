@@ -1,7 +1,6 @@
 ---
 title: CA2120:必須保護序列化建構函式
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - CA2120
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cf54f65f19d00f385a3e0eea2c8584e345e10b6f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 15fd1596fdede3d13d603e7df222395a7ef7a277
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54928434"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55927902"
 ---
 # <a name="ca2120-secure-serialization-constructors"></a>CA2120:必須保護序列化建構函式
 

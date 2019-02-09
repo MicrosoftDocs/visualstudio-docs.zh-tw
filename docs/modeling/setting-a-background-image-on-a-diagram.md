@@ -7,13 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 992a3fe8c32c757425a0f223e37dfac32ea0a080
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c4b559b80613197dae62bc6246bd7ef1532d7071
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55037040"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55941162"
 ---
 # <a name="setting-a-background-image-on-a-diagram"></a>設定圖表上的背景影像
 在 Visual Studio Visualization and Modeling SDK，您可以使用自訂程式碼產生的設計工具設定背景影像。

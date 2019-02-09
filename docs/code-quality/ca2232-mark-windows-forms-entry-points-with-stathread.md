@@ -1,7 +1,6 @@
 ---
 title: CA2232:Windows Forms 進入點必須標記 STAThread
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - MarkWindowsFormsEntryPointsWithStaThread
@@ -18,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 1ee37645d1cc20bfd83a18b9dbb7a001731702f1
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 1bea8ee43c90c0e6559846bad00b61ec434ec46f
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55043670"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55923456"
 ---
 # <a name="ca2232-mark-windows-forms-entry-points-with-stathread"></a>CA2232:Windows Forms 進入點必須標記 STAThread
 

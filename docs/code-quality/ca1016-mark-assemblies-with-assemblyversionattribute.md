@@ -1,7 +1,6 @@
 ---
 title: CA1016:組件必須標記 AssemblyVersionAttribute
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - MarkAssembliesWithAssemblyVersion
@@ -19,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ebe8a7ed3decd841a557abb6291daafd7833e99
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a00c8e30e981794e69d4572e0a924438514780c7
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55024171"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55917775"
 ---
 # <a name="ca1016-mark-assemblies-with-assemblyversionattribute"></a>CA1016:組件必須標記 AssemblyVersionAttribute
 

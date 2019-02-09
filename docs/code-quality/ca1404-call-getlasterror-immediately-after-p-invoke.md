@@ -1,7 +1,6 @@
 ---
 title: CA1404:必須在 P-Invoke 之後立即呼叫 GetLastError
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - CallGetLastErrorImmediatelyAfterPInvoke
@@ -18,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: eec2a29f3d1e967d946488043882e96eb4f081de
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 2cd6e3228d67b8dd04cda15549f6b1d172d02916
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54970925"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55919075"
 ---
 # <a name="ca1404-call-getlasterror-immediately-after-pinvoke"></a>CA1404:必須在 P/Invoke 之後立即呼叫 GetLastError
 

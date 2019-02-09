@@ -1,7 +1,6 @@
 ---
 title: CA1041:必須提供 ObsoleteAttribute 訊息
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - CA1041
@@ -19,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 3931501d913a8518f80deccdf9ebe1667e51b661
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: bb8281cb299b9b6ada7470deca82b9158fb323d1
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54923710"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55953096"
 ---
 # <a name="ca1041-provide-obsoleteattribute-message"></a>CA1041:必須提供 ObsoleteAttribute 訊息
 

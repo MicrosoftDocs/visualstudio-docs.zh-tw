@@ -2,7 +2,6 @@
 title: 工作流程設計工具-交換器<T>活動設計工具
 ms.date: 11/04/2016
 ms.topic: reference
-ms.prod: visual-studio-dev15
 f1_keywords:
 - System.Activities.Presentation.ModelItemKeyValuePair.UI
 - System.Activities.Statements.Switch`1.UI
@@ -12,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f12639eeffc2a4349a30ec3fa244a4ec5c2d3d17
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 7eb83567a7d59dc02779839a5305b9c1c0329912
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55033735"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55920935"
 ---
 # <a name="switcht-activity-designer"></a>交換器\<T > 活動設計工具
 

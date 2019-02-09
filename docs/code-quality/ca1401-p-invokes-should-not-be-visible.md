@@ -1,7 +1,6 @@
 ---
 title: CA1401:P-Invokes 不應該為可見的
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - PInvokesShouldNotBeVisible
@@ -18,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: a139dd44c470422554dd2d5ccb42ab61a9d84637
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 037f629a205c7af24509b8ca2e409683d1f085ff
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55021399"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55929150"
 ---
 # <a name="ca1401-pinvokes-should-not-be-visible"></a>CA1401:P/Invokes 不應該為可見的
 
