@@ -10,13 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 6bf3764d1c1e2e463406775ae11374e924b0d91f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 4f73ebb646c152509be9a7fbdd3287f2673ddadb
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54922021"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55907512"
 ---
 # <a name="supported-visual-studio-editions-for-visualization--modeling-sdk"></a>支援的 Visual Studio Visualization & Modeling SDK 版本
 

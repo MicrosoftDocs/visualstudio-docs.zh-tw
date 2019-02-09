@@ -1,7 +1,6 @@
 ---
 title: 行動性警告
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - vs.codeanalysis.MobilityRules
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 47bb602da5483b3ea31513b6185ce00e07200a42
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 170caf52999fb687c040c2e9212d1a1ed2e154a0
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54974002"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55908410"
 ---
 # <a name="mobility-warnings"></a>行動性警告
 行動性警告支援有效率的用電量。

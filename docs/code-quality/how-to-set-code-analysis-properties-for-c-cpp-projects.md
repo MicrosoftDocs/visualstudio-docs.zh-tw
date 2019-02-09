@@ -1,7 +1,6 @@
 ---
 title: HOW TO：為 C/C++ 專案設定程式碼分析屬性
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.propertypages.native
@@ -19,12 +18,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 000b731bffe6b2fe02e34e98ebfd3ce8a21f5bd8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 11eb9701c900284ee8021f908263bc5f27ab8206
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53915626"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55917325"
 ---
 # <a name="how-to-set-code-analysis-properties-for-cc-projects"></a>HOW TO：為 C/C++ 專案設定程式碼分析屬性
 您可以設定程式碼分析工具用來分析專案的每個組態中的程式碼的規則。 此外，您可以將程式碼分析，以隱藏來自產生並由第三方工具加入至專案的程式碼的警告。

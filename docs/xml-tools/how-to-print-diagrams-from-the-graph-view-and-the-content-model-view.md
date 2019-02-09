@@ -1,7 +1,6 @@
 ---
 title: 從圖表檢視] 和 [XML 結構描述設計工具的內容模型檢視列印圖表
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: 7e1785e4-4aaf-4c66-8735-51e7ca035565
 author: gewarren
@@ -9,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 52e5fcf61bcb8c625d25707f235f15879cf46313
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 2de28fec7c196364566642866a80706ccd7850de
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55013180"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55912686"
 ---
 # <a name="how-to-print-diagrams-from-the-graph-view-and-the-content-model-view"></a>HOW TO：從 [圖形] 檢視和內容模型檢視列印圖表
 

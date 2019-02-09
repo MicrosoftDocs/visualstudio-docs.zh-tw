@@ -1,7 +1,6 @@
 ---
 title: CA1005：避免在泛型類型上包含過多參數
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - AvoidExcessiveParametersOnGenericTypes
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b4af6f870723e65f414c3f05762cdc74c19dea53
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 0f206d7f02fff2b7e1c1a373ab06bb7462b48705
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55031085"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55924563"
 ---
 # <a name="ca1005-avoid-excessive-parameters-on-generic-types"></a>CA1005：避免在泛型類型上包含過多參數
 
