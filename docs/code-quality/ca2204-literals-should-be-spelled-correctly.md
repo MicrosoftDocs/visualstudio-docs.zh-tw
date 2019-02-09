@@ -1,7 +1,6 @@
 ---
 title: CA2204:常值必須使用正確的拼字
 ms.date: 03/28/2018
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - Literals should be spelled correctly
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 62ad30516720a843d519a9e514cd325a957b3cff
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 82146c2ac997a0202c20e15492becb89a293f427
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55017119"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55949443"
 ---
 # <a name="ca2204-literals-should-be-spelled-correctly"></a>CA2204:常值必須使用正確的拼字
 

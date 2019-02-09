@@ -1,7 +1,6 @@
 ---
 title: CA2100:必須檢閱 SQL 查詢中是否有安全性弱點
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - Review SQL queries for security vulnerabilities
@@ -20,12 +19,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 26e4b1c291c536597f699bd57cc11c041c3b168b
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 5387ce65532cb532192191bd67f29cc7af6e28c0
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54939279"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55957529"
 ---
 # <a name="ca2100-review-sql-queries-for-security-vulnerabilities"></a>CA2100:必須檢閱 SQL 查詢中是否有安全性弱點
 

@@ -9,13 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 9cc30e43ea10a0b206351df9722d813b565b78a6
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 76129141ed293281eeb3179a654f470bcf608bdf
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54942174"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55907577"
 ---
 # <a name="properties-of-decorators"></a>Decorator 的屬性
 裝飾項目是圖示、 文字或圖形或圖表上的連接器上可出現的展開/摺疊形箭號。 下表顯示裝飾項目的三種類型的屬性。 某些屬性會出現只在圖形的裝飾項目或只在接點的裝飾項目。

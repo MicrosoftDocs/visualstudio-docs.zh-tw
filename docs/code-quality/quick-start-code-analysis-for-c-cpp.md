@@ -1,7 +1,6 @@
 ---
 title: 快速入門：C/C++ 的程式碼分析
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - C/C++ code analysis
@@ -11,12 +10,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 00dedc25185dfc3a9f12ba645205ce47925003df
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ecb4f46b238b72c9d83b46122b8567a8636282b8
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53825197"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55950093"
 ---
 # <a name="quickstart-code-analysis-for-cc"></a>快速入門：C/C++ 的程式碼分析
 

@@ -1,7 +1,6 @@
 ---
 title: HOW TO：從 XML 結構描述產生 XML 片段
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: 2c128d2a-aaa6-4814-aa95-e07056afe338
 author: gewarren
@@ -9,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 54f8a689c83fc0eb370e2e48a9421071151c9271
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e8f9d984cabdb9e29ff1f5eac1734105d2a3e2f4
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55030427"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55913950"
 ---
 # <a name="how-to-generate-an-xml-snippet-from-an-xml-schema"></a>HOW TO：從 XML 結構描述產生 XML 片段
 
@@ -67,7 +66,7 @@ XML 編輯器具有從 XML 結構描述定義語言 (XSD) 結構描述產生 XML
 
 5.  選取的結構描述檔案，然後按一下**開啟**。
 
-6.  按一下 [確定 **Deploying Office Solutions**]。
+6.  按一下 [確定] 。
 
      XML 結構描述現在已與 XML 文件相關聯。
 

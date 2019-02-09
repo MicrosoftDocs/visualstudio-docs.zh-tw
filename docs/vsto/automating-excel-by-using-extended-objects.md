@@ -1,7 +1,6 @@
 ---
 title: 使用擴充的物件自動化 Excel
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -21,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5b994206c1721c09f3b1729762ae589293dbae15
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 8cc86bf7d258bcabd6d7eec1b838eeebfa94c626
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54872660"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55949846"
 ---
 # <a name="automate-excel-by-using-extended-objects"></a>使用擴充的物件自動化 Excel
   在 Visual Studio 中開發 Excel 方案時，您可以在方案中使用 *「主項目」* (host items) 和 *「主控制項」*(host controls)。 這些物件可以擴充 Excel 物件模型 (也就是 Excel 的主要 Interop 組件公開的物件模型) 中某些常用的物件，例如 <xref:Microsoft.Office.Interop.Excel.Worksheet> 和 <xref:Microsoft.Office.Interop.Excel.Range> 物件。 這些擴充物件的行為與它們所根據的 Excel 物件一樣，但是這些物件會將額外的功能 (例如新事件和資料繫結功能) 加入物件中 。  

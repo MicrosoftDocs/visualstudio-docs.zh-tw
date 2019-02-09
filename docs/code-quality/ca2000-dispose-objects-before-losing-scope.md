@@ -1,7 +1,6 @@
 ---
 title: CA2000:必須在超出範圍前處置物件
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - CA2000
@@ -19,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 1d2e1e40945c3d3a60cdb633aac96c78dd92bc0e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 06cb3ad9a3f424d4e7ec0c5ed239303c9b85ca58
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54936849"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55910114"
 ---
 # <a name="ca2000-dispose-objects-before-losing-scope"></a>CA2000:必須在超出範圍前處置物件
 

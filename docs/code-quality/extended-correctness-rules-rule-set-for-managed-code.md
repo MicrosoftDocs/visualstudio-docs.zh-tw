@@ -1,7 +1,6 @@
 ---
 title: 適用於 Managed 程式碼的擴充正確性規則規則集
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 ms.assetid: 5b181f5b-6c7a-4e46-a783-360e1da427a0
 author: gewarren
@@ -9,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: e5781676bdcfe4af131926e2d3ed1a49414da4b1
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 19dec66e4f281af37a0ef66a114b9c26b48ce163
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54965298"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55930580"
 ---
 # <a name="extended-correctness-rules-rule-set-for-managed-code"></a>適用於 Managed 程式碼的擴充正確性規則規則集
 Microsoft 擴充正確性規則規則集最大化的邏輯和 framework 使用錯誤報告的程式碼分析。 額外的重點會放在特定的案例，例如 COM 互通性和行動應用程式。 您應該考慮包含這個規則集如果任一這些案例適用於您的專案或您的專案中找出其他問題。

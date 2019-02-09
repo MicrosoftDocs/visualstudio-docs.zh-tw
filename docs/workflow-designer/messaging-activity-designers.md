@@ -2,19 +2,18 @@
 title: 工作流程設計工具-Messaging 活動設計工具
 ms.date: 11/04/2016
 ms.topic: reference
-ms.prod: visual-studio-dev15
 ms.assetid: 897e63cf-a42f-4edd-876f-c4ccfffaf6d6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c58ec8a22a463f8dbcaf1531feb7f7f820881c13
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 1b4156c8125ad6cf3af9f5600ceb2b6c5bc21419
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54967293"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55948182"
 ---
 # <a name="messaging-activity-designers"></a>Messaging 活動設計工具
 

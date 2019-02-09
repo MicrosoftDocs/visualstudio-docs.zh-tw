@@ -9,13 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 25ee3bbe5ba4e3891fcf6454f42f2a5d5ed561fe
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 82f464e6c58c8403ffee34957f9bd49b39471114
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55042448"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55940278"
 ---
 # <a name="develop-tests-from-a-model"></a>透過模型開發測試
 您可以使用需求和架構模型來協助您組織整理系統及其元件的測試。 這種做法有助於確保測試使用者和其他利害關係人的重要需求，並且可協助您在需求變更時快速更新測試。 如果您使用 [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)]，則也可以維護模型與測試之間的連結。

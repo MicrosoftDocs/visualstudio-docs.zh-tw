@@ -1,7 +1,6 @@
 ---
 title: 程式碼產生和 T4 文字範本
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - VS.ToolsOptionsPages.TextTemplating.TextTemplating
@@ -16,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c3f4e654c5bcaf373d8358201c856cc8667043d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 125ddff4bded1a58a7e68e6c8058d24ff16b2be1
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55034468"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55951328"
 ---
 # <a name="code-generation-and-t4-text-templates"></a>程式碼產生和 T4 文字範本
 

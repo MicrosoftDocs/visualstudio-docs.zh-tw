@@ -1,7 +1,6 @@
 ---
 title: FxCopCmd 錯誤
 ms.date: 10/19/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 helpviewer_keywords:
 - FxCopCmd errors
@@ -11,12 +10,12 @@ author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8b5dea79f1c9e3b21b45542a0617daf47ee7e80b
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a40d4b7baa3d994ca41213a100881e5f509a5167
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55025994"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55948260"
 ---
 # <a name="fxcopcmd-tool-errors"></a>FxCopCmd 工具錯誤
 

@@ -2,7 +2,6 @@
 title: 工作流程設計工具的錯誤訊息
 ms.date: 11/04/2016
 ms.topic: reference
-ms.prod: visual-studio-dev15
 f1_keywords:
 - WFDErrorMessages.UI
 - System.Activities.Presentation.ErrorActivity.UI
@@ -13,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a9d5604994476c4f87305d1a9495944809eb8b5f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 765072cea77a23ca63a176555832bbc95f0ab4b6
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54998608"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55950028"
 ---
 # <a name="error-messages-in-workflow-designer"></a>工作流程設計工具的錯誤訊息
 

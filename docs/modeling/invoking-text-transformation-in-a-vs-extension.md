@@ -7,13 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: f6c325e4ab99413e04cc35bd05babbe6a3dd0c1e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 43f071d73bef7d7b67988ccffb00b7ae7518b916
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55002319"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55945335"
 ---
 # <a name="invoking-text-transformation-in-a-vs-extension"></a>叫用 VS 擴充功能中的文字轉換
 如果您要撰寫的 Visual Studio 擴充功能，例如功能表命令或[定義域專屬語言](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)，您可以使用文字範本化服務來轉換文字範本。 取得 <xref:Microsoft.VisualStudio.TextTemplating.VSHost.STextTemplating> 服務並將它轉換成  <xref:Microsoft.VisualStudio.TextTemplating.VSHost.ITextTemplating>。

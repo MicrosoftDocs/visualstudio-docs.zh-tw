@@ -2,19 +2,18 @@
 title: 工作流程設計工具-如何：在工作流程中設定中斷點
 ms.date: 11/04/2016
 ms.topic: conceptual
-ms.prod: visual-studio-dev15
 ms.assetid: e41b21c9-c061-4358-8e2f-eb5e412864a8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0fde1741cd23e481b1354380786fcf81392eeeb8
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 7503d0b0bee201a9617e90966c9f75ac6333f228
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55043449"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55908435"
 ---
 # <a name="how-to-set-breakpoints-in-workflows"></a>HOW TO：在工作流程中設定中斷點
 

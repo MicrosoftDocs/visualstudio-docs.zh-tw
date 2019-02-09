@@ -7,13 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 6ecc34d0e64b020541940ebffb854f733ce8b39d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 9fad34e853aee65f32d87145d1d0300495e07b9c
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54918624"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55953993"
 ---
 # <a name="how-to-extend-the-domain-specific-language-designer"></a>HOW TO：擴充特定領域語言設計工具
 

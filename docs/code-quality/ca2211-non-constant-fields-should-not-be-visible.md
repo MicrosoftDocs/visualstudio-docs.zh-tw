@@ -1,7 +1,6 @@
 ---
 title: CA2211:非常數欄位不應該為可見的
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - CA2211
@@ -18,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: ff103936f815f369bb66b54efc379306b52b8375
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c33db7e5237b8e31011689edb725c8ae0e905522
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55036351"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55911451"
 ---
 # <a name="ca2211-non-constant-fields-should-not-be-visible"></a>CA2211:非常數欄位不應該為可見的
 

@@ -13,13 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: be758566059848c5f253140de9e381a917ab7e83
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: ae5873462c2938ab4215d1cd4837c496e235ab35
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54967072"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55913362"
 ---
 # <a name="customizing-tools-and-the-toolbox"></a>自訂工具和工具箱
 

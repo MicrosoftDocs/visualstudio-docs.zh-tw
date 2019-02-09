@@ -7,13 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: f8f60f061e62fecc15a92f313489f4053ed19016
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 88690e57e1781e9fe43b3cf4108c62fab189a988
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54974249"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55949027"
 ---
 # <a name="t4-template-directive"></a>T4 範本指示詞
 

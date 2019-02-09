@@ -10,16 +10,15 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 9f59f1038226d34b15310ac09b6b34706c36c342
-ms.sourcegitcommit: 0342f99120fbd603b8f06f7e9166c39f2896827a
+ms.openlocfilehash: bd488230fc6b88feb60ceeb0556385b99e823de9
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/05/2019
-ms.locfileid: "55742467"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55951588"
 ---
 # <a name="walkthrough-create-a-custom-text-template-host"></a>逐步解說：建立自訂文字範本主機
 

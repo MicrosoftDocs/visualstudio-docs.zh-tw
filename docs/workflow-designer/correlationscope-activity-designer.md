@@ -2,7 +2,6 @@
 title: 工作流程設計工具-CorrelationScope 活動設計工具
 ms.date: 11/04/2016
 ms.topic: reference
-ms.prod: visual-studio-dev15
 f1_keywords:
 - System.ServiceModel.Activities.CorrelationScope.UI
 ms.assetid: 75f20664-9042-464d-8e2b-148d365a2286
@@ -11,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ecb1ff26dc30da78c454364db02cf8a2afa2fd2
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b7ca5955cae8d9b2cb1012e97f034d497bbc79e9
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55033241"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55953174"
 ---
 # <a name="correlationscope-activity-designer"></a>CorrelationScope 活動設計工具
 

@@ -2,7 +2,6 @@
 title: 工作流程設計工具-ClearCollection<T>活動設計工具
 ms.date: 11/04/2016
 ms.topic: reference
-ms.prod: visual-studio-dev15
 f1_keywords:
 - System.Activities.Statements.ClearCollection`1.UI
 ms.assetid: db0e5da2-7b5a-4f1a-864c-f3aeeeeb51a7
@@ -11,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f086acbbdbbdf442b1684cc5c32d1fa13eb785f4
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: cab7ea023524da7e28e2baa2d4e5018cd091c60d
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55034050"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55953499"
 ---
 # <a name="clearcollectiont-activity-designer"></a>ClearCollection\<T > 活動設計工具
 

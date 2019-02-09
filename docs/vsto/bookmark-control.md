@@ -1,7 +1,6 @@
 ---
 title: 書籤控制項
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - VST.Toolbox.Bookmark
@@ -18,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 10594bb52ca8bfad14acb162b46d86b3b80fdd31
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 202640fbe484fc9b384e3e50484a1b4fee63bc4a
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54873674"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55914223"
 ---
 # <a name="bookmark-control"></a>書籤控制項
   <xref:Microsoft.Office.Tools.Word.Bookmark> 控制項是具有唯一名稱、可公開事件及繫結至資料的書籤。 書籤可以做為預留位置，以標記 Microsoft Office Word 文件中的項目或位置。 <xref:Microsoft.Office.Tools.Word.Bookmark> 控制項是 <xref:Microsoft.Office.Interop.Word.Bookmark> 物件和 <xref:Microsoft.Office.Interop.Word.Range> 物件的組合。

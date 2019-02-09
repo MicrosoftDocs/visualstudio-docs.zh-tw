@@ -1,7 +1,6 @@
 ---
 title: CA2214:不要呼叫建構函式中的可覆寫方法
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - DoNotCallOverridableMethodsInConstructors
@@ -18,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 99f0877e0dea9876f8c708106a64a70e194bd9d0
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: ef2a5631247f882a70ae94877da02f576ff04a5d
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55017197"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55946024"
 ---
 # <a name="ca2214-do-not-call-overridable-methods-in-constructors"></a>CA2214:不要呼叫建構函式中的可覆寫方法
 

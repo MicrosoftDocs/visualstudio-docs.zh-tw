@@ -7,13 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 25e59e4e0273e22a1b11ea9c3e0d593f70568758
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: dfbe77f5b6e2bbda6a51d392c4dd16b079100e81
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54929649"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55952381"
 ---
 # <a name="t4-output-directive"></a>T4 輸出指示詞
 

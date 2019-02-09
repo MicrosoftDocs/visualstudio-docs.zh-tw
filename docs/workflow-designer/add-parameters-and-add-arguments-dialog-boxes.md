@@ -2,7 +2,6 @@
 title: 工作流程設計工具-新增參數及新增引數對話方塊
 ms.date: 11/04/2016
 ms.topic: reference
-ms.prod: visual-studio-dev15
 f1_keywords:
 - AddParameters.UI
 ms.assetid: a21fb4fe-134b-40b0-8497-86b842940ca1
@@ -11,12 +10,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 9c9fae97c3a7dbd59eceea6fd5876005cfaee128
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f9ad4828eb3103ebbd014420e71c23f5411d9729
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54995043"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55953668"
 ---
 # <a name="add-parameters-and-add-arguments-dialog-boxes"></a>加入參數及加入引數對話方塊
 
