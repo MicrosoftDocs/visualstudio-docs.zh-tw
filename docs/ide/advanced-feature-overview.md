@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ea5b321169253202c397d09b9d6daac439213b55
-ms.sourcegitcommit: 447f2174bdecdd471d8a8e11c19554977db620a0
+ms.openlocfilehash: 3fa12b878a21523e53a3ff78ad838e41eb95888f
+ms.sourcegitcommit: 0f7411c1a47d996907a028e920b73b53c2098c9f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2019
-ms.locfileid: "55089207"
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "55690433"
 ---
 # <a name="features-of-visual-studio-2017"></a>Visual Studio 2017 的功能
 
@@ -24,7 +24,7 @@ ms.locfileid: "55089207"
 
 Visual Studio 的模組安裝程式可讓您選擇並安裝「工作負載」。 工作負載是您慣用程式設計語言或平台所需的功能群組。 此策略有助於將 Visual Studio 安裝項的資源使用量降到更低，這意謂著它的安裝和更新速度也更快。
 
-如果您尚未安裝 Visual Studio 2017，請前往 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)頁面免費進行安裝。
+如果您尚未安裝 Visual Studio 2017，請前往 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017)頁面免費進行安裝。
 
 若要深入了解如何在您的系統上設定 Visual Studio，請參閱 [Install Visual Studio 2017](../install/install-visual-studio.md)。
 
