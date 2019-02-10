@@ -13,15 +13,15 @@ helpviewer_keywords:
 - visual studio
 author: PhilLee-MSFT
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f139c93eeb64a56f0bd422137417e5ad6e36cb11
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 415e108da2187b2e3b5057da6b9a3850bd3eb3ca
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53836620"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54926744"
 ---
 # <a id="top"> </a> Azure 上的 Visual Studio 映像
 
@@ -35,11 +35,11 @@ ms.locfileid: "53836620"
 
 | 發行版本                                              | 版本                     |     產品版本      |
 |:------------------------------------------------------------:|:----------------------------:|:------------------------:|
-|    Visual Studio 2019：Preview (Preview 1 )                   |           企業         | 16.0.0 版 Preview 1 |
+|    Visual Studio 2019：Preview (Preview 2)                   |           Enterprise         | 16.0.0 Preview 2 版 |
 | Visual Studio 2017：最新版本 (版本 15.9)                    |    Enterprise、Community     |      15.9.4 版      |
 |         Visual Studio 2017：RTW                              |    Enterprise、Community     |      15.0.20 版     |
 |   Visual Studio 2015：最新版本 (Update 3)                      |    Enterprise、Community     |  14.0.25431.01 版   |
-|         Visual Studio 2015：RTW                              |             無             | (維護已過期)  |
+|         Visual Studio 2015：RTW                              |             None             | (維護已過期)  |
 
 > [!NOTE]
 > 根據 Microsoft 維護原則，Visual Studio 2015 的原始發行 (RTW) 版本的維護已過期。 Visual Studio 2015 Update 3 是 Visual Studio 2015 產品線剩下唯一提供的版本。
@@ -53,7 +53,7 @@ ms.locfileid: "53836620"
 * 所有可用的工作負載，包含每個工作負載的建議選擇性元件
 * .NET 4.6.2 和 .NET 4.7 SDK、目標套件和開發人員工具
 * Visual F#
-* Visual Studio 的 GitHub 擴充
+* Visual Studio 的 GitHub 擴充功能
 * LINQ to SQL 工具
 
 我們使用下列命令列來在建置映像時安裝 Visual Studio：

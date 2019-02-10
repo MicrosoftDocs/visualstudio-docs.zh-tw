@@ -7,15 +7,15 @@ helpviewer_keywords:
 - debugger
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 15facda7bcb2b07dd071aaf0e40c44d265a01826
-ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
+ms.openlocfilehash: 1ff3f2552f2334d87bc329bab41501570bd67864
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54204504"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54918197"
 ---
 # <a name="how-to-debug-for-absolute-beginners"></a>完全初學者如何偵錯
 
@@ -64,7 +64,7 @@ ms.locfileid: "54204504"
 
 在偵錯工具 (也稱為「偵錯模式」) 中執行應用程式，表示偵錯工具會在程式執行時主動監視發生的所有情況。 它也可讓您在任何位置暫停應用程式以檢查其狀態，然後逐行執行程式碼，以監看發生的所有詳細資料。
 
-在 Visual Studio 中，您可以使用 **F5** (或是 [偵錯] > [開始偵錯] 功能表命令或 [開始偵錯] 按鈕![開始偵錯](../debugger/media/dbg-tour-start-debugging.png "開始偵錯")) 進入偵錯模式。 如果發生任何例外狀況，Visual Studio 的例外狀況協助程式會帶您前往發生例外狀況的確切位置，並提供其他實用的資訊。 如需如何在程式碼中處理例外狀況的詳細資訊，請參閱[透過撰寫更好的 C# 程式碼來修正錯誤 (Bug)](../debugger/write-better-code-with-visual-studio.md)。
+在 Visual Studio 中，您可以使用 **F5** (或是 [偵錯] > [開始偵錯] 功能表命令或 [開始偵錯] 按鈕![開始偵錯](../debugger/media/dbg-tour-start-debugging.png "開始偵錯")) 進入偵錯模式。 如果發生任何例外狀況，Visual Studio 的例外狀況協助程式會帶您前往發生例外狀況的確切位置，並提供其他實用的資訊。 如需如何在程式碼中處理例外狀況的詳細資訊，請參閱[偵錯技術和工具](../debugger/write-better-code-with-visual-studio.md)。
 
 如果您未收到例外狀況，您可能知道要到程式碼中的何處尋找問題。 這是您搭配偵錯工具使用「中斷點」的位置，讓您有機會更仔細地檢查程式碼。 中斷點是可靠偵錯最基本也最重要的功能。 中斷點會指出 Visual Studio 應暫停程式碼執行的地方，如此一來您可以查看變數的值、記憶體的行為，或程式碼執行的順序。
 

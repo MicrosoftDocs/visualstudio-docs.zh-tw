@@ -6,15 +6,15 @@ ms.technology: vs-ide-compile
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2987df6c8ed8a26c2cf95020e26f67c36721d676
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: adf3ef6be32b36d0bb033486dfb846c55c1fad34
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50672778"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54926668"
 ---
 # <a name="walkthrough-build-an-application"></a>逐步解說：建置應用程式
 
@@ -26,7 +26,7 @@ ms.locfileid: "50672778"
 
 ## <a name="create-a-custom-build-configuration"></a>建立自訂組建組態
 
-當您建立方案時，系統會自動為方案定義偵錯和發行組建組態以及其預設平台目標。 之後，您可以自訂這些組態或建立您自己的組態。 組建組態指定組建類型。 組建平台指定應用程式針對該組態的目標作業系統。 如需詳細資訊，請參閱[了解組建組態](../ide/understanding-build-configurations.md)、[了解組建平台](../ide/understanding-build-platforms.md)和[如何：設定偵錯和發行組態](../debugger/how-to-set-debug-and-release-configurations.md)。
+當您建立方案時，系統會自動為方案定義偵錯和發行組建組態以及其預設平台目標。 之後，您可以自訂這些組態或建立您自己的組態。 組建組態指定組建類型。 組建平台指定應用程式針對該組態的目標作業系統。 如需詳細資訊，請參閱[了解組建組態](../ide/understanding-build-configurations.md)、[了解組建平台](../ide/understanding-build-platforms.md)和[如何：設定偵錯和版本組態](../debugger/how-to-set-debug-and-release-configurations.md)。
 
 您可以使用 [組態管理員] 對話方塊變更或建立組態和平台設定。 在此程序中，您將建立要測試的組建組態。
 
@@ -130,7 +130,7 @@ ms.locfileid: "50672778"
 
    ![Visual Basic 建置警告、輸出視窗](../ide/media/buildwalk_visualbasicbuildwarnings.png)
 
-   如需詳細資訊，請參閱[如何︰隱藏編譯器警告](../ide/how-to-suppress-compiler-warnings.md)。
+   如需詳細資訊，請參閱[＜How to：隱藏編譯器警告](../ide/how-to-suppress-compiler-warnings.md)。
 
 ## <a name="display-additional-build-details-in-the-output-window"></a>在輸出視窗中顯示其他組建詳細資料
 
@@ -162,13 +162,13 @@ ms.locfileid: "50672778"
     > [!TIP]
     > 如果您選擇 **Ctrl**+**F** 鍵顯示 [尋找] 對話方塊，即可搜尋 [輸出] 視窗的內容。
 
-如需詳細資訊，請參閱[如何：檢閱、儲存和設定組建記錄檔](../ide/how-to-view-save-and-configure-build-log-files.md)。
+如需詳細資訊，請參閱[＜How to：檢視、儲存及設定組建記錄檔](../ide/how-to-view-save-and-configure-build-log-files.md)。
 
 ## <a name="create-a-release-build"></a>建立發行組建
 
 您可以建置已針對交付最佳化的範例應用程式版本。 針對發行組建，您將指定在開始建置之前將可執行檔複製到網路共用。
 
-如需詳細資訊，請參閱[如何：變更組建輸出目錄](../ide/how-to-change-the-build-output-directory.md)和[在 Visual Studio 中建置和清除專案與方案](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)。
+如需詳細資訊，請參閱[＜How to：變更組建輸出目錄](../ide/how-to-change-the-build-output-directory.md)和[在 Visual Studio 中建置和清除專案與方案](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)。
 
 ### <a name="specify-a-release-build-for-visual-basic"></a>指定 Visual Basic 的發行組建
 
