@@ -1,7 +1,6 @@
 ---
 title: CA2002:不要鎖定具有弱式識別的物件
 ms.date: 01/31/2018
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - DoNotLockOnObjectsWithWeakIdentity
@@ -17,12 +16,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: c10eb0a37f24b4fe36b2e1afde8d3bec16e5896a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 054f809483cf2a9c4647370e2f69187795c5c203
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54954991"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55916579"
 ---
 # <a name="ca2002-do-not-lock-on-objects-with-weak-identity"></a>CA2002:不要鎖定具有弱式識別的物件
 

@@ -2,7 +2,6 @@
 title: 工作流程設計工具-如果活動設計工具
 ms.date: 11/04/2016
 ms.topic: reference
-ms.prod: visual-studio-dev15
 f1_keywords:
 - System.Activities.Statements.If.UI
 ms.assetid: 930a8fa2-db98-43e9-ad6d-a85cc7a6519a
@@ -11,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f069da9bb84074544cc388ab2bf7fa1eab3c7595
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 762199906bbb84701c044b5fa9f3f3b8c6fdfdae
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54917155"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55916969"
 ---
 # <a name="if-activity-designer"></a>If 活動設計工具
 

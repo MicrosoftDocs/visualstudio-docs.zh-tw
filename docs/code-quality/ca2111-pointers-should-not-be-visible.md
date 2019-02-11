@@ -1,7 +1,6 @@
 ---
 title: CA2111:指標不應該為可見的
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - PointersShouldNotBeVisible
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 30285ab929cb80e689d70adb267cb17c69a9aff1
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 46284c37bc40f963253912b4b8b66cd20a871f83
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55033099"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55908500"
 ---
 # <a name="ca2111-pointers-should-not-be-visible"></a>CA2111:指標不應該為可見的
 

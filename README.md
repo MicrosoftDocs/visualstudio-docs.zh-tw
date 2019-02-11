@@ -1,14 +1,6 @@
----
-ms.openlocfilehash: 14e56ddbedb419b41f413b014391fc69caecc9dd
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
-ms.translationtype: HT
-ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54344703"
----
-# <a name="visual-studio-2017-documentation"></a>Visual Studio 2017 文件
+# <a name="visual-studio-documentation"></a>Visual Studio 文件
 
-歡迎! 此存放庫包含 Visual Studio 2017 技術文件的來源檔案。 主題發佈在 [docs.microsoft.com](https://docs.microsoft.com/visualstudio)。
+歡迎! 此存放庫包含 Visual Studio 技術文件的來源檔案。 主題發佈在 [docs.microsoft.com](https://docs.microsoft.com/visualstudio)。
 
 此存放庫已於 2017 年 6 月 23 日從 https://github.com/Microsoft/vsdocs 移動。 舊 URL 的流量會被重新導向此處。
 

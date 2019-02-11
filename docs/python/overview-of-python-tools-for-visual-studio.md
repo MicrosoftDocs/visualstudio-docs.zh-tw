@@ -7,17 +7,17 @@ ms.prod: visual-studio-dev15
 ms.topic: overview
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8e37648be6bb9f78aa80027b50b2fea6592d7c9e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 699578e564999db55562abaad764cde80fc8b618
+ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53927333"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55232061"
 ---
 # <a name="work-with-python-in-visual-studio-on-windows"></a>在 Windows 的 Visual Studio 中使用 Python
 
@@ -40,7 +40,7 @@ Visual Studio 的 [Python 環境] 視窗 (在下方顯示為寬型的展開檢�
 
 ![[Python 環境] 視窗的展開檢視](media/environments-expanded-view.png)
 
-使用 [開啟互動式視窗] 在 Visual Studio 的內容中命令以互動方式執行 Python。 使用 [在 PowerShell 中開啟] 命令，在所選環境的資料夾中開啟另外的命令視窗。 您可以從命令視窗執行任何 Python 指令碼。 
+使用 [開啟互動式視窗] 在 Visual Studio 的內容中命令以互動方式執行 Python。 使用 [在 PowerShell 中開啟] 命令，在所選環境的資料夾中開啟另外的命令視窗。 您可以從命令視窗執行任何 Python 指令碼。
 
 如需詳細資訊：
 
@@ -140,7 +140,7 @@ Visual Studio 的其中一個優點是功能強大的偵錯工具。 特別是�
 
 Python 工作負載包含「適用於 Python 的 Azure SDK」，此 SDK 可簡化從 Windows、Mac OS X 與 Linux 應用程式使用 Azure 服務的流程。
 
-如需詳細資訊，請參閱 [Azure SDK for Python](azure-sdk-for-python.md)
+如需詳細資訊，請參閱 [Azure SDK for Python](/python/azure/?view=azure-python)。
 
 ## <a name="python-training-on-microsoft-virtual-academy"></a>Microsoft Virtual Academy 上的 Python 訓練
 

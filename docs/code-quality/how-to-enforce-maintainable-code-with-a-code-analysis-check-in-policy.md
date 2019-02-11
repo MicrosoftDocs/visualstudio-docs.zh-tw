@@ -1,7 +1,6 @@
 ---
 title: HOW TO：以程式碼分析簽入原則來強制程式碼的可維護性
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - code analysis, check-in policies
@@ -11,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a9b868054813f65e15c3dfd422be7240df09e284
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 7139c952b40957a564fcd4074b1c931817dfb851
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54956749"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55911218"
 ---
 # <a name="how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy"></a>HOW TO：強制維護的程式碼的程式碼分析簽入原則
 
@@ -56,7 +55,7 @@ Team foundation 版本控制的系統管理員可以將程式碼分析可維護�
 
      此外，如果您想避免成功的組建將規則違規時，請選取**將警告視為錯誤**規則描述旁邊的核取方塊。
 
-3. 按一下 [確定 **Deploying Office Solutions**]。 新的簽入原則現在適用於未來的簽入。
+3. 按一下 [確定] 。 新的簽入原則現在適用於未來的簽入。
 
 ## <a name="see-also"></a>另請參閱
 

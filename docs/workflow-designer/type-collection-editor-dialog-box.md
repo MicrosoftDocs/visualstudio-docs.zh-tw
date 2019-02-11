@@ -2,7 +2,6 @@
 title: 工作流程設計工具-型別集合編輯器對話方塊
 ms.date: 11/04/2016
 ms.topic: reference
-ms.prod: visual-studio-dev15
 f1_keywords:
 - TypeCollectionEditor.UI
 ms.assetid: 63cdea6b-bca2-4c06-b8b4-c8faabd40726
@@ -11,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 257091b6693bdf37c063b1bc992bdec4531e1710
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a6754c8264b68d8884f5e8ebaea763e004c71596
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55036104"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55913911"
 ---
 # <a name="type-collection-editor-dialog-box"></a>型別集合編輯器對話方塊
 

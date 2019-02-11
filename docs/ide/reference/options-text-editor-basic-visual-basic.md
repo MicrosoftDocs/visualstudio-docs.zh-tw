@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 5a8cafca-f7b4-4a2d-92ce-6894a7673d00
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8014ad72978a4b3ee37547a6660f739973ae4e46
-ms.sourcegitcommit: 8bfabab73b39b3b3e68a3e8dc225515e8b310fed
+ms.openlocfilehash: ccf0e8d76aeaf1f6982d7b776abfd32609e1b3e1
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "54398243"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54998257"
 ---
 # <a name="options-text-editor-basic-visual-basic-advanced"></a>選項、文字編輯器、基本 (Visual Basic)、進階
 位於 [選項] ([工具] 功能表) 對話方塊上 [文字編輯器] 資料夾的 [基本] 資料夾中的 [VB 專用] 屬性頁面包含下列屬性：
@@ -40,18 +40,18 @@ ms.locfileid: "54398243"
 - 排序 using 時先放置 'System' 指示詞
 
    選取後，快顯功能表中的 [移除並排序 Using] 命令會對 `using` 指示詞進行排序，並將 'System' 命名空間置於清單頂端。
-   
+
 - 使用指示詞群組來進行分隔
 
    選取後，快顯功能表中的 [移除並排序 Using] 命令會透過在具有相同根命名空間的指示詞群組之間插入空白行來分隔 `using` 指示詞。
-   
-- 為參考組件中的類型建議 Using 
-- 為 NuGet 套件中的類型建議 Using 
+
+- 為參考組件中的類型建議 Using
+- 為 NuGet 套件中的類型建議 Using
 
    選取這些選項後，[快速動作](../quick-actions.md)可用來安裝 NuGet 套件，並為未參考的類型新增 `using` 指示詞。
 
    ![在 Visual Studio 中安裝 NuGet 套件的快速動作](media/nuget-lightbulb.png)
-  
+
 
 ## <a name="highlighting"></a>醒目提示
 
@@ -77,7 +77,7 @@ ms.locfileid: "54398243"
 
 ## <a name="block-structure-guides"></a>區塊結構輔助線
 
-選取這些核取方塊可在程式碼中顯示大括號 (**{}**) 之間的虛線垂直線。 這樣可讓您輕鬆查看宣告層級和程式碼層級建構的個別程式碼區塊。
+選取時，編輯器中會出現對齊結構化程式碼區塊的垂直線，可讓您輕鬆地識別個別程式碼區塊。 例如，您會在 `Sub` 陳述式中的 `Sub` 與 `EndSub` 之間看到線條。
 
 ## <a name="editor-help"></a>編輯器說明
 

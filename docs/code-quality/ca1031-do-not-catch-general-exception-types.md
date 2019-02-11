@@ -1,7 +1,6 @@
 ---
 title: CA1031:不要攔截一般例外狀況類型
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - CA1031
@@ -19,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 2602d8eb59fe5f716139adbca664566aed6c594b
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e285ead27b8d3d7c674a138d5f06c69a7e88d1fc
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55038561"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55915604"
 ---
 # <a name="ca1031-do-not-catch-general-exception-types"></a>CA1031:不要攔截一般例外狀況類型
 

@@ -21,19 +21,19 @@ helpviewer_keywords:
 ms.assetid: 710891fd-379e-42c2-a84b-44a7af694ca0
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c96a3b6699428b156a23ad643eb7958cb438b994
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 25d9f278ab63ddfa4ffbbf72a4899ce99828b720
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349266"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54942749"
 ---
 # <a name="build-and-clean-projects-and-solutions-in-visual-studio"></a>在 Visual Studio 中建置和清除專案與方案
 
-您可以使用本主題中的程序來建置、重建或清除所有或部分專案，或方案中的專案項目。 如需逐步教學課程，請參閱[逐步解說︰建置應用程式](../ide/walkthrough-building-an-application.md)。
+您可以使用本主題中的程序來建置、重建或清除所有或部分專案，或方案中的專案項目。 如需逐步教學課程，請參閱[逐步解說：建置應用程式](../ide/walkthrough-building-an-application.md)。
 
 > [!NOTE]
 > 本主題適用於 Windows 上的 Visual Studio。 針對 Visual Studio for Mac，請參閱[在 Visual Studio for Mac 中建置和清除專案和方案](/visualstudio/mac/building-and-cleaning-projects-and-solutions)。
@@ -114,11 +114,11 @@ ms.locfileid: "51349266"
 
 ## <a name="see-also"></a>另請參閱
 
-- [如何：檢視、儲存和設定組建記錄檔](../ide/how-to-view-save-and-configure-build-log-files.md)
+- [如何：檢視、儲存及設定組建記錄檔](../ide/how-to-view-save-and-configure-build-log-files.md)
 - [取得組建記錄檔](../msbuild/obtaining-build-logs-with-msbuild.md)
 - [編譯和建置](../ide/compiling-and-building-in-visual-studio.md)
 - [了解組建組態](../ide/understanding-build-configurations.md)
-- [如何：設定偵錯和發行設定](../debugger/how-to-set-debug-and-release-configurations.md)
+- [如何：設定偵錯和發行組態](../debugger/how-to-set-debug-and-release-configurations.md)
 - [C/C++ 建置參考](/cpp/build/reference/c-cpp-building-reference)
 - [Devenv 命令列參數](../ide/reference/devenv-command-line-switches.md)
 - [方案和專案](../ide/solutions-and-projects-in-visual-studio.md)

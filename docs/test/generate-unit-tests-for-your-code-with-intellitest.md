@@ -6,16 +6,16 @@ ms.topic: conceptual
 f1_keywords:
 - vs.UnitTest.CreateIntelliTest
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 1d7c7886e407ab7f8151ecb8f79a7eb4090aed89
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d0a9f13493b93dde73726253edf43d66f41bd2ba
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53958822"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55006030"
 ---
 # <a name="generate-unit-tests-for-your-code-with-intellitest"></a>使用 IntelliTest 為程式碼產生單元測試
 
@@ -27,7 +27,7 @@ IntelliTest 會探索您的 .NET 程式碼，從而產生測試資料及單元�
 
 **建立 IntelliTest** 和**執行 IntelliTest** 功能表命令︰
 
-* 只提供於 Visual Studio 2015 及更新版本的 Enterprise Edition。
+* 只適用於 Visual Studio 2015 及更新版本的 Enterprise Edition。
 
 * 只支援以 .NET Framework 為目標的 C# 程式碼。
 

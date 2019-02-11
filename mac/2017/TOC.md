@@ -53,6 +53,10 @@
 ## [設定 Subversion 存放庫](/visualstudio/mac/set-up-subversion-repository)
 ## [使用 Subversion](/visualstudio/mac/working-with-subversion)
 
+# [Web 應用程式部署](/visualstudio/mac/web-app-deployment.md)
+## [發佈至 Azure App Service](/visualstudio/mac/publish-app-svc.md)
+## [發佈至資料夾](/visualstudio/mac/publish-folder.md)
+
 # [工作負載](/visualstudio/mac/workloads)
 ## [ASP.NET Core](/visualstudio/mac/asp-net-core)
 ### [Razor](/visualstudio/mac/razor)

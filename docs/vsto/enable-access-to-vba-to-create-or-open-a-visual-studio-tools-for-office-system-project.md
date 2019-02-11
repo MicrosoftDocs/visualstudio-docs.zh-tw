@@ -4,7 +4,6 @@ decsprition: You must explicitly enable access to the Office VBA project system 
 titleSuffix: ''
 ms.custom: seodec18
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - vst.project.vbawrongversion
@@ -20,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1d95f3915cb3c8bd780247655058fdc9dd908df2
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 219b2e1bd3ff7690f19066f83e914e5d0b878a73
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54869355"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55945777"
 ---
 # <a name="enable-access-to-vba-to-create-or-open-a-visual-studio-tools-for-the-microsoft-office-system-project"></a>啟用存取權建立或開啟 Visual Studio Tools for the Microsoft Office system 專案的 VBA
 
@@ -60,7 +59,7 @@ ms.locfileid: "54869355"
 
 5. 選取或取消選取**信任 VBA 專案物件模型存取**啟用或停用 Visual Basic 專案的存取。
 
-6. 按一下 [確定 **Deploying Office Solutions**]。
+6. 按一下 [確定] 。
 
 ### <a name="to-enable-or-disable-access-to-visual-basic-projects-with-the-2007-microsoft-office-system"></a>若要啟用或停用使用 2007 Microsoft Office system 的 Visual Basic 專案的存取
 
@@ -70,7 +69,7 @@ ms.locfileid: "54869355"
 
 3. 若要啟用，或清除即可停用，請選取**信任存取 Visual Basic 專案**。
 
-4. 按一下 [確定 **Deploying Office Solutions**]。
+4. 按一下 [確定] 。
 
 ## <a name="to-set-your-office-macro-security-level"></a>設定 Office 巨集安全性層級
 
@@ -84,7 +83,7 @@ ms.locfileid: "54869355"
 
 5. 在 **巨集設定**區段中，選取所需的設定。
 
-6. 按一下 [確定 **Deploying Office Solutions**]。
+6. 按一下 [確定] 。
 
 ### <a name="to-set-your-office-macro-security-level-with-the-2007-microsoft-office-system"></a>若要設定 Office 巨集安全性層級使用 2007 Microsoft Office system
 

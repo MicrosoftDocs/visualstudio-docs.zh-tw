@@ -7,16 +7,16 @@ helpviewer_keywords:
 - EditorConfig naming conventions
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
 ms.workload:
 - multiple
-ms.openlocfilehash: 60bffcf458e96a5e224493ac9a33b8fa9fb72541
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 50fe9249baae6d881c2d67ebc0a65a0c6335cbd3
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53898657"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54935354"
 ---
 # <a name="net-naming-conventions-for-editorconfig"></a>EditorConfig 的 .NET 命名慣例
 
@@ -85,7 +85,7 @@ ms.locfileid: "53898657"
 
 `dotnet_naming_symbols.<symbolTitle>.required_modifiers = <values>`
 
-以下清單會顯示允許的值，您可以逗號分隔來指定多個值。
+以下清單會顯示允許的值，您可以逗號分隔來指定多個值。 命名規則只會比對擁有 `required_modifiers` 中指定所有修飾詞的簽章。 如果您省略此屬性時，則會使用空白清單的預設值；換句話說，不需要比對特定修飾詞。 這表示不論是否套用此規則，符號的修飾詞都不會造成影響。
 
 - `abstract` 或 `must_inherit`
 - `async`

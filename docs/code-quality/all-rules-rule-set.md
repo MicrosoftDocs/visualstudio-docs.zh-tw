@@ -1,19 +1,18 @@
 ---
 title: 所有規則規則集
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 001faad19c34f00b011bae64ba8de3739b417076
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f287328c40e2391a17d0c9e0b8ce8067ba216295
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55038431"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55922936"
 ---
 # <a name="all-rules-rule-set"></a>所有規則規則集
 

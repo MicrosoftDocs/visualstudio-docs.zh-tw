@@ -2,18 +2,17 @@
 title: 工作區和 Visual Studio 中的語言服務 |Microsoft Docs
 ms.date: 02/21/2018
 ms.topic: conceptual
-ms.assetid: 8631ffea-83c8-4fd4-a01e-c59772e89c84
 author: vukelich
 ms.author: svukel
 manager: viveis
 ms.workload:
 - vssdk
-ms.openlocfilehash: 28ecd995446969c271694c554ae21e03c1afc79d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2893ae2bcd70ff317ba799fea6cfd2751c685731
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53850264"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55929774"
 ---
 # <a name="workspaces-and-language-services"></a>工作區和語言服務
 
@@ -61,4 +60,4 @@ ms.locfileid: "53850264"
 
 ## <a name="next-steps"></a>後續步驟
 
-* [工作區建置](workspace-build.md)-開啟資料夾支援建置系統，例如 MSBuild 和 makefile。 
+* [工作區建置](workspace-build.md)-開啟資料夾支援建置系統，例如 MSBuild 和 makefile。

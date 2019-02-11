@@ -11,13 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: e56688d74647c12340fcf9755dca3de282806773
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 3b4b2f57485a942877861400aec9ec7d0f13f977
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54933022"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55957607"
 ---
 # <a name="customizing-element-creation-and-movement"></a>自訂項目的建立和移動
 

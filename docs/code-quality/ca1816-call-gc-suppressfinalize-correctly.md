@@ -1,7 +1,6 @@
 ---
 title: CA1816:正確呼叫 GC.SuppressFinalize
 ms.date: 06/30/2018
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - CA1816
@@ -18,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: d8f7952758c091765116f44ef4454cd9214e0b49
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 2c14f9ed8803c02d1570ac2a3dee82fbdfca5f01
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54940439"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55948533"
 ---
 # <a name="ca1816-call-gcsuppressfinalize-correctly"></a>CA1816:正確呼叫 GC.SuppressFinalize
 

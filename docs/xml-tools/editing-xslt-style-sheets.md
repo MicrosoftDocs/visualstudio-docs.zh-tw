@@ -1,7 +1,6 @@
 ---
 title: 編輯 XSLT 樣式表
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: 080bed0f-0ca9-4be7-aecd-6bdaebc04007
 author: gewarren
@@ -9,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a8625defb0d9e8d656aac7bb3d2236d4f5bb9c9
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c212bcac1584a47f696f6ab90d4f616286a2ac5e
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55021880"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55912558"
 ---
 # <a name="edit-xslt-style-sheets"></a>編輯 XSLT 樣式表
 

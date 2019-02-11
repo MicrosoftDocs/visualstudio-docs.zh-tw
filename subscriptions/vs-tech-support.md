@@ -9,12 +9,12 @@ description: 了解如何啟用 Visual Studio 訂用帳戶所包含的技術支�
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: be2fcf753c73055d647e9a924dfec306d49ce202
-ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
+ms.openlocfilehash: de53a94bd8ab0513e27f7c62461165d9ff8e865c
+ms.sourcegitcommit: 447f2174bdecdd471d8a8e11c19554977db620a0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "54380254"
+ms.lasthandoff: 01/28/2019
+ms.locfileid: "55089220"
 ---
 # <a name="activate-the-technical-support-benefit-in-visual-studio-subscriptions"></a>啟用 Visual Studio 訂用帳戶中的技術支援權益
 
@@ -27,7 +27,7 @@ ms.locfileid: "54380254"
 > ![技術支援權益磚](_img/vs-tech-support/vs-tech-support-tile.png)
 
 
-1. 若要開始使用您的技術支援權益，請按一下 [技術支援] 磚的 [Chat to activate] \(要啟動的聊天\)。 
+1. 若要開始使用您的技術支援權益，請前往 https://my.visualstudio.com/Benefits，向下捲動至 [支援] 區段，然後在 [技術支援] 磚上，按一下 [Chat to activate] \(要啟動的聊天\)。 
 2. 這會起始與代表的聊天工作階段，該代表可建立您的合約識別碼和存取識別碼，並將這些識別碼提供給您。 
 3. 若要完成此程序，您必須提供代表：
    - 您用於登入訂用帳戶的電子郵件地址

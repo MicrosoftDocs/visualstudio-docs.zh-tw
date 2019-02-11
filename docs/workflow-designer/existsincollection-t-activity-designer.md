@@ -2,7 +2,6 @@
 title: 工作流程設計工具-ExistsInCollection&lt;T&gt;活動設計工具
 ms.date: 11/04/2016
 ms.topic: reference
-ms.prod: visual-studio-dev15
 f1_keywords:
 - System.Activities.Statements.ExistsInCollection`1.UI
 ms.assetid: 0acf9a13-caf5-4bb4-ba22-ec37d2b7267a
@@ -11,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9e912c305e58b3a902089c21ed84cc2c83c4ea64
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 06892bcfdca33e5e77e8c01f06f594849e5293e5
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54995943"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55909488"
 ---
 # <a name="existsincollectiont-activity-designer"></a>ExistsInCollection\<T > 活動設計工具
 

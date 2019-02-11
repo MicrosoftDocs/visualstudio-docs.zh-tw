@@ -1,7 +1,6 @@
 ---
 title: CA1043:必須針對索引子使用整數或字串引數
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - CA1043
@@ -19,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f140e8678bfb03bc29a21b05f6f3bfada76e9e7
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f3bd308e35e36c18cf9231f7fd2ed9d9f442a9ca
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55018552"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55922468"
 ---
 # <a name="ca1043-use-integral-or-string-argument-for-indexers"></a>CA1043:必須針對索引子使用整數或字串引數
 

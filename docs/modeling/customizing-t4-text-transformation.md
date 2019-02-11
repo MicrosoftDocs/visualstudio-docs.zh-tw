@@ -10,13 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: bc59718131cc4879a351097b767fa513d72b5c81
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 33f7fd14ff62369de66e4934bf9bb2cf6fd83542
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54962744"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55951549"
 ---
 # <a name="customize-t4-text-transformation"></a>自訂 T4 文字轉換
 

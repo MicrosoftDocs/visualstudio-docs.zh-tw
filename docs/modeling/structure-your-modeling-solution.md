@@ -7,13 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: eeb63a384498e04f4c720dcfa5485f064d65d44c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 8b602afa2b6611f5201515f492f7b3c7bb7afa08
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54955722"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55912413"
 ---
 # <a name="structure-your-modeling-solution"></a>建構模型方案
 

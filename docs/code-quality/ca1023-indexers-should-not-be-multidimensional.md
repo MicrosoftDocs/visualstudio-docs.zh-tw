@@ -1,7 +1,6 @@
 ---
 title: CA1023:不應該使用多維索引子
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - IndexersShouldNotBeMultidimensional
@@ -19,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: a9b708b1be65b8aefa34e9f0366a87d6f94b5b5c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: ef3afd9dda70d02698abec5459b36e6acc2c5ed0
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55043696"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55924539"
 ---
 # <a name="ca1023-indexers-should-not-be-multidimensional"></a>CA1023:不應該使用多維索引子
 

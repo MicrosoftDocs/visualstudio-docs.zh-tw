@@ -5,15 +5,14 @@ ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - multiple
-ms.openlocfilehash: ebdd8809ed4c9ad7079cecd8f28986eb711bc304
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 8f53376d1cff79dd69b7fb17704c4ddae8803c46
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54981285"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55913180"
 ---
 # <a name="improve-performance-for-code-maps"></a>改善效能的 code map
 

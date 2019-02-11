@@ -2,7 +2,6 @@
 title: 工作流程設計工具-Pick 活動設計工具
 ms.date: 11/04/2016
 ms.topic: reference
-ms.prod: visual-studio-dev15
 f1_keywords:
 - System.Activities.Statements.Pick.UI
 ms.assetid: 642c0a47-1b47-45de-a19a-ca0606cedd7a
@@ -11,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3afd20b75bdb2c00317f9acf6ec6adcd12f6f949
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: ed558c40e932f2148f2240247d19a4fc6df0d06a
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55069773"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55950522"
 ---
 # <a name="pick-activity-designer"></a>Pick 活動設計工具
 

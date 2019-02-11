@@ -1,7 +1,6 @@
 ---
 title: 分析器規則集
 ms.date: 07/20/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - analyzers, rule sets
@@ -11,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d5a8b082de0d22e75bf1e31751e788324c863524
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 567d315694ff4f55ae5e1d2df2e7963bc21902a3
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55038626"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55932010"
 ---
 # <a name="rule-sets-for-roslyn-analyzers"></a>Roslyn 分析器的規則集
 

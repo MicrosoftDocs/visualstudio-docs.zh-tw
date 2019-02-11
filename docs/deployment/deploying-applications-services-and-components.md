@@ -2,7 +2,7 @@
 title: 部署功能導覽
 description: 了解從 Visual Studio 部署應用程式的選項。
 ms.custom: mvc
-ms.date: 06/22/2018
+ms.date: 01/29/2019
 ms.topic: quickstart
 dev_langs:
 - FSharp
@@ -23,14 +23,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4046abd84443bd1cff6b6e618f2dfba2de5e09dd
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: dab79e4cbc9ab9b37a9052ee1337a5e9b94a6947
+ms.sourcegitcommit: 0342f99120fbd603b8f06f7e9166c39f2896827a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54974928"
+ms.lasthandoff: 02/05/2019
+ms.locfileid: "55742452"
 ---
-# <a name="quickstart-first-look-at-deployment-in-visual-studio"></a>快速入門：Visual Studio 中的部署簡介
+# <a name="first-look-at-deployment-in-visual-studio"></a>Visual Studio 中的部署簡介
 
 透過部署應用程式、服務或元件，就可以將它散發到其他電腦、裝置、伺服器或雲端上進行安裝。 請在 Visual Studio 中針對您需要的部署類型選擇適當的方法。 (許多應用程式類型支援此處未描述的其他部署工具，例如命令列部署或 NuGet 等)。
 
@@ -44,24 +44,32 @@ ms.locfileid: "54974928"
 
     ![選擇 [發行]](../deployment/media/quickstart-publish.png)
 
-- **Visual C++ 執行階段**：您可以使用本機部署或靜態連結來部署 Visual C++ 執行階段。 如需詳細資訊，請參閱[部署原生傳統型應用程式 (Visual C++)](/cpp/ide/deploying-native-desktop-applications-visual-cpp)。
+- **Windows 傳統型**：使用 ClickOnce 部署可以將 Windows 傳統型應用程式發行至資料夾。 使用者只要按一下，就可以安裝應用程式。 如需詳細資訊，請參閱[使用 ClickOnce 部署傳統型應用程式](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) (C# 和 Visual Basic)。 針對 C++/CLR，請參閱[使用 ClickOnce 部署原生應用程式](/cpp/ide/clickonce-deployment-for-visual-cpp-applications)，針對 C/C++，請參閱[使用安裝專案部署原生應用程式](/cpp/ide/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project)。
 
 ## <a name="publish-to-azure"></a>發佈至 Azure
 
-- **ASP.NET**、**ASP.NET Core**、**Python** 及 **Node.js**：您可以使用發行工具將應用程式快速部署至 Azure App Service 或 Azure 虛擬機器。 在方案總管中，以滑鼠右鍵按一下專案，然後選擇 [發行]。 (如果您之前已設定任何發行設定檔，則必須按一下 [建立新設定檔])。在 [發行] 對話方塊中，選擇 [App Service] 或 [Azure 虛擬機器]，然後遵循設定步驟。
+- **ASP.NET**、**ASP.NET Core**、**Python** 及 **Node.js**：使用下列其中一個方法發行至 Azure App Service 或 Azure App Service Linux (使用容器)。
 
-    ![選擇 [Azure App Service]](../deployment/media/quickstart-publish-azure.png "選擇 [Azure App Service]")
+  - 針對連續 (或自動) 部署應用程式，使用 Azure DevOps 與 [Azure Pipelines](https://docs.microsoft.com/azure/devops/pipelines/get-started-yaml?view=azdevops)。
 
-    在 Visual Studio 2017 15.7 版及更新版本中，您可以將 ASP.NET Core 應用程式部署至**適用於 Linux 的 App Service**。
+  - 針對一次 (或手動) 部署應用程式，請使用 Visual Studio 中的 [發行] 工具。
 
-    針對 Python 應用程式，另請參閱 [Python - 發行至 Azure App Service](../python/publishing-python-web-applications-to-azure-from-visual-studio.md?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)。
+  針對提供伺服器自訂組態的部署，您也可以使用 [發行] 工具將應用程式部署至 Azure 虛擬機器。
 
-    如需快速簡介，請參閱[發行至 Azure](quickstart-deploy-to-azure.md)及[發行至 Linux](quickstart-deploy-to-linux.md)。 此外，請參閱[將 ASP.NET Core 應用程式發行至 Azure](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs)。 如需使用 Git 進行部署，請參閱[使用 Git 將 ASP.NET Core 持續部署至 Azure](/aspnet/core/publishing/azure-continuous-deployment)。
+  若要使用 [發行] 工具，以滑鼠右鍵按一下 [方案總管] 中的專案，然後選擇 [發行]。 (如果您之前已設定任何發行設定檔，則必須按一下 [建立新設定檔])。在 [發行] 對話方塊中，選擇 [App Service] 或 [Azure 虛擬機器]，然後遵循設定步驟。
 
-    如需將發行設定檔從 Azure App Service 匯入至 Visual Studio 的資訊，請參閱[匯入發行設定並部署至 Azure](../deployment/tutorial-import-publish-settings-azure.md)。
+  ![選擇 [Azure App Service]](../deployment/media/quickstart-publish-azure.png "選擇 [Azure App Service]")
 
-    > [!NOTE]
-    > 如果您還沒有 Azure 帳戶，則可以[在這裡註冊](https://azure.microsoft.com/free/?ref=microsoft.com&utm_source=microsoft.com&utm_medium=doc&utm_campaign=visualstudio)。
+  從 Visual Studio 2017 15.7 版開始，您可以將 ASP.NET Core 應用程式部署至**適用於 Linux 的 App Service**。
+
+  針對 Python 應用程式，另請參閱 [Python - 發行至 Azure App Service](../python/publishing-python-web-applications-to-azure-from-visual-studio.md?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)。
+
+  如需快速簡介，請參閱[發行至 Azure](quickstart-deploy-to-azure.md)及[發行至 Linux](quickstart-deploy-to-linux.md)。 此外，請參閱[將 ASP.NET Core 應用程式發行至 Azure](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs)。 如需使用 Git 進行部署，請參閱[使用 Git 將 ASP.NET Core 持續部署至 Azure](/aspnet/core/publishing/azure-continuous-deployment)。
+
+  如需將發行設定檔從 Azure App Service 匯入至 Visual Studio 的資訊，請參閱[匯入發行設定並部署至 Azure](../deployment/tutorial-import-publish-settings-azure.md)。
+
+  > [!NOTE]
+  > 如果您還沒有 Azure 帳戶，則可以[在這裡註冊](https://azure.microsoft.com/free/?ref=microsoft.com&utm_source=microsoft.com&utm_medium=doc&utm_campaign=visualstudio)。
 
 ## <a name="publish-to-web-or-deploy-to-network-share"></a>發行至 Web 或部署至網路共用
 
@@ -75,9 +83,7 @@ ms.locfileid: "54974928"
 
     您也可以使用許多其他方式來部署 ASP.NET 應用程式和服務。 如需詳細資訊，請參閱[部署 ASP.NET Web 應用程式和服務](http://www.asp.net/aspnet/overview/deployment)。
 
-- **Visual C++ 執行階段**：您可以使用集中部署來部署 Visual C++ 執行階段。 如需詳細資訊，請參閱[部署原生傳統型應用程式 (Visual C++)](/cpp/ide/deploying-native-desktop-applications-visual-cpp)。
-
-- **Windows 傳統型**：使用 ClickOnce 部署可以將 Windows 傳統型應用程式發行至 Web 伺服器或網路檔案共用。 使用者只要按一下，就可以安裝應用程式。 如需詳細資訊，請參閱[使用 ClickOnce 部署傳統型應用程式](how-to-publish-a-clickonce-application-using-the-publish-wizard.md)及[使用 ClickOnce 部署原生應用程式](/cpp/ide/clickonce-deployment-for-visual-cpp-applications)。
+- **Windows 傳統型**：使用 ClickOnce 部署可以將 Windows 傳統型應用程式發行至 Web 伺服器或網路檔案共用。 使用者只要按一下，就可以安裝應用程式。 如需詳細資訊，請參閱[使用 ClickOnce 部署傳統型應用程式](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) (C# 和 Visual Basic)。 針對 C++/CLR，請參閱[使用 ClickOnce 部署原生應用程式](/cpp/ide/clickonce-deployment-for-visual-cpp-applications)，針對 C/C++，請參閱[使用安裝專案部署原生應用程式](/cpp/ide/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project)。
 
 ## <a name="publish-to-microsoft-store"></a>發行至 Microsoft Store
 
@@ -95,25 +101,25 @@ ms.locfileid: "54974928"
 
 如果您要部署 UWP 應用程式以便在裝置上進行測試，請參閱[在 Visual Studio 的遠端電腦上執行 UWP 應用程式](../debugger/run-windows-store-apps-on-a-remote-machine.md)。
 
-## <a name="create-an-installer-package-windows-client"></a>建立安裝程式套件 (Windows 用戶端)
+## <a name="create-an-installer-package-windows-desktop"></a>建立安裝程式套件 (Windows 桌面)
 
-如果您需要比 [ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) 可提供之傳統型應用程式更複雜的安裝，您可以建立安裝程式套件、安裝專案或自訂啟動載入器。
+如果您需要比 [ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) 可提供的傳統型應用程式更複雜的安裝，您可以建立 Windows Installer 套件 (MSI 或 EXE 安裝檔案) 或自訂啟動載入器。
 
-- 以 MSI 為基礎的 WiX 安裝程式可以使用 [WiX 工具組 Visual Studio 2017 延伸模組](https://marketplace.visualstudio.com/items?itemName=RobMensching.WixToolsetVisualStudio2017Extension)來建立。
+- MSI 型安裝程式套件可以使用 [WiX 工具組 Visual Studio 2017 延伸模組](https://marketplace.visualstudio.com/items?itemName=RobMensching.WixToolsetVisualStudio2017Extension)來建立。 這是命令列工具組。
 
-- 來自 Flexera Softwae 的 [InstallShield](https://www.flexerasoftware.com/producer/products/software-installation/installshield-software-installer/tab/requirements) 可以與 Visual Studio 2017 (不支援 Community Edition) 搭配使用。 請注意，InstallShield Limited Edition 不再隨附於 Visual Studio，且 Visual Studio 2017 不支援該版本；請洽詢 [Flexera Software](http://learn.flexerasoftware.com/content/IS-EVAL-InstallShield-Limited-Edition-Visual-Studio) 以了解未來的供應狀況。
+- 可以使用 Flexera Software 的 [InstallShield](https://www.flexerasoftware.com/producer/products/software-installation/installshield-software-installer/tab/requirements) 來建立 MSI 或 EXE 安裝程式套件。 InstallShield 可以與 Visual Studio 2017 (不支援 Community Edition) 搭配使用。 請注意，InstallShield Limited Edition 不再隨附於 Visual Studio，且 Visual Studio 2017 不支援該版本；請洽詢 [Flexera Software](http://learn.flexerasoftware.com/content/IS-EVAL-InstallShield-Limited-Edition-Visual-Studio) 以了解未來的供應狀況。
 
-- 如果您想要建立安裝專案 (vdproj)，請安裝 [Visual Studio 2017 安裝程式專案延伸模組](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.MicrosoftVisualStudio2017InstallerProjects#overview)。
+- 可以使用安裝專案 (vdproj) 建立 MSI 或 EXE 安裝程式套件。 若要使用此選項，請安裝 [Visual Studio 2017 安裝程式專案延伸模組](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.MicrosoftVisualStudio2017InstallerProjects#overview)。
 
-- 您可以藉由設定泛型安裝程式 (稱為啟動載入器) 來安裝傳統型應用程式的必要條件元件。 如需詳細資訊，請參閱[應用程式部署必要條件](../deployment/application-deployment-prerequisites.md)。
+- 您也可以藉由設定泛型安裝程式 (稱為啟動載入器) 來安裝傳統型應用程式的必要條件元件。 如需詳細資訊，請參閱[應用程式部署必要條件](../deployment/application-deployment-prerequisites.md)。
 
 ## <a name="deploy-to-test-lab"></a>部署至測試實驗室
 
 透過將應用程式部署至虛擬環境，即可啟用更複雜的開發和測試。 如需詳細資訊，請參閱[在實驗室環境中測試](../test/lab-management/using-a-lab-environment-for-your-application-lifecycle.md)。
 
-## <a name="devops-deployment"></a>DevOps 部署
+## <a name="continuous-deployment"></a>連續部署
 
-在小組環境中，您可以使用 Azure Pipelines 來啟用應用程式的持續部署。 如需詳細資訊，請參閱 [Azure Pipelines](/azure/devops/pipelines/index?view=vsts) 及[部署至 Azure](/azure/devops/deploy-azure/index?view=vsts)。
+您可以使用 Azure Pipelines 來啟用應用程式的持續部署。 如需詳細資訊，請參閱 [Azure Pipelines](/azure/devops/pipelines/index?view=vsts) 及[部署至 Azure](/azure/devops/deploy-azure/index?view=vsts)。
 
 ## <a name="deployment-for-other-app-types"></a>其他應用程式類型的部署
 

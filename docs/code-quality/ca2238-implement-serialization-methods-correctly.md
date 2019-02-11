@@ -1,7 +1,6 @@
 ---
 title: CA2238:必須正確實作序列化方法
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - ImplementSerializationMethodsCorrectly
@@ -18,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: fb1c8198bb9aeda12fe773ca7b9c5f00321d691d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 79448909dcffd9c55ecf78154295ac77a7538bdf
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54996567"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55930255"
 ---
 # <a name="ca2238-implement-serialization-methods-correctly"></a>CA2238:必須正確實作序列化方法
 

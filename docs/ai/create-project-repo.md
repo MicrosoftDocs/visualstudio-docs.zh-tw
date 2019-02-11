@@ -1,4 +1,19 @@
 ---
+title: 複製存放庫
+author: lisawong19
+ms.author: liwong
+manager: routlaw
+ms.date: 11/13/2017
+ms.topic: conceptual
+ms.service: multiple
+ms.workload:
+- multiple
+ms.openlocfilehash: fd0c71e9f426c5591f9ac3ecd135c1b230ca5e20
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54986055"
 ---
 # <a name="clone-a-repository-of-python-code-in-visual-studio"></a>在 Visual Studio 中複製 Python 程式碼存放庫
 
@@ -10,16 +25,16 @@
 
 2. 啟動 Visual Studio。
 
-3. 選取 [檢視] > [Team Explorer...] 以開啟 [Team Explorer] 視窗，您可以從中連線到 GitHub 或 Azure DevOps，或是複製存放庫。
+3. 選取 [檢視] > [Team Explorer] 以開啟 [Team Explorer] 視窗，您可以從中連線到 GitHub 或 Azure DevOps，或是複製存放庫。
 
-    ![顯示 Azure DevOps 和 GitHub 並複製存放庫的 Team Explorer 視窗](media/create-project-repo/team-explorer.png)
+    ![顯示 Azure DevOps 和 GitHub 並複製存放庫的 Team Explorer 視窗](media/create-project-repo/team-explorer-devops.png)
 
 4. 在 [本機 Git 存放庫] 下的 [URL] 欄位中，輸入 `https://github.com/Microsoft/samples-for-ai`，輸入複製檔案的資料夾，然後選取 [複製]。
 
     > [!Tip]
     > 您在 Team Explorer 中指定的資料夾是用來接收所複製檔案的特定資料夾。 不同於 `git clone` 命令，在 Team Explorer 中建立複製品不會自動使用存放庫的名稱來建立子資料夾。
 
-5. 複製完成時，請按兩下 Team Explorer 底部的存放庫資料夾，以巡覽至存放庫儀表板。 在 [方案] 下，選取 [新增]。
+5. 複製完成時，請按兩下 Team Explorer 底部的存放庫資料夾，以巡覽至存放庫儀表板。 在 [解決方案] 下，選取 [新增]。
 
     ![從複製品建立新專案的 Team Explorer 視窗](media/create-project-repo/team-explorer-new-project.png)
 
@@ -29,7 +44,7 @@
 
 8. 在方案總管中，展開 `TensorFlow Examples> MNIST` 節點，並以滑鼠右鍵按一下 `convolutional.py`，然後選取 [設定為啟動檔案]。 此步驟會告訴 Visual Studio 在執行專案時應該使用哪個檔案。
 
-9. 按 **Ctrl**+**F5**，或是選取 [偵錯] > [啟動但不偵錯]，以執行程式。 如果您看到 `，請重新檢查上一個步驟中的工作目錄設定。
+9. 按 **Ctrl**+**F5**，或是選取 [偵錯] > [啟動但不偵錯]，以執行程式。 如果您看到錯誤，請重新檢查上一個步驟中的工作目錄設定。
 
 10. 當程式成功執行時，您會看到它開始下載您的訓練及測試資料集，然後訓練模型並輸出您的錯誤率。 通常您會希望錯誤率隨著時間遞減
 
@@ -42,6 +57,6 @@
 
    ![執行 TensorBoard](media/create-project-repo/run-tensorboard.png)
 
-12. 請注意，錯誤已隨著時間遞減，表示品質正在改善
+12. 請注意，錯誤已隨著時間遞減，表示品質正在改善。
 
    ![執行 TensorBoard](media/create-project-repo/tensorboard.png)

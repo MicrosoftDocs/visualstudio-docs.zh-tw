@@ -1,7 +1,6 @@
 ---
 title: CA2227:集合屬性應該為唯讀
 ms.date: 09/28/2018
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - CA2227
@@ -19,12 +18,12 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: b6aae7d2f6ed730dc0ac7198a43167dd09976037
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 8a6ced277aa442450418ce55f4e1db56ad5d8af1
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55037469"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55926238"
 ---
 # <a name="ca2227-collection-properties-should-be-read-only"></a>CA2227:集合屬性應該為唯讀
 

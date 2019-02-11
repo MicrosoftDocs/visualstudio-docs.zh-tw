@@ -1,7 +1,6 @@
 ---
 title: XML 結構描述設計工具開始檢視
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 ms.assetid: f25e7a2f-7469-4279-b2f4-ee2dfd4d3af1
 author: gewarren
@@ -9,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c97bd62f6a197d5aac64423002580c8ed05d34b
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 5609844763a5bb9ece7aa45b558191cf974fefb0
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55042241"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55951614"
 ---
 # <a name="start-view"></a>開始檢視
 

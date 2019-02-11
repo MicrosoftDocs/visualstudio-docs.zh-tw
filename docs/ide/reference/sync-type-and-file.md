@@ -11,12 +11,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4625d8c4b6bce3235fe07682cb6a0e977258adf6
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a9a3a72a9b02d51407bf8a1c06c900596ded4ab4
+ms.sourcegitcommit: 0342f99120fbd603b8f06f7e9166c39f2896827a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54948176"
+ms.lasthandoff: 02/05/2019
+ms.locfileid: "55742426"
 ---
 # <a name="sync-a-type-to-a-filename-or-a-filename-to-a-type-refactoring"></a>將類型同步至檔案名稱，或將檔案名稱同步至類型的重構
 
@@ -31,6 +31,9 @@ ms.locfileid: "54948176"
 **時機：** 您已將檔案或類型重新命名，但尚未更新對應的檔案或類型來使其相符。
 
 **原因：** 將類型放在不同名稱的檔案中 (或反之亦然) 會很難找出所要尋找項目。 藉由將類型或檔案名稱重新命名，程式碼會變得較容易閱讀及瀏覽。
+
+> [!NOTE]
+> 這項重構尚不適用於 .NET Standard 和 .NET Core 專案。
 
 ## <a name="how-to"></a>操作說明
 
@@ -62,8 +65,6 @@ ms.locfileid: "54948176"
    - Visual Basic：在下面的範例中，檔案 **Employee.vb** 已重新命名為 **Person.vb** 以符合類型名稱。
 
        ![內嵌結果 Visual Basic](media/synctype-result-vb.png)
-
-> ！[注意] 這項重構尚不適用於.NET Standard 和.NET Core 專案。
 
 ## <a name="see-also"></a>另請參閱
 

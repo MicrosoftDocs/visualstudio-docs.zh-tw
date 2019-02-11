@@ -1,7 +1,6 @@
 ---
 title: HOW TO：取得設計工具的 XML 結構描述中使用圖表檢視的結構描述集概觀
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: c0df4b0d-52ef-4a6c-9676-1d8311aad7c7
 author: gewarren
@@ -9,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1a161e2b354559eed220914842eaba73f20654b1
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 603761f2886ffc64170774a2d6c460d39596454b
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54917090"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55922026"
 ---
 # <a name="how-to-get-an-overview-of-a-schema-set-using-the-graph-view"></a>HOW TO：取得使用 [圖形] 檢視設定的結構描述的概觀
 

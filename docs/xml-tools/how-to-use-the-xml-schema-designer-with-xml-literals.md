@@ -1,7 +1,6 @@
 ---
 title: HOW TO：搭配使用 XML 結構描述設計工具和 XML 常值
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: d11803e7-f81a-41a2-a145-ba494a45cc93
 author: gewarren
@@ -11,12 +10,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 3883b4515ab304e2a247414f63c79db6314a654c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: cc4da90db115e001f7f06ec2e7dd33d64ef20048
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54922074"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55927278"
 ---
 # <a name="how-to-use-the-xml-schema-designer-with-xml-literals"></a>HOW TO：使用 XML 常值中的 XML 結構描述設計工具
 
@@ -26,7 +25,7 @@ ms.locfileid: "54922074"
 
 1.  啟動 Visual Studio。
 
-2.  從**檔案**功能表上，選取**新增**，然後選取**專案**。 [ **新增專案** ] 對話方塊隨即出現。 針對**專案類型**，選取**其他語言**，然後選取**Visual Basic**。 針對**範本**，選取 主控台應用程式。 然後輸入`XMLLiterals`中**名稱**欄位和中的專案位置**位置**欄位。 按一下 [確定 **Deploying Office Solutions**]。
+2.  從**檔案**功能表上，選取**新增**，然後選取**專案**。 [ **新增專案** ] 對話方塊隨即出現。 針對**專案類型**，選取**其他語言**，然後選取**Visual Basic**。 針對**範本**，選取 主控台應用程式。 然後輸入`XMLLiterals`中**名稱**欄位和中的專案位置**位置**欄位。 按一下 [確定] 。
 
      隨即會建立新專案。 XMLLiterals 專案包含一個 Visual Basic 來源檔案， *Module1.vb*。
 

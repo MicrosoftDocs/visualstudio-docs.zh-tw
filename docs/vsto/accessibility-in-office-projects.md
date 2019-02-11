@@ -1,7 +1,6 @@
 ---
 title: Office 專案中的協助工具
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 99deac9a1a6587d345d288123029a5e3dde4308b
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: e35819371a751aa8047adbacd77f55ea257831a1
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54865849"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55944971"
 ---
 # <a name="accessibility-in-office-projects"></a>Office 專案中的協助工具
 
@@ -49,7 +48,7 @@ Microsoft Visual Studio 和 Microsoft Office 包含許多協助工具功能可�
 
      此時會出現訊息指出您必須重新啟動 Visual Studio，變更才會生效。
 
-4.  按一下 [確定 **Deploying Office Solutions**]。
+4.  按一下 [確定] 。
 
 5.  重新啟動 Visual Studio，並重新開啟您的專案。
 

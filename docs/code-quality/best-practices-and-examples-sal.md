@@ -1,19 +1,18 @@
 ---
 title: 最佳作法和範例 (SAL)
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: mikeblome
 ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: 51d9526cb9778dd7f4fde61cca5667c7eaece2f1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 28d17301d81ee5b206feb0c3afefba35e50615cd
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53959192"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55940577"
 ---
 # <a name="best-practices-and-examples-sal"></a>最佳作法和範例 (SAL)
 以下是從來源的程式碼註釋語言 (SAL) 的最大，並避免的一些常見問題的一些方法。

@@ -1,7 +1,6 @@
 ---
 title: CA2004:必須移除對 GC.KeepAlive 的呼叫
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - RemoveCallsToGCKeepAlive
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e2787b3d0876034113e777d7f8932d63e5c1a27
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 4520649050e6e4004b2c8864d5c081897852826c
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55001455"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55910099"
 ---
 # <a name="ca2004-remove-calls-to-gckeepalive"></a>CA2004:必須移除對 GC.KeepAlive 的呼叫
 

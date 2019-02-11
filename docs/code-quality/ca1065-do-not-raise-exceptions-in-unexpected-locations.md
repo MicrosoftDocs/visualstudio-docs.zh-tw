@@ -1,7 +1,6 @@
 ---
 title: CA1065:不要在非預期的位置中引發例外狀況
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - CA1065
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bfdb12dfbe5bf0f0bee035e79f1b8442db0bbf71
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 9dd45410a2c928a0ffbbe827b100edd119cf59f0
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55031522"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55950366"
 ---
 # <a name="ca1065-do-not-raise-exceptions-in-unexpected-locations"></a>CA1065:不要在非預期的位置中引發例外狀況
 

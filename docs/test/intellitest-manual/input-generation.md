@@ -6,24 +6,27 @@ ms.topic: conceptual
 helpviewer_keywords:
 - IntelliTest, Dynamic symbolic execution
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: d08094f122ace8908da7800cba84815b201154db
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b210248a9ac27945ee6eb1e2f1d5219c6dd62117
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53834668"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54936615"
 ---
 # <a name="input-generation-using-dynamic-symbolic-execution"></a>使用動態符號執行產生輸入
 
-IntelliTest 會藉由分析程式中的分支條件，以產生[參數化單元測試](test-generation.md#parameterized-unit-testing)的輸入。 測試輸入是根據它們是否可觸發程式的新分支行為進行選擇。 分析是一種累加的處理序。 它會重新調整正式測試輸入參數 **I**. **q** 上的述詞 **q:I -> {true, false}**，代表 IntelliTest 已觀察到的行為集合。 一開始 **q := false**，因為尚未觀察到任何項目。
+IntelliTest 會藉由分析程式中的分支條件，以產生[參數化單元測試](test-generation.md#parameterized-unit-testing)的輸入。
+測試輸入是根據它們是否可觸發程式的新分支行為進行選擇。
+分析是一種累加的處理序。 它會精簡述詞 **q:I -> {true, false}** (位於正式測試輸入參數 **I** 上)。**q** 代表 IntelliTest 已觀察到的行為集合。
+一開始 **q := false**，因為尚未觀察到任何項目。
 
 迴圈的步驟如下：
 
-1. IntelliTest 會使用[條件約束規劃求解](#constraint-solver)決定輸入 **i**，使得 **q(i)=false**。 
+1. IntelliTest 會使用[條件約束規劃求解](#constraint-solver)決定輸入 **i**，使得 **q(i)=false**。
    透過建構，輸入 **i** 就會採用之前未看過的執行路徑。 一開始，這表示 **i** 可以是任何輸入，因為沒有尚未探索到的執行路徑。
 
 1. IntelliTest 會以所選的輸入 **i** 執行測試，並監視測試和待測程式的執行狀況。
@@ -55,7 +58,8 @@ IntelliTest 使用 [Z3](https://github.com/Z3Prover/z3/wiki) 條件約束規劃�
 <a name="dynamic-code-coverage"></a>
 ## <a name="dynamic-code-coverage"></a>動態程式碼涵蓋範圍
 
-作為執行階段監視的副作用，IntelliTest 會收集動態程式碼涵蓋範圍資料。 這稱為「動態」的原因是 IntelliTest 只知道已執行的程式碼，因此它無法以其他涵蓋範圍工具通常使用的相同方式，提供涵蓋範圍的絕對值。 
+作為執行階段監視的副作用，IntelliTest 會收集動態程式碼涵蓋範圍資料。
+這稱為「動態」的原因是 IntelliTest 只知道已執行的程式碼，因此它無法以其他涵蓋範圍工具通常使用的相同方式，提供涵蓋範圍的絕對值。
 
 例如，當 IntelliTest 報告動態涵蓋範圍為 5/10 基本區塊時，這表示已涵蓋十個中的五個區塊，其中分析到目前為止已觸達之所有方法 (相對於待測組件中已存在的所有方法) 的區塊總數是十個。
 稍後在分析中，隨著探索到更多的可觸達方法，分子 (在此範例中為 5) 和分母 (10) 都可能會增加。
@@ -80,8 +84,7 @@ IntelliTest 在執行測試和待測程式時，會監視已執行的指令。 �
 這表示 IntelliTest 必須建立特定類型的物件，並設定其欄位值。 如果類別為[可見](#visibility)且具有[可見](#visibility)的預設建構函式，IntelliTest 可建立類別的執行個體。
 如果類別的所有欄位都為[可見](#visibility)，IntelliTest 可自動設定欄位。
 
-如果類型不可見或欄位不[可見](#visibility)，IntelliTest 需要協助建立物件，並使其進入相關狀態，以達到最大的程式碼涵蓋範圍。 IntelliTest 可使用反映以任意方式建立和初始化執行個體，但這通常不  
-可取，因為它可能會使物件進入正常程式執行期間可能永遠不會發生的狀態。 相反地，IntelliTest 會依賴來自使用者的提示。
+如果類型不可見或欄位不[可見](#visibility)，IntelliTest 需要協助建立物件，並使其進入相關狀態，以達到最大的程式碼涵蓋範圍。 IntelliTest 可使用反映來以任意方式建立和初始化執行個體，但這通常不可取，因為它可能會使物件進入正常程式執行期間可能永遠不會發生的狀態。 相反地，IntelliTest 會依賴來自使用者的提示。
 
 <a name="visibility"></a>
 ## <a name="visibility"></a>可視性
@@ -108,7 +111,7 @@ IntelliTest 在執行測試和待測程式時，會監視已執行的指令。 �
 
 如何測試具有介面類型參數的方法？ 或是具有非密封類別參數的方法？ IntelliTest 不知道在呼叫這個方法時，稍後將使用的實作。 而且也許在測試時甚至沒有可用的實際實作。
 
-傳統的解決方法是使用具有明確行為的「模擬物件」。 
+傳統的解決方法是使用具有明確行為的「模擬物件」。
 
 一個模擬物件可實作一個介面 (或延伸非密封類別)。 它不代表實際的實作，而只是允許使用模擬物件執行測試的捷徑。 其行為是以手動方式定義為使用模擬物件之每個測試案例的一部分。 有許多工具可讓您輕鬆地定義模擬物件和其預期的行為，但這種行為仍然必須以手動方式定義。
 
@@ -129,7 +132,8 @@ IntelliTest 對**結構**值的推理類似於其處理[物件](#objects)的方�
 <a name="arrays-and-strings"></a>
 ## <a name="arrays-and-strings"></a>陣列和字串
 
-IntelliTest 在執行測試和待測程式時，會監視已執行的指令。 特別是，它觀察到程式何時相依於字串或陣列的長度 (以及多維陣列的下限和長度)。 還觀察到程式如何使用不同的字串或陣列元素。 然後，它會使用[條件約束規劃求解](#constraint-solver)，判定哪些長度和元素值可能會造成測試和待測程式以相關方式表現。
+IntelliTest 在執行測試和待測程式時，會監視已執行的指令。 特別是，它觀察到程式何時相依於字串或陣列的長度 (以及多維陣列的下限和長度)。
+還觀察到程式如何使用不同的字串或陣列元素。 然後，它會使用[條件約束規劃求解](#constraint-solver)，判定哪些長度和元素值可能會造成測試和待測程式以相關方式表現。
 
 IntelliTest 會嘗試將觸發相關程式行為所需的陣列和字串大小降到最低。
 
