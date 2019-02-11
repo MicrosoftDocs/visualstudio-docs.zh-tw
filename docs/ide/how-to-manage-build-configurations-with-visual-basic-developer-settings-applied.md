@@ -12,17 +12,17 @@ helpviewer_keywords:
 ms.assetid: eaea6e0b-6c61-4869-8d63-d372c745a23c
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 90e00c544db2064f55d78de5dad00cc27105451e
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 92ff0f0d79657855667c260754bbc4a9857fec83
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388682"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54985847"
 ---
-# <a name="how-to-manage-build-configurations-with-visual-basic-developer-settings-applied"></a>如何：在套用 Visual Basic 開發者設定的情況下管理組建組態
+# <a name="how-to-manage-build-configurations-with-visual-basic-developer-settings-applied"></a>作法：在套用 Visual Basic 開發人員設定的情況下管理組建組態
 
 根據預設，在套用 Visual Basic 開發人員設定時，所有進階組建組態選項都會被隱藏。 本文說明如何手動啟用這些組建設定。
 

@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: c1e5da1b-cda1-4545-b46c-0440fba27485
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f813f9181d54ab3363c5643710b5434457d1959
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: 2a9dabddaddaa6d19bbf6e73e2ddcb0011c559ea
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32425357"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55012218"
 ---
 # <a name="understand-build-platforms"></a>了解組建平台
 
@@ -31,9 +31,9 @@ ms.locfileid: "32425357"
 
 ## <a name="in-this-section"></a>本節內容
 
- [如何：將專案設定成以平台為目標](../ide/how-to-configure-projects-to-target-platforms.md)說明如何將專案設定成以特定平台為目標。
+ [如何：將專案設定成以平台為目標](../ide/how-to-configure-projects-to-target-platforms.md) 說明如何將專案設定成以特定平台為目標。
 
- [如何：將專案設定成以多重平台為目標](../ide/how-to-configure-projects-to-target-multiple-platforms.md)說明如何將專案設定成以多重平台為目標。
+ [如何：將專案設定成以多重平台為目標](../ide/how-to-configure-projects-to-target-multiple-platforms.md) 說明如何將專案設定成以多重平台為目標。
 
 ## <a name="see-also"></a>另請參閱
 

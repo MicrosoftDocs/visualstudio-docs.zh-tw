@@ -2,19 +2,18 @@
 title: 工作流程設計工具-Migration 活動設計工具
 ms.date: 11/04/2016
 ms.topic: reference
-ms.prod: visual-studio-dev15
 ms.assetid: 7598e869-1da1-4721-b4bf-6cbe402be1a2
 author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d3b39dbb9c783e2e0ec43d8b23a9f95a5e10589
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 900a555f5e4ba4c1750dcbedc526a233e422bd43
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55000142"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55912348"
 ---
 # <a name="migration-activity-designers"></a>Migration 活動設計工具
 

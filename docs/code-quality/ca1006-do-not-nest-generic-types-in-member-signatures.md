@@ -1,7 +1,6 @@
 ---
 title: CA1006：不要在成員簽章中將泛型類型巢狀化
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - DoNotNestGenericTypesInMemberSignatures
@@ -18,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 8fa7213b2d2cab4f02e2b7f8e2be7682f1fd65e1
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 72d75985482ebf7e90db9d817212882b5ed8c292
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55042591"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55928461"
 ---
 # <a name="ca1006-do-not-nest-generic-types-in-member-signatures"></a>CA1006：不要在成員簽章中將泛型類型巢狀化
 

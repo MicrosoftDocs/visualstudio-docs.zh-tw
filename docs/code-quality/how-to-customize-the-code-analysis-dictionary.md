@@ -1,7 +1,6 @@
 ---
 title: HOW TO：自訂程式碼分析字典
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - code analysis dictionary
@@ -13,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 19ad0da444f99e0fbf618d97729c64a1e5ed5666
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 71ba70f536074365b3b0ead56b845216918f1a6f
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54971815"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55919842"
 ---
 # <a name="how-to-customize-the-code-analysis-dictionary"></a>HOW TO：自訂程式碼分析字典
 程式碼分析會使用內建的字典，來檢查拼字、 文法的情況下和其他的.NET Framework 方針的命名慣例中的錯誤程式碼中的識別項。 您可以建立自訂字典的 Xml 檔案，來新增、 移除或修改詞彙、 縮寫，以及內建的字典的縮略字。

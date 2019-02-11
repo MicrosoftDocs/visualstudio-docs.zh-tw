@@ -11,12 +11,12 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.Basic.Code_Style.General
 ms.workload:
 - multiple
-ms.openlocfilehash: 065a4c21be596b409ed82718e0b38c38367612cc
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f33c1edec4b4093e9157a59618befa2e1175be49
+ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55039045"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55483987"
 ---
 # <a name="code-style-preferences"></a>程式碼樣式喜好設定
 
@@ -31,7 +31,7 @@ ms.locfileid: "55039045"
 
 ## <a name="preference-and-severity"></a>喜好設定和嚴重性
 
-對於各個項目，您可以使用每一行的下拉式清單來設定 [喜好設定] 和 [嚴重性] 的值。 [嚴重性] 可設定為 [無]、[建議]、[警告] 或 [錯誤]。 如果您想要針對程式碼樣式啟用[快速動作](../ide/quick-actions.md)，請務必將 [嚴重性] 設定為 [無] 以外的值。 當使用非慣用樣式時，會出現**快速動作**燈泡圖示![小燈泡圖示](media/vs2015_lightbulbsmall.png)，而您可以選擇 [快速動作] 清單上的選項，以自動將程式碼重寫成慣用的樣式。
+對於各個項目，您可以使用每一行的下拉式清單來設定 [喜好設定] 和 [嚴重性] 的值。 [嚴重性] 可設定為 [無]、[建議]、[警告] 或 [錯誤]。 如果您想要針對程式碼樣式啟用[快速動作](../ide/quick-actions.md)，請務必將 [嚴重性] 設定為 [無] 以外的值。 當使用非慣用樣式時，會出現**快速動作**燈泡![燈泡](media/vs2015_lightbulbsmall.png)、錯誤燈泡![錯誤燈泡](media/error-bulb.png)或螺絲起子![螺絲起子](media/screwdriver.png)圖示，而您可以選擇 [快速動作] 清單上的選項，以自動將程式碼重寫成慣用的樣式。
 
 ## <a name="editorconfig-files"></a>EditorConfig 檔案
 
@@ -51,5 +51,5 @@ ms.locfileid: "55039045"
 ## <a name="see-also"></a>另請參閱
 
 - [快速動作](../ide/quick-actions.md)
-- [EditorConfig 的 .NET 編碼慣例設定](../ide/editorconfig-code-style-settings-reference.md)
+- [EditorConfig 的 .NET 程式碼慣例設定](../ide/editorconfig-code-style-settings-reference.md)
 - [編輯器行為 (Visual Studio for Mac)](/visualstudio/mac/editor-behavior)

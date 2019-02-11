@@ -2,7 +2,6 @@
 title: 工作流程設計工具-Compensate 活動設計工具
 ms.date: 11/04/2016
 ms.topic: reference
-ms.prod: visual-studio-dev15
 f1_keywords:
 - System.Activities.Statements.Compensate.UI
 ms.assetid: 7347c947-bfff-4bad-becd-5cd23e7b24cd
@@ -11,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c7c195c9bfd6bedf0220a989c31936975fb6d70a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c55ecd8e3402d927b11cc00d18d6d134a5b25681
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54950425"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55911594"
 ---
 # <a name="compensate-activity-designer"></a>Compensate 活動設計工具
 

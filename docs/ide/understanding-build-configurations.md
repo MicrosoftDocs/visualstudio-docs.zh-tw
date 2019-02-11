@@ -24,15 +24,15 @@ helpviewer_keywords:
 ms.assetid: 934c727d-3a22-429c-bd13-3552cecf2e24
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a3e361b407d013f27f3cf76d1ff0da98aa36c3c8
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 84a2b89bb6479c88de61ec0a0071858522a34e82
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349045"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54927902"
 ---
 # <a name="understand-build-configurations"></a>了解組建組態
 
@@ -42,9 +42,9 @@ ms.locfileid: "51349045"
 > 本主題適用於 Windows 上的 Visual Studio。 針對 Visual Studio for Mac，請參閱 [Visual Studio for Mac 中的組建組態](/visualstudio/mac/configurations)。
 
 > [!NOTE]
-> 如果您在工具列上找不到方案組態設定，而且無法存取 [組態管理員]，則可能會套用 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 開發設定。 如需詳細資訊，請參閱[如何：在套用 Visual Basic 開發者設定的情況下管理組態](../ide/how-to-manage-build-configurations-with-visual-basic-developer-settings-applied.md)。
+> 如果您在工具列上找不到方案組態設定，而且無法存取 [組態管理員]，則可能會套用 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 開發設定。 如需詳細資訊，請參閱[＜How to：在套用 Visual Basic 開發人員設定的情況下管理組態](../ide/how-to-manage-build-configurations-with-visual-basic-developer-settings-applied.md)。
 
-根據預設，使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 範本所建立的專案會包含偵錯和發行組態。 偵錯組態支援應用程式的偵錯，而發行組態則會建置可部署的應用程式版本。 如需詳細資訊，請參閱[如何：設定偵錯和發行組態](../debugger/how-to-set-debug-and-release-configurations.md)。 您也可以建立自訂方案組態和專案組態。 如需詳細資訊，請參閱[如何：建立和編輯組態](../ide/how-to-create-and-edit-configurations.md)。
+根據預設，使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 範本所建立的專案會包含偵錯和發行組態。 偵錯組態支援應用程式的偵錯，而發行組態則會建置可部署的應用程式版本。 如需詳細資訊，請參閱[＜How to：設定偵錯和版本組態](../debugger/how-to-set-debug-and-release-configurations.md)。 您也可以建立自訂方案組態和專案組態。 如需詳細資訊，請參閱[＜How to：建立及編輯組態](../ide/how-to-create-and-edit-configurations.md)。
 
 ## <a name="solution-configurations"></a>方案組態
 

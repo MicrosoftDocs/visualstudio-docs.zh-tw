@@ -1,7 +1,6 @@
 ---
 title: 存取表單區域在執行階段
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 32c38cc7553bc31859eeb665a6e26000252194cb
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 652f030385c960bf720878377029c1bd1e9d07b8
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54870698"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55907486"
 ---
 # <a name="access-a-form-region-at-runtime"></a>存取表單區域在執行階段
 

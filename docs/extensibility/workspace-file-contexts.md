@@ -2,18 +2,17 @@
 title: 在 Visual Studio 中的工作區的檔案內容 |Microsoft Docs
 ms.date: 02/21/2018
 ms.topic: conceptual
-ms.assetid: 7aaa0e65-f492-49ea-a845-35bd14910ca7
 author: vukelich
 ms.author: svukel
 manager: viveis
 ms.workload:
 - vssdk
-ms.openlocfilehash: 93690eab989cee62d756a774675bf1d46da017fb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 36f986db6f2c7b483b46060e1f514acc8dd9e758
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53826860"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55939186"
 ---
 # <a name="workspace-file-contexts"></a>工作區的檔案內容
 
@@ -27,7 +26,7 @@ ms.locfileid: "53826860"
 
 ## <a name="file-context-lifecycle"></a>檔案內容生命週期
 
-週期，可供`FileContext`是不具決定性。 在任何時間，元件可以以非同步方式要求內容類型的某些設定。 將查詢提供者支援的要求內容類型子集。 `IWorkspace`執行個體做為消費者和提供者之間的中間人<xref:Microsoft.VisualStudio.Workspace.IWorkspace.GetFileContextsAsync%2A>方法。 取用者可能會要求內容，並執行一些短期的動作，內容為基礎，而其他人可能會要求內容，以及維護的長時間執行的參考。 
+週期，可供`FileContext`是不具決定性。 在任何時間，元件可以以非同步方式要求內容類型的某些設定。 將查詢提供者支援的要求內容類型子集。 `IWorkspace`執行個體做為消費者和提供者之間的中間人<xref:Microsoft.VisualStudio.Workspace.IWorkspace.GetFileContextsAsync%2A>方法。 取用者可能會要求內容，並執行一些短期的動作，內容為基礎，而其他人可能會要求內容，以及維護的長時間執行的參考。
 
 變更可能會導致變成過期的檔案內容的檔案。 提供者可以在引發事件`FileContext`來通知取用者的更新。 例如，如果組建內容提供的一些檔案，但未在磁碟上的變更會導致無效的內容，然後原始的產生者可以叫用事件。 仍然參考之任何取用者`FileContext`然後可以對新 requery `FileContext`。
 

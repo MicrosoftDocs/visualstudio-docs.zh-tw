@@ -6,15 +6,15 @@ ms.topic: conceptual
 ms.assetid: 29c80c38-0fa3-48d6-b3a8-3b864f482e44
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: d5c56dc477b3c788f8d5ebfee4809067c77e08e8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 371ac2a3473c8e040167c91c0b126715cd2ae674
+ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53829300"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55231814"
 ---
 # <a name="organize-objects-into-layout-containers-in-xaml-designer"></a>在 XAML 設計工具中將物件組織在版面配置容器中
 
@@ -30,19 +30,7 @@ ms.locfileid: "53829300"
 
 選擇這些版面配置面板的其中一個，開始您的頁面。 您可以有一個以上的頁面。 例如，您著手開始的是 [格線] 版面配置面板，然後將 **StackPanel** 新增至 [格線] 中的區域，以便可以在該項目中垂直排列控制項。
 
-下列版面配置面板只是最普遍使用的面板，除此之外還有其他面板。 您可以在 [資產] 面板中找到所有控制項。
-
-- [格線](#Grid)
-
-- [UniformGrid](#UniformGrid)
-
-- [Canvas](#Canvas)
-
-- [StackPanel](#stackpanel)
-
-- [WrapPanel](#wrappanel)
-
-- [DockPanel](#dockpanel)
+下列版面配置面板只是最普遍使用的面板，除此之外還有其他面板。 您可以在 Visual Studio 的 [工具箱] 或 Blend for Visual Studio 的 [資產] 面板中找到所有控制項。
 
 ### <a name="grid"></a>Grid
 
@@ -92,15 +80,7 @@ ms.locfileid: "53829300"
 
 您也可以將物件加入至版面配置控制項。 控制項不像版面配置面板一樣具有豐富的功能，但會發現控制項在特定情況下很有幫助。
 
-下列版面配置控制項是最熱門的控制項，除此之外還有其他控制項。 您可以在 [資產] 面板中找到所有控制項。
-
-- [Border](#Border)
-
-- [快顯](#Popup)
-
-- [ScrollViewer](#scrollviewer)
-
-- [Viewbox](#viewbox)
+下列版面配置控制項是最熱門的控制項，除此之外還有其他控制項。 您可以在 Visual Studio 的 [工具箱] 或 Blend for Visual Studio 的 [資產] 面板中找到所有控制項。
 
 ### <a name="border"></a>Border
 

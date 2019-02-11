@@ -7,13 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: fc122767dbc2b7a901f75b26bcb8635cda64a0ae
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f070b02c9b91420fab9058e3d33aa682334f9cd4
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54960213"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55951536"
 ---
 # <a name="working-with-domain-specific-language-solutions"></a>使用網域指定的語言方案
 使用 Visual Studio 方案建立特定領域語言 (DSL)。 本章節是關於如何設定及自訂解決方案。

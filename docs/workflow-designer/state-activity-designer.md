@@ -2,7 +2,6 @@
 title: 工作流程設計工具-State 活動設計工具
 ms.date: 11/04/2016
 ms.topic: reference
-ms.prod: visual-studio-dev15
 f1_keywords:
 - System.Activities.Statements.State.UI
 ms.assetid: 9455ab37-93a0-4c46-9eb8-b6611ca23167
@@ -11,16 +10,17 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 2d69b5533ebaf617563c7ce8ff9ba83453bc2fb0
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 4d07cfeeb713767bc4f711c99b6b482759af2232
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54926146"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55940760"
 ---
 # <a name="state-activity-designer"></a>狀態活動設計工具
 
-<xref:System.Activities.Statements.State> 代表狀態機器可以具有的狀態。
+
+  <xref:System.Activities.Statements.State> 代表狀態機器可以具有的狀態。
 
 ## <a name="using-the-state-activity-designer"></a>使用 State 活動設計工具
 

@@ -1,7 +1,6 @@
 ---
 title: CA2213:可處置的欄位應該受到處置
 ms.date: 11/05/2018
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - DisposableFieldsShouldBeDisposed
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a57b3f094449665ec49688b21ebf89dc8b7a1669
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 1fff209c9a432b78ce27e9c344c1afd29e93d57f
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54998231"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55935533"
 ---
 # <a name="ca2213-disposable-fields-should-be-disposed"></a>CA2213:可處置的欄位應該受到處置
 

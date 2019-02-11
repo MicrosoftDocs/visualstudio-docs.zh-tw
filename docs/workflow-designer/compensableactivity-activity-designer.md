@@ -2,7 +2,6 @@
 title: 工作流程設計工具-CompensableActivity 活動設計工具
 ms.date: 11/04/2016
 ms.topic: reference
-ms.prod: visual-studio-dev15
 f1_keywords:
 - System.Activities.Statements.CompensableActivity.UI
 ms.assetid: e0340d89-d39e-4a52-8557-13e27040d7b5
@@ -11,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f08d967269df6046c53b9c6bdd8d369c56cc23e4
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: cfe5a207136b44e61beff77bec8c8c7b869568b6
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54977209"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55942358"
 ---
 # <a name="compensableactivity-activity-designer"></a>CompensableActivity 活動設計工具
 

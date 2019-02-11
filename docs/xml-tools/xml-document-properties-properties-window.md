@@ -1,7 +1,6 @@
 ---
 title: XML 文件屬性 (屬性視窗)
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 ms.assetid: 9dbb34d9-02ea-4201-b445-c98a0eb0d6db
 author: gewarren
@@ -9,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 46f832992b85c181738f11976e7fb0f59de1bd89
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 69cd8a8f1acd650c65c995f303adc4d3ee2c1bc5
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54920891"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55938239"
 ---
 # <a name="xml-document-properties-properties-window"></a>屬性視窗、 XML 文件屬性
 

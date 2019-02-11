@@ -4,16 +4,15 @@ title: 部署您的應用程式 |Microsoft Docs
 description: 了解如何使用 Visual Studio 2017 部署應用程式、服務與元件。
 ms.custom: seodec18
 ms.topic: landing-page
-ms.prod: visual-studio-dev15
 ms.author: mikejo
 author: mikejo5000
 manager: jillfra
-ms.openlocfilehash: b2463395707a62091292256d601290121295d76c
-ms.sourcegitcommit: 612f8c21d1448f1a013c30100cdecfbec5ddb24f
+ms.openlocfilehash: 4f6d81af23ba5763b89b19b29cb493e6cb59c8ff
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/01/2019
-ms.locfileid: "55571014"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55947117"
 ---
 # <a name="deployment-in-visual-studio"></a>Visual Studio 中的部署
 

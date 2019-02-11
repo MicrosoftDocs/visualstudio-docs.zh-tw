@@ -1,7 +1,6 @@
 ---
 title: CA1806:不要忽略方法的結果
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - CA1806
@@ -17,12 +16,12 @@ dev_langs:
 - CSharp
 - VB
 manager: jillfra
-ms.openlocfilehash: 4ac122534a42cb78b80d1a12004a8db3d1b5b203
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: d2a1dd9984601afa34e4aac7fa5ddc24061cf6ae
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55043631"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55954500"
 ---
 # <a name="ca1806-do-not-ignore-method-results"></a>CA1806:不要忽略方法的結果
 

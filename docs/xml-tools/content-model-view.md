@@ -1,7 +1,6 @@
 ---
 title: XML 結構描述設計工具內容模型檢視
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 ms.assetid: e8db7c7d-31cf-479e-9dcc-299759891795
 author: gewarren
@@ -9,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6aa49bea25828d4f98b30f1b1f84b35dac76c51e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 00cad1b3087b1a7cd8b530ca659ad6c87868a3ac
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54977326"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55933570"
 ---
 # <a name="content-model-view"></a>內容模型檢視
 

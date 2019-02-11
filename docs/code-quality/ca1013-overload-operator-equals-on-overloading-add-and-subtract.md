@@ -1,7 +1,6 @@
 ---
 title: CA1013:多載加號和減號運算子時必須一併多載等號比較運算子
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - OverrideOperatorEqualsOnOverridingAddAndSubtract
@@ -22,12 +21,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 3569179148d3d1843f143571301fa18816c8dce3
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 76a3790f57882071bddc90ef78a0ac74dd565514
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55041174"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55915879"
 ---
 # <a name="ca1013-overload-operator-equals-on-overloading-add-and-subtract"></a>CA1013:多載加號和減號運算子時必須一併多載等號比較運算子
 

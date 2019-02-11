@@ -9,13 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: a4b88786c8403347e6526a7a097afcee69889b2a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 6de30faec90fd59531187d09f7eef76c3db7b043
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55031081"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55910437"
 ---
 # <a name="using-escape-sequences-in-text-templates"></a>使用文字範本中的逸出序列
 您可以使用逸出序列，文字範本產生文字範本標記中，及 （在 C# 僅限程式碼） 來逸出控制字元和引號。

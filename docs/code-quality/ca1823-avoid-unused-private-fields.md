@@ -1,7 +1,6 @@
 ---
 title: CA1823:避免包含未使用的私用欄位
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - AvoidUnusedPrivateFields
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ad70fbcb8052e45f4819db2f8d423ce4f70ce697
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 68d7f521927497a50779d77c4d7bdd8520ac222f
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54971529"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55953707"
 ---
 # <a name="ca1823-avoid-unused-private-fields"></a>CA1823:避免包含未使用的私用欄位
 

@@ -1,7 +1,6 @@
 ---
 title: XML 片段
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: 348dbf64-3f09-4fff-b47a-a7ecdf3221cc
 author: gewarren
@@ -9,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 649617ac905e7d81ea68c5e5550dc106fbe1c24d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 76701499c9304551c2bc6213b3eebbbc2421e4c2
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55020950"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55953746"
 ---
 # <a name="xml-snippets"></a>XML 片段
 

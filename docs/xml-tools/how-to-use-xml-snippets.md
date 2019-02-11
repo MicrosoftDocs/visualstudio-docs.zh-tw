@@ -1,7 +1,6 @@
 ---
 title: 如何使用 XML 片段
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: 3a27375b-81cc-48f6-a884-e1cb8c4f78f5
 author: gewarren
@@ -9,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3a9d7c2713e7bc37a47cce91ef2da4acade45b88
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: d892ba202a73560568bdb6c43427a8ee0f7c1aee
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54920327"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55913622"
 ---
 # <a name="how-to-use-xml-snippets"></a>HOW TO：使用 XML 片段
 

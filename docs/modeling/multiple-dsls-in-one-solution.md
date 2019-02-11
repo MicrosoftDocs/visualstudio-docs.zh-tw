@@ -7,13 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: ea5deaf02801a15bba851589d1f20beaa091b1b8
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a670c43d584fb65f014765874f23c42b5de71179
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55022075"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55942826"
 ---
 # <a name="multiple-dsls-in-one-solution"></a>一個方案中有多個 DSL
 您可以將數個 DSL 封裝成單一方案的一部分，以便能夠一起安裝。

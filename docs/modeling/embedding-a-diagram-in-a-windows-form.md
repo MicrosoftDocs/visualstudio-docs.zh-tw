@@ -7,13 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 7343fe78ab83b2297f8427e973d1606e208964ab
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 1bf82bc6fce4e6bf429faebc6b6f24497cbe76b0
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55016157"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55944464"
 ---
 # <a name="embed-a-diagram-in-a-windows-form"></a>在 Windows Form 中內嵌圖表
 

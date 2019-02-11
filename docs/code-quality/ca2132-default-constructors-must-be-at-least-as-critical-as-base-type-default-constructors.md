@@ -1,7 +1,6 @@
 ---
 title: CA2132:預設建構函式至少必須和基底類型的預設建構函式一樣關鍵
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - CA2132
@@ -11,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cfe6e4f3ce896e5ae3d728a002bf2caf9f1948ef
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 8ba13514ca886ab822367bbd61aaebdc8527ec45
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55013531"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55945167"
 ---
 # <a name="ca2132-default-constructors-must-be-at-least-as-critical-as-base-type-default-constructors"></a>CA2132:預設建構函式至少必須和基底類型的預設建構函式一樣關鍵
 

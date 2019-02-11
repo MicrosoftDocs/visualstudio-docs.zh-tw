@@ -2,7 +2,6 @@
 title: 工作流程設計工具-InvokeDelegate
 ms.date: 11/04/2016
 ms.topic: reference
-ms.prod: visual-studio-dev15
 f1_keywords:
 - InvokeDelegate Designer
 - System.Activities.Statements.InvokeDelegate.UI
@@ -12,12 +11,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: d960984ddb65069b5d8ccd489ed3831d6c11b33c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 511d73ea2992887f31bc8750cc9ba32934bddd91
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54967702"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55925367"
 ---
 # <a name="invokedelegate"></a>InvokeDelegate
 

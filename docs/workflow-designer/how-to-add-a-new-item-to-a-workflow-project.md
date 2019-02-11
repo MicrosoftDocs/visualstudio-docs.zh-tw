@@ -2,19 +2,18 @@
 title: 工作流程設計工具-如何：將新項目新增至工作流程專案
 ms.date: 06/25/2018
 ms.topic: conceptual
-ms.prod: visual-studio-dev15
 ms.assetid: 5c6180ca-af10-4513-b0cb-7d478fd84eab
 author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8988c84ccc3cc1b13e76cff3eedf52083049a828
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e9016ee501c0fc4064e15358c3c8e2e4e0ac11cd
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54936121"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55938997"
 ---
 # <a name="how-to-add-a-new-item-to-a-workflow-project"></a>HOW TO：將新的項目新增至工作流程專案
 

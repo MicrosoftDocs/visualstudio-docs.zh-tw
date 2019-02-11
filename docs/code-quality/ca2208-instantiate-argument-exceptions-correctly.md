@@ -1,7 +1,6 @@
 ---
 title: CA2208:必須正確執行個體化引數例外狀況
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - CA2208
@@ -19,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 8ef4e23f0200f17c0f6d59789538352d9e1676ce
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: d82b1884336b314e8fcede3c6041030a878b999c
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54980176"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55922923"
 ---
 # <a name="ca2208-instantiate-argument-exceptions-correctly"></a>CA2208:必須正確執行個體化引數例外狀況
 

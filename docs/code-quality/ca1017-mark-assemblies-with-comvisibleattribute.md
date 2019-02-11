@@ -1,7 +1,6 @@
 ---
 title: CA1017:組件必須標記 ComVisibleAttribute
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - CA1017
@@ -19,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 85c3abdce2845cc46e92ae6b0c4c9d565562bcad
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 648c59e2660c0509edfcf65ac50bf8791bc5896e
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54959274"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55920115"
 ---
 # <a name="ca1017-mark-assemblies-with-comvisibleattribute"></a>CA1017:組件必須標記 ComVisibleAttribute
 

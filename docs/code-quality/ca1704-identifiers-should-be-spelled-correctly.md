@@ -1,7 +1,6 @@
 ---
 title: CA1704:識別項應該使用正確的拼字
 ms.date: 03/28/2018
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - CA1704
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cfb91c830239a61b3f7f7e58364ae41c87152321
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 8dbfc8081f980b7b9e978da782f1627a88a716a3
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54935653"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55941279"
 ---
 # <a name="ca1704-identifiers-should-be-spelled-correctly"></a>CA1704:識別項應該使用正確的拼字
 

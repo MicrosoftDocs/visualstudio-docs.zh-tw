@@ -1,7 +1,6 @@
 ---
 title: 了解 SAL
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: a94d6907-55f2-4874-9571-51d52d6edcfd
 author: mikeblome
@@ -9,12 +8,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: 56d416ce154f071804beb9b47d2623f2acee15af
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7f79796d186f5a365c37a8e24a3e523aba7ceb72
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53889916"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55946648"
 ---
 # <a name="understanding-sal"></a>了解 SAL
 

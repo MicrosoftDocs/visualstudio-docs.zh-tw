@@ -7,13 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 50190afd6dfbda054ab7c1636bb0f0f89984117a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 915bbc86422af4d60605934c3e7359087eba102e
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55004492"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55938107"
 ---
 # <a name="walkthrough-debugging-a-text-template-that-accesses-a-model"></a>逐步解說：偵錯文字範本存取模型
 當您修改或新增特定領域語言方案中的文字範本時，您可能會發生錯誤時，引擎會將轉換原始程式碼或編譯產生的程式碼時的範本。 下列逐步解說會示範一些您可以進行偵錯文字範本的操作。

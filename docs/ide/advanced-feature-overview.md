@@ -6,25 +6,25 @@ ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 739426d5d93628c90638fef32526484f27eef3e8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3fa12b878a21523e53a3ff78ad838e41eb95888f
+ms.sourcegitcommit: 0f7411c1a47d996907a028e920b73b53c2098c9f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53828494"
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "55690433"
 ---
 # <a name="features-of-visual-studio-2017"></a>Visual Studio 2017 的功能
 
-[Visual Studio IDE 概觀](../get-started/visual-studio-ide.md)一文提供 Visual Studio 的基本介紹。 本文描述的功能可能更適合資深開發人員或已十分熟悉 Visual Studio 的人員使用。
+[Visual Studio IDE 概觀](../get-started/visual-studio-ide.md)一文提供 Visual Studio 的基本介紹。 本文描述的功能可能更適合資深開發人員或已十分熟悉 Visual Studio 的開發人員使用。
 
 ## <a name="modular-installation"></a>模組安裝
 
-Visual Studio 的模組安裝程式可讓您選擇並安裝「工作負載」，這些是您慣用的程式設計語言或平台所需的幾組功能。 此策略有助於將 Visual Studio 安裝項的資源使用量降到更低，這意謂著它的安裝和更新速度也更快。
+Visual Studio 的模組安裝程式可讓您選擇並安裝「工作負載」。 工作負載是您慣用程式設計語言或平台所需的功能群組。 此策略有助於將 Visual Studio 安裝項的資源使用量降到更低，這意謂著它的安裝和更新速度也更快。
 
-如果您尚未安裝 Visual Studio 2017，請前往 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)頁面免費進行安裝。
+如果您尚未安裝 Visual Studio 2017，請前往 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017)頁面免費進行安裝。
 
 若要深入了解如何在您的系統上設定 Visual Studio，請參閱 [Install Visual Studio 2017](../install/install-visual-studio.md)。
 
@@ -72,23 +72,23 @@ Web 推動我們的現代化世界，而 Visual Studio 則可協助您撰寫適�
 
 - 使用 [Visual Studio Tools for Unity](../cross-platform/visual-studio-tools-for-unity.md) 以 C# 建置 2D 和 3D 遊戲。
 
-- 以[適用於跨平台開發的 C++](../cross-platform/visual-cpp-for-cross-platform-mobile-development.md) 建置 iOS、Android 和 Windows 裝置用的原生 C++ 應用程式，以及在為 iOS、Android 和 Windows 建置的程式庫中共用通用程式碼。
+- 建置適用於 iOS、Android 和 Windows 裝置的原生 C++ 應用程式。 使用[適用於跨平台開發的 C++](../cross-platform/visual-cpp-for-cross-platform-mobile-development.md)，在為 iOS、Android 和 Windows 建置的程式庫中共用通用程式碼。
 
 - 使用 [Android 模擬器](../cross-platform/visual-studio-emulator-for-android.md)部署、測試及偵錯 Android 應用程式。
 
 ## <a name="connect-to-databases"></a>連線至資料庫
 
-[伺服器總管] 可協助您在本機、從遠端瀏覽和管理 Azure、Salesforce.com、Office 365 及網站上的 SQL Server 執行個體和資產。 若要開啟 [伺服器總管]，請選擇主功能表上的 [檢視] > [伺服器總管]。 如需有關使用 [伺服器總管] 的詳細資訊，請參閱[新增連線 (英文)](../data-tools/add-new-connections.md)。
+[伺服器總管] 可協助您在本機、從遠端瀏覽和管理 Azure、Salesforce.com、Office 365 及網站上的 SQL Server 執行個體和資產。 若要開啟 [伺服器總管]，請選擇主功能表上的 [檢視] > [伺服器總管]。 如需使用 [伺服器總管] 的詳細資訊，請參閱[新增連線](../data-tools/add-new-connections.md)。
 
 [SQL Server Data Tools (SSDT)](/sql/ssdt/download-sql-server-data-tools-ssdt) 是一個適用於 SQL Server、Azure SQL Database 及 Azure SQL 資料倉儲的強大開發環境。 它可讓您建置、偵錯、維護及重構資料庫。 您可以使用資料庫專案，或直接使用內部或外部所連接的資料庫執行個體。
 
-Visual Studio 中的 [SQL Server 物件總管] 提供與 SQL Server Management Studio 類似的資料庫物件檢視。 [SQL Server 物件總管] 可讓您執行輕型的資料庫管理和設計工作，包括編輯資料表資料、比較結構描述、直接從 [SQL Server 物件總管] 使用內容功能表來執行查詢等。
+Visual Studio 中的 [SQL Server 物件總管] 提供與 SQL Server Management Studio 類似的資料庫物件檢視。 [SQL Server 物件總管] 可讓您執行輕型的資料庫管理和設計工作。 工作範例包括編輯資料表資料、比較結構描述、直接從 [SQL Server 物件總管] 使用操作功能表來執行查詢等。
 
 ![SQL Server 物件總管](../ide/media/vs2015_sqlobjectexplorer.png)
 
 ## <a name="debug-test-and-improve-your-code"></a>偵錯、測試及改善您的程式碼
 
-當您撰寫程式碼時，必須執行它並測試它，以找出錯誤 (bug) 及改善效能。 Visual Studio 的先進偵錯系統可讓您針對在本機專案、遠端裝置或[裝置模擬器](../cross-platform/visual-studio-emulator-for-android.md)上執行的程式碼進行偵錯。 您可以以一次一個陳述式的方式逐步偵錯程式碼，並一邊檢查變數。 您可以將中斷點設定成只在指定的條件為 true 時才叫用。 這些全部都可以在程式碼編輯器本身中管理，如此您就不需要離開您的程式碼。 如需有關 Visual Studio 中之 偵錯的更多詳細資料，請參閱[偵錯工具功能導覽](../debugger/debugger-feature-tour.md)。
+當您撰寫程式碼時，必須執行它並測試它，以找出錯誤 (bug) 及改善效能。 Visual Studio 的先進偵錯系統可讓您針對在本機專案、遠端裝置或[裝置模擬器](../cross-platform/visual-studio-emulator-for-android.md)上執行的程式碼進行偵錯。 您可以以一次一個陳述式的方式逐步偵錯程式碼，並一邊檢查變數。 您可以將中斷點設定成只在指定的條件為 true 時才叫用。 偵錯選項可以在程式碼編輯器本身中管理，如此您就不需要離開您的程式碼。 如需有關 Visual Studio 中之 偵錯的更多詳細資料，請參閱[偵錯工具功能導覽](../debugger/debugger-feature-tour.md)。
 
 若要深入了解如何改善您應用程式的效能，請查看 Visual Studio 的[分析](../profiling/profiling-feature-tour.md)功能。
 
@@ -96,13 +96,13 @@ Visual Studio 中的 [SQL Server 物件總管] 提供與 SQL Server Management S
 
 ## <a name="deploy-your-finished-application"></a>部署已完成的應用程式
 
-當您的應用程式已準備就緒而可部署到使用者或客戶時，Visual Studio 會提供工具來執行部署，不論您是要部署到 Microsoft Store、SharePoint 網站，還是透過 InstallShield 或 Windows Installer 技術來部署，都可以。 全部都可透過 IDE 來存取。 如需詳細資訊，請參閱[部署應用程式、服務和元件](../deployment/deploying-applications-services-and-components.md)。
+當您的應用程式已準備就緒而可部署到使用者或客戶時，Visual Studio 會提供工具來執行部署。 部署選項包括部署到 Microsoft Store、SharePoint 網站，或透過 InstallShield 或 Windows Installer 技術來部署。 全部都可透過 IDE 來存取。 如需詳細資訊，請參閱[部署應用程式、服務和元件](../deployment/deploying-applications-services-and-components.md)。
 
 ## <a name="manage-your-source-code-and-collaborate-with-others"></a>管理您的原始程式碼並與其他人共同作業
 
 您可以在任何提供者所裝載的 Git 儲存機制 (包括 GitHub) 中管理您的原始程式碼。 或使用 [Azure DevOps Services](/azure/devops/index) 為整個專案同時管理程式碼與 Bug 及工作項目。 若要深入了解如何在 Visual Studio 中使用 Team Explorer 來管理 Git 存放庫，請參閱 [Get Started with Git and Azure Repos](/azure/devops/repos/git/gitquickstart?tabs=visual-studio) (開始使用 Git 和 Azure Repos)。 Visual Studio 也有其他內建原始檔控制功能。 如需詳細資訊，請參閱 [New Git Features in Visual Studio 2017 (blog)](https://blogs.msdn.microsoft.com/devops/2017/03/06/new-git-features-in-visual-studio-2017/) (Visual Studio 2017 的新 Git 功能 (部落格))。
 
-Azure DevOps Services 是雲端型服務，用於規劃、裝載，自動化和部署軟體以及在小組中共同作業。 Azure DevOps Services 支援 Git repos (分散式版本控制) 和 Team Foundation 版本控制 (集中式版本控制)，以及用於儲存於版本控制系統中程式碼的連續建置和版本 (CI/CD) 管線。 Azure DevOps Services 也支援 Scrum、CMMI 和敏捷式開發方法。
+Azure DevOps Services 是雲端式服務，可規劃、裝載，自動化和部署軟體，以及在小組中啟用共同作業。 Azure DevOps Services 支援 Git 存放庫 (分散式版本控制) 和 Team Foundation 版本控制 (集中式版本控制)。 它們支援可連續建置和發行 (CI/CD) 儲存於版本控制系統中程式碼的管線。 Azure DevOps Services 也支援 Scrum、CMMI 和敏捷式開發方法。
 
 Team Foundation Server (TFS) 是 Visual Studio 的應用程式生命週期管理中樞。 其可讓所有人使用單一方案參與開發流程。 TFS 也適合用來管理異質小組和專案
 
@@ -110,7 +110,7 @@ Team Foundation Server (TFS) 是 Visual Studio 的應用程式生命週期管理
 
 下圖顯示裝載於 Azure DevOps Services 中解決方案的 [Team Explorer] 視窗。
 
-![Visual Studio Team Explorer](../ide/media/vs2017_teamexplorer.png)
+![Visual Studio Team Explorer](../ide/media/vs2017_teamexplorer_devops.png)
 
 您也可以自動化建置流程，來建置您小組開發人員已簽入版本控制的程式碼。 例如，您可以每晚或在每次簽入程式碼時建置一或多個專案。 如需詳細資訊，請參閱 [Azure Pipelines](/azure/devops/pipelines/index?view=vsts)。
 
@@ -127,4 +127,5 @@ Team Foundation Server (TFS) 是 Visual Studio 的應用程式生命週期管理
 ## <a name="see-also"></a>另請參閱
 
 - [Visual Studio IDE 概觀](../get-started/visual-studio-ide.md)
-- [Visual Studio 2017 的新功能](../ide/whats-new-in-visual-studio.md)
+- [Visual Studio 2017 的新功能](../ide/whats-new-visual-studio-2017.md)
+- [Visual Studio 2019 Preview 的新功能](../ide/whats-new-visual-studio-2019.md)

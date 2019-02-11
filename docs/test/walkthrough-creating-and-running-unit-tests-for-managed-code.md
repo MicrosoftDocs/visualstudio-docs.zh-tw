@@ -14,12 +14,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 author: gewarren
-ms.openlocfilehash: 130cb83e078a0f7c2924349dcd13692d3fe9125a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 12b232bf32be6802ccd82ecad647f2becc95addc
+ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54924596"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55484195"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>逐步解說：針對受控碼建立和執行單元測試
 
@@ -82,6 +82,11 @@ public void Debit(double amount)
 ## <a name="create-a-unit-test-project"></a>建立單元測試專案
 
 1. 在 [檔案] 功能表上，選取 [新增] > [新增專案]。
+
+   > [!TIP]
+   > 有幾種其他方式可以將其他專案新增至現有的解決方案。 在 [方案總管] 中以滑鼠右鍵按一下解決方案，然後選擇 [新增]  >  [新增專案]。 或者，您可以選取 [檔案]  >  [新增]  >  [專案]，然後在 [新增專案] 對話方塊中，選取 [新增至解決方案] 選項：
+   >
+   > ![[新增專案] 對話方塊中的 [新增至解決方案] 選項](media/add-to-solution.png)
 
 2. 在 [新增專案] 對話方塊中，依序展開 [已安裝的]、[Visual C#]，然後選擇 [測試]。
 

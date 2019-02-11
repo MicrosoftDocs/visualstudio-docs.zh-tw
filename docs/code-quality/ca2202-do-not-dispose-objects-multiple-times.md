@@ -1,7 +1,6 @@
 ---
 title: CA2202:不要多次處置物件的 Dispose 方法
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - CA2202
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d65e9466a57e28b8e0322fc45401fb6e2333aaf7
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: ed2edd83918a9e4bc89543d1217d51e5e87f00c1
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55012257"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55926940"
 ---
 # <a name="ca2202-do-not-dispose-objects-multiple-times"></a>CA2202:不要多次處置物件的 Dispose 方法
 

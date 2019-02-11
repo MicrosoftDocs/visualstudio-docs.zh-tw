@@ -2,19 +2,18 @@
 title: 適用於 Visual Studio 的 R 工具
 description: Visual Studio R 工具 (RTVS) 是免費的開放原始碼延伸模組，提供許多語言功能，包括 IntelliSense、偵錯及遠端工作區。
 ms.date: 11/13/2017
-ms.prod: visual-studio-dev15
 ms.topic: overview
 author: kraigb
 ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 542563340287b1d41a6f2c3aedd188e80589e898
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 3fa12091493bda23c7eae52377f93b45cfe4c6e7
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54947669"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55933557"
 ---
 # <a name="work-with-r-in-visual-studio"></a>在 Visual Studio 中使用 R
 
@@ -32,7 +31,7 @@ Visual Studio R 工具 (RTVS) 為適用於 Visual Studio 2017 和 Visual Studio 
 
 然後遵循下列連結以深入了解 R 的相關功能，以及 Visual Studio 本身的一般功能。
 
-| 功能 | 說明 | 一般 Visual Studio 文件 |
+| 功能 | 描述 | 一般 Visual Studio 文件 |
 | --- | --- | --- |
 | [Visual Studio 專案系統](r-projects-in-visual-studio.md) | 在便利的結構中組織並管理相關檔案，並利用適用於各種項目 (例如 R 程式碼、R 文件、R Markdown、SQL 查詢及預存程序) 的有用範本。 同時也能運用[套件管理員](r-package-manager-in-visual-studio.md)和 [SQL Server 整合](integrating-sql-server-with-r.md)。  | [Visual Studio 中的方案和專案](../ide/solutions-and-projects-in-visual-studio.md) |
 | [工作區](r-workspaces-in-visual-studio.md) | RTVS 可繫結至本機及遠端工作區，讓您能夠使用更小的資料集於本機開發 R 程式碼，然後輕鬆地利用更大的資料集在更為強大的雲端電腦上執行程式碼。 | N/A |

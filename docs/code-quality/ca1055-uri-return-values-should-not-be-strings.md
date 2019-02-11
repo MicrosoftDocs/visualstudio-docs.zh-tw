@@ -1,7 +1,6 @@
 ---
 title: CA1055:URI 傳回值不應該為字串
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - CA1055
@@ -19,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 740a8a872df91a553a3646dc847b802f5cfbfd5d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c2bbe15cbdd095f4c9c52b2db7614e133301f6ba
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55041330"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55922546"
 ---
 # <a name="ca1055-uri-return-values-should-not-be-strings"></a>CA1055:URI 傳回值不應該為字串
 

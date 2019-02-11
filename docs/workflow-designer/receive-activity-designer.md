@@ -2,7 +2,6 @@
 title: 工作流程設計工具-Receive 活動設計工具
 ms.date: 11/04/2016
 ms.topic: reference
-ms.prod: visual-studio-dev15
 f1_keywords:
 - System.ServiceModel.Activities.Receive.UI
 ms.assetid: f58d3c70-944d-4bb4-90a7-e68c103caddc
@@ -11,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c75b635cbdce7662c9e3a30237edb3e004ab7d0c
-ms.sourcegitcommit: 0342f99120fbd603b8f06f7e9166c39f2896827a
+ms.openlocfilehash: 1ba2a53b6e658d14d05db04b8b82e9da9bcc3564
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/05/2019
-ms.locfileid: "55742439"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55948247"
 ---
 # <a name="receive-activity-designer"></a>Receive 活動設計工具
 

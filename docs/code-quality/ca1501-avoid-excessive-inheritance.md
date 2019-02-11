@@ -1,7 +1,6 @@
 ---
 title: CA1501:避免在物件間過度繼承
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - CA1501
@@ -18,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: d011faba5c8dc423ec3127563ea001a689d92098
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: bc51b4c84ca38c0fb4e5837e3bcdf1f28a045747
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55022881"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55947480"
 ---
 # <a name="ca1501-avoid-excessive-inheritance"></a>CA1501:避免在物件間過度繼承
 

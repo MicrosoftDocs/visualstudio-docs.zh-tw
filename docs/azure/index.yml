@@ -1,10 +1,10 @@
 ### YamlMime:YamlDocument
-ms.openlocfilehash: 2a4b94a26b8f22ee87e42a1f890c58ab1299524f
-ms.sourcegitcommit: 612f8c21d1448f1a013c30100cdecfbec5ddb24f
+ms.openlocfilehash: 4efe20ba0ff0b25dd0d05154aad2df81767569b4
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/01/2019
-ms.locfileid: "55571079"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55928890"
 documentType: LandingData
 title: 使用 Visual Studio 進行 Azure 開發
 metadata:
@@ -12,7 +12,7 @@ metadata:
   description: 有關如何將應用程式與服務連接到 Azure，以及如何開發 Azure 服務的教學課程與概念素材。
   author: ghogen
   manager: jillfra
-  ms.prod: visual-studio-dev15
+  ms.prod: visual-studio-windows
   ms.technology: vs-azure
   ms.topic: landing-page
   ms.date: 10/09/2018

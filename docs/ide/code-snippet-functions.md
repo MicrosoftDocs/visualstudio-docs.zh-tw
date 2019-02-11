@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d448111a9bac5d03fe3bc8e7ba35c0f9fed1d4a6
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: d4e09602ed62e21a4a5a80a8e6fee301eef30512
+ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55020460"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55483714"
 ---
 # <a name="code-snippet-functions"></a>程式碼片段函式
 
@@ -28,13 +28,13 @@ ms.locfileid: "55020460"
 
 下表描述可用於與程式碼片段中的 `Function` 項目搭配使用的函式。
 
-|功能|說明|語言|
+|功能|描述|語言|
 |--------------|-----------------|--------------|
-|`GenerateSwitchCases(` `EnumerationLiteral` `)`|針對 `EnumerationLiteral` 參數所指定列舉的成員，產生 switch 陳述式和一組 case 陳述式。 `EnumerationLiteral` 參數必須是列舉常值或列舉類型的參考。|C#|
+|`GenerateSwitchCases(EnumerationLiteral)`|針對 `EnumerationLiteral` 參數所指定列舉的成員，產生 switch 陳述式和一組 case 陳述式。 `EnumerationLiteral` 參數必須是列舉常值或列舉類型的參考。|C#|
 |`ClassName()`|傳回包含已插入程式碼片段的類別名稱。|C#|
-|`SimpleTypeName(` `TypeName` `)`|在叫用程式碼片段的內容中，將 *TypeName* 參數降低為其最簡單形式。|C#|
+|`SimpleTypeName(TypeName)`|在叫用程式碼片段的內容中，將 *TypeName* 參數降低為其最簡單形式。|C#|
 
-## <a name="example"></a>範例
+## <a name="generateswitchcases-example"></a>GenerateSwitchCases 範例
 
 下列範例示範如何使用 `GenerateSwitchCases` 函式。 插入此程式碼片段並將列舉輸入至 `$switch_on$` 常值時，`$cases$` 常值會為列舉中的每個值產生 `case` 陳述式。
 
@@ -76,7 +76,7 @@ ms.locfileid: "55020460"
 </CodeSnippets>
 ```
 
-## <a name="example"></a>範例
+## <a name="classname-example"></a>ClassName 範例
 
 下列範例示範如何使用 `ClassName` 函式。 插入此程式碼片段時，會將 `$classname$` 常值取代為程式碼檔案中該位置的封入類別名稱。
 
@@ -123,7 +123,7 @@ ms.locfileid: "55020460"
 </CodeSnippets>
 ```
 
-## <a name="example"></a>範例
+## <a name="simpletypename-example"></a>SimpleTypeName 範例
 
 此範例示範如何使用 `SimpleTypeName` 函式。 將此程式碼片段插入至程式碼檔案時，會將 `$SystemConsole$` 常值取代為叫用程式碼片段之內容中 <xref:System.Console> 類型的最簡單表單。
 

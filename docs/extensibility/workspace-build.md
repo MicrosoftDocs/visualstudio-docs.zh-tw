@@ -2,18 +2,17 @@
 title: Visual Studio 中的工作區組建 |Microsoft Docs
 ms.date: 02/21/2018
 ms.topic: conceptual
-ms.assetid: 813f7a5e-f298-4469-9f4c-a5bddf5a6e14
 author: vukelich
 ms.author: svukel
 manager: viveis
 ms.workload:
 - vssdk
-ms.openlocfilehash: b0d90a3d317583e987eae83fadae5afa40546701
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 82660ee772280563b91830aaf1a18da0bc742b28
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53826717"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55951224"
 ---
 # <a name="workspace-build"></a>組建工作區
 

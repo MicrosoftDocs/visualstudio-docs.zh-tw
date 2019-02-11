@@ -1,32 +1,32 @@
 ---
-title: 教學課程：開始使用 C# 主控台應用程式
+title: 教學課程：建立簡單的 C# 主控台應用程式
 description: 了解如何逐步在 Visual Studio 中建立 C# 主控台應用程式。
 ms.custom: seodec18, get-started
-ms.date: 01/10/2019
+ms.date: 01/25/2019
 ms.technology: vs-ide-general
 ms.prod: visual-studio-dev15
 ms.topic: tutorial
 ms.devlang: CSharp
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 6114910f8c4cbeebc0301cc0c2167a49742823a5
-ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
+ms.openlocfilehash: 856c20175fd444c7acf83bdf02526c907a28b92f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54204427"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54936953"
 ---
-# <a name="tutorial-get-started-with-a-c-console-app-in-visual-studio"></a>教學課程：Visual Studio 中的 C# 主控台應用程式入門
+# <a name="tutorial-create-a-simple-c-console-app-in-visual-studio"></a>教學課程：在 Visual Studio 中建立簡單的 C# 主控台應用程式
 
-在 C# 的這個教學課程中，您將使用 Visual Studio 建立並執行主控台應用程式，並在這樣做的同時探索 [Visual Studio 整合式開發環境 (IDE)](../visual-studio-ide.md) 的一些功能。
+在 C# 的這個教學課程中，您將使用 Visual Studio 建立並執行主控台應用程式，並在這樣做的同時探索 Visual Studio 整合式開發環境 (IDE) 的一些功能。
 
-如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)頁面免費進行安裝。
+如果您尚未安裝 Visual Studio，請前往 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017)頁面免費進行安裝。
 
 ## <a name="create-a-project"></a>建立專案
 
@@ -42,19 +42,58 @@ ms.locfileid: "54204427"
 
 ### <a name="add-a-workgroup-optional"></a>新增工作群組 (選擇性)
 
-如果您看不到 [主控台應用程式] 專案範本，則其取得方式是新增 [.NET Core 跨平台開發] 工作負載。 若要了解如何執行這項操作，請參閱常見問題集中的「[什麼是工作負載？如何新增？](#workload)」 一節。
+如果您看不到 [主控台應用程式] 專案範本，則其取得方式是新增 [.NET Core 跨平台開發] 工作負載。 方式如下：
+
+#### <a name="option-1-use-the-new-project-dialog-box"></a>選項 1：使用 [新增專案] 對話方塊
+
+1. 選擇 [新增專案] 對話方塊左窗格中的 [開啟 Visual Studio 安裝程式] 連結。
+
+   ![從 [新增專案] 對話方塊選擇 [開啟 Visual Studio 安裝程式] 連結](./media/csharp-open-visual-studio-installer-generic-dark.png)
+
+1. Visual Studio 安裝程式即會啟動。 選擇 [.NET Core 跨平台開發] 工作負載，然後選擇 [修改]。
+
+   ![Visual Studio 安裝程式中的 .NET Core 跨平台開發工作負載](./media/dot-net-core-xplat-dev-workload.png)
+
+#### <a name="option-2-use-the-tools-menu-bar"></a>選項 2：使用 [工具] 功能表列
+
+1. 請取消 [新專案] 對話方塊，然後從頂端功能表列中選擇 [工具] > [取得工具和功能]。
+
+1. Visual Studio 安裝程式即會啟動。 選擇 [.NET Core 跨平台開發] 工作負載，然後選擇 [修改]。
 
 ## <a name="create-the-app"></a>建立應用程式
 
-首先，我們將新增程式碼來建立基本的計算機。 接下來，我們會調校程式碼以新增功能。 然後，我們會對應用程式進行偵錯以找出錯誤，將其修正。 最後，我們會精簡程式碼，讓其更有效率。
+首先，我們將探索一些以 C# 撰寫的基本整數運算。 然後，我們將新增程式碼來建立基本的計算機。 接下來，我們會調校程式碼以新增功能。 然後，我們會對應用程式進行偵錯以找出錯誤，將其修正。 最後，我們會精簡程式碼，讓其更有效率。
 
-現在我們先將基本計算機程式碼新增至您的專案。
+讓我們開始使用一些以 C# 撰寫的整數運算。
 
 1. 在程式碼編輯器中，刪除預設 "Hello World" 程式碼。
 
     ![從新的計算機應用程式中刪除預設 Hello World 程式碼](./media/csharp-console-calculator-deletehelloworld.png)
 
-   具體來說，刪除您在程式碼編輯器中看到的所有程式碼。
+   具體來說，刪除 `Console.WriteLine("Hello World!");` 一行。
+
+1. 鍵入下列程式碼來取代：
+
+    ```csharp
+            int a = 42;
+            int b = 119;
+            int c = a + b;
+            Console.WriteLine(c);
+            Console.ReadKey();
+    ```
+1. 選擇 [Calculator] 來執行您的程式 (或按 **F5**)。
+
+   ![選擇 [Calculator] 按鈕以從工具列執行應用程式](./media/csharp-console-calculator-button.png)
+
+   主控台視窗會隨即開啟並顯示 42 + 119 的總和。
+
+1. 現在，使用不同的運算子來嘗試變更 `int c = a + b;` 程式碼行，例如 `-` 用於相減、`*` 用於相乘或 */* 用於相除。
+
+    請注意，當您變更運算子並執行程式時，結果也會變更。
+
+讓我們繼續將一組更複雜的計算機程式碼新增至專案。
+
+1. 刪除您在程式碼編輯器中看到的所有程式碼。
 
 1. 在程式碼編輯器中輸入或貼上下列新程式碼：
 
@@ -165,7 +204,10 @@ ms.locfileid: "54204427"
 
 例如，如果您嘗試將數字除以零，或在應用程式僅接受數字字元時輸入英文字元 (反之亦然)，則應用程式會停止運作並傳回錯誤。
 
-讓我們逐步解說一些常見的使用者輸入錯誤，在[偵錯工具](../../debugger/debugger-feature-tour.md)將其找出，並在程式碼中修正。
+讓我們逐步解說一些常見的使用者輸入錯誤，在偵錯工具中將其找出，並在程式碼中修正。
+
+>[!TIP]
+>如需偵錯工具及其運作方式的詳細資訊，請參閱 [Visual Studio 偵錯工具初探](../../debugger/debugger-feature-tour.md)頁面。
 
 ### <a name="fix-the-divide-by-zero-error"></a>修正「除以零」錯誤
 
@@ -209,7 +251,7 @@ ms.locfileid: "54204427"
 
 #### <a name="revise-the-code"></a>修改程式碼
 
-我們將應用程式分為兩類：`calculator` 和 `program`，而不依賴 `program` 類別來處理所有程式碼。  
+我們將應用程式分為兩類：`calculator` 和 `program`，而不依賴 `program` 類別來處理所有程式碼。
 
 `calculator` 類別會處理大量計算工作，`program` 類別會處理使用者介面和錯誤擷取工作。
 
@@ -483,48 +525,6 @@ namespace Calculator
 
 ```
 
-## <a name="quick-answers-faq"></a>常見問題集快問快答
-
-以下提供常見問題集的快問快答，來強調幾個重要概念。 常見問題集也包含您遵循本教學課程的程序時，可能出現之問題的解答。
-
-### <a name="what-is-c"></a>什麼是 C#?
-
-C# 是在 NET Framework 與 .NET Core 上執行的型別安全程式設計語言。 使用 C#，您可以建立 Windows 應用程式、主從式應用程式、資料庫應用程式、XML Web Service、分散式元件等等。
-
-### <a name="what-is-visual-studio"></a>什麼是 Visual Studio？
-
-Visual Studio 是開發人員生產力工具的整合式開發套件。 請將它視為可用來建立程式和應用程式的程式。
-
-### <a name="what-is-a-console-app"></a>什麼是主控台應用程式？
-
-主控台應用程式會接受輸入，並在命令列視窗 (也稱為 主控台) 中顯示輸出。
-
-### <a name="what-is-net-core"></a>什麼是 .NET Core？
-
-.NET Core 是 .NET Framework 的下一個進化步驟。 如果 .NET Framework 可讓您跨程式設計語言來共用程式碼，則 .NET Core 會新增跨平台共用程式碼的能力。 更好的是，它是開放原始碼 
-
-(.NET Framework 與 .NET Core 都包含預先建置功能的程式庫。 它們也包含通用語言執行平台 (CLR)，它會作為執行您程式碼的虛擬機器。)
-
-### <a id="workload"></a>什麼是工作負載？如何新增？
-
-Visual Studio 中的工作負載，代表一組您可用來自訂 Visual Studio 安裝的程式設計選項和範本。 工作負載僅會安裝所選程式設計語言和平台所需的工具。 以下是其安裝方式。
-
-#### <a name="option-1-use-the-new-project-dialog-box"></a>選項 1：使用 [新增專案] 對話方塊
-
-1. 選擇 [新增專案] 對話方塊左窗格中的 [開啟 Visual Studio 安裝程式] 連結。
-
-   ![從 [新增專案] 對話方塊選擇 [開啟 Visual Studio 安裝程式] 連結](./media/csharp-open-visual-studio-installer-generic-dark.png)
-
-1. Visual Studio 安裝程式即會啟動。 選擇 [.NET Core 跨平台開發] 工作負載，然後選擇 [修改]。
-
-   ![Visual Studio 安裝程式中的 .NET Core 跨平台開發工作負載](./media/dot-net-core-xplat-dev-workload.png)
-
-#### <a name="option-2-use-the-tools-menu-bar"></a>選項 2：使用 [工具] 功能表列
-
-1. 請取消 [新專案] 對話方塊，然後從頂端功能表列中選擇 [工具] > [取得工具和功能]。
-
-1. Visual Studio 安裝程式即會啟動。 選擇 [.NET Core 跨平台開發] 工作負載，然後選擇 [修改]。
-
 ## <a name="next-steps"></a>後續步驟
 
 恭喜您完成此教學課程！ 若要更深入了解，請繼續下列教學課程。
@@ -534,4 +534,5 @@ Visual Studio 中的工作負載，代表一組您可用來自訂 Visual Studio 
 
 ## <a name="see-also"></a>另請參閱
 
-* [適合無基礎新手參加的 C# 基礎影片課程](https://mva.microsoft.com/en-us/training-courses/c-fundamentals-for-absolute-beginners-16169)
+* [影片課程：C# Fundamentals for Absolute Beginners](https://mva.microsoft.com/en-us/training-courses/c-fundamentals-for-absolute-beginners-16169) (適合無基礎新手的 C# 基礎課程)
+* [了解如何在 Visual Studio 中對 C# 程式碼進行偵錯](tutorial-debugger.md)

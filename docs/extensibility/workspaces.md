@@ -2,18 +2,17 @@
 title: 在 Visual Studio 中的工作區 |Microsoft Docs
 ms.date: 02/21/2018
 ms.topic: conceptual
-ms.assetid: 3489592a-dc0c-4cd3-9b08-cd367626980a
 author: vukelich
 ms.author: svukel
 manager: viveis
 ms.workload:
 - vssdk
-ms.openlocfilehash: 406d55b773a586d5cb0128599e225dabbadf21d3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: da61f3f46d9737bef6c14cf69a52be1951da28fb
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53876899"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55925432"
 ---
 # <a name="workspaces"></a>工作區
 
@@ -180,5 +179,5 @@ UI 內容可以用於自動載入您的套件。 值為 `4646B819-1AE0-4E79-97F4
 
 ## <a name="next-steps"></a>後續步驟
 
-* [檔案內容](workspace-file-contexts.md)-檔案的內容提供者會將程式碼智慧開啟資料夾的工作區。 
+* [檔案內容](workspace-file-contexts.md)-檔案的內容提供者會將程式碼智慧開啟資料夾的工作區。
 * [編製索引](workspace-indexing.md)-編製索引的工作區會收集並保存的工作區的相關資訊。

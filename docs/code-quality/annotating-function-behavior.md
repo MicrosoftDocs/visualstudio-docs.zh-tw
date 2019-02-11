@@ -1,7 +1,6 @@
 ---
 title: 註釋函式行為
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - _On_failure_
@@ -21,12 +20,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: 360c434b9c841954c4672dd774037dac81d6c4d4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 78a8bf94323391d031aaf718f6e3132eb89e1df3
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53835152"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55948026"
 ---
 # <a name="annotating-function-behavior"></a>註釋函式行為
 除了標註[函式參數和傳回值](../code-quality/annotating-function-parameters-and-return-values.md)，您可以標註整體函式的屬性。

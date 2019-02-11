@@ -1,7 +1,6 @@
 ---
 title: CA1724:類型名稱不應該和命名空間相符
 ms.date: 09/28/2018
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - TypeNamesShouldNotMatchNamespaces
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b0bd410fabbeebc05d13eaee94db79cc346881e5
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f81327324de937df57edfb36cae34d613f6298a5
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54989213"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55953967"
 ---
 # <a name="ca1724-type-names-should-not-match-namespaces"></a>CA1724:類型名稱不應該和命名空間相符
 

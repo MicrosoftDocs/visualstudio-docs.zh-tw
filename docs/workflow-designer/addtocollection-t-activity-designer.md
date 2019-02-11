@@ -2,7 +2,6 @@
 title: 工作流程設計工具-AddToCollection<T>活動設計工具
 ms.date: 11/04/2016
 ms.topic: reference
-ms.prod: visual-studio-dev15
 f1_keywords:
 - System.Activities.Statements.AddToCollection`1.UI
 ms.assetid: f7fc0702-164e-4370-8946-bb2f9f9384b7
@@ -11,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bc59628de24af3d0e4910f3ff566791a508127fe
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 7e339e2639d85f89d4110c36710ab9c19e0fe333
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54953535"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55945611"
 ---
 # <a name="addtocollectiont-activity-designer"></a>AddToCollection\<T > 活動設計工具
 

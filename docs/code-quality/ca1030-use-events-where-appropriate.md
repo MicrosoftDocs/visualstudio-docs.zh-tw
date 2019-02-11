@@ -1,7 +1,6 @@
 ---
 title: CA1030:建議在適當時使用事件
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - UseEventsWhereAppropriate
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 89ee195da621ea9d7342302efadf582e21f7e619
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 32645985237503a526ce7381cbeec4ecc9770b06
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54956723"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55929267"
 ---
 # <a name="ca1030-use-events-where-appropriate"></a>CA1030:建議在適當時使用事件
 

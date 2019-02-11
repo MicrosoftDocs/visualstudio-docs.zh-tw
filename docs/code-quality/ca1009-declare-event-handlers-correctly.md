@@ -1,7 +1,6 @@
 ---
 title: CA1009:事件處理常式必須正確宣告
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - CA1009
@@ -19,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 900eca590a87cc45a2859becd4a6a70c09d57bc7
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c3c5d2df6be4fef281d91794b5b71bfa0c3e653f
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54990910"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55956062"
 ---
 # <a name="ca1009-declare-event-handlers-correctly"></a>CA1009:事件處理常式必須正確宣告
 

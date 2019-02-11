@@ -1,7 +1,6 @@
 ---
 title: CA1700:不要在列舉值名稱&#39;保留&#39;
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - CA1700
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7046daecf2a133d44836c178cb42b45a286bb4b6
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 0f4b08c10fa0d9aa4dea2a58d7e219371baf13ac
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55018172"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55912192"
 ---
 # <a name="ca1700-do-not-name-enum-values-39reserved39"></a>CA1700:不要在列舉值名稱&#39;保留&#39;
 

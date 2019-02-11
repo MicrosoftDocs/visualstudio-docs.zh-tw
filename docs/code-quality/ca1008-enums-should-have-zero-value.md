@@ -1,7 +1,6 @@
 ---
 title: CA1008:列舉值中應該要有值為零的成員
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - CA1008
@@ -19,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 9264b37992885ff3d93aba4802d8d7f0cee535aa
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 4d8d7646ddb294cef27b58b5b5e212c33b11fb46
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54992902"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55955293"
 ---
 # <a name="ca1008-enums-should-have-zero-value"></a>CA1008:列舉值中應該要有值為零的成員
 

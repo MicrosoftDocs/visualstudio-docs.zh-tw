@@ -1,7 +1,6 @@
 ---
 title: 在執行階段功能區的存取
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e408b475b4ba7ac912826af3021c371b3af57f4c
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 5b00721325d6d4fa57fcb0ef6ecd2ebdf0da9930
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54876222"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55919959"
 ---
 # <a name="access-the-ribbon-at-runtime"></a>在執行階段功能區的存取
   您可以撰寫程式碼以顯示、隱藏和修改功能區，並且讓使用者從自訂工作窗格、執行窗格或 Outlook 表單區域中的控制項執行程式碼。  

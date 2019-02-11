@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: f352ac46b87fee66a491c178f5f11369eca7b7d7
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: d45501f4f8038daf0a891493286ab5f5835195b8
+ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54979058"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55484182"
 ---
 # <a name="c-intellisense"></a>C# IntelliSense
 
@@ -99,7 +99,7 @@ IntelliSense 會記住您最近在 [[列出成員]](../ide/using-intellisense.md
 
 ![新增 using，快速動作展開的影像](../ide/media/addusing-quickaction.png)
 
-按一下燈泡圖示，然後選擇 [using System.Xml;] 自動新增 using 指示詞。
+按一下錯誤燈泡圖示，然後選擇 [using System.Xml;] 自動新增 using 指示詞。
 
 ### <a name="remove-and-sort-usings"></a>移除和排序 Using
 
@@ -123,7 +123,7 @@ IntelliSense 會記住您最近在 [[列出成員]](../ide/using-intellisense.md
 
 每個未定義的識別碼下都會顯示紅色波浪底線。 當您將滑鼠指標放在識別碼時，工具提示中就會出現錯誤訊息。 若要顯示適當的選項，您可以使用下列其中一項程序：
 
-- 按一下未定義的識別碼。 [快速動作] 燈泡會出現在識別碼下。 按一下燈泡。
+- 按一下未定義的識別碼。 [快速動作] 錯誤燈泡會出現在識別碼下。 按一下錯誤燈泡。
 
 - 按一下未定義的識別碼，然後按 **Ctrl**+**.** (**Ctrl** + 句號)。
 

@@ -1,7 +1,6 @@
 ---
 title: CA1057:字串 URI 多載呼叫 System.Uri 多載
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - CA1057
@@ -19,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: f92340541de528b794f728bbbc1fe61a7d0853b9
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: cd22a228f0963e2bdc87df284402d119a0353c68
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55012920"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55922513"
 ---
 # <a name="ca1057-string-uri-overloads-call-systemuri-overloads"></a>CA1057:字串 URI 多載呼叫 System.Uri 多載
 

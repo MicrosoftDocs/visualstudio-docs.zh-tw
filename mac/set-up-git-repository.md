@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: E992FA1D-B2AD-4A28-ADC6-47E4FC471060
-ms.openlocfilehash: c8d1cec438c0d942290997a6d51c4c0f2252bf8e
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 615f9d5bcba036301c2aa100e4618ab339412882
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51296212"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54796966"
 ---
 # <a name="set-up-a-git-repository"></a>設定 Git 存放庫
 
@@ -68,7 +68,10 @@ Git 是一種分散式版本控制系統，可讓小組同時處理相同的文�
 
 6. 按一下 [確定]，然後按一下警示對話方塊中的 [發行]。
 
-7. 如果您尚未在 Visual Studio for Mac 喜好設定中輸入 Git 認證，請立即將其輸入。 首先，您必須建立存取權杖，以用來取代密碼。 如果您尚未建立存取權杖，請遵循 Git [存取權杖](https://help.github.com/articles/creating-an-access-token-for-command-line-use/) \(英文\) 文件中的步驟。
+7. 在 [Git 認證] 視窗中，輸入您的 GitHub 使用者名稱和密碼。 
+
+> [!NOTE]
+> 如果您的帳戶已啟用雙因素驗證 (2FA)，您必須建立存取權杖，以用來取代密碼。 如果您尚未建立存取權杖，請遵循 Git [存取權杖](https://help.github.com/articles/creating-an-access-token-for-command-line-use/) \(英文\) 文件中的步驟。
 
 8. 輸入使用者名稱和個人存取權杖，然後按 [確定]：
 
@@ -125,4 +128,4 @@ Git 是一種分散式版本控制系統，可讓小組同時處理相同的文�
 
 ## <a name="see-also"></a>另請參閱
 
-- [Visual Studio (Windows) 中的版本控制](/visualstudio/version-control/)
+- [Visual Studio 中的版本控制 (Windows 上)](/visualstudio/version-control/)

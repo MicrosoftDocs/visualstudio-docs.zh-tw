@@ -1,7 +1,6 @@
 ---
 title: CA1034:巢狀類型不應該為可見的
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - NestedTypesShouldNotBeVisible
@@ -19,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: e82189d496e6f9aaa651e59d98ce0f3ab17153c1
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: fb01065fed41a30f26e15d7295fabc03fb3f1f4f
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54958130"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55942553"
 ---
 # <a name="ca1034-nested-types-should-not-be-visible"></a>CA1034:巢狀類型不應該為可見的
 
