@@ -3,14 +3,15 @@ title: Visual Studio for Mac 教學課程
 description: Visual Studio for Mac 提供整合式的開發環境，以在 macOS 上建置 .NET 應用程式，包括 ASP.NET Core 網站，和適用於 iOS、Android、Mac 和 Xamarin.Forms 的 Xamarin 專案。
 author: conceptdev
 ms.author: crdun
-ms.date: 11/03/2018
+ms.date: 02/07/2019
 ms.assetid: 7DC64A52-AA41-4F3A-A8A1-8A20BCD81CC7
-ms.openlocfilehash: 99ad6cfcda7bf271853aff5c095bbb0664b3b592
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.custom: video
+ms.openlocfilehash: 3bfc0b9f6d7ba65b2b2023d9641992a27aa11ed8
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54315826"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55916996"
 ---
 # <a name="visual-studio-2017-for-mac-tour"></a>Visual Studio 2017 for Mac 導覽
 
@@ -102,6 +103,11 @@ Visual Studio for Mac 與 Git 和子版本原始檔控制系統整合。 進行�
 ![Solution Pad 中的未認可檔案](media/ide-tour-image23.png)
 
 如需在 Visual Studio 中使用版本控制的詳細資訊，請查看[版本控制](/visualstudio/mac/version-control)一文。
+
+## <a name="related-video"></a>相關影片
+
+> [!Video https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Visual-Studio-for-Mac-Overview/player]
+
 
 ## <a name="see-also"></a>另請參閱
 

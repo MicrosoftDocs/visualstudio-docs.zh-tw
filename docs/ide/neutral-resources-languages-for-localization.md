@@ -1,7 +1,6 @@
 ---
 title: 當地語系化的中性資源語言
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - localization [Visual Studio], resources
@@ -16,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 513cd8295a3e25a171de6623ba706ce7dfb2a2e6
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c1a671eefae23fb369cd7398efb7589764ebb46f
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54962101"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55912868"
 ---
 # <a name="neutral-resources-languages-for-localization"></a>當地語系化的中性資源語言
 

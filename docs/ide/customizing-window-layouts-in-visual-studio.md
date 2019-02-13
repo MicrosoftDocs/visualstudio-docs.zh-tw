@@ -1,7 +1,6 @@
 ---
 title: 自訂視窗版面配置
 ms.date: 01/23/2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - vs.windows
@@ -24,12 +23,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ae88d21130111d9b65ebbad52a7ccb8fa900a73
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 7719a355e95473e5a077fc935431c54fe1facdac
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54928109"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55927538"
 ---
 # <a name="customize-window-layouts-in-visual-studio"></a>在 Visual Studio 中自訂視窗版面配置
 

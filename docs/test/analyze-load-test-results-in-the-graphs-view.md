@@ -15,13 +15,12 @@ ms.assetid: 4a919cd8-541c-40ee-be3b-352fabc56140
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: d1d5899211283301bde2944eb07b67b6d7b59a4f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c48fe67c8d52f962589c9f8628ff49f12f7770c5
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55012621"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55970552"
 ---
 # <a name="analyze-load-test-results-in-the-graphs-view-of-the-load-test-analyzer"></a>在負載測試分析器的圖形檢視中分析負載測試結果
 
@@ -39,7 +38,7 @@ ms.locfileid: "55012621"
 
 下列表格列出可用於分析負載測試結果的內建圖形。
 
-|圖形名稱|說明|
+|圖形名稱|描述|
 |-|-|
 |關鍵指標|用於描述測試效能基本層面的計數器，例如使用者負載、輸送量和回應時間。|
 |測試回應時間|執行測試所需時間量的資料。|

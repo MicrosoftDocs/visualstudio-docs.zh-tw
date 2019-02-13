@@ -5,7 +5,6 @@ author: abuchholtzau
 ms.author: allisb
 ms.date: 09/05/2018
 ms.topic: reference
-ms.prod: visual-studio-dev15
 f1_keywords:
 - VS.ToolsOptionsPages.Environment.PathTrustOptions
 helpviewer_keywords:
@@ -14,12 +13,12 @@ helpviewer_keywords:
 - mark of the web
 - trusted files
 - trusted folders
-ms.openlocfilehash: 17b204a54e2ecd52438f6a05f5190a6ee0f396f5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 011673bca7be569b5b350dc264148d5a7890d39c
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53955603"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55954943"
 ---
 # <a name="configure-trust-settings-for-files-and-folders"></a>設定檔案和資料夾的信任設定
 

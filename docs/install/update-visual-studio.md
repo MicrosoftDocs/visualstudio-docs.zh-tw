@@ -4,7 +4,6 @@ titleSuffix: ''
 description: 了解如何將 Visual Studio 逐步更新至最新版本。
 ms.date: 04/23/2018
 ms.custom: seodec18
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - update Visual Studio
@@ -15,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 35f509b9896a9a3c672fb2d432958d94637cc529
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a8e972c86f4a3dfecdcd36d2aec768e0ea3b0065
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55031064"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55953954"
 ---
 # <a name="update-visual-studio-2017-to-the-most-recent-release"></a>將 Visual Studio 2017 更新至最新版本
 

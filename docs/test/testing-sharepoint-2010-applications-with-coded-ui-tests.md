@@ -1,19 +1,18 @@
 ---
 title: 使用自動程式化 UI 測試來測試 SharePoint 應用程式
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: a4b79531948310d0f2628b6ade334d6ea9df35ca
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 8b2851d436e9cef64f8a03c3f794d07f12cd0cf8
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54946007"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55912751"
 ---
 # <a name="test-sharepoint-applications-with-coded-ui-tests"></a>使用自動程式化 UI 測試來測試 SharePoint 應用程式
 

@@ -8,13 +8,12 @@ ms.assetid: 6fe13be1-aeb5-4927-9bff-35950e194da9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 42a9cf3c7ff0fbd1d5a4cb8bf006ba75c5694c30
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: fbbad4e48aaba41672a1f795e8b3d7851f7bd5e4
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54964518"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55926251"
 ---
 # <a name="how-to-create-a-recorder-plug-in"></a>HOW TO：建立錄製器外掛程式
 

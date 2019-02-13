@@ -1,7 +1,6 @@
 ---
 title: C# 程式碼片段
 ms.date: 06/05/2017
-ms.prod: visual-studio-dev15
 ms.topic: reference
 helpviewer_keywords:
 - snippets [C#]
@@ -13,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 38794c3a81d98b245102f48b0c99319f6e9571b4
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: badd1ef796f1854f07043e775923c4d3f1480624
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55021386"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55917840"
 ---
 # <a name="c-code-snippets"></a>C# 程式碼片段
 
@@ -32,7 +31,7 @@ ms.locfileid: "55021386"
 
 Visual Studio for C# 中預設會包含下列程式碼片段。
 
-|名稱 (或捷徑)|說明|插入程式碼片段的有效位置|
+|名稱 (或捷徑)|描述|插入程式碼片段的有效位置|
 | - |-----------------| - |
 |#if|建立 [#if](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-if) 指示詞和 [#endif](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-endif) 指示詞。|任何位置。|
 |#region|建立 [#region](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-region) 指示詞和 [#endregion](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-endregion) 指示詞。|任何位置。|

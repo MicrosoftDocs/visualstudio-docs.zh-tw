@@ -1,7 +1,6 @@
 ---
 title: -Diff (devenv.exe)
 ms.date: 12/10/2018
-ms.prod: visual-studio-dev15
 ms.topic: reference
 helpviewer_keywords:
 - Devenv, /Diff switch
@@ -13,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c7e701a0365827c09ec919dae661aa0bf94c2e45
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c2e69435a319a9730af846a912cb3f90a12d4ac8
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55023466"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55918465"
 ---
 # <a name="diff-devenvexe"></a>/Diff (devenv.exe)
 

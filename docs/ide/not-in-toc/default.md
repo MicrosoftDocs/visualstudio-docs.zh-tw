@@ -9,13 +9,12 @@ f1_keywords:
 manager: jillfra
 author: gewarren
 ms.author: gewarren
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: be3a845dcc31c2f5b58d9f3be38026265a9b1a88
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 7b4f78bb2249ef60121cfc1557bf06e696e585b8
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55069664"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55912046"
 ---
 # <a name="f1-help"></a>F1 說明
 

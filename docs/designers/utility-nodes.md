@@ -1,7 +1,6 @@
 ---
 title: 公用程式節點
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 ms.assetid: ff732221-b731-424c-ad5b-82ef5f21dff5
 author: gewarren
@@ -9,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f2cb747c6309b59059eece258f8d71ba4d4475c9
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f136327716d07ea76771b49d95e6d79f8ac3d1a8
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54984635"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55911919"
 ---
 # <a name="utility-nodes"></a>公用程式節點
 
@@ -22,7 +21,7 @@ ms.locfileid: "54984635"
 
 ## <a name="utility-node-reference"></a>公用程式節點參考
 
-|節點|詳細資料|屬性|
+|節點|Details|屬性|
 |----------|-------------|----------------|
 |**附加向量**|將指定的輸入附加在一起，建立一個向量。<br /><br /> **輸入：**<br /><br /> `Vector`：`float`、`float2` 或 `float3`<br /> 要附加到的值。<br /><br /> `Value to Append`: `float`<br /> 要附加的值。<br /><br /> **輸出：**<br /><br /> `Output`：`float2`、`float3` 或 `float4`，取決於輸入類型 `Vector`<br /> 新的向量。|無|
 |**菲涅耳**|使用指定的曲面法線入計算菲涅耳降低值。<br /><br /> 菲涅耳降低值表示目前像素的曲面法線與檢視向量有多一致。 當向量對齊時，函式的結果為 0; 結果會因為向量變得較不類似而增加，並在向量成直角時達到其最大值。 您可以根據目前像素方向與觀景窗之間的關聯性，使用這個對外表進行或多或少的效果。<br /><br /> **輸入：**<br /><br /> `Surface Normal`: `float3`<br /> 目前像素的曲面法線，定義於目前像素的正切函數空間。 如同在法線對應中一樣，您可以用此來擾亂明顯的曲面法線。<br /><br /> **輸出：**<br /><br /> `Output`: `float`<br /> 目前像素的反射率。|**指數**<br /> 用來計算菲涅耳降低值的指數。|

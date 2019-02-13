@@ -1,19 +1,18 @@
 ---
 title: Work with multiple user accounts
 ms.date: 12/10/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7470ad1a277356e663ea8756eebd36bb081cfb27
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c910ab867be379264464650cef6bec00fc9d82f9
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54942408"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55933388"
 ---
 # <a name="work-with-multiple-user-accounts"></a>Work with multiple user accounts
 

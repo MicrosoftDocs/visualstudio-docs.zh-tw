@@ -2,7 +2,6 @@
 title: Python 環境視窗參考
 description: 有關 Visual Studio [Python 環境] 視窗中所出現每個索引標籤的詳細資料。
 ms.date: 12/06/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -11,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: fa82d2d475d540dfdda31c7dea1bd4681aaeb7a2
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 75f04d8045ebafea64634b156a57bc2f50a5009b
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54982386"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55909982"
 ---
 # <a name="python-environments-window-tabs-reference"></a>Python 環境視窗索引標籤參考
 
@@ -35,7 +34,7 @@ ms.locfileid: "54982386"
 
 ![Python 環境的 [Oview (概觀)] 索引標籤](media/environments-overview-tab.png)
 
-| 命令 | 說明 |
+| 命令 | 描述 |
 | --- | --- |
 | **將此環境設為新專案的預設值** | 設定使用中環境，可能會導致在載入 IntelliSense 資料庫時，Visual Studio (2017 15.5 版及更早版本) 短暫沒有反應。 環境如果含有許多套件，則無反應的時間可能會更長。 |
 | **瀏覽散發者的網站** | 將瀏覽器開啟至 Python 發行所提供的 URL。 例如，Python 3.x 會移至 python.org。 |
@@ -61,7 +60,7 @@ ms.locfileid: "54982386"
 
 ![Python 環境的 [Configure (設定)] 索引標籤](media/environments-configure-tab.png)
 
-| 欄位 | 說明 |
+| 欄位 | 描述 |
 | --- | --- |
 | **描述** | 要賦予環境的名稱。 |
 | **Prefix path (前置路徑)** | 解譯器的基底資料夾位置。 填入此值並按一下 [自動偵測] 之後，Visual Studio 就會嘗試為您填入其他欄位。 |

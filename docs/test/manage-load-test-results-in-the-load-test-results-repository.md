@@ -11,13 +11,12 @@ ms.assetid: 1cd63c4b-4f74-4133-b675-5e8fbeab25f3
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 311d043d493d6958afae8a4217b42ba5abcd05f8
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f9623022d5e0132c8b099757a5af85a3ddd62ed1
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54952358"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55934766"
 ---
 # <a name="manage-load-test-results-in-the-load-test-results-repository"></a>管理負載測試結果存放庫中的負載測試結果
 

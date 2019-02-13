@@ -1,7 +1,6 @@
 ---
 title: 針對中斷參考進行疑難排解
 ms.date: 03/21/2017
-ms.prod: visual-studio-dev15
 ms.topic: troubleshooting
 helpviewer_keywords:
 - C# projects, references
@@ -14,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 85d6eb776854474042ea4ccc050f486a9edc0b5a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 8f9095e3b8c1f80b35b2d135c122c2d7230c1f8c
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55042604"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55954747"
 ---
 # <a name="troubleshoot-broken-references"></a>針對中斷參考進行疑難排解
 

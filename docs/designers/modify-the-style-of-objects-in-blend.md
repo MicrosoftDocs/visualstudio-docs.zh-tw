@@ -1,19 +1,18 @@
 ---
 title: 在 Blend 中修改物件的樣式
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fcdd5b98ce49dbf437e8071c5e2cd7d734c666c4
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 1b9cd7e785b1c4ffa8613b6f5440a33b99dd2de6
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55028565"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55955306"
 ---
 # <a name="modify-the-style-of-objects-in-blend"></a>在 Blend 中修改物件的樣式
 

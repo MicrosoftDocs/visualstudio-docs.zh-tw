@@ -1,7 +1,6 @@
 ---
 title: 使用說明檢視器目錄
 ms.date: 11/02/2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - hv_contents
@@ -16,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6becee36b4d78d6522e662d3b6bc4879cad7501d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: de77349ec3e8ddc4fd0b4716bc39bd84024d981c
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54940839"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55942098"
 ---
 # HOW TO：在目錄中尋找主題
 
