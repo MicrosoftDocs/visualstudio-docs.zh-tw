@@ -9,15 +9,14 @@ ms.assetid: 2222841f-e443-4a3d-8c70-4506aa905193
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 833f4fba621c41a51adca1368c784df313419f97
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 36fc5dd306782779f553d4144c272c91c7e0f0af
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54945511"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55929397"
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>使用 ADO.NET 建立簡單的資料應用程式
 
@@ -60,7 +59,7 @@ ms.locfileid: "54945511"
 
 7. 將 T-SQL 指令碼貼到查詢編輯器，然後選擇**Execute**  按鈕。
 
-     短時間之後，查詢完成執行，並建立資料庫物件。 資料庫包含兩個資料表：客戶和訂單。 這些資料表一開始，包含任何資料，但當您執行的應用程式，您將建立時，您可以加入資料。 資料庫也會包含四個簡單的預存程序。
+     短時間之後，查詢完成執行，並建立資料庫物件。 資料庫包含兩個資料表： 客戶和訂單。 這些資料表一開始，包含任何資料，但當您執行的應用程式，您將建立時，您可以加入資料。 資料庫也會包含四個簡單的預存程序。
 
 ## <a name="create-the-forms-and-add-controls"></a>建立表單並加入控制項
 

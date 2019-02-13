@@ -16,15 +16,14 @@ ms.assetid: 73ee9759-0a90-48a9-bf7b-9d6fc17bff93
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: df7d5295cdf9460c8f331b9bf2f49138f9a806ab
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a8e14a53719d4913bcc04bcb2b702ca4ec4a8c55
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55013648"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55927213"
 ---
 # <a name="handle-a-concurrency-exception"></a>處理並行例外狀況
 

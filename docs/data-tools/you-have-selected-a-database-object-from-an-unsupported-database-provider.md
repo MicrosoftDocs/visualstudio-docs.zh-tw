@@ -6,15 +6,14 @@ ms.assetid: c0f1298e-31aa-471e-ae19-1bafffd2ae40
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 03c2b6b1f22b1d57c98ab8cb90c9c34303c96f96
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 13e6dd42ed372fb28d850a566ea1900447ad220c
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54919651"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55909505"
 ---
 # <a name="you-have-selected-a-database-object-from-an-unsupported-database-provider"></a>您已從不支援的資料提供者選取資料庫物件
 

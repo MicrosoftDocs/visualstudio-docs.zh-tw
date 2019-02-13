@@ -14,15 +14,14 @@ ms.assetid: 3aa80194-0191-474d-9d28-5ec05654b426
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 2fe1a41792aa6712f61b2d034cac75528108a722
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: da6f276e714c816ea9b3c1b735ad50f31ffdc3c0
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54940891"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55931503"
 ---
 # <a name="display-related-data-in-wpf-applications"></a>在 WPF 應用程式中顯示相關資料
 

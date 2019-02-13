@@ -17,15 +17,14 @@ ms.assetid: f4f100f1-776d-46dc-b2fd-5b35b98d9561
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: ed61f8e1ee864cc07132ae003dc0238884d370ba
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a15c666ace8a8bc3313d5f95e818c68693f15f28
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54997919"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55912543"
 ---
 # <a name="filter-and-sort-data-in-a-windows-forms-application"></a>在 Windows Forms 應用程式中篩選和排序資料
 

@@ -1,22 +1,21 @@
 ---
-title: HOW TO：建立對應至資料表和檢視的 LINQ to SQL 類別 (O-R 設計工具)
+title: 如何：建立對應至資料表和檢視的 LINQ to SQL 類別 (O-R 設計工具)
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 0fb78bbc-7a78-4ab4-b32f-85ece912e660
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 6a5cf92ef52de3a8cf2b3d59d43c1dc1fb2cd99d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 90f08715795a75a4a429ce16fdfcf24d06ba5843
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54999323"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55970591"
 ---
-# <a name="how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-or-designer"></a>HOW TO：建立對應至資料表和檢視的 LINQ to SQL 類別 (O/R 設計工具)
+# <a name="how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-or-designer"></a>如何：建立對應至資料表和檢視的 LINQ to SQL 類別 (O/R 設計工具)
 
 [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] 會對應至資料庫資料表和檢視表的類別稱為*實體類別*。 實體類別對應至記錄，而實體類別的個別屬性對應至組成記錄的個別資料行。 建立實體類別為基礎的資料庫資料表或檢視表拖曳資料表或檢視表，從**伺服器總管**或是**資料庫總管**拖曳至[LINQ to SQL 工具在 Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md). **O/R Designer**產生的類別，並套用特定[!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)]屬性，可讓[!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)]功能 (資料通訊和編輯功能<xref:System.Data.Linq.DataContext>)。 如需詳細資訊[!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)]類別，請參閱[LINQ to SQL 物件模型](/dotnet/framework/data/adonet/sql/linq/the-linq-to-sql-object-model)。
 
@@ -27,7 +26,7 @@ ms.locfileid: "54999323"
 
 將資料表或檢視從**伺服器總管**或**資料庫總管**拖曳至**O/R 設計工具**建立實體類別，除了<xref:System.Data.Linq.DataContext>方法，用於執行更新。
 
-[!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] 執行階段預設會建立邏輯，以將可更新之實體類別中的變更儲存回資料庫。 這個邏輯是根據資料表的結構描述 (資料行定義和主索引鍵資訊)。 如果您不希望有此行為，可將實體類別設定為使用預存程序來執行插入、更新和刪除，而不使用預設的 [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] 執行階段行為。 如需詳細資訊，請參閱[＜How to：指派用來執行更新、插入和刪除的預存程序 (O/R 設計工具)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)。
+[!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] 執行階段預設會建立邏輯，以將可更新之實體類別中的變更儲存回資料庫。 這個邏輯是根據資料表的結構描述 (資料行定義和主索引鍵資訊)。 如果您不希望有此行為，可將實體類別設定為使用預存程序來執行插入、更新和刪除，而不使用預設的 [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] 執行階段行為。 如需詳細資訊，請參閱 <<c0> [ 如何： 指派預存程序來執行更新、 插入和刪除 （O/R 設計工具）](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)。
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 
@@ -65,7 +64,7 @@ ms.locfileid: "54999323"
 ## <a name="see-also"></a>另請參閱
 
 - [Visual Studio 中的 LINQ to SQL 工具](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
-- [逐步解說：建立 LINQ to SQL 類別 （O-R 設計工具）](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)
+- [逐步解說：建立 LINQ to SQL 類別 (O-R 設計工具)](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)
 - [DataContext 方法 (O/R 設計工具)](../data-tools/datacontext-methods-o-r-designer.md)
 - [如何：建立對應至預存程序和函式的 DataContext 方法 (O/R 設計工具)](../data-tools/how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-o-r-designer.md)
 - [LINQ to SQL 物件模型](/dotnet/framework/data/adonet/sql/linq/the-linq-to-sql-object-model)

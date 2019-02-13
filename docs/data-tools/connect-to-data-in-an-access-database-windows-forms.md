@@ -12,15 +12,14 @@ ms.assetid: 4159e815-d430-4ad0-a234-e4125fcbef18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 38035851405261b94ad1a83f8b2c96d4c33e6952
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: efad211c5807aa4a018ede3c9018cf69f4668747
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54952752"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55933778"
 ---
 # <a name="connect-to-data-in-an-access-database-windows-forms"></a>連線至 Access 資料庫中的資料 (Windows Forms)
 

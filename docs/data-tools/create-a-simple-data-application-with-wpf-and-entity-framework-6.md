@@ -7,15 +7,14 @@ dev_langs:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: d5c6a5a1e7dab8f52dc098fb14a1f872d14eedcd
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 0febbf31dcf9f0ae1e7a4e47dae2e9cf3d291dbf
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54959222"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55909163"
 ---
 # <a name="create-a-simple-data-application-with-wpf-and-entity-framework-6"></a>使用 WPF 和 Entity Framework 6 建立簡單的資料應用程式
 
@@ -354,7 +353,7 @@ Visual Studio 所產生的預設排列方式不適合您的應用程式，因此
 
 在 Windows Forms 應用程式，您取得 BindingNavigator 物件具有按鈕瀏覽資料庫中的資料列，並執行基本 CRUD 作業。 WPF 不會提供 BindingNavigator，但很輕易地建立一個。 您這麼做的水平的 StackPanel 內的按鈕，並會繫結至程式碼後置中方法的命令相關聯的按鈕。
 
-有個四部分的命令邏輯：（1） 命令、 （2） 的繫結、 （3） 按鈕，以及 （4） 命令中的處理常式程式碼後置。
+有個四部分的命令邏輯: （1） 命令、 （2） 的繫結、 （3） 按鈕，以及 （4） 命令中的處理常式程式碼後置。
 
 ### <a name="add-commands-bindings-and-buttons-in-xaml"></a>在 XAML 中新增命令、 繫結和按鈕
 

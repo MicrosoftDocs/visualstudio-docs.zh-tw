@@ -10,15 +10,14 @@ ms.assetid: 821de34b-eaa9-40af-b9aa-b8305de16899
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 3cab076f1a0c6c81a65714e219ffea1179d30fba
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 9115e675c43e04496712784371ac2301ef7c2f8a
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54980748"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55934247"
 ---
 # <a name="compatible-database-systems-for-visual-studio"></a>適用於 Visual Studio 相容的資料庫系統
 

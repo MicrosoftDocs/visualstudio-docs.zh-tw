@@ -12,15 +12,14 @@ ms.assetid: dafac00e-df9d-4d4a-95a6-e34b4d099425
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: b12c84151c55828a9e0ab2e97f5ccfff4592ee3a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 75f7dd3149785520023657bb86ec8172dc379ab6
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55039315"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55926992"
 ---
 # <a name="add-code-to-tableadapters-in-n-tier-applications"></a>將程式碼新增至多層式架構 (N-Tier) 應用程式中的 TableAdapter
 您可以透過建立 TableAdapter 部分類別檔案，並加入程式碼擴充 TableAdapter 的功能 (而不是將程式碼加入*DatasetName.DataSet.Designer*檔案)。 部分類別可讓多個實體檔案分割為特定類別的程式碼。 如需詳細資訊，請參閱 <<c0> [ 部分](/dotnet/visual-basic/language-reference/modifiers/partial)或是[partial （類型）](/dotnet/csharp/language-reference/keywords/partial-type)。

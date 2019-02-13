@@ -21,15 +21,14 @@ ms.assetid: 012c5924-91f7-4790-b2a6-f51402b7014b
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: c6185103daab7d030787bd6f4f4f125b0fb8bcdb
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f120f29494b8c519253c98f889496189e7e2594f
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54997152"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55931620"
 ---
 # <a name="directly-access-the-database-with-a-tableadapter"></a>以 TableAdapter 直接存取資料庫
 

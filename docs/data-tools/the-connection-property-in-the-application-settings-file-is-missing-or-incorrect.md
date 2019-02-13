@@ -6,15 +6,14 @@ ms.assetid: 77724510-ff59-4d43-b933-a0434e1ac597
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: d125c5e12320f0c2a17e12c53ca62764f4dfe79f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 1a2b06d16c3761c1f2d82197c82d195b67845989
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55070810"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55941461"
 ---
 # <a name="the-connection-property-in-the-application-settings-file-is-missing-or-incorrect"></a>應用程式設定檔中的連接屬性遺漏或不正確
 

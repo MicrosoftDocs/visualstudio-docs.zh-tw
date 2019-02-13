@@ -14,15 +14,14 @@ ms.assetid: 7ebe03da-ce8c-4cbc-bac0-a2fde4ae4d07
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 3c291f9437cab79ca1030bdde3d5d3df86547a87
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 945a04213ab902c17459eba6e418aeebea78f6d9
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54952310"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55936612"
 ---
 # <a name="save-data-to-a-database-multiple-tables"></a>將資料儲存至資料庫 (多個資料表)
 
@@ -78,7 +77,7 @@ ms.locfileid: "54952310"
 
 ## <a name="create-the-data-source"></a>建立資料來源
 
-此步驟會使用 [資料來源組態精靈] 從 Northwind 資料庫建立資料來源。 您必須具有 Northwind 範例資料庫的存取權，才能建立連接。 如需設定 Northwind 範例資料庫的詳細資訊，請參閱[How to:安裝範例資料庫](../data-tools/installing-database-systems-tools-and-samples.md)。
+此步驟會使用 [資料來源組態精靈] 從 Northwind 資料庫建立資料來源。 您必須具有 Northwind 範例資料庫的存取權，才能建立連接。 如需設定 Northwind 範例資料庫的詳細資訊，請參閱[如何： 安裝範例資料庫](../data-tools/installing-database-systems-tools-and-samples.md)。
 
 1. 在 **資料**功能表上，選取**顯示資料來源**。
 
