@@ -1,25 +1,20 @@
 ---
 title: 步驟 2：執行您的程式 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: 9a8fe90e-c97b-4e98-b6c8-0c6b3962c49d
 caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: b4c8c3788a40941d2cc6fe563af8bd030b2b913d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 689d577f0d8ac626094391be0f3767f441854093
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49242186"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54778561"
 ---
 # <a name="step-2-run-your-program"></a>步驟 2：執行您的程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -67,6 +62,3 @@ ms.locfileid: "49242186"
 -   若要前往下一個教學課程步驟，請參閱[步驟 3：設定您的表單屬性](../ide/step-3-set-your-form-properties.md)。  
   
 -   若要回到上一個教學課程步驟，請參閱[步驟 1：建立 Windows Form 應用程式專案](../ide/step-1-create-a-windows-forms-application-project.md)。
-
-
-

@@ -1,25 +1,20 @@
 ---
-title: 步驟 4：將 Click 事件處理常式新增至每個標籤 | Microsoft Docs
-ms.custom: ''
+title: 步驟 4：將 Click 事件處理常式新增至每個標籤 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: 16bdbc7c-4129-411d-bace-f4a3e5375975
 caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 93ce8f97f32ac41c4724db3c4cc08389f052f1ef
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 9af0d60e9321baa9f4d2ffc4944d939e6398dcf7
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49923377"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54775926"
 ---
 # <a name="step-4-add-a-click-event-handler-to-each-label"></a>步驟 4：將 Click 事件處理常式加入至每個標籤
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -67,6 +62,3 @@ ms.locfileid: "49923377"
 -   若要移至下一個教學課程步驟，請參閱[步驟 5：新增標籤參考](../ide/step-5-add-label-references.md)。  
   
 -   若要返回上一個教學課程步驟，請參閱[步驟 3：將隨機圖示指派給每個標籤](../ide/step-3-assign-a-random-icon-to-each-label.md)。
-
-
-

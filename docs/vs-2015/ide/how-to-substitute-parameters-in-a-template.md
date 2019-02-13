@@ -1,14 +1,9 @@
 ---
-title: 如何：替代範本中的參數 | Microsoft Docs
-ms.custom: ''
+title: HOW TO：替代範本中的參數 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - template parameters, substituting
 - Visual Studio templates, using parameters
@@ -16,13 +11,13 @@ ms.assetid: a62924a7-4ba0-413d-b606-fdbe1fcf2807
 caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: bab1d1fd7cd08813dadefbcbec27dbd84bd7b66b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 97a8a99e160e4d488e44cc9e084789fe3a005eb1
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49279736"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54780287"
 ---
 # <a name="how-to-substitute-parameters-in-a-template"></a>如何：替代樣板中的參數
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +29,7 @@ ms.locfileid: "49279736"
   
 #### <a name="to-use-a-parameter-to-replace-namespace-name-with-the-project-name"></a>使用參數將命名空間名稱取代為專案名稱  
   
-1.  在範本的一或多個程式碼檔案中，插入參數。 例如:   
+1.  在範本的一或多個程式碼檔案中，插入參數。 例如：  
   
     ```  
     namespace $safeprojectname$  
@@ -45,17 +40,14 @@ ms.locfileid: "49279736"
   
 2.  在範本的 .vstemplate 檔案中，找出包括此檔案的 `ProjectItem` 項目。  
   
-3.  將 `ProjectItem` 項目的 `ReplaceParameters` 屬性設定為 `true`。 例如:   
+3.  將 `ProjectItem` 項目的 `ReplaceParameters` 屬性設定為 `true`。 例如：  
   
     ```  
     <ProjectItem ReplaceParameters="true">Class1.cs</ProjectItem>  
     ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [建立專案和項目範本](../ide/creating-project-and-item-templates.md)   
  [範本參數](../ide/template-parameters.md)   
  [Visual Studio 範本結構描述參考](../extensibility/visual-studio-template-schema-reference.md)   
  [ProjectItem 元素 (Visual Studio 項目範本)](../extensibility/projectitem-element-visual-studio-item-templates.md)
-
-
-

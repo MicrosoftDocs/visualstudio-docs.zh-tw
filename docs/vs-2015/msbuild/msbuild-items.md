@@ -1,27 +1,22 @@
 ---
 title: MSBuild 項目 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 helpviewer_keywords:
 - MSBuild, Items
 ms.assetid: d762eff4-c92a-4b5f-a944-1ca30aa22319
 caps.latest.revision: 38
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: d517d3fd24b17c33a7bba9f888fbb904631be5f1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 24756553f4b1f5eb1a0ce811842c2843debd71aa
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49851929"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54770846"
 ---
 # <a name="msbuild-items"></a>MSBuild 項目
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -360,7 +355,7 @@ Output:
 -->  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [MSBuild 概念](../msbuild/msbuild-concepts.md)  
  [MSBuild](msbuild.md)   
  [如何：選取要建置的檔案](../msbuild/how-to-select-the-files-to-build.md)   
@@ -369,5 +364,3 @@ Output:
  [項目定義](../msbuild/item-definitions.md)   
  [批次處理](../msbuild/msbuild-batching.md)   
  [Item 項目 (MSBuild)](../msbuild/item-element-msbuild.md)
-
-

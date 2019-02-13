@@ -1,25 +1,20 @@
 ---
 title: 尋找 CodeLens 的程式碼變更和其他記錄 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: f697d7b4-704e-4cac-b13a-bc57d2ff8318
 caps.latest.revision: 134
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: df4b435f791b066afda90ac9f5492a946d7e215c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: c8cf042ce5a0b713eccdf9c89b15dcb57cf966ac
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49825664"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54753896"
 ---
 # <a name="find-code-changes-and-other-history-with-codelens"></a>尋找 CodeLens 的程式碼變更和其他記錄
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -88,7 +83,7 @@ ms.locfileid: "49825664"
   
  ![CodeLens：取得 TFVC 中的程式碼變更記錄](../ide/media/codelenscodechanges.png "CodeLensCodeChanges")  
   
- 預設的時間週期為 12 個月。 如果程式碼儲存在 Team Foundation Server 中，您就可以執行 [TFSConfig 命令](http://msdn.microsoft.com/en-us/94424190-3b6b-4f33-a6b6-5807f4225b62) 與 [CodeIndex 命令](../ide/codeindex-command.md) 和 **/indexHistoryPeriod** 旗標，變更這項限制。  
+ 預設的時間週期為 12 個月。 如果程式碼儲存在 Team Foundation Server 中，您就可以執行 [TFSConfig 命令](http://msdn.microsoft.com/94424190-3b6b-4f33-a6b6-5807f4225b62) 與 [CodeIndex 命令](../ide/codeindex-command.md) 和 **/indexHistoryPeriod** 旗標，變更這項限制。  
   
  若要查看所有變更的詳細記錄，包括一年多前的記錄，請選擇 [顯示所有檔案變更] 。  
   
@@ -227,9 +222,9 @@ ms.locfileid: "49825664"
   
 -   請確定 CodeLens 已開啟。 請依序移至 [工具] 、[選項] 、[文字編輯器] 、[所有語言] 和 [CodeLens] 。  
   
--   如果您的程式碼儲存在 TFS 中，請務必使用 [CodeIndex 命令](../ide/codeindex-command.md) 與 [TFS 組態命令](http://msdn.microsoft.com/en-us/94424190-3b6b-4f33-a6b6-5807f4225b62)，確定程式碼索引已開啟。  
+-   如果您的程式碼儲存在 TFS 中，請務必使用 [CodeIndex 命令](../ide/codeindex-command.md) 與 [TFS 組態命令](http://msdn.microsoft.com/94424190-3b6b-4f33-a6b6-5807f4225b62)，確定程式碼索引已開啟。  
   
--   唯有當工作項目連結程式碼，且您擁有開啟連結工作項目的權限時，才會出現與 TFS 相關的指標。 [確認您擁有小組成員權限。](http://msdn.microsoft.com/en-us/f58805de-ba61-4d09-8f2d-d3ab9662ecfd)  
+-   唯有當工作項目連結程式碼，且您擁有開啟連結工作項目的權限時，才會出現與 TFS 相關的指標。 [確認您擁有小組成員權限。](http://msdn.microsoft.com/f58805de-ba61-4d09-8f2d-d3ab9662ecfd)  
   
 -   應用程式程式碼沒有單元測試時，不會出現測試狀態指標。 測試狀態指標會自動出現在測試專案中。 如果您知道應用程式程式碼有單元測試，但是並未出現測試指標，請嘗試建置方案 ([**Ctrl + Shift + B**])。  
   
@@ -288,8 +283,4 @@ ms.locfileid: "49825664"
  **答：** [ **本機版本** ] 箭頭指向這個檔案的本機版本的最新變更集。 當伺服器有更新的變更集時，它們會顯示在 [ **本機版本** ] 箭頭上方或下方 (根據變更集的排列順序而定)。  
   
 ### <a name="q-can-i-manage-how-codelens-processes-code-to-show-history-and-linked-items"></a>問：我是否可以管理 CodeLens 處理程式碼的方式，以顯示記錄和連結項目？  
- **答：** 可以，如果您的程式碼儲存於 TFS，請使用 [CodeIndex 命令](../ide/codeindex-command.md) 與 [TFS 組態命令](http://msdn.microsoft.com/en-us/94424190-3b6b-4f33-a6b6-5807f4225b62)。
-
-
-
-
+ **答：** 可以，如果您的程式碼儲存於 TFS，請使用 [CodeIndex 命令](../ide/codeindex-command.md) 與 [TFS 組態命令](http://msdn.microsoft.com/94424190-3b6b-4f33-a6b6-5807f4225b62)。

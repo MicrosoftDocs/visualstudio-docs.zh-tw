@@ -1,14 +1,9 @@
 ---
 title: Visual C# IntelliSense | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - IntelliSense [J#]
 - Visual C#, IntelliSense
@@ -17,13 +12,13 @@ ms.assetid: 79ca304d-dc1e-4dc9-a2a6-7808df2e588e
 caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 0d094a0272e5c90afa1a83a42543dd464f219a17
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: f0d67cc907155f3f5c6bc4b0f132f9045f7d698a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49862199"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54800871"
 ---
 # <a name="visual-c-intellisense"></a>Visual C# IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +41,7 @@ ms.locfileid: "49862199"
   C# 中的完成清單也十分聰明，可以篩選掉不相關的語彙基元，並根據內容預先選取語彙基元。 如需詳細資訊，請參閱 [C# 中已篩選的完成清單](../misc/filtered-completion-lists-in-csharp.md)和 [C# 中預先選取的完成清單項目](../misc/pre-selected-completion-list-items-in-csharp.md)。  
   
 ###  <a name="CodeSnippets"></a> 完成清單中的程式碼片段  
- Visual C# 完成清單包含程式碼片段，可以協助您在程式中輕鬆地插入預先定義的程式碼主體。 在完成清單中，程式碼片段會顯示為片段的 [Shortcut 項目 (IntelliSense 程式碼片段)](http://msdn.microsoft.com/en-us/052cc97a-5c70-42f8-b398-4c3adf670cfa)。  如需 Visual C# 中所提供之預設程式碼片段的詳細資訊，請參閱 [Visual C# 程式碼片段](../ide/visual-csharp-code-snippets.md)。  
+ Visual C# 完成清單包含程式碼片段，可以協助您在程式中輕鬆地插入預先定義的程式碼主體。 在完成清單中，程式碼片段會顯示為片段的 [Shortcut 項目 (IntelliSense 程式碼片段)](http://msdn.microsoft.com/052cc97a-5c70-42f8-b398-4c3adf670cfa)。  如需 Visual C# 中所提供之預設程式碼片段的詳細資訊，請參閱 [Visual C# 程式碼片段](../ide/visual-csharp-code-snippets.md)。  
   
 ###  <a name="Keywords"></a> 完成清單中的語言關鍵字  
  Visual C# 的完成清單也包含語言關鍵字。 如需 C# 語言關鍵字的詳細資訊，請參閱 [C# 關鍵字](http://msdn.microsoft.com/library/e929b0f2-4b92-4d37-8060-23d323b098ad)。  
@@ -162,8 +157,5 @@ ms.locfileid: "49862199"
   
  下列工作示範 IntelliSense 如何自動連結名為 `button1_Click` 的事件處理常式和名為 `button1.Click` 的事件欄位。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Visual Studio IDE](../ide/visual-studio-ide.md)
-
-
-

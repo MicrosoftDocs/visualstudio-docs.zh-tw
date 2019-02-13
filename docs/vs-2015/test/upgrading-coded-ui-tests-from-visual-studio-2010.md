@@ -2,18 +2,18 @@
 title: 升級自動程式化的 UI 測試
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.technology: vs-devops-test
+ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.assetid: 11232a83-73ea-46bd-bc0c-46f74f6e3a42
 caps.latest.revision: 35
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 664eeb618b92b7d3181a223a531aac02e046ab0f
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: 54ccd9ad0cfefe33be7c51d44e9adb6c15717a7a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53055046"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54803623"
 ---
 # <a name="upgrading-coded-ui-tests-from-visual-studio-2010"></a>升級 Visual Studio 2010 的自動程式化 UI 測試
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "53055046"
 -   Visual Studio 企業版
 
 > [!NOTE]
->  Visual Studio 包含一個以上的測試專案類型。 如果您要建立新的自動程式碼 UI 測試，則必須在自動程式碼 UI 測試專案類型中建立。 如需詳細資訊，請參閱 [從舊版 Visual Studio 升級測試](http://msdn.microsoft.com/en-us/e9c8b7f6-bd72-448e-8edb-d090dcc5cf52)。
+>  Visual Studio 包含一個以上的測試專案類型。 如果您要建立新的自動程式碼 UI 測試，則必須在自動程式碼 UI 測試專案類型中建立。 如需詳細資訊，請參閱 [從舊版 Visual Studio 升級測試](http://msdn.microsoft.com/e9c8b7f6-bd72-448e-8edb-d090dcc5cf52)。
 
 > [!WARNING]
 >  當您在[!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] 或 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] 連同 [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] 中開啟測試專案，則必須重建包含自動程式碼 UI 測試的 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]個測試專案。
@@ -57,11 +57,11 @@ ms.locfileid: "53055046"
 
   此更新中修復了下列問題：
 
-- **程式碼涵蓋範圍**無法開啟程式碼涵蓋範圍檔案 (.coverage) 中的 Visual Studio 2012 建立[!INCLUDE[vs2010](../includes/vs2010-md.md)]SP1。
+- **程式碼涵蓋範圍：** 無法開啟由 [!INCLUDE[vs2010](../includes/vs2010-md.md)] SP1 中的 Visual Studio 2012 所建立的程式碼涵蓋範圍檔案 (.coverage)。
 
-- **擱置的測試成品：** 您的小組擁有指派給使用者 Team Foundation Server (TFS) 2010年中無效的測試成品。 例如，使用者已離開公司，但仍有指派給該使用者的測試案例。 您從 TFS 2010 升級為 TFS 2012。 您使用 [!INCLUDE[TCMext](../includes/tcmext-md.md)] 2010 連接至升級的 TFS 伺服器。 您無法使用 [!INCLUDE[TCMext](../includes/tcmext-md.md)] 2010 將測試成品指派給任何 TFS 使用者。
+- **受困的測試成品：** 您的小組擁有指派給 Team Foundation Server (TFS) 2010 中無效使用者的測試成品。 例如，使用者已離開公司，但仍有指派給該使用者的測試案例。 您從 TFS 2010 升級為 TFS 2012。 您使用 [!INCLUDE[TCMext](../includes/tcmext-md.md)] 2010 連接至升級的 TFS 伺服器。 您無法使用 [!INCLUDE[TCMext](../includes/tcmext-md.md)] 2010 將測試成品指派給任何 TFS 使用者。
 
-- 負載測試當您執行負載測試，而網路類型並非區域網路 (LAN) 設定檔的電腦上執行 Windows 8 時，網路模擬器驅動程式會導致作業系統當機。 如需詳細資訊，請參閱 [知識庫文件 2736182](http://support.microsoft.com/kb/2736182)。
+- **負載測試：** 當您在執行 Windows 8 的電腦上執行負載測試，而網路類型並非區域網路 (LAN) 設定檔時，網路模擬器驅動程式會造成作業系統當機。 如需詳細資訊，請參閱 [知識庫文件 2736182](http://support.microsoft.com/kb/2736182)。
 
 ## <a name="see-also"></a>請參閱
- [移植、 移轉和升級 Visual Studio 專案](../porting/porting-migrating-and-upgrading-visual-studio-projects.md)[從舊版的 Visual Studio 升級測試](http://msdn.microsoft.com/en-us/e9c8b7f6-bd72-448e-8edb-d090dcc5cf52)[使用 UI 自動化來測試您的程式碼](../test/use-ui-automation-to-test-your-code.md)[產生自動程式化 UI 測試，從現有的動作錄影](http://msdn.microsoft.com/library/56736963-9027-493b-b5c4-2d4e86d1d497)[支援組態和平台自動程式化的 UI 測試和動作記錄](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
+ [移植、 移轉和升級 Visual Studio 專案](../porting/porting-migrating-and-upgrading-visual-studio-projects.md)[從舊版的 Visual Studio 升級測試](http://msdn.microsoft.com/e9c8b7f6-bd72-448e-8edb-d090dcc5cf52)[使用 UI 自動化來測試您的程式碼](../test/use-ui-automation-to-test-your-code.md)[產生自動程式化 UI 測試，從現有的動作錄影](http://msdn.microsoft.com/library/56736963-9027-493b-b5c4-2d4e86d1d497)[支援組態和平台自動程式化的 UI 測試和動作記錄](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)

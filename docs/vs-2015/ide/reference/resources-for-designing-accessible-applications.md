@@ -1,14 +1,9 @@
 ---
 title: 設計可及性應用程式的資源 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 helpviewer_keywords:
 - accessibility, Windows applications
 - Windows applications, accessibility
@@ -18,13 +13,13 @@ ms.assetid: 426bf023-bb34-43c4-9edb-c307191c8170
 caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 7ea004e0b0bf106bf4e7b795cd684357733a2589
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 785aa4b4768ba8066b09f7f61f426406512c1e20
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49178278"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54761668"
 ---
 # <a name="resources-for-designing-accessible-applications"></a>設計可及性應用程式的資源
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -42,7 +37,7 @@ ms.locfileid: "49178278"
   
 ## <a name="windows-applications"></a>Windows 應用程式  
   
--   [逐步解說：建立 Windows 架構的可及性應用程式](http://msdn.microsoft.com/library/654c7f2f-1586-480b-9f12-9d9b8f5cc32b)：本主題提供逐步指示，可在 Windows 應用程式範例中包括「Windows 憑證」標誌的五種協助工具需求。  
+-   [逐步解說：建立可存取的 Windows 架構的應用程式](http://msdn.microsoft.com/library/654c7f2f-1586-480b-9f12-9d9b8f5cc32b)本主題提供逐步指示的 Certified for Windows 」 標誌的五個協助工具需求納入範例 Windows 應用程式。  
   
 -   **Guidelines for Keyboard User Interface Design** (鍵盤使用者介面設計指導方針)：本技術文章說明如何設計 Windows 應用程式使用者介面，讓使用者可以從鍵盤巡覽。 如需詳細資訊，請參閱 [http://msdn2.microsoft.com/library/ms971323.aspx](http://msdn2.microsoft.com/library/ms971323.aspx)。  
   
@@ -62,8 +57,5 @@ ms.locfileid: "49178278"
   
 -   **Web Accessibility Initiative of the World Wide Web Consortium (W3C)** (全球資訊網協會 (W3C) 的 Web 協助工具計劃)：本網站提供可存取之網站開發的指導方針和技術。 如需詳細資訊，請參閱 [http://www.w3.org/WAI/GL/](http://www.w3.org/WAI/GL/)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Visual Studio 的協助工具功能](../../ide/reference/accessibility-features-of-visual-studio.md)
-
-
-

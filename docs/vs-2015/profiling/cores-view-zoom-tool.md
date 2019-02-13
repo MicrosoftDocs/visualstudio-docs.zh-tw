@@ -1,14 +1,9 @@
 ---
 title: 核心檢視縮放工具 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.cv.cores.zoom
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: f7d48602-ba32-4487-b51a-89e596124108
 caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: d3d902c2642171fdfa27f20a764c5414daa3ccf3
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 2f0db19d3dfb92658f2aa15e457659b5d4d34ec3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51727801"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54801449"
 ---
 # <a name="cores-view-zoom-tool"></a>核心檢視縮放工具
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,8 +31,5 @@ ms.locfileid: "51727801"
   
 -   放大和縮小：將滑鼠指標放在時間軸上方，然後在移動滑鼠滾輪時按 CTRL 鍵。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [核心檢視](../profiling/cores-view.md)
-
-
-

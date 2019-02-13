@@ -1,14 +1,9 @@
 ---
 title: 編碼與分行符號 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vs.Encoding
 helpviewer_keywords:
@@ -22,13 +17,13 @@ ms.assetid: 8f9b3ffc-7b8d-44f4-87cb-dc29105be12d
 caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 17deca1afc78e238e098285e760a791504b61fe8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 88f04720610bad5064f7f9d7a43beef2410b045f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49880717"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54787462"
 ---
 # <a name="encodings-and-line-breaks"></a>編碼與分行符號
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +31,7 @@ ms.locfileid: "49880717"
 在 Visual Studio 中，您可以使用 [檔案]/[進階儲存選項] 設定，判斷您要的分行符號字元類型。 您也可以變更具有相同設定之檔案的編碼。  
   
 > [!NOTE]
->  如果您有特定類型的開發設定 (Visual Basic、F#、Web Development)，則在功能表上可能看不到 [進階儲存選項]。 若要變更設定 (例如 [一般])，請開啟 [工具]/[匯入和匯出設定]。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
+>  如果您有特定類型的開發設定 (Visual Basic、F#、Web Development)，則在功能表上可能看不到 [進階儲存選項]。 若要變更設定 (例如 [一般])，請開啟 [工具]/[匯入和匯出設定]。 如需詳細資訊，請參閱 [在 Visual Studio 中自訂開發設定](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
   
  在 Visual Studio 中，會將下列字元解譯為分行符號：  
   
@@ -53,6 +48,3 @@ ms.locfileid: "49880717"
   從其他應用程式複製的文字會保留原始編碼和分行符號字元。 例如，當您從 [記事本] 中複製文字，並將它貼到 Visual Studio 中的文字檔，文字的設定會與它在 [記事本] 中的設定相同。  
   
   當您開啟的檔案包含不同的分行符號字元時，可能會看到一個對話方塊，詢問是否應該正規化不一致的分行符號字元以及要選擇哪一種分行符號類型。
-
-
-

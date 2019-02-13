@@ -1,14 +1,9 @@
 ---
 title: 收集 .NET 記憶體配置和存留期資料 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - .NET memory profiling method
 - Profiling Tools,.NET memory method
@@ -16,13 +11,13 @@ ms.assetid: 62a6dd5f-db66-4456-9d57-f8913dbfe4d5
 caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 0b31f4cfce52c60e4b8f65758fc56e16e29bef6b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 232707cd8fa51b8b69c67e1e66cb0790f4938031
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51761577"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54794211"
 ---
 # <a name="collecting-net-memory-allocation-and-lifetime-data"></a>收集 .NET 記憶體配置和存留期資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -87,10 +82,7 @@ ms.locfileid: "51761577"
 |在 [CPU 計數器]  頁面上，指定將加入程式碼剖析資料的一或多個處理器效能計數器。|-   [如何：收集 CPU 計數器資料](../profiling/how-to-collect-cpu-counter-data.md)|  
 |在 [進階] 頁面上，指定您想要的任何其他 VSInstr.exe 選項，例如要包含或排除特定函式的選項。 如需有關 VSInstr 選項的詳細資訊，請參閱 [VSInstr](../profiling/vsinstr.md)|-   [如何：指定其他檢測選項](../profiling/how-to-specify-additional-instrumentation-options.md)<br />-   [如何：限制檢測特定函式](../profiling/how-to-limit-instrumentation-to-specific-functions.md)|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [設定效能工作階段](../profiling/configuring-performance-sessions.md)   
  [如何：選擇收集方法](../profiling/how-to-choose-collection-methods.md)   
  [效能工作階段屬性](../profiling/performance-session-properties.md)
-
-
-

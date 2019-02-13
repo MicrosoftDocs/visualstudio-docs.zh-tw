@@ -1,5 +1,5 @@
 ---
-title: HOW TO：指定要啟動的二進位檔 | Microsoft Docs
+title: 如何：指定要啟動的二進位檔 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -22,7 +22,7 @@ ms.contentlocale: zh-TW
 ms.lasthandoff: 01/23/2019
 ms.locfileid: "54759889"
 ---
-# <a name="how-to-specify-the-binary-to-start"></a>HOW TO：指定要啟動的二進位檔
+# <a name="how-to-specify-the-binary-to-start"></a>如何：指定要啟動的二進位檔
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 若要剖析二進位檔 (如 DLL)，您必須在 [\<目標> 屬性頁] 對話方塊中輸入資訊。 這項資訊會指示 DLL 專案可以在何處找到呼叫的應用程式。  

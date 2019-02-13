@@ -1,25 +1,20 @@
 ---
-title: 步驟 8：自訂測驗 | Microsoft Docs
-ms.custom: ''
+title: 步驟 8：自訂測驗 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: dc8edb13-1b23-47d7-b859-8c6f7888c1a9
 caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 559bd2a1b908ab5b1590a2ec2dd71225020db79a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 413a0cb2f1445f166f1a5c9e541b2a4268ff2e31
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49260139"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54776081"
 ---
 # <a name="step-8-customize-the-quiz"></a>步驟 8：自訂測驗
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,6 +34,3 @@ ms.locfileid: "49260139"
 -   若要移到下一個教學課程，請參閱[教學課程 3：建立配對遊戲](../ide/tutorial-3-create-a-matching-game.md)。  
   
 -   若要回到上一個教學課程步驟，請參閱[步驟 7：新增乘法和除法問題](../ide/step-7-add-multiplication-and-division-problems.md)。
-
-
-

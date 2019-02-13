@@ -1,25 +1,20 @@
 ---
 title: 從命令列建立可移植的分析資料檔案 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 2ceb63a7-b835-4988-b756-2afc3fcc4808
 caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 9367f4b7c85886eda629767809e1841c72340e4d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: be3b4584d49807abb2df4081966ede6edeff5c58
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51795501"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54758260"
 ---
 # <a name="creating-portable-profiling-data-files-from-the-command-line"></a>從命令列建立可移植的程式碼剖析資料檔案
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,6 +45,3 @@ ms.locfileid: "51795501"
    \<路徑><strong>VSPerfReport \<</strong>VSP 檔案> **/SummaryFile** [**/Output:**\<檔案名稱>]  
   
    .vsps 檔案預設會使用 .vsp 檔案的基底名稱進行命名。 您可以使用 **Output** 選項來指定替代名稱。
-
-
-

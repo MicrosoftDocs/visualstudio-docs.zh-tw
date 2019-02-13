@@ -1,25 +1,20 @@
 ---
-title: 教學課程 2：建立計時的數學測驗 | Microsoft Docs
-ms.custom: ''
+title: 教學課程 2：建立計時的數學測驗 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: d7165d08-ace3-457d-b57d-fb8f80760a6f
 caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 8b0b7a5949ab8fe624a087a1e024367f896ddb99
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 23d8eb381b1dc72a8dad148d5827fa0f58b88d03
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49884884"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54804974"
 ---
 # <a name="tutorial-2-create-a-timed-math-quiz"></a>教學課程 2：建立計時的數學測驗
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,6 +51,3 @@ ms.locfileid: "49884884"
 |[步驟 6：新增減法問題](../ide/step-6-add-a-subtraction-problem.md)|加入產生隨機數字、使用計時器並且會檢查答案是否正確的減法問題。|  
 |[步驟 7：新增乘法和除法問題](../ide/step-7-add-multiplication-and-division-problems.md)|加入產生隨機數字、使用計時器並且會檢查答案是否正確的乘法和除法問題。|  
 |[步驟 8：自訂測驗](../ide/step-8-customize-the-quiz.md)|嘗試其他功能，例如變更色彩和加入提示。|
-
-
-

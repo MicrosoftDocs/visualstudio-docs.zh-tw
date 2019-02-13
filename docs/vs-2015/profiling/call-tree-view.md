@@ -1,14 +1,9 @@
 ---
 title: 呼叫樹狀圖檢視 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.view.calltree
 helpviewer_keywords:
@@ -20,13 +15,13 @@ ms.assetid: b2dbc033-bf95-4d10-8e51-f9462979133e
 caps.latest.revision: 39
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 8f09b85c20d84cb25d6a1fdbbd8493c47056318a
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 5bf3e8998abe18a4d40e031b85ffb6683fa62dc7
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51738741"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54752118"
 ---
 # <a name="call-tree-view"></a>呼叫樹狀圖檢閱
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,10 +51,7 @@ ms.locfileid: "51738741"
   
  [呼叫樹狀圖檢視](../profiling/call-tree-view-contention-data.md)  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [效能報告檢視](../profiling/performance-report-views.md)   
  [了解檢測資料值](../profiling/understanding-instrumentation-data-values.md)   
  [了解取樣資料值](../profiling/understanding-sampling-data-values.md)
-
-
-

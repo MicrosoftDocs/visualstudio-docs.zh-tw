@@ -15,7 +15,7 @@ ms.contentlocale: zh-TW
 ms.lasthandoff: 01/23/2019
 ms.locfileid: "54792229"
 ---
-# <a name="walkthrough-creating-editing-and-maintaining-a-coded-ui-test"></a>逐步解說：建立、編輯及維護自動程式化 UI 測試
+# <a name="walkthrough-creating-editing-and-maintaining-a-coded-ui-test"></a>逐步解說：建立、編輯和維護自動程式化 UI 測試
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 在這個逐步解說中，您將建立簡單的 Windows Presentation Foundation (WPF) 應用程式，以示範如何建立、編輯和維護自動程式化 UI 測試。 本逐步解說提供解決方案用來修正各種因時間問題和控制項重構而中斷的測試。  

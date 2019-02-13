@@ -1,14 +1,9 @@
 ---
 title: 如何：從組建中排除檔案 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, wildcards
 - MSBuild, excluding files
@@ -17,13 +12,13 @@ ms.assetid: 1be36e45-01da-451c-972d-f9fc0e7d663c
 caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 114c973246c325604c79ca248cc3487fd495a19a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: eb390e98b8650764dfc9f4237f150a5b903f1618
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49230589"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54796720"
 ---
 # <a name="how-to-exclude-files-from-the-build"></a>如何：從組建中排除檔案
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +27,7 @@ ms.locfileid: "49230589"
 在專案檔中，您可以使用萬用字元，來包含一個目錄中的所有檔案或巢狀目錄集合做為組建的輸入。 不過，目錄中可能有一個您不想包含來建置輸入的檔案，或者巢狀目錄集合中可能有一個您不想包含的目錄。 您可以明確地從輸入清單中排除該檔案或目錄。 專案中也可能有一個您只想在符合特定條件的情況下包含的檔案。 您可以明確地宣告要在組建中包含檔案的條件。  
   
 ## <a name="excluding-a-file-or-directory-from-the-inputs-for-a-build"></a>從組建的輸入中排除檔案或目錄  
- 項目清單是組建的輸入檔。 您可以使用 `Include` 屬性，個別宣告或以群組方式宣告想要包含的項目。 例如:   
+ 項目清單是組建的輸入檔。 您可以使用 `Include` 屬性，個別宣告或以群組方式宣告想要包含的項目。 例如：  
   
 ```  
 <CSFile Include="Form1.cs"/>  
@@ -131,8 +126,6 @@ ms.locfileid: "49230589"
 </Project>  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [項目](../msbuild/msbuild-items.md)   
  [MSBuild](msbuild.md) [如何：選取要建置的檔案](../msbuild/how-to-select-the-files-to-build.md)
-
-

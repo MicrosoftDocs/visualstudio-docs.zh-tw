@@ -1,11 +1,7 @@
 ---
 title: 最佳化啟動時間 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - startup time [Visual Studio]
 - optimizing startup time [Visual Studio]
@@ -14,13 +10,13 @@ ms.assetid: d1508121-8499-4084-8eb5-fa89fa7b17d3
 caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: a17b8955d6c81c182523a7616f927eabd8703632
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: 0ceed13cc320e2c98d413e6694acb2b473ad72eb
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53050170"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54780271"
 ---
 # <a name="optimize-visual-studio-startup-time"></a>最佳化 Visual Studio 啟動時間
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +31,7 @@ ms.locfileid: "53050170"
 
 ![管理 Visual Studio 效能 - 快顯視窗](../ide/media/vside-perfdialog-popup.PNG "管理 Visual Studio 效能 - 快顯視窗")
 
-**管理 Visual Studio 效能**對話方塊有兩種類別：延伸模組和工具視窗
+[管理 Visual Studio 效能] 對話方塊有兩種分類︰[延伸模組] 和 [工具視窗]。
 
 ### <a name="control-extensions"></a>控制延伸模組
 如果延伸模組讓 Visual Studio 啟動變慢，則在您選擇其中一種延伸模組類型時，該延伸模組會出現在 [管理 Visual Studio 效能] 對話方塊中。 如果對啟動時間的影響 (列在 [影響] 區段下) 過高，您可以選擇 [停用] 按鈕來選擇一律在啟動時停用延伸模組。 您可以使用延伸模組管理員或 [管理 Visual Studio 效能] 對話方塊，針對未來的工作階段重新啟用延伸模組。
@@ -47,8 +43,8 @@ ms.locfileid: "53050170"
 ### <a name="control-tool-windows"></a>控制工具視窗
 如果工具視窗會讓 Visual Studio 啟動變慢，您可以選擇保留其預設行為 (這對啟動速度沒有任何用處)，也可以選擇兩種行為中的其中一種行為來覆寫其行為：
 
-- 啟動時不要顯示視窗如果您選擇此選項，指定將一律關閉工具視窗是當您開啟 Visual Studio 中，即使已在前一個工作階段中開啟。 您可以從功能表開啟工具視窗。
-- 啟動時自動隱藏視窗如果工具視窗已保留在先前的工作階段中開啟，選擇此選項會摺疊在啟動時的工具視窗的群組，以避免初始化工具視窗。 如果您經常使用工具視窗，則這是不錯的選擇，原因是工具視窗仍然可用，但不再對 Visual Studio 啟動時間造成負面影響。
+- **啟動時不要顯示視窗**：如果您選擇此選項，則一律會在開啟 Visual Studio 時關閉指定的工具視窗，即使已在前一個工作階段中開啟也是一樣。 您可以從功能表開啟工具視窗。
+- **啟動時自動隱藏視窗**：如果已在前一個工作階段中開啟工具視窗，則選擇此選項會在啟動時摺疊工具視窗的群組，以避免初始化工具視窗。 如果您經常使用工具視窗，則這是不錯的選擇，原因是工具視窗仍然可用，但不再對 Visual Studio 啟動時間造成負面影響。
 
 ![管理 Visual Studio 效能 - 工具視窗](../ide/media/vside-perfdialog-toolwindows.PNG "管理 Visual Studio 效能 - 工具視窗")
 

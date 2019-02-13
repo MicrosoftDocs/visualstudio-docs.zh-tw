@@ -1,14 +1,9 @@
 ---
-title: 如何：視覺化集合關聯 (類別設計工具) | Microsoft Docs
-ms.custom: ''
+title: HOW TO：視覺化集合關聯 （類別設計工具） |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vs.classdesigner.collectionassociationline
 - vs.classdesigner.ShowAssociationException
@@ -20,13 +15,13 @@ ms.assetid: 54e39838-2fc9-4dc2-85b6-7e88a743108e
 caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: a8e997cf30e4fe8508dd8e1fa8049bdc83e93d53
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 6fb0fc574af033f34afb3995edeaffe5e408d740
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49197687"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54799726"
 ---
 # <a name="how-to-visualize-a-collection-association-class-designer"></a>如何：視覺化集合關聯 (類別設計工具)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,10 +38,7 @@ ms.locfileid: "49197687"
   
      屬性或欄位會顯示為連結所收集類型的關聯線。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [如何：建立類型之間的關聯 (類別設計工具)](../ide/how-to-create-associations-between-types-class-designer.md)   
  [設計類別和類型 (類別設計工具)](../ide/designing-classes-and-types-class-designer.md)   
  [檢視類型和關聯性 (類別設計工具)](../ide/viewing-types-and-relationships-class-designer.md)
-
-
-

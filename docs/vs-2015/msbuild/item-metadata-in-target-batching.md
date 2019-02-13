@@ -1,14 +1,9 @@
 ---
 title: 目標批次處理中的項目中繼資料 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords:
 - batching [MSBuild]
 - MSBuild, target batching
@@ -17,13 +12,13 @@ ms.assetid: f3cc4186-6a4c-4161-bbe5-1ec638b4925b
 caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 011bb9b738aa135fd14c4dbddfb26f9cea2f7bd1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: eca5fc85f4a1bcd26c2c4c73ec39fbe855f77add
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49232683"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54769366"
 ---
 # <a name="item-metadata-in-target-batching"></a>目標批次處理中的項目中繼資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -74,11 +69,8 @@ ms.locfileid: "49232683"
 </Project>  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [如何：累加建置](../msbuild/how-to-build-incrementally.md)   
  [批次處理](../msbuild/msbuild-batching.md)   
  [Target 項目 (MSBuild)](../msbuild/target-element-msbuild.md)   
  [工作批次處理中的項目中繼資料](../msbuild/item-metadata-in-task-batching.md)
-
-
-
