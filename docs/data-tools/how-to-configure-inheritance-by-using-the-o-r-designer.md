@@ -5,23 +5,23 @@ ms.topic: conceptual
 ms.assetid: e594af12-e777-434a-bc08-7dd2dac84cdc
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 99f353da4b6269ebf9fac425a12dfce5b5917df6
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.openlocfilehash: 2a68101b6090a20526088309a441956a68e875e9
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "53923753"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55014662"
 ---
 # <a name="how-to-configure-inheritance-by-using-the-or-designer"></a>HOW TO：使用 O/R 設計工具設定繼承
 **物件關聯式設計工具**(**O/R Designer**) 支援的單一資料表繼承概念，通常是在關聯式系統中實作。 在單一資料表繼承 (Inheritance) 中，單一資料庫資料表的欄位會同時包含父代資訊和子系資料。 使用關聯式資料時，鑑別子資料行所含的值會決定任何記錄所屬的類別 (Class)。
 
 例如，假設`Persons`包含某家公司雇用的所有人的資料表。 有些人是員工，而有些人是經理。 `Persons`資料表包含資料行名為`EmployeeType`經理和 2 的值具有值為 1 的員工，這是鑑別子資料行。 在這個案例中，您可以建立員工子類別 (Subclass)，並且只將 `EmployeeType` 值為 2 的記錄填入 (Populate) 這個類別。 您也可以從每個類別中移除不適用的資料行。
 
-建立使用繼承的物件模型 (並對應至關聯式資料) 在過程上較為複雜。 下列程序將會說明使用 **O/R 設計工具**設定繼承的必要步驟。 遵循這些泛型步驟而不會參考現有的資料表和資料行可能很困難，因此提供逐步解說中使用資料。 針對使用設定繼承的詳細逐步指示**O/R Designer**，請參閱[逐步解說： 建立 LINQ to SQL 類別使用單一資料表繼承 （O/R 設計工具）](../data-tools/walkthrough-creating-linq-to-sql-classes-by-using-single-table-inheritance-o-r-designer.md)。
+建立使用繼承的物件模型 (並對應至關聯式資料) 在過程上較為複雜。 下列程序將會說明使用 **O/R 設計工具**設定繼承的必要步驟。 遵循這些泛型步驟而不會參考現有的資料表和資料行可能很困難，因此提供逐步解說中使用資料。 針對使用設定繼承的詳細逐步指示**O/R Designer**，請參閱[逐步解說：使用單一資料表繼承建立 LINQ to SQL 類別 (O/R 設計工具)
 
 ## <a name="to-create-inherited-data-classes"></a>若要建立繼承的資料類別
 

@@ -7,12 +7,12 @@ ms.topic: landing-page
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: cec753e4f01678373f47a7ed4a03d816e48a787b
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 4a940aea1260090371b24c7ccdb0975a609b3d4d
+ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54928720"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56155769"
 ---
 # <a name="measure-app-performance-in-visual-studio"></a>在 Visual Studio 中測量應用程式的效能
 
@@ -49,24 +49,6 @@ ms.locfileid: "54928720"
                     </div>
                     <div class="cardText">
                         <h3>開始使用診斷工具 (CPU 使用率)</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </li>
-    <li>
-        <a href="https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Profiling-with-Diagnostics-Tools-in-Visual-Studio-2017-daHnzMD6D_9211787171">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="/media/common/i_video.svg" alt="Watch a Video on the Diagnostics Tools">
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>觀看診斷工具的相關影片</h3>
                     </div>
                 </div>
             </div>
