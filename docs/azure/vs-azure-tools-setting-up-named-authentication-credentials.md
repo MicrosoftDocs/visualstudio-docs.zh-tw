@@ -4,18 +4,17 @@ description: 了解如何提供 Visual Studio 可用來向 Azure 驗證要求的
 author: ghogen
 manager: jillfra
 assetId: 61570907-42a1-40e8-bcd6-952b21a55786
-ms.prod: visual-studio-dev15
 ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2017
 ms.author: ghogen
-ms.openlocfilehash: 2b8b3ab9bc5bd61a4abc983826cc97c3d032e824
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 319f9327cb83f3d05d26512f448b029b57d23b0c
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55139865"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55920648"
 ---
 # <a name="set-up-named-authentication-credentials"></a>設定具名驗證認證
 

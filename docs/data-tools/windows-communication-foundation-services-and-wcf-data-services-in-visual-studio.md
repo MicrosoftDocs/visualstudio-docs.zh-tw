@@ -33,15 +33,14 @@ ms.assetid: d56f12cb-e139-4fec-b3e4-488383356642
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 677d68aab6f6dfdb39f12ba33002758f61a03a31
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: HT
+ms.openlocfilehash: b253c4e3447b8d7cd76dcef010adf99addb7bf9d
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54919937"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55933661"
 ---
 # <a name="windows-communication-foundation-services-and-wcf-data-services-in-visual-studio"></a>Visual Studio 中的 Windows Communication Foundation 服務和 WCF 資料服務
 
@@ -92,7 +91,7 @@ WCF 用戶端組成*proxy*可讓應用程式來與 WCF 服務，通訊，而且�
 
 ## <a name="wcf-tools-in-visual-studio"></a>Visual Studio 中的 WCF 工具
 
-Visual Studio 提供工具，可協助您建立 WCF 服務和 WCF 用戶端。 如需示範這些工具的逐步解說，請參閱[逐步解說：在 Windows Forms 中建立簡單的 WCF 服務
+Visual Studio 提供工具，可協助您建立 WCF 服務和 WCF 用戶端。 如需示範這些工具的逐步解說，請參閱 <<c0> [ 逐步解說： 在 Windows Forms 中建立簡單的 WCF 服務](../data-tools/walkthrough-creating-a-simple-wcf-service-in-windows-forms.md)。
 
 ### <a name="create-and-test-wcf-services"></a>建立和測試 WCF 服務
 
@@ -130,7 +129,7 @@ Visual Studio 可簡化建立 WCF 用戶端，會自動產生 proxy 和您使用
 
 **設定服務參考**對話方塊可讓您自訂服務的組態。 您可以變更服務的位址、 指定存取層級、 非同步行為，以及訊息合約型別，以及設定型別重複使用。
 
-## <a name="how-to-select-a-service-endpoint"></a>HOW TO：選取服務端點
+## <a name="how-to-select-a-service-endpoint"></a>如何： 選取服務端點
 
 某些 Windows Communication Foundation (WCF) 服務會公開透過該用戶端可能會與服務通訊的多個端點。 比方說，服務可能會公開一個端點使用 HTTP 繫結和使用者名稱和密碼的安全性，並使用 FTP 和 Windows 驗證的第二個端點。 可能會存取服務的外部防火牆的應用程式所用的第一個端點，而第二個可能會使用內部網路上。
 
@@ -174,7 +173,7 @@ Visual Studio 可簡化建立 WCF 用戶端，會自動產生 proxy 和您使用
 
 4.  內部`<EndPoint>`標記，您會發現`name="` *SomeService* `"`參數 (其中*SomeService*代表端點名稱)。 這是可以傳遞至端點的名稱`endpointConfigurationName As String`服務參考的建構函式的多載。
 
-## <a name="how-to-call-a-service-method-asynchronously"></a>HOW TO：以非同步方式呼叫服務方法
+## <a name="how-to-call-a-service-method-asynchronously"></a>如何： 以非同步方式呼叫服務方法
 
 Windows Communication Foundation (WCF) 服務中的大部分方法可能在同步或非同步呼叫。 以非同步方式呼叫方法，可讓您的應用程式繼續運作，而其運作方式的低速連線時，要呼叫的方法。
 
@@ -193,7 +192,7 @@ Windows Communication Foundation (WCF) 服務中的大部分方法可能在同�
 
 3.  在 **設定服務參考**對話方塊中，選取**產生非同步作業**核取方塊。
 
-## <a name="how-to-bind-data-returned-by-a-service"></a>HOW TO：將服務所傳回的資料繫結
+## <a name="how-to-bind-data-returned-by-a-service"></a>如何： 將服務所傳回的資料繫結
 
 您可以繫結一樣，您可以將任何其他資料來源繫結至控制項，Windows Communication Foundation (WCF) 服務所傳回的控制項的資料。 當您新增 WCF 服務的參考，如果服務包含傳回資料的複合類型時，它們會自動加入**Zdroje dat**視窗。
 
@@ -227,7 +226,7 @@ Windows Communication Foundation (WCF) 服務中的大部分方法可能在同�
 
 5.  將節點拖曳至表單。 控制項加入至表單，並搭配<xref:System.Windows.Forms.BindingSource>元件和<xref:System.Windows.Forms.BindingNavigator>元件。
 
-## <a name="how-to-configure-a-service-to-reuse-existing-types"></a>HOW TO：設定服務，以重複使用現有的類型
+## <a name="how-to-configure-a-service-to-reuse-existing-types"></a>如何： 設定服務，以重複使用現有的類型
 
 當服務參考加入至專案時，在服務中定義的任何型別會產生在本機專案中。 在許多情況下，這會建立重複的型別或型別共用的文件庫中定義時服務會使用一般的.NET Framework 型別。
 
@@ -256,7 +255,7 @@ Windows Communication Foundation (WCF) 服務中的大部分方法可能在同�
 | 標題 | 描述 |
 | - | - |
 | [逐步解說：在 Windows Forms 中建立簡單的 WCF 服務](../data-tools/walkthrough-creating-a-simple-wcf-service-in-windows-forms.md) | 提供建立和使用 Visual Studio 中的 WCF 服務的逐步示範。 |
-| [逐步解說：使用 WPF 和 Entity Framework 建立 WCF 資料服務](../data-tools/walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework.md) | 提供如何建立及使用 Visual Studio 中的 WCF Data Services 的逐步示範。 |
+| [逐步解說︰使用 WPF 和 Entity Framework 建立 WCF 資料服務](../data-tools/walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework.md) | 提供如何建立及使用 Visual Studio 中的 WCF Data Services 的逐步示範。 |
 | [使用 WCF 開發工具](/dotnet/framework/wcf/using-the-wcf-development-tools) | 討論如何建立和測試 Visual Studio 中的 WCF 服務。 |
 | | [如何：新增、更新或移除 WCF 資料服務參考](../data-tools/how-to-add-update-or-remove-a-wcf-data-service-reference.md) |
 | [針對服務參考進行疑難排解](../data-tools/troubleshooting-service-references.md) | 提供服務的參考，以及如何避免它們可能會發生的一些常見錯誤。 |
