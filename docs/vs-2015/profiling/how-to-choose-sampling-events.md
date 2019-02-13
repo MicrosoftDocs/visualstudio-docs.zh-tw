@@ -1,14 +1,9 @@
 ---
 title: 如何：選擇取樣事件 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.property.sampling
 helpviewer_keywords:
@@ -23,13 +18,13 @@ ms.assetid: ce7cb734-80ac-4930-a4ef-e24395e1cc07
 caps.latest.revision: 28
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 96bf47c6bfc28e0939f6feb9fd7999e898c042a1
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 78d5e8bbc024009ad6515bdf08c5219253b42d12
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51734505"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54784508"
 ---
 # <a name="how-to-choose-sampling-events"></a>如何：選擇取樣事件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -66,12 +61,9 @@ ms.locfileid: "51734505"
   
 5.  當您選取取樣事件時，[取樣間隔] 文字方塊中會顯示預設的取樣間隔值。 您可視需要在文字方塊中輸入您想要的值。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [設定效能工作階段](../profiling/configuring-performance-sessions.md)   
  [如何：選擇收集方法](../profiling/how-to-choose-collection-methods.md)   
  [CPU 和 Windows 計數器](../profiling/cpu-and-windows-counters.md)   
  [了解取樣資料值](../profiling/understanding-sampling-data-values.md)   
  [從命令列進行程式碼剖析](../profiling/using-the-profiling-tools-from-the-command-line.md)
-
-
-

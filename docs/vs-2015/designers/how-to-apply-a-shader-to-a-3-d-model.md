@@ -1,27 +1,22 @@
 ---
-title: 如何：將著色器套用至 3D 模型 | Microsoft Docs
-ms.custom: ''
+title: HOW TO：將著色器套用至 3d 模型 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: a3877bd6-abd8-4a9d-842c-6848b6c2f335
 caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 804e7c0a2e7a9a710071cc6050249bf408bc8230
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: cde839deb71358936410c4e4ca4269d3ce2ee88f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49862842"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54793461"
 ---
-# <a name="how-to-apply-a-shader-to-a-3-d-model"></a>如何：將著色器套用至 3D 模型
+# <a name="how-to-apply-a-shader-to-a-3-d-model"></a>HOW TO：將著色器套用至 3d 模型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 本文件將示範如何使用模型編輯器將有向圖形著色器語言 (DGSL) 著色器套用至 3D 模型。  
@@ -37,7 +32,7 @@ ms.locfileid: "49862842"
   
 #### <a name="to-apply-a-shader-to-a-3-d-model"></a>將著色器套用至 3D 模型  
   
-1. 開始使用包含一或多個模型的 3D 場景。 如果您沒有適當的 3D 場景，請依照[如何：建立基本 3D 模型](../designers/how-to-create-a-basic-3-d-model.md)所述，建立一個場景。 您也必須要有可套用至模型的 DGSL 著色器。 如果您沒有適當的著色器，請依照[如何：建立基本色彩著色器](../designers/how-to-create-a-basic-color-shader.md)所述，建立一個著色器，並確定您已將其儲存為檔案後，再繼續進行。  
+1. 開始使用包含一或多個模型的 3D 場景。 如果您沒有適當的 3d 場景，請在中所述建立一個[How to:建立基本 3d 模型](../designers/how-to-create-a-basic-3-d-model.md)。 您也必須要有可套用至模型的 DGSL 著色器。 如果您沒有適當的著色器，請如下列文章所述建立一個著色器：[如何：建立基本色彩著色器](../designers/how-to-create-a-basic-color-shader.md)，並確定，您已將其儲存至檔案才能繼續。  
   
 2. 在 [選取] 模式中，選取您要套用著色器的模型，然後在 [屬性] 視窗中，於 [效果] 屬性群組的 [檔名] 屬性中，指定您想要套用至模型的 DGSL 著色器。  
   
@@ -47,11 +42,8 @@ ms.locfileid: "49862842"
   
    在將著色器套用至模型之後，您可以選取該模型，然後在 [屬性] 視窗中，於 [效果] 屬性群組的 [(進階)] 屬性中，選擇省略符號(**...**) 按鈕。  
   
-## <a name="see-also"></a>另請參閱  
- [如何：建立基本 3D 模型](../designers/how-to-create-a-basic-3-d-model.md)   
+## <a name="see-also"></a>請參閱  
+ [如何：建立基本 3d 模型](../designers/how-to-create-a-basic-3-d-model.md)   
  [如何：建立基本色彩著色器](../designers/how-to-create-a-basic-color-shader.md)   
  [模型編輯器](../designers/model-editor.md)   
  [著色器設計工具](../designers/shader-designer.md)
-
-
-

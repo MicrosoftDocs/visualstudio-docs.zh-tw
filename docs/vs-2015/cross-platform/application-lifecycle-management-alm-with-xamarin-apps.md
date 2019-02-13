@@ -1,24 +1,19 @@
 ---
 title: 應用程式生命週期管理 (ALM) 與 Xamarin 應用程式 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- tgt-pltfrm-cross-plat
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: tgt-pltfrm-cross-plat
+ms.topic: conceptual
 ms.assetid: ff978cc2-5a25-46d6-921b-e51adaa65992
 caps.latest.revision: 16
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: f2e7af8227e11d554a4f953593dad396d5543aca
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.openlocfilehash: 6f8d2a776b8867230bb618dfb0ce8b558c69619e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51745208"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54793807"
 ---
 # <a name="application-lifecycle-management-alm-with-xamarin-apps"></a>應用程式生命週期管理 (ALM) 與 Xamarin 應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +30,7 @@ Xamarin 可讓您使用 C#、.NET 及 Visual Studio，來建置目標為 Android
  下列表格列出您可以預期哪些 Visual Studio ALM 功能可與 Xamarin 專案搭配良好，哪些功能則有限制。 請參閱連結文件以取得這項功能的詳細資訊。  
   
 ## <a name="agile-tools"></a>Agile 工具  
- 參考連結︰**[工作](http://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503)** (使用 Visual Studio Team Services 或 TFS，包括 Team Explorer Everywhere)  
+ 參考連結：**[工作](http://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503)** （使用 Visual Studio Team Services 或 TFS，包括 Team Explorer Everywhere）  
   
  一般註解：所有的計劃和追蹤功能都與專案類型和程式碼撰寫語言無關。  
   
@@ -80,7 +75,7 @@ Xamarin 可讓您使用 C#、.NET 及 Visual Studio，來建置目標為 Android
 |-------------|----------------------------|-------------------------|  
 |內部部署 TFS 伺服器|是|組建電腦必須安裝 Xamarin，而且必須可連結到 OSX 電腦，以便為 iOS 進行建置。 請參閱 [為 Xamarin 設定 TFS](http://developer.xamarin.com/guides/cross-platform/ci/configuring_tfs/) (Xamarin 網站)|  
 |連結至 Visual Studio Team Services 的內部部署組建伺服器|是|如需相關指示，請參閱[組建伺服器](http://msdn.microsoft.com/library/2d258a0a-f178-4e93-9da1-eba61151af3c)。|  
-|Visual Studio Team Services 的裝載控制器服務|是|[建置您的 Xamarin 應用程式 (英文)](https://www.visualstudio.com/en-us/docs/build/apps/mobile/xamarin)。|  
+|Visual Studio Team Services 的裝載控制器服務|是|[建置您的 Xamarin 應用程式 (英文)](https://www.visualstudio.com/docs/build/apps/mobile/xamarin)。|  
 |具有預先定義和後置指令碼的組建定義|是||  
 |包括閘道簽入的連續整合|是|TFVC 的閘道簽入，只適用於 Git 在提取要求模型上運作的時候，而不是簽入運作時。|  
   
@@ -122,4 +117,3 @@ Xamarin 可讓您使用 C#、.NET 及 Visual Studio，來建置目標為 Android
 |功能|支援 Xamarin|其他註解|  
 |-------------|----------------------------|-------------------------|  
 |當機分析、遙測和 Beta 發佈|是||
-

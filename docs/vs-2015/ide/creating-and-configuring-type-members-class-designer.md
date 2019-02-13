@@ -1,14 +1,9 @@
 ---
 title: 建立和設定類型成員 (類別設計工具) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vs.classdetails.method
 - vs.classdetails.property
@@ -34,13 +29,13 @@ ms.assetid: 42af8738-3738-4ca7-82ff-edf573a68f96
 caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 93a112fac274921fe2d1075e1a1b9178c408240c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 51e9f831941fff79c42c8e7fc529db3df0d46b0d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49827970"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54795299"
 ---
 # <a name="creating-and-configuring-type-members-class-designer"></a>建立和設定類型成員 (類別設計工具)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -136,7 +131,7 @@ ms.locfileid: "49827970"
      **注意：** 您也可以使用鍵盤快速鍵來建立成員。 如需詳細資訊，請參閱[類別圖表和類別細節視窗中的鍵盤和滑鼠捷徑 (類別設計工具)](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md)。  
   
 ##  <a name="ModifyTypeMembers"></a> 修改類型成員  
- [類別設計工具] 可讓您修改圖表中所顯示類型的成員。 只要在類別圖中顯示的類型並非唯讀，您都可以修改其成員。 (請參閱[顯示唯讀資訊 (類別設計工具)](http://msdn.microsoft.com/en-us/33e2d3a9-1668-4d10-ae56-fa09b3156e0a)。)您可以在設計介面、[屬性] 視窗和 [類別細節] 視窗上使用就地編輯，以修改類型成員。  
+ [類別設計工具] 可讓您修改圖表中所顯示類型的成員。 只要在類別圖中顯示的類型並非唯讀，您都可以修改其成員。 (請參閱[顯示唯讀資訊 (類別設計工具)](http://msdn.microsoft.com/33e2d3a9-1668-4d10-ae56-fa09b3156e0a)。)您可以在設計介面、[屬性] 視窗和 [類別細節] 視窗上使用就地編輯，以修改類型成員。  
   
  所有在 [類別細節] 視窗中顯示的成員，都代表在類別圖中的類型成員。 成員分成四種類型：方法、屬性、欄位和事件。  
   
@@ -268,7 +263,7 @@ ms.locfileid: "49827970"
   
  [類別細節] 視窗中的儲存格幾乎全部都可以編輯，只有少數例外：  
   
-- 例如，當類型位於參考組件中時，整個類型會處於唯讀狀態 (請參閱[顯示唯讀資訊 (類別設計工具)](http://msdn.microsoft.com/en-us/33e2d3a9-1668-4d10-ae56-fa09b3156e0a))。當您在 [類別細節] 中選擇圖案時，[類別細節] 視窗會以唯讀狀態顯示圖案的詳細資訊。  
+- 例如，當類型位於參考組件中時，整個類型會處於唯讀狀態 (請參閱[顯示唯讀資訊 (類別設計工具)](http://msdn.microsoft.com/33e2d3a9-1668-4d10-ae56-fa09b3156e0a))。當您在 [類別細節] 中選擇圖案時，[類別細節] 視窗會以唯讀狀態顯示圖案的詳細資訊。  
   
 - 索引子 (Indexer) 的名稱會是唯讀的，而其他項目 (類型、修飾詞 (Modifier)、摘要) 都可以編輯。  
   

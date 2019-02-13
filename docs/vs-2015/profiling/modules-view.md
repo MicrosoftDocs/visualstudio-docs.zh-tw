@@ -1,14 +1,9 @@
 ---
 title: 模組檢視 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.view.modules
 helpviewer_keywords:
@@ -19,13 +14,13 @@ ms.assetid: 4314a404-2120-425b-be42-180cd4bac840
 caps.latest.revision: 22
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 90e81530a3d682b1604a5226bb66f9e62637dd0e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: d396aec92b43aebca9b398c6d481962138354e0e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51731358"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54785589"
 ---
 # <a name="modules-view"></a>模組檢視
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,12 +33,9 @@ ms.locfileid: "51731358"
   
  [模組] 檢視中可用的資料行取決於用來收集資料的分析方法 (取樣或檢測)，以及是否在分析回合中收集 .NET 記憶體資料。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [模組檢視](../profiling/modules-view-sampling-data.md)   
  [模組檢視](../profiling/modules-view-instrumentation-data.md)   
  [模組檢視 - 檢測](../profiling/modules-view-dotnet-memory-instrumentation-data.md)   
  [模組檢視 - 取樣](../profiling/modules-view-dotnet-memory-sampling-data.md)   
  [模組檢視](../profiling/modules-view-contention-data.md)
-
-
-

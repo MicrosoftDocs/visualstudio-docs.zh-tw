@@ -1,11 +1,7 @@
 ---
 title: 新增其他語言的編輯器支援 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - syntax colorization
 - IntelliSense
@@ -18,13 +14,13 @@ ms.assetid: d78c43ee-4ef2-42e5-984e-d137de4e7e92
 caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: fa622ddb6d840698d1134e0fec1540d99b44f5e2
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: 366ec5de66c3070e30d7d4f98662732a7892437b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53049782"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54758811"
 ---
 # <a name="adding-visual-studio-editor-support-for-other-languages"></a>新增其他語言的 Visual Studio 編輯器支援
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -76,7 +72,7 @@ ms.locfileid: "53049782"
 
  如果適用於您的情況，在此基底路徑下，新增下列資料夾︰
 
-|資料夾名稱|說明|
+|資料夾名稱|描述|
 |-----------------|-----------------|
 |\\\<語言名稱>|語言資料夾。 將 \<語言名稱> 取代為語言的名稱。 例如 **\Matlab**。|
 |\Syntaxes|文法資料夾。 包含語言的文法 .json 檔案，例如 **Matlab.json**。|
@@ -84,7 +80,7 @@ ms.locfileid: "53049782"
 
  在 Windows 中，%userprofile% 會解析為路徑︰ c:\Users\\\<使用者名稱>。 如果您的系統上的 extensions 資料夾不存在，您必須建立它。 如果資料夾已存在，它會隱藏。
 
- 如需有關如何建立 TextMate 文法的詳細資訊，請參閱[TextMate – 語言文法簡介：如何新增來源的程式碼語法反白顯示內嵌在 HTML](https://developmentality.wordpress.com/2011/02/08/textmate-introduction-to-language-grammars/)並[如何為 Textmate 組合建立語言文法及自訂佈景主題的附註](https://benparizek.com/notebook/notes-on-how-to-create-a-language-grammar-and-custom-theme-for-a-textmate-bundle)。
+ 如需如何建立 TextMate 文法的詳細資料，請參閱 [TextMate – Introduction to Language Grammars: How to add source code syntax highlighting embedded in HTML](https://developmentality.wordpress.com/2011/02/08/textmate-introduction-to-language-grammars/) (TextMate – 語言文法簡介︰如何新增內嵌於 HTML 的原始程式碼語法反白顯示) 和 [Notes on how to create a Language Grammar and Custom Theme for a Textmate Bundle](https://benparizek.com/notebook/notes-on-how-to-create-a-language-grammar-and-custom-theme-for-a-textmate-bundle) (如何為 Textmate 組合建立語言文法及自訂佈景主題的附註)。
 
 ## <a name="see-also"></a>請參閱
  [Visual Studio 2013 巡覽至增強功能](https://blogs.msdn.microsoft.com/mvpawardprogram/2013/10/22/visual-studio-2013-navigate-to-improvements/)[逐步解說：建立程式碼片段](../ide/walkthrough-creating-a-code-snippet.md)[逐步解說：顯示陳述式完成](../extensibility/walkthrough-displaying-statement-completion.md)

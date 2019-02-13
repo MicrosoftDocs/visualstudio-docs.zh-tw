@@ -26,7 +26,7 @@ ms.locfileid: "54770862"
   
 ## <a name="related-topics"></a>相關主題  
   
-|標題|說明|  
+|標題|描述|  
 |-----------|-----------------|  
 |[MSBuild 屬性](../msbuild/msbuild-properties1.md)|介紹屬性和屬性集合。 屬性是可用來設定組建的索引鍵/值組。|  
 |[項目](../msbuild/msbuild-items.md)|描述 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 檔案格式的一般概念，以及項目如何彼此搭配。|  
@@ -34,7 +34,7 @@ ms.locfileid: "54770862"
 |[工作](../msbuild/msbuild-tasks.md)|顯示如何建立 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 可用來執行原子建置作業的可執行程式碼單元。|  
 |[比較屬性和項目](../msbuild/comparing-properties-and-items.md)|比較 MSBuild 屬性和項目。 這兩者都可用來將資訊傳遞至工作、評估條件，以及儲存可在整個專案檔中參考的值。|  
 |[MSBuild 特殊字元](../msbuild/msbuild-special-characters.md)|說明如何逸出某些 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 特別保留來在特定內容中使用的字元。|  
-|[逐步解說：從頭開始建立 MSBuild 專案檔](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md)|顯示如何僅使用文字編輯器來累加建立基本專案檔。|  
+|[逐步解說：從頭開始建立 MSBuild 專案檔案](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md)|顯示如何僅使用文字編輯器來累加建立基本專案檔。|  
 |[逐步解說：使用 MSBuild](../msbuild/walkthrough-using-msbuild.md)|介紹 MSBuild 的建置區塊，以及示範如何在不關閉 Visual Studio 整合式開發環境 (IDE) 的情況下，撰寫和管理 MSBuild 專案及進行偵錯。|  
 |[MSBuild 參考](../msbuild/msbuild-reference.md)|包含參考資訊的文件連結。|  
 |[MSBuild](http://msdn.microsoft.com/e39f13f7-1e1d-4435-95ca-0c222bca071c)|提供了專案檔的 XML 結構描述概觀，並示範如何控制建置軟體的程序。|

@@ -1,14 +1,9 @@
 ---
-title: 如何：為執行中的處理序附加和中斷連結程式碼剖析工具 | Microsoft Docs
-ms.custom: ''
+title: HOW TO：附加和中斷連結效能工具，來執行處理程序 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.attach
 helpviewer_keywords:
@@ -21,13 +16,13 @@ ms.assetid: 56a99c39-e7f6-4f48-ae56-04ab8e022bf7
 caps.latest.revision: 35
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 931608decb44f0e49cb4ae2984b9cbf724a63d56
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 2357993f6f0d814bc2383564cafe16bb2e21225a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51778237"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54762431"
 ---
 # <a name="how-to-attach-and-detach-performance-tools-to-running-processes"></a>如何：為執行中的處理序附加和中斷連結程式碼剖析工具
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -75,12 +70,9 @@ ms.locfileid: "51778237"
   
 3.  按一下 [中斷連結]。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [控制資料收集](../profiling/controlling-data-collection.md)   
  [效能工作階段概觀](../profiling/performance-session-overview.md)   
  [如何︰啟動和結束效能資料收集](../profiling/how-to-start-and-end-performance-data-collection.md)   
  [分析和 Windows Vista 安全性](../profiling/profiling-and-windows-vista-security.md)   
  [VSPerfCmd](../profiling/vsperfcmd.md)
-
-
-

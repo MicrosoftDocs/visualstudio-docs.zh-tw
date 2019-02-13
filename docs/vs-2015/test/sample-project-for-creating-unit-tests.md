@@ -1,27 +1,22 @@
 ---
 title: 用於建立單元測試的範例專案 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 helpviewer_keywords:
 - unit test sample [Visual Studio]
 - unit tests, samples
 ms.assetid: db80aaf2-0652-4d3f-a8c5-2a98fd8502a2
 caps.latest.revision: 32
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: c3d364ffe23e79bb8842770bec0602d4bb7022c9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 1c2516a204151267f6d4686811fe6a7ecba5fe43
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49248582"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54791892"
 ---
 # <a name="sample-project-for-creating-unit-tests"></a>用於建立單元測試的範例專案
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +25,7 @@ ms.locfileid: "49248582"
   
 -   [逐步解說：針對 Managed 程式碼建立和執行單元測試](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)。 此逐步解說會引導您逐步完成建立及自訂單元測試、加以執行，以及檢查測試結果。  
   
--   [逐步解說：執行測試並檢視程式碼涵蓋範圍](http://msdn.microsoft.com/en-us/d4aab8e2-2140-4975-b4e3-41ef3fa944c8)。 此逐步解說將說明如何檢視程式碼涵蓋範圍資料，該資料會顯示專案程式碼中正在受測試的部分。  
+-   [逐步解說：執行測試並檢視程式碼涵蓋範圍](http://msdn.microsoft.com/d4aab8e2-2140-4975-b4e3-41ef3fa944c8)。 此逐步解說將說明如何檢視程式碼涵蓋範圍資料，該資料會顯示專案程式碼中正在受測試的部分。  
   
 -   [逐步解說：使用命令列測試公用程式](http://msdn.microsoft.com/library/52c11992-9e94-4067-a4b7-59f19d69d867)。 在此逐步解說中，您可以使用 MSTest.exe 命令列公用程式來執行測試及檢視結果。  
   
@@ -134,12 +129,9 @@ namespace BankAccountNS
  /* 此處所描述的範例公司、組織、產品、網域名稱、電子郵件地址、商標、人員、地點與事件均屬虛構。  並非影射任何真實的公司、組織、產品、網域名稱、電子郵件地址、商標、人員、地點或事件。 \*/  
   
 ## <a name="working-with-the-code"></a>使用程式碼  
- 若要使用此程式碼，您必須先在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中為其建立專案。 請遵循[逐步解說：針對 Managed 程式碼建立和執行單元測試](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)中＜準備逐步解說＞一節的步驟。  
+ 若要使用此程式碼，您必須先在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中為其建立專案。 請依照下列中的 < 準備逐步解說 > 一節中的步驟[逐步解說：針對受控碼建立和執行單元測試](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)中建立的 Bank 方案。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [逐步解說：針對 Managed 程式碼建立和執行單元測試](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)   
- [逐步解說：執行測試並檢視程式碼涵蓋範圍](http://msdn.microsoft.com/en-us/d4aab8e2-2140-4975-b4e3-41ef3fa944c8)   
+ [逐步解說：執行測試並檢視程式碼涵蓋範圍](http://msdn.microsoft.com/d4aab8e2-2140-4975-b4e3-41ef3fa944c8)   
  [逐步解說：使用命令列測試公用程式](http://msdn.microsoft.com/library/52c11992-9e94-4067-a4b7-59f19d69d867)
-
-
-

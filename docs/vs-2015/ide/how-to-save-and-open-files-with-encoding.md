@@ -1,14 +1,9 @@
 ---
-title: 如何：以編碼方式儲存及開啟檔案 | Microsoft Docs
-ms.custom: ''
+title: HOW TO：儲存及開啟檔案以編碼方式 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - Unicode, bi-directional language support
 - files, encoding
@@ -18,13 +13,13 @@ ms.assetid: cb52b732-b395-4ba1-a3ef-104b3942a12a
 caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: b179637d9607db70aac415abd477da4a62852efe
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: e78d634ed72878f15f240dd2c32577e6124ccd8d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49213781"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54799012"
 ---
 # <a name="how-to-save-and-open-files-with-encoding"></a>如何：以編碼方式儲存及開啟檔案
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,7 +58,6 @@ ms.locfileid: "49213781"
   
 3.  遵循上述程序步驟 2 和 3。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [編碼方式和 Windows Forms 全球化](http://msdn.microsoft.com/library/22e8965d-a712-42b3-8167-3ee346bd70f9)   
  [全球化和當地語系化應用程式](../ide/globalizing-and-localizing-applications.md)
-

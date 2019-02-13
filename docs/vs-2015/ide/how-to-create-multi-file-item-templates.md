@@ -1,14 +1,9 @@
 ---
-title: 如何：建立多檔案項目範本 | Microsoft Docs
-ms.custom: ''
+title: HOW TO：建立多檔案項目範本 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio templates, creating multi-file item templates
 - multi-file item templates
@@ -17,13 +12,13 @@ ms.assetid: fe3c4257-e383-4c80-b8af-c5c521959c33
 caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 00d7fbaa97172c98db61f93706f7e596bb22ddee
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 4616cb2f0e908b3228061288da05ce01543afdc4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49862173"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54785896"
 ---
 # <a name="how-to-create-multi-file-item-templates"></a>如何：建立多檔案項目範本
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +37,7 @@ ms.locfileid: "49862173"
   
 1.  當您建立單一檔案項目範本，請建立項目範本。 如需詳細資訊，請參閱[如何：建立項目範本](../ide/how-to-create-item-templates.md)。  
   
-2.  將 `TargetFileName` 屬性新增至每個 `ProjectItem` 項目。 將 `TargetFileName` 屬性的值設為 $fileinputname$.*FileExtension*，其中 *FileExtension* 是範本中所含檔案的檔案名稱副檔名。 例如:   
+2.  將 `TargetFileName` 屬性新增至每個 `ProjectItem` 項目。 將 `TargetFileName` 屬性的值設為 $fileinputname$.*FileExtension*，其中 *FileExtension* 是範本中所含檔案的檔案名稱副檔名。 例如：  
   
     ```  
     <ProjectItem TargetFileName="$fileinputname$.vb">  
@@ -88,11 +83,8 @@ ms.locfileid: "49862173"
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [建立專案和項目範本](../ide/creating-project-and-item-templates.md)   
  [如何：建立項目範本](../ide/how-to-create-item-templates.md)   
  [範本參數](../ide/template-parameters.md)   
  [如何：替代範本中的參數](../ide/how-to-substitute-parameters-in-a-template.md)
-
-
-

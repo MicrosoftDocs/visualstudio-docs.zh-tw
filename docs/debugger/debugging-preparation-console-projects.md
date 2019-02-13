@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 9641f1d9-2d5a-48b1-8731-6525e8f67892
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c8c5ae8995e86ebe90d6a9d6612c35005896e039
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 15ff4af24ac814dca73ee7032da2d66b29df641d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53926355"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54972205"
 ---
 # <a name="debugging-preparation-console-projects-c-c-visual-basic-f"></a>偵錯準備：主控台專案 (C#，c + +、 Visual Basic 中， F#)
 
