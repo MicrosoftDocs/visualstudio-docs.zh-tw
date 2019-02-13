@@ -2,19 +2,18 @@
 title: R 與 SQL Server 整合
 description: Visual Studio 支援使用 R 建立及執行 SQL 查詢，以及讓 R 使用預存程序的功能。
 ms.date: 06/25/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: fbe0144985355b30d92430d8b0a923987b7bf111
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f15c785658b5c4cd5a6b158b05eb67ff9a4e4c2d
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54936147"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55913976"
 ---
 # <a name="work-with-sql-server-and-r"></a>使用 SQL Server 和 R
 

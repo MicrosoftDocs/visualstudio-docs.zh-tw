@@ -1,19 +1,18 @@
 ---
 title: 建立自動程式化 UI 測試
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: d7659de6e90ca13172459b1bcc1e305e14a91cfc
-ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
+ms.openlocfilehash: d2cb1e2a05499c01cc1441db0a289cfc95b8e243
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "55231957"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55955059"
 ---
 # <a name="walkthrough-create-edit-and-maintain-a-coded-ui-test"></a>逐步解說：建立、編輯及維護自動程式化 UI 測試
 

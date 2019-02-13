@@ -1,7 +1,6 @@
 ---
 title: Help Viewer 系統管理員指南
 ms.date: 11/01/2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: 4340c69f-b96b-4932-bb82-38b16a5ab149
 author: gewarren
@@ -9,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3ffa7b4d083001d3ac761806d55e4b0cbf43d2aa
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c381fbb7c5c272ecbe56ee85c527437b44927359
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54940983"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55924041"
 ---
 # <a name="help-viewer-administrator-guide"></a>Help Viewer 系統管理員指南
 

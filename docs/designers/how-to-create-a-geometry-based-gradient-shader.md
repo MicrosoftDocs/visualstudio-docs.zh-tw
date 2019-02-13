@@ -1,7 +1,6 @@
 ---
 title: HOW TO：建立以幾何為基礎的漸層著色器
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: 4b204405-ba95-4c5e-bd51-ec033a3ebfb6
 author: gewarren
@@ -9,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d6c11b63202703d52c4be7f9bc4ba8e35764589
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 1baaccbe2d7df07900eecbedd385ce8c5a031cc5
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55019420"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55957758"
 ---
 # <a name="how-to-create-a-geometry-based-gradient-shader"></a>HOW TO：建立以幾何為基礎的漸層著色器
 

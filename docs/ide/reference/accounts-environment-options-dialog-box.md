@@ -1,7 +1,6 @@
 ---
 title: 帳戶選項參考
 ms.date: 12/10/2018
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Environment.RoamingSettings
@@ -11,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 00b99a75579f63dd19de74c6d5bc3c13a2833bc3
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c27950e104b6064bdaf3b8b4a8fe4a760fa4e677
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54996112"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55938068"
 ---
 # <a name="accounts-environment-options-dialog-box"></a>選項對話方塊、環境、帳戶
 

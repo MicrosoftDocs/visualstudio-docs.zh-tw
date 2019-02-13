@@ -2,19 +2,18 @@
 title: R 程式碼片段
 description: 在 Visual Studio 中的 R 程式碼片段提供了捷徑，以便快速插入任意長度的程式碼區塊，協助您避免一再重新輸入類似的程式碼。
 ms.date: 01/24/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 0f7dbe2322ceedaf057db67b2c56411abb46a7a9
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 05a21da94dd643b04cea94b7840ca26d9379cb5a
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54964726"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55956359"
 ---
 # <a name="code-snippets"></a>程式碼片段
 

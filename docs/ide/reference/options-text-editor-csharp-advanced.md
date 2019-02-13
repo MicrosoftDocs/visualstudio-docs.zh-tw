@@ -1,7 +1,6 @@
 ---
 title: 進階、C#、文字編輯器、選項
 ms.date: 01/16/2019
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Outlining
@@ -11,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 69f0d2f89901632ab4f500879fc89e3b6ca1e0ba
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 010f2a2e6dc163f24a29e8e352b21d8ef8d72b48
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54959719"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55927512"
 ---
 # <a name="options-text-editor-c-advanced"></a>進階、C#、文字編輯器、選項
 

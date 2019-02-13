@@ -1,7 +1,6 @@
 ---
 title: Help Content Manager 的命令列引數
 ms.date: 11/01/2017
-ms.prod: visual-studio-dev15
 ms.topic: reference
 ms.assetid: 3aa9890a-1147-42ba-adea-17935d184038
 author: gewarren
@@ -9,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 83482a7bd3529d6efc4fed1f738f7e11205707cf
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 1ff769fa7625ee1798088953a04113ffb8ed74d8
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55023820"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55944256"
 ---
 # <a name="command-line-arguments-for-the-help-content-manager"></a>Help Content Manager 的命令列引數
 

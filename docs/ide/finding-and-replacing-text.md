@@ -1,7 +1,6 @@
 ---
 title: 尋找和取代文字，及多重游標選取
 ms.date: 08/14/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - vs.find
@@ -31,12 +30,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 80a6b369826c9f03d8f40d2dc924845acbf6a3f4
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 23bda0ccea91089957b9aa6bea97bb5b7b592b20
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55039406"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55937444"
 ---
 # <a name="find-and-replace-text"></a>尋找和取代文字
 

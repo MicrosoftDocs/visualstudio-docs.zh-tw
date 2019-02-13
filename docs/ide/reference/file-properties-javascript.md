@@ -1,7 +1,6 @@
 ---
 title: JavaScript、檔案屬性
 ms.date: 06/21/2017
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - javascript.project.property.expandedsdknode.fileversion
@@ -26,12 +25,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9fc9832ba7774f58d5f1826e633dfd9bf24ce205
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 684e638d1a2e69d48381964272294999d43c5242
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54946538"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55956762"
 ---
 # <a name="file-properties-javascript"></a>JavaScript、檔案屬性
 您可以使用檔案屬性，指出專案系統應該對檔案執行哪些動作。 例如，您可以設定檔案屬性，指出是否應該將檔案新增至套件以作為資源檔。

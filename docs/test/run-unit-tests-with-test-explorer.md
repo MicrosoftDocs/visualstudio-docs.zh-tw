@@ -2,7 +2,6 @@
 title: 使用 [測試總管] 執行單元測試並進行偵錯
 description: 了解如何在 Visual Studio 中使用 [測試總管] 執行測試。 本主題涵蓋如何在建置後啟用自動測試回合、檢視測試結果、群組和篩選測試清單、建立播放清單、偵錯測試，以及使用測試捷徑。
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - vs.unittesting.testexplorer.overview
@@ -11,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f7c7e1f5dbe45f9792c1db4afbfbc151a9a2e26
-ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
+ms.openlocfilehash: fa24dedd776a0866d5de23fbacd31b32c2d55145
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55484156"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55956541"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>使用測試總管執行單元測試
 

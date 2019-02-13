@@ -1,7 +1,6 @@
 ---
 title: 步驟 3：設定表單屬性
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: 634ef037-1525-48c8-ac7f-abf04be69376
 author: TerryGLee
@@ -9,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 29b86b9a81426b81e7fdf4237a70640c6385dd2d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b8edb5fd4b7df44528461d5078e78fd315c0c40b
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54980709"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55931451"
 ---
 # <a name="step-3-set-your-form-properties"></a>步驟 3：設定表單屬性
 接下來，您要使用 [屬性] 視窗變更表單的外觀。

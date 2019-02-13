@@ -10,13 +10,12 @@ ms.assetid: e15567bc-1f21-4feb-b81d-f17ba35cfde5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: fddd81ae64a53943e08457f4ed4a8c19f5d62ab0
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 73c99d4a7d1ff15b8cbd1cff8a4fd18d8f41bccc
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54970879"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55954838"
 ---
 # <a name="how-to-use-the-load-test-api"></a>HOW TO：使用負載測試 API
 

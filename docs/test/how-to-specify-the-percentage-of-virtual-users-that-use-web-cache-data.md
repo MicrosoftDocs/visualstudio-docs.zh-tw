@@ -8,13 +8,12 @@ ms.assetid: f66d5d43-4121-4487-b27f-d0a0baaf7601
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: cbbb60ef63158f8724e961007a25d8d8817d59ac
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 08f0bb9fb14c631f3bf1e5545a69663eb060e3e7
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55022959"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55956138"
 ---
 # <a name="how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data"></a>HOW TO：指定使用 Web 快取資料的虛擬使用者百分比
 

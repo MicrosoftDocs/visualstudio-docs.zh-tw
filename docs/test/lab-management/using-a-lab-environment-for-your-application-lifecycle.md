@@ -1,7 +1,6 @@
 ---
 title: 使用實驗室環境進行開發
 ms.date: 05/02/2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - lab environment, test lab
@@ -10,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 6bf618f8d7f93ca19e788fe8e6e9e1486548fa06
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 35bc798052bac30f76e76983d0a5dc0bdf4f1fa6
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55000210"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55956122"
 ---
 # <a name="use-a-lab-environment-for-your-devops"></a>使用實驗室環境進行開發
 
@@ -29,7 +28,7 @@ ms.locfileid: "55000210"
 
 以下是常見的實驗室環境拓撲的範例：
 
-| 拓撲 | 說明 |
+| 拓撲 | 描述 |
 |---|---|
 |![只有伺服器的拓撲](../media/topology_backend.png)| 此實驗室環境具有「伺服器拓撲」，這種拓撲經常用來在伺服器應用程式上執行手動測試，且允許測試者使用他們自己的用戶端電腦來確認環境中的 Bug。 在後端拓撲中，您的實驗室環境只包含伺服器。 當您使用這種拓撲類型時，通常會使用不屬於環境的用戶端電腦連接到實驗室環境中的伺服器。|
 |![雲端實驗室環境](../media/topology_cloud.png)| 此實驗室環境提供與_伺服器拓樸_類似的功能和特性，但移除在本機環境中執行實體或虛擬機器的需求，這樣可減少安裝時間、簡化維護工作，並將成本降至最低。 在 Microsoft Azure 這樣的雲端環境中，設定多個網站和虛擬機器，加上自訂的網路，快速且容易。|
@@ -115,7 +114,7 @@ Lab Management 會在您環境中的每部電腦上自動安裝測試代理程�
 
 以下是在您繼續之前應該熟悉的一些其他概念：
 
-|詞彙|說明|
+|詞彙|描述|
 |-|-----------------|
 |實驗室中心|建立和管理實驗室環境所在的 Microsoft Test Manager 區域。|
 |Azure DevOps 專案實驗室|實驗室環境的集合已設定，讓您能連接到這些環境並執行它們的虛擬機器。|

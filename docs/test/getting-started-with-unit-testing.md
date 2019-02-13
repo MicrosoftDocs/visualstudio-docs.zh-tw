@@ -1,7 +1,6 @@
 ---
 title: 開始使用單元測試
 ms.date: 05/02/2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - unit testing, create unit test plans
@@ -10,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 52a0b5d046580e5d4dbf499e504cd0ea123ff5b2
-ms.sourcegitcommit: 9866740aec05d1a3a5dc3b4b6d2ceaeecbd3fc29
+ms.openlocfilehash: 11fb8fe4b30aa986a6c442278d1e8984604a6794
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "55424378"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55927980"
 ---
 # <a name="get-started-with-unit-testing"></a>開始使用單元測試
 
