@@ -4,18 +4,17 @@ description: 立即了解如何使用 Visual Studio 建立 Azure 雲端服務專
 author: ghogen
 manager: jillfra
 assetId: ec580df7-3dcc-45a9-a1d9-8c110678dfb5
-ms.prod: visual-studio-dev15
 ms.custom: seodec18
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/21/2017
 ms.author: ghogen
-ms.openlocfilehash: 52f84cab67fb2f826a4aa26e27cd4ad393dd8bcb
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 2ef17bab90ae1f2c9df66a85a6a78b1494bd5c3d
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55139744"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55926956"
 ---
 # <a name="creating-an-azure-cloud-service-project-with-visual-studio"></a>使用 Visual Studio 建立 Azure 雲端服務專案
 Azure Tools for Visual Studio 提供可讓您建立 [Azure 雲端服務](/azure/cloud-services/cloud-services-choose-me)的專案範本，是個一般用途的簡單 Azure 服務。 一旦建立專案之後，Visual Studio 可讓您對雲端服務進行設定和偵錯，以及部署至 Azure。

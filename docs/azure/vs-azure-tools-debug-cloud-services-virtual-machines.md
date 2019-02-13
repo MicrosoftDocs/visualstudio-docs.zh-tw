@@ -9,14 +9,13 @@ ms.custom: seodec18
 ms.workload: azure-vs
 ms.date: 11/11/2016
 ms.author: mikejo
-ms.prod: visual-studio-dev15
 ms.technology: vs-ide-debug
-ms.openlocfilehash: dc5c27eb27c17f36125e5c9f55fd066481ac4ef2
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c29158be17320e8d7f842386a00c44ac86bf5513
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55139785"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55940733"
 ---
 # <a name="debugging-an-azure-cloud-service-or-virtual-machine-in-visual-studio"></a>在 Visual Studio 中進行 Azure 雲端服務或虛擬機器的偵錯
 

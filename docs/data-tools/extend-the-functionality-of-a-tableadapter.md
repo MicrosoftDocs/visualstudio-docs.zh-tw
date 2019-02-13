@@ -13,15 +13,14 @@ ms.assetid: 418249c8-c7f3-47ef-a94c-744cb6fe6aaf
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 989eb815a6e55b5ecaed0b960963eb036b73065a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: HT
+ms.openlocfilehash: 6df50eb1f8a4d722a0140fd37a6ff0c0d7474a39
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54970535"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55955267"
 ---
 # <a name="extend-the-functionality-of-a-tableadapter"></a>擴充 TableAdapter 的功能
 
@@ -33,7 +32,7 @@ ms.locfileid: "54970535"
 
 ## <a name="locate-tableadapters-in-code"></a>在程式碼中找出 Tableadapter
 
-雖然 TableAdapters 的設計是以**Dataset 設計工具**，產生的 TableAdapter 類別不是巢狀的類別的<xref:System.Data.DataSet>。 Tableadapter 都位於與 TableAdapter 相關聯的資料集的名稱為基礎的命名空間。 例如，如果您的應用程式包含名為資料集`HRDataSet`，將位於 TableAdapters`HRDataSetTableAdapters`命名空間。 (命名慣例會遵循這個模式：DataSetName
+雖然 TableAdapters 的設計是以**Dataset 設計工具**，產生的 TableAdapter 類別不是巢狀的類別的<xref:System.Data.DataSet>。 Tableadapter 都位於與 TableAdapter 相關聯的資料集的名稱為基礎的命名空間。 例如，如果您的應用程式包含名為資料集`HRDataSet`，將位於 TableAdapters`HRDataSetTableAdapters`命名空間。 (命名慣例會遵循這個模式： *DatasetName* + `TableAdapters`)。
 
 下列範例假設名為 TableAdapter`CustomersTableAdapter`位於與專案`NorthwindDataSet`。
 

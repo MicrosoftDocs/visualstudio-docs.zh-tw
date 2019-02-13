@@ -12,15 +12,14 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: cf68127d875ba4c785f10319cabdd96a3c11adc2
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: HT
+ms.openlocfilehash: 841620330c10bae3cbced7710930af8c72456c31
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54996190"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55943775"
 ---
 # <a name="upgrade-mdf-files"></a>升級 .mdf 檔案
 
@@ -70,7 +69,7 @@ ms.locfileid: "54996190"
 
         -   若要使用特定版本：`(localdb)\ProjectsV12`或`(localdb)\ProjectsV13`，其中 V12 是 LocalDB 2014 而 V13 是 LocalDB 2016。
 
-    -   **附加資料庫檔案**:主要的實體路徑 *.mdf*檔案。
+    -   **附加資料庫檔案**： 主要的實體路徑 *.mdf*檔案。
 
     -   邏輯名稱(&L):您想要使用的檔案名稱。
 

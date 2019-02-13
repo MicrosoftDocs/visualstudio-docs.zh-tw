@@ -4,18 +4,17 @@ description: 了解如何在 Visual Studio 中根據 Azure 雲端服務專案的
 author: ghogen
 manager: jillfra
 assetId: 609d6965-05cc-47b1-82dc-c76a92d4f295
-ms.prod: visual-studio-dev15
 ms.custom: seodec18
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/06/2017
 ms.author: ghogen
-ms.openlocfilehash: a083559831f9cb79d3f7474e191afcddb3aaf688
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 8f26d862562f7741b4e76d61d052387871771fd7
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55139841"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55929111"
 ---
 # <a name="configure-an-azure-cloud-service-project-with-visual-studio"></a>使用 Visual Studio 來設定 Azure 雲端服務專案
 您可以根據 Azure 雲端服務專案的需求來設定專案。 您可以設定下列類別的專案的屬性：

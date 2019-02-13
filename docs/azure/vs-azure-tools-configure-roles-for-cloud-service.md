@@ -4,18 +4,17 @@ description: 了解如何使用 Visual Studio 設定 Azure 雲端服務的角色
 author: ghogen
 manager: jillfra
 assetId: d397ef87-64e5-401a-aad5-7f83f1022e16
-ms.prod: visual-studio-dev15
 ms.custom: seodec18
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/21/2017
 ms.author: ghogen
-ms.openlocfilehash: 07876679742ed8d303ebb2e715fbeadc6098303e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 751ee5f414db3ee2ad944cd48503887bf5c65c2a
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55139857"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55942671"
 ---
 # <a name="configure-azure-cloud-service-roles-with-visual-studio"></a>使用 Visual Studio 設定 Azure 雲端服務角色
 Azure 雲端服務可以有一或多個背景工作角色或 web 角色。 您必須為每個角色定義其設定方式，並設定該角色的執行方式。 若要深入了解雲端服務中的角色，請參閱視訊 [Azure 雲端服務簡介](https://channel9.msdn.com/Series/Windows-Azure-Cloud-Services-Tutorials/Introduction-to-Windows-Azure-Cloud-Services)。
@@ -111,7 +110,7 @@ Azure 雲端服務可以有一或多個背景工作角色或 web 角色。 您�
 
     - **名稱** - 輸入您要用於連接字串的名稱。
     - **類型** - 從下拉式清單中選取 [連接字串]。
-    - **值** - 您可以直接將連接字串輸入到 值 儲存格中，或選取省略符號 (...) 以在 建立儲存體連接字串 對話方塊中作業。
+    - **值** - 您可以直接將連接字串輸入到 [值] 儲存格中，或選取省略符號 (...) 以在 [建立儲存體連接字串] 對話方塊中作業。
 
 1. 在 [建立儲存體連接字串] 對話方塊中，針對 [連接方式] 選取一個選項。 針對您選取的選項依照指示操作：
 
