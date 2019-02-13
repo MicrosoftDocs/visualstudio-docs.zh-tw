@@ -1,19 +1,18 @@
 ---
 title: 搭配 [測試總管] 進行以測試為導向的開發工作
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 024668aa77027dd7430552f0e0a7c2896c31ecbe
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 8c7a92820d52dbade817ead287541470cc2b2b1a
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54956450"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55925237"
 ---
 # <a name="quickstart-test-driven-development-with-test-explorer"></a>快速入門：搭配 [測試總管] 進行以測試為導向的開發工作
 

@@ -10,13 +10,12 @@ ms.assetid: fbcd57ee-06ad-4260-8694-09f8e0f93e39
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 227c9674434e5f49b322e614c8b8c7ffefda2128
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 3f1172cff8abc53867f4a13cacdf16fe2d1f065e
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54964570"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55954968"
 ---
 # <a name="how-to-create-a-web-service-test"></a>HOW TO：建立 Web 服務測試
 

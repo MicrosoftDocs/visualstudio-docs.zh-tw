@@ -1,7 +1,6 @@
 ---
 title: IntelliTest 簡介
 ms.date: 05/02/2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - IntelliTest, Get started
@@ -10,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: fb7fc6049bd916c766651484da0c53b3aeccbe35
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 92a5b5f6ffac7285dd1a22d7193ada74e3a90967
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54929365"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55949963"
 ---
 # <a name="get-started-with-microsoft-intellitest"></a>開始使用 Microsoft IntelliTest
 

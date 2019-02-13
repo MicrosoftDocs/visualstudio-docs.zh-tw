@@ -15,13 +15,12 @@ ms.assetid: 969ed346-cf2e-4d48-82b3-edb3e075e1c0
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: c810cea20a33760e1cb197b353bd1ced3664aa7e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 4a7cd36fcb144eaa098acc30a7da550b1288684a
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54997256"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55943398"
 ---
 # <a name="analyzing-threshold-rule-violations-in-load-tests-using-the-load-test-analyzer"></a>使用負載測試分析器來分析負載測試中的臨界值規則違規
 
@@ -35,7 +34,7 @@ ms.locfileid: "54997256"
 
  臨界值違規資料表會顯示最前面的 1,000 個違規。 下表包含這些資料行：
 
-|資料行|說明|預設為可見|
+|資料行|描述|預設為可見|
 |-|-|-|
 |時間|負載測試期間發生違規的時間。|是|
 |電腦|發生違規之測試中的電腦名稱。 **注意：** 當您在 Rig 上執行負載測試時，這很重要。|是|

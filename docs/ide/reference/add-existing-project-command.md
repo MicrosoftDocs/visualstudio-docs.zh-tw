@@ -1,7 +1,6 @@
 ---
 title: 加入現有專案命令
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - file.addexistingproject
@@ -14,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cded9ecfa76114e43efa07c7bac5d5b0c314f91c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: d0946efb15758c76c078ff234717af6fd1fac15c
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54980046"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55951627"
 ---
 # <a name="add-existing-project-command"></a>加入現有專案命令
 將現有專案新增至目前的方案。

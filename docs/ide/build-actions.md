@@ -1,7 +1,6 @@
 ---
 title: 檔案的建置動作
 ms.date: 11/19/2018
-ms.prod: visual-studio-dev15
 ms.technology: vs-ide-compile
 ms.topic: reference
 author: gewarren
@@ -9,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 45a0e4822bc9b6d20bd2cf63d664e6cba97c77bf
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 7820cbbe0477000c2a822e94f5204906d65025fa
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54951296"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55950704"
 ---
 # <a name="build-actions"></a>建置動作
 

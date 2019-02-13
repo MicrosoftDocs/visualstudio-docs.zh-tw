@@ -1,19 +1,18 @@
 ---
 title: 將參數新增至方法的快速動作
 ms.date: 09/28/2018
-ms.prod: visual-studio-dev15
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7de4c4aec07a3151332c199749bef4409966b3e1
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 3e1461afe5c4d6026f8532896ba837e971fed652
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54929881"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55934350"
 ---
 # <a name="add-a-parameter-to-a-method-using-a-quick-action"></a>使用快速動作將參數新增至方法
 

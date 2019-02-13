@@ -1,7 +1,6 @@
 ---
 title: 步驟 8：新增驗證玩家是否勝利的方法
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: 6e317f6e-ba4c-4306-8924-300b0c2f65c6
 author: TerryGLee
@@ -9,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: af467c46899f03422dff654607574f1a5ff14383
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b6bd64908c902c83023bc48bc72ab6443b2a7df7
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54925370"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55934454"
 ---
 # <a name="step-8-add-a-method-to-verify-whether-the-player-won"></a>步驟 8：新增驗證玩家是否勝利的方法
 您已建立一個有趣的遊戲，但它需要額外的項目才能完成。 這個遊戲應該在玩家獲勝時結束，因此您需要加入 `CheckForWinner()` 方法以驗證玩家是否贏了。

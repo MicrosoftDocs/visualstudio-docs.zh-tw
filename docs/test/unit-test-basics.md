@@ -1,7 +1,6 @@
 ---
 title: 單元測試基本概念
 ms.date: 2016-01-07
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - vs.UnitTest.CreateUnitTest
@@ -10,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 76bd796bb706b63d2bb8ac022eb610a8a7d22d60
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 63d2da519bc51149051a3f2476fb6d3a7623bb39
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55024418"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55922351"
 ---
 # <a name="unit-test-basics"></a>單元測試基本概念
 
@@ -227,7 +226,7 @@ public void My_Test ()
 > [!WARNING]
 > 只有 Visual Studio Enterprise 支援在每次建置之後執行單元測試。
 
-|按鈕|說明|
+|按鈕|描述|
 |-|-|
 |![建置後執行](../test/media/ute_runafterbuild_btn.png)|若要在每次本機組建之後執行單元測試，請選擇標準功能表上的 [測試]，然後在 [測試總管] 工具列上選擇 [建置之後執行測試]。|
 
@@ -237,7 +236,7 @@ public void My_Test ()
 
 ![搜尋篩選條件分類](../test/media/ute_searchfilter.png)
 
-|按鈕|說明|
+|按鈕|描述|
 |-|-|
 |![[測試總管] 的 [群組] 按鈕](../test/media/ute_groupby_btn.png)|若要依分類將測試分組，請選擇 [群組依據]  按鈕。|
 

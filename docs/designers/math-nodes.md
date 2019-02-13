@@ -1,7 +1,6 @@
 ---
 title: 數學節點
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 ms.assetid: adc225cc-1cf5-4f7c-9b00-e7ac8450b6b9
 author: gewarren
@@ -9,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a6120975febd9dae5f7cb21e3ab425b1a2389c30
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 43809923b730800cfa71185b136743f3098239e1
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54984804"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55952087"
 ---
 # <a name="math-nodes"></a>數學節點
 
@@ -25,7 +24,7 @@ ms.locfileid: "54984804"
 
 ## <a name="math-node-reference"></a>數學節點參考
 
-|節點|詳細資料|屬性|
+|節點|Details|屬性|
 |----------|-------------|----------------|
 |**Abs**|根據每個元件計算指定輸入的絕對值。<br /><br /> 對於輸入 `X` 的每個元件，負值都會轉成正值，以讓結果的每個元件都有正值。<br /><br /> **輸入：**<br /><br /> `X`：`float`、`float2`、`float3` 或 `float4`<br /> 這些值可以決定絕對值。<br /><br /> `Output:`<br /><br /> `Output`：與輸入 `X` 相同<br /> 依每個元件而定的絕對值。|無|
 |**[新增]**|根據每個元件計算指定輸入的整體元件總和。<br /><br /> 對於結果的每個元件，會將輸入 `X` 與輸入 `Y` 的對應元件相加。<br /><br /> **輸入：**<br /><br /> `X`：`float`、`float2`、`float3` 或 `float4`<br /> 要相加的其中一個值。<br /><br /> `Y`：與輸入 `X` 相同<br /> 要相加的其中一個值。<br /><br /> **輸出：**<br /><br /> `Output`：與輸入 `X` 相同<br /> 每個元件的總和。|無|

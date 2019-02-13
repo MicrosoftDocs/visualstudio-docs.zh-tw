@@ -8,13 +8,12 @@ ms.assetid: ff275cfb-5df9-4710-9a91-9caabaaad34f
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 5d421324b389c33eef50f51f1016b68777b4192b
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 52f9732bda3bf7ae6628ad834ee49210f739efca
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54917860"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55946674"
 ---
 # <a name="how-to-configure-network-emulation-using-test-settings-in-visual-studio"></a>HOW TO：在 Visual Studio 中使用測試設定來設定網路模擬
 

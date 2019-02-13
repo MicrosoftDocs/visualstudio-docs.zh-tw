@@ -1,7 +1,6 @@
 ---
 title: 管理應用程式資源 (.NET)
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - msvse_resedit.dlg.SetCustomTool
@@ -18,12 +17,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1ef364b5152cc822c518e02d9f0b9a4a1a4e3679
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 48dbd24ba98ad3f1b4f24a68c9775b1022ea08f6
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55042838"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55970305"
 ---
 # <a name="manage-application-resources-net"></a>管理應用程式資源 (.NET)
 

@@ -1,7 +1,6 @@
 ---
 title: 預覽程式碼變更
 ms.date: 12/16/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
@@ -10,12 +9,12 @@ f1_keywords:
 - vs.codefix.previewchanges
 ms.workload:
 - multiple
-ms.openlocfilehash: af5cc054411d5297e919f549c7cb518b48ac441b
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 07d722848725753b0b2abf25c8497327cdb53835
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54928811"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55952160"
 ---
 # <a name="preview-changes-window"></a>[預覽變更] 視窗
 

@@ -1,7 +1,6 @@
 ---
 title: Live Unit Testing 常見問題集
-ms.date: 2017-10-03
-ms.prod: visual-studio-dev15
+ms.date: 10/03/2017
 ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio ALM
@@ -10,12 +9,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: e6e6cf314ed477ade4093f90737e2e1a9c949c8c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f3aefd7ec3f50538ed0986c0e6e80acf75b8e84f
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53935589"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55947389"
 ---
 # <a name="live-unit-testing-frequently-asked-questions"></a>Live Unit Testing 常見問題集
 
@@ -139,7 +138,7 @@ Live Unit Testing 適用於下表所列的三種熱門單元測試架構。 其�
 
 將 `LiveUnitTesting_BuildRoot` 使用者層級環境變數設為您想要卸除 Live Unit Testing 組建成品的路徑。 
 
-## <a name="test-explorer-vs-live-unit-testing-test-runs"></a>測試總管與Live Unit Testing 測試回合的比較 
+## <a name="test-explorer-vs-live-unit-testing-test-runs"></a>測試總管與Live Unit Testing 測試回合的比較
 **從 [測試總管] 視窗執行測試，與在 Live Unit Testing 中執行測試有何不同？**
 
 差異如下：
@@ -158,7 +157,7 @@ Live Unit Testing 適用於下表所列的三種熱門單元測試架構。 其�
 **如何從 Live Unit Testing 排除測試？**
 
 請參閱[使用 Visual Studio 2017 Enterprise Edition 中的 Live Unit Testing](live-unit-testing.md#include-and-exclude-test-projects-and-test-methods) 文章中的＜包含和排除測試專案與測試方法＞一節，以了解使用者的特定設定。 若您想要針對特定的編輯工作階段執行一組特定的測試，或保存您個人的喜好設定，包含或排除測試非常有用。
- 
+
 針對方案特定的設定，您可以以程式設計方式套用 <xref:System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverageAttribute?displayProperty=fullName> 屬性，以排除方法、屬性、類別或結構，使 Live Unit Testing 不會檢測它們。 此外，您也可以在專案檔中將 `<ExcludeFromCodeCoverage>` 屬性設為 `true`，以排除對整個專案的檢測。 Live Unit Testing 仍然會執行尚未檢測的測試，但不會將它們的涵蓋範圍視覺化。
 
 您也可以檢查是否已將 `Microsoft.CodeAnalysis.LiveUnitTesting.Runtime` 載入目前的應用程式定義域，並據以停用測試。 例如，您可以針對 xUnit 執行下列動作：

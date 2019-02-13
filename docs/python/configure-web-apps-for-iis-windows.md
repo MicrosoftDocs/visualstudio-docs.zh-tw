@@ -2,7 +2,6 @@
 title: 為 IIS 設定 Python Web 應用程式
 description: 如何設定 Python Web 應用程式以搭配 Windows 虛擬機器的 Internet Information Services 執行。
 ms.date: 12/06/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -12,12 +11,12 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: f0ea410a75d1fccf93adc18fc987626ccb026f34
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 6a6861f2f334f3a03fe133e5185c9079a54cfb34
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55029969"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55937671"
 ---
 # <a name="configure-python-web-apps-for-iis"></a>為 IIS 設定 Python Web 應用程式
 

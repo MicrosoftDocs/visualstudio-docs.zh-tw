@@ -2,19 +2,18 @@
 title: R 互動 REPL
 description: 如何在 Visual Studio 中使用整合了編輯器視窗的 R 互動式 REPL 環境。
 ms.date: 06/28/2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: af83b0998afa92fc59203fefa4b9d6d21635e642
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 7109e74e858aa308b8f49e6e1e335478f801070b
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54921179"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55948059"
 ---
 # <a name="work-with-the-r-interactive-window"></a>使用 R 互動視窗
 
@@ -51,7 +50,7 @@ REPL 中的所有先前輸入和輸出都是唯讀的，無法進行變更。 �
 
 工具列命令如下，其中大部分都有鍵盤對等項目，而且 [R 工具] > [工作階段] 和 [R 工具] > [工作目錄] 功能表上也都會提供 (如所述)：
 
-| 按鈕 | 命令 | 按鍵組合 | 說明 |
+| 按鈕 | 命令 | 按鍵組合 | 描述 |
 | --- | --- | --- | --- |
 | ![[重設] 按鈕](media/repl-toolbar-01-reset.png) | 重設 | **Ctrl**+**Shift**+**F10** | 重設互動式視窗工作階段，並清除所有變數和歷程記錄。 |
 | ![[清除] 按鈕](media/repl-toolbar-02-clear.png) | 清除 | **Ctrl**+**L** | 清除互動式視窗中所顯示的輸出；不會影響工作階段變數或歷程記錄。 |

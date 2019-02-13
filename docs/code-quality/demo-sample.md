@@ -1,7 +1,6 @@
 ---
 title: 用於程式碼分析的 C++ 專案範例
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: sample
 helpviewer_keywords:
 - demo sample [Visual Studio ALM]
@@ -12,12 +11,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: ad5a7d3b2c13b603fd3a9f523563c844dda8b67d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ad28cae5e548a35e0166e1d8ed451450264241f7
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53852501"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55943502"
 ---
 # <a name="sample-c-project-for-code-analysis"></a>用於程式碼分析的 C++ 專案範例
 

@@ -2,7 +2,6 @@
 title: 重構 Python 程式碼
 description: Visual Studio 可藉由重新命名識別碼、擷取方法、新增匯入及移除未使用的匯入，輕鬆地重構 Python 程式碼。
 ms.date: 11/12/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -11,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: a1c851205bd99dc0a21e42b55f7476824b96ba6c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 244fbc87af508740e875ee73d948a2f37cce67c9
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55031340"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55929930"
 ---
 # <a name="refactor-python-code"></a>重構 Python 程式碼
 

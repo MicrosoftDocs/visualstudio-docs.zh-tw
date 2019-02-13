@@ -1,7 +1,6 @@
 ---
 title: 程式碼片段函式
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 helpviewer_keywords:
 - code snippets [Visual Studio], functions
@@ -13,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d4e09602ed62e21a4a5a80a8e6fee301eef30512
-ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
+ms.openlocfilehash: 60453b6842dd321b7c85c2837e12b1208adb18f9
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55483714"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55939511"
 ---
 # <a name="code-snippet-functions"></a>程式碼片段函式
 

@@ -1,7 +1,6 @@
 ---
 title: Blend 中的鍵盤快速鍵和輔助按鍵
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: f9ec9724-7571-4777-8ff8-d9be012eae8f
 author: gewarren
@@ -9,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 20c3eb7fc9dcf57919ccb41dc4a6484ab8985803
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 9575effa2740620c585e1dddc64bb67a1d919d2f
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54992070"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55939667"
 ---
 # <a name="keyboard-shortcuts-and-modifier-keys-in-blend"></a>Blend 中的鍵盤快速鍵和輔助按鍵
 

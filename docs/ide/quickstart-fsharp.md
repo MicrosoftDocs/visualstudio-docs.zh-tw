@@ -2,7 +2,6 @@
 title: 快速入門：以 F# 建立 ASP.NET Core Web 服務
 description: 了解如何在 Visual Studio 中以 F# 逐步建立 ASP.NET Core Web 服務。
 ms.date: 08/24/2018
-ms.prod: visual-studio-dev15
 ms.topic: quickstart
 author: cartermp
 ms.author: phcart
@@ -12,12 +11,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: e57f78fa0886a985bb830f3f279984893566bdb4
-ms.sourcegitcommit: 0f7411c1a47d996907a028e920b73b53c2098c9f
+ms.openlocfilehash: 166ff1fae5cbc494fe287a47a2983fc52364493b
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/04/2019
-ms.locfileid: "55690550"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55934662"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-service-in-f"></a>快速入門：使用 Visual Studio 以 F# 建立您的第一個 ASP.NET Core Web 服務
 

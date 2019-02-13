@@ -1,19 +1,18 @@
 ---
 title: 建立單元測試專案
 ms.date: 01/29/2019
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 813829e1e4024a38415cd9cef6da9fa7ca2ed87b
-ms.sourcegitcommit: 9866740aec05d1a3a5dc3b4b6d2ceaeecbd3fc29
+ms.openlocfilehash: 381f04b78e5cfc9ed61187e62e310a2d927eb0ce
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "55424404"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55949430"
 ---
 # <a name="create-a-unit-test-project"></a>建立單元測試專案
 

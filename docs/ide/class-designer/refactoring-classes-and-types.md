@@ -1,7 +1,6 @@
 ---
 title: 在類別設計工具中將類別與類型重新命名和移動
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - vs.ClassDesigner.OverrideMembersDialog
@@ -20,12 +19,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 83649a5b2b1053453a36e5ae8ad6f8636112ffd9
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: d99fc68f6b42b442a87ead02aba888063b1b42a1
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55069508"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55951913"
 ---
 # <a name="refactor-classes-and-types-in-class-designer"></a>在類別設計工具中將類別與類型重構
 

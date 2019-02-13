@@ -12,13 +12,12 @@ ms.assetid: 27806972-1b15-4388-833d-6d0632816f1f
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 92a974d233e2d449148a515f3e7bf39f89a95f20
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 33927bcebbd4cffbed912d66dd723856af8b11d7
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54967150"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55948871"
 ---
 # <a name="how-to-create-a-load-test-plug-in"></a>HOW TO：建立負載測試外掛程式
 

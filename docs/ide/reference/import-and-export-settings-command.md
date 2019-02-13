@@ -1,7 +1,6 @@
 ---
 title: 匯入和匯出設定命令
 ms.date: 11/21/2018
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - Tools.ImportandExportSettings
@@ -14,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f5c011c1bbaaa66e3da39c7ca8d713099d11e5a4
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b9be5826edf0d7220d30ce5c4a99f333c2ab8b67
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55041681"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55947220"
 ---
 # <a name="import-and-export-settings-command"></a>匯入和匯出設定命令
 
