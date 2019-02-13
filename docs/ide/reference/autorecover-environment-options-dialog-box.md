@@ -1,7 +1,6 @@
 ---
 title: 選項對話方塊、環境、自動回復
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - VS.DialogAutoRestore
@@ -18,12 +17,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c6b65da35a180e507af8175d7e1c8e209e84ba8d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 59a28d73677011ef2de3ce4dd844757108b317ef
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54993984"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55952407"
 ---
 # <a name="autorecover-environment-options-dialog-box"></a>選項對話方塊、環境、自動回復
 

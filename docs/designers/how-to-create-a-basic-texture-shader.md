@@ -1,7 +1,6 @@
 ---
 title: HOW TO：建立基本紋理著色器
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: 5af113fb-6415-4be0-8b23-10fddb10e80a
 author: gewarren
@@ -9,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 008a98702bcea94c6daa863f620f3ed8b77078c4
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 5ac687b7e859830790c0192399893ec39b9f0044
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54928421"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55953434"
 ---
 # <a name="how-to-create-a-basic-texture-shader"></a>HOW TO：建立基本紋理著色器
 
