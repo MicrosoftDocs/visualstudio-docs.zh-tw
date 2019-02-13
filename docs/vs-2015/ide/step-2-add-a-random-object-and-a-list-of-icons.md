@@ -1,25 +1,20 @@
 ---
-title: 步驟 2：新增隨機物件和圖示清單 | Microsoft Docs
-ms.custom: ''
+title: 步驟 2：新增隨機物件和圖示清單 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: 95faea28-eddc-4cfa-95fb-3b34b5a976d7
 caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 2740e61de964f3b0c72f44e9a5c11018894c4fe0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: bfdedd3c6666ca6535237de11eb08a9b013fe8c6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49226651"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54766337"
 ---
 # <a name="step-2-add-a-random-object-and-a-list-of-icons"></a>步驟 2：加入隨機物件和圖示清單
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,6 +58,3 @@ IntelliSense 視窗
 -   若要移至下一個教學課程步驟，請參閱[步驟 3：將隨機圖示指派給每個標籤](../ide/step-3-assign-a-random-icon-to-each-label.md)。  
   
 -   若要回到上一個教學課程步驟，請參閱[步驟 1：建立專案並將資料表新增至表單](../ide/step-1-create-a-project-and-add-a-table-to-your-form.md)。
-
-
-

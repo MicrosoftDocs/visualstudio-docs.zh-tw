@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: c24c006f-f2ac-429f-89db-677fc0c6e1ea
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9bb693e509eb12b01d3c70f8f341b39de06e5797
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
-ms.translationtype: HT
+ms.openlocfilehash: 8649e862a20e6f6c854a2bbe67b756103c5e68dc
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54204384"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55009035"
 ---
 # <a name="create-custom-data-visualizers"></a>建立自訂的資料視覺化檢視
  A*視覺化檢視*屬於[!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]適用於其資料類型的方式顯示變數或物件的偵錯工具使用者介面。 例如，HTML 視覺化檢視會解譯 HTML 字串，並顯示結果，就會出現在瀏覽器視窗中。 而點陣圖視覺化檢視會解譯點陣圖結構，並顯示它所代表的圖形。 有些視覺化檢視可讓您修改，以及檢視資料。
@@ -82,9 +82,9 @@ ms.locfileid: "54204384"
   
 ## <a name="see-also"></a>另請參閱
   
- [逐步解說：以 C# 撰寫視覺化檢視](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)  
+ [逐步解說：使用 C# 撰寫視覺化檢視](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)  
 
- [逐步解說：以 Visual Basic 撰寫視覺化檢視](../debugger/walkthrough-writing-a-visualizer-in-visual-basic.md)  
+ [逐步解說：使用 Visual Basic 撰寫視覺化檢視](../debugger/walkthrough-writing-a-visualizer-in-visual-basic.md)  
   
  [如何：安裝視覺化檢視](../debugger/how-to-install-a-visualizer.md)  
   

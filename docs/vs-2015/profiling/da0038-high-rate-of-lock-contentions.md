@@ -20,7 +20,7 @@ ms.contentlocale: zh-TW
 ms.lasthandoff: 01/23/2019
 ms.locfileid: "54766198"
 ---
-# <a name="da0038-high-rate-of-lock-contentions"></a>DA0038：高比率的鎖定爭用
+# <a name="da0038-high-rate-of-lock-contentions"></a>DA0038：鎖定爭用的比率很高
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 如需 Visual Studio 2017 的最新文件，請參閱[DA0038:高比率的鎖定爭用](https://docs.microsoft.com/visualstudio/profiling/da0038-high-rate-of-lock-contentions)docs.microsoft.com 上。  
@@ -50,7 +50,7 @@ ms.locfileid: "54766198"
  在分析執行期間所做的測量指出有非常大量的鎖定爭用時，就會引發這個規則。 鎖定爭用會延遲等待鎖定的執行緒執行。 即使是在較低階的硬體上執行的單元測試或負載測試中相當少量的鎖定爭用也還是應該進行調查。  
   
 > [!NOTE]
->  當分析資料中報告的鎖定爭用比率極高時，會引發 [DA0039：極高比率的鎖定爭用](../profiling/da0039-very-high-rate-of-lock-contentions.md)警告訊息而不是此資訊訊息。  
+>  當分析資料中報告的鎖定爭用比率極高時，會引發 [DA0039︰非常高比率的鎖定爭用](../profiling/da0039-very-high-rate-of-lock-contentions.md)警告訊息而不是此資訊訊息。  
   
 ## <a name="how-to-investigate-a-warning"></a>如何調查警告  
  按兩下訊息，瀏覽至分析資料的[標記檢視](../profiling/marks-view.md)。  尋找 **.NET CLR LocksAndThreads\Contention Rate / sec** 欄。 判斷是否有特定的程式執行階段，當中的鎖定爭用比其他階段更繁重。  

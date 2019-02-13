@@ -1,25 +1,20 @@
 ---
-title: 如何：建立以幾何為基礎的漸層著色器 | Microsoft Docs
-ms.custom: ''
+title: HOW TO：建立以幾何為基礎的漸層著色器 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: 4b204405-ba95-4c5e-bd51-ec033a3ebfb6
 caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 61dd80bb8d8ba4c272beff018d3ab65ffce41dc6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 555fe986267ce8cd88a5beea6f57cef2ba810156
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49911872"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54797533"
 ---
 # <a name="how-to-create-a-geometry-based-gradient-shader"></a>如何：建立以幾何為基礎的漸層著色器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -70,19 +65,16 @@ ms.locfileid: "49911872"
   
  某些圖形可對一些著色器提供更佳的預覽。 如需如何在著色器設計工具中預覽著色器的詳細資訊，請參閱[著色器設計工具](../designers/shader-designer.md)中的＜預覽著色器＞  
   
- 下圖顯示本文件中所述的著色器，套用至 [如何：為 3D 地形建立模型](../designers/how-to-model-3-d-terrain.md)所示的 3D 場景。 色彩濃度會隨著世界空間的點高度增加。  
+ 下圖顯示所述的著色器套用至 3d 場景中示範此文件[How to:3d 地形建立模型](../designers/how-to-model-3-d-terrain.md)。 色彩濃度會隨著世界空間的點高度增加。  
   
  ![已套用至 3D 地形模型的漸層效果](../designers/media/digit-gradient-effect-result.png "Digit-Gradient-Effect-Result")  
   
- 如需如何將著色器套用至 3D 模型的詳細資訊，請參閱[如何：將著色器套用至 3D 模型](../designers/how-to-apply-a-shader-to-a-3-d-model.md)。  
+ 如需如何將著色器套用至 3d 模型的詳細資訊，請參閱[How to:將著色器套用至 3d 模型](../designers/how-to-apply-a-shader-to-a-3-d-model.md)。  
   
-## <a name="see-also"></a>另請參閱  
- [如何：將著色器套用至 3D 模型](../designers/how-to-apply-a-shader-to-a-3-d-model.md)   
+## <a name="see-also"></a>請參閱  
+ [如何：將著色器套用至 3d 模型](../designers/how-to-apply-a-shader-to-a-3-d-model.md)   
  [如何：匯出著色器](../designers/how-to-export-a-shader.md)   
- [如何：為 3D 地形建立模型](../designers/how-to-model-3-d-terrain.md)   
+ [如何：模型的 3d 地形模型](../designers/how-to-model-3-d-terrain.md)   
  [如何：建立灰階材質著色器](../designers/how-to-create-a-grayscale-texture-shader.md)   
  [著色器設計工具](../designers/shader-designer.md)   
  [著色器設計工具節點](../designers/shader-designer-nodes.md)
-
-
-
