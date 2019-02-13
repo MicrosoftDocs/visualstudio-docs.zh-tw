@@ -1,7 +1,6 @@
 ---
 title: 管理外部工具
 ms.date: 11/20/2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - vs.externaltools
@@ -12,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d82a42e83364e43afbe242e93c7f08dbfb27be96
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 5e73a20cfd50d859cc050f540fa2d84cae874fc9
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55025796"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55907798"
 ---
 # <a name="manage-external-tools"></a>管理外部工具
 
@@ -51,7 +50,7 @@ ms.locfileid: "55025796"
 
 以下是在定義外部工具時可以使用的引數完整清單：
 
-|名稱|引數|說明|
+|名稱|引數|描述|
 |----------|--------------|-----------------|
 |項目路徑|$(ItemPath)|目前檔案的完整檔案名稱 (磁碟機 + 路徑 + 檔案名稱)。|
 |項目目錄|$(ItemDir)|目前檔案的目錄 (磁碟機 + 路徑)。|

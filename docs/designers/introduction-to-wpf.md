@@ -1,7 +1,6 @@
 ---
 title: WPF 簡介
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: b8d7cf43-d1f2-4f3d-adb0-4f3a6428edc0
 author: gewarren
@@ -12,12 +11,12 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 8b8f85d5d94ddb5f14926fa5100889da2aa3c2d6
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 893b073c2722fc91e342d37f0aeb2a490fccb53a
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54980241"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55919985"
 ---
 # <a name="wpf-overview"></a>WPF 概觀
 

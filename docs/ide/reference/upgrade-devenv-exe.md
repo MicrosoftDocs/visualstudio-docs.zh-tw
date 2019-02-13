@@ -1,7 +1,6 @@
 ---
 title: -Upgrade (devenv.exe)
 ms.date: 12/10/2018
-ms.prod: visual-studio-dev15
 ms.topic: reference
 helpviewer_keywords:
 - /upgrade Devenv switch
@@ -13,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d6554a167bd4515b65482a00ed724bf47e53dc2
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f7ca13af8cd6b1a144ee3202165908f1d282ca81
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54923554"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55924067"
 ---
 # <a name="upgrade-devenvexe"></a>/Upgrade (devenv.exe)
 

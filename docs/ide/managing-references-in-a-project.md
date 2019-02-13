@@ -1,7 +1,6 @@
 ---
 title: 管理專案中的參考
 ms.date: 04/11/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - vs.ProjectPropertiesReferencePaths
@@ -22,12 +21,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3612e3b04fc27460922f90e48666397ce9fb3b73
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: d04e5703c96b710208cc1ecc79a169a458463497
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55042982"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55921051"
 ---
 # <a name="manage-references-in-a-project"></a>管理專案中的參考
 

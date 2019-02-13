@@ -3,7 +3,6 @@ title: Visual Studio 中的 Python 教學課程步驟 2，撰寫並執行程式�
 titleSuffix: ''
 description: 在 Visual Studio 中 Python 功能核心逐步解說的步驟 2，包含編輯程式碼和執行專案。
 ms.date: 01/28/2019
-ms.prod: visual-studio-dev15
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
@@ -12,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6aec7825387c2eda58c76bf885bcd29b0b7bdd1b
-ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
+ms.openlocfilehash: 427aa1e0821d38488b626656a06e8952c381053e
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "55231775"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55918100"
 ---
 # <a name="step-2-write-and-run-code"></a>步驟 2：撰寫並執行程式碼
 

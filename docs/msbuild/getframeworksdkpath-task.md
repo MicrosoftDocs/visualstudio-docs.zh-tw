@@ -18,45 +18,45 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fb1ca2a4c77471f4b6767269e511d690c6c094a1
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: d6c092921c38153a587ee9fb4548175385507a67
+ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54947266"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55853257"
 ---
 # <a name="getframeworksdkpath-task"></a>GetFrameworkSdkPath 工作
-擷取 [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)] 的路徑。  
-  
-## <a name="task-parameters"></a>工作參數  
- 下表說明 `GetFrameworkSdkPath` 工作的參數。  
-  
-|參數|說明|  
-|---------------|-----------------|  
-|`FrameworkSdkVersion20Path`|選擇性的 `String` 唯讀輸出參數。<br /><br /> 傳回 .NET SDK 2.0 版的路徑 (如果存在的話)。 否則傳回 `String.Empty`。|  
-|`FrameworkSdkVersion35Path`|選擇性的 `String` 唯讀輸出參數。<br /><br /> 傳回 .NET SDK 3.5 版的路徑 (如果存在的話)。 否則傳回 `String.Empty`。|  
-|`FrameworkSdkVersion40Path`|選擇性的 `String` 唯讀輸出參數。<br /><br /> 傳回 .NET SDK 4.0 版的路徑 (如果存在的話)。 否則傳回 `String.Empty`。|  
-|`Path`|選擇性的 `String` 輸出參數。<br /><br /> 包含最新的 .NET SDK 路徑 (如果已有任何版本的話)。 否則傳回 `String.Empty`。|  
-  
-## <a name="remarks"></a>備註  
- 除了上述所列的參數，此項工作還會繼承 <xref:Microsoft.Build.Tasks.TaskExtension> 類別中的參數，而該類別本身又繼承 <xref:Microsoft.Build.Utilities.Task> 類別。 如需這些其他參數的清單及其描述，請參閱 [TaskExtension 基底類別](../msbuild/taskextension-base-class.md)。  
-  
-## <a name="example"></a>範例  
- 下列範例使用 `GetFrameworkSdkPath` 工作，將 [!INCLUDE[winsdkshort](../debugger/debug-interface-access/includes/winsdkshort_md.md)] 的路徑儲存在 `SdkPath` 屬性中。  
-  
-```xml  
-<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
-    <Target Name="GetPath">  
-        <GetFrameworkSdkPath>  
-            <Output  
-                TaskParameter="Path"  
-                PropertyName="SdkPath" />  
-        </GetFrameworkSdkPath>  
-        <Message Text="$(SdkPath)"/>  
-    </Target>  
-</Project>  
-```  
-  
-## <a name="see-also"></a>另請參閱  
- [工作](../msbuild/msbuild-tasks.md)   
- [工作參考](../msbuild/msbuild-task-reference.md)
+擷取 [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)] 的路徑。
+
+## <a name="task-parameters"></a>工作參數
+下表說明 `GetFrameworkSdkPath` 工作的參數。
+
+|參數|描述|
+|---------------|-----------------|
+|`FrameworkSdkVersion20Path`|選擇性的 `String` 唯讀輸出參數。<br /><br /> 傳回 .NET SDK 2.0 版的路徑 (如果存在的話)。 否則傳回 `String.Empty`。|
+|`FrameworkSdkVersion35Path`|選擇性的 `String` 唯讀輸出參數。<br /><br /> 傳回 .NET SDK 3.5 版的路徑 (如果存在的話)。 否則傳回 `String.Empty`。|
+|`FrameworkSdkVersion40Path`|選擇性的 `String` 唯讀輸出參數。<br /><br /> 傳回 .NET SDK 4.0 版的路徑 (如果存在的話)。 否則傳回 `String.Empty`。|
+|`Path`|選擇性的 `String` 輸出參數。<br /><br /> 包含最新的 .NET SDK 路徑 (如果已有任何版本的話)。 否則傳回 `String.Empty`。|
+
+## <a name="remarks"></a>備註
+除了上述所列的參數，此項工作還會繼承 <xref:Microsoft.Build.Tasks.TaskExtension> 類別中的參數，而該類別本身又繼承 <xref:Microsoft.Build.Utilities.Task> 類別。 如需這些其他參數的清單及其描述，請參閱 [TaskExtension 基底類別](../msbuild/taskextension-base-class.md)。
+
+## <a name="example"></a>範例
+下列範例使用 `GetFrameworkSdkPath` 工作，將 [!INCLUDE[winsdkshort](../debugger/debug-interface-access/includes/winsdkshort_md.md)] 的路徑儲存在 `SdkPath` 屬性中。
+
+```xml
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <Target Name="GetPath">
+        <GetFrameworkSdkPath>
+            <Output
+                TaskParameter="Path"
+                PropertyName="SdkPath" />
+        </GetFrameworkSdkPath>
+        <Message Text="$(SdkPath)"/>
+    </Target>
+</Project>
+```
+
+## <a name="see-also"></a>另請參閱
+[工作](../msbuild/msbuild-tasks.md)  
+[工作參考](../msbuild/msbuild-task-reference.md)

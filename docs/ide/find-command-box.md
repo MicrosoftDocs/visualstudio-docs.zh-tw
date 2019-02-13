@@ -1,7 +1,6 @@
 ---
 title: 尋找命令方塊
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - vs.findcommandbox
@@ -12,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c24b6df8d46b5b760ef3338732b88e7444cc4ab4
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 221c5fbbd3f0f82ac97d0c2a0fcc82657e0296c4
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55070899"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55906679"
 ---
 # <a name="findcommand-box"></a>尋找/命令方塊
 

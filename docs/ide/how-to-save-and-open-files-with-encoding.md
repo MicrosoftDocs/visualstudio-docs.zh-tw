@@ -1,7 +1,6 @@
 ---
 title: HOW TO：以編碼來儲存及開啟檔案
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - Unicode, bi-directional language support
@@ -14,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 93222ee261407d54eb18d61d81eeb5aa93af7b24
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f424b0a2be2c1d7fd5891e791f149a4c426ee3f4
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55042825"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55934779"
 ---
 # <a name="how-to-save-and-open-files-with-encoding"></a>HOW TO：以編碼來儲存及開啟檔案
 

@@ -1,7 +1,6 @@
 ---
 title: Working with elements in XAML Designer
 ms.date: 05/14/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: a29690bf-f212-4ac6-a77a-adc53d14102e
 author: gewarren
@@ -9,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 178d3a576ab8a5abf48f8a9113da6fc02d42a555
-ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
+ms.openlocfilehash: 1fa232ccefed20608ec2391f591ac0a8a6f31fe2
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "55231840"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55931334"
 ---
 # <a name="work-with-elements-in-xaml-designer"></a>使用 XAML 設計工具中的項目
 

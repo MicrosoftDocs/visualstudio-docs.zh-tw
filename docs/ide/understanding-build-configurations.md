@@ -1,7 +1,6 @@
 ---
 title: 了解組建組態
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.technology: vs-ide-compile
 ms.topic: conceptual
 f1_keywords:
@@ -27,12 +26,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 84a2b89bb6479c88de61ec0a0071858522a34e82
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 15de24a35e410bec38e5b70813285440aaa05de4
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54927902"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55914967"
 ---
 # <a name="understand-build-configurations"></a>了解組建組態
 

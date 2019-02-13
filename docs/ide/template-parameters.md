@@ -1,7 +1,6 @@
 ---
 title: 專案和項目範本參數
 ms.date: 01/02/2018
-ms.prod: visual-studio-dev15
 ms.topic: reference
 helpviewer_keywords:
 - Visual Studio templates, parameters
@@ -11,12 +10,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cd80a7d29ae62cac691775e85cc432ac65a6eded
-ms.sourcegitcommit: 9866740aec05d1a3a5dc3b4b6d2ceaeecbd3fc29
+ms.openlocfilehash: 2626734653381701680e85cbb190c028d92048a4
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "55424443"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55907681"
 ---
 # <a name="template-parameters"></a>範本參數
 

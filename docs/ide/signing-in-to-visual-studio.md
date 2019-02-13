@@ -3,7 +3,6 @@ title: 登入 Visual Studio
 titleSuffix: ''
 ms.custom: seodec18
 ms.date: 12/10/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: b9531c25-e4cf-43ae-b331-a9f31a8cd171
 author: TerryGLee
@@ -11,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b2ebcfa51dc04408a5cea334d7d62f457dcc3ae7
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 682461df50999f14d3f8ca1f3acbee7c69559c8d
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54948306"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55908578"
 ---
 # <a name="sign-in-to-visual-studio"></a>登入 Visual Studio
 

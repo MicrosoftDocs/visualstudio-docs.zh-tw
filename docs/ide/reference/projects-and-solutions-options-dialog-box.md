@@ -1,7 +1,6 @@
 ---
 title: 專案和方案、選項對話方塊
 ms.date: 07/14/2017
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Projects.General
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d513cf50ba29b594924309450cdef67684ccfd6b
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 684c129ed104ed11b7cd6c88a7b603956acf64cf
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55039523"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55922208"
 ---
 # <a name="projects-and-solutions-page-options-dialog-box"></a>選項對話方塊、專案和方案頁面
 

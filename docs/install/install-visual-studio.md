@@ -4,7 +4,6 @@ titleSuffix: ''
 description: 了解如何逐步安裝 Visual Studio。
 ms.date: 05/07/2018
 ms.custom: seodec18
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - vs.about
@@ -19,12 +18,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e01f51bd94f14b5f78ab26d452be6a100e4fd50
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: fab4a79bfd7a72b6b81493db241cd1ade8068158
+ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54961870"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56156133"
 ---
 # <a name="install-visual-studio-2017"></a>安裝 Visual Studio 2017
 
@@ -55,10 +54,6 @@ ms.locfileid: "54961870"
  > [!div class="button"]
  > [下載 Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)
 <br/>
-
-|         |         |
-|---------|---------|
-|  ![影片的電影攝影機圖示](media/video-icon.png "觀看影片")  |    [觀看影片](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Download-the-Visual-Studio-Installer-GgrESHD6D_3311787171) \(英文\) 以了解如何下載 Visual Studio 啟動載入器檔案，並選取適合您的 Visual Studio 版本。 |
 
 ## <a name="step-3---install-the-visual-studio-installer"></a>步驟 3：安裝 Visual Studio 安裝程式
 
@@ -95,29 +90,17 @@ ms.locfileid: "54961870"
 > [!TIP]
 > 您可以在安裝後，隨時安裝一開始未安裝的工作負載或元件。 如果您已開啟 Visual Studio，請移至 [工具] > [Get Tools and Features] (取得工具和功能)，以開啟 Visual Studio 安裝程式。 或者，從 [開始] 功能表開啟 [Microsoft Visual Studio 安裝程式]。 您可以從該處選取想要安裝的工作負載或元件，然後按一下 [修改]。
 
-|         |         |
-|---------|---------|
-|  ![影片的電影攝影機圖示](media/video-icon.png "觀看影片")  |    [觀看影片](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Install-Workloads-in-Visual-Studio-2017-jHE19HD6D_1611787171) \(英文\) 以了解如何安裝 Visual Studio 安裝程式並安裝工作負載。 |
-
 ## <a name="step-5---select-individual-components-optional"></a>步驟 5：選取個別元件 (選擇性)
 
 如果您不想要使用 [工作負載] 功能來自訂 Visual Studio 安裝，則可以改為安裝個別的元件。 若要選取個別元件，請按一下 Visual Studio 安裝程式中的 [個別元件] 選項，選取所需的項目，然後遵循提示執行。
 
   ![Visual Studio 2017 - 安裝個別元件](media/vs2017-components.PNG "安裝 Visual Studio 的個別元件")
 
-  |         |         |
-  |---------|---------|
-  |  ![影片的電影攝影機圖示](media/video-icon.png "觀看影片")  |   [觀看影片](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Install-Components-in-Visual-Studio-2017-ZMfaVID6D_7411787171) \(英文\) 以了解如何使用 Visual Studio 安裝程式安裝個別元件。 |
-
 ## <a name="step-6---install-language-packs-optional"></a>步驟 6：安裝語言套件 (選擇性)
 
 根據預設，安裝程式會在第一次執行時，嘗試比對作業系統的語言。 若要以您選擇的語言安裝 Visual Studio 2017，請從「Visual Studio 安裝程式」按一下 [語言套件] 選項，然後依照提示進行操作。
 
   ![Visual Studio 2017 - 安裝語言套件](media/vs2017-languages.PNG "安裝 Visual Studio 語言套件")
-
-  |         |         |
-  |---------|---------|
-  |  ![影片的電影攝影機圖示](media/video-icon.png "觀看影片")  |   [觀看影片](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Install-Language-Packs-in-Visual-Studio-2017-ByT7yID6D_9011787171) \(英文\) 以了解如何使用 Visual Studio 安裝程式安裝語言套件。 |
 
 ### <a name="change-the-installer-language-from-the-command-line"></a>從命令列變更安裝程式語言
 

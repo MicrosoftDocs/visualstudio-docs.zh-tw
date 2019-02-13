@@ -1,7 +1,6 @@
 ---
 title: HOW TO：同時建置多個設定
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.technology: vs-ide-compile
 ms.topic: conceptual
 ms.assetid: ba830937-3317-4674-8cc2-c0cd565603c5
@@ -10,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e2edd27174964f1fbddf452a3cb468915d9fc93f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: ac8d27397c6e4748546e21baf84abd7578ce8762
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55010268"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55908903"
 ---
 # <a name="how-to-build-multiple-configurations-simultaneously"></a>HOW TO：同時建置多個設定
 

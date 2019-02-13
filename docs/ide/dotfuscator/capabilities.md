@@ -2,7 +2,6 @@
 title: Dotfuscator 的功能
 ms.date: 10/10/2017
 ms.devlang: dotnet
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 keywords: Dotfuscator, Dotfuscator CE, PreEmptive, PreEmptive Solutions, PreEmptive Protection, 保護, Community Edition, 混淆, .NET, 免費, Visual Studio 2017
 helpviewer_keywords:
@@ -17,12 +16,12 @@ ms.assetid: 0ee89c58-c900-48fc-a6a2-65ace00e8bab
 author: Joe-Sewell-PreEmptive
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b532bed6a20bd0fe79d4cdb820e9bcd5f15d1d8f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a9182593e16be2a8e09331a49427623e5c81a9a9
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54935623"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55925354"
 ---
 # <a name="capabilities-of-dotfuscator"></a>Dotfuscator 的功能
 

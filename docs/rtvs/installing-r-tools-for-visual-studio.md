@@ -2,19 +2,18 @@
 title: 安裝 R 工具
 description: 如何在 Visual Studio 2017 和 Visual Studio 2015 中，包括離線安裝。
 ms.date: 01/24/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 9f4c00056c93230d588216ff425dee56d42e0961
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 1cfdf0e301ff4c2fdf997824a037eedcc9886081
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54921084"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55909189"
 ---
 # <a name="how-to-install-r-tools-for-visual-studio"></a>如何安裝 Visual Studio R 工具
 
@@ -30,7 +29,7 @@ ms.locfileid: "54921084"
 
 ## <a name="supported-versions-of-visual-studio"></a>支援的 Visual Studio 版本
 
-在 Windows 上，Community (免費)、Professional 和 Enterprise 版本的 [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) 和 [Visual Studio 2015 Update 3 (或更高版本)](http://go.microsoft.com/fwlink/?LinkId=691129) (直接下載) 支援 Visual Studio R 工具 (RTVS)。
+在 Windows 上，Community (免費)、Professional 和 Enterprise 版本的 [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) 和 [Visual Studio 2015 Update 3 (或更高版本)](http://go.microsoft.com/fwlink/?LinkId=691129) (直接下載) 支援 Visual Studio R 工具 (RTVS)。
 
 Visual Studio for Mac 目前不支援 RTVS。
 

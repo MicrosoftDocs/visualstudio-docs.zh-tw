@@ -1,7 +1,6 @@
 ---
 title: HOW TO：設定多個啟始專案
 ms.date: 06/21/2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - startup projects, setting multiple startup projects
@@ -11,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fd0d0b5d88b20081b52e1371717e12aa7bfb63a9
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 988bc52cbf163c4b7e0f4c8d821a769f21df0413
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55031834"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55938198"
 ---
 # <a name="how-to-set-multiple-startup-projects"></a>HOW TO：設定多個啟始專案
 

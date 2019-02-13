@@ -2,7 +2,6 @@
 title: 修正程式錯誤並改善程式碼
 description: 本文描述 Visual Studio 如何透過一些基本方法來協助您尋找並修正您程式碼中的問題，包括建置錯誤、程式碼分析、偵錯工具和單元測試。
 ms.date: 05/02/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: c3a14d28-d811-4ff3-bd09-21dce14025ca
 author: gewarren
@@ -10,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 99b84e02c4ca63d80d6ef80637fcce042c869bcf
-ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
+ms.openlocfilehash: 57650bbe01a9d93b9847fd42075492c158d4db59
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55483766"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55928305"
 ---
 # <a name="make-code-work-in-visual-studio"></a>讓程式碼在 Visual Studio 中運作
 

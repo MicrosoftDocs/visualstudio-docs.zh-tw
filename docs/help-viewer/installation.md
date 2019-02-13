@@ -1,7 +1,6 @@
 ---
 title: 安裝離線說明
 ms.date: 11/01/2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - installing Help Viewer
@@ -11,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cb6f2fb01c73a588adc64813c191742de5bf5938
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 182b10919a92f27f8ad9563570ee6ae3ef330710
+ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55005705"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56155665"
 ---
 # <a name="microsoft-help-viewer-installation"></a>Microsoft Help Viewer 安裝
 
@@ -43,10 +42,6 @@ ms.locfileid: "55005705"
 1. 在隨即開啟的對話方塊中，選擇 [安裝] 按鈕。
 
    ![[安裝] 按鈕](media/installation/install.png)
-
-| | |
-|---------|---------|
-| ![影片的電影攝影機圖示](../install/media/video-icon.png) | [觀看影片](https://mva.microsoft.com/en-us/training-courses/getting-started-with-visual-studio-2017-17798?l=ZMfaVID6D_7411787171) (英文) 以了解如何使用 Visual Studio 安裝程式安裝 Microsoft Help Viewer。 |
 
 ## <a name="see-also"></a>另請參閱
 

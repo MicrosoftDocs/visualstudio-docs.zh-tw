@@ -1,7 +1,6 @@
 ---
 title: 搜尋主題 (說明檢視器)
 ms.date: 11/02/2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: 683f1b0c-1551-4bba-91fe-3855f03fdd69
 author: gewarren
@@ -9,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a3a101cb18343ca80096b6adc43f54a9daae1a45
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 9f68bd5803d418f674007fff34aa0fa016c1804a
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54940813"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55918581"
 ---
 # <a name="how-to-search-for-topics"></a>HOW TO：搜尋主題
 
@@ -45,7 +44,7 @@ ms.locfileid: "54940813"
 
 下表包含一些基本規則和指導方針，以便開發 [說明] 中的搜尋查詢。
 
-|語法|說明|
+|語法|描述|
 |------------|-----------------|
 |區分大小寫|搜尋不區分大小寫。 使用大寫或小寫字元開發您的搜尋準則。 例如，"OLE" 和 "ole" 傳回相同的結果。|
 |字元組合|您無法只搜尋個別的字母 (a-z) 或數字 (0-9)。 如果您嘗試搜尋特定的保留字，例如 "and"、"from" 和 "with"，則會忽略它們。 如需詳細資訊，請參閱本主題稍後的[搜尋中忽略的字詞](#stopwords)。|

@@ -1,7 +1,6 @@
 ---
 title: HOW TO：指定應用程式圖示 (Visual Basic、C#)
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - icons [Visual Studio], application
@@ -12,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a1e2502d2844b32f6f5e1c22c7fcddf7d6287c8d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f2903821c0e0843de43f68d67cc64c344ab95e02
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55039341"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55924565"
 ---
 # <a name="how-to-specify-an-application-icon-visual-basic-c"></a>HOW TO：指定應用程式圖示 (Visual Basic、C#)
 
