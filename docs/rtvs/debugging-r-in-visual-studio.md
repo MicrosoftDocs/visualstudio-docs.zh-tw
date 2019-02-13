@@ -2,19 +2,18 @@
 title: R 程式碼偵錯
 description: Visual Studio 提供 R 的完整偵錯體驗，包括中斷點、附加、呼叫堆疊和檢查變數。
 ms.date: 01/24/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: da72f68d72a435ebf7fe90a7a7d5b6141e409f07
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 98dcbaaeb6f330cda3a14cf8c32afe403b50aa85
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54918364"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55933947"
 ---
 # <a name="debug-r-in-visual-studio"></a>在 Visual Studio 中偵錯 R
 
@@ -54,7 +53,7 @@ add <- function(x, y) {
 
 環境瀏覽器支援許多特殊命令︰
 
-| 命令 | 說明 |
+| 命令 | 描述 |
 | --- | --- |
 | n | 下一步︰執行程式碼檔案中的下一個陳述式 (與不進入函式相同)。 |
 | 秒 | 逐步執行︰執行程式碼檔案中的下一個陳述式，如果下一個陳述式是函式呼叫，則逐步執行函式範圍。 |

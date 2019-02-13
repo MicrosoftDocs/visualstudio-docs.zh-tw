@@ -1,7 +1,6 @@
 ---
 title: 即時運算視窗
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 dev_langs:
 - VB
@@ -17,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b18e1837fdc673500fae96555dab7fb0195ec42e
-ms.sourcegitcommit: 9866740aec05d1a3a5dc3b4b6d2ceaeecbd3fc29
+ms.openlocfilehash: 3947c2f16be4e5c0d8054e48a46981aa22475423
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "55424236"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55931945"
 ---
 # <a name="immediate-window"></a>即時運算視窗
 

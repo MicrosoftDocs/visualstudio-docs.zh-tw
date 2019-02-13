@@ -1,7 +1,6 @@
 ---
 title: HOW TO：建立類型之間的繼承 (類別設計工具)
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - vs.classdesigner.inheritanceline
@@ -14,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0efcabfb5f7b76855a80ae69f50ec9c5282ccb2c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 8060f17277a5e80a139ee8d6406fb40d0a84ec71
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54939006"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55915871"
 ---
 # <a name="how-to-create-inheritance-between-types-in-class-designer"></a>HOW TO：在類別設計工具中建立類型之間的繼承
 
