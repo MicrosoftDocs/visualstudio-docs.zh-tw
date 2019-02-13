@@ -100,4 +100,4 @@ ms.locfileid: "54802808"
   
 ## <a name="see-also"></a>請參閱  
  [使用 XAML 設計工具建立 UI](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)   
- [NIB：[新增值轉換器] 對話方塊](http://msdn.microsoft.com/c5f3d110-a541-4b55-8bca-928f77778af8)
+ [NIB： 加入值轉換器對話方塊](http://msdn.microsoft.com/c5f3d110-a541-4b55-8bca-928f77778af8)

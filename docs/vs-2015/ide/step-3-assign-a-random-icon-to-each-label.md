@@ -16,7 +16,7 @@ ms.contentlocale: zh-TW
 ms.lasthandoff: 01/23/2019
 ms.locfileid: "54799663"
 ---
-# <a name="step-3-assign-a-random-icon-to-each-label"></a>步驟 3：將隨機圖示指派給每一個標籤
+# <a name="step-3-assign-a-random-icon-to-each-label"></a>步驟 3：將隨機圖示指派給每個標籤
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 如果讓圖示在每個遊戲的相同儲存格中顯示，這樣就不夠有挑戰性。 若要避免此情形，請使用 `AssignIconsToSquares()` 方法在表單上將圖示隨機指派給 Label 控制項。  
@@ -28,7 +28,7 @@ ms.locfileid: "54799663"
      [!code-csharp[VbExpressTutorial4Step2_3_4#2](../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial4step2_3_4/cs/form1.cs#2)]
      [!code-vb[VbExpressTutorial4Step2_3_4#2](../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial4step2_3_4/vb/form1.vb#2)]  
   
-2.  如上一個步驟所示，加入 `AssignIconsToSquares()` 方法。 您可以將它放在您於[步驟 2：新增隨機物件和圖示清單](../ide/step-2-add-a-random-object-and-a-list-of-icons.md)  
+2.  如上一個步驟所示，加入 `AssignIconsToSquares()` 方法。 您可以將它放在您於[步驟 2：新增隨機物件和圖示清單](../ide/step-2-add-a-random-object-and-a-list-of-icons.md)中新增的程式碼正下方。  
   
      如先前所述，您的 `AssignIconsToSquares()` 方法中有一些新項目：在 Visual C# 中為 `foreach`，而在 Visual Basic 中為 `For Each`。 您隨時要多次執行相同的動作時，可以使用 `For Each` 迴圈。 在這種情況下，您要對 TableLayoutPanel 上的每一個標籤執行相同的陳述式，如下列程式碼所說明。 第一行建立名稱為 `control` 的變數，會在控制項上執行迴圈中的陳述式時，儲存該控制項 (一次儲存一個控制項)。  
   
@@ -38,7 +38,7 @@ ms.locfileid: "54799663"
     > [!NOTE]
     >  因為 "iconLabel" 和 "control" 這兩個名稱都屬描述性，所以會加以使用。 您可以使用任何名稱來取代這些名稱，程式碼的作用完全相同 (只要您變更迴圈內每一個陳述式中的名稱即可)。  
   
-     `AssignIconsToSquares()` 方法會反覆通過 TableLayoutPanel 中的每一個 Label 控制項，並為每一個控制項執行相同的陳述式。 這些陳述式會從您在[步驟 2：新增隨機物件和圖示清單](../ide/step-2-add-a-random-object-and-a-list-of-icons.md) (這就是您為何將兩個圖示都包含在清單中的緣故，所以會有一對圖示指派給隨機 Label 控制項)。  
+     `AssignIconsToSquares()` 方法會反覆通過 TableLayoutPanel 中的每一個 Label 控制項，並為每一個控制項執行相同的陳述式。 這些陳述式會從您在[步驟 2：新增隨機物件和圖示清單](../ide/step-2-add-a-random-object-and-a-list-of-icons.md)中新增的清單提取一個隨機圖示。 (這就是您為何將兩個圖示都包含在清單中的緣故，所以會有一對圖示指派給隨機 Label 控制項)。  
   
      仔細留意在 `foreach` 或 `For Each` 迴圈內部執行的程式碼。 這個程式碼在此處重現。  
   
@@ -80,8 +80,8 @@ ms.locfileid: "54799663"
   
 7.  在功能表列上，選擇 [全部儲存] 按鈕以儲存您的程式，然後執行它。 圖示似乎都已消失，只有一個藍色背景會出現。 不過，會隨機指派圖示，而且都還在那裡。 因為圖示與背景的色彩相同，所以玩家會看不見它。 畢竟，如果玩家可以立即查看所有圖示，這就不是一個非常具有挑戰性的遊戲了！  
   
-### <a name="to-continue-or-review"></a>若要繼續或檢視  
+### <a name="to-continue-or-review"></a>繼續或檢視  
   
--   若要前往下一個教學課程步驟，請參閱[步驟 4：將 Click 事件處理常式新增至每個標籤](../ide/step-4-add-a-click-event-handler-to-each-label.md)  
+-   若要移至下一個教學課程步驟，請參閱[步驟 4：將 Click 事件處理常式新增至每個標籤](../ide/step-4-add-a-click-event-handler-to-each-label.md)。  
   
--   若要回到上一個教學課程步驟，請參閱[步驟 2：新增隨機物件和圖示清單](../ide/step-2-add-a-random-object-and-a-list-of-icons.md)
+-   若要返回上一個教學課程步驟，請參閱[步驟 2：新增隨機物件和圖示清單](../ide/step-2-add-a-random-object-and-a-list-of-icons.md)。

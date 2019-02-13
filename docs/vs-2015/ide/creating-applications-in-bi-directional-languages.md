@@ -43,7 +43,7 @@ ms.locfileid: "54763449"
   
 -   **物件名稱**：您可以使用雙向語言，將名稱指派給方案、專案、檔案、資料夾等等。 在程式碼中，您可以針對變數、類別、物件、屬性、中繼資料以及其他項目的名稱使用雙向語言。  
   
--   **檔案編碼方式**：您可以使用特定語言或 Unicode 編碼方式，儲存及開啟檔案。 如需詳細資訊，請參閱[＜How to：以編碼來儲存及開啟檔案](../ide/how-to-save-and-open-files-with-encoding.md)。  
+-   **檔案編碼方式**：您可以使用特定語言或 Unicode 編碼方式，儲存及開啟檔案。 如需詳細資訊，請參閱[如何：以編碼方式儲存及開啟檔案](../ide/how-to-save-and-open-files-with-encoding.md)。  
   
 ## <a name="features-with-limited-or-no-support"></a>有限支援或不支援的功能  
  Visual Studio 並非全數支援雙向語言應用程式通用的其他功能；在某些情況下，甚至完全不支援。 它們包括：  

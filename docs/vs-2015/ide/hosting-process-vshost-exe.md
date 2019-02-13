@@ -1,14 +1,9 @@
 ---
 title: 裝載處理序 (vshost.exe) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - vshost.exe
 - hosting process
@@ -16,13 +11,13 @@ ms.assetid: c6b9e2be-f18d-4d75-ac52-56d55784734b
 caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 4d45da37dae805399f9af8591bcd017ed61a975c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 3b5ce753b0e3e7523f7c88eac3ad20afc7b0c953
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49216692"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54788130"
 ---
 # <a name="hosting-process-vshostexe"></a>裝載處理序 (vshost.exe)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,11 +36,8 @@ Visual Studio 的裝載處理序功能可改善偵錯效能、啟用部分信任
 ## <a name="design-time-expression-evaluation"></a>設計階段運算式評估  
  設計階段運算式評估可讓您透過 [即時運算] 視窗來測試程式碼，而不需執行應用程式。 在設計階段運算式評估期間，裝載處理序會執行這個程式碼。 如需詳細資訊，請參閱[即時運算視窗](../ide/reference/immediate-window.md)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [偵錯和裝載處理序](../debugger/debugging-and-the-hosting-process.md)   
  [如何：停用裝載處理序](../ide/how-to-disable-the-hosting-process.md)   
  [即時運算視窗](../ide/reference/immediate-window.md)   
  [應用程式定義域](http://msdn.microsoft.com/library/113a8bbf-6875-4a72-a49d-ca2d92e19cc8)
-
-
-

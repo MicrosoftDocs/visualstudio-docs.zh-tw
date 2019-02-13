@@ -1,5 +1,5 @@
 ---
-title: HOW TO：比較效能資料檔案 | Microsoft Docs
+title: 如何：比較效能資料檔案 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -21,7 +21,7 @@ ms.contentlocale: zh-TW
 ms.lasthandoff: 01/23/2019
 ms.locfileid: "54799560"
 ---
-# <a name="how-to-compare-performance-data-files"></a>HOW TO：比較效能資料檔案
+# <a name="how-to-compare-performance-data-files"></a>如何：比較效能資料檔案
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 您可以透過建立比較 (「差異」) 報告或檢視，來比較兩個不同的程式碼剖析工具資料檔案 (.vsp 或 .vsps) 的結果。 比較會顯示相較於另一個程式碼剖析工作階段所發生的差異、效能衰退和改進。  

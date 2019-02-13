@@ -1,27 +1,22 @@
 ---
-title: 如何：為 3D 地形建立模型 |Microsoft 文件
-ms.custom: ''
+title: HOW TO：3d 地形建立模型 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: f779b1fd-82a9-4a11-8ab7-c1c9caabc883
 caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: fae94fe5e7474580f8867f531fc41d0ce6781cf8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 7935176505e535c35b1c864e56cd314a75e7897c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49940511"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54764112"
 ---
-# <a name="how-to-model-3-d-terrain"></a>如何：為 3D 地形建立模型
+# <a name="how-to-model-3-d-terrain"></a>HOW TO：模型的 3d 地形模型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 本文件將示範如何使用模型編輯器來建立 3D 地形模型。  
@@ -75,8 +70,5 @@ ms.locfileid: "49940511"
   
    您可以使用此地形模型來展現漸層著色器的效果，如[如何：建立以幾何為基礎的漸層著色器](../designers/how-to-create-a-geometry-based-gradient-shader.md)中所述。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [模型編輯器](../designers/model-editor.md)
-
-
-
