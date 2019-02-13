@@ -18,15 +18,14 @@ ms.assetid: 553f7d0c-2faa-4c17-b226-dd02855bf1dc
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: b78bd412343888a5f90fdc84f1c4fe31a3babaa7
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: d568434e8820ef11e0f2b75ba2409d7b643cc011
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54996762"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55955904"
 ---
 # <a name="turn-off-constraints-while-filling-a-dataset"></a>填入資料集時關閉條件約束
 
@@ -46,7 +45,7 @@ ms.locfileid: "54996762"
 
 ## <a name="to-suspend-update-constraints-using-the-dataset-designer"></a>若要暫停使用 Dataset 設計工具的更新條件約束
 
-1.  在 **DataSet 設計工具**中開啟資料集。 如需詳細資訊，請參閱[逐步解說：在 Dataset 設計工具中建立資料集](walkthrough-creating-a-dataset-with-the-dataset-designer.md)。
+1.  在 **DataSet 設計工具**中開啟資料集。 如需詳細資訊，請參閱 <<c0> [ 逐步解說： 以 Dataset 設計工具建立資料集](walkthrough-creating-a-dataset-with-the-dataset-designer.md)。
 
 2.  在 [屬性]  視窗中，將 <xref:System.Data.DataSet.EnforceConstraints%2A> 屬性設定為 `false`。
 

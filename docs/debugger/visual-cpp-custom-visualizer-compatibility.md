@@ -1,6 +1,7 @@
 ---
 title: Visual C/c + + 自訂視覺化檢視相容性
 ms.date: 01/28/2019
+ms.prod: visual-studio-dev16
 ms.topic: reference
 dev_langs:
 - C++
@@ -16,12 +17,12 @@ manager: douge
 ms.workload:
 - multiple
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: 43ac7f0f5506725103d185e575514e821674eb27
-ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
+ms.openlocfilehash: a51f2d87b432bf6f4a3925b55622273b56cf5c32
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "55232185"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55920960"
 ---
 # <a name="visual-cc-custom-visualizer-compatibility"></a>Visual C/c + + 自訂視覺化檢視相容性
 
