@@ -1,14 +1,9 @@
 ---
 title: 如何：使用參考管理員新增或移除參考 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - VS.ReferenceManager
 helpviewer_keywords:
@@ -27,13 +22,13 @@ ms.assetid: 1aabb520-99b0-46c6-9368-21b4d84793eb
 caps.latest.revision: 48
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 82e09b1d27c8ac7905fd0e6511381b97fcae2cd7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 4a73beba7ee41c52c60a4aaa3864a7ef112784dd
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49917543"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54756982"
 ---
 # <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>如何：使用參考管理員新增或移除參考
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -220,9 +215,6 @@ ms.locfileid: "49917543"
 ## <a name="search"></a>搜尋  
  [參考管理員] 對話方塊中的搜尋列會在成為焦點的索引標籤上運作。 好比說，如果使用者在 [方案] 索引標籤成為焦點時於搜尋列中鍵入 "System"，除非方案擁有包含 "System" 的專案名稱，否則搜尋不會傳回任何結果。  
   
-## <a name="see-also"></a>另請參閱  
- [NIB 如何：使用加入參考對話方塊加入或移除參考](http://msdn.microsoft.com/en-us/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)   
+## <a name="see-also"></a>請參閱  
+ [NIB 如何：使用加入參考對話方塊加入或移除參考](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)   
  [管理專案中的參考](../ide/managing-references-in-a-project.md)
-
-
-

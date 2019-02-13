@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 7cc5ddf2-2f7c-4f83-b7ca-58e92e9bfdd2
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dc16c6e6186d53bd08bd0634e07a4d1172859280
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
-ms.translationtype: HT
+ms.openlocfilehash: d00ab3ca18997fe61fc4b36e1f9f9a098b0aa727
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54227248"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54952115"
 ---
 # <a name="historical-debugging-c-visual-basic-c"></a>歷程偵錯 (C#，Visual Basic、 c + +)
 

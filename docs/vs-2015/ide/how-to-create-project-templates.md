@@ -1,14 +1,9 @@
 ---
-title: 如何：建立專案範本 | Microsoft Docs
-ms.custom: ''
+title: HOW TO：建立專案範本 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - VS.ExportTemplateWizard
 helpviewer_keywords:
@@ -21,13 +16,13 @@ ms.assetid: a1a6999d-a34c-48a8-b1cf-027eb5c76398
 caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: fb68a9902fc3adf9f2643b52e069cf182d9ca75a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 9a7a48039699c5bb35e07a21e5c5c3be8ae8585f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49225504"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54785909"
 ---
 # <a name="how-to-create-project-templates"></a>如何：建立專案範本
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +38,7 @@ ms.locfileid: "49225504"
   
 2.  編輯專案，直到它準備好匯出成範本。  
   
-3.  適當地編輯程式碼檔案，指出要執行參數取代的地方。 如需參數取代的詳細資訊，請參閱[如何：替代範本中的參數](../ide/how-to-substitute-parameters-in-a-template.md)。  
+3.  適當地編輯程式碼檔案，指出要執行參數取代的地方。 如需有關參數取代的詳細資訊，請參閱[How to:替代範本中的參數](../ide/how-to-substitute-parameters-in-a-template.md)。  
   
 4.  按一下 [檔案] 功能表上的 [匯出範本]。 [匯出範本精靈] 隨即開啟。  
   
@@ -61,9 +56,6 @@ ms.locfileid: "49225504"
   
      如果您已安裝 [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)]，可以使用 [VSIX 專案] 範本，將完成的範本包裝成 .vsix 檔以便部署。 如需詳細資訊，請參閱[開始使用 VSIX 專案範本](../extensibility/getting-started-with-the-vsix-project-template.md)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [建立專案和項目範本](../ide/creating-project-and-item-templates.md)   
  [如何：建立項目範本](../ide/how-to-create-item-templates.md)
-
-
-

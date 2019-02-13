@@ -1,14 +1,9 @@
 ---
 title: 如何︰設定權限 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - profiling, setting permissions
 - security [Visual Studio ALM], setting permissions
@@ -19,13 +14,13 @@ ms.assetid: 69f27896-8f46-4ef3-bfb7-726d95304f3a
 caps.latest.revision: 28
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 2bfbcb15d9dae16dd7d65ac00ad7c5b17600fa9d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 61276307516052673f07a6798673b9998cb609fb
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51792879"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54833832"
 ---
 # <a name="how-to-set-permissions"></a>如何：設定權限
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -131,10 +126,7 @@ ms.locfileid: "51792879"
   
    指定的使用者登入之後，不需要有系統管理員權限就可以使用程式碼剖析工具。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [設定效能工作階段](../profiling/configuring-performance-sessions.md)   
  [VSPerfCmd](../profiling/vsperfcmd.md)   
  [分析和 Windows Vista 安全性](../profiling/profiling-and-windows-vista-security.md)
-
-
-

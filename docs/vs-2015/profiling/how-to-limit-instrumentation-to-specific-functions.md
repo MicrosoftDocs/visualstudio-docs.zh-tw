@@ -1,27 +1,22 @@
 ---
 title: 如何：限制檢測特定函式 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - performance tools, limiting instrumentation to functions
 ms.assetid: bd98d6bf-2560-4eba-b063-2facb09f87c4
 caps.latest.revision: 24
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: c7fa666c42d31035bd42841a2bbb41221bc16b5e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 0c20918aab20b41a108242d91b20ec010be19bd9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51782566"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54795772"
 ---
 # <a name="how-to-limit-instrumentation-to-specific-functions"></a>如何：限制檢測特定函式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -73,10 +68,7 @@ ms.locfileid: "51782566"
    > [!NOTE]
    >  若要列出二進位檔中的函式，請在程式碼剖析工具安裝目錄 (通常是 [!INCLUDE[vsprvsts](../includes/vsprvsts-md.md)] 安裝目錄底下的 \Team Tools\Performance Tools 目錄) 中開啟命令提示字元視窗，然後輸入 **vsinstr /DumpFuncs**  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [控制資料收集](../profiling/controlling-data-collection.md)   
  [如何：限制檢測特定 DLL](../profiling/how-to-limit-instrumentation-to-specific-dlls.md)   
  [如何：指定其他的檢測選項](../profiling/how-to-specify-additional-instrumentation-options.md)
-
-
-

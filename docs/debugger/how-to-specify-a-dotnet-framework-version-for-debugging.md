@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 7a4893ba-4620-4774-893f-378d4ca28893
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 855dedd3073614c913abcc619babdaad03d61797
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 17e63c220dcf7677dbc62d9607e21bfbb11b42fb
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53893823"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54973976"
 ---
 # <a name="how-to-specify-a-net-framework-version-for-debugging-c-visual-basic-f"></a>HOW TO：指定偵錯.NET Framework 版本 (C#，Visual Basic 中， F#)
 
@@ -46,7 +46,7 @@ The debugger has made an incorrect assumption about the [!INCLUDE[dnprdnshort](.
   
 3. 在 [登錄編輯程式] 中開啟 HKEY_LOCAL_MACHINE 資料夾。  
   
-4. 巡覽至 HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\10.0\AD7Metrics\Engine\\{449EC4CC-30D2-4032-9256-EE18EB41B62B}  
+4. 巡覽至：HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\10.0\AD7Metrics\Engine\\{449EC4CC-30D2-4032-9256-EE18EB41B62B}  
   
     如果此機碼不存在，請以滑鼠右鍵按一下 HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\10.0\AD7Metrics\Engine，然後按一下 [新增機碼]。 新的機碼命名`{449EC4CC-30D2-4032-9256-EE18EB41B62B}`。  
   
@@ -56,7 +56,7 @@ The debugger has made an incorrect assumption about the [!INCLUDE[dnprdnshort](.
   
 6. 按兩下 [CLRVersionForDebugging]。  
   
-7. 在 [編輯字串] 方塊的 [值] 方塊中鍵入 .NET Framework 版本號碼。 例如：V1.1.4322  
+7. 在 [編輯字串] 方塊的 [值] 方塊中鍵入 .NET Framework 版本號碼。 例如：V1.1.4322。  
   
 8. 按一下 [確定 **Deploying Office Solutions**]。  
   

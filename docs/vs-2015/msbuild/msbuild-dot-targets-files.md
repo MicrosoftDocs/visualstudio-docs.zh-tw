@@ -1,14 +1,9 @@
 ---
 title: MSBuild .Targets 檔案 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -21,13 +16,13 @@ ms.assetid: f6d98eb4-d2fa-49b7-8e3c-bae1ca3cf596
 caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: bec05a2947bad76b0be4e7cf339bbef98a27644e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 4292509e9177c64a0018e0f1c7e95eebf442ffcf
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49274231"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54772282"
 ---
 # <a name="msbuild-targets-files"></a>MSBuild .Targets 檔案
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,9 +45,7 @@ ms.locfileid: "49274231"
 |Microsoft.CSharp.targets|針對 Visual C# 專案定義標準建置程序的步驟。<br /><br /> 已透過 Visual C# 專案檔 (.csproj) 匯入，其中包含下列陳述式︰`<Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />`|  
 |Microsoft.VisualBasic.targets|針對 Visual Basic 專案定義標準建置程序的步驟。<br /><br /> 已透過 Visual Basic 專案檔 (.vbproj) 匯入，其中包含下列陳述式︰`<Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />`|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Import 項目 (MSBuild)](../msbuild/import-element-msbuild.md)   
  [MSBuild 參考](../msbuild/msbuild-reference.md)  
  [MSBuild](msbuild.md)
-
-

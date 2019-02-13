@@ -1,33 +1,28 @@
 ---
 title: 自動程式化 UI 測試的範例 Excel 增益集 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 helpviewer_keywords:
 - coded UI tests, Excel Add-in sample
 ms.assetid: 2cd52d1a-4c35-43ca-8a84-9c79dabd907f
 caps.latest.revision: 18
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 564669d5af3ea526ad8822d3aea7310095151c6a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: ded54760efe611b337c736e0474042b70ff8bf2e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49290676"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54791938"
 ---
 # <a name="sample-excel-add-in-for-coded-ui-testing"></a>自動程式化 UI 測試的範例 Excel 增益集
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 [!INCLUDE[ofprexcel](../includes/ofprexcel-md.md)] 的此範例增益集是特別設計來支援 Excel 工作表的自動程式碼 UI 測試，在 Visual Studio 企業版中記錄及執行 增益集是使用 Visual Studio Tools for Office 所建立的。  
   
- 如需如何建立 Excel 增益集的詳細資訊，請參閱[逐步解說：建立 Excel 的第一個 VSTO 增益集](http://msdn.microsoft.com/library/a855e2be-3ecf-4112-a7f5-ec0f7fad3b5f)，或在 MSDN 中搜尋「Excel 增益集」。  
+ 如需如何建立 Excel 增益集的詳細資訊，請參閱[逐步解說：建立您的第一個 VSTO 增益集適用於 Excel](http://msdn.microsoft.com/library/a855e2be-3ecf-4112-a7f5-ec0f7fad3b5f)或搜尋 MSDN 中的 「 Excel 增益集 」。  
   
  雖然「Excel 增益集」不是適用於 Excel 的自動程式化 UI 測試延伸模組這份文件的主要主題，但是一些註解可能很有用。  
   
@@ -50,10 +45,7 @@ ms.locfileid: "49290676"
 ## <a name="exceluicommunicator-class"></a>ExcelUICommunicator 類別  
  這個類別會實作 `IExcelUITestCommunication` 介面，並且從 Excel 物件模型取得要求 UI 資訊。 如需詳細資訊，請參閱[範例 Excel Communicator 介面](../test/sample-excel-communicator-interface.md)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [擴充自動程式化 UI 測試和動作記錄以支援 Microsoft Excel](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md)   
  [逐步解說：建立 Excel 的第一個 VSTO 增益集](http://msdn.microsoft.com/library/a855e2be-3ecf-4112-a7f5-ec0f7fad3b5f)   
  [Office 和 SharePoint 開發](http://msdn.microsoft.com/library/2ddec047-263a-4901-a54c-a15fc8472329)
-
-
-

@@ -1,14 +1,9 @@
 ---
-title: 逐步解說：使用組態檔定義資料來源 | Microsoft Docs
-ms.custom: ''
+title: 逐步解說：使用組態檔定義資料來源 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 helpviewer_keywords:
 - configuration files [Visual Studio ALM], defining data sources
 - unit tests, walkthrough
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 95fa5214-b12e-4e1f-84e5-cc4c2d86b0d7
 caps.latest.revision: 34
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: f3dca876e777e8f40773ca42b05fece1c22fe33e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: a6adfc19d16e13449dd673ca7722781f16b4b6cb
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49843037"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54835117"
 ---
 # <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>逐步解說：使用組態檔定義資料來源
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -224,7 +219,7 @@ ms.locfileid: "49843037"
   
 1.  在測試專案中加入單元測試。  
   
-     如需詳細資訊，請參閱[針對現有的程式碼建立和執行單元測試](http://msdn.microsoft.com/en-us/e8370b93-085b-41c9-8dec-655bd886f173)。  
+     如需詳細資訊，請參閱[針對現有的程式碼建立和執行單元測試](http://msdn.microsoft.com/e8370b93-085b-41c9-8dec-655bd886f173)。  
   
 2.  以下列程式碼取代自動產生的單元測試內容：  
   
@@ -273,11 +268,8 @@ ms.locfileid: "49843037"
 > [!IMPORTANT]
 >  部署項目 (例如資料來源)，使其能供部署目錄中的測試存取。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [對程式碼進行單元測試](../test/unit-test-your-code.md)   
- [針對現有的程式碼建立和執行單元測試](http://msdn.microsoft.com/en-us/e8370b93-085b-41c9-8dec-655bd886f173)   
+ [針對現有的程式碼建立和執行單元測試](http://msdn.microsoft.com/e8370b93-085b-41c9-8dec-655bd886f173)   
  [測試應用程式](http://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)   
  [如何：建立資料驅動型單元測試](../test/how-to-create-a-data-driven-unit-test.md)
-
-
-

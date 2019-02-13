@@ -1,14 +1,9 @@
 ---
 title: 專案設計工具、偵錯頁面 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - vb.ProjectPropertiesDebug
 helpviewer_keywords:
@@ -18,13 +13,13 @@ ms.assetid: ef11eae9-df96-4e20-aabd-2678ba317140
 caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: f16abf5fbf21678187a22efc9a368df7785057ab
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 22a1accc7421e169ee345fda0446a8474d2eda00
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49271358"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54776140"
 ---
 # <a name="debug-page-project-designer"></a>專案設計工具、偵錯頁
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -41,10 +36,10 @@ ms.locfileid: "49271358"
  下列選項可讓您選取要顯示或修改的設定和平台。  
   
  **組態**  
- 指定要顯示或修改的組態設定。 設定可以是 [偵錯] (預設)、[發行] 或 [所有設定]。 如需詳細資訊，請參閱[偵錯和發行專案組態](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e)。  
+ 指定要顯示或修改的組態設定。 設定可以是 [偵錯] (預設)、[發行] 或 [所有設定]。 如需詳細資訊，請參閱[偵錯和發行專案組態](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e)。  
   
  **平台**  
- 指定要顯示或修改的平台設定。 選項可以包括 [任何 CPU] (預設)、[x64]和 [x86]。 如需詳細資訊，請參閱[偵錯和發行專案組態](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e)。  
+ 指定要顯示或修改的平台設定。 選項可以包括 [任何 CPU] (預設)、[x64]和 [x86]。 如需詳細資訊，請參閱[偵錯和發行專案組態](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e)。  
   
 ## <a name="start-action"></a>起始動作  
  **起始動作**指出在對應用程式進行偵錯時要啟動的項目：專案、自訂程式、URL 或不啟動任何項目。 根據預設，這個選項會設為 [起始專案]。 [偵錯] 頁面上的 [起始動作] 設定會決定 `StartAction` 屬性的值。  
@@ -80,13 +75,10 @@ ms.locfileid: "49271358"
   
  若要在安全性區域中進行偵錯，您必須在 [進階安全性設定] 對話方塊中，啟用這個選項和[以選取的使用權限集合對此應用程式進行偵錯](../../ide/reference/advanced-security-settings-dialog-box.md)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Visual Studio 偵錯](../../debugger/debugging-in-visual-studio.md)   
  [C# 偵錯設定的專案設定](../../debugger/project-settings-for-csharp-debug-configurations.md)   
  [Visual Basic 偵錯設定的專案設定](../../debugger/project-settings-for-a-visual-basic-debug-configuration.md)   
- [管理偵錯屬性](http://msdn.microsoft.com/en-us/92474d16-e7fe-4fac-9287-6bd6b3a7eb68)   
+ [管理偵錯屬性](http://msdn.microsoft.com/92474d16-e7fe-4fac-9287-6bd6b3a7eb68)   
  [如何：以限制權限偵錯 ClickOnce 應用程式](../../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)   
  [如何：建立和編輯組態](../../ide/how-to-create-and-edit-configurations.md)
-
-
-

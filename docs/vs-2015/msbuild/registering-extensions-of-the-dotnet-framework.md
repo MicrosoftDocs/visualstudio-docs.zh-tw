@@ -1,14 +1,9 @@
 ---
 title: 登錄 .NET Framework 的擴充功能 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords:
 - Add References dialog box, registering extensions of the .NET Framework
 - MSBuild, registering extensions of the .NET Framework
@@ -17,13 +12,13 @@ ms.assetid: deee6f53-ea87-4b88-a120-bea589822e03
 caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 1a1a1966bbe68bccd12261ca6a05002485cefe1d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 18df04fc706ea716f7c22baa6508930f0f94a6f6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49196920"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54801462"
 ---
 # <a name="registering-extensions-of-the-net-framework"></a>註冊 .NET Framework 的擴充功能
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,8 +35,5 @@ ms.locfileid: "49196920"
   
  若要登錄 64 位元電腦上的 32 位元組件，請使用 Wow6432 節點，例如︰HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\\.NETFramework\v4.0.21006\AssemblyFoldersEx\TreyResearch\\。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Visual Studio 整合](../msbuild/visual-studio-integration-msbuild.md)
-
-
-

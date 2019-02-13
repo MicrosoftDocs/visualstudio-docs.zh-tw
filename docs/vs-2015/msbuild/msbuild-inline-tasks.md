@@ -1,27 +1,22 @@
 ---
 title: MSBuild 內嵌工作 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 helpviewer_keywords:
 - MSBuild, tasks
 ms.assetid: e72e6506-4a11-4edf-ae8d-cfb5a3b9d8a0
 caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 1f210aa8e33859f41046edc8e524cbfbeaf5417b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 03a0dcde4b96afa028a69f5def5cdb52632e5e85
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49898612"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54792166"
 ---
 # <a name="msbuild-inline-tasks"></a>MSBuild 內嵌工作
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -197,9 +192,6 @@ File.WriteAllText(Path, content);
 </Project>  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [工作](../msbuild/msbuild-tasks.md)   
  [逐步解說：建立內嵌工作](../msbuild/walkthrough-creating-an-inline-task.md)
-
-
-
