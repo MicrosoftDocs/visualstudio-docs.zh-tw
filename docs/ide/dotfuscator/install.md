@@ -2,7 +2,6 @@
 title: 安裝 Dotfuscator Community Edition (CE)
 ms.date: 06/22/2017
 ms.devlang: dotnet
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 keywords: Dotfuscator, Dotfuscator CE, PreEmptive, PreEmptive Solutions, PreEmptive Protection, 保護, community edition, obfuscation, .NET, 免費, Visual Studio 2017, 安裝
 helpviewer_keywords:
@@ -22,12 +21,12 @@ ms.assetid: f2146651-e24a-4e24-ade8-8ddee8ff4e43
 author: Joe-Sewell-PreEmptive
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1ce5d7204eaa93fe63fc9ffa49e7ef422d028e76
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: d62b531bac02cedc5b1de5a7c69443cc97571281
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54988164"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55942047"
 ---
 # <a name="install-dotfuscator-community-edition-ce"></a>安裝 Dotfuscator Community Edition (CE)
 

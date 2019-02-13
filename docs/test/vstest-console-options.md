@@ -1,7 +1,6 @@
 ---
 title: VSTest.Console.exe 命令列選項
 ms.date: 07/12/2018
-ms.prod: visual-studio-dev15
 ms.topic: reference
 helpviewer_keywords:
 - vstest.console.exe
@@ -11,12 +10,12 @@ author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4bd901ad2a57570a11f7a4a9995c30b44d476d3c
-ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
+ms.openlocfilehash: 95ed8806844781bdaab4d97d63cb1b7ef324dd7b
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/01/2019
-ms.locfileid: "54924012"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55949833"
 ---
 # <a name="vstestconsoleexe-command-line-options"></a>VSTest.Console.exe 命令列選項
 

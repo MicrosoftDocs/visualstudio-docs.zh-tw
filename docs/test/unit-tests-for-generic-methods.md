@@ -1,7 +1,6 @@
 ---
 title: 泛型方法的單元測試
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - generics, and unit tests
@@ -11,12 +10,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 272ee186a92a282033ea59ddfbcb9db7d89a292a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 7a3305a12283072e39654833cabc609efa3f5bc2
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55038587"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55917372"
 ---
 # <a name="unit-tests-for-generic-methods"></a>泛型方法的單元測試
 

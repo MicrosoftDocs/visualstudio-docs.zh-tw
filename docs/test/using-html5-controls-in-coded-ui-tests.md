@@ -1,19 +1,18 @@
 ---
 title: 在自動程式化 UI 測試中使用 HTML5 控制項
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: b3a0fb7221ac9a419dc67be3353cc16532f5b7a6
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 05ef65668edc9b008d95492605f967e467aa34b0
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55017613"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55951874"
 ---
 # <a name="using-html5-controls-in-coded-ui-tests"></a>在自動程式化 UI 測試中使用 HTML5 控制項
 

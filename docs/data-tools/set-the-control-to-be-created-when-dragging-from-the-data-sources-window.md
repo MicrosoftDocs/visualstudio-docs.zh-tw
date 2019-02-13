@@ -11,15 +11,14 @@ ms.assetid: 20597ff8-0c98-43ec-8fb1-05376804ba48
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 8bf72a367070cb036b63c965173c9bbd514f2d75
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f43219cc5329b46cdaba052a9f46709ee0af406f
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54993828"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55933882"
 ---
 # <a name="set-the-control-to-be-created-when-dragging-from-the-data-sources-window"></a>設定從 [資料來源] 視窗拖曳時要建立的控制項
 

@@ -1,7 +1,6 @@
 ---
 title: '[進階安全性設定] 對話方塊'
 ms.date: 06/27/2018
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - vs.err.debug_in_zone_no_hostproc
@@ -13,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 95ea10bf4eb3fba3fef6d13641ad516accac3f15
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 9c4e28cb084c82690059293fc988204201242abf
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55025133"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55919400"
 ---
 # <a name="advanced-security-settings-dialog-box"></a>[進階安全性設定] 對話方塊
 

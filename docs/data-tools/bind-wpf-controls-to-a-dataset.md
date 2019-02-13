@@ -13,15 +13,14 @@ ms.assetid: 177420b9-568b-4dad-9d16-1b0e98a24d71
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 7fec000357046c9a5309b5f501032633df196bb6
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b8f5f701299d08d79147a4d2d1932f3f23c011b6
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55007772"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55939160"
 ---
 # <a name="bind-wpf-controls-to-a-dataset"></a>將 WPF 控制項繫結至資料集
 
@@ -243,7 +242,7 @@ ms.locfileid: "55007772"
 
 - 了解如何使用 Visual Studio 中的 [資料來源] 視窗，將 WPF 控制項繫結至其他資料來源類型。 如需詳細資訊，請參閱 <<c0> [ 繫結 WPF 控制項新增至 WCF 資料服務](../data-tools/bind-wpf-controls-to-a-wcf-data-service.md)。
 
-- 了解如何使用 Visual Studio 中的 [資料來源] 視窗，顯示 WPF 控制項中的相關資料 (也就是父子關聯性中的資料)。 如需詳細資訊，請參閱[逐步解說：在 WPF 應用程式中顯示相關的資料](../data-tools/display-related-data-in-wpf-applications.md)。
+- 了解如何使用 Visual Studio 中的 [資料來源] 視窗，顯示 WPF 控制項中的相關資料 (也就是父子關聯性中的資料)。 如需詳細資訊，請參閱 <<c0> [ 逐步解說： 在 WPF 應用程式中顯示相關的資料](../data-tools/display-related-data-in-wpf-applications.md)。
 
 ## <a name="see-also"></a>另請參閱
 

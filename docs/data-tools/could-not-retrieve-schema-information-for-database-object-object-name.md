@@ -6,15 +6,14 @@ ms.assetid: a1c8f833-c918-4a86-9679-d2a791f938a9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 05e2eec3aac21343eb047e3f5fd1b23817020b14
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b688e1199fefb050c05cc69784256b156e23094d
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54980475"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55943489"
 ---
 # <a name="could-not-retrieve-schema-information-for-database-object-object-name"></a>無法擷取資料庫物件 \<物件名稱> 的結構描述資訊
 

@@ -1,7 +1,6 @@
 ---
 title: 使用雙向語言建立應用程式
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - Hebrew character display, creating applications
@@ -13,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6a3d0c15cc80d1e01336ab5e98b2ca9fdb3f6247
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 5d628dee8a28b96bcb2db176799aab9ec25c33d3
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54961097"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55946414"
 ---
 # <a name="creating-applications-in-bi-directional-languages"></a>使用雙向語言建立應用程式
 

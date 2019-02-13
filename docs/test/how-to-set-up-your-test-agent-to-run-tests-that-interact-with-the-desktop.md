@@ -8,13 +8,12 @@ ms.assetid: 3a94dd07-6d17-402c-ae8f-7947143755c9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 57ab5a2971255d943dfe8101ed144c3adecbcec4
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 04b1a894fbeb20059b79e65327ed8a7d18730e01
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55016859"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55947763"
 ---
 # <a name="how-to-set-up-your-test-agent-to-run-tests-that-interact-with-the-desktop"></a>HOW TO：將您的測試代理程式設定為執行與桌面互動的測試
 

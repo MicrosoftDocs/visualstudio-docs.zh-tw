@@ -11,13 +11,12 @@ ms.assetid: a612f2d2-9806-477d-a126-12842f07da6e
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 34e9358dbe84f93e107a28298e6657df801ea6f6
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 6a9b5ec7b0a4231297925ab8b487ec3f529ddaef
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54938941"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55955098"
 ---
 # <a name="how-to-create-a-web-performance-test-plug-in"></a>HOW TO：建立 Web 效能測試外掛程式
 

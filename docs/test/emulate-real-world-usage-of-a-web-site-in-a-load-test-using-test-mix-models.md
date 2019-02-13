@@ -9,13 +9,12 @@ ms.assetid: b7fae849-0538-40d1-ab35-2bb3a0fe4393
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 81364c4f6cb963d713fc0a63c1f0076268a84b78
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 25e44e9b05a34cbcd245debc87dfbe23c5772a3c
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54964635"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55948923"
 ---
 # <a name="emulate-expected-real-world-usage-of-a-website-or-application-in-a-load-test-using-a-test-mix-model"></a>使用測試混合模型在負載測試中模擬網站或應用程式的預期實際使用情況
 

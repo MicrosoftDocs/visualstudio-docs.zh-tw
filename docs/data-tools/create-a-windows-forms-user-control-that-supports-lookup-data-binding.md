@@ -13,15 +13,14 @@ ms.assetid: c48b4d75-ccfc-4950-8b14-ff8adbfe4208
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: f62308e44ee0687f57a15db7039656a8c4ba7dbb
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 770564291870095e55dcc3de2fdb555aaebf6a2b
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54917909"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55914603"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-lookup-data-binding"></a>建立支援查閱資料繫結的 Windows Forms 使用者控制項
 

@@ -1,7 +1,6 @@
 ---
 title: 著色器設計工具
 ms.date: 09/21/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - vs.graphics.designer.effectdesigner
@@ -12,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f8ce5bb964b3d774a7030bfeb1909d8e9042de69
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 1703d867a529496bb5c524b62ae56ef8d25904b4
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55043553"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55940343"
 ---
 # <a name="shader-designer"></a>著色器設計工具
 
@@ -82,7 +81,7 @@ ms.locfileid: "55043553"
 
 此表描述 [著色器設計工具模式] 工具列上的項目，這些項目會依照出現順序從左到右列出：
 
-|工具列項目|說明|
+|工具列項目|描述|
 |------------------|-----------------|
 |**選取**|可以和圖形中的節點和邊緣互動。 在此模式中，您可以選取節點並加以移動或刪除，您也可以建立邊緣或予以中斷。|
 |**移動瀏覽**|可讓著色器圖形相對於視窗框架移動。 若要移動瀏覽，請選取設計介面上的一點並予以四處移動。<br /><br /> 在 [選取] 模式中，您可以按住 **Ctrl** 暫時啟用 [移動瀏覽] 模式。|
@@ -200,7 +199,7 @@ ms.locfileid: "55043553"
 
 ## <a name="related-topics"></a>相關主題
 
-|標題|說明|
+|標題|描述|
 |-----------|-----------------|
 |[使用 3D 資產來打造遊戲和應用程式](../designers/working-with-3-d-assets-for-games-and-apps.md)|提供 Visual Studio 工具的概觀，您可用來處理紋理及影像、3D 模型和著色器效果。|
 |[Image Editor](../designers/image-editor.md)|描述如何使用 Visual Studio 影像編輯器來處理紋理和影像。|

@@ -1,8 +1,7 @@
 ---
 title: 快速入門：使用 Visual Studio 建立 Python Web 應用程式
 description: 在此快速入門中，您將使用 Visual Studio 和 Flask 架構來建立一個簡易的 Python Web 應用程式。
-ms.date: 10/29/2018
-ms.prod: visual-studio-dev15
+ms.date: 02/11/2019
 ms.technology: vs-python
 ms.topic: quickstart
 author: kraigb
@@ -11,12 +10,12 @@ manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 5fa182d504fba8a939d44684f1611debec448593
-ms.sourcegitcommit: 0f7411c1a47d996907a028e920b73b53c2098c9f
+ms.openlocfilehash: 826e0134d4798526a3ba3ae8055500808eb922a1
+ms.sourcegitcommit: 61dc40d6c707f8c79779ec1091b296530d5a7b81
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/04/2019
-ms.locfileid: "55690485"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "55987427"
 ---
 # <a name="quickstart-create-your-first-python-web-app-using-visual-studio"></a>快速入門：使用 Visual Studio 建立您的第一個 Python Web 應用程式
 

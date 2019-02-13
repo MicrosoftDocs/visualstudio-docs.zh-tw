@@ -1,19 +1,18 @@
 ---
 title: 產生建構函式的快速動作
 ms.date: 01/26/2018
-ms.prod: visual-studio-dev15
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 746a0099d16196e9cbc2b98d18667acae57777f9
-ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
+ms.openlocfilehash: aa3d347c08ee73054d4b229d7d2598331e44c1d7
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55483571"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55941370"
 ---
 # <a name="generate-a-constructor-in-visual-studio"></a>在 Visual Studio 中產生建構函式
 
@@ -88,7 +87,7 @@ ms.locfileid: "55483571"
 
    系統會使用選取的參數來建立建構函式。
 
-   ![「產生建構函式」結果](media/constructor2-result-cs.png)
+   ![產生建構函式結果](media/constructor2-result-cs.png)
 
 ## <a id="usage"></a> 從新的使用方式產生建構函式 (C# 和 Visual Basic)
 

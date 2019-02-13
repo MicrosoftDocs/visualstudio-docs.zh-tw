@@ -6,15 +6,14 @@ ms.assetid: 42178ae8-be6c-4df6-9b7a-cdac24d71dd2
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: dd3a659c9d5cfb2c1ada5b98cc3bd735442be088
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: cb07949fd36763fc7588d18c12c31b9af15eaf0a
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54972296"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55950548"
 ---
 # <a name="or-designer-messages"></a>O/R 設計工具訊息
 

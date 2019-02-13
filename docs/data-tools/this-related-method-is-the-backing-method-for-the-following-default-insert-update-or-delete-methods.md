@@ -6,15 +6,14 @@ ms.assetid: 62afa6da-97cf-48b9-8de3-33e4d72a0377
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4b478f041dcd94cff58f9bff8121e8d6e3b8acd3
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: cc83bc78aace73cedf186b5ec925dce0a509b91d
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55069339"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55945647"
 ---
 # <a name="this-related-method-is-the-backing-method-for-the-following-default-insert-update-or-delete-methods"></a>此關聯方法是下列預設插入、更新或刪除方法的支援方法
 

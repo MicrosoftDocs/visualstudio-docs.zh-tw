@@ -1,7 +1,6 @@
 ---
 title: 模型編輯器範例
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: dd0f4155-b4f9-4f16-b0fd-3f4cd4c80d5a
 author: gewarren
@@ -9,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 36beb87068361e2cfa02ff69fa293fcad1d10270
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a4fd7bf21c214abfab535f954eb404280234ccb6
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54936940"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55942410"
 ---
 # <a name="model-editor-examples"></a>模型編輯器範例
 
@@ -22,7 +21,7 @@ ms.locfileid: "54936940"
 
 ## <a name="related-topics"></a>相關主題
 
-|標題|說明|
+|標題|描述|
 |-----------|-----------------|
 |[如何：建立基本 3D 模型](../designers/how-to-create-a-basic-3-d-model.md)|描述如何建立基本 3D 模型。|
 |[如何：修改 3D 模型的樞紐點](../designers/how-to-modify-the-pivot-point-of-a-3-d-model.md)|描述如何修改 3D 模型的樞紐點和比例。|

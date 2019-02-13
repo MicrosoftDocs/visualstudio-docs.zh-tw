@@ -1,7 +1,6 @@
 ---
 title: 程式碼片段選擇器
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - vs.expansionpicker
@@ -14,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: edf1bdc8de559cc5728a119ecdbec972ac9d0733
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 84a93ed9cac1c3f352b3e658f28da4b492612338
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55021919"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55948299"
 ---
 # <a name="code-snippet-picker"></a>程式碼片段選擇器
 

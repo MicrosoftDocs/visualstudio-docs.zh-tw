@@ -1,7 +1,6 @@
 ---
 title: 在專案和項目範本中新增名稱參數
 ms.date: 01/02/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - template parameters
@@ -10,12 +9,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 19dcfbca8025ef73cea38e5b2b6e5768ab5e8a1f
-ms.sourcegitcommit: 9866740aec05d1a3a5dc3b4b6d2ceaeecbd3fc29
+ms.openlocfilehash: cf9a990be3f5e87180967a4f9f274ec79fbc357e
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "55424274"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55943333"
 ---
 # <a name="how-to-substitute-parameters-in-a-template"></a>HOW TO：替代範本中的參數
 

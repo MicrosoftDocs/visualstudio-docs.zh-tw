@@ -1,7 +1,6 @@
 ---
 title: 設定基數命令
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - debug.setradix
@@ -14,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e5c7533f9ec4dd9a915d50aa7676dcf6397ec451
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 70b61dff4ebe7486c2e04e4fd3061cd4110feca1
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54924093"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55938393"
 ---
 # <a name="set-radix-command"></a>設定基數命令
 設定或傳回用來顯示整數值的數值基底。

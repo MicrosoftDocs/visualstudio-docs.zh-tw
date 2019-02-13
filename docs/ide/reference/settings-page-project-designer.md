@@ -1,7 +1,6 @@
 ---
 title: 設定頁面、專案設計工具
 ms.date: 06/14/2018
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - ApplicationSettingsOverview
@@ -13,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fee0e6539901e5b95ca62f5e2beb1c3ea48692b0
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: d7422b87d0f812de2d99d59c2932e9aa2b9e6315
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54958612"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55938770"
 ---
 # <a name="settings-page-project-designer"></a>設定頁面、專案設計工具
 

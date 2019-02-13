@@ -8,13 +8,12 @@ ms.assetid: 9649226a-857d-41ef-8ec7-047b6e498033
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: e00f31dac1cf6b5ac329e51040027e94d4813dcb
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c60aa8284dd19401fb2f4b6db3dc0ec0fc9c7942
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55036403"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55948845"
 ---
 # <a name="modify-load-test-logging-settings"></a>修改負載測試記錄設定
 

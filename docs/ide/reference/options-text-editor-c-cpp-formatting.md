@@ -1,7 +1,6 @@
 ---
 title: 格式、C/C++、文字編輯器、選項
 ms.date: 04/30/2018
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.C/C++.Formatting.General
@@ -17,12 +16,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6aa4c543d19c43bd397d7d18a185a73a4bf161a6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ae24e69ddceea88155d7185157a6ed25daab5430
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53960744"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55922117"
 ---
 # <a name="options-text-editor-cc-formatting"></a>格式、C/C++、文字編輯器、選項
 

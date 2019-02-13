@@ -1,7 +1,6 @@
 ---
 title: 步驟 9：檢閱、註解及測試您的程式碼
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: f26f79ba-c91b-4164-b87f-679a1b231c09
 author: TerryGLee
@@ -9,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a92c6356a5d6f382e97abb745412134d22bfa97c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 9cddb92e57a501fb8ea5eeda9b2c6ec60b95c45c
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54920744"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55934311"
 ---
 # <a name="step-9-review-comment-and-test-your-code"></a>步驟 9：檢閱、註解及測試您的程式碼
 您接下來要將註解加入至程式碼。 註解是一種不會變更程式運作方式的附註。 它可讓讀取程式碼的人容易了解您的程式碼有何用途。 將註解加入至您的程式碼是個好習慣。 在 Visual C# 中，兩個斜線 (//) 可將一行標示成註解。 在 Visual Basic 中，使用單引號 (') 將一行標示成註解。 加入註解後，請測試程式。 較好的做法是，經常在您處理專案時執行和測試程式碼，以便在程式碼變得更複雜之前早期攔截並修正所有問題。 這稱為「反覆測試」。

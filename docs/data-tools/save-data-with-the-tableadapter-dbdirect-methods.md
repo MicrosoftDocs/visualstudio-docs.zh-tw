@@ -14,15 +14,14 @@ ms.assetid: 74a6773b-37e1-4d96-a39c-63ee0abf49b1
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 77e620a5611a912c3abf449241670fdb298036f3
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 5c970fe4cd1bbd87f54e10be85adf37554c10675
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54934305"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55950535"
 ---
 # <a name="save-data-with-the-tableadapter-dbdirect-methods"></a>使用 TableAdapter DBDirect 方法儲存資料
 
@@ -74,7 +73,7 @@ ms.locfileid: "54934305"
 
 ## <a name="create-a-data-source-from-your-database"></a>從您的資料庫建立資料來源
 
-此步驟使用 [資料來源組態精靈]，根據 Northwind 範例資料庫中的 `Region` 資料表建立資料來源。 您必須具有 Northwind 範例資料庫的存取權，才能建立連接。 如需設定 Northwind 範例資料庫的詳細資訊，請參閱[How to:安裝範例資料庫](../data-tools/installing-database-systems-tools-and-samples.md)。
+此步驟使用 [資料來源組態精靈]，根據 Northwind 範例資料庫中的 `Region` 資料表建立資料來源。 您必須具有 Northwind 範例資料庫的存取權，才能建立連接。 如需設定 Northwind 範例資料庫的詳細資訊，請參閱[如何： 安裝範例資料庫](../data-tools/installing-database-systems-tools-and-samples.md)。
 
 ### <a name="to-create-the-data-source"></a>若要建立資料來源
 

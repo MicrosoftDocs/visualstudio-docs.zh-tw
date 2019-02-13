@@ -3,7 +3,6 @@ title: 自動套用產品金鑰
 description: 了解部署 Visual Studio 時如何以程式設計方式套用產品金鑰。
 ms.date: 08/14/2017
 ms.custom: seodec18
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: d79260be-6234-4fd3-89b5-a9756b4a93c1
 author: TerryGLee
@@ -11,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1175f59b7dbfff329b8ca9d453317310e252e0bd
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 0dab3f8f862b27a8124aecf0e19f7649d8b934b7
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55027252"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55947233"
 ---
 # <a name="automatically-apply-product-keys-when-deploying-visual-studio"></a>在部署 Visual Studio 時自動套用產品金鑰
 

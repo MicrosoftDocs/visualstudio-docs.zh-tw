@@ -6,15 +6,14 @@ ms.assetid: 55873f74-7834-4ec1-8815-eeeb65618d87
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 6940da198fddc4213bbec1271164b20cfbeb6672
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 4b1e0652d19b10b1d1ede7b1b950d89ca1bf670c
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54994156"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55939641"
 ---
 # <a name="the-property-property-name-cannot-be-deleted"></a>無法刪除屬性 \<屬性名稱>
 

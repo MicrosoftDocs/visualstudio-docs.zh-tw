@@ -1,7 +1,6 @@
 ---
 title: 一般的快速動作
 ms.date: 03/28/2018
-ms.prod: visual-studio-dev15
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
@@ -11,12 +10,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 19284bb1b8a96443411226343bfd5ec08f0cff7c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f6f8872fa9acb2ca79010a87168c629dcbc3ac6e
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54955735"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55932933"
 ---
 # <a name="common-quick-actions"></a>一般的快速動作
 

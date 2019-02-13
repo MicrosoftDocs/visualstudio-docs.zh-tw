@@ -1,19 +1,18 @@
 ---
 title: 使用適用於 C++ 的 Microsoft 單元測試架構
 ms.date: 11/15/2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.author: mblome
 manager: jillfra
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: d95ffeb2e880f6b27a67342c3f6accd512d39c22
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: ac55d7513fd6670e30c9fa2097a5d38a96a92e26
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54930494"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55955072"
 ---
 # <a name="use-the-microsoft-unit-testing-framework-for-c-in-visual-studio"></a>在 Visual Studio 中使用適用於 C++ 的 Microsoft 單元測試架構
 
@@ -90,7 +89,7 @@ TEST_METHOD(Method1)
 
 下列預先定義的特徵位於 `CppUnitTest.h` 中。 如需詳細資訊，請參閱[適用於 C++ 的 Microsoft 單元測試架構 API 參考](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md)。
 
-|巨集|說明|
+|巨集|描述|
 |-|-----------------|
 |`TEST_METHOD_ATTRIBUTE(attributeName, attributeValue)`|使用 TEST_METHOD_ATTRIBUTE 巨集定義特性。|
 |`TEST_OWNER(ownerAlias)`|使用預先定義的擁有者特性，指定測試方法的擁有者。|

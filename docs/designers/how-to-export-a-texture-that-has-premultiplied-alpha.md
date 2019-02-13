@@ -1,7 +1,6 @@
 ---
 title: HOW TO：匯出包含預乘 Alpha 的紋理
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: 05348afa-f079-4f53-a05b-ecd91d13adab
 author: gewarren
@@ -9,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 26bf0eabe0b938f7b5896349f1ff73ee2be255e8
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 9a228b3f69730eee5fb1672e07a6eea74d18c71e
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55071042"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55946869"
 ---
 # <a name="how-to-export-a-texture-that-has-premultiplied-alpha"></a>HOW TO：匯出包含預乘 Alpha 的紋理
 

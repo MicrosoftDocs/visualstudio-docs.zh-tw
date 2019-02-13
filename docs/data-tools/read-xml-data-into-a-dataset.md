@@ -18,15 +18,14 @@ ms.assetid: fae72958-0893-47d6-b3dd-9d42418418e4
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: dec6b30eec5e36212ec2e1a6a16d395a698f332c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b603979424c3593a673cf11db81ca2fc1c6a03bd
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54946099"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55934142"
 ---
 # <a name="read-xml-data-into-a-dataset"></a>將 XML 資料讀入資料集
 

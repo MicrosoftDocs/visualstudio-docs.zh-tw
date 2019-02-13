@@ -1,7 +1,6 @@
 ---
 title: HOW TO：實作介面 (類別設計工具)
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - interfaces [Visual Studio], implementing
@@ -12,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f2f3ca84dfb7832d15f6d8d8c53bf3770e36a0d0
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f070e3224dcc683d766da556512f285751c37ca4
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55038197"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55923910"
 ---
 # <a name="how-to-implement-an-interface-in-class-designer"></a>HOW TO：在類別設計工具中實作介面
 

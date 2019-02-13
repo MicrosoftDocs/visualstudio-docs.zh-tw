@@ -1,7 +1,6 @@
 ---
 title: 離線說明文件
 ms.date: 11/02/2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - hv_general
@@ -20,12 +19,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ac5b6fed30689a69fe90bc0972f8cb292f7691b
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: ca207f06640d5ef2df02d966b733d3065c80fce6
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54987657"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55938992"
 ---
 # <a name="microsoft-help-viewer"></a>Microsoft Help Viewer
 
@@ -54,7 +53,7 @@ ms.locfileid: "54987657"
 
 ### <a name="navigation-tabs"></a>瀏覽索引標籤
 
-|索引標籤|說明|
+|索引標籤|描述|
 |---|-----------|
 |內容|將安裝的內容顯示為階層 (目錄)。 您可以指定條件來篩選顯示的標題。|
 |索引|顯示已編製索引的詞彙按字母順序排列的清單。 您可以搜尋索引、指定條件來篩選項目，以及要求索引項目包含指定的文字或以其開頭。|

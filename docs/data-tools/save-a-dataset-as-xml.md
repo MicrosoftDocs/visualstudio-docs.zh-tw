@@ -14,15 +14,14 @@ ms.assetid: 68b8327c-ae05-49ff-b9ba-99183e70b52c
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: c1eff1b80807b040bd50d7e4e5f2045c73c46929
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 3c993ac8703468a24a99e114563fec1bdc817581
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55011815"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55913115"
 ---
 # <a name="save-a-dataset-as-xml"></a>將資料集儲存為 XML
 

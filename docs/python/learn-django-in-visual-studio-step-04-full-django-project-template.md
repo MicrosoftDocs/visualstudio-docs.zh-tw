@@ -3,7 +3,6 @@ title: Visual Studio 中的了解 Django 教學課程步驟 4，Web 專案範本
 titleSuffix: ''
 description: 逐步解說 Visual Studio 專案環境中的 Django 基本知識，尤其是 Django Web 專案範本提供的功能。
 ms.date: 11/19/2018
-ms.prod: visual-studio-dev15
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
@@ -12,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 46ca1d12a452fbffb16ff9f51a3f14ab05f83f5a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e9f356a8b6af23e587bf5f22ea99c64218f0dee7
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54983179"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55943424"
 ---
 # <a name="step-4-use-the-full-django-web-project-template"></a>步驟 4：使用完整的 Django Web 專案範本
 

@@ -2,19 +2,18 @@
 title: R 程式碼的 IntelliSense
 description: 在您鍵入 R 程式碼時，Visual Studio IntelliSense 會顯示有關函式、物件成員、程式碼片段和自動完成的資訊。
 ms.date: 01/24/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 3ce62d81a3a6fce4e59d43f088d06f0af7385708
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 854f7d410e327ca92d0c5156d89bc21765e13cc7
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55024080"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55942803"
 ---
 # <a name="intellisense"></a>IntelliSense
 

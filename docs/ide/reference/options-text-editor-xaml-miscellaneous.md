@@ -1,7 +1,6 @@
 ---
 title: 選項、文字編輯器、XAML、其他
 ms.date: 10/29/2018
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.XAML.Miscellaneous
@@ -29,12 +28,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 9f5c3ae1da957a76d88dce2597ca09762667def7
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 9b124b86b98f86c775165d8fe33164a352d8e20a
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55023310"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55954760"
 ---
 # <a name="options-text-editor-xaml-miscellaneous"></a>選項、文字編輯器、XAML、其他
 

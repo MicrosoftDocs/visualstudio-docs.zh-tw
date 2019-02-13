@@ -1,7 +1,6 @@
 ---
 title: 使用類別設計工具
 ms.date: 05/08/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - vs.classdesigner.diagram
@@ -17,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: be4e15b282e0f1c671731bfd1d7b10e25fd8deed
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: ee4910471693a2941ec9548773a2f50e443a639b
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54958364"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55910736"
 ---
 # <a name="design-and-view-classes-and-types-with-class-designer"></a>使用類別設計工具設計及檢視類別和類型
 

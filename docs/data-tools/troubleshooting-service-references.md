@@ -14,15 +14,14 @@ ms.assetid: 3b531120-1325-4734-90c6-6e6113bd12ac
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 573019483f1c7c616f8bdf61286c46f76458354f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a99cdc4e8c9a4b7551574c93ad6ccdb8c44479df
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55031276"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55927041"
 ---
 # <a name="troubleshoot-service-references"></a>針對服務參考進行疑難排解
 
@@ -48,7 +47,7 @@ ms.locfileid: "55031276"
 
 ## <a name="error-accessing-a-service-over-a-remote-desktop"></a>透過遠端桌面存取的服務時發生錯誤
 
-當使用者存取 Web 裝載的 WCF 服務，透過遠端桌面連線和使用者沒有系統管理權限，會使用 NTLM 驗證。 如果使用者沒有系統管理權限，使用者可能會收到下列錯誤訊息：「 HTTP 要求是未經授權的用戶端驗證配置 'Anonymous'。 從伺服器收到的驗證標頭是 'NTLM'。 」
+當使用者存取 Web 裝載的 WCF 服務，透過遠端桌面連線和使用者沒有系統管理權限，會使用 NTLM 驗證。 如果使用者沒有系統管理權限，使用者可能會收到下列錯誤訊息: 「 HTTP 要求是未經授權的用戶端驗證配置 'Anonymous'。 從伺服器收到的驗證標頭是 'NTLM'。 」
 
 修正這個錯誤：
 
@@ -83,7 +82,7 @@ ms.locfileid: "55031276"
 
 4.  載入 WCF 服務專案。
 
-5.  在 [ **Configuration Manager** ] 對話方塊中，將**現用方案組態**來**偵錯**。 如需詳細資訊，請參閱[＜How to：建立及編輯組態](../ide/how-to-create-and-edit-configurations.md)。
+5.  在 [ **Configuration Manager** ] 對話方塊中，將**現用方案組態**來**偵錯**。 如需詳細資訊，請參閱[如何：建立和編輯組態](../ide/how-to-create-and-edit-configurations.md)。
 
 6.  在 **方案總管 中**，選取 WCF 服務專案。
 

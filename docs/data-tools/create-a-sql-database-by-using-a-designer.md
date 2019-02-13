@@ -11,15 +11,14 @@ ms.assetid: 99c2b06f-47aa-414e-8057-a3453712fd23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 7f5edbdd8f02b5f283626b212ae796befd9ab0e7
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: cd7ea5df54d1ef740feddaeb5fbedbc9b9a42fd4
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54932147"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55943112"
 ---
 # <a name="create-a-database-and-add-tables-in-visual-studio"></a>建立資料庫，並在 Visual Studio 中新增資料表
 

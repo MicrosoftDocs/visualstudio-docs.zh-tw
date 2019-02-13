@@ -9,15 +9,14 @@ ms.assetid: 0edd5385-c381-4b17-9096-74e2778db9d5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: eddbdfe8b2b5f6f3c5940200077f29df0d6003a0
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 50cafe4ef571034f496ec3e21a530c02b5d13a95
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55043358"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55943658"
 ---
 # <a name="create-lookup-tables-in-windows-forms-applications"></a>在 Windows Forms 應用程式中建立查閱資料表
 

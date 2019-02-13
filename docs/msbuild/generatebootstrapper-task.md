@@ -18,19 +18,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a87fffbc69860fe41e3497109f889dc2ae8298ca
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 5a8736e27337aa2b2512eb96b3325489c96b0e93
+ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54980358"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55853777"
 ---
 # <a name="generatebootstrapper-task"></a>GenerateBootstrapper 工作
-提供自動化方式來偵測、下載及安裝應用程式及其必要條件。 它可用來做為單一安裝程式，針對組成應用程式的所有元件整合個別的安裝程式。  
-  
-## <a name="task-parameters"></a>工作參數  
- 以下描述 `GenerateBootstrapper` 工作的參數。  
-  
+提供自動化方式來偵測、下載及安裝應用程式及其必要條件。 它可用來做為單一安裝程式，針對組成應用程式的所有元件整合個別的安裝程式。
+
+## <a name="task-parameters"></a>工作參數
+以下描述 `GenerateBootstrapper` 工作的參數。
+
 - `ApplicationFile`  
   
    選擇性的 `String` 參數。  
@@ -67,14 +67,14 @@ ms.locfileid: "54980358"
   
    指定要在啟動載入器內建置的產品。 傳遞給此參數的項目應具有下列語法：  
   
-  ```xml  
-  <BootstrapperItem  
-      Include="ProductCode">  
-      <ProductName>  
-          ProductName  
-      </ProductName>  
-  </BootstrapperItem>  
-  ```  
+  ```xml
+  <BootstrapperItem
+      Include="ProductCode">
+      <ProductName>
+          ProductName
+      </ProductName>
+  </BootstrapperItem>
+  ```
   
    `Include` 屬性代表應該安裝的必要條件名稱。 `ProductName` 項目中繼資料為選擇性，而且萬一找不到套件，建置引擎將使用它作為易記名稱。 除非未指定 `ApplicationFile`，否則這些項目不是必要的 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 輸入參數。 您應該基於每個必須針對您應用程式安裝的必要條件包含一個項目。  
   
@@ -146,35 +146,35 @@ ms.locfileid: "54980358"
   
    選擇性的 `Boolean` 參數。  
   
-   如果是 `true`，啟動載入器會在指定的輸入啟動載入器項目上執行 XSD 驗證。 此參數的預設值為 `false`。  
-  
-## <a name="remarks"></a>備註  
- 除了上述所列的參數，此項工作還會繼承 <xref:Microsoft.Build.Tasks.TaskExtension> 類別中的參數，而該類別本身又繼承 <xref:Microsoft.Build.Utilities.Task> 類別。 如需這些其他參數的清單及其描述，請參閱 [TaskExtension 基底類別](../msbuild/taskextension-base-class.md)。  
-  
-## <a name="example"></a>範例  
- 下列範例會使用 `GenerateBootstrapper` 工作，來安裝必須安裝 [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] 做為必要條件的應用程式。  
-  
-```xml  
-<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
-  
-    <ItemGroup>  
-        <BootstrapperFile Include="Microsoft.Net.Framework.2.0">  
-            <ProductName>Microsoft .NET Framework 2.0</ProductName>  
-        </BootstrapperFile>  
-    </ItemGroup>  
-  
-    <Target Name="BuildBootstrapper">  
-        <GenerateBootstrapper  
-            ApplicationFile="WindowsApplication1.application"  
-            ApplicationName="WindowsApplication1"  
-            ApplicationUrl="http://mycomputer"  
-            BootstrapperItems="@(BootstrapperFile)"  
-            OutputPath="C:\output" />  
-    </Target>  
-  
-</Project>  
-```  
-  
-## <a name="see-also"></a>另請參閱  
- [工作](../msbuild/msbuild-tasks.md)   
- [工作參考](../msbuild/msbuild-task-reference.md)
+   如果是 `true`，啟動載入器會在指定的輸入啟動載入器項目上執行 XSD 驗證。 此參數的預設值為 `false`。
+
+## <a name="remarks"></a>備註
+除了上述所列的參數，此項工作還會繼承 <xref:Microsoft.Build.Tasks.TaskExtension> 類別中的參數，而該類別本身又繼承 <xref:Microsoft.Build.Utilities.Task> 類別。 如需這些其他參數的清單及其描述，請參閱 [TaskExtension 基底類別](../msbuild/taskextension-base-class.md)。
+
+## <a name="example"></a>範例
+下列範例會使用 `GenerateBootstrapper` 工作，來安裝必須安裝 [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] 做為必要條件的應用程式。
+
+```xml
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+    <ItemGroup>
+        <BootstrapperFile Include="Microsoft.Net.Framework.2.0">
+            <ProductName>Microsoft .NET Framework 2.0</ProductName>
+        </BootstrapperFile>
+    </ItemGroup>
+
+    <Target Name="BuildBootstrapper">
+        <GenerateBootstrapper
+            ApplicationFile="WindowsApplication1.application"
+            ApplicationName="WindowsApplication1"
+            ApplicationUrl="http://mycomputer"
+            BootstrapperItems="@(BootstrapperFile)"
+            OutputPath="C:\output" />
+    </Target>
+
+</Project>
+```
+
+## <a name="see-also"></a>另請參閱
+[工作](../msbuild/msbuild-tasks.md)  
+[工作參考](../msbuild/msbuild-task-reference.md)

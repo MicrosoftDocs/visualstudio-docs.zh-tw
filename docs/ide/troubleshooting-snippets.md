@@ -1,7 +1,6 @@
 ---
 title: 針對程式碼片段的問題進行疑難排解
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: troubleshooting
 helpviewer_keywords:
 - IntelliSense Code Snippets, troubleshooting
@@ -13,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 79db18df9f9961a539eb0efb3dd399f9be85a276
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 24b94cfeb64c9310cd827c082b1f2f33329f1496
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54943243"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55941136"
 ---
 # <a name="troubleshoot-snippets"></a>針對程式碼片段的問題進行疑難排解
 

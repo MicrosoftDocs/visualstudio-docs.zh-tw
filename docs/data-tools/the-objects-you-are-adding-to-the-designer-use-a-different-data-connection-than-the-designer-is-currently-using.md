@@ -6,15 +6,14 @@ ms.assetid: 332ed2f3-3377-4d51-8e3b-fdb98231978e
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 639c1c259426ec27358b4b611165d7ca55c0adde
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 9e0864ec07250ed5886f864d4233aeb902ecf5ae
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54994549"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55945383"
 ---
 # <a name="the-objects-you-are-adding-to-the-designer-use-a-different-data-connection-than-the-designer"></a>您要加入至設計工具的物件使用不同的資料連接與設計工具
 

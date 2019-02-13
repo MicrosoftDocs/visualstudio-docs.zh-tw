@@ -1,7 +1,6 @@
 ---
 title: 一般、文字編輯器、選項
 ms.date: 01/18/2019
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.RDL_Expression.General
@@ -30,12 +29,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 69c74548340e8b8f642fa1e373bdd424c3c81a69
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 9a7bcf7b57c6cdc7e0ff4ff5a851397b7c96b345
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54989740"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55930229"
 ---
 # <a name="options-text-editor-general"></a>一般、文字編輯器、選項
 

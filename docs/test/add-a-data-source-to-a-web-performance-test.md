@@ -9,13 +9,12 @@ ms.assetid: 2ada376d-f168-455d-9643-6acb535360c1
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: c2ea0d43a4c6aa4c7e83d2faedadd768024d96e9
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 7f56491a8268e939f7bd455c4afef6813116ef9f
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54921800"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55950600"
 ---
 # <a name="add-a-data-source-to-a-web-performance-test"></a>將資料來源加入至 Web 效能測試
 
@@ -35,7 +34,7 @@ ms.locfileid: "54921800"
 
 ## <a name="create-a-sql-database"></a>建立 SQL 資料庫
 
-1. 如果您沒有 Visual Studio Enterprise，則可以從 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)頁面予以下載。
+1. 如果您沒有 Visual Studio Enterprise，則可以從 [Visual Studio 下載](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017)頁面予以下載。
 
 2. 建立 SQL 資料庫。
 

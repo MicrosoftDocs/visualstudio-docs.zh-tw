@@ -1,7 +1,6 @@
 ---
 title: 在 XAML 設計工具中插入影像、視訊和音訊剪輯
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: ff707aca-6bc5-4a2d-834b-bb6511a7b8f6
 author: gewarren
@@ -9,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 3cbe06debb0ae041ddeb06292427923b8f02210e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 8ef1c82e18b99383f61ccbad298102b4db1fcb24
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54982009"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55937304"
 ---
 # <a name="insert-images-videos-and-audio-clips-in-xaml-designer"></a>在 XAML 設計工具中插入影像、視訊和音訊剪輯
 影像、視訊和音訊剪輯可為應用程式加入視覺效果。

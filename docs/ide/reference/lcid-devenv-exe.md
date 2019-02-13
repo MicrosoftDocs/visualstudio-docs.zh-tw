@@ -1,7 +1,6 @@
 ---
 title: -LCID (devenv.exe)
 ms.date: 12/10/2018
-ms.prod: visual-studio-dev15
 ms.topic: reference
 helpviewer_keywords:
 - language default
@@ -19,12 +18,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 727f9c10d8f2d1eb2e1938821ad0cc0c1ae87b12
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: deb2ce5eba108127dce82bab77fe7ed4fb78fb14
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54972728"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55947038"
 ---
 # <a name="lcid-devenvexe"></a>/LCID (devenv.exe)
 

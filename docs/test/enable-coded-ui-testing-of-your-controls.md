@@ -1,19 +1,18 @@
 ---
 title: 啟用控制項的自動程式化 UI 測試功能
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: b06b92c1b9b58f48f10ec052ee688c1235388211
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c1a2d2a60b6875cf4257c0b5bfb3e09c27865c17
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54999921"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55943385"
 ---
 # <a name="enable-coded-ui-testing-of-your-controls"></a>啟用控制項的自動程式化 UI 測試功能
 
