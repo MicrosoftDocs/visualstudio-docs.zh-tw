@@ -5,15 +5,14 @@ ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 93918890c2e58a8460f6a896c760516047d09213
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: da6763cffedccb1dae296e2959732237cd126b25
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54932021"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55909916"
 ---
 # <a name="add-new-connections"></a>新增連線
 

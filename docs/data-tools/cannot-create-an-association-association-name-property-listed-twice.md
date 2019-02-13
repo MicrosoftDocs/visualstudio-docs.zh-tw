@@ -6,15 +6,14 @@ ms.assetid: 3ced8bda-210e-4caf-9d8f-96cdbba19251
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: da5ee57dda360f9851737fe061ee02c6aeae4c8e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 9c198518fca543eb9275afd918a640275f797b19
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54954744"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55952615"
 ---
 # <a name="cannot-create-an-association-ltassociation-namegt---property-listed-twice"></a>無法建立關聯&lt;關聯名稱&gt;：屬性已列出兩次
 
@@ -38,4 +37,4 @@ ms.locfileid: "54954744"
 
 - [O/R 設計工具訊息](../data-tools/o-r-designer-messages.md)
 - [Visual Studio 中的 LINQ to SQL 工具](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
-- [如何：建立 LINQ to SQL 類別 （O/R 設計工具） 之間的關聯](../data-tools/how-to-create-an-association-relationship-between-linq-to-sql-classes-o-r-designer.md)
+- [如何： 建立 LINQ to SQL 類別 （O/R 設計工具） 之間的關聯](../data-tools/how-to-create-an-association-relationship-between-linq-to-sql-classes-o-r-designer.md)
