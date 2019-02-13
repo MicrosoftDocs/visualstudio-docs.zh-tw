@@ -21,13 +21,12 @@ ms.assetid: 0a84bda3-6051-45eb-9c7f-d57419e1f97d
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 47ae8101deb4682d4e236fae57a5dad510fe7302
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 98e54e8e1bec7502e7401dc6a13a639e92c1a881
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54936383"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55941305"
 ---
 # <a name="analyze-load-test-results-and-errors-in-the-tables-view-of-the-load-test-analyzer"></a>在負載測試分析器的資料表檢視中分析負載測試結果和錯誤
 
@@ -51,7 +50,7 @@ ms.locfileid: "54936383"
 
 下列表格列出可用於分析負載測試回合的資料表。
 
-|資料表名稱|說明|
+|資料表名稱|描述|
 |-|-|
 |錯誤|顯示負載測試回合期間發生的錯誤清單。 如需詳細資訊，請參閱本主題中的[錯誤資料表](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#the-errors-table)和[分析負載測試結果](../test/analyze-load-test-results-using-the-load-test-analyzer.md)。|
 |頁面|顯示負載測試回合期間存取的頁面清單。 本資料表中的部分資料只有在負載測試完成後才可用。 如需詳細資訊，請參閱[＜How to：檢視網頁回應](../test/how-to-view-web-page-response-time-in-a-load-test.md)。|
@@ -73,7 +72,7 @@ ms.locfileid: "54936383"
 
  下表列出 [要求] 資料表中的資料行：
 
-|資料行|說明|預設為可見|
+|資料行|描述|預設為可見|
 |-|-|-|
 |**要求**|要求的 URL。 例如：*home.html* 或 *orange-arrow.gif*。|是|
 |**案例**|情節的名稱。|是|
@@ -95,7 +94,7 @@ ms.locfileid: "54936383"
 
  下表列出 [測試] 資料表中的資料行。
 
-|資料行|說明|預設為可見|
+|資料行|描述|預設為可見|
 |-|-|-|
 |**測試**|測試的名稱。|是|
 |**案例**|情節的名稱。|是|
@@ -119,7 +118,7 @@ ms.locfileid: "54936383"
 > [!NOTE]
 > 若要檢視所有資料行，您必須啟用與使用中之回合設定相關聯的 [計時詳細資料儲存區] 屬性。 如需詳細資訊，請參閱[＜How to：指定 [計時詳細資料儲存區] 屬性](../test/how-to-specify-the-timing-details-storage-property-for-a-load-test.md)。
 
-|資料行|說明|可見 (不含計時詳細資料)|
+|資料行|描述|可見 (不含計時詳細資料)|
 |-|-|-|
 |**異動**|異動的名稱。|是|
 |**案例**|情節的名稱。|是|
@@ -145,7 +144,7 @@ ms.locfileid: "54936383"
 
  錯誤資料表包含下列資料行：
 
-|資料行|說明|預設為可見|
+|資料行|描述|預設為可見|
 |-|-|-|
 |類型|錯誤的類型。 例如，HttpError。|是|
 |子類型|錯誤的子類型。 例如，LoadTestException。|是|
@@ -163,7 +162,7 @@ ms.locfileid: "54936383"
 
 [負載測試錯誤] 資料表包含下列資料行：
 
-|資料行|說明|
+|資料行|描述|
 |-|-|
 |**時間**|負載測試期間發生錯誤的時間。|
 |**代理程式**|發生錯誤之代理程式電腦的名稱。 這在您使用測試控制器和測試代理程式執行負載測試時相當重要。 如需詳細資訊，請參閱[安裝和設定測試代理程式](../test/lab-management/install-configure-test-agents.md)。|

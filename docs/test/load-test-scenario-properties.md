@@ -9,13 +9,12 @@ ms.assetid: 4414a638-1fa2-40ad-b1f4-b99f90b62e62
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 5bbc76b3975773cd639e194524e8cece0018eb25
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 86ed8346a27a02eb7e04c1f7a9fa361b0e03431a
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54932658"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55935065"
 ---
 # <a name="load-test-scenario-properties"></a>負載測試情節屬性
 

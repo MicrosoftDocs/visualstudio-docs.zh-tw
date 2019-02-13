@@ -4,23 +4,22 @@ description: 這份導覽、程式碼分析、單元測試及其他功能的概�
 author: kuhlenh
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.date: 06/14/2018
 ms.topic: conceptual
 helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4181d7d84d1257f40a2e574944a722795f660469
-ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
+ms.openlocfilehash: dd467adc2ff45e38f193b1b87aea471682d40c0c
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55484091"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55920596"
 ---
 # <a name="visual-studio-2017-c-productivity-guide"></a>Visual Studio 2017 C# 生產力指南
 
-了解 [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) 如何讓開發人員比以往更具生產力。 運用我們的效能與生產力改進，像是導覽到反向組譯的組件、鍵入時的變數名稱建議、**測試總管**中的階層架構檢視、[移至全部] (**Ctrl**+**T**) 以導覽至檔案/類型/成員/符號宣告、智慧型**例外狀況協助程式**、程式碼樣式組態和強制執行，以及許多重構和程式碼修正。
+了解 [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) 如何讓開發人員比以往更具生產力。 運用我們的效能與生產力改進，像是導覽到反向組譯的組件、鍵入時的變數名稱建議、**測試總管**中的階層架構檢視、[移至全部] (**Ctrl**+**T**) 以導覽至檔案/類型/成員/符號宣告、智慧型**例外狀況協助程式**、程式碼樣式組態和強制執行，以及許多重構和程式碼修正。
 
 ## <a name="im-used-to-my-keyboard-shortcuts-from-a-different-extensioneditoride"></a>我習慣從不同延伸模組/編輯器/IDE 中使用我的鍵盤快速鍵
 
@@ -70,7 +69,7 @@ Visual Studio 2017 有一項稱為 [移至全部] (**Ctrl**+**T**) 的功能。 
 
 ## <a name="my-team-enforces-code-style-rules-on-our-codebase"></a>我的小組對我們的程式碼庫強制執行程式碼樣式規則
 
-您可以使用 *.editorconfig* 檔案來撰寫程式碼慣例，並讓它們隨著來源移動。
+您可以使用 *.editorconfig* 檔案來撰寫編碼慣例，並讓它們隨著來源移動。
 
 - 您可以安裝 [EditorConfig 語言服務延伸模組](https://aka.ms/editorconfig) \(英文\)，以便輕鬆地在 Visual Studio 中新增及編輯 *.editorconfig* 檔案。
 - 嘗試 [適用於 Visual Studio 的 IntelliCode 延伸模組](/visualstudio/intellicode/intellicode-visual-studio)。 此實驗性延伸模組會從現有的程式碼推斷您的程式碼樣式，然後使用已定義的程式碼樣式喜好設定來建立非空白的 *.editorconfig* 檔案。

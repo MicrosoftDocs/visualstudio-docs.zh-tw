@@ -1,7 +1,6 @@
 ---
 title: 步驟 1：建立 Windows Forms 應用程式專案
 ms.date: 01/26/2019
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: 16ac2422-e720-4e3a-b511-bc2a54201a86
 author: TerryGLee
@@ -9,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bbd6fb3733b95a92057b626f79db62698435b7c2
-ms.sourcegitcommit: 447f2174bdecdd471d8a8e11c19554977db620a0
+ms.openlocfilehash: 9451dea474f5d3ae460af20561e80f0660e33026
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2019
-ms.locfileid: "55089249"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55956063"
 ---
 # <a name="step-1-create-a-windows-forms-application-project"></a>步驟 1：建立 Windows Forms 應用程式專案
 

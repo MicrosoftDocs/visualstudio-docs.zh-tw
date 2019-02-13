@@ -1,7 +1,6 @@
 ---
 title: 擷取方法
 ms.date: 01/26/2018
-ms.prod: visual-studio-dev15
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
@@ -13,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 15025f531108851b55e04399a532ba6e10ad231a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: fc1e96bed6c3f7fac857262644765d383de37482
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54980995"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55953083"
 ---
 # <a name="extract-a-method-refactoring"></a>擷取方法重構
 

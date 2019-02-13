@@ -1,7 +1,6 @@
 ---
 title: 逐步解說：以 [使用時產生] 功能進行測試優先開發
 ms.date: 10/09/2017
-ms.prod: visual-studio-dev15
 dev_langs:
 - VB
 - CSharp
@@ -14,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e90993a6600adaa7f14242289ecb91cf2e74634
-ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
+ms.openlocfilehash: c92ae058caa140f036ac8828899620bcc8d426ac
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55484104"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55943034"
 ---
 # <a name="walkthrough-test-first-development-with-the-generate-from-usage-feature"></a>逐步解說：以 [使用時產生] 功能進行測試優先開發
 

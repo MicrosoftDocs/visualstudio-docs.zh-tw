@@ -1,7 +1,6 @@
 ---
 title: HOW TO：建立基本色彩著色器
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: c301328a-079a-49e8-b688-4749c01657c0
 author: gewarren
@@ -9,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d6e11d7c160537f795a5af188f02ebb2a559c4b
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 858ea12709b187204cd1662d41b82266c99efc01
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55012062"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55953473"
 ---
 # <a name="how-to-create-a-basic-color-shader"></a>HOW TO：建立基本色彩著色器
 

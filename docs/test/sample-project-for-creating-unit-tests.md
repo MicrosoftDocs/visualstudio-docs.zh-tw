@@ -2,7 +2,6 @@
 title: 用於建立單元測試的範例程式碼
 description: 本文提供可在 Visual Studio 中使用單元測試進行測試的範例程式碼。
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: sample
 helpviewer_keywords:
 - unit test sample [Visual Studio]
@@ -12,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 172cf928c52f31f650337c5f0d449e28ccecc294
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 0b914101a98f3eb40c479a3a39556e7e4138504c
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55018523"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55929722"
 ---
 # <a name="sample-code-for-testing"></a>用於測試的範例程式碼
 
