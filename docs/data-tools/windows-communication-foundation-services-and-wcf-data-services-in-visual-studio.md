@@ -32,16 +32,16 @@ helpviewer_keywords:
 ms.assetid: d56f12cb-e139-4fec-b3e4-488383356642
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 80a6633734821eb8d05fb8aa252911f49f719fc1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: 677d68aab6f6dfdb39f12ba33002758f61a03a31
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53847924"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54919937"
 ---
 # <a name="windows-communication-foundation-services-and-wcf-data-services-in-visual-studio"></a>Visual Studio 中的 Windows Communication Foundation 服務和 WCF 資料服務
 
@@ -92,7 +92,7 @@ WCF 用戶端組成*proxy*可讓應用程式來與 WCF 服務，通訊，而且�
 
 ## <a name="wcf-tools-in-visual-studio"></a>Visual Studio 中的 WCF 工具
 
-Visual Studio 提供工具，可協助您建立 WCF 服務和 WCF 用戶端。 如需示範這些工具的逐步解說，請參閱[逐步解說：在 Windows Forms 中建立簡單的 WCF 服務](../data-tools/walkthrough-creating-a-simple-wcf-service-in-windows-forms.md)
+Visual Studio 提供工具，可協助您建立 WCF 服務和 WCF 用戶端。 如需示範這些工具的逐步解說，請參閱[逐步解說：在 Windows Forms 中建立簡單的 WCF 服務
 
 ### <a name="create-and-test-wcf-services"></a>建立和測試 WCF 服務
 
@@ -253,7 +253,7 @@ Windows Communication Foundation (WCF) 服務中的大部分方法可能在同�
 
 ## <a name="related-topics"></a>相關主題
 
-| 標題 | 說明 |
+| 標題 | 描述 |
 | - | - |
 | [逐步解說：在 Windows Forms 中建立簡單的 WCF 服務](../data-tools/walkthrough-creating-a-simple-wcf-service-in-windows-forms.md) | 提供建立和使用 Visual Studio 中的 WCF 服務的逐步示範。 |
 | [逐步解說：使用 WPF 和 Entity Framework 建立 WCF 資料服務](../data-tools/walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework.md) | 提供如何建立及使用 Visual Studio 中的 WCF Data Services 的逐步示範。 |

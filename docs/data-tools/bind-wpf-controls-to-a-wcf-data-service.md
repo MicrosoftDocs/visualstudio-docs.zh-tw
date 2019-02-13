@@ -12,16 +12,16 @@ helpviewer_keywords:
 ms.assetid: 8823537c-82f0-41f7-bf30-705f0e5e59fd
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 1b30675b126f6ed50022f4996cbad9de9226eb59
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
-ms.translationtype: MTE95
+ms.openlocfilehash: 1a84a9a1a8f0a7d30aafc1daa7a0a669674b021e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54269913"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54918008"
 ---
 # <a name="bind-wpf-controls-to-a-wcf-data-service"></a>將 WPF 控制項繫結至 WCF 資料服務
 
@@ -230,7 +230,7 @@ WCF 資料服務中建立專案，以開始此逐步解說：
 
 您可以使用服務 proxy 物件來從服務載入銷售資料。 然後將傳回的資料指派給資料來源<xref:System.Windows.Data.CollectionViewSource>WPF 視窗中。
 
-1. 在設計師中，若要建立`Window_Loaded`事件處理常式，按兩下所讀取的文字：**MainWindow**。
+1. 在設計師中，若要建立`Window_Loaded`事件處理常式，按兩下所讀取的文字：MainWindow()
 
 2. 以下列程式碼取代事件處理常式。 確認您是使用開發電腦的本機主機位址，取代此程式碼中的 *localhost* 位址。
 

@@ -2,7 +2,7 @@
 title: Visual Studio 2019 的新功能
 titleSuffix: ''
 description: 了解 Visual Studio 2019 中的新功能。
-ms.date: 01/24/2019
+ms.date: 01/29/2019
 helpviewer_keywords:
 - Visual Studio, what's new
 - what's new [Visual Studio]
@@ -15,12 +15,12 @@ ms.topic: conceptual
 ms.workload:
 - multiple
 monikerRange: '>= vs-2017'
-ms.openlocfilehash: 9f1d2ba67739dd5349a1a361744543089900a371
-ms.sourcegitcommit: 447f2174bdecdd471d8a8e11c19554977db620a0
+ms.openlocfilehash: 88fe1f9a4f1f3d1d21af2d7d00dee677cab11fc5
+ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2019
-ms.locfileid: "55090098"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55483701"
 ---
 # <a name="whats-new-in-visual-studio-2019-preview"></a>Visual Studio 2019 Preview 的新功能
 
@@ -40,7 +40,7 @@ Visual Studio 2019 Preview 包含許多一般性改良，以及將開發人員�
 * **[持續創新](#continuous-innovation)**。 利用雲端等智慧支援項目，高效編寫程式碼。
 
 > [!NOTE]
-> 如需 Visual Studio 2019 Preview 中新功能的完整清單，請參閱[版本資訊](/visualstudio/releases/2019/release-notes-preview?context=visualstudio/default&contextView=vs-2017)。
+> 如需 Visual Studio 2019 Preview 中新功能的完整清單，請參閱[版本資訊](/visualstudio/releases/2019/release-notes-preview?context=visualstudio/default&contextView=vs-2017)。 如需第二個預覽版的新功能摘要，請參閱 [Visual Studio 2019 Preview 2 is now available](https://blogs.msdn.microsoft.com/visualstudio/2019/01/24/visual-studio-2019-preview-2-is-now-available/) (Visual Studio 2019 Preview 2 現已推出) 部落格文章。
 
 ## <a name="personal-and-team-productivity"></a>個人和團隊生產力
 
@@ -82,6 +82,8 @@ Visual Studio 2019 Preview 包含許多一般性改良，以及將開發人員�
 
    ![Visual Studio 2019 中的新 [監看式] 視窗和格式值功能](media/search-watch-window.png)
 
+如需詳細資訊，請參閱 [Enhanced in Visual Studio 2019:Search for Objects and Properties in the Watch, Autos, and Locals Windows](https://blogs.msdn.microsoft.com/visualstudio/2019/01/28/enhanced-in-visual-studio-2019-search-for-objects-and-properties-in-the-watch-autos-and-locals-windows/) (Visual Studio 2019 的增強功能：在監看式、自動變數和區域變數視窗中搜尋物件和屬性) 部落格文章。
+
 ### <a name="visual-studio-live-share"></a>Visual Studio Live Share
 
 [Visual Studio Live Share](https://visualstudio.microsoft.com/services/live-share/) 這項開發人員服務可讓您與組員共用程式碼庫和其中的內容，並直接從 Visual Stuido 中進行即時雙向共同作業。 組員可透過 Live Share 來閱讀、瀏覽、編輯和偵錯您與其共用的專案，過程相當自然且安全。
@@ -110,7 +112,7 @@ Visual Studio 2019 的預覽版本支援為任何平台建置 [.NET Core 3](http
 
 如果您以不同顯示比例因素設定監視器，或從遠端連線到具有不同於您主要裝置顯示比例因素的機器，您可能會發現 Visual Studio 的顯示模糊，或以錯誤的比例轉譯。
 
-對 Visual Studio 而言，Visual Studio 2019 Preview 1 版本使其往個別監視器感知 (PMA) 應用程式的方向邁進。 我們正在進行能讓 Visual Studio 正確轉譯的基礎工作，不論您使用的顯示比例因素為何。
+對 Visual Studio 而言，Visual Studio 2019 Preview 版本使其往個別監視器感知 (PMA) 應用程式的方向邁進。 我們正在進行能讓 Visual Studio 正確轉譯的基礎工作，不論您使用的顯示比例因素為何。
 
    ![Visual Studio 2019 中的個別監視器感知 (PMA) 轉譯](media/per-monitor-aware-dpi-scaling.png)
 
