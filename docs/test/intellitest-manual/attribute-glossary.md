@@ -1,7 +1,6 @@
 ---
 title: 屬性詞彙 | Microsoft IntelliTest 開發人員測試工具
 ms.date: 05/02/2017
-ms.prod: visual-studio-dev15
 ms.topic: reference
 helpviewer_keywords:
 - IntelliTest, Attribute glossary
@@ -10,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 99fb82ea943df7ffc66000a4cc8ffc500b650583
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 0f5e18bb1a63b7d7630ebc1b7ce2812432dedda9
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54966721"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55916917"
 ---
 # <a name="attribute-glossary"></a>屬性字彙
 

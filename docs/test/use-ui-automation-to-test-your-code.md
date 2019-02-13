@@ -1,7 +1,6 @@
 ---
 title: 自動化 UI 測試
 ms.date: 12/04/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - vs.codedUITest
@@ -17,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 60d88706e818ea4a3bbcf815475a83b2a8f80013
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: df5340d64087068f5da3b48c1057e3a6a8fb700a
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55026265"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55919231"
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>使用 UI 自動化來測試您的程式碼
 

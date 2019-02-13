@@ -1,7 +1,6 @@
 ---
 title: 步驟 6：新增減法問題
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: 59204ef9-24bd-4f81-b85f-e3168e518a3e
 author: TerryGLee
@@ -9,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 71984c6f29abdae6533a0a5977958bea19a51c9f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 1aa69501dac4a74c154a07c9cdc86df50959fc13
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55043475"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55917385"
 ---
 # <a name="step-6-add-a-subtraction-problem"></a>步驟 6：新增減法問題
 在本教學課程的第六個部分中，您將加入減法問題並學習如何執行下列工作：

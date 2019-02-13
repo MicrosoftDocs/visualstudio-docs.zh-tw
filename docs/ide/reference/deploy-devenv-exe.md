@@ -1,7 +1,6 @@
 ---
 title: -Deploy (devenv.exe)
 ms.date: 12/10/2018
-ms.prod: visual-studio-dev15
 ms.topic: reference
 helpviewer_keywords:
 - Devenv, /Deploy switch
@@ -14,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0eef6420f09157a349658ca232a9e2551476b9d1
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 835891689d376d06bda31b050394ae4e61315a8f
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55008473"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55956151"
 ---
 # <a name="deploy-devenvexe"></a>/Deploy (devenv.exe)
 

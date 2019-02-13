@@ -1,7 +1,6 @@
 ---
 title: 進階編譯器設定對話方塊 (Visual Basic)
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - vb.ProjectPropertiesAdvancedCompile
@@ -13,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d32432631f254ca3a9a67d95862f8017fd61ac17
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 87a7924a8a1239da61553c50dc7c7ba8cea547d2
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54941323"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55918321"
 ---
 # <a name="advanced-compiler-settings-dialog-box-visual-basic"></a>進階編譯器設定對話方塊 (Visual Basic)
 

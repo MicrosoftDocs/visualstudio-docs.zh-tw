@@ -1,7 +1,6 @@
 ---
 title: 建立資料驅動的單元測試
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - vs.test.testresults.unittest.datadriven
@@ -15,12 +14,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 5166b2d4e7bc56ab61d8ca93b4d86019572554df
-ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
+ms.openlocfilehash: dc5c4b68b5713ba8831d840decea7f2ea25704f4
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55484013"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55931438"
 ---
 # <a name="how-to-create-a-data-driven-unit-test"></a>HOW TO：建立資料驅動的單元測試
 

@@ -11,16 +11,16 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 4ba6526f05cd0d7acf795151c379d751b9add413
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: da816891c53d4576518102ad7438c735c415f7b4
+ms.sourcegitcommit: 5dc74b4fdff1357df43a19f6e8a51d7bf706abd6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55028552"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "55768381"
 ---
 # <a name="tutorial-create-a-nodejs-and-express-app-in-visual-studio"></a>教學課程：在 Visual Studio 中建立 Node.js 和 Express 應用程式
 
-在使用 Node.js 和 Express 進行 Visual Studio 開發的這個教學課程中，您將建立簡單的 Node.js Web 應用程式、新增一些程式碼、探索 IDE 的一些功能，以及執行應用程式。 如果您尚未安裝 Visual Studio，請在[這裡](http://visualstudio.microsoft.com)免費安裝它。
+在使用 Node.js 和 Express 進行 Visual Studio 開發的這個教學課程中，您將建立簡單的 Node.js Web 應用程式、新增一些程式碼、探索 IDE 的一些功能，以及執行應用程式。 如果您尚未安裝 Visual Studio，請在[這裡](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017)免費安裝它。
 
 在本教學課程中，您將了解如何：
 > [!div class="checklist"]

@@ -1,7 +1,6 @@
 ---
 title: Live Unit Testing
-ms.date: 2017-03-07
-ms.prod: visual-studio-dev15
+ms.date: 03/07/2017
 ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio ALM
@@ -10,12 +9,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5a443eddc56b3aa5af6e4ce1cb8cab958d2be621
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4e631c5b4d9b02b38939e6a1aba6337f633f83fa
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53892844"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55921532"
 ---
 # <a name="live-unit-testing-with-visual-studio-2017"></a>Visual Studio 2017 的 Live Unit Testing
 

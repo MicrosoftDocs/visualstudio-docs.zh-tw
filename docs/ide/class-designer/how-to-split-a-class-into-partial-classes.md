@@ -1,7 +1,6 @@
 ---
 title: HOW TO：將類別分割成部分類別 (類別設計工具)
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - Class Designer, partial classes
@@ -15,12 +14,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b169979da4a6eba777855d3b0af5c0a31059f73
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 32ac7dc37787a91504988fc43636d49d2b3c9ce0
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54970080"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55924028"
 ---
 # <a name="how-to-split-a-class-into-partial-classes-in-class-designer"></a>HOW TO：將類別分割成部分類別 (類別設計工具)
 

@@ -10,13 +10,12 @@ ms.assetid: fec04f2e-bf38-4d44-b2ec-fa50f58fd0d9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 8de0016aa452bc27703bf96d03a891ea3c60ed78
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 647548a59c965b6feacb994efa041ecd5b6c6b91
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54930546"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55908800"
 ---
 # <a name="edit-load-test-scenarios"></a>編輯負載測試情節
 

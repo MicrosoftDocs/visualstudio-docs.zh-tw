@@ -11,13 +11,12 @@ ms.assetid: 0c0fcc99-673b-4ea0-a268-0475f66e5cb6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 64561a045349ee986c5f65ebf0e5ea7e5f11b256
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 8382d5014b88d9f1711a082e46530e1e3dfb96e4
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54973456"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55956008"
 ---
 # <a name="create-custom-code-and-plug-ins-for-load-tests"></a>為負載測試建立自訂程式碼和外掛程式
 

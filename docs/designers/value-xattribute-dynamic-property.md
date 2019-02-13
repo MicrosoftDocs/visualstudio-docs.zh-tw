@@ -1,7 +1,6 @@
 ---
 title: Value (XAttribute 動態屬性)
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 apiname:
 - XAttribute.Value
@@ -12,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e5ab4711d0165511aaf5934eeab1a81308fc3084
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: fe9127d4a7c691c34f15d399bd32f5e48cc6f0ed
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55031116"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55908539"
 ---
 # <a name="value-xattribute-dynamic-property"></a>Value (XAttribute 動態屬性)
 

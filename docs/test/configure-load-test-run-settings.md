@@ -8,13 +8,12 @@ ms.assetid: 0c86918b-cd63-4468-8f49-6d547a1276dc
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: dcb66eb8ebc4aeb09e4cd9d00467808be0b93f28
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 751dda344f65160fc76a528380d1f61e2cae5bec
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55043579"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55913476"
 ---
 # <a name="configure-load-test-run-settings"></a>設定負載測試回合設定
 

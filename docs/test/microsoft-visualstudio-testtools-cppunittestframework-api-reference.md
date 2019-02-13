@@ -1,19 +1,18 @@
 ---
 title: Microsoft.VisualStudio.TestTools.CppUnitTestFramework API 參考
 ms.date: 11/04/2017
-ms.prod: visual-studio-dev15
 ms.topic: reference
 ms.author: mblome
 manager: jillfra
 ms.workload:
 - multiple
 author: mikeblome
-ms.openlocfilehash: 1bb00b4ae7ff787a8349d5dc623cbd7adabbb5de
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 926b2c35d64ebac060f026dbc212874f261719de
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55000649"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55922156"
 ---
 # <a name="microsoftvisualstudiotesttoolscppunittestframework-api-reference"></a>Microsoft.VisualStudio.TestTools.CppUnitTestFramework API 參考
 

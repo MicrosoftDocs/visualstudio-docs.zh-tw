@@ -1,7 +1,6 @@
 ---
 title: Help Content Manager 覆寫
 ms.date: 11/01/2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: 95fe6396-276b-4ee5-b03d-faacec42765f
 author: gewarren
@@ -9,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7b73feb967e340f66eb243013add0b650916c956
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e5614f182b08c41a7ec2172fe080560a4f78b439
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54961422"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55918539"
 ---
 # <a name="help-content-manager-overrides"></a>Help Content Manager 覆寫
 
@@ -32,7 +31,7 @@ ms.locfileid: "54961422"
 
 ### <a name="registry-key-values"></a>登錄機碼值
 
-|登錄機碼值|類型|資料|說明|
+|登錄機碼值|類型|資料|描述|
 |------------------|----|----|-----------|
 |NewContentAndUpdateService|字串|\<服務端點的 HTTP URL\>|定義唯一的服務端點|
 |UseOnlineHelp|dword|`0` 表示指定本機說明，`1` 表示指定線上說明|定義線上或離線說明預設值|

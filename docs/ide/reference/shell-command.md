@@ -1,7 +1,6 @@
 ---
 title: Shell 命令
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - tools.shell
@@ -19,12 +18,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8ed5114dac4bf1d91c77746fbd896e971241dc22
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: cc571c40dfcc1074b157b850c8b6f3f5e4649563
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54923658"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55924509"
 ---
 # <a name="shell-command"></a>Shell 命令
 在 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 內啟動可執行程式。

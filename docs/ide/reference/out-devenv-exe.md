@@ -1,7 +1,6 @@
 ---
 title: -Out (devenv.exe)
 ms.date: 12/10/2018
-ms.prod: visual-studio-dev15
 ms.topic: reference
 helpviewer_keywords:
 - errors [Visual Studio], builds
@@ -19,12 +18,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f060f1f098b3a9a0f9b9939ecde6c7c2b48d946
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 039456c10993199ec2265042aabc0ed5c475ccd9
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55022608"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55954734"
 ---
 # <a name="out-devenvexe"></a>/Out (devenv.exe)
 

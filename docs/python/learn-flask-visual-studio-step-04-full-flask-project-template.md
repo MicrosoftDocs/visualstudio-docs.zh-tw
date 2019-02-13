@@ -3,7 +3,6 @@ title: Visual Studio 中的了解 Flask 教學課程步驟 4，Web 專案範本
 titleSuffix: ''
 description: 逐步解說 Visual Studio 專案內容中的 Flask 基本知識，特別是「Flask Web 專案」和「Flask/Jade Web 專案」範本所提供的功能。
 ms.date: 01/07/2019
-ms.prod: visual-studio-dev15
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
@@ -12,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6a179dc2dc8f3851b1b75ca840b55e07e1ff6a30
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b17400aae5386a2d86cc13d0b81293bd2ef068fb
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54927511"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55908916"
 ---
 # <a name="step-4-use-the-full-flask-web-project-template"></a>步驟 4：使用完整的 Flask Web 專案範本
 

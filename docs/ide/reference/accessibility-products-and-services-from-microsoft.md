@@ -2,7 +2,6 @@
 title: Microsoft 的協助工具產品和服務
 description: 深入了解 Microsoft 提供的產品與服務，可協助讓我們的作業系統、程式和應用程式更易於存取且可供每個人使用，包括身心障礙人士。
 ms.date: 08/22/2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - TTY/TDD services
@@ -20,12 +19,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5eb85431916a844724e7bfd4b69a6d269045db5a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 2a5b610a268344946390c66a5c6cc34ae0dc3c4d
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55034545"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55932088"
 ---
 # <a name="accessibility-products-and-services-from-microsoft"></a>Microsoft 的協助工具產品和服務
 

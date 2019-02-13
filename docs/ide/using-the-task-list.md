@@ -1,7 +1,6 @@
 ---
 title: 使用工作清單
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - TaskListWindow
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 78f0d25026ca4855aa3eb5507e49389e0484cf2f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 7a54b95130479a2f8091c3618ac32e48c261e5e0
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54940228"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55954695"
 ---
 # <a name="use-the-task-list"></a>使用工作清單
 

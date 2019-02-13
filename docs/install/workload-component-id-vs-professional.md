@@ -13,16 +13,15 @@ helpviewer_keywords:
 - component ID, Visual Studio
 - install Visual Studio, administrator guide
 ms.service: ''
-ms.prod: visual-studio-dev15
 ms.assetid: 5719032b-2c2e-416e-a281-a4573ec74e38
 ms.workload:
 - multiple
-ms.openlocfilehash: 05cca1fd8f6621254f7ab5c3c427c2450d83802e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 69f3c312bce84da669033162cdea086a8a5f2cee
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55017834"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55928058"
 ---
 # <a name="visual-studio-professional-2017-component-directory"></a>Visual Studio Professional 2017 元件目錄
 

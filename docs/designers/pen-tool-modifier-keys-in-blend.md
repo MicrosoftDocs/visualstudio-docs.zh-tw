@@ -1,7 +1,6 @@
 ---
 title: Blend 中的畫筆工具輔助按鍵
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: c3ab14c6-a320-46db-a6b3-7fd1ca261587
 author: gewarren
@@ -9,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4239deccfb77bccc2a6f6637d5daf3176e1a3dab
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b43aa4dcb754b2df67b58b09ab3a9920c552acdf
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54948241"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55957555"
 ---
 # <a name="pen-tool-modifier-keys-in-blend"></a>Blend 中的畫筆工具輔助按鍵
 下表列出當您使用 [畫筆] 工具 ![[畫筆] 工具](../designers/media/d514358f-185a-412f-a55d-36633b25dc8a.png) 建立路徑時，可用於修改路徑的快速鍵。 您也可以使用 [畫筆] 工具，加入或移除現有路徑上的點，或結合兩個現有路徑。

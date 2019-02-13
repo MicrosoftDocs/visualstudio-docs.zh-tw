@@ -1,7 +1,6 @@
 ---
 title: 移至檔案、移至符號、移至行
 ms.date: 08/14/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - code editor, go to
@@ -13,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b06bc4e3bc598f57838d633ccf0713338d5f9179
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 92e82e4570f7df3ab42ed452b0ee8d71ace91901
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54934753"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55923534"
 ---
 # <a name="find-code-using-go-to-commands"></a>使用移至命令來尋找程式碼
 
@@ -53,7 +52,7 @@ Visual Studio 的 [移至] 命令會對程式碼執行焦點式搜尋，協助�
 
 若要縮小搜尋範圍至特定類型的程式碼項目，您可以在 [搜尋] 方塊中指定前置詞，或選取五個篩選條件圖示的其中一個：
 
-前置詞 | 圖示 | 快速鍵 | 說明
+前置詞 | 圖示 | 快速鍵 | 描述
 :-: | - | - | -
 :| ![行圖示](media/gotoall-line-icon.png) | **Ctrl**+**G** | 移至指定的行號
 f| ![檔案圖示](media/gotoall-files-icon.png) | **Ctrl**+**1**、**Ctrl**+**F** | 移至指定的檔案
@@ -66,7 +65,7 @@ m| ![成員圖示](media/gotoall-members-icon.png) | **Ctrl**+**1**、**Ctrl**+*
 
 若要將搜尋範圍縮小為特定位置，請選取兩個文件圖示的其中一個：
 
-圖示 | 說明
+圖示 | 描述
 ---- | ---
 ![目前文件](media/gotoall_currentdocument.png) | 僅搜尋目前文件
 ![外部文件](media/gotoall_external.png) | 除了專案/方案中的文件之外，還會搜尋外部文件
@@ -81,7 +80,7 @@ m| ![成員圖示](media/gotoall-members-icon.png) | **Ctrl**+**1**、**Ctrl**+*
 
 選取齒輪圖示 ![齒輪圖示](media/gotoall_gear.png) 可讓您變更這項功能的運作方式：
 
-設定 | 說明
+設定 | 描述
 ------- | ---
 使用預覽索引標籤 | 在 IDE 的預覽索引標籤中立即顯示選取的項目
 顯示詳細資料 | 在視窗中顯示文件註解中的專案、檔案、行和摘要資訊
