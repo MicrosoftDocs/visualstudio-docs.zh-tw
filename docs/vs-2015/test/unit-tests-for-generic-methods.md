@@ -1,32 +1,27 @@
 ---
 title: 泛型方法的單元測試 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 helpviewer_keywords:
 - generics, and unit tests
 - unit tests, and generics
 ms.assetid: ffc89814-a7df-44fc-aef5-dd3dfeb28a9b
 caps.latest.revision: 49
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 3657c3ea41af2aa85177ff47a28797ef7f55cc41
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 1b419568490e41b135c2c7c801154f6550c546e9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49914394"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54771460"
 ---
 # <a name="unit-tests-for-generic-methods"></a>泛型方法的單元測試
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-您可以產生泛型方法的單元測試，就像您為其他方法所進行的測試一樣，如同[如何：建立及執行單元測試](http://msdn.microsoft.com/en-us/5e0f43cf-5e51-48e2-9c98-0eb9324bdc48)中所述。 下列章節提供建立泛型方法之單元測試的相關資訊與範例。  
+您可以產生泛型方法的單元測試跟您一樣的其他方法，如中所述[How to:建立和執行單元測試](http://msdn.microsoft.com/5e0f43cf-5e51-48e2-9c98-0eb9324bdc48)。 下列章節提供建立泛型方法之單元測試的相關資訊與範例。  
   
 ## <a name="type-arguments-and-type-constraints"></a>類型引數和類型條件約束  
  在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 產生泛型類別 (例如 `MyList<T>`) 的單元測試時，會產生兩個方法：一個泛型協助程式方法和一個測試方法。 如果 `MyList<T>` 具有一個或多個類型條件約束，則此類型引數必須滿足所有類型條件約束。 為了確定待測泛型程式碼是否如預期般適用於允許的所有輸入，測試方法會使用您想測試的所有條件約束來呼叫泛型協助程式方法。  
@@ -116,7 +111,7 @@ public void SizeOfLinkedListTestHelper<T>()
 [TestMethod()]  
 public void SizeOfLinkedListTest()   
 {  
-    SizeOfLinkedListTestHelper<int>();  // step 6  
+    SizeOfLinkedListTestHelper<int>();  // step 6  
     SizeOfLinkedListTestHelper<char>(); // step 7  
 }  
 ```  
@@ -202,9 +197,6 @@ namespace ClassLibrary2
 }  
 ```  
   
-## <a name="see-also"></a>另請參閱  
- [單元測試的結構](http://msdn.microsoft.com/en-us/a03d1ee7-9999-4e7c-85df-7d9073976144)   
+## <a name="see-also"></a>請參閱  
+ [單元測試的結構](http://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144)   
  [對程式碼進行單元測試](../test/unit-test-your-code.md)
-
-
-

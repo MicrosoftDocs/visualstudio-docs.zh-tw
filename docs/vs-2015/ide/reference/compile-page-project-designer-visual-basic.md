@@ -1,14 +1,9 @@
 ---
 title: 專案設計工具、編譯頁面 (Visual Basic) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - vb.ProjectPropertiesCompile
 helpviewer_keywords:
@@ -23,13 +18,13 @@ ms.assetid: b2a80230-906e-4e85-b3e0-fcd9c40426e1
 caps.latest.revision: 65
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 4b369b1aa8d9e6857b29a5c37d13169b2e21ea74
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 928d3c4fe3e90c731f56eba4e7275772fdcd76c2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49924548"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54778908"
 ---
 # <a name="compile-page-project-designer-visual-basic"></a>專案設計工具、編譯頁 (Visual Basic)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -45,21 +40,21 @@ ms.locfileid: "49924548"
  下列設定可讓您選取要顯示或修改的組態和平台。  
   
 > [!NOTE]
->  使用簡化的組建組態時，專案系統會決定要建置偵錯或發行版本。 因此，不會顯示 [組態] 和 [平台] 清單。 如需詳細資訊，請參閱[偵錯和發行專案組態](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e)。  
+>  使用簡化的組建組態時，專案系統會決定要建置偵錯或發行版本。 因此，不會顯示 [組態] 和 [平台] 清單。 如需詳細資訊，請參閱[偵錯和發行專案組態](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e)。  
   
  **組態**  
- 指定要顯示或修改的組態設定。 設定是 [偵錯] (預設值)、[發行] 或 [所有組態]。 如需詳細資訊，請參閱[偵錯和發行專案組態](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e)與[如何：建立和編輯組態](../../ide/how-to-create-and-edit-configurations.md)。  
+ 指定要顯示或修改的組態設定。 設定是 [偵錯] (預設值)、[發行] 或 [所有組態]。 如需詳細資訊，請參閱 <<c0> [ 偵錯和發行專案組態](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e)和[How to:建立及編輯組態](../../ide/how-to-create-and-edit-configurations.md)。  
   
  **平台**  
- 指定要顯示或修改的平台設定。 您可以指定 [任何 CPU] (預設值)、[x64] 或 [x86]。 如需詳細資訊，請參閱[偵錯和發行專案組態](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e)。  
+ 指定要顯示或修改的平台設定。 您可以指定 [任何 CPU] (預設值)、[x64] 或 [x86]。 如需詳細資訊，請參閱[偵錯和發行專案組態](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e)。  
   
 ## <a name="compiler-configuration-options"></a>編譯器組建選項  
  下列設定可讓您設定編譯器組態選項。  
   
  **建置輸出路徑**  
- 指定此專案組態的輸出檔案位置。 在此方塊中鍵入建置輸出的路徑，或者按一下 [瀏覽] 按鈕以選取路徑。 請注意，路徑是相對的；如果您輸入絕對路徑，它會儲存為相對路徑。 預設路徑為 bin\Debug\ 或 bin\Release\\。 如需詳細資訊，請參閱[偵錯和發行專案組態](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e)。  
+ 指定此專案組態的輸出檔案位置。 在此方塊中鍵入建置輸出的路徑，或者按一下 [瀏覽] 按鈕以選取路徑。 請注意，路徑是相對的；如果您輸入絕對路徑，它會儲存為相對路徑。 預設路徑為 bin\Debug\ 或 bin\Release\\。 如需詳細資訊，請參閱[偵錯和發行專案組態](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e)。  
   
- 使用簡化的組建組態時，專案系統會決定要建置偵錯或發行版本。 不論您指定的 [輸出路徑] 為何，[偵錯] 功能表 (F5) 中的 [建置] 命令都會將組建放在偵錯位置。 不過，[建置] 功能表中的 [建置] 命令卻會將其放在您指定的位置。 如需詳細資訊，請參閱[偵錯和發行專案組態](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e)。  
+ 使用簡化的組建組態時，專案系統會決定要建置偵錯或發行版本。 不論您指定的 [輸出路徑] 為何，[偵錯] 功能表 (F5) 中的 [建置] 命令都會將組建放在偵錯位置。 不過，[建置] 功能表中的 [建置] 命令卻會將其放在您指定的位置。 如需詳細資訊，請參閱[偵錯和發行專案組態](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e)。  
   
  **Option Explicit**  
  指定是否允許變數隱含宣告。 選取 [On] 表示必須明確宣告變數。 如果變數未在使用前宣告，這會導致編譯器報告錯誤。 選取 [Off] 則表示允許隱含宣告變數。  
@@ -174,12 +169,9 @@ ms.locfileid: "49924548"
   **進階編譯選項**  
   按一下此按鈕可存取 [進階編譯器設定] 對話方塊。 請使用 [進階編譯器設定] 對話方塊來指定專案的進階建置組態屬性。 此對話方塊只適用於 Visual Basic 專案。 如需詳細資訊，請參閱[進階編譯器設定對話方塊 (Visual Basic)](../../ide/reference/advanced-compiler-settings-dialog-box-visual-basic.md)。  
   
-## <a name="see-also"></a>另請參閱  
- [偵錯和發行專案組態](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e)   
- [管理編譯屬性](http://msdn.microsoft.com/en-us/94308881-f10f-4caf-a729-f1028e596a2c)   
+## <a name="see-also"></a>請參閱  
+ [偵錯和發行專案組態](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e)   
+ [管理編譯屬性](http://msdn.microsoft.com/94308881-f10f-4caf-a729-f1028e596a2c)   
  [如何：指定建置事件 (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md)   
  [Visual Basic 命令列編譯器](http://msdn.microsoft.com/library/6b57c444-50c7-4b88-8f59-ed65cff5e05c)   
  [如何：建立和編輯組態](../../ide/how-to-create-and-edit-configurations.md)
-
-
-

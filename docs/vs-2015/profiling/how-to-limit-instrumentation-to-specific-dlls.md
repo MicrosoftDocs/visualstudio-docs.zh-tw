@@ -1,27 +1,22 @@
 ---
 title: 如何：限制檢測特定 DLL | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - performance tools, runtime profiling control window
 ms.assetid: 17c5996f-e3d0-4e44-b175-52b401b0f2d5
 caps.latest.revision: 24
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 054a281d445f5910e9a2d635bb453dd283425453
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 93d2e85455544a52d7ed6e9d49c5e93b5c771a3f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51803457"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54779491"
 ---
 # <a name="how-to-limit-instrumentation-to-specific-dlls"></a>如何：限制檢測特定 DLL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -75,9 +70,6 @@ ms.locfileid: "51803457"
     > [!NOTE]
     >  請勿指定執行 DLL 的可執行檔 (.exe)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [控制資料收集](../profiling/controlling-data-collection.md)   
  [如何：限制檢測特定函式](../profiling/how-to-limit-instrumentation-to-specific-functions.md)
-
-
-

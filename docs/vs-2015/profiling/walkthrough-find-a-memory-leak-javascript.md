@@ -1,14 +1,9 @@
 ---
-title: 逐步解說：尋找記憶體流失 (JavaScript) | Microsoft Docs
-ms.custom: ''
+title: 逐步解說：找出記憶體流失 (JavaScript) |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -20,13 +15,13 @@ ms.assetid: f595412f-776b-49a2-8433-ea0062c6904d
 caps.latest.revision: 36
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: e2b84adac23547f42cca6113c5f5a7090f224e8c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 88f9d8fc871f182bb3a6d7f36c3648982e7a9684
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51744942"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54780930"
 ---
 # <a name="walkthrough-find-a-memory-leak-javascript"></a>逐步解說：尋找記憶體遺漏 (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -224,7 +219,7 @@ ms.locfileid: "51744942"
   
     - 這個物件是來自快照 #2 的剩餘物件，表示可能發生記憶體流失問題。  
   
-      這時如果我們了解此應用程式的內容，就會知道選擇 [ **Leak Memory** ] 按鈕時應該要移除 DIV 元素並加入新元素，因此程式碼一定是哪裡出了問題 (遺失了記憶體)。 下一節會說明如何修正這個問題。  
+      此時可協助應用程式的一些知識：選擇**Leak Memory**按鈕時應該移除 DIV 元素並加入新元素，因此程式碼似乎不是正常運作 （也就是流失記憶體）。 下一節會說明如何修正這個問題。  
   
     > [!TIP]
     >  在某些情況下，找出與 `Global` 物件有關的物件可能有助於識別該物件。 若要這麼做，請開啟識別項的捷徑功能表，然後選擇 [ **在根檢視中顯示**]。  
@@ -291,8 +286,5 @@ ms.locfileid: "51744942"
   
       ![顯示已修正記憶體流失的快照](../profiling/media/js-mem-app-fixed-snapshot3.png "JS_Mem_App_Fixed_Snapshot3")  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [JavaScript 記憶體](../profiling/javascript-memory.md)
-
-
-

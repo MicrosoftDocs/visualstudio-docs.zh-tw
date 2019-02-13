@@ -1,14 +1,9 @@
 ---
-title: 如何：建立類型之間的繼承 (類別設計工具) | Microsoft Docs
-ms.custom: ''
+title: HOW TO：建立型別 （類別設計工具） 之間的繼承 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vs.classdesigner.inheritanceline
 helpviewer_keywords:
@@ -18,13 +13,13 @@ ms.assetid: 3786a21c-8022-4bf5-9d13-740fd354e93c
 caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 5bcc052589f090eaad8aace8c491f74d3bbfefe9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: d1c5b5d75dedf45988291459ed55b31bf80fc583
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49257773"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54760228"
 ---
 # <a name="how-to-create-inheritance-between-types-class-designer"></a>如何：建立類型之間的繼承 (類別設計工具) 
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,11 +49,8 @@ ms.locfileid: "49257773"
     >   
     >  雖然您可以視覺化現有的泛型類型，不過無法建立新的泛型類型。 您也無法變更現有泛型類型的型別參數。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [繼承](http://msdn.microsoft.com/library/81d64ee4-50f9-4d6c-a8dc-257c348d2eea)   
  [繼承的基本概念](http://msdn.microsoft.com/library/dfc8deba-f5b3-4d1d-a937-7cb826446fc5)   
  [如何：檢視類型之間的繼承 (類別設計工具)](../ide/how-to-view-inheritance-between-types-class-designer.md)   
  [類別設計工具中的 Visual C++ 類別](../ide/visual-cpp-classes-in-class-designer.md)
-
-
-

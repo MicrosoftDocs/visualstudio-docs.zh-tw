@@ -1,14 +1,9 @@
 ---
 title: 安全性頁面、專案設計工具 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - vb.ProjectPropertiesSecurity
 - vb.XBAPProjectPropertiesSecurity
@@ -23,13 +18,13 @@ ms.assetid: 641d9cd3-fa07-498a-8568-3c169bb4d3d5
 caps.latest.revision: 40
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 967ce9221313c88b10a792f15ffaec80da99de03
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 79900957453464ea5f5dcf338f447dbe01399d11
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49267809"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54760092"
 ---
 # <a name="security-page-project-designer"></a>專案設計工具、安全性頁
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -76,7 +71,7 @@ ms.locfileid: "49267809"
  **進階**  
  開啟 [[進階安全性設定] 對話方塊](../../ide/reference/advanced-security-settings-dialog-box.md)，這是用來設定以限制權限偵錯應用程式的設定。 偵錯期間會檢查這些設定，權限例外狀況會指出應用程式可能需要比在區域中定義更高的權限。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  <xref:System.Security.Permissions.WebBrowserPermission>   
  <xref:System.Security.Permissions.MediaPermission>   
  [ClickOnce 應用程式的程式碼存取安全性](../../deployment/code-access-security-for-clickonce-applications.md)   
@@ -87,6 +82,3 @@ ms.locfileid: "49267809"
  [ClickOnce 安全性和部署](../../deployment/clickonce-security-and-deployment.md)   
  [專案屬性參考](../../ide/reference/project-properties-reference.md)   
  [進階安全性設定對話方塊](../../ide/reference/advanced-security-settings-dialog-box.md)
-
-
-

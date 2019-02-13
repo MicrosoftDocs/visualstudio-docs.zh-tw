@@ -1,14 +1,9 @@
 ---
 title: 文字編輯器選項對話方塊 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Outlining
 - VS.ToolsOptionsPages.Text_Editor.Visual_JSharp.Miscellaneous
@@ -25,13 +20,13 @@ ms.assetid: 90d4e522-6391-4571-927d-b466a9766342
 caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 939438c2506a95c98005144dde395028d18cc481
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 4e81a2168516974fef40dad5cf46b3aff77fc54a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49260230"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54788095"
 ---
 # <a name="text-editor-options-dialog-box"></a>文字編輯器選項對話方塊
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -97,6 +92,3 @@ ms.locfileid: "49260230"
 ## <a name="related-sections"></a>相關章節  
  [撰寫程式碼](../../ide/writing-code-in-the-code-and-text-editor.md)  
  說明不同的程式碼編輯器使用方式。
-
-
-

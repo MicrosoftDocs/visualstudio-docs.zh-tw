@@ -1,25 +1,20 @@
 ---
-title: 如何：建立基本色彩著色器 | Microsoft Docs
-ms.custom: ''
+title: HOW TO：建立基本色彩著色器 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: c301328a-079a-49e8-b688-4749c01657c0
 caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 3bcbbb8ede9f30ed1c0340098ffb358cf5715487
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: b1e202f84fb3b4e0e865e2cebb96b6728289ff6b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49813205"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54774110"
 ---
 # <a name="how-to-create-a-basic-color-shader"></a>如何：建立基本色彩著色器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,11 +57,8 @@ ms.locfileid: "49813205"
   
  某些圖形可對一些著色器提供更佳的預覽。 如需如何在著色器設計工具中預覽著色器的詳細資訊，請參閱[著色器設計工具](../designers/shader-designer.md)。  
   
-## <a name="see-also"></a>另請參閱  
- [如何：將著色器套用至 3D 模型](../designers/how-to-apply-a-shader-to-a-3-d-model.md)   
+## <a name="see-also"></a>請參閱  
+ [如何：將著色器套用至 3d 模型](../designers/how-to-apply-a-shader-to-a-3-d-model.md)   
  [如何：匯出著色器](../designers/how-to-export-a-shader.md)   
  [著色器設計工具](../designers/shader-designer.md)   
  [著色器設計工具節點](../designers/shader-designer-nodes.md)
-
-
-

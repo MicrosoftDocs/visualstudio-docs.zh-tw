@@ -1,14 +1,9 @@
 ---
 title: 如何：指定要優先建置的目標 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords:
 - DefaultTargets attribute [MSBuild]
 - MSBuild, specifying the defalut target
@@ -17,13 +12,13 @@ ms.assetid: a580ba5b-2919-42d2-ae38-1af991e0205a
 caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: f4ea97ed3650e74a10bfc5e49657f0ed3dce60ba
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 52baabe5a8cf2e064c72ef7a5ab146d534214d90
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49840690"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54797034"
 ---
 # <a name="how-to-specify-which-target-to-build-first"></a>如何：指定要優先建置的目標
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +31,7 @@ ms.locfileid: "49840690"
   
 #### <a name="to-specify-one-initial-target"></a>指定一個初始目標  
   
-- 在 `Project` 項目的 `InitialTargets` 屬性中，指定預設的目標。 例如:   
+- 在 `Project` 項目的 `InitialTargets` 屬性中，指定預設的目標。 例如：  
   
    `<Project InitialTargets="Clean">`  
   
@@ -53,7 +48,7 @@ ms.locfileid: "49840690"
   
 #### <a name="to-specify-one-default-target"></a>指定一個預設目標  
   
-- 在 `Project` 項目的 `DefaultTargets` 屬性中，指定預設的目標。 例如:   
+- 在 `Project` 項目的 `DefaultTargets` 屬性中，指定預設的目標。 例如：  
   
    `<Project DefaultTargets="Compile">`  
   
@@ -70,19 +65,17 @@ ms.locfileid: "49840690"
   
 #### <a name="to-use-a-target-other-than-the-default-target-first"></a>優先使用非預設的目標  
   
--   使用 **/target** 命令列參數，將目標指定為第一個目標。 例如:   
+-   使用 **/target** 命令列參數，將目標指定為第一個目標。 例如：  
   
      `msbuild file.proj /target:Clean`  
   
 #### <a name="to-use-several-targets-other-than-the-default-targets-first"></a>優先使用預設目標以外的數個目標  
   
--   使用 **/target** 命令列參數，列出以分號或逗號的目標。 例如:   
+-   使用 **/target** 命令列參數，列出以分號或逗號的目標。 例如：  
   
      `msbuild <file name>.proj /t:Clean;Compile`  
   
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
   [ MSBuild](msbuild.md)  
  [目標](../msbuild/msbuild-targets.md)   
  [如何：清除組建](../msbuild/how-to-clean-a-build.md)
-
-

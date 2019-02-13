@@ -1,14 +1,9 @@
 ---
 title: Visual Studio 整合 (MSBuild) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, reference resolution
 - MSBuild, well-known target names
@@ -23,13 +18,13 @@ ms.assetid: 06cd6d7f-8dc1-4e49-8a72-cc9e331d7bca
 caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: e2b9591ebff8708d0cd63825854c31cf297d32ce
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 83f9bf8b0e427fd3e0357a5cf9e69d797dfc4782
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49294849"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54763306"
 ---
 # <a name="visual-studio-integration-msbuild"></a>Visual Studio 整合 (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,14 +49,14 @@ Visual Studio 會裝載 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]
   
 ```  
 Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' "  
-Condition=" '$(Configuration)' == 'Release' "   
+Condition=" '$(Configuration)' == 'Release' "   
 Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' "  
 ```  
   
  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 會查看 `PropertyGroup`、`ItemGroup`、`Import`、屬性和項目的條件，以便建立這份清單。  
   
 ## <a name="additional-build-actions"></a>其他建置動作  
- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 可讓您使用[檔案屬性](http://msdn.microsoft.com/en-us/013c4aed-08d6-4dce-a124-ca807ca08959)視窗的 [建置動作] 屬性，來變更專案中檔案的項目類型名稱。 `Compile`、 `EmbeddedResource`、 `Content`和 `None` 等項目類型名稱會一直列在這個功能表中，另外還會列出專案中既有的其他項目類型名稱。 若要確保自訂的項目類型名稱都會一直列在這個功能表中，您可以將其名稱加入至名為 `AvailableItemName`的項目類型中。 例如，如果在專案檔中加入下列程式碼，就會將自訂類型 `JScript` 加入至所有會匯入此類型之專案的這個功能表中：  
+ [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 可讓您使用[檔案屬性](http://msdn.microsoft.com/013c4aed-08d6-4dce-a124-ca807ca08959)視窗的 [建置動作] 屬性，來變更專案中檔案的項目類型名稱。 `Compile`、 `EmbeddedResource`、 `Content`和 `None` 等項目類型名稱會一直列在這個功能表中，另外還會列出專案中既有的其他項目類型名稱。 若要確保自訂的項目類型名稱都會一直列在這個功能表中，您可以將其名稱加入至名為 `AvailableItemName`的項目類型中。 例如，如果在專案檔中加入下列程式碼，就會將自訂類型 `JScript` 加入至所有會匯入此類型之專案的這個功能表中：  
   
 ```  
 <ItemGroup>  
@@ -187,7 +182,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
   
  快速更新檢查並不適用 Visual Studio 中的定期組建，而且專案的建置方式就如同您在命令提示字元中叫用組建一般。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [如何：擴充 Visual Studio 建置流程](../msbuild/how-to-extend-the-visual-studio-build-process.md)   
  [從 IDE 中啟動組建](../msbuild/starting-a-build-from-within-the-ide.md)   
  [登錄 .NET Framework 的延伸模組](../msbuild/registering-extensions-of-the-dotnet-framework.md)   
@@ -197,6 +192,3 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
  [Target 項目 (MSBuild)](../msbuild/target-element-msbuild.md)   
  [Csc 工作](../msbuild/csc-task.md)   
  [Vbc 工作](../msbuild/vbc-task.md)
-
-
-
