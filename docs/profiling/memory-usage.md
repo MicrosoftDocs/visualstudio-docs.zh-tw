@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 43c58825aab4d882ac6ca80b71b2c5a0aa542f76
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: ef69d38374835632768bda69e57ee0c2cf1200cb
+ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54994562"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56155730"
 ---
 # <a name="measure-memory-usage-in-visual-studio"></a>在 Visual Studio 中測量記憶體使用量
 當您進行偵錯時，您可以使用與偵錯工具整合的 [記憶體使用量] 診斷工具，來找出記憶體遺漏和記憶體使用沒有效率等問題。 記憶體使用量工具可讓您擷取受控 原生之記憶體堆積的一或多個「快照」，以利了解物件類型的記憶體使用量影響。 您可以收集 .NET、原生或混合模式 (.NET 和原生) 應用程式的快照。  
@@ -160,10 +160,6 @@ ms.locfileid: "54994562"
   ![原生類型差異檢視](../profiling/media/dbgdiag_mem_native_typesviewdiff.png "DBGDIAG_MEM_Native_TypesViewDiff")  
   
 ## <a name="blogs-and-videos"></a>部落格和影片  
-
-| | |
-|---------|---------|
-| ![影片的電影攝影機圖示](../install/media/video-icon.png "觀看影片") | [觀看使用診斷工具的影片](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Profiling-with-Diagnostics-Tools-in-Visual-Studio-2017-daHnzMD6D_9211787171)，了解如何在 Visual Studio 2017 中分析記憶體使用量和 CPU 使用量。 |
 
  [Analyze CPU and Memory While Debugging](https://blogs.msdn.microsoft.com/visualstudio/2016/02/15/analyze-cpu-memory-while-debugging/) (偵錯時分析 CPU 與記憶體)  
   

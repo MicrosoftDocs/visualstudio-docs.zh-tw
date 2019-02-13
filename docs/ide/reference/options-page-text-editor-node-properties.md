@@ -1,7 +1,6 @@
 ---
 title: 文字編輯器節點屬性、選項頁
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 helpviewer_keywords:
 - Tools Options settings, Text Editor node properties
@@ -12,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ccb698083b6c24f0f7deed70e17f6a1e6b1f5b95
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b04897304bc90d35bcf9fd5e61f5329ce922ea91
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54977053"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55924652"
 ---
 # <a name="options-page-text-editor-node-properties"></a>文字編輯器節點屬性、選項頁
 本文件描述與 [選項] 對話方塊的 [文字編輯器] 分類 `DTE.Properties("TextEditor", <Property Page>)` 相關聯的一些頁面 (或屬性集合)。 每一小節的標題就是用來存取 `Properties` 集合的呼叫，而每一小節中的表格會列出集合中的屬性。
@@ -27,7 +26,7 @@ ms.locfileid: "54977053"
 ## <a name="general"></a>一般
  `DTE.Properties("TextEditor", "General")`
 
-|屬性項目名稱|值|說明|
+|屬性項目名稱|值|描述|
 | - |-----------|-----------------|
 |GoToAnchorAfterEscape|Get/Set (布林值)|如果為 `True`，在有選取範圍時按 Escape 鍵會將插入點移至建立選取範圍這個動作的起始位置。 如果為 `False`，則會將插入點移至選取範圍的結束位置。|
 |DragNDropTextEditing|Get/Set (布林值)|決定您能否在文件中拖曳選取的文字區域，執行複製或剪貼作業。|
@@ -46,7 +45,7 @@ ms.locfileid: "54977053"
 
  `PlainText` 編輯器選項會影響編輯文字檔時的編輯器設定。 每個程式語言和 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 套件都有各自特定的 [文字編輯器] 設定。 例如，若要檢視或變更 [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] 的編輯器設定，請使用 `DTE.Properties("TextEditor", "CSharp") or DTE.Properties("TextEditor", "CSharp-Specific")`。 [SQL 指令碼] 編輯器設定請使用 `DTE.Properties("TextEditor", "SQL ")`。
 
-|屬性項目名稱|值|說明|
+|屬性項目名稱|值|描述|
 | - |-----------|-----------------|
 |AutoListMembers|Get/Set (布林值)|決定當使用者在變數參考後面輸入句號時，是否自動顯示可用的成員清單|
 |AutoListParams|Get/Set (布林值)|決定當使用者在函式名稱後面輸入 "(" 時，是否自動顯示引數清單描述|

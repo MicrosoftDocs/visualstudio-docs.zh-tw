@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c3219621b5253287845449cd02d50188b9bddd7c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 6e8b1f602dc791b0475b0e33aa49215aaa62860d
+ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54983673"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56155301"
 ---
 # <a name="measure-application-performance-by-analyzing-cpu-usage"></a>透過分析 CPU 使用量測量應用程式效能
 您可以使用 Visual Studio 程式碼剖析工具來分析應用程式中的效能問題。 此程序示範如何使用 [診斷工具] 的 [CPU 使用量] 索引標籤，以取得您的應用程式的效能資料。 診斷工具可用於 Visual Studio 中的 .NET 開發 (包括 ASP.NET) 和原生/C++ 開發。
@@ -30,10 +30,6 @@ ms.locfileid: "54983673"
 當偵錯工具暫停時，[CPU 使用量] 工具會收集在應用程式中執行的函式的詳細資訊。 此工具列出正在執行工作的函式，並提供讓您用來專注於取樣工作階段特定區段的時間軸圖形。
 
 診斷中樞提供許多其他選項來執行和管理診斷工作階段。 如果 [CPU 使用量] 沒有提供您所需的資料，則[其他程式碼剖析工具](../profiling/profiling-feature-tour.md)可提供不同種類的資訊，這可能會很有幫助。 在許多情況下，應用程式的效能瓶頸可能是 CPU 以外的問題所導致，例如記憶體、呈現 UI 或網路要求時間。 診斷中樞提供許多其他選項來記錄和分析這類資料。
-
-| | |
-|---------|---------|
-| ![影片的電影攝影機圖示](../install/media/video-icon.png "觀看影片") | [觀看使用診斷工具的影片](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Profiling-with-Diagnostics-Tools-in-Visual-Studio-2017-daHnzMD6D_9211787171)，了解如何分析 CPU 使用量，以及如何分析記憶體使用量。 |
 
 在本文中，我們將討論一般偵錯工作流程中的 CPU 使用量分析。 您也可以不附加偵錯工具或是以執行中的應用程式為目標來分析 CPU 使用量。如需詳細資訊，請參閱[使用或不使用偵錯工具來執行分析工具](../profiling/running-profiling-tools-with-or-without-the-debugger.md)中的[收集分析資料但不偵錯](../profiling/running-profiling-tools-with-or-without-the-debugger.md#collect-profiling-data-without-debugging)。
 

@@ -2,7 +2,6 @@
 title: 管理 Python 環境與解譯器
 description: 使用 [Python 環境] 視窗管理全域、虛擬和 conda 環境、安裝 Python 解譯器和套件，以及將環境指派給 Visual Studio 專案。
 ms.date: 12/07/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -10,12 +9,12 @@ manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e883cb199ca2959015dac0c6492d19e7875c5ca1
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 4514aa132adab37425d0d49c4594fec8db09d12d
+ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54958780"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56155717"
 ---
 # <a name="how-to-create-and-manage-python-environments-in-visual-studio"></a>如何在 Visual Studio 中建立及管理 Python 環境
 
@@ -71,10 +70,6 @@ Visual Studio 會使用登錄尋找已安裝的全域環境 (在 [PEP 514](https
 
 > [!Note]
 > 雖然 Visual Studio 會遵守「系統-站台-套件」選項，但未提供從 Visual Studio 內變更它的方式。
-
-|   |   |
-|---|---|
-| ![影片的電影攝影機圖示](../install/media/video-icon.png "觀看影片") | [觀看 Visual Studio 中之 Python 環境的影片 (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=qrDmN4LWE_8305918567) (2 分 35 秒)。|
 
 ### <a name="what-if-no-environments-appear"></a>如果沒有環境出現怎麼辦？
 

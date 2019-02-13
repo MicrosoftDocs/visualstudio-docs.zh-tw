@@ -1,7 +1,6 @@
 ---
 title: C# 開發人員概觀
 ms.date: 11/15/2018
-ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.custom: get-started
 ms.topic: conceptual
@@ -12,12 +11,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: f1b1ccaaeb8f51e662c85b7894f9f752dba9c2a8
-ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
+ms.openlocfilehash: b7799abea1ab8dcb0c792d5ba49c66274d255685
+ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55484169"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56155990"
 ---
 # <a name="welcome-to-the-visual-studio-ide--c"></a>歡迎使用 Visual Studio IDE | C#
 
@@ -305,4 +304,3 @@ Visual Studio 的某些熱門功能可在您開發軟體時協助您提高生產
 - 探索[更多 Visual Studio 功能](../../ide/advanced-feature-overview.md)
 - 瀏覽 [visualstudio.microsoft.com](https://visualstudio.microsoft.com/vs/)
 - 閱讀 [Visual Studio 部落格](https://blogs.msdn.microsoft.com/visualstudio/)
-- 前往 [Microsoft Virtual Academy](https://mva.microsoft.com/product-training/visual-studio-courses#!index=2&lang=1033) 看看免費的 Visual Studio 課程

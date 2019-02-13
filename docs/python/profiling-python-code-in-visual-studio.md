@@ -2,7 +2,6 @@
 title: 測量 Python 程式碼的效能
 description: 在使用 CPython 型解譯器時，以 Visual Studio 分析工具來檢查 Python 程式碼的效能。
 ms.date: 11/12/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -11,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d598ce08942ed159b7e03a282ccf9f378f89c889
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 985b0120d54cf7a606bcf2bab5b11ae416d986a3
+ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54979539"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56155132"
 ---
 # <a name="profile-python-code"></a>分析 Python 程式碼
 
@@ -31,10 +30,6 @@ ms.locfileid: "54979539"
 當您選取 [確定] 時，分析工具會執行並開啟效能報告，您可以透過該報告探索應用程式中的執行時間：
 
 ![分析效能報告](media/profiling-results.png)
-
-|   |   |
-|---|---|
-| ![影片的電影攝影機圖示](../install/media/video-icon.png "觀看影片") | [觀看示範 Python 分析的影片 (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Profiling-Python-s6FoC6LWE_1005918567) (3 分 00 秒)。|
 
 > [!Note]
 > Visual Studio 目前只支援此層級的完整應用程式剖析，我們非常願意聆聽您對未來功能的意見反應。 請使用此頁面底部的 [[產品意見反應] 按鈕](#feedback)。

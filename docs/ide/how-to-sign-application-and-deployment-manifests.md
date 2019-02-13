@@ -1,7 +1,6 @@
 ---
 title: HOW TO：簽署應用程式與部署資訊清單
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - manifests [Visual Studio]
@@ -18,12 +17,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f394acb8ef939b3d550ed0966fe002aab75b6b22
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 33afb83fdf680ef2eb1dd51e7b0e4dca8b77c3cb
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55001952"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55916879"
 ---
 # <a name="how-to-sign-application-and-deployment-manifests"></a>HOW TO：簽署應用程式與部署資訊清單
 

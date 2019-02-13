@@ -1,7 +1,6 @@
 ---
 title: 步驟 7：新增乘法及除法問題
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: e638959e-f6a4-4eb4-b2e9-f63b7855cf8f
 author: TerryGLee
@@ -9,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 34417cd35ed3a26bde977f24ab583e8b23c9b546
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 6bc9c1e28b86956c611d48d332c3444665a66de4
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54956130"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55917814"
 ---
 # <a name="step-7-add-multiplication-and-division-problems"></a>步驟 7：新增乘法及除法問題
 在本教學課程的第七個部分中，您將加入乘法和除法問題，不過要先思考如何進行這項變更。 思考初始步驟，其中牽涉到儲存值。

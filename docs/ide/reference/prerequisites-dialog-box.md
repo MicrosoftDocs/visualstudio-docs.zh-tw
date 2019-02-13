@@ -1,7 +1,6 @@
 ---
 title: 必要條件對話方塊
 ms.date: 06/29/2018
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - Microsoft.VisualStudio.Publish.BaseProvider.Dialog.Bootstrapper
@@ -12,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e2af20a0a50e9405cf7df2fb97aa38cfa6be5c50
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b83a3851c74d97992fa75e9ce533ca707e2115c9
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55042786"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55925991"
 ---
 # <a name="prerequisites-dialog-box"></a>必要條件對話方塊
 
@@ -29,7 +28,7 @@ ms.locfileid: "55042786"
 
 ## <a name="uielement-list"></a>UIElement 清單
 
-|元素|說明|
+|元素|描述|
 |-------------|-----------------|
 |**建立安裝程式以安裝必要條件元件**|將必要條件元件包含在應用程式的安裝程式 (*Setup.exe*) 中，才能在安裝應用程式之前，依照相依性的順序進行安裝。 根據預設，這個選項是選取的。 如果沒有選取這個選項，則不會建立 *Setup.exe*。|
 |**選擇要安裝的必要條件**|指定是否要安裝元件，例如 .NET Framework 和 C++ 執行階段程式庫。<br /><br />例如，選取 **SQL Server 2012 Express** 旁的核取方塊，即指定安裝程式必須確認這個元件是否已安裝在目標電腦上，如果尚未安裝就會進行安裝。<br /><br />如需各個必要條件套件的詳細資訊，請參閱[必要條件資訊](#prerequisites-information)。|
@@ -41,7 +40,7 @@ ms.locfileid: "55042786"
 
 [必要條件] 對話方塊中顯示的必要條件元件，可能和以下所列的不同。 第一次開啟該對話方塊時，會自動設定**必要條件對話方塊**中所列的必要條件套件。 如果您接著變更專案的目標架構，您就必須手動選取必要條件以符合新的目標架構。
 
-|元素|說明|
+|元素|描述|
 |-------------|-----------------|
 |**.NET Framework 3.5 SP1**|這個套件會安裝下列項目：<br /><br /> -   .NET Framework 2.0、3.0 和 3.5 版。<br />-   支援 32 位元 (x86) 及 64 位元 (x64) 作業系統上的所有 .NET Framework 版本。<br />-   隨著這個套件一併安裝之每個 .NET Framework 版本的語言套件。<br />-   .NET Framework 2.0 及 3.0 的 Service Pack。<br /><br /> .NET Framework 3.0 隨附於 Windows Vista，.NET Framework 3.5 則隨附於 Visual Studio。 所有針對 32 位元作業系統編譯，而且目標架構設定為 [.NET Framework 3.5] 的 Visual Basic 和 C# 專案，以及針對 64 位元作業系統編譯的 Visual Basic 和 C# 專案，都需要 .NET Framework 3.5。 (不支援 IA64)。請注意，根據預設，Visual Basic 和 C# 專案是針對任何 CPU 架構編譯。 如需詳細資訊，請參閱 [Visual Studio 多目標概觀](../../ide/visual-studio-multi-targeting-overview.md)和 [64 位元應用程式的部署必要條件](../../deployment/deploying-prerequisites-for-64-bit-applications.md)。|
 |**Microsoft .NET Framework 4.x**|這個套件會在 x86 和 x64 平台安裝 .NET Framework 4.x。|

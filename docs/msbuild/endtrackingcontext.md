@@ -15,27 +15,27 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 60db5058f3a084a4d24f3b3a1d83e615a9071d8e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 1f380b57b95cfc0601984794bf02ad4ed145bac5
+ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54920250"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55853335"
 ---
 # <a name="endtrackingcontext"></a>EndTrackingContext
-結束目前追蹤內容。  
-  
-## <a name="syntax"></a>語法  
-  
-```cpp  
-HRESULT WINAPI EndTrackingContext();  
-```  
-  
-## <a name="return-value"></a>傳回值  
- 如果已結束追蹤內容，則為已設定 **SUCCEEDED** 位元的 **HRESULT**。  
-  
-## <a name="requirements"></a>需求  
- **標頭：***FileTracker.h*  
-  
-## <a name="see-also"></a>另請參閱  
- [StartTrackingContext](../msbuild/starttrackingcontext.md)
+結束目前追蹤內容。
+
+## <a name="syntax"></a>語法
+
+```cpp
+HRESULT WINAPI EndTrackingContext();
+```
+
+## <a name="return-value"></a>傳回值
+如果已結束追蹤內容，則為已設定 **SUCCEEDED** 位元的 **HRESULT**。
+
+## <a name="requirements"></a>需求
+**標頭：***FileTracker.h*
+
+## <a name="see-also"></a>另請參閱
+[StartTrackingContext](../msbuild/starttrackingcontext.md)

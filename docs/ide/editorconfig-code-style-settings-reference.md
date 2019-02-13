@@ -13,20 +13,19 @@ helpviewer_keywords:
 author: kuhlenh
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 8d7d07efa862e619961c21962dca20303efed97e
-ms.sourcegitcommit: 0342f99120fbd603b8f06f7e9166c39f2896827a
+ms.openlocfilehash: 52848599e05f5b7e5050e408f98d9ff4d670ca72
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/05/2019
-ms.locfileid: "55742517"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55911867"
 ---
-# <a name="net-coding-convention-settings-for-editorconfig"></a>EditorConfig 的 .NET 程式碼慣例設定
+# <a name="net-coding-convention-settings-for-editorconfig"></a>EditorConfig 的 .NET 編碼慣例設定
 
-在 Visual Studio 2017 中，您可以使用 [EditorConfig](../ide/create-portable-custom-editor-options.md) 檔案定義程式碼基底的程式碼樣式並維持一致。 EditorConfig 包含數個核心格式設定屬性，例如 `indent_style` 和 `indent_size`。 在 Visual Studio 中，也可以使用 EditorConfig 檔案設定 .NET 程式碼慣例設定。 EditorConfig 檔案可讓您啟用或停用個別的 .NET 程式碼慣例，並設定要強制執行慣例的程度 (透過嚴重性層級)。 若要深入了解使用 EditorConfig 在程式碼基底上強制一致性的方式，請參閱[使用 EditorConfig 建立可攜式自訂編輯器設定](../ide/create-portable-custom-editor-options.md)。
+在 Visual Studio 2017 中，您可以使用 [EditorConfig](../ide/create-portable-custom-editor-options.md) 檔案定義程式碼基底的程式碼樣式並維持一致。 EditorConfig 包含數個核心格式設定屬性，例如 `indent_style` 和 `indent_size`。 在 Visual Studio 中，也可以使用 EditorConfig 檔案設定 .NET 編碼慣例設定。 EditorConfig 檔案可讓您啟用或停用個別的 .NET 編碼慣例，並設定要強制執行慣例的程度 (透過嚴重性層級)。 若要深入了解使用 EditorConfig 在程式碼基底上強制一致性的方式，請參閱[使用 EditorConfig 建立可攜式自訂編輯器設定](../ide/create-portable-custom-editor-options.md)。
 
 如需[範例 .editorconfig 檔案](#example-editorconfig-file)，請參閱此文章結尾。
 
@@ -1433,7 +1432,7 @@ csharp_prefer_braces = true:none
 | 規則名稱 | 適用的語言 | Visual Studio 預設值 | Visual Studio 2017 版本 |
 | ----------- | -------------------- | ----------------------| ---------------- |
 | dotnet_sort_system_directives_first | C# 和 Visual Basic | true | 15.3 |
-| dotnet_separate_import_directive_groups | C# 和 Visual Basic | true | 15.5 |
+| dotnet_separate_import_directive_groups | C# 和 Visual Basic | False | 15.5 |
 
 **dotnet\_sort\_system\_directives_first**
 

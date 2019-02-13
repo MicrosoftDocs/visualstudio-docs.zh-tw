@@ -9,13 +9,12 @@ ms.assetid: 257d2a24-d582-4cfe-8b2b-51f51ba9cc84
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 81e745ff44e01f0e699b590cc573c7a1d4c4c9c1
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: bd5a7183589255d246fd299b9ec628330d948dcf
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55022972"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55917541"
 ---
 # <a name="how-to-add-additional-run-settings-to-a-load-test"></a>HOW TO：將其他回合設定新增至負載測試
 

@@ -1,7 +1,6 @@
 ---
 title: -Build (devenv.exe)
 ms.date: 12/10/2018
-ms.prod: visual-studio-dev15
 ms.topic: reference
 helpviewer_keywords:
 - builds, command-line
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7167a27e8c36001108691ec65ef07aa43db98a3c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 67aba8d93514618fc09abe933cfd28023136a4d6
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54967478"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55928708"
 ---
 # <a name="build-devenvexe"></a>/Build (devenv.exe)
 

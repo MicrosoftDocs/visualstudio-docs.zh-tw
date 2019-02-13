@@ -1,7 +1,6 @@
 ---
 title: 重構重新命名
 ms.date: 01/26/2018
-ms.prod: visual-studio-dev15
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
@@ -13,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: b0058a71205f707ee8ea3050e3a926571dec4ca3
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 48e45373c41358ba3e9c2d70222ace07cdf1b59e
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54917181"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55925516"
 ---
 # <a name="rename-a-code-symbol-refactoring"></a>為程式碼符號重新命名的重構
 

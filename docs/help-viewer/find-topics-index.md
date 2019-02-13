@@ -1,7 +1,6 @@
 ---
 title: 使用說明檢視器索引
 ms.date: 11/02/2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - Index tab [Help Viewer]
@@ -16,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c9ad6b51782be82afc485ddbef529c5be0c1b419
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 74ccafda4600e08436e88bc66f8fd9177cc73401
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54940761"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55915699"
 ---
 # <a name="find-topics-by-using-the-help-viewer-index"></a>使用說明檢視器索引來尋找主題
 

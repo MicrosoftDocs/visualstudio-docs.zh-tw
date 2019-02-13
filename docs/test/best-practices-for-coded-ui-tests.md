@@ -1,7 +1,6 @@
 ---
 title: 自動程式化 UI 測試的最佳作法
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - coded UI tests, best practices
@@ -10,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6e1a3b0b38a9579d03afba625f11b5f8e4f4fdae
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: eed883703b333fc39039e9c063aeabbbc1709810
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54978746"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55924483"
 ---
 # <a name="best-practices-for-coded-ui-tests"></a>自動程式化 UI 測試的最佳做法
 

@@ -1,19 +1,18 @@
 ---
 title: 插入 XML 文件註解
 ms.date: 01/26/2018
-ms.prod: visual-studio-dev15
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9b61588d3f7ca5091d5c5a4cc6689973e37efed5
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 085e2fe029daf246f6883e6856ddff6a9bacccdc
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54996788"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55929137"
 ---
 # <a name="how-to-insert-xml-comments-for-documentation-generation"></a>HOW TO：在文件產生中插入 XML 註解
 

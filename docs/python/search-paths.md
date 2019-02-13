@@ -2,7 +2,6 @@
 title: 如何套用 Python 搜尋路徑
 description: Visual Studio 提供更具體方法來指定環境和專案的搜尋路徑，以避免使用全系統變數。
 ms.date: 11/12/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -11,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: eca8ce0a2b791cba5513c2d3936a429dd4ad4eaa
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 4befbce86d05fc9e3c52247ed71abc8c5ca5e6a6
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55010190"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55929904"
 ---
 # <a name="how-visual-studio-uses-python-search-paths"></a>Visual Studio 如何使用 Python 搜尋路徑
 

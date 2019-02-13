@@ -1,7 +1,6 @@
 ---
 title: Live Unit Testing 中的新功能
 ms.date: 10-11-2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio ALM
@@ -11,12 +10,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2f032d062a751186c0abdaa37e5fb451d981e4c0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 630213f05b2b3832e5b702cf2d6ef02a1996c98d
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53962745"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55912829"
 ---
 # <a name="whats-new-in-live-unit-testing"></a>Live Unit Testing 的新功能
 

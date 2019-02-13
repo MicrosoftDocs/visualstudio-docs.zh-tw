@@ -1,7 +1,6 @@
 ---
 title: 類別設計工具中的 Visual C++ Typedef
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - vs.classdesigner.typedef
@@ -14,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1839828959c93a4da54c477e1e8b3d0ca3e20be4
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 328235e5be2ac62caa427c9f77bd33654275e72a
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54927771"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55907707"
 ---
 # <a name="visual-c-typedefs-in-class-designer"></a>類別設計工具中的 Visual C++ Typedef
 

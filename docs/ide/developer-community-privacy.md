@@ -1,7 +1,6 @@
 ---
 title: 問題報表的私用資料
 ms.date: 06/21/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - developer community privacy
@@ -11,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 24ac5c42f91e7dbf4dac310d67fc710f75fc8309
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: d3db48578d2b316ddd203316a15536b144cb28cf
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54986848"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55910450"
 ---
 # <a name="developer-community-data-privacy"></a>開發人員社群資料隱私權
 

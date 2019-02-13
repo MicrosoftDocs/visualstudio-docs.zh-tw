@@ -1,7 +1,6 @@
 ---
 title: 程式碼樣式喜好設定
 ms.date: 03/10/2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
@@ -11,12 +10,12 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.Basic.Code_Style.General
 ms.workload:
 - multiple
-ms.openlocfilehash: f33c1edec4b4093e9157a59618befa2e1175be49
-ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
+ms.openlocfilehash: a9571456a5c9b277b69e6045e1277f78d586f3e0
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55483987"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55923366"
 ---
 # <a name="code-style-preferences"></a>程式碼樣式喜好設定
 
@@ -51,5 +50,5 @@ ms.locfileid: "55483987"
 ## <a name="see-also"></a>另請參閱
 
 - [快速動作](../ide/quick-actions.md)
-- [EditorConfig 的 .NET 程式碼慣例設定](../ide/editorconfig-code-style-settings-reference.md)
+- [EditorConfig 的 .NET 編碼慣例設定](../ide/editorconfig-code-style-settings-reference.md)
 - [編輯器行為 (Visual Studio for Mac)](/visualstudio/mac/editor-behavior)

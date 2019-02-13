@@ -3,7 +3,6 @@ title: 教學課程：使用 Windows Presentation Foundation (WPF) 的 Hello Wor
 description: 使用 Windows Presentation Foundation (WPF) UI 架構，透過 Visual Studio 以 C# 建立一個簡單的 Windows Desktop .NET 應用程式。
 ms.custom: seodec18, get-started
 ms.date: 10/03/2017
-ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 757ec79e2ae1996c6453fd01b20e71e9a6d62594
-ms.sourcegitcommit: 9866740aec05d1a3a5dc3b4b6d2ceaeecbd3fc29
+ms.openlocfilehash: 8fa5a78fbf1852e49da8a4cda59398c302029430
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "55424508"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55909943"
 ---
 # <a name="tutorial-create-a-simple-application-with-c"></a>教學課程：使用 C# 建立一個簡單的應用程式
 

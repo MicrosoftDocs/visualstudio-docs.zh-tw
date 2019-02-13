@@ -2,19 +2,18 @@
 title: Visual Studio IDE 導覽
 titleSuffix: ''
 ms.date: 02/05/2019
-ms.prod: visual-studio-dev15
 ms.topic: quickstart
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 79bf66a1fe46a32bb9c172106af7676d89a5469a
-ms.sourcegitcommit: 0342f99120fbd603b8f06f7e9166c39f2896827a
+ms.openlocfilehash: c1bac4ba3e929da9ad6f22666c6a6b3f71b288c0
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/05/2019
-ms.locfileid: "55742824"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55920034"
 ---
 # <a name="first-look-at-the-visual-studio-ide"></a>Visual Studio 整合式開發環境 (IDE) 初探
 

@@ -8,20 +8,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0531d016b2ddcc90348dcbfd2ef80525ac400e5b
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: df9faeae70ac29562b7fa50f3d472e83299bfb62
+ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55039809"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56155626"
 ---
 # <a name="overview-of-tools-for-measuring-performance-in-visual-studio"></a>Visual Studio 中用於測量效能的工具概觀
 
 程式碼剖析和診斷工具可協助您診斷記憶體和 CPU 使用量，以及其他應用程式層級的問題。 使用這些工具，您可以累積一段時間 (例如執行應用程式的時間) 的資料 (例如變數值、函式呼叫和事件)。 您可以檢視程式碼執行期間不同時間點的應用程式狀態，或執行應用程式效能的事後分析。
-
-| | |
-|---------|---------|
-| ![影片的電影攝影機圖示](../install/media/video-icon.png "觀看影片") | [觀看使用診斷工具的影片](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Profiling-with-Diagnostics-Tools-in-Visual-Studio-2017-daHnzMD6D_9211787171)，了解如何分析 CPU 使用量，以及如何分析記憶體使用量。 |
 
 ## <a name="next-steps"></a>後續步驟
 

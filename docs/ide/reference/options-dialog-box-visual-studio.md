@@ -1,7 +1,6 @@
 ---
 title: '[選項] 對話方塊'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - vs.toolsoptionspages
@@ -16,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e234b1b198f4c1f5668af733eb64c0bf637a5640
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f2b4b30607d5d0c677f7ef5e2401bc55c2398eb0
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54959547"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55912467"
 ---
 # <a name="options-dialog-box-visual-studio"></a>選項對話方塊 (Visual Studio)
 

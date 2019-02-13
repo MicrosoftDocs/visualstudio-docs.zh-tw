@@ -1,7 +1,6 @@
 ---
 title: 程式碼片段
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - vs.ExpansionManagerImport
@@ -18,12 +17,12 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b18f716c1804b0217fd8c882e152de0352a72ab
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 98dadaed75cf16ae6ae35da9d6589355a63bd35c
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54958338"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55908448"
 ---
 # <a name="code-snippets"></a>程式碼片段
 

@@ -1,7 +1,6 @@
 ---
 title: HOW TO：建立 3D 地形模型
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: f779b1fd-82a9-4a11-8ab7-c1c9caabc883
 author: gewarren
@@ -9,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ab1439ecc388624ef9027ac726a55c8871876a83
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a18f986b64a58f4b5d9a8cad74ce118985b06c96
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54953068"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55909371"
 ---
 # <a name="how-to-model-3d-terrain"></a>HOW TO：建立 3D 地形模型
 

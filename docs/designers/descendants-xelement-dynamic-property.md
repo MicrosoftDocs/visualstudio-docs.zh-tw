@@ -1,7 +1,6 @@
 ---
 title: Descendants (XElement 動態屬性)
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 ms.assetid: 9611d00f-23bf-444b-ab0c-f30701bfc13d
 author: gewarren
@@ -9,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 70d3e173ff0b1cfc6058090593a351660128082c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: fa3bf24178f1096cd05e8471c18f466fdd8ee17f
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55012530"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55914249"
 ---
 # <a name="descendants-xelement-dynamic-property"></a>Descendants (XElement 動態屬性)
 

@@ -1,7 +1,6 @@
 ---
 title: 64 位元支援
 ms.date: 02/21/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - 64-bit applications [C++]
@@ -12,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c417ee6b8c40068a1340904d89561093ee2dcfc
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 2f625718266d9a8ffa779975d8bc78c2bc560835
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55021815"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55930619"
 ---
 # <a name="visual-studio-ide-64-bit-support"></a>Visual Studio IDE 64 位元支援
 

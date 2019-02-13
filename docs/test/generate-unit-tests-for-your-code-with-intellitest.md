@@ -1,7 +1,6 @@
 ---
 title: 使用 IntelliTest 為程式碼產生單元測試
 ms.date: 10/05/2015
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - vs.UnitTest.CreateIntelliTest
@@ -10,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: d0a9f13493b93dde73726253edf43d66f41bd2ba
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 6bdb40610050f03e54b499b6bc44a57faa09cb93
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55006030"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55907746"
 ---
 # <a name="generate-unit-tests-for-your-code-with-intellitest"></a>使用 IntelliTest 為程式碼產生單元測試
 

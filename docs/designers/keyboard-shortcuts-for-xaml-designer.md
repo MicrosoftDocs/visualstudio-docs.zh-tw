@@ -1,7 +1,6 @@
 ---
 title: XAML 設計工具的鍵盤快速鍵
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: 40211cc7-294a-4943-85a4-941ad6418dad
 author: gewarren
@@ -9,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 86cf8a96d9b1a6ac743f72cf9726a913eac341c6
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 1d0f655fb4b5b2bb23b19f7fcaf5106307c10895
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55008500"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55923600"
 ---
 # <a name="keyboard-shortcuts-for-xaml-designer"></a>XAML 設計工具的鍵盤快速鍵
 

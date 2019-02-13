@@ -1,7 +1,6 @@
 ---
 title: 重構
 ms.date: 01/10/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - refactoring [Visual Studio]
@@ -10,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 37ab371ed7bd4c74e8bebff92bc77eff958ed0b2
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: d76c5eb725545fd1fd8ab1a1ec2f4eaadcd39d3b
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55034827"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55927109"
 ---
 # <a name="refactor-code"></a>重構程式碼
 
