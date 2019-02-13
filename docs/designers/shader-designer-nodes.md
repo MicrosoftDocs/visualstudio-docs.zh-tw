@@ -1,7 +1,6 @@
 ---
 title: 著色器設計工具節點
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: f5192fbd-c78f-40a8-a4d4-443209610268
 author: gewarren
@@ -9,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4793a6e4e5b2db841c3d4fded1c1ea41e3de9816
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 9d5e27f6cc244580ac4f3c72724dd6fdb6d09999
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55042019"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55928266"
 ---
 # <a name="shader-designer-nodes"></a>著色器設計工具節點
 文件這節中的文章包含可用來建立圖形效果之各種著色器設計工具節點的資訊。
@@ -42,7 +41,7 @@ ms.locfileid: "55042019"
 
 ## <a name="related-topics"></a>相關主題
 
-|標題|說明|
+|標題|描述|
 |-----------|-----------------|
 |[常數節點](../designers/constant-nodes.md)|描述您可用來代表著色器計算之常值和插補頂點狀態資訊的節點。 因為插入頂點狀態 (因此，每個像素都會不同)，所以每個像素著色器執行個體都會收到不同版本的常數。|
 |[參數節點](../designers/parameter-nodes.md)|所描述的節點可以用來代表著色器計算中的觀景窗位置、材質屬性、光源參數、時間以及其他應用程式狀態資訊。|
