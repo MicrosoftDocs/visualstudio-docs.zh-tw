@@ -1,5 +1,5 @@
 ---
-title: 'Idiaenumsourcefiles:: Next |Microsoft Docs'
+title: IDiaEnumSourceFiles::Next | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 83bf6317-ff39-4c5c-8987-cba34e7a6983
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cde1b47754a254c0031946bf3a7fa534d1710c40
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b0c12b03973736cc867c76cbe10a29548bfc6bd1
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53876029"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54973339"
 ---
 # <a name="idiaenumsourcefilesnext"></a>IDiaEnumSourceFiles::Next
 擷取列舉序列中的原始程式檔中指定的數目。  
@@ -43,7 +43,7 @@ HRESULT Next ( 
  [out]擷取列舉值中傳回原始程式檔的數目。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回 `S_OK`。 傳回`S_FALSE`如果不有任何更多的原始程式檔。 反之則傳回錯誤碼。  
+ 如果成功，則傳回 `S_OK`。 傳回`S_FALSE`如果不有任何更多的原始程式檔。 否則會傳回錯誤碼。  
   
 ## <a name="see-also"></a>請參閱  
  [IDiaEnumSourceFiles](../../debugger/debug-interface-access/idiaenumsourcefiles.md)   

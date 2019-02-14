@@ -1,5 +1,5 @@
 ---
-title: 'Idiasession:: Symbolbyid |Microsoft Docs'
+title: IDiaSession::symbolById | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 062e4b5a-9c4d-4703-88da-ec13102c2b66
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 54bf8c4457ed8a9808ebdbcf96f2a835e6fe8e54
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: ba13c62f5e72e7192572def7b48046be3e1a20c6
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53832121"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54964453"
 ---
 # <a name="idiasessionsymbolbyid"></a>IDiaSession::symbolById
 擷取符號依其唯一識別碼。  

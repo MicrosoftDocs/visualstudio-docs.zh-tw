@@ -1,5 +1,5 @@
 ---
-title: 'Idiaenumtables:: Clone |Microsoft Docs'
+title: IDiaEnumTables::Clone | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: beb21109-b12c-44d8-8c1f-a332216b3713
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 22f322ebfcb001c047dc343741f09a5763eb4e58
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c4403560a10c8e437eac7659295ea9e24d8fcf96
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53904032"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55014753"
 ---
 # <a name="idiaenumtablesclone"></a>IDiaEnumTables::Clone
 建立列舉值，包含目前的列舉值相同的列舉型別狀態。  

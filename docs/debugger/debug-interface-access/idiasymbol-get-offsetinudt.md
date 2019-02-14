@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_offsetinudt |Microsoft Docs'
+title: IDiaSymbol::get_offsetInUdt | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 442f20d9-9d6a-44a1-83fb-c3f8c14b6c97
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 286565200cba61e5c2fd990de8d6ddb19c3e5ff1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 08cdd6d96823fc10f1bb0e495df5b5805dad08c3
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53985744"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54920855"
 ---
 # <a name="idiasymbolgetoffsetinudt"></a>IDiaSymbol::get_offsetInUdt
 擷取至使用者定義型別 (UDT) 中的 UDT 的成員開頭的位移。  

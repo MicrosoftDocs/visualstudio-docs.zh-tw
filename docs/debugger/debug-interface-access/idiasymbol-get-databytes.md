@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 5eb37179-20d8-44ae-a72a-405c1b0435c4
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3261c6331e1651b618b710116737bef5b465ec27
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d70ede5bdade583d0b25787f7c97c345cef9cbe1
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53966355"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54925353"
 ---
 # <a name="idiasymbolgetdatabytes"></a>IDiaSymbol::get_dataBytes
 擷取資訊，請參閱 OEM 符號的資料位元組數。  
@@ -50,7 +50,7 @@ HRESULT get_dataBytes ( 
   
 ## <a name="requirements"></a>需求  
   
-|需求|說明|  
+|需求|描述|  
 |-----------------|-----------------|  
 |標頭：|dia2.h|  
 |版本:|DIA SDK v7.0|  

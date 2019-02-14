@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::findInlineFramesByAddr |Microsoft Docs
+title: IDiaSymbol::findInlineFramesByAddr | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -7,15 +7,15 @@ dev_langs:
 ms.assetid: 36a122e6-f27e-40cd-9784-cdaf279e1905
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c5292771446890a4968c2b8b7988da7242edf14
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 804f498a406919192cf355b748949158722581f9
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53854694"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54964375"
 ---
 # <a name="idiasymbolfindinlineframesbyaddr"></a>IDiaSymbol::findInlineFramesByAddr
 擷取列舉型別，可讓用戶端來逐一查看所有指定的位址上的內嵌框架。  

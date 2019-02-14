@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 3be5fe1b-46e8-4b07-90d8-4929dbbe7ff7
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9361b794a42e860b55983c3271d827eb105d2974
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9c1857a49d96ec79eb3611a9a92629d67cbd25d7
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53879539"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54997334"
 ---
 # <a name="idiasymbolgetisstatic"></a>IDiaSymbol::get_isStatic
 擷取旗標，指定是否函式或 thunk 層已標示為靜態。  
@@ -42,10 +42,10 @@ HRESULT get_isStatic(
   
 ## <a name="requirements"></a>需求  
   
-|需求|說明|  
+|需求|描述|  
 |-----------------|-----------------|  
 |標頭：|dia2.h|  
-|版本:|DIA SDK 8.0 版|  
+|版本:|DIA SDK v8.0|  
   
 ## <a name="see-also"></a>請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

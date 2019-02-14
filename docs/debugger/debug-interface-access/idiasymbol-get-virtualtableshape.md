@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_virtualtableshape |Microsoft Docs'
+title: IDiaSymbol::get_virtualTableShape | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 92360cbd-0761-446e-93f9-04dc8f4b66c6
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 031bbac4549c08de4e03f1cbabf171d3d54d1c09
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1147635a3558f1743578acbedb59738dec7d9ca6
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53965944"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55016885"
 ---
 # <a name="idiasymbolgetvirtualtableshape"></a>IDiaSymbol::get_virtualTableShape
 擷取使用者自訂類型的虛擬資料表之型別的符號介面。  

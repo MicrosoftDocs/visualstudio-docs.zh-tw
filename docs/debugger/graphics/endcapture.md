@@ -1,19 +1,19 @@
 ---
-title: EndCapture |Microsoft Docs
+title: EndCapture | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 06084c3b-e065-49b6-968e-d578762fb871
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 320898ad028015085448b706e4962ae4050d8b2f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e8f72e3bcd3755fe59af5207586cf9cf03d432f4
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53950617"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54967621"
 ---
 # <a name="endcapture"></a>EndCapture
 結束用來啟動在擷取間隔`BeginCapture`。  

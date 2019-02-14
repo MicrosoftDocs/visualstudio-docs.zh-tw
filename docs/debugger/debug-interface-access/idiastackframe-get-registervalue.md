@@ -1,5 +1,5 @@
 ---
-title: 'Idiastackframe:: Get_registervalue |Microsoft Docs'
+title: IDiaStackFrame::get_registerValue | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: cbe3d8ac-319a-40ac-bc3e-4eb81b2d7807
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b0bb8f3a10bebbdaff489b2b628af2e1228fdf40
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 52967a96cccc1d02f6361cccc00b06a391f06427
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53985796"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54935562"
 ---
 # <a name="idiastackframegetregistervalue"></a>IDiaStackFrame::get_registerValue
 擷取的值指定的暫存器儲存在堆疊框架中。  

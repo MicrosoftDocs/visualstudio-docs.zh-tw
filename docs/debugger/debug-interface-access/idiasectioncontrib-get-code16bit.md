@@ -1,5 +1,5 @@
 ---
-title: IDiaSectionContrib::get_code16bit |Microsoft Docs
+title: IDiaSectionContrib::get_code16bit | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 8cde8fc5-9546-4f82-b4a8-afd0d835039e
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a1b0dbbbb55b1033b728f809f5b5bc26876a6c7b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0200c65cfd89086a58466913967e73a00e4d7fd4
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53952863"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54993518"
 ---
 # <a name="idiasectioncontribgetcode16bit"></a>IDiaSectionContrib::get_code16bit
 擷取指出區段是否包含 16 位元程式碼的旗標。  

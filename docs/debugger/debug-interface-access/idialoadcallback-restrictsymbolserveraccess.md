@@ -1,5 +1,5 @@
 ---
-title: 'Idialoadcallback:: Restrictsymbolserveraccess |Microsoft Docs'
+title: IDiaLoadCallback::RestrictSymbolServerAccess | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: db37ad9f-f75e-4f0c-83bf-21a6e66ba859
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 934e6b037bb167013df0ef079836c06796319629
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 016f64f4c25b448bbcada095fe5aa41d7c3427a2
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53837936"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54931293"
 ---
 # <a name="idialoadcallbackrestrictsymbolserveraccess"></a>IDiaLoadCallback::RestrictSymbolServerAccess
 決定是否允許存取至符號伺服器來解析符號。  

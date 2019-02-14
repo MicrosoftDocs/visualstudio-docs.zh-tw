@@ -1,5 +1,5 @@
 ---
-title: IDiaPropertyStorage::ReadLONG |Microsoft Docs
+title: IDiaPropertyStorage::ReadLONG | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 32054cbc-db55-4513-a1b4-de80e77aac8a
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aefa38870d3639b2277dd4af2c38d04b8fbb7c00
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b64eef7ec34240b3dbe45125966a753d3c60d6d6
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53889962"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54944783"
 ---
 # <a name="idiapropertystoragereadlong"></a>IDiaPropertyStorage::ReadLONG
 讀取`LONG`屬性集合中的值。  

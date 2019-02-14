@@ -1,5 +1,5 @@
 ---
-title: 'Idiaaddressmap:: Put_addressmapenabled |Microsoft Docs'
+title: IDiaAddressMap::put_addressMapEnabled | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 0f205337-4e59-4383-8059-7b1d207d6dcd
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6894cb14d2aee6a4e1999eab38e095911d51360d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a53d66879155ae1ce2cd831c029bc5776a7dd863
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53876009"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54999206"
 ---
 # <a name="idiaaddressmapputaddressmapenabled"></a>IDiaAddressMap::put_addressMapEnabled
 指定對應位址是否應該用來將符號位址轉譯。  

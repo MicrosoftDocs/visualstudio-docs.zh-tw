@@ -1,5 +1,5 @@
 ---
-title: 'Idiaenuminjectedsources:: Clone |Microsoft Docs'
+title: IDiaEnumInjectedSources::Clone | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 18038691-c140-426a-8617-27f0360650f3
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a89830fb39786b2e2318f051d5bf25a16a9e8178
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ece73b97ec0129b2acd26c8751ab8b10909ee4ed
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53888402"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55036117"
 ---
 # <a name="idiaenuminjectedsourcesclone"></a>IDiaEnumInjectedSources::Clone
 建立列舉值，包含目前的列舉值相同的列舉型別狀態。  

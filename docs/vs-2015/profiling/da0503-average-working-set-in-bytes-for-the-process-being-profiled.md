@@ -1,14 +1,9 @@
 ---
 title: DA0503：所分析之處理序的平均工作集 (以位元組為單位) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 f1_keywords:
 - vs.performance.503
 - vs.performance.DA0503
@@ -17,13 +12,13 @@ ms.assetid: 9047a494-eaaf-4679-b422-c64e8bde77a4
 caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 6f13dc584c8865fa2caa502db0708a27c5d1a8f3
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: b45725c59cb18f965ba7d1fa134de739d9c4144d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51816927"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54779078"
 ---
 # <a name="da0503-average-working-set-in-bytes-for-the-process-being-profiled"></a>DA0503：進行程式碼剖析之處理序的平均工作集 (以位元組為單位)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +26,7 @@ ms.locfileid: "51816927"
 規則 Id |DA0503 |  
 |類別目錄 |資源監視 |  
 |程式碼剖析方法 |所有 |  
-|訊息 |收集這項資訊僅提供資訊。 「處理序工作集」計數器會依您分析的處理序測量實體記憶體的使用方式。 報告的值在所有測量間隔計算的平均。 |  
+|訊息 |收集這項資訊僅提供資訊。 「處理序工作集」計數器會依您分析的處理序測量實體記憶體的使用方式。 報告的值是針對所有測量間隔計算的平均。  
 |規則類型 |資訊 |  
   
  當您使用取樣、.NET 記憶體或資源爭用方法進行分析時，必須至少收集 10 個樣本才能觸發此規則。  
@@ -51,6 +46,3 @@ ms.locfileid: "51816927"
  使用規則值可比較程式不同版本或組建的效能，或了解不同分析情節中的應用程式效能。  
   
  按兩下 [錯誤清單] 視窗中的訊息，瀏覽至分析資料的[標記檢視](../profiling/marks-view.md)。 尋找 **Process\Working Set** 和 **Memory\Pages/sec** 欄。 比較兩欄，判斷是否有特定的程式執行階段看起來似乎與分頁 IO 活動增加有關。
-
-
-

@@ -1,14 +1,9 @@
 ---
 title: MSBuild 參考 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -20,13 +15,13 @@ ms.assetid: 093395e1-70da-4f74-b34d-046c5e2b32e8
 caps.latest.revision: 28
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: b99a082355742ad81ee2ac2e7280a17cfd233a2d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 9f1bded7e322387363bddb6b3aa2e6d7913d2da8
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49292295"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54773169"
 ---
 # <a name="msbuild-reference"></a>MSBuild 參考
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -78,7 +73,7 @@ ms.locfileid: "49292295"
  列出可能必須「逸出」才能正確解譯的字元。 逸出序列是一系列的字元，表示隨之而來的是替代的解譯。  
   
 ## <a name="related-sections"></a>相關章節  
- [MSBuild 概觀](http://msdn.microsoft.com/en-us/e39f13f7-1e1d-4435-95ca-0c222bca071c)引進[!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]，並提供主題連結，說明如何使用它來建置專案。  
+ [MSBuild 概觀](http://msdn.microsoft.com/e39f13f7-1e1d-4435-95ca-0c222bca071c)介紹 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]，並提供說明如何使用它來建置專案的主題連結。  
   
  <xref:Microsoft.Build.Conversion>  
  包含 Conversion 命名空間參考  
@@ -100,6 +95,3 @@ ms.locfileid: "49292295"
   
  <xref:Microsoft.Build.Utilities>  
  包含 Utilities 命名空間參考
-
-
-

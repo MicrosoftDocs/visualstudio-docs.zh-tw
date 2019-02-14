@@ -1,5 +1,5 @@
 ---
-title: 'Idiaenumsectioncontribs:: Skip |Microsoft Docs'
+title: IDiaEnumSectionContribs::Skip | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 7471a178-5134-41b2-80a6-51ff96abe916
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a6b02218f9d4aba3f9cc3b3785c70594a92457a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5e24d913acfacbec626befac07167528b9be2ace
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53864173"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55009813"
 ---
 # <a name="idiaenumsectioncontribsskip"></a>IDiaEnumSectionContribs::Skip
 略過指定的數目的列舉型別序列中的區段比重。  

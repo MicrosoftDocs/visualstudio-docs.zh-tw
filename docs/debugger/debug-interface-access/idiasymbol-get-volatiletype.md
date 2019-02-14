@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_volatiletype |Microsoft Docs'
+title: IDiaSymbol::get_volatileType | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 19782a4d-40a8-467b-ab7d-58bc4d812309
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d491a43e65ed7e6c06a5c94e94b62230db1634dc
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e358efc95d3c0d281a24109ee5ab954d6ea88506
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53864316"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54989024"
 ---
 # <a name="idiasymbolgetvolatiletype"></a>IDiaSymbol::get_volatileType
 擷取指定使用者定義資料型別 (UDT) 是否為變動性的旗標。  

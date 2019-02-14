@@ -1,5 +1,5 @@
 ---
-title: 'Idiaimagedata:: Get_relativevirtualaddress |Microsoft Docs'
+title: IDiaImageData::get_relativeVirtualAddress | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: e6d6deee-dc12-4b38-af15-f917b2d4368e
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cf5da983c8971574c4b2ad444b0d63291c3e41f3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a53dc7d890f76af562faf3f585914423b3d4fd94
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53880019"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54925639"
 ---
 # <a name="idiaimagedatagetrelativevirtualaddress"></a>IDiaImageData::get_relativeVirtualAddress
 擷取虛擬記憶體中的位置，相對於應用程式的模組。  

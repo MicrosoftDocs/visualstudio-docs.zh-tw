@@ -1,5 +1,5 @@
 ---
-title: IDiaLoadCallback2::RestrictOriginalPathAccess |Microsoft Docs
+title: IDiaLoadCallback2::RestrictOriginalPathAccess | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 31fde3af-2824-4b0f-8d0d-cee6046596f6
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7b88ea861c34eef8761b22cdc4c23f4e79a6b978
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 27bf39aea5b095860f9e5aebf864abb4df6bf86d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53872292"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54964388"
 ---
 # <a name="idialoadcallback2restrictoriginalpathaccess"></a>IDiaLoadCallback2::RestrictOriginalPathAccess
 判斷是否可以尋找在原始的偵錯目錄中的.pdb 檔案。  

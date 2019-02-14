@@ -1,5 +1,5 @@
 ---
-title: 'Idialoadcallback:: Notifyopendbg |Microsoft Docs'
+title: IDiaLoadCallback::NotifyOpenDBG | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: dbc4dcf0-4ace-4dce-9790-0fdaf3a23d3b
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 76365dc94add2a0d1b4d1001a8460c2c5f5f1fce
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a00a19e7c193aceafcb6134cb10cb0300162f582
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53843726"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54924609"
 ---
 # <a name="idialoadcallbacknotifyopendbg"></a>IDiaLoadCallback::NotifyOpenDBG
 在開啟候選.dbg 檔案時呼叫。  

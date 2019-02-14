@@ -1,14 +1,9 @@
 ---
 title: '&lt;傳回&gt;(JavaScript) |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - returns JavaScript XML tag
 - <returns> JavaScript XML tag
@@ -16,15 +11,15 @@ ms.assetid: 10d97829-c0ae-40a5-b04c-d8b538cdefbc
 caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 5896c35c53feedb2f253bd86691f2fbf6793099e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 81a9a42a104adb2a9d9a9aba483e2588d7332868
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49875706"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54801772"
 ---
-# <a name="ltreturnsgt-javascript"></a>&lt;傳回&gt;(JavaScript)
+# <a name="ltreturnsgt-javascript"></a>&lt;returns&gt; (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 指定函式或方法呼叫的結果文件資訊。  
@@ -57,7 +52,7 @@ ms.locfileid: "49875706"
   選擇性。 這個屬性已被取代;`type`屬性會優先於此屬性。 這個屬性會指定所記錄的傳回值是否是 DOM 項目。 設定為`true`以指定的傳回值是 DOM 項目; 否則設定為`false`。 如果`type`未設定屬性和`domElement`設為`true`，IntelliSense 會記載的傳回值視為`HTMLElement`執行陳述式完成時。  
   
   `mayBeNull`  
-  選擇性。 指定是否記錄傳回值可以設定為 null。 設定為`true`表示，傳回的值可以設定為 null，否則設定為`false`。 預設值是 `false`。 這個屬性不是由 Visual Studio 提供 IntelliSense 資訊。  
+  選擇性。 指定是否記錄傳回值可以設定為 null。 設定為`true`表示，傳回的值可以設定為 null，否則設定為`false`。 預設值為 `false`。 這個屬性不是由 Visual Studio 提供 IntelliSense 資訊。  
   
   `elementType`  
   選擇性。 如果`type`是`Array`，這個屬性會指定陣列中的項目類型。  
@@ -69,7 +64,7 @@ ms.locfileid: "49875706"
   選擇性。 這個屬性已被取代;`elementType`屬性會優先於此屬性。 如果`type`是`Array`，這個屬性會指定陣列中的元素是否 DOM 項目。 設定為`true`指定之項目的 DOM 項目; 否則設定為`false`。 如果`elementType`未設定屬性和`elementDomElement`設為`true`，IntelliSense 會將做為陣列中的每個項目`HTMLElement`執行陳述式完成時。  
   
   `elementMayBeNull`  
-  選擇性。 如果`type`是`Array`，指定是否可以設定在陣列中的項目為 null。 設定為`true`若要表示為 null，否則，可以設定在陣列中的項目，設定為`false`。 預設值是 `false`。 這個屬性不是由 Visual Studio 提供 IntelliSense 資訊。  
+  選擇性。 如果`type`是`Array`，指定是否可以設定在陣列中的項目為 null。 設定為`true`若要表示為 null，否則，可以設定在陣列中的項目，設定為`false`。 預設值為 `false`。 這個屬性不是由 Visual Studio 提供 IntelliSense 資訊。  
   
   `locid`  
   選擇性。 如需傳回值的當地語系化資訊識別項。 識別項是成員識別碼或其對應至`name`屬性 OpenAjax 中繼資料所定義的訊息組合中的值。 識別項型別取決於所指定的格式[ \<loc >](../ide/loc-javascript.md)標記。  
@@ -117,8 +112,5 @@ calculate().  // Completion list for a Number.
   
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [XML 文件註解](../ide/xml-documentation-comments-javascript.md)
-
-
-

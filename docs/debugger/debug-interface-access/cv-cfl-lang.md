@@ -1,5 +1,5 @@
 ---
-title: CV_CFL_LANG |Microsoft Docs
+title: CV_CFL_LANG | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 4e8e0613-ad02-4de9-9f46-e4753c5b0251
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f173192d350e79b9fd97340c8cecff1b597217bf
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 34866bf7d43908d2fc7227f35f7df18f8942f981
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53838498"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55033173"
 ---
 # <a name="cvcfllang"></a>CV_CFL_LANG
 指定程式碼的原始語言的應用程式或連結的模組。  

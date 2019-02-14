@@ -1,5 +1,5 @@
 ---
-title: IDiaSession::findInlineeLinesByAddr |Microsoft Docs
+title: IDiaSession::findInlineeLinesByAddr | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -7,15 +7,15 @@ dev_langs:
 ms.assetid: bb70e408-eed1-4c9c-b5b1-44323125f48b
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a26692a7c8715150cad071b9c0871e0b8ad9e239
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f2f363b4a96ded547e701aaa9486f42f994d7e38
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53896665"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54987004"
 ---
 # <a name="idiasessionfindinlineelinesbyaddr"></a>IDiaSession::findInlineeLinesByAddr
 擷取可讓用戶端來逐一查看所有函式是內嵌的直接或間接由指定之父代符號的行號資訊，而且包含在指定的位址範圍的列舉。  

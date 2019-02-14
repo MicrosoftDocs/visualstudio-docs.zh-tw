@@ -1,27 +1,22 @@
 ---
-title: 如何：針對範本進行疑難排解 | Microsoft Docs
-ms.custom: ''
+title: HOW TO：針對範本進行疑難排解 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: troubleshooting
 helpviewer_keywords:
 - Visual Studio templates, troubleshooting
 ms.assetid: 3e577ad2-f725-4c11-93b3-477f2404ec81
 caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: a68097745de1f1d94e5c09963a474a0095588fba
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: eb2c708bfb6bfafe90b548ad2826e0cf11882a3b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49296422"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54793202"
 ---
 # <a name="how-to-troubleshoot-templates"></a>如何：疑難排解範本
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +39,7 @@ ms.locfileid: "49296422"
 5.  確認 .vstemplate 檔案的 XML 遵守 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 範本結構描述。 如需 .vstemplate 結構描述的詳細資訊，請參閱 [Visual Studio 範本結構描述參考](../extensibility/visual-studio-template-schema-reference.md)。  
   
     > [!NOTE]
-    >  若要取得 IntelliSense 支援，撰寫.vstemplate 檔案時，加入`xmlns`屬性設定為`VSTemplate`項目並將它指派值為 http://schemas.microsoft.com/developer/vstemplate/2005。  
+    >  撰寫 `xmlns`vstemplate`VSTemplate` 檔案時若要取得 IntelliSense 支援，請在  元素中新增 http://schemas.microsoft.com/developer/vstemplate/2005 屬性並為它指派  值。  
   
 6.  儲存並關閉.vstemplate 檔案。  
   
@@ -67,10 +62,7 @@ ms.locfileid: "49296422"
   
 4.  按兩下範本事件，以檢視錯誤。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [自訂範本](../ide/customizing-project-and-item-templates.md)   
  [建立專案和項目範本](../ide/creating-project-and-item-templates.md)   
  [Visual Studio 範本結構描述參考](../extensibility/visual-studio-template-schema-reference.md)
-
-
-

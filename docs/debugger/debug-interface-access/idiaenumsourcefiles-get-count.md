@@ -1,5 +1,5 @@
 ---
-title: 'Idiaenumsourcefiles:: Get_count |Microsoft Docs'
+title: IDiaEnumSourceFiles::get_Count | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 04083b97-e1ac-4baf-bf5a-50a4dc1c6f27
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4820f9db70c44d5c4aa1a1703f67262d41328283
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 142ad963a981886d12fa887b919a952ec58351bf
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53963906"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55021659"
 ---
 # <a name="idiaenumsourcefilesgetcount"></a>IDiaEnumSourceFiles::get_Count
 擷取來源檔案的數目。  

@@ -1,5 +1,5 @@
 ---
-title: 'Idiaframedata:: Get_systemexceptionhandling |Microsoft Docs'
+title: IDiaFrameData::get_systemExceptionHandling | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: e8df1972-913c-446c-9779-775575b0caa9
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cf18ed2bb25ab2632c471c0da7d19ea54239c70d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f309b0e3651f3832eba905cd17a5de9bebd5df40
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53939936"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55019706"
 ---
 # <a name="idiaframedatagetsystemexceptionhandling"></a>IDiaFrameData::get_systemExceptionHandling
 擷取指出系統例外狀況處理是否作用中的旗標。  
@@ -35,7 +35,7 @@ HRESULT get_systemExceptionHandling ( 
  [out]會傳回`TRUE`如果系統例外狀況處理為作用中; 否則傳回`FALSE`。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，會傳回 `S_OK`。 傳回`S_FALSE`不支援這個屬性，則為。 反之則傳回錯誤碼。  
+ 如果成功，會傳回 `S_OK`。 傳回`S_FALSE`不支援這個屬性，則為。 否則會傳回錯誤碼。  
   
 ## <a name="remarks"></a>備註  
  系統例外狀況處理更常稱為結構化例外狀況處理。  

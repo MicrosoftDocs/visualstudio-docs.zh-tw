@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_oemsymbolid |Microsoft Docs'
+title: IDiaSymbol::get_oemSymbolId | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 187801f0-bd82-4c5b-9fae-8eeb1a4ac0ce
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d12001e11e69bed1fe306e36192291dd9a06a35a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c255dd670d5cf8e8c9e68a0f953697c8f3ce36a0
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53848320"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55034335"
 ---
 # <a name="idiasymbolgetoemsymbolid"></a>IDiaSymbol::get_oemSymbolId
 擷取原始設備製造商 (OEM) 符號的識別碼值。  

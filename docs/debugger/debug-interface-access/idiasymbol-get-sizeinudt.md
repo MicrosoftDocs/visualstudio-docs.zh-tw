@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_sizeInUdt |Microsoft Docs
+title: IDiaSymbol::get_sizeInUdt | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -7,15 +7,15 @@ dev_langs:
 ms.assetid: a82ab896-0185-46a4-b4d5-babfcc660fe1
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 52c99386bc319d02b8d2735d3714d9c06312cee0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 199d3198dd252c0fb660e2f3f4de9c8a39fc1147
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53961279"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54972988"
 ---
 # <a name="idiasymbolgetsizeinudt"></a>IDiaSymbol::get_sizeInUdt
 擷取的使用者定義型別之成員的大小。  

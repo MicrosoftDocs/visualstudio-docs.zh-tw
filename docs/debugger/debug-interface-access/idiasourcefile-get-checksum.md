@@ -1,5 +1,5 @@
 ---
-title: 'Idiasourcefile:: Get_checksum |Microsoft Docs'
+title: IDiaSourceFile::get_checksum | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: aad63a7e-4e22-44e4-8a5b-81b5174ced1e
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 463720503440771dcbdfbef39703a53cdc875e66
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f02338f46ace5da0d7769a6b27bc3500b797a9be
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53843342"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54977651"
 ---
 # <a name="idiasourcefilegetchecksum"></a>IDiaSourceFile::get_checksum
 擷取的總和檢查碼位元組。  

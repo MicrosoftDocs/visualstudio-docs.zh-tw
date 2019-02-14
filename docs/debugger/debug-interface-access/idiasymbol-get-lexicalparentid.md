@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_lexicalparentid |Microsoft Docs'
+title: IDiaSymbol::get_lexicalParentId | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 6c0c2874-cc47-4e4f-ad9c-02a18a108d9d
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9fed1d730d0565e3b2348c5e3c620449c2e537a9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fb3d8b21c938c090b7e568e5accaa3fa2087518b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53859928"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54987384"
 ---
 # <a name="idiasymbolgetlexicalparentid"></a>IDiaSymbol::get_lexicalParentId
 擷取之符號的語彙的父識別碼。  

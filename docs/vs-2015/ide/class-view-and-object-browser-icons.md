@@ -1,14 +1,9 @@
 ---
 title: 類別檢視和物件瀏覽器圖示 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - icons, in Object Browser
 - signal icons
@@ -22,18 +17,18 @@ ms.assetid: 58cc3f44-c296-4a88-a008-09d28598d9c0
 caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: af7ce3ee9b97996f92ac9ca8537c583b063a3445
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 7cb80c7ad81708724750660560d65cfef722af86
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49279731"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54785045"
 ---
 # <a name="class-view-and-object-browser-icons"></a>類別檢視和物件瀏覽器圖示
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-類別檢視 * * 和**物件瀏覽器**顯示代表程式碼實體，例如圖示、 命名空間、 類別、 函式和變數。 下表說明並描述圖示。  
+[類別檢視] 和 [物件瀏覽器] 會顯示代表程式碼實體 (例如，命名空間、類別、函式和變數) 的圖示。 下表說明並描述圖示。  
   
 |圖示|描述|圖示|描述|  
 |----------|-----------------|----------|-----------------|  
@@ -66,8 +61,5 @@ ms.locfileid: "49279731"
 |![訊號 Friend&#47;內部符號](../ide/media/vxsignal-icon-diamond.gif "vxSignal_Icon_Diamond")|Friend/內部。 只能從專案存取。|  
 |![訊號圖示箭號](../ide/media/vxsignal-icon-arrow.gif "vxSignal_Icon_Arrow")|捷徑。 物件的捷徑。|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [檢視程式碼的結構](../ide/viewing-the-structure-of-code.md)
-
-
-

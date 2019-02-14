@@ -1,5 +1,5 @@
 ---
-title: IDiaStackWalkHelper::pdataForVA |Microsoft Docs
+title: IDiaStackWalkHelper::pdataForVA | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: fafc38fe-74dc-4726-9a51-eebf3a673d7f
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3a29c1a9fa21b973bca5db03bae07f608f82014f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 42ab689c5c94fcf0200775d9fdd59ac2a0f7202c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53888019"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54916973"
 ---
 # <a name="idiastackwalkhelperpdataforva"></a>IDiaStackWalkHelper::pdataForVA
 傳回虛擬位址相關聯的 PDATA 資料區塊。  
@@ -47,7 +47,7 @@ HRESULT pdataForVA( 
  [in、 out]要求的資料會填入緩衝區。 不可以是 `NULL`。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回 `S_OK`。 傳回`S_FALSE`如果沒有針對指定的位址沒有 PDATA。 反之則傳回錯誤碼。  
+ 如果成功，則傳回 `S_OK`。 傳回`S_FALSE`如果沒有針對指定的位址沒有 PDATA。 否則會傳回錯誤碼。  
   
 ## <a name="remarks"></a>備註  
  PDATA （名為".pdata 」 一節） 的編譯模組包含 例外狀況處理函式的相關資訊。  

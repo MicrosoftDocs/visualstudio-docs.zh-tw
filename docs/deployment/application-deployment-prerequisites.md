@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: fc6e047e-ad94-44e8-8ff5-b6d1f4ca7735
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0baff8d685a1ac5f4899edc2f1dbf6ddf9c2e5b9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3525d12bfbb745c54bb452a16d12cd65394023ad
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53941069"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54995683"
 ---
 # <a name="application-deployment-prerequisites"></a>應用程式部署必要條件
 
@@ -45,10 +45,10 @@ ms.locfileid: "53941069"
 
 - 必須預先安裝在全域組件快取 (GAC) 中，組件資訊清單中的組件相依性宣告所指定的所有組件的最小版本。  
 
-  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 可以偵測遺漏的必要條件，然後您可以使用啟動載入器，以便安裝必要條件。 如需詳細資訊，請參閱[＜How to：隨著 ClickOnce 應用程式安裝必要軟體](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)。  
+  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 可以偵測遺漏的必要條件，然後您可以使用啟動載入器，以便安裝必要條件。 如需詳細資訊，請參閱 <<c0> [ 如何： 使用 ClickOnce 應用程式安裝必要條件](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)。  
 
 > [!NOTE]
->  若要變更 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 和 *MageUI.exe* 等工具所產生資訊清單中的值，您必須在文字編輯器中編輯應用程式資訊清單，然後重新簽署應用程式資訊清單和部署資訊清單。 如需詳細資訊，請參閱[＜How to：重新簽署應用程式和部署資訊清單](../deployment/how-to-re-sign-application-and-deployment-manifests.md)。  
+>  若要變更 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 和 *MageUI.exe* 等工具所產生資訊清單中的值，您必須在文字編輯器中編輯應用程式資訊清單，然後重新簽署應用程式資訊清單和部署資訊清單。 如需詳細資訊，請參閱 [How to: Re-sign Application and Deployment Manifests](../deployment/how-to-re-sign-application-and-deployment-manifests.md)。  
 
  如果您使用 Visual Studio 和 ClickOnce 部署應用程式，預設會根據方案中的 .NET Framework 版本來選取啟動載入器套件。 但是，如果您變更目標 .NET Framework 版本，則必須手動更新 [必要條件] 對話方塊中的選項。  
 
@@ -72,13 +72,13 @@ ms.locfileid: "53941069"
  如果您變更任何啟動載入器的選項，您就必須變更不帶正負號的啟動載入器，然後稍後再簽署啟動載入器檔案。  
 
 
-| 命令列引數 | 說明 |
+| 命令列引數 | 描述 |
 | - | - |
 | **-?, -h, -help** | 顯示 [說明] 對話方塊。 |
-| **--componentsurl 的 url** | 顯示此安裝程式的儲存 URL 和元件 URL。 |
-| **-url =** `location` | 設定 *Setup.exe* 將在其中尋找 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式的 URL。 |
-| **-componentsurl =** `location` | 設定 *Setup.exe* 將在其中尋找相依性的 URL，例如 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]。 |
-| **-homesite =** `true`**&#124;** `false` | 當`true`，從廠商網站上的偏好位置下載的相依性。 此設定會覆寫 **-componentsurl**設定。 當`false`，從所指定的 URL 下載的相依性 **-componentsurl**。 |
+| **-url, -componentsurl** | 顯示此安裝程式的儲存 URL 和元件 URL。 |
+| **-url=** `location` | 設定 *Setup.exe* 將在其中尋找 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式的 URL。 |
+| **-componentsurl=** `location` | 設定 *Setup.exe* 將在其中尋找相依性的 URL，例如 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]。 |
+| **-homesite=** `true` **&#124;** `false` | 當`true`，從廠商網站上的偏好位置下載的相依性。 此設定會覆寫 **-componentsurl**設定。 當`false`，從所指定的 URL 下載的相依性 **-componentsurl**。 |
 
 ## <a name="operating-system-support"></a>作業系統支援  
  Visual Studio 啟動載入器不支援在 Windows Server 2008 Server Core 或 Windows Server 2008 R2 Server Core，因為它們提供的低維護伺服器環境，但功能受限。 例如，Server Core 安裝選項僅支援.NET Framework 3.5 Server Core 設定檔，無法執行相依於完整.NET Framework 的 Visual Studio 功能。  

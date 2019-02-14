@@ -1,5 +1,5 @@
 ---
-title: 'Idiasourcefile:: Get_uniqueid |Microsoft Docs'
+title: IDiaSourceFile::get_uniqueId | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: e0b8dbc0-6061-4f31-bead-2cd72be44e41
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3eef4e6f435b60f024067e13c884c7742df0ffa2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4399c6f3c1bc5168f4a7bce0a82e251051432033
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53879471"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54964414"
 ---
 # <a name="idiasourcefilegetuniqueid"></a>IDiaSourceFile::get_uniqueId
 擷取都是唯一的這個映像的簡單的整數值。  

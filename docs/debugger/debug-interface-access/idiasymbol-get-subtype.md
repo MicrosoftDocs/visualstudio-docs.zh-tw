@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_subType |Microsoft Docs
+title: IDiaSymbol::get_subType | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -7,15 +7,15 @@ dev_langs:
 ms.assetid: 0b3cbf77-8f11-434a-ad60-ea9829fec6fa
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f5753faf29c6794dcf9b16fdecab9502d7e96b5b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3a6dbb0bc656ac7060eb5448161bd0b19b33dd23
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53880097"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55019693"
 ---
 # <a name="idiasymbolgetsubtype"></a>IDiaSymbol::get_subType
 擷取的子型別。  

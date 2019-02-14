@@ -1,5 +1,5 @@
 ---
-title: UdtKind |Microsoft Docs
+title: UdtKind | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 400b59b9-373c-42cb-aae1-570494214328
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 35631a3913f067e6520da630cd49969d8a2b40f0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: eaca67dd56fa34993e46693d6274bc4b7b593006
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53924224"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54929402"
 ---
 # <a name="udtkind"></a>UdtKind
 描述各種不同的使用者定義型別 (UDT)。  

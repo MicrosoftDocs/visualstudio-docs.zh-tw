@@ -25,15 +25,15 @@ helpviewer_keywords:
 ms.assetid: 27900e58-090c-4211-a309-b3e1496d5824
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d2609c76c39924794e2a9623e9e70c037c20415
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fa81baae882376aae99eedd1fdf825c863fd70c4
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53899609"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54932398"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>使用 Visual Studio 偵錯工具附加至執行中處理序
 您可以將 Visual Studio 偵錯工具附加至本機或遠端電腦上執行的處理序。 此程序執行之後，請選取**偵錯** > **připojit k procesu**或按**Ctrl**+**Alt** +**P**在 Visual Studio 中，並使用**附加至處理序**對話方塊，即可將偵錯工具附加至處理程序。
@@ -118,7 +118,7 @@ ms.locfileid: "53899609"
    - 若要尋找所有的使用者帳戶下執行的處理程序，請選取**顯示的所有使用者處理序**核取方塊。
       
      >[!NOTE]
-     >如果您嘗試附加至未受信任的使用者帳戶所擁有的處理序，會出現安全性警告對話方塊確認訊息。 如需詳細資訊，請參閱[安全性警告： 附加至不受信任的使用者所擁有的處理序可能會造成危險。如果下列資訊看起來有問題，或您不確定，不會附加至這個處理序](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md)。  
+     >如果您嘗試附加至未受信任的使用者帳戶所擁有的處理序，會出現安全性警告對話方塊確認訊息。 如需詳細資訊，請參閱[安全性警告：附加至未受信任的使用者所擁有的處理序可能會造成危險。如果下面的資訊看起來有問題，或者您並不確定，請不要附加至此處理序](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md)  
       
 5. 在 **附加至**欄位中，確定已列出您打算進行偵錯的程式碼的類型。 預設值**自動**設定適用於大部分的應用程式類型。 
   
@@ -161,7 +161,7 @@ ms.locfileid: "53899609"
 |遠端偵錯 ASP.NET 4 或 4.5 上 IIS 伺服器|使用遠端工具和**附加至處理序**|*w3wp.exe*|請參閱[遠端偵錯 IIS 的遠端電腦上的 ASP.NET](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)|
 |在 IIS 伺服器上遠端偵錯 ASP.NET Core|使用遠端工具和**附加至處理序**|*dotnet.exe*|應用程式部署，請參閱[發行至 IIS](https://docs.asp.net/en/latest/publishing/iis.html)。 進行偵錯，請參閱[IIS 的遠端電腦上的遠端偵錯 ASP.NET Core](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md)|
 |在本機 IIS 伺服器上，支援的應用程式類型的用戶端指令碼偵錯 |使用**附加至處理序**|*chrome.exe*， *MicrosoftEdgeCP.exe*，或*iexplore.exe*|必須啟用指令碼偵錯。 Chrome 中，您也必須針對執行 Chrome 偵錯模式，然後選取**Webkit 程式碼**中**附加至**欄位。|
-|偵錯C#，Visual Basic 或 c + + 在本機電腦上的應用程式|使用任何一種[標準偵錯](../debugger/debugger-feature-tour.md)或**附加至處理序**|*\<appname >.exe*|在大部分情況下，會使用標準偵錯而非**附加至處理序**。|
+|偵錯C#，Visual Basic 或 c + + 在本機電腦上的應用程式|使用任何一種[標準偵錯](../debugger/debugger-feature-tour.md)或**附加至處理序**|*\<appname>.exe*|在大部分情況下，會使用標準偵錯而非**附加至處理序**。|
 |遠端偵錯 Windows 傳統型應用程式|遠端工具|N/A| 請參閱[遠端偵錯C#或 Visual Basic 應用程式](../debugger/remote-debugging-csharp.md)或是[遠端偵錯 c + + 應用程式](../debugger/remote-debugging-cpp.md)|
 |啟動但不偵錯工具的應用程式之後，偵錯在本機電腦上的 ASP.NET 應用程式|使用**附加至處理序**|*iiexpress.exe*|這可能是很有幫助您載入的應用程式更快，這類 （例如） 程式碼剖析時。 |
 |在 伺服器處理序上其他支援的應用程式類型進行偵錯|如果遠端伺服器，使用 遠端工具，和**附加至處理序**|*chrome.exe*， *iexplore.exe*，或其他處理程序|如有必要，使用資源監視器來識別處理程序。 請參閱[遠端偵錯](../debugger/remote-debugging.md)。|

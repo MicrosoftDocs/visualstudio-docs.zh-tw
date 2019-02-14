@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_typeid |Microsoft Docs'
+title: IDiaSymbol::get_typeId | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: b40be36e-10e1-463c-9c6d-21862679d29f
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c5d431e904a80618658eca3bfc1c96bf0b701fd3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a5dd0aef5a6e5f8892311d125f7780cb426e9227
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53834018"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54980345"
 ---
 # <a name="idiasymbolgettypeid"></a>IDiaSymbol::get_typeId
 擷取之符號的類型識別碼。  

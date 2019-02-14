@@ -1,5 +1,5 @@
 ---
-title: 'Idiasession:: Get_globalscope |Microsoft Docs'
+title: IDiaSession::get_globalScope | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 75d128a8-3dce-40ed-b392-de3fdda041b7
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3251b9ce66873bb5247870e6ed920c0b858c320b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b880c154c8b0f096dc0c22cd252054a06a770632
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53893363"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54981801"
 ---
 # <a name="idiasessiongetglobalscope"></a>IDiaSession::get_globalScope
 擷取至全域範圍的參考。  

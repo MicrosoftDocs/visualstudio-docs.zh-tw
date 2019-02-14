@@ -1,14 +1,9 @@
 ---
 title: 標準和自訂工具組的組態 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, custom toolset configurations
 - MSBuild, msbuild.exe.config
@@ -16,13 +11,13 @@ ms.assetid: 15a048c8-5ad3-448e-b6e9-e3c5d7147ed2
 caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 1a1d57903ec2a8c3afb439f27433898467028eb6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 0ad0d60921e9bb42f54cc70c49efbe64f036398d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49906698"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54801670"
 ---
 # <a name="standard-and-custom-toolset-configurations"></a>標準和自訂工具組的組態
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -108,8 +103,5 @@ MSBuild 工具組包含工作、目標和工具的參考，可用以組建應用
 
   您也可以使用新增 MSBuildToolsPath 屬性時所用的相同語法，在組態檔中新增自訂的工具版本特定屬性。 為使專案檔能夠使用這些自訂屬性，請使用和組態檔指定的值名稱相同的名稱。 您可以在組態檔中定義工具組，但不能定義子工具組。  
 
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [工具組 (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md)
-
-
-

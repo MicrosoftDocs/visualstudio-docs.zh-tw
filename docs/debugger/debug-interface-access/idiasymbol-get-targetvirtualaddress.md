@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_targetvirtualaddress |Microsoft Docs'
+title: IDiaSymbol::get_targetVirtualAddress | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: a0a5ce72-95f8-443e-bb4b-8c21194faad0
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f5aa712aed39ecebdb664cf4f8e0dcefa5efae3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 157ff30aae39c505840e6f136cb5991df36a4be2
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53867549"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54950906"
 ---
 # <a name="idiasymbolgettargetvirtualaddress"></a>IDiaSymbol::get_targetVirtualAddress
 擷取 thunk 目標的虛擬位址 (VA)。  

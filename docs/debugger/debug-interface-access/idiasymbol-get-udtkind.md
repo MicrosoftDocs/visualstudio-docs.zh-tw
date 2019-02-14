@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_udtkind |Microsoft Docs'
+title: IDiaSymbol::get_udtKind | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 4002f887-aea6-4475-b302-67c57079fe0a
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a0a95588be4f0a1f37f45a731786ea410a0300f2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1c97d56b5ff47652ae04d2cb2e37105b08a00612
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53967014"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54995995"
 ---
 # <a name="idiasymbolgetudtkind"></a>IDiaSymbol::get_udtKind
 擷取的各種不同的使用者定義型別 (UDT)。  

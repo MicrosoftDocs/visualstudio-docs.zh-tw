@@ -1,5 +1,5 @@
 ---
-title: CV_CPU_TYPE_e |Microsoft Docs
+title: CV_CPU_TYPE_e | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: df470a7e-1d04-448e-b920-c731189514fa
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 16203b08284c0248742b42daa5b847310e1d3278
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 10592c4d42afbb1545ea938d981b30b3b37437ea
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53843160"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55012959"
 ---
 # <a name="cvcputypee"></a>CV_CPU_TYPE_e
 指定目標處理器。  

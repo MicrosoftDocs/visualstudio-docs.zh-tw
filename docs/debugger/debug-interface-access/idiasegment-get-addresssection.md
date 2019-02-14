@@ -1,5 +1,5 @@
 ---
-title: 'Idiasegment:: Get_addresssection |Microsoft Docs'
+title: IDiaSegment::get_addressSection | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 360b61b1-69b1-4a8b-ba37-97a1d835ac53
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 54de54007b067bd3be005a85707e35ef00bd26d4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 15d1c1e62661cec18074e937b11a9e48579a33f8
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53871446"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54968436"
 ---
 # <a name="idiasegmentgetaddresssection"></a>IDiaSegment::get_addressSection
 擷取對應至這個區段的區段數目。  
@@ -35,7 +35,7 @@ HRESULT get_addressSection ( 
  [out]傳回對應至這個區段的區段數目。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回 `S_OK`。 傳回`S_FALSE`不支援這個屬性，則為。 反之則傳回錯誤碼。  
+ 如果成功，會傳回 `S_OK`。 傳回`S_FALSE`不支援這個屬性，則為。 否則會傳回錯誤碼。  
   
 ## <a name="see-also"></a>請參閱  
  [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md)

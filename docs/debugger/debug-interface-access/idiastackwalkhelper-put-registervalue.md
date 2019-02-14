@@ -1,5 +1,5 @@
 ---
-title: IDiaStackWalkHelper::put_registerValue |Microsoft Docs
+title: IDiaStackWalkHelper::put_registerValue | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 8f02ce54-ef59-455f-8aa6-dc26761c7aff
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b3d0cdcd31419f23a69eea019b38304eb6feba8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 417ec6472d815c873972c1ceefaadd6063b3c187
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53956942"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54951569"
 ---
 # <a name="idiastackwalkhelperputregistervalue"></a>IDiaStackWalkHelper::put_registerValue
 設定暫存器值。  
