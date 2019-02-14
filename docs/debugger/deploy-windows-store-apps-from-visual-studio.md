@@ -10,15 +10,15 @@ dev_langs:
 - C++
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 38e3f53a22b7f8dfa84d327fb2c10ef5efacddd4
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.openlocfilehash: 13dc1f44e329f35ad9871fe5969a65d4ad46e770
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "53821311"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55043761"
 ---
 # <a name="deploy-uwp-apps-from-visual-studio"></a>從 Visual Studio 部署 UWP 應用程式
 
@@ -28,7 +28,7 @@ Visual Studio 部署功能建置，並註冊的目標裝置使用 Visual Studio 
 
 - 目標是遠端裝置時，Visual Studio 會將必要檔案複製至遠端電腦，並在該裝置上註冊應用程式。
 
-當您使用下列選項從 Visual Studio 偵錯應用程式時，會自動進行部署：[開始偵錯]** 選項 (快速鍵：F5) 或**啟動但不偵錯**選項 (鍵盤：CTRL + F5 您也可以手動部署應用程式。 手動部署適用於下列情況：
+當您使用偵錯您的應用程式，從 Visual Studio 部署便會自動**開始偵錯**選項 (鍵盤： F5) 或**啟動但不偵錯**選項 (鍵盤： CTRL + F5)。 您也可以手動部署應用程式。 手動部署適用於下列情況：
 
 - 本機或遠端電腦上進行臨機操作測試。
 

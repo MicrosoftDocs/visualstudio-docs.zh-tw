@@ -17,21 +17,21 @@ helpviewer_keywords:
 - debugging [Visual Studio ALM], IntelliTrace
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 353be65ceb87827bcce56c7fb6a07b6af8919c58
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.openlocfilehash: 2191ed7d6c091b730be9204d70cec79a0c6e5e44
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54227833"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55035233"
 ---
 # <a name="intellitrace-features-c-visual-basic-c"></a>IntelliTrace 功能 (C#，Visual Basic、 c + +)
 
 您可以使用 IntelliTrace 記錄您應用程式的事件和方法呼叫，以讓您檢查它在執行之不同時間點的狀態 (呼叫堆疊和區域變數值)。 只要如常開始偵錯，預設會開啟 IntelliTrace，而您可以在新 [診斷工具] 視窗的 [事件] 索引標籤中查看 IntelliTrace 所記錄的資訊。選取事件，然後按一下 [啟用歷程偵錯]，以查看針對此事件記錄的呼叫堆疊和區域變數。
 
-如需逐步說明，請參閱[逐步解說：使用 IntelliTrace
+如需逐步說明，請參閱 [ 逐步解說： 使用 IntelliTrace](../debugger/walkthrough-using-intellitrace.md)。
 
 Visual Studio Enterprise 版本 (而非 Visual Studio Professional 或 Community 版本) 中提供 IntelliTrace。
 

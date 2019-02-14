@@ -1,14 +1,9 @@
 ---
 title: JavaScript、屬性頁 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - javascript.project.property.debugging.debuggertype
 - javascript.project.property.debugging.requireauthentication
@@ -21,13 +16,13 @@ ms.assetid: a05ab01f-3d5d-4675-a845-eab51807d3a3
 caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 586ad4352dfdf88aef87d4f9c815a776f85a6a82
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 2ae8687a63f4f49a84a67a2c504ee5bf11769128
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49904189"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54768138"
 ---
 # <a name="property-pages-javascript"></a>JavaScript、屬性頁
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -45,10 +40,10 @@ ms.locfileid: "49904189"
  您可以使用下列選項，來選取要顯示或修改的組態和平台。  
   
  **組態**  
- 指定要顯示或修改的組態設定。 這些設定包括 [偵錯]\(預設值)、[發行]、[所有組態] 或使用者定義的組態。 如需詳細資訊，請參閱[偵錯和發行專案組態](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e)。  
+ 指定要顯示或修改的組態設定。 這些設定包括 [偵錯]\(預設值)、[發行]、[所有組態] 或使用者定義的組態。 如需詳細資訊，請參閱[偵錯和發行專案組態](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e)。  
   
  **平台**  
- 指定要顯示或修改的平台設定。 這些設定包括 [任何 CPU]\([!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)] 應用程式的預設值)、[x64]、[ARM]、[x86] 或使用者定義的平台。 如需詳細資訊，請參閱[偵錯和發行專案組態](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e)。  
+ 指定要顯示或修改的平台設定。 這些設定包括 [任何 CPU]\([!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)] 應用程式的預設值)、[x64]、[ARM]、[x86] 或使用者定義的平台。 如需詳細資訊，請參閱[偵錯和發行專案組態](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e)。  
   
 ## <a name="general-page"></a>一般頁面  
  您可以使用下列選項，來設定專案的一般屬性。  
@@ -59,7 +54,7 @@ ms.locfileid: "49904189"
  **輸出路徑**  
  指定專案組態的輸出檔位置。 路徑是相對的；如果您輸入絕對路徑，則會在專案中儲存絕對路徑。 預設路徑為 bin\Debug。  
   
- 當您使用簡化的組建組態時，專案系統會決定要建置偵錯或發行版本。 不論您指定的 [輸出路徑] 為何，按一下 [偵錯]、[開始偵錯] (或按 F5) 時，組建均會放在偵錯位置。 但是，[建置] 功能表上的 [建置方案] 命令卻會將其放在您指定的位置。 若要啟用進階組建組態，請在功能表列上選擇 [工具]、[選項]。 在 [選項] 對話方塊中，展開 [專案和方案]，選取 [一般]，然後清除 [顯示進階組建組態] 核取方塊。 這麼做可以讓您手動控制所有組態值，以及建置的是偵錯或發行版本。 如需詳細資訊，請參閱 < [NIB： 一般、 專案和方案、 選項對話方塊](http://msdn.microsoft.com/en-us/8f8e37e8-b28d-4b13-bfeb-ea4d3312aeca)。  
+ 當您使用簡化的組建組態時，專案系統會決定要建置偵錯或發行版本。 不論您指定的 [輸出路徑] 為何，按一下 [偵錯]、[開始偵錯] (或按 F5) 時，組建均會放在偵錯位置。 但是，[建置] 功能表上的 [建置方案] 命令卻會將其放在您指定的位置。 若要啟用進階組建組態，請在功能表列上選擇 [工具]、[選項]。 在 [選項] 對話方塊中，展開 [專案和方案]，選取 [一般]，然後清除 [顯示進階組建組態] 核取方塊。 這麼做可以讓您手動控制所有組態值，以及建置的是偵錯或發行版本。 如需詳細資訊，請參閱 < [NIB： 一般、 專案和方案、 選項對話方塊](http://msdn.microsoft.com/8f8e37e8-b28d-4b13-bfeb-ea4d3312aeca)。  
   
  **預設語言**  
  指定專案的預設語言。 系統會將使用者的慣用語言指定為控制台 [時鐘、語言和區域] 中選取的語言。 藉由指定專案預設語言，可確保當使用者的慣用語言不符合應用程式所提供的語言資源時，會使用指定的預設語言資源。  
@@ -93,6 +88,3 @@ ms.locfileid: "49904189"
   
   **需要驗證**  
   指定遠端電腦是否需要驗證。 只有在 [要啟動的偵錯工具] 設定為 [遠端電腦] 時，才能使用這個屬性。
-
-
-

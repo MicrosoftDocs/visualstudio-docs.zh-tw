@@ -1,14 +1,9 @@
 ---
 title: 從命令列使用程式碼剖析工具 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - command line, performance tools
 - command-line tools, performance tools
@@ -19,13 +14,13 @@ ms.assetid: 6593fa82-181e-4009-a0ed-02aa24c2c063
 caps.latest.revision: 40
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 9cb3fafa78d49904c346212e8fd4062c966a63f5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 08777a59b79acd547741ebec4c0bc39a81791bc2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51775143"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54767757"
 ---
 # <a name="using-the-profiling-tools-from-the-command-line"></a>從命令列使用程式碼剖析工具
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,8 +42,5 @@ ms.locfileid: "51775143"
 ## <a name="reference"></a>參考資料  
  [命令列程式碼剖析工具參考](../profiling/command-line-profiling-tools-reference.md)  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [效能總管](../profiling/performance-explorer.md)
-
-
-
