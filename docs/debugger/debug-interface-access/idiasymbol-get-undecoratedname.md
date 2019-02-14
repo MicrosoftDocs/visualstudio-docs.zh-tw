@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_undecoratedname |Microsoft Docs'
+title: IDiaSymbol::get_undecoratedName | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: e49edf25-a51d-4787-bd5b-2bf5af827c8c
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f0259a99d292f5852af36a9503d94d6f2eddb1c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f8d93a149ac0030f5aa5daaa2f8b921fb32582b1
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53867874"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54995823"
 ---
 # <a name="idiasymbolgetundecoratedname"></a>IDiaSymbol::get_undecoratedName
 擷取為 c + + 裝飾，或連結，名稱的未裝飾的名稱。  

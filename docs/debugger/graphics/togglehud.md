@@ -1,19 +1,19 @@
 ---
-title: ToggleHUD |Microsoft Docs
+title: ToggleHUD | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 7261e01d-3c72-46ce-9fb3-5f33b2ddb901
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a4ee371f90636d98d5dd771cc508e58cd1d1a394
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e49066d4625990119159ea72f59a3a3fe59d581c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53907971"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54953298"
 ---
 # <a name="togglehud"></a>ToggleHUD
 切換 圖形診斷*抬頭顯示器*（抬頭顯示器） 重疊或關閉。  

@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_sourcefilename |Microsoft Docs'
+title: IDiaSymbol::get_sourceFileName | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 0f5dce88-829e-4df3-8acd-8d71076ad167
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b0dc635c5f1dff8d8e41426a72df61888c032d9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5775c743382fc1042492253f6bb8c0657da0698f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53864870"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55043137"
 ---
 # <a name="idiasymbolgetsourcefilename"></a>IDiaSymbol::get_sourceFileName
 擷取編譯原始程式檔的檔案名稱。  

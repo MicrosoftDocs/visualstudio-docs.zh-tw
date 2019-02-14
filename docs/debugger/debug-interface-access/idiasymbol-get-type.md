@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_type |Microsoft Docs'
+title: IDiaSymbol::get_type | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 1c6a4176-dd4e-4c22-8b8f-0e559fc078ba
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ba944bd2871e23c44806caf291334743813c16d0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: bdf55138c6260404fca706017131bbe5615d77b8
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53898108"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55043008"
 ---
 # <a name="idiasymbolgettype"></a>IDiaSymbol::get_type
 擷取代表這個符號的類型的符號。  

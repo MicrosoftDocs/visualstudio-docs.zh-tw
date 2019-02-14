@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: ddd11a41-6c00-4829-acf4-aa1ace8c21a7
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c22796ab2d54d2b0d21920372aceccc9bdce2e7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b659dcad7235ae0176e6e4b96fc9e8644912276a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53933725"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54986757"
 ---
 # <a name="idiasymbolgetisdataaligned"></a>IDiaSymbol::get_isDataAligned
 擷取指定使用者定義的型別 (UDT) 是否有某些特定記憶體界限已對齊的旗標。  
@@ -45,10 +45,10 @@ HRESULT get_isDataAligned(
   
 ## <a name="requirements"></a>需求  
   
-|需求|說明|  
+|需求|描述|  
 |-----------------|-----------------|  
 |標頭：|dia2.h|  
-|版本:|DIA SDK 8.0 版|  
+|版本:|DIA SDK v8.0|  
   
 ## <a name="see-also"></a>請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

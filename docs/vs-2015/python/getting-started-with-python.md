@@ -1,25 +1,20 @@
 ---
 title: 開始使用 Python |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-python
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-python
+ms.topic: conceptual
 ms.assetid: 33f4f6fb-0ae4-4234-9df2-531f2d3af17f
 caps.latest.revision: 13
 author: kraigb
 ms.author: kraigb
-manager: ghogen
-ms.openlocfilehash: 5cb04bb01aaa6eb06c5e3c50aa13ab51c136678c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 18e55aef8d95110dc44f20084eb5e45f643bf3cf
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49275284"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54833939"
 ---
 # <a name="getting-started-with-python"></a>開始使用 Python
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,11 +27,11 @@ Python 是受歡迎的程式設計語言，可由許多大學、 科學家、 �
 
 做為程式設計語言中，Python 是：
   
-- 可靠的。
+- 可靠
 - 通常適用於指令碼快速的程式、 指令碼應用程式、 傳統型應用程式、 web 伺服器、 web 服務和科學運算。
-- 若要了解簡單和良好的設計，鼓勵優秀的編碼 （許多大學使用它的程式設計的入門課程）。
+- 易於學習及良好的設計有助於撰寫高品質的程式碼 (許多大學使用它做為程式設計的入門課程)
 - 有彈性，支援命令式、 功能和物件導向程式設計的樣式。
-- 免費的開放原始碼。
+- 免費且開放的原始碼
 - 在所有主流作業系統上順利執行。  
 - 支援許多免費、 有用且設計良好的程式庫。  
 - 支援大量文件、 範例和強大的開發人員社群。  
@@ -48,10 +43,10 @@ Python 是受歡迎的程式設計語言，可由許多大學、 科學家、 �
   
 ## <a name="python-tools-for-visual-studio"></a>Python Tools for Visual Studio
   
-Python Tools for Visual Studio 中，您可以從安裝[visualstudio.com](https://www.visualstudio.com/en-us/explore/python-vs)，提供下列功能：  
+Python Tools for Visual Studio 中，您可以從安裝[visualstudio.com](https://www.visualstudio.com/explore/python-vs)，提供下列功能：  
   
 - 支援多個解譯器：CPython、IronPython 及 IPython 的各種版本  
-- 專案系統會隱含地挑選的 Python 程式碼的資料夾結構，也可以明確地控制，因此您可以識別應用程式程式碼、 測試程式碼、 網頁、 JavaScript、 建置指令碼等等。  
+- 以隱含方式讀取 Python 程式碼資料夾結構的專案系統，您也可以明確地控制，以便清楚什麼是應用程式程式碼、測試程式碼、網頁、JavaScript、建置指令碼等等的專案系統。  
 - 適用於主控台、網路、Azure、資料科學，及其他類型的專案。    
 - Azure SDK for Python （請參閱下文）    
 - 豐富的編輯和程式碼理解功能：語法著色、所有程式碼和程式庫的自動完成、簽章說明、類別檢視、移至定義、尋找所有參考、重構等等。    
@@ -96,12 +91,11 @@ Azure SDK for Python 支援 Windows、Mac 和 Linux，可讓您更容易使用�
 
 建議您從[加州大學爾灣分校 (英文)](http://www.lfd.uci.edu/~gohlke/pythonlibs/#scipy-stack) 取得 IPython 和科學運算程式庫 (Matplotlib、Scipy、Numpy 等等)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
 
-[PTVS 快速入門：設定 Visual Studio](../python/getting-started-with-ptvs-setting-up-visual-studio.md)
-[PTVS 快速入門：開始撰寫程式碼 (專案)](../python/getting-started-with-ptvs-start-coding-projects.md)
-[PTVS 快速入門：編輯程式碼](../python/getting-started-with-ptvs-editing-code.md)
-[Getting Started with PTVS: Debugging](../python/getting-started-with-ptvs-debugging.md)
-[PTVS 快速入門：互動式 Python](../python/getting-started-with-ptvs-interactive-python.md)
-[開始使用 PTVS：在 Azure 建置網站](../python/getting-started-with-ptvs-building-a-website-in-azure.md)
-
+[Ptvs 快速入門：設定 Visual Studio](../python/getting-started-with-ptvs-setting-up-visual-studio.md)
+[ptvs 快速入門：開始撰寫程式碼 （專案）](../python/getting-started-with-ptvs-start-coding-projects.md)
+[ptvs 快速入門：編輯程式碼](../python/getting-started-with-ptvs-editing-code.md)
+[ptvs 快速入門：偵錯](../python/getting-started-with-ptvs-debugging.md)
+[ptvs 快速入門：互動式 Python](../python/getting-started-with-ptvs-interactive-python.md)
+[ptvs 快速入門：在 Azure 建置網站](../python/getting-started-with-ptvs-building-a-website-in-azure.md)

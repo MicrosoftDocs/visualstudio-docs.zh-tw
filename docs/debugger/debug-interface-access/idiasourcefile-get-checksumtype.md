@@ -1,5 +1,5 @@
 ---
-title: 'Idiasourcefile:: Get_checksumtype |Microsoft Docs'
+title: IDiaSourceFile::get_checksumType | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 4c363e61-a6a9-409a-9cc0-d06eb2bee645
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 750d48cad07251f34e988fa8a6ced618821c443d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9bee821a1ecd0179d3ea64e3d1e1f7efca92d64f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53825904"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54928967"
 ---
 # <a name="idiasourcefilegetchecksumtype"></a>IDiaSourceFile::get_checksumType
 擷取的總和檢查碼類型。  
@@ -40,7 +40,7 @@ HRESULT get_checksumType ( 
 ## <a name="remarks"></a>備註  
  總和檢查碼型別是可以對應至總和檢查碼演算法的值。 例如，標準的 PDB 檔案格式可以通常具有下列值之一：  
   
-|總和檢查碼類型|CryptoAPI 標籤|說明|  
+|總和檢查碼類型|CryptoAPI 標籤|描述|  
 |-------------------|---------------------|-----------------|  
 |0|\<無>|不存在的總和檢查碼。|  
 |1|`CALG_MD5`|使用 MD5 雜湊演算法產生的總和檢查碼。|  

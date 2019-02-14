@@ -1,5 +1,5 @@
 ---
-title: 'Idiaaddressmap:: Set_addressmap |Microsoft Docs'
+title: IDiaAddressMap::set_addressMap | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 81e82073-089b-43d5-af39-49d7a4907c7a
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a99a1177208ac747373f2625a9fc76b7f3bc1cdb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d3150cc591c77d1ab3abc31ed9b07062d094d3d4
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53954126"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54973092"
 ---
 # <a name="idiaaddressmapsetaddressmap"></a>IDiaAddressMap::set_addressMap
 提供支援映像的版面配置轉譯對應的位址。  

@@ -1,21 +1,20 @@
 ---
 title: MSBuild 術語詞彙
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.technology: vs-ide-sdk
+ms.technology: msbuild
 ms.topic: reference
 ms.assetid: f767d8e4-24d8-4803-80eb-e857202dbe2c
 caps.latest.revision: 25
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 25d4b5ba48f3f9297cce36bec2b7c4d5b96fe1c3
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+manager: jillfra
+ms.openlocfilehash: e84a7c3c7e402edb3c39ea247ea7efffce1b60df
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53804535"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54768983"
 ---
 # <a name="msbuild-glossary"></a>MSBuild 字彙表
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

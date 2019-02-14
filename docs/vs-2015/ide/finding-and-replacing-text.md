@@ -1,14 +1,9 @@
 ---
 title: 尋找和取代文字 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vs.find
 - vs.findreplacecontrol
@@ -41,13 +36,13 @@ ms.assetid: a62545c3-1570-4d12-99fb-a82607eb35a1
 caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: e4bbe1456632b2707ca548582bb278f7646ec540
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 4a0edc40a8a6523c76a6b6f8074a108219152c06
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49273438"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54756874"
 ---
 # <a name="finding-and-replacing-text"></a>Finding and Replacing Text
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -79,13 +74,10 @@ ms.locfileid: "49273438"
  當您選擇 [全部尋找] 時，會開啟 [尋找結果] 視窗，並列出您搜尋的相符項目。 在清單中選取結果會顯示相關聯的檔案，並反白顯示相符項目。 如果尚未開啟檔案進行編輯，則會在索引標籤牆右側的預覽索引標籤中開啟它。 您可以使用 [尋找] 控制項來搜尋 [尋找結果] 清單。  
   
 ### <a name="creating-custom-search-folder-sets"></a>建立自訂搜尋資料夾集  
- 您可以定義搜尋範圍，選擇**選擇搜尋資料夾** 按鈕 (看起來像 **...**) 旁**查看** 方塊中。 在 [選擇搜尋資料夾] 對話方塊中，您可以指定一組要在其中搜尋的資料夾，並且可以儲存規格，以在稍後重複使用。 只有在您已將遠端電腦的磁碟機對應到本機電腦時，才能在遠端電腦上指定資料夾。  
+ 您可以選擇 [查詢] 方塊旁的 [選擇搜尋資料夾] 按鈕 (看起來就像 **...**)，來定義搜尋範圍。 在 [選擇搜尋資料夾] 對話方塊中，您可以指定一組要在其中搜尋的資料夾，並且可以儲存規格，以在稍後重複使用。 只有在您已將遠端電腦的磁碟機對應到本機電腦時，才能在遠端電腦上指定資料夾。  
   
 ### <a name="creating-custom-component-sets"></a>建立自訂元件集  
  您可以選擇 [查詢] 方塊旁的 [編輯自訂元件集] 按鈕，將元件集定義為搜尋範圍。 您可以指定已安裝的 .NET 或 COM 元件、方案中所含的 Visual Studio 專案，或者任何組件或類型庫 (.dll、.tlb、.olb、.exe 或 .ocx)。 若要搜尋參考，請選取 [查詢參考] 方塊。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [在 Visual Studio 中使用規則運算式](../ide/using-regular-expressions-in-visual-studio.md)
-
-
-

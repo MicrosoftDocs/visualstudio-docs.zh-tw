@@ -1,5 +1,5 @@
 ---
-title: 'Idiaenumtables:: Item |Microsoft Docs'
+title: IDiaEnumTables::Item | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: d65ab262-10c6-48ce-95a3-b5e4cb2c85af
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6321b6bc651778e9d3aff7257a251eff6493f397
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 805be4cd9f40bdbdb0f02521a0d946c7121847c8
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53966138"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54939695"
 ---
 # <a name="idiaenumtablesitem"></a>IDiaEnumTables::Item
 擷取透過索引或名稱的資料表。  

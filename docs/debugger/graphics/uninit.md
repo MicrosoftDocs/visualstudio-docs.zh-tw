@@ -1,19 +1,19 @@
 ---
-title: UnInit |Microsoft Docs
+title: UnInit | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 4cd4fc0b-974a-4e61-9ea8-0aaa1a0c52ea
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a1cb7898042ef7f6974d2ac43ca8630232edddfc
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 48c4e76105c024f9f414a884c2e3cabde716db86
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53884924"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55019105"
 ---
 # <a name="uninit"></a>UnInit
 完成的圖形記錄檔、 關閉，並釋出應用程式的作用中記錄的圖形資訊時所使用的資源。  

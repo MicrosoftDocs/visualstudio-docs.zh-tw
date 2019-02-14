@@ -1,5 +1,5 @@
 ---
-title: 'Idiaenumdebugstreams:: Get__newenum |Microsoft Docs'
+title: IDiaEnumDebugStreams::get__NewEnum | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 972372ff-abfc-4987-a302-7788fab90348
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c00f970343f6b897270297351e44d3375ee75b9d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2f1f0b52a4400f2b7cba6911777c0f14bb218609
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53832498"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54972634"
 ---
 # <a name="idiaenumdebugstreamsgetnewenum"></a>IDiaEnumDebugStreams::get__NewEnum
 擷取<xref:System.Runtime.InteropServices.ComTypes.IEnumVARIANT>這個列舉值的版本。  

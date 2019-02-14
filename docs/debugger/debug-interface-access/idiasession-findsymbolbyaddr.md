@@ -1,5 +1,5 @@
 ---
-title: 'Idiasession:: Findsymbolbyaddr |Microsoft Docs'
+title: IDiaSession::findSymbolByAddr | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: c130abc5-4d0a-4d2d-8286-94fde36ddd4a
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1cb92d46b63668c5b0b590134dd8b36587ab11c6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c9567e272167c34d3061e9273d912ea9a2cd0ab7
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53837182"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55031418"
 ---
 # <a name="idiasessionfindsymbolbyaddr"></a>IDiaSession::findSymbolByAddr
 擷取指定的符號類型包含此項目，或最接近，指定的位址。  

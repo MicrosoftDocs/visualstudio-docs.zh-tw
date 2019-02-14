@@ -1,5 +1,5 @@
 ---
-title: 'Idiaenumsegments:: Clone |Microsoft Docs'
+title: IDiaEnumSegments::Clone | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 93deaac6-72ab-4408-ba14-66174a618757
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: de7b9b12c17f6a0d9295809551d403b4d490dd94
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 572db4071fecc9bb235bc79a8d0c7b182b907cb4
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53859090"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55070723"
 ---
 # <a name="idiaenumsegmentsclone"></a>IDiaEnumSegments::Clone
 建立列舉值，包含目前的列舉值相同的列舉型別狀態。  

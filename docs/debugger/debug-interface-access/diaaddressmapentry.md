@@ -1,5 +1,5 @@
 ---
-title: DiaAddressMapEntry |Microsoft Docs
+title: DiaAddressMapEntry | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 5d0ae226-981d-4541-a801-fc4993fe663b
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6cadfe96bc0bf0ac0395d93c2ef0b156b9965ed2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1e968cd89c66e0f8c13dbb0468e66e06ca53e273
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53964081"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54999128"
 ---
 # <a name="diaaddressmapentry"></a>DiaAddressMapEntry
 描述中對應的位址的項目。  

@@ -1,5 +1,5 @@
 ---
-title: 'Idiasegment:: Get_virtualaddress |Microsoft Docs'
+title: IDiaSegment::get_virtualAddress | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 30073dd0-c864-4c4a-8863-80f243419f6c
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 70373ef0b2024cc0650d8b8a5b1607bc86b6350d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: dff89e6d2552773e78e3e3de051e68cf81de9fc7
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53819486"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55042084"
 ---
 # <a name="idiasegmentgetvirtualaddress"></a>IDiaSegment::get_virtualAddress
 擷取區段開頭的虛擬位址 (VA)。  
@@ -35,7 +35,7 @@ HRESULT get_virtualAddress ( 
  [out]傳回區段開頭的 VA。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回 `S_OK`。 傳回`S_FALSE`不支援這個屬性，則為。 反之則傳回錯誤碼。  
+ 如果成功，會傳回 `S_OK`。 傳回`S_FALSE`不支援這個屬性，則為。 否則會傳回錯誤碼。  
   
 ## <a name="see-also"></a>請參閱  
  [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md)

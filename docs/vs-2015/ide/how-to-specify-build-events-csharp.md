@@ -1,14 +1,9 @@
 ---
-title: 如何：指定建置事件 (C#) | Microsoft Docs
-ms.custom: ''
+title: HOW TO：指定建置事件 (C#) |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - pre-build events
 - events [Visual Studio], builds
@@ -19,13 +14,13 @@ ms.assetid: b4ce1ad9-5215-4b6f-b6a2-798b249aa335
 caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 4b645d51594cbb507ea0e6bb27a00eea21e73b7b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: f4f54d10bb366ced70347db8d154b0a132253c97
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49872014"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54781081"
 ---
 # <a name="how-to-specify-build-events-c"></a>如何：指定建置事件 (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,7 +54,7 @@ ms.locfileid: "49872014"
 6.  在 [執行建置後事件] 方塊中，指定要執行建置後事件的情況。  
   
     > [!NOTE]
-    >  若要新增冗長的語法，或選取任何建置巨集[建置前事件/建置後事件命令列對話方塊](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md)，按一下省略符號按鈕 (**...**) 來顯示編輯方塊。  
+    >  若要新增冗長的語法，或從[建置前事件/建置後事件命令列對話方塊](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md)選取任何建置巨集，請按一下省略符號按鈕 (**...**) 來顯示編輯方塊。  
   
      建置事件語法可以包含在命令提示字元或 .bat 檔案中的任何有效命令。 批次檔的名稱之前應該加上 `call` 以確保所有後續的命令都會執行。  
   
@@ -188,11 +183,8 @@ ms.locfileid: "49872014"
     <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />  
     ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [專案設計工具、建置事件 (C#)](../ide/reference/build-events-page-project-designer-csharp.md)   
  [建置前事件/建置後事件命令列對話方塊](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md)   
  [如何：指定建置事件 (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md)   
  [編譯和建置](../ide/compiling-and-building-in-visual-studio.md)
-
-
-

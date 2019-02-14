@@ -1,14 +1,9 @@
 ---
 title: '&lt;值&gt;(JavaScript) |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - <value> JavaScript XML tag
 - value JavaScript XML tag
@@ -16,15 +11,15 @@ ms.assetid: 983e31de-cb1d-411e-b60d-eea6698a26f6
 caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: f88f3ae2e7442549004d2331b4517eb7fa2b5509
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: ac74dde41a2d6cea0a768cfc89838cc34ce41afd
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49914329"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54799138"
 ---
-# <a name="ltvaluegt-javascript"></a>&lt;值&gt;(JavaScript)
+# <a name="ltvaluegt-javascript"></a>&lt;value&gt; (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 指定文件資訊`get`和`set`ECMAScript 3 屬性的函式。  
@@ -42,7 +37,7 @@ ms.locfileid: "49914329"
   
 #### <a name="parameters"></a>參數  
  `type`  
- 選擇性。 屬性的資料型別。 類型可以是下列其中一項：  
+ 選擇性。 屬性的資料類型。 類型可以是下列其中一項：  
   
 - 是在 ECMAScript 5 規格中，例如 ECMAScript 語言型別`Number`和`Object`。  
   
@@ -57,7 +52,7 @@ ms.locfileid: "49914329"
   選擇性。 這個屬性已被取代;`type`屬性會優先於此屬性。 這個屬性指定的 DOM 項目是否包含文件的屬性。 設定為`true`指定的屬性是 DOM 項目; 否則設定為`false`。 如果`type`未設定屬性和`domElement`設為`true`，IntelliSense 會將文件的屬性視為`HTMLElement`執行陳述式完成時。  
   
   `mayBeNull`  
-  選擇性。 指定是否可以設定 [記錄] 屬性設為 null。 設定為`true`若要指出，屬性可以設定為 null，否則，請設定為`false`。 預設值是 `false`。 這個屬性不是由 Visual Studio 提供 IntelliSense 資訊。  
+  選擇性。 指定是否可以設定 [記錄] 屬性設為 null。 設定為`true`若要指出，屬性可以設定為 null，否則，請設定為`false`。 預設值為 `false`。 這個屬性不是由 Visual Studio 提供 IntelliSense 資訊。  
   
   `elementType`  
   選擇性。 如果`type`是`Array`，這個屬性會指定陣列中的項目類型。  
@@ -69,7 +64,7 @@ ms.locfileid: "49914329"
   選擇性。 這個屬性已被取代;`elementType`屬性會優先於此屬性。 如果`type`是`Array`，這個屬性會指定陣列中的元素是否 DOM 項目。 設定為`true`指定之項目的 DOM 項目; 否則設定為`false`。 如果`elementType`未設定屬性和`elementDomElement`設為`true`，IntelliSense 會將做為陣列中的每個項目`HTMLElement`執行陳述式完成時。  
   
   `elementMayBeNull`  
-  選擇性。 如果`type`是`Array`，指定是否可以設定在陣列中的項目為 null。 設定為`true`若要表示為 null，否則，可以設定在陣列中的項目，設定為`false`。 預設值是 `false`。 這個屬性不是由 Visual Studio 提供 IntelliSense 資訊。  
+  選擇性。 如果`type`是`Array`，指定是否可以設定在陣列中的項目為 null。 設定為`true`若要表示為 null，否則，可以設定在陣列中的項目，設定為`false`。 預設值為 `false`。 這個屬性不是由 Visual Studio 提供 IntelliSense 資訊。  
   
   `locid`  
   選擇性。 如需屬性的當地語系化資訊識別項。 識別項是成員識別碼或其對應至`name`屬性 OpenAjax 中繼資料所定義的訊息組合中的值。 識別項型別取決於所指定的格式[ \<loc >](../ide/loc-javascript.md)項目。  
@@ -93,8 +88,5 @@ function Sys$CancelEventArgs$get_cancel() {
 }  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [XML 文件註解](../ide/xml-documentation-comments-javascript.md)
-
-
-

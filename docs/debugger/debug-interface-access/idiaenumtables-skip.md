@@ -1,5 +1,5 @@
 ---
-title: 'Idiaenumtables:: Skip |Microsoft Docs'
+title: IDiaEnumTables::Skip | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 5c9db956-0654-4f1a-8775-530aa980d8ec
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4791553e15754ec24ad949dcd0abb9fb30190ce7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 80d734b03741bc6b794c925daa0c02084173c088
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53989425"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55042708"
 ---
 # <a name="idiaenumtablesskip"></a>IDiaEnumTables::Skip
 略過指定的數目的列舉型別序列中的資料表。  

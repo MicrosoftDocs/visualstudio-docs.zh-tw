@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 48b3a318-3211-410f-8570-c02ee210f0a5
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f0422c79c78d995de16c966532e50decf9192423
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 97329075f0e6a8403563964fafb040ee3ff73f4b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53966196"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55030401"
 ---
 # <a name="idiasymbolgetfunction"></a>IDiaSymbol::get_function
 擷取指定公用符號是否參考的函式的旗標。  
@@ -42,7 +42,7 @@ HRESULT get_function ( 
   
 ## <a name="requirements"></a>需求  
   
-|需求|說明|  
+|需求|描述|  
 |-----------------|-----------------|  
 |標頭：|dia2.h|  
 |版本:|DIA SDK v7.0|  

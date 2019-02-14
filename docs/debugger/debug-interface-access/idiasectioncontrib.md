@@ -1,5 +1,5 @@
 ---
-title: IDiaSectionContrib |Microsoft Docs
+title: IDiaSectionContrib | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 371d40f6-ca0e-4d7e-9210-64d3768996c6
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8c0f82526a217325e0003bfb66c50f9df24d68bb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: 0c1fe16951bee79dbda033101043406491d4a56f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53918702"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54991966"
 ---
 # <a name="idiasectioncontrib"></a>IDiaSectionContrib
 描述一節所佔比重的擷取資料，也就是連續的記憶體區塊由所提供的映像所編譯的模組。  
@@ -31,7 +31,7 @@ IDiaSectionContrib : IUnknown
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法  
  下表顯示的方法`IDiaSectionContrib`。  
   
-|方法|說明|  
+|方法|描述|  
 |------------|-----------------|  
 |[IDiaSectionContrib::get_compiland](../../debugger/debug-interface-access/idiasectioncontrib-get-compiland.md)|擷取提供這一節的編譯模組符號的參考。|  
 |[IDiaSectionContrib::get_addressSection](../../debugger/debug-interface-access/idiasectioncontrib-get-addresssection.md)|擷取所佔比重的地址中區段的一部分。|  

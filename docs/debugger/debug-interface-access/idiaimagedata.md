@@ -1,5 +1,5 @@
 ---
-title: IDiaImageData |Microsoft Docs
+title: IDiaImageData | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: b696f350-fc08-4352-9287-a15e87512c1e
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f10f12f8f9f08335e6234757c5254efca78dd18
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: e6854a099548b8db97b26a2b3fe70c7870fb2af2
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53894125"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54964934"
 ---
 # <a name="idiaimagedata"></a>IDiaImageData
 公開 （expose) 的基底的位置和記憶體位移的模組或映像的詳細資料。  
@@ -31,7 +31,7 @@ IDiaImageData : IUnknown
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法  
  下表顯示的方法`IDiaImageData`。  
   
-|方法|說明|  
+|方法|描述|  
 |------------|-----------------|  
 |[IDiaImageData::get_relativeVirtualAddress](../../debugger/debug-interface-access/idiaimagedata-get-relativevirtualaddress.md)|擷取虛擬記憶體中的位置，相對於應用程式的模組。|  
 |[IDiaImageData::get_virtualAddress](../../debugger/debug-interface-access/idiaimagedata-get-virtualaddress.md)|擷取映像的虛擬記憶體位置。|  

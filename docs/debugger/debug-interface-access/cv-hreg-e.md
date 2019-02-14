@@ -1,5 +1,5 @@
 ---
-title: CV_HREG_e |Microsoft Docs
+title: CV_HREG_e | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 3f0622f7-6790-41d8-8778-227cbbf8a212
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 95a3ecd9d4b7e1dc8cffc3a11a8b58c0812a1a36
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0697507b9df10ac1f39108581a651c5290ad6b78
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53829640"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54919548"
 ---
 # <a name="cvhrege"></a>CV_HREG_e
 指定的目標暫存器。  
@@ -409,37 +409,37 @@ enum CV_HREG_e { 
 ```  
   
 ## <a name="elements"></a>項目  
- CV_REG_ *  
+ CV_REG_*  
  Intel 80x86 和 ix86 處理器和 p 程式碼所使用的暫存器。  
   
- CV_R68_ *  
+ CV_R68_*  
  68 K 處理器所使用的暫存器。  
   
- CV_M4_ *  
+ CV_M4_*  
  MIPS 4000 系列處理器所使用的暫存器。  
   
- CV_ALPHA_ *  
+ CV_ALPHA_*  
  使用數位設備 Corporation Alpha AXP 系列處理器暫存器。  
   
- CV_PPC_ *  
+ CV_PPC_*  
  / IBM Motorola PowerPC 處理器所使用的暫存器。  
   
  CV_SH3_ * 和 CV_SH_\*  
  Hitachi SH3 和 Hitachi SH 系列處理器所使用的暫存器。  
   
- CV_ARM_ *  
+ CV_ARM_*  
  Advanced RISC Machine (ARM) 處理器所使用的暫存器。  
   
- CV_IA64_ *  
+ CV_IA64_*  
  Intel 的 IA64 系列處理器所使用的暫存器。  
   
- CV_TRI_ *  
+ CV_TRI_*  
  Infineon 技術 TriCore 處理器所使用的暫存器。  
   
- CV_AM33_ *  
+ CV_AM33_*  
  暫存器供 Matsushita/Panasonic AM33，以及相關的處理器。  
   
- CV_M32R_ *  
+ CV_M32R_*  
  Mitsubishi M32R 處理器所使用的暫存器。  
   
 ## <a name="remarks"></a>備註  

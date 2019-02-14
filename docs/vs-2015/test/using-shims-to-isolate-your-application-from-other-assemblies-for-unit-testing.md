@@ -1,29 +1,24 @@
 ---
 title: 使用填充碼將應用程式與其他組件隔離，方便進行單元測試 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 ms.assetid: d2a34de2-6527-4c21-8b93-2f268ee894b7
 caps.latest.revision: 14
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: a6cd7efa12fc87c5de4bd82bcfb789d50193dbe7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: b5d905c16be219229b62d3f0a9a8d125874a22f0
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49904410"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54784137"
 ---
 # <a name="using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing"></a>使用填充碼將應用程式與其他組件隔離，方便進行單元測試
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-填充碼類型 * * 是 Microsoft Fakes 架構會使用可讓您輕鬆地隔離待測環境的元件的兩個技術的其中一個。 填充碼會將指向特定方法的呼叫轉向至您撰寫來做為測試一部分的程式碼。 有許多方法會取決於外部條件傳回不同的結果，不過填充碼會受您的測試所控制，並且可在每個呼叫中傳回一致的結果。 這可讓您更容易撰寫測試。  
+填充碼類型是 Microsoft Fakes 架構兩項技術的其中一個，讓您輕鬆地隔離受測元件與環境。 填充碼會將指向特定方法的呼叫轉向至您撰寫來做為測試一部分的程式碼。 有許多方法會取決於外部條件傳回不同的結果，不過填充碼會受您的測試所控制，並且可在每個呼叫中傳回一致的結果。 這可讓您更容易撰寫測試。  
   
  使用填充碼來隔離您的程式碼以及不屬於方案的組件。 若要互相隔離方案的元件，我們建議您使用虛設常式。  
   
@@ -33,7 +28,7 @@ ms.locfileid: "49904410"
   
 - Visual Studio 企業版  
   
-  請參閱 [Video (1h16): Testing Un-testable Code with Fakes in Visual Studio 2012](http://go.microsoft.com/fwlink/?LinkId=261837) (影片 (1 小時 16 分鐘)：在 Visual Studio 2012 中使用 Fakes 測試不可測試的程式碼)  
+  請參閱[影片 （1 小時 16 分鐘）：測試 Visual Studio 2012 中的非可測試的程式碼使用 Fakes](http://go.microsoft.com/fwlink/?LinkId=261837)  
   
 ## <a name="in-this-topic"></a>本主題內容  
  您在這個主題將學習：  
@@ -139,7 +134,7 @@ public void Y2kCheckerTest() {
  請務必適當處置每個填充碼內容。 根據經驗法則，請一律呼叫 `using` 陳述式內的 `ShimsContext.Create`，以確保適當清除已註冊的填充碼。 例如，您可能會註冊測試方法的填充碼，將 `DateTime.Now` 方法取代成永遠都會傳回 2000 年 1 月 1 日的委派。 如果您忘記清除在測試方法中註冊的填充碼，則測試回合的其餘部分一定會傳回 2000 年 1 月 1 日做為 DateTime.Now 的值。 這可能會讓人感到意外和混淆。  
   
 ###  <a name="WriteShims"></a> 撰寫含填充碼的測試  
- 在您的測試程式碼中，請插入您要假造之方法的「繞道」。 例如:   
+ 在您的測試程式碼中，請插入您要假造之方法的「繞道」。 例如：  
   
 ```csharp  
 [TestClass]  
@@ -552,12 +547,9 @@ ShimFile.WriteAllTextStringString = shim;
 ## <a name="external-resources"></a>外部資源  
   
 ### <a name="guidance"></a>指引  
- [使用 Visual Studio 2012 測試持續傳遞 - 第 2 章：單元測試：測試內部](http://go.microsoft.com/fwlink/?LinkID=255188)  
+ [測試 for Continuous Delivery with Visual Studio 2012 – 第 2 章：單元測試測試內部](http://go.microsoft.com/fwlink/?LinkID=255188)  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [使用 Microsoft Fakes 在測試期間隔離程式碼](../test/isolating-code-under-test-with-microsoft-fakes.md)   
  [Peter Provost’s blog: Visual Studio 2012 Shims](http://www.peterprovost.org/blog/2012/04/25/visual-studio-11-fakes-part-2)  (Peter Provost 部落格︰Visual Studio 2012 填充碼)  
- [Video (1h16): Testing Un-testable Code with Fakes in Visual Studio 2012](http://go.microsoft.com/fwlink/?LinkId=261837) (影片 (1 小時 16 分鐘)：在 Visual Studio 2012 中使用 Fakes 測試不可測試的程式碼)
-
-
-
+ [影片 (1 小時 16 分鐘)：測試 Visual Studio 2012 中的非可測試的程式碼使用 Fakes](http://go.microsoft.com/fwlink/?LinkId=261837)

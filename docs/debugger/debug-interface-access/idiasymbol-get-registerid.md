@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_registerid |Microsoft Docs'
+title: IDiaSymbol::get_registerId | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: f881e793-eb9e-48dc-a847-dd61d77174fc
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0938bc4cc8692f9cb092938429c925fe68433bf0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7a7007a0d80e1e973bb2c5918cfc5a3194922f8f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53911217"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55033462"
 ---
 # <a name="idiasymbolgetregisterid"></a>IDiaSymbol::get_registerId
 擷取位置的註冊指示項時[LocationType 列舉](../../debugger/debug-interface-access/locationtype.md)設定為`LocIsEnregistered`。  

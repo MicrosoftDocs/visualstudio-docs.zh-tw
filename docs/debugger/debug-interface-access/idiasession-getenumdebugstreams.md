@@ -1,5 +1,5 @@
 ---
-title: 'Idiasession:: Getenumdebugstreams |Microsoft Docs'
+title: IDiaSession::getEnumDebugStreams | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: d294954b-80e9-476c-b9f0-5ca6fd575f68
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 00f9fe90b2c138fc4ca13940a186ecfedb20c9ee
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5a715d9dc5ac30f9c60056348ec574b5b0696989
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53883992"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54931475"
 ---
 # <a name="idiasessiongetenumdebugstreams"></a>IDiaSession::getEnumDebugStreams
 擷取偵錯資料流的列舉的順序。  

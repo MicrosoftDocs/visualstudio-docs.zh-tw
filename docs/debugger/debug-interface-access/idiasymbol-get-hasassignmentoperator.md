@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: fb1acb9c-4500-4343-a590-0395789e4040
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7677d9dd84f62d4a9efb30b7e317873b88369743
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 726412304f40b652a33cfae0bc9958fa01fb3dec
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53837793"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54950685"
 ---
 # <a name="idiasymbolgethasassignmentoperator"></a>IDiaSymbol::get_hasAssignmentOperator
 擷取指定的使用者定義資料類型是否有任何定義的指派運算子的旗標。  
@@ -42,7 +42,7 @@ HRESULT get_hasAssignmentOperator ( 
   
 ## <a name="requirements"></a>需求  
   
-|需求|說明|  
+|需求|描述|  
 |-----------------|-----------------|  
 |標頭：|dia2.h|  
 |版本:|DIA SDK v7.0|  

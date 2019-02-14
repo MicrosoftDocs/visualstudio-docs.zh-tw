@@ -1,14 +1,9 @@
 ---
 title: BscMake 工作 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 f1_keywords:
 - vc.task.bscmake
 - VC.Project.VCBscMakeTool.PreserveSBR
@@ -25,19 +20,19 @@ ms.assetid: bb98fc67-cad8-43a7-9598-60df6d734db2
 caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 92f346bdab454e04f7df16ea39e42668da33d451
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: c21c14b8c84246545d9ffb3e3dc59210b56fe84e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49243213"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54777148"
 ---
 # <a name="bscmake-task"></a>BscMake 工作
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
-重要]
+重要事項：
 >  Visual Studio IDE 已不再使用 bscmake。 從 Visual Studio 2008 起，瀏覽資訊會自動儲存在方案資料夾的 .sdf 檔案中。  
   
  包裝 Microsoft Browse Information Maintenance Utility 工具 (bscmake.exe)。  bscmake.exe 工具會從編譯期間所建立的來源瀏覽器檔案 (.sbr) 建置瀏覽資訊檔 (.bsc)。 使用物件瀏覽器來檢視 .bsc 檔案。 如需詳細資訊，請參閱 [BSCMAKE 參考](http://msdn.microsoft.com/library/b97ad994-1355-4809-98db-6abc12c6fb13)。  
@@ -56,8 +51,5 @@ ms.locfileid: "49243213"
   
 ## <a name="remarks"></a>備註  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [工作參考](../msbuild/msbuild-task-reference.md)
-
-
-

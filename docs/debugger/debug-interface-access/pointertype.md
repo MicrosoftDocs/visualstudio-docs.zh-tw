@@ -1,5 +1,5 @@
 ---
-title: PointerType |Microsoft Docs
+title: PointerType | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 67228681-7345-4537-8af3-93806803ee96
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 11317981fd6b9993edc06fd986df476b9e64de5f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 81eb1057ebc8ccb06b08b1dc40779699d7e75981
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53906809"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55026836"
 ---
 # <a name="pointertype"></a>PointerType
 每個指標由`SymTagPointerType`符號。  
@@ -25,7 +25,7 @@ ms.locfileid: "53906809"
 ## <a name="properties"></a>屬性  
  下表顯示此符號類型的其他有效屬性。  
   
-|屬性|資料類型|說明|  
+|屬性|資料類型|描述|  
 |--------------|---------------|-----------------|  
 |[IDiaSymbol::get_constType](../../debugger/debug-interface-access/idiasymbol-get-consttype.md)|`BOOL`|`TRUE` 如果滑鼠指標會標示為常數。|  
 |[IDiaSymbol::get_length](../../debugger/debug-interface-access/idiasymbol-get-length.md)|`ULONGLONG`|大小，以位元組為單位的指標。|  

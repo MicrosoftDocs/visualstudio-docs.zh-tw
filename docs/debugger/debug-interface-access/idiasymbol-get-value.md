@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_value |Microsoft Docs'
+title: IDiaSymbol::get_value | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 2e40174a-2a61-4e5f-bb32-9e0ceec2178a
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bb8e85296338782cac0de27e1e121ed25d8e823c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: 21564107cba68288e4a0b577f4bf794f1503796d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53963388"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55039666"
 ---
 # <a name="idiasymbolgetvalue"></a>IDiaSymbol::get_value
 擷取常數的值。  

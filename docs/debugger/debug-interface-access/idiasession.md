@@ -1,5 +1,5 @@
 ---
-title: IDiaSession |Microsoft Docs
+title: IDiaSession | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 69dab9bf-2c68-4f70-9678-3b50fba3e6fa
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d469ea89b7ef5f09296fce03fa10c47a7500e52e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: 7257301616c40735f31df3cd777e16e8cf0bd71c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53923831"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55026355"
 ---
 # <a name="idiasession"></a>IDiaSession
 提供偵錯符號的查詢內容。  
@@ -31,7 +31,7 @@ IDiaSession : IUnknown
 ## <a name="methods"></a>方法  
  下表顯示的方法`IDiaSession`。  
   
-|方法|說明|  
+|方法|描述|  
 |------------|-----------------|  
 |[IDiaSession::get_loadAddress](../../debugger/debug-interface-access/idiasession-get-loadaddress.md)|擷取對應至這個符號存放區中的符號的可執行檔載入位址。 這是相同的值傳遞給`put_loadAddress`方法。|  
 |[IDiaSession::put_loadAddress](../../debugger/debug-interface-access/idiasession-put-loadaddress.md)|符號設定對應的可執行檔載入位址，此符號存放區中。 **注意：** 請務必呼叫這個方法，當您取得`IDiaSession`物件，並開始使用物件之前。|  

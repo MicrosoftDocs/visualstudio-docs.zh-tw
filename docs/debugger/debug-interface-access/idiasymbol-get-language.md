@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_language |Microsoft Docs'
+title: IDiaSymbol::get_language | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: c759ad3c-1c21-4234-869b-86aa3a608a38
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d0699510f419a510c004cd2bf7e840a5aa631316
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0b2fe4e5cb71f0b378d21442ba8e0e1297f273e5
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53888214"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54941700"
 ---
 # <a name="idiasymbolgetlanguage"></a>IDiaSymbol::get_language
 擷取來源的語言。  

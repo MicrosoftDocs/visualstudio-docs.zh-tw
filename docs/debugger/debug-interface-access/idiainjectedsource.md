@@ -1,5 +1,5 @@
 ---
-title: IDiaInjectedSource |Microsoft Docs
+title: IDiaInjectedSource | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 75192c5c-812d-4675-9dc5-4c2cff3ba503
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 31a29c4b3dbf4541f11770c4bc32eb922f120325
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: 0d57b23f83171d4d220a87a27df67f42e82fd14c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53990252"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54935993"
 ---
 # <a name="idiainjectedsource"></a>IDiaInjectedSource
 存取插入儲存在 DIA 資料來源中的原始程式碼。  
@@ -31,7 +31,7 @@ IDiaInjectedSource : IUnknown
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法  
  下表顯示的方法`IDiaInjectedSource`。  
   
-|方法|說明|  
+|方法|描述|  
 |------------|-----------------|  
 |[IDiaInjectedSource::get_crc](../../debugger/debug-interface-access/idiainjectedsource-get-crc.md)|擷取從來源程式碼位元組計算的循環冗餘檢查 (CRC)。|  
 |[IDiaInjectedSource::get_length](../../debugger/debug-interface-access/idiainjectedsource-get-length.md)|擷取的程式碼的位元組數目。|  

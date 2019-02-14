@@ -1,14 +1,9 @@
 ---
-title: 如何：使用類別設計工具建立類型 | Microsoft Docs
-ms.custom: ''
+title: HOW TO：使用類別設計工具建立類型 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - VS.Clr.ClrAttributesDialog
 helpviewer_keywords:
@@ -22,13 +17,13 @@ ms.assetid: 94458c31-28bc-40e2-9737-85868788a0e5
 caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 8288e17ecfb4c9169b2b9b8fb7cd5a3c3788f4d9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: c5e859e999d7aec8a58464f145ed7c3e9afbc788
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49175028"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54772150"
 ---
 # <a name="how-to-create-types-by-using-class-designer"></a>如何：使用類別設計工具建立類型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -75,7 +70,7 @@ ms.locfileid: "49175028"
     |Class、Abstract Class、Structure 或 Struct|定義類別的方法、屬性、欄位、事件、建構函式 (方法)、解構函式 (方法) 和常數。|  
     |列舉|構成列舉的欄位值|  
     |介面|構成介面的方法、屬性和事件|  
-    |委派|定義委派的參數|  
+    |Delegate - 委派|定義委派的參數|  
     |Module|定義模組的方法、屬性、欄位、事件、建構函式 (方法) 和常數|  
   
      請參閱[建立成員](../ide/creating-and-configuring-type-members-class-designer.md#CreateMembers)。  
@@ -84,7 +79,7 @@ ms.locfileid: "49175028"
   
 1.  在類別圖上按一下類型的圖案。  
   
-2.  在 [屬性] 視窗中，旁邊**自訂屬性**型別的屬性，按一下省略符號 （...） 按鈕。  
+2.  在 [屬性] 視窗中，按一下型別的 [自訂屬性] 旁邊的省略符號 (…) 按鈕。  
   
 3.  每一行加入一個或多個自訂屬性。 不要使用括號將屬性括起來。  
   
@@ -100,12 +95,9 @@ ms.locfileid: "49175028"
   
      當您完成時，所輸入的自訂屬性就會套用至類型。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [如何：建立類型之間的繼承 (類別設計工具)](../ide/how-to-create-inheritance-between-types-class-designer.md)   
  [如何：建立類型之間的關聯 (類別設計工具)](../ide/how-to-create-associations-between-types-class-designer.md)   
  [建立和設定類型成員 (類別設計工具)](../ide/creating-and-configuring-type-members-class-designer.md)   
  [使用類別圖表 (類別設計工具)](../ide/working-with-class-diagrams-class-designer.md)   
  [設計類別和類型 (類別設計工具)](../ide/designing-classes-and-types-class-designer.md)
-
-
-

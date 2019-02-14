@@ -1,5 +1,5 @@
 ---
-title: 'Idiasession:: Findsymbolbyrva |Microsoft Docs'
+title: IDiaSession::findSymbolByRVA | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 14fb2903-b771-44d6-b0a8-44e0097c58ce
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ef883d8b0aa7870b9444ea92f6b0b23143caf43d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a9061a4f95e8bc70382185c9996c21524339fcaa
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53832962"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54919950"
 ---
 # <a name="idiasessionfindsymbolbyrva"></a>IDiaSession::findSymbolByRVA
 擷取包含此項目，或指定相對虛擬位址 (RVA) 到最接近指定的符號類型。  

@@ -1,5 +1,5 @@
 ---
-title: 'Idiaenumdebugstreams:: Item |Microsoft Docs'
+title: IDiaEnumDebugStreams::Item | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 6b388fe1-eabc-4720-9d59-dc09b0ceaeac
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e098f15238cdf84121cae81685191047c4b04447
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a51367ae2a65ac50c87aee5c9f8be2910fb1c948
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53963329"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55038574"
 ---
 # <a name="idiaenumdebugstreamsitem"></a>IDiaEnumDebugStreams::Item
 擷取透過索引或名稱的偵錯資料流。  

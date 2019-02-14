@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_timestamp |Microsoft Docs'
+title: IDiaSymbol::get_timeStamp | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 5d707b76-dbaa-4d88-86c3-6f3672cc6d4c
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c7e0fdcc529a3a12ac12ea0c9522eeeeb7d4bce7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3489751fa959f55440de75f7d74c35cf9634cb2e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53963362"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54921082"
 ---
 # <a name="idiasymbolgettimestamp"></a>IDiaSymbol::get_timeStamp
 擷取基礎的可執行檔的時間戳記。  

@@ -1,5 +1,5 @@
 ---
-title: StackFrameTypeEnum |Microsoft Docs
+title: StackFrameTypeEnum | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 61e40163-eee0-4c1f-af47-cef3771bdc41
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: be9a07c961e62870319de10cad77eaee8e12ef1c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: 157ee347b52a3820811693732fce183b6f54a303
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53864004"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54917494"
 ---
 # <a name="stackframetypeenum"></a>StackFrameTypeEnum
 指定的堆疊框架的類型。  

@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: ad329c87-b0ad-4304-84de-ae9496514c42
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ccd9fa5ea1f7963d4864e276bd05011be817de2c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3556c36e00ac092c1ebb3af4e6d09921fcd11233
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53865977"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55023573"
 ---
 # <a name="ltinstallchecksgt-element-bootstrapper"></a>&lt;InstallChecks&gt;項目 （啟動載入器）
 `InstallChecks`項目支援啟動各種測試，以確定所有的應用程式的適當必要條件都已安裝在本機電腦。  
@@ -72,7 +72,7 @@ ms.locfileid: "53865977"
 ## <a name="assemblycheck"></a>AssemblyCheck  
  這是元素的選擇性子項目`InstallChecks`。 每個執行個體`AssemblyCheck`，啟動載入器可確保項目所識別的組件位於全域組件快取 (GAC)。 它包含任何項目，並具有下列屬性。  
 
-|屬性|說明|  
+|屬性|描述|  
 |---------------|-----------------|  
 |`Property`|必要項。 要儲存結果之屬性的名稱。 這個屬性可以參考從測試底下`InstallConditions`項目，這是子系的`Command`項目。 如需詳細資訊，請參閱 < [\<命令 > 項目](../deployment/commands-element-bootstrapper.md)。|  
 |`Name`|必要項。 若要檢查組件的完整的名稱。|  
@@ -86,7 +86,7 @@ ms.locfileid: "53865977"
 
  `ExternalCheck` 包含任何項目，並具有下列屬性。  
 
-|屬性|說明|  
+|屬性|描述|  
 |---------------|-----------------|  
 |`Property`|必要項。 要儲存結果之屬性的名稱。 這個屬性可以參考從測試底下`InstallConditions`項目，這是子系的`Command`項目。 如需詳細資訊，請參閱 < [\<命令 > 項目](../deployment/commands-element-bootstrapper.md)。|  
 |`PackageFile`|必要項。 要執行的外部程式。 程式必須安裝散發套件的一部分。|  
@@ -98,7 +98,7 @@ ms.locfileid: "53865977"
  `FileCheck` 包含任何項目，並具有下列屬性。  
 
 
-| 屬性 | 說明 |
+| 屬性 | 描述 |
 |-----------------| - |
 | `Property` | 必要項。 要儲存結果之屬性的名稱。 這個屬性可以參考從測試底下`InstallConditions`項目，這是子系的`Command`項目。 如需詳細資訊，請參閱 < [\<命令 > 項目](../deployment/commands-element-bootstrapper.md)。 |
 | `FileName` | 必要項。 要尋找之檔案的名稱。 |
@@ -111,7 +111,7 @@ ms.locfileid: "53865977"
 
  `MsiProductCheck` 包含任何項目，並具有下列屬性。  
 
-|屬性|說明|  
+|屬性|描述|  
 |---------------|-----------------|  
 |`Property`|必要項。 要儲存結果之屬性的名稱。 這個屬性可以參考從測試底下`InstallConditions`項目，這是子系的`Command`項目。 如需詳細資訊，請參閱 < [\<命令 > 項目](../deployment/commands-element-bootstrapper.md)。|  
 |`Product`|必要項。 已安裝的產品 GUID。|  
@@ -122,7 +122,7 @@ ms.locfileid: "53865977"
 
  `RegistryCheck` 包含任何項目，並具有下列屬性。  
 
-|屬性|說明|  
+|屬性|描述|  
 |---------------|-----------------|  
 |`Property`|必要項。 要儲存結果之屬性的名稱。 這個屬性可以參考從測試底下`InstallConditions`項目，這是子系的`Command`項目。 如需詳細資訊，請參閱 < [\<命令 > 項目](../deployment/commands-element-bootstrapper.md)。|  
 |`Key`|必要項。 登錄機碼的名稱。|  
@@ -133,7 +133,7 @@ ms.locfileid: "53865977"
 
  `RegistryFileCheck` 包含任何項目，並具有下列屬性。  
 
-|屬性|說明|  
+|屬性|描述|  
 |---------------|-----------------|  
 |`Property`|必要項。 要儲存結果之屬性的名稱。 這個屬性可以參考從測試底下`InstallConditions`項目，這是子系的`Command`項目。 如需詳細資訊，請參閱 < [\<命令 > 項目](../deployment/commands-element-bootstrapper.md)。|  
 |`Key`|必要項。 登錄機碼的名稱。 其值會解譯為檔案的路徑上，除非`File`屬性設定。 如果此索引鍵不存在，`Property`未設定。|  

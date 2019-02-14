@@ -15,22 +15,22 @@ helpviewer_keywords:
 ms.assetid: cc04fa75-012b-47c9-9347-f4216be23cf2
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6e9e0f9f0af2ba8dd30a64810bfa655001ef38a9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fb27334fdbee014937b52df628d6c8e128cc5ac0
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53955169"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54976819"
 ---
-# <a name="how-to-configure-the-clickonce-trust-prompt-behavior"></a>HOW TO：設定 ClickOnce 信任提示行為
+# <a name="how-to-configure-the-clickonce-trust-prompt-behavior"></a>如何：設定 ClickOnce 信任提示行為
 您可以設定 ClickOnce 信任提示，來控制，是否可以選擇安裝 ClickOnce 應用程式，例如 Windows Forms 應用程式、 Windows Presentation Foundation 應用程式、 主控台應用程式、 WPF 瀏覽器的使用者。應用程式和 Office 方案。 您可以設定每位使用者的電腦上的登錄機碼設定信任提示。  
   
  下表顯示可以套用至每個這五個區域 （網際網路、 UntrustedSites、 MyComputer、 LocalIntranet 及 TrustedSites） 的組態選項。  
   
-|選項|登錄設定值|說明|  
+|選項|登錄設定值|描述|  
 |------------|----------------------------|-----------------|  
 |啟用信任提示。|`Enabled`|ClickOnce 信任提示是顯示，讓使用者可以授與信任給 ClickOnce 應用程式。|  
 |限制信任提示。|`AuthenticodeRequired`|只有將經過簽署 ClickOnce 應用程式，使用的憑證來識別 「 發行者 」 時，才會顯示 ClickOnce 信任提示。|  
@@ -61,7 +61,7 @@ ms.locfileid: "53955169"
   
 2.  尋找下列登錄機碼：  
   
-     **\HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\。NETFramework\Security\TrustManager\PromptingLevel**  
+     **\HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\.NETFramework\Security\TrustManager\PromptingLevel**  
   
      如果索引鍵不存在，請加以建立。  
   
@@ -120,7 +120,7 @@ ms.locfileid: "53955169"
   
 2.  尋找下列登錄機碼：  
   
-     **\HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\。NETFramework\Security\TrustManager\PromptingLevel** 
+     **\HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\.NETFramework\Security\TrustManager\PromptingLevel** 
   
      如果索引鍵不存在，請加以建立。  
   
@@ -177,7 +177,7 @@ ms.locfileid: "53955169"
   
 2.  尋找下列登錄機碼：  
   
-     **\HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\。NETFramework\Security\TrustManager\PromptingLevel**  
+     **\HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\.NETFramework\Security\TrustManager\PromptingLevel**  
   
      如果索引鍵不存在，請加以建立。  
   
@@ -228,8 +228,8 @@ ms.locfileid: "53955169"
  [ClickOnce 和 Authenticode](../deployment/clickonce-and-authenticode.md)   
  [信任的應用程式部署概觀](../deployment/trusted-application-deployment-overview.md)   
  [如何：啟用 ClickOnce 安全性設定](../deployment/how-to-enable-clickonce-security-settings.md)   
- [如何：為 ClickOnce 應用程式設定安全性區域](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)   
- [如何：為 ClickOnce 應用程式設定自訂權限](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)   
- [如何：以受限制的權限對 ClickOnce 應用程式進行偵錯](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)   
- [如何：將信任的發行者新增至 ClickOnce 應用程式的用戶端電腦](../deployment/how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications.md)   
+ [如何：設定 ClickOnce 應用程式的安全性區域](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)   
+ [如何：設定 ClickOnce 應用程式的自訂使用權限](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)   
+ [如何：以限制權限偵錯 ClickOnce 應用程式](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)   
+ [如何：新增信任發行者至 ClickOnce 應用程式的用戶端電腦](../deployment/how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications.md)   
  [如何：重新簽署應用程式和部署資訊清單](../deployment/how-to-re-sign-application-and-deployment-manifests.md)

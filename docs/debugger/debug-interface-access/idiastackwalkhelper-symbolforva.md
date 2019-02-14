@@ -1,5 +1,5 @@
 ---
-title: 'Idiastackwalkhelper:: Symbolforva |Microsoft Docs'
+title: IDiaStackWalkHelper::symbolForVA | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 8dd9455d-d44c-4dd6-a0aa-31131cbea2aa
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 22148ce55cbf3d12f1de9c11e8865debde74aa87
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a859fc41252fc6f6d8e99ecbaa881cd07ffd6134
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53902733"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55026748"
 ---
 # <a name="idiastackwalkhelpersymbolforva"></a>IDiaStackWalkHelper::symbolForVA
 擷取包含指定的虛擬位址的符號。  

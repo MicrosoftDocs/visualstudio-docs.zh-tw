@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_symindexid |Microsoft Docs'
+title: IDiaSymbol::get_symIndexId | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: dd1fb3ba-31bf-497d-a6bf-79f1206e6642
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b57ea53f597f085814f9ba8f9dd4d48051c754e7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 356daf5c0deaccbf9f93aaf62cb0aa983f942fcc
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53863533"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54996164"
 ---
 # <a name="idiasymbolgetsymindexid"></a>IDiaSymbol::get_symIndexId
 擷取唯一符號識別項。  

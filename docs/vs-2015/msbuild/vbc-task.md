@@ -1,14 +1,9 @@
 ---
 title: Vbc 工作 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#Vbc
 dev_langs:
@@ -23,13 +18,13 @@ ms.assetid: 595278b1-2782-4577-b1ba-b4b5ab5625a3
 caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 4ed9563f4149b550e123cf74a09f19245514fe97
-ms.sourcegitcommit: c9a01c599ce19a5845605b3b28c0229fd0abb93f
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 1a4610f5603ad0197487c198074ad72d1381fda1
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2018
-ms.locfileid: "52281858"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54802185"
 ---
 # <a name="vbc-task"></a>Vbc 工作
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,7 +53,7 @@ ms.locfileid: "52281858"
 |`Imports`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 從指定的項目集合匯入命名空間。 此參數對應至 vbc.exe 編譯器的 [/imports](http://msdn.microsoft.com/library/9a93fb53-c080-497b-bf9b-441022dbbc39) 參數。|  
 |`KeyContainer`|選擇性的 `String` 參數。<br /><br /> 指定密碼編譯金鑰容器的名稱。 此參數對應至 vbc.exe 編譯器的 [/keycontainer](http://msdn.microsoft.com/library/6a9bc861-1752-4db1-9f64-b5252f0482cc) 參數。|  
 |`KeyFile`|選擇性的 `String` 參數。<br /><br /> 指定包含密碼編譯金鑰的檔名。 如需詳細資訊，請參閱 [/keyfile](http://msdn.microsoft.com/library/ffa82a4b-517a-4c6c-9889-5bae7b534bb8)。|  
-|`LangVersion`|選擇 [String] (<!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  -->) 參數。<br /><br /> 指定語言版本，"9" 或 "10"。|  
+|`LangVersion`|選擇性的 <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  -->String 參數。<br /><br /> 指定語言版本，"9" 或 "10"。|  
 |`LinkResources`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 在輸出檔中建立 .NET Framework 資源的連結；不要將資源檔放置於輸出檔中。 此參數對應至 vbc.exe 編譯器的 [/linkresource](http://msdn.microsoft.com/library/cf4dcad8-17b7-404c-9184-29358aa05b15) 參數。|  
 |`MainEntryPoint`|選擇性的 `String` 參數。<br /><br /> 指定包含 `Sub Main` 程序的類別或模組。 此參數對應至 vbc.exe 編譯器的 [/main](http://msdn.microsoft.com/library/83fc339d-6652-415d-b205-b5133319b5b0) 參數。|  
 |`ModuleAssemblyName`|選擇性的 `String` 參數。<br /><br /> 指定將包含此模組的組件。|  
@@ -76,7 +71,7 @@ ms.locfileid: "52281858"
 |`OutputAssembly`|選擇性的 `String` 輸出參數。<br /><br /> 指定輸出檔案的名稱。 這個參數對應於 vbc.exe 編譯器的 [/out](http://msdn.microsoft.com/library/9f148c15-0909-4cb8-a2db-777f8a8b45ae) 參數。|  
 |`Platform`|選擇性的 `String` 參數。<br /><br /> 指定輸出檔設為目標的處理器平台。 這個參數可以具有 `x86`、`x64`、`Itanium` 或 `anycpu` 的值。 預設為 `anycpu`。 這個參數對應於 vbc.exe 編譯器的 [/platform](http://msdn.microsoft.com/library/f9bc61e6-e854-4ae1-87b9-d6244de23fd1) 參數。|  
 |`References`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 導致工作將公用類型資訊從指定的項目匯入目前的專案。 這個參數對應於 vbc.exe 編譯器的 [/reference](http://msdn.microsoft.com/library/66bdfced-bbf6-43d1-a554-bc0990315737) 參數。|  
-|`RemoveIntegerChecks`|選擇性的 `Boolean` 參數。<br /><br /> 如為 `true`，停用整數的溢位錯誤檢查。 預設值是 `false`。 這個參數對應於 vbc.exe 編譯器的 [/removeintchecks](http://msdn.microsoft.com/library/c1835bd5-1e38-4fba-bd2f-6984774765d4) 參數。|  
+|`RemoveIntegerChecks`|選擇性的 `Boolean` 參數。<br /><br /> 如為 `true`，停用整數的溢位錯誤檢查。 預設值為 `false`。 這個參數對應於 vbc.exe 編譯器的 [/removeintchecks](http://msdn.microsoft.com/library/c1835bd5-1e38-4fba-bd2f-6984774765d4) 參數。|  
 |`Resources`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 將 .NET Framework 資源內嵌到輸出檔中。 這個參數對應於 vbc.exe 編譯器的 [/resource](http://msdn.microsoft.com/library/eee2f227-91f2-4f2b-a9d6-1c51c5320858) 參數。|  
 |`ResponseFiles`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 指定包含適用於此工作之命令的回應檔。 此參數對應至 vbc.exe 編譯器的 [@ (指定回應檔)](http://msdn.microsoft.com/library/a6847eaa-e5f9-4303-9421-45b55484b9ca) 選項。|  
 |`RootNamespace`|選擇性的 `String` 參數。<br /><br /> 指定所有類型宣告的根命名空間。 這個參數對應於 vbc.exe 編譯器的 [/rootnamespace](http://msdn.microsoft.com/library/e9245edf-6bef-420d-a7c7-324117752783) 參數。|  
@@ -109,10 +104,7 @@ ms.locfileid: "52281858"
    OutputAssembly="out.exe"/>  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Visual Basic 命令列編譯器](http://msdn.microsoft.com/library/6b57c444-50c7-4b88-8f59-ed65cff5e05c)   
  [工作](../msbuild/msbuild-tasks.md)   
  [工作參考](../msbuild/msbuild-task-reference.md)
-
-
-

@@ -1,19 +1,19 @@
 ---
-title: AddMessage |Microsoft Docs
+title: AddMessage | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 102a0404-a00c-4566-93f3-01bc8df63280
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6555072bcbebe24011ca0701f02f48bc1703c34a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5aa23265c2f0d8d006d53faf575e2ea608c071d8
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53985731"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55027525"
 ---
 # <a name="addmessage"></a>AddMessage
 在圖形診斷會將自訂訊息*抬頭顯示器*（抬頭顯示器）。  

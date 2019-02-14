@@ -1,5 +1,5 @@
 ---
-title: IDiaStackWalkHelper |Microsoft Docs
+title: IDiaStackWalkHelper | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: d66e5c84-565d-494e-8486-f91db9a34548
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f498ea6f34522b3eb5ca8eda78f9bb188ea1c241
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 80f269df947227f36e0c87a7efeddda8d8ef1248
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53957507"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54944224"
 ---
 # <a name="idiastackwalkhelper"></a>IDiaStackWalkHelper
 可加速查核堆疊使用的程式偵錯資料庫 (.pdb) 檔案。  
@@ -33,7 +33,7 @@ IDiaStackWalkHelper: IUnknown
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法  
  下表顯示的方法`IDiaStackWalkHelper`:  
   
-|方法|說明|  
+|方法|描述|  
 |------------|-----------------|  
 |[IDiaStackWalkHelper::get_registerValue](../../debugger/debug-interface-access/idiastackwalkhelper-get-registervalue.md)|擷取暫存器的值。|  
 |[IDiaStackWalkHelper::put_registerValue](../../debugger/debug-interface-access/idiastackwalkhelper-put-registervalue.md)|設定暫存器值。|  

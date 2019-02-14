@@ -1,14 +1,9 @@
 ---
 title: DA0505：為所分析的處理序配置的平均私用位元組 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 f1_keywords:
 - vs.performance.DA0505
 - vs.performance.rules.DA0505
@@ -17,13 +12,13 @@ ms.assetid: 32c612ea-d077-44ba-8e6f-3a96333bad00
 caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 60f1bce7fe6f0199928e68dcc86b5062e327209a
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: fde4228538a26a4601dc7eb5638a4b803dafbacb
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51789950"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54793044"
 ---
 # <a name="da0505-average-private-bytes-allocated-for-the-process-being-profiled"></a>DA0505：為進行程式碼剖析的處理序所配置的平均私用位元組
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +26,7 @@ ms.locfileid: "51789950"
 規則 Id |DA0505 為 |  
 |類別目錄 |資源管理 |  
 |程式碼剖析方法 |所有 |  
-|訊息 |收集這項資訊僅提供資訊。 Process Private Bytes 計數器會測量所分析的處理序配置的虛擬記憶體。 報告的值在所有測量間隔計算的平均。 |  
+|訊息 |收集這項資訊僅提供資訊。 Process Private Bytes 計數器會測量所分析的處理序配置的虛擬記憶體。 報告的值是針對所有測量間隔計算的平均。  
 |規則類型 |資訊 |  
   
  當您使用取樣、.NET 記憶體或資源爭用方法進行分析時，必須至少收集 10 個樣本才能觸發此規則。  
@@ -49,6 +44,3 @@ ms.locfileid: "51789950"
   
 ## <a name="how-to-use-rule-data"></a>如何使用規則資料  
  使用報告的值可比較程式不同版本或組建的效能，或了解不同分析情節中的應用程式效能。
-
-
-

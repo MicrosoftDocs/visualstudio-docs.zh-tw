@@ -1,5 +1,5 @@
 ---
-title: IDiaLoadCallback |Microsoft Docs
+title: IDiaLoadCallback | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 2f18c64c-2cf0-43fc-a447-21e82702ca2a
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bacf5c57955f018c684ffb42afb5b9195cf4543f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6a9f3609f97d74cad8a9abb8aad511345d3120c4
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53924367"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54977638"
 ---
 # <a name="idialoadcallback"></a>IDiaLoadCallback
 DIA 符號尋找程序，因此可以讓使用者介面來報告進度的位置嘗試會收到回呼。  
@@ -31,7 +31,7 @@ IDiaLoadCallback : IUnknown
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法  
  此介面公開下列方法：  
   
-|方法|說明|  
+|方法|描述|  
 |------------|-----------------|  
 |[IDiaLoadCallback::NotifyDebugDir](../../debugger/debug-interface-access/idialoadcallback-notifydebugdir.md)|當偵錯已找到的目錄中的.exe 檔案時呼叫。|  
 |[IDiaLoadCallback::NotifyOpenDBG](../../debugger/debug-interface-access/idialoadcallback-notifyopendbg.md)|在開啟候選.dbg 檔案時呼叫。|  

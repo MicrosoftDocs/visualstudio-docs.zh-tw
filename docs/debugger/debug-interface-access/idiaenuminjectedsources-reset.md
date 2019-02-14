@@ -1,5 +1,5 @@
 ---
-title: 'Idiaenuminjectedsources:: Reset |Microsoft Docs'
+title: IDiaEnumInjectedSources::Reset | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: c28e8820-1c67-4658-821d-b5879f90cce5
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f9eb6c0cc659129305c5e4a2d1604f0acb912ad
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1d9406fff312bd45321f35e36251939ebf52ea63
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53932190"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55030102"
 ---
 # <a name="idiaenuminjectedsourcesreset"></a>IDiaEnumInjectedSources::Reset
 將列舉型別序列重設到開頭。  

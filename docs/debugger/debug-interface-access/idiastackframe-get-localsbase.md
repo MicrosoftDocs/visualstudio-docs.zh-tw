@@ -35,7 +35,7 @@ HRESULT get_localsBase ( 
  [out]傳回區域變數的基底位址。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，會傳回 `S_OK`。 傳回`S_FALSE`不支援的屬性。 反之則傳回錯誤碼。  
+ 如果成功，會傳回 `S_OK`。 傳回`S_FALSE`不支援的屬性。 否則會傳回錯誤碼。  
   
 ## <a name="see-also"></a>請參閱  
  [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)

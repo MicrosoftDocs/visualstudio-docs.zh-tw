@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 2f2cf1e0-f817-4ca0-b782-3341362c46a9
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fd380adab64dbc082fde9346d9e4c7767c9a4e55
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 81a684ac12a277036e5392cd3a76b4e55eee634f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53923766"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54928528"
 ---
 # <a name="idiasymbolgetconstructor"></a>IDiaSymbol::get_constructor
 擷取指定使用者定義資料類型是否具有建構函式或解構函式的旗標。  
@@ -42,7 +42,7 @@ HRESULT get_constructor ( 
   
 ## <a name="requirements"></a>需求  
   
-|需求|說明|  
+|需求|描述|  
 |-----------------|-----------------|  
 |標頭：|dia2.h|  
 |版本:|DIA SDK v7.0|  

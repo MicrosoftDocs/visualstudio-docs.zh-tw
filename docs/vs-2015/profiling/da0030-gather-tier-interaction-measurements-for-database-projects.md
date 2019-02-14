@@ -1,14 +1,9 @@
 ---
 title: DA0030：收集資料庫專案的階層互動度量 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 f1_keywords:
 - vs.performance.DA0030
 - vs.performance.rules.DA0030
@@ -17,13 +12,13 @@ ms.assetid: 42b2f69d-0cfa-4854-82c4-589c3d8b4557
 caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 16d6275074b3cae6b186fe9bb113e32c33e284af
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 9a4b140c1859d3a3a17eb2f48eb02a60a3e9d50c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51796749"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54801475"
 ---
 # <a name="da0030-gather-tier-interaction-measurements-for-database-projects"></a>DA0030：蒐集資料庫專案的階層互動度量
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +26,7 @@ ms.locfileid: "51796749"
 規則 Id |DA0030 |  
 |類別目錄 |分析工具使用方式 |  
 |程式碼剖析方法 |取樣 |  
-|訊息 |收集多層式應用程式的互動度量將協助您了解資料庫使用模式和關鍵資料存取延遲。 嘗試分析應用程式再次啟用 [階層互動分析] 選項。 |  
+|訊息 |收集多層式應用程式的互動度量將協助您了解資料庫使用模式和關鍵資料存取延遲。 請嘗試在啟用 [階層互動分析] 選項的情況下再次分析應用程式。  
 |規則類型 |資訊 |  
   
 ## <a name="cause"></a>原因  
@@ -48,6 +43,3 @@ ms.locfileid: "51796749"
  此規則僅供參考，可能不需要更正措施。  
   
  如需如何從 Visual Studio IDE 將階層互動資料加入分析資料的詳細資訊，請參閱[收集階層互動資料](../profiling/collecting-tier-interaction-data.md)。 如需如何從命令列加入階層互動資料的詳細資訊，請參閱[收集階層互動資料](../profiling/adding-tier-interaction-data-from-the-command-line.md)。
-
-
-

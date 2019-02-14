@@ -1,5 +1,5 @@
 ---
-title: 'Idiasession:: Findlinesbyaddr |Microsoft Docs'
+title: IDiaSession::findLinesByAddr | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 640403c0-14cf-403c-ad19-38b3bdc28ca8
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8b6735d51d993b60c55170af38943986526c5d1b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: a64868b8bbf92f2c11faeb2b0890c6cd4893941f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53923740"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54951556"
 ---
 # <a name="idiasessionfindlinesbyaddr"></a>IDiaSession::findLinesByAddr
 擷取指定的編譯模組中的行，其中包含指定的位址。  

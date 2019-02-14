@@ -1,14 +1,9 @@
 ---
 title: DA0026：過多核心 CPU 時間處理 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 f1_keywords:
 - vs.performance.rules.DA0026
 - vs.performance.DA0026
@@ -17,13 +12,13 @@ ms.assetid: 4cfc8a29-b29b-4a72-b386-03d8856fdf8a
 caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: e2dbf52ab216a2272cb3b6094126a34987588704
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: fef0a3c42be1057bd1217ec676ae43b220d80345
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51749670"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54768967"
 ---
 # <a name="da0026-excessive-kernel-cpu-time-processing"></a>DA0026：過多核心 CPU 時間處理
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +26,7 @@ ms.locfileid: "51749670"
 規則 Id |TODO |  
 |類別目錄 |分析工具使用方式 |  
 |程式碼剖析方法 |取樣 |  
-|訊息 |測量相對大量的核心模式 CPU 時間。 請考慮啟用 SysCall 取樣來調查來源。 |  
+|訊息 |測量相對大量的核心模式 CPU 時間。 請考慮啟用 SysCall 取樣來調查來源。  
 |規則類型 |資訊 |  
   
  當您使用取樣、.NET 記憶體或資源爭用方法進行分析時，必須至少收集 10 個樣本才能觸發此規則。  
@@ -44,6 +39,3 @@ ms.locfileid: "51749670"
   
 ## <a name="how-to-fix-violations"></a>如何修正違規  
  若要調查應用程式呼叫的系統呼叫種類，請再次執行分析並根據系統呼叫選取要收集樣本的選項。 如果您在 IDE 內執行分析工具，請參閱[如何：選擇取樣事件](../profiling/how-to-choose-sampling-events.md)了解詳細資訊。 如果您要從命令列執行分析工具，請參閱分析工具命令列工具參考中 [VSPerfCmd](../profiling/vsperfcmd.md) 主題中的＜取樣間隔選項＞一節。
-
-
-

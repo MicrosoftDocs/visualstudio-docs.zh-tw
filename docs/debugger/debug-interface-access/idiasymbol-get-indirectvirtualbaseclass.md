@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 853b5c6f-e1cb-4675-ad36-9ee16e3341c3
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4328c7b8a1506cb21a9c1af9dcfeb3e32140d9fd
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 40764a85cca7b23567411bbea765f132667265b0
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53957533"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54984024"
 ---
 # <a name="idiasymbolgetindirectvirtualbaseclass"></a>IDiaSymbol::get_indirectVirtualBaseClass
 擷取指定的使用者定義資料類型是否為間接虛擬基底類別的旗標。  
@@ -42,7 +42,7 @@ HRESULT get_indirectVirtualBaseClass ( 
   
 ## <a name="requirements"></a>需求  
   
-|需求|說明|  
+|需求|描述|  
 |-----------------|-----------------|  
 |標頭：|dia2.h|  
 |版本:|DIA SDK v7.0|  

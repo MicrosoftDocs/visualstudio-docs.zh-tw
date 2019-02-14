@@ -1,19 +1,19 @@
 ---
-title: VSG_DEFAULT_RUN_FILENAME |Microsoft Docs
+title: VSG_DEFAULT_RUN_FILENAME | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: ea549d2f-c857-458c-93c7-bc5a2d11d15d
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a05acfd07e8b67bf500864f00ead4d78f2da22ae
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: af34aed1ed99e1d8e51e594a514286caa7adf748
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53922549"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54979916"
 ---
 # <a name="vsgdefaultrunfilename"></a>VSG_DEFAULT_RUN_FILENAME
 定義圖形記錄檔的預設檔案名稱。  

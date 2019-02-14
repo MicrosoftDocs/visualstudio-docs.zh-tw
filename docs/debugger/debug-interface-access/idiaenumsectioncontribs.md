@@ -1,5 +1,5 @@
 ---
-title: IDiaEnumSectionContribs |Microsoft Docs
+title: IDiaEnumSectionContribs | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 0d6c0632-310f-4a99-8921-58149a1817e3
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 20b64b561c5b033a270458c258a418b4483f733b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: 29cc861fde8f8ae9690be26b23ea39e5d7434d14
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53859447"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54948995"
 ---
 # <a name="idiaenumsectioncontribs"></a>IDiaEnumSectionContribs
 列舉包含的資料來源中的各種區段貢獻。  
@@ -31,7 +31,7 @@ IDiaEnumSectionContribs : IUnknown
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法  
  下表顯示的方法`IDiaEnumSectionContribs`。  
   
-|方法|說明|  
+|方法|描述|  
 |------------|-----------------|  
 |[IDiaEnumSectionContribs::get__NewEnum](../../debugger/debug-interface-access/idiaenumsectioncontribs-get-newenum.md)|擷取[IEnumVARIANT 介面](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-ienumvariant)這個列舉值的版本。|  
 |[IDiaEnumSectionContribs::get_Count](../../debugger/debug-interface-access/idiaenumsectioncontribs-get-count.md)|擷取區段貢獻數目。|  

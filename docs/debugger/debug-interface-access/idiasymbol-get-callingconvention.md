@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_callingconvention |Microsoft Docs'
+title: IDiaSymbol::get_callingConvention | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 355d3877-b6b6-45fd-a1d8-baed428d8f96
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8840cd8fa2645ad618cb6981469d2415bca99fd9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 59eee930f13cb7f2d870c62d6cd0b47704eb94db
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53957880"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54991329"
 ---
 # <a name="idiasymbolgetcallingconvention"></a>IDiaSymbol::get_callingConvention
 傳回方法，呼叫慣例的指標。  
@@ -42,7 +42,7 @@ HRESULT get_callingConvention ( 
   
 ## <a name="requirements"></a>需求  
   
-|需求|說明|  
+|需求|描述|  
 |-----------------|-----------------|  
 |標頭：|dia2.h|  
 |版本:|DIA SDK v7.0|  

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 40792153-827c-4859-be7c-6aa16d5abab6
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c4cadb5dbea74bcdd3c020ba8a08ccd8bbb76fa
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: dc74214dfdad676926c20a83d74c4ee9016fc200
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53847226"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54965964"
 ---
 # <a name="idiasymbolgetfrontendminor"></a>IDiaSymbol::get_frontEndMinor
 擷取的後端的次要版本號碼。  
@@ -47,7 +47,7 @@ HRESULT get_frontEndMinor ( 
   
 ## <a name="requirements"></a>需求  
   
-|需求|說明|  
+|需求|描述|  
 |-----------------|-----------------|  
 |標頭：|dia2.h|  
 |版本:|DIA SDK v7.0|  

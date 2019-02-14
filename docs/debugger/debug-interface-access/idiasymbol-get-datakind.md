@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_datakind |Microsoft Docs'
+title: IDiaSymbol::get_dataKind | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 45005ad0-8b29-4cde-9d33-6bef72f6e463
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bfcf57c7bba3774e97990703384b6d4c04694b74
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 997d330cc6ba2084ea01e9b661a3daac9497a2d8
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53879594"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54925133"
 ---
 # <a name="idiasymbolgetdatakind"></a>IDiaSymbol::get_dataKind
 擷取資料符號的變數的分類。  
@@ -42,7 +42,7 @@ HRESULT get_dataKind ( 
   
 ## <a name="requirements"></a>需求  
   
-|需求|說明|  
+|需求|描述|  
 |-----------------|-----------------|  
 |標頭：|dia2.h|  
 |版本:|DIA SDK v7.0|  

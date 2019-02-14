@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_hfadouble |Microsoft Docs'
+title: IDiaSymbol::get_hfaDouble | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: efc247b9-c16e-4fa3-89b0-901caf7b74c3
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fa95a10b9a4d5617b31fe5e17484282f00707b3a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6d99500bb1185b5d17099f61437b1a2f9ad59d2e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53832517"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54986783"
 ---
 # <a name="idiasymbolgethfadouble"></a>IDiaSymbol::get_hfaDouble
 擷取指定使用者定義型別 (UDT) 是否包含同質浮點彙總 (HFA) 資料類型 double 的旗標。  

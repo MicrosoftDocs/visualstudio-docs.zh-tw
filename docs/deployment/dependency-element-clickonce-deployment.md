@@ -79,7 +79,7 @@ ms.locfileid: "54941297"
  必要項。 這個項目包含`assemblyIdentity`項目。 下表顯示的屬性`dependentAssembly`支援。  
 
 
-| 屬性 | 說明 |
+| 屬性 | 描述 |
 |------------------| - |
 | `preRequisite` | 選擇性。 指定這個組件應該已經存在於 GAC。 有效值為 `true` 和 `false`。 如果`true`，和指定的組件不存在於 GAC、 應用程式無法執行。 |
 | `visible` | 選擇性。 識別最上層應用程式身分識別，包括其相依性。 在內部使用[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]來管理應用程式存放區和啟用。 |
@@ -90,7 +90,7 @@ ms.locfileid: "54941297"
 ## <a name="assemblyidentity"></a>assemblyIdentity  
  必要項。 這個元素是 `dependentAssembly` 元素的子項。 內容`assemblyIdentity`必須如所述相同[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式資訊清單。 下表顯示的屬性`assemblyIdentity`項目。  
 
-|屬性|說明|  
+|屬性|描述|  
 |---------------|-----------------|  
 |`Name`|必要項。 識別應用程式的名稱。|  
 |`Version`|必要項。 指定的版本號碼的應用程式，以下列格式： `major.minor.build.revision`|  
@@ -111,7 +111,7 @@ ms.locfileid: "54941297"
  `dsig:Transform`項目是必要的子系`dsig:Transforms`項目。 下表顯示的屬性`dsig:Transform`項目。  
 
 
-| 屬性 | 說明 |
+| 屬性 | 描述 |
 |-------------| - |
 | `Algorithm` | 用來計算此檔案的摘要演算法。 目前所使用的唯一值[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]是`urn:schemas-microsoft-com:HashTransforms.Identity`。 |
 
@@ -119,7 +119,7 @@ ms.locfileid: "54941297"
  `dsig:DigestMethod`項目是必要的子系`hash`項目。 下表顯示的屬性`dsig:DigestMethod`項目。  
 
 
-| 屬性 | 說明 |
+| 屬性 | 描述 |
 |-------------| - |
 | `Algorithm` | 用來計算此檔案的摘要演算法。 目前所使用的唯一值[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]是`http://www.w3.org/2000/09/xmldsig#sha1`。 |
 

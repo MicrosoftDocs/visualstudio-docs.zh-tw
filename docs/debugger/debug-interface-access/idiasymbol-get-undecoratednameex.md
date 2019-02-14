@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 579aed0b-c57d-41a1-a94a-3bf665fd4a9d
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 715ab90837441974c05176c69c53366199e3543c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1db5d9b876beecc68345075a624e0368d8115999
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53932177"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54928825"
 ---
 # <a name="idiasymbolgetundecoratednameex"></a>IDiaSymbol::get_undecoratedNameEx
 擷取部分或全部的 c + + 未裝飾名稱裝飾 （連結） 的名稱。  
@@ -50,12 +50,12 @@ HRESULT get_undecoratedNameEx( 
 > [!NOTE]
 >  旗標名稱未定義在 DIA SDK 中，因此您需要將宣告新增至您的程式碼，或使用原始值。  
   
-|旗標|值|說明|  
+|旗標|值|描述|  
 |----------|-----------|-----------------|  
 |UNDNAME_COMPLETE|0x0000|啟用完整 undecoration。|  
 |UNDNAME_NO_LEADING_UNDERSCORES|0x0001|移除 Microsoft 擴充關鍵字前置底線。|  
 |UNDNAME_NO_MS_KEYWORDS|0x0002|停用 Microsoft 擴充關鍵字的擴充。|  
-|UNDNAME_NO_FUNCTION_RETURNS|是 0x0004|停用擴充的主要宣告的傳回型別。|  
+|UNDNAME_NO_FUNCTION_RETURNS|0x0004|停用擴充的主要宣告的傳回型別。|  
 |UNDNAME_NO_ALLOCATION_MODEL|0x0008|停用擴充的宣告模型。|  
 |UNDNAME_NO_ALLOCATION_LANGUAGE|0x0010|停用擴充的宣告語言規範。|  
 |UNDNAME_RESERVED1|0x0020|保留。|  

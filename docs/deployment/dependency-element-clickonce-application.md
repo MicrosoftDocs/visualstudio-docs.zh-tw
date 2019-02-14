@@ -23,15 +23,15 @@ helpviewer_keywords:
 ms.assetid: 09d6a1e0-60f8-4fbd-843b-8e49ee3115a3
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c95d2caea47db9429f62eaf0527aa36ddcec2ca3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 195e574a3ae98bc43e41d2040e2070cf36b89067
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53898618"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54920652"
 ---
 # <a name="ltdependencygt-element-clickonce-application"></a>&lt;相依性&gt;項目 （ClickOnce 應用程式）
 識別平台或組件的相依性所需的應用程式。  
@@ -96,7 +96,7 @@ ms.locfileid: "53898618"
 
  `dependentOS` 支援下列屬性。  
 
-|屬性|說明|  
+|屬性|描述|  
 |---------------|-----------------|  
 |`supportUrl`|選擇性。 指定相依的平台的支援 URL。 如果發現必要的平台，此 URL 會顯示給使用者。|  
 |`description`|選擇性。 人類看得懂的格式，描述所描述的作業系統`dependentOS`項目。|  
@@ -107,7 +107,7 @@ ms.locfileid: "53898618"
 ### <a name="os"></a>os  
  必要項。 這個元素是 `osVersionInfo` 元素的子項。 這個項目具有下列屬性。  
 
-|屬性|說明|  
+|屬性|描述|  
 |---------------|-----------------|  
 |`majorVersion`|必要項。 指定的 os 主要版本號碼。|  
 |`minorVersion`|必要項。 指定作業系統次要版本號碼。|  
@@ -123,18 +123,18 @@ ms.locfileid: "53898618"
  `dependentAssembly` 具有下列屬性。  
 
 
-| 屬性 | 說明 |
+| 屬性 | 描述 |
 |-----------------------| - |
 | `dependencyType` | 必要項。 指定相依性類型。 有效值為 `preprequisite` 和 `install`。 `install`組件已安裝的一部分[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式。 A`prerequisite`組件必須位於全域組件快取 (GAC) 之前[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式安裝。 |
 | `allowDelayedBinding` | 必要項。 指定是否可以在執行階段以程式設計方式載入組件。 |
-| `group` | 選擇性。 如果`dependencyType`屬性設為`install`，視該只有安裝指定的組件的具名的群組。 如需詳細資訊，請參閱[逐步解說：依需求使用設計工具以 ClickOnce 部署 API 下載組件](../deployment/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer.md)。<br /><br /> 如果設定為`framework`而`dependencyType`屬性設為`prerequisite`，將組件指定為.NET Framework 的一部分。 在安裝時，這個組件不檢查全域組件快取 (GAC)[!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)]和更新版本。 |
+| `group` | 選擇性。 如果`dependencyType`屬性設為`install`，視該只有安裝指定的組件的具名的群組。 如需詳細資訊，請參閱[逐步解說：下載組件隨選與 ClickOnce 部署應用程式開發介面使用設計工具](../deployment/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer.md)。<br /><br /> 如果設定為`framework`而`dependencyType`屬性設為`prerequisite`，將組件指定為.NET Framework 的一部分。 在安裝時，這個組件不檢查全域組件快取 (GAC)[!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)]和更新版本。 |
 | `codeBase` | 當`dependencyType`屬性設為`install`。 相依的組件的路徑。 可能是絕對路徑或資訊清單的程式碼的相對路徑的基底。 此路徑必須是為了讓組件資訊清單有效的 URI。 |
 | `size` | 當`dependencyType`屬性設為`install`。 相依的組件，以位元組為單位的大小。 |
 
 ### <a name="assemblyidentity"></a>assemblyIdentity  
  必要項。 這個元素是 `dependentAssembly` 元素的子項，並具有下列屬性。  
 
-|屬性|說明|  
+|屬性|描述|  
 |---------------|-----------------|  
 |`name`|必要項。 識別應用程式的名稱。|  
 |`version`|必要項。 指定應用程式的版本號碼，格式如下： `major.minor.build.revision`|  
@@ -154,7 +154,7 @@ ms.locfileid: "53898618"
  `dsig:Transform`項目是必要的子系`dsig:Transforms`項目。 `dsig:Transform` 項目具有下列屬性。  
 
 
-| 屬性 | 說明 |
+| 屬性 | 描述 |
 |-------------| - |
 | `Algorithm` | 用來計算此檔案的摘要演算法。 目前所使用的唯一值[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]是`urn:schemas-microsoft-com:HashTransforms.Identity`。 |
 
@@ -162,7 +162,7 @@ ms.locfileid: "53898618"
  `dsig:DigestMethod`項目是必要的子系`hash`項目。 `dsig:DigestMethod` 項目具有下列屬性。  
 
 
-| 屬性 | 說明 |
+| 屬性 | 描述 |
 |-------------| - |
 | `Algorithm` | 用來計算此檔案的摘要演算法。 目前所使用的唯一值[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]是`http://www.w3.org/2000/09/xmldsig#sha1`。 |
 

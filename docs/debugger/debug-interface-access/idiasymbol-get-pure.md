@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_pure |Microsoft Docs'
+title: IDiaSymbol::get_pure | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: b61107e9-9144-4981-b7ef-58a339b80c58
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 06418ee8f95ad08b5d69ef272820dbe05f3e7bf8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 86bbd39d71d366cad899601e068a26636bb6ff31
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53843774"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54920955"
 ---
 # <a name="idiasymbolgetpure"></a>IDiaSymbol::get_pure
 擷取旗標，指定函數是否為純虛擬。  

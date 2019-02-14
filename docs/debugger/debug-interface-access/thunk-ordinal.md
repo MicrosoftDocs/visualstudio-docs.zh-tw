@@ -1,5 +1,5 @@
 ---
-title: THUNK_ORDINAL |Microsoft Docs
+title: THUNK_ORDINAL | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 026f98a9-36b8-41ef-8a72-12d7cbc2d362
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e139bceb9456e792ddf10d00d8b519a7677cc22
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 756a1b9fde9c85ca914b00924cb13191859be78e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53834057"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54952297"
 ---
 # <a name="thunkordinal"></a>THUNK_ORDINAL
 將指定的 thunk 類型。  

@@ -1,5 +1,5 @@
 ---
-title: 'Idiasectioncontrib:: Get_nopad |Microsoft Docs'
+title: IDiaSectionContrib::get_nopad | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: f5c08603-0b3e-4e81-acf1-1b95a6a83bed
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 694925b51d2cb65d4a3e1f38b54c20926b5895c7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 402cd3840e78785ca9cda755b5e7e33e33d7db36
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53910905"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54999687"
 ---
 # <a name="idiasectioncontribgetnopad"></a>IDiaSectionContrib::get_nopad
 擷取旗標，指出是否區段應該不會填補到下一個記憶體界限。  
@@ -35,7 +35,7 @@ HRESULT get_nopad(
  [out]會傳回`TRUE`如果區段應該不會填補到下一步 的記憶體界限; 否則會傳回`FALSE`。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回 `S_OK`。 傳回`S_FALSE`不支援這個屬性，則為。 反之則傳回錯誤碼。  
+ 如果成功，會傳回 `S_OK`。 傳回`S_FALSE`不支援這個屬性，則為。 否則會傳回錯誤碼。  
   
 ## <a name="remarks"></a>備註  
  這是通常只能在較舊的檔案上出現的屬性。  

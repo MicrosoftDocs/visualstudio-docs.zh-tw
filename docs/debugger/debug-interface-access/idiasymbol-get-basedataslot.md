@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_baseDataSlot |Microsoft Docs
+title: IDiaSymbol::get_baseDataSlot | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -7,15 +7,15 @@ dev_langs:
 ms.assetid: f9ed21b7-9397-4813-926e-ade11914b06b
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 95f561007ebc5a8695efbfbcb2578c034d13ed22
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ee06900559dd27b0cf499693987037db4a08da03
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53828338"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55040004"
 ---
 # <a name="idiasymbolgetbasedataslot"></a>IDiaSymbol::get_baseDataSlot
 擷取的基底的資料插槽。  

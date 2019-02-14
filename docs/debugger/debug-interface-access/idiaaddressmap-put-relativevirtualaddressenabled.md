@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 767c078e-8ad7-4940-9e00-cae7704aadee
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6a973c5ba66dbe63cf0c9751effbfd73c45b5b29
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f32b83ce4d44a18b3eb50d246a5d5ff4800316c8
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53963324"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54927629"
 ---
 # <a name="idiaaddressmapputrelativevirtualaddressenabled"></a>IDiaAddressMap::put_relativeVirtualAddressEnabled
 允許用戶端啟用或停用的計算方式與使用相對虛擬位址 (RVA)。  

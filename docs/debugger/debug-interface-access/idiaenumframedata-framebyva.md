@@ -1,5 +1,5 @@
 ---
-title: 'Idiaenumframedata:: Framebyva |Microsoft Docs'
+title: IDiaEnumFrameData::frameByVA | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 0b1e441b-710a-46d8-8060-bed39071c834
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f905c3aa380c6decd6687ff2332af2f196d0b68
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a5c6f6252c23069ffce01b9b790a44b24efbd80a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53851585"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54949372"
 ---
 # <a name="idiaenumframedataframebyva"></a>IDiaEnumFrameData::frameByVA
 傳回在範圍內的虛擬位址 (VA)。  
@@ -39,7 +39,7 @@ HRESULT frameByVA( 
  [out]傳回[IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)物件，表示框架，其中包含提供的地址。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回 `S_OK`。 傳回`S_FALSE`如果沒有框架的資料符合指定的位址。 反之則傳回錯誤碼。  
+ 如果成功，則傳回 `S_OK`。 傳回`S_FALSE`如果沒有框架的資料符合指定的位址。 否則會傳回錯誤碼。  
   
 ## <a name="see-also"></a>請參閱  
  [IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md)   

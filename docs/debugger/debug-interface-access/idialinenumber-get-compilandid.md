@@ -35,7 +35,7 @@ HRESULT get_compilandId ( 
  [out]傳回`DWORD`包含提供這一行將編譯模組的唯一識別碼。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，會傳回 `S_OK`。 傳回`S_FALSE`不支援這個屬性，則為。 反之則傳回錯誤碼。  
+ 如果成功，會傳回 `S_OK`。 傳回`S_FALSE`不支援這個屬性，則為。 否則會傳回錯誤碼。  
   
 ## <a name="see-also"></a>請參閱  
  [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)

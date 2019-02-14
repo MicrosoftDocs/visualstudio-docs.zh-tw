@@ -1,5 +1,5 @@
 ---
-title: FuncDebugStart |Microsoft Docs
+title: FuncDebugStart | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 1cbc6ca5-87d0-4c30-a39e-0a9dc62ce1a9
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8cdc450c020cd0c8f192becfb861b118422b9ce5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4fcfd72850d4bf2b2cd6b33628a0640b7fbe1a17
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53963977"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54919509"
 ---
 # <a name="funcdebugstart"></a>FuncDebugStart
 如果函式具有定義的時間點，在哪一個偵錯開始時，點由使用的符號就是`SymTagFuncDebugStart`標記。  
@@ -26,7 +26,7 @@ ms.locfileid: "53963977"
 ## <a name="properties"></a>屬性  
  下表顯示適用於此符號類型的屬性。  
   
-|屬性|資料類型|說明|  
+|屬性|資料類型|描述|  
 |--------------|---------------|-----------------|  
 |[IDiaSymbol::get_addressOffset](../../debugger/debug-interface-access/idiasymbol-get-addressoffset.md)|`DWORD`|時差的部分的位置;如需詳細資訊，請參閱 < [LocationType 列舉](../../debugger/debug-interface-access/locationtype.md)。|  
 |[IDiaSymbol::get_addressSection](../../debugger/debug-interface-access/idiasymbol-get-addresssection.md)|`DWORD`|區段組件的位置;如需詳細資訊，請參閱 < [LocationType 列舉](../../debugger/debug-interface-access/locationtype.md)。|  

@@ -1,5 +1,5 @@
 ---
-title: BaseType |Microsoft Docs
+title: BaseType | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 2f9e22e6-8360-496a-ac6b-17a5a56b0c46
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a18d5c1677a0b7432d7bf6db89f8905ea29a2f36
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c16c58c134f4aac34bf5981aae992d8673db15b8
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53852410"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55000071"
 ---
 # <a name="basetype"></a>BaseType
 基底類型由識別`SymTagBaseType`符號。  
@@ -25,7 +25,7 @@ ms.locfileid: "53852410"
 ## <a name="properties"></a>屬性  
  下表顯示此符號類型的其他有效屬性。  
   
-|屬性|資料類型|說明|  
+|屬性|資料類型|描述|  
 |--------------|---------------|-----------------|  
 |[IDiaSymbol::get_baseType](../../debugger/debug-interface-access/idiasymbol-get-basetype.md)|`DWORD`|其中一個值[BasicType 列舉](../../debugger/debug-interface-access/basictype.md)。|  
 |[IDiaSymbol::get_constType](../../debugger/debug-interface-access/idiasymbol-get-consttype.md)|`BOOL`|`TRUE` 如果基底類型標記為 const。|  

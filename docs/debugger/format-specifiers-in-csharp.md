@@ -22,15 +22,15 @@ helpviewer_keywords:
 ms.assetid: 345c8589-5f36-4d34-a58c-e56271687dd6
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: f01951a45a2e50f6dac093924627fe178011c9f0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: fe922960b0571593cc15581c29244798fd0f671e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53899008"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55018731"
 ---
 # <a name="format-specifiers-in-c-in-the-visual-studio-debugger"></a>格式規範，在C#在 Visual Studio 偵錯工具
 您可以變更在顯示值的格式**監看式**視窗使用格式規範。 您也可以使用中的格式規範**即時運算** 視窗中，**命令**視窗中[追蹤點](../debugger/using-breakpoints.md#BKMK_Print_to_the_Output_window_with_tracepoints)，並在來源視窗中。 如果您暫停在這些視窗中的運算式，結果會出現在[DataTip](../debugger/view-data-values-in-data-tips-in-the-code-editor.md)中指定的格式顯示。  

@@ -1,5 +1,5 @@
 ---
-title: IDiaEnumSegments |Microsoft Docs
+title: IDiaEnumSegments | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 0c9edd5e-b9ce-43e1-a791-cd4c5d16d923
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 72795807415e3ae81a44e38e66ddfc9ebc7ab94c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: 426d8dc998bfdf6859735e508595f9661b5c38d2
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53954470"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54939214"
 ---
 # <a name="idiaenumsegments"></a>IDiaEnumSegments
 列舉各種資料來源中包含的區段。  
@@ -31,7 +31,7 @@ IDiaEnumSegments : IUnknown
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法  
  下表顯示的方法`IDiaEnumSegments`。  
   
-|方法|說明|  
+|方法|描述|  
 |------------|-----------------|  
 |[IDiaEnumSegments::get__NewEnum](../../debugger/debug-interface-access/idiaenumsegments-get-newenum.md)|擷取[IEnumVARIANT 介面](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-ienumvariant)這個列舉值的版本。|  
 |[IDiaEnumSegments::get_Count](../../debugger/debug-interface-access/idiaenumsegments-get-count.md)|擷取區段的數目。|  

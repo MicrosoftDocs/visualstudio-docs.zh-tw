@@ -1,5 +1,5 @@
 ---
-title: 'Idiastackframe:: Get_lengthlocals |Microsoft Docs'
+title: IDiaStackFrame::get_lengthLocals | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: dbc3e544-578a-4f0b-8d20-f21ad4cbb604
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e47653dad67b06107bbc1c363a4e0fe2f82e33b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 776d1e04910d9936a0657f67a05d87cf23e6f790
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53918663"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54950880"
 ---
 # <a name="idiastackframegetlengthlocals"></a>IDiaStackFrame::get_lengthLocals
 擷取推送到堆疊上的本機變數的位元組的數目。  
@@ -35,7 +35,7 @@ HRESULT get_lengthLocals ( 
  [out]傳回區域變數的位元組數目。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，則傳回 `S_OK`。 傳回`S_FALSE`不支援的屬性。 反之則傳回錯誤碼。  
+ 如果成功，會傳回 `S_OK`。 傳回`S_FALSE`不支援的屬性。 否則會傳回錯誤碼。  
   
 ## <a name="see-also"></a>請參閱  
  [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)

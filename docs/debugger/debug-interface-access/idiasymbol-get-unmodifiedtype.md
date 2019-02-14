@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_unmodifiedtype |Microsoft Docs'
+title: IDiaSymbol::get_unmodifiedType | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: bf914dc0-ff84-4f5d-9f75-1733b17f3be0
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fe76a3155941c9f7a3c6cc02d02291e61c8e4e89
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4924d7e18df75183f65233d237c4b76772c08b1d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53898553"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55016963"
 ---
 # <a name="idiasymbolgetunmodifiedtype"></a>IDiaSymbol::get_unmodifiedType
 擷取這個符號的原始類型。 使用時機[SymTagEnum 列舉](../../debugger/debug-interface-access/symtagenum.md)設為型別。  

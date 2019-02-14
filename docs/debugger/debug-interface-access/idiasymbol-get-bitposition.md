@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_bitposition |Microsoft Docs'
+title: IDiaSymbol::get_bitPosition | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: b0059407-8655-497b-81ca-025595989371
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 82940d50d82945ab8ef4efcbf63801339536f8f7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9c1cbe949c12e3d1361563a5ead378b1aa81e1cf
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53956618"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55000350"
 ---
 # <a name="idiasymbolgetbitposition"></a>IDiaSymbol::get_bitPosition
 擷取位置的位元位置。 使用的時機[LocationType 列舉](../../debugger/debug-interface-access/locationtype.md)是`LocIsBitField`。  
@@ -42,7 +42,7 @@ HRESULT get_bitPosition ( 
   
 ## <a name="requirements"></a>需求  
   
-|需求|說明|  
+|需求|描述|  
 |-----------------|-----------------|  
 |標頭：|dia2.h|  
 |版本:|DIA SDK v7.0|  

@@ -1,5 +1,5 @@
 ---
-title: 'Idiareadexeatoffsetcallback:: Readexecutableat |Microsoft Docs'
+title: IDiaReadExeAtOffsetCallback::ReadExecutableAt | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 30b1cef0-b366-4712-8e89-d21f640964f8
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d75529a2baebc6a5f488122106f47e512a4b9ac0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c3a637608c8da5d7c5c5e0d857520a08ffae494a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53962152"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54944861"
 ---
 # <a name="idiareadexeatoffsetcallbackreadexecutableat"></a>IDiaReadExeAtOffsetCallback::ReadExecutableAt
 讀取指定的可執行檔從指定的位移開始的位元組數目。  

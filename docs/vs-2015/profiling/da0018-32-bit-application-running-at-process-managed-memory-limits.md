@@ -1,14 +1,9 @@
 ---
 title: DA0018：以處理序 Managed 記憶體限制執行的 32 位元應用程式 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 f1_keywords:
 - vs.performance.18
 - vs.performance.DA0018
@@ -17,13 +12,13 @@ ms.assetid: 98eb2d96-f92f-42f9-915c-e5ac2330ffbf
 caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: aeca49e13a2d7181d74f48522786185f4be9ed58
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 6418a39d7e53a3edaa48b3cd003d35d95cba386e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51722258"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54773283"
 ---
 # <a name="da0018-32-bit-application-running-at-process-managed-memory-limits"></a>DA0018：以處理序 Managed 記憶體限制執行的 32 位元應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +26,7 @@ ms.locfileid: "51722258"
 規則 Id |DA0018 以 |  
 |類別目錄 |分析工具使用方式 |  
 |程式碼剖析方法 |取樣 |  
-|訊息 |Managed 記憶體配置接近 32 位元處理程序的預設限制。 您的應用程式可能是記憶體繫結。 |  
+|訊息 |Managed 記憶體配置接近 32 位元處理程序的預設限制。 您的應用程式可能是記憶體繫結。  
 |規則類型 |警告 |  
   
  當您使用取樣、.NET 記憶體或資源爭用方法進行分析時，必須至少收集 10 個樣本才能觸發此規則。  
@@ -74,6 +69,3 @@ ms.locfileid: "51722258"
   若要對處理序位址空間之私用部分大小解除虛擬記憶體的架構限制，請嘗試在 64 位元電腦上執行這個 32 位元處理序。  在 64 位元電腦上的 32 位元處理序可以取得高達 4 GB 的私用虛擬記憶體。  
   
   在 64 位元電腦上執行的 64 位元處理序可以取得高達 8 TB 的虛擬記憶體。 請考慮重新編譯應用程式，以原生的 64 位元應用程式執行。 此規則僅供參考，可能不需要更正措施。
-
-
-

@@ -1,14 +1,9 @@
 ---
 title: DA0003：許多核心樣本 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 f1_keywords:
 - vs.performance.rules.DA0003
 - vs.performance.DA0003
@@ -18,13 +13,13 @@ ms.assetid: c1f46f77-eb95-42e5-b340-d86bc9de41b4
 caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 922cc6998db9813c188eb9028b8e855a8b860270
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: aa60d16eec09255f39e18b86b468a2fef2269aff
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51741701"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54782630"
 ---
 # <a name="da0003-many-kernel-samples"></a>DA0003：許多核心樣本
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +27,7 @@ ms.locfileid: "51741701"
 規則 Id |DA0003 |  
 |類別目錄 |分析工具使用方式 |  
 |程式碼剖析方法 |取樣 |  
-|訊息 |您在核心模式中有高比例的樣本。 這可能指出大量 I/O 活動或較高的內容切換率。 請考慮使用檢測模式重新的應用程式程式碼剖析。 |  
+|訊息 |您在核心模式中有高比例的樣本。 這可能指出大量 I/O 活動或較高的內容切換率。 請考慮使用檢測模式重新分析應用程式。  
 |規則類型 |資訊 |  
   
 ## <a name="cause"></a>原因  
@@ -49,6 +44,3 @@ ms.locfileid: "51741701"
 -   使用檢測方法進行分析。  
   
 -   增加取樣率，嘗試以使用者模式收集更多的樣本。
-
-
-

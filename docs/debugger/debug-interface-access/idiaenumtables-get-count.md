@@ -1,5 +1,5 @@
 ---
-title: 'Idiaenumtables:: Get_count |Microsoft Docs'
+title: IDiaEnumTables::get_Count | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 30fa316b-a746-4028-acae-4efcd2066f38
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 05f254abc58471f6fffa810a6b8f2283595efdb9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f92c860cf0b9d99f5fd4b3f08516afb5ddb0373e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53863312"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54960423"
 ---
 # <a name="idiaenumtablesgetcount"></a>IDiaEnumTables::get_Count
 擷取資料表的數目。  

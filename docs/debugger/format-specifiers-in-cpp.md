@@ -24,15 +24,15 @@ helpviewer_keywords:
 ms.assetid: 0f6f3b7c-ce2c-4b4d-b14f-7589dbed5444
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5732c7bd4f1c2fec8b7b3349d0985a2f7cbf896b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: 83e1d56c14ff4659c681ae2aadd0c6f1b88bec50
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53968335"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55009891"
 ---
 # <a name="format-specifiers-for-c-in-the-visual-studio-debugger"></a>C + + 的 Visual Studio 偵錯工具中的格式規範
 您可以變更在顯示值的格式**監看式**視窗使用格式規範。  
@@ -71,9 +71,9 @@ int main() {
 |**sb**|const char* 字串 (無引號)|\<位置 >"hello world"|hello world|  
 |s8|UTF-8 字串|\<位置 >"This is utf-8 咖啡杯 â˜•"|"This is utf-8 咖啡杯 ☕"|
 |**s8b**|Utf-8 字串 (無引號)|\<位置 >"hello world"|hello world|  
-|su|Unicode （utf-16 編碼） 字串 （含引號）|\<位置 > L"hello world"|L"hello world"<br /><br /> u"hello world"|  
-|sub|Unicode (UTF-16 編碼) 字串 (無引號)|\<位置 > L"hello world"|hello world|  
-|bstr|BSTR 二進位字串 （含引號）|\<位置 > L"hello world"|L"hello world"|  
+|su|Unicode （utf-16 編碼） 字串 （含引號）|\<location> L"hello world"|L"hello world"<br /><br /> u"hello world"|  
+|sub|Unicode (UTF-16 編碼) 字串 (無引號)|\<location> L"hello world"|hello world|  
+|bstr|BSTR 二進位字串 （含引號）|\<location> L"hello world"|L"hello world"|  
 |env|環境區塊 (雙重 null 結尾的字串)|\<位置 > L"=:: =::\\\\"|L"=:: =::\\\\\\0 = C: = C:\\\\windows\\\\system32\\0ALLUSERSPROFILE =...|
 |**s32**|UTF-32 字串 （含引號）|\<位置 > U"hello world"|u"hello world"|  
 |**s32b**|Utf-32 字串 (沒有引號)|\<位置 > U"hello world"|hello world|  

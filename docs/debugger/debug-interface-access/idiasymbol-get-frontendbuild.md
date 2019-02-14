@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: f7dab1c6-112b-4966-baa5-afc976949c76
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 36b931323c676c23d56cff9810f45df200e3cf88
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1f8b1810f0734c9e026d6434a185284103803e1c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53904990"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54944419"
 ---
 # <a name="idiasymbolgetfrontendbuild"></a>IDiaSymbol::get_frontEndBuild
 擷取後端的組建編號。  
@@ -47,7 +47,7 @@ HRESULT get_frontEndBuild ( 
   
 ## <a name="requirements"></a>需求  
   
-|需求|說明|  
+|需求|描述|  
 |-----------------|-----------------|  
 |標頭：|dia2.h|  
 |版本:|DIA SDK v7.0|  

@@ -1,5 +1,5 @@
 ---
-title: IDiaEnumSourceFiles |Microsoft Docs
+title: IDiaEnumSourceFiles | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 5c0779a6-a2ea-408a-90da-ebdecf2b83c0
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3ac732052c415341cf0cb8f04bfd94c8b1d797cb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: 522d052cc6f3bdb4fa394f606f58454b194a95ca
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53871998"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54964817"
 ---
 # <a name="idiaenumsourcefiles"></a>IDiaEnumSourceFiles
 列舉各種資料來源中包含的原始程式檔。  
@@ -31,7 +31,7 @@ IDiaEnumSourceFiles : IUnknown
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法  
  下表顯示的方法`IDiaEnumSourceFiles`。  
   
-|方法|說明|  
+|方法|描述|  
 |------------|-----------------|  
 |[IDiaEnumSourceFiles::get__NewEnum](../../debugger/debug-interface-access/idiaenumsourcefiles-get-newenum.md)|擷取`IEnumVARIANT Interface`這個列舉值的版本。|  
 |[IDiaEnumSourceFiles::get_Count](../../debugger/debug-interface-access/idiaenumsourcefiles-get-count.md)|擷取來源檔案的數目。|  

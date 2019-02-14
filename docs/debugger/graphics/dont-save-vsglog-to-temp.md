@@ -1,19 +1,19 @@
 ---
-title: DONT_SAVE_VSGLOG_TO_TEMP |Microsoft Docs
+title: DONT_SAVE_VSGLOG_TO_TEMP | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: f27ab0e6-9575-4ca0-9901-37d3e5c3a2f5
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d945f3ef7fe2c5aa2abb0bd2263bae693d517f7c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 967ff50991efbbd7b598605abd992b298367d01c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53859151"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55006173"
 ---
 # <a name="dontsavevsglogtotemp"></a>DONT_SAVE_VSGLOG_TO_TEMP
 出現時，定義圖形記錄檔是否儲存到使用者的暫存檔目錄。  

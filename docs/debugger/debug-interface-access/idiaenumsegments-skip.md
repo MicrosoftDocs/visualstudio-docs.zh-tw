@@ -1,5 +1,5 @@
 ---
-title: 'Idiaenumsegments:: Skip |Microsoft Docs'
+title: IDiaEnumSegments::Skip | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: ec67039f-da8c-4e70-8db7-957d7d5281e8
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3e8fb7de90f43b6f8c4992366993c0c3d8409aba
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 52f83ebca4d7d03afb8eae7a9b885334ccc1cb71
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53917575"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54924296"
 ---
 # <a name="idiaenumsegmentsskip"></a>IDiaEnumSegments::Skip
 略過指定的數目的列舉型別序列中的區段。  

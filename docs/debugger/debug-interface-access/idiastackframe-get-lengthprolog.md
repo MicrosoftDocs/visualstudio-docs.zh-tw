@@ -35,7 +35,7 @@ HRESULT get_lengthProlog ( 
  [out]傳回的初構程式碼的位元組數目。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，會傳回 `S_OK`。 傳回`S_FALSE`不支援的屬性。 反之則傳回錯誤碼。  
+ 如果成功，會傳回 `S_OK`。 傳回`S_FALSE`不支援的屬性。 否則會傳回錯誤碼。  
   
 ## <a name="see-also"></a>請參閱  
  [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)
