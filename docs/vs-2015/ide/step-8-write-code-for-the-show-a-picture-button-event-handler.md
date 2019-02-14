@@ -1,25 +1,20 @@
 ---
 title: 步驟 8：為顯示圖片按鈕事件處理常式撰寫程式碼 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: 07f4ec00-cda4-42f4-98bb-37edc7167de7
 caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 6172188fb7d06122cdcc178889b2a5b37ca1bb0f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 301147bffb67aed337a416fd0be19c5b407ca085
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49933543"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54771144"
 ---
 # <a name="step-8-write-code-for-the-show-a-picture-button-event-handler"></a>步驟 8：為顯示圖片按鈕事件處理常式撰寫程式碼
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +33,7 @@ ms.locfileid: "49933543"
   
 1.  移至 [Windows Forms 設計工具]，然後按兩下 [顯示圖片] 按鈕。 IDE 會立即移至程式碼設計工具，並將游標移至您先前加入的 `showButton_Click()` 方法內。  
   
-2.  在兩個大括弧 { } 中間的空白行上鍵入 `i` (在 Visual Basic 中，輸入在 Private Sub 中間的空白行。... 和 End Sub。）[IntelliSense] 視窗隨即開啟，如下圖所示。  
+2.  在兩個大括弧 { } 中間的空白行上鍵入 `i` (在 Visual Basic 中，輸入在 Private Sub 中間的空白行。... 和 End Sub。）**IntelliSense**視窗隨即開啟，如下圖所示。  
   
      ![包含 Visual C&#35; 程式碼的 IntelliSense](../ide/media/express-ifintellisense.png "Express_IfIntellisense")  
 包含 Visual C# 程式碼的 IntelliSense  
@@ -109,6 +104,3 @@ Visual C# 程式碼
 -   若要移到下一個教學課程步驟，請參閱[步驟 9：檢閱、註解和測試您的程式碼](../ide/step-9-review-comment-and-test-your-code.md)。  
   
 -   若要返回上一個教學課程步驟，請參閱[步驟 7：將對話方塊元件新增至您的表單](../ide/step-7-add-dialog-components-to-your-form.md)。
-
-
-
