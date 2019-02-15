@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: a4b912f523be0380858d639dbf43a4c53bc358c6
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 89d08619ede0269adb8cbf1df70bb423bb436bca
+ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54947019"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56155379"
 ---
 # <a name="create-a-vuejs-application-using-nodejs-tools-for-visual-studio"></a>使用適用於 Visual Studio 的 Node.js 工具建立 Vue.js 應用程式
 
@@ -177,6 +177,6 @@ vue-cli 3.0 的未知問題會阻止自動化建置流程。 每次嘗試重新�
 
 ## <a name="see-also"></a>另請參閱
 
-- https://vuejs.org/v2/guide - Vue 使用者入門指南。
-- https://github.com/vuejs/vue-cli - Vue CLI 專案。
-- https://webpack.js.org/configuration/ - Webpack 組態文件。
+- [Vue 使用者入門指南](https://vuejs.org/v2/guide) \(英文\)。
+- [Vue CLI 專案](https://github.com/vuejs/vue-cli( \(英文\)。
+- [Webpack 設定文件](https://webpack.js.org/configuration/) \(英文\)。
