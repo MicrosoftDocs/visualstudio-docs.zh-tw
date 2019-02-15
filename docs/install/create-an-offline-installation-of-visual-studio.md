@@ -1,9 +1,8 @@
 ---
 title: 建立離線安裝
 description: 了解如何在有不可靠網際網路連線或低頻寬時離線安裝 Visual Studio。
-ms.date: 01/15/2019
+ms.date: 02/06/2019
 ms.custom: seodec18
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - offline installation [Visual Studio]
@@ -15,16 +14,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cbf0f68f090219aea8f3ddde31e697463f8e9ee3
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 71c618efc383227167b3d4ccb034e32758229294
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55035519"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55954019"
 ---
 # <a name="create-an-offline-installation-of-visual-studio-2017"></a>建立 Visual Studio 2017 的離線安裝
 
-我們已設計 Visual Studio 2017 可在各種網路和電腦組態中正常運作。 雖然建議您嘗試 [Visual Studio Web 安裝程式](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) (這是小型檔案，並可讓您掌握所有最新修正程式和功能)，但我們了解您可能無法這麼做。
+我們已設計 Visual Studio 2017 可在各種網路和電腦組態中正常運作。 雖然建議您嘗試 [Visual Studio Web 安裝程式](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) (這是小型檔案，並可讓您掌握所有最新修正程式和功能)，但我們了解您可能無法這麼做。
 
 例如，您可能有不可靠網際網路連線，或具有低頻寬的連線。 若是如此，您有幾個選項：您可以使用新的 [全部下載後安裝] 功能來下載檔案後再安裝，也可以使用命令列來建立檔案的本機快取。
 
@@ -33,10 +32,14 @@ ms.locfileid: "55035519"
 
 ## <a name="use-the-download-all-then-install-feature"></a>使用 [全部下載後安裝] 功能
 
-[**15.8 中的新功能**](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default&contextView=vs-2017#install
-)：在您下載 Web 安裝程式之後，請從 Visual Studio 安裝程式中選取新的 [全部下載後安裝]**** 選項。 然後，繼續執行您的安裝。
+[**15.8 中的新功能**](/visualstudio/releasenotes/vs2017-relnotes-v15.8#install)：在您下載 Web 安裝程式之後，請從 Visual Studio 安裝程式中選取新的 [全部下載後安裝] 選項。 然後，繼續執行您的安裝。
 
    ![[全部下載後安裝] 選項](media/download-all-then-install.png)
+
+我們設計了 [全部下載後安裝] 功能，讓您能夠針對下載 Visual Studio 的同一部電腦將 Visual Studio 下載成單一安裝。 如此一來，您便可以放心地先中斷與 Web 的連線，再安裝 Visual Studio。
+
+> [!IMPORTANT]
+> 請勿使用 [全部下載後安裝] 功能來建立要傳輸至另一部電腦的離線快取。 此功能並不是設計來進行該用途。 <br><br>如果您想要建立離線快取以將 Visual Studio 安裝在另一部電腦上，請參閱本頁面的[使用命令列來建立本機快取](#use-the-command-line-to-create-a-local-cache)一節，以了解如何建立本機快取，或是參閱[建立 Visual Studio 2017 的網路安裝](../install/create-a-network-installation-of-visual-studio.md)頁面，以了解如何建立網路快取。
 
 ## <a name="use-the-command-line-to-create-a-local-cache"></a>使用命令列來建立本機快取
 

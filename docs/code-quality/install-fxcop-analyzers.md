@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: e4b97779c458fd7cb02ab5c168401f061869ccb1
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 84d83cba5afb201725354069ff1816dd8985b15c
+ms.sourcegitcommit: b623042906de4f12d68af365e36eb38b7b44aa90
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55953447"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56270572"
 ---
 # <a name="install-fxcop-analyzers-in-visual-studio"></a>在 Visual Studio 中安裝 FxCop 分析器
 
@@ -43,7 +43,7 @@ Microsoft 建立了一組的分析器，稱為[Microsoft.CodeAnalysis.FxCopAnaly
 
 | Visual Studio 版本 | FxCop 分析器套件版本 |
 | - | - |
-| Visual Studio 2017 15.5 版和更新版本 | 2.6.2 例如 https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/2.6.2 |
+| Visual Studio 2017 15.5 版和更新版本 | 2.6.3 例如 https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/2.6.3 |
 | Visual Studio 2017 15.3 到 15.4 版 | 2.3.0-beta1 例如 https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/2.3.0-beta1 |
 | Visual Studio 2017 版本 15.0 至 15.2 | 2.0.0-beta2 例如 https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/2.0.0-beta2 |
 | Visual Studio 2015 update 2 和 3 | 版本 1.2.0-beta2 例如 https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/1.2.0-beta2 |
@@ -79,7 +79,7 @@ Microsoft 建立了一組的分析器，稱為[Microsoft.CodeAnalysis.FxCopAnaly
 
 1. 選取 **修改**開始安裝。
 
-1. 一或兩分鐘，安裝完成之後。 選取 **關閉**。
+1. 一或兩分鐘，安裝完成之後。 選取 [關閉] 。
 
 1. 重新開啟 Visual Studio。
 

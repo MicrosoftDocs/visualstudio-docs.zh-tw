@@ -9,14 +9,15 @@ author: sayedihashimi
 ms.author: sayedha
 manager: unniravindranathan
 ms.prod: visual-studio-mac-dev15
+ms.custom: video
 ms.workload:
 - azure
-ms.openlocfilehash: 41eda3bf79b60e7d0a07b41fdd50bbf588240c3d
-ms.sourcegitcommit: 447f2174bdecdd471d8a8e11c19554977db620a0
+ms.openlocfilehash: ebf7f9bcc924326f1abad81dacb38cdc7256d17c
+ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2019
-ms.locfileid: "55089437"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55853923"
 ---
 # <a name="publish-a-web-app-to-azure-app-service-using-visual-studio-for-mac"></a>使用 Visual Studio for Mac 將 Web 應用程式發佈到 Azure App Service
 
@@ -24,7 +25,7 @@ ms.locfileid: "55089437"
 
 ## <a name="prerequisites"></a>必要條件
 
- - 已安裝 [Visual Studio 2017 for Mac](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs4mac2017) 並啟用 ASP.NET Core。
+ - 已安裝 [Visual Studio 2017 for Mac](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs4mac2017) 並啟用 ASP.NET Core。
  - Azure 訂用帳戶。 如果您還沒有訂用帳戶，可以[免費註冊](https://azure.microsoft.com/free/dotnet/)，其中包含 30 天美金 $200 元的點數及 12 個月熱門免費服務。
  - ASP.NET Core 專案。 如果您還沒有專案，可以[建立新的專案](https://docs.microsoft.com/visualstudio/mac/create-new-projects?view=vsmac-2017)。
 
@@ -67,3 +68,7 @@ ms.locfileid: "55089437"
       ![建立 App Service 訊息](media/publish-create-app-service-message.png)
 
     按一下 [確定] 之後，訊息會隨即關閉，且您可以繼續進行專案。 您可以使用 IDE 頂端之狀態列來監看發佈程序的狀態。 當您的 Web 應用程式成功發佈之後，即會以您的預設瀏覽器開啟網站。
+
+## <a name="related-video"></a>相關影片
+
+> [!Video https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Visual-Studio-for-Mac-Publish-to-Azure/player]

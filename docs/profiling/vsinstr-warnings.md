@@ -14,19 +14,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 68a4136a67bea3dc06378265df9f01878c1a14dc
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 079cf7681f8583b500068c0ca6aea60ce0fad66b
+ms.sourcegitcommit: 5dc74b4fdff1357df43a19f6e8a51d7bf706abd6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54923973"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "55767902"
 ---
 # <a name="vsinstr-warnings"></a>VSInstr 警告
 下表列出 *VSInstr.exe* 工具所發出的警告。 若要隱藏警告訊息使其不出現，您可以使用 NOWARN 選項以及警告編號。  
   
-|警告編號|說明|  
+|警告編號|描述|  
 |--------------------|-----------------|  
-|**VSP1026**|不參考 MSCorLib 的程式庫不支援涵蓋範圍。 此情況常見於可攜式程式庫。|  
+|**VSP1026**|不參考 MSCorLib 的程式庫不支援涵蓋範圍。 此情況常見於可攜式程式庫。<br /><br />[/EnableCodeCoverage](/visualstudio/test/vstest-console-options) 命令列選項是 .NET Core 的必要選項。|  
 |**VSP2000**|內部錯誤。 無法取得這個可執行檔的模組檔案名稱。|  
 |**VSP2001**|\<組件名稱> 是具備強式名稱的組件。 必須重新簽署後才能執行。<br /><br /> 檢測簽署的組件之後，就會發生這個警告。 您可以使用 *sn.exe* 工具來重新簽署二進位檔，或暫時關閉強式名稱需求。 如需詳細資訊，請參閱 [Sn.exe (強式名稱工具)](/dotnet/framework/tools/sn-exe-strong-name-tool)。|  
 |**VSP2002**|在檔案 \<filename> 中找不到函式 \<funcname><br /><br /> 如果在指定的檔案中找不到函式，就會發生這個警告。|  

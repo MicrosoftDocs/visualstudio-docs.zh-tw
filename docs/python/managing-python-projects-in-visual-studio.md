@@ -2,7 +2,6 @@
 title: 管理 Python 應用程式專案
 description: Visual Studio 中的專案會管理檔案之間的相依性，以及應用程式中的關聯性複雜度。
 ms.date: 01/28/2019
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -11,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: baf44172cb5ac7f2b38d4c408ca76791f013c4ac
-ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
+ms.openlocfilehash: fc8e6b87569d6c383d0629bae8c582537a3bc948
+ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "55231931"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56155860"
 ---
 # <a name="python-projects-in-visual-studio"></a>Visual Studio 中的 Python 專案
 
@@ -37,8 +36,7 @@ Visual Studio 提供各種 Python 專案範本，可讓您快速設定一些應�
 
 |   |   |
 |---|---|
-| ![影片的電影攝影機圖示](../install/media/video-icon.png "觀看影片") | [觀看 Python 專案簡介的影片 (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Getting-Python-Code-iLAv23LWE_3905918567) \(英文\) (2 分 17 秒)。 |
-| ![影片的電影攝影機圖示](../install/media/video-icon.png "觀看影片") | 另請參閱 [Deep Dive:Use source control with Python projects](https://youtu.be/Aq8eqApnugM) (深度剖析：使用原始檔控制搭配 Python 專案) (youtube.com，8 分 55 秒)。 |
+| ![影片的電影攝影機圖示](../install/media/video-icon.png "觀看影片") | [深入了解：使用原始檔控制搭配 Python 專案](https://youtu.be/Aq8eqApnugM) (英文，youtube.com，8 分 55 秒)。 |
 
 ## <a name="add-files-assign-a-startup-file-and-set-environments"></a>新增檔案、指派啟動檔案及設定環境
 
@@ -65,7 +63,7 @@ Visual Studio 提供您一些方法來建立 Python 專案，不論是從頭開�
 
 下表摘要說明 Visual Studio 2017 中可用的範本 (並非所有範本在所有舊版中都有提供)：
 
-| 範本 | 說明 |
+| 範本 | 描述 |
 | --- | --- |
 | [**從現有 Python 程式碼**](#create-project-from-existing-files) | 從資料夾結構中的現有 Python 程式碼建立 Visual Studio 專案。  |
 | **Python 應用程式** | 具有單一空白原始程式檔的新 Python 應用程式基本專案結構。 根據預設，專案會在預設全域環境的主控台解譯器中執行，您可以透過[指派不同的環境](selecting-a-python-environment-for-a-project.md)來變更此環境。 |

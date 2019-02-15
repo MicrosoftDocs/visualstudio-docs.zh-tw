@@ -5,12 +5,13 @@ author: conceptdev
 ms.author: crdun
 ms.date: 07/13/2017
 ms.assetid: 6E8B0C90-33D6-4546-8207-CE0787584565
-ms.openlocfilehash: 9576048cb6a62f7a4e8c93456154997af359a711
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.custom: video
+ms.openlocfilehash: 290c1971e22a0a0f8ffcd7b92441c81a4ec0037b
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51296472"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55910983"
 ---
 # <a name="getting-started-with-aspnet-core"></a>開始使用 ASP.NET Core
 
@@ -41,7 +42,7 @@ ms.locfileid: "51296472"
 
 ![新的 ASP.NET Core 空白專案檢視](media/asp-net-core-image4.png)
 
-ASP.NET Core 空白 Web 應用程式建立的 Web 應用程式含有兩個預設檔案：**Program.cs** 和 **Startup.cs**，其說明如下。 它也會建立相依性資料夾，其中包含專案的 NuGet 套件相依性，例如 ASP.NET Core、.NET Core 架構和用來建置專案的 MSBuild 目標：
+「ASP.NET Core 空白 Web 應用程式」建立的 Web 應用程式含有兩個預設檔案：**Program.cs** 和 **Startup.cs**，其說明如下。 它也會建立相依性資料夾，其中包含專案的 NuGet 套件相依性，例如 ASP.NET Core、.NET Core 架構和用來建置專案的 MSBuild 目標：
 
 ![顯示相依性的 Solution Pad](media/asp-net-core-image12.png)
 
@@ -64,9 +65,9 @@ public static void Main(string[] args)
 ```
 ASP.NET Core 應用程式會透過 [`WebHostBuilder`](/aspnet/core/fundamentals/hosting) 的執行個體設定和啟動主機，在其 Main 方法中建立 Web 伺服器。 這個建立器提供了一些方法來允許設定主機。 在範本應用程式中會使用下列組態：
 
-* `UseKestrel`：指定應用程式將使用的 Kestrel 伺服器
+* `UseKestrel`：指定應用程式將使用 Kestrel 伺服器
 * `UseContentRoot(Directory.GetCurrentDirectory())`：當應用程式從 Web 專案的根資料夾啟動時，使用這個資料夾作為應用程式的內容根目錄
-* `.UseIISIntegration()`：指定應用程式應該使用 IIS。 若要搭配使用 IIS 與 ASP.NET Core，必須同時指定 `UseKestrel` 和 `UseIISIntegration`。
+* `.UseIISIntegration()`：指定應用程式應該與 IIS 搭配運作。 若要搭配使用 IIS 與 ASP.NET Core，必須同時指定 `UseKestrel` 和 `UseIISIntegration`。
 * `.UseStartup<Startup>()`：指定啟動類別。
 
   Build 和 Run 方法會建置裝載應用程式的 IWebHost，並使其開始接聽傳入的 HTTP 要求。
@@ -131,7 +132,7 @@ Visual Studio for Mac 會使用隨機的連接埠來啟動您的 Web 專案。 �
 ASP.NET Core 應用程式使用「模型-檢視-控制器 (MVC)」設計模式，為應用程式的每個部分提供責任的邏輯分隔。 MVC 包含下列項目：
 
 - **模型**：代表應用程式資料的類別。
-- **檢視**：顯示應用程式的使用者介面 (這通常是模型資料)。
+- **檢視**：顯示應用程式的使用者介面 (通常是模型資料)。
 - **控制器**：用來處理瀏覽器要求、回應使用者輸入和互動的類別。
 
 如需使用 MVC 的詳細資訊，請參閱 [ASP.NET Core MVC 的概觀](/aspnet/core/mvc/overview)指南。
@@ -236,3 +237,7 @@ ASP.NET Core 應用程式使用「模型-檢視-控制器 (MVC)」設計模式�
 - [ASP.NET Core](/aspnet/core/?view=aspnetcore-2.1#build-web-ui-and-web-apis-using-aspnet-core-mvc) 文件。
 - [建立原生行動應用程式的後端服務](/aspnet/core/mobile/native-mobile-backend)，其示範如何使用 Xamarin.Forms 應用程式的 ASP.NET Core 來建置 REST 服務。
 - [ASP.NET Core 實習實驗室](https://github.com/Microsoft/vs4mac-labs/tree/master/Web/Getting-Started)。
+
+## <a name="related-video"></a>相關影片
+
+> [!Video https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Visual-Studio-for-Mac-Build-Your-First-App/player]

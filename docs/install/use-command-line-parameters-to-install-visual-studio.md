@@ -2,9 +2,8 @@
 title: 使用命令列參數來安裝 Visual Studio
 titleSuffix: ''
 description: 了解如何使用命令列參數來控制或自訂您的 Visual Studio 安裝。
-ms.date: 11/14/2018
+ms.date: 02/12/2019
 ms.custom: seodec18
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - command-line parameters
@@ -16,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a83b3c1be5beeeb2ea40fb9d27089a4b559f758a
-ms.sourcegitcommit: 447f2174bdecdd471d8a8e11c19554977db620a0
+ms.openlocfilehash: d6f04d6cdf94a351025e62f4bafb1eb92b1fcf91
+ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2019
-ms.locfileid: "55089138"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56155496"
 ---
 # <a name="use-command-line-parameters-to-install-visual-studio-2017"></a>使用命令列參數來安裝 Visual Studio 2017
 
@@ -108,7 +107,7 @@ ms.locfileid: "55089138"
 | `--cache` | **15.2 中的選擇性新功能**：如果存在，套件將會在安裝之後加以保留，以利後續修復。 這會覆寫要用於後續安裝、修復或修改的全域原則設定。 預設原則是快取套件。 若是解除安裝命令，則會略過此項。 如需詳細資訊，請參閱如何[停用或移動套件快取](disable-or-move-the-package-cache.md)。 |
 | `--nocache` | **15.2 中的選擇性新功能**：如果套件存在，會在安裝或修復之後刪除。 只有在需要時才會再次下載它們，並於使用過後再次刪除。 這會覆寫要用於後續安裝、修復或修改的全域原則設定。 預設原則是快取套件。 若是解除安裝命令，則會略過此項。 如需詳細資訊，請參閱如何[停用或移動套件快取](disable-or-move-the-package-cache.md)。 |
 | `--noUpdateInstaller` | **15.2 中的選擇性新功能**：如果存在，則在指定靜音時會防止安裝程式進行更新。 如果在需要安裝程式更新時指定具有無訊息的 noUpdateInstaller，則安裝程式會讓命令失敗，並傳回非零結束代碼。 |
-| `--noWeb` | **15.3 中的選擇性新功能**：安裝程式現在會下載任何從網際網路安裝的內容。  離線配置中必須提供所有正在安裝的內容。  如果配置缺少內容，安裝程式會失敗。  如需詳細資訊，請參閱[從網路安裝部署](create-a-network-installation-of-visual-studio.md)。 |
+| `--noWeb` | **15.3 中的選擇性新功能**：如果存在，Visual Studio 安裝程式就會使用您配置目錄中的檔案來安裝 Visual Studio。 如果使用者嘗試安裝不是在該配置中的元件，安裝程式將會失敗。  如需詳細資訊，請參閱[從網路安裝部署](create-a-network-installation-of-visual-studio.md)。 <br/><br/> **重要**：此參數不會阻止 Visual Studio 安裝程式檢查更新。 如需詳細資訊，請參閱[控制網路型 Visual Studio 部署的更新](controlling-updates-to-visual-studio-deployments.md)。|
 | `--path <name>=<path>` | **15.7 中的選擇性新功能**：用來指定安裝的自訂安裝路徑。 支援的路徑名稱為 shared、cache 和 install。 |
 | `--path cache=<path>` | **15.7 中的選擇性新功能**：使用您指定用於下載安裝檔案的位置。 此位置只能在第一次安裝 Visual Studio 時設定。 範例：`--path cache="C:\VS\cache"` |
 | `--path shared=<path>` | **15.7 中的選擇性新功能**：包含並存 Visual Studio 安裝的共用檔案。 某些工具和 SDK 會安裝到此磁碟機上的位置，而其他一些項目則可能會覆寫此設定並安裝到其他磁碟機。 範例：`--path shared="C:\VS\shared"` <br><br>重要事項：此項目只能在第一次安裝 Visual Studio 時設定一次。 |

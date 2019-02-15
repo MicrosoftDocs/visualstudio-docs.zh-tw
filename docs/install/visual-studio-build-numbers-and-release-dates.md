@@ -6,19 +6,18 @@ keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.date: 02/01/2019
+ms.date: 02/05/2019
 ms.topic: reference
 helpviewer_keywords: ''
-ms.prod: visual-studio-dev15
 ms.custom: seodec18
 ms.workload:
 - multiple
-ms.openlocfilehash: 972314bdf09a41dcd187dee41b3af3587f3e2828
-ms.sourcegitcommit: 612f8c21d1448f1a013c30100cdecfbec5ddb24f
+ms.openlocfilehash: 8b33b794bf790d2b68368ee4853c699f6de01300
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/01/2019
-ms.locfileid: "55571196"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55939524"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Visual Studio 組建編號和發行日期
 
@@ -176,6 +175,7 @@ ms.locfileid: "55571196"
 
 | **版本**| **通道** | **發行日期** | **組建版本** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.0.0 | Preview 2.2 | 2019 年 2 月 5 日 | 16.0.28602.52 |
 | 16.0.0 | Preview 2.1 | 2019 年 1 月 31 日 | 16.0.28529.54 |
 | 16.0.0 | Preview 2 | 2019 年 1 月 23 日 | 16.0.28522.59 |
 | 16.0.0 | Preview 1.1 | 2018 年 12 月 10 日 | 16.0.28408.50 |
