@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a535b49722c7022a105156c625139d0b8e94a35d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 2714001cef1f9e1e39c6b5cbce50df1d2728f3e1
+ms.sourcegitcommit: 5dc74b4fdff1357df43a19f6e8a51d7bf706abd6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54969664"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "55768419"
 ---
 # <a name="vbc-task"></a>Vbc 工作
 包裝 *vbc.exe*，這會產生可執行檔 (*.exe*)、動態連結程式庫 (*.dll*) 或程式碼模組 (*.netmodule*)。 如需 *vbc.exe* 的詳細資訊，請參閱 [Visual Basic 命令列編譯器](/dotnet/visual-basic/reference/command-line-compiler/index)。  
@@ -32,7 +32,7 @@ ms.locfileid: "54969664"
  下表說明 `Vbc` 工作的參數。  
 
 
-| 參數 | 說明 |
+| 參數 | 描述 |
 |------------------------------| - |
 | `AdditionalLibPaths` | 選擇性的 `String[]` 參數。<br /><br /> 指定其他資料夾，在其中尋找參考屬性中指定的組件。 |
 | `AddModules` | 選擇性的 `String[]` 參數。<br /><br /> 讓編譯器將所指定檔案的類型資訊全部提供給您目前編譯的專案。 此參數對應至 *vbc.exe* 編譯器的 [-addmodule](/dotnet/visual-basic/reference/command-line-compiler/addmodule) 參數。 |
@@ -51,7 +51,7 @@ ms.locfileid: "54969664"
 | `Imports` | 選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 從指定的項目集合匯入命名空間。 此參數對應至 *vbc.exe* 編譯器的 [-imports](/dotnet/visual-basic/reference/command-line-compiler/imports) 參數。 |
 | `KeyContainer` | 選擇性的 `String` 參數。<br /><br /> 指定密碼編譯金鑰容器的名稱。 此參數對應至 *vbc.exe* 編譯器的 [-keycontainer](/dotnet/visual-basic/reference/command-line-compiler/keycontainer) 參數。 |
 | `KeyFile` | 選擇性的 `String` 參數。<br /><br /> 指定包含密碼編譯金鑰的檔名。 如需詳細資訊，請參閱 [-keyfile](/dotnet/visual-basic/reference/command-line-compiler/keyfile)。 |
-| `LangVersion` | 選擇性的 <xref:System.String?displayProperty=fullName> 參數。<br /><br /> 指定語言版本，"9" 或 "10"。 |
+| `LangVersion` | 選擇性的 <xref:System.String?displayProperty=fullName> 參數。<br /><br /> 指定[語言版本](/dotnet/visual-basic/language-reference/configure-language-version)，例如 "15.5"。 |
 | `LinkResources` | 選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 在輸出檔中建立 .NET Framework 資源的連結；不要將資源檔放置於輸出檔中。 此參數對應至 *vbc.exe* 編譯器的 [-linkresource](/dotnet/visual-basic/reference/command-line-compiler/linkresource) 參數。 |
 | `MainEntryPoint` | 選擇性的 `String` 參數。<br /><br /> 指定包含 `Sub Main` 程序的類別或模組。 這個參數對應於 *vbc.exe* 編譯器的 [-main](/dotnet/visual-basic/reference/command-line-compiler/main) 參數。 |
 | `ModuleAssemblyName` | 選擇性的 `String` 參數。<br /><br /> 指定將包含此模組的組件。 |

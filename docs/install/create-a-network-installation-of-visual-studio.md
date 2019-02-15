@@ -1,9 +1,8 @@
 ---
 title: 建立網路型安裝
 description: 了解如何建立網路安裝點以在企業內部署 Visual Studio。
-ms.date: 01/15/2019
+ms.date: 02/12/2019
 ms.custom: seodec18
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - '{{PLACEHOLDER}}'
@@ -14,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ddc786cddc2a3676c1be246f04b726072beb37b8
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 69073866096d5b4a20501aadfd93f7befd4a0b12
+ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54981255"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56155431"
 ---
 # <a name="create-a-network-installation-of-visual-studio-2017"></a>建立 Visual Studio 2017 的網路安裝
 
@@ -124,8 +123,10 @@ ms.locfileid: "54981255"
 > [!TIP]
 > 作為批次檔的一部分執行時，`--wait` 選項可確保 `vs_enterprise.exe` 程序先等到安裝完成，再傳回結束代碼。 如果企業系統管理員想要對已完成的安裝執行進一步動作 (例如，[將產品金鑰套用至成功安裝](automatically-apply-product-keys-when-deploying-visual-studio.md))，則這十分有用，但是必須等待安裝完成才能處理來自該安裝的傳回碼。  如果您未使用 `--wait`，則 `vs_enterprise.exe` 程序會在安裝完成之前結束，並傳回未代表安裝作業狀態的不正確結束代碼。
 
+當您從配置進行安裝時，會從配置中取得已安裝的內容。 不過，如果您選取的元件不在配置中，則會從網際網路取得。  如果您想要防止 Visual Studio 安裝程式下載您配置中遺漏的任何內容，請使用 `--noWeb` 選項。  如果使用 `--noWeb`，而且配置遺失已選取要安裝的任何內容，則安裝程式會失敗。 
 
-當您從配置進行安裝時，會從配置中取得已安裝的內容。 不過，如果您選取的元件不在配置中，則會從網際網路取得。  如果您想要防止 Visual Studio 安裝程式下載您配置中遺漏的任何內容，請使用 `--noWeb` 選項。  如果使用 `--noWeb`，而且配置遺失已選取要安裝的任何內容，則安裝程式會失敗。
+> [!IMPORTANT]
+> `--noWeb` 選項不會阻止 Visual Studio 安裝程式檢查更新。 如需詳細資訊，請參閱[控制網路型 Visual Studio 部署的更新](controlling-updates-to-visual-studio-deployments.md)頁面。
 
 ### <a name="error-codes"></a>錯誤碼
 
