@@ -6,12 +6,12 @@ titleSuffix: ''
 description: 了解如何使用 Visual Studio 2017 以您選擇的語言，為您的平台和裝置開發應用程式、服務及工具。
 ms.topic: hub-page
 ms.custom: seodec18
-ms.openlocfilehash: bddd51f4544c1eb96c309330d6cda04e6589db44
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 9bcd261ce7d6efbd7fac50352c9dfaa17ed6c41f
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55032201"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56316778"
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -988,7 +988,7 @@ Unity 遊戲</a>
         <h2>和我們保持連絡</h2>
         <ul class="links">
            <li>
-                <a href="https://blogs.msdn.microsoft.com/visualstudio/"> 部落格 </a>
+                <a href="https://devblogs.microsoft.com/visualstudio/"> 部落格 </a>
             </li>
             <li>
                 <a href="https://twitter.com/VisualStudio"> Twitter </a>
