@@ -12,60 +12,60 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9638256c3aaf3d025b59b7fba89cf33e72a47a1a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 95e228a3aa0e96eedcf0413df7680e7a5664b707
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55006420"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56315413"
 ---
 # <a name="bpstate"></a>BP_STATE
-指定的繫結中斷點存在，也會指定是否已啟用。  
-  
-## <a name="syntax"></a>語法  
-  
-```cpp  
-enum enum_BP_STATE {   
-   BPS_NONE     = 0x0000,  
-   BPS_DELETED  = 0x0001,  
-   BPS_DISABLED = 0x0002,  
-   BPS_ENABLED  = 0x0003  
-};  
-typedef DWORD BP_STATE;  
-```  
-  
-```csharp  
-public enum enum_BP_STATE {   
-   BPS_NONE     = 0x0000,  
-   BPS_DELETED  = 0x0001,  
-   BPS_DISABLED = 0x0002,  
-   BPS_ENABLED  = 0x0003  
-};  
-```  
-  
-## <a name="members"></a>成員  
- BPS_NONE  
- 指定任何中斷點存在。  
-  
- BPS_DELETED  
- 指定已刪除的中斷點。  
-  
- BPS_DISABLED  
- 指定停用中斷點。  
-  
- BPS_ENABLED  
- 指定啟用中斷點。  
-  
-## <a name="remarks"></a>備註  
- 傳回從[GetState](../../../extensibility/debugger/reference/idebugboundbreakpoint2-getstate.md)方法。  
-  
-## <a name="requirements"></a>需求  
- 標頭： msdbg.h  
-  
- 命名空間:Microsoft.VisualStudio.Debugger.Interop  
-  
- 組件︰Microsoft.VisualStudio.Debugger.Interop.dll  
-  
-## <a name="see-also"></a>另請參閱  
- [列舉型別](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
- [GetState](../../../extensibility/debugger/reference/idebugboundbreakpoint2-getstate.md)
+指定的繫結中斷點存在，也會指定是否已啟用。
+
+## <a name="syntax"></a>語法
+
+```cpp
+enum enum_BP_STATE {
+    BPS_NONE     = 0x0000,
+    BPS_DELETED  = 0x0001,
+    BPS_DISABLED = 0x0002,
+    BPS_ENABLED  = 0x0003
+};
+typedef DWORD BP_STATE;
+```
+
+```csharp
+public enum enum_BP_STATE {
+    BPS_NONE     = 0x0000,
+    BPS_DELETED  = 0x0001,
+    BPS_DISABLED = 0x0002,
+    BPS_ENABLED  = 0x0003
+};
+```
+
+## <a name="members"></a>成員
+BPS_NONE  
+指定任何中斷點存在。
+
+BPS_DELETED  
+指定已刪除的中斷點。
+
+BPS_DISABLED  
+指定停用中斷點。
+
+BPS_ENABLED  
+指定啟用中斷點。
+
+## <a name="remarks"></a>備註
+傳回從[GetState](../../../extensibility/debugger/reference/idebugboundbreakpoint2-getstate.md)方法。
+
+## <a name="requirements"></a>需求
+標頭： msdbg.h
+
+命名空間：Microsoft.VisualStudio.Debugger.Interop
+
+組件︰Microsoft.VisualStudio.Debugger.Interop.dll
+
+## <a name="see-also"></a>另請參閱
+[列舉](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
+[GetState](../../../extensibility/debugger/reference/idebugboundbreakpoint2-getstate.md)
