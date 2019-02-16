@@ -13,74 +13,74 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1c87d89a16feec72c795f81f1b11f5344917a18c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 51bd7d649be51c2cc48c643cba10ef1cc90446d2
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55024015"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56316971"
 ---
 # <a name="idebugboundbreakpoint2getpendingbreakpoint"></a>IDebugBoundBreakpoint2::GetPendingBreakpoint
-取得從中建立指定的繫結的中斷點暫止中斷點。  
-  
-## <a name="syntax"></a>語法  
-  
-```cpp  
-HRESULT GetPendingBreakpoint(   
-   IDebugPendingBreakpoint2** ppPendingBreakpoint  
-);  
-```  
-  
-```csharp  
-int GetPendingBreakpoint(   
-   out IDebugPendingBreakpoint2 ppPendingBreakpoint  
-);  
-```  
-  
-#### <a name="parameters"></a>參數  
- `ppPendingBreakpoint`  
- [out]傳回[IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)物件，表示用來建立這個暫止中斷點繫結中斷點。  
-  
-## <a name="return-value"></a>傳回值  
- 如果成功，則傳回`S_OK`; 否則傳回錯誤碼。  
-  
-## <a name="remarks"></a>備註  
- 暫止中斷點可以視為將中斷點繫結至可套用至一或多個程式的程式碼所需的所有必要資訊的集合。  
-  
-## <a name="example"></a>範例  
- 下列範例示範如何實作這個方法來簡單`CBoundBreakpoint`公開的物件[IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)介面。  
-  
-```  
-HRESULT CBoundBreakpoint::GetPendingBreakpoint(  
-    IDebugPendingBreakpoint2** ppPendingBreakpoint)  
-{    
-   HRESULT hr;    
-  
-   // Check for valid IDebugPendingBreakpoint2 interface pointer.    
-   if (ppPendingBreakpoint)    
-   {    
-      // Be sure that the bound breakpoint has not been deleted. If  
-      // deleted, then return hr = E_BP_DELETED.    
-      if (m_state != BPS_DELETED)    
-      {    
-         // Query for the IDebugPendingBreakpoint2 interface.    
-         hr = m_pPendingBP->QueryInterface(IID_IDebugPendingBreakpoint2,  
-                                           (void**)ppPendingBreakpoint);    
-      }    
-      else    
-      {    
-         hr = E_BP_DELETED;    
-      }    
-   }    
-   else    
-   {    
-      hr = E_INVALIDARG;    
-   }    
-  
-   return hr;    
-}    
-```  
-  
-## <a name="see-also"></a>另請參閱  
- [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)   
- [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)
+取得從中建立指定的繫結的中斷點暫止中斷點。
+
+## <a name="syntax"></a>語法
+
+```cpp
+HRESULT GetPendingBreakpoint( 
+    IDebugPendingBreakpoint2** ppPendingBreakpoint
+);
+```
+
+```csharp
+int GetPendingBreakpoint( 
+    out IDebugPendingBreakpoint2 ppPendingBreakpoint
+);
+```
+
+#### <a name="parameters"></a>參數
+`ppPendingBreakpoint`  
+[out]傳回[IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)物件，表示用來建立這個暫止中斷點繫結中斷點。
+
+## <a name="return-value"></a>傳回值
+如果成功，則傳回`S_OK`; 否則傳回錯誤碼。
+
+## <a name="remarks"></a>備註
+暫止中斷點可以視為將中斷點繫結至可套用至一或多個程式的程式碼所需的所有必要資訊的集合。
+
+## <a name="example"></a>範例
+下列範例示範如何實作這個方法來簡單`CBoundBreakpoint`公開的物件[IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)介面。
+
+```
+HRESULT CBoundBreakpoint::GetPendingBreakpoint(
+    IDebugPendingBreakpoint2** ppPendingBreakpoint)
+{
+    HRESULT hr;
+
+    // Check for valid IDebugPendingBreakpoint2 interface pointer.
+    if (ppPendingBreakpoint)
+    {
+        // Be sure that the bound breakpoint has not been deleted. If
+        // deleted, then return hr = E_BP_DELETED.
+        if (m_state != BPS_DELETED)
+        {
+            // Query for the IDebugPendingBreakpoint2 interface.
+            hr = m_pPendingBP->QueryInterface(IID_IDebugPendingBreakpoint2,
+                                              (void**)ppPendingBreakpoint);
+        }
+        else
+        {
+            hr = E_BP_DELETED;
+        }
+    }
+    else
+    {
+        hr = E_INVALIDARG;
+    }
+
+    return hr;
+}
+```
+
+## <a name="see-also"></a>另請參閱
+[IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)  
+[IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)

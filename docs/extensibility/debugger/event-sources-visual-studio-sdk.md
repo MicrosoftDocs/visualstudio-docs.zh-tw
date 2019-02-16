@@ -10,67 +10,67 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3d141deacd987155a5af947eeb0dcc2b5ae05e44
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a84b12973ebfb86d516d2c9b13108d6b118f7507
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55069040"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56315634"
 ---
 # <a name="event-sources-visual-studio-sdk"></a>事件來源 (Visual Studio SDK)
-有兩個來源的事件： 偵錯引擎 (DE) 和工作階段進行偵錯管理員 (SDM)。 從裝置傳送的事件會有非 NULL 引擎，而從 SDM 傳送事件都有 NULL 引擎。  
-  
-## <a name="example"></a>範例  
- 下列範例示範如何將傳送**IDebugProgramCreateEvent2**從以 SDM DE。  
-  
-```csharp  
-CDebugProgramCreateEvent* pProgramCreateEvent = new CDebugProgramCreateEvent();  
-if (FAILED(pCallback->Event(m_pEngine, NULL, m_pProgram, NULL, pProgramCreateEvent, IID_IDebugProgramCreateEvent2, EVENT_ASYNCHRONOUS)))  
-{  
-   // Handle failure here.  
-}  
-]  
-  
-CEvent * pProgCreate = new CEvent(IID_IDebugProgramCreateEvent2, EVENT_ASYNCHRONOUS);    
-pProgCreate->SendEvent(pCallback, m_pEngine, (IDebugProgram2 *)this, NULL);  
-  
-HRESULT CEvent::SendEvent(IDebugEventCallback2 *pCallback, IDebugEngine2 *pEngine, IDebugProgram2 *pProgram, IDebugThread2 *pThread) {    
-   HRESULT hr;    
-  
-   if (m_dwAttrib & EVENT_STOPPING)    
-   {    
-      hr = SendStoppingEvent(pCallback, pEngine, pProgram, pThread);    
-   }    
-   else if (m_dwAttrib & EVENT_SYNCHRONOUS)    
-   {    
-      hr = SendSynchronousEvent(pCallback, pEngine, pProgram, pThread);    
-   }    
-   else    
-   {    
-      assert(m_dwAttrib == 0);    
-      hr = SendAsynchronousEvent(pCallback, pEngine, pProgram, pThread);    
-   }    
-  
-   return hr;    
-}    
-  
-HRESULT CEvent::SendAsynchronousEvent(IDebugEventCallback2 *pCallback, IDebugEngine2 *pEngine, IDebugProgram2 *pProgram, IDebugThread2 *pThread) {    
-  
-    HRESULT hr;    
-  
-   // Make sure the CEvent object running this code is not deleted until the code completes.    
-   AddRef();    
-  
-   pCallback->Event(pEngine, NULL, pProgram, pThread, (IDebugEvent2 *)this, m_riid, m_dwAttrib);    
-  
-   // No error recovery here.    
-   hr = S_OK;     
-  
-   Release();    
-   return hr;    
-}  
-  
-```  
-  
-## <a name="see-also"></a>另請參閱  
- [傳送事件](../../extensibility/debugger/sending-events.md)
+有兩個來源的事件： 偵錯引擎 (DE) 和工作階段進行偵錯管理員 (SDM)。 從裝置傳送的事件會有非 NULL 引擎，而從 SDM 傳送事件都有 NULL 引擎。
+
+## <a name="example"></a>範例
+下列範例示範如何將傳送**IDebugProgramCreateEvent2**從以 SDM DE。
+
+```csharp
+CDebugProgramCreateEvent* pProgramCreateEvent = new CDebugProgramCreateEvent();
+if (FAILED(pCallback->Event(m_pEngine, NULL, m_pProgram, NULL, pProgramCreateEvent, IID_IDebugProgramCreateEvent2, EVENT_ASYNCHRONOUS)))
+{
+    // Handle failure here.
+}
+]
+
+CEvent * pProgCreate = new CEvent(IID_IDebugProgramCreateEvent2, EVENT_ASYNCHRONOUS);
+pProgCreate->SendEvent(pCallback, m_pEngine, (IDebugProgram2 *)this, NULL);
+
+HRESULT CEvent::SendEvent(IDebugEventCallback2 *pCallback, IDebugEngine2 *pEngine, IDebugProgram2 *pProgram, IDebugThread2 *pThread) {
+    HRESULT hr;
+
+    if (m_dwAttrib & EVENT_STOPPING)
+    {
+        hr = SendStoppingEvent(pCallback, pEngine, pProgram, pThread);
+    }
+    else if (m_dwAttrib & EVENT_SYNCHRONOUS)
+    {
+        hr = SendSynchronousEvent(pCallback, pEngine, pProgram, pThread);
+    }
+    else
+    {
+        assert(m_dwAttrib == 0);
+        hr = SendAsynchronousEvent(pCallback, pEngine, pProgram, pThread);
+    }
+
+    return hr;
+}
+
+HRESULT CEvent::SendAsynchronousEvent(IDebugEventCallback2 *pCallback, IDebugEngine2 *pEngine, IDebugProgram2 *pProgram, IDebugThread2 *pThread) {
+
+    HRESULT hr;
+
+    // Make sure the CEvent object running this code is not deleted until the code completes.
+    AddRef();
+
+    pCallback->Event(pEngine, NULL, pProgram, pThread, (IDebugEvent2 *)this, m_riid, m_dwAttrib);
+
+    // No error recovery here.
+    hr = S_OK;
+
+    Release();
+    return hr;
+}
+
+```
+
+## <a name="see-also"></a>另請參閱
+[傳送事件](../../extensibility/debugger/sending-events.md)

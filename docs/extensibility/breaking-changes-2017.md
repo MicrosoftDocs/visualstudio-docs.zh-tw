@@ -8,16 +8,16 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8a862d3da21d082c65e742bdd69851121f5b463e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 978e4d2717d1275c00305e2eadda289a9e257912
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55012267"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56318741"
 ---
 # <a name="changes-in-visual-studio-2017-extensibility"></a>在 Visual Studio 2017 擴充性的變更
 
-使用 Visual Studio 2017 時，我們提供[更快速、 輕量的 Visual Studio 安裝經驗](https://blogs.msdn.microsoft.com/visualstudio/2016/04/01/faster-leaner-visual-studio-installer)縮減 Visual Studio 的影響，使用者在系統上，同時讓使用者透過工作負載和功能的更佳的選擇所安裝。 若要支援這些增強功能，我們已對擴充性模型進行變更，並一些突破性的變革對 Visual Studio 擴充性。 本文件將說明這些變更，以及做什麼來解決問題的技術詳細資料。 請注意部分資訊是時間點實作詳細資料，而且稍後可能會變更。
+使用 Visual Studio 2017 時，我們提供[更快速、 輕量的 Visual Studio 安裝經驗](https://devblogs.microsoft.com/visualstudio/faster-leaner-visual-studio-installer)縮減 Visual Studio 的影響，使用者在系統上，同時讓使用者透過工作負載和功能的更佳的選擇所安裝。 若要支援這些增強功能，我們已對擴充性模型進行變更，並一些突破性的變革對 Visual Studio 擴充性。 本文件將說明這些變更，以及做什麼來解決問題的技術詳細資料。 請注意部分資訊是時間點實作詳細資料，而且稍後可能會變更。
 
 ## <a name="changes-affecting-vsix-format-and-installation"></a>變更會影響的 VSIX 格式和安裝
 
@@ -28,7 +28,7 @@ VSIX 格式所做變更包括：
 * 安裝程式必要條件的宣告。 若要履行承諾的輕量型、 快速安裝 Visual Studio，安裝程式現在會對使用者提供更多組態選項。 如此一來，若要確保安裝的功能和擴充功能所需的元件，延伸模組必須宣告其相依性。
   * Visual Studio 2017 安裝程式將會自動提供要取得並安裝必要元件，以使用者做為安裝延伸模組的一部分。
   * 嘗試安裝不是使用新的 VSIX v3 格式，即使它們已經標示為目標版本 15.0 其資訊清單中的延伸模組時，也會警告使用者。
-* VSIX 格式的增強的功能。 履行[低影響安裝](https://blogs.msdn.microsoft.com/visualstudio/2016/04/25/anatomy-of-a-low-impact-visual-studio-install)也支援並排顯示安裝的 Visual studio，我們不會再將大部分的設定資料儲存至系統登錄中，移出 GAC 的 Visual Studio 特定組件。 我們也會增加的功能的 VSIX 格式和 VSIX 安裝引擎，可讓您使用它而 MSI 或 EXE 安裝您的擴充功能，某些安裝類型。
+* VSIX 格式的增強的功能。 履行[低影響安裝](https://devblogs.microsoft.com/visualstudio/anatomy-of-a-low-impact-visual-studio-install)也支援並排顯示安裝的 Visual studio，我們不會再將大部分的設定資料儲存至系統登錄中，移出 GAC 的 Visual Studio 特定組件。 我們也會增加的功能的 VSIX 格式和 VSIX 安裝引擎，可讓您使用它而 MSI 或 EXE 安裝您的擴充功能，某些安裝類型。
 
   新功能包括：
 

@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 10acf356ccfc790f9dd6a185c12a6ec5c26cccd3
-ms.sourcegitcommit: 0342f99120fbd603b8f06f7e9166c39f2896827a
+ms.openlocfilehash: c6382d4b75d24d88e9fb93b2cf46386392458ebb
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/05/2019
-ms.locfileid: "55742468"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56316171"
 ---
 # <a name="extend-the-output-window"></a>擴充 [輸出] 視窗
 **輸出**視窗是一組讀取/寫入文字窗格。 Visual Studio 有這些內建的窗格：**建置**，在哪些專案通訊相關的組建中，訊息和**一般**，在其中[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]會傳達有關 IDE 的訊息。 專案取得參照**建置**窗格自動透過<xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildableProjectCfg>介面方法和 Visual Studio 提供直接存取**一般**窗格中的透過<xref:Microsoft.VisualStudio.Shell.Interop.SVsGeneralOutputWindowPane>服務。 除了內建的窗格中，您可以建立和管理您自己自訂的窗格。  
@@ -153,7 +153,7 @@ void DeletePane(Guid paneGuid)
  此範例示範如何取得內建**一般**窗格**輸出**視窗。  
   
 ```csharp  
-void GetGeneralPane()  
+IVsOutputWindowPane GetGeneralPane()  
 {  
     return (IVsOutputWindowPane)GetService(  
         typeof(SVsGeneralOutputWindowPane));  
