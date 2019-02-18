@@ -9,17 +9,16 @@ ms.assetid: 03ff1146-706e-4780-91cb-56a83df63eea
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 12b09ee0e0767ad98a27387e7caf79425320598b
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 27c2677b8afef1f1e2cd035acb3038b42a4ef56d
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55009748"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55948598"
 ---
-# <a name="walkthrough-customize-the-insert-update-and-delete-behavior-of-entity-classes"></a>逐步解說：自訂實體類別的插入、更新和刪除行為
+# <a name="walkthrough-customize-the-insert-update-and-delete-behavior-of-entity-classes"></a>逐步解說： 自訂插入、 更新和刪除行為的實體類別
 
 [在 Visual Studio 中的 LINQ to SQL 工具](../data-tools/linq-to-sql-tools-in-visual-studio2.md)提供視覺化設計介面建立和編輯 LINQ to SQL 類別 （實體類別） 為基礎的資料庫中的物件。 藉由使用[LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)，您可以使用 LINQ 技術來存取 SQL 資料庫。 如需詳細資訊，請參閱 [LINQ (Language-Integrated Query)](/dotnet/csharp/linq/)。
 
@@ -103,7 +102,7 @@ ms.locfileid: "55009748"
      會建立名為 **Customer** 的實體類別。 它的屬性會對應至 Customers 資料表中的各資料行。 因為這個實體類別代表 Customers 資料表中的單一客戶，所以其名稱為 **Customer** (而非 **Customers**)。
 
     > [!NOTE]
-    > 此重新命名的行為稱為「複數表示」。 它可以開啟或關閉在中開啟[[選項] 對話方塊](../ide/reference/options-dialog-box-visual-studio.md)。 如需詳細資訊，請參閱[＜How to：開啟和關閉複數表示 (O/R 設計工具)](../data-tools/how-to-turn-pluralization-on-and-off-o-r-designer.md)。
+    > 此重新命名的行為稱為「複數表示」。 它可以開啟或關閉在中開啟[[選項] 對話方塊](../ide/reference/options-dialog-box-visual-studio.md)。 如需詳細資訊，請參閱 <<c0> [ 如何： 開啟和關閉 （O/R 設計工具） 的複數表示](../data-tools/how-to-turn-pluralization-on-and-off-o-r-designer.md)。
 
 3.  按一下 [建置] 功能表上的 [建置 UpdatingwithSProcsWalkthrough] 以建置專案。
 
@@ -233,7 +232,7 @@ ms.locfileid: "55009748"
 19. 按一下 [確定 **Deploying Office Solutions**]。
 
 > [!NOTE]
-> 雖然它不是本特定逐步解說的問題，值得注意的是，LINQ to SQL 會在插入期間處理資料庫產生的值，會自動針對識別 （自動遞增）、 rowguidcol (資料庫產生的 GUID) 和時間戳記資料行和更新。 其他資料行型別的資料庫產生值將非預期地產生 null 值。 若要傳回資料庫產生的值，您應該手動將 <xref:System.Data.Linq.Mapping.ColumnAttribute.IsDbGenerated%2A> 設定為 `true`，並將 <xref:System.Data.Linq.Mapping.ColumnAttribute.AutoSync%2A> 設定為下列其中一項：、 或 。[AutoSync.Always](<xref:System.Data.Linq.Mapping.AutoSync.Always>)， [AutoSync.OnInsert](<xref:System.Data.Linq.Mapping.AutoSync.OnInsert>)，或[AutoSync.OnUpdate](<xref:System.Data.Linq.Mapping.AutoSync.OnUpdate>)。
+> 雖然它不是本特定逐步解說的問題，值得注意的是，LINQ to SQL 會在插入期間處理資料庫產生的值，會自動針對識別 （自動遞增）、 rowguidcol (資料庫產生的 GUID) 和時間戳記資料行和更新。 其他資料行型別的資料庫產生值將非預期地產生 null 值。 若要傳回資料庫產生的值，您應該手動設定<xref:System.Data.Linq.Mapping.ColumnAttribute.IsDbGenerated%2A>來`true`並<xref:System.Data.Linq.Mapping.ColumnAttribute.AutoSync%2A>的下列其中一個： [AutoSync.Always](<xref:System.Data.Linq.Mapping.AutoSync.Always>)， [AutoSync.OnInsert](<xref:System.Data.Linq.Mapping.AutoSync.OnInsert>)，或[AutoSync.OnUpdate](<xref:System.Data.Linq.Mapping.AutoSync.OnUpdate>)。
 
 ## <a name="test-the-application"></a>測試應用程式
 
@@ -274,6 +273,6 @@ ms.locfileid: "55009748"
 
 - [Visual Studio 中的 LINQ to SQL 工具](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [DataContext 方法](../data-tools/datacontext-methods-o-r-designer.md)
-- [如何：指派用來執行更新、插入和刪除的預存程序](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)
+- [如何： 指定用來執行更新、 插入和刪除的預存程序](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)
 - [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)
 - [LINQ to SQL 查詢](/dotnet/framework/data/adonet/sql/linq/linq-to-sql-queries)

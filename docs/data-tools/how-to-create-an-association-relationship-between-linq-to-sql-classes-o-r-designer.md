@@ -6,17 +6,16 @@ ms.assetid: 56133e65-81f3-44c3-bc28-ffdd0671a0d2
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: ab66f41a6510eb8cf2376cb7bb4d6fa21e7b1159
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 21043571f60c13ed7be38f0af8f4208fc54b75a0
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55001326"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55907785"
 ---
-# <a name="how-to-create-an-association-between-linq-to-sql-classes-or-designer"></a>HOW TO：建立 LINQ to SQL 類別 （O/R 設計工具） 之間的關聯
+# <a name="how-to-create-an-association-between-linq-to-sql-classes-or-designer"></a>如何： 建立 LINQ to SQL 類別 （O/R 設計工具） 之間的關聯
 [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] 中實體類別 (Class) 之間的關聯，與資料庫中資料表之間的關聯性 (Relationship) 類似。 您可以使用 [關聯編輯器] 對話方塊建立實體類別之間的關聯。
 
 使用 [關聯編輯器] 對話方塊建立關聯時，必須選取父類別和子類別。 父類別是包含主索引鍵的實體類別，而子類別是包含外部索引鍵的實體類別。 比方說，如果已建立實體類別對應至`Northwind Customers`並`Orders`資料表`Customer`類別會是父類別和`Order`類別會是子類別。
@@ -27,7 +26,7 @@ ms.locfileid: "55001326"
 ## <a name="association-properties"></a>關聯屬性
 建立關聯之後，當您在 [O/R 設計工具] 中選取該關聯時，[屬性] 視窗中會出現一些可設定的屬性。 (關聯就是相關類別之間的線條)。下表提供關聯屬性的說明。
 
-|屬性|說明|
+|屬性|描述|
 |--------------|-----------------|
 |**基數**|控制關聯是一對多還是一對一。|
 |**子屬性**|指定是否要在父代 (Parent) 上建立屬性，這個屬性是位於關聯的外部索引鍵端上之子記錄的集合或參考。 例如，在之間的關聯`Customer`並`Order`，如果**子屬性**設為 **，則為 True**，名為的屬性`Orders`父類別上會建立。|
@@ -50,7 +49,7 @@ ms.locfileid: "55001326"
 ## <a name="see-also"></a>另請參閱
 
 - [Visual Studio 中的 LINQ to SQL 工具](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
-- [逐步解說：建立 LINQ to SQL 類別](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)
+- [逐步解說： 建立 LINQ to SQL 類別](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)
 - [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)
 - [DataContext 方法 (O/R 設計工具)](../data-tools/datacontext-methods-o-r-designer.md)
 - [如何：表示主索引鍵](/dotnet/framework/data/adonet/sql/linq/how-to-represent-primary-keys)

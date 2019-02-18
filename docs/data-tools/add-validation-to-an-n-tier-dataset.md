@@ -13,20 +13,19 @@ ms.assetid: 34ce4db6-09bb-4b46-b435-b2514aac52d3
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 25c80b145db83053edcbdb8f03f4eb703e201974
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: be8d02837f0abd7bfed0407ce31fe9cbeecd76a4
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54957503"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55940317"
 ---
 # <a name="add-validation-to-an-n-tier-dataset"></a>將驗證新增至多層式架構 (N-Tier) 資料集
 將驗證新增至資料集分割為多層式架構方案基本上是將驗證新增至單一檔案的資料集 （必須在單一專案中的資料集） 相同。 在資料上執行驗證的建議的位置是期間<xref:System.Data.DataTable.ColumnChanging>及/或<xref:System.Data.DataTable.RowChanging>事件資料表的資料。
 
- 資料集提供功能，以建立部分類別，您可以新增使用者程式碼的資料表在資料集中的資料行和資料列變更事件。 如需有關如何將程式碼新增至多層式架構方案中的資料集的詳細資訊，請參閱[程式碼加入 n-tier 應用程式中的資料集](../data-tools/add-code-to-datasets-in-n-tier-applications.md)，並[程式碼加入多層式架構應用程式中的 Tableadapter](../data-tools/add-code-to-tableadapters-in-n-tier-applications.md)。 如需部分類別的詳細資訊，請參閱[How to:將類別分割成部分類別 （類別設計工具）](../ide/class-designer/how-to-split-a-class-into-partial-classes.md)或是[部分類別和方法](/dotnet/csharp/programming-guide/classes-and-structs/partial-classes-and-methods)。
+ 資料集提供功能，以建立部分類別，您可以新增使用者程式碼的資料表在資料集中的資料行和資料列變更事件。 如需有關如何將程式碼新增至多層式架構方案中的資料集的詳細資訊，請參閱[程式碼加入 n-tier 應用程式中的資料集](../data-tools/add-code-to-datasets-in-n-tier-applications.md)，並[程式碼加入多層式架構應用程式中的 Tableadapter](../data-tools/add-code-to-tableadapters-in-n-tier-applications.md)。 如需部分類別的詳細資訊，請參閱[如何： 將類別分割成部分類別 （類別設計工具）](../ide/class-designer/how-to-split-a-class-into-partial-classes.md)或是[部分類別和方法](/dotnet/csharp/programming-guide/classes-and-structs/partial-classes-and-methods)。
 
 > [!NOTE]
 >  當您分隔資料集與 Tableadapter 時 (藉由設定**資料集 Project**屬性)，將不會自動移動專案中的現有部份資料集類別。 現有的部分資料集類別必須手動將移至資料集專案。
@@ -54,7 +53,7 @@ End Sub
 
 #### <a name="to-add-validation-during-changes-to-individual-column-values"></a>若要在變更期間驗證加入個別的資料行值
 
-1.  按兩下以開啟資料集 *.xsd*中的檔案**方案總管 中**。 如需詳細資訊，請參閱[逐步解說：在 Dataset 設計工具中建立資料集](walkthrough-creating-a-dataset-with-the-dataset-designer.md)。
+1.  按兩下以開啟資料集 *.xsd*中的檔案**方案總管 中**。 如需詳細資訊，請參閱 <<c0> [ 逐步解說： 以 Dataset 設計工具建立資料集](walkthrough-creating-a-dataset-with-the-dataset-designer.md)。
 
 2.  按兩下您想要驗證的資料行。 這個動作會建立<xref:System.Data.DataTable.ColumnChanging>事件處理常式。
 
@@ -110,7 +109,7 @@ End Sub
 
 #### <a name="to-add-validation-during-changes-to-whole-rows"></a>將變更期間驗證新增至整個資料列
 
-1.  按兩下以開啟資料集 *.xsd*中的檔案**方案總管 中**。 如需詳細資訊，請參閱[逐步解說：在 Dataset 設計工具中建立資料集](walkthrough-creating-a-dataset-with-the-dataset-designer.md)。
+1.  按兩下以開啟資料集 *.xsd*中的檔案**方案總管 中**。 如需詳細資訊，請參閱 <<c0> [ 逐步解說： 以 Dataset 設計工具建立資料集](walkthrough-creating-a-dataset-with-the-dataset-designer.md)。
 
 2.  按兩下標題列的資料表設計工具上。
 

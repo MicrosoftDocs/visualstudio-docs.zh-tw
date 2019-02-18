@@ -5,18 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Visual Studio], Just-In-Time
 - Just-In-Time debugging
-ms.assetid: ee4d79a5-a1d2-4418-a93f-dd57a53e1836
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fbdf32377db26cdb3696187248bd9b8becb8de24
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a593548936b84f852015a09dd8f63f7fceb7472b
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53831546"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55921428"
 ---
 # <a name="debug-using-the-just-in-time-debugger-in-visual-studio"></a>在 Visual Studio 中使用 Just-In-Time 偵錯工具進行偵錯
 
@@ -56,7 +55,7 @@ ms.locfileid: "53831546"
 
 2.  在 [**登錄編輯程式**] 視窗中，找出並刪除下列登錄項目：
 
-    -   **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\\。NETFramework\DbgManagedDebugger**
+    -   **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\\.NETFramework\DbgManagedDebugger**
 
     -   **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\AeDebug\Debugger**
 
@@ -64,7 +63,7 @@ ms.locfileid: "53831546"
 
 3.  如果您的電腦執行 64 位元作業系統，也會刪除下列登錄項目：
 
-    -   **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\\。NETFramework\DbgManagedDebugger**
+    -   **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\\.NETFramework\DbgManagedDebugger**
 
     -   **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows NT\CurrentVersion\AeDebug\Debugger**
 
@@ -105,7 +104,7 @@ ms.locfileid: "53831546"
 
 針對此範例中，您將建立C#會擲回的 Visual Studio 中的主控台應用程式[NullReferenceException](/dotnet/api/system.nullreferenceexception)。
 
-1. 在 Visual Studio 中建立C#主控台應用程式 (**檔案** > **新增** > **專案** > **Visual C#**   > **主控台應用程式**) 名為*ThrowsNullException*。 如需在 Visual Studio 中建立專案的詳細資訊，請參閱[逐步解說：建立簡單的應用程式](/visualstudio/get-started/csharp/tutorial-wpf)
+1. 在 Visual Studio 中建立C#主控台應用程式 (**檔案** > **新增** > **專案** > **Visual C#**   > **主控台應用程式**) 名為*ThrowsNullException*。 如需在 Visual Studio 中建立專案的詳細資訊，請參閱[逐步解說： 建立簡單的應用程式](/visualstudio/get-started/csharp/tutorial-wpf)。
    
 1. 當專案開啟時 Visual Studio 中時，開啟*Program.cs*檔案。 取代為下列程式碼，這會列印到主控台一行，然後擲回 NullReferenceException 的 main （） 方法：
    
@@ -159,7 +158,7 @@ ms.locfileid: "53831546"
 
   - **HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\Windows 錯誤報告**
     
-  - （適用於 64 位元電腦）：**HKEY_LOCAL_MACHINE\Software\WOW6432Node\Microsoft\Windows\Windows 錯誤報告**
+  - （適用於 64 位元電腦）： **HKEY_LOCAL_MACHINE\Software\WOW6432Node\Microsoft\Windows\Windows 錯誤報告**
   
   如需詳細資訊，請參閱[。WER 設定](https://docs.microsoft.com/windows/desktop/wer/wer-settings)。
   
@@ -170,7 +169,7 @@ ms.locfileid: "53831546"
   
   - **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\AeDebug**
     
-  - （適用於 64 位元電腦）：**HKEY_LOCAL_MACHINE\Software\WOW6432Node\Microsoft\Windows NT\CurrentVersion\AeDebug**
+  - （適用於 64 位元電腦）： **HKEY_LOCAL_MACHINE\Software\WOW6432Node\Microsoft\Windows NT\CurrentVersion\AeDebug**
 
 您可能會看到下列錯誤訊息在 Just In Time 期間偵錯：
 
@@ -193,7 +192,8 @@ ms.locfileid: "53831546"
     若要修正此問題，請重新安裝或修復您安裝 Visual Studio 中使用 Visual Studio 安裝程式。
 
 ## <a name="see-also"></a>另請參閱
+
 - [偵錯工具安全性](../debugger/debugger-security.md)
 - [偵錯工具簡介](../debugger/debugger-feature-tour.md)
 - [選項、 偵錯，Just In Time 對話方塊](../debugger/just-in-time-debugging-options-dialog-box.md)
-- [安全性警告：附加至未受信任的使用者所擁有的處理序可能會造成危險。如果下面的資訊看起來有問題，或者您並不確定，請不要附加至此處理序](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md)
+- [安全性警告︰附加至未受信任的使用者所擁有的處理序可能會造成危險。如果下面的資訊看起來有問題，或者您並不確定，請不要附加至此處理序](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md)

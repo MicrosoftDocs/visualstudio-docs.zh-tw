@@ -1,22 +1,21 @@
 ---
-title: HOW TO：儲存和編輯連接字串
+title: 如何：儲存和編輯連接字串
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: f8ef3a2c-029c-423b-9d9e-a4f1add4f640
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 60253ada78391c48543e81093136da15e1446f91
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 1f8300043f9a16c7d92d72c4dcb22e4cd0432a06
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55000415"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55937548"
 ---
-# <a name="how-to-save-and-edit-connection-strings"></a>HOW TO：儲存和編輯連接字串
+# <a name="how-to-save-and-edit-connection-strings"></a>如何：儲存和編輯連接字串
 在 Visual Studio 應用程式中的連接字串儲存在應用程式組態檔 （也稱為應用程式設定），或硬式編碼直接在您的應用程式中。 將連接字串儲存至應用程式組態檔，可簡化應用程式維護工作。 如果需要變更連接字串，您可以在應用程式設定檔中更新它 (而不需要在原始程式碼中變更它並重新編譯應用程式)。
 
 在連接字串內儲存敏感性資訊 (如密碼) 會影響應用程式的安全性。 不會加密或混淆儲存至應用程式組態檔的連接字串，因此，可能會有人存取該檔案並檢視其內容。 使用 Windows 整合式安全性是控制資料庫存取的更安全方式。

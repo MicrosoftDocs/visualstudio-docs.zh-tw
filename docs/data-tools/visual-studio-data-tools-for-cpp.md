@@ -6,17 +6,16 @@ dev_langs:
 - CPP
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
+manager: jillfra
 ms.workload:
 - data-storage
 - cplusplus
-ms.openlocfilehash: b13b7e8e23367fe83afb9e3ccf1a081f369867af
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5157f1d6a851e0784e79dfbfe5b94aef0490a026
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53895476"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55930554"
 ---
 # <a name="visual-studio-data-tools-for-c"></a>適用於 C++ 的 Visual Studio 資料工具
 
@@ -24,7 +23,7 @@ ms.locfileid: "53895476"
 
 若要連接到 SQL database，ODBC 和 OLE DB 驅動程式和隨附於 Windows 而 ADO 提供者，可以使用原生 c + + 應用程式。 這些可以連線到任何資料庫，可支援這些介面。 ODBC 驅動程式是標準。 OLE DB 提供回溯相容性。 如需有關這些資料技術的詳細資訊，請參閱 < [Windows Data Access Components](/previous-versions/windows/desktop/ms692897(v=vs.85))。
 
-利用 SQL Server 2005 中的自訂功能和更新版本中，使用[SQL Server 原生用戶端](/sql/relational-databases/native-client/sql-server-native-client)。 原生用戶端也包含 SQL Server ODBC 驅動程式，並在單一原生動態連結程式庫 (DLL) 的 SQL Server OLE DB 提供者。 這些支援使用 Microsoft SQL server （ODBC、 OLE DB 和 ADO） 的原生程式碼 Api 應用程式。 SQL Server Native Client 會使用 SQL Server Data Tools 安裝。 程式設計指南位於這裡：[SQL Server 原生用戶端程式設計](/sql/relational-databases/native-client/sql-server-native-client-programming)。
+利用 SQL Server 2005 中的自訂功能和更新版本中，使用[SQL Server 原生用戶端](/sql/relational-databases/native-client/sql-server-native-client)。 原生用戶端也包含 SQL Server ODBC 驅動程式，並在單一原生動態連結程式庫 (DLL) 的 SQL Server OLE DB 提供者。 這些支援使用 Microsoft SQL server （ODBC、 OLE DB 和 ADO） 的原生程式碼 Api 應用程式。 SQL Server Native Client 會使用 SQL Server Data Tools 安裝。 程式設計指南已正式推出： [SQL Server 原生用戶端程式設計](/sql/relational-databases/native-client/sql-server-native-client-programming)。
 
 ## <a name="to-connect-to-localdb-through-odbc-and-sql-native-client-from-a-c-application"></a>從 c + + 應用程式連接到 localDB 透過 ODBC 和 SQL Native Client
 

@@ -6,15 +6,14 @@ ms.assetid: af32653c-f4e6-4217-8c5a-e32b322b4918
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: f0e95466baa4e16e4620ff387a11d4e723399a38
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a8df3d39e44bf1d40f3abfd4d6218d2c9a72b690
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54953389"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55935676"
 ---
 # <a name="data-class-inheritance-or-designer"></a>資料類別繼承 (O/R 設計工具)
 
@@ -28,7 +27,7 @@ ms.locfileid: "54953389"
 
 下表列出繼承屬性及其描述：
 
-|屬性|說明|
+|屬性|描述|
 |--------------|-----------------|
 |**鑑別子屬性**|這個屬性 (對應至資料行) 會判斷目前記錄所屬的類別。|
 |**基底類別鑑別子值**|這個值 (在指定為**鑑別子屬性**的資料行中) 會判斷記錄是否為基底類別。|
@@ -37,7 +36,7 @@ ms.locfileid: "54953389"
 
 建立使用繼承並對應至關聯式資料的物件模型在過程上較為複雜。 本主題提供設定繼承時，所需之基本概念和個別屬性的相關資訊。 下列主題提供更清楚的說明，如何設定的繼承**O/R Designer**。
 
-|主題|說明|
+|主題|描述|
 |-----------|-----------------|
 |[如何：使用 O/R 設計工具設定繼承](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md)|描述如何設定實體類別，透過使用單一資料表繼承**O/R Designer**。|
 |[逐步解說：使用單一資料表繼承建立 LINQ to SQL 類別 (O/R 設計工具)](../data-tools/walkthrough-creating-linq-to-sql-classes-by-using-single-table-inheritance-o-r-designer.md)|提供逐步指示如何設定實體類別，透過使用單一資料表繼承**O/R Designer**。|
@@ -45,6 +44,6 @@ ms.locfileid: "54953389"
 ## <a name="see-also"></a>另請參閱
 
 - [Visual Studio 中的 LINQ to SQL 工具](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
-- [逐步解說：建立 LINQ to SQL 類別 （O-R 設計工具）](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)
+- [逐步解說：建立 LINQ to SQL 類別 (O-R 設計工具)](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)
 - [逐步解說：使用單一資料表繼承建立 LINQ to SQL 類別 (O/R 設計工具)](../data-tools/walkthrough-creating-linq-to-sql-classes-by-using-single-table-inheritance-o-r-designer.md)
 - [快速入門](/dotnet/framework/data/adonet/sql/linq/getting-started)
