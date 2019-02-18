@@ -14,15 +14,14 @@ ms.assetid: 56a1fbff-c7e8-4187-a1c1-ffd17024bc1b
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: ed448c44b46098a6ccaa7ac1194acd76bd64c089
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 5fd3e7867b74c9dab923e91fd76424e88b309743
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54988905"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55931607"
 ---
 # <a name="create-lookup-tables-in-wpf-applications"></a>在 WPF 應用程式中建立查閱資料表
 
@@ -36,7 +35,7 @@ ms.locfileid: "54988905"
 
     -   資料集或實體資料模型。
 
-    -   WCF 資料服務，WCF 服務或 web 服務。 如需詳細資訊，請參閱[＜How to：連線至服務中的資料](../data-tools/how-to-connect-to-data-in-a-service.md)。
+    -   WCF 資料服務，WCF 服務或 web 服務。 如需詳細資訊，請參閱 <<c0> [ 如何： 連接到服務中的資料](../data-tools/how-to-connect-to-data-in-a-service.md)。
 
     -   物件。 如需詳細資訊，請參閱 <<c0> [ 繫結至 Visual Studio 中的物件](bind-objects-in-visual-studio.md)。
 
@@ -93,4 +92,4 @@ ms.locfileid: "54988905"
 
 - [將 WPF 控制項繫結至 Visual Studio 中的資料](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)
 - [在 WPF 應用程式中顯示相關資料](../data-tools/display-related-data-in-wpf-applications.md)
-- [逐步解說：在 WPF 應用程式中顯示相關資料](../data-tools/display-related-data-in-wpf-applications.md)
+- [逐步解說：顯示 WPF 應用程式中的相關資料](../data-tools/display-related-data-in-wpf-applications.md)

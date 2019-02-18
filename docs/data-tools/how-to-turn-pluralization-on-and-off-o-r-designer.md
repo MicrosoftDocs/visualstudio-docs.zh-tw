@@ -1,22 +1,21 @@
 ---
-title: HOW TO：開啟和關閉複數表示 (O/R 設計工具)
+title: 如何：開啟和關閉複數表示 (O-R 設計工具)
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 9b693bc3-303a-40a9-97ee-9cef5ca3ae81
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 3aeddaa1b3589857124e4658c758a52def896acd
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 51ca5704bae6d52bf6957b97ac01d2b587c05970
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54983569"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55943554"
 ---
-# <a name="how-to-turn-pluralization-on-and-off-or-designer"></a>HOW TO：開啟和關閉複數表示 (O/R 設計工具)
+# <a name="how-to-turn-pluralization-on-and-off-or-designer"></a>如何：開啟和關閉複數表示 (O/R 設計工具)
 根據預設，當您將資料庫物件具有名稱結尾為 s 或 ies 從拖曳**伺服器總管**或**資料庫總管**拖曳至[Visual Studio 中的 LINQ to SQL 工具](../data-tools/linq-to-sql-tools-in-visual-studio2.md)，產生的實體類別的名稱會從複數變更變為單數。 這是為了更正確地呈現具現化 (Instantiated) 的實體類別對應至單一筆記錄的情況。 例如，新增`Customers`資料表**O/R Designer**產生實體類別`Customer`因為類別會保留單一客戶的資料。
 
 > [!NOTE]

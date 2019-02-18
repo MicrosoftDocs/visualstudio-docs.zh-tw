@@ -1,5 +1,5 @@
 ---
-title: HOW TO：使用異動儲存資料
+title: 如何：使用交易儲存資料
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -14,17 +14,16 @@ ms.assetid: 8b835e8f-34a3-413d-9bb5-ebaeb87f1198
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: ecf63cc03af13cadb5791e2f0f5a058feedb8418
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 8d5d47cfc21b0aebef884fade422600be2beeb58
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54934071"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55924366"
 ---
-# <a name="how-to-save-data-by-using-a-transaction"></a>HOW TO：使用異動儲存資料
+# <a name="how-to-save-data-by-using-a-transaction"></a>如何：使用交易儲存資料
 
 將資料儲存在交易中的使用<xref:System.Transactions>命名空間。 使用<xref:System.Transactions.TransactionScope>參與的交易，會自動為您管理的物件。
 

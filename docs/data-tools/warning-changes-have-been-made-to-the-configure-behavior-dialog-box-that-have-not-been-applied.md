@@ -6,17 +6,16 @@ ms.assetid: ce5822dd-4f10-4c86-b707-7766837be216
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 9b892ab4566409f29506359d4655002877c9740e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 0526f08e1bbffb0a4dc8729e2b180ad9efe319ff
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54970210"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55936560"
 ---
-# <a name="warning-changes-have-been-made-to-the-configure-behavior-dialog-box-that-have-not-been-applied"></a>警告:尚未套用的設定行為對話方塊已經變更了
+# <a name="warning-changes-have-been-made-to-the-configure-behavior-dialog-box-that-have-not-been-applied"></a>警告：已對 [設定行為] 對話方塊進行變更，但是尚未套用變更
 
 警告。 尚未套用的設定行為對話方塊已經變更了。 是否要套用您的變更?
 

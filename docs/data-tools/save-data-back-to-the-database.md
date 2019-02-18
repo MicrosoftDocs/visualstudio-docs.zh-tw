@@ -17,16 +17,15 @@ helpviewer_keywords:
 ms.assetid: afe6cb8a-dc6a-428b-b07b-903ac02c890b
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
+manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: ef3d2b5fd9f5172a79daef185d7153905976ba88
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 31b41a9c18a9e055c9d144c7115d3673ee2e4443
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53989122"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55928656"
 ---
 # <a name="save-data-back-to-the-database"></a>將資料儲存回資料庫
 
@@ -42,13 +41,13 @@ ms.locfileid: "53989122"
 
 如果您熟悉 TableAdapters，您可以直接跳到其中一個主題：
 
-|主題|說明|
+|主題|描述|
 |-----------|-----------------|
 |[在資料庫中插入新的資料錄](../data-tools/insert-new-records-into-a-database.md)|如何執行更新，並將插入使用 Tableadapter 或命令的物件|
 |[使用 TableAdapter 更新資料](../data-tools/update-data-by-using-a-tableadapter.md)|如何執行與 Tableadapter 的更新|
 |[階層式更新](../data-tools/hierarchical-update.md)|如何從具有兩個或多個相關資料表的資料集執行的更新|
 |[處理並行例外狀況](../data-tools/handle-a-concurrency-exception.md)|如何處理例外狀況，當兩個使用者嘗試同時變更資料庫中相同的資料|
-|[如何：使用異動儲存資料](../data-tools/save-data-by-using-a-transaction.md)|如何將資料儲存在使用系統的交易。 Transactions 命名空間和 TransactionScope 物件|
+|[如何：使用交易儲存資料](../data-tools/save-data-by-using-a-transaction.md)|如何將資料儲存在使用系統的交易。 Transactions 命名空間和 TransactionScope 物件|
 |[儲存異動中的資料](../data-tools/save-data-in-a-transaction.md)|建立 Windows Forms 應用程式來示範儲存至資料庫在交易內資料的逐步解說|
 |[儲存資料至資料庫 (多個資料表)](../data-tools/save-data-to-a-database-multiple-tables.md)|如何編輯記錄，並將變更儲存回資料庫的多個資料表中|
 |[從物件中將資料儲存至資料庫](../data-tools/save-data-from-an-object-to-a-database.md)|如何將資料從物件，使用 TableAdapter DbDirect 方法不是資料庫的資料集傳遞|
@@ -73,22 +72,22 @@ ms.locfileid: "53989122"
 
 |DataRowVersion|目標資料集|來源資料集|
 | - | - | - |
-|原始|James Wilson|James C.Wilson|
-|目前|Jim Wilson|James C.Wilson|
+|原始|James Wilson|James C. Wilson|
+|目前|Jim Wilson|James C. Wilson|
 
 呼叫<xref:System.Data.DataSet.Merge%2A>方法的先前資料表上`preserveChanges=false targetDataset.Merge(sourceDataset)`會導致下列資料：
 
 |DataRowVersion|目標資料集|來源資料集|
 | - | - | - |
-|原始|James C.Wilson|James C.Wilson|
-|目前|James C.Wilson|James C.Wilson|
+|原始|James C. Wilson|James C. Wilson|
+|目前|James C. Wilson|James C. Wilson|
 
 呼叫<xref:System.Data.DataSet.Merge%2A>方法使用`preserveChanges = true targetDataset.Merge(sourceDataset, true)`會導致下列資料：
 
 |DataRowVersion|目標資料集|來源資料集|
 | - | - | - |
-|原始|James C.Wilson|James C.Wilson|
-|目前|Jim Wilson|James C.Wilson|
+|原始|James C. Wilson|James C. Wilson|
+|目前|Jim Wilson|James C. Wilson|
 
 > [!CAUTION]
 > 在 `preserveChanges = true`案例中，如果<xref:System.Data.DataSet.RejectChanges%2A>記錄，以在目標資料集上呼叫方法，則它會還原為原始資料，從*來源*資料集。 這表示，如果您嘗試更新原始資料來源與目標資料集，它可能無法以尋找要更新原始的資料列。 您可以防止並行存取違規，另一個資料集填入資料來源更新的記錄，然後再執行合併以防止並行存取違規。 （當另一位使用者已填入資料集之後，請修改資料來源中的記錄會發生並行存取違規）。
@@ -126,7 +125,7 @@ ms.locfileid: "53989122"
 
 下表詳細說明的可能值<xref:System.Data.DataRowState>列舉型別：
 
-|DataRowState 值|說明|
+|DataRowState 值|描述|
 | - |-----------------|
 |<xref:System.Data.DataRowState.Added>|資料列都已經加入項目成為<xref:System.Data.DataRowCollection>。 (此狀態中的資料列並未安裝對應的原始版本，因為它不存在時的最後一個<xref:System.Data.DataRow.AcceptChanges%2A>方法受呼叫時)。|
 |<xref:System.Data.DataRowState.Deleted>|使用刪除資料列<xref:System.Data.DataRow.Delete%2A>的<xref:System.Data.DataRow>物件。|
@@ -140,7 +139,7 @@ ms.locfileid: "53989122"
 
 下表詳細說明的可能值<xref:System.Data.DataRowVersion>列舉型別：
 
-|DataRowVersion 值|說明|
+|DataRowVersion 值|描述|
 | - |-----------------|
 |<xref:System.Data.DataRowVersion.Current>|目前版本的一筆記錄包含已自上次執行記錄的所有修改<xref:System.Data.DataRow.AcceptChanges%2A>呼叫。 如果已刪除資料列，則沒有目前的版本。|
 |<xref:System.Data.DataRowVersion.Default>|資料錄，如資料集結構描述或資料來源所定義的預設值。|
@@ -280,4 +279,4 @@ ms.locfileid: "53989122"
 - [使用 TableAdapter 更新資料](../data-tools/update-data-by-using-a-tableadapter.md)
 - [將控制項繫結至 Visual Studio 中的資料](../data-tools/bind-controls-to-data-in-visual-studio.md)
 - [驗證資料](validate-data-in-datasets.md)
-- [如何：新增、 修改及刪除實體 (WCF data services)](/dotnet/framework/data/wcf/how-to-add-modify-and-delete-entities-wcf-data-services)
+- [如何：新增、修改和刪除實體 (WCF 資料服務)](/dotnet/framework/data/wcf/how-to-add-modify-and-delete-entities-wcf-data-services)
