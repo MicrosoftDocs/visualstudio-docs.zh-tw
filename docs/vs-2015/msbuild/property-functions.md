@@ -12,10 +12,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 6ed61d1b65d03053859b5463b574432e0396449a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54758357"
 ---
 # <a name="property-functions"></a>屬性函式
@@ -189,7 +189,7 @@ ms.locfileid: "54758357"
   
  以下是 MSBuild 屬性函式的清單：  
   
-|函式簽章|說明|  
+|函式簽章|描述|  
 |------------------------|-----------------|  
 |double Add(double a, double b)|將兩個雙精度浮點數相加。|  
 |long Add(long a, long b)|將兩個長整數相加。|  

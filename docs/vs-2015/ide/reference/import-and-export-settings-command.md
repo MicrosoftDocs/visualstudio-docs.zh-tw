@@ -15,10 +15,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: b6b29179332920197960ebe3be71e5973bdc8fe9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54769447"
 ---
 # <a name="import-and-export-settings-command"></a>匯入和匯出設定命令
@@ -44,7 +44,7 @@ Tools.ImportandExportSettings [/export:filename | /import:filename | /reset]
  選擇性。 重設目前的設定。  
   
 ## <a name="remarks"></a>備註  
- 執行此命令而不使用切換參數，會開啟 [匯入和匯出設定精靈]。 如需詳細資訊，請參閱[＜How to：電腦與 Visual Studio 版本之間共用設定](http://msdn.microsoft.com/1131fb10-35c1-42da-9cd8-91aa3235b882)。  
+ 執行此命令而不使用切換參數，會開啟 [匯入和匯出設定精靈]。 如需詳細資訊，請參閱[如何：在電腦與 Visual Studio 版本之間共用設定](http://msdn.microsoft.com/1131fb10-35c1-42da-9cd8-91aa3235b882)。  
   
 ## <a name="example"></a>範例  
  下列命令會將目前的設定匯出至檔案 `MyFile.vssettings`。  

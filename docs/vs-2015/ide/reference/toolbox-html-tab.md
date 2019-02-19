@@ -16,10 +16,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: bd9b728ee8537f5668914f05f05481fd3fe56d92
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54780420"
 ---
 # <a name="toolbox-html-tab"></a>HTML 索引標籤、工具箱
@@ -32,7 +32,7 @@ ms.locfileid: "54780420"
   
 ## <a name="tasks"></a>工作  
   
--   [如何：管理 [工具箱] 視窗](http://msdn.microsoft.com/a022c3fe-298c-4a59-a48f-b050da90ebc2)  
+-   [如何：管理工具箱視窗](http://msdn.microsoft.com/a022c3fe-298c-4a59-a48f-b050da90ebc2)  
   
 -   [如何：操作工具箱索引標籤](http://msdn.microsoft.com/21285050-cadd-455a-b1f5-a2289a89c4db)  
   
@@ -42,7 +42,7 @@ ms.locfileid: "54780420"
  **指標**  
  ![ASP.NET Mobile 設計工具 HTML 網頁指標](../../ide/reference/media/vxpointer.gif "vxPointer")  
   
- 任何 [工具箱] 索引標籤開啟時，根據預設都會選取這個工具。 它無法予以刪除。 指標可讓您將物件拖曳至 [設計] 檢視介面、重新調整其大小，以及將它們重新置入頁面或表單上。 如需詳細資訊，請參閱[＜How to：管理工具箱視窗](http://msdn.microsoft.com/a022c3fe-298c-4a59-a48f-b050da90ebc2)和[How to:操作工具箱索引標籤](http://msdn.microsoft.com/21285050-cadd-455a-b1f5-a2289a89c4db)。  
+ 任何 [工具箱] 索引標籤開啟時，根據預設都會選取這個工具。 它無法予以刪除。 指標可讓您將物件拖曳至 [設計] 檢視介面、重新調整其大小，以及將它們重新置入頁面或表單上。 如需詳細資訊，請參閱[如何：管理工具箱視窗](http://msdn.microsoft.com/a022c3fe-298c-4a59-a48f-b050da90ebc2)和[如何：操作工具箱索引標籤](http://msdn.microsoft.com/21285050-cadd-455a-b1f5-a2289a89c4db)。  
   
  **輸入 (按鈕)**  
  ![HTML 網頁按鈕](../../ide/reference/media/vxbutton.gif "vxButton")  
@@ -55,7 +55,7 @@ ms.locfileid: "54780420"
 <input id="Button1" type="button" value="Button" name="Button1">  
 ```  
   
- 如需詳細資訊，請參閱 < [HTML Input 控制項](http://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de)， [HtmlInputButton 伺服器控制項宣告式語法](http://msdn.microsoft.com/99ccf7fb-7e2a-4ba1-bcd9-981b619a16aa)， [NIB:HOW TO：建立指令碼和編輯事件處理常式](http://msdn.microsoft.com/69d71d13-c68b-4ecd-869b-a42edf6d1f6d)， [ 按鈕 Web 伺服器控制項內容的對應](http://msdn.microsoft.com/library/66b3ce28-3b93-4f0a-951f-42fb5bb5fddf)， <xref:System.Web.UI.HtmlControls.HtmlInputButton>， <xref:System.Web.UI.HtmlControls.HtmlButton>，和<xref:System.Web.UI.WebControls.Button>。  
+ 如需詳細資訊，請參閱 < [HTML Input 控制項](http://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de)， [HtmlInputButton 伺服器控制項宣告式語法](http://msdn.microsoft.com/99ccf7fb-7e2a-4ba1-bcd9-981b619a16aa)， [NIB： 如何： 建立指令碼和編輯事件處理常式](http://msdn.microsoft.com/69d71d13-c68b-4ecd-869b-a42edf6d1f6d)， [按鈕 Web 伺服器控制項內容地圖](http://msdn.microsoft.com/library/66b3ce28-3b93-4f0a-951f-42fb5bb5fddf)， <xref:System.Web.UI.HtmlControls.HtmlInputButton>， <xref:System.Web.UI.HtmlControls.HtmlButton>，和<xref:System.Web.UI.WebControls.Button>。  
   
  **輸入 (重設)**  
  ![HTMLpageResetButton 螢幕擷取畫面](../../ide/reference/media/vxreset.gif "vxReset")  
@@ -126,7 +126,7 @@ ms.locfileid: "54780420"
 <input id="Password1" type="password" name="Password1">  
 ```  
   
- 如需詳細資訊，請參閱 < [HTML Input 控制項](http://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de)， [HtmlInputPassword 伺服器控制項宣告式語法](http://msdn.microsoft.com/df703dd0-1624-4e5a-a547-c97f2f331b9f)， [How to:為密碼輸入設定 TextBox Web 伺服器控制項](http://msdn.microsoft.com/library/5b5069f3-64a1-435a-aee6-da263f4e6310)，和[逐步解說：驗證使用者輸入，在 Web Form 頁面](http://msdn.microsoft.com/library/7141d6ba-34f3-410b-b5cd-2102a24cb436)。  
+ 如需詳細資訊，請參閱 [HTML Input 控制項](http://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de)、[HtmlInputPassword 伺服器控制項宣告式語法](http://msdn.microsoft.com/df703dd0-1624-4e5a-a547-c97f2f331b9f)、[如何：為密碼輸入設定 TextBox Web 伺服器控制項](http://msdn.microsoft.com/library/5b5069f3-64a1-435a-aee6-da263f4e6310)和[逐步解說：驗證 Web Forms 網頁中的使用者輸入](http://msdn.microsoft.com/library/7141d6ba-34f3-410b-b5cd-2102a24cb436)。  
   
 > [!IMPORTANT]
 >  如果您的應用程式傳輸使用者名稱和密碼，您應該設定網站使用安全通訊端層 (SSL) 來加密傳輸。 如需詳細資訊，請參閱 [IIS Operations Guide](http://go.microsoft.com/fwlink/?linkid=47856) (IIS 作業手冊) 中的 "Securing Connections with SSL" (保護與 SSL 的連線)。 此外，建議驗證所有使用者輸入。 如需詳細資訊，請參閱[驗證 ASP.NET 網頁中的使用者輸入](http://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461)。  
@@ -225,7 +225,7 @@ ms.locfileid: "54780420"
   
  您可以增加 size 屬性的值來建立多行 `select` 項目。  
   
- 如需詳細資訊，請參閱 < [HtmlSelect 伺服器控制項宣告式語法](http://msdn.microsoft.com/ee93bdec-b343-441a-a8ff-56ffcafe9ae5)， [NIB:HOW TO：建立指令碼和編輯事件處理常式](http://msdn.microsoft.com/69d71d13-c68b-4ecd-869b-a42edf6d1f6d)， [DropDownList Web 伺服器控制項概觀](http://msdn.microsoft.com/library/517dd1a4-8df3-4c9f-8c89-1549a1aee608)， [ListBox Web 伺服器控制項概觀](http://msdn.microsoft.com/library/c08ee025-787a-408d-858e-a4a5fdb61d97)， <xref:System.Web.UI.HtmlControls.HtmlSelect>，和<xref:System.Web.UI.WebControls.DropDownList>。  
+ 如需詳細資訊，請參閱 < [HtmlSelect 伺服器控制項宣告式語法](http://msdn.microsoft.com/ee93bdec-b343-441a-a8ff-56ffcafe9ae5)， [NIB： 如何： 建立指令碼和編輯事件處理常式](http://msdn.microsoft.com/69d71d13-c68b-4ecd-869b-a42edf6d1f6d)， [DropDownList Web 伺服器控制項概觀](http://msdn.microsoft.com/library/517dd1a4-8df3-4c9f-8c89-1549a1aee608)， [ListBox Web 伺服器控制項概觀](http://msdn.microsoft.com/library/c08ee025-787a-408d-858e-a4a5fdb61d97)， <xref:System.Web.UI.HtmlControls.HtmlSelect>，和<xref:System.Web.UI.WebControls.DropDownList>。  
   
  **水平尺規**  
  ![HTML 網頁水平尺規項目](../../ide/reference/media/vxhorizontal.gif "vxHorizontal")  

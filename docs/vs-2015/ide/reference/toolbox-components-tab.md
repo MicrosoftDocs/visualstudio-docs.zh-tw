@@ -12,17 +12,17 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 121474dcc7abcfb01ff992558f3ce0a245444e9f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54775884"
 ---
 # <a name="toolbox-components-tab"></a>元件索引標籤、工具箱
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
   
-顯示您可以新增至 [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] 和 [!INCLUDE[csprcs](../../includes/csprcs-md.md)] 設計工具的元件。 除了 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 隨附的 [!INCLUDE[dnprdnshort](../../includes/dnprdnshort-md.md)] 元件之外 (例如 <xref:System.Messaging.MessageQueue> 和 <xref:System.Diagnostics.EventLog> 元件)，您還可以將您自己的元件或協力廠商元件新增至這個索引標籤。如需詳細資訊，請參閱[＜How to：操作工具箱索引標籤](http://msdn.microsoft.com/21285050-cadd-455a-b1f5-a2289a89c4db)。  
+顯示您可以新增至 [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] 和 [!INCLUDE[csprcs](../../includes/csprcs-md.md)] 設計工具的元件。 除了 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 隨附的 [!INCLUDE[dnprdnshort](../../includes/dnprdnshort-md.md)] 元件之外 (例如 <xref:System.Messaging.MessageQueue> 和 <xref:System.Diagnostics.EventLog> 元件)，您還可以將您自己的元件或協力廠商元件新增至這個索引標籤。如需詳細資訊，請參閱[如何：操作工具箱索引標籤](http://msdn.microsoft.com/21285050-cadd-455a-b1f5-a2289a89c4db)。  
   
  若要顯示這個索引標籤，請從 [檢視] 功能表中選取 [工具箱]。 在 [工具箱] 中，選取 [元件] 索引標籤。  
   
@@ -42,7 +42,7 @@ ms.locfileid: "54775884"
  建立可用來與系統和自訂事件記錄檔互動的 <xref:System.Diagnostics.EventLog> 元件執行個體，包括將事件寫入記錄檔以及讀取記錄檔資料。 如需詳細資訊，請參閱 [EventLog 元件的簡介](http://msdn.microsoft.com/a2ba4f28-4b1a-435e-99ef-51b28e21f805)。  
   
  **FileSystemWatcher**  
- 建立 <xref:System.IO.FileSystemWatcher> 元件執行個體，以用來監視您具有存取權之任何目錄或檔案的變更。 如需詳細資訊，請參閱[＜How to：設定 FileSystemWatcher 元件執行個體](http://msdn.microsoft.com/2e628234-4951-4135-8a86-28b924070d50)。  
+ 建立 <xref:System.IO.FileSystemWatcher> 元件執行個體，以用來監視您具有存取權之任何目錄或檔案的變更。 如需詳細資訊，請參閱[如何：設定 FileSystemWatcher 元件執行個體](http://msdn.microsoft.com/2e628234-4951-4135-8a86-28b924070d50)。  
   
  **HelpProvider**  
  建立 `System.Windows.Forms.HelpProvider` 元件執行個體，以提供控制項的快顯畫面或線上說明。  

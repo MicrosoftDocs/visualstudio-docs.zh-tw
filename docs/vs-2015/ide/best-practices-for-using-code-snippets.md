@@ -13,10 +13,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 750d96442f59c29a8e565e6b57eda292656ad1f7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54770313"
 ---
 # <a name="best-practices-for-using-code-snippets"></a>使用程式碼片段的最佳作法
@@ -25,7 +25,7 @@ ms.locfileid: "54770313"
 程式碼片段中的程式碼只會顯示最基本的做法。 對於大部分的應用程式，此程式碼必須經過修改以符合應用程式。  
   
 ## <a name="handling-exceptions"></a>例外狀況處理  
- 一般來說，程式碼片段 Try…Catch 區塊會攔截並重新擲回所有例外狀況。 不過，這並不一定適用於您的專案。 對於每個例外狀況而言，有數種回應的方法。 如需範例，請參閱[如何：處理例外狀況使用 try/catch (C#程式設計指南)](http://msdn.microsoft.com/library/ca8e3773-980e-4767-8633-7408540e9818)並[試...Catch...Try...catch...finally 陳述式](http://msdn.microsoft.com/library/d6488026-ccb3-42b8-a810-0d97b9d6472b)。  
+ 一般來說，程式碼片段 Try…Catch 區塊會攔截並重新擲回所有例外狀況。 不過，這並不一定適用於您的專案。 對於每個例外狀況而言，有數種回應的方法。 如需範例，請參閱[如何：使用 try/catch 處理例外狀況 (C# 程式設計手冊)](http://msdn.microsoft.com/library/ca8e3773-980e-4767-8633-7408540e9818) 和 [Try...Catch...Finally 陳述式](http://msdn.microsoft.com/library/d6488026-ccb3-42b8-a810-0d97b9d6472b)。  
   
 ## <a name="file-locations"></a>檔案位置  
  當您調整應用程式的檔案位置時，請考慮下列事項：  

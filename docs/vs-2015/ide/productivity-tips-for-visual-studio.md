@@ -10,10 +10,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 096de590d49f5d09614bb9149ae6e5218f2ab7ec
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54785683"
 ---
 # <a name="productivity-tips-for-visual-studio"></a>使用 Visual Studio 提高產能的秘訣
@@ -79,13 +79,13 @@ ms.locfileid: "54785683"
 
      藍色方塊提供修正程式碼錯誤的建議。
 
-     圖 1：錯誤智慧標籤
+     圖 1︰錯誤智慧標籤
 
      ![錯誤智慧標籤建議](../ide/media/productivity-bluesmarttags.png "Productivity_BlueSmartTags")
 
      紅色方塊提供重構程式碼的建議。
 
-     圖 2：重構智慧標籤
+     圖 2︰程式碼重構智慧標籤
 
      ![重構智慧標籤建議](../ide/media/productivity-redsmarttags.png "Productivity_RedSmartTags")
 
@@ -115,7 +115,7 @@ ms.locfileid: "54785683"
 
 -   **尋找對話方塊、功能表命令和選項**。 在[選項對話方塊、環境、快速啟動](../ide/reference/quick-launch-environment-options-dialog-box.md)方塊中，輸入您要嘗試尋找之項目的關鍵字或片語。 例如，如果您輸入 `new project`，則會出現下列選項︰
 
-     圖 3：快速啟動 結果清單 `new project`
+     圖 3︰以 `new project`為關鍵字的 [快速啟動] 結果清單
 
      !['new project' 的快速啟動結果](../ide/media/productivity-quicklaunch.png "Productivity_QuickLaunch")
 
@@ -151,11 +151,11 @@ ms.locfileid: "54785683"
 
      若要釘選檔案，請選擇檔案的索引標籤，然後選擇 [切換固定狀態] 按鈕。
 
--   **將文件和視窗移至其他監視器**。 如果您在開發應用程式時使用多個螢幕，您可以透過將開啟於編輯器中的檔案移至其他螢幕，更輕鬆地編輯應用程式的某個部分。 您也可以將偵錯工具視窗等工具視窗移至其他監視器，並將文件和工具視窗停駐在一起以建立「浮動定位」。 如需詳細資訊，請參閱[＜How to：排列和固定視窗](../misc/how-to-arrange-and-dock-windows.md)。
+-   **將文件和視窗移至其他監視器**。 如果您在開發應用程式時使用多個螢幕，您可以透過將開啟於編輯器中的檔案移至其他螢幕，更輕鬆地編輯應用程式的某個部分。 您也可以將偵錯工具視窗等工具視窗移至其他監視器，並將文件和工具視窗停駐在一起以建立「浮動定位」。 如需詳細資訊，請參閱[如何：排列和停駐視窗](../misc/how-to-arrange-and-dock-windows.md)。
 
      您也可以建立另一個方案總管執行個體並移至其他監視器，更輕鬆地管理檔案。 若要建立另一個方案總管執行個體，請開啟方案總管中的捷徑功能表，然後選擇 [新增方案總管檢視]。
 
--   **自訂出現在 Visual Studio 中的字型**。 您可以為 IDE 中使用的文字變更字體、大小和色彩。 例如，您可以為編輯器裏的某一種程式碼項目自訂色彩，以及變更工具視窗或整個 IDE 的字體。 如需詳細資訊，請參閱[＜How to：變更字型和色彩](../ide/how-to-change-fonts-and-colors-in-visual-studio.md)及[如何：在編輯器中變更字型和色彩](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)。
+-   **自訂出現在 Visual Studio 中的字型**。 您可以為 IDE 中使用的文字變更字體、大小和色彩。 例如，您可以為編輯器裏的某一種程式碼項目自訂色彩，以及變更工具視窗或整個 IDE 的字體。 如需詳細資訊，請參閱[如何：變更字型和色彩](../ide/how-to-change-fonts-and-colors-in-visual-studio.md)和[如何：在編輯器中變更字型和顏色](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)。
 
 ## <a name="see-also"></a>請參閱
- [常用命令的預設鍵盤快速鍵](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md) [How to:自訂功能表和工具列](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md)[逐步解說：建立簡單的應用程式](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)[協助工具祕訣和訣竅](../ide/reference/accessibility-tips-and-tricks.md)
+ [常用命令的預設鍵盤快速鍵](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md)[如何： 自訂功能表和工具列](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md)[逐步解說： 建立簡單的應用程式](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)[協助工具祕訣和訣竅](../ide/reference/accessibility-tips-and-tricks.md)

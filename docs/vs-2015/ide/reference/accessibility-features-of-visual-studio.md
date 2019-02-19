@@ -13,10 +13,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 519eefc9260816fcbbbbd3dd8672bbaeebb3429f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54778509"
 ---
 # <a name="accessibility-features-of-visual-studio"></a>Visual Studio 的協助工具功能
@@ -48,7 +48,7 @@ ms.locfileid: "54778509"
 
 -   [協助工具秘訣和訣竅](../../ide/reference/accessibility-tips-and-tricks.md)
 
--   [如何：變更字型與色彩](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
+-   [如何：變更字型和色彩](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
 
 ## <a name="see-also"></a>請參閱
  [Microsoft 提供的協助工具產品和服務](../../ide/reference/accessibility-products-and-services-from-microsoft.md)

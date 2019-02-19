@@ -13,10 +13,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 8bf0e41f750a7003f3d267b2bd17dcf6dc2d4a3a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54800845"
 ---
 # <a name="project-properties-reference"></a>專案屬性參考
@@ -27,7 +27,7 @@ ms.locfileid: "54800845"
   
 ## <a name="project-properties-pages"></a>專案屬性頁面  
   
-|標題|說明|  
+|標題|描述|  
 |-----------|-----------------|  
 |[專案設計工具、應用程式頁面 (Visual Basic)](../../ide/reference/application-page-project-designer-visual-basic.md)|使用這個頁面來指定 [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] 專案的應用程式設定和屬性。|  
 |[專案設計工具，應用程式頁面 (C#)](../../ide/reference/application-page-project-designer-csharp.md)|使用這個頁面來指定 [!INCLUDE[csprcs](../../includes/csprcs-md.md)] 專案的應用程式設定和屬性。|  
