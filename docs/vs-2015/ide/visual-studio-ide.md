@@ -10,10 +10,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 76e1d9c4a7cbfdfc2a7011668eb58a5ea9741d3d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54780675"
 ---
 # <a name="visual-studio-ide"></a>Visual Studio IDE
@@ -111,7 +111,7 @@ Microsoft Visual Studio 2015 是一套建立軟體的工具，適用於從規劃
 
  ![程式碼編輯器中的 GreetingsConsoleApp.cpp](../ide/media/c-ide-editorlinenumberswordwrapon.png "C + + IDE_EditorLineNumbersWordWrapOn")
 
- 文字編輯器可與許多產能功能緊密互動 (如果您想要的話)，協助您更快撰寫更好的程式碼。 功能會視語言而異，您不必使用任何這些 （型別 「 編輯器 」，在 快速啟動） 若要開啟或關閉功能：一些常見的生產力功能包括：
+ 文字編輯器可與許多產能功能緊密互動 (如果您想要的話)，協助您更快撰寫更好的程式碼。 這些功能會因語言而異，且您不必使用任何語言 (請在 [快速啟動] 中輸入 "Editor") 來開啟或關閉功能：下列為某些常見的產能功能：
 
 1. [Refactoring](../ide/refactoring-in-visual-studio.md) 包含一些作業，例如智慧型的變數重新命名、將選取的多行程式碼移動到個別函式、將程式碼移到其他位置、重新排序函式參數等等。
 

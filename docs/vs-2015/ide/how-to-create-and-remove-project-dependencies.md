@@ -1,5 +1,5 @@
 ---
-title: HOW TO：建立和移除專案相依性 |Microsoft Docs
+title: 如何：建立和移除專案相依性 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -19,13 +19,13 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: e4ce804664f78bd4ec329f7e4e66008053291c77
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54799768"
 ---
-# <a name="how-to-create-and-remove-project-dependencies"></a>HOW TO：建立及移除專案相依性
+# <a name="how-to-create-and-remove-project-dependencies"></a>如何：建立和移除專案相依性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 在建置包含多個專案的方案時，您可能需要先建置特定專案，以產生其他專案使用的程式碼。 當某個專案使用其他專案所產生的可執行程式碼時，產生程式碼的專案和使用程式碼的專案之間即具有專案相依性。 您可以在 [專案相依性] 對話方塊中定義這類相依性關聯。  
@@ -66,4 +66,4 @@ ms.locfileid: "54799768"
  [在 Visual Studio 中建置和清除專案與方案](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)   
  [編譯和建置](../ide/compiling-and-building-in-visual-studio.md)   
  [了解組建組態](../ide/understanding-build-configurations.md)   
- [(NIB) 如何︰修改專案屬性和組態設定](http://msdn.microsoft.com/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67)
+ [NIB 如何：修改專案屬性和組態設定](http://msdn.microsoft.com/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67)

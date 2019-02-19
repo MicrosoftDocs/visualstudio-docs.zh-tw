@@ -14,10 +14,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 760caa1fc87b0978571a8a53a44c5cb60616b615
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54768954"
 ---
 # <a name="toolbox-data-tab"></a>工具箱, 資料索引標籤
@@ -34,7 +34,7 @@ ms.locfileid: "54768954"
   
 |名稱|描述|  
 |----------|-----------------|  
-|<xref:System.Data.DataSet>|將具類型或不具類型資料集的執行個體新增至表單或元件。 當您將此物件拖曳至設計工具時，會顯示一個對話方塊，讓您選取現有具類型資料集類別，或指定您想要建立的不具類型的空白新資料集。 **注意：** 您不要使用 [工具箱] 上的 <xref:System.Data.DataSet> 物件來建立新的具型別資料集結構描述和類別。 如需詳細資訊，請參閱[建立和設定資料集](../../data-tools/create-and-configure-datasets-in-visual-studio.md)。|  
+|<xref:System.Data.DataSet>|將具類型或不具類型資料集的執行個體新增至表單或元件。 當您將此物件拖曳至設計工具時，會顯示一個對話方塊，讓您選取現有具類型資料集類別，或指定您想要建立的不具類型的空白新資料集。 **注意：** 您不要使用 [工具箱] 上的 <xref:System.Data.DataSet> 物件來建立新的具類型資料集結構描述和類別。 如需詳細資訊，請參閱[建立和設定資料集](../../data-tools/create-and-configure-datasets-in-visual-studio.md)。|  
 |<xref:System.Windows.Forms.DataGridView>|以表格形式顯示資料，是一項功能強大並具彈性的方式。|  
 |<xref:System.Windows.Forms.BindingSource>|簡化將控制項繫結至基礎資料來源的程序。|  
 |<xref:System.Windows.Forms.BindingNavigator>|表示在表單上繫結至資料的控制項之巡覽及管理使用者介面 (UI)。|  

@@ -16,10 +16,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: db76b86bd9a6f05ea6f36dc28c06d01692944e37
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54778642"
 ---
 # <a name="application-page-project-designer-c"></a>專案設計工具，應用程式頁 (C#)
@@ -53,7 +53,7 @@ ms.locfileid: "54778642"
 > [!NOTE]
 >  第一次開啟該對話方塊時，會自動設定[必要條件對話方塊](../../ide/reference/prerequisites-dialog-box.md)中所列的必要條件套件。 如果您接著變更專案的目標架構，您就必須手動選取必要條件以符合新的目標架構。  
   
- 如需詳細資訊，請參閱[＜How to：以 .NET Framework 版本為目標](../../ide/how-to-target-a-version-of-the-dotnet-framework.md)和 [Visual Studio 多目標概觀](../../ide/visual-studio-multi-targeting-overview.md)。  
+ 如需詳細資訊，請參閱[如何：以 .NET Framework 版本為目標](../../ide/how-to-target-a-version-of-the-dotnet-framework.md)和 [Visual Studio 多目標概觀](../../ide/visual-studio-multi-targeting-overview.md)。  
   
  **應用程式類型**  
  指定要建置的應用程式類型。 針對 [!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)] 應用程式，您可以指定 [Windows 市集應用程式]、[類別庫] 或 [WinMD 檔案]。 針對大多數其他應用程式類型，您可以指定 [Windows 應用程式]、[主控台應用程式]、[類別庫]、[Windows 服務] 或 [Web 控制項程式庫]。  

@@ -14,10 +14,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 4c1cd4b15c3ce3462d6d49eca39fedbc64c744c7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54767298"
 ---
 # <a name="safemode-devenvexe"></a>/SafeMode (devenv.exe)
@@ -35,7 +35,7 @@ devenv /SafeMode
 ## <a name="remarks"></a>備註  
  此參數會在啟動 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 時防止載入所有協力廠商 VSPackages，因而確保穩定執行。  
   
-## <a name="description"></a>說明  
+## <a name="description"></a>描述  
  下列範例會以安全模式啟動 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]。  
   
 ## <a name="code"></a>程式碼  

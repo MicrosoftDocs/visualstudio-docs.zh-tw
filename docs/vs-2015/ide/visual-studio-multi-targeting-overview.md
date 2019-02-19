@@ -15,10 +15,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: fee905da1fbb973a9cb1a6c954b7d450511b4be1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54768876"
 ---
 # <a name="visual-studio-multi-targeting-overview"></a>Visual Studio 多目標概觀
@@ -60,7 +60,7 @@ ms.locfileid: "54768876"
 >  Framework 目標不保證您的應用程式將會正確執行。 您必須測試應用程式，確定它能以目標版本執行。 您不能以早於 .NET Framework 2.0 版的 Framework 版本為目標。
 
 ## <a name="selecting-a-target-framework-version"></a>選取目標 Framework 版本
- 當您建立專案時，請在 [新增專案] 對話方塊中選取目標 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 版本。 可用的專案範本清單會根據選取項目進行篩選。 在現有專案中，您可以在專案屬性對話方塊中變更目標 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 版本。 如需詳細資訊，請參閱[＜How to：以一個 .NET Framework 版本為目標](../ide/how-to-target-a-version-of-the-dotnet-framework.md)。
+ 當您建立專案時，請在 [新增專案] 對話方塊中選取目標 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 版本。 可用的專案範本清單會根據選取項目進行篩選。 在現有專案中，您可以在專案屬性對話方塊中變更目標 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 版本。 如需詳細資訊，請參閱[如何：以 .NET Framework 版本為目標](../ide/how-to-target-a-version-of-the-dotnet-framework.md)。
 
 > [!NOTE]
 >  在 Visual Studio Express 版中，您無法在 [新增專案] 對話方塊中設定目標 Framework。
@@ -76,7 +76,7 @@ ms.locfileid: "54768876"
  如需組件參考的詳細資訊，請參閱[在設計階段時解析組件](../msbuild/resolving-assemblies-at-design-time.md)。
 
 ## <a name="enabling-linq"></a>啟用 LINQ
- 當您以 .NET Framework 3.5 或更新版本為目標時，會自動新增 System.Core 的參考與 System.Linq 的專案層級匯入 (僅限 Visual Basic)。 如果要使用 LINQ 功能，您必須同時開啟 [推斷選項] (僅限 Visual Basic)。 如果將目標變更為舊版 .NET Framework，就會自動移除參考和匯入。 如需詳細資訊，請參閱[＜How to：建立 LINQ 專案](http://msdn.microsoft.com/library/a929e653-09a3-44be-881f-68ca33f192b2)。
+ 當您以 .NET Framework 3.5 或更新版本為目標時，會自動新增 System.Core 的參考與 System.Linq 的專案層級匯入 (僅限 Visual Basic)。 如果要使用 LINQ 功能，您必須同時開啟 [推斷選項] (僅限 Visual Basic)。 如果將目標變更為舊版 .NET Framework，就會自動移除參考和匯入。 如需詳細資訊，請參閱[如何：建立 LINQ 專案](http://msdn.microsoft.com/library/a929e653-09a3-44be-881f-68ca33f192b2)。
 
 ## <a name="see-also"></a>請參閱
  [多目標](../msbuild/msbuild-multitargeting-overview.md) [ASP.NET Web 專案的.NET Framework 多目標](http://msdn.microsoft.com/library/8b8145a9-62f6-4fc4-8a83-47b0487cbe76)[平台相容性與系統需求](http://www.microsoft.com/visualstudio/eng/products/compatibility)

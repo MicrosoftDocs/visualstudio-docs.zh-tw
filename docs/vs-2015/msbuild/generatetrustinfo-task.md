@@ -18,10 +18,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 4f1cf52286de97980eb269c3b52055be4455c38d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54790148"
 ---
 # <a name="generatetrustinfo-task"></a>GenerateTrustInfo 工作
@@ -33,7 +33,7 @@ ms.locfileid: "54790148"
 ## <a name="parameters"></a>參數  
  下表說明 `GenerateTrustInfo` 工作的參數。  
   
-|參數|說明|  
+|參數|描述|  
 |---------------|-----------------|  
 |`ApplicationDependencies`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 指定相依組件。|  
 |`BaseManifest`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem> 參數。<br /><br /> 指定要從中產生應用程式信任的基底資訊清單。|  

@@ -22,10 +22,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: c3e6a888a5f904c194bcdb6f5c844dbed3084449
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54754967"
 ---
 # <a name="devenv-command-line-switches"></a>Devenv 命令列參數
@@ -69,7 +69,7 @@ Devenv 可讓您設定整合式開發環境 (IDE) 的各種選項，也可讓您
 ## <a name="devenv-switches"></a>Devenv 參數  
  使用下列命令列參數來顯示 IDE，並執行所述的工作。  
   
-|命令列參數|說明|  
+|命令列參數|描述|  
 |-------------------------|-----------------|  
 |[/Command (devenv.exe)](../../ide/reference/command-devenv-exe.md)|啟動 IDE，並執行指定的命令。|  
 |[/DebugExe (devenv.exe)](../../ide/reference/debugexe-devenv-exe.md)|透過偵錯工具的控制，載入 [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] 可執行檔。 此參數不適用於 [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] 或 [!INCLUDE[csprcs](../../includes/csprcs-md.md)] 可執行檔。 如需詳細資訊，請參閱[在偵錯工具中自動啟動處理序](../../debugger/debug-multiple-processes.md#BKMK_Automatically_start_an_process_in_the_debugger)。|  
@@ -86,7 +86,7 @@ Devenv 可讓您設定整合式開發環境 (IDE) 的各種選項，也可讓您
   
  使用下列命令列參數來執行所述的工作。 這些命令列參數不會顯示 IDE。  
   
-|命令列參數|說明|  
+|命令列參數|描述|  
 |-------------------------|-----------------|  
 |[/? (devenv.exe)](../../ide/reference/q-devenv-exe.md)|在 [命令提示字元] 視窗中顯示 devenv 參數的說明。<br /><br /> **Devenv /?**|  
 |[/Build (devenv.exe)](../../ide/reference/build-devenv-exe.md)|根據所指定方案的組態，建置指定的方案或專案。<br /><br /> **Devenv myproj.csproj /build**|  

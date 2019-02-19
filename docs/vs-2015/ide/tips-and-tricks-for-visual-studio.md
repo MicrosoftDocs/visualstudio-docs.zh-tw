@@ -10,10 +10,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 6eb3e77c8d84f7603828c39b637bb49a8310a269
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54771175"
 ---
 # <a name="tips-and-tricks-for-visual-studio"></a>Visual Studio 秘訣和訣竅
@@ -139,7 +139,7 @@ ms.locfileid: "54771175"
 
 ##  <a name="BKMK_ALM"></a> 應用程式生命週期管理
 
-請參閱[鍵盤快速鍵：Visual Studio Online、 TFS 入口網站和 Team Explorer](/azure/devops/project/navigation/keyboard-shortcuts?view=vsts)。
+請參閱[鍵盤快速鍵：Visual Studio Online、TFS 入口網站和 Team Explorer](/azure/devops/project/navigation/keyboard-shortcuts?view=vsts)。
 
 ## <a name="see-also"></a>請參閱
 

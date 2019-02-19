@@ -19,10 +19,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 09562c3372a6dd933d3656f1b2f7ccf7ca68109d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54771024"
 ---
 # <a name="vsinstr"></a>VSInstr
@@ -36,7 +36,7 @@ VSInstr [/U] filename [/options]
   
  下表說明 VSInstr 工具選項：  
   
-|選項|說明|  
+|選項|描述|  
 |-------------|-----------------|  
 |**Help** 或 **?**|顯示說明。|  
 |**U**|將重新導向的主控台輸出以 Unicode 寫入。 務必要優先指定此選項。|  
@@ -47,13 +47,13 @@ VSInstr [/U] filename [/options]
 |**DumpFuncs**|列出指定映像中的函式。 不會執行任何檢測。|  
 |**ExcludeSmallFuncs**|從檢測中排除小型函式，其為不會進行任何函式呼叫的精簡函式。 **ExcludeSmallFuncs** 選項的檢測負荷較低，因此可改善檢測速度。<br /><br /> 排除小型函式，也會減少 .vsp 的檔案大小和分析所需的時間。|  
 |**Mark:**{**Before**`&#124;`**After**`&#124;`**Top**`&#124;`**Bottom**}`,funcname,markid`|插入設定檔標記 (用來分隔報表中資料的識別碼)，您可以用來識別 .vsp 報告檔中某個資料範圍的開頭或結尾。<br /><br /> **Before** - 緊接在目標函式進入之前。<br /><br /> **After** - 緊跟在目標函式結束之後。<br /><br /> **Top** - 緊跟在目標函式進入之後。<br /><br /> **Bottom** - 緊接在目標函式中的每個傳回之前。<br /><br /> `funcname` - 目標函式的名稱<br /><br /> `Markid` - 正整數 (長整數)，可用來當做設定檔標記的識別碼。|  
-|**Coverage**|執行涵蓋範圍檢測。 它可以是它可以用於只使用下列選項：**Verbose**、**OutputPath**、**Exclude** 及 **Logfile**。|  
+|**Coverage**|執行涵蓋範圍檢測。 只能和下列選項搭配使用：**Verbose**、**OutputPath**、**Exclude** 及 **Logfile**。|  
 |**Verbose**|[詳細資訊] 選項是用來檢視有關檢測處理序的詳細資訊。|  
 |**NoWarn** `[:[Message Number[;Message Number]]]`|隱藏所有或特定的警告。<br /><br /> `Message Number` - 警告編號。 如果省略 `Message Number`，則會隱藏所有警告。<br /><br /> 如需詳細資訊，請參閱 [VSInstr 警告](../profiling/vsinstr-warnings.md)。|  
 |**Control** `:{` **Thread** `&#124;` **Process** `&#124;` **Global** `}`|指定下列 VSInstr 資料收集控制選項的程式碼剖析層級︰<br /><br /> **Start**<br /><br /> **StartOnly**<br /><br /> **Suspend**<br /><br /> **StopOnly**<br /><br /> **SuspendOnly**<br /><br /> **ResumeOnly**<br /><br /> **Thread** - 指定執行緒層級的資料收集控制函式。 只會針對目前的執行緒啟動或停止程式碼剖析。 不會影響其他執行緒的程式碼剖析狀態。 預設值為 Thread。<br /><br /> **Process** - 指定處理序層級的程式碼剖析資料收集控制函式。 可針對目前處理序中的所有執行緒啟動或停止程式碼剖析。 不會影響其他處理序的程式碼剖析狀態。<br /><br /> **Global** - 指定全域層級 (跨處理序) 的資料收集控制函式。<br /><br /> 如果您沒有指定程式碼剖析層級，就會發生錯誤。|  
 |**Start** `:{` **Inside** `&#124;` **Outside** `},funcname`|限制只對目標函式和該函式呼叫的子函式收集資料。<br /><br /> **Inside** - 在目標函式進入之後，立即插入 StartProfile 函式。 在目標函式中的每個傳回之前，立即插入 StopProfile 函式。<br /><br /> **Outside** - 在每次呼叫目標函式之前，立即插入 StartProfile 函式。 在每次呼叫目標函式之後，立即插入 StopProfile 函式。<br /><br /> `funcname` - 目標函式的名稱。|  
 |**Suspend** `:{` **Inside** `&#124;` **Outside** `},funcname`|排除對目標函式和該函式呼叫的子函式收集資料。<br /><br /> **Inside** - 在目標函式進入之後，立即插入 SuspendProfile 函式。 在目標函式中的每個傳回之前，立即插入 ResumeProfile 函式。<br /><br /> **Outside** - 在目標函式進入之前，立即插入 SuspendProfile 函式。 在從目標函式離開之後，立即插入 ResumeProfile 函式。<br /><br /> `funcname` - 目標函式的名稱。<br /><br /> 如果目標函式包含 StartProfile 函式，請在它之前插入 SuspendProfile 函式。 如果目標函式包含 StopProfile 函式，請在它之後插入 ResumeProfile 函式。|  
-|**StartOnly:**`{` **Before** `&#124;` **After** `&#124;` **Top** `&#124;` **Bottom** `},funcname`|在執行程式碼剖析期間開始資料收集。 在指定位置插入 StartProfile API 函式。<br /><br /> **Before** - 緊接在目標函式進入之前。<br /><br /> **After** - 緊跟在目標函式結束之後。<br /><br /> **Top** - 緊跟在目標函式進入之後。<br /><br /> **Bottom** - 緊接在目標函式中的每個傳回之前。<br /><br /> `funcname` - 目標函式的名稱。|  
+|**StartOnly:** `{` **Before** `&#124;` **After** `&#124;` **Top** `&#124;` **Bottom** `},funcname`|在執行程式碼剖析期間開始資料收集。 在指定位置插入 StartProfile API 函式。<br /><br /> **Before** - 緊接在目標函式進入之前。<br /><br /> **After** - 緊跟在目標函式結束之後。<br /><br /> **Top** - 緊跟在目標函式進入之後。<br /><br /> **Bottom** - 緊接在目標函式中的每個傳回之前。<br /><br /> `funcname` - 目標函式的名稱。|  
 |**StopOnly:**{**Before**`&#124;`**After**`&#124;`**Top**`&#124;`**Bottom**}`,funcname`|在執行程式碼剖析期間暫止資料收集。 在指定位置插入 StopProfile API 函式。<br /><br /> **Before** - 緊接在目標函式進入之前。<br /><br /> **After** - 緊跟在目標函式結束之後。<br /><br /> **Top** - 緊跟在目標函式進入之後。<br /><br /> **Bottom** - 緊接在目標函式中的每個傳回之前。<br /><br /> `funcname` - 目標函式的名稱。|  
 |**SuspendOnly:**{**Before**`&#124;`**After**`&#124;`**Top**`&#124;`**Bottom**}`,funcname`|在執行程式碼剖析期間暫止資料收集。 在指定位置插入 SuspendProfile API。<br /><br /> **Before** - 緊接在目標函式進入之前。<br /><br /> **After** - 緊跟在目標函式結束之後。<br /><br /> **Top** - 緊跟在目標函式進入之後。<br /><br /> **Bottom** - 緊接在目標函式中的每個傳回之前。<br /><br /> `funcname` - 目標函式的名稱。<br /><br /> 如果目標函式包含 StartProfile 函式，請在它之前插入 SuspendProfile 函式。|  
 |**ResumeOnly:**{**Before**`&#124;`**After**`&#124;`**Top**`&#124;`**Bottom**}`,funcname`|在執行程式碼剖析期間開始或繼續資料收集。<br /><br /> 其通常是在 **SuspendOnly** 選項已停止程式碼剖析之後，用來啟動程式碼剖析。 在指定位置插入 ResumeProfile API。<br /><br /> **Before** - 緊接在目標函式進入之前。<br /><br /> **After** - 緊跟在目標函式結束之後。<br /><br /> **Top** - 緊跟在目標函式進入之後。<br /><br /> **Bottom** - 緊接在目標函式中的每個傳回之前。<br /><br /> `funcname` - 目標函式的名稱。<br /><br /> 如果目標函式包含 StopProfile 函式，請在它之後插入 ResumeProfile 函式。|  

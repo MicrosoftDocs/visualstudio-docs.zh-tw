@@ -1,5 +1,5 @@
 ---
-title: HOW TO：建置包含資源的專案 | Microsoft Docs
+title: 如何：建置包含資源的專案 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: msbuild
@@ -15,13 +15,13 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b45d2dfedcc020a5b6206e4c419c0e4b7f9b0f02
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54803997"
 ---
-# <a name="how-to-build-a-project-that-has-resources"></a>HOW TO：建置包含資源的專案
+# <a name="how-to-build-a-project-that-has-resources"></a>如何：建置包含資源的專案
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   

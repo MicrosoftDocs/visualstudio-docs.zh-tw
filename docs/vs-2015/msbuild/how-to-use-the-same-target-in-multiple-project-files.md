@@ -1,5 +1,5 @@
 ---
-title: HOW TO：在多個專案檔中使用相同的目標 | Microsoft Docs
+title: 如何：在多個專案檔中使用相同的目標 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: msbuild
@@ -13,13 +13,13 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9e0f787426846137038adf16b9373012f3deeb25
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54769325"
 ---
-# <a name="how-to-use-the-same-target-in-multiple-project-files"></a>HOW TO：在多個專案檔中使用相同的目標
+# <a name="how-to-use-the-same-target-in-multiple-project-files"></a>如何：使用多個專案檔內相同的目標
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   

@@ -20,10 +20,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3f5c7c2f587f4c2fb44ab56223dafa2f988c6103
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54758461"
 ---
 # <a name="common-msbuild-project-properties"></a>一般 MSBuild 專案屬性
@@ -36,7 +36,7 @@ ms.locfileid: "54758461"
   
 ## <a name="list-of-common-properties-and-parameters"></a>通用屬性和參數的清單  
   
-|屬性或參數名稱|說明|  
+|屬性或參數名稱|描述|  
 |--------------------------------|-----------------|  
 |AdditionalLibPaths|指定其他資料夾，編譯器會在這些資料夾中尋找參考組件。|  
 |AddModules|讓編譯器將所指定檔案的類型資訊全部提供給您正在編譯的專案。 這個屬性相當於 `/addModules` 編譯器參數。|  

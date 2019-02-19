@@ -1,5 +1,5 @@
 ---
-title: Ptvs 快速入門：Interactive Python | Microsoft Docs
+title: Ptvs 快速入門： 互動式 Python |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-python
@@ -10,13 +10,13 @@ author: kraigb
 ms.author: kraigb
 manager: jillfra
 ms.openlocfilehash: 4fba8bf658a50a7a7e28abace1eb622ab14f5f26
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54780982"
 ---
-# <a name="getting-started-with-ptvs-interactive-python"></a>Ptvs 快速入門：Interactive Python
+# <a name="getting-started-with-ptvs-interactive-python"></a>PTVS 快速入門：互動式 Python
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 互動式提示或讀取 - 求值 - 輸出迴圈 (REPL) 是高產能程式設計語言的重要工具。  它們可讓您執行程式碼片段來探索和學習 API，使用 API 進行實驗，並以互動方式開發可運作的程式碼，以包含在專案或程式中。  

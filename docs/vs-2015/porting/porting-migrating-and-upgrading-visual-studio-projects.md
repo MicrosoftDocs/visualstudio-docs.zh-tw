@@ -20,10 +20,10 @@ author: kraigb
 ms.author: kraigb
 manager: jillfra
 ms.openlocfilehash: 3b76154db0d85cba745ffe1c694b18a1fb9dde26
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/24/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54805549"
 ---
 # <a name="porting-migrating-and-upgrading-visual-studio-projects"></a>Porting, Migrating, and Upgrading Visual Studio Projects
@@ -66,15 +66,15 @@ ms.locfileid: "54805549"
 |SketchFlow|如果您允許 Visual Studio 升級專案至 WPF 4.5/Silverlight 5，則可以在 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] 和 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]中開啟專案。|
 |[!INCLUDE[ssKatmai_exp](../includes/sskatmai-exp-md.md)] 資料庫|您可以在 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]、 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]和 Visual Studio 2010 SP1 中開啟專案。 如果您有舊版 SQL Server 建立的資料庫檔案 (.mdf)，則必須將其升級至 [!INCLUDE[sql_Denali_long](../includes/sql-denali-long-md.md)] ，才能搭配 SQL Server Express LocalDB 使用該資料庫檔案，但是該資料庫不再與舊版 SQL Server 相容。 如果您不升級，則在同一台電腦上安裝和使用 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] ，就可以繼續在 [!INCLUDE[ssKatmai_exp](../includes/sskatmai-exp-md.md)] 中使用資料庫。 如需詳細資訊，請參閱 <<c0> [ 升級的.mdf 檔案](../data-tools/upgrade-dot-mdf-files.md)。|
 |[!INCLUDE[sskatmai_r2](../includes/sskatmai-r2-md.md)] Express|如果 [!INCLUDE[sskatmai_r2](../includes/sskatmai-r2-md.md)] Express 是安裝在執行 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]、 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]和 Visual Studio 2010 SP1 的電腦上，則在這三個版本中都可以開啟專案。|
-|SQL Server 報表專案|您可以在 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] 和 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]中開啟專案。 對於本機模式 (也就是說，如果沒有連接至 SQL Server)，您將不會取得與 [!INCLUDE[vs2010](../includes/vs2010-md.md)]檢視器關聯之控制項的設計階段經驗，不過，但專案仍然可以正常運作於執行階段。 **注意：** 如果您加入 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] 專用的功能，報告結構描述就會自動升級，而您將無法在 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] 中開啟專案。|
+|SQL Server 報表專案|您可以在 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] 和 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]中開啟專案。 對於本機模式 (也就是說，如果沒有連接至 SQL Server)，您將不會取得與 [!INCLUDE[vs2010](../includes/vs2010-md.md)]檢視器關聯之控制項的設計階段經驗，不過，但專案仍然可以正常運作於執行階段。 **注意：** 如果您加入功能特有[!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]報表結構描述會自動升級，您無法再開啟中的專案[!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]。|
 |單元測試|您可以在 [!INCLUDE[TCMext](../includes/tcmext-md.md)] 、 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]和 Visual Studio 2010 SP1 中使用 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]，來開啟任何這些版本所建立的測試。|
-|Visual C++|您可以使用 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] 開啟在 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] 或 Visual Studio 2010 SP1 中建立的 C++ 專案。 如果您想要使用 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] 建置環境來建置 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]所建立的專案，則必須在同一台電腦上安裝這兩個版本的 Visual Studio。 如需詳細資訊，請參閱[＜How to：Visual c + + 專案升級為 Visual Studio 2015](../porting/how-to-upgrade-visual-cpp-projects-to-visual-studio-2015.md)並[Visual c + + 移植和升級指南](http://msdn.microsoft.com/library/f5fbcc3d-aa72-41a6-ad9a-a706af2166fb)。|
+|Visual C++|您可以使用 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] 開啟在 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] 或 Visual Studio 2010 SP1 中建立的 C++ 專案。 如果您想要使用 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] 建置環境來建置 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]所建立的專案，則必須在同一台電腦上安裝這兩個版本的 Visual Studio。 如需詳細資訊，請參閱[如何：將 Visual C++ 專案升級為 Visual Studio 2015](../porting/how-to-upgrade-visual-cpp-projects-to-visual-studio-2015.md) 和 [Visual C++ 移植和升級指南](http://msdn.microsoft.com/library/f5fbcc3d-aa72-41a6-ad9a-a706af2166fb)。|
 |Visual Studio 2010 Web|如果您允許 Visual Studio 自動升級專案，則可以在 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]、 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]和 Visual Studio 2010 SP1 中開啟專案。|
 |Visual Studio 2010 資料庫 (.dbproj)|如果您將專案轉換為 SQL Server Data Tools Database 專案，則可以在 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]中開啟該專案。 不過， [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] 不支援下列成品：<br /><br /> -   單元測試<br />-   資料產生計劃<br />-   資料比較檔案<br />-   靜態程式碼分析的自訂規則延伸模組<br />-   server.sqlsettings<br />-   .sqlcmd 檔案<br />-   自訂部署延伸模組<br />-   部分專案 (.files)<br /><br /> 如果您已經安裝 SQL Server Data Tools，可以在轉換後使用 Visual Studio 2010 SP1 開啟專案。 如需詳細資訊，請參閱 [Microsoft SQL Server Data Tools](http://msdn.microsoft.com/data/tools.aspx)。|
 |Visual Studio 2010 Visual Database Tools|您可以在 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]、 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]和 Visual Studio 2010 SP1 中開啟這個專案。|
 |Visual Studio Lab Management|您可以使用 [!INCLUDE[TCMext](../includes/tcmext-md.md)]、 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]、 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]和 Visual Studio 2010 SP1，來開啟任何這些版本所建立的環境。 不過，Microsoft Test Manager 的版本必須符合 Team Foundation Server 的版本才能建立環境。|
 |Visual Studio 巨集|您無法在 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] 中開啟這個專案，因為它不支援該專案類型。|
-|Visual Studio SDK/VSIX|將 Visual Studio SDK 專案升級至 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]之後，就無法在 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]中開啟該專案。 如需詳細資訊，請參閱[＜How to：將擴充性專案移轉至 Visual Studio 2015](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2015.md)。|
+|Visual Studio SDK/VSIX|將 Visual Studio SDK 專案升級至 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]之後，就無法在 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]中開啟該專案。 如需詳細資訊，請參閱 <<c0> [ 如何： 將擴充性專案移轉至 Visual Studio 2015](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2015.md)。|
 |Microsoft Azure Tools for Visual Studio|如果您使用 Microsoft Azure Tools for Visual Studio 2.1 版，則可以在 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]、 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]和 Visual Studio 2010 SP1 中開啟專案。 對於以舊版為目標的專案，如果您允許 Visual Studio 將專案升級到 2.1 版，您可以在 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]、 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]和 Visual Studio 2010 SP1 開啟專案。|
 |Windows Communication Foundation、Windows Presentation Foundation|您可以在 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]、 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]和 Visual Studio 2010 SP1 中開啟這個專案。|
 |Windows Mobile|您無法在 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] 中開啟這個專案，因為它不支援該專案類型。|
@@ -89,7 +89,7 @@ ms.locfileid: "54805549"
 
 - 如果您嘗試開啟 [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)] 或 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] 不支援的專案，而且相關聯的 Visual Studio 版本也未安裝，則可能會出現專案類型不支援的訊息，並且 [不支援的專案]  底下的 [檢閱專案和方案變更] 對話方塊可能會顯示專案類型。 若要解決這個問題，請開啟 Windows [ **控制台**] 的 [程式和功能] 頁面，選取 [ **Visual Studio**]，然後選擇 [ **變更**]、[ **修復**]。 然後您就可以安裝遺漏的版本。
 
-- 如果您嘗試開啟中的桌面應用程式專案[!INCLUDE[vs_dev12_expwin](../includes/vs-dev12-expwin-md.md)]，就會發生錯誤，並顯示下列其中一個訊息：「 這個版本的 Visual Studio 僅支援[!INCLUDE[win81](../includes/win81-md.md)]應用程式 」 或 「 這個專案不與目前的 Visual Studio 版本不相容 」。 [!INCLUDE[vs_dev12_expwin](../includes/vs-dev12-expwin-md.md)] 只能用於開發、測試和部署針對 Windows 8.1 所設計的 Windows 市集應用程式。 若要開啟桌面應用程式專案，您必須使用支援該專案類型的 Visual Studio 版本。
+- 如果您嘗試在 [!INCLUDE[vs_dev12_expwin](../includes/vs-dev12-expwin-md.md)]中開啟桌面應用程式的專案，將會發生錯誤並顯示下列其中一個訊息：「這個版本的 Visual Studio 僅支援 [!INCLUDE[win81](../includes/win81-md.md)] 應用程式」或「這個專案與目前的 Visual Studio 版本不相容」。 [!INCLUDE[vs_dev12_expwin](../includes/vs-dev12-expwin-md.md)] 只能用於開發、測試和部署針對 Windows 8.1 所設計的 Windows 市集應用程式。 若要開啟桌面應用程式專案，您必須使用支援該專案類型的 Visual Studio 版本。
 
    如需 Visual Studio 版本的詳細資訊，請參閱 [Microsoft Visual Studio 產品](http://go.microsoft.com/fwlink/?LinkId=254332)
 

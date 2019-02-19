@@ -20,10 +20,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3a82e80f0b23915c30dd491d3986f4a9c765503e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54756532"
 ---
 # <a name="aspnetcompiler-task"></a>AspNetCompiler 工作
@@ -35,7 +35,7 @@ ms.locfileid: "54756532"
 ## <a name="task-parameters"></a>工作參數  
  下表說明 `AspNetCompiler` 工作的參數。  
   
-|參數|說明|  
+|參數|描述|  
 |---------------|-----------------|  
 |`AllowPartiallyTrustedCallers`|選擇性的 `Boolean` 參數。<br /><br /> 如果此參數為 `true`，強式名稱的組件將允許部分信任的呼叫端。|  
 |`Clean`|選擇性的 `Boolean` 參數<br /><br /> 如果此參數為 `true`，將全新建置先行編譯的應用程式。 任何先前已編譯的元件都將重新編譯。 預設值為 `false`。 此參數 (Parameter) 對應到 aspnet_compiler.exe 上的 **-c** 參數 (Switch)。|  

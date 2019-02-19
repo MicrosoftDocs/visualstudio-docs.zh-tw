@@ -20,10 +20,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 93fd259e00d7a8f849b97cb97c3f950cd95f57ed
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54761538"
 ---
 # <a name="when-element-msbuild"></a>When 元素 (MSBuild)
@@ -56,13 +56,13 @@ ms.locfileid: "54761538"
   
 ### <a name="attributes"></a>屬性  
   
-|屬性|說明|  
+|屬性|描述|  
 |---------------|-----------------|  
 |條件|必要屬性。<br /><br /> 要評估的條件。 如需詳細資訊，請參閱[條件](../msbuild/msbuild-conditions.md)。|  
   
 ### <a name="child-elements"></a>子元素  
   
-|元素|說明|  
+|元素|描述|  
 |-------------|-----------------|  
 |[Choose](../msbuild/choose-element-msbuild.md)|選擇性項目。<br /><br /> 評估子元素，以選取要執行的一個程式碼區段。 `Choose` 項目中可能有零個或多個 `When` 項目。|  
 |[ItemGroup](../msbuild/itemgroup-element-msbuild.md)|選擇性項目。<br /><br /> 包含一組使用者定義的 [Item](../msbuild/item-element-msbuild.md) 元素。 `ItemGroup` 元素中可能有零個或多個 `When` 元素。|  
@@ -70,7 +70,7 @@ ms.locfileid: "54761538"
   
 ### <a name="parent-elements"></a>父項目  
   
-|元素|說明|  
+|元素|描述|  
 |-------------|-----------------|  
 |[Choose 元素 (MSBuild)](../msbuild/choose-element-msbuild.md)|評估子元素，以選取要執行的一個程式碼區段。|  
   

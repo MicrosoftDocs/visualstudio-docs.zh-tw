@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: dd06bc09114785c4359d05e3cda70c3ce7646c9e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54804243"
 ---
 # <a name="instruction-pointers-ips-view---net-memory-sampling-data"></a>指令指標 (IP) 檢視 - .NET 記憶體取樣資料
@@ -25,7 +25,7 @@ ms.locfileid: "54804243"
   
  只會列出專有值。  
   
-|資料行|說明|  
+|資料行|描述|  
 |------------|-----------------|  
 |**處理序 ID**|分析執行的處理序 ID (PID)。|  
 |**處理序名稱**|處理序的名稱。|  

@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 385d12550692f5f27521afe4dea12e5bdb0aa9d8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54782384"
 ---
 # <a name="call-tree-view---instrumentation-data"></a>呼叫樹狀圖檢視 - 檢測資料
@@ -26,7 +26,7 @@ ms.locfileid: "54782384"
 ## <a name="general"></a>一般  
  一般資料行會識別檢視列中的函式。  
   
-|資料行|說明|  
+|資料行|描述|  
 |------------|-----------------|  
 |**函式名稱**|函式的名稱。|  
 |**函式位址**|函式的位址。|  
@@ -44,7 +44,7 @@ ms.locfileid: "54782384"
 ## <a name="elapsed-inclusive-values"></a>功能內含耗用值  
  功能內含耗用值表示呼叫樹狀圖中父函式所呼叫之函式執行個體在呼叫堆疊上的時間。 該時間包含函式呼叫子函式以及呼叫作業系統所花費的時間，例如內容切換和輸入/輸出作業。  
   
-|資料行|說明|  
+|資料行|描述|  
 |------------|-----------------|  
 |**功能內含耗用 (Elapsed Inclusive) 時間**|在此內容中這個函式所有呼叫的總功能內含耗用 (Elapsed Inclusive) 時間。|  
 |**功能內含耗用 (Elapsed Inclusive) 時間 %**|在分析執行的總功能內含耗用時間中，花費在此內容中此函式之總功能內含耗用時間的百分比。|  
@@ -55,7 +55,7 @@ ms.locfileid: "54782384"
 ## <a name="elapsed-exclusive-values"></a>功能專屬耗用值  
  功能專屬耗用值表示呼叫樹狀圖中父函式所呼叫之函式執行個體在函式主體中執行程式碼的時間，也就是當函式位於呼叫堆疊的頂端時。 該時間包含呼叫作業系統所花費的時間，例如內容切換和輸入/輸出作業。 不過，該時間不包括函式呼叫子函式所花費的時間。  
   
-|資料行|說明|  
+|資料行|描述|  
 |------------|-----------------|  
 |**功能專屬耗用 (Elapsed Exclusive) 時間**|在此內容中這個函式所有呼叫的總功能專屬耗用 (Elapsed Exclusive) 時間。|  
 |**功能專屬耗用 (Elapsed Exclusive) 時間 %**|在分析執行的總功能專屬耗用時間中，花費在此內容中此函式之總功能專屬耗用時間的百分比。|  
@@ -66,7 +66,7 @@ ms.locfileid: "54782384"
 ## <a name="application-inclusive-values"></a>應用程式內含值  
  應用程式內含值表示呼叫樹狀圖中父函式所呼叫之函式執行個體位於呼叫堆疊上的時間。 該時間不包含呼叫作業系統所花費的時間，例如內容切換和輸入/輸出作業，但包含函式呼叫子函式所花費的時間。  
   
-|資料行|說明|  
+|資料行|描述|  
 |------------|-----------------|  
 |**應用程式內含 (Application Inclusive) 時間**|在此內容中這個函式所有呼叫的總應用程式內含 (Application Inclusive) 時間。|  
 |**應用程式內含 (Application Inclusive) 時間 %**|在分析執行的總功能內含耗用時間中，花費在此內容中此函式之總應用程式內含時間的百分比。|  
@@ -77,7 +77,7 @@ ms.locfileid: "54782384"
 ## <a name="application-exclusive-values"></a>應用程式專屬值  
  應用程式專屬值表示呼叫樹狀圖中父函式所呼叫之函式執行個體在函式主體中直接執行程式碼的時間，也就是當函式位於呼叫堆疊的頂端時。 該時間不包含呼叫作業系統所花費的時間，例如內容切換和輸入/輸出作業。 也不包括函式呼叫子函式所花費的時間。  
   
-|資料行|說明|  
+|資料行|描述|  
 |------------|-----------------|  
 |**應用程式專屬 (Application Exclusive) 時間**|在此內容中這個函式所有呼叫的總應用程式專屬 (Application Exclusive) 時間。|  
 |**應用程式專屬 (Application Exclusive) 時間 %**|在分析執行的總功能專屬耗用時間中，花費在此內容中此函式之總應用程式專屬時間的百分比。|  

@@ -20,10 +20,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: be3b993034ef9ab8d39b254cf3f4be1fdebbb106
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54769122"
 ---
 # <a name="usingtask-element-msbuild"></a>UsingTask 項目 (MSBuild)
@@ -49,7 +49,7 @@ ms.locfileid: "54769122"
   
 ### <a name="attributes"></a>屬性  
   
-|屬性|說明|  
+|屬性|描述|  
 |---------------|-----------------|  
 |`AssemblyName`|需要 `AssemblyName` 屬性或 `AssemblyFile` 屬性。<br /><br /> 要載入之組件的名稱。 `AssemblyName` 屬性接受強式名稱組件，雖然不需要強式名稱。 使用這個屬性就相當於使用 .NET 中的 <xref:System.Reflection.Assembly.Load%2A> 方法載入組件。<br /><br /> 如果使用 `AssemblyFile` 屬性，則您無法使用這個屬性。|  
 |`AssemblyFile`|需要 `AssemblyName` 或 `AssemblyFile` 屬性。<br /><br /> 組件的檔案路徑。 此屬性接受完整路徑或相對路徑。 相對路徑相對於專案檔案或目標檔案的目錄位置，其中會宣告 `UsingTask` 項目。 使用這個屬性就相當於使用 .NET 中的 <xref:System.Reflection.Assembly.LoadFrom%2A> 方法載入組件。<br /><br /> 如果使用 `AssemblyName` 屬性，則您無法使用這個屬性。|  
@@ -59,14 +59,14 @@ ms.locfileid: "54769122"
   
 ### <a name="child-elements"></a>子元素  
   
-|元素|說明|  
+|元素|描述|  
 |-------------|-----------------|  
 |[ParameterGroup](../msbuild/parametergroup-element.md)|在指定的 `TaskFactory` 產生之工作上顯示的參數集。|  
 |[Task](../msbuild/task-element-msbuild.md)|傳遞至 `TaskFactory` 以產生工作之執行個體的資料。|  
   
 ### <a name="parent-elements"></a>父項目  
   
-|元素|說明|  
+|元素|描述|  
 |-------------|-----------------|  
 |[專案](../msbuild/project-element-msbuild.md)|[!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 專案檔案的必要根項目。|  
   

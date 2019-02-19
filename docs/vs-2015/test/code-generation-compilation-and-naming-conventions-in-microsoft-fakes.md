@@ -9,10 +9,10 @@ caps.latest.revision: 18
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 70392f50ecd13539012672bf71900c30845af734
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54783367"
 ---
 # <a name="code-generation-compilation-and-naming-conventions-in-microsoft-fakes"></a>Microsoft Fakes 中的程式碼產生、編譯和命名慣例
@@ -285,7 +285,7 @@ attribute of the Assembly element in the .fakes:
 ##  <a name="BKMK_External_resources"></a> 外部資源  
   
 ###  <a name="BKMK_Guidance"></a> 指引  
- [測試 for Continuous Delivery with Visual Studio 2012 – 第 2 章：單元測試測試內部](http://go.microsoft.com/fwlink/?LinkID=255188)  
+ [使用 Visual Studio 2012 測試持續傳遞 - 第 2 章：單元測試：測試內部](http://go.microsoft.com/fwlink/?LinkID=255188)  
   
 ## <a name="see-also"></a>請參閱  
  [使用 Microsoft Fakes 在測試期間隔離程式碼](../test/isolating-code-under-test-with-microsoft-fakes.md)

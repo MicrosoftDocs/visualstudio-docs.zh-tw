@@ -1,5 +1,5 @@
 ---
-title: HOW TO：管理組建組態套用的 Visual Basic 開發者設定 |Microsoft Docs
+title: 如何：在套用 Visual Basic 開發者設定的情況下管理組建組態 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -18,13 +18,13 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: d6a315adb859445c5efa15df5b8366815bfc86d7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54784779"
 ---
-# <a name="how-to-manage-build-configurations-with-visual-basic-developer-settings-applied"></a>HOW TO：在套用 Visual Basic 開發人員設定的情況下管理組建組態
+# <a name="how-to-manage-build-configurations-with-visual-basic-developer-settings-applied"></a>如何：在套用 Visual Basic 開發者設定的情況下管理組建組態
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 根據預設，所有進階組建組態選項會隱藏，並套用 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] Developer 設定。 本主題說明如何手動啟用這些設定。  

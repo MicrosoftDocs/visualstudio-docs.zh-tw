@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d27e104aec3719e3f88e75cb326082913068b44b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54793083"
 ---
 # <a name="filtering-report-views"></a>篩選報表檢視
@@ -23,7 +23,7 @@ ms.locfileid: "54793083"
 
 您可以在分析資料檔案上套用篩選，限制效能報告檢視中顯示的分析資料，並匯出報表檔案。 您可以將報告限制為介於時間戳記值之間的資料，也可以將資料限制為特定處理序和執行緒。 您可以將篩選儲存到檔案，然後匯入儲存的篩選，在不同的分析資料檔案中建立篩選。  
   
- 您也可以在 [摘要] 檢視中使用圖形化時間軸，將報表限制在某個時間區段。 請參閱[如何：從摘要時間軸篩選報表檢視](../profiling/how-to-filter-report-views-from-the-summary-timeline.md)。  
+ 您也可以在 [摘要] 檢視中使用圖形化時間軸，將報表限制在某個時間區段。 請參閱[如何：從摘要時間表篩選報表檢視](../profiling/how-to-filter-report-views-from-the-summary-timeline.md)。  
   
  若要排除報表中的系統和協力廠商程式碼，請參閱[如何：篩選分析工具報告檢視以顯示 Just My Code](../profiling/how-to-filter-profiling-tools-report-views-to-display-just-my-code.md)  
   
@@ -37,7 +37,7 @@ ms.locfileid: "54793083"
   
 2.  請為想要新增至篩選的每個子句，在資料列的下列欄位中選取或輸入值。  
   
-    |欄位|說明|  
+    |欄位|描述|  
     |-----------|-----------------|  
     |**和/或**|如果這個子句和下一個子句必須同時為 true，請選擇**和**以進行結果比對。 如果這個子句或下一個子句可以為 true，請選擇**或**以進行結果比對。|  
     |**欄位**|從顯示的資料欄位清單中選取要用在篩選子句中的報表欄位。|  

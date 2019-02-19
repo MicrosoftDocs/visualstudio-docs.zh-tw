@@ -10,10 +10,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: ae1643b4a01c9bcab3878ec82b1808444cdc7712
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54778626"
 ---
 # <a name="command-line-arguments-for-the-help-content-manager"></a>Help Content Manager 的命令列引數
@@ -57,7 +57,7 @@ hlpctntmgr.exe /operation install /catalogname VisualStudio14 /locale en-us /sou
 |/skuId|否|從安裝來源指定產品的庫存單位 (SKU)，並篩選 /SourceURI 參數識別的書籍。|  
 |/membership|否|-   **最低** -- 會根據您使用 /skuId 切換參數指定的 SKU 安裝最小一組的說明內容。 SKU 和內容集之間的對應會被公開到服務應用程式開發介面中。<br />-   **建議** -- 針對您使用 /skuId 引數指定的 SKU 安裝一組推薦的書籍。 安裝來源是服務應用程式開發介面或 .MSHA。<br />-   **完整** -- 針對您使用 /skuId 引數指定的 SKU 安裝一組完整的書籍。 安裝來源是服務應用程式開發介面或 .MSHA。|  
 |/locationpath|否|指定本機說明內容的預設資料夾。 您只能用這個參數安裝或移動內容。 如果您指定這個參數，則您也必須指定 /silent 參數。|  
-|/silent|否|安裝或移除說明內容，而不提示使用者，或顯示任何包括狀態通知區域中圖示的 UI。 輸出會被記錄在 %Temp% 目錄中的檔案。 **重要：** 若要以無訊息方式安裝內容，您必須使用數位簽署的 .cab 檔，而非 .mshc 檔案。|  
+|/silent|否|安裝或移除說明內容，而不提示使用者，或顯示任何包括狀態通知區域中圖示的 UI。 輸出會被記錄在 %Temp% 目錄中的檔案。 **重要：** 若要以無訊息方式安裝內容，您必須使用數位簽署的 .cab 檔案，而非 .mshc 檔案。|  
 |/launchingApp|否|在沒有父應用程式時啟動說明檢視器，請定義應用程式和目錄的內容。 此切換參數的引數是 *CompanyName*、*ProductName* 和 *VersionNumber* (例如 `/launchingApp Microsoft,VisualStudio,11.0`)。<br /><br /> 若要使用 /silent 參數安裝內容，這是必要的。|  
 |/wait 秒|否|暫停安裝、解除安裝和重新整理作業。 如果已經為了目錄而正在進行作業，處理序會在等候指定的秒數後繼續。 指定 0 會無限期等待。|  
 |/?|否|列出 Help Content Manager 命令列工具的參數及描述。|  

@@ -26,16 +26,16 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: bb859fe5e66dbfcc1f43dfff3c0744c84066054b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54758824"
 ---
 # <a name="using-intellisense"></a>Using IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-IntelliSense 是一些功能的概括詞彙：列出成員、參數資訊、快速諮詢和自動完成文字。 這些功能有助於深入了解您使用的程式碼，追蹤所輸入的參數，以及幾個按鍵即可加入屬性和方法呼叫。  
+IntelliSense 是一些功能的概括詞彙：列出成員、參數資訊，快速諮詢和自動完成文字。 這些功能有助於深入了解您使用的程式碼，追蹤所輸入的參數，以及幾個按鍵即可加入屬性和方法呼叫。  
   
  IntelliSense 的許多方面是特定語言專屬的。 如需不同語言 IntelliSense 的詳細資訊，請參閱＜請參閱＞底下列出的主題。  
   

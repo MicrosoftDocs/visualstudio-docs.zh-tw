@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9c43ba87fea6af474975c759cc18dab74b12e8eb
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54782487"
 ---
 # <a name="callercallee-view---net-memory-sampling-data"></a>呼叫端/被呼叫端檢視 - .NET 記憶體取樣資料
@@ -31,7 +31,7 @@ ms.locfileid: "54782487"
   
  按兩下呼叫端或被呼叫端函式資料列，讓該資料列變成目前的函式。  
   
-|資料行|說明|  
+|資料行|描述|  
 |------------|-----------------|  
 |**處理序 ID**|分析執行的處理序 ID (PID)。|  
 |**處理序名稱**|處理序的名稱。|  

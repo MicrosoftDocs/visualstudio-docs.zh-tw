@@ -1,5 +1,5 @@
 ---
-title: HOW TO：檢視、 儲存和設定組建記錄檔 |Microsoft Docs
+title: 如何：檢視、儲存和設定組建記錄檔 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -10,13 +10,13 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 6826a2f2618ee77944102245781a8df3b2a4596b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54760053"
 ---
-# <a name="how-to-view-save-and-configure-build-log-files"></a>HOW TO：檢視、儲存及設定組建記錄檔
+# <a name="how-to-view-save-and-configure-build-log-files"></a>如何：檢閱、儲存和設定建置記錄檔
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 在 Visual Studio IDE 中建置專案之後，您可以在 [輸出] 視窗中檢視該組建的資訊。 例如，使用這項資訊，您可以針對建置失敗進行疑難排解。 對於 C++ 專案，您也可以在自動建立和儲存的 .txt 檔案中，檢視相同的資訊。 對於受控碼專案，您可以將 [輸出] 視窗的資訊複製並貼至 .txt 檔案，然後自行儲存它。 您也可以使用 IDE 來指定您想要檢視每個組建的資訊種類。  
@@ -43,7 +43,7 @@ ms.locfileid: "54760053"
   
 3.  在 [MSBuild 專案建置輸出詳細資訊層級] 清單中，選擇下列其中一個值，然後選擇 [確定] 按鈕。  
   
-    |詳細資訊層級|說明|  
+    |詳細資訊層級|描述|  
     |---------------------|-----------------|  
     |Quiet|只顯示組建摘要。|  
     |最小|顯示組建的摘要，及已分類為高重要性的錯誤、警告和訊息。|  

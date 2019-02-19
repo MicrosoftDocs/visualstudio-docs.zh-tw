@@ -15,10 +15,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 1433d9ba1f207a0f86902d7afd56db6476b1fd56
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54787088"
 ---
 # <a name="template-parameters"></a>範本參數
@@ -53,7 +53,7 @@ ms.locfileid: "54787088"
 > [!NOTE]
 >  範本參數會區分大小寫。  
   
-|參數|說明|  
+|參數|描述|  
 |---------------|-----------------|  
 |`clrversion`|通用語言執行平台 (CLR) 的最新版本。|  
 |`GUID [1-10]`|GUID；用來取代專案檔中的專案 GUID。 您最多可以指定 10 個唯一的 GUID (例如，`guid1)`。|  
@@ -88,7 +88,7 @@ ms.locfileid: "54787088"
 </TemplateContent>  
 ```  
   
-## <a name="example-using-the-project-name-for-the-namespace-name"></a>範例：使用命名空間名稱的專案名稱  
+## <a name="example-using-the-project-name-for-the-namespace-name"></a>範例：針對命名空間名稱使用專案名稱  
  若要在 Visual C# 類別檔案 Class1.cs 中，針對命名空間使用專案名稱，請使用下列語法：  
   
 ```  

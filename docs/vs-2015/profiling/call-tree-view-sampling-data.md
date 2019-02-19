@@ -13,10 +13,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e5b15badb7b5e98c73ccadab41f67c64d60cb05e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54779222"
 ---
 # <a name="call-tree-view---sampling-data"></a>呼叫樹狀圖檢視 - 取樣資料
@@ -39,7 +39,7 @@ ms.locfileid: "54779222"
   
  設定根節點時，除了所選取節點的樹狀子目錄以外，請從檢視中排除所有其他的項目。 若要將根節點重設回原始節點，請在 [呼叫樹狀圖檢視] 視窗上按一下滑鼠右鍵，然後選取 [重設根目錄]。  
   
-|資料行|說明|  
+|資料行|描述|  
 |------------|-----------------|  
 |**處理序 ID**|分析執行的處理序 ID (PID)。|  
 |**處理序名稱**|處理序的名稱。|  
@@ -57,7 +57,7 @@ ms.locfileid: "54779222"
   
 ## <a name="see-also"></a>請參閱  
  [如何：自訂報表檢視資料行](../profiling/how-to-customize-report-view-columns.md)   
- [呼叫樹狀圖檢視 - 程式碼剖析工具：取樣資料](../profiling/call-tree-view-sampling-data.md)   
+ [呼叫樹狀圖檢視 - 分析工具取樣資料](../profiling/call-tree-view-sampling-data.md)   
  [呼叫樹狀圖檢視 - 取樣](../profiling/call-tree-view-dotnet-memory-sampling-data.md)   
  [呼叫樹狀圖檢視 - 檢測](../profiling/call-tree-view-dotnet-memory-instrumentation-data.md)   
  [呼叫樹狀圖檢視](../profiling/call-tree-view-instrumentation-data.md)

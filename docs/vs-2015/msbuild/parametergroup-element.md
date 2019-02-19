@@ -18,10 +18,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9019eb6265d0a8c4c633aa7eddadd00df0a33596
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54790252"
 ---
 # <a name="parametergroup-element"></a>ParameterGroup 項目
@@ -48,13 +48,13 @@ ms.locfileid: "54790252"
   
 ### <a name="child-elements"></a>子元素  
   
-|元素|說明|  
+|元素|描述|  
 |-------------|-----------------|  
 |[Parameter](../msbuild/parameter-element.md)|包含 `UsingTask``TaskFactory` 所產生之工作的特定參數相關資訊。 項目的名稱是參數的名稱。|  
   
 ### <a name="parent-elements"></a>父項目  
   
-|元素|說明|  
+|元素|描述|  
 |-------------|-----------------|  
 |[UsingTask](../msbuild/usingtask-element-msbuild.md)|提供一種方式，在 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 中登錄工作。 專案中可能有零或多個 `UsingTask` 項目。|  
   

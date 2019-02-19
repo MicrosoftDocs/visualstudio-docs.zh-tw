@@ -7,22 +7,24 @@ author: gregvanl
 ms.author: gregvanl
 ms.workload:
 - vssdk
-ms.openlocfilehash: 720c27b4895abc390926813700bb906c4d0194af
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 905193110d8485399b01c1e3c00791154efee637
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53824284"
+ms.lasthandoff: 02/18/2019
+ms.locfileid: "56335346"
 ---
 # <a name="how-to-use-rule-based-ui-context-for-visual-studio-extensions"></a>HOW TO：使用 Visual Studio 擴充功能的規則為基礎的 UI 內容
+
 Visual Studio 可讓載入 Vspackage 時有特定已知<xref:Microsoft.VisualStudio.Shell.UIContext>s 會啟動。 不過，這些 UI 內容不正常精細，延伸模組作者，讓任何選擇，但選擇可用的 UI 內容，就會啟動點之前，他們其實想要載入 VSPackage。 如需已知的 UI 內容，請參閱<xref:Microsoft.VisualStudio.Shell.KnownUIContexts>。  
   
- 載入封裝可能會造成效能影響，並比所需更快載入它們並非最佳的作法。 Visual Studio 2015 導入規則型 UI 內容，一種機制，可定義精確的條件下啟動 UI 內容，以及相關聯的 Vspackage 會載入延伸模組作者的概念。  
+載入封裝可能會造成效能影響，並比所需更快載入它們並非最佳的作法。 Visual Studio 2015 導入規則型 UI 內容，一種機制，可定義精確的條件下啟動 UI 內容，以及相關聯的 Vspackage 會載入延伸模組作者的概念。  
   
 ## <a name="rule-based-ui-context"></a>以規則為基礎的 UI 內容  
- 「 規則 」 包含新的 UI 內容 (GUID) 和參考一或多個 「 條款 」 的布林運算式結合邏輯"and"、"，"not"作業。 「 條款 」 會在執行階段以動態方式評估，每當任何其條款的變更，並會重新評估運算式。 當運算式評估為 true 時，就會啟動相關聯的 UI 內容。 否則，UI 內容會取消已啟動。  
+
+「 規則 」 包含新的 UI 內容 (GUID) 和參考一或多個 「 條款 」 的布林運算式結合邏輯"and"、"，"not"作業。 「 條款 」 會在執行階段以動態方式評估，每當任何其條款的變更，並會重新評估運算式。 當運算式評估為 true 時，就會啟動相關聯的 UI 內容。 否則，UI 內容會取消已啟動。  
   
- 以規則為基礎的 UI 內容可以使用各種不同的方式：  
+以規則為基礎的 UI 內容可以使用各種不同的方式：  
   
 1. 指定命令和工具視窗的可見性條件的約束。 直到符合 UI 內容規則時，您可以隱藏的命令/工具視窗。  
   
@@ -124,30 +126,30 @@ Visual Studio 可讓載入 Vspackage 時有特定已知<xref:Microsoft.VisualStu
 ```  
   
 ## <a name="term-types"></a>詞彙類型  
- 以下是詞彙的支援的各種類型:  
+
+以下是詞彙的支援的各種類型:  
   
 |詞彙|描述|  
 |-|-|  
 |{nnnnnnnn-nnnn-nnnn-nnnn-nnnnnnnnnnnn}|GUID 是指 UI 內容。 每當 UI 內容因作用中和，則為 false，則一詞將會是 true。|  
 |HierSingleSelectionName:\<模式 >|一詞的作用中的階層架構中的選擇是單一項目和選取的項目名稱符合 「 模式 」 所指定的.Net 規則運算式時，將會是 true。|  
-|UserSettingsStoreQuery:\<查詢 >|「 查詢 」 到使用者設定存放區，必須評估為非零值表示的完整路徑。 查詢分割成"collection"和"propertyName 」，在最後的斜線。|  
-|ConfigSettingsStoreQuery:\<查詢 >|「 查詢 」 到組態設定存放區，必須評估為非零值表示的完整路徑。 查詢分割成"collection"和"propertyName 」，在最後的斜線。|  
-|ActiveProjectFlavor:\<projectTypeGuid >|詞彙將會是 true，每當目前選取的專案特定 （彙總） 和類別，比對指定的專案類型 GUID。|  
-|ActiveEditorContentType:\<contentType >|選取的文件時指定的內容類型文字編輯器，將會是 true 一詞。|  
-|ActiveProjectCapability:\<運算式 >|作用中的專案功能符合提供的運算式時，則為 true 的詞彙。 運算式可以是 VB 類似&#124;CSharp。|  
-|SolutionHasProjectCapability:\<運算式 >|當方案中有任何比對運算式的載入的專案時，與上述類似，但是一詞是如此。|  
-|SolutionHasProjectFlavor:\<projectTypeGuid >|解決方案具備特色 （彙總） 的專案，並比對指定的專案類型 GUID 類別時，將會是 true 一詞。|
+|UserSettingsStoreQuery:\<query>|「 查詢 」 到使用者設定存放區，必須評估為非零值表示的完整路徑。 查詢分割成"collection"和"propertyName 」，在最後的斜線。|  
+|ConfigSettingsStoreQuery:\<query>|「 查詢 」 到組態設定存放區，必須評估為非零值表示的完整路徑。 查詢分割成"collection"和"propertyName 」，在最後的斜線。|  
+|ActiveProjectFlavor:\<projectTypeGuid>|詞彙將會是 true，每當目前選取的專案特定 （彙總） 和類別，比對指定的專案類型 GUID。|  
+|ActiveEditorContentType:\<contentType>|選取的文件時指定的內容類型文字編輯器，將會是 true 一詞。|  
+|ActiveProjectCapability:\<Expression>|作用中的專案功能符合提供的運算式時，則為 true 的詞彙。 運算式可以是 VB 類似&#124;CSharp。|  
+|SolutionHasProjectCapability:\<Expression>|當方案中有任何比對運算式的載入的專案時，與上述類似，但是一詞是如此。|  
+|SolutionHasProjectFlavor:\<projectTypeGuid>|解決方案具備特色 （彙總） 的專案，並比對指定的專案類型 GUID 類別時，將會是 true 一詞。|
 
-
-  
 ## <a name="compatibility-with-cross-version-extension"></a>副檔名為跨版本相容性  
- 以規則為基礎的 UI 內容是在 Visual Studio 2015 的新功能，並不會移轉至較早版本。 不移轉到較早的版本建立為目標的 Visual Studio 的多個版本的延伸模組/套件有問題。 這些版本會自動載入在 Visual Studio 2013 及更早版本，但可受益於將 UI 內容規則為基礎來防止正在自動載入 Visual Studio 2015 中。  
+
+以規則為基礎的 UI 內容是在 Visual Studio 2015 的新功能，並不會移轉至較早版本。 不移轉到較早的版本建立為目標的 Visual Studio 的多個版本的延伸模組/套件有問題。 這些版本會自動載入在 Visual Studio 2013 及更早版本，但可受益於將 UI 內容規則為基礎來防止正在自動載入 Visual Studio 2015 中。  
   
- 為了支援這類套件，AutoLoadPackages 在登錄中的項目現在可以提供其 [值] 欄位來表示在 Visual Studio 2015 及更新版本，應該略過此項目中的旗標。 這可以加上旗標選項，來完成<xref:Microsoft.VisualStudio.Shell.PackageAutoLoadFlags>。 現在可以將加入 Vspackage **SkipWhenUIContextRulesActive**選項設定為其<xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute>屬性來指出應該忽略的項目，在 Visual Studio 2015 和更新版本。  
-  
+為了支援這類套件，AutoLoadPackages 在登錄中的項目現在可以提供其 [值] 欄位來表示在 Visual Studio 2015 及更新版本，應該略過此項目中的旗標。 這可以加上旗標選項，來完成<xref:Microsoft.VisualStudio.Shell.PackageAutoLoadFlags>。 現在可以將加入 Vspackage **SkipWhenUIContextRulesActive**選項設定為其<xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute>屬性來指出應該忽略的項目，在 Visual Studio 2015 和更新版本。  
 ## <a name="extensible-ui-context-rules"></a>可延伸的 UI 內容規則  
- 某些情況下，封裝無法使用靜態的 UI 內容規則。 例如，假設您有支援擴充性，使得命令狀態根據匯入的 MEF 提供者所支援的編輯器類型的封裝。 如果沒有延伸模組支援目前的編輯類型，此命令會啟用。 在此情況下，封裝本身無法使用靜態的 UI 內容規則，因為條款會根據哪一個 MEF 擴充功能可變更。  
+
+某些情況下，封裝無法使用靜態的 UI 內容規則。 例如，假設您有支援擴充性，使得命令狀態根據匯入的 MEF 提供者所支援的編輯器類型的封裝。 如果沒有延伸模組支援目前的編輯類型，此命令會啟用。 在此情況下，封裝本身無法使用靜態的 UI 內容規則，因為條款會根據哪一個 MEF 擴充功能可變更。  
   
- 若要支援這類套件，以規則為基礎的 UI 內容支援硬式編碼運算式"*"表示所有下列條款會與加入或者。 這可讓主要的封裝，以定義已知的規則式 UI 內容，並將此內容中其命令狀態。 之後針對主要封裝任何 MEF 擴充功能也可以新增其條款，它支援而不會影響其他條款或主要運算式編輯器。  
+若要支援這類套件，以規則為基礎的 UI 內容支援硬式編碼運算式"*"表示所有下列條款會與加入或者。 這可讓主要的封裝，以定義已知的規則式 UI 內容，並將此內容中其命令狀態。 之後針對主要封裝任何 MEF 擴充功能也可以新增其條款，它支援而不會影響其他條款或主要運算式編輯器。  
   
- 建構函式<xref:Microsoft.VisualStudio.Shell.ProvideExtensibleUIContextRuleAttribute.%23ctor%2A>文件會示範可延伸的 UI 內容規則的語法。
+建構函式<xref:Microsoft.VisualStudio.Shell.ProvideExtensibleUIContextRuleAttribute.%23ctor%2A>文件會示範可延伸的 UI 內容規則的語法。

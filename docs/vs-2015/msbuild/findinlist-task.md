@@ -18,10 +18,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f5011d1b9e83b379be8eb4b23ec6a7aac649ef9a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54774552"
 ---
 # <a name="findinlist-task"></a>FindInList 工作
@@ -33,7 +33,7 @@ ms.locfileid: "54774552"
 ## <a name="parameters"></a>參數  
  下表說明 [FindInList 工作](../msbuild/findinlist-task.md) 的參數。  
   
-|參數|說明|  
+|參數|描述|  
 |---------------|-----------------|  
 |`CaseSensitive`|選擇性的 `Boolean` 參數。<br /><br /> 如果為 `true`，搜尋會區分大小寫；否則不區分大小寫。 預設值為 `true`。|  
 |`FindLastMatch`|選擇性的 `Boolean` 參數。<br /><br /> 如果為 `true`，則傳回最後一個相符項目；否則傳回第一個相符項目。 預設值為 `false`。|  

@@ -21,10 +21,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 4c5066709002c815e2cdad549d424af549eb0bca
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54784418"
 ---
 # <a name="setenv-task"></a>SetEnv 工作
@@ -36,7 +36,7 @@ ms.locfileid: "54784418"
 ## <a name="parameters"></a>參數  
  下表說明 **SetEnv** 工作的參數。  
   
-|參數|說明|  
+|參數|描述|  
 |---------------|-----------------|  
 |**名稱**|必要的 **String** 參數。<br /><br /> 環境變數的名稱。|  
 |**OutputEnvironmentVariable**|選擇性的 **String** 輸出參數。<br /><br /> 包含指派給環境變數 (由 **Name** 參數所指定) 的值。|  

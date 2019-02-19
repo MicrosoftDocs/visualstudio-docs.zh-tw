@@ -13,26 +13,26 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9d90e2fcdd07738aaa9cdda28f8d131767bf7ffe
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 04997bfed66da015c4aef82f4741218c88b9ecd1
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55011724"
+ms.lasthandoff: 02/18/2019
+ms.locfileid: "56335023"
 ---
 # <a name="rdtreadlock-usage"></a>RDT_ReadLock 使用方式
 
-<xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS> 這是旗標可提供邏輯以鎖定文件中執行文件資料表 (RDT)，這目前在 Visual Studio IDE 中開啟的所有文件的清單。 這個旗標會判斷文件開啟時，以及文件是在使用者介面中顯示或隱藏在記憶體中保留。
+[_VSRDTFLAGS。RDT_ReadLock](<xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS.RDT_ReadLock>)提供邏輯以鎖定文件中執行文件資料表 (RDT)，這目前在 Visual Studio IDE 中開啟的所有文件清單的旗標。 這個旗標會判斷文件開啟時，以及文件是在使用者介面中顯示或隱藏在記憶體中保留。
 
-一般而言，您會使用<xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS>下列其中之一為 true 時：
+一般而言，您會使用[_VSRDTFLAGS。RDT_ReadLock](<xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS.RDT_ReadLock>)下列其中之一為 true 時：
 
-- 當您想無形的方式開啟的文件和唯讀的但它尚未建立的<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>應該擁有。
+- 您想要無形的方式開啟的文件和唯讀的但它尚未建立的<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>應該擁有它。
 
-- 當您希望使用者會提示您儲存使用者在 UI 中顯示，並嘗試將它關閉之前無形的方式開啟的文件。
+- 您希望使用者會提示您儲存使用者在 UI 中顯示，並嘗試將它關閉之前無形的方式開啟的文件。
 
 ## <a name="how-to-manage-visible-and-invisible-documents"></a>How to Manage 可見和不可見的文件
 
-當使用者在 UI 中，開啟文件<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>文件的擁有者，必須先建立和<xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS>旗標必須設定。 如果沒有<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>可以建立擁有者，則當使用者按一下時，將不會儲存文件**全部儲存**或關閉 IDE。 這表示如果已開啟文件無形的方式修改記憶體中，且使用者是系統提示您關閉時儲存文件，或如果儲存**全部儲存**選擇，則`RDT_ReadLock`無法使用。 相反地，您必須使用`RDT_EditLock`，並註冊<xref:Microsoft.VisualStudio.Shell.Interop.IVsDocumentLockHolder>當<xref:Microsoft.VisualStudio.Shell.Interop.__VSREGDOCLOCKHOLDER>旗標。
+當使用者在 UI 中，開啟文件<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>文件的擁有者，必須先建立和[_VSRDTFLAGS。RDT_EditLock](<xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS.RDT_EditLock>)旗標必須設定。 如果沒有<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>可以建立擁有者，則當使用者按一下時，將不會儲存文件**全部儲存**或關閉 IDE。 這表示如果已開啟文件無形的方式修改記憶體中，且使用者是系統提示您關閉時儲存文件，或如果儲存**全部儲存**選擇，則`RDT_ReadLock`無法使用。 相反地，您必須使用`RDT_EditLock`，並註冊<xref:Microsoft.VisualStudio.Shell.Interop.IVsDocumentLockHolder>當[__VSREGDOCLOCKHOLDER。RDLH_WeakLockHolder](<xref:Microsoft.VisualStudio.Shell.Interop.__VSREGDOCLOCKHOLDER.RDLH_WeakLockHolder>)旗標。
 
 ## <a name="rdteditlock-and-document-modification"></a>RDT_EditLock 和文件修改
 

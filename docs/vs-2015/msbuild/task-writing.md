@@ -14,10 +14,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ef637126c75dd05eea2e8bfca76f0fe0bd13ac75
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54794278"
 ---
 # <a name="task-writing"></a>工作撰寫
@@ -163,7 +163,7 @@ public string RequiredProperty
   
 ## <a name="example"></a>範例  
   
-### <a name="description"></a>說明  
+### <a name="description"></a>描述  
  以下 [!INCLUDE[csprcs](../includes/csprcs-md.md)] 類別會示範衍生自 <xref:Microsoft.Build.Utilities.Task> 協助程式類別的工作。 此工作會傳回 `true`，指出是否成功。  
   
 ### <a name="code"></a>程式碼  
@@ -187,7 +187,7 @@ namespace SimpleTask1
   
 ## <a name="example"></a>範例  
   
-### <a name="description"></a>說明  
+### <a name="description"></a>描述  
  以下 [!INCLUDE[csprcs](../includes/csprcs-md.md)] 類別會示範實作 <xref:Microsoft.Build.Framework.ITask> 介面的工作。 此工作會傳回 `true`，指出是否成功。  
   
 ### <a name="code"></a>程式碼  
@@ -245,7 +245,7 @@ namespace SimpleTask2
   
 ## <a name="example"></a>範例  
   
-### <a name="description"></a>說明  
+### <a name="description"></a>描述  
  此 [!INCLUDE[csprcs](../includes/csprcs-md.md)] 類別會示範衍生自 <xref:Microsoft.Build.Utilities.Task> 協助程式類別的工作。 它具有必要的字串屬性，會引發所有已註冊記錄器顯示的事件。  
   
 ### <a name="code"></a>程式碼  
@@ -253,7 +253,7 @@ namespace SimpleTask2
   
 ## <a name="example"></a>範例  
   
-### <a name="description"></a>說明  
+### <a name="description"></a>描述  
  下例示範的專案檔會叫用前一個範例的工作：SimpleTask3。  
   
 ### <a name="code"></a>程式碼  

@@ -16,10 +16,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 300088cb8051f53f5f1afbfe41be92dac9853b53
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/24/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54834317"
 ---
 # <a name="vsinstr-warnings"></a>VSInstr 警告
@@ -27,7 +27,7 @@ ms.locfileid: "54834317"
 
 下表列出 VSInstr.exe 工具所發出的警告。 若要隱藏警告訊息使其不出現，您可以使用 NOWARN 選項以及警告編號。  
   
-|警告編號|說明|  
+|警告編號|描述|  
 |--------------------|-----------------|  
 |**VSP2000**|內部錯誤。 無法取得這個可執行檔的模組檔案名稱。|  
 |**VSP2001**|\<組件名稱> 是具備強式名稱的組件。 必須重新簽署後才能執行。<br /><br /> 檢測簽署的組件之後，就會發生這個警告。 您可以使用 sn.exe 工具來重新簽署二進位檔，或暫時關閉強式名稱需求。 如需詳細資訊，請參閱 [Sn.exe (強式名稱工具)](http://msdn.microsoft.com/library/c1d2b532-1b8e-4c7a-8ac5-53b801135ec6)。|  

@@ -1,5 +1,5 @@
 ---
-title: HOW TO：在專案檔中使用保留的 XML 字元 | Microsoft Docs
+title: 如何：在專案檔中使用保留的 XML 字元 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: msbuild
@@ -13,13 +13,13 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9943378043c7ddd5787d32b331334555b27cd947
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54780636"
 ---
-# <a name="how-to-use-reserved-xml-characters-in-project-files"></a>HOW TO：在專案檔中使用保留的 XML 字元
+# <a name="how-to-use-reserved-xml-characters-in-project-files"></a>如何：在專案檔中使用保留的 XML 字元
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   

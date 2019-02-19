@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: abc5f1f6a15271fa3ec530658add2b6ca3027959
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54804091"
 ---
 # <a name="modules-view---net-memory-sampling-data"></a>模組檢視 - .NET 記憶體取樣資料
@@ -25,7 +25,7 @@ ms.locfileid: "54804091"
   
  配置記憶體之陳述式的原始程式檔行號會列在函式節點下，且執行配置之指示的位址會列在行節點下。 程式行資料和指令資料的內含與專屬值一律相同。  
   
-|資料行|說明|  
+|資料行|描述|  
 |------------|-----------------|  
 |**名稱**|模組、函式、行號或指令位址的名稱。|  
 |**處理序 ID**|分析執行的處理序 ID (PID)。|  

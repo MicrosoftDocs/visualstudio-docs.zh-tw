@@ -16,10 +16,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: dbc1bff5ad547a946efa3edcd5c21cc6de4fad07
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54780523"
 ---
 # <a name="troubleshooting-broken-references"></a>Troubleshooting Broken References
@@ -40,7 +40,7 @@ ms.locfileid: "54780523"
   以下是這些問題的補救方法。  
   
 > [!NOTE]
->  組件中的檔案是使用專案檔中的絕對路徑來參考的。 因此，在多開發人員環境中工作的使用者，可能會遺漏本機環境中參考的組件。 若要避免這些錯誤，您最好在這些情況下新增專案對專案參考。 如需詳細資訊，請參閱[NIB 如何：新增或移除參考使用加入參考對話方塊](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)並[使用組件設計程式](http://msdn.microsoft.com/library/25918b15-701d-42c7-95fc-c290d08648d6)。  
+>  組件中的檔案是使用專案檔中的絕對路徑來參考的。 因此，在多開發人員環境中工作的使用者，可能會遺漏本機環境中參考的組件。 若要避免這些錯誤，您最好在這些情況下新增專案對專案參考。 如需詳細資訊，請參閱 [NIB 如何：使用加入參考對話方塊加入或移除參考](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)和[使用組件設計程式](http://msdn.microsoft.com/library/25918b15-701d-42c7-95fc-c290d08648d6)。  
   
 ## <a name="reference-path-is-incorrect"></a>參考路徑不正確  
  如果在不同的電腦上共用專案，則當元件位於每部電腦的不同目錄時，可能會找不到某些參考。 參考會儲存在元件檔名稱 (例如 MyComponent) 之下。 將參考新增至專案時，會將元件檔的資料夾位置 (例如 C:\MyComponents\\) 附加至 **ReferencePath** 專案屬性。  
@@ -73,7 +73,7 @@ ms.locfileid: "54780523"
   
 -   如果電腦上的其他位置已有此參考，請從該位置讀取。  
   
--   如需詳細資訊，請參閱[NIB 如何：新增或移除參考使用加入參考對話方塊](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)。  
+-   如需詳細資訊，請參閱 [NIB 如何：使用加入參考對話方塊加入或移除參考](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)。  
   
 ## <a name="referenced-file-has-been-renamed"></a>參考的檔案已被重新命名  
  參考的檔案有可能已被重新命名。  
@@ -82,10 +82,10 @@ ms.locfileid: "54780523"
   
 -   刪除參考，然後新增已重新命名的檔案參考。  
   
--   如果電腦上的其他位置已有此參考，您必須從該位置讀入。 如需詳細資訊，請參閱[NIB 如何：新增或移除參考使用加入參考對話方塊](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)。  
+-   如果電腦上的其他位置已有此參考，您必須從該位置讀入。 如需詳細資訊，請參閱 [NIB 如何：使用加入參考對話方塊加入或移除參考](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)。  
   
 ## <a name="network-connection-or-authentication-has-failed"></a>網路連線或驗證失敗  
- 造成檔案無法存取的原因可能有許多；例如，網路連線失敗或驗證失敗。 每個原因可能都有獨特的修復方法；例如，您可能必須連絡本機系統管理員以存取必要資源。 不過，刪除參考並修復使用它的程式碼一定是可行的方法。 如需詳細資訊，請參閱[NIB 如何：新增或移除參考使用加入參考對話方塊](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)。  
+ 造成檔案無法存取的原因可能有許多；例如，網路連線失敗或驗證失敗。 每個原因可能都有獨特的修復方法；例如，您可能必須連絡本機系統管理員以存取必要資源。 不過，刪除參考並修復使用它的程式碼一定是可行的方法。 如需詳細資訊，請參閱 [NIB 如何：使用加入參考對話方塊加入或移除參考](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)。  
   
 ## <a name="com-component-is-not-installed-on-computer"></a>COM 元件未安裝在電腦上  
  如果一位使用者加入了 COM 元件的參考，而第二位使用者嘗試在未安裝此元件的電腦上執行程式碼，則第二位使用者將收到參考中斷的錯誤。 在第二部電腦上安裝元件將會修正此錯誤。 如需如何在您的專案中使用 COM 元件參考的詳細資訊，請參閱 [.NET Framework 應用程式中的 COM 互通性](http://msdn.microsoft.com/library/f5a72143-c268-4dff-a019-974ad940e17d)。  
@@ -93,4 +93,4 @@ ms.locfileid: "54780523"
 ## <a name="see-also"></a>請參閱  
  [專案設計工具簡介](http://msdn.microsoft.com/898dd854-c98d-430c-ba1b-a913ce3c73d7)   
  [專案設計工具、參考頁 (Visual Basic)](../ide/reference/references-page-project-designer-visual-basic.md)   
- [(NIB) 如何︰新增或移除參考使用加入參考對話方塊](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)
+ [NIB 如何：使用加入參考對話方塊加入或移除參考](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)

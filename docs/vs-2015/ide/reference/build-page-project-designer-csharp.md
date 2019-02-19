@@ -15,10 +15,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 066535309c7001c3f7a951f68321f7530a06ed05
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54805317"
 ---
 # <a name="build-page-project-designer-c"></a>專案設計工具、建置頁 (C#)
@@ -112,7 +112,7 @@ ms.locfileid: "54805317"
  指定將要在其中處理文件註解之檔案的名稱。 如需詳細資訊，請參閱 [/doc (C# 編譯器選項)](http://msdn.microsoft.com/library/849eea59-c936-4311-bad8-d07404480f2a)。  
   
  **註冊 COM Interop**  
- 表示您的 Managed 應用程式將會公開 COM 物件 (COM 可呼叫包裝函式)，讓 COM 物件可與 Managed 應用程式互動。 您必須在 [專案設計工具] 的 [應用程式][](../../ide/reference/application-page-project-designer-visual-basic.md) 頁面中，將此應用程式的 [輸出類型] 屬性設定為 [類別庫]，才能使用 [註冊 COM Interop] 屬性。 如需您想要加入 [!INCLUDE[csprcs](../../includes/csprcs-md.md)] 應用程式並公開為 COM 物件的範例類別，請參閱[範例 COM 類別](http://msdn.microsoft.com/library/6504dea9-ad1c-4993-a794-830fec5270af)。  
+ 表示您的 Managed 應用程式將會公開 COM 物件 (COM 可呼叫包裝函式)，讓 COM 物件可與 Managed 應用程式互動。 您必須在 [專案設計工具] 的 [[應用程式]](../../ide/reference/application-page-project-designer-visual-basic.md) 頁面中，將此應用程式的 [輸出類型] 屬性設定為 [類別庫]，才能使用 [註冊 COM Interop] 屬性。 如需您想要加入 [!INCLUDE[csprcs](../../includes/csprcs-md.md)] 應用程式並公開為 COM 物件的範例類別，請參閱[範例 COM 類別](http://msdn.microsoft.com/library/6504dea9-ad1c-4993-a794-830fec5270af)。  
   
  **產生序列化組件**  
  指定編譯器是否會使用 XML 序列化程式產生器工具 (Sgen.exe) 來建立 XML 序列化組件。 如果您已在程式碼中使用該類別將類型序列化，則序列化組件可提升 <xref:System.Xml.Serialization.XmlSerializer> 的啟動效能。 此選項預設為 [自動]，指定只有您已在程式碼中使用 <xref:System.Xml.Serialization.XmlSerializer> 將類型編碼為 XML 時，才會產生序列化組件。 [關閉] 指定不論您的程式碼是否使用 <xref:System.Xml.Serialization.XmlSerializer>，永遠不會產生序列化組件。 **On** 指定永遠會產生序列化組件。 序列化組件將命名為 `TypeName`.XmlSerializers.dll。 如需詳細資訊，請參閱 [XML 序列化程式產生器工具 (Sgen.exe)](http://msdn.microsoft.com/library/cc1d1f1c-fb26-4be9-885a-3fe84c81cec6)。  
