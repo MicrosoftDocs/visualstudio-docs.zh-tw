@@ -12,19 +12,19 @@ helpviewer_keywords:
 ms.assetid: bb6291e1-596d-4af0-9f22-5fd713d6b84b
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f84b18cd3d4bfbae949ba4dd3199bace6604148f
-ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
+ms.openlocfilehash: ec262838de1a154e35a13f0a1b14e7b075f934de
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54204480"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54941979"
 ---
 # <a name="inspect-variables-in-the-autos-and-locals-windows"></a>檢查 [自動變數] 和 [區域變數] 視窗中的變數
 
-**自動變數**並**區域變數**在偵錯時，windows 會顯示變數的值。 在偵錯工作階段期間，才可以使用 windows。 **自動變數**視窗會顯示目前中斷點周圍使用的變數。 **區域變數**視窗會顯示在本機的範圍中，通常是目前函式或方法定義的變數。 如果這是您第一次嘗試對程式碼進行偵錯，建議您先閱讀[適用於完全初學者的偵錯](../debugger/debugging-absolute-beginners.md)和[透過撰寫更好的 C# 程式碼來修正 Bug](../debugger/write-better-code-with-visual-studio.md)，再瀏覽本文。
+**自動變數**並**區域變數**在偵錯時，windows 會顯示變數的值。 在偵錯工作階段期間，才可以使用 windows。 **自動變數**視窗會顯示目前中斷點周圍使用的變數。 **區域變數**視窗會顯示在本機的範圍中，通常是目前函式或方法定義的變數。 如果這是您嘗試偵錯程式碼的第一次，您可能想要閱讀[偵錯適用於徹底初學者](../debugger/debugging-absolute-beginners.md)並[偵錯的技術和工具](../debugger/write-better-code-with-visual-studio.md)之前，先透過這篇文章。
 
  **自動變數**視窗可供C#，Visual Basic、 c + + 和 Python 程式碼，但不適用於 JavaScript 或F#。
   
@@ -150,5 +150,5 @@ private static int subtractVars(int i, int j)
   
 ## <a name="see-also"></a>另請參閱  
  [什麼是偵錯？](../debugger/what-is-debugging.md)  
- [透過撰寫更好的 C# 程式碼來修正 Bug](../debugger/write-better-code-with-visual-studio.md)  
+ [偵錯技術和工具](../debugger/write-better-code-with-visual-studio.md)  
  [第一次查看偵錯](../debugger/debugger-feature-tour.md)[偵錯工具視窗](../debugger/debugger-windows.md)

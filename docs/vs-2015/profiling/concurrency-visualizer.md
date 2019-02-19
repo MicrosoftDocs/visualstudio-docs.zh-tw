@@ -26,7 +26,7 @@ ms.locfileid: "54779113"
 # <a name="concurrency-visualizer"></a>並行視覺化檢視
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-注意:
+注意]
 >  並行視覺化檢視是 Visual Studio 的選擇性擴充功能。 從下列連結下載並行視覺化檢視和並行視覺化檢視收集工具：  
 > 
 > - 下載              [並行視覺化檢視](https://visualstudiogallery.msdn.microsoft.com/a6c24ce9-beec-4545-9261-293061436ee9) 擴充功能。  

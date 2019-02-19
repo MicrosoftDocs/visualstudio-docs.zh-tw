@@ -41,7 +41,7 @@ HRESULT WINAPI SetThreadCount(int threadCount);
  要使用的執行緒數目。  
   
 ## <a name="return-value"></a>傳回值  
- 如已更新執行緒計數，則為 <!-- TODO: review code entity reference <xref:assetId:///HRESULT?qualifyHint=False&amp;autoUpgrade=True>  -->HRESULT<!-- TODO: review code entity reference <xref:assetId:///SUCCEEDED?qualifyHint=False&amp;autoUpgrade=True>  --> 和已設定的 SUCCEEDED 位元。  
+ 如已更新執行緒計數，則為已設定 [SUCCEEDED](<!-- TODO: review code entity reference <xref:assetId:///SUCCEEDED?qualifyHint=False&amp;autoUpgrade=True>  -->) 位元的 [HRESULT](<!-- TODO: review code entity reference <xref:assetId:///HRESULT?qualifyHint=False&amp;autoUpgrade=True>  -->)。  
   
 ## <a name="requirements"></a>需求  
  **標頭：** FileTracker.h

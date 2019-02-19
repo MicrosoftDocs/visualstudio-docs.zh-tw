@@ -120,7 +120,7 @@ Edit.ReplaceInFiles /case /pattern:regex var[1-3]+ oldpar
 >Edit.Find ^^t /regex  
 ```  
   
- 無論插入號位於引號內部或外部，功能都相同。 如果插入號是該程式行的最後一個字元，則會將其忽略。 這裡顯示的範例示範如何搜尋模式 "^t"。  
+ 無論插入號位於引號內部或外部，功能都相同。 如果插入號是該程式行的最後一個字元，則會將其忽略。 這裡顯示的範例示範如何搜尋模式 “^t”。  
   
 ## <a name="use-quotes-for-path-names-with-spaces"></a>使用引號括住包含空格的路徑名稱  
  例如，如果您想要開啟之檔案的路徑包含空格，則必須用雙引號括住包含空格的路徑或路徑區段：**C:\\"Program Files"** 或 **"C:\Program Files"**。  

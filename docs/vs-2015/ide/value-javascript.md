@@ -19,7 +19,7 @@ ms.contentlocale: zh-TW
 ms.lasthandoff: 01/23/2019
 ms.locfileid: "54799138"
 ---
-# <a name="ltvaluegt-javascript"></a>&lt;value&gt; (JavaScript)
+# <a name="ltvaluegt-javascript"></a>&lt;&gt; (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 指定文件資訊`get`和`set`ECMAScript 3 屬性的函式。  

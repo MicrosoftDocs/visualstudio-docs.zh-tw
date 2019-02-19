@@ -39,7 +39,7 @@ ms.locfileid: "54793202"
 5.  確認 .vstemplate 檔案的 XML 遵守 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 範本結構描述。 如需 .vstemplate 結構描述的詳細資訊，請參閱 [Visual Studio 範本結構描述參考](../extensibility/visual-studio-template-schema-reference.md)。  
   
     > [!NOTE]
-    >  撰寫 `xmlns`vstemplate`VSTemplate` 檔案時若要取得 IntelliSense 支援，請在  元素中新增 http://schemas.microsoft.com/developer/vstemplate/2005 屬性並為它指派  值。  
+    >  撰寫 .vstemplate 檔案時若要取得 IntelliSense 支援，請在 `VSTemplate` 項目中新增 `xmlns` 屬性並為它指派 http://schemas.microsoft.com/developer/vstemplate/2005 值。  
   
 6.  儲存並關閉.vstemplate 檔案。  
   

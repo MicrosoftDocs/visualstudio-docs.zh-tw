@@ -1,25 +1,20 @@
 ---
 title: 為 RequireJS 自訂 IntelliSense |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: 2be07ef8-9c08-444b-a21a-22a4fe6386a3
 caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 7b1c32d0096742c2364e5ac3b8afe59b39152b2b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 5bcf5f27653782d0280082713306e142702559c8
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49246710"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54770311"
 ---
 # <a name="customizing-intellisense-for-requirejs"></a>為 RequireJS 自訂 IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +30,7 @@ ms.locfileid: "49246710"
 -   在 JSProj 專案中自訂 RequireJS，這些專案可用來建置 Apache Cordova 應用程式、Windows 市集應用程式和 LightSwitch HTML 應用程式  
   
 ## <a name="customize-requirejs-in-aspnet-projects"></a>在 ASP.NET 專案中自訂 RequireJS  
- 目前的 JavaScript 檔案參考名為 require.js 的檔案時，會自動啟用對 RequireJS 的支援 (如需詳細資訊，請參閱 < 判斷 IntelliSense 的內容一節[JavaScript IntelliSense](../ide/javascript-intellisense.md))。 在 ASP.NET 專案中參考 require.js 通常是使用 / /\<參考 / > 指示詞 _references.js 檔案中。  
+ 當目前的 JavaScript 檔案參考名為 require.js 的檔案時，會自動啟用對 RequireJS 的支援 (如需詳細資訊，請參閱 [JavaScript IntelliSense](../ide/javascript-intellisense.md) 中的＜判斷 IntelliSense 的內容＞一節)。 在 ASP.NET 專案中，通常是在 _references.js 檔案中使用 /// \<reference/> 指示詞來參考 require.js。  
   
 ### <a name="configure-the-data-main-attribute-in-an-aspnet-project"></a>在 ASP.NET 專案中設定 data-main 屬性  
  為了精確地模擬應用程式在執行時的運作方式，JavaScript 編輯器必須知道設定 require.js 時所要先載入的檔案。 這通常會使用參考 require.js 之指令碼項目上的 `data-main` 屬性，在您的應用程式 HTML 檔案中進行設定，如下所示。  
@@ -44,14 +39,14 @@ ms.locfileid: "49246710"
 <script src="js/require.js" data-main="js/app.js"></script>  
 ```  
   
- 在這個範例中，系統會在 require.js 之後立即載入 data-main (js/app.js) 所參考的指令碼。 立即載入的檔案是最先設定 RequireJS 使用量的最佳位置 (使用`require.config()`)。若要通知 JavaScript 編輯器哪個檔案要用於`data-main`在您的應用程式中，加入`data-main`屬性，然後再修改 / /\<參考 / > 您的應用程式中參考 require.js 的指示詞。 例如，您可以使用這個指示詞：  
+ 在這個範例中，系統會在 require.js 之後立即載入 data-main (js/app.js) 所參考的指令碼。 立即載入的檔案是最先設定 RequireJS 使用量 (使用 `require.config()`) 的最佳位置。若要通知 JavaScript 編輯器哪個檔案要用於應用程式中的 `data-main`，請新增 `data-main` 屬性，然後修改應用程式中參考 require.js 的 /// \<reference/> 指示詞。 例如，您可以使用這個指示詞：  
   
 ```javascript  
 /// <reference path="js/require.js" data-main="js/app.js" />  
 ```  
   
 ### <a name="configure-the-application-start-page-in-an-aspnet-project"></a>在 ASP.NET 專案中設定應用程式起始頁  
- 當應用程式執行時，RequireJS 假設相對檔案路徑 (例如，"...\\"路徑） 是相對於載入 require.js 程式庫的 HTML 檔案。 當您在 Visual Studio 編輯器中為 ASP.NET 專案撰寫程式碼時，這個起始頁不明，您必須告知編輯器使用相對檔案路徑時所要使用的起始頁。 若要這樣做，請新增`start-page`屬性設定為您 / /\<參考 / > 指示詞。  
+ 當應用程式執行時，RequireJS 假設相對檔案路徑 (例如，"...\\"路徑） 是相對於載入 require.js 程式庫的 HTML 檔案。 當您在 Visual Studio 編輯器中為 ASP.NET 專案撰寫程式碼時，這個起始頁不明，您必須告知編輯器使用相對檔案路徑時所要使用的起始頁。 為了達成這個目的，請將 `start-page` 屬性新增至您的 /// \<reference/> 指示詞。  
   
 ```javascript  
 /// <reference path="js/require.js" data-main="js/app.js" start-page="/app/index.html" />  
@@ -64,8 +59,5 @@ ms.locfileid: "49246710"
   
  在 JSProj 專案檔中不需要 ASP.NET 專案所需的自訂步驟。 換言之，系統會自動載入參考 require.js 的指令碼標記上的 `data-main` 屬性所使用的指令碼檔，以便設定 require.js。 參考 require.js 的 HTML 檔也會做為應用程式的起始頁。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [JavaScript IntelliSense](../ide/javascript-intellisense.md)
-
-
-

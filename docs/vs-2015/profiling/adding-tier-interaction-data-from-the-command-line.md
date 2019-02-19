@@ -1,14 +1,9 @@
 ---
 title: 從命令列加入階層互動資料 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - tier interaction profiling method
 - profiling tools,tier interaction method
@@ -16,13 +11,13 @@ ms.assetid: 5a35647f-03f2-4555-8eeb-fda7e0080e67
 caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: b3912e823a6e6ee32488fcda94616aef414d3d22
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 9c591af9259a4a45af762e79552c99671a094d0f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51775299"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54778879"
 ---
 # <a name="adding-tier-interaction-data-from-the-command-line"></a>從命令列加入階層互動資料
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +34,7 @@ ms.locfileid: "51775299"
   
  **在遠端電腦上收集 TIP 資料**  
   
- 若要在遠端電腦上收集階層互動資料，您必須複製**vs\_profiler\_**_\<平台 >_ **\_**_\<語言 >_**.exe**檔案 _%vsinstalldir%_**\Team Tools\Performance Tools\Setups**資料夾，Visual Studio 的電腦，以在遠端電腦，並將它安裝。 您無法使用 [Visual Studio 遠端工具](http://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c) 下載封裝的程式碼剖析工具。  
+ 若要在遠端電腦上收集階層互動資料，您必須從 Visual Studio 電腦的 _%VSInstallDir%_**\Team Tools\Performance Tools\Setups** 資料夾中，將 **vs\_profiler\_**_\<平台>_**\_**_\<語言>_**.exe** 檔案複製到遠端電腦並加以安裝。 您無法使用 [Visual Studio 遠端工具](http://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c) 下載封裝的程式碼剖析工具。  
   
  **TIP 報告**  
   
@@ -159,6 +154,3 @@ vsperfaspnetcmd /tip /trace http://localhost/MyWebApp
 ```  
   
  如需 VSPerfASPNETCmd 的詳細資訊，請參閱[使用 VSPerfASPNETCmd 快速進行網站程式碼剖析](../profiling/rapid-web-site-profiling-with-vsperfaspnetcmd.md)。
-
-
-

@@ -44,7 +44,7 @@ HRESULT WINAPI StartTrackingContext(LPCTSTR intermediateDirectory, LPCTSTR taskN
  找到追蹤內容。 這個名稱是用來建立記錄檔的名稱。  
   
 ## <a name="return-value"></a>傳回值  
- 如已建立追蹤內容，則為 <!-- TODO: review code entity reference <xref:assetId:///HRESULT?qualifyHint=False&amp;autoUpgrade=True>  -->HRESULT<!-- TODO: review code entity reference <xref:assetId:///SUCCEEDED?qualifyHint=False&amp;autoUpgrade=True>  --> 和已設定的 SUCCEEDED 位元。  
+ 如已建立追蹤內容，則為已設定 [SUCCEEDED](<!-- TODO: review code entity reference <xref:assetId:///SUCCEEDED?qualifyHint=False&amp;autoUpgrade=True>  -->) 位元的 [HRESULT](<!-- TODO: review code entity reference <xref:assetId:///HRESULT?qualifyHint=False&amp;autoUpgrade=True>  -->)。  
   
 ## <a name="requirements"></a>需求  
  **標頭：** FileTracker.h

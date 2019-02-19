@@ -42,7 +42,7 @@ ms.locfileid: "54772377"
  必要項。 參數名稱。  
   
  `type`  
- 選擇性。 參數的資料型別。 類型可以是下列其中一項：  
+ 選擇性。 參數的資料類型。 類型可以是下列其中一項：  
   
 - ECMAScript 語言輸入在 ECMAScript 5 規格中，例如`Number`和`Object`。  
   
