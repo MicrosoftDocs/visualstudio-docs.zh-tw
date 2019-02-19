@@ -13,15 +13,15 @@ helpviewer_keywords:
 - DOM Explorer [UWP apps]
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 0ea34ba58ec882121b40ca7e7585fa0cb0419356
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: 914c9dba1d6af4b624f43bda9a43c2b8d68aaec1
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53892711"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54978031"
 ---
 # <a name="debug-html-and-css-in-uwp-apps-in-visual-studio"></a>在 Visual Studio 中的 UWP 應用程式中偵錯 HTML 和 CSS
   
@@ -159,7 +159,7 @@ ms.locfileid: "53892711"
   
 10. 在 [DOM 總管] 視窗中，選取識別碼為 `"fView"`之區段的 DIV 項目。 使用方向鍵來檢視和選取正確的 DIV 項目 (向右鍵可讓您檢視元素的子系。)  
   
-     ![DOM 總管](../debugger/media/js_dom_explorer.png "JS_DOM_Explorer")  
+     ![DOM Explorer](../debugger/media/js_dom_explorer.png "JS_DOM_Explorer")  
   
     > [!TIP]
     >  您也可以在 [JavaScript 主控台] 視窗的左下角，於 >> 輸入提示下輸入 `select(fView)`，然後按 ENTER 來選取 DIV 項目。  

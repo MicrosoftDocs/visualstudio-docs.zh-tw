@@ -1,14 +1,9 @@
 ---
 title: DA0021：高比率的 Gen 1 記憶體回收 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 f1_keywords:
 - vs.performance.21
 - vs.performance.DA0021
@@ -17,21 +12,21 @@ ms.assetid: ebf5d9b3-a1ac-4688-8f0f-39a85f4dd15f
 caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 77bcfd877bb0e5a8bf20caa629c226c4f304fafa
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 2a4502be6c683376b93bc144ef5b3568550a1c9e
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51765849"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54834347"
 ---
 # <a name="da0021-high-rate-of-gen-1-garbage-collections"></a>DA0021：高比率的 Gen 1 記憶體回收
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 規則 Id |DA0021 |  
-|類別目錄 |.NET Framework 使用方式 |  
+|類別目錄 |。.NET Framework 使用方式 |  
 |程式碼剖析方法 |所有 |  
-|訊息 |沒有相當高比率的 Gen 1 回收。 如果您設計讓大部分程式的資料結構配置並持續一段很長的時間，這通常不是問題。 不過，如果這不是預期的行為，您的應用程式可能正鎖定物件。 如果您不確定，您可以收集.NET 記憶體配置資料和物件存留期的資訊以了解應用程式所使用的記憶體配置模式。 |  
+|訊息 |沒有相當高比率的 Gen 1 回收。 如果您設計讓大部分程式的資料結構配置並持續一段很長的時間，這通常不是問題。 不過，如果這不是預期的行為，您的應用程式可能正鎖定物件。 如果您不確定，可以收集 .NET 記憶體配置資料和物件存留期資訊，了解應用程式所使用之記憶體配置的模式。|  
 |規則類型 |資訊 |  
   
  當您使用取樣、.NET 記憶體或資源爭用方法進行分析時，必須至少收集 10 個樣本才能觸發此規則。  
@@ -52,6 +47,3 @@ ms.locfileid: "51765849"
  若要了解應用程式之 Managed 記憶體使用方式的模式，請執行 .NET 記憶體配置設定檔再次進行分析，並要求測量「物件存留期」。  
   
  如需如何改善記憶體回收效能的詳細資訊，請參閱 Microsoft 網站上的[記憶體回收行程的基礎概念和效能提示 (英文)](http://go.microsoft.com/fwlink/?LinkId=148226)。 如需有關自動記憶體回收之額外負荷的詳細資訊，請參閱[大型物件堆積的面目 (英文)](http://go.microsoft.com/fwlink/?LinkId=177836)。
-
-
-

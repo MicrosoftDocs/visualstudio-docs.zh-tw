@@ -56,11 +56,10 @@
 ## [發佈至 Azure App Service](publish-app-svc.md)
 ## [發佈至資料夾](publish-folder.md)
 
-
 # [工作負載](workloads.md)
 ## [ASP.NET Core](asp-net-core.md)
 ### [Razor](razor.md)
-### [Javascript](javascript.md)
+### [JavaScript 和 TypeScript](javascript.md)
 ## [Azure](azure-workload.md)
 ### [Azure Functions 簡介](azure-functions.md)
 ### [教學課程：Azure Functions](azure-functions-lab.md)

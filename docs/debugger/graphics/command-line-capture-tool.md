@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: db75b3a7-80b2-4a74-91d2-fd6e0f73b45d
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 12aa697bff0a60ce6ab9a24351514c96ce107d02
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.openlocfilehash: be2882cd6db93da4222f8ed12d1847aa5b39a288
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "53960650"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54995215"
 ---
 # <a name="command-line-capture-tool"></a>命令列擷取工具
 DXCap.exe 是圖形診斷擷取及播放的命令列工具。 它支援 Direct3D 10 到 Direct3D 12 的所有功能層級。  
@@ -162,14 +162,14 @@ DXCap.exe -e map
   
  **Package "Microsoft.BingMaps":**  
  **Installdirectory 出現：C:\Program Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe**  
- **完整名稱         :Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe**  
+ **FullName         : Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe**  
  **UserSID:S-1-5-21-2127521184-1604012920-1887927527-5603533**  
- **名稱             :Microsoft.BingMaps**  
- **發行者           :CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US**  
- **Version          :2.1.2914.1734**  
+ **Name             : Microsoft.BingMaps**  
+ **Publisher        : CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US**  
+ **Version          : 2.1.2914.1734**  
  **Launchable Applications:**  
- **識別碼：AppexMaps**  
- **可執行檔：C:\Program Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe\Map.exe**  
+ **Id: AppexMaps**  
+ **Exe: C:\Program Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe\Map.exe**  
  **IsWWA:否**  
  **AppSpec （以啟動）：DXCap.exe-c Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe,AppexMaps**每個列舉的應用程式的輸出的最後一行會顯示您可用來從其擷取圖形資訊的命令。  
   
