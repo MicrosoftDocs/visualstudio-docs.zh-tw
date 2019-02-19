@@ -20,10 +20,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: d07901a14b61ccddf8d4799828c6d42bddf7f94b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54794350"
 ---
 # <a name="accessibility-products-and-services-from-microsoft"></a>Microsoft 提供的協助工具產品和服務
@@ -63,7 +63,7 @@ Microsoft 致力於使其產品和服務對於每個人都更容易使用。 下
   
 |Recording for the Blind & Dyslexic, Inc.|  
 |----------------------------------------------|  
-|20 Roszel Road<br /><br /> Princeton, NJ 08540<br /><br /> 美國境內電話號碼：(800) 221-4792<br /><br /> 美國和加拿大以外地區的電話號碼：(609) 452-0606<br /><br /> 傳真：(609) 987-8116<br /><br /> Recording for the Blind & Dyslexic 網站：[http://www.rfbd.org](http://go.microsoft.com/fwlink/?LinkId=62504).|  
+|20 Roszel Road<br /><br /> Princeton, NJ 08540<br /><br /> 美國境內電話：(800) 221-4792<br /><br /> 美國和加拿大以外地區的電話：(609) 452-0606<br /><br /> 傳真：(609) 987-8116<br /><br /> Recording for the Blind & Dyslexic 網站：[http://www.rfbd.org](http://go.microsoft.com/fwlink/?LinkId=62504).|  
   
  網址可能有所變更，因此您可能會無法連線至這裡所提到的網站。  
   

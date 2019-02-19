@@ -15,10 +15,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 773ecc04569850546f03fd0cdb68bfe1a81a79f9
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/24/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54835022"
 ---
 # <a name="choose-toolbox-items-wpf-components"></a>選擇工具箱項目，WPF 元件
@@ -30,7 +30,7 @@ ms.locfileid: "54835022"
 - 如果選取了某個元件旁的核取方塊，[工具箱] 中會顯示該元件的圖示。  
   
   > [!TIP]
-  >  若要將 WPF 控制項的執行個體新增至開啟供編輯的專案文件，請將其工具箱圖示拖曳至 [設計檢視] 介面上。 該元件的預設標記和程式碼已插入您的專案，您可以隨時進行修改。 如需詳細資訊，請參閱[＜How to：管理工具箱視窗](http://msdn.microsoft.com/a022c3fe-298c-4a59-a48f-b050da90ebc2)和[How to:操作工具箱索引標籤](http://msdn.microsoft.com/21285050-cadd-455a-b1f5-a2289a89c4db)。  
+  >  若要將 WPF 控制項的執行個體新增至開啟供編輯的專案文件，請將其工具箱圖示拖曳至 [設計檢視] 介面上。 該元件的預設標記和程式碼已插入您的專案，您可以隨時進行修改。 如需詳細資訊，請參閱[如何：管理工具箱視窗](http://msdn.microsoft.com/a022c3fe-298c-4a59-a48f-b050da90ebc2)和[如何︰操作工具箱索引標籤](http://msdn.microsoft.com/21285050-cadd-455a-b1f5-a2289a89c4db)。  
   
 - 如果清除了某個元件旁的核取方塊，則會從 [工具箱] 移除對應的圖示。  
   
@@ -73,10 +73,10 @@ ms.locfileid: "54835022"
   
   此外，如果將設計階段中繼資料套用至自訂控制項，而且此中繼資料指定 <xref:Microsoft.Windows.Design.ToolboxBrowsableAttribute> 設定為 `false`，則此控制項不會出現在工具箱中。  
   
-  您可以藉由對應控制項的命名空間和組件，直接在 XAML 檢視中參考控制項。 如需詳細資訊，請參閱[＜How to：命名空間匯入 XAML](http://msdn.microsoft.com/6cda7c7a-369c-47dd-9c2d-13a35dcf737c)。  
+  您可以藉由對應控制項的命名空間和組件，直接在 XAML 檢視中參考控制項。 如需詳細資訊，請參閱[如何：將命名空間匯入 XAML](http://msdn.microsoft.com/6cda7c7a-369c-47dd-9c2d-13a35dcf737c)。  
   
 ## <a name="see-also"></a>請參閱  
  [選擇工具箱項目對話方塊 (Visual Studio)](http://msdn.microsoft.com/bd07835f-18a8-433e-bccc-7141f65263bb)   
  [工具箱](../../ide/reference/toolbox.md)   
- [如何：在 WPF 應用程式中使用協力廠商 WPF 控制項](http://msdn.microsoft.com/f4c0b601-3818-4f9f-85e5-77905f3b427f)   
+ [如何︰在 WPF 應用程式中使用協力廠商 WPF 控制項](http://msdn.microsoft.com/f4c0b601-3818-4f9f-85e5-77905f3b427f)   
  [WPF 設計工具](http://msdn.microsoft.com/c6c65214-8411-4e16-b254-163ed4099c26)

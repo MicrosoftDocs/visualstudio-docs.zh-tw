@@ -17,10 +17,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: f912b17e235e92496fa8ffc573429b7708d9198d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54801166"
 ---
 # <a name="using-the-task-list"></a>使用工作清單
@@ -47,7 +47,7 @@ ms.locfileid: "54801166"
   
 #### <a name="to-open-the-task-list"></a>開啟工作清單  
   
--   在 **檢視**功能表上，選擇**工作清單**(鍵盤：Ctrl+\\，T)。  
+-   在 [檢視] 功能表上，選擇 [工作清單]\(鍵盤：Ctrl+\\、T)。  
   
      ![[工作清單] 視窗](../ide/media/vs2015-task-list.png "vs2015_task_list")  
   
@@ -86,7 +86,7 @@ ms.locfileid: "54801166"
  因為 `TODO` 是預先定義的語彙基元，此註解會顯示為清單中的 `TODO` 工作。  
   
 ###  <a name="customTokens"></a> 自訂權杖  
- 根據預設，Visual Studio 會包含下列語彙基元：HACK、 TODO、 復原、 附註。 這些語彙基元不區分大小寫。  
+ 根據預設，Visual Studio 包含下列語彙基元：HACK、TODO、UNDONE、NOTE。 這些語彙基元不區分大小寫。  
   
  您也可以建立自己的自訂語彙基元。  
   
@@ -122,7 +122,7 @@ ms.locfileid: "54801166"
   
 #### <a name="to-create-a-shortcut"></a>建立捷徑  
   
--   將指標插入要放置捷徑的程式碼中。 選擇**編輯&#124;的書籤&#124;加入工作清單捷徑**或按 (鍵盤：Ctrl+K、Ctrl+H  
+-   將指標插入要放置捷徑的程式碼中。 選擇 [編輯] &#124; [書籤] &#124; [加入工作清單捷徑] 或按 (鍵盤：Ctrl+K、Ctrl+H)。  
   
      若要在程式碼中巡覽捷徑，請在清單中選擇捷徑，然後從捷徑功能表中選擇 [下一個工作]  或 [上一個工作]  。  
   

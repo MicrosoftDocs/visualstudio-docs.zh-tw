@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 2f60e8eedeeb7106a7a95a33a4a5cc794194861c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54796995"
 ---
 # <a name="caller--callee-view----contention-data"></a>呼叫端 / 被呼叫端檢視 - 爭用資料
@@ -29,7 +29,7 @@ ms.locfileid: "54796995"
   
  **目前的函式所呼叫的函式**會顯示在下方方格中，並顯示所選取函式之被呼叫端 (子) 函式 (由目前函式所呼叫) 的爭用資訊。  
   
-|資料行|說明|  
+|資料行|描述|  
 |------------|-----------------|  
 |**Type**|函式的內容︰<br /><br /> -   **0** - 目前的函式<br />-   **1** - 呼叫目前函式的函式<br />-   **2** - 目前的函式所呼叫的函式<br /><br /> 只存在於 [VSPerfReport](../profiling/vsperfreport.md) 命令列報表中。|  
 |**專有封鎖時間**|- 如果是目前的函式，即為此函式已遭封鎖而無法執行函式主體中之程式碼的時間。 不包括函式所呼叫之函式的封鎖時間。<br />- 如果是呼叫端函式，即為目前函式專有封鎖時間的部分，這會發生在此函式呼叫目前的函式時。<br />- 如果是被呼叫端函式，即為此函式已遭封鎖，而無法在目前函式呼叫此函式時執行本身程式碼的時間。 不包括被呼叫端函式所呼叫之子函式的封鎖時間。|  
