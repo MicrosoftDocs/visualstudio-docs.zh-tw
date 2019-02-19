@@ -3,10 +3,7 @@ title: 安裝 Visual Studio 2015 | Microsoft Docs
 titleSuffix: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: vs-ide-install
-ms.tgt_pltfrm: ''
 ms.topic: conceptual
 f1_keywords:
 - vs.about
@@ -21,13 +18,13 @@ ms.assetid: da049020-cfda-40d7-8ff4-7492772b620f
 caps.latest.revision: 183
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.openlocfilehash: 55dad8adf4b3ce6e79214471c93052318f7228f3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: ecb6e2ef6927638aa06bbb04a09f64f8ca4c4a46
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53828052"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54799173"
 ---
 # <a name="install-visual-studio-2015"></a>安裝 Visual Studio 2015
 
@@ -43,10 +40,10 @@ ms.locfileid: "53828052"
 |------------------|----------------|
 |![下載 Visual Studio](../install/media/downloads.png "下載") |**下載**若要安裝 Visual Studio 2015，您可以下載產品可執行檔[My.VisualStudio.com](https://my.visualstudio.com/downloads?q=visual%20studio%20enterprise%202015)頁面 （需要訂用帳戶），或使用盒裝產品的安裝媒體。 [深入了解如何下載目前或先前版本的 Visual Studio](https://www.visualstudio.com/vs/older-downloads/)。|
 |![深入了解功能](../install/media/features.png "功能") |**功能**若要深入了解 Visual Studio 2015 中的功能，請參閱版本資訊[RTM](https://www.visualstudio.com/news/vs2015-vs)， [Update 1](https://www.visualstudio.com/news/vs2015-update1-vs)， [Update 2](https://www.visualstudio.com/news/vs2015-update2-vs)，以及[Update 3](https://www.visualstudio.com/news/releasenotes/vs2015-update3-vs)。|
-|![了解什麼是每個 SKU](../install/media/sku.png "Sku") |**SKU**：若要了解每一個版本的 Visual Studio 2015 有哪些可用功能，請參閱[比較 Visual Studio 供應項目](http://go.microsoft.com/fwlink/?LinkID=242142)頁面。|
-|![檢視系統需求](../install/media/system-requirements.png "系統需求") |**系統需求**：若要檢閱 Visual Studio 2015 每個版本的系統需求，請參閱 [Visual Studio 2015 相容性](https://www.visualstudio.com/products/visual-studio-2015-compatibility-vs)頁面。|
+|![了解什麼是每個 SKU](../install/media/sku.png "Sku") |**SKU**：若要了解每一個版本的 Visual Studio 2015 有哪些可用功能，請參閱 [Compare Visual Studio Offerings](http://go.microsoft.com/fwlink/?LinkID=242142) (比較 Visual Studio 供應項目) 頁面。|
+|![檢視系統需求](../install/media/system-requirements.png "系統需求") |**系統需求**： 若要檢視每個版本的 Visual Studio 2015 的系統需求，請參閱[Visual Studio 2015 相容性](https://www.visualstudio.com/products/visual-studio-2015-compatibility-vs)頁面。|
 |![找出產品金鑰](../install/media/product-keys.png "產品金鑰") |**產品金鑰**若要找出產品金鑰，請參閱[How to:尋找 Visual Studio 產品金鑰](../install/how-to-locate-the-visual-studio-product-key.md)主題。|
-|![了解授權](../install/media/licensing.png "授權") |**授權**：若要了解個人或企業客戶的授權選項，請參閱 [Visual Studio 和 MSDN 授權](https://www.microsoft.com/download/details.aspx?id=13350)白皮書。|
+|![了解授權](../install/media/licensing.png "授權") |**授權**： 若要了解授權適用於個人或企業客戶的選項，請參閱[Visual Studio 和 MSDN 授權](https://www.microsoft.com/download/details.aspx?id=13350)白皮書 （英文）。|
 
 ##  <a name="custom"></a> 預設與自訂設定
  當您安裝 Visual Studio 2015 時，您可以包含或排除您日常使用的元件。 這表示預設安裝通常會比自訂安裝更小，而且安裝速度更快。 這也意謂著在舊版中許多預設安裝的元件，在此版本中已改為您必須明確選取的「自訂」元件。
@@ -83,7 +80,7 @@ ms.locfileid: "53828052"
 |偵錯程式|SeDebugPrivilege|
 |管理稽核和安全性記錄檔|SeSecurityPrivilege|
 
- 如需本機系統管理員帳戶需求的詳細資訊，請參閱知識庫文件 [如果安裝帳戶並沒有特定使用者權限，SQL Server 安裝會失敗](https://support.microsoft.com/en-us/kb/2000257)。
+ 如需本機系統管理員帳戶需求的詳細資訊，請參閱知識庫文件 [如果安裝帳戶並沒有特定使用者權限，SQL Server 安裝會失敗](https://support.microsoft.com/kb/2000257)。
 
 ###  <a name="BKMK_Media"></a> 使用安裝媒體
  若要安裝 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]，請在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 安裝媒體的根目錄中，針對您想要的版本來執行安裝檔案：
@@ -187,7 +184,7 @@ ms.locfileid: "53828052"
 
 ##  <a name="relatedTopics"></a> 相關主題
 
-|標題|說明|
+|標題|描述|
 |-----------|-----------------|
 |[建立 Visual Studio 的離線安裝](../install/create-an-offline-installation-of-visual-studio.md)|描述如何安裝 Visual Studio，當您未連線到網際網路。
 |[並存安裝 Visual Studio 版本](../install/install-visual-studio-versions-side-by-side.md)|提供如何在同一部電腦上安裝多個 Visual Studio 版本的相關資訊。|

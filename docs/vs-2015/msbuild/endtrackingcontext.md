@@ -37,7 +37,7 @@ HRESULT WINAPI EndTrackingContext();
 ```  
   
 ## <a name="return-value"></a>傳回值  
- 如果已結束追蹤內容，則為已設定 SUCCEEDED 位元的 <!-- TODO: review code entity reference <xref:assetId:///HRESULT?qualifyHint=False&amp;autoUpgrade=True>  -->HRESULT<!-- TODO: review code entity reference <xref:assetId:///SUCCEEDED?qualifyHint=False&amp;autoUpgrade=True>  -->。  
+ 如果已結束追蹤內容，則為已設定 [SUCCEEDED](<!-- TODO: review code entity reference <xref:assetId:///SUCCEEDED?qualifyHint=False&amp;autoUpgrade=True>  -->) 位元的 [HRESULT](<!-- TODO: review code entity reference <xref:assetId:///HRESULT?qualifyHint=False&amp;autoUpgrade=True>  -->)。  
   
 ## <a name="requirements"></a>需求  
  **標頭：** FileTracker.h  

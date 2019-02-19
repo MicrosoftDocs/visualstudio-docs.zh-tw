@@ -93,7 +93,7 @@ ms.locfileid: "54799151"
   
 4. 在 [使用中的方案平台] 清單中，選擇 [新增]。  
   
-5. 5.在 [新增方案平台] 對話方塊中，選擇 [x64]，而且不要從 x86 平台複製設定。  
+5. 在 [新增方案平台] 對話方塊中，選擇 [x64]，且不要從 x86 平台複製設定。  
   
     ![[新增方案平台] 對話方塊](../ide/media/buildwalk-newsolutionplatform.png "BuildWalk_NewSolutionPlatform")  
   

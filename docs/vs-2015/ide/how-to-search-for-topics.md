@@ -1,25 +1,20 @@
 ---
-title: 如何：搜尋主題 | Microsoft Docs
-ms.custom: ''
+title: HOW TO：搜尋主題 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: 683f1b0c-1551-4bba-91fe-3855f03fdd69
 caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: ef0cbdff47423fe1ed580f3f51ba1e6039ee3e01
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: b784dc20f072a7cb8ab6ed80242c09e57ce1127a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49248284"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54799076"
 ---
 # <a name="how-to-search-for-topics"></a>HOW TO：搜尋主題
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,15 +38,12 @@ ms.locfileid: "49248284"
   
      搜尋預設會傳回最多 200 個點閱數，並將其顯示在搜尋結果區域中。  
   
-     視內容而定，每個結果的其他版本資訊可能會出現。  
+     每個結果的其他版本資訊可能會根據內容出現。  
   
 4.  若要檢視主題，請從結果清單中選擇其標題。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [全文檢索搜尋提示](../ide/full-text-search-tips.md)   
  [搜尋運算式中的邏輯運算子](../ide/logical-operators-in-search-expressions.md)   
- [進階搜尋運算式中的搜尋運算子](../ide/advanced-search-operators-in-search-expressions.md)   
+ [搜尋運算式中的進階搜尋運算子](../ide/advanced-search-operators-in-search-expressions.md)   
  [如何：自訂搜尋結果](../ide/how-to-customize-search-results.md)
-
-
-

@@ -94,7 +94,7 @@ ms.locfileid: "54781704"
   
 ##  <a name="mac"></a> Mac 設定 (Apple ID、Xcode 和 Xamarin)  
   
-1.  如果您還沒有 Apple 識別碼，請在 [https://appleid.apple.com](https://appleid.apple.com/) 建立免費的 Apple 識別碼。 安裝及登入 Xcode 時需要這個 ID。  
+1.  如果您還沒有 Apple ID，請在 [https://appleid.apple.com](https://appleid.apple.com/) 建立免費的 Apple ID。 安裝及登入 Xcode 時需要這個 ID。  
   
 2.  從 [https://developer.apple.com/xcode/](https://developer.apple.com/xcode/) 下載並安裝 Xcode，然後遵循[將您的帳戶新增至 XCode](https://developer.apple.com/library/content/documentation/IDEs/Conceptual/AppStoreDistributionTutorial/AddingYourAccounttoXcode/AddingYourAccounttoXcode.html#//apple_ref/doc/uid/TP40013839-CH40-SW1) (apple.com) 中所述，新增您的 Apple 識別碼。  
   

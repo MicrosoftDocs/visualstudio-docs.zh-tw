@@ -37,9 +37,9 @@ ms.locfileid: "55031190"
   
   程式庫： lib\diaguids.lib  
   
-  DLL: bin\msdia80.dll  
+  DLL：bin\msdia80.dll  
   
-  IDL: idl\dia2.idl  
+  IDL：idl\dia2.idl  
   
 ## <a name="in-this-section"></a>本節內容  
  [概觀](../../debugger/debug-interface-access/overview-debug-interface-access-sdk.md)  

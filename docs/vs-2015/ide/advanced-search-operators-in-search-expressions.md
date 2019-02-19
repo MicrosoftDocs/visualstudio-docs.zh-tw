@@ -33,10 +33,10 @@ ms.locfileid: "54775570"
   
 |搜尋|使用|範例|結果|  
 |-------------------|---------|-------------|------------|  
-|主題標題中的詞彙|title:|title:binaryreader|標題中包含 "binaryreader" 的主題。|  
+|主題標題中的詞彙|title:|title:binaryreader|標題中包含 “binaryreader” 的主題。|  
 |程式碼範例中的詞彙|code:|code:readdouble|程式碼範例中包含 "readdouble" 的主題。|  
-|特定程式設計語言範例中的詞彙|code:vb:|code:vb:string|Visual Basic 範例中包含 "string" 的主題。|  
-|與特定索引關鍵字建立關聯的主題|keyword:|keyword:readbyte|與 "readbyte" 索引關鍵字建立關聯的主題。|  
+|特定程式設計語言範例中的詞彙|code:vb:|code:vb:string|Visual Basic 範例中包含 “string” 的主題。|  
+|與特定索引關鍵字建立關聯的主題|keyword:|keyword:readbyte|與 “readbyte” 索引關鍵字建立關聯的主題。|  
   
  您可以使用 code: 運算子尋找數種程式設計語言中任一種的內容，但它只會傳回特定程式設計語言所標上內容的結果。 下表列出此運算子所支援的程式設計語言：  
   

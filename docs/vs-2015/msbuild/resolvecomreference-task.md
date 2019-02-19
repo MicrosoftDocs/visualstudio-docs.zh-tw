@@ -47,7 +47,7 @@ ms.locfileid: "54801423"
 |`ResolvedAssemblyReferences`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 輸出參數。<br /><br /> 指定已解析的組件參考。|  
 |`ResolvedFiles`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 輸出參數。<br /><br /> 指定磁碟上的完整檔案，這個磁碟對應至已提供作為這項工作輸入之類型程式庫的實體位置。|  
 |`ResolvedModules`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。|  
-|`SdkToolsPath`|選擇性的 <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  -->String 參數。<br /><br /> 如果 `ExecuteAsTool` 是 `true`，則此參數必須設定為目標 Framework 版本的 SDK 工具路徑。|  
+|`SdkToolsPath`|選擇性的 [String](<!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  -->) 參數。<br /><br /> 如果 `ExecuteAsTool` 是 `true`，則此參數必須設定為目標 Framework 版本的 SDK 工具路徑。|  
 |`StateFile`|選擇性的 <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> 參數。<br /><br /> 指定 COM 元件時間戳記的快取檔案。 如果沒有，則每次執行都會重新產生所有的包裝函式。|  
 |`TargetFrameworkVersion`|選擇性的 <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> 參數。<br /><br /> 指定專案目標 Framework 版本。<br /><br /> 預設為 `String.Empty`。 這表示不篩選以目標 Framework 為基礎的參考。|  
 |`TargetProcessorArchitecture`|選擇性的 <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> 參數。<br /><br /> 指定慣用的目標處理器架構。 平移後，傳送至 tlbimp.exe /machine 旗標。<br /><br /> 參數值應該是 <xref:Microsoft.Build.Utilities.ProcessorArchitecture> 的成員。|  

@@ -155,7 +155,7 @@ ms.locfileid: "54788242"
   
 7.  在 Windows 的 [檔案總管] 中，選取您要併入範本中的檔案，以滑鼠右鍵按一下選取項目，按一下 [傳送到]，然後按一下 [壓縮的 (zipped) 資料夾]。 您選取的檔案即會壓縮成 .zip 檔。  
   
-8.  複製 .zip 檔案，並在使用者項目範本位置中貼上它。 在 Visual Studio 2017 中，預設目錄為 ..\Users\\<使用者名稱\>\Documents\Visual Studio 2017\Templates\ItemTemplates\\。 如需詳細資訊，請參閱＜作法：尋找並組織專案範本和項目範本＞。  
+8.  複製 .zip 檔案，並在使用者項目範本位置中貼上它。 在 Visual Studio 2015 中，預設目錄為 ..\Users\\<使用者名稱\>\Documents\Visual Studio 2015\Templates\ItemTemplates\\。 如需詳細資訊，請參閱＜作法：尋找並組織專案範本和項目範本＞。  
   
 ## <a name="see-also"></a>請參閱  
  [建立專案和項目範本](../ide/creating-project-and-item-templates.md)   
