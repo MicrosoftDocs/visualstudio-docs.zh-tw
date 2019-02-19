@@ -11,10 +11,10 @@ caps.latest.revision: 25
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 35222fc9e320bafbaafe1bc19e174649142252c1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54781173"
 ---
 # <a name="anatomy-of-a-coded-ui-test"></a>自動程式化 UI 測試的結構

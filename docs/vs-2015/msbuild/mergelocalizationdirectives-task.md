@@ -20,10 +20,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5f9b269bd68bf40358645b6bd6fd88b701da385b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54791480"
 ---
 # <a name="mergelocalizationdirectives-task"></a>MergeLocalizationDirectives 工作
@@ -34,7 +34,7 @@ ms.locfileid: "54791480"
   
 ## <a name="task-parameters"></a>工作參數  
   
-|參數|說明|  
+|參數|描述|  
 |---------------|-----------------|  
 |`GeneratedLocalizationFiles`|必要的 **ITaskItem[]** 參數。<br /><br /> 針對個別的 [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)] 二進位格式檔案指定當地語系化指示詞檔案清單。|  
 |`OutputFile`|必要的 **String** 輸出參數。<br /><br /> 指定編譯的當地語系化指示詞組件的輸出路徑。|  

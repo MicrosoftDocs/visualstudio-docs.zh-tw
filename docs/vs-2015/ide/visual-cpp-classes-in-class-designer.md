@@ -14,10 +14,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 04392545b5b5c352a35b9a3d523f0c6ff5d98b01
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54787072"
 ---
 # <a name="visual-c-classes-in-class-designer"></a>類別設計工具中的 Visual C++ 類別
@@ -36,7 +36,7 @@ class A {};
 class B : A {};  
 ```  
   
- 您也可以只將類別 B 拖曳至類別圖表，並以滑鼠右鍵按一下 B 的類別圖形，然後按一下 [顯示基底類別]。 這會顯示其基底類別：答：  
+ 您也可以只將類別 B 拖曳至類別圖表，並以滑鼠右鍵按一下 B 的類別圖形，然後按一下 [顯示基底類別]。 這會顯示其基底類別：A。  
   
 ## <a name="multiple-inheritance"></a>多重繼承  
  類別設計工具支援多重類別繼承關聯性的視覺效果。 衍生類別有多個基底類別的屬性時，會使用「多重繼承」。 以下是多重繼承的範例：  

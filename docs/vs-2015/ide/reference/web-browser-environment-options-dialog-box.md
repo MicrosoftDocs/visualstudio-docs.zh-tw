@@ -25,10 +25,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: f66dae4d9e69ce1fc5d4351d72606e1fdad10725
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54755309"
 ---
 # <a name="web-browser-environment-options-dialog-box"></a>選項對話方塊、環境、Web 瀏覽器

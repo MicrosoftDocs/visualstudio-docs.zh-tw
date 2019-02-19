@@ -10,10 +10,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 264fcea4b04b1777a455199789ed1bb9c3757f7c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54758238"
 ---
 # <a name="getting-started-with-c-in-visual-studio"></a>Visual Studio 中的 C++ 使用者入門
@@ -148,4 +148,4 @@ ms.locfileid: "54758238"
    恭喜您完成此逐步解說！ 如果您想要探索更多範例，請參閱 [Visual Studio 範例](../ide/visual-studio-samples.md)。
 
 ## <a name="see-also"></a>請參閱
- [逐步解說：建立簡單的應用程式](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)[產能的秘訣](../ide/productivity-tips-for-visual-studio.md) [Visual Studio 範例](../ide/visual-studio-samples.md)[使用 Visual Studio 使用者開發入門](../ide/get-started-developing-with-visual-studio.md)
+ [逐步解說： 建立簡單的應用程式](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)[產能的秘訣](../ide/productivity-tips-for-visual-studio.md) [Visual Studio 範例](../ide/visual-studio-samples.md)[使用 Visual Studio 使用者開發入門](../ide/get-started-developing-with-visual-studio.md)

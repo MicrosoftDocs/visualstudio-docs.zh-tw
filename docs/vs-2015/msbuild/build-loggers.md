@@ -14,10 +14,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 306762ff2f9316043782f64532b278f54fddc1d3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54801436"
 ---
 # <a name="build-loggers"></a>組建記錄器
@@ -66,7 +66,7 @@ MSBuild /nologo /noconsolelogger /logger:SimpleLogger.dll /verbosity:Detailed
   
 ## <a name="example"></a>範例  
   
-### <a name="description"></a>說明  
+### <a name="description"></a>描述  
  下列範例包含記錄器的完整程式碼。  
   
 ### <a name="code"></a>程式碼  
@@ -76,7 +76,7 @@ MSBuild /nologo /noconsolelogger /logger:SimpleLogger.dll /verbosity:Detailed
   
 ## <a name="example"></a>範例  
   
-### <a name="description"></a>說明  
+### <a name="description"></a>描述  
  下列範例示範如何實作要將記錄寫入檔案的記錄器，而不是將它顯示在主控台視窗中。  
   
 ### <a name="code"></a>程式碼  

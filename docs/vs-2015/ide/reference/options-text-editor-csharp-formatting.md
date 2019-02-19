@@ -27,10 +27,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 2406a802b0992b0fffe8a41d99ed600a9e1fc2b3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54800759"
 ---
 # <a name="options-text-editor-c-formatting"></a>格式、C#、文字編輯器、選項
@@ -47,7 +47,7 @@ ms.locfileid: "54800759"
   
 ## <a name="uielement-list"></a>UIElement 清單  
   
-|標籤|說明|  
+|標籤|描述|  
 |-----------|-----------------|  
 |**遇到 ; 字元時自動格式化完成的陳述式**|選取時，系統會在陳述式完成時，根據程式碼編輯器選取的格式化選項來格式化陳述式。 如果您不希望程式碼編輯器修改陳述式，請清除此方塊。|  
 |**遇到 } 字元時自動格式化完成的區塊**|選取時，系統會在您完成程式碼區塊時，根據程式碼編輯器選取的格式化選項來格式化程式碼區塊。 如果您不希望程式碼編輯器修改區塊，請清除此方塊。|  

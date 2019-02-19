@@ -20,10 +20,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 2440d6af45f08a3b53cf531a357cc807d4b22fc7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54804449"
 ---
 # <a name="createproperty-task"></a>CreateProperty 工作
@@ -35,7 +35,7 @@ ms.locfileid: "54804449"
 ## <a name="attributes"></a>屬性  
  下表說明 `CreateProperty` 工作的參數。  
   
-|參數|說明|  
+|參數|描述|  
 |---------------|-----------------|  
 |`Value`|選擇性的 `String` 輸出參數。<br /><br /> 指定要複製至新屬性的值。|  
 |`ValueSetByTask`|選擇性的 `String` 輸出參數。<br /><br /> 包含與 `Value` 參數相同的值。 因輸出具有最新資訊而略過封入目標時，只有在您想要避免具有 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 所設定的輸出屬性時，才使用此參數。|  

@@ -13,10 +13,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 641a971baac593186c0bb7c0012c615539b811da
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54791531"
 ---
 # <a name="options-page-fonts-and-colors-node-properties"></a>字型和色彩節點屬性、選項頁
@@ -38,7 +38,7 @@ ms.locfileid: "54791531"
   
  `DTE.Properties("FontsAndColors", "Dialogs and Tool Windows")`  
   
-|屬性項目名稱|值|說明|  
+|屬性項目名稱|值|描述|  
 |------------------------|-----------|-----------------|  
 |FontFamily|Get/Set (字串)|要使用的字型名稱，例如「新細明體」。|  
 |FontCharacterSet|Get/Set (<xref:EnvDTE.vsFontCharSet>)|<xref:EnvDTE.vsFontCharSet> 值，指定要使用的字元集類型，例如希伯來文或俄文。|  

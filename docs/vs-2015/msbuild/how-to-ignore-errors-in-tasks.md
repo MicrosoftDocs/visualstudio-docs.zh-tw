@@ -1,5 +1,5 @@
 ---
-title: HOW TO：忽略工作中的錯誤 | Microsoft Docs
+title: 如何：忽略工作中的錯誤 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: msbuild
@@ -13,13 +13,13 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 4bac63523829c47b17821ff5905687bd76bbc57e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54777027"
 ---
-# <a name="how-to-ignore-errors-in-tasks"></a>HOW TO：忽略工作中的錯誤
+# <a name="how-to-ignore-errors-in-tasks"></a>如何：忽略工作中的錯誤
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
