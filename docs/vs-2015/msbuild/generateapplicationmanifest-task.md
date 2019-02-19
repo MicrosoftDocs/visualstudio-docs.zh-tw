@@ -45,7 +45,7 @@ ms.locfileid: "54756580"
 |`Dependencies`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 指定項目清單，這份清單會為所產生的資訊清單定義一組相依組件。 每個項目都可以利用項目中繼資料進一步描述，以指出其他部署狀態和相依性的類型。 如需詳細資訊，請參閱以下的＜項目中繼資料＞一節。|  
 |`Description`|選擇性的 `String` 參數。<br /><br /> 指定應用程式或元件的描述。|  
 |`EntryPoint`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 指定單一項目，以指出所產生資訊清單組件的進入點。<br /><br /> 對於 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 應用程式資訊清單，這個參數會指定應用程式執行時啟動的組件。|  
-|`ErrorReportUrl`|選擇性的 <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  -->String 參數。<br /><br /> 指定在 ClickOnce 安裝錯誤報告期間顯示在對話方塊中的網頁 URL。|  
+|`ErrorReportUrl`|選擇性的 [String](<!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  -->) 參數。<br /><br /> 指定在 ClickOnce 安裝錯誤報告期間顯示在對話方塊中的網頁 URL。|  
 |`FileAssociations`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 指定與 ClickOnce 部署資訊清單建立關聯之一或多個檔案類型的清單。<br /><br /> 檔案關聯只有在 .NET Framework 3.5 或更新版本設為目標時才有效。|  
 |`Files`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 要包含在資訊清單中的檔案。 指定每個檔案的完整路徑。|  
 |`HostInBrowser`|選擇性 [布林值](<!-- TODO: review code entity reference <xref:assetId:///Boolean?qualifyHint=False&amp;autoUpgrade=True>  -->) 參數。<br /><br /> 如果為 `true`，表示應用程式是裝載於瀏覽器中 (與 WPF 網頁瀏覽器應用程式相同)。|  

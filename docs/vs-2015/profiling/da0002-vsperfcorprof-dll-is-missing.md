@@ -27,7 +27,7 @@ ms.locfileid: "54792919"
 規則 Id |DA0002 |  
 |類別目錄 |分析工具使用方式 |  
 |程式碼剖析方法 |使用 VSPerfCmd 和 VSPerfASPNETCmd 命令列工具進行分析 |  
-|訊息 |它會顯示該檔案已收集未正確設定 VSPerfCLREnv.cmd 的環境變數。 可能無法解析 Managed 二進位檔的符號。  
+|訊息 |它會顯示該檔案已收集未正確設定 VSPerfCLREnv.cmd 的環境變數。 可能無法解析受控二進位檔的符號。|  
 |規則類型 |資訊 |  
   
 ## <a name="cause"></a>原因  

@@ -19,9 +19,9 @@ ms.locfileid: "54956177"
 # <a name="remote-debugger-port-assignments"></a>遠端偵錯工具連接埠指派
 Visual Studio 遠端偵錯工具可以應用程式或背景服務的形式執行。 當以應用程式的形式執行時，它會使用預設指派的連接埠，如下所示：  
 
-- Visual Studio 2019
+- Visual Studio 2019：4024
 
-- Visual Studio 2017
+- Visual Studio 2017：4022
 
 - Visual Studio 2015：4020  
   

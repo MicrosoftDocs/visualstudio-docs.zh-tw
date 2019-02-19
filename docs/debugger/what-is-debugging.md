@@ -8,15 +8,15 @@ helpviewer_keywords:
 - debugger
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6933f3b5dd826eda586c92466bcd9a8cbe6dc527
-ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
+ms.openlocfilehash: c01317f3b8fa92cf1bc17c3745f708e0d3f26e5b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54204277"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54919326"
 ---
 # <a name="what-is-debugging"></a>什麼是偵錯？
 
@@ -54,4 +54,4 @@ A**偵錯**值表示偵錯組態。 當您啟動應用程式 (按綠色箭號，
 > [適合完全初學者的偵錯](../debugger/debugging-absolute-beginners.md)
 
 > [!div class="nextstepaction"]
-> [透過撰寫更好的 C# 程式碼來修正 Bug](../debugger/write-better-code-with-visual-studio.md)
+> [偵錯技術和工具](../debugger/write-better-code-with-visual-studio.md)

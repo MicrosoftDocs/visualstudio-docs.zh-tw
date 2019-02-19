@@ -14,15 +14,15 @@ helpviewer_keywords:
 - debugging [Visual Studio], expression evaluation
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e9a7e936b565a961bb7b32d5599c79049857328e
-ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
+ms.openlocfilehash: 49afa8e56a45e3ebda5572afd1604cee7076578a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54204465"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55002501"
 ---
 # <a name="watch-variables-with-watch-windows-and-quickwatch"></a>監看式變數使用監看式視窗和快速監看式 
 
@@ -30,7 +30,7 @@ ms.locfileid: "54204465"
 
 **監看式**視窗可以顯示數個變數，偵錯時，一次。 **快速監看式**對話方塊顯示單一變數一次，而且必須關閉偵錯才能繼續。
 
-如果這是您第一次嘗試對程式碼進行偵錯，建議您先閱讀[適用於完全初學者的偵錯](../debugger/debugging-absolute-beginners.md)和[透過撰寫更好的 C# 程式碼來修正 Bug](../debugger/write-better-code-with-visual-studio.md)，再瀏覽本文。
+如果這是您嘗試偵錯程式碼的第一次，您可能想要閱讀[偵錯適用於徹底初學者](../debugger/debugging-absolute-beginners.md)並[偵錯的技術和工具](../debugger/write-better-code-with-visual-studio.md)之前，先透過這篇文章。
 
 ## <a name="observe-variables-with-a-watch-window"></a>觀察 監看式視窗變數
 
@@ -280,5 +280,5 @@ static void Main(string[] args)
 
 ## <a name="see-also"></a>另請參閱
  [什麼是偵錯？](../debugger/what-is-debugging.md)  
- [透過撰寫更好的 C# 程式碼來修正 Bug](../debugger/write-better-code-with-visual-studio.md)  
+ [偵錯技術和工具](../debugger/write-better-code-with-visual-studio.md)  
  [第一次查看偵錯](../debugger/debugger-feature-tour.md)[偵錯工具視窗](../debugger/debugger-windows.md)

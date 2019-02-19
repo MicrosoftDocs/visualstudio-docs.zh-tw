@@ -100,7 +100,7 @@ ms.locfileid: "54975435"
   
 ### <a name="to-update-and-re-sign-the-application-and-deployment-manifests"></a>若要更新和重新簽署應用程式和部署資訊清單  
   
--   更新並重新簽署應用程式和部署資訊清單。 如需詳細資訊，請參閱 [How to: Re-sign Application and Deployment Manifests](../deployment/how-to-re-sign-application-and-deployment-manifests.md)。  
+-   更新並重新簽署應用程式和部署資訊清單。 如需詳細資訊，請參閱[如何：重新簽署應用程式和部署資訊清單](../deployment/how-to-re-sign-application-and-deployment-manifests.md)。  
   
 ## <a name="see-also"></a>另請參閱  
  [發佈 ClickOnce 應用程式](../deployment/publishing-clickonce-applications.md)   

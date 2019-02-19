@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0efeb7fb0eb481d0b8d62ff4a9ebf9daad98c39f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54782290"
 ---
 # <a name="blocking-time-profile-report"></a>封鎖時間分析報表
@@ -34,14 +34,14 @@ ms.locfileid: "54782290"
 ## <a name="blocking-time-report-columns"></a>封鎖時間報表資料行  
  下表顯示每個封鎖時間報表的資料行。  
   
-|資料行名稱|說明|  
+|資料行名稱|描述|  
 |-----------------|-----------------|  
 |名稱|每個層級的呼叫堆疊的函式名稱。|  
 |執行個體|顯示的時間週期內封鎖呼叫的執行個體數目。|  
 |內含封鎖時間|針對到呼叫堆疊樹狀圖的這個層級為止的所有堆疊花費的總封鎖時間。 此內含數字是此函式的獨佔封鎖時間和其所有子節點的專屬封鎖時間的總和。|  
 |獨佔封鎖時間|花費的總封鎖時間，在此期間內，此函式是呼叫堆疊的最低層級。 具有大量獨佔封鎖時間的唯一呼叫堆疊項目，可能是您感興趣的函式。|  
 |API/等候類別|只針對最下層呼叫堆疊的函式顯示。 已辨識封鎖呼叫的簽章時，會提供封鎖 API 的名稱。 如果無法辨識簽章，會提供核心所報表的資訊。|  
-|詳細資料|函式的完整格式名稱。 當有詳細資料可用時，其中會包括行數。|  
+|Details|函式的完整格式名稱。 當有詳細資料可用時，其中會包括行數。|  
   
 ### <a name="synchronization"></a>同步處理  
  同步處理報表顯示對封鎖同步處理之區段負責的呼叫，以及每個呼叫堆疊的彙總封鎖時間。 如需詳細資訊，請參閱[同步處理時間](../profiling/synchronization-time.md)。  

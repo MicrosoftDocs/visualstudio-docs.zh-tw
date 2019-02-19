@@ -1,14 +1,9 @@
 ---
 title: Visual C# 程式碼片段 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - snippets [C#], default snippets
 - snippets [C#], Code Snippet Inserter
@@ -19,13 +14,13 @@ ms.assetid: dbea3dd6-e650-4190-b874-c9f097d7de6e
 caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 9c06243b4f41919c1c51002f0ed805a3fbd67112
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 47658a8aec8b2dedd2dcdeb337bdca805e1b0bca
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49297410"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54787101"
 ---
 # <a name="visual-c-code-snippets"></a>Visual C# 程式碼片段
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +44,7 @@ ms.locfileid: "49297410"
 |Class - 類別|建立類別宣告。|在命名空間 (包含全域命名空間)、類別或結構內部。|  
 |ctor|建立包含類別的建構函式。|在類別內部。|  
 |cw|建立 <xref:System.Console.WriteLine%2A> 呼叫。|在方法、索引子、屬性存取子或事件存取子內。|  
-|do|會建立[請勿](http://msdn.microsoft.com/library/50725f79-9ba6-4898-aa78-6e331568a1bb)`while`迴圈。|在方法、索引子、屬性存取子或事件存取子內。|  
+|do|建立 [do](http://msdn.microsoft.com/library/50725f79-9ba6-4898-aa78-6e331568a1bb)`while` 迴圈。|在方法、索引子、屬性存取子或事件存取子內。|  
 |else|建立 [else](http://msdn.microsoft.com/library/d9a1d562-8cf5-4bd4-9ba7-8ad970cd25b2) 區塊。|在方法、索引子、屬性存取子或事件存取子內。|  
 |enum|建立 [enum](http://msdn.microsoft.com/library/bbeb9a0f-e9b3-41ab-b0a6-c41b1a08974c) 宣告。|在命名空間 (包含全域命名空間)、類別或結構內部。|  
 |equals|建立覆寫 <xref:System.Object> 類別中所定義 <xref:System.Object.Equals%2A> 方法的方法宣告。|在類別或結構內部。|  
@@ -80,13 +75,10 @@ ms.locfileid: "49297410"
 |使用|建立 [using](http://msdn.microsoft.com/library/b42b8e61-5e7e-439c-bb71-370094b44ae8) 指示詞。|在命名空間 (包含全域命名空間) 內部。|  
 |while|建立 [while](http://msdn.microsoft.com/library/72a0765c-6852-4aca-b327-4a11cb7f5c59) 迴圈。|在方法、索引子、屬性存取子或事件存取子內。|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [程式碼片段函式](../ide/code-snippet-functions.md)   
  [程式碼片段](../ide/code-snippets.md)   
- [如何︰ 使用替代項目建立新的程式碼片段](http://msdn.microsoft.com/en-us/8d56d43c-097a-475b-aa85-cae1554b6338)   
+ [如何：使用替代項目建立新的程式碼片段](http://msdn.microsoft.com/8d56d43c-097a-475b-aa85-cae1554b6338)   
  [範本參數](../ide/template-parameters.md)   
- [如何： 使用範圍陳述式程式碼片段](../ide/how-to-use-surround-with-code-snippets.md)   
- [如何：還原 C# 重構程式碼片段](../ide/how-to-restore-csharp-refactoring-snippets.md)
-
-
-
+ [如何：使用範圍陳述式程式碼片段](../ide/how-to-use-surround-with-code-snippets.md)   
+ [如何：還原C#重構程式碼片段](../ide/how-to-restore-csharp-refactoring-snippets.md)

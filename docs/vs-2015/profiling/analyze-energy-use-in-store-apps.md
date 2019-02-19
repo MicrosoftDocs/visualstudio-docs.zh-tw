@@ -60,7 +60,7 @@ Visual Studio [ **能源消耗** ] 分析工具可協助您分析 Windows 市集
  當方法執行時，使用者標記就會與訊息一起加入至分析資料中。  
   
 > [!NOTE]
-> - Windows.Foundation.Diagnostics LoggingChannel 會實作 [Windows.Foundation.IClosable](http://msdn.microsoft.com/library/windows/apps/windows.foundation.iclosable.aspx) 介面 (等同於 C# 和 VB 中的 [System.IDisposable](http://msdn.microsoft.com/library/System.IDisposable.aspx))。為了避免作業系統資源流失，請在記錄頻道結束時呼叫 [LoggingChannel.Close](http://msdn.microsoft.com/library/windows/apps/windows.foundation.diagnostics.loggingchannel.close.aspx) (等同於 C# 和 VB 中的 Windows.Foundation.Diagnostics.LoggingChannel.Dispose)。  
+> - Windows.Foundation.Diagnostics LoggingChannel 會實作 [Windows.Foundation.IClosable](http://msdn.microsoft.com/library/windows/apps/windows.foundation.iclosable.aspx) 介面 (等同於 C# 和 VB 中的 [System.IDisposable](http://msdn.microsoft.com/library/System.IDisposable.aspx))。為了避免作業系統資源流失，請在記錄頻道結束時呼叫 [LoggingChannel.Close](http://msdn.microsoft.com/library/windows/apps/windows.foundation.diagnostics.loggingchannel.close.aspx)() (等同於 C# 和 VB 中的Windows.Foundation.Diagnostics.LoggingChannel.Dispose())。  
 >   -   每個開啟的記錄通道都必須具有唯一名稱。 嘗試使用與尚未處置的通道相同的名稱建立新記錄通道，將會造成例外狀況。  
   
  如需相關範例，請參閱 [LoggingSession 範例](http://code.msdn.microsoft.com/windowsapps/LoggingSession-Sample-ccd52336) 這個 Windows SDK 範例。  

@@ -48,7 +48,7 @@ ms.locfileid: "54995683"
   [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 可以偵測遺漏的必要條件，然後您可以使用啟動載入器，以便安裝必要條件。 如需詳細資訊，請參閱 <<c0> [ 如何： 使用 ClickOnce 應用程式安裝必要條件](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)。  
 
 > [!NOTE]
->  若要變更 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 和 *MageUI.exe* 等工具所產生資訊清單中的值，您必須在文字編輯器中編輯應用程式資訊清單，然後重新簽署應用程式資訊清單和部署資訊清單。 如需詳細資訊，請參閱 [How to: Re-sign Application and Deployment Manifests](../deployment/how-to-re-sign-application-and-deployment-manifests.md)。  
+>  若要變更 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 和 *MageUI.exe* 等工具所產生資訊清單中的值，您必須在文字編輯器中編輯應用程式資訊清單，然後重新簽署應用程式資訊清單和部署資訊清單。 如需詳細資訊，請參閱[如何：重新簽署應用程式和部署資訊清單](../deployment/how-to-re-sign-application-and-deployment-manifests.md)。  
 
  如果您使用 Visual Studio 和 ClickOnce 部署應用程式，預設會根據方案中的 .NET Framework 版本來選取啟動載入器套件。 但是，如果您變更目標 .NET Framework 版本，則必須手動更新 [必要條件] 對話方塊中的選項。  
 

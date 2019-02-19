@@ -27,7 +27,7 @@ ms.locfileid: "54785767"
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
   
-注意:
+注意]
 >  錯誤清單會顯示特定錯誤訊息的相關資訊。 您可以從 [輸出] 視窗複製錯誤碼或錯誤字串文字。 若要顯示 [輸出] 視窗，請按下 Ctrl+Alt+O。 請參閱[輸出視窗](../../ide/reference/output-window.md)。  
   
  您可以使用 [錯誤清單] 視窗，更快速地開發應用程式。 例如，您可以進行下列工作：  

@@ -169,7 +169,7 @@ Microsoft Visual Studio 2015 是一套建立軟體的工具，適用於從規劃
 ## <a name="connecting-to-cloud-services-and-databases"></a>連接至雲端服務和資料庫
  Visual Studio 中的 [伺服器總管](http://msdn.microsoft.com/library/4ea29b3b-bbb2-45e4-9082-eaf635c41c4d) 視窗會顯示您個人化帳戶 (您用以登入的帳戶) 所管理之所有帳戶中的資源，包含 SQL Server 執行個體、Azure、Salesforce.com、Office 365 及網站。
 
- ![Server Explorer](../ide/media/vs2015-serverexplorer3.png "vs2015_ServerExplorer3")
+ ![伺服器總管](../ide/media/vs2015-serverexplorer3.png "vs2015_ServerExplorer3")
 
  Visual Studio 包含 [Microsoft SQL Server Data Tools](https://msdn.microsoft.com/data/tools.aspx) (SSDT)，可讓您建置、偵錯、維護和重構資料庫。 您可以使用資料庫專案，或直接使用內部或外部所連接的資料庫執行個體。
 

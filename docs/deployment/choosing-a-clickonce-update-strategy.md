@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: d8b6e7bb-4ea0-47f3-91cd-48580bdceccc
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e09bdaff6d3b5a584091f05eae7d21b0aba256b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b157044bc6e626c4c35bcd6979648256e8eef9d8
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53946655"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55032978"
 ---
 # <a name="choose-a-clickonce-update-strategy"></a>選擇 ClickOnce 更新策略
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 可以提供應用程式自動更新。 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式會定期讀取它的部署資訊清單檔，以查看是否有此應用程式的更新可用。 如果有，就會下載及執行應用程式的新版本。 為了提高效率，只有已變更的檔案才會下載。  
@@ -117,7 +117,7 @@ ms.locfileid: "53946655"
  如果您使用受信任的應用程式部署，就不會出現授與信任層級的提示。 如需詳細資訊，請參閱[信任的應用程式部署概觀](../deployment/trusted-application-deployment-overview.md)。  
   
 ## <a name="see-also"></a>另請參閱  
- \<system.deployment.application> >   
+ \<xref:System.Deployment.Application>   
  [ClickOnce 安全性和部署](../deployment/clickonce-security-and-deployment.md)   
  [選擇 ClickOnce 部署策略](../deployment/choosing-a-clickonce-deployment-strategy.md)   
  [保護 ClickOnce 應用程式](../deployment/securing-clickonce-applications.md)   

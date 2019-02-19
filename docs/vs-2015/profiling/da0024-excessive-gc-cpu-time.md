@@ -1,14 +1,9 @@
 ---
 title: DA0024：過多 GC CPU 時間 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 f1_keywords:
 - vs.performance.DA0024
 - vs.performance.24
@@ -17,21 +12,21 @@ ms.assetid: 228872da-77d0-4da5-b455-ac57fb1867c9
 caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 910f66a31f959fe15cc7165eda4e531e7965e670
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: eae77a7685bbc9e8dc1613603baec9a5c93ad285
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51754251"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54771065"
 ---
 # <a name="da0024-excessive-gc-cpu-time"></a>DA0024：過多 GC CPU 時間
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 規則 Id |DA0024 |  
-|類別目錄 |.NET Framework 使用方式 |  
+|類別目錄 |。.NET Framework 使用方式 |  
 |程式碼剖析方法 |所有 |  
-|訊息 | %Time in GC 是非常高。 沒有過量的記憶體回收負荷。 |  
+|訊息 | %Time in GC 是非常高。 有過量的記憶體回收額外負荷。|  
 |規則類型 |警告 |  
   
  當您使用取樣、.NET 記憶體或資源爭用方法進行分析時，必須至少收集 10 個樣本才能觸發此規則。  
@@ -53,6 +48,3 @@ ms.locfileid: "51754251"
  按兩下 [錯誤清單] 視窗中的訊息，瀏覽至分析資料的[標記檢視](../profiling/marks-view.md)。 尋找 **.NET CLR Memory\\% Time in GC** 欄。 判斷是否有特定的程式執行階段，當中的 Managed 記憶體回收負荷比其他階段還繁重。 比較 % Time in GC 的值與在 **# of Gen 0 Collections**、**# of Gen 1 Collections**、**# of Gen 2 Collections** 值中報告的記憶體回收速率。  
   
  % Time in GC 值會嘗試報告應用程式花費在執行記憶體回收的時間量與處理總量成比例的時間。 請注意，有時候 % Time in GC 值可能會報告非常高的值，但不是因為有過多記憶體回收。 如需 % Time in GC 值計算方式的詳細資訊，請參閱 MSDN 上 **Maoni 部落格**的[不同工具報告的效能資料之間的差異 – 4 (英文)](http://go.microsoft.com/fwlink/?LinkId=177863) 文章。 如果發生分頁錯誤或應用程式在記憶體回收期間由電腦上其他較高優先順序的工作優先佔用，% Time in GC 計數器會反映這些額外的延遲。
-
-
-

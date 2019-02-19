@@ -71,9 +71,9 @@ int main() {
 |**sb**|const char* 字串 (無引號)|\<位置 >"hello world"|hello world|  
 |s8|UTF-8 字串|\<位置 >"This is utf-8 咖啡杯 â˜•"|"This is utf-8 咖啡杯 ☕"|
 |**s8b**|Utf-8 字串 (無引號)|\<位置 >"hello world"|hello world|  
-|su|Unicode （utf-16 編碼） 字串 （含引號）|\<location> L"hello world"|L"hello world"<br /><br /> u"hello world"|  
-|sub|Unicode (UTF-16 編碼) 字串 (無引號)|\<location> L"hello world"|hello world|  
-|bstr|BSTR 二進位字串 （含引號）|\<location> L"hello world"|L"hello world"|  
+|su|Unicode （utf-16 編碼） 字串 （含引號）|\<位置> L"hello world"|L"hello world"<br /><br /> u"hello world"|  
+|sub|Unicode (UTF-16 編碼) 字串 (無引號)|\<位置> L"hello world"|hello world|  
+|bstr|BSTR 二進位字串 （含引號）|\<位置> L"hello world"|L"hello world"|  
 |env|環境區塊 (雙重 null 結尾的字串)|\<位置 > L"=:: =::\\\\"|L"=:: =::\\\\\\0 = C: = C:\\\\windows\\\\system32\\0ALLUSERSPROFILE =...|
 |**s32**|UTF-32 字串 （含引號）|\<位置 > U"hello world"|u"hello world"|  
 |**s32b**|Utf-32 字串 (沒有引號)|\<位置 > U"hello world"|hello world|  

@@ -22,7 +22,7 @@ ms.locfileid: "54762855"
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
-http://go.microsoft.com/fwlink/p/?LinkId=536383)Visual C++ for Cross-Platform Mobile Development 是包含在 Visual Studio 2015 中的可安裝元件。 它包含了跨平台的 Visual Studio 範本，並會安裝跨平台工具和 SDK 以便迅速開始使用，讓您不需要自行尋找、下載與設定。 您可以使用 Visual Studio 中的這些工具來輕鬆建立、編輯、偵錯和測試跨平台專案。 本主題描述如何安裝必要的工具和協力廠商軟體，以使用 Visual Studio 開發跨平台應用程式。 如需元件概觀，請參閱 [Visual C++ 跨平台行動開發](http://go.microsoft.com/fwlink/p/?LinkId=536387)  
+適用於跨平台行動裝置應用程式開發的 Visual C++](http://go.microsoft.com/fwlink/p/?LinkId=536383) 是包含在 Visual Studio 2015 中的可安裝元件。 它包含了跨平台的 Visual Studio 範本，並會安裝跨平台工具和 SDK 以便迅速開始使用，讓您不需要自行尋找、下載與設定。 您可以使用 Visual Studio 中的這些工具來輕鬆建立、編輯、偵錯和測試跨平台專案。 本主題描述如何安裝必要的工具和協力廠商軟體，以使用 Visual Studio 開發跨平台應用程式。 如需元件概觀，請參閱 [Visual C++ 跨平台行動開發](http://go.microsoft.com/fwlink/p/?LinkId=536387)  
   
  [需求](#Requirements)   
  [取得工具](#GetTheTools)   

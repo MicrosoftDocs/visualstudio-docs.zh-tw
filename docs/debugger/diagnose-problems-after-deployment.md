@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: a3463eab-a352-4d17-8551-adbaad526db0
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1836fac34088b8cc0a144da47d011de9948d8fbb
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
-ms.translationtype: MTE95
+ms.openlocfilehash: 172a7d27de88e7d5d6361fdc29e4cc49a0ff3d94
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54228028"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55008708"
 ---
 # <a name="diagnose-problems-after-deployment-using-intellitrace-c-visual-basic"></a>部署後，使用 IntelliTrace 診斷問題 (C#，Visual Basic)
 
@@ -90,7 +90,7 @@ Visual Studio 2017 不會包含*BuildInfo.config*檔案，其中已被取代，�
 
 6.  執行新組建。
 
-    移至步驟 1。發行您的應用程式](#DeployRelease)
+    移至[步驟 2： 您的應用程式發行](#DeployRelease)
 
 ####  <a name="TFS2012_2010"></a> Team Foundation Server 2012 或 2010
  遵循下列步驟自動建立專案的建置資訊清單 (BuildInfo.config 檔案)，並將檔案放在專案的輸出資料夾中。 此檔案在輸出資料夾中會顯示為 "*ProjectName*.BuildInfo.config"，但在發行 App 之後，部署資料夾中的相同檔案會重新命名為 "BuildInfo.config"。
@@ -115,7 +115,7 @@ Visual Studio 2017 不會包含*BuildInfo.config*檔案，其中已被取代，�
 
 4.  執行新組建。
 
-    移至步驟 1。發行您的應用程式](#DeployRelease)
+    移至[步驟 2： 您的應用程式發行](#DeployRelease)
 
 ###  <a name="ManualBuild"></a> 建立建置資訊清單，以使用 Visual Studio 進行手動組建
  遵循下列步驟自動建立專案的建置資訊清單 (BuildInfo.config 檔案)，並將檔案放在專案的輸出資料夾中。 此檔案在輸出資料夾中會顯示為 "*ProjectName*.BuildInfo.config"，但在發行 App 之後，部署資料夾中的相同檔案會重新命名為 "BuildInfo.config"。
@@ -142,7 +142,7 @@ Visual Studio 2017 不會包含*BuildInfo.config*檔案，其中已被取代，�
 
 4.  執行新組建。
 
-    移至步驟 1。發行您的應用程式](#DeployRelease)
+    移至[步驟 2： 您的應用程式發行](#DeployRelease)
 
 ###  <a name="MSBuild"></a> 建立建置資訊清單，以使用 MSBuild.exe 進行手動組建
  當您執行組建時，會加入這些組建引數：
@@ -248,7 +248,7 @@ Visual Studio 2017 不會包含*BuildInfo.config*檔案，其中已被取代，�
 
 ###  <a name="FAQ"></a> 問與答
 
-####  <a name="WhyInclude"></a> 問：為什麼要在發行時包含我的專案、原始檔控制、組建和符號的相關資訊？
+####  <a name="WhyInclude"></a> 問：為什麼要在發行時包含我的專案、原始檔控制、組建和系統相關資訊？
  Visual Studio 使用這項資訊尋找與您嘗試偵錯之發行相符的方案和原始檔。 在您開啟 IntelliTrace 記錄檔並選取要開始偵錯的事件之後，Visual Studio 會使用符號來尋找並顯示發生事件的程式碼。 您可以接著檢視記錄的值，並前後移動瀏覽執行的程式碼。
 
  如果使用 TFS 且此資訊不在組建資訊清單 (BuildInfo.config 檔案) 中，Visual Studio 會在您目前連線的 TFS 上尋找相符的原始檔和符號。 如果 Visual Studio 找不到正確的 TFS 或相符的原始檔，系統會提示您選擇其他 TFS。
@@ -298,7 +298,7 @@ Visual Studio 2017 不會包含*BuildInfo.config*檔案，其中已被取代，�
 
     - **GitSourceControl**:位置**GitSourceControl**結構描述
 
-    - RepositoryUrlTeam Foundation Server、 專案集合和 Git 儲存機制 URI
+    - **RepositoryUrl**：您的 Team Foundation Server、專案集合和 Git 儲存機制的 URI
 
     - **ProjectPath**:您的應用程式專案檔案 （.csproj 或.vbproj） 的路徑
 
@@ -380,9 +380,9 @@ Visual Studio 2017 不會包含*BuildInfo.config*檔案，其中已被取代，�
      ![從原始檔控制開啟&#45;移轉](../debugger/media/ffr_openprojectfromsourcecontrol_migrated.png "FFR_OpenProjectFromSourceControl_Migrated")
 
 ####  <a name="WhatWorkspace"></a> 問：什麼是工作區？
- **答：** 您的[工作區用於儲存來源的複本](/azure/devops/repos/tfvc/create-work-workspaces?view=vsts)，因此您可以在簽入工作之前分別開發及測試該複本。 如果您還沒有明確對應至找到之方案或專案的工作區，則 Visual Studio 會提示您選擇可用的工作區或建立新的工作區，並以您的電腦名稱做為預設工作區名稱。
+ **答：** 您的 [工作區用於儲存來源的複本](/azure/devops/repos/tfvc/create-work-workspaces?view=vsts) ，您可以在簽入網路之前個別開發及測試該複本。 如果您還沒有明確對應至找到之方案或專案的工作區，則 Visual Studio 會提示您選擇可用的工作區或建立新的工作區，並以您的電腦名稱做為預設工作區名稱。
 
 ####  <a name="UntrustedSymbols"></a> 問：我為什麼收到有關未受信任符號的訊息？
  ![使用不受信任的符號路徑進行偵錯嗎？](../debugger/media/ffr_ituntrustedsymbolpaths.png "FFR_ITUntrustedSymbolPaths")
 
- **答：** 可信任的符號路徑清單中不包含建置資訊清單檔案 (\<專案名稱>.BuildInfo.config) 中的符號路徑時，就會出現此訊息。 您可以將路徑加入至偵錯工具選項中的符號路徑清單。
+ **答：** 可信任的符號路徑清單中未包含建置資訊清單檔案 (\<專案名稱>.BuildInfo.config) 內的符號路徑時，就會出現此訊息。 您可以將路徑加入至偵錯工具選項中的符號路徑清單。

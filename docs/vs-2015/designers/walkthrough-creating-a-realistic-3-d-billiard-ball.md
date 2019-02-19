@@ -188,7 +188,7 @@ ms.locfileid: "54793301"
   
    ![環境立方體貼圖的配置](../designers/media/gfx-shader-demo-billiard-art-env-texture-top.png "gfx_shader_demo_billiard_art_env_texture_top")  
   
-   頂端影像是正 Y (+Y) 立方體面，中間從左到右是 -X、+Z、+X 和 -Z 立方體面，底面是 -Y 立方體面。  
+   頂端影像是正 Y (+Y) 立方體面，中間從左到右是 –X、+Z、+X 和 –Z 立方體面，底部是 –Y 立方體面。  
   
    您現在可以修改著色器，將立方體貼圖範例融入其他著色器。  
   

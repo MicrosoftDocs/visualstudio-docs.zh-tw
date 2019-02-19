@@ -54,7 +54,7 @@ ms.locfileid: "54781081"
 6.  在 [執行建置後事件] 方塊中，指定要執行建置後事件的情況。  
   
     > [!NOTE]
-    >  若要新增冗長的語法，或從[建置前事件/建置後事件命令列對話方塊](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md)選取任何建置巨集，請按一下省略符號按鈕 (**...**) 來顯示編輯方塊。  
+    >  若要新增冗長的語法，或從[建置前事件/建置後事件命令列對話方塊](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md)選取任何建置巨集，請按一下省略符號按鈕 (**…**) 來顯示編輯方塊。  
   
      建置事件語法可以包含在命令提示字元或 .bat 檔案中的任何有效命令。 批次檔的名稱之前應該加上 `call` 以確保所有後續的命令都會執行。  
   

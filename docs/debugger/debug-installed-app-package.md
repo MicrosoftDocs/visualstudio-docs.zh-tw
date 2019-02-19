@@ -22,7 +22,7 @@ ms.workload:
 - uwp
 ms.openlocfilehash: 7fc90c6ecb17a8c794561b975fb8e0be9f6501af
 ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: MTE95
+ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 01/25/2019
 ms.locfileid: "54936212"

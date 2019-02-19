@@ -20,10 +20,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f3cab96aece51252c5a847e07fc3863e6b6f0bf5
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54766185"
 ---
 # <a name="csc-task"></a>Csc 工作
@@ -35,7 +35,7 @@ ms.locfileid: "54766185"
 ## <a name="parameters"></a>參數  
  下表說明 `Csc` 工作的參數。  
   
-|參數|說明|  
+|參數|描述|  
 |---------------|-----------------|  
 |`AdditionalLibPaths`|選擇性的 `String[]` 參數。<br /><br /> 指定要搜尋參考的其他目錄。 如需詳細資訊，請參閱 [/lib (C# 編譯器選項)](http://msdn.microsoft.com/library/b0efcc88-e8aa-4df4-a00b-8bdef70b7673)。|  
 |`AddModules`|選擇性的 `String` 參數。<br /><br /> 指定要成為組件一部分的一個或多個模組。 如需詳細資訊，請參閱 [/addmodule (C# 編譯器選項)](http://msdn.microsoft.com/library/ed604546-0dc2-4bd4-9a3e-610a8d973e58)。|  

@@ -51,7 +51,7 @@ ms.locfileid: "54778522"
   
   例如，下列目錄包含自訂的 [!INCLUDE[csprcs](../includes/csprcs-md.md)] 專案範本：  
   
-  C:\Documents and Settings\UserName\My Documents\Visual Studio <版本>\\\>\Templates\ProjectTemplates\Visual C#\  
+  C:\Documents and Settings\UserName\My Documents\\<Visual Studio 版本\>\Templates\ProjectTemplates\Visual C#\  
   
   自訂範本不包含當地語系化之範本的子目錄。 您可以在 [選項] 對話方塊的 [環境\專案和方案] 下變更自訂範本的預設目錄。  
   
@@ -117,7 +117,7 @@ ms.locfileid: "54778522"
   
 1. 在自訂專案範本目錄的語言資料夾中建立資料夾。 例如，若要為 [!INCLUDE[csprcs](../includes/csprcs-md.md)] 範本建立 HelloWorld 類別，您將建立下列目錄：  
   
-    \My Documents\Visual Studio <版本>\\\>\Templates\ProjectTemplates\CSharp\HelloWorld\  
+    \My Documents\\<Visual Studio 版本\>\Templates\ProjectTemplates\CSharp\HelloWorld\  
   
 2. 將此類別的所有範本都放在新資料夾中。  
   
@@ -131,7 +131,7 @@ ms.locfileid: "54778522"
   
 1.  在自訂項目範本目錄的語言資料夾中建立資料夾。 例如，若要為 [!INCLUDE[csprcs](../includes/csprcs-md.md)] 範本建立 HelloWorld 類別，您將建立下列目錄：  
   
-     \My Documents\Visual Studio <版本>\\\>\Templates\ItemTemplates\CSharp\HelloWorld\  
+     \My Documents\\<Visual Studio 版本\>\Templates\ItemTemplates\CSharp\HelloWorld\  
   
 2.  將此類別的所有範本都放在新資料夾中。  
   

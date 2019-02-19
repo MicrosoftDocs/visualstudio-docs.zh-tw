@@ -14,10 +14,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 73d515c03b7966e3434a2fc2507d3ad5f8d13c1b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54782835"
 ---
 # <a name="overview-of-the-domain-specific-language-tools-user-interface"></a>Domain-Specific Language Tools 使用者介面概觀
@@ -43,7 +43,7 @@ ms.locfileid: "54782835"
   
  下表說明領域模型圖表的一些項目。  
   
-|**字詞**|**定義**|  
+|**條款**|**定義**|  
 |--------------|--------------------|  
 |領域類別|領域類別是您模型中的項目類型。<br /><br /> 如果領域類別是多個關聯的目標，則可能在圖表中出現多次。<br /><br /> 若要新增領域類別，請將領域類別工具從 [工具箱] 拖曳到圖表的 [類別和關係] 一側。|  
 |領域關聯|領域關聯是您模型中項目之間的連結類型。<br /><br /> 「內嵌關係」表示來源項目擁有或包含目標項目，並會顯示為實線。 模型中每個項目都應該是內嵌關係的目標，模型才能形成樹狀。 「參考關聯性」表示模型項目之間的一般連結，並顯示為虛線。 所有項目都可以有任意數目的參考連結。<br /><br /> 若要建立關聯，請在 [工具箱] 中按一下工具，然後依序按一下來源領域類別和目標類別。|  

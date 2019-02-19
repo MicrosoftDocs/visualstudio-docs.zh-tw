@@ -1,14 +1,9 @@
 ---
 title: LIB 工作 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 f1_keywords:
 - VC.Project.VCLibrarianTool.Name
 - VC.Project.VCLibrarianTool.TreatLibWarningsAsErrors
@@ -30,13 +25,13 @@ ms.assetid: e062c7f9-cc69-4a83-9361-1bb5355e5fe8
 caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 141c153fa65d9858991061c79dc423f18227a381
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: f542c50f062da66d707e92409f3856304578e676
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49812591"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54763389"
 ---
 # <a name="lib-task"></a>LIB 工作
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,7 +47,7 @@ ms.locfileid: "49812591"
 |------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |     **AdditionalDependencies**     |                                                                                                                                                                                                                                                                                                                                                                                                                      選擇性的 **String[]** 參數。<br /><br /> 指定要加入至命令列的其他項目。                                                                                                                                                                                                                                                                                                                                                                                                                       |
 |  **AdditionalLibraryDirectories**  |                                                                                                                                                                                                                                                                                                                                         選擇性的 **String[]** 參數。<br /><br /> 覆寫環境程式庫路徑。 指定目錄名稱。<br /><br /> 如需詳細資訊，請參閱 [/LIBPATH (其他 Libpath)](http://msdn.microsoft.com/library/7240af0b-9a3d-4d53-8169-2a92cd6958ba)。                                                                                                                                                                                                                                                                                                                                          |
-|       **AdditionalOptions**        |                                                                                                                                                                                                                                                                        選擇性的 **String** 參數。<br /><br /> 指定於命令列上的 lib.exe 選項清單。 例如， **」*/option1 option2 /option #*"。使用這個參數來指定未表示的任何其他的 lib.exe 選項\* \*LIB**工作參數。<br /><br /> 如需詳細資訊，請參閱[執行 LIB](http://msdn.microsoft.com/library/d54f5c81-7147-4b2c-a8db-68ce6eb1eabd)。                                                                                                                                                                                                                                                                        |
+|       **AdditionalOptions**        |                                                                                                                                                                                                                                                                        選擇性的 **String** 參數。<br /><br /> 指定於命令列上的 lib.exe 選項清單。 例如 **"*/option1 /option2 /option#*"。使用此參數可指定任何其他 \*\*LIB** 工作參數未表示的 lib.exe 選項。<br /><br /> 如需詳細資訊，請參閱[執行 LIB](http://msdn.microsoft.com/library/d54f5c81-7147-4b2c-a8db-68ce6eb1eabd)。                                                                                                                                                                                                                                                                        |
 |         **DisplayLibrary**         |                                                                                                                                                                                                                                                                                                                      選擇性的 **String** 參數。<br /><br /> 顯示輸出程式庫的相關資訊。 指定檔案名稱，可將資訊重新導向至該檔案。 指定 "CON" 或不指定任何項目，可將資訊重新導向至主控台。<br /><br /> 此參數對應於 lib.exe 的 **/LIST** 選項。                                                                                                                                                                                                                                                                                                                      |
 |         **ErrorReporting**         |                                                                                                                                              選擇性的 **String** 參數。<br /><br /> 指定 lib.exe 在執行階段失敗時如何將內部錯誤資訊傳送至 Microsoft。<br /><br /> 指定下列其中一個值；每個值會分別對應至一個命令列選項。<br /><br /> -   **NoErrorReport** - **/ERRORREPORT:NONE**<br />-   **PromptImmediately** - **/ERRORREPORT:PROMPT**<br />-   **QueueForNextLogin** - **/ERRORREPORT:QUEUE**<br />-   **SendErrorReport** - **/ERRORREPORT:SEND**<br /><br /> 如需詳細資訊，請參閱[執行 LIB](http://msdn.microsoft.com/library/d54f5c81-7147-4b2c-a8db-68ce6eb1eabd) 中的 **/ERRORREPORT** 命令列選項。                                                                                                                                               |
 |      **ExportNamedFunctions**      |                                                                                                                                                                                                                                                                                                                                                                                     選擇性的 **String[]** 參數。<br /><br /> 指定一或多個要匯出的函式。<br /><br /> 此參數對應於 lib.exe 的 **/EXPORT:** 選項。                                                                                                                                                                                                                                                                                                                                                                                      |
@@ -77,8 +72,5 @@ ms.locfileid: "49812591"
 
 ## <a name="remarks"></a>備註  
 
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [工作參考](../msbuild/msbuild-task-reference.md)
-
-
-

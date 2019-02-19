@@ -1,14 +1,9 @@
 ---
 title: Microsoft Help Viewer | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-help-viewer
+ms.topic: conceptual
 f1_keywords:
 - hv_general
 helpviewer_keywords:
@@ -24,13 +19,13 @@ ms.assetid: 74e41666-2ce8-4ac0-a0e5-3723d1e322c2
 caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: c8c8803394c4f6d31db187384304f8fbb1db4468
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 141bf63a3cf64cfb1e3576f76512351b496a2778
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49820092"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54755034"
 ---
 # <a name="microsoft-help-viewer"></a>Microsoft Help Viewer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +33,7 @@ ms.locfileid: "49820092"
 您可以使用 Microsoft Help Viewer 在本機電腦上安裝及檢視各種產品和技術的內容。  
   
 > [!WARNING]
->  當您安裝 Visual Studio 時，您會取得說明檢視器。 若要開始讀取說明主題在說明檢視器中，而不是在 MSDN 下載網站上，移至**幫助**功能表，在 Visual Studio 中，選取**設定說明偏好**，然後選取 **啟動 說明 中檢視器**。 指定 Visual Studio 版本的離線說明主題僅於該版本的最終發行之後才可使用。  
+>  當您安裝 Visual Studio 時，您會取得說明檢視器。 若要在說明檢視器中開始讀取說明主題，而不要在 MSDN 下載網站上讀取，請在 Visual Studio 中移至 [說明] 功能表，選取 [設定說明偏好]，然後選取 [在說明檢視器中啟動]。 指定 Visual Studio 版本的離線說明主題僅於該版本的最終發行之後才可使用。  
   
  您可執行以下動作：  
   
@@ -79,11 +74,8 @@ ms.locfileid: "49820092"
   
   [說明檢視器] 視窗的下方區域包含暫止的下載總大小、所需磁碟空間量和可用的磁碟空間量之相關資訊。 如果有可用的更新，這個區域也包含可能發生的錯誤之相關資訊，以及一個連結，您可以選擇選擇此連結來重新整理已安裝的內容。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [說明檢視器系統管理員指南](../ide/help-viewer-administrator-guide.md)   
  [安裝與管理本機內容](../ide/install-and-manage-local-content.md)   
  [尋找資訊](../ide/locate-information.md)   
  [針對說明檢視器進行疑難排解](../ide/troubleshooting-the-help-viewer.md)
-
-
-
