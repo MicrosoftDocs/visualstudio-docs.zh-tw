@@ -1,24 +1,19 @@
 ---
 title: 自訂程式碼涵蓋範圍分析 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 ms.assetid: f6337c35-acae-4c5f-b5d9-ac5ff687ef18
 caps.latest.revision: 18
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: d8a0b09bf2e67813548865b6ed56fee0b0170cc5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 70e74c1c4d5b8cc93f4afaeebc74f5fc0579a692
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49890162"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54768029"
 ---
 # <a name="customizing-code-coverage-analysis"></a>自訂程式碼涵蓋範圍分析
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -106,7 +101,7 @@ ms.locfileid: "49890162"
 ### <a name="regular-expressions"></a>規則運算式  
  包含和排除節點使用規則運算式。 如需詳細資訊，請參閱[在 Visual Studio 中使用規則運算式](../ide/using-regular-expressions-in-visual-studio.md)。 規則運算式和萬用字元不同。 特別之處在於：  
   
-1. **\.\\*** 比對任何字元的字串  
+1. **\.\\*** 會比對任何字元的字串  
   
 2. **\\.** 會比對點 "."  
   
@@ -158,7 +153,7 @@ ms.locfileid: "49890162"
   
   **比對函式名稱**  
   
-  您的規則運算式必須比對函式的完整名稱，包括命名空間、類別名稱、方法名稱和參數清單。 例如：  
+  您的規則運算式必須比對函式的完整名稱，包括命名空間、類別名稱、方法名稱和參數清單。 例如，套用至物件的  
   
 - C# 或 Visual Basic：`Fabrikam.Math.LocalMath.SquareRoot(double)`  
   
@@ -207,7 +202,7 @@ ms.locfileid: "49890162"
   
 3. 在 [流程] 頁面上，展開 [自動化測試]、[測試來源]、[回合設定]。 選取 **.runsettings** 檔案。  
   
-   - <em>但是**測試組件</em>* 而不會出現**測試來源**。當我嘗試設定 [回合設定]** 欄位時，我只能選取 .testsettings 檔案。*  
+   - <em>但是會出現 [測試組件] 而非 [測試來源]。當我嘗試設定 [回合設定] 欄位時，我只能選取 .testsettings 檔案。*  
   
       在 [自動化測試] 下選取 [測試組件]，然後選擇該行結尾的 [...]。 在 [新增/編輯測試回合] 對話方塊中，將 [測試執行器] 設為 [Visual Studio 測試執行器]。  
   
@@ -330,9 +325,6 @@ Included items must then not match any entries in the exclude list to remain inc
   
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [使用程式碼涵蓋範圍來決定所測試的程式碼數量](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)   
  [對程式碼進行單元測試](../test/unit-test-your-code.md)
-
-
-

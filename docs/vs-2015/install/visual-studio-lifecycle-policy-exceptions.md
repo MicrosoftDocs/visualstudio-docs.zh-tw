@@ -1,25 +1,20 @@
 ---
 title: Visual Studio 週期原則例外 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-install
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-install
+ms.topic: conceptual
 ms.assetid: c238489d-6181-42c6-aa60-f75d0889dc68
 caps.latest.revision: 3
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.openlocfilehash: c7c60747429bd702cdcea5f19891829411cd4a9c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: b17693523c75dc434fdda258c07a9b17ecfda1b0
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51772621"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54763085"
 ---
 # <a name="visual-studio-lifecycle-policy-exceptions"></a>Visual Studio 週期原則例外
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,14 +39,14 @@ Visual Studio 包含一組編譯器、語言、執行階段、環境和其他資
 |[Office 2013](http://support.microsoft.com/lifecycle/?p1=16674)|Open XML SDK|  
 |[線上服務原則](http://support.microsoft.com/gp/OSSLpolicy)|Microsoft Ads SDK|  
 |[SharePoint 2013](http://support.microsoft.com/lifecycle/search/default.aspx?sort=PN&alpha=sharepoint%20server%202013&Filter=FilterNO)|SharePoint 用戶端元件<br /><br /> SharePoint Foundation 2013<br /><br /> Windows Identity Foundation 擴充功能|  
-|[Silverlight 5](http://support.microsoft.com/lifecycle/?p1=16278)<br /><br /> <br />> 請參閱： [http://support.microsoft.com/gp/lifean45](http://support.microsoft.com/gp/lifean45)|Silverlight 5 執行階段<br /><br /> Silverlight 5 SDK|  
+|[Silverlight 5](http://support.microsoft.com/lifecycle/?p1=16278)<br /><br /> <br />> 另請參閱：[http://support.microsoft.com/gp/lifean45](http://support.microsoft.com/gp/lifean45)|Silverlight 5 執行階段<br /><br /> Silverlight 5 SDK|  
 |[SQL Server 2008 R2](http://support.microsoft.com/lifecycle/search/default.aspx?sort=PN&alpha=SQL%20Server%202008%20R2&Filter=FilterNO)|SQL 系統 CLR 類型 (SQL Server 2008 R2)|  
 |[SQL Server 2012](http://support.microsoft.com/lifecycle/search/default.aspx?sort=PN&alpha=SQL%20Server%202012&Filter=FilterNO)|DACFx (DACFramework)<br /><br /> SMO (SharedManagementObjects)<br /><br /> SQL 命令列公用程式<br /><br /> SQL 語言服務 - IntelliSense (TSQLLanguageService)<br /><br /> SQL LocalDB<br /><br /> SQL Native Client (Sqlncli)<br /><br /> SQL Server Express 2012 SP1<br /><br /> SQL 系統 CLR 類型 (SQL Server 2012)<br /><br /> SQLDOM|  
-|[SQL Server 2014](https://support.microsoft.com/en-us/lifecycle/search?sort=PN&alpha=SQL%20Server%202014&Filter=FilterNO)|DACFx (DACFramework)<br /><br /> SMO (SharedManagementObjects)<br /><br /> SQL 命令列公用程式<br /><br /> SQL 語言服務 - IntelliSense (TSQLLanguageService)<br /><br /> SQL LocalDB<br /><br /> SQL Native Client (Sqlncli)<br /><br /> SQL Server Express 2014<br /><br /> SQL 系統 CLR 類型 (SQL Server 2014)<br /><br /> SQLDOM|  
+|[SQL Server 2014](https://support.microsoft.com/lifecycle/search?sort=PN&alpha=SQL%20Server%202014&Filter=FilterNO)|DACFx (DACFramework)<br /><br /> SMO (SharedManagementObjects)<br /><br /> SQL 命令列公用程式<br /><br /> SQL 語言服務 - IntelliSense (TSQLLanguageService)<br /><br /> SQL LocalDB<br /><br /> SQL Native Client (Sqlncli)<br /><br /> SQL Server Express 2014<br /><br /> SQL 系統 CLR 類型 (SQL Server 2014)<br /><br /> SQLDOM|  
 |[SQL Server Compact Edition 4.0](http://support.microsoft.com/lifecycle/?p1=16106)|SQL Server Compact Edition 4.0|  
-|[WCF RIA 服務 v1.0 SP2](http://go.microsoft.com/fwlink/?LinkId=328955)|WCF RIA Services v1.0 SP2|  
+|[WCF RIA Services v1.0 SP2](http://go.microsoft.com/fwlink/?LinkId=328955)|WCF RIA Services v1.0 SP2|  
 |[Windows Server 2008](http://support.microsoft.com/lifecycle/search/default.aspx?sort=PN&alpha=Windows%20Server%202008&Filter=FilterNO)|適用於 Windows Server 2008 的 Windows Web 服務 (WWS)|  
 |[Windows 7](http://support.microsoft.com/lifecycle/?c2=14019)|Windows 7 SDK|  
 |[Windows 8](http://support.microsoft.com/lifecycle/?c2=16796)|Windows 8 SDK|  
 |[Windows 8.1](http://support.microsoft.com/lifecycle/search/default.aspx?sort=PN&alpha=windows%208.1&Filter=FilterNO)|Windows 8.1 SDK<br /><br /> 適用於 JavaScript 的 Windows Library (WinJS)|  
-|[Microsoft Azure](http://support.microsoft.com/gp/azure-cloud-lifecycle-faq)<br /><br /> <br />> 請參閱：[線上週期原則](http://support.microsoft.com/gp/OSSLpolicy)|Microsoft Azure 行動服務 SDK<br /><br /> Microsoft Azure 行動服務工具|
+|[Microsoft Azure](http://support.microsoft.com/gp/azure-cloud-lifecycle-faq)<br /><br /> <br />請參閱[線上週期原則](http://support.microsoft.com/gp/OSSLpolicy)|Microsoft Azure 行動服務 SDK<br /><br /> Microsoft Azure 行動服務工具|

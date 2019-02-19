@@ -1,5 +1,5 @@
 ---
-title: 選項、文字編輯器、C/C++、實驗 | Microsoft Docs
+title: 選項、文字編輯器、C-C++、實驗 | Microsoft Docs
 ms.date: 11/15/2016
 ms.topic: reference
 f1_keywords:

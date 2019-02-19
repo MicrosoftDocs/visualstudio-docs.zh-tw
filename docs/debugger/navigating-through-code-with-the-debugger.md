@@ -12,19 +12,19 @@ helpviewer_keywords:
 ms.assetid: 759072ba-4aaa-447e-8e51-0dd1456fe896
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6e983137b4d66ff568ba706353d950470787e3a2
-ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
+ms.openlocfilehash: 2a009bb48d130f35fa9663602762d5cff9789037
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54204481"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55070613"
 ---
 # <a name="navigate-through-code-with-the-visual-studio-debugger"></a>Visual Studio 偵錯工具巡覽程式碼
 
-Visual Studio 偵錯工具可協助您瀏覽程式碼來檢查應用程式的狀態，並顯示其執行流程。 若要快速取得您想要檢查的程式碼，您可以使用鍵盤快速鍵、 偵錯 命令、 中斷點及其他功能。 熟悉偵錯工具巡覽命令和快速鍵可以更快速且輕易地尋找和解決應用程式的問題。  如果這是您第一次嘗試對程式碼進行偵錯，建議您先閱讀[適用於完全初學者的偵錯](../debugger/debugging-absolute-beginners.md)和[透過撰寫更好的 C# 程式碼來修正 Bug](../debugger/write-better-code-with-visual-studio.md)，再瀏覽本文。
+Visual Studio 偵錯工具可協助您瀏覽程式碼來檢查應用程式的狀態，並顯示其執行流程。 若要快速取得您想要檢查的程式碼，您可以使用鍵盤快速鍵、 偵錯 命令、 中斷點及其他功能。 熟悉偵錯工具巡覽命令和快速鍵可以更快速且輕易地尋找和解決應用程式的問題。  如果這是您嘗試偵錯程式碼的第一次，您可能想要閱讀[偵錯適用於徹底初學者](../debugger/debugging-absolute-beginners.md)並[偵錯的技術和工具](../debugger/write-better-code-with-visual-studio.md)之前，先透過這篇文章。
   
 ## <a name="basic-debugging"></a>基本偵錯  
 
@@ -79,7 +79,7 @@ Visual Studio 偵錯工具可協助您瀏覽程式碼來檢查應用程式的狀
 
 您可能不在意函式偵錯時，或您知道它的運作方式，例如通過完善測試的程式庫程式碼。 您可以使用下列命令，可以跳過的程式碼。 函式仍在執行，但偵錯工具會略過它們。  
   
-|鍵盤命令|偵錯 功能表命令|說明|  
+|鍵盤命令|偵錯 功能表命令|描述|  
 |----------------------|------------------|-----------------|  
 |**F10**|**不進入函式**|如果目前這一行包含函式呼叫**不進入函式**執行的程式碼，然後在第一行程式碼中暫止執行之後呼叫的函式會傳回。|  
 |**Shift**+**F11**|**跳離函式**|**跳離函式**會繼續執行程式碼和目前的函式傳回時，會暫停執行。 偵錯工具會略過透過目前的函式。|  
@@ -186,5 +186,5 @@ Visual Studio 的中斷點提供一組豐富的其他功能，例如條件式中
 
 ## <a name="see-also"></a>另請參閱
  [什麼是偵錯？](../debugger/what-is-debugging.md)  
- [透過撰寫更好的 C# 程式碼來修正 Bug](../debugger/write-better-code-with-visual-studio.md)  
+ [偵錯技術和工具](../debugger/write-better-code-with-visual-studio.md)  
  [率先一睹偵錯](../debugger/debugger-feature-tour.md) 
