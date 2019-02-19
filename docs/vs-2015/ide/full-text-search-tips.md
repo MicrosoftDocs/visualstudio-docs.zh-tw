@@ -15,10 +15,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: a015aeff983979bbb8f6ddedc245c74d3fb5f77b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54791704"
 ---
 # <a name="full-text-search-tips"></a>全文檢索搜尋提示
@@ -32,7 +32,7 @@ ms.locfileid: "54791704"
 ### <a name="general-guidelines"></a>一般方針  
  下表包含一些基本規則和指導方針，以便開發 [說明] 中的搜尋查詢。  
   
-|語法|說明|  
+|語法|描述|  
 |------------|-----------------|  
 |區分大小寫|搜尋不區分大小寫。 使用大寫或小寫字元開發您的搜尋準則。 例如，"OLE" 和 "ole" 傳回相同的結果。|  
 |字元組合|您無法只搜尋個別的字母 (a – z) 或數字 (0 – 9)。 如果您嘗試搜尋特定的保留字，例如 "and"、"from" 和 "with"，則會忽略它們。 如需詳細資訊，請參閱本主題稍後的「搜尋中忽略的字 (停用字詞)」。|  

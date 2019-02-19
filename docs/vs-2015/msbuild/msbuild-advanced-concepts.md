@@ -12,10 +12,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: eff3d6234d4d7b9ae34824d4fec5b8ae0816a20c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54796594"
 ---
 # <a name="msbuild-advanced-concepts"></a>MSBuild 進階概念
@@ -26,7 +26,7 @@ ms.locfileid: "54796594"
   
 ## <a name="related-topics"></a>相關主題  
   
-|標題|說明|  
+|標題|描述|  
 |-----------|-----------------|  
 |[批次處理](../msbuild/msbuild-batching.md)|描述如何根據項目中繼資料，批次處理組建目標和工作。|  
 |[轉換](../msbuild/msbuild-transforms.md)|說明如何使用轉換啟用相依性分析。|  

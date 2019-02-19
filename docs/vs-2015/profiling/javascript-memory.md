@@ -24,10 +24,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 4fb26e310673003ab25c4d08d4991ec33aa50932
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54792203"
 ---
 # <a name="javascript-memory"></a>JavaScript 記憶體
@@ -47,7 +47,7 @@ ms.locfileid: "54792203"
   
    不是直接由應用程式程式碼建立的物件都將被自動篩選掉。您也可以根據物件名稱來篩選資料。  
   
-  如需能協助您找出運作中應用程式發生記憶體流失問題的教學課程，請參閱[逐步解說：尋找記憶體流失 (JavaScript)](../profiling/walkthrough-find-a-memory-leak-javascript.md)。  
+  如需能協助您找出運作中應用程式發生記憶體流失問題的教學課程，請參閱[逐步解說：找出記憶體流失 (JavaScript)](../profiling/walkthrough-find-a-memory-leak-javascript.md)。  
   
   本主題內容：  
   
@@ -126,7 +126,7 @@ ms.locfileid: "54792203"
 -   [檢視快照差異](#SnapshotDiff).顯示快照之間的差異值。 這些檢視會顯示物件大小和物件計數的差異。  
   
 ##  <a name="Isolate"></a> Isolate a memory leak  
- 下列步驟提供的工作流程，有助於您更有效地使用 JavaScript 記憶體分析器。 如果您懷疑應用程式有記憶體流失，這些步驟可能會很有用。 如需能協助您找出運作中應用程式發生記憶體流失問題的教學課程，請參閱[逐步解說：尋找記憶體流失 (JavaScript)](../profiling/walkthrough-find-a-memory-leak-javascript.md)。  
+ 下列步驟提供的工作流程，有助於您更有效地使用 JavaScript 記憶體分析器。 如果您懷疑應用程式有記憶體流失，這些步驟可能會很有用。 如需能協助您找出運作中應用程式發生記憶體流失問題的教學課程，請參閱[逐步解說：找出記憶體流失 (JavaScript)](../profiling/walkthrough-find-a-memory-leak-javascript.md)。  
   
 1. 在 Visual Studio 中開啟應用程式。  
   
@@ -168,7 +168,7 @@ ms.locfileid: "54792203"
   
     - 差異堆積大小 (在堆積大小下方的左邊連結)。 此連結文字會顯示目前快照與上一個快照之間的堆積大小差異。  
   
-    - 差異物件計數 (在物件計數下方的右邊連結)。 此連結文字會顯示兩個值 (例如 +1858/-1765)：第一個值是自上一個快照以來新增新物件的數目，而第二個值是自上一個快照以來移除的物件數目。  
+    - 差異物件計數 (在物件計數下方的右邊連結)。 此連結文字會顯示兩個值 (例如，+1858 / -1765)：第一個值是自上一個快照以來加入新物件的數目，而第二個值是自上一個快照以來移除的物件數目。  
   
       這些連結會開啟堆積中類型的差異快照詳細資料檢視，並依保留大小或物件計數排序 (視您開啟哪一個連結而定)。  
   
@@ -224,7 +224,7 @@ ms.locfileid: "54792203"
   
 -   物件計數。 這個計數只代表在應用程式中建立的物件，其中也已經篩選掉了 JavaScript 執行階段建立的內建物件。 這個物件計數可以連結到快照詳細資料的 [型別] 檢視。  
   
--   差異物件計數。 這會顯示兩個值：第一個值是自上一個快照以來新增新物件的數目，而第二個值是自上一個快照以來移除的物件數目。 例如，上圖顯示與快照 #1 相比，已加入了 1,859 個物件而且移除了 1,733 物件。 如果物件總計數增加，這項資訊後面就會顯示紅色向上箭頭，反之如果物件總計數減少，就會顯示綠色向下箭頭。 如果物件計數沒有變更，您就會看到 [ **沒有變更** ] 這個文字而非數字。 如果是第一個快照，您會看到 [ **基準**] 這個文字。 差異物件計數可以連結到快照差異的 [型別] 檢視。  
+-   差異物件計數。 這會顯示兩個值：第一個值是從上一個快照以來加入新物件的數目，而第二個值是從上一個快照以來移除的物件數目。 例如，上圖顯示與快照 #1 相比，已加入了 1,859 個物件而且移除了 1,733 物件。 如果物件總計數增加，這項資訊後面就會顯示紅色向上箭頭，反之如果物件總計數減少，就會顯示綠色向下箭頭。 如果物件計數沒有變更，您就會看到 [ **沒有變更** ] 這個文字而非數字。 如果是第一個快照，您會看到 [ **基準**] 這個文字。 差異物件計數可以連結到快照差異的 [型別] 檢視。  
   
 -   在擷取快照當時的螢幕擷取畫面。  
   
@@ -401,4 +401,4 @@ if (performance && performance.mark) {
     -   建立測試物件並在 JavaScript 記憶體分析器的檢視 (例如類型檢視) 中追蹤此物件。 例如，您可以將大型物件附加至其他物件，查看特定物件或項目是否已進行記憶體回收。  
   
 ## <a name="see-also"></a>請參閱  
- [逐步解說：尋找記憶體遺漏 (JavaScript)](../profiling/walkthrough-find-a-memory-leak-javascript.md)
+ [逐步解說：尋找記憶體流失 (JavaScript)](../profiling/walkthrough-find-a-memory-leak-javascript.md)

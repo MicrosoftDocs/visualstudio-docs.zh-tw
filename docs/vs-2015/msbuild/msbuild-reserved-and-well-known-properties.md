@@ -17,10 +17,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0ab47b0058b80b49b5892a92ea6eeda1afe5296c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54804172"
 ---
 # <a name="msbuild-reserved-and-well-known-properties"></a>MSBuild 保留和已知屬性
@@ -34,7 +34,7 @@ ms.locfileid: "54804172"
 ## <a name="reserved-and-well-known-properties"></a>保留和已知屬性  
  下表將描述 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 預先定義的屬性。  
   
-|屬性|說明|保留或已知|  
+|屬性|描述|保留或已知|  
 |--------------|-----------------|-----------------------------|  
 |`MSBuildBinPath`|目前使用的 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 二進位檔所在資料夾的絕對路徑 (例如 C:\Windows\Microsoft.Net\Framework\\*versionNumber*)。 如果您必須參考 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 目錄中的檔案，這個屬性會相當實用。<br /><br /> 不要在這個屬性中包含結尾的反斜線。|保留|  
 |`MSBuildExtensionsPath`|於 .NET Framework 4 中引入：`MSBuildExtensionsPath` 和 `MSBuildExtensionsPath32` 兩者的預設值並無差異。 您可以將環境變數 `MSBUILDLEGACYEXTENSIONSPATH` 設定為非 null 值，藉此啟用舊版中 `MSBuildExtensionsPath` 之預設值的行為。<br /><br /> 在 .NET Framework 3.5 (含) 以前版本中，`MSBuildExtensionsPath` 的預設值會指向 \Program Files\ 或 \Program Files (x86) 資料夾下 MSBuild 子資料夾的路徑 (根據目前處理序的位元而定)。 例如，若是 64 位元電腦上的 32 位元處理序，這個屬性會指向 \Program Files (x86) 資料夾。 若是 64 位元電腦上的 64 位元處理序，這個屬性會指向 \Program Files 資料夾。<br /><br /> 不要在這個屬性中包含結尾的反斜線。<br /><br /> 這個位置是放置目標檔案的理想位置。 例如，您的目標檔案可以安裝於 \Program Files\MSBuild\MyFiles\Northwind.targets，然後使用下面這個 XML 程式碼匯入專案檔中：<br /><br /> `<Import Project="$(MSBuildExtensionsPath)\MyFiles\Northwind.targets"/>`|已知|  
@@ -55,10 +55,10 @@ ms.locfileid: "54804172"
 |`MSBuildThisFileDirectory`|`MSBuildThisFileFullPath` 的目錄部分。<br /><br /> 在路徑中包含結尾的反斜線。|保留|  
 |`MSBuildThisFileDirectoryNoRoot`|`MSBuildThisFileFullPath` 的目錄部分，不包括根磁碟機。<br /><br /> 在路徑中包含結尾的反斜線。|保留|  
 |`MSBuildThisFileExtension`|`MSBuildThisFileFullPath` 的副檔名部分。|保留|  
-|`MSBuildThisFileFullPath`|包含執行中目標之專案檔或 targets 檔的絕對路徑。<br /><br /> 提示：您可以在 targets 檔中指定相對於 targets 檔 (而不是相對於原始專案檔) 的相對路徑。|保留|  
+|`MSBuildThisFileFullPath`|包含執行中目標之專案檔或 targets 檔的絕對路徑。<br /><br /> 提示：您可以在目標檔案中指定相對於目標檔 (而不是相對於原始專案檔) 的相對路徑。|保留|  
 |`MSBuildThisFileName`|`MSBuildThisFileFullPath` 的檔案名稱部分，不包含副檔名。|保留|  
 |`MSBuildToolsPath`|與 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 的值相關聯之 `MSBuildToolsVersion` 版本的安裝路徑。<br /><br /> 不要在路徑中包含結尾的反斜線。<br /><br /> 這個屬性無法覆寫。|保留|  
-|`MSBuildToolsVersion`|用來建置專案的 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 工具組版本。<br /><br /> 注意:[!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 工具組包含用於建置應用程式的工作、目標和工具。 工具包括編譯器，例如 csc.exe 和 vbc.exe。 如需詳細資訊，請參閱[工具組 (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md) 及[標準和自訂工具組的組態](../msbuild/standard-and-custom-toolset-configurations.md)。|保留|  
+|`MSBuildToolsVersion`|用來建置專案的 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 工具組版本。<br /><br /> 注意：[!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 工具組包含用於建置應用程式的工作、目標和工具。 工具包括編譯器，例如 csc.exe 和 vbc.exe。 如需詳細資訊，請參閱[工具組 (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md) 及[標準和自訂工具組的組態](../msbuild/standard-and-custom-toolset-configurations.md)。|保留|  
   
 ## <a name="see-also"></a>請參閱  
  [MSBuild 參考](../msbuild/msbuild-reference.md) [MSBuild 屬性](msbuild-properties1.md)

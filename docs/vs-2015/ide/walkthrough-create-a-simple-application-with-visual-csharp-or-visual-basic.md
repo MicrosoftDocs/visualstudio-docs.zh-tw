@@ -1,5 +1,5 @@
 ---
-title: 逐步解說：建立具有視覺效果的簡單應用程式C#或 Visual Basic |Microsoft Docs
+title: 逐步解說：使用 Visual C# 或 Visual Basic 建立簡單的應用程式 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -10,13 +10,13 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 6c45b62e2fb1d6e104621a7fdc285ca208364a22
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54802612"
 ---
-# <a name="walkthrough-create-a-simple-application-with-visual-c-or-visual-basic"></a>逐步解說：建立具有視覺效果的簡單應用程式C#或 Visual Basic
+# <a name="walkthrough-create-a-simple-application-with-visual-c-or-visual-basic"></a>逐步解說：使用 Visual C# 或 Visual Basic 建立簡單的應用程式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 藉由完成這個逐步解說，讓自己更熟悉許多可在使用 Visual Studio 開發應用程式時運用的工具、對話方塊和設計工具。 當您了解更多關於整合開發環境 (IDE) 的運作時，您將會建立簡單的 "Hello, World" 樣式應用程式、設計 UI、加入程式碼，以及進行偵錯。  
@@ -47,7 +47,7 @@ ms.locfileid: "54802612"
   
  您可以使用 [ **選項** ] 對話方塊，對 Visual Studio 進行其他自訂，例如變更編輯器內文字的字體和大小，或 IDE 的色彩佈景主題。 根據您套用的設定，某些對話方塊中的項目可能不會自動出現。 您可以選擇 [ **顯示所有設定** ] 核取方塊以確保所有可能的選項都會出現。  
   
- 圖 3：選項對話方塊  
+ 圖 3：[選項] 對話方塊  
   
  ![包含 [顯示所有設定] 選項的 [選項] 對話方塊](../ide/media/exploreide-optionsdialogbox.png "ExploreIDE-Optionsdialogbox")  
   
@@ -92,7 +92,7 @@ ms.locfileid: "54802612"
   
     ![建立 Visual C&#35; WPF 專案 HelloWPFApp](../ide/media/exploreide-newprojectcsharp.png "ExploreIDE-NewProjectcsharp")  
   
-   Visual Studio 會建立 HelloWPFApp 專案和方案，而且 [方案總管]  會顯示各種不同檔案。 WPF 設計工具會在分割檢視中顯示 MainWindow.xaml 的設計檢視和 XAML 檢視。 您可以滑動分隔器來增加或減少顯示任一檢視。  您可以選擇只查看視覺檢視，或只查看 XAML 檢視。 (如需詳細資訊，請參閱 [適用於 Windows Form 開發人員的 WPF 設計工具](http://msdn.microsoft.com/47ad0909-e89b-4996-b4ac-874d929f94ca))。 下列項目會在 **方案總管**中出現：  
+   Visual Studio 會建立 HelloWPFApp 專案和方案，而且 [方案總管]  會顯示各種不同檔案。 WPF 設計工具會在分割檢視中顯示 MainWindow.xaml 的設計檢視和 XAML 檢視。 您可以滑動分隔器來增加或減少顯示任一檢視。  您可以選擇只查看視覺檢視，或只查看 XAML 檢視。 (如需詳細資訊，請參閱 [適用於 Windows Form 開發人員的 WPF 設計工具](http://msdn.microsoft.com/47ad0909-e89b-4996-b4ac-874d929f94ca))。 下列項目會在 [ **方案總管**] 中出現：  
   
    圖 5：專案項目  
   
@@ -132,7 +132,7 @@ ms.locfileid: "54802612"
   
    您的視窗應該會和下圖類似：  
   
-   圖表使用 TextBlock 控制項的 greetings 視窗  
+   圖 7：具有 TextBlock 控制項的 Greetings 視窗  
   
    ![問候表單上的 TextBlock 控制項](../ide/media/exploreide-greetingswithtextblockonly.png "ExploreIDE-GreetingswithTextblockonly")  
   
@@ -162,7 +162,7 @@ ms.locfileid: "54802612"
   
     您的視窗應該會像這樣：  
   
-    圖 8- 20.Greetings 視窗中的選項按鈕。  
+    圖 8：Greetings 視窗中的 RadioButtons。  
   
     ![具有一個 TextBlock 和兩個 RadioButton 的問候表單](../ide/media/exploreide-greetingswithradiobuttons.png "ExploreIDE-Greetingswithradiobuttons")  
   
@@ -190,7 +190,7 @@ ms.locfileid: "54802612"
   
    您的視窗應該會和下圖類似。  
   
-   圖表最後的 Greetings UI  
+   圖 9：最後的 Greetings UI  
   
    ![具有控制項標籤的問候表單](../ide/media/exploreide-greetingswithconrollabels.png "ExploreIDE-Greetingswithconrollabels")  
   
@@ -259,7 +259,7 @@ ms.locfileid: "54802612"
   
     ![[偵錯] 功能表上的 [開始偵錯] 命令](../ide/media/exploreide-startdebugging.png "ExploreIDE-StartDebugging")  
   
-    對話方塊隨即出現，表示發生 IOException:找不到資源 'mainwindow.xaml'。  
+    此時會顯示對話方塊，表示發生 IOException：找不到資源 'mainwindow.xaml'。  
   
 2. 選擇 [ **確定** ] 按鈕，然後停止偵錯工具。  
   

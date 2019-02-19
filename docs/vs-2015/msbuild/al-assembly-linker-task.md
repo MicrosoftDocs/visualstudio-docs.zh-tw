@@ -20,10 +20,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b8d70651d319f174f2ed7c1ee81021d89201bbcf
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54758638"
 ---
 # <a name="al-assembly-linker-task"></a>AL (組件連結器) 工作
@@ -35,7 +35,7 @@ AL 工作會包裝 AL.exe，這個工具會隨 [!INCLUDE[winsdklong](../includes
 ## <a name="parameters"></a>參數  
  下表說明 `AL` 工作的參數。  
   
-|參數|說明|  
+|參數|描述|  
 |---------------|-----------------|  
 |`AlgorithmID`|選擇性的 `String` 參數。<br /><br /> 指定雜湊多檔案組件中所有檔案的演算法，但包含組件資訊清單的檔案除外。 如需詳細資訊，請參閱 [Al.exe (組件連結器)](http://msdn.microsoft.com/library/b5382965-0053-47cf-b92f-862860275a01) 中 `/algid` 選項的說明文件。|  
 |`BaseAddress`|選擇性的 `String` 參數。<br /><br /> 指定在執行階段，於使用者電腦上載入 DLL 的位址。 如果您指定 DLL 的基底位址，而不是讓作業系統重新找出處理序空間中的 DLL，應用程式載入的速度會更快。 此參數對應到 [Al.exe (組件連結器)](http://msdn.microsoft.com/library/b5382965-0053-47cf-b92f-862860275a01) 中的 /base[address] 選項。|  

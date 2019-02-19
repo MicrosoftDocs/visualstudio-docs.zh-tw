@@ -13,10 +13,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: d5e7bba9dd9806952fc56ac62b2322f00aebc5ed
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54800757"
 ---
 # <a name="securing-applications"></a>設定應用程式的安全性
@@ -30,7 +30,7 @@ ms.locfileid: "54800757"
  [安全性最佳做法](http://msdn.microsoft.com/library/86acaccf-cdb4-4517-bd58-553618e3ec42)  
  在 Visual C++ 中工作時，提供資訊的安全性功能和可用的做法。  
   
- [不在組建中：安全性和程式設計 (C# 和 Visual Basic)](http://msdn.microsoft.com/227e2863-cf09-4c28-9611-bcd82be5e994)  
+ [NOT IN BUILD：安全性和程式設計 (C# 和 Visual Basic)](http://msdn.microsoft.com/227e2863-cf09-4c28-9611-bcd82be5e994)  
  提供適用於 Visual Basic 和 C# 開發人員最重要的三個安全性考量之相關資訊：權限、網路應用程式和 Visual Studio 安裝程式。  
   
 ## <a name="securing-mobile-applications"></a>保護行動裝置應用程式  

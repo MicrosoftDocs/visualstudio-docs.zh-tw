@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 26c956255aba9a4ca67249a6e540a7899e0da28a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54794182"
 ---
 # <a name="attach"></a>附加
@@ -51,7 +51,7 @@ VSPerfCmd.exe /Attach:ProcessID [Options]
  **GlobalOn GlobalOff**  
  繼續 (**GlobalOn**) 或暫停 (**GlobalOff**) 分析，但未結束分析工作階段。  
   
- **ProcessOn：**`PID`、**ProcessOff：**`PID`  
+ **ProcessOn:** `PID` **ProcessOff:** `PID`  
  繼續 (**ProcessOn**) 或暫停 (**ProcessOff**) 所指定處理序的分析。  
   
 ## <a name="interval-options"></a>間隔選項  

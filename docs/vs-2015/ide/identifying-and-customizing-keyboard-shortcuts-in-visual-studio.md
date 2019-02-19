@@ -20,10 +20,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 9a2d6420abc9b9d70ce23c1dc8dc1aab5941119f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54798983"
 ---
 # <a name="identifying-and-customizing-keyboard-shortcuts-in-visual-studio"></a>識別及自訂 Visual Studio 中的鍵盤快速鍵
@@ -91,7 +91,7 @@ ms.locfileid: "54798983"
      例如，若要在所有的環境中使用該快速鍵，請選擇 [全域]。 您可以使用未在另一個編輯器中對應 (為「全域」) 的任何捷徑。 否則，編輯器會覆寫快速鍵。
 
     > [!NOTE]
-    >  您在 [全域] 中無法指派下列按鍵作為鍵盤快速鍵的一部分：列印 Scrn/Sys Rq、 Scroll Lock、 Pause/Break、] 索引標籤、 Caps Lock、 Insert、 首頁、 End、 Page Up、 Page Down、 Windows 標誌鍵、 應用程式的索引鍵和任何方向鍵或 Enter;Num Lock，刪除或清除 [數字鍵台;或 Ctrl + Alt + Delete。
+    >  您在 [全域] 中無法指派下列按鍵作為鍵盤快速鍵的一部分：Print Scrn/Sys Rq、Scroll Lock、Pause/Break、Tab、Caps Lock、Insert、Home、End、Page Up、Page Down、Windows 標幟按鍵、應用程式鍵，任一個方向鍵或 Enter、Num Lock、Delete 或婁鍵台上的 Clear，或 Ctrl+Alt+Delete。
 
 6.  在 [按快速鍵] 方塊中，輸入您要使用的捷徑。
 

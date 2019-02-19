@@ -16,10 +16,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: b84cff997e24882903abae048dbdd5c3c16f7e17
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/24/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54834825"
 ---
 # <a name="uninstall-visual-studio"></a>解除安裝 Visual Studio
@@ -43,7 +43,7 @@ ms.locfileid: "54834825"
 1.  找出 Visual Studio.exe 檔案 （例如，尋找"vs_enterprise.exe"）。
 
     > [!NOTE]
-    >  檔案應該位於"%ProgramData%\Package 快取 」 的子資料夾，例如：C:\ProgramData\Package Cache\\{37e19555-e88d-4aed-9d42-82d0784d2b79}\vs_enterprise.exe
+    >  檔案應該位於"%ProgramData%\Package 快取 」 的子資料夾，例如： C:\ProgramData\Package 快取\\{37e19555-e88d-4aed-9d42-82d0784d2b79} \vs_enterprise.exe
 
 2.  執行此.exe 檔案使用 /uninstall /force 命令列參數。
 
@@ -73,7 +73,7 @@ ms.locfileid: "54834825"
 
 2. 安裝或重新安裝您想要使用的 Visual Studio 舊版。
 
-   即使您安裝舊版的 Visual Studio，安裝程式可能仍然嘗試使用較新版本或版本，如果有的話。 如需詳細資訊，請參閱[How to:安裝特定版本的 Visual Studio](../install/how-to-install-a-specific-release-of-visual-studio.md)主題。
+   即使您安裝舊版的 Visual Studio，安裝程式可能仍然嘗試使用較新版本或版本，如果有的話。 如需詳細資訊，請參閱 <<c0> [ 如何： 安裝特定版本的 Visual Studio](../install/how-to-install-a-specific-release-of-visual-studio.md)主題。
 
 ## <a name="see-also"></a>請參閱
  [安裝 Visual Studio](https://msdn.microsoft.com/library/e2h7fzkw.aspx)
