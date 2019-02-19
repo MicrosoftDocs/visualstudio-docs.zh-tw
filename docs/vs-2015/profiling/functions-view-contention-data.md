@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1aaab824f40c0cd6ba0a240a6f3035d7ebcccd00
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54762978"
 ---
 # <a name="functions-view---contention-data"></a>函式檢視 - 爭用資料
@@ -25,7 +25,7 @@ ms.locfileid: "54762978"
   
  下表說明分析資料檔 [函式] 檢視顯示的值，此檔案是使用並行方法收集。  
   
-|資料行|說明|  
+|資料行|描述|  
 |------------|-----------------|  
 |**專有封鎖時間**|此函式遭封鎖而無法執行函式主體程式碼的時間。 不包括由該函式所呼叫函式的封鎖時間。|  
 |**專有封鎖時間 %**|在分析執行的所有封鎖時間中，屬於此函式的專屬封鎖時間百分比。|  

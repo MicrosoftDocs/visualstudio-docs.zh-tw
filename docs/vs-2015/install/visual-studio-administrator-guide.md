@@ -1,14 +1,9 @@
 ---
-title: Visual Studio 系統管理員指南 |Microsoft Docs
-ms.custom: ''
+title: Visual Studio 系統管理員指南 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-install
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-install
+ms.topic: conceptual
 helpviewer_keywords:
 - network installation, Visual Studio
 - administrator guide, Visual Studio
@@ -17,20 +12,20 @@ ms.assetid: 4af353f5-6cfd-4ebe-bcfb-f42306e451a0
 caps.latest.revision: 76
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.openlocfilehash: 25d6655969245adf1b2a28df2b3327561d149983
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 44a1e3dd79c7ac4936ac2fa8a9ac69728dc38672
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.translationtype: MTE95
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51722818"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54834873"
 ---
 # <a name="visual-studio-administrator-guide"></a>Visual Studio Administrator Guide
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 如需 Visual Studio 2017 最新文件，請參閱 < [Visual Studio 2017 系統管理員指南](/visualstudio/install/visual-studio-administrator-guide)。
 
-只要每部目標電腦符合，您可以在網路上部署 Visual Studio 2015[最小安裝需求](http://www.microsoft.com/visualstudio/eng/products/2013-editions)。 您可以使用 /layout 參數執行安裝檔案，來建立網路共用 (述[建立離線安裝 Visual Studio 的](../install/create-an-offline-installation-of-visual-studio.md)頁面)，然後將它從本機電腦，複製到網路共用。 如果您使用 ISO，您就可以掛接 ISO 並共用它或將 ISO 複製到網路共用。  
+只要每部目標電腦符合，您可以在網路上部署 Visual Studio 2015[最小安裝需求](http://www.microsoft.com/visualstudio/eng/products/2013-editions)。 您可使用 /layout 參數執行安裝檔案 (如[建立 Visual Studio 的離線安裝](../install/create-an-offline-installation-of-visual-studio.md)頁面中所述) 來建立網路共用，然後從本機電腦將它複製到網路共用。 如果您使用 ISO，您就可以掛接 ISO 並共用它或將 ISO 複製到網路共用。  
   
  請注意，從網路共用安裝會「記住」它們的來源位置。 這表示用戶端電腦的修復可能需要回到用戶端原先安裝開始處的網路共用。 請小心選擇網路位置，以便它能與您預期在組織中執行 Visual Studio 2015 用戶端的存留期一致。  
   
@@ -74,7 +69,7 @@ ms.locfileid: "51722818"
 |主題|描述|  
 |-----------|-----------------|  
 |[如何：安裝特定版本的 Visual Studio](../install/how-to-install-a-specific-release-of-visual-studio.md)|描述如何安裝最新版的特定組態[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。|  
-|[如何：建立和執行 Visual Studio 的自動安裝](../install/how-to-create-and-run-an-unattended-installation-of-visual-studio.md)|描述如何安裝[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]以自動模式。|  
+|[如何：建立和執行自動的安裝的 Visual Studio](../install/how-to-create-and-run-an-unattended-installation-of-visual-studio.md)|描述如何安裝[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]以自動模式。|  
 |[如何：部署 Visual Studio 時會自動套用產品金鑰](../install/how-to-automatically-apply-product-keys-when-deploying-visual-studio.md)|描述如何部署到多部電腦時套用產品金鑰。|  
 |[說明檢視器系統管理員指南](../ide/help-viewer-administrator-guide.md)|提供有關如何管理本機說明安裝有或沒有網際網路存取的網路環境的資訊。|  
 |[安裝 Visual Studio](../install/install-visual-studio-2015.md)|提供指示與連結主題會說明如何安裝[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。|
